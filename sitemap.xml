@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://sonic-playground.fly.dev/</loc>
+    </url>
+    <url>
+        <loc>https://sonic-playground.fly.dev/archive/</loc>
+    </url>
+    <url>
+        <loc>https://sonic-playground.fly.dev/author/</loc>
+    </url>
+    <url>
+        <loc>https://sonic-playground.fly.dev/genre/</loc>
+    </url>
+    <url>
+        <loc>https://sonic-playground.fly.dev/mood/</loc>
+    </url>
+    <url>
+        <loc>https://sonic-playground.fly.dev/sentiment/</loc>
+    </url>
+    <url>
+        <loc>https://sonic-playground.fly.dev/tags/</loc>
+    </url>
+    <url>
+        <loc>https://sonic-playground.fly.dev/welcome/</loc>
+    </url>
+</urlset>
