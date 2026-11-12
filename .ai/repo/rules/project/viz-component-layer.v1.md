@@ -51,7 +51,11 @@ theme change, error reporting and the ready state the audit waits for.
   `scripts/lib/viz.mjs` (`vizBlock`, the convention: full width, night sky): the glossary and
   every term page an `atlas` (co-occurrence map of terms, a term page centred on itself), every
   category page the `constellation` with its own arm lit (`source.focus`), the work list a
-  `pulse` of all recent commits (`work.all`, a lane per category), every work page its own pulse.
+  `pulse` of all recent commits (`work.all`, a lane per category), every work page its own pulse,
+  the stack page the skills sunburst, the projects page the ecosystem graph. Taxonomy pages have
+  no front matter: their visuals are declared in `data/site.toml` (`[[taxonomy.list_viz]]`,
+  `[[taxonomy.single_viz]]`; the tag index as bubbles, a tag as the tags it shares pages with),
+  resolved by `base.html` and `viz-grid`, and checked by the same gates.
 - Motion respects `prefers-reduced-motion`; a decorative visual is `aria-hidden`.
 - Alpine.js components live in `static/js/components/` and only enhance markup the template
   already rendered.

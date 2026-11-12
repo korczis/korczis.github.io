@@ -240,3 +240,23 @@ label = "Majordomus release"
 label_cs = "Vydání Majordomu"
 source = "majordomus.dev/build.json, re-read live in the browser"
 source_cs = "majordomus.dev/build.json, znovu načtené živě v prohlížeči"
+
+# Visuals of the taxonomy pages, which have no front matter of their own: the same fields as
+# [[extra.viz]] (rule project.viz-component-layer), checked by check-viz-layer and check-i18n.
+[[taxonomy.list_viz]]
+kind = "pack"
+source = "tags.all"
+title = "viz_tags_title"
+lead = "viz_tags_lead"
+span = 3
+height = "lg"
+tone = "night"
+
+[[taxonomy.single_viz]]
+kind = "pack"
+source = "tags.together"
+title = "viz_tag_together_title"
+lead = "viz_tag_together_lead"
+span = 3
+height = "md"
+tone = "night"

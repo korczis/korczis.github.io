@@ -68,13 +68,25 @@ function twins(node, where) {
     } else twins(v, `${where}.${k}`);
   }
 }
-twins(parse(readFileSync(join(ROOT, 'data/site.toml'), 'utf8')), 'site');
+// [taxonomy] declares visuals by i18n key (checked below), so it carries no prose to twin.
+{
+  const { taxonomy: _declared, ...prose } = parse(readFileSync(join(ROOT, 'data/site.toml'), 'utf8'));
+  twins(prose, 'site');
+}
 
 // Front matter that names texts by key ([[extra.viz]] title / lead) names existing keys.
 for (const file of walk(join(ROOT, 'content'), '.md')) {
   const match = readFileSync(file, 'utf8').match(/^\+\+\+\n([\s\S]*?)\n\+\+\+/);
   for (const v of (match ? parse(match[1]).extra?.viz : null) ?? []) {
     for (const key of [v.title, v.lead]) if (!strings[key]) findings.push(`${rel(file)}: [[extra.viz]] key ${key} is not in i18n/strings.toml`);
+  }
+}
+
+// Taxonomy visuals declared in data/site.toml name existing keys too.
+{
+  const site = parse(readFileSync(join(ROOT, 'data/site.toml'), 'utf8'));
+  for (const v of [...(site.taxonomy?.list_viz ?? []), ...(site.taxonomy?.single_viz ?? [])]) {
+    for (const key of [v.title, v.lead]) if (!strings[key]) findings.push(`data/site.toml: taxonomy visual key ${key} is not in i18n/strings.toml`);
   }
 }
 

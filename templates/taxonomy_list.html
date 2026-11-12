@@ -5,6 +5,7 @@
 {{ <page_header title={trans(key="tags", lang=lang)} lead={trans(key="tags_lead", lang=lang)} lang={lang} /> }}
 {#- Every tag, sized by how many pages carry it: a Flowbite Pro badge cloud. Tags are derived by the
     generators (category, languages); nothing here is typed. #}
+<div class="px-4 pt-6">{%- include "partials/viz-grid.html" %}</div>
 <section class="px-4 pb-4 pt-6" aria-label="{{ trans(key="tags", lang=lang) }}">
   <div class="rounded-lg bg-white p-4 shadow dark:bg-gray-800 sm:p-6">
     <ul class="flex flex-wrap gap-2">

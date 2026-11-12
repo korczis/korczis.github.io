@@ -46,12 +46,12 @@
   {%- include "partials/palette.html" %}
 
   {#- The texts the scripts render, in this page's language (KorczisHub.t). #}
-  <script type="application/json" id="i18n-data">{"locale": {% if lang == "cs" %}"cs-CZ"{% else %}"en-GB"{% endif %}, "strings": { {%- for k in ["js_n_repositories", "js_n_contributions", "js_click_to_open", "js_other", "js_live", "js_snapshot", "js_pulse_push", "js_n_pages", "js_pulse_commit", "js_pulse_create", "js_pulse_pr", "js_pulse_issue", "js_pulse_release", "js_pulse_star", "js_pulse_fork", "js_answers", "js_down", "js_none", "js_unspecified", "active", "maintained", "archive"] %}{{ k | json_encode | safe }}: {{ trans(key=k, lang=lang) | json_encode | safe }}{% if not loop.last %}, {% endif %}{% endfor -%} }}</script>
+  <script type="application/json" id="i18n-data">{"locale": {% if lang == "cs" %}"cs-CZ"{% else %}"en-GB"{% endif %}, "strings": { {%- for k in ["js_n_repositories", "js_n_contributions", "js_click_to_open", "js_other", "js_live", "js_snapshot", "js_pulse_push", "js_n_pages", "js_n_pages_together", "js_pulse_commit", "js_pulse_create", "js_pulse_pr", "js_pulse_issue", "js_pulse_release", "js_pulse_star", "js_pulse_fork", "js_answers", "js_down", "js_none", "js_unspecified", "active", "maintained", "archive"] %}{{ k | json_encode | safe }}: {{ trans(key=k, lang=lang) | json_encode | safe }}{% if not loop.last %}, {% endif %}{% endfor -%} }}</script>
   <script src="{{ config.base_url }}/js/vendor/flowbite.min.js" defer></script>
   <script src="{{ get_url(path='js/site.js', cachebust=true) }}" defer></script>
   {%- block scripts %}{% endblock scripts %}
-  {%- set vfm = false %}{% if page is defined %}{% set vfm = page %}{% elif section is defined %}{% set vfm = section %}{% endif %}
-  {%- if vfm and vfm.extra.viz is defined %}{% set_global seen = "|" %}{% for v in vfm.extra.viz %}{% if not ("|" ~ v.kind ~ "|") in seen %}{% set_global seen = seen ~ v.kind ~ "|" %}
+  {%- set vlist = [] %}{% if page is defined and page.extra.viz is defined %}{% set vlist = page.extra.viz %}{% elif section is defined and section.extra.viz is defined %}{% set vlist = section.extra.viz %}{% elif taxonomy is defined %}{% set vtx = load_data(path="data/site.toml") %}{% if term is defined %}{% set vlist = vtx.taxonomy.single_viz %}{% else %}{% set vlist = vtx.taxonomy.list_viz %}{% endif %}{% endif %}
+  {%- if vlist | length > 0 %}{% set_global seen = "|" %}{% for v in vlist %}{% if not ("|" ~ v.kind ~ "|") in seen %}{% set_global seen = seen ~ v.kind ~ "|" %}
   <script src="{{ get_url(path='js/viz/' ~ v.kind ~ '.js', cachebust=true) }}" defer></script>
   {%- endif %}{% endfor %}{% endif %}
   <script src="{{ get_url(path='js/components/palette.js', cachebust=true) }}" defer></script>

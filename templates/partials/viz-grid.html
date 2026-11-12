@@ -2,15 +2,18 @@
     static/js/viz/), source (a named data set below), title and lead (i18n keys), span (1-3 columns),
     height (sm, md, lg) and tone (night: a dark sky behind the visual in both themes). The page composes; this partial renders. Validated by the front-matter
     schema and scripts/check-viz-layer.mjs. -#}
+{#- The visuals come from the page's or section's front matter; taxonomy pages, which have none,
+    declare theirs in data/site.toml ([[taxonomy.list_viz]], [[taxonomy.single_viz]]). -#}
 {%- set vfm = false -%}{%- if page is defined -%}{%- set vfm = page -%}{%- elif section is defined -%}{%- set vfm = section -%}{%- endif -%}
-{%- if vfm and vfm.extra.viz is defined -%}
+{%- set vlist = [] %}{% if vfm and vfm.extra.viz is defined %}{% set vlist = vfm.extra.viz %}{% elif taxonomy is defined %}{% set vtx = load_data(path="data/site.toml") %}{% if term is defined %}{% set vlist = vtx.taxonomy.single_viz %}{% else %}{% set vlist = vtx.taxonomy.list_viz %}{% endif %}{% endif -%}
+{%- if vlist | length > 0 -%}
 {%- set vgh = load_data(path="data/github.json") -%}
 {%- set vix = load_data(path="data/index.json") -%}
 {%- set vrc = load_data(path="data/recent.json") -%}
 {%- set vcat = load_data(path="data/projects.toml") -%}
 {%- set vsfx = "" %}{% if lang is defined and lang != config.default_language %}{% set vsfx = "_" ~ lang %}{% endif -%}
 <div class="grid grid-cols-1 gap-4 xl:grid-cols-3">
-  {%- for v in vfm.extra.viz %}
+  {%- for v in vlist %}
   {%- set id = "viz-" ~ loop.index ~ "-" ~ v.kind %}
   {%- if v.height == "sm" %}{% set h = "h-64" %}{% elif v.height == "lg" %}{% set h = "h-[28rem]" %}{% else %}{% set h = "h-80" %}{% endif %}
   {%- if v.span == 3 %}{% set sp = "xl:col-span-3" %}{% elif v.span == 2 %}{% set sp = "xl:col-span-2" %}{% else %}{% set sp = "" %}{% endif %}
@@ -35,6 +38,10 @@
        "terms": [{% for p in gsec.pages %}{"id": {{ p.extra.term | json_encode | safe }}, "title": {{ p.title | json_encode | safe }}, "kind": {{ p.extra.kind | json_encode | safe }}, "n": {{ p.extra.pages | length }}, "related": {{ p.extra.related | json_encode | safe }}, "definition": {{ p.extra.definition | json_encode | safe }}, "url": {{ p.permalink | json_encode | safe }}}{% if not loop.last %}, {% endif %}{% endfor %}]}
       {%- elif v.source == "index.skillset" %}{"mix": {{ vix.recent.mix | json_encode | safe }}, "names": { {%- for key, c in vcat.categories %}{{ key | json_encode | safe }}: {{ c["name" ~ vsfx] | json_encode | safe }}{% if not loop.last %}, {% endif %}{% endfor -%} }}
       {%- elif v.source == "catalogue.graph" %}{"projects": {{ vcat.projects | json_encode | safe }}, "measured": {{ vgh.projects | json_encode | safe }}}
+      {%- elif v.source == "tags.all" %}{"items": [{% for t in terms %}{"name": {{ t.name | json_encode | safe }}, "value": {{ t.pages | length }}, "url": {{ t.permalink | json_encode | safe }}}{% if not loop.last %}, {% endif %}{% endfor %}], "unit": "js_n_pages"}
+      {%- elif v.source == "tags.together" %}{% set vtags = get_taxonomy(kind="tags", lang=lang) -%}
+       {"focus": {{ term.name | json_encode | safe }}, "unit": "js_n_pages_together", "urls": { {%- for t in vtags.items %}{{ t.name | json_encode | safe }}: {{ t.permalink | json_encode | safe }}{% if not loop.last %}, {% endif %}{% endfor -%} },
+       "pages": [{% for p in term.pages %}{% if p.taxonomies.tags is defined %}{{ p.taxonomies.tags | json_encode | safe }}{% else %}[]{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}]}
       {%- else %}null{% endif -%}
     </script>
   </section>

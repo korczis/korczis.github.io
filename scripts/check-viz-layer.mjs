@@ -67,6 +67,15 @@ for (const file of walk(join(ROOT, 'content')).filter((f) => f.endsWith('.md')))
   }
 }
 
+// Taxonomy pages have no front matter; their visuals are declared in data/site.toml.
+{
+  const site = parse(readFileSync(join(ROOT, 'data/site.toml'), 'utf8'));
+  for (const v of [...(site.taxonomy?.list_viz ?? []), ...(site.taxonomy?.single_viz ?? [])]) {
+    used.add(v.kind);
+    if (!registered.has(v.kind)) findings.push(`data/site.toml: taxonomy visual kind "${v.kind}" has no static/js/viz/${v.kind}.js`);
+  }
+}
+
 // Every visual is interactive (rule project.viz-component-layer): it answers a click or a tap and
 // tells the pointer so. And none is dead code: a registered visual is used by a page.
 for (const file of walk(join(ROOT, 'static/js/viz')).filter((f) => f.endsWith('.js'))) {

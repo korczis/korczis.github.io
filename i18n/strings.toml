@@ -1345,3 +1345,23 @@ cs = "Ekosystém"
 [viz_graph_lead]
 en = "Featured projects, the technologies they are built with, and which of them Majordomus supervises; tap a project to open it in the catalogue."
 cs = "Vybrané projekty, technologie, na kterých stojí, a které z nich dozoruje Majordomus; klepnutím projekt otevřete v katalogu."
+
+[js_n_pages_together]
+en = "together on {n} pages"
+cs = "společně na stránkách: {n}"
+
+[viz_tags_title]
+en = "Every tag as a bubble"
+cs = "Každý štítek jako bublina"
+
+[viz_tags_lead]
+en = "Every tag sized by the pages that carry it; click a bubble to open the tag."
+cs = "Každý štítek velký podle počtu stránek, které ho nesou; kliknutím štítek otevřete."
+
+[viz_tag_together_title]
+en = "Tags that come with this one"
+cs = "Štítky, které chodí s tímto"
+
+[viz_tag_together_lead]
+en = "The tags that share pages with this tag, sized by how many; click one to walk on."
+cs = "Štítky, které sdílejí stránky s tímto štítkem, velké podle počtu; kliknutím pokračujete dál."
