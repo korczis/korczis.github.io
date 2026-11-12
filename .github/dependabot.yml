@@ -10,6 +10,12 @@ updates:
     groups:
       site:
         patterns: ['*']
+    ignore:
+      # Pinned to the Chromium build already cached on the owner's Mac (1.63.0 = Chromium 1243,
+      # shared with Kompendium); a bump downloads another browser locally. Raise it by hand,
+      # together with the sibling repositories.
+      - dependency-name: playwright-core
+        update-types: ['version-update:semver-minor', 'version-update:semver-major']
     commit-message:
       prefix: build
       include: scope
