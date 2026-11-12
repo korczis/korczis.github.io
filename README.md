@@ -77,7 +77,8 @@ Pages are front matter over data. Nothing on them is typed, so nothing needs upd
   the measurements.
 - **Derived:** category pages, `llms.txt`, `llms-full.txt`, OG images and `site.json` (the whole
   site as data).
-- **Weekly refresh:** `.github/workflows/refresh.yml` runs every Monday, or by hand with
+- **Refresh every six hours:** `.github/workflows/refresh.yml` runs at 23 minutes past every
+  sixth hour (UTC), or by hand with
   `gh workflow run refresh.yml`. It runs `npm run refresh`, then `npm run check`. Only when every
   gate passes does it commit to master and start the deploy.
 

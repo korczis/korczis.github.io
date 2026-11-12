@@ -115,9 +115,8 @@
                   "spiral",
                   "pack",
                   "stream",
-                  "activity",
+                  "constellation",
                   "languages",
-                  "expertise",
                   "skillset",
                   "graph"
                 ],
@@ -128,7 +127,8 @@
                   "github.contributions",
                   "github.languages",
                   "index.languages",
-                  "index.years"
+                  "index.years",
+                  "index.repos"
                 ]
               },
               "title": {
@@ -151,6 +151,12 @@
                   "md",
                   "lg"
                 ]
+              },
+              "tone": {
+                "enum": [
+                  "night"
+                ],
+                "description": "A dark sky behind the visual in both themes"
               }
             }
           }

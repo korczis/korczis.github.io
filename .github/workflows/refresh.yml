@@ -1,12 +1,12 @@
 name: Refresh
 
-# Keeps the hub current without anyone maintaining it: once a week (and on demand) it measures
+# Keeps the hub current without anyone maintaining it: every six hours (and on demand) it measures
 # GitHub and GitLab again, re-derives everything that follows from the data, runs every gate, and
 # only when they all pass commits the result to master and starts the deploy. A failing gate
 # leaves the site as it was.
 on:
   schedule:
-    - cron: '23 4 * * 1'
+    - cron: '23 */6 * * *'
   workflow_dispatch:
 
 permissions:
@@ -44,7 +44,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
-          git commit -m "chore(data): weekly refresh of the snapshot and the index"
+          git commit -m "chore(data): refresh the snapshot and the index"
           git push origin HEAD:master
           # A push made with GITHUB_TOKEN starts no workflow; start the deploy explicitly.
           gh workflow run pages.yml --ref master

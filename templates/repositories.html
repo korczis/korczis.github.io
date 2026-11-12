@@ -18,6 +18,8 @@
   {{ <kpi value={n_langs ~ ""} label={trans(key="kpi_primary_languages", lang=lang)} note={trans(key="kpi_as_github_detects", lang=lang)} /> }}
   {{ <kpi value={(ix.counts.forks + ix.counts.mirrors) ~ ""} label={trans(key="kpi_forks_mirrors", lang=lang)} note={trans(key="kpi_counted_not_claimed", lang=lang)} /> }}
 </div>
+{#- Visuals declared in front matter ([[extra.viz]]). #}
+<div class="px-4 pt-6">{%- include "partials/viz-grid.html" %}</div>
 
 {#- Flowbite Pro advanced table with an Alpine filter (search, category, host, language, sort). #}
 <section x-data="repoIndex" class="px-4 pb-4 pt-6" aria-label="{{ trans(key="repositories", lang=lang) }}">

@@ -13,6 +13,15 @@ og_image = "og/home.png"
 schema = "home"
 keywords = ["Tomas Korcak", "korczis", "Majordomus", "AI agents", "software engineering", "scientific visualisation", "Brno"]
 [[extra.viz]]
+kind = "constellation"
+source = "index.repos"
+title = "viz_constellation_title"
+lead = "viz_constellation_lead"
+span = 3
+height = "lg"
+tone = "night"
+
+[[extra.viz]]
 kind = "spiral"
 source = "github.contributions"
 title = "viz_spiral_title"

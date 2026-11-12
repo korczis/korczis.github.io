@@ -1,6 +1,7 @@
 // Year spiral (D3): every day of the contribution calendar as a cell on a ring, week by week around
 // the circle, Monday inside, Sunday outside; colour and glow grow with the day's contributions.
-// The centre holds the year's total; hover a day for its date and count.
+// The centre holds the year's total; hover a day for its date and count, click it for that day's
+// activity on GitHub.
 KorczisHub.viz('spiral', {
   lib: 'd3',
   mount(box, source, { palette, reducedMotion }) {
@@ -38,8 +39,11 @@ KorczisHub.viz('spiral', {
         })
         .attr('fill', (x) => (x.count ? colour(x.count) : c.ramp[0]))
         .attr('filter', (x) => (x.count >= max * 0.6 ? 'url(#spiral-glow)' : null))
-        .style('cursor', 'default')
-        .on('mousemove', (event, x) => tip.show(`${x.d.toLocaleDateString(KorczisHub.locale, { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })}<br><b>${KorczisHub.t('js_n_contributions', { n: x.count })}</b>`, event))
+        .style('cursor', (x) => (x.count ? 'pointer' : 'default'))
+        .on('click', (_e, x) => {
+          if (x.count && KorczisHub.github) window.open(`https://github.com/${KorczisHub.github}?tab=overview&from=${x.date}&to=${x.date}`, '_blank', 'noopener');
+        })
+        .on('mousemove', (event, x) => tip.show(`${x.d.toLocaleDateString(KorczisHub.locale, { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })}<br><b>${KorczisHub.t('js_n_contributions', { n: x.count })}</b>${x.count ? `<br><span style="opacity:.7">${KorczisHub.t('js_click_to_open')}</span>` : ''}`, event))
         .on('mouseleave', () => tip.hide());
       if (!reducedMotion()) {
         cells.attr('opacity', 0).transition().duration(700).delay((x) => weekOf(x.d) * 12).attr('opacity', 1);

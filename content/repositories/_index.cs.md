@@ -10,6 +10,14 @@ og_title = "Každý veřejný repozitář, jen původní práce."
 og_image = "og/cs-repositories.png"
 schema = "index"
 keywords = ["repozitáře Tomáše Korčáka", "korczis GitHub", "korczis GitLab", "open source", "Elixir", "Rust", "Ruby", "JavaScript"]
+
+[[extra.viz]]
+kind = "languages"
+source = "index.languages"
+title = "viz_languages_title"
+lead = "viz_languages_lead"
+span = 3
+height = "lg"
 +++
 Rejstřík repozitářů má cenu, jen když je poctivý v autorství. Tento slučuje GitHub a GitLab podle názvu a pak každému [repozitáři](@/glossary/repository.cs.md) položí jednu otázku: kdo napsal jeho [commity](@/glossary/commit.cs.md)?
 

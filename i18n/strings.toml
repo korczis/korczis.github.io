@@ -1225,3 +1225,19 @@ cs = "Tagy jsou druhá cesta webem, napříč sekcemi. Nikdo je nepíše ručně
 [tag_article]
 en = "These are the pages of this site tagged {tag}: projects and categories that share it, derived from their data. The tag is a category or a language; follow it to see how the same thread runs through different work."
 cs = "Toto jsou stránky webu označené tagem {tag}: projekty a kategorie, které ho sdílejí, odvozené z jejich dat. Tag je kategorie nebo jazyk; po jeho stopě je vidět, jak stejné vlákno prochází různou prací."
+
+[viz_constellation_title]
+en = "A galaxy of work"
+cs = "Galaxie práce"
+
+[viz_constellation_lead]
+en = "Every original repository as a star: an arm per category, the oldest work in the core, the newest at the rim; recent work twinkles. Drag to turn it, hover a star, click to open it."
+cs = "Každý původní repozitář jako hvězda: rameno pro každou kategorii, nejstarší práce v jádru, nejnovější na okraji; nedávná práce bliká. Tažením se galaxie otáčí, najetím se hvězda ukáže, kliknutím otevře."
+
+[viz_languages_title]
+en = "Repositories by language"
+cs = "Repozitáře podle jazyka"
+
+[viz_languages_lead]
+en = "The primary language of every original repository; a bar opens the index filtered to it."
+cs = "Hlavní jazyk každého původního repozitáře; sloupec otevře rejstřík filtrovaný na daný jazyk."

@@ -2,7 +2,7 @@
 {%- set here = current_path | default(value="/") -%}
 {%- set base = config.base_url ~ "/" -%}
 <!doctype html>
-<html lang="{{ lang | default(value='en') }}" class="no-js" data-base="{{ base }}" data-home="{{ config.base_url }}{{ lp }}/" data-lang="{{ lang | default(value='en') }}">
+<html lang="{{ lang | default(value='en') }}" class="no-js" data-base="{{ base }}" data-home="{{ config.base_url }}{{ lp }}/" data-lang="{{ lang | default(value='en') }}" data-github="{{ config.extra.github }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">

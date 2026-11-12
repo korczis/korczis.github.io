@@ -10,6 +10,14 @@ og_title = "Every public repository, original work only."
 og_image = "og/repositories.png"
 schema = "index"
 keywords = ["Tomas Korcak repositories", "korczis GitHub", "korczis GitLab", "open source", "Elixir", "Rust", "Ruby", "JavaScript"]
+
+[[extra.viz]]
+kind = "languages"
+source = "index.languages"
+title = "viz_languages_title"
+lead = "viz_languages_lead"
+span = 3
+height = "lg"
 +++
 An index of repositories is only useful if it is honest about authorship. This one merges GitHub and GitLab by name and then asks one question of every [repository](@/glossary/repository.md): who wrote its [commits](@/glossary/commit.md)?
 

@@ -4,7 +4,13 @@
 KorczisHub.viz('languages', {
   lib: 'chartjs',
   mount(box, source, { palette }) {
-    const canvas = box.querySelector('canvas');
+    let canvas = box.querySelector('canvas');
+    if (!canvas) {
+      canvas = document.createElement('canvas');
+      canvas.setAttribute('aria-hidden', 'true');
+      canvas.dataset.canvas = '';
+      box.appendChild(canvas);
+    }
     const labels = source.map((entry) => entry.name);
     const shown = labels.map((name) => (name === 'Other' ? KorczisHub.t('js_other') : name));
     const counts = source.map((entry) => entry.repos);
@@ -58,7 +64,7 @@ KorczisHub.viz('languages', {
             y: {
               grid: { display: false },
               border: { display: false },
-              ticks: { color: c.text, font: { family: c.font, size: 12 } },
+              ticks: { color: c.text, autoSkip: false, font: { family: c.font, size: 12 } },
             },
           },
         },

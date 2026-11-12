@@ -41,5 +41,5 @@ A page without valid front matter, a stale derived file or a figure outside the 
 
 ```sh
 npm run check                                   # every offline gate
-gh workflow run refresh.yml -R korczis/korczis.github.io   # the weekly job, on demand
+gh workflow run refresh.yml -R korczis/korczis.github.io   # the six-hourly job, on demand
 ```

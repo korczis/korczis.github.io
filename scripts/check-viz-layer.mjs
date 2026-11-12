@@ -23,6 +23,7 @@ function walk(dir) {
 }
 
 const registered = new Set();
+const used = new Set();
 for (const file of walk(join(ROOT, 'static/js')).filter((f) => f.endsWith('.js'))) {
   const rel = file.slice(ROOT.length + 1);
   const text = readFileSync(file, 'utf8');
@@ -42,6 +43,7 @@ for (const file of walk(join(ROOT, 'templates')).filter((f) => f.endsWith('.html
   const rel = file.slice(ROOT.length + 1);
   const text = readFileSync(file, 'utf8');
   for (const [, name] of text.matchAll(/data-viz="([\w-]+)"/g)) {
+    used.add(name);
     if (!registered.has(name)) findings.push(`${rel}: data-viz="${name}" has no static/js/viz/${name}.js`);
     if (!text.includes(`js/viz/${name}.js`)) findings.push(`${rel}: uses data-viz="${name}" but does not load js/viz/${name}.js`);
   }
@@ -60,8 +62,21 @@ for (const file of walk(join(ROOT, 'content')).filter((f) => f.endsWith('.md')))
   const match = readFileSync(file, 'utf8').match(/^\+\+\+\n([\s\S]*?)\n\+\+\+/);
   if (!match) continue;
   for (const v of parse(match[1]).extra?.viz ?? []) {
+    used.add(v.kind);
     if (!registered.has(v.kind)) findings.push(`${file.slice(ROOT.length + 1)}: [[extra.viz]] kind "${v.kind}" has no static/js/viz/${v.kind}.js`);
   }
+}
+
+// Every visual is interactive (rule project.viz-component-layer): it answers a click or a tap and
+// tells the pointer so. And none is dead code: a registered visual is used by a page.
+for (const file of walk(join(ROOT, 'static/js/viz')).filter((f) => f.endsWith('.js'))) {
+  const rel = file.slice(ROOT.length + 1);
+  const text = readFileSync(file, 'utf8');
+  const name = basename(file, '.js');
+  if (name !== 'glyphs' && !/\.on\(\s*'(?:click|tap)'|onClick\s*:|addEventListener\(\s*'(?:click|pointerup)'|window\.addEventListener\(\s*'pointerup'/.test(text)) findings.push(`${rel}: answers no click or tap; every visual leads somewhere`);
+  // ECharts shows the pointer itself on a series with a click handler; glyphs is the decorative hero.
+  if (name !== 'glyphs' && !/echarts\.init/.test(text) && !/cursor/.test(text)) findings.push(`${rel}: never sets the pointer cursor; show what is clickable`);
+  if (!used.has(name)) findings.push(`${rel}: no template or front matter uses visual '${name}'; remove it or use it`);
 }
 
 if (findings.length) {

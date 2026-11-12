@@ -260,5 +260,5 @@
     };
   }
 
-  window.KorczisHub = { viz, lib, data, palette, reducedMotion, isDark, base, home, t, tooltip, locale: i18n.locale || 'en-GB' };
+  window.KorczisHub = { viz, lib, data, palette, reducedMotion, isDark, base, home, t, tooltip, github: document.documentElement.dataset.github || '', locale: i18n.locale || 'en-GB' };
 })();

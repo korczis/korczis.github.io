@@ -33,6 +33,12 @@ theme change, error reporting and the ready state the audit waits for.
   a hue walk from the brand blue through sky to violet), gradients and glow, animate in, answer
   hover with the shared tooltip (`KorczisHub.tooltip`, hidden from assistive tech because the
   card's aria-label states the same) and open the matching work on click.
+- Everything clickable: every visual answers a click or tap and leads somewhere (a repository,
+  a work page, a filtered index, GitHub activity of a day), and shows the pointer where it does.
+  `scripts/check-viz-layer.mjs` refuses a visual without a click handler or pointer cursor (the
+  decorative hero `glyphs` excepted; ECharts sets the pointer itself), and a visual no page uses.
+- The constellation draws the whole index as a galaxy on a canvas with its own 3D projection
+  (no WebGL: 211 points need none, and the browser audit runs headless).
 - Motion respects `prefers-reduced-motion`; a decorative visual is `aria-hidden`.
 - Alpine.js components live in `static/js/components/` and only enhance markup the template
   already rendered.

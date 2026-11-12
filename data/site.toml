@@ -30,8 +30,8 @@ eyebrow = "Data"
 eyebrow_cs = "Data"
 title = "How the numbers are made"
 title_cs = "Jak vznikají čísla"
-lead = "Refreshed weekly by the refresh workflow; the build itself never touches the network."
-lead_cs = "Obnovováno každý týden refresh workflow; samotný build nikdy nesahá na síť."
+lead = "Refreshed every six hours by the refresh workflow; the build itself never touches the network."
+lead_cs = "Obnovováno každých šest hodin refresh workflow; samotný build nikdy nesahá na síť."
 
 [[stack.tools]]
 name = "Flowbite Pro"
@@ -62,8 +62,8 @@ name = "Apache ECharts"
 icon = "graph"
 role = "Dense, interactive charts: calendars, sunbursts, stacked bars."
 role_cs = "Husté interaktivní grafy: kalendáře, sunbursty, skládané sloupce."
-here = "Contribution calendar, skillset, languages over the years."
-here_cs = "Kalendář příspěvků, dovednosti, jazyky v průběhu let."
+here = "The skillset sunburst on the home page."
+here_cs = "Sunburst dovedností na úvodní stránce."
 
 [[stack.tools]]
 name = "Chart.js"
@@ -72,6 +72,14 @@ role = "Light charts where a bar or a line says it all."
 role_cs = "Lehké grafy tam, kde vše řekne sloupec nebo čára."
 here = "Repositories by language."
 here_cs = "Repozitáře podle jazyka."
+
+[[stack.tools]]
+name = "D3.js"
+icon = "graph"
+role = "Drawings where data becomes form: spirals, packed bubbles, streams, a galaxy."
+role_cs = "Kresby, kde se z dat stává tvar: spirály, bubliny, proudy, galaxie."
+here = "The year spiral, language bubbles and streams, and the galaxy of work."
+here_cs = "Spirála roku, bubliny a proudy jazyků a galaxie práce."
 
 [[stack.tools]]
 name = "p5.js"
