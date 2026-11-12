@@ -12,6 +12,8 @@
 #   url         the live site, if any (checked by `npm run data`)
 #   stack       technologies, as shown on the card and as edges in the ecosystem graph
 #   featured    shown on the home page
+#
+# Majordomus supervision is never typed here: it is measured (rule project.data-measured).
 
 [categories]
 ai = "AI engineering"

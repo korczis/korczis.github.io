@@ -1,0 +1,105 @@
+name: CI
+
+# Runs on pull requests and non-master branches, and is called by pages.yml for master, so the
+# gate in front of a deployment is exactly the gate in front of a merge.
+on:
+  pull_request:
+  push:
+    branches-ignore: [master]
+  workflow_call:
+    secrets:
+      MAJORDOMUS_KIT_EVIDENCE_FLOWBITE_PRO:
+        required: false
+
+permissions:
+  contents: read
+
+jobs:
+  commits:
+    name: Conventional commits
+    runs-on: ubuntu-latest
+    env:
+      # The last commit of the previous site; its history predates the convention.
+      IMPORT_BASE: b7059d5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Lint commit subjects
+        env:
+          PR_BASE: ${{ github.event.pull_request.base.sha }}
+          PR_HEAD: ${{ github.event.pull_request.head.sha }}
+          PUSH_BEFORE: ${{ github.event.before }}
+        run: |
+          head="${PR_HEAD:-$GITHUB_SHA}"
+          if [ -n "$PR_BASE" ]; then
+            range="$PR_BASE..$head"
+          elif [ -n "$PUSH_BEFORE" ] && git cat-file -e "$PUSH_BEFORE^{commit}" 2>/dev/null; then
+            range="$PUSH_BEFORE..$head"
+          else
+            range="$IMPORT_BASE..$head"
+          fi
+          scripts/lint-commits.sh "$range"
+
+  supervision:
+    name: Majordomus supervision
+    runs-on: ubuntu-latest
+    env:
+      MAJORDOMUS_VERSION: v1.0.1
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Install majordomus (pinned; the installer verifies the SHA-256 of the release)
+        run: |
+          curl -fsSL https://majordomus.dev/install.sh | sh -s -- --version "$MAJORDOMUS_VERSION"
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+      # A public tree that declares ui.kit flowbite-pro fails closed without the licence evidence:
+      # the owner sets the secret once (README, "Deploy"); agents never write it.
+      - name: majordomus doctor
+        env:
+          MAJORDOMUS_KIT_EVIDENCE_FLOWBITE_PRO: ${{ secrets.MAJORDOMUS_KIT_EVIDENCE_FLOWBITE_PRO }}
+        run: |
+          git config core.hooksPath .githooks
+          majordomus version
+          majordomus doctor
+
+  validate:
+    name: Validate, build and audit
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup
+      - name: Catalogue and snapshot are well-formed
+        run: node scripts/check-data.mjs
+      - name: llms.txt is current
+        run: node scripts/build-llms.mjs --check
+      - name: Every visual goes through the component layer
+        run: node scripts/check-viz-layer.mjs
+      - name: Build (internal links are errors)
+        run: npm run build
+      - name: Stamp the revision
+        run: printf '%s\n' "$GITHUB_SHA" > public/revision.txt
+      - name: Accessibility, layout, visuals and links (axe-core WCAG 2.2 AA, CLS, overflow)
+        run: |
+          npx playwright-core install chromium-headless-shell
+          root="$RUNNER_TEMP/audit"
+          zola build --base-url http://127.0.0.1:18791 --output-dir "$root/site"
+          (cd "$root/site" && python3 -m http.server 18791 --bind 127.0.0.1 > /dev/null 2>&1 &)
+          for _ in $(seq 1 50); do curl -fs -o /dev/null http://127.0.0.1:18791/ && break; sleep 0.2; done
+          BASE_URL=http://127.0.0.1:18791/ SITE_DIR="$root/site" node scripts/audit-ui.mjs --shots "$RUNNER_TEMP/shots"
+      - name: Upload screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: screenshots
+          path: ${{ runner.temp }}/shots
+          retention-days: 7
+          if-no-files-found: ignore
+      - name: Upload the site
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: public
+          retention-days: 7

@@ -27,6 +27,9 @@ for (const [index, p] of (catalogue.projects ?? []).entries()) {
   if ((p.tagline ?? '').length > 90) fail(where, `tagline is ${p.tagline.length} > 90 characters`);
   if (p.url && !/^https:\/\//.test(p.url)) fail(where, `url is not https: ${p.url}`);
   if (!Array.isArray(p.stack) || p.stack.length === 0) fail(where, 'stack must be a non-empty list');
+  if ((p.stack ?? []).includes('Majordomus')) {
+    fail(where, 'Majordomus supervision is measured (data/github.json), never listed in stack');
+  }
   const measured = snapshot.projects?.[p.repo];
   if (!measured) {
     fail(where, 'not in data/github.json; run npm run data');
