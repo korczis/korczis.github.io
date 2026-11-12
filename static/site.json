@@ -1,0 +1,2900 @@
+{
+ "schema": "korczis-hub-site/v1",
+ "url": "https://korczis.github.io/",
+ "name": "Tomas Korcak",
+ "description": "Software for evidence: AI agents that prove their work, honest instruments in the browser, knowledge you can check.",
+ "author": {
+  "name": "Tomas Korcak",
+  "github": "https://github.com/korczis",
+  "gitlab": "https://gitlab.com/korczis",
+  "location": "Brno, Czech Republic"
+ },
+ "front_matter_schema": "https://korczis.github.io/schemas/front-matter.schema.json",
+ "data_as_of": {
+  "snapshot": "2026-11-12T02:26:41Z",
+  "index": "2026-11-12T03:50:41Z"
+ },
+ "pages": [
+  {
+   "url": "https://korczis.github.io/",
+   "title": "Tomas Korcak (korczis) · Software that proves its work",
+   "description": "Software that proves its work: tools that make AI agents prove what they did, honest scientific instruments in the browser, and knowledge bases you can check.",
+   "type": "home",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/home.png",
+   "keywords": [
+    "Tomas Korcak",
+    "korczis",
+    "Majordomus",
+    "AI agents",
+    "software engineering",
+    "scientific visualisation",
+    "Brno"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/about/",
+   "title": "Tomas Korcak (korczis) · About and CV",
+   "description": "Tomas Korcak (korczis), software engineer in Brno: what I build, the languages I build it in over the years, and where to find it.",
+   "type": "profile",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/about.png",
+   "keywords": [
+    "Tomas Korcak",
+    "korczis",
+    "CV",
+    "software engineer",
+    "Brno",
+    "Majordomus",
+    "Elixir",
+    "Rust",
+    "open source"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/projects/",
+   "title": "Projects · Tomas Korcak",
+   "description": "Every project in the catalogue: what it is, what it is built with, whether it is live, and whether Majordomus supervises it.",
+   "type": "collection",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/projects.png",
+   "keywords": [
+    "Tomas Korcak projects",
+    "Majordomus",
+    "Oscilla",
+    "algoglyph",
+    "Kompendium",
+    "open source",
+    "portfolio"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/projects/ai/",
+   "title": "AI engineering · Tomas Korcak",
+   "description": "Supervision for AI coding agents: one policy for every tool, scoped tasks, and work that lands only when it is proven.",
+   "type": "collection",
+   "category": "ai",
+   "og_image": "https://korczis.github.io/og/category-ai.png",
+   "keywords": [
+    "AI engineering",
+    "Majordomus",
+    "korczis.github.io",
+    "osint-case-ratcliffe-moscow-2026",
+    "llm",
+    "sig",
+    "edna",
+    "cognitive-reasoning",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/projects/data/",
+   "title": "Data and GIS · Tomas Korcak",
+   "description": "Catalogues and maps of open data: geodata sources, incident reports geocoded and served from one registry.",
+   "type": "collection",
+   "category": "data",
+   "og_image": "https://korczis.github.io/og/category-data.png",
+   "keywords": [
+    "Data and GIS",
+    "Data Atlas",
+    "Crisis map",
+    "apollo-crawler-extension",
+    "microcrawler-crawler-bam-brno-cz",
+    "microcrawler-crawler-all",
+    "microcrawler-crawler-base",
+    "microcrawler-crawler-craiglist-com",
+    "microcrawler-crawler-firmy-cz",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/projects/knowledge/",
+   "title": "Knowledge · Tomas Korcak",
+   "description": "Knowledge bases you can check: cross-linked taxonomies with their sources, built as books, sites and graphs.",
+   "type": "collection",
+   "category": "knowledge",
+   "og_image": "https://korczis.github.io/og/category-knowledge.png",
+   "keywords": [
+    "Knowledge",
+    "Kompendium",
+    "ReadingPhoneNumbersInRealTime",
+    "MinervaEye",
+    "reading",
+    "skull-elixir",
+    "skull",
+    "skull-erlang",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/projects/learning/",
+   "title": "Learning and experiments · Tomas Korcak",
+   "description": "Learning materials, katas and experiments across many languages: the sketches that came before the projects.",
+   "type": "collection",
+   "category": "learning",
+   "og_image": "https://korczis.github.io/og/category-learning.png",
+   "keywords": [
+    "Learning and experiments",
+    "happ",
+    "Test-Elixir",
+    "node-proxy-upload",
+    "skull-cpp",
+    "grache-test",
+    "skull-emscripten",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/projects/libraries/",
+   "title": "Libraries · Tomas Korcak",
+   "description": "Reusable building blocks for other programs: clients, bindings, validators, parsers and framework extensions, mostly Elixir and Rust.",
+   "type": "collection",
+   "category": "libraries",
+   "og_image": "https://korczis.github.io/og/category-libraries.png",
+   "keywords": [
+    "Libraries",
+    "hydra",
+    "in-rust-we-trust",
+    "rustler-test",
+    "streamflow",
+    "sli2dli",
+    "rustler_mix",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/projects/media/",
+   "title": "Media and art · Tomas Korcak",
+   "description": "Work made from code: a promo reel rendered end to end, a music blog, and a digital artifact or two.",
+   "type": "collection",
+   "category": "media",
+   "og_image": "https://korczis.github.io/og/category-media.png",
+   "keywords": [
+    "Media and art",
+    "Majordomus reel",
+    "Catharsis as a Service",
+    "Sonic Playground",
+    "openttd-prismatic-bridge",
+    "prismatic-blog",
+    "dj-schnapps",
+    "brepta",
+    "talkie",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/projects/science/",
+   "title": "Science and visualisation · Tomas Korcak",
+   "description": "Honest instruments and drawn algorithms in the browser: acoustics, physics, sorting, mazes, each readout measured.",
+   "type": "collection",
+   "category": "science",
+   "og_image": "https://korczis.github.io/og/category-science.png",
+   "keywords": [
+    "Science and visualisation",
+    "Oscilla",
+    "algoglyph",
+    "maze-rs",
+    "big-png",
+    "distance-calculator",
+    "rustas",
+    "graph-flow",
+    "gooddata-graphql",
+    "maze",
+    "maze-js",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/projects/security/",
+   "title": "Security and OSINT · Tomas Korcak",
+   "description": "Open-source intelligence, radio and network security research: cases, proofs of concept and the tooling around them.",
+   "type": "collection",
+   "category": "security",
+   "og_image": "https://korczis.github.io/og/category-security.png",
+   "keywords": [
+    "Security and OSINT",
+    "magic",
+    "zlown",
+    "peacemaker",
+    "ratnet",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/projects/systems/",
+   "title": "Systems and infrastructure · Tomas Korcak",
+   "description": "Servers, clusters and the plumbing beneath software: immutable hosts, packet processing, embedded boards and deployment.",
+   "type": "collection",
+   "category": "systems",
+   "og_image": "https://korczis.github.io/og/category-systems.png",
+   "keywords": [
+    "Systems and infrastructure",
+    "docks",
+    "gh-exec-3000",
+    "server-archlinux",
+    "zdeny-docker",
+    "k8s-orbis-pictus",
+    "server-coreos",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/projects/tools/",
+   "title": "Tools · Tomas Korcak",
+   "description": "Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist search.",
+   "type": "collection",
+   "category": "tools",
+   "og_image": "https://korczis.github.io/og/category-tools.png",
+   "keywords": [
+    "Tools",
+    "Gists search",
+    "json2csv",
+    "csv2psql",
+    "astronomists",
+    "vomaste.cz",
+    "the-psycho",
+    "unable.cz",
+    "u-tygra",
+    "tinder-nomics",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/projects/web/",
+   "title": "Web · Tomas Korcak",
+   "description": "Websites and web applications: single-page apps, Phoenix and Elm frontends, landing pages and the sites of friends.",
+   "type": "collection",
+   "category": "web",
+   "og_image": "https://korczis.github.io/og/category-web.png",
+   "keywords": [
+    "Web",
+    "job-processor",
+    "nestravenkam",
+    "tosh",
+    "the-scratch",
+    "web-spa",
+    "microscratch-react",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/repositories/",
+   "title": "Repositories · Tomas Korcak",
+   "description": "Every original public repository on GitHub and GitLab, merged by name, with its inferred category, language and both links.",
+   "type": "index",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/repositories.png",
+   "keywords": [
+    "Tomas Korcak repositories",
+    "korczis GitHub",
+    "korczis GitLab",
+    "open source",
+    "Elixir",
+    "Rust",
+    "Ruby",
+    "JavaScript"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/stack/",
+   "title": "Stack · Tomas Korcak",
+   "description": "The tools and practices behind every project, and how this site itself is built, checked and deployed.",
+   "type": "about",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/stack.png",
+   "keywords": [
+    "Flowbite Pro",
+    "Alpine.js",
+    "Cytoscape.js",
+    "Apache ECharts",
+    "Chart.js",
+    "p5.js",
+    "Zola",
+    "Majordomus"
+   ]
+  }
+ ],
+ "categories": [
+  {
+   "key": "ai",
+   "name": "AI engineering",
+   "description": "Supervision for AI coding agents: one policy for every tool, scoped tasks, and work that lands only when it is proven.",
+   "url": "https://korczis.github.io/projects/ai/",
+   "repositories": 7
+  },
+  {
+   "key": "science",
+   "name": "Science and visualisation",
+   "description": "Honest instruments and drawn algorithms in the browser: acoustics, physics, sorting, mazes, each readout measured.",
+   "url": "https://korczis.github.io/projects/science/",
+   "repositories": 14
+  },
+  {
+   "key": "knowledge",
+   "name": "Knowledge",
+   "description": "Knowledge bases you can check: cross-linked taxonomies with their sources, built as books, sites and graphs.",
+   "url": "https://korczis.github.io/projects/knowledge/",
+   "repositories": 8
+  },
+  {
+   "key": "data",
+   "name": "Data and GIS",
+   "description": "Catalogues and maps of open data: geodata sources, incident reports geocoded and served from one registry.",
+   "url": "https://korczis.github.io/projects/data/",
+   "repositories": 47
+  },
+  {
+   "key": "media",
+   "name": "Media and art",
+   "description": "Work made from code: a promo reel rendered end to end, a music blog, and a digital artifact or two.",
+   "url": "https://korczis.github.io/projects/media/",
+   "repositories": 8
+  },
+  {
+   "key": "security",
+   "name": "Security and OSINT",
+   "description": "Open-source intelligence, radio and network security research: cases, proofs of concept and the tooling around them.",
+   "url": "https://korczis.github.io/projects/security/",
+   "repositories": 4
+  },
+  {
+   "key": "systems",
+   "name": "Systems and infrastructure",
+   "description": "Servers, clusters and the plumbing beneath software: immutable hosts, packet processing, embedded boards and deployment.",
+   "url": "https://korczis.github.io/projects/systems/",
+   "repositories": 16
+  },
+  {
+   "key": "web",
+   "name": "Web",
+   "description": "Websites and web applications: single-page apps, Phoenix and Elm frontends, landing pages and the sites of friends.",
+   "url": "https://korczis.github.io/projects/web/",
+   "repositories": 9
+  },
+  {
+   "key": "libraries",
+   "name": "Libraries",
+   "description": "Reusable building blocks for other programs: clients, bindings, validators, parsers and framework extensions, mostly Elixir and Rust.",
+   "url": "https://korczis.github.io/projects/libraries/",
+   "repositories": 10
+  },
+  {
+   "key": "learning",
+   "name": "Learning and experiments",
+   "description": "Learning materials, katas and experiments across many languages: the sketches that came before the projects.",
+   "url": "https://korczis.github.io/projects/learning/",
+   "repositories": 16
+  },
+  {
+   "key": "tools",
+   "name": "Tools",
+   "description": "Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist search.",
+   "url": "https://korczis.github.io/projects/tools/",
+   "repositories": 72
+  }
+ ],
+ "projects": [
+  {
+   "name": "Majordomus",
+   "repo": "https://github.com/korczis/prismatic-majordomus",
+   "url": "https://korczis.github.io/projects/?project=prismatic-majordomus",
+   "site": "https://majordomus.dev",
+   "category": "ai",
+   "tagline": "AI agents say the work is done; Majordomus makes them prove it.",
+   "stack": [
+    "Rust",
+    "MCP",
+    "Zola"
+   ]
+  },
+  {
+   "name": "Oscilla",
+   "repo": "https://github.com/korczis/oscilla",
+   "url": "https://korczis.github.io/projects/?project=oscilla",
+   "site": "https://korczis.github.io/oscilla/",
+   "category": "science",
+   "tagline": "A zero-install acoustic laboratory in the browser.",
+   "stack": [
+    "JavaScript",
+    "Web Audio"
+   ]
+  },
+  {
+   "name": "algoglyph",
+   "repo": "https://github.com/korczis/algoglyph",
+   "url": "https://korczis.github.io/projects/?project=algoglyph",
+   "site": "https://korczis.github.io/algoglyph/",
+   "category": "science",
+   "tagline": "Algorithms and physics drawn as glyphs.",
+   "stack": [
+    "TypeScript",
+    "p5.js",
+    "Apache ECharts",
+    "Alpine.js",
+    "Flowbite Pro"
+   ]
+  },
+  {
+   "name": "Kompendium",
+   "repo": "https://github.com/korczis/kompendium-epistemicke-anihilace",
+   "url": "https://korczis.github.io/projects/?project=kompendium-epistemicke-anihilace",
+   "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+   "category": "knowledge",
+   "tagline": "A defensive taxonomy of epistemic and cognitive manipulation (Czech).",
+   "stack": [
+    "Zola",
+    "Cytoscape.js",
+    "Apache ECharts",
+    "Alpine.js",
+    "Flowbite Pro"
+   ]
+  },
+  {
+   "name": "Data Atlas",
+   "repo": "https://github.com/korczis/data-atlas",
+   "url": "https://korczis.github.io/projects/?project=data-atlas",
+   "site": "https://korczis.github.io/data-atlas/",
+   "category": "data",
+   "tagline": "A searchable catalogue of GIS and geodata sources (Czech).",
+   "stack": [
+    "Python"
+   ]
+  },
+  {
+   "name": "Majordomus reel",
+   "repo": "https://github.com/korczis/majordomus-reel",
+   "url": "https://korczis.github.io/projects/?project=majordomus-reel",
+   "site": "https://korczis.github.io/majordomus-reel/",
+   "category": "media",
+   "tagline": "A promo reel rendered entirely from code.",
+   "stack": [
+    "HTML"
+   ]
+  },
+  {
+   "name": "Crisis map",
+   "repo": "https://github.com/korczis/crisis-map",
+   "url": "https://korczis.github.io/projects/?project=crisis-map",
+   "site": "https://korczis.github.io/crisis-map/",
+   "category": "data",
+   "tagline": "Incident reports, normalised, geocoded and mapped.",
+   "stack": [
+    "Elixir",
+    "PostGIS",
+    "MCP"
+   ]
+  },
+  {
+   "name": "Catharsis as a Service",
+   "repo": "https://github.com/korczis/catharsis-as-a-service",
+   "url": "https://korczis.github.io/projects/?project=catharsis-as-a-service",
+   "site": "https://korczis.github.io/catharsis-as-a-service/",
+   "category": "media",
+   "tagline": "An emotional state transition endpoint.",
+   "stack": [
+    "HTML"
+   ]
+  },
+  {
+   "name": "Sonic Playground",
+   "repo": "https://github.com/korczis/sonic-playground",
+   "url": "https://korczis.github.io/projects/?project=sonic-playground",
+   "site": "https://korczis.github.io/sonic-playground/",
+   "category": "media",
+   "tagline": "Music that moves you, not algorithmic noise.",
+   "stack": [
+    "Elixir"
+   ]
+  },
+  {
+   "name": "Gists search",
+   "repo": "https://github.com/korczis/gists-search",
+   "url": "https://korczis.github.io/projects/?project=gists-search",
+   "site": "https://korczis.github.io/gists-search/",
+   "category": "tools",
+   "tagline": "Catalogue, enrichment and search over a mirror of my gists.",
+   "stack": [
+    "Python"
+   ]
+  },
+  {
+   "name": "json2csv",
+   "repo": "https://github.com/korczis/json2csv",
+   "url": "https://korczis.github.io/projects/?project=json2csv",
+   "site": null,
+   "category": "tools",
+   "tagline": "Easy to use tool for converting JSON to CSV.",
+   "stack": [
+    "Ruby"
+   ]
+  },
+  {
+   "name": "maze-rs",
+   "repo": "https://github.com/korczis/maze-rs",
+   "url": "https://korczis.github.io/projects/?project=maze-rs",
+   "site": "https://korczis.github.io/maze-rs/",
+   "category": "science",
+   "tagline": "Mazes for Programmers, in Rust.",
+   "stack": [
+    "Rust"
+   ]
+  },
+  {
+   "name": "csv2psql",
+   "repo": "https://github.com/korczis/csv2psql",
+   "url": "https://korczis.github.io/projects/?project=csv2psql",
+   "site": "https://korczis.github.io/csv2psql/",
+   "category": "tools",
+   "tagline": "CSV into SQL statements for PostgreSQL.",
+   "stack": [
+    "Ruby",
+    "PostgreSQL"
+   ]
+  },
+  {
+   "name": "big-png",
+   "repo": "https://github.com/korczis/big-png",
+   "url": "https://korczis.github.io/projects/?project=big-png",
+   "site": null,
+   "category": "science",
+   "tagline": "The biggest image in the smallest space.",
+   "stack": [
+    "Python"
+   ]
+  }
+ ],
+ "repositories": [
+  {
+   "name": "algoglyph",
+   "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
+   "language": "TypeScript",
+   "category": "science",
+   "github": "https://github.com/korczis/algoglyph",
+   "gitlab": null,
+   "site": "https://korczis.github.io/algoglyph/",
+   "created": "2026-11-11T18:09:38Z",
+   "active": "2026-11-12T03:45:31Z"
+  },
+  {
+   "name": "korczis.github.io",
+   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+   "language": "HTML",
+   "category": "ai",
+   "github": "https://github.com/korczis/korczis.github.io",
+   "gitlab": null,
+   "site": "https://korczis.github.io/korczis.github.io/",
+   "created": "2024-12-24T16:48:15Z",
+   "active": "2026-11-12T03:41:59Z"
+  },
+  {
+   "name": "oscilla",
+   "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+   "language": "JavaScript",
+   "category": "science",
+   "github": "https://github.com/korczis/oscilla",
+   "gitlab": null,
+   "site": "https://korczis.github.io/oscilla/",
+   "created": "2026-10-01T21:05:33Z",
+   "active": "2026-11-12T03:41:52Z"
+  },
+  {
+   "name": "kompendium-epistemicke-anihilace",
+   "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
+   "language": "Elixir",
+   "category": "knowledge",
+   "github": "https://github.com/korczis/kompendium-epistemicke-anihilace",
+   "gitlab": null,
+   "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+   "created": "2026-11-09T22:04:50Z",
+   "active": "2026-11-12T03:33:23Z"
+  },
+  {
+   "name": "sonic-playground",
+   "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+   "language": "HTML",
+   "category": "media",
+   "github": "https://github.com/korczis/sonic-playground",
+   "gitlab": null,
+   "site": "https://korczis.github.io/sonic-playground/",
+   "created": "2026-11-12T00:48:36Z",
+   "active": "2026-11-12T03:31:38Z"
+  },
+  {
+   "name": "prismatic-majordomus",
+   "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+   "language": "Rust",
+   "category": "ai",
+   "github": "https://github.com/korczis/prismatic-majordomus",
+   "gitlab": null,
+   "site": "https://korczis.github.io/prismatic-majordomus/",
+   "created": "2026-09-03T20:24:57Z",
+   "active": "2026-11-12T00:51:06Z"
+  },
+  {
+   "name": "catharsis-as-a-service",
+   "description": "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact.",
+   "language": "HTML",
+   "category": "media",
+   "github": "https://github.com/korczis/catharsis-as-a-service",
+   "gitlab": null,
+   "site": "https://korczis.github.io/catharsis-as-a-service/",
+   "created": "2026-09-14T09:54:06Z",
+   "active": "2026-11-09T19:36:49Z"
+  },
+  {
+   "name": "astronomists",
+   "description": null,
+   "language": "Python",
+   "category": "tools",
+   "github": "https://github.com/korczis/astronomists",
+   "gitlab": null,
+   "site": "https://korczis.github.io/astronomists/",
+   "created": "2026-06-15T09:04:31Z",
+   "active": "2026-11-09T16:32:35Z"
+  },
+  {
+   "name": "vomaste.cz",
+   "description": null,
+   "language": "JavaScript",
+   "category": "tools",
+   "github": "https://github.com/korczis/vomaste.cz",
+   "gitlab": null,
+   "site": "https://korczis.github.io/vomaste.cz/",
+   "created": "2026-07-21T08:54:25Z",
+   "active": "2026-11-08T20:49:20Z"
+  },
+  {
+   "name": "the-psycho",
+   "description": null,
+   "language": null,
+   "category": "tools",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/the-psycho",
+   "site": null,
+   "created": "2025-01-25T02:41:53.111Z",
+   "active": "2026-10-29T13:51:53.522Z"
+  },
+  {
+   "name": "data-atlas",
+   "description": "Katalog GIS a geodatových zdrojů — datasety, katastr, doprava, remote sensing, prostorová analytika. Jednosouborová prohledávatelná stránka.",
+   "language": "Python",
+   "category": "data",
+   "github": "https://github.com/korczis/data-atlas",
+   "gitlab": null,
+   "site": "https://korczis.github.io/data-atlas/",
+   "created": "2026-08-27T17:47:05Z",
+   "active": "2026-10-29T13:50:30Z"
+  },
+  {
+   "name": "unable.cz",
+   "description": null,
+   "language": "JavaScript",
+   "category": "tools",
+   "github": "https://github.com/korczis/unable.cz",
+   "gitlab": null,
+   "site": "https://korczis.github.io/unable.cz/",
+   "created": "2026-07-16T16:43:52Z",
+   "active": "2026-10-29T11:00:45Z"
+  },
+  {
+   "name": "crisis-map",
+   "description": "Mini crisis map: incident reports normalised, geocoded via local Nominatim, stored as PostGIS geography, served from one capability registry (LiveView, REST, OpenAPI, MCP, CLI)",
+   "language": "Elixir",
+   "category": "data",
+   "github": "https://github.com/korczis/crisis-map",
+   "gitlab": null,
+   "site": "https://korczis.github.io/crisis-map/",
+   "created": "2026-09-08T00:27:41Z",
+   "active": "2026-10-29T10:46:18Z"
+  },
+  {
+   "name": "openttd-prismatic-bridge",
+   "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
+   "language": null,
+   "category": "media",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/openttd-prismatic-bridge",
+   "site": null,
+   "created": "2026-07-23T22:00:54.776Z",
+   "active": "2026-10-29T10:43:46.963Z"
+  },
+  {
+   "name": "majordomus-reel",
+   "description": "A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound",
+   "language": "HTML",
+   "category": "media",
+   "github": "https://github.com/korczis/majordomus-reel",
+   "gitlab": null,
+   "site": "https://korczis.github.io/majordomus-reel/",
+   "created": "2026-10-23T00:51:59Z",
+   "active": "2026-10-29T10:42:22Z"
+  },
+  {
+   "name": "gists-search",
+   "description": "Catalogue, enrichment and search for a mirror of korczis's GitHub gists",
+   "language": "Python",
+   "category": "tools",
+   "github": "https://github.com/korczis/gists-search",
+   "gitlab": null,
+   "site": "https://korczis.github.io/gists-search/",
+   "created": "2026-08-27T20:23:18Z",
+   "active": "2026-08-27T20:26:20Z"
+  },
+  {
+   "name": "osint-case-ratcliffe-moscow-2026",
+   "description": "Open-source intelligence assessment of the CIA Director's unannounced Moscow visit (2026-08-25) — maintained with Claude Code skills; reusable OSINT case toolkit",
+   "language": "HTML",
+   "category": "ai",
+   "github": "https://github.com/korczis/osint-case-ratcliffe-moscow-2026",
+   "gitlab": null,
+   "site": "https://korczis.github.io/osint-case-ratcliffe-moscow-2026/",
+   "created": "2026-08-26T21:24:36Z",
+   "active": "2026-08-26T22:32:55Z"
+  },
+  {
+   "name": "llm",
+   "description": "Local-first, provider-agnostic archive of AI conversations (ChatGPT, Claude, Gemini, Codex) — immutable, content-addressed, searchable evidence layer built in Elixir/Ecto.",
+   "language": null,
+   "category": "ai",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/llm",
+   "site": null,
+   "created": "2026-08-20T20:41:22.826Z",
+   "active": "2026-08-21T12:51:42.304Z"
+  },
+  {
+   "name": "u-tygra",
+   "description": null,
+   "language": "JavaScript",
+   "category": "tools",
+   "github": "https://github.com/korczis/u-tygra",
+   "gitlab": "https://gitlab.com/korczis/u-tygra",
+   "site": "https://korczis.github.io/u-tygra/",
+   "created": "2024-12-27T03:22:04Z",
+   "active": "2026-03-22T17:36:41Z"
+  },
+  {
+   "name": "tinder-nomics",
+   "description": null,
+   "language": null,
+   "category": "tools",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/tinder-nomics",
+   "site": null,
+   "created": "2025-08-25T20:25:04.842Z",
+   "active": "2026-02-04T23:37:16.229Z"
+  },
+  {
+   "name": "prism",
+   "description": null,
+   "language": null,
+   "category": "tools",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/prism",
+   "site": null,
+   "created": "2024-12-01T21:24:20.949Z",
+   "active": "2026-02-04T23:37:05.374Z"
+  },
+  {
+   "name": "past",
+   "description": null,
+   "language": null,
+   "category": "tools",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/past",
+   "site": null,
+   "created": "2025-04-28T15:26:38.855Z",
+   "active": "2026-02-04T23:37:03.848Z"
+  },
+  {
+   "name": "sig",
+   "description": "distributed cognitive framework in Elixir/OTP.",
+   "language": null,
+   "category": "ai",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/sig",
+   "site": null,
+   "created": "2025-08-23T21:07:58.962Z",
+   "active": "2026-02-04T23:37:01.451Z"
+  },
+  {
+   "name": "apollo-crawler-extension",
+   "description": "Apollo Platform Chrome Extension",
+   "language": null,
+   "category": "data",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/apollo-crawler-extension",
+   "site": null,
+   "created": "2019-09-16T01:03:59.852Z",
+   "active": "2025-12-20T21:31:16.087Z"
+  },
+  {
+   "name": "ApolloCrawler-github-io",
+   "description": null,
+   "language": null,
+   "category": "tools",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/ApolloCrawler-github-io",
+   "site": null,
+   "created": "2019-09-16T01:03:59.854Z",
+   "active": "2025-12-20T21:31:15.382Z"
+  },
+  {
+   "name": "docks",
+   "description": "Repository containing useful Dockerfile(s)",
+   "language": null,
+   "category": "systems",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/docks",
+   "site": null,
+   "created": "2019-09-16T01:03:59.878Z",
+   "active": "2025-12-20T21:31:13.342Z"
+  },
+  {
+   "name": "microcrawler",
+   "description": null,
+   "language": null,
+   "category": "tools",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/microcrawler",
+   "site": null,
+   "created": "2019-09-16T01:04:00.620Z",
+   "active": "2025-12-20T21:31:12.479Z"
+  },
+  {
+   "name": "microcrawler-browser",
+   "description": "Proof-of-Concept: Microcrawler in your Browser!",
+   "language": null,
+   "category": "tools",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/microcrawler-browser",
+   "site": null,
+   "created": "2019-09-16T01:04:00.688Z",
+   "active": "2025-12-20T21:31:11.664Z"
+  },
+  {
+   "name": "microcrawler-crawler-bam-brno-cz",
+   "description": null,
+   "language": null,
+   "category": "data",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-bam-brno-cz",
+   "site": null,
+   "created": "2019-09-16T01:04:00.789Z",
+   "active": "2025-12-20T21:31:10.847Z"
+  },
+  {
+   "name": "microcrawler-crawler-all",
+   "description": null,
+   "language": null,
+   "category": "data",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-all",
+   "site": null,
+   "created": "2019-09-16T01:04:00.858Z",
+   "active": "2025-12-20T21:31:10.041Z"
+  },
+  {
+   "name": "microcrawler-crawler-base",
+   "description": null,
+   "language": null,
+   "category": "data",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-base",
+   "site": null,
+   "created": "2019-09-16T01:04:00.877Z",
+   "active": "2025-12-20T21:31:09.221Z"
+  },
+  {
+   "name": "microcrawler-crawler-craiglist-com",
+   "description": null,
+   "language": null,
+   "category": "data",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-craiglist-com",
+   "site": null,
+   "created": "2019-09-16T01:04:01.005Z",
+   "active": "2025-12-20T21:31:08.451Z"
+  },
+  {
+   "name": "microcrawler-crawler-firmy-cz",
+   "description": null,
+   "language": null,
+   "category": "data",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-firmy-cz",
+   "site": null,
+   "created": "2019-09-16T01:04:01.495Z",
+   "active": "2025-12-20T21:31:07.783Z"
+  },
+  {
+   "name": "microcrawler-crawler-heureka-cz",
+   "description": "Heureka Crawler",
+   "language": null,
+   "category": "data",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-heureka-cz",
+   "site": null,
+   "created": "2019-09-16T01:04:01.675Z",
+   "active": "2025-12-20T21:31:07.058Z"
+  },
+  {
+   "name": "microcrawler-crawler-google-com",
+   "description": null,
+   "language": null,
+   "category": "data",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-google-com",
+   "site": null,
+   "created": "2019-09-16T01:04:01.681Z",
+   "active": "2025-12-20T21:31:06.310Z"
+  },
+  {
+   "name": "microcrawler-crawler-news-ycombinator-com",
+   "description": null,
+   "language": null,
+   "category": "data",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-news-ycombinator-com",
+   "site": null,
+   "created": "2019-09-16T01:04:01.684Z",
+   "active": "2025-12-20T21:31:05.525Z"
+  },
+  {
+   "name": "microcrawler-crawler-sreality-cz",
+   "description": null,
+   "language": null,
+   "category": "data",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-sreality-cz",
+   "site": null,
+   "created": "2019-09-16T01:04:01.821Z",
+   "active": "2025-12-20T21:31:04.727Z"
+  },
+  {
+   "name": "microcrawler-crawler-xkcd-com",
+   "description": null,
+   "language": null,
+   "category": "data",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-xkcd-com",
+   "site": null,
+   "created": "2019-09-16T01:04:01.953Z",
+   "active": "2025-12-20T21:31:03.654Z"
+  },
+  {
+   "name": "microcrawler-crawler-yelp-com",
+   "description": null,
+   "language": null,
+   "category": "data",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-yelp-com",
+   "site": null,
+   "created": "2019-09-16T01:04:02.451Z",
+   "active": "2025-12-20T21:31:02.151Z"
+  },
+  {
+   "name": "microcrawler-elixir",
+   "description": "Microcrawler Implemented in Elixir",
+   "language": null,
+   "category": "tools",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/microcrawler-elixir",
+   "site": null,
+   "created": "2019-09-16T01:04:02.632Z",
+   "active": "2025-12-20T21:31:00.611Z"
+  },
+  {
+   "name": "microcrawler-js",
+   "description": "Scrapping made easy...",
+   "language": null,
+   "category": "data",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/microcrawler-js",
+   "site": null,
+   "created": "2019-09-16T01:04:02.688Z",
+   "active": "2025-12-20T21:30:59.811Z"
+  },
+  {
+   "name": "annasabatova-cz",
+   "description": "Petice za odvolani annysabatove.cz",
+   "language": null,
+   "category": "tools",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/annasabatova-cz",
+   "site": null,
+   "created": "2019-09-16T01:04:04.254Z",
+   "active": "2025-12-20T21:30:50.816Z"
+  },
+  {
+   "name": "apollocrawler-com",
+   "description": "Website for apollocrawler.com ...",
+   "language": null,
+   "category": "tools",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/apollocrawler-com",
+   "site": null,
+   "created": "2019-09-16T01:04:05.535Z",
+   "active": "2025-12-20T21:30:44.925Z"
+  },
+  {
+   "name": "gauc-ex",
+   "description": "Elxir Wrapper for Gauc - Rust Wrapper for Couchbase",
+   "language": null,
+   "category": "data",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/gauc-ex",
+   "site": null,
+   "created": "2019-09-16T01:04:20.536Z",
+   "active": "2025-12-20T21:29:16.346Z"
+  },
+  {
+   "name": "korczis-com",
+   "description": "korczis.com website",
+   "language": null,
+   "category": "tools",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/korczis-com",
+   "site": null,
+   "created": "2019-09-16T01:04:30.984Z",
+   "active": "2025-12-20T21:28:15.309Z"
+  },
+  {
+   "name": "korczis-github-com",
+   "description": "Github Pages",
+   "language": null,
+   "category": "tools",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/korczis-github-com",
+   "site": null,
+   "created": "2019-09-16T01:04:31.238Z",
+   "active": "2025-12-20T21:28:14.410Z"
+  },
+  {
+   "name": "lethe-it",
+   "description": "lethe.it - your personal smart links archive, organizer, classifier and much more",
+   "language": null,
+   "category": "tools",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/lethe-it",
+   "site": null,
+   "created": "2019-09-16T01:04:31.993Z",
+   "active": "2025-12-20T21:28:09.650Z"
+  },
+  {
+   "name": "mapofffacts-com",
+   "description": "Map Of Facts",
+   "language": null,
+   "category": "data",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/mapofffacts-com",
+   "site": null,
+   "created": "2019-09-16T01:04:34.396Z",
+   "active": "2025-12-20T21:27:54.744Z"
+  },
+  {
+   "name": "pavian-eu",
+   "description": "pavian.eu website",
+   "language": null,
+   "category": "tools",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/pavian-eu",
+   "site": null,
+   "created": "2019-09-16T01:04:39.573Z",
+   "active": "2025-12-20T21:27:26.968Z"
+  },
+  {
+   "name": "hydra",
+   "description": "Modular wrapper and interface for pool of orchestrated Google Chrome instances",
+   "language": null,
+   "category": "libraries",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/hydra",
+   "site": null,
+   "created": "2019-11-13T00:35:02.364Z",
+   "active": "2025-12-20T21:25:51.077Z"
+  },
+  {
+   "name": "czech-stats",
+   "description": null,
+   "language": null,
+   "category": "data",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/czech-stats",
+   "site": null,
+   "created": "2020-01-01T09:21:33.793Z",
+   "active": "2025-12-20T21:25:50.107Z"
+  },
+  {
+   "name": "rocksdb_indexer",
+   "description": null,
+   "language": null,
+   "category": "data",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/rocksdb_indexer",
+   "site": null,
+   "created": "2022-03-11T11:42:28.661Z",
+   "active": "2025-12-20T21:25:38.251Z"
+  },
+  {
+   "name": "astudo",
+   "description": null,
+   "language": null,
+   "category": "tools",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/astudo",
+   "site": null,
+   "created": "2022-04-29T18:24:17.143Z",
+   "active": "2025-12-20T21:25:34.570Z"
+  },
+  {
+   "name": "pdf_renderer",
+   "description": null,
+   "language": null,
+   "category": "tools",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/pdf_renderer",
+   "site": null,
+   "created": "2024-03-24T22:10:44.078Z",
+   "active": "2025-12-20T21:25:27.753Z"
+  },
+  {
+   "name": "marketing-ideas",
+   "description": null,
+   "language": null,
+   "category": "tools",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/marketing-ideas",
+   "site": null,
+   "created": "2024-04-17T15:17:04.884Z",
+   "active": "2025-12-20T21:25:23.011Z"
+  },
+  {
+   "name": "distance-calculator",
+   "description": null,
+   "language": null,
+   "category": "science",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/distance-calculator",
+   "site": null,
+   "created": "2024-03-20T11:21:50.379Z",
+   "active": "2025-12-20T21:25:21.812Z"
+  },
+  {
+   "name": "simple_geocoder",
+   "description": null,
+   "language": null,
+   "category": "tools",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/simple_geocoder",
+   "site": null,
+   "created": "2024-04-23T21:19:13.755Z",
+   "active": "2025-12-20T21:25:21.048Z"
+  },
+  {
+   "name": "job-processor",
+   "description": "This is a simple web service built with Elixir, Plug, and Cowboy that processes job tasks with dependencies and generates execution order and bash scripts.",
+   "language": null,
+   "category": "web",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/job-processor",
+   "site": null,
+   "created": "2024-08-01T10:19:22.386Z",
+   "active": "2025-12-20T21:25:15.818Z"
+  },
+  {
+   "name": "dispatcher",
+   "description": null,
+   "language": null,
+   "category": "tools",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/dispatcher",
+   "site": null,
+   "created": "2024-10-18T17:45:41.560Z",
+   "active": "2025-12-20T21:25:14.274Z"
+  },
+  {
+   "name": "kuzu-ex",
+   "description": null,
+   "language": null,
+   "category": "data",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/kuzu-ex",
+   "site": null,
+   "created": "2024-10-24T15:38:17.529Z",
+   "active": "2025-12-20T21:25:07.561Z"
+  },
+  {
+   "name": "corvidae",
+   "description": null,
+   "language": null,
+   "category": "tools",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/corvidae",
+   "site": null,
+   "created": "2025-05-12T01:33:56.421Z",
+   "active": "2025-12-20T21:24:52.481Z"
+  },
+  {
+   "name": "korczis.gitlab.io",
+   "description": null,
+   "language": null,
+   "category": "tools",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/korczis.gitlab.io",
+   "site": null,
+   "created": "2025-08-22T17:57:54.670Z",
+   "active": "2025-12-20T21:24:49.461Z"
+  },
+  {
+   "name": "comtesse",
+   "description": null,
+   "language": null,
+   "category": "tools",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/comtesse",
+   "site": null,
+   "created": "2025-08-27T16:52:39.046Z",
+   "active": "2025-12-20T21:24:47.786Z"
+  },
+  {
+   "name": "GHT",
+   "description": null,
+   "language": null,
+   "category": "tools",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/GHT",
+   "site": null,
+   "created": "2025-08-28T19:47:13.774Z",
+   "active": "2025-12-20T21:24:46.834Z"
+  },
+  {
+   "name": "edna",
+   "description": "Edna je digitální kartářka, astroložka a analytička poháněná AI. Projekt spojuje mystiku, astrologii a psychologii s moderními LLM modely, aby uživatelům přinášel denní horoskopy, výklady karet, životní vhledy a psychologické reflexe.",
+   "language": null,
+   "category": "ai",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/edna",
+   "site": null,
+   "created": "2025-09-02T10:20:47.749Z",
+   "active": "2025-12-20T21:24:46.096Z"
+  },
+  {
+   "name": "prismatic",
+   "description": null,
+   "language": "Elixir",
+   "category": "tools",
+   "github": "https://github.com/korczis/prismatic",
+   "gitlab": null,
+   "site": null,
+   "created": "2025-07-24T19:53:59Z",
+   "active": "2025-08-04T17:46:00Z"
+  },
+  {
+   "name": "cognitive-reasoning",
+   "description": null,
+   "language": null,
+   "category": "ai",
+   "github": "https://github.com/korczis/cognitive-reasoning",
+   "gitlab": null,
+   "site": null,
+   "created": "2025-04-25T11:08:12Z",
+   "active": "2025-04-25T11:08:12Z"
+  },
+  {
+   "name": "prismatic-blog",
+   "description": null,
+   "language": "Dockerfile",
+   "category": "media",
+   "github": "https://github.com/korczis/prismatic-blog",
+   "gitlab": null,
+   "site": "https://korczis.github.io/prismatic-blog/",
+   "created": "2025-03-14T02:08:33Z",
+   "active": "2025-03-14T02:09:00Z"
+  },
+  {
+   "name": "tap",
+   "description": null,
+   "language": null,
+   "category": "tools",
+   "github": "https://github.com/korczis/tap",
+   "gitlab": null,
+   "site": null,
+   "created": "2024-10-01T18:38:31Z",
+   "active": "2024-10-01T18:42:11Z"
+  },
+  {
+   "name": "bubbler",
+   "description": "Bubbler is a simple JavaScript application that generates a speech bubble with dynamic text over an image of a boy. The text is passed through a URL query parameter, allowing for easy customization of the speech content.",
+   "language": "JavaScript",
+   "category": "tools",
+   "github": "https://github.com/korczis/bubbler",
+   "gitlab": null,
+   "site": "https://korczis.github.io/bubbler/",
+   "created": "2024-09-15T21:10:06Z",
+   "active": "2024-09-16T14:31:07Z"
+  },
+  {
+   "name": "pissaleck",
+   "description": "Anything about everything and vice versa",
+   "language": null,
+   "category": "tools",
+   "github": "https://github.com/korczis/pissaleck",
+   "gitlab": null,
+   "site": null,
+   "created": "2024-04-27T13:20:36Z",
+   "active": "2024-04-27T13:20:37Z"
+  },
+  {
+   "name": "MindScape",
+   "description": null,
+   "language": null,
+   "category": "tools",
+   "github": "https://github.com/korczis/MindScape",
+   "gitlab": null,
+   "site": null,
+   "created": "2023-02-18T16:17:27Z",
+   "active": "2023-02-18T16:21:19Z"
+  },
+  {
+   "name": "el-magico-cache",
+   "description": "Elixir Cache",
+   "language": "Elixir",
+   "category": "tools",
+   "github": "https://github.com/korczis/el-magico-cache",
+   "gitlab": null,
+   "site": null,
+   "created": "2023-01-26T18:14:07Z",
+   "active": "2023-01-27T17:10:07Z"
+  },
+  {
+   "name": "kanec",
+   "description": null,
+   "language": "Elixir",
+   "category": "tools",
+   "github": "https://github.com/korczis/kanec",
+   "gitlab": "https://gitlab.com/korczis/kanec",
+   "site": null,
+   "created": "2019-05-30T00:53:52Z",
+   "active": "2023-01-03T22:59:48Z"
+  },
+  {
+   "name": "gh-exec-3000",
+   "description": "github executor 3000",
+   "language": "Dockerfile",
+   "category": "systems",
+   "github": "https://github.com/korczis/gh-exec-3000",
+   "gitlab": null,
+   "site": null,
+   "created": "2022-10-08T02:35:58Z",
+   "active": "2022-10-08T11:22:58Z"
+  },
+  {
+   "name": "rest-hello-world-benchmark",
+   "description": "Benchmark of Hello World REST Endpoint in various languages / frameworks",
+   "language": "Elixir",
+   "category": "tools",
+   "github": "https://github.com/korczis/rest-hello-world-benchmark",
+   "gitlab": null,
+   "site": null,
+   "created": "2022-07-31T17:32:49Z",
+   "active": "2022-07-31T19:01:16Z"
+  },
+  {
+   "name": "caregiver",
+   "description": "Takes responsibility for your containers so you can spend more time with your ",
+   "language": null,
+   "category": "tools",
+   "github": "https://github.com/korczis/caregiver",
+   "gitlab": null,
+   "site": null,
+   "created": "2022-07-15T14:58:41Z",
+   "active": "2022-07-15T14:59:33Z"
+  },
+  {
+   "name": "maze-rs",
+   "description": "Maze for Programmers (Rust)",
+   "language": "Rust",
+   "category": "science",
+   "github": "https://github.com/korczis/maze-rs",
+   "gitlab": "https://gitlab.com/korczis/maze-rs",
+   "site": "https://korczis.github.io/maze-rs/",
+   "created": "2016-11-11T16:45:18Z",
+   "active": "2021-12-28T22:09:49Z"
+  },
+  {
+   "name": "ReadingPhoneNumbersInRealTime",
+   "description": null,
+   "language": "Swift",
+   "category": "knowledge",
+   "github": "https://github.com/korczis/ReadingPhoneNumbersInRealTime",
+   "gitlab": null,
+   "site": null,
+   "created": "2021-08-12T04:50:05Z",
+   "active": "2021-08-12T04:54:17Z"
+  },
+  {
+   "name": "happ",
+   "description": "Playground App created during my Hospital Stay",
+   "language": "C++",
+   "category": "learning",
+   "github": "https://github.com/korczis/happ",
+   "gitlab": "https://gitlab.com/korczis/happ",
+   "site": null,
+   "created": "2021-04-23T18:50:27Z",
+   "active": "2021-06-03T20:12:11Z"
+  },
+  {
+   "name": "MinervaEye",
+   "description": "iOS application for book management",
+   "language": "Swift",
+   "category": "knowledge",
+   "github": "https://github.com/korczis/MinervaEye",
+   "gitlab": null,
+   "site": null,
+   "created": "2020-04-26T19:23:41Z",
+   "active": "2021-05-08T22:40:52Z"
+  },
+  {
+   "name": "3d-print",
+   "description": "3D Print stuff",
+   "language": "OpenSCAD",
+   "category": "tools",
+   "github": "https://github.com/korczis/3d-print",
+   "gitlab": null,
+   "site": null,
+   "created": "2021-03-03T07:47:17Z",
+   "active": "2021-03-04T02:47:07Z"
+  },
+  {
+   "name": "ctu-cz",
+   "description": "Otevrena data ceskeho telekomunikacniho uradu",
+   "language": "JavaScript",
+   "category": "data",
+   "github": "https://github.com/korczis/ctu-cz",
+   "gitlab": null,
+   "site": null,
+   "created": "2020-04-24T23:47:26Z",
+   "active": "2020-05-15T09:52:46Z"
+  },
+  {
+   "name": "data-playground",
+   "description": "Playground for toying with data",
+   "language": null,
+   "category": "data",
+   "github": "https://github.com/korczis/data-playground",
+   "gitlab": null,
+   "site": null,
+   "created": "2020-04-25T01:53:18Z",
+   "active": "2020-04-25T01:53:19Z"
+  },
+  {
+   "name": "dj-schnapps",
+   "description": "Dj Schnapps",
+   "language": "Elixir",
+   "category": "media",
+   "github": "https://github.com/korczis/dj-schnapps",
+   "gitlab": "https://gitlab.com/korczis/dj-schnapps",
+   "site": null,
+   "created": "2019-10-26T23:16:53Z",
+   "active": "2019-11-26T22:13:50Z"
+  },
+  {
+   "name": "reading",
+   "description": "Reading list",
+   "language": null,
+   "category": "knowledge",
+   "github": "https://github.com/korczis/reading",
+   "gitlab": "https://gitlab.com/korczis/reading",
+   "site": null,
+   "created": "2019-10-16T20:19:47Z",
+   "active": "2019-10-16T20:25:28Z"
+  },
+  {
+   "name": "ts-logger",
+   "description": null,
+   "language": "TypeScript",
+   "category": "tools",
+   "github": "https://github.com/korczis/ts-logger",
+   "gitlab": "https://gitlab.com/korczis/ts-logger",
+   "site": null,
+   "created": "2019-09-18T14:18:52Z",
+   "active": "2019-09-18T14:19:05Z"
+  },
+  {
+   "name": "nestravenkam",
+   "description": "Stravenky",
+   "language": "CSS",
+   "category": "web",
+   "github": "https://github.com/korczis/nestravenkam",
+   "gitlab": "https://gitlab.com/korczis/nestravenkam",
+   "site": "https://korczis.github.io/nestravenkam/",
+   "created": "2019-08-09T02:31:55Z",
+   "active": "2019-08-09T02:56:28Z"
+  },
+  {
+   "name": "home",
+   "description": "home directory",
+   "language": "Shell",
+   "category": "tools",
+   "github": "https://github.com/korczis/home",
+   "gitlab": "https://gitlab.com/korczis/home",
+   "site": null,
+   "created": "2019-06-27T01:03:03Z",
+   "active": "2019-06-27T01:07:02Z"
+  },
+  {
+   "name": "twitter-analysis",
+   "description": "Twitter Analysis",
+   "language": null,
+   "category": "tools",
+   "github": "https://github.com/korczis/twitter-analysis",
+   "gitlab": "https://gitlab.com/korczis/twitter-analysis",
+   "site": null,
+   "created": "2019-05-03T14:18:44Z",
+   "active": "2019-05-03T14:18:46Z"
+  },
+  {
+   "name": "server-archlinux",
+   "description": null,
+   "language": "Shell",
+   "category": "systems",
+   "github": "https://github.com/korczis/server-archlinux",
+   "gitlab": "https://gitlab.com/korczis/server-archlinux",
+   "site": null,
+   "created": "2019-02-17T01:33:16Z",
+   "active": "2019-04-04T03:45:54Z"
+  },
+  {
+   "name": "zdeny-docker",
+   "description": null,
+   "language": "Dockerfile",
+   "category": "systems",
+   "github": "https://github.com/korczis/zdeny-docker",
+   "gitlab": "https://gitlab.com/korczis/zdeny-docker",
+   "site": null,
+   "created": "2019-03-24T18:53:17Z",
+   "active": "2019-03-26T20:48:20Z"
+  },
+  {
+   "name": "k8s-orbis-pictus",
+   "description": "Playground for learning docker, kubernetes, ansible and friends",
+   "language": null,
+   "category": "systems",
+   "github": "https://github.com/korczis/k8s-orbis-pictus",
+   "gitlab": "https://gitlab.com/korczis/k8s-orbis-pictus",
+   "site": null,
+   "created": "2019-03-14T13:51:03Z",
+   "active": "2019-03-14T14:08:36Z"
+  },
+  {
+   "name": "server-coreos",
+   "description": "CoreOS based immutable server",
+   "language": null,
+   "category": "systems",
+   "github": "https://github.com/korczis/server-coreos",
+   "gitlab": "https://gitlab.com/korczis/server-coreos",
+   "site": null,
+   "created": "2019-02-17T00:18:18Z",
+   "active": "2019-02-17T00:18:19Z"
+  },
+  {
+   "name": "server-atomic",
+   "description": "Server powered by Project Atomic",
+   "language": "Shell",
+   "category": "systems",
+   "github": "https://github.com/korczis/server-atomic",
+   "gitlab": "https://gitlab.com/korczis/server-atomic",
+   "site": null,
+   "created": "2019-01-29T18:32:24Z",
+   "active": "2019-02-12T05:51:09Z"
+  },
+  {
+   "name": "server-nixos",
+   "description": "NixOS Configuration",
+   "language": "Shell",
+   "category": "systems",
+   "github": "https://github.com/korczis/server-nixos",
+   "gitlab": "https://gitlab.com/korczis/server-nixos",
+   "site": null,
+   "created": "2019-02-03T19:43:44Z",
+   "active": "2019-02-06T06:42:19Z"
+  },
+  {
+   "name": "server-ansible",
+   "description": "Server Ansible",
+   "language": "Shell",
+   "category": "systems",
+   "github": "https://github.com/korczis/server-ansible",
+   "gitlab": "https://gitlab.com/korczis/server-ansible",
+   "site": null,
+   "created": "2019-01-26T02:30:39Z",
+   "active": "2019-01-29T06:47:27Z"
+  },
+  {
+   "name": "tosh",
+   "description": "Yet Another Web Application Template/Framework",
+   "language": "Elixir",
+   "category": "web",
+   "github": "https://github.com/korczis/tosh",
+   "gitlab": "https://gitlab.com/korczis/tosh",
+   "site": null,
+   "created": "2019-01-20T01:12:48Z",
+   "active": "2019-01-20T22:31:23Z"
+  },
+  {
+   "name": "aws-lambda-docker",
+   "description": "Example how to run Docker image using AWS Lambda",
+   "language": "Shell",
+   "category": "systems",
+   "github": "https://github.com/korczis/aws-lambda-docker",
+   "gitlab": "https://gitlab.com/korczis/aws-lambda-docker",
+   "site": null,
+   "created": "2018-12-04T11:32:44Z",
+   "active": "2018-12-04T11:45:51Z"
+  },
+  {
+   "name": "bcnode-extra-scripts",
+   "description": "BC Extra Scripts (DX)",
+   "language": "Shell",
+   "category": "tools",
+   "github": "https://github.com/korczis/bcnode-extra-scripts",
+   "gitlab": "https://gitlab.com/korczis/bcnode-extra-scripts",
+   "site": null,
+   "created": "2018-06-24T03:50:46Z",
+   "active": "2018-06-24T03:58:28Z"
+  },
+  {
+   "name": "bc-apple",
+   "description": "BlockCollider Apple Apps",
+   "language": "Swift",
+   "category": "tools",
+   "github": "https://github.com/korczis/bc-apple",
+   "gitlab": "https://gitlab.com/korczis/bc-apple",
+   "site": null,
+   "created": "2018-06-03T22:11:10Z",
+   "active": "2018-06-03T22:30:51Z"
+  },
+  {
+   "name": "js-libp2p-umbrella",
+   "description": "Umbrella repository for j2-libp2p and relavant modules",
+   "language": null,
+   "category": "tools",
+   "github": "https://github.com/korczis/js-libp2p-umbrella",
+   "gitlab": "https://gitlab.com/korczis/js-libp2p-umbrella",
+   "site": null,
+   "created": "2018-05-03T14:08:24Z",
+   "active": "2018-05-03T14:08:25Z"
+  },
+  {
+   "name": "bcnode-old",
+   "description": "Mining node with built-in block rover and DHT. ",
+   "language": "JavaScript",
+   "category": "tools",
+   "github": "https://github.com/korczis/bcnode-old",
+   "gitlab": "https://gitlab.com/korczis/bcnode-old",
+   "site": null,
+   "created": "2018-01-07T20:29:39Z",
+   "active": "2018-04-12T23:39:44Z"
+  },
+  {
+   "name": "gauc.ex",
+   "description": "Elxir Wrapper for Gauc - Rust Wrapper for Couchbase",
+   "language": "Elixir",
+   "category": "data",
+   "github": "https://github.com/korczis/gauc.ex",
+   "gitlab": null,
+   "site": null,
+   "created": "2017-10-03T18:31:25Z",
+   "active": "2018-03-31T23:07:46Z"
+  },
+  {
+   "name": "the-scratch",
+   "description": "Single Page Application written in Elm with Elixir/Phoenix Backend",
+   "language": "JavaScript",
+   "category": "web",
+   "github": "https://github.com/korczis/the-scratch",
+   "gitlab": "https://gitlab.com/korczis/the-scratch",
+   "site": null,
+   "created": "2017-07-21T19:25:22Z",
+   "active": "2018-03-10T17:02:00Z"
+  },
+  {
+   "name": "rustas",
+   "description": "Rust - Assembler, Mathematics, GPU and many others",
+   "language": "Rust",
+   "category": "science",
+   "github": "https://github.com/korczis/rustas",
+   "gitlab": "https://gitlab.com/korczis/rustas",
+   "site": null,
+   "created": "2018-03-08T20:06:45Z",
+   "active": "2018-03-08T21:01:52Z"
+  },
+  {
+   "name": "cluster-kubernetes",
+   "description": "Kubernetes Cluster",
+   "language": "Shell",
+   "category": "systems",
+   "github": "https://github.com/korczis/cluster-kubernetes",
+   "gitlab": "https://gitlab.com/korczis/cluster-kubernetes",
+   "site": null,
+   "created": "2017-03-14T18:51:31Z",
+   "active": "2018-01-30T12:21:09Z"
+  },
+  {
+   "name": "models",
+   "description": "Just Models ;-)",
+   "language": null,
+   "category": "tools",
+   "github": "https://github.com/korczis/models",
+   "gitlab": "https://gitlab.com/korczis/models",
+   "site": null,
+   "created": "2017-11-20T02:57:19Z",
+   "active": "2017-11-20T03:36:14Z"
+  },
+  {
+   "name": "gdc-dumpator",
+   "description": null,
+   "language": "Ruby",
+   "category": "tools",
+   "github": "https://github.com/korczis/gdc-dumpator",
+   "gitlab": "https://gitlab.com/korczis/gdc-dumpator",
+   "site": null,
+   "created": "2017-11-08T16:05:45Z",
+   "active": "2017-11-10T14:53:08Z"
+  },
+  {
+   "name": "in-rust-we-trust",
+   "description": "In Rust We Trust",
+   "language": null,
+   "category": "libraries",
+   "github": "https://github.com/korczis/in-rust-we-trust",
+   "gitlab": "https://gitlab.com/korczis/in-rust-we-trust",
+   "site": null,
+   "created": "2017-10-11T15:14:34Z",
+   "active": "2017-10-11T15:15:45Z"
+  },
+  {
+   "name": "zeman-ucet",
+   "description": "Zpravy pro prijemce ze Zemanova transparentniho uctu na predvolebni kampan",
+   "language": "Ruby",
+   "category": "tools",
+   "github": "https://github.com/korczis/zeman-ucet",
+   "gitlab": "https://gitlab.com/korczis/zeman-ucet",
+   "site": null,
+   "created": "2017-09-03T20:05:39Z",
+   "active": "2017-10-07T19:59:54Z"
+  },
+  {
+   "name": "rustler-test",
+   "description": "Working Example of Rustler - Safe Rust bridge for creating Erlang NIF functions",
+   "language": "Elixir",
+   "category": "libraries",
+   "github": "https://github.com/korczis/rustler-test",
+   "gitlab": "https://gitlab.com/korczis/rustler-test",
+   "site": null,
+   "created": "2017-06-18T11:55:50Z",
+   "active": "2017-09-19T19:27:08Z"
+  },
+  {
+   "name": "Test-Elixir",
+   "description": null,
+   "language": "Elixir",
+   "category": "learning",
+   "github": "https://github.com/korczis/Test-Elixir",
+   "gitlab": "https://gitlab.com/korczis/Test-Elixir",
+   "site": null,
+   "created": "2017-09-15T18:46:30Z",
+   "active": "2017-09-16T09:56:13Z"
+  },
+  {
+   "name": "zaas",
+   "description": "ZaaS - Zeman As A Service",
+   "language": "JavaScript",
+   "category": "tools",
+   "github": "https://github.com/korczis/zaas",
+   "gitlab": "https://gitlab.com/korczis/zaas",
+   "site": null,
+   "created": "2017-09-07T19:16:20Z",
+   "active": "2017-09-07T20:14:50Z"
+  },
+  {
+   "name": "mapoffacts",
+   "description": null,
+   "language": "JavaScript",
+   "category": "tools",
+   "github": "https://github.com/korczis/mapoffacts",
+   "gitlab": "https://gitlab.com/korczis/mapoffacts",
+   "site": null,
+   "created": "2017-07-21T21:00:20Z",
+   "active": "2017-08-23T14:02:30Z"
+  },
+  {
+   "name": "web-spa",
+   "description": "Single Page Application written in Elm with Elixir/Phoenix Backend",
+   "language": "JavaScript",
+   "category": "web",
+   "github": "https://github.com/korczis/web-spa",
+   "gitlab": "https://gitlab.com/korczis/web-spa",
+   "site": null,
+   "created": "2017-07-09T09:11:49Z",
+   "active": "2017-07-19T21:25:31Z"
+  },
+  {
+   "name": "magic",
+   "description": "All the magic happens here!",
+   "language": "Rust",
+   "category": "security",
+   "github": "https://github.com/korczis/magic",
+   "gitlab": "https://gitlab.com/korczis/magic",
+   "site": null,
+   "created": "2017-05-29T11:58:42Z",
+   "active": "2017-07-08T19:01:44Z"
+  },
+  {
+   "name": "streamflow",
+   "description": "Stream Flow - Fast Stream Processing in Rust",
+   "language": "Rust",
+   "category": "libraries",
+   "github": "https://github.com/korczis/streamflow",
+   "gitlab": "https://gitlab.com/korczis/streamflow",
+   "site": null,
+   "created": "2017-05-15T08:58:49Z",
+   "active": "2017-05-24T14:37:42Z"
+  },
+  {
+   "name": "sli2dli",
+   "description": "SLI to DLI implementation written in rust. Nothing more, nothing less.",
+   "language": "Rust",
+   "category": "libraries",
+   "github": "https://github.com/korczis/sli2dli",
+   "gitlab": "https://gitlab.com/korczis/sli2dli",
+   "site": null,
+   "created": "2017-05-09T21:06:59Z",
+   "active": "2017-05-14T16:59:59Z"
+  },
+  {
+   "name": "wims",
+   "description": "Where is my space?",
+   "language": "Rust",
+   "category": "systems",
+   "github": "https://github.com/korczis/wims",
+   "gitlab": "https://gitlab.com/korczis/wims",
+   "site": null,
+   "created": "2017-05-06T00:33:13Z",
+   "active": "2017-05-06T12:07:47Z"
+  },
+  {
+   "name": "graph-flow",
+   "description": null,
+   "language": "Rust",
+   "category": "science",
+   "github": "https://github.com/korczis/graph-flow",
+   "gitlab": "https://gitlab.com/korczis/graph-flow",
+   "site": null,
+   "created": "2017-04-16T18:13:23Z",
+   "active": "2017-04-16T23:03:06Z"
+  },
+  {
+   "name": "cluster",
+   "description": "Run your own CoreOS/Kubernetes cluster",
+   "language": "Ruby",
+   "category": "systems",
+   "github": "https://github.com/korczis/cluster",
+   "gitlab": "https://gitlab.com/korczis/cluster",
+   "site": null,
+   "created": "2017-03-06T22:13:02Z",
+   "active": "2017-03-07T13:25:51Z"
+  },
+  {
+   "name": "kpmap-ruby",
+   "description": "korczis implementation of (p)map",
+   "language": null,
+   "category": "data",
+   "github": "https://github.com/korczis/kpmap-ruby",
+   "gitlab": "https://gitlab.com/korczis/kpmap-ruby",
+   "site": null,
+   "created": "2017-02-02T23:21:05Z",
+   "active": "2017-02-02T23:21:05Z"
+  },
+  {
+   "name": "peg-loader",
+   "description": "Peg.js grammar loader",
+   "language": "JavaScript",
+   "category": "tools",
+   "github": "https://github.com/korczis/peg-loader",
+   "gitlab": "https://gitlab.com/korczis/peg-loader",
+   "site": null,
+   "created": "2016-04-26T17:51:24Z",
+   "active": "2017-01-24T17:16:39Z"
+  },
+  {
+   "name": "brepta",
+   "description": "TTS via REST",
+   "language": "JavaScript",
+   "category": "media",
+   "github": "https://github.com/korczis/brepta",
+   "gitlab": "https://gitlab.com/korczis/brepta",
+   "site": null,
+   "created": "2017-01-20T12:18:50Z",
+   "active": "2017-01-20T13:48:49Z"
+  },
+  {
+   "name": "gooddata-ruby-examples",
+   "description": "gooddata-ruby-examples",
+   "language": "HTML",
+   "category": "data",
+   "github": "https://github.com/korczis/gooddata-ruby-examples",
+   "gitlab": "https://gitlab.com/korczis/gooddata-ruby-examples",
+   "site": null,
+   "created": "2014-08-19T17:56:11Z",
+   "active": "2017-01-10T14:10:43Z"
+  },
+  {
+   "name": "gooddata-graphql",
+   "description": "GoodData Web Application Written in Elixir",
+   "language": "Elixir",
+   "category": "science",
+   "github": "https://github.com/korczis/gooddata-graphql",
+   "gitlab": "https://gitlab.com/korczis/gooddata-graphql",
+   "site": null,
+   "created": "2016-12-01T15:50:58Z",
+   "active": "2016-12-19T16:02:12Z"
+  },
+  {
+   "name": "skull-elixir",
+   "description": "Programming learning materials, examples, sources ...",
+   "language": "Elixir",
+   "category": "knowledge",
+   "github": "https://github.com/korczis/skull-elixir",
+   "gitlab": "https://gitlab.com/korczis/skull-elixir",
+   "site": null,
+   "created": "2016-09-22T18:29:34Z",
+   "active": "2016-12-05T20:30:17Z"
+  },
+  {
+   "name": "maze",
+   "description": "Maze Web Application",
+   "language": "JavaScript",
+   "category": "science",
+   "github": "https://github.com/korczis/maze",
+   "gitlab": "https://gitlab.com/korczis/maze",
+   "site": null,
+   "created": "2016-11-18T16:40:10Z",
+   "active": "2016-11-20T16:22:33Z"
+  },
+  {
+   "name": "maze-js",
+   "description": "Maze",
+   "language": null,
+   "category": "science",
+   "github": "https://github.com/korczis/maze-js",
+   "gitlab": "https://gitlab.com/korczis/maze-js",
+   "site": null,
+   "created": "2016-11-18T15:50:18Z",
+   "active": "2016-11-18T15:50:18Z"
+  },
+  {
+   "name": "ideas",
+   "description": "Just Ideas",
+   "language": null,
+   "category": "tools",
+   "github": "https://github.com/korczis/ideas",
+   "gitlab": "https://gitlab.com/korczis/ideas",
+   "site": null,
+   "created": "2016-11-14T19:03:36Z",
+   "active": "2016-11-14T19:03:37Z"
+  },
+  {
+   "name": "gooddata-lcm-tool",
+   "description": null,
+   "language": "Ruby",
+   "category": "data",
+   "github": "https://github.com/korczis/gooddata-lcm-tool",
+   "gitlab": "https://gitlab.com/korczis/gooddata-lcm-tool",
+   "site": null,
+   "created": "2016-08-19T10:51:49Z",
+   "active": "2016-10-21T15:49:21Z"
+  },
+  {
+   "name": "rustler_mix",
+   "description": "Rustler Mix",
+   "language": "Elixir",
+   "category": "libraries",
+   "github": "https://github.com/korczis/rustler_mix",
+   "gitlab": "https://gitlab.com/korczis/rustler_mix",
+   "site": null,
+   "created": "2016-10-17T00:47:20Z",
+   "active": "2016-10-18T14:12:36Z"
+  },
+  {
+   "name": "easy-plugin-plugins",
+   "description": null,
+   "language": "Rust",
+   "category": "libraries",
+   "github": "https://github.com/korczis/easy-plugin-plugins",
+   "gitlab": "https://gitlab.com/korczis/easy-plugin-plugins",
+   "site": null,
+   "created": "2016-10-15T20:58:39Z",
+   "active": "2016-10-15T21:00:14Z"
+  },
+  {
+   "name": "jetel",
+   "description": "Just simple ETeL",
+   "language": "Ruby",
+   "category": "data",
+   "github": "https://github.com/korczis/jetel",
+   "gitlab": "https://gitlab.com/korczis/jetel",
+   "site": null,
+   "created": "2015-11-02T23:41:12Z",
+   "active": "2016-09-28T12:42:19Z"
+  },
+  {
+   "name": "gooddata-fs",
+   "description": "GoodData as Filesystem (using FUSE)",
+   "language": "Rust",
+   "category": "data",
+   "github": "https://github.com/korczis/gooddata-fs",
+   "gitlab": "https://gitlab.com/korczis/gooddata-fs",
+   "site": null,
+   "created": "2016-05-25T16:35:37Z",
+   "active": "2016-07-15T15:52:30Z"
+  },
+  {
+   "name": "charon",
+   "description": "Ferryman who carries other people connections to other side. Operation Area? Wi-Fi!",
+   "language": "Rust",
+   "category": "tools",
+   "github": "https://github.com/korczis/charon",
+   "gitlab": "https://gitlab.com/korczis/charon",
+   "site": null,
+   "created": "2016-07-01T18:27:54Z",
+   "active": "2016-07-10T01:24:01Z"
+  },
+  {
+   "name": "skull-rust",
+   "description": "Rust experiments",
+   "language": "Rust",
+   "category": "libraries",
+   "github": "https://github.com/korczis/skull-rust",
+   "gitlab": "https://gitlab.com/korczis/skull-rust",
+   "site": null,
+   "created": "2016-05-24T18:25:46Z",
+   "active": "2016-05-24T18:29:45Z"
+  },
+  {
+   "name": "gooddata-proxy",
+   "description": "GoodData Proxy",
+   "language": "JavaScript",
+   "category": "data",
+   "github": "https://github.com/korczis/gooddata-proxy",
+   "gitlab": "https://gitlab.com/korczis/gooddata-proxy",
+   "site": null,
+   "created": "2016-05-17T11:28:29Z",
+   "active": "2016-05-17T11:29:50Z"
+  },
+  {
+   "name": "peg-parser",
+   "description": "Parser built using peg.js",
+   "language": "JavaScript",
+   "category": "libraries",
+   "github": "https://github.com/korczis/peg-parser",
+   "gitlab": "https://gitlab.com/korczis/peg-parser",
+   "site": null,
+   "created": "2016-04-26T19:09:27Z",
+   "active": "2016-05-04T18:08:51Z"
+  },
+  {
+   "name": "datascience",
+   "description": null,
+   "language": "R",
+   "category": "data",
+   "github": "https://github.com/korczis/datascience",
+   "gitlab": "https://gitlab.com/korczis/datascience",
+   "site": null,
+   "created": "2016-04-04T20:13:27Z",
+   "active": "2016-04-30T16:02:03Z"
+  },
+  {
+   "name": "babel-plugin-transform-graphql",
+   "description": "Babel Plugin for Transforming GraphQL",
+   "language": "JavaScript",
+   "category": "science",
+   "github": "https://github.com/korczis/babel-plugin-transform-graphql",
+   "gitlab": "https://gitlab.com/korczis/babel-plugin-transform-graphql",
+   "site": null,
+   "created": "2016-04-15T11:43:38Z",
+   "active": "2016-04-15T11:56:34Z"
+  },
+  {
+   "name": "node-proxy-upload",
+   "description": "Simple example how to upload multipart files via node http proxy",
+   "language": "JavaScript",
+   "category": "learning",
+   "github": "https://github.com/korczis/node-proxy-upload",
+   "gitlab": "https://gitlab.com/korczis/node-proxy-upload",
+   "site": null,
+   "created": "2016-04-13T16:06:27Z",
+   "active": "2016-04-13T16:10:22Z"
+  },
+  {
+   "name": "haskell-world",
+   "description": "Haskell Mathematics",
+   "language": "Haskell",
+   "category": "science",
+   "github": "https://github.com/korczis/haskell-world",
+   "gitlab": "https://gitlab.com/korczis/haskell-world",
+   "site": null,
+   "created": "2016-04-06T13:41:04Z",
+   "active": "2016-04-09T00:02:08Z"
+  },
+  {
+   "name": "zlown",
+   "description": "Rogue and Evil Access Point",
+   "language": "Ruby",
+   "category": "security",
+   "github": "https://github.com/korczis/zlown",
+   "gitlab": "https://gitlab.com/korczis/zlown",
+   "site": null,
+   "created": "2016-02-14T12:37:36Z",
+   "active": "2016-02-18T12:59:34Z"
+  },
+  {
+   "name": "microcrawler-ng",
+   "description": "Microcrawler",
+   "language": "JavaScript",
+   "category": "tools",
+   "github": "https://github.com/korczis/microcrawler-ng",
+   "gitlab": "https://gitlab.com/korczis/microcrawler-ng",
+   "site": null,
+   "created": "2016-01-20T17:11:37Z",
+   "active": "2016-01-20T18:40:08Z"
+  },
+  {
+   "name": "mapofffacts.com",
+   "description": "Map Of Facts",
+   "language": null,
+   "category": "data",
+   "github": "https://github.com/korczis/mapofffacts.com",
+   "gitlab": null,
+   "site": null,
+   "created": "2015-11-14T20:38:28Z",
+   "active": "2015-11-14T22:01:23Z"
+  },
+  {
+   "name": "jetel-modules",
+   "description": "Optional Jetel Modules",
+   "language": null,
+   "category": "data",
+   "github": "https://github.com/korczis/jetel-modules",
+   "gitlab": "https://gitlab.com/korczis/jetel-modules",
+   "site": null,
+   "created": "2015-11-07T01:36:54Z",
+   "active": "2015-11-07T01:37:34Z"
+  },
+  {
+   "name": "csv2psql",
+   "description": "Tool for transforming CSV into SQL statements for insert or update into DB",
+   "language": "Ruby",
+   "category": "tools",
+   "github": "https://github.com/korczis/csv2psql",
+   "gitlab": "https://gitlab.com/korczis/csv2psql",
+   "site": "https://korczis.github.io/csv2psql/",
+   "created": "2014-08-31T00:01:40Z",
+   "active": "2015-11-06T23:39:48Z"
+  },
+  {
+   "name": "data",
+   "description": "Various data",
+   "language": null,
+   "category": "data",
+   "github": "https://github.com/korczis/data",
+   "gitlab": "https://gitlab.com/korczis/data",
+   "site": null,
+   "created": "2014-01-28T22:37:50Z",
+   "active": "2015-11-02T18:26:50Z"
+  },
+  {
+   "name": "json2csv",
+   "description": "Easy to use tool for converting JSON to CSV",
+   "language": "Ruby",
+   "category": "tools",
+   "github": "https://github.com/korczis/json2csv",
+   "gitlab": "https://gitlab.com/korczis/json2csv",
+   "site": null,
+   "created": "2014-08-29T18:38:05Z",
+   "active": "2015-09-18T22:36:20Z"
+  },
+  {
+   "name": "big-png",
+   "description": "Biggest image in the smallest space",
+   "language": "Python",
+   "category": "science",
+   "github": "https://github.com/korczis/big-png",
+   "gitlab": "https://gitlab.com/korczis/big-png",
+   "site": null,
+   "created": "2015-09-02T21:32:06Z",
+   "active": "2015-09-02T21:47:37Z"
+  },
+  {
+   "name": "pavian.eu",
+   "description": "pavian.eu website",
+   "language": "ApacheConf",
+   "category": "tools",
+   "github": "https://github.com/korczis/pavian.eu",
+   "gitlab": null,
+   "site": null,
+   "created": "2015-08-09T15:00:54Z",
+   "active": "2015-08-31T13:49:03Z"
+  },
+  {
+   "name": "skull-cpp",
+   "description": "C++ Skull",
+   "language": "CMake",
+   "category": "learning",
+   "github": "https://github.com/korczis/skull-cpp",
+   "gitlab": "https://gitlab.com/korczis/skull-cpp",
+   "site": null,
+   "created": "2014-07-22T04:15:41Z",
+   "active": "2015-07-24T13:55:05Z"
+  },
+  {
+   "name": "docker-gooddata-ruby",
+   "description": "Dockerized GoodData Ruby",
+   "language": "Ruby",
+   "category": "data",
+   "github": "https://github.com/korczis/docker-gooddata-ruby",
+   "gitlab": "https://gitlab.com/korczis/docker-gooddata-ruby",
+   "site": null,
+   "created": "2015-06-19T07:57:57Z",
+   "active": "2015-07-21T15:51:58Z"
+  },
+  {
+   "name": "microscratch-react",
+   "description": "Rect version of microscratch",
+   "language": null,
+   "category": "web",
+   "github": "https://github.com/korczis/microscratch-react",
+   "gitlab": "https://gitlab.com/korczis/microscratch-react",
+   "site": null,
+   "created": "2015-07-18T12:35:26Z",
+   "active": "2015-07-18T12:35:27Z"
+  },
+  {
+   "name": "magicbiz",
+   "description": "A Decentralized Autonomous Organization Proof of Concept",
+   "language": null,
+   "category": "tools",
+   "github": "https://github.com/korczis/magicbiz",
+   "gitlab": "https://gitlab.com/korczis/magicbiz",
+   "site": null,
+   "created": "2015-06-17T18:49:47Z",
+   "active": "2015-06-17T20:09:22Z"
+  },
+  {
+   "name": "docker-dstk",
+   "description": "Dockerized http://www.datasciencetoolkit.org",
+   "language": "Shell",
+   "category": "data",
+   "github": "https://github.com/korczis/docker-dstk",
+   "gitlab": "https://gitlab.com/korczis/docker-dstk",
+   "site": null,
+   "created": "2015-06-06T14:21:34Z",
+   "active": "2015-06-07T10:39:58Z"
+  },
+  {
+   "name": "docker-datasciencetoolbox",
+   "description": "Dockerized http://datasciencetoolbox.org",
+   "language": null,
+   "category": "data",
+   "github": "https://github.com/korczis/docker-datasciencetoolbox",
+   "gitlab": "https://gitlab.com/korczis/docker-datasciencetoolbox",
+   "site": null,
+   "created": "2015-06-06T14:00:05Z",
+   "active": "2015-06-06T15:11:52Z"
+  },
+  {
+   "name": "datasciencecoursera",
+   "description": "Data Science Coursera Coursera",
+   "language": null,
+   "category": "data",
+   "github": "https://github.com/korczis/datasciencecoursera",
+   "gitlab": "https://gitlab.com/korczis/datasciencecoursera",
+   "site": null,
+   "created": "2015-05-08T16:29:17Z",
+   "active": "2015-05-08T16:30:19Z"
+  },
+  {
+   "name": "wangsta",
+   "description": "Wanna be Gangsta ",
+   "language": null,
+   "category": "tools",
+   "github": "https://github.com/korczis/wangsta",
+   "gitlab": "https://gitlab.com/korczis/wangsta",
+   "site": null,
+   "created": "2015-04-03T00:45:09Z",
+   "active": "2015-04-03T00:50:55Z"
+  },
+  {
+   "name": "talkie",
+   "description": "node.js TTS application",
+   "language": null,
+   "category": "media",
+   "github": "https://github.com/korczis/talkie",
+   "gitlab": "https://gitlab.com/korczis/talkie",
+   "site": null,
+   "created": "2015-03-12T15:11:41Z",
+   "active": "2015-03-12T15:11:41Z"
+  },
+  {
+   "name": "algorithms-ruby",
+   "description": "Fundamental algorithms in ruby",
+   "language": "C++",
+   "category": "science",
+   "github": "https://github.com/korczis/algorithms-ruby",
+   "gitlab": "https://gitlab.com/korczis/algorithms-ruby",
+   "site": null,
+   "created": "2015-03-02T01:03:31Z",
+   "active": "2015-03-02T02:08:11Z"
+  },
+  {
+   "name": "grache",
+   "description": "Cache for ruby gems",
+   "language": "Ruby",
+   "category": "tools",
+   "github": "https://github.com/korczis/grache",
+   "gitlab": "https://gitlab.com/korczis/grache",
+   "site": null,
+   "created": "2015-02-09T14:46:05Z",
+   "active": "2015-02-27T12:12:17Z"
+  },
+  {
+   "name": "docker-conf2015",
+   "description": "Dockerfile for GD ConferenceDay 2015",
+   "language": "JavaScript",
+   "category": "systems",
+   "github": "https://github.com/korczis/docker-conf2015",
+   "gitlab": "https://gitlab.com/korczis/docker-conf2015",
+   "site": null,
+   "created": "2015-02-27T09:21:19Z",
+   "active": "2015-02-27T10:00:50Z"
+  },
+  {
+   "name": "apollon",
+   "description": "Your own personal cluster built on top of the cloud.",
+   "language": "Ruby",
+   "category": "systems",
+   "github": "https://github.com/korczis/apollon",
+   "gitlab": "https://gitlab.com/korczis/apollon",
+   "site": "https://korczis.github.io/apollon/",
+   "created": "2014-05-05T14:49:26Z",
+   "active": "2015-02-25T17:37:45Z"
+  },
+  {
+   "name": "grache-test",
+   "description": "Test project for grache",
+   "language": "Ruby",
+   "category": "learning",
+   "github": "https://github.com/korczis/grache-test",
+   "gitlab": "https://gitlab.com/korczis/grache-test",
+   "site": null,
+   "created": "2015-02-10T13:05:50Z",
+   "active": "2015-02-24T15:24:52Z"
+  },
+  {
+   "name": "iCave",
+   "description": "Open Home Automation Platform",
+   "language": "C++",
+   "category": "tools",
+   "github": "https://github.com/korczis/iCave",
+   "gitlab": "https://gitlab.com/korczis/iCave",
+   "site": null,
+   "created": "2014-03-01T17:50:58Z",
+   "active": "2015-02-22T22:23:02Z"
+  },
+  {
+   "name": "gooddata_connectors_metadata",
+   "description": "The gem for accessing metadata for gooddata connector infrastructure",
+   "language": "Ruby",
+   "category": "data",
+   "github": "https://github.com/korczis/gooddata_connectors_metadata",
+   "gitlab": "https://gitlab.com/korczis/gooddata_connectors_metadata",
+   "site": null,
+   "created": "2015-01-22T15:07:25Z",
+   "active": "2015-01-22T08:28:19Z"
+  },
+  {
+   "name": "lethe.it",
+   "description": "lethe.it - your personal smart links archive, organizer, classifier and much more",
+   "language": "JavaScript",
+   "category": "tools",
+   "github": "https://github.com/korczis/lethe.it",
+   "gitlab": null,
+   "site": null,
+   "created": "2014-12-20T01:29:40Z",
+   "active": "2015-01-17T00:46:05Z"
+  },
+  {
+   "name": "microscratch",
+   "description": "Light Weight Web Framework using node.js, mongo, sockets, ember.js ...",
+   "language": "JavaScript",
+   "category": "web",
+   "github": "https://github.com/korczis/microscratch",
+   "gitlab": "https://gitlab.com/korczis/microscratch",
+   "site": null,
+   "created": "2014-01-31T20:23:36Z",
+   "active": "2015-01-01T15:13:20Z"
+  },
+  {
+   "name": "skull-emscripten",
+   "description": "Emscripten Skull",
+   "language": "C++",
+   "category": "learning",
+   "github": "https://github.com/korczis/skull-emscripten",
+   "gitlab": "https://gitlab.com/korczis/skull-emscripten",
+   "site": null,
+   "created": "2014-11-03T17:40:28Z",
+   "active": "2014-11-03T17:48:14Z"
+  },
+  {
+   "name": "gooddata_rails_app",
+   "description": "GoodData as Rails Application",
+   "language": "Ruby",
+   "category": "data",
+   "github": "https://github.com/korczis/gooddata_rails_app",
+   "gitlab": "https://gitlab.com/korczis/gooddata_rails_app",
+   "site": null,
+   "created": "2014-10-31T13:23:53Z",
+   "active": "2014-10-31T14:45:36Z"
+  },
+  {
+   "name": "annasabatova.cz",
+   "description": "Petice za odvolani annysabatove.cz",
+   "language": "CSS",
+   "category": "web",
+   "github": "https://github.com/korczis/annasabatova.cz",
+   "gitlab": null,
+   "site": null,
+   "created": "2014-10-06T20:55:14Z",
+   "active": "2014-10-06T23:15:26Z"
+  },
+  {
+   "name": "apollo-crawler",
+   "description": null,
+   "language": "Ruby",
+   "category": "data",
+   "github": "https://github.com/korczis/apollo-crawler",
+   "gitlab": "https://gitlab.com/korczis/apollo-crawler",
+   "site": null,
+   "created": "2014-08-30T22:23:58Z",
+   "active": "2014-08-30T22:29:45Z"
+  },
+  {
+   "name": "peacemaker",
+   "description": "Packet sniffing and processing engine ",
+   "language": "C++",
+   "category": "security",
+   "github": "https://github.com/korczis/peacemaker",
+   "gitlab": "https://gitlab.com/korczis/peacemaker",
+   "site": null,
+   "created": "2014-06-08T20:54:20Z",
+   "active": "2014-08-23T09:40:32Z"
+  },
+  {
+   "name": "esri",
+   "description": "Framework for working with ESRI datasets",
+   "language": "Ruby",
+   "category": "data",
+   "github": "https://github.com/korczis/esri",
+   "gitlab": "https://gitlab.com/korczis/esri",
+   "site": null,
+   "created": "2014-08-17T23:18:13Z",
+   "active": "2014-08-23T08:27:24Z"
+  },
+  {
+   "name": "algorithms",
+   "description": "Algorithms implementation",
+   "language": "C++",
+   "category": "science",
+   "github": "https://github.com/korczis/algorithms",
+   "gitlab": "https://gitlab.com/korczis/algorithms",
+   "site": null,
+   "created": "2014-07-18T04:09:42Z",
+   "active": "2014-08-23T08:22:39Z"
+  },
+  {
+   "name": "ares-api",
+   "description": null,
+   "language": null,
+   "category": "tools",
+   "github": "https://github.com/korczis/ares-api",
+   "gitlab": "https://gitlab.com/korczis/ares-api",
+   "site": null,
+   "created": "2014-01-28T23:30:43Z",
+   "active": "2014-08-23T07:19:21Z"
+  },
+  {
+   "name": "ratnet",
+   "description": "Educational Purposes Botnet",
+   "language": null,
+   "category": "security",
+   "github": "https://github.com/korczis/ratnet",
+   "gitlab": "https://gitlab.com/korczis/ratnet",
+   "site": null,
+   "created": "2014-08-23T04:13:25Z",
+   "active": "2014-08-23T06:04:19Z"
+  },
+  {
+   "name": "skull-c",
+   "description": null,
+   "language": "C",
+   "category": "learning",
+   "github": "https://github.com/korczis/skull-c",
+   "gitlab": "https://gitlab.com/korczis/skull-c",
+   "site": null,
+   "created": "2014-07-22T04:27:53Z",
+   "active": "2014-08-05T02:31:04Z"
+  },
+  {
+   "name": "skull",
+   "description": "Programming learning materials, examples, sources ...",
+   "language": "Shell",
+   "category": "knowledge",
+   "github": "https://github.com/korczis/skull",
+   "gitlab": "https://gitlab.com/korczis/skull",
+   "site": null,
+   "created": "2014-05-20T05:59:43Z",
+   "active": "2014-08-03T22:00:41Z"
+  },
+  {
+   "name": "skull-java",
+   "description": null,
+   "language": "Java",
+   "category": "learning",
+   "github": "https://github.com/korczis/skull-java",
+   "gitlab": "https://gitlab.com/korczis/skull-java",
+   "site": null,
+   "created": "2014-07-22T04:22:20Z",
+   "active": "2014-08-03T05:36:11Z"
+  },
+  {
+   "name": "skull-ruby",
+   "description": "Ruby Skull",
+   "language": "Ruby",
+   "category": "learning",
+   "github": "https://github.com/korczis/skull-ruby",
+   "gitlab": "https://gitlab.com/korczis/skull-ruby",
+   "site": null,
+   "created": "2014-07-22T04:20:39Z",
+   "active": "2014-08-03T04:10:03Z"
+  },
+  {
+   "name": "skull-nodejs",
+   "description": "Node.js Skull",
+   "language": null,
+   "category": "learning",
+   "github": "https://github.com/korczis/skull-nodejs",
+   "gitlab": "https://gitlab.com/korczis/skull-nodejs",
+   "site": null,
+   "created": "2014-07-22T04:14:32Z",
+   "active": "2014-08-03T04:09:35Z"
+  },
+  {
+   "name": "skull-haskell",
+   "description": null,
+   "language": "Haskell",
+   "category": "learning",
+   "github": "https://github.com/korczis/skull-haskell",
+   "gitlab": "https://gitlab.com/korczis/skull-haskell",
+   "site": null,
+   "created": "2014-07-22T04:06:44Z",
+   "active": "2014-08-03T04:08:31Z"
+  },
+  {
+   "name": "skull-erlang",
+   "description": "Programming learning materials, examples, sources ...",
+   "language": "Erlang",
+   "category": "knowledge",
+   "github": "https://github.com/korczis/skull-erlang",
+   "gitlab": "https://gitlab.com/korczis/skull-erlang",
+   "site": null,
+   "created": "2014-07-22T04:12:37Z",
+   "active": "2014-08-03T04:08:01Z"
+  },
+  {
+   "name": "apollo-schemas",
+   "description": "NoSql Schemas for Apollo",
+   "language": null,
+   "category": "data",
+   "github": "https://github.com/korczis/apollo-schemas",
+   "gitlab": "https://gitlab.com/korczis/apollo-schemas",
+   "site": null,
+   "created": "2014-07-10T04:05:43Z",
+   "active": "2014-07-10T04:33:45Z"
+  },
+  {
+   "name": "photos",
+   "description": "My Photos ",
+   "language": null,
+   "category": "tools",
+   "github": "https://github.com/korczis/photos",
+   "gitlab": "https://gitlab.com/korczis/photos",
+   "site": null,
+   "created": "2014-07-04T05:14:07Z",
+   "active": "2014-07-04T05:16:34Z"
+  },
+  {
+   "name": "principal",
+   "description": "The one who orchestrates all the folks in the circus ...",
+   "language": null,
+   "category": "tools",
+   "github": "https://github.com/korczis/principal",
+   "gitlab": "https://gitlab.com/korczis/principal",
+   "site": null,
+   "created": "2014-06-24T09:13:27Z",
+   "active": "2014-06-24T09:13:27Z"
+  },
+  {
+   "name": "microcrawler-couchapp",
+   "description": "Microcrawler Web UI for browsing results (couchapp) ...",
+   "language": "JavaScript",
+   "category": "data",
+   "github": "https://github.com/korczis/microcrawler-couchapp",
+   "gitlab": "https://gitlab.com/korczis/microcrawler-couchapp",
+   "site": null,
+   "created": "2014-05-24T03:27:36Z",
+   "active": "2014-06-22T01:04:24Z"
+  },
+  {
+   "name": "codecademy",
+   "description": "exmples",
+   "language": "Ruby",
+   "category": "tools",
+   "github": "https://github.com/korczis/codecademy",
+   "gitlab": "https://gitlab.com/korczis/codecademy",
+   "site": null,
+   "created": "2014-05-20T05:05:52Z",
+   "active": "2014-05-20T05:53:58Z"
+  },
+  {
+   "name": "github-extractor",
+   "description": "Extracts Data From Github",
+   "language": "JavaScript",
+   "category": "data",
+   "github": "https://github.com/korczis/github-extractor",
+   "gitlab": "https://gitlab.com/korczis/github-extractor",
+   "site": null,
+   "created": "2014-05-14T06:42:43Z",
+   "active": "2014-05-14T06:48:32Z"
+  },
+  {
+   "name": "apollo-box",
+   "description": "All needed data science stuff in one box ",
+   "language": "Shell",
+   "category": "data",
+   "github": "https://github.com/korczis/apollo-box",
+   "gitlab": "https://gitlab.com/korczis/apollo-box",
+   "site": null,
+   "created": "2014-05-05T03:45:19Z",
+   "active": "2014-05-05T04:07:32Z"
+  },
+  {
+   "name": "nosqlight",
+   "description": "Document Oriented SQLite like Database",
+   "language": null,
+   "category": "data",
+   "github": "https://github.com/korczis/nosqlight",
+   "gitlab": "https://gitlab.com/korczis/nosqlight",
+   "site": null,
+   "created": "2014-04-24T16:26:51Z",
+   "active": "2014-04-24T19:56:59Z"
+  },
+  {
+   "name": "apollocrawler.com",
+   "description": "Website for apollocrawler.com ...",
+   "language": "JavaScript",
+   "category": "tools",
+   "github": "https://github.com/korczis/apollocrawler.com",
+   "gitlab": null,
+   "site": null,
+   "created": "2014-01-31T17:15:49Z",
+   "active": "2014-02-24T01:42:50Z"
+  },
+  {
+   "name": "craftsmen",
+   "description": "Web UI for listing of czech companies",
+   "language": "JavaScript",
+   "category": "web",
+   "github": "https://github.com/korczis/craftsmen",
+   "gitlab": "https://gitlab.com/korczis/craftsmen",
+   "site": null,
+   "created": "2014-01-31T17:14:37Z",
+   "active": "2014-02-24T01:38:32Z"
+  },
+  {
+   "name": "solr-core-minimal",
+   "description": "Minimal config core for solr",
+   "language": "XSLT",
+   "category": "data",
+   "github": "https://github.com/korczis/solr-core-minimal",
+   "gitlab": "https://gitlab.com/korczis/solr-core-minimal",
+   "site": null,
+   "created": "2014-02-05T18:32:13Z",
+   "active": "2014-02-05T18:40:32Z"
+  },
+  {
+   "name": "generator-microscratch",
+   "description": "Yeoman generator of microscratch based projects",
+   "language": "JavaScript",
+   "category": "tools",
+   "github": "https://github.com/korczis/generator-microscratch",
+   "gitlab": "https://gitlab.com/korczis/generator-microscratch",
+   "site": null,
+   "created": "2014-02-02T22:17:09Z",
+   "active": "2014-02-02T22:17:01Z"
+  },
+  {
+   "name": "cs-benchmark",
+   "description": "Simple C# Benchmark",
+   "language": "C#",
+   "category": "learning",
+   "github": "https://github.com/korczis/cs-benchmark",
+   "gitlab": "https://gitlab.com/korczis/cs-benchmark",
+   "site": null,
+   "created": "2014-01-06T16:46:32Z",
+   "active": "2014-01-07T10:43:45Z"
+  },
+  {
+   "name": "lola",
+   "description": "Loader & Launcher of Modular NodeJS Apps",
+   "language": "JavaScript",
+   "category": "tools",
+   "github": "https://github.com/korczis/lola",
+   "gitlab": "https://gitlab.com/korczis/lola",
+   "site": null,
+   "created": "2013-12-31T09:24:33Z",
+   "active": "2014-01-03T14:43:11Z"
+  },
+  {
+   "name": "books",
+   "description": "List of good books",
+   "language": null,
+   "category": "knowledge",
+   "github": "https://github.com/korczis/books",
+   "gitlab": "https://gitlab.com/korczis/books",
+   "site": null,
+   "created": "2013-12-20T18:03:28Z",
+   "active": "2013-12-20T18:16:19Z"
+  },
+  {
+   "name": "generator-the-scratch",
+   "description": "Yeoman Generator for The Scratch",
+   "language": "JavaScript",
+   "category": "learning",
+   "github": "https://github.com/korczis/generator-the-scratch",
+   "gitlab": "https://gitlab.com/korczis/generator-the-scratch",
+   "site": null,
+   "created": "2013-08-31T12:24:43Z",
+   "active": "2013-09-07T17:04:41Z"
+  },
+  {
+   "name": "Rocnikac4",
+   "description": null,
+   "language": "C#",
+   "category": "learning",
+   "github": "https://github.com/korczis/Rocnikac4",
+   "gitlab": "https://gitlab.com/korczis/Rocnikac4",
+   "site": null,
+   "created": "2013-08-28T22:58:45Z",
+   "active": "2013-08-28T23:35:00Z"
+  },
+  {
+   "name": "skype-adapter-client",
+   "description": "Ruby client application for korczis/skype-adapter",
+   "language": null,
+   "category": "libraries",
+   "github": "https://github.com/korczis/skype-adapter-client",
+   "gitlab": "https://gitlab.com/korczis/skype-adapter-client",
+   "site": null,
+   "created": "2013-05-01T20:29:50Z",
+   "active": "2013-05-01T20:29:51Z"
+  },
+  {
+   "name": "social-icons",
+   "description": "Social Networks icons from Devise Example",
+   "language": null,
+   "category": "systems",
+   "github": "https://github.com/korczis/social-icons",
+   "gitlab": "https://gitlab.com/korczis/social-icons",
+   "site": null,
+   "created": "2013-04-14T18:32:32Z",
+   "active": "2013-04-14T19:59:41Z"
+  },
+  {
+   "name": "malina",
+   "description": "Raspberry Pi playground",
+   "language": "Shell",
+   "category": "learning",
+   "github": "https://github.com/korczis/malina",
+   "gitlab": "https://gitlab.com/korczis/malina",
+   "site": null,
+   "created": "2013-01-06T04:15:58Z",
+   "active": "2013-01-08T20:07:01Z"
+  },
+  {
+   "name": "inspectors",
+   "description": "Tools used for various kind of inspections ....",
+   "language": null,
+   "category": "tools",
+   "github": "https://github.com/korczis/inspectors",
+   "gitlab": "https://gitlab.com/korczis/inspectors",
+   "site": null,
+   "created": "2012-11-20T18:33:49Z",
+   "active": "2012-11-20T18:33:49Z"
+  },
+  {
+   "name": "ares",
+   "description": "Simple (AMQP Based) Monitoring framework",
+   "language": "Ruby",
+   "category": "tools",
+   "github": "https://github.com/korczis/ares",
+   "gitlab": "https://gitlab.com/korczis/ares",
+   "site": null,
+   "created": "2012-10-07T21:47:34Z",
+   "active": "2012-10-07T21:50:35Z"
+  },
+  {
+   "name": "reflex",
+   "description": ".NET Reflection tools",
+   "language": "C#",
+   "category": "tools",
+   "github": "https://github.com/korczis/reflex",
+   "gitlab": "https://gitlab.com/korczis/reflex",
+   "site": null,
+   "created": "2012-08-19T23:35:54Z",
+   "active": "2012-08-19T23:41:19Z"
+  },
+  {
+   "name": "sandbox",
+   "description": "Something just for fun. This is place where I play with new techs...",
+   "language": null,
+   "category": "learning",
+   "github": "https://github.com/korczis/sandbox",
+   "gitlab": "https://gitlab.com/korczis/sandbox",
+   "site": null,
+   "created": "2012-01-01T23:48:41Z",
+   "active": "2012-01-02T01:11:36Z"
+  }
+ ],
+ "counts": {
+  "github": 447,
+  "gitlab": 417,
+  "merged": 516,
+  "own": 211,
+  "forks": 250,
+  "mirrors": 47,
+  "empty": 3,
+  "hidden": 5,
+  "mirrors_measured": 32
+ }
+}

@@ -80,7 +80,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup
-      - name: Catalogue and snapshot are well-formed
+      - name: Front matter matches its schema
+        run: node scripts/check-front-matter.mjs
+      - name: Catalogue, snapshot and index are well-formed
         run: node scripts/check-data.mjs
       - name: Category pages are current
         run: node scripts/build-categories.mjs --check
@@ -88,6 +90,8 @@ jobs:
         run: node scripts/build-llms.mjs --check
       - name: Open Graph images are current
         run: node scripts/build-og.mjs --check
+      - name: site.json is current
+        run: node scripts/build-site-json.mjs --check
       - name: Every visual goes through the component layer
         run: node scripts/check-viz-layer.mjs
       - name: Build (internal links are errors)

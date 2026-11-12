@@ -147,6 +147,9 @@ for (const file of contentFiles(join(ROOT, 'content'))) {
     }
     continue;
   }
+  // Re-render only when the SVG changed (or the PNG is missing): renderers on other machines use
+  // other fonts, and an unchanged image must not churn in a diff.
+  if (existsSync(source) && existsSync(png) && readFileSync(source, 'utf8') === text) continue;
   writeFileSync(source, text);
   execFileSync('rsvg-convert', ['--width', String(W), '--height', String(H), '--output', png, source]);
   console.log(`og: ${fm.extra.og_image} from ${file.slice(ROOT.length + 1)}`);

@@ -1,0 +1,50 @@
+name: Refresh
+
+# Keeps the hub current without anyone maintaining it: once a week (and on demand) it measures
+# GitHub and GitLab again, re-derives everything that follows from the data, runs every gate, and
+# only when they all pass commits the result to master and starts the deploy. A failing gate
+# leaves the site as it was.
+on:
+  schedule:
+    - cron: '23 4 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    name: Measure, derive, gate, commit
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup
+      - name: Renderer for the Open Graph images
+        run: sudo apt-get install -y --no-install-recommends librsvg2-bin
+      - name: Measure (GitHub, GitLab, majordomus.dev)
+        run: npm run --silent data && npm run --silent index
+      - name: Derive (categories, llms.txt, OG images, site.json)
+        run: npm run --silent derive
+      - name: Every gate (data, front matter, derived files, viz layer, build, SEO)
+        run: npm run --silent check
+      - name: Commit and deploy when something changed
+        run: |
+          if git diff --quiet && [ -z "$(git ls-files --others --exclude-standard)" ]; then
+            echo "nothing changed"; exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "chore(data): weekly refresh of the snapshot and the index"
+          git push origin HEAD:master
+          # A push made with GITHUB_TOKEN starts no workflow; start the deploy explicitly.
+          gh workflow run pages.yml --ref master

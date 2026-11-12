@@ -37,6 +37,19 @@ also need [majordomus](https://majordomus.dev).
 | `scripts/` | Data, vendoring and every gate (`verify-all.sh`, `check-*.mjs`, `audit-ui.mjs`) |
 | `.ai/` | The Majordomus layer: policy, ADRs, rules under `.ai/repo/rules/project/` |
 
+## How the site stays current
+
+Pages are front matter over data. Nothing on them is typed, so nothing needs updating by hand:
+- **Front matter:** `content/*.md` carries it, checked against
+  [`static/schemas/front-matter.schema.json`](static/schemas/front-matter.schema.json).
+- **Data:** `data/projects.toml` holds the words. `data/github.json` and `data/index.json` hold
+  the measurements.
+- **Derived:** category pages, `llms.txt`, `llms-full.txt`, OG images and `site.json` (the whole
+  site as data).
+- **Weekly refresh:** `.github/workflows/refresh.yml` runs every Monday, or by hand with
+  `gh workflow run refresh.yml`. It runs `npm run refresh`, then `npm run check`. Only when every
+  gate passes does it commit to master and start the deploy.
+
 ## Common tasks
 
 - **Add a project.** Add an entry to `data/projects.toml`, then run `npm run data`, `npm run categories`, `npm run llms` and `npm run og`.
@@ -59,7 +72,9 @@ also need [majordomus](https://majordomus.dev).
 | Gate | Command | Rule |
 | --- | --- | --- |
 | Conventional commits | `scripts/lint-commits.sh <range>` (also the commit-msg hook) | |
-| Catalogue and snapshot | `node scripts/check-data.mjs` | `project.data-measured` |
+| Front matter | `node scripts/check-front-matter.mjs` | `project.front-matter-contract` |
+| Catalogue, snapshot, index | `node scripts/check-data.mjs` | `project.data-measured` |
+| site.json current | `node scripts/build-site-json.mjs --check` | `project.front-matter-contract` |
 | Category pages current | `node scripts/build-categories.mjs --check` | `project.data-measured` |
 | llms.txt current | `node scripts/build-llms.mjs --check` | `project.data-measured` |
 | Open Graph images current | `node scripts/build-og.mjs --check` | `project.seo-derived` |

@@ -22,10 +22,12 @@ run() { step "$1"; shift; "$@"; }
 
 if [ "$audit_only" = 0 ]; then
 run "Conventional commits on this branch" scripts/lint-commits.sh "$(git merge-base HEAD origin/master 2>/dev/null || git rev-list --max-parents=0 HEAD | tail -1)..HEAD"
-run "Catalogue and snapshot are well-formed" node scripts/check-data.mjs
+run "Front matter matches its schema" node scripts/check-front-matter.mjs
+run "Catalogue, snapshot and index are well-formed" node scripts/check-data.mjs
 run "Category pages are current" node scripts/build-categories.mjs --check
 run "llms.txt is current" node scripts/build-llms.mjs --check
 run "Open Graph images are current" node scripts/build-og.mjs --check
+run "site.json is current" node scripts/build-site-json.mjs --check
 run "Every visual goes through the component layer" node scripts/check-viz-layer.mjs
 run "Build (internal links are errors)" npm run --silent build
 run "SEO derived from front matter (titles, descriptions, OG, JSON-LD, sitemap)" node scripts/check-seo.mjs

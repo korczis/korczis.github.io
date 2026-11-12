@@ -28,11 +28,26 @@ async function gh(path) {
 
 // GitLab through its CLI (`glab api`, authenticated: higher rate limits than anonymous REST). On a
 // rate limit it waits and retries, up to six times.
+// Where glab is not installed or not logged in (CI), the same API answers over REST, with
+// GITLAB_TOKEN when the environment has one and anonymously otherwise.
+let useGlab = null;
 async function gitlab(path) {
+  if (useGlab === null) {
+    useGlab = await run('glab', ['auth', 'status']).then(() => true, () => false);
+    if (!useGlab) console.error('glab unavailable: reading GitLab over REST');
+  }
   for (let attempt = 0; ; attempt += 1) {
     try {
-      const { stdout } = await run('glab', ['api', path.replace(/^\//, '')], { maxBuffer: 64 * 1024 * 1024 });
-      return JSON.parse(stdout);
+      if (useGlab) {
+        const { stdout } = await run('glab', ['api', path.replace(/^\//, '')], { maxBuffer: 64 * 1024 * 1024 });
+        return JSON.parse(stdout);
+      }
+      const headers = process.env.GITLAB_TOKEN ? { 'PRIVATE-TOKEN': process.env.GITLAB_TOKEN } : {};
+      const response = await fetch(`https://gitlab.com/api/v4/${path.replace(/^\//, '')}`, { headers, signal: AbortSignal.timeout(30000) });
+      if (response.ok) return response.json();
+      const error = new Error(`GitLab ${path}: HTTP ${response.status}`);
+      error.stderr = String(response.status);
+      throw error;
     } catch (error) {
       if (!/429|rate limit/i.test(String(error.stderr ?? error.message)) || attempt >= 6) throw error;
       await new Promise((resolve) => setTimeout(resolve, 2 ** attempt * 5000));
