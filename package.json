@@ -38,13 +38,13 @@
     "@tailwindcss/cli": "4.3.5",
     "alpinejs": "3.17.5",
     "axe-core": "4.14.0",
-    "chart.js": "4.5.1",
+    "chart.js": "4.6.1",
     "cytoscape": "3.34.4",
     "echarts": "6.1.0",
     "flowbite": "4.0.2",
     "p5": "2.3.4",
     "playwright-core": "1.63.0",
-    "smol-toml": "1.4.2",
+    "smol-toml": "1.9.1",
     "tailwindcss": "4.3.5"
   }
 }
