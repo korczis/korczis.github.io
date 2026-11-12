@@ -134,6 +134,14 @@ async function measure(browser, name, rel, width, scheme, full) {
 
 const LINKS = new Map();
 const LINK_FAILURES = [];
+// Project sites share this origin on GitHub Pages (korczis.github.io/<repo>/) but are other
+// repositories' builds: they are checked by scripts/check-live.mjs, not against this build.
+const PROJECT_SITES = new Set(
+  [...readFileSync(new URL('../data/projects.toml', import.meta.url), 'utf8').matchAll(/^url = "([^"]+)"/gm)]
+    .map(([, url]) => new URL(url))
+    .filter((url) => url.origin === new URL(BASE).origin && url.pathname.split('/').filter(Boolean).length > 0)
+    .map((url) => url.pathname.split('/').filter(Boolean)[0]),
+);
 
 function collect(result) {
   const origin = new URL(BASE).origin;
@@ -141,6 +149,7 @@ function collect(result) {
     if (!abs.startsWith(origin)) continue;
     const url = new URL(abs);
     const path = decodeURIComponent(url.pathname);
+    if (PROJECT_SITES.has(path.split('/').filter(Boolean)[0])) continue;
     if (path !== path.toLowerCase()) LINK_FAILURES.push(`/${result.path}: upper case in link ${raw}`);
     url.hash = '';
     url.search = '';
