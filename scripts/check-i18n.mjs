@@ -65,6 +65,14 @@ function twins(node, where) {
 }
 twins(parse(readFileSync(join(ROOT, 'data/site.toml'), 'utf8')), 'site');
 
+// Front matter that names texts by key ([[extra.viz]] title / lead) names existing keys.
+for (const file of walk(join(ROOT, 'content'), '.md')) {
+  const match = readFileSync(file, 'utf8').match(/^\+\+\+\n([\s\S]*?)\n\+\+\+/);
+  for (const v of (match ? parse(match[1]).extra?.viz : null) ?? []) {
+    for (const key of [v.title, v.lead]) if (!strings[key]) findings.push(`${rel(file)}: [[extra.viz]] key ${key} is not in i18n/strings.toml`);
+  }
+}
+
 // Content: every page in every language.
 const pages = walk(join(ROOT, 'content'), '.md').map(rel);
 const set = new Set(pages);

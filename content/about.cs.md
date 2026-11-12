@@ -11,4 +11,19 @@ og_description = "Patnáct let veřejné práce na GitHubu a GitLabu: dohled nad
 og_image = "og/cs-about.png"
 schema = "profile"
 keywords = ["Tomáš Korčák", "korczis", "CV", "softwarový inženýr", "Brno", "Majordomus", "Elixir", "Rust", "open source"]
+[[extra.viz]]
+kind = "stream"
+source = "index.years"
+title = "viz_stream_title"
+lead = "viz_stream_lead"
+span = 2
+height = "lg"
+
+[[extra.viz]]
+kind = "pack"
+source = "index.languages"
+title = "viz_pack_title"
+lead = "viz_pack_lead"
+span = 1
+height = "lg"
 +++

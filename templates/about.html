@@ -62,30 +62,8 @@
     </section>
   </div>
 
-  <div class="grid grid-cols-1 gap-4 xl:grid-cols-3">
-    {#- Expertise over time: ECharts stacked bars of languages by year of creation. #}
-    <section class="{{ card }} xl:col-span-2" aria-labelledby="expertise-title">
-      <h2 id="expertise-title" class="{{ card_title }}">{{ trans(key="languages_over_the_years", lang=lang) | safe }}</h2>
-      <p class="mb-4 mt-1 text-sm text-gray-600 dark:text-gray-400">{{ trans(key="original_repositories_by_year_of_creation", lang=lang) | safe }}</p>
-      <div class="viz-box h-80" data-viz="expertise" data-source="expertise-data" role="img"
-        aria-label="{% set_global top5 = "" %}{% for l in ix.languages %}{% if loop.index <= 5 %}{% set_global top5 = top5 ~ l.name ~ " " ~ l.repos %}{% if loop.index < 5 %}{% set_global top5 = top5 ~ ", " %}{% endif %}{% endif %}{% endfor %}{{ trans(key="aria_expertise", lang=lang) | replace(from="{list}", to=top5) }}">
-        <div data-canvas></div>
-      </div>
-      <script type="application/json" id="expertise-data">{"years": {{ ix.languages_by_year | json_encode | safe }}, "languages": {{ ix.languages | json_encode | safe }}}</script>
-    </section>
-    <section class="{{ card }}" aria-labelledby="languages-total-title">
-      <h2 id="languages-total-title" class="{{ card_title }}">{{ trans(key="most_used", lang=lang) | safe }}</h2>
-      <p class="mb-4 mt-1 text-sm text-gray-600 dark:text-gray-400">{{ trans(key="primary_language_of", lang=lang) | safe }} {{ ix.counts.own }} {{ trans(key="original_repositories", lang=lang) | safe }}</p>
-      <ul class="space-y-3">
-        {%- for l in ix.languages %}{% if loop.index <= 8 %}
-        <li>
-          <div class="mb-1 flex justify-between text-sm"><a href="{{ base }}repositories/?language={{ l.name | urlencode }}" class="font-medium text-gray-900 hover:text-primary-700 hover:underline dark:text-white dark:hover:text-primary-400">{{ l.name }}</a><span class="tabular text-gray-600 dark:text-gray-400">{{ l.repos }}</span></div>
-          <div class="h-2 w-full rounded-sm bg-gray-200 dark:bg-gray-700"><div class="h-2 rounded-sm bg-primary-700 dark:bg-primary-500" style="width: {{ (l.repos * 100 / ix.languages[0].repos) | round }}%"></div></div>
-        </li>
-        {%- endif %}{% endfor %}
-      </ul>
-    </section>
-  </div>
+  {#- Art visuals declared in front matter ([[extra.viz]]), rendered generically. #}
+  {%- include "partials/viz-grid.html" %}
 
   {#- Skills: derived, each with its evidence (Flowbite badges + tooltips). Languages come from every
       original repository, technologies from the curated projects' stacks, domains from the categories. #}
@@ -174,6 +152,4 @@
 </div>
 {% endblock content %}
 
-{% block scripts %}
-<script src="{{ get_url(path='js/viz/expertise.js', cachebust=true) }}" defer></script>
-{% endblock scripts %}
+{% block scripts %}{% endblock scripts %}

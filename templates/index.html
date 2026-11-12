@@ -287,33 +287,8 @@
   </section>
   </div>
 
-  <div class="grid grid-cols-1 gap-4 xl:grid-cols-3">
-    {#- Contribution calendar (ECharts) and languages (Chart.js): Flowbite Pro chart cards. #}
-    <section class="{{ card }} xl:col-span-2" aria-labelledby="activity-title">
-      <div class="mb-4 flex items-center">
-        <div class="shrink-0">
-          <p class="tabular text-2xl font-bold leading-none text-gray-900 dark:text-white sm:text-3xl">{{ gh.contributions.total | num_format }}</p>
-          <h2 id="activity-title" class="mt-1 text-base font-normal text-gray-600 dark:text-gray-400">{{ trans(key="contributions", lang=lang) | safe }} {{ gh.contributions.from | date(format="%b %Y") }} {{ trans(key="to", lang=lang) | safe }} {{ gh.contributions.to | date(format="%b %Y") }}</h2>
-        </div>
-      </div>
-      <div class="viz-box h-56" data-viz="activity" data-source="activity-data" role="img"
-        aria-label="{{ trans(key="aria_calendar", lang=lang) | replace(from="{n}", to=gh.contributions.total ~ "") }}">
-        <div data-canvas></div>
-      </div>
-      <script type="application/json" id="activity-data">{{ gh.contributions | json_encode | safe }}</script>
-    </section>
-    <section class="{{ card }}" aria-labelledby="languages-title">
-      <div class="mb-4">
-        <p class="tabular text-2xl font-bold leading-none text-gray-900 dark:text-white sm:text-3xl">{{ gh.languages | length }}</p>
-        <h2 id="languages-title" class="mt-1 text-base font-normal text-gray-600 dark:text-gray-400">{{ trans(key="languages_across_public_repositories", lang=lang) | safe }}</h2>
-      </div>
-      <div class="viz-box h-72" data-viz="languages" data-source="languages-data" role="img"
-        aria-label="{% set_global langlist = "" %}{% for l in gh.languages %}{% set_global langlist = langlist ~ l.name ~ " " ~ l.repos %}{% if not loop.last %}{% set_global langlist = langlist ~ ", " %}{% endif %}{% endfor %}{{ trans(key="aria_languages_bar", lang=lang) | replace(from="{list}", to=langlist) }}">
-        <canvas></canvas>
-      </div>
-      <script type="application/json" id="languages-data">{{ gh.languages | json_encode | safe }}</script>
-    </section>
-  </div>
+  {#- Art visuals declared in front matter ([[extra.viz]]), rendered generically. #}
+  {%- include "partials/viz-grid.html" %}
   <p class="text-xs text-gray-600 dark:text-gray-400">{{ trans(key="measured_from_the_github_api_on", lang=lang) | safe }} {{ as_of }}. <a href="{{ base }}stack/#data" class="font-medium text-primary-700 hover:underline dark:text-primary-400">{{ trans(key="how_these_numbers_are_made", lang=lang) | safe }}</a></p>
 
   {#- Flowbite Pro cta-sections, as a dashboard card. #}
@@ -331,8 +306,6 @@
 {% block scripts %}
 <script src="{{ get_url(path='js/viz/glyphs.js', cachebust=true) }}" defer></script>
 <script src="{{ get_url(path='js/viz/graph.js', cachebust=true) }}" defer></script>
-<script src="{{ get_url(path='js/viz/activity.js', cachebust=true) }}" defer></script>
-<script src="{{ get_url(path='js/viz/languages.js', cachebust=true) }}" defer></script>
 <script src="{{ get_url(path='js/viz/skillset.js', cachebust=true) }}" defer></script>
 <script src="{{ get_url(path='js/components/majordomus.js', cachebust=true) }}" defer></script>
 {% endblock scripts %}

@@ -241,7 +241,8 @@
   function tooltip(box) {
     const tip = document.createElement('div');
     tip.className = 'viz-tip';
-    tip.setAttribute('role', 'tooltip');
+    // A pointer-only echo of what the visual's aria-label already states: hidden from assistive tech.
+    tip.setAttribute('aria-hidden', 'true');
     box.appendChild(tip);
     return {
       show(html, event) {

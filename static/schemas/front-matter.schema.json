@@ -93,6 +93,65 @@
           "type": "string",
           "minLength": 1,
           "description": "Work pages only: the repository name in data/recent.json."
+        },
+        "viz": {
+          "type": "array",
+          "maxItems": 9,
+          "description": "Visual cards rendered by templates/partials/viz-grid.html, in order.",
+          "items": {
+            "type": "object",
+            "required": [
+              "kind",
+              "source",
+              "title",
+              "lead"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "kind": {
+                "enum": [
+                  "spiral",
+                  "pack",
+                  "stream",
+                  "activity",
+                  "languages",
+                  "expertise",
+                  "skillset",
+                  "graph"
+                ],
+                "description": "A visual registered in static/js/viz/<kind>.js"
+              },
+              "source": {
+                "enum": [
+                  "github.contributions",
+                  "github.languages",
+                  "index.languages",
+                  "index.years"
+                ]
+              },
+              "title": {
+                "type": "string",
+                "pattern": "^[a-z0-9_]+$",
+                "description": "i18n key"
+              },
+              "lead": {
+                "type": "string",
+                "pattern": "^[a-z0-9_]+$",
+                "description": "i18n key"
+              },
+              "span": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "height": {
+                "enum": [
+                  "sm",
+                  "md",
+                  "lg"
+                ]
+              }
+            }
+          }
         }
       }
     },

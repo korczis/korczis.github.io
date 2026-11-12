@@ -11,4 +11,19 @@ og_description = "Fifteen years of public work on GitHub and GitLab: AI supervis
 og_image = "og/about.png"
 schema = "profile"
 keywords = ["Tomas Korcak", "korczis", "CV", "software engineer", "Brno", "Majordomus", "Elixir", "Rust", "open source"]
+[[extra.viz]]
+kind = "stream"
+source = "index.years"
+title = "viz_stream_title"
+lead = "viz_stream_lead"
+span = 2
+height = "lg"
+
+[[extra.viz]]
+kind = "pack"
+source = "index.languages"
+title = "viz_pack_title"
+lead = "viz_pack_lead"
+span = 1
+height = "lg"
 +++

@@ -1,0 +1,28 @@
+{#- Visual cards declared in the page's front matter ([[extra.viz]]): kind (a registered visual in
+    static/js/viz/), source (a named data set below), title and lead (i18n keys), span (1-3 columns)
+    and height (sm, md, lg). The page composes; this partial renders. Validated by the front-matter
+    schema and scripts/check-viz-layer.mjs. -#}
+{%- set vfm = false -%}{%- if page is defined -%}{%- set vfm = page -%}{%- elif section is defined -%}{%- set vfm = section -%}{%- endif -%}
+{%- if vfm and vfm.extra.viz is defined -%}
+{%- set vgh = load_data(path="data/github.json") -%}
+{%- set vix = load_data(path="data/index.json") -%}
+<div class="grid grid-cols-1 gap-4 xl:grid-cols-3">
+  {%- for v in vfm.extra.viz %}
+  {%- set id = "viz-" ~ loop.index ~ "-" ~ v.kind %}
+  {%- if v.height == "sm" %}{% set h = "h-64" %}{% elif v.height == "lg" %}{% set h = "h-[28rem]" %}{% else %}{% set h = "h-80" %}{% endif %}
+  {%- if v.span == 3 %}{% set sp = "xl:col-span-3" %}{% elif v.span == 2 %}{% set sp = "xl:col-span-2" %}{% else %}{% set sp = "" %}{% endif %}
+  <section class="min-w-0 rounded-lg bg-white p-4 shadow dark:bg-gray-800 sm:p-6 {{ sp }}" aria-labelledby="{{ id }}-title">
+    <h2 id="{{ id }}-title" class="text-xl font-bold leading-none text-gray-900 dark:text-white">{{ trans(key=v.title, lang=lang) }}</h2>
+    <p class="mb-4 mt-1 text-sm text-gray-600 dark:text-gray-400">{{ trans(key=v.lead, lang=lang) }}</p>
+    <div class="viz-box {{ h }}" data-viz="{{ v.kind }}" data-source="{{ id }}-data" role="img" aria-label="{{ trans(key=v.lead, lang=lang) }}"></div>
+    <script type="application/json" id="{{ id }}-data">
+      {%- if v.source == "github.contributions" %}{{ vgh.contributions | json_encode | safe }}
+      {%- elif v.source == "github.languages" %}{{ vgh.languages | json_encode | safe }}
+      {%- elif v.source == "index.languages" %}{{ vix.languages | json_encode | safe }}
+      {%- elif v.source == "index.years" %}{"years": {{ vix.languages_by_year | json_encode | safe }}, "languages": {{ vix.languages | json_encode | safe }}}
+      {%- else %}null{% endif -%}
+    </script>
+  </section>
+  {%- endfor %}
+</div>
+{%- endif -%}

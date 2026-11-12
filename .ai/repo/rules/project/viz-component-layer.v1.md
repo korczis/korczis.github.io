@@ -26,6 +26,13 @@ theme change, error reporting and the ready state the audit waits for.
   `data/github.json` or `data/projects.toml`; a visual never fetches data itself. The only
   runtime fetch is the Majordomus release card (an Alpine component, not a visual), which shows
   the build-time snapshot until majordomus.dev answers.
+- Pages compose their visuals in front matter (`[[extra.viz]]`: kind, source, title and lead
+  i18n keys, span, height); `templates/partials/viz-grid.html` renders them and the base layout
+  loads each declared kind's script. The schema enumerates kinds and named data sources.
+- Art first: the D3 visuals (`spiral`, `pack`, `stream`) draw with the art palette (`--hub-art-*`,
+  a hue walk from the brand blue through sky to violet), gradients and glow, animate in, answer
+  hover with the shared tooltip (`KorczisHub.tooltip`, hidden from assistive tech because the
+  card's aria-label states the same) and open the matching work on click.
 - Motion respects `prefers-reduced-motion`; a decorative visual is `aria-hidden`.
 - Alpine.js components live in `static/js/components/` and only enhance markup the template
   already rendered.

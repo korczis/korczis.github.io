@@ -10,4 +10,27 @@ og_description = "Tools that make AI agents prove what they did, honest instrume
 og_image = "og/home.png"
 schema = "home"
 keywords = ["Tomas Korcak", "korczis", "Majordomus", "AI agents", "software engineering", "scientific visualisation", "Brno"]
+[[extra.viz]]
+kind = "spiral"
+source = "github.contributions"
+title = "viz_spiral_title"
+lead = "viz_spiral_lead"
+span = 1
+height = "lg"
+
+[[extra.viz]]
+kind = "pack"
+source = "index.languages"
+title = "viz_pack_title"
+lead = "viz_pack_lead"
+span = 2
+height = "lg"
+
+[[extra.viz]]
+kind = "stream"
+source = "index.years"
+title = "viz_stream_title"
+lead = "viz_stream_lead"
+span = 3
+height = "md"
 +++

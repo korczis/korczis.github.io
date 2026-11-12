@@ -1107,3 +1107,28 @@ cs = "Každý štítek na webu Tomáše Korčáka, odvozený z kategorií a jazy
 [brand]
 en = "Tomas Korcak"
 cs = "Tomáš Korčák"
+
+# Visual cards declared in front matter ([[extra.viz]] title / lead).
+[viz_spiral_title]
+en = "A year of contributions"
+cs = "Rok příspěvků"
+
+[viz_spiral_lead]
+en = "Every day of the last twelve months on a spiral, week by week around the circle; the brighter, the busier."
+cs = "Každý den posledních dvanácti měsíců na spirále, týden po týdnu dokola; čím jasnější, tím rušnější."
+
+[viz_pack_title]
+en = "Languages, as bubbles"
+cs = "Jazyky jako bubliny"
+
+[viz_pack_lead]
+en = "Every original repository by its primary language; a bubble opens its repositories."
+cs = "Každý původní repozitář podle hlavního jazyka; bublina otevře jeho repozitáře."
+
+[viz_stream_title]
+en = "Languages over the years"
+cs = "Jazyky v průběhu let"
+
+[viz_stream_lead]
+en = "Original repositories by year of creation, as streams of their languages; a stream opens its repositories."
+cs = "Původní repozitáře podle roku vzniku jako proudy jejich jazyků; proud otevře své repozitáře."

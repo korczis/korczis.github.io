@@ -49,6 +49,10 @@
   <script src="{{ config.base_url }}/js/vendor/flowbite.min.js" defer></script>
   <script src="{{ get_url(path='js/site.js', cachebust=true) }}" defer></script>
   {%- block scripts %}{% endblock scripts %}
+  {%- set vfm = false %}{% if page is defined %}{% set vfm = page %}{% elif section is defined %}{% set vfm = section %}{% endif %}
+  {%- if vfm and vfm.extra.viz is defined %}{% set_global seen = "|" %}{% for v in vfm.extra.viz %}{% if not ("|" ~ v.kind ~ "|") in seen %}{% set_global seen = seen ~ v.kind ~ "|" %}
+  <script src="{{ get_url(path='js/viz/' ~ v.kind ~ '.js', cachebust=true) }}" defer></script>
+  {%- endif %}{% endfor %}{% endif %}
   <script src="{{ get_url(path='js/components/palette.js', cachebust=true) }}" defer></script>
   <script src="{{ get_url(path='js/vendor/alpine.min.js') }}" defer></script>
 </body>

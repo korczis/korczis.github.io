@@ -6,6 +6,7 @@
 //    it loads js/viz/<name>.js;
 //  - no template loads a script or stylesheet from another origin (everything is self-hosted).
 import { readdirSync, readFileSync } from 'node:fs';
+import { parse } from 'smol-toml';
 import { basename, dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -51,6 +52,15 @@ for (const file of walk(join(ROOT, 'templates')).filter((f) => f.endsWith('.html
     if (!url) continue;
     const fetched = tag.startsWith('<script') || /rel="(?:stylesheet|preload|modulepreload|icon|apple-touch-icon|manifest)"/.test(tag);
     if (fetched) findings.push(`${rel}: loads ${url} from another origin; self-host it (scripts/vendor.mjs)`);
+  }
+}
+
+// Visuals declared in front matter ([[extra.viz]]) must exist and be registered.
+for (const file of walk(join(ROOT, 'content')).filter((f) => f.endsWith('.md'))) {
+  const match = readFileSync(file, 'utf8').match(/^\+\+\+\n([\s\S]*?)\n\+\+\+/);
+  if (!match) continue;
+  for (const v of parse(match[1]).extra?.viz ?? []) {
+    if (!registered.has(v.kind)) findings.push(`${file.slice(ROOT.length + 1)}: [[extra.viz]] kind "${v.kind}" has no static/js/viz/${v.kind}.js`);
   }
 }
 
