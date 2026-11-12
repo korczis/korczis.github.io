@@ -1,9 +1,9 @@
 name: CI
 
-# Runs on pull requests and non-master branches, and is called by pages.yml for master, so the
-# gate in front of a deployment is exactly the gate in front of a merge.
+# Runs on every branch but master (its status shows on the pull request of that branch), and is
+# called by pages.yml for master, so the gate in front of a deployment is exactly the gate in front
+# of a merge. A newer push to a branch cancels the run it supersedes.
 on:
-  pull_request:
   push:
     branches-ignore: [master]
   workflow_call:
@@ -13,6 +13,10 @@ on:
 
 permissions:
   contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}-${{ github.event_name }}
+  cancel-in-progress: ${{ github.event_name == 'push' }}
 
 jobs:
   commits:
