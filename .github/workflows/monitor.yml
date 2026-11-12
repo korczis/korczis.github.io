@@ -13,7 +13,7 @@ permissions:
 jobs:
   production:
     name: Production in the browser
-    runs-on: ubuntu-latest
+    runs-on: ${{ vars.PAGES_RUNNER || 'ubuntu-latest' }}
     timeout-minutes: 20
     env:
       BASE_URL: https://korczis.github.io/

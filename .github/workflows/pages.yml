@@ -1,6 +1,8 @@
 name: Pages
 
 # master: validate -> deploy -> verify production. Each stage runs only if the previous one passed.
+# Every job runs on vars.PAGES_RUNNER when it is set (the dedicated lundra runner of
+# scripts/lundra-runner.sh, ADR 0002), else on GitHub-hosted ubuntu-latest.
 on:
   push:
     branches: [master]
@@ -17,6 +19,8 @@ jobs:
   ci:
     name: CI
     uses: ./.github/workflows/ci.yml
+    with:
+      runner: ${{ vars.PAGES_RUNNER || 'ubuntu-latest' }}
     secrets: inherit
     permissions:
       contents: read
@@ -24,7 +28,7 @@ jobs:
   deploy:
     name: Deploy
     needs: ci
-    runs-on: ubuntu-latest
+    runs-on: ${{ vars.PAGES_RUNNER || 'ubuntu-latest' }}
     permissions:
       contents: read
       pages: write
@@ -63,7 +67,7 @@ jobs:
   verify:
     name: Verify production
     needs: deploy
-    runs-on: ubuntu-latest
+    runs-on: ${{ vars.PAGES_RUNNER || 'ubuntu-latest' }}
     env:
       BASE_URL: ${{ needs.deploy.outputs.page_url }}
     steps:
