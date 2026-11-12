@@ -22,6 +22,15 @@ height = "lg"
 tone = "night"
 
 [[extra.viz]]
+kind = "pulse"
+source = "recent.commits"
+title = "viz_pulse_title"
+lead = "viz_pulse_lead"
+span = 3
+height = "md"
+tone = "night"
+
+[[extra.viz]]
 kind = "spiral"
 source = "github.contributions"
 title = "viz_spiral_title"
@@ -47,7 +56,7 @@ height = "md"
 +++
 Tento web je pracovní portfolio a zároveň malá lekce, jak se dá takové portfolio postavit poctivě. Každé číslo na něm pochází ze skriptu, který ho změřil: [repozitáře](@/glossary/repository.cs.md) na GitHubu a GitLabu čtené jejich řádkovými klienty, kalendář příspěvků a datum posledního [commitu](@/glossary/commit.cs.md) každého projektu. Nic se nepíše dvakrát: stránky kategorií, projektů a pojmů se odvozují z dat a kontrola odmítne zastaralou kopii.
 
-Obrázky jsou [vizualizace dat](@/glossary/data-visualisation.cs.md) nakreslené knihovnou [D3.js](@/glossary/d3.cs.md) ze stejných měření. **Spirála** rozkládá rok příspěvků do kruhu, jeden prstenec na den v týdnu, takže rušná období září; **bubliny** mají velikost podle počtu repozitářů v daném jazyce; **proudy** ukazují, jak jazyky v průběhu let sílily a slábly. Najetím myší se ukáže hodnota, kliknutím se otevře práce za ní.
+Obrázky jsou [vizualizace dat](@/glossary/data-visualisation.cs.md) nakreslené knihovnou [D3.js](@/glossary/d3.cs.md) ze stejných měření. **Galaxie** ukazuje každý původní repozitář jako hvězdu, jedno rameno na kategorii; **puls** je jediný obrázek, který není snímkem: z vašeho prohlížeče se ptá veřejného API událostí GitHubu a posledních několik týdnů [commitů](@/glossary/commit.cs.md), pull requestů a vydání kreslí jako tep, každých pět minut. **Spirála** rozkládá rok příspěvků do kruhu, jeden prstenec na den v týdnu, takže rušná období září; **bubliny** mají velikost podle počtu repozitářů v daném jazyce; **proudy** ukazují, jak jazyky v průběhu let sílily a slábly. Najetím myší se ukáže hodnota, kliknutím se otevře práce za ní.
 
 Záleží na tom, kdo co napsal. [Fork](@/glossary/fork.cs.md) nebo [mirror](@/glossary/mirror.cs.md) se započítá, ale nikdy se nevydává za vlastníkovu práci: repozitář je původní, jen když vlastník napsal aspoň polovinu jeho commitů.
 

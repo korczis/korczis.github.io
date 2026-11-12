@@ -39,6 +39,11 @@ theme change, error reporting and the ready state the audit waits for.
   decorative hero `glyphs` excepted; ECharts sets the pointer itself), and a visual no page uses.
 - The constellation draws the whole index as a galaxy on a canvas with its own 3D projection
   (no WebGL: 211 points need none, and the browser audit runs headless).
+- Realtime: the pulse is the one visual that reads the network. The page embeds the measured
+  snapshot; the browser then polls the public GitHub events API every five minutes while the
+  visual is on screen, with `If-None-Match` so a quiet poll costs no rate limit, and falls back to
+  the snapshot (labelled "Snapshot") when offline or limited. A failed poll is never a console
+  error. Any future live visual follows the same shape: snapshot first, live on top, labelled.
 - Motion respects `prefers-reduced-motion`; a decorative visual is `aria-hidden`.
 - Alpine.js components live in `static/js/components/` and only enhance markup the template
   already rendered.

@@ -22,6 +22,15 @@ height = "lg"
 tone = "night"
 
 [[extra.viz]]
+kind = "pulse"
+source = "recent.commits"
+title = "viz_pulse_title"
+lead = "viz_pulse_lead"
+span = 3
+height = "md"
+tone = "night"
+
+[[extra.viz]]
 kind = "spiral"
 source = "github.contributions"
 title = "viz_spiral_title"
@@ -47,7 +56,7 @@ height = "md"
 +++
 This site is a working portfolio and, at the same time, a small lesson in how one can be built honestly. Every number on it comes from a script that measured it: the [repositories](@/glossary/repository.md) on GitHub and GitLab, read through their command-line clients, the contribution calendar, and the date of each project's last [commit](@/glossary/commit.md). Nothing is typed twice: the pages of categories, projects and terms are derived from data, and a check refuses a stale copy.
 
-The pictures are [data visualisation](@/glossary/data-visualisation.md) drawn with [D3.js](@/glossary/d3.md) from the same measurements. The **spiral** lays a year of contributions around a circle, one ring per weekday, so busy seasons glow; the **bubbles** size each language by the repositories written in it; the **streams** show how those languages rose and faded over the years. Hover any of them to read a value, click to open the work behind it.
+The pictures are [data visualisation](@/glossary/data-visualisation.md) drawn with [D3.js](@/glossary/d3.md) from the same measurements. The **galaxy** places every original repository as a star, one arm per category; the **pulse** is the only picture that is not a snapshot: it asks the public GitHub events API from your browser and redraws the last weeks of [commits](@/glossary/commit.md), pull requests and releases as a heartbeat, every five minutes. The **spiral** lays a year of contributions around a circle, one ring per weekday, so busy seasons glow; the **bubbles** size each language by the repositories written in it; the **streams** show how those languages rose and faded over the years. Hover any of them to read a value, click to open the work behind it.
 
 Who wrote what matters. A [fork](@/glossary/fork.md) or a [mirror](@/glossary/mirror.md) is counted but never shown as the owner's work: a repository is original only when the owner wrote at least half of its commits.
 

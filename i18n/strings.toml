@@ -1241,3 +1241,39 @@ cs = "Repozitáře podle jazyka"
 [viz_languages_lead]
 en = "The primary language of every original repository; a bar opens the index filtered to it."
 cs = "Hlavní jazyk každého původního repozitáře; sloupec otevře rejstřík filtrovaný na daný jazyk."
+
+[viz_pulse_title]
+en = "Live pulse"
+cs = "Živý puls"
+
+[viz_pulse_lead]
+en = "Public activity on GitHub as a heartbeat, refreshed live every five minutes; every beat opens its commit, pull request or release."
+cs = "Veřejná aktivita na GitHubu jako tep, živě obnovovaný každých pět minut; každý úder otevře svůj commit, pull request či vydání."
+
+[js_pulse_push]
+en = "commits"
+cs = "commity"
+
+[js_pulse_create]
+en = "created"
+cs = "založeno"
+
+[js_pulse_pr]
+en = "pull request"
+cs = "pull request"
+
+[js_pulse_issue]
+en = "issue"
+cs = "issue"
+
+[js_pulse_release]
+en = "release"
+cs = "vydání"
+
+[js_pulse_star]
+en = "starred"
+cs = "hvězdička"
+
+[js_pulse_fork]
+en = "forked"
+cs = "fork"

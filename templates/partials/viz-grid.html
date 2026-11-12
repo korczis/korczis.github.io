@@ -26,6 +26,7 @@
       {%- elif v.source == "index.repos" %}{"categories": { {%- for key, c in vcat.categories %}{{ key | json_encode | safe }}: {{ c["name" ~ vsfx] | json_encode | safe }}{% if not loop.last %}, {% endif %}{% endfor -%} },
        "recent": [{% for r in vrc.repos %}{{ r.name | json_encode | safe }}{% if not loop.last %}, {% endif %}{% endfor %}],
        "repos": [{% for r in vix.repos %}{% if r.hosts.github is defined %}{% set u = r.hosts.github %}{% else %}{% set u = r.hosts.gitlab %}{% endif %}{"name": {{ r.name | json_encode | safe }}, "category": {{ r.category | json_encode | safe }}, "language": {% if r.language %}{{ r.language | json_encode | safe }}{% else %}""{% endif %}, "year": {{ r.created_at | truncate(length=4, end="") }}, "stars": {{ r.stars }}, "url": {{ u | json_encode | safe }}}{% if not loop.last %}, {% endif %}{% endfor %}]}
+      {%- elif v.source == "recent.commits" %}{"repos": [{% for r in vrc.repos %}{% if r.hosts.github is defined %}{% set u = r.hosts.github %}{% else %}{% set u = r.hosts.gitlab %}{% endif %}{"name": {{ r.name | json_encode | safe }}, "at": {{ r.last_commit | json_encode | safe }}, "message": {{ r.last_message | json_encode | safe }}, "url": {{ u | json_encode | safe }}}{% if not loop.last %}, {% endif %}{% endfor %}]}
       {%- else %}null{% endif -%}
     </script>
   </section>

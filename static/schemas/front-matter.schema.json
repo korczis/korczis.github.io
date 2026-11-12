@@ -116,6 +116,7 @@
                   "pack",
                   "stream",
                   "constellation",
+                  "pulse",
                   "languages",
                   "skillset",
                   "graph"
@@ -128,7 +129,8 @@
                   "github.languages",
                   "index.languages",
                   "index.years",
-                  "index.repos"
+                  "index.repos",
+                  "recent.commits"
                 ]
               },
               "title": {
