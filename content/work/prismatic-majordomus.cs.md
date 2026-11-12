@@ -15,6 +15,15 @@ og_image = "og/cs-work-prismatic-majordomus.png"
 schema = "project"
 keywords = ["Majordomus", "Inženýrství AI", "Rust", "Shell", "JavaScript", "Tomáš Korčák"]
 terms = ["rust", "shell", "javascript", "html", "css", "python", "mcp", "zola", "ai-agent", "github-pages", "repository", "commit", "open-source"]
+
+[[extra.viz]]
+kind = "pulse"
+source = "work.commits"
+title = "viz_commits_title"
+lead = "viz_commits_lead_live"
+span = 3
+height = "md"
+tone = "night"
 +++
 **Majordomus** je projekt z kategorie [Inženýrství AI](@/projects/ai.cs.md). Jeho kód je napsaný hlavně v jazyce [Rust](@/glossary/rust.cs.md) (60,8 %), dále [Shell](@/glossary/shell.cs.md), [JavaScript](@/glossary/javascript.cs.md) a [HTML](@/glossary/html.cs.md).
 
@@ -24,4 +33,4 @@ Je postavený na [MCP](@/glossary/mcp.cs.md) a [Zola](@/glossary/zola.cs.md).
 
 Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/prismatic-majordomus/>.
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu; pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 30 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

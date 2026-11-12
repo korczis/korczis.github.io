@@ -39,7 +39,10 @@ theme change, error reporting and the ready state the audit waits for.
   decorative hero `glyphs` excepted; ECharts sets the pointer itself), and a visual no page uses.
 - The constellation draws the whole index as a galaxy on a canvas with its own 3D projection
   (no WebGL: 211 points need none, and the browser audit runs headless).
-- Realtime: the pulse is the one visual that reads the network. The page embeds the measured
+- Realtime: the pulse is the one visual that reads the network, in two modes: `recent.commits`
+  (home: the owner's public events, a lane per repository) and `work.commits` (every work page,
+  declared by `build-work.mjs`: the project's latest 30 commits, a lane per conventional commit
+  type; live for GitHub, the six-hourly snapshot for GitLab). The page embeds the measured
   snapshot; the browser then polls the public GitHub events API every five minutes while the
   visual is on screen, with `If-None-Match` so a quiet poll costs no rate limit, and falls back to
   the snapshot (labelled "Snapshot") when offline or limited. A failed poll is never a console

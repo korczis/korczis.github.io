@@ -15,9 +15,18 @@ og_image = "og/work-tap.png"
 schema = "project"
 keywords = ["tap", "Tools", "Tomas Korcak"]
 terms = ["open-source", "repository", "commit"]
+
+[[extra.viz]]
+kind = "pulse"
+source = "work.commits"
+title = "viz_commits_title"
+lead = "viz_commits_lead_live"
+span = 3
+height = "md"
+tone = "night"
 +++
 **tap** is a project in [Tools](@/projects/tools.md).
 
 The [repository](@/glossary/repository.md) was created in October 2024; its latest [commit](@/glossary/commit.md) is from 1 October 2024. It reads “first commit”. That places it among the projects active in the last 48 months.
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code; the concepts below are explained in the [glossary](@/glossary/_index.md).
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 1 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

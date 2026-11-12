@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Derives data/recent.json: the original repositories with a commit in the last 48 months, in
 // detail, each placed in the smallest period (12, 24 or 48 months) that holds its last commit. "Recent" is the date of the last commit, never the host's activity date (GitLab stamps
-// every imported project with the import day). For each: last commit, language breakdown, README
+// every imported project with the import day). For each: the last 30 commits, language breakdown, README
 // excerpt, topics, links. Reads data/index.json for the candidates; asks GitHub and GitLab
 // through their CLIs (`gh api`, `glab api`).
 //
@@ -16,6 +16,7 @@ const run = promisify(execFile);
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const LOGIN = 'korczis';
 const PERIODS = [12, 24, 48]; // months
+const COMMITS = 30; // the latest commits kept per project: the snapshot its pulse starts from
 const DAYS = Math.round((PERIODS[PERIODS.length - 1] * 365.25) / 12);
 const index = JSON.parse(readFileSync(join(ROOT, 'data/index.json'), 'utf8'));
 const now = Date.now();
@@ -62,14 +63,16 @@ function shares(bytes) {
 
 async function github(name) {
   const [commits, langs, readme] = await Promise.all([
-    cli('gh', [`repos/${LOGIN}/${name}/commits?per_page=1`]),
+    cli('gh', [`repos/${LOGIN}/${name}/commits?per_page=${COMMITS}`]),
     cli('gh', [`repos/${LOGIN}/${name}/languages`]),
     cli('gh', ['-H', 'Accept: application/vnd.github.raw', `repos/${LOGIN}/${name}/readme`]),
   ]);
-  const c = json(commits)?.[0];
+  const list = json(commits) ?? [];
+  const c = list[0];
   return {
     last_commit: c?.commit?.committer?.date ?? null,
     last_message: c?.commit?.message?.split('\n')[0] ?? null,
+    commits: list.map((x) => ({ at: x.commit.committer.date, message: x.commit.message.split('\n')[0], url: x.html_url })),
     languages: shares(json(langs)),
     readme: excerpt(readme),
   };
@@ -81,14 +84,16 @@ async function gitlab(name) {
   if (!project) return {};
   const branch = encodeURIComponent(project.default_branch ?? 'main');
   const [commits, langs, readme] = await Promise.all([
-    cli('glab', [`projects/${id}/repository/commits?per_page=1&ref_name=${branch}`]),
+    cli('glab', [`projects/${id}/repository/commits?per_page=${COMMITS}&ref_name=${branch}`]),
     cli('glab', [`projects/${id}/languages`]),
     cli('glab', [`projects/${id}/repository/files/README.md/raw?ref=${branch}`]),
   ]);
-  const c = json(commits)?.[0];
+  const list = json(commits) ?? [];
+  const c = list[0];
   return {
     last_commit: c?.committed_date ?? null,
     last_message: c?.title ?? null,
+    commits: list.map((x) => ({ at: x.committed_date, message: x.title, url: x.web_url })),
     languages: Object.entries(json(langs) ?? {}).map(([n, share]) => ({ name: n, share: Math.round(share * 10) / 10 }))
       .sort((a, b) => b.share - a.share).slice(0, 6),
     readme: excerpt(readme),
@@ -115,6 +120,7 @@ await Promise.all(Array.from({ length: POOL }, async () => {
       created_at: r.created_at,
       last_commit: detail.last_commit,
       last_message: detail.last_message,
+      commits: detail.commits ?? [],
       languages: detail.languages ?? [],
       readme: detail.readme,
       topics: r.topics ?? [],

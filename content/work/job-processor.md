@@ -15,9 +15,18 @@ og_image = "og/work-job-processor.png"
 schema = "project"
 keywords = ["job-processor", "Web", "Elixir", "Tomas Korcak"]
 terms = ["elixir", "static-site-generator", "repository", "commit", "open-source"]
+
+[[extra.viz]]
+kind = "pulse"
+source = "work.commits"
+title = "viz_commits_title"
+lead = "viz_commits_lead_snapshot"
+span = 3
+height = "md"
+tone = "night"
 +++
 **job-processor** is a project in [Web](@/projects/web.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (100 %).
 
 The [repository](@/glossary/repository.md) was created in August 2024; its latest [commit](@/glossary/commit.md) is from 1 August 2024. It reads “initial version”. That places it among the projects active in the last 48 months.
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code; the concepts below are explained in the [glossary](@/glossary/_index.md).
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 2 commits as a heartbeat, one lane per commit type (feat, fix, docs…), from a snapshot refreshed every six hours. The concepts below are explained in the [glossary](@/glossary/_index.md).

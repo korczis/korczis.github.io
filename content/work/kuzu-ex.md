@@ -15,9 +15,18 @@ og_image = "og/work-kuzu-ex.png"
 schema = "project"
 keywords = ["kuzu-ex", "Data and GIS", "Elixir", "Python", "Tomas Korcak"]
 terms = ["elixir", "python", "gis", "repository", "commit", "open-source"]
+
+[[extra.viz]]
+kind = "pulse"
+source = "work.commits"
+title = "viz_commits_title"
+lead = "viz_commits_lead_snapshot"
+span = 3
+height = "md"
+tone = "night"
 +++
 **kuzu-ex** is a project in [Data and GIS](@/projects/data.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (97.6 %), with [Python](@/glossary/python.md).
 
 The [repository](@/glossary/repository.md) was created in October 2024; its latest [commit](@/glossary/commit.md) is from 29 November 2024. It reads “feat: tweak loading url”. That places it among the projects active in the last 24 months.
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code; the concepts below are explained in the [glossary](@/glossary/_index.md).
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 9 commits as a heartbeat, one lane per commit type (feat, fix, docs…), from a snapshot refreshed every six hours. The concepts below are explained in the [glossary](@/glossary/_index.md).

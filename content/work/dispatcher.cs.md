@@ -15,9 +15,18 @@ og_image = "og/cs-work-dispatcher.png"
 schema = "project"
 keywords = ["dispatcher", "Nástroje", "TypeScript", "JavaScript", "Tomáš Korčák"]
 terms = ["typescript", "javascript", "open-source", "repository", "commit"]
+
+[[extra.viz]]
+kind = "pulse"
+source = "work.commits"
+title = "viz_commits_title"
+lead = "viz_commits_lead_snapshot"
+span = 3
+height = "md"
+tone = "night"
 +++
 **dispatcher** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [TypeScript](@/glossary/typescript.cs.md) (83 %), dále [JavaScript](@/glossary/javascript.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 18. října 2024; poslední [commit](@/glossary/commit.cs.md) je z 19. října 2024. Zní „feat: update doc“. Patří tak mezi projekty aktivní za posledních 48 měsíců.
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu; pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 15 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…), ze snímku obnovovaného každých šest hodin. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

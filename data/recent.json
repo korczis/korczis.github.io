@@ -1,6 +1,6 @@
 {
  "schema": "korczis-hub-recent/v1",
- "generated_at": "2026-11-12T04:06:41Z",
+ "generated_at": "2026-11-12T11:43:57Z",
  "window_days": 1461,
  "periods": [
   {
@@ -20,70 +20,182 @@
  "candidates": 74,
  "repos": [
   {
-   "name": "sonic-playground",
-   "period": 12,
-   "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-   "category": "media",
-   "language": "HTML",
-   "created_at": "2026-11-12T00:48:36Z",
-   "last_commit": "2026-11-12T04:03:22Z",
-   "last_message": "Merge branch 'fix/sweep-retry-stall'",
-   "languages": [
-    {
-     "name": "JavaScript",
-     "share": 36.2
-    },
-    {
-     "name": "HTML",
-     "share": 29.5
-    },
-    {
-     "name": "Python",
-     "share": 28.5
-    },
-    {
-     "name": "Shell",
-     "share": 3.9
-    },
-    {
-     "name": "CSS",
-     "share": 1.9
-    }
-   ],
-   "readme": "A hand-picked music journal: one review per track, explored by genre, feeling and mood, played in a bottom-bar player that keeps going while you browse. Live at https://korczis.github.io/sonic-playground/.",
-   "topics": [],
-   "hosts": {
-    "github": "https://github.com/korczis/sonic-playground"
-   },
-   "site": "https://korczis.github.io/sonic-playground/",
-   "curated": true,
-   "stars": 0
-  },
-  {
    "name": "korczis.github.io",
    "period": 12,
    "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
    "category": "ai",
    "language": "HTML",
    "created_at": "2024-12-24T16:48:15Z",
-   "last_commit": "2026-11-12T04:00:48Z",
-   "last_message": "build(deps-dev): bump the site group across 1 directory with 2 updates (#4)",
-   "languages": [
+   "last_commit": "2026-11-12T11:27:35Z",
+   "last_message": "feat(viz): a live pulse of public GitHub activity on the home page",
+   "commits": [
     {
-     "name": "HTML",
-     "share": 49.5
+     "at": "2026-11-12T11:27:35Z",
+     "message": "feat(viz): a live pulse of public GitHub activity on the home page",
+     "url": "https://github.com/korczis/korczis.github.io/commit/721fc79a6097db5b1f69e1e37f70b329179bdeac"
     },
     {
+     "at": "2026-11-12T09:04:13Z",
+     "message": "feat(viz): a galaxy of work, everything clickable, data refreshed every six hours",
+     "url": "https://github.com/korczis/korczis.github.io/commit/f8835ac3705242af61ba2e52520951883b99f78f"
+    },
+    {
+     "at": "2026-11-12T05:56:50Z",
+     "message": "feat(tags): the tag index and every tag page carry an article",
+     "url": "https://github.com/korczis/korczis.github.io/commit/91b2dfccc24ee8b4602721cb33376477ac7253c4"
+    },
+    {
+     "at": "2026-11-12T05:43:17Z",
+     "message": "feat(content): every page is an educational, linked article with a sourced glossary",
+     "url": "https://github.com/korczis/korczis.github.io/commit/c012897c44bf6c5e1d4092ffd0da0035821204ff"
+    },
+    {
+     "at": "2026-11-12T05:15:07Z",
+     "message": "feat(viz): art visuals in D3, composed from front matter",
+     "url": "https://github.com/korczis/korczis.github.io/commit/fac4434b5010b585167006e94fb782d1a41b1f65"
+    },
+    {
+     "at": "2026-11-12T05:10:16Z",
+     "message": "chore(og): regenerate Czech work previews and site.json for the UTC dates",
+     "url": "https://github.com/korczis/korczis.github.io/commit/17f4dbfc02fbe040abcbf18418acbfd93efa7fd9"
+    },
+    {
+     "at": "2026-11-12T05:09:40Z",
+     "message": "fix(work): Czech dates are UTC and locale-free, so generated pages match in CI",
+     "url": "https://github.com/korczis/korczis.github.io/commit/b248c5164037d18411081c27b7932d25ac94bea5"
+    },
+    {
+     "at": "2026-11-12T05:07:27Z",
+     "message": "feat(i18n): every text in English and Czech, tags, hreflang, language switch",
+     "url": "https://github.com/korczis/korczis.github.io/commit/78189666712a0504f2dbb90040779f1cdbf999a3"
+    },
+    {
+     "at": "2026-11-12T04:39:46Z",
+     "message": "feat(landing): the last 12 months, derived from recent commits, link every work page",
+     "url": "https://github.com/korczis/korczis.github.io/commit/e0104a38ee144c66c028d9a61cb9305a2246afe6"
+    },
+    {
+     "at": "2026-11-12T04:15:21Z",
+     "message": "feat(work): a page per project of the last 12, 24 and 48 months",
+     "url": "https://github.com/korczis/korczis.github.io/commit/213ef86696b29a45819ea82a9048284c2fba5641"
+    },
+    {
+     "at": "2026-11-12T04:00:48Z",
+     "message": "build(deps-dev): bump the site group across 1 directory with 2 updates (#4)",
+     "url": "https://github.com/korczis/korczis.github.io/commit/857215c9db53bee8985634f37bc6513e0784be1e"
+    },
+    {
+     "at": "2026-11-12T04:00:45Z",
+     "message": "ci: bump the actions group across 1 directory with 7 updates (#2)",
+     "url": "https://github.com/korczis/korczis.github.io/commit/7eea247d4663db08ca1a914c42f85c10e93e7845"
+    },
+    {
+     "at": "2026-11-12T03:58:42Z",
+     "message": "feat(automation): front-matter contract, site.json, weekly self-refresh",
+     "url": "https://github.com/korczis/korczis.github.io/commit/00fc448ae208b0f4960de6ab2cb3de8b3a0eb877"
+    },
+    {
+     "at": "2026-11-12T03:55:56Z",
+     "message": "feat(hub): every public repository, about and CV, skills, skillset, 11 categories",
+     "url": "https://github.com/korczis/korczis.github.io/commit/736cc62fcda81d20586b949d3b278c2397e3f972"
+    },
+    {
+     "at": "2026-11-12T03:16:39Z",
+     "message": "build(deps): keep playwright-core on the locally cached Chromium",
+     "url": "https://github.com/korczis/korczis.github.io/commit/987c3b00da38e422e299f3161a7ff9c54a5357ff"
+    },
+    {
+     "at": "2026-11-12T02:53:49Z",
+     "message": "fix(gates): count only fetched resources as third-party; verify before every push to master",
+     "url": "https://github.com/korczis/korczis.github.io/commit/8438a0ac10fe7de5c7cff8075ed41c2704357342"
+    },
+    {
+     "at": "2026-11-12T02:52:43Z",
+     "message": "chore(repo): Dependabot, rel=me, documented repository settings",
+     "url": "https://github.com/korczis/korczis.github.io/commit/a1df263e7705af04b3984da596bcc663d9d45cf1"
+    },
+    {
+     "at": "2026-11-12T02:31:05Z",
+     "message": "feat(ui): timeline and command palette",
+     "url": "https://github.com/korczis/korczis.github.io/commit/1bc33f689fb3976b0dedef7a65e8c9724aeaea2f"
+    },
+    {
+     "at": "2026-11-12T02:19:11Z",
+     "message": "feat(catalogue): project detail drawer, table view, interaction tests",
+     "url": "https://github.com/korczis/korczis.github.io/commit/0e06eb2e55c4a028eeaf1ed1291bb2e55be51cf1"
+    },
+    {
+     "at": "2026-11-12T02:08:49Z",
+     "message": "feat(ui): Flowbite Pro application shell, categories, dashboard pages",
+     "url": "https://github.com/korczis/korczis.github.io/commit/810b06599d107aeedf3c668c4d742f33bb823556"
+    },
+    {
+     "at": "2026-11-12T01:58:50Z",
+     "message": "fix(audit): project sites on the same origin are other repositories, checked by check-live",
+     "url": "https://github.com/korczis/korczis.github.io/commit/aa69689d5456924e98148dde0945e6b71d3b5e9b"
+    },
+    {
+     "at": "2026-11-12T01:51:28Z",
+     "message": "ci(pages): run on the dedicated lundra runner when PAGES_RUNNER is set (ADR 0002)",
+     "url": "https://github.com/korczis/korczis.github.io/commit/9f353fac12a36e55c7f8c3d61bd29a23996890bc"
+    },
+    {
+     "at": "2026-11-12T01:45:59Z",
+     "message": "fix(ui): graph drew nothing, mobile overflow, catalogue layout shift",
+     "url": "https://github.com/korczis/korczis.github.io/commit/39763dd56712de8ad4cf9f3828656148285a2143"
+    },
+    {
+     "at": "2026-11-12T01:36:07Z",
+     "message": "feat(seo): derive titles, Open Graph, Twitter, JSON-LD and OG images from front matter",
+     "url": "https://github.com/korczis/korczis.github.io/commit/885b8863910b091a046089a87734d959bb9d7cf6"
+    },
+    {
+     "at": "2026-11-12T01:29:45Z",
+     "message": "ci: one run per push, superseded runs cancelled",
+     "url": "https://github.com/korczis/korczis.github.io/commit/83ed64f1540f64fd241eca068043242420141f8b"
+    },
+    {
+     "at": "2026-11-12T01:29:12Z",
+     "message": "ci(pages): audit the public site in a browser after deploy and daily",
+     "url": "https://github.com/korczis/korczis.github.io/commit/69c8398e8334ef2abf80b256cb3a47eae0323fa3"
+    },
+    {
+     "at": "2026-11-12T01:26:11Z",
+     "message": "feat(site): gates, CI and Pages pipeline, project rules and README",
+     "url": "https://github.com/korczis/korczis.github.io/commit/387d8e63cc1588d5d7fb355b672a9c4cf48f7b22"
+    },
+    {
+     "at": "2026-11-12T01:19:57Z",
+     "message": "feat(site): Zola + Flowbite Pro personal hub scaffold (work in progress)",
+     "url": "https://github.com/korczis/korczis.github.io/commit/3126c8272910d3dccf4e7904eb151b1eb2ecadea"
+    },
+    {
+     "at": "2026-11-12T01:01:45Z",
+     "message": "chore(majordomus): supervise the repository and record the hub decision",
+     "url": "https://github.com/korczis/korczis.github.io/commit/1b1762c84604e8329d6c39ccab35442d1d047ff8"
+    },
+    {
+     "at": "2025-10-21T11:27:18Z",
+     "message": "Add GitHub Actions workflow for GitHub Pages deployment",
+     "url": "https://github.com/korczis/korczis.github.io/commit/b7059d52b10d1137203508b7f7ba722bdfd7a214"
+    }
+   ],
+   "languages": [
+    {
      "name": "JavaScript",
-     "share": 43.5
+     "share": 48.2
+    },
+    {
+     "name": "HTML",
+     "share": 47.7
     },
     {
      "name": "Shell",
-     "share": 4.1
+     "share": 2.2
     },
     {
      "name": "CSS",
-     "share": 2.8
+     "share": 1.9
     }
    ],
    "readme": "The personal hub of Tomas Korcak (korczis). It covers who I am, the projects I build with their live sites, the stack behind them, and Majordomus, which supervises the work.",
@@ -111,38 +223,382 @@
    "stars": 0
   },
   {
+   "name": "sonic-playground",
+   "period": 12,
+   "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+   "category": "media",
+   "language": "HTML",
+   "created_at": "2026-11-12T00:48:36Z",
+   "last_commit": "2026-11-12T11:21:38Z",
+   "last_message": "Merge branch 'feature/backlog-resolution': every playlist row resolved to one review",
+   "commits": [
+    {
+     "at": "2026-11-12T11:21:38Z",
+     "message": "Merge branch 'feature/backlog-resolution': every playlist row resolved to one review",
+     "url": "https://github.com/korczis/sonic-playground/commit/db884e9c918f4b8517547a8b712272bf05404ff3"
+    },
+    {
+     "at": "2026-11-12T11:16:24Z",
+     "message": "feat(backlog): every row of the owner's playlist resolved to one review",
+     "url": "https://github.com/korczis/sonic-playground/commit/ed6312611d6310588763c0ae55475262785cde49"
+    },
+    {
+     "at": "2026-11-12T09:15:53Z",
+     "message": "Merge branch 'feature/yearbook-hardening': editorial and identity checks, landing discovery, official videos",
+     "url": "https://github.com/korczis/sonic-playground/commit/49f481fed6425595547fcaa050e11c906641f0ae"
+    },
+    {
+     "at": "2026-11-12T09:11:04Z",
+     "message": "docs(readme): wrap the gate description",
+     "url": "https://github.com/korczis/sonic-playground/commit/e56e765c6abf46f6ae829682ec9f82e30f663283"
+    },
+    {
+     "at": "2026-11-12T09:10:35Z",
+     "message": "feat(contract): editorial and identity checks, ingestion tests, landing discovery, official videos",
+     "url": "https://github.com/korczis/sonic-playground/commit/31a02281e8b120fccb5a3f8c6940bfe3c0957c44"
+    },
+    {
+     "at": "2026-11-12T07:13:54Z",
+     "message": "Merge branch 'feature/edu-corpus': every review teaches",
+     "url": "https://github.com/korczis/sonic-playground/commit/36a5c83016fbd7d512d0e1c89bea302ff70102c6"
+    },
+    {
+     "at": "2026-11-12T07:13:33Z",
+     "message": "feat(content): the educational layer on every review, facts corrected, the contract enforcing it",
+     "url": "https://github.com/korczis/sonic-playground/commit/dc21876a01a3a8718ff2865cce66f7bb60522fcc"
+    },
+    {
+     "at": "2026-11-12T06:06:15Z",
+     "message": "Merge branch 'feature/edu-contract': educational articles, concepts, identifiers, yearbooks",
+     "url": "https://github.com/korczis/sonic-playground/commit/3ba976e41c69823b9445f70d3bab57668ce684a6"
+    },
+    {
+     "at": "2026-11-12T06:05:40Z",
+     "message": "feat(education): every review an educational article, described in its front matter; yearbooks",
+     "url": "https://github.com/korczis/sonic-playground/commit/d567c9462b66150454ca652e02a1e8db63462a96"
+    },
+    {
+     "at": "2026-11-12T04:52:44Z",
+     "message": "Merge branch 'feature/autoplay-menu': autoplay a random track, the track menu",
+     "url": "https://github.com/korczis/sonic-playground/commit/dbdcb2fc51334a23f70eb10ce77cf3f5d53c7b4e"
+    },
+    {
+     "at": "2026-11-12T04:52:25Z",
+     "message": "feat(player): autoplay a random track by default, and a labelled track menu on every card",
+     "url": "https://github.com/korczis/sonic-playground/commit/c13dc87dd24ab477d01876b5dd52bf0a4c82b490"
+    },
+    {
+     "at": "2026-11-12T04:26:19Z",
+     "message": "Merge branch 'feature/player-review': the independent review of the player, applied",
+     "url": "https://github.com/korczis/sonic-playground/commit/e96fded371ea7309e5577610c658f43c2f34f023"
+    },
+    {
+     "at": "2026-11-12T04:26:02Z",
+     "message": "fix(player): the independent UX review - four logic bugs, undo, pause on the card, keyboard",
+     "url": "https://github.com/korczis/sonic-playground/commit/6950db881b4916753a9d011cd717980a942a74c0"
+    },
+    {
+     "at": "2026-11-12T04:03:22Z",
+     "message": "Merge branch 'fix/sweep-retry-stall'",
+     "url": "https://github.com/korczis/sonic-playground/commit/508bf730028cc4c7182d0e73e628c646967c24f0"
+    },
+    {
+     "at": "2026-11-12T04:03:08Z",
+     "message": "test(smoke): a sweep page that stalls is loaded once more before it fails the gate",
+     "url": "https://github.com/korczis/sonic-playground/commit/190d559cd18ae20f4d18e1daf05391b348c7072a"
+    },
+    {
+     "at": "2026-11-12T03:58:00Z",
+     "message": "Merge branch 'fix/jam-master-jack-video'",
+     "url": "https://github.com/korczis/sonic-playground/commit/6c2a4923b37e9bec6b021b06f19e8bba0f17d233"
+    },
+    {
+     "at": "2026-11-12T03:57:43Z",
+     "message": "fix(content): Klangkuenstler - Jam Master Jack plays the label's upload",
+     "url": "https://github.com/korczis/sonic-playground/commit/5d5a177781a81a91bcada231979805fff6283a69"
+    },
+    {
+     "at": "2026-11-12T03:56:41Z",
+     "message": "Merge branch 'fix/player-tests-deterministic': the player suites drive a fake YouTube",
+     "url": "https://github.com/korczis/sonic-playground/commit/9161041e9e77b6ad707904bf593c72af78865b36"
+    },
+    {
+     "at": "2026-11-12T03:56:23Z",
+     "message": "test(player): drive a fake YouTube, so the queue suites test the queue and nothing else",
+     "url": "https://github.com/korczis/sonic-playground/commit/8e1555336518f9a2cc0caf727d0cb1e31617b161"
+    },
+    {
+     "at": "2026-11-12T03:51:23Z",
+     "message": "Merge branch 'feature/docs-agents': ADR 0003, README, backlog procedure, agents",
+     "url": "https://github.com/korczis/sonic-playground/commit/795046350f7e86dfc52b59241688ef84de2d7f90"
+    },
+    {
+     "at": "2026-11-12T03:51:05Z",
+     "message": "docs: ADR 0003, the README of the player era, the backlog procedure, three Claude Code agents",
+     "url": "https://github.com/korczis/sonic-playground/commit/c1da056ee38cf74819d7e638e120ae6b3332d6f5"
+    },
+    {
+     "at": "2026-11-12T03:45:50Z",
+     "message": "Merge branch 'feature/player-queue': one control, one effect; deadlines on every gate",
+     "url": "https://github.com/korczis/sonic-playground/commit/0f909ff177e06caba1a1856a1776b0687c609cb8"
+    },
+    {
+     "at": "2026-11-12T03:45:35Z",
+     "message": "ci(deploy): a deadline on every step, so a stuck check never holds the deploy queue",
+     "url": "https://github.com/korczis/sonic-playground/commit/e09f43e4863ac6b765667cbdd183783250e7356a"
+    },
+    {
+     "at": "2026-11-12T03:45:18Z",
+     "message": "docs(player): the queue model in the knowledge base: one control, one effect",
+     "url": "https://github.com/korczis/sonic-playground/commit/2e7de3eb704a1416bc28e8f1f9ec556295db4e07"
+    },
+    {
+     "at": "2026-11-12T03:31:49Z",
+     "message": "Merge branch 'main' into feature/player-queue",
+     "url": "https://github.com/korczis/sonic-playground/commit/f375e73f1c1a936cb484b4f9936b3cec81570124"
+    },
+    {
+     "at": "2026-11-12T03:31:22Z",
+     "message": "Merge branch 'feature/backlog-songs': 168 songs from the owner's playlist",
+     "url": "https://github.com/korczis/sonic-playground/commit/5a036a6f1133ae8ebf113e4d0e81532e42c9c0f0"
+    },
+    {
+     "at": "2026-11-12T03:31:03Z",
+     "message": "feat(content): 168 songs of the owner's playlist, each a full page through add-song",
+     "url": "https://github.com/korczis/sonic-playground/commit/749a0af95e04aec48601eb7fc2d7a831f29858e9"
+    },
+    {
+     "at": "2026-11-12T03:22:04Z",
+     "message": "feat(player): one control, one effect - play now, play next, a queue toggle, radio apart",
+     "url": "https://github.com/korczis/sonic-playground/commit/67b5b4cca4d1fecef92b7ba7a247251b695cb9e7"
+    },
+    {
+     "at": "2026-11-12T03:08:56Z",
+     "message": "Merge branch 'feature/publisher-design': type checks, song backlog",
+     "url": "https://github.com/korczis/sonic-playground/commit/a4ce347e4b5f9ba0e0990d9ca4d8c15dc78a86b6"
+    },
+    {
+     "at": "2026-11-12T03:08:17Z",
+     "message": "feat(content): the owner's playlist as the song backlog of add-song",
+     "url": "https://github.com/korczis/sonic-playground/commit/c377125fb274df19f245f515724c346962acee3b"
+    }
+   ],
+   "languages": [
+    {
+     "name": "Python",
+     "share": 34.7
+    },
+    {
+     "name": "JavaScript",
+     "share": 32.5
+    },
+    {
+     "name": "HTML",
+     "share": 28.1
+    },
+    {
+     "name": "Shell",
+     "share": 3.2
+    },
+    {
+     "name": "CSS",
+     "share": 1.5
+    }
+   ],
+   "readme": "A hand-picked music journal: one review per track, explored by genre, feeling and mood, played in a bottom-bar player that keeps going while you browse. Live at https://korczis.github.io/sonic-playground/.",
+   "topics": [],
+   "hosts": {
+    "github": "https://github.com/korczis/sonic-playground"
+   },
+   "site": "https://korczis.github.io/sonic-playground/",
+   "curated": true,
+   "stars": 0
+  },
+  {
    "name": "kompendium-epistemicke-anihilace",
    "period": 12,
    "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
    "category": "knowledge",
    "language": "Elixir",
    "created_at": "2026-11-09T22:04:50Z",
-   "last_commit": "2026-11-12T03:26:22Z",
-   "last_message": "Merge branch 'fix/template-figure-gate': číslo jen v odkazu na jinou stránku není šablonové",
+   "last_commit": "2026-11-12T11:18:59Z",
+   "last_message": "docs(adr): 0013 kniha nejmenuje léky ani lékové skupiny (rozhodnutí vlastníka)",
+   "commits": [
+    {
+     "at": "2026-11-12T11:18:59Z",
+     "message": "docs(adr): 0013 kniha nejmenuje léky ani lékové skupiny (rozhodnutí vlastníka)",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/f35a27490bfae433eed8ddd5ee296a8a0746c01e"
+    },
+    {
+     "at": "2026-11-12T11:18:38Z",
+     "message": "Merge branch 'feature/04-rozpoznani': terminální protokoly přerámované na rozpoznání (ADR 0010)",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/069cf9acf8fa19a024d10f91bd43a2078366d8f4"
+    },
+    {
+     "at": "2026-11-12T07:16:15Z",
+     "message": "Merge branch 'feature/cisla-bez-zdroje': trvání a dávka supervize bez pramene pryč ze 46 stránek",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/2098c1323c54da5788d7f63c908e2a23e47b4d0b"
+    },
+    {
+     "at": "2026-11-12T06:11:28Z",
+     "message": "Merge branch 'fix/fabricated-citation-gate': vložená studie s čísly opakovaná napříč stránkami",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/9f0682de1cd05cfc98db1eeecd1acc8ab171a6ef"
+    },
+    {
+     "at": "2026-11-12T05:04:22Z",
+     "message": "Merge branch 'feature/klinicka-cisla-obsah': B9, brána clinical-figure a klinické údaje bez pramene pryč",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/64cd541d501cd3d4aea457c3031fc83c3962e59d"
+    },
+    {
+     "at": "2026-11-12T04:17:37Z",
+     "message": "fix(obsah): labely subkategorií EA-5.2 a EA-5.4 souhlasí se stránkami i s tabulkou kapitol",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/86dbdfae408f6c28ab3a03ca65bd8717173b7a02"
+    },
+    {
+     "at": "2026-11-12T03:32:58Z",
+     "message": "docs(adr): 0012 doplněk 2 — bullets jen spolu s citacemi téže stránky",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/c732846ae1741227b039f11bf89c82d7f746b922"
+    },
+    {
+     "at": "2026-11-12T03:26:22Z",
+     "message": "Merge branch 'fix/template-figure-gate': číslo jen v odkazu na jinou stránku není šablonové",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/d097755df0059d0fef1f58c9d0aefbd2565041d2"
+    },
+    {
+     "at": "2026-11-12T03:25:49Z",
+     "message": "docs(adr): 0012 doplněk 1 — všechny nálezy check-ia, jedna třída jeden vlastník",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/6feb56bb4cb3a970ef5c0d03d5ffe0496735311c"
+    },
+    {
+     "at": "2026-11-12T03:23:28Z",
+     "message": "fix(obsah): oddíl 04 mluví k tomu, kdo má rozpoznávat, ne k tomu, kdo aplikuje",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/d23d937c06e5900d8fa57577f85d29e406dac1b9"
+    },
+    {
+     "at": "2026-11-12T02:29:36Z",
+     "message": "chore(ia): regenerate ia.json for the fabricated-citation field",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/5f7affd1dbe83ee7fe347e246f340979c8a6ae80"
+    },
+    {
+     "at": "2026-11-12T02:19:53Z",
+     "message": "Merge branch 'feature/katalog-osy': kategorie katalogů jako osy knihy",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/efb081ca6771c0471fd17bcec8dcd21f040c1f09"
+    },
+    {
+     "at": "2026-11-12T01:45:01Z",
+     "message": "feat(ia): fabricated-citation gate — pasted study claims across pages",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/9084e6dd421b80687a6d957634cae56222c125f4"
+    },
+    {
+     "at": "2026-11-12T01:36:36Z",
+     "message": "fix(obsah): tři čísla, která zachytila rozšířená brána clinical-figure",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/46f69fe603b486331039186174f7f62e1aea059d"
+    },
+    {
+     "at": "2026-11-12T01:29:35Z",
+     "message": "Merge branch 'feature/catalogs-fauly': brána pokrytí katalogů a 14 hesel, která ji zavírají",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/c4ac228eb90db7acc08640e3570772ee4ff4a02e"
+    },
+    {
+     "at": "2026-11-12T01:10:12Z",
+     "message": "fix(kompendium): klinické údaje bez pramene pryč ze 40 stránek (ADR 0010, 0012)",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/454aac0434722a4a77a9c17d47d8edae6d1bc453"
+    },
+    {
+     "at": "2026-11-12T00:41:41Z",
+     "message": "fix(obsah): dvě vložená čísla bez zdroje pryč, patnáct tenkých stránek dostalo látku",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/97428856a2f72923a15a65d6adf5606121b19619"
+    },
+    {
+     "at": "2026-11-12T00:01:15Z",
+     "message": "feat(ia): clinical-figure měří i minimální dávky a rozsahy počtu technik či účastníků",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/d9b0a8c4a6e02d639f8d634fb22bb29d6e479d8a"
+    },
+    {
+     "at": "2026-11-11T23:56:46Z",
+     "message": "Merge branch 'feature/engine-wasm': jádro knihy ve WebAssembly (kontrakt kompendium-engine/v1)",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/f39697b93001d50d51f8de2f6b8e15b315065f1e"
+    },
+    {
+     "at": "2026-11-11T23:48:26Z",
+     "message": "chore(data): ia.json přegenerovaný s požadavkem clinical-figure",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/dc07828da13fdc25faea8b25aa07d8a135a85dce"
+    },
+    {
+     "at": "2026-11-11T23:45:45Z",
+     "message": "Merge branch 'feature/klinicka-cisla' into feature/klinicka-cisla-obsah",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/0ce1239948786cc27ea4ae4b30babd804764fa01"
+    },
+    {
+     "at": "2026-11-11T23:43:16Z",
+     "message": "feat(ia): brána clinical-figure, klinické údaje jen s pramenem (ADR 0012)",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/a4f11cc99b0b540003a9f4e8ac79bfa99a9d7a2e"
+    },
+    {
+     "at": "2026-11-11T23:33:09Z",
+     "message": "Merge branch 'feature/techniky-b9': vymyšlený klinický aparát a platforma pryč zároveň",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/8b9ce146a0a3ed8b12118113899cce8478790b8f"
+    },
+    {
+     "at": "2026-11-11T23:04:25Z",
+     "message": "Merge branch 'docs/adr-0010-doplnek'",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/cea2d6751943c9e6f07b405df3e84b09f6967d35"
+    },
+    {
+     "at": "2026-11-11T23:04:25Z",
+     "message": "Merge branch 'feature/engine-contract-gate'",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/b52d7d6108f9c894b221b7cb1a3f37d778eabdb4"
+    },
+    {
+     "at": "2026-11-11T23:03:47Z",
+     "message": "Merge branch 'feature/technika-1-6-2': EA-1.6.2 Epistemický trojský kůň, technique-page na nule",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/b182dc8a6d58e1b8c5461bd4fd953990e0f9a2e1"
+    },
+    {
+     "at": "2026-11-11T22:41:08Z",
+     "message": "feat(engine): kompendium-engine/v1 in WebAssembly, loader and conformance test 06",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/56b15d51230a570be32dee7dcf3ae1362389190f"
+    },
+    {
+     "at": "2026-11-11T22:31:33Z",
+     "message": "Merge origin/main (0e57a64b) into feature/catalogs-fauly",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/55860ca195b02a190921c4e66f12191bec148680"
+    },
+    {
+     "at": "2026-11-11T22:09:36Z",
+     "message": "docs(adr): 0010 doplněk 1 — 34 stránek včetně scenar-f, DES-II práh doložitelný",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/63943ec49a009f27985e780ef2f0cbd796271975"
+    },
+    {
+     "at": "2026-11-11T22:00:14Z",
+     "message": "docs(ai): ADR 0011 a pravidlo project.site-zola-engine (pokyn vlastníka)",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/358f096ba7e65a42d2e2505a9606957f46f7d580"
+    }
+   ],
    "languages": [
     {
      "name": "Elixir",
-     "share": 35.7
+     "share": 35.5
     },
     {
      "name": "JavaScript",
-     "share": 22.7
-    },
-    {
-     "name": "HTML",
-     "share": 14
+     "share": 22.6
     },
     {
      "name": "Python",
-     "share": 13.8
+     "share": 14.1
+    },
+    {
+     "name": "HTML",
+     "share": 13.9
     },
     {
      "name": "Rust",
-     "share": 9
+     "share": 8.9
     },
     {
      "name": "Shell",
-     "share": 4.6
+     "share": 4.9
     }
    ],
    "readme": "Defenzivní taxonomie jevů, které systematicky rozkládají schopnost člověka poznávat.",
@@ -171,28 +627,180 @@
    "category": "science",
    "language": "TypeScript",
    "created_at": "2026-11-11T18:09:38Z",
-   "last_commit": "2026-11-12T03:23:09Z",
-   "last_message": "fix(test): a Rust test's time bound guards a hang, never a speed",
+   "last_commit": "2026-11-12T09:54:15Z",
+   "last_message": "Merge remote-tracking branch 'origin/feature/sorting-articles' into fix/derived-facts",
+   "commits": [
+    {
+     "at": "2026-11-12T09:54:15Z",
+     "message": "Merge remote-tracking branch 'origin/feature/sorting-articles' into fix/derived-facts",
+     "url": "https://github.com/korczis/algoglyph/commit/4fe83608e62ead0a0aa701628962fb55c2060a43"
+    },
+    {
+     "at": "2026-11-12T09:30:55Z",
+     "message": "Merge remote-tracking branch 'origin/main' into feature/sorting-articles",
+     "url": "https://github.com/korczis/algoglyph/commit/b997b52f006fc355263c12f7b3e160a4cef639f7"
+    },
+    {
+     "at": "2026-11-12T09:16:57Z",
+     "message": "feat(catalogue): the inference wing is documented; its measured outcomes are claims",
+     "url": "https://github.com/korczis/algoglyph/commit/fd9d83e60c2232f2a835bdf8a284a74c45ba1fbe"
+    },
+    {
+     "at": "2026-11-12T09:00:35Z",
+     "message": "feat(catalogue): the elementary sorting shelf is documented, every exact bound tested",
+     "url": "https://github.com/korczis/algoglyph/commit/9170b14fd0c27d0a99603da306088899baaf41f5"
+    },
+    {
+     "at": "2026-11-12T09:00:02Z",
+     "message": "test(sorting): every exact bound of the elementary shelf against counted runs",
+     "url": "https://github.com/korczis/algoglyph/commit/b71f09d294876e179ae917f85a449c78cee79141"
+    },
+    {
+     "at": "2026-11-12T08:33:59Z",
+     "message": "Merge remote-tracking branch 'origin/main' into feature/entry-claims",
+     "url": "https://github.com/korczis/algoglyph/commit/89a3a90520d21549c5b250c2c237520c4f929260"
+    },
+    {
+     "at": "2026-11-12T08:30:18Z",
+     "message": "fix(claims): read exponents, refuse powers of ten; one-sided expectations",
+     "url": "https://github.com/korczis/algoglyph/commit/46d193df78e2a39e8f83c09233d39e620c24d796"
+    },
+    {
+     "at": "2026-11-12T08:06:23Z",
+     "message": "Merge remote-tracking branch 'origin/main' into feature/entry-claims",
+     "url": "https://github.com/korczis/algoglyph/commit/ac990f6560fc60f90ac622eb442b3937d6c25830"
+    },
+    {
+     "at": "2026-11-12T07:50:13Z",
+     "message": "feat(catalogue): entry claims, checked by the plate's own readout (ADR 0007)",
+     "url": "https://github.com/korczis/algoglyph/commit/e8008b27b907790f14c26685daf9ad019de8848e"
+    },
+    {
+     "at": "2026-11-12T07:45:16Z",
+     "message": "Merge remote-tracking branch 'origin/main' into feature/articles-wave-2",
+     "url": "https://github.com/korczis/algoglyph/commit/775874d8e26f6a1700bf3c48c58b6322998e0c82"
+    },
+    {
+     "at": "2026-11-12T07:20:58Z",
+     "message": "Merge commit 'eae761de888aa3b5e45942d56d3b8ade85179257' into fix/charts-by-title",
+     "url": "https://github.com/korczis/algoglyph/commit/589a04bda7daa76e2c025b9c956bf964983bd521"
+    },
+    {
+     "at": "2026-11-12T07:20:25Z",
+     "message": "fix(test): frame times are judged by the budget gate alone",
+     "url": "https://github.com/korczis/algoglyph/commit/eae761de888aa3b5e45942d56d3b8ade85179257"
+    },
+    {
+     "at": "2026-11-12T07:13:58Z",
+     "message": "fix(array): a lab shows its new panes on a frame of their own; one count formatter",
+     "url": "https://github.com/korczis/algoglyph/commit/2452f701723360e717a6cad6855e57cc3243e6e4"
+    },
+    {
+     "at": "2026-11-12T06:57:14Z",
+     "message": "feat(catalogue): the searching wing is documented, every exact bound tested",
+     "url": "https://github.com/korczis/algoglyph/commit/fb55e68cff1d66091524c7c4b7e47eda7b88ebb2"
+    },
+    {
+     "at": "2026-11-12T06:49:53Z",
+     "message": "Merge remote-tracking branch 'origin/feature/articles-wave-1' into feature/articles-wave-2",
+     "url": "https://github.com/korczis/algoglyph/commit/74ba7129cd949e938ffc9533bac6680d3dfbc50b"
+    },
+    {
+     "at": "2026-11-12T06:49:27Z",
+     "message": "Merge remote-tracking branch 'origin/feature/articles-wave-1' into fix/derived-facts",
+     "url": "https://github.com/korczis/algoglyph/commit/d40a563b16890697d807914bb32b20ed979404fa"
+    },
+    {
+     "at": "2026-11-12T06:25:34Z",
+     "message": "test(array): re-record the lab's draw hash for the bounded scaling run",
+     "url": "https://github.com/korczis/algoglyph/commit/a7828dfb7611062c81c4054bcdc3a7bea8f26ed6"
+    },
+    {
+     "at": "2026-11-12T06:22:14Z",
+     "message": "Merge remote-tracking branch 'origin/feature/sorting-batch-4' into fix/derived-facts",
+     "url": "https://github.com/korczis/algoglyph/commit/df473b58ae75863e7debfe63ae4cc628c8c1af85"
+    },
+    {
+     "at": "2026-11-12T06:22:06Z",
+     "message": "Merge remote-tracking branch 'origin/feature/sorting-batch-3' into fix/derived-facts",
+     "url": "https://github.com/korczis/algoglyph/commit/35dba01e38bdc4e6aeb2ee65d1fc1e6f9f82add1"
+    },
+    {
+     "at": "2026-11-12T06:22:01Z",
+     "message": "Merge commit '07b21d34908f55683ae2133de8218214b0c96aa3' into fix/derived-facts",
+     "url": "https://github.com/korczis/algoglyph/commit/1524fd99a7cfba79383edbc4828c9f127025d268"
+    },
+    {
+     "at": "2026-11-12T06:21:41Z",
+     "message": "fix(array): a lab measures no size larger than the input its slider allows",
+     "url": "https://github.com/korczis/algoglyph/commit/370dbba8c8bb4105387edc4e624b83c281a646fc"
+    },
+    {
+     "at": "2026-11-12T06:18:00Z",
+     "message": "ci: the validate job's bound follows the plates it now visits (45 -> 90 min)",
+     "url": "https://github.com/korczis/algoglyph/commit/0e384905eee04069c53512d2722076e631d20dbc"
+    },
+    {
+     "at": "2026-11-12T06:04:12Z",
+     "message": "fix(catalogue): one definition of documented; every exact bound has its test",
+     "url": "https://github.com/korczis/algoglyph/commit/8299123ffc219137ec4a8d35958968585cfdb32f"
+    },
+    {
+     "at": "2026-11-12T05:47:13Z",
+     "message": "Merge remote-tracking branch 'origin/main' into fix/charts-by-title",
+     "url": "https://github.com/korczis/algoglyph/commit/07b21d34908f55683ae2133de8218214b0c96aa3"
+    },
+    {
+     "at": "2026-11-12T05:33:50Z",
+     "message": "feat(catalogue): the foundations wing is documented, and stays so",
+     "url": "https://github.com/korczis/algoglyph/commit/5cf3983f89a195eddbe5a3313713c9277ee76e23"
+    },
+    {
+     "at": "2026-11-12T05:28:32Z",
+     "message": "Merge remote-tracking branch 'origin/main' into feature/sorting-batch-4",
+     "url": "https://github.com/korczis/algoglyph/commit/61741ac5eb663d59e1f66a024d7fdecab207fe2c"
+    },
+    {
+     "at": "2026-11-12T05:28:14Z",
+     "message": "Merge remote-tracking branch 'origin/main' into feature/sorting-batch-3",
+     "url": "https://github.com/korczis/algoglyph/commit/f16f166cc06e6bd19e4c3f476e0f89632b24a257"
+    },
+    {
+     "at": "2026-11-12T05:16:09Z",
+     "message": "feat(charts): a plate shows every chart it publishes, one panel per title",
+     "url": "https://github.com/korczis/algoglyph/commit/f4a7a8595a1a35fb78f8879d8ebbaf346ebc357b"
+    },
+    {
+     "at": "2026-11-12T05:14:53Z",
+     "message": "docs(architecture): the array engine's annotation operations, maxN and trace fields",
+     "url": "https://github.com/korczis/algoglyph/commit/5a32d5b29483aac82d6a95f7c761f6a16b797c1c"
+    },
+    {
+     "at": "2026-11-12T05:05:36Z",
+     "message": "fix(catalogue): the sidecar fixture stands on the real schema; one error per missing piece",
+     "url": "https://github.com/korczis/algoglyph/commit/318837eb06f7872e1ccd7ae8aa55682fc8c1e4ce"
+    }
+   ],
    "languages": [
     {
      "name": "TypeScript",
-     "share": 92.2
+     "share": 71.1
     },
     {
      "name": "Rust",
-     "share": 2.5
-    },
-    {
-     "name": "HTML",
-     "share": 2.5
+     "share": 24.4
     },
     {
      "name": "JavaScript",
      "share": 2.2
     },
     {
+     "name": "HTML",
+     "share": 1.9
+    },
+    {
      "name": "Shell",
-     "share": 0.3
+     "share": 0.2
     },
     {
      "name": "Just",
@@ -228,8 +836,160 @@
    "category": "science",
    "language": "JavaScript",
    "created_at": "2026-10-01T21:05:33Z",
-   "last_commit": "2026-11-12T01:04:17Z",
-   "last_message": "feat(ui): train T14, the Sequencer gets one primary path and an Otevřít v… menu, a collapsed Trace, no more null, and release v3.36.0 (#537)",
+   "last_commit": "2026-11-12T05:20:28Z",
+   "last_message": "fix(i18n): train T15, the app shell and its notices speak Czech, a tighter phone safety notice, and release v3.36.1 (#538)",
+   "commits": [
+    {
+     "at": "2026-11-12T05:20:28Z",
+     "message": "fix(i18n): train T15, the app shell and its notices speak Czech, a tighter phone safety notice, and release v3.36.1 (#538)",
+     "url": "https://github.com/korczis/oscilla/commit/35f0ca0b8559580ebd75078db4d33a03699ae9f7"
+    },
+    {
+     "at": "2026-11-12T04:16:54Z",
+     "message": "fix(ui): the suspended status reads PAUZA, so it fits the 360 px status bar on linux fonts",
+     "url": "https://github.com/korczis/oscilla/commit/1b9a779573b8b1366a8c2684a8edca7687074d8b"
+    },
+    {
+     "at": "2026-11-12T03:40:18Z",
+     "message": "review(i18n): #538 verdict merge for train T15 (v3.36.1), under the legs and receipt condition",
+     "url": "https://github.com/korczis/oscilla/commit/51e9191a455250fe58e00158feda59209c3184c0"
+    },
+    {
+     "at": "2026-11-12T03:34:02Z",
+     "message": "chore(release): v3.36.1",
+     "url": "https://github.com/korczis/oscilla/commit/c6a04a72d1bbcd78d348dc9c9f1f13b0da925bb4"
+    },
+    {
+     "at": "2026-11-12T03:27:57Z",
+     "message": "test(visual): the SYN header states linux-x64's re-measured noise (22 / 436 over 10 runs) from T15's re-accept",
+     "url": "https://github.com/korczis/oscilla/commit/134e889c4ba58acd7be8b670b75526741a1ebafc"
+    },
+    {
+     "at": "2026-11-12T03:25:14Z",
+     "message": "build: dist rebuilt for train T15 after main, the visual refs and the station wording",
+     "url": "https://github.com/korczis/oscilla/commit/0fb8d8aad96188dbfb026a36604c4a8ab79d8e38"
+    },
+    {
+     "at": "2026-11-12T03:23:47Z",
+     "message": "docs(about): the 3.36 station's Trace clause reads 'její texty už nikde neukazují null' (C3-537-1)",
+     "url": "https://github.com/korczis/oscilla/commit/9f034810d843e7138b6b1e5d2d945f71a8d54779"
+    },
+    {
+     "at": "2026-11-12T03:22:33Z",
+     "message": "chore(release): record v3.36.0",
+     "url": "https://github.com/korczis/oscilla/commit/802bdb866f2433cf47e5966edd484ea0a8028ad1"
+    },
+    {
+     "at": "2026-11-12T03:22:30Z",
+     "message": "merge(train): the T15 linux-x64 visual re-accept 5e6696b9 (SYN's 16 views, Czech chrome; oscilla-0b) into train T15",
+     "url": "https://github.com/korczis/oscilla/commit/020759d16f4ae01d07b761122906c2ec08ef7ca4"
+    },
+    {
+     "at": "2026-11-12T03:22:20Z",
+     "message": "merge(main): v3.36.0 3dfe1985 (#537) into train T15",
+     "url": "https://github.com/korczis/oscilla/commit/21ea2f95141abc2f2f2564f0e3a277e9b74ea868"
+    },
+    {
+     "at": "2026-11-12T03:20:07Z",
+     "message": "test(visual): train T15's linux-x64 SYN references re-accepted for the Czech chrome",
+     "url": "https://github.com/korczis/oscilla/commit/5e6696b946eb032e47cad5eedf90bf4445919c20"
+    },
+    {
+     "at": "2026-11-12T01:14:38Z",
+     "message": "chore(plan): U105 (the Trace decision, built in T14) and U106 (lang=cs and Czech nav labels) record oscilla-c3's Q090 decisions verbatim",
+     "url": "https://github.com/korczis/oscilla/commit/e757162c7f09bb814ffb4ef9a66c59693d9b5d07"
+    },
+    {
+     "at": "2026-11-12T01:04:17Z",
+     "message": "feat(ui): train T14, the Sequencer gets one primary path and an Otevřít v… menu, a collapsed Trace, no more null, and release v3.36.0 (#537)",
+     "url": "https://github.com/korczis/oscilla/commit/3dfe19857fa599c365ffd3dfe89bc48a42237eb5"
+    },
+    {
+     "at": "2026-11-12T00:26:10Z",
+     "message": "build: one dist rebuild for train T15's merged members",
+     "url": "https://github.com/korczis/oscilla/commit/71deef88bc19f3552afebc9d18e72389fff07104"
+    },
+    {
+     "at": "2026-11-12T00:26:06Z",
+     "message": "merge(train): K180's 44.1/48 kHz renders and restated validation (2aa9d4d0) into train T15",
+     "url": "https://github.com/korczis/oscilla/commit/7b193c1e7adfa8f0d7df5550d0e8b92df4058b9d"
+    },
+    {
+     "at": "2026-11-12T00:24:55Z",
+     "message": "merge(train): fix(i18n): the shell, safety notice, footer, status and Studio/Synth notices spe (74e16d03) into train T15",
+     "url": "https://github.com/korczis/oscilla/commit/eade1c33fa7ef7d9902741a7ab08f702fad6ff39"
+    },
+    {
+     "at": "2026-11-12T00:22:17Z",
+     "message": "fix(i18n): the shell, safety notice, footer, status and Studio/Synth notices speak Czech; the phone safety notice keeps normal leading",
+     "url": "https://github.com/korczis/oscilla/commit/74e16d03b6ce2ddcf086af22a39e43e65b247cc3"
+    },
+    {
+     "at": "2026-11-11T23:22:40Z",
+     "message": "test(synth): K180 the offline engine renders run at 44.1 and 48 kHz; its validation names synth-engines.cjs",
+     "url": "https://github.com/korczis/oscilla/commit/2aa9d4d0c369e6ba4431f703b9c92283a4fc9807"
+    },
+    {
+     "at": "2026-11-11T23:06:33Z",
+     "message": "chore(release): v3.36.0",
+     "url": "https://github.com/korczis/oscilla/commit/a1d05ed07241f3fdcd409a9838b3d303c7f64fa8"
+    },
+    {
+     "at": "2026-11-11T23:00:56Z",
+     "message": "docs(about): the 3.36 station, the Sequencer's one primary path and 'Otevřít v…' menu, a collapsed Trace (T14)",
+     "url": "https://github.com/korczis/oscilla/commit/d45006a3e810231dfa12438b5a6b36481f5b6b0a"
+    },
+    {
+     "at": "2026-11-11T22:20:24Z",
+     "message": "build: dist rebuilt after G013 joined train T14",
+     "url": "https://github.com/korczis/oscilla/commit/8c0038d191f416c48dd5bea4fe62f5c9fdb15a23"
+    },
+    {
+     "at": "2026-11-11T22:18:57Z",
+     "message": "merge(train): G013 db3a6472 (the Sequencer's Pro row with Bicí primary and an 'Otevřít v…' menu; Filter Lab's menu) into train T14",
+     "url": "https://github.com/korczis/oscilla/commit/b0d9eddfaf996f15b04e5fc733b4c222538271e4"
+    },
+    {
+     "at": "2026-11-11T22:15:57Z",
+     "message": "feat(ui): the Sequencer's and Filter Lab's onward links sit behind one \"Otevřít v…\" Pro menu (G013)",
+     "url": "https://github.com/korczis/oscilla/commit/db3a6472aa7a3b1499db427d65d03acd2e263c72"
+    },
+    {
+     "at": "2026-11-11T20:54:55Z",
+     "message": "build: one dist rebuild for train T14's merged members",
+     "url": "https://github.com/korczis/oscilla/commit/ca4455dd4189fe04a3ed01b44916d0cc7ad9af27"
+    },
+    {
+     "at": "2026-11-11T20:54:50Z",
+     "message": "merge(train): test(synth): V636 the bay sits directly under the chip bar, the Panel chip bring (1c5ad644) into train T14",
+     "url": "https://github.com/korczis/oscilla/commit/4ca3f3aad0cce48b490f92c1f6418515e50f4309"
+    },
+    {
+     "at": "2026-11-11T20:54:50Z",
+     "message": "merge(train): test(synth): K180 every engine's node census returns to idle after stop, not onl (761c0486) into train T14",
+     "url": "https://github.com/korczis/oscilla/commit/af120604757ef6bf6165688398bee989efab4242"
+    },
+    {
+     "at": "2026-11-11T20:54:50Z",
+     "message": "merge(train): chore(plan): K173 done on main 98e5a5ba, its midi.cjs check landed in T12 (cafa327e) into train T14",
+     "url": "https://github.com/korczis/oscilla/commit/72a4c7530c595970b23eb50f0414a3f69ebf1a94"
+    },
+    {
+     "at": "2026-11-11T20:53:26Z",
+     "message": "merge(train): fix(studio-ui): the Inspector's Trace is a closed disclosure named with its coun (bb4dc4c0) into train T14",
+     "url": "https://github.com/korczis/oscilla/commit/8f7f64aa5ab1c56c2af1e18850d7dd77b060ddd0"
+    },
+    {
+     "at": "2026-11-11T20:53:17Z",
+     "message": "merge(train): fix(keys): the dock's collapse sentence names an unnamed owner as 'jiný ovladač' (eb2a0f08) into train T14",
+     "url": "https://github.com/korczis/oscilla/commit/3e7c3591bba97cdf676741381862b15d72eb3c1b"
+    },
+    {
+     "at": "2026-11-11T20:41:41Z",
+     "message": "test(synth): V636 the bay sits directly under the chip bar, the Panel chip brings the cards back, and both faces show at xl",
+     "url": "https://github.com/korczis/oscilla/commit/1c5ad644b4c3cce7463831af462e0e53ce36d0a9"
+    }
+   ],
    "languages": [
     {
      "name": "JavaScript",
@@ -276,6 +1036,158 @@
    "created_at": "2026-09-03T20:24:57Z",
    "last_commit": "2026-11-11T09:59:13Z",
    "last_message": "Merge pull request #3007 from korczis/release/bump-1.0.2",
+   "commits": [
+    {
+     "at": "2026-11-11T09:59:13Z",
+     "message": "Merge pull request #3007 from korczis/release/bump-1.0.2",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/d34f159439fbe7e8715408aa5dc72f3e194fe457"
+    },
+    {
+     "at": "2026-11-11T07:56:40Z",
+     "message": "chore(release): 1.0.2",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/16e9b82574665e74aa9ac4bcdea3313a6c537529"
+    },
+    {
+     "at": "2026-11-11T05:13:05Z",
+     "message": "Merge pull request #2998 from korczis/fix/I4571-reopen-on-trust",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/dcc5a118a85ac9d730a9c3be4b69e7f4c69f86fa"
+    },
+    {
+     "at": "2026-11-11T02:30:09Z",
+     "message": "chore(derive): derive the merge of origin/master into the I4571 branch (I4571)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/4fb66e5547310f089c1633eac5ad473135c21c05"
+    },
+    {
+     "at": "2026-11-11T02:15:21Z",
+     "message": "chore(merge): merge origin/master (#3005 landed) into the I4571 branch (I4571)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/3055bd91436e6bfab0e896beeca79334709844a8"
+    },
+    {
+     "at": "2026-11-11T01:58:20Z",
+     "message": "Merge pull request #3005 from korczis/chore/evolve-20261110-44b",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/3a90e425b03bf5c9ef4494a5bb3b220654ea524e"
+    },
+    {
+     "at": "2026-11-10T22:25:10Z",
+     "message": "chore(derive): derive the committed merge of master into the evolve branch (I4573)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/49c234ae02d1e86ae34a74a095ace4f387ff55aa"
+    },
+    {
+     "at": "2026-11-10T22:11:19Z",
+     "message": "Merge origin/master e0cb96020de into #3005 (I4573)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/07281c6fd001650f1c398b2664e6d4fc6c9b1a05"
+    },
+    {
+     "at": "2026-11-10T20:55:08Z",
+     "message": "Merge pull request #2994 from korczis/feature/I2717-record-run-approved",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/e0cb96020de9fba56c441fa4a975dfc95bbdb2ad"
+    },
+    {
+     "at": "2026-11-10T20:17:42Z",
+     "message": "chore(derive): derive the merge of the I4572 closed_key fix into the I4571 branch (I4571)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/722be91601c7feb69f2257d6211ad72a7e6c5e70"
+    },
+    {
+     "at": "2026-11-10T20:02:14Z",
+     "message": "chore(merge): merge the I4572 closed_key fix into the I4571 branch (I4571)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/b95bf23fb02ab81e8e770bc6c672141d59c899e0"
+    },
+    {
+     "at": "2026-11-10T19:59:37Z",
+     "message": "test(mesh): unit tests reach every branch of the own-key retrust and of close (I4571)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/38dd59a7bc908af1c2727c98502f1c12bd18f587"
+    },
+    {
+     "at": "2026-11-10T19:42:47Z",
+     "message": "chore(derive): derive the closed_key fix on the I4572 branch (I4572)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/f892c38453c5c611edf4fcd48c507accec8447ca"
+    },
+    {
+     "at": "2026-11-10T19:36:41Z",
+     "message": "docs(knowledge): the offload derive and allocate after a restart are recorded (I4573)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/6fa23502293a0654161a0a7606e276ce8b825982"
+    },
+    {
+     "at": "2026-11-10T19:20:19Z",
+     "message": "fix(mesh): closed_key has no early return that can never be taken (I4572)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/3b9256887bbbff75372d5e7057566752a6c33b43"
+    },
+    {
+     "at": "2026-11-10T19:18:26Z",
+     "message": "docs(knowledge): evolve 2026-11-10 second run, integrator v7 and I4573 from the mesh",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/60fc3aae7300e661769e41ead714b35512bba7e1"
+    },
+    {
+     "at": "2026-11-10T13:59:28Z",
+     "message": "chore(derive): derive the merge of the I4572 test head into the I4571 branch (I4571)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/794bb8e2f5b0a45eb4d79c6c2ba2c792dd9cb7cc"
+    },
+    {
+     "at": "2026-11-10T13:41:44Z",
+     "message": "chore(merge): merge the I4572 head with the closed_key unit test into the I4571 branch (I4571)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/5a79f30008d7373324514beedaf8ff95f85aa8fd"
+    },
+    {
+     "at": "2026-11-10T13:34:45Z",
+     "message": "chore(derive): derive the closed_key unit test on the I4572 branch (I4572)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/77797a8074e7b853ca7305b4c1a17c6ee125c1ae"
+    },
+    {
+     "at": "2026-11-10T13:20:07Z",
+     "message": "test(mesh): a unit test covers how closed_key reads a closed runtime's key (I4572)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/29298a4ca84fb511f56d4f23028c6edc42a56063"
+    },
+    {
+     "at": "2026-11-10T12:55:05Z",
+     "message": "chore(derive): derive the merge of the I4572 head into the I4571 branch (I4571)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/dadca79ddd11e0c1f4405a4418ede68a7d5afedf"
+    },
+    {
+     "at": "2026-11-10T12:40:20Z",
+     "message": "chore(merge): merge the I4572 head and origin/master (#2997 landed) into the I4571 branch (I4571)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/254c13e7251a11a4712292e3fdbf1dd9eb9e491c"
+    },
+    {
+     "at": "2026-11-10T12:37:23Z",
+     "message": "chore(derive): derive the committed merge of master into the I2717 branch (I2717)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/527e8c5d9eb7acdc8d65d0e94dba12f9cb7af0e9"
+    },
+    {
+     "at": "2026-11-10T12:26:28Z",
+     "message": "chore(derive): derive the merge of origin/master into the I4572 branch (I4572)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/ef115719080a9cef494bf751be25cabac251cf5d"
+    },
+    {
+     "at": "2026-11-10T12:23:39Z",
+     "message": "Merge origin/master 25f0f3827ce into #2994 (I2717)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/c1ef3365d6131f2adef9011e0815580807ee8891"
+    },
+    {
+     "at": "2026-11-10T12:18:55Z",
+     "message": "chore(merge): merge origin/master (#2997 landed) into the I4572 branch (I4572)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/b42dac915576d1ceb0cbefc16469e9030d5fd7c1"
+    },
+    {
+     "at": "2026-11-10T12:10:17Z",
+     "message": "Merge pull request #2997 from korczis/chore/evolve-20261110-44",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/25f0f3827ced0cc1bf7cd8431e3657885d5bd69f"
+    },
+    {
+     "at": "2026-11-10T08:37:17Z",
+     "message": "docs(plan): I4567-I4572 name their case files, not the whole test/cases directory",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/cb86f6825a55f638dc5da00309dc15cfb6e852c3"
+    },
+    {
+     "at": "2026-11-10T08:10:29Z",
+     "message": "chore(derive): derive the merge of origin/master into the I2717 branch (I2717)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/4002bd277f2fa854fdfe11a47d54c6073b607ac8"
+    },
+    {
+     "at": "2026-11-10T08:09:23Z",
+     "message": "fix(mesh): a running server opens or closes its mesh as the trunk trusts its key (I4571)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/2ef7275e7f500a0758405888cc4d96efd199b90c"
+    }
+   ],
    "languages": [
     {
      "name": "Rust",
@@ -340,6 +1252,158 @@
    "created_at": "2026-07-21T08:54:25Z",
    "last_commit": "2026-11-08T20:48:37Z",
    "last_message": "feat(validate): chyby tvaru záznamu říkají, co opravit",
+   "commits": [
+    {
+     "at": "2026-11-08T20:48:37Z",
+     "message": "feat(validate): chyby tvaru záznamu říkají, co opravit",
+     "url": "https://github.com/korczis/vomaste.cz/commit/443a31cf9a7f7d090ba31f87c9972e5e0002f48a"
+    },
+    {
+     "at": "2026-11-08T20:29:44Z",
+     "message": "docs(coop): T-095 a T-096 nasazeny a ověřené v produkci",
+     "url": "https://github.com/korczis/vomaste.cz/commit/cbf846ad2f2143663ae8f99c49c30cb12e15ddd9"
+    },
+    {
+     "at": "2026-11-08T20:09:52Z",
+     "message": "test(e2e): přeposlání na lokální server opakuje jen transportní chybu",
+     "url": "https://github.com/korczis/vomaste.cz/commit/b049c84eee18dbfdbd3e69da8dfbec5e8bab9098"
+    },
+    {
+     "at": "2026-11-08T20:03:11Z",
+     "message": "feat(evidence): panel „Stav doložení\" na stránce evidence každého dossieru",
+     "url": "https://github.com/korczis/vomaste.cz/commit/021de7c43ec4d0bcea58c2998adaba228ab467a5"
+    },
+    {
+     "at": "2026-11-08T19:14:02Z",
+     "message": "docs(coop): T-092–T-094 nasazeny a ověřené v produkci",
+     "url": "https://github.com/korczis/vomaste.cz/commit/9a9e5413497a03fcc776983683c74b18bc690950"
+    },
+    {
+     "at": "2026-11-08T18:59:21Z",
+     "message": "fix(archive): zablokovaný portál Sbírky listin se hlásí srozumitelně, ne SyntaxError",
+     "url": "https://github.com/korczis/vomaste.cz/commit/777519e581b7d2acfe1a66d582d03edd8cf9b633"
+    },
+    {
+     "at": "2026-11-08T18:55:40Z",
+     "message": "feat(search): stránka /hledat/ — plné hledání s filtry a stavem v URL",
+     "url": "https://github.com/korczis/vomaste.cz/commit/97f7ebf9c5641d1eebbb8086341bfc55238f9c54"
+    },
+    {
+     "at": "2026-11-08T18:29:23Z",
+     "message": "perf(nav): seznam dossierů už nejde do každé stránky + brána velikosti public/",
+     "url": "https://github.com/korczis/vomaste.cz/commit/c8959ac41aca9aac607675b32fa44f204a16f833"
+    },
+    {
+     "at": "2026-08-14T12:36:50Z",
+     "message": "fix(gate): full-page brána u zdrojů se dala splnit slovem v menu, ne v obsahu",
+     "url": "https://github.com/korczis/vomaste.cz/commit/d0477542738bc5cf11c92ca16801f179816a235d"
+    },
+    {
+     "at": "2026-08-14T12:36:04Z",
+     "message": "perf(nav): navigace se vypisovala celá do každé stránky — 10 GB public/, Pages odmítly nasadit",
+     "url": "https://github.com/korczis/vomaste.cz/commit/7573d32eeca6142b3d89e26838251543f268e0f9"
+    },
+    {
+     "at": "2026-08-14T11:27:55Z",
+     "message": "feat(tooling): skill /deploy — ruční nasazení, na které se hook odkazoval a neexistovalo",
+     "url": "https://github.com/korczis/vomaste.cz/commit/1b3809a147484f480d87b160c2c922176bbcc4e5"
+    },
+    {
+     "at": "2026-08-14T11:27:12Z",
+     "message": "fix(e2e): tři prohlížečové testy padaly na timeoutu, ne na nálezu — a blokovaly deploy",
+     "url": "https://github.com/korczis/vomaste.cz/commit/d1c9df01a9ee9dc955255d8db9d0428080a5862b"
+    },
+    {
+     "at": "2026-08-13T21:12:34Z",
+     "message": "fix(build): dvě brány, které merge odhalil — chybějící záznam v katalogu a kontrola před svým generátorem",
+     "url": "https://github.com/korczis/vomaste.cz/commit/565dc603f3673222d55a032f392c9d00bcd9daa1"
+    },
+    {
+     "at": "2026-08-13T21:01:09Z",
+     "message": "merge: znojemské zastupitelstvo — dávky 33–39, 31 nových dossierů",
+     "url": "https://github.com/korczis/vomaste.cz/commit/2dfd8689e7b6d4034a6852e3eb8bc068ff513846"
+    },
+    {
+     "at": "2026-08-13T20:57:47Z",
+     "message": "merge: T-062 — tři nové zdroje, report originator-gaps, osm povýšených tvrzení",
+     "url": "https://github.com/korczis/vomaste.cz/commit/b3d6276043510370988c4845dafd18d6c29b6439"
+    },
+    {
+     "at": "2026-08-13T20:51:31Z",
+     "message": "merge: reword — rešeršní podklady k Martinu Pavlíkovi",
+     "url": "https://github.com/korczis/vomaste.cz/commit/18507685f3706b1cc2ff416c6ec9495d1b68b5e8"
+    },
+    {
+     "at": "2026-08-13T20:44:53Z",
+     "message": "merge: codex/investigate-james-quick — rejstříkový kontext Martina Pavlíka",
+     "url": "https://github.com/korczis/vomaste.cz/commit/1446758ebbf05bf062d23eee4c492113323ac2f6"
+    },
+    {
+     "at": "2026-08-13T18:44:30Z",
+     "message": "merge: T-095 — odblokování CI, čtyři místa s nesprávným číslem, vzdělávací vrstva",
+     "url": "https://github.com/korczis/vomaste.cz/commit/550ddb4c4a87993da85378b5dd77b5a90019409a"
+    },
+    {
+     "at": "2026-08-13T18:43:58Z",
+     "message": "fix(ui): čtyři místa, kde stránka tvrdila jiné číslo, než ukazovala",
+     "url": "https://github.com/korczis/vomaste.cz/commit/dc13668781a6dfb2c261a32f9d7ad3c07296edd2"
+    },
+    {
+     "at": "2026-08-13T18:43:11Z",
+     "message": "fix(pipeline): test katalogu pravidel běžel před svým generátorem",
+     "url": "https://github.com/korczis/vomaste.cz/commit/dd78a6f3afbd4d23f8928a8fa0aad9223ccda6f3"
+    },
+    {
+     "at": "2026-08-13T17:25:59Z",
+     "message": "wip(dossiers): rozpracovaná tvrzení a zdroje ze staré vetve T-062",
+     "url": "https://github.com/korczis/vomaste.cz/commit/d00f26b3a177742b11ec776a2358bcbb2bb59df0"
+    },
+    {
+     "at": "2026-08-13T17:18:15Z",
+     "message": "merge: T-064 — katalog pravidel z hlavicek validátoru",
+     "url": "https://github.com/korczis/vomaste.cz/commit/b0d754351346854aa37170d43a49e1e2e6919653"
+    },
+    {
+     "at": "2026-08-13T17:17:53Z",
+     "message": "merge+fix: T-064 posunut na aktuální master a migrován na Teru 2",
+     "url": "https://github.com/korczis/vomaste.cz/commit/2eb8f7895c7cd7465a419264a8f5bcf0675fd017"
+    },
+    {
+     "at": "2026-08-13T17:09:33Z",
+     "message": "feat(pravidla): katalog pravidel generovaný z hlaviček validátoru",
+     "url": "https://github.com/korczis/vomaste.cz/commit/941ce00ccb7fdd40d3188c67cf2719473342e560"
+    },
+    {
+     "at": "2026-08-13T17:04:33Z",
+     "message": "merge: T-094 — tiché ztráty obsahu, nezávislost zdroju, auto-push hook",
+     "url": "https://github.com/korczis/vomaste.cz/commit/5efdcc78340a95af656701ea43068c75bdd69901"
+    },
+    {
+     "at": "2026-08-13T17:04:15Z",
+     "message": "fix(ui): dve tiché ztráty obsahu, nezávislost zdroju, oprava auto-push hooku",
+     "url": "https://github.com/korczis/vomaste.cz/commit/d51ff6426af20f821e43a1b00075bb67cd3efdad"
+    },
+    {
+     "at": "2026-08-13T15:54:22Z",
+     "message": "merge: T-092 — zastaralá próza, brána na tiše mizející obsah, oprava CI",
+     "url": "https://github.com/korczis/vomaste.cz/commit/0ed5182b76c05835e044784189f20fcdd5a11216"
+    },
+    {
+     "at": "2026-08-13T15:36:52Z",
+     "message": "docs(lint): odstranit registry-card z nápovedy — taková komponenta neexistuje",
+     "url": "https://github.com/korczis/vomaste.cz/commit/9703a161dc478a76ae888dda1322ea23b41a8581"
+    },
+    {
+     "at": "2026-08-13T15:35:04Z",
+     "message": "fix(ui): pět míst, kde se obsah tiše ztrácel",
+     "url": "https://github.com/korczis/vomaste.cz/commit/aaf4a72ab7c3de3c2db45de0a5232835a747e1e1"
+    },
+    {
+     "at": "2026-08-13T15:22:24Z",
+     "message": "feat(lint): kontrakt komponent — brána na obsah, který tiše zmizí",
+     "url": "https://github.com/korczis/vomaste.cz/commit/89d7d2e992bc53f20489439debedcb9029718db2"
+    }
+   ],
    "languages": [
     {
      "name": "JavaScript",
@@ -380,6 +1444,113 @@
    "created_at": "2026-10-23T00:51:59Z",
    "last_commit": "2026-10-26T01:08:35Z",
    "last_message": "chore(rules): vendor the majordomus standard rules of 1.0.0-alpha.8",
+   "commits": [
+    {
+     "at": "2026-10-26T01:08:35Z",
+     "message": "chore(rules): vendor the majordomus standard rules of 1.0.0-alpha.8",
+     "url": "https://github.com/korczis/majordomus-reel/commit/3fdfed0651a2d8ce515b1e09a4e41e609a5a7e59"
+    },
+    {
+     "at": "2026-10-26T00:58:07Z",
+     "message": "feat(reel): v5.7, majordomus 1.0.0-alpha.8: no ordinary command builds, one-commit deployments",
+     "url": "https://github.com/korczis/majordomus-reel/commit/7f3b68446a76483f6a08ead76b80972a42de7d5b"
+    },
+    {
+     "at": "2026-10-25T22:35:47Z",
+     "message": "feat(reel): v5.6, two new scenes: integration trains and the mesh build cache",
+     "url": "https://github.com/korczis/majordomus-reel/commit/9558f339f199bb137ece912b25aae665564915ee"
+    },
+    {
+     "at": "2026-10-23T18:02:39Z",
+     "message": "docs(metadata): v5.5 published as zcDgXorKhjs; v5.3 and v5.1 unlisted and linked to it",
+     "url": "https://github.com/korczis/majordomus-reel/commit/290f3f7cbe71a2f8bf63bd6add8370e994202cc8"
+    },
+    {
+     "at": "2026-10-23T17:59:37Z",
+     "message": "feat(site): link the v5.5 film on YouTube",
+     "url": "https://github.com/korczis/majordomus-reel/commit/9f3035150b2934538d1a318a847e90b60c7fbd85"
+    },
+    {
+     "at": "2026-10-23T16:57:58Z",
+     "message": "docs(readme): publish command for the v5.5 hybrid cut",
+     "url": "https://github.com/korczis/majordomus-reel/commit/91152e740dd66b937b5c819fe1a953b43a9e53d6"
+    },
+    {
+     "at": "2026-10-23T16:53:44Z",
+     "message": "feat(reel): v5.5, the hybrid: modern networks, v5.1 motion, four new scenes",
+     "url": "https://github.com/korczis/majordomus-reel/commit/ea17e1d0c9c7477345d79af431d99d19a3c2c13a"
+    },
+    {
+     "at": "2026-10-23T04:07:14Z",
+     "message": "docs(readme): publish command matches the v5.3 cut on gh-pages",
+     "url": "https://github.com/korczis/majordomus-reel/commit/a03a90d185bf986fbb494c5b52b2ceffcb0d311f"
+    },
+    {
+     "at": "2026-10-23T02:09:05Z",
+     "message": "feat(reel): v5.3, the two hooks and the local half; the act in the eyebrow",
+     "url": "https://github.com/korczis/majordomus-reel/commit/2dc1dd1bae7022d17b100fa3954b6a9004dd425f"
+    },
+    {
+     "at": "2026-10-23T01:58:10Z",
+     "message": "docs(readme): the v5.2 stack",
+     "url": "https://github.com/korczis/majordomus-reel/commit/bddb8663bad41039b4b743ceaf28c7f20e1ff0b7"
+    },
+    {
+     "at": "2026-10-23T01:57:20Z",
+     "message": "feat(reel): v5.2, the owner's stack, seven acts, reviewed twice",
+     "url": "https://github.com/korczis/majordomus-reel/commit/6e18ddd3efa254c7c30729e98e1cfcd388bdfe05"
+    },
+    {
+     "at": "2026-10-23T01:21:35Z",
+     "message": "docs(readme): the short's poster is thumbnail.jpg",
+     "url": "https://github.com/korczis/majordomus-reel/commit/f242a2f5b9b915ca4be0e40cea27221e9814bc49"
+    },
+    {
+     "at": "2026-10-23T01:18:38Z",
+     "message": "feat(thumbs): the published posters, in the earlier style the owner prefers",
+     "url": "https://github.com/korczis/majordomus-reel/commit/abe32a6c78100dcd5c07f6c04b0e9030597da3c2"
+    },
+    {
+     "at": "2026-10-23T01:17:56Z",
+     "message": "feat(site): link the full film on YouTube",
+     "url": "https://github.com/korczis/majordomus-reel/commit/d2ce58227d1aabf1e2c229ac1d1a2ec547c67224"
+    },
+    {
+     "at": "2026-10-23T00:45:09Z",
+     "message": "feat(site): show the Shorts cut under the full reel",
+     "url": "https://github.com/korczis/majordomus-reel/commit/0b2239171e873f539aa8e06ac96ca373d3ee4dd7"
+    },
+    {
+     "at": "2026-10-23T00:43:27Z",
+     "message": "docs(readme): the layout gate, PREVIEW=ends and acts; v5 posters",
+     "url": "https://github.com/korczis/majordomus-reel/commit/92af90fc6d85809d70a89676ce82373c35f21b1d"
+    },
+    {
+     "at": "2026-10-23T00:43:12Z",
+     "message": "feat(reel): v5.1, thirty-one chapters in the site's own type and colour",
+     "url": "https://github.com/korczis/majordomus-reel/commit/233508b5ec1ad6c591e52b9d5b958fcd8315d76f"
+    },
+    {
+     "at": "2026-10-23T00:42:47Z",
+     "message": "feat(render): layout gate, chapters, acts and subset cuts",
+     "url": "https://github.com/korczis/majordomus-reel/commit/8fc22c0b5646d2ccb6bdaf06b6580898185c0560"
+    },
+    {
+     "at": "2026-10-23T00:40:22Z",
+     "message": "feat(site): verify the published site",
+     "url": "https://github.com/korczis/majordomus-reel/commit/34c0bdec011a46b2725717bf70eca7f7e6b10b4e"
+    },
+    {
+     "at": "2026-10-23T00:28:03Z",
+     "message": "feat(site): GitHub Pages site for the reel",
+     "url": "https://github.com/korczis/majordomus-reel/commit/094a64bd7671a1ece83d4460703b5985f2db9419"
+    },
+    {
+     "at": "2026-10-23T00:24:45Z",
+     "message": "chore: import the reel sources under Majordomus supervision",
+     "url": "https://github.com/korczis/majordomus-reel/commit/a35bb93a93b66e865ac52b2007b9d73fef870868"
+    }
+   ],
    "languages": [
     {
      "name": "HTML",
@@ -423,6 +1594,133 @@
    "created_at": "2026-09-14T09:54:06Z",
    "last_commit": "2026-09-14T23:06:01Z",
    "last_message": "feat(discover): link the detection sandbox from the pages whose argument it demonstrates",
+   "commits": [
+    {
+     "at": "2026-09-14T23:06:01Z",
+     "message": "feat(discover): link the detection sandbox from the pages whose argument it demonstrates",
+     "url": "https://github.com/korczis/catharsis-as-a-service/commit/da8acf66d8f7208a6045982c722b88a8df6a004b"
+    },
+    {
+     "at": "2026-09-14T23:03:05Z",
+     "message": "feat(evidence): explore the claims ledger by text, type, level and confidence",
+     "url": "https://github.com/korczis/catharsis-as-a-service/commit/aa8374dd587cac33e4dc717aba1e993ca8b9859c"
+    },
+    {
+     "at": "2026-09-14T18:39:27Z",
+     "message": "feat(audiences): serve every audience through lenses over one body of evidence",
+     "url": "https://github.com/korczis/catharsis-as-a-service/commit/97bbf0e7722c0285313d0479847b16893a82c767"
+    },
+    {
+     "at": "2026-09-14T18:33:12Z",
+     "message": "feat(models): define and enforce the interactive model registry",
+     "url": "https://github.com/korczis/catharsis-as-a-service/commit/3c545ab8d9b22fec6c502bfe231a998f20b60449"
+    },
+    {
+     "at": "2026-09-14T17:48:50Z",
+     "message": "fix(studies): count glossary citations and shorten generated descriptions",
+     "url": "https://github.com/korczis/catharsis-as-a-service/commit/8242068a9d97076fdfb9aae80eca7b9a2895d694"
+    },
+    {
+     "at": "2026-09-14T17:44:47Z",
+     "message": "feat(evidence): show why a drawing exists, from the pixel to the DOI",
+     "url": "https://github.com/korczis/catharsis-as-a-service/commit/57f22992a697c456ddf1344214d1032a3d78ac81"
+    },
+    {
+     "at": "2026-09-14T17:28:37Z",
+     "message": "feat(terms): give every glossary term a page of its own",
+     "url": "https://github.com/korczis/catharsis-as-a-service/commit/ac80b712d2be61c18636e7a39877de80289a5568"
+    },
+    {
+     "at": "2026-09-14T17:13:44Z",
+     "message": "feat(layout): enforce and document that nothing inside the page scrolls",
+     "url": "https://github.com/korczis/catharsis-as-a-service/commit/bcc3535be0b4a52495aa96851de5da2c6085b506"
+    },
+    {
+     "at": "2026-09-14T17:13:13Z",
+     "message": "feat(layout): lay figures, tables and code to their column instead of scrolling",
+     "url": "https://github.com/korczis/catharsis-as-a-service/commit/599774aaae18039a6c88cee5e6048a856336c240"
+    },
+    {
+     "at": "2026-09-14T16:57:58Z",
+     "message": "feat(library): add theory, interactive models, search, case study and engineering articles",
+     "url": "https://github.com/korczis/catharsis-as-a-service/commit/ba9cb4c33461b3e437e73a17a344084a1a8a25b5"
+    },
+    {
+     "at": "2026-09-14T16:54:48Z",
+     "message": "feat(studies): give every cited work a page of its own",
+     "url": "https://github.com/korczis/catharsis-as-a-service/commit/f058e948d2ad3c4ecc7d7264333c3db35f6b45bb"
+    },
+    {
+     "at": "2026-09-14T16:28:44Z",
+     "message": "fix(figures): apply the figure review to accessibility and Czech",
+     "url": "https://github.com/korczis/catharsis-as-a-service/commit/ca5a8f957a752424304e5ab7cfe0ec679da352eb"
+    },
+    {
+     "at": "2026-09-14T16:20:40Z",
+     "message": "fix(figures): keep curves and pipeline legible on a phone",
+     "url": "https://github.com/korczis/catharsis-as-a-service/commit/31d4c8737489a8110d12b703d4097fcba8032247"
+    },
+    {
+     "at": "2026-09-14T16:04:36Z",
+     "message": "feat(advice): extend nine advice entries with verified research",
+     "url": "https://github.com/korczis/catharsis-as-a-service/commit/17684e1d62916f8f3835765e01fd56ac4225586c"
+    },
+    {
+     "at": "2026-09-14T15:58:31Z",
+     "message": "feat(figures): add data-driven curves and pipeline figure kinds",
+     "url": "https://github.com/korczis/catharsis-as-a-service/commit/eca8874c202444df5fd99d443fa160fbad6ccd04"
+    },
+    {
+     "at": "2026-09-14T15:38:00Z",
+     "message": "feat(research): expand measuring-emotion with verified sources",
+     "url": "https://github.com/korczis/catharsis-as-a-service/commit/2125f1eb4a3f6f0a2048d0625b28cf7e85ff2f7b"
+    },
+    {
+     "at": "2026-09-14T15:37:52Z",
+     "message": "fix(screens): give previews addresses and test modified clicks deterministically",
+     "url": "https://github.com/korczis/catharsis-as-a-service/commit/93fd07f57c5ffe691bc7b0ed1005b9a08c2b9ab0"
+    },
+    {
+     "at": "2026-09-14T15:14:22Z",
+     "message": "feat(screens): preview concept screens in place with paging and swipe",
+     "url": "https://github.com/korczis/catharsis-as-a-service/commit/d2b3c47608f29ece52f0e42045496f160a45c163"
+    },
+    {
+     "at": "2026-09-14T13:01:58Z",
+     "message": "feat(api): export the evidence ledger and glossary, extend the Rust client, document the system",
+     "url": "https://github.com/korczis/catharsis-as-a-service/commit/f2890f4fa20f0f92db790477b1460c2e774bbe44"
+    },
+    {
+     "at": "2026-09-14T12:53:54Z",
+     "message": "feat(evidence): add evidence ledger, methods page, glossary, status and evidence-gated landing",
+     "url": "https://github.com/korczis/catharsis-as-a-service/commit/4cbb6fb84a94734d2a79ba0e12826d81b36830af"
+    },
+    {
+     "at": "2026-09-14T12:20:54Z",
+     "message": "fix(references): match Crossref titles with or without subtitles",
+     "url": "https://github.com/korczis/catharsis-as-a-service/commit/94d734c78ffed85a02a447051992a2acac51926d"
+    },
+    {
+     "at": "2026-09-14T12:16:53Z",
+     "message": "feat(content): add research library, graded advice, command registry and Rust content API",
+     "url": "https://github.com/korczis/catharsis-as-a-service/commit/51dde0bb4dba09c35fb4c0a835d764a497f3c5a3"
+    },
+    {
+     "at": "2026-09-14T11:10:12Z",
+     "message": "feat(seo): add boilerplate practices, localized previews, structured data and guides",
+     "url": "https://github.com/korczis/catharsis-as-a-service/commit/54a31a2dcae156ace74383db307243a71d6a6531"
+    },
+    {
+     "at": "2026-09-14T10:42:45Z",
+     "message": "feat(site): ship Catharsis as a Service as a bilingual Zola site with verified CI/CD",
+     "url": "https://github.com/korczis/catharsis-as-a-service/commit/9bc6897ce839e4a512f89f641d26ed57e066f118"
+    },
+    {
+     "at": "2026-09-14T09:54:05Z",
+     "message": "feat(poster): add Catharsis as a Service poster with print render",
+     "url": "https://github.com/korczis/catharsis-as-a-service/commit/c8e012038c4f5eb798ae08247423dfaf4d246c8c"
+    }
+   ],
    "languages": [
     {
      "name": "HTML",
@@ -467,6 +1765,38 @@
    "created_at": "2026-09-08T00:27:41Z",
    "last_commit": "2026-09-08T00:32:55Z",
    "last_message": "fix(site): the overview page is titled once",
+   "commits": [
+    {
+     "at": "2026-09-08T00:32:55Z",
+     "message": "fix(site): the overview page is titled once",
+     "url": "https://github.com/korczis/crisis-map/commit/50279f7ab56bed928c2569121f233658016bc591"
+    },
+    {
+     "at": "2026-09-08T00:28:12Z",
+     "message": "ci: run the gates on main, the branch this repository actually uses",
+     "url": "https://github.com/korczis/crisis-map/commit/ff646c0c1f8f03fbf5f8421ca2aca41584b44113"
+    },
+    {
+     "at": "2026-09-08T00:11:19Z",
+     "message": "docs(doctrine): the rules, the generated site, and CI that enforces both",
+     "url": "https://github.com/korczis/crisis-map/commit/0eff353f956865e4d2b386bce8ec601bff85159d"
+    },
+    {
+     "at": "2026-09-08T00:01:40Z",
+     "message": "test(doctrine): gates that fail when a projection or a document drifts",
+     "url": "https://github.com/korczis/crisis-map/commit/2d35b4baf040e102504577752018792f6d916601"
+    },
+    {
+     "at": "2026-09-07T23:47:50Z",
+     "message": "feat(surfaces): the capability registry and every projection of it",
+     "url": "https://github.com/korczis/crisis-map/commit/5a37e29a14ba7c80703440c0c5027076a6d14ef1"
+    },
+    {
+     "at": "2026-09-07T23:34:01Z",
+     "message": "feat(domain): the event model, the ingest pipeline and the geocoding boundary",
+     "url": "https://github.com/korczis/crisis-map/commit/8371d6794f7e92617612875969b79b017188568c"
+    }
+   ],
    "languages": [
     {
      "name": "Elixir",
@@ -503,6 +1833,158 @@
    "created_at": "2026-08-27T17:47:05Z",
    "last_commit": "2026-08-30T18:44:34Z",
    "last_message": "Merge pull request #2 from korczis/test/parser-coverage",
+   "commits": [
+    {
+     "at": "2026-08-30T18:44:34Z",
+     "message": "Merge pull request #2 from korczis/test/parser-coverage",
+     "url": "https://github.com/korczis/data-atlas/commit/3d071c54ce8d658b32f9d3e6d78385c2fa53b1a6"
+    },
+    {
+     "at": "2026-08-30T18:35:35Z",
+     "message": "test(warehouse): cover the HTML and JSON parsers, which had none",
+     "url": "https://github.com/korczis/data-atlas/commit/dec6f65c7417192cea7f41d6a120ad701e4d217f"
+    },
+    {
+     "at": "2026-08-30T18:22:10Z",
+     "message": "Merge pull request #1 from korczis/feature/warehouse",
+     "url": "https://github.com/korczis/data-atlas/commit/7876930e9ee5dd30d27b6fcfa83bab83b98831ea"
+    },
+    {
+     "at": "2026-08-30T18:04:22Z",
+     "message": "docs(database): architecture, ADRs, schema reference and coverage reports",
+     "url": "https://github.com/korczis/data-atlas/commit/9a6c6f37c289d246f46dc4331d9cde7ff5ae3447"
+    },
+    {
+     "at": "2026-08-30T18:04:12Z",
+     "message": "chore(warehouse): wire the subsystem into just, git and the agent contract",
+     "url": "https://github.com/korczis/data-atlas/commit/35871ca01b80df5235fa3b6ff62356034265cc54"
+    },
+    {
+     "at": "2026-08-30T18:04:02Z",
+     "message": "perf(warehouse): benchmark suite with generated plans",
+     "url": "https://github.com/korczis/data-atlas/commit/f5df90b6d069ca129def6c9ad973857c52dacdf5"
+    },
+    {
+     "at": "2026-08-30T18:03:55Z",
+     "message": "test(warehouse): parser, schema and API-contract suites",
+     "url": "https://github.com/korczis/data-atlas/commit/cc8ecced60654b024e40049dd4096c6af9f97662"
+    },
+    {
+     "at": "2026-08-30T18:03:44Z",
+     "message": "feat(warehouse): source-agnostic PostgreSQL warehouse for historical datasets",
+     "url": "https://github.com/korczis/data-atlas/commit/318b1a84bd54870a7a6ddf97cb8d207ae973cfe8"
+    },
+    {
+     "at": "2026-08-30T07:53:58Z",
+     "message": "fix(ui): name the matrix columns and show the row total",
+     "url": "https://github.com/korczis/data-atlas/commit/3502cf7cbd539ea0217b038c9fea848d5e26cfa3"
+    },
+    {
+     "at": "2026-08-30T07:29:06Z",
+     "message": "fix(catalog): settle the four data/description contradictions by checking the sources",
+     "url": "https://github.com/korczis/data-atlas/commit/8f73d764c15320ff44525e171749ac74d444f0fd"
+    },
+    {
+     "at": "2026-08-30T07:24:52Z",
+     "message": "feat(data): three sources curl could not see, holes 6 to 3",
+     "url": "https://github.com/korczis/data-atlas/commit/d57d1a9c108aa49c04530187a97a4f098ae9737d"
+    },
+    {
+     "at": "2026-08-30T06:57:35Z",
+     "message": "fix(ui): put the two methodology links back, now that their target is in git",
+     "url": "https://github.com/korczis/data-atlas/commit/39a9cac017120cb03a2e54c78d541ff7c031d178"
+    },
+    {
+     "at": "2026-08-30T06:52:56Z",
+     "message": "fix(privacy): stop publishing browser-history samples, and close the gates that missed it",
+     "url": "https://github.com/korczis/data-atlas/commit/7c83f0d2b724ad1152002047c5d81ac96143886b"
+    },
+    {
+     "at": "2026-08-30T06:31:21Z",
+     "message": "feat(data): three verified sources and one verified absence, holes 10 to 6",
+     "url": "https://github.com/korczis/data-atlas/commit/49fdf726164f51ed2333d8403130f1cb8fd2958c"
+    },
+    {
+     "at": "2026-08-30T05:40:53Z",
+     "message": "fix(test): country pages were throwing on every row and the suite said 37/37",
+     "url": "https://github.com/korczis/data-atlas/commit/496963540d581b022019fad30c03ec2738743809"
+    },
+    {
+     "at": "2026-08-30T05:35:31Z",
+     "message": "fix(ui): drop two links whose target is not in the repository yet",
+     "url": "https://github.com/korczis/data-atlas/commit/bd5ed536350bdc1f5efe03679fbc6f4594ea7696"
+    },
+    {
+     "at": "2026-08-30T05:34:18Z",
+     "message": "docs(lint): write down what the repo-link rule cannot see",
+     "url": "https://github.com/korczis/data-atlas/commit/a03a631cb056d39f18e594d93fa315f2d7bae846"
+    },
+    {
+     "at": "2026-08-30T05:33:37Z",
+     "message": "fix(lint): measure repository links against git, not against my disk",
+     "url": "https://github.com/korczis/data-atlas/commit/7b1c2aada53b48b9e3cc524afd71f24424a81619"
+    },
+    {
+     "at": "2026-08-30T00:39:20Z",
+     "message": "test(places): hold country pages to the no-network rule as well",
+     "url": "https://github.com/korczis/data-atlas/commit/7b77e7189a2b142153d900759cbdd7f6df7ed086"
+    },
+    {
+     "at": "2026-08-30T00:30:56Z",
+     "message": "fix(e2e): never adopt a server we did not start",
+     "url": "https://github.com/korczis/data-atlas/commit/f431916432b6c94379eeeaca37879cba137b847f"
+    },
+    {
+     "at": "2026-08-30T00:29:45Z",
+     "message": "fix(tools): make two fragile checks assert their own precondition",
+     "url": "https://github.com/korczis/data-atlas/commit/587e4e04c3d057160ac0c73f4f809f97ac17ca51"
+    },
+    {
+     "at": "2026-08-30T00:18:37Z",
+     "message": "fix(tools): three gates that reported success without measuring anything",
+     "url": "https://github.com/korczis/data-atlas/commit/790b31e67830b0aad3ff127bd67c84e41c70ba4f"
+    },
+    {
+     "at": "2026-08-30T00:00:01Z",
+     "message": "fix(a11y): add a skip link, and drop a focus test I could not falsify",
+     "url": "https://github.com/korczis/data-atlas/commit/042750d80f47aebcf450da124e13557f74a9558e"
+    },
+    {
+     "at": "2026-08-29T23:36:02Z",
+     "message": "fix(tools): fail when there is no browser instead of passing silently",
+     "url": "https://github.com/korczis/data-atlas/commit/4d4bae184474b6c57ebe7cceeb519eb25682b80e"
+    },
+    {
+     "at": "2026-08-29T23:31:06Z",
+     "message": "chore(tools): put the UI gates into English, matching the rest of the tooling",
+     "url": "https://github.com/korczis/data-atlas/commit/e28678b72b6a9f104de080d7cc40ab1a8f2bdd38"
+    },
+    {
+     "at": "2026-08-29T23:18:37Z",
+     "message": "fix(a11y): expose sort state on country tables, and decide the prose question",
+     "url": "https://github.com/korczis/data-atlas/commit/b57bee0a9001c3e1bf312106bfc6bbf8deb9ad8b"
+    },
+    {
+     "at": "2026-08-29T23:13:39Z",
+     "message": "docs(ui): write down the canon, and make UI links to the repo resolve",
+     "url": "https://github.com/korczis/data-atlas/commit/add392bb6c1622bff3f4677da9b3cbf8b4c718f6"
+    },
+    {
+     "at": "2026-08-29T23:08:56Z",
+     "message": "refactor(ui): one implementation of the source badges, one colour meaning",
+     "url": "https://github.com/korczis/data-atlas/commit/1b47fae99ca26a4f298d2102fdd3e2cc2a6e8e30"
+    },
+    {
+     "at": "2026-08-29T22:47:17Z",
+     "message": "test(e2e): cover every page with Playwright in a real browser",
+     "url": "https://github.com/korczis/data-atlas/commit/ed8964bbd26a345198e9fb1bd5919a0017085e20"
+    },
+    {
+     "at": "2026-08-29T22:30:40Z",
+     "message": "feat(ui): measure typography instead of eyeballing it",
+     "url": "https://github.com/korczis/data-atlas/commit/8d1197358521b0c1832a97ec5097876d957a51b8"
+    }
+   ],
    "languages": [
     {
      "name": "Python",
@@ -556,6 +2038,18 @@
    "created_at": "2026-08-27T20:23:18Z",
    "last_commit": "2026-08-27T20:26:10Z",
    "last_message": "docs(gists): add README, architecture doc and deploy recipe",
+   "commits": [
+    {
+     "at": "2026-08-27T20:26:10Z",
+     "message": "docs(gists): add README, architecture doc and deploy recipe",
+     "url": "https://github.com/korczis/gists-search/commit/cd2be398915e1b9d5b3bc8f147e4a7f3bba6f185"
+    },
+    {
+     "at": "2026-08-27T20:22:19Z",
+     "message": "feat(gists): catalogue, enrich, chunk and index the gist mirror",
+     "url": "https://github.com/korczis/gists-search/commit/cf564d9448a871a8b84ea713d9f9038a155d250f"
+    }
+   ],
    "languages": [
     {
      "name": "Python",
@@ -596,6 +2090,58 @@
    "created_at": "2026-08-26T21:24:36Z",
    "last_commit": "2026-08-26T22:32:53Z",
    "last_message": "fix(site): claim pages for object-shaped findings (gdelt_sweep)",
+   "commits": [
+    {
+     "at": "2026-08-26T22:32:53Z",
+     "message": "fix(site): claim pages for object-shaped findings (gdelt_sweep)",
+     "url": "https://github.com/korczis/osint-case-ratcliffe-moscow-2026/commit/93ded3fc47300ef0836794e3b170687a1f84dbb6"
+    },
+    {
+     "at": "2026-08-26T22:31:40Z",
+     "message": "docs(site): per-claim pages (cl/, 35) + findings index, linked from landing",
+     "url": "https://github.com/korczis/osint-case-ratcliffe-moscow-2026/commit/91ab583647147e6dfa602b42efa3cbf6aebfa6d6"
+    },
+    {
+     "at": "2026-08-26T22:14:47Z",
+     "message": "docs(case): §8.10 full-cycle re-sweep + data-driven entity pages + anti-drift gates",
+     "url": "https://github.com/korczis/osint-case-ratcliffe-moscow-2026/commit/da6dcb20b01ec672a275c46a724c3c39818a2ba3"
+    },
+    {
+     "at": "2026-08-26T22:00:21Z",
+     "message": "docs(site): stats infographic, update-pipeline stepper, quickstart; bump actions",
+     "url": "https://github.com/korczis/osint-case-ratcliffe-moscow-2026/commit/d06716d59bfbc557fd304a7ab5746be8c9a6076d"
+    },
+    {
+     "at": "2026-08-26T21:51:45Z",
+     "message": "docs(site): Flowbite landing page explaining the project",
+     "url": "https://github.com/korczis/osint-case-ratcliffe-moscow-2026/commit/7ae032a6984cef05039113e442b43b96d5833b3c"
+    },
+    {
+     "at": "2026-08-26T21:33:31Z",
+     "message": "docs(readme): link published site and clone URL",
+     "url": "https://github.com/korczis/osint-case-ratcliffe-moscow-2026/commit/e198fe837eacf0fdb6189e7e41a584f39b41da30"
+    },
+    {
+     "at": "2026-08-26T21:24:35Z",
+     "message": "feat(case): self-contained Claude Code toolkit, neutral wording, GitHub Pages",
+     "url": "https://github.com/korczis/osint-case-ratcliffe-moscow-2026/commit/c19d6c4e35d64857d2c3fa601e282a369822f081"
+    },
+    {
+     "at": "2026-08-26T20:44:33Z",
+     "message": "data: gdelt sweep 2026-08-26T20:40Z",
+     "url": "https://github.com/korczis/osint-case-ratcliffe-moscow-2026/commit/7bca6a3a8a3196b18e38812e5190222c4d083055"
+    },
+    {
+     "at": "2026-08-26T20:40:19Z",
+     "message": "fix(scripts): gdelt sweep retries on rate-limit",
+     "url": "https://github.com/korczis/osint-case-ratcliffe-moscow-2026/commit/c27fa4d3a11867d64d79e54fba7f1d4e51f2e766"
+    },
+    {
+     "at": "2026-08-26T20:35:48Z",
+     "message": "chore: bootstrap standalone case (report, briefs, PDFs, data, tooling)",
+     "url": "https://github.com/korczis/osint-case-ratcliffe-moscow-2026/commit/e1de80e0ed15bf203fed221e81cfe0d9e31d5dad"
+    }
+   ],
    "languages": [
     {
      "name": "HTML",
@@ -637,6 +2183,88 @@
    "created_at": "2026-08-20T20:41:22.826Z",
    "last_commit": "2026-08-21T15:01:31.000+02:00",
    "last_message": "test(conversations): add DB-integration tests for every named constraint",
+   "commits": [
+    {
+     "at": "2026-08-21T15:01:31.000+02:00",
+     "message": "test(conversations): add DB-integration tests for every named constraint",
+     "url": "https://gitlab.com/korczis/llm/-/commit/038a3c2d8f33304040418fd1b69a7aff3d84e5d8"
+    },
+    {
+     "at": "2026-08-21T14:51:39.000+02:00",
+     "message": "docs(repo): update stale test counts to 182 (was 173/180)",
+     "url": "https://gitlab.com/korczis/llm/-/commit/ca28bf862831e82c7c20fcf953d7d9675d32ff98"
+    },
+    {
+     "at": "2026-08-21T02:30:17.000+02:00",
+     "message": "fix(conversations): type the broadened Registry rescue clause",
+     "url": "https://gitlab.com/korczis/llm/-/commit/9e7e542deb5df4e2c6c57efd07ce0637677f1c9d"
+    },
+    {
+     "at": "2026-08-21T02:17:49.000+02:00",
+     "message": "fix(conversations): fix dead self-registration path + real correctness gaps",
+     "url": "https://gitlab.com/korczis/llm/-/commit/931d62ccb1ca973ec5a3e0f3e2915376952fc47a"
+    },
+    {
+     "at": "2026-08-21T00:45:57.000+02:00",
+     "message": "docs(repo): sync per-directory READMEs with the generic provider + pipeline",
+     "url": "https://gitlab.com/korczis/llm/-/commit/868e9b1ce6160e1dff76d2f4600b4b2a171e67f9"
+    },
+    {
+     "at": "2026-08-21T00:20:16.000+02:00",
+     "message": "fix(conversations): close path-traversal gap found by security audit",
+     "url": "https://gitlab.com/korczis/llm/-/commit/ae968d6c6dde461120d8adb0c1eab715ca7f7767"
+    },
+    {
+     "at": "2026-08-21T00:10:01.000+02:00",
+     "message": "feat(conversations): implement import pipeline orchestration",
+     "url": "https://gitlab.com/korczis/llm/-/commit/25c53c819630d30eb8e167352e83329c459c268b"
+    },
+    {
+     "at": "2026-08-21T00:03:22.000+02:00",
+     "message": "feat(conversations): implement generic JSONL provider (v1)",
+     "url": "https://gitlab.com/korczis/llm/-/commit/879595a208e4b0fe44d1d5ff511570e0b115010f"
+    },
+    {
+     "at": "2026-08-20T23:44:53.000+02:00",
+     "message": "docs(repo): add cross-linked per-directory READMEs, wire mix check + CI ratchet",
+     "url": "https://gitlab.com/korczis/llm/-/commit/4988af0f8336bd14d47c08f97427f68640b3b01e"
+    },
+    {
+     "at": "2026-08-20T23:38:53.000+02:00",
+     "message": "chore: gitignore .envrc.local for local API key overrides",
+     "url": "https://gitlab.com/korczis/llm/-/commit/535b8515ef0e8ea4e3868c4ee69044aa6dbf3ab1"
+    },
+    {
+     "at": "2026-08-20T23:33:09.000+02:00",
+     "message": "chore(assets): add project logo (prism/spectrum SVG)",
+     "url": "https://gitlab.com/korczis/llm/-/commit/df131742cb01e46fd0acddcc1f1245f96267bcec"
+    },
+    {
+     "at": "2026-08-20T23:31:21.000+02:00",
+     "message": "docs(conversations): extensive documentation, treated as a ratchet",
+     "url": "https://gitlab.com/korczis/llm/-/commit/031c7473a3b2093c41336ececdfbc2974bcc48f6"
+    },
+    {
+     "at": "2026-08-20T23:25:44.000+02:00",
+     "message": "feat(conversations): immutable per-import Manifest",
+     "url": "https://gitlab.com/korczis/llm/-/commit/ce89567b7c0b2587532b78f8495be4bfdb4c6e3b"
+    },
+    {
+     "at": "2026-08-20T23:24:45.000+02:00",
+     "message": "feat(conversations): content-addressed RawStore for raw evidence blobs",
+     "url": "https://gitlab.com/korczis/llm/-/commit/f7d400244238437072db4012e3c6c34089dd8650"
+    },
+    {
+     "at": "2026-08-20T23:23:35.000+02:00",
+     "message": "feat(conversations): Phase 1 canonical domain for AI Conversation Archive",
+     "url": "https://gitlab.com/korczis/llm/-/commit/73a0ba5f3c3ddf4829dabdf247426dda02b335c9"
+    },
+    {
+     "at": "2026-08-20T23:08:59.000+02:00",
+     "message": "Initial commit",
+     "url": "https://gitlab.com/korczis/llm/-/commit/86a461b25c71c50bf0653665e5902e795795195e"
+    }
+   ],
    "languages": [
     {
      "name": "Elixir",
@@ -669,6 +2297,58 @@
    "created_at": "2026-07-23T22:00:54.776Z",
    "last_commit": "2026-07-24T18:40:44.000+02:00",
    "last_message": "Doc: document the real prismatic-platform decision engine (Phase 3)",
+   "commits": [
+    {
+     "at": "2026-07-24T18:40:44.000+02:00",
+     "message": "Doc: document the real prismatic-platform decision engine (Phase 3)",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/bce9937a8eb967b127e437f0f93d1c0f5f649ae9"
+    },
+    {
+     "at": "2026-07-24T18:17:50.000+02:00",
+     "message": "Add: Flowbite landing page at / + local asset pipeline (Tailwind v4, no CDN)",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/b60bcde2411061e71904f6731c428cf1438e65ef"
+    },
+    {
+     "at": "2026-07-24T18:17:37.000+02:00",
+     "message": "Fix: /decision/pull company id off-by-one (0-indexed API vs 1-indexed console)",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/07549a449550969d75529e2289e5df82d7f301f8"
+    },
+    {
+     "at": "2026-07-24T17:44:35.000+02:00",
+     "message": "Add: contract detail and cadastral parcel lookup to /legal dashboard",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/58bc5550d2f9c97e50f60da52b38f01f9524b1d7"
+    },
+    {
+     "at": "2026-07-24T17:28:36.000+02:00",
+     "message": "Add direnv support for local secrets (.envrc.local)",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/20a8dcabd6d276eed47046411939fad9e612bfcd"
+    },
+    {
+     "at": "2026-07-24T16:00:00.000+02:00",
+     "message": "Add: real map layer to /legal -- OSM base + geocoding + ČÚZK cadastral WMS",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/8c2aa4837bd38b017bcd569d6fef965a8fcf13c4"
+    },
+    {
+     "at": "2026-07-24T04:00:17.000+02:00",
+     "message": "Add: /legal dashboard -- real, live Czech open-data lookups (ARES + Hlidac Statu)",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/1ae9481ab2c795c6e6e2ec7a569b290f8be430eb"
+    },
+    {
+     "at": "2026-07-24T00:23:31.000+02:00",
+     "message": "Phase 2: give PrismaticAI a real strategy (single-town bus route)",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/d516cd0e283e0e64bd6cdc626caecae628cdf4d6"
+    },
+    {
+     "at": "2026-07-24T00:12:05.000+02:00",
+     "message": "Add architecture diagrams and a roadmap toward Prismatic's OSINT/DD/modeling apps",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/138e9cee451a13bcef59fa83342a6f4d33bcf40c"
+    },
+    {
+     "at": "2026-07-23T23:42:42.000+02:00",
+     "message": "Add OpenTTD <-> Prismatic bridge: REST/Swagger front door onto the Admin Network",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/b13f3e9ba7f7af40d183ecf7bcc6827bca5c0e9f"
+    }
+   ],
    "languages": [
     {
      "name": "Python",
@@ -709,6 +2389,148 @@
    "created_at": "2026-06-15T09:04:31Z",
    "last_commit": "2026-07-20T17:36:39Z",
    "last_message": "docs: correct and expand CLAUDE.md for current build pipeline",
+   "commits": [
+    {
+     "at": "2026-07-20T17:36:39Z",
+     "message": "docs: correct and expand CLAUDE.md for current build pipeline",
+     "url": "https://github.com/korczis/astronomists/commit/73f3a872355d48a19ffc04a76cc8c1988206f03b"
+    },
+    {
+     "at": "2026-06-16T22:59:04Z",
+     "message": "Merge pull request #2 from korczis/feature/flowbite-p5-alpine-enhance",
+     "url": "https://github.com/korczis/astronomists/commit/8ee293b57cee351f373f9d49a3db383a24365fda"
+    },
+    {
+     "at": "2026-06-16T22:57:47Z",
+     "message": "feat(proc): intro illustrations for Proč pillar articles",
+     "url": "https://github.com/korczis/astronomists/commit/c6a7508795a3721d1c45431ec066947249e91c26"
+    },
+    {
+     "at": "2026-06-16T22:51:52Z",
+     "message": "Merge pull request #1 from korczis/feature/flowbite-p5-alpine-enhance",
+     "url": "https://github.com/korczis/astronomists/commit/233e38ccde50c9f086627891beca6d050078ae80"
+    },
+    {
+     "at": "2026-06-16T22:42:05Z",
+     "message": "fix: address PR #1 review — harden doctrine guard, carousel a11y, docs",
+     "url": "https://github.com/korczis/astronomists/commit/6724a023e4df8758cc231fed7bebb4a671ea8d17"
+    },
+    {
+     "at": "2026-06-16T22:34:43Z",
+     "message": "test(e2e): assert every /pro-koho/*/ hero image decodes",
+     "url": "https://github.com/korczis/astronomists/commit/d025e7f4e874b4e38c855f39820db90e9a882862"
+    },
+    {
+     "at": "2026-06-16T22:31:20Z",
+     "message": "test(e2e): cover /galerie/ Flowbite poster carousel",
+     "url": "https://github.com/korczis/astronomists/commit/2812486bd7e31a7a95e51a4fc8558c809850062f"
+    },
+    {
+     "at": "2026-06-16T22:17:20Z",
+     "message": "feat(galerie): Flowbite carousel poster-background page at /galerie/",
+     "url": "https://github.com/korczis/astronomists/commit/c1a6377f3ca447d150c6e0cc6ecdb0d304a34973"
+    },
+    {
+     "at": "2026-06-16T21:14:15Z",
+     "message": "test(e2e): cover campaign hub, 25 detail pages, prev/next + social-kit",
+     "url": "https://github.com/korczis/astronomists/commit/ddd938f69d6d10035b87557590330e6806decf29"
+    },
+    {
+     "at": "2026-06-16T20:57:31Z",
+     "message": "docs(deploy): require CLAUDE_DEPLOY_SKILL for default-branch / gh-pages push",
+     "url": "https://github.com/korczis/astronomists/commit/871b0a96d1333a27481a7f45bf0140ad1a7a7557"
+    },
+    {
+     "at": "2026-06-16T20:51:32Z",
+     "message": "feat(og): use /og/cards art as hub hero background",
+     "url": "https://github.com/korczis/astronomists/commit/276a7bcd15bd357edf7abb10fa0fc9c43c8c3320"
+    },
+    {
+     "at": "2026-06-16T20:40:41Z",
+     "message": "feat(design): responsive page background image sets",
+     "url": "https://github.com/korczis/astronomists/commit/111e0cf0fdab98ff8cb9ca977edc89bc61cb118e"
+    },
+    {
+     "at": "2026-06-16T20:40:26Z",
+     "message": "feat(og): text-free on-site card art (/og/cards) + regenerate page OG",
+     "url": "https://github.com/korczis/astronomists/commit/7bac8bf712d081862a1c7e05bcc8553b17c5ff70"
+    },
+    {
+     "at": "2026-06-16T20:35:33Z",
+     "message": "feat(governance): auto-enforce Flowbite v2/Tailwind v3 stack doctrine",
+     "url": "https://github.com/korczis/astronomists/commit/4594165c79eb2a4fdc5498b30a049e7f35e562cd"
+    },
+    {
+     "at": "2026-06-16T20:32:00Z",
+     "message": "docs(deploy): document push sentinel for block-git-push hook",
+     "url": "https://github.com/korczis/astronomists/commit/f143ca969eb3659c42230953e8751bf47fa813de"
+    },
+    {
+     "at": "2026-06-16T19:57:31Z",
+     "message": "chore(claude): add project /deploy command for gh-pages",
+     "url": "https://github.com/korczis/astronomists/commit/f0efae33291167cc75f4ab5bc859da7736c062ef"
+    },
+    {
+     "at": "2026-06-16T19:50:23Z",
+     "message": "docs: tagline refresh + AGENTS contributor guide",
+     "url": "https://github.com/korczis/astronomists/commit/17fc214662ebeefe05c57a8ee2275595b141528a"
+    },
+    {
+     "at": "2026-06-16T19:50:23Z",
+     "message": "test(smoke): cover enhancement layer + new pages",
+     "url": "https://github.com/korczis/astronomists/commit/bb0e64ac62b81ed4e408df7941e38c2c9a1ceae7"
+    },
+    {
+     "at": "2026-06-16T19:50:23Z",
+     "message": "chore(contact): update contact e-mail to korczis@gmail.com",
+     "url": "https://github.com/korczis/astronomists/commit/296f6201cb0234712adaf0ad98ad55af2242e37a"
+    },
+    {
+     "at": "2026-06-16T19:50:22Z",
+     "message": "feat(content): campaign hub + 25 detail pages, section build-out",
+     "url": "https://github.com/korczis/astronomists/commit/ffe0ed6a70a6f35d45e8840ef2c049edf6dedfce"
+    },
+    {
+     "at": "2026-06-16T19:50:22Z",
+     "message": "feat(og): social/OG preview pipeline + social-kit gallery",
+     "url": "https://github.com/korczis/astronomists/commit/604b5f60b3e0f616d9c834a03c48c0c96780e753"
+    },
+    {
+     "at": "2026-06-16T19:50:22Z",
+     "message": "feat(site): progressive-enhancement layer — p5 starfield + Alpine reveals",
+     "url": "https://github.com/korczis/astronomists/commit/77b99a2dc426559cb8a7cc7376a6bd640deeb5c1"
+    },
+    {
+     "at": "2026-06-16T19:48:51Z",
+     "message": "chore(build): vendor p5/Alpine locally, ignore export dumps & py cache",
+     "url": "https://github.com/korczis/astronomists/commit/3228e5cd130ab061bce540cfda56a74767496cc2"
+    },
+    {
+     "at": "2026-06-16T13:37:37Z",
+     "message": "feat(site): replace prismatic positioning with Astronautisté movement",
+     "url": "https://github.com/korczis/astronomists/commit/4a60d76eee3abc34bb09afeaf56e03ca5c65c570"
+    },
+    {
+     "at": "2026-06-16T10:51:31Z",
+     "message": "ci: bump GitHub Actions to v5 (Node 24 runtime)",
+     "url": "https://github.com/korczis/astronomists/commit/367570c5db9dbe417b0b714de1b91cdcfb879324"
+    },
+    {
+     "at": "2026-06-16T10:45:09Z",
+     "message": "feat(site): Zola + Tailwind/Flowbite site with CI build/check/deploy",
+     "url": "https://github.com/korczis/astronomists/commit/0bdf0be2dde1199e778daae3a03856030733ccda"
+    },
+    {
+     "at": "2026-06-15T11:19:57Z",
+     "message": "feat(aiad): inject Prismatic AIAD core bootstrap",
+     "url": "https://github.com/korczis/astronomists/commit/06f3e7981540daac43297b990bea627b29b4337e"
+    },
+    {
+     "at": "2026-06-15T09:05:30Z",
+     "message": "first commit",
+     "url": "https://github.com/korczis/astronomists/commit/814fad5b598dd5fb995df4e7139789a55db9e079"
+    }
+   ],
    "languages": [
     {
      "name": "Python",
@@ -753,6 +2575,158 @@
    "created_at": "2026-07-16T16:43:52Z",
    "last_commit": "2026-07-19T20:51:54Z",
    "last_message": "feat(dossier): bounded monitoring loop for Able.cz dossier (PROMPT-11 loop-1)",
+   "commits": [
+    {
+     "at": "2026-07-19T20:51:54Z",
+     "message": "feat(dossier): bounded monitoring loop for Able.cz dossier (PROMPT-11 loop-1)",
+     "url": "https://github.com/korczis/unable.cz/commit/0849598ed55698117dea620a6755c0eaa3668cbb"
+    },
+    {
+     "at": "2026-07-19T10:24:19Z",
+     "message": "docs(dossier/reasoning): final report + production proof PROVEN for r08",
+     "url": "https://github.com/korczis/unable.cz/commit/9393e0dbdbd316c25509b86a7a900c4be453100a"
+    },
+    {
+     "at": "2026-07-19T10:20:18Z",
+     "message": "feat(dossier): epistemic reasoning engine — every conclusion answers 'why' (PROMPT-10)",
+     "url": "https://github.com/korczis/unable.cz/commit/9ac67e03299ce2cb423176b7fcec4dd0ad9c9953"
+    },
+    {
+     "at": "2026-07-19T09:49:05Z",
+     "message": "docs(dossier/temporal): final report + production snapshot proof PROVEN (§45, §53)",
+     "url": "https://github.com/korczis/unable.cz/commit/491a21ae5214101e013252e6fc933d1738c0cf76"
+    },
+    {
+     "at": "2026-07-19T09:44:53Z",
+     "message": "feat(dossier): temporal intelligence — immutable snapshots, change ledger, revalidation (PROMPT-09)",
+     "url": "https://github.com/korczis/unable.cz/commit/068d76157e751e399ec5d35eaec6651b5b0cd134"
+    },
+    {
+     "at": "2026-07-18T19:34:08Z",
+     "message": "docs(dossier): confirm production convergence PROVEN after deploy (§13 retest)",
+     "url": "https://github.com/korczis/unable.cz/commit/04890c47b56fb2a13c04f55db8fa06c57e6685ae"
+    },
+    {
+     "at": "2026-07-18T19:32:38Z",
+     "message": "fix(dossier): converge evidence cutoff to 2026-07-18 (production proof §13)",
+     "url": "https://github.com/korczis/unable.cz/commit/05a72d3a7f36629ca5b129bd9fb2a5b127d9c656"
+    },
+    {
+     "at": "2026-07-18T13:15:49Z",
+     "message": "feat(dossier/finance): every filed figure links to its filing (sourced + clickable)",
+     "url": "https://github.com/korczis/unable.cz/commit/04d1ae4d9019fd2d72a5a56dae9968c99674e9d6"
+    },
+    {
+     "at": "2026-07-18T13:11:31Z",
+     "message": "feat(dossier/finance): Blackfish entity + Able-vs-Blackfish scale comparison (sourced, clickable, in context)",
+     "url": "https://github.com/korczis/unable.cz/commit/0905abc9fcc79c8cf7842671962b94b24e05ab7d"
+    },
+    {
+     "at": "2026-07-18T13:08:27Z",
+     "message": "docs(dossier): consolidate cockpit final report (§43) with deployed status",
+     "url": "https://github.com/korczis/unable.cz/commit/cc935ea40a024801f5a7cdc484dede893d0984d4"
+    },
+    {
+     "at": "2026-07-18T12:51:27Z",
+     "message": "feat(dossier): unified investigation timeline (§20)",
+     "url": "https://github.com/korczis/unable.cz/commit/f42d176115490ba93e7d66fb6bed4d95187212ad"
+    },
+    {
+     "at": "2026-07-18T12:43:18Z",
+     "message": "fix(dossier): overview/search count LIVE claims only — align with the claims table (§36)",
+     "url": "https://github.com/korczis/unable.cz/commit/e957148f55dcdf06b5f0d58a82c90a5008134e7e"
+    },
+    {
+     "at": "2026-07-18T12:24:25Z",
+     "message": "feat(dossier): comparison mode — FY2024 vs FY2023 financial periods, aligned + YoY chart",
+     "url": "https://github.com/korczis/unable.cz/commit/2e9ae7ca9dcca0e277951aa41ae79b9bfd1e4421"
+    },
+    {
+     "at": "2026-07-18T12:08:03Z",
+     "message": "feat(dossier): investigation lens system (reprioritise presentation, never hide data)",
+     "url": "https://github.com/korczis/unable.cz/commit/44c5550fc95b2321d0c820c3c5fc73f6f22a7ea2"
+    },
+    {
+     "at": "2026-07-18T12:04:21Z",
+     "message": "feat(dossier): financial-intelligence layer — facts, formula-backed metrics, /dossier/finance/",
+     "url": "https://github.com/korczis/unable.cz/commit/f97a56524fc5f935f97cb040f5f7886ec3d11dca"
+    },
+    {
+     "at": "2026-07-18T11:54:29Z",
+     "message": "test(ui): widen responsive proof to 320–2560px + keyboard/interaction proof",
+     "url": "https://github.com/korczis/unable.cz/commit/0ff6fd2546e469435fcba5afa5e2009e1f5f8a28"
+    },
+    {
+     "at": "2026-07-18T11:48:20Z",
+     "message": "chore: gitignore Playwright test artifacts",
+     "url": "https://github.com/korczis/unable.cz/commit/59de224870d5dee1983675f36f755d5185f429f8"
+    },
+    {
+     "at": "2026-07-18T11:44:24Z",
+     "message": "test(ui): make responsive suite prod-targetable (PW_BASE_URL)",
+     "url": "https://github.com/korczis/unable.cz/commit/84c679169d71856ea1c7cd1b7ed68d3b952f697c"
+    },
+    {
+     "at": "2026-07-18T11:42:06Z",
+     "message": "test(ui): Playwright responsive suite proves 320–1440px; drop dead flowbite.min.js",
+     "url": "https://github.com/korczis/unable.cz/commit/61532803faafd37f743af6f16c50d085fbf46ca6"
+    },
+    {
+     "at": "2026-07-18T11:35:00Z",
+     "message": "docs+fix(ui): honest Flowbite/responsive audit + 100dvh on claim pages",
+     "url": "https://github.com/korczis/unable.cz/commit/396b1008ebb32a5ee7105585a106407a7a77db41"
+    },
+    {
+     "at": "2026-07-18T10:27:02Z",
+     "message": "feat(dossier): Claim Object System — a static route, JSON and real link per CLM",
+     "url": "https://github.com/korczis/unable.cz/commit/f47a5f5bee2860a4dbb72b85de63beea0f20589c"
+    },
+    {
+     "at": "2026-07-18T07:25:08Z",
+     "message": "feat(dossier): financial-value drill-down (filed figure → source, exact citation, fact/assessment)",
+     "url": "https://github.com/korczis/unable.cz/commit/178c3ed34af9144ff80ce02cd2e0c097ad47507e"
+    },
+    {
+     "at": "2026-07-18T07:18:17Z",
+     "message": "feat(dossier): close the Cytoscape sync loop — selecting an entity focuses the graph",
+     "url": "https://github.com/korczis/unable.cz/commit/c64759f3197fba47a55260e83c758e903fa743b3"
+    },
+    {
+     "at": "2026-07-18T07:03:12Z",
+     "message": "fix(dossier): evidence/context inspector modal stuck open — [hidden] loses to .flex",
+     "url": "https://github.com/korczis/unable.cz/commit/5a8d19eb41bdf2dcf0d7d4a5371450651e7b8914"
+    },
+    {
+     "at": "2026-07-18T06:49:04Z",
+     "message": "feat(dossier): context inspector + global search (records become first-class objects)",
+     "url": "https://github.com/korczis/unable.cz/commit/2ac0607887676246133a1386447dd0aa003a4d29"
+    },
+    {
+     "at": "2026-07-18T06:43:03Z",
+     "message": "docs+fix(dossier): evidence documentation set, adversarial audit, SRC-22 recovery",
+     "url": "https://github.com/korczis/unable.cz/commit/f9fc4dc28396c48e9bddd03f5e3e90044407f0bc"
+    },
+    {
+     "at": "2026-07-18T06:36:06Z",
+     "message": "feat(dossier): investigation cockpit — executive overview, section navigator, deep-linkable records",
+     "url": "https://github.com/korczis/unable.cz/commit/4a7bb772b54105bbe37ff985abeb42354fa5c226"
+    },
+    {
+     "at": "2026-07-18T06:27:40Z",
+     "message": "feat(dossier): evidence explorer — verified chains from claim to hashed artifact",
+     "url": "https://github.com/korczis/unable.cz/commit/23062514df9a26a615ff5b848620900599417c9f"
+    },
+    {
+     "at": "2026-07-18T06:09:53Z",
+     "message": "feat(dossier): primary-source enrichment (58 claims, 22 sources, resolved contradiction)",
+     "url": "https://github.com/korczis/unable.cz/commit/57fbf68193bf29df9d737f94248e790df9f1cbfe"
+    },
+    {
+     "at": "2026-07-18T05:59:27Z",
+     "message": "feat(dossier): preserve raw evidence layer (ARES fetch, artifacts, provider runs)",
+     "url": "https://github.com/korczis/unable.cz/commit/9c99b53b8acbe6836cef163411ad930d5c888e44"
+    }
+   ],
    "languages": [
     {
      "name": "JavaScript",
@@ -785,6 +2759,18 @@
    "created_at": "2025-08-25T20:25:04.842Z",
    "last_commit": "2026-02-05T00:37:13.000+01:00",
    "last_message": "\u001b[38;2;248;248;242mfeat(aiad): inject AIAD v1.0.0 infrastructure\u001b[0m",
+   "commits": [
+    {
+     "at": "2026-02-05T00:37:13.000+01:00",
+     "message": "\u001b[38;2;248;248;242mfeat(aiad): inject AIAD v1.0.0 infrastructure\u001b[0m",
+     "url": "https://gitlab.com/korczis/tinder-nomics/-/commit/b144c0794c1ac10015f780d1e3d0154d79e7acae"
+    },
+    {
+     "at": "2025-08-25T22:25:05.000+02:00",
+     "message": "Initial commit",
+     "url": "https://gitlab.com/korczis/tinder-nomics/-/commit/41c13ad7103b08b01f859f85ff5d9d350d47d4b9"
+    }
+   ],
    "languages": [],
    "readme": "Use the built-in continuous integration in GitLab.",
    "topics": [],
@@ -804,6 +2790,28 @@
    "created_at": "2025-01-25T02:41:53.111Z",
    "last_commit": "2026-02-05T00:37:05.000+01:00",
    "last_message": "\u001b[38;2;248;248;242mfeat(aiad): inject AIAD v1.0.0 infrastructure\u001b[0m",
+   "commits": [
+    {
+     "at": "2026-02-05T00:37:05.000+01:00",
+     "message": "\u001b[38;2;248;248;242mfeat(aiad): inject AIAD v1.0.0 infrastructure\u001b[0m",
+     "url": "https://gitlab.com/korczis/the-psycho/-/commit/32687a4b3abe64ca504176f9a73987b8936a0fcb"
+    },
+    {
+     "at": "2025-01-25T12:50:10.000+01:00",
+     "message": "feat: initial versions",
+     "url": "https://gitlab.com/korczis/the-psycho/-/commit/7fa298369ca28c93f93136d8e5ed3db47151f93a"
+    },
+    {
+     "at": "2025-01-25T04:10:36.000+01:00",
+     "message": "feat: first version",
+     "url": "https://gitlab.com/korczis/the-psycho/-/commit/a9b8a0e41e13435165b1d74a6541336df698dde8"
+    },
+    {
+     "at": "2025-01-25T03:52:48.000+01:00",
+     "message": "add README",
+     "url": "https://gitlab.com/korczis/the-psycho/-/commit/b1e455ef3650103af82a2c9704d0679e1415ee07"
+    }
+   ],
    "languages": [
     {
      "name": "Elixir",
@@ -840,6 +2848,18 @@
    "created_at": "2024-12-01T21:24:20.949Z",
    "last_commit": "2026-02-05T00:37:02.000+01:00",
    "last_message": "\u001b[38;2;248;248;242mfeat(aiad): inject AIAD v1.0.0 infrastructure\u001b[0m",
+   "commits": [
+    {
+     "at": "2026-02-05T00:37:02.000+01:00",
+     "message": "\u001b[38;2;248;248;242mfeat(aiad): inject AIAD v1.0.0 infrastructure\u001b[0m",
+     "url": "https://gitlab.com/korczis/prism/-/commit/a82d8af2b5ca95da076a1a9367216bb24d00e322"
+    },
+    {
+     "at": "2024-12-01T22:26:06.000+01:00",
+     "message": "feat: add README.md",
+     "url": "https://gitlab.com/korczis/prism/-/commit/54f105c339900332074efaad7154b94d71f8d1fc"
+    }
+   ],
    "languages": [],
    "readme": "PRISM is an advanced system for behavioral analysis, pattern recognition, and social modeling using cutting-edge artificial intelligence and machine learning techniques.",
    "topics": [],
@@ -859,6 +2879,18 @@
    "created_at": "2025-04-28T15:26:38.855Z",
    "last_commit": "2026-02-05T00:37:01.000+01:00",
    "last_message": "\u001b[38;2;248;248;242mfeat(aiad): inject AIAD v1.0.0 infrastructure\u001b[0m",
+   "commits": [
+    {
+     "at": "2026-02-05T00:37:01.000+01:00",
+     "message": "\u001b[38;2;248;248;242mfeat(aiad): inject AIAD v1.0.0 infrastructure\u001b[0m",
+     "url": "https://gitlab.com/korczis/past/-/commit/0acd95b8087527e4f1cb6070003c8097c158880a"
+    },
+    {
+     "at": "2025-04-28T17:41:17.000+02:00",
+     "message": "Initial commit",
+     "url": "https://gitlab.com/korczis/past/-/commit/635fa91856b2fdffd230ad366b7f2c5052481341"
+    }
+   ],
    "languages": [],
    "readme": "\"Capture the soul of the story, not just its words.\"",
    "topics": [],
@@ -878,6 +2910,158 @@
    "created_at": "2025-08-23T21:07:58.962Z",
    "last_commit": "2026-02-05T00:36:59.000+01:00",
    "last_message": "\u001b[38;2;248;248;242mfeat(aiad): inject AIAD v1.0.0 infrastructure\u001b[0m",
+   "commits": [
+    {
+     "at": "2026-02-05T00:36:59.000+01:00",
+     "message": "\u001b[38;2;248;248;242mfeat(aiad): inject AIAD v1.0.0 infrastructure\u001b[0m",
+     "url": "https://gitlab.com/korczis/sig/-/commit/72a34d7662b961a2f46e5d50b309f833152f6794"
+    },
+    {
+     "at": "2025-09-15T14:33:11.000+02:00",
+     "message": "feat: integrate unified search into OSINT LiveView interface",
+     "url": "https://gitlab.com/korczis/sig/-/commit/ec46aa71f063ef93b680a372b019bf645da8a63c"
+    },
+    {
+     "at": "2025-09-15T14:33:01.000+02:00",
+     "message": "feat: implement comprehensive OSINT unified search interface",
+     "url": "https://gitlab.com/korczis/sig/-/commit/47a25c03e57d1eb2f26bcfdd028c2762f7dc898c"
+    },
+    {
+     "at": "2025-09-15T14:32:50.000+02:00",
+     "message": "feat: enhance OSINT provider registry with unified adapter integration",
+     "url": "https://gitlab.com/korczis/sig/-/commit/f75b231cbcb337b68bb4c3ab349d9ec1232aa8d6"
+    },
+    {
+     "at": "2025-09-15T14:32:41.000+02:00",
+     "message": "feat: implement OSINT provider adapter for unified interface",
+     "url": "https://gitlab.com/korczis/sig/-/commit/48ef8450e20bac7a665ad59a0073560d55093b2e"
+    },
+    {
+     "at": "2025-09-15T12:16:21.000+02:00",
+     "message": "test: enhance ACM Digital Library provider comprehensive tests",
+     "url": "https://gitlab.com/korczis/sig/-/commit/e7e4892db8e93c2aea83526dec3ef5d8f2f45122"
+    },
+    {
+     "at": "2025-09-15T12:16:15.000+02:00",
+     "message": "feat: update router configuration with new routes",
+     "url": "https://gitlab.com/korczis/sig/-/commit/85e4b89e8f9ecae80fb61581e730e4329d55efcc"
+    },
+    {
+     "at": "2025-09-15T12:16:10.000+02:00",
+     "message": "feat: enhance monitoring live view dashboard",
+     "url": "https://gitlab.com/korczis/sig/-/commit/2ea4acc47eaa6c4ed8e0eb81b92bd326e50b492d"
+    },
+    {
+     "at": "2025-09-15T12:16:05.000+02:00",
+     "message": "feat: update license live view interface",
+     "url": "https://gitlab.com/korczis/sig/-/commit/987d3aeafd6c4811ab998049cfc83dd5b035875d"
+    },
+    {
+     "at": "2025-09-15T12:15:59.000+02:00",
+     "message": "feat: improve IDE workspace live view capabilities",
+     "url": "https://gitlab.com/korczis/sig/-/commit/8f2a621daed369cc5a80ab14ec987ae4e7561094"
+    },
+    {
+     "at": "2025-09-15T12:15:53.000+02:00",
+     "message": "feat: enhance demo live view functionality",
+     "url": "https://gitlab.com/korczis/sig/-/commit/00866869fef91816a64ee60cea0d49509f2e288c"
+    },
+    {
+     "at": "2025-09-15T12:15:48.000+02:00",
+     "message": "feat: update home page template with enhanced content",
+     "url": "https://gitlab.com/korczis/sig/-/commit/d6fc33df16ba7937728e675bd87f147f7ceaed90"
+    },
+    {
+     "at": "2025-09-15T12:15:42.000+02:00",
+     "message": "feat: enhance app layout template with improved structure",
+     "url": "https://gitlab.com/korczis/sig/-/commit/16db0c22b9f192b723cfab18fae5731c3984d7cc"
+    },
+    {
+     "at": "2025-09-15T12:15:37.000+02:00",
+     "message": "feat: update OSINT provider registry implementation",
+     "url": "https://gitlab.com/korczis/sig/-/commit/e94e3293d4ba5743649e7d8498b87ef776fda755"
+    },
+    {
+     "at": "2025-09-15T12:15:30.000+02:00",
+     "message": "feat: implement Chat.Server module for agent communication",
+     "url": "https://gitlab.com/korczis/sig/-/commit/785d1c7618ded3ac270042b48a72fc031639c18b"
+    },
+    {
+     "at": "2025-09-15T12:15:22.000+02:00",
+     "message": "feat: add get_recent_messages function to Blackboard module",
+     "url": "https://gitlab.com/korczis/sig/-/commit/ad33fba490d9d243704e34f540ec435d6ee8966a"
+    },
+    {
+     "at": "2025-09-15T12:15:16.000+02:00",
+     "message": "chore: update mix.lock with Floki dependency",
+     "url": "https://gitlab.com/korczis/sig/-/commit/ba235aa9ef743d909b5fea4285064c36032c6a7e"
+    },
+    {
+     "at": "2025-09-15T12:15:10.000+02:00",
+     "message": "feat: add Floki dependency for HTML parsing",
+     "url": "https://gitlab.com/korczis/sig/-/commit/28e49a19d85037f69ad697d84dc16c30c9f0055f"
+    },
+    {
+     "at": "2025-09-15T12:15:03.000+02:00",
+     "message": "fix: resolve unused parameter warnings in replay_system.ex",
+     "url": "https://gitlab.com/korczis/sig/-/commit/9483db48b6060a63e12a4a25ff881b733a5d6d8d"
+    },
+    {
+     "at": "2025-09-15T12:14:58.000+02:00",
+     "message": "fix: resolve unused variable warnings in trait_system.ex",
+     "url": "https://gitlab.com/korczis/sig/-/commit/99ff642697c2225695979519626d8e98b9ef217b"
+    },
+    {
+     "at": "2025-09-14T17:49:48.000+02:00",
+     "message": "feat: implement proper Phoenix release tooling with automatic migrations",
+     "url": "https://gitlab.com/korczis/sig/-/commit/f6fcdc48917c8b1256d59681a65f7887a3722498"
+    },
+    {
+     "at": "2025-09-14T17:22:38.000+02:00",
+     "message": "fix: correct Phoenix release migration to run at application startup",
+     "url": "https://gitlab.com/korczis/sig/-/commit/a4341c6b8e9a4d6157957a52afd221dbb325045d"
+    },
+    {
+     "at": "2025-09-14T17:18:09.000+02:00",
+     "message": "fix: implement proper Phoenix release configuration per documentation",
+     "url": "https://gitlab.com/korczis/sig/-/commit/360214eb99d141795d784a4e22892a9072bf3eaf"
+    },
+    {
+     "at": "2025-09-14T11:00:35.000+02:00",
+     "message": "fix: resolve template rendering error preventing page loads",
+     "url": "https://gitlab.com/korczis/sig/-/commit/94356b7702c35ea23f21f31592431149cbad773a"
+    },
+    {
+     "at": "2025-09-14T09:13:33.000+02:00",
+     "message": "fix: resolve critical compilation warnings and improve system stability",
+     "url": "https://gitlab.com/korczis/sig/-/commit/c926d1d90af960e7ea279ad7e83218e19f8908d5"
+    },
+    {
+     "at": "2025-09-14T09:06:33.000+02:00",
+     "message": "feat: complete E2E demo system with full LiveView infrastructure",
+     "url": "https://gitlab.com/korczis/sig/-/commit/000b32e5650aa6a172866a1c6fbc4c17539bda79"
+    },
+    {
+     "at": "2025-09-14T03:01:56.000+02:00",
+     "message": "fix: resolve critical compilation warnings for agent system deployment",
+     "url": "https://gitlab.com/korczis/sig/-/commit/3d1691f61d5db104379edfef311ad9da580afccc"
+    },
+    {
+     "at": "2025-09-14T02:47:12.000+02:00",
+     "message": "feat: implement complete intelligent agent system with LLM integration",
+     "url": "https://gitlab.com/korczis/sig/-/commit/bb5bac9356128560cd420330054ffd747ec80d70"
+    },
+    {
+     "at": "2025-09-14T02:29:56.000+02:00",
+     "message": "fix: resolve critical compilation errors preventing build",
+     "url": "https://gitlab.com/korczis/sig/-/commit/d728f6524d47bdff7cd6555c6732aa8b33b4b3ff"
+    },
+    {
+     "at": "2025-09-14T02:22:09.000+02:00",
+     "message": "fix: compilation error fixes for deployment",
+     "url": "https://gitlab.com/korczis/sig/-/commit/5ef4bde14d91c421c94aed10ace9a1f4111a1442"
+    }
+   ],
    "languages": [
     {
      "name": "Elixir",
@@ -927,6 +3111,18 @@
    "created_at": "2025-09-02T10:20:47.749Z",
    "last_commit": "2025-09-02T12:22:20.000+02:00",
    "last_message": "Edit README.md",
+   "commits": [
+    {
+     "at": "2025-09-02T12:22:20.000+02:00",
+     "message": "Edit README.md",
+     "url": "https://gitlab.com/korczis/edna/-/commit/6b7ef5897a9e8e14e99e79dcbd5a3b6606f41964"
+    },
+    {
+     "at": "2025-09-02T12:20:48.000+02:00",
+     "message": "Initial commit",
+     "url": "https://gitlab.com/korczis/edna/-/commit/cfd8fae0684285f5961eb748c6e83fa7c3130872"
+    }
+   ],
    "languages": [],
    "readme": "1. Co je Edna? 2. Klíčové funkce 3. Persona a jazyk Edny 4. Architektura 5. Monetizace 6. UX & přístupnost 7. Retenční strategie 8. Roadmapa 9. Etické zásady 10. Inspirace & zdroje",
    "topics": [],
@@ -946,6 +3142,18 @@
    "created_at": "2025-08-28T19:47:13.774Z",
    "last_commit": "2025-08-28T21:47:43.000+02:00",
    "last_message": "Edit README.md",
+   "commits": [
+    {
+     "at": "2025-08-28T21:47:43.000+02:00",
+     "message": "Edit README.md",
+     "url": "https://gitlab.com/korczis/GHT/-/commit/c8beb0cb7d3c6d2d6e1943dcf5d7372406f0ebfc"
+    },
+    {
+     "at": "2025-08-28T21:47:14.000+02:00",
+     "message": "Initial commit",
+     "url": "https://gitlab.com/korczis/GHT/-/commit/2d00c36639a7ea5ffd11f50cf3a53e2c1223c0fb"
+    }
+   ],
    "languages": [],
    "readme": "Copyright © 2024–2025 Tomas Korcak. ALL RIGHTS RESERVED.",
    "topics": [],
@@ -965,6 +3173,128 @@
    "created_at": "2025-08-27T16:52:39.046Z",
    "last_commit": "2025-08-28T20:57:49.000+02:00",
    "last_message": "docs: add src/comtesse-rs specific README.md",
+   "commits": [
+    {
+     "at": "2025-08-28T20:57:49.000+02:00",
+     "message": "docs: add src/comtesse-rs specific README.md",
+     "url": "https://gitlab.com/korczis/comtesse/-/commit/647c48106af55267a6b2540512922ebcfe8470b9"
+    },
+    {
+     "at": "2025-08-28T20:46:29.000+02:00",
+     "message": "feat: update PROJECT_INSTRUCTIONS.md",
+     "url": "https://gitlab.com/korczis/comtesse/-/commit/21e93f18967d54aa0af237c72d54fbf1d68dd18f"
+    },
+    {
+     "at": "2025-08-28T20:46:14.000+02:00",
+     "message": "docs: updated README.md",
+     "url": "https://gitlab.com/korczis/comtesse/-/commit/6204e3e2de2873b25d6caf20cc3148db13a71706"
+    },
+    {
+     "at": "2025-08-28T20:45:55.000+02:00",
+     "message": "feat: add placeholder for architecture markdown doc",
+     "url": "https://gitlab.com/korczis/comtesse/-/commit/77c3a37e5a947ff3f67076e2f299745f962f6eff"
+    },
+    {
+     "at": "2025-08-28T20:45:33.000+02:00",
+     "message": "feat: add/remove/update diagrams",
+     "url": "https://gitlab.com/korczis/comtesse/-/commit/5ce06392a37e4ac5b50bdea2d798019a24757585"
+    },
+    {
+     "at": "2025-08-28T20:44:21.000+02:00",
+     "message": "feat: add missing schemas",
+     "url": "https://gitlab.com/korczis/comtesse/-/commit/c14dbcf2c7fc4e6316b8b6a7058d942d61472b24"
+    },
+    {
+     "at": "2025-08-28T20:44:02.000+02:00",
+     "message": "feat: add scripts",
+     "url": "https://gitlab.com/korczis/comtesse/-/commit/8668c58933d2d1f00e2596959f69d4eb93a67d1a"
+    },
+    {
+     "at": "2025-08-28T20:40:48.000+02:00",
+     "message": "feat(core,cli): scaffold Comtesse Rust project with lib + bin",
+     "url": "https://gitlab.com/korczis/comtesse/-/commit/014f5584529f2e258f12af4f06f54472e25d579d"
+    },
+    {
+     "at": "2025-08-28T20:38:47.000+02:00",
+     "message": "feat: add gitignore",
+     "url": "https://gitlab.com/korczis/comtesse/-/commit/0dc05b47f36045b76f9d43c4373e23813a9d887a"
+    },
+    {
+     "at": "2025-08-27T21:53:56.000+02:00",
+     "message": "feat: add docs/templates",
+     "url": "https://gitlab.com/korczis/comtesse/-/commit/f094f06072dd242b3057efd3a40f07eb8696a696"
+    },
+    {
+     "at": "2025-08-27T21:53:24.000+02:00",
+     "message": "feat: add gitignore",
+     "url": "https://gitlab.com/korczis/comtesse/-/commit/46c64ed73d666bb672f88018c65b0ed5ea0c7e99"
+    },
+    {
+     "at": "2025-08-27T21:41:26.000+02:00",
+     "message": "feat: add EXECUTIVE_SNAPSHOT.md",
+     "url": "https://gitlab.com/korczis/comtesse/-/commit/163c56e09995ae5dfbbc390712bf614e0d31886a"
+    },
+    {
+     "at": "2025-08-27T21:23:01.000+02:00",
+     "message": "feat: add Justfile",
+     "url": "https://gitlab.com/korczis/comtesse/-/commit/4cb1715d615a798d241894ca9685789194ea30ad"
+    },
+    {
+     "at": "2025-08-27T21:22:32.000+02:00",
+     "message": "feat: CRD-0002 - Custom per-repo/org LLM with incremental commit-trained adapters (retrieval + RAG)",
+     "url": "https://gitlab.com/korczis/comtesse/-/commit/def8a5bef53cc1ca48c1b2cc6988bad2e6bc9898"
+    },
+    {
+     "at": "2025-08-27T21:21:33.000+02:00",
+     "message": "feat: IDEA-0002 - Custom per-repo/org LLM trained incrementally from commits",
+     "url": "https://gitlab.com/korczis/comtesse/-/commit/cecca56757f6a8a2e47c48bcfcf8b12eee17cec8"
+    },
+    {
+     "at": "2025-08-27T21:20:44.000+02:00",
+     "message": "feat: IDEA-20250827 - External REST Embedders for Meilisearch",
+     "url": "https://gitlab.com/korczis/comtesse/-/commit/8351f9fc5f94bb256a59f6ae0dbe9ca6610f717b"
+    },
+    {
+     "at": "2025-08-27T20:32:25.000+02:00",
+     "message": "feat: working comtesse-index-git.sh",
+     "url": "https://gitlab.com/korczis/comtesse/-/commit/622f95a33527fc9240863e53e9eb58e53d45b8e7"
+    },
+    {
+     "at": "2025-08-27T20:21:15.000+02:00",
+     "message": "docs: updated PROJECT_INSTRUCTIONS.md",
+     "url": "https://gitlab.com/korczis/comtesse/-/commit/dbaf5a9b8b6a83e7c847c2de448c990ee0ad691e"
+    },
+    {
+     "at": "2025-08-27T20:21:01.000+02:00",
+     "message": "docs: initial version of docs",
+     "url": "https://gitlab.com/korczis/comtesse/-/commit/4233acc4e38143786bf0c36fedccce2e292a8aa7"
+    },
+    {
+     "at": "2025-08-27T20:20:46.000+02:00",
+     "message": "feat: initial version of git -> meili script",
+     "url": "https://gitlab.com/korczis/comtesse/-/commit/5d23873f8054a06087c68095bbd06a8f6999a558"
+    },
+    {
+     "at": "2025-08-27T18:59:55.000+02:00",
+     "message": "docs: updated README.md",
+     "url": "https://gitlab.com/korczis/comtesse/-/commit/abb11a14fe428fbe022bfce39cb6fbc5691ba91d"
+    },
+    {
+     "at": "2025-08-27T18:57:34.000+02:00",
+     "message": "feat: add docs/",
+     "url": "https://gitlab.com/korczis/comtesse/-/commit/7b1de56cee2ec68a7aa47375a95ebee924179454"
+    },
+    {
+     "at": "2025-08-27T18:57:34.000+02:00",
+     "message": "feat: add initial PROJECT_INSTRUCTIONS.md",
+     "url": "https://gitlab.com/korczis/comtesse/-/commit/047eeeb6efcee930c961ccf0dde585dde877a8fe"
+    },
+    {
+     "at": "2025-08-27T18:52:39.000+02:00",
+     "message": "Initial commit",
+     "url": "https://gitlab.com/korczis/comtesse/-/commit/a93c0a138d6a724d23c2a53dcf3d99037a66a104"
+    }
+   ],
    "languages": [
     {
      "name": "Just",
@@ -1001,6 +3331,158 @@
    "created_at": "2025-08-22T17:57:54.670Z",
    "last_commit": "2025-08-22T22:21:57.000+02:00",
    "last_message": "Merge branch 'master' of gitlab.com:korczis/korczis.gitlab.io",
+   "commits": [
+    {
+     "at": "2025-08-22T22:21:57.000+02:00",
+     "message": "Merge branch 'master' of gitlab.com:korczis/korczis.gitlab.io",
+     "url": "https://gitlab.com/korczis/korczis.gitlab.io/-/commit/12a4ab8bccdf3833226eaf5545b1e08b3127b4d4"
+    },
+    {
+     "at": "2025-08-22T22:20:42.000+02:00",
+     "message": "fix: CI/CD",
+     "url": "https://gitlab.com/korczis/korczis.gitlab.io/-/commit/7d85caec1328e6796958cce3f17c776a28ad3cf2"
+    },
+    {
+     "at": "2025-08-22T22:17:55.000+02:00",
+     "message": "fix: CI/CD",
+     "url": "https://gitlab.com/korczis/korczis.gitlab.io/-/commit/3e4363b4539e55f963037112f5143ce6456d841b"
+    },
+    {
+     "at": "2025-08-22T22:14:14.000+02:00",
+     "message": "fix: CI/CD",
+     "url": "https://gitlab.com/korczis/korczis.gitlab.io/-/commit/ccc487e73787fc5d83f760956a159b6cf9cdc714"
+    },
+    {
+     "at": "2025-08-22T21:25:14.000+02:00",
+     "message": "fix: CI/CD",
+     "url": "https://gitlab.com/korczis/korczis.gitlab.io/-/commit/02704d6f9b5d3ae210b32db16d5a761046d11a9c"
+    },
+    {
+     "at": "2025-08-22T21:23:40.000+02:00",
+     "message": "fix: CI/CD",
+     "url": "https://gitlab.com/korczis/korczis.gitlab.io/-/commit/de84c5f2e127c91b52217404a1f59c2791b86580"
+    },
+    {
+     "at": "2025-08-22T21:21:11.000+02:00",
+     "message": "fix: CI/CD",
+     "url": "https://gitlab.com/korczis/korczis.gitlab.io/-/commit/f249c2f93c37a2d438e7dcb5192a9665dbdce8b4"
+    },
+    {
+     "at": "2025-08-22T21:19:39.000+02:00",
+     "message": "fix: CI/CD",
+     "url": "https://gitlab.com/korczis/korczis.gitlab.io/-/commit/721b6222b0ddcb09f153c4d588ea6296bd91baac"
+    },
+    {
+     "at": "2025-08-22T21:18:01.000+02:00",
+     "message": "fix: CI/CD",
+     "url": "https://gitlab.com/korczis/korczis.gitlab.io/-/commit/7833940b59bbf93238cc76850877cf452fa9a37e"
+    },
+    {
+     "at": "2025-08-22T21:17:33.000+02:00",
+     "message": "Merge branch 'master' of gitlab.com:korczis/korczis.gitlab.io",
+     "url": "https://gitlab.com/korczis/korczis.gitlab.io/-/commit/25f3cb476c23d3a46c9e900f7bf8f83522895174"
+    },
+    {
+     "at": "2025-08-22T21:17:03.000+02:00",
+     "message": "fix: CI/CD",
+     "url": "https://gitlab.com/korczis/korczis.gitlab.io/-/commit/a824b165aa3b85fb35df16a5e654356fb98c4193"
+    },
+    {
+     "at": "2025-08-22T21:14:33.000+02:00",
+     "message": "Update .gitlab-ci.yml file",
+     "url": "https://gitlab.com/korczis/korczis.gitlab.io/-/commit/bf8af7187e7e2f01ba902d94be3daba82a6ea862"
+    },
+    {
+     "at": "2025-08-22T21:14:17.000+02:00",
+     "message": "fix: CI/CD",
+     "url": "https://gitlab.com/korczis/korczis.gitlab.io/-/commit/fdada4ac764193c45763083284a282c66021b80f"
+    },
+    {
+     "at": "2025-08-22T21:10:40.000+02:00",
+     "message": "fix: CI/CD",
+     "url": "https://gitlab.com/korczis/korczis.gitlab.io/-/commit/0719c44660c583c14052983109a949b2260f1a53"
+    },
+    {
+     "at": "2025-08-22T21:08:16.000+02:00",
+     "message": "fix: CI/CD",
+     "url": "https://gitlab.com/korczis/korczis.gitlab.io/-/commit/c4eb3827cce28a9a386c408960ee785fdeb976f1"
+    },
+    {
+     "at": "2025-08-22T21:05:33.000+02:00",
+     "message": "fix: CI/CD",
+     "url": "https://gitlab.com/korczis/korczis.gitlab.io/-/commit/3d4dd017ed360609db177f6028d8778321a7b551"
+    },
+    {
+     "at": "2025-08-22T20:56:44.000+02:00",
+     "message": "fix: CI/CD",
+     "url": "https://gitlab.com/korczis/korczis.gitlab.io/-/commit/11e5a117d5c9b2795d3653ef5958bc7b053017bb"
+    },
+    {
+     "at": "2025-08-22T20:55:32.000+02:00",
+     "message": "Merge branch 'master' of gitlab.com:korczis/korczis.gitlab.io",
+     "url": "https://gitlab.com/korczis/korczis.gitlab.io/-/commit/16c6d6ac8853ebcbc4641a41d46d19670604bf46"
+    },
+    {
+     "at": "2025-08-22T20:55:18.000+02:00",
+     "message": "feat: config.toml",
+     "url": "https://gitlab.com/korczis/korczis.gitlab.io/-/commit/d0b1f63b88b638d1435795d10f070a9e033c5a26"
+    },
+    {
+     "at": "2025-08-22T20:52:11.000+02:00",
+     "message": "Update .gitlab-ci.yml file",
+     "url": "https://gitlab.com/korczis/korczis.gitlab.io/-/commit/b36d4f0436feb43c0c18e9abb4170111a501cb10"
+    },
+    {
+     "at": "2025-08-22T20:51:01.000+02:00",
+     "message": "Update .gitlab-ci.yml file",
+     "url": "https://gitlab.com/korczis/korczis.gitlab.io/-/commit/b01a79e77549013f59dad18ba3ea6b47ee0afdb1"
+    },
+    {
+     "at": "2025-08-22T20:45:28.000+02:00",
+     "message": "fix: CI/CD",
+     "url": "https://gitlab.com/korczis/korczis.gitlab.io/-/commit/f6a74ebeb71d3922bc0479c85d11e5da49e81c1a"
+    },
+    {
+     "at": "2025-08-22T20:44:33.000+02:00",
+     "message": "fix: CI/CD",
+     "url": "https://gitlab.com/korczis/korczis.gitlab.io/-/commit/acba634817c3bef5673b668d7c7ec7d3d5c91059"
+    },
+    {
+     "at": "2025-08-22T20:41:54.000+02:00",
+     "message": "fix: CI/CD",
+     "url": "https://gitlab.com/korczis/korczis.gitlab.io/-/commit/ada21903324958845612c84cef2a33ded617be0c"
+    },
+    {
+     "at": "2025-08-22T20:37:20.000+02:00",
+     "message": "Update .gitlab-ci.yml file",
+     "url": "https://gitlab.com/korczis/korczis.gitlab.io/-/commit/6943f1a33e271ca1c7dfa1a9ddf370c503cbe692"
+    },
+    {
+     "at": "2025-08-22T20:35:32.000+02:00",
+     "message": "fix: CI/CD",
+     "url": "https://gitlab.com/korczis/korczis.gitlab.io/-/commit/98e2923f9584820488ab9cd3e46e2165f392ca46"
+    },
+    {
+     "at": "2025-08-22T20:34:27.000+02:00",
+     "message": "fix: CI/CD",
+     "url": "https://gitlab.com/korczis/korczis.gitlab.io/-/commit/10e2dc1985c30ea05a032d2fea0e5a01a63cfe9c"
+    },
+    {
+     "at": "2025-08-22T20:32:05.000+02:00",
+     "message": "Update .gitlab-ci.yml file",
+     "url": "https://gitlab.com/korczis/korczis.gitlab.io/-/commit/87201ab197fb713f6e2ed12f5ada1408575cfbd2"
+    },
+    {
+     "at": "2025-08-22T20:30:08.000+02:00",
+     "message": "fix: CI/CD",
+     "url": "https://gitlab.com/korczis/korczis.gitlab.io/-/commit/e798d15423adcbfd2b7f1a7696acbc9bffc4a569"
+    },
+    {
+     "at": "2025-08-22T20:28:24.000+02:00",
+     "message": "fix: broken CI/CD",
+     "url": "https://gitlab.com/korczis/korczis.gitlab.io/-/commit/51b3169c0685c1ed7473b22ddd669fe760711ca7"
+    }
+   ],
    "languages": [
     {
      "name": "CSS",
@@ -1041,6 +3523,158 @@
    "created_at": "2025-07-24T19:53:59Z",
    "last_commit": "2025-08-04T17:45:57Z",
    "last_message": "chore: updates",
+   "commits": [
+    {
+     "at": "2025-08-04T17:45:57Z",
+     "message": "chore: updates",
+     "url": "https://github.com/korczis/prismatic/commit/fc5288c96a74deab9543e03be2d47faf9fb3a17f"
+    },
+    {
+     "at": "2025-08-04T03:28:25Z",
+     "message": "chore: ports",
+     "url": "https://github.com/korczis/prismatic/commit/c462aed2aef8d65be2b502b0c0ed52beb570bdc6"
+    },
+    {
+     "at": "2025-08-03T17:33:31Z",
+     "message": "chore: docs",
+     "url": "https://github.com/korczis/prismatic/commit/d0047337413c35bf6cf94df0dda502d558e6703d"
+    },
+    {
+     "at": "2025-08-03T13:44:50Z",
+     "message": "chore: documentation",
+     "url": "https://github.com/korczis/prismatic/commit/fef248823192ee30ed8729a1217e59de604b3c61"
+    },
+    {
+     "at": "2025-08-03T10:55:51Z",
+     "message": "chore: some cleanup",
+     "url": "https://github.com/korczis/prismatic/commit/b3ab14ecec755b071e3b0c9bde0ab61603e06e1c"
+    },
+    {
+     "at": "2025-08-03T09:06:50Z",
+     "message": "chore: more cleanup",
+     "url": "https://github.com/korczis/prismatic/commit/98b25e3cb759edfc1d0dc1dd61eaa41e7d15d448"
+    },
+    {
+     "at": "2025-08-03T07:45:25Z",
+     "message": "chore: consolidation preparation steps",
+     "url": "https://github.com/korczis/prismatic/commit/32f97f9f05b287f1fe4832f731499a71e915bfb8"
+    },
+    {
+     "at": "2025-08-03T06:28:25Z",
+     "message": "feat: refactor mix/tasks",
+     "url": "https://github.com/korczis/prismatic/commit/db14b28b40c8b2416838c82926832a0fefaf3d2c"
+    },
+    {
+     "at": "2025-08-02T14:27:43Z",
+     "message": "Merge conflicts resolved - union of features approach",
+     "url": "https://github.com/korczis/prismatic/commit/f9cc14d24ac6780c223f9aa699edade5747b5fee"
+    },
+    {
+     "at": "2025-08-02T12:56:49Z",
+     "message": "Merge commit 'cda329f'",
+     "url": "https://github.com/korczis/prismatic/commit/4dca74afac333d2c914d81f10c4c7beadaa5019f"
+    },
+    {
+     "at": "2025-08-02T12:55:23Z",
+     "message": "chore: delete .mix_tasks",
+     "url": "https://github.com/korczis/prismatic/commit/cda329f2de9b719eb3e7e9fb80868d893c703202"
+    },
+    {
+     "at": "2025-08-02T07:17:57Z",
+     "message": "chore: cleanup docs",
+     "url": "https://github.com/korczis/prismatic/commit/b09d4326eb59f1146dc4993c67c787c563845911"
+    },
+    {
+     "at": "2025-08-02T06:47:57Z",
+     "message": "chore: mix tasks",
+     "url": "https://github.com/korczis/prismatic/commit/73cf2afc968c98fac71e09c7dca5236d0e9965fe"
+    },
+    {
+     "at": "2025-08-02T06:34:13Z",
+     "message": "chore: refactor docs",
+     "url": "https://github.com/korczis/prismatic/commit/fc8de712a7f31b0206c80827382f883439afe8b3"
+    },
+    {
+     "at": "2025-08-02T04:42:47Z",
+     "message": "chore: cleanup mix tasks",
+     "url": "https://github.com/korczis/prismatic/commit/8beef957afc2c42ad3943ad7c6263b9ff3c6111b"
+    },
+    {
+     "at": "2025-08-02T03:31:08Z",
+     "message": "chore: update docs",
+     "url": "https://github.com/korczis/prismatic/commit/1d7ed8746b2b19a2bc3dfa435d8b2497d9b01ee5"
+    },
+    {
+     "at": "2025-08-01T23:29:36Z",
+     "message": "chore: update docs",
+     "url": "https://github.com/korczis/prismatic/commit/73c89f6c2dfb97a78459b3e2afe7f0956b073e22"
+    },
+    {
+     "at": "2025-08-01T22:34:38Z",
+     "message": "chore: update docs",
+     "url": "https://github.com/korczis/prismatic/commit/c722af57bc16171d1bd8b69d1942241406925cd2"
+    },
+    {
+     "at": "2025-08-01T22:21:35Z",
+     "message": "chore: improve doces",
+     "url": "https://github.com/korczis/prismatic/commit/ea664734cb3ca94cf2dc0e974b6f94a3fe7a1b07"
+    },
+    {
+     "at": "2025-08-01T22:01:56Z",
+     "message": "chore: update changges",
+     "url": "https://github.com/korczis/prismatic/commit/64ec65d75ca0d5a607a221fe4f3e5adfbe6b4d95"
+    },
+    {
+     "at": "2025-08-01T22:01:30Z",
+     "message": "chore: improve docs",
+     "url": "https://github.com/korczis/prismatic/commit/819aa29edaabf0a21442209cadb1a5557db41aa6"
+    },
+    {
+     "at": "2025-08-01T20:36:45Z",
+     "message": "feat: skeleton of Prismatic.FS and Prismatic.Document",
+     "url": "https://github.com/korczis/prismatic/commit/fa1343bf854c0e2eadd41b97a45d0f1a4f96a3d1"
+    },
+    {
+     "at": "2025-07-29T13:56:03Z",
+     "message": "chore: new apps/prismatic/lib/mix structure",
+     "url": "https://github.com/korczis/prismatic/commit/b4eb5d413ad446081d35df41ff6a94f78c3fdaca"
+    },
+    {
+     "at": "2025-07-29T11:20:11Z",
+     "message": "chore: split lib/mix/tasks/docs into multiple smaller files",
+     "url": "https://github.com/korczis/prismatic/commit/1dfa7e7a550e37a1f27e671a0606131512196ad0"
+    },
+    {
+     "at": "2025-07-29T10:41:19Z",
+     "message": "chore: fix compilation issues",
+     "url": "https://github.com/korczis/prismatic/commit/c4bbc113f60f96400064f8ef8f1932bdf13b7a22"
+    },
+    {
+     "at": "2025-07-29T08:52:56Z",
+     "message": "chore: improve docs",
+     "url": "https://github.com/korczis/prismatic/commit/fa6a7207b86b6ac29376a1bb825b9356485b7fbe"
+    },
+    {
+     "at": "2025-07-29T07:00:10Z",
+     "message": "chore: ai assisted development implementation",
+     "url": "https://github.com/korczis/prismatic/commit/ab78eef5bb0f147835d717df06ca66d7b3bfc01a"
+    },
+    {
+     "at": "2025-07-29T05:48:17Z",
+     "message": "chore: documentation improvements",
+     "url": "https://github.com/korczis/prismatic/commit/c8ce942b8c7c3a190ee53fce9e05db38e00192ff"
+    },
+    {
+     "at": "2025-07-29T04:06:35Z",
+     "message": "chore: document navigation miggration",
+     "url": "https://github.com/korczis/prismatic/commit/dda66e1fe71fe6061606def6679fc5e22bf11607"
+    },
+    {
+     "at": "2025-07-28T22:14:51Z",
+     "message": "chore: improve docs",
+     "url": "https://github.com/korczis/prismatic/commit/a5feb2f43f1ea1d2f6ed71ac3c48199bbbe2ea0b"
+    }
+   ],
    "languages": [
     {
      "name": "Elixir",
@@ -1085,6 +3719,128 @@
    "created_at": "2024-12-27T03:22:04Z",
    "last_commit": "2025-06-03T05:15:05Z",
    "last_message": "remove static.yml",
+   "commits": [
+    {
+     "at": "2025-06-03T05:15:05Z",
+     "message": "remove static.yml",
+     "url": "https://github.com/korczis/u-tygra/commit/a7614554f1ff5e8d3af66b3832682f8d860d06e3"
+    },
+    {
+     "at": "2025-06-03T05:01:11Z",
+     "message": "Create static.yml",
+     "url": "https://github.com/korczis/u-tygra/commit/51bb98e9dbaff500e392903ef2c54d7579df7bec"
+    },
+    {
+     "at": "2024-12-27T06:05:58Z",
+     "message": "update",
+     "url": "https://github.com/korczis/u-tygra/commit/0fc87ad731d9ad1ceb0d4c70e17d1dcdd83e77c6"
+    },
+    {
+     "at": "2024-12-27T06:02:19Z",
+     "message": "update",
+     "url": "https://github.com/korczis/u-tygra/commit/a19acec38dd6ed1d450c40c9f6d8918afc598fcc"
+    },
+    {
+     "at": "2024-12-27T05:59:23Z",
+     "message": "update",
+     "url": "https://github.com/korczis/u-tygra/commit/692e15f3d645096f3bc8eb21bcba2b3713f6f04c"
+    },
+    {
+     "at": "2024-12-27T05:24:41Z",
+     "message": "update",
+     "url": "https://github.com/korczis/u-tygra/commit/497a86a97d7e397fcf2dc5f3fec7df2f042e56b9"
+    },
+    {
+     "at": "2024-12-27T05:22:16Z",
+     "message": "update",
+     "url": "https://github.com/korczis/u-tygra/commit/454e497b4a2dcb6ec2ca6bf6c45069a5ecc4701e"
+    },
+    {
+     "at": "2024-12-27T05:13:36Z",
+     "message": "update",
+     "url": "https://github.com/korczis/u-tygra/commit/f73a1dc94c3eabb74cf7b8f2a4e5795786b2b73f"
+    },
+    {
+     "at": "2024-12-27T05:05:52Z",
+     "message": "update",
+     "url": "https://github.com/korczis/u-tygra/commit/413566d42d24ace7f09474a4a3c1ef0d35c90448"
+    },
+    {
+     "at": "2024-12-27T04:52:44Z",
+     "message": "update",
+     "url": "https://github.com/korczis/u-tygra/commit/f43d6f469140a480c11abb7bbc6917a44f9ee9e6"
+    },
+    {
+     "at": "2024-12-27T04:50:09Z",
+     "message": "update",
+     "url": "https://github.com/korczis/u-tygra/commit/ce3b44c2864ff9df98dd796e8ab0a728f02d5992"
+    },
+    {
+     "at": "2024-12-27T04:40:09Z",
+     "message": "update",
+     "url": "https://github.com/korczis/u-tygra/commit/63255443b2e2fe72ca1b45f093e3fe98560bdd92"
+    },
+    {
+     "at": "2024-12-27T04:21:01Z",
+     "message": "update",
+     "url": "https://github.com/korczis/u-tygra/commit/ae7b3093ce161240318b24a5cb035cd961914f0a"
+    },
+    {
+     "at": "2024-12-27T04:19:33Z",
+     "message": "update",
+     "url": "https://github.com/korczis/u-tygra/commit/845831fc2ae65f26a45ff514cd4b81b495e6df92"
+    },
+    {
+     "at": "2024-12-27T04:17:51Z",
+     "message": "update",
+     "url": "https://github.com/korczis/u-tygra/commit/95ec70a00a1d3f26a783a95e221217596d2edcee"
+    },
+    {
+     "at": "2024-12-27T04:16:11Z",
+     "message": "update",
+     "url": "https://github.com/korczis/u-tygra/commit/5ba2d39c8624065b51b108e8edd7699e61fee4a8"
+    },
+    {
+     "at": "2024-12-27T04:14:00Z",
+     "message": "update",
+     "url": "https://github.com/korczis/u-tygra/commit/ab7a7373ef8191eab370364fa88e1cd383e4d1e7"
+    },
+    {
+     "at": "2024-12-27T04:12:17Z",
+     "message": "update",
+     "url": "https://github.com/korczis/u-tygra/commit/4233da02ecddb04bd1f4802adac9274e5ce79aae"
+    },
+    {
+     "at": "2024-12-27T04:09:43Z",
+     "message": "update",
+     "url": "https://github.com/korczis/u-tygra/commit/d01d003b7236f9404b415b0c6b60a9d1431761db"
+    },
+    {
+     "at": "2024-12-27T04:07:25Z",
+     "message": "update",
+     "url": "https://github.com/korczis/u-tygra/commit/fcdc0c2819e33b4cbfd927ef669bd0edb4ab2046"
+    },
+    {
+     "at": "2024-12-27T04:02:58Z",
+     "message": "update",
+     "url": "https://github.com/korczis/u-tygra/commit/4d14b05daaa10554f6894f29a7a8e74bcb1d8271"
+    },
+    {
+     "at": "2024-12-27T03:35:39Z",
+     "message": "feat: update",
+     "url": "https://github.com/korczis/u-tygra/commit/19cc6900a2023531eff57360a4e1ed87e826cb97"
+    },
+    {
+     "at": "2024-12-27T03:25:11Z",
+     "message": "feat: add README.md",
+     "url": "https://github.com/korczis/u-tygra/commit/ce57c734356fe08346d18d19fa897892125b958f"
+    },
+    {
+     "at": "2024-12-27T03:23:50Z",
+     "message": "feat: initial commit",
+     "url": "https://github.com/korczis/u-tygra/commit/2230129dce1dfae26e448d020774aedddf987c2c"
+    }
+   ],
    "languages": [
     {
      "name": "JavaScript",
@@ -1118,6 +3874,23 @@
    "created_at": "2025-05-12T01:33:56.421Z",
    "last_commit": "2025-05-12T03:47:02.000+02:00",
    "last_message": "feat: initial commit",
+   "commits": [
+    {
+     "at": "2025-05-12T03:47:02.000+02:00",
+     "message": "feat: initial commit",
+     "url": "https://gitlab.com/korczis/corvidae/-/commit/2ab3bd80a4ba0b6f145f4dfcc3d706bfedc6f0b4"
+    },
+    {
+     "at": "2025-05-12T03:42:24.000+02:00",
+     "message": "feat: initial commit",
+     "url": "https://gitlab.com/korczis/corvidae/-/commit/228fde82cc4608d0b9cc840c62dae12e536e80c1"
+    },
+    {
+     "at": "2025-05-12T03:38:21.000+02:00",
+     "message": "feat: initial commit",
+     "url": "https://gitlab.com/korczis/corvidae/-/commit/e334f488c92c2f31215aa799704a982603ab547e"
+    }
+   ],
    "languages": [
     {
      "name": "TeX",
@@ -1150,6 +3923,13 @@
    "created_at": "2025-04-25T11:08:12Z",
    "last_commit": "2025-04-25T11:08:12Z",
    "last_message": "Initial commit",
+   "commits": [
+    {
+     "at": "2025-04-25T11:08:12Z",
+     "message": "Initial commit",
+     "url": "https://github.com/korczis/cognitive-reasoning/commit/7b33826af208c2b97ea272c2f79311a3aca2bbbd"
+    }
+   ],
    "languages": [],
    "readme": null,
    "topics": [],
@@ -1169,6 +3949,13 @@
    "created_at": "2025-03-14T02:08:33Z",
    "last_commit": "2025-03-14T02:08:36Z",
    "last_message": "Initial commit",
+   "commits": [
+    {
+     "at": "2025-03-14T02:08:36Z",
+     "message": "Initial commit",
+     "url": "https://github.com/korczis/prismatic-blog/commit/82b64b9e7b5593dab43306be70f1f8b0aeb6f659"
+    }
+   ],
    "languages": [
     {
      "name": "Dockerfile",
@@ -1193,6 +3980,53 @@
    "created_at": "2024-10-24T15:38:17.529Z",
    "last_commit": "2024-11-29T06:06:28.000+01:00",
    "last_message": "feat: tweak loading url",
+   "commits": [
+    {
+     "at": "2024-11-29T06:06:28.000+01:00",
+     "message": "feat: tweak loading url",
+     "url": "https://gitlab.com/korczis/kuzu-ex/-/commit/94a501da8eb51e16c33c89b214a7a9ca51fe6bf4"
+    },
+    {
+     "at": "2024-11-29T01:13:19.000+01:00",
+     "message": "feat: various improvemenets",
+     "url": "https://gitlab.com/korczis/kuzu-ex/-/commit/b40d77bf4cfa2bf0664977ef268fbb1a555cc42e"
+    },
+    {
+     "at": "2024-10-25T00:52:28.000+02:00",
+     "message": "feat: add minimalistic query engine spec / docs",
+     "url": "https://gitlab.com/korczis/kuzu-ex/-/commit/a2e5648e53612f7c47512c34d914d2257fed3dbd"
+    },
+    {
+     "at": "2024-10-25T00:47:12.000+02:00",
+     "message": "feat: add minimalistic docs",
+     "url": "https://gitlab.com/korczis/kuzu-ex/-/commit/6b275a8606c874a84eee6bfb8666dd50abe7ae12"
+    },
+    {
+     "at": "2024-10-25T00:44:51.000+02:00",
+     "message": "feat: add some docs",
+     "url": "https://gitlab.com/korczis/kuzu-ex/-/commit/cf6df6cb01879c4f6a799173ad0a0800ac662c8b"
+    },
+    {
+     "at": "2024-10-24T23:43:07.000+02:00",
+     "message": "feat: minimalistic example",
+     "url": "https://gitlab.com/korczis/kuzu-ex/-/commit/5ce1b1ef96d1a454328fc14fa6e568a291f50a0e"
+    },
+    {
+     "at": "2024-10-24T23:24:45.000+02:00",
+     "message": "feat: minimalistic prototype",
+     "url": "https://gitlab.com/korczis/kuzu-ex/-/commit/0dbd72dff166373b50c07d6f05e4cca485980ae3"
+    },
+    {
+     "at": "2024-10-24T18:02:29.000+02:00",
+     "message": "initial commit",
+     "url": "https://gitlab.com/korczis/kuzu-ex/-/commit/a633ff6c797a3690eda5de0da958542ab58723d4"
+    },
+    {
+     "at": "2024-10-24T17:41:12.000+02:00",
+     "message": "feat: initial commit",
+     "url": "https://gitlab.com/korczis/kuzu-ex/-/commit/d11593f27e315cf59b456f62987fd1dd28d4ac02"
+    }
+   ],
    "languages": [
     {
      "name": "Elixir",
@@ -1221,6 +4055,83 @@
    "created_at": "2024-10-18T17:45:41.560Z",
    "last_commit": "2024-10-19T17:37:57.000+02:00",
    "last_message": "feat: update doc",
+   "commits": [
+    {
+     "at": "2024-10-19T17:37:57.000+02:00",
+     "message": "feat: update doc",
+     "url": "https://gitlab.com/korczis/dispatcher/-/commit/f4747a1d371747163eb252be9042895f57417be2"
+    },
+    {
+     "at": "2024-10-19T16:38:38.000+02:00",
+     "message": "add more docs",
+     "url": "https://gitlab.com/korczis/dispatcher/-/commit/83a91ab4d5bc9636a641c9a653d5c856259bca3f"
+    },
+    {
+     "at": "2024-10-19T16:38:18.000+02:00",
+     "message": "add more docs",
+     "url": "https://gitlab.com/korczis/dispatcher/-/commit/309649b3a8906d9fe7bc27713d6ec769d6d3d699"
+    },
+    {
+     "at": "2024-10-19T16:36:24.000+02:00",
+     "message": "add more docs",
+     "url": "https://gitlab.com/korczis/dispatcher/-/commit/b1fd387a17731c2539bd4207146086431d24a838"
+    },
+    {
+     "at": "2024-10-19T16:35:12.000+02:00",
+     "message": "feat: add more docs",
+     "url": "https://gitlab.com/korczis/dispatcher/-/commit/40633e15fe0a25dce60284a0b9be8b667cc71f53"
+    },
+    {
+     "at": "2024-10-19T16:34:11.000+02:00",
+     "message": "add more docs",
+     "url": "https://gitlab.com/korczis/dispatcher/-/commit/e4af9ed46885df17ea4dbdf762fdbf187f45ff86"
+    },
+    {
+     "at": "2024-10-19T16:25:47.000+02:00",
+     "message": "feat: updated README.md",
+     "url": "https://gitlab.com/korczis/dispatcher/-/commit/58415b4890529aaee79f1bc6f2fd3cf3ce9ded41"
+    },
+    {
+     "at": "2024-10-18T20:58:41.000+02:00",
+     "message": "feat: fix ci",
+     "url": "https://gitlab.com/korczis/dispatcher/-/commit/54d45e3d75b93b73deb96c41f5503378727f300b"
+    },
+    {
+     "at": "2024-10-18T20:57:13.000+02:00",
+     "message": "feat: use node 20",
+     "url": "https://gitlab.com/korczis/dispatcher/-/commit/a97501bfbad62999f46c63584719d900340c2b9f"
+    },
+    {
+     "at": "2024-10-18T20:56:05.000+02:00",
+     "message": "feat: add tests",
+     "url": "https://gitlab.com/korczis/dispatcher/-/commit/717f2897a9aca61216be34d150f11da7b201db73"
+    },
+    {
+     "at": "2024-10-18T20:46:18.000+02:00",
+     "message": "feat: add test",
+     "url": "https://gitlab.com/korczis/dispatcher/-/commit/852819e4bce8bd988b5bc289f1b79996623f8594"
+    },
+    {
+     "at": "2024-10-18T20:28:08.000+02:00",
+     "message": "feat: updated README.md",
+     "url": "https://gitlab.com/korczis/dispatcher/-/commit/0a22928a5bad3660b2aa7689972570643374d979"
+    },
+    {
+     "at": "2024-10-18T20:14:01.000+02:00",
+     "message": "feat: add banner",
+     "url": "https://gitlab.com/korczis/dispatcher/-/commit/e7f8d3852f5d24488a53ecbf8becb76b79c734ae"
+    },
+    {
+     "at": "2024-10-18T20:09:11.000+02:00",
+     "message": "feat: initial commit",
+     "url": "https://gitlab.com/korczis/dispatcher/-/commit/7dfb414dd4675a1ddd7607832b62a42d5fe55200"
+    },
+    {
+     "at": "2024-10-18T19:55:27.000+02:00",
+     "message": "feat: initial commit",
+     "url": "https://gitlab.com/korczis/dispatcher/-/commit/a3b59a3a4465033a8ca431aa737558cf9725be3c"
+    }
+   ],
    "languages": [
     {
      "name": "TypeScript",
@@ -1249,6 +4160,13 @@
    "created_at": "2024-10-01T18:38:31Z",
    "last_commit": "2024-10-01T18:40:56Z",
    "last_message": "first commit",
+   "commits": [
+    {
+     "at": "2024-10-01T18:40:56Z",
+     "message": "first commit",
+     "url": "https://github.com/korczis/tap/commit/a22f94143f3a4c53eb540ac540269d79f040033c"
+    }
+   ],
    "languages": [],
    "readme": null,
    "topics": [],
@@ -1268,6 +4186,158 @@
    "created_at": "2024-09-15T21:10:06Z",
    "last_commit": "2024-09-16T14:30:54Z",
    "last_message": "feat: add OG tags",
+   "commits": [
+    {
+     "at": "2024-09-16T14:30:54Z",
+     "message": "feat: add OG tags",
+     "url": "https://github.com/korczis/bubbler/commit/c9fff1ce7026eaa7001212272bef0aa661d04813"
+    },
+    {
+     "at": "2024-09-16T14:30:15Z",
+     "message": "feat: add OG tags",
+     "url": "https://github.com/korczis/bubbler/commit/f58f9ab97a076db71e6f2fc32548229f6ee5ba8a"
+    },
+    {
+     "at": "2024-09-16T10:38:02Z",
+     "message": "feat: add OG tags",
+     "url": "https://github.com/korczis/bubbler/commit/0752dbc81f0d94996e8496ce20dea2bc74767c45"
+    },
+    {
+     "at": "2024-09-16T10:20:11Z",
+     "message": "feat: add OG tags",
+     "url": "https://github.com/korczis/bubbler/commit/7269f4516241fcfbae8bab7c4404d831724b1cea"
+    },
+    {
+     "at": "2024-09-16T09:57:42Z",
+     "message": "feat: add OG tags",
+     "url": "https://github.com/korczis/bubbler/commit/598aea39b2787cd6f68637ed8e811f2694061315"
+    },
+    {
+     "at": "2024-09-16T09:21:14Z",
+     "message": "feat: add OG tags",
+     "url": "https://github.com/korczis/bubbler/commit/6d43dee38507fb693cb4b0c9f633a70df2526e76"
+    },
+    {
+     "at": "2024-09-16T09:13:46Z",
+     "message": "feat: add OG tags",
+     "url": "https://github.com/korczis/bubbler/commit/424b9cca7fdce4124cf7ec7ae5ea71751f502884"
+    },
+    {
+     "at": "2024-09-16T09:05:06Z",
+     "message": "feat: add OG tags",
+     "url": "https://github.com/korczis/bubbler/commit/3111c0fa67dfbf574f07ea72a7ff5821208c2e0c"
+    },
+    {
+     "at": "2024-09-16T08:47:57Z",
+     "message": "feat: add OG tags",
+     "url": "https://github.com/korczis/bubbler/commit/c549c46359f4ef87ca9ec329c4da9cfd31717bba"
+    },
+    {
+     "at": "2024-09-16T08:40:35Z",
+     "message": "feat: add OG tags",
+     "url": "https://github.com/korczis/bubbler/commit/33ae225c383faf623505c3e5834d8efc3b44f500"
+    },
+    {
+     "at": "2024-09-16T07:20:57Z",
+     "message": "feat: add OG tags",
+     "url": "https://github.com/korczis/bubbler/commit/b9f1db578bb67d0f2bdff14d0cbb865e2467627c"
+    },
+    {
+     "at": "2024-09-16T01:37:45Z",
+     "message": "feat: add OG tags",
+     "url": "https://github.com/korczis/bubbler/commit/a281c9294745ee85b13fde0b80376fc85fca7fc9"
+    },
+    {
+     "at": "2024-09-16T01:24:31Z",
+     "message": "feat: add OG tags",
+     "url": "https://github.com/korczis/bubbler/commit/07cf5afc4d76f510e1147e9ffa1d4cd03ac7314b"
+    },
+    {
+     "at": "2024-09-16T01:13:03Z",
+     "message": "feat: add OG tags",
+     "url": "https://github.com/korczis/bubbler/commit/831c281e376899c44c0d5dc6f9d2a3a01f62d043"
+    },
+    {
+     "at": "2024-09-16T00:59:19Z",
+     "message": "feat: add OG tags",
+     "url": "https://github.com/korczis/bubbler/commit/5c205c526c0f091d12eb9ada17e27dae66c52724"
+    },
+    {
+     "at": "2024-09-16T00:54:20Z",
+     "message": "feat: add OG tags",
+     "url": "https://github.com/korczis/bubbler/commit/e41bc3f1c720ca6a25d13924ce38606a158d8e5a"
+    },
+    {
+     "at": "2024-09-16T00:43:29Z",
+     "message": "feat: add OG tags",
+     "url": "https://github.com/korczis/bubbler/commit/430d25e4f9f26499f610e5e0270a50c569affc67"
+    },
+    {
+     "at": "2024-09-16T00:24:55Z",
+     "message": "feat: add OG tags",
+     "url": "https://github.com/korczis/bubbler/commit/f9357fa9bac864a2ab8f04459c50340f246d319b"
+    },
+    {
+     "at": "2024-09-16T00:21:47Z",
+     "message": "feat: add OG tags",
+     "url": "https://github.com/korczis/bubbler/commit/445240e66cd523a30cebaa0db2c7313eda48911d"
+    },
+    {
+     "at": "2024-09-16T00:20:58Z",
+     "message": "feat: add OG tags",
+     "url": "https://github.com/korczis/bubbler/commit/8dedfe31911b983d3d835fe52bd47a3d8f1bc603"
+    },
+    {
+     "at": "2024-09-16T00:16:28Z",
+     "message": "feat: add OG tags",
+     "url": "https://github.com/korczis/bubbler/commit/7326a96d63b043ac2b614b0f08a0028038b74c15"
+    },
+    {
+     "at": "2024-09-16T00:12:22Z",
+     "message": "feat: add OG tags",
+     "url": "https://github.com/korczis/bubbler/commit/d80ab2782c7cf897c9c60f3903ad59f547bcfe4a"
+    },
+    {
+     "at": "2024-09-16T00:04:27Z",
+     "message": "feat: add OG tags",
+     "url": "https://github.com/korczis/bubbler/commit/7186c854e7aca14d3b6ed1b783c6080b37f480f6"
+    },
+    {
+     "at": "2024-09-16T00:02:16Z",
+     "message": "feat: add OG tags",
+     "url": "https://github.com/korczis/bubbler/commit/a9bbf2f73cdf511fadc6ceeac46da16c626747c8"
+    },
+    {
+     "at": "2024-09-15T23:49:28Z",
+     "message": "feat: add OG tags",
+     "url": "https://github.com/korczis/bubbler/commit/a1e458ca2335f9f50e34327343af31df965335d9"
+    },
+    {
+     "at": "2024-09-15T23:34:14Z",
+     "message": "feat: add OG tags",
+     "url": "https://github.com/korczis/bubbler/commit/03bc190223a23629bced10a16868fca1b9f686ce"
+    },
+    {
+     "at": "2024-09-15T23:29:48Z",
+     "message": "feat: add OG tags",
+     "url": "https://github.com/korczis/bubbler/commit/1f3d96e54bf5f0dc10ccb77e99a490ba14552667"
+    },
+    {
+     "at": "2024-09-15T23:28:49Z",
+     "message": "feat: add OG tags",
+     "url": "https://github.com/korczis/bubbler/commit/18dedb04196350809324bdc939c2207ef9b0cdf7"
+    },
+    {
+     "at": "2024-09-15T23:26:37Z",
+     "message": "feat: add OG tags",
+     "url": "https://github.com/korczis/bubbler/commit/9887439f6448150e07019fdb19aed2bc8a8e6977"
+    },
+    {
+     "at": "2024-09-15T23:22:54Z",
+     "message": "feat: add OG tags",
+     "url": "https://github.com/korczis/bubbler/commit/6e7565df3f6e5af469c05ec5aff92556184a9338"
+    }
+   ],
    "languages": [
     {
      "name": "JavaScript",
@@ -1300,6 +4370,18 @@
    "created_at": "2024-08-01T10:19:22.386Z",
    "last_commit": "2024-08-01T13:50:56.000+02:00",
    "last_message": "initial version",
+   "commits": [
+    {
+     "at": "2024-08-01T13:50:56.000+02:00",
+     "message": "initial version",
+     "url": "https://gitlab.com/korczis/job-processor/-/commit/6b5aae76a28a9d3836955393dad2defc25aeeeab"
+    },
+    {
+     "at": "2024-08-01T10:19:23.000+00:00",
+     "message": "Configure SAST in `.gitlab-ci.yml`, creating this file if it does not already exist",
+     "url": "https://gitlab.com/korczis/job-processor/-/commit/d6208e29dcce974fcf2175bbbe9afee1fabb8102"
+    }
+   ],
    "languages": [
     {
      "name": "Elixir",
@@ -1324,6 +4406,13 @@
    "created_at": "2024-04-27T13:20:36Z",
    "last_commit": "2024-04-27T13:20:36Z",
    "last_message": "Initial commit",
+   "commits": [
+    {
+     "at": "2024-04-27T13:20:36Z",
+     "message": "Initial commit",
+     "url": "https://github.com/korczis/pissaleck/commit/3cdeb24d69b87b029cd52a023b16d0064e62f633"
+    }
+   ],
    "languages": [],
    "readme": null,
    "topics": [],
@@ -1343,6 +4432,143 @@
    "created_at": "2024-04-23T21:19:13.755Z",
    "last_commit": "2024-04-24T22:43:37.000+02:00",
    "last_message": "Disable build image",
+   "commits": [
+    {
+     "at": "2024-04-24T22:43:37.000+02:00",
+     "message": "Disable build image",
+     "url": "https://gitlab.com/korczis/simple_geocoder/-/commit/c2d277fb28e7c21c1dc9ec5de0c29c00cc749ee4"
+    },
+    {
+     "at": "2024-04-24T22:40:52.000+02:00",
+     "message": "Add build_image",
+     "url": "https://gitlab.com/korczis/simple_geocoder/-/commit/b99a22f7dc446613b9ff7e9670f38687ee3e7f78"
+    },
+    {
+     "at": "2024-04-24T22:35:03.000+02:00",
+     "message": "Tweak DIND",
+     "url": "https://gitlab.com/korczis/simple_geocoder/-/commit/f9d9e2996ce0ec818138deb508424a5e9920a5e7"
+    },
+    {
+     "at": "2024-04-24T22:31:50.000+02:00",
+     "message": "Use docker:dind CI/CD service",
+     "url": "https://gitlab.com/korczis/simple_geocoder/-/commit/3237d8fe3a2140175f0d640a7a4cd4a016803457"
+    },
+    {
+     "at": "2024-04-24T22:28:35.000+02:00",
+     "message": "Disable ceredo",
+     "url": "https://gitlab.com/korczis/simple_geocoder/-/commit/ee981706c13d333455123871370af8cdce4553b0"
+    },
+    {
+     "at": "2024-04-24T22:27:55.000+02:00",
+     "message": "Disable docker-compose part of CI/CD",
+     "url": "https://gitlab.com/korczis/simple_geocoder/-/commit/5a358e2e867da699482edfd99b8ac8aafb0a01a3"
+    },
+    {
+     "at": "2024-04-24T22:27:02.000+02:00",
+     "message": "Add mix.credo to CI/CD",
+     "url": "https://gitlab.com/korczis/simple_geocoder/-/commit/5bd09558f9fb7c3c472c30440b239e20ba7c5d45"
+    },
+    {
+     "at": "2024-04-24T22:22:18.000+02:00",
+     "message": "Disable tests - just compile with --strict --all flags",
+     "url": "https://gitlab.com/korczis/simple_geocoder/-/commit/4def4521b91f89f4865b2b4f0fa32b838696b77b"
+    },
+    {
+     "at": "2024-04-24T22:19:52.000+02:00",
+     "message": "Add missing image for .gitlab",
+     "url": "https://gitlab.com/korczis/simple_geocoder/-/commit/3bef5bba5aa04c34c1e76299b6c0d87468c6c6a5"
+    },
+    {
+     "at": "2024-04-24T22:18:37.000+02:00",
+     "message": "Adopt ChatGPT proposed changes before investigating",
+     "url": "https://gitlab.com/korczis/simple_geocoder/-/commit/b8a77a29f0f2647790c337d56d734949f84a7caf"
+    },
+    {
+     "at": "2024-04-24T22:16:28.000+02:00",
+     "message": "Git ignore processed example csv file",
+     "url": "https://gitlab.com/korczis/simple_geocoder/-/commit/4ce9eb4d1bf1d80a711a295dd00a91a84b571484"
+    },
+    {
+     "at": "2024-04-24T22:15:54.000+02:00",
+     "message": "Fix testing data",
+     "url": "https://gitlab.com/korczis/simple_geocoder/-/commit/a381d508854b05ddbb4df01749bd3cf01b775d04"
+    },
+    {
+     "at": "2024-04-24T22:15:34.000+02:00",
+     "message": "Update .gitlab-ci.yml",
+     "url": "https://gitlab.com/korczis/simple_geocoder/-/commit/fe7b27cd8b7b81f1a32b6b5e72f8a15cae74344a"
+    },
+    {
+     "at": "2024-04-24T22:15:25.000+02:00",
+     "message": "Disable obsolete test",
+     "url": "https://gitlab.com/korczis/simple_geocoder/-/commit/fc35fb5cdd61c4cbe480f3e556ff6a82d98d3bf7"
+    },
+    {
+     "at": "2024-04-24T22:15:07.000+02:00",
+     "message": "Add generated release files",
+     "url": "https://gitlab.com/korczis/simple_geocoder/-/commit/b4efb008b1a17e48dbb22e1d2f0d66e35188c4ba"
+    },
+    {
+     "at": "2024-04-24T22:09:47.000+02:00",
+     "message": "Skeleton of .gitlab-ci.yml",
+     "url": "https://gitlab.com/korczis/simple_geocoder/-/commit/4c6579f683113974d406a8fed44ca5450e1ec441"
+    },
+    {
+     "at": "2024-04-24T20:53:10.000+02:00",
+     "message": "First public version",
+     "url": "https://gitlab.com/korczis/simple_geocoder/-/commit/559180f9c7bacdd62bedac2f47a0c19ae111ebb4"
+    },
+    {
+     "at": "2024-04-24T20:49:59.000+02:00",
+     "message": "First public version",
+     "url": "https://gitlab.com/korczis/simple_geocoder/-/commit/73fa0f28dca42eaf47b90ce96dc05c2e3a7f3e19"
+    },
+    {
+     "at": "2024-04-24T19:57:44.000+02:00",
+     "message": "Calculate (and cache) route using mapy.cz v1/routing api",
+     "url": "https://gitlab.com/korczis/simple_geocoder/-/commit/59bddf95dd0bb8604b2c891bd5cf297a00f3b622"
+    },
+    {
+     "at": "2024-04-24T17:39:59.000+02:00",
+     "message": "Store to.lat, to.lon and distance.haversine in output file together with all input file fields",
+     "url": "https://gitlab.com/korczis/simple_geocoder/-/commit/af3e9648752d23a2e54c44592fffe2c19f8b0d87"
+    },
+    {
+     "at": "2024-04-24T07:44:25.000+02:00",
+     "message": "Import only czech-republic in docker-compose.yml",
+     "url": "https://gitlab.com/korczis/simple_geocoder/-/commit/47fc0588eb59728e286f88e27051e9424c5124de"
+    },
+    {
+     "at": "2024-04-24T07:33:56.000+02:00",
+     "message": "Ignore IntelliJ Idea",
+     "url": "https://gitlab.com/korczis/simple_geocoder/-/commit/74e25dfc65467589554c7bc7a294b29f46e322c3"
+    },
+    {
+     "at": "2024-04-24T07:33:20.000+02:00",
+     "message": "Introduce credo/dialyxir",
+     "url": "https://gitlab.com/korczis/simple_geocoder/-/commit/d61d791fa45e0797a00258f43869d6ac8888c8e6"
+    },
+    {
+     "at": "2024-04-24T02:55:53.000+02:00",
+     "message": "Automatically persist cache after processing of CSV",
+     "url": "https://gitlab.com/korczis/simple_geocoder/-/commit/043df8b0dacdc05a66ce163248e611097c89e8c9"
+    },
+    {
+     "at": "2024-04-24T02:40:58.000+02:00",
+     "message": "Add supersimple cache",
+     "url": "https://gitlab.com/korczis/simple_geocoder/-/commit/327abc5a2cd9a3031c717f30064bb6d1a5f4d54c"
+    },
+    {
+     "at": "2024-04-24T02:25:32.000+02:00",
+     "message": "First super simple version",
+     "url": "https://gitlab.com/korczis/simple_geocoder/-/commit/78fde1f6136019bfb51df00116909f132250389f"
+    },
+    {
+     "at": "2024-04-23T23:20:06.000+02:00",
+     "message": "Initial commit",
+     "url": "https://gitlab.com/korczis/simple_geocoder/-/commit/b22e94c916f0a27650c534796bd868e1fd8e2fdc"
+    }
+   ],
    "languages": [
     {
      "name": "Elixir",
@@ -1375,6 +4601,63 @@
    "created_at": "2024-03-20T11:21:50.379Z",
    "last_commit": "2024-04-23T22:00:08.000+02:00",
    "last_message": "logs on requests, fixed from",
+   "commits": [
+    {
+     "at": "2024-04-23T22:00:08.000+02:00",
+     "message": "logs on requests, fixed from",
+     "url": "https://gitlab.com/korczis/distance-calculator/-/commit/1dec9f65ab1e66bfafb01445fd6bee6e5557b7e9"
+    },
+    {
+     "at": "2024-04-23T19:57:21.000+02:00",
+     "message": "Use Stream.reject(&is_nil/1)",
+     "url": "https://gitlab.com/korczis/distance-calculator/-/commit/7ce27de6b4b32e37074f4ba3e4ccf91fa299f2a1"
+    },
+    {
+     "at": "2024-04-23T19:47:12.000+02:00",
+     "message": "Merge branch 'main' of gitlab.com:korczis/distance-calculator",
+     "url": "https://gitlab.com/korczis/distance-calculator/-/commit/e3b420e0aee1bafae13c8cf2fc9dc3413482eaff"
+    },
+    {
+     "at": "2024-04-23T19:37:41.000+02:00",
+     "message": "Use streams",
+     "url": "https://gitlab.com/korczis/distance-calculator/-/commit/3b8148176f8c0847b85f3b93fa5b5448d40abe6e"
+    },
+    {
+     "at": "2024-04-23T19:31:06.000+02:00",
+     "message": "feat: always geocode from \"613 00\" (children hospital), totally inefficient (geocodes still each time)",
+     "url": "https://gitlab.com/korczis/distance-calculator/-/commit/16f5029018faca96753d206b33268fbf005ce64c"
+    },
+    {
+     "at": "2024-04-23T18:01:46.000+02:00",
+     "message": "Add cache",
+     "url": "https://gitlab.com/korczis/distance-calculator/-/commit/7c80205ab27a37a2486d9c01b05dc6dbc3efe5d1"
+    },
+    {
+     "at": "2024-03-20T13:16:06.000+01:00",
+     "message": "More data",
+     "url": "https://gitlab.com/korczis/distance-calculator/-/commit/7699b9d55b824a8b14860d2bf439f1897bdc1ac1"
+    },
+    {
+     "at": "2024-03-20T13:13:35.000+01:00",
+     "message": "Process file",
+     "url": "https://gitlab.com/korczis/distance-calculator/-/commit/6a2bc76e0b425d069620b960f272c419be19a737"
+    },
+    {
+     "at": "2024-03-20T12:27:21.000+01:00",
+     "message": "Merge branch 'main' of gitlab.com:korczis/distance-calculator",
+     "url": "https://gitlab.com/korczis/distance-calculator/-/commit/bd689a8883f3875b30ed40b0129564f31d853cb8"
+    },
+    {
+     "at": "2024-03-20T12:25:37.000+01:00",
+     "message": "Initial commit",
+     "url": "https://gitlab.com/korczis/distance-calculator/-/commit/d17ae2ca72580c546bbe175a51e967fdbbc852b2"
+    },
+    {
+     "at": "2024-03-20T11:21:51.000+00:00",
+     "message": "Configure SAST in `.gitlab-ci.yml`, creating this file if it does not already exist",
+     "url": "https://gitlab.com/korczis/distance-calculator/-/commit/da010d072cc4092f2319e329fe0c9e7c2e25b5b2"
+    }
+   ],
    "languages": [
     {
      "name": "Elixir",
@@ -1399,6 +4682,38 @@
    "created_at": "2024-04-17T15:17:04.884Z",
    "last_commit": "2024-04-17T15:33:10.000+00:00",
    "last_message": "Update README.md",
+   "commits": [
+    {
+     "at": "2024-04-17T15:33:10.000+00:00",
+     "message": "Update README.md",
+     "url": "https://gitlab.com/korczis/marketing-ideas/-/commit/f60bb68f8bcfc27a4623ce710ee0e6735079b037"
+    },
+    {
+     "at": "2024-04-17T15:24:20.000+00:00",
+     "message": "Update README.md",
+     "url": "https://gitlab.com/korczis/marketing-ideas/-/commit/a8e2fe60390093132ed0d256f71e56df600b43b2"
+    },
+    {
+     "at": "2024-04-17T15:23:39.000+00:00",
+     "message": "Update README.md",
+     "url": "https://gitlab.com/korczis/marketing-ideas/-/commit/5cb4e4ad7128dbc4bc8ddfbc14d1dd2fba42339b"
+    },
+    {
+     "at": "2024-04-17T15:19:44.000+00:00",
+     "message": "Add new file",
+     "url": "https://gitlab.com/korczis/marketing-ideas/-/commit/a03254659503635f471f236378f61652decbc08d"
+    },
+    {
+     "at": "2024-04-17T15:17:26.000+00:00",
+     "message": "Add new directory",
+     "url": "https://gitlab.com/korczis/marketing-ideas/-/commit/94103e3cceab4751c2fc332a5664fb1140a93746"
+    },
+    {
+     "at": "2024-04-17T15:17:05.000+00:00",
+     "message": "Initial commit",
+     "url": "https://gitlab.com/korczis/marketing-ideas/-/commit/1d23b0b1726fd6faa79b5f6c0bd10caf736afa63"
+    }
+   ],
    "languages": [],
    "readme": null,
    "topics": [],
@@ -1418,6 +4733,18 @@
    "created_at": "2024-03-24T22:10:44.078Z",
    "last_commit": "2024-03-25T17:33:15.000+01:00",
    "last_message": "Initial commit",
+   "commits": [
+    {
+     "at": "2024-03-25T17:33:15.000+01:00",
+     "message": "Initial commit",
+     "url": "https://gitlab.com/korczis/pdf_renderer/-/commit/5cea0e5e023a69d7872688dc20acf685b2025a54"
+    },
+    {
+     "at": "2024-03-24T20:36:09.000+01:00",
+     "message": "Create .dockerignore and .gitignore",
+     "url": "https://gitlab.com/korczis/pdf_renderer/-/commit/16a99ef1558eb1dc9170963f246ed260bc975488"
+    }
+   ],
    "languages": [
     {
      "name": "Python",
@@ -1450,6 +4777,23 @@
    "created_at": "2023-02-18T16:17:27Z",
    "last_commit": "2023-02-18T16:21:16Z",
    "last_message": "Add README.md",
+   "commits": [
+    {
+     "at": "2023-02-18T16:21:16Z",
+     "message": "Add README.md",
+     "url": "https://github.com/korczis/MindScape/commit/a9bdadd881dc061bce6d614214c944342eb8af19"
+    },
+    {
+     "at": "2023-02-18T16:20:51Z",
+     "message": "Add README.md",
+     "url": "https://github.com/korczis/MindScape/commit/879a4b0ab17113ad2c62cffab36bc430f2d7aac5"
+    },
+    {
+     "at": "2023-02-18T16:20:19Z",
+     "message": "Add README.md",
+     "url": "https://github.com/korczis/MindScape/commit/67067c59e94357d0e4699636f33a8926bd7a0a65"
+    }
+   ],
    "languages": [],
    "readme": "MindScape is an AI-powered platform for mental health diagnosis and treatment. It uses machine learning algorithms and virtual reality technology to create personalized therapy experiences for patients, and provides mental health professionals with a suite of tools for analysis and treatment planning.",
    "topics": [],
@@ -1469,6 +4813,118 @@
    "created_at": "2023-01-26T18:14:07Z",
    "last_commit": "2023-01-27T17:10:03Z",
    "last_message": "simple cache",
+   "commits": [
+    {
+     "at": "2023-01-27T17:10:03Z",
+     "message": "simple cache",
+     "url": "https://github.com/korczis/el-magico-cache/commit/309449fa3cdaebd8a05a0815e6b61cc4a1d59779"
+    },
+    {
+     "at": "2023-01-27T06:02:42Z",
+     "message": "add some doc",
+     "url": "https://github.com/korczis/el-magico-cache/commit/e47b79d55388d3673febb65343602ae376bfcef7"
+    },
+    {
+     "at": "2023-01-27T01:08:06Z",
+     "message": "dd scripts",
+     "url": "https://github.com/korczis/el-magico-cache/commit/27b9b198ea9c07e4122158a40cf19779fc6b85f0"
+    },
+    {
+     "at": "2023-01-26T22:44:50Z",
+     "message": "add release",
+     "url": "https://github.com/korczis/el-magico-cache/commit/caca5a1e9105d2c561710023f74abcea2587cfc7"
+    },
+    {
+     "at": "2023-01-26T22:36:06Z",
+     "message": "add telemetry packages",
+     "url": "https://github.com/korczis/el-magico-cache/commit/ff38ec8af265d48c6ac891a2058ecc743d84715b"
+    },
+    {
+     "at": "2023-01-26T22:32:26Z",
+     "message": "fix typo",
+     "url": "https://github.com/korczis/el-magico-cache/commit/972734bc5271180bff9ab87f04b99970d3f4a390"
+    },
+    {
+     "at": "2023-01-26T22:32:17Z",
+     "message": "fix typo",
+     "url": "https://github.com/korczis/el-magico-cache/commit/262da0835652a71727ac4efbc25f2bdadf774f3a"
+    },
+    {
+     "at": "2023-01-26T22:30:52Z",
+     "message": "fix typo",
+     "url": "https://github.com/korczis/el-magico-cache/commit/6964f9769ac90a117ad0c53a3864acbda66b7436"
+    },
+    {
+     "at": "2023-01-26T22:30:16Z",
+     "message": "fix typo",
+     "url": "https://github.com/korczis/el-magico-cache/commit/799c6c54271f9a7d4479c87a7d037cdaa06e4287"
+    },
+    {
+     "at": "2023-01-26T22:29:17Z",
+     "message": "fix typo",
+     "url": "https://github.com/korczis/el-magico-cache/commit/25e641dfcedd1d53e53f926fdb83b02ac4ebbc4f"
+    },
+    {
+     "at": "2023-01-26T22:26:34Z",
+     "message": "fix typo",
+     "url": "https://github.com/korczis/el-magico-cache/commit/28ed1f25cf32d883ce3c37b0f77db48492c3ceda"
+    },
+    {
+     "at": "2023-01-26T22:26:01Z",
+     "message": "fix typo",
+     "url": "https://github.com/korczis/el-magico-cache/commit/459e2da099f7f912adf65c8cb1ca14eda3838faf"
+    },
+    {
+     "at": "2023-01-26T22:25:36Z",
+     "message": "fix typo",
+     "url": "https://github.com/korczis/el-magico-cache/commit/9510c9ae31044d2a6d15f4560d4eea83088123b5"
+    },
+    {
+     "at": "2023-01-26T22:25:02Z",
+     "message": "fix typo",
+     "url": "https://github.com/korczis/el-magico-cache/commit/615bbf7d174f7d920641ad39525ab3cc4c22a813"
+    },
+    {
+     "at": "2023-01-26T22:24:26Z",
+     "message": "enable ci for master branch",
+     "url": "https://github.com/korczis/el-magico-cache/commit/266322baa01fab4fa263ad4714ae75673f9b1d57"
+    },
+    {
+     "at": "2023-01-26T22:20:53Z",
+     "message": "enable ci for master branch",
+     "url": "https://github.com/korczis/el-magico-cache/commit/a8764c8576aa45cfb2a84f2e09b43062bd7f9ef3"
+    },
+    {
+     "at": "2023-01-26T22:18:03Z",
+     "message": "deployment related files",
+     "url": "https://github.com/korczis/el-magico-cache/commit/dd9fa43c249e2eefe554b99364ab8761e21a50b9"
+    },
+    {
+     "at": "2023-01-26T22:10:38Z",
+     "message": "initial commit",
+     "url": "https://github.com/korczis/el-magico-cache/commit/4d3d62648f5dcb0012e64917dd44a28cf771759e"
+    },
+    {
+     "at": "2023-01-26T19:57:40Z",
+     "message": "Update workflow.yml",
+     "url": "https://github.com/korczis/el-magico-cache/commit/90eeb1222aa9fe8f57422de1568bb1bbd7c8cd72"
+    },
+    {
+     "at": "2023-01-26T19:44:46Z",
+     "message": "fix build",
+     "url": "https://github.com/korczis/el-magico-cache/commit/8d3ca9ddbcffb4771e3f0c4a432acaafb32a99d9"
+    },
+    {
+     "at": "2023-01-26T18:31:02Z",
+     "message": "initial commit",
+     "url": "https://github.com/korczis/el-magico-cache/commit/afa367aa6d8de928fc919c05fd0ff07edff6293f"
+    },
+    {
+     "at": "2023-01-26T18:14:07Z",
+     "message": "Initial commit",
+     "url": "https://github.com/korczis/el-magico-cache/commit/3195f9bd7beb3708473ad936e37d5bef6457fdf3"
+    }
+   ],
    "languages": [
     {
      "name": "Elixir",

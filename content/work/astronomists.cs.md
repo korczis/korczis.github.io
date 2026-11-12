@@ -15,6 +15,15 @@ og_image = "og/cs-work-astronomists.png"
 schema = "project"
 keywords = ["astronomists", "Nástroje", "Python", "HTML", "TypeScript", "Tomáš Korčák"]
 terms = ["python", "html", "typescript", "shell", "javascript", "css", "open-source", "github-pages", "repository", "commit"]
+
+[[extra.viz]]
+kind = "pulse"
+source = "work.commits"
+title = "viz_commits_title"
+lead = "viz_commits_lead_live"
+span = 3
+height = "md"
+tone = "night"
 +++
 **astronomists** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [Python](@/glossary/python.cs.md) (41,1 %), dále [HTML](@/glossary/html.cs.md), [TypeScript](@/glossary/typescript.cs.md) a [Shell](@/glossary/shell.cs.md).
 
@@ -22,4 +31,4 @@ terms = ["python", "html", "typescript", "shell", "javascript", "css", "open-sou
 
 Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/astronomists/>.
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu; pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 28 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

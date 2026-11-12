@@ -15,9 +15,18 @@ og_image = "og/work-edna.png"
 schema = "project"
 keywords = ["edna", "AI engineering", "Tomas Korcak"]
 terms = ["ai-agent", "repository", "commit", "open-source"]
+
+[[extra.viz]]
+kind = "pulse"
+source = "work.commits"
+title = "viz_commits_title"
+lead = "viz_commits_lead_snapshot"
+span = 3
+height = "md"
+tone = "night"
 +++
 **edna** is a project in [AI engineering](@/projects/ai.md).
 
 The [repository](@/glossary/repository.md) was created in September 2025; its latest [commit](@/glossary/commit.md) is from 2 September 2025. It reads “Edit README.md”. That places it among the projects active in the last 24 months.
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code; the concepts below are explained in the [glossary](@/glossary/_index.md).
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 2 commits as a heartbeat, one lane per commit type (feat, fix, docs…), from a snapshot refreshed every six hours. The concepts below are explained in the [glossary](@/glossary/_index.md).

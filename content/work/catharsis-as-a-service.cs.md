@@ -15,6 +15,15 @@ og_image = "og/cs-work-catharsis-as-a-service.png"
 schema = "project"
 keywords = ["Catharsis as a Service", "Média a umění", "HTML", "Python", "JavaScript", "Tomáš Korčák"]
 terms = ["html", "python", "javascript", "css", "rust", "shell", "data-visualisation", "github-pages", "repository", "commit", "open-source"]
+
+[[extra.viz]]
+kind = "pulse"
+source = "work.commits"
+title = "viz_commits_title"
+lead = "viz_commits_lead_live"
+span = 3
+height = "md"
+tone = "night"
 +++
 **Catharsis as a Service** je projekt z kategorie [Média a umění](@/projects/media.cs.md). Jeho kód je napsaný hlavně v jazyce [HTML](@/glossary/html.cs.md) (34,3 %), dále [Python](@/glossary/python.cs.md), [JavaScript](@/glossary/javascript.cs.md) a [CSS](@/glossary/css.cs.md).
 
@@ -22,4 +31,4 @@ terms = ["html", "python", "javascript", "css", "rust", "shell", "data-visualisa
 
 Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/catharsis-as-a-service/>.
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu; pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 25 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

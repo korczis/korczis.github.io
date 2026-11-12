@@ -15,9 +15,18 @@ og_image = "og/cs-work-distance-calculator.png"
 schema = "project"
 keywords = ["distance-calculator", "Věda a vizualizace", "Elixir", "Tomáš Korčák"]
 terms = ["elixir", "data-visualisation", "repository", "commit", "open-source"]
+
+[[extra.viz]]
+kind = "pulse"
+source = "work.commits"
+title = "viz_commits_title"
+lead = "viz_commits_lead_snapshot"
+span = 3
+height = "md"
+tone = "night"
 +++
 **distance-calculator** je projekt z kategorie [Věda a vizualizace](@/projects/science.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (100 %).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 20. března 2024; poslední [commit](@/glossary/commit.cs.md) je z 23. dubna 2024. Zní „logs on requests, fixed from“. Patří tak mezi projekty aktivní za posledních 48 měsíců.
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu; pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 11 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…), ze snímku obnovovaného každých šest hodin. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

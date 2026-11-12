@@ -15,9 +15,18 @@ og_image = "og/work-pdf-renderer.png"
 schema = "project"
 keywords = ["pdf_renderer", "Tools", "Python", "Dockerfile", "Makefile", "Tomas Korcak"]
 terms = ["python", "dockerfile", "open-source", "repository", "commit"]
+
+[[extra.viz]]
+kind = "pulse"
+source = "work.commits"
+title = "viz_commits_title"
+lead = "viz_commits_lead_snapshot"
+span = 3
+height = "md"
+tone = "night"
 +++
 **pdf\_renderer** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [Python](@/glossary/python.md) (94.2 %), with [Dockerfile](@/glossary/dockerfile.md) and Makefile.
 
 The [repository](@/glossary/repository.md) was created in March 2024; its latest [commit](@/glossary/commit.md) is from 25 March 2024. It reads “Initial commit”. That places it among the projects active in the last 48 months.
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code; the concepts below are explained in the [glossary](@/glossary/_index.md).
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 2 commits as a heartbeat, one lane per commit type (feat, fix, docs…), from a snapshot refreshed every six hours. The concepts below are explained in the [glossary](@/glossary/_index.md).

@@ -6,22 +6,31 @@ template = "work.html"
 weight = 3
 
 [taxonomies]
-tags = ["Knowledge", "Elixir", "JavaScript", "HTML"]
+tags = ["Knowledge", "Elixir", "JavaScript", "Python"]
 
 [extra]
 repo = "kompendium-epistemicke-anihilace"
 og_title = "Kompendium: A defensive taxonomy of epistemic and cognitive manipulation (Czech)."
 og_image = "og/work-kompendium-epistemicke-anihilace.png"
 schema = "project"
-keywords = ["Kompendium", "Knowledge", "Elixir", "JavaScript", "HTML", "Tomas Korcak"]
-terms = ["elixir", "javascript", "html", "python", "rust", "shell", "zola", "cytoscape-js", "apache-echarts", "alpine-js", "flowbite-pro", "github-pages", "repository", "commit", "open-source"]
-+++
-**Kompendium** is a project in [Knowledge](@/projects/knowledge.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (35.7 %), with [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md) and [Python](@/glossary/python.md).
+keywords = ["Kompendium", "Knowledge", "Elixir", "JavaScript", "Python", "Tomas Korcak"]
+terms = ["elixir", "javascript", "python", "html", "rust", "shell", "zola", "cytoscape-js", "apache-echarts", "alpine-js", "flowbite-pro", "github-pages", "repository", "commit", "open-source"]
 
-The [repository](@/glossary/repository.md) was created in November 2026; its latest [commit](@/glossary/commit.md) is from 12 November 2026. It reads “Merge branch 'fix/template-figure-gate': číslo jen v odkazu na jinou stránku není šablonové”. That places it among the projects active in the last 12 months.
+[[extra.viz]]
+kind = "pulse"
+source = "work.commits"
+title = "viz_commits_title"
+lead = "viz_commits_lead_live"
+span = 3
+height = "md"
+tone = "night"
++++
+**Kompendium** is a project in [Knowledge](@/projects/knowledge.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (35.5 %), with [JavaScript](@/glossary/javascript.md), [Python](@/glossary/python.md) and [HTML](@/glossary/html.md).
+
+The [repository](@/glossary/repository.md) was created in November 2026; its latest [commit](@/glossary/commit.md) is from 12 November 2026. It reads “docs(adr): 0013 kniha nejmenuje léky ani lékové skupiny (rozhodnutí vlastníka)”. That places it among the projects active in the last 12 months.
 
 It is built with [Zola](@/glossary/zola.md), [Cytoscape.js](@/glossary/cytoscape-js.md), [Apache ECharts](@/glossary/apache-echarts.md), [Alpine.js](@/glossary/alpine-js.md) and [Flowbite Pro](@/glossary/flowbite-pro.md).
 
 It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/kompendium-epistemicke-anihilace/>.
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code; the concepts below are explained in the [glossary](@/glossary/_index.md).
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 30 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

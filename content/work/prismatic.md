@@ -15,9 +15,18 @@ og_image = "og/work-prismatic.png"
 schema = "project"
 keywords = ["prismatic", "Tools", "Elixir", "JavaScript", "Python", "Tomas Korcak"]
 terms = ["elixir", "javascript", "python", "shell", "css", "html", "open-source", "repository", "commit"]
+
+[[extra.viz]]
+kind = "pulse"
+source = "work.commits"
+title = "viz_commits_title"
+lead = "viz_commits_lead_live"
+span = 3
+height = "md"
+tone = "night"
 +++
 **prismatic** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (78.4 %), with [JavaScript](@/glossary/javascript.md), [Python](@/glossary/python.md) and [Shell](@/glossary/shell.md).
 
 The [repository](@/glossary/repository.md) was created in July 2025; its latest [commit](@/glossary/commit.md) is from 4 August 2025. It reads “chore: updates”. That places it among the projects active in the last 24 months.
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code; the concepts below are explained in the [glossary](@/glossary/_index.md).
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 30 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

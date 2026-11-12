@@ -15,9 +15,18 @@ og_image = "og/cs-work-prismatic.png"
 schema = "project"
 keywords = ["prismatic", "Nástroje", "Elixir", "JavaScript", "Python", "Tomáš Korčák"]
 terms = ["elixir", "javascript", "python", "shell", "css", "html", "open-source", "repository", "commit"]
+
+[[extra.viz]]
+kind = "pulse"
+source = "work.commits"
+title = "viz_commits_title"
+lead = "viz_commits_lead_live"
+span = 3
+height = "md"
+tone = "night"
 +++
 **prismatic** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (78,4 %), dále [JavaScript](@/glossary/javascript.cs.md), [Python](@/glossary/python.cs.md) a [Shell](@/glossary/shell.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 24. července 2025; poslední [commit](@/glossary/commit.cs.md) je z 4. srpna 2025. Zní „chore: updates“. Patří tak mezi projekty aktivní za posledních 24 měsíců.
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu; pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 30 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

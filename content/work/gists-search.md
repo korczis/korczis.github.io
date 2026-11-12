@@ -15,6 +15,15 @@ og_image = "og/work-gists-search.png"
 schema = "project"
 keywords = ["Gists search", "Tools", "Python", "JavaScript", "HTML", "Tomas Korcak"]
 terms = ["python", "javascript", "html", "shell", "open-source", "github-pages", "repository", "commit"]
+
+[[extra.viz]]
+kind = "pulse"
+source = "work.commits"
+title = "viz_commits_title"
+lead = "viz_commits_lead_live"
+span = 3
+height = "md"
+tone = "night"
 +++
 **Gists search** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [Python](@/glossary/python.md) (58.5 %), with [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md) and Just.
 
@@ -22,4 +31,4 @@ The [repository](@/glossary/repository.md) was created in August 2026; its lates
 
 It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/gists-search/>.
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code; the concepts below are explained in the [glossary](@/glossary/_index.md).
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 2 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

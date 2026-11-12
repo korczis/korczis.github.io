@@ -15,6 +15,15 @@ og_image = "og/cs-work-majordomus-reel.png"
 schema = "project"
 keywords = ["Majordomus reel", "Média a umění", "HTML", "JavaScript", "Shell", "Tomáš Korčák"]
 terms = ["html", "javascript", "shell", "python", "data-visualisation", "github-pages", "repository", "commit", "open-source"]
+
+[[extra.viz]]
+kind = "pulse"
+source = "work.commits"
+title = "viz_commits_title"
+lead = "viz_commits_lead_live"
+span = 3
+height = "md"
+tone = "night"
 +++
 **Majordomus reel** je projekt z kategorie [Média a umění](@/projects/media.cs.md). Jeho kód je napsaný hlavně v jazyce [HTML](@/glossary/html.cs.md) (49,6 %), dále [JavaScript](@/glossary/javascript.cs.md), [Shell](@/glossary/shell.cs.md) a [Python](@/glossary/python.cs.md).
 
@@ -22,4 +31,4 @@ terms = ["html", "javascript", "shell", "python", "data-visualisation", "github-
 
 Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/majordomus-reel/>.
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu; pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 21 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

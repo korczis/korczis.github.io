@@ -130,7 +130,8 @@
                   "index.languages",
                   "index.years",
                   "index.repos",
-                  "recent.commits"
+                  "recent.commits",
+                  "work.commits"
                 ]
               },
               "title": {

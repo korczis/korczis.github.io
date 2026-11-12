@@ -1125,8 +1125,8 @@
    "keywords": [
     "nedávná práce Tomáše Korčáka",
     "korczis",
-    "sonic-playground",
     "korczis.github.io",
+    "sonic-playground",
     "kompendium-epistemicke-anihilace",
     "algoglyph",
     "oscilla",
@@ -1148,7 +1148,7 @@
     "Věda a vizualizace",
     "TypeScript",
     "Rust",
-    "HTML",
+    "JavaScript",
     "Tomáš Korčák"
    ]
   },
@@ -1406,7 +1406,7 @@
     "Znalosti",
     "Elixir",
     "JavaScript",
-    "HTML",
+    "Python",
     "Tomáš Korčák"
    ]
   },
@@ -1414,15 +1414,15 @@
    "url": "https://korczis.github.io/cs/work/korczis-github-io/",
    "lang": "cs",
    "title": "korczis.github.io · Tomas Korcak",
-   "description": "korczis.github.io: projekt z kategorie Inženýrství AI, hlavní jazyk HTML, poslední commit 12. listopadu 2026.",
+   "description": "korczis.github.io: projekt z kategorie Inženýrství AI, hlavní jazyk JavaScript, poslední commit 12. listopadu 2026.",
    "type": "project",
    "category": null,
    "og_image": "https://korczis.github.io/og/cs-work-korczis-github-io.png",
    "keywords": [
     "korczis.github.io",
     "Inženýrství AI",
-    "HTML",
     "JavaScript",
+    "HTML",
     "Shell",
     "Tomáš Korčák"
    ]
@@ -1724,9 +1724,9 @@
    "keywords": [
     "Sonic Playground",
     "Média a umění",
+    "Python",
     "JavaScript",
     "HTML",
-    "Python",
     "Tomáš Korčák"
    ]
   },
@@ -2856,8 +2856,8 @@
    "keywords": [
     "Tomas Korcak recent work",
     "korczis",
-    "sonic-playground",
     "korczis.github.io",
+    "sonic-playground",
     "kompendium-epistemicke-anihilace",
     "algoglyph",
     "oscilla",
@@ -2879,7 +2879,7 @@
     "Science and visualisation",
     "TypeScript",
     "Rust",
-    "HTML",
+    "JavaScript",
     "Tomas Korcak"
    ]
   },
@@ -3137,7 +3137,7 @@
     "Knowledge",
     "Elixir",
     "JavaScript",
-    "HTML",
+    "Python",
     "Tomas Korcak"
    ]
   },
@@ -3152,8 +3152,8 @@
    "keywords": [
     "korczis.github.io",
     "AI engineering",
-    "HTML",
     "JavaScript",
+    "HTML",
     "Shell",
     "Tomas Korcak"
    ]
@@ -3455,9 +3455,9 @@
    "keywords": [
     "Sonic Playground",
     "Media and art",
+    "Python",
     "JavaScript",
     "HTML",
-    "Python",
     "Tomas Korcak"
    ]
   },

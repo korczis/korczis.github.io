@@ -15,6 +15,15 @@ og_image = "og/cs-work-crisis-map.png"
 schema = "project"
 keywords = ["Crisis map", "Data a GIS", "Elixir", "CSS", "JavaScript", "Tomáš Korčák"]
 terms = ["elixir", "css", "javascript", "html", "postgis", "mcp", "gis", "github-pages", "repository", "commit", "open-source"]
+
+[[extra.viz]]
+kind = "pulse"
+source = "work.commits"
+title = "viz_commits_title"
+lead = "viz_commits_lead_live"
+span = 3
+height = "md"
+tone = "night"
 +++
 **Crisis map** je projekt z kategorie [Data a GIS](@/projects/data.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (96,2 %), dále [CSS](@/glossary/css.cs.md), [JavaScript](@/glossary/javascript.cs.md) a [HTML](@/glossary/html.cs.md).
 
@@ -24,4 +33,4 @@ Je postavený na [PostGIS](@/glossary/postgis.cs.md) a [MCP](@/glossary/mcp.cs.m
 
 Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/crisis-map/>.
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu; pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 6 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

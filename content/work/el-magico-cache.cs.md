@@ -15,9 +15,18 @@ og_image = "og/cs-work-el-magico-cache.png"
 schema = "project"
 keywords = ["el-magico-cache", "Nástroje", "Elixir", "Shell", "Makefile", "Tomáš Korčák"]
 terms = ["elixir", "shell", "nix", "html", "dockerfile", "open-source", "repository", "commit"]
+
+[[extra.viz]]
+kind = "pulse"
+source = "work.commits"
+title = "viz_commits_title"
+lead = "viz_commits_lead_live"
+span = 3
+height = "md"
+tone = "night"
 +++
 **el-magico-cache** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (82,5 %), dále [Shell](@/glossary/shell.cs.md), Makefile a [Nix](@/glossary/nix.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 26. ledna 2023; poslední [commit](@/glossary/commit.cs.md) je z 27. ledna 2023. Zní „simple cache“. Patří tak mezi projekty aktivní za posledních 48 měsíců.
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu; pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 22 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

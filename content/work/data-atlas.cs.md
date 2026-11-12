@@ -15,6 +15,15 @@ og_image = "og/cs-work-data-atlas.png"
 schema = "project"
 keywords = ["Data Atlas", "Data a GIS", "Python", "HTML", "JavaScript", "Tomáš Korčák"]
 terms = ["python", "html", "javascript", "shell", "gis", "github-pages", "repository", "commit", "open-source"]
+
+[[extra.viz]]
+kind = "pulse"
+source = "work.commits"
+title = "viz_commits_title"
+lead = "viz_commits_lead_live"
+span = 3
+height = "md"
+tone = "night"
 +++
 **Data Atlas** je projekt z kategorie [Data a GIS](@/projects/data.cs.md). Jeho kód je napsaný hlavně v jazyce [Python](@/glossary/python.cs.md) (61,2 %), dále [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md) a PLpgSQL.
 
@@ -22,4 +31,4 @@ terms = ["python", "html", "javascript", "shell", "gis", "github-pages", "reposi
 
 Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/data-atlas/>.
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu; pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 30 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

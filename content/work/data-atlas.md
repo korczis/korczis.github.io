@@ -15,6 +15,15 @@ og_image = "og/work-data-atlas.png"
 schema = "project"
 keywords = ["Data Atlas", "Data and GIS", "Python", "HTML", "JavaScript", "Tomas Korcak"]
 terms = ["python", "html", "javascript", "shell", "gis", "github-pages", "repository", "commit", "open-source"]
+
+[[extra.viz]]
+kind = "pulse"
+source = "work.commits"
+title = "viz_commits_title"
+lead = "viz_commits_lead_live"
+span = 3
+height = "md"
+tone = "night"
 +++
 **Data Atlas** is a project in [Data and GIS](@/projects/data.md). Its code is written mainly in [Python](@/glossary/python.md) (61.2 %), with [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md) and PLpgSQL.
 
@@ -22,4 +31,4 @@ The [repository](@/glossary/repository.md) was created in August 2026; its lates
 
 It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/data-atlas/>.
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code; the concepts below are explained in the [glossary](@/glossary/_index.md).
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 30 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

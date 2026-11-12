@@ -15,9 +15,18 @@ og_image = "og/cs-work-kuzu-ex.png"
 schema = "project"
 keywords = ["kuzu-ex", "Data a GIS", "Elixir", "Python", "Tomáš Korčák"]
 terms = ["elixir", "python", "gis", "repository", "commit", "open-source"]
+
+[[extra.viz]]
+kind = "pulse"
+source = "work.commits"
+title = "viz_commits_title"
+lead = "viz_commits_lead_snapshot"
+span = 3
+height = "md"
+tone = "night"
 +++
 **kuzu-ex** je projekt z kategorie [Data a GIS](@/projects/data.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (97,6 %), dále [Python](@/glossary/python.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 24. října 2024; poslední [commit](@/glossary/commit.cs.md) je z 29. listopadu 2024. Zní „feat: tweak loading url“. Patří tak mezi projekty aktivní za posledních 24 měsíců.
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu; pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 9 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…), ze snímku obnovovaného každých šest hodin. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

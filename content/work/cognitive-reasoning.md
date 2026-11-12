@@ -15,9 +15,18 @@ og_image = "og/work-cognitive-reasoning.png"
 schema = "project"
 keywords = ["cognitive-reasoning", "AI engineering", "Tomas Korcak"]
 terms = ["ai-agent", "repository", "commit", "open-source"]
+
+[[extra.viz]]
+kind = "pulse"
+source = "work.commits"
+title = "viz_commits_title"
+lead = "viz_commits_lead_live"
+span = 3
+height = "md"
+tone = "night"
 +++
 **cognitive-reasoning** is a project in [AI engineering](@/projects/ai.md).
 
 The [repository](@/glossary/repository.md) was created in April 2025; its latest [commit](@/glossary/commit.md) is from 25 April 2025. It reads “Initial commit”. That places it among the projects active in the last 24 months.
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code; the concepts below are explained in the [glossary](@/glossary/_index.md).
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 1 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

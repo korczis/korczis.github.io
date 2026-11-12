@@ -15,9 +15,18 @@ og_image = "og/cs-work-cognitive-reasoning.png"
 schema = "project"
 keywords = ["cognitive-reasoning", "Inženýrství AI", "Tomáš Korčák"]
 terms = ["ai-agent", "repository", "commit", "open-source"]
+
+[[extra.viz]]
+kind = "pulse"
+source = "work.commits"
+title = "viz_commits_title"
+lead = "viz_commits_lead_live"
+span = 3
+height = "md"
+tone = "night"
 +++
 **cognitive-reasoning** je projekt z kategorie [Inženýrství AI](@/projects/ai.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 25. dubna 2025; poslední [commit](@/glossary/commit.cs.md) je z 25. dubna 2025. Zní „Initial commit“. Patří tak mezi projekty aktivní za posledních 24 měsíců.
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu; pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 1 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

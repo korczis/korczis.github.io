@@ -3,25 +3,34 @@
 title = "Sonic Playground"
 description = "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme"
 template = "work.html"
-weight = 1
+weight = 2
 
 [taxonomies]
-tags = ["Media and art", "JavaScript", "HTML", "Python"]
+tags = ["Media and art", "Python", "JavaScript", "HTML"]
 
 [extra]
 repo = "sonic-playground"
 og_title = "Sonic Playground: Music that moves you, not algorithmic noise."
 og_image = "og/work-sonic-playground.png"
 schema = "project"
-keywords = ["Sonic Playground", "Media and art", "JavaScript", "HTML", "Python", "Tomas Korcak"]
-terms = ["javascript", "html", "python", "shell", "css", "elixir", "data-visualisation", "github-pages", "repository", "commit", "open-source"]
-+++
-**Sonic Playground** is a project in [Media and art](@/projects/media.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (36.2 %), with [HTML](@/glossary/html.md), [Python](@/glossary/python.md) and [Shell](@/glossary/shell.md).
+keywords = ["Sonic Playground", "Media and art", "Python", "JavaScript", "HTML", "Tomas Korcak"]
+terms = ["python", "javascript", "html", "shell", "css", "elixir", "data-visualisation", "github-pages", "repository", "commit", "open-source"]
 
-The [repository](@/glossary/repository.md) was created in November 2026; its latest [commit](@/glossary/commit.md) is from 12 November 2026. It reads “Merge branch 'fix/sweep-retry-stall'”. That places it among the projects active in the last 12 months.
+[[extra.viz]]
+kind = "pulse"
+source = "work.commits"
+title = "viz_commits_title"
+lead = "viz_commits_lead_live"
+span = 3
+height = "md"
+tone = "night"
++++
+**Sonic Playground** is a project in [Media and art](@/projects/media.md). Its code is written mainly in [Python](@/glossary/python.md) (34.7 %), with [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md) and [Shell](@/glossary/shell.md).
+
+The [repository](@/glossary/repository.md) was created in November 2026; its latest [commit](@/glossary/commit.md) is from 12 November 2026. It reads “Merge branch 'feature/backlog-resolution': every playlist row resolved to one review”. That places it among the projects active in the last 12 months.
 
 It is built with [Elixir](@/glossary/elixir.md).
 
 It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/sonic-playground/>.
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code; the concepts below are explained in the [glossary](@/glossary/_index.md).
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 30 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

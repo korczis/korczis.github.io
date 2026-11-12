@@ -15,9 +15,18 @@ og_image = "og/work-openttd-prismatic-bridge.png"
 schema = "project"
 keywords = ["openttd-prismatic-bridge", "Media and art", "Python", "HTML", "Squirrel", "Tomas Korcak"]
 terms = ["python", "html", "css", "shell", "data-visualisation", "repository", "commit", "open-source"]
+
+[[extra.viz]]
+kind = "pulse"
+source = "work.commits"
+title = "viz_commits_title"
+lead = "viz_commits_lead_snapshot"
+span = 3
+height = "md"
+tone = "night"
 +++
 **openttd-prismatic-bridge** is a project in [Media and art](@/projects/media.md). Its code is written mainly in [Python](@/glossary/python.md) (65.7 %), with [HTML](@/glossary/html.md), Squirrel and [CSS](@/glossary/css.md).
 
 The [repository](@/glossary/repository.md) was created in July 2026; its latest [commit](@/glossary/commit.md) is from 24 July 2026. It reads “Doc: document the real prismatic-platform decision engine (Phase 3)”. That places it among the projects active in the last 12 months.
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code; the concepts below are explained in the [glossary](@/glossary/_index.md).
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 10 commits as a heartbeat, one lane per commit type (feat, fix, docs…), from a snapshot refreshed every six hours. The concepts below are explained in the [glossary](@/glossary/_index.md).

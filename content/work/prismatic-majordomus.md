@@ -15,6 +15,15 @@ og_image = "og/work-prismatic-majordomus.png"
 schema = "project"
 keywords = ["Majordomus", "AI engineering", "Rust", "Shell", "JavaScript", "Tomas Korcak"]
 terms = ["rust", "shell", "javascript", "html", "css", "python", "mcp", "zola", "ai-agent", "github-pages", "repository", "commit", "open-source"]
+
+[[extra.viz]]
+kind = "pulse"
+source = "work.commits"
+title = "viz_commits_title"
+lead = "viz_commits_lead_live"
+span = 3
+height = "md"
+tone = "night"
 +++
 **Majordomus** is a project in [AI engineering](@/projects/ai.md). Its code is written mainly in [Rust](@/glossary/rust.md) (60.8 %), with [Shell](@/glossary/shell.md), [JavaScript](@/glossary/javascript.md) and [HTML](@/glossary/html.md).
 
@@ -24,4 +33,4 @@ It is built with [MCP](@/glossary/mcp.md) and [Zola](@/glossary/zola.md).
 
 It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/prismatic-majordomus/>.
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code; the concepts below are explained in the [glossary](@/glossary/_index.md).
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 30 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

@@ -15,9 +15,18 @@ og_image = "og/work-the-psycho.png"
 schema = "project"
 keywords = ["the-psycho", "Tools", "Elixir", "HTML+EEX", "JavaScript", "Tomas Korcak"]
 terms = ["elixir", "javascript", "css", "open-source", "repository", "commit"]
+
+[[extra.viz]]
+kind = "pulse"
+source = "work.commits"
+title = "viz_commits_title"
+lead = "viz_commits_lead_snapshot"
+span = 3
+height = "md"
+tone = "night"
 +++
 **the-psycho** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (82.8 %), with HTML+EEX, [JavaScript](@/glossary/javascript.md) and [CSS](@/glossary/css.md).
 
 The [repository](@/glossary/repository.md) was created in January 2025; its latest [commit](@/glossary/commit.md) is from 4 February 2026. It reads “\[38;2;248;248;242mfeat(aiad): inject AIAD v1.0.0 infrastructure\[0m”. That places it among the projects active in the last 12 months.
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code; the concepts below are explained in the [glossary](@/glossary/_index.md).
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 4 commits as a heartbeat, one lane per commit type (feat, fix, docs…), from a snapshot refreshed every six hours. The concepts below are explained in the [glossary](@/glossary/_index.md).

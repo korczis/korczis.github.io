@@ -15,9 +15,18 @@ og_image = "og/cs-work-tap.png"
 schema = "project"
 keywords = ["tap", "Nástroje", "Tomáš Korčák"]
 terms = ["open-source", "repository", "commit"]
+
+[[extra.viz]]
+kind = "pulse"
+source = "work.commits"
+title = "viz_commits_title"
+lead = "viz_commits_lead_live"
+span = 3
+height = "md"
+tone = "night"
 +++
 **tap** je projekt z kategorie [Nástroje](@/projects/tools.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 1. října 2024; poslední [commit](@/glossary/commit.cs.md) je z 1. října 2024. Zní „first commit“. Patří tak mezi projekty aktivní za posledních 48 měsíců.
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu; pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 1 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

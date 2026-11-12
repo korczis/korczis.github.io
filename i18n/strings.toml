@@ -1277,3 +1277,19 @@ cs = "hvězdička"
 [js_pulse_fork]
 en = "forked"
 cs = "fork"
+
+[js_pulse_commit]
+en = "commit"
+cs = "commit"
+
+[viz_commits_title]
+en = "Pulse of the project"
+cs = "Puls projektu"
+
+[viz_commits_lead_live]
+en = "The latest commits as a heartbeat, one lane per commit type, refreshed live from GitHub; every beat opens its commit."
+cs = "Poslední commity jako tep, jeden pruh na typ commitu, živě obnovované z GitHubu; každý úder otevře svůj commit."
+
+[viz_commits_lead_snapshot]
+en = "The latest commits as a heartbeat, one lane per commit type, measured on GitLab every six hours; every beat opens its commit."
+cs = "Poslední commity jako tep, jeden pruh na typ commitu, měřené na GitLabu každých šest hodin; každý úder otevře svůj commit."

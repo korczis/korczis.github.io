@@ -78,8 +78,8 @@ function article(r, curated, lang) {
     p.push(cs ? `Běží jako živý web${pages}: <${r.site}>.` : `It runs as a live site${pages}: <${r.site}>.`);
   }
   p.push(cs
-    ? `*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu; pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).`
-    : `*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code; the concepts below are explained in the [glossary](@/glossary/_index.md).`);
+    ? `*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních ${r.commits.length} commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…)${r.hosts.github ? '; na GitHubu se obnovuje živě z vašeho prohlížeče' : ', ze snímku obnovovaného každých šest hodin'}. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).`
+    : `*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest ${r.commits.length} commits as a heartbeat, one lane per commit type (feat, fix, docs…)${r.hosts.github ? ', refreshed live from your browser on GitHub' : ', from a snapshot refreshed every six hours'}. The concepts below are explained in the [glossary](@/glossary/_index.md).`);
   return p.join('\n\n');
 }
 
@@ -129,7 +129,16 @@ og_image = ${q(`og/${cs ? 'cs-' : ''}work-${slug(r.name)}.png`)}
 schema = "project"
 keywords = [${[title, ...tags(r, cs), cs ? 'Tomáš Korčák' : 'Tomas Korcak'].map(q).join(', ')}]
 terms = [${termsForRepo(glossary, r, curated).map(q).join(', ')}]
-+++
+${r.commits.length ? `
+[[extra.viz]]
+kind = "pulse"
+source = "work.commits"
+title = "viz_commits_title"
+lead = ${q(r.hosts.github ? 'viz_commits_lead_live' : 'viz_commits_lead_snapshot')}
+span = 3
+height = "md"
+tone = "night"
+` : ''}+++
 ${article(r, curated, lang)}
 `);
   });

@@ -15,9 +15,18 @@ og_image = "og/cs-work-pdf-renderer.png"
 schema = "project"
 keywords = ["pdf_renderer", "Nástroje", "Python", "Dockerfile", "Makefile", "Tomáš Korčák"]
 terms = ["python", "dockerfile", "open-source", "repository", "commit"]
+
+[[extra.viz]]
+kind = "pulse"
+source = "work.commits"
+title = "viz_commits_title"
+lead = "viz_commits_lead_snapshot"
+span = 3
+height = "md"
+tone = "night"
 +++
 **pdf\_renderer** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [Python](@/glossary/python.cs.md) (94,2 %), dále [Dockerfile](@/glossary/dockerfile.cs.md) a Makefile.
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 24. března 2024; poslední [commit](@/glossary/commit.cs.md) je z 25. března 2024. Zní „Initial commit“. Patří tak mezi projekty aktivní za posledních 48 měsíců.
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu; pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 2 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…), ze snímku obnovovaného každých šest hodin. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

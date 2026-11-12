@@ -15,9 +15,18 @@ og_image = "og/work-simple-geocoder.png"
 schema = "project"
 keywords = ["simple_geocoder", "Tools", "Elixir", "Shell", "HTML+EEX", "Tomas Korcak"]
 terms = ["elixir", "shell", "open-source", "repository", "commit"]
+
+[[extra.viz]]
+kind = "pulse"
+source = "work.commits"
+title = "viz_commits_title"
+lead = "viz_commits_lead_snapshot"
+span = 3
+height = "md"
+tone = "night"
 +++
 **simple\_geocoder** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (92.2 %), with [Shell](@/glossary/shell.md) and HTML+EEX.
 
 The [repository](@/glossary/repository.md) was created in April 2024; its latest [commit](@/glossary/commit.md) is from 24 April 2024. It reads “Disable build image”. That places it among the projects active in the last 48 months.
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code; the concepts below are explained in the [glossary](@/glossary/_index.md).
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 27 commits as a heartbeat, one lane per commit type (feat, fix, docs…), from a snapshot refreshed every six hours. The concepts below are explained in the [glossary](@/glossary/_index.md).

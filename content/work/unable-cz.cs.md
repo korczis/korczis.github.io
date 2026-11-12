@@ -15,9 +15,18 @@ og_image = "og/cs-work-unable-cz.png"
 schema = "project"
 keywords = ["unable.cz", "Nástroje", "JavaScript", "HTML", "CSS", "Tomáš Korčák"]
 terms = ["javascript", "html", "css", "open-source", "repository", "commit"]
+
+[[extra.viz]]
+kind = "pulse"
+source = "work.commits"
+title = "viz_commits_title"
+lead = "viz_commits_lead_live"
+span = 3
+height = "md"
+tone = "night"
 +++
 **unable.cz** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [JavaScript](@/glossary/javascript.cs.md) (79,6 %), dále [HTML](@/glossary/html.cs.md) a [CSS](@/glossary/css.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 16. července 2026; poslední [commit](@/glossary/commit.cs.md) je z 19. července 2026. Zní „feat(dossier): bounded monitoring loop for Able.cz dossier (PROMPT-11 loop-1)“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu; pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 30 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

@@ -1,11 +1,13 @@
-// Live pulse (canvas, d3 for colour and time): the owner's public activity as a heartbeat trace.
-// Time runs left to right, newest on the right; every event is a beat on the trace and a glowing
-// orb above it, coloured by repository along the art palette, sized by its commits. A phosphor
-// beam sweeps the trace like an oscilloscope. The page embeds the measured snapshot (last commit of
-// each recent project); in the browser the visual then asks the public GitHub events API and keeps
-// asking every five minutes while it is on screen (conditional requests, so a quiet poll costs no
-// rate limit). Offline or rate-limited, it stays on the snapshot and says so. Hover a beat to read
-// it, click it to open the commit, pull request, release or repository behind it.
+// Live pulse (canvas, d3 for colour and time): activity as a heartbeat trace. Time runs left to
+// right, newest on the right; every event is a beat on the trace and a glowing orb in its lane,
+// coloured along the art palette, sized by its commits. A phosphor beam sweeps the trace like an
+// oscilloscope. Two modes, chosen by the source the page embeds:
+//   user  the owner's public GitHub events, one lane per repository (the home page);
+//   repo  one project's commits, one lane per conventional commit type (feat, fix, docs, ...).
+// The page embeds the measured snapshot; when the source names a live GitHub endpoint, the browser
+// asks it and keeps asking every five minutes while the visual is on screen (conditional requests,
+// so a quiet poll costs no rate limit). Offline, rate-limited or on GitLab it stays on the snapshot
+// and says so. Hover a beat to read it, click it to open the commit, pull request or release.
 KorczisHub.viz('pulse', {
   lib: 'd3',
   mount(box, source, { palette, reducedMotion }) {
@@ -17,6 +19,14 @@ KorczisHub.viz('pulse', {
     const ctx = canvas.getContext('2d');
     const POLL = 5 * 60 * 1000;
     const user = KorczisHub.github;
+    const byType = source.mode === 'repo';
+    // A conventional commit's type names its lane; anything else is "other", merges are merges.
+    const TYPES_CC = new Set(['feat', 'fix', 'docs', 'chore', 'refactor', 'test', 'ci', 'perf', 'build', 'style', 'revert']);
+    const kindOf = (message) => {
+      if (/^merge\b/i.test(message)) return 'merge';
+      const m = /^(\w+)(\([^)]*\))?!?:/.exec(message);
+      return m && TYPES_CC.has(m[1].toLowerCase()) ? m[1].toLowerCase() : KorczisHub.t('js_other');
+    };
     const relative = new Intl.RelativeTimeFormat(KorczisHub.locale, { numeric: 'auto' });
     const clock = new Intl.DateTimeFormat(KorczisHub.locale, { hour: '2-digit', minute: '2-digit' });
     const day = new Intl.DateTimeFormat(KorczisHub.locale, { day: 'numeric', month: 'short' });
@@ -34,15 +44,17 @@ KorczisHub.viz('pulse', {
       return relative.format(Math.round(s / size), unit);
     };
 
-    // The snapshot: one beat per recent project, at its last commit.
-    const snapshot = source.repos.map((r) => ({
-      id: `s:${r.name}`,
-      repo: r.name,
-      type: 'push',
-      message: r.message,
-      at: Date.parse(r.at),
+    // The snapshot the page embeds: the last commit of each recent project (user), or a project's
+    // latest commits (repo).
+    const snapshot = source.beats.map((b, i) => ({
+      id: `s:${i}`,
+      repo: b.repo,
+      type: byType ? 'commit' : 'push',
+      lane: byType ? kindOf(b.message || '') : b.repo,
+      message: b.message || '',
+      at: Date.parse(b.at),
       weight: 1,
-      url: r.url,
+      url: b.url,
     }));
 
     // A public GitHub event, read as a beat; events the visual does not draw return null.
@@ -78,7 +90,12 @@ KorczisHub.viz('pulse', {
       } else if (type === 'fork') {
         url = p.forkee?.html_url || base;
       }
-      return { id: e.id, repo, type, message, at: Date.parse(e.created_at), weight, url };
+      return { id: e.id, repo, type, lane: repo, message, at: Date.parse(e.created_at), weight, url };
+    };
+    // A commit of the repository endpoint, read as a beat.
+    const commitBeat = (c) => {
+      const message = (c.commit?.message || '').split('\n')[0];
+      return { id: c.sha, repo: source.repo, type: 'commit', lane: kindOf(message), message, at: Date.parse(c.commit?.committer?.date), weight: 1, url: c.html_url };
     };
 
     let beats = snapshot;
@@ -98,9 +115,11 @@ KorczisHub.viz('pulse', {
     let destroyed = false;
 
     const window_ = () => {
-      const end = Math.max(Date.now(), ...beats.map((b) => b.at));
+      // Live, the window runs up to now (a quiet stretch is a fact); a snapshot spans its own beats.
+      const last = Math.max(...beats.map((b) => b.at));
+      const end = live ? Math.max(Date.now(), last) : last;
       const first = Math.min(...beats.map((b) => b.at));
-      // The window is the events' own span (at least a day), with a little air on both sides.
+      // The events' own span (at least a day), with a little air on both sides.
       const span = Math.max(end - first, 86400000);
       return [end - span * 1.03, end + span * 0.03];
     };
@@ -122,14 +141,14 @@ KorczisHub.viz('pulse', {
       const x = d3.scaleTime().domain([from, to]).range([28, width - 28]);
       const base = height * 0.74;
       const maxWeight = Math.max(1, ...beats.map((b) => b.weight));
-      // One lane per repository, the busiest on top: orbs float in their lane above the trace.
-      const counts = d3.rollup(beats, (v) => d3.sum(v, (b) => b.weight), (b) => b.repo);
-      const repos = [...counts.keys()].sort((a, b) => counts.get(b) - counts.get(a) || a.localeCompare(b));
-      lanes = repos.map((repo, i) => ({ repo, y: 40 + (repos.length === 1 ? 0.5 : i / (repos.length - 1)) * (base - 92), colour: d3.color(colours.ramp(repos.length === 1 ? 0.5 : i / (repos.length - 1))) }));
-      const lane = new Map(lanes.map((l) => [l.repo, l]));
+      // One lane per repository (or commit type), the busiest on top: orbs float above the trace.
+      const counts = d3.rollup(beats, (v) => d3.sum(v, (b) => b.weight), (b) => b.lane);
+      const keys = [...counts.keys()].sort((a, b) => counts.get(b) - counts.get(a) || a.localeCompare(b));
+      lanes = keys.map((key, i) => ({ key, y: 40 + (keys.length === 1 ? 0.5 : i / (keys.length - 1)) * (base - 92), colour: d3.color(colours.ramp(keys.length === 1 ? 0.5 : i / (keys.length - 1))) }));
+      const lane = new Map(lanes.map((l) => [l.key, l]));
       points = beats.map((b) => {
         const share = Math.sqrt(b.weight / maxWeight);
-        return { b, px: x(b.at), base, oy: lane.get(b.repo).y, amp: (0.25 + 0.75 * share) * height * 0.16, r: 2.5 + 3.5 * share, colour: lane.get(b.repo).colour };
+        return { b, px: x(b.at), base, oy: lane.get(b.lane).y, amp: (0.25 + 0.75 * share) * height * 0.16, r: 2.5 + 3.5 * share, colour: lane.get(b.lane).colour };
       }).sort((a, b) => a.px - b.px);
       points.x = x;
     };
@@ -171,7 +190,7 @@ KorczisHub.viz('pulse', {
         ctx.fillRect(16, l.y, width - 32, 1);
         if (labelled && width > 480) {
           ctx.fillStyle = `rgba(${l.colour.r}, ${l.colour.g}, ${l.colour.b}, 0.75)`;
-          ctx.fillText(l.repo, width - 16, l.y - 4);
+          ctx.fillText(l.key, width - 16, l.y - 4);
         }
       }
       ctx.textAlign = 'center';
@@ -265,17 +284,17 @@ KorczisHub.viz('pulse', {
     };
 
     const poll = async () => {
-      if (!user || destroyed) return;
+      if (!source.live || destroyed) return;
       try {
         const headers = { Accept: 'application/vnd.github+json' };
         if (etag) headers['If-None-Match'] = etag;
-        const response = await fetch(`https://api.github.com/users/${encodeURIComponent(user)}/events/public?per_page=100`, { headers });
+        const response = await fetch(`https://api.github.com/${source.live}?per_page=${byType ? 30 : 100}`, { headers });
         if (response.status === 304) {
           live = true;
           checked = new Date();
         } else if (response.ok) {
           etag = response.headers.get('ETag');
-          const fresh = (await response.json()).map(beat).filter(Boolean);
+          const fresh = (await response.json()).map(byType ? commitBeat : beat).filter((b) => b && Number.isFinite(b.at));
           if (fresh.length) {
             const known = new Set(beats.map((b) => b.id));
             const now = performance.now();
@@ -320,7 +339,7 @@ KorczisHub.viz('pulse', {
         const b = p.b;
         const count = b.type === 'push' && b.weight > 1 ? ` · ${b.weight}×` : '';
         tip.show(
-          `<strong>${escape(b.repo)}</strong> · ${escape(KorczisHub.t(`js_pulse_${b.type}`))}${count}<br>`
+          `<strong>${escape(byType ? b.lane : b.repo)}</strong> · ${escape(KorczisHub.t(`js_pulse_${b.type}`))}${count}<br>`
           + `${b.message ? `${escape(b.message.slice(0, 90))}<br>` : ''}<span class="opacity-75">${escape(ago(b.at))} · ${escape(KorczisHub.t('js_click_to_open'))}</span>`,
           event,
         );

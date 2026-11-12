@@ -15,6 +15,15 @@ og_image = "og/work-u-tygra.png"
 schema = "project"
 keywords = ["u-tygra", "Tools", "JavaScript", "HTML", "CSS", "Tomas Korcak"]
 terms = ["javascript", "html", "css", "open-source", "github-pages", "repository", "commit"]
+
+[[extra.viz]]
+kind = "pulse"
+source = "work.commits"
+title = "viz_commits_title"
+lead = "viz_commits_lead_live"
+span = 3
+height = "md"
+tone = "night"
 +++
 **u-tygra** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (91.8 %), with [HTML](@/glossary/html.md) and [CSS](@/glossary/css.md).
 
@@ -22,4 +31,4 @@ The [repository](@/glossary/repository.md) was created in December 2024; its lat
 
 It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/u-tygra/>.
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code; the concepts below are explained in the [glossary](@/glossary/_index.md).
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 24 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

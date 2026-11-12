@@ -15,9 +15,18 @@ og_image = "og/work-comtesse.png"
 schema = "project"
 keywords = ["comtesse", "Tools", "Just", "Shell", "Rust", "Tomas Korcak"]
 terms = ["shell", "rust", "open-source", "repository", "commit"]
+
+[[extra.viz]]
+kind = "pulse"
+source = "work.commits"
+title = "viz_commits_title"
+lead = "viz_commits_lead_snapshot"
+span = 3
+height = "md"
+tone = "night"
 +++
 **comtesse** is a project in [Tools](@/projects/tools.md). Its code is written mainly in Just (36 %), with [Shell](@/glossary/shell.md), [Rust](@/glossary/rust.md) and Mermaid.
 
 The [repository](@/glossary/repository.md) was created in August 2025; its latest [commit](@/glossary/commit.md) is from 28 August 2025. It reads “docs: add src/comtesse-rs specific README.md”. That places it among the projects active in the last 24 months.
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code; the concepts below are explained in the [glossary](@/glossary/_index.md).
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 24 commits as a heartbeat, one lane per commit type (feat, fix, docs…), from a snapshot refreshed every six hours. The concepts below are explained in the [glossary](@/glossary/_index.md).

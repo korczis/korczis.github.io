@@ -15,6 +15,15 @@ og_image = "og/cs-work-gists-search.png"
 schema = "project"
 keywords = ["Gists search", "Nástroje", "Python", "JavaScript", "HTML", "Tomáš Korčák"]
 terms = ["python", "javascript", "html", "shell", "open-source", "github-pages", "repository", "commit"]
+
+[[extra.viz]]
+kind = "pulse"
+source = "work.commits"
+title = "viz_commits_title"
+lead = "viz_commits_lead_live"
+span = 3
+height = "md"
+tone = "night"
 +++
 **Gists search** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [Python](@/glossary/python.cs.md) (58,5 %), dále [JavaScript](@/glossary/javascript.cs.md), [HTML](@/glossary/html.cs.md) a Just.
 
@@ -22,4 +31,4 @@ terms = ["python", "javascript", "html", "shell", "open-source", "github-pages",
 
 Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/gists-search/>.
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu; pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 2 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

@@ -10,7 +10,7 @@ og_title = "43 projektů za poslední čtyři roky."
 og_image = "og/cs-work.png"
 schema = "collection"
 terms = ["repository", "commit", "open-source", "data-visualisation"]
-keywords = ["nedávná práce Tomáše Korčáka", "korczis", "sonic-playground", "korczis.github.io", "kompendium-epistemicke-anihilace", "algoglyph", "oscilla", "prismatic-majordomus", "vomaste.cz", "majordomus-reel"]
+keywords = ["nedávná práce Tomáše Korčáka", "korczis", "korczis.github.io", "sonic-playground", "kompendium-epistemicke-anihilace", "algoglyph", "oscilla", "prismatic-majordomus", "vomaste.cz", "majordomus-reel"]
 +++
 Tato stránka odpovídá na otázku, na čem se pracuje teď. Projekt sem patří podle data svého posledního [commitu](@/glossary/commit.cs.md) ve výchozí větvi, ne podle toho, kdy na hostingu naposledy něco proběhlo, a řadí se do tří období: 12, 24 a 48 měsíců.
 

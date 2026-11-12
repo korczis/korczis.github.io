@@ -15,6 +15,15 @@ og_image = "og/cs-work-u-tygra.png"
 schema = "project"
 keywords = ["u-tygra", "Nástroje", "JavaScript", "HTML", "CSS", "Tomáš Korčák"]
 terms = ["javascript", "html", "css", "open-source", "github-pages", "repository", "commit"]
+
+[[extra.viz]]
+kind = "pulse"
+source = "work.commits"
+title = "viz_commits_title"
+lead = "viz_commits_lead_live"
+span = 3
+height = "md"
+tone = "night"
 +++
 **u-tygra** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [JavaScript](@/glossary/javascript.cs.md) (91,8 %), dále [HTML](@/glossary/html.cs.md) a [CSS](@/glossary/css.cs.md).
 
@@ -22,4 +31,4 @@ terms = ["javascript", "html", "css", "open-source", "github-pages", "repository
 
 Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/u-tygra/>.
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu; pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 24 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

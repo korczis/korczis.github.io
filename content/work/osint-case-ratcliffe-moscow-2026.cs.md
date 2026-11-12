@@ -15,6 +15,15 @@ og_image = "og/cs-work-osint-case-ratcliffe-moscow-2026.png"
 schema = "project"
 keywords = ["osint-case-ratcliffe-moscow-2026", "Inženýrství AI", "HTML", "Python", "Shell", "Tomáš Korčák"]
 terms = ["html", "python", "shell", "ai-agent", "github-pages", "repository", "commit", "open-source"]
+
+[[extra.viz]]
+kind = "pulse"
+source = "work.commits"
+title = "viz_commits_title"
+lead = "viz_commits_lead_live"
+span = 3
+height = "md"
+tone = "night"
 +++
 **osint-case-ratcliffe-moscow-2026** je projekt z kategorie [Inženýrství AI](@/projects/ai.cs.md). Jeho kód je napsaný hlavně v jazyce [HTML](@/glossary/html.cs.md) (74 %), dále [Python](@/glossary/python.cs.md), [Shell](@/glossary/shell.cs.md) a Just.
 
@@ -22,4 +31,4 @@ terms = ["html", "python", "shell", "ai-agent", "github-pages", "repository", "c
 
 Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/osint-case-ratcliffe-moscow-2026/>.
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu; pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 10 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

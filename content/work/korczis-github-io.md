@@ -3,21 +3,30 @@
 title = "korczis.github.io"
 description = "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus."
 template = "work.html"
-weight = 2
+weight = 1
 
 [taxonomies]
-tags = ["AI engineering", "HTML", "JavaScript", "Shell"]
+tags = ["AI engineering", "JavaScript", "HTML", "Shell"]
 
 [extra]
 repo = "korczis.github.io"
 og_title = "korczis.github.io: Tomas Korcak (korczis): software that proves its work. Projects, live s"
 og_image = "og/work-korczis-github-io.png"
 schema = "project"
-keywords = ["korczis.github.io", "AI engineering", "HTML", "JavaScript", "Shell", "Tomas Korcak"]
-terms = ["html", "javascript", "shell", "css", "ai-agent", "repository", "commit", "open-source"]
+keywords = ["korczis.github.io", "AI engineering", "JavaScript", "HTML", "Shell", "Tomas Korcak"]
+terms = ["javascript", "html", "shell", "css", "ai-agent", "repository", "commit", "open-source"]
+
+[[extra.viz]]
+kind = "pulse"
+source = "work.commits"
+title = "viz_commits_title"
+lead = "viz_commits_lead_live"
+span = 3
+height = "md"
+tone = "night"
 +++
-**korczis.github.io** is a project in [AI engineering](@/projects/ai.md). Its code is written mainly in [HTML](@/glossary/html.md) (49.5 %), with [JavaScript](@/glossary/javascript.md), [Shell](@/glossary/shell.md) and [CSS](@/glossary/css.md).
+**korczis.github.io** is a project in [AI engineering](@/projects/ai.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (48.2 %), with [HTML](@/glossary/html.md), [Shell](@/glossary/shell.md) and [CSS](@/glossary/css.md).
 
-The [repository](@/glossary/repository.md) was created in December 2024; its latest [commit](@/glossary/commit.md) is from 12 November 2026. It reads “build(deps-dev): bump the site group across 1 directory with 2 updates (\#4)”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created in December 2024; its latest [commit](@/glossary/commit.md) is from 12 November 2026. It reads “feat(viz): a live pulse of public GitHub activity on the home page”. That places it among the projects active in the last 12 months.
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code; the concepts below are explained in the [glossary](@/glossary/_index.md).
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 30 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

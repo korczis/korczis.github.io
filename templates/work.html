@@ -74,6 +74,9 @@
     </section>
   </div>
 
+  {#- The project's pulse, declared in its front matter ([[extra.viz]], written by build-work). #}
+  {%- include "partials/viz-grid.html" %}
+
   {#- Neighbours: the work before and after in time, and the same category (derived). #}
   <nav class="grid grid-cols-1 gap-4 md:grid-cols-2" aria-label="{{ trans(key="more_work", lang=lang) }}">
     {%- if page.lower %}<a href="{{ page.lower.permalink }}" class="{{ card }} group block hover:bg-gray-50 dark:hover:bg-gray-700"><span class="text-xs uppercase tracking-wide text-gray-600 dark:text-gray-400">{{ trans(key="older", lang=lang) | safe }}</span><span class="mt-1 block font-semibold text-gray-900 group-hover:underline dark:text-white">{{ page.lower.title }}</span><span class="mt-1 block text-sm text-gray-600 dark:text-gray-400">{{ page.lower.description }}</span></a>{% else %}<span></span>{% endif %}
