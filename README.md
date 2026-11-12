@@ -89,6 +89,17 @@ The repository is public and declares `ui.kit: flowbite-pro`. Because of that, C
   gh secret set MAJORDOMUS_KIT_EVIDENCE_FLOWBITE_PRO -R korczis/korczis.github.io
 ```
 
+## Repository settings
+
+These are set through the GitHub API (`gh api`), not in files:
+- description, homepage and topics;
+- wiki, projects and discussions are off; branches are deleted on merge; auto-merge is allowed;
+- Pages: `build_type: workflow`, HTTPS enforced;
+- secret scanning with push protection, Dependabot alerts and security fixes (and
+  `.github/dependabot.yml` for weekly grouped updates);
+- ruleset "master: history is append-only", which blocks deleting `master` and force-pushing to it;
+- secret `MAJORDOMUS_KIT_EVIDENCE_FLOWBITE_PRO`; optional variable `PAGES_RUNNER` (ADR 0002).
+
 ## Working on this repository
 
 The repository is supervised by Majordomus. AI workers start from [`AGENTS.md`](AGENTS.md)

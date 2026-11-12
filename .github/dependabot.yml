@@ -1,0 +1,25 @@
+# Weekly, grouped dependency updates. Every version in package.json is exact on purpose, so an
+# update is a reviewed pull request that runs the full gate (ci.yml), never a silent drift.
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    groups:
+      site:
+        patterns: ['*']
+    commit-message:
+      prefix: build
+      include: scope
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    groups:
+      actions:
+        patterns: ['*']
+    commit-message:
+      prefix: ci
