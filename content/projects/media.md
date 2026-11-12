@@ -7,8 +7,8 @@ weight = 5
 
 [extra]
 category = "media"
-og_title = "Media and art: 3 projects."
+og_title = "Media and art: 8 repositories."
 og_image = "og/category-media.png"
 schema = "collection"
-keywords = ["Media and art", "Majordomus reel", "Catharsis as a Service", "Sonic Playground", "Tomas Korcak"]
+keywords = ["Media and art", "Majordomus reel", "Catharsis as a Service", "Sonic Playground", "openttd-prismatic-bridge", "prismatic-blog", "dj-schnapps", "brepta", "talkie", "Tomas Korcak"]
 +++

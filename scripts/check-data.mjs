@@ -16,7 +16,7 @@ const catalogue = parse(readFileSync(join(ROOT, 'data/projects.toml'), 'utf8'));
 const snapshot = JSON.parse(readFileSync(join(ROOT, 'data/github.json'), 'utf8'));
 const categories = catalogue.categories ?? {};
 const REQUIRED = ['repo', 'name', 'tagline', 'summary', 'category', 'stack', 'featured'];
-const ICONS = ['shield', 'beaker', 'book', 'map', 'film', 'wrench', 'code', 'globe', 'graph', 'cube'];
+const ICONS = ['shield', 'beaker', 'book', 'map', 'film', 'wrench', 'code', 'globe', 'graph', 'cube', 'lock', 'server', 'puzzle', 'academic'];
 for (const [key, c] of Object.entries(categories)) {
   if (!/^[a-z]+$/.test(key)) fail(`categories.${key}`, 'key must be lower-case letters (it is a URL)');
   if (!c.name || !c.description) fail(`categories.${key}`, 'needs a name and a description');
@@ -64,6 +64,19 @@ if ((snapshot.timeline ?? []).length !== seen.size || !(snapshot.timeline ?? [])
   fail('data/github.json', 'timeline does not cover the catalogue; run npm run data');
 }
 if (!(catalogue.projects ?? []).some((p) => p.featured)) fail('data/projects.toml', 'nothing featured');
+
+// The derived index: well-formed, every category known, every curated project present in it.
+const index = JSON.parse(readFileSync(join(ROOT, 'data/index.json'), 'utf8'));
+if (index.schema !== 'korczis-hub-index/v1') fail('data/index.json', 'unknown schema; run npm run index');
+for (const r of index.repos ?? []) {
+  if (!(r.category in categories)) fail('data/index.json', `${r.name} has unknown category ${r.category}; run npm run index -- --derive`);
+  if (!r.hosts?.github && !r.hosts?.gitlab) fail('data/index.json', `${r.name} has no host link`);
+}
+const indexed = new Set((index.repos ?? []).map((r) => r.name.toLowerCase()));
+for (const p of catalogue.projects ?? []) {
+  if (!indexed.has(p.repo.toLowerCase())) fail('data/index.json', `curated ${p.repo} is not in the index (forked, mirrored or hidden?)`);
+}
+if (index.counts?.own !== (index.repos ?? []).length) fail('data/index.json', 'counts.own does not match the listed repositories');
 
 const ageDays = (Date.now() - Date.parse(snapshot.generated_at)) / 86400000;
 if (findings.length) {

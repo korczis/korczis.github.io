@@ -3,6 +3,7 @@
 {% block content %}
 {%- set gh = load_data(path="data/github.json") -%}
 {%- set cat = load_data(path="data/projects.toml") -%}
+{%- set ix = load_data(path="data/index.json") -%}
 {%- set base = config.base_url ~ "/" -%}
 {%- set_global live_count = 0 -%}
 {%- set_global supervised_count = 0 -%}
@@ -47,10 +48,16 @@
         <a href="{{ base }}projects/" class="inline-flex items-center justify-center rounded-lg bg-primary-700 px-5 py-3 text-base font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
           Explore {{ cat.projects | length }} projects{{ <icon name="arrow-right" class="-mr-1 ml-2 h-5 w-5" /> }}
         </a>
-        <a href="{{ config.extra.majordomus_url }}" class="inline-flex items-center justify-center rounded-lg border border-gray-300 bg-white px-5 py-3 text-base font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">
-          {{ <icon name="shield" class="-ml-1 mr-2 h-5 w-5" /> }}Meet Majordomus
+        <a href="{{ base }}about/" class="inline-flex items-center justify-center rounded-lg border border-gray-300 bg-white px-5 py-3 text-base font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">
+          {{ <icon name="book" class="-ml-1 mr-2 h-5 w-5" /> }}About and CV
         </a>
       </div>
+      {#- The languages of every original repository, each a link into the index (derived). #}
+      <ul class="mt-6 flex flex-wrap gap-2" aria-label="Most used languages">
+        {%- for l in ix.languages %}{% if loop.index <= 8 %}
+        <li><a href="{{ base }}repositories/?language={{ l.name | urlencode }}" class="inline-flex items-center gap-1 rounded-md bg-gray-100 px-2.5 py-1 text-xs font-medium text-gray-800 hover:bg-primary-100 hover:text-primary-800 dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-primary-900 dark:hover:text-primary-200">{{ l.name }}<span class="tabular text-gray-600 dark:text-gray-300">{{ l.repos }}</span></a></li>
+        {%- endif %}{% endfor %}
+      </ul>
     </div>
   </section>
 
@@ -58,12 +65,49 @@
   <section aria-labelledby="kpi-title">
     <h2 id="kpi-title" class="sr-only">In numbers</h2>
     <div class="grid grid-cols-2 gap-4 xl:grid-cols-4">
-      {{ <kpi value={gh.profile.public_repos ~ ""} label="public repositories" note="Original work, not forks" /> }}
+      <a href="{{ base }}repositories/" class="block rounded-lg focus:outline-none focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-800">{{ <kpi value={ix.counts.own ~ ""} label="original repositories" note="GitHub and GitLab; forks and mirrors not counted" /> }}</a>
       {{ <kpi value={gh.contributions.total | num_format} label="contributions, 12 months" note={"GitHub calendar, as of " ~ as_of} /> }}
       {{ <kpi value={years ~ ""} label="years on GitHub" note={"Since " ~ (gh.profile.created_at | date(format="%B %Y"))} /> }}
       {{ <kpi value={live_count ~ " / " ~ (cat.projects | length)} label="projects live" note={active_count ~ " active in the last 45 days"} /> }}
     </div>
   </section>
+
+  {#- Skillset: the most recently active repositories as categories and languages (ECharts sunburst),
+      beside the technologies of the curated projects, each linked to its evidence. #}
+  <div class="grid grid-cols-1 gap-4 xl:grid-cols-3">
+    <section class="{{ card }} xl:col-span-2" aria-labelledby="skillset-title">
+      <div class="mb-2 flex flex-wrap items-start justify-between gap-3">
+        <div>
+          <h2 id="skillset-title" class="{{ card_title }}">Skillset, from the last {{ ix.recent.size }} projects</h2>
+          <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">What the most recently active repositories are about (inner ring) and written in (outer ring), {{ ix.recent.from | date(format="%b %Y") }} to {{ ix.recent.to | date(format="%b %Y") }}. Click a segment to open its work.</p>
+        </div>
+        <a href="{{ base }}about/#skills-title" class="{{ view_all }}">All skills{{ <icon name="arrow-right" class="ml-1 h-4 w-4" /> }}</a>
+      </div>
+      <div class="viz-box h-[22rem] sm:h-[26rem]" data-viz="skillset" data-source="skillset-data" role="img"
+        aria-label="Sunburst of the last {{ ix.recent.size }} active repositories by category and language.">
+        <div data-canvas></div>
+      </div>
+      <script type="application/json" id="skillset-data">{"mix": {{ ix.recent.mix | json_encode | safe }}, "names": { {%- for key, c in cat.categories %}{{ key | json_encode | safe }}: {{ c.name | json_encode | safe }}{% if not loop.last %}, {% endif %}{% endfor -%} }}</script>
+    </section>
+    <section class="{{ card }}" aria-labelledby="tech-title">
+      <h2 id="tech-title" class="{{ card_title }}">Technologies</h2>
+      <p class="mb-4 mt-1 text-sm text-gray-600 dark:text-gray-400">In the stacks of the featured projects; each opens a project that uses it.</p>
+      <ul class="mb-5 flex flex-wrap gap-2">
+        {%- for t in ix.skills.technologies %}
+        <li><a href="{{ base }}projects/?project={{ t.evidence[0].repo }}" class="inline-flex items-center gap-1.5 rounded-md border border-gray-200 bg-gray-50 px-2.5 py-1 text-xs font-medium text-gray-900 hover:border-primary-300 hover:bg-primary-50 hover:text-primary-800 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100 dark:hover:bg-gray-600">{{ t.name }}<span class="tabular text-gray-600 dark:text-gray-400">{{ t.projects }}</span></a></li>
+        {%- endfor %}
+      </ul>
+      <h3 class="mb-3 text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400">Languages, all original work</h3>
+      <ul class="space-y-2.5">
+        {%- for l in ix.languages %}{% if loop.index <= 6 %}
+        <li>
+          <div class="mb-1 flex justify-between text-sm"><a href="{{ base }}repositories/?language={{ l.name | urlencode }}" class="font-medium text-gray-900 hover:text-primary-700 hover:underline dark:text-white dark:hover:text-primary-400">{{ l.name }}</a><span class="tabular text-gray-600 dark:text-gray-400">{{ l.repos }}</span></div>
+          <div class="h-1.5 w-full rounded-full bg-gray-200 dark:bg-gray-700"><div class="h-1.5 rounded-full bg-primary-700 dark:bg-primary-500" style="width: {{ (l.repos * 100 / ix.languages[0].repos) | round }}%"></div></div>
+        </li>
+        {%- endif %}{% endfor %}
+      </ul>
+    </section>
+  </div>
 
   <div class="grid grid-cols-1 gap-4 xl:grid-cols-3">
     {#- Selected work: Flowbite Pro compact list card (admin dashboard 1.1.1, 9D). #}
@@ -181,8 +225,9 @@
     </section>
   </div>
 
+  <div class="grid grid-cols-1 gap-4 xl:grid-cols-3">
   {#- Timeline: Flowbite timeline, newest first, ordered by repository creation (gh.timeline). #}
-  <section class="{{ card }}" aria-labelledby="timeline-title">
+  <section class="{{ card }} xl:col-span-2" aria-labelledby="timeline-title">
     <div class="mb-6 flex items-center justify-between">
       <div>
         <h2 id="timeline-title" class="{{ card_title }}">Timeline</h2>
@@ -214,6 +259,29 @@
       {%- endfor %}
     </div>
   </section>
+
+  {#- Recently active: the latest pushes across every original repository (data/index.json). #}
+  <section class="{{ card }}" aria-labelledby="recent-title">
+    <div class="mb-4 flex items-center justify-between">
+      <h2 id="recent-title" class="{{ card_title }}">Recently active</h2>
+      <a href="{{ base }}repositories/" class="{{ view_all }}">Index{{ <icon name="arrow-right" class="ml-1 h-4 w-4" /> }}</a>
+    </div>
+    <ul class="divide-y divide-gray-200 dark:divide-gray-700">
+      {%- for r in ix.repos %}{% if loop.index <= 9 %}
+      {%- if r.hosts.github is defined %}{% set u = r.hosts.github %}{% else %}{% set u = r.hosts.gitlab %}{% endif %}
+      <li>
+        <a href="{% if r.curated %}{{ base }}projects/?project={{ r.name }}{% else %}{{ u }}{% endif %}" class="group -mx-2 flex items-center justify-between gap-3 rounded-lg px-2 py-2.5 hover:bg-gray-50 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-700">
+          <span class="min-w-0">
+            <span class="block truncate text-sm font-medium text-gray-900 group-hover:underline dark:text-white">{{ r.name }}</span>
+            <span class="block text-xs text-gray-600 dark:text-gray-400">{{ cat.categories[r.category].name }}{% if r.language %} · {{ r.language }}{% endif %}</span>
+          </span>
+          <time datetime="{{ r.pushed_at }}" class="tabular shrink-0 text-xs text-gray-600 dark:text-gray-400">{{ r.pushed_at | date(format="%-d %b") }}</time>
+        </a>
+      </li>
+      {%- endif %}{% endfor %}
+    </ul>
+  </section>
+  </div>
 
   <div class="grid grid-cols-1 gap-4 xl:grid-cols-3">
     {#- Contribution calendar (ECharts) and languages (Chart.js): Flowbite Pro chart cards. #}
@@ -261,5 +329,6 @@
 <script src="{{ get_url(path='js/viz/graph.js', cachebust=true) }}" defer></script>
 <script src="{{ get_url(path='js/viz/activity.js', cachebust=true) }}" defer></script>
 <script src="{{ get_url(path='js/viz/languages.js', cachebust=true) }}" defer></script>
+<script src="{{ get_url(path='js/viz/skillset.js', cachebust=true) }}" defer></script>
 <script src="{{ get_url(path='js/components/majordomus.js', cachebust=true) }}" defer></script>
 {% endblock scripts %}

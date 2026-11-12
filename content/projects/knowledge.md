@@ -7,8 +7,8 @@ weight = 3
 
 [extra]
 category = "knowledge"
-og_title = "Knowledge: 1 project."
+og_title = "Knowledge: 8 repositories."
 og_image = "og/category-knowledge.png"
 schema = "collection"
-keywords = ["Knowledge", "Kompendium", "Tomas Korcak"]
+keywords = ["Knowledge", "Kompendium", "ReadingPhoneNumbersInRealTime", "MinervaEye", "reading", "skull-elixir", "skull", "skull-erlang", "Tomas Korcak"]
 +++

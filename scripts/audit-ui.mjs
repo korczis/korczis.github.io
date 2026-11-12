@@ -32,7 +32,9 @@ const LAYOUT_WIDTHS = [320, 768, 1024, 1920];
 const CLS_LIMIT = 0.1;
 const PAGES = [
   ['home', ''],
+  ['about', 'about/'],
   ['projects', 'projects/'],
+  ['repositories', 'repositories/'],
   ['category', 'projects/science/'],
   ['stack', 'stack/'],
   ['404', '404.html'],

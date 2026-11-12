@@ -7,8 +7,8 @@ weight = 2
 
 [extra]
 category = "science"
-og_title = "Science and visualisation: 4 projects."
+og_title = "Science and visualisation: 14 repositories."
 og_image = "og/category-science.png"
 schema = "collection"
-keywords = ["Science and visualisation", "Oscilla", "algoglyph", "maze-rs", "big-png", "Tomas Korcak"]
+keywords = ["Science and visualisation", "Oscilla", "algoglyph", "maze-rs", "big-png", "distance-calculator", "rustas", "graph-flow", "gooddata-graphql", "maze", "maze-js", "Tomas Korcak"]
 +++

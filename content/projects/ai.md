@@ -7,8 +7,8 @@ weight = 1
 
 [extra]
 category = "ai"
-og_title = "AI engineering: 1 project."
+og_title = "AI engineering: 7 repositories."
 og_image = "og/category-ai.png"
 schema = "collection"
-keywords = ["AI engineering", "Majordomus", "Tomas Korcak"]
+keywords = ["AI engineering", "Majordomus", "korczis.github.io", "osint-case-ratcliffe-moscow-2026", "llm", "sig", "edna", "cognitive-reasoning", "Tomas Korcak"]
 +++

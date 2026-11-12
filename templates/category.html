@@ -4,9 +4,44 @@
 {%- set gh = load_data(path="data/github.json") -%}
 {%- set cat = load_data(path="data/projects.toml") -%}
 {%- set scope = page.extra.category -%}
+{%- set ix = load_data(path="data/index.json") -%}
+{%- set d = ix.categories[scope] | default(value={"repos": 0, "sites": 0, "top_language": "", "since": ""}) -%}
+{%- set_global n_curated = 0 -%}{%- for p in cat.projects -%}{%- if p.category == scope -%}{%- set_global n_curated = n_curated + 1 -%}{%- endif -%}{%- endfor -%}
 {{ <page_header title={page.title} lead={page.description} parent="Projects" parent_url={config.base_url ~ "/projects/"} icon={scope} /> }}
-{%- include "partials/catalogue_kpis.html" %}
+<div class="grid grid-cols-2 gap-4 px-4 pt-6 xl:grid-cols-4">
+  {{ <kpi value={d.repos ~ ""} label="original repositories" note="Inferred from name, description, topics, language" /> }}
+  {{ <kpi value={n_curated ~ ""} label="featured projects" note="Curated, with details below" /> }}
+  {{ <kpi value={d.sites ~ ""} label="with a live site" note="GitHub Pages or a homepage" /> }}
+  {{ <kpi value={d.top_language | default(value="—")} label="most used language" note={"Since " ~ d.since} /> }}
+</div>
+{%- if n_curated > 0 %}
 {%- include "partials/catalogue.html" %}
+{%- endif %}
+{#- Every other original repository inferred into this category (data/index.json). #}
+{%- set_global n_more = 0 -%}{%- for r in ix.repos -%}{%- if r.category == scope and not r.curated -%}{%- set_global n_more = n_more + 1 -%}{%- endif -%}{%- endfor %}
+{%- if n_more > 0 %}
+<section class="px-4 pb-6{% if n_curated == 0 %} pt-6{% endif %}" aria-labelledby="more-title">
+  <div class="rounded-lg bg-white p-4 shadow dark:bg-gray-800 sm:p-6">
+    <div class="mb-4 flex items-center justify-between gap-4">
+      <div>
+        <h2 id="more-title" class="text-xl font-bold leading-none text-gray-900 dark:text-white">{% if n_curated > 0 %}More in {{ page.title }}{% else %}Repositories in {{ page.title }}{% endif %}</h2>
+        <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">{{ n_more }} {% if n_curated > 0 %}more {% endif %}original repositories, inferred into this category from their name, description, topics and language.</p>
+      </div>
+      <a href="{{ config.base_url }}/repositories/?category={{ scope }}" class="inline-flex shrink-0 items-center whitespace-nowrap rounded-lg p-2 text-sm font-medium text-primary-700 hover:bg-gray-100 dark:text-primary-400 dark:hover:bg-gray-700">Open in the index{{ <icon name="arrow-right" class="ml-1 h-4 w-4" /> }}</a>
+    </div>
+    <ul class="grid grid-cols-1 gap-x-8 md:grid-cols-2 2xl:grid-cols-3">
+      {%- for r in ix.repos %}{% if r.category == scope and not r.curated %}
+      {%- if r.hosts.github is defined %}{% set u = r.hosts.github %}{% else %}{% set u = r.hosts.gitlab %}{% endif %}
+      <li class="flex items-baseline justify-between gap-3 border-b border-gray-200 py-2 text-sm dark:border-gray-700">
+        <span class="min-w-0"><a href="{{ u }}" class="font-medium text-gray-900 hover:underline dark:text-white">{{ r.name }}</a>{% if r.description %}<span class="block truncate text-xs text-gray-600 dark:text-gray-400">{{ r.description }}</span>{% endif %}</span>
+        <span class="tabular shrink-0 text-xs text-gray-600 dark:text-gray-400">{% if r.language %}{{ r.language }} · {% endif %}{{ r.created_at | date(format="%Y") }}</span>
+      </li>
+      {%- endif %}{% endfor %}
+    </ul>
+  </div>
+</section>
+{%- endif %}
+
 {#- Neighbouring categories: Flowbite Pro button group, derived from the catalogue. #}
 <nav class="px-4 pb-6" aria-label="Other categories">
   <p class="mb-3 text-sm font-medium text-gray-900 dark:text-white">Other categories</p>

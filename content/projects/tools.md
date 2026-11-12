@@ -3,12 +3,12 @@
 title = "Tools"
 description = "Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist search."
 template = "category.html"
-weight = 6
+weight = 11
 
 [extra]
 category = "tools"
-og_title = "Tools: 3 projects."
+og_title = "Tools: 72 repositories."
 og_image = "og/category-tools.png"
 schema = "collection"
-keywords = ["Tools", "Gists search", "json2csv", "csv2psql", "Tomas Korcak"]
+keywords = ["Tools", "Gists search", "json2csv", "csv2psql", "astronomists", "vomaste.cz", "the-psycho", "unable.cz", "u-tygra", "tinder-nomics", "Tomas Korcak"]
 +++

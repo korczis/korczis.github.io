@@ -7,8 +7,8 @@ weight = 4
 
 [extra]
 category = "data"
-og_title = "Data and GIS: 2 projects."
+og_title = "Data and GIS: 47 repositories."
 og_image = "og/category-data.png"
 schema = "collection"
-keywords = ["Data and GIS", "Data Atlas", "Crisis map", "Tomas Korcak"]
+keywords = ["Data and GIS", "Data Atlas", "Crisis map", "apollo-crawler-extension", "microcrawler-crawler-bam-brno-cz", "microcrawler-crawler-all", "microcrawler-crawler-base", "microcrawler-crawler-craiglist-com", "microcrawler-crawler-firmy-cz", "Tomas Korcak"]
 +++

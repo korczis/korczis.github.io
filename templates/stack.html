@@ -2,6 +2,7 @@
 
 {% block content %}
 {%- set gh = load_data(path="data/github.json") -%}
+{%- set ix = load_data(path="data/index.json") -%}
 {%- set base = config.base_url ~ "/" -%}
 
 {{ <page_header title={page.title} lead={page.description} /> }}
@@ -90,6 +91,9 @@
             ["Live sites", "per project", "HTTPS GET of each project URL; 2xx or 3xx counts as live"],
             ["Majordomus supervision", "per project", "Presence of .ai/manifest.yaml on the default branch"],
             ["Activity", "per project", "Inferred from the last push: Active within 45 days, Maintained within a year, else Archive"],
+            ["Repositories", ix.counts.own ~ " original of " ~ ix.counts.merged, "GitHub and GitLab via gh and glab, merged by name; authorship from contributors"],
+            ["Forks, mirrors, hidden", ix.counts.forks ~ " · " ~ ix.counts.mirrors ~ " · " ~ ix.counts.hidden, "Counted, never listed: forks, other people's code, and the owner's hidden list"],
+            ["Categories", (ix.by_category | length) ~ " inferred", "Rules (keywords, languages) in data/projects.toml"],
             ["Majordomus release", "v" ~ gh.majordomus.version, "majordomus.dev/build.json, re-read live in the browser"]] %}
           <tr class="border-b border-gray-200 bg-white last:border-0 dark:border-gray-700 dark:bg-gray-800">
             <th scope="row" class="whitespace-nowrap px-4 py-3 font-medium text-gray-900 dark:text-white">{{ row[0] }}</th>

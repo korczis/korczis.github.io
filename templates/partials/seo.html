@@ -25,7 +25,7 @@
   {%- else %}
   <meta name="robots" content="noindex, follow">
   {%- endif %}
-  <meta property="og:type" content="{% if schema == 'home' %}profile{% else %}website{% endif %}">
+  <meta property="og:type" content="{% if schema == 'home' or schema == 'profile' %}profile{% else %}website{% endif %}">
   <meta property="og:site_name" content="{{ config.title }}">
   <meta property="og:locale" content="en_GB">
   <meta property="og:title" content="{{ og_t }}">
@@ -36,7 +36,7 @@
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="{{ og_t }} {{ config.extra.author }}, {{ config.base_url | replace(from='https://', to='') }}">
-  {%- if schema == "home" %}
+  {%- if schema == "home" or schema == "profile" %}
   <meta property="profile:first_name" content="Tomas">
   <meta property="profile:last_name" content="Korcak">
   <meta property="profile:username" content="{{ config.extra.github }}">
@@ -57,17 +57,29 @@
      "alternateName": {{ config.extra.github | json_encode | safe }}, "url": {{ (config.base_url ~ "/") | json_encode | safe }},
      "image": {{ (config.base_url ~ "/favicon.svg") | json_encode | safe }},
      "homeLocation": {"@type": "Place", "name": {{ config.extra.location | json_encode | safe }}},
-     "sameAs": ["https://github.com/{{ config.extra.github }}", {{ config.extra.majordomus_url | json_encode | safe }}],
-     "knowsAbout": ["AI agent supervision", "Software engineering", "Scientific visualisation", "Rust", "Elixir", "TypeScript", "OSINT"]},
+     "sameAs": ["https://github.com/{{ config.extra.github }}", "https://gitlab.com/{{ config.extra.github }}", {{ config.extra.majordomus_url | json_encode | safe }}],
+     {%- set sx = load_data(path="data/index.json") %}{% set scat = load_data(path="data/projects.toml") %}
+     "knowsAbout": [{% for key, c in scat.categories %}{{ c.name | json_encode | safe }}, {% endfor %}{% for l in sx.languages %}{% if loop.index <= 6 %}{{ l.name | json_encode | safe }}{% if loop.index < 6 %}, {% endif %}{% endif %}{% endfor %}]},
     {"@type": "WebSite", "@id": {{ website | json_encode | safe }}, "url": {{ (config.base_url ~ "/") | json_encode | safe }},
      "name": {{ config.title | json_encode | safe }}, "description": {{ config.description | json_encode | safe }},
      "inLanguage": "en", "author": {"@id": {{ person | json_encode | safe }}}, "publisher": {"@id": {{ person | json_encode | safe }}}},
-    {"@type": {% if schema == "collection" %}"CollectionPage"{% elif schema == "about" %}"AboutPage"{% elif schema == "home" %}"ProfilePage"{% else %}"WebPage"{% endif %},
+    {"@type": {% if schema == "collection" or schema == "index" %}"CollectionPage"{% elif schema == "about" %}"AboutPage"{% elif schema == "home" or schema == "profile" %}"ProfilePage"{% else %}"WebPage"{% endif %},
      "@id": {{ (url ~ "#webpage") | json_encode | safe }}, "url": {{ url | json_encode | safe }}, "name": {{ t | json_encode | safe }},
      "description": {{ d | json_encode | safe }}, "isPartOf": {"@id": {{ website | json_encode | safe }}},
      "primaryImageOfPage": {"@type": "ImageObject", "url": {{ img | json_encode | safe }}, "width": 1200, "height": 630},
-     {%- if schema == "home" %}
+     {%- if schema == "home" or schema == "profile" %}
      "mainEntity": {"@id": {{ person | json_encode | safe }}},
+     {%- endif %}
+     {%- if schema == "index" %}
+     "mainEntity": {"@type": "ItemList", "numberOfItems": {{ sx.repos | length }}, "itemListElement": [
+       {%- for r in sx.repos %}
+       {%- if r.hosts.github is defined %}{% set u = r.hosts.github %}{% else %}{% set u = r.hosts.gitlab %}{% endif %}
+       {"@type": "ListItem", "position": {{ loop.index }}, "item": {"@type": "SoftwareSourceCode", "name": {{ r.name | json_encode | safe }},
+        {%- if r.description %} "description": {{ r.description | json_encode | safe }},{% endif %}
+        {%- if r.language %} "programmingLanguage": {{ r.language | json_encode | safe }},{% endif %}
+        "codeRepository": {{ u | json_encode | safe }}, "dateCreated": {{ r.created_at | json_encode | safe }}, "dateModified": {{ r.pushed_at | json_encode | safe }},
+        "author": {"@id": {{ person | json_encode | safe }}}}}{% if not loop.last %},{% endif %}
+       {%- endfor %}]},
      {%- endif %}
      {%- if schema == "collection" %}
      {%- set cat = load_data(path="data/projects.toml") %}

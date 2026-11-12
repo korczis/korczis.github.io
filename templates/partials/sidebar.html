@@ -2,6 +2,7 @@
     is derived from data/projects.toml; the active item holds the hover colour, as in the Pro
     template. Below lg it is a Flowbite Drawer; static/js/site.js keeps its accessibility state. -#}
 {%- set cat = load_data(path="data/projects.toml") -%}
+{%- set six = load_data(path="data/index.json") -%}
 {%- set item = "group flex items-center rounded-lg p-2 text-base font-normal text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-700" -%}
 {%- set ico = "h-6 w-6 shrink-0 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" -%}
 {%- set on = " bg-gray-100 font-medium dark:bg-gray-700" -%}
@@ -22,11 +23,12 @@
               </div>
             </form>
           </li>
-          {%- for link in [["Overview", "/", "globe"], ["Projects", "/projects/", "cube"], ["Stack", "/stack/", "code"]] %}
+          {%- for link in [["Overview", "/", "globe"], ["About", "/about/", "book"], ["Projects", "/projects/", "cube"], ["Repositories", "/repositories/", "github"], ["Stack", "/stack/", "code"]] %}
           <li>
             <a href="{{ config.base_url }}{{ link[1] }}" class="{{ item }}{% if here == link[1] %}{{ on }}{% endif %}"{% if here == link[1] %} aria-current="page"{% endif %}>
               {{ <icon name={link[2]} class={ico} /> }}<span class="ml-3 flex-1 whitespace-nowrap">{{ link[0] }}</span>
               {%- if link[1] == "/projects/" %}<span class="{{ badge }}">{{ cat.projects | length }}</span>{% endif %}
+              {%- if link[1] == "/repositories/" %}<span class="{{ badge }}">{{ six.counts.own }}</span>{% endif %}
             </a>
           </li>
           {%- endfor %}
@@ -35,7 +37,7 @@
           <p class="{{ heading }}" id="sidebar-categories">Categories</p>
           <ul class="space-y-1" aria-labelledby="sidebar-categories">
             {%- for key, c in cat.categories %}
-            {%- set_global n = 0 %}{% for p in cat.projects %}{% if p.category == key %}{% set_global n = n + 1 %}{% endif %}{% endfor %}
+            {%- set n = six.by_category[key] | default(value=0) %}
             {%- set path = "/projects/" ~ key ~ "/" %}
             <li>
               <a href="{{ config.base_url }}{{ path }}" class="{{ item }}{% if here == path %}{{ on }}{% endif %}"{% if here == path %} aria-current="page"{% endif %}>

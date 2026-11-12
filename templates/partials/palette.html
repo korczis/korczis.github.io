@@ -1,17 +1,25 @@
 {#- Command palette (⌘K, Ctrl+K or /): a Flowbite Pro modal shell driven by Alpine.js as an ARIA
     combobox. Its index is derived here from the catalogue: pages, categories, projects. -#}
 {%- set pcat = load_data(path="data/projects.toml") -%}
+{%- set pix = load_data(path="data/index.json") -%}
 <script type="application/json" id="palette-data">[
   {"kind": "Page", "name": "Overview", "hint": "Home dashboard", "url": {{ (config.base_url ~ "/") | json_encode | safe }}},
   {"kind": "Page", "name": "Projects", "hint": "The whole catalogue", "url": {{ (config.base_url ~ "/projects/") | json_encode | safe }}},
+  {"kind": "Page", "name": "About", "hint": "Profile, CV, languages over the years", "url": {{ (config.base_url ~ "/about/") | json_encode | safe }}},
+  {"kind": "Page", "name": "Repositories", "hint": "Every original repository on GitHub and GitLab", "url": {{ (config.base_url ~ "/repositories/") | json_encode | safe }}},
   {"kind": "Page", "name": "Stack", "hint": "Tools, practice, pipeline, data", "url": {{ (config.base_url ~ "/stack/") | json_encode | safe }}},
   {"kind": "Page", "name": "Majordomus", "hint": "majordomus.dev", "url": {{ config.extra.majordomus_url | json_encode | safe }}},
   {%- for key, c in pcat.categories %}
   {"kind": "Category", "name": {{ c.name | json_encode | safe }}, "hint": {{ c.description | json_encode | safe }}, "url": {{ (config.base_url ~ "/projects/" ~ key ~ "/") | json_encode | safe }}},
   {%- endfor %}
   {%- for p in pcat.projects %}
-  {"kind": "Project", "name": {{ p.name | json_encode | safe }}, "hint": {{ p.tagline | json_encode | safe }}, "terms": {{ (p.stack | join(sep=" ") ~ " " ~ p.repo) | json_encode | safe }}, "url": {{ (config.base_url ~ "/projects/?project=" ~ p.repo) | json_encode | safe }}}{% if not loop.last %},{% endif %}
+  {"kind": "Project", "name": {{ p.name | json_encode | safe }}, "hint": {{ p.tagline | json_encode | safe }}, "terms": {{ (p.stack | join(sep=" ") ~ " " ~ p.repo) | json_encode | safe }}, "url": {{ (config.base_url ~ "/projects/?project=" ~ p.repo) | json_encode | safe }}},
   {%- endfor %}
+  {%- for r in pix.repos %}{% if not r.curated %}
+  {%- if r.hosts.github is defined %}{% set u = r.hosts.github %}{% else %}{% set u = r.hosts.gitlab %}{% endif %}
+  {"kind": "Repository", "name": {{ r.name | json_encode | safe }}, "hint": {% if r.description %}{{ r.description | json_encode | safe }}{% else %}{{ ("Repository · " ~ r.category) | json_encode | safe }}{% endif %}, "terms": {% if r.language %}{{ (r.language ~ " " ~ r.category) | json_encode | safe }}{% else %}{{ r.category | json_encode | safe }}{% endif %}, "url": {{ u | json_encode | safe }}},
+  {%- endif %}{% endfor %}
+  {"kind": "Page", "name": "llms.txt", "hint": "The catalogue for language models", "url": {{ (config.base_url ~ "/llms.txt") | json_encode | safe }}}
 ]</script>
 <div x-data="palette" x-cloak x-show="open" x-on:keydown.escape.window="close()" class="fixed inset-0 z-50 flex items-start justify-center px-4 pt-20 sm:pt-28"
   role="dialog" aria-modal="true" aria-labelledby="palette-label">

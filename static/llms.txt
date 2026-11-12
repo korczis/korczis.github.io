@@ -9,7 +9,9 @@ Every project below links to its source on GitHub; most have a live site.
 ## Pages
 
 - [Home](https://korczis.github.io/): who I am, featured projects, activity
-- [Projects](https://korczis.github.io/projects/): the full catalogue, filterable
+- [About](https://korczis.github.io/about/): profile, CV, languages over the years, sources
+- [Projects](https://korczis.github.io/projects/): the curated catalogue, filterable, with project details
+- [Repositories](https://korczis.github.io/repositories/): every original repository on GitHub and GitLab
 - [Stack](https://korczis.github.io/stack/): the tools and practices behind every project
 
 ## AI engineering
@@ -59,4 +61,6 @@ Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist s
 ## Optional
 
 - [Majordomus](https://majordomus.dev): the supervisory layer this site is built under
+- [Full index for language models](https://korczis.github.io/llms-full.txt): every original repository with its links
 - [GitHub profile](https://github.com/korczis)
+- [GitLab profile](https://gitlab.com/korczis)

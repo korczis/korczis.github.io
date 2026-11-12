@@ -52,7 +52,13 @@ KorczisHub.viz('activity', {
           monthLabel: { color: c.muted, fontSize: 10 },
           yearLabel: { show: false },
         },
-        series: [{ type: 'heatmap', coordinateSystem: 'calendar', data: days }],
+        series: [{
+          type: 'heatmap',
+          coordinateSystem: 'calendar',
+          data: days,
+          itemStyle: { borderRadius: 2, borderColor: c.surface, borderWidth: 2 },
+          emphasis: { itemStyle: { borderColor: c.strong, borderWidth: 1 } },
+        }],
       };
     };
 
