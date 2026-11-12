@@ -1,0 +1,38 @@
+name: Monitor
+
+# The public site must keep working after it shipped: once a day (and on demand) the production
+# site is audited in a real browser and every linked live project is asked whether it answers.
+on:
+  schedule:
+    - cron: '17 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  production:
+    name: Production in the browser
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      BASE_URL: https://korczis.github.io/
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup
+      - name: Build the site the link check reads
+        run: npm run build
+      - name: Production in the browser (axe-core WCAG 2.2 AA, CLS, overflow, visuals, links)
+        run: |
+          npx playwright-core install chromium-headless-shell
+          SITE_DIR=public node scripts/audit-ui.mjs --shots "$RUNNER_TEMP/shots"
+      - name: Every live project site answers
+        run: node scripts/check-live.mjs
+      - name: Upload screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: monitor-screenshots
+          path: ${{ runner.temp }}/shots
+          retention-days: 7
+          if-no-files-found: ignore

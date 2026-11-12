@@ -27,6 +27,8 @@ attention to UI, UX and consistency.
   deployment, with screenshots as an artefact. Locally: `npm run verify` (one browser launch;
   mind the headless Chrome disk cost on the owner's Mac).
 - A new page is added to `PAGES` in `scripts/audit-ui.mjs` in the same change.
+- The public site is audited the same way after every deployment (`pages.yml` job `verify`) and
+  daily (`monitor.yml`), with `scripts/check-live.mjs` asking every linked live project.
 
 # Failure behaviour
 

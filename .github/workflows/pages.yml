@@ -67,6 +67,12 @@ jobs:
     env:
       BASE_URL: ${{ needs.deploy.outputs.page_url }}
     steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
       - name: Production serves this commit
         run: |
           for attempt in $(seq 1 40); do
@@ -86,3 +92,23 @@ jobs:
             test "$code" = 200
           done
           curl -fsS "${BASE_URL}" | grep -q 'Software that proves its'
+      # The public site, in a real browser: the same audit as CI, against production.
+      - name: Download the deployed site (for the link check)
+        uses: actions/download-artifact@v4
+        with:
+          name: site
+          path: site
+      - name: Production in the browser (axe-core WCAG 2.2 AA, CLS, overflow, visuals, links)
+        run: |
+          npx playwright-core install chromium-headless-shell
+          SITE_DIR=site node scripts/audit-ui.mjs --shots "$RUNNER_TEMP/shots"
+      - name: Every live project site answers
+        run: node scripts/check-live.mjs
+      - name: Upload production screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: production-screenshots
+          path: ${{ runner.temp }}/shots
+          retention-days: 7
+          if-no-files-found: ignore

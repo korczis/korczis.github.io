@@ -59,6 +59,7 @@ also need [majordomus](https://majordomus.dev).
 | Build, internal links | `npm run build` | `project.site-zola-pages` |
 | Flowbite Pro fidelity | `node ~/.claude/skills/flowbite-pro/verify.mjs .` (local) | `project.ui-uses-flowbite-pro` |
 | Browser audit | `scripts/audit-ui.mjs`: axe WCAG 2.2 AA, CLS, overflow, visuals, links | `project.ui-quality-gate` |
+| Live projects | `node scripts/check-live.mjs` (after deploy and daily) | `project.data-measured` |
 | Supervision | `majordomus doctor` (pre-commit hook and CI) | the Majordomus baseline |
 
 ## Deploy
@@ -67,8 +68,12 @@ A push to `master` runs `.github/workflows/pages.yml` in three stages:
 
 1. `ci`: the same workflow pull requests run.
 2. `deploy`: deploys the validated artefact to Pages.
-3. `verify`: checks that production serves `revision.txt` equal to the commit, then smoke-tests
-   every page and asset.
+3. `verify`: checks that production serves `revision.txt` equal to the commit and smoke-tests
+   every page and asset. It then runs the same browser audit against the public site and asks
+   every linked live project whether it answers.
+
+`.github/workflows/monitor.yml` repeats that production check every day, and you can also start
+it by hand from the Actions tab.
 
 The repository is public and declares `ui.kit: flowbite-pro`. Because of that, CI's
 `majordomus doctor` fails closed until the owner stores the licence evidence. Do it once:
