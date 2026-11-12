@@ -59,6 +59,11 @@ KorczisHub.viz('skillset', {
     const resize = new ResizeObserver(() => chart.resize());
     resize.observe(box);
     return {
+      // The list twin: each category (its page), then its languages (the index filtered to both).
+      items: () => data().flatMap((cat) => [
+        { label: cat.name, url: `${KorczisHub.home}projects/${cat.key}/`, note: KorczisHub.t('js_n_repositories', { n: cat.value }) },
+        ...cat.children.map((l) => ({ label: `${cat.name} · ${l.name}`, url: `${KorczisHub.home}repositories/?category=${cat.key}&language=${encodeURIComponent(l.lang)}`, note: KorczisHub.t('js_n_repositories', { n: l.value }) })),
+      ]),
       update() { chart.setOption(option(), true); },
       destroy() { resize.disconnect(); chart.dispose(); },
     };

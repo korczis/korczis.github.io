@@ -155,6 +155,9 @@ KorczisHub.viz('atlas', {
     };
 
     draw();
-    return { update: draw, destroy: () => simulation?.stop() };
+    // The list twin: every term, the most used first.
+    const items = () => [...nodes].sort((a, b) => b.n - a.n || a.title.localeCompare(b.title))
+      .map((d) => ({ label: d.title, url: d.url, note: `${source.kinds[d.kind]} · ${KorczisHub.t('js_n_pages', { n: d.n })}` }));
+    return { update: draw, items, destroy: () => simulation?.stop() };
   },
 });

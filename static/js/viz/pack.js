@@ -76,6 +76,8 @@ KorczisHub.viz('pack', {
     draw();
     const resize = new ResizeObserver(() => draw());
     resize.observe(box);
-    return { update: draw, destroy() { resize.disconnect(); d3.select(box).select('svg').remove(); } };
+    // The list twin: every bubble, largest first.
+    const list = () => items.map((d) => ({ label: d.name, url: d.url, note: KorczisHub.t(unit, { n: d.value }) }));
+    return { update: draw, items: list, destroy() { resize.disconnect(); d3.select(box).select('svg').remove(); } };
   },
 });

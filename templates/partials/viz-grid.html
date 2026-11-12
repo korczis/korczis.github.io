@@ -21,6 +21,7 @@
     <h2 id="{{ id }}-title" class="text-xl font-bold leading-none text-gray-900 dark:text-white">{{ trans(key=v.title, lang=lang) }}</h2>
     <p class="mb-4 mt-1 text-sm text-gray-600 dark:text-gray-400">{{ trans(key=v.lead, lang=lang) }}</p>
     <div class="viz-box {{ h }}{% if v.tone is defined and v.tone == "night" %} overflow-hidden rounded-lg bg-gray-950 ring-1 ring-gray-800{% endif %}" data-viz="{{ v.kind }}" data-source="{{ id }}-data" role="img" aria-label="{{ trans(key=v.lead, lang=lang) }}">{% if v.kind == "graph" or v.kind == "skillset" %}<div data-canvas class="h-full w-full"></div>{% endif %}</div>
+    {%- include "partials/viz-list.html" %}
     <script type="application/json" id="{{ id }}-data">
       {%- if v.source == "github.contributions" %}{{ vgh.contributions | json_encode | safe }}
       {%- elif v.source == "github.languages" %}{{ vgh.languages | json_encode | safe }}

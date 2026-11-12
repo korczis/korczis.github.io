@@ -119,6 +119,12 @@ KorczisHub.viz('graph', {
     box.dataset.nodes = String(cy.nodes().length);
 
     return {
+      // The list twin: projects first, then technologies by use, each where a tap would go.
+      items: () => [
+        ...projects.map((p) => ({ label: p.name, url: `${KorczisHub.home}projects/?project=${p.repo}`, note: p.stack.join(', ') })),
+        ...[...techs].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+          .map(([tech, uses]) => ({ label: tech, url: `${KorczisHub.home}repositories/?q=${encodeURIComponent(tech.toLowerCase())}`, note: String(uses) })),
+      ],
       update() {
         cy.style(style());
       },

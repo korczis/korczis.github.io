@@ -67,6 +67,14 @@ for (const file of walk(join(ROOT, 'content')).filter((f) => f.endsWith('.md')))
   }
 }
 
+// Every visual box in a template (but the decorative hero) is followed by its list twin.
+for (const file of walk(join(ROOT, 'templates')).filter((f) => f.endsWith('.html'))) {
+  const text = readFileSync(file, 'utf8');
+  const boxes = [...text.matchAll(/data-viz="([\w-]+)"/g)].filter((m) => m[1] !== 'glyphs').length;
+  const twins = (text.match(/partials\/viz-list\.html/g) || []).length;
+  if (boxes > twins) findings.push(`${file.slice(ROOT.length + 1)}: ${boxes} visual(s) but ${twins} list twin(s); include partials/viz-list.html after each box`);
+}
+
 // Taxonomy pages have no front matter; their visuals are declared in data/site.toml.
 {
   const site = parse(readFileSync(join(ROOT, 'data/site.toml'), 'utf8'));
@@ -84,6 +92,8 @@ for (const file of walk(join(ROOT, 'static/js/viz')).filter((f) => f.endsWith('.
   const name = basename(file, '.js');
   if (name !== 'glyphs' && !/\.on\(\s*'(?:click|tap)'|onClick\s*:|addEventListener\(\s*'(?:click|pointerup)'|window\.addEventListener\(\s*'pointerup'/.test(text)) findings.push(`${rel}: answers no click or tap; every visual leads somewhere`);
   // ECharts shows the pointer itself on a series with a click handler; glyphs is the decorative hero.
+  // ... and has a keyboard and screen-reader twin: items() for the list under its card (WCAG 2.1.1).
+  if (name !== 'glyphs' && !/\bitems(?:\s*:|,|\s*\(\)\s*=>|\s*=)/.test(text)) findings.push(`${rel}: returns no items(); the list twin of a visual is how a keyboard reaches it`);
   if (name !== 'glyphs' && !/echarts\.init/.test(text) && !/cursor/.test(text)) findings.push(`${rel}: never sets the pointer cursor; show what is clickable`);
   if (!used.has(name)) findings.push(`${rel}: no template or front matter uses visual '${name}'; remove it or use it`);
 }

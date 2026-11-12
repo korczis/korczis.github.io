@@ -1365,3 +1365,7 @@ cs = "Štítky, které chodí s tímto"
 [viz_tag_together_lead]
 en = "The tags that share pages with this tag, sized by how many; click one to walk on."
 cs = "Štítky, které sdílejí stránky s tímto štítkem, velké podle počtu; kliknutím pokračujete dál."
+
+[viz_as_list]
+en = "Show as a list"
+cs = "Zobrazit jako seznam"

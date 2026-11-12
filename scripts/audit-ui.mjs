@@ -292,6 +292,37 @@ async function checkPalette(browser) {
   return findings;
 }
 
+// Every visual has a keyboard twin (rule project.viz-component-layer): its "show as a list" opens
+// from the keyboard, fills with real links, and Tab reaches the first of them.
+async function checkLists(browser) {
+  const findings = [];
+  const context = await browser.newContext({ viewport: { width: 1280, height: 900 }, reducedMotion: 'reduce' });
+  const page = await context.newPage();
+  for (const rel of ['', 'glossary/', 'work/', 'tags/']) {
+    await page.goto(`${BASE}${rel}`, { waitUntil: 'networkidle' });
+    const count = await page.locator('details[data-viz-list]').count();
+    if (!count) findings.push(`/${rel}: no list twin`);
+    for (let i = 0; i < count; i += 1) {
+      const details = page.locator('details[data-viz-list]').nth(i);
+      const box = page.locator('details[data-viz-list]').nth(i).locator('xpath=preceding-sibling::*[1]');
+      await box.scrollIntoViewIfNeeded();
+      await page.waitForFunction((el) => ['ready', 'error'].includes(el.dataset.vizState), await box.elementHandle(), { timeout: 15000 }).catch(() => {});
+      const kind = await box.getAttribute('data-viz');
+      await details.locator('summary').focus();
+      await page.keyboard.press('Enter');
+      // The list fills on the toggle event, which fires after the keypress task: wait for a link.
+      await details.locator('ul a[href]').first().waitFor({ timeout: 3000 }).catch(() => {});
+      const links = await details.locator('ul a[href]').count();
+      if (!links) { findings.push(`/${rel}: the ${kind} list opened empty`); continue; }
+      await page.keyboard.press('Tab');
+      const focused = await page.evaluate((el) => el.contains(document.activeElement) && document.activeElement.tagName === 'A', await details.elementHandle());
+      if (!focused) findings.push(`/${rel}: Tab from the ${kind} list summary did not reach its first link`);
+    }
+  }
+  await context.close();
+  return findings;
+}
+
 const browser = await chromium.launch();
 const results = [];
 let failed = 0;
@@ -304,6 +335,16 @@ try {
       for (const f of palette) console.log(`     ${f}`);
     } else {
       console.log('ok   palette: Ctrl+K opens with focus, Escape closes, search ranks, Enter opens the project');
+    }
+  }
+  if (!ONLY || ONLY.test('lists')) {
+    const lists = await checkLists(browser).catch((error) => [`threw: ${error.message.split('\n')[0]}`]);
+    if (lists.length) {
+      failed += 1;
+      console.log('FAIL visual list twins');
+      for (const f of lists) console.log(`     ${f}`);
+    } else {
+      console.log('ok   lists: every visual on /, /glossary/, /work/, /tags/ opens as a list of links from the keyboard');
     }
   }
   if (!ONLY || ONLY.test('detail')) {

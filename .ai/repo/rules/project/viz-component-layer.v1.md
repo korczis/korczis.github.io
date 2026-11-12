@@ -56,6 +56,12 @@ theme change, error reporting and the ready state the audit waits for.
   no front matter: their visuals are declared in `data/site.toml` (`[[taxonomy.list_viz]]`,
   `[[taxonomy.single_viz]]`; the tag index as bubbles, a tag as the tags it shares pages with),
   resolved by `base.html` and `viz-grid`, and checked by the same gates.
+- Every visual has a keyboard and screen-reader twin (WCAG 2.1.1): the template renders an empty
+  `partials/viz-list.html` (`<details data-viz-list>`) right after the box, and the visual's
+  handle returns `items()` (label, url, note), which the layer turns into real links when the list
+  is opened (live visuals list what they show now). `check-viz-layer` refuses a visual without
+  `items()` and a template box without its twin; the audit's `lists` test opens every list from the
+  keyboard and tabs into it.
 - Motion respects `prefers-reduced-motion`; a decorative visual is `aria-hidden`.
 - Alpine.js components live in `static/js/components/` and only enhance markup the template
   already rendered.

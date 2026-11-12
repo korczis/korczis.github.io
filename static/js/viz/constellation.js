@@ -196,6 +196,11 @@ KorczisHub.viz('constellation', {
     draw();
     kick();
     return {
+      // The list twin: the lit category's stars when a category page focuses one, else every star;
+      // newest first.
+      items: () => stars.filter((s) => focusArm === null || s.arm === focusArm)
+        .sort((a, b) => b.year - a.year || a.name.localeCompare(b.name))
+        .map((s) => ({ label: s.name, url: s.url, note: `${source.categories[s.category]}${s.language ? ` · ${s.language}` : ''} · ${s.year}` })),
       update() { resize(); draw(); },
       destroy() { running = false; cancelAnimationFrame(frame); sight.disconnect(); onResize.disconnect(); canvas.remove(); },
     };

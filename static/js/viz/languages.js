@@ -73,6 +73,9 @@ KorczisHub.viz('languages', {
 
     let chart = new Chart(canvas, config());
     return {
+      // The list twin: every language but "Other", each opening the index filtered to it.
+      items: () => source.filter((l) => l.name !== 'Other')
+        .map((l) => ({ label: l.name, url: `${KorczisHub.home}repositories/?language=${encodeURIComponent(l.name)}`, note: KorczisHub.t('js_n_repositories', { n: l.repos }) })),
       update() {
         chart.destroy();
         chart = new Chart(canvas, config());

@@ -65,6 +65,9 @@ KorczisHub.viz('spiral', {
     draw();
     const resize = new ResizeObserver(() => draw());
     resize.observe(box);
-    return { update: draw, destroy() { resize.disconnect(); d3.select(box).select('svg').remove(); } };
+    // The list twin: the busiest 40 days of the year, each opening that day's activity on GitHub.
+    const items = () => (KorczisHub.github ? days.filter((x) => x.count).sort((a, b) => b.count - a.count || b.date.localeCompare(a.date)).slice(0, 40)
+      .map((x) => ({ label: x.date, url: `https://github.com/${KorczisHub.github}?tab=overview&from=${x.date}&to=${x.date}`, note: KorczisHub.t('js_n_contributions', { n: x.count }) })) : []);
+    return { update: draw, items, destroy() { resize.disconnect(); d3.select(box).select('svg').remove(); } };
   },
 });

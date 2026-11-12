@@ -88,6 +88,7 @@
         aria-label="{{ trans(key="aria_sunburst", lang=lang) | replace(from="{n}", to=ix.recent.size ~ "") }}">
         <div data-canvas></div>
       </div>
+      {%- include "partials/viz-list.html" %}
       <script type="application/json" id="skillset-data">{"mix": {{ ix.recent.mix | json_encode | safe }}, "names": { {%- for key, c in cat.categories %}{{ key | json_encode | safe }}: {{ c["name" ~ sfx] | json_encode | safe }}{% if not loop.last %}, {% endif %}{% endfor -%} }}</script>
     </section>
     <section class="{{ card }}" aria-labelledby="tech-title">
@@ -199,6 +200,7 @@
         aria-label="{{ trans(key="aria_graph", lang=lang) | replace(from="{n}", to=cat.projects | length ~ "") | replace(from="{m}", to=supervised_count ~ "") }}">
         <div data-canvas></div>
       </div>
+      {%- include "partials/viz-list.html" %}
       <p class="mt-3 border-t border-gray-200 pt-3 text-xs text-gray-600 dark:border-gray-700 dark:text-gray-400">
         {{ trans(key="supervision_is_measured_a_project_counts", lang=lang) | safe }} <code class="font-mono">.ai/manifest.yaml</code>.
       </p>

@@ -72,6 +72,12 @@ KorczisHub.viz('stream', {
     draw();
     const resize = new ResizeObserver(() => draw());
     resize.observe(box);
-    return { update: draw, destroy() { resize.disconnect(); d3.select(box).select('svg').remove(); } };
+    // The list twin: each language stream with its repositories and years, opening the index.
+    const items = () => top.map((lang) => {
+      const active = rows.filter((r) => r[lang] > 0);
+      const n = active.reduce((sum, r) => sum + r[lang], 0);
+      return { label: lang, url: `${KorczisHub.home}repositories/?language=${encodeURIComponent(lang)}`, note: `${KorczisHub.t('js_n_repositories', { n })} · ${active[0]?.year ?? ''}–${active.at(-1)?.year ?? ''}` };
+    });
+    return { update: draw, items, destroy() { resize.disconnect(); d3.select(box).select('svg').remove(); } };
   },
 });

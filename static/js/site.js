@@ -111,11 +111,44 @@
       const source = box.dataset.source ? data(box.dataset.source) : null;
       const handle = (await spec.mount(box, source, { palette, reducedMotion, isDark })) || {};
       mounted.set(box, handle);
+      list(box, handle);
       box.dataset.vizState = 'ready';
     } catch (error) {
       box.dataset.vizState = 'error';
       console.error(`[hub] ${name}:`, error);
     }
+  }
+
+  // The keyboard and screen-reader twin of a visual (WCAG 2.1.1): every item the visual makes
+  // clickable, as a list of real links. The page renders an empty <details data-viz-list> right
+  // after the box (so nothing shifts); the visual's handle.items() fills it when it is opened, and
+  // again on every opening, so a live visual lists what it shows now.
+  function list(box, handle) {
+    const details = box.nextElementSibling;
+    if (!details || !details.matches('details[data-viz-list]') || typeof handle.items !== 'function') return;
+    const ul = details.querySelector('ul');
+    const fill = () => {
+      ul.replaceChildren();
+      for (const item of handle.items().slice(0, 250)) {
+        const li = document.createElement('li');
+        li.className = 'flex items-baseline justify-between gap-3 border-b border-gray-200 py-1.5 dark:border-gray-700';
+        const a = document.createElement('a');
+        a.href = item.url;
+        a.textContent = item.label;
+        a.className = 'min-w-0 truncate font-medium text-primary-700 hover:underline dark:text-primary-300';
+        if (/^https?:/.test(item.url) && !item.url.startsWith(location.origin)) a.rel = 'noopener';
+        li.append(a);
+        if (item.note) {
+          const note = document.createElement('span');
+          note.className = 'tabular shrink-0 text-xs text-gray-600 dark:text-gray-400';
+          note.textContent = item.note;
+          li.append(note);
+        }
+        ul.append(li);
+      }
+    };
+    details.addEventListener('toggle', () => { if (details.open) fill(); });
+    if (details.open) fill();
   }
 
   function scan() {

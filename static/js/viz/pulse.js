@@ -395,6 +395,9 @@ KorczisHub.viz('pulse', {
     }, POLL);
 
     return {
+      // The list twin: what the pulse shows now (live or snapshot), newest first.
+      items: () => [...beats].sort((a, b) => b.at - a.at)
+        .map((b) => ({ label: `${b.repo}: ${b.message || KorczisHub.t(`js_pulse_${b.type}`)}`, url: b.url, note: ago(b.at) })),
       update() {
         resize();
         draw(performance.now());
