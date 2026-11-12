@@ -44,8 +44,13 @@ for (const file of walk(join(ROOT, 'templates')).filter((f) => f.endsWith('.html
     if (!registered.has(name)) findings.push(`${rel}: data-viz="${name}" has no static/js/viz/${name}.js`);
     if (!text.includes(`js/viz/${name}.js`)) findings.push(`${rel}: uses data-viz="${name}" but does not load js/viz/${name}.js`);
   }
-  for (const [, url] of text.matchAll(/<(?:script|link)[^>]+(?:src|href)="(https?:\/\/[^"]+)"/g)) {
-    findings.push(`${rel}: loads ${url} from another origin; self-host it (scripts/vendor.mjs)`);
+  // Only what the browser fetches counts: scripts and stylesheet, preload or icon links. A link
+  // that merely names another page (rel=me, canonical, alternate) loads nothing.
+  for (const [tag] of text.matchAll(/<(?:script|link)\b[^>]*>/g)) {
+    const url = (tag.match(/(?:src|href)="(https?:\/\/[^"]+)"/) || [])[1];
+    if (!url) continue;
+    const fetched = tag.startsWith('<script') || /rel="(?:stylesheet|preload|modulepreload|icon|apple-touch-icon|manifest)"/.test(tag);
+    if (fetched) findings.push(`${rel}: loads ${url} from another origin; self-host it (scripts/vendor.mjs)`);
   }
 }
 
