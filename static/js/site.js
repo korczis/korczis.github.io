@@ -169,5 +169,61 @@
     queueMicrotask(scan);
   });
 
+  // --- Sidebar: Flowbite Drawer owns open, close, Escape, backdrop and scroll lock below lg. --------
+  // The Pro shell stacks navbar z-30 > sidebar z-20 > backdrop z-10; Flowbite's default backdrop
+  // (z-30) would lie over the drawer and swallow every tap in it (Kompendium, measured). From lg
+  // up the sidebar is always visible, so it must not stay aria-hidden; below lg a closed drawer is
+  // inert, opening moves focus in and closing returns it to the toggle. Attributes are written
+  // only when they change, because the observer below watches them.
+  const DRAWER_BACKDROP = 'fixed inset-0 z-10 bg-gray-900/50 dark:bg-gray-900/90';
+  const sidebar = document.getElementById('sidebar');
+  const sidebarToggle = document.getElementById('toggleSidebarMobile');
+  const desktop = window.matchMedia('(min-width: 1024px)');
+  let drawer = null;
+
+  function setAttr(name, value) {
+    if (value === null) {
+      if (sidebar.hasAttribute(name)) sidebar.removeAttribute(name);
+    } else if (sidebar.getAttribute(name) !== value) {
+      sidebar.setAttribute(name, value);
+    }
+  }
+
+  function syncSidebar() {
+    if (!sidebar) return;
+    if (desktop.matches) {
+      if (drawer && drawer.isVisible()) drawer.hide();
+      setAttr('aria-hidden', null);
+      setAttr('inert', null);
+      return;
+    }
+    const closed = sidebar.getAttribute('aria-hidden') === 'true' || sidebar.classList.contains('-translate-x-full');
+    setAttr('inert', closed ? '' : null);
+    if (closed) setAttr('aria-hidden', 'true');
+  }
+
+  if (sidebar) {
+    // Registered after flowbite.min.js registered its own load handler, so it runs after initDrawers.
+    window.addEventListener('load', () => {
+      drawer = window.FlowbiteInstances?.getInstance('Drawer', 'sidebar') ?? null;
+      if (drawer?._options) drawer._options.backdropClasses = DRAWER_BACKDROP;
+      syncSidebar();
+    });
+    let wasOpen = false;
+    new MutationObserver(() => {
+      syncSidebar();
+      if (desktop.matches) return;
+      const open = !sidebar.hasAttribute('inert');
+      sidebarToggle?.setAttribute('aria-expanded', open ? 'true' : 'false');
+      if (open && !wasOpen) sidebar.querySelector('a[href], input')?.focus();
+      else if (!open && wasOpen && (sidebar.contains(document.activeElement) || document.activeElement === document.body)) {
+        sidebarToggle?.focus();
+      }
+      wasOpen = open;
+    }).observe(sidebar, { attributes: true, attributeFilter: ['aria-hidden', 'class'] });
+    desktop.addEventListener('change', syncSidebar);
+    syncSidebar();
+  }
+
   window.KorczisHub = { viz, lib, data, palette, reducedMotion, isDark, base };
 })();

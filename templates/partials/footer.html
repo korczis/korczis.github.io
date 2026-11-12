@@ -1,0 +1,19 @@
+{#- Flowbite Pro application shell: footer card (admin dashboard 1.1.1, section 2). -#}
+<footer class="mx-4 my-6 rounded-lg bg-white p-4 shadow dark:bg-gray-800 md:flex md:items-center md:justify-between md:p-6 xl:p-8">
+  <div>
+    <p class="mb-1 flex items-center gap-2 font-semibold text-gray-900 dark:text-white">
+      <img src="{{ get_url(path='favicon.svg') }}" class="h-6 w-6" width="24" height="24" alt="">Tomas Korcak
+    </p>
+    <p class="text-sm text-gray-600 dark:text-gray-400">
+      © 2010–{{ now() | date(format="%Y") }} · {{ config.extra.location }} · Zola and Flowbite Pro, supervised by
+      <a href="{{ config.extra.majordomus_url }}" class="font-medium text-primary-700 hover:underline dark:text-primary-400">Majordomus</a>
+    </p>
+  </div>
+  <ul class="mt-4 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-gray-900 dark:text-gray-200 md:mt-0">
+    <li><a href="{{ config.base_url }}/projects/" class="hover:underline">Projects</a></li>
+    <li><a href="{{ config.base_url }}/stack/" class="hover:underline">Stack</a></li>
+    <li><a href="{{ config.base_url }}/stack/#data" class="hover:underline">Data</a></li>
+    <li><a href="{{ get_url(path='llms.txt') }}" class="hover:underline">llms.txt</a></li>
+    <li><a href="{{ config.extra.repo_url }}" class="hover:underline">Source</a></li>
+  </ul>
+</footer>

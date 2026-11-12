@@ -25,74 +25,20 @@
   <link rel="stylesheet" href="{{ get_url(path='css/app.css', cachebust=true) }}">
   {%- block head %}{% endblock head %}
 </head>
-<body class="bg-white text-gray-900 antialiased dark:bg-gray-900 dark:text-white">
+<body class="bg-gray-50 text-gray-900 antialiased dark:bg-gray-900 dark:text-white">
   <a href="#main" class="sr-only z-50 rounded-lg bg-primary-700 px-4 py-2 text-white focus:not-sr-only focus:fixed focus:left-4 focus:top-4">Skip to content</a>
-
-  {#- Flowbite Pro marketing header (headers/default), adapted: brand, collapse menu, actions. #}
-  <header class="fixed inset-x-0 top-0 z-40">
-    <nav class="border-b border-gray-200 bg-white/90 px-4 py-2.5 backdrop-blur dark:border-gray-700 dark:bg-gray-900/90 lg:px-6" aria-label="Main">
-      <div class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between">
-        <a href="{{ base }}" class="flex items-center gap-3">
-          <img src="{{ get_url(path='favicon.svg') }}" class="h-8 w-8" width="32" height="32" alt="">
-          <span class="self-center whitespace-nowrap text-xl font-semibold text-gray-900 dark:text-white">Tomas Korcak</span>
-        </a>
-        <div class="flex items-center gap-1 lg:order-2">
-          <button id="theme-toggle" type="button" data-js data-tooltip-target="tooltip-theme" class="rounded-lg p-2.5 text-sm text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-700">
-            <span class="sr-only">Toggle dark mode</span>
-            {{ <icon name="moon" class="h-5 w-5 dark:hidden" /> }}
-            {{ <icon name="sun" class="hidden h-5 w-5 dark:block" /> }}
-          </button>
-          <div id="tooltip-theme" role="tooltip" class="tooltip invisible absolute z-10 inline-block rounded-lg bg-gray-900 px-3 py-2 text-sm font-medium text-white opacity-0 shadow-sm transition-opacity duration-300 dark:bg-gray-700">Toggle dark mode<div class="tooltip-arrow" data-popper-arrow></div></div>
-          <a href="https://github.com/{{ config.extra.github }}" class="rounded-lg p-2.5 text-gray-600 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700">
-            <span class="sr-only">GitHub profile</span>{{ <icon name="github" class="h-5 w-5" /> }}
-          </a>
-          <a href="{{ config.extra.majordomus_url }}" class="ml-2 hidden items-center rounded-lg bg-primary-700 px-4 py-2 text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 sm:inline-flex">
-            {{ <icon name="shield" class="mr-2 h-4 w-4" /> }}Majordomus
-          </a>
-          <button data-collapse-toggle="main-menu" type="button" class="ml-1 inline-flex items-center rounded-lg p-2 text-sm text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 lg:hidden" aria-controls="main-menu" aria-expanded="false">
-            <span class="sr-only">Open main menu</span>{{ <icon name="menu" class="h-6 w-6" /> }}
-          </button>
-        </div>
-        <div id="main-menu" class="hidden w-full items-center justify-between lg:order-1 lg:flex lg:w-auto">
-          <ul class="mt-4 flex flex-col font-medium lg:mt-0 lg:flex-row lg:space-x-8">
-            {%- for item in [["Home", "/"], ["Projects", "/projects/"], ["Stack", "/stack/"]] %}
-            {%- set active = here == item[1] %}
-            <li>
-              <a href="{{ config.base_url }}{{ item[1] }}"{% if active %} aria-current="page"{% endif %}
-                class="block rounded-lg px-3 py-2 lg:p-0 {% if active %}bg-primary-700 text-white lg:bg-transparent lg:text-primary-700 lg:dark:text-primary-400{% else %}text-gray-700 hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-primary-700 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent{% endif %}">{{ item[0] }}</a>
-            </li>
-            {%- endfor %}
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <main id="main" class="pt-16">
-    {%- block content %}{% endblock content %}
-  </main>
-
-  {#- Flowbite Pro footer (footer-sections/default), adapted. #}
-  <footer class="border-t border-gray-200 bg-gray-50 dark:border-gray-700 dark:bg-gray-800">
-    <div class="mx-auto flex max-w-screen-xl flex-col items-center p-4 text-center md:p-8 lg:p-10">
-      <a href="{{ base }}" class="flex items-center gap-3 text-2xl font-semibold text-gray-900 dark:text-white">
-        <img src="{{ get_url(path='favicon.svg') }}" class="h-8 w-8" width="32" height="32" alt="">Tomas Korcak
-      </a>
-      <p class="my-6 max-w-xl text-gray-600 dark:text-gray-400">{{ config.description }}</p>
-      <ul class="mb-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-gray-900 dark:text-white">
-        <li><a href="{{ base }}projects/" class="hover:underline">Projects</a></li>
-        <li><a href="{{ base }}stack/" class="hover:underline">Stack</a></li>
-        <li><a href="{{ config.extra.majordomus_url }}" class="hover:underline">Majordomus</a></li>
-        <li><a href="https://github.com/{{ config.extra.github }}" class="hover:underline">GitHub</a></li>
-        <li><a href="{{ get_url(path='llms.txt') }}" class="hover:underline">llms.txt</a></li>
-      </ul>
-      <p class="text-sm text-gray-600 dark:text-gray-400">
-        © 2010–{{ now() | date(format="%Y") }} {{ config.extra.author }} · {{ config.extra.location }} ·
-        Built with Zola and Flowbite Pro, supervised by <a href="{{ config.extra.majordomus_url }}" class="font-medium text-primary-700 hover:underline dark:text-primary-400">Majordomus</a> ·
-        <a href="{{ config.extra.repo_url }}" class="font-medium text-primary-700 hover:underline dark:text-primary-400">source</a>
-      </p>
+  {#- Flowbite Pro application shell (admin dashboard 1.1.1, section 2): navbar z-30, sidebar z-20,
+      drawer backdrop z-10, content beside the sidebar from lg up. #}
+  {%- include "partials/navbar.html" %}
+  <div class="flex overflow-hidden bg-gray-50 pt-16 dark:bg-gray-900">
+    {%- include "partials/sidebar.html" %}
+    <div id="main-content" class="relative h-full w-full min-w-0 overflow-y-auto bg-gray-50 dark:bg-gray-900 lg:ml-64">
+      <main id="main" tabindex="-1" class="focus:outline-none">
+        {%- block content %}{% endblock content %}
+      </main>
+      {%- include "partials/footer.html" %}
     </div>
-  </footer>
+  </div>
 
   <script src="{{ config.base_url }}/js/vendor/flowbite.min.js" defer></script>
   <script src="{{ get_url(path='js/site.js', cachebust=true) }}" defer></script>

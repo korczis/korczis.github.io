@@ -1,0 +1,60 @@
+{#- Flowbite Pro application shell: sidebar drawer (admin dashboard 1.1.1, section 4). Every count
+    is derived from data/projects.toml; the active item holds the hover colour, as in the Pro
+    template. Below lg it is a Flowbite Drawer; static/js/site.js keeps its accessibility state. -#}
+{%- set cat = load_data(path="data/projects.toml") -%}
+{%- set item = "group flex items-center rounded-lg p-2 text-base font-normal text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-700" -%}
+{%- set ico = "h-6 w-6 shrink-0 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" -%}
+{%- set on = " bg-gray-100 font-medium dark:bg-gray-700" -%}
+{%- set badge = "ml-3 inline-flex h-5 min-w-5 items-center justify-center rounded-full bg-primary-100 px-1.5 text-xs font-semibold text-primary-800 dark:bg-primary-200 dark:text-primary-800" -%}
+{%- set heading = "px-2 pb-2 pt-4 text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400" -%}
+<aside id="sidebar" class="fixed left-0 top-0 z-20 flex h-full w-64 shrink-0 -translate-x-full flex-col pt-16 transition-transform duration-75 lg:translate-x-0" aria-label="Sidebar">
+  <div class="relative flex min-h-0 flex-1 flex-col border-r border-gray-200 bg-white pt-0 dark:border-gray-700 dark:bg-gray-800">
+    <div class="flex flex-1 flex-col overflow-y-auto pb-4 pt-5">
+      <div class="flex-1 space-y-1 divide-y divide-gray-200 bg-white px-3 dark:divide-gray-700 dark:bg-gray-800">
+        <ul class="space-y-2 pb-2">
+          <li>
+            <form action="{{ config.base_url }}/projects/" method="get" role="search" class="lg:hidden">
+              <label for="mobile-search" class="sr-only">Search projects</label>
+              <div class="relative">
+                <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3 text-gray-500 dark:text-gray-400">{{ <icon name="search" class="h-5 w-5" /> }}</div>
+                <input type="search" name="q" id="mobile-search" placeholder="Search projects"
+                  class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 pl-10 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-200 dark:placeholder-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500">
+              </div>
+            </form>
+          </li>
+          {%- for link in [["Overview", "/", "globe"], ["Projects", "/projects/", "cube"], ["Stack", "/stack/", "code"]] %}
+          <li>
+            <a href="{{ config.base_url }}{{ link[1] }}" class="{{ item }}{% if here == link[1] %}{{ on }}{% endif %}"{% if here == link[1] %} aria-current="page"{% endif %}>
+              {{ <icon name={link[2]} class={ico} /> }}<span class="ml-3 flex-1 whitespace-nowrap">{{ link[0] }}</span>
+              {%- if link[1] == "/projects/" %}<span class="{{ badge }}">{{ cat.projects | length }}</span>{% endif %}
+            </a>
+          </li>
+          {%- endfor %}
+        </ul>
+        <div class="pb-2">
+          <p class="{{ heading }}" id="sidebar-categories">Categories</p>
+          <ul class="space-y-1" aria-labelledby="sidebar-categories">
+            {%- for key, c in cat.categories %}
+            {%- set_global n = 0 %}{% for p in cat.projects %}{% if p.category == key %}{% set_global n = n + 1 %}{% endif %}{% endfor %}
+            {%- set path = "/projects/" ~ key ~ "/" %}
+            <li>
+              <a href="{{ config.base_url }}{{ path }}" class="{{ item }}{% if here == path %}{{ on }}{% endif %}"{% if here == path %} aria-current="page"{% endif %}>
+                {{ <category_icon key={key} class={ico} /> }}<span class="ml-3 flex-1 text-sm leading-tight">{{ c.name }}</span><span class="{{ badge }}">{{ n }}</span>
+              </a>
+            </li>
+            {%- endfor %}
+          </ul>
+        </div>
+        <div class="space-y-1 pt-2">
+          <p class="{{ heading }}">Elsewhere</p>
+          <a href="{{ config.extra.majordomus_url }}" class="{{ item }}">{{ <icon name="shield" class={ico} /> }}<span class="ml-3 flex-1 text-sm">majordomus.dev</span>{{ <icon name="external" class="h-4 w-4 text-gray-500 dark:text-gray-400" /> }}</a>
+          <a href="https://github.com/{{ config.extra.github }}" class="{{ item }}">{{ <icon name="github" class={ico} /> }}<span class="ml-3 flex-1 text-sm">GitHub</span>{{ <icon name="external" class="h-4 w-4 text-gray-500 dark:text-gray-400" /> }}</a>
+          <a href="{{ get_url(path='llms.txt') }}" class="{{ item }}">{{ <icon name="book" class={ico} /> }}<span class="ml-3 flex-1 text-sm">llms.txt</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="hidden w-full justify-center border-t border-gray-200 p-4 text-xs text-gray-600 dark:border-gray-700 dark:text-gray-400 lg:flex">
+      Supervised by&nbsp;<a href="{{ config.extra.majordomus_url }}" class="font-medium text-primary-700 hover:underline dark:text-primary-400">Majordomus</a>
+    </div>
+  </div>
+</aside>

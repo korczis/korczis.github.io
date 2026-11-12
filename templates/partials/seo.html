@@ -71,9 +71,12 @@
      {%- if schema == "collection" %}
      {%- set cat = load_data(path="data/projects.toml") %}
      {%- set gh = load_data(path="data/github.json") %}
-     "mainEntity": {"@type": "ItemList", "numberOfItems": {{ cat.projects | length }}, "itemListElement": [
-       {%- for p in cat.projects %}
-       {"@type": "ListItem", "position": {{ loop.index }}, "item": {"@type": "SoftwareSourceCode",
+     {%- if fm.extra.category is defined %}{% set scope = fm.extra.category %}{% else %}{% set scope = "" %}{% endif %}
+     {%- set_global n_items = 0 %}{% for p in cat.projects %}{% if not scope or p.category == scope %}{% set_global n_items = n_items + 1 %}{% endif %}{% endfor %}
+     {%- set_global pos = 0 %}
+     "mainEntity": {"@type": "ItemList", "numberOfItems": {{ n_items }}, "itemListElement": [
+       {%- for p in cat.projects %}{% if not scope or p.category == scope %}{% set_global pos = pos + 1 %}
+       {% if pos > 1 %},{% endif %}{"@type": "ListItem", "position": {{ pos }}, "item": {"@type": "SoftwareSourceCode",
         "name": {{ p.name | json_encode | safe }}, "description": {{ p.tagline | json_encode | safe }},
         "codeRepository": "https://github.com/korczis/{{ p.repo }}",
         "url": {% if p.url is defined %}{{ p.url | json_encode | safe }}{% else %}"https://github.com/korczis/{{ p.repo }}"{% endif %},
@@ -81,7 +84,7 @@
         "programmingLanguage": {{ gh.projects[p.repo].language | json_encode | safe }},
         {%- endif %}
         "dateModified": {{ gh.projects[p.repo].pushed_at | json_encode | safe }},
-        "author": {"@id": {{ person | json_encode | safe }}}}}{% if not loop.last %},{% endif %}
+        "author": {"@id": {{ person | json_encode | safe }}}}}{% endif %}
        {%- endfor %}]},
      {%- endif %}
      "breadcrumb": {"@type": "BreadcrumbList", "itemListElement": [

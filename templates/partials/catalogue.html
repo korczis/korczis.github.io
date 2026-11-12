@@ -1,0 +1,70 @@
+{#- The catalogue grid and its toolbar (Flowbite Pro table header, adapted), shared by /projects/
+    and every category page. Needs `cat`, `gh` and `scope` (a category key, or "" for all). -#}
+{%- set_global count = 0 -%}{%- for p in cat.projects -%}{%- if not scope or p.category == scope -%}{%- set_global count = count + 1 -%}{%- endif -%}{%- endfor -%}
+<section x-data="projectFilter" aria-label="Projects">
+  <div class="px-4 pb-4 pt-6">
+    {#- Toolbar: Flowbite Pro table header (search, filters, sort). Needs JavaScript. #}
+    <div data-js class="mb-6 flex flex-col gap-4 rounded-lg bg-white p-4 shadow dark:bg-gray-800 xl:flex-row xl:items-center xl:justify-between">
+      <div class="relative w-full lg:max-w-sm">
+        <label for="project-search" class="sr-only">Search projects</label>
+        <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3 text-gray-500 dark:text-gray-400">{{ <icon name="search" class="h-5 w-5" /> }}</div>
+        <input id="project-search" type="search" x-model.debounce.150ms="q" placeholder="Search name, words or technology"
+          class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 pl-10 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500">
+      </div>
+      {%- if not scope %}
+      <div class="flex flex-wrap items-center gap-2" role="group" aria-label="Category">
+        <button type="button" @click="category = 'all'" :aria-pressed="category === 'all'"
+          :class="category === 'all' ? 'bg-primary-700 text-white dark:bg-primary-600' : 'bg-white text-gray-900 hover:bg-gray-100 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700'"
+          class="rounded-lg border border-gray-200 px-3 py-1.5 text-sm font-medium focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:focus:ring-gray-700">All</button>
+        {%- for key, c in cat.categories %}
+        <button type="button" @click="category = '{{ key }}'" :aria-pressed="category === '{{ key }}'"
+          :class="category === '{{ key }}' ? 'bg-primary-700 text-white dark:bg-primary-600' : 'bg-white text-gray-900 hover:bg-gray-100 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700'"
+          class="rounded-lg border border-gray-200 px-3 py-1.5 text-sm font-medium focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:focus:ring-gray-700">{{ c.name }}</button>
+        {%- endfor %}
+      </div>
+      {%- endif %}
+      <div class="flex flex-wrap items-center gap-4">
+        <label class="inline-flex cursor-pointer items-center">
+          <input type="checkbox" x-model="liveOnly" class="peer sr-only">
+          <span class="peer relative h-5 w-9 rounded-full bg-gray-200 after:absolute after:start-[2px] after:top-[2px] after:h-4 after:w-4 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-primary-700 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:ring-4 peer-focus:ring-primary-300 dark:border-gray-600 dark:bg-gray-700 dark:peer-checked:bg-primary-600 dark:peer-focus:ring-primary-800"></span>
+          <span class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Live</span>
+        </label>
+        <label class="inline-flex cursor-pointer items-center">
+          <input type="checkbox" x-model="supervisedOnly" class="peer sr-only">
+          <span class="peer relative h-5 w-9 rounded-full bg-gray-200 after:absolute after:start-[2px] after:top-[2px] after:h-4 after:w-4 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-primary-700 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:ring-4 peer-focus:ring-primary-300 dark:border-gray-600 dark:bg-gray-700 dark:peer-checked:bg-primary-600 dark:peer-focus:ring-primary-800"></span>
+          <span class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Majordomus</span>
+        </label>
+        <label for="project-sort" class="sr-only">Sort</label>
+        <select id="project-sort" x-model="sort" class="block rounded-lg border border-gray-300 bg-gray-50 p-2 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white">
+          <option value="curated">Curated</option>
+          <option value="recent">Recently updated</option>
+          <option value="stars">Most stars</option>
+          <option value="name">Name</option>
+        </select>
+      </div>
+    </div>
+
+    <p data-js class="tabular mb-4 text-sm text-gray-600 dark:text-gray-400" aria-live="polite">
+      Showing <span class="font-semibold text-gray-900 dark:text-white" x-text="shown">{{ count }}</span>
+      of <span class="font-semibold text-gray-900 dark:text-white" x-text="total">{{ count }}</span> projects
+      <button type="button" x-show="shown !== total" x-cloak @click="reset()" class="ml-2 font-medium text-primary-700 hover:underline dark:text-primary-400">Clear filters</button>
+    </p>
+
+    <div x-ref="grid" class="grid grid-cols-1 gap-4 md:grid-cols-2 2xl:grid-cols-3">
+      {%- for p in cat.projects %}{% if not scope or p.category == scope %}
+      {{ <project_card p={p} f={gh.projects[p.repo]} label={cat.categories[p.category].name} anchor={true} /> }}
+      {%- endif %}{% endfor %}
+    </div>
+
+    <div x-show="shown === 0" x-cloak class="rounded-lg border-2 border-dashed border-gray-300 p-8 text-center dark:border-gray-600">
+      {{ <icon name="search" class="mx-auto mb-2 h-8 w-8 text-gray-500" /> }}
+      <p class="text-sm text-gray-600 dark:text-gray-400">No project matches these filters. <button type="button" @click="reset()" class="font-medium text-primary-700 hover:underline dark:text-primary-400">Clear them</button></p>
+    </div>
+
+    <p class="mt-6 text-xs text-gray-600 dark:text-gray-400">
+      Stars, languages, update dates, live status and Majordomus supervision measured on {{ gh.generated_at | date(format="%-d %B %Y") }}.
+      Active means pushed within 45 days of the snapshot, Maintained within a year, Archive older.
+      Only original, public work is listed; forks and mirrors are not.
+    </p>
+  </div>
+</section>

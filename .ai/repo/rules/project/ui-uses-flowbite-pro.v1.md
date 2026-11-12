@@ -3,8 +3,8 @@ id: project.ui-uses-flowbite-pro
 version: 1
 kind: rule
 title: Every page is built on Flowbite Pro
-description: The site's templates adapt the owner's licensed Flowbite Pro marketing blocks on Tailwind 4 and the flowbite 4 plugin; no other kit, no Pro source file committed.
-statement: Build every template from the matching Flowbite Pro block (marketing header, hero, feature, project portfolio, footer, 404), keep the Pro tokens (gray neutral, one primary, rounded-lg, the Pro type scale), load Flowbite JS for every data-* behaviour, and never commit a Pro source file.
+description: The site is the owner's licensed Flowbite Pro application shell and blocks on Tailwind 4 and the flowbite 4 plugin; no other kit, no Pro source file committed.
+statement: Build every page inside the Flowbite Pro application shell from the matching Pro block (page header, KPI, list, chart and progress cards, hero, CTA, 404), keep the Pro tokens (gray neutral, one primary, rounded-lg, the Pro type scale), load Flowbite JS for every data-* behaviour, and never commit a Pro source file.
 status: active
 class: blocking
 depends_on: []
@@ -22,10 +22,14 @@ source file as such.
 
 - Sources: `~/dev/poppyhead/assets/vendor/flowbite/` (`flowbite-react-blocks-main/app/marketing-ui`)
   and the `flowbite-pro` skill. A template names the block it adapts in a `{#- … #}` comment.
-- `templates/base.html` keeps the Pro marketing header (brand, collapse menu via
-  `data-collapse-toggle`, theme toggle, actions) and the Pro footer. It is a public marketing
-  layout, so the admin sidebar does not apply; the exemption is recorded owner-level in
-  `~/.claude/skills/flowbite-pro/exempt.d/korczis.github.io.yaml`.
+- `templates/base.html` is the Pro application shell (admin dashboard 1.1.1): fixed navbar
+  (`partials/navbar.html`: drawer toggle, brand, search into the catalogue, theme, GitHub,
+  Majordomus), `aside#sidebar[aria-label="Sidebar"]` as a Flowbite Drawer below lg
+  (`partials/sidebar.html`: overview, categories with derived counts, elsewhere), content beside
+  it from lg, and the Pro footer card. Pages are Pro dashboards: page header with breadcrumb
+  (`page_header`), KPI cards (`kpi`), list, chart and progress cards on `gray-50`/`gray-900`.
+- `static/js/site.js` keeps the drawer's accessibility state (backdrop z-10 under the z-20
+  sidebar, `inert` when closed on mobile, never `aria-hidden` on desktop); the audit drives it.
 - Tokens live in `styles/app.css` `@theme`; charts read them through `--hub-*` (rule
   project.viz-component-layer), so a chart and a card cannot disagree.
 - Flowbite JS is self-hosted (`static/js/vendor/flowbite.min.js`, copied by `scripts/vendor.mjs`).

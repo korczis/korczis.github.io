@@ -1,0 +1,16 @@
+{#- Measured KPIs of a catalogue scope (all, or one category): Flowbite Pro KPI cards. -#}
+{%- set_global k_total = 0 -%}{%- set_global k_live = 0 -%}{%- set_global k_sup = 0 -%}{%- set_global k_stars = 0 -%}{%- set_global k_active = 0 -%}
+{%- for p in cat.projects -%}{%- if not scope or p.category == scope -%}
+  {%- set f = gh.projects[p.repo] -%}
+  {%- set_global k_total = k_total + 1 -%}
+  {%- if f.live -%}{%- set_global k_live = k_live + 1 -%}{%- endif -%}
+  {%- if f.supervised -%}{%- set_global k_sup = k_sup + 1 -%}{%- endif -%}
+  {%- if f.activity == "active" -%}{%- set_global k_active = k_active + 1 -%}{%- endif -%}
+  {%- set_global k_stars = k_stars + f.stars -%}
+{%- endif -%}{%- endfor %}
+<div class="grid grid-cols-2 gap-4 px-4 pt-6 xl:grid-cols-4">
+  {{ <kpi value={k_total ~ ""} label="projects" /> }}
+  {{ <kpi value={k_live ~ ""} label="with a live site" /> }}
+  {{ <kpi value={k_active ~ ""} label="active in 45 days" /> }}
+  {{ <kpi value={k_sup ~ ""} label="supervised by Majordomus" /> }}
+</div>

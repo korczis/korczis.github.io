@@ -33,6 +33,7 @@ const CLS_LIMIT = 0.1;
 const PAGES = [
   ['home', ''],
   ['projects', 'projects/'],
+  ['category', 'projects/science/'],
   ['stack', 'stack/'],
   ['404', '404.html'],
 ];
@@ -168,10 +169,59 @@ function checkLinks() {
   return LINKS.size;
 }
 
+// The Pro shell's mobile drawer, driven like a person would: open, focus inside, a link inside is
+// on top (not under the backdrop), Escape closes and focus returns to the toggle; at desktop width
+// the sidebar is visible and not aria-hidden.
+async function checkDrawer(browser) {
+  const findings = [];
+  const context = await browser.newContext({ viewport: { width: 375, height: 800 }, reducedMotion: 'reduce' });
+  const page = await context.newPage();
+  await page.goto(BASE, { waitUntil: 'networkidle' });
+  await page.waitForTimeout(300);
+  const state = () => page.evaluate(() => {
+    const s = document.getElementById('sidebar');
+    return { inert: s.hasAttribute('inert'), hidden: s.getAttribute('aria-hidden'), left: Math.round(s.getBoundingClientRect().left),
+      expanded: document.getElementById('toggleSidebarMobile').getAttribute('aria-expanded'), focusInside: s.contains(document.activeElement) };
+  });
+  let st = await state();
+  if (!st.inert || st.left >= 0) findings.push(`closed drawer must be inert and off-screen (inert=${st.inert}, left=${st.left})`);
+  await page.click('#toggleSidebarMobile');
+  await page.waitForTimeout(400);
+  st = await state();
+  if (st.inert || st.left !== 0 || st.expanded !== 'true' || !st.focusInside) findings.push(`open drawer: ${JSON.stringify(st)}`);
+  const onTop = await page.evaluate(() => {
+    const link = document.querySelector('#sidebar a[href*="/projects/"]');
+    const r = link.getBoundingClientRect();
+    const hit = document.elementFromPoint(r.left + r.width / 2, r.top + r.height / 2);
+    return link.contains(hit);
+  });
+  if (!onTop) findings.push('a link in the open drawer is covered (backdrop above the sidebar)');
+  await page.keyboard.press('Escape');
+  await page.waitForTimeout(400);
+  st = await state();
+  if (!st.inert || st.expanded !== 'false') findings.push(`Escape did not close the drawer: ${JSON.stringify(st)}`);
+  await page.setViewportSize({ width: 1280, height: 800 });
+  await page.waitForTimeout(300);
+  st = await state();
+  if (st.inert || st.hidden === 'true' || st.left !== 0) findings.push(`desktop sidebar must be visible and exposed: ${JSON.stringify(st)}`);
+  await context.close();
+  return findings;
+}
+
 const browser = await chromium.launch();
 const results = [];
 let failed = 0;
 try {
+  if (!ONLY || ONLY.test('drawer')) {
+    const drawer = await checkDrawer(browser);
+    if (drawer.length) {
+      failed += 1;
+      console.log('FAIL drawer (375 px, then 1280 px)');
+      for (const f of drawer) console.log(`     ${f}`);
+    } else {
+      console.log('ok   drawer: opens, focus inside, links on top, Escape closes, desktop exposed');
+    }
+  }
   for (const [name, rel] of PAGES.filter(([n]) => !ONLY || ONLY.test(n))) {
     const runs = FULL_RUNS.map(([w, s]) => [w, s, true]).concat(LAYOUT_WIDTHS.map((w) => [w, 'light', false]));
     for (const [width, scheme, full] of runs) {

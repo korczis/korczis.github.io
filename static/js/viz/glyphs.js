@@ -45,7 +45,7 @@ KorczisHub.viz('glyphs', {
           const wave = p.noise(glyph.x * 0.004, glyph.y * 0.006, t);
           const level = p.constrain((wave - 0.42) * 3.2, 0, 1);
           if (level <= 0.02) continue;
-          ink.setAlpha(level * (colours.dark ? 150 : 120));
+          ink.setAlpha(level * (colours.dark ? 190 : 165));
           p.stroke(ink);
           for (const [x1, y1, x2, y2] of glyph.segments) {
             p.line(glyph.x + x1 * unit, glyph.y + y1 * unit, glyph.x + x2 * unit, glyph.y + y2 * unit);

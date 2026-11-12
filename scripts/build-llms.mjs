@@ -33,10 +33,10 @@ const lines = [
   '',
 ];
 
-for (const [key, label] of Object.entries(catalogue.categories)) {
+for (const [key, category] of Object.entries(catalogue.categories)) {
   const projects = catalogue.projects.filter((p) => p.category === key);
   if (!projects.length) continue;
-  lines.push(`## ${label}`, '');
+  lines.push(`## ${category.name}`, '', `${oneLine(category.description)} ${base}/projects/${key}/`, '');
   for (const p of projects) {
     const live = p.url ? ` Live: ${p.url}` : '';
     lines.push(

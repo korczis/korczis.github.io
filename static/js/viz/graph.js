@@ -85,7 +85,7 @@ KorczisHub.viz('graph', {
       style: style(),
       layout: {
         name: 'cose', animate: false, randomize: false, padding: 16,
-        nodeRepulsion: 16000, idealEdgeLength: 95, nodeOverlap: 24, componentSpacing: 70, gravity: 0.35,
+        nodeRepulsion: 7000, idealEdgeLength: 64, nodeOverlap: 16, componentSpacing: 40, gravity: 1.1, numIter: 2500,
         nodeDimensionsIncludeLabels: true,
       },
       userZoomingEnabled: false,

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+{%- set gh = load_data(path="data/github.json") -%}
+{%- set cat = load_data(path="data/projects.toml") -%}
+{%- set scope = page.extra.category -%}
+{{ <page_header title={page.title} lead={page.description} parent="Projects" parent_url={config.base_url ~ "/projects/"} icon={scope} /> }}
+{%- include "partials/catalogue_kpis.html" %}
+{%- include "partials/catalogue.html" %}
+{#- Neighbouring categories: Flowbite Pro button group, derived from the catalogue. #}
+<nav class="px-4 pb-6" aria-label="Other categories">
+  <p class="mb-3 text-sm font-medium text-gray-900 dark:text-white">Other categories</p>
+  <ul class="flex flex-wrap gap-2">
+    {%- for key, c in cat.categories %}{% if key != scope %}
+    <li><a href="{{ config.base_url }}/projects/{{ key }}/" class="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700">{{ <category_icon key={key} class="h-4 w-4" /> }}{{ c.name }}</a></li>
+    {%- endif %}{% endfor %}
+  </ul>
+</nav>
+{% endblock content %}
+
+{% block scripts %}
+<script src="{{ get_url(path='js/components/projects.js', cachebust=true) }}" defer></script>
+<script src="{{ get_url(path='js/vendor/alpine.min.js') }}" defer></script>
+{% endblock scripts %}

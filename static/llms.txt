@@ -14,9 +14,13 @@ Every project below links to its source on GitHub; most have a live site.
 
 ## AI engineering
 
+Supervision for AI coding agents: one policy for every tool, scoped tasks, and work that lands only when it is proven. https://korczis.github.io/projects/ai/
+
 - [Majordomus](https://github.com/korczis/prismatic-majordomus): AI agents say the work is done; Majordomus makes them prove it. Live: https://majordomus.dev
 
 ## Science and visualisation
+
+Honest instruments and drawn algorithms in the browser: acoustics, physics, sorting, mazes, each readout measured. https://korczis.github.io/projects/science/
 
 - [Oscilla](https://github.com/korczis/oscilla): A zero-install acoustic laboratory in the browser. Live: https://korczis.github.io/oscilla/
 - [algoglyph](https://github.com/korczis/algoglyph): Algorithms and physics drawn as glyphs. Live: https://korczis.github.io/algoglyph/
@@ -25,20 +29,28 @@ Every project below links to its source on GitHub; most have a live site.
 
 ## Knowledge
 
+Knowledge bases you can check: cross-linked taxonomies with their sources, built as books, sites and graphs. https://korczis.github.io/projects/knowledge/
+
 - [Kompendium](https://github.com/korczis/kompendium-epistemicke-anihilace): A defensive taxonomy of epistemic and cognitive manipulation (Czech). Live: https://korczis.github.io/kompendium-epistemicke-anihilace/
 
 ## Data and GIS
+
+Catalogues and maps of open data: geodata sources, incident reports geocoded and served from one registry. https://korczis.github.io/projects/data/
 
 - [Data Atlas](https://github.com/korczis/data-atlas): A searchable catalogue of GIS and geodata sources (Czech). Live: https://korczis.github.io/data-atlas/
 - [Crisis map](https://github.com/korczis/crisis-map): Incident reports, normalised, geocoded and mapped. Live: https://korczis.github.io/crisis-map/
 
 ## Media and art
 
+Work made from code: a promo reel rendered end to end, a music blog, and a digital artifact or two. https://korczis.github.io/projects/media/
+
 - [Majordomus reel](https://github.com/korczis/majordomus-reel): A promo reel rendered entirely from code. Live: https://korczis.github.io/majordomus-reel/
 - [Catharsis as a Service](https://github.com/korczis/catharsis-as-a-service): An emotional state transition endpoint. Live: https://korczis.github.io/catharsis-as-a-service/
 - [Sonic Playground](https://github.com/korczis/sonic-playground): Music that moves you, not algorithmic noise. Live: https://korczis.github.io/sonic-playground/
 
 ## Tools
+
+Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist search. https://korczis.github.io/projects/tools/
 
 - [Gists search](https://github.com/korczis/gists-search): Catalogue, enrichment and search over a mirror of my gists. Live: https://korczis.github.io/gists-search/
 - [json2csv](https://github.com/korczis/json2csv): Easy to use tool for converting JSON to CSV.
