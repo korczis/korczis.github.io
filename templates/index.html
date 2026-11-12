@@ -110,32 +110,34 @@
   </div>
 
   <div class="grid grid-cols-1 gap-4 xl:grid-cols-3">
-    {#- Selected work: Flowbite Pro compact list card (admin dashboard 1.1.1, 9D). #}
+    {#- The last 12 months: derived from data/recent.json (a commit on the default branch in the
+        window), newest first, each opening its own work page. Flowbite Pro compact list card. #}
+    {%- set rc = load_data(path="data/recent.json") %}
+    {%- set_global n12 = 0 %}{% for r in rc.repos %}{% if r.period == 12 %}{% set_global n12 = n12 + 1 %}{% endif %}{% endfor %}
     <section class="{{ card }} xl:col-span-2" aria-labelledby="work-title">
-      <div class="mb-4 flex items-center justify-between">
+      <div class="mb-4 flex items-center justify-between gap-3">
         <div>
-          <h2 id="work-title" class="{{ card_title }}">Selected work</h2>
-          <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">What I am building now; most of it is live.</p>
+          <h2 id="work-title" class="{{ card_title }}">The last 12 months</h2>
+          <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">{{ n12 }} projects with a commit this year, newest first; each has its own page.</p>
         </div>
-        <a href="{{ base }}projects/" class="{{ view_all }}">View all{{ <icon name="arrow-right" class="ml-1 h-4 w-4" /> }}</a>
+        <a href="{{ base }}work/" class="{{ view_all }}">All recent work{{ <icon name="arrow-right" class="ml-1 h-4 w-4" /> }}</a>
       </div>
       <ul class="divide-y divide-gray-200 dark:divide-gray-700">
-        {%- for p in cat.projects %}{% if p.featured %}
-        {%- set f = gh.projects[p.repo] %}
-        <li class="py-3 sm:py-4">
-          <div class="flex items-center gap-4">
-            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary-100 text-primary-700 dark:bg-primary-900 dark:text-primary-300">{{ <category_icon key={p.category} class="h-5 w-5" /> }}</div>
-            <div class="min-w-0 flex-1">
-              <p class="flex flex-wrap items-center gap-2 text-sm font-semibold text-gray-900 dark:text-white">
-                <a href="{{ base }}projects/#{{ p.repo }}" class="hover:underline">{{ p.name }}</a>
-                {%- if f.supervised %}<span class="rounded bg-primary-100 px-1.5 py-0.5 text-xs font-medium text-primary-800 dark:bg-primary-900 dark:text-primary-300">Majordomus</span>{% endif %}
-              </p>
-              <p class="truncate text-sm text-gray-600 dark:text-gray-400">{{ p.tagline }}</p>
-            </div>
-            {%- if p.url and f.live %}
-            <a href="{{ p.url }}" class="inline-flex shrink-0 items-center rounded-lg border border-gray-200 bg-white px-3 py-1.5 text-xs font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700">Open<span class="sr-only"> {{ p.name }}</span>{{ <icon name="external" class="ml-1.5 h-3.5 w-3.5" /> }}</a>
-            {%- endif %}
-          </div>
+        {%- set_global shown = 0 %}
+        {%- for r in rc.repos %}{% if r.period == 12 and shown < 8 %}{% set_global shown = shown + 1 %}
+        {%- set slug = r.name | lower | replace(from=".", to="-") | replace(from="_", to="-") %}
+        <li>
+          <a href="{{ base }}work/{{ slug }}/" class="group -mx-2 flex items-center gap-4 rounded-lg px-2 py-3 hover:bg-gray-50 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-700">
+            <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary-100 text-primary-700 dark:bg-primary-900 dark:text-primary-300">{{ <category_icon key={r.category} class="h-5 w-5" /> }}</span>
+            <span class="min-w-0 flex-1">
+              <span class="flex flex-wrap items-center gap-2 text-sm font-semibold text-gray-900 group-hover:underline dark:text-white">{{ r.name }}{% if r.curated %}<span class="rounded bg-primary-100 px-1.5 py-0.5 text-xs font-medium text-primary-800 no-underline dark:bg-primary-900 dark:text-primary-300">featured</span>{% endif %}</span>
+              <span class="block truncate text-sm text-gray-600 dark:text-gray-400">{% if r.description %}{{ r.description }}{% elif r.readme %}{{ r.readme }}{% endif %}</span>
+            </span>
+            <span class="hidden shrink-0 text-right sm:block">
+              <time datetime="{{ r.last_commit }}" class="tabular block text-xs text-gray-600 dark:text-gray-400">{{ r.last_commit | date(format="%-d %b %Y") }}</time>
+              <span class="block text-xs text-gray-600 dark:text-gray-400">{% if r.languages | length > 0 %}{{ r.languages[0].name }}{% endif %}</span>
+            </span>
+          </a>
         </li>
         {%- endif %}{% endfor %}
       </ul>
