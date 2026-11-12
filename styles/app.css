@@ -1,0 +1,162 @@
+@import 'tailwindcss' source(none);
+
+@source '../templates';
+@source '../content';
+@source '../static/js/site.js';
+@source '../static/js/viz';
+@source '../node_modules/flowbite/lib/esm/components';
+
+@plugin 'flowbite/plugin';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Flowbite Pro theme. Primary is the Pro default blue (the same accent majordomus.dev uses), gray
+   is the only neutral. Inter first, the system stack after it; nothing is fetched from a font CDN. */
+@theme {
+  --color-primary-50: #eff6ff;
+  --color-primary-100: #dbeafe;
+  --color-primary-200: #bfdbfe;
+  --color-primary-300: #93c5fd;
+  --color-primary-400: #60a5fa;
+  --color-primary-500: #3b82f6;
+  --color-primary-600: #2563eb;
+  --color-primary-700: #1d4ed8;
+  --color-primary-800: #1e40af;
+  --color-primary-900: #1e3a8a;
+  --color-primary-950: #172554;
+
+  /* flowbite 4 styles a few controls from these semantic variables; the Pro radius scale stays
+     Tailwind's, so its default theme file is not imported (algoglyph, 2026-11-11). */
+  --color-brand: var(--color-primary-700);
+  --color-brand-strong: var(--color-primary-800);
+  --color-brand-medium: var(--color-primary-300);
+  --color-brand-light: var(--color-primary-200);
+  --color-brand-soft: var(--color-primary-100);
+  --color-brand-softer: var(--color-primary-50);
+  --color-brand-subtle: var(--color-primary-100);
+  --color-body: var(--color-gray-600);
+
+  --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+/* The palette every visual reads (static/js/site.js palette()). Declared once, here, for both
+   themes, so a chart, a graph and a card can never disagree on a colour. */
+:root {
+  --hub-text: var(--color-gray-600);
+  --hub-strong: var(--color-gray-900);
+  --hub-muted: var(--color-gray-500);
+  --hub-grid: var(--color-gray-200);
+  --hub-surface: var(--color-white);
+  --hub-page: var(--color-white);
+  --hub-primary: var(--color-primary-700);
+  --hub-primary-soft: var(--color-primary-100);
+  --hub-ramp-0: var(--color-gray-100);
+  --hub-ramp-1: var(--color-primary-200);
+  --hub-ramp-2: var(--color-primary-400);
+  --hub-ramp-3: var(--color-primary-600);
+  --hub-ramp-4: var(--color-primary-800);
+}
+
+.dark {
+  --hub-text: var(--color-gray-300);
+  --hub-strong: var(--color-white);
+  --hub-muted: var(--color-gray-400);
+  --hub-grid: var(--color-gray-700);
+  --hub-surface: var(--color-gray-800);
+  --hub-page: var(--color-gray-900);
+  --hub-primary: var(--color-primary-400);
+  --hub-primary-soft: var(--color-primary-900);
+  --hub-ramp-0: var(--color-gray-700);
+  --hub-ramp-1: var(--color-primary-900);
+  --hub-ramp-2: var(--color-primary-700);
+  --hub-ramp-3: var(--color-primary-500);
+  --hub-ramp-4: var(--color-primary-300);
+}
+
+@layer base {
+  html {
+    scroll-padding-top: 5rem;
+  }
+
+  /* Controls that need JavaScript ([data-js]) are hidden only when it is off; the inline head
+     script drops .no-js before the first paint, so nothing appears late and shifts the page. */
+  html.no-js [data-js] {
+    display: none !important;
+  }
+
+  [x-cloak] {
+    display: none !important;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-primary-500);
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  /* Every visual reserves its box before its library draws, so nothing shifts (CLS). */
+  .viz-box {
+    position: relative;
+    width: 100%;
+  }
+
+  .viz-box > canvas,
+  .viz-box > div {
+    position: absolute;
+    inset: 0;
+  }
+
+  .viz-hero {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .viz-hero canvas {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Long-form text on the stack page: Flowbite Pro's Publisher measure. */
+.prose-hub :where(p, li) {
+  color: var(--color-gray-600);
+  line-height: 1.75;
+}
+
+.dark .prose-hub :where(p, li) {
+  color: var(--color-gray-300);
+}
+
+.prose-hub a {
+  color: var(--color-primary-700);
+  font-weight: 500;
+  text-underline-offset: 2px;
+}
+
+.dark .prose-hub a {
+  color: var(--color-primary-300);
+}
+
+.prose-hub a:hover {
+  text-decoration: underline;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

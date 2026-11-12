@@ -1,0 +1,43 @@
+{
+  "name": "korczis.github.io",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tomas Korcak: personal hub. Projects, live sites and the stack behind them.",
+  "license": "MIT",
+  "author": "Tomas Korcak",
+  "homepage": "https://korczis.github.io/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/korczis/korczis.github.io.git"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "prepare": "git config core.hooksPath .githooks 2>/dev/null || true",
+    "vendor": "node scripts/vendor.mjs",
+    "css": "tailwindcss --input styles/app.css --output static/css/app.css --minify",
+    "assets": "npm run --silent vendor && npm run --silent css",
+    "data": "node scripts/fetch-github.mjs",
+    "llms": "node scripts/build-llms.mjs",
+    "build": "npm run --silent assets && zola build",
+    "check": "node scripts/build-llms.mjs --check && node scripts/check-data.mjs && npm run --silent assets && zola check --skip-external-links",
+    "dev": "npm run --silent assets && zola serve",
+    "test:audit": "node scripts/audit-ui.mjs",
+    "verify": "scripts/verify-all.sh"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "4.3.5",
+    "alpinejs": "3.17.5",
+    "axe-core": "4.14.0",
+    "chart.js": "4.5.1",
+    "cytoscape": "3.34.4",
+    "echarts": "6.1.0",
+    "flowbite": "4.0.2",
+    "p5": "2.3.4",
+    "playwright-core": "1.65.0",
+    "smol-toml": "1.4.2",
+    "tailwindcss": "4.3.5"
+  }
+}

@@ -1,0 +1,213 @@
+{% extends "base.html" %}
+
+{% block content %}
+{%- set gh = load_data(path="data/github.json") -%}
+{%- set cat = load_data(path="data/projects.toml") -%}
+{%- set base = config.base_url ~ "/" -%}
+{%- set_global live_count = 0 -%}
+{%- set_global supervised_count = 0 -%}
+{%- for repo, f in gh.projects -%}
+  {%- if f.live -%}{%- set_global live_count = live_count + 1 -%}{%- endif -%}
+  {%- if f.supervised and repo != "prismatic-majordomus" -%}{%- set_global supervised_count = supervised_count + 1 -%}{%- endif -%}
+{%- endfor -%}
+{%- set year_now = now() | date(format="%Y") | int -%}
+{%- set year_joined = gh.profile.created_at | date(format="%Y") | int -%}
+{%- set years = year_now - year_joined -%}
+{%- set as_of = gh.generated_at | date(format="%-d %B %Y") -%}
+
+{#- Hero: Flowbite Pro hero-sections/default, over a seeded p5.js glyph field. #}
+<section class="relative isolate overflow-hidden bg-white dark:bg-gray-900">
+  <div class="viz-hero" data-viz="glyphs" data-seed="korczis" aria-hidden="true"></div>
+  <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgb(255_255_255/0.94)_25%,_rgb(255_255_255/0.55)_70%,_transparent)] dark:bg-[radial-gradient(ellipse_at_center,_rgb(17_24_39/0.94)_25%,_rgb(17_24_39/0.55)_70%,_transparent)]" aria-hidden="true"></div>
+  <div class="relative mx-auto max-w-screen-xl px-4 py-16 text-center lg:px-12 lg:py-28">
+    <a href="{{ gh.majordomus.notes_url }}"
+      x-data="majordomusLive('{{ config.extra.majordomus_build }}', {{ gh.majordomus | json_encode }})"
+      :href="release.notes_url"
+      class="mb-7 inline-flex items-center justify-between rounded-full bg-gray-100 p-1 pr-4 text-sm text-gray-700 hover:bg-gray-200 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700">
+      <span class="mr-3 rounded-full bg-primary-700 px-4 py-1.5 text-xs text-white">New</span>
+      <span class="text-sm font-medium">Majordomus <span x-text="'v' + release.version">v{{ gh.majordomus.version }}</span> is out. See what changed</span>
+      {{ <icon name="arrow-right" class="ml-2 h-4 w-4" /> }}
+    </a>
+    <p class="mb-4 font-mono text-sm font-medium uppercase tracking-widest text-primary-700 dark:text-primary-400">Tomas Korcak · korczis</p>
+    <h1 class="mb-6 text-4xl font-extrabold leading-none tracking-tight text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
+      Software that proves its&nbsp;work.
+    </h1>
+    <p class="mx-auto mb-8 max-w-3xl text-lg font-normal text-gray-600 dark:text-gray-300 lg:text-xl">
+      I build tools that make AI agents prove what they did, honest scientific instruments in the
+      browser, and knowledge bases you can check. Engineer in {{ config.extra.location }}, on GitHub since {{ gh.profile.created_at | date(format="%Y") }}.
+    </p>
+    <div class="flex flex-col gap-4 sm:flex-row sm:justify-center">
+      <a href="{{ base }}projects/" class="inline-flex items-center justify-center rounded-lg bg-primary-700 px-5 py-3 text-center text-base font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+        Explore projects{{ <icon name="arrow-right" class="-mr-1 ml-2 h-5 w-5" /> }}
+      </a>
+      <a href="{{ config.extra.majordomus_url }}" class="inline-flex items-center justify-center rounded-lg border border-gray-300 bg-white px-5 py-3 text-center text-base font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-700 dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800 dark:focus:ring-gray-800">
+        {{ <icon name="shield" class="-ml-1 mr-2 h-5 w-5" /> }}Meet Majordomus
+      </a>
+    </div>
+  </div>
+</section>
+
+{#- Stats: Flowbite Pro KPI cards. Every number is measured, with its date. #}
+<section class="border-y border-gray-200 bg-gray-50 dark:border-gray-700 dark:bg-gray-800" aria-labelledby="stats-title">
+  <div class="mx-auto max-w-screen-xl px-4 py-10 lg:px-6">
+    <h2 id="stats-title" class="sr-only">In numbers</h2>
+    <dl class="tabular grid grid-cols-2 gap-6 text-center md:grid-cols-4">
+      <div class="flex flex-col-reverse gap-1">
+        <dt class="text-sm text-gray-600 dark:text-gray-400">public repositories</dt>
+        <dd class="text-3xl font-extrabold text-gray-900 dark:text-white md:text-4xl">{{ gh.profile.public_repos }}</dd>
+      </div>
+      <div class="flex flex-col-reverse gap-1">
+        <dt class="text-sm text-gray-600 dark:text-gray-400">contributions, last 12 months</dt>
+        <dd class="text-3xl font-extrabold text-gray-900 dark:text-white md:text-4xl">{{ gh.contributions.total | num_format }}</dd>
+      </div>
+      <div class="flex flex-col-reverse gap-1">
+        <dt class="text-sm text-gray-600 dark:text-gray-400">years on GitHub</dt>
+        <dd class="text-3xl font-extrabold text-gray-900 dark:text-white md:text-4xl">{{ years }}</dd>
+      </div>
+      <div class="flex flex-col-reverse gap-1">
+        <dt class="text-sm text-gray-600 dark:text-gray-400">live sites in this catalogue</dt>
+        <dd class="text-3xl font-extrabold text-gray-900 dark:text-white md:text-4xl">{{ live_count }}</dd>
+      </div>
+    </dl>
+    <p class="mt-6 text-center text-xs text-gray-600 dark:text-gray-400">
+      Measured from the GitHub API on {{ as_of }}. <a href="{{ base }}stack/#data" class="font-medium text-primary-700 hover:underline dark:text-primary-400">How these numbers are made</a>
+    </p>
+  </div>
+</section>
+
+{#- Featured work: Flowbite Pro project-portfolio/grid-layout, adapted. #}
+<section class="bg-white dark:bg-gray-900" aria-labelledby="work-title">
+  <div class="mx-auto max-w-screen-xl px-4 py-16 lg:px-6 lg:py-24">
+    {{ <section_head eyebrow="Selected work" title="Projects I am building now" id="work-title" lead="Each one is public, most have a live site, and the ones marked Majordomus are built under its supervision: scoped tasks, verified finishes, recorded decisions." /> }}
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+      {%- for p in cat.projects %}{% if p.featured %}
+      {{ <project_card p={p} f={gh.projects[p.repo]} label={cat.categories[p.category]} /> }}
+      {%- endif %}{% endfor %}
+    </div>
+    <div class="mt-10 text-center">
+      <a href="{{ base }}projects/" class="inline-flex items-center rounded-lg border border-gray-200 bg-white px-5 py-3 text-base font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700">
+        All {{ cat.projects | length }} projects{{ <icon name="arrow-right" class="ml-2 h-5 w-5" /> }}
+      </a>
+    </div>
+  </div>
+</section>
+
+{#- Majordomus spotlight: Flowbite Pro feature-sections, with a live card from majordomus.dev. #}
+<section class="bg-gray-50 dark:bg-gray-800" aria-labelledby="majordomus-title">
+  <div class="mx-auto grid max-w-screen-xl items-center gap-12 px-4 py-16 lg:grid-cols-2 lg:px-6 lg:py-24">
+    <div>
+      {{ <section_head eyebrow="Majordomus" title="AI agents say the work is done. Majordomus makes them prove it." id="majordomus-title" /> }}
+      <ul class="space-y-4 text-gray-600 dark:text-gray-300">
+        {%- for line in [
+          "One policy for every AI coding tool: Claude, Codex, Gemini and whatever comes next.",
+          "Scoped tasks with a finish contract: a task closes only when its verification ran.",
+          "A mesh for many sessions and machines, and an integration queue that lands only verified work.",
+          "Local and inspectable. It never calls a model; it supervises the ones you use."] %}
+        <li class="flex gap-3">
+          <span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary-100 text-primary-700 dark:bg-primary-900 dark:text-primary-300">{{ <icon name="check" class="h-4 w-4" /> }}</span>
+          <span>{{ line }}</span>
+        </li>
+        {%- endfor %}
+      </ul>
+      <div class="mt-8 flex flex-wrap gap-4">
+        <a href="{{ config.extra.majordomus_url }}" class="inline-flex items-center rounded-lg bg-primary-700 px-5 py-3 text-base font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+          majordomus.dev{{ <icon name="external" class="ml-2 h-4 w-4" /> }}
+        </a>
+        <a href="https://github.com/korczis/prismatic-majordomus" class="inline-flex items-center rounded-lg border border-gray-200 bg-white px-5 py-3 text-base font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700">
+          {{ <icon name="github" class="mr-2 h-4 w-4" /> }}Source
+        </a>
+      </div>
+    </div>
+
+    <div x-data="majordomusLive('{{ config.extra.majordomus_build }}', {{ gh.majordomus | json_encode }})"
+      class="rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-900 sm:p-8">
+      <div class="mb-6 flex items-center justify-between gap-4">
+        <h3 class="text-xl font-bold leading-none text-gray-900 dark:text-white">Current release</h3>
+        <span class="inline-flex items-center gap-2 rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-800 dark:bg-gray-800 dark:text-gray-300">
+          <span class="h-2 w-2 rounded-full bg-gray-400" :class="state === 'live' ? 'bg-green-500' : 'bg-gray-400'"></span>
+          <span x-text="state === 'live' ? 'Live from majordomus.dev' : 'Snapshot of {{ as_of }}'">Snapshot of {{ as_of }}</span>
+        </span>
+      </div>
+      <dl class="tabular grid grid-cols-2 gap-6">
+        <div>
+          <dt class="mb-1 text-sm text-gray-600 dark:text-gray-400">Version</dt>
+          <dd class="text-3xl font-extrabold text-gray-900 dark:text-white" x-text="'v' + release.version">v{{ gh.majordomus.version }}</dd>
+        </div>
+        <div>
+          <dt class="mb-1 text-sm text-gray-600 dark:text-gray-400">Published</dt>
+          <dd class="text-lg font-semibold text-gray-900 dark:text-white" x-text="date(release.published_at)">{{ gh.majordomus.published_at | date(format="%-d %b %Y") }}</dd>
+        </div>
+        <div>
+          <dt class="mb-1 text-sm text-gray-600 dark:text-gray-400">Site built from</dt>
+          <dd class="font-mono text-lg font-semibold text-gray-900 dark:text-white" x-text="shortCommit">{{ gh.majordomus.commit | truncate(length=7, end="") }}</dd>
+        </div>
+        <div>
+          <dt class="mb-1 text-sm text-gray-600 dark:text-gray-400">Commit time</dt>
+          <dd class="text-lg font-semibold text-gray-900 dark:text-white" x-text="date(release.commit_time)">{{ gh.majordomus.commit_time | date(format="%-d %b %Y") }}</dd>
+        </div>
+      </dl>
+      <div class="mt-6 flex items-center justify-between border-t border-gray-200 pt-4 text-sm dark:border-gray-700">
+        <code class="rounded bg-gray-100 px-2 py-1 font-mono text-xs text-gray-800 dark:bg-gray-800 dark:text-gray-300">curl -fsSL https://majordomus.dev/install.sh | sh</code>
+        <a :href="release.notes_url" href="{{ gh.majordomus.notes_url }}" class="ml-4 inline-flex shrink-0 items-center font-medium text-primary-700 hover:underline dark:text-primary-400">Notes{{ <icon name="arrow-right" class="ml-1 h-4 w-4" /> }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{#- Ecosystem and activity: Flowbite Pro chart cards. #}
+<section class="bg-white dark:bg-gray-900" aria-labelledby="eco-title">
+  <div class="mx-auto max-w-screen-xl px-4 py-16 lg:px-6 lg:py-24">
+    {{ <section_head eyebrow="Ecosystem" title="How the pieces connect" id="eco-title" lead="Projects, the tools they are built with, and the ones Majordomus supervises (dashed arrows). Hover a node to see its neighbours; tap a project to open it in the catalogue." /> }}
+    <figure class="rounded-lg border border-gray-200 bg-white p-4 shadow-sm dark:border-gray-700 dark:bg-gray-800 sm:p-6">
+      <div class="viz-box h-[28rem] sm:h-[32rem]" data-viz="graph" data-source="eco-data" role="img"
+        aria-label="Graph of {{ cat.projects | length }} projects linked to the technologies they use; Majordomus supervises {{ supervised_count }} of them.">
+        <div data-canvas></div>
+      </div>
+      <figcaption class="mt-4 text-sm text-gray-600 dark:text-gray-400">
+        Supervision is measured, not claimed: a project counts when its default branch carries <code class="font-mono">.ai/manifest.yaml</code>. The same relations are listed on every project card.
+      </figcaption>
+    </figure>
+    <script type="application/json" id="eco-data">{"projects": {{ cat.projects | json_encode | safe }}, "measured": {{ gh.projects | json_encode | safe }}}</script>
+
+    <div class="mt-16">
+      {{ <section_head eyebrow="Activity" title="Shipping, measured" id="activity-title" lead="Public GitHub contributions over the last twelve months, and the primary language of every public repository I own." /> }}
+    </div>
+    <div class="grid grid-cols-1 gap-6 xl:grid-cols-3">
+      <figure class="rounded-lg border border-gray-200 bg-white p-4 shadow-sm dark:border-gray-700 dark:bg-gray-800 sm:p-6 xl:col-span-2">
+        <div class="mb-4 flex items-start justify-between gap-4">
+          <div>
+            <p class="tabular text-2xl font-bold leading-none text-gray-900 dark:text-white sm:text-3xl">{{ gh.contributions.total | num_format }}</p>
+            <h3 class="text-base font-normal text-gray-600 dark:text-gray-400">contributions, {{ gh.contributions.from | date(format="%b %Y") }} to {{ gh.contributions.to | date(format="%b %Y") }}</h3>
+          </div>
+        </div>
+        <div class="viz-box h-56" data-viz="activity" data-source="activity-data" role="img"
+          aria-label="Calendar heatmap of daily contributions; {{ gh.contributions.total }} in total.">
+          <div data-canvas></div>
+        </div>
+        <script type="application/json" id="activity-data">{{ gh.contributions | json_encode | safe }}</script>
+      </figure>
+      <figure class="rounded-lg border border-gray-200 bg-white p-4 shadow-sm dark:border-gray-700 dark:bg-gray-800 sm:p-6">
+        <div class="mb-4">
+          <p class="tabular text-2xl font-bold leading-none text-gray-900 dark:text-white sm:text-3xl">{{ gh.languages | length }}</p>
+          <h3 class="text-base font-normal text-gray-600 dark:text-gray-400">languages across public repositories</h3>
+        </div>
+        <div class="viz-box h-72" data-viz="languages" data-source="languages-data" role="img"
+          aria-label="Bar chart of repositories by primary language: {% for l in gh.languages %}{{ l.name }} {{ l.repos }}{% if not loop.last %}, {% endif %}{% endfor %}.">
+          <canvas></canvas>
+        </div>
+        <script type="application/json" id="languages-data">{{ gh.languages | json_encode | safe }}</script>
+      </figure>
+    </div>
+    <p class="mt-4 text-xs text-gray-600 dark:text-gray-400">Snapshot of {{ as_of }}; repositories without a detected language are not counted.</p>
+  </div>
+</section>
+{% endblock content %}
+
+{% block scripts %}
+<script src="{{ get_url(path='js/viz/glyphs.js', cachebust=true) }}" defer></script>
+<script src="{{ get_url(path='js/viz/graph.js', cachebust=true) }}" defer></script>
+<script src="{{ get_url(path='js/viz/activity.js', cachebust=true) }}" defer></script>
+<script src="{{ get_url(path='js/viz/languages.js', cachebust=true) }}" defer></script>
+<script src="{{ get_url(path='js/components/majordomus.js', cachebust=true) }}" defer></script>
+<script src="{{ get_url(path='js/vendor/alpine.min.js') }}" defer></script>
+{% endblock scripts %}

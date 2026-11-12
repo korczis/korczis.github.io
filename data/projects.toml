@@ -1,0 +1,167 @@
+# Curated catalogue of the projects this hub shows. Hand-written: names, words, grouping.
+# Everything measurable (stars, language, last push, whether the live site answers, whether
+# the repository is supervised by Majordomus) is derived by `npm run data` into
+# data/github.json and is never typed here. Order is display order.
+#
+# Fields
+#   repo        GitHub repository under github.com/korczis (the identity; must exist, public)
+#   name        display name
+#   tagline     one line, at most 90 characters
+#   summary     two or three sentences, plain words, no superlatives
+#   category    one of the [categories] keys below
+#   url         the live site, if any (checked by `npm run data`)
+#   stack       technologies, as shown on the card and as edges in the ecosystem graph
+#   featured    shown on the home page
+
+[categories]
+ai = "AI engineering"
+science = "Science and visualisation"
+knowledge = "Knowledge"
+data = "Data and GIS"
+media = "Media and art"
+tools = "Tools"
+
+[[projects]]
+repo = "prismatic-majordomus"
+name = "Majordomus"
+tagline = "AI agents say the work is done; Majordomus makes them prove it."
+summary = """One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for \
+many sessions and machines, and an integration queue that lands only verified work. Local; it \
+never invokes a model."""
+category = "ai"
+url = "https://majordomus.dev"
+stack = ["Rust", "MCP", "Zola"]
+featured = true
+
+[[projects]]
+repo = "oscilla"
+name = "Oscilla"
+tagline = "A zero-install acoustic laboratory in the browser."
+summary = """Generate, measure and reproduce sound experiments, and know how far each result can \
+be trusted. Every readout carries its uncertainty."""
+category = "science"
+url = "https://korczis.github.io/oscilla/"
+stack = ["JavaScript", "Web Audio"]
+featured = true
+
+[[projects]]
+repo = "algoglyph"
+name = "algoglyph"
+tagline = "Algorithms and physics drawn as glyphs."
+summary = """Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and \
+gravity in 2D and 3D, each with measured readouts and a tested core."""
+category = "science"
+url = "https://korczis.github.io/algoglyph/"
+stack = ["TypeScript", "p5.js", "Apache ECharts", "Alpine.js", "Flowbite Pro"]
+featured = true
+
+[[projects]]
+repo = "kompendium-epistemicke-anihilace"
+name = "Kompendium"
+tagline = "A defensive taxonomy of epistemic and cognitive manipulation (Czech)."
+summary = """A book, a website and a wiki: mechanisms, detection signatures, defence and \
+recovery, cross-linked into a graph you can explore."""
+category = "knowledge"
+url = "https://korczis.github.io/kompendium-epistemicke-anihilace/"
+stack = ["Zola", "Cytoscape.js", "Apache ECharts", "Alpine.js", "Flowbite Pro"]
+featured = true
+
+[[projects]]
+repo = "data-atlas"
+name = "Data Atlas"
+tagline = "A searchable catalogue of GIS and geodata sources (Czech)."
+summary = """Datasets, cadastre, transport, remote sensing and spatial analytics in one \
+single-file, searchable page."""
+category = "data"
+url = "https://korczis.github.io/data-atlas/"
+stack = ["Python"]
+featured = true
+
+[[projects]]
+repo = "majordomus-reel"
+name = "Majordomus reel"
+tagline = "A promo reel rendered entirely from code."
+summary = "Voice, frames, music and sound, all generated and versioned like software."
+category = "media"
+url = "https://korczis.github.io/majordomus-reel/"
+stack = ["HTML"]
+featured = true
+
+[[projects]]
+repo = "crisis-map"
+name = "Crisis map"
+tagline = "Incident reports, normalised, geocoded and mapped."
+summary = """Reports geocoded through a local Nominatim, stored as PostGIS geography and served \
+from one capability registry: LiveView, REST, OpenAPI, MCP and CLI."""
+category = "data"
+url = "https://korczis.github.io/crisis-map/"
+stack = ["Elixir", "PostGIS", "MCP"]
+featured = false
+
+[[projects]]
+repo = "catharsis-as-a-service"
+name = "Catharsis as a Service"
+tagline = "An emotional state transition endpoint."
+summary = "A Sig Nihl / Prismatic digital artifact."
+category = "media"
+url = "https://korczis.github.io/catharsis-as-a-service/"
+stack = ["HTML"]
+featured = false
+
+[[projects]]
+repo = "sonic-playground"
+name = "Sonic Playground"
+tagline = "Music that moves you, not algorithmic noise."
+summary = "A hand-picked music blog built with Phoenix and Elixir on the Kita theme."
+category = "media"
+url = "https://korczis.github.io/sonic-playground/"
+stack = ["Elixir"]
+featured = false
+
+[[projects]]
+repo = "gists-search"
+name = "Gists search"
+tagline = "Catalogue, enrichment and search over a mirror of my gists."
+summary = "A searchable index over a mirror of my GitHub gists."
+category = "tools"
+url = "https://korczis.github.io/gists-search/"
+stack = ["Python"]
+featured = false
+
+[[projects]]
+repo = "json2csv"
+name = "json2csv"
+tagline = "Easy to use tool for converting JSON to CSV."
+summary = "A small Ruby command-line converter."
+category = "tools"
+stack = ["Ruby"]
+featured = false
+
+[[projects]]
+repo = "maze-rs"
+name = "maze-rs"
+tagline = "Mazes for Programmers, in Rust."
+summary = "Maze generation algorithms from the book, in Rust."
+category = "science"
+url = "https://korczis.github.io/maze-rs/"
+stack = ["Rust"]
+featured = false
+
+[[projects]]
+repo = "csv2psql"
+name = "csv2psql"
+tagline = "CSV into SQL statements for PostgreSQL."
+summary = "Turns CSV into insert or update statements for PostgreSQL."
+category = "tools"
+url = "https://korczis.github.io/csv2psql/"
+stack = ["Ruby", "PostgreSQL"]
+featured = false
+
+[[projects]]
+repo = "big-png"
+name = "big-png"
+tagline = "The biggest image in the smallest space."
+summary = "A compression curiosity: an enormous PNG in a tiny file."
+category = "science"
+stack = ["Python"]
+featured = false

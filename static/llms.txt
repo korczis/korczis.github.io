@@ -1,0 +1,50 @@
+# Tomas Korcak
+
+> Software for evidence: AI agents that prove their work, honest instruments in the browser, knowledge you can check.
+
+Tomas Korcak builds software for evidence: tools that make AI agents prove their
+work, honest scientific instruments in the browser, and knowledge bases that can be checked.
+Every project below links to its source on GitHub; most have a live site.
+
+## Pages
+
+- [Home](https://korczis.github.io/): who I am, featured projects, activity
+- [Projects](https://korczis.github.io/projects/): the full catalogue, filterable
+- [Stack](https://korczis.github.io/stack/): the tools and practices behind every project
+
+## AI engineering
+
+- [Majordomus](https://github.com/korczis/prismatic-majordomus): AI agents say the work is done; Majordomus makes them prove it. Live: https://majordomus.dev
+
+## Science and visualisation
+
+- [Oscilla](https://github.com/korczis/oscilla): A zero-install acoustic laboratory in the browser. Live: https://korczis.github.io/oscilla/
+- [algoglyph](https://github.com/korczis/algoglyph): Algorithms and physics drawn as glyphs. Live: https://korczis.github.io/algoglyph/
+- [maze-rs](https://github.com/korczis/maze-rs): Mazes for Programmers, in Rust. Live: https://korczis.github.io/maze-rs/
+- [big-png](https://github.com/korczis/big-png): The biggest image in the smallest space.
+
+## Knowledge
+
+- [Kompendium](https://github.com/korczis/kompendium-epistemicke-anihilace): A defensive taxonomy of epistemic and cognitive manipulation (Czech). Live: https://korczis.github.io/kompendium-epistemicke-anihilace/
+
+## Data and GIS
+
+- [Data Atlas](https://github.com/korczis/data-atlas): A searchable catalogue of GIS and geodata sources (Czech). Live: https://korczis.github.io/data-atlas/
+- [Crisis map](https://github.com/korczis/crisis-map): Incident reports, normalised, geocoded and mapped. Live: https://korczis.github.io/crisis-map/
+
+## Media and art
+
+- [Majordomus reel](https://github.com/korczis/majordomus-reel): A promo reel rendered entirely from code. Live: https://korczis.github.io/majordomus-reel/
+- [Catharsis as a Service](https://github.com/korczis/catharsis-as-a-service): An emotional state transition endpoint. Live: https://korczis.github.io/catharsis-as-a-service/
+- [Sonic Playground](https://github.com/korczis/sonic-playground): Music that moves you, not algorithmic noise. Live: https://korczis.github.io/sonic-playground/
+
+## Tools
+
+- [Gists search](https://github.com/korczis/gists-search): Catalogue, enrichment and search over a mirror of my gists. Live: https://korczis.github.io/gists-search/
+- [json2csv](https://github.com/korczis/json2csv): Easy to use tool for converting JSON to CSV.
+- [csv2psql](https://github.com/korczis/csv2psql): CSV into SQL statements for PostgreSQL. Live: https://korczis.github.io/csv2psql/
+
+## Optional
+
+- [Majordomus](https://majordomus.dev): the supervisory layer this site is built under
+- [GitHub profile](https://github.com/korczis)
