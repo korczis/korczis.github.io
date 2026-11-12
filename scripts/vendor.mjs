@@ -15,6 +15,7 @@ const BUNDLES = {
   'chart.umd.min.js': 'node_modules/chart.js/dist/chart.umd.min.js',
   'echarts.min.js': 'node_modules/echarts/dist/echarts.min.js',
   'p5.min.js': 'node_modules/p5/lib/p5.min.js',
+  'd3.min.js': 'node_modules/d3/dist/d3.min.js',
 };
 
 mkdirSync(TARGET, { recursive: true });

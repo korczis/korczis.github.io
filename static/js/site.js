@@ -21,6 +21,7 @@
     cytoscape: 'js/vendor/cytoscape.min.js',
     chartjs: 'js/vendor/chart.umd.min.js',
     echarts: 'js/vendor/echarts.min.js',
+    d3: 'js/vendor/d3.min.js',
   };
 
   const reducedMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -92,6 +93,8 @@
       primarySoft: token('--hub-primary-soft'),
       // Sequential ramp for heatmaps: no activity first, then four steps of the primary.
       ramp: [0, 1, 2, 3, 4].map((step) => token(`--hub-ramp-${step}`)),
+      art: [0, 1, 2, 3, 4].map((step) => token(`--hub-art-${step}`)),
+      glow: token('--hub-glow'),
       font: getComputedStyle(root).getPropertyValue('--font-sans').trim() || 'system-ui, sans-serif',
       alpha,
     };
@@ -234,5 +237,27 @@
   // Links go to the page's language (data-home); vendor bundles load from the site root (base).
   const home = root.dataset.home || base;
 
-  window.KorczisHub = { viz, lib, data, palette, reducedMotion, isDark, base, home, t, locale: i18n.locale || 'en-GB' };
+  // One tooltip per visual box, positioned near the pointer and kept inside the box.
+  function tooltip(box) {
+    const tip = document.createElement('div');
+    tip.className = 'viz-tip';
+    tip.setAttribute('role', 'tooltip');
+    box.appendChild(tip);
+    return {
+      show(html, event) {
+        tip.innerHTML = html;
+        tip.classList.add('is-on');
+        const rect = box.getBoundingClientRect();
+        const x = Math.min(Math.max(event.clientX - rect.left + 12, 4), rect.width - tip.offsetWidth - 4);
+        const y = Math.max(event.clientY - rect.top - tip.offsetHeight - 12, 4);
+        tip.style.left = `${x}px`;
+        tip.style.top = `${y}px`;
+      },
+      hide() {
+        tip.classList.remove('is-on');
+      },
+    };
+  }
+
+  window.KorczisHub = { viz, lib, data, palette, reducedMotion, isDark, base, home, t, tooltip, locale: i18n.locale || 'en-GB' };
 })();

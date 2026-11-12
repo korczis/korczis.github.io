@@ -29,7 +29,10 @@ function describe(r) {
   return text;
 }
 
-const csDate = (iso) => new Date(iso).toLocaleDateString('cs-CZ', { day: 'numeric', month: 'long', year: 'numeric' });
+// Deterministic on every machine: UTC and our own month names (locale data and time zones differ
+// between this Mac and CI, and a generated file must come out byte-identical everywhere).
+const CS_MONTHS = ['ledna', 'února', 'března', 'dubna', 'května', 'června', 'července', 'srpna', 'září', 'října', 'listopadu', 'prosince'];
+const csDate = (iso) => { const d = new Date(iso); return `${d.getUTCDate()}. ${CS_MONTHS[d.getUTCMonth()]} ${d.getUTCFullYear()}`; };
 const csProjects = (n) => (n === 1 ? 'projekt' : n >= 2 && n <= 4 ? 'projekty' : 'projektů');
 // The Czech description is derived from the data, never machine-translated prose: category,
 // language and the date of the last commit, or the curated Czech tagline when there is one.

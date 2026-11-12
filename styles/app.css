@@ -57,6 +57,13 @@
   --hub-ramp-2: var(--color-primary-400);
   --hub-ramp-3: var(--color-primary-600);
   --hub-ramp-4: var(--color-primary-800);
+  /* The art palette: a hue walk from the brand blue through sky to violet, for D3 visuals. */
+  --hub-art-0: var(--color-primary-800);
+  --hub-art-1: var(--color-primary-600);
+  --hub-art-2: var(--color-sky-500);
+  --hub-art-3: var(--color-violet-500);
+  --hub-art-4: var(--color-fuchsia-500);
+  --hub-glow: var(--color-primary-400);
 }
 
 .dark {
@@ -73,6 +80,12 @@
   --hub-ramp-2: var(--color-primary-700);
   --hub-ramp-3: var(--color-primary-500);
   --hub-ramp-4: var(--color-primary-300);
+  --hub-art-0: var(--color-primary-500);
+  --hub-art-1: var(--color-sky-400);
+  --hub-art-2: var(--color-cyan-300);
+  --hub-art-3: var(--color-violet-400);
+  --hub-art-4: var(--color-fuchsia-400);
+  --hub-glow: var(--color-sky-300);
 }
 
 @layer base {
@@ -142,6 +155,38 @@
     display: block;
     width: 100% !important;
     height: 100% !important;
+  }
+
+  /* Shared tooltip of the D3 visuals (Flowbite Pro tooltip look). */
+  .viz-tip {
+    position: absolute;
+    z-index: 20;
+    pointer-events: none;
+    max-width: 16rem;
+    border-radius: 0.5rem;
+    background: var(--color-gray-900);
+    color: var(--color-white);
+    padding: 0.5rem 0.75rem;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.2);
+    opacity: 0;
+    transform: translateY(4px);
+    transition: opacity 120ms ease, transform 120ms ease;
+  }
+
+  .viz-tip.is-on {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .dark .viz-tip {
+    background: var(--color-gray-700);
+  }
+
+  .viz-box svg {
+    display: block;
+    overflow: visible;
   }
 
   .tabular {
