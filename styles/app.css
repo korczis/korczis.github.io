@@ -103,20 +103,32 @@
     width: 100%;
   }
 
-  .viz-box > canvas,
-  .viz-box > div {
-    position: absolute;
-    inset: 0;
+  /* Cytoscape and ECharts set the container's position inline, so the mount point takes its size
+     from width and height, not from inset (an absolute inset box collapsed to 0 px high). */
+  .viz-box > [data-canvas] {
+    width: 100%;
+    height: 100%;
   }
 
+  .viz-box > canvas {
+    position: absolute;
+    inset: 0;
+    max-width: 100%;
+  }
+
+  /* Paint containment clips the sketch to its box and keeps it out of the page's scrollable
+     overflow (p5 sizes its canvas once, before a narrow viewport settles). */
   .viz-hero {
     position: absolute;
     inset: 0;
     overflow: hidden;
+    contain: strict;
     pointer-events: none;
   }
 
   .viz-hero canvas {
+    position: absolute;
+    inset: 0;
     display: block;
     width: 100% !important;
     height: 100% !important;

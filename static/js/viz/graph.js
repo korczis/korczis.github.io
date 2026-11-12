@@ -35,7 +35,7 @@ KorczisHub.viz('graph', {
           style: {
             label: 'data(label)',
             'font-family': c.font,
-            'font-size': 11,
+            'font-size': 12,
             color: c.text,
             'text-valign': 'bottom',
             'text-margin-y': 6,
@@ -47,11 +47,11 @@ KorczisHub.viz('graph', {
         },
         {
           selector: 'node[kind = "project"]',
-          style: { width: 22, height: 22, 'background-color': c.primary, 'font-weight': 600, color: c.strong },
+          style: { width: 24, height: 24, 'background-color': c.primary, 'font-weight': 600, 'font-size': 13, color: c.strong },
         },
         {
           selector: 'node.hub',
-          style: { width: 34, height: 34, 'border-width': 4, 'border-color': c.primarySoft, 'font-size': 13 },
+          style: { width: 38, height: 38, 'border-width': 5, 'border-color': c.primarySoft, 'font-size': 15 },
         },
         {
           selector: 'node[kind = "tech"]',
@@ -83,7 +83,11 @@ KorczisHub.viz('graph', {
       container: box.querySelector('[data-canvas]') || box,
       elements,
       style: style(),
-      layout: { name: 'cose', animate: false, randomize: false, nodeRepulsion: 9000, idealEdgeLength: 70, padding: 24 },
+      layout: {
+        name: 'cose', animate: false, randomize: false, padding: 16,
+        nodeRepulsion: 16000, idealEdgeLength: 95, nodeOverlap: 24, componentSpacing: 70, gravity: 0.35,
+        nodeDimensionsIncludeLabels: true,
+      },
       userZoomingEnabled: false,
       boxSelectionEnabled: false,
       autoungrabify: false,
@@ -102,7 +106,7 @@ KorczisHub.viz('graph', {
 
     const resize = new ResizeObserver(() => {
       cy.resize();
-      cy.fit(undefined, 24);
+      cy.fit(undefined, 16);
     });
     resize.observe(box);
 

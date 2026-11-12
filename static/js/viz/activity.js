@@ -41,7 +41,7 @@ KorczisHub.viz('activity', {
         },
         calendar: {
           top: 22,
-          left: 28,
+          left: 36,
           right: 6,
           bottom: 36,
           range: [from, to],

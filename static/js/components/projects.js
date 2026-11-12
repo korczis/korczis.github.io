@@ -7,7 +7,7 @@ document.addEventListener('alpine:init', () => {
     category: 'all',
     liveOnly: false,
     supervisedOnly: false,
-    sort: 'recent',
+    sort: 'curated',
     total: 0,
     shown: 0,
     cards: [],
@@ -18,9 +18,10 @@ document.addEventListener('alpine:init', () => {
       this.category = params.get('category') || 'all';
       this.liveOnly = params.get('live') === '1';
       this.supervisedOnly = params.get('supervised') === '1';
-      this.sort = params.get('sort') || 'recent';
-      this.cards = [...this.$refs.grid.querySelectorAll('[data-card]')].map((el) => ({
+      this.sort = params.get('sort') || 'curated';
+      this.cards = [...this.$refs.grid.querySelectorAll('[data-card]')].map((el, position) => ({
         el,
+        position,
         text: el.dataset.search.toLowerCase(),
         category: el.dataset.category,
         live: el.dataset.live === 'true',
@@ -40,7 +41,8 @@ document.addEventListener('alpine:init', () => {
       const order = [...this.cards].sort((a, b) => {
         if (this.sort === 'stars') return b.stars - a.stars || a.name.localeCompare(b.name);
         if (this.sort === 'name') return a.name.localeCompare(b.name);
-        return b.pushed.localeCompare(a.pushed);
+        if (this.sort === 'recent') return b.pushed.localeCompare(a.pushed);
+        return a.position - b.position;
       });
       let shown = 0;
       order.forEach((card, index) => {
@@ -63,7 +65,7 @@ document.addEventListener('alpine:init', () => {
       if (this.category !== 'all') params.set('category', this.category);
       if (this.liveOnly) params.set('live', '1');
       if (this.supervisedOnly) params.set('supervised', '1');
-      if (this.sort !== 'recent') params.set('sort', this.sort);
+      if (this.sort !== 'curated') params.set('sort', this.sort);
       const query = params.toString();
       const url = `${window.location.pathname}${query ? `?${query}` : ''}${window.location.hash}`;
       window.history.replaceState(null, '', url);
@@ -74,7 +76,7 @@ document.addEventListener('alpine:init', () => {
       this.category = 'all';
       this.liveOnly = false;
       this.supervisedOnly = false;
-      this.sort = 'recent';
+      this.sort = 'curated';
     },
   }));
 });

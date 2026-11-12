@@ -21,7 +21,7 @@ attention to UI, UX and consistency.
 
 - `scripts/audit-ui.mjs` covers `/`, `/projects/`, `/stack/` and `/404.html`: axe-core
   WCAG 2.2 AA at 375 and 1440 px in light and dark; overflow and errors at 320, 768, 1024 and
-  1920 px; CLS at most 0.1; each `[data-viz]` reaches `data-viz-state="ready"` once scrolled
+  1920 px; CLS at most 0.1; each `[data-viz]` reaches `data-viz-state="ready"` and draws on a non-empty surface once scrolled
   into view; every rendered internal link resolves to a built file.
 - CI (`.github/workflows/ci.yml`, job `validate`) runs it on every pull request and before every
   deployment, with screenshots as an artefact. Locally: `npm run verify` (one browser launch;

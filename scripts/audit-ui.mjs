@@ -92,14 +92,17 @@ async function measure(browser, name, rel, width, scheme, full) {
     });
     try {
       await page.waitForFunction(
-        () => [...document.querySelectorAll('[data-viz]')].every((b) => b.dataset.vizState === 'ready'),
+        // Ready and visibly drawn: a visual whose drawing surface is 0 px high counts as broken.
+        () => [...document.querySelectorAll('[data-viz]')].every((b) => b.dataset.vizState === 'ready'
+          && [...b.querySelectorAll('canvas, svg')].some((c) => c.getBoundingClientRect().height > 0)),
         null,
         { timeout: 20000 },
       );
     } catch {
       vizFailures = await page.evaluate(() => [...document.querySelectorAll('[data-viz]')]
-        .filter((b) => b.dataset.vizState !== 'ready')
-        .map((b) => `visual ${b.dataset.viz} is ${b.dataset.vizState || 'not mounted'}`));
+        .filter((b) => b.dataset.vizState !== 'ready'
+          || ![...b.querySelectorAll('canvas, svg')].some((c) => c.getBoundingClientRect().height > 0))
+        .map((b) => `visual ${b.dataset.viz} is ${b.dataset.vizState === 'ready' ? 'ready but draws nothing (0 px)' : b.dataset.vizState || 'not mounted'}`));
     }
     await page.evaluate(() => window.scrollTo(0, 0));
     await page.waitForTimeout(200);
