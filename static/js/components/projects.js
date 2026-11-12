@@ -11,6 +11,7 @@ document.addEventListener('alpine:init', () => {
     total: 0,
     shown: 0,
     cards: [],
+    rows: [],
 
     init() {
       const params = new URLSearchParams(window.location.search);
@@ -30,6 +31,18 @@ document.addEventListener('alpine:init', () => {
         stars: Number(el.dataset.stars || 0),
         name: el.dataset.name.toLowerCase(),
       }));
+      // The table view's rows carry the same data-* as the cards and follow the same filter.
+      this.rows = [...(this.$refs.rows?.querySelectorAll('[data-row]') ?? [])].map((el, position) => ({
+        el,
+        position,
+        text: el.dataset.search.toLowerCase(),
+        category: el.dataset.category,
+        live: el.dataset.live === 'true',
+        supervised: el.dataset.supervised === 'true',
+        pushed: el.dataset.pushed,
+        stars: Number(el.dataset.stars || 0),
+        name: el.dataset.name.toLowerCase(),
+      }));
       this.total = this.cards.length;
       this.$watch('q', () => this.apply());
       ['category', 'liveOnly', 'supervisedOnly', 'sort'].forEach((key) => this.$watch(key, () => this.apply()));
@@ -37,30 +50,37 @@ document.addEventListener('alpine:init', () => {
     },
 
     apply() {
+      this.shown = this.filter(this.cards, (card, index) => { card.el.style.order = String(index); });
+      this.filter(this.rows, (row) => this.$refs.rows.appendChild(row.el));
+      this.remember();
+    },
+
+    filter(items, place) {
       const needle = this.q.trim().toLowerCase();
-      const order = [...this.cards].sort((a, b) => {
+      const order = [...items].sort((a, b) => {
         if (this.sort === 'stars') return b.stars - a.stars || a.name.localeCompare(b.name);
         if (this.sort === 'name') return a.name.localeCompare(b.name);
         if (this.sort === 'recent') return b.pushed.localeCompare(a.pushed);
         return a.position - b.position;
       });
       let shown = 0;
-      order.forEach((card, index) => {
+      order.forEach((item, index) => {
         const match =
-          (!needle || card.text.includes(needle)) &&
-          (this.category === 'all' || card.category === this.category) &&
-          (!this.liveOnly || card.live) &&
-          (!this.supervisedOnly || card.supervised);
-        card.el.hidden = !match;
-        card.el.style.order = String(index);
+          (!needle || item.text.includes(needle)) &&
+          (this.category === 'all' || item.category === this.category) &&
+          (!this.liveOnly || item.live) &&
+          (!this.supervisedOnly || item.supervised);
+        item.el.hidden = !match;
+        place(item, index);
         if (match) shown += 1;
       });
-      this.shown = shown;
-      this.remember();
+      return shown;
     },
 
     remember() {
-      const params = new URLSearchParams();
+      // Keep parameters other components own (the detail drawer's ?project=).
+      const params = new URLSearchParams(window.location.search);
+      ['q', 'category', 'live', 'supervised', 'sort'].forEach((key) => params.delete(key));
       if (this.q) params.set('q', this.q);
       if (this.category !== 'all') params.set('category', this.category);
       if (this.liveOnly) params.set('live', '1');

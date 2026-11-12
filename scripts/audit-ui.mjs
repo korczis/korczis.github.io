@@ -208,10 +208,53 @@ async function checkDrawer(browser) {
   return findings;
 }
 
+// The catalogue's detail drawer: Details opens it with focus on its close button and the project
+// in the address; Escape closes it, makes it inert again and returns focus to the trigger; the
+// table view filters with the cards.
+async function checkDetail(browser) {
+  const findings = [];
+  const context = await browser.newContext({ viewport: { width: 1280, height: 900 }, reducedMotion: 'reduce' });
+  const page = await context.newPage();
+  await page.goto(`${BASE}projects/`, { waitUntil: 'networkidle' });
+  await page.waitForTimeout(300);
+  const trigger = page.locator('[data-card] button:has-text("Details")').first();
+  await trigger.click();
+  await page.waitForTimeout(400);
+  let st = await page.evaluate(() => {
+    const d = document.getElementById('project-drawer');
+    return { inert: d.hasAttribute('inert'), right: Math.round(d.getBoundingClientRect().right), title: document.getElementById('project-drawer-title')?.textContent,
+      focus: d.contains(document.activeElement), query: window.location.search };
+  });
+  if (st.inert || st.right !== 1280 || !st.title || !st.focus || !st.query.includes('project=')) findings.push(`detail drawer did not open properly: ${JSON.stringify(st)}`);
+  await page.keyboard.press('Escape');
+  await page.waitForTimeout(400);
+  st = await page.evaluate(() => ({ inert: document.getElementById('project-drawer').hasAttribute('inert'),
+    focusBack: document.activeElement?.textContent?.includes('Details'), query: window.location.search }));
+  if (!st.inert || !st.focusBack || st.query.includes('project=')) findings.push(`detail drawer did not close properly: ${JSON.stringify(st)}`);
+  await page.click('#view-table-tab');
+  await page.fill('#project-search', 'rust');
+  await page.waitForTimeout(400);
+  const rows = await page.evaluate(() => [...document.querySelectorAll('[data-row]')].filter((r) => !r.hidden).length);
+  const cards = await page.evaluate(() => [...document.querySelectorAll('[data-card]')].filter((c) => !c.hidden).length);
+  if (rows !== cards || rows === 0) findings.push(`table view does not follow the filter: ${rows} rows, ${cards} cards`);
+  await context.close();
+  return findings;
+}
+
 const browser = await chromium.launch();
 const results = [];
 let failed = 0;
 try {
+  if (!ONLY || ONLY.test('detail')) {
+    const detail = await checkDetail(browser);
+    if (detail.length) {
+      failed += 1;
+      console.log('FAIL detail drawer and table view (/projects/)');
+      for (const f of detail) console.log(`     ${f}`);
+    } else {
+      console.log('ok   detail: Details opens with focus and address, Escape closes and returns focus, table follows filter');
+    }
+  }
   if (!ONLY || ONLY.test('drawer')) {
     const drawer = await checkDrawer(browser);
     if (drawer.length) {

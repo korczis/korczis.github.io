@@ -86,6 +86,16 @@
     display: none !important;
   }
 
+  /* The plain-text twin of a JavaScript control, shown only when scripts are off. */
+  html:not(.no-js) .no-js-only {
+    display: none !important;
+  }
+
+  /* Without JavaScript the tab panels are not toggled: show both views. */
+  html.no-js [role='tabpanel'].hidden {
+    display: block !important;
+  }
+
   [x-cloak] {
     display: none !important;
   }

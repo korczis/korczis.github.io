@@ -1,6 +1,7 @@
 {#- The catalogue grid and its toolbar (Flowbite Pro table header, adapted), shared by /projects/
     and every category page. Needs `cat`, `gh` and `scope` (a category key, or "" for all). -#}
 {%- set_global count = 0 -%}{%- for p in cat.projects -%}{%- if not scope or p.category == scope -%}{%- set_global count = count + 1 -%}{%- endif -%}{%- endfor -%}
+<div x-data="projectDetail">
 <section x-data="projectFilter" aria-label="Projects">
   <div class="px-4 pb-4 pt-6">
     {#- Toolbar: Flowbite Pro table header (search, filters, sort). Needs JavaScript. #}
@@ -50,10 +51,42 @@
       <button type="button" x-show="shown !== total" x-cloak @click="reset()" class="ml-2 font-medium text-primary-700 hover:underline dark:text-primary-400">Clear filters</button>
     </p>
 
-    <div x-ref="grid" class="grid grid-cols-1 gap-4 md:grid-cols-2 2xl:grid-cols-3">
+    {#- Views: Flowbite Tabs (cards, table). Without JavaScript both panels show. #}
+    <div class="mb-4 border-b border-gray-200 dark:border-gray-700" data-js>
+      <ul class="-mb-px flex flex-wrap text-center text-sm font-medium" data-tabs-toggle="#catalogue-views" role="tablist"
+        data-tabs-active-classes="text-primary-700 border-primary-700 dark:text-primary-400 dark:border-primary-400"
+        data-tabs-inactive-classes="border-transparent text-gray-600 hover:border-gray-300 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200">
+        <li class="me-2" role="presentation"><button type="button" id="view-cards-tab" data-tabs-target="#view-cards" role="tab" aria-controls="view-cards" aria-selected="true" class="inline-flex items-center gap-2 rounded-t-lg border-b-2 p-3">{{ <icon name="cube" class="h-4 w-4" /> }}Cards</button></li>
+        <li class="me-2" role="presentation"><button type="button" id="view-table-tab" data-tabs-target="#view-table" role="tab" aria-controls="view-table" aria-selected="false" class="inline-flex items-center gap-2 rounded-t-lg border-b-2 p-3">{{ <icon name="graph" class="h-4 w-4" /> }}Table</button></li>
+      </ul>
+    </div>
+    <div id="catalogue-views">
+      <div id="view-cards" role="tabpanel" aria-labelledby="view-cards-tab">
+        <div x-ref="grid" class="grid grid-cols-1 gap-4 md:grid-cols-2 2xl:grid-cols-3">
       {%- for p in cat.projects %}{% if not scope or p.category == scope %}
       {{ <project_card p={p} f={gh.projects[p.repo]} label={cat.categories[p.category].name} anchor={true} /> }}
       {%- endif %}{% endfor %}
+    </div>
+
+      </div>
+      <div id="view-table" role="tabpanel" aria-labelledby="view-table-tab" class="hidden">
+        <div class="relative overflow-x-auto rounded-lg bg-white shadow dark:bg-gray-800" tabindex="0" role="region" aria-label="Projects as a table">
+          <table class="w-full text-left text-sm text-gray-600 dark:text-gray-400">
+            <thead class="bg-gray-50 text-xs uppercase text-gray-700 dark:bg-gray-700 dark:text-gray-300">
+              <tr>
+                <th scope="col" class="px-4 py-3">Project</th><th scope="col" class="px-4 py-3">Category</th><th scope="col" class="px-4 py-3">Status</th>
+                <th scope="col" class="px-4 py-3">Language</th><th scope="col" class="px-4 py-3 text-right">Stars</th><th scope="col" class="px-4 py-3">Updated</th>
+                <th scope="col" class="px-4 py-3">Supervision</th><th scope="col" class="px-4 py-3 text-right"><span class="sr-only">Links</span></th>
+              </tr>
+            </thead>
+            <tbody x-ref="rows">
+              {%- for p in cat.projects %}{% if not scope or p.category == scope %}
+              {{ <project_row p={p} f={gh.projects[p.repo]} label={cat.categories[p.category].name} /> }}
+              {%- endif %}{% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
 
     <div x-show="shown === 0" x-cloak class="rounded-lg border-2 border-dashed border-gray-300 p-8 text-center dark:border-gray-600">
@@ -68,3 +101,50 @@
     </p>
   </div>
 </section>
+
+{#- Project detail: Flowbite Pro read drawer (application-ui/read-drawers), one per page, filled by
+    static/js/components/project-detail.js from the data below. Closed it is inert. #}
+<script type="application/json" id="catalogue-data">{"generated_at": {{ gh.generated_at | json_encode | safe }}, "projects": {{ cat.projects | json_encode | safe }}, "measured": {{ gh.projects | json_encode | safe }}, "categories": {{ cat.categories | json_encode | safe }}}</script>
+<div x-ref="drawer" id="project-drawer" inert tabindex="-1" role="dialog" aria-modal="true" aria-labelledby="project-drawer-title"
+  class="fixed right-0 top-0 z-50 h-screen w-full max-w-md translate-x-full overflow-y-auto bg-white p-4 shadow-lg transition-transform dark:bg-gray-800 sm:p-6">
+  <template x-if="p">
+    <div>
+      <div class="mb-4 flex items-start justify-between gap-3">
+        <div class="flex flex-wrap gap-2">
+          <span class="rounded-md bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-800 dark:bg-gray-700 dark:text-gray-300" x-text="categoryName"></span>
+          <span class="rounded-md px-2.5 py-0.5 text-xs font-medium" x-text="activityLabel"
+            :class="{ 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300': f.activity === 'active', 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300': f.activity === 'maintained', 'bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300': f.activity === 'dormant' }"></span>
+          <span x-show="f.supervised" class="rounded-md bg-primary-100 px-2.5 py-0.5 text-xs font-medium text-primary-800 dark:bg-primary-900 dark:text-primary-300">Majordomus</span>
+        </div>
+        <button type="button" x-ref="close" @click="close()" class="inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-700">
+          <svg class="h-5 w-5" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 18 18 6M6 6l12 12"/></svg><span class="sr-only">Close details</span>
+        </button>
+      </div>
+      <h2 id="project-drawer-title" class="mb-1 text-2xl font-bold text-gray-900 dark:text-white" x-text="p.name"></h2>
+      <p class="mb-3 font-medium text-gray-900 dark:text-gray-100" x-text="p.tagline"></p>
+      <p class="mb-5 text-sm text-gray-600 dark:text-gray-400" x-text="p.summary"></p>
+      <dl class="tabular mb-5 grid grid-cols-2 gap-x-4 gap-y-3 rounded-lg border border-gray-200 p-4 text-sm dark:border-gray-700">
+        <div><dt class="text-gray-600 dark:text-gray-400">Language</dt><dd class="font-semibold text-gray-900 dark:text-white" x-text="f.language || '—'"></dd></div>
+        <div><dt class="text-gray-600 dark:text-gray-400">Licence</dt><dd class="font-semibold text-gray-900 dark:text-white" x-text="f.license || '—'"></dd></div>
+        <div><dt class="text-gray-600 dark:text-gray-400">Stars</dt><dd class="font-semibold text-gray-900 dark:text-white" x-text="f.stars"></dd></div>
+        <div><dt class="text-gray-600 dark:text-gray-400">Forks</dt><dd class="font-semibold text-gray-900 dark:text-white" x-text="f.forks"></dd></div>
+        <div><dt class="text-gray-600 dark:text-gray-400">Created</dt><dd class="font-semibold text-gray-900 dark:text-white" x-text="date(f.created_at)"></dd></div>
+        <div><dt class="text-gray-600 dark:text-gray-400">Last push</dt><dd class="font-semibold text-gray-900 dark:text-white" x-text="date(f.pushed_at)"></dd></div>
+        <div><dt class="text-gray-600 dark:text-gray-400">Live site</dt><dd class="font-semibold text-gray-900 dark:text-white" x-text="p.url ? (f.live ? 'Answers (' + f.live_status + ')' : 'Down (' + f.live_status + ')') : 'None'"></dd></div>
+        <div><dt class="text-gray-600 dark:text-gray-400">Supervision</dt><dd class="font-semibold text-gray-900 dark:text-white" x-text="f.supervised ? '.ai/manifest.yaml' : 'None'"></dd></div>
+      </dl>
+      <p class="mb-2 text-sm font-medium text-gray-900 dark:text-white">Built with</p>
+      <ul class="mb-6 flex flex-wrap gap-1.5">
+        <template x-for="tech in p.stack" :key="tech">
+          <li class="rounded border border-gray-200 bg-gray-50 px-2 py-0.5 font-mono text-xs text-gray-700 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-300" x-text="tech"></li>
+        </template>
+      </ul>
+      <div class="flex flex-wrap gap-3">
+        <a x-show="p.url && f.live" :href="p.url" class="inline-flex items-center rounded-lg bg-primary-700 px-4 py-2 text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Open the site</a>
+        <a :href="'https://github.com/korczis/' + p.repo" class="inline-flex items-center rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700">Source on GitHub</a>
+      </div>
+      <p class="mt-6 text-xs text-gray-600 dark:text-gray-400">Measured on <span x-text="date(source.generated_at)"></span>; share this view with its address.</p>
+    </div>
+  </template>
+</div>
+</div>

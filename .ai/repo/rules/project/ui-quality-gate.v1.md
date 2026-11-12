@@ -26,6 +26,10 @@ attention to UI, UX and consistency.
 - CI (`.github/workflows/ci.yml`, job `validate`) runs it on every pull request and before every
   deployment, with screenshots as an artefact. Locally: `npm run verify` (one browser launch;
   mind the headless Chrome disk cost on the owner's Mac).
+- Interactions are driven like a person would: the mobile sidebar drawer (open, focus inside,
+  links above the backdrop, Escape, desktop exposed) and the catalogue's detail drawer and table
+  view (Details opens with focus and `?project=`, Escape closes and returns focus, the table
+  follows the filter).
 - A new page is added to `PAGES` in `scripts/audit-ui.mjs` in the same change.
 - The public site is audited the same way after every deployment (`pages.yml` job `verify`) and
   daily (`monitor.yml`), with `scripts/check-live.mjs` asking every linked live project.
