@@ -14,4 +14,12 @@ og_title = "Majordomus reel: A promo reel rendered entirely from code."
 og_image = "og/work-majordomus-reel.png"
 schema = "project"
 keywords = ["Majordomus reel", "Media and art", "HTML", "JavaScript", "Shell", "Tomas Korcak"]
+terms = ["html", "javascript", "shell", "python", "data-visualisation", "github-pages", "repository", "commit", "open-source"]
 +++
+**Majordomus reel** is a project in [Media and art](@/projects/media.md). Its code is written mainly in [HTML](@/glossary/html.md) (49.6 %), with [JavaScript](@/glossary/javascript.md), [Shell](@/glossary/shell.md) and [Python](@/glossary/python.md).
+
+The [repository](@/glossary/repository.md) was created in October 2026; its latest [commit](@/glossary/commit.md) is from 26 October 2026. It reads “chore(rules): vendor the majordomus standard rules of 1.0.0-alpha.8”. That places it among the projects active in the last 12 months.
+
+It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/majordomus-reel/>.
+
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code; the concepts below are explained in the [glossary](@/glossary/_index.md).

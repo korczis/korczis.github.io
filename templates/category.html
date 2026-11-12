@@ -9,7 +9,7 @@
 {%- set ix = load_data(path="data/index.json") -%}
 {%- set d = ix.categories[scope] | default(value={"repos": 0, "sites": 0, "top_language": "", "since": ""}) -%}
 {%- set_global n_curated = 0 -%}{%- for p in cat.projects -%}{%- if p.category == scope -%}{%- set_global n_curated = n_curated + 1 -%}{%- endif -%}{%- endfor -%}
-{{ <page_header title={page.title} lead={page.description} parent={trans(key="projects", lang=lang)} parent_url={config.base_url ~ lp ~ "/projects/"} icon={scope} /> }}
+{{ <page_header title={page.title} lead={page.description} parent={trans(key="nav_projects", lang=lang)} parent_url={config.base_url ~ lp ~ "/projects/"} icon={scope} /> }}
 <div class="grid grid-cols-2 gap-4 px-4 pt-6 xl:grid-cols-4">
   {{ <kpi value={d.repos ~ ""} label={trans(key="kpi_original_repositories", lang=lang)} note={trans(key="kpi_inferred_note", lang=lang)} /> }}
   {{ <kpi value={n_curated ~ ""} label={trans(key="kpi_featured_projects", lang=lang)} note={trans(key="kpi_curated_note", lang=lang)} /> }}

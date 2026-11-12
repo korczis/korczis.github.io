@@ -14,4 +14,10 @@ og_title = "MindScape: Tools"
 og_image = "og/work-mindscape.png"
 schema = "project"
 keywords = ["MindScape", "Tools", "Tomas Korcak"]
+terms = ["open-source", "repository", "commit"]
 +++
+**MindScape** is a project in [Tools](@/projects/tools.md).
+
+The [repository](@/glossary/repository.md) was created in February 2023; its latest [commit](@/glossary/commit.md) is from 18 February 2023. It reads “Add README.md”. That places it among the projects active in the last 48 months.
+
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code; the concepts below are explained in the [glossary](@/glossary/_index.md).

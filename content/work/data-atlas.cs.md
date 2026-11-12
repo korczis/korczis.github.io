@@ -14,4 +14,12 @@ og_title = "Data Atlas: Prohledávatelný katalog zdrojů GIS a geodat."
 og_image = "og/cs-work-data-atlas.png"
 schema = "project"
 keywords = ["Data Atlas", "Data a GIS", "Python", "HTML", "JavaScript", "Tomáš Korčák"]
+terms = ["python", "html", "javascript", "shell", "gis", "github-pages", "repository", "commit", "open-source"]
 +++
+**Data Atlas** je projekt z kategorie [Data a GIS](@/projects/data.cs.md). Jeho kód je napsaný hlavně v jazyce [Python](@/glossary/python.cs.md) (61,2 %), dále [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md) a PLpgSQL.
+
+[Repozitář](@/glossary/repository.cs.md) vznikl 27. srpna 2026; poslední [commit](@/glossary/commit.cs.md) je z 30. srpna 2026. Zní „Merge pull request \#2 from korczis/test/parser-coverage“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+
+Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/data-atlas/>.
+
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu; pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

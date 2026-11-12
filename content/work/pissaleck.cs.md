@@ -14,4 +14,10 @@ og_title = "pissaleck: Nástroje"
 og_image = "og/cs-work-pissaleck.png"
 schema = "project"
 keywords = ["pissaleck", "Nástroje", "Tomáš Korčák"]
+terms = ["open-source", "repository", "commit"]
 +++
+**pissaleck** je projekt z kategorie [Nástroje](@/projects/tools.cs.md).
+
+[Repozitář](@/glossary/repository.cs.md) vznikl 27. dubna 2024; poslední [commit](@/glossary/commit.cs.md) je z 27. dubna 2024. Zní „Initial commit“. Patří tak mezi projekty aktivní za posledních 48 měsíců.
+
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu; pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

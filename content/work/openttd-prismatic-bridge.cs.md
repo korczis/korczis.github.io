@@ -14,4 +14,10 @@ og_title = "openttd-prismatic-bridge: Média a umění"
 og_image = "og/cs-work-openttd-prismatic-bridge.png"
 schema = "project"
 keywords = ["openttd-prismatic-bridge", "Média a umění", "Python", "HTML", "Squirrel", "Tomáš Korčák"]
+terms = ["python", "html", "css", "shell", "data-visualisation", "repository", "commit", "open-source"]
 +++
+**openttd-prismatic-bridge** je projekt z kategorie [Média a umění](@/projects/media.cs.md). Jeho kód je napsaný hlavně v jazyce [Python](@/glossary/python.cs.md) (65,7 %), dále [HTML](@/glossary/html.cs.md), Squirrel a [CSS](@/glossary/css.cs.md).
+
+[Repozitář](@/glossary/repository.cs.md) vznikl 23. července 2026; poslední [commit](@/glossary/commit.cs.md) je z 24. července 2026. Zní „Doc: document the real prismatic-platform decision engine (Phase 3)“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu; pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

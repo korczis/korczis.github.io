@@ -13,5 +13,11 @@ category = "systems"
 og_title = "Systémy a infrastruktura: 16 repozitářů."
 og_image = "og/cs-category-systems.png"
 schema = "collection"
+terms = ["shell", "dockerfile", "ruby", "javascript", "rust", "repository"]
 keywords = ["Systémy a infrastruktura", "docks", "gh-exec-3000", "server-archlinux", "zdeny-docker", "k8s-orbis-pictus", "server-coreos", "Tomáš Korčák"]
 +++
+Servery, clustery a potrubí pod softwarem: neměnné hostitele, zpracování paketů, embedded desky a nasazování.
+
+Kategorie má 16 repozitářů; nejčastějšími jazyky jsou [Shell](@/glossary/shell.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md), [Ruby](@/glossary/ruby.cs.md) a [JavaScript](@/glossary/javascript.cs.md).
+
+*Jak kategorie vznikají:* nikdo je ručně nepřiřazuje. [Repozitář](@/glossary/repository.cs.md) spadne do kategorie, když jeho název, popis nebo témata odpovídají klíčovým slovům pravidla, jinak rozhodne jeho hlavní jazyk; forky a [mirrory](@/glossary/mirror.cs.md) se nepočítají za vlastní práci.

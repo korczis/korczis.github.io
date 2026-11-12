@@ -51,6 +51,23 @@ The site exists in English and Czech (`/cs/`) through Zola's multilingual featur
 - **The gate:** `scripts/check-i18n.mjs` fails on any untranslated text (rule
   `project.i18n-everywhere`).
 
+## Every page is an article
+
+Each page also teaches: it carries an article (its Markdown body) that explains what it shows and
+how to read it, and ends with **Concepts on this page**, the glossary terms it builds on.
+- **Glossary:** `data/glossary.toml` defines each term (language, technology, concept) in English
+  and Czech, with a source to read further. `npm run glossary` writes `content/glossary/`: one
+  page per term and language, listing every page that uses it and the related terms. Both lists
+  are derived from front matter.
+- **Front matter:** `extra.terms` names a page's terms, and `extra.article_title` names its
+  article. Generated pages get both from their generator (`scripts/lib/terms.mjs` resolves
+  languages, stack and categories to terms by convention). Hand pages write them in `content/`.
+- **Links:** articles link to terms with `@/glossary/<id>.md`, so Zola checks every link.
+- **Machines:** JSON-LD `about` lists a page's terms as `DefinedTerm`, and term pages belong to
+  the glossary's `DefinedTermSet`.
+- **The gate:** `scripts/check-glossary.mjs` fails on a page without an article or terms, on an
+  unknown or unused term, and on a term without a source (rule `project.pages-are-articles`).
+
 ## How the site stays current
 
 Pages are front matter over data. Nothing on them is typed, so nothing needs updating by hand:

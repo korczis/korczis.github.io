@@ -13,5 +13,13 @@ category = "ai"
 og_title = "Inženýrství AI: 7 repozitářů."
 og_image = "og/cs-category-ai.png"
 schema = "collection"
+terms = ["ai-agent", "html", "rust", "mcp", "zola", "repository"]
 keywords = ["Inženýrství AI", "Majordomus", "korczis.github.io", "osint-case-ratcliffe-moscow-2026", "llm", "sig", "edna", "cognitive-reasoning", "Tomáš Korčák"]
 +++
+Dohled nad AI agenty pro programování: jedna politika pro každý nástroj, vymezené úkoly a práce, která projde jen doložená.
+
+Kategorie má 7 repozitářů; nejčastějšími jazyky jsou [HTML](@/glossary/html.cs.md) a [Rust](@/glossary/rust.cs.md). Vybrané projekty: **Majordomus**.
+
+Klíčový pojem: [AI agent](@/glossary/ai-agent.cs.md).
+
+*Jak kategorie vznikají:* nikdo je ručně nepřiřazuje. [Repozitář](@/glossary/repository.cs.md) spadne do kategorie, když jeho název, popis nebo témata odpovídají klíčovým slovům pravidla, jinak rozhodne jeho hlavní jazyk; forky a [mirrory](@/glossary/mirror.cs.md) se nepočítají za vlastní práci.

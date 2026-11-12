@@ -13,5 +13,13 @@ category = "security"
 og_title = "Security and OSINT: 4 repositories."
 og_image = "og/category-security.png"
 schema = "collection"
+terms = ["osint", "cpp", "ruby", "rust", "repository"]
 keywords = ["Security and OSINT", "magic", "zlown", "peacemaker", "ratnet", "Tomas Korcak"]
 +++
+Open-source intelligence, radio and network security research: cases, proofs of concept and the tooling around them.
+
+The category holds 4 original repositories, written most often in [C++](@/glossary/cpp.md), [Ruby](@/glossary/ruby.md) and [Rust](@/glossary/rust.md).
+
+Key concept: [OSINT](@/glossary/osint.md).
+
+*How categories are made:* nobody assigns them by hand. A [repository](@/glossary/repository.md) falls into a category when its name, description or topics match the rule's keywords, otherwise its primary language decides; [forks](@/glossary/fork.md) and [mirrors](@/glossary/mirror.md) never count as the owner's work.

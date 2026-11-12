@@ -14,4 +14,10 @@ og_title = "prism: Nástroje"
 og_image = "og/cs-work-prism.png"
 schema = "project"
 keywords = ["prism", "Nástroje", "Tomáš Korčák"]
+terms = ["open-source", "repository", "commit"]
 +++
+**prism** je projekt z kategorie [Nástroje](@/projects/tools.cs.md).
+
+[Repozitář](@/glossary/repository.cs.md) vznikl 1. prosince 2024; poslední [commit](@/glossary/commit.cs.md) je z 4. února 2026. Zní „\[38;2;248;248;242mfeat(aiad): inject AIAD v1.0.0 infrastructure\[0m“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu; pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

@@ -14,4 +14,14 @@ og_title = "Crisis map: Hlášení incidentů normalizovaná, geokódovaná a zm
 og_image = "og/cs-work-crisis-map.png"
 schema = "project"
 keywords = ["Crisis map", "Data a GIS", "Elixir", "CSS", "JavaScript", "Tomáš Korčák"]
+terms = ["elixir", "css", "javascript", "html", "postgis", "mcp", "gis", "github-pages", "repository", "commit", "open-source"]
 +++
+**Crisis map** je projekt z kategorie [Data a GIS](@/projects/data.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (96,2 %), dále [CSS](@/glossary/css.cs.md), [JavaScript](@/glossary/javascript.cs.md) a [HTML](@/glossary/html.cs.md).
+
+[Repozitář](@/glossary/repository.cs.md) vznikl 8. září 2026; poslední [commit](@/glossary/commit.cs.md) je z 8. září 2026. Zní „fix(site): the overview page is titled once“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+
+Je postavený na [PostGIS](@/glossary/postgis.cs.md) a [MCP](@/glossary/mcp.cs.md).
+
+Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/crisis-map/>.
+
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu; pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

@@ -13,5 +13,11 @@ category = "learning"
 og_title = "Learning and experiments: 16 repositories."
 og_image = "og/category-learning.png"
 schema = "collection"
+terms = ["csharp", "cpp", "javascript", "ruby", "c", "elixir", "haskell", "java", "shell", "repository"]
 keywords = ["Learning and experiments", "happ", "Test-Elixir", "node-proxy-upload", "skull-cpp", "grache-test", "skull-emscripten", "Tomas Korcak"]
 +++
+Learning materials, katas and experiments across many languages: the sketches that came before the projects.
+
+The category holds 16 original repositories, written most often in [C#](@/glossary/csharp.md), [C++](@/glossary/cpp.md), [JavaScript](@/glossary/javascript.md) and [Ruby](@/glossary/ruby.md).
+
+*How categories are made:* nobody assigns them by hand. A [repository](@/glossary/repository.md) falls into a category when its name, description or topics match the rule's keywords, otherwise its primary language decides; [forks](@/glossary/fork.md) and [mirrors](@/glossary/mirror.md) never count as the owner's work.

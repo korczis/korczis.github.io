@@ -13,5 +13,13 @@ category = "science"
 og_title = "Věda a vizualizace: 14 repozitářů."
 og_image = "og/cs-category-science.png"
 schema = "collection"
+terms = ["data-visualisation", "javascript", "rust", "cpp", "elixir", "haskell", "python", "typescript", "web-audio", "p5-js", "apache-echarts", "alpine-js", "flowbite-pro", "repository"]
 keywords = ["Věda a vizualizace", "Oscilla", "algoglyph", "maze-rs", "big-png", "distance-calculator", "rustas", "graph-flow", "gooddata-graphql", "maze", "maze-js", "Tomáš Korčák"]
 +++
+Poctivé přístroje a kreslené algoritmy v prohlížeči: akustika, fyzika, řazení, bludiště, každý údaj změřený.
+
+Kategorie má 14 repozitářů; nejčastějšími jazyky jsou [JavaScript](@/glossary/javascript.cs.md), [Rust](@/glossary/rust.cs.md), [C++](@/glossary/cpp.cs.md) a [Elixir](@/glossary/elixir.cs.md). Vybrané projekty: **Oscilla**, **algoglyph**, **maze-rs** a **big-png**.
+
+Klíčový pojem: [Vizualizace dat](@/glossary/data-visualisation.cs.md).
+
+*Jak kategorie vznikají:* nikdo je ručně nepřiřazuje. [Repozitář](@/glossary/repository.cs.md) spadne do kategorie, když jeho název, popis nebo témata odpovídají klíčovým slovům pravidla, jinak rozhodne jeho hlavní jazyk; forky a [mirrory](@/glossary/mirror.cs.md) se nepočítají za vlastní práci.

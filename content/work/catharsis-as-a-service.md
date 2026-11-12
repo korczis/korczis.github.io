@@ -14,4 +14,12 @@ og_title = "Catharsis as a Service: An emotional state transition endpoint."
 og_image = "og/work-catharsis-as-a-service.png"
 schema = "project"
 keywords = ["Catharsis as a Service", "Media and art", "HTML", "Python", "JavaScript", "Tomas Korcak"]
+terms = ["html", "python", "javascript", "css", "rust", "shell", "data-visualisation", "github-pages", "repository", "commit", "open-source"]
 +++
+**Catharsis as a Service** is a project in [Media and art](@/projects/media.md). Its code is written mainly in [HTML](@/glossary/html.md) (34.3 %), with [Python](@/glossary/python.md), [JavaScript](@/glossary/javascript.md) and [CSS](@/glossary/css.md).
+
+The [repository](@/glossary/repository.md) was created in September 2026; its latest [commit](@/glossary/commit.md) is from 14 September 2026. It reads “feat(discover): link the detection sandbox from the pages whose argument it demonstrates”. That places it among the projects active in the last 12 months.
+
+It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/catharsis-as-a-service/>.
+
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code; the concepts below are explained in the [glossary](@/glossary/_index.md).

@@ -13,5 +13,13 @@ category = "security"
 og_title = "Bezpečnost a OSINT: 4 repozitáře."
 og_image = "og/cs-category-security.png"
 schema = "collection"
+terms = ["osint", "cpp", "ruby", "rust", "repository"]
 keywords = ["Bezpečnost a OSINT", "magic", "zlown", "peacemaker", "ratnet", "Tomáš Korčák"]
 +++
+Zpravodajství z otevřených zdrojů, výzkum rádiové a síťové bezpečnosti: případy, proof of concept a nástroje kolem nich.
+
+Kategorie má 4 repozitáře; nejčastějšími jazyky jsou [C++](@/glossary/cpp.cs.md), [Ruby](@/glossary/ruby.cs.md) a [Rust](@/glossary/rust.cs.md).
+
+Klíčový pojem: [OSINT](@/glossary/osint.cs.md).
+
+*Jak kategorie vznikají:* nikdo je ručně nepřiřazuje. [Repozitář](@/glossary/repository.cs.md) spadne do kategorie, když jeho název, popis nebo témata odpovídají klíčovým slovům pravidla, jinak rozhodne jeho hlavní jazyk; forky a [mirrory](@/glossary/mirror.cs.md) se nepočítají za vlastní práci.

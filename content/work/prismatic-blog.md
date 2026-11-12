@@ -14,4 +14,12 @@ og_title = "prismatic-blog: Media and art"
 og_image = "og/work-prismatic-blog.png"
 schema = "project"
 keywords = ["prismatic-blog", "Media and art", "Dockerfile", "Tomas Korcak"]
+terms = ["dockerfile", "data-visualisation", "github-pages", "repository", "commit", "open-source"]
 +++
+**prismatic-blog** is a project in [Media and art](@/projects/media.md). Its code is written mainly in [Dockerfile](@/glossary/dockerfile.md) (100 %).
+
+The [repository](@/glossary/repository.md) was created in March 2025; its latest [commit](@/glossary/commit.md) is from 14 March 2025. It reads “Initial commit”. That places it among the projects active in the last 24 months.
+
+It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/prismatic-blog/>.
+
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code; the concepts below are explained in the [glossary](@/glossary/_index.md).

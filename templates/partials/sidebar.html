@@ -26,9 +26,9 @@
               </div>
             </form>
           </li>
-          {%- for link in [["overview", "/", "globe"], ["about", "/about/", "book"], ["recent_work", "/work/", "clock"], ["projects", "/projects/", "cube"], ["repositories", "/repositories/", "github"], ["stack", "/stack/", "code"]] %}
+          {%- for link in [["overview", "/", "globe"], ["about", "/about/", "book"], ["recent_work", "/work/", "clock"], ["nav_projects", "/projects/", "cube"], ["repositories", "/repositories/", "github"], ["stack", "/stack/", "code"], ["glossary", "/glossary/", "academic"]] %}
           <li>
-            <a href="{{ config.base_url }}{{ lp }}{{ link[1] }}" class="{{ item }}{% if here == lp ~ link[1] or (link[1] == "/work/" and (lp ~ "/work/") in here) %}{{ on }}{% endif %}"{% if here == lp ~ link[1] %} aria-current="page"{% endif %}>
+            <a href="{{ config.base_url }}{{ lp }}{{ link[1] }}" class="{{ item }}{% if here == lp ~ link[1] or ((link[1] == "/work/" or link[1] == "/glossary/") and (lp ~ link[1]) in here) %}{{ on }}{% endif %}"{% if here == lp ~ link[1] %} aria-current="page"{% endif %}>
               {{ <icon name={link[2]} class={ico} /> }}<span class="ml-3 flex-1 whitespace-nowrap">{{ trans(key=link[0], lang=lang) }}</span>
               {%- if link[1] == "/projects/" %}<span class="{{ badge }}">{{ cat.projects | length }}</span>{% endif %}
               {%- if link[1] == "/repositories/" %}<span class="{{ badge }}">{{ six.counts.own }}</span>{% endif %}

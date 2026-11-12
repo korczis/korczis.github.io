@@ -14,4 +14,12 @@ og_title = "osint-case-ratcliffe-moscow-2026: Inženýrství AI"
 og_image = "og/cs-work-osint-case-ratcliffe-moscow-2026.png"
 schema = "project"
 keywords = ["osint-case-ratcliffe-moscow-2026", "Inženýrství AI", "HTML", "Python", "Shell", "Tomáš Korčák"]
+terms = ["html", "python", "shell", "ai-agent", "github-pages", "repository", "commit", "open-source"]
 +++
+**osint-case-ratcliffe-moscow-2026** je projekt z kategorie [Inženýrství AI](@/projects/ai.cs.md). Jeho kód je napsaný hlavně v jazyce [HTML](@/glossary/html.cs.md) (74 %), dále [Python](@/glossary/python.cs.md), [Shell](@/glossary/shell.cs.md) a Just.
+
+[Repozitář](@/glossary/repository.cs.md) vznikl 26. srpna 2026; poslední [commit](@/glossary/commit.cs.md) je z 26. srpna 2026. Zní „fix(site): claim pages for object-shaped findings (gdelt\_sweep)“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+
+Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/osint-case-ratcliffe-moscow-2026/>.
+
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu; pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

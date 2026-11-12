@@ -28,7 +28,12 @@ const VERBATIM = new Set(['Majordomus', 'GitHub', 'GitLab', 'majordomus.dev', 'g
 
 for (const file of walk(join(ROOT, 'templates'), '.html')) {
   const raw = readFileSync(file, 'utf8');
-  for (const [, key] of raw.matchAll(/trans\(key="([^"]+)"/g)) {
+  for (const [, key, joined] of raw.matchAll(/trans\(key="([^"]+)"(\s*~)?/g)) {
+    // A key built at render time ("kind_term_" ~ kind) is a prefix: some keys must carry it.
+    if (joined) {
+      if (!Object.keys(strings).some((k) => k.startsWith(key))) findings.push(`${rel(file)}: no trans key starts with ${key}`);
+      continue;
+    }
     if (!strings[key]) findings.push(`${rel(file)}: trans key ${key} is not in i18n/strings.toml`);
   }
   let s = raw.replace(/\{#[\s\S]*?#\}/g, '').replace(/<script\b[\s\S]*?<\/script>/g, '').replace(/<svg\b[\s\S]*?<\/svg>/g, '')

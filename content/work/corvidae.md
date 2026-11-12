@@ -14,4 +14,10 @@ og_title = "corvidae: Tools"
 og_image = "og/work-corvidae.png"
 schema = "project"
 keywords = ["corvidae", "Tools", "TeX", "Elixir", "Shell", "Tomas Korcak"]
+terms = ["elixir", "shell", "open-source", "repository", "commit"]
 +++
+**corvidae** is a project in [Tools](@/projects/tools.md). Its code is written mainly in TeX (53.3 %), with [Elixir](@/glossary/elixir.md) and [Shell](@/glossary/shell.md).
+
+The [repository](@/glossary/repository.md) was created in May 2025; its latest [commit](@/glossary/commit.md) is from 12 May 2025. It reads “feat: initial commit”. That places it among the projects active in the last 24 months.
+
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code; the concepts below are explained in the [glossary](@/glossary/_index.md).

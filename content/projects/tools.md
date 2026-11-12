@@ -13,5 +13,13 @@ category = "tools"
 og_title = "Tools: 72 repositories."
 og_image = "og/category-tools.png"
 schema = "collection"
+terms = ["open-source", "javascript", "ruby", "elixir", "python", "shell", "csharp", "cpp", "rust", "swift", "typescript", "postgresql", "repository"]
 keywords = ["Tools", "Gists search", "json2csv", "csv2psql", "astronomists", "vomaste.cz", "the-psycho", "unable.cz", "u-tygra", "tinder-nomics", "Tomas Korcak"]
 +++
+Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist search.
+
+The category holds 72 original repositories, written most often in [JavaScript](@/glossary/javascript.md), [Ruby](@/glossary/ruby.md), [Elixir](@/glossary/elixir.md) and [Python](@/glossary/python.md). Featured: **Gists search**, **json2csv** and **csv2psql**.
+
+Key concept: [Open source](@/glossary/open-source.md).
+
+*How categories are made:* nobody assigns them by hand. A [repository](@/glossary/repository.md) falls into a category when its name, description or topics match the rule's keywords, otherwise its primary language decides; [forks](@/glossary/fork.md) and [mirrors](@/glossary/mirror.md) never count as the owner's work.

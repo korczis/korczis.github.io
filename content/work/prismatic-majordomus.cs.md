@@ -14,4 +14,14 @@ og_title = "Majordomus: AI agenti tvrdí, že je hotovo; Majordomus je nutí to 
 og_image = "og/cs-work-prismatic-majordomus.png"
 schema = "project"
 keywords = ["Majordomus", "Inženýrství AI", "Rust", "Shell", "JavaScript", "Tomáš Korčák"]
+terms = ["rust", "shell", "javascript", "html", "css", "python", "mcp", "zola", "ai-agent", "github-pages", "repository", "commit", "open-source"]
 +++
+**Majordomus** je projekt z kategorie [Inženýrství AI](@/projects/ai.cs.md). Jeho kód je napsaný hlavně v jazyce [Rust](@/glossary/rust.cs.md) (60,8 %), dále [Shell](@/glossary/shell.cs.md), [JavaScript](@/glossary/javascript.cs.md) a [HTML](@/glossary/html.cs.md).
+
+[Repozitář](@/glossary/repository.cs.md) vznikl 3. září 2026; poslední [commit](@/glossary/commit.cs.md) je z 11. listopadu 2026. Zní „Merge pull request \#3007 from korczis/release/bump-1.0.2“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+
+Je postavený na [MCP](@/glossary/mcp.cs.md) a [Zola](@/glossary/zola.cs.md).
+
+Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/prismatic-majordomus/>.
+
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu; pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

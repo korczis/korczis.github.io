@@ -14,4 +14,10 @@ og_title = "pissaleck: Anything about everything and vice versa"
 og_image = "og/work-pissaleck.png"
 schema = "project"
 keywords = ["pissaleck", "Tools", "Tomas Korcak"]
+terms = ["open-source", "repository", "commit"]
 +++
+**pissaleck** is a project in [Tools](@/projects/tools.md).
+
+The [repository](@/glossary/repository.md) was created in April 2024; its latest [commit](@/glossary/commit.md) is from 27 April 2024. It reads “Initial commit”. That places it among the projects active in the last 48 months.
+
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code; the concepts below are explained in the [glossary](@/glossary/_index.md).

@@ -14,4 +14,10 @@ og_title = "cognitive-reasoning: AI engineering"
 og_image = "og/work-cognitive-reasoning.png"
 schema = "project"
 keywords = ["cognitive-reasoning", "AI engineering", "Tomas Korcak"]
+terms = ["ai-agent", "repository", "commit", "open-source"]
 +++
+**cognitive-reasoning** is a project in [AI engineering](@/projects/ai.md).
+
+The [repository](@/glossary/repository.md) was created in April 2025; its latest [commit](@/glossary/commit.md) is from 25 April 2025. It reads “Initial commit”. That places it among the projects active in the last 24 months.
+
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code; the concepts below are explained in the [glossary](@/glossary/_index.md).

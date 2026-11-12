@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{#- One glossary term (scripts/build-glossary.mjs): its definition, a source, the pages of this site
+    that build on it (extra.pages, derived from their front matter) and related terms. #}
+{% block content %}
+{%- set alp = "" %}{% if lang is defined and lang != config.default_language %}{% set alp = "." ~ lang %}{% endif -%}
+{%- set card = "min-w-0 rounded-lg bg-white p-4 shadow dark:bg-gray-800 sm:p-6" -%}
+{%- set link = "font-medium text-primary-700 hover:underline dark:text-primary-300" -%}
+{{ <page_header title={page.title} lead={trans(key="kind_term_" ~ page.extra.kind, lang=lang)} parent={trans(key="glossary", lang=lang)} parent_url={get_url(path="@/glossary/_index.md", lang=lang)} lang={lang} /> }}
+<div class="space-y-4 px-4 pt-6">
+  <div class="grid grid-cols-1 gap-4 xl:grid-cols-3">
+    <article class="{{ card }} xl:col-span-2" aria-labelledby="definition-title">
+      <h2 id="definition-title" class="text-xl font-bold text-gray-900 dark:text-white">{{ trans(key="definition", lang=lang) }}</h2>
+      <p class="mt-3 text-lg leading-relaxed text-gray-700 dark:text-gray-300">{{ page.extra.definition }}</p>
+      {%- if page.extra.aliases | length > 0 %}<p class="mt-3 text-sm text-gray-600 dark:text-gray-400">{{ page.extra.aliases | join(sep=" · ") }}</p>{% endif %}
+      <h3 class="mb-2 mt-6 text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400">{{ trans(key="further_reading", lang=lang) }}</h3>
+      <a class="inline-flex items-center {{ link }}" href="{{ page.extra.reference.url }}" rel="noopener">{{ page.extra.reference.title }}{{ <icon name="external" class="ml-1.5 h-4 w-4" /> }}</a>
+    </article>
+    <section class="{{ card }}" aria-labelledby="related-title">
+      <h2 id="related-title" class="text-xl font-bold text-gray-900 dark:text-white">{{ trans(key="related_terms", lang=lang) }}</h2>
+      <p class="mb-4 mt-1 text-sm text-gray-600 dark:text-gray-400">{{ trans(key="related_lead", lang=lang) }}</p>
+      <ul class="flex flex-wrap gap-2">
+        {%- for id in page.extra.related %}{% set rp = get_page(path="glossary/" ~ id ~ alp ~ ".md") %}
+        <li><a class="inline-block rounded-lg bg-primary-100 px-3 py-1 text-sm font-medium text-primary-800 hover:bg-primary-200 dark:bg-primary-900 dark:text-primary-300 dark:hover:bg-primary-800" href="{{ rp.permalink }}">{{ rp.title }}</a></li>
+        {%- endfor %}
+      </ul>
+    </section>
+  </div>
+  {%- if page.extra.pages | length > 0 %}
+  <section class="{{ card }}" aria-labelledby="used-title">
+    <h2 id="used-title" class="text-xl font-bold text-gray-900 dark:text-white">{{ trans(key="used_on_pages", lang=lang) }}</h2>
+    <p class="mb-4 mt-1 text-sm text-gray-600 dark:text-gray-400">{{ trans(key="used_on_lead", lang=lang) | replace(from="{n}", to=page.extra.pages | length ~ "") }}</p>
+    <ul class="grid grid-cols-1 gap-3 md:grid-cols-2 2xl:grid-cols-3">
+      {%- for path in page.extra.pages %}{% if "_index" in path %}{% set up = get_section(path=path, metadata_only=true) %}{% else %}{% set up = get_page(path=path) %}{% endif %}
+      <li class="rounded-lg border border-gray-200 p-3 dark:border-gray-700"><a class="{{ link }}" href="{{ up.permalink }}">{{ up.title }}</a><p class="mt-1 line-clamp-2 text-sm text-gray-600 dark:text-gray-400">{{ up.description }}</p></li>
+      {%- endfor %}
+    </ul>
+  </section>
+  {%- endif %}
+</div>
+{% endblock content %}

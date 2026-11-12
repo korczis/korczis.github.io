@@ -28,6 +28,8 @@ run "Front matter matches its schema" node scripts/check-front-matter.mjs
 run "Catalogue, snapshot and index are well-formed" node scripts/check-data.mjs
 run "Category pages are current" node scripts/build-categories.mjs --check
 run "Work pages are current" node scripts/build-work.mjs --check
+run "Glossary pages are current" node scripts/build-glossary.mjs --check
+run "Every page is an article with glossary terms; every term is used" node scripts/check-glossary.mjs
 run "llms.txt is current" node scripts/build-llms.mjs --check
 run "Open Graph images are current" node scripts/build-og.mjs --check
 run "site.json is current" node scripts/build-site-json.mjs --check

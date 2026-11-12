@@ -14,4 +14,10 @@ og_title = "marketing-ideas: Tools"
 og_image = "og/work-marketing-ideas.png"
 schema = "project"
 keywords = ["marketing-ideas", "Tools", "Tomas Korcak"]
+terms = ["open-source", "repository", "commit"]
 +++
+**marketing-ideas** is a project in [Tools](@/projects/tools.md).
+
+The [repository](@/glossary/repository.md) was created in April 2024; its latest [commit](@/glossary/commit.md) is from 17 April 2024. It reads “Update README.md”. That places it among the projects active in the last 48 months.
+
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code; the concepts below are explained in the [glossary](@/glossary/_index.md).

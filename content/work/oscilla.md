@@ -14,4 +14,14 @@ og_title = "Oscilla: A zero-install acoustic laboratory in the browser."
 og_image = "og/work-oscilla.png"
 schema = "project"
 keywords = ["Oscilla", "Science and visualisation", "JavaScript", "HTML", "CSS", "Tomas Korcak"]
+terms = ["javascript", "html", "css", "shell", "web-audio", "data-visualisation", "github-pages", "repository", "commit", "open-source"]
 +++
+**Oscilla** is a project in [Science and visualisation](@/projects/science.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (96.9 %), with [HTML](@/glossary/html.md), [CSS](@/glossary/css.md) and [Shell](@/glossary/shell.md).
+
+The [repository](@/glossary/repository.md) was created in October 2026; its latest [commit](@/glossary/commit.md) is from 12 November 2026. It reads “feat(ui): train T14, the Sequencer gets one primary path and an Otevřít v… menu, a collapsed Trace, no more null, and release v3.36.0 (\#537)”. That places it among the projects active in the last 12 months.
+
+It is built with [Web Audio](@/glossary/web-audio.md).
+
+It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/oscilla/>.
+
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code; the concepts below are explained in the [glossary](@/glossary/_index.md).

@@ -1,0 +1,430 @@
+# The glossary: every term the site's articles link to, in English and Czech, each with a
+# reference a reader can check. scripts/build-glossary.mjs writes one page per term and language
+# (content/glossary/); where a term is used is derived from the data, never typed here.
+#
+#   id          the page slug and the key articles link by
+#   term        display name (the same in every language unless term_cs is set)
+#   title       page title when the name alone is too short to be one (title_cs likewise)
+#   kind        language | technology | concept
+#   aliases     other spellings the data uses (GitHub language names, stack names)
+#   definition  one or two sentences, plain words; definition_cs the same in Czech
+#   reference   a source to read further (title + url)
+#   categories  (concepts) catalogue categories whose pages explain themselves with this term
+
+[[terms]]
+id = "javascript"
+term = "JavaScript"
+kind = "language"
+definition = "The programming language of the web browser, also run on servers through Node.js. Every interactive part of this site is JavaScript."
+definition_cs = "Programovací jazyk webového prohlížeče, na serverech běží přes Node.js. Každá interaktivní část tohoto webu je v JavaScriptu."
+reference = { title = "MDN Web Docs: JavaScript", url = "https://developer.mozilla.org/en-US/docs/Web/JavaScript" }
+
+[[terms]]
+id = "typescript"
+term = "TypeScript"
+kind = "language"
+definition = "JavaScript with static types, checked before the code runs and compiled to plain JavaScript."
+definition_cs = "JavaScript se statickými typy, kontrolovanými před spuštěním a kompilovanými do běžného JavaScriptu."
+reference = { title = "TypeScript handbook", url = "https://www.typescriptlang.org/docs/" }
+
+[[terms]]
+id = "ruby"
+term = "Ruby"
+kind = "language"
+definition = "A dynamic, expressive language designed for programmer happiness; many of the older tools here are Ruby."
+definition_cs = "Dynamický, expresivní jazyk navržený pro radost programátora; mnoho starších nástrojů tady je v Ruby."
+reference = { title = "ruby-lang.org", url = "https://www.ruby-lang.org/en/about/" }
+
+[[terms]]
+id = "elixir"
+term = "Elixir"
+kind = "language"
+definition = "A functional language on the Erlang virtual machine, built for concurrent, fault-tolerant systems."
+definition_cs = "Funkcionální jazyk nad virtuálním strojem Erlangu, stavěný pro souběžné systémy odolné vůči chybám."
+reference = { title = "elixir-lang.org", url = "https://elixir-lang.org/" }
+
+[[terms]]
+id = "erlang"
+term = "Erlang"
+kind = "language"
+definition = "A language and runtime from telecoms, designed for systems that must keep running while parts of them fail."
+definition_cs = "Jazyk a běhové prostředí z telekomunikací, navržené pro systémy, které musí běžet, i když jejich části selhávají."
+reference = { title = "erlang.org", url = "https://www.erlang.org/" }
+
+[[terms]]
+id = "rust"
+term = "Rust"
+kind = "language"
+definition = "A systems language that guarantees memory safety without a garbage collector; Majordomus is written in it."
+definition_cs = "Systémový jazyk, který zaručuje bezpečnost paměti bez garbage collectoru; je v něm napsaný Majordomus."
+reference = { title = "The Rust Programming Language", url = "https://doc.rust-lang.org/book/" }
+
+[[terms]]
+id = "python"
+term = "Python"
+kind = "language"
+definition = "A general-purpose language valued for readability, common in data work and scripting."
+definition_cs = "Univerzální jazyk ceněný pro čitelnost, běžný v práci s daty a ve skriptování."
+reference = { title = "python.org", url = "https://www.python.org/about/" }
+
+[[terms]]
+id = "shell"
+term = "Shell"
+term_cs = "Shell"
+kind = "language"
+definition = "Scripts for the Unix command line (bash, zsh), the glue that installs, builds and deploys."
+definition_cs = "Skripty pro unixovou příkazovou řádku (bash, zsh), lepidlo, které instaluje, staví a nasazuje."
+reference = { title = "GNU Bash manual", url = "https://www.gnu.org/software/bash/manual/" }
+
+[[terms]]
+id = "html"
+term = "HTML"
+kind = "language"
+definition = "The markup language of web pages: the structure that styles and scripts work on."
+definition_cs = "Značkovací jazyk webových stránek: struktura, se kterou pracují styly a skripty."
+reference = { title = "MDN Web Docs: HTML", url = "https://developer.mozilla.org/en-US/docs/Web/HTML" }
+
+[[terms]]
+id = "css"
+term = "CSS"
+kind = "language"
+definition = "The style language of the web: layout, colour and typography of HTML."
+definition_cs = "Stylový jazyk webu: rozvržení, barvy a typografie HTML."
+reference = { title = "MDN Web Docs: CSS", url = "https://developer.mozilla.org/en-US/docs/Web/CSS" }
+
+[[terms]]
+id = "c"
+term = "C"
+title = "C (programming language)"
+title_cs = "C (programovací jazyk)"
+kind = "language"
+definition = "The small, fast systems language beneath operating systems and most other languages."
+definition_cs = "Malý, rychlý systémový jazyk pod operačními systémy i většinou ostatních jazyků."
+reference = { title = "C (Wikipedia)", url = "https://en.wikipedia.org/wiki/C_(programming_language)" }
+
+[[terms]]
+id = "cpp"
+term = "C++"
+kind = "language"
+aliases = ["C++"]
+definition = "C with classes, templates and abstractions that cost nothing at run time; used where speed matters."
+definition_cs = "C s třídami, šablonami a abstrakcemi, které za běhu nic nestojí; tam, kde záleží na rychlosti."
+reference = { title = "cppreference.com", url = "https://en.cppreference.com/" }
+
+[[terms]]
+id = "csharp"
+term = "C#"
+kind = "language"
+aliases = ["C#"]
+definition = "Microsoft's object-oriented language for .NET."
+definition_cs = "Objektově orientovaný jazyk Microsoftu pro .NET."
+reference = { title = "C# documentation", url = "https://learn.microsoft.com/en-us/dotnet/csharp/" }
+
+[[terms]]
+id = "haskell"
+term = "Haskell"
+kind = "language"
+definition = "A purely functional language with lazy evaluation and a strong type system; a place to learn to think in types."
+definition_cs = "Čistě funkcionální jazyk s líným vyhodnocováním a silným typovým systémem; místo, kde se učí myslet v typech."
+reference = { title = "haskell.org", url = "https://www.haskell.org/" }
+
+[[terms]]
+id = "java"
+term = "Java"
+kind = "language"
+definition = "An object-oriented language on the Java Virtual Machine, long the default of enterprise software."
+definition_cs = "Objektově orientovaný jazyk nad Java Virtual Machine, dlouho výchozí volba podnikového softwaru."
+reference = { title = "dev.java", url = "https://dev.java/learn/" }
+
+[[terms]]
+id = "swift"
+term = "Swift"
+kind = "language"
+definition = "Apple's language for iOS and macOS applications."
+definition_cs = "Jazyk Applu pro aplikace na iOS a macOS."
+reference = { title = "swift.org", url = "https://www.swift.org/documentation/" }
+
+[[terms]]
+id = "dockerfile"
+term = "Dockerfile"
+kind = "language"
+definition = "The recipe that builds a container image: a base system, files and commands, reproducible anywhere."
+definition_cs = "Recept, který staví obraz kontejneru: základní systém, soubory a příkazy, reprodukovatelné kdekoli."
+reference = { title = "Dockerfile reference", url = "https://docs.docker.com/reference/dockerfile/" }
+
+[[terms]]
+id = "nix"
+term = "Nix"
+kind = "language"
+definition = "A language and package manager for reproducible, declarative system configuration."
+definition_cs = "Jazyk a správce balíčků pro reprodukovatelnou, deklarativní konfiguraci systému."
+reference = { title = "nix.dev", url = "https://nix.dev/" }
+
+[[terms]]
+id = "flowbite-pro"
+term = "Flowbite Pro"
+kind = "technology"
+aliases = ["Flowbite Pro", "Flowbite"]
+definition = "A licensed library of interface blocks and an application shell on Tailwind CSS; every page of this site is built from it."
+definition_cs = "Licencovaná knihovna bloků rozhraní a aplikační shell nad Tailwind CSS; je z ní postavená každá stránka tohoto webu."
+reference = { title = "Flowbite", url = "https://flowbite.com/" }
+
+[[terms]]
+id = "tailwind-css"
+term = "Tailwind CSS"
+kind = "technology"
+definition = "A CSS framework of small utility classes composed in the markup, compiled to only what a page uses."
+definition_cs = "CSS framework malých utilitních tříd skládaných v markupu, kompilovaný jen na to, co stránka používá."
+reference = { title = "tailwindcss.com", url = "https://tailwindcss.com/docs" }
+
+[[terms]]
+id = "alpine-js"
+term = "Alpine.js"
+kind = "technology"
+aliases = ["Alpine.js"]
+definition = "A small JavaScript framework that adds behaviour to HTML in its own attributes; here the filters, drawers and palette."
+definition_cs = "Malý JavaScriptový framework, který přidává chování do HTML přímo v atributech; tady filtry, drawery a paleta."
+reference = { title = "alpinejs.dev", url = "https://alpinejs.dev/" }
+
+[[terms]]
+id = "cytoscape-js"
+term = "Cytoscape.js"
+kind = "technology"
+aliases = ["Cytoscape.js"]
+definition = "A library for drawing and analysing graphs (networks of nodes and edges) in the browser."
+definition_cs = "Knihovna pro kreslení a analýzu grafů (sítí uzlů a hran) v prohlížeči."
+reference = { title = "js.cytoscape.org", url = "https://js.cytoscape.org/" }
+
+[[terms]]
+id = "apache-echarts"
+term = "Apache ECharts"
+kind = "technology"
+aliases = ["Apache ECharts", "ECharts"]
+definition = "An Apache project for interactive charts: calendars, sunbursts, maps and large data sets."
+definition_cs = "Projekt Apache pro interaktivní grafy: kalendáře, sunbursty, mapy a velké datové sady."
+reference = { title = "echarts.apache.org", url = "https://echarts.apache.org/en/index.html" }
+
+[[terms]]
+id = "chart-js"
+term = "Chart.js"
+kind = "technology"
+aliases = ["Chart.js"]
+definition = "A light library for common charts (bars, lines, doughnuts) on an HTML canvas."
+definition_cs = "Lehká knihovna pro běžné grafy (sloupce, čáry, prstence) na plátně HTML."
+reference = { title = "chartjs.org", url = "https://www.chartjs.org/docs/latest/" }
+
+[[terms]]
+id = "d3"
+term = "D3.js"
+kind = "technology"
+aliases = ["D3", "D3.js"]
+definition = "Data-Driven Documents: a toolkit that binds data to SVG and HTML, the basis of the art visuals here (spiral, bubbles, streams)."
+definition_cs = "Data-Driven Documents: nástroj, který váže data na SVG a HTML, základ zdejších výtvarných grafů (spirála, bubliny, proudy)."
+reference = { title = "d3js.org", url = "https://d3js.org/" }
+
+[[terms]]
+id = "p5-js"
+term = "p5.js"
+kind = "technology"
+aliases = ["p5.js"]
+definition = "A creative-coding library descended from Processing, for drawing and simulation in the browser."
+definition_cs = "Knihovna pro kreativní programování odvozená z Processingu, pro kreslení a simulace v prohlížeči."
+reference = { title = "p5js.org", url = "https://p5js.org/" }
+
+[[terms]]
+id = "zola"
+term = "Zola"
+kind = "technology"
+aliases = ["Zola"]
+definition = "A static site generator in one Rust binary: Markdown and templates in, a whole multilingual website out."
+definition_cs = "Generátor statických webů v jedné binárce v Rustu: dovnitř Markdown a šablony, ven celý vícejazyčný web."
+reference = { title = "getzola.org", url = "https://www.getzola.org/documentation/getting-started/overview/" }
+
+[[terms]]
+id = "majordomus"
+term = "Majordomus"
+kind = "technology"
+aliases = ["Majordomus"]
+definition = "The owner's supervisory layer for AI-assisted work: one policy for every coding agent, scoped tasks, and finishes that must be proven."
+definition_cs = "Vlastníkova dohledová vrstva pro práci s AI: jedna politika pro každého agenta, vymezené úkoly a dokončení, která musí být doložena."
+reference = { title = "majordomus.dev", url = "https://majordomus.dev" }
+
+[[terms]]
+id = "mcp"
+term = "MCP"
+kind = "technology"
+aliases = ["MCP"]
+definition = "The Model Context Protocol: an open protocol through which AI applications reach tools and data."
+definition_cs = "Model Context Protocol: otevřený protokol, kterým AI aplikace přistupují k nástrojům a datům."
+reference = { title = "modelcontextprotocol.io", url = "https://modelcontextprotocol.io/" }
+
+[[terms]]
+id = "postgresql"
+term = "PostgreSQL"
+kind = "technology"
+aliases = ["PostgreSQL"]
+definition = "An open-source relational database known for correctness and extensions."
+definition_cs = "Open-source relační databáze známá svou korektností a rozšířeními."
+reference = { title = "postgresql.org", url = "https://www.postgresql.org/about/" }
+
+[[terms]]
+id = "postgis"
+term = "PostGIS"
+kind = "technology"
+aliases = ["PostGIS"]
+definition = "The spatial extension of PostgreSQL: points, shapes and geographic queries in SQL."
+definition_cs = "Prostorové rozšíření PostgreSQL: body, tvary a geografické dotazy v SQL."
+reference = { title = "postgis.net", url = "https://postgis.net/" }
+
+[[terms]]
+id = "web-audio"
+term = "Web Audio"
+kind = "technology"
+aliases = ["Web Audio"]
+definition = "The browser API for generating, processing and analysing sound in real time."
+definition_cs = "Rozhraní prohlížeče pro generování, zpracování a analýzu zvuku v reálném čase."
+reference = { title = "MDN Web Docs: Web Audio API", url = "https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API" }
+
+[[terms]]
+id = "github-pages"
+term = "GitHub Pages"
+kind = "technology"
+definition = "GitHub's hosting for static websites, deployed from a repository; this site and most project sites live there."
+definition_cs = "Hosting statických webů od GitHubu nasazovaný z repozitáře; žije tam tento web i většina webů projektů."
+reference = { title = "GitHub Pages documentation", url = "https://docs.github.com/en/pages" }
+
+[[terms]]
+id = "open-source"
+term = "Open source"
+term_cs = "Open source"
+kind = "concept"
+categories = ["libraries", "tools"]
+definition = "Software whose source code anyone may read, use, change and share under its licence."
+definition_cs = "Software, jehož zdrojový kód může kdokoli číst, používat, měnit a sdílet podle jeho licence."
+reference = { title = "Open Source Initiative", url = "https://opensource.org/osd" }
+
+[[terms]]
+id = "repository"
+term = "Repository"
+term_cs = "Repozitář"
+kind = "concept"
+definition = "A project's folder under version control: its files and their whole history of commits."
+definition_cs = "Složka projektu pod správou verzí: jeho soubory a celá historie commitů."
+reference = { title = "Pro Git: Git basics", url = "https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository" }
+
+[[terms]]
+id = "commit"
+term = "Commit"
+term_cs = "Commit"
+kind = "concept"
+definition = "One recorded change in a repository, with its author and time; the last commit dates a project's activity here."
+definition_cs = "Jedna zaznamenaná změna v repozitáři s autorem a časem; podle posledního commitu se tady datuje aktivita projektu."
+reference = { title = "Pro Git: recording changes", url = "https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository" }
+
+[[terms]]
+id = "fork"
+term = "Fork"
+term_cs = "Fork"
+kind = "concept"
+definition = "A copy of someone else's repository under your account; forks are counted on this site but never shown as the owner's work."
+definition_cs = "Kopie cizího repozitáře pod vlastním účtem; forky se tu počítají, ale nikdy se nevydávají za vlastníkovu práci."
+reference = { title = "GitHub Docs: about forks", url = "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks" }
+
+[[terms]]
+id = "mirror"
+term = "Mirror"
+term_cs = "Mirror"
+kind = "concept"
+definition = "A repository that copies another project's code; here a repository counts as original only when the owner wrote at least half of its commits."
+definition_cs = "Repozitář, který kopíruje kód jiného projektu; tady se repozitář počítá za původní, jen když vlastník napsal aspoň polovinu jeho commitů."
+reference = { title = "Git: mirroring a repository", url = "https://docs.github.com/en/repositories/creating-and-managing-repositories/duplicating-a-repository" }
+
+[[terms]]
+id = "static-site-generator"
+term = "Static site generator"
+term_cs = "Generátor statických webů"
+kind = "concept"
+categories = ["web"]
+definition = "A program that turns content and templates into plain files before anyone visits, so the site needs no server code."
+definition_cs = "Program, který z obsahu a šablon vyrobí hotové soubory ještě před návštěvou, takže web nepotřebuje serverový kód."
+reference = { title = "Static site generator (Wikipedia)", url = "https://en.wikipedia.org/wiki/Static_site_generator" }
+
+[[terms]]
+id = "front-matter"
+term = "Front matter"
+term_cs = "Front matter"
+kind = "concept"
+definition = "Structured data at the top of a content file (here TOML) that describes the page to the generator and to machines."
+definition_cs = "Strukturovaná data na začátku obsahového souboru (tady TOML), která popisují stránku generátoru i strojům."
+reference = { title = "Zola: page front matter", url = "https://www.getzola.org/documentation/content/page/#front-matter" }
+
+[[terms]]
+id = "json-ld"
+term = "JSON-LD"
+kind = "concept"
+definition = "Linked data in JSON embedded in a page, telling search engines and machines what the page is about (schema.org)."
+definition_cs = "Propojená data ve formátu JSON vložená do stránky, která vyhledávačům a strojům říkají, o čem stránka je (schema.org)."
+reference = { title = "json-ld.org", url = "https://json-ld.org/" }
+
+[[terms]]
+id = "open-graph"
+term = "Open Graph"
+kind = "concept"
+definition = "Meta tags that tell social networks how to preview a link: title, description and image."
+definition_cs = "Meta tagy, které sociálním sítím říkají, jak zobrazit náhled odkazu: titulek, popis a obrázek."
+reference = { title = "ogp.me", url = "https://ogp.me/" }
+
+[[terms]]
+id = "wcag"
+term = "WCAG"
+kind = "concept"
+definition = "The Web Content Accessibility Guidelines; every page here is checked against WCAG 2.2 level AA before it ships."
+definition_cs = "Web Content Accessibility Guidelines; každá stránka tady se před nasazením kontroluje proti WCAG 2.2, úrovni AA."
+reference = { title = "W3C: WCAG 2.2", url = "https://www.w3.org/TR/WCAG22/" }
+
+[[terms]]
+id = "i18n"
+term = "Internationalisation"
+term_cs = "Internacionalizace"
+kind = "concept"
+definition = "Designing software so every text can be translated; this site exists in English and Czech, and a gate fails on any untranslated text."
+definition_cs = "Návrh softwaru tak, aby šel každý text přeložit; tento web existuje anglicky a česky a brána selže na každém nepřeloženém textu."
+reference = { title = "W3C: internationalization", url = "https://www.w3.org/International/questions/qa-i18n" }
+
+[[terms]]
+id = "osint"
+term = "OSINT"
+kind = "concept"
+categories = ["security"]
+definition = "Open-source intelligence: knowledge built from publicly available sources, with every claim traceable to its source."
+definition_cs = "Zpravodajství z otevřených zdrojů: poznání vystavěné z veřejně dostupných zdrojů, kde každé tvrzení vede ke svému zdroji."
+reference = { title = "OSINT (Wikipedia)", url = "https://en.wikipedia.org/wiki/Open-source_intelligence" }
+
+[[terms]]
+id = "gis"
+term = "GIS"
+kind = "concept"
+categories = ["data"]
+definition = "Geographic information systems: data tied to places, stored, analysed and drawn as maps."
+definition_cs = "Geografické informační systémy: data vázaná na místa, uložená, analyzovaná a kreslená jako mapy."
+reference = { title = "GIS (Wikipedia)", url = "https://en.wikipedia.org/wiki/Geographic_information_system" }
+
+[[terms]]
+id = "ai-agent"
+term = "AI agent"
+term_cs = "AI agent"
+kind = "concept"
+categories = ["ai"]
+definition = "A program that uses a language model to plan and act (edit code, run commands) toward a goal; Majordomus makes such agents prove their work."
+definition_cs = "Program, který s pomocí jazykového modelu plánuje a jedná (upravuje kód, spouští příkazy) k cíli; Majordomus nutí takové agenty doložit práci."
+reference = { title = "Anthropic: building effective agents", url = "https://www.anthropic.com/research/building-effective-agents" }
+
+[[terms]]
+id = "data-visualisation"
+term = "Data visualisation"
+term_cs = "Vizualizace dat"
+kind = "concept"
+categories = ["science", "media"]
+definition = "Turning numbers into pictures people can read at a glance: here spirals, bubbles, streams and graphs, each drawn from measured data."
+definition_cs = "Převod čísel na obrazy, které lze přečíst jedním pohledem: tady spirály, bubliny, proudy a grafy, každý nakreslený ze změřených dat."
+reference = { title = "Data visualization (Wikipedia)", url = "https://en.wikipedia.org/wiki/Data_and_information_visualization" }

@@ -14,4 +14,14 @@ og_title = "Sonic Playground: Music that moves you, not algorithmic noise."
 og_image = "og/work-sonic-playground.png"
 schema = "project"
 keywords = ["Sonic Playground", "Media and art", "JavaScript", "HTML", "Python", "Tomas Korcak"]
+terms = ["javascript", "html", "python", "shell", "css", "elixir", "data-visualisation", "github-pages", "repository", "commit", "open-source"]
 +++
+**Sonic Playground** is a project in [Media and art](@/projects/media.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (36.2 %), with [HTML](@/glossary/html.md), [Python](@/glossary/python.md) and [Shell](@/glossary/shell.md).
+
+The [repository](@/glossary/repository.md) was created in November 2026; its latest [commit](@/glossary/commit.md) is from 12 November 2026. It reads “Merge branch 'fix/sweep-retry-stall'”. That places it among the projects active in the last 12 months.
+
+It is built with [Elixir](@/glossary/elixir.md).
+
+It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/sonic-playground/>.
+
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code; the concepts below are explained in the [glossary](@/glossary/_index.md).

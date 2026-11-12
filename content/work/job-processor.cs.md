@@ -14,4 +14,10 @@ og_title = "job-processor: Web"
 og_image = "og/cs-work-job-processor.png"
 schema = "project"
 keywords = ["job-processor", "Web", "Elixir", "Tomáš Korčák"]
+terms = ["elixir", "static-site-generator", "repository", "commit", "open-source"]
 +++
+**job-processor** je projekt z kategorie [Web](@/projects/web.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (100 %).
+
+[Repozitář](@/glossary/repository.cs.md) vznikl 1. srpna 2024; poslední [commit](@/glossary/commit.cs.md) je z 1. srpna 2024. Zní „initial version“. Patří tak mezi projekty aktivní za posledních 48 měsíců.
+
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu; pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

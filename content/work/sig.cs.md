@@ -14,4 +14,10 @@ og_title = "sig: Inženýrství AI"
 og_image = "og/cs-work-sig.png"
 schema = "project"
 keywords = ["sig", "Inženýrství AI", "Elixir", "HTML+EEX", "Shell", "Tomáš Korčák"]
+terms = ["elixir", "shell", "typescript", "ai-agent", "repository", "commit", "open-source"]
 +++
+**sig** je projekt z kategorie [Inženýrství AI](@/projects/ai.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (95,6 %), dále HTML+EEX, [Shell](@/glossary/shell.cs.md) a [TypeScript](@/glossary/typescript.cs.md).
+
+[Repozitář](@/glossary/repository.cs.md) vznikl 23. srpna 2025; poslední [commit](@/glossary/commit.cs.md) je z 4. února 2026. Zní „\[38;2;248;248;242mfeat(aiad): inject AIAD v1.0.0 infrastructure\[0m“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu; pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

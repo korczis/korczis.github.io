@@ -14,4 +14,12 @@ og_title = "Gists search: Katalog, obohacení a hledání nad zrcadlem mých gis
 og_image = "og/cs-work-gists-search.png"
 schema = "project"
 keywords = ["Gists search", "Nástroje", "Python", "JavaScript", "HTML", "Tomáš Korčák"]
+terms = ["python", "javascript", "html", "shell", "open-source", "github-pages", "repository", "commit"]
 +++
+**Gists search** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [Python](@/glossary/python.cs.md) (58,5 %), dále [JavaScript](@/glossary/javascript.cs.md), [HTML](@/glossary/html.cs.md) a Just.
+
+[Repozitář](@/glossary/repository.cs.md) vznikl 27. srpna 2026; poslední [commit](@/glossary/commit.cs.md) je z 27. srpna 2026. Zní „docs(gists): add README, architecture doc and deploy recipe“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+
+Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/gists-search/>.
+
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu; pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

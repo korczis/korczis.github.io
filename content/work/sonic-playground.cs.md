@@ -14,4 +14,14 @@ og_title = "Sonic Playground: Hudba, která hýbe, ne algoritmický šum."
 og_image = "og/cs-work-sonic-playground.png"
 schema = "project"
 keywords = ["Sonic Playground", "Média a umění", "JavaScript", "HTML", "Python", "Tomáš Korčák"]
+terms = ["javascript", "html", "python", "shell", "css", "elixir", "data-visualisation", "github-pages", "repository", "commit", "open-source"]
 +++
+**Sonic Playground** je projekt z kategorie [Média a umění](@/projects/media.cs.md). Jeho kód je napsaný hlavně v jazyce [JavaScript](@/glossary/javascript.cs.md) (36,2 %), dále [HTML](@/glossary/html.cs.md), [Python](@/glossary/python.cs.md) a [Shell](@/glossary/shell.cs.md).
+
+[Repozitář](@/glossary/repository.cs.md) vznikl 12. listopadu 2026; poslední [commit](@/glossary/commit.cs.md) je z 12. listopadu 2026. Zní „Merge branch 'fix/sweep-retry-stall'“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+
+Je postavený na [Elixir](@/glossary/elixir.cs.md).
+
+Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/sonic-playground/>.
+
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu; pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

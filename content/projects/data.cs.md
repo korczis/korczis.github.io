@@ -13,5 +13,13 @@ category = "data"
 og_title = "Data a GIS: 47 repozitářů."
 og_image = "og/cs-category-data.png"
 schema = "collection"
+terms = ["gis", "ruby", "javascript", "elixir", "shell", "html", "python", "rust", "postgis", "mcp", "repository"]
 keywords = ["Data a GIS", "Data Atlas", "Crisis map", "apollo-crawler-extension", "microcrawler-crawler-bam-brno-cz", "microcrawler-crawler-all", "microcrawler-crawler-base", "microcrawler-crawler-craiglist-com", "microcrawler-crawler-firmy-cz", "Tomáš Korčák"]
 +++
+Katalogy a mapy otevřených dat: zdroje geodat, crawlery, hlášení incidentů geokódovaná a servírovaná z jednoho registru.
+
+Kategorie má 47 repozitářů; nejčastějšími jazyky jsou [Ruby](@/glossary/ruby.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Elixir](@/glossary/elixir.cs.md) a [Shell](@/glossary/shell.cs.md). Vybrané projekty: **Data Atlas** a **Crisis map**.
+
+Klíčový pojem: [GIS](@/glossary/gis.cs.md).
+
+*Jak kategorie vznikají:* nikdo je ručně nepřiřazuje. [Repozitář](@/glossary/repository.cs.md) spadne do kategorie, když jeho název, popis nebo témata odpovídají klíčovým slovům pravidla, jinak rozhodne jeho hlavní jazyk; forky a [mirrory](@/glossary/mirror.cs.md) se nepočítají za vlastní práci.

@@ -13,5 +13,13 @@ category = "data"
 og_title = "Data and GIS: 47 repositories."
 og_image = "og/category-data.png"
 schema = "collection"
+terms = ["gis", "ruby", "javascript", "elixir", "shell", "html", "python", "rust", "postgis", "mcp", "repository"]
 keywords = ["Data and GIS", "Data Atlas", "Crisis map", "apollo-crawler-extension", "microcrawler-crawler-bam-brno-cz", "microcrawler-crawler-all", "microcrawler-crawler-base", "microcrawler-crawler-craiglist-com", "microcrawler-crawler-firmy-cz", "Tomas Korcak"]
 +++
+Catalogues and maps of open data: geodata sources, incident reports geocoded and served from one registry.
+
+The category holds 47 original repositories, written most often in [Ruby](@/glossary/ruby.md), [JavaScript](@/glossary/javascript.md), [Elixir](@/glossary/elixir.md) and [Shell](@/glossary/shell.md). Featured: **Data Atlas** and **Crisis map**.
+
+Key concept: [GIS](@/glossary/gis.md).
+
+*How categories are made:* nobody assigns them by hand. A [repository](@/glossary/repository.md) falls into a category when its name, description or topics match the rule's keywords, otherwise its primary language decides; [forks](@/glossary/fork.md) and [mirrors](@/glossary/mirror.md) never count as the owner's work.

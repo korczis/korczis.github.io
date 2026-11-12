@@ -14,4 +14,12 @@ og_title = "vomaste.cz: Tools"
 og_image = "og/work-vomaste-cz.png"
 schema = "project"
 keywords = ["vomaste.cz", "Tools", "JavaScript", "HTML", "Shell", "Tomas Korcak"]
+terms = ["javascript", "html", "shell", "css", "open-source", "github-pages", "repository", "commit"]
 +++
+**vomaste.cz** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (81 %), with [HTML](@/glossary/html.md), [Shell](@/glossary/shell.md) and [CSS](@/glossary/css.md).
+
+The [repository](@/glossary/repository.md) was created in July 2026; its latest [commit](@/glossary/commit.md) is from 8 November 2026. It reads “feat(validate): chyby tvaru záznamu říkají, co opravit”. That places it among the projects active in the last 12 months.
+
+It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/vomaste.cz/>.
+
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code; the concepts below are explained in the [glossary](@/glossary/_index.md).

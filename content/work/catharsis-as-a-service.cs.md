@@ -14,4 +14,12 @@ og_title = "Catharsis as a Service: Endpoint pro přechod emočního stavu."
 og_image = "og/cs-work-catharsis-as-a-service.png"
 schema = "project"
 keywords = ["Catharsis as a Service", "Média a umění", "HTML", "Python", "JavaScript", "Tomáš Korčák"]
+terms = ["html", "python", "javascript", "css", "rust", "shell", "data-visualisation", "github-pages", "repository", "commit", "open-source"]
 +++
+**Catharsis as a Service** je projekt z kategorie [Média a umění](@/projects/media.cs.md). Jeho kód je napsaný hlavně v jazyce [HTML](@/glossary/html.cs.md) (34,3 %), dále [Python](@/glossary/python.cs.md), [JavaScript](@/glossary/javascript.cs.md) a [CSS](@/glossary/css.cs.md).
+
+[Repozitář](@/glossary/repository.cs.md) vznikl 14. září 2026; poslední [commit](@/glossary/commit.cs.md) je z 14. září 2026. Zní „feat(discover): link the detection sandbox from the pages whose argument it demonstrates“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+
+Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/catharsis-as-a-service/>.
+
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu; pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

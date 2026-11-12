@@ -14,4 +14,12 @@ og_title = "Majordomus reel: Promo video renderované celé z kódu."
 og_image = "og/cs-work-majordomus-reel.png"
 schema = "project"
 keywords = ["Majordomus reel", "Média a umění", "HTML", "JavaScript", "Shell", "Tomáš Korčák"]
+terms = ["html", "javascript", "shell", "python", "data-visualisation", "github-pages", "repository", "commit", "open-source"]
 +++
+**Majordomus reel** je projekt z kategorie [Média a umění](@/projects/media.cs.md). Jeho kód je napsaný hlavně v jazyce [HTML](@/glossary/html.cs.md) (49,6 %), dále [JavaScript](@/glossary/javascript.cs.md), [Shell](@/glossary/shell.cs.md) a [Python](@/glossary/python.cs.md).
+
+[Repozitář](@/glossary/repository.cs.md) vznikl 23. října 2026; poslední [commit](@/glossary/commit.cs.md) je z 26. října 2026. Zní „chore(rules): vendor the majordomus standard rules of 1.0.0-alpha.8“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+
+Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/majordomus-reel/>.
+
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu; pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

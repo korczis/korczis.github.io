@@ -14,4 +14,10 @@ og_title = "llm: Local-first, provider-agnostic archive of AI conversations (Cha
 og_image = "og/work-llm.png"
 schema = "project"
 keywords = ["llm", "AI engineering", "Elixir", "Tomas Korcak"]
+terms = ["elixir", "ai-agent", "repository", "commit", "open-source"]
 +++
+**llm** is a project in [AI engineering](@/projects/ai.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (100 %).
+
+The [repository](@/glossary/repository.md) was created in August 2026; its latest [commit](@/glossary/commit.md) is from 21 August 2026. It reads “test(conversations): add DB-integration tests for every named constraint”. That places it among the projects active in the last 12 months.
+
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code; the concepts below are explained in the [glossary](@/glossary/_index.md).

@@ -14,4 +14,10 @@ og_title = "edna: Edna je digitální kartářka, astroložka a analytička poh�
 og_image = "og/work-edna.png"
 schema = "project"
 keywords = ["edna", "AI engineering", "Tomas Korcak"]
+terms = ["ai-agent", "repository", "commit", "open-source"]
 +++
+**edna** is a project in [AI engineering](@/projects/ai.md).
+
+The [repository](@/glossary/repository.md) was created in September 2025; its latest [commit](@/glossary/commit.md) is from 2 September 2025. It reads “Edit README.md”. That places it among the projects active in the last 24 months.
+
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code; the concepts below are explained in the [glossary](@/glossary/_index.md).

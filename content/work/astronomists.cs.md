@@ -14,4 +14,12 @@ og_title = "astronomists: Nástroje"
 og_image = "og/cs-work-astronomists.png"
 schema = "project"
 keywords = ["astronomists", "Nástroje", "Python", "HTML", "TypeScript", "Tomáš Korčák"]
+terms = ["python", "html", "typescript", "shell", "javascript", "css", "open-source", "github-pages", "repository", "commit"]
 +++
+**astronomists** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [Python](@/glossary/python.cs.md) (41,1 %), dále [HTML](@/glossary/html.cs.md), [TypeScript](@/glossary/typescript.cs.md) a [Shell](@/glossary/shell.cs.md).
+
+[Repozitář](@/glossary/repository.cs.md) vznikl 15. června 2026; poslední [commit](@/glossary/commit.cs.md) je z 20. července 2026. Zní „docs: correct and expand CLAUDE.md for current build pipeline“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+
+Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/astronomists/>.
+
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu; pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

@@ -14,4 +14,12 @@ og_title = "vomaste.cz: Nástroje"
 og_image = "og/cs-work-vomaste-cz.png"
 schema = "project"
 keywords = ["vomaste.cz", "Nástroje", "JavaScript", "HTML", "Shell", "Tomáš Korčák"]
+terms = ["javascript", "html", "shell", "css", "open-source", "github-pages", "repository", "commit"]
 +++
+**vomaste.cz** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [JavaScript](@/glossary/javascript.cs.md) (81 %), dále [HTML](@/glossary/html.cs.md), [Shell](@/glossary/shell.cs.md) a [CSS](@/glossary/css.cs.md).
+
+[Repozitář](@/glossary/repository.cs.md) vznikl 21. července 2026; poslední [commit](@/glossary/commit.cs.md) je z 8. listopadu 2026. Zní „feat(validate): chyby tvaru záznamu říkají, co opravit“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+
+Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/vomaste.cz/>.
+
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu; pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

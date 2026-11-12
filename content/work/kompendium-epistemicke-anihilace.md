@@ -14,4 +14,14 @@ og_title = "Kompendium: A defensive taxonomy of epistemic and cognitive manipula
 og_image = "og/work-kompendium-epistemicke-anihilace.png"
 schema = "project"
 keywords = ["Kompendium", "Knowledge", "Elixir", "JavaScript", "HTML", "Tomas Korcak"]
+terms = ["elixir", "javascript", "html", "python", "rust", "shell", "zola", "cytoscape-js", "apache-echarts", "alpine-js", "flowbite-pro", "github-pages", "repository", "commit", "open-source"]
 +++
+**Kompendium** is a project in [Knowledge](@/projects/knowledge.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (35.7 %), with [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md) and [Python](@/glossary/python.md).
+
+The [repository](@/glossary/repository.md) was created in November 2026; its latest [commit](@/glossary/commit.md) is from 12 November 2026. It reads “Merge branch 'fix/template-figure-gate': číslo jen v odkazu na jinou stránku není šablonové”. That places it among the projects active in the last 12 months.
+
+It is built with [Zola](@/glossary/zola.md), [Cytoscape.js](@/glossary/cytoscape-js.md), [Apache ECharts](@/glossary/apache-echarts.md), [Alpine.js](@/glossary/alpine-js.md) and [Flowbite Pro](@/glossary/flowbite-pro.md).
+
+It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/kompendium-epistemicke-anihilace/>.
+
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code; the concepts below are explained in the [glossary](@/glossary/_index.md).

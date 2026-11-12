@@ -14,4 +14,12 @@ og_title = "prismatic-blog: Média a umění"
 og_image = "og/cs-work-prismatic-blog.png"
 schema = "project"
 keywords = ["prismatic-blog", "Média a umění", "Dockerfile", "Tomáš Korčák"]
+terms = ["dockerfile", "data-visualisation", "github-pages", "repository", "commit", "open-source"]
 +++
+**prismatic-blog** je projekt z kategorie [Média a umění](@/projects/media.cs.md). Jeho kód je napsaný hlavně v jazyce [Dockerfile](@/glossary/dockerfile.cs.md) (100 %).
+
+[Repozitář](@/glossary/repository.cs.md) vznikl 14. března 2025; poslední [commit](@/glossary/commit.cs.md) je z 14. března 2025. Zní „Initial commit“. Patří tak mezi projekty aktivní za posledních 24 měsíců.
+
+Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/prismatic-blog/>.
+
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu; pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

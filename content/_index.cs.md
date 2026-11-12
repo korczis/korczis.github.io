@@ -4,6 +4,8 @@ description = "Software, který svou práci dokládá: nástroje, které nutí A
 template = "index.html"
 
 [extra]
+article_title = "Jak číst tento web"
+terms = ["repository", "commit", "fork", "mirror", "data-visualisation", "d3", "front-matter", "zola", "static-site-generator", "flowbite-pro", "wcag", "json-ld", "open-graph"]
 seo_title = "Tomáš Korčák (korczis) · Software, který svou práci dokládá"
 og_title = "Software, který svou práci dokládá."
 og_description = "Nástroje, které nutí AI agenty doložit práci, poctivé přístroje v prohlížeči a znalosti, které si ověříte."
@@ -34,3 +36,10 @@ lead = "viz_stream_lead"
 span = 3
 height = "md"
 +++
+Tento web je pracovní portfolio a zároveň malá lekce, jak se dá takové portfolio postavit poctivě. Každé číslo na něm pochází ze skriptu, který ho změřil: [repozitáře](@/glossary/repository.cs.md) na GitHubu a GitLabu čtené jejich řádkovými klienty, kalendář příspěvků a datum posledního [commitu](@/glossary/commit.cs.md) každého projektu. Nic se nepíše dvakrát: stránky kategorií, projektů a pojmů se odvozují z dat a kontrola odmítne zastaralou kopii.
+
+Obrázky jsou [vizualizace dat](@/glossary/data-visualisation.cs.md) nakreslené knihovnou [D3.js](@/glossary/d3.cs.md) ze stejných měření. **Spirála** rozkládá rok příspěvků do kruhu, jeden prstenec na den v týdnu, takže rušná období září; **bubliny** mají velikost podle počtu repozitářů v daném jazyce; **proudy** ukazují, jak jazyky v průběhu let sílily a slábly. Najetím myší se ukáže hodnota, kliknutím se otevře práce za ní.
+
+Záleží na tom, kdo co napsal. [Fork](@/glossary/fork.cs.md) nebo [mirror](@/glossary/mirror.cs.md) se započítá, ale nikdy se nevydává za vlastníkovu práci: repozitář je původní, jen když vlastník napsal aspoň polovinu jeho commitů.
+
+Samotný web staví z [front matter](@/glossary/front-matter.cs.md) a dat [Zola](@/glossary/zola.cs.md), [generátor statických webů](@/glossary/static-site-generator.cs.md); styly dává [Flowbite Pro](@/glossary/flowbite-pro.cs.md) a před nasazením se kontroluje proti [WCAG](@/glossary/wcag.cs.md) 2.2 AA v obou tématech. Stroje čtou stejná fakta jako [JSON-LD](@/glossary/json-ld.cs.md), `llms.txt` a `site.json`; sociální sítě z [Open Graph](@/glossary/open-graph.cs.md) tagů kreslí náhled každé stránky. Každá stránka končí pojmy, na kterých stojí; [slovník](@/glossary/_index.cs.md) každý z nich definuje a uvádí zdroj.

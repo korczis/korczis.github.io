@@ -14,4 +14,14 @@ og_title = "algoglyph: Algoritmy a fyzika kreslené jako glyfy."
 og_image = "og/cs-work-algoglyph.png"
 schema = "project"
 keywords = ["algoglyph", "Věda a vizualizace", "TypeScript", "Rust", "HTML", "Tomáš Korčák"]
+terms = ["typescript", "rust", "html", "javascript", "shell", "p5-js", "apache-echarts", "alpine-js", "flowbite-pro", "data-visualisation", "github-pages", "repository", "commit", "open-source"]
 +++
+**algoglyph** je projekt z kategorie [Věda a vizualizace](@/projects/science.cs.md). Jeho kód je napsaný hlavně v jazyce [TypeScript](@/glossary/typescript.cs.md) (92,2 %), dále [Rust](@/glossary/rust.cs.md), [HTML](@/glossary/html.cs.md) a [JavaScript](@/glossary/javascript.cs.md).
+
+[Repozitář](@/glossary/repository.cs.md) vznikl 11. listopadu 2026; poslední [commit](@/glossary/commit.cs.md) je z 12. listopadu 2026. Zní „fix(test): a Rust test's time bound guards a hang, never a speed“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+
+Je postavený na [p5.js](@/glossary/p5-js.cs.md), [Apache ECharts](@/glossary/apache-echarts.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md) a [Flowbite Pro](@/glossary/flowbite-pro.cs.md).
+
+Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/algoglyph/>.
+
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu; pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

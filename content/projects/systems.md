@@ -13,5 +13,11 @@ category = "systems"
 og_title = "Systems and infrastructure: 16 repositories."
 og_image = "og/category-systems.png"
 schema = "collection"
+terms = ["shell", "dockerfile", "ruby", "javascript", "rust", "repository"]
 keywords = ["Systems and infrastructure", "docks", "gh-exec-3000", "server-archlinux", "zdeny-docker", "k8s-orbis-pictus", "server-coreos", "Tomas Korcak"]
 +++
+Servers, clusters and the plumbing beneath software: immutable hosts, packet processing, embedded boards and deployment.
+
+The category holds 16 original repositories, written most often in [Shell](@/glossary/shell.md), [Dockerfile](@/glossary/dockerfile.md), [Ruby](@/glossary/ruby.md) and [JavaScript](@/glossary/javascript.md).
+
+*How categories are made:* nobody assigns them by hand. A [repository](@/glossary/repository.md) falls into a category when its name, description or topics match the rule's keywords, otherwise its primary language decides; [forks](@/glossary/fork.md) and [mirrors](@/glossary/mirror.md) never count as the owner's work.

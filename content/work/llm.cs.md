@@ -14,4 +14,10 @@ og_title = "llm: Inženýrství AI"
 og_image = "og/cs-work-llm.png"
 schema = "project"
 keywords = ["llm", "Inženýrství AI", "Elixir", "Tomáš Korčák"]
+terms = ["elixir", "ai-agent", "repository", "commit", "open-source"]
 +++
+**llm** je projekt z kategorie [Inženýrství AI](@/projects/ai.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (100 %).
+
+[Repozitář](@/glossary/repository.cs.md) vznikl 20. srpna 2026; poslední [commit](@/glossary/commit.cs.md) je z 21. srpna 2026. Zní „test(conversations): add DB-integration tests for every named constraint“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu; pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

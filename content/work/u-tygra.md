@@ -14,4 +14,12 @@ og_title = "u-tygra: Tools"
 og_image = "og/work-u-tygra.png"
 schema = "project"
 keywords = ["u-tygra", "Tools", "JavaScript", "HTML", "CSS", "Tomas Korcak"]
+terms = ["javascript", "html", "css", "open-source", "github-pages", "repository", "commit"]
 +++
+**u-tygra** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (91.8 %), with [HTML](@/glossary/html.md) and [CSS](@/glossary/css.md).
+
+The [repository](@/glossary/repository.md) was created in December 2024; its latest [commit](@/glossary/commit.md) is from 3 June 2025. It reads “remove static.yml”. That places it among the projects active in the last 24 months.
+
+It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/u-tygra/>.
+
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code; the concepts below are explained in the [glossary](@/glossary/_index.md).

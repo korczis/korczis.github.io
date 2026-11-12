@@ -14,4 +14,10 @@ og_title = "GHT: Tools"
 og_image = "og/work-ght.png"
 schema = "project"
 keywords = ["GHT", "Tools", "Tomas Korcak"]
+terms = ["open-source", "repository", "commit"]
 +++
+**GHT** is a project in [Tools](@/projects/tools.md).
+
+The [repository](@/glossary/repository.md) was created in August 2025; its latest [commit](@/glossary/commit.md) is from 28 August 2025. It reads “Edit README.md”. That places it among the projects active in the last 24 months.
+
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code; the concepts below are explained in the [glossary](@/glossary/_index.md).

@@ -13,5 +13,13 @@ category = "web"
 og_title = "Web: 9 repozitářů."
 og_image = "og/cs-category-web.png"
 schema = "collection"
+terms = ["static-site-generator", "javascript", "css", "elixir", "repository"]
 keywords = ["Web", "job-processor", "nestravenkam", "tosh", "the-scratch", "web-spa", "microscratch-react", "Tomáš Korčák"]
 +++
+Weby a webové aplikace: single-page aplikace, frontendy v Phoenixu a Elmu, landing pages a weby přátel.
+
+Kategorie má 9 repozitářů; nejčastějšími jazyky jsou [JavaScript](@/glossary/javascript.cs.md), [CSS](@/glossary/css.cs.md) a [Elixir](@/glossary/elixir.cs.md).
+
+Klíčový pojem: [Generátor statických webů](@/glossary/static-site-generator.cs.md).
+
+*Jak kategorie vznikají:* nikdo je ručně nepřiřazuje. [Repozitář](@/glossary/repository.cs.md) spadne do kategorie, když jeho název, popis nebo témata odpovídají klíčovým slovům pravidla, jinak rozhodne jeho hlavní jazyk; forky a [mirrory](@/glossary/mirror.cs.md) se nepočítají za vlastní práci.

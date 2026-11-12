@@ -14,4 +14,12 @@ og_title = "astronomists: Tools"
 og_image = "og/work-astronomists.png"
 schema = "project"
 keywords = ["astronomists", "Tools", "Python", "HTML", "TypeScript", "Tomas Korcak"]
+terms = ["python", "html", "typescript", "shell", "javascript", "css", "open-source", "github-pages", "repository", "commit"]
 +++
+**astronomists** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [Python](@/glossary/python.md) (41.1 %), with [HTML](@/glossary/html.md), [TypeScript](@/glossary/typescript.md) and [Shell](@/glossary/shell.md).
+
+The [repository](@/glossary/repository.md) was created in June 2026; its latest [commit](@/glossary/commit.md) is from 20 July 2026. It reads “docs: correct and expand CLAUDE.md for current build pipeline”. That places it among the projects active in the last 12 months.
+
+It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/astronomists/>.
+
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code; the concepts below are explained in the [glossary](@/glossary/_index.md).

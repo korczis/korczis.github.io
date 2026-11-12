@@ -14,4 +14,10 @@ og_title = "unable.cz: Tools"
 og_image = "og/work-unable-cz.png"
 schema = "project"
 keywords = ["unable.cz", "Tools", "JavaScript", "HTML", "CSS", "Tomas Korcak"]
+terms = ["javascript", "html", "css", "open-source", "repository", "commit"]
 +++
+**unable.cz** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (79.6 %), with [HTML](@/glossary/html.md) and [CSS](@/glossary/css.md).
+
+The [repository](@/glossary/repository.md) was created in July 2026; its latest [commit](@/glossary/commit.md) is from 19 July 2026. It reads “feat(dossier): bounded monitoring loop for Able.cz dossier (PROMPT-11 loop-1)”. That places it among the projects active in the last 12 months.
+
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code; the concepts below are explained in the [glossary](@/glossary/_index.md).

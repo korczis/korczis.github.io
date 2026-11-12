@@ -14,4 +14,12 @@ og_title = "bubbler: Bubbler is a simple JavaScript application that generates a
 og_image = "og/work-bubbler.png"
 schema = "project"
 keywords = ["bubbler", "Tools", "JavaScript", "HTML", "CSS", "Tomas Korcak"]
+terms = ["javascript", "html", "css", "open-source", "github-pages", "repository", "commit"]
 +++
+**bubbler** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (64.5 %), with [HTML](@/glossary/html.md) and [CSS](@/glossary/css.md).
+
+The [repository](@/glossary/repository.md) was created in September 2024; its latest [commit](@/glossary/commit.md) is from 16 September 2024. It reads “feat: add OG tags”. That places it among the projects active in the last 48 months.
+
+It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/bubbler/>.
+
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code; the concepts below are explained in the [glossary](@/glossary/_index.md).

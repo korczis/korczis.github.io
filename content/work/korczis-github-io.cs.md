@@ -14,4 +14,10 @@ og_title = "korczis.github.io: Inženýrství AI"
 og_image = "og/cs-work-korczis-github-io.png"
 schema = "project"
 keywords = ["korczis.github.io", "Inženýrství AI", "HTML", "JavaScript", "Shell", "Tomáš Korčák"]
+terms = ["html", "javascript", "shell", "css", "ai-agent", "repository", "commit", "open-source"]
 +++
+**korczis.github.io** je projekt z kategorie [Inženýrství AI](@/projects/ai.cs.md). Jeho kód je napsaný hlavně v jazyce [HTML](@/glossary/html.cs.md) (49,5 %), dále [JavaScript](@/glossary/javascript.cs.md), [Shell](@/glossary/shell.cs.md) a [CSS](@/glossary/css.cs.md).
+
+[Repozitář](@/glossary/repository.cs.md) vznikl 24. prosince 2024; poslední [commit](@/glossary/commit.cs.md) je z 12. listopadu 2026. Zní „build(deps-dev): bump the site group across 1 directory with 2 updates (\#4)“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu; pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

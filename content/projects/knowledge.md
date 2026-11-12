@@ -13,5 +13,11 @@ category = "knowledge"
 og_title = "Knowledge: 8 repositories."
 og_image = "og/category-knowledge.png"
 schema = "collection"
+terms = ["elixir", "swift", "erlang", "shell", "zola", "cytoscape-js", "apache-echarts", "alpine-js", "flowbite-pro", "repository"]
 keywords = ["Knowledge", "Kompendium", "ReadingPhoneNumbersInRealTime", "MinervaEye", "reading", "skull-elixir", "skull", "skull-erlang", "Tomas Korcak"]
 +++
+Knowledge bases you can check: cross-linked taxonomies with their sources, built as books, sites and graphs.
+
+The category holds 8 original repositories, written most often in [Elixir](@/glossary/elixir.md), [Swift](@/glossary/swift.md), [Erlang](@/glossary/erlang.md) and [Shell](@/glossary/shell.md). Featured: **Kompendium**.
+
+*How categories are made:* nobody assigns them by hand. A [repository](@/glossary/repository.md) falls into a category when its name, description or topics match the rule's keywords, otherwise its primary language decides; [forks](@/glossary/fork.md) and [mirrors](@/glossary/mirror.md) never count as the owner's work.

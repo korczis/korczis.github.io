@@ -1132,3 +1132,88 @@ cs = "Jazyky v průběhu let"
 [viz_stream_lead]
 en = "Original repositories by year of creation, as streams of their languages; a stream opens its repositories."
 cs = "Původní repozitáře podle roku vzniku jako proudy jejich jazyků; proud otevře své repozitáře."
+
+# Glossary and articles.
+[glossary]
+en = "Glossary"
+cs = "Slovník"
+
+[glossary_lead]
+en = "The {n} terms this site explains itself with: languages, technologies and concepts, each defined, sourced and linked to every page that uses it."
+cs = "{n} pojmů, kterými se web vysvětluje: jazyky, technologie a koncepty, každý definovaný, se zdrojem a s odkazem na stránky, které ho používají."
+
+[glossary_og]
+en = "Glossary: {n} terms, defined and sourced."
+cs = "Slovník: {n} pojmů, definovaných a se zdroji."
+
+[kind_term_language]
+en = "Programming language"
+cs = "Programovací jazyk"
+
+[kind_term_technology]
+en = "Technology"
+cs = "Technologie"
+
+[kind_term_concept]
+en = "Concept"
+cs = "Koncept"
+
+[concepts_on_page]
+en = "Concepts on this page"
+cs = "Pojmy na této stránce"
+
+[concepts_lead]
+en = "The terms this page builds on, each defined in the glossary with a source to read further."
+cs = "Pojmy, na kterých tato stránka stojí; každý je ve slovníku definovaný a má zdroj k dalšímu čtení."
+
+[definition]
+en = "Definition"
+cs = "Definice"
+
+[further_reading]
+en = "Further reading"
+cs = "Další čtení"
+
+[used_on_pages]
+en = "Where it is used"
+cs = "Kde se používá"
+
+[used_on_lead]
+en = "{n} pages of this site build on this term."
+cs = "Stránek tohoto webu, které na pojmu stojí: {n}."
+
+[related_terms]
+en = "Related terms"
+cs = "Související pojmy"
+
+[related_lead]
+en = "Terms that appear on the same pages, the most frequent first."
+cs = "Pojmy, které se objevují na stejných stránkách, nejčastější první."
+
+[in_the_glossary]
+en = "In the glossary"
+cs = "Ve slovníku"
+
+[all_terms]
+en = "All terms"
+cs = "Všechny pojmy"
+
+[n_pages]
+en = "{n} pages"
+cs = "Stránek: {n}"
+
+[article_label]
+en = "Article"
+cs = "Článek"
+
+[hint_glossary]
+en = "Every term the site uses, defined and sourced"
+cs = "Každý pojem webu, definovaný a se zdrojem"
+
+[kind_term]
+en = "Term"
+cs = "Pojem"
+
+[nav_projects]
+en = "Projects"
+cs = "Projekty"

@@ -14,4 +14,12 @@ og_title = "bubbler: Nástroje"
 og_image = "og/cs-work-bubbler.png"
 schema = "project"
 keywords = ["bubbler", "Nástroje", "JavaScript", "HTML", "CSS", "Tomáš Korčák"]
+terms = ["javascript", "html", "css", "open-source", "github-pages", "repository", "commit"]
 +++
+**bubbler** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [JavaScript](@/glossary/javascript.cs.md) (64,5 %), dále [HTML](@/glossary/html.cs.md) a [CSS](@/glossary/css.cs.md).
+
+[Repozitář](@/glossary/repository.cs.md) vznikl 15. září 2024; poslední [commit](@/glossary/commit.cs.md) je z 16. září 2024. Zní „feat: add OG tags“. Patří tak mezi projekty aktivní za posledních 48 měsíců.
+
+Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/bubbler/>.
+
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu; pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

@@ -9,5 +9,9 @@ sort_by = "weight"
 og_title = "43 projects, the last four years."
 og_image = "og/work.png"
 schema = "collection"
+terms = ["repository", "commit", "open-source", "data-visualisation"]
 keywords = ["Tomas Korcak recent work", "korczis", "sonic-playground", "korczis.github.io", "kompendium-epistemicke-anihilace", "algoglyph", "oscilla", "prismatic-majordomus", "vomaste.cz", "majordomus-reel"]
 +++
+This page answers the question of what is being worked on now. A project belongs here by the date of its last [commit](@/glossary/commit.md) on the default branch, never by when its host last saw activity, and falls into one of three periods: 12, 24 and 48 months.
+
+Every project has its own page with a derived article, measured facts and the concepts it builds on. [Forks](@/glossary/fork.md) and [mirrors](@/glossary/mirror.md) are left out: this is the owner's own work only.

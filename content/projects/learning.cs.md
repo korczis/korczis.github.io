@@ -13,5 +13,11 @@ category = "learning"
 og_title = "Učení a experimenty: 16 repozitářů."
 og_image = "og/cs-category-learning.png"
 schema = "collection"
+terms = ["csharp", "cpp", "javascript", "ruby", "c", "elixir", "haskell", "java", "shell", "repository"]
 keywords = ["Učení a experimenty", "happ", "Test-Elixir", "node-proxy-upload", "skull-cpp", "grache-test", "skull-emscripten", "Tomáš Korčák"]
 +++
+Výukové materiály, katy a experimenty napříč mnoha jazyky: náčrty, které přišly před projekty.
+
+Kategorie má 16 repozitářů; nejčastějšími jazyky jsou [C#](@/glossary/csharp.cs.md), [C++](@/glossary/cpp.cs.md), [JavaScript](@/glossary/javascript.cs.md) a [Ruby](@/glossary/ruby.cs.md).
+
+*Jak kategorie vznikají:* nikdo je ručně nepřiřazuje. [Repozitář](@/glossary/repository.cs.md) spadne do kategorie, když jeho název, popis nebo témata odpovídají klíčovým slovům pravidla, jinak rozhodne jeho hlavní jazyk; forky a [mirrory](@/glossary/mirror.cs.md) se nepočítají za vlastní práci.

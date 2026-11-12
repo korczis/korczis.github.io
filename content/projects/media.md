@@ -13,5 +13,13 @@ category = "media"
 og_title = "Media and art: 8 repositories."
 og_image = "og/category-media.png"
 schema = "collection"
+terms = ["data-visualisation", "html", "dockerfile", "elixir", "javascript", "repository"]
 keywords = ["Media and art", "Majordomus reel", "Catharsis as a Service", "Sonic Playground", "openttd-prismatic-bridge", "prismatic-blog", "dj-schnapps", "brepta", "talkie", "Tomas Korcak"]
 +++
+Work made from code: a promo reel rendered end to end, a music blog, and a digital artifact or two.
+
+The category holds 8 original repositories, written most often in [HTML](@/glossary/html.md), [Dockerfile](@/glossary/dockerfile.md), [Elixir](@/glossary/elixir.md) and [JavaScript](@/glossary/javascript.md). Featured: **Majordomus reel**, **Catharsis as a Service** and **Sonic Playground**.
+
+Key concept: [Data visualisation](@/glossary/data-visualisation.md).
+
+*How categories are made:* nobody assigns them by hand. A [repository](@/glossary/repository.md) falls into a category when its name, description or topics match the rule's keywords, otherwise its primary language decides; [forks](@/glossary/fork.md) and [mirrors](@/glossary/mirror.md) never count as the owner's work.

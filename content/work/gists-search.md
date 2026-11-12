@@ -14,4 +14,12 @@ og_title = "Gists search: Catalogue, enrichment and search over a mirror of my g
 og_image = "og/work-gists-search.png"
 schema = "project"
 keywords = ["Gists search", "Tools", "Python", "JavaScript", "HTML", "Tomas Korcak"]
+terms = ["python", "javascript", "html", "shell", "open-source", "github-pages", "repository", "commit"]
 +++
+**Gists search** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [Python](@/glossary/python.md) (58.5 %), with [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md) and Just.
+
+The [repository](@/glossary/repository.md) was created in August 2026; its latest [commit](@/glossary/commit.md) is from 27 August 2026. It reads “docs(gists): add README, architecture doc and deploy recipe”. That places it among the projects active in the last 12 months.
+
+It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/gists-search/>.
+
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code; the concepts below are explained in the [glossary](@/glossary/_index.md).

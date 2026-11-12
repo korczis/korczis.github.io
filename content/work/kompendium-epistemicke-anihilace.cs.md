@@ -14,4 +14,14 @@ og_title = "Kompendium: Defenzivní taxonomie epistemické a kognitivní manipul
 og_image = "og/cs-work-kompendium-epistemicke-anihilace.png"
 schema = "project"
 keywords = ["Kompendium", "Znalosti", "Elixir", "JavaScript", "HTML", "Tomáš Korčák"]
+terms = ["elixir", "javascript", "html", "python", "rust", "shell", "zola", "cytoscape-js", "apache-echarts", "alpine-js", "flowbite-pro", "github-pages", "repository", "commit", "open-source"]
 +++
+**Kompendium** je projekt z kategorie [Znalosti](@/projects/knowledge.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (35,7 %), dále [JavaScript](@/glossary/javascript.cs.md), [HTML](@/glossary/html.cs.md) a [Python](@/glossary/python.cs.md).
+
+[Repozitář](@/glossary/repository.cs.md) vznikl 9. listopadu 2026; poslední [commit](@/glossary/commit.cs.md) je z 12. listopadu 2026. Zní „Merge branch 'fix/template-figure-gate': číslo jen v odkazu na jinou stránku není šablonové“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+
+Je postavený na [Zola](@/glossary/zola.cs.md), [Cytoscape.js](@/glossary/cytoscape-js.cs.md), [Apache ECharts](@/glossary/apache-echarts.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md) a [Flowbite Pro](@/glossary/flowbite-pro.cs.md).
+
+Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/kompendium-epistemicke-anihilace/>.
+
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu; pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

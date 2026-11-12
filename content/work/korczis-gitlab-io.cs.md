@@ -14,4 +14,10 @@ og_title = "korczis.gitlab.io: Nástroje"
 og_image = "og/cs-work-korczis-gitlab-io.png"
 schema = "project"
 keywords = ["korczis.gitlab.io", "Nástroje", "CSS", "Elixir", "SCSS", "Tomáš Korčák"]
+terms = ["css", "elixir", "html", "open-source", "repository", "commit"]
 +++
+**korczis.gitlab.io** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [CSS](@/glossary/css.cs.md) (32,5 %), dále [Elixir](@/glossary/elixir.cs.md), SCSS a [HTML](@/glossary/html.cs.md).
+
+[Repozitář](@/glossary/repository.cs.md) vznikl 22. srpna 2025; poslední [commit](@/glossary/commit.cs.md) je z 22. srpna 2025. Zní „Merge branch 'master' of gitlab.com:korczis/korczis.gitlab.io“. Patří tak mezi projekty aktivní za posledních 24 měsíců.
+
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu; pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

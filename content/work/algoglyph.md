@@ -14,4 +14,14 @@ og_title = "algoglyph: Algorithms and physics drawn as glyphs."
 og_image = "og/work-algoglyph.png"
 schema = "project"
 keywords = ["algoglyph", "Science and visualisation", "TypeScript", "Rust", "HTML", "Tomas Korcak"]
+terms = ["typescript", "rust", "html", "javascript", "shell", "p5-js", "apache-echarts", "alpine-js", "flowbite-pro", "data-visualisation", "github-pages", "repository", "commit", "open-source"]
 +++
+**algoglyph** is a project in [Science and visualisation](@/projects/science.md). Its code is written mainly in [TypeScript](@/glossary/typescript.md) (92.2 %), with [Rust](@/glossary/rust.md), [HTML](@/glossary/html.md) and [JavaScript](@/glossary/javascript.md).
+
+The [repository](@/glossary/repository.md) was created in November 2026; its latest [commit](@/glossary/commit.md) is from 12 November 2026. It reads “fix(test): a Rust test's time bound guards a hang, never a speed”. That places it among the projects active in the last 12 months.
+
+It is built with [p5.js](@/glossary/p5-js.md), [Apache ECharts](@/glossary/apache-echarts.md), [Alpine.js](@/glossary/alpine-js.md) and [Flowbite Pro](@/glossary/flowbite-pro.md).
+
+It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/algoglyph/>.
+
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code; the concepts below are explained in the [glossary](@/glossary/_index.md).

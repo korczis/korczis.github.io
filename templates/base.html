@@ -38,6 +38,7 @@
     <div id="main-content" class="relative h-full w-full min-w-0 overflow-y-auto bg-gray-50 dark:bg-gray-900 lg:ml-64">
       <main id="main" tabindex="-1" class="focus:outline-none">
         {%- block content %}{% endblock content %}
+        {%- include "partials/article.html" %}
       </main>
       {%- include "partials/footer.html" %}
     </div>

@@ -14,4 +14,10 @@ og_title = "simple_geocoder: Nástroje"
 og_image = "og/cs-work-simple-geocoder.png"
 schema = "project"
 keywords = ["simple_geocoder", "Nástroje", "Elixir", "Shell", "HTML+EEX", "Tomáš Korčák"]
+terms = ["elixir", "shell", "open-source", "repository", "commit"]
 +++
+**simple\_geocoder** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (92,2 %), dále [Shell](@/glossary/shell.cs.md) a HTML+EEX.
+
+[Repozitář](@/glossary/repository.cs.md) vznikl 23. dubna 2024; poslední [commit](@/glossary/commit.cs.md) je z 24. dubna 2024. Zní „Disable build image“. Patří tak mezi projekty aktivní za posledních 48 měsíců.
+
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu; pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

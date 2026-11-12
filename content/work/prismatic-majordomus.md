@@ -14,4 +14,14 @@ og_title = "Majordomus: AI agents say the work is done; Majordomus makes them pr
 og_image = "og/work-prismatic-majordomus.png"
 schema = "project"
 keywords = ["Majordomus", "AI engineering", "Rust", "Shell", "JavaScript", "Tomas Korcak"]
+terms = ["rust", "shell", "javascript", "html", "css", "python", "mcp", "zola", "ai-agent", "github-pages", "repository", "commit", "open-source"]
 +++
+**Majordomus** is a project in [AI engineering](@/projects/ai.md). Its code is written mainly in [Rust](@/glossary/rust.md) (60.8 %), with [Shell](@/glossary/shell.md), [JavaScript](@/glossary/javascript.md) and [HTML](@/glossary/html.md).
+
+The [repository](@/glossary/repository.md) was created in September 2026; its latest [commit](@/glossary/commit.md) is from 11 November 2026. It reads “Merge pull request \#3007 from korczis/release/bump-1.0.2”. That places it among the projects active in the last 12 months.
+
+It is built with [MCP](@/glossary/mcp.md) and [Zola](@/glossary/zola.md).
+
+It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/prismatic-majordomus/>.
+
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code; the concepts below are explained in the [glossary](@/glossary/_index.md).

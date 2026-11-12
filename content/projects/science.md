@@ -13,5 +13,13 @@ category = "science"
 og_title = "Science and visualisation: 14 repositories."
 og_image = "og/category-science.png"
 schema = "collection"
+terms = ["data-visualisation", "javascript", "rust", "cpp", "elixir", "haskell", "python", "typescript", "web-audio", "p5-js", "apache-echarts", "alpine-js", "flowbite-pro", "repository"]
 keywords = ["Science and visualisation", "Oscilla", "algoglyph", "maze-rs", "big-png", "distance-calculator", "rustas", "graph-flow", "gooddata-graphql", "maze", "maze-js", "Tomas Korcak"]
 +++
+Honest instruments and drawn algorithms in the browser: acoustics, physics, sorting, mazes, each readout measured.
+
+The category holds 14 original repositories, written most often in [JavaScript](@/glossary/javascript.md), [Rust](@/glossary/rust.md), [C++](@/glossary/cpp.md) and [Elixir](@/glossary/elixir.md). Featured: **Oscilla**, **algoglyph**, **maze-rs** and **big-png**.
+
+Key concept: [Data visualisation](@/glossary/data-visualisation.md).
+
+*How categories are made:* nobody assigns them by hand. A [repository](@/glossary/repository.md) falls into a category when its name, description or topics match the rule's keywords, otherwise its primary language decides; [forks](@/glossary/fork.md) and [mirrors](@/glossary/mirror.md) never count as the owner's work.

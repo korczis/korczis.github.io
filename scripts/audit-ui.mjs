@@ -44,6 +44,9 @@ const PAGES = [
   ...(firstWork ? [['cs-work-page', `cs/work/${firstWork}/`]] : []),
   ['category', 'projects/science/'],
   ['stack', 'stack/'],
+  ['glossary', 'glossary/'],
+  ['term', 'glossary/rust/'],
+  ['cs-term', 'cs/glossary/osint/'],
   ['404', '404.html'],
 ];
 

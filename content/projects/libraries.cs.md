@@ -13,5 +13,13 @@ category = "libraries"
 og_title = "Knihovny: 10 repozitářů."
 og_image = "og/cs-category-libraries.png"
 schema = "collection"
+terms = ["open-source", "rust", "elixir", "javascript", "repository"]
 keywords = ["Knihovny", "hydra", "in-rust-we-trust", "rustler-test", "streamflow", "sli2dli", "rustler_mix", "Tomáš Korčák"]
 +++
+Znovupoužitelné stavební bloky pro jiné programy: klienti, bindingy, validátory, parsery a rozšíření frameworků, hlavně Elixir a Rust.
+
+Kategorie má 10 repozitářů; nejčastějšími jazyky jsou [Rust](@/glossary/rust.cs.md), [Elixir](@/glossary/elixir.cs.md) a [JavaScript](@/glossary/javascript.cs.md).
+
+Klíčový pojem: [Open source](@/glossary/open-source.cs.md).
+
+*Jak kategorie vznikají:* nikdo je ručně nepřiřazuje. [Repozitář](@/glossary/repository.cs.md) spadne do kategorie, když jeho název, popis nebo témata odpovídají klíčovým slovům pravidla, jinak rozhodne jeho hlavní jazyk; forky a [mirrory](@/glossary/mirror.cs.md) se nepočítají za vlastní práci.

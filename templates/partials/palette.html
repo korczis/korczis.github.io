@@ -6,7 +6,7 @@
 {%- set pix = load_data(path="data/index.json") -%}
 <script type="application/json" id="palette-data">[
   {"kind": {{ trans(key="kind_page", lang=lang) | json_encode | safe }}, "name": {{ trans(key="overview", lang=lang) | json_encode | safe }}, "hint": {{ trans(key="hint_home", lang=lang) | json_encode | safe }}, "url": {{ (config.base_url ~ lp ~ "/") | json_encode | safe }}},
-  {"kind": {{ trans(key="kind_page", lang=lang) | json_encode | safe }}, "name": {{ trans(key="projects", lang=lang) | json_encode | safe }}, "hint": {{ trans(key="hint_projects", lang=lang) | json_encode | safe }}, "url": {{ (config.base_url ~ lp ~ "/projects/") | json_encode | safe }}},
+  {"kind": {{ trans(key="kind_page", lang=lang) | json_encode | safe }}, "name": {{ trans(key="nav_projects", lang=lang) | json_encode | safe }}, "hint": {{ trans(key="hint_projects", lang=lang) | json_encode | safe }}, "url": {{ (config.base_url ~ lp ~ "/projects/") | json_encode | safe }}},
   {"kind": {{ trans(key="kind_page", lang=lang) | json_encode | safe }}, "name": {{ trans(key="about", lang=lang) | json_encode | safe }}, "hint": {{ trans(key="hint_about", lang=lang) | json_encode | safe }}, "url": {{ (config.base_url ~ lp ~ "/about/") | json_encode | safe }}},
   {"kind": {{ trans(key="kind_page", lang=lang) | json_encode | safe }}, "name": {{ trans(key="repositories", lang=lang) | json_encode | safe }}, "hint": {{ trans(key="hint_repositories", lang=lang) | json_encode | safe }}, "url": {{ (config.base_url ~ lp ~ "/repositories/") | json_encode | safe }}},
   {"kind": {{ trans(key="kind_page", lang=lang) | json_encode | safe }}, "name": {{ trans(key="recent_work", lang=lang) | json_encode | safe }}, "hint": {{ trans(key="hint_work", lang=lang) | json_encode | safe }}, "url": {{ (config.base_url ~ lp ~ "/work/") | json_encode | safe }}},
@@ -15,6 +15,11 @@
   {"kind": {{ trans(key="kind_work", lang=lang) | json_encode | safe }}, "name": {{ wp.title | json_encode | safe }}, "hint": {{ wp.description | json_encode | safe }}, "terms": {{ wp.extra.keywords | join(sep=" ") | json_encode | safe }}, "url": {{ wp.permalink | json_encode | safe }}},
   {%- endfor %}
   {"kind": {{ trans(key="kind_page", lang=lang) | json_encode | safe }}, "name": {{ trans(key="stack", lang=lang) | json_encode | safe }}, "hint": {{ trans(key="hint_stack", lang=lang) | json_encode | safe }}, "url": {{ (config.base_url ~ lp ~ "/stack/") | json_encode | safe }}},
+  {"kind": {{ trans(key="kind_page", lang=lang) | json_encode | safe }}, "name": {{ trans(key="glossary", lang=lang) | json_encode | safe }}, "hint": {{ trans(key="hint_glossary", lang=lang) | json_encode | safe }}, "url": {{ get_url(path="@/glossary/_index.md", lang=lang) | json_encode | safe }}},
+  {%- set gsec = get_section(path="glossary/_index" ~ sfx | replace(from="_", to=".") ~ ".md") %}
+  {%- for gp in gsec.pages %}
+  {"kind": {{ trans(key="kind_term", lang=lang) | json_encode | safe }}, "name": {{ gp.title | json_encode | safe }}, "hint": {{ gp.extra.definition | json_encode | safe }}, "terms": {{ (gp.extra.aliases | join(sep=" ") ~ " " ~ gp.extra.term) | json_encode | safe }}, "url": {{ gp.permalink | json_encode | safe }}},
+  {%- endfor %}
   {"kind": {{ trans(key="kind_page", lang=lang) | json_encode | safe }}, "name": "Majordomus", "hint": "majordomus.dev", "url": {{ config.extra.majordomus_url | json_encode | safe }}},
   {%- for key, c in pcat.categories %}
   {"kind": {{ trans(key="kind_category", lang=lang) | json_encode | safe }}, "name": {{ c["name" ~ sfx] | json_encode | safe }}, "hint": {{ c["description" ~ sfx] | json_encode | safe }}, "url": {{ (config.base_url ~ lp ~ "/projects/" ~ key ~ "/") | json_encode | safe }}},

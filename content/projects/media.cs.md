@@ -13,5 +13,13 @@ category = "media"
 og_title = "Média a umění: 8 repozitářů."
 og_image = "og/cs-category-media.png"
 schema = "collection"
+terms = ["data-visualisation", "html", "dockerfile", "elixir", "javascript", "repository"]
 keywords = ["Média a umění", "Majordomus reel", "Catharsis as a Service", "Sonic Playground", "openttd-prismatic-bridge", "prismatic-blog", "dj-schnapps", "brepta", "talkie", "Tomáš Korčák"]
 +++
+Díla z kódu: promo video renderované od začátku do konce, hudební blog a pár digitálních artefaktů.
+
+Kategorie má 8 repozitářů; nejčastějšími jazyky jsou [HTML](@/glossary/html.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md), [Elixir](@/glossary/elixir.cs.md) a [JavaScript](@/glossary/javascript.cs.md). Vybrané projekty: **Majordomus reel**, **Catharsis as a Service** a **Sonic Playground**.
+
+Klíčový pojem: [Vizualizace dat](@/glossary/data-visualisation.cs.md).
+
+*Jak kategorie vznikají:* nikdo je ručně nepřiřazuje. [Repozitář](@/glossary/repository.cs.md) spadne do kategorie, když jeho název, popis nebo témata odpovídají klíčovým slovům pravidla, jinak rozhodne jeho hlavní jazyk; forky a [mirrory](@/glossary/mirror.cs.md) se nepočítají za vlastní práci.

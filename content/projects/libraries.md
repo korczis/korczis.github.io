@@ -13,5 +13,13 @@ category = "libraries"
 og_title = "Libraries: 10 repositories."
 og_image = "og/category-libraries.png"
 schema = "collection"
+terms = ["open-source", "rust", "elixir", "javascript", "repository"]
 keywords = ["Libraries", "hydra", "in-rust-we-trust", "rustler-test", "streamflow", "sli2dli", "rustler_mix", "Tomas Korcak"]
 +++
+Reusable building blocks for other programs: clients, bindings, validators, parsers and framework extensions, mostly Elixir and Rust.
+
+The category holds 10 original repositories, written most often in [Rust](@/glossary/rust.md), [Elixir](@/glossary/elixir.md) and [JavaScript](@/glossary/javascript.md).
+
+Key concept: [Open source](@/glossary/open-source.md).
+
+*How categories are made:* nobody assigns them by hand. A [repository](@/glossary/repository.md) falls into a category when its name, description or topics match the rule's keywords, otherwise its primary language decides; [forks](@/glossary/fork.md) and [mirrors](@/glossary/mirror.md) never count as the owner's work.

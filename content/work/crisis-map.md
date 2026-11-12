@@ -14,4 +14,14 @@ og_title = "Crisis map: Incident reports, normalised, geocoded and mapped."
 og_image = "og/work-crisis-map.png"
 schema = "project"
 keywords = ["Crisis map", "Data and GIS", "Elixir", "CSS", "JavaScript", "Tomas Korcak"]
+terms = ["elixir", "css", "javascript", "html", "postgis", "mcp", "gis", "github-pages", "repository", "commit", "open-source"]
 +++
+**Crisis map** is a project in [Data and GIS](@/projects/data.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (96.2 %), with [CSS](@/glossary/css.md), [JavaScript](@/glossary/javascript.md) and [HTML](@/glossary/html.md).
+
+The [repository](@/glossary/repository.md) was created in September 2026; its latest [commit](@/glossary/commit.md) is from 8 September 2026. It reads “fix(site): the overview page is titled once”. That places it among the projects active in the last 12 months.
+
+It is built with [PostGIS](@/glossary/postgis.md) and [MCP](@/glossary/mcp.md).
+
+It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/crisis-map/>.
+
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code; the concepts below are explained in the [glossary](@/glossary/_index.md).

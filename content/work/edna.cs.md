@@ -14,4 +14,10 @@ og_title = "edna: Inženýrství AI"
 og_image = "og/cs-work-edna.png"
 schema = "project"
 keywords = ["edna", "Inženýrství AI", "Tomáš Korčák"]
+terms = ["ai-agent", "repository", "commit", "open-source"]
 +++
+**edna** je projekt z kategorie [Inženýrství AI](@/projects/ai.cs.md).
+
+[Repozitář](@/glossary/repository.cs.md) vznikl 2. září 2025; poslední [commit](@/glossary/commit.cs.md) je z 2. září 2025. Zní „Edit README.md“. Patří tak mezi projekty aktivní za posledních 24 měsíců.
+
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu; pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
