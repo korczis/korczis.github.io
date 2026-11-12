@@ -23,17 +23,22 @@ const files = (dir) => readdirSync(dir, { withFileTypes: true }).flatMap((e) => 
   return e.isDirectory() ? files(path) : e.name.endsWith('.md') ? [path] : [];
 });
 function urlOf(file, fm) {
-  const rel = relative(join(ROOT, 'content'), file).replace(/\\/g, '/');
+  let rel = relative(join(ROOT, 'content'), file).replace(/\\/g, '/');
   if (fm.path) return `${base}/${fm.path}/`;
-  if (rel === '_index.md') return `${base}/`;
-  if (rel.endsWith('/_index.md')) return `${base}/${rel.slice(0, -'_index.md'.length)}`;
-  return `${base}/${rel.replace(/\.md$/, '')}/`;
+  // A translation (x.cs.md) lives under /cs/.
+  const lang = (rel.match(/\.([a-z]{2})\.md$/) || [])[1];
+  const prefix = lang ? `/${lang}` : '';
+  rel = rel.replace(/\.[a-z]{2}\.md$/, '.md');
+  if (rel === '_index.md') return `${base}${prefix}/`;
+  if (rel.endsWith('/_index.md')) return `${base}${prefix}/${rel.slice(0, -'_index.md'.length)}`;
+  return `${base}${prefix}/${rel.replace(/\.md$/, '')}/`;
 }
 
 const pages = files(join(ROOT, 'content')).map((file) => {
   const fm = parse(readFileSync(file, 'utf8').match(/^\+\+\+\n([\s\S]*?)\n\+\+\+/)[1]);
   return {
     url: urlOf(file, fm),
+    lang: (relative(join(ROOT, 'content'), file).match(/\.([a-z]{2})\.md$/) || [])[1] ?? 'en',
     title: fm.extra?.seo_title ?? (fm.title ? `${fm.title} · ${config.title}` : config.title),
     description: fm.description,
     type: fm.extra?.schema ?? null,

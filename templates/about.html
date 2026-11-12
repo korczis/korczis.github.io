@@ -1,17 +1,19 @@
 {% extends "base.html" %}
 
 {% block content %}
+{%- set lp = "" %}{% if lang is defined and lang != config.default_language %}{% set lp = "/" ~ lang %}{% endif -%}
+{%- set sfx = "" %}{% if lang is defined and lang != config.default_language %}{% set sfx = "_" ~ lang %}{% endif -%}
 {%- set ix = load_data(path="data/index.json") -%}
 {%- set gh = load_data(path="data/github.json") -%}
 {%- set cat = load_data(path="data/projects.toml") -%}
-{%- set base = config.base_url ~ "/" -%}
+{%- set base = config.base_url ~ lp ~ "/" -%}
 {%- set card = "min-w-0 rounded-lg bg-white p-4 shadow dark:bg-gray-800 sm:p-6" -%}
 {%- set card_title = "text-xl font-bold leading-none text-gray-900 dark:text-white" -%}
 {%- set link = "font-medium text-primary-700 hover:underline dark:text-primary-400" -%}
 {%- set since = gh.profile.created_at | date(format="%Y") -%}
 {%- set years = (now() | date(format="%Y") | int) - (since | int) -%}
 {%- set as_of = ix.generated_at | date(format="%-d %B %Y") -%}
-{{ <page_header title={page.title} lead={page.description} /> }}
+{{ <page_header title={page.title} lead={page.description} lang={lang} /> }}
 
 <div class="space-y-4 px-4 pb-2 pt-6">
   <div class="grid grid-cols-1 gap-4 xl:grid-cols-3">
@@ -22,39 +24,37 @@
         <div>
           <h2 id="profile-title" class="text-xl font-bold text-gray-900 dark:text-white">{{ gh.profile.name }}</h2>
           <p class="font-mono text-sm text-primary-700 dark:text-primary-400">{{ gh.profile.login }}</p>
-          <p class="text-sm text-gray-600 dark:text-gray-400">Software engineer · {{ gh.profile.location }}</p>
+          <p class="text-sm text-gray-600 dark:text-gray-400">{{ trans(key="software_engineer", lang=lang) | safe }} {{ gh.profile.location }}</p>
         </div>
       </div>
       <dl class="tabular space-y-3 text-sm">
-        <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">On GitHub since</dt><dd><a class="{{ link }}" href="https://github.com/{{ gh.profile.login }}">{{ gh.profile.created_at | date(format="%B %Y") }}</a></dd></div>
-        <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">Original public repositories</dt><dd><a class="{{ link }}" href="{{ base }}repositories/">{{ ix.counts.own }}</a></dd></div>
-        <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">Contributions, 12 months</dt><dd class="font-semibold text-gray-900 dark:text-white">{{ gh.contributions.total | num_format }}</dd></div>
-        <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">Most used language</dt><dd class="font-semibold text-gray-900 dark:text-white">{{ ix.languages[0].name }} ({{ ix.languages[0].repos }})</dd></div>
-        <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">Author of</dt><dd><a class="{{ link }}" href="{{ config.extra.majordomus_url }}">Majordomus</a></dd></div>
+        <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="on_github_since", lang=lang) | safe }}</dt><dd><a class="{{ link }}" href="https://github.com/{{ gh.profile.login }}">{{ gh.profile.created_at | date(format="%B %Y") }}</a></dd></div>
+        <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="original_public_repositories", lang=lang) | safe }}</dt><dd><a class="{{ link }}" href="{{ base }}repositories/">{{ ix.counts.own }}</a></dd></div>
+        <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="contributions_12_months", lang=lang) | safe }}</dt><dd class="font-semibold text-gray-900 dark:text-white">{{ gh.contributions.total | num_format }}</dd></div>
+        <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="most_used_language", lang=lang) | safe }}</dt><dd class="font-semibold text-gray-900 dark:text-white">{{ ix.languages[0].name }} ({{ ix.languages[0].repos }})</dd></div>
+        <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="author_of", lang=lang) | safe }}</dt><dd><a class="{{ link }}" href="{{ config.extra.majordomus_url }}">Majordomus</a></dd></div>
       </dl>
       <div class="mt-5 flex flex-wrap gap-2 border-t border-gray-200 pt-4 dark:border-gray-700">
         <a href="https://github.com/{{ gh.profile.login }}" class="inline-flex items-center rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700">{{ <icon name="github" class="mr-2 h-4 w-4" /> }}GitHub</a>
         <a href="https://gitlab.com/{{ gh.profile.login }}" class="inline-flex items-center rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700">{{ <icon name="code" class="mr-2 h-4 w-4" /> }}GitLab</a>
         <a href="{{ config.extra.majordomus_url }}" class="inline-flex items-center rounded-lg bg-primary-700 px-3 py-2 text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">{{ <icon name="shield" class="mr-2 h-4 w-4" /> }}majordomus.dev</a>
-        <button type="button" data-js onclick="window.print()" class="inline-flex items-center rounded-lg px-3 py-2 text-sm font-medium text-primary-700 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-primary-400 dark:hover:bg-gray-700 dark:focus:ring-gray-700">Print as CV</button>
+        <button type="button" data-js onclick="window.print()" class="inline-flex items-center rounded-lg px-3 py-2 text-sm font-medium text-primary-700 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-primary-400 dark:hover:bg-gray-700 dark:focus:ring-gray-700">{{ trans(key="print_as_cv", lang=lang) | safe }}</button>
       </div>
     </section>
 
     {#- What I build: categories with derived counts across every original repository. #}
     <section class="{{ card }} xl:col-span-2" aria-labelledby="build-title">
-      <h2 id="build-title" class="{{ card_title }}">What I build</h2>
+      <h2 id="build-title" class="{{ card_title }}">{{ trans(key="what_i_build", lang=lang) | safe }}</h2>
       <p class="mb-5 mt-2 text-gray-600 dark:text-gray-400">
-        For {{ years }} years, in public: tools that make AI agents prove their work, honest scientific instruments in the
-        browser, knowledge bases you can check, data catalogues and maps, and the small tools in between.
-        The counts are every original repository on GitHub and GitLab, by inferred category.
+        {{ trans(key="for", lang=lang) | safe }} {{ years }} {{ trans(key="years_in_public_tools_that_make", lang=lang) | safe }}
       </p>
       <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
         {%- for key, c in cat.categories %}
         <a href="{{ base }}projects/{{ key }}/" class="group flex items-start gap-3 rounded-lg border border-gray-200 p-4 hover:bg-gray-50 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-700">
           <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary-100 text-primary-700 dark:bg-primary-900 dark:text-primary-300">{{ <category_icon key={key} class="h-5 w-5" /> }}</span>
           <span class="min-w-0">
-            <span class="flex items-center gap-2 font-semibold text-gray-900 group-hover:text-primary-700 dark:text-white dark:group-hover:text-primary-400">{{ c.name }}<span class="tabular rounded-full bg-gray-100 px-2 py-0.5 text-xs font-medium text-gray-800 dark:bg-gray-700 dark:text-gray-300">{{ ix.by_category[key] | default(value=0) }}</span></span>
-            <span class="mt-1 block text-sm text-gray-600 dark:text-gray-400">{{ c.description }}</span>
+            <span class="flex items-center gap-2 font-semibold text-gray-900 group-hover:text-primary-700 dark:text-white dark:group-hover:text-primary-400">{{ c["name" ~ sfx] }}<span class="tabular rounded-full bg-gray-100 px-2 py-0.5 text-xs font-medium text-gray-800 dark:bg-gray-700 dark:text-gray-300">{{ ix.by_category[key] | default(value=0) }}</span></span>
+            <span class="mt-1 block text-sm text-gray-600 dark:text-gray-400">{{ c["description" ~ sfx] }}</span>
           </span>
         </a>
         {%- endfor %}
@@ -65,17 +65,17 @@
   <div class="grid grid-cols-1 gap-4 xl:grid-cols-3">
     {#- Expertise over time: ECharts stacked bars of languages by year of creation. #}
     <section class="{{ card }} xl:col-span-2" aria-labelledby="expertise-title">
-      <h2 id="expertise-title" class="{{ card_title }}">Languages over the years</h2>
-      <p class="mb-4 mt-1 text-sm text-gray-600 dark:text-gray-400">Original repositories by year of creation and primary language: the record of what I worked in, not a claim about it.</p>
+      <h2 id="expertise-title" class="{{ card_title }}">{{ trans(key="languages_over_the_years", lang=lang) | safe }}</h2>
+      <p class="mb-4 mt-1 text-sm text-gray-600 dark:text-gray-400">{{ trans(key="original_repositories_by_year_of_creation", lang=lang) | safe }}</p>
       <div class="viz-box h-80" data-viz="expertise" data-source="expertise-data" role="img"
-        aria-label="Stacked bar chart of original repositories per year by language; most used: {% for l in ix.languages %}{% if loop.index <= 5 %}{{ l.name }} {{ l.repos }}{% if loop.index < 5 %}, {% endif %}{% endif %}{% endfor %}.">
+        aria-label="{% set_global top5 = "" %}{% for l in ix.languages %}{% if loop.index <= 5 %}{% set_global top5 = top5 ~ l.name ~ " " ~ l.repos %}{% if loop.index < 5 %}{% set_global top5 = top5 ~ ", " %}{% endif %}{% endif %}{% endfor %}{{ trans(key="aria_expertise", lang=lang) | replace(from="{list}", to=top5) }}">
         <div data-canvas></div>
       </div>
       <script type="application/json" id="expertise-data">{"years": {{ ix.languages_by_year | json_encode | safe }}, "languages": {{ ix.languages | json_encode | safe }}}</script>
     </section>
     <section class="{{ card }}" aria-labelledby="languages-total-title">
-      <h2 id="languages-total-title" class="{{ card_title }}">Most used</h2>
-      <p class="mb-4 mt-1 text-sm text-gray-600 dark:text-gray-400">Primary language of {{ ix.counts.own }} original repositories.</p>
+      <h2 id="languages-total-title" class="{{ card_title }}">{{ trans(key="most_used", lang=lang) | safe }}</h2>
+      <p class="mb-4 mt-1 text-sm text-gray-600 dark:text-gray-400">{{ trans(key="primary_language_of", lang=lang) | safe }} {{ ix.counts.own }} {{ trans(key="original_repositories", lang=lang) | safe }}</p>
       <ul class="space-y-3">
         {%- for l in ix.languages %}{% if loop.index <= 8 %}
         <li>
@@ -90,11 +90,11 @@
   {#- Skills: derived, each with its evidence (Flowbite badges + tooltips). Languages come from every
       original repository, technologies from the curated projects' stacks, domains from the categories. #}
   <section class="{{ card }}" aria-labelledby="skills-title">
-    <h2 id="skills-title" class="{{ card_title }}">Skills</h2>
-    <p class="mb-5 mt-1 text-sm text-gray-600 dark:text-gray-400">Derived, not claimed: every skill links to the work that shows it. Hover or focus a skill to see its evidence.</p>
+    <h2 id="skills-title" class="{{ card_title }}">{{ trans(key="skills", lang=lang) | safe }}</h2>
+    <p class="mb-5 mt-1 text-sm text-gray-600 dark:text-gray-400">{{ trans(key="derived_not_claimed_every_skill_links", lang=lang) | safe }}</p>
     <div class="grid grid-cols-1 gap-6 lg:grid-cols-3">
       <div>
-        <h3 class="mb-3 text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400">Languages</h3>
+        <h3 class="mb-3 text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400">{{ trans(key="languages", lang=lang) | safe }}</h3>
         <ul class="flex flex-wrap gap-2">
           {%- for l in ix.skills.languages %}{% if loop.index <= 14 %}
           <li>
@@ -103,14 +103,14 @@
               {{ l.name }}<span class="tabular rounded-full bg-primary-100 px-1.5 text-xs font-semibold text-primary-800 dark:bg-primary-900 dark:text-primary-300">{{ l.repos }}</span>
             </a>
             <div id="tip-lang-{{ loop.index }}" role="tooltip" class="tooltip invisible absolute z-10 inline-block max-w-xs rounded-lg bg-gray-900 px-3 py-2 text-xs font-medium text-white opacity-0 shadow-sm transition-opacity duration-300 dark:bg-gray-700">
-              {{ l.repos }} original repositories, latest: {% for e in l.evidence %}{{ e.name }}{% if not loop.last %}, {% endif %}{% endfor %}<div class="tooltip-arrow" data-popper-arrow></div>
+              {{ l.repos }} {{ trans(key="original_repositories_latest", lang=lang) | safe }} {% for e in l.evidence %}{{ e.name }}{% if not loop.last %}, {% endif %}{% endfor %}<div class="tooltip-arrow" data-popper-arrow></div>
             </div>
           </li>
           {%- endif %}{% endfor %}
         </ul>
       </div>
       <div>
-        <h3 class="mb-3 text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400">Technologies</h3>
+        <h3 class="mb-3 text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400">{{ trans(key="technologies", lang=lang) | safe }}</h3>
         <ul class="flex flex-wrap gap-2">
           {%- for t in ix.skills.technologies %}
           <li>
@@ -119,20 +119,20 @@
               {{ t.name }}<span class="tabular rounded-full bg-primary-100 px-1.5 text-xs font-semibold text-primary-800 dark:bg-primary-900 dark:text-primary-300">{{ t.projects }}</span>
             </a>
             <div id="tip-tech-{{ loop.index }}" role="tooltip" class="tooltip invisible absolute z-10 inline-block max-w-xs rounded-lg bg-gray-900 px-3 py-2 text-xs font-medium text-white opacity-0 shadow-sm transition-opacity duration-300 dark:bg-gray-700">
-              Used in {% for e in t.evidence %}{{ e.name }}{% if not loop.last %}, {% endif %}{% endfor %}<div class="tooltip-arrow" data-popper-arrow></div>
+              {{ trans(key="used_in", lang=lang) | safe }} {% for e in t.evidence %}{{ e.name }}{% if not loop.last %}, {% endif %}{% endfor %}<div class="tooltip-arrow" data-popper-arrow></div>
             </div>
           </li>
           {%- endfor %}
-          <li><a href="{{ base }}stack/" class="inline-flex items-center rounded-lg px-3 py-1.5 text-sm font-medium text-primary-700 hover:underline dark:text-primary-400">The whole stack{{ <icon name="arrow-right" class="ml-1 h-4 w-4" /> }}</a></li>
+          <li><a href="{{ base }}stack/" class="inline-flex items-center rounded-lg px-3 py-1.5 text-sm font-medium text-primary-700 hover:underline dark:text-primary-400">{{ trans(key="the_whole_stack", lang=lang) | safe }}{{ <icon name="arrow-right" class="ml-1 h-4 w-4" /> }}</a></li>
         </ul>
       </div>
       <div>
-        <h3 class="mb-3 text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400">Domains</h3>
+        <h3 class="mb-3 text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400">{{ trans(key="domains", lang=lang) | safe }}</h3>
         <ul class="flex flex-wrap gap-2">
           {%- for key, c in cat.categories %}
           <li>
             <a href="{{ base }}projects/{{ key }}/" class="inline-flex items-center gap-1.5 rounded-lg border border-gray-200 bg-gray-50 px-3 py-1.5 text-sm font-medium text-gray-900 hover:border-primary-300 hover:bg-primary-50 hover:text-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:focus:ring-primary-800">
-              {{ <category_icon key={key} class="h-4 w-4 text-primary-700 dark:text-primary-400" /> }}{{ c.name }}<span class="tabular rounded-full bg-primary-100 px-1.5 text-xs font-semibold text-primary-800 dark:bg-primary-900 dark:text-primary-300">{{ ix.by_category[key] | default(value=0) }}</span>
+              {{ <category_icon key={key} class="h-4 w-4 text-primary-700 dark:text-primary-400" /> }}{{ c["name" ~ sfx] }}<span class="tabular rounded-full bg-primary-100 px-1.5 text-xs font-semibold text-primary-800 dark:bg-primary-900 dark:text-primary-300">{{ ix.by_category[key] | default(value=0) }}</span>
             </a>
           </li>
           {%- endfor %}
@@ -144,8 +144,8 @@
   {#- Selected work: the curated catalogue, linked to each project's detail. #}
   <section class="{{ card }}" aria-labelledby="selected-title">
     <div class="mb-4 flex items-center justify-between">
-      <h2 id="selected-title" class="{{ card_title }}">Selected work</h2>
-      <a href="{{ base }}projects/" class="inline-flex shrink-0 items-center whitespace-nowrap rounded-lg p-2 text-sm font-medium text-primary-700 hover:bg-gray-100 dark:text-primary-400 dark:hover:bg-gray-700">All projects{{ <icon name="arrow-right" class="ml-1 h-4 w-4" /> }}</a>
+      <h2 id="selected-title" class="{{ card_title }}">{{ trans(key="selected_work", lang=lang) | safe }}</h2>
+      <a href="{{ base }}projects/" class="inline-flex shrink-0 items-center whitespace-nowrap rounded-lg p-2 text-sm font-medium text-primary-700 hover:bg-gray-100 dark:text-primary-400 dark:hover:bg-gray-700">{{ trans(key="all_projects", lang=lang) | safe }}{{ <icon name="arrow-right" class="ml-1 h-4 w-4" /> }}</a>
     </div>
     <div class="grid grid-cols-1 gap-x-8 md:grid-cols-2">
       {%- for p in cat.projects %}{% if p.featured %}
@@ -154,7 +154,7 @@
         <span class="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary-100 text-primary-700 dark:bg-primary-900 dark:text-primary-300">{{ <category_icon key={p.category} class="h-4 w-4" /> }}</span>
         <div class="min-w-0">
           <p class="font-semibold text-gray-900 dark:text-white"><a href="{{ base }}projects/?project={{ p.repo }}" class="hover:underline">{{ p.name }}</a> <span class="text-sm font-normal text-gray-600 dark:text-gray-400">· {{ f.created_at | date(format="%Y") }} · {{ f.language | default(value="") }}</span></p>
-          <p class="text-sm text-gray-600 dark:text-gray-400">{{ p.tagline }}</p>
+          <p class="text-sm text-gray-600 dark:text-gray-400">{{ p["tagline" ~ sfx] }}</p>
         </div>
       </div>
       {%- endif %}{% endfor %}
@@ -163,12 +163,12 @@
 
   {#- Sources: where every number on this page comes from, with its date. #}
   <section class="{{ card }}" aria-labelledby="sources-title">
-    <h2 id="sources-title" class="{{ card_title }}">Sources</h2>
+    <h2 id="sources-title" class="{{ card_title }}">{{ trans(key="sources", lang=lang) | safe }}</h2>
     <ul class="mt-4 space-y-2 text-sm text-gray-600 dark:text-gray-400">
-      <li>{{ <icon name="check" class="mr-1.5 inline h-4 w-4 text-primary-700 dark:text-primary-400" /> }}Profile, contributions and languages: <a class="{{ link }}" href="https://github.com/{{ gh.profile.login }}">GitHub API</a>, {{ gh.generated_at | date(format="%-d %B %Y") }}.</li>
-      <li>{{ <icon name="check" class="mr-1.5 inline h-4 w-4 text-primary-700 dark:text-primary-400" /> }}Repositories and authorship: GitHub and <a class="{{ link }}" href="https://gitlab.com/{{ gh.profile.login }}">GitLab</a> APIs through <code class="font-mono">gh</code> and <code class="font-mono">glab</code>, {{ as_of }}; {{ ix.rule }}.</li>
-      <li>{{ <icon name="check" class="mr-1.5 inline h-4 w-4 text-primary-700 dark:text-primary-400" /> }}Majordomus release: <a class="{{ link }}" href="{{ config.extra.majordomus_build }}">majordomus.dev/build.json</a>, v{{ gh.majordomus.version }}.</li>
-      <li>{{ <icon name="check" class="mr-1.5 inline h-4 w-4 text-primary-700 dark:text-primary-400" /> }}Method and every derivation: <a class="{{ link }}" href="{{ base }}stack/#data">Stack, data</a> and the <a class="{{ link }}" href="{{ config.extra.repo_url }}">source of this site</a>.</li>
+      <li>{{ <icon name="check" class="mr-1.5 inline h-4 w-4 text-primary-700 dark:text-primary-400" /> }}{{ trans(key="profile_contributions_and_languages", lang=lang) | safe }} <a class="{{ link }}" href="https://github.com/{{ gh.profile.login }}">{{ trans(key="github_api", lang=lang) | safe }}</a>, {{ gh.generated_at | date(format="%-d %B %Y") }}.</li>
+      <li>{{ <icon name="check" class="mr-1.5 inline h-4 w-4 text-primary-700 dark:text-primary-400" /> }}{{ trans(key="repositories_and_authorship_github_and", lang=lang) | safe }} <a class="{{ link }}" href="https://gitlab.com/{{ gh.profile.login }}">GitLab</a> {{ trans(key="apis_through", lang=lang) | safe }} <code class="font-mono">gh</code> {{ trans(key="and", lang=lang) | safe }} <code class="font-mono">glab</code>, {{ as_of }}; {{ ix.rule }}.</li>
+      <li>{{ <icon name="check" class="mr-1.5 inline h-4 w-4 text-primary-700 dark:text-primary-400" /> }}{{ trans(key="majordomus_release", lang=lang) | safe }} <a class="{{ link }}" href="{{ config.extra.majordomus_build }}">majordomus.dev/build.json</a>, v{{ gh.majordomus.version }}.</li>
+      <li>{{ <icon name="check" class="mr-1.5 inline h-4 w-4 text-primary-700 dark:text-primary-400" /> }}{{ trans(key="method_and_every_derivation", lang=lang) | safe }} <a class="{{ link }}" href="{{ base }}stack/#data">{{ trans(key="stack_data", lang=lang) | safe }}</a> {{ trans(key="and_the", lang=lang) | safe }} <a class="{{ link }}" href="{{ config.extra.repo_url }}">{{ trans(key="source_of_this_site", lang=lang) | safe }}</a>.</li>
     </ul>
   </section>
 </div>

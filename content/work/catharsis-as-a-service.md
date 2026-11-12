@@ -5,10 +5,13 @@ description = "Catharsis as a Service™ — emotional state transition endpoint
 template = "work.html"
 weight = 9
 
+[taxonomies]
+tags = ["Media and art", "HTML", "Python", "JavaScript"]
+
 [extra]
 repo = "catharsis-as-a-service"
 og_title = "Catharsis as a Service: An emotional state transition endpoint."
 og_image = "og/work-catharsis-as-a-service.png"
 schema = "project"
-keywords = ["Catharsis as a Service", "Media and art", "HTML", "Python", "JavaScript", "CSS", "Tomas Korcak"]
+keywords = ["Catharsis as a Service", "Media and art", "HTML", "Python", "JavaScript", "Tomas Korcak"]
 +++

@@ -5,6 +5,9 @@ description = "Learning materials, katas and experiments across many languages: 
 template = "category.html"
 weight = 10
 
+[taxonomies]
+tags = ["Learning and experiments", "happ", "Test-Elixir", "node-proxy-upload", "skull-cpp"]
+
 [extra]
 category = "learning"
 og_title = "Learning and experiments: 16 repositories."

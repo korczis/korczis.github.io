@@ -5,10 +5,13 @@ description = "Advanced research framework analyzing psychological manipulation 
 template = "work.html"
 weight = 19
 
+[taxonomies]
+tags = ["Tools", "Elixir", "HTML+EEX", "JavaScript"]
+
 [extra]
 repo = "the-psycho"
 og_title = "the-psycho: Tools"
 og_image = "og/work-the-psycho.png"
 schema = "project"
-keywords = ["the-psycho", "Tools", "Elixir", "HTML+EEX", "JavaScript", "CSS", "Tomas Korcak"]
+keywords = ["the-psycho", "Tools", "Elixir", "HTML+EEX", "JavaScript", "Tomas Korcak"]
 +++

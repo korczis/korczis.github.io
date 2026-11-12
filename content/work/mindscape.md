@@ -5,6 +5,9 @@ description = "MindScape is an AI-powered platform for mental health diagnosis a
 template = "work.html"
 weight = 42
 
+[taxonomies]
+tags = ["Tools"]
+
 [extra]
 repo = "MindScape"
 og_title = "MindScape: Tools"

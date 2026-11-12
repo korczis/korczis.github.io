@@ -1,0 +1,1109 @@
+# Every visible text of the site, in every language. scripts/build-i18n.mjs writes it into
+# zola.toml ([translations], [languages.cs.translations]); scripts/check-i18n.mjs enforces it.
+
+[nothing_here]
+en = "Nothing here."
+cs = "Nic tu není."
+
+[this_page_does_not_exist_or]
+en = "This page does not exist, or it moved. The projects live one level down, for example"
+cs = "Tahle stránka neexistuje nebo se přesunula. Projekty bydlí o úroveň níž, například"
+
+[back_to_the_home_page]
+en = "Back to the home page"
+cs = "Zpět na úvod"
+
+[all_projects]
+en = "All projects"
+cs = "Všechny projekty"
+
+[software_engineer]
+en = "Software engineer ·"
+cs = "Softwarový inženýr ·"
+
+[on_github_since]
+en = "On GitHub since"
+cs = "Na GitHubu od"
+
+[original_public_repositories]
+en = "Original public repositories"
+cs = "Původní veřejné repozitáře"
+
+[contributions_12_months]
+en = "Contributions, 12 months"
+cs = "Příspěvky za 12 měsíců"
+
+[most_used_language]
+en = "Most used language"
+cs = "Nejpoužívanější jazyk"
+
+[author_of]
+en = "Author of"
+cs = "Autor"
+
+[print_as_cv]
+en = "Print as CV"
+cs = "Vytisknout jako CV"
+
+[what_i_build]
+en = "What I build"
+cs = "Co stavím"
+
+[for]
+en = "For"
+cs = "Už"
+
+[years_in_public_tools_that_make]
+en = "years, in public: tools that make AI agents prove their work, honest scientific instruments in the browser, knowledge bases you can check, data catalogues and maps, and the small tools in between. The counts are every original repository on GitHub and GitLab, by inferred category."
+cs = "let veřejně: nástroje, které nutí AI agenty doložit svou práci, poctivé vědecké přístroje v prohlížeči, ověřitelné znalostní báze, katalogy dat a mapy a drobné nástroje mezi tím. Počty zahrnují všechny původní repozitáře na GitHubu a GitLabu podle odvozené kategorie."
+
+[languages_over_the_years]
+en = "Languages over the years"
+cs = "Jazyky v průběhu let"
+
+[original_repositories_by_year_of_creation]
+en = "Original repositories by year of creation and primary language: the record of what I worked in, not a claim about it."
+cs = "Původní repozitáře podle roku vzniku a hlavního jazyka: záznam toho, v čem jsem pracoval, ne tvrzení o tom."
+
+[most_used]
+en = "Most used"
+cs = "Nejpoužívanější"
+
+[primary_language_of]
+en = "Primary language of"
+cs = "Hlavní jazyk"
+
+[original_repositories]
+en = "original repositories."
+cs = "původních repozitářů."
+
+[skills]
+en = "Skills"
+cs = "Dovednosti"
+
+[derived_not_claimed_every_skill_links]
+en = "Derived, not claimed: every skill links to the work that shows it. Hover or focus a skill to see its evidence."
+cs = "Odvozené, ne deklarované: každá dovednost vede na práci, která ji dokládá. Najeďte na ni nebo ji označte a uvidíte doklady."
+
+[languages]
+en = "Languages"
+cs = "Jazyky"
+
+[original_repositories_latest]
+en = "original repositories, latest:"
+cs = "původních repozitářů, nejnovější:"
+
+[technologies]
+en = "Technologies"
+cs = "Technologie"
+
+[used_in]
+en = "Used in"
+cs = "Použito v"
+
+[the_whole_stack]
+en = "The whole stack"
+cs = "Celý stack"
+
+[domains]
+en = "Domains"
+cs = "Obory"
+
+[selected_work]
+en = "Selected work"
+cs = "Vybraná práce"
+
+[sources]
+en = "Sources"
+cs = "Zdroje"
+
+[profile_contributions_and_languages]
+en = "Profile, contributions and languages:"
+cs = "Profil, příspěvky a jazyky:"
+
+[github_api]
+en = "GitHub API"
+cs = "GitHub API"
+
+[repositories_and_authorship_github_and]
+en = "Repositories and authorship: GitHub and"
+cs = "Repozitáře a autorství: GitHub a"
+
+[apis_through]
+en = "APIs through"
+cs = "API přes"
+
+[and]
+en = "and"
+cs = "a"
+
+[majordomus_release]
+en = "Majordomus release:"
+cs = "Vydání Majordomu:"
+
+[method_and_every_derivation]
+en = "Method and every derivation:"
+cs = "Metoda a každé odvození:"
+
+[stack_data]
+en = "Stack, data"
+cs = "Stack, data"
+
+[and_the]
+en = "and the"
+cs = "a"
+
+[source_of_this_site]
+en = "source of this site"
+cs = "zdrojový kód tohoto webu"
+
+[the_site_as_data]
+en = "The site as data"
+cs = "Web jako data"
+
+[skip_to_content]
+en = "Skip to content"
+cs = "Přeskočit na obsah"
+
+[other_categories]
+en = "Other categories"
+cs = "Další kategorie"
+
+[more_in]
+en = "More in"
+cs = "Další v kategorii"
+
+[repositories_in]
+en = "Repositories in"
+cs = "Repozitáře v kategorii"
+
+[more]
+en = "more"
+cs = "dalších"
+
+[original_repositories_inferred_into_this_category]
+en = "original repositories, inferred into this category from their name, description, topics and language."
+cs = "původních repozitářů zařazených do této kategorie podle názvu, popisu, témat a jazyka."
+
+[open_in_the_index]
+en = "Open in the index"
+cs = "Otevřít v indexu"
+
+[built_with]
+en = "Built with"
+cs = "Postaveno na"
+
+[breadcrumb]
+en = "Breadcrumb"
+cs = "Drobečková navigace"
+
+[active]
+en = "Active"
+cs = "Aktivní"
+
+[maintained]
+en = "Maintained"
+cs = "Udržovaný"
+
+[archive]
+en = "Archive"
+cs = "Archiv"
+
+[supervised]
+en = "Supervised:"
+cs = "Pod dohledem:"
+
+[is_on_the_default_branch]
+en = "is on the default branch"
+cs = "je ve výchozí větvi"
+
+[stars]
+en = "Stars:"
+cs = "Hvězdy:"
+
+[updated]
+en = "Updated"
+cs = "Aktualizováno"
+
+[open]
+en = "Open"
+cs = "Otevřít"
+
+[details]
+en = "Details"
+cs = "Detail"
+
+[of]
+en = "of"
+cs = "z"
+
+[source]
+en = "Source"
+cs = "Zdroj"
+
+[overview]
+en = "Overview"
+cs = "Přehled"
+
+[most_used_languages]
+en = "Most used languages"
+cs = "Nejpoužívanější jazyky"
+
+[new]
+en = "New"
+cs = "Nové"
+
+[is_out]
+en = "is out"
+cs = "je venku"
+
+[software_that_proves_its_work]
+en = "Software that proves its&nbsp;work."
+cs = "Software, který svou práci dokládá."
+
+[i_build_tools_that_make_ai]
+en = "I build tools that make AI agents prove what they did, honest scientific instruments in the browser, and knowledge bases you can check. Engineer in"
+cs = "Stavím nástroje, které nutí AI agenty doložit, co udělali, poctivé vědecké přístroje v prohlížeči a znalostní báze, které si můžete ověřit. Inženýr z"
+
+[on_github_since_2]
+en = ", on GitHub since"
+cs = ", na GitHubu od roku"
+
+[explore]
+en = "Explore"
+cs = "Prozkoumat"
+
+[projects]
+en = "projects"
+cs = "projektů"
+
+[about_and_cv]
+en = "About and CV"
+cs = "O mně a CV"
+
+[in_numbers]
+en = "In numbers"
+cs = "V číslech"
+
+[skillset_from_the_last]
+en = "Skillset, from the last"
+cs = "Dovednosti z posledních"
+
+[what_the_most_recently_active_repositories]
+en = "What the most recently active repositories are about (inner ring) and written in (outer ring),"
+cs = "O čem jsou naposledy aktivní repozitáře (vnitřní kruh) a v čem jsou napsané (vnější kruh),"
+
+[to]
+en = "to"
+cs = "až"
+
+[click_a_segment_to_open_its]
+en = ". Click a segment to open its work."
+cs = ". Kliknutím na výseč otevřete příslušnou práci."
+
+[all_skills]
+en = "All skills"
+cs = "Všechny dovednosti"
+
+[in_the_stacks_of_the_featured]
+en = "In the stacks of the featured projects; each opens a project that uses it."
+cs = "Ve stacích vybraných projektů; každá otevře projekt, který ji používá."
+
+[languages_all_original_work]
+en = "Languages, all original work"
+cs = "Jazyky, veškerá původní práce"
+
+[the_last_12_months]
+en = "The last 12 months"
+cs = "Posledních 12 měsíců"
+
+[projects_with_a_commit_this_year]
+en = "projects with a commit this year, newest first; each has its own page."
+cs = "projektů s commitem za poslední rok, od nejnovějšího; každý má vlastní stránku."
+
+[all_recent_work]
+en = "All recent work"
+cs = "Všechna nedávná práce"
+
+[featured]
+en = "featured"
+cs = "vybraný"
+
+[ai_agents_say_the_work_is]
+en = "AI agents say the work is done; Majordomus makes them prove it."
+cs = "AI agenti tvrdí, že je hotovo; Majordomus je nutí to doložit."
+
+[snapshot]
+en = "Snapshot"
+cs = "Snímek"
+
+[version]
+en = "Version"
+cs = "Verze"
+
+[published]
+en = "Published"
+cs = "Vydáno"
+
+[site_built_from]
+en = "Site built from"
+cs = "Web postaven z"
+
+[commit_time]
+en = "Commit time"
+cs = "Čas commitu"
+
+[release_notes]
+en = "Release notes"
+cs = "Poznámky k vydání"
+
+[how_the_pieces_connect]
+en = "How the pieces connect"
+cs = "Jak spolu věci souvisí"
+
+[projects_the_tools_they_use_and]
+en = "Projects, the tools they use, and the ones Majordomus supervises (dashed). Hover a node; tap a project to open it."
+cs = "Projekty, nástroje, které používají, a ty, nad kterými dohlíží Majordomus (čárkovaně). Najeďte na uzel; ťuknutím projekt otevřete."
+
+[supervision_is_measured_a_project_counts]
+en = "Supervision is measured: a project counts when its default branch carries"
+cs = "Dohled je změřený: projekt se počítá, když jeho výchozí větev obsahuje"
+
+[categories]
+en = "Categories"
+cs = "Kategorie"
+
+[all]
+en = "All"
+cs = "Vše"
+
+[live]
+en = "live"
+cs = "živých"
+
+[timeline]
+en = "Timeline"
+cs = "Časová osa"
+
+[when_each_project_began_newest_first]
+en = "When each project began, newest first; the badge says how alive it is today."
+cs = "Kdy který projekt začal, od nejnovějšího; štítek říká, jak živý je dnes."
+
+[catalogue]
+en = "Catalogue"
+cs = "Katalog"
+
+[recently_active]
+en = "Recently active"
+cs = "Nedávno aktivní"
+
+[recent_work]
+en = "Recent work"
+cs = "Nedávná práce"
+
+[contributions]
+en = "contributions,"
+cs = "příspěvků,"
+
+[languages_across_public_repositories]
+en = "languages across public repositories"
+cs = "jazyků napříč veřejnými repozitáři"
+
+[measured_from_the_github_api_on]
+en = "Measured from the GitHub API on"
+cs = "Změřeno z GitHub API dne"
+
+[how_these_numbers_are_made]
+en = "How these numbers are made"
+cs = "Jak vznikají tato čísla"
+
+[follow_the_work_as_it_ships]
+en = "Follow the work as it ships."
+cs = "Sledujte práci, jak vzniká."
+
+[every_project_here_is_public_watch]
+en = "Every project here is public. Watch the repositories, open an issue, or let Majordomus supervise your own agents."
+cs = "Každý projekt je tu veřejný. Sledujte repozitáře, založte issue, nebo nechte Majordomus dohlížet na vaše vlastní agenty."
+
+[follow_on_github]
+en = "Follow on GitHub"
+cs = "Sledovat na GitHubu"
+
+[install_majordomus]
+en = "Install Majordomus"
+cs = "Nainstalovat Majordomus"
+
+[projects_2]
+en = "Projects"
+cs = "Projekty"
+
+[search_name_words_or_technology]
+en = "Search name, words or technology"
+cs = "Hledat název, slova nebo technologii"
+
+[category]
+en = "Category"
+cs = "Kategorie"
+
+[projects_as_a_table]
+en = "Projects as a table"
+cs = "Projekty jako tabulka"
+
+[search_projects]
+en = "Search projects"
+cs = "Hledat projekty"
+
+[live_2]
+en = "Live"
+cs = "Živé"
+
+[sort]
+en = "Sort"
+cs = "Řazení"
+
+[curated]
+en = "Curated"
+cs = "Výběr"
+
+[recently_updated]
+en = "Recently updated"
+cs = "Nedávno aktualizované"
+
+[most_stars]
+en = "Most stars"
+cs = "Nejvíc hvězd"
+
+[name]
+en = "Name"
+cs = "Název"
+
+[showing]
+en = "Showing"
+cs = "Zobrazeno"
+
+[clear_filters]
+en = "Clear filters"
+cs = "Zrušit filtry"
+
+[cards]
+en = "Cards"
+cs = "Karty"
+
+[table]
+en = "Table"
+cs = "Tabulka"
+
+[project]
+en = "Project"
+cs = "Projekt"
+
+[status]
+en = "Status"
+cs = "Stav"
+
+[language]
+en = "Language"
+cs = "Jazyk"
+
+[stars_2]
+en = "Stars"
+cs = "Hvězdy"
+
+[supervision]
+en = "Supervision"
+cs = "Dohled"
+
+[links]
+en = "Links"
+cs = "Odkazy"
+
+[no_project_matches_these_filters]
+en = "No project matches these filters."
+cs = "Těmto filtrům neodpovídá žádný projekt."
+
+[clear_them]
+en = "Clear them"
+cs = "Zrušit je"
+
+[stars_languages_update_dates_live_status]
+en = "Stars, languages, update dates, live status and Majordomus supervision measured on"
+cs = "Hvězdy, jazyky, data aktualizace, živost webu a dohled Majordomu změřeny dne"
+
+[active_means_pushed_within_45_days]
+en = ". Active means pushed within 45 days of the snapshot, Maintained within a year, Archive older. Only original, public work is listed; forks and mirrors are not."
+cs = ". Aktivní znamená push do 45 dnů od snímku, Udržovaný do roka, Archiv starší. Vypsaná je jen původní veřejná práce; forky a mirrory ne."
+
+[close_details]
+en = "Close details"
+cs = "Zavřít detail"
+
+[licence]
+en = "Licence"
+cs = "Licence"
+
+[forks]
+en = "Forks"
+cs = "Forky"
+
+[created]
+en = "Created"
+cs = "Vytvořeno"
+
+[last_push]
+en = "Last push"
+cs = "Poslední push"
+
+[live_site]
+en = "Live site"
+cs = "Živý web"
+
+[open_the_site]
+en = "Open the site"
+cs = "Otevřít web"
+
+[source_on_github]
+en = "Source on GitHub"
+cs = "Zdroj na GitHubu"
+
+[measured_on]
+en = "Measured on"
+cs = "Změřeno dne"
+
+[share_this_view_with_its_address]
+en = "; share this view with its address."
+cs = "; tento pohled sdílejte jeho adresou."
+
+[zola_and_flowbite_pro_supervised_by]
+en = "· Zola and Flowbite Pro, supervised by"
+cs = "· Zola a Flowbite Pro, pod dohledem"
+
+[stack]
+en = "Stack"
+cs = "Stack"
+
+[data]
+en = "Data"
+cs = "Data"
+
+[main]
+en = "Main"
+cs = "Hlavní"
+
+[tomas_korcak_overview]
+en = "Tomas Korcak, overview"
+cs = "Tomáš Korčák, přehled"
+
+[search_projects_words_or_technology]
+en = "Search projects, words or technology"
+cs = "Hledat projekty, slova nebo technologie"
+
+[k_open_the_command_palette]
+en = "⌘K: open the command palette"
+cs = "⌘K: otevřít příkazovou paletu"
+
+[open_navigation]
+en = "Open navigation"
+cs = "Otevřít navigaci"
+
+[search]
+en = "Search"
+cs = "Hledat"
+
+[toggle_dark_mode]
+en = "Toggle dark mode"
+cs = "Přepnout tmavý režim"
+
+[github_profile]
+en = "GitHub profile"
+cs = "Profil na GitHubu"
+
+[search_pages_categories_projects_technologies]
+en = "Search pages, categories, projects, technologies"
+cs = "Hledat stránky, kategorie, projekty, technologie"
+
+[results]
+en = "Results"
+cs = "Výsledky"
+
+[search_pages_categories_and_projects]
+en = "Search pages, categories and projects"
+cs = "Hledat stránky, kategorie a projekty"
+
+[nothing_matches_try_a_technology_like]
+en = "Nothing matches. Try a technology, like p5.js or Rust."
+cs = "Nic neodpovídá. Zkuste technologii, třeba p5.js nebo Rust."
+
+[move]
+en = "move"
+cs = "pohyb"
+
+[open_2]
+en = "open"
+cs = "otevřít"
+
+[or]
+en = "or"
+cs = "nebo"
+
+[anywhere]
+en = "anywhere"
+cs = "kdekoli"
+
+[sidebar]
+en = "Sidebar"
+cs = "Postranní panel"
+
+[elsewhere]
+en = "Elsewhere"
+cs = "Jinde"
+
+[supervised_by]
+en = "Supervised by&nbsp;"
+cs = "Pod dohledem&nbsp;"
+
+[repositories]
+en = "Repositories"
+cs = "Repozitáře"
+
+[search_name_or_description]
+en = "Search name or description"
+cs = "Hledat název nebo popis"
+
+[all_repositories]
+en = "All repositories"
+cs = "Všechny repozitáře"
+
+[search_repositories]
+en = "Search repositories"
+cs = "Hledat repozitáře"
+
+[every_category]
+en = "Every category"
+cs = "Všechny kategorie"
+
+[host]
+en = "Host"
+cs = "Hosting"
+
+[github_and_gitlab]
+en = "GitHub and GitLab"
+cs = "GitHub a GitLab"
+
+[on_github]
+en = "On GitHub"
+cs = "Na GitHubu"
+
+[on_gitlab]
+en = "On GitLab"
+cs = "Na GitLabu"
+
+[on_both]
+en = "On both"
+cs = "Na obou"
+
+[every_language]
+en = "Every language"
+cs = "Všechny jazyky"
+
+[newest]
+en = "Newest"
+cs = "Nejnovější"
+
+[repositories_2]
+en = "repositories"
+cs = "repozitářů"
+
+[repository]
+en = "Repository"
+cs = "Repozitář"
+
+[on_github_2]
+en = "on GitHub"
+cs = "na GitHubu"
+
+[on_gitlab_2]
+en = "on GitLab"
+cs = "na GitLabu"
+
+[live_site_2]
+en = "live site"
+cs = "živý web"
+
+[derived_on]
+en = "Derived on"
+cs = "Odvozeno dne"
+
+[from_the_github_and_gitlab_apis]
+en = "from the GitHub and GitLab APIs ("
+cs = "z API GitHubu a GitLabu ("
+
+[rule]
+en = "). Rule:"
+cs = "). Pravidlo:"
+
+[repositories_without_history_are_left_out]
+en = "repositories without history are left out. Categories are inferred from each repository's name, description, topics and language by the rules in"
+cs = "repozitářů bez historie je vynecháno. Kategorie se odvozují z názvu, popisu, témat a jazyka každého repozitáře podle pravidel v"
+
+[sources_of_the_numbers_on_this]
+en = "Sources of the numbers on this site"
+cs = "Zdroje čísel na tomto webu"
+
+[here]
+en = "Here:"
+cs = "Zde:"
+
+[figure]
+en = "Figure"
+cs = "Údaj"
+
+[value]
+en = "Value"
+cs = "Hodnota"
+
+[the_catalogue_itself_is_hand_written]
+en = "The catalogue itself is hand-written in"
+cs = "Samotný katalog je ručně psaný v"
+
+[language_models_can_read_the_same]
+en = "; language models can read the same catalogue as"
+cs = "; jazykové modely si stejný katalog mohou přečíst jako"
+
+[within]
+en = "Within"
+cs = "Do"
+
+[months]
+en = "months"
+cs = "měsíců"
+
+[through]
+en = "through"
+cs = "přes"
+
+[every_repository]
+en = "Every repository"
+cs = "Všechny repozitáře"
+
+[more_work]
+en = "More work"
+cs = "Další práce"
+
+[active_within]
+en = "Active within"
+cs = "Aktivní do"
+
+[featured_2]
+en = "Featured"
+cs = "Vybraný"
+
+[what_it_is]
+en = "What it is"
+cs = "Co to je"
+
+[from_the_readme]
+en = "From the README,"
+cs = "Z README,"
+
+[latest_commit]
+en = "Latest commit"
+cs = "Poslední commit"
+
+[facts]
+en = "Facts"
+cs = "Fakta"
+
+[last_commit]
+en = "Last commit"
+cs = "Poslední commit"
+
+[primary_language]
+en = "Primary language"
+cs = "Hlavní jazyk"
+
+[hosts]
+en = "Hosts"
+cs = "Hosting"
+
+[topics]
+en = "Topics"
+cs = "Témata"
+
+[older]
+en = "Older"
+cs = "Starší"
+
+[newer]
+en = "Newer"
+cs = "Novější"
+
+# Texts with values: {n}, {m} and {list} are replaced in the template.
+[aria_sunburst]
+en = "Sunburst of the last {n} active repositories by category and language."
+cs = "Sunburst posledních {n} aktivních repozitářů podle kategorie a jazyka."
+
+[aria_graph]
+en = "Graph of {n} projects linked to the technologies they use; Majordomus supervises {m} of them."
+cs = "Graf {n} projektů propojených s technologiemi, které používají; Majordomus dohlíží na {m} z nich."
+
+[aria_calendar]
+en = "Calendar heatmap of daily contributions; {n} in total."
+cs = "Kalendář denních příspěvků; celkem {n}."
+
+[aria_languages_bar]
+en = "Bar chart of repositories by primary language: {list}."
+cs = "Sloupcový graf repozitářů podle hlavního jazyka: {list}."
+
+[aria_expertise]
+en = "Stacked bar chart of original repositories per year by language; most used: {list}."
+cs = "Skládaný sloupcový graf původních repozitářů po letech podle jazyka; nejpoužívanější: {list}."
+
+[aria_language_breakdown]
+en = "Language breakdown: {list}"
+cs = "Rozložení jazyků: {list}"
+
+# KPI cards, navigation, palette and structured data ({n} is replaced in the template).
+[kpi_original_repositories]
+en = "original repositories"
+cs = "původních repozitářů"
+
+[kpi_original_note]
+en = "GitHub and GitLab; forks and mirrors not counted"
+cs = "GitHub a GitLab; forky a mirrory se nepočítají"
+
+[kpi_contributions]
+en = "contributions, 12 months"
+cs = "příspěvků za 12 měsíců"
+
+[kpi_calendar_note]
+en = "GitHub calendar, as of {date}"
+cs = "Kalendář GitHubu ke dni {date}"
+
+[kpi_years]
+en = "years on GitHub"
+cs = "let na GitHubu"
+
+[kpi_since]
+en = "Since {date}"
+cs = "Od {date}"
+
+[kpi_projects_live]
+en = "projects live"
+cs = "projektů běží"
+
+[kpi_active_note]
+en = "{n} active in the last 45 days"
+cs = "{n} aktivních za posledních 45 dní"
+
+[kpi_projects_four_years]
+en = "projects in four years"
+cs = "projektů za čtyři roky"
+
+[kpi_commit_default_branch]
+en = "A commit on the default branch"
+cs = "Commit ve výchozí větvi"
+
+[kpi_within_months]
+en = "last commit within {n} months"
+cs = "poslední commit do {n} měsíců"
+
+[kpi_period]
+en = "Period of {n}"
+cs = "Období {n}"
+
+[kpi_inferred_note]
+en = "Inferred from name, description, topics, language"
+cs = "Odvozeno z názvu, popisu, témat a jazyka"
+
+[kpi_featured_projects]
+en = "featured projects"
+cs = "vybraných projektů"
+
+[kpi_curated_note]
+en = "Curated, with details below"
+cs = "Vybrané, s detailem níže"
+
+[kpi_with_live_site]
+en = "with a live site"
+cs = "se živým webem"
+
+[kpi_pages_note]
+en = "GitHub Pages or a homepage"
+cs = "GitHub Pages nebo domovská stránka"
+
+[kpi_most_used_language]
+en = "most used language"
+cs = "nejpoužívanější jazyk"
+
+[kpi_on_both_hosts]
+en = "on GitHub and GitLab"
+cs = "na GitHubu i GitLabu"
+
+[kpi_primary_languages]
+en = "primary languages"
+cs = "hlavních jazyků"
+
+[kpi_as_github_detects]
+en = "As GitHub detects them"
+cs = "Jak je rozpozná GitHub"
+
+[kpi_forks_mirrors]
+en = "forks and mirrors, not listed"
+cs = "forků a mirrorů, nevypsáno"
+
+[kpi_counted_not_claimed]
+en = "Other people's code is counted, not claimed"
+cs = "Cizí kód se počítá, ne přivlastňuje"
+
+[kpi_of_public]
+en = "of {n} public, merged by name"
+cs = "z {n} veřejných, sloučeno podle názvu"
+
+[kpi_host_counts]
+en = "{n} GitHub · {m} GitLab"
+cs = "{n} GitHub · {m} GitLab"
+
+[kpi_projects]
+en = "projects"
+cs = "projektů"
+
+[kpi_active_45]
+en = "active in 45 days"
+cs = "aktivních za 45 dní"
+
+[kpi_supervised]
+en = "supervised by Majordomus"
+cs = "pod dohledem Majordomu"
+
+[about]
+en = "About"
+cs = "O mně"
+
+[nav_language]
+en = "Česky"
+cs = "English"
+
+[nav_language_label]
+en = "Číst česky"
+cs = "Read in English"
+
+[page_not_found]
+en = "Page not found"
+cs = "Stránka nenalezena"
+
+[home]
+en = "Home"
+cs = "Úvod"
+
+[kind_page]
+en = "Page"
+cs = "Stránka"
+
+[kind_category]
+en = "Category"
+cs = "Kategorie"
+
+[kind_project]
+en = "Project"
+cs = "Projekt"
+
+[kind_work]
+en = "Work"
+cs = "Práce"
+
+[kind_repository]
+en = "Repository"
+cs = "Repozitář"
+
+[hint_home]
+en = "Home dashboard"
+cs = "Úvodní přehled"
+
+[hint_about]
+en = "Profile, CV, languages over the years"
+cs = "Profil, CV, jazyky v průběhu let"
+
+[hint_repositories]
+en = "Every original repository on GitHub and GitLab"
+cs = "Každý původní repozitář na GitHubu a GitLabu"
+
+[hint_work]
+en = "Every project with a commit in the last 12, 24 and 48 months"
+cs = "Každý projekt s commitem za posledních 12, 24 a 48 měsíců"
+
+[hint_stack]
+en = "Tools, practice, pipeline, data"
+cs = "Nástroje, praxe, pipeline, data"
+
+[hint_projects]
+en = "The curated catalogue"
+cs = "Vybraný katalog"
+
+[hint_llms]
+en = "The catalogue for language models"
+cs = "Katalog pro jazykové modely"
+
+[tags]
+en = "Tags"
+cs = "Štítky"
+
+[tagged]
+en = "Pages tagged {tag}"
+cs = "Stránky se štítkem {tag}"
+
+[tags_lead]
+en = "Every tag on the site, derived from the categories and languages of the work."
+cs = "Každý štítek na webu, odvozený z kategorií a jazyků práce."
+
+# Texts the scripts render (static/js), embedded per page as #i18n-data and read by KorczisHub.t.
+[js_n_repositories]
+en = "{n} repositories"
+cs = "{n} repozitářů"
+
+[js_n_contributions]
+en = "{n} contributions"
+cs = "{n} příspěvků"
+
+[js_click_to_open]
+en = "Click to open"
+cs = "Kliknutím otevřete"
+
+[js_other]
+en = "Other"
+cs = "Ostatní"
+
+[js_live]
+en = "Live"
+cs = "Živě"
+
+[js_snapshot]
+en = "Snapshot"
+cs = "Snímek"
+
+[js_answers]
+en = "Answers ({n})"
+cs = "Odpovídá ({n})"
+
+[js_down]
+en = "Down ({n})"
+cs = "Nedostupný ({n})"
+
+[js_none]
+en = "None"
+cs = "Žádný"
+
+[js_unspecified]
+en = "Unspecified"
+cs = "Neurčeno"
+
+[tag_description]
+en = "Every page about {tag} on the site of Tomas Korcak: {n} projects, repositories and pieces of work, each with its links."
+cs = "Každá stránka o tématu {tag} na webu Tomáše Korčáka: {n} projektů, repozitářů a prací, každá se svými odkazy."
+
+[tags_description]
+en = "Every tag on the site of Tomas Korcak, derived from the categories and languages of his projects and repositories."
+cs = "Každý štítek na webu Tomáše Korčáka, odvozený z kategorií a jazyků jeho projektů a repozitářů."
+
+[brand]
+en = "Tomas Korcak"
+cs = "Tomáš Korčák"

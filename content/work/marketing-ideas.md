@@ -5,6 +5,9 @@ description = "marketing-ideas. Active in the last 48 months; tools."
 template = "work.html"
 weight = 40
 
+[taxonomies]
+tags = ["Tools"]
+
 [extra]
 repo = "marketing-ideas"
 og_title = "marketing-ideas: Tools"

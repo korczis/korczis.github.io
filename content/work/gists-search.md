@@ -5,10 +5,13 @@ description = "Catalogue, enrichment and search over a mirror of my gists."
 template = "work.html"
 weight = 12
 
+[taxonomies]
+tags = ["Tools", "Python", "JavaScript", "HTML"]
+
 [extra]
 repo = "gists-search"
 og_title = "Gists search: Catalogue, enrichment and search over a mirror of my gists."
 og_image = "og/work-gists-search.png"
 schema = "project"
-keywords = ["Gists search", "Tools", "Python", "JavaScript", "HTML", "Just", "Tomas Korcak"]
+keywords = ["Gists search", "Tools", "Python", "JavaScript", "HTML", "Tomas Korcak"]
 +++

@@ -5,10 +5,13 @@ description = "Mission: Improve accuracy and consistency of per-commit assessmen
 template = "work.html"
 weight = 25
 
+[taxonomies]
+tags = ["Tools", "Just", "Shell", "Rust"]
+
 [extra]
 repo = "comtesse"
 og_title = "comtesse: Tools"
 og_image = "og/work-comtesse.png"
 schema = "project"
-keywords = ["comtesse", "Tools", "Just", "Shell", "Rust", "Mermaid", "Tomas Korcak"]
+keywords = ["comtesse", "Tools", "Just", "Shell", "Rust", "Tomas Korcak"]
 +++

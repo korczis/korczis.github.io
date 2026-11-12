@@ -5,10 +5,13 @@ description = "Algorithms and physics drawn as glyphs: seeded, interactive p5.js
 template = "work.html"
 weight = 4
 
+[taxonomies]
+tags = ["Science and visualisation", "TypeScript", "Rust", "HTML"]
+
 [extra]
 repo = "algoglyph"
 og_title = "algoglyph: Algorithms and physics drawn as glyphs."
 og_image = "og/work-algoglyph.png"
 schema = "project"
-keywords = ["algoglyph", "Science and visualisation", "TypeScript", "Rust", "HTML", "JavaScript", "Tomas Korcak"]
+keywords = ["algoglyph", "Science and visualisation", "TypeScript", "Rust", "HTML", "Tomas Korcak"]
 +++

@@ -5,10 +5,13 @@ description = "Sonic Playground - Phoenix/Elixir music blog built on the Kita th
 template = "work.html"
 weight = 1
 
+[taxonomies]
+tags = ["Media and art", "JavaScript", "HTML", "Python"]
+
 [extra]
 repo = "sonic-playground"
 og_title = "Sonic Playground: Music that moves you, not algorithmic noise."
 og_image = "og/work-sonic-playground.png"
 schema = "project"
-keywords = ["Sonic Playground", "Media and art", "JavaScript", "HTML", "Python", "Shell", "Tomas Korcak"]
+keywords = ["Sonic Playground", "Media and art", "JavaScript", "HTML", "Python", "Tomas Korcak"]
 +++

@@ -5,6 +5,9 @@ description = "Bubbler is a simple JavaScript application that generates a speec
 template = "work.html"
 weight = 35
 
+[taxonomies]
+tags = ["Tools", "JavaScript", "HTML", "CSS"]
+
 [extra]
 repo = "bubbler"
 og_title = "bubbler: Bubbler is a simple JavaScript application that generates a speech bubble with dy"

@@ -20,7 +20,7 @@ KorczisHub.viz('activity', {
           backgroundColor: c.surface,
           borderColor: c.grid,
           textStyle: { color: c.strong, fontSize: 12 },
-          formatter: ({ value: [date, count] }) => `${date}<br><b>${count}</b> contribution${count === 1 ? '' : 's'}`,
+          formatter: ({ value: [date, count] }) => `${new Date(date).toLocaleDateString(KorczisHub.locale, { day: 'numeric', month: 'long', year: 'numeric' })}<br><b>${KorczisHub.t('js_n_contributions', { n: count })}</b>`,
         },
         visualMap: {
           type: 'piecewise',

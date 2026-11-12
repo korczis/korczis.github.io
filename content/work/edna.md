@@ -5,6 +5,9 @@ description = "Edna je digitální kartářka, astroložka a analytička pohán�
 template = "work.html"
 weight = 23
 
+[taxonomies]
+tags = ["AI engineering"]
+
 [extra]
 repo = "edna"
 og_title = "edna: Edna je digitální kartářka, astroložka a analytička poháněná AI. Projekt spojuje mys"

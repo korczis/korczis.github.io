@@ -5,10 +5,13 @@ description = "If available in Hex, the package can be installed by adding cache
 template = "work.html"
 weight = 43
 
+[taxonomies]
+tags = ["Tools", "Elixir", "Shell", "Makefile"]
+
 [extra]
 repo = "el-magico-cache"
 og_title = "el-magico-cache: Elixir Cache"
 og_image = "og/work-el-magico-cache.png"
 schema = "project"
-keywords = ["el-magico-cache", "Tools", "Elixir", "Shell", "Makefile", "Nix", "Tomas Korcak"]
+keywords = ["el-magico-cache", "Tools", "Elixir", "Shell", "Makefile", "Tomas Korcak"]
 +++

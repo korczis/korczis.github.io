@@ -18,27 +18,36 @@ const catalogue = parse(readFileSync(join(ROOT, 'data/projects.toml'), 'utf8'));
 const index = JSON.parse(readFileSync(join(ROOT, 'data/index.json'), 'utf8'));
 const q = (s) => JSON.stringify(s);
 
+// Czech plural of "repository": 1 repozitář, 2-4 repozitáře, otherwise repozitářů.
+const csRepos = (n) => (n === 1 ? 'repozitář' : n >= 2 && n <= 4 ? 'repozitáře' : 'repozitářů');
 const wanted = new Map();
 for (const [position, [key, c]] of Object.entries(catalogue.categories).entries()) {
   const projects = catalogue.projects.filter((p) => p.category === key);
   const repos = index.by_category[key] ?? 0;
   const names = [...projects.map((p) => p.name), ...index.repos.filter((r) => r.category === key && !r.curated).slice(0, 6).map((r) => r.name)];
-  const keywords = [c.name, ...names, 'Tomas Korcak'];
-  wanted.set(`${key}.md`, `+++
+  for (const lang of ['en', 'cs']) {
+    const cs = lang === 'cs';
+    const name = cs ? c.name_cs : c.name;
+    const title = cs ? `${name}: ${repos} ${csRepos(repos)}.` : `${name}: ${repos} repositor${repos === 1 ? 'y' : 'ies'}.`;
+    wanted.set(cs ? `${key}.cs.md` : `${key}.md`, `+++
 ${MARK}
-title = ${q(c.name)}
-description = ${q(c.description)}
+title = ${q(name)}
+description = ${q(cs ? c.description_cs : c.description)}
 template = "category.html"
 weight = ${position + 1}
 
+[taxonomies]
+tags = [${[name, ...names.slice(0, 4)].map(q).join(', ')}]
+
 [extra]
 category = ${q(key)}
-og_title = ${q(`${c.name}: ${repos} repositor${repos === 1 ? 'y' : 'ies'}.`)}
-og_image = ${q(`og/category-${key}.png`)}
+og_title = ${q(title)}
+og_image = ${q(`og/${cs ? 'cs-' : ''}category-${key}.png`)}
 schema = "collection"
-keywords = [${keywords.map(q).join(', ')}]
+keywords = [${[name, ...names, cs ? 'Tomáš Korčák' : 'Tomas Korcak'].map(q).join(', ')}]
 +++
 `);
+  }
 }
 
 const findings = [];
@@ -51,7 +60,7 @@ for (const [name, text] of wanted) {
   }
 }
 for (const name of readdirSync(DIR)) {
-  if (name === '_index.md' || wanted.has(name)) continue;
+  if (name.startsWith('_index') || wanted.has(name)) continue;
   if (!readFileSync(join(DIR, name), 'utf8').includes(MARK)) continue;
   if (CHECK) findings.push(`content/projects/${name} has no category any more`);
   else unlinkSync(join(DIR, name));

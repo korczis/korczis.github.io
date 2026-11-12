@@ -5,6 +5,9 @@ description = "Local-first, provider-agnostic archive of AI conversations (ChatG
 template = "work.html"
 weight = 14
 
+[taxonomies]
+tags = ["AI engineering", "Elixir"]
+
 [extra]
 repo = "llm"
 og_title = "llm: Local-first, provider-agnostic archive of AI conversations (ChatGPT, Claude, Gemini, "

@@ -22,7 +22,7 @@
     "data": "node scripts/fetch-github.mjs",
     "llms": "node scripts/build-llms.mjs",
     "build": "npm run --silent assets && zola build",
-    "check": "node scripts/check-front-matter.mjs && node scripts/check-data.mjs && node scripts/build-categories.mjs --check && node scripts/build-work.mjs --check && node scripts/build-llms.mjs --check && node scripts/build-og.mjs --check && node scripts/build-site-json.mjs --check && node scripts/check-viz-layer.mjs && npm run --silent build && node scripts/check-seo.mjs",
+    "check": "node scripts/build-i18n.mjs --check && node scripts/check-i18n.mjs && node scripts/check-front-matter.mjs && node scripts/check-data.mjs && node scripts/build-categories.mjs --check && node scripts/build-work.mjs --check && node scripts/build-llms.mjs --check && node scripts/build-og.mjs --check && node scripts/build-site-json.mjs --check && node scripts/check-viz-layer.mjs && npm run --silent build && node scripts/check-seo.mjs",
     "dev": "npm run --silent assets && zola serve",
     "test:audit": "node scripts/audit-ui.mjs",
     "verify": "scripts/verify-all.sh",
@@ -32,8 +32,9 @@
     "index": "node scripts/fetch-index.mjs",
     "site": "node scripts/build-site-json.mjs",
     "refresh": "npm run --silent data && npm run --silent index && npm run --silent recent && npm run --silent derive",
-    "derive": "node scripts/fetch-index.mjs --derive && node scripts/build-categories.mjs && node scripts/build-work.mjs && node scripts/build-llms.mjs && node scripts/build-og.mjs && node scripts/build-site-json.mjs",
-    "recent": "node scripts/fetch-recent.mjs"
+    "derive": "node scripts/build-i18n.mjs && node scripts/fetch-index.mjs --derive && node scripts/build-categories.mjs && node scripts/build-work.mjs && node scripts/build-llms.mjs && node scripts/build-og.mjs && node scripts/build-site-json.mjs",
+    "recent": "node scripts/fetch-recent.mjs",
+    "i18n": "node scripts/build-i18n.mjs"
   },
   "devDependencies": {
     "@tailwindcss/cli": "4.3.5",

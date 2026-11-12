@@ -1,16 +1,17 @@
 {% extends "base.html" %}
 
 {% block content %}
+{%- set lp = "" %}{% if lang is defined and lang != config.default_language %}{% set lp = "/" ~ lang %}{% endif -%}
 {#- Flowbite Pro 404-pages/default. #}
 <section class="bg-white dark:bg-gray-900">
   <div class="mx-auto max-w-screen-xl px-4 py-16 lg:px-6 lg:py-28">
     <div class="mx-auto max-w-screen-sm text-center">
       <h1 class="mb-4 font-mono text-7xl font-extrabold tracking-tight text-primary-700 dark:text-primary-400 lg:text-9xl">404</h1>
-      <p class="mb-4 text-3xl font-bold tracking-tight text-gray-900 dark:text-white md:text-4xl">Nothing here.</p>
-      <p class="mb-8 text-lg text-gray-600 dark:text-gray-400">This page does not exist, or it moved. The projects live one level down, for example <span class="font-mono">korczis.github.io/oscilla/</span>.</p>
+      <p class="mb-4 text-3xl font-bold tracking-tight text-gray-900 dark:text-white md:text-4xl">{{ trans(key="nothing_here", lang=lang) | safe }}</p>
+      <p class="mb-8 text-lg text-gray-600 dark:text-gray-400">{{ trans(key="this_page_does_not_exist_or", lang=lang) | safe }} <span class="font-mono">korczis.github.io/oscilla/</span>.</p>
       <div class="flex flex-col justify-center gap-4 sm:flex-row">
-        <a href="{{ config.base_url }}/" class="inline-flex items-center justify-center rounded-lg bg-primary-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Back to the home page</a>
-        <a href="{{ config.base_url }}/projects/" class="inline-flex items-center justify-center rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700">All projects{{ <icon name="arrow-right" class="ml-2 h-4 w-4" /> }}</a>
+        <a href="{{ config.base_url }}{{ lp }}/" class="inline-flex items-center justify-center rounded-lg bg-primary-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">{{ trans(key="back_to_the_home_page", lang=lang) | safe }}</a>
+        <a href="{{ config.base_url }}{{ lp }}/projects/" class="inline-flex items-center justify-center rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700">{{ trans(key="all_projects", lang=lang) | safe }}{{ <icon name="arrow-right" class="ml-2 h-4 w-4" /> }}</a>
       </div>
     </div>
   </div>

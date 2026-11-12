@@ -5,6 +5,9 @@ description = "Work made from code: a promo reel rendered end to end, a music bl
 template = "category.html"
 weight = 5
 
+[taxonomies]
+tags = ["Media and art", "Majordomus reel", "Catharsis as a Service", "Sonic Playground", "openttd-prismatic-bridge"]
+
 [extra]
 category = "media"
 og_title = "Media and art: 8 repositories."

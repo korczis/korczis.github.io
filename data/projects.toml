@@ -33,6 +33,8 @@ hidden = ["atp", "microcrawler-crawler-youjizz-com", "the-shit", "chujovinky", "
 [categories.ai]
 name = "AI engineering"
 description = "Supervision for AI coding agents: one policy for every tool, scoped tasks, and work that lands only when it is proven."
+name_cs = "Inženýrství AI"
+description_cs = "Dohled nad AI agenty pro programování: jedna politika pro každý nástroj, vymezené úkoly a práce, která projde jen doložená."
 icon = "shield"
 keywords = ["agent", "llm", "ai", "majordomus", "gpt", "claude", "cognitive", "mcp", "prompt", "machine learning", "neural"]
 languages = []
@@ -40,6 +42,8 @@ languages = []
 [categories.science]
 name = "Science and visualisation"
 description = "Honest instruments and drawn algorithms in the browser: acoustics, physics, sorting, mazes, each readout measured."
+name_cs = "Věda a vizualizace"
+description_cs = "Poctivé přístroje a kreslené algoritmy v prohlížeči: akustika, fyzika, řazení, bludiště, každý údaj změřený."
 icon = "beaker"
 keywords = ["physics", "visuali", "simulat", "maze", "fractal", "audio", "acoustic", "math", "algorithm", "graph", "p5", "webgl", "png", "distance", "vector"]
 languages = []
@@ -47,6 +51,8 @@ languages = []
 [categories.knowledge]
 name = "Knowledge"
 description = "Knowledge bases you can check: cross-linked taxonomies with their sources, built as books, sites and graphs."
+name_cs = "Znalosti"
+description_cs = "Znalostní báze, které si ověříte: propojené taxonomie se zdroji, stavěné jako knihy, weby a grafy."
 icon = "book"
 keywords = ["kompendium", "taxonom", "wiki", "book", "reading", "learning materials", "documentation", "psychonaut", "knowledge"]
 languages = []
@@ -54,6 +60,8 @@ languages = []
 [categories.data]
 name = "Data and GIS"
 description = "Catalogues and maps of open data: geodata sources, incident reports geocoded and served from one registry."
+name_cs = "Data a GIS"
+description_cs = "Katalogy a mapy otevřených dat: zdroje geodat, crawlery, hlášení incidentů geokódovaná a servírovaná z jednoho registru."
 icon = "map"
 keywords = ["gis", "geo", "map", "csv", "json", "sql", "postgres", "database", "search", "index", "solr", "meili", "stats", "data", "topojson", "rocksdb", "kuzu", "graph database", "crawl", "scrap", "extract", "etl", "jetel", "gooddata", "esri", "statistic", "nosql", "couch"]
 languages = ["PLpgSQL", "SQL"]
@@ -61,6 +69,8 @@ languages = ["PLpgSQL", "SQL"]
 [categories.media]
 name = "Media and art"
 description = "Work made from code: a promo reel rendered end to end, a music blog, and a digital artifact or two."
+name_cs = "Média a umění"
+description_cs = "Díla z kódu: promo video renderované od začátku do konce, hudební blog a pár digitálních artefaktů."
 icon = "film"
 keywords = ["music", "video", "reel", "game", "blog", "sound", "tts", "dj", "openttd", "artifact", "catharsis", "art "]
 languages = []
@@ -68,6 +78,8 @@ languages = []
 [categories.security]
 name = "Security and OSINT"
 description = "Open-source intelligence, radio and network security research: cases, proofs of concept and the tooling around them."
+name_cs = "Bezpečnost a OSINT"
+description_cs = "Zpravodajství z otevřených zdrojů, výzkum rádiové a síťové bezpečnosti: případy, proof of concept a nástroje kolem nich."
 icon = "lock"
 keywords = ["security", "osint", "botnet", "sniff", "exploit", "pentest", "access point", "captcha", "intrusion", "forensic", "gsm", "tetra", "sdr", "radio", "keys", "crypto", "zcash", "privacy"]
 languages = []
@@ -75,6 +87,8 @@ languages = []
 [categories.systems]
 name = "Systems and infrastructure"
 description = "Servers, clusters and the plumbing beneath software: immutable hosts, packet processing, embedded boards and deployment."
+name_cs = "Systémy a infrastruktura"
+description_cs = "Servery, clustery a potrubí pod softwarem: neměnné hostitele, zpracování paketů, embedded desky a nasazování."
 icon = "server"
 keywords = ["server", "docker", "nixos", "ansible", "coreos", "atomic", "archlinux", "kubernetes", "cluster", "infrastructure", "deploy", "packet", "tcp", "network", "switch", "embedded", "teensy", "usb", "xvfb", "space"]
 languages = ["Nix", "Dockerfile", "Assembly", "Makefile"]
@@ -82,6 +96,8 @@ languages = ["Nix", "Dockerfile", "Assembly", "Makefile"]
 [categories.web]
 name = "Web"
 description = "Websites and web applications: single-page apps, Phoenix and Elm frontends, landing pages and the sites of friends."
+name_cs = "Web"
+description_cs = "Weby a webové aplikace: single-page aplikace, frontendy v Phoenixu a Elmu, landing pages a weby přátel."
 icon = "globe"
 keywords = ["web", "spa", "single page", "elm", "phoenix", "frontend", "bootstrap", "webpack", "react", "angular", "site", "landing", "homepage", "blog engine"]
 languages = ["HTML", "CSS", "Elm", "Vue", "SCSS"]
@@ -89,6 +105,8 @@ languages = ["HTML", "CSS", "Elm", "Vue", "SCSS"]
 [categories.libraries]
 name = "Libraries"
 description = "Reusable building blocks for other programs: clients, bindings, validators, parsers and framework extensions, mostly Elixir and Rust."
+name_cs = "Knihovny"
+description_cs = "Znovupoužitelné stavební bloky pro jiné programy: klienti, bindingy, validátory, parsery a rozšíření frameworků, hlavně Elixir a Rust."
 icon = "puzzle"
 keywords = ["library", "lib", "client", "sdk", "binding", "wrapper", "plugin", "extension", "adapter", "validator", "parser", "formatter", "elixir client", "rust", "crate", "gem", "npm"]
 languages = []
@@ -96,6 +114,8 @@ languages = []
 [categories.learning]
 name = "Learning and experiments"
 description = "Learning materials, katas and experiments across many languages: the sketches that came before the projects."
+name_cs = "Učení a experimenty"
+description_cs = "Výukové materiály, katy a experimenty napříč mnoha jazyky: náčrty, které přišly před projekty."
 icon = "academic"
 keywords = ["skull", "learning", "experiment", "tutorial", "example", "playground", "try", "test", "sandbox", "demo", "poc", "kata", "scratch"]
 languages = ["Haskell", "Java", "Erlang", "C#"]
@@ -103,6 +123,8 @@ languages = ["Haskell", "Java", "Erlang", "C#"]
 [categories.tools]
 name = "Tools"
 description = "Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist search."
+name_cs = "Nástroje"
+description_cs = "Malé, ostré nástroje pro příkazovou řádku a indexy: převody dat, CSV do SQL, hledání v gistech."
 icon = "wrench"
 keywords = ["cli", "tool", "converter", "utility", "logger", "cache", "queue", "processor", "dispatcher", "template", "headless chrome", "automation", "script"]
 languages = ["Shell", "Ruby", "JavaScript", "TypeScript", "Elixir", "Rust", "Go", "Python", "C", "C++", "Java", "Haskell", "Erlang", "Elm", "HTML", "CSS", "Nix", "Dockerfile"]
@@ -116,6 +138,8 @@ many sessions and machines, and an integration queue that lands only verified wo
 never invokes a model."""
 category = "ai"
 url = "https://majordomus.dev"
+tagline_cs = "AI agenti tvrdí, že je hotovo; Majordomus je nutí to doložit."
+summary_cs = "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model."
 stack = ["Rust", "MCP", "Zola"]
 featured = true
 
@@ -127,6 +151,8 @@ summary = """Generate, measure and reproduce sound experiments, and know how far
 be trusted. Every readout carries its uncertainty."""
 category = "science"
 url = "https://korczis.github.io/oscilla/"
+tagline_cs = "Akustická laboratoř v prohlížeči bez instalace."
+summary_cs = "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu."
 stack = ["JavaScript", "Web Audio"]
 featured = true
 
@@ -138,6 +164,8 @@ summary = """Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos,
 gravity in 2D and 3D, each with measured readouts and a tested core."""
 category = "science"
 url = "https://korczis.github.io/algoglyph/"
+tagline_cs = "Algoritmy a fyzika kreslené jako glyfy."
+summary_cs = "Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem."
 stack = ["TypeScript", "p5.js", "Apache ECharts", "Alpine.js", "Flowbite Pro"]
 featured = true
 
@@ -149,6 +177,8 @@ summary = """A book, a website and a wiki: mechanisms, detection signatures, def
 recovery, cross-linked into a graph you can explore."""
 category = "knowledge"
 url = "https://korczis.github.io/kompendium-epistemicke-anihilace/"
+tagline_cs = "Defenzivní taxonomie epistemické a kognitivní manipulace."
+summary_cs = "Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat."
 stack = ["Zola", "Cytoscape.js", "Apache ECharts", "Alpine.js", "Flowbite Pro"]
 featured = true
 
@@ -160,6 +190,8 @@ summary = """Datasets, cadastre, transport, remote sensing and spatial analytics
 single-file, searchable page."""
 category = "data"
 url = "https://korczis.github.io/data-atlas/"
+tagline_cs = "Prohledávatelný katalog zdrojů GIS a geodat."
+summary_cs = "Datové sady, katastr, doprava, dálkový průzkum a prostorová analytika na jedné prohledávatelné stránce."
 stack = ["Python"]
 featured = true
 
@@ -170,6 +202,8 @@ tagline = "A promo reel rendered entirely from code."
 summary = "Voice, frames, music and sound, all generated and versioned like software."
 category = "media"
 url = "https://korczis.github.io/majordomus-reel/"
+tagline_cs = "Promo video renderované celé z kódu."
+summary_cs = "Hlas, snímky, hudba i zvuk, vše generované a verzované jako software."
 stack = ["HTML"]
 featured = true
 
@@ -181,6 +215,8 @@ summary = """Reports geocoded through a local Nominatim, stored as PostGIS geogr
 from one capability registry: LiveView, REST, OpenAPI, MCP and CLI."""
 category = "data"
 url = "https://korczis.github.io/crisis-map/"
+tagline_cs = "Hlášení incidentů normalizovaná, geokódovaná a zmapovaná."
+summary_cs = "Hlášení geokódovaná přes lokální Nominatim, uložená jako PostGIS geografie a servírovaná z jednoho registru schopností: LiveView, REST, OpenAPI, MCP a CLI."
 stack = ["Elixir", "PostGIS", "MCP"]
 featured = false
 
@@ -191,6 +227,8 @@ tagline = "An emotional state transition endpoint."
 summary = "A Sig Nihl / Prismatic digital artifact."
 category = "media"
 url = "https://korczis.github.io/catharsis-as-a-service/"
+tagline_cs = "Endpoint pro přechod emočního stavu."
+summary_cs = "Digitální artefakt Sig Nihl / Prismatic."
 stack = ["HTML"]
 featured = false
 
@@ -201,6 +239,8 @@ tagline = "Music that moves you, not algorithmic noise."
 summary = "A hand-picked music blog built with Phoenix and Elixir on the Kita theme."
 category = "media"
 url = "https://korczis.github.io/sonic-playground/"
+tagline_cs = "Hudba, která hýbe, ne algoritmický šum."
+summary_cs = "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita."
 stack = ["Elixir"]
 featured = false
 
@@ -211,6 +251,8 @@ tagline = "Catalogue, enrichment and search over a mirror of my gists."
 summary = "A searchable index over a mirror of my GitHub gists."
 category = "tools"
 url = "https://korczis.github.io/gists-search/"
+tagline_cs = "Katalog, obohacení a hledání nad zrcadlem mých gistů."
+summary_cs = "Prohledávatelný index nad zrcadlem mých GitHub gistů."
 stack = ["Python"]
 featured = false
 
@@ -220,6 +262,8 @@ name = "json2csv"
 tagline = "Easy to use tool for converting JSON to CSV."
 summary = "A small Ruby command-line converter."
 category = "tools"
+tagline_cs = "Snadno použitelný převod JSON na CSV."
+summary_cs = "Malý převodník pro příkazovou řádku v Ruby."
 stack = ["Ruby"]
 featured = false
 
@@ -230,6 +274,8 @@ tagline = "Mazes for Programmers, in Rust."
 summary = "Maze generation algorithms from the book, in Rust."
 category = "science"
 url = "https://korczis.github.io/maze-rs/"
+tagline_cs = "Bludiště pro programátory, v Rustu."
+summary_cs = "Algoritmy generování bludišť z knihy, v Rustu."
 stack = ["Rust"]
 featured = false
 
@@ -240,6 +286,8 @@ tagline = "CSV into SQL statements for PostgreSQL."
 summary = "Turns CSV into insert or update statements for PostgreSQL."
 category = "tools"
 url = "https://korczis.github.io/csv2psql/"
+tagline_cs = "CSV do SQL příkazů pro PostgreSQL."
+summary_cs = "Převádí CSV na příkazy insert nebo update pro PostgreSQL."
 stack = ["Ruby", "PostgreSQL"]
 featured = false
 
@@ -249,5 +297,7 @@ name = "big-png"
 tagline = "The biggest image in the smallest space."
 summary = "A compression curiosity: an enormous PNG in a tiny file."
 category = "science"
+tagline_cs = "Největší obrázek v co nejmenším prostoru."
+summary_cs = "Kompresní kuriozita: obrovské PNG v malém souboru."
 stack = ["Python"]
 featured = false

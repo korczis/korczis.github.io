@@ -1,46 +1,48 @@
+{%- set lp = "" %}{% if lang is defined and lang != config.default_language %}{% set lp = "/" ~ lang %}{% endif -%}
+{%- set sfx = "" %}{% if lang is defined and lang != config.default_language %}{% set sfx = "_" ~ lang %}{% endif -%}
 {#- Command palette (⌘K, Ctrl+K or /): a Flowbite Pro modal shell driven by Alpine.js as an ARIA
     combobox. Its index is derived here from the catalogue: pages, categories, projects. -#}
 {%- set pcat = load_data(path="data/projects.toml") -%}
 {%- set pix = load_data(path="data/index.json") -%}
 <script type="application/json" id="palette-data">[
-  {"kind": "Page", "name": "Overview", "hint": "Home dashboard", "url": {{ (config.base_url ~ "/") | json_encode | safe }}},
-  {"kind": "Page", "name": "Projects", "hint": "The whole catalogue", "url": {{ (config.base_url ~ "/projects/") | json_encode | safe }}},
-  {"kind": "Page", "name": "About", "hint": "Profile, CV, languages over the years", "url": {{ (config.base_url ~ "/about/") | json_encode | safe }}},
-  {"kind": "Page", "name": "Repositories", "hint": "Every original repository on GitHub and GitLab", "url": {{ (config.base_url ~ "/repositories/") | json_encode | safe }}},
-  {"kind": "Page", "name": "Recent work", "hint": "Every project with a commit in the last 12, 24 and 48 months", "url": {{ (config.base_url ~ "/work/") | json_encode | safe }}},
-  {%- set wsec = get_section(path="work/_index.md") %}
+  {"kind": {{ trans(key="kind_page", lang=lang) | json_encode | safe }}, "name": {{ trans(key="overview", lang=lang) | json_encode | safe }}, "hint": {{ trans(key="hint_home", lang=lang) | json_encode | safe }}, "url": {{ (config.base_url ~ lp ~ "/") | json_encode | safe }}},
+  {"kind": {{ trans(key="kind_page", lang=lang) | json_encode | safe }}, "name": {{ trans(key="projects", lang=lang) | json_encode | safe }}, "hint": {{ trans(key="hint_projects", lang=lang) | json_encode | safe }}, "url": {{ (config.base_url ~ lp ~ "/projects/") | json_encode | safe }}},
+  {"kind": {{ trans(key="kind_page", lang=lang) | json_encode | safe }}, "name": {{ trans(key="about", lang=lang) | json_encode | safe }}, "hint": {{ trans(key="hint_about", lang=lang) | json_encode | safe }}, "url": {{ (config.base_url ~ lp ~ "/about/") | json_encode | safe }}},
+  {"kind": {{ trans(key="kind_page", lang=lang) | json_encode | safe }}, "name": {{ trans(key="repositories", lang=lang) | json_encode | safe }}, "hint": {{ trans(key="hint_repositories", lang=lang) | json_encode | safe }}, "url": {{ (config.base_url ~ lp ~ "/repositories/") | json_encode | safe }}},
+  {"kind": {{ trans(key="kind_page", lang=lang) | json_encode | safe }}, "name": {{ trans(key="recent_work", lang=lang) | json_encode | safe }}, "hint": {{ trans(key="hint_work", lang=lang) | json_encode | safe }}, "url": {{ (config.base_url ~ lp ~ "/work/") | json_encode | safe }}},
+  {%- if lang == config.default_language %}{% set wsec = get_section(path="work/_index.md") %}{% else %}{% set wsec = get_section(path="work/_index." ~ lang ~ ".md") %}{% endif %}
   {%- for wp in wsec.pages %}
-  {"kind": "Work", "name": {{ wp.title | json_encode | safe }}, "hint": {{ wp.description | json_encode | safe }}, "terms": {{ wp.extra.keywords | join(sep=" ") | json_encode | safe }}, "url": {{ wp.permalink | json_encode | safe }}},
+  {"kind": {{ trans(key="kind_work", lang=lang) | json_encode | safe }}, "name": {{ wp.title | json_encode | safe }}, "hint": {{ wp.description | json_encode | safe }}, "terms": {{ wp.extra.keywords | join(sep=" ") | json_encode | safe }}, "url": {{ wp.permalink | json_encode | safe }}},
   {%- endfor %}
-  {"kind": "Page", "name": "Stack", "hint": "Tools, practice, pipeline, data", "url": {{ (config.base_url ~ "/stack/") | json_encode | safe }}},
-  {"kind": "Page", "name": "Majordomus", "hint": "majordomus.dev", "url": {{ config.extra.majordomus_url | json_encode | safe }}},
+  {"kind": {{ trans(key="kind_page", lang=lang) | json_encode | safe }}, "name": {{ trans(key="stack", lang=lang) | json_encode | safe }}, "hint": {{ trans(key="hint_stack", lang=lang) | json_encode | safe }}, "url": {{ (config.base_url ~ lp ~ "/stack/") | json_encode | safe }}},
+  {"kind": {{ trans(key="kind_page", lang=lang) | json_encode | safe }}, "name": "Majordomus", "hint": "majordomus.dev", "url": {{ config.extra.majordomus_url | json_encode | safe }}},
   {%- for key, c in pcat.categories %}
-  {"kind": "Category", "name": {{ c.name | json_encode | safe }}, "hint": {{ c.description | json_encode | safe }}, "url": {{ (config.base_url ~ "/projects/" ~ key ~ "/") | json_encode | safe }}},
+  {"kind": {{ trans(key="kind_category", lang=lang) | json_encode | safe }}, "name": {{ c["name" ~ sfx] | json_encode | safe }}, "hint": {{ c["description" ~ sfx] | json_encode | safe }}, "url": {{ (config.base_url ~ lp ~ "/projects/" ~ key ~ "/") | json_encode | safe }}},
   {%- endfor %}
   {%- for p in pcat.projects %}
-  {"kind": "Project", "name": {{ p.name | json_encode | safe }}, "hint": {{ p.tagline | json_encode | safe }}, "terms": {{ (p.stack | join(sep=" ") ~ " " ~ p.repo) | json_encode | safe }}, "url": {{ (config.base_url ~ "/projects/?project=" ~ p.repo) | json_encode | safe }}},
+  {"kind": {{ trans(key="kind_project", lang=lang) | json_encode | safe }}, "name": {{ p.name | json_encode | safe }}, "hint": {{ p["tagline" ~ sfx] | json_encode | safe }}, "terms": {{ (p.stack | join(sep=" ") ~ " " ~ p.repo) | json_encode | safe }}, "url": {{ (config.base_url ~ lp ~ "/projects/?project=" ~ p.repo) | json_encode | safe }}},
   {%- endfor %}
   {%- for r in pix.repos %}{% if not r.curated %}
   {%- if r.hosts.github is defined %}{% set u = r.hosts.github %}{% else %}{% set u = r.hosts.gitlab %}{% endif %}
-  {"kind": "Repository", "name": {{ r.name | json_encode | safe }}, "hint": {% if r.description %}{{ r.description | json_encode | safe }}{% else %}{{ ("Repository · " ~ r.category) | json_encode | safe }}{% endif %}, "terms": {% if r.language %}{{ (r.language ~ " " ~ r.category) | json_encode | safe }}{% else %}{{ r.category | json_encode | safe }}{% endif %}, "url": {{ u | json_encode | safe }}},
+  {"kind": {{ trans(key="kind_repository", lang=lang) | json_encode | safe }}, "name": {{ r.name | json_encode | safe }}, "hint": {% if r.description %}{{ r.description | json_encode | safe }}{% else %}{{ ("Repository · " ~ r.category) | json_encode | safe }}{% endif %}, "terms": {% if r.language %}{{ (r.language ~ " " ~ r.category) | json_encode | safe }}{% else %}{{ r.category | json_encode | safe }}{% endif %}, "url": {{ u | json_encode | safe }}},
   {%- endif %}{% endfor %}
-  {"kind": "Page", "name": "llms.txt", "hint": "The catalogue for language models", "url": {{ (config.base_url ~ "/llms.txt") | json_encode | safe }}}
+  {"kind": {{ trans(key="kind_page", lang=lang) | json_encode | safe }}, "name": "llms.txt", "hint": {{ trans(key="hint_llms", lang=lang) | json_encode | safe }}, "url": {{ (config.base_url ~ "/llms.txt") | json_encode | safe }}}
 ]</script>
 <div x-data="palette" x-cloak x-show="open" x-on:keydown.escape.window="close()" class="fixed inset-0 z-50 flex items-start justify-center px-4 pt-20 sm:pt-28"
   role="dialog" aria-modal="true" aria-labelledby="palette-label">
   <div class="fixed inset-0 bg-gray-900/50 dark:bg-gray-900/80" @click="close()" aria-hidden="true"></div>
   <div class="relative w-full max-w-xl overflow-hidden rounded-lg bg-white shadow-lg dark:bg-gray-700">
-    <label id="palette-label" for="palette-input" class="sr-only">Search pages, categories and projects</label>
+    <label id="palette-label" for="palette-input" class="sr-only">{{ trans(key="search_pages_categories_and_projects", lang=lang) | safe }}</label>
     <div class="relative border-b border-gray-200 dark:border-gray-600">
       <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4 text-gray-500 dark:text-gray-400">{{ <icon name="search" class="h-5 w-5" /> }}</div>
       <input id="palette-input" x-ref="input" x-model="query" type="text" autocomplete="off" spellcheck="false"
         role="combobox" aria-expanded="true" aria-controls="palette-results" aria-autocomplete="list" :aria-activedescendant="results.length ? 'palette-option-' + active : null"
         @keydown.arrow-down.prevent="move(1)" @keydown.arrow-up.prevent="move(-1)" @keydown.enter.prevent="go()" @keydown.tab.prevent
-        placeholder="Search pages, categories, projects, technologies"
+        placeholder="{{ trans(key="search_pages_categories_projects_technologies", lang=lang) }}"
         class="block w-full border-0 bg-transparent py-4 pl-12 pr-16 text-base text-gray-900 placeholder-gray-500 focus:ring-0 dark:text-white dark:placeholder-gray-400">
       <kbd class="absolute right-4 top-1/2 -translate-y-1/2 rounded border border-gray-200 bg-gray-100 px-2 py-0.5 text-xs font-semibold text-gray-800 dark:border-gray-500 dark:bg-gray-600 dark:text-gray-100">Esc</kbd>
     </div>
-    <ul id="palette-results" role="listbox" aria-label="Results" class="max-h-[60vh] overflow-y-auto py-2">
+    <ul id="palette-results" role="listbox" aria-label="{{ trans(key="results", lang=lang) }}" class="max-h-[60vh] overflow-y-auto py-2">
       <template x-for="(item, index) in results" :key="item.url">
         <li :id="'palette-option-' + index" role="option" :aria-selected="index === active" @mouseenter="active = index" @click="go(index)"
           class="flex cursor-pointer items-center gap-3 px-4 py-2.5" :class="index === active ? 'bg-gray-100 dark:bg-gray-600' : ''">
@@ -51,10 +53,10 @@
           </span>
         </li>
       </template>
-      <li x-show="!results.length" class="px-4 py-6 text-center text-sm text-gray-600 dark:text-gray-300" role="presentation">Nothing matches. Try a technology, like p5.js or Rust.</li>
+      <li x-show="!results.length" class="px-4 py-6 text-center text-sm text-gray-600 dark:text-gray-300" role="presentation">{{ trans(key="nothing_matches_try_a_technology_like", lang=lang) | safe }}</li>
     </ul>
     <p class="flex flex-wrap gap-x-4 gap-y-1 border-t border-gray-200 px-4 py-2 text-xs text-gray-600 dark:border-gray-600 dark:text-gray-300">
-      <span><kbd class="font-semibold">↑ ↓</kbd> move</span><span><kbd class="font-semibold">Enter</kbd> open</span><span><kbd class="font-semibold">⌘K</kbd> or <kbd class="font-semibold">/</kbd> anywhere</span>
+      <span><kbd class="font-semibold">↑ ↓</kbd> {{ trans(key="move", lang=lang) | safe }}</span><span><kbd class="font-semibold">Enter</kbd> {{ trans(key="open_2", lang=lang) | safe }}</span><span><kbd class="font-semibold">⌘K</kbd> {{ trans(key="or", lang=lang) | safe }} <kbd class="font-semibold">/</kbd> {{ trans(key="anywhere", lang=lang) | safe }}</span>
     </p>
   </div>
 </div>

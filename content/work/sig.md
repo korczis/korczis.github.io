@@ -5,10 +5,13 @@ description = "Sig is a comprehensive Elixir-based platform that combines advanc
 template = "work.html"
 weight = 22
 
+[taxonomies]
+tags = ["AI engineering", "Elixir", "HTML+EEX", "Shell"]
+
 [extra]
 repo = "sig"
 og_title = "sig: distributed cognitive framework in Elixir/OTP."
 og_image = "og/work-sig.png"
 schema = "project"
-keywords = ["sig", "AI engineering", "Elixir", "HTML+EEX", "Shell", "TypeScript", "Tomas Korcak"]
+keywords = ["sig", "AI engineering", "Elixir", "HTML+EEX", "Shell", "Tomas Korcak"]
 +++

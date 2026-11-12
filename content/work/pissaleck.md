@@ -5,6 +5,9 @@ description = "Anything about everything and vice versa. Active in the last 48 m
 template = "work.html"
 weight = 37
 
+[taxonomies]
+tags = ["Tools"]
+
 [extra]
 repo = "pissaleck"
 og_title = "pissaleck: Anything about everything and vice versa"

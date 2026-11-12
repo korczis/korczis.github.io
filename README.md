@@ -39,6 +39,18 @@ also need [majordomus](https://majordomus.dev).
 | `scripts/` | Data, vendoring and every gate (`verify-all.sh`, `check-*.mjs`, `audit-ui.mjs`) |
 | `.ai/` | The Majordomus layer: policy, ADRs, rules under `.ai/repo/rules/project/` |
 
+## Languages
+
+The site exists in English and Czech (`/cs/`) through Zola's multilingual features:
+- **Interface texts:** `i18n/strings.toml` holds every text, with an `en` and a `cs` value per
+  key. `npm run i18n` writes it into `zola.toml` and templates call `trans()`.
+- **Data:** every text field has a `_cs` twin, read generically as `c["name" ~ sfx]`.
+- **Pages:** every page is `x.md` plus `x.cs.md`. The generators write both versions of the
+  category and work pages.
+- **Tags:** tags are a Zola taxonomy, derived from categories and languages.
+- **The gate:** `scripts/check-i18n.mjs` fails on any untranslated text (rule
+  `project.i18n-everywhere`).
+
 ## How the site stays current
 
 Pages are front matter over data. Nothing on them is typed, so nothing needs updating by hand:

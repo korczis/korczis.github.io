@@ -8,7 +8,8 @@ KorczisHub.viz('expertise', {
     const top = source.languages.slice(0, TOP).map((l) => l.name);
     const years = Object.keys(source.years).sort();
     const series = [...top, 'Other'].map((name) => ({
-      name,
+      name: name === 'Other' ? KorczisHub.t('js_other') : name,
+      lang: name,
       type: 'bar',
       stack: 'repos',
       barMaxWidth: 28,
@@ -39,15 +40,15 @@ KorczisHub.viz('expertise', {
         },
         xAxis: { type: 'category', data: years, axisLine: { lineStyle: { color: c.grid } }, axisLabel: { color: c.muted, fontSize: 11 } },
         yAxis: { type: 'value', minInterval: 1, splitLine: { lineStyle: { color: c.grid } }, axisLabel: { color: c.muted, fontSize: 11 } },
-        series: series.map((x) => ({ ...x, cursor: x.name === 'Other' ? 'default' : 'pointer', itemStyle: { borderRadius: [2, 2, 0, 0] } })),
+        series: series.map((x) => ({ ...x, cursor: x.lang === 'Other' ? 'default' : 'pointer', itemStyle: { borderRadius: [2, 2, 0, 0] } })),
       };
     };
 
     chart.setOption(option());
     // A segment is a link: open every repository in that language.
     chart.on('click', (params) => {
-      if (params.seriesName && params.seriesName !== 'Other') {
-        window.location.href = `${KorczisHub.base}repositories/?language=${encodeURIComponent(params.seriesName)}`;
+      if (params.seriesName && params.seriesName !== KorczisHub.t('js_other')) {
+        window.location.href = `${KorczisHub.home}repositories/?language=${encodeURIComponent(params.seriesName)}`;
       }
     });
     const resize = new ResizeObserver(() => chart.resize());

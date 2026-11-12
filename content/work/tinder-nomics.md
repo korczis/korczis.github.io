@@ -5,6 +5,9 @@ description = "Use the built-in continuous integration in GitLab."
 template = "work.html"
 weight = 18
 
+[taxonomies]
+tags = ["Tools"]
+
 [extra]
 repo = "tinder-nomics"
 og_title = "tinder-nomics: Tools"

@@ -1,19 +1,21 @@
 {% extends "base.html" %}
 
 {% block content %}
+{%- set lp = "" %}{% if lang is defined and lang != config.default_language %}{% set lp = "/" ~ lang %}{% endif -%}
+{%- set sfx = "" %}{% if lang is defined and lang != config.default_language %}{% set sfx = "_" ~ lang %}{% endif -%}
 {%- set rc = load_data(path="data/recent.json") -%}
 {%- set cat = load_data(path="data/projects.toml") -%}
-{%- set base = config.base_url ~ "/" -%}
-{{ <page_header title={section.title} lead={section.description} /> }}
+{%- set base = config.base_url ~ lp ~ "/" -%}
+{{ <page_header title={section.title} lead={section.description} lang={lang} /> }}
 <div class="grid grid-cols-2 gap-4 px-4 pt-6 xl:grid-cols-4">
-  {{ <kpi value={rc.repos | length ~ ""} label="projects in four years" note="A commit on the default branch" /> }}
+  {{ <kpi value={rc.repos | length ~ ""} label={trans(key="kpi_projects_four_years", lang=lang)} note={trans(key="kpi_commit_default_branch", lang=lang)} /> }}
   {%- for p in rc.periods %}
-  {{ <kpi value={p.repos ~ ""} label={"last commit within " ~ p.months ~ " months"} note={"Period of " ~ p.months} /> }}
+  {{ <kpi value={p.repos ~ ""} label={trans(key="kpi_within_months", lang=lang) | replace(from="{n}", to=p.months ~ "")} note={trans(key="kpi_period", lang=lang) | replace(from="{n}", to=p.months ~ "")} /> }}
   {%- endfor %}
 </div>
 {%- for p in rc.periods %}
 <section class="px-4 pt-6" aria-labelledby="period-{{ p.months }}">
-  <h2 id="period-{{ p.months }}" class="mb-4 text-xl font-bold text-gray-900 dark:text-white">Within {{ p.months }} months <span class="tabular text-base font-normal text-gray-600 dark:text-gray-400">· {{ p.repos }}</span></h2>
+  <h2 id="period-{{ p.months }}" class="mb-4 text-xl font-bold text-gray-900 dark:text-white">{{ trans(key="within", lang=lang) | safe }} {{ p.months }} {{ trans(key="months", lang=lang) | safe }} <span class="tabular text-base font-normal text-gray-600 dark:text-gray-400">· {{ p.repos }}</span></h2>
   <div class="grid grid-cols-1 gap-4 md:grid-cols-2 2xl:grid-cols-3">
     {%- for page in section.pages %}
     {%- for r in rc.repos %}{% if r.name == page.extra.repo and r.period == p.months %}
@@ -29,7 +31,7 @@
         <div class="flex h-1.5 w-full overflow-hidden rounded-full bg-gray-200 dark:bg-gray-700" aria-hidden="true">
           {%- for l in r.languages %}<div class="h-1.5 {% if loop.index == 1 %}bg-primary-700 dark:bg-primary-400{% elif loop.index == 2 %}bg-primary-500{% elif loop.index == 3 %}bg-primary-300{% else %}bg-gray-400{% endif %}" style="width: {{ l.share }}%"></div>{% endfor %}
         </div>
-        <p class="mt-1.5 text-xs text-gray-600 dark:text-gray-400">{% for l in r.languages %}{% if loop.index <= 3 %}{{ l.name }}{% if loop.index < 3 and not loop.last %} · {% endif %}{% endif %}{% endfor %} · {{ cat.categories[r.category].name }}</p>
+        <p class="mt-1.5 text-xs text-gray-600 dark:text-gray-400">{% for l in r.languages %}{% if loop.index <= 3 %}{{ l.name }}{% if loop.index < 3 and not loop.last %} · {% endif %}{% endif %}{% endfor %} · {{ cat.categories[r.category]["name" ~ sfx] }}</p>
       </div>
       {%- endif %}
     </a>
@@ -38,5 +40,5 @@
   </div>
 </section>
 {%- endfor %}
-<p class="px-4 pt-4 text-xs text-gray-600 dark:text-gray-400">Measured on {{ rc.generated_at | date(format="%-d %B %Y") }} through <code class="font-mono">gh</code> and <code class="font-mono">glab</code>; {{ rc.rule }}. <a class="font-medium text-primary-700 hover:underline dark:text-primary-400" href="{{ base }}repositories/">Every repository</a></p>
+<p class="px-4 pt-4 text-xs text-gray-600 dark:text-gray-400">{{ trans(key="measured_on", lang=lang) | safe }} {{ rc.generated_at | date(format="%-d %B %Y") }} {{ trans(key="through", lang=lang) | safe }} <code class="font-mono">gh</code> {{ trans(key="and", lang=lang) | safe }} <code class="font-mono">glab</code>; {{ rc.rule }}. <a class="font-medium text-primary-700 hover:underline dark:text-primary-400" href="{{ base }}repositories/">{{ trans(key="every_repository", lang=lang) | safe }}</a></p>
 {% endblock content %}

@@ -29,7 +29,7 @@ KorczisHub.viz('skillset', {
           backgroundColor: c.surface,
           borderColor: c.grid,
           textStyle: { color: c.strong, fontSize: 12 },
-          formatter: (p) => `${p.treePathInfo.slice(1).map((t) => t.name).join(' › ')}<br><b>${p.value}</b> repositor${p.value === 1 ? 'y' : 'ies'}<br><span style="opacity:.7">Click to open</span>`,
+          formatter: (p) => `${p.treePathInfo.slice(1).map((t) => t.name).join(' › ')}<br><b>${KorczisHub.t('js_n_repositories', { n: p.value })}</b><br><span style="opacity:.7">${KorczisHub.t('js_click_to_open')}</span>`,
         },
         series: [{
           type: 'sunburst',
@@ -51,7 +51,7 @@ KorczisHub.viz('skillset', {
     chart.on('click', (p) => {
       const d = p.data;
       if (!d) return;
-      const base = KorczisHub.base;
+      const base = KorczisHub.home;
       window.location.href = d.lang
         ? `${base}repositories/?category=${d.key}${d.lang !== 'Unspecified' ? `&language=${encodeURIComponent(d.lang)}` : ''}`
         : `${base}projects/${d.key}/`;

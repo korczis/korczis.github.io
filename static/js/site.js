@@ -225,5 +225,14 @@
     syncSidebar();
   }
 
-  window.KorczisHub = { viz, lib, data, palette, reducedMotion, isDark, base };
+  // Texts the scripts render, in the page's language: KorczisHub.t('js_n_repositories', { n: 3 }).
+  let i18n = { locale: 'en-GB', strings: {} };
+  try {
+    i18n = JSON.parse(document.getElementById('i18n-data')?.textContent || '{}');
+  } catch {}
+  const t = (key, vars = {}) => Object.entries(vars).reduce((text, [k, v]) => text.replaceAll(`{${k}}`, String(v)), i18n.strings?.[key] ?? key);
+  // Links go to the page's language (data-home); vendor bundles load from the site root (base).
+  const home = root.dataset.home || base;
+
+  window.KorczisHub = { viz, lib, data, palette, reducedMotion, isDark, base, home, t, locale: i18n.locale || 'en-GB' };
 })();

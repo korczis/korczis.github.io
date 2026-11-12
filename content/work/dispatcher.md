@@ -5,6 +5,9 @@ description = "1. Introduction 2. Motivation 3. How It Started 4. Architecture 5
 template = "work.html"
 weight = 33
 
+[taxonomies]
+tags = ["Tools", "TypeScript", "JavaScript"]
+
 [extra]
 repo = "dispatcher"
 og_title = "dispatcher: Tools"

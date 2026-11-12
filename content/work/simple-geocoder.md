@@ -5,6 +5,9 @@ description = "Simple Geocoder is an Elixir library designed to facilitate geoco
 template = "work.html"
 weight = 38
 
+[taxonomies]
+tags = ["Tools", "Elixir", "Shell", "HTML+EEX"]
+
 [extra]
 repo = "simple_geocoder"
 og_title = "simple_geocoder: Tools"

@@ -5,6 +5,9 @@ description = "\"Capture the soul of the story, not just its words.\""
 template = "work.html"
 weight = 21
 
+[taxonomies]
+tags = ["Tools"]
+
 [extra]
 repo = "past"
 og_title = "past: Tools"

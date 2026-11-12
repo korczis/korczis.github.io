@@ -5,6 +5,9 @@ description = "Honest instruments and drawn algorithms in the browser: acoustics
 template = "category.html"
 weight = 2
 
+[taxonomies]
+tags = ["Science and visualisation", "Oscilla", "algoglyph", "maze-rs", "big-png"]
+
 [extra]
 category = "science"
 og_title = "Science and visualisation: 14 repositories."

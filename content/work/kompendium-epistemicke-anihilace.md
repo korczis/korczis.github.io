@@ -5,10 +5,13 @@ description = "A defensive taxonomy of epistemic and cognitive manipulation (Cze
 template = "work.html"
 weight = 3
 
+[taxonomies]
+tags = ["Knowledge", "Elixir", "JavaScript", "HTML"]
+
 [extra]
 repo = "kompendium-epistemicke-anihilace"
 og_title = "Kompendium: A defensive taxonomy of epistemic and cognitive manipulation (Czech)."
 og_image = "og/work-kompendium-epistemicke-anihilace.png"
 schema = "project"
-keywords = ["Kompendium", "Knowledge", "Elixir", "JavaScript", "HTML", "Python", "Tomas Korcak"]
+keywords = ["Kompendium", "Knowledge", "Elixir", "JavaScript", "HTML", "Tomas Korcak"]
 +++

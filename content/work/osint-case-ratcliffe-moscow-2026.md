@@ -5,10 +5,13 @@ description = "Open-source intelligence assessment of the CIA Director's unannou
 template = "work.html"
 weight = 13
 
+[taxonomies]
+tags = ["AI engineering", "HTML", "Python", "Shell"]
+
 [extra]
 repo = "osint-case-ratcliffe-moscow-2026"
 og_title = "osint-case-ratcliffe-moscow-2026: Open-source intelligence assessment of the CIA Director'"
 og_image = "og/work-osint-case-ratcliffe-moscow-2026.png"
 schema = "project"
-keywords = ["osint-case-ratcliffe-moscow-2026", "AI engineering", "HTML", "Python", "Shell", "Just", "Tomas Korcak"]
+keywords = ["osint-case-ratcliffe-moscow-2026", "AI engineering", "HTML", "Python", "Shell", "Tomas Korcak"]
 +++

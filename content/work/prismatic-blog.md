@@ -5,6 +5,9 @@ description = "Book Template is a starter template of [Zola][zola] with [book][b
 template = "work.html"
 weight = 31
 
+[taxonomies]
+tags = ["Media and art", "Dockerfile"]
+
 [extra]
 repo = "prismatic-blog"
 og_title = "prismatic-blog: Media and art"

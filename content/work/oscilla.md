@@ -5,10 +5,13 @@ description = "A zero-install acoustic laboratory in the browser."
 template = "work.html"
 weight = 5
 
+[taxonomies]
+tags = ["Science and visualisation", "JavaScript", "HTML", "CSS"]
+
 [extra]
 repo = "oscilla"
 og_title = "Oscilla: A zero-install acoustic laboratory in the browser."
 og_image = "og/work-oscilla.png"
 schema = "project"
-keywords = ["Oscilla", "Science and visualisation", "JavaScript", "HTML", "CSS", "Shell", "Tomas Korcak"]
+keywords = ["Oscilla", "Science and visualisation", "JavaScript", "HTML", "CSS", "Tomas Korcak"]
 +++

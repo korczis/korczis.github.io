@@ -5,6 +5,9 @@ description = "Osobní a vědecký projekt zaměřený na pozorování, dokument
 template = "work.html"
 weight = 29
 
+[taxonomies]
+tags = ["Tools", "TeX", "Elixir", "Shell"]
+
 [extra]
 repo = "corvidae"
 og_title = "corvidae: Tools"

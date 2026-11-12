@@ -5,6 +5,9 @@ description = "cognitive-reasoning. Active in the last 24 months; ai engineering
 template = "work.html"
 weight = 30
 
+[taxonomies]
+tags = ["AI engineering"]
+
 [extra]
 repo = "cognitive-reasoning"
 og_title = "cognitive-reasoning: AI engineering"

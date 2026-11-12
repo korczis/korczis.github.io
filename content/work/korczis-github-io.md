@@ -5,10 +5,13 @@ description = "Tomas Korcak (korczis): software that proves its work. Projects, 
 template = "work.html"
 weight = 2
 
+[taxonomies]
+tags = ["AI engineering", "HTML", "JavaScript", "Shell"]
+
 [extra]
 repo = "korczis.github.io"
 og_title = "korczis.github.io: Tomas Korcak (korczis): software that proves its work. Projects, live s"
 og_image = "og/work-korczis-github-io.png"
 schema = "project"
-keywords = ["korczis.github.io", "AI engineering", "HTML", "JavaScript", "Shell", "CSS", "Tomas Korcak"]
+keywords = ["korczis.github.io", "AI engineering", "HTML", "JavaScript", "Shell", "Tomas Korcak"]
 +++

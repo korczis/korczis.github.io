@@ -5,10 +5,13 @@ description = "AI agents say the work is done; Majordomus makes them prove it."
 template = "work.html"
 weight = 6
 
+[taxonomies]
+tags = ["AI engineering", "Rust", "Shell", "JavaScript"]
+
 [extra]
 repo = "prismatic-majordomus"
 og_title = "Majordomus: AI agents say the work is done; Majordomus makes them prove it."
 og_image = "og/work-prismatic-majordomus.png"
 schema = "project"
-keywords = ["Majordomus", "AI engineering", "Rust", "Shell", "JavaScript", "HTML", "Tomas Korcak"]
+keywords = ["Majordomus", "AI engineering", "Rust", "Shell", "JavaScript", "Tomas Korcak"]
 +++

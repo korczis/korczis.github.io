@@ -80,6 +80,10 @@ jobs:
     steps:
       - uses: actions/checkout@v7
       - uses: ./.github/actions/setup
+      - name: Translations are generated and complete
+        run: node scripts/build-i18n.mjs --check
+      - name: Every text in every language
+        run: node scripts/check-i18n.mjs
       - name: Front matter matches its schema
         run: node scripts/check-front-matter.mjs
       - name: Catalogue, snapshot and index are well-formed

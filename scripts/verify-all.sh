@@ -22,6 +22,8 @@ run() { step "$1"; shift; "$@"; }
 
 if [ "$audit_only" = 0 ]; then
 run "Conventional commits on this branch" scripts/lint-commits.sh "$(git merge-base HEAD origin/master 2>/dev/null || git rev-list --max-parents=0 HEAD | tail -1)..HEAD"
+run "Translations are generated and complete" node scripts/build-i18n.mjs --check
+run "Every text in every language" node scripts/check-i18n.mjs
 run "Front matter matches its schema" node scripts/check-front-matter.mjs
 run "Catalogue, snapshot and index are well-formed" node scripts/check-data.mjs
 run "Category pages are current" node scripts/build-categories.mjs --check

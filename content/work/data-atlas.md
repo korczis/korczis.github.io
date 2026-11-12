@@ -5,10 +5,13 @@ description = "A searchable catalogue of GIS and geodata sources (Czech)."
 template = "work.html"
 weight = 11
 
+[taxonomies]
+tags = ["Data and GIS", "Python", "HTML", "JavaScript"]
+
 [extra]
 repo = "data-atlas"
 og_title = "Data Atlas: A searchable catalogue of GIS and geodata sources (Czech)."
 og_image = "og/work-data-atlas.png"
 schema = "project"
-keywords = ["Data Atlas", "Data and GIS", "Python", "HTML", "JavaScript", "PLpgSQL", "Tomas Korcak"]
+keywords = ["Data Atlas", "Data and GIS", "Python", "HTML", "JavaScript", "Tomas Korcak"]
 +++

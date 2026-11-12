@@ -5,6 +5,9 @@ description = "tap. Active in the last 48 months; tools. A project by Tomas Korc
 template = "work.html"
 weight = 34
 
+[taxonomies]
+tags = ["Tools"]
+
 [extra]
 repo = "tap"
 og_title = "tap: Tools"

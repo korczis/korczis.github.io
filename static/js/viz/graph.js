@@ -101,11 +101,11 @@ KorczisHub.viz('graph', {
     });
     cy.on('mouseout tapend', 'node', () => cy.elements().removeClass('faded'));
     cy.on('tap', 'node[kind = "project"]', (event) => {
-      window.location.href = `${KorczisHub.base}projects/?project=${event.target.data('repo')}`;
+      window.location.href = `${KorczisHub.home}projects/?project=${event.target.data('repo')}`;
     });
     // A technology opens the repository index searched for it.
     cy.on('tap', 'node[kind = "tech"]', (event) => {
-      window.location.href = `${KorczisHub.base}repositories/?q=${encodeURIComponent(event.target.data('label').toLowerCase())}`;
+      window.location.href = `${KorczisHub.home}repositories/?q=${encodeURIComponent(event.target.data('label').toLowerCase())}`;
     });
     cy.on('mouseover', 'node', () => { box.style.cursor = 'pointer'; });
     cy.on('mouseout', 'node', () => { box.style.cursor = ''; });

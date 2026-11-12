@@ -9,5 +9,5 @@ sort_by = "weight"
 og_title = "43 projects, the last four years."
 og_image = "og/work.png"
 schema = "collection"
-keywords = ["Tomas Korcak recent work", "korczis 2026", "sonic-playground", "korczis.github.io", "kompendium-epistemicke-anihilace", "algoglyph", "oscilla", "prismatic-majordomus", "vomaste.cz", "majordomus-reel"]
+keywords = ["Tomas Korcak recent work", "korczis", "sonic-playground", "korczis.github.io", "kompendium-epistemicke-anihilace", "algoglyph", "oscilla", "prismatic-majordomus", "vomaste.cz", "majordomus-reel"]
 +++

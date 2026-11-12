@@ -5,6 +5,9 @@ description = "Websites and web applications: single-page apps, Phoenix and Elm 
 template = "category.html"
 weight = 8
 
+[taxonomies]
+tags = ["Web", "job-processor", "nestravenkam", "tosh", "the-scratch"]
+
 [extra]
 category = "web"
 og_title = "Web: 9 repositories."

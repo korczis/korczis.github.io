@@ -5,6 +5,9 @@ description = "Open-source intelligence, radio and network security research: ca
 template = "category.html"
 weight = 6
 
+[taxonomies]
+tags = ["Security and OSINT", "magic", "zlown", "peacemaker", "ratnet"]
+
 [extra]
 category = "security"
 og_title = "Security and OSINT: 4 repositories."

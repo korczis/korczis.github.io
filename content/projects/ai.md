@@ -5,6 +5,9 @@ description = "Supervision for AI coding agents: one policy for every tool, scop
 template = "category.html"
 weight = 1
 
+[taxonomies]
+tags = ["AI engineering", "Majordomus", "korczis.github.io", "osint-case-ratcliffe-moscow-2026", "llm"]
+
 [extra]
 category = "ai"
 og_title = "AI engineering: 7 repositories."

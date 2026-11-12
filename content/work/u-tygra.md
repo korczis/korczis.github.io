@@ -5,6 +5,9 @@ description = "u-tygra. Active in the last 24 months; tools. A project by Tomas 
 template = "work.html"
 weight = 28
 
+[taxonomies]
+tags = ["Tools", "JavaScript", "HTML", "CSS"]
+
 [extra]
 repo = "u-tygra"
 og_title = "u-tygra: Tools"

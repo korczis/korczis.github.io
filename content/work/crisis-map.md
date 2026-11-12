@@ -5,10 +5,13 @@ description = "Incident reports, normalised, geocoded and mapped."
 template = "work.html"
 weight = 10
 
+[taxonomies]
+tags = ["Data and GIS", "Elixir", "CSS", "JavaScript"]
+
 [extra]
 repo = "crisis-map"
 og_title = "Crisis map: Incident reports, normalised, geocoded and mapped."
 og_image = "og/work-crisis-map.png"
 schema = "project"
-keywords = ["Crisis map", "Data and GIS", "Elixir", "CSS", "JavaScript", "HTML", "Tomas Korcak"]
+keywords = ["Crisis map", "Data and GIS", "Elixir", "CSS", "JavaScript", "Tomas Korcak"]
 +++

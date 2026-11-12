@@ -1,7 +1,8 @@
+{%- set lp = "" %}{% if lang is defined and lang != config.default_language %}{% set lp = "/" ~ lang %}{% endif -%}
 {%- set here = current_path | default(value="/") -%}
 {%- set base = config.base_url ~ "/" -%}
 <!doctype html>
-<html lang="{{ lang | default(value='en') }}" class="no-js" data-base="{{ base }}">
+<html lang="{{ lang | default(value='en') }}" class="no-js" data-base="{{ base }}" data-home="{{ config.base_url }}{{ lp }}/" data-lang="{{ lang | default(value='en') }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,7 +13,7 @@
   <link rel="icon" href="{{ get_url(path='favicon.svg') }}" type="image/svg+xml">
   <link rel="alternate" type="text/plain" title="llms.txt" href="{{ get_url(path='llms.txt') }}">
   <link rel="alternate" type="text/plain" title="llms-full.txt" href="{{ get_url(path='llms-full.txt') }}">
-  <link rel="alternate" type="application/json" title="The site as data" href="{{ get_url(path='site.json') }}">
+  <link rel="alternate" type="application/json" title="{{ trans(key="the_site_as_data", lang=lang) }}" href="{{ get_url(path='site.json') }}">
   <script>
     // Before the first paint: JavaScript is on, and the theme is the stored choice or the system's.
     (function () {
@@ -28,7 +29,7 @@
   {%- block head %}{% endblock head %}
 </head>
 <body class="bg-gray-50 text-gray-900 antialiased dark:bg-gray-900 dark:text-white">
-  <a href="#main" class="sr-only z-50 rounded-lg bg-primary-700 px-4 py-2 text-white focus:not-sr-only focus:fixed focus:left-4 focus:top-4">Skip to content</a>
+  <a href="#main" class="sr-only z-50 rounded-lg bg-primary-700 px-4 py-2 text-white focus:not-sr-only focus:fixed focus:left-4 focus:top-4">{{ trans(key="skip_to_content", lang=lang) | safe }}</a>
   {#- Flowbite Pro application shell (admin dashboard 1.1.1, section 2): navbar z-30, sidebar z-20,
       drawer backdrop z-10, content beside the sidebar from lg up. #}
   {%- include "partials/navbar.html" %}
@@ -43,6 +44,8 @@
   </div>
   {%- include "partials/palette.html" %}
 
+  {#- The texts the scripts render, in this page's language (KorczisHub.t). #}
+  <script type="application/json" id="i18n-data">{"locale": {% if lang == "cs" %}"cs-CZ"{% else %}"en-GB"{% endif %}, "strings": { {%- for k in ["js_n_repositories", "js_n_contributions", "js_click_to_open", "js_other", "js_live", "js_snapshot", "js_answers", "js_down", "js_none", "js_unspecified", "active", "maintained", "archive"] %}{{ k | json_encode | safe }}: {{ trans(key=k, lang=lang) | json_encode | safe }}{% if not loop.last %}, {% endif %}{% endfor -%} }}</script>
   <script src="{{ config.base_url }}/js/vendor/flowbite.min.js" defer></script>
   <script src="{{ get_url(path='js/site.js', cachebust=true) }}" defer></script>
   {%- block scripts %}{% endblock scripts %}

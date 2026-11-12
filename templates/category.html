@@ -1,18 +1,20 @@
 {% extends "base.html" %}
 
 {% block content %}
+{%- set lp = "" %}{% if lang is defined and lang != config.default_language %}{% set lp = "/" ~ lang %}{% endif -%}
+{%- set sfx = "" %}{% if lang is defined and lang != config.default_language %}{% set sfx = "_" ~ lang %}{% endif -%}
 {%- set gh = load_data(path="data/github.json") -%}
 {%- set cat = load_data(path="data/projects.toml") -%}
 {%- set scope = page.extra.category -%}
 {%- set ix = load_data(path="data/index.json") -%}
 {%- set d = ix.categories[scope] | default(value={"repos": 0, "sites": 0, "top_language": "", "since": ""}) -%}
 {%- set_global n_curated = 0 -%}{%- for p in cat.projects -%}{%- if p.category == scope -%}{%- set_global n_curated = n_curated + 1 -%}{%- endif -%}{%- endfor -%}
-{{ <page_header title={page.title} lead={page.description} parent="Projects" parent_url={config.base_url ~ "/projects/"} icon={scope} /> }}
+{{ <page_header title={page.title} lead={page.description} parent={trans(key="projects", lang=lang)} parent_url={config.base_url ~ lp ~ "/projects/"} icon={scope} /> }}
 <div class="grid grid-cols-2 gap-4 px-4 pt-6 xl:grid-cols-4">
-  {{ <kpi value={d.repos ~ ""} label="original repositories" note="Inferred from name, description, topics, language" /> }}
-  {{ <kpi value={n_curated ~ ""} label="featured projects" note="Curated, with details below" /> }}
-  {{ <kpi value={d.sites ~ ""} label="with a live site" note="GitHub Pages or a homepage" /> }}
-  {{ <kpi value={d.top_language | default(value="—")} label="most used language" note={"Since " ~ d.since} /> }}
+  {{ <kpi value={d.repos ~ ""} label={trans(key="kpi_original_repositories", lang=lang)} note={trans(key="kpi_inferred_note", lang=lang)} /> }}
+  {{ <kpi value={n_curated ~ ""} label={trans(key="kpi_featured_projects", lang=lang)} note={trans(key="kpi_curated_note", lang=lang)} /> }}
+  {{ <kpi value={d.sites ~ ""} label={trans(key="kpi_with_live_site", lang=lang)} note={trans(key="kpi_pages_note", lang=lang)} /> }}
+  {{ <kpi value={d.top_language | default(value="—")} label={trans(key="kpi_most_used_language", lang=lang)} note={trans(key="kpi_since", lang=lang) | replace(from="{date}", to=d.since ~ "")} /> }}
 </div>
 {%- if n_curated > 0 %}
 {%- include "partials/catalogue.html" %}
@@ -24,10 +26,10 @@
   <div class="rounded-lg bg-white p-4 shadow dark:bg-gray-800 sm:p-6">
     <div class="mb-4 flex items-center justify-between gap-4">
       <div>
-        <h2 id="more-title" class="text-xl font-bold leading-none text-gray-900 dark:text-white">{% if n_curated > 0 %}More in {{ page.title }}{% else %}Repositories in {{ page.title }}{% endif %}</h2>
-        <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">{{ n_more }} {% if n_curated > 0 %}more {% endif %}original repositories, inferred into this category from their name, description, topics and language.</p>
+        <h2 id="more-title" class="text-xl font-bold leading-none text-gray-900 dark:text-white">{% if n_curated > 0 %}{{ trans(key="more_in", lang=lang) | safe }} {{ page.title }}{% else %}{{ trans(key="repositories_in", lang=lang) | safe }} {{ page.title }}{% endif %}</h2>
+        <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">{{ n_more }} {% if n_curated > 0 %}{{ trans(key="more", lang=lang) | safe }} {% endif %}{{ trans(key="original_repositories_inferred_into_this_category", lang=lang) | safe }}</p>
       </div>
-      <a href="{{ config.base_url }}/repositories/?category={{ scope }}" class="inline-flex shrink-0 items-center whitespace-nowrap rounded-lg p-2 text-sm font-medium text-primary-700 hover:bg-gray-100 dark:text-primary-400 dark:hover:bg-gray-700">Open in the index{{ <icon name="arrow-right" class="ml-1 h-4 w-4" /> }}</a>
+      <a href="{{ config.base_url }}{{ lp }}/repositories/?category={{ scope }}" class="inline-flex shrink-0 items-center whitespace-nowrap rounded-lg p-2 text-sm font-medium text-primary-700 hover:bg-gray-100 dark:text-primary-400 dark:hover:bg-gray-700">{{ trans(key="open_in_the_index", lang=lang) | safe }}{{ <icon name="arrow-right" class="ml-1 h-4 w-4" /> }}</a>
     </div>
     <ul class="grid grid-cols-1 gap-x-8 md:grid-cols-2 2xl:grid-cols-3">
       {%- for r in ix.repos %}{% if r.category == scope and not r.curated %}
@@ -43,11 +45,11 @@
 {%- endif %}
 
 {#- Neighbouring categories: Flowbite Pro button group, derived from the catalogue. #}
-<nav class="px-4 pb-6" aria-label="Other categories">
-  <p class="mb-3 text-sm font-medium text-gray-900 dark:text-white">Other categories</p>
+<nav class="px-4 pb-6" aria-label="{{ trans(key="other_categories", lang=lang) }}">
+  <p class="mb-3 text-sm font-medium text-gray-900 dark:text-white">{{ trans(key="other_categories", lang=lang) | safe }}</p>
   <ul class="flex flex-wrap gap-2">
     {%- for key, c in cat.categories %}{% if key != scope %}
-    <li><a href="{{ config.base_url }}/projects/{{ key }}/" class="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700">{{ <category_icon key={key} class="h-4 w-4" /> }}{{ c.name }}</a></li>
+    <li><a href="{{ config.base_url }}{{ lp }}/projects/{{ key }}/" class="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700">{{ <category_icon key={key} class="h-4 w-4" /> }}{{ c["name" ~ sfx] }}</a></li>
     {%- endif %}{% endfor %}
   </ul>
 </nav>

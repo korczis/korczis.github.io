@@ -5,6 +5,9 @@ description = "Knowledge bases you can check: cross-linked taxonomies with their
 template = "category.html"
 weight = 3
 
+[taxonomies]
+tags = ["Knowledge", "Kompendium", "ReadingPhoneNumbersInRealTime", "MinervaEye", "reading"]
+
 [extra]
 category = "knowledge"
 og_title = "Knowledge: 8 repositories."

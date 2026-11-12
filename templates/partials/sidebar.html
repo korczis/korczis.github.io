@@ -1,3 +1,5 @@
+{%- set lp = "" %}{% if lang is defined and lang != config.default_language %}{% set lp = "/" ~ lang %}{% endif -%}
+{%- set sfx = "" %}{% if lang is defined and lang != config.default_language %}{% set sfx = "_" ~ lang %}{% endif -%}
 {#- Flowbite Pro application shell: sidebar drawer (admin dashboard 1.1.1, section 4). Every count
     is derived from data/projects.toml; the active item holds the hover colour, as in the Pro
     template. Below lg it is a Flowbite Drawer; static/js/site.js keeps its accessibility state. -#}
@@ -9,25 +11,25 @@
 {%- set on = " bg-gray-100 font-medium dark:bg-gray-700" -%}
 {%- set badge = "ml-3 inline-flex h-5 min-w-5 items-center justify-center rounded-full bg-primary-100 px-1.5 text-xs font-semibold text-primary-800 dark:bg-primary-200 dark:text-primary-800" -%}
 {%- set heading = "px-2 pb-2 pt-4 text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400" -%}
-<aside id="sidebar" class="fixed left-0 top-0 z-20 flex h-full w-64 shrink-0 -translate-x-full flex-col pt-16 transition-transform duration-75 lg:translate-x-0" aria-label="Sidebar">
+<aside id="sidebar" class="fixed left-0 top-0 z-20 flex h-full w-64 shrink-0 -translate-x-full flex-col pt-16 transition-transform duration-75 lg:translate-x-0" aria-label="{{ trans(key="sidebar", lang=lang) }}">
   <div class="relative flex min-h-0 flex-1 flex-col border-r border-gray-200 bg-white pt-0 dark:border-gray-700 dark:bg-gray-800">
     <div class="flex flex-1 flex-col overflow-y-auto pb-4 pt-5">
       <div class="flex-1 space-y-1 divide-y divide-gray-200 bg-white px-3 dark:divide-gray-700 dark:bg-gray-800">
         <ul class="space-y-2 pb-2">
           <li>
-            <form action="{{ config.base_url }}/projects/" method="get" role="search" class="lg:hidden">
-              <label for="mobile-search" class="sr-only">Search projects</label>
+            <form action="{{ config.base_url }}{{ lp }}/projects/" method="get" role="search" class="lg:hidden">
+              <label for="mobile-search" class="sr-only">{{ trans(key="search_projects", lang=lang) | safe }}</label>
               <div class="relative">
                 <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3 text-gray-500 dark:text-gray-400">{{ <icon name="search" class="h-5 w-5" /> }}</div>
-                <input type="search" name="q" id="mobile-search" placeholder="Search projects"
+                <input type="search" name="q" id="mobile-search" placeholder="{{ trans(key="search_projects", lang=lang) }}"
                   class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 pl-10 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-200 dark:placeholder-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500">
               </div>
             </form>
           </li>
-          {%- for link in [["Overview", "/", "globe"], ["About", "/about/", "book"], ["Recent work", "/work/", "clock"], ["Projects", "/projects/", "cube"], ["Repositories", "/repositories/", "github"], ["Stack", "/stack/", "code"]] %}
+          {%- for link in [["overview", "/", "globe"], ["about", "/about/", "book"], ["recent_work", "/work/", "clock"], ["projects", "/projects/", "cube"], ["repositories", "/repositories/", "github"], ["stack", "/stack/", "code"]] %}
           <li>
-            <a href="{{ config.base_url }}{{ link[1] }}" class="{{ item }}{% if here == link[1] or (link[1] == "/work/" and "/work/" in here) %}{{ on }}{% endif %}"{% if here == link[1] %} aria-current="page"{% endif %}>
-              {{ <icon name={link[2]} class={ico} /> }}<span class="ml-3 flex-1 whitespace-nowrap">{{ link[0] }}</span>
+            <a href="{{ config.base_url }}{{ lp }}{{ link[1] }}" class="{{ item }}{% if here == lp ~ link[1] or (link[1] == "/work/" and (lp ~ "/work/") in here) %}{{ on }}{% endif %}"{% if here == lp ~ link[1] %} aria-current="page"{% endif %}>
+              {{ <icon name={link[2]} class={ico} /> }}<span class="ml-3 flex-1 whitespace-nowrap">{{ trans(key=link[0], lang=lang) }}</span>
               {%- if link[1] == "/projects/" %}<span class="{{ badge }}">{{ cat.projects | length }}</span>{% endif %}
               {%- if link[1] == "/repositories/" %}<span class="{{ badge }}">{{ six.counts.own }}</span>{% endif %}
               {%- if link[1] == "/work/" %}<span class="{{ badge }}">{{ src.repos | length }}</span>{% endif %}
@@ -36,21 +38,21 @@
           {%- endfor %}
         </ul>
         <div class="pb-2">
-          <p class="{{ heading }}" id="sidebar-categories">Categories</p>
+          <p class="{{ heading }}" id="sidebar-categories">{{ trans(key="categories", lang=lang) | safe }}</p>
           <ul class="space-y-1" aria-labelledby="sidebar-categories">
             {%- for key, c in cat.categories %}
             {%- set n = six.by_category[key] | default(value=0) %}
             {%- set path = "/projects/" ~ key ~ "/" %}
             <li>
-              <a href="{{ config.base_url }}{{ path }}" class="{{ item }}{% if here == path %}{{ on }}{% endif %}"{% if here == path %} aria-current="page"{% endif %}>
-                {{ <category_icon key={key} class={ico} /> }}<span class="ml-3 flex-1 text-sm leading-tight">{{ c.name }}</span><span class="{{ badge }}">{{ n }}</span>
+              <a href="{{ config.base_url }}{{ path }}" class="{{ item }}{% if here == lp ~ path %}{{ on }}{% endif %}"{% if here == lp ~ path %} aria-current="page"{% endif %}>
+                {{ <category_icon key={key} class={ico} /> }}<span class="ml-3 flex-1 text-sm leading-tight">{{ c["name" ~ sfx] }}</span><span class="{{ badge }}">{{ n }}</span>
               </a>
             </li>
             {%- endfor %}
           </ul>
         </div>
         <div class="space-y-1 pt-2">
-          <p class="{{ heading }}">Elsewhere</p>
+          <p class="{{ heading }}">{{ trans(key="elsewhere", lang=lang) | safe }}</p>
           <a href="{{ config.extra.majordomus_url }}" class="{{ item }}">{{ <icon name="shield" class={ico} /> }}<span class="ml-3 flex-1 text-sm">majordomus.dev</span>{{ <icon name="external" class="h-4 w-4 text-gray-500 dark:text-gray-400" /> }}</a>
           <a href="https://github.com/{{ config.extra.github }}" class="{{ item }}">{{ <icon name="github" class={ico} /> }}<span class="ml-3 flex-1 text-sm">GitHub</span>{{ <icon name="external" class="h-4 w-4 text-gray-500 dark:text-gray-400" /> }}</a>
           <a href="{{ get_url(path='llms.txt') }}" class="{{ item }}">{{ <icon name="book" class={ico} /> }}<span class="ml-3 flex-1 text-sm">llms.txt</span></a>
@@ -58,7 +60,7 @@
       </div>
     </div>
     <div class="hidden w-full justify-center border-t border-gray-200 p-4 text-xs text-gray-600 dark:border-gray-700 dark:text-gray-400 lg:flex">
-      Supervised by&nbsp;<a href="{{ config.extra.majordomus_url }}" class="font-medium text-primary-700 hover:underline dark:text-primary-400">Majordomus</a>
+      {{ trans(key="supervised_by", lang=lang) | safe }}<a href="{{ config.extra.majordomus_url }}" class="font-medium text-primary-700 hover:underline dark:text-primary-400">Majordomus</a>
     </div>
   </div>
 </aside>

@@ -5,10 +5,13 @@ description = "Brand & web pro hnutí Astronautisté — „Myslíme na hvězdy,
 template = "work.html"
 weight = 16
 
+[taxonomies]
+tags = ["Tools", "Python", "HTML", "TypeScript"]
+
 [extra]
 repo = "astronomists"
 og_title = "astronomists: Tools"
 og_image = "og/work-astronomists.png"
 schema = "project"
-keywords = ["astronomists", "Tools", "Python", "HTML", "TypeScript", "Shell", "Tomas Korcak"]
+keywords = ["astronomists", "Tools", "Python", "HTML", "TypeScript", "Tomas Korcak"]
 +++

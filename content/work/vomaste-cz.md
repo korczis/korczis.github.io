@@ -5,10 +5,13 @@ description = "Otevřený, Git-native systém pro tvorbu a publikaci dohledateln
 template = "work.html"
 weight = 7
 
+[taxonomies]
+tags = ["Tools", "JavaScript", "HTML", "Shell"]
+
 [extra]
 repo = "vomaste.cz"
 og_title = "vomaste.cz: Tools"
 og_image = "og/work-vomaste-cz.png"
 schema = "project"
-keywords = ["vomaste.cz", "Tools", "JavaScript", "HTML", "Shell", "CSS", "Tomas Korcak"]
+keywords = ["vomaste.cz", "Tools", "JavaScript", "HTML", "Shell", "Tomas Korcak"]
 +++

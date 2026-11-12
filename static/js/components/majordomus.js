@@ -33,7 +33,7 @@ document.addEventListener('alpine:init', () => {
 
     date(value) {
       if (!value) return '';
-      return new Date(value).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+      return new Date(value).toLocaleDateString(KorczisHub.locale, { day: 'numeric', month: 'short', year: 'numeric' });
     },
   }));
 });

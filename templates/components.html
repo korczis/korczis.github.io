@@ -42,9 +42,10 @@
 
 {#- Flowbite Pro project-portfolio card, adapted: no screenshot, a category icon instead; the
     badges and the metadata line are measured (data/github.json), the words are curated. -#}
-{% component project_card(p, f, label: string, anchor: bool = false) %}
+{% component project_card(p, f, label: string, anchor: bool = false, lang: string = "en") %}
+{%- set sfx = "" %}{% if lang != "en" %}{% set sfx = "_" ~ lang %}{% endif -%}
 <article {% if anchor %}id="{{ p.repo }}" {% endif %}data-card
-  data-search="{{ p.name }} {{ p.tagline }} {{ p.summary }} {{ p.stack | join(sep=' ') }} {{ label }}"
+  data-search="{{ p.name }} {{ p["tagline" ~ sfx] }} {{ p["summary" ~ sfx] }} {{ p.stack | join(sep=' ') }} {{ label }}"
   data-category="{{ p.category }}" data-live="{{ f.live | default(value=false) }}"
   data-supervised="{{ f.supervised }}" data-activity="{{ f.activity }}" data-pushed="{{ f.pushed_at }}" data-stars="{{ f.stars }}"
   data-name="{{ p.name }}"
@@ -56,24 +57,24 @@
     <div class="flex flex-wrap justify-end gap-2">
       <span class="rounded-md bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-800 dark:bg-gray-700 dark:text-gray-300">{{ label }}</span>
       {%- if f.activity == "active" %}
-      <span class="inline-flex items-center gap-1.5 rounded-md bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800 dark:bg-green-900 dark:text-green-300"><span class="h-1.5 w-1.5 rounded-full bg-green-500" aria-hidden="true"></span>Active</span>
+      <span class="inline-flex items-center gap-1.5 rounded-md bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800 dark:bg-green-900 dark:text-green-300"><span class="h-1.5 w-1.5 rounded-full bg-green-500" aria-hidden="true"></span>{{ trans(key="active", lang=lang) | safe }}</span>
       {%- elif f.activity == "maintained" %}
-      <span class="inline-flex items-center gap-1.5 rounded-md bg-yellow-100 px-2.5 py-0.5 text-xs font-medium text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300"><span class="h-1.5 w-1.5 rounded-full bg-yellow-500" aria-hidden="true"></span>Maintained</span>
+      <span class="inline-flex items-center gap-1.5 rounded-md bg-yellow-100 px-2.5 py-0.5 text-xs font-medium text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300"><span class="h-1.5 w-1.5 rounded-full bg-yellow-500" aria-hidden="true"></span>{{ trans(key="maintained", lang=lang) | safe }}</span>
       {%- else %}
-      <span class="inline-flex items-center gap-1.5 rounded-md bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-800 dark:bg-gray-700 dark:text-gray-300"><span class="h-1.5 w-1.5 rounded-full bg-gray-500" aria-hidden="true"></span>Archive</span>
+      <span class="inline-flex items-center gap-1.5 rounded-md bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-800 dark:bg-gray-700 dark:text-gray-300"><span class="h-1.5 w-1.5 rounded-full bg-gray-500" aria-hidden="true"></span>{{ trans(key="archive", lang=lang) | safe }}</span>
       {%- endif %}
       {%- if f.supervised %}
       <button type="button" data-tooltip-target="tip-mj-{{ p.repo }}" class="inline-flex items-center gap-1 rounded-md bg-primary-100 px-2.5 py-0.5 text-xs font-medium text-primary-800 focus:outline-none focus:ring-2 focus:ring-primary-300 dark:bg-primary-900 dark:text-primary-300 dark:focus:ring-primary-800">{{ <icon name="shield" class="h-3.5 w-3.5" /> }}Majordomus</button>
-      <div id="tip-mj-{{ p.repo }}" role="tooltip" class="tooltip invisible absolute z-10 inline-block max-w-xs rounded-lg bg-gray-900 px-3 py-2 text-xs font-medium text-white opacity-0 shadow-sm transition-opacity duration-300 dark:bg-gray-700">Supervised: <span class="font-mono">.ai/manifest.yaml</span> is on the default branch<div class="tooltip-arrow" data-popper-arrow></div></div>
+      <div id="tip-mj-{{ p.repo }}" role="tooltip" class="tooltip invisible absolute z-10 inline-block max-w-xs rounded-lg bg-gray-900 px-3 py-2 text-xs font-medium text-white opacity-0 shadow-sm transition-opacity duration-300 dark:bg-gray-700">{{ trans(key="supervised", lang=lang) | safe }} <span class="font-mono">.ai/manifest.yaml</span> {{ trans(key="is_on_the_default_branch", lang=lang) | safe }}<div class="tooltip-arrow" data-popper-arrow></div></div>
       {%- endif %}
     </div>
   </div>
   <h3 class="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
     <a href="https://github.com/korczis/{{ p.repo }}" class="hover:underline">{{ p.name }}</a>
   </h3>
-  <p class="mb-2 font-medium text-gray-900 dark:text-gray-100">{{ p.tagline }}</p>
-  <p class="mb-4 text-sm text-gray-600 dark:text-gray-400">{{ p.summary }}</p>
-  <ul class="mb-5 flex flex-wrap gap-1.5" aria-label="Built with">
+  <p class="mb-2 font-medium text-gray-900 dark:text-gray-100">{{ p["tagline" ~ sfx] }}</p>
+  <p class="mb-4 text-sm text-gray-600 dark:text-gray-400">{{ p["summary" ~ sfx] }}</p>
+  <ul class="mb-5 flex flex-wrap gap-1.5" aria-label="{{ trans(key="built_with", lang=lang) }}">
     {%- for tech in p.stack %}
     <li class="rounded border border-gray-200 bg-gray-50 px-2 py-0.5 font-mono text-xs text-gray-700 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-300">{{ tech }}</li>
     {%- endfor %}
@@ -81,18 +82,18 @@
   <div class="mt-auto">
     <p class="tabular mb-4 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-gray-600 dark:text-gray-400">
       {%- if f.language %}<span class="inline-flex items-center gap-1">{{ <icon name="code" class="h-4 w-4" /> }}{{ f.language }}</span>{% endif %}
-      <span class="inline-flex items-center gap-1">{{ <icon name="star" class="h-4 w-4" /> }}<span><span class="sr-only">Stars: </span>{{ f.stars }}</span></span>
-      <span class="inline-flex items-center gap-1">{{ <icon name="clock" class="h-4 w-4" /> }}<span>Updated <time datetime="{{ f.pushed_at }}">{{ f.pushed_at | date(format="%b %Y") }}</time></span></span>
+      <span class="inline-flex items-center gap-1">{{ <icon name="star" class="h-4 w-4" /> }}<span><span class="sr-only">{{ trans(key="stars", lang=lang) | safe }} </span>{{ f.stars }}</span></span>
+      <span class="inline-flex items-center gap-1">{{ <icon name="clock" class="h-4 w-4" /> }}<span>{{ trans(key="updated", lang=lang) | safe }} <time datetime="{{ f.pushed_at }}">{{ f.pushed_at | date(format="%b %Y") }}</time></span></span>
     </p>
     <div class="flex flex-wrap items-center gap-3">
       {%- if p.url and f.live %}
       <a href="{{ p.url }}" class="inline-flex items-center rounded-lg bg-primary-700 px-4 py-2 text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
-        Open<span class="sr-only"> {{ p.name }}</span>{{ <icon name="external" class="ml-2 h-4 w-4" /> }}
+        {{ trans(key="open", lang=lang) | safe }}<span class="sr-only"> {{ p.name }}</span>{{ <icon name="external" class="ml-2 h-4 w-4" /> }}
       </a>
       {%- endif %}
-      <button type="button" data-js @click="open('{{ p.repo }}', $el)" class="inline-flex items-center rounded-lg px-3 py-2 text-sm font-medium text-primary-700 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-primary-400 dark:hover:bg-gray-700 dark:focus:ring-gray-700">Details<span class="sr-only"> of {{ p.name }}</span></button>
+      <button type="button" data-js @click="open('{{ p.repo }}', $el)" class="inline-flex items-center rounded-lg px-3 py-2 text-sm font-medium text-primary-700 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-primary-400 dark:hover:bg-gray-700 dark:focus:ring-gray-700">{{ trans(key="details", lang=lang) | safe }}<span class="sr-only"> {{ trans(key="of", lang=lang) | safe }} {{ p.name }}</span></button>
       <a href="https://github.com/korczis/{{ p.repo }}" class="inline-flex items-center rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700">
-        {{ <icon name="github" class="mr-2 h-4 w-4" /> }}Source<span class="sr-only"> of {{ p.name }}</span>
+        {{ <icon name="github" class="mr-2 h-4 w-4" /> }}{{ trans(key="source", lang=lang) | safe }}<span class="sr-only"> {{ trans(key="of", lang=lang) | safe }} {{ p.name }}</span>
       </a>
     </div>
   </div>
@@ -111,12 +112,12 @@
 {% endcomponent %}
 
 {#- Flowbite Pro page header, Variant A (admin dashboard 1.1.1, section 5): breadcrumb, title, lead. -#}
-{% component page_header(title: string, lead: string = "", parent: string = "", parent_url: string = "", icon: string = "") %}
+{% component page_header(title: string, lead: string = "", parent: string = "", parent_url: string = "", icon: string = "", lang: string = "en") %}
 <div class="block items-center justify-between border-b border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800 sm:flex lg:mt-1.5">
   <div class="mb-1 w-full">
-    <nav class="mb-5 flex" aria-label="Breadcrumb">
+    <nav class="mb-5 flex" aria-label="{{ trans(key="breadcrumb", lang=lang) }}">
       <ol class="inline-flex items-center space-x-1 text-sm font-medium md:space-x-2">
-        <li class="inline-flex items-center"><a href="{{ get_url(path="/") }}" class="inline-flex items-center text-gray-700 hover:text-primary-700 dark:text-gray-300 dark:hover:text-white">{{ <icon name="globe" class="mr-2.5 h-4 w-4" /> }}Overview</a></li>
+        <li class="inline-flex items-center"><a href="{% if lang == "en" %}{{ get_url(path="/") }}{% else %}{{ get_url(path="/" ~ lang ~ "/") }}{% endif %}" class="inline-flex items-center text-gray-700 hover:text-primary-700 dark:text-gray-300 dark:hover:text-white">{{ <icon name="globe" class="mr-2.5 h-4 w-4" /> }}{{ trans(key="overview", lang=lang) | safe }}</a></li>
         {%- if parent %}
         <li><div class="flex items-center"><span class="text-gray-500" aria-hidden="true">/</span><a href="{{ parent_url }}" class="ml-1 text-gray-700 hover:text-primary-700 dark:text-gray-300 dark:hover:text-white md:ml-2">{{ parent }}</a></div></li>
         {%- endif %}
@@ -147,29 +148,30 @@
 
 {#- One catalogue row: Flowbite Pro advanced table (advanced-tables/project-management), with the
     same data-* the filter reads from a card. -#}
-{% component project_row(p, f, label: string) %}
+{% component project_row(p, f, label: string, lang: string = "en") %}
+{%- set sfx = "" %}{% if lang != "en" %}{% set sfx = "_" ~ lang %}{% endif -%}
 <tr data-row
-  data-search="{{ p.name }} {{ p.tagline }} {{ p.summary }} {{ p.stack | join(sep=' ') }} {{ label }}"
+  data-search="{{ p.name }} {{ p["tagline" ~ sfx] }} {{ p["summary" ~ sfx] }} {{ p.stack | join(sep=' ') }} {{ label }}"
   data-category="{{ p.category }}" data-live="{{ f.live | default(value=false) }}" data-supervised="{{ f.supervised }}"
   data-activity="{{ f.activity }}" data-pushed="{{ f.pushed_at }}" data-stars="{{ f.stars }}" data-name="{{ p.name }}"
   class="border-b border-gray-200 hover:bg-gray-50 dark:border-gray-700 dark:hover:bg-gray-700">
   <th scope="row" class="px-4 py-3 font-medium text-gray-900 dark:text-white">
     <button type="button" data-js @click="open('{{ p.repo }}', $el)" class="text-left hover:underline">{{ p.name }}</button>
     <span class="no-js-only">{{ p.name }}</span>
-    <p class="max-w-xs truncate text-xs font-normal text-gray-600 dark:text-gray-400">{{ p.tagline }}</p>
+    <p class="max-w-xs truncate text-xs font-normal text-gray-600 dark:text-gray-400">{{ p["tagline" ~ sfx] }}</p>
   </th>
   <td class="whitespace-nowrap px-4 py-3">{{ label }}</td>
   <td class="whitespace-nowrap px-4 py-3">
-    {%- if f.activity == "active" %}<span class="rounded-md bg-green-100 px-2 py-0.5 text-xs font-medium text-green-800 dark:bg-green-900 dark:text-green-300">Active</span>
-    {%- elif f.activity == "maintained" %}<span class="rounded-md bg-yellow-100 px-2 py-0.5 text-xs font-medium text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300">Maintained</span>
-    {%- else %}<span class="rounded-md bg-gray-100 px-2 py-0.5 text-xs font-medium text-gray-800 dark:bg-gray-700 dark:text-gray-300">Archive</span>{% endif %}
+    {%- if f.activity == "active" %}<span class="rounded-md bg-green-100 px-2 py-0.5 text-xs font-medium text-green-800 dark:bg-green-900 dark:text-green-300">{{ trans(key="active", lang=lang) | safe }}</span>
+    {%- elif f.activity == "maintained" %}<span class="rounded-md bg-yellow-100 px-2 py-0.5 text-xs font-medium text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300">{{ trans(key="maintained", lang=lang) | safe }}</span>
+    {%- else %}<span class="rounded-md bg-gray-100 px-2 py-0.5 text-xs font-medium text-gray-800 dark:bg-gray-700 dark:text-gray-300">{{ trans(key="archive", lang=lang) | safe }}</span>{% endif %}
   </td>
   <td class="whitespace-nowrap px-4 py-3">{{ f.language | default(value="—") }}</td>
   <td class="tabular whitespace-nowrap px-4 py-3 text-right">{{ f.stars }}</td>
   <td class="whitespace-nowrap px-4 py-3"><time datetime="{{ f.pushed_at }}">{{ f.pushed_at | date(format="%b %Y") }}</time></td>
   <td class="whitespace-nowrap px-4 py-3">{% if f.supervised %}<span class="rounded-md bg-primary-100 px-2 py-0.5 text-xs font-medium text-primary-800 dark:bg-primary-900 dark:text-primary-300">Majordomus</span>{% else %}—{% endif %}</td>
   <td class="whitespace-nowrap px-4 py-3 text-right">
-    {%- if p.url and f.live %}<a href="{{ p.url }}" class="font-medium text-primary-700 hover:underline dark:text-primary-400">Open<span class="sr-only"> {{ p.name }}</span></a> · {% endif %}<a href="https://github.com/korczis/{{ p.repo }}" class="font-medium text-primary-700 hover:underline dark:text-primary-400">Source<span class="sr-only"> of {{ p.name }}</span></a>
+    {%- if p.url and f.live %}<a href="{{ p.url }}" class="font-medium text-primary-700 hover:underline dark:text-primary-400">{{ trans(key="open", lang=lang) | safe }}<span class="sr-only"> {{ p.name }}</span></a> · {% endif %}<a href="https://github.com/korczis/{{ p.repo }}" class="font-medium text-primary-700 hover:underline dark:text-primary-400">{{ trans(key="source", lang=lang) | safe }}<span class="sr-only"> {{ trans(key="of", lang=lang) | safe }} {{ p.name }}</span></a>
   </td>
 </tr>
 {% endcomponent %}

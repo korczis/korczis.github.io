@@ -5,10 +5,13 @@ description = "Kita is a clean, elegant and simple blog theme for Zola."
 template = "work.html"
 weight = 26
 
+[taxonomies]
+tags = ["Tools", "CSS", "Elixir", "SCSS"]
+
 [extra]
 repo = "korczis.gitlab.io"
 og_title = "korczis.gitlab.io: Tools"
 og_image = "og/work-korczis-gitlab-io.png"
 schema = "project"
-keywords = ["korczis.gitlab.io", "Tools", "CSS", "Elixir", "SCSS", "HTML", "Tomas Korcak"]
+keywords = ["korczis.gitlab.io", "Tools", "CSS", "Elixir", "SCSS", "Tomas Korcak"]
 +++

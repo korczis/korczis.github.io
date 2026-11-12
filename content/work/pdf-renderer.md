@@ -5,6 +5,9 @@ description = "Create a service that accepts PDF files containing one or more pa
 template = "work.html"
 weight = 41
 
+[taxonomies]
+tags = ["Tools", "Python", "Dockerfile", "Makefile"]
+
 [extra]
 repo = "pdf_renderer"
 og_title = "pdf_renderer: Tools"

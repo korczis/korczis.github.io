@@ -5,6 +5,9 @@ description = "Reusable building blocks for other programs: clients, bindings, v
 template = "category.html"
 weight = 9
 
+[taxonomies]
+tags = ["Libraries", "hydra", "in-rust-we-trust", "rustler-test", "streamflow"]
+
 [extra]
 category = "libraries"
 og_title = "Libraries: 10 repositories."

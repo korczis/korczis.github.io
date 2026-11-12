@@ -5,6 +5,9 @@ description = "Catalogues and maps of open data: geodata sources, incident repor
 template = "category.html"
 weight = 4
 
+[taxonomies]
+tags = ["Data and GIS", "Data Atlas", "Crisis map", "apollo-crawler-extension", "microcrawler-crawler-bam-brno-cz"]
+
 [extra]
 category = "data"
 og_title = "Data and GIS: 47 repositories."

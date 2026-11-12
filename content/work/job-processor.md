@@ -5,6 +5,9 @@ description = "This is a simple web service built with Elixir, Plug, and Cowboy 
 template = "work.html"
 weight = 36
 
+[taxonomies]
+tags = ["Web", "Elixir"]
+
 [extra]
 repo = "job-processor"
 og_title = "job-processor: This is a simple web service built with Elixir, Plug, and Cowboy that proce"

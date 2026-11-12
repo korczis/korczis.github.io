@@ -5,10 +5,13 @@ description = "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-p
 template = "work.html"
 weight = 15
 
+[taxonomies]
+tags = ["Media and art", "Python", "HTML", "Squirrel"]
+
 [extra]
 repo = "openttd-prismatic-bridge"
 og_title = "openttd-prismatic-bridge: REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-"
 og_image = "og/work-openttd-prismatic-bridge.png"
 schema = "project"
-keywords = ["openttd-prismatic-bridge", "Media and art", "Python", "HTML", "Squirrel", "CSS", "Tomas Korcak"]
+keywords = ["openttd-prismatic-bridge", "Media and art", "Python", "HTML", "Squirrel", "Tomas Korcak"]
 +++

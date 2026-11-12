@@ -5,6 +5,9 @@ description = "If available in Hex, the package can be installed by adding dista
 template = "work.html"
 weight = 39
 
+[taxonomies]
+tags = ["Science and visualisation", "Elixir"]
+
 [extra]
 repo = "distance-calculator"
 og_title = "distance-calculator: Science and visualisation"

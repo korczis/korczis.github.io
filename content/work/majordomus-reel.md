@@ -5,10 +5,13 @@ description = "A promo reel for Majordomus rendered entirely from code: voice, f
 template = "work.html"
 weight = 8
 
+[taxonomies]
+tags = ["Media and art", "HTML", "JavaScript", "Shell"]
+
 [extra]
 repo = "majordomus-reel"
 og_title = "Majordomus reel: A promo reel rendered entirely from code."
 og_image = "og/work-majordomus-reel.png"
 schema = "project"
-keywords = ["Majordomus reel", "Media and art", "HTML", "JavaScript", "Shell", "Python", "Tomas Korcak"]
+keywords = ["Majordomus reel", "Media and art", "HTML", "JavaScript", "Shell", "Tomas Korcak"]
 +++

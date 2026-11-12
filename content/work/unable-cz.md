@@ -5,6 +5,9 @@ description = "Minimalist static site built with Zola, styled with Tailwind CSS,
 template = "work.html"
 weight = 17
 
+[taxonomies]
+tags = ["Tools", "JavaScript", "HTML", "CSS"]
+
 [extra]
 repo = "unable.cz"
 og_title = "unable.cz: Tools"

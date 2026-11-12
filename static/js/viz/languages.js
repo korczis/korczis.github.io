@@ -6,6 +6,7 @@ KorczisHub.viz('languages', {
   mount(box, source, { palette }) {
     const canvas = box.querySelector('canvas');
     const labels = source.map((entry) => entry.name);
+    const shown = labels.map((name) => (name === 'Other' ? KorczisHub.t('js_other') : name));
     const counts = source.map((entry) => entry.repos);
 
     const config = () => {
@@ -13,7 +14,7 @@ KorczisHub.viz('languages', {
       return {
         type: 'bar',
         data: {
-          labels,
+          labels: shown,
           datasets: [{
             label: 'Repositories',
             data: counts,
@@ -31,7 +32,7 @@ KorczisHub.viz('languages', {
           // A bar is a link: open every repository in that language.
           onClick: (_event, elements) => {
             const name = elements[0] && labels[elements[0].index];
-            if (name && name !== 'Other') window.location.href = `${KorczisHub.base}repositories/?language=${encodeURIComponent(name)}`;
+            if (name && name !== 'Other') window.location.href = `${KorczisHub.home}repositories/?language=${encodeURIComponent(name)}`;
           },
           onHover: (event, elements) => {
             event.native.target.style.cursor = elements.length && labels[elements[0].index] !== 'Other' ? 'pointer' : 'default';
@@ -44,7 +45,7 @@ KorczisHub.viz('languages', {
               borderWidth: 1,
               titleColor: c.strong,
               bodyColor: c.text,
-              callbacks: { label: (item) => ` ${item.raw} repositories`, footer: () => 'Click to open them' },
+              callbacks: { label: (item) => ` ${KorczisHub.t('js_n_repositories', { n: item.raw })}`, footer: () => KorczisHub.t('js_click_to_open') },
             },
           },
           scales: {

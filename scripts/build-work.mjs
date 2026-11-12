@@ -29,39 +29,61 @@ function describe(r) {
   return text;
 }
 
+const csDate = (iso) => new Date(iso).toLocaleDateString('cs-CZ', { day: 'numeric', month: 'long', year: 'numeric' });
+const csProjects = (n) => (n === 1 ? 'projekt' : n >= 2 && n <= 4 ? 'projekty' : 'projektů');
+// The Czech description is derived from the data, never machine-translated prose: category,
+// language and the date of the last commit, or the curated Czech tagline when there is one.
+function describeCs(r) {
+  const curated = catalogue.projects.find((p) => p.repo === r.name);
+  if (curated?.summary_cs && curated.summary_cs.length >= 50) return curated.summary_cs.length > 165 ? `${curated.summary_cs.slice(0, 162).replace(/\s+\S*$/, '')}…` : curated.summary_cs;
+  const lang = r.languages[0]?.name ?? r.language;
+  return `${curated?.name ?? r.name}: projekt z kategorie ${catalogue.categories[r.category].name_cs}${lang ? `, hlavní jazyk ${lang}` : ''}, poslední commit ${csDate(r.last_commit)}.`;
+}
+const tags = (r, cs) => [cs ? catalogue.categories[r.category].name_cs : catalogue.categories[r.category].name, ...r.languages.slice(0, 3).map((l) => l.name)];
+
 const wanted = new Map();
-wanted.set('_index.md', `+++
+for (const lang of ['en', 'cs']) {
+  const cs = lang === 'cs';
+  wanted.set(cs ? '_index.cs.md' : '_index.md', `+++
 ${MARK}
-title = "Recent work"
-description = ${q(`Every project with a commit in the last 48 months, by period (12, 24, 48): ${recent.repos.length} repositories on GitHub and GitLab, each with its own page.`)}
+title = ${q(cs ? 'Nedávná práce' : 'Recent work')}
+description = ${q(cs
+    ? `Každý projekt s commitem za posledních 48 měsíců, podle období (12, 24, 48): ${recent.repos.length} repozitářů na GitHubu a GitLabu, každý s vlastní stránkou.`
+    : `Every project with a commit in the last 48 months, by period (12, 24, 48): ${recent.repos.length} repositories on GitHub and GitLab, each with its own page.`)}
 template = "work-list.html"
 sort_by = "weight"
 
 [extra]
-og_title = ${q(`${recent.repos.length} projects, the last four years.`)}
-og_image = "og/work.png"
+og_title = ${q(cs ? `${recent.repos.length} ${csProjects(recent.repos.length)} za poslední čtyři roky.` : `${recent.repos.length} projects, the last four years.`)}
+og_image = ${q(cs ? 'og/cs-work.png' : 'og/work.png')}
 schema = "collection"
-keywords = ["Tomas Korcak recent work", "korczis 2026", ${recent.repos.slice(0, 8).map((r) => q(r.name)).join(', ')}]
+keywords = [${[cs ? 'nedávná práce Tomáše Korčáka' : 'Tomas Korcak recent work', 'korczis', ...recent.repos.slice(0, 8).map((r) => r.name)].map(q).join(', ')}]
 +++
 `);
-recent.repos.forEach((r, position) => {
-  const curated = catalogue.projects.find((p) => p.repo === r.name);
-  wanted.set(`${slug(r.name)}.md`, `+++
+  recent.repos.forEach((r, position) => {
+    const curated = catalogue.projects.find((p) => p.repo === r.name);
+    const title = curated?.name ?? r.name;
+    const tagline = cs ? (curated?.tagline_cs ?? catalogue.categories[r.category].name_cs) : (curated?.tagline ?? r.description ?? catalogue.categories[r.category].name);
+    wanted.set(`${slug(r.name)}${cs ? '.cs' : ''}.md`, `+++
 ${MARK}
-title = ${q(curated?.name ?? r.name)}
-description = ${q(describe(r))}
+title = ${q(title)}
+description = ${q(cs ? describeCs(r) : describe(r))}
 template = "work.html"
 weight = ${position + 1}
 
+[taxonomies]
+tags = [${tags(r, cs).map(q).join(', ')}]
+
 [extra]
 repo = ${q(r.name)}
-og_title = ${q(`${curated?.name ?? r.name}: ${curated?.tagline ?? r.description ?? catalogue.categories[r.category].name}`.slice(0, 90))}
-og_image = ${q(`og/work-${slug(r.name)}.png`)}
+og_title = ${q(`${title}: ${tagline}`.slice(0, 90))}
+og_image = ${q(`og/${cs ? 'cs-' : ''}work-${slug(r.name)}.png`)}
 schema = "project"
-keywords = [${[curated?.name ?? r.name, catalogue.categories[r.category].name, ...r.languages.slice(0, 4).map((l) => l.name), 'Tomas Korcak'].map(q).join(', ')}]
+keywords = [${[title, ...tags(r, cs), cs ? 'Tomáš Korčák' : 'Tomas Korcak'].map(q).join(', ')}]
 +++
 `);
-});
+  });
+}
 
 mkdirSync(DIR, { recursive: true });
 const findings = [];

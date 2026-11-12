@@ -40,6 +40,8 @@ const PAGES = [
   ['repositories', 'repositories/'],
   ['work', 'work/'],
   ...(firstWork ? [['work-page', `work/${firstWork}/`]] : []),
+  ['cs-home', 'cs/'],
+  ...(firstWork ? [['cs-work-page', `cs/work/${firstWork}/`]] : []),
   ['category', 'projects/science/'],
   ['stack', 'stack/'],
   ['404', '404.html'],

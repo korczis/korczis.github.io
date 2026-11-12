@@ -9,8 +9,8 @@
   {%- set_global k_stars = k_stars + f.stars -%}
 {%- endif -%}{%- endfor %}
 <div class="grid grid-cols-2 gap-4 px-4 pt-6 xl:grid-cols-4">
-  {{ <kpi value={k_total ~ ""} label="projects" /> }}
-  {{ <kpi value={k_live ~ ""} label="with a live site" /> }}
-  {{ <kpi value={k_active ~ ""} label="active in 45 days" /> }}
-  {{ <kpi value={k_sup ~ ""} label="supervised by Majordomus" /> }}
+  {{ <kpi value={k_total ~ ""} label={trans(key="kpi_projects", lang=lang)} /> }}
+  {{ <kpi value={k_live ~ ""} label={trans(key="kpi_with_live_site", lang=lang)} /> }}
+  {{ <kpi value={k_active ~ ""} label={trans(key="kpi_active_45", lang=lang)} /> }}
+  {{ <kpi value={k_sup ~ ""} label={trans(key="kpi_supervised", lang=lang)} /> }}
 </div>

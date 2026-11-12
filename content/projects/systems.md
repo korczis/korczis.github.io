@@ -5,6 +5,9 @@ description = "Servers, clusters and the plumbing beneath software: immutable ho
 template = "category.html"
 weight = 7
 
+[taxonomies]
+tags = ["Systems and infrastructure", "docks", "gh-exec-3000", "server-archlinux", "zdeny-docker"]
+
 [extra]
 category = "systems"
 og_title = "Systems and infrastructure: 16 repositories."

@@ -1,41 +1,43 @@
 {% extends "base.html" %}
 
 {% block content %}
+{%- set lp = "" %}{% if lang is defined and lang != config.default_language %}{% set lp = "/" ~ lang %}{% endif -%}
+{%- set sfx = "" %}{% if lang is defined and lang != config.default_language %}{% set sfx = "_" ~ lang %}{% endif -%}
 {%- set rc = load_data(path="data/recent.json") -%}
 {%- set cat = load_data(path="data/projects.toml") -%}
-{%- set base = config.base_url ~ "/" -%}
+{%- set base = config.base_url ~ lp ~ "/" -%}
 {%- set card = "min-w-0 rounded-lg bg-white p-4 shadow dark:bg-gray-800 sm:p-6" -%}
 {%- set link = "font-medium text-primary-700 hover:underline dark:text-primary-400" -%}
 {%- for x in rc.repos %}{% if x.name == page.extra.repo %}{% set_global r = x %}{% endif %}{% endfor -%}
 {%- if r.hosts.github is defined %}{% set primary = r.hosts.github %}{% else %}{% set primary = r.hosts.gitlab %}{% endif -%}
-{{ <page_header title={page.title} lead={page.description} parent="Recent work" parent_url={base ~ "work/"} icon={r.category} /> }}
+{{ <page_header title={page.title} lead={page.description} parent={trans(key="recent_work", lang=lang)} parent_url={base ~ "work/"} icon={r.category} /> }}
 
 <div class="space-y-4 px-4 pb-2 pt-6">
   <div class="grid grid-cols-1 gap-4 xl:grid-cols-3">
     {#- What it is: the repository's own words (README excerpt), the latest commit. #}
     <section class="{{ card }} xl:col-span-2" aria-labelledby="what-title">
       <div class="mb-4 flex flex-wrap items-center gap-2">
-        <a href="{{ base }}projects/{{ r.category }}/" class="rounded-md bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-800 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600">{{ cat.categories[r.category].name }}</a>
-        <span class="rounded-md bg-primary-100 px-2.5 py-0.5 text-xs font-medium text-primary-800 dark:bg-primary-900 dark:text-primary-300">Active within {{ r.period }} months</span>
-        {%- if r.curated %}<a href="{{ base }}projects/?project={{ r.name }}" class="rounded-md bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800 hover:bg-green-200 dark:bg-green-900 dark:text-green-300">Featured</a>{% endif %}
+        <a href="{{ base }}projects/{{ r.category }}/" class="rounded-md bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-800 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600">{{ cat.categories[r.category]["name" ~ sfx] }}</a>
+        <span class="rounded-md bg-primary-100 px-2.5 py-0.5 text-xs font-medium text-primary-800 dark:bg-primary-900 dark:text-primary-300">{{ trans(key="active_within", lang=lang) | safe }} {{ r.period }} {{ trans(key="months", lang=lang) | safe }}</span>
+        {%- if r.curated %}<a href="{{ base }}projects/?project={{ r.name }}" class="rounded-md bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800 hover:bg-green-200 dark:bg-green-900 dark:text-green-300">{{ trans(key="featured_2", lang=lang) | safe }}</a>{% endif %}
       </div>
-      <h2 id="what-title" class="text-xl font-bold text-gray-900 dark:text-white">What it is</h2>
+      <h2 id="what-title" class="text-xl font-bold text-gray-900 dark:text-white">{{ trans(key="what_it_is", lang=lang) | safe }}</h2>
       {%- if r.readme %}
       <blockquote class="mt-3 border-s-4 border-primary-700 bg-gray-50 p-4 text-gray-700 dark:border-primary-400 dark:bg-gray-700 dark:text-gray-200">
         <p>{{ r.readme }}</p>
-        <footer class="mt-2 text-xs text-gray-600 dark:text-gray-300">From the README, <a class="font-medium text-primary-700 hover:underline dark:text-primary-300" href="{{ primary }}">{{ r.name }}</a></footer>
+        <footer class="mt-2 text-xs text-gray-600 dark:text-gray-300">{{ trans(key="from_the_readme", lang=lang) | safe }} <a class="font-medium text-primary-700 hover:underline dark:text-primary-300" href="{{ primary }}">{{ r.name }}</a></footer>
       </blockquote>
       {%- endif %}
       {%- if r.description and r.description != r.readme %}<p class="mt-4 text-gray-600 dark:text-gray-400">{{ r.description }}</p>{% endif %}
       {%- if r.last_message %}
       <div class="mt-5 rounded-lg border border-gray-200 p-4 dark:border-gray-700">
-        <p class="text-xs font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400">Latest commit</p>
+        <p class="text-xs font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400">{{ trans(key="latest_commit", lang=lang) | safe }}</p>
         <p class="mt-1 font-mono text-sm text-gray-900 dark:text-white">{{ r.last_message }}</p>
         <p class="mt-1 text-xs text-gray-600 dark:text-gray-400"><time datetime="{{ r.last_commit }}">{{ r.last_commit | date(format="%-d %B %Y") }}</time></p>
       </div>
       {%- endif %}
       <div class="mt-5 flex flex-wrap gap-3">
-        {%- if r.site %}<a href="{{ r.site }}" class="inline-flex items-center rounded-lg bg-primary-700 px-4 py-2 text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Open the site{{ <icon name="external" class="ml-2 h-4 w-4" /> }}</a>{% endif %}
+        {%- if r.site %}<a href="{{ r.site }}" class="inline-flex items-center rounded-lg bg-primary-700 px-4 py-2 text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">{{ trans(key="open_the_site", lang=lang) | safe }}{{ <icon name="external" class="ml-2 h-4 w-4" /> }}</a>{% endif %}
         {%- if r.hosts.github is defined %}<a href="{{ r.hosts.github }}" class="inline-flex items-center rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700">{{ <icon name="github" class="mr-2 h-4 w-4" /> }}GitHub</a>{% endif %}
         {%- if r.hosts.gitlab is defined %}<a href="{{ r.hosts.gitlab }}" class="inline-flex items-center rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700">{{ <icon name="code" class="mr-2 h-4 w-4" /> }}GitLab</a>{% endif %}
       </div>
@@ -43,18 +45,18 @@
 
     {#- Facts: every one measured (data/recent.json via gh and glab). #}
     <section class="{{ card }}" aria-labelledby="facts-title">
-      <h2 id="facts-title" class="text-xl font-bold text-gray-900 dark:text-white">Facts</h2>
+      <h2 id="facts-title" class="text-xl font-bold text-gray-900 dark:text-white">{{ trans(key="facts", lang=lang) | safe }}</h2>
       <dl class="tabular mt-4 space-y-3 text-sm">
-        <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">Created</dt><dd class="font-semibold text-gray-900 dark:text-white">{{ r.created_at | date(format="%B %Y") }}</dd></div>
-        <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">Last commit</dt><dd class="font-semibold text-gray-900 dark:text-white">{{ r.last_commit | date(format="%-d %b %Y") }}</dd></div>
-        <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">Primary language</dt><dd class="font-semibold text-gray-900 dark:text-white">{% if r.language %}<a class="{{ link }}" href="{{ base }}repositories/?language={{ r.language | urlencode }}">{{ r.language }}</a>{% elif r.languages | length > 0 %}{{ r.languages[0].name }}{% else %}—{% endif %}</dd></div>
-        <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">Stars</dt><dd class="font-semibold text-gray-900 dark:text-white">{{ r.stars }}</dd></div>
-        <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">Hosts</dt><dd class="font-semibold text-gray-900 dark:text-white">{% if r.hosts.github is defined %}GitHub{% endif %}{% if r.hosts.github is defined and r.hosts.gitlab is defined %} · {% endif %}{% if r.hosts.gitlab is defined %}GitLab{% endif %}</dd></div>
+        <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="created", lang=lang) | safe }}</dt><dd class="font-semibold text-gray-900 dark:text-white">{{ r.created_at | date(format="%B %Y") }}</dd></div>
+        <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="last_commit", lang=lang) | safe }}</dt><dd class="font-semibold text-gray-900 dark:text-white">{{ r.last_commit | date(format="%-d %b %Y") }}</dd></div>
+        <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="primary_language", lang=lang) | safe }}</dt><dd class="font-semibold text-gray-900 dark:text-white">{% if r.language %}<a class="{{ link }}" href="{{ base }}repositories/?language={{ r.language | urlencode }}">{{ r.language }}</a>{% elif r.languages | length > 0 %}{{ r.languages[0].name }}{% else %}—{% endif %}</dd></div>
+        <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="stars_2", lang=lang) | safe }}</dt><dd class="font-semibold text-gray-900 dark:text-white">{{ r.stars }}</dd></div>
+        <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="hosts", lang=lang) | safe }}</dt><dd class="font-semibold text-gray-900 dark:text-white">{% if r.hosts.github is defined %}GitHub{% endif %}{% if r.hosts.github is defined and r.hosts.gitlab is defined %} · {% endif %}{% if r.hosts.gitlab is defined %}GitLab{% endif %}</dd></div>
       </dl>
       {%- if r.languages | length > 0 %}
-      <h3 class="mb-2 mt-6 text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400">Languages</h3>
+      <h3 class="mb-2 mt-6 text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400">{{ trans(key="languages", lang=lang) | safe }}</h3>
       {#- Flowbite Pro stacked progress: the measured language breakdown. #}
-      <div class="flex h-3 w-full overflow-hidden rounded-full bg-gray-200 dark:bg-gray-700" role="img" aria-label="Language breakdown: {% for l in r.languages %}{{ l.name }} {{ l.share }}%{% if not loop.last %}, {% endif %}{% endfor %}">
+      <div class="flex h-3 w-full overflow-hidden rounded-full bg-gray-200 dark:bg-gray-700" role="img" aria-label="{% set_global lb = "" %}{% for l in r.languages %}{% set_global lb = lb ~ l.name ~ " " ~ l.share ~ "%" %}{% if not loop.last %}{% set_global lb = lb ~ ", " %}{% endif %}{% endfor %}{{ trans(key="aria_language_breakdown", lang=lang) | replace(from="{list}", to=lb) }}">
         {%- for l in r.languages %}
         <div class="h-3 {% if loop.index == 1 %}bg-primary-700 dark:bg-primary-400{% elif loop.index == 2 %}bg-primary-500{% elif loop.index == 3 %}bg-primary-300{% elif loop.index == 4 %}bg-gray-500{% else %}bg-gray-400{% endif %}" style="width: {{ l.share }}%"></div>
         {%- endfor %}
@@ -66,17 +68,17 @@
       </ul>
       {%- endif %}
       {%- if r.topics | length > 0 %}
-      <h3 class="mb-2 mt-6 text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400">Topics</h3>
+      <h3 class="mb-2 mt-6 text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400">{{ trans(key="topics", lang=lang) | safe }}</h3>
       <ul class="flex flex-wrap gap-1.5">{% for t in r.topics %}<li class="rounded bg-gray-100 px-2 py-0.5 font-mono text-xs text-gray-800 dark:bg-gray-700 dark:text-gray-200">{{ t }}</li>{% endfor %}</ul>
       {%- endif %}
     </section>
   </div>
 
   {#- Neighbours: the work before and after in time, and the same category (derived). #}
-  <nav class="grid grid-cols-1 gap-4 md:grid-cols-2" aria-label="More work">
-    {%- if page.lower %}<a href="{{ page.lower.permalink }}" class="{{ card }} group block hover:bg-gray-50 dark:hover:bg-gray-700"><span class="text-xs uppercase tracking-wide text-gray-600 dark:text-gray-400">Older</span><span class="mt-1 block font-semibold text-gray-900 group-hover:underline dark:text-white">{{ page.lower.title }}</span><span class="mt-1 block text-sm text-gray-600 dark:text-gray-400">{{ page.lower.description }}</span></a>{% else %}<span></span>{% endif %}
-    {%- if page.higher %}<a href="{{ page.higher.permalink }}" class="{{ card }} group block text-right hover:bg-gray-50 dark:hover:bg-gray-700"><span class="text-xs uppercase tracking-wide text-gray-600 dark:text-gray-400">Newer</span><span class="mt-1 block font-semibold text-gray-900 group-hover:underline dark:text-white">{{ page.higher.title }}</span><span class="mt-1 block text-sm text-gray-600 dark:text-gray-400">{{ page.higher.description }}</span></a>{% endif %}
+  <nav class="grid grid-cols-1 gap-4 md:grid-cols-2" aria-label="{{ trans(key="more_work", lang=lang) }}">
+    {%- if page.lower %}<a href="{{ page.lower.permalink }}" class="{{ card }} group block hover:bg-gray-50 dark:hover:bg-gray-700"><span class="text-xs uppercase tracking-wide text-gray-600 dark:text-gray-400">{{ trans(key="older", lang=lang) | safe }}</span><span class="mt-1 block font-semibold text-gray-900 group-hover:underline dark:text-white">{{ page.lower.title }}</span><span class="mt-1 block text-sm text-gray-600 dark:text-gray-400">{{ page.lower.description }}</span></a>{% else %}<span></span>{% endif %}
+    {%- if page.higher %}<a href="{{ page.higher.permalink }}" class="{{ card }} group block text-right hover:bg-gray-50 dark:hover:bg-gray-700"><span class="text-xs uppercase tracking-wide text-gray-600 dark:text-gray-400">{{ trans(key="newer", lang=lang) | safe }}</span><span class="mt-1 block font-semibold text-gray-900 group-hover:underline dark:text-white">{{ page.higher.title }}</span><span class="mt-1 block text-sm text-gray-600 dark:text-gray-400">{{ page.higher.description }}</span></a>{% endif %}
   </nav>
-  <p class="text-xs text-gray-600 dark:text-gray-400">Measured on {{ rc.generated_at | date(format="%-d %B %Y") }} through <code class="font-mono">gh</code> and <code class="font-mono">glab</code>; {{ rc.rule }}.</p>
+  <p class="text-xs text-gray-600 dark:text-gray-400">{{ trans(key="measured_on", lang=lang) | safe }} {{ rc.generated_at | date(format="%-d %B %Y") }} {{ trans(key="through", lang=lang) | safe }} <code class="font-mono">gh</code> {{ trans(key="and", lang=lang) | safe }} <code class="font-mono">glab</code>; {{ rc.rule }}.</p>
 </div>
 {% endblock content %}

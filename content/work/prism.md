@@ -5,6 +5,9 @@ description = "PRISM is an advanced system for behavioral analysis, pattern reco
 template = "work.html"
 weight = 20
 
+[taxonomies]
+tags = ["Tools"]
+
 [extra]
 repo = "prism"
 og_title = "prism: Tools"

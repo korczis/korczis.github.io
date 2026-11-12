@@ -58,11 +58,11 @@ document.addEventListener('alpine:init', () => {
     },
 
     date(value) {
-      return value ? new Date(value).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }) : '';
+      return value ? new Date(value).toLocaleDateString(KorczisHub.locale, { day: 'numeric', month: 'short', year: 'numeric' }) : '';
     },
 
     get activityLabel() {
-      return { active: 'Active', maintained: 'Maintained', dormant: 'Archive' }[this.f?.activity] ?? '';
+      return { active: KorczisHub.t('active'), maintained: KorczisHub.t('maintained'), dormant: KorczisHub.t('archive') }[this.f?.activity] ?? '';
     },
   }));
 });

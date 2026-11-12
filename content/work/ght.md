@@ -5,6 +5,9 @@ description = "Copyright © 2024–2025 Tomas Korcak. ALL RIGHTS RESERVED."
 template = "work.html"
 weight = 24
 
+[taxonomies]
+tags = ["Tools"]
+
 [extra]
 repo = "GHT"
 og_title = "GHT: Tools"

@@ -5,10 +5,13 @@ description = "Advanced AI Agent Framework with Enterprise-Grade BEAM VM Introsp
 template = "work.html"
 weight = 27
 
+[taxonomies]
+tags = ["Tools", "Elixir", "JavaScript", "Python"]
+
 [extra]
 repo = "prismatic"
 og_title = "prismatic: Tools"
 og_image = "og/work-prismatic.png"
 schema = "project"
-keywords = ["prismatic", "Tools", "Elixir", "JavaScript", "Python", "Shell", "Tomas Korcak"]
+keywords = ["prismatic", "Tools", "Elixir", "JavaScript", "Python", "Tomas Korcak"]
 +++

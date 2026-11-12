@@ -1,0 +1,234 @@
+# Words of the site that are content, not interface: every entry in English and Czech (`_cs`).
+# Templates render them as data; scripts/check-i18n.mjs requires both languages for every field.
+
+[majordomus]
+points = ["One policy for every AI coding tool", "Scoped tasks with a finish contract", "Lands only verified work", "Local; it never calls a model"]
+points_cs = ["Jedna politika pro každý AI nástroj pro programování", "Vymezené úkoly se smlouvou o dokončení", "Pustí jen ověřenou práci", "Lokální; nikdy nevolá model"]
+
+[stack.sections.toolkit]
+eyebrow = "Toolkit"
+eyebrow_cs = "Nástroje"
+title = "One stack, used the same way everywhere"
+title_cs = "Jeden stack, všude stejně"
+lead = "The same few tools across every project, so each one looks, behaves and is checked like the others. This site uses all of them."
+lead_cs = "Stejných pár nástrojů v každém projektu, takže každý vypadá, chová se a kontroluje se jako ostatní. Tento web je používá všechny."
+
+[stack.sections.practice]
+eyebrow = "Practice"
+eyebrow_cs = "Praxe"
+title = "Evidence over claims"
+title_cs = "Důkazy místo tvrzení"
+
+[stack.sections.pipeline]
+eyebrow = "Pipeline"
+eyebrow_cs = "Pipeline"
+title = "How this site ships"
+title_cs = "Jak se tento web nasazuje"
+
+[stack.sections.data]
+eyebrow = "Data"
+eyebrow_cs = "Data"
+title = "How the numbers are made"
+title_cs = "Jak vznikají čísla"
+lead = "Refreshed weekly by the refresh workflow; the build itself never touches the network."
+lead_cs = "Obnovováno každý týden refresh workflow; samotný build nikdy nesahá na síť."
+
+[[stack.tools]]
+name = "Flowbite Pro"
+icon = "shield"
+role = "The design system: shell, blocks and components on Tailwind CSS. Licensed; adapted, never copied verbatim."
+role_cs = "Designový systém: shell, bloky a komponenty na Tailwind CSS. Licencovaný; adaptovaný, nikdy nekopírovaný doslova."
+here = "Every page: shell, cards, tables, drawers, tooltips."
+here_cs = "Každá stránka: shell, karty, tabulky, drawery, tooltipy."
+
+[[stack.tools]]
+name = "Alpine.js"
+icon = "code"
+role = "Small reactive behaviour in the markup, on top of pages that already work without it."
+role_cs = "Drobné reaktivní chování v markupu nad stránkami, které fungují i bez něj."
+here = "Filters, the detail drawer, the command palette, the live Majordomus card."
+here_cs = "Filtry, detailní drawer, příkazová paleta, živá karta Majordomu."
+
+[[stack.tools]]
+name = "Cytoscape.js"
+icon = "graph"
+role = "Graphs of things and their relations, laid out and explorable."
+role_cs = "Grafy věcí a jejich vztahů, rozložené a prozkoumatelné."
+here = "The ecosystem graph on the home page."
+here_cs = "Graf ekosystému na úvodní stránce."
+
+[[stack.tools]]
+name = "Apache ECharts"
+icon = "graph"
+role = "Dense, interactive charts: calendars, sunbursts, stacked bars."
+role_cs = "Husté interaktivní grafy: kalendáře, sunbursty, skládané sloupce."
+here = "Contribution calendar, skillset, languages over the years."
+here_cs = "Kalendář příspěvků, dovednosti, jazyky v průběhu let."
+
+[[stack.tools]]
+name = "Chart.js"
+icon = "graph"
+role = "Light charts where a bar or a line says it all."
+role_cs = "Lehké grafy tam, kde vše řekne sloupec nebo čára."
+here = "Repositories by language."
+here_cs = "Repozitáře podle jazyka."
+
+[[stack.tools]]
+name = "p5.js"
+icon = "cube"
+role = "Generative and scientific drawing: simulations, sketches, glyphs."
+role_cs = "Generativní a vědecké kreslení: simulace, skici, glyfy."
+here = "The seeded glyph field behind the hero."
+here_cs = "Seedované pole glyfů za úvodní kartou."
+
+[[stack.tools]]
+name = "Zola"
+icon = "book"
+role = "A static site generator in one binary: fast, multilingual, taxonomies, links checked."
+role_cs = "Generátor statických webů v jedné binárce: rychlý, vícejazyčný, taxonomie, kontrola odkazů."
+here = "This whole site, in English and Czech; also Kompendium."
+here_cs = "Celý tento web v angličtině a češtině; také Kompendium."
+
+[[stack.tools]]
+name = "Majordomus"
+icon = "shield"
+role = "Supervision for AI-assisted work: one policy, scoped tasks, proven finishes."
+role_cs = "Dohled nad prací s AI: jedna politika, vymezené úkoly, doložená dokončení."
+here = "This repository: .ai/ layer, rules, hooks and the CI gate."
+here_cs = "Tento repozitář: vrstva .ai/, pravidla, hooky a brána v CI."
+
+[[stack.practice]]
+title = "Measured, never typed."
+title_cs = "Změřené, nikdy napsané."
+text = "A number on a page comes from a script that measured it, with the date it was measured."
+text_cs = "Číslo na stránce pochází ze skriptu, který ho změřil, i s datem měření."
+
+[[stack.practice]]
+title = "Derived, never hand-written."
+title_cs = "Odvozené, nikdy psané ručně."
+text = "Anything that follows from other files is generated, and CI refuses a stale copy."
+text_cs = "Cokoli, co plyne z jiných souborů, se generuje, a CI odmítne zastaralou kopii."
+
+[[stack.practice]]
+title = "Translated everywhere."
+title_cs = "Přeloženo všude."
+text = "Every interface text exists in English and Czech; a gate fails on any text without a translation."
+text_cs = "Každý text rozhraní existuje anglicky i česky; brána selže na každém textu bez překladu."
+
+[[stack.practice]]
+title = "Accessible by gate."
+title_cs = "Přístupnost hlídaná bránou."
+text = "Every page is checked against WCAG 2.2 AA in both themes and at phone width before it ships."
+text_cs = "Každá stránka se před nasazením kontroluje proti WCAG 2.2 AA v obou tématech i na šířce telefonu."
+
+[[stack.practice]]
+title = "Works without JavaScript."
+title_cs = "Funguje bez JavaScriptu."
+text = "Scripts add filters and charts to pages that are complete without them."
+text_cs = "Skripty přidávají filtry a grafy ke stránkám, které jsou kompletní i bez nich."
+
+[[stack.practice]]
+title = "Supervised."
+title_cs = "Pod dohledem."
+text = "Work on the repository runs under Majordomus: a task has a scope, and it finishes only when its verification ran."
+text_cs = "Práce na repozitáři běží pod Majordomem: úkol má rozsah a skončí, jen když proběhlo jeho ověření."
+
+[[stack.pipeline]]
+title = "Measure"
+title_cs = "Měření"
+text = "gh and glab read GitHub and GitLab; majordomus.dev/build.json gives the release."
+text_cs = "gh a glab čtou GitHub a GitLab; majordomus.dev/build.json dává vydání."
+
+[[stack.pipeline]]
+title = "Derive"
+title_cs = "Odvození"
+text = "Categories, work pages, translations, llms.txt, OG images and site.json are generated and checked."
+text_cs = "Kategorie, stránky práce, překlady, llms.txt, OG obrázky a site.json se generují a kontrolují."
+
+[[stack.pipeline]]
+title = "Build"
+title_cs = "Build"
+text = "Tailwind compiles Flowbite Pro styles; Zola builds both languages, internal links are errors."
+text_cs = "Tailwind kompiluje styly Flowbite Pro; Zola staví oba jazyky, interní odkazy jsou chyby."
+
+[[stack.pipeline]]
+title = "Gate"
+title_cs = "Brána"
+text = "Front matter, data, translations, viz layer, SEO, Flowbite Pro, accessibility, layout and interactions."
+text_cs = "Front matter, data, překlady, vrstva vizualizací, SEO, Flowbite Pro, přístupnost, rozvržení a interakce."
+
+[[stack.pipeline]]
+title = "Supervise"
+title_cs = "Dohled"
+text = "majordomus doctor in CI: the .ai/ layer is healthy and wired, the licence is respected."
+text_cs = "majordomus doctor v CI: vrstva .ai/ je zdravá a zapojená, licence je respektována."
+
+[[stack.pipeline]]
+title = "Deploy"
+title_cs = "Nasazení"
+text = "GitHub Pages from master; production is then audited in a browser and checked to serve this commit."
+text_cs = "GitHub Pages z větve master; produkce se pak audituje v prohlížeči a ověří se, že servíruje tento commit."
+
+# Rows of the "How the numbers are made" table; the value of each row is computed by its id.
+[[stack.data]]
+id = "repos_public"
+label = "Public repositories"
+label_cs = "Veřejné repozitáře"
+source = "GitHub GraphQL: owned, public, not forks"
+source_cs = "GitHub GraphQL: vlastní, veřejné, ne forky"
+
+[[stack.data]]
+id = "contributions"
+label = "Contributions, last 12 months"
+label_cs = "Příspěvky za posledních 12 měsíců"
+source = "GitHub GraphQL: contributionCalendar, as shown on the profile"
+source_cs = "GitHub GraphQL: contributionCalendar, jak ho ukazuje profil"
+
+[[stack.data]]
+id = "repositories"
+label = "Original repositories"
+label_cs = "Původní repozitáře"
+source = "GitHub and GitLab via gh and glab, merged by name; authorship from contributors"
+source_cs = "GitHub a GitLab přes gh a glab, sloučené podle názvu; autorství z přispěvatelů"
+
+[[stack.data]]
+id = "excluded"
+label = "Forks · mirrors · hidden"
+label_cs = "Forky · mirrory · skryté"
+source = "Counted, never listed: forks, other people's code, the owner's hidden list"
+source_cs = "Počítané, nikdy nevypsané: forky, cizí kód, seznam skrytých"
+
+[[stack.data]]
+id = "recent"
+label = "Projects of the last 48 months"
+label_cs = "Projekty posledních 48 měsíců"
+source = "Last commit on the default branch, never the host's activity date"
+source_cs = "Poslední commit ve výchozí větvi, nikdy datum aktivity hostingu"
+
+[[stack.data]]
+id = "categories"
+label = "Categories"
+label_cs = "Kategorie"
+source = "Inferred by the rules (keywords, languages) in data/projects.toml"
+source_cs = "Odvozené pravidly (klíčová slova, jazyky) v data/projects.toml"
+
+[[stack.data]]
+id = "sites"
+label = "Live sites"
+label_cs = "Živé weby"
+source = "HTTPS GET of each site; only sites that answer are listed"
+source_cs = "HTTPS GET každého webu; vypsané jsou jen weby, které odpovídají"
+
+[[stack.data]]
+id = "supervision"
+label = "Majordomus supervision"
+label_cs = "Dohled Majordomu"
+source = "Presence of .ai/manifest.yaml on the default branch"
+source_cs = "Přítomnost .ai/manifest.yaml ve výchozí větvi"
+
+[[stack.data]]
+id = "release"
+label = "Majordomus release"
+label_cs = "Vydání Majordomu"
+source = "majordomus.dev/build.json, re-read live in the browser"
+source_cs = "majordomus.dev/build.json, znovu načtené živě v prohlížeči"

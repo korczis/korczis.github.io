@@ -5,6 +5,9 @@ description = "Small, sharp command-line tools and indexes: data conversion, CSV
 template = "category.html"
 weight = 11
 
+[taxonomies]
+tags = ["Tools", "Gists search", "json2csv", "csv2psql", "astronomists"]
+
 [extra]
 category = "tools"
 og_title = "Tools: 72 repositories."
