@@ -1,0 +1,47 @@
+{#- Command palette (⌘K, Ctrl+K or /): a Flowbite Pro modal shell driven by Alpine.js as an ARIA
+    combobox. Its index is derived here from the catalogue: pages, categories, projects. -#}
+{%- set pcat = load_data(path="data/projects.toml") -%}
+<script type="application/json" id="palette-data">[
+  {"kind": "Page", "name": "Overview", "hint": "Home dashboard", "url": {{ (config.base_url ~ "/") | json_encode | safe }}},
+  {"kind": "Page", "name": "Projects", "hint": "The whole catalogue", "url": {{ (config.base_url ~ "/projects/") | json_encode | safe }}},
+  {"kind": "Page", "name": "Stack", "hint": "Tools, practice, pipeline, data", "url": {{ (config.base_url ~ "/stack/") | json_encode | safe }}},
+  {"kind": "Page", "name": "Majordomus", "hint": "majordomus.dev", "url": {{ config.extra.majordomus_url | json_encode | safe }}},
+  {%- for key, c in pcat.categories %}
+  {"kind": "Category", "name": {{ c.name | json_encode | safe }}, "hint": {{ c.description | json_encode | safe }}, "url": {{ (config.base_url ~ "/projects/" ~ key ~ "/") | json_encode | safe }}},
+  {%- endfor %}
+  {%- for p in pcat.projects %}
+  {"kind": "Project", "name": {{ p.name | json_encode | safe }}, "hint": {{ p.tagline | json_encode | safe }}, "terms": {{ (p.stack | join(sep=" ") ~ " " ~ p.repo) | json_encode | safe }}, "url": {{ (config.base_url ~ "/projects/?project=" ~ p.repo) | json_encode | safe }}}{% if not loop.last %},{% endif %}
+  {%- endfor %}
+]</script>
+<div x-data="palette" x-cloak x-show="open" x-on:keydown.escape.window="close()" class="fixed inset-0 z-50 flex items-start justify-center px-4 pt-20 sm:pt-28"
+  role="dialog" aria-modal="true" aria-labelledby="palette-label">
+  <div class="fixed inset-0 bg-gray-900/50 dark:bg-gray-900/80" @click="close()" aria-hidden="true"></div>
+  <div class="relative w-full max-w-xl overflow-hidden rounded-lg bg-white shadow-lg dark:bg-gray-700">
+    <label id="palette-label" for="palette-input" class="sr-only">Search pages, categories and projects</label>
+    <div class="relative border-b border-gray-200 dark:border-gray-600">
+      <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4 text-gray-500 dark:text-gray-400">{{ <icon name="search" class="h-5 w-5" /> }}</div>
+      <input id="palette-input" x-ref="input" x-model="query" type="text" autocomplete="off" spellcheck="false"
+        role="combobox" aria-expanded="true" aria-controls="palette-results" aria-autocomplete="list" :aria-activedescendant="results.length ? 'palette-option-' + active : null"
+        @keydown.arrow-down.prevent="move(1)" @keydown.arrow-up.prevent="move(-1)" @keydown.enter.prevent="go()" @keydown.tab.prevent
+        placeholder="Search pages, categories, projects, technologies"
+        class="block w-full border-0 bg-transparent py-4 pl-12 pr-16 text-base text-gray-900 placeholder-gray-500 focus:ring-0 dark:text-white dark:placeholder-gray-400">
+      <kbd class="absolute right-4 top-1/2 -translate-y-1/2 rounded border border-gray-200 bg-gray-100 px-2 py-0.5 text-xs font-semibold text-gray-800 dark:border-gray-500 dark:bg-gray-600 dark:text-gray-100">Esc</kbd>
+    </div>
+    <ul id="palette-results" role="listbox" aria-label="Results" class="max-h-[60vh] overflow-y-auto py-2">
+      <template x-for="(item, index) in results" :key="item.url">
+        <li :id="'palette-option-' + index" role="option" :aria-selected="index === active" @mouseenter="active = index" @click="go(index)"
+          class="flex cursor-pointer items-center gap-3 px-4 py-2.5" :class="index === active ? 'bg-gray-100 dark:bg-gray-600' : ''">
+          <span class="w-20 shrink-0 text-xs font-medium uppercase tracking-wide text-gray-600 dark:text-gray-300" x-text="item.kind"></span>
+          <span class="min-w-0 flex-1">
+            <span class="block truncate text-sm font-medium text-gray-900 dark:text-white" x-text="item.name"></span>
+            <span class="block truncate text-xs text-gray-600 dark:text-gray-300" x-text="item.hint"></span>
+          </span>
+        </li>
+      </template>
+      <li x-show="!results.length" class="px-4 py-6 text-center text-sm text-gray-600 dark:text-gray-300" role="presentation">Nothing matches. Try a technology, like p5.js or Rust.</li>
+    </ul>
+    <p class="flex flex-wrap gap-x-4 gap-y-1 border-t border-gray-200 px-4 py-2 text-xs text-gray-600 dark:border-gray-600 dark:text-gray-300">
+      <span><kbd class="font-semibold">↑ ↓</kbd> move</span><span><kbd class="font-semibold">Enter</kbd> open</span><span><kbd class="font-semibold">⌘K</kbd> or <kbd class="font-semibold">/</kbd> anywhere</span>
+    </p>
+  </div>
+</div>

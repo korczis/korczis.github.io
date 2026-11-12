@@ -193,6 +193,11 @@ const snapshot = {
   contributions: contributions(),
   languages: languages(repos),
   projects: Object.fromEntries(projects),
+  // Derived order for the timeline: newest project first, by repository creation.
+  timeline: projects
+    .map(([repo, facts]) => ({ repo, created_at: facts.created_at }))
+    .sort((a, b) => b.created_at.localeCompare(a.created_at))
+    .map((entry) => entry.repo),
   majordomus: await majordomus(),
 };
 

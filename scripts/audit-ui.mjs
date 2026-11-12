@@ -241,10 +241,48 @@ async function checkDetail(browser) {
   return findings;
 }
 
+// The command palette: Ctrl+K from any page opens it with focus in the combobox, typing filters,
+// Enter on the first result opens that project's detail in the catalogue; Escape restores focus.
+async function checkPalette(browser) {
+  const findings = [];
+  const context = await browser.newContext({ viewport: { width: 1280, height: 900 }, reducedMotion: 'reduce' });
+  const page = await context.newPage();
+  await page.goto(`${BASE}stack/`, { waitUntil: 'networkidle' });
+  await page.keyboard.press('Control+k');
+  await page.waitForTimeout(200);
+  let st = await page.evaluate(() => ({ focus: document.activeElement?.id, visible: !!document.getElementById('palette-input')?.offsetParent }));
+  if (st.focus !== 'palette-input' || !st.visible) findings.push(`Ctrl+K did not open the palette: ${JSON.stringify(st)}`);
+  await page.keyboard.press('Escape');
+  await page.waitForTimeout(150);
+  st = await page.evaluate(() => ({ visible: !!document.getElementById('palette-input')?.offsetParent }));
+  if (st.visible) findings.push('Escape did not close the palette');
+  await page.keyboard.press('Control+k');
+  await page.keyboard.type('oscilla');
+  await page.waitForTimeout(200);
+  const first = await page.evaluate(() => document.querySelector('#palette-option-0')?.textContent?.replace(/\s+/g, ' ').trim());
+  if (!first?.includes('Oscilla')) findings.push(`first result for "oscilla" is ${first}`);
+  await Promise.all([page.waitForURL(/projects\/\?project=oscilla/), page.keyboard.press('Enter')]);
+  await page.waitForTimeout(800);
+  const title = await page.evaluate(() => document.getElementById('project-drawer')?.hasAttribute('inert') ? null : document.getElementById('project-drawer-title')?.textContent);
+  if (title !== 'Oscilla') findings.push(`Enter did not open Oscilla's detail (drawer title ${title})`);
+  await context.close();
+  return findings;
+}
+
 const browser = await chromium.launch();
 const results = [];
 let failed = 0;
 try {
+  if (!ONLY || ONLY.test('palette')) {
+    const palette = await checkPalette(browser);
+    if (palette.length) {
+      failed += 1;
+      console.log('FAIL command palette');
+      for (const f of palette) console.log(`     ${f}`);
+    } else {
+      console.log('ok   palette: Ctrl+K opens with focus, Escape closes, search ranks, Enter opens the project');
+    }
+  }
   if (!ONLY || ONLY.test('detail')) {
     const detail = await checkDetail(browser);
     if (detail.length) {

@@ -181,6 +181,40 @@
     </section>
   </div>
 
+  {#- Timeline: Flowbite timeline, newest first, ordered by repository creation (gh.timeline). #}
+  <section class="{{ card }}" aria-labelledby="timeline-title">
+    <div class="mb-6 flex items-center justify-between">
+      <div>
+        <h2 id="timeline-title" class="{{ card_title }}">Timeline</h2>
+        <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">When each project began, newest first; the badge says how alive it is today.</p>
+      </div>
+      <a href="{{ base }}projects/" class="{{ view_all }}">Catalogue{{ <icon name="arrow-right" class="ml-1 h-4 w-4" /> }}</a>
+    </div>
+    <div class="grid grid-cols-1 gap-x-10 md:grid-cols-2">
+      {%- set half = (gh.timeline | length / 2) | round(method="ceil") | int %}
+      {%- for column in [0, 1] %}
+      <ol class="relative border-s border-gray-200 dark:border-gray-700{% if column == 1 %} mt-0 md:mt-0{% endif %}">
+        {%- for repo in gh.timeline %}{% if (column == 0 and loop.index <= half) or (column == 1 and loop.index > half) %}
+        {%- for p in cat.projects %}{% if p.repo == repo %}
+        {%- set f = gh.projects[repo] %}
+        <li class="mb-6 ms-6 last:mb-0">
+          <span class="absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full bg-primary-100 text-primary-700 ring-8 ring-white dark:bg-primary-900 dark:text-primary-300 dark:ring-gray-800">{{ <category_icon key={p.category} class="h-3.5 w-3.5" /> }}</span>
+          <time datetime="{{ f.created_at }}" class="mb-1 block text-sm font-normal leading-none text-gray-600 dark:text-gray-400">{{ f.created_at | date(format="%B %Y") }}</time>
+          <h3 class="flex flex-wrap items-center gap-2 text-base font-semibold text-gray-900 dark:text-white">
+            <a href="{{ base }}projects/?project={{ repo }}" class="hover:underline">{{ p.name }}</a>
+            {%- if f.activity == "active" %}<span class="rounded-md bg-green-100 px-2 py-0.5 text-xs font-medium text-green-800 dark:bg-green-900 dark:text-green-300">Active</span>
+            {%- elif f.activity == "maintained" %}<span class="rounded-md bg-yellow-100 px-2 py-0.5 text-xs font-medium text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300">Maintained</span>
+            {%- else %}<span class="rounded-md bg-gray-100 px-2 py-0.5 text-xs font-medium text-gray-800 dark:bg-gray-700 dark:text-gray-300">Archive</span>{% endif %}
+          </h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400">{{ p.tagline }}</p>
+        </li>
+        {%- endif %}{% endfor %}
+        {%- endif %}{% endfor %}
+      </ol>
+      {%- endfor %}
+    </div>
+  </section>
+
   <div class="grid grid-cols-1 gap-4 xl:grid-cols-3">
     {#- Contribution calendar (ECharts) and languages (Chart.js): Flowbite Pro chart cards. #}
     <section class="{{ card }} xl:col-span-2" aria-labelledby="activity-title">
@@ -228,5 +262,4 @@
 <script src="{{ get_url(path='js/viz/activity.js', cachebust=true) }}" defer></script>
 <script src="{{ get_url(path='js/viz/languages.js', cachebust=true) }}" defer></script>
 <script src="{{ get_url(path='js/components/majordomus.js', cachebust=true) }}" defer></script>
-<script src="{{ get_url(path='js/vendor/alpine.min.js') }}" defer></script>
 {% endblock scripts %}

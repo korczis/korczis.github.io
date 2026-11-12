@@ -31,7 +31,7 @@ also need [majordomus](https://majordomus.dev).
 | `styles/app.css` | Tailwind 4 + flowbite plugin: the Pro theme and the `--hub-*` chart palette |
 | `static/js/site.js` | Theme handling and the component layer every visual goes through |
 | `static/js/viz/` | One visual per file: `glyphs` (p5), `graph` (Cytoscape), `activity` (ECharts), `languages` (Chart.js) |
-| `static/js/components/` | Alpine.js components: catalogue filter, live Majordomus card |
+| `static/js/components/` | Alpine.js components: catalogue filter, project detail drawer, command palette (⌘K), live Majordomus card |
 | `static/llms.txt` | Derived from the catalogue (`npm run llms`) |
 | `scripts/` | Data, vendoring and every gate (`verify-all.sh`, `check-*.mjs`, `audit-ui.mjs`) |
 | `.ai/` | The Majordomus layer: policy, ADRs, rules under `.ai/repo/rules/project/` |

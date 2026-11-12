@@ -60,6 +60,9 @@ for (const repo of Object.keys(snapshot.projects ?? {})) {
 if (snapshot.schema !== 'korczis-hub-github/v1') fail('data/github.json', 'unknown schema');
 if (!snapshot.contributions?.days?.length) fail('data/github.json', 'no contribution days');
 if (!snapshot.majordomus?.version) fail('data/github.json', 'no majordomus version');
+if ((snapshot.timeline ?? []).length !== seen.size || !(snapshot.timeline ?? []).every((r) => seen.has(r))) {
+  fail('data/github.json', 'timeline does not cover the catalogue; run npm run data');
+}
 if (!(catalogue.projects ?? []).some((p) => p.featured)) fail('data/projects.toml', 'nothing featured');
 
 const ageDays = (Date.now() - Date.parse(snapshot.generated_at)) / 86400000;
