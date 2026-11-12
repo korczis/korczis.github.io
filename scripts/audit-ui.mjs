@@ -47,6 +47,8 @@ const PAGES = [
   ['glossary', 'glossary/'],
   ['term', 'glossary/rust/'],
   ['cs-term', 'cs/glossary/osint/'],
+  ['tags', 'tags/'],
+  ['tag', 'tags/rust/'],
   ['404', '404.html'],
 ];
 

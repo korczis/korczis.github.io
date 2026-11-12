@@ -339,6 +339,8 @@ article_label = "Article"
 hint_glossary = "Every term the site uses, defined and sourced"
 kind_term = "Term"
 nav_projects = "Projects"
+tags_article = "Tags are a second way through the site, across the sections. They are never typed by hand: each page's generator derives them from the page's category and languages and writes them into its {front_matter}, and Zola collects them into this index. The number beside a tag is how many pages carry it, so the largest tags show where the work concentrates. Where a tag names a language or a technology, its page leads to the definition in the {glossary}."
+tag_article = "These are the pages of this site tagged {tag}: projects and categories that share it, derived from their data. The tag is a category or a language; follow it to see how the same thread runs through different work."
 
 [languages.cs.translations]
 nothing_here = "Nic tu není."
@@ -644,4 +646,6 @@ article_label = "Článek"
 hint_glossary = "Každý pojem webu, definovaný a se zdrojem"
 kind_term = "Pojem"
 nav_projects = "Projekty"
+tags_article = "Tagy jsou druhá cesta webem, napříč sekcemi. Nikdo je nepíše ručně: generátor každé stránky je odvodí z její kategorie a jazyků a zapíše do jejího {front_matter}, a Zola je posbírá do tohoto rejstříku. Číslo u tagu říká, kolik stránek ho nese, takže největší tagy ukazují, kde se práce soustředí. Když tag pojmenovává jazyk nebo technologii, jeho stránka vede k definici ve {glossary}."
+tag_article = "Toto jsou stránky webu označené tagem {tag}: projekty a kategorie, které ho sdílejí, odvozené z jejich dat. Tag je kategorie nebo jazyk; po jeho stopě je vidět, jak stejné vlákno prochází různou prací."
 # <<< generated translations <<<
