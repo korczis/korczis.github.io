@@ -7,6 +7,11 @@
   {"kind": "Page", "name": "Projects", "hint": "The whole catalogue", "url": {{ (config.base_url ~ "/projects/") | json_encode | safe }}},
   {"kind": "Page", "name": "About", "hint": "Profile, CV, languages over the years", "url": {{ (config.base_url ~ "/about/") | json_encode | safe }}},
   {"kind": "Page", "name": "Repositories", "hint": "Every original repository on GitHub and GitLab", "url": {{ (config.base_url ~ "/repositories/") | json_encode | safe }}},
+  {"kind": "Page", "name": "Recent work", "hint": "Every project with a commit in the last 12, 24 and 48 months", "url": {{ (config.base_url ~ "/work/") | json_encode | safe }}},
+  {%- set wsec = get_section(path="work/_index.md") %}
+  {%- for wp in wsec.pages %}
+  {"kind": "Work", "name": {{ wp.title | json_encode | safe }}, "hint": {{ wp.description | json_encode | safe }}, "terms": {{ wp.extra.keywords | join(sep=" ") | json_encode | safe }}, "url": {{ wp.permalink | json_encode | safe }}},
+  {%- endfor %}
   {"kind": "Page", "name": "Stack", "hint": "Tools, practice, pipeline, data", "url": {{ (config.base_url ~ "/stack/") | json_encode | safe }}},
   {"kind": "Page", "name": "Majordomus", "hint": "majordomus.dev", "url": {{ config.extra.majordomus_url | json_encode | safe }}},
   {%- for key, c in pcat.categories %}

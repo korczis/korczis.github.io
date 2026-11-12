@@ -1574,7 +1574,7 @@
    "hosts": {
     "github": "https://github.com/korczis/korczis.github.io"
    },
-   "site": "https://korczis.github.io/korczis.github.io/",
+   "site": null,
    "category": "ai",
    "curated": false
   },
@@ -1659,7 +1659,7 @@
     "github": "https://github.com/korczis/libtwin",
     "gitlab": "https://gitlab.com/korczis/libtwin"
    },
-   "site": "http://ozlabs.org/~jk/projects/petitboot/"
+   "site": null
   },
   {
    "name": "lola",
@@ -2007,7 +2007,7 @@
     "github": "https://github.com/korczis/nestravenkam",
     "gitlab": "https://gitlab.com/korczis/nestravenkam"
    },
-   "site": "https://korczis.github.io/nestravenkam/",
+   "site": null,
    "category": "web",
    "curated": false
   },
@@ -2197,7 +2197,7 @@
     "github": "https://github.com/korczis/petitboot",
     "gitlab": "https://gitlab.com/korczis/petitboot"
    },
-   "site": "http://ozlabs.org/~jk/projects/petitboot/"
+   "site": null
   },
   {
    "name": "photos",
@@ -3124,7 +3124,7 @@
    "hosts": {
     "github": "https://github.com/korczis/unable.cz"
    },
-   "site": "https://korczis.github.io/unable.cz/",
+   "site": null,
    "category": "tools",
    "curated": false
   },
@@ -4197,7 +4197,7 @@
   },
   "ai": {
    "repos": 7,
-   "sites": 3,
+   "sites": 2,
    "top_language": "HTML",
    "since": "2024"
   },
@@ -4215,7 +4215,7 @@
   },
   "tools": {
    "repos": 72,
-   "sites": 7,
+   "sites": 6,
    "top_language": "JavaScript",
    "since": "2012"
   },
@@ -4239,7 +4239,7 @@
   },
   "web": {
    "repos": 9,
-   "sites": 1,
+   "sites": 0,
    "top_language": "JavaScript",
    "since": "2014"
   },
@@ -5005,7 +5005,7 @@
    "hosts": {
     "github": "https://github.com/korczis/korczis.github.io"
    },
-   "site": "https://korczis.github.io/korczis.github.io/",
+   "site": null,
    "category": "ai",
    "curated": false
   },
@@ -5224,7 +5224,7 @@
    "hosts": {
     "github": "https://github.com/korczis/unable.cz"
    },
-   "site": "https://korczis.github.io/unable.cz/",
+   "site": null,
    "category": "tools",
    "curated": false
   },
@@ -6553,7 +6553,7 @@
     "github": "https://github.com/korczis/nestravenkam",
     "gitlab": "https://gitlab.com/korczis/nestravenkam"
    },
-   "site": "https://korczis.github.io/nestravenkam/",
+   "site": null,
    "category": "web",
    "curated": false
   },

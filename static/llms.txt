@@ -12,6 +12,7 @@ Every project below links to its source on GitHub; most have a live site.
 - [About](https://korczis.github.io/about/): profile, CV, languages over the years, sources
 - [Projects](https://korczis.github.io/projects/): the curated catalogue, filterable, with project details
 - [Repositories](https://korczis.github.io/repositories/): every original repository on GitHub and GitLab
+- [Recent work](https://korczis.github.io/work/): every project with a commit in the last 12, 24 and 48 months, one page each
 - [Stack](https://korczis.github.io/stack/): the tools and practices behind every project
 
 ## AI engineering

@@ -12,6 +12,7 @@ Every project below links to its source on GitHub; most have a live site.
 - [About](https://korczis.github.io/about/): profile, CV, languages over the years, sources
 - [Projects](https://korczis.github.io/projects/): the curated catalogue, filterable, with project details
 - [Repositories](https://korczis.github.io/repositories/): every original repository on GitHub and GitLab
+- [Recent work](https://korczis.github.io/work/): every project with a commit in the last 12, 24 and 48 months, one page each
 - [Stack](https://korczis.github.io/stack/): the tools and practices behind every project
 
 ## AI engineering
@@ -72,7 +73,7 @@ Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist s
 
 ### AI engineering (7)
 
-- korczis.github.io: Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus. (HTML, 2024). GitHub https://github.com/korczis/korczis.github.io; site https://korczis.github.io/korczis.github.io/
+- korczis.github.io: Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus. (HTML, 2024). GitHub https://github.com/korczis/korczis.github.io
 - prismatic-majordomus: AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model. (Rust, 2026). GitHub https://github.com/korczis/prismatic-majordomus; site https://korczis.github.io/prismatic-majordomus/
 - osint-case-ratcliffe-moscow-2026: Open-source intelligence assessment of the CIA Director's unannounced Moscow visit (2026-08-25) — maintained with Claude Code skills; reusable OSINT case toolkit (HTML, 2026). GitHub https://github.com/korczis/osint-case-ratcliffe-moscow-2026; site https://korczis.github.io/osint-case-ratcliffe-moscow-2026/
 - llm: Local-first, provider-agnostic archive of AI conversations (ChatGPT, Claude, Gemini, Codex) — immutable, content-addressed, searchable evidence layer built in Elixir/Ecto. (2026). GitLab https://gitlab.com/korczis/llm
@@ -198,7 +199,7 @@ Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist s
 ### Web (9)
 
 - job-processor: This is a simple web service built with Elixir, Plug, and Cowboy that processes job tasks with dependencies and generates execution order and bash scripts. (2024). GitLab https://gitlab.com/korczis/job-processor
-- nestravenkam: Stravenky (CSS, 2019). GitHub https://github.com/korczis/nestravenkam; GitLab https://gitlab.com/korczis/nestravenkam; site https://korczis.github.io/nestravenkam/
+- nestravenkam: Stravenky (CSS, 2019). GitHub https://github.com/korczis/nestravenkam; GitLab https://gitlab.com/korczis/nestravenkam
 - tosh: Yet Another Web Application Template/Framework (Elixir, 2019). GitHub https://github.com/korczis/tosh; GitLab https://gitlab.com/korczis/tosh
 - the-scratch: Single Page Application written in Elm with Elixir/Phoenix Backend (JavaScript, 2017). GitHub https://github.com/korczis/the-scratch; GitLab https://gitlab.com/korczis/the-scratch
 - web-spa: Single Page Application written in Elm with Elixir/Phoenix Backend (JavaScript, 2017). GitHub https://github.com/korczis/web-spa; GitLab https://gitlab.com/korczis/web-spa
@@ -244,7 +245,7 @@ Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist s
 - astronomists (Python, 2026). GitHub https://github.com/korczis/astronomists; site https://korczis.github.io/astronomists/
 - vomaste.cz (JavaScript, 2026). GitHub https://github.com/korczis/vomaste.cz; site https://korczis.github.io/vomaste.cz/
 - the-psycho (2025). GitLab https://gitlab.com/korczis/the-psycho
-- unable.cz (JavaScript, 2026). GitHub https://github.com/korczis/unable.cz; site https://korczis.github.io/unable.cz/
+- unable.cz (JavaScript, 2026). GitHub https://github.com/korczis/unable.cz
 - gists-search: Catalogue, enrichment and search for a mirror of korczis's GitHub gists (Python, 2026). GitHub https://github.com/korczis/gists-search; site https://korczis.github.io/gists-search/
 - u-tygra (JavaScript, 2024). GitHub https://github.com/korczis/u-tygra; GitLab https://gitlab.com/korczis/u-tygra; site https://korczis.github.io/u-tygra/
 - tinder-nomics (2025). GitLab https://gitlab.com/korczis/tinder-nomics

@@ -3,6 +3,7 @@
     template. Below lg it is a Flowbite Drawer; static/js/site.js keeps its accessibility state. -#}
 {%- set cat = load_data(path="data/projects.toml") -%}
 {%- set six = load_data(path="data/index.json") -%}
+{%- set src = load_data(path="data/recent.json") -%}
 {%- set item = "group flex items-center rounded-lg p-2 text-base font-normal text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-700" -%}
 {%- set ico = "h-6 w-6 shrink-0 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" -%}
 {%- set on = " bg-gray-100 font-medium dark:bg-gray-700" -%}
@@ -23,12 +24,13 @@
               </div>
             </form>
           </li>
-          {%- for link in [["Overview", "/", "globe"], ["About", "/about/", "book"], ["Projects", "/projects/", "cube"], ["Repositories", "/repositories/", "github"], ["Stack", "/stack/", "code"]] %}
+          {%- for link in [["Overview", "/", "globe"], ["About", "/about/", "book"], ["Recent work", "/work/", "clock"], ["Projects", "/projects/", "cube"], ["Repositories", "/repositories/", "github"], ["Stack", "/stack/", "code"]] %}
           <li>
-            <a href="{{ config.base_url }}{{ link[1] }}" class="{{ item }}{% if here == link[1] %}{{ on }}{% endif %}"{% if here == link[1] %} aria-current="page"{% endif %}>
+            <a href="{{ config.base_url }}{{ link[1] }}" class="{{ item }}{% if here == link[1] or (link[1] == "/work/" and "/work/" in here) %}{{ on }}{% endif %}"{% if here == link[1] %} aria-current="page"{% endif %}>
               {{ <icon name={link[2]} class={ico} /> }}<span class="ml-3 flex-1 whitespace-nowrap">{{ link[0] }}</span>
               {%- if link[1] == "/projects/" %}<span class="{{ badge }}">{{ cat.projects | length }}</span>{% endif %}
               {%- if link[1] == "/repositories/" %}<span class="{{ badge }}">{{ six.counts.own }}</span>{% endif %}
+              {%- if link[1] == "/work/" %}<span class="{{ badge }}">{{ src.repos | length }}</span>{% endif %}
             </a>
           </li>
           {%- endfor %}

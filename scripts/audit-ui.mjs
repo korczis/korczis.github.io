@@ -30,11 +30,16 @@ const TAGS = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'];
 const FULL_RUNS = [[375, 'light'], [375, 'dark'], [1440, 'light'], [1440, 'dark']];
 const LAYOUT_WIDTHS = [320, 768, 1024, 1920];
 const CLS_LIMIT = 0.1;
+// The first work page is whichever project was active most recently (derived, never typed).
+const firstWork = JSON.parse(readFileSync(new URL('../data/recent.json', import.meta.url), 'utf8')).repos[0]?.name
+  ?.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const PAGES = [
   ['home', ''],
   ['about', 'about/'],
   ['projects', 'projects/'],
   ['repositories', 'repositories/'],
+  ['work', 'work/'],
+  ...(firstWork ? [['work-page', `work/${firstWork}/`]] : []),
   ['category', 'projects/science/'],
   ['stack', 'stack/'],
   ['404', '404.html'],
@@ -152,7 +157,10 @@ function collect(result) {
     if (!abs.startsWith(origin)) continue;
     const url = new URL(abs);
     const path = decodeURIComponent(url.pathname);
-    if (PROJECT_SITES.has(path.split('/').filter(Boolean)[0])) continue;
+    // A same-origin path whose first segment this build does not have is another repository's
+    // GitHub Pages site (korczis.github.io/<repo>/): checked by check-live, not against this build.
+    const first = path.split('/').filter(Boolean)[0];
+    if (first && (PROJECT_SITES.has(first) || !existsSync(join(SITE_DIR, first)))) continue;
     if (path !== path.toLowerCase()) LINK_FAILURES.push(`/${result.path}: upper case in link ${raw}`);
     url.hash = '';
     url.search = '';
@@ -263,10 +271,16 @@ async function checkPalette(browser) {
   await page.waitForTimeout(200);
   const first = await page.evaluate(() => document.querySelector('#palette-option-0')?.textContent?.replace(/\s+/g, ' ').trim());
   if (!first?.includes('Oscilla')) findings.push(`first result for "oscilla" is ${first}`);
-  await Promise.all([page.waitForURL(/projects\/\?project=oscilla/), page.keyboard.press('Enter')]);
+  // Enter opens the first result, whichever page that is (the work page or the catalogue detail);
+  // the destination must then show Oscilla as its heading or open detail.
+  await Promise.all([page.waitForURL(/oscilla/i, { timeout: 15000 }), page.keyboard.press('Enter')]);
   await page.waitForTimeout(800);
-  const title = await page.evaluate(() => document.getElementById('project-drawer')?.hasAttribute('inert') ? null : document.getElementById('project-drawer-title')?.textContent);
-  if (title !== 'Oscilla') findings.push(`Enter did not open Oscilla's detail (drawer title ${title})`);
+  const shown = await page.evaluate(() => {
+    const drawer = document.getElementById('project-drawer');
+    if (drawer && !drawer.hasAttribute('inert')) return document.getElementById('project-drawer-title')?.textContent;
+    return document.querySelector('h1')?.textContent?.trim();
+  });
+  if (shown !== 'Oscilla') findings.push(`Enter did not open Oscilla (shown: ${shown})`);
   await context.close();
   return findings;
 }
@@ -276,7 +290,7 @@ const results = [];
 let failed = 0;
 try {
   if (!ONLY || ONLY.test('palette')) {
-    const palette = await checkPalette(browser);
+    const palette = await checkPalette(browser).catch((error) => [`threw: ${error.message.split('\n')[0]}`]);
     if (palette.length) {
       failed += 1;
       console.log('FAIL command palette');
@@ -286,7 +300,7 @@ try {
     }
   }
   if (!ONLY || ONLY.test('detail')) {
-    const detail = await checkDetail(browser);
+    const detail = await checkDetail(browser).catch((error) => [`threw: ${error.message.split('\n')[0]}`]);
     if (detail.length) {
       failed += 1;
       console.log('FAIL detail drawer and table view (/projects/)');
@@ -296,7 +310,7 @@ try {
     }
   }
   if (!ONLY || ONLY.test('drawer')) {
-    const drawer = await checkDrawer(browser);
+    const drawer = await checkDrawer(browser).catch((error) => [`threw: ${error.message.split('\n')[0]}`]);
     if (drawer.length) {
       failed += 1;
       console.log('FAIL drawer (375 px, then 1280 px)');

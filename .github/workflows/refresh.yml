@@ -30,9 +30,9 @@ jobs:
       - uses: ./.github/actions/setup
       - name: Renderer for the Open Graph images
         run: sudo apt-get install -y --no-install-recommends librsvg2-bin
-      - name: Measure (GitHub, GitLab, majordomus.dev)
-        run: npm run --silent data && npm run --silent index
-      - name: Derive (categories, llms.txt, OG images, site.json)
+      - name: Measure (GitHub, GitLab, majordomus.dev; the last 12, 24 and 48 months)
+        run: npm run --silent data && npm run --silent index && npm run --silent recent
+      - name: Derive (categories, work pages, llms.txt, OG images, site.json)
         run: npm run --silent derive
       - name: Every gate (data, front matter, derived files, viz layer, build, SEO)
         run: npm run --silent check

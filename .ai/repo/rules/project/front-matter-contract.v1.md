@@ -24,10 +24,12 @@ over measured data stays true by itself; a site with typed figures goes stale on
   Nothing else.
 - Front matter matches `static/schemas/front-matter.schema.json` (served at
   `/schemas/front-matter.schema.json`); `scripts/check-front-matter.mjs` validates it.
-- Derived, each with a `--check`: category pages, `llms.txt`, `llms-full.txt`, OG images,
+- Derived, each with a `--check`: category pages, one page per project with a commit in the last
+  48 months (`content/work/`, from `data/recent.json`, the last commit date decides, never the
+  host's activity date), `llms.txt`, `llms-full.txt`, OG images,
   `site.json` (every page, category, project and repository as data), SEO and JSON-LD.
 - `.github/workflows/refresh.yml` re-measures every Monday (`npm run refresh`: data, index,
-  derive), runs `npm run check`, and only when every gate passes commits to master and starts the
+  recent, derive), runs `npm run check`, and only when every gate passes commits to master and starts the
   deploy. A failing gate leaves the published site as it was.
 
 # Failure behaviour

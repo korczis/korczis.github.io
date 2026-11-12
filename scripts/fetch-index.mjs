@@ -267,9 +267,29 @@ function derive(allRepos, fetchedCounts, generatedAt) {
   };
 }
 
+// A site is listed only when it answers: GitHub Pages being enabled is not a site (some are
+// empty, some moved to their own domain). --probe re-checks the stored index without refetching.
+async function probeSites(repos) {
+  await pool(repos, async (r) => {
+    if (!r.site) return;
+    if (r.site.replace(/\/$/, '') === `https://${LOGIN}.github.io/${LOGIN}.github.io`) { r.site = null; return; }
+    try {
+      const response = await fetch(r.site, { redirect: 'follow', signal: AbortSignal.timeout(15000) });
+      if (!response.ok) r.site = null;
+    } catch {
+      r.site = null;
+    }
+  });
+}
+
 const TARGET = join(ROOT, 'data/index.json');
 let index;
-if (process.argv.includes('--derive')) {
+if (process.argv.includes('--probe')) {
+  const stored = JSON.parse(readFileSync(TARGET, 'utf8'));
+  const all = stored.all_repos ?? stored.repos;
+  await probeSites(all);
+  index = derive(all, stored.counts, stored.generated_at);
+} else if (process.argv.includes('--derive')) {
   const stored = JSON.parse(readFileSync(TARGET, 'utf8'));
   index = derive(stored.all_repos ?? stored.repos, stored.counts, stored.generated_at);
 } else {
@@ -312,6 +332,7 @@ if (process.argv.includes('--derive')) {
       site: r.pages || r.homepage || null,
     });
   }
+  await probeSites(repos);
   index = derive(repos, counts, new Date().toISOString().replace(/\.\d{3}Z$/, 'Z'));
 }
 

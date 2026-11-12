@@ -1,0 +1,1508 @@
+{
+ "schema": "korczis-hub-recent/v1",
+ "generated_at": "2026-11-12T04:06:41Z",
+ "window_days": 1461,
+ "periods": [
+  {
+   "months": 12,
+   "repos": 22
+  },
+  {
+   "months": 24,
+   "repos": 10
+  },
+  {
+   "months": 48,
+   "repos": 11
+  }
+ ],
+ "rule": "a repository counts when its default branch has a commit in the window; host activity dates are ignored",
+ "candidates": 74,
+ "repos": [
+  {
+   "name": "sonic-playground",
+   "period": 12,
+   "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+   "category": "media",
+   "language": "HTML",
+   "created_at": "2026-11-12T00:48:36Z",
+   "last_commit": "2026-11-12T04:03:22Z",
+   "last_message": "Merge branch 'fix/sweep-retry-stall'",
+   "languages": [
+    {
+     "name": "JavaScript",
+     "share": 36.2
+    },
+    {
+     "name": "HTML",
+     "share": 29.5
+    },
+    {
+     "name": "Python",
+     "share": 28.5
+    },
+    {
+     "name": "Shell",
+     "share": 3.9
+    },
+    {
+     "name": "CSS",
+     "share": 1.9
+    }
+   ],
+   "readme": "A hand-picked music journal: one review per track, explored by genre, feeling and mood, played in a bottom-bar player that keeps going while you browse. Live at https://korczis.github.io/sonic-playground/.",
+   "topics": [],
+   "hosts": {
+    "github": "https://github.com/korczis/sonic-playground"
+   },
+   "site": "https://korczis.github.io/sonic-playground/",
+   "curated": true,
+   "stars": 0
+  },
+  {
+   "name": "korczis.github.io",
+   "period": 12,
+   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+   "category": "ai",
+   "language": "HTML",
+   "created_at": "2024-12-24T16:48:15Z",
+   "last_commit": "2026-11-12T04:00:48Z",
+   "last_message": "build(deps-dev): bump the site group across 1 directory with 2 updates (#4)",
+   "languages": [
+    {
+     "name": "HTML",
+     "share": 49.5
+    },
+    {
+     "name": "JavaScript",
+     "share": 43.5
+    },
+    {
+     "name": "Shell",
+     "share": 4.1
+    },
+    {
+     "name": "CSS",
+     "share": 2.8
+    }
+   ],
+   "readme": "The personal hub of Tomas Korcak (korczis). It covers who I am, the projects I build with their live sites, the stack behind them, and Majordomus, which supervises the work.",
+   "topics": [
+    "accessibility",
+    "ai-agents",
+    "alpinejs",
+    "chartjs",
+    "cytoscape",
+    "echarts",
+    "flowbite",
+    "github-pages",
+    "majordomus",
+    "p5js",
+    "personal-website",
+    "portfolio",
+    "tailwindcss",
+    "zola"
+   ],
+   "hosts": {
+    "github": "https://github.com/korczis/korczis.github.io"
+   },
+   "site": null,
+   "curated": false,
+   "stars": 0
+  },
+  {
+   "name": "kompendium-epistemicke-anihilace",
+   "period": 12,
+   "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
+   "category": "knowledge",
+   "language": "Elixir",
+   "created_at": "2026-11-09T22:04:50Z",
+   "last_commit": "2026-11-12T03:26:22Z",
+   "last_message": "Merge branch 'fix/template-figure-gate': číslo jen v odkazu na jinou stránku není šablonové",
+   "languages": [
+    {
+     "name": "Elixir",
+     "share": 35.7
+    },
+    {
+     "name": "JavaScript",
+     "share": 22.7
+    },
+    {
+     "name": "HTML",
+     "share": 14
+    },
+    {
+     "name": "Python",
+     "share": 13.8
+    },
+    {
+     "name": "Rust",
+     "share": 9
+    },
+    {
+     "name": "Shell",
+     "share": 4.6
+    }
+   ],
+   "readme": "Defenzivní taxonomie jevů, které systematicky rozkládají schopnost člověka poznávat.",
+   "topics": [
+    "czech",
+    "epistemology",
+    "flowbite",
+    "kompendium",
+    "majordomus",
+    "manipulation",
+    "psychology",
+    "taxonomy",
+    "zola"
+   ],
+   "hosts": {
+    "github": "https://github.com/korczis/kompendium-epistemicke-anihilace"
+   },
+   "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+   "curated": true,
+   "stars": 0
+  },
+  {
+   "name": "algoglyph",
+   "period": 12,
+   "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
+   "category": "science",
+   "language": "TypeScript",
+   "created_at": "2026-11-11T18:09:38Z",
+   "last_commit": "2026-11-12T03:23:09Z",
+   "last_message": "fix(test): a Rust test's time bound guards a hang, never a speed",
+   "languages": [
+    {
+     "name": "TypeScript",
+     "share": 92.2
+    },
+    {
+     "name": "Rust",
+     "share": 2.5
+    },
+    {
+     "name": "HTML",
+     "share": 2.5
+    },
+    {
+     "name": "JavaScript",
+     "share": 2.2
+    },
+    {
+     "name": "Shell",
+     "share": 0.3
+    },
+    {
+     "name": "Just",
+     "share": 0.1
+    }
+   ],
+   "readme": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js simulations whose every number is measured from the running state.",
+   "topics": [
+    "algorithms",
+    "alpinejs",
+    "creative-coding",
+    "data-visualization",
+    "flowbite",
+    "generative-art",
+    "majordomus",
+    "p5js",
+    "physics-simulation",
+    "tailwindcss",
+    "typescript",
+    "webgl"
+   ],
+   "hosts": {
+    "github": "https://github.com/korczis/algoglyph"
+   },
+   "site": "https://korczis.github.io/algoglyph/",
+   "curated": true,
+   "stars": 0
+  },
+  {
+   "name": "oscilla",
+   "period": 12,
+   "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+   "category": "science",
+   "language": "JavaScript",
+   "created_at": "2026-10-01T21:05:33Z",
+   "last_commit": "2026-11-12T01:04:17Z",
+   "last_message": "feat(ui): train T14, the Sequencer gets one primary path and an Otevřít v… menu, a collapsed Trace, no more null, and release v3.36.0 (#537)",
+   "languages": [
+    {
+     "name": "JavaScript",
+     "share": 96.9
+    },
+    {
+     "name": "HTML",
+     "share": 1.9
+    },
+    {
+     "name": "CSS",
+     "share": 1.1
+    },
+    {
+     "name": "Shell",
+     "share": 0
+    }
+   ],
+   "readme": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+   "topics": [
+    "acoustics",
+    "audio",
+    "dsp",
+    "education",
+    "javascript",
+    "signal-processing",
+    "spectrogram",
+    "synthesizer",
+    "web-audio"
+   ],
+   "hosts": {
+    "github": "https://github.com/korczis/oscilla"
+   },
+   "site": "https://korczis.github.io/oscilla/",
+   "curated": true,
+   "stars": 1
+  },
+  {
+   "name": "prismatic-majordomus",
+   "period": 12,
+   "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+   "category": "ai",
+   "language": "Rust",
+   "created_at": "2026-09-03T20:24:57Z",
+   "last_commit": "2026-11-11T09:59:13Z",
+   "last_message": "Merge pull request #3007 from korczis/release/bump-1.0.2",
+   "languages": [
+    {
+     "name": "Rust",
+     "share": 60.8
+    },
+    {
+     "name": "Shell",
+     "share": 29.5
+    },
+    {
+     "name": "JavaScript",
+     "share": 4.1
+    },
+    {
+     "name": "HTML",
+     "share": 3.8
+    },
+    {
+     "name": "CSS",
+     "share": 0.6
+    },
+    {
+     "name": "Python",
+     "share": 0.4
+    }
+   ],
+   "readme": "Your AI agents say the work is done. Majordomus makes them prove it.",
+   "topics": [
+    "agentic-ai",
+    "ai",
+    "ai-agents",
+    "ai-governance",
+    "claude-code",
+    "cli",
+    "codex",
+    "continuous-integration",
+    "developer-tools",
+    "devops",
+    "gemini",
+    "llm",
+    "llmops",
+    "mcp",
+    "mermaid",
+    "model-context-protocol",
+    "multi-agent",
+    "policy-as-code",
+    "rust"
+   ],
+   "hosts": {
+    "github": "https://github.com/korczis/prismatic-majordomus"
+   },
+   "site": "https://korczis.github.io/prismatic-majordomus/",
+   "curated": true,
+   "stars": 1
+  },
+  {
+   "name": "vomaste.cz",
+   "period": 12,
+   "description": null,
+   "category": "tools",
+   "language": "JavaScript",
+   "created_at": "2026-07-21T08:54:25Z",
+   "last_commit": "2026-11-08T20:48:37Z",
+   "last_message": "feat(validate): chyby tvaru záznamu říkají, co opravit",
+   "languages": [
+    {
+     "name": "JavaScript",
+     "share": 81
+    },
+    {
+     "name": "HTML",
+     "share": 16.3
+    },
+    {
+     "name": "Shell",
+     "share": 1.4
+    },
+    {
+     "name": "CSS",
+     "share": 1.1
+    },
+    {
+     "name": "Just",
+     "share": 0.3
+    }
+   ],
+   "readme": "Otevřený, Git-native systém pro tvorbu a publikaci dohledatelných dossierů ve veřejném zájmu. Tvrzení, zdroje, entity, kauzy a vztahy jsou strukturovaná, verzovaná data; validují se reprodukovatelným toolingem a materializují do statického webu (Zola), nasazovaného přes GitHub Pages. Každé podstatné tvrzení má zůstat propojené se svým zdrojem, stavem ověření a historií revizí.",
+   "topics": [],
+   "hosts": {
+    "github": "https://github.com/korczis/vomaste.cz"
+   },
+   "site": "https://korczis.github.io/vomaste.cz/",
+   "curated": false,
+   "stars": 0
+  },
+  {
+   "name": "majordomus-reel",
+   "period": 12,
+   "description": "A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound",
+   "category": "media",
+   "language": "HTML",
+   "created_at": "2026-10-23T00:51:59Z",
+   "last_commit": "2026-10-26T01:08:35Z",
+   "last_message": "chore(rules): vendor the majordomus standard rules of 1.0.0-alpha.8",
+   "languages": [
+    {
+     "name": "HTML",
+     "share": 49.6
+    },
+    {
+     "name": "JavaScript",
+     "share": 49.2
+    },
+    {
+     "name": "Shell",
+     "share": 0.9
+    },
+    {
+     "name": "Python",
+     "share": 0.3
+    }
+   ],
+   "readme": "A vertical promo video for Majordomus, rendered from code: narration, every frame, the music and the sound effects. Nothing is filmed, licensed or generated by a video model.",
+   "topics": [
+    "ai-agents",
+    "ffmpeg",
+    "generative",
+    "majordomus",
+    "puppeteer",
+    "video"
+   ],
+   "hosts": {
+    "github": "https://github.com/korczis/majordomus-reel"
+   },
+   "site": "https://korczis.github.io/majordomus-reel/",
+   "curated": true,
+   "stars": 0
+  },
+  {
+   "name": "catharsis-as-a-service",
+   "period": 12,
+   "description": "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact.",
+   "category": "media",
+   "language": "HTML",
+   "created_at": "2026-09-14T09:54:06Z",
+   "last_commit": "2026-09-14T23:06:01Z",
+   "last_message": "feat(discover): link the detection sandbox from the pages whose argument it demonstrates",
+   "languages": [
+    {
+     "name": "HTML",
+     "share": 34.3
+    },
+    {
+     "name": "Python",
+     "share": 27.7
+    },
+    {
+     "name": "JavaScript",
+     "share": 19.3
+    },
+    {
+     "name": "CSS",
+     "share": 11.4
+    },
+    {
+     "name": "Rust",
+     "share": 5.2
+    },
+    {
+     "name": "Shell",
+     "share": 2.1
+    }
+   ],
+   "readme": "Live: https://korczis.github.io/catharsis-as-a-service/ (čeština) · Releases: https://github.com/korczis/catharsis-as-a-service/releases · Commands: https://korczis.github.io/catharsis-as-a-service/commands/ · API: https://korczis.github.io/catharsis-as-a-service/api/v1/index.json",
+   "topics": [],
+   "hosts": {
+    "github": "https://github.com/korczis/catharsis-as-a-service"
+   },
+   "site": "https://korczis.github.io/catharsis-as-a-service/",
+   "curated": true,
+   "stars": 0
+  },
+  {
+   "name": "crisis-map",
+   "period": 12,
+   "description": "Mini crisis map: incident reports normalised, geocoded via local Nominatim, stored as PostGIS geography, served from one capability registry (LiveView, REST, OpenAPI, MCP, CLI)",
+   "category": "data",
+   "language": "Elixir",
+   "created_at": "2026-09-08T00:27:41Z",
+   "last_commit": "2026-09-08T00:32:55Z",
+   "last_message": "fix(site): the overview page is titled once",
+   "languages": [
+    {
+     "name": "Elixir",
+     "share": 96.2
+    },
+    {
+     "name": "CSS",
+     "share": 1.6
+    },
+    {
+     "name": "JavaScript",
+     "share": 1.3
+    },
+    {
+     "name": "HTML",
+     "share": 0.9
+    }
+   ],
+   "readme": "A small vertical slice: incident reports in, points on a map out.",
+   "topics": [],
+   "hosts": {
+    "github": "https://github.com/korczis/crisis-map"
+   },
+   "site": "https://korczis.github.io/crisis-map/",
+   "curated": true,
+   "stars": 0
+  },
+  {
+   "name": "data-atlas",
+   "period": 12,
+   "description": "Katalog GIS a geodatových zdrojů — datasety, katastr, doprava, remote sensing, prostorová analytika. Jednosouborová prohledávatelná stránka.",
+   "category": "data",
+   "language": "Python",
+   "created_at": "2026-08-27T17:47:05Z",
+   "last_commit": "2026-08-30T18:44:34Z",
+   "last_message": "Merge pull request #2 from korczis/test/parser-coverage",
+   "languages": [
+    {
+     "name": "Python",
+     "share": 61.2
+    },
+    {
+     "name": "HTML",
+     "share": 18.2
+    },
+    {
+     "name": "JavaScript",
+     "share": 12.6
+    },
+    {
+     "name": "PLpgSQL",
+     "share": 5.6
+    },
+    {
+     "name": "Just",
+     "share": 1.5
+    },
+    {
+     "name": "Shell",
+     "share": 0.6
+    }
+   ],
+   "readme": "Katalog geodat, otevřených dat, veřejných registrů a OSINT/DD zdrojů Evropské unie — katastr, doprava, statistika, obchodní rejstříky, skuteční majitelé, insolvence, zakázky, soudy, regulace a rizika. Prohledávatelný, filtrovatelný, na jedné stránce.",
+   "topics": [
+    "catalog",
+    "czech-republic",
+    "geodata",
+    "geospatial",
+    "gis",
+    "open-data",
+    "openstreetmap",
+    "postgis"
+   ],
+   "hosts": {
+    "github": "https://github.com/korczis/data-atlas"
+   },
+   "site": "https://korczis.github.io/data-atlas/",
+   "curated": true,
+   "stars": 0
+  },
+  {
+   "name": "gists-search",
+   "period": 12,
+   "description": "Catalogue, enrichment and search for a mirror of korczis's GitHub gists",
+   "category": "tools",
+   "language": "Python",
+   "created_at": "2026-08-27T20:23:18Z",
+   "last_commit": "2026-08-27T20:26:10Z",
+   "last_message": "docs(gists): add README, architecture doc and deploy recipe",
+   "languages": [
+    {
+     "name": "Python",
+     "share": 58.5
+    },
+    {
+     "name": "JavaScript",
+     "share": 25.1
+    },
+    {
+     "name": "HTML",
+     "share": 8
+    },
+    {
+     "name": "Just",
+     "share": 7.1
+    },
+    {
+     "name": "Shell",
+     "share": 1.3
+    }
+   ],
+   "readme": "A local mirror of every GitHub gist owned by korczis — 965 gists, 2 771 files, ~2.4 million words, 2011 → 2026 — plus the pipeline that catalogues, analyses, chunks and indexes it for search.",
+   "topics": [],
+   "hosts": {
+    "github": "https://github.com/korczis/gists-search"
+   },
+   "site": "https://korczis.github.io/gists-search/",
+   "curated": true,
+   "stars": 0
+  },
+  {
+   "name": "osint-case-ratcliffe-moscow-2026",
+   "period": 12,
+   "description": "Open-source intelligence assessment of the CIA Director's unannounced Moscow visit (2026-08-25) — maintained with Claude Code skills; reusable OSINT case toolkit",
+   "category": "ai",
+   "language": "HTML",
+   "created_at": "2026-08-26T21:24:36Z",
+   "last_commit": "2026-08-26T22:32:53Z",
+   "last_message": "fix(site): claim pages for object-shaped findings (gdelt_sweep)",
+   "languages": [
+    {
+     "name": "HTML",
+     "share": 74
+    },
+    {
+     "name": "Python",
+     "share": 20.3
+    },
+    {
+     "name": "Shell",
+     "share": 5.2
+    },
+    {
+     "name": "Just",
+     "share": 0.5
+    }
+   ],
+   "readme": "A living OSINT intelligence assessment, maintained entirely with Claude Code skills and a few shell scripts. Open sources only; every claim carries its source and a grade.",
+   "topics": [
+    "claude-code",
+    "intelligence-analysis",
+    "open-source-intelligence",
+    "osint"
+   ],
+   "hosts": {
+    "github": "https://github.com/korczis/osint-case-ratcliffe-moscow-2026"
+   },
+   "site": "https://korczis.github.io/osint-case-ratcliffe-moscow-2026/",
+   "curated": false,
+   "stars": 1
+  },
+  {
+   "name": "llm",
+   "period": 12,
+   "description": "Local-first, provider-agnostic archive of AI conversations (ChatGPT, Claude, Gemini, Codex) — immutable, content-addressed, searchable evidence layer built in Elixir/Ecto.",
+   "category": "ai",
+   "language": null,
+   "created_at": "2026-08-20T20:41:22.826Z",
+   "last_commit": "2026-08-21T15:01:31.000+02:00",
+   "last_message": "test(conversations): add DB-integration tests for every named constraint",
+   "languages": [
+    {
+     "name": "Elixir",
+     "share": 100
+    }
+   ],
+   "readme": "A local-first, provider-agnostic archive of AI conversations — ChatGPT, Claude, Gemini, Codex, and generic JSON/JSONL exports — as an immutable, citable, searchable knowledge corpus.",
+   "topics": [
+    "AI",
+    "chatgpt",
+    "claude",
+    "claude-code",
+    "elixir",
+    "gemini",
+    "llm"
+   ],
+   "hosts": {
+    "gitlab": "https://gitlab.com/korczis/llm"
+   },
+   "site": null,
+   "curated": false,
+   "stars": 0
+  },
+  {
+   "name": "openttd-prismatic-bridge",
+   "period": 12,
+   "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
+   "category": "media",
+   "language": null,
+   "created_at": "2026-07-23T22:00:54.776Z",
+   "last_commit": "2026-07-24T18:40:44.000+02:00",
+   "last_message": "Doc: document the real prismatic-platform decision engine (Phase 3)",
+   "languages": [
+    {
+     "name": "Python",
+     "share": 65.7
+    },
+    {
+     "name": "HTML",
+     "share": 23.8
+    },
+    {
+     "name": "Squirrel",
+     "share": 9.6
+    },
+    {
+     "name": "CSS",
+     "share": 0.5
+    },
+    {
+     "name": "Shell",
+     "share": 0.4
+    }
+   ],
+   "readme": "REST/Swagger front door onto a running OpenTTD dedicated server, so prismatic-platform (or anything else) can read game state and drive company AIs without speaking OpenTTD's binary Admin Network protocol itself.",
+   "topics": [],
+   "hosts": {
+    "gitlab": "https://gitlab.com/korczis/openttd-prismatic-bridge"
+   },
+   "site": null,
+   "curated": false,
+   "stars": 0
+  },
+  {
+   "name": "astronomists",
+   "period": 12,
+   "description": null,
+   "category": "tools",
+   "language": "Python",
+   "created_at": "2026-06-15T09:04:31Z",
+   "last_commit": "2026-07-20T17:36:39Z",
+   "last_message": "docs: correct and expand CLAUDE.md for current build pipeline",
+   "languages": [
+    {
+     "name": "Python",
+     "share": 41.1
+    },
+    {
+     "name": "HTML",
+     "share": 32.2
+    },
+    {
+     "name": "TypeScript",
+     "share": 14.8
+    },
+    {
+     "name": "Shell",
+     "share": 8.5
+    },
+    {
+     "name": "JavaScript",
+     "share": 2.4
+    },
+    {
+     "name": "CSS",
+     "share": 1
+    }
+   ],
+   "readme": "Brand & web pro hnutí Astronautisté — „Myslíme na hvězdy, jednáme vědecky.\" Veřejný web: astronautiste.cz.",
+   "topics": [],
+   "hosts": {
+    "github": "https://github.com/korczis/astronomists"
+   },
+   "site": "https://korczis.github.io/astronomists/",
+   "curated": false,
+   "stars": 0
+  },
+  {
+   "name": "unable.cz",
+   "period": 12,
+   "description": null,
+   "category": "tools",
+   "language": "JavaScript",
+   "created_at": "2026-07-16T16:43:52Z",
+   "last_commit": "2026-07-19T20:51:54Z",
+   "last_message": "feat(dossier): bounded monitoring loop for Able.cz dossier (PROMPT-11 loop-1)",
+   "languages": [
+    {
+     "name": "JavaScript",
+     "share": 79.6
+    },
+    {
+     "name": "HTML",
+     "share": 20.1
+    },
+    {
+     "name": "CSS",
+     "share": 0.3
+    }
+   ],
+   "readme": "Minimalist static site built with Zola, styled with Tailwind CSS, Flowbite + Flowbite Typography, and Alpine.js.",
+   "topics": [],
+   "hosts": {
+    "github": "https://github.com/korczis/unable.cz"
+   },
+   "site": null,
+   "curated": false,
+   "stars": 0
+  },
+  {
+   "name": "tinder-nomics",
+   "period": 12,
+   "description": null,
+   "category": "tools",
+   "language": null,
+   "created_at": "2025-08-25T20:25:04.842Z",
+   "last_commit": "2026-02-05T00:37:13.000+01:00",
+   "last_message": "\u001b[38;2;248;248;242mfeat(aiad): inject AIAD v1.0.0 infrastructure\u001b[0m",
+   "languages": [],
+   "readme": "Use the built-in continuous integration in GitLab.",
+   "topics": [],
+   "hosts": {
+    "gitlab": "https://gitlab.com/korczis/tinder-nomics"
+   },
+   "site": null,
+   "curated": false,
+   "stars": 0
+  },
+  {
+   "name": "the-psycho",
+   "period": 12,
+   "description": null,
+   "category": "tools",
+   "language": null,
+   "created_at": "2025-01-25T02:41:53.111Z",
+   "last_commit": "2026-02-05T00:37:05.000+01:00",
+   "last_message": "\u001b[38;2;248;248;242mfeat(aiad): inject AIAD v1.0.0 infrastructure\u001b[0m",
+   "languages": [
+    {
+     "name": "Elixir",
+     "share": 82.8
+    },
+    {
+     "name": "HTML+EEX",
+     "share": 13.7
+    },
+    {
+     "name": "JavaScript",
+     "share": 3.4
+    },
+    {
+     "name": "CSS",
+     "share": 0.1
+    }
+   ],
+   "readme": "Advanced research framework analyzing psychological manipulation patterns, dark psychology, and defense strategies. Integrating comprehensive behavioral analysis with high-performance pattern recognition.",
+   "topics": [],
+   "hosts": {
+    "gitlab": "https://gitlab.com/korczis/the-psycho"
+   },
+   "site": null,
+   "curated": false,
+   "stars": 0
+  },
+  {
+   "name": "prism",
+   "period": 12,
+   "description": null,
+   "category": "tools",
+   "language": null,
+   "created_at": "2024-12-01T21:24:20.949Z",
+   "last_commit": "2026-02-05T00:37:02.000+01:00",
+   "last_message": "\u001b[38;2;248;248;242mfeat(aiad): inject AIAD v1.0.0 infrastructure\u001b[0m",
+   "languages": [],
+   "readme": "PRISM is an advanced system for behavioral analysis, pattern recognition, and social modeling using cutting-edge artificial intelligence and machine learning techniques.",
+   "topics": [],
+   "hosts": {
+    "gitlab": "https://gitlab.com/korczis/prism"
+   },
+   "site": null,
+   "curated": false,
+   "stars": 0
+  },
+  {
+   "name": "past",
+   "period": 12,
+   "description": null,
+   "category": "tools",
+   "language": null,
+   "created_at": "2025-04-28T15:26:38.855Z",
+   "last_commit": "2026-02-05T00:37:01.000+01:00",
+   "last_message": "\u001b[38;2;248;248;242mfeat(aiad): inject AIAD v1.0.0 infrastructure\u001b[0m",
+   "languages": [],
+   "readme": "\"Capture the soul of the story, not just its words.\"",
+   "topics": [],
+   "hosts": {
+    "gitlab": "https://gitlab.com/korczis/past"
+   },
+   "site": null,
+   "curated": false,
+   "stars": 0
+  },
+  {
+   "name": "sig",
+   "period": 12,
+   "description": "distributed cognitive framework in Elixir/OTP.",
+   "category": "ai",
+   "language": null,
+   "created_at": "2025-08-23T21:07:58.962Z",
+   "last_commit": "2026-02-05T00:36:59.000+01:00",
+   "last_message": "\u001b[38;2;248;248;242mfeat(aiad): inject AIAD v1.0.0 infrastructure\u001b[0m",
+   "languages": [
+    {
+     "name": "Elixir",
+     "share": 95.6
+    },
+    {
+     "name": "HTML+EEX",
+     "share": 1.4
+    },
+    {
+     "name": "Shell",
+     "share": 1.2
+    },
+    {
+     "name": "TypeScript",
+     "share": 1.1
+    },
+    {
+     "name": "Just",
+     "share": 0.2
+    }
+   ],
+   "readme": "Sig is a comprehensive Elixir-based platform that combines advanced Open Source Intelligence (OSINT) capabilities, AI agent societies, real-time collaboration systems, and interactive demonstration laboratories. The platform specializes in Czech public and commercial registries while providing a cutting-edge foundation for intelligence gathering, multi-agent coordination, and collaborative decision-making.",
+   "topics": [
+    "AI",
+    "Knowledge representation and reasoning",
+    "LLMs",
+    "cognitive-science",
+    "elixir",
+    "multi-agent-systems",
+    "novelty theory",
+    "otp"
+   ],
+   "hosts": {
+    "gitlab": "https://gitlab.com/korczis/sig"
+   },
+   "site": null,
+   "curated": false,
+   "stars": 0
+  },
+  {
+   "name": "edna",
+   "period": 24,
+   "description": "Edna je digitální kartářka, astroložka a analytička poháněná AI. Projekt spojuje mystiku, astrologii a psychologii s moderními LLM modely, aby uživatelům přinášel denní horoskopy, výklady karet, životní vhledy a psychologické reflexe.",
+   "category": "ai",
+   "language": null,
+   "created_at": "2025-09-02T10:20:47.749Z",
+   "last_commit": "2025-09-02T12:22:20.000+02:00",
+   "last_message": "Edit README.md",
+   "languages": [],
+   "readme": "1. Co je Edna? 2. Klíčové funkce 3. Persona a jazyk Edny 4. Architektura 5. Monetizace 6. UX & přístupnost 7. Retenční strategie 8. Roadmapa 9. Etické zásady 10. Inspirace & zdroje",
+   "topics": [],
+   "hosts": {
+    "gitlab": "https://gitlab.com/korczis/edna"
+   },
+   "site": null,
+   "curated": false,
+   "stars": 0
+  },
+  {
+   "name": "GHT",
+   "period": 24,
+   "description": null,
+   "category": "tools",
+   "language": null,
+   "created_at": "2025-08-28T19:47:13.774Z",
+   "last_commit": "2025-08-28T21:47:43.000+02:00",
+   "last_message": "Edit README.md",
+   "languages": [],
+   "readme": "Copyright © 2024–2025 Tomas Korcak. ALL RIGHTS RESERVED.",
+   "topics": [],
+   "hosts": {
+    "gitlab": "https://gitlab.com/korczis/GHT"
+   },
+   "site": null,
+   "curated": false,
+   "stars": 0
+  },
+  {
+   "name": "comtesse",
+   "period": 24,
+   "description": null,
+   "category": "tools",
+   "language": null,
+   "created_at": "2025-08-27T16:52:39.046Z",
+   "last_commit": "2025-08-28T20:57:49.000+02:00",
+   "last_message": "docs: add src/comtesse-rs specific README.md",
+   "languages": [
+    {
+     "name": "Just",
+     "share": 36
+    },
+    {
+     "name": "Shell",
+     "share": 32.1
+    },
+    {
+     "name": "Rust",
+     "share": 28
+    },
+    {
+     "name": "Mermaid",
+     "share": 3.8
+    }
+   ],
+   "readme": "Mission: Improve accuracy and consistency of per-commit assessments while keeping context minimal and traceability maximal.",
+   "topics": [],
+   "hosts": {
+    "gitlab": "https://gitlab.com/korczis/comtesse"
+   },
+   "site": null,
+   "curated": false,
+   "stars": 0
+  },
+  {
+   "name": "korczis.gitlab.io",
+   "period": 24,
+   "description": null,
+   "category": "tools",
+   "language": null,
+   "created_at": "2025-08-22T17:57:54.670Z",
+   "last_commit": "2025-08-22T22:21:57.000+02:00",
+   "last_message": "Merge branch 'master' of gitlab.com:korczis/korczis.gitlab.io",
+   "languages": [
+    {
+     "name": "CSS",
+     "share": 32.5
+    },
+    {
+     "name": "Elixir",
+     "share": 26.9
+    },
+    {
+     "name": "SCSS",
+     "share": 21.6
+    },
+    {
+     "name": "HTML",
+     "share": 7.1
+    },
+    {
+     "name": "HTML+EEX",
+     "share": 6.2
+    }
+   ],
+   "readme": "Kita is a clean, elegant and simple blog theme for Zola.",
+   "topics": [],
+   "hosts": {
+    "gitlab": "https://gitlab.com/korczis/korczis.gitlab.io"
+   },
+   "site": null,
+   "curated": false,
+   "stars": 0
+  },
+  {
+   "name": "prismatic",
+   "period": 24,
+   "description": null,
+   "category": "tools",
+   "language": "Elixir",
+   "created_at": "2025-07-24T19:53:59Z",
+   "last_commit": "2025-08-04T17:45:57Z",
+   "last_message": "chore: updates",
+   "languages": [
+    {
+     "name": "Elixir",
+     "share": 78.4
+    },
+    {
+     "name": "JavaScript",
+     "share": 16.5
+    },
+    {
+     "name": "Python",
+     "share": 2
+    },
+    {
+     "name": "Shell",
+     "share": 1.5
+    },
+    {
+     "name": "CSS",
+     "share": 0.9
+    },
+    {
+     "name": "HTML",
+     "share": 0.7
+    }
+   ],
+   "readme": "Advanced AI Agent Framework with Enterprise-Grade BEAM VM Introspection and Consolidation Tools",
+   "topics": [],
+   "hosts": {
+    "github": "https://github.com/korczis/prismatic"
+   },
+   "site": null,
+   "curated": false,
+   "stars": 0
+  },
+  {
+   "name": "u-tygra",
+   "period": 24,
+   "description": null,
+   "category": "tools",
+   "language": "JavaScript",
+   "created_at": "2024-12-27T03:22:04Z",
+   "last_commit": "2025-06-03T05:15:05Z",
+   "last_message": "remove static.yml",
+   "languages": [
+    {
+     "name": "JavaScript",
+     "share": 91.8
+    },
+    {
+     "name": "HTML",
+     "share": 5.9
+    },
+    {
+     "name": "CSS",
+     "share": 2.3
+    }
+   ],
+   "readme": null,
+   "topics": [],
+   "hosts": {
+    "github": "https://github.com/korczis/u-tygra",
+    "gitlab": "https://gitlab.com/korczis/u-tygra"
+   },
+   "site": "https://korczis.github.io/u-tygra/",
+   "curated": false,
+   "stars": 0
+  },
+  {
+   "name": "corvidae",
+   "period": 24,
+   "description": null,
+   "category": "tools",
+   "language": null,
+   "created_at": "2025-05-12T01:33:56.421Z",
+   "last_commit": "2025-05-12T03:47:02.000+02:00",
+   "last_message": "feat: initial commit",
+   "languages": [
+    {
+     "name": "TeX",
+     "share": 53.3
+    },
+    {
+     "name": "Elixir",
+     "share": 45.3
+    },
+    {
+     "name": "Shell",
+     "share": 1.3
+    }
+   ],
+   "readme": "Osobní a vědecký projekt zaměřený na pozorování, dokumentaci a vztah s volně žijící vránou šedou (Corvus cornix) jménem Šedka. Projekt klade důraz na etiku, neinvazivní přístup a rituální kvalitu mezidruhové komunikace.",
+   "topics": [],
+   "hosts": {
+    "gitlab": "https://gitlab.com/korczis/corvidae"
+   },
+   "site": null,
+   "curated": false,
+   "stars": 0
+  },
+  {
+   "name": "cognitive-reasoning",
+   "period": 24,
+   "description": null,
+   "category": "ai",
+   "language": null,
+   "created_at": "2025-04-25T11:08:12Z",
+   "last_commit": "2025-04-25T11:08:12Z",
+   "last_message": "Initial commit",
+   "languages": [],
+   "readme": null,
+   "topics": [],
+   "hosts": {
+    "github": "https://github.com/korczis/cognitive-reasoning"
+   },
+   "site": null,
+   "curated": false,
+   "stars": 0
+  },
+  {
+   "name": "prismatic-blog",
+   "period": 24,
+   "description": null,
+   "category": "media",
+   "language": "Dockerfile",
+   "created_at": "2025-03-14T02:08:33Z",
+   "last_commit": "2025-03-14T02:08:36Z",
+   "last_message": "Initial commit",
+   "languages": [
+    {
+     "name": "Dockerfile",
+     "share": 100
+    }
+   ],
+   "readme": "Book Template is a starter template of [Zola][zola] with [book][book] theme, including automatic publishing feature to [GitHub Pages][github-pages]. Contains [Dev Containers][dev-containers] battery.",
+   "topics": [],
+   "hosts": {
+    "github": "https://github.com/korczis/prismatic-blog"
+   },
+   "site": "https://korczis.github.io/prismatic-blog/",
+   "curated": false,
+   "stars": 0
+  },
+  {
+   "name": "kuzu-ex",
+   "period": 24,
+   "description": null,
+   "category": "data",
+   "language": null,
+   "created_at": "2024-10-24T15:38:17.529Z",
+   "last_commit": "2024-11-29T06:06:28.000+01:00",
+   "last_message": "feat: tweak loading url",
+   "languages": [
+    {
+     "name": "Elixir",
+     "share": 97.6
+    },
+    {
+     "name": "Python",
+     "share": 2.4
+    }
+   ],
+   "readme": "Elixir SDK for KuzuDB with graph schema DSL and query builder, designed for large-scale graph analytics and data exploration.",
+   "topics": [],
+   "hosts": {
+    "gitlab": "https://gitlab.com/korczis/kuzu-ex"
+   },
+   "site": null,
+   "curated": false,
+   "stars": 0
+  },
+  {
+   "name": "dispatcher",
+   "period": 48,
+   "description": null,
+   "category": "tools",
+   "language": null,
+   "created_at": "2024-10-18T17:45:41.560Z",
+   "last_commit": "2024-10-19T17:37:57.000+02:00",
+   "last_message": "feat: update doc",
+   "languages": [
+    {
+     "name": "TypeScript",
+     "share": 83
+    },
+    {
+     "name": "JavaScript",
+     "share": 17
+    }
+   ],
+   "readme": "1. Introduction 2. Motivation 3. How It Started 4. Architecture 5. Features 6. Usage 7. File Structure 8. API Reference 9. Examples 10. Contributing 11. License",
+   "topics": [],
+   "hosts": {
+    "gitlab": "https://gitlab.com/korczis/dispatcher"
+   },
+   "site": null,
+   "curated": false,
+   "stars": 0
+  },
+  {
+   "name": "tap",
+   "period": 48,
+   "description": null,
+   "category": "tools",
+   "language": null,
+   "created_at": "2024-10-01T18:38:31Z",
+   "last_commit": "2024-10-01T18:40:56Z",
+   "last_message": "first commit",
+   "languages": [],
+   "readme": null,
+   "topics": [],
+   "hosts": {
+    "github": "https://github.com/korczis/tap"
+   },
+   "site": null,
+   "curated": false,
+   "stars": 0
+  },
+  {
+   "name": "bubbler",
+   "period": 48,
+   "description": "Bubbler is a simple JavaScript application that generates a speech bubble with dynamic text over an image of a boy. The text is passed through a URL query parameter, allowing for easy customization of the speech content.",
+   "category": "tools",
+   "language": "JavaScript",
+   "created_at": "2024-09-15T21:10:06Z",
+   "last_commit": "2024-09-16T14:30:54Z",
+   "last_message": "feat: add OG tags",
+   "languages": [
+    {
+     "name": "JavaScript",
+     "share": 64.5
+    },
+    {
+     "name": "HTML",
+     "share": 27.6
+    },
+    {
+     "name": "CSS",
+     "share": 7.9
+    }
+   ],
+   "readme": "Bubbler is a JavaScript-based application that generates speech bubbles with dynamic text over an image. The text, font, color, and positioning are fully customizable via URL query parameters, allowing for easy configuration of the speech content and the overall layout of the image.",
+   "topics": [],
+   "hosts": {
+    "github": "https://github.com/korczis/bubbler"
+   },
+   "site": "https://korczis.github.io/bubbler/",
+   "curated": false,
+   "stars": 0
+  },
+  {
+   "name": "job-processor",
+   "period": 48,
+   "description": "This is a simple web service built with Elixir, Plug, and Cowboy that processes job tasks with dependencies and generates execution order and bash scripts.",
+   "category": "web",
+   "language": null,
+   "created_at": "2024-08-01T10:19:22.386Z",
+   "last_commit": "2024-08-01T13:50:56.000+02:00",
+   "last_message": "initial version",
+   "languages": [
+    {
+     "name": "Elixir",
+     "share": 100
+    }
+   ],
+   "readme": "The Job Processor Web Service is a robust and efficient web service built with Elixir, leveraging the Plug and Cowboy libraries. It processes job tasks with dependencies, ensuring the correct execution order, and generates corresponding bash scripts. The service is designed to be simple, scalable, and easy to integrate into your existing systems.",
+   "topics": [],
+   "hosts": {
+    "gitlab": "https://gitlab.com/korczis/job-processor"
+   },
+   "site": null,
+   "curated": false,
+   "stars": 0
+  },
+  {
+   "name": "pissaleck",
+   "period": 48,
+   "description": "Anything about everything and vice versa",
+   "category": "tools",
+   "language": null,
+   "created_at": "2024-04-27T13:20:36Z",
+   "last_commit": "2024-04-27T13:20:36Z",
+   "last_message": "Initial commit",
+   "languages": [],
+   "readme": null,
+   "topics": [],
+   "hosts": {
+    "github": "https://github.com/korczis/pissaleck"
+   },
+   "site": null,
+   "curated": false,
+   "stars": 0
+  },
+  {
+   "name": "simple_geocoder",
+   "period": 48,
+   "description": null,
+   "category": "tools",
+   "language": null,
+   "created_at": "2024-04-23T21:19:13.755Z",
+   "last_commit": "2024-04-24T22:43:37.000+02:00",
+   "last_message": "Disable build image",
+   "languages": [
+    {
+     "name": "Elixir",
+     "share": 92.2
+    },
+    {
+     "name": "Shell",
+     "share": 4.8
+    },
+    {
+     "name": "HTML+EEX",
+     "share": 3
+    }
+   ],
+   "readme": "Simple Geocoder is an Elixir library designed to facilitate geocoding and routing functionalities within your Elixir applications.",
+   "topics": [],
+   "hosts": {
+    "gitlab": "https://gitlab.com/korczis/simple_geocoder"
+   },
+   "site": null,
+   "curated": false,
+   "stars": 0
+  },
+  {
+   "name": "distance-calculator",
+   "period": 48,
+   "description": null,
+   "category": "science",
+   "language": null,
+   "created_at": "2024-03-20T11:21:50.379Z",
+   "last_commit": "2024-04-23T22:00:08.000+02:00",
+   "last_message": "logs on requests, fixed from",
+   "languages": [
+    {
+     "name": "Elixir",
+     "share": 100
+    }
+   ],
+   "readme": "If available in Hex, the package can be installed by adding distancecalculator to your list of dependencies in mix.exs:",
+   "topics": [],
+   "hosts": {
+    "gitlab": "https://gitlab.com/korczis/distance-calculator"
+   },
+   "site": null,
+   "curated": false,
+   "stars": 0
+  },
+  {
+   "name": "marketing-ideas",
+   "period": 48,
+   "description": null,
+   "category": "tools",
+   "language": null,
+   "created_at": "2024-04-17T15:17:04.884Z",
+   "last_commit": "2024-04-17T15:33:10.000+00:00",
+   "last_message": "Update README.md",
+   "languages": [],
+   "readme": null,
+   "topics": [],
+   "hosts": {
+    "gitlab": "https://gitlab.com/korczis/marketing-ideas"
+   },
+   "site": null,
+   "curated": false,
+   "stars": 0
+  },
+  {
+   "name": "pdf_renderer",
+   "period": 48,
+   "description": null,
+   "category": "tools",
+   "language": null,
+   "created_at": "2024-03-24T22:10:44.078Z",
+   "last_commit": "2024-03-25T17:33:15.000+01:00",
+   "last_message": "Initial commit",
+   "languages": [
+    {
+     "name": "Python",
+     "share": 94.2
+    },
+    {
+     "name": "Dockerfile",
+     "share": 3.8
+    },
+    {
+     "name": "Makefile",
+     "share": 1.9
+    }
+   ],
+   "readme": "Create a service that accepts PDF files containing one or more pages. These pages should be rendered to “normalized png” files: they should fit into a 1200x1600 pixels rectangle.",
+   "topics": [],
+   "hosts": {
+    "gitlab": "https://gitlab.com/korczis/pdf_renderer"
+   },
+   "site": null,
+   "curated": false,
+   "stars": 0
+  },
+  {
+   "name": "MindScape",
+   "period": 48,
+   "description": null,
+   "category": "tools",
+   "language": null,
+   "created_at": "2023-02-18T16:17:27Z",
+   "last_commit": "2023-02-18T16:21:16Z",
+   "last_message": "Add README.md",
+   "languages": [],
+   "readme": "MindScape is an AI-powered platform for mental health diagnosis and treatment. It uses machine learning algorithms and virtual reality technology to create personalized therapy experiences for patients, and provides mental health professionals with a suite of tools for analysis and treatment planning.",
+   "topics": [],
+   "hosts": {
+    "github": "https://github.com/korczis/MindScape"
+   },
+   "site": null,
+   "curated": false,
+   "stars": 0
+  },
+  {
+   "name": "el-magico-cache",
+   "period": 48,
+   "description": "Elixir Cache",
+   "category": "tools",
+   "language": "Elixir",
+   "created_at": "2023-01-26T18:14:07Z",
+   "last_commit": "2023-01-27T17:10:03Z",
+   "last_message": "simple cache",
+   "languages": [
+    {
+     "name": "Elixir",
+     "share": 82.5
+    },
+    {
+     "name": "Shell",
+     "share": 8.4
+    },
+    {
+     "name": "Makefile",
+     "share": 3.9
+    },
+    {
+     "name": "Nix",
+     "share": 2.1
+    },
+    {
+     "name": "HTML",
+     "share": 1.6
+    },
+    {
+     "name": "Dockerfile",
+     "share": 1.4
+    }
+   ],
+   "readme": "If available in Hex, the package can be installed by adding cache to your list of dependencies in mix.exs:",
+   "topics": [],
+   "hosts": {
+    "github": "https://github.com/korczis/el-magico-cache"
+   },
+   "site": null,
+   "curated": false,
+   "stars": 0
+  }
+ ]
+}

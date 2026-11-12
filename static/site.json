@@ -312,6 +312,695 @@
     "Zola",
     "Majordomus"
    ]
+  },
+  {
+   "url": "https://korczis.github.io/work/",
+   "title": "Recent work · Tomas Korcak",
+   "description": "Every project with a commit in the last 48 months, by period (12, 24, 48): 43 repositories on GitHub and GitLab, each with its own page.",
+   "type": "collection",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work.png",
+   "keywords": [
+    "Tomas Korcak recent work",
+    "korczis 2026",
+    "sonic-playground",
+    "korczis.github.io",
+    "kompendium-epistemicke-anihilace",
+    "algoglyph",
+    "oscilla",
+    "prismatic-majordomus",
+    "vomaste.cz",
+    "majordomus-reel"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/algoglyph/",
+   "title": "algoglyph · Tomas Korcak",
+   "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured…",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-algoglyph.png",
+   "keywords": [
+    "algoglyph",
+    "Science and visualisation",
+    "TypeScript",
+    "Rust",
+    "HTML",
+    "JavaScript",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/astronomists/",
+   "title": "astronomists · Tomas Korcak",
+   "description": "Brand & web pro hnutí Astronautisté — „Myslíme na hvězdy, jednáme vědecky.\" Veřejný web: astronautiste.cz.",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-astronomists.png",
+   "keywords": [
+    "astronomists",
+    "Tools",
+    "Python",
+    "HTML",
+    "TypeScript",
+    "Shell",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/bubbler/",
+   "title": "bubbler · Tomas Korcak",
+   "description": "Bubbler is a simple JavaScript application that generates a speech bubble with dynamic text over an image of a boy. The text is passed through a URL query…",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-bubbler.png",
+   "keywords": [
+    "bubbler",
+    "Tools",
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/catharsis-as-a-service/",
+   "title": "Catharsis as a Service · Tomas Korcak",
+   "description": "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact.",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-catharsis-as-a-service.png",
+   "keywords": [
+    "Catharsis as a Service",
+    "Media and art",
+    "HTML",
+    "Python",
+    "JavaScript",
+    "CSS",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/cognitive-reasoning/",
+   "title": "cognitive-reasoning · Tomas Korcak",
+   "description": "cognitive-reasoning. Active in the last 24 months; ai engineering.",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-cognitive-reasoning.png",
+   "keywords": [
+    "cognitive-reasoning",
+    "AI engineering",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/comtesse/",
+   "title": "comtesse · Tomas Korcak",
+   "description": "Mission: Improve accuracy and consistency of per-commit assessments while keeping context minimal and traceability maximal.",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-comtesse.png",
+   "keywords": [
+    "comtesse",
+    "Tools",
+    "Just",
+    "Shell",
+    "Rust",
+    "Mermaid",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/corvidae/",
+   "title": "corvidae · Tomas Korcak",
+   "description": "Osobní a vědecký projekt zaměřený na pozorování, dokumentaci a vztah s volně žijící vránou šedou (Corvus cornix) jménem Šedka. Projekt klade důraz na etiku,…",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-corvidae.png",
+   "keywords": [
+    "corvidae",
+    "Tools",
+    "TeX",
+    "Elixir",
+    "Shell",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/crisis-map/",
+   "title": "Crisis map · Tomas Korcak",
+   "description": "Incident reports, normalised, geocoded and mapped.",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-crisis-map.png",
+   "keywords": [
+    "Crisis map",
+    "Data and GIS",
+    "Elixir",
+    "CSS",
+    "JavaScript",
+    "HTML",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/data-atlas/",
+   "title": "Data Atlas · Tomas Korcak",
+   "description": "A searchable catalogue of GIS and geodata sources (Czech).",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-data-atlas.png",
+   "keywords": [
+    "Data Atlas",
+    "Data and GIS",
+    "Python",
+    "HTML",
+    "JavaScript",
+    "PLpgSQL",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/dispatcher/",
+   "title": "dispatcher · Tomas Korcak",
+   "description": "1. Introduction 2. Motivation 3. How It Started 4. Architecture 5. Features 6. Usage 7. File Structure 8. API Reference 9. Examples 10. Contributing 11. License",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-dispatcher.png",
+   "keywords": [
+    "dispatcher",
+    "Tools",
+    "TypeScript",
+    "JavaScript",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/distance-calculator/",
+   "title": "distance-calculator · Tomas Korcak",
+   "description": "If available in Hex, the package can be installed by adding distancecalculator to your list of dependencies in mix.exs:",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-distance-calculator.png",
+   "keywords": [
+    "distance-calculator",
+    "Science and visualisation",
+    "Elixir",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/edna/",
+   "title": "edna · Tomas Korcak",
+   "description": "Edna je digitální kartářka, astroložka a analytička poháněná AI. Projekt spojuje mystiku, astrologii a psychologii s moderními LLM modely, aby uživatelům…",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-edna.png",
+   "keywords": [
+    "edna",
+    "AI engineering",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/el-magico-cache/",
+   "title": "el-magico-cache · Tomas Korcak",
+   "description": "If available in Hex, the package can be installed by adding cache to your list of dependencies in mix.exs:",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-el-magico-cache.png",
+   "keywords": [
+    "el-magico-cache",
+    "Tools",
+    "Elixir",
+    "Shell",
+    "Makefile",
+    "Nix",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/ght/",
+   "title": "GHT · Tomas Korcak",
+   "description": "Copyright © 2024–2025 Tomas Korcak. ALL RIGHTS RESERVED.",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-ght.png",
+   "keywords": [
+    "GHT",
+    "Tools",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/gists-search/",
+   "title": "Gists search · Tomas Korcak",
+   "description": "Catalogue, enrichment and search over a mirror of my gists.",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-gists-search.png",
+   "keywords": [
+    "Gists search",
+    "Tools",
+    "Python",
+    "JavaScript",
+    "HTML",
+    "Just",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/job-processor/",
+   "title": "job-processor · Tomas Korcak",
+   "description": "This is a simple web service built with Elixir, Plug, and Cowboy that processes job tasks with dependencies and generates execution order and bash scripts.",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-job-processor.png",
+   "keywords": [
+    "job-processor",
+    "Web",
+    "Elixir",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/kompendium-epistemicke-anihilace/",
+   "title": "Kompendium · Tomas Korcak",
+   "description": "A defensive taxonomy of epistemic and cognitive manipulation (Czech).",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-kompendium-epistemicke-anihilace.png",
+   "keywords": [
+    "Kompendium",
+    "Knowledge",
+    "Elixir",
+    "JavaScript",
+    "HTML",
+    "Python",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/korczis-github-io/",
+   "title": "korczis.github.io · Tomas Korcak",
+   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-korczis-github-io.png",
+   "keywords": [
+    "korczis.github.io",
+    "AI engineering",
+    "HTML",
+    "JavaScript",
+    "Shell",
+    "CSS",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/korczis-gitlab-io/",
+   "title": "korczis.gitlab.io · Tomas Korcak",
+   "description": "Kita is a clean, elegant and simple blog theme for Zola.",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-korczis-gitlab-io.png",
+   "keywords": [
+    "korczis.gitlab.io",
+    "Tools",
+    "CSS",
+    "Elixir",
+    "SCSS",
+    "HTML",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/kuzu-ex/",
+   "title": "kuzu-ex · Tomas Korcak",
+   "description": "Elixir SDK for KuzuDB with graph schema DSL and query builder, designed for large-scale graph analytics and data exploration.",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-kuzu-ex.png",
+   "keywords": [
+    "kuzu-ex",
+    "Data and GIS",
+    "Elixir",
+    "Python",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/llm/",
+   "title": "llm · Tomas Korcak",
+   "description": "Local-first, provider-agnostic archive of AI conversations (ChatGPT, Claude, Gemini, Codex) — immutable, content-addressed, searchable evidence layer built in…",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-llm.png",
+   "keywords": [
+    "llm",
+    "AI engineering",
+    "Elixir",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/majordomus-reel/",
+   "title": "Majordomus reel · Tomas Korcak",
+   "description": "A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-majordomus-reel.png",
+   "keywords": [
+    "Majordomus reel",
+    "Media and art",
+    "HTML",
+    "JavaScript",
+    "Shell",
+    "Python",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/marketing-ideas/",
+   "title": "marketing-ideas · Tomas Korcak",
+   "description": "marketing-ideas. Active in the last 48 months; tools.",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-marketing-ideas.png",
+   "keywords": [
+    "marketing-ideas",
+    "Tools",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/mindscape/",
+   "title": "MindScape · Tomas Korcak",
+   "description": "MindScape is an AI-powered platform for mental health diagnosis and treatment. It uses machine learning algorithms and virtual reality technology to create…",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-mindscape.png",
+   "keywords": [
+    "MindScape",
+    "Tools",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/openttd-prismatic-bridge/",
+   "title": "openttd-prismatic-bridge · Tomas Korcak",
+   "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-openttd-prismatic-bridge.png",
+   "keywords": [
+    "openttd-prismatic-bridge",
+    "Media and art",
+    "Python",
+    "HTML",
+    "Squirrel",
+    "CSS",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/oscilla/",
+   "title": "Oscilla · Tomas Korcak",
+   "description": "A zero-install acoustic laboratory in the browser.",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-oscilla.png",
+   "keywords": [
+    "Oscilla",
+    "Science and visualisation",
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "Shell",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/osint-case-ratcliffe-moscow-2026/",
+   "title": "osint-case-ratcliffe-moscow-2026 · Tomas Korcak",
+   "description": "Open-source intelligence assessment of the CIA Director's unannounced Moscow visit (2026-08-25) — maintained with Claude Code skills; reusable OSINT case toolkit",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-osint-case-ratcliffe-moscow-2026.png",
+   "keywords": [
+    "osint-case-ratcliffe-moscow-2026",
+    "AI engineering",
+    "HTML",
+    "Python",
+    "Shell",
+    "Just",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/past/",
+   "title": "past · Tomas Korcak",
+   "description": "\"Capture the soul of the story, not just its words.\"",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-past.png",
+   "keywords": [
+    "past",
+    "Tools",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/pdf-renderer/",
+   "title": "pdf_renderer · Tomas Korcak",
+   "description": "Create a service that accepts PDF files containing one or more pages. These pages should be rendered to “normalized png” files: they should fit into a 1200x1600…",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-pdf-renderer.png",
+   "keywords": [
+    "pdf_renderer",
+    "Tools",
+    "Python",
+    "Dockerfile",
+    "Makefile",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/pissaleck/",
+   "title": "pissaleck · Tomas Korcak",
+   "description": "Anything about everything and vice versa. Active in the last 48 months; tools.",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-pissaleck.png",
+   "keywords": [
+    "pissaleck",
+    "Tools",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/prism/",
+   "title": "prism · Tomas Korcak",
+   "description": "PRISM is an advanced system for behavioral analysis, pattern recognition, and social modeling using cutting-edge artificial intelligence and machine learning…",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-prism.png",
+   "keywords": [
+    "prism",
+    "Tools",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/prismatic-blog/",
+   "title": "prismatic-blog · Tomas Korcak",
+   "description": "Book Template is a starter template of [Zola][zola] with [book][book] theme, including automatic publishing feature to [GitHub Pages][github-pages]. Contains…",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-prismatic-blog.png",
+   "keywords": [
+    "prismatic-blog",
+    "Media and art",
+    "Dockerfile",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/prismatic-majordomus/",
+   "title": "Majordomus · Tomas Korcak",
+   "description": "AI agents say the work is done; Majordomus makes them prove it.",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-prismatic-majordomus.png",
+   "keywords": [
+    "Majordomus",
+    "AI engineering",
+    "Rust",
+    "Shell",
+    "JavaScript",
+    "HTML",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/prismatic/",
+   "title": "prismatic · Tomas Korcak",
+   "description": "Advanced AI Agent Framework with Enterprise-Grade BEAM VM Introspection and Consolidation Tools",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-prismatic.png",
+   "keywords": [
+    "prismatic",
+    "Tools",
+    "Elixir",
+    "JavaScript",
+    "Python",
+    "Shell",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/sig/",
+   "title": "sig · Tomas Korcak",
+   "description": "Sig is a comprehensive Elixir-based platform that combines advanced Open Source Intelligence (OSINT) capabilities, AI agent societies, real-time collaboration…",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-sig.png",
+   "keywords": [
+    "sig",
+    "AI engineering",
+    "Elixir",
+    "HTML+EEX",
+    "Shell",
+    "TypeScript",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/simple-geocoder/",
+   "title": "simple_geocoder · Tomas Korcak",
+   "description": "Simple Geocoder is an Elixir library designed to facilitate geocoding and routing functionalities within your Elixir applications.",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-simple-geocoder.png",
+   "keywords": [
+    "simple_geocoder",
+    "Tools",
+    "Elixir",
+    "Shell",
+    "HTML+EEX",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/sonic-playground/",
+   "title": "Sonic Playground · Tomas Korcak",
+   "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-sonic-playground.png",
+   "keywords": [
+    "Sonic Playground",
+    "Media and art",
+    "JavaScript",
+    "HTML",
+    "Python",
+    "Shell",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/tap/",
+   "title": "tap · Tomas Korcak",
+   "description": "tap. Active in the last 48 months; tools. A project by Tomas Korcak, active in the last 48 months.",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-tap.png",
+   "keywords": [
+    "tap",
+    "Tools",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/the-psycho/",
+   "title": "the-psycho · Tomas Korcak",
+   "description": "Advanced research framework analyzing psychological manipulation patterns, dark psychology, and defense strategies. Integrating comprehensive behavioral analysis…",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-the-psycho.png",
+   "keywords": [
+    "the-psycho",
+    "Tools",
+    "Elixir",
+    "HTML+EEX",
+    "JavaScript",
+    "CSS",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/tinder-nomics/",
+   "title": "tinder-nomics · Tomas Korcak",
+   "description": "Use the built-in continuous integration in GitLab.",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-tinder-nomics.png",
+   "keywords": [
+    "tinder-nomics",
+    "Tools",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/u-tygra/",
+   "title": "u-tygra · Tomas Korcak",
+   "description": "u-tygra. Active in the last 24 months; tools. A project by Tomas Korcak, active in the last 24 months.",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-u-tygra.png",
+   "keywords": [
+    "u-tygra",
+    "Tools",
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/unable-cz/",
+   "title": "unable.cz · Tomas Korcak",
+   "description": "Minimalist static site built with Zola, styled with Tailwind CSS, Flowbite + Flowbite Typography, and Alpine.js.",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-unable-cz.png",
+   "keywords": [
+    "unable.cz",
+    "Tools",
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/vomaste-cz/",
+   "title": "vomaste.cz · Tomas Korcak",
+   "description": "Otevřený, Git-native systém pro tvorbu a publikaci dohledatelných dossierů ve veřejném zájmu. Tvrzení, zdroje, entity, kauzy a vztahy jsou strukturovaná,…",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-vomaste-cz.png",
+   "keywords": [
+    "vomaste.cz",
+    "Tools",
+    "JavaScript",
+    "HTML",
+    "Shell",
+    "CSS",
+    "Tomas Korcak"
+   ]
   }
  ],
  "categories": [
@@ -582,7 +1271,7 @@
    "category": "ai",
    "github": "https://github.com/korczis/korczis.github.io",
    "gitlab": null,
-   "site": "https://korczis.github.io/korczis.github.io/",
+   "site": null,
    "created": "2024-12-24T16:48:15Z",
    "active": "2026-11-12T03:41:59Z"
   },
@@ -692,7 +1381,7 @@
    "category": "tools",
    "github": "https://github.com/korczis/unable.cz",
    "gitlab": null,
-   "site": "https://korczis.github.io/unable.cz/",
+   "site": null,
    "created": "2026-07-16T16:43:52Z",
    "active": "2026-10-29T11:00:45Z"
   },
@@ -1528,7 +2217,7 @@
    "category": "web",
    "github": "https://github.com/korczis/nestravenkam",
    "gitlab": "https://gitlab.com/korczis/nestravenkam",
-   "site": "https://korczis.github.io/nestravenkam/",
+   "site": null,
    "created": "2019-08-09T02:31:55Z",
    "active": "2019-08-09T02:56:28Z"
   },

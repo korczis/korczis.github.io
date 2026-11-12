@@ -33,6 +33,7 @@ const lines = [
   `- [About](${base}/about/): profile, CV, languages over the years, sources`,
   `- [Projects](${base}/projects/): the curated catalogue, filterable, with project details`,
   `- [Repositories](${base}/repositories/): every original repository on GitHub and GitLab`,
+  `- [Recent work](${base}/work/): every project with a commit in the last 12, 24 and 48 months, one page each`,
   `- [Stack](${base}/stack/): the tools and practices behind every project`,
   '',
 ];

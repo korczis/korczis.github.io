@@ -264,7 +264,7 @@
   <section class="{{ card }}" aria-labelledby="recent-title">
     <div class="mb-4 flex items-center justify-between">
       <h2 id="recent-title" class="{{ card_title }}">Recently active</h2>
-      <a href="{{ base }}repositories/" class="{{ view_all }}">Index{{ <icon name="arrow-right" class="ml-1 h-4 w-4" /> }}</a>
+      <a href="{{ base }}work/" class="{{ view_all }}">Recent work{{ <icon name="arrow-right" class="ml-1 h-4 w-4" /> }}</a>
     </div>
     <ul class="divide-y divide-gray-200 dark:divide-gray-700">
       {%- for r in ix.repos %}{% if loop.index <= 9 %}

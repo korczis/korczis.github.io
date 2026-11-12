@@ -86,6 +86,8 @@ jobs:
         run: node scripts/check-data.mjs
       - name: Category pages are current
         run: node scripts/build-categories.mjs --check
+      - name: Work pages are current
+        run: node scripts/build-work.mjs --check
       - name: llms.txt is current
         run: node scripts/build-llms.mjs --check
       - name: Open Graph images are current

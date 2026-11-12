@@ -63,12 +63,22 @@
     {"@type": "WebSite", "@id": {{ website | json_encode | safe }}, "url": {{ (config.base_url ~ "/") | json_encode | safe }},
      "name": {{ config.title | json_encode | safe }}, "description": {{ config.description | json_encode | safe }},
      "inLanguage": "en", "author": {"@id": {{ person | json_encode | safe }}}, "publisher": {"@id": {{ person | json_encode | safe }}}},
-    {"@type": {% if schema == "collection" or schema == "index" %}"CollectionPage"{% elif schema == "about" %}"AboutPage"{% elif schema == "home" or schema == "profile" %}"ProfilePage"{% else %}"WebPage"{% endif %},
+    {"@type": {% if schema == "project" %}"ItemPage"{% elif schema == "collection" or schema == "index" %}"CollectionPage"{% elif schema == "about" %}"AboutPage"{% elif schema == "home" or schema == "profile" %}"ProfilePage"{% else %}"WebPage"{% endif %},
      "@id": {{ (url ~ "#webpage") | json_encode | safe }}, "url": {{ url | json_encode | safe }}, "name": {{ t | json_encode | safe }},
      "description": {{ d | json_encode | safe }}, "isPartOf": {"@id": {{ website | json_encode | safe }}},
      "primaryImageOfPage": {"@type": "ImageObject", "url": {{ img | json_encode | safe }}, "width": 1200, "height": 630},
      {%- if schema == "home" or schema == "profile" %}
      "mainEntity": {"@id": {{ person | json_encode | safe }}},
+     {%- endif %}
+     {%- if schema == "project" %}
+     {%- set wrc = load_data(path="data/recent.json") %}
+     {%- for x in wrc.repos %}{% if x.name == fm.extra.repo %}{% set_global wr = x %}{% endif %}{% endfor %}
+     {%- if wr.hosts.github is defined %}{% set wu = wr.hosts.github %}{% else %}{% set wu = wr.hosts.gitlab %}{% endif %}
+     "mainEntity": {"@type": "SoftwareSourceCode", "name": {{ fm.title | json_encode | safe }}, "description": {{ d | json_encode | safe }},
+      "codeRepository": {{ wu | json_encode | safe }},{% if wr.site %} "url": {{ wr.site | json_encode | safe }},{% endif %}
+      "programmingLanguage": [{% for l in wr.languages %}{{ l.name | json_encode | safe }}{% if not loop.last %}, {% endif %}{% endfor %}],
+      "dateCreated": {{ wr.created_at | json_encode | safe }}, "dateModified": {{ wr.last_commit | json_encode | safe }},
+      "author": {"@id": {{ person | json_encode | safe }}}},
      {%- endif %}
      {%- if schema == "index" %}
      "mainEntity": {"@type": "ItemList", "numberOfItems": {{ sx.repos | length }}, "itemListElement": [
@@ -102,7 +112,10 @@
      {%- endif %}
      "breadcrumb": {"@type": "BreadcrumbList", "itemListElement": [
        {"@type": "ListItem", "position": 1, "name": "Home", "item": {{ (config.base_url ~ "/") | json_encode | safe }}}
-       {%- if schema != "home" %},
+       {%- if schema == "project" %},
+       {"@type": "ListItem", "position": 2, "name": "Recent work", "item": {{ (config.base_url ~ "/work/") | json_encode | safe }}},
+       {"@type": "ListItem", "position": 3, "name": {{ fm.title | json_encode | safe }}, "item": {{ url | json_encode | safe }}}
+       {%- elif schema != "home" %},
        {"@type": "ListItem", "position": 2, "name": {{ fm.title | json_encode | safe }}, "item": {{ url | json_encode | safe }}}
        {%- endif %}]}}
   ]}
