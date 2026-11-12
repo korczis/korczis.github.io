@@ -21,4 +21,13 @@ related = ["c", "cpp", "csharp", "elixir", "haskell", "javascript", "repository"
 og_title = "Java: slovník"
 og_image = "og/cs-glossary-java.png"
 keywords = ["Java", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "atlas"
+source = "glossary.terms"
+title = "viz_atlas_term_title"
+lead = "viz_atlas_term_lead"
+span = 3
+height = "md"
+tone = "night"
 +++

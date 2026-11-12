@@ -21,4 +21,13 @@ related = ["repository", "open-source", "commit", "shell", "html", "javascript",
 og_title = "Python: slovník"
 og_image = "og/cs-glossary-python.png"
 keywords = ["Python", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "atlas"
+source = "glossary.terms"
+title = "viz_atlas_term_title"
+lead = "viz_atlas_term_lead"
+span = 3
+height = "md"
+tone = "night"
 +++

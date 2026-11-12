@@ -15,6 +15,15 @@ og_image = "og/category-knowledge.png"
 schema = "collection"
 terms = ["elixir", "swift", "erlang", "shell", "zola", "cytoscape-js", "apache-echarts", "alpine-js", "flowbite-pro", "repository"]
 keywords = ["Knowledge", "Kompendium", "ReadingPhoneNumbersInRealTime", "MinervaEye", "reading", "skull-elixir", "skull", "skull-erlang", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "constellation"
+source = "index.repos"
+title = "viz_category_galaxy_title"
+lead = "viz_category_galaxy_lead"
+span = 3
+height = "lg"
+tone = "night"
 +++
 Knowledge bases you can check: cross-linked taxonomies with their sources, built as books, sites and graphs.
 

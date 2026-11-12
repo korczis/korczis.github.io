@@ -21,4 +21,13 @@ related = ["repository", "commit", "open-source", "html", "javascript", "github-
 og_title = "CSS: slovník"
 og_image = "og/cs-glossary-css.png"
 keywords = ["CSS", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "atlas"
+source = "glossary.terms"
+title = "viz_atlas_term_title"
+lead = "viz_atlas_term_lead"
+span = 3
+height = "md"
+tone = "night"
 +++

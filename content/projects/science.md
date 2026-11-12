@@ -15,6 +15,15 @@ og_image = "og/category-science.png"
 schema = "collection"
 terms = ["data-visualisation", "javascript", "rust", "cpp", "elixir", "haskell", "python", "typescript", "web-audio", "p5-js", "apache-echarts", "alpine-js", "flowbite-pro", "repository"]
 keywords = ["Science and visualisation", "Oscilla", "algoglyph", "maze-rs", "big-png", "distance-calculator", "rustas", "graph-flow", "gooddata-graphql", "maze", "maze-js", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "constellation"
+source = "index.repos"
+title = "viz_category_galaxy_title"
+lead = "viz_category_galaxy_lead"
+span = 3
+height = "lg"
+tone = "night"
 +++
 Honest instruments and drawn algorithms in the browser: acoustics, physics, sorting, mazes, each readout measured.
 

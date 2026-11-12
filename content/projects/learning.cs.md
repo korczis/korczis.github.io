@@ -15,6 +15,15 @@ og_image = "og/cs-category-learning.png"
 schema = "collection"
 terms = ["csharp", "cpp", "javascript", "ruby", "c", "elixir", "haskell", "java", "shell", "repository"]
 keywords = ["Učení a experimenty", "happ", "Test-Elixir", "node-proxy-upload", "skull-cpp", "grache-test", "skull-emscripten", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "constellation"
+source = "index.repos"
+title = "viz_category_galaxy_title"
+lead = "viz_category_galaxy_lead"
+span = 3
+height = "lg"
+tone = "night"
 +++
 Výukové materiály, katy a experimenty napříč mnoha jazyky: náčrty, které přišly před projekty.
 

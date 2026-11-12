@@ -11,6 +11,7 @@ import { dirname, join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parse } from 'smol-toml';
 import { loadGlossary, termLink } from './lib/terms.mjs';
+import { vizBlock } from './lib/viz.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const CONTENT = join(ROOT, 'content');
@@ -67,10 +68,10 @@ og_image = ${q(`og/${cs ? 'cs-' : ''}glossary.png`)}
 schema = "glossary"
 terms = ["open-source", "repository", "front-matter", "static-site-generator"]
 keywords = [${[tr('glossary', lang), ...sorted.filter((t) => t.term.length > 1).slice(0, 10).map((t) => t.term), cs ? 'Tomáš Korčák' : 'Tomas Korcak'].map(q).join(', ')}]
-+++
+${vizBlock({ kind: 'atlas', source: 'glossary.terms', title: 'viz_atlas_title', lead: 'viz_atlas_lead', height: 'lg' })}+++
 ${cs
-    ? `Slovník je společný jazyk celého webu. Každá stránka ve svém ${termLink(g, 'front-matter', lang)} jmenuje pojmy, na kterých stojí, a končí jejich výkladem; stránka pojmu naopak ukazuje všechny stránky, které ho používají, a pojmy, které se objevují s ním. Vazby se odvozují, nikdo je nepíše ručně.\n\nKaždá definice je krátká a srozumitelná a odkazuje na zdroj, kde se dá číst dál: dokumentaci, specifikaci nebo encyklopedii. Pojmy jsou tří druhů: programovací jazyky, technologie a koncepty.`
-    : `The glossary is the shared language of the whole site. Every page names the terms it builds on in its ${termLink(g, 'front-matter', lang, 'front matter')} and ends by explaining them; a term's page in turn shows every page that uses it and the terms that appear alongside. These links are derived, never typed by hand.\n\nEach definition is short, in plain words, and points to a source to read further: documentation, a specification or an encyclopedia. Terms come in three kinds: programming languages, technologies and concepts.`}
+    ? `Slovník je společný jazyk celého webu. Každá stránka ve svém ${termLink(g, 'front-matter', lang)} jmenuje pojmy, na kterých stojí, a končí jejich výkladem; stránka pojmu naopak ukazuje všechny stránky, které ho používají, a pojmy, které se objevují s ním. Vazby se odvozují, nikdo je nepíše ručně.\n\nKaždá definice je krátká a srozumitelná a odkazuje na zdroj, kde se dá číst dál: dokumentaci, specifikaci nebo encyklopedii. Pojmy jsou tří druhů: programovací jazyky, technologie a koncepty.\n\nMapa nahoře kreslí tytéž vazby jako síť: každý pojem je hvězda, větší podle počtu stránek, které ho jmenují, a vlákna vedou k pojmům, které se objevují na stejných stránkách. Takové mapě se říká graf souvýskytu; pojmy, které stojí uprostřed, drží web pohromadě.`
+    : `The glossary is the shared language of the whole site. Every page names the terms it builds on in its ${termLink(g, 'front-matter', lang, 'front matter')} and ends by explaining them; a term's page in turn shows every page that uses it and the terms that appear alongside. These links are derived, never typed by hand.\n\nEach definition is short, in plain words, and points to a source to read further: documentation, a specification or an encyclopedia. Terms come in three kinds: programming languages, technologies and concepts.\n\nThe map at the top draws the same links as a network: every term is a star, larger by the pages that name it, and threads lead to the terms that appear on the same pages. Such a map is called a co-occurrence graph; the terms at its centre are the ones that hold the site together.`}
 `);
   sorted.forEach((t, position) => {
     const name = (cs && t.term_cs) || t.term;
@@ -100,7 +101,7 @@ related = [${related.map(q).join(', ')}]
 og_title = ${q(`${name}: ${tr('glossary', lang).toLowerCase()}`)}
 og_image = ${q(`og/${cs ? 'cs-' : ''}glossary-${t.id}.png`)}
 keywords = [${[title, name, t.term, tr(`kind_term_${t.kind}`, lang), tr('glossary', lang), cs ? 'Tomáš Korčák' : 'Tomas Korcak'].filter((k, i, a) => k.length > 1 && a.indexOf(k) === i).map(q).join(', ')}]
-+++
+${vizBlock({ kind: 'atlas', source: 'glossary.terms', title: 'viz_atlas_term_title', lead: 'viz_atlas_term_lead' })}+++
 `);
   });
 }

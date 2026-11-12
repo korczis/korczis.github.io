@@ -21,4 +21,13 @@ related = ["cpp", "elixir", "javascript", "repository", "alpine-js", "apache-ech
 og_title = "Haskell: glossary"
 og_image = "og/glossary-haskell.png"
 keywords = ["Haskell", "Programming language", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "atlas"
+source = "glossary.terms"
+title = "viz_atlas_term_title"
+lead = "viz_atlas_term_lead"
+span = 3
+height = "md"
+tone = "night"
 +++

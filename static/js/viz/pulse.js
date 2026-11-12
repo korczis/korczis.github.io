@@ -4,6 +4,7 @@
 // oscilloscope. Two modes, chosen by the source the page embeds:
 //   user  the owner's public GitHub events, one lane per repository (the home page);
 //   repo  one project's commits, one lane per conventional commit type (feat, fix, docs, ...).
+//   all   every recent project's commits, one lane per category (the work list; snapshot only).
 // The page embeds the measured snapshot; when the source names a live GitHub endpoint, the browser
 // asks it and keeps asking every five minutes while the visual is on screen (conditional requests,
 // so a quiet poll costs no rate limit). Offline, rate-limited or on GitLab it stays on the snapshot
@@ -30,6 +31,8 @@ KorczisHub.viz('pulse', {
     const relative = new Intl.RelativeTimeFormat(KorczisHub.locale, { numeric: 'auto' });
     const clock = new Intl.DateTimeFormat(KorczisHub.locale, { hour: '2-digit', minute: '2-digit' });
     const day = new Intl.DateTimeFormat(KorczisHub.locale, { day: 'numeric', month: 'short' });
+    const month = new Intl.DateTimeFormat(KorczisHub.locale, { month: 'short', year: 'numeric' });
+    const year = new Intl.DateTimeFormat(KorczisHub.locale, { year: 'numeric' });
     const escape = (text) => String(text).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
     const hash = (text) => {
       let h = 2166136261;
@@ -46,11 +49,13 @@ KorczisHub.viz('pulse', {
 
     // The snapshot the page embeds: the last commit of each recent project (user), or a project's
     // latest commits (repo).
-    const snapshot = source.beats.map((b, i) => ({
+    // The work list sends groups (a project, its category lane, its commits); flatten them.
+    const embedded = source.groups ? source.groups.flatMap((g) => g.commits.map((c) => ({ ...c, repo: g.repo, lane: g.lane }))) : source.beats;
+    const snapshot = embedded.map((b, i) => ({
       id: `s:${i}`,
       repo: b.repo,
-      type: byType ? 'commit' : 'push',
-      lane: byType ? kindOf(b.message || '') : b.repo,
+      type: source.mode === 'user' ? 'push' : 'commit',
+      lane: b.lane ?? (byType ? kindOf(b.message || '') : b.repo),
       message: b.message || '',
       at: Date.parse(b.at),
       weight: 1,
@@ -108,6 +113,7 @@ KorczisHub.viz('pulse', {
     let colours = null;
     let points = [];
     let lanes = [];
+    let trace = [];
     let hovered = null;
     let visible = true;
     let frame = 0;
@@ -144,13 +150,20 @@ KorczisHub.viz('pulse', {
       // One lane per repository (or commit type), the busiest on top: orbs float above the trace.
       const counts = d3.rollup(beats, (v) => d3.sum(v, (b) => b.weight), (b) => b.lane);
       const keys = [...counts.keys()].sort((a, b) => counts.get(b) - counts.get(a) || a.localeCompare(b));
-      lanes = keys.map((key, i) => ({ key, y: 40 + (keys.length === 1 ? 0.5 : i / (keys.length - 1)) * (base - 92), colour: d3.color(colours.ramp(keys.length === 1 ? 0.5 : i / (keys.length - 1))) }));
+      lanes = keys.map((key, i) => ({ key, y: 52 + (keys.length === 1 ? 0.5 : i / (keys.length - 1)) * (base - 100), colour: d3.color(colours.ramp(keys.length === 1 ? 0.5 : i / (keys.length - 1))) }));
       const lane = new Map(lanes.map((l) => [l.key, l]));
       points = beats.map((b) => {
         const share = Math.sqrt(b.weight / maxWeight);
         return { b, px: x(b.at), base, oy: lane.get(b.lane).y, amp: (0.25 + 0.75 * share) * height * 0.16, r: 2.5 + 3.5 * share, colour: lane.get(b.lane).colour };
       }).sort((a, b) => a.px - b.px);
       points.x = x;
+      // The trace and its colour, sampled every 2 px once per layout, not once per frame.
+      const mid = d3.color(colours.ramp(0.5));
+      trace = [];
+      for (let px = 0; px <= width; px += 2) {
+        const near = points.find((p) => Math.abs(p.px - px) < 24);
+        trace.push({ px, y: base + traceAt(px), c: near ? near.colour : mid });
+      }
     };
 
     // The trace: a flat line with one ECG beat (a dip, a spike, a rebound) per event; where beats
@@ -180,17 +193,22 @@ KorczisHub.viz('pulse', {
       for (const tick of points.x.ticks(Math.max(2, Math.floor(width / 140)))) {
         const px = points.x(tick);
         ctx.fillRect(px, base + 16, 1, 4);
-        ctx.fillText(tick.getHours() || tick.getMinutes() ? clock.format(tick) : day.format(tick), px, base + 32);
+        // Hours within days, days within months, months within years, years beyond.
+        const [from, to] = points.x.domain();
+        const span = to - from;
+        const label = span > 2 * 31536000000 ? year : span > 120 * 86400000 ? month : tick.getHours() || tick.getMinutes() ? clock : day;
+        ctx.fillText(label.format(tick), px, base + 32);
       }
-      // Lanes: a faint rule per repository, its name at the right edge when there is room.
-      const labelled = (base - 92) / Math.max(1, lanes.length - 1) >= 13;
-      ctx.textAlign = 'right';
+      // Lanes: a faint rule per repository, its name at the left edge when there is room (the
+      // right edge is now, where activity is densest).
+      const labelled = (base - 100) / Math.max(1, lanes.length - 1) >= 13;
+      ctx.textAlign = 'left';
       for (const l of lanes) {
         ctx.fillStyle = `rgba(${l.colour.r}, ${l.colour.g}, ${l.colour.b}, 0.10)`;
         ctx.fillRect(16, l.y, width - 32, 1);
         if (labelled && width > 480) {
           ctx.fillStyle = `rgba(${l.colour.r}, ${l.colour.g}, ${l.colour.b}, 0.75)`;
-          ctx.fillText(l.key, width - 16, l.y - 4);
+          ctx.fillText(l.key, 16, l.y - 4);
         }
       }
       ctx.textAlign = 'center';
@@ -201,19 +219,13 @@ KorczisHub.viz('pulse', {
       const glowAt = (px) => (motion ? Math.max(0.25, 1 - Math.max(0, sweep - px) / (width * 0.9)) * (px > sweep ? 0.25 : 1) : 0.8);
       for (const [lineWidth, alpha] of [[6, 0.08], [2.5, 0.25], [1.2, 0.9]]) {
         ctx.lineWidth = lineWidth;
-        let prev = null;
-        for (let px = 0; px <= width; px += 2) {
-          const y = base + traceAt(px);
-          if (prev) {
-            const near = points.find((p) => Math.abs(p.px - px) < 24);
-            const c = near ? near.colour : d3.color(colours.ramp(0.5));
-            ctx.strokeStyle = `rgba(${c.r}, ${c.g}, ${c.b}, ${alpha * glowAt(px)})`;
-            ctx.beginPath();
-            ctx.moveTo(prev[0], prev[1]);
-            ctx.lineTo(px, y);
-            ctx.stroke();
-          }
-          prev = [px, y];
+        for (let i = 1; i < trace.length; i += 1) {
+          const { px, y, c } = trace[i];
+          ctx.strokeStyle = `rgba(${c.r}, ${c.g}, ${c.b}, ${alpha * glowAt(px)})`;
+          ctx.beginPath();
+          ctx.moveTo(trace[i - 1].px, trace[i - 1].y);
+          ctx.lineTo(px, y);
+          ctx.stroke();
         }
       }
       // The beam.
@@ -232,13 +244,16 @@ KorczisHub.viz('pulse', {
         const lit = hovered === p ? 1.6 : 1;
         const pulse = motion ? 0.85 + 0.15 * Math.sin(time / 500 + hash(p.b.id) * 6.28) : 1;
         const r = p.r * lit * pulse;
-        const halo = ctx.createRadialGradient(p.px, y, 0, p.px, y, r * 4);
-        halo.addColorStop(0, `rgba(${p.colour.r}, ${p.colour.g}, ${p.colour.b}, ${hovered === p ? 0.5 : 0.22})`);
-        halo.addColorStop(1, `rgba(${p.colour.r}, ${p.colour.g}, ${p.colour.b}, 0)`);
-        ctx.fillStyle = halo;
-        ctx.beginPath();
-        ctx.arc(p.px, y, r * 4, 0, Math.PI * 2);
-        ctx.fill();
+        // A soft halo per orb while there are few; a dense sky (the work list) keeps it for the hovered.
+        if (points.length <= 160 || hovered === p) {
+          const halo = ctx.createRadialGradient(p.px, y, 0, p.px, y, r * 4);
+          halo.addColorStop(0, `rgba(${p.colour.r}, ${p.colour.g}, ${p.colour.b}, ${hovered === p ? 0.5 : 0.22})`);
+          halo.addColorStop(1, `rgba(${p.colour.r}, ${p.colour.g}, ${p.colour.b}, 0)`);
+          ctx.fillStyle = halo;
+          ctx.beginPath();
+          ctx.arc(p.px, y, r * 4, 0, Math.PI * 2);
+          ctx.fill();
+        }
         ctx.fillStyle = `rgba(${p.colour.r}, ${p.colour.g}, ${p.colour.b}, 0.95)`;
         ctx.beginPath();
         ctx.arc(p.px, y, r, 0, Math.PI * 2);

@@ -21,4 +21,13 @@ related = ["alpine-js", "apache-echarts", "cytoscape-js", "d3", "flowbite-pro", 
 og_title = "Chart.js: slovník"
 og_image = "og/cs-glossary-chart-js.png"
 keywords = ["Chart.js", "Technologie", "Slovník", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "atlas"
+source = "glossary.terms"
+title = "viz_atlas_term_title"
+lead = "viz_atlas_term_lead"
+span = 3
+height = "md"
+tone = "night"
 +++

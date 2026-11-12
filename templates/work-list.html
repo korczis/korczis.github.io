@@ -13,6 +13,7 @@
   {{ <kpi value={p.repos ~ ""} label={trans(key="kpi_within_months", lang=lang) | replace(from="{n}", to=p.months ~ "")} note={trans(key="kpi_period", lang=lang) | replace(from="{n}", to=p.months ~ "")} /> }}
   {%- endfor %}
 </div>
+<div class="px-4 pt-6">{%- include "partials/viz-grid.html" %}</div>
 {%- for p in rc.periods %}
 <section class="px-4 pt-6" aria-labelledby="period-{{ p.months }}">
   <h2 id="period-{{ p.months }}" class="mb-4 text-xl font-bold text-gray-900 dark:text-white">{{ trans(key="within", lang=lang) | safe }} {{ p.months }} {{ trans(key="months", lang=lang) | safe }} <span class="tabular text-base font-normal text-gray-600 dark:text-gray-400">· {{ p.repos }}</span></h2>

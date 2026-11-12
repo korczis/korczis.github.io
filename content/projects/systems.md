@@ -15,6 +15,15 @@ og_image = "og/category-systems.png"
 schema = "collection"
 terms = ["shell", "dockerfile", "ruby", "javascript", "rust", "repository"]
 keywords = ["Systems and infrastructure", "docks", "gh-exec-3000", "server-archlinux", "zdeny-docker", "k8s-orbis-pictus", "server-coreos", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "constellation"
+source = "index.repos"
+title = "viz_category_galaxy_title"
+lead = "viz_category_galaxy_lead"
+span = 3
+height = "lg"
+tone = "night"
 +++
 Servers, clusters and the plumbing beneath software: immutable hosts, packet processing, embedded boards and deployment.
 

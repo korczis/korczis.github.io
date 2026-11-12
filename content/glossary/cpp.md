@@ -21,4 +21,13 @@ related = ["repository", "elixir", "javascript", "ruby", "rust", "csharp", "hask
 og_title = "C++: glossary"
 og_image = "og/glossary-cpp.png"
 keywords = ["C++", "Programming language", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "atlas"
+source = "glossary.terms"
+title = "viz_atlas_term_title"
+lead = "viz_atlas_term_lead"
+span = 3
+height = "md"
+tone = "night"
 +++

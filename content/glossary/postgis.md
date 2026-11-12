@@ -21,4 +21,13 @@ related = ["elixir", "gis", "html", "javascript", "mcp", "repository", "commit",
 og_title = "PostGIS: glossary"
 og_image = "og/glossary-postgis.png"
 keywords = ["PostGIS", "Technology", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "atlas"
+source = "glossary.terms"
+title = "viz_atlas_term_title"
+lead = "viz_atlas_term_lead"
+span = 3
+height = "md"
+tone = "night"
 +++

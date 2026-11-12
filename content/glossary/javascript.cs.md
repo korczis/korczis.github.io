@@ -21,4 +21,13 @@ related = ["repository", "open-source", "commit", "html", "shell", "css", "githu
 og_title = "JavaScript: slovník"
 og_image = "og/cs-glossary-javascript.png"
 keywords = ["JavaScript", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "atlas"
+source = "glossary.terms"
+title = "viz_atlas_term_title"
+lead = "viz_atlas_term_lead"
+span = 3
+height = "md"
+tone = "night"
 +++

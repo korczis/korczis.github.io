@@ -44,6 +44,9 @@
 </section>
 {%- endif %}
 
+{#- The category in the galaxy of all work, declared in its front matter (build-categories). #}
+<div class="px-4 pb-6">{%- include "partials/viz-grid.html" %}</div>
+
 {#- Neighbouring categories: Flowbite Pro button group, derived from the catalogue. #}
 <nav class="px-4 pb-6" aria-label="{{ trans(key="other_categories", lang=lang) }}">
   <p class="mb-3 text-sm font-medium text-gray-900 dark:text-white">{{ trans(key="other_categories", lang=lang) | safe }}</p>

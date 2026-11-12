@@ -15,6 +15,15 @@ og_image = "og/cs-category-tools.png"
 schema = "collection"
 terms = ["open-source", "javascript", "ruby", "elixir", "python", "shell", "csharp", "cpp", "rust", "swift", "typescript", "postgresql", "repository"]
 keywords = ["Nástroje", "Gists search", "json2csv", "csv2psql", "astronomists", "vomaste.cz", "the-psycho", "unable.cz", "u-tygra", "tinder-nomics", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "constellation"
+source = "index.repos"
+title = "viz_category_galaxy_title"
+lead = "viz_category_galaxy_lead"
+span = 3
+height = "lg"
+tone = "night"
 +++
 Malé, ostré nástroje pro příkazovou řádku a indexy: převody dat, CSV do SQL, hledání v gistech.
 

@@ -1293,3 +1293,39 @@ cs = "Poslední commity jako tep, jeden pruh na typ commitu, živě obnovované 
 [viz_commits_lead_snapshot]
 en = "The latest commits as a heartbeat, one lane per commit type, measured on GitLab every six hours; every beat opens its commit."
 cs = "Poslední commity jako tep, jeden pruh na typ commitu, měřené na GitLabu každých šest hodin; každý úder otevře svůj commit."
+
+[js_n_pages]
+en = "{n} pages"
+cs = "stránek: {n}"
+
+[viz_atlas_title]
+en = "Map of concepts"
+cs = "Mapa pojmů"
+
+[viz_atlas_lead]
+en = "Every term as a star, linked to the terms that appear beside it on the same pages; larger means more pages. Drag to rearrange, click to open."
+cs = "Každý pojem jako hvězda, propojený s pojmy, které se objevují na stejných stránkách; větší znamená více stránek. Tažením přeskládáte, kliknutím otevřete."
+
+[viz_atlas_term_title]
+en = "Where this term sits"
+cs = "Kde pojem leží"
+
+[viz_atlas_term_lead]
+en = "This term at the centre of the map of concepts, its neighbours lit; hover any term to read it, click to open it."
+cs = "Tento pojem uprostřed mapy pojmů, jeho sousedé rozsvícení; najetím si pojem přečtete, kliknutím otevřete."
+
+[viz_category_galaxy_title]
+en = "In the galaxy of all work"
+cs = "V galaxii veškeré práce"
+
+[viz_category_galaxy_lead]
+en = "Every original repository as a star, one arm per category; this category's arm is drawn as a constellation. Drag to turn, click a star to open it."
+cs = "Každý původní repozitář jako hvězda, jedno rameno na kategorii; rameno této kategorie je nakreslené jako souhvězdí. Tažením otočíte, kliknutím otevřete."
+
+[viz_work_pulse_title]
+en = "Pulse of four years"
+cs = "Puls čtyř let"
+
+[viz_work_pulse_lead]
+en = "The latest commits of every recent project as one heartbeat, a lane per category, measured every six hours; every beat opens its commit."
+cs = "Poslední commity každého nedávného projektu jako jeden tep, pruh na kategorii, měřené každých šest hodin; každý úder otevře svůj commit."

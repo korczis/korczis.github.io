@@ -12,7 +12,18 @@ og_image = "og/glossary.png"
 schema = "glossary"
 terms = ["open-source", "repository", "front-matter", "static-site-generator"]
 keywords = ["Glossary", "C#", "C++", "CSS", "Dockerfile", "Elixir", "Erlang", "Haskell", "HTML", "Java", "JavaScript", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "atlas"
+source = "glossary.terms"
+title = "viz_atlas_title"
+lead = "viz_atlas_lead"
+span = 3
+height = "lg"
+tone = "night"
 +++
 The glossary is the shared language of the whole site. Every page names the terms it builds on in its [front matter](@/glossary/front-matter.md) and ends by explaining them; a term's page in turn shows every page that uses it and the terms that appear alongside. These links are derived, never typed by hand.
 
 Each definition is short, in plain words, and points to a source to read further: documentation, a specification or an encyclopedia. Terms come in three kinds: programming languages, technologies and concepts.
+
+The map at the top draws the same links as a network: every term is a star, larger by the pages that name it, and threads lead to the terms that appear on the same pages. Such a map is called a co-occurrence graph; the terms at its centre are the ones that hold the site together.

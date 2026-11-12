@@ -15,6 +15,15 @@ og_image = "og/cs-category-systems.png"
 schema = "collection"
 terms = ["shell", "dockerfile", "ruby", "javascript", "rust", "repository"]
 keywords = ["Systémy a infrastruktura", "docks", "gh-exec-3000", "server-archlinux", "zdeny-docker", "k8s-orbis-pictus", "server-coreos", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "constellation"
+source = "index.repos"
+title = "viz_category_galaxy_title"
+lead = "viz_category_galaxy_lead"
+span = 3
+height = "lg"
+tone = "night"
 +++
 Servery, clustery a potrubí pod softwarem: neměnné hostitele, zpracování paketů, embedded desky a nasazování.
 

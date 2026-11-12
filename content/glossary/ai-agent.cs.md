@@ -21,4 +21,13 @@ related = ["open-source", "repository", "commit", "html", "shell", "elixir", "ja
 og_title = "AI agent: slovník"
 og_image = "og/cs-glossary-ai-agent.png"
 keywords = ["AI agent", "Koncept", "Slovník", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "atlas"
+source = "glossary.terms"
+title = "viz_atlas_term_title"
+lead = "viz_atlas_term_lead"
+span = 3
+height = "md"
+tone = "night"
 +++

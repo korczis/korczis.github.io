@@ -15,6 +15,15 @@ og_image = "og/category-learning.png"
 schema = "collection"
 terms = ["csharp", "cpp", "javascript", "ruby", "c", "elixir", "haskell", "java", "shell", "repository"]
 keywords = ["Learning and experiments", "happ", "Test-Elixir", "node-proxy-upload", "skull-cpp", "grache-test", "skull-emscripten", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "constellation"
+source = "index.repos"
+title = "viz_category_galaxy_title"
+lead = "viz_category_galaxy_lead"
+span = 3
+height = "lg"
+tone = "night"
 +++
 Learning materials, katas and experiments across many languages: the sketches that came before the projects.
 

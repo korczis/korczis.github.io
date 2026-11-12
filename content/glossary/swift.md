@@ -21,4 +21,13 @@ related = ["elixir", "repository", "shell", "alpine-js", "apache-echarts", "cpp"
 og_title = "Swift: glossary"
 og_image = "og/glossary-swift.png"
 keywords = ["Swift", "Programming language", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "atlas"
+source = "glossary.terms"
+title = "viz_atlas_term_title"
+lead = "viz_atlas_term_lead"
+span = 3
+height = "md"
+tone = "night"
 +++

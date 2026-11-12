@@ -21,4 +21,13 @@ related = ["javascript", "repository", "rust", "elixir", "shell", "cpp", "csharp
 og_title = "Ruby: glossary"
 og_image = "og/glossary-ruby.png"
 keywords = ["Ruby", "Programming language", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "atlas"
+source = "glossary.terms"
+title = "viz_atlas_term_title"
+lead = "viz_atlas_term_lead"
+span = 3
+height = "md"
+tone = "night"
 +++

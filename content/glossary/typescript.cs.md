@@ -21,4 +21,13 @@ related = ["repository", "javascript", "open-source", "commit", "shell", "elixir
 og_title = "TypeScript: slovník"
 og_image = "og/cs-glossary-typescript.png"
 keywords = ["TypeScript", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "atlas"
+source = "glossary.terms"
+title = "viz_atlas_term_title"
+lead = "viz_atlas_term_lead"
+span = 3
+height = "md"
+tone = "night"
 +++

@@ -21,4 +21,13 @@ related = ["alpine-js", "apache-echarts", "chart-js", "cytoscape-js", "d3", "flo
 og_title = "Tailwind CSS: glossary"
 og_image = "og/glossary-tailwind-css.png"
 keywords = ["Tailwind CSS", "Technology", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "atlas"
+source = "glossary.terms"
+title = "viz_atlas_term_title"
+lead = "viz_atlas_term_lead"
+span = 3
+height = "md"
+tone = "night"
 +++

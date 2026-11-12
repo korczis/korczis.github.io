@@ -21,4 +21,13 @@ related = ["repository", "open-source", "commit", "javascript", "shell", "html",
 og_title = "Elixir: glossary"
 og_image = "og/glossary-elixir.png"
 keywords = ["Elixir", "Programming language", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "atlas"
+source = "glossary.terms"
+title = "viz_atlas_term_title"
+lead = "viz_atlas_term_lead"
+span = 3
+height = "md"
+tone = "night"
 +++

@@ -15,6 +15,15 @@ og_image = "og/cs-category-web.png"
 schema = "collection"
 terms = ["static-site-generator", "javascript", "css", "elixir", "repository"]
 keywords = ["Web", "job-processor", "nestravenkam", "tosh", "the-scratch", "web-spa", "microscratch-react", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "constellation"
+source = "index.repos"
+title = "viz_category_galaxy_title"
+lead = "viz_category_galaxy_lead"
+span = 3
+height = "lg"
+tone = "night"
 +++
 Weby a webové aplikace: single-page aplikace, frontendy v Phoenixu a Elmu, landing pages a weby přátel.
 

@@ -15,6 +15,15 @@ og_image = "og/cs-category-knowledge.png"
 schema = "collection"
 terms = ["elixir", "swift", "erlang", "shell", "zola", "cytoscape-js", "apache-echarts", "alpine-js", "flowbite-pro", "repository"]
 keywords = ["Znalosti", "Kompendium", "ReadingPhoneNumbersInRealTime", "MinervaEye", "reading", "skull-elixir", "skull", "skull-erlang", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "constellation"
+source = "index.repos"
+title = "viz_category_galaxy_title"
+lead = "viz_category_galaxy_lead"
+span = 3
+height = "lg"
+tone = "night"
 +++
 Znalostní báze, které si ověříte: propojené taxonomie se zdroji, stavěné jako knihy, weby a grafy.
 

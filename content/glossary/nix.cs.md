@@ -21,4 +21,13 @@ related = ["commit", "dockerfile", "elixir", "html", "open-source", "repository"
 og_title = "Nix: slovník"
 og_image = "og/cs-glossary-nix.png"
 keywords = ["Nix", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "atlas"
+source = "glossary.terms"
+title = "viz_atlas_term_title"
+lead = "viz_atlas_term_lead"
+span = 3
+height = "md"
+tone = "night"
 +++

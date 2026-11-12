@@ -26,6 +26,7 @@
       </ul>
     </section>
   </div>
+  {%- include "partials/viz-grid.html" %}
   {%- if page.extra.pages | length > 0 %}
   <section class="{{ card }}" aria-labelledby="used-title">
     <h2 id="used-title" class="text-xl font-bold text-gray-900 dark:text-white">{{ trans(key="used_on_pages", lang=lang) }}</h2>

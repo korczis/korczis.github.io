@@ -21,4 +21,13 @@ related = ["repository", "open-source", "commit", "elixir", "html", "javascript"
 og_title = "GIS: glossary"
 og_image = "og/glossary-gis.png"
 keywords = ["GIS", "Concept", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "atlas"
+source = "glossary.terms"
+title = "viz_atlas_term_title"
+lead = "viz_atlas_term_lead"
+span = 3
+height = "md"
+tone = "night"
 +++

@@ -15,6 +15,15 @@ og_image = "og/category-ai.png"
 schema = "collection"
 terms = ["ai-agent", "html", "rust", "mcp", "zola", "repository"]
 keywords = ["AI engineering", "Majordomus", "korczis.github.io", "osint-case-ratcliffe-moscow-2026", "llm", "sig", "edna", "cognitive-reasoning", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "constellation"
+source = "index.repos"
+title = "viz_category_galaxy_title"
+lead = "viz_category_galaxy_lead"
+span = 3
+height = "lg"
+tone = "night"
 +++
 Supervision for AI coding agents: one policy for every tool, scoped tasks, and work that lands only when it is proven.
 

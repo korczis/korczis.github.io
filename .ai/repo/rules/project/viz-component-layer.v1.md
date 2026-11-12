@@ -47,6 +47,11 @@ theme change, error reporting and the ready state the audit waits for.
   visual is on screen, with `If-None-Match` so a quiet poll costs no rate limit, and falls back to
   the snapshot (labelled "Snapshot") when offline or limited. A failed poll is never a console
   error. Any future live visual follows the same shape: snapshot first, live on top, labelled.
+- Every listing and article type carries a visual, declared by its generator through
+  `scripts/lib/viz.mjs` (`vizBlock`, the convention: full width, night sky): the glossary and
+  every term page an `atlas` (co-occurrence map of terms, a term page centred on itself), every
+  category page the `constellation` with its own arm lit (`source.focus`), the work list a
+  `pulse` of all recent commits (`work.all`, a lane per category), every work page its own pulse.
 - Motion respects `prefers-reduced-motion`; a decorative visual is `aria-hidden`.
 - Alpine.js components live in `static/js/components/` and only enhance markup the template
   already rendered.

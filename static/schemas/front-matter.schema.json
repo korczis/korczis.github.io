@@ -117,6 +117,7 @@
                   "stream",
                   "constellation",
                   "pulse",
+                  "atlas",
                   "languages",
                   "skillset",
                   "graph"
@@ -131,7 +132,9 @@
                   "index.years",
                   "index.repos",
                   "recent.commits",
-                  "work.commits"
+                  "work.commits",
+                  "work.all",
+                  "glossary.terms"
                 ]
               },
               "title": {

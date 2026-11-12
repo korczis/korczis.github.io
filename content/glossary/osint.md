@@ -21,4 +21,13 @@ related = ["ai-agent", "open-source", "repository", "ruby", "rust", "cpp", "data
 og_title = "OSINT: glossary"
 og_image = "og/glossary-osint.png"
 keywords = ["OSINT", "Concept", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "atlas"
+source = "glossary.terms"
+title = "viz_atlas_term_title"
+lead = "viz_atlas_term_lead"
+span = 3
+height = "md"
+tone = "night"
 +++

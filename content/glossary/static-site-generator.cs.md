@@ -21,4 +21,13 @@ related = ["repository", "commit", "elixir", "css", "d3", "data-visualisation", 
 og_title = "Generátor statických webů: slovník"
 og_image = "og/cs-glossary-static-site-generator.png"
 keywords = ["Generátor statických webů", "Static site generator", "Koncept", "Slovník", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "atlas"
+source = "glossary.terms"
+title = "viz_atlas_term_title"
+lead = "viz_atlas_term_lead"
+span = 3
+height = "md"
+tone = "night"
 +++

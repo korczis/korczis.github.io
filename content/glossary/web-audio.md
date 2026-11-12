@@ -21,4 +21,13 @@ related = ["data-visualisation", "javascript", "repository", "alpine-js", "apach
 og_title = "Web Audio: glossary"
 og_image = "og/glossary-web-audio.png"
 keywords = ["Web Audio", "Technology", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "atlas"
+source = "glossary.terms"
+title = "viz_atlas_term_title"
+lead = "viz_atlas_term_lead"
+span = 3
+height = "md"
+tone = "night"
 +++

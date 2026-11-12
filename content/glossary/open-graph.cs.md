@@ -21,4 +21,13 @@ related = ["commit", "d3", "data-visualisation", "flowbite-pro", "fork", "front-
 og_title = "Open Graph: slovník"
 og_image = "og/cs-glossary-open-graph.png"
 keywords = ["Open Graph", "Koncept", "Slovník", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "atlas"
+source = "glossary.terms"
+title = "viz_atlas_term_title"
+lead = "viz_atlas_term_lead"
+span = 3
+height = "md"
+tone = "night"
 +++

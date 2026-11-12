@@ -10,6 +10,7 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parse } from 'smol-toml';
 import { listing, loadGlossary, nameLink, termLink, termsForCategory, termsForNames } from './lib/terms.mjs';
+import { vizBlock } from './lib/viz.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const DIR = join(ROOT, 'content/projects');
@@ -83,7 +84,7 @@ og_image = ${q(`og/${cs ? 'cs-' : ''}category-${key}.png`)}
 schema = "collection"
 terms = [${[...termsForCategory(glossary, key, allLanguages(key)), ...termsForNames(glossary, projects.flatMap((p) => p.stack ?? [])), 'repository'].filter((t, i, a) => a.indexOf(t) === i).map(q).join(', ')}]
 keywords = [${[name, ...names, cs ? 'Tomáš Korčák' : 'Tomas Korcak'].map(q).join(', ')}]
-+++
+${vizBlock({ kind: 'constellation', source: 'index.repos', title: 'viz_category_galaxy_title', lead: 'viz_category_galaxy_lead', height: 'lg' })}+++
 ${article(key, c, lang)}
 `);
   }

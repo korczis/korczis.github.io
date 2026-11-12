@@ -15,6 +15,15 @@ og_image = "og/cs-category-security.png"
 schema = "collection"
 terms = ["osint", "cpp", "ruby", "rust", "repository"]
 keywords = ["Bezpečnost a OSINT", "magic", "zlown", "peacemaker", "ratnet", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "constellation"
+source = "index.repos"
+title = "viz_category_galaxy_title"
+lead = "viz_category_galaxy_lead"
+span = 3
+height = "lg"
+tone = "night"
 +++
 Zpravodajství z otevřených zdrojů, výzkum rádiové a síťové bezpečnosti: případy, proof of concept a nástroje kolem nich.
 

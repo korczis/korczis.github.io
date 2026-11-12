@@ -21,4 +21,13 @@ related = ["repository", "open-source", "commit", "javascript", "shell", "html",
 og_title = "Elixir: slovník"
 og_image = "og/cs-glossary-elixir.png"
 keywords = ["Elixir", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "atlas"
+source = "glossary.terms"
+title = "viz_atlas_term_title"
+lead = "viz_atlas_term_lead"
+span = 3
+height = "md"
+tone = "night"
 +++

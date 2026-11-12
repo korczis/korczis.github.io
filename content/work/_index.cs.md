@@ -11,6 +11,15 @@ og_image = "og/cs-work.png"
 schema = "collection"
 terms = ["repository", "commit", "open-source", "data-visualisation"]
 keywords = ["nedávná práce Tomáše Korčáka", "korczis", "korczis.github.io", "sonic-playground", "kompendium-epistemicke-anihilace", "algoglyph", "oscilla", "prismatic-majordomus", "vomaste.cz", "majordomus-reel"]
+
+[[extra.viz]]
+kind = "pulse"
+source = "work.all"
+title = "viz_work_pulse_title"
+lead = "viz_work_pulse_lead"
+span = 3
+height = "md"
+tone = "night"
 +++
 Tato stránka odpovídá na otázku, na čem se pracuje teď. Projekt sem patří podle data svého posledního [commitu](@/glossary/commit.cs.md) ve výchozí větvi, ne podle toho, kdy na hostingu naposledy něco proběhlo, a řadí se do tří období: 12, 24 a 48 měsíců.
 

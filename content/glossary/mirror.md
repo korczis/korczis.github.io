@@ -21,4 +21,13 @@ related = ["commit", "fork", "repository", "d3", "data-visualisation", "flowbite
 og_title = "Mirror: glossary"
 og_image = "og/glossary-mirror.png"
 keywords = ["Mirror", "Concept", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "atlas"
+source = "glossary.terms"
+title = "viz_atlas_term_title"
+lead = "viz_atlas_term_lead"
+span = 3
+height = "md"
+tone = "night"
 +++

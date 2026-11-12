@@ -15,6 +15,15 @@ og_image = "og/cs-category-ai.png"
 schema = "collection"
 terms = ["ai-agent", "html", "rust", "mcp", "zola", "repository"]
 keywords = ["Inženýrství AI", "Majordomus", "korczis.github.io", "osint-case-ratcliffe-moscow-2026", "llm", "sig", "edna", "cognitive-reasoning", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "constellation"
+source = "index.repos"
+title = "viz_category_galaxy_title"
+lead = "viz_category_galaxy_lead"
+span = 3
+height = "lg"
+tone = "night"
 +++
 Dohled nad AI agenty pro programování: jedna politika pro každý nástroj, vymezené úkoly a práce, která projde jen doložená.
 

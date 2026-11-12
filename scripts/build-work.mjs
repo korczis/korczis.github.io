@@ -10,6 +10,7 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parse } from 'smol-toml';
 import { listing, loadGlossary, mdEscape, nameLink, termLink, termsForRepo } from './lib/terms.mjs';
+import { vizBlock } from './lib/viz.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const DIR = join(ROOT, 'content/work');
@@ -103,7 +104,7 @@ og_image = ${q(cs ? 'og/cs-work.png' : 'og/work.png')}
 schema = "collection"
 terms = ["repository", "commit", "open-source", "data-visualisation"]
 keywords = [${[cs ? 'nedávná práce Tomáše Korčáka' : 'Tomas Korcak recent work', 'korczis', ...recent.repos.slice(0, 8).map((r) => r.name)].map(q).join(', ')}]
-+++
+${vizBlock({ kind: 'pulse', source: 'work.all', title: 'viz_work_pulse_title', lead: 'viz_work_pulse_lead' })}+++
 ${cs
     ? `Tato stránka odpovídá na otázku, na čem se pracuje teď. Projekt sem patří podle data svého posledního ${termLink(glossary, 'commit', lang, 'commitu')} ve výchozí větvi, ne podle toho, kdy na hostingu naposledy něco proběhlo, a řadí se do tří období: 12, 24 a 48 měsíců.\n\nKaždý projekt má vlastní stránku s odvozeným článkem, změřenými fakty a pojmy, na kterých stojí. ${termLink(glossary, 'fork', lang, 'Forky')} a ${termLink(glossary, 'mirror', lang, 'mirrory')} tu nejsou: jde jen o vlastní práci.`
     : `This page answers the question of what is being worked on now. A project belongs here by the date of its last ${termLink(glossary, 'commit', lang, 'commit')} on the default branch, never by when its host last saw activity, and falls into one of three periods: 12, 24 and 48 months.\n\nEvery project has its own page with a derived article, measured facts and the concepts it builds on. ${termLink(glossary, 'fork', lang, 'Forks')} and ${termLink(glossary, 'mirror', lang, 'mirrors')} are left out: this is the owner's own work only.`}
@@ -129,16 +130,7 @@ og_image = ${q(`og/${cs ? 'cs-' : ''}work-${slug(r.name)}.png`)}
 schema = "project"
 keywords = [${[title, ...tags(r, cs), cs ? 'Tomáš Korčák' : 'Tomas Korcak'].map(q).join(', ')}]
 terms = [${termsForRepo(glossary, r, curated).map(q).join(', ')}]
-${r.commits.length ? `
-[[extra.viz]]
-kind = "pulse"
-source = "work.commits"
-title = "viz_commits_title"
-lead = ${q(r.hosts.github ? 'viz_commits_lead_live' : 'viz_commits_lead_snapshot')}
-span = 3
-height = "md"
-tone = "night"
-` : ''}+++
+${r.commits.length ? vizBlock({ kind: 'pulse', source: 'work.commits', title: 'viz_commits_title', lead: r.hosts.github ? 'viz_commits_lead_live' : 'viz_commits_lead_snapshot' }) : ''}+++
 ${article(r, curated, lang)}
 `);
   });

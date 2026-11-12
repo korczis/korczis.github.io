@@ -21,4 +21,13 @@ related = ["repository", "javascript", "open-source", "shell", "elixir", "html",
 og_title = "Rust: slovník"
 og_image = "og/cs-glossary-rust.png"
 keywords = ["Rust", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "atlas"
+source = "glossary.terms"
+title = "viz_atlas_term_title"
+lead = "viz_atlas_term_lead"
+span = 3
+height = "md"
+tone = "night"
 +++

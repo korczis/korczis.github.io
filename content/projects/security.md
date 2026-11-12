@@ -15,6 +15,15 @@ og_image = "og/category-security.png"
 schema = "collection"
 terms = ["osint", "cpp", "ruby", "rust", "repository"]
 keywords = ["Security and OSINT", "magic", "zlown", "peacemaker", "ratnet", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "constellation"
+source = "index.repos"
+title = "viz_category_galaxy_title"
+lead = "viz_category_galaxy_lead"
+span = 3
+height = "lg"
+tone = "night"
 +++
 Open-source intelligence, radio and network security research: cases, proofs of concept and the tooling around them.
 

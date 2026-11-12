@@ -21,4 +21,13 @@ related = ["alpine-js", "apache-echarts", "repository", "zola", "commit", "cytos
 og_title = "Flowbite Pro: glossary"
 og_image = "og/glossary-flowbite-pro.png"
 keywords = ["Flowbite Pro", "Technology", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "atlas"
+source = "glossary.terms"
+title = "viz_atlas_term_title"
+lead = "viz_atlas_term_lead"
+span = 3
+height = "md"
+tone = "night"
 +++

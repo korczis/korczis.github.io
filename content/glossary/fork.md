@@ -21,4 +21,13 @@ related = ["commit", "mirror", "repository", "d3", "data-visualisation", "flowbi
 og_title = "Fork: glossary"
 og_image = "og/glossary-fork.png"
 keywords = ["Fork", "Concept", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "atlas"
+source = "glossary.terms"
+title = "viz_atlas_term_title"
+lead = "viz_atlas_term_lead"
+span = 3
+height = "md"
+tone = "night"
 +++

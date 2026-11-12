@@ -21,4 +21,13 @@ related = ["html", "repository", "javascript", "rust", "ai-agent", "commit", "cs
 og_title = "MCP: slovník"
 og_image = "og/cs-glossary-mcp.png"
 keywords = ["MCP", "Technologie", "Slovník", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "atlas"
+source = "glossary.terms"
+title = "viz_atlas_term_title"
+lead = "viz_atlas_term_lead"
+span = 3
+height = "md"
+tone = "night"
 +++

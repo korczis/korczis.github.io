@@ -15,6 +15,15 @@ og_image = "og/cs-category-media.png"
 schema = "collection"
 terms = ["data-visualisation", "html", "dockerfile", "elixir", "javascript", "repository"]
 keywords = ["Média a umění", "Majordomus reel", "Catharsis as a Service", "Sonic Playground", "openttd-prismatic-bridge", "prismatic-blog", "dj-schnapps", "brepta", "talkie", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "constellation"
+source = "index.repos"
+title = "viz_category_galaxy_title"
+lead = "viz_category_galaxy_lead"
+span = 3
+height = "lg"
+tone = "night"
 +++
 Díla z kódu: promo video renderované od začátku do konce, hudební blog a pár digitálních artefaktů.
 

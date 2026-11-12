@@ -15,6 +15,15 @@ og_image = "og/category-media.png"
 schema = "collection"
 terms = ["data-visualisation", "html", "dockerfile", "elixir", "javascript", "repository"]
 keywords = ["Media and art", "Majordomus reel", "Catharsis as a Service", "Sonic Playground", "openttd-prismatic-bridge", "prismatic-blog", "dj-schnapps", "brepta", "talkie", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "constellation"
+source = "index.repos"
+title = "viz_category_galaxy_title"
+lead = "viz_category_galaxy_lead"
+span = 3
+height = "lg"
+tone = "night"
 +++
 Work made from code: a promo reel rendered end to end, a music blog, and a digital artifact or two.
 

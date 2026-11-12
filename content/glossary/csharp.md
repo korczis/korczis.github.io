@@ -21,4 +21,13 @@ related = ["cpp", "elixir", "javascript", "repository", "ruby", "shell", "c", "h
 og_title = "C#: glossary"
 og_image = "og/glossary-csharp.png"
 keywords = ["C#", "Programming language", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "atlas"
+source = "glossary.terms"
+title = "viz_atlas_term_title"
+lead = "viz_atlas_term_lead"
+span = 3
+height = "md"
+tone = "night"
 +++

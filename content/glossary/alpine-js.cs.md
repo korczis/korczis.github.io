@@ -21,4 +21,13 @@ related = ["apache-echarts", "flowbite-pro", "repository", "cytoscape-js", "elix
 og_title = "Alpine.js: slovník"
 og_image = "og/cs-glossary-alpine-js.png"
 keywords = ["Alpine.js", "Technologie", "Slovník", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "atlas"
+source = "glossary.terms"
+title = "viz_atlas_term_title"
+lead = "viz_atlas_term_lead"
+span = 3
+height = "md"
+tone = "night"
 +++

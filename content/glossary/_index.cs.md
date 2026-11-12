@@ -12,7 +12,18 @@ og_image = "og/cs-glossary.png"
 schema = "glossary"
 terms = ["open-source", "repository", "front-matter", "static-site-generator"]
 keywords = ["Slovník", "C#", "C++", "CSS", "Dockerfile", "Elixir", "Erlang", "Haskell", "HTML", "Java", "JavaScript", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "atlas"
+source = "glossary.terms"
+title = "viz_atlas_title"
+lead = "viz_atlas_lead"
+span = 3
+height = "lg"
+tone = "night"
 +++
 Slovník je společný jazyk celého webu. Každá stránka ve svém [Front matter](@/glossary/front-matter.cs.md) jmenuje pojmy, na kterých stojí, a končí jejich výkladem; stránka pojmu naopak ukazuje všechny stránky, které ho používají, a pojmy, které se objevují s ním. Vazby se odvozují, nikdo je nepíše ručně.
 
 Každá definice je krátká a srozumitelná a odkazuje na zdroj, kde se dá číst dál: dokumentaci, specifikaci nebo encyklopedii. Pojmy jsou tří druhů: programovací jazyky, technologie a koncepty.
+
+Mapa nahoře kreslí tytéž vazby jako síť: každý pojem je hvězda, větší podle počtu stránek, které ho jmenují, a vlákna vedou k pojmům, které se objevují na stejných stránkách. Takové mapě se říká graf souvýskytu; pojmy, které stojí uprostřed, drží web pohromadě.

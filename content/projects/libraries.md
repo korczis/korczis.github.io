@@ -15,6 +15,15 @@ og_image = "og/category-libraries.png"
 schema = "collection"
 terms = ["open-source", "rust", "elixir", "javascript", "repository"]
 keywords = ["Libraries", "hydra", "in-rust-we-trust", "rustler-test", "streamflow", "sli2dli", "rustler_mix", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "constellation"
+source = "index.repos"
+title = "viz_category_galaxy_title"
+lead = "viz_category_galaxy_lead"
+span = 3
+height = "lg"
+tone = "night"
 +++
 Reusable building blocks for other programs: clients, bindings, validators, parsers and framework extensions, mostly Elixir and Rust.
 

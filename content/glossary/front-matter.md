@@ -21,4 +21,13 @@ related = ["commit", "d3", "data-visualisation", "flowbite-pro", "fork", "json-l
 og_title = "Front matter: glossary"
 og_image = "og/glossary-front-matter.png"
 keywords = ["Front matter", "Concept", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "atlas"
+source = "glossary.terms"
+title = "viz_atlas_term_title"
+lead = "viz_atlas_term_lead"
+span = 3
+height = "md"
+tone = "night"
 +++

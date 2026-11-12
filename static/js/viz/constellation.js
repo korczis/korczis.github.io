@@ -3,6 +3,7 @@
 // newest at the rim, a star's size grows with its stars on GitHub, and work of the last 48 months
 // twinkles. The galaxy turns slowly in 3D; drag to turn it, hover a star to read it and to light its
 // category as a constellation, click to open its page (work page when recent, else its repository).
+// A category page passes its key as source.focus: that arm stays lit as a constellation.
 KorczisHub.viz('constellation', {
   lib: 'd3',
   mount(box, source, { palette, reducedMotion }) {
@@ -15,6 +16,7 @@ KorczisHub.viz('constellation', {
     const slug = (name) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
     const recent = new Set(source.recent);
     const keys = Object.keys(source.categories);
+    const focusArm = source.focus && keys.includes(source.focus) ? keys.indexOf(source.focus) : null;
             // Deterministic jitter per repository: the same sky on every visit.
     const hash = (text, salt) => {
       let h = 2166136261 ^ salt;
@@ -95,17 +97,19 @@ KorczisHub.viz('constellation', {
       core.addColorStop(1, 'rgba(147,197,253,0)');
       ctx.fillStyle = core;
       ctx.fillRect(0, 0, width, height);
-      // The hovered category, drawn as a constellation: its stars joined in order of creation.
-      if (hovered) {
-        const line = projected.filter((p) => p.s.arm === hovered.s.arm).sort((a, b) => a.s.year - b.s.year || a.s.name.localeCompare(b.s.name));
-        ctx.strokeStyle = colours[hovered.s.arm].copy({ opacity: 0.45 }).formatRgb();
+      // The hovered (or the page's own) category, drawn as a constellation: its stars joined in
+      // order of creation.
+      const lit = hovered ? hovered.s.arm : focusArm;
+      if (lit !== null) {
+        const line = projected.filter((p) => p.s.arm === lit).sort((a, b) => a.s.year - b.s.year || a.s.name.localeCompare(b.s.name));
+        ctx.strokeStyle = colours[lit].copy({ opacity: 0.45 }).formatRgb();
         ctx.lineWidth = 1;
         ctx.beginPath();
         line.forEach((p, i) => (i ? ctx.lineTo(p.px, p.py) : ctx.moveTo(p.px, p.py)));
         ctx.stroke();
       }
       for (const p of projected) {
-        const dim = hovered && p.s.arm !== hovered.s.arm ? 0.25 : 1;
+        const dim = lit !== null && p.s.arm !== lit ? 0.25 : 1;
         const colour = colours[p.s.arm];
         const halo = p.r * (p === hovered ? 7 : 4.5);
         const g = ctx.createRadialGradient(p.px, p.py, 0, p.px, p.py, halo);
@@ -127,7 +131,7 @@ KorczisHub.viz('constellation', {
       ctx.textAlign = 'center';
       keys.forEach((key, arm) => {
         const tipStar = project({ x: Math.cos((arm / keys.length) * Math.PI * 2 + 1.06 * 3.2) * 1.06, z: Math.sin((arm / keys.length) * Math.PI * 2 + 1.06 * 3.2) * 1.06, y: 0, size: 0, name: '' }, time);
-        ctx.fillStyle = colours[arm].copy({ opacity: hovered && hovered.s.arm !== arm ? 0.25 : 0.8 }).formatRgb();
+        ctx.fillStyle = colours[arm].copy({ opacity: lit !== null && lit !== arm ? 0.25 : 0.8 }).formatRgb();
         ctx.fillText(source.categories[key], tipStar.px, tipStar.py);
       });
       if (hovered) {

@@ -11,6 +11,15 @@ og_image = "og/work.png"
 schema = "collection"
 terms = ["repository", "commit", "open-source", "data-visualisation"]
 keywords = ["Tomas Korcak recent work", "korczis", "korczis.github.io", "sonic-playground", "kompendium-epistemicke-anihilace", "algoglyph", "oscilla", "prismatic-majordomus", "vomaste.cz", "majordomus-reel"]
+
+[[extra.viz]]
+kind = "pulse"
+source = "work.all"
+title = "viz_work_pulse_title"
+lead = "viz_work_pulse_lead"
+span = 3
+height = "md"
+tone = "night"
 +++
 This page answers the question of what is being worked on now. A project belongs here by the date of its last [commit](@/glossary/commit.md) on the default branch, never by when its host last saw activity, and falls into one of three periods: 12, 24 and 48 months.
 

@@ -21,4 +21,13 @@ related = ["repository", "commit", "open-source", "html", "javascript", "github-
 og_title = "Data visualisation: glossary"
 og_image = "og/glossary-data-visualisation.png"
 keywords = ["Data visualisation", "Concept", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "atlas"
+source = "glossary.terms"
+title = "viz_atlas_term_title"
+lead = "viz_atlas_term_lead"
+span = 3
+height = "md"
+tone = "night"
 +++

@@ -21,4 +21,13 @@ related = ["repository", "commit", "open-source", "javascript", "shell", "github
 og_title = "HTML: glossary"
 og_image = "og/glossary-html.png"
 keywords = ["HTML", "Programming language", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "atlas"
+source = "glossary.terms"
+title = "viz_atlas_term_title"
+lead = "viz_atlas_term_lead"
+span = 3
+height = "md"
+tone = "night"
 +++
