@@ -1329,3 +1329,19 @@ cs = "Puls čtyř let"
 [viz_work_pulse_lead]
 en = "The latest commits of every recent project as one heartbeat, a lane per category, measured every six hours; every beat opens its commit."
 cs = "Poslední commity každého nedávného projektu jako jeden tep, pruh na kategorii, měřené každých šest hodin; každý úder otevře svůj commit."
+
+[viz_skillset_title]
+en = "Skills, measured"
+cs = "Dovednosti, změřené"
+
+[viz_skillset_lead]
+en = "The most recently active repositories by category (inner ring) and the languages they are written in (outer ring); click a segment to open it."
+cs = "Naposledy aktivní repozitáře podle kategorie (vnitřní kruh) a jazyků, ve kterých jsou napsané (vnější kruh); kliknutím segment otevřete."
+
+[viz_graph_title]
+en = "The ecosystem"
+cs = "Ekosystém"
+
+[viz_graph_lead]
+en = "Featured projects, the technologies they are built with, and which of them Majordomus supervises; tap a project to open it in the catalogue."
+cs = "Vybrané projekty, technologie, na kterých stojí, a které z nich dozoruje Majordomus; klepnutím projekt otevřete v katalogu."

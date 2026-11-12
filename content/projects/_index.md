@@ -10,6 +10,13 @@ og_title = "Projects: live, public, measured."
 og_image = "og/projects.png"
 schema = "collection"
 keywords = ["Tomas Korcak projects", "Majordomus", "Oscilla", "algoglyph", "Kompendium", "open source", "portfolio"]
+[[extra.viz]]
+kind = "graph"
+source = "catalogue.graph"
+title = "viz_graph_title"
+lead = "viz_graph_lead"
+span = 3
+height = "lg"
 +++
 The catalogue has two layers. A handful of projects are featured: chosen by the owner and described in their own words. Everything else is classified automatically, so the catalogue grows with the work and never needs tending.
 

@@ -41,7 +41,7 @@ KorczisHub.viz('skillset', {
           emphasis: { focus: 'ancestor' },
           levels: [
             {},
-            { r0: '14%', r: '52%', label: { rotate: 'tangential', color: '#fff', fontSize: 11, fontWeight: 600, minAngle: 16 } },
+            { r0: '14%', r: '52%', label: { rotate: 'tangential', color: '#fff', fontSize: 11, fontWeight: 600, minAngle: 40 } },
             { r0: '52%', r: '96%', label: { rotate: 'radial', align: 'center', color: '#fff', fontSize: 10, minAngle: 8 }, itemStyle: { opacity: 0.88 } },
           ],
         }],

@@ -11,6 +11,7 @@
 {%- set card = "min-w-0 rounded-lg bg-white p-4 shadow dark:bg-gray-800 sm:p-6 xl:p-8" -%}
 {%- set sec = site.stack.sections -%}
 {{ <page_header title={page.title} lead={page.description} lang={lang} /> }}
+<div class="px-4 pt-6">{%- include "partials/viz-grid.html" %}</div>
 
 <div class="space-y-4 px-4 pb-2 pt-6">
   {#- Toolkit: Flowbite Pro feature-sections/default (rounded icons), data/site.toml. #}

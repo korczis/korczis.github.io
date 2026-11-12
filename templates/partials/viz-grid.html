@@ -17,7 +17,7 @@
   <section class="min-w-0 rounded-lg bg-white p-4 shadow dark:bg-gray-800 sm:p-6 {{ sp }}" aria-labelledby="{{ id }}-title">
     <h2 id="{{ id }}-title" class="text-xl font-bold leading-none text-gray-900 dark:text-white">{{ trans(key=v.title, lang=lang) }}</h2>
     <p class="mb-4 mt-1 text-sm text-gray-600 dark:text-gray-400">{{ trans(key=v.lead, lang=lang) }}</p>
-    <div class="viz-box {{ h }}{% if v.tone is defined and v.tone == "night" %} overflow-hidden rounded-lg bg-gray-950 ring-1 ring-gray-800{% endif %}" data-viz="{{ v.kind }}" data-source="{{ id }}-data" role="img" aria-label="{{ trans(key=v.lead, lang=lang) }}"></div>
+    <div class="viz-box {{ h }}{% if v.tone is defined and v.tone == "night" %} overflow-hidden rounded-lg bg-gray-950 ring-1 ring-gray-800{% endif %}" data-viz="{{ v.kind }}" data-source="{{ id }}-data" role="img" aria-label="{{ trans(key=v.lead, lang=lang) }}">{% if v.kind == "graph" or v.kind == "skillset" %}<div data-canvas class="h-full w-full"></div>{% endif %}</div>
     <script type="application/json" id="{{ id }}-data">
       {%- if v.source == "github.contributions" %}{{ vgh.contributions | json_encode | safe }}
       {%- elif v.source == "github.languages" %}{{ vgh.languages | json_encode | safe }}
@@ -33,6 +33,8 @@
       {%- elif v.source == "glossary.terms" %}{% if vsfx == "" %}{% set gsec = get_section(path="glossary/_index.md") %}{% else %}{% set gsec = get_section(path="glossary/_index." ~ lang ~ ".md") %}{% endif -%}
        {"focus": {% if vfm.extra.term is defined %}{{ vfm.extra.term | json_encode | safe }}{% else %}null{% endif %}, "kinds": {"language": {{ trans(key="kind_term_language", lang=lang) | json_encode | safe }}, "technology": {{ trans(key="kind_term_technology", lang=lang) | json_encode | safe }}, "concept": {{ trans(key="kind_term_concept", lang=lang) | json_encode | safe }}},
        "terms": [{% for p in gsec.pages %}{"id": {{ p.extra.term | json_encode | safe }}, "title": {{ p.title | json_encode | safe }}, "kind": {{ p.extra.kind | json_encode | safe }}, "n": {{ p.extra.pages | length }}, "related": {{ p.extra.related | json_encode | safe }}, "definition": {{ p.extra.definition | json_encode | safe }}, "url": {{ p.permalink | json_encode | safe }}}{% if not loop.last %}, {% endif %}{% endfor %}]}
+      {%- elif v.source == "index.skillset" %}{"mix": {{ vix.recent.mix | json_encode | safe }}, "names": { {%- for key, c in vcat.categories %}{{ key | json_encode | safe }}: {{ c["name" ~ vsfx] | json_encode | safe }}{% if not loop.last %}, {% endif %}{% endfor -%} }}
+      {%- elif v.source == "catalogue.graph" %}{"projects": {{ vcat.projects | json_encode | safe }}, "measured": {{ vgh.projects | json_encode | safe }}}
       {%- else %}null{% endif -%}
     </script>
   </section>

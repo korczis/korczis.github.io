@@ -10,6 +10,13 @@ og_title = "Projekty: živé, veřejné, změřené."
 og_image = "og/cs-projects.png"
 schema = "collection"
 keywords = ["projekty Tomáše Korčáka", "Majordomus", "Oscilla", "algoglyph", "Kompendium", "open source", "portfolio"]
+[[extra.viz]]
+kind = "graph"
+source = "catalogue.graph"
+title = "viz_graph_title"
+lead = "viz_graph_lead"
+span = 3
+height = "lg"
 +++
 Katalog má dvě vrstvy. Hrstka projektů je vybraná: zvolil je vlastník a popsal je vlastními slovy. Vše ostatní se třídí automaticky, takže katalog roste s prací a nikdy nepotřebuje údržbu.
 

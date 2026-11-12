@@ -134,7 +134,9 @@
                   "recent.commits",
                   "work.commits",
                   "work.all",
-                  "glossary.terms"
+                  "glossary.terms",
+                  "index.skillset",
+                  "catalogue.graph"
                 ]
               },
               "title": {
