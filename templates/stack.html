@@ -99,6 +99,7 @@
             ["Languages", gh.languages | length, "Primary language of each public repository, top ten and the rest"],
             ["Live sites", "per project", "HTTPS GET of each project URL; 2xx or 3xx counts as live"],
             ["Majordomus supervision", "per project", "Presence of .ai/manifest.yaml on the default branch"],
+            ["Activity", "per project", "Inferred from the last push: Active within 45 days, Maintained within a year, else Archive"],
             ["Majordomus release", "v" ~ gh.majordomus.version, "majordomus.dev/build.json, re-read live in the browser"]] %}
           <tr class="border-b border-gray-200 bg-white last:border-0 dark:border-gray-700 dark:bg-gray-800">
             <th scope="row" class="whitespace-nowrap px-4 py-3 font-medium text-gray-900 dark:text-white">{{ row[0] }}</th>

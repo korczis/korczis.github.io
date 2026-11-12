@@ -5,19 +5,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  {%- if page is defined and page.title %}{% set t = page.title ~ " · " ~ config.title %}{% set d = page.description | default(value=config.description) %}
-  {%- elif section is defined and section.title %}{% set t = section.title ~ " · " ~ config.title %}{% set d = section.description | default(value=config.description) %}
-  {%- else %}{% set t = config.title ~ " · korczis" %}{% set d = config.description %}{% endif %}
-  <title>{{ t }}</title>
-  <meta name="description" content="{{ d }}">
-  <meta name="author" content="{{ config.extra.author }}">
-  <link rel="canonical" href="{{ config.base_url }}{{ here }}">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="{{ config.title }}">
-  <meta property="og:title" content="{{ t }}">
-  <meta property="og:description" content="{{ d }}">
-  <meta property="og:url" content="{{ config.base_url }}{{ here }}">
-  <meta name="twitter:card" content="summary">
+  {%- include "partials/seo.html" %}
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#111827" media="(prefers-color-scheme: dark)">

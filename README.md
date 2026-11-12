@@ -45,8 +45,10 @@ also need [majordomus](https://majordomus.dev).
 - **Add a visual.** Create `static/js/viz/<name>.js` registering `KorczisHub.viz('<name>', …)`,
   put `data-viz="<name>"` on a box that reserves its size, and load the script from the
   template. `check-viz-layer.mjs` enforces the layer.
-- **Add a page.** Add the template and a `content/` entry, and add the page to `PAGES` in
-  `scripts/audit-ui.mjs`.
+- **Add a page.** Add the template and a `content/` entry with `title`, `description` and
+  `[extra] og_title`, `og_image`, `schema` and `keywords`. Run `npm run og` and add the page to
+  `PAGES` in `scripts/audit-ui.mjs`. Titles, Open Graph and Twitter tags and JSON-LD are derived
+  from that front matter.
 
 ## Gates
 
@@ -55,6 +57,8 @@ also need [majordomus](https://majordomus.dev).
 | Conventional commits | `scripts/lint-commits.sh <range>` (also the commit-msg hook) | |
 | Catalogue and snapshot | `node scripts/check-data.mjs` | `project.data-measured` |
 | llms.txt current | `node scripts/build-llms.mjs --check` | `project.data-measured` |
+| Open Graph images current | `node scripts/build-og.mjs --check` | `project.seo-derived` |
+| SEO of the build | `node scripts/check-seo.mjs` | `project.seo-derived` |
 | Component layer, self-hosting | `node scripts/check-viz-layer.mjs` | `project.viz-component-layer` |
 | Build, internal links | `npm run build` | `project.site-zola-pages` |
 | Flowbite Pro fidelity | `node ~/.claude/skills/flowbite-pro/verify.mjs .` (local) | `project.ui-uses-flowbite-pro` |

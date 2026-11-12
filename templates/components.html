@@ -45,7 +45,7 @@
 <article {% if anchor %}id="{{ p.repo }}" {% endif %}data-card
   data-search="{{ p.name }} {{ p.tagline }} {{ p.summary }} {{ p.stack | join(sep=' ') }} {{ label }}"
   data-category="{{ p.category }}" data-live="{{ f.live | default(value=false) }}"
-  data-supervised="{{ f.supervised }}" data-pushed="{{ f.pushed_at }}" data-stars="{{ f.stars }}"
+  data-supervised="{{ f.supervised }}" data-activity="{{ f.activity }}" data-pushed="{{ f.pushed_at }}" data-stars="{{ f.stars }}"
   data-name="{{ p.name }}"
   class="flex scroll-mt-24 flex-col rounded-lg border border-gray-200 bg-white p-6 shadow-sm transition hover:shadow-md dark:border-gray-700 dark:bg-gray-800">
   <div class="mb-4 flex items-start justify-between gap-3">
@@ -54,8 +54,16 @@
     </div>
     <div class="flex flex-wrap justify-end gap-2">
       <span class="rounded-md bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-800 dark:bg-gray-700 dark:text-gray-300">{{ label }}</span>
+      {%- if f.activity == "active" %}
+      <span class="inline-flex items-center gap-1.5 rounded-md bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800 dark:bg-green-900 dark:text-green-300"><span class="h-1.5 w-1.5 rounded-full bg-green-500" aria-hidden="true"></span>Active</span>
+      {%- elif f.activity == "maintained" %}
+      <span class="inline-flex items-center gap-1.5 rounded-md bg-yellow-100 px-2.5 py-0.5 text-xs font-medium text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300"><span class="h-1.5 w-1.5 rounded-full bg-yellow-500" aria-hidden="true"></span>Maintained</span>
+      {%- else %}
+      <span class="inline-flex items-center gap-1.5 rounded-md bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-800 dark:bg-gray-700 dark:text-gray-300"><span class="h-1.5 w-1.5 rounded-full bg-gray-500" aria-hidden="true"></span>Archive</span>
+      {%- endif %}
       {%- if f.supervised %}
-      <span class="inline-flex items-center gap-1 rounded-md bg-primary-100 px-2.5 py-0.5 text-xs font-medium text-primary-800 dark:bg-primary-900 dark:text-primary-300" title="A .ai/manifest.yaml is on the default branch">{{ <icon name="shield" class="h-3.5 w-3.5" /> }}Majordomus</span>
+      <button type="button" data-tooltip-target="tip-mj-{{ p.repo }}" class="inline-flex items-center gap-1 rounded-md bg-primary-100 px-2.5 py-0.5 text-xs font-medium text-primary-800 focus:outline-none focus:ring-2 focus:ring-primary-300 dark:bg-primary-900 dark:text-primary-300 dark:focus:ring-primary-800">{{ <icon name="shield" class="h-3.5 w-3.5" /> }}Majordomus</button>
+      <div id="tip-mj-{{ p.repo }}" role="tooltip" class="tooltip invisible absolute z-10 inline-block max-w-xs rounded-lg bg-gray-900 px-3 py-2 text-xs font-medium text-white opacity-0 shadow-sm transition-opacity duration-300 dark:bg-gray-700">Supervised: <span class="font-mono">.ai/manifest.yaml</span> is on the default branch<div class="tooltip-arrow" data-popper-arrow></div></div>
       {%- endif %}
     </div>
   </div>

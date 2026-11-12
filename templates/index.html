@@ -201,6 +201,20 @@
     <p class="mt-4 text-xs text-gray-600 dark:text-gray-400">Snapshot of {{ as_of }}; repositories without a detected language are not counted.</p>
   </div>
 </section>
+
+{#- Flowbite Pro cta-sections, adapted. #}
+<section class="bg-gray-50 dark:bg-gray-800" aria-labelledby="cta-title">
+  <div class="mx-auto max-w-screen-xl px-4 py-16 sm:py-20 lg:px-6">
+    <div class="mx-auto max-w-screen-md text-center">
+      <h2 id="cta-title" class="mb-4 text-3xl font-extrabold leading-tight tracking-tight text-gray-900 dark:text-white sm:text-4xl">Follow the work as it ships.</h2>
+      <p class="mb-8 text-gray-600 dark:text-gray-400 md:text-lg">Every project here is public. Watch the repositories, open an issue, or let Majordomus supervise your own agents.</p>
+      <div class="flex flex-col justify-center gap-4 sm:flex-row">
+        <a href="https://github.com/{{ config.extra.github }}" class="inline-flex items-center justify-center rounded-lg bg-primary-700 px-5 py-3 text-base font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">{{ <icon name="github" class="-ml-1 mr-2 h-5 w-5" /> }}Follow on GitHub</a>
+        <a href="{{ config.extra.majordomus_url }}" class="inline-flex items-center justify-center rounded-lg border border-gray-300 bg-white px-5 py-3 text-base font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-900 dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">{{ <icon name="shield" class="-ml-1 mr-2 h-5 w-5" /> }}Install Majordomus</a>
+      </div>
+    </div>
+  </div>
+</section>
 {% endblock content %}
 
 {% block scripts %}

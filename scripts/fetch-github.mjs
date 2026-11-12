@@ -123,6 +123,16 @@ function languages(repos) {
   return top;
 }
 
+// Inferred, not claimed: how alive a project is follows from its last push, relative to the moment
+// of this snapshot (so the label ages honestly with the data it came from).
+const NOW = Date.now();
+function activity(pushedAt) {
+  const days = (NOW - Date.parse(pushedAt)) / 86400000;
+  if (days <= 45) return 'active';
+  if (days <= 365) return 'maintained';
+  return 'dormant';
+}
+
 async function project(entry) {
   const repo = gh(['api', `repos/${LOGIN}/${entry.repo}`]);
   const status = entry.url ? await probe(entry.url) : null;
@@ -135,6 +145,7 @@ async function project(entry) {
       license: repo.license?.spdx_id ?? null,
       created_at: repo.created_at,
       pushed_at: repo.pushed_at,
+      activity: activity(repo.pushed_at),
       archived: repo.archived,
       fork: repo.fork,
       visibility: repo.visibility,
@@ -170,7 +181,7 @@ for (const entry of catalogue.projects) projects.push(await project(entry));
 
 const snapshot = {
   schema: 'korczis-hub-github/v1',
-  generated_at: new Date().toISOString().replace(/\.\d{3}Z$/, 'Z'),
+  generated_at: new Date(NOW).toISOString().replace(/\.\d{3}Z$/, 'Z'),
   profile: {
     login: user.login,
     name: user.name,

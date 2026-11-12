@@ -1,0 +1,94 @@
+{#- SEO, Open Graph, Twitter and JSON-LD, derived from the page's front matter (title, description,
+    [extra] seo_title, og_title, og_image, keywords, schema) and from data/. Nothing here is typed per
+    page; scripts/check-seo.mjs gates the built result. #}
+{%- set fm = false -%}
+{%- if page is defined -%}{%- set fm = page -%}{%- elif section is defined -%}{%- set fm = section -%}{%- endif -%}
+{%- if fm and fm.extra.seo_title is defined -%}{%- set t = fm.extra.seo_title -%}
+{%- elif fm and fm.title -%}{%- set t = fm.title ~ " · " ~ config.title -%}
+{%- else -%}{%- set t = "Page not found · " ~ config.title -%}{%- endif -%}
+{%- if fm and fm.description -%}{%- set d = fm.description -%}{%- else -%}{%- set d = config.description -%}{%- endif -%}
+{%- if fm and fm.extra.og_title is defined -%}{%- set og_t = fm.extra.og_title -%}{%- else -%}{%- set og_t = t -%}{%- endif -%}
+{%- if fm and fm.extra.og_description is defined -%}{%- set og_d = fm.extra.og_description -%}{%- else -%}{%- set og_d = d -%}{%- endif -%}
+{%- if fm and fm.extra.og_image is defined -%}{%- set og_img = fm.extra.og_image -%}{%- else -%}{%- set og_img = "og/home.png" -%}{%- endif -%}
+{%- if fm and fm.extra.schema is defined -%}{%- set schema = fm.extra.schema -%}{%- else -%}{%- set schema = "none" -%}{%- endif -%}
+{%- set url = config.base_url ~ here -%}
+{%- set img = config.base_url ~ "/" ~ og_img -%}
+  <title>{{ t }}</title>
+  <meta name="description" content="{{ d }}">
+  <meta name="author" content="{{ config.extra.author }}">
+  {%- if fm and fm.extra.keywords is defined %}
+  <meta name="keywords" content="{{ fm.extra.keywords | join(sep=', ') }}">
+  {%- endif %}
+  {%- if fm %}
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="{{ url }}">
+  {%- else %}
+  <meta name="robots" content="noindex, follow">
+  {%- endif %}
+  <meta property="og:type" content="{% if schema == 'home' %}profile{% else %}website{% endif %}">
+  <meta property="og:site_name" content="{{ config.title }}">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:title" content="{{ og_t }}">
+  <meta property="og:description" content="{{ og_d }}">
+  <meta property="og:url" content="{{ url }}">
+  <meta property="og:image" content="{{ img }}">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="{{ og_t }} {{ config.extra.author }}, {{ config.base_url | replace(from='https://', to='') }}">
+  {%- if schema == "home" %}
+  <meta property="profile:first_name" content="Tomas">
+  <meta property="profile:last_name" content="Korcak">
+  <meta property="profile:username" content="{{ config.extra.github }}">
+  {%- endif %}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ og_t }}">
+  <meta name="twitter:description" content="{{ og_d }}">
+  <meta name="twitter:image" content="{{ img }}">
+  <meta name="twitter:image:alt" content="{{ og_t }}">
+  <link rel="sitemap" type="application/xml" href="{{ get_url(path='sitemap.xml') }}">
+{%- if fm %}
+{%- set person = config.base_url ~ "/#person" %}
+{%- set website = config.base_url ~ "/#website" %}
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@graph": [
+    {"@type": "Person", "@id": {{ person | json_encode | safe }}, "name": {{ config.extra.author | json_encode | safe }},
+     "alternateName": {{ config.extra.github | json_encode | safe }}, "url": {{ (config.base_url ~ "/") | json_encode | safe }},
+     "image": {{ (config.base_url ~ "/favicon.svg") | json_encode | safe }},
+     "homeLocation": {"@type": "Place", "name": {{ config.extra.location | json_encode | safe }}},
+     "sameAs": ["https://github.com/{{ config.extra.github }}", {{ config.extra.majordomus_url | json_encode | safe }}],
+     "knowsAbout": ["AI agent supervision", "Software engineering", "Scientific visualisation", "Rust", "Elixir", "TypeScript", "OSINT"]},
+    {"@type": "WebSite", "@id": {{ website | json_encode | safe }}, "url": {{ (config.base_url ~ "/") | json_encode | safe }},
+     "name": {{ config.title | json_encode | safe }}, "description": {{ config.description | json_encode | safe }},
+     "inLanguage": "en", "author": {"@id": {{ person | json_encode | safe }}}, "publisher": {"@id": {{ person | json_encode | safe }}}},
+    {"@type": {% if schema == "collection" %}"CollectionPage"{% elif schema == "about" %}"AboutPage"{% elif schema == "home" %}"ProfilePage"{% else %}"WebPage"{% endif %},
+     "@id": {{ (url ~ "#webpage") | json_encode | safe }}, "url": {{ url | json_encode | safe }}, "name": {{ t | json_encode | safe }},
+     "description": {{ d | json_encode | safe }}, "isPartOf": {"@id": {{ website | json_encode | safe }}},
+     "primaryImageOfPage": {"@type": "ImageObject", "url": {{ img | json_encode | safe }}, "width": 1200, "height": 630},
+     {%- if schema == "home" %}
+     "mainEntity": {"@id": {{ person | json_encode | safe }}},
+     {%- endif %}
+     {%- if schema == "collection" %}
+     {%- set cat = load_data(path="data/projects.toml") %}
+     {%- set gh = load_data(path="data/github.json") %}
+     "mainEntity": {"@type": "ItemList", "numberOfItems": {{ cat.projects | length }}, "itemListElement": [
+       {%- for p in cat.projects %}
+       {"@type": "ListItem", "position": {{ loop.index }}, "item": {"@type": "SoftwareSourceCode",
+        "name": {{ p.name | json_encode | safe }}, "description": {{ p.tagline | json_encode | safe }},
+        "codeRepository": "https://github.com/korczis/{{ p.repo }}",
+        "url": {% if p.url is defined %}{{ p.url | json_encode | safe }}{% else %}"https://github.com/korczis/{{ p.repo }}"{% endif %},
+        {%- if gh.projects[p.repo].language %}
+        "programmingLanguage": {{ gh.projects[p.repo].language | json_encode | safe }},
+        {%- endif %}
+        "dateModified": {{ gh.projects[p.repo].pushed_at | json_encode | safe }},
+        "author": {"@id": {{ person | json_encode | safe }}}}}{% if not loop.last %},{% endif %}
+       {%- endfor %}]},
+     {%- endif %}
+     "breadcrumb": {"@type": "BreadcrumbList", "itemListElement": [
+       {"@type": "ListItem", "position": 1, "name": "Home", "item": {{ (config.base_url ~ "/") | json_encode | safe }}}
+       {%- if schema != "home" %},
+       {"@type": "ListItem", "position": 2, "name": {{ fm.title | json_encode | safe }}, "item": {{ url | json_encode | safe }}}
+       {%- endif %}]}}
+  ]}
+  </script>
+{%- endif %}

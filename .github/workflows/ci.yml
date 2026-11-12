@@ -79,10 +79,14 @@ jobs:
         run: node scripts/check-data.mjs
       - name: llms.txt is current
         run: node scripts/build-llms.mjs --check
+      - name: Open Graph images are current
+        run: node scripts/build-og.mjs --check
       - name: Every visual goes through the component layer
         run: node scripts/check-viz-layer.mjs
       - name: Build (internal links are errors)
         run: npm run build
+      - name: SEO derived from front matter (titles, descriptions, OG, JSON-LD, sitemap)
+        run: node scripts/check-seo.mjs
       - name: Stamp the revision
         run: printf '%s\n' "$GITHUB_SHA" > public/revision.txt
       - name: Accessibility, layout, visuals and links (axe-core WCAG 2.2 AA, CLS, overflow)

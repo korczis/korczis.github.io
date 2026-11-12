@@ -36,6 +36,9 @@ for (const [index, p] of (catalogue.projects ?? []).entries()) {
     continue;
   }
   if (measured.fork) fail(where, 'is a fork; the hub shows original work only');
+  if (!['active', 'maintained', 'dormant'].includes(measured.activity)) {
+    fail(where, `activity ${measured.activity} is not inferred; run npm run data`);
+  }
   if (measured.visibility && measured.visibility !== 'public') fail(where, 'is not public');
   if (p.url && measured.live === false) {
     fail(where, `live site answered ${measured.live_status} at the last snapshot`);
