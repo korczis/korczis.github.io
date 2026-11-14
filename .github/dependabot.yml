@@ -19,8 +19,9 @@ updates:
     commit-message:
       prefix: build
       include: scope
+  # The composite action pins actions too (setup-node, cache): scan it with the workflows.
   - package-ecosystem: github-actions
-    directory: /
+    directories: ['/', '/.github/actions/*']
     schedule:
       interval: weekly
       day: monday

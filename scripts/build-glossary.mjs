@@ -13,6 +13,9 @@ import { parse } from 'smol-toml';
 import { loadGlossary, termLink } from './lib/terms.mjs';
 import { vizBlock } from './lib/viz.mjs';
 import { loadStrings } from './lib/strings.mjs';
+import { cliArgs } from './lib/cli.mjs';
+
+cliArgs({ '--check': true }, { derived: true });
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const CONTENT = join(ROOT, 'content');

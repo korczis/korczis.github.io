@@ -11,6 +11,9 @@ import { fileURLToPath } from 'node:url';
 import { parse } from 'smol-toml';
 import { listing, loadGlossary, mdEscape, nameLink, termLink, termsForRepo } from './lib/terms.mjs';
 import { vizBlock } from './lib/viz.mjs';
+import { cliArgs } from './lib/cli.mjs';
+
+cliArgs({ '--check': true }, { derived: true });
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const DIR = join(ROOT, 'content/work');

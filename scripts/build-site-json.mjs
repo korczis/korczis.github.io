@@ -10,6 +10,9 @@ import { readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { dirname, join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parse } from 'smol-toml';
+import { cliArgs } from './lib/cli.mjs';
+
+cliArgs({ '--check': true }, { derived: true });
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const TARGET = join(ROOT, 'static/site.json');

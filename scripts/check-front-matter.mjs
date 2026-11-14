@@ -7,6 +7,9 @@ import { readFileSync, readdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parse } from 'smol-toml';
+import { cliArgs } from './lib/cli.mjs';
+
+cliArgs();
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const schema = JSON.parse(readFileSync(join(ROOT, 'static/schemas/front-matter.schema.json'), 'utf8'));

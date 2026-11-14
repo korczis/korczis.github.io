@@ -12,6 +12,9 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { promisify } from 'node:util';
 import { parse } from 'smol-toml';
+import { cliArgs } from './lib/cli.mjs';
+
+cliArgs({ '--probe': true, '--derive': true });
 
 const run = promisify(execFile);
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
