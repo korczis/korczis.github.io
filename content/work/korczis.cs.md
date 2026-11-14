@@ -3,8 +3,8 @@
 title = "korczis"
 description = "korczis: projekt z kategorie Data a GIS, hlavní jazyk JavaScript, poslední commit 14. listopadu 2026."
 template = "work.html"
-weight = 4
-updated = "2026-11-14T17:32:25Z"
+weight = 2
+updated = "2026-11-14T22:46:07Z"
 
 [taxonomies]
 tags = ["Data a GIS", "JavaScript"]
@@ -28,8 +28,8 @@ tone = "night"
 +++
 **korczis** je projekt z kategorie [Data a GIS](@/projects/data.cs.md). Jeho kód je napsaný hlavně v jazyce [JavaScript](@/glossary/javascript.cs.md) (100 %).
 
-[Repozitář](@/glossary/repository.cs.md) vznikl 14. listopadu 2026; poslední [commit](@/glossary/commit.cs.md) je z 14. listopadu 2026. Zní „feat(profile): a GitHub profile README derived from site.json“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+[Repozitář](@/glossary/repository.cs.md) vznikl 14. listopadu 2026; poslední [commit](@/glossary/commit.cs.md) je z 14. listopadu 2026. Zní „docs(readme): re-derive from site.json“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 
 Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/>.
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 1 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 2 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

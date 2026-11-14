@@ -10,7 +10,7 @@ og_title = "44 projektů za poslední čtyři roky."
 og_image = "og/cs-work.png"
 schema = "collection"
 terms = ["repository", "commit", "open-source", "data-visualisation"]
-keywords = ["nedávná práce Tomáše Korčáka", "korczis", "prismatic-majordomus", "sonic-playground", "korczis.github.io", "korczis", "algoglyph", "kompendium-epistemicke-anihilace", "oscilla", "vomaste.cz"]
+keywords = ["nedávná práce Tomáše Korčáka", "korczis", "sonic-playground", "korczis", "kompendium-epistemicke-anihilace", "prismatic-majordomus", "oscilla", "algoglyph", "korczis.github.io", "vomaste.cz"]
 
 [[extra.viz]]
 kind = "pulse"

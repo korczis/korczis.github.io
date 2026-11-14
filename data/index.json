@@ -1,6 +1,6 @@
 {
  "schema": "korczis-hub-index/v1",
- "generated_at": "2026-11-14T18:33:32Z",
+ "generated_at": "2026-11-14T23:17:37Z",
  "rule": "original = the owner wrote at least half of the listed commits; forks and mirrors are counted, not listed",
  "counts": {
   "github": 448,
@@ -51,7 +51,7 @@
    ],
    "stars": 0,
    "created_at": "2026-11-11T18:09:38Z",
-   "pushed_at": "2026-11-14T18:11:34Z",
+   "pushed_at": "2026-11-14T22:37:26Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -1536,7 +1536,7 @@
    ],
    "stars": 0,
    "created_at": "2026-11-09T22:04:50Z",
-   "pushed_at": "2026-11-14T17:54:14Z",
+   "pushed_at": "2026-11-14T22:46:05Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -1553,9 +1553,9 @@
    "topics": [],
    "stars": 0,
    "created_at": "2026-11-14T17:32:26Z",
-   "pushed_at": "2026-11-14T17:32:32Z",
+   "pushed_at": "2026-11-14T22:46:08Z",
    "archived": false,
-   "share": 1,
+   "share": 0.5,
    "hosts": {
     "github": "https://github.com/korczis/korczis"
    },
@@ -1585,9 +1585,9 @@
    ],
    "stars": 0,
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-14T17:48:17Z",
+   "pushed_at": "2026-11-14T22:37:51Z",
    "archived": false,
-   "share": 0.9,
+   "share": 0.89,
    "hosts": {
     "github": "https://github.com/korczis/korczis.github.io"
    },
@@ -2081,7 +2081,7 @@
    ],
    "stars": 1,
    "created_at": "2026-10-01T21:05:33Z",
-   "pushed_at": "2026-11-13T05:40:37Z",
+   "pushed_at": "2026-11-14T22:41:17Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -2330,7 +2330,7 @@
    ],
    "stars": 1,
    "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-13T04:00:28Z",
+   "pushed_at": "2026-11-14T22:09:42Z",
    "archived": false,
    "share": 0.99,
    "hosts": {
@@ -2901,7 +2901,7 @@
    "topics": [],
    "stars": 0,
    "created_at": "2026-11-12T00:48:36Z",
-   "pushed_at": "2026-11-14T18:13:55Z",
+   "pushed_at": "2026-11-14T22:48:05Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -4143,10 +4143,10 @@
  ],
  "by_category": {
   "media": 8,
-  "science": 14,
-  "knowledge": 8,
-  "ai": 7,
   "data": 48,
+  "knowledge": 8,
+  "science": 14,
+  "ai": 7,
   "tools": 72,
   "systems": 16,
   "libraries": 10,
@@ -4161,10 +4161,10 @@
    "top_language": "HTML",
    "since": "2015"
   },
-  "science": {
-   "repos": 14,
+  "data": {
+   "repos": 48,
    "sites": 3,
-   "top_language": "JavaScript",
+   "top_language": "Ruby",
    "since": "2014"
   },
   "knowledge": {
@@ -4173,17 +4173,17 @@
    "top_language": "Elixir",
    "since": "2013"
   },
+  "science": {
+   "repos": 14,
+   "sites": 3,
+   "top_language": "JavaScript",
+   "since": "2014"
+  },
   "ai": {
    "repos": 7,
    "sites": 2,
    "top_language": "HTML",
    "since": "2024"
-  },
-  "data": {
-   "repos": 48,
-   "sites": 3,
-   "top_language": "Ruby",
-   "since": "2014"
   },
   "tools": {
    "repos": 72,
@@ -4398,9 +4398,9 @@
   },
   "2026": {
    "Python": 4,
-   "TypeScript": 1,
-   "Elixir": 2,
    "JavaScript": 4,
+   "Elixir": 2,
+   "TypeScript": 1,
    "Rust": 1,
    "HTML": 3
   }
@@ -4412,16 +4412,16 @@
     "repos": 31,
     "evidence": [
      {
-      "name": "korczis.github.io",
-      "url": "https://github.com/korczis/korczis.github.io"
-     },
-     {
       "name": "korczis",
       "url": "https://github.com/korczis/korczis"
      },
      {
       "name": "oscilla",
       "url": "https://github.com/korczis/oscilla"
+     },
+     {
+      "name": "korczis.github.io",
+      "url": "https://github.com/korczis/korczis.github.io"
      }
     ]
    },
@@ -4854,7 +4854,7 @@
  "recent": {
   "size": 100,
   "from": "2018-12-04T11:45:51Z",
-  "to": "2026-11-14T18:13:55Z",
+  "to": "2026-11-14T22:48:05Z",
   "mix": {
    "media": {
     "Python": 1,
@@ -4863,28 +4863,28 @@
     "Dockerfile": 1,
     "Elixir": 1
    },
-   "science": {
-    "TypeScript": 1,
-    "JavaScript": 1,
-    "Unspecified": 1,
-    "Rust": 1
+   "data": {
+    "JavaScript": 2,
+    "Python": 1,
+    "Elixir": 1,
+    "Unspecified": 19
    },
    "knowledge": {
     "Elixir": 1,
     "Swift": 2,
     "Unspecified": 1
    },
+   "science": {
+    "JavaScript": 1,
+    "TypeScript": 1,
+    "Unspecified": 1,
+    "Rust": 1
+   },
    "ai": {
     "JavaScript": 1,
     "Rust": 1,
     "HTML": 1,
     "Unspecified": 4
-   },
-   "data": {
-    "JavaScript": 2,
-    "Python": 1,
-    "Elixir": 1,
-    "Unspecified": 19
    },
    "tools": {
     "Python": 2,
@@ -4921,7 +4921,7 @@
    "topics": [],
    "stars": 0,
    "created_at": "2026-11-12T00:48:36Z",
-   "pushed_at": "2026-11-14T18:13:55Z",
+   "pushed_at": "2026-11-14T22:48:05Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -4932,34 +4932,21 @@
    "curated": true
   },
   {
-   "name": "algoglyph",
-   "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
-   "language": "TypeScript",
-   "topics": [
-    "algorithms",
-    "alpinejs",
-    "creative-coding",
-    "data-visualization",
-    "flowbite",
-    "generative-art",
-    "majordomus",
-    "p5js",
-    "physics-simulation",
-    "tailwindcss",
-    "typescript",
-    "webgl"
-   ],
+   "name": "korczis",
+   "description": "Tomas Korcak: profile README, derived from korczis.github.io/site.json",
+   "language": "JavaScript",
+   "topics": [],
    "stars": 0,
-   "created_at": "2026-11-11T18:09:38Z",
-   "pushed_at": "2026-11-14T18:11:34Z",
+   "created_at": "2026-11-14T17:32:26Z",
+   "pushed_at": "2026-11-14T22:46:08Z",
    "archived": false,
-   "share": 1,
+   "share": 0.5,
    "hosts": {
-    "github": "https://github.com/korczis/algoglyph"
+    "github": "https://github.com/korczis/korczis"
    },
-   "site": "https://korczis.github.io/algoglyph/",
-   "category": "science",
-   "curated": true
+   "site": "https://korczis.github.io/",
+   "category": "data",
+   "curated": false
   },
   {
    "name": "kompendium-epistemicke-anihilace",
@@ -4978,7 +4965,7 @@
    ],
    "stars": 0,
    "created_at": "2026-11-09T22:04:50Z",
-   "pushed_at": "2026-11-14T17:54:14Z",
+   "pushed_at": "2026-11-14T22:46:05Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -4986,6 +4973,33 @@
    },
    "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
    "category": "knowledge",
+   "curated": true
+  },
+  {
+   "name": "oscilla",
+   "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+   "language": "JavaScript",
+   "topics": [
+    "acoustics",
+    "audio",
+    "dsp",
+    "education",
+    "javascript",
+    "signal-processing",
+    "spectrogram",
+    "synthesizer",
+    "web-audio"
+   ],
+   "stars": 1,
+   "created_at": "2026-10-01T21:05:33Z",
+   "pushed_at": "2026-11-14T22:41:17Z",
+   "archived": false,
+   "share": 1,
+   "hosts": {
+    "github": "https://github.com/korczis/oscilla"
+   },
+   "site": "https://korczis.github.io/oscilla/",
+   "category": "science",
    "curated": true
   },
   {
@@ -5010,9 +5024,9 @@
    ],
    "stars": 0,
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-14T17:48:17Z",
+   "pushed_at": "2026-11-14T22:37:51Z",
    "archived": false,
-   "share": 0.9,
+   "share": 0.89,
    "hosts": {
     "github": "https://github.com/korczis/korczis.github.io"
    },
@@ -5021,46 +5035,32 @@
    "curated": false
   },
   {
-   "name": "korczis",
-   "description": "Tomas Korcak: profile README, derived from korczis.github.io/site.json",
-   "language": "JavaScript",
-   "topics": [],
-   "stars": 0,
-   "created_at": "2026-11-14T17:32:26Z",
-   "pushed_at": "2026-11-14T17:32:32Z",
-   "archived": false,
-   "share": 1,
-   "hosts": {
-    "github": "https://github.com/korczis/korczis"
-   },
-   "site": "https://korczis.github.io/",
-   "category": "data",
-   "curated": false
-  },
-  {
-   "name": "oscilla",
-   "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-   "language": "JavaScript",
+   "name": "algoglyph",
+   "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
+   "language": "TypeScript",
    "topics": [
-    "acoustics",
-    "audio",
-    "dsp",
-    "education",
-    "javascript",
-    "signal-processing",
-    "spectrogram",
-    "synthesizer",
-    "web-audio"
+    "algorithms",
+    "alpinejs",
+    "creative-coding",
+    "data-visualization",
+    "flowbite",
+    "generative-art",
+    "majordomus",
+    "p5js",
+    "physics-simulation",
+    "tailwindcss",
+    "typescript",
+    "webgl"
    ],
-   "stars": 1,
-   "created_at": "2026-10-01T21:05:33Z",
-   "pushed_at": "2026-11-13T05:40:37Z",
+   "stars": 0,
+   "created_at": "2026-11-11T18:09:38Z",
+   "pushed_at": "2026-11-14T22:37:26Z",
    "archived": false,
    "share": 1,
    "hosts": {
-    "github": "https://github.com/korczis/oscilla"
+    "github": "https://github.com/korczis/algoglyph"
    },
-   "site": "https://korczis.github.io/oscilla/",
+   "site": "https://korczis.github.io/algoglyph/",
    "category": "science",
    "curated": true
   },
@@ -5091,7 +5091,7 @@
    ],
    "stars": 1,
    "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-13T04:00:28Z",
+   "pushed_at": "2026-11-14T22:09:42Z",
    "archived": false,
    "share": 0.99,
    "hosts": {

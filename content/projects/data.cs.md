@@ -4,7 +4,7 @@ title = "Data a GIS"
 description = "Katalogy a mapy otevřených dat: zdroje geodat, crawlery, hlášení incidentů geokódovaná a servírovaná z jednoho registru."
 template = "category.html"
 weight = 4
-updated = "2026-11-14T17:32:32Z"
+updated = "2026-11-14T22:46:08Z"
 
 [taxonomies]
 tags = ["Data a GIS", "Data Atlas", "Crisis map", "korczis", "apollo-crawler-extension"]
