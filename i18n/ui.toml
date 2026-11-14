@@ -13,3 +13,24 @@ cs = "Všechny štítky a stránky, které je nesou"
 [hint_data]
 en = "Where every number on the site comes from"
 cs = "Odkud pochází každé číslo na webu"
+
+# The home hero: positioning in words (no client or person names, no number that is not measured).
+[hero_title]
+en = "Due diligence, M&amp;A and AI engineering, on evidence."
+cs = "Due diligence, M&amp;A a AI inženýrství postavené na důkazech."
+
+[hero_pitch]
+en = "I help investors and deal teams see what a company really is: open-source intelligence, data analysis and AI agents that have to prove every finding."
+cs = "Pomáhám investorům a transakčním týmům vidět, čím firma doopravdy je: zpravodajství z otevřených zdrojů, analýza dat a AI agenti, kteří musí každé zjištění doložit."
+
+[hero_contact]
+en = "Get in touch"
+cs = "Napište mi"
+
+[hero_measured]
+en = "Measured from GitHub and GitLab on {date}"
+cs = "Změřeno z GitHubu a GitLabu {date}"
+
+[kpi_languages]
+en = "languages in original work"
+cs = "jazyků v původní práci"
