@@ -3,7 +3,7 @@
 title = "Kompendium"
 description = "Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat."
 template = "work.html"
-weight = 3
+weight = 5
 
 [taxonomies]
 tags = ["Znalosti", "Elixir", "JavaScript", "Python"]

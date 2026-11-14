@@ -3,7 +3,7 @@
 title = "algoglyph"
 description = "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured…"
 template = "work.html"
-weight = 2
+weight = 4
 
 [taxonomies]
 tags = ["Science and visualisation", "TypeScript", "Rust", "JavaScript"]

@@ -1,6 +1,6 @@
 {
  "schema": "korczis-hub-index/v1",
- "generated_at": "2026-11-14T01:09:08Z",
+ "generated_at": "2026-11-14T02:42:55Z",
  "rule": "original = the owner wrote at least half of the listed commits; forks and mirrors are counted, not listed",
  "counts": {
   "github": 447,
@@ -8,10 +8,10 @@
   "merged": 516,
   "own": 211,
   "forks": 250,
-  "mirrors": 47,
-  "empty": 3,
+  "mirrors": 33,
+  "empty": 17,
   "hidden": 5,
-  "mirrors_measured": 32
+  "mirrors_measured": 18
  },
  "all_repos": [
   {
@@ -1568,9 +1568,9 @@
    ],
    "stars": 0,
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-12T17:29:06Z",
+   "pushed_at": "2026-11-14T02:27:07Z",
    "archived": false,
-   "share": 0.92,
+   "share": 0.93,
    "hosts": {
     "github": "https://github.com/korczis/korczis.github.io"
    },
@@ -2884,7 +2884,7 @@
    "topics": [],
    "stars": 0,
    "created_at": "2026-11-12T00:48:36Z",
-   "pushed_at": "2026-11-13T00:23:54Z",
+   "pushed_at": "2026-11-14T02:22:57Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -3310,7 +3310,6 @@
    "stars": 0,
    "created_at": "2026-08-20T20:41:22.826Z",
    "pushed_at": "2026-08-21T12:51:42.304Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/llm"
@@ -3327,7 +3326,6 @@
    "stars": 0,
    "created_at": "2026-07-23T22:00:54.776Z",
    "pushed_at": "2026-10-29T10:43:46.963Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/openttd-prismatic-bridge"
@@ -3344,7 +3342,6 @@
    "stars": 0,
    "created_at": "2025-09-02T10:20:47.749Z",
    "pushed_at": "2025-12-20T21:24:46.096Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/edna"
@@ -3361,7 +3358,6 @@
    "stars": 0,
    "created_at": "2025-08-28T19:47:13.774Z",
    "pushed_at": "2025-12-20T21:24:46.834Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/GHT"
@@ -3378,7 +3374,6 @@
    "stars": 0,
    "created_at": "2025-08-27T16:52:39.046Z",
    "pushed_at": "2025-12-20T21:24:47.786Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/comtesse"
@@ -3395,7 +3390,6 @@
    "stars": 0,
    "created_at": "2025-08-25T20:25:04.842Z",
    "pushed_at": "2026-02-04T23:37:16.229Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/tinder-nomics"
@@ -3421,7 +3415,6 @@
    "stars": 0,
    "created_at": "2025-08-23T21:07:58.962Z",
    "pushed_at": "2026-02-04T23:37:01.451Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/sig"
@@ -3438,7 +3431,6 @@
    "stars": 0,
    "created_at": "2025-08-22T17:57:54.670Z",
    "pushed_at": "2025-12-20T21:24:49.461Z",
-   "archived": false,
    "share": 0.96,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/korczis.gitlab.io"
@@ -3455,7 +3447,6 @@
    "stars": 0,
    "created_at": "2025-05-12T01:33:56.421Z",
    "pushed_at": "2025-12-20T21:24:52.481Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/corvidae"
@@ -3472,7 +3463,6 @@
    "stars": 0,
    "created_at": "2025-04-28T15:26:38.855Z",
    "pushed_at": "2026-02-04T23:37:03.848Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/past"
@@ -3489,7 +3479,6 @@
    "stars": 0,
    "created_at": "2025-01-25T02:41:53.111Z",
    "pushed_at": "2026-10-29T13:51:53.522Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/the-psycho"
@@ -3506,7 +3495,6 @@
    "stars": 0,
    "created_at": "2024-12-01T21:24:20.949Z",
    "pushed_at": "2026-02-04T23:37:05.374Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/prism"
@@ -3523,7 +3511,6 @@
    "stars": 0,
    "created_at": "2024-11-20T11:51:10.458Z",
    "pushed_at": "2026-02-04T23:37:13.798Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/the-shit"
@@ -3538,7 +3525,6 @@
    "stars": 0,
    "created_at": "2024-10-24T15:38:17.529Z",
    "pushed_at": "2025-12-20T21:25:07.561Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/kuzu-ex"
@@ -3555,7 +3541,6 @@
    "stars": 0,
    "created_at": "2024-10-18T17:45:41.560Z",
    "pushed_at": "2025-12-20T21:25:14.274Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/dispatcher"
@@ -3572,7 +3557,6 @@
    "stars": 0,
    "created_at": "2024-08-01T10:19:22.386Z",
    "pushed_at": "2025-12-20T21:25:15.818Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/job-processor"
@@ -3589,7 +3573,6 @@
    "stars": 0,
    "created_at": "2024-04-23T21:19:13.755Z",
    "pushed_at": "2025-12-20T21:25:21.048Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/simple_geocoder"
@@ -3606,7 +3589,6 @@
    "stars": 0,
    "created_at": "2024-04-17T15:17:04.884Z",
    "pushed_at": "2025-12-20T21:25:23.011Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/marketing-ideas"
@@ -3623,7 +3605,6 @@
    "stars": 0,
    "created_at": "2024-03-24T22:10:44.078Z",
    "pushed_at": "2025-12-20T21:25:27.753Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/pdf_renderer"
@@ -3640,7 +3621,6 @@
    "stars": 0,
    "created_at": "2024-03-20T11:21:50.379Z",
    "pushed_at": "2025-12-20T21:25:21.812Z",
-   "archived": false,
    "share": 0.78,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/distance-calculator"
@@ -3657,7 +3637,6 @@
    "stars": 0,
    "created_at": "2022-04-29T18:24:17.143Z",
    "pushed_at": "2025-12-20T21:25:34.570Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/astudo"
@@ -3674,7 +3653,6 @@
    "stars": 0,
    "created_at": "2022-03-11T11:42:28.661Z",
    "pushed_at": "2025-12-20T21:25:38.251Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/rocksdb_indexer"
@@ -3691,7 +3669,6 @@
    "stars": 0,
    "created_at": "2020-01-01T09:21:33.793Z",
    "pushed_at": "2025-12-20T21:25:50.107Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/czech-stats"
@@ -3708,7 +3685,6 @@
    "stars": 1,
    "created_at": "2019-11-13T00:35:02.364Z",
    "pushed_at": "2025-12-20T21:25:51.077Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/hydra"
@@ -3725,7 +3701,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:39.573Z",
    "pushed_at": "2025-12-20T21:27:26.968Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/pavian-eu"
@@ -3742,7 +3717,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:34.396Z",
    "pushed_at": "2025-12-20T21:27:54.744Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/mapofffacts-com"
@@ -3759,7 +3733,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:31.993Z",
    "pushed_at": "2025-12-20T21:28:09.650Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/lethe-it"
@@ -3776,7 +3749,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:31.238Z",
    "pushed_at": "2025-12-20T21:28:14.410Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/korczis-github-com"
@@ -3793,7 +3765,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:30.984Z",
    "pushed_at": "2025-12-20T21:28:15.309Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/korczis-com"
@@ -3810,7 +3781,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:20.536Z",
    "pushed_at": "2025-12-20T21:29:16.346Z",
-   "archived": false,
    "share": 0.98,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/gauc-ex"
@@ -3827,7 +3797,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:05.535Z",
    "pushed_at": "2025-12-20T21:30:44.925Z",
-   "archived": false,
    "share": 0.94,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/apollocrawler-com"
@@ -3844,7 +3813,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:04.254Z",
    "pushed_at": "2025-12-20T21:30:50.816Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/annasabatova-cz"
@@ -3861,7 +3829,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:02.632Z",
    "pushed_at": "2025-12-20T21:31:00.611Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-elixir"
@@ -3878,7 +3845,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:02.688Z",
    "pushed_at": "2025-12-20T21:30:59.811Z",
-   "archived": false,
    "share": 0.99,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-js"
@@ -3895,7 +3861,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:02.451Z",
    "pushed_at": "2025-12-20T21:31:02.151Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-yelp-com"
@@ -3912,7 +3877,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:02.436Z",
    "pushed_at": "2025-12-20T21:31:02.868Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-youjizz-com"
@@ -3927,7 +3891,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:01.953Z",
    "pushed_at": "2025-12-20T21:31:03.654Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-xkcd-com"
@@ -3944,7 +3907,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:01.821Z",
    "pushed_at": "2025-12-20T21:31:04.727Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-sreality-cz"
@@ -3961,7 +3923,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:01.684Z",
    "pushed_at": "2025-12-20T21:31:05.525Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-news-ycombinator-com"
@@ -3978,7 +3939,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:01.681Z",
    "pushed_at": "2025-12-20T21:31:06.310Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-google-com"
@@ -3995,7 +3955,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:01.675Z",
    "pushed_at": "2025-12-20T21:31:07.058Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-heureka-cz"
@@ -4012,7 +3971,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:01.495Z",
    "pushed_at": "2025-12-20T21:31:07.783Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-firmy-cz"
@@ -4029,7 +3987,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:01.005Z",
    "pushed_at": "2025-12-20T21:31:08.451Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-craiglist-com"
@@ -4046,7 +4003,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:00.877Z",
    "pushed_at": "2025-12-20T21:31:09.221Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-base"
@@ -4063,7 +4019,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:00.858Z",
    "pushed_at": "2025-12-20T21:31:10.041Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-all"
@@ -4080,7 +4035,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:00.789Z",
    "pushed_at": "2025-12-20T21:31:10.847Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-bam-brno-cz"
@@ -4097,7 +4051,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:00.688Z",
    "pushed_at": "2025-12-20T21:31:11.664Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-browser"
@@ -4114,7 +4067,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:00.620Z",
    "pushed_at": "2025-12-20T21:31:12.479Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler"
@@ -4131,7 +4083,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:03:59.878Z",
    "pushed_at": "2025-12-20T21:31:13.342Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/docks"
@@ -4148,7 +4099,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:03:59.852Z",
    "pushed_at": "2025-12-20T21:31:16.087Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/apollo-crawler-extension"
@@ -4165,7 +4115,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:03:59.854Z",
    "pushed_at": "2025-12-20T21:31:15.382Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/ApolloCrawler-github-io"
@@ -4176,10 +4125,10 @@
   }
  ],
  "by_category": {
-  "science": 14,
-  "knowledge": 8,
   "ai": 7,
   "media": 8,
+  "science": 14,
+  "knowledge": 8,
   "tools": 72,
   "data": 47,
   "systems": 16,
@@ -4189,18 +4138,6 @@
   "security": 4
  },
  "categories": {
-  "science": {
-   "repos": 14,
-   "sites": 3,
-   "top_language": "JavaScript",
-   "since": "2014"
-  },
-  "knowledge": {
-   "repos": 8,
-   "sites": 1,
-   "top_language": "Elixir",
-   "since": "2013"
-  },
   "ai": {
    "repos": 7,
    "sites": 2,
@@ -4212,6 +4149,18 @@
    "sites": 4,
    "top_language": "HTML",
    "since": "2015"
+  },
+  "science": {
+   "repos": 14,
+   "sites": 3,
+   "top_language": "JavaScript",
+   "since": "2014"
+  },
+  "knowledge": {
+   "repos": 8,
+   "sites": 1,
+   "top_language": "Elixir",
+   "since": "2013"
   },
   "tools": {
    "repos": 72,
@@ -4431,11 +4380,11 @@
    "Dockerfile": 1
   },
   "2026": {
+   "Python": 4,
    "TypeScript": 1,
    "JavaScript": 3,
    "Elixir": 2,
    "Rust": 1,
-   "Python": 4,
    "HTML": 3
   }
  },
@@ -4446,12 +4395,12 @@
     "repos": 30,
     "evidence": [
      {
-      "name": "oscilla",
-      "url": "https://github.com/korczis/oscilla"
-     },
-     {
       "name": "korczis.github.io",
       "url": "https://github.com/korczis/korczis.github.io"
+     },
+     {
+      "name": "oscilla",
+      "url": "https://github.com/korczis/oscilla"
      },
      {
       "name": "vomaste.cz",
@@ -4888,8 +4837,21 @@
  "recent": {
   "size": 100,
   "from": "2018-06-24T03:58:28Z",
-  "to": "2026-11-13T06:33:22Z",
+  "to": "2026-11-14T02:27:07Z",
   "mix": {
+   "ai": {
+    "JavaScript": 1,
+    "Rust": 1,
+    "HTML": 1,
+    "Unspecified": 4
+   },
+   "media": {
+    "Python": 1,
+    "HTML": 2,
+    "Unspecified": 1,
+    "Dockerfile": 1,
+    "Elixir": 1
+   },
    "science": {
     "TypeScript": 1,
     "JavaScript": 1,
@@ -4900,19 +4862,6 @@
     "Elixir": 1,
     "Swift": 2,
     "Unspecified": 1
-   },
-   "ai": {
-    "Rust": 1,
-    "JavaScript": 1,
-    "HTML": 1,
-    "Unspecified": 4
-   },
-   "media": {
-    "Python": 1,
-    "HTML": 2,
-    "Unspecified": 1,
-    "Dockerfile": 1,
-    "Elixir": 1
    },
    "tools": {
     "Python": 2,
@@ -4948,6 +4897,55 @@
   }
  },
  "repos": [
+  {
+   "name": "korczis.github.io",
+   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+   "language": "JavaScript",
+   "topics": [
+    "accessibility",
+    "ai-agents",
+    "alpinejs",
+    "chartjs",
+    "cytoscape",
+    "echarts",
+    "flowbite",
+    "github-pages",
+    "majordomus",
+    "p5js",
+    "personal-website",
+    "portfolio",
+    "tailwindcss",
+    "zola"
+   ],
+   "stars": 0,
+   "created_at": "2024-12-24T16:48:15Z",
+   "pushed_at": "2026-11-14T02:27:07Z",
+   "archived": false,
+   "share": 0.93,
+   "hosts": {
+    "github": "https://github.com/korczis/korczis.github.io"
+   },
+   "site": null,
+   "category": "ai",
+   "curated": false
+  },
+  {
+   "name": "sonic-playground",
+   "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+   "language": "Python",
+   "topics": [],
+   "stars": 0,
+   "created_at": "2026-11-12T00:48:36Z",
+   "pushed_at": "2026-11-14T02:22:57Z",
+   "archived": false,
+   "share": 1,
+   "hosts": {
+    "github": "https://github.com/korczis/sonic-playground"
+   },
+   "site": "https://korczis.github.io/sonic-playground/",
+   "category": "media",
+   "curated": true
+  },
   {
    "name": "algoglyph",
    "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
@@ -5070,55 +5068,6 @@
    "curated": true
   },
   {
-   "name": "sonic-playground",
-   "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-   "language": "Python",
-   "topics": [],
-   "stars": 0,
-   "created_at": "2026-11-12T00:48:36Z",
-   "pushed_at": "2026-11-13T00:23:54Z",
-   "archived": false,
-   "share": 1,
-   "hosts": {
-    "github": "https://github.com/korczis/sonic-playground"
-   },
-   "site": "https://korczis.github.io/sonic-playground/",
-   "category": "media",
-   "curated": true
-  },
-  {
-   "name": "korczis.github.io",
-   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-   "language": "JavaScript",
-   "topics": [
-    "accessibility",
-    "ai-agents",
-    "alpinejs",
-    "chartjs",
-    "cytoscape",
-    "echarts",
-    "flowbite",
-    "github-pages",
-    "majordomus",
-    "p5js",
-    "personal-website",
-    "portfolio",
-    "tailwindcss",
-    "zola"
-   ],
-   "stars": 0,
-   "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-12T17:29:06Z",
-   "archived": false,
-   "share": 0.92,
-   "hosts": {
-    "github": "https://github.com/korczis/korczis.github.io"
-   },
-   "site": null,
-   "category": "ai",
-   "curated": false
-  },
-  {
    "name": "catharsis-as-a-service",
    "description": "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact.",
    "language": "HTML",
@@ -5177,7 +5126,6 @@
    "stars": 0,
    "created_at": "2025-01-25T02:41:53.111Z",
    "pushed_at": "2026-10-29T13:51:53.522Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/the-psycho"
@@ -5254,7 +5202,6 @@
    "stars": 0,
    "created_at": "2026-07-23T22:00:54.776Z",
    "pushed_at": "2026-10-29T10:43:46.963Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/openttd-prismatic-bridge"
@@ -5342,7 +5289,6 @@
    "stars": 0,
    "created_at": "2026-08-20T20:41:22.826Z",
    "pushed_at": "2026-08-21T12:51:42.304Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/llm"
@@ -5377,7 +5323,6 @@
    "stars": 0,
    "created_at": "2025-08-25T20:25:04.842Z",
    "pushed_at": "2026-02-04T23:37:16.229Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/tinder-nomics"
@@ -5394,7 +5339,6 @@
    "stars": 0,
    "created_at": "2024-12-01T21:24:20.949Z",
    "pushed_at": "2026-02-04T23:37:05.374Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/prism"
@@ -5411,7 +5355,6 @@
    "stars": 0,
    "created_at": "2025-04-28T15:26:38.855Z",
    "pushed_at": "2026-02-04T23:37:03.848Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/past"
@@ -5437,7 +5380,6 @@
    "stars": 0,
    "created_at": "2025-08-23T21:07:58.962Z",
    "pushed_at": "2026-02-04T23:37:01.451Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/sig"
@@ -5454,7 +5396,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:03:59.852Z",
    "pushed_at": "2025-12-20T21:31:16.087Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/apollo-crawler-extension"
@@ -5471,7 +5412,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:03:59.854Z",
    "pushed_at": "2025-12-20T21:31:15.382Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/ApolloCrawler-github-io"
@@ -5488,7 +5428,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:03:59.878Z",
    "pushed_at": "2025-12-20T21:31:13.342Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/docks"
@@ -5505,7 +5444,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:00.620Z",
    "pushed_at": "2025-12-20T21:31:12.479Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler"
@@ -5522,7 +5460,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:00.688Z",
    "pushed_at": "2025-12-20T21:31:11.664Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-browser"
@@ -5539,7 +5476,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:00.789Z",
    "pushed_at": "2025-12-20T21:31:10.847Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-bam-brno-cz"
@@ -5556,7 +5492,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:00.858Z",
    "pushed_at": "2025-12-20T21:31:10.041Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-all"
@@ -5573,7 +5508,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:00.877Z",
    "pushed_at": "2025-12-20T21:31:09.221Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-base"
@@ -5590,7 +5524,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:01.005Z",
    "pushed_at": "2025-12-20T21:31:08.451Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-craiglist-com"
@@ -5607,7 +5540,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:01.495Z",
    "pushed_at": "2025-12-20T21:31:07.783Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-firmy-cz"
@@ -5624,7 +5556,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:01.675Z",
    "pushed_at": "2025-12-20T21:31:07.058Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-heureka-cz"
@@ -5641,7 +5572,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:01.681Z",
    "pushed_at": "2025-12-20T21:31:06.310Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-google-com"
@@ -5658,7 +5588,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:01.684Z",
    "pushed_at": "2025-12-20T21:31:05.525Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-news-ycombinator-com"
@@ -5675,7 +5604,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:01.821Z",
    "pushed_at": "2025-12-20T21:31:04.727Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-sreality-cz"
@@ -5692,7 +5620,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:01.953Z",
    "pushed_at": "2025-12-20T21:31:03.654Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-xkcd-com"
@@ -5709,7 +5636,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:02.451Z",
    "pushed_at": "2025-12-20T21:31:02.151Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-yelp-com"
@@ -5726,7 +5652,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:02.632Z",
    "pushed_at": "2025-12-20T21:31:00.611Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-elixir"
@@ -5743,7 +5668,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:02.688Z",
    "pushed_at": "2025-12-20T21:30:59.811Z",
-   "archived": false,
    "share": 0.99,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-js"
@@ -5760,7 +5684,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:04.254Z",
    "pushed_at": "2025-12-20T21:30:50.816Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/annasabatova-cz"
@@ -5777,7 +5700,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:05.535Z",
    "pushed_at": "2025-12-20T21:30:44.925Z",
-   "archived": false,
    "share": 0.94,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/apollocrawler-com"
@@ -5794,7 +5716,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:20.536Z",
    "pushed_at": "2025-12-20T21:29:16.346Z",
-   "archived": false,
    "share": 0.98,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/gauc-ex"
@@ -5811,7 +5732,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:30.984Z",
    "pushed_at": "2025-12-20T21:28:15.309Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/korczis-com"
@@ -5828,7 +5748,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:31.238Z",
    "pushed_at": "2025-12-20T21:28:14.410Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/korczis-github-com"
@@ -5845,7 +5764,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:31.993Z",
    "pushed_at": "2025-12-20T21:28:09.650Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/lethe-it"
@@ -5862,7 +5780,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:34.396Z",
    "pushed_at": "2025-12-20T21:27:54.744Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/mapofffacts-com"
@@ -5879,7 +5796,6 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:39.573Z",
    "pushed_at": "2025-12-20T21:27:26.968Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/pavian-eu"
@@ -5896,7 +5812,6 @@
    "stars": 1,
    "created_at": "2019-11-13T00:35:02.364Z",
    "pushed_at": "2025-12-20T21:25:51.077Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/hydra"
@@ -5913,7 +5828,6 @@
    "stars": 0,
    "created_at": "2020-01-01T09:21:33.793Z",
    "pushed_at": "2025-12-20T21:25:50.107Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/czech-stats"
@@ -5930,7 +5844,6 @@
    "stars": 0,
    "created_at": "2022-03-11T11:42:28.661Z",
    "pushed_at": "2025-12-20T21:25:38.251Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/rocksdb_indexer"
@@ -5947,7 +5860,6 @@
    "stars": 0,
    "created_at": "2022-04-29T18:24:17.143Z",
    "pushed_at": "2025-12-20T21:25:34.570Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/astudo"
@@ -5964,7 +5876,6 @@
    "stars": 0,
    "created_at": "2024-03-24T22:10:44.078Z",
    "pushed_at": "2025-12-20T21:25:27.753Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/pdf_renderer"
@@ -5981,7 +5892,6 @@
    "stars": 0,
    "created_at": "2024-04-17T15:17:04.884Z",
    "pushed_at": "2025-12-20T21:25:23.011Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/marketing-ideas"
@@ -5998,7 +5908,6 @@
    "stars": 0,
    "created_at": "2024-03-20T11:21:50.379Z",
    "pushed_at": "2025-12-20T21:25:21.812Z",
-   "archived": false,
    "share": 0.78,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/distance-calculator"
@@ -6015,7 +5924,6 @@
    "stars": 0,
    "created_at": "2024-04-23T21:19:13.755Z",
    "pushed_at": "2025-12-20T21:25:21.048Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/simple_geocoder"
@@ -6032,7 +5940,6 @@
    "stars": 0,
    "created_at": "2024-08-01T10:19:22.386Z",
    "pushed_at": "2025-12-20T21:25:15.818Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/job-processor"
@@ -6049,7 +5956,6 @@
    "stars": 0,
    "created_at": "2024-10-18T17:45:41.560Z",
    "pushed_at": "2025-12-20T21:25:14.274Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/dispatcher"
@@ -6066,7 +5972,6 @@
    "stars": 0,
    "created_at": "2024-10-24T15:38:17.529Z",
    "pushed_at": "2025-12-20T21:25:07.561Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/kuzu-ex"
@@ -6083,7 +5988,6 @@
    "stars": 0,
    "created_at": "2025-05-12T01:33:56.421Z",
    "pushed_at": "2025-12-20T21:24:52.481Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/corvidae"
@@ -6100,7 +6004,6 @@
    "stars": 0,
    "created_at": "2025-08-22T17:57:54.670Z",
    "pushed_at": "2025-12-20T21:24:49.461Z",
-   "archived": false,
    "share": 0.96,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/korczis.gitlab.io"
@@ -6117,7 +6020,6 @@
    "stars": 0,
    "created_at": "2025-08-27T16:52:39.046Z",
    "pushed_at": "2025-12-20T21:24:47.786Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/comtesse"
@@ -6134,7 +6036,6 @@
    "stars": 0,
    "created_at": "2025-08-28T19:47:13.774Z",
    "pushed_at": "2025-12-20T21:24:46.834Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/GHT"
@@ -6151,7 +6052,6 @@
    "stars": 0,
    "created_at": "2025-09-02T10:20:47.749Z",
    "pushed_at": "2025-12-20T21:24:46.096Z",
-   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/edna"

@@ -1,6 +1,6 @@
 {
  "schema": "korczis-hub-recent/v1",
- "generated_at": "2026-11-14T01:09:22Z",
+ "generated_at": "2026-11-14T02:42:55Z",
  "window_days": 1461,
  "periods": [
   {
@@ -19,6 +19,401 @@
  "rule": "a repository counts when its default branch has a commit in the window; host activity dates are ignored",
  "candidates": 74,
  "repos": [
+  {
+   "name": "sonic-playground",
+   "period": 12,
+   "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+   "category": "media",
+   "language": "Python",
+   "created_at": "2026-11-12T00:48:36Z",
+   "last_commit": "2026-11-14T02:33:03Z",
+   "last_message": "Merge branch 'feature/evolve-plurals-images': the sitemap sweep scales with the machine",
+   "commits": [
+    {
+     "at": "2026-11-14T02:33:03Z",
+     "message": "Merge branch 'feature/evolve-plurals-images': the sitemap sweep scales with the machine",
+     "url": "https://github.com/korczis/sonic-playground/commit/bb885a412348feddfb4a8f1bdbc3817914cd09af"
+    },
+    {
+     "at": "2026-11-14T02:30:18Z",
+     "message": "perf(smoke): the sitemap sweep scales with the machine's cores",
+     "url": "https://github.com/korczis/sonic-playground/commit/e06e2f6420161977557d2bd5cea94ad4b19b7194"
+    },
+    {
+     "at": "2026-11-14T02:22:24Z",
+     "message": "Merge branch 'feature/evolve-plurals-images': JPEG social cards under a budget; a profiled gate",
+     "url": "https://github.com/korczis/sonic-playground/commit/e9970214ddd397081d2e038e91a4b9064fa3abc4"
+    },
+    {
+     "at": "2026-11-14T02:17:22Z",
+     "message": "perf(social): JPEG cards under a budget; the gate profiles itself",
+     "url": "https://github.com/korczis/sonic-playground/commit/46ab2dc2339439cff86eae31f72c408fd875da4d"
+    },
+    {
+     "at": "2026-11-14T01:58:34Z",
+     "message": "Merge branch 'feature/evolve-plurals-images': every link and button has an accessible name",
+     "url": "https://github.com/korczis/sonic-playground/commit/bc6c9cc52bcee86c13797a952cd8854d1b12fe3a"
+    },
+    {
+     "at": "2026-11-14T01:50:55Z",
+     "message": "test(a11y): every link and button has an accessible name, checked on every page",
+     "url": "https://github.com/korczis/sonic-playground/commit/6bb352c5ebbdfecb76515ea54fd6c8f5c2fac97e"
+    },
+    {
+     "at": "2026-11-14T01:24:09Z",
+     "message": "Merge branch 'feature/evolve-plurals-images': the player reads a lean projection of the catalogue",
+     "url": "https://github.com/korczis/sonic-playground/commit/031e77a6a1c11f2ede58da28c77b8d7ba3fe32a1"
+    },
+    {
+     "at": "2026-11-14T01:16:06Z",
+     "message": "perf(player): read a lean projection of the catalogue, not the catalogue",
+     "url": "https://github.com/korczis/sonic-playground/commit/f36f2416752298e8ff8a7141b7fdd74e40f928c3"
+    },
+    {
+     "at": "2026-11-13T00:23:05Z",
+     "message": "Merge branch 'feature/evolve-plurals-images': target size on every page class",
+     "url": "https://github.com/korczis/sonic-playground/commit/f7939546d8e167aac91acd67fe299c80e59dfb19"
+    },
+    {
+     "at": "2026-11-13T00:14:50Z",
+     "message": "test(a11y): measure target size on every page class, not four",
+     "url": "https://github.com/korczis/sonic-playground/commit/a73725aced98508ee7b19517229f77576d97d991"
+    },
+    {
+     "at": "2026-11-12T23:05:02Z",
+     "message": "Merge branch 'feature/evolve-plurals-images': charts load only when they come near",
+     "url": "https://github.com/korczis/sonic-playground/commit/bbeba05b87a6c1fd1cd598143df5edd9d6d3488f"
+    },
+    {
+     "at": "2026-11-12T22:56:36Z",
+     "message": "perf(charts): load ECharts and the catalogue only when a chart comes near",
+     "url": "https://github.com/korczis/sonic-playground/commit/6f7c459f78ea8310c8c6e615465dd22845ccd445"
+    },
+    {
+     "at": "2026-11-12T22:38:36Z",
+     "message": "Merge branch 'feature/evolve-plurals-images': one h1 per page; verify names a stale node_modules",
+     "url": "https://github.com/korczis/sonic-playground/commit/d430e32a9735984aee65b7b34d4c42559032e80e"
+    },
+    {
+     "at": "2026-11-12T22:29:05Z",
+     "message": "fix(site): one h1 per page, enforced; verify names a stale node_modules",
+     "url": "https://github.com/korczis/sonic-playground/commit/3dd023cbcfde259564f55ac483319aff17cfdf57"
+    },
+    {
+     "at": "2026-11-12T22:13:13Z",
+     "message": "Merge branch 'feature/evolve-plurals-images': ship only the ECharts modules the site uses",
+     "url": "https://github.com/korczis/sonic-playground/commit/b99023e95ddc0e7b674b829cf4b1da3d570bf01e"
+    },
+    {
+     "at": "2026-11-12T22:02:22Z",
+     "message": "perf(charts): ship only the ECharts modules the site uses (1122 -> 614 kB)",
+     "url": "https://github.com/korczis/sonic-playground/commit/a1f37545b0d65ad76270eb6e5ee62361514fc289"
+    },
+    {
+     "at": "2026-11-12T21:30:31Z",
+     "message": "Merge branch 'feature/evolve-plurals-images': every control at least 24x24 px",
+     "url": "https://github.com/korczis/sonic-playground/commit/f2e8dbaed2c923ae4c27e1144ebc8f3cf50bdb3f"
+    },
+    {
+     "at": "2026-11-12T21:19:52Z",
+     "message": "feat(a11y): every control at least 24x24 px, one base rule, measured at 390 px",
+     "url": "https://github.com/korczis/sonic-playground/commit/64534466e1a6d9a2cbf0f1e02aa0995fdff8b1bb"
+    },
+    {
+     "at": "2026-11-12T20:26:36Z",
+     "message": "Merge branch 'feature/evolve-plurals-images': CLDR plurals with one formatter, derived sized images under a budget",
+     "url": "https://github.com/korczis/sonic-playground/commit/f6fef523c21fa9c9ffcc934251fec8ed98a10986"
+    },
+    {
+     "at": "2026-11-12T20:06:16Z",
+     "message": "feat(site): CLDR plurals with one formatter, derived sized images under a budget",
+     "url": "https://github.com/korczis/sonic-playground/commit/e7e89d4106fc1e06809cee035687662d8a384a80"
+    },
+    {
+     "at": "2026-11-12T19:46:08Z",
+     "message": "Merge branch 'feature/landing-bolder': skip the algorithm, keep the music",
+     "url": "https://github.com/korczis/sonic-playground/commit/a54ac1b29eb291eef99ad654bfbf680f33e01fd9"
+    },
+    {
+     "at": "2026-11-12T19:45:04Z",
+     "message": "feat(home): skip the algorithm, keep the music",
+     "url": "https://github.com/korczis/sonic-playground/commit/d0ebc515980e76d55e1ab05320c161bfff4e5cf4"
+    },
+    {
+     "at": "2026-11-12T18:36:40Z",
+     "message": "Merge branch 'feature/bilingual': the whole site in English and Czech (ADR 0006)",
+     "url": "https://github.com/korczis/sonic-playground/commit/10c73fa40b449936044990f017696936e59043a0"
+    },
+    {
+     "at": "2026-11-12T18:15:42Z",
+     "message": "chore(evidence): the skill cases' run at dc5f7f4, translate named",
+     "url": "https://github.com/korczis/sonic-playground/commit/bf3fad5a086771efd2fe6994b1ccb0fe82aa6977"
+    },
+    {
+     "at": "2026-11-12T18:14:47Z",
+     "message": "feat(i18n): the whole site bilingual, English at the root and Czech under /cs/ (ADR 0006)",
+     "url": "https://github.com/korczis/sonic-playground/commit/dc5f7f479821cabafc4af8096dfe4997a3a908de"
+    },
+    {
+     "at": "2026-11-12T16:52:22Z",
+     "message": "Merge branch 'feature/adr-acceptance': the owner accepts ADRs 0001-0005",
+     "url": "https://github.com/korczis/sonic-playground/commit/a621e9584cf32d0119f884269e1405be5062d3c6"
+    },
+    {
+     "at": "2026-11-12T16:49:10Z",
+     "message": "docs(adr): the owner accepts ADRs 0001-0005",
+     "url": "https://github.com/korczis/sonic-playground/commit/ef284caccbf2da95db57a726684bd7b39d5f424a"
+    },
+    {
+     "at": "2026-11-12T16:43:56Z",
+     "message": "Merge branch 'feature/landing-promo': a landing page made to be shared",
+     "url": "https://github.com/korczis/sonic-playground/commit/b7ee68458c651d7a8c0baa7f3c24f2acc14e7d9f"
+    },
+    {
+     "at": "2026-11-12T16:42:10Z",
+     "message": "feat(home): a landing page made to be shared",
+     "url": "https://github.com/korczis/sonic-playground/commit/915cb3c7025cbd684e4a7464f5a03f3e68328429"
+    },
+    {
+     "at": "2026-11-12T16:17:26Z",
+     "message": "Merge branch 'feature/owner-decisions': the owner's answers of 2026-11-12",
+     "url": "https://github.com/korczis/sonic-playground/commit/96ed5c5a42f880db7368194e6049a0c939e540c5"
+    }
+   ],
+   "languages": [
+    {
+     "name": "Python",
+     "share": 39.2
+    },
+    {
+     "name": "JavaScript",
+     "share": 30.1
+    },
+    {
+     "name": "HTML",
+     "share": 25.6
+    },
+    {
+     "name": "Shell",
+     "share": 3.7
+    },
+    {
+     "name": "CSS",
+     "share": 1.4
+    }
+   ],
+   "readme": "A hand-picked music journal: one review per track, explored by genre, feeling and mood, played in a bottom-bar player that keeps going while you browse. Live at https://korczis.github.io/sonic-playground/.",
+   "topics": [],
+   "hosts": {
+    "github": "https://github.com/korczis/sonic-playground"
+   },
+   "site": "https://korczis.github.io/sonic-playground/",
+   "curated": true,
+   "stars": 0
+  },
+  {
+   "name": "korczis.github.io",
+   "period": 12,
+   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+   "category": "ai",
+   "language": "JavaScript",
+   "created_at": "2024-12-24T16:48:15Z",
+   "last_commit": "2026-11-14T02:26:39Z",
+   "last_message": "fix(verify): the Flowbite scanner runs where it exists and says so where it does not",
+   "commits": [
+    {
+     "at": "2026-11-14T02:26:39Z",
+     "message": "fix(verify): the Flowbite scanner runs where it exists and says so where it does not",
+     "url": "https://github.com/korczis/korczis.github.io/commit/59618de8bba83820c8d920a207357a4437fd5d5f"
+    },
+    {
+     "at": "2026-11-14T01:52:42Z",
+     "message": "fix(refresh): commit through the hooks with Majordomus; audit ignores foreign request echoes",
+     "url": "https://github.com/korczis/korczis.github.io/commit/6b9353f812dcaa9df2656a240d52ac4d1e715ff2"
+    },
+    {
+     "at": "2026-11-14T01:17:59Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/5c76fda06d687ed6194af7f2246cde3d6b17681c"
+    },
+    {
+     "at": "2026-11-14T01:17:51Z",
+     "message": "fix(refresh): GitLab reads have a budget and a fallback, so a refresh never hangs",
+     "url": "https://github.com/korczis/korczis.github.io/commit/7d4d2a27cff651f8dd92a2e9cc23999dc4a67d92"
+    },
+    {
+     "at": "2026-11-12T17:29:04Z",
+     "message": "ci: bump actions/checkout (#6)",
+     "url": "https://github.com/korczis/korczis.github.io/commit/bc4b15a063486b4eefcee98c73f124f907411e6e"
+    },
+    {
+     "at": "2026-11-12T16:16:22Z",
+     "message": "feat(a11y): every visual has a keyboard twin, a list of real links",
+     "url": "https://github.com/korczis/korczis.github.io/commit/db9fb4c4e0012c4360ef2e0d25402b57b1749d93"
+    },
+    {
+     "at": "2026-11-12T15:23:02Z",
+     "message": "feat(viz): tag pages carry visuals, declared in data",
+     "url": "https://github.com/korczis/korczis.github.io/commit/a5fdcf9cbe6c10beb4c67565e4085ac4c3f722d5"
+    },
+    {
+     "at": "2026-11-12T12:39:45Z",
+     "message": "feat(viz): the skills sunburst on the stack page, the ecosystem graph on projects",
+     "url": "https://github.com/korczis/korczis.github.io/commit/c6ac1ca75d86b33aac9ac68bba5ed88628e3be0f"
+    },
+    {
+     "at": "2026-11-12T12:32:28Z",
+     "message": "feat(viz): a concept atlas, a lit galaxy arm and a pulse of four years",
+     "url": "https://github.com/korczis/korczis.github.io/commit/bf10bc06b854a575d563e078b62050ba7a5b0bf7"
+    },
+    {
+     "at": "2026-11-12T11:52:35Z",
+     "message": "feat(viz): every work page carries a live pulse of its commits",
+     "url": "https://github.com/korczis/korczis.github.io/commit/873e6a3138e424eddd0ede890b77552b44b45d97"
+    },
+    {
+     "at": "2026-11-12T11:27:35Z",
+     "message": "feat(viz): a live pulse of public GitHub activity on the home page",
+     "url": "https://github.com/korczis/korczis.github.io/commit/721fc79a6097db5b1f69e1e37f70b329179bdeac"
+    },
+    {
+     "at": "2026-11-12T09:04:13Z",
+     "message": "feat(viz): a galaxy of work, everything clickable, data refreshed every six hours",
+     "url": "https://github.com/korczis/korczis.github.io/commit/f8835ac3705242af61ba2e52520951883b99f78f"
+    },
+    {
+     "at": "2026-11-12T05:56:50Z",
+     "message": "feat(tags): the tag index and every tag page carry an article",
+     "url": "https://github.com/korczis/korczis.github.io/commit/91b2dfccc24ee8b4602721cb33376477ac7253c4"
+    },
+    {
+     "at": "2026-11-12T05:43:17Z",
+     "message": "feat(content): every page is an educational, linked article with a sourced glossary",
+     "url": "https://github.com/korczis/korczis.github.io/commit/c012897c44bf6c5e1d4092ffd0da0035821204ff"
+    },
+    {
+     "at": "2026-11-12T05:15:07Z",
+     "message": "feat(viz): art visuals in D3, composed from front matter",
+     "url": "https://github.com/korczis/korczis.github.io/commit/fac4434b5010b585167006e94fb782d1a41b1f65"
+    },
+    {
+     "at": "2026-11-12T05:10:16Z",
+     "message": "chore(og): regenerate Czech work previews and site.json for the UTC dates",
+     "url": "https://github.com/korczis/korczis.github.io/commit/17f4dbfc02fbe040abcbf18418acbfd93efa7fd9"
+    },
+    {
+     "at": "2026-11-12T05:09:40Z",
+     "message": "fix(work): Czech dates are UTC and locale-free, so generated pages match in CI",
+     "url": "https://github.com/korczis/korczis.github.io/commit/b248c5164037d18411081c27b7932d25ac94bea5"
+    },
+    {
+     "at": "2026-11-12T05:07:27Z",
+     "message": "feat(i18n): every text in English and Czech, tags, hreflang, language switch",
+     "url": "https://github.com/korczis/korczis.github.io/commit/78189666712a0504f2dbb90040779f1cdbf999a3"
+    },
+    {
+     "at": "2026-11-12T04:39:46Z",
+     "message": "feat(landing): the last 12 months, derived from recent commits, link every work page",
+     "url": "https://github.com/korczis/korczis.github.io/commit/e0104a38ee144c66c028d9a61cb9305a2246afe6"
+    },
+    {
+     "at": "2026-11-12T04:15:21Z",
+     "message": "feat(work): a page per project of the last 12, 24 and 48 months",
+     "url": "https://github.com/korczis/korczis.github.io/commit/213ef86696b29a45819ea82a9048284c2fba5641"
+    },
+    {
+     "at": "2026-11-12T04:00:48Z",
+     "message": "build(deps-dev): bump the site group across 1 directory with 2 updates (#4)",
+     "url": "https://github.com/korczis/korczis.github.io/commit/857215c9db53bee8985634f37bc6513e0784be1e"
+    },
+    {
+     "at": "2026-11-12T04:00:45Z",
+     "message": "ci: bump the actions group across 1 directory with 7 updates (#2)",
+     "url": "https://github.com/korczis/korczis.github.io/commit/7eea247d4663db08ca1a914c42f85c10e93e7845"
+    },
+    {
+     "at": "2026-11-12T03:58:42Z",
+     "message": "feat(automation): front-matter contract, site.json, weekly self-refresh",
+     "url": "https://github.com/korczis/korczis.github.io/commit/00fc448ae208b0f4960de6ab2cb3de8b3a0eb877"
+    },
+    {
+     "at": "2026-11-12T03:55:56Z",
+     "message": "feat(hub): every public repository, about and CV, skills, skillset, 11 categories",
+     "url": "https://github.com/korczis/korczis.github.io/commit/736cc62fcda81d20586b949d3b278c2397e3f972"
+    },
+    {
+     "at": "2026-11-12T03:16:39Z",
+     "message": "build(deps): keep playwright-core on the locally cached Chromium",
+     "url": "https://github.com/korczis/korczis.github.io/commit/987c3b00da38e422e299f3161a7ff9c54a5357ff"
+    },
+    {
+     "at": "2026-11-12T02:53:49Z",
+     "message": "fix(gates): count only fetched resources as third-party; verify before every push to master",
+     "url": "https://github.com/korczis/korczis.github.io/commit/8438a0ac10fe7de5c7cff8075ed41c2704357342"
+    },
+    {
+     "at": "2026-11-12T02:52:43Z",
+     "message": "chore(repo): Dependabot, rel=me, documented repository settings",
+     "url": "https://github.com/korczis/korczis.github.io/commit/a1df263e7705af04b3984da596bcc663d9d45cf1"
+    },
+    {
+     "at": "2026-11-12T02:31:05Z",
+     "message": "feat(ui): timeline and command palette",
+     "url": "https://github.com/korczis/korczis.github.io/commit/1bc33f689fb3976b0dedef7a65e8c9724aeaea2f"
+    },
+    {
+     "at": "2026-11-12T02:19:11Z",
+     "message": "feat(catalogue): project detail drawer, table view, interaction tests",
+     "url": "https://github.com/korczis/korczis.github.io/commit/0e06eb2e55c4a028eeaf1ed1291bb2e55be51cf1"
+    },
+    {
+     "at": "2026-11-12T02:08:49Z",
+     "message": "feat(ui): Flowbite Pro application shell, categories, dashboard pages",
+     "url": "https://github.com/korczis/korczis.github.io/commit/810b06599d107aeedf3c668c4d742f33bb823556"
+    }
+   ],
+   "languages": [
+    {
+     "name": "JavaScript",
+     "share": 53.2
+    },
+    {
+     "name": "HTML",
+     "share": 43.2
+    },
+    {
+     "name": "Shell",
+     "share": 1.9
+    },
+    {
+     "name": "CSS",
+     "share": 1.7
+    }
+   ],
+   "readme": "The personal hub of Tomas Korcak (korczis). It covers who I am, the projects I build with their live sites, the stack behind them, and Majordomus, which supervises the work.",
+   "topics": [
+    "accessibility",
+    "ai-agents",
+    "alpinejs",
+    "chartjs",
+    "cytoscape",
+    "echarts",
+    "flowbite",
+    "github-pages",
+    "majordomus",
+    "p5js",
+    "personal-website",
+    "portfolio",
+    "tailwindcss",
+    "zola"
+   ],
+   "hosts": {
+    "github": "https://github.com/korczis/korczis.github.io"
+   },
+   "site": null,
+   "curated": false,
+   "stars": 0
+  },
   {
    "name": "oscilla",
    "period": 12,
@@ -847,401 +1242,6 @@
    "site": "https://korczis.github.io/prismatic-majordomus/",
    "curated": true,
    "stars": 1
-  },
-  {
-   "name": "sonic-playground",
-   "period": 12,
-   "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-   "category": "media",
-   "language": "Python",
-   "created_at": "2026-11-12T00:48:36Z",
-   "last_commit": "2026-11-13T00:23:05Z",
-   "last_message": "Merge branch 'feature/evolve-plurals-images': target size on every page class",
-   "commits": [
-    {
-     "at": "2026-11-13T00:23:05Z",
-     "message": "Merge branch 'feature/evolve-plurals-images': target size on every page class",
-     "url": "https://github.com/korczis/sonic-playground/commit/f7939546d8e167aac91acd67fe299c80e59dfb19"
-    },
-    {
-     "at": "2026-11-13T00:14:50Z",
-     "message": "test(a11y): measure target size on every page class, not four",
-     "url": "https://github.com/korczis/sonic-playground/commit/a73725aced98508ee7b19517229f77576d97d991"
-    },
-    {
-     "at": "2026-11-12T23:05:02Z",
-     "message": "Merge branch 'feature/evolve-plurals-images': charts load only when they come near",
-     "url": "https://github.com/korczis/sonic-playground/commit/bbeba05b87a6c1fd1cd598143df5edd9d6d3488f"
-    },
-    {
-     "at": "2026-11-12T22:56:36Z",
-     "message": "perf(charts): load ECharts and the catalogue only when a chart comes near",
-     "url": "https://github.com/korczis/sonic-playground/commit/6f7c459f78ea8310c8c6e615465dd22845ccd445"
-    },
-    {
-     "at": "2026-11-12T22:38:36Z",
-     "message": "Merge branch 'feature/evolve-plurals-images': one h1 per page; verify names a stale node_modules",
-     "url": "https://github.com/korczis/sonic-playground/commit/d430e32a9735984aee65b7b34d4c42559032e80e"
-    },
-    {
-     "at": "2026-11-12T22:29:05Z",
-     "message": "fix(site): one h1 per page, enforced; verify names a stale node_modules",
-     "url": "https://github.com/korczis/sonic-playground/commit/3dd023cbcfde259564f55ac483319aff17cfdf57"
-    },
-    {
-     "at": "2026-11-12T22:13:13Z",
-     "message": "Merge branch 'feature/evolve-plurals-images': ship only the ECharts modules the site uses",
-     "url": "https://github.com/korczis/sonic-playground/commit/b99023e95ddc0e7b674b829cf4b1da3d570bf01e"
-    },
-    {
-     "at": "2026-11-12T22:02:22Z",
-     "message": "perf(charts): ship only the ECharts modules the site uses (1122 -> 614 kB)",
-     "url": "https://github.com/korczis/sonic-playground/commit/a1f37545b0d65ad76270eb6e5ee62361514fc289"
-    },
-    {
-     "at": "2026-11-12T21:30:31Z",
-     "message": "Merge branch 'feature/evolve-plurals-images': every control at least 24x24 px",
-     "url": "https://github.com/korczis/sonic-playground/commit/f2e8dbaed2c923ae4c27e1144ebc8f3cf50bdb3f"
-    },
-    {
-     "at": "2026-11-12T21:19:52Z",
-     "message": "feat(a11y): every control at least 24x24 px, one base rule, measured at 390 px",
-     "url": "https://github.com/korczis/sonic-playground/commit/64534466e1a6d9a2cbf0f1e02aa0995fdff8b1bb"
-    },
-    {
-     "at": "2026-11-12T20:26:36Z",
-     "message": "Merge branch 'feature/evolve-plurals-images': CLDR plurals with one formatter, derived sized images under a budget",
-     "url": "https://github.com/korczis/sonic-playground/commit/f6fef523c21fa9c9ffcc934251fec8ed98a10986"
-    },
-    {
-     "at": "2026-11-12T20:06:16Z",
-     "message": "feat(site): CLDR plurals with one formatter, derived sized images under a budget",
-     "url": "https://github.com/korczis/sonic-playground/commit/e7e89d4106fc1e06809cee035687662d8a384a80"
-    },
-    {
-     "at": "2026-11-12T19:46:08Z",
-     "message": "Merge branch 'feature/landing-bolder': skip the algorithm, keep the music",
-     "url": "https://github.com/korczis/sonic-playground/commit/a54ac1b29eb291eef99ad654bfbf680f33e01fd9"
-    },
-    {
-     "at": "2026-11-12T19:45:04Z",
-     "message": "feat(home): skip the algorithm, keep the music",
-     "url": "https://github.com/korczis/sonic-playground/commit/d0ebc515980e76d55e1ab05320c161bfff4e5cf4"
-    },
-    {
-     "at": "2026-11-12T18:36:40Z",
-     "message": "Merge branch 'feature/bilingual': the whole site in English and Czech (ADR 0006)",
-     "url": "https://github.com/korczis/sonic-playground/commit/10c73fa40b449936044990f017696936e59043a0"
-    },
-    {
-     "at": "2026-11-12T18:15:42Z",
-     "message": "chore(evidence): the skill cases' run at dc5f7f4, translate named",
-     "url": "https://github.com/korczis/sonic-playground/commit/bf3fad5a086771efd2fe6994b1ccb0fe82aa6977"
-    },
-    {
-     "at": "2026-11-12T18:14:47Z",
-     "message": "feat(i18n): the whole site bilingual, English at the root and Czech under /cs/ (ADR 0006)",
-     "url": "https://github.com/korczis/sonic-playground/commit/dc5f7f479821cabafc4af8096dfe4997a3a908de"
-    },
-    {
-     "at": "2026-11-12T16:52:22Z",
-     "message": "Merge branch 'feature/adr-acceptance': the owner accepts ADRs 0001-0005",
-     "url": "https://github.com/korczis/sonic-playground/commit/a621e9584cf32d0119f884269e1405be5062d3c6"
-    },
-    {
-     "at": "2026-11-12T16:49:10Z",
-     "message": "docs(adr): the owner accepts ADRs 0001-0005",
-     "url": "https://github.com/korczis/sonic-playground/commit/ef284caccbf2da95db57a726684bd7b39d5f424a"
-    },
-    {
-     "at": "2026-11-12T16:43:56Z",
-     "message": "Merge branch 'feature/landing-promo': a landing page made to be shared",
-     "url": "https://github.com/korczis/sonic-playground/commit/b7ee68458c651d7a8c0baa7f3c24f2acc14e7d9f"
-    },
-    {
-     "at": "2026-11-12T16:42:10Z",
-     "message": "feat(home): a landing page made to be shared",
-     "url": "https://github.com/korczis/sonic-playground/commit/915cb3c7025cbd684e4a7464f5a03f3e68328429"
-    },
-    {
-     "at": "2026-11-12T16:17:26Z",
-     "message": "Merge branch 'feature/owner-decisions': the owner's answers of 2026-11-12",
-     "url": "https://github.com/korczis/sonic-playground/commit/96ed5c5a42f880db7368194e6049a0c939e540c5"
-    },
-    {
-     "at": "2026-11-12T16:15:03Z",
-     "message": "docs(decisions): wrap one line of the owner's answers",
-     "url": "https://github.com/korczis/sonic-playground/commit/8f90775473b46ac13ff5ed1fc6cce92d6c0af4d0"
-    },
-    {
-     "at": "2026-11-12T16:14:24Z",
-     "message": "docs(decisions): the owner's answers of 2026-11-12, recorded verbatim",
-     "url": "https://github.com/korczis/sonic-playground/commit/26d920c80a9da9b68194b42794702665809d095d"
-    },
-    {
-     "at": "2026-11-12T12:42:24Z",
-     "message": "Merge branch 'feature/queue-drag': drag to reorder the queue",
-     "url": "https://github.com/korczis/sonic-playground/commit/d9517a9c0bdf9f025be291b82d9b596078385909"
-    },
-    {
-     "at": "2026-11-12T12:31:28Z",
-     "message": "feat(player): drag to reorder the queue",
-     "url": "https://github.com/korczis/sonic-playground/commit/50c202d8b2110c988894fbbc7805a6f5e7aef777"
-    },
-    {
-     "at": "2026-11-12T12:23:23Z",
-     "message": "Merge branch 'feature/skill-evidence': the CI gate model, recorded skill evidence, ASCII file names",
-     "url": "https://github.com/korczis/sonic-playground/commit/160173ab84c5c25dacdb065c25d18ebd045d9c24"
-    },
-    {
-     "at": "2026-11-12T12:11:55Z",
-     "message": "fix(content): ASCII review file names, enforced",
-     "url": "https://github.com/korczis/sonic-playground/commit/46521b845bc74b94e9534a62d355166ef0f614d2"
-    },
-    {
-     "at": "2026-11-12T12:04:07Z",
-     "message": "build(ci): skill changes select their gates; the cases' run recorded as evidence",
-     "url": "https://github.com/korczis/sonic-playground/commit/791ab79d371991e1d122360da8094ff006cc7537"
-    },
-    {
-     "at": "2026-11-12T11:56:53Z",
-     "message": "build(ci): the CI gate model and a case runner that reports what ran",
-     "url": "https://github.com/korczis/sonic-playground/commit/d8662501ae7e5ca38e7e3469056d44edc729e23f"
-    }
-   ],
-   "languages": [
-    {
-     "name": "Python",
-     "share": 39
-    },
-    {
-     "name": "JavaScript",
-     "share": 30.1
-    },
-    {
-     "name": "HTML",
-     "share": 25.9
-    },
-    {
-     "name": "Shell",
-     "share": 3.6
-    },
-    {
-     "name": "CSS",
-     "share": 1.4
-    }
-   ],
-   "readme": "A hand-picked music journal: one review per track, explored by genre, feeling and mood, played in a bottom-bar player that keeps going while you browse. Live at https://korczis.github.io/sonic-playground/.",
-   "topics": [],
-   "hosts": {
-    "github": "https://github.com/korczis/sonic-playground"
-   },
-   "site": "https://korczis.github.io/sonic-playground/",
-   "curated": true,
-   "stars": 0
-  },
-  {
-   "name": "korczis.github.io",
-   "period": 12,
-   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-   "category": "ai",
-   "language": "JavaScript",
-   "created_at": "2024-12-24T16:48:15Z",
-   "last_commit": "2026-11-12T17:29:04Z",
-   "last_message": "ci: bump actions/checkout (#6)",
-   "commits": [
-    {
-     "at": "2026-11-12T17:29:04Z",
-     "message": "ci: bump actions/checkout (#6)",
-     "url": "https://github.com/korczis/korczis.github.io/commit/bc4b15a063486b4eefcee98c73f124f907411e6e"
-    },
-    {
-     "at": "2026-11-12T16:16:22Z",
-     "message": "feat(a11y): every visual has a keyboard twin, a list of real links",
-     "url": "https://github.com/korczis/korczis.github.io/commit/db9fb4c4e0012c4360ef2e0d25402b57b1749d93"
-    },
-    {
-     "at": "2026-11-12T15:23:02Z",
-     "message": "feat(viz): tag pages carry visuals, declared in data",
-     "url": "https://github.com/korczis/korczis.github.io/commit/a5fdcf9cbe6c10beb4c67565e4085ac4c3f722d5"
-    },
-    {
-     "at": "2026-11-12T12:39:45Z",
-     "message": "feat(viz): the skills sunburst on the stack page, the ecosystem graph on projects",
-     "url": "https://github.com/korczis/korczis.github.io/commit/c6ac1ca75d86b33aac9ac68bba5ed88628e3be0f"
-    },
-    {
-     "at": "2026-11-12T12:32:28Z",
-     "message": "feat(viz): a concept atlas, a lit galaxy arm and a pulse of four years",
-     "url": "https://github.com/korczis/korczis.github.io/commit/bf10bc06b854a575d563e078b62050ba7a5b0bf7"
-    },
-    {
-     "at": "2026-11-12T11:52:35Z",
-     "message": "feat(viz): every work page carries a live pulse of its commits",
-     "url": "https://github.com/korczis/korczis.github.io/commit/873e6a3138e424eddd0ede890b77552b44b45d97"
-    },
-    {
-     "at": "2026-11-12T11:27:35Z",
-     "message": "feat(viz): a live pulse of public GitHub activity on the home page",
-     "url": "https://github.com/korczis/korczis.github.io/commit/721fc79a6097db5b1f69e1e37f70b329179bdeac"
-    },
-    {
-     "at": "2026-11-12T09:04:13Z",
-     "message": "feat(viz): a galaxy of work, everything clickable, data refreshed every six hours",
-     "url": "https://github.com/korczis/korczis.github.io/commit/f8835ac3705242af61ba2e52520951883b99f78f"
-    },
-    {
-     "at": "2026-11-12T05:56:50Z",
-     "message": "feat(tags): the tag index and every tag page carry an article",
-     "url": "https://github.com/korczis/korczis.github.io/commit/91b2dfccc24ee8b4602721cb33376477ac7253c4"
-    },
-    {
-     "at": "2026-11-12T05:43:17Z",
-     "message": "feat(content): every page is an educational, linked article with a sourced glossary",
-     "url": "https://github.com/korczis/korczis.github.io/commit/c012897c44bf6c5e1d4092ffd0da0035821204ff"
-    },
-    {
-     "at": "2026-11-12T05:15:07Z",
-     "message": "feat(viz): art visuals in D3, composed from front matter",
-     "url": "https://github.com/korczis/korczis.github.io/commit/fac4434b5010b585167006e94fb782d1a41b1f65"
-    },
-    {
-     "at": "2026-11-12T05:10:16Z",
-     "message": "chore(og): regenerate Czech work previews and site.json for the UTC dates",
-     "url": "https://github.com/korczis/korczis.github.io/commit/17f4dbfc02fbe040abcbf18418acbfd93efa7fd9"
-    },
-    {
-     "at": "2026-11-12T05:09:40Z",
-     "message": "fix(work): Czech dates are UTC and locale-free, so generated pages match in CI",
-     "url": "https://github.com/korczis/korczis.github.io/commit/b248c5164037d18411081c27b7932d25ac94bea5"
-    },
-    {
-     "at": "2026-11-12T05:07:27Z",
-     "message": "feat(i18n): every text in English and Czech, tags, hreflang, language switch",
-     "url": "https://github.com/korczis/korczis.github.io/commit/78189666712a0504f2dbb90040779f1cdbf999a3"
-    },
-    {
-     "at": "2026-11-12T04:39:46Z",
-     "message": "feat(landing): the last 12 months, derived from recent commits, link every work page",
-     "url": "https://github.com/korczis/korczis.github.io/commit/e0104a38ee144c66c028d9a61cb9305a2246afe6"
-    },
-    {
-     "at": "2026-11-12T04:15:21Z",
-     "message": "feat(work): a page per project of the last 12, 24 and 48 months",
-     "url": "https://github.com/korczis/korczis.github.io/commit/213ef86696b29a45819ea82a9048284c2fba5641"
-    },
-    {
-     "at": "2026-11-12T04:00:48Z",
-     "message": "build(deps-dev): bump the site group across 1 directory with 2 updates (#4)",
-     "url": "https://github.com/korczis/korczis.github.io/commit/857215c9db53bee8985634f37bc6513e0784be1e"
-    },
-    {
-     "at": "2026-11-12T04:00:45Z",
-     "message": "ci: bump the actions group across 1 directory with 7 updates (#2)",
-     "url": "https://github.com/korczis/korczis.github.io/commit/7eea247d4663db08ca1a914c42f85c10e93e7845"
-    },
-    {
-     "at": "2026-11-12T03:58:42Z",
-     "message": "feat(automation): front-matter contract, site.json, weekly self-refresh",
-     "url": "https://github.com/korczis/korczis.github.io/commit/00fc448ae208b0f4960de6ab2cb3de8b3a0eb877"
-    },
-    {
-     "at": "2026-11-12T03:55:56Z",
-     "message": "feat(hub): every public repository, about and CV, skills, skillset, 11 categories",
-     "url": "https://github.com/korczis/korczis.github.io/commit/736cc62fcda81d20586b949d3b278c2397e3f972"
-    },
-    {
-     "at": "2026-11-12T03:16:39Z",
-     "message": "build(deps): keep playwright-core on the locally cached Chromium",
-     "url": "https://github.com/korczis/korczis.github.io/commit/987c3b00da38e422e299f3161a7ff9c54a5357ff"
-    },
-    {
-     "at": "2026-11-12T02:53:49Z",
-     "message": "fix(gates): count only fetched resources as third-party; verify before every push to master",
-     "url": "https://github.com/korczis/korczis.github.io/commit/8438a0ac10fe7de5c7cff8075ed41c2704357342"
-    },
-    {
-     "at": "2026-11-12T02:52:43Z",
-     "message": "chore(repo): Dependabot, rel=me, documented repository settings",
-     "url": "https://github.com/korczis/korczis.github.io/commit/a1df263e7705af04b3984da596bcc663d9d45cf1"
-    },
-    {
-     "at": "2026-11-12T02:31:05Z",
-     "message": "feat(ui): timeline and command palette",
-     "url": "https://github.com/korczis/korczis.github.io/commit/1bc33f689fb3976b0dedef7a65e8c9724aeaea2f"
-    },
-    {
-     "at": "2026-11-12T02:19:11Z",
-     "message": "feat(catalogue): project detail drawer, table view, interaction tests",
-     "url": "https://github.com/korczis/korczis.github.io/commit/0e06eb2e55c4a028eeaf1ed1291bb2e55be51cf1"
-    },
-    {
-     "at": "2026-11-12T02:08:49Z",
-     "message": "feat(ui): Flowbite Pro application shell, categories, dashboard pages",
-     "url": "https://github.com/korczis/korczis.github.io/commit/810b06599d107aeedf3c668c4d742f33bb823556"
-    },
-    {
-     "at": "2026-11-12T01:58:50Z",
-     "message": "fix(audit): project sites on the same origin are other repositories, checked by check-live",
-     "url": "https://github.com/korczis/korczis.github.io/commit/aa69689d5456924e98148dde0945e6b71d3b5e9b"
-    },
-    {
-     "at": "2026-11-12T01:51:28Z",
-     "message": "ci(pages): run on the dedicated lundra runner when PAGES_RUNNER is set (ADR 0002)",
-     "url": "https://github.com/korczis/korczis.github.io/commit/9f353fac12a36e55c7f8c3d61bd29a23996890bc"
-    },
-    {
-     "at": "2026-11-12T01:45:59Z",
-     "message": "fix(ui): graph drew nothing, mobile overflow, catalogue layout shift",
-     "url": "https://github.com/korczis/korczis.github.io/commit/39763dd56712de8ad4cf9f3828656148285a2143"
-    },
-    {
-     "at": "2026-11-12T01:36:07Z",
-     "message": "feat(seo): derive titles, Open Graph, Twitter, JSON-LD and OG images from front matter",
-     "url": "https://github.com/korczis/korczis.github.io/commit/885b8863910b091a046089a87734d959bb9d7cf6"
-    }
-   ],
-   "languages": [
-    {
-     "name": "JavaScript",
-     "share": 52.4
-    },
-    {
-     "name": "HTML",
-     "share": 43.9
-    },
-    {
-     "name": "Shell",
-     "share": 2
-    },
-    {
-     "name": "CSS",
-     "share": 1.7
-    }
-   ],
-   "readme": "The personal hub of Tomas Korcak (korczis). It covers who I am, the projects I build with their live sites, the stack behind them, and Majordomus, which supervises the work.",
-   "topics": [
-    "accessibility",
-    "ai-agents",
-    "alpinejs",
-    "chartjs",
-    "cytoscape",
-    "echarts",
-    "flowbite",
-    "github-pages",
-    "majordomus",
-    "p5js",
-    "personal-website",
-    "portfolio",
-    "tailwindcss",
-    "zola"
-   ],
-   "hosts": {
-    "github": "https://github.com/korczis/korczis.github.io"
-   },
-   "site": null,
-   "curated": false,
-   "stars": 0
   },
   {
    "name": "vomaste.cz",

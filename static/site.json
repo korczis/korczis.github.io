@@ -11,8 +11,8 @@
  },
  "front_matter_schema": "https://korczis.github.io/schemas/front-matter.schema.json",
  "data_as_of": {
-  "snapshot": "2026-11-14T01:13:07Z",
-  "index": "2026-11-14T01:09:08Z"
+  "snapshot": "2026-11-14T02:27:37Z",
+  "index": "2026-11-14T02:42:55Z"
  },
  "pages": [
   {
@@ -1125,12 +1125,12 @@
    "keywords": [
     "nedávná práce Tomáše Korčáka",
     "korczis",
+    "sonic-playground",
+    "korczis.github.io",
     "oscilla",
     "algoglyph",
     "kompendium-epistemicke-anihilace",
     "prismatic-majordomus",
-    "sonic-playground",
-    "korczis.github.io",
     "vomaste.cz",
     "majordomus-reel"
    ]
@@ -1414,7 +1414,7 @@
    "url": "https://korczis.github.io/cs/work/korczis-github-io/",
    "lang": "cs",
    "title": "korczis.github.io · Tomas Korcak",
-   "description": "korczis.github.io: projekt z kategorie Inženýrství AI, hlavní jazyk JavaScript, poslední commit 12. listopadu 2026.",
+   "description": "korczis.github.io: projekt z kategorie Inženýrství AI, hlavní jazyk JavaScript, poslední commit 14. listopadu 2026.",
    "type": "project",
    "category": null,
    "og_image": "https://korczis.github.io/og/cs-work-korczis-github-io.png",
@@ -2856,12 +2856,12 @@
    "keywords": [
     "Tomas Korcak recent work",
     "korczis",
+    "sonic-playground",
+    "korczis.github.io",
     "oscilla",
     "algoglyph",
     "kompendium-epistemicke-anihilace",
     "prismatic-majordomus",
-    "sonic-playground",
-    "korczis.github.io",
     "vomaste.cz",
     "majordomus-reel"
    ]
@@ -3809,6 +3809,28 @@
  ],
  "repositories": [
   {
+   "name": "korczis.github.io",
+   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+   "language": "JavaScript",
+   "category": "ai",
+   "github": "https://github.com/korczis/korczis.github.io",
+   "gitlab": null,
+   "site": null,
+   "created": "2024-12-24T16:48:15Z",
+   "active": "2026-11-14T02:27:07Z"
+  },
+  {
+   "name": "sonic-playground",
+   "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+   "language": "Python",
+   "category": "media",
+   "github": "https://github.com/korczis/sonic-playground",
+   "gitlab": null,
+   "site": "https://korczis.github.io/sonic-playground/",
+   "created": "2026-11-12T00:48:36Z",
+   "active": "2026-11-14T02:22:57Z"
+  },
+  {
    "name": "algoglyph",
    "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
    "language": "TypeScript",
@@ -3851,28 +3873,6 @@
    "site": "https://korczis.github.io/prismatic-majordomus/",
    "created": "2026-09-03T20:24:57Z",
    "active": "2026-11-13T04:00:28Z"
-  },
-  {
-   "name": "sonic-playground",
-   "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-   "language": "Python",
-   "category": "media",
-   "github": "https://github.com/korczis/sonic-playground",
-   "gitlab": null,
-   "site": "https://korczis.github.io/sonic-playground/",
-   "created": "2026-11-12T00:48:36Z",
-   "active": "2026-11-13T00:23:54Z"
-  },
-  {
-   "name": "korczis.github.io",
-   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-   "language": "JavaScript",
-   "category": "ai",
-   "github": "https://github.com/korczis/korczis.github.io",
-   "gitlab": null,
-   "site": null,
-   "created": "2024-12-24T16:48:15Z",
-   "active": "2026-11-12T17:29:06Z"
   },
   {
    "name": "catharsis-as-a-service",
@@ -6136,9 +6136,9 @@
   "merged": 516,
   "own": 211,
   "forks": 250,
-  "mirrors": 47,
-  "empty": 3,
+  "mirrors": 33,
+  "empty": 17,
   "hidden": 5,
-  "mirrors_measured": 32
+  "mirrors_measured": 18
  }
 }
