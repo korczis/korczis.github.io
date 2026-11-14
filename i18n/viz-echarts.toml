@@ -142,3 +142,56 @@ cs = "{n} repozitářů založených v těchto letech"
 [js_languages_expand]
 en = "Click to show each language on its own"
 cs = "Kliknutím zobrazíte každý jazyk zvlášť"
+
+# --- skillset.js: the sunburst with its own drill-down -----------------------------------------
+[js_skillset_path]
+en = "Drill-down path"
+cs = "Cesta zanořením"
+
+[js_skillset_all]
+en = "All categories"
+cs = "Všechny kategorie"
+
+[js_skillset_drill]
+en = "Click to show its parts"
+cs = "Kliknutím zobrazíte jeho části"
+
+[js_skillset_window]
+en = "Repositories counted"
+cs = "Započtené repozitáře"
+
+[js_skillset_window_recent]
+en = "The {n} most recently active"
+cs = "{n} naposledy aktivních"
+
+[js_skillset_window_months__one]
+en = "Active in the last month"
+cs = "Aktivní za poslední měsíc"
+
+[js_skillset_window_months__few]
+en = "Active in the last {n} months"
+cs = "Aktivní za poslední {n} měsíce"
+
+[js_skillset_window_months__other]
+en = "Active in the last {n} months"
+cs = "Aktivní za posledních {n} měsíců"
+
+[js_skillset_window_all]
+en = "Every original repository"
+cs = "Všechny původní repozitáře"
+
+[js_skillset_depth]
+en = "Rings"
+cs = "Počet prstenců"
+
+[js_skillset_unspecified__one]
+en = "{n} without a detected language"
+cs = "{n} bez rozpoznaného jazyka"
+
+[js_skillset_unspecified__few]
+en = "{n} without a detected language"
+cs = "{n} bez rozpoznaného jazyka"
+
+[js_skillset_unspecified__other]
+en = "{n} without a detected language"
+cs = "{n} bez rozpoznaného jazyka"
