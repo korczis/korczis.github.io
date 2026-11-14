@@ -1,20 +1,20 @@
 #!/usr/bin/env node
-// Derives data/index.json: every public repository of korczis on GitHub and GitLab, with
-// authorship measured from contributors, hosts merged by name, and a category inferred from the
-// rules in data/projects.toml. Only original work is listed; forks and mirrors (repositories
-// where someone else wrote most of the commits) are counted, never shown as the owner's work.
+// Derives data/index.json: every public repository of the owner (zola.toml [extra]) on GitHub and
+// GitLab, with authorship measured from contributors, hosts merged by name, and a category inferred
+// from the rules in data/projects.toml. Only original work is listed; forks and mirrors
+// (repositories where someone else wrote most of the commits) are counted, never shown as the
+// owner's work. A contributor list that cannot be read keeps the last measurement.
 //
 // usage: npm run index                                  (needs the authenticated CLIs `gh` and `glab`)
 //        node scripts/fetch-index.mjs --derive [--check] re-apply the rules to the stored index offline
 //        node scripts/fetch-index.mjs --probe            re-check the stored sites
 import { execFile } from 'node:child_process';
-import { GitLabBudgetError, gitlabClient } from './lib/gitlab.mjs';
-import { inferCategory } from './lib/repos.mjs';
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
-import { dirname, join } from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { join } from 'node:path';
 import { promisify } from 'node:util';
-import { parse } from 'smol-toml';
+import { ROOT, identity, pool, readToml } from './lib/derive.mjs';
+import { GitLabBudgetError, gitlabClient } from './lib/gitlab.mjs';
+import { droppedSince, inferCategory, measureShare, ownerMatcher, paginate, primaryLanguage } from './lib/repos.mjs';
 
 const run = promisify(execFile);
 // Only the derivation can be checked offline; refuse before anything reaches the network.
@@ -22,12 +22,11 @@ if (process.argv.includes('--check') && !process.argv.includes('--derive')) {
   console.error('✗ --check needs --derive (the measurement itself is never checked offline)');
   process.exit(2);
 }
-const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const LOGIN = 'korczis';
-const OWNER_NAME = /korc(?:z|ak)/i; // commit author names: "Tomas Korcak", "korczis"
-const POOL = 8;
+const me = identity();
+const isOwner = ownerMatcher(me);
+const CONTRIBUTOR_PAGES = 10; // at most 1000 contributors per repository: the share is of those
 
-const catalogue = parse(readFileSync(join(ROOT, 'data/projects.toml'), 'utf8'));
+const catalogue = readToml('data/projects.toml');
 const curated = new Set(catalogue.projects.map((p) => p.repo.toLowerCase()));
 
 async function gh(path) {
@@ -37,31 +36,12 @@ async function gh(path) {
 
 // GitLab through the shared client (scripts/lib/gitlab.mjs): glab locally, REST in CI, one time
 // budget so a slow or rate-limited GitLab degrades the refresh instead of hanging it.
-const gitlab = gitlabClient({ budgetMs: Number(process.env.GITLAB_BUDGET_MS) || 15 * 60 * 1000 });
-
-async function pool(items, worker, size = POOL) {
-  const out = new Array(items.length);
-  let next = 0;
-  await Promise.all(Array.from({ length: size }, async () => {
-    while (next < items.length) {
-      const index = next++;
-      out[index] = await worker(items[index]);
-    }
-  }));
-  return out;
-}
-
-// Share of the listed commits written by the owner: 1 = all, 0 = none, null = no history.
-function ownerShare(contributors, isOwner) {
-  const total = contributors.reduce((sum, c) => sum + c.count, 0);
-  if (!total) return null;
-  return contributors.filter(isOwner).reduce((sum, c) => sum + c.count, 0) / total;
-}
+const gitlab = gitlabClient();
 
 // A description that says it is someone else's code marks a mirror even when the copy's own
 // history was squashed into the owner's commits (osmocom-bb: "Mirror of git://...").
-// Not when the copy is of the owner's own data (gists-search: "a mirror of korczis's gists").
-const MIRROR = /\b(mirror of|mirrored from|cloned from|just cloned|leaked|repository from|fork of|copy of|import of)\b(?!\s+(?:korczis|my)\b)/i;
+// Not when the copy is of the owner's own data (gists-search: "a mirror of <login>'s gists").
+const MIRROR = new RegExp(`\\b(mirror of|mirrored from|cloned from|just cloned|leaked|repository from|fork of|copy of|import of)\\b(?!\\s+(?:${[me.github, me.gitlab, 'my'].join('|')})\\b)`, 'i');
 const curatedCategory = new Map(catalogue.projects.map((p) => [p.repo.toLowerCase(), p.category]));
 
 // Curated projects keep their curated category; every other repository is scored against the
@@ -70,34 +50,31 @@ function infer(repo) {
   return curatedCategory.get(repo.name.toLowerCase()) ?? inferCategory(repo, catalogue.categories, catalogue.inference).category;
 }
 
-async function githubRepos() {
-  const pages = [];
-  for (let page = 1; ; page += 1) {
-    const batch = await gh(`users/${LOGIN}/repos?type=owner&per_page=100&page=${page}`);
-    pages.push(...batch);
-    if (batch.length < 100) break;
-  }
-  return pool(pages.filter((r) => !r.private), async (r) => {
-    let share = null;
+// The last measurement of every repository the stored index listed: what an unreadable
+// contributor list falls back to.
+const lastShare = (stored, host) => new Map((stored?.all_repos ?? []).filter((r) => r.hosts?.[host]).map((r) => [r.name.toLowerCase(), r]));
+
+async function githubRepos(stored) {
+  const known = lastShare(stored, 'github');
+  const pages = await paginate((page) => gh(`users/${me.github}/repos?type=owner&per_page=100&page=${page}`), { maxPages: 50 });
+  let kept = 0;
+  const list = await pool(pages.filter((r) => !r.private), async (r) => {
+    let measured = { share: null, state: 'measured' };
     if (!r.fork) {
-      try {
-        const list = (await gh(`repos/${LOGIN}/${r.name}/contributors?per_page=10&anon=1`)) ?? [];
-        share = ownerShare(
-          list.map((c) => ({ login: c.login, name: c.name, count: c.contributions })),
-          (c) => c.login === LOGIN || OWNER_NAME.test(c.name ?? ''),
-        );
-      } catch (error) {
-        // A spent budget ends the whole GitLab reading; any other failure is this project's alone.
-        if (error instanceof GitLabBudgetError) throw error;
-        share = null;
-      }
+      measured = await measureShare({
+        contributors: async () => (await paginate((page) => gh(`repos/${me.github}/${r.name}/contributors?per_page=100&anon=1&page=${page}`), { maxPages: CONTRIBUTOR_PAGES }))
+          .map((c) => ({ login: c.login, name: c.name, count: c.contributions })),
+        isOwner,
+        previous: known.get(r.name.toLowerCase())?.share,
+      });
+      if (measured.state === 'kept') kept += 1;
     }
     return {
       name: r.name,
       host: 'github',
       url: r.html_url,
       homepage: r.homepage || null,
-      pages: r.has_pages ? `https://${LOGIN}.github.io/${r.name}/` : null,
+      pages: r.has_pages ? `https://${me.github}.github.io/${r.name}/` : null,
       description: r.description,
       language: r.language,
       topics: r.topics ?? [],
@@ -106,37 +83,49 @@ async function githubRepos() {
       pushed_at: r.pushed_at,
       archived: r.archived,
       fork: r.fork,
-      share,
+      share: measured.share,
+      state: measured.state,
     };
   });
+  console.error(`GitHub: ${list.length} public repositories, ${kept} kept their last measurement`);
+  return list;
 }
 
 // The owner's share of a project's commits changes only with new commits: a project whose last
-// activity is the one already measured keeps its stored share, and only active projects are asked
-// for their contributors again. That keeps an anonymous refresh within GitLab's rate limits.
+// activity is the one already measured keeps its stored share (and language), and only active
+// projects are asked again. That keeps an anonymous refresh within GitLab's rate limits. A
+// project's primary language comes from /projects/:id/languages, asked only for original work.
 async function gitlabRepos(stored) {
-  const known = new Map((stored?.all_repos ?? []).filter((r) => r.hosts?.gitlab).map((r) => [r.name.toLowerCase(), r]));
+  const known = lastShare(stored, 'gitlab');
   let reused = 0;
-  const all = [];
-  for (let page = 1; ; page += 1) {
-    const batch = await gitlab(`/users/${LOGIN}/projects?visibility=public&per_page=100&page=${page}`);
+  let kept = 0;
+  const all = (await paginate((page) => gitlab(`/users/${me.gitlab}/projects?visibility=public&per_page=100&page=${page}`), { maxPages: 50 }))
     // Authenticated, the API also returns private projects: only public ones are listed.
-    all.push(...batch.filter((p) => p.visibility === 'public'));
-    if (batch.length < 100) break;
-  }
+    .filter((p) => p.visibility === 'public');
   return pool(all, async (p) => {
-    let share = null;
     const before = known.get(p.path.toLowerCase());
-    if (!p.forked_from_project && before && before.pushed_at === p.last_activity_at && before.share !== null && before.share !== undefined) {
-      share = before.share;
+    const unchanged = before && before.pushed_at === p.last_activity_at;
+    let measured = { share: null, state: 'measured' };
+    if (!p.forked_from_project && unchanged && before.share !== null && before.share !== undefined) {
+      measured = { share: before.share, state: 'measured' };
       reused += 1;
     } else if (!p.forked_from_project) {
-      try {
-        const list = await gitlab(`/projects/${p.id}/repository/contributors?per_page=20`);
-        share = ownerShare(list.map((c) => ({ name: c.name, count: c.commits })), (c) => OWNER_NAME.test(c.name ?? ''));
-      } catch {
-        share = null;
-      }
+      measured = await measureShare({
+        contributors: async () => (await paginate((page) => gitlab(`/projects/${p.id}/repository/contributors?per_page=100&page=${page}`), { maxPages: CONTRIBUTOR_PAGES }))
+          .map((c) => ({ name: c.name, count: c.commits })),
+        isOwner,
+        previous: before?.share,
+        // A spent budget ends the whole GitLab reading; any other failure is this project's alone.
+        rethrow: (error) => error instanceof GitLabBudgetError,
+      });
+      if (measured.state === 'kept') kept += 1;
+    }
+    let language = unchanged && !before.hosts?.github ? before.language ?? null : null;
+    if (!language && !p.forked_from_project && measured.share !== null && measured.share >= 0.5) {
+      language = await gitlab(`/projects/${p.id}/languages`).then(primaryLanguage, (error) => {
+        if (error instanceof GitLabBudgetError) throw error;
+        return before?.language ?? null;
+      });
     }
     return {
       name: p.path,
@@ -145,17 +134,18 @@ async function gitlabRepos(stored) {
       homepage: null,
       pages: null,
       description: p.description ? p.description.split('\n')[0].trim() : null,
-      language: null,
+      language,
       topics: p.topics ?? p.tag_list ?? [],
       stars: p.star_count,
       created_at: p.created_at,
       pushed_at: p.last_activity_at,
       archived: p.archived,
       fork: Boolean(p.forked_from_project),
-      share,
+      share: measured.share,
+      state: measured.state,
     };
   }, 4).then((list) => {
-    console.error(`GitLab: ${list.length} public projects, ${reused} shares reused from the last measurement`);
+    console.error(`GitLab: ${list.length} public projects, ${reused} shares reused from the last measurement, ${kept} kept after an error`);
     return list;
   });
 }
@@ -166,13 +156,13 @@ function storedGitlab(stored) {
   return (stored?.all_repos ?? []).filter((r) => r.hosts?.gitlab).map((r) => ({
     name: r.name, host: 'gitlab', url: r.hosts.gitlab, homepage: null, pages: null, description: r.description,
     language: r.hosts.github ? null : r.language, topics: r.topics ?? [], stars: r.stars, created_at: r.created_at,
-    pushed_at: r.pushed_at, archived: r.archived, fork: false, share: r.share,
+    pushed_at: r.pushed_at, archived: r.archived, fork: false, share: r.share, state: 'kept',
   }));
 }
 
 // Everything below the fetch is derivation: it runs again with --derive on the stored index, so a
 // change to the category rules or the catalogue needs no network.
-function derive(allRepos, fetchedCounts, generatedAt) {
+function derive(allRepos, fetchedCounts, generatedAt, dropped) {
   // Owner-curated lists apply here, so they take effect with --derive and no network.
   const mirrorList = new Set((catalogue.index?.mirrors ?? []).map((n) => n.toLowerCase()));
   const hiddenList = new Set((catalogue.index?.hidden ?? []).map((n) => n.toLowerCase()));
@@ -256,6 +246,8 @@ function derive(allRepos, fetchedCounts, generatedAt) {
     generated_at: generatedAt,
     rule: 'original = the owner wrote at least half of the listed commits; forks and mirrors are counted, not listed',
     counts,
+    // Measured at the last fetch: repositories that were original before and are not now.
+    ...(dropped ? { dropped } : {}),
     all_repos: allRepos,
     by_category: byCategory,
     categories: categoryDetail,
@@ -272,7 +264,7 @@ function derive(allRepos, fetchedCounts, generatedAt) {
 async function probeSites(repos) {
   await pool(repos, async (r) => {
     if (!r.site) return;
-    if (r.site.replace(/\/$/, '') === `https://${LOGIN}.github.io/${LOGIN}.github.io`) { r.site = null; return; }
+    if (r.site.replace(/\/$/, '') === `https://${me.github}.github.io/${me.github}.github.io`) { r.site = null; return; }
     try {
       const response = await fetch(r.site, { redirect: 'follow', signal: AbortSignal.timeout(15000) });
       if (!response.ok) r.site = null;
@@ -288,13 +280,13 @@ if (process.argv.includes('--probe')) {
   const stored = JSON.parse(readFileSync(TARGET, 'utf8'));
   const all = stored.all_repos ?? stored.repos;
   await probeSites(all);
-  index = derive(all, stored.counts, stored.generated_at);
+  index = derive(all, stored.counts, stored.generated_at, stored.dropped);
 } else if (process.argv.includes('--derive')) {
   const stored = JSON.parse(readFileSync(TARGET, 'utf8'));
-  index = derive(stored.all_repos ?? stored.repos, stored.counts, stored.generated_at);
+  index = derive(stored.all_repos ?? stored.repos, stored.counts, stored.generated_at, stored.dropped);
 } else {
   const previous = existsSync(TARGET) ? JSON.parse(readFileSync(TARGET, 'utf8')) : null;
-  const github = await githubRepos();
+  const github = await githubRepos(previous);
   let gitlabList;
   try {
     gitlabList = await gitlabRepos(previous);
@@ -312,16 +304,19 @@ if (process.argv.includes('--probe')) {
     const known = byName.get(key);
     if (known) {
       known.hosts.gitlab = r.url;
-      if (known.share === null && r.share !== null) known.share = r.share;
+      if (known.share === null && r.share !== null) { known.share = r.share; known.state = r.state; }
+      if (!known.language && r.language) known.language = r.language;
     } else {
       byName.set(key, { ...r, hosts: { gitlab: r.url } });
     }
   }
 
-  const counts = { github: github.length, gitlab: gitlabList.length, merged: byName.size, own: 0, forks: 0, mirrors: 0, empty: 0 };
+  const counts = { github: github.length, gitlab: gitlabList.length, merged: byName.size, own: 0, forks: 0, mirrors: 0, empty: 0, unmeasured: 0 };
   const repos = [];
   for (const r of byName.values()) {
     if (r.fork) { counts.forks += 1; continue; }
+    // Unreadable and never measured: counted, not listed, and not called empty.
+    if (r.share === null && r.state === 'error') { counts.unmeasured += 1; continue; }
     if (r.share === null) { counts.empty += 1; continue; }
     if (r.share < 0.5) { counts.mirrors += 1; continue; }
     counts.own += 1;
@@ -340,7 +335,9 @@ if (process.argv.includes('--probe')) {
     });
   }
   await probeSites(repos);
-  index = derive(repos, counts, new Date().toISOString().replace(/\.\d{3}Z$/, 'Z'));
+  // What was the owner's work at the last measurement and is not now (check-data fails on "empty").
+  const dropped = droppedSince(previous?.all_repos ?? [], [...byName.values()]);
+  index = derive(repos, counts, new Date().toISOString().replace(/\.\d{3}Z$/, 'Z'), dropped);
 }
 
 const text = `${JSON.stringify(index, null, 1)}\n`;
@@ -357,5 +354,6 @@ if (process.argv.includes('--check')) {
 writeFileSync(TARGET, text);
 const c = index.counts;
 console.log(`data/index.json: ${c.github} GitHub + ${c.gitlab} GitLab -> ${c.merged} by name; ` +
-  `${c.own} original listed, ${c.mirrors} mirrors, ${c.forks} forks, ${c.empty} without history; ` +
+  `${c.own} original listed, ${c.mirrors} mirrors, ${c.forks} forks, ${c.empty} without history` +
+  `${c.unmeasured ? `, ${c.unmeasured} unreadable` : ''}; ` +
   `categories ${JSON.stringify(index.by_category)}`);

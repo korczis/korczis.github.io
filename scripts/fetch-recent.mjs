@@ -17,6 +17,7 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { promisify } from 'node:util';
 import { GitLabBudgetError, gitlabClient } from './lib/gitlab.mjs';
+import { identity, pool } from './lib/derive.mjs';
 
 const run = promisify(execFile);
 if (process.argv.includes('--check') && !process.argv.includes('--derive')) {
@@ -25,7 +26,7 @@ if (process.argv.includes('--check') && !process.argv.includes('--derive')) {
 }
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const TARGET = join(ROOT, 'data/recent.json');
-const LOGIN = 'korczis';
+const me = identity();
 const PERIODS = [12, 24, 48]; // months
 const COMMITS = 30; // the latest commits kept per project: the snapshot its pulse starts from
 const DAYS = Math.round((PERIODS[PERIODS.length - 1] * 365.25) / 12);
@@ -135,9 +136,9 @@ function shares(bytes) {
 
 async function github(name) {
   const [commits, langs, readme] = await Promise.all([
-    cli('gh', [`repos/${LOGIN}/${name}/commits?per_page=${COMMITS}`]),
-    cli('gh', [`repos/${LOGIN}/${name}/languages`]),
-    cli('gh', ['-H', 'Accept: application/vnd.github.raw', `repos/${LOGIN}/${name}/readme`]),
+    cli('gh', [`repos/${me.github}/${name}/commits?per_page=${COMMITS}`]),
+    cli('gh', [`repos/${me.github}/${name}/languages`]),
+    cli('gh', ['-H', 'Accept: application/vnd.github.raw', `repos/${me.github}/${name}/readme`]),
   ]);
   const list = json(commits) ?? [];
   const c = list[0];
@@ -151,9 +152,9 @@ async function github(name) {
 }
 
 // GitLab through the shared client (glab locally, REST in CI, one time budget).
-const gl = gitlabClient({ budgetMs: Number(process.env.GITLAB_BUDGET_MS) || 15 * 60 * 1000 });
+const gl = gitlabClient();
 async function gitlab(name) {
-  const id = encodeURIComponent(`${LOGIN}/${name}`);
+  const id = encodeURIComponent(`${me.gitlab}/${name}`);
   const project = await gl(`projects/${id}`);
   if (!project) return {};
   const branch = encodeURIComponent(project.default_branch ?? 'main');
@@ -193,17 +194,10 @@ async function detailOf(r) {
 
 // Candidates: anything whose host says it moved in the window; the last commit then decides.
 const candidates = index.repos.filter((r) => r.pushed_at >= cutoff);
-const POOL = 3;
-const out = [];
-let next = 0;
-await Promise.all(Array.from({ length: POOL }, async () => {
-  while (next < candidates.length) {
-    const r = candidates[next++];
-    const detail = await detailOf(r);
-    if (!detail.last_commit || detail.last_commit < cutoff) continue;
-    out.push(row(r, detail, now));
-  }
-}));
+const out = (await pool(candidates, async (r) => {
+  const detail = await detailOf(r);
+  return detail.last_commit && detail.last_commit >= cutoff ? row(r, detail, now) : null;
+}, 3)).filter(Boolean);
 
 const recent = document(out, now, candidates.length);
 writeFileSync(TARGET, text(recent));

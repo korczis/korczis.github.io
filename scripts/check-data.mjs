@@ -79,6 +79,15 @@ for (const p of catalogue.projects ?? []) {
 }
 if (index.counts?.own !== (index.repos ?? []).length) fail('data/index.json', 'counts.own does not match the listed repositories');
 
+// A repository that was original at the last measurement and has no history now lost no commits:
+// the contributor list was misread, or the owner emptied it (then it belongs on [index] hidden).
+const hiddenNames = new Set((catalogue.index?.hidden ?? []).map((n) => n.toLowerCase()));
+for (const d of index.dropped ?? []) {
+  if (d.now === 'empty' && !hiddenNames.has(d.name.toLowerCase())) {
+    fail('data/index.json', `${d.name} was original at the last measurement and is empty now; re-measure (npm run index) or add it to [index] hidden`);
+  }
+}
+
 // The category rules: none shadowed or dead, and every fixture (a repository with the category a
 // person judged right) is placed there by the rules themselves, not only by the stored index.
 for (const f of ruleFindings(categories, catalogue.inference)) fail('data/projects.toml', f);

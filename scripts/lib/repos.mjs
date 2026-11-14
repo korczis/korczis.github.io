@@ -113,3 +113,80 @@ export function ruleFindings(categories, inference) {
   }
   return findings;
 }
+
+// --- Authorship (fetch-index.mjs; ADR 0003) ---------------------------------------------------
+
+const fold = (s) => String(s ?? '').normalize('NFD').replace(/\p{M}/gu, '').toLowerCase();
+const split = (s) => fold(s).split(/[^a-z0-9]+/).filter(Boolean);
+
+// Whether a contributor is the owner, from the identity in zola.toml [extra] (never a pattern in a
+// script): the GitHub or GitLab login; a commit author name that holds a login ("korczis"); or a
+// name made only of the owner's name parts or their initials and holding the surname, in any
+// spelling, order or case ("Tomas Korcak", "Tomáš Korčák", "Korcak Tomas", "T. Korcak", "korcak").
+export function ownerMatcher({ github, gitlab, author, authorNative }) {
+  const logins = [...new Set([github, gitlab].filter(Boolean).map((l) => fold(l).replace(/[^a-z0-9]/g, '')))];
+  const people = [author, authorNative].filter(Boolean).map(split).filter((p) => p.length);
+  return (c) => {
+    if (c.login && logins.includes(fold(c.login).replace(/[^a-z0-9]/g, ''))) return true;
+    const parts = split(c.name);
+    if (!parts.length) return false;
+    if (logins.some((l) => parts.join('').includes(l))) return true;
+    return people.some((person) => parts.includes(person.at(-1))
+      && parts.every((x) => person.includes(x) || (x.length === 1 && person.some((y) => y[0] === x))));
+  };
+}
+
+// Share of the listed commits written by the owner: 1 = all, 0 = none, null = no history.
+export function ownerShare(contributors, isOwner) {
+  const total = contributors.reduce((sum, c) => sum + c.count, 0);
+  if (!total) return null;
+  return contributors.filter(isOwner).reduce((sum, c) => sum + c.count, 0) / total;
+}
+
+// Every page of a paged list: fetchPage(page) -> array (or null for none); stops at the first
+// short page, and at maxPages, so one huge repository cannot spend the whole refresh.
+export async function paginate(fetchPage, { perPage = 100, maxPages = 10 } = {}) {
+  const all = [];
+  for (let page = 1; page <= maxPages; page += 1) {
+    const batch = (await fetchPage(page, perPage)) ?? [];
+    all.push(...batch);
+    if (batch.length < perPage) break;
+  }
+  return all;
+}
+
+// The owner's share of one repository. A failure to read the contributors is not an empty
+// repository: the last measurement (from the stored index) is kept, and without one the state is
+// "error", which is counted and never listed, and never mistaken for "empty".
+//   -> { share, state: 'measured' | 'kept' | 'error' }
+export async function measureShare({ contributors, isOwner, previous = null, rethrow = () => false }) {
+  try {
+    return { share: ownerShare(await contributors(), isOwner), state: 'measured' };
+  } catch (error) {
+    if (rethrow(error)) throw error;
+    if (previous !== null && previous !== undefined) return { share: previous, state: 'kept' };
+    return { share: null, state: 'error' };
+  }
+}
+
+// The primary language of a GitLab project from /projects/:id/languages ({ Ruby: 66.7, ... }).
+export function primaryLanguage(languages) {
+  const top = Object.entries(languages ?? {}).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))[0];
+  return top ? top[0] : null;
+}
+
+// Repositories that were the owner's at the last measurement and are not now, with why. check-data
+// fails on "empty": a repository with commits does not lose them, so it is a measuring fault (or a
+// repository the owner emptied, to be put on the hidden list).
+export function droppedSince(previousOwn, records) {
+  const now = new Map(records.map((r) => [r.name.toLowerCase(), r]));
+  const out = [];
+  for (const before of previousOwn) {
+    const r = now.get(before.name.toLowerCase());
+    if (!r) out.push({ name: before.name, now: 'gone' });
+    else if (r.fork) out.push({ name: before.name, now: 'fork' });
+    else if (r.share === null && r.state !== 'error') out.push({ name: before.name, now: 'empty' });
+    else if (r.share !== null && r.share < 0.5) out.push({ name: before.name, now: 'mirror' });
+  }
+  return out;
+}
