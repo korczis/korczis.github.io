@@ -1,0 +1,395 @@
+# The public vocabulary of the experience section: sectors, capabilities, domains, roles and
+# technologies, each a key with its English and Czech words. scripts/mine-experience.mjs measures
+# the owner's private engagement sources and writes data/experience.json in these keys only, so
+# nothing but this vocabulary, rounded numbers and dates ever reaches the site (legal NDA: no
+# client, person, repository or project name). scripts/check-experience.mjs checks that every key
+# the data uses exists here.
+#
+#   [scale]         bucket floors: a measured count is published as the largest floor it reaches
+#   [inference]     how a capability is inferred from private text (score = sum over channels of
+#                   weight * log2(1 + matching items); kept when score >= threshold, score >=
+#                   relative * the engagement's best score, and at least min_items items matched);
+#                   the matched text itself is never kept
+#   [sectors.*]     generic industries a client belongs to (declared by the owner, never inferred)
+#   [domains.*]     the three areas the capabilities group into; each links to a catalogue category
+#   [capabilities.*] name, description (EN + CS), domain, the glossary term it links to, the
+#                   catalogue categories that share it, and the keywords that infer it. A keyword is
+#                   matched as whole words after lower-casing and stripping diacritics; a trailing *
+#                   matches any word that starts with it
+#   [roles.*]       what the owner did in an engagement (declared by the owner, never inferred)
+#   [technologies.*] public technology names, detected from file extensions (language), dependency
+#                   manifests (deps) or marker paths (paths); only names listed here are published
+
+[scale]
+buckets = [1, 2, 3, 5, 10, 25, 50, 100, 250, 500, 1000, 2500, 5000, 10000]
+
+[inference]
+threshold = 2.5
+relative = 0.3
+min_items = 3
+weights = { commits = 1.0, headings = 1.0, paths = 0.35 }
+# Public work (data/recent.json) is short text: its own, lower threshold.
+public_threshold = 2.0
+
+# --- Sectors -------------------------------------------------------------------------------------
+
+[sectors.financial-group]
+name = "Financial and investment group"
+name_cs = "Finanční a investiční skupina"
+
+[sectors.insurance]
+name = "Insurance group"
+name_cs = "Pojišťovací skupina"
+
+[sectors.credit-risk-data]
+name = "Credit-risk data provider"
+name_cs = "Poskytovatel dat o úvěrovém riziku"
+
+[sectors.real-estate]
+name = "Real-estate developer"
+name_cs = "Developer nemovitostí"
+
+[sectors.legal-services]
+name = "Legal services"
+name_cs = "Právní služby"
+
+[sectors.industrial]
+name = "Industrial company"
+name_cs = "Průmyslová firma"
+
+[sectors.energy]
+name = "Energy and utilities"
+name_cs = "Energetika a sítě"
+
+[sectors.public-sector]
+name = "Public sector"
+name_cs = "Veřejný sektor"
+
+# --- Domains -------------------------------------------------------------------------------------
+
+[domains.dd]
+name = "Due diligence and M&A"
+name_cs = "Due diligence a M&A"
+category = "security"
+term = "due-diligence"
+
+[domains.ai]
+name = "AI transformation"
+name_cs = "Transformace s AI"
+category = "ai"
+term = "ai-agent"
+
+[domains.data]
+name = "Data and intelligence"
+name_cs = "Data a zpravodajství"
+category = "data"
+term = "osint"
+
+# --- Capabilities --------------------------------------------------------------------------------
+
+[capabilities.due-diligence]
+name = "Due diligence"
+name_cs = "Due diligence"
+description = "Technical, data and background due diligence of a target: ownership, people, assets and red flags, each finding with its source."
+description_cs = "Technická, datová a podkladová prověrka cíle: vlastnictví, lidé, majetek a varovné signály, každé zjištění s jeho zdrojem."
+domain = "dd"
+term = "due-diligence"
+categories = ["security"]
+keywords = ["due diligence", "dd", "red flag*", "dossier*", "background check*", "proverk*", "beneficial owner*", "ubo", "kyc", "aml", "sanction*", "screening"]
+
+[capabilities.m-and-a-screening]
+name = "M&A screening"
+name_cs = "Prověrka M&A"
+description = "Screening of an acquisition or investment: the transaction's context, its parties, financing and valuation inputs."
+description_cs = "Prověrka akvizice nebo investice: souvislosti transakce, její strany, financování a podklady pro ocenění."
+domain = "dd"
+term = "mergers-and-acquisitions"
+categories = ["security"]
+keywords = ["m a", "merger*", "acquisition*", "akvizic*", "transaction*", "transakc*", "bidder*", "investor*", "valuation*", "deal", "deals", "term sheet", "buyer*", "seller*"]
+
+[capabilities.data-room]
+name = "Data room"
+name_cs = "Datová místnost"
+description = "A virtual data room: documents sorted, indexed and searchable for every party of a transaction, with views per role."
+description_cs = "Virtuální datová místnost: dokumenty roztříděné, zaindexované a prohledávatelné pro každou stranu transakce, s pohledem podle role."
+domain = "dd"
+term = "virtual-data-room"
+categories = ["security"]
+keywords = ["data room*", "dataroom*", "vdr", "virtual data room"]
+
+[capabilities.risk-scoring]
+name = "Risk scoring"
+name_cs = "Hodnocení rizik"
+description = "Scoring and ranking of risks from measured signals, so the review starts with what matters most."
+description_cs = "Bodování a řazení rizik ze změřených signálů, aby prověrka začala tím nejdůležitějším."
+domain = "dd"
+term = "risk-assessment"
+categories = ["security"]
+keywords = ["risk*", "rizik*", "scoring", "red flag*", "exposure", "rating*", "credit*"]
+
+[capabilities.market-intelligence]
+name = "Market intelligence"
+name_cs = "Tržní zpravodajství"
+description = "Comparables, prices and competitors gathered from public sources into a market picture a decision can rest on."
+description_cs = "Srovnatelné případy, ceny a konkurence sebrané z veřejných zdrojů do obrazu trhu, o který se dá opřít rozhodnutí."
+domain = "dd"
+term = "market-intelligence"
+categories = ["security"]
+keywords = ["market*", "comparator*", "comparable*", "competitor*", "pricing", "price*", "benchmark*", "konkurenc*"]
+
+[capabilities.decision-support]
+name = "Decision support"
+name_cs = "Podpora rozhodování"
+description = "Reports, dashboards and one-page briefs that turn the evidence into a decision for the people who sign it."
+description_cs = "Zprávy, přehledy a jednostránkové shrnutí, která z podkladů dělají rozhodnutí pro ty, kdo ho podepisují."
+domain = "dd"
+term = "decision-support-system"
+categories = ["security"]
+keywords = ["decision*", "dashboard*", "report*", "one pager*", "onepager*", "briefing*", "proposal*", "insight*", "recommendation*"]
+
+[capabilities.osint-investigation]
+name = "OSINT investigation"
+name_cs = "OSINT šetření"
+description = "Investigation from open sources and public registers: companies, people and their links, every claim traced to its source."
+description_cs = "Šetření z otevřených zdrojů a veřejných rejstříků: firmy, lidé a jejich vazby, každé tvrzení dohledatelné ke zdroji."
+domain = "data"
+term = "osint"
+categories = ["security"]
+keywords = ["osint", "open source intelligence", "investigation*", "intel", "footprint*", "registry", "register*", "rejstrik*", "cadastr*", "katastr*", "entity explorer"]
+
+[capabilities.insolvency-monitoring]
+name = "Insolvency monitoring"
+name_cs = "Sledování insolvencí"
+description = "Monitoring of a public insolvency register at scale: debtors, creditors' claims and every change, checked for completeness."
+description_cs = "Sledování veřejného insolvenčního rejstříku ve velkém: dlužníci, přihlášky věřitelů a každá změna, s kontrolou úplnosti."
+domain = "data"
+term = "insolvency"
+categories = ["security"]
+keywords = ["insolvenc*", "isir", "bankrupt*", "creditor*", "debtor*", "dluznik*", "veritel*"]
+
+[capabilities.entity-resolution]
+name = "Entity resolution"
+name_cs = "Ztotožnění subjektů"
+description = "Matching records that name the same company or person across sources, by identifier first and by fuzzy evidence second."
+description_cs = "Spárování záznamů, které ve více zdrojích jmenují tutéž firmu nebo osobu, nejdřív podle identifikátoru, pak podle podobnosti."
+domain = "data"
+term = "record-linkage"
+categories = ["security"]
+keywords = ["entity resolution", "record linkage", "dedup*", "fuzzy", "matching", "ico", "identifier*", "confirmed entities", "entity*"]
+
+[capabilities.knowledge-graph]
+name = "Knowledge graph"
+name_cs = "Znalostní graf"
+description = "A graph of entities and their relations, built from the evidence and queried to find the links a table hides."
+description_cs = "Graf subjektů a jejich vztahů, postavený z podkladů a dotazovaný tak, aby ukázal vazby, které tabulka skryje."
+domain = "data"
+term = "knowledge-graph"
+categories = ["security", "knowledge"]
+keywords = ["knowledge graph", "graph*", "neo4j", "sparql", "wikidata", "ontolog*", "stakeholder map*", "rdf"]
+
+[capabilities.data-integration]
+name = "Data integration"
+name_cs = "Integrace dat"
+description = "Connectors to registers and APIs, with ingestion, caching and quotas, so every source arrives in one consistent shape."
+description_cs = "Konektory na rejstříky a API, se stahováním, mezipamětí a limity, aby každý zdroj dorazil v jednom jednotném tvaru."
+domain = "data"
+term = "data-integration"
+categories = ["security", "data"]
+keywords = ["connector*", "ingest*", "etl", "provider*", "scraper*", "crawler*", "sync*", "importer*", "api client*", "feed*"]
+
+[capabilities.audit-trail]
+name = "Audit trail"
+name_cs = "Auditní stopa"
+description = "Evidence and provenance kept for every step, with gates that refuse a silent loss, so a reviewer can retrace the work."
+description_cs = "Důkazy a původ uchované ke každému kroku, s branami, které nepřipustí tichou ztrátu, aby šlo práci zpětně ověřit."
+domain = "data"
+term = "audit-trail"
+categories = ["security", "ai"]
+keywords = ["audit*", "evidence*", "provenance", "traceab*", "integrity", "compliance", "gdpr", "golden*"]
+
+[capabilities.ai-transformation]
+name = "AI transformation"
+name_cs = "Transformace s AI"
+description = "An AI transformation programme: where AI helps, the doctrine and governance it works under, and the roadmap that delivers it."
+description_cs = "Program transformace s AI: kde AI pomáhá, pravidla a řízení, pod kterými pracuje, a plán, který ji zavádí."
+domain = "ai"
+term = "ai-agent"
+categories = ["ai"]
+keywords = ["ai transformation", "transformation*", "transformac*", "aiad", "ai assisted", "roadmap*", "adoption", "playbook*"]
+
+[capabilities.llm-agents]
+name = "LLM agents"
+name_cs = "Agenti s LLM"
+description = "Agents on large language models that plan, call tools and hand their work over with proof, under one policy."
+description_cs = "Agenti na velkých jazykových modelech, kteří plánují, volají nástroje a předávají práci s důkazem, pod jednou politikou."
+domain = "ai"
+term = "ai-agent"
+categories = ["ai"]
+keywords = ["agent*", "llm*", "claude", "prompt*", "subagent*", "mcp", "anthropic", "openai", "gpt*", "copilot", "skill*"]
+
+[capabilities.document-extraction]
+name = "Document extraction"
+name_cs = "Vytěžování dokumentů"
+description = "Reading scanned and digital documents with OCR and vision models into structured, checked fields."
+description_cs = "Čtení naskenovaných i digitálních dokumentů pomocí OCR a modelů vidění do strukturovaných, ověřených polí."
+domain = "ai"
+term = "information-extraction"
+categories = ["ai"]
+keywords = ["extraction", "extract*", "ocr", "tesseract", "pdf*", "vision", "parser*", "parsing", "vytez*"]
+
+[capabilities.orchestration]
+name = "Orchestration"
+name_cs = "Orchestrace"
+description = "Orchestration of pipelines and agents: queues, workflows and schedules that run many steps reliably and in order."
+description_cs = "Orchestrace pipeline a agentů: fronty, workflow a plány, které spolehlivě a ve správném pořadí spouštějí mnoho kroků."
+domain = "ai"
+term = "orchestration"
+categories = ["ai"]
+keywords = ["orchest*", "workflow*", "pipeline*", "queue*", "scheduler*", "dag", "oban", "temporal", "multi agent"]
+
+# --- Roles ---------------------------------------------------------------------------------------
+
+[roles.architect]
+name = "Architect"
+name_cs = "Architekt"
+description = "Designed the system and its data model, and set the rules it is built and checked by."
+description_cs = "Navrhl systém a jeho datový model a stanovil pravidla, podle kterých se staví a kontroluje."
+
+[roles.lead-engineer]
+name = "Lead engineer"
+name_cs = "Vedoucí inženýr"
+description = "Led the engineering: wrote much of the code, reviewed the rest and kept it shipping."
+description_cs = "Vedl vývoj: napsal velkou část kódu, revidoval zbytek a udržel ho v provozu."
+
+[roles.ai-engineer]
+name = "AI engineer"
+name_cs = "Inženýr AI"
+description = "Built the AI parts: models, agents, prompts and the evaluations that keep them honest."
+description_cs = "Postavil části s AI: modely, agenty, prompty a vyhodnocení, která je drží poctivé."
+
+[roles.data-engineer]
+name = "Data engineer"
+name_cs = "Datový inženýr"
+description = "Built the connectors, pipelines and stores the evidence flows through."
+description_cs = "Postavil konektory, pipeline a úložiště, kterými podklady tečou."
+
+[roles.investigator]
+name = "Investigator"
+name_cs = "Analytik šetření"
+description = "Ran the investigation from open sources and wrote up the findings with their evidence."
+description_cs = "Vedl šetření z otevřených zdrojů a sepsal zjištění i s jejich důkazy."
+
+[roles.advisor]
+name = "Advisor"
+name_cs = "Poradce"
+description = "Advised on approach, risks and the technology choices, and reviewed the outcome."
+description_cs = "Radil s postupem, riziky a volbou technologií a posoudil výsledek."
+
+# --- Technologies --------------------------------------------------------------------------------
+
+[technologies.Elixir]
+extensions = ["ex", "exs", "heex"]
+deps = ["phoenix", "phoenix_live_view"]
+
+[technologies.Phoenix]
+deps = ["phoenix", "phoenix_live_view"]
+
+[technologies.Rust]
+extensions = ["rs"]
+
+[technologies.Python]
+extensions = ["py"]
+
+[technologies.TypeScript]
+extensions = ["ts", "tsx"]
+deps = ["typescript"]
+
+[technologies.JavaScript]
+extensions = ["js", "mjs", "cjs", "jsx"]
+
+[technologies.Go]
+extensions = ["go"]
+
+[technologies.Shell]
+extensions = ["sh", "bash"]
+
+[technologies.HTML]
+extensions = ["html"]
+
+[technologies.SQL]
+extensions = ["sql"]
+
+[technologies.PostgreSQL]
+deps = ["postgrex", "psycopg", "psycopg2", "psycopg2-binary", "asyncpg", "pg", "postgres", "sqlx", "tokio-postgres", "pgvector"]
+
+[technologies.SQLite]
+deps = ["sqlite3", "better-sqlite3", "rusqlite", "aiosqlite", "exqlite", "ecto_sqlite3"]
+
+[technologies.Neo4j]
+deps = ["neo4j", "neo4j-driver", "bolt_sips"]
+
+[technologies.FastAPI]
+deps = ["fastapi"]
+
+[technologies.Django]
+deps = ["django"]
+
+[technologies.React]
+deps = ["react"]
+
+[technologies.Svelte]
+deps = ["svelte", "@sveltejs/kit"]
+
+[technologies.Vue]
+deps = ["vue"]
+
+[technologies."Next.js"]
+deps = ["next"]
+
+[technologies."Tailwind CSS"]
+deps = ["tailwindcss", "@tailwindcss/cli", "@tailwindcss/vite"]
+
+[technologies."Flowbite Pro"]
+deps = ["flowbite", "flowbite-react"]
+
+[technologies."Alpine.js"]
+deps = ["alpinejs"]
+
+[technologies."Apache ECharts"]
+deps = ["echarts"]
+
+[technologies.D3]
+deps = ["d3"]
+
+[technologies.Playwright]
+deps = ["playwright", "@playwright/test", "playwright-core"]
+
+[technologies.Zola]
+paths = ["zola.toml"]
+
+[technologies.Docker]
+paths = ["Dockerfile", "docker-compose.yml", "docker-compose.yaml", "compose.yaml"]
+
+[technologies.Kubernetes]
+paths = [".kube", "k8s", "helm"]
+
+[technologies."GitHub Actions"]
+paths = [".github/workflows"]
+
+[technologies."Claude API"]
+deps = ["anthropic", "@anthropic-ai/sdk", "anthropix", "anthropic-sdk"]
+
+[technologies."OpenAI API"]
+deps = ["openai"]
+
+[technologies.Pydantic]
+deps = ["pydantic"]
+
+[technologies.Pandas]
+deps = ["pandas", "polars"]
+
+[technologies.Tesseract]
+deps = ["pytesseract", "tesseract.js"]
+
+[technologies.Majordomus]
+paths = [".ai/manifest.yaml"]

@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://korczis.github.io/schemas/experience.schema.json",
+  "title": "The owner's client engagements, measured and anonymised",
+  "description": "data/experience.json, written by scripts/mine-experience.mjs and checked by scripts/check-experience.mjs. Every engagement is under a legal NDA: it holds a neutral id, keys of the public vocabulary in data/experience-rules.toml, dates, rounded numbers and public technology names, nothing else. No name, path or free text.",
+  "type": "object",
+  "required": ["schema", "generated_at", "engagements", "public_work"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": { "enum": ["korczis-hub-experience/v1"] },
+    "generated_at": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$" },
+    "engagements": { "type": "array", "items": { "$ref": "#/$defs/engagement" } },
+    "public_work": {
+      "type": "object",
+      "description": "Capability key -> the public repositories (with a work page) whose texts show it.",
+      "propertyNames": { "pattern": "^[a-z][a-z-]*$" },
+      "additionalProperties": { "type": "array", "items": { "type": "string", "pattern": "^[A-Za-z0-9._-]+$" } }
+    }
+  },
+  "$defs": {
+    "key": { "type": "string", "pattern": "^[a-z][a-z-]*$" },
+    "month": { "type": "string", "pattern": "^\\d{4}-(0[1-9]|1[0-2])$" },
+    "bucket": { "type": "integer", "minimum": 0, "description": "A floor of data/experience-rules.toml [scale] buckets, or 0." },
+    "engagement": {
+      "type": "object",
+      "required": ["id", "sector", "roles", "period", "months", "scale", "technologies", "capabilities"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^e[0-9]+$" },
+        "sector": { "type": ["string", "null"], "pattern": "^[a-z][a-z-]*$" },
+        "roles": { "type": "array", "items": { "$ref": "#/$defs/key" } },
+        "period": {
+          "type": ["object", "null"],
+          "required": ["from", "to"],
+          "additionalProperties": false,
+          "properties": { "from": { "$ref": "#/$defs/month" }, "to": { "$ref": "#/$defs/month" } }
+        },
+        "months": {
+          "type": "object",
+          "description": "The owner's commits per month, each a bucket.",
+          "propertyNames": { "pattern": "^\\d{4}-(0[1-9]|1[0-2])$" },
+          "additionalProperties": { "$ref": "#/$defs/bucket" }
+        },
+        "scale": {
+          "type": "object",
+          "required": ["commits", "repositories", "authored", "team", "files", "modules", "tests"],
+          "additionalProperties": false,
+          "properties": {
+            "commits": { "$ref": "#/$defs/bucket" },
+            "repositories": { "$ref": "#/$defs/bucket" },
+            "authored": { "$ref": "#/$defs/bucket" },
+            "team": { "$ref": "#/$defs/bucket" },
+            "files": { "$ref": "#/$defs/bucket" },
+            "modules": { "$ref": "#/$defs/bucket" },
+            "tests": { "$ref": "#/$defs/bucket" }
+          }
+        },
+        "technologies": { "type": "array", "items": { "type": "string", "pattern": "^[A-Za-z][A-Za-z0-9 .+#-]*$" } },
+        "capabilities": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["key", "score", "evidence", "declared"],
+            "additionalProperties": false,
+            "properties": {
+              "key": { "$ref": "#/$defs/key" },
+              "score": { "type": "number", "minimum": 0 },
+              "declared": { "type": "boolean" },
+              "evidence": {
+                "type": "object",
+                "description": "How many items of each channel matched the capability's keywords; the items are never kept.",
+                "required": ["commits", "headings", "paths"],
+                "additionalProperties": false,
+                "properties": {
+                  "commits": { "type": "integer", "minimum": 0 },
+                  "headings": { "type": "integer", "minimum": 0 },
+                  "paths": { "type": "integer", "minimum": 0 }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,381 @@
+{
+  "schema": "korczis-hub-experience/v1",
+  "generated_at": "2026-11-14T21:03:29Z",
+  "engagements": [
+    {
+      "id": "e1",
+      "sector": null,
+      "roles": [],
+      "period": {
+        "from": "2026-05",
+        "to": "2026-05"
+      },
+      "months": {
+        "2026-05": 2
+      },
+      "scale": {
+        "commits": 2,
+        "repositories": 1,
+        "authored": 1,
+        "team": 1,
+        "files": 250,
+        "modules": 100,
+        "tests": 0
+      },
+      "technologies": [
+        "HTML",
+        "JavaScript",
+        "Python"
+      ],
+      "capabilities": [
+        {
+          "key": "osint-investigation",
+          "score": 5,
+          "evidence": {
+            "commits": 0,
+            "headings": 7,
+            "paths": 49
+          },
+          "declared": false
+        },
+        {
+          "key": "due-diligence",
+          "score": 4.3,
+          "evidence": {
+            "commits": 1,
+            "headings": 3,
+            "paths": 13
+          },
+          "declared": false
+        },
+        {
+          "key": "entity-resolution",
+          "score": 3.8,
+          "evidence": {
+            "commits": 0,
+            "headings": 4,
+            "paths": 19
+          },
+          "declared": false
+        },
+        {
+          "key": "decision-support",
+          "score": 3.7,
+          "evidence": {
+            "commits": 1,
+            "headings": 1,
+            "paths": 26
+          },
+          "declared": false
+        },
+        {
+          "key": "m-and-a-screening",
+          "score": 2.8,
+          "evidence": {
+            "commits": 0,
+            "headings": 2,
+            "paths": 11
+          },
+          "declared": false
+        },
+        {
+          "key": "audit-trail",
+          "score": 2.6,
+          "evidence": {
+            "commits": 0,
+            "headings": 2,
+            "paths": 6
+          },
+          "declared": false
+        }
+      ]
+    },
+    {
+      "id": "e2",
+      "sector": null,
+      "roles": [],
+      "period": {
+        "from": "2026-04",
+        "to": "2026-11"
+      },
+      "months": {
+        "2026-04": 250,
+        "2026-05": 250,
+        "2026-06": 100,
+        "2026-07": 100,
+        "2026-08": 1000,
+        "2026-09": 250,
+        "2026-10": 500,
+        "2026-11": 250
+      },
+      "scale": {
+        "commits": 2500,
+        "repositories": 5,
+        "authored": 5,
+        "team": 10,
+        "files": 10000,
+        "modules": 2500,
+        "tests": 2500
+      },
+      "technologies": [
+        "TypeScript",
+        "Python",
+        "HTML",
+        "JavaScript",
+        "Shell",
+        "PostgreSQL",
+        "FastAPI",
+        "React",
+        "Tailwind CSS",
+        "Flowbite Pro",
+        "Alpine.js",
+        "Playwright",
+        "Docker",
+        "Kubernetes",
+        "GitHub Actions",
+        "Claude API",
+        "OpenAI API",
+        "Pydantic",
+        "Tesseract",
+        "Majordomus"
+      ],
+      "capabilities": [
+        {
+          "key": "llm-agents",
+          "score": 19.4,
+          "evidence": {
+            "commits": 302,
+            "headings": 110,
+            "paths": 5834
+          },
+          "declared": false
+        },
+        {
+          "key": "decision-support",
+          "score": 18.6,
+          "evidence": {
+            "commits": 569,
+            "headings": 33,
+            "paths": 5317
+          },
+          "declared": false
+        },
+        {
+          "key": "ai-transformation",
+          "score": 17.4,
+          "evidence": {
+            "commits": 555,
+            "headings": 32,
+            "paths": 592
+          },
+          "declared": false
+        },
+        {
+          "key": "audit-trail",
+          "score": 17,
+          "evidence": {
+            "commits": 242,
+            "headings": 49,
+            "paths": 833
+          },
+          "declared": false
+        },
+        {
+          "key": "data-integration",
+          "score": 17,
+          "evidence": {
+            "commits": 341,
+            "headings": 29,
+            "paths": 1553
+          },
+          "declared": false
+        },
+        {
+          "key": "orchestration",
+          "score": 15.8,
+          "evidence": {
+            "commits": 105,
+            "headings": 56,
+            "paths": 564
+          },
+          "declared": false
+        },
+        {
+          "key": "osint-investigation",
+          "score": 15.7,
+          "evidence": {
+            "commits": 137,
+            "headings": 32,
+            "paths": 1192
+          },
+          "declared": false
+        },
+        {
+          "key": "insolvency-monitoring",
+          "score": 15.2,
+          "evidence": {
+            "commits": 224,
+            "headings": 15,
+            "paths": 853
+          },
+          "declared": false
+        },
+        {
+          "key": "m-and-a-screening",
+          "score": 14.6,
+          "evidence": {
+            "commits": 147,
+            "headings": 13,
+            "paths": 1276
+          },
+          "declared": false
+        },
+        {
+          "key": "due-diligence",
+          "score": 14.5,
+          "evidence": {
+            "commits": 131,
+            "headings": 18,
+            "paths": 553
+          },
+          "declared": false
+        },
+        {
+          "key": "market-intelligence",
+          "score": 13.8,
+          "evidence": {
+            "commits": 99,
+            "headings": 15,
+            "paths": 534
+          },
+          "declared": false
+        },
+        {
+          "key": "risk-scoring",
+          "score": 13.5,
+          "evidence": {
+            "commits": 154,
+            "headings": 10,
+            "paths": 251
+          },
+          "declared": false
+        },
+        {
+          "key": "entity-resolution",
+          "score": 12.8,
+          "evidence": {
+            "commits": 121,
+            "headings": 6,
+            "paths": 443
+          },
+          "declared": false
+        },
+        {
+          "key": "document-extraction",
+          "score": 12.7,
+          "evidence": {
+            "commits": 129,
+            "headings": 8,
+            "paths": 148
+          },
+          "declared": false
+        },
+        {
+          "key": "knowledge-graph",
+          "score": 10.9,
+          "evidence": {
+            "commits": 59,
+            "headings": 3,
+            "paths": 401
+          },
+          "declared": false
+        },
+        {
+          "key": "data-room",
+          "score": 8.8,
+          "evidence": {
+            "commits": 10,
+            "headings": 9,
+            "paths": 58
+          },
+          "declared": false
+        }
+      ]
+    },
+    {
+      "id": "e3",
+      "sector": null,
+      "roles": [],
+      "period": null,
+      "months": {},
+      "scale": {
+        "commits": 0,
+        "repositories": 0,
+        "authored": 0,
+        "team": 0,
+        "files": 0,
+        "modules": 0,
+        "tests": 0
+      },
+      "technologies": [],
+      "capabilities": []
+    },
+    {
+      "id": "e4",
+      "sector": null,
+      "roles": [],
+      "period": null,
+      "months": {},
+      "scale": {
+        "commits": 0,
+        "repositories": 0,
+        "authored": 0,
+        "team": 0,
+        "files": 0,
+        "modules": 0,
+        "tests": 0
+      },
+      "technologies": [],
+      "capabilities": []
+    }
+  ],
+  "public_work": {
+    "due-diligence": [
+      "unable.cz",
+      "vomaste.cz"
+    ],
+    "decision-support": [
+      "crisis-map",
+      "openttd-prismatic-bridge",
+      "unable.cz"
+    ],
+    "osint-investigation": [
+      "sig",
+      "crisis-map",
+      "data-atlas",
+      "openttd-prismatic-bridge",
+      "osint-case-ratcliffe-moscow-2026",
+      "unable.cz"
+    ],
+    "data-integration": [
+      "llm",
+      "sig"
+    ],
+    "audit-trail": [
+      "unable.cz",
+      "catharsis-as-a-service",
+      "llm"
+    ],
+    "llm-agents": [
+      "sig",
+      "osint-case-ratcliffe-moscow-2026",
+      "astronomists",
+      "llm",
+      "prismatic-majordomus",
+      "unable.cz"
+    ],
+    "document-extraction": [
+      "data-atlas"
+    ]
+  }
+}
