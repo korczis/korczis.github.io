@@ -20,7 +20,7 @@ KorczisHub.viz('pulse', {
     const embedded = !source ? [] : source.groups
       ? source.groups.flatMap((grp) => (grp.commits || []).map((c) => ({ ...c, repo: grp.repo, lane: grp.lane, category: grp.category })))
       : source.beats || [];
-    if (!embedded.length && !source?.live) return { empty: true };
+    if (!embedded.length && !source?.live) return { empty: true, items: () => [] };
     const tip = KorczisHub.tooltip(box);
     const canvas = document.createElement('canvas');
     canvas.setAttribute('aria-hidden', 'true');

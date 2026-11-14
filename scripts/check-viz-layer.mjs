@@ -115,7 +115,7 @@ function handles(mount) {
     if (!arg || (arg.type === 'Literal' && arg.value === null)) continue;
     const object = arg.type === 'ObjectExpression' ? arg : arg.type === 'Identifier' ? declared.get(arg.name) : null;
     out.push(object
-      ? { line: line(n), keys: new Set(object.properties.map(keyName).filter(Boolean)), spread: object.properties.some((p) => p.type === 'SpreadElement') }
+      ? { line: line(n), keys: new Set(object.properties.map(keyName).filter(Boolean)), spread: object.properties.some((p) => p.type === 'SpreadElement'), object }
       : { line: line(n), keys: null });
   }
   return out;
@@ -195,7 +195,18 @@ for (const file of walk(join(ROOT, 'static/js')).filter((f) => f.endsWith('.js')
   if (!returned.length) findings.push(`${rel}: mount returns no handle`);
   for (const h of returned) {
     if (!h.keys) { findings.push(`${rel}:${h.line}: mount returns a handle that is not an object literal (or a const holding one); the gate cannot read it`); continue; }
-    if (h.keys.has('empty')) continue;
+    // Only the handle of no data at all (empty: true, written as the literal) owes no parameter; a
+    // handle whose empty flag is computed (empty: !rows.length) is held to the whole contract.
+    const emptyNode = h.object?.properties.find((p) => keyName(p) === 'empty');
+    if (emptyNode?.value.type === 'Literal' && emptyNode.value.value === true) {
+      if (!h.keys.has('items')) findings.push(`${rel}:${h.line}: the empty handle has no items(); its list twin must still open`);
+      continue;
+    }
+    // A controls() that returns an empty array literal declares no parameter.
+    const controlsNode = h.object?.properties.find((p) => keyName(p) === 'controls');
+    const fn = controlsNode?.value;
+    const body = fn && /Function/.test(fn.type) ? (fn.body.type === 'BlockStatement' ? fn.body.body.find((st) => st.type === 'ReturnStatement')?.argument : fn.body) : null;
+    if (body?.type === 'ArrayExpression' && !body.elements.length) findings.push(`${rel}:${h.line}: controls() returns no parameter; a simulator declares at least one`);
     for (const need of ['items', 'controls']) {
       if (h.keys.has(need)) continue;
       const why = need === 'controls' ? 'a simulator declares its parameters' : 'the list twin is how a keyboard reaches it';
@@ -204,7 +215,10 @@ for (const file of walk(join(ROOT, 'static/js')).filter((f) => f.endsWith('.js')
   }
   const ids = (name) => all.filter((n) => n.type === 'Identifier' && n.name === name);
   for (const n of all) {
-    if (n.type === 'NewExpression' && n.callee.name === 'ResizeObserver') findings.push(`${rel}:${line(n)}: keeps its own ResizeObserver; the layer calls resize() or update()`);
+    const observer = n.type === 'NewExpression' && (n.callee.name === 'ResizeObserver' || (n.callee.type === 'MemberExpression' && n.callee.property?.name === 'ResizeObserver'));
+    if (observer) findings.push(`${rel}:${line(n)}: keeps its own ResizeObserver; the layer calls resize() or update()`);
+    const listen = n.type === 'CallExpression' && isMember(n.callee, null, 'addEventListener') && n.arguments[0]?.type === 'Literal' && n.arguments[0].value === 'resize';
+    if (listen) findings.push(`${rel}:${line(n)}: listens to resize itself; the layer calls resize() or update()`);
   }
   if (!all.some((n) => n.type === 'CallExpression' && (n.callee.name === 'go' || isMember(n.callee, null, 'go')))) findings.push(`${rel}: never navigates through go(url, event)`);
   if (!ids('motion').length && !ids('reducedMotion').length) findings.push(`${rel}: animates without motion() or reducedMotion`);

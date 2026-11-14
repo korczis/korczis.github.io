@@ -528,10 +528,38 @@ async function checkFrames(browser) {
         })));
         for (const [key, value] of Object.entries(set)) if (held[key] !== value) findings.push(`${where}: parameter ${key}=${value} did not survive a reload of its address (holds ${held[key]})`);
       }
-      // The deep link opens it maximized.
-      await page.goto(`${BASE}${rel}?viz=${encodeURIComponent(id)}`, { waitUntil: 'networkidle' });
-      await page.waitForTimeout(500);
-      if (!(await page.locator(`[data-viz-frame="${id}"]`).evaluate((f) => f.classList.contains('is-max')))) findings.push(`${where}: ?viz=${id} did not open it maximized`);
+      // Play (a toolbar parameter) round-trips too: toggle it, reload its address, the state holds.
+      const play = frame.locator('.viz-bar [data-viz-control]');
+      if (await play.count()) {
+        await page.goto(`${BASE}${rel}`, { waitUntil: 'networkidle' });
+        const again = page.locator(`[data-viz-frame="${id}"]`);
+        await again.scrollIntoViewIfNeeded();
+        await page.waitForFunction((el) => ['ready', 'error'].includes(el.dataset.vizState), await again.locator(':scope > [data-viz]').elementHandle(), { timeout: 15000 }).catch(() => {});
+        const button = again.locator('.viz-bar [data-viz-control]').first();
+        const before = await button.getAttribute('aria-pressed');
+        await button.click();
+        await page.waitForTimeout(400);
+        const toggled = page.url();
+        const key = `${id}.${await button.getAttribute('data-viz-control')}`;
+        if (!new URL(toggled).searchParams.has(key)) findings.push(`${where}: play toggled, but the address does not carry ${key}`);
+        await page.goto(toggled, { waitUntil: 'networkidle' });
+        await page.locator(`[data-viz-frame="${id}"]`).scrollIntoViewIfNeeded();
+        await page.waitForTimeout(600);
+        const after = await page.locator(`[data-viz-frame="${id}"] .viz-bar [data-viz-control]`).first().getAttribute('aria-pressed');
+        if (after === before) findings.push(`${where}: play=${before === 'true' ? 'off' : 'on'} did not survive a reload of its address`);
+      }
+      // The deep link opens it maximized, as a modal: the sidebar stays inert after the page has
+      // loaded (the drawer's own sync must not undo it), and Escape restores everything.
+      await page.goto(`${BASE}${rel}?viz=${encodeURIComponent(id)}`, { waitUntil: 'load' });
+      await page.waitForTimeout(800);
+      const deep = page.locator(`[data-viz-frame="${id}"]`);
+      if (!(await deep.evaluate((f) => f.classList.contains('is-max')))) findings.push(`${where}: ?viz=${id} did not open it maximized`);
+      const sidebarInert = () => page.evaluate(() => { const s = document.getElementById('sidebar'); return s ? s.inert : null; });
+      if ((await sidebarInert()) === false) findings.push(`${where}: opened by ?viz=, the sidebar behind the dialog is not inert`);
+      await page.keyboard.press('Escape');
+      await page.waitForTimeout(400);
+      if (await deep.evaluate((f) => f.classList.contains('is-max'))) findings.push(`${where}: Escape did not restore the deep-linked visual`);
+      if ((await sidebarInert()) === true) findings.push(`${where}: restored at desktop width, the sidebar stays inert`);
       await page.goto(`${BASE}${rel}`, { waitUntil: 'networkidle' });
     }
   }

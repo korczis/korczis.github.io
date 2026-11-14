@@ -253,7 +253,7 @@
     writeTimer = setTimeout(() => {
       const url = new URL(location.href);
       for (const [k, v] of pending) {
-        if (v === null || v === undefined || v === '') url.searchParams.delete(k);
+        if (v === null || v === undefined) url.searchParams.delete(k);
         else url.searchParams.set(k, String(v));
       }
       pending.clear();
@@ -318,7 +318,9 @@
     }
     for (let node = state.wrap; node && node !== document.body; node = node.parentElement) {
       for (const sibling of node.parentElement.children) {
-        if (sibling === node || sibling.inert || sibling.tagName === 'SCRIPT') continue;
+        // The sidebar's inert belongs to syncSidebar (the drawer's own state), which also keeps it
+        // inert while a visual is maximized; writing it here too would let either undo the other.
+        if (sibling === node || sibling.inert || sibling.tagName === 'SCRIPT' || sibling.id === 'sidebar') continue;
         sibling.inert = true;
         state.inerted.push(sibling);
       }
@@ -340,6 +342,7 @@
     }
     root.classList.toggle('viz-locked', on);
     setInert(state, on);
+    syncSidebar();
     state.maxButton.innerHTML = icon(on ? 'min' : 'max');
     state.maxButton.setAttribute('aria-pressed', on ? 'true' : 'false');
     state.maxButton.title = t(on ? 'js_viz_restore' : 'js_viz_maximize');
@@ -357,6 +360,18 @@
 
   document.addEventListener('keydown', (event) => {
     if (event.key !== 'Escape') return;
+    // While a visual is maximized, Escape belongs to it: first its own panel, then the dialog.
+    const open = [...frames.values()].find((f) => f.max);
+    if (open) {
+      if (open.panel && !open.panel.hidden) {
+        open.panel.hidden = true;
+        open.panelButton.setAttribute('aria-expanded', 'false');
+        open.panelButton.focus();
+      } else {
+        setMax(open, false);
+      }
+      return;
+    }
     for (const state of frames.values()) {
       if (state.panel && !state.panel.hidden) {
         state.panel.hidden = true;
@@ -365,15 +380,18 @@
         return;
       }
     }
-    for (const state of frames.values()) if (state.max) { setMax(state, false); return; }
   });
 
+  const ON_OFF = { 1: true, true: true, 0: false, false: false };
   function fromUrl(def, raw) {
     if (raw === null) return undefined;
-    if (def.type === 'toggle') return raw === '1' || raw === 'true';
+    if (def.type === 'toggle' || def.type === 'play') return ON_OFF[raw];
     if (def.type === 'range') {
-      const n = Number(raw);
-      return Number.isFinite(n) ? Math.min(def.max, Math.max(def.min, n)) : undefined;
+      // Decimal numbers only (not '', ' ', '0x7E9'), clamped and snapped to the step.
+      if (!/^-?\d+(?:\.\d+)?$/.test(raw)) return undefined;
+      const step = def.step ?? 1;
+      const n = Math.min(def.max, Math.max(def.min, Number(raw)));
+      return Number((Math.round((n - def.min) / step) * step + def.min).toFixed(10));
     }
     if (def.type === 'select') return def.options.some((o) => String(o.value) === raw) ? raw : undefined;
     return undefined;
@@ -415,8 +433,8 @@
         writeParam(key, playing === (def.value !== false) ? null : (playing ? 1 : 0));
       });
       state.bar.prepend(b);
-      const raw = readParam(key);
-      if (raw !== null && (raw !== '0') !== playing) setPlaying(raw !== '0', false);
+      const on = fromUrl(def, readParam(key));
+      if (on !== undefined && on !== playing) setPlaying(on, false);
     }
     if (!params.length && !actions.length) return;
     const panelId = `${state.id}-controls`;
@@ -565,7 +583,13 @@
       const handle = (await spec.mount(box, source, ctx)) || {};
       mounted.set(box, handle);
       list(box, handle);
-      if (state) controls(state, handle);
+      if (state) {
+        try {
+          controls(state, handle);
+        } catch (error) {
+          console.error(`[hub] ${name}: controls():`, error);
+        }
+      }
       observeSize(box, handle);
       if (handle.empty) message(box, 'js_viz_empty');
       box.dataset.vizState = 'ready';
@@ -642,13 +666,6 @@
     registry.set(name, spec);
   }
 
-  function setTheme(dark) {
-    root.classList.toggle('dark', dark);
-    try {
-      localStorage.setItem('color-theme', dark ? 'dark' : 'light');
-    } catch {}
-    document.dispatchEvent(new Event('dark-mode'));
-  }
 
   document.addEventListener('dark-mode', () => {
     for (const handle of mounted.values()) handle?.update?.();
@@ -679,8 +696,6 @@
 
   document.addEventListener('DOMContentLoaded', () => {
     localise404();
-    const toggle = document.getElementById('theme-toggle');
-    toggle?.addEventListener('click', () => setTheme(!isDark()));
     // Registrations run from deferred scripts after this one; scan once they are all in.
     queueMicrotask(scan);
   });
@@ -707,14 +722,16 @@
 
   function syncSidebar() {
     if (!sidebar) return;
+    // A maximized visual is a modal dialog: behind it the sidebar is inert at any width.
+    const locked = root.classList.contains('viz-locked');
     if (desktop.matches) {
       if (drawer && drawer.isVisible()) drawer.hide();
       setAttr('aria-hidden', null);
-      setAttr('inert', null);
+      setAttr('inert', locked ? '' : null);
       return;
     }
     const closed = sidebar.getAttribute('aria-hidden') === 'true' || sidebar.classList.contains('-translate-x-full');
-    setAttr('inert', closed ? '' : null);
+    setAttr('inert', closed || locked ? '' : null);
     if (closed) setAttr('aria-hidden', 'true');
   }
 

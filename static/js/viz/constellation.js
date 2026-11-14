@@ -12,7 +12,7 @@
 KorczisHub.viz('constellation', {
   lib: 'd3',
   mount(box, source, { palette, reducedMotion, motion, go, link, escape, hash, t, reflect }) {
-    if (!source || !Array.isArray(source.repos) || !source.repos.length) return { empty: true };
+    if (!source || !Array.isArray(source.repos) || !source.repos.length) return { empty: true, items: () => [] };
     const tip = KorczisHub.tooltip(box);
     const canvas = document.createElement('canvas');
     canvas.setAttribute('aria-hidden', 'true');

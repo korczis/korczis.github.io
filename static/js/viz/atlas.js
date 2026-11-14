@@ -12,7 +12,7 @@
 KorczisHub.viz('atlas', {
   lib: 'd3',
   mount(box, source, { palette, reducedMotion, motion, go, link, escape, hash, t, id }) {
-    if (!source || !Array.isArray(source.terms) || !source.terms.length) return { empty: true };
+    if (!source || !Array.isArray(source.terms) || !source.terms.length) return { empty: true, items: () => [] };
     const tip = KorczisHub.tooltip(box);
     const kinds = Object.keys(source.kinds);
     const works = source.works || {};
