@@ -4,7 +4,9 @@
 // rules in data/projects.toml. Only original work is listed; forks and mirrors (repositories
 // where someone else wrote most of the commits) are counted, never shown as the owner's work.
 //
-// usage: npm run index      (needs the authenticated CLIs `gh` and `glab`)
+// usage: npm run index                                  (needs the authenticated CLIs `gh` and `glab`)
+//        node scripts/fetch-index.mjs --derive [--check] re-apply the rules to the stored index offline
+//        node scripts/fetch-index.mjs --probe            re-check the stored sites
 import { execFile } from 'node:child_process';
 import { GitLabBudgetError, gitlabClient } from './lib/gitlab.mjs';
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
@@ -14,6 +16,11 @@ import { promisify } from 'node:util';
 import { parse } from 'smol-toml';
 
 const run = promisify(execFile);
+// Only the derivation can be checked offline; refuse before anything reaches the network.
+if (process.argv.includes('--check') && !process.argv.includes('--derive')) {
+  console.error('✗ --check needs --derive (the measurement itself is never checked offline)');
+  process.exit(2);
+}
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const LOGIN = 'korczis';
 const OWNER_NAME = /korc(?:z|ak)/i; // commit author names: "Tomas Korcak", "korczis"
@@ -343,7 +350,18 @@ if (process.argv.includes('--probe')) {
   index = derive(repos, counts, new Date().toISOString().replace(/\.\d{3}Z$/, 'Z'));
 }
 
-writeFileSync(TARGET, `${JSON.stringify(index, null, 1)}\n`);
+const text = `${JSON.stringify(index, null, 1)}\n`;
+if (process.argv.includes('--check')) {
+  // Only the derivation can be checked offline: a rule, mirror or hidden change in data/projects.toml
+  // that the committed index does not reflect yet.
+  if (readFileSync(TARGET, 'utf8') !== text) {
+    console.error('✗ data/index.json is stale against the rules of data/projects.toml; run npm run derive');
+    process.exit(1);
+  }
+  console.log(`data/index.json: ${index.counts.own} original repositories, current against data/projects.toml`);
+  process.exit(0);
+}
+writeFileSync(TARGET, text);
 const c = index.counts;
 console.log(`data/index.json: ${c.github} GitHub + ${c.gitlab} GitLab -> ${c.merged} by name; ` +
   `${c.own} original listed, ${c.mirrors} mirrors, ${c.forks} forks, ${c.empty} without history; ` +
