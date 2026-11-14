@@ -4,6 +4,7 @@ title = "Systems and infrastructure"
 description = "Servers, clusters and the plumbing beneath software: immutable hosts, packet processing, embedded boards and deployment."
 template = "category.html"
 weight = 7
+updated = "2025-12-20T21:31:13Z"
 
 [taxonomies]
 tags = ["Systems and infrastructure", "docks", "gh-exec-3000", "server-archlinux", "zdeny-docker"]

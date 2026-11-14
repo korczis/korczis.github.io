@@ -8,7 +8,7 @@
 <text x="156" y="99" font-size="24" font-weight="700" fill="#f9fafb">Tomas Korcak</text>
 <text x="156" y="124" font-size="20" font-family="JetBrains Mono, Menlo, monospace" fill="#9ca3af">korczis.github.io/cs-glossary-csharp/</text>
 <text x="80" y="230" font-size="66" font-weight="800" fill="#f9fafb">C#: slovník</text>
-<text x="80" y="330" font-size="26" fill="#9ca3af">Objektově orientovaný jazyk Microsoftu pro</text><text x="80" y="366" font-size="26" fill="#9ca3af">.NET. A term of the glossary.</text>
+<text x="80" y="330" font-size="26" fill="#9ca3af">Objektově orientovaný jazyk Microsoftu pro</text><text x="80" y="366" font-size="26" fill="#9ca3af">.NET. Pojem ze slovníku.</text>
 <rect x="80" y="540" width="292" height="44" rx="22" fill="#1e3a8a"/>
 <text x="104" y="569" font-size="20" font-weight="600" fill="#bfdbfe">Supervised by Majordomus</text>
 </g>

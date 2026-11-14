@@ -119,6 +119,7 @@ title = ${q(title)}
 description = ${q(cs ? describeCs(r) : describe(r))}
 template = "work.html"
 weight = ${position + 1}
+updated = ${q(new Date(r.last_commit).toISOString().replace(/\.\d+Z$/, 'Z'))}
 
 [taxonomies]
 tags = [${tags(r, cs).map(q).join(', ')}]

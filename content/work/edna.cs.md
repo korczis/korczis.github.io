@@ -4,6 +4,7 @@ title = "edna"
 description = "edna: projekt z kategorie Inženýrství AI, poslední commit 2. září 2025."
 template = "work.html"
 weight = 23
+updated = "2025-09-02T10:22:20Z"
 
 [taxonomies]
 tags = ["Inženýrství AI"]

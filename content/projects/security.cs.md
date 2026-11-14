@@ -4,6 +4,7 @@ title = "Bezpečnost a OSINT"
 description = "Zpravodajství z otevřených zdrojů, výzkum rádiové a síťové bezpečnosti: případy, proof of concept a nástroje kolem nich."
 template = "category.html"
 weight = 6
+updated = "2017-07-08T19:01:44Z"
 
 [taxonomies]
 tags = ["Bezpečnost a OSINT", "magic", "zlown", "peacemaker", "ratnet"]

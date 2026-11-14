@@ -4,6 +4,7 @@ title = "tap"
 description = "tap: projekt z kategorie Nástroje, poslední commit 1. října 2024."
 template = "work.html"
 weight = 34
+updated = "2024-10-01T18:40:56Z"
 
 [taxonomies]
 tags = ["Nástroje"]

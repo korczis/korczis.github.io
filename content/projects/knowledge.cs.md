@@ -4,6 +4,7 @@ title = "Znalosti"
 description = "Znalostní báze, které si ověříte: propojené taxonomie se zdroji, stavěné jako knihy, weby a grafy."
 template = "category.html"
 weight = 3
+updated = "2026-11-13T05:02:01Z"
 
 [taxonomies]
 tags = ["Znalosti", "Kompendium", "ReadingPhoneNumbersInRealTime", "MinervaEye", "reading"]

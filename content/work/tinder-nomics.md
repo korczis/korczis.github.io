@@ -4,6 +4,7 @@ title = "tinder-nomics"
 description = "Use the built-in continuous integration in GitLab."
 template = "work.html"
 weight = 18
+updated = "2026-02-04T23:37:13Z"
 
 [taxonomies]
 tags = ["Tools"]

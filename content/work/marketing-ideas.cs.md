@@ -4,6 +4,7 @@ title = "marketing-ideas"
 description = "marketing-ideas: projekt z kategorie Nástroje, poslední commit 17. dubna 2024."
 template = "work.html"
 weight = 40
+updated = "2024-04-17T15:33:10Z"
 
 [taxonomies]
 tags = ["Nástroje"]

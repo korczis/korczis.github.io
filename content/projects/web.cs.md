@@ -4,6 +4,7 @@ title = "Web"
 description = "Weby a webové aplikace: single-page aplikace, frontendy v Phoenixu a Elmu, landing pages a weby přátel."
 template = "category.html"
 weight = 8
+updated = "2025-12-20T21:25:15Z"
 
 [taxonomies]
 tags = ["Web", "job-processor", "nestravenkam", "tosh", "the-scratch"]

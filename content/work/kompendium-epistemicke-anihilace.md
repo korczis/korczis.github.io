@@ -4,6 +4,7 @@ title = "Kompendium"
 description = "A defensive taxonomy of epistemic and cognitive manipulation (Czech)."
 template = "work.html"
 weight = 5
+updated = "2026-11-13T04:01:30Z"
 
 [taxonomies]
 tags = ["Knowledge", "Elixir", "JavaScript", "Python"]

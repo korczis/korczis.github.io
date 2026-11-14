@@ -4,6 +4,7 @@ title = "Data and GIS"
 description = "Catalogues and maps of open data: geodata sources, incident reports geocoded and served from one registry."
 template = "category.html"
 weight = 4
+updated = "2026-10-29T13:50:30Z"
 
 [taxonomies]
 tags = ["Data and GIS", "Data Atlas", "Crisis map", "apollo-crawler-extension", "microcrawler-crawler-bam-brno-cz"]

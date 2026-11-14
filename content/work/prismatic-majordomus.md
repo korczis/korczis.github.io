@@ -4,6 +4,7 @@ title = "Majordomus"
 description = "AI agents say the work is done; Majordomus makes them prove it."
 template = "work.html"
 weight = 6
+updated = "2026-11-13T00:33:43Z"
 
 [taxonomies]
 tags = ["AI engineering", "Rust", "Shell", "JavaScript"]

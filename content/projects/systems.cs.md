@@ -4,6 +4,7 @@ title = "Systémy a infrastruktura"
 description = "Servery, clustery a potrubí pod softwarem: neměnné hostitele, zpracování paketů, embedded desky a nasazování."
 template = "category.html"
 weight = 7
+updated = "2025-12-20T21:31:13Z"
 
 [taxonomies]
 tags = ["Systémy a infrastruktura", "docks", "gh-exec-3000", "server-archlinux", "zdeny-docker"]

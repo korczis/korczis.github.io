@@ -4,6 +4,7 @@ title = "dispatcher"
 description = "dispatcher: projekt z kategorie Nástroje, hlavní jazyk TypeScript, poslední commit 19. října 2024."
 template = "work.html"
 weight = 33
+updated = "2024-10-19T15:37:57Z"
 
 [taxonomies]
 tags = ["Nástroje", "TypeScript", "JavaScript"]

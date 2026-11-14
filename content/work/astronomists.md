@@ -4,6 +4,7 @@ title = "astronomists"
 description = "Brand & web pro hnutí Astronautisté — „Myslíme na hvězdy, jednáme vědecky.\" Veřejný web: astronautiste.cz."
 template = "work.html"
 weight = 16
+updated = "2026-07-20T17:36:39Z"
 
 [taxonomies]
 tags = ["Tools", "Python", "HTML", "TypeScript"]

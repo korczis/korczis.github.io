@@ -198,7 +198,16 @@
     }
   });
 
+  // GitHub Pages serves one 404.html for every language: under /cs/ show its Czech twin.
+  function localise404() {
+    const twins = document.querySelectorAll('[data-404-lang]');
+    if (!twins.length || !location.pathname.startsWith(`${new URL(base, location.href).pathname}cs/`)) return;
+    twins.forEach((twin) => { twin.hidden = twin.getAttribute('data-404-lang') !== 'cs'; });
+    root.lang = 'cs';
+  }
+
   document.addEventListener('DOMContentLoaded', () => {
+    localise404();
     const toggle = document.getElementById('theme-toggle');
     toggle?.addEventListener('click', () => setTheme(!isDark()));
     // Registrations run from deferred scripts after this one; scan once they are all in.

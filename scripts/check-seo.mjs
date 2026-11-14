@@ -45,6 +45,13 @@ for (const file of html(SITE)) {
     if (meta(text, 'robots') !== 'noindex, follow') fail(rel, '404 must be noindex');
     continue;
   }
+  if (meta(text, 'robots') === 'noindex, follow') {
+    // A tag with a single page (templates/partials/seo.html): kept for its links, never indexed.
+    const here = `${BASE}/${rel.replace(/index\.html$/, '')}`;
+    if (!/(^|\/)tags\//.test(rel)) fail(rel, 'noindex outside a tag page');
+    if (sitemap.includes(`<loc>${here}</loc>`)) fail(rel, 'noindex but listed in sitemap.xml');
+    continue;
+  }
   if (title.length > 70) fail(rel, `title is ${title.length} > 70 characters`);
   if (titles.has(title)) fail(rel, `title duplicates ${titles.get(title)}`);
   titles.set(title, rel);

@@ -4,6 +4,7 @@ title = "simple_geocoder"
 description = "Simple Geocoder is an Elixir library designed to facilitate geocoding and routing functionalities within your Elixir applications."
 template = "work.html"
 weight = 38
+updated = "2024-04-24T20:43:37Z"
 
 [taxonomies]
 tags = ["Tools", "Elixir", "Shell", "HTML+EEX"]

@@ -46,7 +46,7 @@ for (const file of walk(CONTENT).sort()) {
   }
 }
 
-const clip = (text) => (text.length > 165 ? `${text.slice(0, 162).replace(/\s+\S*$/, '')}…` : text.length < 50 ? `${text} ${'A term of the glossary.'}` : text);
+const clip = (text, lang) => (text.length > 165 ? `${text.slice(0, 162).replace(/\s+\S*$/, '')}…` : text.length < 50 ? `${text} ${tr('glossary_term_pad', lang)}` : text);
 const KINDS = ['language', 'technology', 'concept'];
 const sorted = [...g.terms].sort((a, b) => KINDS.indexOf(a.kind) - KINDS.indexOf(b.kind) || a.term.localeCompare(b.term));
 
@@ -81,7 +81,7 @@ ${cs
     wanted.set(`${t.id}${sfx}.md`, `+++
 ${MARK}
 title = ${q(title)}
-description = ${q(clip(definition))}
+description = ${q(clip(definition, lang))}
 template = "term.html"
 weight = ${position + 1}
 

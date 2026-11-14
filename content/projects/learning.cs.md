@@ -4,6 +4,7 @@ title = "Učení a experimenty"
 description = "Výukové materiály, katy a experimenty napříč mnoha jazyky: náčrty, které přišly před projekty."
 template = "category.html"
 weight = 10
+updated = "2021-06-03T20:12:11Z"
 
 [taxonomies]
 tags = ["Učení a experimenty", "happ", "Test-Elixir", "node-proxy-upload", "skull-cpp"]

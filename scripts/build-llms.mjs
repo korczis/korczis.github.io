@@ -35,6 +35,8 @@ const lines = [
   `- [Repositories](${base}/repositories/): every original repository on GitHub and GitLab`,
   `- [Recent work](${base}/work/): every project with a commit in the last 12, 24 and 48 months, one page each`,
   `- [Stack](${base}/stack/): the tools and practices behind every project`,
+  `- [Glossary](${base}/glossary/): every concept, language and technology the pages build on, defined and sourced`,
+  `- [Czech version](${base}/cs/): the same site, every page translated`,
   '',
 ];
 
@@ -65,6 +67,9 @@ const text = lines.join('\n');
 
 // llms-full.txt: the summary above, then every original repository, grouped by inferred category.
 const index = JSON.parse(readFileSync(join(ROOT, 'data/index.json'), 'utf8'));
+const recent = JSON.parse(readFileSync(join(ROOT, 'data/recent.json'), 'utf8'));
+const slug = (name) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''); // as build-work.mjs
+const workPage = new Map(recent.repos.map((r) => [r.name, `${base}/work/${slug(r.name)}/`]));
 const full = [text.trimEnd(), '', '## Every original repository', '',
   `> ${index.counts.own} repositories on GitHub and GitLab where the owner wrote at least half of the commits,`,
   `> derived ${index.generated_at}. Forks and mirrors (${index.counts.forks + index.counts.mirrors}) are not listed.`, ''];
@@ -73,7 +78,7 @@ for (const [key, category] of Object.entries(catalogue.categories)) {
   if (!repos.length) continue;
   full.push(`### ${category.name} (${repos.length})`, '');
   for (const r of repos) {
-    const links = [r.hosts.github && `GitHub ${r.hosts.github}`, r.hosts.gitlab && `GitLab ${r.hosts.gitlab}`, r.site && `site ${r.site}`].filter(Boolean).join('; ');
+    const links = [workPage.has(r.name) && `article ${workPage.get(r.name)}`, r.hosts.github && `GitHub ${r.hosts.github}`, r.hosts.gitlab && `GitLab ${r.hosts.gitlab}`, r.site && `site ${r.site}`].filter(Boolean).join('; ');
     const facts = [r.language, r.created_at.slice(0, 4)].filter(Boolean).join(', ');
     full.push(`- ${r.name}${r.description ? `: ${oneLine(r.description)}` : ''} (${facts}). ${links}`);
   }

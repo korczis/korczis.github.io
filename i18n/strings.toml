@@ -1369,3 +1369,7 @@ cs = "Štítky, které sdílejí stránky s tímto štítkem, velké podle počt
 [viz_as_list]
 en = "Show as a list"
 cs = "Zobrazit jako seznam"
+
+[glossary_term_pad]
+en = "A term of the glossary."
+cs = "Pojem ze slovníku."

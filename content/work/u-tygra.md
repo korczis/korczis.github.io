@@ -4,6 +4,7 @@ title = "u-tygra"
 description = "u-tygra. Active in the last 24 months; tools. A project by Tomas Korcak, active in the last 24 months."
 template = "work.html"
 weight = 28
+updated = "2025-06-03T05:15:05Z"
 
 [taxonomies]
 tags = ["Tools", "JavaScript", "HTML", "CSS"]

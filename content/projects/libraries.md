@@ -4,6 +4,7 @@ title = "Libraries"
 description = "Reusable building blocks for other programs: clients, bindings, validators, parsers and framework extensions, mostly Elixir and Rust."
 template = "category.html"
 weight = 9
+updated = "2025-12-20T21:25:51Z"
 
 [taxonomies]
 tags = ["Libraries", "hydra", "in-rust-we-trust", "rustler-test", "streamflow"]

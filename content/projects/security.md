@@ -4,6 +4,7 @@ title = "Security and OSINT"
 description = "Open-source intelligence, radio and network security research: cases, proofs of concept and the tooling around them."
 template = "category.html"
 weight = 6
+updated = "2017-07-08T19:01:44Z"
 
 [taxonomies]
 tags = ["Security and OSINT", "magic", "zlown", "peacemaker", "ratnet"]

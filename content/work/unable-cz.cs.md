@@ -4,6 +4,7 @@ title = "unable.cz"
 description = "unable.cz: projekt z kategorie Nástroje, hlavní jazyk JavaScript, poslední commit 19. července 2026."
 template = "work.html"
 weight = 17
+updated = "2026-07-19T20:51:54Z"
 
 [taxonomies]
 tags = ["Nástroje", "JavaScript", "HTML", "CSS"]

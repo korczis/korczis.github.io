@@ -14,7 +14,8 @@
 {%- elif term is defined -%}{%- set d = trans(key="tag_description", lang=lang) | replace(from="{tag}", to=term.name) | replace(from="{n}", to=term.pages | length ~ "") -%}
 {%- elif terms is defined -%}{%- set d = trans(key="tags_description", lang=lang) -%}
 {%- else -%}{%- set d = config.description -%}{%- endif -%}
-{%- set indexable = fm or term is defined or terms is defined -%}
+{#- A tag with a single page is thin: it repeats that page, so it stays out of the index (and the sitemap). #}
+{%- set indexable = fm or (term is defined and term.pages | length > 1) or terms is defined -%}
 {%- if fm and fm.extra.og_title is defined -%}{%- set og_t = fm.extra.og_title -%}{%- else -%}{%- set og_t = t -%}{%- endif -%}
 {%- if fm and fm.extra.og_description is defined -%}{%- set og_d = fm.extra.og_description -%}{%- else -%}{%- set og_d = d -%}{%- endif -%}
 {%- if fm and fm.extra.og_image is defined -%}{%- set og_img = fm.extra.og_image -%}{%- elif lang == "cs" -%}{%- set og_img = "og/cs-home.png" -%}{%- else -%}{%- set og_img = "og/home.png" -%}{%- endif -%}
@@ -44,6 +45,9 @@
   {%- if tr.lang == config.default_language %}<link rel="alternate" hreflang="x-default" href="{{ tr.permalink }}">{% endif %}
   {%- endfor %}
   {%- endif %}
+  {%- if page is defined and page.updated %}
+  <meta property="article:modified_time" content="{{ page.updated }}">
+  {%- endif %}
   <meta property="og:title" content="{{ og_t }}">
   <meta property="og:description" content="{{ og_d }}">
   <meta property="og:url" content="{{ url }}">
@@ -66,19 +70,20 @@
   <link rel="me" href="https://github.com/{{ config.extra.github }}">
 {%- if indexable %}
 {%- set person = config.base_url ~ "/#person" %}
-{%- set website = config.base_url ~ "/#website" %}
+{%- set website = config.base_url ~ lp ~ "/#website" %}
   <script type="application/ld+json">
   {"@context": "https://schema.org", "@graph": [
     {"@type": "Person", "@id": {{ person | json_encode | safe }}, "name": {{ config.extra.author | json_encode | safe }},
-     "alternateName": {{ config.extra.github | json_encode | safe }}, "url": {{ (config.base_url ~ lp ~ "/") | json_encode | safe }},
-     "image": {{ (config.base_url ~ "/favicon.svg") | json_encode | safe }},
+     "alternateName": [{{ config.extra.github | json_encode | safe }}, {{ config.extra.author_native | json_encode | safe }}], "url": {{ (config.base_url ~ "/") | json_encode | safe }},
+     "image": {{ ("https://avatars.githubusercontent.com/" ~ config.extra.github) | json_encode | safe }},
+     "jobTitle": {{ trans(key="software_engineer", lang=lang) | replace(from=" ·", to="") | json_encode | safe }},
      "homeLocation": {"@type": "Place", "name": {{ config.extra.location | json_encode | safe }}},
      "sameAs": ["https://github.com/{{ config.extra.github }}", "https://gitlab.com/{{ config.extra.github }}", {{ config.extra.majordomus_url | json_encode | safe }}],
-     {%- set sx = load_data(path="data/index.json") %}{% set scat = load_data(path="data/projects.toml") %}
-     "knowsAbout": [{% for key, c in scat.categories %}{{ c["name" ~ sfx] | json_encode | safe }}, {% endfor %}{% for l in sx.languages %}{% if loop.index <= 6 %}{{ l.name | json_encode | safe }}{% if loop.index < 6 %}, {% endif %}{% endif %}{% endfor %}]},
+     {%- set sx = load_data(path="data/index.json") %}{% set sgl = load_data(path="data/glossary.toml") %}
+     "knowsAbout": [{% for l in sx.languages %}{% if loop.index <= 8 %}{{ l.name | json_encode | safe }}, {% endif %}{% endfor %}{% for gt in sgl.terms %}{% if gt.kind == "technology" %}{{ gt.term | json_encode | safe }}, {% endif %}{% endfor %}"Software engineering"]},
     {"@type": "WebSite", "@id": {{ website | json_encode | safe }}, "url": {{ (config.base_url ~ lp ~ "/") | json_encode | safe }},
      "name": {{ config.title | json_encode | safe }}, "description": {{ config.description | json_encode | safe }},
-     "inLanguage": "en", "author": {"@id": {{ person | json_encode | safe }}}, "publisher": {"@id": {{ person | json_encode | safe }}}},
+     "inLanguage": {{ lang | default(value=config.default_language) | json_encode | safe }}, "author": {"@id": {{ person | json_encode | safe }}}, "publisher": {"@id": {{ person | json_encode | safe }}}},
     {"@type": {% if term is defined or terms is defined %}"CollectionPage"{% elif schema == "project" %}"ItemPage"{% elif schema == "collection" or schema == "index" or schema == "glossary" %}"CollectionPage"{% elif schema == "about" %}"AboutPage"{% elif schema == "home" or schema == "profile" %}"ProfilePage"{% else %}"WebPage"{% endif %},
      "@id": {{ (url ~ "#webpage") | json_encode | safe }}, "url": {{ url | json_encode | safe }}, "name": {{ t | json_encode | safe }},
      "description": {{ d | json_encode | safe }}, "isPartOf": {"@id": {{ website | json_encode | safe }}},
@@ -121,8 +126,10 @@
        {%- for p in cat.projects %}{% if not scope or p.category == scope %}{% set_global pos = pos + 1 %}
        {% if pos > 1 %},{% endif %}{"@type": "ListItem", "position": {{ pos }}, "item": {"@type": "SoftwareSourceCode",
         "name": {{ p.name | json_encode | safe }}, "description": {{ p["tagline" ~ sfx] | json_encode | safe }},
-        "codeRepository": "https://github.com/korczis/{{ p.repo }}",
-        "url": {% if p.url is defined %}{{ p.url | json_encode | safe }}{% else %}"https://github.com/korczis/{{ p.repo }}"{% endif %},
+        {%- set_global prepo = "https://github.com/korczis/" ~ p.repo %}
+        {%- for r in sx.repos %}{% if r.name == p.repo %}{% if r.hosts.github is defined %}{% set_global prepo = r.hosts.github %}{% else %}{% set_global prepo = r.hosts.gitlab %}{% endif %}{% endif %}{% endfor %}
+        "codeRepository": {{ prepo | json_encode | safe }},
+        "url": {% if p.url is defined %}{{ p.url | json_encode | safe }}{% else %}{{ prepo | json_encode | safe }}{% endif %},
         {%- if gh.projects[p.repo].language %}
         "programmingLanguage": {{ gh.projects[p.repo].language | json_encode | safe }},
         {%- endif %}

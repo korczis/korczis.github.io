@@ -133,7 +133,8 @@
             <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary-100 text-primary-700 dark:bg-primary-900 dark:text-primary-300">{{ <category_icon key={r.category} class="h-5 w-5" /> }}</span>
             <span class="min-w-0 flex-1">
               <span class="flex flex-wrap items-center gap-2 text-sm font-semibold text-gray-900 group-hover:underline dark:text-white">{{ r.name }}{% if r.curated %}<span class="rounded bg-primary-100 px-1.5 py-0.5 text-xs font-medium text-primary-800 no-underline dark:bg-primary-900 dark:text-primary-300">{{ trans(key="featured", lang=lang) | safe }}</span>{% endif %}</span>
-              <span class="block truncate text-sm text-gray-600 dark:text-gray-400">{% if r.description %}{{ r.description }}{% elif r.readme %}{{ r.readme }}{% endif %}</span>
+              {%- set_global rline = "" %}{% if lang == "cs" and r.curated %}{% for p in cat.projects %}{% if p.repo == r.name %}{% set_global rline = p.tagline_cs %}{% endif %}{% endfor %}{% endif %}
+              <span class="block truncate text-sm text-gray-600 dark:text-gray-400">{% if rline %}{{ rline }}{% elif r.description %}{{ r.description }}{% elif r.readme %}{{ r.readme }}{% endif %}</span>
             </span>
             <span class="hidden shrink-0 text-right sm:block">
               <time datetime="{{ r.last_commit }}" class="tabular block text-xs text-gray-600 dark:text-gray-400">{{ r.last_commit | date(format="%-d %b %Y") }}</time>

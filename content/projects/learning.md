@@ -4,6 +4,7 @@ title = "Learning and experiments"
 description = "Learning materials, katas and experiments across many languages: the sketches that came before the projects."
 template = "category.html"
 weight = 10
+updated = "2021-06-03T20:12:11Z"
 
 [taxonomies]
 tags = ["Learning and experiments", "happ", "Test-Elixir", "node-proxy-upload", "skull-cpp"]

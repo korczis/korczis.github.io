@@ -4,6 +4,7 @@ title = "Sonic Playground"
 description = "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme"
 template = "work.html"
 weight = 2
+updated = "2026-11-14T02:33:03Z"
 
 [taxonomies]
 tags = ["Media and art", "Python", "JavaScript", "HTML"]

@@ -4,6 +4,7 @@ title = "the-psycho"
 description = "the-psycho: projekt z kategorie Nástroje, hlavní jazyk Elixir, poslední commit 4. února 2026."
 template = "work.html"
 weight = 19
+updated = "2026-02-04T23:37:05Z"
 
 [taxonomies]
 tags = ["Nástroje", "Elixir", "HTML+EEX", "JavaScript"]

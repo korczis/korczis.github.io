@@ -4,6 +4,7 @@ title = "openttd-prismatic-bridge"
 description = "openttd-prismatic-bridge: projekt z kategorie Média a umění, hlavní jazyk Python, poslední commit 24. července 2026."
 template = "work.html"
 weight = 15
+updated = "2026-07-24T16:40:44Z"
 
 [taxonomies]
 tags = ["Média a umění", "Python", "HTML", "Squirrel"]

@@ -4,6 +4,7 @@ title = "cognitive-reasoning"
 description = "cognitive-reasoning: projekt z kategorie Inženýrství AI, poslední commit 25. dubna 2025."
 template = "work.html"
 weight = 30
+updated = "2025-04-25T11:08:12Z"
 
 [taxonomies]
 tags = ["Inženýrství AI"]

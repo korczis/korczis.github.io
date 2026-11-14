@@ -58,6 +58,9 @@ function article(key, c, lang) {
   return p.join('\n\n');
 }
 
+// The newest moment as UTC to the second (GitLab writes offsets and milliseconds), else the fallback.
+const utc = (ms, fallback) => new Date(Number.isFinite(ms) ? ms : fallback).toISOString().replace(/\.\d+Z$/, 'Z');
+
 const wanted = new Map();
 for (const [position, [key, c]] of Object.entries(catalogue.categories).entries()) {
   const projects = catalogue.projects.filter((p) => p.category === key);
@@ -73,6 +76,7 @@ title = ${q(name)}
 description = ${q(cs ? c.description_cs : c.description)}
 template = "category.html"
 weight = ${position + 1}
+updated = ${q(utc(Math.max(...index.repos.filter((r) => r.category === key).map((r) => Date.parse(r.pushed_at))), index.generated_at))}
 
 [taxonomies]
 tags = [${[name, ...names.slice(0, 4)].map(q).join(', ')}]

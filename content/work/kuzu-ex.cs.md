@@ -4,6 +4,7 @@ title = "kuzu-ex"
 description = "kuzu-ex: projekt z kategorie Data a GIS, hlavní jazyk Elixir, poslední commit 29. listopadu 2024."
 template = "work.html"
 weight = 32
+updated = "2024-11-29T05:06:28Z"
 
 [taxonomies]
 tags = ["Data a GIS", "Elixir", "Python"]

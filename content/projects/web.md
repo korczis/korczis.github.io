@@ -4,6 +4,7 @@ title = "Web"
 description = "Websites and web applications: single-page apps, Phoenix and Elm frontends, landing pages and the sites of friends."
 template = "category.html"
 weight = 8
+updated = "2025-12-20T21:25:15Z"
 
 [taxonomies]
 tags = ["Web", "job-processor", "nestravenkam", "tosh", "the-scratch"]

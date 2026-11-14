@@ -4,6 +4,7 @@ title = "distance-calculator"
 description = "If available in Hex, the package can be installed by adding distancecalculator to your list of dependencies in mix.exs:"
 template = "work.html"
 weight = 39
+updated = "2024-04-23T20:00:08Z"
 
 [taxonomies]
 tags = ["Science and visualisation", "Elixir"]

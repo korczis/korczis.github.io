@@ -4,6 +4,7 @@ title = "sig"
 description = "sig: projekt z kategorie Inženýrství AI, hlavní jazyk Elixir, poslední commit 4. února 2026."
 template = "work.html"
 weight = 22
+updated = "2026-02-04T23:36:59Z"
 
 [taxonomies]
 tags = ["Inženýrství AI", "Elixir", "HTML+EEX", "Shell"]

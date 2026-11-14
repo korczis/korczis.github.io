@@ -14,6 +14,8 @@ Every project below links to its source on GitHub; most have a live site.
 - [Repositories](https://korczis.github.io/repositories/): every original repository on GitHub and GitLab
 - [Recent work](https://korczis.github.io/work/): every project with a commit in the last 12, 24 and 48 months, one page each
 - [Stack](https://korczis.github.io/stack/): the tools and practices behind every project
+- [Glossary](https://korczis.github.io/glossary/): every concept, language and technology the pages build on, defined and sourced
+- [Czech version](https://korczis.github.io/cs/): the same site, every page translated
 
 ## AI engineering
 

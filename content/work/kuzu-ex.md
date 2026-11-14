@@ -4,6 +4,7 @@ title = "kuzu-ex"
 description = "Elixir SDK for KuzuDB with graph schema DSL and query builder, designed for large-scale graph analytics and data exploration."
 template = "work.html"
 weight = 32
+updated = "2024-11-29T05:06:28Z"
 
 [taxonomies]
 tags = ["Data and GIS", "Elixir", "Python"]

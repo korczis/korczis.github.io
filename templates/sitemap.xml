@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+{#- Zola's sitemap, less the tags with a single page: templates/partials/seo.html marks those noindex,
+    and a sitemap lists only what may be indexed. lastmod comes from each page's derived `updated`. #}
+{%- set_global thin = " " %}
+{%- for l in ["en", "cs"] %}{% set tx = get_taxonomy(kind="tags", lang=l) %}
+{%- for item in tx.items %}{% if item.pages | length < 2 %}{% set_global thin = thin ~ item.permalink ~ " " %}{% endif %}{% endfor %}
+{%- endfor %}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    {%- for sitemap_entry in entries %}{% if not (" " ~ sitemap_entry.permalink ~ " ") in thin %}
+    <url>
+        <loc>{{ sitemap_entry.permalink | escape_xml | safe }}</loc>
+        {%- if sitemap_entry.updated %}
+        <lastmod>{{ sitemap_entry.updated }}</lastmod>
+        {%- endif %}
+    </url>
+    {%- endif %}{% endfor %}
+</urlset>

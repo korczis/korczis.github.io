@@ -4,6 +4,7 @@ title = "Catharsis as a Service"
 description = "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact."
 template = "work.html"
 weight = 9
+updated = "2026-09-14T23:06:01Z"
 
 [taxonomies]
 tags = ["Media and art", "HTML", "Python", "JavaScript"]

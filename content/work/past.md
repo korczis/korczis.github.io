@@ -4,6 +4,7 @@ title = "past"
 description = "\"Capture the soul of the story, not just its words.\""
 template = "work.html"
 weight = 21
+updated = "2026-02-04T23:37:01Z"
 
 [taxonomies]
 tags = ["Tools"]

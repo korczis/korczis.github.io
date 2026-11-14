@@ -4,6 +4,7 @@ title = "Knihovny"
 description = "Znovupoužitelné stavební bloky pro jiné programy: klienti, bindingy, validátory, parsery a rozšíření frameworků, hlavně Elixir a Rust."
 template = "category.html"
 weight = 9
+updated = "2025-12-20T21:25:51Z"
 
 [taxonomies]
 tags = ["Knihovny", "hydra", "in-rust-we-trust", "rustler-test", "streamflow"]

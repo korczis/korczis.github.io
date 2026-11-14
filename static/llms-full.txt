@@ -14,6 +14,8 @@ Every project below links to its source on GitHub; most have a live site.
 - [Repositories](https://korczis.github.io/repositories/): every original repository on GitHub and GitLab
 - [Recent work](https://korczis.github.io/work/): every project with a commit in the last 12, 24 and 48 months, one page each
 - [Stack](https://korczis.github.io/stack/): the tools and practices behind every project
+- [Glossary](https://korczis.github.io/glossary/): every concept, language and technology the pages build on, defined and sourced
+- [Czech version](https://korczis.github.io/cs/): the same site, every page translated
 
 ## AI engineering
 
@@ -73,19 +75,19 @@ Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist s
 
 ### AI engineering (7)
 
-- korczis.github.io: Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus. (JavaScript, 2024). GitHub https://github.com/korczis/korczis.github.io
-- prismatic-majordomus: AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model. (Rust, 2026). GitHub https://github.com/korczis/prismatic-majordomus; site https://korczis.github.io/prismatic-majordomus/
-- osint-case-ratcliffe-moscow-2026: Open-source intelligence assessment of the CIA Director's unannounced Moscow visit (2026-08-25) — maintained with Claude Code skills; reusable OSINT case toolkit (HTML, 2026). GitHub https://github.com/korczis/osint-case-ratcliffe-moscow-2026; site https://korczis.github.io/osint-case-ratcliffe-moscow-2026/
-- llm: Local-first, provider-agnostic archive of AI conversations (ChatGPT, Claude, Gemini, Codex) — immutable, content-addressed, searchable evidence layer built in Elixir/Ecto. (2026). GitLab https://gitlab.com/korczis/llm
-- sig: distributed cognitive framework in Elixir/OTP. (2025). GitLab https://gitlab.com/korczis/sig
-- edna: Edna je digitální kartářka, astroložka a analytička poháněná AI. Projekt spojuje mystiku, astrologii a psychologii s moderními LLM modely, aby uživatelům přinášel denní horoskopy, výklady karet, životní vhledy a psychologické reflexe. (2025). GitLab https://gitlab.com/korczis/edna
-- cognitive-reasoning (2025). GitHub https://github.com/korczis/cognitive-reasoning
+- korczis.github.io: Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus. (JavaScript, 2024). article https://korczis.github.io/work/korczis-github-io/; GitHub https://github.com/korczis/korczis.github.io
+- prismatic-majordomus: AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model. (Rust, 2026). article https://korczis.github.io/work/prismatic-majordomus/; GitHub https://github.com/korczis/prismatic-majordomus; site https://korczis.github.io/prismatic-majordomus/
+- osint-case-ratcliffe-moscow-2026: Open-source intelligence assessment of the CIA Director's unannounced Moscow visit (2026-08-25) — maintained with Claude Code skills; reusable OSINT case toolkit (HTML, 2026). article https://korczis.github.io/work/osint-case-ratcliffe-moscow-2026/; GitHub https://github.com/korczis/osint-case-ratcliffe-moscow-2026; site https://korczis.github.io/osint-case-ratcliffe-moscow-2026/
+- llm: Local-first, provider-agnostic archive of AI conversations (ChatGPT, Claude, Gemini, Codex) — immutable, content-addressed, searchable evidence layer built in Elixir/Ecto. (2026). article https://korczis.github.io/work/llm/; GitLab https://gitlab.com/korczis/llm
+- sig: distributed cognitive framework in Elixir/OTP. (2025). article https://korczis.github.io/work/sig/; GitLab https://gitlab.com/korczis/sig
+- edna: Edna je digitální kartářka, astroložka a analytička poháněná AI. Projekt spojuje mystiku, astrologii a psychologii s moderními LLM modely, aby uživatelům přinášel denní horoskopy, výklady karet, životní vhledy a psychologické reflexe. (2025). article https://korczis.github.io/work/edna/; GitLab https://gitlab.com/korczis/edna
+- cognitive-reasoning (2025). article https://korczis.github.io/work/cognitive-reasoning/; GitHub https://github.com/korczis/cognitive-reasoning
 
 ### Science and visualisation (14)
 
-- algoglyph: Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores. (TypeScript, 2026). GitHub https://github.com/korczis/algoglyph; site https://korczis.github.io/algoglyph/
-- oscilla: A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted. (JavaScript, 2026). GitHub https://github.com/korczis/oscilla; site https://korczis.github.io/oscilla/
-- distance-calculator (2024). GitLab https://gitlab.com/korczis/distance-calculator
+- algoglyph: Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores. (TypeScript, 2026). article https://korczis.github.io/work/algoglyph/; GitHub https://github.com/korczis/algoglyph; site https://korczis.github.io/algoglyph/
+- oscilla: A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted. (JavaScript, 2026). article https://korczis.github.io/work/oscilla/; GitHub https://github.com/korczis/oscilla; site https://korczis.github.io/oscilla/
+- distance-calculator (2024). article https://korczis.github.io/work/distance-calculator/; GitLab https://gitlab.com/korczis/distance-calculator
 - maze-rs: Maze for Programmers (Rust) (Rust, 2016). GitHub https://github.com/korczis/maze-rs; GitLab https://gitlab.com/korczis/maze-rs; site https://korczis.github.io/maze-rs/
 - rustas: Rust - Assembler, Mathematics, GPU and many others (Rust, 2018). GitHub https://github.com/korczis/rustas; GitLab https://gitlab.com/korczis/rustas
 - graph-flow (Rust, 2017). GitHub https://github.com/korczis/graph-flow; GitLab https://gitlab.com/korczis/graph-flow
@@ -100,7 +102,7 @@ Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist s
 
 ### Knowledge (8)
 
-- kompendium-epistemicke-anihilace: Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki. (Elixir, 2026). GitHub https://github.com/korczis/kompendium-epistemicke-anihilace; site https://korczis.github.io/kompendium-epistemicke-anihilace/
+- kompendium-epistemicke-anihilace: Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki. (Elixir, 2026). article https://korczis.github.io/work/kompendium-epistemicke-anihilace/; GitHub https://github.com/korczis/kompendium-epistemicke-anihilace; site https://korczis.github.io/kompendium-epistemicke-anihilace/
 - ReadingPhoneNumbersInRealTime (Swift, 2021). GitHub https://github.com/korczis/ReadingPhoneNumbersInRealTime
 - MinervaEye: iOS application for book management (Swift, 2020). GitHub https://github.com/korczis/MinervaEye
 - reading: Reading list (2019). GitHub https://github.com/korczis/reading; GitLab https://gitlab.com/korczis/reading
@@ -111,8 +113,8 @@ Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist s
 
 ### Data and GIS (47)
 
-- data-atlas: Katalog GIS a geodatových zdrojů — datasety, katastr, doprava, remote sensing, prostorová analytika. Jednosouborová prohledávatelná stránka. (Python, 2026). GitHub https://github.com/korczis/data-atlas; site https://korczis.github.io/data-atlas/
-- crisis-map: Mini crisis map: incident reports normalised, geocoded via local Nominatim, stored as PostGIS geography, served from one capability registry (LiveView, REST, OpenAPI, MCP, CLI) (Elixir, 2026). GitHub https://github.com/korczis/crisis-map; site https://korczis.github.io/crisis-map/
+- data-atlas: Katalog GIS a geodatových zdrojů — datasety, katastr, doprava, remote sensing, prostorová analytika. Jednosouborová prohledávatelná stránka. (Python, 2026). article https://korczis.github.io/work/data-atlas/; GitHub https://github.com/korczis/data-atlas; site https://korczis.github.io/data-atlas/
+- crisis-map: Mini crisis map: incident reports normalised, geocoded via local Nominatim, stored as PostGIS geography, served from one capability registry (LiveView, REST, OpenAPI, MCP, CLI) (Elixir, 2026). article https://korczis.github.io/work/crisis-map/; GitHub https://github.com/korczis/crisis-map; site https://korczis.github.io/crisis-map/
 - apollo-crawler-extension: Apollo Platform Chrome Extension (2019). GitLab https://gitlab.com/korczis/apollo-crawler-extension
 - microcrawler-crawler-bam-brno-cz (2019). GitLab https://gitlab.com/korczis/microcrawler-crawler-bam-brno-cz
 - microcrawler-crawler-all (2019). GitLab https://gitlab.com/korczis/microcrawler-crawler-all
@@ -130,7 +132,7 @@ Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist s
 - mapofffacts-com: Map Of Facts (2019). GitLab https://gitlab.com/korczis/mapofffacts-com
 - czech-stats (2020). GitLab https://gitlab.com/korczis/czech-stats
 - rocksdb_indexer (2022). GitLab https://gitlab.com/korczis/rocksdb_indexer
-- kuzu-ex (2024). GitLab https://gitlab.com/korczis/kuzu-ex
+- kuzu-ex (2024). article https://korczis.github.io/work/kuzu-ex/; GitLab https://gitlab.com/korczis/kuzu-ex
 - ctu-cz: Otevrena data ceskeho telekomunikacniho uradu (JavaScript, 2020). GitHub https://github.com/korczis/ctu-cz
 - data-playground: Playground for toying with data (2020). GitHub https://github.com/korczis/data-playground
 - gauc.ex: Elxir Wrapper for Gauc - Rust Wrapper for Couchbase (Elixir, 2017). GitHub https://github.com/korczis/gauc.ex
@@ -161,11 +163,11 @@ Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist s
 
 ### Media and art (8)
 
-- sonic-playground: Sonic Playground - Phoenix/Elixir music blog built on the Kita theme (Python, 2026). GitHub https://github.com/korczis/sonic-playground; site https://korczis.github.io/sonic-playground/
-- catharsis-as-a-service: Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact. (HTML, 2026). GitHub https://github.com/korczis/catharsis-as-a-service; site https://korczis.github.io/catharsis-as-a-service/
-- openttd-prismatic-bridge: REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform (2026). GitLab https://gitlab.com/korczis/openttd-prismatic-bridge
-- majordomus-reel: A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound (HTML, 2026). GitHub https://github.com/korczis/majordomus-reel; site https://korczis.github.io/majordomus-reel/
-- prismatic-blog (Dockerfile, 2025). GitHub https://github.com/korczis/prismatic-blog; site https://korczis.github.io/prismatic-blog/
+- sonic-playground: Sonic Playground - Phoenix/Elixir music blog built on the Kita theme (Python, 2026). article https://korczis.github.io/work/sonic-playground/; GitHub https://github.com/korczis/sonic-playground; site https://korczis.github.io/sonic-playground/
+- catharsis-as-a-service: Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact. (HTML, 2026). article https://korczis.github.io/work/catharsis-as-a-service/; GitHub https://github.com/korczis/catharsis-as-a-service; site https://korczis.github.io/catharsis-as-a-service/
+- openttd-prismatic-bridge: REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform (2026). article https://korczis.github.io/work/openttd-prismatic-bridge/; GitLab https://gitlab.com/korczis/openttd-prismatic-bridge
+- majordomus-reel: A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound (HTML, 2026). article https://korczis.github.io/work/majordomus-reel/; GitHub https://github.com/korczis/majordomus-reel; site https://korczis.github.io/majordomus-reel/
+- prismatic-blog (Dockerfile, 2025). article https://korczis.github.io/work/prismatic-blog/; GitHub https://github.com/korczis/prismatic-blog; site https://korczis.github.io/prismatic-blog/
 - dj-schnapps: Dj Schnapps (Elixir, 2019). GitHub https://github.com/korczis/dj-schnapps; GitLab https://gitlab.com/korczis/dj-schnapps
 - brepta: TTS via REST (JavaScript, 2017). GitHub https://github.com/korczis/brepta; GitLab https://gitlab.com/korczis/brepta
 - talkie: node.js TTS application (2015). GitHub https://github.com/korczis/talkie; GitLab https://gitlab.com/korczis/talkie
@@ -198,7 +200,7 @@ Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist s
 
 ### Web (9)
 
-- job-processor: This is a simple web service built with Elixir, Plug, and Cowboy that processes job tasks with dependencies and generates execution order and bash scripts. (2024). GitLab https://gitlab.com/korczis/job-processor
+- job-processor: This is a simple web service built with Elixir, Plug, and Cowboy that processes job tasks with dependencies and generates execution order and bash scripts. (2024). article https://korczis.github.io/work/job-processor/; GitLab https://gitlab.com/korczis/job-processor
 - nestravenkam: Stravenky (CSS, 2019). GitHub https://github.com/korczis/nestravenkam; GitLab https://gitlab.com/korczis/nestravenkam
 - tosh: Yet Another Web Application Template/Framework (Elixir, 2019). GitHub https://github.com/korczis/tosh; GitLab https://gitlab.com/korczis/tosh
 - the-scratch: Single Page Application written in Elm with Elixir/Phoenix Backend (JavaScript, 2017). GitHub https://github.com/korczis/the-scratch; GitLab https://gitlab.com/korczis/the-scratch
@@ -242,15 +244,15 @@ Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist s
 
 ### Tools (72)
 
-- astronomists (Python, 2026). GitHub https://github.com/korczis/astronomists; site https://korczis.github.io/astronomists/
-- vomaste.cz (JavaScript, 2026). GitHub https://github.com/korczis/vomaste.cz; site https://korczis.github.io/vomaste.cz/
-- the-psycho (2025). GitLab https://gitlab.com/korczis/the-psycho
-- unable.cz (JavaScript, 2026). GitHub https://github.com/korczis/unable.cz
-- gists-search: Catalogue, enrichment and search for a mirror of korczis's GitHub gists (Python, 2026). GitHub https://github.com/korczis/gists-search; site https://korczis.github.io/gists-search/
-- u-tygra (JavaScript, 2024). GitHub https://github.com/korczis/u-tygra; GitLab https://gitlab.com/korczis/u-tygra; site https://korczis.github.io/u-tygra/
-- tinder-nomics (2025). GitLab https://gitlab.com/korczis/tinder-nomics
-- prism (2024). GitLab https://gitlab.com/korczis/prism
-- past (2025). GitLab https://gitlab.com/korczis/past
+- astronomists (Python, 2026). article https://korczis.github.io/work/astronomists/; GitHub https://github.com/korczis/astronomists; site https://korczis.github.io/astronomists/
+- vomaste.cz (JavaScript, 2026). article https://korczis.github.io/work/vomaste-cz/; GitHub https://github.com/korczis/vomaste.cz; site https://korczis.github.io/vomaste.cz/
+- the-psycho (2025). article https://korczis.github.io/work/the-psycho/; GitLab https://gitlab.com/korczis/the-psycho
+- unable.cz (JavaScript, 2026). article https://korczis.github.io/work/unable-cz/; GitHub https://github.com/korczis/unable.cz
+- gists-search: Catalogue, enrichment and search for a mirror of korczis's GitHub gists (Python, 2026). article https://korczis.github.io/work/gists-search/; GitHub https://github.com/korczis/gists-search; site https://korczis.github.io/gists-search/
+- u-tygra (JavaScript, 2024). article https://korczis.github.io/work/u-tygra/; GitHub https://github.com/korczis/u-tygra; GitLab https://gitlab.com/korczis/u-tygra; site https://korczis.github.io/u-tygra/
+- tinder-nomics (2025). article https://korczis.github.io/work/tinder-nomics/; GitLab https://gitlab.com/korczis/tinder-nomics
+- prism (2024). article https://korczis.github.io/work/prism/; GitLab https://gitlab.com/korczis/prism
+- past (2025). article https://korczis.github.io/work/past/; GitLab https://gitlab.com/korczis/past
 - ApolloCrawler-github-io (2019). GitLab https://gitlab.com/korczis/ApolloCrawler-github-io
 - microcrawler (2019). GitLab https://gitlab.com/korczis/microcrawler
 - microcrawler-browser: Proof-of-Concept: Microcrawler in your Browser! (2019). GitLab https://gitlab.com/korczis/microcrawler-browser
@@ -262,20 +264,20 @@ Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist s
 - lethe-it: lethe.it - your personal smart links archive, organizer, classifier and much more (2019). GitLab https://gitlab.com/korczis/lethe-it
 - pavian-eu: pavian.eu website (2019). GitLab https://gitlab.com/korczis/pavian-eu
 - astudo (2022). GitLab https://gitlab.com/korczis/astudo
-- pdf_renderer (2024). GitLab https://gitlab.com/korczis/pdf_renderer
-- marketing-ideas (2024). GitLab https://gitlab.com/korczis/marketing-ideas
-- simple_geocoder (2024). GitLab https://gitlab.com/korczis/simple_geocoder
-- dispatcher (2024). GitLab https://gitlab.com/korczis/dispatcher
-- corvidae (2025). GitLab https://gitlab.com/korczis/corvidae
-- korczis.gitlab.io (2025). GitLab https://gitlab.com/korczis/korczis.gitlab.io
-- comtesse (2025). GitLab https://gitlab.com/korczis/comtesse
-- GHT (2025). GitLab https://gitlab.com/korczis/GHT
-- prismatic (Elixir, 2025). GitHub https://github.com/korczis/prismatic
-- tap (2024). GitHub https://github.com/korczis/tap
-- bubbler: Bubbler is a simple JavaScript application that generates a speech bubble with dynamic text over an image of a boy. The text is passed through a URL query parameter, allowing for easy customization of the speech content. (JavaScript, 2024). GitHub https://github.com/korczis/bubbler; site https://korczis.github.io/bubbler/
-- pissaleck: Anything about everything and vice versa (2024). GitHub https://github.com/korczis/pissaleck
-- MindScape (2023). GitHub https://github.com/korczis/MindScape
-- el-magico-cache: Elixir Cache (Elixir, 2023). GitHub https://github.com/korczis/el-magico-cache
+- pdf_renderer (2024). article https://korczis.github.io/work/pdf-renderer/; GitLab https://gitlab.com/korczis/pdf_renderer
+- marketing-ideas (2024). article https://korczis.github.io/work/marketing-ideas/; GitLab https://gitlab.com/korczis/marketing-ideas
+- simple_geocoder (2024). article https://korczis.github.io/work/simple-geocoder/; GitLab https://gitlab.com/korczis/simple_geocoder
+- dispatcher (2024). article https://korczis.github.io/work/dispatcher/; GitLab https://gitlab.com/korczis/dispatcher
+- corvidae (2025). article https://korczis.github.io/work/corvidae/; GitLab https://gitlab.com/korczis/corvidae
+- korczis.gitlab.io (2025). article https://korczis.github.io/work/korczis-gitlab-io/; GitLab https://gitlab.com/korczis/korczis.gitlab.io
+- comtesse (2025). article https://korczis.github.io/work/comtesse/; GitLab https://gitlab.com/korczis/comtesse
+- GHT (2025). article https://korczis.github.io/work/ght/; GitLab https://gitlab.com/korczis/GHT
+- prismatic (Elixir, 2025). article https://korczis.github.io/work/prismatic/; GitHub https://github.com/korczis/prismatic
+- tap (2024). article https://korczis.github.io/work/tap/; GitHub https://github.com/korczis/tap
+- bubbler: Bubbler is a simple JavaScript application that generates a speech bubble with dynamic text over an image of a boy. The text is passed through a URL query parameter, allowing for easy customization of the speech content. (JavaScript, 2024). article https://korczis.github.io/work/bubbler/; GitHub https://github.com/korczis/bubbler; site https://korczis.github.io/bubbler/
+- pissaleck: Anything about everything and vice versa (2024). article https://korczis.github.io/work/pissaleck/; GitHub https://github.com/korczis/pissaleck
+- MindScape (2023). article https://korczis.github.io/work/mindscape/; GitHub https://github.com/korczis/MindScape
+- el-magico-cache: Elixir Cache (Elixir, 2023). article https://korczis.github.io/work/el-magico-cache/; GitHub https://github.com/korczis/el-magico-cache
 - kanec (Elixir, 2019). GitHub https://github.com/korczis/kanec; GitLab https://gitlab.com/korczis/kanec
 - rest-hello-world-benchmark: Benchmark of Hello World REST Endpoint in various languages / frameworks (Elixir, 2022). GitHub https://github.com/korczis/rest-hello-world-benchmark
 - caregiver: Takes responsibility for your containers so you can spend more time with your (2022). GitHub https://github.com/korczis/caregiver

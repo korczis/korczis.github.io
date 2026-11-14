@@ -4,6 +4,7 @@ title = "Majordomus"
 description = "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen…"
 template = "work.html"
 weight = 6
+updated = "2026-11-13T00:33:43Z"
 
 [taxonomies]
 tags = ["Inženýrství AI", "Rust", "Shell", "JavaScript"]

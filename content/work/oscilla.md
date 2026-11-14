@@ -4,6 +4,7 @@ title = "Oscilla"
 description = "A zero-install acoustic laboratory in the browser."
 template = "work.html"
 weight = 3
+updated = "2026-11-13T05:10:17Z"
 
 [taxonomies]
 tags = ["Science and visualisation", "JavaScript", "HTML", "CSS"]
