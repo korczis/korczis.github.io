@@ -1,0 +1,243 @@
+# The D3 simulators (static/js/viz/stream.js, pack.js, spiral.js): their controls, tooltips and
+# counts. A text with a count has its plural forms (key__one, key__few, key__other), which
+# KorczisHub.t() picks by the language's rule; English has no "few" and repeats "other".
+
+# --- shared ------------------------------------------------------------------------------------
+[js_d3_tap_again]
+en = "Tap again to open"
+cs = "Dalším klepnutím otevřete"
+
+[js_d3_n_repositories__one]
+en = "{n} repository"
+cs = "{n} repozitář"
+
+[js_d3_n_repositories__few]
+en = "{n} repositories"
+cs = "{n} repozitáře"
+
+[js_d3_n_repositories__other]
+en = "{n} repositories"
+cs = "{n} repozitářů"
+
+[js_d3_n_stars__one]
+en = "{n} star"
+cs = "{n} hvězdička"
+
+[js_d3_n_stars__few]
+en = "{n} stars"
+cs = "{n} hvězdičky"
+
+[js_d3_n_stars__other]
+en = "{n} stars"
+cs = "{n} hvězdiček"
+
+[js_d3_n_recent__one]
+en = "{n} recently active repository"
+cs = "{n} nedávno aktivní repozitář"
+
+[js_d3_n_recent__few]
+en = "{n} recently active repositories"
+cs = "{n} nedávno aktivní repozitáře"
+
+[js_d3_n_recent__other]
+en = "{n} recently active repositories"
+cs = "{n} nedávno aktivních repozitářů"
+
+[js_d3_n_contributions__one]
+en = "{n} contribution"
+cs = "{n} příspěvek"
+
+[js_d3_n_contributions__few]
+en = "{n} contributions"
+cs = "{n} příspěvky"
+
+[js_d3_n_contributions__other]
+en = "{n} contributions"
+cs = "{n} příspěvků"
+
+[js_d3_n_commits__one]
+en = "{n} commit"
+cs = "{n} commit"
+
+[js_d3_n_commits__few]
+en = "{n} commits"
+cs = "{n} commity"
+
+[js_d3_n_commits__other]
+en = "{n} commits"
+cs = "{n} commitů"
+
+[js_d3_n_more__one]
+en = "and {n} more"
+cs = "a ještě {n} další"
+
+[js_d3_n_more__few]
+en = "and {n} more"
+cs = "a ještě {n} další"
+
+[js_d3_n_more__other]
+en = "and {n} more"
+cs = "a ještě {n} dalších"
+
+# --- stream: languages over the years ----------------------------------------------------------
+[js_d3_stream_from]
+en = "From year"
+cs = "Od roku"
+
+[js_d3_stream_to]
+en = "To year"
+cs = "Do roku"
+
+[js_d3_stream_offset]
+en = "Baseline"
+cs = "Základna"
+
+[js_d3_stream_offset_wiggle]
+en = "Around a centre line"
+cs = "Kolem středové osy"
+
+[js_d3_stream_offset_expand]
+en = "Share of 100 %"
+cs = "Podíl ze 100 %"
+
+[js_d3_stream_offset_zero]
+en = "From zero"
+cs = "Od nuly"
+
+[js_d3_stream_top]
+en = "Languages with their own stream"
+cs = "Jazyky s vlastním proudem"
+
+[js_d3_n_languages__one]
+en = "{n} language"
+cs = "{n} jazyk"
+
+[js_d3_n_languages__few]
+en = "{n} languages"
+cs = "{n} jazyky"
+
+[js_d3_n_languages__other]
+en = "{n} languages"
+cs = "{n} jazyků"
+
+[js_d3_stream_isolate]
+en = "Show one language"
+cs = "Ukázat jen jeden jazyk"
+
+[js_d3_stream_all]
+en = "All languages"
+cs = "Všechny jazyky"
+
+# --- pack: category, language, repository ------------------------------------------------------
+[js_d3_pack_all]
+en = "All repositories"
+cs = "Všechny repozitáře"
+
+[js_d3_pack_no_language]
+en = "No language"
+cs = "Bez jazyka"
+
+[js_d3_pack_path]
+en = "Zoom path"
+cs = "Cesta přiblížení"
+
+[js_d3_pack_zoom]
+en = "Click to zoom in"
+cs = "Kliknutím přiblížíte"
+
+[js_d3_pack_top]
+en = "Largest bubbles shown"
+cs = "Počet největších bublin"
+
+[js_d3_pack_metric]
+en = "Bubble size"
+cs = "Velikost bublin"
+
+[js_d3_pack_metric_repos]
+en = "Repositories"
+cs = "Repozitáře"
+
+[js_d3_pack_metric_stars]
+en = "Stars"
+cs = "Hvězdičky"
+
+[js_d3_pack_metric_recent]
+en = "Recently active"
+cs = "Nedávno aktivní"
+
+[js_d3_pack_depth]
+en = "Levels shown"
+cs = "Zobrazené úrovně"
+
+[js_d3_n_levels__one]
+en = "{n} level"
+cs = "{n} úroveň"
+
+[js_d3_n_levels__few]
+en = "{n} levels"
+cs = "{n} úrovně"
+
+[js_d3_n_levels__other]
+en = "{n} levels"
+cs = "{n} úrovní"
+
+[js_d3_pack_focus]
+en = "Zoom to"
+cs = "Přiblížit na"
+
+[js_d3_pack_out]
+en = "Step out"
+cs = "O úroveň výš"
+
+# --- spiral: a year of contributions -----------------------------------------------------------
+[js_d3_spiral_window]
+en = "Period"
+cs = "Období"
+
+[js_d3_spiral_last]
+en = "Last 12 months"
+cs = "Posledních 12 měsíců"
+
+[js_d3_spiral_threshold]
+en = "Light the days with at least"
+cs = "Zvýraznit dny s nejméně"
+
+[js_d3_spiral_off]
+en = "Off"
+cs = "Vypnuto"
+
+[js_d3_spiral_at_least__one]
+en = "{n} contribution"
+cs = "{n} příspěvkem"
+
+[js_d3_spiral_at_least__few]
+en = "{n} contributions"
+cs = "{n} příspěvky"
+
+[js_d3_spiral_at_least__other]
+en = "{n} contributions"
+cs = "{n} příspěvky"
+
+[js_d3_spiral_unit__one]
+en = "contribution"
+cs = "příspěvek"
+
+[js_d3_spiral_unit__few]
+en = "contributions"
+cs = "příspěvky"
+
+[js_d3_spiral_unit__other]
+en = "contributions"
+cs = "příspěvků"
+
+[js_d3_spiral_days_over__one]
+en = "{n} day at {min} or more"
+cs = "{n} den s {min} a více"
+
+[js_d3_spiral_days_over__few]
+en = "{n} days at {min} or more"
+cs = "{n} dny s {min} a více"
+
+[js_d3_spiral_days_over__other]
+en = "{n} days at {min} or more"
+cs = "{n} dní s {min} a více"
