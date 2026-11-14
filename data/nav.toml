@@ -1,0 +1,104 @@
+# The site's navigation, once: the sidebar, the footer and the command palette (templates/palette.json)
+# render this list, so a page added here appears in all three and none of them can drift.
+#
+#   key      i18n key of the label (i18n/*.toml)
+#   path     the page under the language prefix ("/cs" is added for Czech)
+#   icon     a name templates/components.html `icon` knows
+#   badge    the count shown beside it, by source: projects (curated catalogue), repositories
+#            (original repositories in the index), work (projects with a recent commit), tags
+#            (tags in the page's language); empty for none
+#   hint     i18n key of the palette's one-line description
+#   sidebar, footer, palette   where the entry is shown
+#
+# It lives beside data/site.toml, not in it: site.toml holds words with Czech twins, and these are
+# keys and paths, the same in every language.
+
+[[nav]]
+key = "overview"
+path = "/"
+icon = "globe"
+badge = ""
+hint = "hint_home"
+sidebar = true
+footer = false
+palette = true
+
+[[nav]]
+key = "about"
+path = "/about/"
+icon = "book"
+badge = ""
+hint = "hint_about"
+sidebar = true
+footer = false
+palette = true
+
+[[nav]]
+key = "recent_work"
+path = "/work/"
+icon = "clock"
+badge = "work"
+hint = "hint_work"
+sidebar = true
+footer = false
+palette = true
+
+[[nav]]
+key = "nav_projects"
+path = "/projects/"
+icon = "cube"
+badge = "projects"
+hint = "hint_projects"
+sidebar = true
+footer = true
+palette = true
+
+[[nav]]
+key = "repositories"
+path = "/repositories/"
+icon = "github"
+badge = "repositories"
+hint = "hint_repositories"
+sidebar = true
+footer = false
+palette = true
+
+[[nav]]
+key = "stack"
+path = "/stack/"
+icon = "code"
+badge = ""
+hint = "hint_stack"
+sidebar = true
+footer = true
+palette = true
+
+[[nav]]
+key = "glossary"
+path = "/glossary/"
+icon = "academic"
+badge = ""
+hint = "hint_glossary"
+sidebar = true
+footer = true
+palette = true
+
+[[nav]]
+key = "tags"
+path = "/tags/"
+icon = "tag"
+badge = "tags"
+hint = "hint_tags"
+sidebar = true
+footer = true
+palette = true
+
+[[nav]]
+key = "data"
+path = "/stack/#data"
+icon = "graph"
+badge = ""
+hint = "hint_data"
+sidebar = false
+footer = true
+palette = false

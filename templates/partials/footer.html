@@ -16,9 +16,10 @@
     {%- if fgh.profile.email %}
     <li><a href="mailto:{{ fgh.profile.email }}" class="hover:underline">{{ trans(key="contact_email", lang=lang) | safe }}</a></li>
     {%- endif %}
-    <li><a href="{{ config.base_url }}{{ lp }}/projects/" class="hover:underline">{{ trans(key="projects_2", lang=lang) | safe }}</a></li>
-    <li><a href="{{ config.base_url }}{{ lp }}/stack/" class="hover:underline">{{ trans(key="stack", lang=lang) | safe }}</a></li>
-    <li><a href="{{ config.base_url }}{{ lp }}/stack/#data" class="hover:underline">{{ trans(key="data", lang=lang) | safe }}</a></li>
+    {%- set fnav = load_data(path="data/nav.toml") %}
+    {%- for link in fnav.nav %}{% if link.footer %}
+    <li><a href="{{ config.base_url }}{{ lp }}{{ link.path }}" class="hover:underline">{{ trans(key=link.key, lang=lang) | safe }}</a></li>
+    {%- endif %}{% endfor %}
     <li><a href="{{ get_url(path='llms.txt') }}" class="hover:underline">llms.txt</a></li>
     <li><a href="{{ config.extra.repo_url }}" class="hover:underline">{{ trans(key="source", lang=lang) | safe }}</a></li>
   </ul>

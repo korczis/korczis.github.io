@@ -1,0 +1,15 @@
+# Interface texts of the shell and the shared components (lane ui-components): navigation, palette,
+# theme, pagination, empty states. scripts/build-i18n.mjs merges every i18n/*.toml; keys for scripts
+# start with js_.
+
+[kind_tag]
+en = "Tag"
+cs = "Štítek"
+
+[hint_tags]
+en = "Every tag, with the pages that carry it"
+cs = "Všechny štítky a stránky, které je nesou"
+
+[hint_data]
+en = "Where every number on the site comes from"
+cs = "Odkud pochází každé číslo na webu"

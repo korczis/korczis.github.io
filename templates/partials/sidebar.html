@@ -26,16 +26,23 @@
               </div>
             </form>
           </li>
-          {%- for link in [["overview", "/", "globe"], ["about", "/about/", "book"], ["recent_work", "/work/", "clock"], ["nav_projects", "/projects/", "cube"], ["repositories", "/repositories/", "github"], ["stack", "/stack/", "code"], ["glossary", "/glossary/", "academic"]] %}
+          {#- data/nav.toml: one list for the sidebar, the footer and the palette. An entry is active on
+              its page and on every page under it (a prefix match); the home only on itself. #}
+          {%- set nav = load_data(path="data/nav.toml") %}
+          {%- set ntags = get_taxonomy(kind="tags", lang=lang) %}
+          {%- for link in nav.nav %}{% if link.sidebar %}
+          {%- set target = lp ~ link.path %}
+          {%- set active = here == target or (link.path != "/" and here is starting_with(pat=target)) %}
           <li>
-            <a href="{{ config.base_url }}{{ lp }}{{ link[1] }}" class="{{ item }}{% if here == lp ~ link[1] or ((link[1] == "/work/" or link[1] == "/glossary/") and (lp ~ link[1]) in here) %}{{ on }}{% endif %}"{% if here == lp ~ link[1] %} aria-current="page"{% endif %}>
-              {{ <icon name={link[2]} class={ico} /> }}<span class="ml-3 flex-1 whitespace-nowrap">{{ trans(key=link[0], lang=lang) }}</span>
-              {%- if link[1] == "/projects/" %}<span class="{{ badge }}">{{ cat.projects | length }}</span>{% endif %}
-              {%- if link[1] == "/repositories/" %}<span class="{{ badge }}">{{ six.counts.own }}</span>{% endif %}
-              {%- if link[1] == "/work/" %}<span class="{{ badge }}">{{ src.repos | length }}</span>{% endif %}
+            <a href="{{ config.base_url }}{{ target }}" class="{{ item }}{% if active %}{{ on }}{% endif %}"{% if here == target %} aria-current="page"{% endif %}>
+              {{ <icon name={link.icon} class={ico} /> }}<span class="ml-3 flex-1 whitespace-nowrap">{{ trans(key=link.key, lang=lang) }}</span>
+              {%- if link.badge == "projects" %}<span class="{{ badge }}">{{ cat.projects | length }}</span>
+              {%- elif link.badge == "repositories" %}<span class="{{ badge }}">{{ six.counts.own }}</span>
+              {%- elif link.badge == "work" %}<span class="{{ badge }}">{{ src.repos | length }}</span>
+              {%- elif link.badge == "tags" %}<span class="{{ badge }}">{{ ntags.items | length }}</span>{% endif %}
             </a>
           </li>
-          {%- endfor %}
+          {%- endif %}{% endfor %}
         </ul>
         <div class="pb-2">
           <p class="{{ heading }}" id="sidebar-categories">{{ trans(key="categories", lang=lang) | safe }}</p>
