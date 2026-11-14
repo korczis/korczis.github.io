@@ -92,6 +92,10 @@ jobs:
         run: node scripts/build-categories.mjs --check
       - name: Work pages are current
         run: node scripts/build-work.mjs --check
+      - name: Glossary pages are current
+        run: node scripts/build-glossary.mjs --check
+      - name: Every page is an article with glossary terms; every term is used
+        run: node scripts/check-glossary.mjs
       - name: llms.txt is current
         run: node scripts/build-llms.mjs --check
       - name: Open Graph images are current
