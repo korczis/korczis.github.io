@@ -64,7 +64,12 @@ async function measure(browser, name, rel, width, scheme, full) {
   let bytes = 0;
   page.on('pageerror', (e) => errors.push(`page error: ${e.message}`));
   page.on('console', (m) => {
-    if (m.type() === 'error') errors.push(`console: ${m.text().slice(0, 200)}`);
+    if (m.type() !== 'error') return;
+    // A failed request to another origin (the live pulse asking api.github.com, rate-limited from a
+    // shared runner) is the browser's echo of a response the network rule below already excuses:
+    // the visual falls back to its snapshot and says so. Our own scripts' errors still count.
+    if (/^Failed to load resource/.test(m.text()) && !(m.location()?.url ?? '').startsWith(origin)) return;
+    errors.push(`console: ${m.text().slice(0, 200)}`);
   });
   page.on('response', (r) => {
     // The live Majordomus card may fail offline; the card then says "Snapshot". Not a finding.
