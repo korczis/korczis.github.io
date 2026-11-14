@@ -11,7 +11,7 @@
 // A category page passes its key as source.focus: that arm is the default filter.
 KorczisHub.viz('constellation', {
   lib: 'd3',
-  mount(box, source, { palette, reducedMotion, motion, go, link, escape, hash, t, id }) {
+  mount(box, source, { palette, reducedMotion, motion, go, link, escape, hash, t, reflect }) {
     if (!source || !Array.isArray(source.repos) || !source.repos.length) return { empty: true };
     const tip = KorczisHub.tooltip(box);
     const canvas = document.createElement('canvas');
@@ -99,19 +99,12 @@ KorczisHub.viz('constellation', {
     };
     const filterArm = () => (filter.startsWith('category:') ? keys.indexOf(filter.slice(9)) : -1);
 
-    // Night-sky ink: palette().night (the --hub-night-* tokens) once the layer exposes it; until
-    // then the theme tokens that stay light on the night sky in both themes.
-    const nightOf = (c) => c.night ?? {
-      ink: c.dark ? c.strong : c.surface,
-      text: c.dark ? c.text : c.grid,
-      dust: c.dark ? c.text : c.ramp[0],
-    };
-
     const paint = () => {
       const c = palette();
       const ramp = d3.interpolateRgbBasis(c.art);
       colours = keys.map((_k, i) => d3.color(ramp(keys.length === 1 ? 0.5 : i / (keys.length - 1))));
-      ink = { ...nightOf(c), glow: c.glow, font: c.font, alpha: c.alpha };
+      // The night sky is dark in both themes: its inks are the --hub-night-* tokens.
+      ink = { ...c.night, glow: c.glow, font: c.font, alpha: c.alpha };
     };
 
     // The drawing surface follows the box (the layer calls resize(), also when it is maximized),
@@ -218,15 +211,6 @@ KorczisHub.viz('constellation', {
         g.font = `700 12px ${ink.font}`;
         g.fillText(hovered.s.name, hovered.px, hovered.py - hovered.r * 3 - 6);
       }
-    };
-
-    // Let the panel show (and the address keep) a value the simulation changed itself, through the
-    // layer's own input listener: the layer renders control <key> as #<id>-<key>.
-    const reflect = (key, value) => {
-      const input = document.getElementById(`${id}-${key}`);
-      if (!input || String(input.value) === String(value)) return;
-      input.value = value;
-      input.dispatchEvent(new Event(input.tagName === 'SELECT' ? 'change' : 'input', { bubbles: true }));
     };
 
     const setYear = (next, time = performance.now()) => {
@@ -470,7 +454,7 @@ KorczisHub.viz('constellation', {
         box.removeEventListener('keydown', onKey);
         box.classList.remove(...FOCUS);
         if (!hadTabIndex) box.removeAttribute('tabindex');
-        tip.hide();
+        tip.remove();
         canvas.remove();
       },
     };
