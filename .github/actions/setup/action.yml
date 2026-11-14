@@ -1,10 +1,21 @@
 name: Toolchain
-description: Node.js 22 with npm ci, and Zola pinned by .zola-version and a SHA-256 digest.
+description: >-
+  Node.js 22 with npm ci, Zola pinned by .zola-version and a SHA-256 digest, and on request the
+  Chromium headless shell of the locked playwright-core, cached. Every workflow sets up through
+  here, so there is one setup-node version and one Node version to keep current.
+
+inputs:
+  zola:
+    description: Install Zola (false for jobs that only run Node scripts)
+    default: 'true'
+  browser:
+    description: Install the Chromium headless shell for scripts/audit-ui.mjs
+    default: 'false'
 
 runs:
   using: composite
   steps:
-    - uses: actions/setup-node@v4
+    - uses: actions/setup-node@v7
       with:
         node-version: '22'
         cache: npm
@@ -14,6 +25,7 @@ runs:
       run: npm ci
 
     - name: Install Zola
+      if: inputs.zola == 'true'
       shell: bash
       env:
         # Digest of zola-v<version>-x86_64-unknown-linux-gnu.tar.gz for the version in .zola-version.
@@ -28,3 +40,21 @@ runs:
         tar -xzf "$RUNNER_TEMP/$archive" -C "$RUNNER_TEMP/zola"
         echo "$RUNNER_TEMP/zola" >> "$GITHUB_PATH"
         "$RUNNER_TEMP/zola/zola" --version
+
+    # The browser build belongs to the playwright-core version, so that version is the cache key:
+    # a bump downloads once, every other run restores it.
+    - name: Browser version
+      if: inputs.browser == 'true'
+      id: browser
+      shell: bash
+      run: echo "playwright=$(node -p "require('playwright-core/package.json').version")" >> "$GITHUB_OUTPUT"
+    - name: Cache the browser
+      if: inputs.browser == 'true'
+      uses: actions/cache@v6
+      with:
+        path: ~/.cache/ms-playwright
+        key: ms-playwright-${{ runner.os }}-${{ runner.arch }}-${{ steps.browser.outputs.playwright }}
+    - name: Install the Chromium headless shell
+      if: inputs.browser == 'true'
+      shell: bash
+      run: npx playwright-core install chromium-headless-shell

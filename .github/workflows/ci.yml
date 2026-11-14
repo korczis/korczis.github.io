@@ -1,11 +1,14 @@
 name: CI
 
-# Runs on every branch but master (its status shows on the pull request of that branch), and is
-# called by pages.yml for master, so the gate in front of a deployment is exactly the gate in front
-# of a merge. A newer push to a branch cancels the run it supersedes.
+# Runs on every branch but master, on every pull request into master (the merge result, and the
+# commit lint over exactly the pull request's commits), and is called by pages.yml for master, so
+# the gate in front of a deployment is exactly the gate in front of a merge. A newer push to a
+# branch or a pull request cancels the run it supersedes.
 on:
   push:
     branches-ignore: [master]
+  pull_request:
+    branches: [master]
   workflow_call:
     inputs:
       runner:
@@ -15,18 +18,21 @@ on:
     secrets:
       MAJORDOMUS_KIT_EVIDENCE_FLOWBITE_PRO:
         required: false
+      NDA_DENYLIST:
+        required: false
 
 permissions:
   contents: read
 
 concurrency:
   group: ci-${{ github.workflow }}-${{ github.ref }}-${{ github.event_name }}
-  cancel-in-progress: ${{ github.event_name == 'push' }}
+  cancel-in-progress: ${{ github.event_name == 'push' || github.event_name == 'pull_request' }}
 
 jobs:
   commits:
     name: Conventional commits
     runs-on: ${{ inputs.runner || 'ubuntu-latest' }}
+    timeout-minutes: 5
     env:
       # The last commit of the previous site; its history predates the convention.
       IMPORT_BASE: b7059d5
@@ -53,6 +59,7 @@ jobs:
   supervision:
     name: Majordomus supervision
     runs-on: ${{ inputs.runner || 'ubuntu-latest' }}
+    timeout-minutes: 10
     env:
       MAJORDOMUS_VERSION: v1.0.1
     steps:
@@ -80,19 +87,20 @@ jobs:
     steps:
       - uses: actions/checkout@v7
       - uses: ./.github/actions/setup
+        with:
+          browser: 'true'
       # Every offline gate, from the one list (scripts/gates.mjs); ci: false gates say why they skip.
       - name: Every gate (scripts/gates.mjs)
+        env:
+          NDA_DENYLIST: ${{ secrets.NDA_DENYLIST }}
         run: node scripts/gates.mjs run --ci
       - name: Stamp the revision
         run: printf '%s\n' "$GITHUB_SHA" > public/revision.txt
+      # The same audit as npm run verify: its own build on a free port, the server stopped by a trap.
       - name: Accessibility, layout, visuals and links (axe-core WCAG 2.2 AA, CLS, overflow)
-        run: |
-          npx playwright-core install chromium-headless-shell
-          root="$RUNNER_TEMP/audit"
-          zola build --base-url http://127.0.0.1:18791 --output-dir "$root/site"
-          (cd "$root/site" && python3 -m http.server 18791 --bind 127.0.0.1 > /dev/null 2>&1 &)
-          for _ in $(seq 1 50); do curl -fs -o /dev/null http://127.0.0.1:18791/ && break; sleep 0.2; done
-          BASE_URL=http://127.0.0.1:18791/ SITE_DIR="$root/site" node scripts/audit-ui.mjs --shots "$RUNNER_TEMP/shots"
+        env:
+          NDA_DENYLIST: ${{ secrets.NDA_DENYLIST }}
+        run: scripts/verify-all.sh --audit-only --shots "$RUNNER_TEMP/shots"
       - name: Upload screenshots
         if: always()
         uses: actions/upload-artifact@v7

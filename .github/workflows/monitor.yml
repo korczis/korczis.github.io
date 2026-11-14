@@ -20,12 +20,12 @@ jobs:
     steps:
       - uses: actions/checkout@v7
       - uses: ./.github/actions/setup
+        with:
+          browser: 'true'
       - name: Build the site the link check reads
         run: npm run build
       - name: Production in the browser (axe-core WCAG 2.2 AA, CLS, overflow, visuals, links)
-        run: |
-          npx playwright-core install chromium-headless-shell
-          SITE_DIR=public node scripts/audit-ui.mjs --shots "$RUNNER_TEMP/shots"
+        run: SITE_DIR=public node scripts/audit-ui.mjs --shots "$RUNNER_TEMP/shots"
       - name: Every live project site answers
         run: node scripts/check-live.mjs
       - name: The data is fresh (the six-hourly refresh lands)

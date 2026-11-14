@@ -49,7 +49,9 @@ jobs:
         run: npm run --silent data && npm run --silent index && npm run --silent recent
       - name: Derive (categories, work pages, llms.txt, OG images, site.json)
         run: npm run --silent derive
-      - name: Every gate (data, front matter, derived files, viz layer, build, SEO)
+      - name: Every gate (scripts/gates.mjs run --ci)
+        env:
+          NDA_DENYLIST: ${{ secrets.NDA_DENYLIST }}
         run: npm run --silent check
       - name: Commit and deploy when something changed
         env:
