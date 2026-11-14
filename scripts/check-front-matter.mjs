@@ -3,14 +3,10 @@
 // front matter that matches it, category pages name a real category, and og_image names are
 // unique. The schema is the machine-readable description; this checks exactly its rules (no
 // dependency): required keys, no unknown keys, types, lengths, patterns, enums, array sizes.
-import { readFileSync, readdirSync } from 'node:fs';
-import { dirname, join } from 'node:path';
-import { fileURLToPath } from 'node:url';
-import { parse } from 'smol-toml';
+import { contentPages, readJson, readToml } from './lib/derive.mjs';
 
-const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const schema = JSON.parse(readFileSync(join(ROOT, 'static/schemas/front-matter.schema.json'), 'utf8'));
-const catalogue = parse(readFileSync(join(ROOT, 'data/projects.toml'), 'utf8'));
+const schema = readJson('static/schemas/front-matter.schema.json');
+const catalogue = readToml('data/projects.toml');
 const findings = [];
 
 function validate(value, rule, where) {
@@ -40,16 +36,10 @@ function validate(value, rule, where) {
   }
 }
 
-const files = (dir) => readdirSync(dir, { withFileTypes: true }).flatMap((e) => {
-  const path = join(dir, e.name);
-  return e.isDirectory() ? files(path) : e.name.endsWith('.md') ? [path] : [];
-});
 const images = new Map();
-for (const file of files(join(ROOT, 'content'))) {
-  const rel = file.slice(ROOT.length + 1);
-  const match = readFileSync(file, 'utf8').match(/^\+\+\+\n([\s\S]*?)\n\+\+\+/);
-  if (!match) { findings.push(`${rel}: no TOML front matter`); continue; }
-  const fm = parse(match[1]);
+const pages = contentPages();
+for (const { path: rel, fm } of pages) {
+  if (!fm) { findings.push(`${rel}: no TOML front matter`); continue; }
   validate(fm, { ...schema, type: 'object' }, rel);
   const category = fm.extra?.category;
   if (category && !(category in catalogue.categories)) findings.push(`${rel}: extra.category ${category} is not in data/projects.toml`);

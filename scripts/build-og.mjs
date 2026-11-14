@@ -8,29 +8,13 @@
 //                                            not 1200x630, or older than its SVG source text
 // CI runs --check only (no renderer needed); regenerate locally after changing front matter.
 import { execFileSync } from 'node:child_process';
-import { existsSync, mkdirSync, readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs';
-import { dirname, join } from 'node:path';
-import { fileURLToPath } from 'node:url';
-import { parse } from 'smol-toml';
+import { existsSync, mkdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
+import { join } from 'node:path';
+import { CHECK, ROOT, contentPages, identity, limits, report } from './lib/derive.mjs';
 
-const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const CHECK = process.argv.includes('--check');
-const W = 1200;
-const H = 630;
+const { width: W, height: H } = limits().og;
+const me = identity();
 const COLOURS = { page: '#111827', ink: '#f9fafb', muted: '#9ca3af', primary: '#3b82f6', soft: '#1e3a8a', glyph: '#60a5fa' };
-
-function frontMatter(file) {
-  const text = readFileSync(file, 'utf8');
-  const match = text.match(/^\+\+\+\n([\s\S]*?)\n\+\+\+/);
-  return match ? parse(match[1]) : null;
-}
-
-function contentFiles(dir) {
-  return readdirSync(dir, { withFileTypes: true }).flatMap((e) => {
-    const path = join(dir, e.name);
-    return e.isDirectory() ? contentFiles(path) : e.name.endsWith('.md') ? [path] : [];
-  });
-}
 
 const escape = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
@@ -106,8 +90,8 @@ function svg({ title, description, path }) {
 <g font-family="Inter, Helvetica Neue, Helvetica, Arial, sans-serif">
 <rect x="80" y="72" width="56" height="56" rx="12" fill="#1d4ed8"/>
 <g fill="none" stroke="#fff" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"><path d="M97.5 86v28M97.5 100l15.7-14M104.5 93.9l12.3 20.1"/></g>
-<text x="156" y="99" font-size="24" font-weight="700" fill="${COLOURS.ink}">Tomas Korcak</text>
-<text x="156" y="124" font-size="20" font-family="JetBrains Mono, Menlo, monospace" fill="${COLOURS.muted}">korczis.github.io${escape(path === 'home' ? '' : `/${path}/`)}</text>
+<text x="156" y="99" font-size="24" font-weight="700" fill="${COLOURS.ink}">${escape(me.author)}</text>
+<text x="156" y="124" font-size="20" font-family="JetBrains Mono, Menlo, monospace" fill="${COLOURS.muted}">${escape(me.host)}${escape(path === 'home' ? '' : `/${path}/`)}</text>
 ${titleText}
 ${descText}
 <rect x="80" y="540" width="292" height="44" rx="22" fill="${COLOURS.soft}"/>
@@ -124,8 +108,7 @@ function pngSize(file) {
 
 const findings = [];
 mkdirSync(join(ROOT, 'static/og'), { recursive: true });
-for (const file of contentFiles(join(ROOT, 'content'))) {
-  const fm = frontMatter(file);
+for (const { path: file, fm } of contentPages()) {
   if (!fm?.extra?.og_image) continue;
   const png = join(ROOT, 'static', fm.extra.og_image);
   const name = fm.extra.og_image.replace(/^og\//, '').replace(/\.png$/, '');
@@ -152,13 +135,7 @@ for (const file of contentFiles(join(ROOT, 'content'))) {
   if (existsSync(source) && existsSync(png) && readFileSync(source, 'utf8') === text) continue;
   writeFileSync(source, text);
   execFileSync('rsvg-convert', ['--width', String(W), '--height', String(H), '--output', png, source]);
-  console.log(`og: ${fm.extra.og_image} from ${file.slice(ROOT.length + 1)}`);
+  console.log(`og: ${fm.extra.og_image} from ${file}`);
 }
 
-if (CHECK) {
-  if (findings.length) {
-    for (const f of findings) console.error(`✗ ${f}; run node scripts/build-og.mjs`);
-    process.exit(1);
-  }
-  console.log('og images are current');
-}
+if (CHECK) report(findings, 'og images are current');

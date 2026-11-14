@@ -7,6 +7,7 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { parse } from 'smol-toml';
+import { suffix, t } from './derive.mjs';
 
 export function loadGlossary(root) {
   const { terms } = parse(readFileSync(join(root, 'data/glossary.toml'), 'utf8'));
@@ -16,6 +17,9 @@ export function loadGlossary(root) {
   for (const t of terms) for (const c of t.categories ?? []) byCategory.set(c, [...(byCategory.get(c) ?? []), t.id]);
   return { terms, byId: new Map(terms.map((t) => [t.id, t])), byName, byCategory };
 }
+
+// A site served by GitHub Pages (<login>.github.io), the one test every generator shares.
+export const onGithubPages = (site) => /^https?:\/\/[^/]+\.github\.io(\/|$)/.test(site ?? '');
 
 const unique = (ids) => [...new Set(ids.filter(Boolean))];
 
@@ -34,7 +38,7 @@ export function termsForRepo(g, r, curated) {
     ...termsForNames(g, [r.language]),
     ...termsForNames(g, curated?.stack ?? []),
     ...(g.byCategory.get(r.category) ?? []),
-    r.site && /github\.io/.test(r.site) ? 'github-pages' : null,
+    onGithubPages(r.site) ? 'github-pages' : null,
     'repository', 'commit', 'open-source',
   ]);
 }
@@ -43,9 +47,19 @@ export function termsForRepo(g, r, curated) {
 // a term by name when the glossary knows it (plain text otherwise), and escaping of foreign text.
 export function termLink(g, id, lang, label) {
   const t = g.byId.get(id);
-  const name = label ?? ((lang === 'cs' && t.term_cs) || t.term);
-  return `[${name}](@/glossary/${id}${lang === 'cs' ? '.cs' : ''}.md)`;
+  const name = label ?? (t[`term_${lang}`] || t.term);
+  return `[${name}](@/glossary/${id}${suffix(lang)}.md)`;
 }
+
+// Translated prose with term links: [[id]] or [[id|label]] becomes termLink (i18n/derive.toml).
+export function linkTerms(g, text, lang) {
+  return text.replace(/\[\[([a-z0-9-]+)(?:\|([^\]]+))?\]\]/g, (all, id, label) => {
+    if (!g.byId.has(id)) throw new Error(`i18n: [[${id}]] is not a term of data/glossary.toml`);
+    return termLink(g, id, lang, label);
+  });
+}
+// t() with term links resolved.
+export const tl = (g, key, lang, vars) => linkTerms(g, t(key, lang, vars), lang);
 
 export function nameLink(g, name, lang) {
   const id = g.byName.get(String(name).toLowerCase());
@@ -54,8 +68,8 @@ export function nameLink(g, name, lang) {
 
 export const mdEscape = (text) => String(text).replace(/([\\`*_[\]<>#|])/g, '\\$1');
 
-// "a, b and c" / "a, b a c"
+// "a, b and c" / "a, b a c": the conjunction is i18n's derive_and.
 export function listing(items, lang) {
   if (items.length < 2) return items.join('');
-  return `${items.slice(0, -1).join(', ')} ${lang === 'cs' ? 'a' : 'and'} ${items[items.length - 1]}`;
+  return `${items.slice(0, -1).join(', ')} ${t('derive_and', lang)} ${items[items.length - 1]}`;
 }

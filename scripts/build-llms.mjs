@@ -6,16 +6,15 @@
 // usage: node scripts/build-llms.mjs           write both files
 //        node scripts/build-llms.mjs --check   exit 1 if either committed file is stale
 import { readFileSync, writeFileSync } from 'node:fs';
-import { dirname, join } from 'node:path';
-import { fileURLToPath } from 'node:url';
-import { parse } from 'smol-toml';
+import { join } from 'node:path';
+import { CHECK, ROOT, config as siteConfig, identity, readJson, readToml, report, slug } from './lib/derive.mjs';
 
-const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const TARGET = join(ROOT, 'static/llms.txt');
 const TARGET_FULL = join(ROOT, 'static/llms-full.txt');
-const config = parse(readFileSync(join(ROOT, 'zola.toml'), 'utf8'));
-const catalogue = parse(readFileSync(join(ROOT, 'data/projects.toml'), 'utf8'));
-const base = config.base_url.replace(/\/$/, '');
+const config = siteConfig();
+const catalogue = readToml('data/projects.toml');
+const me = identity();
+const base = me.base;
 const oneLine = (text) => text.replace(/\s+/g, ' ').trim();
 
 const lines = [
@@ -47,7 +46,7 @@ for (const [key, category] of Object.entries(catalogue.categories)) {
   for (const p of projects) {
     const live = p.url ? ` Live: ${p.url}` : '';
     lines.push(
-      `- [${p.name}](https://github.com/korczis/${p.repo}): ${oneLine(p.tagline)}${live}`,
+      `- [${p.name}](${me.repoUrl(p.repo)}): ${oneLine(p.tagline)}${live}`,
     );
   }
   lines.push('');
@@ -58,17 +57,16 @@ lines.push(
   '',
   `- [Majordomus](https://majordomus.dev): the supervisory layer this site is built under`,
   `- [Full index for language models](${base}/llms-full.txt): every original repository with its links`,
-  `- [GitHub profile](https://github.com/korczis)`,
-  `- [GitLab profile](https://gitlab.com/korczis)`,
+  `- [GitHub profile](${me.githubUrl})`,
+  `- [GitLab profile](${me.gitlabUrl})`,
   '',
 );
 
 const text = lines.join('\n');
 
 // llms-full.txt: the summary above, then every original repository, grouped by inferred category.
-const index = JSON.parse(readFileSync(join(ROOT, 'data/index.json'), 'utf8'));
-const recent = JSON.parse(readFileSync(join(ROOT, 'data/recent.json'), 'utf8'));
-const slug = (name) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''); // as build-work.mjs
+const index = readJson('data/index.json');
+const recent = readJson('data/recent.json');
 const workPage = new Map(recent.repos.map((r) => [r.name, `${base}/work/${slug(r.name)}/`]));
 const full = [text.trimEnd(), '', '## Every original repository', '',
   `> ${index.counts.own} repositories on GitHub and GitLab where the owner wrote at least half of the commits,`,
@@ -87,7 +85,7 @@ for (const [key, category] of Object.entries(catalogue.categories)) {
 const fullText = full.join('\n');
 
 const outputs = [[TARGET, text], [TARGET_FULL, fullText]];
-if (process.argv.includes('--check')) {
+if (CHECK) {
   const stale = outputs.filter(([path, content]) => {
     try {
       return readFileSync(path, 'utf8') !== content;
@@ -95,11 +93,7 @@ if (process.argv.includes('--check')) {
       return true;
     }
   });
-  if (stale.length) {
-    for (const [path] of stale) console.error(`${path.slice(ROOT.length + 1)} is stale: run npm run llms`);
-    process.exit(1);
-  }
-  console.log('static/llms.txt and llms-full.txt are current');
+  report(stale.map(([path]) => `${path.slice(ROOT.length + 1)} is stale`), 'static/llms.txt and llms-full.txt are current');
 } else {
   for (const [path, content] of outputs) writeFileSync(path, content);
   console.log('static/llms.txt and llms-full.txt written');

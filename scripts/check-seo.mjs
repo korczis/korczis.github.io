@@ -6,13 +6,13 @@
 //
 // usage: npm run build && node scripts/check-seo.mjs
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
-import { dirname, join } from 'node:path';
-import { fileURLToPath } from 'node:url';
-import { parse } from 'smol-toml';
+import { join } from 'node:path';
+import { ROOT, identity, limits } from './lib/derive.mjs';
 
-const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const SITE = process.env.SITE_DIR || join(ROOT, 'public');
-const BASE = parse(readFileSync(join(ROOT, 'zola.toml'), 'utf8')).base_url.replace(/\/$/, '');
+const BASE = identity().base;
+const LIMITS = limits();
+const { width: OG_W, height: OG_H } = LIMITS.og;
 const findings = [];
 const fail = (where, what) => findings.push(`${where}: ${what}`);
 
@@ -53,11 +53,12 @@ for (const file of html(SITE)) {
     if (sitemap.includes(`<loc>${here}</loc>`)) fail(rel, 'noindex but listed in sitemap.xml');
     continue;
   }
-  if (title.length > 70) fail(rel, `title is ${title.length} > 70 characters`);
+  if (title.length > LIMITS.title.max) fail(rel, `title is ${title.length} > ${LIMITS.title.max} characters`);
   if (titles.has(title)) fail(rel, `title duplicates ${titles.get(title)}`);
   titles.set(title, rel);
   const description = meta(text, 'description') || '';
-  if (description.length < 50 || description.length > 165) fail(rel, `description is ${description.length} characters, not 50-165`);
+  const { min, max } = LIMITS.description;
+  if (description.length < min || description.length > max) fail(rel, `description is ${description.length} characters, not ${min}-${max}`);
   const canonical = (text.match(/<link rel="canonical" href="([^"]*)"/) || [])[1];
   if (!canonical || !canonical.startsWith(`${BASE}/`)) fail(rel, `canonical ${canonical} is not absolute under ${BASE}`);
   else if (!sitemap.includes(`<loc>${canonical}</loc>`)) fail(rel, `canonical ${canonical} is not in sitemap.xml`);
@@ -73,7 +74,7 @@ for (const file of html(SITE)) {
     if (!image.startsWith(`${BASE}/`) || !existsSync(local)) fail(rel, `og:image ${image} is not in the build`);
     else {
       const [w, h] = pngSize(local);
-      if (w !== 1200 || h !== 630) fail(rel, `og:image is ${w}x${h}, not 1200x630`);
+      if (w !== OG_W || h !== OG_H) fail(rel, `og:image is ${w}x${h}, not ${OG_W}x${OG_H}`);
     }
   }
   const ld = text.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/);
