@@ -90,14 +90,16 @@ jobs:
         with:
           browser: 'true'
       # Every offline gate, from the one list (scripts/gates.mjs); ci: false gates say why they skip.
+      # --keep-going: one failing gate (a missing secret) must not hide every other gate's verdict.
       - name: Every gate (scripts/gates.mjs)
         env:
           NDA_DENYLIST: ${{ secrets.NDA_DENYLIST }}
-        run: node scripts/gates.mjs run --ci
+        run: node scripts/gates.mjs run --ci --keep-going
       - name: Stamp the revision
         run: printf '%s\n' "$GITHUB_SHA" > public/revision.txt
       # The same audit as npm run verify: its own build on a free port, the server stopped by a trap.
       - name: Accessibility, layout, visuals and links (axe-core WCAG 2.2 AA, CLS, overflow)
+        if: ${{ !cancelled() }}
         env:
           NDA_DENYLIST: ${{ secrets.NDA_DENYLIST }}
         run: scripts/verify-all.sh --audit-only --shots "$RUNNER_TEMP/shots"

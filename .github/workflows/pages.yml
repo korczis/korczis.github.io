@@ -65,7 +65,7 @@ jobs:
         env:
           NDA_DENYLIST: ${{ secrets.NDA_DENYLIST }}
         run: |
-          if [ -f scripts/check-nda.mjs ]; then node scripts/check-nda.mjs --site site; else echo "scripts/check-nda.mjs has not landed yet"; fi
+          node scripts/check-nda.mjs --site site
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5
         with:

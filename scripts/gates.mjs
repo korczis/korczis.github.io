@@ -4,9 +4,11 @@
 // so a gate added here runs everywhere and a gate can no longer be missing from one of them (the
 // glossary gates once ran locally and never in CI). README's gate table is generated from it.
 //
-// usage: node scripts/gates.mjs run [--ci] [--from <id>] [--only <id,...>] [--skip <id,...>]
+// usage: node scripts/gates.mjs run [--ci] [--keep-going] [--from <id>] [--only <id,...>] [--skip <id,...>]
 //          runs the offline gates in order, stops at the first failure, prints each gate's time;
 //          --ci skips the gates marked ci: false and says why (the CI validate job and npm run check)
+//          --keep-going runs every gate past a failure and fails at the end (CI: one missing secret
+//          once hid the verdicts of 26 gates); a gate that needs a failed build is skipped, named
 //        node scripts/gates.mjs list [--format text|github|json]   the gates; github: workflow steps
 //        node scripts/gates.mjs check     parity: every gate script on disk is in this list, no
 //          workflow or script keeps its own list or runs a gate script this list does not know,
@@ -97,7 +99,7 @@ const PENDING = {
 };
 
 const opts = cliArgs({
-  '--ci': true, '--from': '<id>', '--only': '<id,...>', '--skip': '<id,...>', '--format': '<text|github|json>', '--check': true,
+  '--ci': true, '--keep-going': true, '--from': '<id>', '--only': '<id,...>', '--skip': '<id,...>', '--format': '<text|github|json>', '--check': true,
 }, { positional: '<run|list|check|cli|readme|deps>' });
 const [command = 'run', ...extra] = opts._;
 const fail2 = (message) => {
@@ -152,8 +154,9 @@ function runGates() {
     if (gha) console.log(`::error title=gate ${gate.id} failed::${gate.name}: ${shown(gate.run)}`);
     return false;
   };
-  let ok = true;
+  const failed = [];
   for (const [i, gate] of selected.entries()) {
+    if (failed.length && !opts.keepGoing) break;
     if (opts.ci && !gate.ci) {
       console.log(`\nskip ${gate.id}: ci: false (${gate.why})`);
       rows.push([gate.id, 'skip', 'ci: false']);
@@ -165,14 +168,24 @@ function runGates() {
       rows.push([gate.id, 'skip', absent]);
       continue;
     }
+    if (gate.needs === 'build' && failed.includes('build')) {
+      console.log(`\nskip ${gate.id}: the build failed`);
+      rows.push([gate.id, 'skip', 'the build failed']);
+      continue;
+    }
     if (gate.needs === 'build' && !done.has('build')) {
       console.log(`\n${gate.id} needs the build: running it first`);
-      if (!exec(GATES.find((g) => g.id === 'build'), i + 1)) { ok = false; break; }
+      if (!exec(GATES.find((g) => g.id === 'build'), i + 1)) {
+        failed.push('build');
+        rows.push([gate.id, 'skip', 'the build failed']);
+        continue;
+      }
     }
-    if (!exec(gate, i + 1)) { ok = false; break; }
+    if (!exec(gate, i + 1)) failed.push(gate.id);
   }
+  const ok = failed.length === 0;
   const summary = `${rows.filter((r) => r[1] === 'ok').length} passed, ${rows.filter((r) => r[1] === 'skip').length} skipped, `
-    + `${ok ? 'none' : '1'} failed, ${((Date.now() - total) / 1000).toFixed(1)} s`;
+    + `${ok ? 'none' : `${failed.length} (${failed.join(', ')})`} failed, ${((Date.now() - total) / 1000).toFixed(1)} s`;
   console.log(`\ngates: ${summary}`);
   for (const [id, state, time] of rows) console.log(`  ${state.padEnd(4)} ${id.padEnd(13)} ${time}`);
   if (gha && process.env.GITHUB_STEP_SUMMARY) {

@@ -50,11 +50,14 @@ trap cleanup EXIT
 trap 'exit 130' INT TERM
 npm run --silent assets
 zola build --base-url "http://127.0.0.1:$port" --output-dir "$root/site" >/dev/null
-# The NDA gate also reads the build the audit serves (once the experience lane's script exists).
-if [ -f scripts/check-nda.mjs ]; then node scripts/check-nda.mjs --site "$root/site"; fi
+# The NDA gate also reads the build the audit serves. Its verdict is held until the audit has run,
+# so a missing denylist (CI without the secret) does not hide the audit's verdicts.
+nda=0
+node scripts/check-nda.mjs --site "$root/site" || nda=$?
 python3 -m http.server "$port" --bind 127.0.0.1 --directory "$root/site" >/dev/null 2>&1 &
 server=$!
 for _ in $(seq 1 50); do curl -fs -o /dev/null "http://127.0.0.1:$port/" && break; sleep 0.2; done
 BASE_URL="http://127.0.0.1:$port/" SITE_DIR="$root/site" node scripts/audit-ui.mjs "$@"
+if [ "$nda" -ne 0 ]; then printf '\nverify: the audit passed, the NDA gate on the build failed\n' >&2; exit "$nda"; fi
 
 printf '\nverify: every gate passed\n'
