@@ -9,6 +9,9 @@ status: active
 class: blocking
 depends_on: []
 tags: [data, honesty, derived]
+
+x-majordomus:
+  reviewed_because: the decision is the repository's own gate, scripts/check-data.mjs and build-llms.mjs --check, which the gate manifest runs in npm run check, npm run verify, the pre-push hook and CI; no validator of the Majordomus doctrine dispatches it
 ---
 
 # Rationale

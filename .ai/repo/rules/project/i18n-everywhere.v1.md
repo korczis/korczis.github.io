@@ -9,6 +9,9 @@ status: active
 class: blocking
 depends_on: [project.front-matter-contract@1, project.seo-derived@1]
 tags: [i18n, content, seo]
+
+x-majordomus:
+  reviewed_because: the decision is the repository's own gate, scripts/build-i18n.mjs --check and scripts/check-i18n.mjs, which the gate manifest runs in npm run check, npm run verify, the pre-push hook and CI; no validator of the Majordomus doctrine dispatches it
 ---
 
 # Rationale

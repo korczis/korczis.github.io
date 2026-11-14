@@ -9,6 +9,9 @@ status: active
 class: blocking
 depends_on: []
 tags: [ui, flowbite, design-system, licence]
+
+x-majordomus:
+  reviewed_because: the decision is the repository's own gate, test/cases/10_fleet_flowbite_pro.sh (the owner's Flowbite Pro scanner) and majordomus doctor's licence judge, which the gate manifest runs in npm run check, npm run verify, the pre-push hook and CI; no validator of the Majordomus doctrine dispatches it
 ---
 
 # Rationale

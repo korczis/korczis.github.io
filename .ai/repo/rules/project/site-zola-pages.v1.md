@@ -9,6 +9,9 @@ status: active
 class: blocking
 depends_on: [project.ui-quality-gate@1, project.data-measured@1]
 tags: [site, delivery, zola]
+
+x-majordomus:
+  reviewed_because: the decision is the repository's own gate, the pinned Zola build and pages.yml (ci, deploy, verify of revision.txt), which the gate manifest runs in npm run check, npm run verify, the pre-push hook and CI; no validator of the Majordomus doctrine dispatches it
 ---
 
 # Rationale

@@ -9,6 +9,9 @@ status: active
 class: blocking
 depends_on: [project.front-matter-contract@1, project.i18n-everywhere@1, project.data-measured@1]
 tags: [content, education, front-matter, seo]
+
+x-majordomus:
+  reviewed_because: the decision is the repository's own gate, scripts/check-glossary.mjs, build-glossary.mjs --check and Zola's @/ link check, which the gate manifest runs in npm run check, npm run verify, the pre-push hook and CI; no validator of the Majordomus doctrine dispatches it
 ---
 
 # Rationale
