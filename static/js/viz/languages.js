@@ -6,14 +6,15 @@
 // scrubbed by play when the source has years) and how many languages stand on their own; the rest
 // fold into "Other", which names what it holds in its tooltip and in the list, and opens them all
 // when clicked. A bar opens the language's glossary term, or the index filtered to it when the
-// glossary has none. One series, one colour: bars compare counts, they need no legend or rainbow.
+// glossary has none (ctx.link('language')). One series, one colour: bars compare counts, they need no legend or rainbow.
 KorczisHub.viz('languages', {
   lib: 'echarts',
   mount(box, source, { palette, motion, go, link, escape, t, reflect = () => {} }) {
     const entries = (Array.isArray(source) ? source : []).filter((e) => e && e.name);
     const OTHER = 'Other';
-    const home = KorczisHub.home;
-    const url = (name) => link('term', name) || `${home}repositories/?language=${encodeURIComponent(name)}`;
+    // A language's term page, else the index filtered to it; the index itself for a pre-grouped rest.
+    const url = (name) => link('language', name);
+    const index = link('page', 'repositories');
     const years = [...new Set(entries.flatMap((e) => Object.keys(e.years || {})))].sort();
     const timed = years.length > 1;
     const named = entries.filter((e) => e.name !== OTHER);
@@ -63,7 +64,7 @@ KorczisHub.viz('languages', {
           reflect('top', state.top);
           render();
         } else {
-          go(`${home}repositories/`, p.event?.event);
+          go(index, p.event?.event);
         }
         return;
       }
@@ -96,7 +97,7 @@ KorczisHub.viz('languages', {
       // The list twin: every language standing on its own, then each one "Other" holds.
       items: () => current.bars.flatMap((b) => (b.name === OTHER
         ? (b.members || []).map((m) => ({ label: `${t('js_other')} · ${m.name}`, url: url(m.name), note: t('js_n_repositories', { n: m.n }) }))
-          .concat(b.members?.length ? [] : [{ label: t('js_other'), url: `${home}repositories/`, note: t('js_n_repositories', { n: b.n }) }])
+          .concat(b.members?.length ? [] : [{ label: t('js_other'), url: index, note: t('js_n_repositories', { n: b.n }) }])
         : [{ label: b.name, url: url(b.name), note: t('js_n_repositories', { n: b.n }) }])),
       controls: () => [
         {
@@ -131,8 +132,6 @@ KorczisHub.viz('languages', {
       },
     };
 
-    // The option comes last: scripts/check-viz-layer.mjs reads every `type:` after `series:` as a
-    // series type, so the controls (type: 'range', ...) must stand above it.
     function option() {
       const c = palette();
       const m = motion();

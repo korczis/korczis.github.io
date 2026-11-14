@@ -11,58 +11,26 @@
 // glossary term, a category its page; the list twin holds every node with the same link.
 KorczisHub.viz('graph', {
   lib: 'echarts',
-  mount(box, source, { palette, motion, go, link, escape, hash, t, reflect = () => {} }) {
+  mount(box, source, { palette, colour, motion, go, link, escape, hash, t, reflect = () => {} }) {
     const { projects, measured = {} } = source;
     const hub = source.hub || null;
     const names = source.categories || null;
-    const home = KorczisHub.home;
-    const catalogue = (repo) => `${source.catalogue || `${home}projects/`}?project=${encodeURIComponent(repo)}`;
-    const termUrl = (name) => link('term', name) || `${home}repositories/?q=${encodeURIComponent(name.toLowerCase())}`;
-    const categoryUrl = (key) => link('category', key) || `${home}projects/?category=${encodeURIComponent(key)}`;
+    // Every address through ctx.link: the catalogue entry, a term (else the index searched for it),
+    // a category page (else the catalogue filtered to it).
+    const catalogue = (repo) => link('filter', { page: 'projects', project: repo });
+    const termUrl = (name) => link('term', name) ?? link('filter', { page: 'repositories', q: name.toLowerCase() });
+    const categoryUrl = (key) => link('category', key) ?? link('filter', { page: 'projects', category: key });
 
-    // --- Colour: group hues derived from the theme's primary (its weight, a golden angle apart),
-    // each moved toward the page's ink until it keeps 3:1 on the card (WCAG 1.4.11).
-    const rgb = (text) => (String(text).match(/\d+(\.\d+)?/g) || [0, 0, 0]).slice(0, 3).map(Number);
-    const lum = (c) => {
-      const v = rgb(c).map((x) => {
-        const s = x / 255;
-        return s <= 0.04045 ? s / 12.92 : ((s + 0.055) / 1.055) ** 2.4;
-      });
-      return 0.2126 * v[0] + 0.7152 * v[1] + 0.0722 * v[2];
-    };
-    const contrast = (a, b) => {
-      const [p, q] = [lum(a), lum(b)].sort((x, y) => y - x);
-      return (p + 0.05) / (q + 0.05);
-    };
-    const mix = (a, b, share) => {
-      const [p, q] = [rgb(a), rgb(b)];
-      return `rgb(${p.map((x, i) => Math.round(x + (q[i] - x) * share)).join(', ')})`;
-    };
-    const hsl = (c) => {
-      const [r, g, b] = rgb(c).map((x) => x / 255);
-      const max = Math.max(r, g, b);
-      const min = Math.min(r, g, b);
-      const l = (max + min) / 2;
-      const d = max - min;
-      if (!d) return [0, 0, l];
-      const s = d / (1 - Math.abs(2 * l - 1));
-      const h = max === r ? ((g - b) / d) % 6 : max === g ? (b - r) / d + 2 : (r - g) / d + 4;
-      return [(h * 60 + 360) % 360, s, l];
-    };
-    const fromHsl = (h, s, l) => {
-      const k = (n) => (n + h / 30) % 12;
-      const a = s * Math.min(l, 1 - l);
-      const f = (n) => Math.round(255 * (l - a * Math.max(-1, Math.min(k(n) - 3, 9 - k(n), 1))));
-      return `rgb(${f(0)}, ${f(8)}, ${f(4)})`;
-    };
-    const legible = (colour, ground, ink, floor = 3) => {
-      let out = colour;
-      for (let step = 1; step <= 10 && contrast(out, ground) < floor; step += 1) out = mix(colour, ink, step / 10);
+    // --- Colour (ctx.colour): group hues derived from the theme's primary (its weight, a golden
+    // angle apart), each moved toward the page's ink until it keeps 3:1 on the card (WCAG 1.4.11).
+    const legible = (fill, ground, ink, floor = 3) => {
+      let out = fill;
+      for (let step = 1; step <= 10 && colour.contrast(out, ground) < floor; step += 1) out = colour.mix(fill, ink, step / 10);
       return out;
     };
     const groupColours = (c, n) => {
-      const [h, s, l] = hsl(c.primary);
-      return Array.from({ length: n }, (_, i) => legible(fromHsl((h + i * 137.508) % 360, Math.max(s, 0.55), l), c.surface, c.strong));
+      const [h, s, l] = colour.toHsl(c.primary);
+      return Array.from({ length: n }, (_, i) => legible(colour.fromHsl((h + i * 137.508) % 360, Math.max(s, 0.55), l), c.surface, c.strong));
     };
 
     // --- The model: nodes and links for one grouping. A language group is the language's own node
@@ -206,8 +174,6 @@ KorczisHub.viz('graph', {
       },
     };
 
-    // The option comes last: scripts/check-viz-layer.mjs reads every `type:` after `series:` as a
-    // series type, so the controls (type: 'range', ...) must stand above it.
     function option({ fresh = false } = {}) {
       const c = palette();
       const m = motion();
