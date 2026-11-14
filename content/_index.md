@@ -12,6 +12,24 @@ og_description = "Tools that make AI agents prove what they did, honest instrume
 og_image = "og/home.png"
 schema = "home"
 keywords = ["Tomas Korcak", "korczis", "Majordomus", "AI agents", "software engineering", "scientific visualisation", "Brno"]
+# The first two sit in the home's own rows beside a card each (templates/index.html includes
+# viz-grid with viz_from / viz_to); the rest form the art grid.
+[[extra.viz]]
+kind = "skillset"
+source = "index.skillset"
+title = "home_skillset_title"
+lead = "home_skillset_lead"
+span = 2
+height = "lg"
+
+[[extra.viz]]
+kind = "graph"
+source = "catalogue.graph"
+title = "how_the_pieces_connect"
+lead = "projects_the_tools_they_use_and"
+span = 2
+height = "lg"
+
 [[extra.viz]]
 kind = "constellation"
 source = "index.repos"

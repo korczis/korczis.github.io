@@ -8,8 +8,9 @@
 {{ <page_header title={section.title} lead={section.description} lang={lang} /> }}
 {%- set scope = "" %}
 {%- include "partials/catalogue_kpis.html" %}
+{#- Visuals after the summary, before the lists (one slot on every page). #}
+<div class="px-4 pt-6">{%- include "partials/viz-grid.html" %}</div>
 {%- include "partials/catalogue.html" %}
-<div class="px-4 pb-6">{%- include "partials/viz-grid.html" %}</div>
 {% endblock content %}
 
 {% block scripts %}

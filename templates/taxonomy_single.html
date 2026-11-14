@@ -3,6 +3,8 @@
 {% block content %}
 {%- set lp = "" %}{% if lang is defined and lang != config.default_language %}{% set lp = "/" ~ lang %}{% endif -%}
 {{ <page_header title={term.name} lead={trans(key="tagged", lang=lang) | replace(from="{tag}", to=term.name)} parent={trans(key="tags", lang=lang)} parent_url={config.base_url ~ lp ~ "/tags/"} lang={lang} /> }}
+{#- Visuals after the header, before the list (one slot on every page). #}
+<div class="px-4 pt-6">{%- include "partials/viz-grid.html" %}</div>
 <section class="px-4 pb-4 pt-6" aria-label="{{ term.name }}">
   <div class="grid grid-cols-1 gap-4 md:grid-cols-2 2xl:grid-cols-3">
     {%- for p in term.pages %}
@@ -29,5 +31,4 @@
     {%- endif %}
   </div>
 {% </card> %}</div>
-<div class="px-4 pb-6">{%- include "partials/viz-grid.html" %}</div>
 {% endblock content %}

@@ -16,6 +16,9 @@
   {{ <kpi value={d.sites ~ ""} label={trans(key="kpi_with_live_site", lang=lang)} note={trans(key="kpi_pages_note", lang=lang)} /> }}
   {{ <kpi value={d.top_language | default(value="—")} label={trans(key="kpi_most_used_language", lang=lang)} note={trans(key="kpi_since", lang=lang) | replace(from="{date}", to=d.since ~ "")} /> }}
 </div>
+{#- The category in the galaxy of all work, declared in its front matter (build-categories):
+    after the summary, before the lists, as on every page. #}
+<div class="px-4 pt-6">{%- include "partials/viz-grid.html" %}</div>
 {%- if n_curated > 0 %}
 {%- include "partials/catalogue.html" %}
 {%- endif %}
@@ -39,8 +42,6 @@
 </section>
 {%- endif %}
 
-{#- The category in the galaxy of all work, declared in its front matter (build-categories). #}
-<div class="px-4 pb-6">{%- include "partials/viz-grid.html" %}</div>
 
 {#- Neighbouring categories: Flowbite Pro button group, derived from the catalogue. #}
 <nav class="px-4 pb-6" aria-label="{{ trans(key="other_categories", lang=lang) }}">
