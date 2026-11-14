@@ -127,9 +127,6 @@ cs = "Co zahrnovala"
 en = "Technologies"
 cs = "Technologie"
 
-[xp_pending]
-en = "Engagements without measured sources yet: {ids}. They appear here once the owner declares their sector, roles or capabilities."
-cs = "Zakázky zatím bez změřených zdrojů: {ids}. Objeví se tu, jakmile autor uvede jejich odvětví, role nebo schopnosti."
 
 [xp_n_commits__one]
 en = "{n} commit"

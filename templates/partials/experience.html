@@ -17,7 +17,7 @@
 {#- What the data holds: engagements with something to show, the measured ones, their period, the
     owner's commits (a sum of bucket floors, itself a floor), the capabilities and sectors they show. #}
 {%- set_global xn = 0 %}{% set_global xmeasured = 0 %}{% set_global xcommits = 0 %}{% set_global xfrom = "" %}{% set_global xto = "" %}
-{%- set_global xcaps = "|" %}{% set_global xncaps = 0 %}{% set_global xsectors = "|" %}{% set_global xsector_names = "" %}{% set_global xpending = "" %}
+{%- set_global xcaps = "|" %}{% set_global xncaps = 0 %}{% set_global xsectors = "|" %}{% set_global xsector_names = "" %}
 {%- for e in xp.engagements %}
   {%- if e.capabilities | length > 0 or e.period or e.roles | length > 0 or e.sector %}
     {%- set_global xn = xn + 1 %}
@@ -28,7 +28,7 @@
     {%- endif %}
     {%- for c in e.capabilities %}{% if not ("|" ~ c.key ~ "|") in xcaps %}{% set_global xcaps = xcaps ~ c.key ~ "|" %}{% set_global xncaps = xncaps + 1 %}{% endif %}{% endfor %}
     {%- if e.sector and not ("|" ~ e.sector ~ "|") in xsectors %}{% set_global xsectors = xsectors ~ e.sector ~ "|" %}{% if xsector_names %}{% set_global xsector_names = xsector_names ~ ", " %}{% endif %}{% set_global xsector_names = xsector_names ~ (xr.sectors[e.sector]["name" ~ xs] | lower) %}{% endif %}
-  {%- else %}{% if xpending %}{% set_global xpending = xpending ~ ", " %}{% endif %}{% set_global xpending = xpending ~ e.id %}{% endif %}
+  {%- endif %}
 {%- endfor %}
 {%- if xfrom %}
   {%- set xf = xfrom | split(pat="-") %}{% set xt = xto | split(pat="-") %}
@@ -156,9 +156,8 @@
         </li>
         {%- endif %}{% endfor %}
       </ol>
-      {%- if xpending %}
-      <p class="mt-4 border-t border-gray-200 pt-3 text-xs text-gray-600 dark:border-gray-700 dark:text-gray-400">{{ trans(key="xp_pending", lang=lang) | replace(from="{ids}", to=xpending) }}</p>
-      {%- endif %}
+      {#- Engagements with no measured or declared fact are not shown at all: even their number says
+          something under an NDA (ADR 0006). -#}
     </div>
   </div>
 
