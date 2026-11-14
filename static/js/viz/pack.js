@@ -14,8 +14,8 @@
 // filtered to it), a tag's page.
 KorczisHub.viz('pack', {
   lib: 'd3',
-  mount(box, source, { palette, motion, go, link, escape, hash, t, id, reflect: ctxReflect }) {
-    const langUrl = (name) => link('term', name) ?? `${KorczisHub.home}repositories/?language=${encodeURIComponent(name)}`;
+  mount(box, source, { palette, motion, go, link, escape, hash, t, id, reflect: ctxReflect, colour: tone }) {
+    const langUrl = (name) => link('language', name);
     const UNITS = { repos: 'js_d3_n_repositories', stars: 'js_d3_n_stars', recent: 'js_d3_n_recent' };
     const tree = build(source);
     if (!tree) return { empty: true, items: () => [], update() {}, destroy() {} };
@@ -126,14 +126,8 @@ KorczisHub.viz('pack', {
       return placed.get('root');
     };
 
-    const luminance = (colour) => {
-      const { r, g, b } = d3.rgb(colour);
-      const f = (v) => { const s = v / 255; return s <= 0.03928 ? s / 12.92 : ((s + 0.055) / 1.055) ** 2.4; };
-      return 0.2126 * f(r) + 0.7152 * f(g) + 0.0722 * f(b);
-    };
-    const contrast = (a, b) => (Math.max(a, b) + 0.05) / (Math.min(a, b) + 0.05);
-    // Text on a coloured bubble takes whichever theme ink (page or strong) contrasts more with it.
-    const ink = (fill, c) => (contrast(luminance(fill), luminance(c.page)) >= contrast(luminance(fill), luminance(c.strong)) ? c.page : c.strong);
+    // Text on a coloured bubble takes whichever theme ink (page or strong) stands out more on it.
+    const ink = (fill, c) => tone.ink(fill, [c.page, c.strong]).ink;
 
     const tip = KorczisHub.tooltip(box);
     const svg = d3.select(box).append('svg').attr('aria-hidden', 'true');

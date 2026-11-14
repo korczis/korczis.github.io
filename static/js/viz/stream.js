@@ -9,7 +9,7 @@
 // Source (viz-grid, index.years): { years: { "2016": { "Rust": 5, ... } }, languages: [{ name, repos }] }.
 KorczisHub.viz('stream', {
   lib: 'd3',
-  mount(box, source, { palette, motion, go, link, escape, hash, t, id, reflect: ctxReflect }) {
+  mount(box, source, { palette, motion, go, link, escape, hash, t, id, reflect: ctxReflect, colour: tone }) {
     const years = Object.keys(source?.years ?? {}).map(Number).filter(Number.isFinite).sort((a, b) => a - b);
     const languages = (source?.languages ?? []).map((l) => l.name).filter((name) => name && name !== 'Other');
     if (!years.length || !languages.length) return { empty: true, items: () => [], update() {}, destroy() {} };
@@ -44,7 +44,7 @@ KorczisHub.viz('stream', {
     };
 
     const label = (key) => (key === OTHER ? t('js_other') : key);
-    const langUrl = (name) => link('term', name) ?? `${KorczisHub.home}repositories/?language=${encodeURIComponent(name)}`;
+    const langUrl = (name) => link('language', name);
     const urlOf = (key) => (key === OTHER ? null : langUrl(key));
 
     // The model: the window's years (gaps filled with zeros), the streams it keeps, and per year
@@ -80,14 +80,8 @@ KorczisHub.viz('stream', {
       return { lo, hi, end, keys, rows, drawn, folded: [...folded] };
     }
 
-    // Text on a coloured mark takes whichever theme ink (page or strong) contrasts more with it.
-    const luminance = (colour) => {
-      const { r, g, b } = d3.rgb(colour);
-      const f = (v) => { const s = v / 255; return s <= 0.03928 ? s / 12.92 : ((s + 0.055) / 1.055) ** 2.4; };
-      return 0.2126 * f(r) + 0.7152 * f(g) + 0.0722 * f(b);
-    };
-    const contrast = (a, b) => (Math.max(a, b) + 0.05) / (Math.min(a, b) + 0.05);
-    const ink = (fill, c) => (contrast(luminance(fill), luminance(c.page)) >= contrast(luminance(fill), luminance(c.strong)) ? c.page : c.strong);
+    // Text on a coloured mark takes whichever theme ink (page or strong) stands out more on it.
+    const ink = (fill, c) => tone.ink(fill, [c.page, c.strong]).ink;
 
     const tip = KorczisHub.tooltip(box);
     const svg = d3.select(box).append('svg').attr('aria-hidden', 'true');
