@@ -18,8 +18,6 @@
 
   const LIBS = {
     p5: 'js/vendor/p5.min.js',
-    cytoscape: 'js/vendor/cytoscape.min.js',
-    chartjs: 'js/vendor/chart.umd.min.js',
     echarts: 'js/vendor/echarts.min.js',
     d3: 'js/vendor/d3.min.js',
   };
