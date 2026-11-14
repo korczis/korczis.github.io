@@ -35,5 +35,9 @@
     </ul>
   {% </card> %}
   {%- endif %}
+  {#- Neighbours in the glossary's order (sort_by weight). #}
+  {%- if page.lower %}{% set lo = page.lower %}{% else %}{% set lo = {"permalink": "", "title": "", "description": ""} %}{% endif %}
+  {%- if page.higher %}{% set hi = page.higher %}{% else %}{% set hi = {"permalink": "", "title": "", "description": ""} %}{% endif %}
+  {{ <pager lang={lang} label={trans(key="more_terms", lang=lang)} prev_href={lo.permalink} prev_title={lo.title} prev_note={lo.description} next_href={hi.permalink} next_title={hi.title} next_note={hi.description} /> }}
 </div>
 {% endblock content %}

@@ -2,6 +2,8 @@
 title = "Projekty"
 description = "Každý projekt v katalogu: co to je, na čem je postavený, jestli běží a jestli nad ním dohlíží Majordomus."
 template = "projects.html"
+# Category pages carry a weight (build-categories): ordered by it, each links its neighbours.
+sort_by = "weight"
 
 [extra]
 article_title = "Jak je katalog uspořádaný"

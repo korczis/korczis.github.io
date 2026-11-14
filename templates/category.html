@@ -43,6 +43,11 @@
 {%- endif %}
 
 
+{#- The previous and next category in the catalogue's order (sort_by weight). #}
+{%- if page.lower %}{% set lo = page.lower %}{% else %}{% set lo = {"permalink": "", "title": "", "description": ""} %}{% endif %}
+{%- if page.higher %}{% set hi = page.higher %}{% else %}{% set hi = {"permalink": "", "title": "", "description": ""} %}{% endif %}
+<div class="px-4 pb-6">{{ <pager lang={lang} label={trans(key="more_categories", lang=lang)} prev_href={lo.permalink} prev_title={lo.title} prev_note={lo.description} next_href={hi.permalink} next_title={hi.title} next_note={hi.description} /> }}</div>
+
 {#- Neighbouring categories: Flowbite Pro button group, derived from the catalogue. #}
 <nav class="px-4 pb-6" aria-label="{{ trans(key="other_categories", lang=lang) }}">
   <p class="mb-3 text-sm font-medium text-gray-900 dark:text-white">{{ trans(key="other_categories", lang=lang) | safe }}</p>

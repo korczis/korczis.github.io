@@ -122,3 +122,12 @@ cs = "Číst tuto stránku anglicky"
 [js_palette_copy]
 en = "Copy the link to this page"
 cs = "Zkopírovat odkaz na tuto stránku"
+
+# Previous and next on term and category pages.
+[more_terms]
+en = "More terms"
+cs = "Další pojmy"
+
+[more_categories]
+en = "More categories"
+cs = "Další kategorie"
