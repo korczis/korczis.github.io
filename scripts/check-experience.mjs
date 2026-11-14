@@ -44,6 +44,9 @@ export function checkExperience(root) {
     }
   }
 
+  if (JSON.stringify([...(rules.domain_order ?? [])].sort()) !== JSON.stringify(Object.keys(rules.domains ?? {}).sort())) {
+    fail(RULES_FILE, 'domain_order must list every [domains] key once');
+  }
   const buckets = new Set([0, ...rules.scale.buckets]);
   const recent = new Set(JSON.parse(readFileSync(join(root, 'data/recent.json'), 'utf8')).repos.map((r) => r.name));
   const ids = new Set();

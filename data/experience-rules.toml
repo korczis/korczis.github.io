@@ -11,7 +11,8 @@
 #                   relative * the engagement's best score, and at least min_items items matched);
 #                   the matched text itself is never kept
 #   [sectors.*]     generic industries a client belongs to (declared by the owner, never inferred)
-#   [domains.*]     the three areas the capabilities group into; each links to a catalogue category
+#   [domains.*]     the three areas the capabilities group into: words, an icon of templates/components.html,
+#                   and the catalogue category and glossary term each links to
 #   [capabilities.*] name, description (EN + CS), domain, the glossary term it links to, the
 #                   catalogue categories that share it, and the keywords that infer it. A keyword is
 #                   matched as whole words after lower-casing and stripping diacritics; a trailing *
@@ -19,6 +20,9 @@
 #   [roles.*]       what the owner did in an engagement (declared by the owner, never inferred)
 #   [technologies.*] public technology names, detected from file extensions (language), dependency
 #                   manifests (deps) or marker paths (paths); only names listed here are published
+
+# The order the section shows the domains in (a TOML table has none a template can rely on).
+domain_order = ["dd", "ai", "data"]
 
 [scale]
 buckets = [1, 2, 3, 5, 10, 25, 50, 100, 250, 500, 1000, 2500, 5000, 10000]
@@ -70,20 +74,29 @@ name_cs = "Veřejný sektor"
 [domains.dd]
 name = "Due diligence and M&A"
 name_cs = "Due diligence a M&A"
+description = "Knowing a target before the deal: its owners, assets, risks and market, with every finding sourced."
+description_cs = "Poznat cíl před transakcí: jeho vlastníky, majetek, rizika a trh, každé zjištění se zdrojem."
 category = "security"
 term = "due-diligence"
+icon = "shield"
 
 [domains.ai]
 name = "AI transformation"
 name_cs = "Transformace s AI"
+description = "Putting AI to work in an organisation: agents, document reading and orchestration, under rules that make them prove their work."
+description_cs = "Nasazení AI v organizaci: agenti, čtení dokumentů a orchestrace, pod pravidly, která je nutí práci doložit."
 category = "ai"
 term = "ai-agent"
+icon = "puzzle"
 
 [domains.data]
 name = "Data and intelligence"
 name_cs = "Data a zpravodajství"
+description = "Public registers and open sources joined into one checked picture: who is who, who owns what, and what changed."
+description_cs = "Veřejné rejstříky a otevřené zdroje spojené do jednoho ověřeného obrazu: kdo je kdo, kdo co vlastní a co se změnilo."
 category = "data"
 term = "osint"
+icon = "graph"
 
 # --- Capabilities --------------------------------------------------------------------------------
 

@@ -1,95 +1,7 @@
 {
   "schema": "korczis-hub-experience/v1",
-  "generated_at": "2026-11-14T21:03:29Z",
+  "generated_at": "2026-11-14T21:10:29Z",
   "engagements": [
-    {
-      "id": "e1",
-      "sector": null,
-      "roles": [],
-      "period": {
-        "from": "2026-05",
-        "to": "2026-05"
-      },
-      "months": {
-        "2026-05": 2
-      },
-      "scale": {
-        "commits": 2,
-        "repositories": 1,
-        "authored": 1,
-        "team": 1,
-        "files": 250,
-        "modules": 100,
-        "tests": 0
-      },
-      "technologies": [
-        "HTML",
-        "JavaScript",
-        "Python"
-      ],
-      "capabilities": [
-        {
-          "key": "osint-investigation",
-          "score": 5,
-          "evidence": {
-            "commits": 0,
-            "headings": 7,
-            "paths": 49
-          },
-          "declared": false
-        },
-        {
-          "key": "due-diligence",
-          "score": 4.3,
-          "evidence": {
-            "commits": 1,
-            "headings": 3,
-            "paths": 13
-          },
-          "declared": false
-        },
-        {
-          "key": "entity-resolution",
-          "score": 3.8,
-          "evidence": {
-            "commits": 0,
-            "headings": 4,
-            "paths": 19
-          },
-          "declared": false
-        },
-        {
-          "key": "decision-support",
-          "score": 3.7,
-          "evidence": {
-            "commits": 1,
-            "headings": 1,
-            "paths": 26
-          },
-          "declared": false
-        },
-        {
-          "key": "m-and-a-screening",
-          "score": 2.8,
-          "evidence": {
-            "commits": 0,
-            "headings": 2,
-            "paths": 11
-          },
-          "declared": false
-        },
-        {
-          "key": "audit-trail",
-          "score": 2.6,
-          "evidence": {
-            "commits": 0,
-            "headings": 2,
-            "paths": 6
-          },
-          "declared": false
-        }
-      ]
-    },
     {
       "id": "e2",
       "sector": null,
@@ -297,6 +209,94 @@
             "commits": 10,
             "headings": 9,
             "paths": 58
+          },
+          "declared": false
+        }
+      ]
+    },
+    {
+      "id": "e1",
+      "sector": null,
+      "roles": [],
+      "period": {
+        "from": "2026-05",
+        "to": "2026-05"
+      },
+      "months": {
+        "2026-05": 2
+      },
+      "scale": {
+        "commits": 2,
+        "repositories": 1,
+        "authored": 1,
+        "team": 1,
+        "files": 250,
+        "modules": 100,
+        "tests": 0
+      },
+      "technologies": [
+        "HTML",
+        "JavaScript",
+        "Python"
+      ],
+      "capabilities": [
+        {
+          "key": "osint-investigation",
+          "score": 5,
+          "evidence": {
+            "commits": 0,
+            "headings": 7,
+            "paths": 49
+          },
+          "declared": false
+        },
+        {
+          "key": "due-diligence",
+          "score": 4.3,
+          "evidence": {
+            "commits": 1,
+            "headings": 3,
+            "paths": 13
+          },
+          "declared": false
+        },
+        {
+          "key": "entity-resolution",
+          "score": 3.8,
+          "evidence": {
+            "commits": 0,
+            "headings": 4,
+            "paths": 19
+          },
+          "declared": false
+        },
+        {
+          "key": "decision-support",
+          "score": 3.7,
+          "evidence": {
+            "commits": 1,
+            "headings": 1,
+            "paths": 26
+          },
+          "declared": false
+        },
+        {
+          "key": "m-and-a-screening",
+          "score": 2.8,
+          "evidence": {
+            "commits": 0,
+            "headings": 2,
+            "paths": 11
+          },
+          "declared": false
+        },
+        {
+          "key": "audit-trail",
+          "score": 2.6,
+          "evidence": {
+            "commits": 0,
+            "headings": 2,
+            "paths": 6
           },
           "declared": false
         }

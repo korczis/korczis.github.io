@@ -345,7 +345,10 @@ function measure(engagement) {
   };
 }
 
-const engagements = (map.engagement ?? []).map(measure);
+// Newest first (by the last month of the owner's commits), engagements without any after them.
+const engagements = (map.engagement ?? []).map(measure).sort((a, b) => (!a.period - !b.period)
+  || (b.period?.to ?? '').localeCompare(a.period?.to ?? '') || (b.period?.from ?? '').localeCompare(a.period?.from ?? '')
+  || a.id.localeCompare(b.id, 'en', { numeric: true }));
 const out = { schema: SCHEMA_ID, generated_at: new Date().toISOString().replace(/\.\d+Z$/, 'Z'), engagements, public_work: publicWork() };
 writeFileSync(join(ROOT, DATA_FILE), `${JSON.stringify(out, null, 2)}\n`);
 const findings = checkExperience(ROOT);
