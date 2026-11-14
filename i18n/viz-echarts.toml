@@ -1,0 +1,91 @@
+# The ECharts visuals (static/js/viz/graph.js, languages.js, skillset.js): their simulator
+# controls, tooltips and list notes.
+
+# --- graph.js: the ecosystem as a force simulation ---------------------------------------------
+[js_graph_repulsion]
+en = "Repulsion"
+cs = "Odpuzování"
+
+[js_graph_edge_length]
+en = "Edge length"
+cs = "Délka hran"
+
+[js_graph_gravity]
+en = "Gravity"
+cs = "Gravitace"
+
+[js_graph_group]
+en = "Group projects"
+cs = "Seskupit projekty"
+
+[js_graph_group_category]
+en = "By category"
+cs = "Podle kategorie"
+
+[js_graph_group_language]
+en = "By primary language"
+cs = "Podle hlavního jazyka"
+
+[js_graph_group_none]
+en = "Not grouped (stack only)"
+cs = "Neseskupovat (jen technologie)"
+
+[js_graph_labels]
+en = "Show every label"
+cs = "Zobrazit všechny popisky"
+
+[js_graph_zoom]
+en = "Zoom"
+cs = "Přiblížení"
+
+[js_graph_reheat]
+en = "Lay out again"
+cs = "Rozložit znovu"
+
+[js_graph_projects]
+en = "Projects"
+cs = "Projekty"
+
+[js_graph_technologies]
+en = "Technologies"
+cs = "Technologie"
+
+[js_graph_supervised]
+en = "supervised by Majordomus"
+cs = "pod dohledem nástroje Majordomus"
+
+[js_graph_uses]
+en = "{a} uses {b}"
+cs = "{a} používá {b}"
+
+[js_graph_supervises]
+en = "{a} supervises {b}"
+cs = "{a} dohlíží na {b}"
+
+[js_graph_member]
+en = "{b} belongs to {a}"
+cs = "{b} patří do skupiny {a}"
+
+[js_graph_links__one]
+en = "{n} connection"
+cs = "{n} spojení"
+
+[js_graph_links__few]
+en = "{n} connections"
+cs = "{n} spojení"
+
+[js_graph_links__other]
+en = "{n} connections"
+cs = "{n} spojení"
+
+[js_graph_used_by__one]
+en = "used by {n} project"
+cs = "používá ho {n} projekt"
+
+[js_graph_used_by__few]
+en = "used by {n} projects"
+cs = "používají ho {n} projekty"
+
+[js_graph_used_by__other]
+en = "used by {n} projects"
+cs = "používá ho {n} projektů"

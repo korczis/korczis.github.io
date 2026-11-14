@@ -1,137 +1,348 @@
-// Ecosystem graph (Cytoscape.js): projects, the technologies they are built with, and which of them
-// Majordomus supervises. "Supervised" is measured (a .ai/manifest.yaml on the default branch, see
-// scripts/fetch-github.mjs), never typed by hand. Tap a project to open it in the catalogue.
+// Ecosystem graph (Apache ECharts graph series, a live force simulation): the curated projects
+// (data/projects.toml), the technologies in their stacks, and which of them Majordomus supervises.
+// "Supervised" is measured (a .ai/manifest.yaml on the default branch, scripts/fetch-github.mjs),
+// never typed by hand, and so is the hub: the repository Majordomus releases from (source.hub).
+//
+// The visitor drives the model: repulsion, edge length and gravity of the simulation; a grouping
+// (category or primary language) that adds a node per group pulling its members together; every
+// label or only the best connected; zoom; a reheat that lays the graph out again from its seed.
+// Starting positions are seeded from each node's id (ctx.hash), so the same data settles the same
+// way on every visit. A project opens its catalogue entry (?project=), a language or technology its
+// glossary term, a category its page; the list twin holds every node with the same link.
 KorczisHub.viz('graph', {
-  lib: 'cytoscape',
-  mount(box, source, { palette }) {
-    const { projects, measured } = source;
-    const HUB = 'prismatic-majordomus';
-    const elements = [];
-    const techs = new Map();
+  lib: 'echarts',
+  mount(box, source, { palette, motion, go, link, escape, hash, t }) {
+    const { projects, measured = {} } = source;
+    const hub = source.hub || null;
+    const names = source.categories || null;
+    const home = KorczisHub.home;
+    const catalogue = (repo) => `${source.catalogue || `${home}projects/`}?project=${encodeURIComponent(repo)}`;
+    const termUrl = (name) => link('term', name) || `${home}repositories/?q=${encodeURIComponent(name.toLowerCase())}`;
+    const categoryUrl = (key) => link('category', key) || `${home}projects/?category=${encodeURIComponent(key)}`;
 
-    for (const project of projects) {
-      const facts = measured[project.repo] || {};
-      elements.push({
-        data: { id: `p:${project.repo}`, label: project.name, kind: 'project', repo: project.repo },
-        classes: [project.repo === HUB ? 'hub' : '', facts.live ? 'live' : ''].join(' '),
+    // --- Colour: group hues derived from the theme's primary (its weight, a golden angle apart),
+    // each moved toward the page's ink until it keeps 3:1 on the card (WCAG 1.4.11).
+    const rgb = (text) => (String(text).match(/\d+(\.\d+)?/g) || [0, 0, 0]).slice(0, 3).map(Number);
+    const lum = (c) => {
+      const v = rgb(c).map((x) => {
+        const s = x / 255;
+        return s <= 0.04045 ? s / 12.92 : ((s + 0.055) / 1.055) ** 2.4;
       });
-      for (const tech of project.stack) {
-        techs.set(tech, (techs.get(tech) || 0) + 1);
-        elements.push({ data: { id: `e:${project.repo}:${tech}`, source: `p:${project.repo}`, target: `t:${tech}`, kind: 'uses' } });
-      }
-      if (facts.supervised && project.repo !== HUB) {
-        elements.push({ data: { id: `s:${project.repo}`, source: `p:${HUB}`, target: `p:${project.repo}`, kind: 'supervises' } });
-      }
-    }
-    for (const [tech, uses] of techs) {
-      elements.push({ data: { id: `t:${tech}`, label: tech, kind: 'tech', uses } });
-    }
-
-    const style = () => {
-      const c = palette();
-      return [
-        {
-          selector: 'node',
-          style: {
-            label: 'data(label)',
-            'font-family': c.font,
-            'font-size': 12,
-            color: c.text,
-            'text-valign': 'bottom',
-            'text-margin-y': 6,
-            'text-background-color': c.surface,
-            'text-background-opacity': 0.85,
-            'text-background-padding': 2,
-            'text-background-shape': 'roundrectangle',
-          },
-        },
-        {
-          selector: 'node[kind = "project"]',
-          style: { width: 24, height: 24, 'background-color': c.primary, 'font-weight': 600, 'font-size': 13, color: c.strong },
-        },
-        {
-          selector: 'node.hub',
-          style: { width: 38, height: 38, 'border-width': 5, 'border-color': c.primarySoft, 'font-size': 15 },
-        },
-        {
-          selector: 'node[kind = "tech"]',
-          style: {
-            width: 'mapData(uses, 1, 5, 10, 18)',
-            height: 'mapData(uses, 1, 5, 10, 18)',
-            'background-color': c.surface,
-            'border-width': 2,
-            'border-color': c.muted,
-          },
-        },
-        { selector: 'edge', style: { width: 1, 'line-color': c.grid, 'curve-style': 'bezier' } },
-        {
-          selector: 'edge[kind = "supervises"]',
-          style: {
-            width: 1.75,
-            'line-color': c.primary,
-            'line-style': 'dashed',
-            'target-arrow-shape': 'triangle',
-            'target-arrow-color': c.primary,
-            'arrow-scale': 0.8,
-          },
-        },
-        { selector: '.faded', style: { opacity: 0.18 } },
-      ];
+      return 0.2126 * v[0] + 0.7152 * v[1] + 0.0722 * v[2];
+    };
+    const contrast = (a, b) => {
+      const [p, q] = [lum(a), lum(b)].sort((x, y) => y - x);
+      return (p + 0.05) / (q + 0.05);
+    };
+    const mix = (a, b, share) => {
+      const [p, q] = [rgb(a), rgb(b)];
+      return `rgb(${p.map((x, i) => Math.round(x + (q[i] - x) * share)).join(', ')})`;
+    };
+    const hsl = (c) => {
+      const [r, g, b] = rgb(c).map((x) => x / 255);
+      const max = Math.max(r, g, b);
+      const min = Math.min(r, g, b);
+      const l = (max + min) / 2;
+      const d = max - min;
+      if (!d) return [0, 0, l];
+      const s = d / (1 - Math.abs(2 * l - 1));
+      const h = max === r ? ((g - b) / d) % 6 : max === g ? (b - r) / d + 2 : (r - g) / d + 4;
+      return [(h * 60 + 360) % 360, s, l];
+    };
+    const fromHsl = (h, s, l) => {
+      const k = (n) => (n + h / 30) % 12;
+      const a = s * Math.min(l, 1 - l);
+      const f = (n) => Math.round(255 * (l - a * Math.max(-1, Math.min(k(n) - 3, 9 - k(n), 1))));
+      return `rgb(${f(0)}, ${f(8)}, ${f(4)})`;
+    };
+    const legible = (colour, ground, ink, floor = 3) => {
+      let out = colour;
+      for (let step = 1; step <= 10 && contrast(out, ground) < floor; step += 1) out = mix(colour, ink, step / 10);
+      return out;
+    };
+    const groupColours = (c, n) => {
+      const [h, s, l] = hsl(c.primary);
+      return Array.from({ length: n }, (_, i) => legible(fromHsl((h + i * 137.508) % 360, Math.max(s, 0.55), l), c.surface, c.strong));
     };
 
-    const cy = cytoscape({
-      container: box.querySelector('[data-canvas]') || box,
-      elements,
-      style: style(),
-      layout: {
-        name: 'cose', animate: false, randomize: false, padding: 16,
-        nodeRepulsion: 7000, idealEdgeLength: 64, nodeOverlap: 16, componentSpacing: 40, gravity: 1.1, numIter: 2500,
-        nodeDimensionsIncludeLabels: true,
-      },
-      userZoomingEnabled: false,
-      boxSelectionEnabled: false,
-      autoungrabify: false,
-      minZoom: 0.4,
-      maxZoom: 2.5,
+    // --- The model: nodes and links for one grouping. A language group is the language's own node
+    // (the same id as the technology in a stack), so a project written in Rust that also lists Rust
+    // is linked to one Rust, not two.
+    // Category groups need their names (the catalogue's source carries them); without, the
+    // grouping starts at none and offers no category option.
+    const GROUPS = names && Object.keys(names).length ? ['category', 'language', 'none'] : ['language', 'none'];
+    const state = { group: GROUPS[0] === 'category' ? 'category' : 'none', repulsion: 150, edgeLength: 55, gravity: 0.2, labels: false, zoom: 1 };
+    // The physics is written for a 420 px drawing; a larger box (maximized) scales every length
+    // with it, so the same parameters give the same picture at any size: lengths by k, repulsion
+    // by k squared (it acts as repulsion / distance), gravity unchanged (it acts as gravity * distance).
+    const scale = () => Math.max(0.5, Math.min(box.clientWidth || 600, (box.clientHeight || 420) - 48) / 420);
+    let model = null;
+
+    function build(group) {
+      const nodes = new Map();
+      const links = [];
+      const groupOf = (p) => (group === 'category' ? p.category : group === 'language' ? measured[p.repo]?.language || null : null);
+      const node = (id, props) => {
+        if (!nodes.has(id)) nodes.set(id, { id, degree: 0, uses: 0, ...props });
+        return nodes.get(id);
+      };
+      const edge = (from, to, kind) => {
+        if (links.some((l) => l.source === from && l.target === to)) return;
+        links.push({ source: from, target: to, kind });
+        nodes.get(from).degree += 1;
+        nodes.get(to).degree += 1;
+        if (kind === 'uses') nodes.get(to).uses += 1;
+      };
+      for (const p of projects) {
+        node(`p:${p.repo}`, { kind: 'project', label: p.name, repo: p.repo, group: groupOf(p), facts: measured[p.repo] || {}, url: catalogue(p.repo) });
+      }
+      for (const p of projects) {
+        for (const tech of p.stack) {
+          node(`t:${tech}`, { kind: 'tech', label: tech, group: null, url: termUrl(tech) });
+          edge(`p:${p.repo}`, `t:${tech}`, 'uses');
+        }
+        const g = groupOf(p);
+        if (group === 'category' && g) {
+          node(`g:${g}`, { kind: 'category', label: names?.[g] || g, group: g, url: categoryUrl(g) });
+          edge(`g:${g}`, `p:${p.repo}`, 'member');
+        } else if (group === 'language' && g) {
+          node(`t:${g}`, { kind: 'tech', label: g, group: null, url: termUrl(g) }).group = g;
+          edge(`t:${g}`, `p:${p.repo}`, 'member');
+        }
+        if (hub && measured[p.repo]?.supervised && p.repo !== hub && nodes.has(`p:${hub}`)) edge(`p:${hub}`, `p:${p.repo}`, 'supervises');
+      }
+      // Groups by size, largest first, so the first hues go to the groups that hold the most.
+      const counts = new Map();
+      for (const n of nodes.values()) if (n.kind === 'project' && n.group) counts.set(n.group, (counts.get(n.group) || 0) + 1);
+      const groups = [...counts].sort((a, b) => b[1] - a[1] || String(a[0]).localeCompare(String(b[0]))).map(([g]) => g);
+      const loose = [...nodes.values()].some((n) => n.kind === 'project' && !n.group);
+      return { nodes: [...nodes.values()], links, groups, loose };
+    }
+
+    const chart = echarts.init(box.querySelector('[data-canvas]') || box, null, { renderer: 'canvas' });
+    let first = true;
+
+    // A new grouping or a reheat starts the simulation over from the seed: clear() drops the
+    // positions ECharts keeps between updates (preservedPoints). A physics change keeps them, so
+    // the graph moves from where it is to where the new forces put it.
+    function render({ fresh = false } = {}) {
+      if (fresh) {
+        if (!first) chart.clear();
+        model = build(state.group);
+      }
+      chart.setOption(option({ fresh }));
+      first = false;
+    }
+
+    // A click that ends a drag is not a click.
+    let down = null;
+    chart.getZr().on('mousedown', (e) => { down = [e.offsetX, e.offsetY]; });
+    chart.on('click', (p) => {
+      if (p.dataType !== 'node' || !p.data?.url) return;
+      const e = p.event;
+      if (down && e && Math.hypot(e.offsetX - down[0], e.offsetY - down[1]) > 4) return;
+      go(p.data.url, e?.event);
     });
 
-    cy.on('mouseover tapstart', 'node', (event) => {
-      const neighbourhood = event.target.closedNeighborhood();
-      cy.elements().not(neighbourhood).addClass('faded');
-    });
-    cy.on('mouseout tapend', 'node', () => cy.elements().removeClass('faded'));
-    cy.on('tap', 'node[kind = "project"]', (event) => {
-      window.location.href = `${KorczisHub.home}projects/?project=${event.target.data('repo')}`;
-    });
-    // A technology opens the repository index searched for it.
-    cy.on('tap', 'node[kind = "tech"]', (event) => {
-      window.location.href = `${KorczisHub.home}repositories/?q=${encodeURIComponent(event.target.data('label').toLowerCase())}`;
-    });
-    cy.on('mouseover', 'node', () => { box.style.cursor = 'pointer'; });
-    cy.on('mouseout', 'node', () => { box.style.cursor = ''; });
+    // Ctrl + wheel (a trackpad pinch sends ctrlKey too) zooms around the pointer; a plain wheel is
+    // left to the page, which keeps scrolling.
+    const zoomBy = (factor, originX, originY) => {
+      const next = Math.min(4, Math.max(0.3, state.zoom * factor));
+      if (next === state.zoom) return;
+      chart.dispatchAction({ type: 'graphRoam', seriesId: 'graph', zoom: next / state.zoom, originX, originY });
+      state.zoom = next;
+    };
+    const onWheel = (event) => {
+      if (!event.ctrlKey) return;
+      event.preventDefault();
+      const rect = box.getBoundingClientRect();
+      zoomBy(Math.exp(-event.deltaY / 300), event.clientX - rect.left, event.clientY - rect.top);
+    };
+    box.addEventListener('wheel', onWheel, { passive: false });
 
-    const resize = new ResizeObserver(() => {
-      cy.resize();
-      cy.fit(undefined, 16);
-    });
-    resize.observe(box);
+    // The list twin: the projects, then every technology, language and group by connections.
+    const list = () => [
+      ...model.nodes.filter((n) => n.kind === 'project')
+        .map((n) => ({ label: n.label, url: n.url, note: projects.find((p) => p.repo === n.repo)?.stack.join(', ') })),
+      ...model.nodes.filter((n) => n.kind !== 'project')
+        .sort((a, b) => b.degree - a.degree || a.label.localeCompare(b.label))
+        .map((n) => ({ label: n.label, url: n.url, note: n.uses ? t('js_graph_used_by', { n: n.uses }) : t('js_graph_links', { n: n.degree }) })),
+    ];
 
-    box.dataset.nodes = String(cy.nodes().length);
-
-    return {
-      // The list twin: projects first, then technologies by use, each where a tap would go.
-      items: () => [
-        ...projects.map((p) => ({ label: p.name, url: `${KorczisHub.home}projects/?project=${p.repo}`, note: p.stack.join(', ') })),
-        ...[...techs].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
-          .map(([tech, uses]) => ({ label: tech, url: `${KorczisHub.home}repositories/?q=${encodeURIComponent(tech.toLowerCase())}`, note: String(uses) })),
+    const fmt = (v) => new Intl.NumberFormat(KorczisHub.locale, { maximumFractionDigits: 2 }).format(v);
+    const handle = {
+      items: list,
+      controls: () => [
+        { key: 'repulsion', type: 'range', label: t('js_graph_repulsion'), min: 40, max: 800, step: 10, value: state.repulsion, format: fmt, set(v) { state.repulsion = v; render(); } },
+        { key: 'edge', type: 'range', label: t('js_graph_edge_length'), min: 20, max: 220, step: 5, value: state.edgeLength, format: fmt, set(v) { state.edgeLength = v; render(); } },
+        { key: 'gravity', type: 'range', label: t('js_graph_gravity'), min: 0, max: 0.6, step: 0.02, value: state.gravity, format: fmt, set(v) { state.gravity = v; render(); } },
+        {
+          key: 'group',
+          type: 'select',
+          label: t('js_graph_group'),
+          options: GROUPS.map((g) => ({ value: g, label: t(`js_graph_group_${g}`) })),
+          value: state.group,
+          set(v) {
+            if (!GROUPS.includes(v) || v === state.group) return;
+            state.group = v;
+            render({ fresh: true });
+          },
+        },
+        { key: 'labels', type: 'toggle', label: t('js_graph_labels'), value: state.labels, set(v) { state.labels = Boolean(v); render(); } },
+        { key: 'zoom', type: 'range', label: t('js_graph_zoom'), min: 0.3, max: 4, step: 0.1, value: 1, format: (v) => `${fmt(v)}×`, set(v) { zoomBy(v / state.zoom, box.clientWidth / 2, box.clientHeight / 2); } },
+        { key: 'reheat', type: 'action', label: t('js_graph_reheat'), icon: 'reset', set() { state.zoom = 1; render({ fresh: true }); } },
       ],
-      update() {
-        cy.style(style());
+      // A new size rescales the physics; the simulation moves the graph from where it is.
+      resize() {
+        chart.resize();
+        render();
       },
+      update() { render(); },
       destroy() {
-        resize.disconnect();
-        cy.destroy();
+        box.removeEventListener('wheel', onWheel);
+        chart.dispose();
       },
     };
+
+    // The option comes last: scripts/check-viz-layer.mjs reads every `type:` after `series:` as a
+    // series type, so the controls (type: 'range', ...) must stand above it.
+    function option({ fresh = false } = {}) {
+      const c = palette();
+      const m = motion();
+      const groupName = (g) => (state.group === 'category' ? names?.[g] || g : g);
+      // Legend order: the groups, then ungrouped projects (if any), then the technologies.
+      const legend = [...model.groups.map(groupName), ...(model.loose ? [t('js_graph_projects')] : []), t('js_graph_technologies')];
+      const colours = [...groupColours(c, model.groups.length), ...(model.loose ? [c.primary] : []), c.muted];
+      const category = (n) => {
+        if (n.group && model.groups.includes(n.group)) return model.groups.indexOf(n.group);
+        return n.kind === 'project' ? model.groups.length : legend.length - 1;
+      };
+      // Labels for the best connected nodes only (a hairball of names reads as nothing); the toggle
+      // shows every one, and hideOverlap drops those that collide either way.
+      const ranked = [...model.nodes].sort((a, b) => b.degree - a.degree);
+      const shown = new Set(ranked.slice(0, Math.max(6, Math.ceil(ranked.length / 3))).map((n) => n.id));
+      const k = scale();
+      const width = box.clientWidth || 600;
+      const height = box.clientHeight || 400;
+      const data = model.nodes.map((n) => {
+        const h = hash(n.id);
+        const plain = n.kind === 'tech' && !n.group;
+        return {
+          id: n.id,
+          name: n.label,
+          category: category(n),
+          value: n.degree,
+          // A seeded start, the same on every visit; the simulation takes it from there.
+          x: ((h % 1000) / 1000) * width,
+          y: (((h >>> 10) % 1000) / 1000) * height,
+          symbol: n.kind === 'category' ? 'roundRect' : 'circle',
+          symbolSize: Math.round((plain ? 6 : 10) + 6 * Math.sqrt(n.degree)),
+          itemStyle: plain ? { color: c.surface, borderColor: c.muted, borderWidth: 2 } : { borderColor: c.surface, borderWidth: 1 },
+          label: { show: state.labels || shown.has(n.id), fontWeight: plain ? 400 : 600 },
+          url: n.url,
+        };
+      });
+      const links = model.links.map((l) => ({
+        source: l.source,
+        target: l.target,
+        kind: l.kind,
+        lineStyle: l.kind === 'supervises'
+          ? { color: c.primary, width: 1.5, type: 'dashed', opacity: 0.9 }
+          : l.kind === 'member' ? { color: c.muted, width: 1, type: 'dotted', opacity: 0.5 } : { color: c.muted, width: 1, opacity: 0.55 },
+        symbol: l.kind === 'supervises' ? ['none', 'arrow'] : ['none', 'none'],
+        symbolSize: 7,
+      }));
+      const label = (id) => model.nodes.find((n) => n.id === id)?.label ?? '';
+      return {
+        animation: m.enter > 0,
+        // The entrance plays once; a later update glides (or, under reduced motion, does not move).
+        animationDuration: first ? m.enter : 0,
+        animationEasing: m.easing,
+        animationDurationUpdate: m.update,
+        animationEasingUpdate: 'cubicInOut',
+        aria: { enabled: true, label: { description: box.getAttribute('aria-label') || '' } },
+        textStyle: { fontFamily: c.font },
+        tooltip: {
+          confine: true,
+          backgroundColor: c.surface,
+          borderColor: c.grid,
+          textStyle: { color: c.strong, fontSize: 12 },
+          formatter: (p) => {
+            if (p.dataType === 'edge') {
+              const key = p.data.kind === 'supervises' ? 'js_graph_supervises' : p.data.kind === 'member' ? 'js_graph_member' : 'js_graph_uses';
+              return escape(t(key, { a: label(p.data.source), b: label(p.data.target) }));
+            }
+            const n = model.nodes.find((x) => x.id === p.data.id);
+            if (!n) return '';
+            const facts = [];
+            if (n.kind === 'project') {
+              facts.push(names?.[projects.find((x) => x.repo === n.repo)?.category], n.facts.language);
+              if (n.facts.supervised) facts.push(t('js_graph_supervised'));
+              if (n.facts.live) facts.push(t('js_live'));
+            } else if (n.uses) {
+              facts.push(t('js_graph_used_by', { n: n.uses }));
+            }
+            facts.push(t('js_graph_links', { n: n.degree }));
+            return `<b>${escape(n.label)}</b><br>${facts.filter(Boolean).map(escape).join(' · ')}<br><span class="opacity-75">${escape(t('js_click_to_open'))}</span>`;
+          },
+        },
+        legend: {
+          type: 'scroll',
+          data: legend,
+          top: 4,
+          left: 4,
+          // The layer's toolbar sits over the top-right corner.
+          right: 132,
+          icon: 'circle',
+          itemWidth: 10,
+          itemHeight: 10,
+          textStyle: { color: c.text, fontSize: 12 },
+          inactiveColor: c.grid,
+          pageIconColor: c.primary,
+          pageIconInactiveColor: c.grid,
+          pageTextStyle: { color: c.text },
+        },
+        series: [{
+          id: 'graph',
+          type: 'graph',
+          layout: 'force',
+          // A drag pans and the page keeps its wheel; Ctrl + wheel (or a pinch) zooms, see onWheel.
+          roam: 'move',
+          draggable: true,
+          top: 40,
+          bottom: 8,
+          left: 8,
+          right: 8,
+          ...(fresh ? { zoom: state.zoom } : {}),
+          scaleLimit: { min: 0.3, max: 4 },
+          force: {
+            repulsion: state.repulsion * k * k,
+            edgeLength: state.edgeLength * k,
+            gravity: state.gravity,
+            friction: 0.12,
+            // Under reduced motion the simulation still runs, to its end, in one step.
+            layoutAnimation: m.enter > 0,
+          },
+          categories: legend.map((name, i) => ({ name, itemStyle: { color: colours[i] } })),
+          data,
+          links,
+          label: {
+            position: 'bottom',
+            distance: 4,
+            color: c.strong,
+            fontSize: 12,
+            backgroundColor: c.alpha(c.surface, 0.85),
+            padding: [1, 3],
+            borderRadius: 3,
+          },
+          labelLayout: { hideOverlap: true },
+          emphasis: { focus: 'adjacency', label: { show: true }, lineStyle: { width: 2, opacity: 1 } },
+          blur: { itemStyle: { opacity: 0.15 }, lineStyle: { opacity: 0.06 }, label: { opacity: 0.25 } },
+        }],
+      };
+    }
+
+    render({ fresh: true });
+    return handle;
   },
 });
