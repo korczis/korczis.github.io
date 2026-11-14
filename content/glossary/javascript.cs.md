@@ -16,8 +16,8 @@ kind = "language"
 definition = "Programovací jazyk webového prohlížeče, na serverech běží přes Node.js. Každá interaktivní část tohoto webu je v JavaScriptu."
 aliases = []
 reference = { title = "MDN Web Docs: JavaScript", url = "https://developer.mozilla.org/en-US/docs/Web/JavaScript" }
-pages = ["about.cs.md", "projects/data.cs.md", "projects/learning.cs.md", "projects/libraries.cs.md", "projects/media.cs.md", "projects/science.cs.md", "projects/systems.cs.md", "projects/tools.cs.md", "projects/web.cs.md", "work/algoglyph.cs.md", "work/astronomists.cs.md", "work/bubbler.cs.md", "work/catharsis-as-a-service.cs.md", "work/crisis-map.cs.md", "work/data-atlas.cs.md", "work/dispatcher.cs.md", "work/gists-search.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/korczis-github-io.cs.md", "work/majordomus-reel.cs.md", "work/oscilla.cs.md", "work/prismatic-majordomus.cs.md", "work/prismatic.cs.md", "work/sonic-playground.cs.md", "work/the-psycho.cs.md", "work/u-tygra.cs.md", "work/unable-cz.cs.md", "work/vomaste-cz.cs.md"]
-related = ["repository", "open-source", "commit", "html", "shell", "css", "github-pages", "elixir"]
+pages = ["about.cs.md", "projects/ai.cs.md", "projects/data.cs.md", "projects/learning.cs.md", "projects/libraries.cs.md", "projects/media.cs.md", "projects/science.cs.md", "projects/systems.cs.md", "projects/tools.cs.md", "projects/web.cs.md", "work/algoglyph.cs.md", "work/astronomists.cs.md", "work/bubbler.cs.md", "work/catharsis-as-a-service.cs.md", "work/crisis-map.cs.md", "work/data-atlas.cs.md", "work/dispatcher.cs.md", "work/gists-search.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/korczis-github-io.cs.md", "work/majordomus-reel.cs.md", "work/oscilla.cs.md", "work/prismatic-majordomus.cs.md", "work/prismatic.cs.md", "work/sonic-playground.cs.md", "work/the-psycho.cs.md", "work/u-tygra.cs.md", "work/unable-cz.cs.md", "work/vomaste-cz.cs.md"]
+related = ["repository", "open-source", "html", "commit", "shell", "css", "github-pages", "elixir"]
 og_title = "JavaScript: slovník"
 og_image = "og/cs-glossary-javascript.png"
 keywords = ["JavaScript", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

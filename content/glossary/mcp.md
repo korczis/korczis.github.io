@@ -17,7 +17,7 @@ definition = "The Model Context Protocol: an open protocol through which AI appl
 aliases = []
 reference = { title = "modelcontextprotocol.io", url = "https://modelcontextprotocol.io/" }
 pages = ["projects/ai.md", "projects/data.md", "work/crisis-map.md", "work/prismatic-majordomus.md"]
-related = ["html", "repository", "javascript", "rust", "ai-agent", "commit", "css", "elixir"]
+related = ["html", "javascript", "repository", "rust", "ai-agent", "commit", "css", "elixir"]
 og_title = "MCP: glossary"
 og_image = "og/glossary-mcp.png"
 keywords = ["MCP", "Technology", "Glossary", "Tomas Korcak"]

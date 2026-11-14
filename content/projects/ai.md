@@ -13,7 +13,7 @@ category = "ai"
 og_title = "AI engineering: 7 repositories."
 og_image = "og/category-ai.png"
 schema = "collection"
-terms = ["ai-agent", "html", "rust", "mcp", "zola", "repository"]
+terms = ["ai-agent", "html", "javascript", "rust", "mcp", "zola", "repository"]
 keywords = ["AI engineering", "Majordomus", "korczis.github.io", "osint-case-ratcliffe-moscow-2026", "llm", "sig", "edna", "cognitive-reasoning", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -27,7 +27,7 @@ tone = "night"
 +++
 Supervision for AI coding agents: one policy for every tool, scoped tasks, and work that lands only when it is proven.
 
-The category holds 7 original repositories, written most often in [HTML](@/glossary/html.md) and [Rust](@/glossary/rust.md). Featured: **Majordomus**.
+The category holds 7 original repositories, written most often in [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md) and [Rust](@/glossary/rust.md). Featured: **Majordomus**.
 
 Key concept: [AI agent](@/glossary/ai-agent.md).
 

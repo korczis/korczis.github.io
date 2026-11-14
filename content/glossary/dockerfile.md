@@ -17,7 +17,7 @@ definition = "The recipe that builds a container image: a base system, files and
 aliases = []
 reference = { title = "Dockerfile reference", url = "https://docs.docker.com/reference/dockerfile/" }
 pages = ["projects/media.md", "projects/systems.md", "work/el-magico-cache.md", "work/pdf-renderer.md", "work/prismatic-blog.md"]
-related = ["repository", "commit", "open-source", "data-visualisation", "elixir", "html", "javascript", "shell"]
+related = ["repository", "commit", "open-source", "data-visualisation", "elixir", "html", "javascript", "python"]
 og_title = "Dockerfile: glossary"
 og_image = "og/glossary-dockerfile.png"
 keywords = ["Dockerfile", "Programming language", "Glossary", "Tomas Korcak"]

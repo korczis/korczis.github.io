@@ -17,7 +17,7 @@ definition = "A program that uses a language model to plan and act (edit code, r
 aliases = []
 reference = { title = "Anthropic: building effective agents", url = "https://www.anthropic.com/research/building-effective-agents" }
 pages = ["about.md", "projects/_index.md", "projects/ai.md", "work/cognitive-reasoning.md", "work/edna.md", "work/korczis-github-io.md", "work/llm.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/prismatic-majordomus.md", "work/sig.md"]
-related = ["open-source", "repository", "commit", "html", "shell", "elixir", "javascript", "rust"]
+related = ["open-source", "repository", "commit", "html", "javascript", "shell", "elixir", "rust"]
 og_title = "AI agent: glossary"
 og_image = "og/glossary-ai-agent.png"
 keywords = ["AI agent", "Concept", "Glossary", "Tomas Korcak"]

@@ -16,8 +16,8 @@ kind = "language"
 definition = "The programming language of the web browser, also run on servers through Node.js. Every interactive part of this site is JavaScript."
 aliases = []
 reference = { title = "MDN Web Docs: JavaScript", url = "https://developer.mozilla.org/en-US/docs/Web/JavaScript" }
-pages = ["about.md", "projects/data.md", "projects/learning.md", "projects/libraries.md", "projects/media.md", "projects/science.md", "projects/systems.md", "projects/tools.md", "projects/web.md", "work/algoglyph.md", "work/astronomists.md", "work/bubbler.md", "work/catharsis-as-a-service.md", "work/crisis-map.md", "work/data-atlas.md", "work/dispatcher.md", "work/gists-search.md", "work/kompendium-epistemicke-anihilace.md", "work/korczis-github-io.md", "work/majordomus-reel.md", "work/oscilla.md", "work/prismatic-majordomus.md", "work/prismatic.md", "work/sonic-playground.md", "work/the-psycho.md", "work/u-tygra.md", "work/unable-cz.md", "work/vomaste-cz.md"]
-related = ["repository", "open-source", "commit", "html", "shell", "css", "github-pages", "elixir"]
+pages = ["about.md", "projects/ai.md", "projects/data.md", "projects/learning.md", "projects/libraries.md", "projects/media.md", "projects/science.md", "projects/systems.md", "projects/tools.md", "projects/web.md", "work/algoglyph.md", "work/astronomists.md", "work/bubbler.md", "work/catharsis-as-a-service.md", "work/crisis-map.md", "work/data-atlas.md", "work/dispatcher.md", "work/gists-search.md", "work/kompendium-epistemicke-anihilace.md", "work/korczis-github-io.md", "work/majordomus-reel.md", "work/oscilla.md", "work/prismatic-majordomus.md", "work/prismatic.md", "work/sonic-playground.md", "work/the-psycho.md", "work/u-tygra.md", "work/unable-cz.md", "work/vomaste-cz.md"]
+related = ["repository", "open-source", "html", "commit", "shell", "css", "github-pages", "elixir"]
 og_title = "JavaScript: glossary"
 og_image = "og/glossary-javascript.png"
 keywords = ["JavaScript", "Programming language", "Glossary", "Tomas Korcak"]

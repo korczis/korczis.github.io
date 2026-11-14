@@ -17,7 +17,7 @@ definition = "Recept, který staví obraz kontejneru: základní systém, soubor
 aliases = []
 reference = { title = "Dockerfile reference", url = "https://docs.docker.com/reference/dockerfile/" }
 pages = ["projects/media.cs.md", "projects/systems.cs.md", "work/el-magico-cache.cs.md", "work/pdf-renderer.cs.md", "work/prismatic-blog.cs.md"]
-related = ["repository", "commit", "open-source", "data-visualisation", "elixir", "html", "javascript", "shell"]
+related = ["repository", "commit", "open-source", "data-visualisation", "elixir", "html", "javascript", "python"]
 og_title = "Dockerfile: slovník"
 og_image = "og/cs-glossary-dockerfile.png"
 keywords = ["Dockerfile", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

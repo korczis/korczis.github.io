@@ -17,7 +17,7 @@ definition = "Program, který s pomocí jazykového modelu plánuje a jedná (up
 aliases = []
 reference = { title = "Anthropic: building effective agents", url = "https://www.anthropic.com/research/building-effective-agents" }
 pages = ["about.cs.md", "projects/_index.cs.md", "projects/ai.cs.md", "work/cognitive-reasoning.cs.md", "work/edna.cs.md", "work/korczis-github-io.cs.md", "work/llm.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/prismatic-majordomus.cs.md", "work/sig.cs.md"]
-related = ["open-source", "repository", "commit", "html", "shell", "elixir", "javascript", "rust"]
+related = ["open-source", "repository", "commit", "html", "javascript", "shell", "elixir", "rust"]
 og_title = "AI agent: slovník"
 og_image = "og/cs-glossary-ai-agent.png"
 keywords = ["AI agent", "Koncept", "Slovník", "Tomáš Korčák"]

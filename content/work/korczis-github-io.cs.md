@@ -3,7 +3,7 @@
 title = "korczis.github.io"
 description = "korczis.github.io: projekt z kategorie Inženýrství AI, hlavní jazyk JavaScript, poslední commit 12. listopadu 2026."
 template = "work.html"
-weight = 1
+weight = 6
 
 [taxonomies]
 tags = ["Inženýrství AI", "JavaScript", "HTML", "Shell"]
@@ -25,8 +25,8 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**korczis.github.io** je projekt z kategorie [Inženýrství AI](@/projects/ai.cs.md). Jeho kód je napsaný hlavně v jazyce [JavaScript](@/glossary/javascript.cs.md) (48,2 %), dále [HTML](@/glossary/html.cs.md), [Shell](@/glossary/shell.cs.md) a [CSS](@/glossary/css.cs.md).
+**korczis.github.io** je projekt z kategorie [Inženýrství AI](@/projects/ai.cs.md). Jeho kód je napsaný hlavně v jazyce [JavaScript](@/glossary/javascript.cs.md) (52,4 %), dále [HTML](@/glossary/html.cs.md), [Shell](@/glossary/shell.cs.md) a [CSS](@/glossary/css.cs.md).
 
-[Repozitář](@/glossary/repository.cs.md) vznikl 24. prosince 2024; poslední [commit](@/glossary/commit.cs.md) je z 12. listopadu 2026. Zní „feat(viz): a live pulse of public GitHub activity on the home page“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+[Repozitář](@/glossary/repository.cs.md) vznikl 24. prosince 2024; poslední [commit](@/glossary/commit.cs.md) je z 12. listopadu 2026. Zní „ci: bump actions/checkout (\#6)“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 30 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

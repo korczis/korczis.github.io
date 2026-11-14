@@ -17,7 +17,7 @@ definition = "Převod čísel na obrazy, které lze přečíst jedním pohledem:
 aliases = []
 reference = { title = "Data visualization (Wikipedia)", url = "https://en.wikipedia.org/wiki/Data_and_information_visualization" }
 pages = ["_index.cs.md", "projects/_index.cs.md", "projects/media.cs.md", "projects/science.cs.md", "work/_index.cs.md", "work/algoglyph.cs.md", "work/catharsis-as-a-service.cs.md", "work/distance-calculator.cs.md", "work/majordomus-reel.cs.md", "work/openttd-prismatic-bridge.cs.md", "work/oscilla.cs.md", "work/prismatic-blog.cs.md", "work/sonic-playground.cs.md"]
-related = ["repository", "commit", "open-source", "html", "javascript", "github-pages", "shell", "python"]
+related = ["repository", "commit", "open-source", "html", "javascript", "github-pages", "python", "shell"]
 og_title = "Vizualizace dat: slovník"
 og_image = "og/cs-glossary-data-visualisation.png"
 keywords = ["Vizualizace dat", "Data visualisation", "Koncept", "Slovník", "Tomáš Korčák"]

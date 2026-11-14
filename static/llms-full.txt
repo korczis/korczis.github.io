@@ -69,12 +69,12 @@ Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist s
 ## Every original repository
 
 > 211 repositories on GitHub and GitLab where the owner wrote at least half of the commits,
-> derived 2026-11-12T03:50:41Z. Forks and mirrors (297) are not listed.
+> derived 2026-11-14T01:09:08Z. Forks and mirrors (297) are not listed.
 
 ### AI engineering (7)
 
-- korczis.github.io: Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus. (HTML, 2024). GitHub https://github.com/korczis/korczis.github.io
 - prismatic-majordomus: AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model. (Rust, 2026). GitHub https://github.com/korczis/prismatic-majordomus; site https://korczis.github.io/prismatic-majordomus/
+- korczis.github.io: Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus. (JavaScript, 2024). GitHub https://github.com/korczis/korczis.github.io
 - osint-case-ratcliffe-moscow-2026: Open-source intelligence assessment of the CIA Director's unannounced Moscow visit (2026-08-25) — maintained with Claude Code skills; reusable OSINT case toolkit (HTML, 2026). GitHub https://github.com/korczis/osint-case-ratcliffe-moscow-2026; site https://korczis.github.io/osint-case-ratcliffe-moscow-2026/
 - llm: Local-first, provider-agnostic archive of AI conversations (ChatGPT, Claude, Gemini, Codex) — immutable, content-addressed, searchable evidence layer built in Elixir/Ecto. (2026). GitLab https://gitlab.com/korczis/llm
 - sig: distributed cognitive framework in Elixir/OTP. (2025). GitLab https://gitlab.com/korczis/sig
@@ -161,7 +161,7 @@ Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist s
 
 ### Media and art (8)
 
-- sonic-playground: Sonic Playground - Phoenix/Elixir music blog built on the Kita theme (HTML, 2026). GitHub https://github.com/korczis/sonic-playground; site https://korczis.github.io/sonic-playground/
+- sonic-playground: Sonic Playground - Phoenix/Elixir music blog built on the Kita theme (Python, 2026). GitHub https://github.com/korczis/sonic-playground; site https://korczis.github.io/sonic-playground/
 - catharsis-as-a-service: Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact. (HTML, 2026). GitHub https://github.com/korczis/catharsis-as-a-service; site https://korczis.github.io/catharsis-as-a-service/
 - openttd-prismatic-bridge: REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform (2026). GitLab https://gitlab.com/korczis/openttd-prismatic-bridge
 - majordomus-reel: A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound (HTML, 2026). GitHub https://github.com/korczis/majordomus-reel; site https://korczis.github.io/majordomus-reel/
