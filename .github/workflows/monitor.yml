@@ -28,6 +28,8 @@ jobs:
           SITE_DIR=public node scripts/audit-ui.mjs --shots "$RUNNER_TEMP/shots"
       - name: Every live project site answers
         run: node scripts/check-live.mjs
+      - name: The data is fresh (the six-hourly refresh lands)
+        run: node scripts/check-fresh.mjs
       - name: Upload screenshots
         if: always()
         uses: actions/upload-artifact@v7

@@ -30,7 +30,10 @@ jobs:
       - uses: ./.github/actions/setup
       - name: Renderer for the Open Graph images
         run: sudo apt-get install -y --no-install-recommends librsvg2-bin
+      # GitLab reads have a 15-minute budget per fetcher and then keep the last measurement
+      # (scripts/lib/gitlab.mjs); the step limit is the backstop, never the plan.
       - name: Measure (GitHub, GitLab, majordomus.dev; the last 12, 24 and 48 months)
+        timeout-minutes: 45
         run: npm run --silent data && npm run --silent index && npm run --silent recent
       - name: Derive (categories, work pages, llms.txt, OG images, site.json)
         run: npm run --silent derive

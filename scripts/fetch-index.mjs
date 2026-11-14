@@ -6,7 +6,8 @@
 //
 // usage: npm run index      (needs the authenticated CLIs `gh` and `glab`)
 import { execFile } from 'node:child_process';
-import { readFileSync, writeFileSync } from 'node:fs';
+import { GitLabBudgetError, gitlabClient } from './lib/gitlab.mjs';
+import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { promisify } from 'node:util';
@@ -26,34 +27,9 @@ async function gh(path) {
   return stdout.trim() ? JSON.parse(stdout) : null;
 }
 
-// GitLab through its CLI (`glab api`, authenticated: higher rate limits than anonymous REST). On a
-// rate limit it waits and retries, up to six times.
-// Where glab is not installed or not logged in (CI), the same API answers over REST, with
-// GITLAB_TOKEN when the environment has one and anonymously otherwise.
-let useGlab = null;
-async function gitlab(path) {
-  if (useGlab === null) {
-    useGlab = await run('glab', ['auth', 'status']).then(() => true, () => false);
-    if (!useGlab) console.error('glab unavailable: reading GitLab over REST');
-  }
-  for (let attempt = 0; ; attempt += 1) {
-    try {
-      if (useGlab) {
-        const { stdout } = await run('glab', ['api', path.replace(/^\//, '')], { maxBuffer: 64 * 1024 * 1024 });
-        return JSON.parse(stdout);
-      }
-      const headers = process.env.GITLAB_TOKEN ? { 'PRIVATE-TOKEN': process.env.GITLAB_TOKEN } : {};
-      const response = await fetch(`https://gitlab.com/api/v4/${path.replace(/^\//, '')}`, { headers, signal: AbortSignal.timeout(30000) });
-      if (response.ok) return response.json();
-      const error = new Error(`GitLab ${path}: HTTP ${response.status}`);
-      error.stderr = String(response.status);
-      throw error;
-    } catch (error) {
-      if (!/429|rate limit/i.test(String(error.stderr ?? error.message)) || attempt >= 6) throw error;
-      await new Promise((resolve) => setTimeout(resolve, 2 ** attempt * 5000));
-    }
-  }
-}
+// GitLab through the shared client (scripts/lib/gitlab.mjs): glab locally, REST in CI, one time
+// budget so a slow or rate-limited GitLab degrades the refresh instead of hanging it.
+const gitlab = gitlabClient({ budgetMs: Number(process.env.GITLAB_BUDGET_MS) || 15 * 60 * 1000 });
 
 async function pool(items, worker, size = POOL) {
   const out = new Array(items.length);
@@ -110,7 +86,9 @@ async function githubRepos() {
           list.map((c) => ({ login: c.login, name: c.name, count: c.contributions })),
           (c) => c.login === LOGIN || OWNER_NAME.test(c.name ?? ''),
         );
-      } catch {
+      } catch (error) {
+        // A spent budget ends the whole GitLab reading; any other failure is this project's alone.
+        if (error instanceof GitLabBudgetError) throw error;
         share = null;
       }
     }
@@ -133,7 +111,12 @@ async function githubRepos() {
   });
 }
 
-async function gitlabRepos() {
+// The owner's share of a project's commits changes only with new commits: a project whose last
+// activity is the one already measured keeps its stored share, and only active projects are asked
+// for their contributors again. That keeps an anonymous refresh within GitLab's rate limits.
+async function gitlabRepos(stored) {
+  const known = new Map((stored?.all_repos ?? []).filter((r) => r.hosts?.gitlab).map((r) => [r.name.toLowerCase(), r]));
+  let reused = 0;
   const all = [];
   for (let page = 1; ; page += 1) {
     const batch = await gitlab(`/users/${LOGIN}/projects?visibility=public&per_page=100&page=${page}`);
@@ -143,7 +126,11 @@ async function gitlabRepos() {
   }
   return pool(all, async (p) => {
     let share = null;
-    if (!p.forked_from_project) {
+    const before = known.get(p.path.toLowerCase());
+    if (!p.forked_from_project && before && before.pushed_at === p.last_activity_at && before.share !== null && before.share !== undefined) {
+      share = before.share;
+      reused += 1;
+    } else if (!p.forked_from_project) {
       try {
         const list = await gitlab(`/projects/${p.id}/repository/contributors?per_page=20`);
         share = ownerShare(list.map((c) => ({ name: c.name, count: c.commits })), (c) => OWNER_NAME.test(c.name ?? ''));
@@ -167,7 +154,20 @@ async function gitlabRepos() {
       fork: Boolean(p.forked_from_project),
       share,
     };
-  }, 4);
+  }, 4).then((list) => {
+    console.error(`GitLab: ${list.length} public projects, ${reused} shares reused from the last measurement`);
+    return list;
+  });
+}
+
+// When GitLab cannot be read in time, its projects keep their last measured records (from the
+// stored index), so the site loses nothing; the refresh says so, and GitHub is still current.
+function storedGitlab(stored) {
+  return (stored?.all_repos ?? []).filter((r) => r.hosts?.gitlab).map((r) => ({
+    name: r.name, host: 'gitlab', url: r.hosts.gitlab, homepage: null, pages: null, description: r.description,
+    language: r.hosts.github ? null : r.language, topics: r.topics ?? [], stars: r.stars, created_at: r.created_at,
+    pushed_at: r.pushed_at, archived: r.archived, fork: false, share: r.share,
+  }));
 }
 
 // Everything below the fetch is derivation: it runs again with --derive on the stored index, so a
@@ -293,8 +293,15 @@ if (process.argv.includes('--probe')) {
   const stored = JSON.parse(readFileSync(TARGET, 'utf8'));
   index = derive(stored.all_repos ?? stored.repos, stored.counts, stored.generated_at);
 } else {
+  const previous = existsSync(TARGET) ? JSON.parse(readFileSync(TARGET, 'utf8')) : null;
   const github = await githubRepos();
-  const gitlabList = await gitlabRepos();
+  let gitlabList;
+  try {
+    gitlabList = await gitlabRepos(previous);
+  } catch (error) {
+    gitlabList = storedGitlab(previous);
+    console.error(`GitLab: ${error.message}; kept the last measured ${gitlabList.length} projects`);
+  }
 
   // Merge by name: GitHub is the primary record (language, stars), GitLab adds its link; a project
   // only on GitLab stands on its own.

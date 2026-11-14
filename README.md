@@ -81,6 +81,12 @@ Pages are front matter over data. Nothing on them is typed, so nothing needs upd
   sixth hour (UTC), or by hand with
   `gh workflow run refresh.yml`. It runs `npm run refresh`, then `npm run check`. Only when every
   gate passes does it commit to master and start the deploy.
+  GitLab is read through one client (`scripts/lib/gitlab.mjs`): `glab` locally, REST in CI
+  (`GITLAB_TOKEN` raises the limits, anonymous works). Every rate-limit wait is logged. Each
+  fetcher has a 15-minute GitLab budget (`GITLAB_BUDGET_MS`), after which its GitLab projects keep
+  their last measurement and the run says how many; a refresh degrades, never hangs. An ownership
+  share is measured again only for projects with new activity. The daily Monitor runs
+  `scripts/check-fresh.mjs`, which fails when the data on master is older than 24 hours.
 
 ## Common tasks
 

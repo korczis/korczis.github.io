@@ -11,6 +11,7 @@ import { readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { promisify } from 'node:util';
+import { GitLabBudgetError, gitlabClient } from './lib/gitlab.mjs';
 
 const run = promisify(execFile);
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -78,26 +79,45 @@ async function github(name) {
   };
 }
 
+// GitLab through the shared client (glab locally, REST in CI, one time budget).
+const gl = gitlabClient({ budgetMs: Number(process.env.GITLAB_BUDGET_MS) || 15 * 60 * 1000 });
 async function gitlab(name) {
   const id = encodeURIComponent(`${LOGIN}/${name}`);
-  const project = json(await cli('glab', [`projects/${id}`]));
+  const project = await gl(`projects/${id}`);
   if (!project) return {};
   const branch = encodeURIComponent(project.default_branch ?? 'main');
   const [commits, langs, readme] = await Promise.all([
-    cli('glab', [`projects/${id}/repository/commits?per_page=${COMMITS}&ref_name=${branch}`]),
-    cli('glab', [`projects/${id}/languages`]),
-    cli('glab', [`projects/${id}/repository/files/README.md/raw?ref=${branch}`]),
+    gl(`projects/${id}/repository/commits?per_page=${COMMITS}&ref_name=${branch}`),
+    gl(`projects/${id}/languages`),
+    gl(`projects/${id}/repository/files/README.md/raw?ref=${branch}`, { raw: true }),
   ]);
-  const list = json(commits) ?? [];
+  const list = commits ?? [];
   const c = list[0];
   return {
     last_commit: c?.committed_date ?? null,
     last_message: c?.title ?? null,
     commits: list.map((x) => ({ at: x.committed_date, message: x.title, url: x.web_url })),
-    languages: Object.entries(json(langs) ?? {}).map(([n, share]) => ({ name: n, share: Math.round(share * 10) / 10 }))
+    languages: Object.entries(langs ?? {}).map(([n, share]) => ({ name: n, share: Math.round(share * 10) / 10 }))
       .sort((a, b) => b.share - a.share).slice(0, 6),
     readme: excerpt(readme),
   };
+}
+
+// When GitLab cannot be read in time, a project keeps its last measured record: the site loses
+// nothing, and the run says how many were kept.
+const previous = (() => { try { return JSON.parse(readFileSync(join(ROOT, 'data/recent.json'), 'utf8')).repos; } catch { return []; } })();
+let kept = 0;
+async function detailOf(r) {
+  if (r.hosts.github) return github(r.name);
+  try {
+    return await gitlab(r.name);
+  } catch (error) {
+    const before = previous.find((p) => p.name === r.name);
+    console.error(`GitLab ${r.name}: ${error instanceof GitLabBudgetError ? 'budget spent' : error.message}; ${before ? 'kept the last measurement' : 'skipped'}`);
+    if (!before) return {};
+    kept += 1;
+    return { last_commit: before.last_commit, last_message: before.last_message, commits: before.commits ?? [], languages: before.languages, readme: before.readme };
+  }
 }
 
 // Candidates: anything whose host says it moved in the window; the last commit then decides.
@@ -108,7 +128,7 @@ let next = 0;
 await Promise.all(Array.from({ length: POOL }, async () => {
   while (next < candidates.length) {
     const r = candidates[next++];
-    const detail = r.hosts.github ? await github(r.name) : await gitlab(r.name);
+    const detail = await detailOf(r);
     if (!detail.last_commit || detail.last_commit < cutoff) continue;
     const months = (now - Date.parse(detail.last_commit)) / (86400000 * 365.25 / 12);
     out.push({
@@ -145,4 +165,5 @@ const recent = {
 writeFileSync(join(ROOT, 'data/recent.json'), `${JSON.stringify(recent, null, 1)}\n`);
 console.log(`data/recent.json: ${out.length} of ${candidates.length} candidates have a commit in the last ${PERIODS.at(-1)} months ` +
   `(${recent.periods.map((p) => `${p.repos} within ${p.months}`).join(', ')}); ` +
-  `${out.filter((r) => r.readme).length} with a README excerpt`);
+  `${out.filter((r) => r.readme).length} with a README excerpt` +
+  `${kept ? `; ${kept} GitLab project(s) kept from the last measurement` : ''}`);
