@@ -4,18 +4,18 @@ title = "Data and GIS"
 description = "Catalogues and maps of open data: geodata sources, incident reports geocoded and served from one registry."
 template = "category.html"
 weight = 4
-updated = "2026-11-14T17:32:32Z"
+updated = "2026-10-29T13:50:30Z"
 
 [taxonomies]
-tags = ["Data and GIS", "Data Atlas", "Crisis map", "korczis", "apollo-crawler-extension"]
+tags = ["Data and GIS", "Data Atlas", "Crisis map", "apollo-crawler-extension", "microcrawler"]
 
 [extra]
 category = "data"
-og_title = "Data and GIS: 48 repositories."
+og_title = "Data and GIS: 50 repositories."
 og_image = "og/category-data.png"
 schema = "collection"
-terms = ["gis", "ruby", "javascript", "elixir", "shell", "html", "python", "rust", "postgis", "mcp", "repository"]
-keywords = ["Data and GIS", "Data Atlas", "Crisis map", "korczis", "apollo-crawler-extension", "microcrawler-crawler-bam-brno-cz", "microcrawler-crawler-all", "microcrawler-crawler-base", "microcrawler-crawler-craiglist-com", "Tomas Korcak"]
+terms = ["gis", "ruby", "javascript", "elixir", "html", "python", "rust", "shell", "postgis", "mcp", "repository"]
+keywords = ["Data and GIS", "Data Atlas", "Crisis map", "apollo-crawler-extension", "microcrawler", "microcrawler-browser", "microcrawler-crawler-bam-brno-cz", "microcrawler-crawler-all", "microcrawler-crawler-base", "Tomas Korcak"]
 
 [[extra.viz]]
 kind = "constellation"
@@ -28,8 +28,8 @@ tone = "night"
 +++
 Catalogues and maps of open data: geodata sources, incident reports geocoded and served from one registry.
 
-The category holds 48 original repositories, written most often in [Ruby](@/glossary/ruby.md), [JavaScript](@/glossary/javascript.md), [Elixir](@/glossary/elixir.md) and [Shell](@/glossary/shell.md). Featured: **Data Atlas** and **Crisis map**.
+The category holds 50 original repositories, written most often in [Ruby](@/glossary/ruby.md), [JavaScript](@/glossary/javascript.md), [Elixir](@/glossary/elixir.md) and [HTML](@/glossary/html.md). Featured: **Data Atlas** and **Crisis map**.
 
 Key concept: [GIS](@/glossary/gis.md).
 
-*How categories are made:* nobody assigns them by hand. A [repository](@/glossary/repository.md) falls into a category when its name, description or topics match the rule's keywords, otherwise its primary language decides; [forks](@/glossary/fork.md) and [mirrors](@/glossary/mirror.md) never count as the owner's work.
+*How categories are made:* nobody assigns them by hand. Every keyword of every category's rule is scored against a [repository](@/glossary/repository.md)'s name, topics and description, the name counting most, and the best score wins; when no keyword fits, its primary language decides. [Forks](@/glossary/fork.md) and [mirrors](@/glossary/mirror.md) never count as the owner's work.

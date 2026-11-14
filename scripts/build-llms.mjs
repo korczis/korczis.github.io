@@ -1,45 +1,39 @@
 #!/usr/bin/env node
-// Derives static/llms.txt and static/llms-full.txt (https://llmstxt.org) from zola.toml,
-// data/projects.toml and data/index.json, so a language model reading the site gets the same
+// Derives static/llms.txt and static/llms-full.txt (https://llmstxt.org) from zola.toml, the
+// front matter of the top-level pages, data/projects.toml and data/index.json, so a language model reading the site gets the same
 // catalogue a person sees, in plain Markdown: the curated projects, then every original repository.
 //
 // usage: node scripts/build-llms.mjs           write both files
 //        node scripts/build-llms.mjs --check   exit 1 if either committed file is stale
 import { readFileSync, writeFileSync } from 'node:fs';
-import { dirname, join } from 'node:path';
-import { fileURLToPath } from 'node:url';
-import { parse } from 'smol-toml';
+import { join } from 'node:path';
+import { CHECK, ROOT, config as siteConfig, contentPages, identity, isDefault, languages, readJson, readToml, report, slug } from './lib/derive.mjs';
 import { cliArgs } from './lib/cli.mjs';
 
 cliArgs({ '--check': true }, { derived: true });
 
-const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const TARGET = join(ROOT, 'static/llms.txt');
 const TARGET_FULL = join(ROOT, 'static/llms-full.txt');
-const config = parse(readFileSync(join(ROOT, 'zola.toml'), 'utf8'));
-const catalogue = parse(readFileSync(join(ROOT, 'data/projects.toml'), 'utf8'));
-const base = config.base_url.replace(/\/$/, '');
+const config = siteConfig();
+const catalogue = readToml('data/projects.toml');
+const me = identity();
+const base = me.base;
 const oneLine = (text) => text.replace(/\s+/g, ' ').trim();
 
+// The site's top-level pages (the home page, every top-level page and section) from their own
+// front matter in the default language, then each other language's home: nothing typed here.
+const pages = contentPages().filter((p) => p.fm && isDefault(p.lang) && /^(_index|[^/]+|[^/]+\/_index)\.md$/.test(p.rel))
+  .map((p) => ({ url: p.rel === '_index.md' ? `${base}/` : `${base}/${p.rel.replace(/(\/_index)?\.md$/, '')}/`, fm: p.fm }))
+  .sort((x, y) => (x.url === `${base}/` ? -1 : y.url === `${base}/` ? 1 : x.url.localeCompare(y.url)));
 const lines = [
   `# ${config.title}`,
   '',
   `> ${oneLine(config.description)}`,
   '',
-  `${config.extra.author} builds software for evidence: tools that make AI agents prove their`,
-  'work, honest scientific instruments in the browser, and knowledge bases that can be checked.',
-  'Every project below links to its source on GitHub; most have a live site.',
-  '',
   '## Pages',
   '',
-  `- [Home](${base}/): who I am, featured projects, activity`,
-  `- [About](${base}/about/): profile, CV, languages over the years, sources`,
-  `- [Projects](${base}/projects/): the curated catalogue, filterable, with project details`,
-  `- [Repositories](${base}/repositories/): every original repository on GitHub and GitLab`,
-  `- [Recent work](${base}/work/): every project with a commit in the last 12, 24 and 48 months, one page each`,
-  `- [Stack](${base}/stack/): the tools and practices behind every project`,
-  `- [Glossary](${base}/glossary/): every concept, language and technology the pages build on, defined and sourced`,
-  `- [Czech version](${base}/cs/): the same site, every page translated`,
+  ...pages.map((p) => `- [${p.fm.title}](${p.url}): ${oneLine(p.fm.description)}`),
+  ...languages().filter((l) => !isDefault(l)).map((l) => `- [${config.languages[l].title} (${l})](${base}/${l}/): ${oneLine(config.languages[l].description)}`),
   '',
 ];
 
@@ -50,28 +44,29 @@ for (const [key, category] of Object.entries(catalogue.categories)) {
   for (const p of projects) {
     const live = p.url ? ` Live: ${p.url}` : '';
     lines.push(
-      `- [${p.name}](https://github.com/korczis/${p.repo}): ${oneLine(p.tagline)}${live}`,
+      `- [${p.name}](${me.repoUrl(p.repo)}): ${oneLine(p.tagline)}${live}`,
     );
   }
   lines.push('');
 }
 
+// The supervisory layer the site is built under, as the catalogue describes it.
+const majordomus = me.majordomusUrl && catalogue.projects.find((p) => p.url?.replace(/\/$/, '') === me.majordomusUrl.replace(/\/$/, ''));
 lines.push(
   '## Optional',
   '',
-  `- [Majordomus](https://majordomus.dev): the supervisory layer this site is built under`,
+  ...(majordomus ? [`- [${majordomus.name}](${me.majordomusUrl}): ${oneLine(majordomus.tagline)}`] : []),
   `- [Full index for language models](${base}/llms-full.txt): every original repository with its links`,
-  `- [GitHub profile](https://github.com/korczis)`,
-  `- [GitLab profile](https://gitlab.com/korczis)`,
+  `- [GitHub profile](${me.githubUrl})`,
+  `- [GitLab profile](${me.gitlabUrl})`,
   '',
 );
 
 const text = lines.join('\n');
 
 // llms-full.txt: the summary above, then every original repository, grouped by inferred category.
-const index = JSON.parse(readFileSync(join(ROOT, 'data/index.json'), 'utf8'));
-const recent = JSON.parse(readFileSync(join(ROOT, 'data/recent.json'), 'utf8'));
-const slug = (name) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''); // as build-work.mjs
+const index = readJson('data/index.json');
+const recent = readJson('data/recent.json');
 const workPage = new Map(recent.repos.map((r) => [r.name, `${base}/work/${slug(r.name)}/`]));
 const full = [text.trimEnd(), '', '## Every original repository', '',
   `> ${index.counts.own} repositories on GitHub and GitLab where the owner wrote at least half of the commits,`,
@@ -90,7 +85,7 @@ for (const [key, category] of Object.entries(catalogue.categories)) {
 const fullText = full.join('\n');
 
 const outputs = [[TARGET, text], [TARGET_FULL, fullText]];
-if (process.argv.includes('--check')) {
+if (CHECK) {
   const stale = outputs.filter(([path, content]) => {
     try {
       return readFileSync(path, 'utf8') !== content;
@@ -98,11 +93,7 @@ if (process.argv.includes('--check')) {
       return true;
     }
   });
-  if (stale.length) {
-    for (const [path] of stale) console.error(`${path.slice(ROOT.length + 1)} is stale: run npm run llms`);
-    process.exit(1);
-  }
-  console.log('static/llms.txt and llms-full.txt are current');
+  report(stale.map(([path]) => `${path.slice(ROOT.length + 1)} is stale`), 'static/llms.txt and llms-full.txt are current');
 } else {
   for (const [path, content] of outputs) writeFileSync(path, content);
   console.log('static/llms.txt and llms-full.txt written');

@@ -4,18 +4,18 @@ title = "Security and OSINT"
 description = "Open-source intelligence, radio and network security research: cases, proofs of concept and the tooling around them."
 template = "category.html"
 weight = 6
-updated = "2017-07-08T19:01:44Z"
+updated = "2026-08-26T22:32:55Z"
 
 [taxonomies]
-tags = ["Security and OSINT", "magic", "zlown", "peacemaker", "ratnet"]
+tags = ["Security and OSINT", "osint-case-ratcliffe-moscow-2026", "magic", "zlown", "peacemaker"]
 
 [extra]
 category = "security"
-og_title = "Security and OSINT: 4 repositories."
+og_title = "Security and OSINT: 5 repositories."
 og_image = "og/category-security.png"
 schema = "collection"
-terms = ["osint", "cpp", "ruby", "rust", "repository"]
-keywords = ["Security and OSINT", "magic", "zlown", "peacemaker", "ratnet", "Tomas Korcak"]
+terms = ["osint", "cpp", "html", "ruby", "rust", "repository"]
+keywords = ["Security and OSINT", "osint-case-ratcliffe-moscow-2026", "magic", "zlown", "peacemaker", "ratnet", "Tomas Korcak"]
 
 [[extra.viz]]
 kind = "constellation"
@@ -28,8 +28,8 @@ tone = "night"
 +++
 Open-source intelligence, radio and network security research: cases, proofs of concept and the tooling around them.
 
-The category holds 4 original repositories, written most often in [C++](@/glossary/cpp.md), [Ruby](@/glossary/ruby.md) and [Rust](@/glossary/rust.md).
+The category holds 5 original repositories, written most often in [C++](@/glossary/cpp.md), [HTML](@/glossary/html.md), [Ruby](@/glossary/ruby.md) and [Rust](@/glossary/rust.md).
 
 Key concept: [OSINT](@/glossary/osint.md).
 
-*How categories are made:* nobody assigns them by hand. A [repository](@/glossary/repository.md) falls into a category when its name, description or topics match the rule's keywords, otherwise its primary language decides; [forks](@/glossary/fork.md) and [mirrors](@/glossary/mirror.md) never count as the owner's work.
+*How categories are made:* nobody assigns them by hand. Every keyword of every category's rule is scored against a [repository](@/glossary/repository.md)'s name, topics and description, the name counting most, and the best score wins; when no keyword fits, its primary language decides. [Forks](@/glossary/fork.md) and [mirrors](@/glossary/mirror.md) never count as the owner's work.

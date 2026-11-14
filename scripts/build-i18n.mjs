@@ -14,6 +14,9 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parse } from 'smol-toml';
 import { loadStrings } from './lib/strings.mjs';
+import { cliArgs } from './lib/cli.mjs';
+
+cliArgs({ '--check': true }, { derived: true });
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const CONFIG = join(ROOT, 'zola.toml');

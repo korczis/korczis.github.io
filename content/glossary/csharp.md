@@ -17,7 +17,7 @@ definition = "Microsoft's object-oriented language for .NET."
 aliases = []
 reference = { title = "C# documentation", url = "https://learn.microsoft.com/en-us/dotnet/csharp/" }
 pages = ["projects/learning.md", "projects/tools.md"]
-related = ["cpp", "elixir", "javascript", "repository", "ruby", "shell", "c", "haskell"]
+related = ["cpp", "elixir", "javascript", "repository", "ruby", "rust", "shell", "c"]
 og_title = "C#: glossary"
 og_image = "og/glossary-csharp.png"
 keywords = ["C#", "Programming language", "Glossary", "Tomas Korcak"]

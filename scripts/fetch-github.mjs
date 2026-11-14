@@ -13,13 +13,15 @@ import { readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parse } from 'smol-toml';
+import { identity } from './lib/derive.mjs';
 import { cliArgs } from './lib/cli.mjs';
 
 cliArgs({ '--stdout': true });
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const LOGIN = 'korczis';
-const MAJORDOMUS_BUILD = 'https://majordomus.dev/build.json';
+const me = identity();
+const LOGIN = me.github;
+const MAJORDOMUS_BUILD = me.majordomusBuild;
 const TOP_LANGUAGES = 10;
 
 function gh(args) {
@@ -49,7 +51,7 @@ async function probe(url) {
       method: 'GET',
       redirect: 'follow',
       signal: AbortSignal.timeout(15000),
-      headers: { 'user-agent': 'korczis.github.io data refresh' },
+      headers: { 'user-agent': `${me.host} data refresh` },
     });
     return response.status;
   } catch {
@@ -173,7 +175,7 @@ async function majordomus() {
       commit_time: build.commit_time ?? null,
     };
   } catch (error) {
-    throw new Error(`majordomus.dev/build.json unreachable: ${error.message}`);
+    throw new Error(`${MAJORDOMUS_BUILD} unreachable: ${error.message}`);
   }
 }
 

@@ -14,7 +14,8 @@ const run = promisify(execFile);
 
 export class GitLabBudgetError extends Error {}
 
-export function gitlabClient({ budgetMs = 15 * 60 * 1000, log = (m) => console.error(m) } = {}) {
+// The budget: GITLAB_BUDGET_MS from the environment (the workflows set it), else 15 minutes.
+export function gitlabClient({ budgetMs = Number(process.env.GITLAB_BUDGET_MS) || 15 * 60 * 1000, log = (m) => console.error(m) } = {}) {
   const deadline = Date.now() + budgetMs;
   let useGlab = null;
   let waits = 0;

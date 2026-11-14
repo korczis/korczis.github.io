@@ -16,7 +16,7 @@ kind = "concept"
 definition = "Turning numbers into pictures people can read at a glance: here spirals, bubbles, streams and graphs, each drawn from measured data."
 aliases = []
 reference = { title = "Data visualization (Wikipedia)", url = "https://en.wikipedia.org/wiki/Data_and_information_visualization" }
-pages = ["_index.md", "projects/_index.md", "projects/media.md", "projects/science.md", "work/_index.md", "work/algoglyph.md", "work/catharsis-as-a-service.md", "work/distance-calculator.md", "work/majordomus-reel.md", "work/openttd-prismatic-bridge.md", "work/oscilla.md", "work/prismatic-blog.md", "work/sonic-playground.md"]
+pages = ["_index.md", "projects/_index.md", "projects/media.md", "projects/science.md", "work/algoglyph.md", "work/catharsis-as-a-service.md", "work/distance-calculator.md", "work/majordomus-reel.md", "work/openttd-prismatic-bridge.md", "work/oscilla.md", "work/prismatic-blog.md", "work/sonic-playground.md"]
 related = ["repository", "commit", "open-source", "html", "javascript", "github-pages", "python", "shell"]
 og_title = "Data visualisation: glossary"
 og_image = "og/glossary-data-visualisation.png"

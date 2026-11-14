@@ -4,18 +4,18 @@ title = "Libraries"
 description = "Reusable building blocks for other programs: clients, bindings, validators, parsers and framework extensions, mostly Elixir and Rust."
 template = "category.html"
 weight = 9
-updated = "2025-12-20T21:25:51Z"
+updated = "2025-12-20T21:29:16Z"
 
 [taxonomies]
-tags = ["Libraries", "hydra", "in-rust-we-trust", "rustler-test", "streamflow"]
+tags = ["Libraries", "gauc-ex", "hydra", "gauc.ex", "easy-plugin-plugins"]
 
 [extra]
 category = "libraries"
-og_title = "Libraries: 10 repositories."
+og_title = "Libraries: 7 repositories."
 og_image = "og/category-libraries.png"
 schema = "collection"
-terms = ["open-source", "rust", "elixir", "javascript", "repository"]
-keywords = ["Libraries", "hydra", "in-rust-we-trust", "rustler-test", "streamflow", "sli2dli", "rustler_mix", "Tomas Korcak"]
+terms = ["open-source", "javascript", "elixir", "rust", "repository"]
+keywords = ["Libraries", "gauc-ex", "hydra", "gauc.ex", "easy-plugin-plugins", "peg-parser", "babel-plugin-transform-graphql", "Tomas Korcak"]
 
 [[extra.viz]]
 kind = "constellation"
@@ -28,8 +28,8 @@ tone = "night"
 +++
 Reusable building blocks for other programs: clients, bindings, validators, parsers and framework extensions, mostly Elixir and Rust.
 
-The category holds 10 original repositories, written most often in [Rust](@/glossary/rust.md), [Elixir](@/glossary/elixir.md) and [JavaScript](@/glossary/javascript.md).
+The category holds 7 original repositories, written most often in [JavaScript](@/glossary/javascript.md), [Elixir](@/glossary/elixir.md) and [Rust](@/glossary/rust.md).
 
 Key concept: [Open source](@/glossary/open-source.md).
 
-*How categories are made:* nobody assigns them by hand. A [repository](@/glossary/repository.md) falls into a category when its name, description or topics match the rule's keywords, otherwise its primary language decides; [forks](@/glossary/fork.md) and [mirrors](@/glossary/mirror.md) never count as the owner's work.
+*How categories are made:* nobody assigns them by hand. Every keyword of every category's rule is scored against a [repository](@/glossary/repository.md)'s name, topics and description, the name counting most, and the best score wins; when no keyword fits, its primary language decides. [Forks](@/glossary/fork.md) and [mirrors](@/glossary/mirror.md) never count as the owner's work.

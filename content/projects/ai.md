@@ -4,18 +4,18 @@ title = "AI engineering"
 description = "Supervision for AI coding agents: one policy for every tool, scoped tasks, and work that lands only when it is proven."
 template = "category.html"
 weight = 1
-updated = "2026-11-14T17:48:17Z"
+updated = "2026-11-13T04:00:28Z"
 
 [taxonomies]
-tags = ["AI engineering", "Majordomus", "korczis.github.io", "osint-case-ratcliffe-moscow-2026", "llm"]
+tags = ["AI engineering", "Majordomus", "llm", "sig", "edna"]
 
 [extra]
 category = "ai"
-og_title = "AI engineering: 7 repositories."
+og_title = "AI engineering: 5 repositories."
 og_image = "og/category-ai.png"
 schema = "collection"
-terms = ["ai-agent", "html", "javascript", "rust", "mcp", "zola", "repository"]
-keywords = ["AI engineering", "Majordomus", "korczis.github.io", "osint-case-ratcliffe-moscow-2026", "llm", "sig", "edna", "cognitive-reasoning", "Tomas Korcak"]
+terms = ["ai-agent", "rust", "mcp", "zola", "repository"]
+keywords = ["AI engineering", "Majordomus", "llm", "sig", "edna", "cognitive-reasoning", "Tomas Korcak"]
 
 [[extra.viz]]
 kind = "constellation"
@@ -28,8 +28,8 @@ tone = "night"
 +++
 Supervision for AI coding agents: one policy for every tool, scoped tasks, and work that lands only when it is proven.
 
-The category holds 7 original repositories, written most often in [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md) and [Rust](@/glossary/rust.md). Featured: **Majordomus**.
+The category holds 5 original repositories, written most often in [Rust](@/glossary/rust.md). Featured: **Majordomus**.
 
 Key concept: [AI agent](@/glossary/ai-agent.md).
 
-*How categories are made:* nobody assigns them by hand. A [repository](@/glossary/repository.md) falls into a category when its name, description or topics match the rule's keywords, otherwise its primary language decides; [forks](@/glossary/fork.md) and [mirrors](@/glossary/mirror.md) never count as the owner's work.
+*How categories are made:* nobody assigns them by hand. Every keyword of every category's rule is scored against a [repository](@/glossary/repository.md)'s name, topics and description, the name counting most, and the best score wins; when no keyword fits, its primary language decides. [Forks](@/glossary/fork.md) and [mirrors](@/glossary/mirror.md) never count as the owner's work.

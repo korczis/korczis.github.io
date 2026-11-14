@@ -17,7 +17,7 @@ definition = "Malý, rychlý systémový jazyk pod operačními systémy i vět�
 aliases = []
 reference = { title = "C (Wikipedia)", url = "https://en.wikipedia.org/wiki/C_(programming_language)" }
 pages = ["projects/learning.cs.md"]
-related = ["cpp", "csharp", "elixir", "haskell", "java", "javascript", "repository", "ruby"]
+related = ["cpp", "csharp", "elixir", "erlang", "haskell", "java", "javascript", "repository"]
 og_title = "C: slovník"
 og_image = "og/cs-glossary-c.png"
 keywords = ["C (programovací jazyk)", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

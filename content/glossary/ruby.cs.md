@@ -17,7 +17,7 @@ definition = "Dynamický, expresivní jazyk navržený pro radost programátora;
 aliases = []
 reference = { title = "ruby-lang.org", url = "https://www.ruby-lang.org/en/about/" }
 pages = ["about.cs.md", "projects/data.cs.md", "projects/learning.cs.md", "projects/security.cs.md", "projects/systems.cs.md", "projects/tools.cs.md"]
-related = ["javascript", "repository", "rust", "elixir", "shell", "cpp", "csharp", "open-source"]
+related = ["javascript", "repository", "rust", "elixir", "shell", "cpp", "csharp", "html"]
 og_title = "Ruby: slovník"
 og_image = "og/cs-glossary-ruby.png"
 keywords = ["Ruby", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

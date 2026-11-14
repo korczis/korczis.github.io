@@ -16,8 +16,8 @@ kind = "concept"
 definition = "A copy of someone else's repository under your account; forks are counted on this site but never shown as the owner's work."
 aliases = []
 reference = { title = "GitHub Docs: about forks", url = "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks" }
-pages = ["_index.md", "repositories/_index.md"]
-related = ["commit", "mirror", "repository", "d3", "data-visualisation", "flowbite-pro", "front-matter", "json-ld"]
+pages = ["_index.md", "repositories/_index.md", "work/_index.md"]
+related = ["commit", "mirror", "repository", "open-source", "d3", "data-visualisation", "flowbite-pro", "front-matter"]
 og_title = "Fork: glossary"
 og_image = "og/glossary-fork.png"
 keywords = ["Fork", "Concept", "Glossary", "Tomas Korcak"]

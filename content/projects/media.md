@@ -32,4 +32,4 @@ The category holds 8 original repositories, written most often in [HTML](@/gloss
 
 Key concept: [Data visualisation](@/glossary/data-visualisation.md).
 
-*How categories are made:* nobody assigns them by hand. A [repository](@/glossary/repository.md) falls into a category when its name, description or topics match the rule's keywords, otherwise its primary language decides; [forks](@/glossary/fork.md) and [mirrors](@/glossary/mirror.md) never count as the owner's work.
+*How categories are made:* nobody assigns them by hand. Every keyword of every category's rule is scored against a [repository](@/glossary/repository.md)'s name, topics and description, the name counting most, and the best score wins; when no keyword fits, its primary language decides. [Forks](@/glossary/fork.md) and [mirrors](@/glossary/mirror.md) never count as the owner's work.

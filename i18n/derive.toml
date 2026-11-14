@@ -1,0 +1,240 @@
+# The prose the generators write into derived pages (scripts/build-*.mjs, through t() of
+# scripts/lib/derive.mjs). {name} is a value the generator passes; [[term-id]] or
+# [[term-id|label]] becomes a link to that glossary term (checked by Zola); a key with __one,
+# __few, __other is chosen by Intl.PluralRules for its {n}.
+
+# Shared
+
+[derive_and]
+en = "and"
+cs = "a"
+
+[derive_months]
+en = "January,February,March,April,May,June,July,August,September,October,November,December"
+cs = "ledna,února,března,dubna,května,června,července,srpna,září,října,listopadu,prosince"
+
+[derive_date]
+en = "{day} {month} {year}"
+cs = "{day}. {month} {year}"
+
+# Category pages (scripts/build-categories.mjs)
+
+[derive_category_og__one]
+en = "{name}: {n} repository."
+cs = "{name}: {n} repozitář."
+
+[derive_category_og__few]
+en = "{name}: {n} repositories."
+cs = "{name}: {n} repozitáře."
+
+[derive_category_og__other]
+en = "{name}: {n} repositories."
+cs = "{name}: {n} repozitářů."
+
+[derive_category_holds__one]
+en = "The category holds {n} original repository{languages}.{featured}"
+cs = "Kategorie má {n} repozitář{languages}.{featured}"
+
+[derive_category_holds__few]
+en = "The category holds {n} original repositories{languages}.{featured}"
+cs = "Kategorie má {n} repozitáře{languages}.{featured}"
+
+[derive_category_holds__other]
+en = "The category holds {n} original repositories{languages}.{featured}"
+cs = "Kategorie má {n} repozitářů{languages}.{featured}"
+
+[derive_category_languages]
+en = ", written most often in {list}"
+cs = "; nejčastějšími jazyky jsou {list}"
+
+[derive_category_featured]
+en = " Featured: {list}."
+cs = " Vybrané projekty: {list}."
+
+[derive_category_concept]
+en = "Key concept: {list}."
+cs = "Klíčový pojem: {list}."
+
+[derive_category_how]
+en = "*How categories are made:* nobody assigns them by hand. Every keyword of every category's rule is scored against a [[repository|repository]]'s name, topics and description, the name counting most, and the best score wins; when no keyword fits, its primary language decides. [[fork|Forks]] and [[mirror|mirrors]] never count as the owner's work."
+cs = "*Jak kategorie vznikají:* nikdo je ručně nepřiřazuje. Každé klíčové slovo pravidel všech kategorií se poměří s názvem, tématy a popisem [[repository|repozitáře]], nejvíc váží název, a vyhraje nejlepší skóre; když nesedí žádné slovo, rozhodne hlavní jazyk. Forky a [[mirror|mirrory]] se nepočítají za vlastní práci."
+
+# Work pages (scripts/build-work.mjs)
+
+[derive_work_title]
+en = "Recent work"
+cs = "Nedávná práce"
+
+[derive_work_list_description__one]
+en = "Every project with a commit in the last {max} months, by period ({periods}): {n} repository on GitHub and GitLab, with its own page."
+cs = "Každý projekt s commitem za posledních {max} měsíců, podle období ({periods}): {n} repozitář na GitHubu a GitLabu, s vlastní stránkou."
+
+[derive_work_list_description__few]
+en = "Every project with a commit in the last {max} months, by period ({periods}): {n} repositories on GitHub and GitLab, each with its own page."
+cs = "Každý projekt s commitem za posledních {max} měsíců, podle období ({periods}): {n} repozitáře na GitHubu a GitLabu, každý s vlastní stránkou."
+
+[derive_work_list_description__other]
+en = "Every project with a commit in the last {max} months, by period ({periods}): {n} repositories on GitHub and GitLab, each with its own page."
+cs = "Každý projekt s commitem za posledních {max} měsíců, podle období ({periods}): {n} repozitářů na GitHubu a GitLabu, každý s vlastní stránkou."
+
+[derive_work_list_og__one]
+en = "{n} project, {span}."
+cs = "{n} projekt {span}."
+
+[derive_work_list_og__few]
+en = "{n} projects, {span}."
+cs = "{n} projekty {span}."
+
+[derive_work_list_og__other]
+en = "{n} projects, {span}."
+cs = "{n} projektů {span}."
+
+[derive_work_list_keyword]
+en = "{author} recent work"
+cs = "{author}: nedávná práce"
+
+[derive_work_list_article]
+en = """
+This page answers the question of what is being worked on now. A project belongs here by the date of its last [[commit|commit]] on the default branch, never by when its host last saw activity, and falls into one of the periods of {periods} months.
+
+Every project has its own page with a derived article, measured facts and the concepts it builds on. [[fork|Forks]] and [[mirror|mirrors]] are left out: this is the owner's own work only."""
+cs = """
+Tato stránka odpovídá na otázku, na čem se pracuje teď. Projekt sem patří podle data svého posledního [[commit|commitu]] ve výchozí větvi, ne podle toho, kdy na hostingu naposledy něco proběhlo, a řadí se do jednoho z období {periods} měsíců.
+
+Každý projekt má vlastní stránku s odvozeným článkem, změřenými fakty a pojmy, na kterých stojí. [[fork|Forky]] a [[mirror|mirrory]] tu nejsou: jde jen o vlastní práci."""
+
+[derive_work_description_fallback]
+en = "{text}. Active in the last {period} months; {category}."
+cs = "{text}. Aktivní za posledních {period} měsíců; {category}."
+
+[derive_work_description_pad]
+en = "A project by {author}, active in the last {period} months."
+cs = "Projekt, na kterém {author} pracoval za posledních {period} měsíců."
+
+[derive_work_description]
+en = "{name}: a project in {category}{language}, last commit on {last}."
+cs = "{name}: projekt z kategorie {category}{language}, poslední commit {last}."
+
+[derive_work_description_language]
+en = ", main language {language}"
+cs = ", hlavní jazyk {language}"
+
+[derive_work_intro]
+en = "{title} is a project in {category}."
+cs = "{title} je projekt z kategorie {category}."
+
+[derive_work_intro_languages]
+en = "{title} is a project in {category}. Its code is written mainly in {main}{rest}."
+cs = "{title} je projekt z kategorie {category}. Jeho kód je napsaný hlavně v jazyce {main}{rest}."
+
+[derive_work_intro_rest]
+en = ", with {list}"
+cs = ", dále {list}"
+
+[derive_work_message]
+en = " It reads “{message}”."
+cs = " Zní „{message}“."
+
+[derive_work_history]
+en = "The [[repository|repository]] was created in {created_month}; its latest [[commit|commit]] is from {last}.{message} That places it among the projects active in the last {period} months."
+cs = "[[repository]] vznikl {created}; poslední [[commit|commit]] je z {last}.{message} Patří tak mezi projekty aktivní za posledních {period} měsíců."
+
+[derive_work_stack]
+en = "It is built with {list}."
+cs = "Je postavený na {list}."
+
+[derive_work_site]
+en = "It runs as a live site{pages}: <{site}>."
+cs = "Běží jako živý web{pages}: <{site}>."
+
+[derive_work_site_pages]
+en = " on [[github-pages]]"
+cs = " na [[github-pages]]"
+
+[derive_work_latest_commits__one]
+en = "its only commit"
+cs = "jeho jediný commit"
+
+[derive_work_latest_commits__few]
+en = "the latest {n} commits"
+cs = "poslední {n} commity"
+
+[derive_work_latest_commits__other]
+en = "the latest {n} commits"
+cs = "posledních {n} commitů"
+
+[derive_work_how]
+en = "*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws {latest} as a heartbeat, one lane per commit type (feat, fix, docs…){refresh}. The concepts below are explained in the [glossary]({glossary})."
+cs = "*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje {latest} jako tep, jeden pruh na typ commitu (feat, fix, docs…){refresh}. Pojmy níže vysvětluje [slovník]({glossary})."
+
+[derive_work_refresh_live]
+en = ", refreshed live from your browser on GitHub"
+cs = "; na GitHubu se obnovuje živě z vašeho prohlížeče"
+
+[derive_work_refresh_snapshot]
+en = ", from a snapshot refreshed {cadence}"
+cs = ", ze snímku obnovovaného {cadence}"
+
+# How often .github/workflows/refresh.yml re-measures (derive.mjs cadence(), from its cron)
+
+[derive_cadence_hours__one]
+en = "every hour"
+cs = "každou hodinu"
+
+[derive_cadence_hours__few]
+en = "every {n} hours"
+cs = "každé {n} hodiny"
+
+[derive_cadence_hours__other]
+en = "every {n} hours"
+cs = "každých {n} hodin"
+
+[derive_cadence_days__other]
+en = "every day"
+cs = "každý den"
+
+[derive_cadence_weeks__other]
+en = "every week"
+cs = "každý týden"
+
+# The span of the recent window (data/recent.json periods)
+
+[derive_last_years__one]
+en = "the last year"
+cs = "za poslední rok"
+
+[derive_last_years__few]
+en = "the last {n} years"
+cs = "za poslední {n} roky"
+
+[derive_last_years__other]
+en = "the last {n} years"
+cs = "za posledních {n} let"
+
+[derive_last_months__one]
+en = "the last month"
+cs = "za poslední měsíc"
+
+[derive_last_months__few]
+en = "the last {n} months"
+cs = "za poslední {n} měsíce"
+
+[derive_last_months__other]
+en = "the last {n} months"
+cs = "za posledních {n} měsíců"
+
+# The glossary (scripts/build-glossary.mjs)
+
+[derive_glossary_article]
+en = """
+The glossary is the shared language of the whole site. Every page names the terms it builds on in its [[front-matter|front matter]] and ends by explaining them; a term's page in turn shows every page that uses it and the terms that appear alongside. These links are derived, never typed by hand.
+
+Each definition is short, in plain words, and points to a source to read further: documentation, a specification or an encyclopedia. Terms come in three kinds: programming languages, technologies and concepts.
+
+The map at the top draws the same links as a network: every term is a star, larger by the pages that name it, and threads lead to the terms that appear on the same pages. Such a map is called a co-occurrence graph; the terms at its centre are the ones that hold the site together."""
+cs = """
+Slovník je společný jazyk celého webu. Každá stránka ve svém [[front-matter]] jmenuje pojmy, na kterých stojí, a končí jejich výkladem; stránka pojmu naopak ukazuje všechny stránky, které ho používají, a pojmy, které se objevují s ním. Vazby se odvozují, nikdo je nepíše ručně.
+
+Každá definice je krátká a srozumitelná a odkazuje na zdroj, kde se dá číst dál: dokumentaci, specifikaci nebo encyklopedii. Pojmy jsou tří druhů: programovací jazyky, technologie a koncepty.
+
+Mapa nahoře kreslí tytéž vazby jako síť: každý pojem je hvězda, větší podle počtu stránek, které ho jmenují, a vlákna vedou k pojmům, které se objevují na stejných stránkách. Takové mapě se říká graf souvýskytu; pojmy, které stojí uprostřed, drží web pohromadě."""

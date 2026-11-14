@@ -7,15 +7,15 @@ weight = 4
 updated = "2026-11-14T17:32:25Z"
 
 [taxonomies]
-tags = ["Data and GIS", "JavaScript"]
+tags = ["Web", "JavaScript"]
 
 [extra]
 repo = "korczis"
 og_title = "korczis: Tomas Korcak: profile README, derived from korczis.github.io/site.json"
 og_image = "og/work-korczis.png"
 schema = "project"
-keywords = ["korczis", "Data and GIS", "JavaScript", "Tomas Korcak"]
-terms = ["javascript", "gis", "github-pages", "repository", "commit", "open-source"]
+keywords = ["korczis", "Web", "JavaScript", "Tomas Korcak"]
+terms = ["javascript", "static-site-generator", "github-pages", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -26,10 +26,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**korczis** is a project in [Data and GIS](@/projects/data.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (100 %).
+**korczis** is a project in [Web](@/projects/web.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (100 %).
 
 The [repository](@/glossary/repository.md) was created in November 2026; its latest [commit](@/glossary/commit.md) is from 14 November 2026. It reads “feat(profile): a GitHub profile README derived from site.json”. That places it among the projects active in the last 12 months.
 
 It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/>.
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 1 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws its only commit as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

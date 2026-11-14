@@ -11,11 +11,11 @@ tags = ["Znalosti", "Kompendium", "ReadingPhoneNumbersInRealTime", "MinervaEye",
 
 [extra]
 category = "knowledge"
-og_title = "Znalosti: 8 repozitářů."
+og_title = "Znalosti: 5 repozitářů."
 og_image = "og/cs-category-knowledge.png"
 schema = "collection"
-terms = ["elixir", "swift", "erlang", "shell", "zola", "cytoscape-js", "apache-echarts", "alpine-js", "flowbite-pro", "repository"]
-keywords = ["Znalosti", "Kompendium", "ReadingPhoneNumbersInRealTime", "MinervaEye", "reading", "skull-elixir", "skull", "skull-erlang", "Tomáš Korčák"]
+terms = ["swift", "elixir", "zola", "cytoscape-js", "apache-echarts", "alpine-js", "flowbite-pro", "repository"]
+keywords = ["Znalosti", "Kompendium", "ReadingPhoneNumbersInRealTime", "MinervaEye", "reading", "books", "Tomáš Korčák"]
 
 [[extra.viz]]
 kind = "constellation"
@@ -28,6 +28,6 @@ tone = "night"
 +++
 Znalostní báze, které si ověříte: propojené taxonomie se zdroji, stavěné jako knihy, weby a grafy.
 
-Kategorie má 8 repozitářů; nejčastějšími jazyky jsou [Elixir](@/glossary/elixir.cs.md), [Swift](@/glossary/swift.cs.md), [Erlang](@/glossary/erlang.cs.md) a [Shell](@/glossary/shell.cs.md). Vybrané projekty: **Kompendium**.
+Kategorie má 5 repozitářů; nejčastějšími jazyky jsou [Swift](@/glossary/swift.cs.md) a [Elixir](@/glossary/elixir.cs.md). Vybrané projekty: **Kompendium**.
 
-*Jak kategorie vznikají:* nikdo je ručně nepřiřazuje. [Repozitář](@/glossary/repository.cs.md) spadne do kategorie, když jeho název, popis nebo témata odpovídají klíčovým slovům pravidla, jinak rozhodne jeho hlavní jazyk; forky a [mirrory](@/glossary/mirror.cs.md) se nepočítají za vlastní práci.
+*Jak kategorie vznikají:* nikdo je ručně nepřiřazuje. Každé klíčové slovo pravidel všech kategorií se poměří s názvem, tématy a popisem [repozitáře](@/glossary/repository.cs.md), nejvíc váží název, a vyhraje nejlepší skóre; když nesedí žádné slovo, rozhodne hlavní jazyk. Forky a [mirrory](@/glossary/mirror.cs.md) se nepočítají za vlastní práci.

@@ -17,7 +17,7 @@ definition = "Jazyk Applu pro aplikace na iOS a macOS."
 aliases = []
 reference = { title = "swift.org", url = "https://www.swift.org/documentation/" }
 pages = ["projects/knowledge.cs.md", "projects/tools.cs.md"]
-related = ["elixir", "repository", "shell", "alpine-js", "apache-echarts", "cpp", "csharp", "cytoscape-js"]
+related = ["elixir", "repository", "alpine-js", "apache-echarts", "cpp", "csharp", "cytoscape-js", "flowbite-pro"]
 og_title = "Swift: slovník"
 og_image = "og/cs-glossary-swift.png"
 keywords = ["Swift", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

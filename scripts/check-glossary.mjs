@@ -5,18 +5,14 @@
 //   - every content page (outside content/glossary/): a non-empty body and at least one term;
 //   - every term a page names exists, and every term is used by at least one page;
 //   - article bodies link to the glossary only through @/ links (Zola checks those).
-import { readdirSync, readFileSync } from 'node:fs';
-import { dirname, join, relative } from 'node:path';
-import { fileURLToPath } from 'node:url';
-import { parse } from 'smol-toml';
+import { ROOT, contentPages, identity } from './lib/derive.mjs';
 import { loadGlossary } from './lib/terms.mjs';
 import { cliArgs } from './lib/cli.mjs';
 
 cliArgs();
 
-const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const CONTENT = join(ROOT, 'content');
 const g = loadGlossary(ROOT);
+const me = identity();
 const findings = [];
 
 const seen = new Set();
@@ -29,22 +25,14 @@ for (const t of g.terms) {
   if (!/^https:\/\//.test(t.reference?.url ?? '') || !t.reference?.title) findings.push(`data/glossary.toml: ${t.id} needs a reference with a title and an https url`);
 }
 
-function walk(dir) {
-  return readdirSync(dir, { withFileTypes: true }).flatMap((e) => {
-    const path = join(dir, e.name);
-    return e.isDirectory() ? walk(path) : e.name.endsWith('.md') ? [path] : [];
-  });
-}
-
 const used = new Set();
 let pages = 0;
-for (const file of walk(CONTENT)) {
-  const rel = relative(ROOT, file);
-  const match = readFileSync(file, 'utf8').match(/^\+\+\+\n([\s\S]*?)\n\+\+\+\n?([\s\S]*)$/);
-  if (!match) continue;
+// A link to this site written as an absolute URL (or a bare /glossary/ path) escapes Zola's checks.
+const SELF = new RegExp(`\\]\\((https?:\\/\\/${me.host.replace(/\./g, '\\.')}[^)]*|\\/glossary\\/[^)]*)\\)`, 'g');
+for (const { path: rel, fm, body: text } of contentPages()) {
+  if (!fm) { findings.push(`${rel}: no TOML front matter, so no article or terms can be checked`); continue; }
   pages += 1;
-  const fm = parse(match[1]);
-  const body = match[2].trim();
+  const body = text.trim();
   if (rel.startsWith('content/glossary/') && !rel.includes('_index')) continue; // term pages render their definition
   const terms = fm.extra?.terms ?? [];
   if (!body) findings.push(`${rel}: no article body (every page is also an article)`);
@@ -53,7 +41,7 @@ for (const file of walk(CONTENT)) {
     if (!g.byId.has(id)) findings.push(`${rel}: extra.terms names ${id}, which data/glossary.toml does not define`);
     used.add(id);
   }
-  for (const [, target] of body.matchAll(/\]\((https?:\/\/korczis\.github\.io[^)]*|\/glossary\/[^)]*)\)/g)) {
+  for (const [, target] of body.matchAll(SELF)) {
     findings.push(`${rel}: link ${target} should be an @/ link, so Zola checks it`);
   }
 }

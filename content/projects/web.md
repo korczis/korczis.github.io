@@ -4,18 +4,18 @@ title = "Web"
 description = "Websites and web applications: single-page apps, Phoenix and Elm frontends, landing pages and the sites of friends."
 template = "category.html"
 weight = 8
-updated = "2025-12-20T21:25:15Z"
+updated = "2026-11-14T17:48:17Z"
 
 [taxonomies]
-tags = ["Web", "job-processor", "nestravenkam", "tosh", "the-scratch"]
+tags = ["Web", "korczis.github.io", "korczis", "ApolloCrawler-github-io", "korczis-com"]
 
 [extra]
 category = "web"
-og_title = "Web: 9 repositories."
+og_title = "Web: 15 repositories."
 og_image = "og/category-web.png"
 schema = "collection"
 terms = ["static-site-generator", "javascript", "css", "elixir", "repository"]
-keywords = ["Web", "job-processor", "nestravenkam", "tosh", "the-scratch", "web-spa", "microscratch-react", "Tomas Korcak"]
+keywords = ["Web", "korczis.github.io", "korczis", "ApolloCrawler-github-io", "korczis-com", "korczis-github-com", "pavian-eu", "Tomas Korcak"]
 
 [[extra.viz]]
 kind = "constellation"
@@ -28,8 +28,8 @@ tone = "night"
 +++
 Websites and web applications: single-page apps, Phoenix and Elm frontends, landing pages and the sites of friends.
 
-The category holds 9 original repositories, written most often in [JavaScript](@/glossary/javascript.md), [CSS](@/glossary/css.md) and [Elixir](@/glossary/elixir.md).
+The category holds 15 original repositories, written most often in [JavaScript](@/glossary/javascript.md), [CSS](@/glossary/css.md), ApacheConf and [Elixir](@/glossary/elixir.md).
 
 Key concept: [Static site generator](@/glossary/static-site-generator.md).
 
-*How categories are made:* nobody assigns them by hand. A [repository](@/glossary/repository.md) falls into a category when its name, description or topics match the rule's keywords, otherwise its primary language decides; [forks](@/glossary/fork.md) and [mirrors](@/glossary/mirror.md) never count as the owner's work.
+*How categories are made:* nobody assigns them by hand. Every keyword of every category's rule is scored against a [repository](@/glossary/repository.md)'s name, topics and description, the name counting most, and the best score wins; when no keyword fits, its primary language decides. [Forks](@/glossary/fork.md) and [mirrors](@/glossary/mirror.md) never count as the owner's work.

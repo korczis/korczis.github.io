@@ -6,42 +6,36 @@
 //
 // usage: node scripts/build-site-json.mjs           write static/site.json
 //        node scripts/build-site-json.mjs --check   exit 1 if the committed file is stale
-import { readFileSync, readdirSync, writeFileSync } from 'node:fs';
-import { dirname, join, relative } from 'node:path';
-import { fileURLToPath } from 'node:url';
-import { parse } from 'smol-toml';
+import { readFileSync, writeFileSync } from 'node:fs';
+import { join } from 'node:path';
+import { CHECK, ROOT, config as siteConfig, contentPages, identity, isDefault, readJson, readToml, report } from './lib/derive.mjs';
 import { cliArgs } from './lib/cli.mjs';
 
 cliArgs({ '--check': true }, { derived: true });
 
-const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const TARGET = join(ROOT, 'static/site.json');
-const config = parse(readFileSync(join(ROOT, 'zola.toml'), 'utf8'));
-const catalogue = parse(readFileSync(join(ROOT, 'data/projects.toml'), 'utf8'));
-const index = JSON.parse(readFileSync(join(ROOT, 'data/index.json'), 'utf8'));
-const base = config.base_url.replace(/\/$/, '');
+const config = siteConfig();
+const catalogue = readToml('data/projects.toml');
+const index = readJson('data/index.json');
+const me = identity();
+const base = me.base;
 
-const files = (dir) => readdirSync(dir, { withFileTypes: true }).flatMap((e) => {
-  const path = join(dir, e.name);
-  return e.isDirectory() ? files(path) : e.name.endsWith('.md') ? [path] : [];
-});
-function urlOf(file, fm) {
-  let rel = relative(join(ROOT, 'content'), file).replace(/\\/g, '/');
+// The public URL of a content file: a translation (x.cs.md) lives under /cs/.
+function urlOf({ rel: file, lang }, fm) {
   if (fm.path) return `${base}/${fm.path}/`;
-  // A translation (x.cs.md) lives under /cs/.
-  const lang = (rel.match(/\.([a-z]{2})\.md$/) || [])[1];
-  const prefix = lang ? `/${lang}` : '';
-  rel = rel.replace(/\.[a-z]{2}\.md$/, '.md');
+  const prefix = isDefault(lang) ? '' : `/${lang}`;
+  const rel = file.replace(/\.[a-z]{2}\.md$/, '.md');
   if (rel === '_index.md') return `${base}${prefix}/`;
   if (rel.endsWith('/_index.md')) return `${base}${prefix}/${rel.slice(0, -'_index.md'.length)}`;
   return `${base}${prefix}/${rel.replace(/\.md$/, '')}/`;
 }
 
-const pages = files(join(ROOT, 'content')).map((file) => {
-  const fm = parse(readFileSync(file, 'utf8').match(/^\+\+\+\n([\s\S]*?)\n\+\+\+/)[1]);
+const pages = contentPages().map((page) => {
+  const fm = page.fm;
+  if (!fm) throw new Error(`${page.path} has no front matter`);
   return {
-    url: urlOf(file, fm),
-    lang: (relative(join(ROOT, 'content'), file).match(/\.([a-z]{2})\.md$/) || [])[1] ?? 'en',
+    url: urlOf(page, fm),
+    lang: page.lang,
     title: fm.extra?.seo_title ?? (fm.title ? `${fm.title} · ${config.title}` : config.title),
     description: fm.description,
     type: fm.extra?.schema ?? null,
@@ -56,15 +50,15 @@ const site = {
   url: `${base}/`,
   name: config.title,
   description: config.description,
-  author: { name: config.extra.author, github: `https://github.com/${config.extra.github}`, gitlab: `https://gitlab.com/${config.extra.github}`, location: config.extra.location },
+  author: { name: me.author, github: me.githubUrl, gitlab: me.gitlabUrl, location: config.extra.location },
   front_matter_schema: `${base}/schemas/front-matter.schema.json`,
-  data_as_of: { snapshot: JSON.parse(readFileSync(join(ROOT, 'data/github.json'), 'utf8')).generated_at, index: index.generated_at },
+  data_as_of: { snapshot: readJson('data/github.json').generated_at, index: index.generated_at },
   pages,
   categories: Object.entries(catalogue.categories).map(([key, c]) => ({
     key, name: c.name, description: c.description, url: `${base}/projects/${key}/`, repositories: index.by_category[key] ?? 0,
   })),
   projects: catalogue.projects.map((p) => ({
-    name: p.name, repo: `https://github.com/korczis/${p.repo}`, url: `${base}/projects/?project=${p.repo}`,
+    name: p.name, repo: me.repoUrl(p.repo), url: `${base}/projects/?project=${p.repo}`,
     site: p.url ?? null, category: p.category, tagline: p.tagline, stack: p.stack,
   })),
   repositories: index.repos.map((r) => ({
@@ -75,11 +69,10 @@ const site = {
 };
 
 const text = `${JSON.stringify(site, null, 1)}\n`;
-if (process.argv.includes('--check')) {
+if (CHECK) {
   let current = '';
   try { current = readFileSync(TARGET, 'utf8'); } catch {}
-  if (current !== text) { console.error('static/site.json is stale: run npm run site'); process.exit(1); }
-  console.log('static/site.json is current');
+  report(current === text ? [] : ['static/site.json is stale'], 'static/site.json is current');
 } else {
   writeFileSync(TARGET, text);
   console.log(`static/site.json: ${pages.length} pages, ${site.categories.length} categories, ${site.repositories.length} repositories`);

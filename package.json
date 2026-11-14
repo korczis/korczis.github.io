@@ -34,7 +34,7 @@
     "site": "node scripts/build-site-json.mjs",
     "glossary": "node scripts/build-glossary.mjs",
     "refresh": "npm run --silent data && npm run --silent index && npm run --silent recent && npm run --silent derive",
-    "derive": "node scripts/build-i18n.mjs && node scripts/fetch-index.mjs --derive && node scripts/build-categories.mjs && node scripts/build-work.mjs && node scripts/build-glossary.mjs && node scripts/build-llms.mjs && node scripts/build-og.mjs && node scripts/build-site-json.mjs",
+    "derive": "node scripts/build-i18n.mjs && node scripts/fetch-index.mjs --derive && node scripts/fetch-recent.mjs --derive && node scripts/build-categories.mjs && node scripts/build-work.mjs && node scripts/build-glossary.mjs && node scripts/build-llms.mjs && node scripts/build-og.mjs && node scripts/build-site-json.mjs",
     "recent": "node scripts/fetch-recent.mjs",
     "i18n": "node scripts/build-i18n.mjs"
   },

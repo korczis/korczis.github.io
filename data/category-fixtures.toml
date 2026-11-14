@@ -1,0 +1,39 @@
+# Repositories with the category they belong in, judged by a person from the name and the
+# description, so a change to the inference rules ([inference] and [categories.*] keywords in
+# data/projects.toml) that misplaces one fails scripts/check-data.mjs. Curated projects are not
+# listed: they keep their curated category. Add a line when a repository lands in the wrong
+# category, then fix the rules until the gate passes.
+#
+# repo = "expected category"
+
+[fixtures]
+# graphql is not a graph: a Babel plugin is a library
+"babel-plugin-transform-graphql" = "libraries"
+# "website" holds "site"; a domain's site and GitHub Pages are web
+"korczis-com" = "web"
+"pavian-eu" = "web"
+"pavian.eu" = "web"
+"korczis-github-com" = "web"
+"ApolloCrawler-github-io" = "web"
+# "microcrawler" holds "crawl"
+"microcrawler" = "data"
+"microcrawler-browser" = "data"
+"microcrawler-elixir" = "data"
+"microcrawler-ng" = "data"
+# Rust is a language, not a library: experiments are learning, a disk-space tool is a tool
+"skull-rust" = "learning"
+"rustler-test" = "learning"
+"wims" = "tools"
+# a Docker packaging of a toolkit is systems
+"docker-dstk" = "systems"
+"docker-datasciencetoolbox" = "systems"
+# programming learning materials
+"skull" = "learning"
+"skull-elixir" = "learning"
+"skull-erlang" = "learning"
+# an OSINT case is security even when it mentions Claude
+"osint-case-ratcliffe-moscow-2026" = "security"
+# already right, kept right: a word inside a name must not beat a whole word
+"microscratch" = "web"
+"generator-microscratch" = "tools"
+"peacemaker" = "security"

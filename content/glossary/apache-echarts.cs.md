@@ -17,7 +17,7 @@ definition = "Projekt Apache pro interaktivní grafy: kalendáře, sunbursty, ma
 aliases = ["ECharts"]
 reference = { title = "echarts.apache.org", url = "https://echarts.apache.org/en/index.html" }
 pages = ["projects/knowledge.cs.md", "projects/science.cs.md", "stack.cs.md", "work/algoglyph.cs.md", "work/kompendium-epistemicke-anihilace.cs.md"]
-related = ["alpine-js", "flowbite-pro", "repository", "cytoscape-js", "elixir", "github-pages", "javascript", "p5-js"]
+related = ["alpine-js", "flowbite-pro", "repository", "cytoscape-js", "github-pages", "javascript", "p5-js", "rust"]
 og_title = "Apache ECharts: slovník"
 og_image = "og/cs-glossary-apache-echarts.png"
 keywords = ["Apache ECharts", "Technologie", "Slovník", "Tomáš Korčák"]

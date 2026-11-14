@@ -17,7 +17,7 @@ definition = "JavaScript se statickými typy, kontrolovanými před spuštěním
 aliases = []
 reference = { title = "TypeScript handbook", url = "https://www.typescriptlang.org/docs/" }
 pages = ["projects/science.cs.md", "projects/tools.cs.md", "work/algoglyph.cs.md", "work/astronomists.cs.md", "work/dispatcher.cs.md", "work/sig.cs.md"]
-related = ["repository", "javascript", "open-source", "commit", "shell", "elixir", "python", "rust"]
+related = ["repository", "javascript", "open-source", "commit", "shell", "python", "rust", "alpine-js"]
 og_title = "TypeScript: slovník"
 og_image = "og/cs-glossary-typescript.png"
 keywords = ["TypeScript", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

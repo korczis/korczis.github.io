@@ -17,7 +17,7 @@ definition = "Apple's language for iOS and macOS applications."
 aliases = []
 reference = { title = "swift.org", url = "https://www.swift.org/documentation/" }
 pages = ["projects/knowledge.md", "projects/tools.md"]
-related = ["elixir", "repository", "shell", "alpine-js", "apache-echarts", "cpp", "csharp", "cytoscape-js"]
+related = ["elixir", "repository", "alpine-js", "apache-echarts", "cpp", "csharp", "cytoscape-js", "flowbite-pro"]
 og_title = "Swift: glossary"
 og_image = "og/glossary-swift.png"
 keywords = ["Swift", "Programming language", "Glossary", "Tomas Korcak"]

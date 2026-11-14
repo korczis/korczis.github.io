@@ -150,6 +150,9 @@ from it:
 | Every text in every language | `node scripts/check-i18n.mjs` | check, verify, CI | `project.i18n-everywhere` |
 | Front matter matches its schema | `node scripts/check-front-matter.mjs` | check, verify, CI | `project.front-matter-contract` |
 | Catalogue, snapshot and index are well-formed | `node scripts/check-data.mjs` | check, verify, CI | `project.data-measured` |
+| The index follows its rules (offline re-derivation) | `node scripts/fetch-index.mjs --derive --check` | check, verify, CI | `project.data-measured` |
+| recent.json follows the index | `node scripts/fetch-recent.mjs --derive --check` | check, verify, CI | `project.data-measured` |
+| Inference, authorship and derivation behave on their fixtures | `node scripts/check-derive.mjs` | check, verify, CI | `project.data-measured` |
 | Experience data matches its schema | `node scripts/check-experience.mjs` | check, verify, CI |  |
 | Category pages are current | `node scripts/build-categories.mjs --check` | check, verify, CI | `project.data-measured` |
 | Work pages are current | `node scripts/build-work.mjs --check` | check, verify, CI | `project.data-measured` |
@@ -162,7 +165,7 @@ from it:
 | Build (internal links are errors) | `npm run --silent build` | check, verify, CI | `project.site-zola-pages` |
 | SEO derived from front matter (titles, descriptions, OG, JSON-LD, sitemap) | `node scripts/check-seo.mjs` | check, verify, CI | `project.seo-derived` |
 | No denylisted name in the built site (NDA) | `node scripts/check-nda.mjs --site public` | check, verify, CI |  |
-| Flowbite Pro fidelity | `node ~/.claude/skills/flowbite-pro/verify.mjs .` | verify; CI: no | `project.ui-uses-flowbite-pro` |
+| Flowbite Pro fidelity | `test/cases/10_fleet_flowbite_pro.sh` | verify; CI: no | `project.ui-uses-flowbite-pro` |
 | Majordomus supervision | `majordomus doctor` | verify; CI: supervision job |  |
 | Browser audit: axe WCAG 2.2 AA, CLS, overflow, visuals, list twins, links | `scripts/verify-all.sh --audit-only` | npm run verify; ci.yml validate; pages.yml and monitor.yml against production | `project.ui-quality-gate` |
 | Every live project site answers | `node scripts/check-live.mjs` | pages.yml after deploy; monitor.yml daily | `project.data-measured` |

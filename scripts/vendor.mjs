@@ -9,6 +9,9 @@ import { copyFileSync, mkdirSync, readdirSync, rmSync } from 'node:fs';
 import { buildSync } from 'esbuild';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { cliArgs } from './lib/cli.mjs';
+
+cliArgs();
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const TARGET = join(ROOT, 'static/js/vendor');

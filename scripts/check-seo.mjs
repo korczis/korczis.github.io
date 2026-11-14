@@ -6,16 +6,16 @@
 //
 // usage: npm run build && node scripts/check-seo.mjs
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
-import { dirname, join } from 'node:path';
-import { fileURLToPath } from 'node:url';
-import { parse } from 'smol-toml';
+import { join } from 'node:path';
+import { ROOT, identity, languages, limits } from './lib/derive.mjs';
 import { cliArgs } from './lib/cli.mjs';
 
 cliArgs();
 
-const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const SITE = process.env.SITE_DIR || join(ROOT, 'public');
-const BASE = parse(readFileSync(join(ROOT, 'zola.toml'), 'utf8')).base_url.replace(/\/$/, '');
+const BASE = identity().base;
+const LIMITS = limits();
+const { width: OG_W, height: OG_H } = LIMITS.og;
 const findings = [];
 const fail = (where, what) => findings.push(`${where}: ${what}`);
 
@@ -56,11 +56,12 @@ for (const file of html(SITE)) {
     if (sitemap.includes(`<loc>${here}</loc>`)) fail(rel, 'noindex but listed in sitemap.xml');
     continue;
   }
-  if (title.length > 70) fail(rel, `title is ${title.length} > 70 characters`);
+  if (title.length > LIMITS.title.max) fail(rel, `title is ${title.length} > ${LIMITS.title.max} characters`);
   if (titles.has(title)) fail(rel, `title duplicates ${titles.get(title)}`);
   titles.set(title, rel);
   const description = meta(text, 'description') || '';
-  if (description.length < 50 || description.length > 165) fail(rel, `description is ${description.length} characters, not 50-165`);
+  const { min, max } = LIMITS.description;
+  if (description.length < min || description.length > max) fail(rel, `description is ${description.length} characters, not ${min}-${max}`);
   const canonical = (text.match(/<link rel="canonical" href="([^"]*)"/) || [])[1];
   if (!canonical || !canonical.startsWith(`${BASE}/`)) fail(rel, `canonical ${canonical} is not absolute under ${BASE}`);
   else if (!sitemap.includes(`<loc>${canonical}</loc>`)) fail(rel, `canonical ${canonical} is not in sitemap.xml`);
@@ -76,7 +77,7 @@ for (const file of html(SITE)) {
     if (!image.startsWith(`${BASE}/`) || !existsSync(local)) fail(rel, `og:image ${image} is not in the build`);
     else {
       const [w, h] = pngSize(local);
-      if (w !== 1200 || h !== 630) fail(rel, `og:image is ${w}x${h}, not 1200x630`);
+      if (w !== OG_W || h !== OG_H) fail(rel, `og:image is ${w}x${h}, not ${OG_W}x${OG_H}`);
     }
   }
   const ld = text.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/);
@@ -91,11 +92,14 @@ for (const file of html(SITE)) {
   }
 }
 
-// hreflang: every alternate is an indexable page of this build that names this page back, and a
-// page that has alternates names itself and an x-default (Google ignores one-way pairs).
+// hreflang: every indexable page names its translation in every language of zola.toml (the site
+// is in all of them, check-i18n), itself and an x-default; every alternate is an indexable page of
+// this build that names this page back (Google ignores one-way pairs).
+const LANGS = languages();
 let pairs = 0;
 for (const [canonical, { rel, lang, links }] of alternates) {
   const langs = Object.keys(links).filter((l) => l !== 'x-default');
+  for (const l of LANGS) if (!links[l]) fail(rel, `no hreflang ${l}`);
   if (!langs.length) continue;
   if (links[lang] !== canonical) fail(rel, `hreflang ${lang} is ${links[lang]}, not the page itself`);
   if (!links['x-default']) fail(rel, 'hreflang without x-default');
@@ -111,4 +115,5 @@ if (findings.length) {
   for (const f of findings) console.error(`✗ ${f}`);
   process.exit(1);
 }
-console.log(`seo: ${pages} pages, ${titles.size} unique titles, tags, images and JSON-LD valid, ${pairs / 2} hreflang pairs mutual, PASS`);
+console.log(`seo: ${pages} pages, ${titles.size} indexable with unique titles, tags, images and JSON-LD valid, ` +
+  `hreflang ${LANGS.join('/')} on every one, ${pairs / 2} pairs mutual, PASS`);

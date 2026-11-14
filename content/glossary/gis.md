@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Geographic information systems: data tied to places, stored, analysed and drawn as maps."
 aliases = []
 reference = { title = "GIS (Wikipedia)", url = "https://en.wikipedia.org/wiki/Geographic_information_system" }
-pages = ["projects/_index.md", "projects/data.md", "work/crisis-map.md", "work/data-atlas.md", "work/korczis.md", "work/kuzu-ex.md"]
-related = ["repository", "open-source", "commit", "javascript", "elixir", "github-pages", "html", "python"]
+pages = ["projects/_index.md", "projects/data.md", "work/crisis-map.md", "work/data-atlas.md", "work/kuzu-ex.md"]
+related = ["repository", "open-source", "commit", "elixir", "html", "javascript", "python", "github-pages"]
 og_title = "GIS: glossary"
 og_image = "og/glossary-gis.png"
 keywords = ["GIS", "Concept", "Glossary", "Tomas Korcak"]

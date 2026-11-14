@@ -6,6 +6,7 @@ import { readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parse } from 'smol-toml';
+import { identity } from './lib/derive.mjs';
 import { cliArgs } from './lib/cli.mjs';
 
 cliArgs();
@@ -13,7 +14,8 @@ cliArgs();
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const catalogue = parse(readFileSync(join(ROOT, 'data/projects.toml'), 'utf8'));
 const targets = catalogue.projects.filter((p) => p.url).map((p) => [p.name, p.url]);
-targets.push(['Majordomus build', 'https://majordomus.dev/build.json']);
+const { majordomusBuild } = identity();
+if (majordomusBuild) targets.push(['Majordomus build', majordomusBuild]);
 
 let failed = 0;
 await Promise.all(

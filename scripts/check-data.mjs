@@ -7,6 +7,8 @@ import { readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parse } from 'smol-toml';
+import { limits } from './lib/derive.mjs';
+import { inferCategory, ruleFindings } from './lib/repos.mjs';
 import { cliArgs } from './lib/cli.mjs';
 
 cliArgs();
@@ -18,13 +20,16 @@ const fail = (where, what) => findings.push(`${where}: ${what}`);
 const catalogue = parse(readFileSync(join(ROOT, 'data/projects.toml'), 'utf8'));
 const snapshot = JSON.parse(readFileSync(join(ROOT, 'data/github.json'), 'utf8'));
 const categories = catalogue.categories ?? {};
+// A category's description is its page's meta description; a tagline heads an og_title.
+const LIMITS = limits();
+const { min: DMIN, max: DMAX } = LIMITS.description;
 const REQUIRED = ['repo', 'name', 'tagline', 'summary', 'category', 'stack', 'featured'];
 const ICONS = ['shield', 'beaker', 'book', 'map', 'film', 'wrench', 'code', 'globe', 'graph', 'cube', 'lock', 'server', 'puzzle', 'academic'];
 for (const [key, c] of Object.entries(categories)) {
   if (!/^[a-z]+$/.test(key)) fail(`categories.${key}`, 'key must be lower-case letters (it is a URL)');
   if (!c.name || !c.description) fail(`categories.${key}`, 'needs a name and a description');
-  if ((c.description ?? '').length < 50 || (c.description ?? '').length > 165) {
-    fail(`categories.${key}`, `description is ${(c.description ?? '').length} characters, not 50-165 (it is the page's meta description)`);
+  if ((c.description ?? '').length < DMIN || (c.description ?? '').length > DMAX) {
+    fail(`categories.${key}`, `description is ${(c.description ?? '').length} characters, not ${DMIN}-${DMAX} (it is the page's meta description)`);
   }
   if (!ICONS.includes(c.icon)) fail(`categories.${key}`, `icon ${c.icon} is not one of ${ICONS.join(', ')}`);
 }
@@ -36,7 +41,7 @@ for (const [index, p] of (catalogue.projects ?? []).entries()) {
   if (seen.has(p.repo)) fail(where, 'duplicate repo');
   seen.add(p.repo);
   if (!(p.category in categories)) fail(where, `unknown category ${p.category}`);
-  if ((p.tagline ?? '').length > 90) fail(where, `tagline is ${p.tagline.length} > 90 characters`);
+  if ((p.tagline ?? '').length > LIMITS.ogTitle.max) fail(where, `tagline is ${p.tagline.length} > ${LIMITS.ogTitle.max} characters (og_title's limit)`);
   if (p.url && !/^https:\/\//.test(p.url)) fail(where, `url is not https: ${p.url}`);
   if (!Array.isArray(p.stack) || p.stack.length === 0) fail(where, 'stack must be a non-empty list');
   if ((p.stack ?? []).includes('Majordomus')) {
@@ -81,6 +86,33 @@ for (const p of catalogue.projects ?? []) {
 }
 if (index.counts?.own !== (index.repos ?? []).length) fail('data/index.json', 'counts.own does not match the listed repositories');
 
+// A repository that was original at the last measurement and has no history now lost no commits:
+// the contributor list was misread, or the owner emptied it (then it belongs on [index] hidden).
+const hiddenNames = new Set((catalogue.index?.hidden ?? []).map((n) => n.toLowerCase()));
+for (const d of index.dropped ?? []) {
+  if (d.now === 'empty' && !hiddenNames.has(d.name.toLowerCase())) {
+    fail('data/index.json', `${d.name} was original at the last measurement and is empty now; re-measure (npm run index) or add it to [index] hidden`);
+  }
+}
+
+// The category rules: none shadowed or dead, and every fixture (a repository with the category a
+// person judged right) is placed there by the rules themselves, not only by the stored index.
+for (const f of ruleFindings(categories, catalogue.inference)) fail('data/projects.toml', f);
+const fixtures = parse(readFileSync(join(ROOT, 'data/category-fixtures.toml'), 'utf8')).fixtures ?? {};
+const byName = new Map((index.repos ?? []).map((r) => [r.name, r]));
+const curatedRepos = new Set((catalogue.projects ?? []).map((p) => p.repo.toLowerCase()));
+let fixtureCount = 0;
+for (const [name, expected] of Object.entries(fixtures)) {
+  const where = `data/category-fixtures.toml ${name}`;
+  fixtureCount += 1;
+  if (!(expected in categories)) { fail(where, `expects ${expected}, which is no category`); continue; }
+  if (curatedRepos.has(name.toLowerCase())) { fail(where, 'is curated: its category is the catalogue\'s, not inferred'); continue; }
+  const r = byName.get(name);
+  if (!r) { fail(where, 'is not in data/index.json any more; remove the fixture'); continue; }
+  const got = inferCategory(r, categories, catalogue.inference);
+  if (got.category !== expected) fail(where, `the rules place it in ${got.category} (${got.by}: ${got.evidence.join(', ') || 'none'}), not ${expected}`);
+}
+
 // The owner's CV facts (ADR 0004) against static/schemas/cv.schema.json: the subset of JSON Schema
 // that schema uses (type, required, additionalProperties: false, pattern, minLength, enum, $ref).
 const cvSchema = JSON.parse(readFileSync(join(ROOT, 'static/schemas/cv.schema.json'), 'utf8'));
@@ -113,5 +145,5 @@ if (findings.length) {
   process.exit(1);
 }
 console.log(
-  `data: ${seen.size} projects, snapshot ${snapshot.generated_at} (${ageDays.toFixed(1)} days old), PASS`,
+  `data: ${seen.size} projects, ${fixtureCount} category fixtures, snapshot ${snapshot.generated_at} (${ageDays.toFixed(1)} days old), PASS`,
 );

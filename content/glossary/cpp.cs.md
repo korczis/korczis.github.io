@@ -17,7 +17,7 @@ definition = "C s třídami, šablonami a abstrakcemi, které za běhu nic nesto
 aliases = []
 reference = { title = "cppreference.com", url = "https://en.cppreference.com/" }
 pages = ["projects/learning.cs.md", "projects/science.cs.md", "projects/security.cs.md", "projects/tools.cs.md"]
-related = ["repository", "elixir", "javascript", "ruby", "rust", "csharp", "haskell", "python"]
+related = ["repository", "rust", "javascript", "ruby", "csharp", "elixir", "haskell", "python"]
 og_title = "C++: slovník"
 og_image = "og/cs-glossary-cpp.png"
 keywords = ["C++", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

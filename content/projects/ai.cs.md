@@ -4,18 +4,18 @@ title = "Inženýrství AI"
 description = "Dohled nad AI agenty pro programování: jedna politika pro každý nástroj, vymezené úkoly a práce, která projde jen doložená."
 template = "category.html"
 weight = 1
-updated = "2026-11-14T17:48:17Z"
+updated = "2026-11-13T04:00:28Z"
 
 [taxonomies]
-tags = ["Inženýrství AI", "Majordomus", "korczis.github.io", "osint-case-ratcliffe-moscow-2026", "llm"]
+tags = ["Inženýrství AI", "Majordomus", "llm", "sig", "edna"]
 
 [extra]
 category = "ai"
-og_title = "Inženýrství AI: 7 repozitářů."
+og_title = "Inženýrství AI: 5 repozitářů."
 og_image = "og/cs-category-ai.png"
 schema = "collection"
-terms = ["ai-agent", "html", "javascript", "rust", "mcp", "zola", "repository"]
-keywords = ["Inženýrství AI", "Majordomus", "korczis.github.io", "osint-case-ratcliffe-moscow-2026", "llm", "sig", "edna", "cognitive-reasoning", "Tomáš Korčák"]
+terms = ["ai-agent", "rust", "mcp", "zola", "repository"]
+keywords = ["Inženýrství AI", "Majordomus", "llm", "sig", "edna", "cognitive-reasoning", "Tomáš Korčák"]
 
 [[extra.viz]]
 kind = "constellation"
@@ -28,8 +28,8 @@ tone = "night"
 +++
 Dohled nad AI agenty pro programování: jedna politika pro každý nástroj, vymezené úkoly a práce, která projde jen doložená.
 
-Kategorie má 7 repozitářů; nejčastějšími jazyky jsou [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md) a [Rust](@/glossary/rust.cs.md). Vybrané projekty: **Majordomus**.
+Kategorie má 5 repozitářů; nejčastějšími jazyky jsou [Rust](@/glossary/rust.cs.md). Vybrané projekty: **Majordomus**.
 
 Klíčový pojem: [AI agent](@/glossary/ai-agent.cs.md).
 
-*Jak kategorie vznikají:* nikdo je ručně nepřiřazuje. [Repozitář](@/glossary/repository.cs.md) spadne do kategorie, když jeho název, popis nebo témata odpovídají klíčovým slovům pravidla, jinak rozhodne jeho hlavní jazyk; forky a [mirrory](@/glossary/mirror.cs.md) se nepočítají za vlastní práci.
+*Jak kategorie vznikají:* nikdo je ručně nepřiřazuje. Každé klíčové slovo pravidel všech kategorií se poměří s názvem, tématy a popisem [repozitáře](@/glossary/repository.cs.md), nejvíc váží název, a vyhraje nejlepší skóre; když nesedí žádné slovo, rozhodne hlavní jazyk. Forky a [mirrory](@/glossary/mirror.cs.md) se nepočítají za vlastní práci.

@@ -31,6 +31,8 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 // lands names the lane whose script has not merged yet: until the file exists the gate is skipped
 // with that reason (and nowhere else); once it exists it runs like any other.
 // NDA_DENYLIST (a secret in CI, an owner-level file locally) is read by check-nda.mjs itself.
+const FLOWBITE_SCANNER = '~/.claude/skills/flowbite-pro/verify.mjs';
+
 export const GATES = [
   { id: 'deps', name: 'Installed dependencies match package-lock.json', run: ['node', 'scripts/gates.mjs', 'deps'], ci: true },
   { id: 'commits', name: 'Conventional commits on this branch', run: ['scripts/lint-commits.sh', '--branch'], ci: false,
@@ -43,6 +45,9 @@ export const GATES = [
   { id: 'i18n', name: 'Every text in every language', run: ['node', 'scripts/check-i18n.mjs'], ci: true, rule: 'project.i18n-everywhere' },
   { id: 'front-matter', name: 'Front matter matches its schema', run: ['node', 'scripts/check-front-matter.mjs'], ci: true, rule: 'project.front-matter-contract' },
   { id: 'data', name: 'Catalogue, snapshot and index are well-formed', run: ['node', 'scripts/check-data.mjs'], ci: true, rule: 'project.data-measured' },
+  { id: 'index-derived', name: 'The index follows its rules (offline re-derivation)', run: ['node', 'scripts/fetch-index.mjs', '--derive', '--check'], ci: true, rule: 'project.data-measured' },
+  { id: 'recent-derived', name: 'recent.json follows the index', run: ['node', 'scripts/fetch-recent.mjs', '--derive', '--check'], ci: true, rule: 'project.data-measured' },
+  { id: 'derive-lib', name: 'Inference, authorship and derivation behave on their fixtures', run: ['node', 'scripts/check-derive.mjs'], ci: true, rule: 'project.data-measured' },
   { id: 'experience', name: 'Experience data matches its schema', run: ['node', 'scripts/check-experience.mjs'], ci: true, lands: 'experience' },
   { id: 'categories', name: 'Category pages are current', run: ['node', 'scripts/build-categories.mjs', '--check'], ci: true, rule: 'project.data-measured' },
   { id: 'work', name: 'Work pages are current', run: ['node', 'scripts/build-work.mjs', '--check'], ci: true, rule: 'project.data-measured' },
@@ -56,7 +61,7 @@ export const GATES = [
   { id: 'seo', name: 'SEO derived from front matter (titles, descriptions, OG, JSON-LD, sitemap)', run: ['node', 'scripts/check-seo.mjs'], ci: true, needs: 'build', rule: 'project.seo-derived' },
   { id: 'nda-site', name: 'No denylisted name in the built site (NDA)', run: ['node', 'scripts/check-nda.mjs', '--site', 'public'], ci: true, needs: 'build',
     lands: 'experience' },
-  { id: 'flowbite', name: 'Flowbite Pro fidelity', run: ['node', '~/.claude/skills/flowbite-pro/verify.mjs', '.'], ci: false, needs: 'flowbite-scanner',
+  { id: 'flowbite', name: 'Flowbite Pro fidelity', run: ['test/cases/10_fleet_flowbite_pro.sh'], ci: false, needs: 'flowbite-scanner',
     why: 'the scanner lives on the owner\'s machine; in CI majordomus doctor judges the licence', rule: 'project.ui-uses-flowbite-pro' },
   { id: 'doctor', name: 'Majordomus supervision', run: ['majordomus', 'doctor'], ci: false, needs: 'majordomus',
     job: 'supervision', why: 'the supervision job installs the pinned majordomus and runs it with the licence evidence' },
@@ -89,9 +94,6 @@ const TOOLS = () => {
 // Scripts that do not take the shared CLI yet, because another lane owns them; the cli gate lists
 // them and fails once one adopts it (then it leaves this list).
 const PENDING = {
-  'build-i18n.mjs': 'coordinator',
-  'check-i18n.mjs': 'coordinator',
-  'vendor.mjs': 'viz-echarts',
   'lundra-runner.sh': 'owner (registers a runner over ssh: never run it to test it)',
 };
 
@@ -117,7 +119,8 @@ const has = (tool) => spawnSync('sh', ['-c', `command -v ${tool}`], { stdio: 'ig
 function missing(gate) {
   if (gate.lands && !existsSync(join(ROOT, scriptOf(gate.run)))) return `${scriptOf(gate.run)} has not landed yet (${gate.lands} lane)`;
   if (gate.needs === 'majordomus' && !has('majordomus')) return 'majordomus is not on PATH (https://majordomus.dev)';
-  if (gate.needs === 'flowbite-scanner' && !existsSync(expand(gate.run[1]))) return `no scanner at ${gate.run[1]}; majordomus doctor judges the licence here`;
+  // The skill's behavioural case (test/cases/10_fleet_flowbite_pro.sh) runs the owner's scanner.
+  if (gate.needs === 'flowbite-scanner' && !existsSync(expand(FLOWBITE_SCANNER))) return `no scanner at ${FLOWBITE_SCANNER}; majordomus doctor judges the licence here`;
   return null;
 }
 

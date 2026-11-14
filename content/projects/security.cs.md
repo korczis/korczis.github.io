@@ -4,18 +4,18 @@ title = "Bezpečnost a OSINT"
 description = "Zpravodajství z otevřených zdrojů, výzkum rádiové a síťové bezpečnosti: případy, proof of concept a nástroje kolem nich."
 template = "category.html"
 weight = 6
-updated = "2017-07-08T19:01:44Z"
+updated = "2026-08-26T22:32:55Z"
 
 [taxonomies]
-tags = ["Bezpečnost a OSINT", "magic", "zlown", "peacemaker", "ratnet"]
+tags = ["Bezpečnost a OSINT", "osint-case-ratcliffe-moscow-2026", "magic", "zlown", "peacemaker"]
 
 [extra]
 category = "security"
-og_title = "Bezpečnost a OSINT: 4 repozitáře."
+og_title = "Bezpečnost a OSINT: 5 repozitářů."
 og_image = "og/cs-category-security.png"
 schema = "collection"
-terms = ["osint", "cpp", "ruby", "rust", "repository"]
-keywords = ["Bezpečnost a OSINT", "magic", "zlown", "peacemaker", "ratnet", "Tomáš Korčák"]
+terms = ["osint", "cpp", "html", "ruby", "rust", "repository"]
+keywords = ["Bezpečnost a OSINT", "osint-case-ratcliffe-moscow-2026", "magic", "zlown", "peacemaker", "ratnet", "Tomáš Korčák"]
 
 [[extra.viz]]
 kind = "constellation"
@@ -28,8 +28,8 @@ tone = "night"
 +++
 Zpravodajství z otevřených zdrojů, výzkum rádiové a síťové bezpečnosti: případy, proof of concept a nástroje kolem nich.
 
-Kategorie má 4 repozitáře; nejčastějšími jazyky jsou [C++](@/glossary/cpp.cs.md), [Ruby](@/glossary/ruby.cs.md) a [Rust](@/glossary/rust.cs.md).
+Kategorie má 5 repozitářů; nejčastějšími jazyky jsou [C++](@/glossary/cpp.cs.md), [HTML](@/glossary/html.cs.md), [Ruby](@/glossary/ruby.cs.md) a [Rust](@/glossary/rust.cs.md).
 
 Klíčový pojem: [OSINT](@/glossary/osint.cs.md).
 
-*Jak kategorie vznikají:* nikdo je ručně nepřiřazuje. [Repozitář](@/glossary/repository.cs.md) spadne do kategorie, když jeho název, popis nebo témata odpovídají klíčovým slovům pravidla, jinak rozhodne jeho hlavní jazyk; forky a [mirrory](@/glossary/mirror.cs.md) se nepočítají za vlastní práci.
+*Jak kategorie vznikají:* nikdo je ručně nepřiřazuje. Každé klíčové slovo pravidel všech kategorií se poměří s názvem, tématy a popisem [repozitáře](@/glossary/repository.cs.md), nejvíc váží název, a vyhraje nejlepší skóre; když nesedí žádné slovo, rozhodne hlavní jazyk. Forky a [mirrory](@/glossary/mirror.cs.md) se nepočítají za vlastní práci.

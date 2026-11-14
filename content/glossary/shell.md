@@ -16,7 +16,7 @@ kind = "language"
 definition = "Scripts for the Unix command line (bash, zsh), the glue that installs, builds and deploys."
 aliases = []
 reference = { title = "GNU Bash manual", url = "https://www.gnu.org/software/bash/manual/" }
-pages = ["projects/data.md", "projects/knowledge.md", "projects/learning.md", "projects/systems.md", "projects/tools.md", "work/algoglyph.md", "work/astronomists.md", "work/catharsis-as-a-service.md", "work/comtesse.md", "work/corvidae.md", "work/data-atlas.md", "work/el-magico-cache.md", "work/gists-search.md", "work/kompendium-epistemicke-anihilace.md", "work/korczis-github-io.md", "work/majordomus-reel.md", "work/openttd-prismatic-bridge.md", "work/oscilla.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/prismatic-majordomus.md", "work/prismatic.md", "work/sig.md", "work/simple-geocoder.md", "work/sonic-playground.md", "work/vomaste-cz.md"]
+pages = ["projects/data.md", "projects/learning.md", "projects/systems.md", "projects/tools.md", "work/algoglyph.md", "work/astronomists.md", "work/catharsis-as-a-service.md", "work/comtesse.md", "work/corvidae.md", "work/data-atlas.md", "work/el-magico-cache.md", "work/gists-search.md", "work/kompendium-epistemicke-anihilace.md", "work/korczis-github-io.md", "work/majordomus-reel.md", "work/openttd-prismatic-bridge.md", "work/oscilla.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/prismatic-majordomus.md", "work/prismatic.md", "work/sig.md", "work/simple-geocoder.md", "work/sonic-playground.md", "work/vomaste-cz.md"]
 related = ["repository", "open-source", "commit", "html", "javascript", "python", "github-pages", "elixir"]
 og_title = "Shell: glossary"
 og_image = "og/glossary-shell.png"
