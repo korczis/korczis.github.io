@@ -117,15 +117,15 @@
             "properties": {
               "kind": {
                 "enum": [
-                  "spiral",
-                  "pack",
-                  "stream",
-                  "constellation",
-                  "pulse",
                   "atlas",
+                  "constellation",
+                  "graph",
                   "languages",
+                  "pack",
+                  "pulse",
                   "skillset",
-                  "graph"
+                  "spiral",
+                  "stream"
                 ],
                 "description": "A visual registered in static/js/viz/<kind>.js"
               },
@@ -141,7 +141,9 @@
                   "work.all",
                   "glossary.terms",
                   "index.skillset",
-                  "catalogue.graph"
+                  "catalogue.graph",
+                  "tags.all",
+                  "tags.together"
                 ]
               },
               "title": {
