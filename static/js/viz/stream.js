@@ -9,7 +9,7 @@
 // Source (viz-grid, index.years): { years: { "2016": { "Rust": 5, ... } }, languages: [{ name, repos }] }.
 KorczisHub.viz('stream', {
   lib: 'd3',
-  mount(box, source, { palette, motion, go, link, escape, hash, t, id }) {
+  mount(box, source, { palette, motion, go, link, escape, hash, t, id, reflect: ctxReflect }) {
     const years = Object.keys(source?.years ?? {}).map(Number).filter(Number.isFinite).sort((a, b) => a - b);
     const languages = (source?.languages ?? []).map((l) => l.name).filter((name) => name && name !== 'Other');
     if (!years.length || !languages.length) return { empty: true, items: () => [], update() {}, destroy() {} };
@@ -103,16 +103,9 @@ KorczisHub.viz('stream', {
     let armed = null;
     let focused = null;
 
-    // The layer renders each control as #<id>-<key> and keeps it in ?<id>.<key>; a choice made on
-    // the drawing (a legend chip) is written the same way, so the panel and the link agree.
-    function reflect(key, value) {
-      const input = document.getElementById(`${id}-${key}`);
-      if (input) input.value = String(value);
-      const url = new URL(location.href);
-      if (String(value) === String(defaults[key])) url.searchParams.delete(`${id}.${key}`);
-      else url.searchParams.set(`${id}.${key}`, String(value));
-      history.replaceState(history.state, '', url);
-    }
+    // A choice made on the drawing (a legend chip) goes back to the layer, so its control and the
+    // address follow (ctx.reflect; absent before the layer has it, then only the drawing changes).
+    const reflect = (key, value) => ctxReflect?.(key, value);
 
     function isolate(key) {
       state.isolate = key && key !== OTHER && state.isolate !== key ? key : '';
@@ -366,7 +359,8 @@ KorczisHub.viz('stream', {
       destroy() {
         timer?.stop();
         svg.remove();
-        box.querySelector(':scope > .viz-tip')?.remove();
+        if (tip.remove) tip.remove();
+        else box.querySelector(':scope > .viz-tip')?.remove();
       },
     };
   },
