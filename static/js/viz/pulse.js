@@ -1,24 +1,35 @@
 // Live pulse (canvas, d3 for colour and time): activity as a heartbeat trace. Time runs left to
 // right, newest on the right; every event is a beat on the trace and a glowing orb in its lane,
 // coloured along the art palette, sized by its commits. A phosphor beam sweeps the trace like an
-// oscilloscope. Two modes, chosen by the source the page embeds:
+// oscilloscope and replays the beats in order: each one rings as the beam crosses it. Three modes,
+// chosen by the source the page embeds:
 //   user  the owner's public GitHub events, one lane per repository (the home page);
-//   repo  one project's commits, one lane per conventional commit type (feat, fix, docs, ...).
+//   repo  one project's commits, one lane per conventional commit type (feat, fix, docs, ...);
 //   all   every recent project's commits, one lane per category (the work list; snapshot only).
 // The page embeds the measured snapshot; when the source names a live GitHub endpoint, the browser
 // asks it and keeps asking every five minutes while the visual is on screen (conditional requests,
 // so a quiet poll costs no rate limit). Offline, rate-limited or on GitLab it stays on the snapshot
-// and says so. Hover a beat to read it, click it to open the commit, pull request or release.
+// and says so; a failed poll is never a console error.
+// Parameters (handle.controls()): the time window (hours to years, or everything), play/pause of
+// the sweep, a lane filter and the replay speed. Hover a beat to read it; a click opens its work
+// page, or its commit, pull request or release where the beat has no other page (a work page's
+// own pulse); a lane's name opens its work or category page.
 KorczisHub.viz('pulse', {
   lib: 'd3',
-  mount(box, source, { palette, reducedMotion }) {
+  mount(box, source, { palette, reducedMotion, motion, go, link, escape, hash, t }) {
+    const embedded = !source ? [] : source.groups
+      ? source.groups.flatMap((grp) => (grp.commits || []).map((c) => ({ ...c, repo: grp.repo, lane: grp.lane, category: grp.category })))
+      : source.beats || [];
+    if (!embedded.length && !source?.live) return { empty: true };
     const tip = KorczisHub.tooltip(box);
     const canvas = document.createElement('canvas');
     canvas.setAttribute('aria-hidden', 'true');
     canvas.style.cssText = 'width:100%;height:100%;display:block;touch-action:pan-y';
     box.appendChild(canvas);
-    const ctx = canvas.getContext('2d');
+    const g = canvas.getContext('2d');
     const POLL = 5 * 60 * 1000;
+    const HOUR = 3600000;
+    const DAY = 24 * HOUR;
     const user = KorczisHub.github;
     const byType = source.mode === 'repo';
     // A conventional commit's type names its lane; anything else is "other", merges are merges.
@@ -26,41 +37,39 @@ KorczisHub.viz('pulse', {
     const kindOf = (message) => {
       if (/^merge\b/i.test(message)) return 'merge';
       const m = /^(\w+)(\([^)]*\))?!?:/.exec(message);
-      return m && TYPES_CC.has(m[1].toLowerCase()) ? m[1].toLowerCase() : KorczisHub.t('js_other');
+      return m && TYPES_CC.has(m[1].toLowerCase()) ? m[1].toLowerCase() : t('js_other');
     };
-    const relative = new Intl.RelativeTimeFormat(KorczisHub.locale, { numeric: 'auto' });
-    const clock = new Intl.DateTimeFormat(KorczisHub.locale, { hour: '2-digit', minute: '2-digit' });
-    const day = new Intl.DateTimeFormat(KorczisHub.locale, { day: 'numeric', month: 'short' });
-    const month = new Intl.DateTimeFormat(KorczisHub.locale, { month: 'short', year: 'numeric' });
-    const year = new Intl.DateTimeFormat(KorczisHub.locale, { year: 'numeric' });
-    const escape = (text) => String(text).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
-    const hash = (text) => {
-      let h = 2166136261;
-      for (let i = 0; i < text.length; i += 1) h = Math.imul(h ^ text.charCodeAt(i), 16777619);
-      return ((h >>> 0) % 10000) / 10000;
-    };
+    const locale = KorczisHub.locale;
+    const relative = new Intl.RelativeTimeFormat(locale, { numeric: 'auto' });
+    const clock = new Intl.DateTimeFormat(locale, { hour: '2-digit', minute: '2-digit' });
+    const day = new Intl.DateTimeFormat(locale, { day: 'numeric', month: 'short' });
+    const month = new Intl.DateTimeFormat(locale, { month: 'short', year: 'numeric' });
+    const year = new Intl.DateTimeFormat(locale, { year: 'numeric' });
+    const hours = new Intl.NumberFormat(locale, { style: 'unit', unit: 'hour', unitDisplay: 'long' });
+    const days = new Intl.NumberFormat(locale, { style: 'unit', unit: 'day', unitDisplay: 'long' });
+    const years = new Intl.NumberFormat(locale, { style: 'unit', unit: 'year', unitDisplay: 'long' });
+    const unit = (text) => (hash(text) % 10000) / 10000;
     // [unit, seconds in it, the largest magnitude shown in it]
     const UNITS = [['second', 1, 60], ['minute', 60, 60], ['hour', 3600, 24], ['day', 86400, 30], ['month', 2592000, 12], ['year', 31536000, Infinity]];
     const ago = (ms) => {
       const s = (ms - Date.now()) / 1000;
-      const [unit, size] = UNITS.find(([, size, max]) => Math.abs(s / size) < max);
-      return relative.format(Math.round(s / size), unit);
+      const [name, size] = UNITS.find(([, n, max]) => Math.abs(s / n) < max);
+      return relative.format(Math.round(s / size), name);
     };
 
-    // The snapshot the page embeds: the last commit of each recent project (user), or a project's
-    // latest commits (repo).
-    // The work list sends groups (a project, its category lane, its commits); flatten them.
-    const embedded = source.groups ? source.groups.flatMap((g) => g.commits.map((c) => ({ ...c, repo: g.repo, lane: g.lane }))) : source.beats;
+    // The snapshot the page embeds: the last commit of each recent project (user), a project's
+    // latest commits (repo), or every recent project's commits in its category's lane (all).
     const snapshot = embedded.map((b, i) => ({
       id: `s:${i}`,
       repo: b.repo,
       type: source.mode === 'user' ? 'push' : 'commit',
       lane: b.lane ?? (byType ? kindOf(b.message || '') : b.repo),
+      category: b.category ?? null,
       message: b.message || '',
       at: Date.parse(b.at),
       weight: 1,
       url: b.url,
-    }));
+    })).filter((b) => Number.isFinite(b.at));
 
     // A public GitHub event, read as a beat; events the visual does not draw return null.
     const TYPES = {
@@ -95,70 +104,135 @@ KorczisHub.viz('pulse', {
       } else if (type === 'fork') {
         url = p.forkee?.html_url || base;
       }
-      return { id: e.id, repo, type, lane: repo, message, at: Date.parse(e.created_at), weight, url };
+      return { id: e.id, repo, type, lane: repo, category: null, message, at: Date.parse(e.created_at), weight, url };
     };
     // A commit of the repository endpoint, read as a beat.
     const commitBeat = (c) => {
       const message = (c.commit?.message || '').split('\n')[0];
-      return { id: c.sha, repo: source.repo, type: 'commit', lane: kindOf(message), message, at: Date.parse(c.commit?.committer?.date), weight: 1, url: c.html_url };
+      return { id: c.sha, repo: source.repo, type: 'commit', lane: kindOf(message), category: null, message, at: Date.parse(c.commit?.committer?.date), weight: 1, url: c.html_url };
     };
+
+    // Where a beat leads: its work page first (rule project.everything-interlinked), its commit,
+    // pull request or release when the work page is this very page or there is none.
+    const here = location.pathname;
+    const pageOf = (url) => (url && new URL(url, location.href).pathname !== here ? url : null);
+    const target = (b) => pageOf(link('work', b.repo)) ?? b.url;
+    const laneUrl = (l) => (byType ? null : pageOf(l.category ? link('category', l.category) : link('work', l.key)));
+
+    // The time windows the range steps through: hours, days, then the whole span.
+    const WINDOWS = [6, 12, 24, 48, 72, 168, 336, 720, 2160, 4320, 8760, 17520, 35064].map((h) => h * HOUR).concat(Infinity);
+    const ALL = WINDOWS.length - 1;
+    const windowLabel = (i) => {
+      const w = WINDOWS[i];
+      if (w === Infinity) return t('js_pulse_window_all');
+      if (w < 72 * HOUR) return hours.format(w / HOUR);
+      return w < 365 * DAY ? days.format(Math.round(w / DAY)) : years.format(Math.round(w / (365 * DAY)));
+    };
+
+    // The model the visitor drives.
+    let windowIndex = ALL;
+    let laneFilter = 'all';
+    let playing = !reducedMotion();
+    let speed = 1;
 
     let beats = snapshot;
     let live = false;
     let checked = null;
     let etag = null;
-    let born = new Map();
+    const born = new Map();
     let width = 0;
     let height = 0;
-    let colours = null;
+    let ink = null;
     let points = [];
     let lanes = [];
+    let laneLabels = [];
     let trace = [];
+    let shown = [];
     let hovered = null;
+    let hoveredLane = null;
     let visible = true;
     let frame = 0;
     let timer = 0;
     let destroyed = false;
+    // The sweep's own clock, so a pause holds the beam where it is and a speed change does not jump.
+    let phase = 0;
+    let lastTime = 0;
+    let lastSweep = -Infinity;
+    const start = performance.now();
 
-    const window_ = () => {
-      // Live, the window runs up to now (a quiet stretch is a fact); a snapshot spans its own beats.
-      const last = Math.max(...beats.map((b) => b.at));
-      const end = live ? Math.max(Date.now(), last) : last;
-      const first = Math.min(...beats.map((b) => b.at));
-      // The events' own span (at least a day), with a little air on both sides.
-      const span = Math.max(end - first, 86400000);
-      return [end - span * 1.03, end + span * 0.03];
+    // [from, to] of the time axis. Live, the window runs up to now (a quiet stretch is a fact); a
+    // snapshot ends at its last beat. The whole span is the beats' own (at least a day), a chosen
+    // window is that long; both with a little air on the sides.
+    const span = () => {
+      const ats = beats.map((b) => b.at);
+      const last = ats.length ? Math.max(...ats) : Date.now();
+      const end = live || !ats.length ? Math.max(Date.now(), last) : last;
+      const w = WINDOWS[windowIndex];
+      if (w !== Infinity) return [end - w, end + w * 0.03];
+      const first = ats.length ? Math.min(...ats) : end;
+      const s = Math.max(end - first, DAY);
+      return [end - s * 1.03, end + s * 0.03];
     };
 
+    // Night-sky ink: palette().night and palette().live (the --hub-night-* and --hub-live tokens)
+    // once the layer exposes them; until then the theme tokens that stay light on the night sky.
+    const nightOf = (c) => c.night ?? {
+      ink: c.dark ? c.strong : c.surface,
+      text: c.dark ? c.text : c.grid,
+      muted: c.muted,
+    };
+
+    const paint = () => {
+      const c = palette();
+      const n = nightOf(c);
+      ink = {
+        ramp: d3.interpolateRgbBasis(c.art),
+        text: c.alpha(n.text, 0.85),
+        faint: c.alpha(n.muted, 0.7),
+        ink: n.ink,
+        live: c.live ?? c.glow,
+        font: c.font,
+        alpha: c.alpha,
+      };
+    };
+
+    // The drawing surface follows the box (the layer calls resize(), also when it is maximized),
+    // in device pixels.
     const resize = () => {
       const dpr = Math.min(window.devicePixelRatio || 1, 2);
       width = box.clientWidth;
       height = box.clientHeight;
-      canvas.width = Math.round(width * dpr);
-      canvas.height = Math.round(height * dpr);
-      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      const c = palette();
-      colours = { ramp: d3.interpolateRgbBasis(c.art), text: 'rgba(229, 231, 235, 0.85)', faint: 'rgba(156, 163, 175, 0.55)' };
-      layout();
+      canvas.width = Math.max(1, Math.round(width * dpr));
+      canvas.height = Math.max(1, Math.round(height * dpr));
+      g.setTransform(dpr, 0, 0, dpr, 0, 0);
     };
 
     const layout = () => {
-      const [from, to] = window_();
+      if (!width || !ink) return;
+      const [from, to] = span();
       const x = d3.scaleTime().domain([from, to]).range([28, width - 28]);
       const base = height * 0.74;
-      const maxWeight = Math.max(1, ...beats.map((b) => b.weight));
-      // One lane per repository (or commit type), the busiest on top: orbs float above the trace.
-      const counts = d3.rollup(beats, (v) => d3.sum(v, (b) => b.weight), (b) => b.lane);
+      shown = beats.filter((b) => b.at >= from && (laneFilter === 'all' || b.lane === laneFilter));
+      const maxWeight = Math.max(1, ...shown.map((b) => b.weight));
+      // One lane per repository (or commit type, or category), the busiest on top: orbs float above
+      // the trace.
+      const counts = d3.rollup(shown, (v) => d3.sum(v, (b) => b.weight), (b) => b.lane);
       const keys = [...counts.keys()].sort((a, b) => counts.get(b) - counts.get(a) || a.localeCompare(b));
-      lanes = keys.map((key, i) => ({ key, y: 52 + (keys.length === 1 ? 0.5 : i / (keys.length - 1)) * (base - 100), colour: d3.color(colours.ramp(keys.length === 1 ? 0.5 : i / (keys.length - 1))) }));
+      const category = new Map(shown.map((b) => [b.lane, b.category]));
+      lanes = keys.map((key, i) => ({
+        key,
+        category: category.get(key),
+        y: 52 + (keys.length === 1 ? 0.5 : i / (keys.length - 1)) * (base - 100),
+        colour: d3.color(ink.ramp(keys.length === 1 ? 0.5 : i / (keys.length - 1))),
+      }));
       const lane = new Map(lanes.map((l) => [l.key, l]));
-      points = beats.map((b) => {
+      points = shown.map((b) => {
         const share = Math.sqrt(b.weight / maxWeight);
         return { b, px: x(b.at), base, oy: lane.get(b.lane).y, amp: (0.25 + 0.75 * share) * height * 0.16, r: 2.5 + 3.5 * share, colour: lane.get(b.lane).colour };
       }).sort((a, b) => a.px - b.px);
       points.x = x;
       // The trace and its colour, sampled every 2 px once per layout, not once per frame.
-      const mid = d3.color(colours.ramp(0.5));
+      const mid = d3.color(ink.ramp(0.5));
       trace = [];
       for (let px = 0; px <= width; px += 2) {
         const near = points.find((p) => Math.abs(p.px - px) < 24);
@@ -179,123 +253,161 @@ KorczisHub.viz('pulse', {
       return y;
     };
 
-    const draw = (time) => {
-      if (!width || !colours) return;
-      ctx.clearRect(0, 0, width, height);
+    // The sweep's pace: one pass in seven seconds at 1×; a pace the visitor sets, not an animation.
+    const SWEEP_MS = 7000;
+    const rgba = (c, a) => `rgba(${c.r}, ${c.g}, ${c.b}, ${a})`;
+
+    const draw = (time = performance.now()) => {
+      if (!width || !ink || !points.x) return;
+      const m = motion();
+      g.clearRect(0, 0, width, height);
       const base = height * 0.74;
-      const motion = !reducedMotion();
-      const sweep = motion ? ((time / 7000) % 1) * (width + 120) - 60 : width;
+      const sweep = playing ? phase * (width + 120) - 60 : width;
+      // The entrance, once: the orbs grow in from left to right.
+      const grown = (p) => (m.enter ? Math.min(1, Math.max(0, (time - start - (p.px / Math.max(1, width)) * m.maxDelay) / m.enter)) : 1);
 
       // Time ticks along the bottom.
-      ctx.font = '11px ui-sans-serif, system-ui, sans-serif';
-      ctx.fillStyle = colours.faint;
-      ctx.textAlign = 'center';
+      g.font = `11px ${ink.font}`;
+      g.fillStyle = ink.faint;
+      g.textAlign = 'center';
+      const [from, to] = points.x.domain();
+      const range = to - from;
       for (const tick of points.x.ticks(Math.max(2, Math.floor(width / 140)))) {
         const px = points.x(tick);
-        ctx.fillRect(px, base + 16, 1, 4);
+        g.fillRect(px, base + 16, 1, 4);
         // Hours within days, days within months, months within years, years beyond.
-        const [from, to] = points.x.domain();
-        const span = to - from;
-        const label = span > 2 * 31536000000 ? year : span > 120 * 86400000 ? month : tick.getHours() || tick.getMinutes() ? clock : day;
-        ctx.fillText(label.format(tick), px, base + 32);
+        const label = range > 2 * 31536000000 ? year : range > 120 * DAY ? month : tick.getHours() || tick.getMinutes() ? clock : day;
+        g.fillText(label.format(tick), px, base + 32);
       }
-      // Lanes: a faint rule per repository, its name at the left edge when there is room (the
-      // right edge is now, where activity is densest).
-      const labelled = (base - 100) / Math.max(1, lanes.length - 1) >= 13;
-      ctx.textAlign = 'left';
+      // Lanes: a faint rule per lane, its name at the left edge when there is room (the right edge
+      // is now, where activity is densest); a name with a page is a link.
+      const labelled = lanes.length === 1 || (base - 100) / Math.max(1, lanes.length - 1) >= 13;
+      g.textAlign = 'left';
+      laneLabels = [];
       for (const l of lanes) {
-        ctx.fillStyle = `rgba(${l.colour.r}, ${l.colour.g}, ${l.colour.b}, 0.10)`;
-        ctx.fillRect(16, l.y, width - 32, 1);
+        g.fillStyle = rgba(l.colour, 0.1);
+        g.fillRect(16, l.y, width - 32, 1);
         if (labelled && width > 480) {
-          ctx.fillStyle = `rgba(${l.colour.r}, ${l.colour.g}, ${l.colour.b}, 0.75)`;
-          ctx.fillText(l.key, 16, l.y - 4);
+          const on = hoveredLane === l;
+          g.fillStyle = rgba(l.colour, on ? 1 : 0.75);
+          g.fillText(l.key, 16, l.y - 4);
+          const w = g.measureText(l.key).width;
+          if (on) g.fillRect(16, l.y - 2, w, 1);
+          if (laneUrl(l)) laneLabels.push({ l, x: 12, y: l.y - 17, w: w + 8, h: 16 });
         }
       }
-      ctx.textAlign = 'center';
+      g.textAlign = 'center';
 
       // The trace, glowing, brighter just behind the sweep (phosphor afterglow).
-      ctx.save();
-      ctx.globalCompositeOperation = 'lighter';
-      const glowAt = (px) => (motion ? Math.max(0.25, 1 - Math.max(0, sweep - px) / (width * 0.9)) * (px > sweep ? 0.25 : 1) : 0.8);
-      for (const [lineWidth, alpha] of [[6, 0.08], [2.5, 0.25], [1.2, 0.9]]) {
-        ctx.lineWidth = lineWidth;
+      g.save();
+      g.globalCompositeOperation = 'lighter';
+      const glowAt = (px) => (playing ? Math.max(0.25, 1 - Math.max(0, sweep - px) / (width * 0.9)) * (px > sweep ? 0.25 : 1) : 0.8);
+      for (const [lineWidth, a] of [[6, 0.08], [2.5, 0.25], [1.2, 0.9]]) {
+        g.lineWidth = lineWidth;
         for (let i = 1; i < trace.length; i += 1) {
           const { px, y, c } = trace[i];
-          ctx.strokeStyle = `rgba(${c.r}, ${c.g}, ${c.b}, ${alpha * glowAt(px)})`;
-          ctx.beginPath();
-          ctx.moveTo(trace[i - 1].px, trace[i - 1].y);
-          ctx.lineTo(px, y);
-          ctx.stroke();
+          g.strokeStyle = rgba(c, a * glowAt(px));
+          g.beginPath();
+          g.moveTo(trace[i - 1].px, trace[i - 1].y);
+          g.lineTo(px, y);
+          g.stroke();
         }
       }
       // The beam.
-      if (motion && sweep > 0 && sweep < width) {
-        const g = ctx.createLinearGradient(sweep - 40, 0, sweep + 4, 0);
-        g.addColorStop(0, 'rgba(255,255,255,0)');
-        g.addColorStop(1, 'rgba(255,255,255,0.10)');
-        ctx.fillStyle = g;
-        ctx.fillRect(sweep - 40, 8, 44, height - 16);
+      if (playing && sweep > 0 && sweep < width) {
+        const beam = g.createLinearGradient(sweep - 40, 0, sweep + 4, 0);
+        beam.addColorStop(0, ink.alpha(ink.ink, 0));
+        beam.addColorStop(1, ink.alpha(ink.ink, 0.1));
+        g.fillStyle = beam;
+        g.fillRect(sweep - 40, 8, 44, height - 16);
       }
-      ctx.restore();
-      // Orbs: one per beat in its repository's lane, a thread down to its spike; a fresh live beat
-      // rings as it arrives.
+      g.restore();
+      // The replay: a beat the beam crosses rings, in the order the beats happened.
+      if (playing && m.enter) {
+        for (const p of points) if (p.px > lastSweep && p.px <= sweep) born.set(p.b.id, time);
+      }
+      lastSweep = sweep;
+      // Orbs: one per beat in its lane, a thread down to its spike; a ringing beat (a fresh live one,
+      // or one the beam just crossed) sends out a ring.
+      const ring = m.enter * 2;
       for (const p of points) {
         const y = p.oy;
         const lit = hovered === p ? 1.6 : 1;
-        const pulse = motion ? 0.85 + 0.15 * Math.sin(time / 500 + hash(p.b.id) * 6.28) : 1;
-        const r = p.r * lit * pulse;
+        const beatPulse = playing ? 0.85 + 0.15 * Math.sin(time / 500 + unit(p.b.id) * 6.28) : 1;
+        const r = p.r * lit * beatPulse * grown(p);
+        if (r <= 0) continue;
         // A soft halo per orb while there are few; a dense sky (the work list) keeps it for the hovered.
         if (points.length <= 160 || hovered === p) {
-          const halo = ctx.createRadialGradient(p.px, y, 0, p.px, y, r * 4);
-          halo.addColorStop(0, `rgba(${p.colour.r}, ${p.colour.g}, ${p.colour.b}, ${hovered === p ? 0.5 : 0.22})`);
-          halo.addColorStop(1, `rgba(${p.colour.r}, ${p.colour.g}, ${p.colour.b}, 0)`);
-          ctx.fillStyle = halo;
-          ctx.beginPath();
-          ctx.arc(p.px, y, r * 4, 0, Math.PI * 2);
-          ctx.fill();
+          const halo = g.createRadialGradient(p.px, y, 0, p.px, y, r * 4);
+          halo.addColorStop(0, rgba(p.colour, hovered === p ? 0.5 : 0.22));
+          halo.addColorStop(1, rgba(p.colour, 0));
+          g.fillStyle = halo;
+          g.beginPath();
+          g.arc(p.px, y, r * 4, 0, Math.PI * 2);
+          g.fill();
         }
-        ctx.fillStyle = `rgba(${p.colour.r}, ${p.colour.g}, ${p.colour.b}, 0.95)`;
-        ctx.beginPath();
-        ctx.arc(p.px, y, r, 0, Math.PI * 2);
-        ctx.fill();
-        ctx.strokeStyle = `rgba(${p.colour.r}, ${p.colour.g}, ${p.colour.b}, ${hovered === p ? 0.6 : 0.12})`;
-        ctx.lineWidth = 1;
-        ctx.beginPath();
-        ctx.moveTo(p.px, y + r);
-        ctx.lineTo(p.px, p.base - p.amp);
-        ctx.stroke();
+        g.fillStyle = rgba(p.colour, 0.95);
+        g.beginPath();
+        g.arc(p.px, y, r, 0, Math.PI * 2);
+        g.fill();
+        g.strokeStyle = rgba(p.colour, hovered === p ? 0.6 : 0.12);
+        g.lineWidth = 1;
+        g.beginPath();
+        g.moveTo(p.px, y + r);
+        g.lineTo(p.px, p.base - p.amp);
+        g.stroke();
         const since = born.get(p.b.id);
-        if (since && motion) {
-          const age = (time - since) / 1800;
+        if (since && ring) {
+          const age = (time - since) / ring;
           if (age < 1) {
-            ctx.strokeStyle = `rgba(255, 255, 255, ${0.6 * (1 - age)})`;
-            ctx.beginPath();
-            ctx.arc(p.px, y, r + age * 40, 0, Math.PI * 2);
-            ctx.stroke();
-          }
+            g.strokeStyle = ink.alpha(ink.ink, 0.6 * (1 - age));
+            g.beginPath();
+            g.arc(p.px, y, r + age * 40, 0, Math.PI * 2);
+            g.stroke();
+          } else born.delete(p.b.id);
         }
+      }
+      if (!points.length) {
+        g.font = `12px ${ink.font}`;
+        g.fillStyle = ink.text;
+        g.fillText(t('js_pulse_quiet'), width / 2, height * 0.42);
       }
 
       // Status, top left: live with the time of the last check, or the snapshot.
-      ctx.textAlign = 'left';
-      ctx.font = '600 11px ui-sans-serif, system-ui, sans-serif';
-      const dot = live ? (motion ? 0.6 + 0.4 * Math.sin(time / 300) : 1) : 0.5;
-      ctx.fillStyle = live ? `rgba(52, 211, 153, ${dot})` : colours.faint;
-      ctx.beginPath();
-      ctx.arc(16, 18, 4, 0, Math.PI * 2);
-      ctx.fill();
-      ctx.fillStyle = colours.text;
-      const status = live ? `${KorczisHub.t('js_live').toUpperCase()} · ${clock.format(checked)}` : KorczisHub.t('js_snapshot').toUpperCase();
-      ctx.fillText(`${status} · ${beats.length}`, 26, 22);
+      g.textAlign = 'left';
+      g.font = `600 11px ${ink.font}`;
+      const dot = live ? (playing ? 0.6 + 0.4 * Math.sin(time / 300) : 1) : 0.5;
+      g.fillStyle = live ? ink.alpha(ink.live, dot) : ink.faint;
+      g.beginPath();
+      g.arc(16, 18, 4, 0, Math.PI * 2);
+      g.fill();
+      g.fillStyle = ink.text;
+      const status = live ? `${t('js_live').toUpperCase()} · ${clock.format(checked)}` : t('js_snapshot').toUpperCase();
+      g.fillText(`${status} · ${points.length}`, 26, 22);
     };
 
+    const entering = (time) => time - start < motion().maxDelay + motion().enter;
     const loop = (time) => {
       frame = 0;
+      const dt = lastTime ? Math.min(100, time - lastTime) : 0;
+      lastTime = time;
+      if (playing) {
+        phase += (dt * speed) / SWEEP_MS;
+        if (phase >= 1) {
+          phase %= 1;
+          lastSweep = -Infinity;
+        }
+      }
       draw(time);
-      if (visible && !reducedMotion() && !destroyed) frame = requestAnimationFrame(loop);
+      if (visible && !destroyed && (playing || entering(time))) frame = requestAnimationFrame(loop);
+      else lastTime = 0;
     };
     const kick = () => {
-      if (!frame && !destroyed) frame = requestAnimationFrame(loop);
+      if (!frame && !destroyed && visible) frame = requestAnimationFrame(loop);
+    };
+    const redraw = () => {
+      if (!frame) draw();
+      kick();
     };
 
     const poll = async () => {
@@ -317,27 +429,28 @@ KorczisHub.viz('pulse', {
             beats = fresh;
             live = true;
             checked = new Date();
-            layout();
           }
         }
       } catch {
         // Offline, blocked or rate-limited: the snapshot stays and the status says so.
       }
-      kick();
-      draw(performance.now());
+      if (destroyed) return;
+      layout();
+      redraw();
     };
 
-    const nearest = (event) => {
+    const point = (event) => {
       const rect = canvas.getBoundingClientRect();
-      const mx = event.clientX - rect.left;
-      const my = event.clientY - rect.top;
+      return [event.clientX - rect.left, event.clientY - rect.top];
+    };
+    const nearest = (event) => {
+      const [mx, my] = point(event);
       let best = null;
       let bestD = 24 * 24;
       for (const p of points) {
-        const oy = p.oy;
         // Near the orb, or anywhere on its column down to the trace.
-        const inColumn = Math.abs(my - oy) < 10 || (my > p.base - p.amp - 4 && my < p.base + 12);
-        const d = inColumn ? (p.px - mx) ** 2 : (p.px - mx) ** 2 + (oy - my) ** 2;
+        const inColumn = Math.abs(my - p.oy) < 10 || (my > p.base - p.amp - 4 && my < p.base + 12);
+        const d = inColumn ? (p.px - mx) ** 2 : (p.px - mx) ** 2 + (p.oy - my) ** 2;
         if (d < bestD) {
           bestD = d;
           best = p;
@@ -345,70 +458,142 @@ KorczisHub.viz('pulse', {
       }
       return best;
     };
+    const laneAt = (event) => {
+      const [x, y] = point(event);
+      return laneLabels.find((r) => x >= r.x && x <= r.x + r.w && y >= r.y && y <= r.y + r.h)?.l ?? null;
+    };
+    const opens = `<span class="opacity-75">${escape(t('js_click_to_open'))}</span>`;
+    const describe = (b) => {
+      const count = b.type === 'push' && b.weight > 1 ? ` · ${b.weight}×` : '';
+      return `<strong>${escape(byType ? b.lane : b.repo)}</strong> · ${escape(t(`js_pulse_${b.type}`))}${count}<br>`
+        + `${b.message ? `${escape(b.message.slice(0, 90))}<br>` : ''}<span class="opacity-75">${escape(ago(b.at))} · ${escape(t('js_click_to_open'))}</span>`;
+    };
+    const describeLane = (l) => {
+      const n = shown.filter((b) => b.lane === l.key).length;
+      return `<strong>${escape(l.key)}</strong><br>${escape(t('js_pulse_beats', { n }))}<br>${opens}`;
+    };
 
-    canvas.addEventListener('pointermove', (event) => {
-      const p = nearest(event);
-      hovered = p;
-      canvas.style.cursor = p ? 'pointer' : 'default';
-      if (p) {
-        const b = p.b;
-        const count = b.type === 'push' && b.weight > 1 ? ` · ${b.weight}×` : '';
-        tip.show(
-          `<strong>${escape(byType ? b.lane : b.repo)}</strong> · ${escape(KorczisHub.t(`js_pulse_${b.type}`))}${count}<br>`
-          + `${b.message ? `${escape(b.message.slice(0, 90))}<br>` : ''}<span class="opacity-75">${escape(ago(b.at))} · ${escape(KorczisHub.t('js_click_to_open'))}</span>`,
-          event,
-        );
-      } else tip.hide();
-      if (reducedMotion()) draw(performance.now());
-    });
-    canvas.addEventListener('pointerleave', () => {
+    const hover = (event) => {
+      hoveredLane = laneAt(event);
+      hovered = hoveredLane ? null : nearest(event);
+      canvas.style.cursor = hovered || hoveredLane ? 'pointer' : 'default';
+      if (hoveredLane) tip.show(describeLane(hoveredLane), event);
+      else if (hovered) tip.show(describe(hovered.b), event);
+      else tip.hide();
+    };
+    const onMove = (event) => {
+      hover(event);
+      redraw();
+    };
+    const onLeave = () => {
       hovered = null;
+      hoveredLane = null;
       tip.hide();
-      if (reducedMotion()) draw(performance.now());
-    });
-    canvas.addEventListener('click', (event) => {
-      const p = nearest(event);
-      if (p) window.open(p.b.url, '_blank', 'noopener');
-    });
+      redraw();
+    };
+    // A click, a tap (the browser sends click after a tap) and a middle click (auxclick) open the
+    // beat or the lane under the pointer; go() picks the tab.
+    const onClick = (event) => {
+      if (event.type === 'auxclick' && event.button !== 1) return;
+      hover(event);
+      if (hoveredLane) go(laneUrl(hoveredLane), event);
+      else if (hovered) go(target(hovered.b), event);
+    };
+    canvas.addEventListener('pointermove', onMove);
+    canvas.addEventListener('pointerleave', onLeave);
+    canvas.addEventListener('click', onClick);
+    canvas.addEventListener('auxclick', onClick);
 
     const io = new IntersectionObserver(([entry]) => {
       visible = entry.isIntersecting;
       if (visible) kick();
     });
     io.observe(box);
-    const ro = new ResizeObserver(() => {
-      resize();
-      draw(performance.now());
-    });
-    ro.observe(box);
     const onVisibility = () => {
       if (document.visibilityState === 'visible') poll();
     };
     document.addEventListener('visibilitychange', onVisibility);
 
+    paint();
     resize();
-    draw(performance.now());
+    layout();
+    draw();
     kick();
     poll();
     timer = setInterval(() => {
       if (visible && document.visibilityState === 'visible') poll();
     }, POLL);
 
+    // Lane options come from the snapshot (a live poll may bring a lane the snapshot lacks; the
+    // filter then shows what matches).
+    const laneTotals = d3.rollup(snapshot, (v) => v.length, (b) => b.lane);
+    const laneOptions = [{ value: 'all', label: t('js_pulse_lanes_all') }].concat(
+      [...laneTotals].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+        .map(([key, n]) => ({ value: key, label: t('js_pulse_lane', { name: key, n }) })),
+    );
+
     return {
-      // The list twin: what the pulse shows now (live or snapshot), newest first.
-      items: () => [...beats].sort((a, b) => b.at - a.at)
-        .map((b) => ({ label: `${b.repo}: ${b.message || KorczisHub.t(`js_pulse_${b.type}`)}`, url: b.url, note: ago(b.at) })),
-      update() {
+      // The list twin: what the pulse shows now (live or snapshot, window and lane), newest first.
+      items: () => [...shown].sort((a, b) => b.at - a.at)
+        .map((b) => ({ label: `${b.repo}: ${b.message || t(`js_pulse_${b.type}`)}`, url: target(b), note: ago(b.at) })),
+      controls: () => [
+        {
+          key: 'play',
+          type: 'play',
+          value: !reducedMotion(),
+          set(on) {
+            playing = Boolean(on);
+            lastSweep = playing ? phase * (width + 120) - 60 : -Infinity;
+            redraw();
+          },
+        },
+        {
+          key: 'window', type: 'range', label: t('js_pulse_window'), min: 0, max: ALL, step: 1, value: ALL,
+          format: (v) => windowLabel(Number(v)),
+          set(v) {
+            windowIndex = Math.min(ALL, Math.max(0, Math.round(Number(v))));
+            hovered = null;
+            layout();
+            redraw();
+          },
+        },
+        {
+          key: 'lane', type: 'select', label: t('js_pulse_lane_filter'), options: laneOptions, value: 'all',
+          set(v) {
+            laneFilter = laneOptions.some((o) => o.value === v) ? v : 'all';
+            hovered = null;
+            layout();
+            redraw();
+          },
+        },
+        {
+          key: 'speed', type: 'range', label: t('js_pulse_speed'), min: 0.25, max: 4, step: 0.25, value: 1,
+          format: (v) => `${Number(v).toLocaleString(locale)}×`,
+          set(v) { speed = Number(v); },
+        },
+      ],
+      resize() {
         resize();
-        draw(performance.now());
+        layout();
+        draw();
+      },
+      update() {
+        paint();
+        layout();
+        draw();
       },
       destroy() {
         destroyed = true;
         clearInterval(timer);
         cancelAnimationFrame(frame);
         io.disconnect();
-        ro.disconnect();
         document.removeEventListener('visibilitychange', onVisibility);
+        canvas.removeEventListener('pointermove', onMove);
+        canvas.removeEventListener('pointerleave', onLeave);
+        canvas.removeEventListener('click', onClick);
+        canvas.removeEventListener('auxclick', onClick);
+        tip.hide();
+        canvas.remove();
       },
     };
   },
