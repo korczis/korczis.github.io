@@ -20,6 +20,17 @@ esac
 step() { printf '\n== %s\n' "$1"; }
 run() { step "$1"; shift; "$@"; }
 
+# Every gate reads node_modules, so a checkout whose install is behind package-lock.json judges with
+# the wrong tools: a dependency landed from another worktree (esbuild, 2026-11-14) made this
+# checkout's pre-push die with ERR_MODULE_NOT_FOUND halfway through. Say so first, by name.
+step "Installed dependencies match package-lock.json"
+if ! npm ls --depth=0 >/dev/null 2>&1; then
+  npm ls --depth=0 2>&1 | grep -E 'missing|invalid|ERR' | head -5
+  echo "node_modules is behind package-lock.json: run npm ci in $(pwd), then verify again"
+  exit 1
+fi
+echo "every locked dependency is installed at its locked version"
+
 if [ "$audit_only" = 0 ]; then
 run "Conventional commits on this branch" scripts/lint-commits.sh "$(git merge-base HEAD origin/master 2>/dev/null || git rev-list --max-parents=0 HEAD | tail -1)..HEAD"
 run "Translations are generated and complete" node scripts/build-i18n.mjs --check
