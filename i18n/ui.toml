@@ -86,3 +86,39 @@ cs = "Tmavý"
 [theme_system]
 en = "As the system"
 cs = "Podle systému"
+
+[open_the_command_palette]
+en = "Open the command palette"
+cs = "Otevřít příkazovou paletu"
+
+[js_palette_action]
+en = "Action"
+cs = "Akce"
+
+[js_palette_theme_light]
+en = "Switch to the light theme"
+cs = "Přepnout na světlý vzhled"
+
+[js_palette_theme_dark]
+en = "Switch to the dark theme"
+cs = "Přepnout na tmavý vzhled"
+
+[js_palette_theme_system]
+en = "Follow the system theme"
+cs = "Vzhled podle systému"
+
+[js_palette_theme_hint]
+en = "Theme"
+cs = "Vzhled"
+
+[js_palette_language_cs]
+en = "Read this page in Czech"
+cs = "Číst tuto stránku česky"
+
+[js_palette_language_en]
+en = "Read this page in English"
+cs = "Číst tuto stránku anglicky"
+
+[js_palette_copy]
+en = "Copy the link to this page"
+cs = "Zkopírovat odkaz na tuto stránku"
