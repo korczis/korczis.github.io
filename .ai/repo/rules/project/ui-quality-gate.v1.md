@@ -22,8 +22,9 @@ attention to UI, UX and consistency.
 
 # Required behaviour
 
-- `scripts/audit-ui.mjs` covers `/`, `/projects/`, `/stack/` and `/404.html`: axe-core
-  WCAG 2.2 AA at 375 and 1440 px in light and dark; overflow and errors at 320, 768, 1024 and
+- `scripts/audit-ui.mjs` covers one page of every template in every language, derived from the
+  built sitemap and the content front matter (it fails when a template or a language has no page):
+  axe-core WCAG 2.2 AA at 375 and 1440 px in light and dark; overflow and errors at 320, 768, 1024 and
   1920 px; CLS at most 0.1; each `[data-viz]` reaches `data-viz-state="ready"` and draws on a non-empty surface once scrolled
   into view; every rendered internal link resolves to a built file.
 - CI (`.github/workflows/ci.yml`, job `validate`) runs it on every pull request and before every
@@ -34,7 +35,9 @@ attention to UI, UX and consistency.
   view (Details opens with focus and `?project=`, Escape closes and returns focus, the table
   follows the filter), and the command palette (Ctrl+K opens with focus, Escape closes, search
   ranks, Enter opens the project).
-- A new page is added to `PAGES` in `scripts/audit-ui.mjs` in the same change.
+- Every framed visual is maximized, redrawn, restored and deep-linked, and every simulator
+  parameter round-trips through its address (`checkFrames`, rule project.viz-ergonomics); every
+  list twin's link resolves; a Czech page links only into the Czech tree.
 - The public site is audited the same way after every deployment (`pages.yml` job `verify`) and
   daily (`monitor.yml`), with `scripts/check-live.mjs` asking every linked live project.
 

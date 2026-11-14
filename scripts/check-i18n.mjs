@@ -12,11 +12,13 @@ import { fileURLToPath } from 'node:url';
 import { parse } from 'smol-toml';
 import { loadStrings } from './lib/strings.mjs';
 import { cliArgs } from './lib/cli.mjs';
+import { isDefault, languages } from './lib/derive.mjs';
 
 cliArgs();
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const LANGS = ['cs'];
+// Every language but the default one owes a twin of each text (zola.toml [languages]).
+const LANGS = languages().filter((l) => !isDefault(l));
 const strings = loadStrings();
 const findings = [];
 const walk = (dir, ext) => readdirSync(dir, { withFileTypes: true }).flatMap((e) => {

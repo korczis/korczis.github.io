@@ -50,7 +50,7 @@
     return JSON.parse(node.textContent);
   }
 
-  // Tailwind 4 declares its palette in oklch(), which Chart.js, ECharts and Cytoscape cannot
+  // Tailwind 4 declares its palette in oklch(), which ECharts, D3 and canvas code cannot
   // parse. One 1x1 canvas turns any CSS colour the browser understands into rgb().
   const rgbCache = new Map();
   let probe = null;

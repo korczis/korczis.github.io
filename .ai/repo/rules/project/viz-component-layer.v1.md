@@ -3,7 +3,7 @@ id: project.viz-component-layer
 version: 1
 kind: rule
 title: Every visual goes through one component layer
-description: p5.js, Cytoscape.js, Apache ECharts and Chart.js are constructed only in static/js/viz/<name>.js, registered with KorczisHub.viz, lazy-loaded, themed from the CSS tokens and given a text alternative.
+description: p5.js, D3 and Apache ECharts are constructed only in static/js/viz/<name>.js, registered with KorczisHub.viz, lazy-loaded, themed from the CSS tokens and given a text alternative.
 statement: Construct a visual only in static/js/viz/<name>.js registered as KorczisHub.viz('<name>'), mount it with data-viz="<name>" on a box that reserves its size, read colours from KorczisHub.palette(), and give the box a role and an aria-label that states what it shows.
 status: active
 class: blocking
