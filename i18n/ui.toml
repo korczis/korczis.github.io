@@ -69,3 +69,20 @@ cs = "Stránky tabulky"
 [no_repository_matches]
 en = "No repository matches these filters."
 cs = "Těmto filtrům neodpovídá žádný repozitář."
+
+# The theme menu in the navbar (static/js/components/theme.js) and the palette's actions.
+[theme_label]
+en = "Theme"
+cs = "Vzhled"
+
+[theme_light]
+en = "Light"
+cs = "Světlý"
+
+[theme_dark]
+en = "Dark"
+cs = "Tmavý"
+
+[theme_system]
+en = "As the system"
+cs = "Podle systému"

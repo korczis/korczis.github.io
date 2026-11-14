@@ -30,12 +30,26 @@
         <button type="button" data-js onclick="document.dispatchEvent(new Event('palette:open'))" class="rounded-lg p-2.5 text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-700 lg:hidden">
           <span class="sr-only">{{ trans(key="search", lang=lang) | safe }}</span>{{ <icon name="search" class="h-5 w-5" /> }}
         </button>
-        <button id="theme-toggle" type="button" data-js data-tooltip-target="tooltip-theme" class="rounded-lg p-2.5 text-sm text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-700">
-          <span class="sr-only">{{ trans(key="toggle_dark_mode", lang=lang) | safe }}</span>
+        {#- Theme: a Flowbite dropdown with three choices, light, dark and the system's
+            (static/js/components/theme.js). The icon is chosen by CSS, so nothing shifts on load. #}
+        <button id="theme-menu-button" type="button" data-js data-dropdown-toggle="theme-menu" data-dropdown-placement="bottom-end" aria-haspopup="menu" aria-expanded="false"
+          class="rounded-lg p-2.5 text-sm text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-700">
+          <span class="sr-only">{{ trans(key="theme_label", lang=lang) | safe }}</span>
           {{ <icon name="moon" class="h-5 w-5 dark:hidden" /> }}
           {{ <icon name="sun" class="hidden h-5 w-5 dark:block" /> }}
         </button>
-        {{ <tooltip id="tooltip-theme" text={trans(key="toggle_dark_mode", lang=lang)} size="sm" /> }}
+        <div id="theme-menu" class="z-50 hidden w-48 rounded-lg bg-white shadow dark:bg-gray-700">
+          <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" role="menu" aria-labelledby="theme-menu-button">
+            {%- for opt in [["light", "sun", "theme_light"], ["dark", "moon", "theme_dark"], ["system", "computer", "theme_system"]] %}
+            <li role="none">
+              <button type="button" role="menuitemradio" aria-checked="false" data-theme-choice="{{ opt[0] }}"
+                class="group flex w-full items-center gap-2 px-4 py-2 text-left hover:bg-gray-100 focus:bg-gray-100 focus:outline-none aria-checked:font-semibold aria-checked:text-primary-700 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:bg-gray-600 dark:aria-checked:text-primary-300">
+                {{ <icon name={opt[1]} class="h-4 w-4" /> }}{{ trans(key=opt[2], lang=lang) | safe }}{{ <icon name="check" class="ms-auto hidden h-4 w-4 group-aria-checked:block" /> }}
+              </button>
+            </li>
+            {%- endfor %}
+          </ul>
+        </div>
         <a href="https://github.com/{{ config.extra.github }}" data-tooltip-target="tooltip-github" class="rounded-lg p-2.5 text-gray-600 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700">
           <span class="sr-only">{{ trans(key="github_profile", lang=lang) | safe }}</span>{{ <icon name="github" class="h-5 w-5" /> }}
         </a>

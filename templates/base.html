@@ -72,6 +72,7 @@
   {%- if vlist | length > 0 %}{% set_global seen = "|" %}{% for v in vlist %}{% if not ("|" ~ v.kind ~ "|") in seen %}{% set_global seen = seen ~ v.kind ~ "|" %}
   <script src="{{ get_url(path='js/viz/' ~ v.kind ~ '.js', cachebust=true) }}" defer></script>
   {%- endif %}{% endfor %}{% endif %}
+  <script src="{{ get_url(path='js/components/theme.js', cachebust=true) }}" defer></script>
   <script src="{{ get_url(path='js/components/palette.js', cachebust=true) }}" defer></script>
   <script src="{{ get_url(path='js/vendor/alpine.min.js') }}" defer></script>
 </body>
