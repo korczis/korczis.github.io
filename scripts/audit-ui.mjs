@@ -3,21 +3,29 @@
 // dark theme: axe-core WCAG 2.2 AA violations, console and network errors, horizontal overflow,
 // cumulative layout shift, and every visual reaching data-viz-state="ready" once scrolled into
 // view. At 320, 768, 1024 and 1920 px: overflow and errors only. Then every internal link the
-// pages rendered must resolve to a built file. Any finding exits 1.
+// pages rendered must resolve to a built file, and on a page of another language than the default
+// (/cs/) every internal page link stays in that language. Any finding exits 1.
+//
+// The pages are derived, never named: one page per template and language, read from the built
+// site's sitemap.xml, each URL's template inferred from the content front matter that renders it
+// (template, the section's page_template, Zola's defaults; taxonomies; 404.html). The audit fails
+// when a template in templates/ has no page in some language, or a URL maps to no template.
+// Every list twin of every visual on those pages is opened and each of its links resolved.
 //
 // usage: BASE_URL=http://127.0.0.1:<port>/ SITE_DIR=<built site> node scripts/audit-ui.mjs
 //          [--json <file>] [--shots <dir>] [--only <regexp on the page name>]
+//        SITE_DIR=<built site> node scripts/audit-ui.mjs --pages   the derived pages and their
+//          coverage, without a browser
 // scripts/verify-all.sh builds, serves and calls this; CI does the same. One browser launch.
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { createRequire } from 'node:module';
-import { join } from 'node:path';
+import { join, relative } from 'node:path';
+import { parse } from 'smol-toml';
 import { cliArgs } from './lib/cli.mjs';
 
 // Flags first: --help or a typo must answer before a browser is looked for.
-const opts = cliArgs({ '--json': '<file>', '--shots': '<dir>', '--only': '<regexp>' });
+const opts = cliArgs({ '--json': '<file>', '--shots': '<dir>', '--only': '<regexp>', '--pages': true });
 const require = createRequire(import.meta.url);
-const { chromium } = require(process.env.PLAYWRIGHT || 'playwright-core');
-const AXE = readFileSync(require.resolve('axe-core/axe.min.js'), 'utf8');
 
 const BASE = (process.env.BASE_URL || 'http://127.0.0.1:1111/').replace(/\/?$/, '/');
 const SITE_DIR = process.env.SITE_DIR || 'public';
@@ -28,27 +36,100 @@ const TAGS = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'];
 const FULL_RUNS = [[375, 'light'], [375, 'dark'], [1440, 'light'], [1440, 'dark']];
 const LAYOUT_WIDTHS = [320, 768, 1024, 1920];
 const CLS_LIMIT = 0.1;
-// The first work page is whichever project was active most recently (derived, never typed).
-const firstWork = JSON.parse(readFileSync(new URL('../data/recent.json', import.meta.url), 'utf8')).repos[0]?.name
-  ?.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-const PAGES = [
-  ['home', ''],
-  ['about', 'about/'],
-  ['projects', 'projects/'],
-  ['repositories', 'repositories/'],
-  ['work', 'work/'],
-  ...(firstWork ? [['work-page', `work/${firstWork}/`]] : []),
-  ['cs-home', 'cs/'],
-  ...(firstWork ? [['cs-work-page', `cs/work/${firstWork}/`]] : []),
-  ['category', 'projects/science/'],
-  ['stack', 'stack/'],
-  ['glossary', 'glossary/'],
-  ['term', 'glossary/rust/'],
-  ['cs-term', 'cs/glossary/osint/'],
-  ['tags', 'tags/'],
-  ['tag', 'tags/rust/'],
-  ['404', '404.html'],
-];
+const ROOT = new URL('..', import.meta.url).pathname;
+const CONFIG = parse(readFileSync(join(ROOT, 'zola.toml'), 'utf8'));
+const DEFAULT_LANG = CONFIG.default_language || 'en';
+const LANGS = [DEFAULT_LANG, ...Object.keys(CONFIG.languages ?? {})];
+const OTHER_LANGS = LANGS.slice(1);
+
+// --- the pages: one per template and language, derived ------------------------------------------
+// Kinds: '' (home), '<dir>/' (a section, or a top-level page), '<dir>/*' (a page of a section).
+function derivePages() {
+  const findings = [];
+  const kinds = new Map(); // `${lang} ${kind}` -> template
+  const walk = (dir) => readdirSync(dir, { withFileTypes: true }).flatMap((e) => (e.isDirectory() ? walk(join(dir, e.name)) : [join(dir, e.name)]));
+  const files = walk(join(ROOT, 'content')).filter((f) => f.endsWith('.md'));
+  const front = (file) => {
+    const m = readFileSync(file, 'utf8').match(/^\+\+\+\n([\s\S]*?)\n\+\+\+/);
+    return m ? parse(m[1]) : {};
+  };
+  const langOf = (file) => file.match(/\.([a-z]{2})\.md$/)?.[1] ?? DEFAULT_LANG;
+  const sections = new Map(); // `${lang} ${dir}` -> front matter
+  for (const file of files.filter((f) => /\/_index(\.[a-z]{2})?\.md$/.test(f))) {
+    const dir = relative(join(ROOT, 'content'), join(file, '..'));
+    sections.set(`${langOf(file)} ${dir}`, front(file));
+  }
+  const pageTemplate = (lang, dir) => {
+    for (let d = dir; ; d = d.includes('/') ? d.slice(0, d.lastIndexOf('/')) : '') {
+      const t = sections.get(`${lang} ${d}`)?.page_template;
+      if (t) return t;
+      if (d === '') return 'page.html';
+    }
+  };
+  for (const file of files) {
+    const lang = langOf(file);
+    const dir = relative(join(ROOT, 'content'), join(file, '..'));
+    const fm = front(file);
+    const section = /\/_index(\.[a-z]{2})?\.md$/.test(file);
+    const stem = file.split('/').pop().replace(/(\.[a-z]{2})?\.md$/, '');
+    const kind = section ? (dir ? `${dir}/` : '') : (dir ? `${dir}/*` : `${stem}/`);
+    const template = fm.template ?? (section ? (dir ? 'section.html' : 'index.html') : pageTemplate(lang, dir));
+    const key = `${lang} ${kind}`;
+    if (kinds.has(key) && kinds.get(key) !== template) findings.push(`${kind} (${lang}) is rendered by both ${kinds.get(key)} and ${template}; the audit samples one per kind`);
+    kinds.set(key, template);
+  }
+  for (const lang of LANGS) {
+    const taxonomies = (lang === DEFAULT_LANG ? CONFIG.taxonomies : CONFIG.languages?.[lang]?.taxonomies) ?? [];
+    for (const { name } of taxonomies) {
+      kinds.set(`${lang} ${name}/`, existsSync(join(ROOT, `templates/${name}/list.html`)) ? `${name}/list.html` : 'taxonomy_list.html');
+      kinds.set(`${lang} ${name}/*`, existsSync(join(ROOT, `templates/${name}/single.html`)) ? `${name}/single.html` : 'taxonomy_single.html');
+    }
+  }
+  // The built URLs, in sitemap order, relative to the configured base path.
+  const basePath = new URL(CONFIG.base_url.replace(/\/?$/, '/')).pathname;
+  const urls = [...readFileSync(join(SITE_DIR, 'sitemap.xml'), 'utf8').matchAll(/<loc>([^<]+)<\/loc>/g)]
+    .map(([, loc]) => decodeURIComponent(new URL(loc).pathname))
+    .map((path) => (path.startsWith(basePath) ? path.slice(basePath.length) : path.replace(/^\//, '')));
+  const pages = [];
+  const seen = new Set();
+  for (const rel of urls) {
+    let segs = rel.split('/').filter(Boolean);
+    const lang = OTHER_LANGS.includes(segs[0]) ? segs[0] : DEFAULT_LANG;
+    if (lang !== DEFAULT_LANG) segs = segs.slice(1);
+    const template = segs.length === 0 ? kinds.get(`${lang} `)
+      : kinds.get(`${lang} ${segs.join('/')}/`) ?? kinds.get(`${lang} ${segs.slice(0, -1).join('/')}/*`);
+    if (!template) { findings.push(`/${rel}: no content file or taxonomy tells which template renders it`); continue; }
+    if (seen.has(`${template} ${lang}`)) continue;
+    seen.add(`${template} ${lang}`);
+    const stem = template.replace(/\.html$/, '').replace(/\//g, '-');
+    pages.push([lang === DEFAULT_LANG ? stem : `${lang}-${stem}`, rel, template, lang]);
+  }
+  // Zola renders 404.html once, for every language (its texts follow the visitor's language).
+  if (existsSync(join(SITE_DIR, '404.html'))) { pages.push(['404', '404.html', '404.html', '*']); seen.add('404.html *'); }
+  // Coverage: every page template in templates/ (not the base layout, macros or partials), in
+  // every language (404.html once).
+  const templates = readdirSync(join(ROOT, 'templates'), { withFileTypes: true })
+    .flatMap((e) => (e.isDirectory() && e.name !== 'partials'
+      ? readdirSync(join(ROOT, 'templates', e.name)).map((f) => `${e.name}/${f}`) : [e.name]))
+    .filter((t) => t.endsWith('.html') && !['base.html', 'components.html'].includes(t) && !t.startsWith('partials'));
+  for (const t of templates) {
+    for (const lang of t === '404.html' ? ['*'] : LANGS) {
+      if (!seen.has(`${t} ${lang}`)) findings.push(`template ${t} has no page in language ${lang} in ${SITE_DIR}/sitemap.xml: the audit would not see it`);
+    }
+  }
+  return { pages, findings, templates };
+}
+
+const DERIVED = derivePages();
+const PAGES = DERIVED.pages.map(([name, rel]) => [name, rel]);
+if (opts.pages) {
+  for (const [name, rel, template, lang] of DERIVED.pages) console.log(`${name.padEnd(28)} ${lang.padEnd(3)} ${template.padEnd(22)} /${rel}`);
+  for (const f of DERIVED.findings) console.log(`FAIL ${f}`);
+  console.log(`pages: ${DERIVED.pages.length} pages cover ${DERIVED.templates.length} templates x ${LANGS.length} languages, ${DERIVED.findings.length} findings`);
+  process.exit(DERIVED.findings.length ? 1 : 0);
+}
+const { chromium } = require(process.env.PLAYWRIGHT || 'playwright-core');
+const AXE = readFileSync(require.resolve('axe-core/axe.min.js'), 'utf8');
 
 async function measure(browser, name, rel, width, scheme, full) {
   const context = await browser.newContext({
@@ -127,7 +208,7 @@ async function measure(browser, name, rel, width, scheme, full) {
   }
 
   const hrefs = full
-    ? await page.evaluate(() => [...document.querySelectorAll('a[href]')].map((a) => [a.getAttribute('href'), a.href]))
+    ? await page.evaluate(() => [...document.querySelectorAll('a[href]')].map((a) => [a.getAttribute('href'), a.href, a.hreflang]))
     : [];
   let axe = [];
   if (full) {
@@ -161,17 +242,42 @@ const PROJECT_SITES = new Set(
     .map((url) => url.pathname.split('/').filter(Boolean)[0]),
 );
 
+// A link's path inside this build, or null when it leaves the build: another origin, or a
+// same-origin path whose first segment this build does not have (another repository's GitHub Pages
+// site, korczis.github.io/<repo>/, checked by check-live, not against this build).
+function internal(abs) {
+  const url = new URL(abs);
+  if (url.origin !== new URL(BASE).origin) return null;
+  const basePath = new URL(BASE).pathname;
+  let rel = decodeURIComponent(url.pathname);
+  rel = rel.startsWith(basePath) ? rel.slice(basePath.length) : rel.replace(/^\//, '');
+  const first = rel.split('/').filter(Boolean)[0];
+  if (first && (PROJECT_SITES.has(first) || !existsSync(join(SITE_DIR, first)))) return null;
+  return rel;
+}
+const builtFile = (rel) => join(SITE_DIR, rel === '' || rel.endsWith('/') ? `${rel}index.html` : rel);
+const langOfPath = (rel) => (OTHER_LANGS.includes(rel.split('/')[0]) ? rel.split('/')[0] : DEFAULT_LANG);
+
+// A page of another language than the default links to pages of its own language: every internal
+// link without a file extension (a page, not an asset, llms*.txt, a schema, an OG image or the
+// sitemap) stays under /<lang>/, except the language switch itself (hreflang).
+function languageFinding(fromRel, raw, abs, hreflang) {
+  const lang = langOfPath(fromRel);
+  if (lang === DEFAULT_LANG || hreflang) return null;
+  const rel = internal(abs);
+  if (rel === null) return null;
+  if (/\.[a-z0-9]+$/i.test(rel.split('/').pop()) && !rel.endsWith('.html')) return null;
+  return rel.split('/')[0] === lang ? null : `/${fromRel}: link ${raw} leaves /${lang}/`;
+}
+
 function collect(result) {
-  const origin = new URL(BASE).origin;
-  for (const [raw, abs] of result.hrefs) {
-    if (!abs.startsWith(origin)) continue;
+  for (const [raw, abs, hreflang] of result.hrefs) {
+    const rel = internal(abs);
+    if (rel === null) continue;
+    if (rel !== rel.toLowerCase()) LINK_FAILURES.push(`/${result.path}: upper case in link ${raw}`);
+    const wrongLanguage = languageFinding(result.path, raw, abs, hreflang);
+    if (wrongLanguage && !LINK_FAILURES.includes(wrongLanguage)) LINK_FAILURES.push(wrongLanguage);
     const url = new URL(abs);
-    const path = decodeURIComponent(url.pathname);
-    // A same-origin path whose first segment this build does not have is another repository's
-    // GitHub Pages site (korczis.github.io/<repo>/): checked by check-live, not against this build.
-    const first = path.split('/').filter(Boolean)[0];
-    if (first && (PROJECT_SITES.has(first) || !existsSync(join(SITE_DIR, first)))) continue;
-    if (path !== path.toLowerCase()) LINK_FAILURES.push(`/${result.path}: upper case in link ${raw}`);
     url.hash = '';
     url.search = '';
     if (!LINKS.has(url.href)) LINKS.set(url.href, `/${result.path}`);
@@ -179,12 +285,9 @@ function collect(result) {
 }
 
 function checkLinks() {
-  const basePath = new URL(BASE).pathname;
   for (const [href, from] of LINKS) {
-    let rel = decodeURIComponent(new URL(href).pathname);
-    rel = rel.startsWith(basePath) ? rel.slice(basePath.length) : rel.replace(/^\//, '');
-    const file = join(SITE_DIR, rel === '' || rel.endsWith('/') ? `${rel}index.html` : rel);
-    if (!existsSync(file)) LINK_FAILURES.push(`404 ${href} (linked from ${from})`);
+    const rel = internal(href);
+    if (rel !== null && !existsSync(builtFile(rel))) LINK_FAILURES.push(`404 ${href} (linked from ${from})`);
   }
   return LINKS.size;
 }
@@ -295,16 +398,23 @@ async function checkPalette(browser) {
   return findings;
 }
 
-// Every visual has a keyboard twin (rule project.viz-component-layer): its "show as a list" opens
-// from the keyboard, fills with real links, and Tab reaches the first of them.
+// Every visual has a keyboard twin (rule project.viz-component-layer), on every page of PAGES that
+// has a visual: its "show as a list" opens from the keyboard, fills with real links, Tab reaches the
+// first of them, and every link resolves (V4: the addresses a visual builds in JS are checked here,
+// against the built files, and stay in the page's language).
 async function checkLists(browser) {
   const findings = [];
+  let pages = 0;
+  let links = 0;
   const context = await browser.newContext({ viewport: { width: 1280, height: 900 }, reducedMotion: 'reduce' });
   const page = await context.newPage();
-  for (const rel of ['', 'glossary/', 'work/', 'tags/']) {
+  for (const [, rel] of PAGES) {
     await page.goto(`${BASE}${rel}`, { waitUntil: 'networkidle' });
+    const boxes = await page.locator('[data-viz]:not([aria-hidden="true"])').count();
+    if (!boxes) continue;
+    pages += 1;
     const count = await page.locator('details[data-viz-list]').count();
-    if (!count) findings.push(`/${rel}: no list twin`);
+    if (count < boxes) findings.push(`/${rel}: ${boxes} visual(s) but ${count} list twin(s)`);
     for (let i = 0; i < count; i += 1) {
       const details = page.locator('details[data-viz-list]').nth(i);
       // The visual is the list's previous sibling, or inside it when the layer framed it.
@@ -316,15 +426,24 @@ async function checkLists(browser) {
       await page.keyboard.press('Enter');
       // The list fills on the toggle event, which fires after the keypress task: wait for a link.
       await details.locator('ul a[href]').first().waitFor({ timeout: 3000 }).catch(() => {});
-      const links = await details.locator('ul a[href]').count();
-      if (!links) { findings.push(`/${rel}: the ${kind} list opened empty`); continue; }
+      const hrefs = await details.locator('ul a').evaluateAll((as) => as.map((a) => [a.getAttribute('href'), a.href, a.hreflang]));
+      if (!hrefs.length) { findings.push(`/${rel}: the ${kind} list opened empty`); continue; }
       await page.keyboard.press('Tab');
       const focused = await page.evaluate((el) => el.contains(document.activeElement) && document.activeElement.tagName === 'A', await details.elementHandle());
       if (!focused) findings.push(`/${rel}: Tab from the ${kind} list summary did not reach its first link`);
+      for (const [raw, abs, hreflang] of hrefs) {
+        links += 1;
+        if (!raw || raw === '#' || /^(?:null|undefined)$|\/(?:null|undefined)(?:\/|$)/.test(raw)) { findings.push(`/${rel}: the ${kind} list has a link without an address (${raw})`); continue; }
+        const target = internal(abs);
+        if (target !== null && !existsSync(builtFile(target))) findings.push(`/${rel}: the ${kind} list links ${raw}, which the build does not have`);
+        const wrongLanguage = languageFinding(rel, raw, abs, hreflang);
+        if (wrongLanguage) findings.push(`${wrongLanguage} (the ${kind} list)`);
+      }
     }
   }
+  if (!pages) findings.push('no page of PAGES has a visual: the list check would pass vacuously');
   await context.close();
-  return findings;
+  return { findings, pages, links };
 }
 
 // Every visual that is not static is maximizable and a simulator (rule project.viz-ergonomics),
@@ -421,9 +540,16 @@ async function checkFrames(browser) {
   return { findings, visuals };
 }
 
-const browser = await chromium.launch();
 const results = [];
 let failed = 0;
+if (DERIVED.findings.length) {
+  failed += 1;
+  console.log('FAIL pages: the derived pages do not cover every template and language');
+  for (const f of DERIVED.findings) console.log(`     ${f}`);
+} else {
+  console.log(`ok   pages: ${PAGES.length} pages, one per template and language (${LANGS.join(', ')}), derived from ${SITE_DIR}/sitemap.xml`);
+}
+const browser = await chromium.launch();
 try {
   if (!ONLY || ONLY.test('palette')) {
     const palette = await checkPalette(browser).catch((error) => [`threw: ${error.message.split('\n')[0]}`]);
@@ -436,13 +562,13 @@ try {
     }
   }
   if (!ONLY || ONLY.test('lists')) {
-    const lists = await checkLists(browser).catch((error) => [`threw: ${error.message.split('\n')[0]}`]);
+    const { findings: lists, pages, links } = await checkLists(browser).catch((error) => ({ findings: [`threw: ${error.message.split('\n')[0]}`], pages: 0, links: 0 }));
     if (lists.length) {
       failed += 1;
       console.log('FAIL visual list twins');
       for (const f of lists) console.log(`     ${f}`);
     } else {
-      console.log('ok   lists: every visual on /, /glossary/, /work/, /tags/ opens as a list of links from the keyboard');
+      console.log(`ok   lists: every visual on ${pages} pages opens as a list from the keyboard; ${links} links resolve in the page's language`);
     }
   }
   if (!ONLY || ONLY.test('frames')) {
