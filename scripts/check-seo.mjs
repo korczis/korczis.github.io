@@ -31,6 +31,7 @@ const pngSize = (file) => {
 
 const sitemap = readFileSync(join(SITE, 'sitemap.xml'), 'utf8');
 const titles = new Map();
+const alternates = new Map(); // canonical -> {rel, lang -> href}
 let pages = 0;
 for (const file of html(SITE)) {
   const rel = file.slice(SITE.length + 1);
@@ -60,6 +61,8 @@ for (const file of html(SITE)) {
   const canonical = (text.match(/<link rel="canonical" href="([^"]*)"/) || [])[1];
   if (!canonical || !canonical.startsWith(`${BASE}/`)) fail(rel, `canonical ${canonical} is not absolute under ${BASE}`);
   else if (!sitemap.includes(`<loc>${canonical}</loc>`)) fail(rel, `canonical ${canonical} is not in sitemap.xml`);
+  const links = Object.fromEntries([...text.matchAll(/<link rel="alternate" hreflang="([a-z-]+)" href="([^"]*)"/g)].map((m) => [m[1], m[2]]));
+  if (canonical) alternates.set(canonical, { rel, lang: (text.match(/<html lang="([a-z]{2})/) || [])[1], links });
   for (const key of ['og:title', 'og:description', 'og:url', 'og:image', 'og:image:alt', 'twitter:card', 'twitter:image']) {
     if (!meta(text, key)) fail(rel, `no ${key}`);
   }
@@ -85,8 +88,24 @@ for (const file of html(SITE)) {
   }
 }
 
+// hreflang: every alternate is an indexable page of this build that names this page back, and a
+// page that has alternates names itself and an x-default (Google ignores one-way pairs).
+let pairs = 0;
+for (const [canonical, { rel, lang, links }] of alternates) {
+  const langs = Object.keys(links).filter((l) => l !== 'x-default');
+  if (!langs.length) continue;
+  if (links[lang] !== canonical) fail(rel, `hreflang ${lang} is ${links[lang]}, not the page itself`);
+  if (!links['x-default']) fail(rel, 'hreflang without x-default');
+  for (const l of langs.filter((x) => x !== lang)) {
+    const other = alternates.get(links[l]);
+    if (!other) fail(rel, `hreflang ${l} ${links[l]} is no indexable page of the build`);
+    else if (other.links[lang] !== canonical) fail(rel, `hreflang ${l} ${links[l]} does not name this page back`);
+    else pairs += 1;
+  }
+}
+
 if (findings.length) {
   for (const f of findings) console.error(`✗ ${f}`);
   process.exit(1);
 }
-console.log(`seo: ${pages} pages, ${titles.size} unique titles, tags, images and JSON-LD valid, PASS`);
+console.log(`seo: ${pages} pages, ${titles.size} unique titles, tags, images and JSON-LD valid, ${pairs / 2} hreflang pairs mutual, PASS`);

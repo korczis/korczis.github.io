@@ -1,6 +1,23 @@
 {%- set lp = "" %}{% if lang is defined and lang != config.default_language %}{% set lp = "/" ~ lang %}{% endif -%}
 {%- set here = current_path | default(value="/") -%}
 {%- set base = config.base_url ~ "/" -%}
+{#- A tag page's twin in the other language. Generators emit a page's tags in the same order in
+    every language (category, then languages or names), so the tag at the same position on the
+    first page's translation is this tag's translation. seo.html writes it as hreflang, the
+    navbar's language switch follows it, and check-seo.mjs proves every pair points back. -#}
+{%- set_global twin_url = "" %}{% set_global twin_lang = "" %}
+{%- if term is defined and term.pages | length > 0 %}
+{%- set tp = term.pages[0] %}{% set_global tidx = -1 %}
+{%- for t in tp.taxonomies.tags %}{% if t == term.name %}{% set_global tidx = loop.index0 %}{% endif %}{% endfor %}
+{%- if tidx >= 0 %}{% for tr in tp.translations %}{% if tr.lang != lang %}
+{%- set own_ext = ".md" %}{% if lang != config.default_language %}{% set own_ext = "." ~ lang ~ ".md" %}{% endif %}
+{#- get_page takes the default-language path and the language apart; a ".cs.md" path is ignored. #}
+{%- set op = get_page(path=tp.relative_path | replace(from=own_ext, to=".md"), lang=tr.lang) %}
+{%- if op.taxonomies.tags | length > tidx %}{% set_global twin_url = get_taxonomy_url(kind="tags", name=op.taxonomies.tags[tidx], lang=tr.lang) %}{% set_global twin_lang = tr.lang %}{% endif %}
+{%- endif %}{% endfor %}{% endif %}
+{%- elif terms is defined %}
+{%- if lang == config.default_language %}{% set_global twin_lang = "cs" %}{% set_global twin_url = config.base_url ~ "/cs/tags/" %}{% else %}{% set_global twin_lang = config.default_language %}{% set_global twin_url = config.base_url ~ "/tags/" %}{% endif %}
+{%- endif %}
 <!doctype html>
 <html lang="{{ lang | default(value='en') }}" class="no-js" data-base="{{ base }}" data-home="{{ config.base_url }}{{ lp }}/" data-lang="{{ lang | default(value='en') }}" data-github="{{ config.extra.github }}">
 <head>

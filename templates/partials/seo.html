@@ -48,6 +48,13 @@
   {%- if page is defined and page.updated %}
   <meta property="article:modified_time" content="{{ page.updated }}">
   {%- endif %}
+  {%- if twin_url and indexable %}
+  {%- for pair in [[lang, url], [twin_lang, twin_url]] %}
+  <link rel="alternate" hreflang="{{ pair[0] }}" href="{{ pair[1] }}">
+  {%- if pair[0] != lang %}<meta property="og:locale:alternate" content="{{ locales[pair[0]] | default(value='en_GB') }}">{% endif %}
+  {%- if pair[0] == config.default_language %}<link rel="alternate" hreflang="x-default" href="{{ pair[1] }}">{% endif %}
+  {%- endfor %}
+  {%- endif %}
   <meta property="og:title" content="{{ og_t }}">
   <meta property="og:description" content="{{ og_d }}">
   <meta property="og:url" content="{{ url }}">
