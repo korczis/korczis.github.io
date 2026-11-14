@@ -80,30 +80,9 @@ jobs:
     steps:
       - uses: actions/checkout@v7
       - uses: ./.github/actions/setup
-      - name: Translations are generated and complete
-        run: node scripts/build-i18n.mjs --check
-      - name: Every text in every language
-        run: node scripts/check-i18n.mjs
-      - name: Front matter matches its schema
-        run: node scripts/check-front-matter.mjs
-      - name: Catalogue, snapshot and index are well-formed
-        run: node scripts/check-data.mjs
-      - name: Category pages are current
-        run: node scripts/build-categories.mjs --check
-      - name: Work pages are current
-        run: node scripts/build-work.mjs --check
-      - name: llms.txt is current
-        run: node scripts/build-llms.mjs --check
-      - name: Open Graph images are current
-        run: node scripts/build-og.mjs --check
-      - name: site.json is current
-        run: node scripts/build-site-json.mjs --check
-      - name: Every visual goes through the component layer
-        run: node scripts/check-viz-layer.mjs
-      - name: Build (internal links are errors)
-        run: npm run build
-      - name: SEO derived from front matter (titles, descriptions, OG, JSON-LD, sitemap)
-        run: node scripts/check-seo.mjs
+      # Every offline gate, from the one list (scripts/gates.mjs); ci: false gates say why they skip.
+      - name: Every gate (scripts/gates.mjs)
+        run: node scripts/gates.mjs run --ci
       - name: Stamp the revision
         run: printf '%s\n' "$GITHUB_SHA" > public/revision.txt
       - name: Accessibility, layout, visuals and links (axe-core WCAG 2.2 AA, CLS, overflow)

@@ -1,79 +1,58 @@
 #!/usr/bin/env bash
-# Runs locally the same gates CI runs (.github/workflows/ci.yml), in the same order, and stops at
-# the first failure. The UI audit builds the site into a temporary directory, serves it on a free
-# port (never one another session uses) and launches the browser once.
+# Runs locally every gate of the one manifest (scripts/gates.mjs: the list CI runs, plus the
+# commit range, the Flowbite scanner and majordomus doctor), in order, and stops at the first
+# failure; then the browser audit. The audit builds the site into a temporary directory, serves
+# it on a free port (never one another session uses), launches the browser once and always stops
+# its server (trap), also when the audit fails or is interrupted.
 #
-# usage: npm run verify                          every gate
+# usage: npm run verify                          every gate, then the browser audit
 #        npm run verify -- --fast                every gate except the browser audit
+#        npm run verify -- --from <id> | --only <id,...> | --skip <id,...>
+#                                                passed to node scripts/gates.mjs run (ids:
+#                                                node scripts/gates.mjs list); no browser audit
 #        npm run verify -- --audit-only [args]   only the browser audit (args go to audit-ui.mjs,
-#                                                e.g. --shots <dir>)
+#                                                e.g. --shots <dir>; CI runs it this way)
+#        npm run verify -- --help                this text; any other flag exits 2
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
 fast=0
 audit_only=0
-case "${1:-}" in
-  --fast) fast=1; shift ;;
-  --audit-only) audit_only=1; shift ;;
-esac
-
-step() { printf '\n== %s\n' "$1"; }
-run() { step "$1"; shift; "$@"; }
-
-# Every gate reads node_modules, so a checkout whose install is behind package-lock.json judges with
-# the wrong tools: a dependency landed from another worktree (esbuild, 2026-11-14) made this
-# checkout's pre-push die with ERR_MODULE_NOT_FOUND halfway through. Say so first, by name.
-step "Installed dependencies match package-lock.json"
-if ! npm ls --depth=0 >/dev/null 2>&1; then
-  npm ls --depth=0 2>&1 | grep -E 'missing|invalid|ERR' | head -5
-  echo "node_modules is behind package-lock.json: run npm ci in $(pwd), then verify again"
-  exit 1
-fi
-echo "every locked dependency is installed at its locked version"
+gate_args=()
+while [ $# -gt 0 ]; do
+  case "$1" in
+    --help|-h) sed -n '2,/^set -euo/p' "$0" | sed -e '$d' -e 's/^# \{0,1\}//'; exit 0 ;;
+    --fast) fast=1; shift ;;
+    --audit-only) audit_only=1; shift; break ;;
+    --from|--only|--skip)
+      [ $# -ge 2 ] || { echo "verify-all.sh: $1 needs a gate id; run with --help" >&2; exit 2; }
+      gate_args+=("$1" "$2"); shift 2 ;;
+    *) echo "verify-all.sh: unknown flag $1; run with --help" >&2; exit 2 ;;
+  esac
+done
 
 if [ "$audit_only" = 0 ]; then
-run "Conventional commits on this branch" scripts/lint-commits.sh "$(git merge-base HEAD origin/master 2>/dev/null || git rev-list --max-parents=0 HEAD | tail -1)..HEAD"
-run "Translations are generated and complete" node scripts/build-i18n.mjs --check
-run "Every text in every language" node scripts/check-i18n.mjs
-run "Front matter matches its schema" node scripts/check-front-matter.mjs
-run "Catalogue, snapshot and index are well-formed" node scripts/check-data.mjs
-run "Category pages are current" node scripts/build-categories.mjs --check
-run "Work pages are current" node scripts/build-work.mjs --check
-run "Glossary pages are current" node scripts/build-glossary.mjs --check
-run "Every page is an article with glossary terms; every term is used" node scripts/check-glossary.mjs
-run "llms.txt is current" node scripts/build-llms.mjs --check
-run "Open Graph images are current" node scripts/build-og.mjs --check
-run "site.json is current" node scripts/build-site-json.mjs --check
-run "Every visual goes through the component layer" node scripts/check-viz-layer.mjs
-run "Build (internal links are errors)" npm run --silent build
-run "SEO derived from front matter (titles, descriptions, OG, JSON-LD, sitemap)" node scripts/check-seo.mjs
-# The Flowbite Pro scanner lives on the owner's machine (~/.claude/skills/flowbite-pro). Where it is
-# absent (a runner, e.g. the refresh's pre-push), say so: majordomus doctor below judges the licence
-# there, as CI does.
-flowbite_scanner="$HOME/.claude/skills/flowbite-pro/verify.mjs"
-if [ -f "$flowbite_scanner" ]; then
-  run "Flowbite Pro" node "$flowbite_scanner" .
+  node scripts/gates.mjs run ${gate_args[@]+"${gate_args[@]}"}
+  if [ "$fast" = 1 ] || [ ${#gate_args[@]} -gt 0 ]; then
+    printf '\nverify: the gates passed; no browser audit (%s)\n' "$([ "$fast" = 1 ] && echo --fast || echo 'a gate selection')"
+    exit 0
+  fi
 else
-  step "Flowbite Pro"
-  echo "skipped: no scanner at $flowbite_scanner; majordomus doctor judges the licence here"
-fi
-run "Majordomus supervision" majordomus doctor
+  node scripts/gates.mjs run --only deps
 fi
 
-if [ "$fast" = 1 ]; then
-  printf '\nverify: every gate except the browser audit passed (--fast)\n'
-  exit 0
-fi
-
-step "Accessibility, layout, visuals and links (axe-core WCAG 2.2 AA, CLS, overflow)"
+printf '\n== %s\n' "Accessibility, layout, visuals and links (axe-core WCAG 2.2 AA, CLS, overflow)"
 port=$(python3 -c 'import socket; s=socket.socket(); s.bind(("127.0.0.1", 0)); print(s.getsockname()[1]); s.close()')
 root=$(mktemp -d "${TMPDIR:-/tmp}/korczis-hub-verify.XXXXXX")
 server=""
-cleanup() { [ -n "$server" ] && kill "$server" 2>/dev/null || true; rm -rf "$root"; }
+cleanup() { if [ -n "$server" ]; then kill "$server" 2>/dev/null || true; fi; rm -rf "$root"; }
 trap cleanup EXIT
+trap 'exit 130' INT TERM
 npm run --silent assets
 zola build --base-url "http://127.0.0.1:$port" --output-dir "$root/site" >/dev/null
-(cd "$root/site" && exec python3 -m http.server "$port" --bind 127.0.0.1 >/dev/null 2>&1) &
+# The NDA gate also reads the build the audit serves (once the experience lane's script exists).
+if [ -f scripts/check-nda.mjs ]; then node scripts/check-nda.mjs --site "$root/site"; fi
+python3 -m http.server "$port" --bind 127.0.0.1 --directory "$root/site" >/dev/null 2>&1 &
 server=$!
 for _ in $(seq 1 50); do curl -fs -o /dev/null "http://127.0.0.1:$port/" && break; sleep 0.2; done
 BASE_URL="http://127.0.0.1:$port/" SITE_DIR="$root/site" node scripts/audit-ui.mjs "$@"

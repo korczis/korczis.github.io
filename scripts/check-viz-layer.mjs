@@ -11,6 +11,9 @@ import { readdirSync, readFileSync } from 'node:fs';
 import { parse } from 'smol-toml';
 import { basename, dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { cliArgs } from './lib/cli.mjs';
+
+cliArgs();
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const findings = [];

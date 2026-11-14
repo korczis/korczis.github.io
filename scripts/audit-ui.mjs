@@ -11,21 +11,19 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { createRequire } from 'node:module';
 import { join } from 'node:path';
+import { cliArgs } from './lib/cli.mjs';
 
+// Flags first: --help or a typo must answer before a browser is looked for.
+const opts = cliArgs({ '--json': '<file>', '--shots': '<dir>', '--only': '<regexp>' });
 const require = createRequire(import.meta.url);
 const { chromium } = require(process.env.PLAYWRIGHT || 'playwright-core');
 const AXE = readFileSync(require.resolve('axe-core/axe.min.js'), 'utf8');
 
 const BASE = (process.env.BASE_URL || 'http://127.0.0.1:1111/').replace(/\/?$/, '/');
 const SITE_DIR = process.env.SITE_DIR || 'public';
-const args = process.argv.slice(2);
-const opt = (name) => {
-  const i = args.indexOf(name);
-  return i === -1 ? null : args[i + 1];
-};
-const JSON_OUT = opt('--json');
-const SHOTS = opt('--shots');
-const ONLY = opt('--only') ? new RegExp(opt('--only')) : null;
+const JSON_OUT = opts.json;
+const SHOTS = opts.shots;
+const ONLY = opts.only ? new RegExp(opts.only) : null;
 const TAGS = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'];
 const FULL_RUNS = [[375, 'light'], [375, 'dark'], [1440, 'light'], [1440, 'dark']];
 const LAYOUT_WIDTHS = [320, 768, 1024, 1920];
