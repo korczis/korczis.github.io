@@ -43,7 +43,7 @@
 
 {#- Flowbite Pro project-portfolio card, adapted: no screenshot, a category icon instead; the
     badges and the metadata line are measured (data/github.json), the words are curated. -#}
-{% component project_card(p, f, label: string, anchor: bool = false, lang: string = "en") %}
+{% component project_card(p, f, label: string, lang: string, anchor: bool = false) %}
 {%- set sfx = "" %}{% if lang != "en" %}{% set sfx = "_" ~ lang %}{% endif -%}
 <article {% if anchor %}id="{{ p.repo }}" {% endif %}data-card
   data-search="{{ p.name }} {{ p["tagline" ~ sfx] }} {{ p["summary" ~ sfx] }} {{ p.stack | join(sep=' ') }} {{ label }}"
@@ -113,7 +113,7 @@
 {% endcomponent %}
 
 {#- Flowbite Pro page header, Variant A (admin dashboard 1.1.1, section 5): breadcrumb, title, lead. -#}
-{% component page_header(title: string, lead: string = "", parent: string = "", parent_url: string = "", icon: string = "", lang: string = "en") %}
+{% component page_header(title: string, lang: string, lead: string = "", parent: string = "", parent_url: string = "", icon: string = "") %}
 <div class="block items-center justify-between border-b border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800 sm:flex lg:mt-1.5">
   <div class="mb-1 w-full">
     <nav class="mb-5 flex" aria-label="{{ trans(key="breadcrumb", lang=lang) }}">
@@ -149,7 +149,7 @@
 
 {#- One catalogue row: Flowbite Pro advanced table (advanced-tables/project-management), with the
     same data-* the filter reads from a card. -#}
-{% component project_row(p, f, label: string, lang: string = "en") %}
+{% component project_row(p, f, label: string, lang: string) %}
 {%- set sfx = "" %}{% if lang != "en" %}{% set sfx = "_" ~ lang %}{% endif -%}
 <tr data-row
   data-search="{{ p.name }} {{ p["tagline" ~ sfx] }} {{ p["summary" ~ sfx] }} {{ p.stack | join(sep=' ') }} {{ label }}"

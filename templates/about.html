@@ -25,7 +25,7 @@
         <div>
           <h2 id="profile-title" class="text-xl font-bold text-gray-900 dark:text-white">{{ gh.profile.name }}</h2>
           <p class="font-mono text-sm text-primary-700 dark:text-primary-400">{{ gh.profile.login }}</p>
-          <p class="text-sm text-gray-600 dark:text-gray-400">{{ trans(key="software_engineer", lang=lang) | safe }} {{ gh.profile.location }}</p>
+          <p class="text-sm text-gray-600 dark:text-gray-400">{{ trans(key="software_engineer", lang=lang) | safe }} {{ config.extra["location" ~ sfx] }}</p>
           {%- if gh.profile.hireable %}
           <span class="mt-1 inline-flex items-center rounded bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800 dark:bg-green-900 dark:text-green-300">{{ trans(key="open_to_work", lang=lang) | safe }}</span>
           {%- endif %}

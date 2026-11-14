@@ -264,13 +264,9 @@ cs = "je venku"
 en = "Software that proves its&nbsp;work."
 cs = "Software, který svou práci dokládá."
 
-[i_build_tools_that_make_ai]
-en = "I build tools that make AI agents prove what they did, honest scientific instruments in the browser, and knowledge bases you can check. Engineer in"
-cs = "Stavím nástroje, které nutí AI agenty doložit, co udělali, poctivé vědecké přístroje v prohlížeči a znalostní báze, které si můžete ověřit. Inženýr z"
-
-[on_github_since_2]
-en = ", on GitHub since"
-cs = ", na GitHubu od roku"
+[hero_lead]
+en = "I build tools that make AI agents prove what they did, honest scientific instruments in the browser, and knowledge bases you can check. Engineer {location}, on GitHub since {year}."
+cs = "Stavím nástroje, které nutí AI agenty doložit, co udělali, poctivé vědecké přístroje v prohlížeči a znalostní báze, které si můžete ověřit. Inženýr {location}, na GitHubu od roku {year}."
 
 [explore]
 en = "Explore"

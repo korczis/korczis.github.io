@@ -10,7 +10,7 @@
 {%- set link = "font-medium text-primary-700 hover:underline dark:text-primary-400" -%}
 {%- for x in rc.repos %}{% if x.name == page.extra.repo %}{% set_global r = x %}{% endif %}{% endfor -%}
 {%- if r.hosts.github is defined %}{% set primary = r.hosts.github %}{% else %}{% set primary = r.hosts.gitlab %}{% endif -%}
-{{ <page_header title={page.title} lead={page.description} parent={trans(key="recent_work", lang=lang)} parent_url={base ~ "work/"} icon={r.category} /> }}
+{{ <page_header title={page.title} lead={page.description} parent={trans(key="recent_work", lang=lang)} parent_url={base ~ "work/"} icon={r.category} lang={lang} /> }}
 
 <div class="space-y-4 px-4 pb-2 pt-6">
   <div class="grid grid-cols-1 gap-4 xl:grid-cols-3">

@@ -44,7 +44,7 @@
             {%- set n = six.by_category[key] | default(value=0) %}
             {%- set path = "/projects/" ~ key ~ "/" %}
             <li>
-              <a href="{{ config.base_url }}{{ path }}" class="{{ item }}{% if here == lp ~ path %}{{ on }}{% endif %}"{% if here == lp ~ path %} aria-current="page"{% endif %}>
+              <a href="{{ config.base_url }}{{ lp }}{{ path }}" class="{{ item }}{% if here == lp ~ path %}{{ on }}{% endif %}"{% if here == lp ~ path %} aria-current="page"{% endif %}>
                 {{ <category_icon key={key} class={ico} /> }}<span class="ml-3 flex-1 text-sm leading-tight">{{ c["name" ~ sfx] }}</span><span class="{{ badge }}">{{ n }}</span>
               </a>
             </li>
