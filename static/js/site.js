@@ -95,6 +95,16 @@
       ramp: [0, 1, 2, 3, 4].map((step) => token(`--hub-ramp-${step}`)),
       art: [0, 1, 2, 3, 4].map((step) => token(`--hub-art-${step}`)),
       glow: token('--hub-glow'),
+      // The night sky behind a tone="night" visual is dark in both themes, so its inks are one set.
+      night: {
+        ink: token('--hub-night-ink'),
+        text: token('--hub-night-text'),
+        muted: token('--hub-night-muted'),
+        dust: token('--hub-night-dust'),
+        line: token('--hub-night-line'),
+        shadow: token('--hub-night-shadow'),
+      },
+      live: token('--hub-live'),
       font: getComputedStyle(root).getPropertyValue('--font-sans').trim() || 'system-ui, sans-serif',
       alpha,
     };
@@ -307,8 +317,12 @@
   // handle.controls() → [{ key, type: 'range'|'select'|'toggle'|'play'|'action', label, value,
   // min, max, step, options: [{ value, label }], format(v), icon, set(v) }]; labels arrive
   // translated (the visual calls t()). The panel opens from the sliders button; play sits in the bar.
+  // A value the simulation changes by itself (play advancing the year, a drag changing the tilt)
+  // goes back through ctx.reflect(key, value): the control and the address follow, set() is not
+  // called again.
   function controls(state, handle) {
     const defs = typeof handle.controls === 'function' ? handle.controls() : [];
+    state.reflectors = new Map();
     if (!defs.length) return;
     const params = defs.filter((d) => d.type === 'range' || d.type === 'select' || d.type === 'toggle');
     const actions = defs.filter((d) => d.type === 'action');
@@ -327,6 +341,14 @@
         def.set(on);
       };
       b.setAttribute('aria-pressed', playing ? 'true' : 'false');
+      state.reflectors.set(def.key, (on) => {
+        playing = Boolean(on);
+        b.innerHTML = icon(playing ? 'pause' : 'play');
+        b.title = t(playing ? 'js_viz_pause' : 'js_viz_play');
+        b.setAttribute('aria-label', b.title);
+        b.setAttribute('aria-pressed', playing ? 'true' : 'false');
+        writeParam(key, playing === (def.value !== false) ? null : (playing ? 1 : 0));
+      });
       state.bar.prepend(b);
       const raw = readParam(key);
       if (raw !== null && (raw !== '0') !== playing) setPlaying(raw !== '0', false);
@@ -368,6 +390,11 @@
         input.value = def.value;
         out.textContent = show(def.value);
         input.addEventListener('input', () => apply(Number(input.value), true));
+        state.reflectors.set(def.key, (v) => {
+          input.value = v;
+          out.textContent = show(v);
+          writeParam(key, v === def.value ? null : v);
+        });
         const v = fromUrl(def, readParam(key));
         if (v !== undefined && v !== def.value) apply(v, false);
       } else if (def.type === 'select') {
@@ -376,6 +403,10 @@
         input.value = String(def.value);
         input.addEventListener('change', () => {
           def.set(input.value);
+          writeParam(key, input.value === String(def.value) ? null : input.value);
+        });
+        state.reflectors.set(def.key, (v) => {
+          input.value = String(v);
           writeParam(key, input.value === String(def.value) ? null : input.value);
         });
         const v = fromUrl(def, readParam(key));
@@ -389,6 +420,10 @@
         input.checked = Boolean(def.value);
         input.addEventListener('change', () => {
           def.set(input.checked);
+          writeParam(key, input.checked === Boolean(def.value) ? null : (input.checked ? 1 : 0));
+        });
+        state.reflectors.set(def.key, (v) => {
+          input.checked = Boolean(v);
           writeParam(key, input.checked === Boolean(def.value) ? null : (input.checked ? 1 : 0));
         });
         const v = fromUrl(def, readParam(key));
@@ -460,7 +495,8 @@
     try {
       await lib(spec.lib);
       const source = box.dataset.source ? data(box.dataset.source) : null;
-      const ctx = { palette, reducedMotion, isDark, motion, go, link, escape, hash, t, id: vizId(box) };
+      const reflect = (key, value) => frames.get(box)?.reflectors?.get(key)?.(value);
+      const ctx = { palette, reducedMotion, isDark, motion, go, link, escape, hash, t, reflect, id: vizId(box) };
       const handle = (await spec.mount(box, source, ctx)) || {};
       mounted.set(box, handle);
       list(box, handle);
@@ -676,6 +712,10 @@
       },
       hide() {
         tip.classList.remove('is-on');
+      },
+      // destroy() of a visual removes its tip with it.
+      remove() {
+        tip.remove();
       },
     };
   }

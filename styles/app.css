@@ -65,6 +65,14 @@
   --hub-art-3: var(--color-violet-500);
   --hub-art-4: var(--color-fuchsia-500);
   --hub-glow: var(--color-primary-400);
+  /* The night sky (tone = "night") is dark in both themes: one set of inks for it. */
+  --hub-night-ink: var(--color-white);
+  --hub-night-text: var(--color-gray-200);
+  --hub-night-muted: var(--color-gray-400);
+  --hub-night-dust: var(--color-slate-200);
+  --hub-night-line: var(--color-slate-300);
+  --hub-night-shadow: var(--color-gray-950);
+  --hub-live: var(--color-emerald-400);
 }
 
 .dark {
