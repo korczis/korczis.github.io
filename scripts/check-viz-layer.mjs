@@ -4,7 +4,9 @@
 //  - each such file registers exactly one visual, KorczisHub.viz('<name>', …), named after it;
 //  - every data-viz="<name>" in templates/ has a registered visual, and the template that uses
 //    it loads js/viz/<name>.js;
-//  - no template loads a script or stylesheet from another origin (everything is self-hosted).
+//  - no template loads a script or stylesheet from another origin (everything is self-hosted);
+//  - every ECharts series type a visual draws is registered in scripts/lib/echarts-entry.mjs (the
+//    site ships a partial ECharts build, scripts/vendor.mjs).
 import { readdirSync, readFileSync } from 'node:fs';
 import { parse } from 'smol-toml';
 import { basename, dirname, join } from 'node:path';
@@ -36,6 +38,15 @@ for (const file of walk(join(ROOT, 'static/js')).filter((f) => f.endsWith('.js')
       findings.push(`${rel}: must register exactly one visual named '${expected}' (found ${names.join(', ') || 'none'})`);
     }
     names.forEach((n) => registered.add(n));
+    if (/lib:\s*'echarts'/.test(text)) {
+      const entry = readFileSync(join(ROOT, 'scripts/lib/echarts-entry.mjs'), 'utf8').match(/echarts\.use\(\[([^\]]*)\]/)?.[1] ?? '';
+      const series = text.match(/series:\s*\[[\s\S]*$/)?.[0] ?? '';
+      for (const [, type] of series.matchAll(/type:\s*'(\w+)'/g)) {
+        const chart = `${type[0].toUpperCase()}${type.slice(1)}Chart`;
+        if (!new RegExp(`\\b${chart}\\b`).test(entry)) findings.push(`${rel}: draws an ECharts '${type}' series, but scripts/lib/echarts-entry.mjs does not register ${chart}`);
+      }
+      if (/tooltip:/.test(text) && !/\bTooltipComponent\b/.test(entry)) findings.push(`${rel}: uses an ECharts tooltip, but scripts/lib/echarts-entry.mjs does not register TooltipComponent`);
+    }
   }
 }
 

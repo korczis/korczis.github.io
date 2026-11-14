@@ -1,16 +1,17 @@
 // Command palette (Alpine.js): ⌘K, Ctrl+K or "/" opens it anywhere (not while typing in a field),
 // the input is an ARIA combobox over a listbox, arrows move, Enter opens, Escape or a click
-// outside closes and focus returns where it was. The index is #palette-data, derived at build.
+// outside closes and focus returns where it was. The index is <home>/palette.json, derived at
+// build (templates/palette.json) and fetched once, on first open.
 document.addEventListener('alpine:init', () => {
   Alpine.data('palette', () => ({
     open: false,
     query: '',
     active: 0,
     items: [],
+    loading: null,
     returnTo: null,
 
     init() {
-      this.items = KorczisHub.data('palette-data');
       window.addEventListener('keydown', (event) => {
         const typing = /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement?.tagName) || document.activeElement?.isContentEditable;
         if ((event.key === 'k' && (event.metaKey || event.ctrlKey)) || (event.key === '/' && !typing && !this.open)) {
@@ -37,7 +38,16 @@ document.addEventListener('alpine:init', () => {
       return scored.slice(0, 12).map((s) => s.item);
     },
 
+    load() {
+      this.loading ??= fetch(`${document.documentElement.dataset.home}palette.json`)
+        .then((response) => (response.ok ? response.json() : Promise.reject(new Error(`palette.json: ${response.status}`))))
+        .then((items) => { this.items = items; })
+        .catch((error) => { this.loading = null; console.warn(error.message); });
+      return this.loading;
+    },
+
     show() {
+      this.load();
       if (this.open) return;
       this.returnTo = document.activeElement;
       this.query = '';

@@ -5,7 +5,9 @@ default_language = "en"
 compile_sass = false
 minify_html = false
 build_search_index = false
-generate_feeds = false
+# The only "feed" is the command palette's index (templates/palette.json), one file per language.
+generate_feeds = true
+feed_filenames = ["palette.json"]
 author = "Tomas Korcak"
 taxonomies = [{ name = "tags", feed = false }]
 
@@ -30,6 +32,9 @@ majordomus_url = "https://majordomus.dev"
 majordomus_build = "https://majordomus.dev/build.json"
 
 [languages.cs]
+# The only "feed" is the command palette's index (templates/palette.json), one file per language.
+generate_feeds = true
+feed_filenames = ["palette.json"]
 title = "Tomáš Korčák"
 description = "Software, který svou práci dokládá: AI agenti, kteří prokazují výsledky, poctivé přístroje v prohlížeči, ověřitelné znalosti."
 taxonomies = [{ name = "tags", feed = false }]
