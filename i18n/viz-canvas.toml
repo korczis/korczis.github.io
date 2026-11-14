@@ -1,0 +1,150 @@
+# The canvas and force simulators (static/js/viz/constellation.js, pulse.js, atlas.js): their
+# parameters, filters and the texts they draw. A text with a count has its plural forms
+# (key__one, key__few, key__other), picked by KorczisHub.t through Intl.PluralRules.
+
+# constellation: the galaxy of every repository
+[js_constellation_year]
+en = "Year"
+cs = "Rok"
+
+[js_constellation_now]
+en = "{year} (today)"
+cs = "{year} (dnes)"
+
+[js_constellation_speed]
+en = "Rotation speed"
+cs = "Rychlost otáčení"
+
+[js_constellation_still]
+en = "Still"
+cs = "Stojí"
+
+[js_constellation_tilt]
+en = "Tilt"
+cs = "Náklon"
+
+[js_constellation_filter]
+en = "Show"
+cs = "Zobrazit"
+
+[js_constellation_all]
+en = "Every repository"
+cs = "Všechny repozitáře"
+
+[js_constellation_category]
+en = "Category: {name} ({n})"
+cs = "Kategorie: {name} ({n})"
+
+[js_constellation_language]
+en = "Language: {name} ({n})"
+cs = "Jazyk: {name} ({n})"
+
+[js_constellation_repos__one]
+en = "{n} repository"
+cs = "{n} repozitář"
+
+[js_constellation_repos__few]
+en = "{n} repositories"
+cs = "{n} repozitáře"
+
+[js_constellation_repos__other]
+en = "{n} repositories"
+cs = "{n} repozitářů"
+
+# pulse: the heartbeat of commits and events
+[js_pulse_window]
+en = "Time window"
+cs = "Časové okno"
+
+[js_pulse_window_all]
+en = "Everything"
+cs = "Vše"
+
+[js_pulse_lane_filter]
+en = "Lane"
+cs = "Pruh"
+
+[js_pulse_lanes_all]
+en = "Every lane"
+cs = "Všechny pruhy"
+
+[js_pulse_lane]
+en = "{name} ({n})"
+cs = "{name} ({n})"
+
+[js_pulse_speed]
+en = "Replay speed"
+cs = "Rychlost přehrávání"
+
+[js_pulse_quiet]
+en = "No activity in this window."
+cs = "V tomto okně se nic nedělo."
+
+[js_pulse_beats__one]
+en = "{n} beat in view"
+cs = "{n} úder v zobrazení"
+
+[js_pulse_beats__few]
+en = "{n} beats in view"
+cs = "{n} údery v zobrazení"
+
+[js_pulse_beats__other]
+en = "{n} beats in view"
+cs = "{n} úderů v zobrazení"
+
+# atlas: the map of concepts
+[js_atlas_distance]
+en = "Link distance"
+cs = "Délka vazeb"
+
+[js_atlas_repulsion]
+en = "Repulsion"
+cs = "Odpuzování"
+
+[js_atlas_padding]
+en = "Collision padding"
+cs = "Odstup při srážce"
+
+[js_atlas_kind]
+en = "Kind of term"
+cs = "Druh pojmu"
+
+[js_atlas_kind_all]
+en = "Every kind"
+cs = "Všechny druhy"
+
+[js_atlas_depth]
+en = "Neighbourhood"
+cs = "Okolí"
+
+[js_atlas_depth_n__one]
+en = "{n} step away"
+cs = "{n} krok daleko"
+
+[js_atlas_depth_n__few]
+en = "{n} steps away"
+cs = "{n} kroky daleko"
+
+[js_atlas_depth_n__other]
+en = "{n} steps away"
+cs = "{n} kroků daleko"
+
+[js_atlas_depth_all]
+en = "The whole map"
+cs = "Celá mapa"
+
+[js_atlas_reheat]
+en = "Reheat"
+cs = "Znovu rozpohybovat"
+
+[js_atlas_fit]
+en = "Reset view"
+cs = "Výchozí pohled"
+
+[js_atlas_used_in]
+en = "Named in: {list}"
+cs = "Zmíněno v: {list}"
+
+[js_atlas_uses]
+en = "names {term}"
+cs = "zmiňuje {term}"
