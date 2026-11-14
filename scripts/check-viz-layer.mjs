@@ -167,9 +167,13 @@ for (const file of walk(join(ROOT, 'static/js')).filter((f) => f.endsWith('.js')
 
   if (reg.lib === 'echarts') {
     const entry = readFileSync(join(ROOT, 'scripts/lib/echarts-entry.mjs'), 'utf8').match(/echarts\.use\(\[([^\]]*)\]/)?.[1] ?? '';
+    // Only a series object's own `type` names a chart; a nested one (lineStyle, markLine, areaStyle)
+    // is a style, not a series.
     for (const s of all.filter((n) => n.type === 'Property' && keyName(n) === 'series')) {
-      for (const t of nodes(s.value)) {
-        if (t.type !== 'Property' || keyName(t) !== 'type' || t.value.type !== 'Literal' || typeof t.value.value !== 'string') continue;
+      const objects = s.value.type === 'ArrayExpression' ? s.value.elements : [s.value];
+      for (const o of objects.filter((e) => e && e.type === 'ObjectExpression')) {
+        const t = o.properties.find((p) => p.type === 'Property' && keyName(p) === 'type');
+        if (!t || t.value.type !== 'Literal' || typeof t.value.value !== 'string') continue;
         const chart = `${t.value.value[0].toUpperCase()}${t.value.value.slice(1)}Chart`;
         if (!new RegExp(`\\b${chart}\\b`).test(entry)) findings.push(`${rel}: draws an ECharts '${t.value.value}' series, but scripts/lib/echarts-entry.mjs does not register ${chart}`);
       }
