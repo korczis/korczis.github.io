@@ -30,4 +30,4 @@ tone = "night"
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 23. dubna 2024; poslední [commit](@/glossary/commit.cs.md) je z 24. dubna 2024. Zní „Disable build image“. Patří tak mezi projekty aktivní za posledních 48 měsíců.
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 27 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…), ze snímku obnovovaného každých šest hodin. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 27 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…), ze snímku obnovovaného každých 6 hodin. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

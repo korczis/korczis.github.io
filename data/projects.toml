@@ -22,8 +22,18 @@
 #   window   how many of the most recently active repositories the landing's skillset charts read
 [index]
 window = 100
+# how many of the most used languages (data/index.json) count as the top ones: category articles
+# name them, and a hand page may name only these (check-front-matter)
+top_languages = 4
 mirrors = ["foremost", "libnids", "libnet", "ucl", "upx", "ev", "petitboot", "libtwin", "mongo-cxx-driver", "cyclos", "raspberry-pi", "tsa-keys"]
 hidden = ["atp", "microcrawler-crawler-youjizz-com", "the-shit", "chujovinky", "empty-repo"]
+
+# The recent window (scripts/fetch-recent.mjs, data/recent.json, the /work/ pages): every original
+# repository with a commit in the last periods[-1] months, each in the smallest period (months)
+# that holds its last commit, with its latest `commits` commits.
+[recent]
+periods = [12, 24, 48]
+commits = 30
 
 # How scripts/fetch-index.mjs infers the category of every public repository that is not curated
 # (scripts/lib/repos.mjs inferCategory). Every keyword of every category is scored against the

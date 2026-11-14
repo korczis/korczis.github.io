@@ -78,28 +78,28 @@ en = "Every project with a commit in the last {max} months, by period ({periods}
 cs = "Každý projekt s commitem za posledních {max} měsíců, podle období ({periods}): {n} repozitářů na GitHubu a GitLabu, každý s vlastní stránkou."
 
 [derive_work_list_og__one]
-en = "{n} project, the last four years."
-cs = "{n} projekt za poslední čtyři roky."
+en = "{n} project, {span}."
+cs = "{n} projekt {span}."
 
 [derive_work_list_og__few]
-en = "{n} projects, the last four years."
-cs = "{n} projekty za poslední čtyři roky."
+en = "{n} projects, {span}."
+cs = "{n} projekty {span}."
 
 [derive_work_list_og__other]
-en = "{n} projects, the last four years."
-cs = "{n} projektů za poslední čtyři roky."
+en = "{n} projects, {span}."
+cs = "{n} projektů {span}."
 
 [derive_work_list_keyword]
-en = "Tomas Korcak recent work"
-cs = "nedávná práce Tomáše Korčáka"
+en = "{author} recent work"
+cs = "{author}: nedávná práce"
 
 [derive_work_list_article]
 en = """
-This page answers the question of what is being worked on now. A project belongs here by the date of its last [[commit|commit]] on the default branch, never by when its host last saw activity, and falls into one of three periods: {periods} months.
+This page answers the question of what is being worked on now. A project belongs here by the date of its last [[commit|commit]] on the default branch, never by when its host last saw activity, and falls into one of the periods of {periods} months.
 
 Every project has its own page with a derived article, measured facts and the concepts it builds on. [[fork|Forks]] and [[mirror|mirrors]] are left out: this is the owner's own work only."""
 cs = """
-Tato stránka odpovídá na otázku, na čem se pracuje teď. Projekt sem patří podle data svého posledního [[commit|commitu]] ve výchozí větvi, ne podle toho, kdy na hostingu naposledy něco proběhlo, a řadí se do tří období: {periods} měsíců.
+Tato stránka odpovídá na otázku, na čem se pracuje teď. Projekt sem patří podle data svého posledního [[commit|commitu]] ve výchozí větvi, ne podle toho, kdy na hostingu naposledy něco proběhlo, a řadí se do jednoho z období {periods} měsíců.
 
 Každý projekt má vlastní stránku s odvozeným článkem, změřenými fakty a pojmy, na kterých stojí. [[fork|Forky]] a [[mirror|mirrory]] tu nejsou: jde jen o vlastní práci."""
 
@@ -172,8 +172,56 @@ en = ", refreshed live from your browser on GitHub"
 cs = "; na GitHubu se obnovuje živě z vašeho prohlížeče"
 
 [derive_work_refresh_snapshot]
-en = ", from a snapshot refreshed every six hours"
-cs = ", ze snímku obnovovaného každých šest hodin"
+en = ", from a snapshot refreshed {cadence}"
+cs = ", ze snímku obnovovaného {cadence}"
+
+# How often .github/workflows/refresh.yml re-measures (derive.mjs cadence(), from its cron)
+
+[derive_cadence_hours__one]
+en = "every hour"
+cs = "každou hodinu"
+
+[derive_cadence_hours__few]
+en = "every {n} hours"
+cs = "každé {n} hodiny"
+
+[derive_cadence_hours__other]
+en = "every {n} hours"
+cs = "každých {n} hodin"
+
+[derive_cadence_days__other]
+en = "every day"
+cs = "každý den"
+
+[derive_cadence_weeks__other]
+en = "every week"
+cs = "každý týden"
+
+# The span of the recent window (data/recent.json periods)
+
+[derive_last_years__one]
+en = "the last year"
+cs = "za poslední rok"
+
+[derive_last_years__few]
+en = "the last {n} years"
+cs = "za poslední {n} roky"
+
+[derive_last_years__other]
+en = "the last {n} years"
+cs = "za posledních {n} let"
+
+[derive_last_months__one]
+en = "the last month"
+cs = "za poslední měsíc"
+
+[derive_last_months__few]
+en = "the last {n} months"
+cs = "za poslední {n} měsíce"
+
+[derive_last_months__other]
+en = "the last {n} months"
+cs = "za posledních {n} měsíců"
 
 # The glossary (scripts/build-glossary.mjs)
 

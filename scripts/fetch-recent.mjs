@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-// Derives data/recent.json: the original repositories with a commit in the last 48 months, in
-// detail, each placed in the smallest period (12, 24 or 48 months) that holds its last commit. "Recent" is the date of the last commit, never the host's activity date (GitLab stamps
+// Derives data/recent.json: the original repositories with a commit in the recent window, in
+// detail, each placed in the smallest period of data/projects.toml [recent] that holds its last commit. "Recent" is the date of the last commit, never the host's activity date (GitLab stamps
 // every imported project with the import day). For each: the last 30 commits, language breakdown, README
 // excerpt, topics, links. Reads data/index.json for the candidates; asks GitHub and GitLab
 // through their CLIs (`gh api`, `glab api`).
@@ -17,7 +17,7 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { promisify } from 'node:util';
 import { GitLabBudgetError, gitlabClient } from './lib/gitlab.mjs';
-import { identity, pool } from './lib/derive.mjs';
+import { identity, pool, readToml } from './lib/derive.mjs';
 
 const run = promisify(execFile);
 if (process.argv.includes('--check') && !process.argv.includes('--derive')) {
@@ -27,8 +27,9 @@ if (process.argv.includes('--check') && !process.argv.includes('--derive')) {
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const TARGET = join(ROOT, 'data/recent.json');
 const me = identity();
-const PERIODS = [12, 24, 48]; // months
-const COMMITS = 30; // the latest commits kept per project: the snapshot its pulse starts from
+// The window is declared in data/projects.toml [recent]: periods (months) and the latest commits
+// kept per project (the snapshot its pulse starts from).
+const { periods: PERIODS, commits: COMMITS } = readToml('data/projects.toml').recent;
 const DAYS = Math.round((PERIODS[PERIODS.length - 1] * 365.25) / 12);
 const index = JSON.parse(readFileSync(join(ROOT, 'data/index.json'), 'utf8'));
 const MONTH = 86400000 * 365.25 / 12;

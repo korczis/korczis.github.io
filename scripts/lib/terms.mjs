@@ -31,6 +31,12 @@ export function termsForCategory(g, category, languages = []) {
   return unique([...(g.byCategory.get(category) ?? []), ...termsForNames(g, languages)]);
 }
 
+// What every repository brings, on any page about repositories.
+export const REPOSITORY_TERMS = ['repository', 'commit', 'open-source'];
+
+// The term ids an article links (@/glossary/<id>.md), in order of first appearance.
+export const linkedTerms = (markdown) => [...new Set([...markdown.matchAll(/\(@\/glossary\/([a-z0-9-]+)(?:\.[a-z]{2})?\.md\)/g)].map((m) => m[1]))];
+
 // A repository (data/recent.json row) and, when curated, its catalogue entry.
 export function termsForRepo(g, r, curated) {
   return unique([
@@ -39,7 +45,7 @@ export function termsForRepo(g, r, curated) {
     ...termsForNames(g, curated?.stack ?? []),
     ...(g.byCategory.get(r.category) ?? []),
     onGithubPages(r.site) ? 'github-pages' : null,
-    'repository', 'commit', 'open-source',
+    ...REPOSITORY_TERMS,
   ]);
 }
 

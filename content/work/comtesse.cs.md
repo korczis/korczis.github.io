@@ -30,4 +30,4 @@ tone = "night"
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 27. srpna 2025; poslední [commit](@/glossary/commit.cs.md) je z 28. srpna 2025. Zní „docs: add src/comtesse-rs specific README.md“. Patří tak mezi projekty aktivní za posledních 24 měsíců.
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 24 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…), ze snímku obnovovaného každých šest hodin. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 24 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…), ze snímku obnovovaného každých 6 hodin. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

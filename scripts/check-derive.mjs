@@ -5,7 +5,7 @@
 // network code that no gate can run, so their logic is proven here instead.
 //
 // usage: node scripts/check-derive.mjs     exit 0 when every assertion holds, 1 with each failure
-import { readFileSync } from 'node:fs';
+import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { ROOT, clip, identity, languages, plural, slug } from './lib/derive.mjs';
 import { droppedSince, inferCategory, matchKind, measureShare, ownerMatcher, paginate, primaryLanguage, ruleFindings, words } from './lib/repos.mjs';
@@ -89,6 +89,24 @@ check('languages from zola.toml', languages()[0], 'en');
 check('slug', slug('pdf_renderer.Ex'), 'pdf-renderer-ex');
 check('clip', clip('one two three four', 12), 'one two…');
 check('Czech plural', [1, 2, 5, 0].map((n) => plural('cs', n)), ['one', 'few', 'other', 'other']);
+
+// No identity or URL literal in the derivation: the owner's logins, names, host and Majordomus
+// URLs live in zola.toml [extra] only (audit F5). Schema ids ("korczis-hub-index/v1") are format
+// names, not claims about the owner, and stay.
+const LANE = [...readdirSync(join(ROOT, 'scripts')).filter((f) => /^(fetch|build)-.*\.mjs$/.test(f) && f !== 'build-i18n.mjs')
+  .concat(['check-data.mjs', 'check-seo.mjs', 'check-front-matter.mjs', 'check-glossary.mjs', 'check-fresh.mjs', 'check-live.mjs'])
+  .map((f) => `scripts/${f}`), ...['derive', 'terms', 'viz', 'gitlab', 'repos'].map((f) => `scripts/lib/${f}.mjs`), 'i18n/derive.toml'];
+const literals = [me.github, me.gitlab, me.author, me.authorNative, me.host, me.majordomusUrl, me.majordomusBuild]
+  .filter(Boolean).flatMap((l) => [l, l.normalize('NFD').replace(/\p{M}/gu, '')]);
+const pattern = new RegExp([...new Set(literals)].map((l) => l.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|'), 'gi');
+for (const file of LANE) {
+  readFileSync(join(ROOT, file), 'utf8').split('\n').forEach((line, i) => {
+    for (const m of line.replace(/korczis-hub-[a-z]+\/v\d+/g, '').matchAll(pattern)) {
+      failures.push(`${file}:${i + 1}: "${m[0]}" is typed; read it from zola.toml [extra] (derive.mjs identity())`);
+    }
+  });
+}
+passed += 1;
 
 if (failures.length) {
   for (const f of failures) console.error(`✗ ${f}`);

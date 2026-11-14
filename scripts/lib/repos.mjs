@@ -120,9 +120,10 @@ const fold = (s) => String(s ?? '').normalize('NFD').replace(/\p{M}/gu, '').toLo
 const split = (s) => fold(s).split(/[^a-z0-9]+/).filter(Boolean);
 
 // Whether a contributor is the owner, from the identity in zola.toml [extra] (never a pattern in a
-// script): the GitHub or GitLab login; a commit author name that holds a login ("korczis"); or a
-// name made only of the owner's name parts or their initials and holding the surname, in any
-// spelling, order or case ("Tomas Korcak", "Tomáš Korčák", "Korcak Tomas", "T. Korcak", "korcak").
+// script): the GitHub or GitLab login; a commit author name that holds a login ("<login> bot"); or
+// a name made only of the owner's name parts or their initials and holding the surname, in any
+// spelling, order or case (author "Jan Novak" matches "Jan Novák", "Novak Jan", "J. Novak",
+// "novak"; never "Petr Novak").
 export function ownerMatcher({ github, gitlab, author, authorNative }) {
   const logins = [...new Set([github, gitlab].filter(Boolean).map((l) => fold(l).replace(/[^a-z0-9]/g, '')))];
   const people = [author, authorNative].filter(Boolean).map(split).filter((p) => p.length);

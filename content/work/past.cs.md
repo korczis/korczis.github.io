@@ -30,4 +30,4 @@ tone = "night"
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 28. dubna 2025; poslední [commit](@/glossary/commit.cs.md) je z 4. února 2026. Zní „\[38;2;248;248;242mfeat(aiad): inject AIAD v1.0.0 infrastructure\[0m“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje poslední 2 commity jako tep, jeden pruh na typ commitu (feat, fix, docs…), ze snímku obnovovaného každých šest hodin. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje poslední 2 commity jako tep, jeden pruh na typ commitu (feat, fix, docs…), ze snímku obnovovaného každých 6 hodin. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

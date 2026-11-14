@@ -16,8 +16,8 @@ kind = "concept"
 definition = "A repository that copies another project's code; here a repository counts as original only when the owner wrote at least half of its commits."
 aliases = []
 reference = { title = "Git: mirroring a repository", url = "https://docs.github.com/en/repositories/creating-and-managing-repositories/duplicating-a-repository" }
-pages = ["_index.md", "repositories/_index.md"]
-related = ["commit", "fork", "repository", "d3", "data-visualisation", "flowbite-pro", "front-matter", "json-ld"]
+pages = ["_index.md", "repositories/_index.md", "work/_index.md"]
+related = ["commit", "fork", "repository", "open-source", "d3", "data-visualisation", "flowbite-pro", "front-matter"]
 og_title = "Mirror: glossary"
 og_image = "og/glossary-mirror.png"
 keywords = ["Mirror", "Concept", "Glossary", "Tomas Korcak"]

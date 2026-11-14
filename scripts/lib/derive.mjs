@@ -84,6 +84,22 @@ export function limits() {
   };
 }
 
+// How often the data is re-measured, from the schedule of .github/workflows/refresh.yml (the
+// source of truth), never typed: { unit: 'hours' | 'days' | 'weeks', n }. Throws on a schedule it
+// cannot read, so a changed cron is noticed instead of misdescribed.
+export function cadence(workflow = '.github/workflows/refresh.yml') {
+  const cron = readFileSync(join(ROOT, workflow), 'utf8').match(/cron:\s*['"]([^'"]+)['"]/)?.[1];
+  if (!cron) throw new Error(`${workflow}: no schedule cron`);
+  const [, hour, dom, mon, dow] = cron.trim().split(/\s+/);
+  const every = (field) => (field === '*' ? 1 : /^\*\/(\d+)$/.test(field) ? Number(field.slice(2)) : null);
+  if (dom === '*' && mon === '*' && dow === '*') {
+    if (every(hour)) return { unit: 'hours', n: every(hour), cron };
+    if (/^\d+$/.test(hour)) return { unit: 'days', n: 1, cron };
+  }
+  if (dom === '*' && mon === '*' && /^\d$/.test(dow) && /^\d+$/.test(hour)) return { unit: 'weeks', n: 1, cron };
+  throw new Error(`${workflow}: cannot describe the schedule ${cron}`);
+}
+
 // Text cut to a limit at a word boundary, with an ellipsis; padded when it is too short.
 export function clip(text, max, { min = 0, pad = '' } = {}) {
   let out = text;

@@ -6,10 +6,10 @@ template = "work-list.html"
 sort_by = "weight"
 
 [extra]
-og_title = "44 projects, the last four years."
+og_title = "44 projects, the last 4 years."
 og_image = "og/work.png"
 schema = "collection"
-terms = ["repository", "commit", "open-source", "data-visualisation"]
+terms = ["commit", "fork", "mirror", "repository", "open-source"]
 keywords = ["Tomas Korcak recent work", "korczis", "prismatic-majordomus", "sonic-playground", "korczis.github.io", "korczis", "algoglyph", "kompendium-epistemicke-anihilace", "oscilla", "vomaste.cz"]
 
 [[extra.viz]]
@@ -21,6 +21,6 @@ span = 3
 height = "md"
 tone = "night"
 +++
-This page answers the question of what is being worked on now. A project belongs here by the date of its last [commit](@/glossary/commit.md) on the default branch, never by when its host last saw activity, and falls into one of three periods: 12, 24 and 48 months.
+This page answers the question of what is being worked on now. A project belongs here by the date of its last [commit](@/glossary/commit.md) on the default branch, never by when its host last saw activity, and falls into one of the periods of 12, 24 and 48 months.
 
 Every project has its own page with a derived article, measured facts and the concepts it builds on. [Forks](@/glossary/fork.md) and [mirrors](@/glossary/mirror.md) are left out: this is the owner's own work only.

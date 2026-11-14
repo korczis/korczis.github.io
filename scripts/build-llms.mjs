@@ -1,13 +1,13 @@
 #!/usr/bin/env node
-// Derives static/llms.txt and static/llms-full.txt (https://llmstxt.org) from zola.toml,
-// data/projects.toml and data/index.json, so a language model reading the site gets the same
+// Derives static/llms.txt and static/llms-full.txt (https://llmstxt.org) from zola.toml, the
+// front matter of the top-level pages, data/projects.toml and data/index.json, so a language model reading the site gets the same
 // catalogue a person sees, in plain Markdown: the curated projects, then every original repository.
 //
 // usage: node scripts/build-llms.mjs           write both files
 //        node scripts/build-llms.mjs --check   exit 1 if either committed file is stale
 import { readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { CHECK, ROOT, config as siteConfig, identity, readJson, readToml, report, slug } from './lib/derive.mjs';
+import { CHECK, ROOT, config as siteConfig, contentPages, identity, isDefault, languages, readJson, readToml, report, slug } from './lib/derive.mjs';
 
 const TARGET = join(ROOT, 'static/llms.txt');
 const TARGET_FULL = join(ROOT, 'static/llms-full.txt');
@@ -17,25 +17,20 @@ const me = identity();
 const base = me.base;
 const oneLine = (text) => text.replace(/\s+/g, ' ').trim();
 
+// The site's top-level pages (the home page, every top-level page and section) from their own
+// front matter in the default language, then each other language's home: nothing typed here.
+const pages = contentPages().filter((p) => p.fm && isDefault(p.lang) && /^(_index|[^/]+|[^/]+\/_index)\.md$/.test(p.rel))
+  .map((p) => ({ url: p.rel === '_index.md' ? `${base}/` : `${base}/${p.rel.replace(/(\/_index)?\.md$/, '')}/`, fm: p.fm }))
+  .sort((x, y) => (x.url === `${base}/` ? -1 : y.url === `${base}/` ? 1 : x.url.localeCompare(y.url)));
 const lines = [
   `# ${config.title}`,
   '',
   `> ${oneLine(config.description)}`,
   '',
-  `${config.extra.author} builds software for evidence: tools that make AI agents prove their`,
-  'work, honest scientific instruments in the browser, and knowledge bases that can be checked.',
-  'Every project below links to its source on GitHub; most have a live site.',
-  '',
   '## Pages',
   '',
-  `- [Home](${base}/): who I am, featured projects, activity`,
-  `- [About](${base}/about/): profile, CV, languages over the years, sources`,
-  `- [Projects](${base}/projects/): the curated catalogue, filterable, with project details`,
-  `- [Repositories](${base}/repositories/): every original repository on GitHub and GitLab`,
-  `- [Recent work](${base}/work/): every project with a commit in the last 12, 24 and 48 months, one page each`,
-  `- [Stack](${base}/stack/): the tools and practices behind every project`,
-  `- [Glossary](${base}/glossary/): every concept, language and technology the pages build on, defined and sourced`,
-  `- [Czech version](${base}/cs/): the same site, every page translated`,
+  ...pages.map((p) => `- [${p.fm.title}](${p.url}): ${oneLine(p.fm.description)}`),
+  ...languages().filter((l) => !isDefault(l)).map((l) => `- [${config.languages[l].title} (${l})](${base}/${l}/): ${oneLine(config.languages[l].description)}`),
   '',
 ];
 
@@ -52,10 +47,12 @@ for (const [key, category] of Object.entries(catalogue.categories)) {
   lines.push('');
 }
 
+// The supervisory layer the site is built under, as the catalogue describes it.
+const majordomus = me.majordomusUrl && catalogue.projects.find((p) => p.url?.replace(/\/$/, '') === me.majordomusUrl.replace(/\/$/, ''));
 lines.push(
   '## Optional',
   '',
-  `- [Majordomus](https://majordomus.dev): the supervisory layer this site is built under`,
+  ...(majordomus ? [`- [${majordomus.name}](${me.majordomusUrl}): ${oneLine(majordomus.tagline)}`] : []),
   `- [Full index for language models](${base}/llms-full.txt): every original repository with its links`,
   `- [GitHub profile](${me.githubUrl})`,
   `- [GitLab profile](${me.gitlabUrl})`,

@@ -7,6 +7,7 @@ import { readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parse } from 'smol-toml';
+import { limits } from './lib/derive.mjs';
 import { inferCategory, ruleFindings } from './lib/repos.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -16,13 +17,16 @@ const fail = (where, what) => findings.push(`${where}: ${what}`);
 const catalogue = parse(readFileSync(join(ROOT, 'data/projects.toml'), 'utf8'));
 const snapshot = JSON.parse(readFileSync(join(ROOT, 'data/github.json'), 'utf8'));
 const categories = catalogue.categories ?? {};
+// A category's description is its page's meta description; a tagline heads an og_title.
+const LIMITS = limits();
+const { min: DMIN, max: DMAX } = LIMITS.description;
 const REQUIRED = ['repo', 'name', 'tagline', 'summary', 'category', 'stack', 'featured'];
 const ICONS = ['shield', 'beaker', 'book', 'map', 'film', 'wrench', 'code', 'globe', 'graph', 'cube', 'lock', 'server', 'puzzle', 'academic'];
 for (const [key, c] of Object.entries(categories)) {
   if (!/^[a-z]+$/.test(key)) fail(`categories.${key}`, 'key must be lower-case letters (it is a URL)');
   if (!c.name || !c.description) fail(`categories.${key}`, 'needs a name and a description');
-  if ((c.description ?? '').length < 50 || (c.description ?? '').length > 165) {
-    fail(`categories.${key}`, `description is ${(c.description ?? '').length} characters, not 50-165 (it is the page's meta description)`);
+  if ((c.description ?? '').length < DMIN || (c.description ?? '').length > DMAX) {
+    fail(`categories.${key}`, `description is ${(c.description ?? '').length} characters, not ${DMIN}-${DMAX} (it is the page's meta description)`);
   }
   if (!ICONS.includes(c.icon)) fail(`categories.${key}`, `icon ${c.icon} is not one of ${ICONS.join(', ')}`);
 }
@@ -34,7 +38,7 @@ for (const [index, p] of (catalogue.projects ?? []).entries()) {
   if (seen.has(p.repo)) fail(where, 'duplicate repo');
   seen.add(p.repo);
   if (!(p.category in categories)) fail(where, `unknown category ${p.category}`);
-  if ((p.tagline ?? '').length > 90) fail(where, `tagline is ${p.tagline.length} > 90 characters`);
+  if ((p.tagline ?? '').length > LIMITS.ogTitle.max) fail(where, `tagline is ${p.tagline.length} > ${LIMITS.ogTitle.max} characters (og_title's limit)`);
   if (p.url && !/^https:\/\//.test(p.url)) fail(where, `url is not https: ${p.url}`);
   if (!Array.isArray(p.stack) || p.stack.length === 0) fail(where, 'stack must be a non-empty list');
   if ((p.stack ?? []).includes('Majordomus')) {

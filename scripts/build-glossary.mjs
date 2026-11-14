@@ -8,7 +8,7 @@
 //        node scripts/build-glossary.mjs --check   exit 1 if any is missing, stale or orphaned
 import { join } from 'node:path';
 import { CONTENT, ROOT, clip, contentPages, identity, languages, limits, local, ogPrefix, q, suffix, writeOrCheck } from './lib/derive.mjs';
-import { loadGlossary, tl } from './lib/terms.mjs';
+import { linkedTerms, loadGlossary, tl } from './lib/terms.mjs';
 import { vizBlock } from './lib/viz.mjs';
 import { loadStrings } from './lib/strings.mjs';
 
@@ -40,6 +40,11 @@ const describe = (text, lang) => clip(text, LIMITS.description.max, { min: LIMIT
 const KINDS = ['language', 'technology', 'concept'];
 const sorted = [...g.terms].sort((a, b) => KINDS.indexOf(a.kind) - KINDS.indexOf(b.kind) || a.term.localeCompare(b.term));
 
+// The glossary's own page builds on what its article links and on the terms at the centre of the
+// site: the four that the most pages name (its article says they hold the site together).
+const central = [...usage].map(([id, by]) => [id, by[LANGS[0]].length]).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).slice(0, 4).map(([id]) => id);
+const indexTerms = [...new Set([...linkedTerms(tl(g, 'derive_glossary_article', LANGS[0])), ...central])];
+
 const wanted = new Map();
 for (const lang of LANGS) {
   const sfx = suffix(lang);
@@ -55,7 +60,7 @@ sort_by = "weight"
 og_title = ${q(tr('glossary_og', lang).replace('{n}', g.terms.length))}
 og_image = ${q(`og/${ogPrefix(lang)}glossary.png`)}
 schema = "glossary"
-terms = ["open-source", "repository", "front-matter", "static-site-generator"]
+terms = [${indexTerms.map(q).join(', ')}]
 keywords = [${[tr('glossary', lang), ...sorted.filter((t) => t.term.length > 1).slice(0, 10).map((t) => t.term), me.nameIn(lang)].map(q).join(', ')}]
 ${vizBlock({ kind: 'atlas', source: 'glossary.terms', title: 'viz_atlas_title', lead: 'viz_atlas_lead', height: 'lg' })}+++
 ${tl(g, 'derive_glossary_article', lang)}

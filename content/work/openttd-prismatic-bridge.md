@@ -30,4 +30,4 @@ tone = "night"
 
 The [repository](@/glossary/repository.md) was created in July 2026; its latest [commit](@/glossary/commit.md) is from 24 July 2026. It reads “Doc: document the real prismatic-platform decision engine (Phase 3)”. That places it among the projects active in the last 12 months.
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 10 commits as a heartbeat, one lane per commit type (feat, fix, docs…), from a snapshot refreshed every six hours. The concepts below are explained in the [glossary](@/glossary/_index.md).
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 10 commits as a heartbeat, one lane per commit type (feat, fix, docs…), from a snapshot refreshed every 6 hours. The concepts below are explained in the [glossary](@/glossary/_index.md).

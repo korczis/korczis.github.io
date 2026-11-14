@@ -19,7 +19,7 @@ const glossary = loadGlossary(ROOT);
 const me = identity();
 
 // Every primary language of the category's original repositories (data/index.json), the most
-// common first, never the rule list that classified them. The article names the first four; the
+// common first, never the rule list that classified them. The article names the top ones; the
 // page's terms build on all of them.
 function categoryLanguages(key) {
   const counts = new Map();
@@ -31,7 +31,7 @@ function categoryLanguages(key) {
 // languages it is measured to be written in, the featured projects, and how the classification works.
 function article(key, c, lang) {
   const n = index.by_category[key] ?? 0;
-  const langs = categoryLanguages(key).slice(0, 4).map((name) => nameLink(glossary, name, lang));
+  const langs = categoryLanguages(key).slice(0, catalogue.index.top_languages).map((name) => nameLink(glossary, name, lang));
   const featured = catalogue.projects.filter((p) => p.category === key).map((p) => `**${p.name}**`);
   const concepts = (glossary.byCategory.get(key) ?? []).map((id) => termLink(glossary, id, lang));
   const p = [local(c, 'description', lang)];

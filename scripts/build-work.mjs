@@ -8,9 +8,9 @@
 //        node scripts/build-work.mjs --check   exit 1 if any is missing, stale or orphaned
 import { join } from 'node:path';
 import {
-  ROOT, clip, identity, isDefault, languages, limits, local, ogPrefix, q, readJson, readToml, slug, suffix, t, writeOrCheck,
+  ROOT, cadence, clip, identity, isDefault, languages, limits, local, ogPrefix, q, readJson, readToml, slug, suffix, t, writeOrCheck,
 } from './lib/derive.mjs';
-import { listing, loadGlossary, mdEscape, nameLink, onGithubPages, termsForRepo, tl } from './lib/terms.mjs';
+import { REPOSITORY_TERMS, linkedTerms, listing, loadGlossary, mdEscape, nameLink, onGithubPages, termsForRepo, tl } from './lib/terms.mjs';
 import { vizBlock } from './lib/viz.mjs';
 
 const DIR = join(ROOT, 'content/work');
@@ -21,6 +21,11 @@ const glossary = loadGlossary(ROOT);
 const me = identity();
 const LIMITS = limits();
 const periods = recent.periods.map((p) => p.months);
+const refresh = cadence();
+// The window as words: "the last 4 years", or months when it is not whole years.
+const span = (lang) => (periods.at(-1) % 12 === 0
+  ? t('derive_last_years', lang, { n: periods.at(-1) / 12 })
+  : t('derive_last_months', lang, { n: periods.at(-1) }));
 const curatedOf = (r) => catalogue.projects.find((p) => p.repo === r.name);
 const categoryName = (r, lang) => local(catalogue.categories[r.category], 'name', lang);
 
@@ -80,13 +85,19 @@ function article(r, curated, lang) {
   }
   p.push(t('derive_work_how', lang, {
     latest: t('derive_work_latest_commits', lang, { n: r.commits.length }),
-    refresh: t(r.hosts.github ? 'derive_work_refresh_live' : 'derive_work_refresh_snapshot', lang),
+    refresh: t(r.hosts.github ? 'derive_work_refresh_live' : 'derive_work_refresh_snapshot', lang, {
+      cadence: t(`derive_cadence_${refresh.unit}`, lang, { n: refresh.n }),
+    }),
     glossary: `@/glossary/_index${suffix(lang)}.md`,
   }));
   return p.join('\n\n');
 }
 
 const tags = (r, lang) => [categoryName(r, lang), ...r.languages.slice(0, 3).map((l) => l.name)];
+
+// The list page builds on what its article links and on what every repository it lists brings.
+const listArticle = (lang) => tl(glossary, 'derive_work_list_article', lang, { periods: listing(periods.map(String), lang) });
+const listTerms = [...new Set([...linkedTerms(listArticle(languages()[0])), ...REPOSITORY_TERMS])];
 
 const wanted = new Map();
 for (const lang of languages()) {
@@ -99,13 +110,13 @@ template = "work-list.html"
 sort_by = "weight"
 
 [extra]
-og_title = ${q(t('derive_work_list_og', lang, { n }))}
+og_title = ${q(t('derive_work_list_og', lang, { n, span: span(lang) }))}
 og_image = ${q(`og/${ogPrefix(lang)}work.png`)}
 schema = "collection"
-terms = ["repository", "commit", "open-source", "data-visualisation"]
-keywords = [${[t('derive_work_list_keyword', lang), me.github, ...recent.repos.slice(0, 8).map((r) => r.name)].map(q).join(', ')}]
+terms = [${listTerms.map(q).join(', ')}]
+keywords = [${[t('derive_work_list_keyword', lang, { author: me.nameIn(lang) }), me.github, ...recent.repos.slice(0, 8).map((r) => r.name)].map(q).join(', ')}]
 ${vizBlock({ kind: 'pulse', source: 'work.all', title: 'viz_work_pulse_title', lead: 'viz_work_pulse_lead' })}+++
-${tl(glossary, 'derive_work_list_article', lang, { periods: listing(periods.map(String), lang) })}
+${listArticle(lang)}
 `);
   recent.repos.forEach((r, position) => {
     const curated = curatedOf(r);
