@@ -2,6 +2,17 @@
 {%- set sfx = "" %}{% if lang is defined and lang != config.default_language %}{% set sfx = "_" ~ lang %}{% endif -%}
 {#- The catalogue grid and its toolbar (Flowbite Pro table header, adapted), shared by /projects/
     and every category page. Needs `cat`, `gh` and `scope` (a category key, or "" for all). -#}
+{#- Each project's repository address, measured (data/index.json hosts); the profile's GitHub
+    address only for a repository the index does not hold. -#}
+{%- set cix = load_data(path="data/index.json") -%}
+{%- set_global sources = "{" -%}
+{%- for p in cat.projects -%}
+{%- set_global src = "https://github.com/" ~ config.extra.github ~ "/" ~ p.repo -%}
+{%- for r in cix.repos -%}{%- if r.name == p.repo -%}{%- if r.hosts.github is defined -%}{%- set_global src = r.hosts.github -%}{%- else -%}{%- set_global src = r.hosts.gitlab -%}{%- endif -%}{%- endif -%}{%- endfor -%}
+{%- set_global sources = sources ~ (p.repo | json_encode) ~ ": " ~ (src | json_encode) -%}{%- if not loop.last -%}{%- set_global sources = sources ~ ", " -%}{%- endif -%}
+{%- endfor -%}
+{%- set_global sources = sources ~ "}" -%}
+{%- set source_of = load_data(literal=sources, format="json") -%}
 {%- set_global count = 0 -%}{%- for p in cat.projects -%}{%- if not scope or p.category == scope -%}{%- set_global count = count + 1 -%}{%- endif -%}{%- endfor -%}
 <div x-data="projectDetail">
 <section x-data="projectFilter" aria-label="{{ trans(key="projects_2", lang=lang) }}">
@@ -63,7 +74,7 @@
       <div id="view-cards" role="tabpanel" aria-labelledby="view-cards-tab">
         <div x-ref="grid" class="grid grid-cols-1 gap-4 md:grid-cols-2 2xl:grid-cols-3">
       {%- for p in cat.projects %}{% if not scope or p.category == scope %}
-      {{ <project_card p={p} f={gh.projects[p.repo]} label={cat.categories[p.category]["name" ~ sfx]} anchor={true} lang={lang} /> }}
+      {{ <project_card p={p} f={gh.projects[p.repo]} label={cat.categories[p.category]["name" ~ sfx]} source={source_of[p.repo]} anchor={true} lang={lang} /> }}
       {%- endif %}{% endfor %}
     </div>
 
@@ -80,7 +91,7 @@
             </thead>
             <tbody x-ref="rows">
               {%- for p in cat.projects %}{% if not scope or p.category == scope %}
-              {{ <project_row p={p} f={gh.projects[p.repo]} label={cat.categories[p.category]["name" ~ sfx]} lang={lang} /> }}
+              {{ <project_row p={p} f={gh.projects[p.repo]} label={cat.categories[p.category]["name" ~ sfx]} source={source_of[p.repo]} lang={lang} /> }}
               {%- endif %}{% endfor %}
             </tbody>
           </table>
@@ -101,7 +112,7 @@
 
 {#- Project detail: Flowbite Pro read drawer (application-ui/read-drawers), one per page, filled by
     static/js/components/project-detail.js from the data below. Closed it is inert. #}
-<script type="application/json" id="catalogue-data">{"sfx": {{ sfx | json_encode | safe }}, "generated_at": {{ gh.generated_at | json_encode | safe }}, "projects": {{ cat.projects | json_encode | safe }}, "measured": {{ gh.projects | json_encode | safe }}, "categories": {{ cat.categories | json_encode | safe }}}</script>
+<script type="application/json" id="catalogue-data">{"sfx": {{ sfx | json_encode | safe }}, "sources": {{ sources | safe }}, "generated_at": {{ gh.generated_at | json_encode | safe }}, "projects": {{ cat.projects | json_encode | safe }}, "measured": {{ gh.projects | json_encode | safe }}, "categories": {{ cat.categories | json_encode | safe }}}</script>
 <div x-ref="drawer" id="project-drawer" inert tabindex="-1" role="dialog" aria-modal="true" aria-labelledby="project-drawer-title"
   class="fixed right-0 top-0 z-50 h-screen w-full max-w-md translate-x-full overflow-y-auto bg-white p-4 shadow-lg transition-transform dark:bg-gray-800 sm:p-6">
   <template x-if="p">
@@ -140,7 +151,7 @@
       </ul>
       <div class="flex flex-wrap gap-3">
         {{ <button label={trans(key="open_the_site", lang=lang)} href="#" icon_after="external" attrs='x-show="p.url &amp;&amp; f.live" :href="p.url"' /> }}
-        {{ <button label={trans(key="source_on_github", lang=lang)} href="#" variant="secondary" icon="github" attrs=':href="\'https://github.com/korczis/\' + p.repo"' /> }}
+        {{ <button label={trans(key="source_on_github", lang=lang)} href="#" variant="secondary" icon="github" attrs=':href="source.sources[p.repo]"' /> }}
       </div>
       <p class="mt-6 text-xs text-gray-600 dark:text-gray-400">{{ trans(key="measured_on", lang=lang) | safe }} <span x-text="date(source.generated_at)"></span>{{ trans(key="share_this_view_with_its_address", lang=lang) | safe }}</p>
     </div>

@@ -26,6 +26,8 @@ external_level = "warn"
 author = "Tomas Korcak"
 author_native = "Tomáš Korčák" # the same name with its Czech diacritics: JSON-LD alternateName
 github = "korczis"
+# GitLab is its own account: never assume it shares the GitHub login.
+gitlab_url = "https://gitlab.com/korczis"
 # The place, with a Czech twin per form a sentence needs (the hero says "in Brno" / "z Brna").
 location = "Brno, Czech Republic"
 location_cs = "Brno, Česko"
@@ -34,6 +36,7 @@ location_in_cs = "z Brna"
 repo_url = "https://github.com/korczis/korczis.github.io"
 majordomus_url = "https://majordomus.dev"
 majordomus_build = "https://majordomus.dev/build.json"
+majordomus_install = "curl -fsSL https://majordomus.dev/install.sh | sh"
 
 [languages.cs]
 # The only "feed" is the command palette's index (templates/palette.json), one file per language.

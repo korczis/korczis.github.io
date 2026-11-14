@@ -197,7 +197,7 @@
         <li class="flex items-center gap-2">{{ <icon name="check" class="h-4 w-4 shrink-0 text-primary-700 dark:text-primary-400" /> }}{{ line }}</li>
         {%- endfor %}
       </ul>
-      <code class="mt-4 block break-all rounded-lg bg-gray-100 px-3 py-2 font-mono text-xs text-gray-800 dark:bg-gray-700 dark:text-gray-200">curl -fsSL https://majordomus.dev/install.sh | sh</code>
+      <code class="mt-4 block break-all rounded-lg bg-gray-100 px-3 py-2 font-mono text-xs text-gray-800 dark:bg-gray-700 dark:text-gray-200">{{ config.extra.majordomus_install }}</code>
       <div class="mt-4 flex items-center justify-between border-t border-gray-200 pt-3 dark:border-gray-700">
         {{ <button label="majordomus.dev" href={config.extra.majordomus_url} variant="ghost" icon_after="external" /> }}
         {{ <button label={trans(key="release_notes", lang=lang)} href={gh.majordomus.notes_url} variant="ghost" icon_after="arrow-right" attrs=':href="release.notes_url"' /> }}

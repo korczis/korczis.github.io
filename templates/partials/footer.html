@@ -7,12 +7,12 @@
       <img src="{{ get_url(path='favicon.svg') }}" class="h-6 w-6" width="24" height="24" alt="">{{ trans(key="brand", lang=lang) }}
     </p>
     <p class="text-sm text-gray-600 dark:text-gray-400">
-      © 2010–{{ now() | date(format="%Y") }} · {{ config.extra["location" ~ sfx] }} {{ trans(key="zola_and_flowbite_pro_supervised_by", lang=lang) | safe }}
+      {%- set fgh = load_data(path="data/github.json") %}
+      © {{ fgh.profile.created_at | date(format="%Y") }}–{{ now() | date(format="%Y") }} · {{ config.extra["location" ~ sfx] }} {{ trans(key="zola_and_flowbite_pro_supervised_by", lang=lang) | safe }}
       <a href="{{ config.extra.majordomus_url }}" class="font-medium text-primary-700 hover:underline dark:text-primary-400">Majordomus</a>
     </p>
   </div>
   <ul class="mt-4 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-gray-900 dark:text-gray-200 md:mt-0">
-    {%- set fgh = load_data(path="data/github.json") %}
     {%- if fgh.profile.email %}
     <li><a href="mailto:{{ fgh.profile.email }}" class="hover:underline">{{ trans(key="contact_email", lang=lang) | safe }}</a></li>
     {%- endif %}

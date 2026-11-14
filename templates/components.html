@@ -181,7 +181,7 @@
 
 {#- Flowbite Pro project-portfolio card, adapted: no screenshot, a category icon instead; the
     badges and the metadata line are measured (data/github.json), the words are curated. -#}
-{% component project_card(p, f, label: string, lang: string, anchor: bool = false) %}
+{% component project_card(p, f, label: string, source: string, lang: string, anchor: bool = false) %}
 {%- set sfx = "" %}{% if lang != "en" %}{% set sfx = "_" ~ lang %}{% endif -%}
 <article {% if anchor %}id="{{ p.repo }}" {% endif %}data-card
   data-search="{{ p.name }} {{ p["tagline" ~ sfx] }} {{ p["summary" ~ sfx] }} {{ p.stack | join(sep=' ') }} {{ label }}"
@@ -203,7 +203,7 @@
     </div>
   </div>
   <h3 class="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
-    <a href="https://github.com/korczis/{{ p.repo }}" class="hover:underline">{{ p.name }}</a>
+    <a href="{{ source }}" class="hover:underline">{{ p.name }}</a>
   </h3>
   <p class="mb-2 font-medium text-gray-900 dark:text-gray-100">{{ p["tagline" ~ sfx] }}</p>
   <p class="mb-4 text-sm text-gray-600 dark:text-gray-400">{{ p["summary" ~ sfx] }}</p>
@@ -223,7 +223,7 @@
       {{ <button label={trans(key="open", lang=lang)} href={p.url} icon_after="external" sr={p.name} /> }}
       {%- endif %}
       {{ <button label={trans(key="details", lang=lang)} variant="ghost" sr={trans(key="of", lang=lang) ~ " " ~ p.name} attrs={"data-js @click=\"open('" ~ p.repo ~ "', $el)\""} /> }}
-      {{ <button label={trans(key="source", lang=lang)} href={"https://github.com/korczis/" ~ p.repo} variant="secondary" icon="github" sr={trans(key="of", lang=lang) ~ " " ~ p.name} /> }}
+      {{ <button label={trans(key="source", lang=lang)} href={source} variant="secondary" icon="github" sr={trans(key="of", lang=lang) ~ " " ~ p.name} /> }}
     </div>
   </div>
 </article>
@@ -266,7 +266,7 @@
 
 {#- One catalogue row: Flowbite Pro advanced table (advanced-tables/project-management), with the
     same data-* the filter reads from a card. -#}
-{% component project_row(p, f, label: string, lang: string) %}
+{% component project_row(p, f, label: string, source: string, lang: string) %}
 {%- set sfx = "" %}{% if lang != "en" %}{% set sfx = "_" ~ lang %}{% endif -%}
 <tr data-row
   data-search="{{ p.name }} {{ p["tagline" ~ sfx] }} {{ p["summary" ~ sfx] }} {{ p.stack | join(sep=' ') }} {{ label }}"
@@ -287,7 +287,7 @@
   <td class="whitespace-nowrap px-4 py-3"><time datetime="{{ f.pushed_at }}">{{ f.pushed_at | date(format="%b %Y") }}</time></td>
   <td class="whitespace-nowrap px-4 py-3">{% if f.supervised %}{{ <badge label="Majordomus" tone="primary" /> }}{% else %}—{% endif %}</td>
   <td class="whitespace-nowrap px-4 py-3 text-right">
-    {%- if p.url and f.live %}<a href="{{ p.url }}" class="font-medium text-primary-700 hover:underline dark:text-primary-400">{{ trans(key="open", lang=lang) | safe }}<span class="sr-only"> {{ p.name }}</span></a> · {% endif %}<a href="https://github.com/korczis/{{ p.repo }}" class="font-medium text-primary-700 hover:underline dark:text-primary-400">{{ trans(key="source", lang=lang) | safe }}<span class="sr-only"> {{ trans(key="of", lang=lang) | safe }} {{ p.name }}</span></a>
+    {%- if p.url and f.live %}<a href="{{ p.url }}" class="font-medium text-primary-700 hover:underline dark:text-primary-400">{{ trans(key="open", lang=lang) | safe }}<span class="sr-only"> {{ p.name }}</span></a> · {% endif %}<a href="{{ source }}" class="font-medium text-primary-700 hover:underline dark:text-primary-400">{{ trans(key="source", lang=lang) | safe }}<span class="sr-only"> {{ trans(key="of", lang=lang) | safe }} {{ p.name }}</span></a>
   </td>
 </tr>
 {% endcomponent %}

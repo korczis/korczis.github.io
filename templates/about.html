@@ -41,7 +41,7 @@
         {{ <button label={trans(key="contact_email", lang=lang)} href={"mailto:" ~ gh.profile.email} size="sm" icon="mail" sr={gh.profile.email} /> }}
         {%- endif %}
         {{ <button label="GitHub" href={"https://github.com/" ~ gh.profile.login} variant="secondary" size="sm" icon="github" /> }}
-        {{ <button label="GitLab" href={"https://gitlab.com/" ~ gh.profile.login} variant="secondary" size="sm" icon="code" /> }}
+        {{ <button label="GitLab" href={config.extra.gitlab_url} variant="secondary" size="sm" icon="code" /> }}
         {{ <button label="majordomus.dev" href={config.extra.majordomus_url} size="sm" icon="shield" /> }}
         {{ <button label={trans(key="print_as_cv", lang=lang)} variant="ghost" attrs='data-js onclick="window.print()"' /> }}
       </div>
@@ -162,7 +162,7 @@
     {{ <card_head id="sources-title" title={trans(key="sources", lang=lang)} /> }}
     <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
       <li>{{ <icon name="check" class="mr-1.5 inline h-4 w-4 text-primary-700 dark:text-primary-400" /> }}{{ trans(key="profile_contributions_and_languages", lang=lang) | safe }} <a class="{{ link }}" href="https://github.com/{{ gh.profile.login }}">{{ trans(key="github_api", lang=lang) | safe }}</a>, {{ gh.generated_at | date(format="%-d %B %Y") }}.</li>
-      <li>{{ <icon name="check" class="mr-1.5 inline h-4 w-4 text-primary-700 dark:text-primary-400" /> }}{{ trans(key="repositories_and_authorship_github_and", lang=lang) | safe }} <a class="{{ link }}" href="https://gitlab.com/{{ gh.profile.login }}">GitLab</a> {{ trans(key="apis_through", lang=lang) | safe }} <code class="font-mono">gh</code> {{ trans(key="and", lang=lang) | safe }} <code class="font-mono">glab</code>, {{ as_of }}; {{ ix.rule }}.</li>
+      <li>{{ <icon name="check" class="mr-1.5 inline h-4 w-4 text-primary-700 dark:text-primary-400" /> }}{{ trans(key="repositories_and_authorship_github_and", lang=lang) | safe }} <a class="{{ link }}" href="{{ config.extra.gitlab_url }}">GitLab</a> {{ trans(key="apis_through", lang=lang) | safe }} <code class="font-mono">gh</code> {{ trans(key="and", lang=lang) | safe }} <code class="font-mono">glab</code>, {{ as_of }}; {{ ix.rule }}.</li>
       <li>{{ <icon name="check" class="mr-1.5 inline h-4 w-4 text-primary-700 dark:text-primary-400" /> }}{{ trans(key="majordomus_release", lang=lang) | safe }} <a class="{{ link }}" href="{{ config.extra.majordomus_build }}">majordomus.dev/build.json</a>, v{{ gh.majordomus.version }}.</li>
       <li>{{ <icon name="check" class="mr-1.5 inline h-4 w-4 text-primary-700 dark:text-primary-400" /> }}{{ trans(key="method_and_every_derivation", lang=lang) | safe }} <a class="{{ link }}" href="{{ base }}stack/#data">{{ trans(key="stack_data", lang=lang) | safe }}</a> {{ trans(key="and_the", lang=lang) | safe }} <a class="{{ link }}" href="{{ config.extra.repo_url }}">{{ trans(key="source_of_this_site", lang=lang) | safe }}</a>.</li>
     </ul>
