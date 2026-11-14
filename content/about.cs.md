@@ -23,7 +23,7 @@ height = "lg"
 
 [[extra.viz]]
 kind = "pack"
-source = "index.languages"
+source = "index.repos"
 title = "viz_pack_title"
 lead = "viz_pack_lead"
 span = 1

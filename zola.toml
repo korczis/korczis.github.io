@@ -26,8 +26,8 @@ external_level = "warn"
 author = "Tomas Korcak"
 author_native = "Tomáš Korčák" # the same name with its Czech diacritics: JSON-LD alternateName
 github = "korczis"
-# GitLab is its own account: never assume it shares the GitHub login.
-gitlab_url = "https://gitlab.com/korczis"
+# GitLab is its own account: never assume it shares the GitHub login (generators read it too).
+gitlab = "korczis"
 # The place, with a Czech twin per form a sentence needs (the hero says "in Brno" / "z Brna").
 location = "Brno, Czech Republic"
 location_cs = "Brno, Česko"

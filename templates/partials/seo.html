@@ -102,7 +102,7 @@
      {%- for l in scv.languages %}{% if loop.first %}
      "knowsLanguage": [{% endif %}{{ l.name | json_encode | safe }}{% if not loop.last %}, {% else %}],{% endif %}{% endfor %}
      "homeLocation": {"@type": "Place", "name": {{ config.extra.location | json_encode | safe }}},
-     "sameAs": ["https://github.com/{{ config.extra.github }}", {{ config.extra.gitlab_url | json_encode | safe }}, {{ config.extra.majordomus_url | json_encode | safe }}],
+     "sameAs": ["https://github.com/{{ config.extra.github }}", "https://gitlab.com/{{ config.extra.gitlab }}", {{ config.extra.majordomus_url | json_encode | safe }}],
      {%- set sx = load_data(path="data/index.json") %}{% set sgl = load_data(path="data/glossary.toml") %}
      "knowsAbout": [{% for l in sx.languages %}{% if loop.index <= 8 %}{{ l.name | json_encode | safe }}, {% endif %}{% endfor %}{% for gt in sgl.terms %}{% if gt.kind == "technology" %}{{ gt.term | json_encode | safe }}, {% endif %}{% endfor %}"Software engineering"]},
     {"@type": "WebSite", "@id": {{ website | json_encode | safe }}, "url": {{ (config.base_url ~ lp ~ "/") | json_encode | safe }},
