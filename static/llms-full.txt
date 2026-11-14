@@ -69,7 +69,7 @@ Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist s
 ## Every original repository
 
 > 211 repositories on GitHub and GitLab where the owner wrote at least half of the commits,
-> derived 2026-11-14T02:42:55Z. Forks and mirrors (283) are not listed.
+> derived 2026-11-14T06:59:40Z. Forks and mirrors (283) are not listed.
 
 ### AI engineering (7)
 

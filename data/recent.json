@@ -1,6 +1,6 @@
 {
  "schema": "korczis-hub-recent/v1",
- "generated_at": "2026-11-14T02:42:55Z",
+ "generated_at": "2026-11-14T06:59:40Z",
  "window_days": 1461,
  "periods": [
   {
@@ -19,6 +19,209 @@
  "rule": "a repository counts when its default branch has a commit in the window; host activity dates are ignored",
  "candidates": 74,
  "repos": [
+  {
+   "name": "korczis.github.io",
+   "period": 12,
+   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+   "category": "ai",
+   "language": "JavaScript",
+   "created_at": "2024-12-24T16:48:15Z",
+   "last_commit": "2026-11-14T02:58:00Z",
+   "last_message": "chore(data): refresh the snapshot and the index",
+   "commits": [
+    {
+     "at": "2026-11-14T02:58:00Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/d109dbe2947dc2479a913acbbafcb8c878738229"
+    },
+    {
+     "at": "2026-11-14T02:26:39Z",
+     "message": "fix(verify): the Flowbite scanner runs where it exists and says so where it does not",
+     "url": "https://github.com/korczis/korczis.github.io/commit/59618de8bba83820c8d920a207357a4437fd5d5f"
+    },
+    {
+     "at": "2026-11-14T01:52:42Z",
+     "message": "fix(refresh): commit through the hooks with Majordomus; audit ignores foreign request echoes",
+     "url": "https://github.com/korczis/korczis.github.io/commit/6b9353f812dcaa9df2656a240d52ac4d1e715ff2"
+    },
+    {
+     "at": "2026-11-14T01:17:59Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/5c76fda06d687ed6194af7f2246cde3d6b17681c"
+    },
+    {
+     "at": "2026-11-14T01:17:51Z",
+     "message": "fix(refresh): GitLab reads have a budget and a fallback, so a refresh never hangs",
+     "url": "https://github.com/korczis/korczis.github.io/commit/7d4d2a27cff651f8dd92a2e9cc23999dc4a67d92"
+    },
+    {
+     "at": "2026-11-12T17:29:04Z",
+     "message": "ci: bump actions/checkout (#6)",
+     "url": "https://github.com/korczis/korczis.github.io/commit/bc4b15a063486b4eefcee98c73f124f907411e6e"
+    },
+    {
+     "at": "2026-11-12T16:16:22Z",
+     "message": "feat(a11y): every visual has a keyboard twin, a list of real links",
+     "url": "https://github.com/korczis/korczis.github.io/commit/db9fb4c4e0012c4360ef2e0d25402b57b1749d93"
+    },
+    {
+     "at": "2026-11-12T15:23:02Z",
+     "message": "feat(viz): tag pages carry visuals, declared in data",
+     "url": "https://github.com/korczis/korczis.github.io/commit/a5fdcf9cbe6c10beb4c67565e4085ac4c3f722d5"
+    },
+    {
+     "at": "2026-11-12T12:39:45Z",
+     "message": "feat(viz): the skills sunburst on the stack page, the ecosystem graph on projects",
+     "url": "https://github.com/korczis/korczis.github.io/commit/c6ac1ca75d86b33aac9ac68bba5ed88628e3be0f"
+    },
+    {
+     "at": "2026-11-12T12:32:28Z",
+     "message": "feat(viz): a concept atlas, a lit galaxy arm and a pulse of four years",
+     "url": "https://github.com/korczis/korczis.github.io/commit/bf10bc06b854a575d563e078b62050ba7a5b0bf7"
+    },
+    {
+     "at": "2026-11-12T11:52:35Z",
+     "message": "feat(viz): every work page carries a live pulse of its commits",
+     "url": "https://github.com/korczis/korczis.github.io/commit/873e6a3138e424eddd0ede890b77552b44b45d97"
+    },
+    {
+     "at": "2026-11-12T11:27:35Z",
+     "message": "feat(viz): a live pulse of public GitHub activity on the home page",
+     "url": "https://github.com/korczis/korczis.github.io/commit/721fc79a6097db5b1f69e1e37f70b329179bdeac"
+    },
+    {
+     "at": "2026-11-12T09:04:13Z",
+     "message": "feat(viz): a galaxy of work, everything clickable, data refreshed every six hours",
+     "url": "https://github.com/korczis/korczis.github.io/commit/f8835ac3705242af61ba2e52520951883b99f78f"
+    },
+    {
+     "at": "2026-11-12T05:56:50Z",
+     "message": "feat(tags): the tag index and every tag page carry an article",
+     "url": "https://github.com/korczis/korczis.github.io/commit/91b2dfccc24ee8b4602721cb33376477ac7253c4"
+    },
+    {
+     "at": "2026-11-12T05:43:17Z",
+     "message": "feat(content): every page is an educational, linked article with a sourced glossary",
+     "url": "https://github.com/korczis/korczis.github.io/commit/c012897c44bf6c5e1d4092ffd0da0035821204ff"
+    },
+    {
+     "at": "2026-11-12T05:15:07Z",
+     "message": "feat(viz): art visuals in D3, composed from front matter",
+     "url": "https://github.com/korczis/korczis.github.io/commit/fac4434b5010b585167006e94fb782d1a41b1f65"
+    },
+    {
+     "at": "2026-11-12T05:10:16Z",
+     "message": "chore(og): regenerate Czech work previews and site.json for the UTC dates",
+     "url": "https://github.com/korczis/korczis.github.io/commit/17f4dbfc02fbe040abcbf18418acbfd93efa7fd9"
+    },
+    {
+     "at": "2026-11-12T05:09:40Z",
+     "message": "fix(work): Czech dates are UTC and locale-free, so generated pages match in CI",
+     "url": "https://github.com/korczis/korczis.github.io/commit/b248c5164037d18411081c27b7932d25ac94bea5"
+    },
+    {
+     "at": "2026-11-12T05:07:27Z",
+     "message": "feat(i18n): every text in English and Czech, tags, hreflang, language switch",
+     "url": "https://github.com/korczis/korczis.github.io/commit/78189666712a0504f2dbb90040779f1cdbf999a3"
+    },
+    {
+     "at": "2026-11-12T04:39:46Z",
+     "message": "feat(landing): the last 12 months, derived from recent commits, link every work page",
+     "url": "https://github.com/korczis/korczis.github.io/commit/e0104a38ee144c66c028d9a61cb9305a2246afe6"
+    },
+    {
+     "at": "2026-11-12T04:15:21Z",
+     "message": "feat(work): a page per project of the last 12, 24 and 48 months",
+     "url": "https://github.com/korczis/korczis.github.io/commit/213ef86696b29a45819ea82a9048284c2fba5641"
+    },
+    {
+     "at": "2026-11-12T04:00:48Z",
+     "message": "build(deps-dev): bump the site group across 1 directory with 2 updates (#4)",
+     "url": "https://github.com/korczis/korczis.github.io/commit/857215c9db53bee8985634f37bc6513e0784be1e"
+    },
+    {
+     "at": "2026-11-12T04:00:45Z",
+     "message": "ci: bump the actions group across 1 directory with 7 updates (#2)",
+     "url": "https://github.com/korczis/korczis.github.io/commit/7eea247d4663db08ca1a914c42f85c10e93e7845"
+    },
+    {
+     "at": "2026-11-12T03:58:42Z",
+     "message": "feat(automation): front-matter contract, site.json, weekly self-refresh",
+     "url": "https://github.com/korczis/korczis.github.io/commit/00fc448ae208b0f4960de6ab2cb3de8b3a0eb877"
+    },
+    {
+     "at": "2026-11-12T03:55:56Z",
+     "message": "feat(hub): every public repository, about and CV, skills, skillset, 11 categories",
+     "url": "https://github.com/korczis/korczis.github.io/commit/736cc62fcda81d20586b949d3b278c2397e3f972"
+    },
+    {
+     "at": "2026-11-12T03:16:39Z",
+     "message": "build(deps): keep playwright-core on the locally cached Chromium",
+     "url": "https://github.com/korczis/korczis.github.io/commit/987c3b00da38e422e299f3161a7ff9c54a5357ff"
+    },
+    {
+     "at": "2026-11-12T02:53:49Z",
+     "message": "fix(gates): count only fetched resources as third-party; verify before every push to master",
+     "url": "https://github.com/korczis/korczis.github.io/commit/8438a0ac10fe7de5c7cff8075ed41c2704357342"
+    },
+    {
+     "at": "2026-11-12T02:52:43Z",
+     "message": "chore(repo): Dependabot, rel=me, documented repository settings",
+     "url": "https://github.com/korczis/korczis.github.io/commit/a1df263e7705af04b3984da596bcc663d9d45cf1"
+    },
+    {
+     "at": "2026-11-12T02:31:05Z",
+     "message": "feat(ui): timeline and command palette",
+     "url": "https://github.com/korczis/korczis.github.io/commit/1bc33f689fb3976b0dedef7a65e8c9724aeaea2f"
+    },
+    {
+     "at": "2026-11-12T02:19:11Z",
+     "message": "feat(catalogue): project detail drawer, table view, interaction tests",
+     "url": "https://github.com/korczis/korczis.github.io/commit/0e06eb2e55c4a028eeaf1ed1291bb2e55be51cf1"
+    }
+   ],
+   "languages": [
+    {
+     "name": "JavaScript",
+     "share": 53.1
+    },
+    {
+     "name": "HTML",
+     "share": 43.1
+    },
+    {
+     "name": "Shell",
+     "share": 2
+    },
+    {
+     "name": "CSS",
+     "share": 1.7
+    }
+   ],
+   "readme": "The personal hub of Tomas Korcak (korczis). It covers who I am, the projects I build with their live sites, the stack behind them, and Majordomus, which supervises the work.",
+   "topics": [
+    "accessibility",
+    "ai-agents",
+    "alpinejs",
+    "chartjs",
+    "cytoscape",
+    "echarts",
+    "flowbite",
+    "github-pages",
+    "majordomus",
+    "p5js",
+    "personal-website",
+    "portfolio",
+    "tailwindcss",
+    "zola"
+   ],
+   "hosts": {
+    "github": "https://github.com/korczis/korczis.github.io"
+   },
+   "site": null,
+   "curated": false,
+   "stars": 0
+  },
   {
    "name": "sonic-playground",
    "period": 12,
@@ -183,11 +386,11 @@
    "languages": [
     {
      "name": "Python",
-     "share": 39.2
+     "share": 39.1
     },
     {
      "name": "JavaScript",
-     "share": 30.1
+     "share": 30.2
     },
     {
      "name": "HTML",
@@ -209,209 +412,6 @@
    },
    "site": "https://korczis.github.io/sonic-playground/",
    "curated": true,
-   "stars": 0
-  },
-  {
-   "name": "korczis.github.io",
-   "period": 12,
-   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-   "category": "ai",
-   "language": "JavaScript",
-   "created_at": "2024-12-24T16:48:15Z",
-   "last_commit": "2026-11-14T02:26:39Z",
-   "last_message": "fix(verify): the Flowbite scanner runs where it exists and says so where it does not",
-   "commits": [
-    {
-     "at": "2026-11-14T02:26:39Z",
-     "message": "fix(verify): the Flowbite scanner runs where it exists and says so where it does not",
-     "url": "https://github.com/korczis/korczis.github.io/commit/59618de8bba83820c8d920a207357a4437fd5d5f"
-    },
-    {
-     "at": "2026-11-14T01:52:42Z",
-     "message": "fix(refresh): commit through the hooks with Majordomus; audit ignores foreign request echoes",
-     "url": "https://github.com/korczis/korczis.github.io/commit/6b9353f812dcaa9df2656a240d52ac4d1e715ff2"
-    },
-    {
-     "at": "2026-11-14T01:17:59Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/5c76fda06d687ed6194af7f2246cde3d6b17681c"
-    },
-    {
-     "at": "2026-11-14T01:17:51Z",
-     "message": "fix(refresh): GitLab reads have a budget and a fallback, so a refresh never hangs",
-     "url": "https://github.com/korczis/korczis.github.io/commit/7d4d2a27cff651f8dd92a2e9cc23999dc4a67d92"
-    },
-    {
-     "at": "2026-11-12T17:29:04Z",
-     "message": "ci: bump actions/checkout (#6)",
-     "url": "https://github.com/korczis/korczis.github.io/commit/bc4b15a063486b4eefcee98c73f124f907411e6e"
-    },
-    {
-     "at": "2026-11-12T16:16:22Z",
-     "message": "feat(a11y): every visual has a keyboard twin, a list of real links",
-     "url": "https://github.com/korczis/korczis.github.io/commit/db9fb4c4e0012c4360ef2e0d25402b57b1749d93"
-    },
-    {
-     "at": "2026-11-12T15:23:02Z",
-     "message": "feat(viz): tag pages carry visuals, declared in data",
-     "url": "https://github.com/korczis/korczis.github.io/commit/a5fdcf9cbe6c10beb4c67565e4085ac4c3f722d5"
-    },
-    {
-     "at": "2026-11-12T12:39:45Z",
-     "message": "feat(viz): the skills sunburst on the stack page, the ecosystem graph on projects",
-     "url": "https://github.com/korczis/korczis.github.io/commit/c6ac1ca75d86b33aac9ac68bba5ed88628e3be0f"
-    },
-    {
-     "at": "2026-11-12T12:32:28Z",
-     "message": "feat(viz): a concept atlas, a lit galaxy arm and a pulse of four years",
-     "url": "https://github.com/korczis/korczis.github.io/commit/bf10bc06b854a575d563e078b62050ba7a5b0bf7"
-    },
-    {
-     "at": "2026-11-12T11:52:35Z",
-     "message": "feat(viz): every work page carries a live pulse of its commits",
-     "url": "https://github.com/korczis/korczis.github.io/commit/873e6a3138e424eddd0ede890b77552b44b45d97"
-    },
-    {
-     "at": "2026-11-12T11:27:35Z",
-     "message": "feat(viz): a live pulse of public GitHub activity on the home page",
-     "url": "https://github.com/korczis/korczis.github.io/commit/721fc79a6097db5b1f69e1e37f70b329179bdeac"
-    },
-    {
-     "at": "2026-11-12T09:04:13Z",
-     "message": "feat(viz): a galaxy of work, everything clickable, data refreshed every six hours",
-     "url": "https://github.com/korczis/korczis.github.io/commit/f8835ac3705242af61ba2e52520951883b99f78f"
-    },
-    {
-     "at": "2026-11-12T05:56:50Z",
-     "message": "feat(tags): the tag index and every tag page carry an article",
-     "url": "https://github.com/korczis/korczis.github.io/commit/91b2dfccc24ee8b4602721cb33376477ac7253c4"
-    },
-    {
-     "at": "2026-11-12T05:43:17Z",
-     "message": "feat(content): every page is an educational, linked article with a sourced glossary",
-     "url": "https://github.com/korczis/korczis.github.io/commit/c012897c44bf6c5e1d4092ffd0da0035821204ff"
-    },
-    {
-     "at": "2026-11-12T05:15:07Z",
-     "message": "feat(viz): art visuals in D3, composed from front matter",
-     "url": "https://github.com/korczis/korczis.github.io/commit/fac4434b5010b585167006e94fb782d1a41b1f65"
-    },
-    {
-     "at": "2026-11-12T05:10:16Z",
-     "message": "chore(og): regenerate Czech work previews and site.json for the UTC dates",
-     "url": "https://github.com/korczis/korczis.github.io/commit/17f4dbfc02fbe040abcbf18418acbfd93efa7fd9"
-    },
-    {
-     "at": "2026-11-12T05:09:40Z",
-     "message": "fix(work): Czech dates are UTC and locale-free, so generated pages match in CI",
-     "url": "https://github.com/korczis/korczis.github.io/commit/b248c5164037d18411081c27b7932d25ac94bea5"
-    },
-    {
-     "at": "2026-11-12T05:07:27Z",
-     "message": "feat(i18n): every text in English and Czech, tags, hreflang, language switch",
-     "url": "https://github.com/korczis/korczis.github.io/commit/78189666712a0504f2dbb90040779f1cdbf999a3"
-    },
-    {
-     "at": "2026-11-12T04:39:46Z",
-     "message": "feat(landing): the last 12 months, derived from recent commits, link every work page",
-     "url": "https://github.com/korczis/korczis.github.io/commit/e0104a38ee144c66c028d9a61cb9305a2246afe6"
-    },
-    {
-     "at": "2026-11-12T04:15:21Z",
-     "message": "feat(work): a page per project of the last 12, 24 and 48 months",
-     "url": "https://github.com/korczis/korczis.github.io/commit/213ef86696b29a45819ea82a9048284c2fba5641"
-    },
-    {
-     "at": "2026-11-12T04:00:48Z",
-     "message": "build(deps-dev): bump the site group across 1 directory with 2 updates (#4)",
-     "url": "https://github.com/korczis/korczis.github.io/commit/857215c9db53bee8985634f37bc6513e0784be1e"
-    },
-    {
-     "at": "2026-11-12T04:00:45Z",
-     "message": "ci: bump the actions group across 1 directory with 7 updates (#2)",
-     "url": "https://github.com/korczis/korczis.github.io/commit/7eea247d4663db08ca1a914c42f85c10e93e7845"
-    },
-    {
-     "at": "2026-11-12T03:58:42Z",
-     "message": "feat(automation): front-matter contract, site.json, weekly self-refresh",
-     "url": "https://github.com/korczis/korczis.github.io/commit/00fc448ae208b0f4960de6ab2cb3de8b3a0eb877"
-    },
-    {
-     "at": "2026-11-12T03:55:56Z",
-     "message": "feat(hub): every public repository, about and CV, skills, skillset, 11 categories",
-     "url": "https://github.com/korczis/korczis.github.io/commit/736cc62fcda81d20586b949d3b278c2397e3f972"
-    },
-    {
-     "at": "2026-11-12T03:16:39Z",
-     "message": "build(deps): keep playwright-core on the locally cached Chromium",
-     "url": "https://github.com/korczis/korczis.github.io/commit/987c3b00da38e422e299f3161a7ff9c54a5357ff"
-    },
-    {
-     "at": "2026-11-12T02:53:49Z",
-     "message": "fix(gates): count only fetched resources as third-party; verify before every push to master",
-     "url": "https://github.com/korczis/korczis.github.io/commit/8438a0ac10fe7de5c7cff8075ed41c2704357342"
-    },
-    {
-     "at": "2026-11-12T02:52:43Z",
-     "message": "chore(repo): Dependabot, rel=me, documented repository settings",
-     "url": "https://github.com/korczis/korczis.github.io/commit/a1df263e7705af04b3984da596bcc663d9d45cf1"
-    },
-    {
-     "at": "2026-11-12T02:31:05Z",
-     "message": "feat(ui): timeline and command palette",
-     "url": "https://github.com/korczis/korczis.github.io/commit/1bc33f689fb3976b0dedef7a65e8c9724aeaea2f"
-    },
-    {
-     "at": "2026-11-12T02:19:11Z",
-     "message": "feat(catalogue): project detail drawer, table view, interaction tests",
-     "url": "https://github.com/korczis/korczis.github.io/commit/0e06eb2e55c4a028eeaf1ed1291bb2e55be51cf1"
-    },
-    {
-     "at": "2026-11-12T02:08:49Z",
-     "message": "feat(ui): Flowbite Pro application shell, categories, dashboard pages",
-     "url": "https://github.com/korczis/korczis.github.io/commit/810b06599d107aeedf3c668c4d742f33bb823556"
-    }
-   ],
-   "languages": [
-    {
-     "name": "JavaScript",
-     "share": 53.2
-    },
-    {
-     "name": "HTML",
-     "share": 43.2
-    },
-    {
-     "name": "Shell",
-     "share": 1.9
-    },
-    {
-     "name": "CSS",
-     "share": 1.7
-    }
-   ],
-   "readme": "The personal hub of Tomas Korcak (korczis). It covers who I am, the projects I build with their live sites, the stack behind them, and Majordomus, which supervises the work.",
-   "topics": [
-    "accessibility",
-    "ai-agents",
-    "alpinejs",
-    "chartjs",
-    "cytoscape",
-    "echarts",
-    "flowbite",
-    "github-pages",
-    "majordomus",
-    "p5js",
-    "personal-website",
-    "portfolio",
-    "tailwindcss",
-    "zola"
-   ],
-   "hosts": {
-    "github": "https://github.com/korczis/korczis.github.io"
-   },
-   "site": null,
-   "curated": false,
    "stars": 0
   },
   {

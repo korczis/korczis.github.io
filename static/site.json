@@ -11,8 +11,8 @@
  },
  "front_matter_schema": "https://korczis.github.io/schemas/front-matter.schema.json",
  "data_as_of": {
-  "snapshot": "2026-11-14T02:27:37Z",
-  "index": "2026-11-14T02:42:55Z"
+  "snapshot": "2026-11-14T06:44:24Z",
+  "index": "2026-11-14T06:59:40Z"
  },
  "pages": [
   {
@@ -1125,8 +1125,8 @@
    "keywords": [
     "nedávná práce Tomáše Korčáka",
     "korczis",
-    "sonic-playground",
     "korczis.github.io",
+    "sonic-playground",
     "oscilla",
     "algoglyph",
     "kompendium-epistemicke-anihilace",
@@ -2856,8 +2856,8 @@
    "keywords": [
     "Tomas Korcak recent work",
     "korczis",
-    "sonic-playground",
     "korczis.github.io",
+    "sonic-playground",
     "oscilla",
     "algoglyph",
     "kompendium-epistemicke-anihilace",
@@ -3817,7 +3817,7 @@
    "gitlab": null,
    "site": null,
    "created": "2024-12-24T16:48:15Z",
-   "active": "2026-11-14T02:27:07Z"
+   "active": "2026-11-14T02:58:17Z"
   },
   {
    "name": "sonic-playground",
@@ -3828,7 +3828,7 @@
    "gitlab": null,
    "site": "https://korczis.github.io/sonic-playground/",
    "created": "2026-11-12T00:48:36Z",
-   "active": "2026-11-14T02:22:57Z"
+   "active": "2026-11-14T02:33:38Z"
   },
   {
    "name": "algoglyph",

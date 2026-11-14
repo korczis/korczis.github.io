@@ -1,6 +1,6 @@
 {
  "schema": "korczis-hub-index/v1",
- "generated_at": "2026-11-14T02:42:55Z",
+ "generated_at": "2026-11-14T06:59:40Z",
  "rule": "original = the owner wrote at least half of the listed commits; forks and mirrors are counted, not listed",
  "counts": {
   "github": 447,
@@ -1568,9 +1568,9 @@
    ],
    "stars": 0,
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-14T02:27:07Z",
+   "pushed_at": "2026-11-14T02:58:17Z",
    "archived": false,
-   "share": 0.93,
+   "share": 0.91,
    "hosts": {
     "github": "https://github.com/korczis/korczis.github.io"
    },
@@ -2884,7 +2884,7 @@
    "topics": [],
    "stars": 0,
    "created_at": "2026-11-12T00:48:36Z",
-   "pushed_at": "2026-11-14T02:22:57Z",
+   "pushed_at": "2026-11-14T02:33:38Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -4837,7 +4837,7 @@
  "recent": {
   "size": 100,
   "from": "2018-06-24T03:58:28Z",
-  "to": "2026-11-14T02:27:07Z",
+  "to": "2026-11-14T02:58:17Z",
   "mix": {
    "ai": {
     "JavaScript": 1,
@@ -4919,9 +4919,9 @@
    ],
    "stars": 0,
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-14T02:27:07Z",
+   "pushed_at": "2026-11-14T02:58:17Z",
    "archived": false,
-   "share": 0.93,
+   "share": 0.91,
    "hosts": {
     "github": "https://github.com/korczis/korczis.github.io"
    },
@@ -4936,7 +4936,7 @@
    "topics": [],
    "stars": 0,
    "created_at": "2026-11-12T00:48:36Z",
-   "pushed_at": "2026-11-14T02:22:57Z",
+   "pushed_at": "2026-11-14T02:33:38Z",
    "archived": false,
    "share": 1,
    "hosts": {
