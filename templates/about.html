@@ -8,8 +8,6 @@
 {%- set cat = load_data(path="data/projects.toml") -%}
 {%- set cv = load_data(path="data/cv.toml") -%}
 {%- set base = config.base_url ~ lp ~ "/" -%}
-{%- set card = "min-w-0 rounded-lg bg-white p-4 shadow dark:bg-gray-800 sm:p-6" -%}
-{%- set card_title = "text-xl font-bold leading-none text-gray-900 dark:text-white" -%}
 {%- set link = "font-medium text-primary-700 hover:underline dark:text-primary-400" -%}
 {%- set since = gh.profile.created_at | date(format="%Y") -%}
 {%- set years = (now() | date(format="%Y") | int) - (since | int) -%}
@@ -19,7 +17,7 @@
 <div class="space-y-4 px-4 pb-2 pt-6">
   <div class="grid grid-cols-1 gap-4 xl:grid-cols-3">
     {#- Profile: Flowbite Pro profile card (users/profile), every fact linked to its source. #}
-    <section class="{{ card }}" aria-labelledby="profile-title">
+    {% <card labelledby="profile-title"> %}
       <div class="mb-5 flex items-center gap-4">
         <img src="{{ get_url(path='favicon.svg') }}" width="64" height="64" class="h-16 w-16 rounded-lg" alt="">
         <div>
@@ -27,7 +25,7 @@
           <p class="font-mono text-sm text-primary-700 dark:text-primary-400">{{ gh.profile.login }}</p>
           <p class="text-sm text-gray-600 dark:text-gray-400">{{ trans(key="software_engineer", lang=lang) | safe }} {{ config.extra["location" ~ sfx] }}</p>
           {%- if gh.profile.hireable %}
-          <span class="mt-1 inline-flex items-center rounded bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800 dark:bg-green-900 dark:text-green-300">{{ trans(key="open_to_work", lang=lang) | safe }}</span>
+          <span class="mt-1 inline-block">{{ <badge label={trans(key="open_to_work", lang=lang)} tone="green" dot={true} /> }}</span>
           {%- endif %}
         </div>
       </div>
@@ -38,41 +36,38 @@
         <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="most_used_language", lang=lang) | safe }}</dt><dd class="font-semibold text-gray-900 dark:text-white">{{ ix.languages[0].name }} ({{ ix.languages[0].repos }})</dd></div>
         <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="author_of", lang=lang) | safe }}</dt><dd><a class="{{ link }}" href="{{ config.extra.majordomus_url }}">Majordomus</a></dd></div>
       </dl>
-      <div class="mt-5 flex flex-wrap gap-2 border-t border-gray-200 pt-4 dark:border-gray-700">
+      <div class="mt-5 flex flex-wrap gap-2 border-t border-gray-200 pt-4 dark:border-gray-700 print:hidden">
         {%- if gh.profile.email %}
-        <a href="mailto:{{ gh.profile.email }}" class="inline-flex items-center rounded-lg bg-primary-700 px-3 py-2 text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">{{ <icon name="mail" class="mr-2 h-4 w-4" /> }}{{ trans(key="contact_email", lang=lang) | safe }}<span class="sr-only">: {{ gh.profile.email }}</span></a>
+        {{ <button label={trans(key="contact_email", lang=lang)} href={"mailto:" ~ gh.profile.email} size="sm" icon="mail" sr={gh.profile.email} /> }}
         {%- endif %}
-        <a href="https://github.com/{{ gh.profile.login }}" class="inline-flex items-center rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700">{{ <icon name="github" class="mr-2 h-4 w-4" /> }}GitHub</a>
-        <a href="https://gitlab.com/{{ gh.profile.login }}" class="inline-flex items-center rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700">{{ <icon name="code" class="mr-2 h-4 w-4" /> }}GitLab</a>
-        <a href="{{ config.extra.majordomus_url }}" class="inline-flex items-center rounded-lg bg-primary-700 px-3 py-2 text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">{{ <icon name="shield" class="mr-2 h-4 w-4" /> }}majordomus.dev</a>
-        <button type="button" data-js onclick="window.print()" class="inline-flex items-center rounded-lg px-3 py-2 text-sm font-medium text-primary-700 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-primary-400 dark:hover:bg-gray-700 dark:focus:ring-gray-700">{{ trans(key="print_as_cv", lang=lang) | safe }}</button>
+        {{ <button label="GitHub" href={"https://github.com/" ~ gh.profile.login} variant="secondary" size="sm" icon="github" /> }}
+        {{ <button label="GitLab" href={"https://gitlab.com/" ~ gh.profile.login} variant="secondary" size="sm" icon="code" /> }}
+        {{ <button label="majordomus.dev" href={config.extra.majordomus_url} size="sm" icon="shield" /> }}
+        {{ <button label={trans(key="print_as_cv", lang=lang)} variant="ghost" attrs='data-js onclick="window.print()"' /> }}
       </div>
-    </section>
+    {% </card> %}
 
     {#- What I build: categories with derived counts across every original repository. #}
-    <section class="{{ card }} xl:col-span-2" aria-labelledby="build-title">
-      <h2 id="build-title" class="{{ card_title }}">{{ trans(key="what_i_build", lang=lang) | safe }}</h2>
-      <p class="mb-5 mt-2 text-gray-600 dark:text-gray-400">
-        {{ trans(key="for", lang=lang) | safe }} {{ years }} {{ trans(key="years_in_public_tools_that_make", lang=lang) | safe }}
-      </p>
+    {% <card cls="xl:col-span-2" labelledby="build-title"> %}
+      {{ <card_head id="build-title" title={trans(key="what_i_build", lang=lang)} lead={trans(key="for", lang=lang) ~ " " ~ years ~ " " ~ trans(key="years_in_public_tools_that_make", lang=lang)} /> }}
       <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
         {%- for key, c in cat.categories %}
         <a href="{{ base }}projects/{{ key }}/" class="group flex items-start gap-3 rounded-lg border border-gray-200 p-4 hover:bg-gray-50 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-700">
           <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary-100 text-primary-700 dark:bg-primary-900 dark:text-primary-300">{{ <category_icon key={key} class="h-5 w-5" /> }}</span>
           <span class="min-w-0">
-            <span class="flex items-center gap-2 font-semibold text-gray-900 group-hover:text-primary-700 dark:text-white dark:group-hover:text-primary-400">{{ c["name" ~ sfx] }}<span class="tabular rounded-full bg-gray-100 px-2 py-0.5 text-xs font-medium text-gray-800 dark:bg-gray-700 dark:text-gray-300">{{ ix.by_category[key] | default(value=0) }}</span></span>
+            <span class="flex items-center gap-2 font-semibold text-gray-900 group-hover:text-primary-700 dark:text-white dark:group-hover:text-primary-400">{{ c["name" ~ sfx] }}{{ <badge label={ix.by_category[key] | default(value=0) ~ ""} /> }}</span>
             <span class="mt-1 block text-sm text-gray-600 dark:text-gray-400">{{ c["description" ~ sfx] }}</span>
           </span>
         </a>
         {%- endfor %}
       </div>
-    </section>
+    {% </card> %}
 
     {#- Curriculum vitae: the owner's facts from data/cv.toml (ADR 0004), rendered only when present.
         Flowbite Pro timeline (components/timeline) for roles and education. #}
     {%- if cv.roles | length > 0 or cv.education | length > 0 or cv.languages | length > 0 %}
-    <section class="{{ card }} xl:col-span-3" aria-labelledby="cv-title">
-      <h2 id="cv-title" class="{{ card_title }}">{{ trans(key="cv_title", lang=lang) | safe }}</h2>
+    {% <card cls="xl:col-span-3" labelledby="cv-title"> %}
+      {{ <card_head id="cv-title" title={trans(key="cv_title", lang=lang)} /> }}
       <div class="mt-5 grid grid-cols-1 gap-6 lg:grid-cols-3">
         {%- for group in [["cv_experience", cv.roles], ["cv_education", cv.education]] %}{% if group[1] | length > 0 %}
         <div class="min-w-0{% if group[0] == "cv_experience" %} lg:col-span-2{% endif %}">
@@ -103,7 +98,7 @@
         </div>
         {%- endif %}
       </div>
-    </section>
+    {% </card> %}
     {%- endif %}
   </div>
 
@@ -112,23 +107,15 @@
 
   {#- Skills: derived, each with its evidence (Flowbite badges + tooltips). Languages come from every
       original repository, technologies from the curated projects' stacks, domains from the categories. #}
-  <section class="{{ card }}" aria-labelledby="skills-title">
-    <h2 id="skills-title" class="{{ card_title }}">{{ trans(key="skills", lang=lang) | safe }}</h2>
-    <p class="mb-5 mt-1 text-sm text-gray-600 dark:text-gray-400">{{ trans(key="derived_not_claimed_every_skill_links", lang=lang) | safe }}</p>
+  {% <card labelledby="skills-title"> %}
+    {{ <card_head id="skills-title" title={trans(key="skills", lang=lang)} lead={trans(key="derived_not_claimed_every_skill_links", lang=lang)} /> }}
     <div class="grid grid-cols-1 gap-6 lg:grid-cols-3">
       <div>
         <h3 class="mb-3 text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400">{{ trans(key="languages", lang=lang) | safe }}</h3>
         <ul class="flex flex-wrap gap-2">
           {%- for l in ix.skills.languages %}{% if loop.index <= 14 %}
-          <li>
-            <a href="{{ base }}repositories/?language={{ l.name | urlencode }}" data-tooltip-target="tip-lang-{{ loop.index }}"
-              class="inline-flex items-center gap-1.5 rounded-lg border border-gray-200 bg-gray-50 px-3 py-1.5 text-sm font-medium text-gray-900 hover:border-primary-300 hover:bg-primary-50 hover:text-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:focus:ring-primary-800">
-              {{ l.name }}<span class="tabular rounded-full bg-primary-100 px-1.5 text-xs font-semibold text-primary-800 dark:bg-primary-900 dark:text-primary-300">{{ l.repos }}</span>
-            </a>
-            <div id="tip-lang-{{ loop.index }}" role="tooltip" class="tooltip invisible absolute z-10 inline-block max-w-xs rounded-lg bg-gray-900 px-3 py-2 text-xs font-medium text-white opacity-0 shadow-sm transition-opacity duration-300 dark:bg-gray-700">
-              {{ l.repos }} {{ trans(key="original_repositories_latest", lang=lang) | safe }} {% for e in l.evidence %}{{ e.name }}{% if not loop.last %}, {% endif %}{% endfor %}<div class="tooltip-arrow" data-popper-arrow></div>
-            </div>
-          </li>
+          {%- set_global ev = "" %}{% for e in l.evidence %}{% set_global ev = ev ~ e.name %}{% if not loop.last %}{% set_global ev = ev ~ ", " %}{% endif %}{% endfor %}
+          <li>{{ <chip label={l.name} href={base ~ "repositories/?language=" ~ l.name | urlencode} count={l.repos ~ ""} tip={l.repos ~ " " ~ trans(key="original_repositories_latest", lang=lang) ~ " " ~ ev} tip_id={"tip-lang-" ~ loop.index} /> }}</li>
           {%- endif %}{% endfor %}
         </ul>
       </div>
@@ -136,40 +123,26 @@
         <h3 class="mb-3 text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400">{{ trans(key="technologies", lang=lang) | safe }}</h3>
         <ul class="flex flex-wrap gap-2">
           {%- for t in ix.skills.technologies %}
-          <li>
-            <a href="{{ base }}projects/?project={{ t.evidence[0].repo }}" data-tooltip-target="tip-tech-{{ loop.index }}"
-              class="inline-flex items-center gap-1.5 rounded-lg border border-gray-200 bg-gray-50 px-3 py-1.5 text-sm font-medium text-gray-900 hover:border-primary-300 hover:bg-primary-50 hover:text-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:focus:ring-primary-800">
-              {{ t.name }}<span class="tabular rounded-full bg-primary-100 px-1.5 text-xs font-semibold text-primary-800 dark:bg-primary-900 dark:text-primary-300">{{ t.projects }}</span>
-            </a>
-            <div id="tip-tech-{{ loop.index }}" role="tooltip" class="tooltip invisible absolute z-10 inline-block max-w-xs rounded-lg bg-gray-900 px-3 py-2 text-xs font-medium text-white opacity-0 shadow-sm transition-opacity duration-300 dark:bg-gray-700">
-              {{ trans(key="used_in", lang=lang) | safe }} {% for e in t.evidence %}{{ e.name }}{% if not loop.last %}, {% endif %}{% endfor %}<div class="tooltip-arrow" data-popper-arrow></div>
-            </div>
-          </li>
+          {%- set_global ev = "" %}{% for e in t.evidence %}{% set_global ev = ev ~ e.name %}{% if not loop.last %}{% set_global ev = ev ~ ", " %}{% endif %}{% endfor %}
+          <li>{{ <chip label={t.name} href={base ~ "projects/?project=" ~ t.evidence[0].repo} count={t.projects ~ ""} tip={trans(key="used_in", lang=lang) ~ " " ~ ev} tip_id={"tip-tech-" ~ loop.index} /> }}</li>
           {%- endfor %}
-          <li><a href="{{ base }}stack/" class="inline-flex items-center rounded-lg px-3 py-1.5 text-sm font-medium text-primary-700 hover:underline dark:text-primary-400">{{ trans(key="the_whole_stack", lang=lang) | safe }}{{ <icon name="arrow-right" class="ml-1 h-4 w-4" /> }}</a></li>
+          <li>{{ <button label={trans(key="the_whole_stack", lang=lang)} href={base ~ "stack/"} variant="ghost" icon_after="arrow-right" /> }}</li>
         </ul>
       </div>
       <div>
         <h3 class="mb-3 text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400">{{ trans(key="domains", lang=lang) | safe }}</h3>
         <ul class="flex flex-wrap gap-2">
           {%- for key, c in cat.categories %}
-          <li>
-            <a href="{{ base }}projects/{{ key }}/" class="inline-flex items-center gap-1.5 rounded-lg border border-gray-200 bg-gray-50 px-3 py-1.5 text-sm font-medium text-gray-900 hover:border-primary-300 hover:bg-primary-50 hover:text-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:focus:ring-primary-800">
-              {{ <category_icon key={key} class="h-4 w-4 text-primary-700 dark:text-primary-400" /> }}{{ c["name" ~ sfx] }}<span class="tabular rounded-full bg-primary-100 px-1.5 text-xs font-semibold text-primary-800 dark:bg-primary-900 dark:text-primary-300">{{ ix.by_category[key] | default(value=0) }}</span>
-            </a>
-          </li>
+          <li>{{ <chip label={c["name" ~ sfx]} href={base ~ "projects/" ~ key ~ "/"} count={ix.by_category[key] | default(value=0) ~ ""} icon={key} /> }}</li>
           {%- endfor %}
         </ul>
       </div>
     </div>
-  </section>
+  {% </card> %}
 
   {#- Selected work: the curated catalogue, linked to each project's detail. #}
-  <section class="{{ card }}" aria-labelledby="selected-title">
-    <div class="mb-4 flex items-center justify-between">
-      <h2 id="selected-title" class="{{ card_title }}">{{ trans(key="selected_work", lang=lang) | safe }}</h2>
-      <a href="{{ base }}projects/" class="inline-flex shrink-0 items-center whitespace-nowrap rounded-lg p-2 text-sm font-medium text-primary-700 hover:bg-gray-100 dark:text-primary-400 dark:hover:bg-gray-700">{{ trans(key="all_projects", lang=lang) | safe }}{{ <icon name="arrow-right" class="ml-1 h-4 w-4" /> }}</a>
-    </div>
+  {% <card labelledby="selected-title"> %}
+    {{ <card_head id="selected-title" title={trans(key="selected_work", lang=lang)} action={trans(key="all_projects", lang=lang)} href={base ~ "projects/"} /> }}
     <div class="grid grid-cols-1 gap-x-8 md:grid-cols-2">
       {%- for p in cat.projects %}{% if p.featured %}
       {%- set f = gh.projects[p.repo] %}
@@ -182,18 +155,18 @@
       </div>
       {%- endif %}{% endfor %}
     </div>
-  </section>
+  {% </card> %}
 
   {#- Sources: where every number on this page comes from, with its date. #}
-  <section class="{{ card }}" aria-labelledby="sources-title">
-    <h2 id="sources-title" class="{{ card_title }}">{{ trans(key="sources", lang=lang) | safe }}</h2>
-    <ul class="mt-4 space-y-2 text-sm text-gray-600 dark:text-gray-400">
+  {% <card labelledby="sources-title"> %}
+    {{ <card_head id="sources-title" title={trans(key="sources", lang=lang)} /> }}
+    <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
       <li>{{ <icon name="check" class="mr-1.5 inline h-4 w-4 text-primary-700 dark:text-primary-400" /> }}{{ trans(key="profile_contributions_and_languages", lang=lang) | safe }} <a class="{{ link }}" href="https://github.com/{{ gh.profile.login }}">{{ trans(key="github_api", lang=lang) | safe }}</a>, {{ gh.generated_at | date(format="%-d %B %Y") }}.</li>
       <li>{{ <icon name="check" class="mr-1.5 inline h-4 w-4 text-primary-700 dark:text-primary-400" /> }}{{ trans(key="repositories_and_authorship_github_and", lang=lang) | safe }} <a class="{{ link }}" href="https://gitlab.com/{{ gh.profile.login }}">GitLab</a> {{ trans(key="apis_through", lang=lang) | safe }} <code class="font-mono">gh</code> {{ trans(key="and", lang=lang) | safe }} <code class="font-mono">glab</code>, {{ as_of }}; {{ ix.rule }}.</li>
       <li>{{ <icon name="check" class="mr-1.5 inline h-4 w-4 text-primary-700 dark:text-primary-400" /> }}{{ trans(key="majordomus_release", lang=lang) | safe }} <a class="{{ link }}" href="{{ config.extra.majordomus_build }}">majordomus.dev/build.json</a>, v{{ gh.majordomus.version }}.</li>
       <li>{{ <icon name="check" class="mr-1.5 inline h-4 w-4 text-primary-700 dark:text-primary-400" /> }}{{ trans(key="method_and_every_derivation", lang=lang) | safe }} <a class="{{ link }}" href="{{ base }}stack/#data">{{ trans(key="stack_data", lang=lang) | safe }}</a> {{ trans(key="and_the", lang=lang) | safe }} <a class="{{ link }}" href="{{ config.extra.repo_url }}">{{ trans(key="source_of_this_site", lang=lang) | safe }}</a>.</li>
     </ul>
-  </section>
+  {% </card> %}
 </div>
 {% endblock content %}
 

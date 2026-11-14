@@ -19,9 +19,6 @@
 {%- set year_joined = gh.profile.created_at | date(format="%Y") | int -%}
 {%- set years = year_now - year_joined -%}
 {%- set as_of = gh.generated_at | date(format="%-d %B %Y") -%}
-{%- set card = "min-w-0 rounded-lg bg-white p-4 shadow dark:bg-gray-800 sm:p-6" -%}
-{%- set card_title = "text-xl font-bold leading-none text-gray-900 dark:text-white" -%}
-{%- set view_all = "inline-flex shrink-0 items-center whitespace-nowrap rounded-lg p-2 text-sm font-medium text-primary-700 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-primary-400 dark:hover:bg-gray-700 dark:focus:ring-gray-700" -%}
 
 <div class="space-y-4 px-4 pb-2 pt-6">
 
@@ -52,18 +49,14 @@
         </p>
         <div class="flex flex-col gap-3 sm:flex-row">
           {%- if gh.profile.email %}
-          <a href="mailto:{{ gh.profile.email }}" class="inline-flex items-center justify-center rounded-lg bg-primary-700 px-5 py-3 text-base font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
-            {{ <icon name="mail" class="-ml-1 mr-2 h-5 w-5" /> }}{{ trans(key="hero_contact", lang=lang) | safe }}<span class="sr-only">: {{ gh.profile.email }}</span>
-          </a>
+          {{ <button label={trans(key="hero_contact", lang=lang)} href={"mailto:" ~ gh.profile.email} size="lg" icon="mail" sr={gh.profile.email} /> }}
           {%- endif %}
-          <a href="{{ base }}about/" class="inline-flex items-center justify-center rounded-lg border border-gray-300 bg-white px-5 py-3 text-base font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">
-            {{ <icon name="book" class="-ml-1 mr-2 h-5 w-5" /> }}{{ trans(key="about_and_cv", lang=lang) | safe }}
-          </a>
+          {{ <button label={trans(key="about_and_cv", lang=lang)} href={base ~ "about/"} variant="secondary" size="lg" icon="book" /> }}
         </div>
         {#- The languages of every original repository, each a link into the index (derived). #}
         <ul class="mt-6 flex flex-wrap gap-2" aria-label="{{ trans(key="most_used_languages", lang=lang) }}">
           {%- for l in ix.languages %}{% if loop.index <= 8 %}
-          <li><a href="{{ base }}repositories/?language={{ l.name | urlencode }}" class="inline-flex items-center gap-1 rounded-md bg-gray-100 px-2.5 py-1 text-xs font-medium text-gray-800 hover:bg-primary-100 hover:text-primary-800 dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-primary-900 dark:hover:text-primary-200">{{ l.name }}<span class="tabular text-gray-600 dark:text-gray-300">{{ l.repos }}</span></a></li>
+          <li>{{ <chip label={l.name} href={base ~ "repositories/?language=" ~ l.name | urlencode} count={l.repos ~ ""} size="xs" /> }}</li>
           {%- endif %}{% endfor %}
         </ul>
       </div>
@@ -90,27 +83,20 @@
   {#- Skillset: the most recently active repositories as categories and languages (ECharts sunburst),
       beside the technologies of the curated projects, each linked to its evidence. #}
   <div class="grid grid-cols-1 gap-4 xl:grid-cols-3">
-    <section class="{{ card }} xl:col-span-2" aria-labelledby="skillset-title">
-      <div class="mb-2 flex flex-wrap items-start justify-between gap-3">
-        <div>
-          <h2 id="skillset-title" class="{{ card_title }}">{{ trans(key="skillset_from_the_last", lang=lang) | safe }} {{ ix.recent.size }} {{ trans(key="projects", lang=lang) | safe }}</h2>
-          <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">{{ trans(key="what_the_most_recently_active_repositories", lang=lang) | safe }} {{ ix.recent.from | date(format="%b %Y") }} {{ trans(key="to", lang=lang) | safe }} {{ ix.recent.to | date(format="%b %Y") }}{{ trans(key="click_a_segment_to_open_its", lang=lang) | safe }}</p>
-        </div>
-        <a href="{{ base }}about/#skills-title" class="{{ view_all }}">{{ trans(key="all_skills", lang=lang) | safe }}{{ <icon name="arrow-right" class="ml-1 h-4 w-4" /> }}</a>
-      </div>
+    {% <card cls="xl:col-span-2" labelledby="skillset-title"> %}
+      {{ <card_head id="skillset-title" title={trans(key="skillset_from_the_last", lang=lang) ~ " " ~ ix.recent.size ~ " " ~ trans(key="projects", lang=lang)} lead={trans(key="what_the_most_recently_active_repositories", lang=lang) ~ " " ~ ix.recent.from | date(format="%b %Y") ~ " " ~ trans(key="to", lang=lang) ~ " " ~ ix.recent.to | date(format="%b %Y") ~ trans(key="click_a_segment_to_open_its", lang=lang)} action={trans(key="all_skills", lang=lang)} href={base ~ "about/#skills-title"} /> }}
       <div class="viz-box h-[22rem] sm:h-[26rem]" data-viz="skillset" data-source="skillset-data" role="img"
         aria-label="{{ trans(key="aria_sunburst", lang=lang) | replace(from="{n}", to=ix.recent.size ~ "") }}">
         <div data-canvas></div>
       </div>
       {%- include "partials/viz-list.html" %}
       <script type="application/json" id="skillset-data">{"mix": {{ ix.recent.mix | json_encode | safe }}, "names": { {%- for key, c in cat.categories %}{{ key | json_encode | safe }}: {{ c["name" ~ sfx] | json_encode | safe }}{% if not loop.last %}, {% endif %}{% endfor -%} }}</script>
-    </section>
-    <section class="{{ card }}" aria-labelledby="tech-title">
-      <h2 id="tech-title" class="{{ card_title }}">{{ trans(key="technologies", lang=lang) | safe }}</h2>
-      <p class="mb-4 mt-1 text-sm text-gray-600 dark:text-gray-400">{{ trans(key="in_the_stacks_of_the_featured", lang=lang) | safe }}</p>
+    {% </card> %}
+    {% <card labelledby="tech-title"> %}
+      {{ <card_head id="tech-title" title={trans(key="technologies", lang=lang)} lead={trans(key="in_the_stacks_of_the_featured", lang=lang)} /> }}
       <ul class="mb-5 flex flex-wrap gap-2">
         {%- for t in ix.skills.technologies %}
-        <li><a href="{{ base }}projects/?project={{ t.evidence[0].repo }}" class="inline-flex items-center gap-1.5 rounded-md border border-gray-200 bg-gray-50 px-2.5 py-1 text-xs font-medium text-gray-900 hover:border-primary-300 hover:bg-primary-50 hover:text-primary-800 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100 dark:hover:bg-gray-600">{{ t.name }}<span class="tabular text-gray-600 dark:text-gray-400">{{ t.projects }}</span></a></li>
+        <li>{{ <chip label={t.name} href={base ~ "projects/?project=" ~ t.evidence[0].repo} count={t.projects ~ ""} size="xs" /> }}</li>
         {%- endfor %}
       </ul>
       <h3 class="mb-3 text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400">{{ trans(key="languages_all_original_work", lang=lang) | safe }}</h3>
@@ -122,7 +108,7 @@
         </li>
         {%- endif %}{% endfor %}
       </ul>
-    </section>
+    {% </card> %}
   </div>
 
   <div class="grid grid-cols-1 gap-4 xl:grid-cols-3">
@@ -130,14 +116,8 @@
         window), newest first, each opening its own work page. Flowbite Pro compact list card. #}
     {%- set rc = load_data(path="data/recent.json") %}
     {%- set_global n12 = 0 %}{% for r in rc.repos %}{% if r.period == 12 %}{% set_global n12 = n12 + 1 %}{% endif %}{% endfor %}
-    <section class="{{ card }} xl:col-span-2" aria-labelledby="work-title">
-      <div class="mb-4 flex items-center justify-between gap-3">
-        <div>
-          <h2 id="work-title" class="{{ card_title }}">{{ trans(key="the_last_12_months", lang=lang) | safe }}</h2>
-          <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">{{ n12 }} {{ trans(key="projects_with_a_commit_this_year", lang=lang) | safe }}</p>
-        </div>
-        <a href="{{ base }}work/" class="{{ view_all }}">{{ trans(key="all_recent_work", lang=lang) | safe }}{{ <icon name="arrow-right" class="ml-1 h-4 w-4" /> }}</a>
-      </div>
+    {% <card cls="xl:col-span-2" labelledby="work-title"> %}
+      {{ <card_head id="work-title" title={trans(key="the_last_12_months", lang=lang)} lead={n12 ~ " " ~ trans(key="projects_with_a_commit_this_year", lang=lang)} action={trans(key="all_recent_work", lang=lang)} href={base ~ "work/"} /> }}
       <ul class="divide-y divide-gray-200 dark:divide-gray-700">
         {%- set_global shown = 0 %}
         {%- for r in rc.repos %}{% if r.period == 12 and shown < 8 %}{% set_global shown = shown + 1 %}
@@ -146,7 +126,7 @@
           <a href="{{ base }}work/{{ slug }}/" class="group -mx-2 flex items-center gap-4 rounded-lg px-2 py-3 hover:bg-gray-50 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-700">
             <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary-100 text-primary-700 dark:bg-primary-900 dark:text-primary-300">{{ <category_icon key={r.category} class="h-5 w-5" /> }}</span>
             <span class="min-w-0 flex-1">
-              <span class="flex flex-wrap items-center gap-2 text-sm font-semibold text-gray-900 group-hover:underline dark:text-white">{{ r.name }}{% if r.curated %}<span class="rounded bg-primary-100 px-1.5 py-0.5 text-xs font-medium text-primary-800 no-underline dark:bg-primary-900 dark:text-primary-300">{{ trans(key="featured", lang=lang) | safe }}</span>{% endif %}</span>
+              <span class="flex flex-wrap items-center gap-2 text-sm font-semibold text-gray-900 group-hover:underline dark:text-white">{{ r.name }}{% if r.curated %}{{ <badge label={trans(key="featured", lang=lang)} tone="primary" /> }}{% endif %}</span>
               {%- set_global rline = "" %}{% if lang == "cs" and r.curated %}{% for p in cat.projects %}{% if p.repo == r.name %}{% set_global rline = p.tagline_cs %}{% endif %}{% endfor %}{% endif %}
               <span class="block truncate text-sm text-gray-600 dark:text-gray-400">{% if rline %}{{ rline }}{% elif r.description %}{{ r.description }}{% elif r.readme %}{{ r.readme }}{% endif %}</span>
             </span>
@@ -158,14 +138,15 @@
         </li>
         {%- endif %}{% endfor %}
       </ul>
-    </section>
+    {% </card> %}
 
     {#- Majordomus: live release card from majordomus.dev/build.json (snapshot until it answers). #}
-    <section x-data="majordomusLive('{{ config.extra.majordomus_build }}', {{ gh.majordomus | json_encode }})" class="{{ card }}" aria-labelledby="majordomus-title">
+    {%- set mj_attrs = "x-data=\"majordomusLive('" ~ config.extra.majordomus_build ~ "', " ~ gh.majordomus | json_encode | replace(from='"', to="&quot;") ~ ")\"" %}
+    {% <card labelledby="majordomus-title" attrs={mj_attrs}> %}
       <div class="mb-4 flex items-start justify-between gap-3">
         <div>
-          <h2 id="majordomus-title" class="{{ card_title }}">Majordomus</h2>
-          <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">{{ trans(key="ai_agents_say_the_work_is", lang=lang) | safe }}</p>
+          <h2 id="majordomus-title" class="text-xl font-bold leading-none text-gray-900 dark:text-white">Majordomus</h2>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">{{ trans(key="ai_agents_say_the_work_is", lang=lang) | safe }}</p>
         </div>
         <span class="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-gray-100 px-2.5 py-1 text-xs font-medium text-gray-800 dark:bg-gray-700 dark:text-gray-300">
           <span class="h-2 w-2 rounded-full" :class="state === 'live' ? 'bg-green-500' : 'bg-gray-400'"></span>
@@ -198,19 +179,16 @@
       </ul>
       <code class="mt-4 block break-all rounded-lg bg-gray-100 px-3 py-2 font-mono text-xs text-gray-800 dark:bg-gray-700 dark:text-gray-200">curl -fsSL https://majordomus.dev/install.sh | sh</code>
       <div class="mt-4 flex items-center justify-between border-t border-gray-200 pt-3 dark:border-gray-700">
-        <a href="{{ config.extra.majordomus_url }}" class="{{ view_all }}">majordomus.dev{{ <icon name="external" class="ml-1 h-4 w-4" /> }}</a>
-        <a :href="release.notes_url" href="{{ gh.majordomus.notes_url }}" class="{{ view_all }}">{{ trans(key="release_notes", lang=lang) | safe }}{{ <icon name="arrow-right" class="ml-1 h-4 w-4" /> }}</a>
+        {{ <button label="majordomus.dev" href={config.extra.majordomus_url} variant="ghost" icon_after="external" /> }}
+        {{ <button label={trans(key="release_notes", lang=lang)} href={gh.majordomus.notes_url} variant="ghost" icon_after="arrow-right" attrs=':href="release.notes_url"' /> }}
       </div>
-    </section>
+    {% </card> %}
   </div>
 
   <div class="grid grid-cols-1 gap-4 xl:grid-cols-3">
     {#- Ecosystem graph: Flowbite Pro chart card. #}
-    <section class="{{ card }} xl:col-span-2" aria-labelledby="eco-title">
-      <div class="mb-4">
-        <h2 id="eco-title" class="{{ card_title }}">{{ trans(key="how_the_pieces_connect", lang=lang) | safe }}</h2>
-        <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">{{ trans(key="projects_the_tools_they_use_and", lang=lang) | safe }}</p>
-      </div>
+    {% <card cls="xl:col-span-2" labelledby="eco-title"> %}
+      {{ <card_head id="eco-title" title={trans(key="how_the_pieces_connect", lang=lang)} lead={trans(key="projects_the_tools_they_use_and", lang=lang)} /> }}
       <div class="viz-box h-[26rem] sm:h-[30rem]" data-viz="graph" data-source="eco-data" role="img"
         aria-label="{{ trans(key="aria_graph", lang=lang) | replace(from="{n}", to=cat.projects | length ~ "") | replace(from="{m}", to=supervised_count ~ "") }}">
         <div data-canvas></div>
@@ -220,14 +198,12 @@
         {{ trans(key="supervision_is_measured_a_project_counts", lang=lang) | safe }} <code class="font-mono">.ai/manifest.yaml</code>.
       </p>
       <script type="application/json" id="eco-data">{"projects": {{ cat.projects | json_encode | safe }}, "measured": {{ gh.projects | json_encode | safe }}}</script>
-    </section>
+    {% </card> %}
 
     {#- Categories: Flowbite Pro progress list (admin dashboard 1.1.1, section 8, inline bars). #}
-    <section class="{{ card }}" aria-labelledby="categories-title">
-      <div class="mb-4 flex items-center justify-between">
-        <h2 id="categories-title" class="{{ card_title }}">{{ trans(key="categories", lang=lang) | safe }}</h2>
-        <a href="{{ base }}projects/" class="{{ view_all }}">{{ trans(key="all", lang=lang) | safe }}{{ <icon name="arrow-right" class="ml-1 h-4 w-4" /> }}</a>
-      </div>
+    {% <card labelledby="categories-title"> %}
+      {#- Counts the curated projects of each category (the sidebar counts every repository). #}
+      {{ <card_head id="categories-title" title={trans(key="categories", lang=lang)} lead={trans(key="categories_featured_lead", lang=lang)} action={trans(key="all", lang=lang)} href={base ~ "projects/"} /> }}
       <ul class="space-y-4">
         {%- for key, c in cat.categories %}
         {%- set_global n = 0 %}{% set_global nl = 0 %}
@@ -243,19 +219,13 @@
         </li>
         {%- endfor %}
       </ul>
-    </section>
+    {% </card> %}
   </div>
 
   <div class="grid grid-cols-1 gap-4 xl:grid-cols-3">
   {#- Timeline: Flowbite timeline, newest first, ordered by repository creation (gh.timeline). #}
-  <section class="{{ card }} xl:col-span-2" aria-labelledby="timeline-title">
-    <div class="mb-6 flex items-center justify-between">
-      <div>
-        <h2 id="timeline-title" class="{{ card_title }}">{{ trans(key="timeline", lang=lang) | safe }}</h2>
-        <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">{{ trans(key="when_each_project_began_newest_first", lang=lang) | safe }}</p>
-      </div>
-      <a href="{{ base }}projects/" class="{{ view_all }}">{{ trans(key="catalogue", lang=lang) | safe }}{{ <icon name="arrow-right" class="ml-1 h-4 w-4" /> }}</a>
-    </div>
+  {% <card cls="xl:col-span-2" labelledby="timeline-title"> %}
+    {{ <card_head id="timeline-title" title={trans(key="timeline", lang=lang)} lead={trans(key="when_each_project_began_newest_first", lang=lang)} action={trans(key="catalogue", lang=lang)} href={base ~ "projects/"} /> }}
     <div class="grid grid-cols-1 gap-x-10 md:grid-cols-2">
       {%- set half = (gh.timeline | length / 2) | round(method="ceil") | int %}
       {%- for column in [0, 1] %}
@@ -268,9 +238,7 @@
           <time datetime="{{ f.created_at }}" class="mb-1 block text-sm font-normal leading-none text-gray-600 dark:text-gray-400">{{ f.created_at | date(format="%B %Y") }}</time>
           <h3 class="flex flex-wrap items-center gap-2 text-base font-semibold text-gray-900 dark:text-white">
             <a href="{{ base }}projects/?project={{ repo }}" class="hover:underline">{{ p.name }}</a>
-            {%- if f.activity == "active" %}<span class="rounded-md bg-green-100 px-2 py-0.5 text-xs font-medium text-green-800 dark:bg-green-900 dark:text-green-300">{{ trans(key="active", lang=lang) | safe }}</span>
-            {%- elif f.activity == "maintained" %}<span class="rounded-md bg-yellow-100 px-2 py-0.5 text-xs font-medium text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300">{{ trans(key="maintained", lang=lang) | safe }}</span>
-            {%- else %}<span class="rounded-md bg-gray-100 px-2 py-0.5 text-xs font-medium text-gray-800 dark:bg-gray-700 dark:text-gray-300">{{ trans(key="archive", lang=lang) | safe }}</span>{% endif %}
+            {{ <status_badge activity={f.activity} lang={lang} /> }}
           </h3>
           <p class="text-sm text-gray-600 dark:text-gray-400">{{ p["tagline" ~ sfx] }}</p>
         </li>
@@ -279,14 +247,11 @@
       </ol>
       {%- endfor %}
     </div>
-  </section>
+  {% </card> %}
 
   {#- Recently active: the latest pushes across every original repository (data/index.json). #}
-  <section class="{{ card }}" aria-labelledby="recent-title">
-    <div class="mb-4 flex items-center justify-between">
-      <h2 id="recent-title" class="{{ card_title }}">{{ trans(key="recently_active", lang=lang) | safe }}</h2>
-      <a href="{{ base }}work/" class="{{ view_all }}">{{ trans(key="recent_work", lang=lang) | safe }}{{ <icon name="arrow-right" class="ml-1 h-4 w-4" /> }}</a>
-    </div>
+  {% <card labelledby="recent-title"> %}
+    {{ <card_head id="recent-title" title={trans(key="recently_active", lang=lang)} action={trans(key="recent_work", lang=lang)} href={base ~ "work/"} /> }}
     <ul class="divide-y divide-gray-200 dark:divide-gray-700">
       {%- for r in ix.repos %}{% if loop.index <= 9 %}
       {%- if r.hosts.github is defined %}{% set u = r.hosts.github %}{% else %}{% set u = r.hosts.gitlab %}{% endif %}
@@ -301,20 +266,20 @@
       </li>
       {%- endif %}{% endfor %}
     </ul>
-  </section>
+  {% </card> %}
   </div>
 
   {#- Art visuals declared in front matter ([[extra.viz]]), rendered generically. #}
   {%- include "partials/viz-grid.html" %}
-  <p class="text-xs text-gray-600 dark:text-gray-400">{{ trans(key="measured_from_the_github_api_on", lang=lang) | safe }} {{ as_of }}. <a href="{{ base }}stack/#data" class="font-medium text-primary-700 hover:underline dark:text-primary-400">{{ trans(key="how_these_numbers_are_made", lang=lang) | safe }}</a></p>
+  {{ <provenance date={as_of} lang={lang} href={base ~ "stack/#data"} link={trans(key="how_these_numbers_are_made", lang=lang)} /> }}
 
   {#- Flowbite Pro cta-sections, as a dashboard card. #}
   <section class="rounded-lg bg-white p-6 text-center shadow dark:bg-gray-800 sm:p-10" aria-labelledby="cta-title">
     <h2 id="cta-title" class="mb-3 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-3xl">{{ trans(key="follow_the_work_as_it_ships", lang=lang) | safe }}</h2>
     <p class="mx-auto mb-6 max-w-2xl text-gray-600 dark:text-gray-400">{{ trans(key="every_project_here_is_public_watch", lang=lang) | safe }}</p>
     <div class="flex flex-col justify-center gap-3 sm:flex-row">
-      <a href="https://github.com/{{ config.extra.github }}" class="inline-flex items-center justify-center rounded-lg bg-primary-700 px-5 py-3 text-base font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">{{ <icon name="github" class="-ml-1 mr-2 h-5 w-5" /> }}{{ trans(key="follow_on_github", lang=lang) | safe }}</a>
-      <a href="{{ config.extra.majordomus_url }}" class="inline-flex items-center justify-center rounded-lg border border-gray-300 bg-white px-5 py-3 text-base font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">{{ <icon name="shield" class="-ml-1 mr-2 h-5 w-5" /> }}{{ trans(key="install_majordomus", lang=lang) | safe }}</a>
+      {{ <button label={trans(key="follow_on_github", lang=lang)} href={"https://github.com/" ~ config.extra.github} size="lg" icon="github" /> }}
+      {{ <button label={trans(key="install_majordomus", lang=lang)} href={config.extra.majordomus_url} variant="secondary" size="lg" icon="shield" /> }}
     </div>
   </section>
 </div>

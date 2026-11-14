@@ -23,14 +23,9 @@
 {%- set_global n_more = 0 -%}{%- for r in ix.repos -%}{%- if r.category == scope and not r.curated -%}{%- set_global n_more = n_more + 1 -%}{%- endif -%}{%- endfor %}
 {%- if n_more > 0 %}
 <section class="px-4 pb-6{% if n_curated == 0 %} pt-6{% endif %}" aria-labelledby="more-title">
-  <div class="rounded-lg bg-white p-4 shadow dark:bg-gray-800 sm:p-6">
-    <div class="mb-4 flex items-center justify-between gap-4">
-      <div>
-        <h2 id="more-title" class="text-xl font-bold leading-none text-gray-900 dark:text-white">{% if n_curated > 0 %}{{ trans(key="more_in", lang=lang) | safe }} {{ page.title }}{% else %}{{ trans(key="repositories_in", lang=lang) | safe }} {{ page.title }}{% endif %}</h2>
-        <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">{{ n_more }} {% if n_curated > 0 %}{{ trans(key="more", lang=lang) | safe }} {% endif %}{{ trans(key="original_repositories_inferred_into_this_category", lang=lang) | safe }}</p>
-      </div>
-      <a href="{{ config.base_url }}{{ lp }}/repositories/?category={{ scope }}" class="inline-flex shrink-0 items-center whitespace-nowrap rounded-lg p-2 text-sm font-medium text-primary-700 hover:bg-gray-100 dark:text-primary-400 dark:hover:bg-gray-700">{{ trans(key="open_in_the_index", lang=lang) | safe }}{{ <icon name="arrow-right" class="ml-1 h-4 w-4" /> }}</a>
-    </div>
+  {% <card tag="div"> %}
+    {%- if n_curated > 0 %}{% set more_title = trans(key="more_in", lang=lang) ~ " " ~ page.title %}{% set more_word = trans(key="more", lang=lang) ~ " " %}{% else %}{% set more_title = trans(key="repositories_in", lang=lang) ~ " " ~ page.title %}{% set more_word = "" %}{% endif %}
+    {{ <card_head id="more-title" title={more_title} lead={n_more ~ " " ~ more_word ~ trans(key="original_repositories_inferred_into_this_category", lang=lang)} action={trans(key="open_in_the_index", lang=lang)} href={config.base_url ~ lp ~ "/repositories/?category=" ~ scope} /> }}
     <ul class="grid grid-cols-1 gap-x-8 md:grid-cols-2 2xl:grid-cols-3">
       {%- for r in ix.repos %}{% if r.category == scope and not r.curated %}
       {%- if r.hosts.github is defined %}{% set u = r.hosts.github %}{% else %}{% set u = r.hosts.gitlab %}{% endif %}
@@ -40,7 +35,7 @@
       </li>
       {%- endif %}{% endfor %}
     </ul>
-  </div>
+  {% </card> %}
 </section>
 {%- endif %}
 
@@ -52,7 +47,7 @@
   <p class="mb-3 text-sm font-medium text-gray-900 dark:text-white">{{ trans(key="other_categories", lang=lang) | safe }}</p>
   <ul class="flex flex-wrap gap-2">
     {%- for key, c in cat.categories %}{% if key != scope %}
-    <li><a href="{{ config.base_url }}{{ lp }}/projects/{{ key }}/" class="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700">{{ <category_icon key={key} class="h-4 w-4" /> }}{{ c["name" ~ sfx] }}</a></li>
+    <li>{{ <chip label={c["name" ~ sfx]} href={config.base_url ~ lp ~ "/projects/" ~ key ~ "/"} icon={key} /> }}</li>
     {%- endif %}{% endfor %}
   </ul>
 </nav>

@@ -6,7 +6,6 @@
 {%- set rc = load_data(path="data/recent.json") -%}
 {%- set cat = load_data(path="data/projects.toml") -%}
 {%- set base = config.base_url ~ lp ~ "/" -%}
-{%- set card = "min-w-0 rounded-lg bg-white p-4 shadow dark:bg-gray-800 sm:p-6" -%}
 {%- set link = "font-medium text-primary-700 hover:underline dark:text-primary-400" -%}
 {%- for x in rc.repos %}{% if x.name == page.extra.repo %}{% set_global r = x %}{% endif %}{% endfor -%}
 {%- if r.hosts.github is defined %}{% set primary = r.hosts.github %}{% else %}{% set primary = r.hosts.gitlab %}{% endif -%}
@@ -15,13 +14,13 @@
 <div class="space-y-4 px-4 pb-2 pt-6">
   <div class="grid grid-cols-1 gap-4 xl:grid-cols-3">
     {#- What it is: the repository's own words (README excerpt), the latest commit. #}
-    <section class="{{ card }} xl:col-span-2" aria-labelledby="what-title">
+    {% <card cls="xl:col-span-2" labelledby="what-title"> %}
       <div class="mb-4 flex flex-wrap items-center gap-2">
-        <a href="{{ base }}projects/{{ r.category }}/" class="rounded-md bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-800 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600">{{ cat.categories[r.category]["name" ~ sfx] }}</a>
-        <span class="rounded-md bg-primary-100 px-2.5 py-0.5 text-xs font-medium text-primary-800 dark:bg-primary-900 dark:text-primary-300">{{ trans(key="active_within", lang=lang) | safe }} {{ r.period }} {{ trans(key="months", lang=lang) | safe }}</span>
-        {%- if r.curated %}<a href="{{ base }}projects/?project={{ r.name }}" class="rounded-md bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800 hover:bg-green-200 dark:bg-green-900 dark:text-green-300">{{ trans(key="featured_2", lang=lang) | safe }}</a>{% endif %}
+        {{ <badge label={cat.categories[r.category]["name" ~ sfx]} href={base ~ "projects/" ~ r.category ~ "/"} /> }}
+        {{ <badge label={trans(key="active_within", lang=lang) ~ " " ~ r.period ~ " " ~ trans(key="months", lang=lang)} tone="primary" /> }}
+        {%- if r.curated %}{{ <badge label={trans(key="featured_2", lang=lang)} tone="green" href={base ~ "projects/?project=" ~ r.name} /> }}{% endif %}
       </div>
-      <h2 id="what-title" class="text-xl font-bold text-gray-900 dark:text-white">{{ trans(key="what_it_is", lang=lang) | safe }}</h2>
+      <h2 id="what-title" class="text-xl font-bold leading-none text-gray-900 dark:text-white">{{ trans(key="what_it_is", lang=lang) | safe }}</h2>
       {%- if r.readme %}
       <blockquote class="mt-3 border-s-4 border-primary-700 bg-gray-50 p-4 text-gray-700 dark:border-primary-400 dark:bg-gray-700 dark:text-gray-200">
         <p>{{ r.readme }}</p>
@@ -37,15 +36,15 @@
       </div>
       {%- endif %}
       <div class="mt-5 flex flex-wrap gap-3">
-        {%- if r.site %}<a href="{{ r.site }}" class="inline-flex items-center rounded-lg bg-primary-700 px-4 py-2 text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">{{ trans(key="open_the_site", lang=lang) | safe }}{{ <icon name="external" class="ml-2 h-4 w-4" /> }}</a>{% endif %}
-        {%- if r.hosts.github is defined %}<a href="{{ r.hosts.github }}" class="inline-flex items-center rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700">{{ <icon name="github" class="mr-2 h-4 w-4" /> }}GitHub</a>{% endif %}
-        {%- if r.hosts.gitlab is defined %}<a href="{{ r.hosts.gitlab }}" class="inline-flex items-center rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700">{{ <icon name="code" class="mr-2 h-4 w-4" /> }}GitLab</a>{% endif %}
+        {%- if r.site %}{{ <button label={trans(key="open_the_site", lang=lang)} href={r.site} icon_after="external" /> }}{% endif %}
+        {%- if r.hosts.github is defined %}{{ <button label="GitHub" href={r.hosts.github} variant="secondary" icon="github" /> }}{% endif %}
+        {%- if r.hosts.gitlab is defined %}{{ <button label="GitLab" href={r.hosts.gitlab} variant="secondary" icon="code" /> }}{% endif %}
       </div>
-    </section>
+    {% </card> %}
 
     {#- Facts: every one measured (data/recent.json via gh and glab). #}
-    <section class="{{ card }}" aria-labelledby="facts-title">
-      <h2 id="facts-title" class="text-xl font-bold text-gray-900 dark:text-white">{{ trans(key="facts", lang=lang) | safe }}</h2>
+    {% <card labelledby="facts-title"> %}
+      <h2 id="facts-title" class="text-xl font-bold leading-none text-gray-900 dark:text-white">{{ trans(key="facts", lang=lang) | safe }}</h2>
       <dl class="tabular mt-4 space-y-3 text-sm">
         <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="created", lang=lang) | safe }}</dt><dd class="font-semibold text-gray-900 dark:text-white">{{ r.created_at | date(format="%B %Y") }}</dd></div>
         <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="last_commit", lang=lang) | safe }}</dt><dd class="font-semibold text-gray-900 dark:text-white">{{ r.last_commit | date(format="%-d %b %Y") }}</dd></div>
@@ -56,11 +55,8 @@
       {%- if r.languages | length > 0 %}
       <h3 class="mb-2 mt-6 text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400">{{ trans(key="languages", lang=lang) | safe }}</h3>
       {#- Flowbite Pro stacked progress: the measured language breakdown. #}
-      <div class="flex h-3 w-full overflow-hidden rounded-full bg-gray-200 dark:bg-gray-700" role="img" aria-label="{% set_global lb = "" %}{% for l in r.languages %}{% set_global lb = lb ~ l.name ~ " " ~ l.share ~ "%" %}{% if not loop.last %}{% set_global lb = lb ~ ", " %}{% endif %}{% endfor %}{{ trans(key="aria_language_breakdown", lang=lang) | replace(from="{list}", to=lb) }}">
-        {%- for l in r.languages %}
-        <div class="h-3 {% if loop.index == 1 %}bg-primary-700 dark:bg-primary-400{% elif loop.index == 2 %}bg-primary-500{% elif loop.index == 3 %}bg-primary-300{% elif loop.index == 4 %}bg-gray-500{% else %}bg-gray-400{% endif %}" style="width: {{ l.share }}%"></div>
-        {%- endfor %}
-      </div>
+      {%- set_global lb = "" %}{% for l in r.languages %}{% set_global lb = lb ~ l.name ~ " " ~ l.share ~ "%" %}{% if not loop.last %}{% set_global lb = lb ~ ", " %}{% endif %}{% endfor %}
+      {{ <lang_bar languages={r.languages} label={trans(key="aria_language_breakdown", lang=lang) | replace(from="{list}", to=lb)} tall={true} /> }}
       <ul class="mt-3 space-y-1 text-sm">
         {%- for l in r.languages %}
         <li class="flex justify-between"><span class="text-gray-900 dark:text-white">{{ l.name }}</span><span class="tabular text-gray-600 dark:text-gray-400">{{ l.share }}%</span></li>
@@ -69,19 +65,18 @@
       {%- endif %}
       {%- if r.topics | length > 0 %}
       <h3 class="mb-2 mt-6 text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400">{{ trans(key="topics", lang=lang) | safe }}</h3>
-      <ul class="flex flex-wrap gap-1.5">{% for t in r.topics %}<li class="rounded bg-gray-100 px-2 py-0.5 font-mono text-xs text-gray-800 dark:bg-gray-700 dark:text-gray-200">{{ t }}</li>{% endfor %}</ul>
+      <ul class="flex flex-wrap gap-1.5 font-mono">{% for t in r.topics %}<li>{{ <chip label={t} variant="plain" /> }}</li>{% endfor %}</ul>
       {%- endif %}
-    </section>
+    {% </card> %}
   </div>
 
   {#- The project's pulse, declared in its front matter ([[extra.viz]], written by build-work). #}
   {%- include "partials/viz-grid.html" %}
 
   {#- Neighbours: the work before and after in time, and the same category (derived). #}
-  <nav class="grid grid-cols-1 gap-4 md:grid-cols-2" aria-label="{{ trans(key="more_work", lang=lang) }}">
-    {%- if page.lower %}<a href="{{ page.lower.permalink }}" class="{{ card }} group block hover:bg-gray-50 dark:hover:bg-gray-700"><span class="text-xs uppercase tracking-wide text-gray-600 dark:text-gray-400">{{ trans(key="older", lang=lang) | safe }}</span><span class="mt-1 block font-semibold text-gray-900 group-hover:underline dark:text-white">{{ page.lower.title }}</span><span class="mt-1 block text-sm text-gray-600 dark:text-gray-400">{{ page.lower.description }}</span></a>{% else %}<span></span>{% endif %}
-    {%- if page.higher %}<a href="{{ page.higher.permalink }}" class="{{ card }} group block text-right hover:bg-gray-50 dark:hover:bg-gray-700"><span class="text-xs uppercase tracking-wide text-gray-600 dark:text-gray-400">{{ trans(key="newer", lang=lang) | safe }}</span><span class="mt-1 block font-semibold text-gray-900 group-hover:underline dark:text-white">{{ page.higher.title }}</span><span class="mt-1 block text-sm text-gray-600 dark:text-gray-400">{{ page.higher.description }}</span></a>{% endif %}
-  </nav>
-  <p class="text-xs text-gray-600 dark:text-gray-400">{{ trans(key="measured_on", lang=lang) | safe }} {{ rc.generated_at | date(format="%-d %B %Y") }} {{ trans(key="through", lang=lang) | safe }} <code class="font-mono">gh</code> {{ trans(key="and", lang=lang) | safe }} <code class="font-mono">glab</code>; {{ rc.rule }}.</p>
+  {%- if page.lower %}{% set lo = page.lower %}{% else %}{% set lo = {"permalink": "", "title": "", "description": ""} %}{% endif %}
+  {%- if page.higher %}{% set hi = page.higher %}{% else %}{% set hi = {"permalink": "", "title": "", "description": ""} %}{% endif %}
+  {{ <pager lang={lang} label={trans(key="more_work", lang=lang)} prev_href={lo.permalink} prev_title={lo.title} prev_note={lo.description} prev_word={trans(key="older", lang=lang)} next_href={hi.permalink} next_title={hi.title} next_note={hi.description} next_word={trans(key="newer", lang=lang)} /> }}
+  {{ <provenance date={rc.generated_at | date(format="%-d %B %Y")} rule={rc.rule} lang={lang} /> }}
 </div>
 {% endblock content %}

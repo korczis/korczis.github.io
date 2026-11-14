@@ -2,6 +2,7 @@
 
 @source '../templates';
 @source '../content';
+@source '../data/ui.toml';
 @source '../static/js/site.js';
 @source '../static/js/viz';
 @source '../node_modules/flowbite/lib/esm/components';

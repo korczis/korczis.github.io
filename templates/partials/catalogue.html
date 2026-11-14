@@ -8,21 +8,18 @@
   <div class="px-4 pb-4 pt-6">
     {#- Toolbar: Flowbite Pro table header (search, filters, sort). Needs JavaScript. #}
     <div data-js class="mb-6 flex flex-col gap-4 rounded-lg bg-white p-4 shadow dark:bg-gray-800 xl:flex-row xl:items-center xl:justify-between">
-      <div class="relative w-full lg:max-w-sm">
-        <label for="project-search" class="sr-only">{{ trans(key="search_projects", lang=lang) | safe }}</label>
-        <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3 text-gray-500 dark:text-gray-400">{{ <icon name="search" class="h-5 w-5" /> }}</div>
-        <input id="project-search" type="search" x-model.debounce.150ms="q" placeholder="{{ trans(key="search_name_words_or_technology", lang=lang) }}"
-          class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 pl-10 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500">
+      <div class="w-full lg:max-w-sm">
+        {{ <search_input id="project-search" label={trans(key="search_projects", lang=lang)} placeholder={trans(key="search_name_words_or_technology", lang=lang)} attrs='x-model.debounce.150ms="q"' /> }}
       </div>
       {%- if not scope %}
       <div class="flex flex-wrap items-center gap-2" role="group" aria-label="{{ trans(key="category", lang=lang) }}">
         <button type="button" @click="category = 'all'" :aria-pressed="category === 'all'"
           :class="category === 'all' ? 'bg-primary-700 text-white dark:bg-primary-600' : 'bg-white text-gray-900 hover:bg-gray-100 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700'"
-          class="rounded-lg border border-gray-200 px-3 py-1.5 text-sm font-medium focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:focus:ring-gray-700">{{ trans(key="all", lang=lang) | safe }}</button>
+          class="rounded-lg border border-gray-200 px-3 py-2.5 text-sm font-medium leading-tight focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:focus:ring-gray-700">{{ trans(key="all", lang=lang) | safe }}</button>
         {%- for key, c in cat.categories %}
         <button type="button" @click="category = '{{ key }}'" :aria-pressed="category === '{{ key }}'"
           :class="category === '{{ key }}' ? 'bg-primary-700 text-white dark:bg-primary-600' : 'bg-white text-gray-900 hover:bg-gray-100 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700'"
-          class="rounded-lg border border-gray-200 px-3 py-1.5 text-sm font-medium focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:focus:ring-gray-700">{{ c["name" ~ sfx] }}</button>
+          class="rounded-lg border border-gray-200 px-3 py-2.5 text-sm font-medium leading-tight focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:focus:ring-gray-700">{{ c["name" ~ sfx] }}</button>
         {%- endfor %}
       </div>
       {%- endif %}
@@ -38,7 +35,7 @@
           <span class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Majordomus</span>
         </label>
         <label for="project-sort" class="sr-only">{{ trans(key="sort", lang=lang) | safe }}</label>
-        <select id="project-sort" x-model="sort" class="block rounded-lg border border-gray-300 bg-gray-50 p-2 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white">
+        <select id="project-sort" x-model="sort" class="block rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white">
           <option value="curated">{{ trans(key="curated", lang=lang) | safe }}</option>
           <option value="recent">{{ trans(key="recently_updated", lang=lang) | safe }}</option>
           <option value="stars">{{ trans(key="most_stars", lang=lang) | safe }}</option>
@@ -111,10 +108,12 @@
     <div>
       <div class="mb-4 flex items-start justify-between gap-3">
         <div class="flex flex-wrap gap-2">
-          <span class="rounded-md bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-800 dark:bg-gray-700 dark:text-gray-300" x-text="categoryName"></span>
+          {%- set ui = load_data(path="data/ui.toml") %}
+          <span class="rounded-md px-2.5 py-0.5 text-xs font-medium {{ ui.tones.gray.badge }}" x-text="categoryName"></span>
+          {#- The activity badge's tone per status, from the same map as status_badge. #}
           <span class="rounded-md px-2.5 py-0.5 text-xs font-medium" x-text="activityLabel"
-            :class="{ 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300': f.activity === 'active', 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300': f.activity === 'maintained', 'bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300': f.activity === 'dormant' }"></span>
-          <span x-show="f.supervised" class="rounded-md bg-primary-100 px-2.5 py-0.5 text-xs font-medium text-primary-800 dark:bg-primary-900 dark:text-primary-300">Majordomus</span>
+            :class="{ {%- for k, st in ui.status %}{{ k | json_encode | replace(from='"', to="'") | safe }}: {{ ui.tones[st.tone].badge | json_encode | replace(from='"', to="'") | safe }}{% if not loop.last %}, {% endif %}{% endfor -%} }[f.activity]"></span>
+          <span x-show="f.supervised" class="rounded-md px-2.5 py-0.5 text-xs font-medium {{ ui.tones.primary.badge }}">Majordomus</span>
         </div>
         <button type="button" x-ref="close" @click="close()" class="inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-700">
           <svg class="h-5 w-5" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 18 18 6M6 6l12 12"/></svg><span class="sr-only">{{ trans(key="close_details", lang=lang) | safe }}</span>
@@ -140,8 +139,8 @@
         </template>
       </ul>
       <div class="flex flex-wrap gap-3">
-        <a x-show="p.url && f.live" :href="p.url" class="inline-flex items-center rounded-lg bg-primary-700 px-4 py-2 text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">{{ trans(key="open_the_site", lang=lang) | safe }}</a>
-        <a :href="'https://github.com/korczis/' + p.repo" class="inline-flex items-center rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700">{{ trans(key="source_on_github", lang=lang) | safe }}</a>
+        {{ <button label={trans(key="open_the_site", lang=lang)} href="#" icon_after="external" attrs='x-show="p.url &amp;&amp; f.live" :href="p.url"' /> }}
+        {{ <button label={trans(key="source_on_github", lang=lang)} href="#" variant="secondary" icon="github" attrs=':href="\'https://github.com/korczis/\' + p.repo"' /> }}
       </div>
       <p class="mt-6 text-xs text-gray-600 dark:text-gray-400">{{ trans(key="measured_on", lang=lang) | safe }} <span x-text="date(source.generated_at)"></span>{{ trans(key="share_this_view_with_its_address", lang=lang) | safe }}</p>
     </div>

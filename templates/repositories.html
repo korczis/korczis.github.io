@@ -24,11 +24,8 @@
 {#- Flowbite Pro advanced table with an Alpine filter (search, category, host, language, sort). #}
 <section x-data="repoIndex" class="px-4 pb-4 pt-6" aria-label="{{ trans(key="repositories", lang=lang) }}">
   <div data-js class="mb-4 flex flex-col gap-3 rounded-lg bg-white p-4 shadow dark:bg-gray-800 xl:flex-row xl:items-center">
-    <div class="relative w-full xl:max-w-sm">
-      <label for="repo-search" class="sr-only">{{ trans(key="search_repositories", lang=lang) | safe }}</label>
-      <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3 text-gray-500 dark:text-gray-400">{{ <icon name="search" class="h-5 w-5" /> }}</div>
-      <input id="repo-search" type="search" x-model.debounce.150ms="q" placeholder="{{ trans(key="search_name_or_description", lang=lang) }}"
-        class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 pl-10 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400">
+    <div class="w-full xl:max-w-sm">
+      {{ <search_input id="repo-search" label={trans(key="search_repositories", lang=lang)} placeholder={trans(key="search_name_or_description", lang=lang)} attrs='x-model.debounce.150ms="q"' /> }}
     </div>
     <div class="grid grid-cols-2 gap-3 sm:grid-cols-4 xl:flex xl:flex-1 xl:justify-end">
       {%- set select = "block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white xl:w-auto" %}
@@ -80,7 +77,7 @@
           class="border-b border-gray-200 hover:bg-gray-50 dark:border-gray-700 dark:hover:bg-gray-700">
           <th scope="row" class="px-4 py-3 font-medium text-gray-900 dark:text-white">
             <a href="{% if r.curated %}{{ config.base_url }}{{ lp }}/projects/?project={{ r.name }}{% else %}{{ primary }}{% endif %}" class="hover:underline">{{ r.name }}</a>
-            {%- if r.curated %}<span class="ml-1.5 rounded bg-primary-100 px-1.5 py-0.5 text-xs font-medium text-primary-800 dark:bg-primary-900 dark:text-primary-300">{{ trans(key="featured", lang=lang) | safe }}</span>{% endif %}
+            {%- if r.curated %} {{ <badge label={trans(key="featured", lang=lang)} tone="primary" /> }}{% endif %}
             {%- if r.description %}<p class="max-w-md truncate text-xs font-normal text-gray-600 dark:text-gray-400">{{ r.description }}</p>{% endif %}
           </th>
           <td class="whitespace-nowrap px-4 py-3"><a href="{{ config.base_url }}{{ lp }}/projects/{{ r.category }}/" class="hover:text-primary-700 hover:underline dark:hover:text-primary-400">{{ cat.categories[r.category]["name" ~ sfx] }}</a></td>

@@ -18,12 +18,7 @@
         <ul class="space-y-2 pb-2">
           <li>
             <form action="{{ config.base_url }}{{ lp }}/projects/" method="get" role="search" class="lg:hidden">
-              <label for="mobile-search" class="sr-only">{{ trans(key="search_projects", lang=lang) | safe }}</label>
-              <div class="relative">
-                <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3 text-gray-500 dark:text-gray-400">{{ <icon name="search" class="h-5 w-5" /> }}</div>
-                <input type="search" name="q" id="mobile-search" placeholder="{{ trans(key="search_projects", lang=lang) }}"
-                  class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 pl-10 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-200 dark:placeholder-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500">
-              </div>
+              {{ <search_input id="mobile-search" name="q" label={trans(key="search_projects", lang=lang)} placeholder={trans(key="search_projects", lang=lang)} /> }}
             </form>
           </li>
           {#- data/nav.toml: one list for the sidebar, the footer and the palette. An entry is active on

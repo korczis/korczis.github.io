@@ -34,3 +34,20 @@ cs = "Změřeno z GitHubu a GitLabu {date}"
 [kpi_languages]
 en = "languages in original work"
 cs = "jazyků v původní práci"
+
+# Shared components.
+[provenance_line]
+en = "Measured on {date} through {gh} and {glab}"
+cs = "Změřeno {date} přes {gh} a {glab}"
+
+[previous]
+en = "Previous"
+cs = "Předchozí"
+
+[next]
+en = "Next"
+cs = "Další"
+
+[categories_featured_lead]
+en = "Featured projects in each category, and how many of them are live"
+cs = "Vybrané projekty v každé kategorii a kolik z nich běží"

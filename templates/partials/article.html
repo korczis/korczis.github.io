@@ -12,26 +12,25 @@
 {%- if has_body or has_terms %}
 <div class="space-y-4 px-4 pb-2 pt-6">
   {%- if has_body %}
-  <article class="min-w-0 rounded-lg bg-white p-4 shadow dark:bg-gray-800 sm:p-6" aria-labelledby="article-title">
+  {% <card tag="article" labelledby="article-title"> %}
     <p class="mb-1 text-xs font-semibold uppercase tracking-wide text-primary-700 dark:text-primary-300">{{ trans(key="article_label", lang=lang) }}</p>
     <h2 id="article-title" class="mb-4 text-2xl font-bold leading-tight text-gray-900 dark:text-white">{% if afm.extra.article_title is defined %}{{ afm.extra.article_title }}{% else %}{{ afm.title }}{% endif %}</h2>
     <div class="format format-blue dark:format-invert">{{ afm.content | safe }}</div>
-  </article>
+  {% </card> %}
   {%- endif %}
   {%- if has_terms %}
-  <section class="min-w-0 rounded-lg bg-white p-4 shadow dark:bg-gray-800 sm:p-6" aria-labelledby="concepts-title">
-    <h2 id="concepts-title" class="text-xl font-bold leading-none text-gray-900 dark:text-white">{{ trans(key="concepts_on_page", lang=lang) }}</h2>
-    <p class="mb-4 mt-1 text-sm text-gray-600 dark:text-gray-400">{{ trans(key="concepts_lead", lang=lang) }} <a class="font-medium text-primary-700 hover:underline dark:text-primary-300" href="{{ get_url(path='@/glossary/_index.md', lang=lang) }}">{{ trans(key="all_terms", lang=lang) }}</a></p>
+  {% <card labelledby="concepts-title"> %}
+    {{ <card_head id="concepts-title" title={trans(key="concepts_on_page", lang=lang)} lead={trans(key="concepts_lead", lang=lang)} action={trans(key="all_terms", lang=lang)} href={get_url(path="@/glossary/_index.md", lang=lang)} /> }}
     <dl class="grid grid-cols-1 gap-3 sm:grid-cols-2 2xl:grid-cols-3">
       {%- for id in afm.extra.terms %}
       {%- set tp = get_page(path="glossary/" ~ id ~ alp ~ ".md") %}
       <div class="rounded-lg border border-gray-200 p-3 dark:border-gray-700">
-        <dt class="flex flex-wrap items-center gap-2"><a class="font-semibold text-gray-900 hover:text-primary-700 hover:underline dark:text-white dark:hover:text-primary-300" href="{{ tp.permalink }}">{{ tp.title }}</a><span class="rounded bg-gray-100 px-2 py-0.5 text-xs font-medium text-gray-800 dark:bg-gray-700 dark:text-gray-300">{{ trans(key="kind_term_" ~ tp.extra.kind, lang=lang) }}</span></dt>
+        <dt class="flex flex-wrap items-center gap-2"><a class="font-semibold text-gray-900 hover:text-primary-700 hover:underline dark:text-white dark:hover:text-primary-300" href="{{ tp.permalink }}">{{ tp.title }}</a>{{ <badge label={trans(key="kind_term_" ~ tp.extra.kind, lang=lang)} /> }}</dt>
         <dd class="mt-1 text-sm text-gray-600 dark:text-gray-400">{{ tp.extra.definition }}</dd>
       </div>
       {%- endfor %}
     </dl>
-  </section>
+  {% </card> %}
   {%- endif %}
 </div>
 {%- endif %}

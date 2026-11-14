@@ -1,0 +1,33 @@
+# The colours of the shared components (templates/components.html), as data: a status names a tone,
+# a tone is the Flowbite Pro badge pair (-100/-800, dark -900/-300) and its dot. The project drawer
+# (partials/catalogue.html) reads the same map, so a badge cannot look different in two places.
+# styles/app.css lists this file as a Tailwind source, so every class below is generated.
+
+[tones.gray]
+badge = "bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300"
+dot = "bg-gray-500"
+
+[tones.primary]
+badge = "bg-primary-100 text-primary-800 dark:bg-primary-900 dark:text-primary-300"
+dot = "bg-primary-500"
+
+[tones.green]
+badge = "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300"
+dot = "bg-green-500"
+
+[tones.yellow]
+badge = "bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300"
+dot = "bg-yellow-500"
+
+# A repository's activity (data/github.json `activity`): its tone and the i18n key of its label.
+[status.active]
+tone = "green"
+label = "active"
+
+[status.maintained]
+tone = "yellow"
+label = "maintained"
+
+[status.dormant]
+tone = "gray"
+label = "archive"
