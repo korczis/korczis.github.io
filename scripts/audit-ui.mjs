@@ -215,13 +215,94 @@ async function measure(browser, name, rel, width, scheme, full) {
     await page.addScriptTag({ content: AXE });
     axe = await page.evaluate(async (tags) => {
       const result = await window.axe.run(document, { runOnly: { type: 'tag', values: tags } });
-      return result.violations.map((v) => ({
+      // axe judges SVG text by the CSS colour and the box's background, never by the fill and the
+      // shape it is drawn on; inside a visual those verdicts are noise, and the svg text check below
+      // measures them instead. Everything else axe reports stands.
+      const svgText = (n) => n.target.length === 1 && document.querySelector(n.target[0])?.closest('[data-viz] svg') && /^(?:text|tspan)$/.test(document.querySelector(n.target[0]).tagName);
+      for (const v of result.violations) if (v.id === 'color-contrast') v.nodes = v.nodes.filter((n) => !svgText(n));
+      return result.violations.filter((v) => v.nodes.length).map((v) => ({
         id: v.id,
         impact: v.impact,
         nodes: v.nodes.length,
         targets: v.nodes.slice(0, 3).map((n) => n.target.join(' ')),
       }));
     }, TAGS);
+    // axe judges SVG text against the box's CSS background, never against the fill, gradient or
+    // halo it is drawn on, so a label on a bubble is not judged at all. This measures what axe
+    // cannot: every visible <text> of a visual, its fill against the shape under its centre (every
+    // stop of a gradient, translucent fills composited over the box), or against its own halo stroke
+    // when it has one. WCAG 1.4.3: 4.5:1, or 3:1 from 24 px (18.66 px bold).
+    const svgText = await page.evaluate(async () => {
+      const probe = document.createElement('canvas').getContext('2d', { willReadFrequently: true });
+      const rgba = (css) => {
+        probe.clearRect(0, 0, 1, 1);
+        probe.fillStyle = 'rgba(0, 0, 0, 0)';
+        probe.fillStyle = css;
+        probe.fillRect(0, 0, 1, 1);
+        const [r, g, b, a] = probe.getImageData(0, 0, 1, 1).data;
+        return [r, g, b, a / 255];
+      };
+      const over = ([r, g, b, a], [R, G, B]) => [r * a + R * (1 - a), g * a + G * (1 - a), b * a + B * (1 - a)];
+      const lum = (c) => {
+        const [r, g, b] = c.map((x) => { const v = x / 255; return v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4; });
+        return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+      };
+      const ratio = (a, b) => { const [p, q] = [lum(a), lum(b)].sort((x, y) => y - x); return (p + 0.05) / (q + 0.05); };
+      const ground = (el) => {
+        for (let n = el; n; n = n.parentElement) {
+          const c = rgba(getComputedStyle(n).backgroundColor);
+          if (c[3] > 0) return c.slice(0, 3);
+        }
+        return [255, 255, 255];
+      };
+      const found = [];
+      for (const box of document.querySelectorAll('[data-viz]')) {
+        const texts = [...box.querySelectorAll('svg text')];
+        if (!texts.length) continue;
+        box.scrollIntoView({ block: 'center' });
+        await new Promise((r) => setTimeout(r, 120));
+        const base = ground(box);
+        for (const t of texts) {
+          const style = getComputedStyle(t);
+          const rect = t.getBoundingClientRect();
+          if (!rect.width || !rect.height || style.visibility === 'hidden' || Number(style.opacity) === 0 || style.fill === 'none') continue;
+          const ink = over(rgba(style.fill), base);
+          const size = parseFloat(style.fontSize);
+          const large = size >= 24 || (size >= 18.66 && Number(style.fontWeight) >= 700);
+          const need = large ? 3 : 4.5;
+          let grounds;
+          if (style.stroke !== 'none' && parseFloat(style.strokeWidth) >= 2 && style.paintOrder.startsWith('stroke')) {
+            grounds = [over(rgba(style.stroke), base)];
+          } else {
+            // The topmost shape of the same drawing whose fill holds the label's centre, found by
+            // geometry (elementsFromPoint skips shapes with pointer-events: none).
+            const svg = t.ownerSVGElement;
+            const cx = rect.x + rect.width / 2;
+            const cy = rect.y + rect.height / 2;
+            const shapes = [...svg.querySelectorAll('circle, rect, path, ellipse, polygon')].filter((e) => !t.contains(e));
+            const under = shapes.reverse().find((e) => {
+              const st = getComputedStyle(e);
+              if (st.fill === 'none' || st.display === 'none' || st.visibility === 'hidden') return false;
+              const m = e.getScreenCTM();
+              if (!m) return false;
+              const p = new DOMPoint(cx, cy).matrixTransform(m.inverse());
+              return e.isPointInFill(p);
+            });
+            const fill = under ? getComputedStyle(under).fill : null;
+            const alpha = under ? Number(getComputedStyle(under).fillOpacity) * Number(getComputedStyle(under).opacity) : 1;
+            // Chrome reports a paint server as an absolute address: url("http://host/page/#id").
+            const gradient = fill?.match(/url\("?[^#")]*#([^")]+)"?\)/)?.[1];
+            const colours = gradient ? [...(document.getElementById(gradient)?.querySelectorAll('stop') ?? [])].map((s) => getComputedStyle(s).stopColor) : fill ? [fill] : [];
+            grounds = colours.length ? colours.map((c) => { const v = rgba(c); return over([v[0], v[1], v[2], v[3] * alpha], base); }) : [base];
+          }
+          const worst = Math.min(...grounds.map((g) => ratio(ink, g)));
+          if (worst < need) found.push(`${box.dataset.viz}: "${t.textContent.trim().slice(0, 24)}" ${worst.toFixed(2)}:1 < ${need}:1`);
+        }
+      }
+      window.scrollTo(0, 0);
+      return found;
+    });
+    if (svgText.length) errors.push(`svg text contrast: ${svgText.length} label(s) under WCAG 1.4.3, e.g. ${svgText.slice(0, 3).join(' | ')}`);
     if (SHOTS) {
       mkdirSync(SHOTS, { recursive: true });
       await page.screenshot({ path: join(SHOTS, `${name}-${width}-${scheme}.png`), fullPage: true });

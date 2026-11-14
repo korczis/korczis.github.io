@@ -22,6 +22,9 @@
 <html lang="{{ lang | default(value='en') }}" class="no-js" data-base="{{ base }}" data-home="{{ config.base_url }}{{ lp }}/" data-lang="{{ lang | default(value='en') }}" data-github="{{ config.extra.github }}">
 <head>
   <meta charset="utf-8">
+  {#- A visual whose script a partial loads (the experience section) can run before site.js: it
+      registers into this queue, and site.js takes the queue over. -#}
+  <script>window.KorczisHub = window.KorczisHub || { queue: [], viz(name, spec) { this.queue.push([name, spec]); } };</script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {%- include "partials/seo.html" %}
   <meta name="color-scheme" content="light dark">

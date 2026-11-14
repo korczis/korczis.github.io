@@ -579,7 +579,15 @@
       await lib(spec.lib);
       const source = box.dataset.source ? data(box.dataset.source) : null;
       const reflect = (key, value) => frames.get(box)?.reflectors?.get(key)?.(value);
-      const ctx = { palette, colour, reducedMotion, isDark, motion, go, link, escape, hash, t, reflect, id: vizId(box) };
+      // A night-toned box (data-tone="night") is dark in both themes: its palette is the night inks,
+      // so text and lines a visual takes from page/strong/text read on it in a light theme too.
+      const night = box.dataset.tone === 'night';
+      const tonePalette = () => {
+        const p = palette();
+        if (!night) return p;
+        return { ...p, dark: true, page: p.night.shadow, surface: p.night.shadow, strong: p.night.ink, text: p.night.text, muted: p.night.muted, grid: p.night.line };
+      };
+      const ctx = { palette: tonePalette, colour, reducedMotion, isDark, motion, go, link, escape, hash, t, reflect, id: vizId(box) };
       const handle = (await spec.mount(box, source, ctx)) || {};
       mounted.set(box, handle);
       list(box, handle);
@@ -665,6 +673,8 @@
   function viz(name, spec) {
     registry.set(name, spec);
   }
+  // Registrations made before this script ran (templates/base.html queues them).
+  for (const [name, spec] of window.KorczisHub?.queue ?? []) viz(name, spec);
 
 
   document.addEventListener('dark-mode', () => {

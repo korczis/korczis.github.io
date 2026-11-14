@@ -9,6 +9,8 @@ const PALETTE_MAC = /Mac|iPhone|iPad|iPod/.test(navigator.userAgentData?.platfor
 if (!PALETTE_MAC) {
   document.querySelectorAll('[data-shortcut]').forEach((el) => {
     el.textContent = 'Ctrl K';
+    // The accessible name starts with what the button shows (WCAG 2.5.3, label in name).
+    if (el.dataset.label) el.setAttribute('aria-label', `Ctrl K: ${el.dataset.label}`);
     if (el.hasAttribute('aria-keyshortcuts')) el.setAttribute('aria-keyshortcuts', 'Control+K');
   });
 }

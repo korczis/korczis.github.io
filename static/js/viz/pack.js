@@ -126,8 +126,23 @@ KorczisHub.viz('pack', {
       return placed.get('root');
     };
 
-    // Text on a coloured bubble takes whichever theme ink (page or strong) stands out more on it.
-    const ink = (fill, c) => tone.ink(fill, [c.page, c.strong]).ink;
+    // Text on a bubble sits on its radial gradient, from the lifted highlight to the base colour. The
+    // ink (page or strong) is judged by its worst contrast across both stops, and where neither
+    // reaches 4.5:1 the highlight is lifted less until one does (WCAG 1.4.3); the gradient and the
+    // label read the same answer.
+    const shade = (base, c) => {
+      let best = null;
+      for (const k of c.dark ? [0.9, 0.6, 0.3, 0] : [1.2, 0.8, 0.5, 0.25, 0]) {
+        const hi = d3.color(base).brighter(k).formatRgb();
+        const [ink, ratio] = [c.page, c.strong]
+          .map((i) => [i, Math.min(tone.contrast(i, base), tone.contrast(i, hi))])
+          .sort((a, b) => b[1] - a[1])[0];
+        if (!best || ratio > best.ratio) best = { ink, ratio, hi };
+        if (ratio >= 4.5) return { ink, ratio, hi };
+      }
+      return best;
+    };
+    const ink = (fill, c) => shade(fill, c).ink;
 
     const tip = KorczisHub.tooltip(box);
     const svg = d3.select(box).append('svg').attr('aria-hidden', 'true');
@@ -180,7 +195,7 @@ KorczisHub.viz('pack', {
         .attr('id', gid)
         .each(function (n) {
           const stops = d3.select(this).selectAll('stop');
-          stops.filter((_d, i) => i === 0).attr('stop-color', d3.color(colourOf(n)).brighter(c.dark ? 0.9 : 1.2));
+          stops.filter((_d, i) => i === 0).attr('stop-color', shade(colourOf(n), c).hi);
           stops.filter((_d, i) => i === 1).attr('stop-color', colourOf(n));
         });
       circles
@@ -246,7 +261,7 @@ KorczisHub.viz('pack', {
             .attr('font-weight', 700).attr('font-size', l.size);
           text.selectAll('tspan').data(l.ls.map((line, i, all) => ({ line, dy: i === 0 ? `${-0.1 - (all.length - 1) * 1.1}em` : '1.1em' })))
             .join('tspan').attr('x', 0).attr('dy', (d) => d.dy).text((d) => d.line);
-          g.append('text').attr('text-anchor', 'middle').attr('dy', '1.2em').attr('fill', fill).attr('opacity', 0.85)
+          g.append('text').attr('text-anchor', 'middle').attr('dy', '1.2em').attr('fill', fill)
             .attr('font-family', c.font).attr('font-size', Math.min(13, l.r / 4)).text(l.value.toLocaleString(KorczisHub.locale));
         });
     }
@@ -256,6 +271,7 @@ KorczisHub.viz('pack', {
     // once, staggered. Labels fade back in where the bubbles settle.
     function draw(kind) {
       if (!box.clientWidth || !box.clientHeight) return;
+      svg.attr('width', box.clientWidth).attr('height', box.clientHeight);
       const m = motion();
       targets();
       const painted = paint();
@@ -277,7 +293,9 @@ KorczisHub.viz('pack', {
           const a = from.get(n.data.id);
           const b = target.nodes.get(n.data.id);
           let e = tt;
-          if (first) {
+          // The staggered entrance exists only when there is time for it: with no duration (reduced
+          // motion) its formula is 0/1 and every bubble stayed at r = 0, labels floating on nothing.
+          if (first && duration) {
             const delay = Math.min(i * m.stagger, m.maxDelay);
             e = d3.easeBackOut.overshoot(1.4)(Math.min(1, Math.max(0, (tt * duration - delay) / Math.max(1, duration - m.maxDelay))));
           }
@@ -306,6 +324,9 @@ KorczisHub.viz('pack', {
     // Without moving anything: the box changed size, or the theme its colours.
     function redraw() {
       if (!box.clientWidth || !box.clientHeight) return;
+      // The drawing surface is the box: without a size an <svg> is 300x150 and only overflow showed
+      // the rest (it neither filled a maximized box nor took the pointer outside that area).
+      svg.attr('width', box.clientWidth).attr('height', box.clientHeight);
       if (!entered) {
         draw('enter');
         return;
