@@ -8,15 +8,14 @@
 {%- set rc = load_data(path="data/recent.json") -%}
 {%- set site = load_data(path="data/site.toml") -%}
 {%- set base = config.base_url ~ lp ~ "/" -%}
-{%- set card = "min-w-0 rounded-lg bg-white p-4 shadow dark:bg-gray-800 sm:p-6 xl:p-8" -%}
 {%- set sec = site.stack.sections -%}
 {{ <page_header title={page.title} lead={page.description} lang={lang} /> }}
 <div class="px-4 pt-6">{%- include "partials/viz-grid.html" %}</div>
 
 <div class="space-y-4 px-4 pb-2 pt-6">
   {#- Toolkit: Flowbite Pro feature-sections/default (rounded icons), data/site.toml. #}
-  <section class="{{ card }}" aria-labelledby="toolkit-title">
-    {{ <section_head eyebrow={sec.toolkit["eyebrow" ~ sfx]} title={sec.toolkit["title" ~ sfx]} id="toolkit-title" lead={sec.toolkit["lead" ~ sfx]} /> }}
+  {% <card labelledby="toolkit-title"> %}
+    {{ <card_head eyebrow={sec.toolkit["eyebrow" ~ sfx]} title={sec.toolkit["title" ~ sfx]} id="toolkit-title" lead={sec.toolkit["lead" ~ sfx]} /> }}
     <div class="grid gap-8 md:grid-cols-2 2xl:grid-cols-4">
       {%- for tool in site.stack.tools %}
       <div>
@@ -27,11 +26,11 @@
       </div>
       {%- endfor %}
     </div>
-  </section>
+  {% </card> %}
 
   <div class="grid grid-cols-1 gap-4 xl:grid-cols-2">
-    <section class="{{ card }}" aria-labelledby="practice-title">
-      {{ <section_head eyebrow={sec.practice["eyebrow" ~ sfx]} title={sec.practice["title" ~ sfx]} id="practice-title" /> }}
+    {% <card labelledby="practice-title"> %}
+      {{ <card_head eyebrow={sec.practice["eyebrow" ~ sfx]} title={sec.practice["title" ~ sfx]} id="practice-title" /> }}
       <ul class="space-y-4">
         {%- for item in site.stack.practice %}
         <li class="flex gap-3">
@@ -40,9 +39,9 @@
         </li>
         {%- endfor %}
       </ul>
-    </section>
-    <section class="{{ card }}" aria-labelledby="pipeline-title">
-      {{ <section_head eyebrow={sec.pipeline["eyebrow" ~ sfx]} title={sec.pipeline["title" ~ sfx]} id="pipeline-title" /> }}
+    {% </card> %}
+    {% <card labelledby="pipeline-title"> %}
+      {{ <card_head eyebrow={sec.pipeline["eyebrow" ~ sfx]} title={sec.pipeline["title" ~ sfx]} id="pipeline-title" /> }}
       {#- Flowbite timeline. #}
       <ol class="relative border-s border-gray-200 dark:border-gray-700">
         {%- for step in site.stack.pipeline %}
@@ -53,11 +52,11 @@
         </li>
         {%- endfor %}
       </ol>
-    </section>
+    {% </card> %}
   </div>
 
-  <section class="{{ card }}" aria-labelledby="data">
-    {{ <section_head eyebrow={sec.data["eyebrow" ~ sfx]} title={sec.data["title" ~ sfx]} id="data" lead={sec.data["lead" ~ sfx]} /> }}
+  {% <card labelledby="data"> %}
+    {{ <card_head eyebrow={sec.data["eyebrow" ~ sfx]} title={sec.data["title" ~ sfx]} id="data" lead={sec.data["lead" ~ sfx]} /> }}
     <div class="relative overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-700" tabindex="0" role="region" aria-label="{{ trans(key="sources_of_the_numbers_on_this", lang=lang) }}">
       <table class="w-full text-left text-sm text-gray-600 dark:text-gray-400">
         <thead class="bg-gray-50 text-xs uppercase text-gray-700 dark:bg-gray-700 dark:text-gray-300">
@@ -87,6 +86,6 @@
     <p class="mt-6 text-sm text-gray-600 dark:text-gray-400">
       {{ trans(key="the_catalogue_itself_is_hand_written", lang=lang) | safe }} <a class="font-medium text-primary-700 hover:underline dark:text-primary-400" href="{{ config.extra.repo_url }}/blob/master/data/projects.toml">data/projects.toml</a>{{ trans(key="language_models_can_read_the_same", lang=lang) | safe }} <a class="font-medium text-primary-700 hover:underline dark:text-primary-400" href="{{ get_url(path='llms.txt') }}">llms.txt</a>.
     </p>
-  </section>
+  {% </card> %}
 </div>
 {% endblock content %}

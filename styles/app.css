@@ -2,6 +2,7 @@
 
 @source '../templates';
 @source '../content';
+@source '../data/ui.toml';
 @source '../static/js/site.js';
 @source '../static/js/viz';
 @source '../node_modules/flowbite/lib/esm/components';
@@ -328,28 +329,53 @@ html.viz-locked {
   }
 }
 
-/* Long-form text on the stack page: Flowbite Pro's Publisher measure. */
-.prose-hub :where(p, li) {
-  color: var(--color-gray-600);
-  line-height: 1.75;
-}
+/* Print: a page prints as its content alone, a clean document (about/ prints as the CV). The shell
+   (navbar, sidebar, footer, palette, skip link) and every control that needs a screen go; cards
+   lose their shadow for a hairline and do not split across pages; the addresses of links in the
+   cards marked data-print-links (profile, CV, sources) are written after them. The theme is
+   light on paper: static/js/components/theme.js drops .dark between beforeprint and afterprint. */
+@media print {
+  @page {
+    margin: 14mm 16mm;
+  }
 
-.dark .prose-hub :where(p, li) {
-  color: var(--color-gray-300);
-}
+  body > nav,
+  body > a[href='#main'],
+  #sidebar,
+  #main-content > footer,
+  [role='dialog'],
+  [data-js],
+  [data-viz-list],
+  .tooltip {
+    display: none !important;
+  }
 
-.prose-hub a {
-  color: var(--color-primary-700);
-  font-weight: 500;
-  text-underline-offset: 2px;
-}
+  body,
+  body > div,
+  #main-content {
+    background: #fff !important;
+    padding-top: 0 !important;
+  }
 
-.dark .prose-hub a {
-  color: var(--color-primary-300);
-}
+  #main-content {
+    margin-left: 0 !important;
+    overflow: visible !important;
+  }
 
-.prose-hub a:hover {
-  text-decoration: underline;
+  .shadow,
+  .shadow-sm {
+    box-shadow: none !important;
+    border: 1px solid var(--color-gray-200);
+  }
+
+  [data-print-links] a[href^='http']::after,
+  [data-print-links] a[href^='mailto:']::after {
+    content: ' (' attr(href) ')';
+    font-size: 0.8em;
+    font-weight: 400;
+    color: var(--color-gray-600);
+    word-break: break-all;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

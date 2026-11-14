@@ -38,7 +38,7 @@
 {%- if xn > 0 %}
 <section id="experience" class="{{ xcard }}" aria-labelledby="experience-title">
   {%- if xsector_names %}{% set xlead = trans(key="xp_lead_sectors", lang=lang) | replace(from="{sectors}", to=xsector_names) %}{% else %}{% set xlead = trans(key="xp_lead", lang=lang) %}{% endif %}
-  {{ <section_head eyebrow={trans(key="xp_eyebrow", lang=lang)} title={trans(key="xp_title", lang=lang)} lead={xlead} id="experience-title" /> }}
+  {{ <card_head eyebrow={trans(key="xp_eyebrow", lang=lang)} title={trans(key="xp_title", lang=lang)} lead={xlead} id="experience-title" /> }}
   <p class="-mt-3 mb-6 max-w-screen-md text-sm text-gray-600 dark:text-gray-400">{{ <icon name="lock" class="-mt-0.5 mr-1 inline h-4 w-4 text-gray-500 dark:text-gray-400" /> }}{{ trans(key="xp_confidential", lang=lang) }}</p>
 
   {#- KPI cards (Flowbite Pro stats), on the gray band of the card. #}

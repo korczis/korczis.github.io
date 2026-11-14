@@ -1,8 +1,9 @@
 // Project detail drawer (Alpine.js + Flowbite Drawer): one drawer per catalogue page, filled from
 // the JSON the template embedded (#catalogue-data), opened from a card's Details button or from
-// ?project=<repo>. Closed it is inert, so its controls leave the tab order (aria-hidden alone
-// would leave focusable content hidden: axe aria-hidden-focus). Focus moves to the close button
-// on open and returns to the trigger on close.
+// ?project=<repo>. Words come in the page's language: the data carries the field suffix (`_cs`).
+// Closed it is inert, so its controls leave the tab order (aria-hidden alone would leave focusable
+// content hidden: axe aria-hidden-focus). Focus moves to the close button on open and returns to
+// the trigger on close.
 document.addEventListener('alpine:init', () => {
   Alpine.data('projectDetail', () => ({
     p: null,
@@ -38,7 +39,8 @@ document.addEventListener('alpine:init', () => {
       this.p = this.source.projects.find((x) => x.repo === repo) || null;
       this.f = this.source.measured[repo] || null;
       // Not `category`: the catalogue filter, an enclosing Alpine scope, owns that name.
-      this.categoryName = this.p ? this.source.categories[this.p.category]?.name ?? '' : '';
+      const c = this.p ? this.source.categories[this.p.category] : null;
+      this.categoryName = c ? c[`name${this.source.sfx}`] ?? c.name : '';
       this.returnTo = trigger;
       this.rememberProject(repo);
       this.drawer.show();
@@ -55,6 +57,11 @@ document.addEventListener('alpine:init', () => {
       else params.delete('project');
       const query = params.toString();
       window.history.replaceState(null, '', `${window.location.pathname}${query ? `?${query}` : ''}${window.location.hash}`);
+    },
+
+    // A curated text in the page's language, the default language when its twin is missing.
+    text(field) {
+      return this.p ? this.p[`${field}${this.source.sfx}`] ?? this.p[field] ?? '' : '';
     },
 
     date(value) {

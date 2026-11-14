@@ -1,7 +1,18 @@
 // Command palette (Alpine.js): ⌘K, Ctrl+K or "/" opens it anywhere (not while typing in a field),
 // the input is an ARIA combobox over a listbox, arrows move, Enter opens, Escape or a click
 // outside closes and focus returns where it was. The index is <home>/palette.json, derived at
-// build (templates/palette.json) and fetched once, on first open.
+// build (templates/palette.json) and fetched once, on first open; before it come this page's
+// actions: the three themes (static/js/components/theme.js), the same page in the other language
+// (the navbar's switch) and copying the page's address.
+// The shortcut is written as the visitor's system names it: ⌘K on Apple devices, Ctrl K elsewhere.
+const PALETTE_MAC = /Mac|iPhone|iPad|iPod/.test(navigator.userAgentData?.platform || navigator.platform || '');
+if (!PALETTE_MAC) {
+  document.querySelectorAll('[data-shortcut]').forEach((el) => {
+    el.textContent = 'Ctrl K';
+    if (el.hasAttribute('aria-keyshortcuts')) el.setAttribute('aria-keyshortcuts', 'Control+K');
+  });
+}
+
 document.addEventListener('alpine:init', () => {
   Alpine.data('palette', () => ({
     open: false,
@@ -41,9 +52,28 @@ document.addEventListener('alpine:init', () => {
     load() {
       this.loading ??= fetch(`${document.documentElement.dataset.home}palette.json`)
         .then((response) => (response.ok ? response.json() : Promise.reject(new Error(`palette.json: ${response.status}`))))
-        .then((items) => { this.items = items; })
+        .then((items) => { this.items = [...this.actions(), ...items]; })
         .catch((error) => { this.loading = null; console.warn(error.message); });
       return this.loading;
+    },
+
+    actions() {
+      const t = KorczisHub.t;
+      const kind = t('js_palette_action');
+      const list = ['light', 'dark', 'system'].map((mode) => ({
+        kind, name: t(`js_palette_theme_${mode}`), hint: t('js_palette_theme_hint'), url: `#theme-${mode}`,
+        run: () => window.KorczisTheme?.set(mode),
+      }));
+      const other = document.querySelector('nav a[hreflang]');
+      if (other) {
+        const code = other.getAttribute('hreflang');
+        list.push({ kind, name: t(`js_palette_language_${code}`), hint: other.href, url: other.href });
+      }
+      if (navigator.clipboard) {
+        list.push({ kind, name: t('js_palette_copy'), hint: window.location.href, url: '#copy-link',
+          run: () => navigator.clipboard.writeText(window.location.href).catch(() => {}) });
+      }
+      return list;
     },
 
     show() {
@@ -71,7 +101,13 @@ document.addEventListener('alpine:init', () => {
 
     go(index = this.active) {
       const item = this.results[index];
-      if (item) window.location.href = item.url;
+      if (!item) return;
+      if (item.run) {
+        item.run();
+        this.close();
+      } else {
+        window.location.href = item.url;
+      }
     },
   }));
 });

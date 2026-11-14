@@ -1,7 +1,8 @@
 {%- set lp = "" %}{% if lang is defined and lang != config.default_language %}{% set lp = "/" ~ lang %}{% endif -%}
 {%- set sfx = "" %}{% if lang is defined and lang != config.default_language %}{% set sfx = "_" ~ lang %}{% endif -%}
 {#- Command palette (⌘K, Ctrl+K or /): a Flowbite Pro modal shell driven by Alpine.js as an ARIA
-    combobox. Its index is templates/palette.json, fetched on first open. -#}
+    combobox. Its index is templates/palette.json, fetched on first open; palette.js adds this
+    page's actions (theme, language, copy link) and names the shortcut of the visitor's system. -#}
 <div x-data="palette" x-cloak x-show="open" x-on:keydown.escape.window="close()" class="fixed inset-0 z-50 flex items-start justify-center px-4 pt-20 sm:pt-28"
   role="dialog" aria-modal="true" aria-labelledby="palette-label">
   <div class="fixed inset-0 bg-gray-900/50 dark:bg-gray-900/80" @click="close()" aria-hidden="true"></div>
@@ -30,7 +31,7 @@
       <li x-show="!results.length" class="px-4 py-6 text-center text-sm text-gray-600 dark:text-gray-300" role="presentation">{{ trans(key="nothing_matches_try_a_technology_like", lang=lang) | safe }}</li>
     </ul>
     <p class="flex flex-wrap gap-x-4 gap-y-1 border-t border-gray-200 px-4 py-2 text-xs text-gray-600 dark:border-gray-600 dark:text-gray-300">
-      <span><kbd class="font-semibold">↑ ↓</kbd> {{ trans(key="move", lang=lang) | safe }}</span><span><kbd class="font-semibold">Enter</kbd> {{ trans(key="open_2", lang=lang) | safe }}</span><span><kbd class="font-semibold">⌘K</kbd> {{ trans(key="or", lang=lang) | safe }} <kbd class="font-semibold">/</kbd> {{ trans(key="anywhere", lang=lang) | safe }}</span>
+      <span><kbd class="font-semibold">↑ ↓</kbd> {{ trans(key="move", lang=lang) | safe }}</span><span><kbd class="font-semibold">Enter</kbd> {{ trans(key="open_2", lang=lang) | safe }}</span><span><kbd class="font-semibold" data-shortcut>⌘K</kbd> {{ trans(key="or", lang=lang) | safe }} <kbd class="font-semibold">/</kbd> {{ trans(key="anywhere", lang=lang) | safe }}</span>
     </p>
   </div>
 </div>

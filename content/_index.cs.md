@@ -12,6 +12,24 @@ og_description = "Nástroje, které nutí AI agenty doložit práci, poctivé p�
 og_image = "og/cs-home.png"
 schema = "home"
 keywords = ["Tomáš Korčák", "korczis", "Majordomus", "AI agenti", "vývoj softwaru", "vědecká vizualizace", "Brno"]
+# The first two sit in the home's own rows beside a card each (templates/index.html includes
+# viz-grid with viz_from / viz_to); the rest form the art grid.
+[[extra.viz]]
+kind = "skillset"
+source = "index.skillset"
+title = "home_skillset_title"
+lead = "home_skillset_lead"
+span = 2
+height = "lg"
+
+[[extra.viz]]
+kind = "graph"
+source = "catalogue.graph"
+title = "how_the_pieces_connect"
+lead = "projects_the_tools_they_use_and"
+span = 2
+height = "lg"
+
 [[extra.viz]]
 kind = "constellation"
 source = "index.repos"
@@ -40,7 +58,7 @@ height = "lg"
 
 [[extra.viz]]
 kind = "pack"
-source = "index.languages"
+source = "index.repos"
 title = "viz_pack_title"
 lead = "viz_pack_lead"
 span = 2

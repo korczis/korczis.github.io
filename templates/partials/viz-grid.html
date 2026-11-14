@@ -4,6 +4,14 @@
     schema and scripts/check-viz-layer.mjs. -#}
 {#- The visuals come from the page's or section's front matter; taxonomy pages, which have none,
     declare theirs in data/site.toml ([[taxonomy.list_viz]], [[taxonomy.single_viz]]). -#}
+{#- Placement: every page shows its visuals in one slot, after its summary (header, KPIs, summary
+    cards) and before its lists. A page that composes visuals into its own rows (the home pairs the
+    skillset and the graph with a card beside each) sets, before an include, viz_from and viz_to
+    (1-based positions in the front-matter list) and viz_bare (no grid of its own: the cards join
+    the page's grid). Order, kinds and sizes stay in front matter. -#}
+{%- if viz_from is defined %}{% set vfrom = viz_from %}{% else %}{% set vfrom = 1 %}{% endif -%}
+{%- if viz_to is defined %}{% set vto = viz_to %}{% else %}{% set vto = 99 %}{% endif -%}
+{%- if viz_bare is defined and viz_bare %}{% set vbare = true %}{% else %}{% set vbare = false %}{% endif -%}
 {%- set vfm = false -%}{%- if page is defined -%}{%- set vfm = page -%}{%- elif section is defined -%}{%- set vfm = section -%}{%- endif -%}
 {%- set vlist = [] %}{% if vfm and vfm.extra.viz is defined %}{% set vlist = vfm.extra.viz %}{% elif taxonomy is defined %}{% set vtx = load_data(path="data/site.toml") %}{% if term is defined %}{% set vlist = vtx.taxonomy.single_viz %}{% else %}{% set vlist = vtx.taxonomy.list_viz %}{% endif %}{% endif -%}
 {%- if vlist | length > 0 -%}
@@ -12,14 +20,13 @@
 {%- set vrc = load_data(path="data/recent.json") -%}
 {%- set vcat = load_data(path="data/projects.toml") -%}
 {%- set vsfx = "" %}{% if lang is defined and lang != config.default_language %}{% set vsfx = "_" ~ lang %}{% endif -%}
-<div class="grid grid-cols-1 gap-4 xl:grid-cols-3">
-  {%- for v in vlist %}
+{%- if not vbare %}<div class="grid grid-cols-1 gap-4 xl:grid-cols-3">{% endif %}
+  {%- for v in vlist %}{% if loop.index >= vfrom and loop.index <= vto %}
   {%- set id = "viz-" ~ loop.index ~ "-" ~ v.kind %}
   {%- if v.height == "sm" %}{% set h = "h-64" %}{% elif v.height == "lg" %}{% set h = "h-[28rem]" %}{% else %}{% set h = "h-80" %}{% endif %}
   {%- if v.span == 3 %}{% set sp = "xl:col-span-3" %}{% elif v.span == 2 %}{% set sp = "xl:col-span-2" %}{% else %}{% set sp = "" %}{% endif %}
-  <section class="min-w-0 rounded-lg bg-white p-4 shadow dark:bg-gray-800 sm:p-6 {{ sp }}" aria-labelledby="{{ id }}-title">
-    <h2 id="{{ id }}-title" class="text-xl font-bold leading-none text-gray-900 dark:text-white">{{ trans(key=v.title, lang=lang) }}</h2>
-    <p class="mb-4 mt-1 text-sm text-gray-600 dark:text-gray-400">{{ trans(key=v.lead, lang=lang) }}</p>
+  {% <card cls={sp ~ " print:hidden"} labelledby={id ~ "-title"}> %}
+    {{ <card_head id={id ~ "-title"} title={trans(key=v.title, lang=lang)} lead={trans(key=v.lead, lang=lang)} /> }}
     <div class="viz-box {{ h }}{% if v.tone is defined and v.tone == "night" %} overflow-hidden rounded-lg bg-gray-950 ring-1 ring-gray-800{% endif %}" data-viz="{{ v.kind }}" data-source="{{ id }}-data" role="img" aria-label="{{ trans(key=v.lead, lang=lang) }}">{% if v.kind == "graph" or v.kind == "skillset" %}<div data-canvas class="h-full w-full"></div>{% endif %}</div>
     {%- include "partials/viz-list.html" %}
     <script type="application/json" id="{{ id }}-data">
@@ -55,7 +62,7 @@
       {%- elif v.source == "experience.engagements" %}{% include "partials/experience-data.html" %}
       {%- else %}null{% endif -%}
     </script>
-  </section>
-  {%- endfor %}
-</div>
+  {% </card> %}
+  {%- endif %}{% endfor %}
+{%- if not vbare %}</div>{% endif %}
 {%- endif -%}

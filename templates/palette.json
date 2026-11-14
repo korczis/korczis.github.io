@@ -3,26 +3,28 @@
 {#- The command palette's index, one per language (/palette.json, /cs/palette.json): Zola renders
     it as the site's only "feed" (zola.toml feed_filenames), so every page shares one cached file
     instead of carrying the index inline. static/js/components/palette.js fetches it on first open.
-    Derived from the catalogue: pages, work, glossary, categories, projects, repositories. -#}
+    Derived: the pages of data/nav.toml, work, glossary terms, tags, categories, projects,
+    repositories. Actions (theme, language, copy link) are added by palette.js, per page. -#}
 {%- set pcat = load_data(path="data/projects.toml") -%}
 {%- set pix = load_data(path="data/index.json") -%}
 [
-  {"kind": {{ trans(key="kind_page", lang=lang) | json_encode | safe }}, "name": {{ trans(key="overview", lang=lang) | json_encode | safe }}, "hint": {{ trans(key="hint_home", lang=lang) | json_encode | safe }}, "url": {{ (config.base_url ~ lp ~ "/") | json_encode | safe }}},
-  {"kind": {{ trans(key="kind_page", lang=lang) | json_encode | safe }}, "name": {{ trans(key="nav_projects", lang=lang) | json_encode | safe }}, "hint": {{ trans(key="hint_projects", lang=lang) | json_encode | safe }}, "url": {{ (config.base_url ~ lp ~ "/projects/") | json_encode | safe }}},
-  {"kind": {{ trans(key="kind_page", lang=lang) | json_encode | safe }}, "name": {{ trans(key="about", lang=lang) | json_encode | safe }}, "hint": {{ trans(key="hint_about", lang=lang) | json_encode | safe }}, "url": {{ (config.base_url ~ lp ~ "/about/") | json_encode | safe }}},
-  {"kind": {{ trans(key="kind_page", lang=lang) | json_encode | safe }}, "name": {{ trans(key="repositories", lang=lang) | json_encode | safe }}, "hint": {{ trans(key="hint_repositories", lang=lang) | json_encode | safe }}, "url": {{ (config.base_url ~ lp ~ "/repositories/") | json_encode | safe }}},
-  {"kind": {{ trans(key="kind_page", lang=lang) | json_encode | safe }}, "name": {{ trans(key="recent_work", lang=lang) | json_encode | safe }}, "hint": {{ trans(key="hint_work", lang=lang) | json_encode | safe }}, "url": {{ (config.base_url ~ lp ~ "/work/") | json_encode | safe }}},
+  {%- set pnav = load_data(path="data/nav.toml") %}
+  {%- for link in pnav.nav %}{% if link.palette %}
+  {"kind": {{ trans(key="kind_page", lang=lang) | json_encode | safe }}, "name": {{ trans(key=link.key, lang=lang) | json_encode | safe }}, "hint": {{ trans(key=link.hint, lang=lang) | json_encode | safe }}, "url": {{ (config.base_url ~ lp ~ link.path) | json_encode | safe }}},
+  {%- endif %}{% endfor %}
   {%- if lang == config.default_language %}{% set wsec = get_section(path="work/_index.md") %}{% else %}{% set wsec = get_section(path="work/_index." ~ lang ~ ".md") %}{% endif %}
   {%- for wp in wsec.pages %}
   {"kind": {{ trans(key="kind_work", lang=lang) | json_encode | safe }}, "name": {{ wp.title | json_encode | safe }}, "hint": {{ wp.description | json_encode | safe }}, "terms": {{ wp.extra.keywords | join(sep=" ") | json_encode | safe }}, "url": {{ wp.permalink | json_encode | safe }}},
   {%- endfor %}
-  {"kind": {{ trans(key="kind_page", lang=lang) | json_encode | safe }}, "name": {{ trans(key="stack", lang=lang) | json_encode | safe }}, "hint": {{ trans(key="hint_stack", lang=lang) | json_encode | safe }}, "url": {{ (config.base_url ~ lp ~ "/stack/") | json_encode | safe }}},
-  {"kind": {{ trans(key="kind_page", lang=lang) | json_encode | safe }}, "name": {{ trans(key="glossary", lang=lang) | json_encode | safe }}, "hint": {{ trans(key="hint_glossary", lang=lang) | json_encode | safe }}, "url": {{ get_url(path="@/glossary/_index.md", lang=lang) | json_encode | safe }}},
   {%- set gsec = get_section(path="glossary/_index" ~ sfx | replace(from="_", to=".") ~ ".md") %}
   {%- for gp in gsec.pages %}
   {"kind": {{ trans(key="kind_term", lang=lang) | json_encode | safe }}, "name": {{ gp.title | json_encode | safe }}, "hint": {{ gp.extra.definition | json_encode | safe }}, "terms": {{ (gp.extra.aliases | join(sep=" ") ~ " " ~ gp.extra.term) | json_encode | safe }}, "url": {{ gp.permalink | json_encode | safe }}},
   {%- endfor %}
   {"kind": {{ trans(key="kind_page", lang=lang) | json_encode | safe }}, "name": "Majordomus", "hint": "majordomus.dev", "url": {{ config.extra.majordomus_url | json_encode | safe }}},
+  {%- set ptags = get_taxonomy(kind="tags", lang=lang) %}
+  {%- for t in ptags.items %}
+  {"kind": {{ trans(key="kind_tag", lang=lang) | json_encode | safe }}, "name": {{ t.name | json_encode | safe }}, "hint": {{ trans(key="n_pages", lang=lang) | replace(from="{n}", to=t.pages | length ~ "") | json_encode | safe }}, "url": {{ t.permalink | json_encode | safe }}},
+  {%- endfor %}
   {%- for key, c in pcat.categories %}
   {"kind": {{ trans(key="kind_category", lang=lang) | json_encode | safe }}, "name": {{ c["name" ~ sfx] | json_encode | safe }}, "hint": {{ c["description" ~ sfx] | json_encode | safe }}, "url": {{ (config.base_url ~ lp ~ "/projects/" ~ key ~ "/") | json_encode | safe }}},
   {%- endfor %}

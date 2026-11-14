@@ -65,14 +65,16 @@
 
   {#- The texts the scripts render, in this page's language (KorczisHub.t). #}
   <script type="application/json" id="i18n-data">{"locale": {% if lang == "cs" %}"cs-CZ"{% else %}"en-GB"{% endif %}, "strings": { {%- for k in config.extra.client.keys %}{{ k | json_encode | safe }}: {{ trans(key=k, lang=lang) | json_encode | safe }}{% if not loop.last %}, {% endif %}{% endfor -%} }}</script>
-  <script src="{{ config.base_url }}/js/vendor/flowbite.min.js" defer></script>
+  {#- Cache-busted by the bundle's own hash, written out so the address names the file it loads. #}
+  <script src="{{ config.base_url }}/js/vendor/flowbite.min.js?h={{ get_hash(path='js/vendor/flowbite.min.js', sha_type=256, base64=false) | truncate(length=20, end='') }}" defer></script>
   <script src="{{ get_url(path='js/site.js', cachebust=true) }}" defer></script>
   {%- block scripts %}{% endblock scripts %}
   {%- set vlist = [] %}{% if page is defined and page.extra.viz is defined %}{% set vlist = page.extra.viz %}{% elif section is defined and section.extra.viz is defined %}{% set vlist = section.extra.viz %}{% elif taxonomy is defined %}{% set vtx = load_data(path="data/site.toml") %}{% if term is defined %}{% set vlist = vtx.taxonomy.single_viz %}{% else %}{% set vlist = vtx.taxonomy.list_viz %}{% endif %}{% endif %}
   {%- if vlist | length > 0 %}{% set_global seen = "|" %}{% for v in vlist %}{% if not ("|" ~ v.kind ~ "|") in seen %}{% set_global seen = seen ~ v.kind ~ "|" %}
   <script src="{{ get_url(path='js/viz/' ~ v.kind ~ '.js', cachebust=true) }}" defer></script>
   {%- endif %}{% endfor %}{% endif %}
+  <script src="{{ get_url(path='js/components/theme.js', cachebust=true) }}" defer></script>
   <script src="{{ get_url(path='js/components/palette.js', cachebust=true) }}" defer></script>
-  <script src="{{ get_url(path='js/vendor/alpine.min.js') }}" defer></script>
+  <script src="{{ get_url(path='js/vendor/alpine.min.js', cachebust=true) }}" defer></script>
 </body>
 </html>

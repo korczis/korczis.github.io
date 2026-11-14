@@ -14,13 +14,9 @@
           <span class="hidden self-center whitespace-nowrap text-xl font-semibold text-gray-900 dark:text-white sm:inline">{{ trans(key="brand", lang=lang) }}</span>
         </a>
         <form action="{{ config.base_url }}{{ lp }}/projects/" method="get" role="search" class="hidden lg:block lg:pl-2">
-          <label for="topbar-search" class="sr-only">{{ trans(key="search_projects", lang=lang) | safe }}</label>
-          <div class="relative mt-1 lg:w-96">
-            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3 text-gray-500 dark:text-gray-400">{{ <icon name="search" class="h-5 w-5" /> }}</div>
-            <input type="search" name="q" id="topbar-search" placeholder="{{ trans(key="search_projects_words_or_technology", lang=lang) }}"
-              class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 pl-10 pr-12 text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500 sm:text-sm">
-            <button type="button" data-js onclick="document.dispatchEvent(new Event('palette:open'))" class="absolute inset-y-0 right-2 my-auto h-6 rounded border border-gray-200 bg-white px-1.5 text-xs font-semibold text-gray-800 hover:bg-gray-100 dark:border-gray-500 dark:bg-gray-600 dark:text-gray-100" aria-label="{{ trans(key="k_open_the_command_palette", lang=lang) }}">⌘K</button>
-          </div>
+          {% <search_input id="topbar-search" name="q" label={trans(key="search_projects", lang=lang)} placeholder={trans(key="search_projects_words_or_technology", lang=lang)} cls="mt-1 lg:w-96"> %}
+            <button type="button" data-js onclick="document.dispatchEvent(new Event('palette:open'))" class="absolute inset-y-0 right-2 my-auto h-6 rounded border border-gray-200 bg-white px-1.5 text-xs font-semibold text-gray-800 hover:bg-gray-100 dark:border-gray-500 dark:bg-gray-600 dark:text-gray-100" aria-label="{{ trans(key="open_the_command_palette", lang=lang) }}" aria-keyshortcuts="Meta+K" data-shortcut>⌘K</button>
+          {% </search_input> %}
         </form>
       </div>
       <div class="flex items-center gap-1">
@@ -34,19 +30,31 @@
         <button type="button" data-js onclick="document.dispatchEvent(new Event('palette:open'))" class="rounded-lg p-2.5 text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-700 lg:hidden">
           <span class="sr-only">{{ trans(key="search", lang=lang) | safe }}</span>{{ <icon name="search" class="h-5 w-5" /> }}
         </button>
-        <button id="theme-toggle" type="button" data-js data-tooltip-target="tooltip-theme" class="rounded-lg p-2.5 text-sm text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-700">
-          <span class="sr-only">{{ trans(key="toggle_dark_mode", lang=lang) | safe }}</span>
+        {#- Theme: a Flowbite dropdown with three choices, light, dark and the system's
+            (static/js/components/theme.js). The icon is chosen by CSS, so nothing shifts on load. #}
+        <button id="theme-menu-button" type="button" data-js data-dropdown-toggle="theme-menu" data-dropdown-placement="bottom-end" aria-haspopup="menu" aria-expanded="false"
+          class="rounded-lg p-2.5 text-sm text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-700">
+          <span class="sr-only">{{ trans(key="theme_label", lang=lang) | safe }}</span>
           {{ <icon name="moon" class="h-5 w-5 dark:hidden" /> }}
           {{ <icon name="sun" class="hidden h-5 w-5 dark:block" /> }}
         </button>
-        <div id="tooltip-theme" role="tooltip" class="tooltip invisible absolute z-10 inline-block rounded-lg bg-gray-900 px-3 py-2 text-sm font-medium text-white opacity-0 shadow-sm transition-opacity duration-300 dark:bg-gray-700">{{ trans(key="toggle_dark_mode", lang=lang) | safe }}<div class="tooltip-arrow" data-popper-arrow></div></div>
+        <div id="theme-menu" class="z-50 hidden w-48 rounded-lg bg-white shadow dark:bg-gray-700">
+          <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" role="menu" aria-labelledby="theme-menu-button">
+            {%- for opt in [["light", "sun", "theme_light"], ["dark", "moon", "theme_dark"], ["system", "computer", "theme_system"]] %}
+            <li role="none">
+              <button type="button" role="menuitemradio" aria-checked="false" data-theme-choice="{{ opt[0] }}"
+                class="group flex w-full items-center gap-2 px-4 py-2 text-left hover:bg-gray-100 focus:bg-gray-100 focus:outline-none aria-checked:font-semibold aria-checked:text-primary-700 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:bg-gray-600 dark:aria-checked:text-primary-300">
+                {{ <icon name={opt[1]} class="h-4 w-4" /> }}{{ trans(key=opt[2], lang=lang) | safe }}{{ <icon name="check" class="ms-auto hidden h-4 w-4 group-aria-checked:block" /> }}
+              </button>
+            </li>
+            {%- endfor %}
+          </ul>
+        </div>
         <a href="https://github.com/{{ config.extra.github }}" data-tooltip-target="tooltip-github" class="rounded-lg p-2.5 text-gray-600 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700">
           <span class="sr-only">{{ trans(key="github_profile", lang=lang) | safe }}</span>{{ <icon name="github" class="h-5 w-5" /> }}
         </a>
-        <div id="tooltip-github" role="tooltip" class="tooltip invisible absolute z-10 inline-block rounded-lg bg-gray-900 px-3 py-2 text-sm font-medium text-white opacity-0 shadow-sm transition-opacity duration-300 dark:bg-gray-700">github.com/{{ config.extra.github }}<div class="tooltip-arrow" data-popper-arrow></div></div>
-        <a href="{{ config.extra.majordomus_url }}" class="ml-2 hidden items-center rounded-lg bg-primary-700 px-3 py-2 text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 sm:inline-flex">
-          {{ <icon name="shield" class="mr-2 h-4 w-4" /> }}Majordomus
-        </a>
+        {{ <tooltip id="tooltip-github" text={"github.com/" ~ config.extra.github} size="sm" /> }}
+        <span class="ml-2 hidden sm:inline-flex">{{ <button label="Majordomus" href={config.extra.majordomus_url} size="sm" icon="shield" /> }}</span>
       </div>
     </div>
   </div>

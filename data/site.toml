@@ -30,8 +30,8 @@ eyebrow = "Data"
 eyebrow_cs = "Data"
 title = "How the numbers are made"
 title_cs = "Jak vznikají čísla"
-lead = "Refreshed every six hours by the refresh workflow; the build itself never touches the network."
-lead_cs = "Obnovováno každých šest hodin refresh workflow; samotný build nikdy nesahá na síť."
+lead = "Refreshed on a schedule by the refresh workflow; the build itself never touches the network."
+lead_cs = "Pravidelně obnovováno workflow refresh; samotný build nikdy nesahá na síť."
 
 [[stack.tools]]
 name = "Flowbite Pro"
@@ -50,28 +50,12 @@ here = "Filters, the detail drawer, the command palette, the live Majordomus car
 here_cs = "Filtry, detailní drawer, příkazová paleta, živá karta Majordomu."
 
 [[stack.tools]]
-name = "Cytoscape.js"
-icon = "graph"
-role = "Graphs of things and their relations, laid out and explorable."
-role_cs = "Grafy věcí a jejich vztahů, rozložené a prozkoumatelné."
-here = "The ecosystem graph on the home page."
-here_cs = "Graf ekosystému na úvodní stránce."
-
-[[stack.tools]]
 name = "Apache ECharts"
 icon = "graph"
-role = "Dense, interactive charts: calendars, sunbursts, stacked bars."
-role_cs = "Husté interaktivní grafy: kalendáře, sunbursty, skládané sloupce."
-here = "The skillset sunburst on the home page."
-here_cs = "Sunburst dovedností na úvodní stránce."
-
-[[stack.tools]]
-name = "Chart.js"
-icon = "graph"
-role = "Light charts where a bar or a line says it all."
-role_cs = "Lehké grafy tam, kde vše řekne sloupec nebo čára."
-here = "Repositories by language."
-here_cs = "Repozitáře podle jazyka."
+role = "Dense, interactive charts and networks: sunbursts, graphs, stacked bars, drilled down in place."
+role_cs = "Husté interaktivní grafy a sítě: sunbursty, grafy vztahů, skládané sloupce, s proklikem do hloubky."
+here = "The skillset sunburst, the ecosystem graph and the language charts."
+here_cs = "Sunburst dovedností, graf ekosystému a grafy jazyků."
 
 [[stack.tools]]
 name = "D3.js"
