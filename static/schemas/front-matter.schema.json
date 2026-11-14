@@ -121,6 +121,7 @@
                 "enum": [
                   "atlas",
                   "constellation",
+                  "experience",
                   "graph",
                   "languages",
                   "pack",
@@ -145,7 +146,8 @@
                   "index.skillset",
                   "catalogue.graph",
                   "tags.all",
-                  "tags.together"
+                  "tags.together",
+                  "experience.engagements"
                 ]
               },
               "title": {

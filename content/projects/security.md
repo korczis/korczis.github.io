@@ -14,7 +14,7 @@ category = "security"
 og_title = "Security and OSINT: 5 repositories."
 og_image = "og/category-security.png"
 schema = "collection"
-terms = ["osint", "cpp", "html", "ruby", "rust", "repository"]
+terms = ["osint", "due-diligence", "mergers-and-acquisitions", "virtual-data-room", "risk-assessment", "market-intelligence", "decision-support-system", "insolvency", "record-linkage", "knowledge-graph", "data-integration", "audit-trail", "information-extraction", "orchestration", "cpp", "html", "ruby", "rust", "repository"]
 keywords = ["Security and OSINT", "osint-case-ratcliffe-moscow-2026", "magic", "zlown", "peacemaker", "ratnet", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -30,6 +30,6 @@ Open-source intelligence, radio and network security research: cases, proofs of 
 
 The category holds 5 original repositories, written most often in [C++](@/glossary/cpp.md), [HTML](@/glossary/html.md), [Ruby](@/glossary/ruby.md) and [Rust](@/glossary/rust.md).
 
-Key concept: [OSINT](@/glossary/osint.md).
+Key concept: [OSINT](@/glossary/osint.md), [Due diligence](@/glossary/due-diligence.md), [Mergers and acquisitions](@/glossary/mergers-and-acquisitions.md), [Virtual data room](@/glossary/virtual-data-room.md), [Risk assessment](@/glossary/risk-assessment.md), [Market intelligence](@/glossary/market-intelligence.md), [Decision support system](@/glossary/decision-support-system.md), [Insolvency](@/glossary/insolvency.md), [Entity resolution](@/glossary/record-linkage.md), [Knowledge graph](@/glossary/knowledge-graph.md), [Data integration](@/glossary/data-integration.md), [Audit trail](@/glossary/audit-trail.md), [Information extraction](@/glossary/information-extraction.md) and [Orchestration](@/glossary/orchestration.md).
 
 *How categories are made:* nobody assigns them by hand. Every keyword of every category's rule is scored against a [repository](@/glossary/repository.md)'s name, topics and description, the name counting most, and the best score wins; when no keyword fits, its primary language decides. [Forks](@/glossary/fork.md) and [mirrors](@/glossary/mirror.md) never count as the owner's work.

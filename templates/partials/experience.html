@@ -1,0 +1,173 @@
+{#- Experience: the owner's client engagements in due diligence, M&A and AI, anonymised under NDA
+    (data/experience.json, mined by scripts/mine-experience.mjs; words from
+    data/experience-rules.toml and i18n/experience.toml). Flowbite Pro: a dashboard card with the
+    feature-sections heading, KPI cards, one feature card per domain with its capabilities, a chart
+    card for the simulator and the timeline component. Every number is derived from the data, every
+    capability links to its glossary term, its categories and the public work that shares it. -#}
+{%- set xp = load_data(path="data/experience.json") -%}
+{%- set xr = load_data(path="data/experience-rules.toml") -%}
+{%- set xs = "" %}{% set xl = "" %}{% if lang is defined and lang != config.default_language %}{% set xs = "_" ~ lang %}{% set xl = "." ~ lang %}{% endif -%}
+{%- set xgl = get_section(path="glossary/_index" ~ xl ~ ".md") -%}
+{%- set xwk = get_section(path="work/_index" ~ xl ~ ".md") -%}
+{%- set xpr = get_section(path="projects/_index" ~ xl ~ ".md") -%}
+{%- set xcard = "min-w-0 rounded-lg bg-white p-4 shadow dark:bg-gray-800 sm:p-6" -%}
+{%- set xbadge = "inline-flex items-center rounded-md bg-gray-100 px-2 py-0.5 text-xs font-medium text-gray-800 hover:bg-primary-100 hover:text-primary-800 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-primary-900 dark:hover:text-primary-300" -%}
+{%- set xlink = "font-medium text-primary-700 hover:underline dark:text-primary-400" -%}
+
+{#- What the data holds: engagements with something to show, the measured ones, their period, the
+    owner's commits (a sum of bucket floors, itself a floor), the capabilities and sectors they show. #}
+{%- set_global xn = 0 %}{% set_global xmeasured = 0 %}{% set_global xcommits = 0 %}{% set_global xfrom = "" %}{% set_global xto = "" %}
+{%- set_global xcaps = "|" %}{% set_global xncaps = 0 %}{% set_global xsectors = "|" %}{% set_global xsector_names = "" %}{% set_global xpending = "" %}
+{%- for e in xp.engagements %}
+  {%- if e.capabilities | length > 0 or e.period or e.roles | length > 0 or e.sector %}
+    {%- set_global xn = xn + 1 %}
+    {%- if e.period %}
+      {%- set_global xmeasured = xmeasured + 1 %}{% set_global xcommits = xcommits + e.scale.commits %}
+      {%- if xfrom == "" or e.period.from < xfrom %}{% set_global xfrom = e.period.from %}{% endif %}
+      {%- if xto == "" or e.period.to > xto %}{% set_global xto = e.period.to %}{% endif %}
+    {%- endif %}
+    {%- for c in e.capabilities %}{% if not ("|" ~ c.key ~ "|") in xcaps %}{% set_global xcaps = xcaps ~ c.key ~ "|" %}{% set_global xncaps = xncaps + 1 %}{% endif %}{% endfor %}
+    {%- if e.sector and not ("|" ~ e.sector ~ "|") in xsectors %}{% set_global xsectors = xsectors ~ e.sector ~ "|" %}{% if xsector_names %}{% set_global xsector_names = xsector_names ~ ", " %}{% endif %}{% set_global xsector_names = xsector_names ~ (xr.sectors[e.sector]["name" ~ xs] | lower) %}{% endif %}
+  {%- else %}{% if xpending %}{% set_global xpending = xpending ~ ", " %}{% endif %}{% set_global xpending = xpending ~ e.id %}{% endif %}
+{%- endfor %}
+{%- if xfrom %}
+  {%- set xf = xfrom | split(pat="-") %}{% set xt = xto | split(pat="-") %}
+  {%- set xmonths = ((xt[0] | int) - (xf[0] | int)) * 12 + (xt[1] | int) - (xf[1] | int) + 1 %}
+{%- endif %}
+
+{%- if xn > 0 %}
+<section id="experience" class="{{ xcard }}" aria-labelledby="experience-title">
+  {%- if xsector_names %}{% set xlead = trans(key="xp_lead_sectors", lang=lang) | replace(from="{sectors}", to=xsector_names) %}{% else %}{% set xlead = trans(key="xp_lead", lang=lang) %}{% endif %}
+  {{ <section_head eyebrow={trans(key="xp_eyebrow", lang=lang)} title={trans(key="xp_title", lang=lang)} lead={xlead} id="experience-title" /> }}
+  <p class="-mt-3 mb-6 max-w-screen-md text-sm text-gray-600 dark:text-gray-400">{{ <icon name="lock" class="-mt-0.5 mr-1 inline h-4 w-4 text-gray-500 dark:text-gray-400" /> }}{{ trans(key="xp_confidential", lang=lang) }}</p>
+
+  {#- KPI cards (Flowbite Pro stats), on the gray band of the card. #}
+  <div class="mb-6 grid grid-cols-2 gap-4 rounded-lg bg-gray-50 p-4 dark:bg-gray-900 xl:grid-cols-4">
+    {{ <kpi value={xn ~ ""} label={trans(key="xp_kpi_engagements", lang=lang)} note={trans(key="xp_kpi_engagements_note", lang=lang) | replace(from="{n}", to=xmeasured ~ "")} /> }}
+    {{ <kpi value={xncaps ~ ""} label={trans(key="xp_kpi_capabilities", lang=lang)} note={trans(key="xp_kpi_capabilities_note", lang=lang) | replace(from="{m}", to=xr.capabilities | length ~ "")} /> }}
+    {{ <kpi value={(xcommits | num_format(locale=lang)) ~ "+"} label={trans(key="xp_kpi_commits", lang=lang)} note={trans(key="xp_kpi_commits_note", lang=lang)} /> }}
+    {%- if xfrom %}
+    {%- set xfl = trans(key="xp_month_" ~ (xf[1] | int), lang=lang) ~ " " ~ xf[0] %}{% set xtl = trans(key="xp_month_" ~ (xt[1] | int), lang=lang) ~ " " ~ xt[0] %}
+    {{ <kpi value={xmonths ~ ""} label={trans(key="xp_kpi_months", lang=lang)} note={trans(key="xp_kpi_months_note", lang=lang) | replace(from="{from}", to=xfl) | replace(from="{to}", to=xtl)} /> }}
+    {%- endif %}
+  </div>
+
+  {#- One feature card per domain: its capabilities that an engagement shows, each with its numbers
+      and its links (glossary term, categories, public work). #}
+  <div class="mb-6 grid grid-cols-1 gap-4 xl:grid-cols-3">
+    {%- for dkey in xr.domain_order %}{% set d = xr.domains[dkey] %}
+    {%- set_global xdn = 0 %}{% for ckey, c in xr.capabilities %}{% if c.domain == dkey and ("|" ~ ckey ~ "|") in xcaps %}{% set_global xdn = xdn + 1 %}{% endif %}{% endfor %}
+    {%- if xdn > 0 %}
+    {%- set_global xdurl = "" %}{% for p in xpr.pages %}{% if p.extra.category is defined and p.extra.category == d.category %}{% set_global xdurl = p.permalink %}{% endif %}{% endfor %}
+    <article class="min-w-0 rounded-lg border border-gray-200 p-4 dark:border-gray-700 sm:p-5" aria-labelledby="xp-domain-{{ dkey }}">
+      <div class="mb-3 flex items-start gap-3">
+        <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary-100 text-primary-700 dark:bg-primary-900 dark:text-primary-300">{{ <icon name={d.icon} class="h-5 w-5" /> }}</span>
+        <div class="min-w-0">
+          <h3 id="xp-domain-{{ dkey }}" class="text-lg font-semibold text-gray-900 dark:text-white">{% if xdurl %}<a href="{{ xdurl }}" class="hover:text-primary-700 hover:underline dark:hover:text-primary-400">{{ d["name" ~ xs] }}</a>{% else %}{{ d["name" ~ xs] }}{% endif %}</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400">{{ d["description" ~ xs] }}</p>
+        </div>
+      </div>
+      <ul class="divide-y divide-gray-200 dark:divide-gray-700">
+        {%- for ckey, c in xr.capabilities %}{% if c.domain == dkey and ("|" ~ ckey ~ "|") in xcaps %}
+        {%- set_global xce = 0 %}{% set_global xcc = 0 %}{% set_global xch = 0 %}{% set_global xcp = 0 %}{% set_global xcd = false %}
+        {%- for e in xp.engagements %}{% for x in e.capabilities %}{% if x.key == ckey %}{% set_global xce = xce + 1 %}{% set_global xcc = xcc + x.evidence.commits %}{% set_global xch = xch + x.evidence.headings %}{% set_global xcp = xcp + x.evidence.paths %}{% if x.declared %}{% set_global xcd = true %}{% endif %}{% endif %}{% endfor %}{% endfor %}
+        {%- set_global xterm = "" %}{% for p in xgl.pages %}{% if p.extra.term == c.term %}{% set_global xterm = p.permalink %}{% endif %}{% endfor %}
+        {%- if xce == 1 %}{% set xform = "one" %}{% elif xce >= 2 and xce <= 4 %}{% set xform = "few" %}{% else %}{% set xform = "other" %}{% endif %}
+        <li class="py-3 first:pt-0 last:pb-0">
+          <div class="flex items-start justify-between gap-3">
+            <h4 class="font-semibold text-gray-900 dark:text-white">{% if xterm %}<a href="{{ xterm }}" class="hover:text-primary-700 hover:underline dark:hover:text-primary-400" title="{{ trans(key="xp_glossary", lang=lang) }}">{{ c["name" ~ xs] }}</a>{% else %}{{ c["name" ~ xs] }}{% endif %}</h4>
+            <span class="tabular shrink-0 rounded-md bg-primary-100 px-2 py-0.5 text-xs font-medium text-primary-800 dark:bg-primary-900 dark:text-primary-300">{{ trans(key="xp_n_engagements__" ~ xform, lang=lang) | replace(from="{n}", to=xce ~ "") }}</span>
+          </div>
+          <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">{{ c["description" ~ xs] }}</p>
+          <p class="tabular mt-1 text-xs text-gray-500 dark:text-gray-400">{{ trans(key="xp_evidence", lang=lang) | replace(from="{commits}", to=xcc | num_format(locale=lang)) | replace(from="{headings}", to=xch | num_format(locale=lang)) | replace(from="{paths}", to=xcp | num_format(locale=lang)) }}{% if xcd %} · {{ trans(key="xp_declared", lang=lang) }}{% endif %}</p>
+          <ul class="mt-2 flex flex-wrap gap-1.5" aria-label="{{ trans(key="xp_public_work", lang=lang) }}">
+            {%- for cat in c.categories %}{% for p in xpr.pages %}{% if p.extra.category is defined and p.extra.category == cat %}
+            <li><a href="{{ p.permalink }}" class="{{ xbadge }}">{{ <category_icon key={cat} class="mr-1 h-3 w-3" /> }}{{ p.title }}</a></li>
+            {%- endif %}{% endfor %}{% endfor %}
+            {%- if xp.public_work[ckey] is defined %}{% for repo in xp.public_work[ckey] %}{% for p in xwk.pages %}{% if p.extra.repo == repo %}
+            <li><a href="{{ p.permalink }}" class="{{ xbadge }} font-mono">{{ repo }}</a></li>
+            {%- endif %}{% endfor %}{% endfor %}{% endif %}
+          </ul>
+        </li>
+        {%- endif %}{% endfor %}
+      </ul>
+    </article>
+    {%- endif %}
+    {%- endfor %}
+  </div>
+
+  <div class="grid grid-cols-1 gap-4 xl:grid-cols-5">
+    {#- The simulator: engagements into capabilities into domains (ECharts sankey). #}
+    <div class="min-w-0 xl:col-span-3">
+      <h3 class="text-lg font-semibold text-gray-900 dark:text-white">{{ trans(key="xp_sim_title", lang=lang) }}</h3>
+      <p class="mb-3 mt-1 text-sm text-gray-600 dark:text-gray-400">{{ trans(key="xp_sim_lead", lang=lang) }}</p>
+      <div class="viz-box relative h-[24rem] sm:h-[28rem]" data-viz="experience" data-source="experience-data" role="img"
+        aria-label="{{ trans(key="xp_sim_aria", lang=lang) | replace(from="{n}", to=xn ~ "") }}">
+        <div data-canvas></div>
+      </div>
+      {%- include "partials/viz-list.html" %}
+      <script type="application/json" id="experience-data">{% include "partials/experience-data.html" %}</script>
+    </div>
+
+    {#- The timeline: Flowbite Pro timeline, newest first (the order of data/experience.json). #}
+    <div class="min-w-0 xl:col-span-2">
+      <h3 class="text-lg font-semibold text-gray-900 dark:text-white">{{ trans(key="xp_timeline_title", lang=lang) }}</h3>
+      <p class="mb-4 mt-1 text-sm text-gray-600 dark:text-gray-400">{{ trans(key="xp_timeline_lead", lang=lang) }}</p>
+      <ol class="relative ms-3 border-s border-gray-200 dark:border-gray-700">
+        {%- for e in xp.engagements %}{% if e.capabilities | length > 0 or e.period or e.roles | length > 0 or e.sector %}
+        <li id="experience-{{ e.id }}" class="mb-8 ms-6 scroll-mt-24 last:mb-0">
+          <span class="absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full bg-primary-100 text-primary-700 ring-8 ring-white dark:bg-primary-900 dark:text-primary-300 dark:ring-gray-800">{{ <icon name="clock" class="h-3.5 w-3.5" /> }}</span>
+          {%- if e.period %}
+          {%- set ef = e.period.from | split(pat="-") %}{% set et = e.period.to | split(pat="-") %}
+          <time datetime="{{ e.period.from }}" class="tabular mb-1 block text-sm leading-none text-gray-600 dark:text-gray-400">{{ trans(key="xp_month_" ~ (ef[1] | int), lang=lang) }} {{ ef[0] }}{% if e.period.to != e.period.from %} – {{ trans(key="xp_month_" ~ (et[1] | int), lang=lang) }} {{ et[0] }}{% endif %}</time>
+          {%- else %}
+          <p class="mb-1 text-sm leading-none text-gray-600 dark:text-gray-400">{{ trans(key="xp_undated", lang=lang) }}</p>
+          {%- endif %}
+          <h4 class="flex flex-wrap items-center gap-2 text-base font-semibold text-gray-900 dark:text-white">
+            {{ trans(key="xp_engagement", lang=lang) | replace(from="{id}", to=e.id) }}
+            {%- if e.sector %}<span class="rounded-md bg-primary-100 px-2 py-0.5 text-xs font-medium text-primary-800 dark:bg-primary-900 dark:text-primary-300">{{ xr.sectors[e.sector]["name" ~ xs] }}</span>
+            {%- else %}<span class="rounded-md bg-gray-100 px-2 py-0.5 text-xs font-medium text-gray-700 dark:bg-gray-700 dark:text-gray-300">{{ trans(key="xp_sector_unknown", lang=lang) }}</span>{% endif %}
+          </h4>
+          {%- if e.roles | length > 0 %}
+          <p class="mt-1 text-sm text-gray-600 dark:text-gray-400"><span class="sr-only">{{ trans(key="xp_roles", lang=lang) }}: </span>{% for r in e.roles %}<span title="{{ xr.roles[r]["description" ~ xs] }}">{{ xr.roles[r]["name" ~ xs] }}</span>{% if not loop.last %} · {% endif %}{% endfor %}</p>
+          {%- endif %}
+          {#- Scale chips: bucket floors, exact up to 3 and "n+" above. #}
+          <ul class="tabular mt-2 flex flex-wrap gap-x-3 gap-y-1 text-xs text-gray-600 dark:text-gray-400">
+            {%- for pair in [["commits", "xp_n_commits__"], ["repositories", "xp_n_repositories__"], ["files", "xp_n_files__"], ["modules", "xp_n_modules__"], ["tests", "xp_n_tests__"], ["team", "xp_n_people__"]] %}
+            {%- set n = e.scale[pair[0]] %}{% if n > 0 %}
+            {%- if n == 1 %}{% set f = "one" %}{% elif n >= 2 and n <= 4 %}{% set f = "few" %}{% else %}{% set f = "other" %}{% endif %}
+            {%- if n > 3 %}{% set nl = (n | num_format(locale=lang)) ~ "+" %}{% else %}{% set nl = n ~ "" %}{% endif %}
+            <li>{{ trans(key=pair[1] ~ f, lang=lang) | replace(from="{n}", to=nl) }}</li>
+            {%- endif %}{% endfor %}
+          </ul>
+          {%- if e.capabilities | length > 0 %}
+          <ul class="mt-3 flex flex-wrap gap-1.5" aria-label="{{ trans(key="xp_capabilities", lang=lang) }}">
+            {%- for x in e.capabilities %}
+            {%- set_global xterm = "" %}{% for p in xgl.pages %}{% if p.extra.term == xr.capabilities[x.key].term %}{% set_global xterm = p.permalink %}{% endif %}{% endfor %}
+            <li><a href="{{ xterm }}" class="{{ xbadge }}">{{ xr.capabilities[x.key]["name" ~ xs] }}</a></li>
+            {%- endfor %}
+          </ul>
+          {%- endif %}
+          {%- if e.technologies | length > 0 %}
+          <p class="mt-3 text-xs text-gray-600 dark:text-gray-400"><span class="font-semibold uppercase tracking-wide">{{ trans(key="xp_technologies", lang=lang) }}:</span>
+            {%- for tech in e.technologies %}{% set_global xtu = "" %}{% for p in xgl.pages %}{% if p.title == tech or tech in p.extra.aliases or p.extra.term == tech | lower %}{% set_global xtu = p.permalink %}{% endif %}{% endfor %}{% if xtu %}<a href="{{ xtu }}" class="{{ xlink }}">{{ tech }}</a>{% else %}{{ tech }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor -%}
+          </p>
+          {%- endif %}
+        </li>
+        {%- endif %}{% endfor %}
+      </ol>
+      {%- if xpending %}
+      <p class="mt-4 border-t border-gray-200 pt-3 text-xs text-gray-600 dark:border-gray-700 dark:text-gray-400">{{ trans(key="xp_pending", lang=lang) | replace(from="{ids}", to=xpending) }}</p>
+      {%- endif %}
+    </div>
+  </div>
+
+  <p class="mt-6 border-t border-gray-200 pt-3 text-xs text-gray-600 dark:border-gray-700 dark:text-gray-400">
+    {%- set xg = xp.generated_at | date(format="%Y-%m-%d") | split(pat="-") %}
+    {%- set xdate = trans(key="xp_date", lang=lang) | replace(from="{d}", to=(xg[2] | int) ~ "") | replace(from="{m}", to=trans(key="xp_month_" ~ (xg[1] | int), lang=lang)) | replace(from="{y}", to=xg[0]) %}
+    {{ trans(key="xp_method", lang=lang) | replace(from="{date}", to=xdate) }}
+    <a href="{{ config.extra.repo_url }}/blob/master/data/experience-rules.toml" class="{{ xlink }}">{{ trans(key="xp_method_rules", lang=lang) }}</a>
+  </p>
+</section>
+<script src="{{ get_url(path='js/viz/experience.js', cachebust=true) }}" defer></script>
+{%- endif %}

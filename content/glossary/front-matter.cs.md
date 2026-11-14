@@ -3,7 +3,7 @@
 title = "Front matter"
 description = "Strukturovaná data na začátku obsahového souboru (tady TOML), která popisují stránku generátoru i strojům."
 template = "term.html"
-weight = 38
+weight = 43
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

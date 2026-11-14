@@ -14,7 +14,7 @@ category = "security"
 og_title = "Bezpečnost a OSINT: 5 repozitářů."
 og_image = "og/cs-category-security.png"
 schema = "collection"
-terms = ["osint", "cpp", "html", "ruby", "rust", "repository"]
+terms = ["osint", "due-diligence", "mergers-and-acquisitions", "virtual-data-room", "risk-assessment", "market-intelligence", "decision-support-system", "insolvency", "record-linkage", "knowledge-graph", "data-integration", "audit-trail", "information-extraction", "orchestration", "cpp", "html", "ruby", "rust", "repository"]
 keywords = ["Bezpečnost a OSINT", "osint-case-ratcliffe-moscow-2026", "magic", "zlown", "peacemaker", "ratnet", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -30,6 +30,6 @@ Zpravodajství z otevřených zdrojů, výzkum rádiové a síťové bezpečnost
 
 Kategorie má 5 repozitářů; nejčastějšími jazyky jsou [C++](@/glossary/cpp.cs.md), [HTML](@/glossary/html.cs.md), [Ruby](@/glossary/ruby.cs.md) a [Rust](@/glossary/rust.cs.md).
 
-Klíčový pojem: [OSINT](@/glossary/osint.cs.md).
+Klíčový pojem: [OSINT](@/glossary/osint.cs.md), [Due diligence](@/glossary/due-diligence.cs.md), [Fúze a akvizice](@/glossary/mergers-and-acquisitions.cs.md), [Virtuální datová místnost](@/glossary/virtual-data-room.cs.md), [Hodnocení rizik](@/glossary/risk-assessment.cs.md), [Tržní zpravodajství](@/glossary/market-intelligence.cs.md), [Systém pro podporu rozhodování](@/glossary/decision-support-system.cs.md), [Insolvence](@/glossary/insolvency.cs.md), [Ztotožnění subjektů](@/glossary/record-linkage.cs.md), [Znalostní graf](@/glossary/knowledge-graph.cs.md), [Integrace dat](@/glossary/data-integration.cs.md), [Auditní stopa](@/glossary/audit-trail.cs.md), [Vytěžování informací](@/glossary/information-extraction.cs.md) a [Orchestrace](@/glossary/orchestration.cs.md).
 
 *Jak kategorie vznikají:* nikdo je ručně nepřiřazuje. Každé klíčové slovo pravidel všech kategorií se poměří s názvem, tématy a popisem [repozitáře](@/glossary/repository.cs.md), nejvíc váží název, a vyhraje nejlepší skóre; když nesedí žádné slovo, rozhodne hlavní jazyk. Forky a [mirrory](@/glossary/mirror.cs.md) se nepočítají za vlastní práci.

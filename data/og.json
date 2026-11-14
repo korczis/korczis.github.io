@@ -98,8 +98,8 @@
    "png": "38d20f704f2d3fa1"
   },
   "cs-glossary": {
-   "svg": "2ce002396bafd3dc",
-   "png": "693d9326817d71e0"
+   "svg": "769c6f041f10168d",
+   "png": "076219f51fcbc074"
   },
   "cs-glossary-ai-agent": {
    "svg": "18fd0bdf31dea3d6",
@@ -112,6 +112,10 @@
   "cs-glossary-apache-echarts": {
    "svg": "1f9088742a21a625",
    "png": "445aede73768a033"
+  },
+  "cs-glossary-audit-trail": {
+   "svg": "2de38cacb0845318",
+   "png": "7d2d3275133b5a21"
   },
   "cs-glossary-c": {
    "svg": "058415cb7814cc9a",
@@ -145,13 +149,25 @@
    "svg": "bd7bec300b15f27e",
    "png": "4a75e66678317663"
   },
+  "cs-glossary-data-integration": {
+   "svg": "f58abcb2f31b21ab",
+   "png": "fbf62d7e60cad1c1"
+  },
   "cs-glossary-data-visualisation": {
    "svg": "9c1520e646a510dc",
    "png": "a92f9427b361a17d"
   },
+  "cs-glossary-decision-support-system": {
+   "svg": "99f755f494d1a6ed",
+   "png": "a1750ed8ce648ce0"
+  },
   "cs-glossary-dockerfile": {
    "svg": "1d078a8f09b1265c",
    "png": "a3a3e99462def3f6"
+  },
+  "cs-glossary-due-diligence": {
+   "svg": "6ce429ca2b9fda2f",
+   "png": "f43e5596f7952927"
   },
   "cs-glossary-elixir": {
    "svg": "95dbda03e39c2672",
@@ -193,6 +209,14 @@
    "svg": "17266033519e4546",
    "png": "e36572605d182c98"
   },
+  "cs-glossary-information-extraction": {
+   "svg": "8292bff132953251",
+   "png": "87753d0efbaf226e"
+  },
+  "cs-glossary-insolvency": {
+   "svg": "e78bede0150c6dd3",
+   "png": "d5a7aa1b623f5be3"
+  },
   "cs-glossary-java": {
    "svg": "c29bbe8367b062bb",
    "png": "70c3b82a97e60491"
@@ -205,13 +229,25 @@
    "svg": "0029cc46c2066365",
    "png": "bb6e11937fe8961d"
   },
+  "cs-glossary-knowledge-graph": {
+   "svg": "981e5077ae21b8c4",
+   "png": "366f4f6e798a3a17"
+  },
   "cs-glossary-majordomus": {
    "svg": "7937d5bb731c07d9",
    "png": "55cc72c9b2f67ac8"
   },
+  "cs-glossary-market-intelligence": {
+   "svg": "8513ec014a9ab6b8",
+   "png": "8ad41a1b13c37c22"
+  },
   "cs-glossary-mcp": {
    "svg": "0109149692a95a8a",
    "png": "b9882bd12c0aaa93"
+  },
+  "cs-glossary-mergers-and-acquisitions": {
+   "svg": "6afea5b9c9699fd5",
+   "png": "9bfa2e4cea023a06"
   },
   "cs-glossary-mirror": {
    "svg": "421887c7b5fd71af",
@@ -228,6 +264,10 @@
   "cs-glossary-open-source": {
    "svg": "bbc251c289a15413",
    "png": "513bc742de5e3482"
+  },
+  "cs-glossary-orchestration": {
+   "svg": "f86f51b0824142e7",
+   "png": "d79d13b65d2ed4a1"
   },
   "cs-glossary-osint": {
    "svg": "2fa249d996bbd485",
@@ -249,9 +289,17 @@
    "svg": "4016606b7d319a7a",
    "png": "0ac28552615edba0"
   },
+  "cs-glossary-record-linkage": {
+   "svg": "33ac08ba6d604630",
+   "png": "52aaefdf2b5f66bc"
+  },
   "cs-glossary-repository": {
    "svg": "3fb6c342c5a7a755",
    "png": "7d0fe5e50b927550"
+  },
+  "cs-glossary-risk-assessment": {
+   "svg": "57b16cf884157a84",
+   "png": "d8d56cd78e113e3e"
   },
   "cs-glossary-ruby": {
    "svg": "7a2d36062e44a97b",
@@ -280,6 +328,10 @@
   "cs-glossary-typescript": {
    "svg": "13b36d6690c68fb1",
    "png": "43dc95b3f2045b5c"
+  },
+  "cs-glossary-virtual-data-room": {
+   "svg": "20a1833d4c1c92c4",
+   "png": "9c66f30c7c98be9b"
   },
   "cs-glossary-wcag": {
    "svg": "4f8f04d733862ce4",
@@ -490,8 +542,8 @@
    "png": "ddbe2e3938894ad5"
   },
   "glossary": {
-   "svg": "da4d01368d69e5f6",
-   "png": "31f2a585bae405a1"
+   "svg": "6ef9d871b547884c",
+   "png": "8572b8d9de6359fc"
   },
   "glossary-ai-agent": {
    "svg": "b9b2e5a59fece551",
@@ -504,6 +556,10 @@
   "glossary-apache-echarts": {
    "svg": "330afe3c567b789a",
    "png": "35f2dbc90b0090ef"
+  },
+  "glossary-audit-trail": {
+   "svg": "0a8ed5db9da0ff34",
+   "png": "7531e2e0a497f130"
   },
   "glossary-c": {
    "svg": "223896a4be5f2813",
@@ -537,13 +593,25 @@
    "svg": "128e4b9b7b29e011",
    "png": "d269e9d42e64554f"
   },
+  "glossary-data-integration": {
+   "svg": "d044f97e9bdc32d4",
+   "png": "bb0b5819304dc86e"
+  },
   "glossary-data-visualisation": {
    "svg": "018e59b3adbd21dc",
    "png": "94a3cb889b918a99"
   },
+  "glossary-decision-support-system": {
+   "svg": "54d53e65d8fdacae",
+   "png": "d1f9757673194f44"
+  },
   "glossary-dockerfile": {
    "svg": "3399d23994e1fef7",
    "png": "7cefb028c2c923b8"
+  },
+  "glossary-due-diligence": {
+   "svg": "8e50066c83e59909",
+   "png": "b46c5e55b9221f55"
   },
   "glossary-elixir": {
    "svg": "2831fcc5a1d55b35",
@@ -585,6 +653,14 @@
    "svg": "b672ee91d44f82cc",
    "png": "31c68acb69308cfb"
   },
+  "glossary-information-extraction": {
+   "svg": "8576f8d5775e1b10",
+   "png": "c02c7819fe3e247e"
+  },
+  "glossary-insolvency": {
+   "svg": "a5c882fb1efcab24",
+   "png": "8e432b7cf8b5bf8f"
+  },
   "glossary-java": {
    "svg": "77ab5f8aa8976077",
    "png": "332bffeb208f2844"
@@ -597,13 +673,25 @@
    "svg": "975153be9c1d3a32",
    "png": "afd73670d644606a"
   },
+  "glossary-knowledge-graph": {
+   "svg": "6cc1b2006a3e0cef",
+   "png": "76d10f425dacdab8"
+  },
   "glossary-majordomus": {
    "svg": "f12ac240c76d8067",
    "png": "37dd6e14329cab66"
   },
+  "glossary-market-intelligence": {
+   "svg": "43c872ba43c8595d",
+   "png": "8797542aa3f8aa72"
+  },
   "glossary-mcp": {
    "svg": "a07db3c3963ba190",
    "png": "2a6b3f921a39b38d"
+  },
+  "glossary-mergers-and-acquisitions": {
+   "svg": "8b18dd02a2dfbff4",
+   "png": "bcf84534ec05ff25"
   },
   "glossary-mirror": {
    "svg": "c00abcd4291f916b",
@@ -620,6 +708,10 @@
   "glossary-open-source": {
    "svg": "d2d2940a43e38fb7",
    "png": "dd9336d4e49fb245"
+  },
+  "glossary-orchestration": {
+   "svg": "53b9792497cea36d",
+   "png": "8eae4cf7ed00f2c4"
   },
   "glossary-osint": {
    "svg": "afcda6d9b54d07c2",
@@ -641,9 +733,17 @@
    "svg": "599213d86b768eb3",
    "png": "c22a2db5640ed219"
   },
+  "glossary-record-linkage": {
+   "svg": "d590948ee74dec6e",
+   "png": "47b2efa051012d92"
+  },
   "glossary-repository": {
    "svg": "a78e60802ee01197",
    "png": "1ce74352c7a1fd00"
+  },
+  "glossary-risk-assessment": {
+   "svg": "fef5e9fc2f448608",
+   "png": "1f760be4d0a47923"
   },
   "glossary-ruby": {
    "svg": "5fd64a08e6eaa02a",
@@ -672,6 +772,10 @@
   "glossary-typescript": {
    "svg": "84bf413fb1d34532",
    "png": "c3f47aae332e42d2"
+  },
+  "glossary-virtual-data-room": {
+   "svg": "cd0de2b55ef762d4",
+   "png": "7cfbc7c2437a169d"
   },
   "glossary-wcag": {
    "svg": "9ceabf1adf2511cb",

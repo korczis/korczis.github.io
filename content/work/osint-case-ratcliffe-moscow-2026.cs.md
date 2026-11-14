@@ -15,7 +15,7 @@ og_title = "osint-case-ratcliffe-moscow-2026: Bezpečnost a OSINT"
 og_image = "og/cs-work-osint-case-ratcliffe-moscow-2026.png"
 schema = "project"
 keywords = ["osint-case-ratcliffe-moscow-2026", "Bezpečnost a OSINT", "HTML", "Python", "Shell", "Tomáš Korčák"]
-terms = ["html", "python", "shell", "osint", "github-pages", "repository", "commit", "open-source"]
+terms = ["html", "python", "shell", "osint", "due-diligence", "mergers-and-acquisitions", "virtual-data-room", "risk-assessment", "market-intelligence", "decision-support-system", "insolvency", "record-linkage", "knowledge-graph", "data-integration", "audit-trail", "information-extraction", "orchestration", "github-pages", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

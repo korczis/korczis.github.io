@@ -95,7 +95,7 @@
    "url": "https://korczis.github.io/cs/glossary/",
    "lang": "cs",
    "title": "Slovník · Tomas Korcak",
-   "description": "48 pojmů, kterými se web vysvětluje: jazyky, technologie a koncepty, každý definovaný, se zdrojem a s odkazem na stránky, které ho používají.",
+   "description": "61 pojmů, kterými se web vysvětluje: jazyky, technologie a koncepty, každý definovaný, se zdrojem a s odkazem na stránky, které ho používají.",
    "type": "glossary",
    "category": null,
    "og_image": "https://korczis.github.io/og/cs-glossary.png",
@@ -155,6 +155,22 @@
    "keywords": [
     "Apache ECharts",
     "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/audit-trail/",
+   "lang": "cs",
+   "title": "Auditní stopa (koncept)",
+   "description": "Chronologický záznam o tom, kdo co udělal a na základě jakých podkladů, uchovaný proto, aby šlo práci později ověřit a zrekonstruovat.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-audit-trail.png",
+   "keywords": [
+    "Auditní stopa",
+    "Audit trail",
+    "Koncept",
     "Slovník",
     "Tomáš Korčák"
    ]
@@ -280,6 +296,22 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/data-integration/",
+   "lang": "cs",
+   "title": "Integrace dat (koncept)",
+   "description": "Spojení dat z mnoha zdrojů (rejstříků, API, souborů) do jednoho jednotného pohledu, kde si každý záznam pamatuje, odkud pochází.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-data-integration.png",
+   "keywords": [
+    "Integrace dat",
+    "Data integration",
+    "Koncept",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/data-visualisation/",
    "lang": "cs",
    "title": "Vizualizace dat (koncept)",
@@ -296,6 +328,22 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/decision-support-system/",
+   "lang": "cs",
+   "title": "Systém pro podporu rozhodování (koncept)",
+   "description": "Software, který shromáždí data a analýzy do zpráv a pohledů, jež lidem pomáhají rozhodnout, místo aby rozhodoval za ně.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-decision-support-system.png",
+   "keywords": [
+    "Systém pro podporu rozhodování",
+    "Decision support system",
+    "Koncept",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/dockerfile/",
    "lang": "cs",
    "title": "Dockerfile (programovací jazyk)",
@@ -306,6 +354,21 @@
    "keywords": [
     "Dockerfile",
     "Programovací jazyk",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/due-diligence/",
+   "lang": "cs",
+   "title": "Due diligence (koncept)",
+   "description": "Prověrka firmy, osoby nebo majetku před rozhodnutím, například před akvizicí nebo investicí: kdo ji vlastní, co drží, co dluží a co se může pokazit.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-due-diligence.png",
+   "keywords": [
+    "Due diligence",
+    "Koncept",
     "Slovník",
     "Tomáš Korčák"
    ]
@@ -462,6 +525,38 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/information-extraction/",
+   "lang": "cs",
+   "title": "Vytěžování informací (koncept)",
+   "description": "Převod dokumentů (skenů, PDF, volného textu) na strukturovaná pole, jako jsou jména, data a částky, pomocí OCR a jazykových nebo obrazových modelů.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-information-extraction.png",
+   "keywords": [
+    "Vytěžování informací",
+    "Information extraction",
+    "Koncept",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/insolvency/",
+   "lang": "cs",
+   "title": "Insolvence (koncept)",
+   "description": "Stav dlužníka, který nedokáže splácet své dluhy; insolvenční řízení a přihlášky věřitelů v nich se zapisují do veřejných rejstříků.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-insolvency.png",
+   "keywords": [
+    "Insolvence",
+    "Insolvency",
+    "Koncept",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/java/",
    "lang": "cs",
    "title": "Java (programovací jazyk)",
@@ -507,6 +602,22 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/knowledge-graph/",
+   "lang": "cs",
+   "title": "Znalostní graf (koncept)",
+   "description": "Znalosti uložené jako subjekty a vztahy mezi nimi, takže dotaz může sledovat vazby (kdo co vlastní, kdo kde sedí) místo spojování tabulek.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-knowledge-graph.png",
+   "keywords": [
+    "Znalostní graf",
+    "Knowledge graph",
+    "Koncept",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/majordomus/",
    "lang": "cs",
    "title": "Majordomus (technologie)",
@@ -522,6 +633,22 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/market-intelligence/",
+   "lang": "cs",
+   "title": "Tržní zpravodajství (koncept)",
+   "description": "Poznatky o trhu (ceny, srovnatelné případy, konkurence a poptávka) sebrané z veřejných a licencovaných zdrojů jako podklad pro rozhodnutí.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-market-intelligence.png",
+   "keywords": [
+    "Tržní zpravodajství",
+    "Market intelligence",
+    "Koncept",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/mcp/",
    "lang": "cs",
    "title": "MCP (technologie)",
@@ -532,6 +659,22 @@
    "keywords": [
     "MCP",
     "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/mergers-and-acquisitions/",
+   "lang": "cs",
+   "title": "Fúze a akvizice (koncept)",
+   "description": "Transakce, při kterých se firmy spojují nebo jedna kupuje druhou; každou připravuje prověrka cíle, jeho stran a financování.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-mergers-and-acquisitions.png",
+   "keywords": [
+    "Fúze a akvizice",
+    "Mergers and acquisitions",
+    "Koncept",
     "Slovník",
     "Tomáš Korčák"
    ]
@@ -591,6 +734,22 @@
    "og_image": "https://korczis.github.io/og/cs-glossary-open-source.png",
    "keywords": [
     "Open source",
+    "Koncept",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/orchestration/",
+   "lang": "cs",
+   "title": "Orchestrace (koncept)",
+   "description": "Koordinace mnoha automatických kroků, služeb nebo agentů (fronty, workflow, plány), aby běžely ve správném pořadí a zotavily se, když jeden selže.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-orchestration.png",
+   "keywords": [
+    "Orchestrace",
+    "Orchestration",
     "Koncept",
     "Slovník",
     "Tomáš Korčák"
@@ -672,6 +831,22 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/record-linkage/",
+   "lang": "cs",
+   "title": "Ztotožnění subjektů (koncept)",
+   "description": "Hledání záznamů napříč zdroji, které se týkají téže firmy nebo osoby, nejdřív podle společných identifikátorů, pak podle podobných jmen a adres.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-record-linkage.png",
+   "keywords": [
+    "Ztotožnění subjektů",
+    "Entity resolution",
+    "Koncept",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/repository/",
    "lang": "cs",
    "title": "Repozitář (koncept)",
@@ -682,6 +857,22 @@
    "keywords": [
     "Repozitář",
     "Repository",
+    "Koncept",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/risk-assessment/",
+   "lang": "cs",
+   "title": "Hodnocení rizik (koncept)",
+   "description": "Určení rizik, odhad jejich pravděpodobnosti a závažnosti a jejich seřazení, aby práce začala tím nejdůležitějším.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-risk-assessment.png",
+   "keywords": [
+    "Hodnocení rizik",
+    "Risk assessment",
     "Koncept",
     "Slovník",
     "Tomáš Korčák"
@@ -789,6 +980,22 @@
    "keywords": [
     "TypeScript",
     "Programovací jazyk",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/virtual-data-room/",
+   "lang": "cs",
+   "title": "Virtuální datová místnost (koncept)",
+   "description": "Zabezpečené online úložiště, kde se dokumenty transakce sdílejí se stranami, které je smějí vidět, a každý přístup se zaznamená.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-virtual-data-room.png",
+   "keywords": [
+    "Virtuální datová místnost",
+    "Virtual data room",
+    "Koncept",
     "Slovník",
     "Tomáš Korčák"
    ]
@@ -1842,7 +2049,7 @@
    "url": "https://korczis.github.io/glossary/",
    "lang": "en",
    "title": "Glossary · Tomas Korcak",
-   "description": "The 48 terms this site explains itself with: languages, technologies and concepts, each defined, sourced and linked to every page that uses it.",
+   "description": "The 61 terms this site explains itself with: languages, technologies and concepts, each defined, sourced and linked to every page that uses it.",
    "type": "glossary",
    "category": null,
    "og_image": "https://korczis.github.io/og/glossary.png",
@@ -1902,6 +2109,21 @@
    "keywords": [
     "Apache ECharts",
     "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/audit-trail/",
+   "lang": "en",
+   "title": "Audit trail (concept)",
+   "description": "A chronological record of who did what and on which evidence, kept so that the work can be checked and retraced later.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-audit-trail.png",
+   "keywords": [
+    "Audit trail",
+    "Concept",
     "Glossary",
     "Tomas Korcak"
    ]
@@ -2027,6 +2249,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/data-integration/",
+   "lang": "en",
+   "title": "Data integration (concept)",
+   "description": "Combining data from many sources (registers, APIs, files) into one consistent view, with each record keeping where it came from.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-data-integration.png",
+   "keywords": [
+    "Data integration",
+    "Concept",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/data-visualisation/",
    "lang": "en",
    "title": "Data visualisation (concept)",
@@ -2036,6 +2273,21 @@
    "og_image": "https://korczis.github.io/og/glossary-data-visualisation.png",
    "keywords": [
     "Data visualisation",
+    "Concept",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/decision-support-system/",
+   "lang": "en",
+   "title": "Decision support system (concept)",
+   "description": "Software that gathers data and analysis into reports and views that help people make a decision, rather than making it for them.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-decision-support-system.png",
+   "keywords": [
+    "Decision support system",
     "Concept",
     "Glossary",
     "Tomas Korcak"
@@ -2052,6 +2304,21 @@
    "keywords": [
     "Dockerfile",
     "Programming language",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/due-diligence/",
+   "lang": "en",
+   "title": "Due diligence (concept)",
+   "description": "The investigation of a company, a person or an asset before a decision such as an acquisition or an investment: who owns it, what it holds, what it owes and what…",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-due-diligence.png",
+   "keywords": [
+    "Due diligence",
+    "Concept",
     "Glossary",
     "Tomas Korcak"
    ]
@@ -2207,6 +2474,36 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/information-extraction/",
+   "lang": "en",
+   "title": "Information extraction (concept)",
+   "description": "Turning documents (scans, PDFs, free text) into structured fields such as names, dates and amounts, with OCR and language or vision models.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-information-extraction.png",
+   "keywords": [
+    "Information extraction",
+    "Concept",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/insolvency/",
+   "lang": "en",
+   "title": "Insolvency (concept)",
+   "description": "The state of a debtor who cannot pay their debts; insolvency proceedings and the creditors' claims in them are recorded in public registers.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-insolvency.png",
+   "keywords": [
+    "Insolvency",
+    "Concept",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/java/",
    "lang": "en",
    "title": "Java (programming language)",
@@ -2252,6 +2549,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/knowledge-graph/",
+   "lang": "en",
+   "title": "Knowledge graph (concept)",
+   "description": "Knowledge stored as entities and the relations between them, so a question can follow links (who owns what, who sits where) instead of joining tables.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-knowledge-graph.png",
+   "keywords": [
+    "Knowledge graph",
+    "Concept",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/majordomus/",
    "lang": "en",
    "title": "Majordomus (technology)",
@@ -2267,6 +2579,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/market-intelligence/",
+   "lang": "en",
+   "title": "Market intelligence (concept)",
+   "description": "Knowledge about a market (prices, comparables, competitors and demand) gathered from public and licensed sources to support a decision.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-market-intelligence.png",
+   "keywords": [
+    "Market intelligence",
+    "Concept",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/mcp/",
    "lang": "en",
    "title": "MCP (technology)",
@@ -2277,6 +2604,21 @@
    "keywords": [
     "MCP",
     "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/mergers-and-acquisitions/",
+   "lang": "en",
+   "title": "Mergers and acquisitions (concept)",
+   "description": "Transactions in which companies combine or one buys another; each is prepared by screening the target, its parties and its financing.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-mergers-and-acquisitions.png",
+   "keywords": [
+    "Mergers and acquisitions",
+    "Concept",
     "Glossary",
     "Tomas Korcak"
    ]
@@ -2336,6 +2678,21 @@
    "og_image": "https://korczis.github.io/og/glossary-open-source.png",
    "keywords": [
     "Open source",
+    "Concept",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/orchestration/",
+   "lang": "en",
+   "title": "Orchestration (concept)",
+   "description": "Coordinating many automated steps, services or agents (queues, workflows, schedules) so they run in the right order and recover when one fails.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-orchestration.png",
+   "keywords": [
+    "Orchestration",
     "Concept",
     "Glossary",
     "Tomas Korcak"
@@ -2417,6 +2774,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/record-linkage/",
+   "lang": "en",
+   "title": "Entity resolution (concept)",
+   "description": "Finding the records, across sources, that refer to the same company or person, by shared identifiers first and by similar names and addresses second.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-record-linkage.png",
+   "keywords": [
+    "Entity resolution",
+    "Concept",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/repository/",
    "lang": "en",
    "title": "Repository (concept)",
@@ -2426,6 +2798,21 @@
    "og_image": "https://korczis.github.io/og/glossary-repository.png",
    "keywords": [
     "Repository",
+    "Concept",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/risk-assessment/",
+   "lang": "en",
+   "title": "Risk assessment (concept)",
+   "description": "Identifying risks, estimating how likely and how severe each is, and ranking them so the work starts with what matters most.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-risk-assessment.png",
+   "keywords": [
+    "Risk assessment",
     "Concept",
     "Glossary",
     "Tomas Korcak"
@@ -2532,6 +2919,21 @@
    "keywords": [
     "TypeScript",
     "Programming language",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/virtual-data-room/",
+   "lang": "en",
+   "title": "Virtual data room (concept)",
+   "description": "A secure online repository where the documents of a transaction are shared with the parties allowed to see them, with every access recorded.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-virtual-data-room.png",
+   "keywords": [
+    "Virtual data room",
+    "Concept",
     "Glossary",
     "Tomas Korcak"
    ]

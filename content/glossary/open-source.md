@@ -3,7 +3,7 @@
 title = "Open source"
 description = "Software whose source code anyone may read, use, change and share under its licence."
 template = "term.html"
-weight = 44
+weight = 54
 
 [taxonomies]
 tags = ["Glossary", "Concept"]
