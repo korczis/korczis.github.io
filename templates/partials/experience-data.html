@@ -1,0 +1,15 @@
+{#- The experience simulator's data (static/js/viz/experience.js), in the page's language. Included
+    by partials/experience.html and by the `experience.engagements` source of partials/viz-grid.html,
+    so any page can show the simulator. A positional list, so this file holds no text of its own:
+      [0] the language suffix of the rules' words ("" or "_cs")
+      [1] the label of an engagement ("Engagement {id}", translated)
+      [2] the engagements of data/experience.json
+      [3] each engagement's link: its card in the home page's experience section, in this language
+      [4] [5] [6] the sectors, capabilities and domains of data/experience-rules.toml -#}
+{%- set xdd = load_data(path="data/experience.json") -%}
+{%- set xdr = load_data(path="data/experience-rules.toml") -%}
+{%- set xds = "" %}{% if lang is defined and lang != config.default_language %}{% set xds = "_" ~ lang %}{% endif -%}
+{%- if xds == "" %}{% set xdh = get_section(path="_index.md") %}{% else %}{% set xdh = get_section(path="_index." ~ lang ~ ".md") %}{% endif -%}
+[{{ xds | json_encode | safe }}, {{ trans(key="xp_engagement", lang=lang) | json_encode | safe }}, {{ xdd.engagements | json_encode | safe }},
+ [{% for e in xdd.engagements %}{{ (xdh.permalink ~ "#experience-" ~ e.id) | json_encode | safe }}{% if not loop.last %}, {% endif %}{% endfor %}],
+ {{ xdr.sectors | json_encode | safe }}, {{ xdr.capabilities | json_encode | safe }}, {{ xdr.domains | json_encode | safe }}]

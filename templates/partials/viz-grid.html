@@ -43,6 +43,7 @@
       {%- elif v.source == "tags.together" %}{% set vtags = get_taxonomy(kind="tags", lang=lang) -%}
        {"focus": {{ term.name | json_encode | safe }}, "unit": "js_n_pages_together", "urls": { {%- for t in vtags.items %}{{ t.name | json_encode | safe }}: {{ t.permalink | json_encode | safe }}{% if not loop.last %}, {% endif %}{% endfor -%} },
        "pages": [{% for p in term.pages %}{% if p.taxonomies.tags is defined %}{{ p.taxonomies.tags | json_encode | safe }}{% else %}[]{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}]}
+      {%- elif v.source == "experience.engagements" %}{% include "partials/experience-data.html" %}
       {%- else %}null{% endif -%}
     </script>
   </section>

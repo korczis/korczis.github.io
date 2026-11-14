@@ -1,0 +1,357 @@
+# The experience section (templates/partials/experience.html) and its simulator
+# (static/js/viz/experience.js). Every text describes the kind of problem, never a result the data
+# (data/experience.json) does not hold; clients stay unnamed under confidentiality agreements.
+# Counts are bucket floors: {n} is exact up to 3 and "{n}+" above (the template and script add +).
+
+[xp_eyebrow]
+en = "Client work"
+cs = "Práce pro klienty"
+
+[xp_title]
+en = "Due diligence, M&A and AI for large clients"
+cs = "Due diligence, M&A a AI pro velké klienty"
+
+[xp_lead_sectors]
+en = "Engagements for {sectors}: what kind of problem each one solved, measured from the git history of its sources."
+cs = "Zakázky pro tyto klienty: {sectors}. U každé je vidět, jaký druh problému řešila, změřeno z historie gitu jejích zdrojů."
+
+[xp_lead]
+en = "Engagements for large clients: what kind of problem each one solved, measured from the git history of its sources."
+cs = "Zakázky pro velké klienty: u každé je vidět, jaký druh problému řešila, změřeno z historie gitu jejích zdrojů."
+
+[xp_confidential]
+en = "The clients are not named: the work is under confidentiality agreements, so only a neutral id, the vocabulary below, dates and rounded numbers are published."
+cs = "Klienti nejsou jmenováni: práce podléhá dohodám o mlčenlivosti, a proto se zveřejňuje jen neutrální označení, slovník níže, data a zaokrouhlená čísla."
+
+[xp_kpi_engagements]
+en = "Engagements"
+cs = "Zakázky"
+
+[xp_kpi_engagements_note]
+en = "{n} measured from their sources in git"
+cs = "Změřeno ze zdrojů v gitu: {n}"
+
+[xp_kpi_capabilities]
+en = "Capabilities shown"
+cs = "Doložené schopnosti"
+
+[xp_kpi_capabilities_note]
+en = "of {m} in the vocabulary, inferred from commits, paths and headings"
+cs = "z {m} ve slovníku, odvozeno z commitů, cest a nadpisů"
+
+[xp_kpi_commits]
+en = "Commits by the owner"
+cs = "Commity autora"
+
+[xp_kpi_commits_note]
+en = "each engagement rounded down to a bucket"
+cs = "u každé zakázky zaokrouhleno dolů na stupeň"
+
+[xp_kpi_months]
+en = "Months of measured work"
+cs = "Měsíce změřené práce"
+
+[xp_kpi_months_note]
+en = "from {from} to {to}"
+cs = "od {from} do {to}"
+
+[xp_domain_capabilities]
+en = "Capabilities"
+cs = "Schopnosti"
+
+[xp_glossary]
+en = "What it is"
+cs = "Co to je"
+
+[xp_public_work]
+en = "The same in public work"
+cs = "Totéž ve veřejné práci"
+
+[xp_category]
+en = "Category"
+cs = "Kategorie"
+
+[xp_evidence]
+en = "Evidence: {commits} commits, {headings} headings, {paths} paths matched"
+cs = "Doklady: shoda v {commits} commitech, {headings} nadpisech a {paths} cestách"
+
+[xp_declared]
+en = "declared by the owner"
+cs = "uvedl autor"
+
+[xp_not_yet]
+en = "Not shown by any engagement yet"
+cs = "Zatím ji nedokládá žádná zakázka"
+
+[xp_n_engagements__one]
+en = "in {n} engagement"
+cs = "v {n} zakázce"
+
+[xp_n_engagements__few]
+en = "in {n} engagements"
+cs = "ve {n} zakázkách"
+
+[xp_n_engagements__other]
+en = "in {n} engagements"
+cs = "v {n} zakázkách"
+
+[xp_timeline_title]
+en = "Engagements over time"
+cs = "Zakázky v čase"
+
+[xp_timeline_lead]
+en = "Newest first, each from the owner's first to last commit in its sources."
+cs = "Nejnovější první, každá od prvního do posledního commitu autora v jejích zdrojích."
+
+[xp_engagement]
+en = "Engagement {id}"
+cs = "Zakázka {id}"
+
+[xp_sector_unknown]
+en = "Sector not stated yet"
+cs = "Odvětví zatím neuvedeno"
+
+[xp_undated]
+en = "No commits by the owner measured"
+cs = "Bez změřených commitů autora"
+
+[xp_roles]
+en = "Roles"
+cs = "Role"
+
+[xp_capabilities]
+en = "What it involved"
+cs = "Co zahrnovala"
+
+[xp_technologies]
+en = "Technologies"
+cs = "Technologie"
+
+[xp_pending]
+en = "Engagements without measured sources yet: {ids}. They appear here once the owner declares their sector, roles or capabilities."
+cs = "Zakázky zatím bez změřených zdrojů: {ids}. Objeví se tu, jakmile autor uvede jejich odvětví, role nebo schopnosti."
+
+[xp_n_commits__one]
+en = "{n} commit"
+cs = "{n} commit"
+
+[xp_n_commits__few]
+en = "{n} commits"
+cs = "{n} commity"
+
+[xp_n_commits__other]
+en = "{n} commits"
+cs = "{n} commitů"
+
+[xp_n_repositories__one]
+en = "{n} repository"
+cs = "{n} repozitář"
+
+[xp_n_repositories__few]
+en = "{n} repositories"
+cs = "{n} repozitáře"
+
+[xp_n_repositories__other]
+en = "{n} repositories"
+cs = "{n} repozitářů"
+
+[xp_n_files__one]
+en = "{n} file"
+cs = "{n} soubor"
+
+[xp_n_files__few]
+en = "{n} files"
+cs = "{n} soubory"
+
+[xp_n_files__other]
+en = "{n} files"
+cs = "{n} souborů"
+
+[xp_n_modules__one]
+en = "{n} source file"
+cs = "{n} zdrojový soubor"
+
+[xp_n_modules__few]
+en = "{n} source files"
+cs = "{n} zdrojové soubory"
+
+[xp_n_modules__other]
+en = "{n} source files"
+cs = "{n} zdrojových souborů"
+
+[xp_n_tests__one]
+en = "{n} test file"
+cs = "{n} testovací soubor"
+
+[xp_n_tests__few]
+en = "{n} test files"
+cs = "{n} testovací soubory"
+
+[xp_n_tests__other]
+en = "{n} test files"
+cs = "{n} testovacích souborů"
+
+[xp_n_people__one]
+en = "{n} contributor"
+cs = "{n} přispěvatel"
+
+[xp_n_people__few]
+en = "{n} contributors"
+cs = "{n} přispěvatelé"
+
+[xp_n_people__other]
+en = "{n} contributors"
+cs = "{n} přispěvatelů"
+
+[xp_sim_title]
+en = "From engagements to capabilities"
+cs = "Od zakázek ke schopnostem"
+
+[xp_sim_lead]
+en = "Each flow carries an engagement's measured weight to the capabilities inferred from it, then on to their domain. Choose the window, play it month by month, filter one capability or change what a flow measures."
+cs = "Každý tok nese změřenou váhu zakázky ke schopnostem, které z ní vyplývají, a dál k jejich oblasti. Zvolte období, přehrajte ho měsíc po měsíci, vyberte jednu schopnost nebo změňte, co tok měří."
+
+[xp_sim_aria]
+en = "A flow diagram of {n} engagements into the capabilities inferred from their sources and the three domains they form."
+cs = "Tokový diagram {n} zakázek do schopností odvozených z jejich zdrojů a do tří oblastí, které tvoří."
+
+[xp_method]
+en = "Mined on {date} from the git history of each engagement's sources: the owner's commits per month, scale rounded down to buckets, public technology names, and capabilities inferred by keyword rules, of which only the counts of matching items are kept."
+cs = "Vytěženo {date} z historie gitu zdrojů každé zakázky: commity autora po měsících, rozsah zaokrouhlený dolů na stupně, veřejné názvy technologií a schopnosti odvozené podle pravidel s klíčovými slovy, z nichž se uchovává jen počet shod."
+
+[xp_method_rules]
+en = "The vocabulary and its rules"
+cs = "Slovník a jeho pravidla"
+
+[xp_date]
+en = "{d} {m} {y}"
+cs = "{d}. {m} {y}"
+
+[xp_month_1]
+en = "Jan"
+cs = "led"
+
+[xp_month_2]
+en = "Feb"
+cs = "úno"
+
+[xp_month_3]
+en = "Mar"
+cs = "bře"
+
+[xp_month_4]
+en = "Apr"
+cs = "dub"
+
+[xp_month_5]
+en = "May"
+cs = "kvě"
+
+[xp_month_6]
+en = "Jun"
+cs = "čvn"
+
+[xp_month_7]
+en = "Jul"
+cs = "čvc"
+
+[xp_month_8]
+en = "Aug"
+cs = "srp"
+
+[xp_month_9]
+en = "Sep"
+cs = "zář"
+
+[xp_month_10]
+en = "Oct"
+cs = "říj"
+
+[xp_month_11]
+en = "Nov"
+cs = "lis"
+
+[xp_month_12]
+en = "Dec"
+cs = "pro"
+
+# The simulator (KorczisHub.t picks the plural form by the page's language).
+[js_experience_from]
+en = "From"
+cs = "Od"
+
+[js_experience_to]
+en = "To"
+cs = "Do"
+
+[js_experience_capability]
+en = "Capability"
+cs = "Schopnost"
+
+[js_experience_all_capabilities]
+en = "All capabilities"
+cs = "Všechny schopnosti"
+
+[js_experience_metric]
+en = "A flow measures"
+cs = "Tok měří"
+
+[js_experience_metric_commits]
+en = "Commits by the owner"
+cs = "Commity autora"
+
+[js_experience_metric_span]
+en = "Months of work"
+cs = "Měsíce práce"
+
+[js_experience_metric_breadth]
+en = "Breadth (one per capability)"
+cs = "Šíři (jedna za schopnost)"
+
+[js_experience_n_commits__one]
+en = "{n}+ commit"
+cs = "{n}+ commit"
+
+[js_experience_n_commits__few]
+en = "{n}+ commits"
+cs = "{n}+ commity"
+
+[js_experience_n_commits__other]
+en = "{n}+ commits"
+cs = "{n}+ commitů"
+
+[js_experience_n_months__one]
+en = "{n} month"
+cs = "{n} měsíc"
+
+[js_experience_n_months__few]
+en = "{n} months"
+cs = "{n} měsíce"
+
+[js_experience_n_months__other]
+en = "{n} months"
+cs = "{n} měsíců"
+
+[js_experience_n_links__one]
+en = "{n} capability"
+cs = "{n} schopnost"
+
+[js_experience_n_links__few]
+en = "{n} capabilities"
+cs = "{n} schopnosti"
+
+[js_experience_n_links__other]
+en = "{n} capabilities"
+cs = "{n} schopností"
+
+[js_experience_n_engagements__one]
+en = "{n} engagement"
+cs = "{n} zakázka"
+
+[js_experience_n_engagements__few]
+en = "{n} engagements"
+cs = "{n} zakázky"
+
+[js_experience_n_engagements__other]
+en = "{n} engagements"
+cs = "{n} zakázek"
