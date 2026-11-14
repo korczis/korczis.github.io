@@ -7,7 +7,7 @@
 // usage: npm run build && node scripts/check-seo.mjs
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
-import { ROOT, identity, limits } from './lib/derive.mjs';
+import { ROOT, identity, languages, limits } from './lib/derive.mjs';
 
 const SITE = process.env.SITE_DIR || join(ROOT, 'public');
 const BASE = identity().base;
@@ -89,11 +89,14 @@ for (const file of html(SITE)) {
   }
 }
 
-// hreflang: every alternate is an indexable page of this build that names this page back, and a
-// page that has alternates names itself and an x-default (Google ignores one-way pairs).
+// hreflang: every indexable page names its translation in every language of zola.toml (the site
+// is in all of them, check-i18n), itself and an x-default; every alternate is an indexable page of
+// this build that names this page back (Google ignores one-way pairs).
+const LANGS = languages();
 let pairs = 0;
 for (const [canonical, { rel, lang, links }] of alternates) {
   const langs = Object.keys(links).filter((l) => l !== 'x-default');
+  for (const l of LANGS) if (!links[l]) fail(rel, `no hreflang ${l}`);
   if (!langs.length) continue;
   if (links[lang] !== canonical) fail(rel, `hreflang ${lang} is ${links[lang]}, not the page itself`);
   if (!links['x-default']) fail(rel, 'hreflang without x-default');
@@ -109,4 +112,5 @@ if (findings.length) {
   for (const f of findings) console.error(`✗ ${f}`);
   process.exit(1);
 }
-console.log(`seo: ${pages} pages, ${titles.size} unique titles, tags, images and JSON-LD valid, ${pairs / 2} hreflang pairs mutual, PASS`);
+console.log(`seo: ${pages} pages, ${titles.size} indexable with unique titles, tags, images and JSON-LD valid, ` +
+  `hreflang ${LANGS.join('/')} on every one, ${pairs / 2} pairs mutual, PASS`);

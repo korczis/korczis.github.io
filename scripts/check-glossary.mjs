@@ -27,7 +27,7 @@ let pages = 0;
 // A link to this site written as an absolute URL (or a bare /glossary/ path) escapes Zola's checks.
 const SELF = new RegExp(`\\]\\((https?:\\/\\/${me.host.replace(/\./g, '\\.')}[^)]*|\\/glossary\\/[^)]*)\\)`, 'g');
 for (const { path: rel, fm, body: text } of contentPages()) {
-  if (!fm) continue;
+  if (!fm) { findings.push(`${rel}: no TOML front matter, so no article or terms can be checked`); continue; }
   pages += 1;
   const body = text.trim();
   if (rel.startsWith('content/glossary/') && !rel.includes('_index')) continue; // term pages render their definition

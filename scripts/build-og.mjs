@@ -3,12 +3,16 @@
 // title), og_description (or the description), and the og_image path. The SVG is deterministic (a seeded glyph field
 // like the hero's); the PNG is rendered from it with rsvg-convert (librsvg).
 //
-// usage: node scripts/build-og.mjs           write static/og/<name>.svg and .png
-//        node scripts/build-og.mjs --check   exit 1 if an SVG is stale or a PNG is missing,
-//                                            not 1200x630, or older than its SVG source text
+// data/og.json records, per image, the hash of the SVG each PNG was rendered from and of the PNG
+// itself, so a PNG left behind by a changed SVG is caught anywhere (file times are not, in CI).
+//
+// usage: node scripts/build-og.mjs           write static/og/<name>.svg and .png, remove orphans
+//        node scripts/build-og.mjs --check   exit 1 if an SVG is stale, a PNG is missing, not of the
+//                                            OG size, not rendered from its SVG, or an image is orphaned
 // CI runs --check only (no renderer needed); regenerate locally after changing front matter.
 import { execFileSync } from 'node:child_process';
-import { existsSync, mkdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
+import { createHash } from 'node:crypto';
+import { existsSync, mkdirSync, readFileSync, readdirSync, unlinkSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { CHECK, ROOT, contentPages, identity, limits, report } from './lib/derive.mjs';
 
@@ -106,36 +110,59 @@ function pngSize(file) {
   return [header.readUInt32BE(16), header.readUInt32BE(20)];
 }
 
+const sha = (data) => createHash('sha256').update(data).digest('hex').slice(0, 16);
+const DIR = join(ROOT, 'static/og');
+const MANIFEST = join(ROOT, 'data/og.json');
+const stored = existsSync(MANIFEST) ? JSON.parse(readFileSync(MANIFEST, 'utf8')) : { images: {} };
+const manifest = { schema: 'korczis-hub-og/v1', images: {} };
 const findings = [];
-mkdirSync(join(ROOT, 'static/og'), { recursive: true });
+const wanted = new Set();
+mkdirSync(DIR, { recursive: true });
 for (const { path: file, fm } of contentPages()) {
   if (!fm?.extra?.og_image) continue;
   const png = join(ROOT, 'static', fm.extra.og_image);
   const name = fm.extra.og_image.replace(/^og\//, '').replace(/\.png$/, '');
-  const source = join(ROOT, 'static/og', `${name}.svg`);
+  const source = join(DIR, `${name}.svg`);
+  wanted.add(`${name}.svg`).add(`${name}.png`);
   const text = svg({
     title: fm.extra.og_title || fm.title,
     description: fm.extra.og_description || fm.description,
     path: name,
   });
+  const record = stored.images[name];
   if (CHECK) {
     if (!existsSync(source) || readFileSync(source, 'utf8') !== text) findings.push(`${source.slice(ROOT.length + 1)} is stale`);
-    if (!existsSync(png)) findings.push(`${fm.extra.og_image} is missing`);
-    else {
-      const [w, h] = pngSize(png);
-      if (w !== W || h !== H) findings.push(`${fm.extra.og_image} is ${w}x${h}, not ${W}x${H}`);
-      if (existsSync(source) && statSync(png).mtimeMs + 1000 < statSync(source).mtimeMs && !process.env.CI) {
-        findings.push(`${fm.extra.og_image} is older than its SVG`);
-      }
-    }
+    if (!existsSync(png)) { findings.push(`${fm.extra.og_image} is missing`); continue; }
+    const [w, h] = pngSize(png);
+    if (w !== W || h !== H) findings.push(`${fm.extra.og_image} is ${w}x${h}, not ${W}x${H}`);
+    if (!record) findings.push(`${fm.extra.og_image} has no record in data/og.json`);
+    else if (record.svg !== sha(text)) findings.push(`${fm.extra.og_image} was rendered from another SVG`);
+    else if (record.png !== sha(readFileSync(png))) findings.push(`${fm.extra.og_image} is not the PNG data/og.json recorded`);
     continue;
   }
-  // Re-render only when the SVG changed (or the PNG is missing): renderers on other machines use
-  // other fonts, and an unchanged image must not churn in a diff.
-  if (existsSync(source) && existsSync(png) && readFileSync(source, 'utf8') === text) continue;
-  writeFileSync(source, text);
-  execFileSync('rsvg-convert', ['--width', String(W), '--height', String(H), '--output', png, source]);
-  console.log(`og: ${fm.extra.og_image} from ${file}`);
+  // Re-render only when the SVG changed (or the PNG is missing or unrecorded as its render):
+  // renderers on other machines use other fonts, and an unchanged image must not churn in a diff.
+  const same = existsSync(source) && existsSync(png) && readFileSync(source, 'utf8') === text;
+  if (!same || (record && (record.svg !== sha(text) || record.png !== sha(readFileSync(png))))) {
+    writeFileSync(source, text);
+    execFileSync('rsvg-convert', ['--width', String(W), '--height', String(H), '--output', png, source]);
+    console.log(`og: ${fm.extra.og_image} from ${file}`);
+  }
+  // An unrecorded pair whose SVG is current is adopted as it is (the first run of the record).
+  manifest.images[name] = { svg: sha(text), png: sha(readFileSync(png)) };
 }
 
-if (CHECK) report(findings, 'og images are current');
+// An image no page names any more: an orphan.
+for (const f of readdirSync(DIR).filter((x) => /\.(svg|png)$/.test(x) && !wanted.has(x)).sort()) {
+  if (CHECK) findings.push(`static/og/${f} is named by no page`);
+  else { unlinkSync(join(DIR, f)); console.log(`og: removed the orphan static/og/${f}`); }
+}
+
+if (CHECK) {
+  const extra = Object.keys(stored.images).filter((n) => !wanted.has(`${n}.png`));
+  for (const n of extra) findings.push(`data/og.json records ${n}, which no page names`);
+  report(findings, `og images: ${wanted.size / 2} current, rendered from their SVGs, no orphan`);
+} else {
+  manifest.images = Object.fromEntries(Object.entries(manifest.images).sort(([a], [b]) => a.localeCompare(b)));
+  writeFileSync(MANIFEST, `${JSON.stringify(manifest, null, 1)}\n`);
+}
