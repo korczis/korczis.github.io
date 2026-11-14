@@ -3,7 +3,7 @@
 title = "Vizualizace dat"
 description = "Převod čísel na obrazy, které lze přečíst jedním pohledem: tady spirály, bubliny, proudy a grafy, každý nakreslený ze změřených dat."
 template = "term.html"
-weight = 36
+weight = 38
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

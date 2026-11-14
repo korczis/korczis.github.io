@@ -3,7 +3,7 @@
 title = "OSINT"
 description = "Zpravodajství z otevřených zdrojů: poznání vystavěné z veřejně dostupných zdrojů, kde každé tvrzení vede ke svému zdroji."
 template = "term.html"
-weight = 45
+weight = 56
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]
@@ -17,7 +17,7 @@ definition = "Zpravodajství z otevřených zdrojů: poznání vystavěné z ve�
 aliases = []
 reference = { title = "OSINT (Wikipedia)", url = "https://en.wikipedia.org/wiki/Open-source_intelligence" }
 pages = ["about.cs.md", "projects/_index.cs.md", "projects/security.cs.md"]
-related = ["ai-agent", "open-source", "repository", "ruby", "rust", "cpp", "data-visualisation", "elixir"]
+related = ["ai-agent", "open-source", "repository", "ruby", "rust", "audit-trail", "cpp", "data-integration"]
 og_title = "OSINT: slovník"
 og_image = "og/cs-glossary-osint.png"
 keywords = ["OSINT", "Koncept", "Slovník", "Tomáš Korčák"]

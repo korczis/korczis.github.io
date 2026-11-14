@@ -428,3 +428,135 @@ categories = ["science", "media"]
 definition = "Turning numbers into pictures people can read at a glance: here spirals, bubbles, streams and graphs, each drawn from measured data."
 definition_cs = "Převod čísel na obrazy, které lze přečíst jedním pohledem: tady spirály, bubliny, proudy a grafy, každý nakreslený ze změřených dat."
 reference = { title = "Data visualization (Wikipedia)", url = "https://en.wikipedia.org/wiki/Data_and_information_visualization" }
+
+[[terms]]
+id = "due-diligence"
+term = "Due diligence"
+kind = "concept"
+categories = ["security"]
+definition = "The investigation of a company, a person or an asset before a decision such as an acquisition or an investment: who owns it, what it holds, what it owes and what could go wrong."
+definition_cs = "Prověrka firmy, osoby nebo majetku před rozhodnutím, například před akvizicí nebo investicí: kdo ji vlastní, co drží, co dluží a co se může pokazit."
+reference = { title = "Due diligence (Wikipedia)", url = "https://en.wikipedia.org/wiki/Due_diligence" }
+
+[[terms]]
+id = "mergers-and-acquisitions"
+term = "Mergers and acquisitions"
+term_cs = "Fúze a akvizice"
+aliases = ["M&A"]
+kind = "concept"
+categories = ["security"]
+definition = "Transactions in which companies combine or one buys another; each is prepared by screening the target, its parties and its financing."
+definition_cs = "Transakce, při kterých se firmy spojují nebo jedna kupuje druhou; každou připravuje prověrka cíle, jeho stran a financování."
+reference = { title = "Mergers and acquisitions (Wikipedia)", url = "https://en.wikipedia.org/wiki/Mergers_and_acquisitions" }
+
+[[terms]]
+id = "virtual-data-room"
+term = "Virtual data room"
+term_cs = "Virtuální datová místnost"
+aliases = ["data room"]
+kind = "concept"
+categories = ["security"]
+definition = "A secure online repository where the documents of a transaction are shared with the parties allowed to see them, with every access recorded."
+definition_cs = "Zabezpečené online úložiště, kde se dokumenty transakce sdílejí se stranami, které je smějí vidět, a každý přístup se zaznamená."
+reference = { title = "Virtual data room (Wikipedia)", url = "https://en.wikipedia.org/wiki/Virtual_data_room" }
+
+[[terms]]
+id = "risk-assessment"
+term = "Risk assessment"
+term_cs = "Hodnocení rizik"
+kind = "concept"
+categories = ["security"]
+definition = "Identifying risks, estimating how likely and how severe each is, and ranking them so the work starts with what matters most."
+definition_cs = "Určení rizik, odhad jejich pravděpodobnosti a závažnosti a jejich seřazení, aby práce začala tím nejdůležitějším."
+reference = { title = "ISO 31000: risk management", url = "https://www.iso.org/iso-31000-risk-management.html" }
+
+[[terms]]
+id = "market-intelligence"
+term = "Market intelligence"
+term_cs = "Tržní zpravodajství"
+kind = "concept"
+categories = ["security"]
+definition = "Knowledge about a market (prices, comparables, competitors and demand) gathered from public and licensed sources to support a decision."
+definition_cs = "Poznatky o trhu (ceny, srovnatelné případy, konkurence a poptávka) sebrané z veřejných a licencovaných zdrojů jako podklad pro rozhodnutí."
+reference = { title = "Market intelligence (Wikipedia)", url = "https://en.wikipedia.org/wiki/Market_intelligence" }
+
+[[terms]]
+id = "decision-support-system"
+term = "Decision support system"
+term_cs = "Systém pro podporu rozhodování"
+kind = "concept"
+categories = ["security"]
+definition = "Software that gathers data and analysis into reports and views that help people make a decision, rather than making it for them."
+definition_cs = "Software, který shromáždí data a analýzy do zpráv a pohledů, jež lidem pomáhají rozhodnout, místo aby rozhodoval za ně."
+reference = { title = "Decision support system (Wikipedia)", url = "https://en.wikipedia.org/wiki/Decision_support_system" }
+
+[[terms]]
+id = "insolvency"
+term = "Insolvency"
+term_cs = "Insolvence"
+kind = "concept"
+categories = ["security"]
+definition = "The state of a debtor who cannot pay their debts; insolvency proceedings and the creditors' claims in them are recorded in public registers."
+definition_cs = "Stav dlužníka, který nedokáže splácet své dluhy; insolvenční řízení a přihlášky věřitelů v nich se zapisují do veřejných rejstříků."
+reference = { title = "Insolvency (Wikipedia)", url = "https://en.wikipedia.org/wiki/Insolvency" }
+
+[[terms]]
+id = "record-linkage"
+term = "Entity resolution"
+term_cs = "Ztotožnění subjektů"
+aliases = ["record linkage"]
+kind = "concept"
+categories = ["security"]
+definition = "Finding the records, across sources, that refer to the same company or person, by shared identifiers first and by similar names and addresses second."
+definition_cs = "Hledání záznamů napříč zdroji, které se týkají téže firmy nebo osoby, nejdřív podle společných identifikátorů, pak podle podobných jmen a adres."
+reference = { title = "Record linkage (Wikipedia)", url = "https://en.wikipedia.org/wiki/Record_linkage" }
+
+[[terms]]
+id = "knowledge-graph"
+term = "Knowledge graph"
+term_cs = "Znalostní graf"
+kind = "concept"
+categories = ["security"]
+definition = "Knowledge stored as entities and the relations between them, so a question can follow links (who owns what, who sits where) instead of joining tables."
+definition_cs = "Znalosti uložené jako subjekty a vztahy mezi nimi, takže dotaz může sledovat vazby (kdo co vlastní, kdo kde sedí) místo spojování tabulek."
+reference = { title = "Knowledge graph (Wikipedia)", url = "https://en.wikipedia.org/wiki/Knowledge_graph" }
+
+[[terms]]
+id = "data-integration"
+term = "Data integration"
+term_cs = "Integrace dat"
+kind = "concept"
+categories = ["security"]
+definition = "Combining data from many sources (registers, APIs, files) into one consistent view, with each record keeping where it came from."
+definition_cs = "Spojení dat z mnoha zdrojů (rejstříků, API, souborů) do jednoho jednotného pohledu, kde si každý záznam pamatuje, odkud pochází."
+reference = { title = "Data integration (Wikipedia)", url = "https://en.wikipedia.org/wiki/Data_integration" }
+
+[[terms]]
+id = "audit-trail"
+term = "Audit trail"
+term_cs = "Auditní stopa"
+kind = "concept"
+categories = ["security"]
+definition = "A chronological record of who did what and on which evidence, kept so that the work can be checked and retraced later."
+definition_cs = "Chronologický záznam o tom, kdo co udělal a na základě jakých podkladů, uchovaný proto, aby šlo práci později ověřit a zrekonstruovat."
+reference = { title = "Audit trail (Wikipedia)", url = "https://en.wikipedia.org/wiki/Audit_trail" }
+
+[[terms]]
+id = "information-extraction"
+term = "Information extraction"
+term_cs = "Vytěžování informací"
+kind = "concept"
+categories = ["security"]
+definition = "Turning documents (scans, PDFs, free text) into structured fields such as names, dates and amounts, with OCR and language or vision models."
+definition_cs = "Převod dokumentů (skenů, PDF, volného textu) na strukturovaná pole, jako jsou jména, data a částky, pomocí OCR a jazykových nebo obrazových modelů."
+reference = { title = "Information extraction (Wikipedia)", url = "https://en.wikipedia.org/wiki/Information_extraction" }
+
+[[terms]]
+id = "orchestration"
+term = "Orchestration"
+term_cs = "Orchestrace"
+kind = "concept"
+categories = ["security"]
+definition = "Coordinating many automated steps, services or agents (queues, workflows, schedules) so they run in the right order and recover when one fails."
+definition_cs = "Koordinace mnoha automatických kroků, služeb nebo agentů (fronty, workflow, plány), aby běžely ve správném pořadí a zotavily se, když jeden selže."
+reference = { title = "Orchestration in computing (Wikipedia)", url = "https://en.wikipedia.org/wiki/Orchestration_(computing)" }
