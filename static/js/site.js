@@ -116,6 +116,23 @@
     return h >>> 0;
   }
 
+  // The site's own pages, in this page's language (templates/partials/link-index.html): link('term',
+  // 'Rust'), link('work', 'algoglyph'), link('category', 'ai'). Matching ignores case; terms also
+  // match their titles and aliases. A mark with no page here falls back to its source, never to a
+  // hand-built address.
+  let linkIndex = null;
+  function link(kind, key) {
+    if (key === undefined || key === null || key === '') return null;
+    linkIndex ??= (() => {
+      try {
+        return data('link-index');
+      } catch {
+        return {};
+      }
+    })();
+    return linkIndex[kind]?.[String(key).toLowerCase()] ?? null;
+  }
+
   // Every visual navigates through here: internal links in the same tab, external ones in a new
   // tab, and Ctrl/Cmd/Shift or the middle button always in a new tab, as a link would.
   function go(url, event) {
@@ -443,7 +460,7 @@
     try {
       await lib(spec.lib);
       const source = box.dataset.source ? data(box.dataset.source) : null;
-      const ctx = { palette, reducedMotion, isDark, motion, go, escape, hash, t, id: vizId(box) };
+      const ctx = { palette, reducedMotion, isDark, motion, go, link, escape, hash, t, id: vizId(box) };
       const handle = (await spec.mount(box, source, ctx)) || {};
       mounted.set(box, handle);
       list(box, handle);
@@ -663,5 +680,5 @@
     };
   }
 
-  window.KorczisHub = { viz, lib, data, palette, reducedMotion, isDark, motion, go, escape, hash, base, home, t, tooltip, github: document.documentElement.dataset.github || '', locale: i18n.locale || 'en-GB' };
+  window.KorczisHub = { viz, lib, data, palette, reducedMotion, isDark, motion, go, link, escape, hash, base, home, t, tooltip, github: document.documentElement.dataset.github || '', locale: i18n.locale || 'en-GB' };
 })();

@@ -1,0 +1,15 @@
+{#- One index of the site's own pages, in the page's language, for every script on it (rule
+    project.everything-interlinked): glossary terms by id, title and alias; work pages by repository;
+    category pages by key. Visuals and components link through KorczisHub.link(kind, key); no script
+    builds a site address by hand. Derived from the sections, so a new term or work page is linked
+    the moment it exists. -#}
+{%- if lang == config.default_language %}{% set lisfx = "" %}{% else %}{% set lisfx = "." ~ lang %}{% endif -%}
+{%- set ligl = get_section(path="glossary/_index" ~ lisfx ~ ".md") -%}
+{%- set liwk = get_section(path="work/_index" ~ lisfx ~ ".md") -%}
+{%- set lipr = get_section(path="projects/_index" ~ lisfx ~ ".md") -%}
+<script type="application/json" id="link-index">{"term": {"": null
+  {%- for p in ligl.pages %}, {{ p.extra.term | json_encode | safe }}: {{ p.permalink | json_encode | safe }}, {{ p.title | lower | json_encode | safe }}: {{ p.permalink | json_encode | safe }}
+  {%- for a in p.extra.aliases %}, {{ a | lower | json_encode | safe }}: {{ p.permalink | json_encode | safe }}{% endfor %}{% endfor -%}
+}, "work": {"": null{% for p in liwk.pages %}, {{ p.extra.repo | lower | json_encode | safe }}: {{ p.permalink | json_encode | safe }}{% endfor -%}
+}, "category": {"": null{% for p in lipr.pages %}{% if p.extra.category is defined %}, {{ p.extra.category | json_encode | safe }}: {{ p.permalink | json_encode | safe }}{% endif %}{% endfor -%}
+}}</script>

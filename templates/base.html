@@ -61,6 +61,7 @@
     </div>
   </div>
   {%- include "partials/palette.html" %}
+  {%- include "partials/link-index.html" %}
 
   {#- The texts the scripts render, in this page's language (KorczisHub.t). #}
   <script type="application/json" id="i18n-data">{"locale": {% if lang == "cs" %}"cs-CZ"{% else %}"en-GB"{% endif %}, "strings": { {%- for k in config.extra.client.keys %}{{ k | json_encode | safe }}: {{ trans(key=k, lang=lang) | json_encode | safe }}{% if not loop.last %}, {% endif %}{% endfor -%} }}</script>
