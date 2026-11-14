@@ -4,18 +4,18 @@ title = "Data and GIS"
 description = "Catalogues and maps of open data: geodata sources, incident reports geocoded and served from one registry."
 template = "category.html"
 weight = 4
-updated = "2026-10-29T13:50:30Z"
+updated = "2026-11-14T17:32:32Z"
 
 [taxonomies]
-tags = ["Data and GIS", "Data Atlas", "Crisis map", "apollo-crawler-extension", "microcrawler-crawler-bam-brno-cz"]
+tags = ["Data and GIS", "Data Atlas", "Crisis map", "korczis", "apollo-crawler-extension"]
 
 [extra]
 category = "data"
-og_title = "Data and GIS: 47 repositories."
+og_title = "Data and GIS: 48 repositories."
 og_image = "og/category-data.png"
 schema = "collection"
 terms = ["gis", "ruby", "javascript", "elixir", "shell", "html", "python", "rust", "postgis", "mcp", "repository"]
-keywords = ["Data and GIS", "Data Atlas", "Crisis map", "apollo-crawler-extension", "microcrawler-crawler-bam-brno-cz", "microcrawler-crawler-all", "microcrawler-crawler-base", "microcrawler-crawler-craiglist-com", "microcrawler-crawler-firmy-cz", "Tomas Korcak"]
+keywords = ["Data and GIS", "Data Atlas", "Crisis map", "korczis", "apollo-crawler-extension", "microcrawler-crawler-bam-brno-cz", "microcrawler-crawler-all", "microcrawler-crawler-base", "microcrawler-crawler-craiglist-com", "Tomas Korcak"]
 
 [[extra.viz]]
 kind = "constellation"
@@ -28,7 +28,7 @@ tone = "night"
 +++
 Catalogues and maps of open data: geodata sources, incident reports geocoded and served from one registry.
 
-The category holds 47 original repositories, written most often in [Ruby](@/glossary/ruby.md), [JavaScript](@/glossary/javascript.md), [Elixir](@/glossary/elixir.md) and [Shell](@/glossary/shell.md). Featured: **Data Atlas** and **Crisis map**.
+The category holds 48 original repositories, written most often in [Ruby](@/glossary/ruby.md), [JavaScript](@/glossary/javascript.md), [Elixir](@/glossary/elixir.md) and [Shell](@/glossary/shell.md). Featured: **Data Atlas** and **Crisis map**.
 
 Key concept: [GIS](@/glossary/gis.md).
 

@@ -3,7 +3,7 @@
 title = "astronomists"
 description = "astronomists: projekt z kategorie Nástroje, hlavní jazyk Python, poslední commit 20. července 2026."
 template = "work.html"
-weight = 16
+weight = 17
 updated = "2026-07-20T17:36:39Z"
 
 [taxonomies]

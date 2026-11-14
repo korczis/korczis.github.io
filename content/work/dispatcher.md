@@ -3,7 +3,7 @@
 title = "dispatcher"
 description = "1. Introduction 2. Motivation 3. How It Started 4. Architecture 5. Features 6. Usage 7. File Structure 8. API Reference 9. Examples 10. Contributing 11. License"
 template = "work.html"
-weight = 33
+weight = 34
 updated = "2024-10-19T15:37:57Z"
 
 [taxonomies]

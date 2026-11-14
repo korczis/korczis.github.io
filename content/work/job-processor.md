@@ -3,7 +3,7 @@
 title = "job-processor"
 description = "This is a simple web service built with Elixir, Plug, and Cowboy that processes job tasks with dependencies and generates execution order and bash scripts."
 template = "work.html"
-weight = 36
+weight = 37
 updated = "2024-08-01T11:50:56Z"
 
 [taxonomies]

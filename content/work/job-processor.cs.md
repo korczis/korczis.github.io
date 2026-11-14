@@ -3,7 +3,7 @@
 title = "job-processor"
 description = "job-processor: projekt z kategorie Web, hlavní jazyk Elixir, poslední commit 1. srpna 2024."
 template = "work.html"
-weight = 36
+weight = 37
 updated = "2024-08-01T11:50:56Z"
 
 [taxonomies]

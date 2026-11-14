@@ -3,7 +3,7 @@
 title = "prismatic"
 description = "prismatic: projekt z kategorie Nástroje, hlavní jazyk Elixir, poslední commit 4. srpna 2025."
 template = "work.html"
-weight = 27
+weight = 28
 updated = "2025-08-04T17:45:57Z"
 
 [taxonomies]

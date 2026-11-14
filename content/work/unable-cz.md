@@ -3,7 +3,7 @@
 title = "unable.cz"
 description = "Minimalist static site built with Zola, styled with Tailwind CSS, Flowbite + Flowbite Typography, and Alpine.js."
 template = "work.html"
-weight = 17
+weight = 18
 updated = "2026-07-19T20:51:54Z"
 
 [taxonomies]

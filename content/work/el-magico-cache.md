@@ -3,7 +3,7 @@
 title = "el-magico-cache"
 description = "If available in Hex, the package can be installed by adding cache to your list of dependencies in mix.exs:"
 template = "work.html"
-weight = 43
+weight = 44
 updated = "2023-01-27T17:10:03Z"
 
 [taxonomies]

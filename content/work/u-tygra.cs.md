@@ -3,7 +3,7 @@
 title = "u-tygra"
 description = "u-tygra: projekt z kategorie Nástroje, hlavní jazyk JavaScript, poslední commit 3. června 2025."
 template = "work.html"
-weight = 28
+weight = 29
 updated = "2025-06-03T05:15:05Z"
 
 [taxonomies]

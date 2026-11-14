@@ -3,7 +3,7 @@
 title = "comtesse"
 description = "comtesse: projekt z kategorie Nástroje, hlavní jazyk Just, poslední commit 28. srpna 2025."
 template = "work.html"
-weight = 25
+weight = 26
 updated = "2025-08-28T18:57:49Z"
 
 [taxonomies]

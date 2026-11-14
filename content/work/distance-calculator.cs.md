@@ -3,7 +3,7 @@
 title = "distance-calculator"
 description = "distance-calculator: projekt z kategorie Věda a vizualizace, hlavní jazyk Elixir, poslední commit 23. dubna 2024."
 template = "work.html"
-weight = 39
+weight = 40
 updated = "2024-04-23T20:00:08Z"
 
 [taxonomies]

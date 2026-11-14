@@ -3,7 +3,7 @@
 title = "pdf_renderer"
 description = "Create a service that accepts PDF files containing one or more pages. These pages should be rendered to “normalized png” files: they should fit into a 1200x1600…"
 template = "work.html"
-weight = 41
+weight = 42
 updated = "2024-03-25T16:33:15Z"
 
 [taxonomies]

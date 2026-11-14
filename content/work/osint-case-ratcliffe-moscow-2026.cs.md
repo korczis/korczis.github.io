@@ -3,7 +3,7 @@
 title = "osint-case-ratcliffe-moscow-2026"
 description = "osint-case-ratcliffe-moscow-2026: projekt z kategorie Inženýrství AI, hlavní jazyk HTML, poslední commit 26. srpna 2026."
 template = "work.html"
-weight = 13
+weight = 14
 updated = "2026-08-26T22:32:53Z"
 
 [taxonomies]

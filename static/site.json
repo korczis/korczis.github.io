@@ -11,8 +11,8 @@
  },
  "front_matter_schema": "https://korczis.github.io/schemas/front-matter.schema.json",
  "data_as_of": {
-  "snapshot": "2026-11-14T17:34:00Z",
-  "index": "2026-11-14T06:59:40Z"
+  "snapshot": "2026-11-14T18:18:14Z",
+  "index": "2026-11-14T18:33:32Z"
  },
  "pages": [
   {
@@ -888,12 +888,12 @@
     "Data a GIS",
     "Data Atlas",
     "Crisis map",
+    "korczis",
     "apollo-crawler-extension",
     "microcrawler-crawler-bam-brno-cz",
     "microcrawler-crawler-all",
     "microcrawler-crawler-base",
     "microcrawler-crawler-craiglist-com",
-    "microcrawler-crawler-firmy-cz",
     "Tomáš Korčák"
    ]
   },
@@ -1118,21 +1118,21 @@
    "url": "https://korczis.github.io/cs/work/",
    "lang": "cs",
    "title": "Nedávná práce · Tomas Korcak",
-   "description": "Každý projekt s commitem za posledních 48 měsíců, podle období (12, 24, 48): 43 repozitářů na GitHubu a GitLabu, každý s vlastní stránkou.",
+   "description": "Každý projekt s commitem za posledních 48 měsíců, podle období (12, 24, 48): 44 repozitářů na GitHubu a GitLabu, každý s vlastní stránkou.",
    "type": "collection",
    "category": null,
    "og_image": "https://korczis.github.io/og/cs-work.png",
    "keywords": [
     "nedávná práce Tomáše Korčáka",
     "korczis",
-    "korczis.github.io",
+    "prismatic-majordomus",
     "sonic-playground",
-    "oscilla",
+    "korczis.github.io",
+    "korczis",
     "algoglyph",
     "kompendium-epistemicke-anihilace",
-    "prismatic-majordomus",
-    "vomaste.cz",
-    "majordomus-reel"
+    "oscilla",
+    "vomaste.cz"
    ]
   },
   {
@@ -1441,6 +1441,21 @@
     "CSS",
     "Elixir",
     "SCSS",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/work/korczis/",
+   "lang": "cs",
+   "title": "korczis · Tomas Korcak",
+   "description": "korczis: projekt z kategorie Data a GIS, hlavní jazyk JavaScript, poslední commit 14. listopadu 2026.",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-work-korczis.png",
+   "keywords": [
+    "korczis",
+    "Data a GIS",
+    "JavaScript",
     "Tomáš Korčák"
    ]
   },
@@ -2619,12 +2634,12 @@
     "Data and GIS",
     "Data Atlas",
     "Crisis map",
+    "korczis",
     "apollo-crawler-extension",
     "microcrawler-crawler-bam-brno-cz",
     "microcrawler-crawler-all",
     "microcrawler-crawler-base",
     "microcrawler-crawler-craiglist-com",
-    "microcrawler-crawler-firmy-cz",
     "Tomas Korcak"
    ]
   },
@@ -2849,21 +2864,21 @@
    "url": "https://korczis.github.io/work/",
    "lang": "en",
    "title": "Recent work · Tomas Korcak",
-   "description": "Every project with a commit in the last 48 months, by period (12, 24, 48): 43 repositories on GitHub and GitLab, each with its own page.",
+   "description": "Every project with a commit in the last 48 months, by period (12, 24, 48): 44 repositories on GitHub and GitLab, each with its own page.",
    "type": "collection",
    "category": null,
    "og_image": "https://korczis.github.io/og/work.png",
    "keywords": [
     "Tomas Korcak recent work",
     "korczis",
-    "korczis.github.io",
+    "prismatic-majordomus",
     "sonic-playground",
-    "oscilla",
+    "korczis.github.io",
+    "korczis",
     "algoglyph",
     "kompendium-epistemicke-anihilace",
-    "prismatic-majordomus",
-    "vomaste.cz",
-    "majordomus-reel"
+    "oscilla",
+    "vomaste.cz"
    ]
   },
   {
@@ -3172,6 +3187,21 @@
     "CSS",
     "Elixir",
     "SCSS",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/work/korczis/",
+   "lang": "en",
+   "title": "korczis · Tomas Korcak",
+   "description": "Tomas Korcak: profile README, derived from korczis.github.io/site.json",
+   "type": "project",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/work-korczis.png",
+   "keywords": [
+    "korczis",
+    "Data and GIS",
+    "JavaScript",
     "Tomas Korcak"
    ]
   },
@@ -3585,7 +3615,7 @@
    "name": "Data and GIS",
    "description": "Catalogues and maps of open data: geodata sources, incident reports geocoded and served from one registry.",
    "url": "https://korczis.github.io/projects/data/",
-   "repositories": 47
+   "repositories": 48
   },
   {
    "key": "media",
@@ -3809,17 +3839,6 @@
  ],
  "repositories": [
   {
-   "name": "korczis.github.io",
-   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-   "language": "JavaScript",
-   "category": "ai",
-   "github": "https://github.com/korczis/korczis.github.io",
-   "gitlab": null,
-   "site": null,
-   "created": "2024-12-24T16:48:15Z",
-   "active": "2026-11-14T02:58:17Z"
-  },
-  {
    "name": "sonic-playground",
    "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
    "language": "Python",
@@ -3828,7 +3847,7 @@
    "gitlab": null,
    "site": "https://korczis.github.io/sonic-playground/",
    "created": "2026-11-12T00:48:36Z",
-   "active": "2026-11-14T02:33:38Z"
+   "active": "2026-11-14T18:13:55Z"
   },
   {
    "name": "algoglyph",
@@ -3839,7 +3858,40 @@
    "gitlab": null,
    "site": "https://korczis.github.io/algoglyph/",
    "created": "2026-11-11T18:09:38Z",
-   "active": "2026-11-13T06:33:22Z"
+   "active": "2026-11-14T18:11:34Z"
+  },
+  {
+   "name": "kompendium-epistemicke-anihilace",
+   "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
+   "language": "Elixir",
+   "category": "knowledge",
+   "github": "https://github.com/korczis/kompendium-epistemicke-anihilace",
+   "gitlab": null,
+   "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+   "created": "2026-11-09T22:04:50Z",
+   "active": "2026-11-14T17:54:14Z"
+  },
+  {
+   "name": "korczis.github.io",
+   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+   "language": "JavaScript",
+   "category": "ai",
+   "github": "https://github.com/korczis/korczis.github.io",
+   "gitlab": null,
+   "site": null,
+   "created": "2024-12-24T16:48:15Z",
+   "active": "2026-11-14T17:48:17Z"
+  },
+  {
+   "name": "korczis",
+   "description": "Tomas Korcak: profile README, derived from korczis.github.io/site.json",
+   "language": "JavaScript",
+   "category": "data",
+   "github": "https://github.com/korczis/korczis",
+   "gitlab": null,
+   "site": "https://korczis.github.io/",
+   "created": "2026-11-14T17:32:26Z",
+   "active": "2026-11-14T17:32:32Z"
   },
   {
    "name": "oscilla",
@@ -3851,17 +3903,6 @@
    "site": "https://korczis.github.io/oscilla/",
    "created": "2026-10-01T21:05:33Z",
    "active": "2026-11-13T05:40:37Z"
-  },
-  {
-   "name": "kompendium-epistemicke-anihilace",
-   "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
-   "language": "Elixir",
-   "category": "knowledge",
-   "github": "https://github.com/korczis/kompendium-epistemicke-anihilace",
-   "gitlab": null,
-   "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
-   "created": "2026-11-09T22:04:50Z",
-   "active": "2026-11-13T05:02:01Z"
   },
   {
    "name": "prismatic-majordomus",
@@ -6131,10 +6172,10 @@
   }
  ],
  "counts": {
-  "github": 447,
+  "github": 448,
   "gitlab": 417,
-  "merged": 516,
-  "own": 211,
+  "merged": 517,
+  "own": 212,
   "forks": 250,
   "mirrors": 33,
   "empty": 17,

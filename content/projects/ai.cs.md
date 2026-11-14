@@ -4,7 +4,7 @@ title = "Inženýrství AI"
 description = "Dohled nad AI agenty pro programování: jedna politika pro každý nástroj, vymezené úkoly a práce, která projde jen doložená."
 template = "category.html"
 weight = 1
-updated = "2026-11-14T02:58:17Z"
+updated = "2026-11-14T17:48:17Z"
 
 [taxonomies]
 tags = ["Inženýrství AI", "Majordomus", "korczis.github.io", "osint-case-ratcliffe-moscow-2026", "llm"]

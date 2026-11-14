@@ -70,8 +70,8 @@ Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist s
 
 ## Every original repository
 
-> 211 repositories on GitHub and GitLab where the owner wrote at least half of the commits,
-> derived 2026-11-14T06:59:40Z. Forks and mirrors (283) are not listed.
+> 212 repositories on GitHub and GitLab where the owner wrote at least half of the commits,
+> derived 2026-11-14T18:33:32Z. Forks and mirrors (283) are not listed.
 
 ### AI engineering (7)
 
@@ -111,8 +111,9 @@ Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist s
 - skull-erlang: Programming learning materials, examples, sources ... (Erlang, 2014). GitHub https://github.com/korczis/skull-erlang; GitLab https://gitlab.com/korczis/skull-erlang
 - books: List of good books (2013). GitHub https://github.com/korczis/books; GitLab https://gitlab.com/korczis/books
 
-### Data and GIS (47)
+### Data and GIS (48)
 
+- korczis: Tomas Korcak: profile README, derived from korczis.github.io/site.json (JavaScript, 2026). article https://korczis.github.io/work/korczis/; GitHub https://github.com/korczis/korczis; site https://korczis.github.io/
 - data-atlas: Katalog GIS a geodatových zdrojů — datasety, katastr, doprava, remote sensing, prostorová analytika. Jednosouborová prohledávatelná stránka. (Python, 2026). article https://korczis.github.io/work/data-atlas/; GitHub https://github.com/korczis/data-atlas; site https://korczis.github.io/data-atlas/
 - crisis-map: Mini crisis map: incident reports normalised, geocoded via local Nominatim, stored as PostGIS geography, served from one capability registry (LiveView, REST, OpenAPI, MCP, CLI) (Elixir, 2026). article https://korczis.github.io/work/crisis-map/; GitHub https://github.com/korczis/crisis-map; site https://korczis.github.io/crisis-map/
 - apollo-crawler-extension: Apollo Platform Chrome Extension (2019). GitLab https://gitlab.com/korczis/apollo-crawler-extension

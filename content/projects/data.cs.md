@@ -4,18 +4,18 @@ title = "Data a GIS"
 description = "Katalogy a mapy otevřených dat: zdroje geodat, crawlery, hlášení incidentů geokódovaná a servírovaná z jednoho registru."
 template = "category.html"
 weight = 4
-updated = "2026-10-29T13:50:30Z"
+updated = "2026-11-14T17:32:32Z"
 
 [taxonomies]
-tags = ["Data a GIS", "Data Atlas", "Crisis map", "apollo-crawler-extension", "microcrawler-crawler-bam-brno-cz"]
+tags = ["Data a GIS", "Data Atlas", "Crisis map", "korczis", "apollo-crawler-extension"]
 
 [extra]
 category = "data"
-og_title = "Data a GIS: 47 repozitářů."
+og_title = "Data a GIS: 48 repozitářů."
 og_image = "og/cs-category-data.png"
 schema = "collection"
 terms = ["gis", "ruby", "javascript", "elixir", "shell", "html", "python", "rust", "postgis", "mcp", "repository"]
-keywords = ["Data a GIS", "Data Atlas", "Crisis map", "apollo-crawler-extension", "microcrawler-crawler-bam-brno-cz", "microcrawler-crawler-all", "microcrawler-crawler-base", "microcrawler-crawler-craiglist-com", "microcrawler-crawler-firmy-cz", "Tomáš Korčák"]
+keywords = ["Data a GIS", "Data Atlas", "Crisis map", "korczis", "apollo-crawler-extension", "microcrawler-crawler-bam-brno-cz", "microcrawler-crawler-all", "microcrawler-crawler-base", "microcrawler-crawler-craiglist-com", "Tomáš Korčák"]
 
 [[extra.viz]]
 kind = "constellation"
@@ -28,7 +28,7 @@ tone = "night"
 +++
 Katalogy a mapy otevřených dat: zdroje geodat, crawlery, hlášení incidentů geokódovaná a servírovaná z jednoho registru.
 
-Kategorie má 47 repozitářů; nejčastějšími jazyky jsou [Ruby](@/glossary/ruby.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Elixir](@/glossary/elixir.cs.md) a [Shell](@/glossary/shell.cs.md). Vybrané projekty: **Data Atlas** a **Crisis map**.
+Kategorie má 48 repozitářů; nejčastějšími jazyky jsou [Ruby](@/glossary/ruby.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Elixir](@/glossary/elixir.cs.md) a [Shell](@/glossary/shell.cs.md). Vybrané projekty: **Data Atlas** a **Crisis map**.
 
 Klíčový pojem: [GIS](@/glossary/gis.cs.md).
 
