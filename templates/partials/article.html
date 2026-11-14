@@ -19,7 +19,7 @@
   {% </card> %}
   {%- endif %}
   {%- if has_terms %}
-  {% <card labelledby="concepts-title"> %}
+  {% <card cls="print:hidden" labelledby="concepts-title"> %}
     {{ <card_head id="concepts-title" title={trans(key="concepts_on_page", lang=lang)} lead={trans(key="concepts_lead", lang=lang)} action={trans(key="all_terms", lang=lang)} href={get_url(path="@/glossary/_index.md", lang=lang)} /> }}
     <dl class="grid grid-cols-1 gap-3 sm:grid-cols-2 2xl:grid-cols-3">
       {%- for id in afm.extra.terms %}
