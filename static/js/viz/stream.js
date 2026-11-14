@@ -253,7 +253,15 @@ KorczisHub.viz('stream', {
       }).filter(Boolean);
       labels.selectAll('text').data(placed, (p) => p.key).join('text')
         .attr('dy', '0.35em').attr('text-anchor', 'middle').attr('font-size', 11).attr('font-weight', 700)
-        .attr('font-family', c.font).attr('fill', (p) => ink(colourOf(p.key), c)).text((p) => label(p.key))
+        .attr('font-family', c.font)
+        // The layer is a gradient from darker to brighter: the label is judged on both stops.
+        .each(function (p) {
+          const base = d3.color(colourOf(p.key));
+          const look = tone.label([base.darker(0.4).formatRgb(), base.brighter(0.5).formatRgb()], [c.page, c.strong]);
+          d3.select(this).attr('fill', look.ink).attr('stroke', look.halo).attr('stroke-width', look.halo ? 3 : null)
+            .attr('paint-order', look.halo ? 'stroke' : null).attr('stroke-linejoin', look.halo ? 'round' : null);
+        })
+        .text((p) => label(p.key))
         .attr('x', (p) => p.x).attr('y', (p) => p.y);
 
       const chip = legend.attr('transform', `translate(0,${height - margin.bottom + 34})`)

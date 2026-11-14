@@ -189,6 +189,17 @@
       const best = set.map((c) => [c, colour.contrast(c, fill)]).sort((x, y) => y[1] - x[1])[0];
       return { ink: best[0], ratio: best[1], ok: best[1] >= floor };
     },
+    // A label on a gradient (or on anything with several colours under it): the ink of the set whose
+    // worst contrast across every stop is best, and, where even that one stays under the floor, a
+    // halo (stroke, paint-order: stroke) in the ink that stands out most against it.
+    label(stops, inks, floor = 4.5) {
+      const p = palette();
+      const set = inks?.length ? inks : [p.strong, p.page];
+      const [ink, ratio] = set.map((c) => [c, Math.min(...stops.map((s) => colour.contrast(c, s)))]).sort((a, b) => b[1] - a[1])[0];
+      if (ratio >= floor) return { ink, halo: null, ratio };
+      const halo = set.map((c) => [c, colour.contrast(c, ink)]).sort((a, b) => b[1] - a[1])[0][0];
+      return { ink, halo, ratio };
+    },
     toHsl(css) {
       const [r, g, b] = colour.parse(css).map((x) => x / 255);
       const max = Math.max(r, g, b);

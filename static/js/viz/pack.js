@@ -257,11 +257,16 @@ KorczisHub.viz('pack', {
             return;
           }
           const fill = ink(colourOf(l.n), c);
+          // A label can reach past its bubble onto a neighbour; a halo in the other ink keeps it
+          // readable on whatever it crosses.
+          const halo = fill === c.page ? c.strong : c.page;
           const text = g.append('text').attr('text-anchor', 'middle').attr('fill', fill).attr('font-family', c.font)
+            .attr('stroke', halo).attr('stroke-width', 3).attr('paint-order', 'stroke').attr('stroke-linejoin', 'round')
             .attr('font-weight', 700).attr('font-size', l.size);
           text.selectAll('tspan').data(l.ls.map((line, i, all) => ({ line, dy: i === 0 ? `${-0.1 - (all.length - 1) * 1.1}em` : '1.1em' })))
             .join('tspan').attr('x', 0).attr('dy', (d) => d.dy).text((d) => d.line);
           g.append('text').attr('text-anchor', 'middle').attr('dy', '1.2em').attr('fill', fill)
+            .attr('stroke', halo).attr('stroke-width', 3).attr('paint-order', 'stroke').attr('stroke-linejoin', 'round')
             .attr('font-family', c.font).attr('font-size', Math.min(13, l.r / 4)).text(l.value.toLocaleString(KorczisHub.locale));
         });
     }
