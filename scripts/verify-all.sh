@@ -36,7 +36,16 @@ run "site.json is current" node scripts/build-site-json.mjs --check
 run "Every visual goes through the component layer" node scripts/check-viz-layer.mjs
 run "Build (internal links are errors)" npm run --silent build
 run "SEO derived from front matter (titles, descriptions, OG, JSON-LD, sitemap)" node scripts/check-seo.mjs
-run "Flowbite Pro" node "$HOME/.claude/skills/flowbite-pro/verify.mjs" .
+# The Flowbite Pro scanner lives on the owner's machine (~/.claude/skills/flowbite-pro). Where it is
+# absent (a runner, e.g. the refresh's pre-push), say so: majordomus doctor below judges the licence
+# there, as CI does.
+flowbite_scanner="$HOME/.claude/skills/flowbite-pro/verify.mjs"
+if [ -f "$flowbite_scanner" ]; then
+  run "Flowbite Pro" node "$flowbite_scanner" .
+else
+  step "Flowbite Pro"
+  echo "skipped: no scanner at $flowbite_scanner; majordomus doctor judges the licence here"
+fi
 run "Majordomus supervision" majordomus doctor
 fi
 
