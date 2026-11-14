@@ -35,6 +35,25 @@ in:
   - AGENTS.md
   - Makefile
   - justfile
+  # stack: zola (zola.toml) — the site itself: sources, data, generators, gates, delivery
+  - zola.toml
+  - package.json
+  - .zola-version
+  - templates/**
+  - content/**
+  - data/**
+  - i18n/**
+  - scripts/**
+  - static/js/**
+  - static/schemas/**
+  - static/*.txt
+  - styles/**
+  - .github/**
+  - .githooks/**
+  - AGENTS.md
+  - CLAUDE.md
+  - GEMINI.md
+  # end stack: zola
 
 out:
   # never read, by path: version control, the local half of the layer, dependencies,
@@ -77,7 +96,9 @@ out:
   # generated assets: a bundle, a minified file, a source map, a compiled protocol schema;
   # a repository adds the directories its generators write under `paths`
   generated:
-    paths: []
+    # the vendor bundles scripts/vendor.mjs copies, the CSS Tailwind compiles and Zola's output
+    # (all ignored by git)
+    paths: ['static/js/vendor/', 'static/css/', 'public/']
     names: ['*.min.js', '*.min.css', '*.map', '*.bundle.js', '*.generated.*', '*_generated.*', '*.pb.go', '*.pb.rs', '*_pb2.py', '*.pb.cc', '*.pb.h']
 
   # secrets: never read, never served, never quoted; a tracked one is reported

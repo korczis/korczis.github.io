@@ -21,5 +21,6 @@ and the workflows show when to apply them.
 | workflow | when |
 |---|---|
 | [`task-lifecycle.md`](task-lifecycle.md) | every session: start, orient, checkpoint, check, hand over or finish |
+| [`every-change.md`](every-change.md) | every task that changes the site: the owner's standing order (ADR 0005) and the gates that hold it |
 | [`plan.md`](plan.md) | the repository has a plan under `../project/` and work is taken from it |
 | [`continuity.md`](continuity.md) | resuming after a session ended, or leaving work for one that has not begun |

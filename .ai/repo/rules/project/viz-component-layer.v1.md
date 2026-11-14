@@ -13,8 +13,8 @@ tags: [ui, visualisation, performance, accessibility]
 
 # Rationale
 
-The four libraries weigh about 900 KB gzipped together. Loading them only when their box nears
-the viewport keeps the first paint light; one layer also means one place for theming, redraw on
+Chart libraries are the heaviest code the site ships. Loading each only when its box nears the
+viewport, and only once the main thread is idle, keeps the first paint light; one layer also means one place for theming, redraw on
 theme change, error reporting and the ready state the audit waits for.
 
 # Required behaviour
@@ -38,7 +38,7 @@ theme change, error reporting and the ready state the audit waits for.
   `scripts/check-viz-layer.mjs` refuses a visual without a click handler or pointer cursor (the
   decorative hero `glyphs` excepted; ECharts sets the pointer itself), and a visual no page uses.
 - The constellation draws the whole index as a galaxy on a canvas with its own 3D projection
-  (no WebGL: 211 points need none, and the browser audit runs headless).
+  (no WebGL: a few hundred points need none, and the browser audit runs headless).
 - Realtime: the pulse is the one visual that reads the network, in two modes: `recent.commits`
   (home: the owner's public events, a lane per repository) and `work.commits` (every work page,
   declared by `build-work.mjs`: the project's latest 30 commits, a lane per conventional commit
