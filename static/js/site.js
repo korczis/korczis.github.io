@@ -124,10 +124,16 @@
     return h >>> 0;
   }
 
-  // The site's own pages, in this page's language (templates/partials/link-index.html): link('term',
-  // 'Rust'), link('work', 'algoglyph'), link('category', 'ai'). Matching ignores case; terms also
-  // match their titles and aliases. A mark with no page here falls back to its source, never to a
-  // hand-built address.
+  // The site's own pages, in this page's language (templates/partials/link-index.html):
+  //   link('term', 'Rust')        a glossary term by id, title or alias
+  //   link('work', 'algoglyph')   a work page by repository
+  //   link('category', 'ai')      a category page by key
+  //   link('page', 'repositories')  a listing page (projects, work, glossary, repositories)
+  //   link('filter', { page: 'repositories', language: 'Rust' })   a listing filtered by its query
+  //   link('language', 'Rust')    its term page, else the repositories filtered by it
+  //   link('repo', 'name')        its work page, else the repositories searched for it
+  // Matching ignores case. A mark with no page here falls back to its source, never to an address
+  // assembled by hand.
   let linkIndex = null;
   function link(kind, key) {
     if (key === undefined || key === null || key === '') return null;
@@ -138,8 +144,69 @@
         return {};
       }
     })();
+    if (kind === 'filter') {
+      const { page, ...query } = key;
+      const base = link('page', page);
+      if (!base) return null;
+      const params = new URLSearchParams(Object.entries(query).filter(([, v]) => v !== undefined && v !== null && v !== ''));
+      return params.size ? `${base}?${params}` : base;
+    }
+    if (kind === 'language') return link('term', key) ?? link('filter', { page: 'repositories', language: key });
+    if (kind === 'repo') return link('work', key) ?? link('filter', { page: 'repositories', q: String(key).toLowerCase() });
     return linkIndex[kind]?.[String(key).toLowerCase()] ?? null;
   }
+
+  // Colour arithmetic for visuals, on the rgb() strings palette() returns, so no visual keeps a
+  // copy (or a colour literal): parse, mix, alpha, WCAG contrast, the most legible ink on a fill,
+  // and HSL for hue walks.
+  const colour = {
+    parse(css) {
+      const m = String(toRgb(css)).match(/rgba?\(([^)]+)\)/);
+      return m ? m[1].split(',').slice(0, 3).map((x) => Number(x.trim())) : [0, 0, 0];
+    },
+    css: ([r, g, b], a = 1) => (a >= 1 ? `rgb(${Math.round(r)}, ${Math.round(g)}, ${Math.round(b)})` : `rgba(${Math.round(r)}, ${Math.round(g)}, ${Math.round(b)}, ${a})`),
+    mix(a, b, share) {
+      const [p, q] = [colour.parse(a), colour.parse(b)];
+      return colour.css(p.map((x, i) => x + (q[i] - x) * share));
+    },
+    alpha: (css, a) => colour.css(colour.parse(css), a),
+    luminance(css) {
+      const [r, g, b] = colour.parse(css).map((x) => {
+        const c = x / 255;
+        return c <= 0.03928 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4;
+      });
+      return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+    },
+    contrast(a, b) {
+      const [p, q] = [colour.luminance(a), colour.luminance(b)].sort((x, y) => y - x);
+      return (p + 0.05) / (q + 0.05);
+    },
+    // The ink of the given set (default: the theme's strongest dark and light) that stands out most
+    // on the fill, and whether it reaches the floor (4.5:1 for text by default).
+    ink(fill, inks, floor = 4.5) {
+      const p = palette();
+      const set = inks?.length ? inks : [p.strong, p.page, p.surface];
+      const best = set.map((c) => [c, colour.contrast(c, fill)]).sort((x, y) => y[1] - x[1])[0];
+      return { ink: best[0], ratio: best[1], ok: best[1] >= floor };
+    },
+    toHsl(css) {
+      const [r, g, b] = colour.parse(css).map((x) => x / 255);
+      const max = Math.max(r, g, b);
+      const min = Math.min(r, g, b);
+      const l = (max + min) / 2;
+      const d = max - min;
+      if (!d) return [0, 0, l];
+      const s = d / (1 - Math.abs(2 * l - 1));
+      const h = max === r ? ((g - b) / d) % 6 : max === g ? (b - r) / d + 2 : (r - g) / d + 4;
+      return [(h * 60 + 360) % 360, s, l];
+    },
+    fromHsl(h, s, l) {
+      const k = (n) => (n + h / 30) % 12;
+      const a = s * Math.min(l, 1 - l);
+      const f = (n) => 255 * (l - a * Math.max(-1, Math.min(k(n) - 3, 9 - k(n), 1)));
+      return colour.css([f(0), f(8), f(4)]);
+    },
+  };
 
   // Every visual navigates through here: internal links in the same tab, external ones in a new
   // tab, and Ctrl/Cmd/Shift or the middle button always in a new tab, as a link would.
@@ -494,7 +561,7 @@
       await lib(spec.lib);
       const source = box.dataset.source ? data(box.dataset.source) : null;
       const reflect = (key, value) => frames.get(box)?.reflectors?.get(key)?.(value);
-      const ctx = { palette, reducedMotion, isDark, motion, go, link, escape, hash, t, reflect, id: vizId(box) };
+      const ctx = { palette, colour, reducedMotion, isDark, motion, go, link, escape, hash, t, reflect, id: vizId(box) };
       const handle = (await spec.mount(box, source, ctx)) || {};
       mounted.set(box, handle);
       list(box, handle);
@@ -718,5 +785,5 @@
     };
   }
 
-  window.KorczisHub = { viz, lib, data, palette, reducedMotion, isDark, motion, go, link, escape, hash, base, home, t, tooltip, github: document.documentElement.dataset.github || '', locale: i18n.locale || 'en-GB' };
+  window.KorczisHub = { viz, lib, data, palette, colour, reducedMotion, isDark, motion, go, link, escape, hash, base, home, t, tooltip, github: document.documentElement.dataset.github || '', locale: i18n.locale || 'en-GB' };
 })();

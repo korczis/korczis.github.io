@@ -1,6 +1,7 @@
 {#- One index of the site's own pages, in the page's language, for every script on it (rule
     project.everything-interlinked): glossary terms by id, title and alias; work pages by repository;
-    category pages by key. Visuals and components link through KorczisHub.link(kind, key); no script
+    category pages by key; and the listing pages (projects, work, glossary, repositories) that
+    filters link into. Visuals and components link through KorczisHub.link(kind, key); no script
     builds a site address by hand. Derived from the sections, so a new term or work page is linked
     the moment it exists. -#}
 {%- if lang == config.default_language %}{% set lisfx = "" %}{% else %}{% set lisfx = "." ~ lang %}{% endif -%}
@@ -12,4 +13,6 @@
   {%- for a in p.extra.aliases %}, {{ a | lower | json_encode | safe }}: {{ p.permalink | json_encode | safe }}{% endfor %}{% endfor -%}
 }, "work": {"": null{% for p in liwk.pages %}, {{ p.extra.repo | lower | json_encode | safe }}: {{ p.permalink | json_encode | safe }}{% endfor -%}
 }, "category": {"": null{% for p in lipr.pages %}{% if p.extra.category is defined %}, {{ p.extra.category | json_encode | safe }}: {{ p.permalink | json_encode | safe }}{% endif %}{% endfor -%}
+}, "page": {"projects": {{ lipr.permalink | json_encode | safe }}, "work": {{ liwk.permalink | json_encode | safe }}, "glossary": {{ ligl.permalink | json_encode | safe }}
+  {%- set lirp = get_section(path="repositories/_index" ~ lisfx ~ ".md", metadata_only=true) %}, "repositories": {{ lirp.permalink | json_encode | safe }}
 }}</script>
