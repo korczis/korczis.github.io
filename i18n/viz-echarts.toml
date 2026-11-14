@@ -1,0 +1,197 @@
+# The ECharts visuals (static/js/viz/graph.js, languages.js, skillset.js): their simulator
+# controls, tooltips and list notes.
+
+# --- graph.js: the ecosystem as a force simulation ---------------------------------------------
+[js_graph_repulsion]
+en = "Repulsion"
+cs = "Odpuzování"
+
+[js_graph_edge_length]
+en = "Edge length"
+cs = "Délka hran"
+
+[js_graph_gravity]
+en = "Gravity"
+cs = "Gravitace"
+
+[js_graph_group]
+en = "Group projects"
+cs = "Seskupit projekty"
+
+[js_graph_group_category]
+en = "By category"
+cs = "Podle kategorie"
+
+[js_graph_group_language]
+en = "By primary language"
+cs = "Podle hlavního jazyka"
+
+[js_graph_group_none]
+en = "Not grouped (stack only)"
+cs = "Neseskupovat (jen technologie)"
+
+[js_graph_labels]
+en = "Show every label"
+cs = "Zobrazit všechny popisky"
+
+[js_graph_zoom]
+en = "Zoom"
+cs = "Přiblížení"
+
+[js_graph_reheat]
+en = "Lay out again"
+cs = "Rozložit znovu"
+
+[js_graph_projects]
+en = "Projects"
+cs = "Projekty"
+
+[js_graph_technologies]
+en = "Technologies"
+cs = "Technologie"
+
+[js_graph_supervised]
+en = "supervised by Majordomus"
+cs = "pod dohledem nástroje Majordomus"
+
+[js_graph_uses]
+en = "{a} uses {b}"
+cs = "{a} používá {b}"
+
+[js_graph_supervises]
+en = "{a} supervises {b}"
+cs = "{a} dohlíží na {b}"
+
+[js_graph_member]
+en = "{b} belongs to {a}"
+cs = "{b} patří do skupiny {a}"
+
+[js_graph_links__one]
+en = "{n} connection"
+cs = "{n} spojení"
+
+[js_graph_links__few]
+en = "{n} connections"
+cs = "{n} spojení"
+
+[js_graph_links__other]
+en = "{n} connections"
+cs = "{n} spojení"
+
+[js_graph_used_by__one]
+en = "used by {n} project"
+cs = "používá ho {n} projekt"
+
+[js_graph_used_by__few]
+en = "used by {n} projects"
+cs = "používají ho {n} projekty"
+
+[js_graph_used_by__other]
+en = "used by {n} projects"
+cs = "používá ho {n} projektů"
+
+# --- languages.js: repositories by language over time ------------------------------------------
+[js_languages_metric]
+en = "Measure"
+cs = "Měřit"
+
+[js_languages_metric_repos]
+en = "Repositories"
+cs = "Počet repozitářů"
+
+[js_languages_metric_share]
+en = "Share of all (%)"
+cs = "Podíl ze všech (%)"
+
+[js_languages_year]
+en = "Up to the year"
+cs = "Až do roku"
+
+[js_languages_span]
+en = "Years counted"
+cs = "Započtené roky"
+
+[js_languages_years__one]
+en = "{n} year"
+cs = "{n} rok"
+
+[js_languages_years__few]
+en = "{n} years"
+cs = "{n} roky"
+
+[js_languages_years__other]
+en = "{n} years"
+cs = "{n} let"
+
+[js_languages_top]
+en = "Languages on their own"
+cs = "Samostatně zobrazené jazyky"
+
+[js_languages_total__one]
+en = "{n} repository created in these years"
+cs = "{n} repozitář založený v těchto letech"
+
+[js_languages_total__few]
+en = "{n} repositories created in these years"
+cs = "{n} repozitáře založené v těchto letech"
+
+[js_languages_total__other]
+en = "{n} repositories created in these years"
+cs = "{n} repozitářů založených v těchto letech"
+
+[js_languages_expand]
+en = "Click to show each language on its own"
+cs = "Kliknutím zobrazíte každý jazyk zvlášť"
+
+# --- skillset.js: the sunburst with its own drill-down -----------------------------------------
+[js_skillset_path]
+en = "Drill-down path"
+cs = "Cesta zanořením"
+
+[js_skillset_all]
+en = "All categories"
+cs = "Všechny kategorie"
+
+[js_skillset_drill]
+en = "Click to show its parts"
+cs = "Kliknutím zobrazíte jeho části"
+
+[js_skillset_window]
+en = "Repositories counted"
+cs = "Započtené repozitáře"
+
+[js_skillset_window_recent]
+en = "The {n} most recently active"
+cs = "{n} naposledy aktivních"
+
+[js_skillset_window_months__one]
+en = "Active in the last month"
+cs = "Aktivní za poslední měsíc"
+
+[js_skillset_window_months__few]
+en = "Active in the last {n} months"
+cs = "Aktivní za poslední {n} měsíce"
+
+[js_skillset_window_months__other]
+en = "Active in the last {n} months"
+cs = "Aktivní za posledních {n} měsíců"
+
+[js_skillset_window_all]
+en = "Every original repository"
+cs = "Všechny původní repozitáře"
+
+[js_skillset_depth]
+en = "Rings"
+cs = "Počet prstenců"
+
+[js_skillset_unspecified__one]
+en = "{n} without a detected language"
+cs = "{n} bez rozpoznaného jazyka"
+
+[js_skillset_unspecified__few]
+en = "{n} without a detected language"
+cs = "{n} bez rozpoznaného jazyka"
+
+[js_skillset_unspecified__other]
+en = "{n} without a detected language"
+cs = "{n} bez rozpoznaného jazyka"
