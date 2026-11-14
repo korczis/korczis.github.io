@@ -151,6 +151,8 @@
     if (details.open) fill();
   }
 
+  const idle = (fn) => ('requestIdleCallback' in window ? requestIdleCallback(fn, { timeout: 1500 }) : setTimeout(fn, 1));
+
   function scan() {
     const boxes = document.querySelectorAll('[data-viz]');
     if (!('IntersectionObserver' in window)) {
@@ -162,7 +164,9 @@
         for (const entry of entries) {
           if (!entry.isIntersecting) continue;
           observer.unobserve(entry.target);
-          mount(entry.target);
+          // Mount when the main thread is idle: a visual in the first screen (the p5 hero, the
+          // skills) then loads its library after the page has painted, not in its way.
+          idle(() => mount(entry.target));
         }
       },
       { rootMargin: '300px 0px' },
@@ -202,7 +206,10 @@
   function localise404() {
     const twins = document.querySelectorAll('[data-404-lang]');
     if (!twins.length || !location.pathname.startsWith(`${new URL(base, location.href).pathname}cs/`)) return;
-    twins.forEach((twin) => { twin.hidden = twin.getAttribute('data-404-lang') !== 'cs'; });
+    twins.forEach((twin) => {
+      twin.hidden = twin.getAttribute('data-404-lang') !== 'cs';
+      if (!twin.hidden) document.title = twin.getAttribute('data-404-title');
+    });
     root.lang = 'cs';
   }
 
