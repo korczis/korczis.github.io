@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://korczis.github.io/schemas/cv.schema.json",
+  "title": "data/cv.toml",
+  "description": "Work history, education and spoken languages: facts no repository holds, written by the owner (ADR 0004).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "roles",
+    "education",
+    "languages"
+  ],
+  "$defs": {
+    "date": {
+      "type": "string",
+      "pattern": "^\\d{4}(-(0[1-9]|1[0-2]))?$"
+    },
+    "url": {
+      "type": "string",
+      "pattern": "^https://"
+    },
+    "text": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "properties": {
+    "roles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "title",
+          "organisation",
+          "start"
+        ],
+        "properties": {
+          "title": {
+            "$ref": "#/$defs/text"
+          },
+          "title_cs": {
+            "$ref": "#/$defs/text"
+          },
+          "organisation": {
+            "$ref": "#/$defs/text"
+          },
+          "url": {
+            "$ref": "#/$defs/url"
+          },
+          "start": {
+            "$ref": "#/$defs/date"
+          },
+          "end": {
+            "$ref": "#/$defs/date"
+          },
+          "summary": {
+            "$ref": "#/$defs/text"
+          },
+          "summary_cs": {
+            "$ref": "#/$defs/text"
+          }
+        }
+      }
+    },
+    "education": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "institution",
+          "degree"
+        ],
+        "properties": {
+          "institution": {
+            "$ref": "#/$defs/text"
+          },
+          "url": {
+            "$ref": "#/$defs/url"
+          },
+          "degree": {
+            "$ref": "#/$defs/text"
+          },
+          "degree_cs": {
+            "$ref": "#/$defs/text"
+          },
+          "start": {
+            "$ref": "#/$defs/date"
+          },
+          "end": {
+            "$ref": "#/$defs/date"
+          }
+        }
+      }
+    },
+    "languages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "level"
+        ],
+        "properties": {
+          "name": {
+            "$ref": "#/$defs/text"
+          },
+          "name_cs": {
+            "$ref": "#/$defs/text"
+          },
+          "level": {
+            "enum": [
+              "native",
+              "fluent",
+              "professional",
+              "basic"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1373,3 +1373,47 @@ cs = "Zobrazit jako seznam"
 [glossary_term_pad]
 en = "A term of the glossary."
 cs = "Pojem ze slovníku."
+
+[contact_email]
+en = "Email"
+cs = "E-mail"
+
+[open_to_work]
+en = "Open to work"
+cs = "Přijímá nabídky spolupráce"
+
+[cv_title]
+en = "Curriculum vitae"
+cs = "Životopis"
+
+[cv_experience]
+en = "Experience"
+cs = "Praxe"
+
+[cv_education]
+en = "Education"
+cs = "Vzdělání"
+
+[cv_languages]
+en = "Languages spoken"
+cs = "Jazyky"
+
+[cv_present]
+en = "present"
+cs = "dosud"
+
+[cv_level_native]
+en = "native"
+cs = "rodilý mluvčí"
+
+[cv_level_fluent]
+en = "fluent"
+cs = "plynně"
+
+[cv_level_professional]
+en = "professional"
+cs = "pracovně"
+
+[cv_level_basic]
+en = "basic"
+cs = "základy"

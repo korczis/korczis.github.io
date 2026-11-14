@@ -78,6 +78,32 @@ for (const p of catalogue.projects ?? []) {
 }
 if (index.counts?.own !== (index.repos ?? []).length) fail('data/index.json', 'counts.own does not match the listed repositories');
 
+// The owner's CV facts (ADR 0004) against static/schemas/cv.schema.json: the subset of JSON Schema
+// that schema uses (type, required, additionalProperties: false, pattern, minLength, enum, $ref).
+const cvSchema = JSON.parse(readFileSync(join(ROOT, 'static/schemas/cv.schema.json'), 'utf8'));
+const cv = parse(readFileSync(join(ROOT, 'data/cv.toml'), 'utf8'));
+function conforms(value, schema, at) {
+  if (schema.$ref) return conforms(value, cvSchema.$defs[schema.$ref.split('/').pop()], at);
+  if (schema.enum && !schema.enum.includes(value)) return fail('data/cv.toml', `${at} is not one of ${schema.enum.join(', ')}`);
+  if (schema.type === 'object') {
+    if (typeof value !== 'object' || value === null || Array.isArray(value)) return fail('data/cv.toml', `${at} is not a table`);
+    for (const key of schema.required ?? []) if (!(key in value)) fail('data/cv.toml', `${at} has no ${key}`);
+    for (const [key, item] of Object.entries(value)) {
+      if (!schema.properties?.[key]) fail('data/cv.toml', `${at}.${key} is not in the schema`);
+      else conforms(item, schema.properties[key], `${at}.${key}`);
+    }
+  } else if (schema.type === 'array') {
+    if (!Array.isArray(value)) return fail('data/cv.toml', `${at} is not a list`);
+    value.forEach((item, i) => conforms(item, schema.items, `${at}[${i}]`));
+  } else if (schema.type === 'string') {
+    if (typeof value !== 'string') return fail('data/cv.toml', `${at} is not a string (quote dates: "2020-01")`);
+    if (schema.minLength && value.length < schema.minLength) fail('data/cv.toml', `${at} is empty`);
+    if (schema.pattern && !new RegExp(schema.pattern).test(value)) fail('data/cv.toml', `${at} "${value}" does not match ${schema.pattern}`);
+  }
+}
+conforms(cv, cvSchema, 'cv');
+for (const [i, r] of (cv.roles ?? []).entries()) if (r.end && r.end < r.start) fail('data/cv.toml', `roles[${i}] ends before it starts`);
+
 const ageDays = (Date.now() - Date.parse(snapshot.generated_at)) / 86400000;
 if (findings.length) {
   for (const finding of findings) console.error(`✗ ${finding}`);

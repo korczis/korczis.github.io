@@ -176,6 +176,8 @@ async function majordomus() {
 
 const catalogue = parse(readFileSync(join(ROOT, 'data/projects.toml'), 'utf8'));
 const { user, repos } = profileAndRepos();
+// email and hireable from the public REST profile: GraphQL wants the user:email scope for them.
+const publicProfile = gh(['api', `users/${LOGIN}`]);
 const projects = [];
 for (const entry of catalogue.projects) projects.push(await project(entry));
 
@@ -187,6 +189,9 @@ const snapshot = {
     name: user.name,
     location: user.location,
     created_at: user.createdAt,
+    // The public email of the profile, the site's contact (ADR 0004); null when it is hidden there.
+    email: publicProfile.email || null,
+    hireable: Boolean(publicProfile.hireable),
     followers: user.followers.totalCount,
     public_repos: user.repositories.totalCount,
   },

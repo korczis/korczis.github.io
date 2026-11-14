@@ -1,0 +1,27 @@
+# Facts no repository holds: work history, education and spoken languages (ADR 0004).
+# Written by the owner, never by an agent, and never inferred. /about/ and the JSON-LD Person render
+# what is here and nothing while a list is empty. Shape: static/schemas/cv.schema.json, checked by
+# scripts/check-data.mjs. Dates are "YYYY" or "YYYY-MM"; a role without `end` is current.
+#
+# [[roles]]
+# title = "Software engineer"          # title_cs = "Softwarový inženýr"
+# organisation = "Example s.r.o."
+# url = "https://example.com"          # optional
+# start = "2020-01"
+# end = "2023-06"                      # omit while it lasts
+# summary = "What the work was."       # summary_cs = "Co bylo náplní práce."
+#
+# [[education]]
+# institution = "Brno University of Technology"
+# url = "https://www.vut.cz"           # optional
+# degree = "MSc, Computer Science"     # degree_cs = "Ing., informatika"
+# start = "2005"
+# end = "2010"
+#
+# [[languages]]
+# name = "Czech"                       # name_cs = "čeština"
+# level = "native"                     # native | fluent | professional | basic
+
+roles = []
+education = []
+languages = []

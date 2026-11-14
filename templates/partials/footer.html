@@ -11,6 +11,10 @@
     </p>
   </div>
   <ul class="mt-4 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-gray-900 dark:text-gray-200 md:mt-0">
+    {%- set fgh = load_data(path="data/github.json") %}
+    {%- if fgh.profile.email %}
+    <li><a href="mailto:{{ fgh.profile.email }}" class="hover:underline">{{ trans(key="contact_email", lang=lang) | safe }}</a></li>
+    {%- endif %}
     <li><a href="{{ config.base_url }}{{ lp }}/projects/" class="hover:underline">{{ trans(key="projects_2", lang=lang) | safe }}</a></li>
     <li><a href="{{ config.base_url }}{{ lp }}/stack/" class="hover:underline">{{ trans(key="stack", lang=lang) | safe }}</a></li>
     <li><a href="{{ config.base_url }}{{ lp }}/stack/#data" class="hover:underline">{{ trans(key="data", lang=lang) | safe }}</a></li>

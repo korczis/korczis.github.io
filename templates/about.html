@@ -6,6 +6,7 @@
 {%- set ix = load_data(path="data/index.json") -%}
 {%- set gh = load_data(path="data/github.json") -%}
 {%- set cat = load_data(path="data/projects.toml") -%}
+{%- set cv = load_data(path="data/cv.toml") -%}
 {%- set base = config.base_url ~ lp ~ "/" -%}
 {%- set card = "min-w-0 rounded-lg bg-white p-4 shadow dark:bg-gray-800 sm:p-6" -%}
 {%- set card_title = "text-xl font-bold leading-none text-gray-900 dark:text-white" -%}
@@ -25,6 +26,9 @@
           <h2 id="profile-title" class="text-xl font-bold text-gray-900 dark:text-white">{{ gh.profile.name }}</h2>
           <p class="font-mono text-sm text-primary-700 dark:text-primary-400">{{ gh.profile.login }}</p>
           <p class="text-sm text-gray-600 dark:text-gray-400">{{ trans(key="software_engineer", lang=lang) | safe }} {{ gh.profile.location }}</p>
+          {%- if gh.profile.hireable %}
+          <span class="mt-1 inline-flex items-center rounded bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800 dark:bg-green-900 dark:text-green-300">{{ trans(key="open_to_work", lang=lang) | safe }}</span>
+          {%- endif %}
         </div>
       </div>
       <dl class="tabular space-y-3 text-sm">
@@ -35,6 +39,9 @@
         <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="author_of", lang=lang) | safe }}</dt><dd><a class="{{ link }}" href="{{ config.extra.majordomus_url }}">Majordomus</a></dd></div>
       </dl>
       <div class="mt-5 flex flex-wrap gap-2 border-t border-gray-200 pt-4 dark:border-gray-700">
+        {%- if gh.profile.email %}
+        <a href="mailto:{{ gh.profile.email }}" class="inline-flex items-center rounded-lg bg-primary-700 px-3 py-2 text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">{{ <icon name="mail" class="mr-2 h-4 w-4" /> }}{{ trans(key="contact_email", lang=lang) | safe }}<span class="sr-only">: {{ gh.profile.email }}</span></a>
+        {%- endif %}
         <a href="https://github.com/{{ gh.profile.login }}" class="inline-flex items-center rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700">{{ <icon name="github" class="mr-2 h-4 w-4" /> }}GitHub</a>
         <a href="https://gitlab.com/{{ gh.profile.login }}" class="inline-flex items-center rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700">{{ <icon name="code" class="mr-2 h-4 w-4" /> }}GitLab</a>
         <a href="{{ config.extra.majordomus_url }}" class="inline-flex items-center rounded-lg bg-primary-700 px-3 py-2 text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">{{ <icon name="shield" class="mr-2 h-4 w-4" /> }}majordomus.dev</a>
@@ -60,6 +67,44 @@
         {%- endfor %}
       </div>
     </section>
+
+    {#- Curriculum vitae: the owner's facts from data/cv.toml (ADR 0004), rendered only when present.
+        Flowbite Pro timeline (components/timeline) for roles and education. #}
+    {%- if cv.roles | length > 0 or cv.education | length > 0 or cv.languages | length > 0 %}
+    <section class="{{ card }} xl:col-span-3" aria-labelledby="cv-title">
+      <h2 id="cv-title" class="{{ card_title }}">{{ trans(key="cv_title", lang=lang) | safe }}</h2>
+      <div class="mt-5 grid grid-cols-1 gap-6 lg:grid-cols-3">
+        {%- for group in [["cv_experience", cv.roles], ["cv_education", cv.education]] %}{% if group[1] | length > 0 %}
+        <div class="min-w-0{% if group[0] == "cv_experience" %} lg:col-span-2{% endif %}">
+          <h3 class="mb-4 text-lg font-semibold text-gray-900 dark:text-white">{{ trans(key=group[0], lang=lang) | safe }}</h3>
+          <ol class="relative border-s border-gray-200 dark:border-gray-700">
+            {%- for e in group[1] %}
+            {%- if e.title is defined %}{% set head = e["title" ~ sfx] | default(value=e.title) %}{% set org = e.organisation %}{% set note = e["summary" ~ sfx] | default(value=e.summary | default(value="")) %}
+            {%- else %}{% set head = e["degree" ~ sfx] | default(value=e.degree) %}{% set org = e.institution %}{% set note = "" %}{% endif %}
+            <li class="mb-6 ms-4">
+              <div class="absolute -start-1.5 mt-1.5 h-3 w-3 rounded-full border border-white bg-primary-600 dark:border-gray-900 dark:bg-primary-500"></div>
+              <time class="tabular mb-1 block text-sm font-normal leading-none text-gray-600 dark:text-gray-400">{{ e.start | default(value="") }}{% if e.start is defined %} – {% endif %}{% if e.end is defined %}{{ e.end }}{% elif e.title is defined %}{{ trans(key="cv_present", lang=lang) | safe }}{% endif %}</time>
+              <p class="font-semibold text-gray-900 dark:text-white">{{ head }}</p>
+              <p class="text-sm text-gray-600 dark:text-gray-400">{% if e.url is defined %}<a class="{{ link }}" href="{{ e.url }}">{{ org }}</a>{% else %}{{ org }}{% endif %}</p>
+              {%- if note %}<p class="mt-1 text-sm text-gray-600 dark:text-gray-400">{{ note }}</p>{% endif %}
+            </li>
+            {%- endfor %}
+          </ol>
+        </div>
+        {%- endif %}{% endfor %}
+        {%- if cv.languages | length > 0 %}
+        <div class="min-w-0">
+          <h3 class="mb-4 text-lg font-semibold text-gray-900 dark:text-white">{{ trans(key="cv_languages", lang=lang) | safe }}</h3>
+          <dl class="space-y-2 text-sm">
+            {%- for l in cv.languages %}
+            <div class="flex justify-between gap-4"><dt class="text-gray-900 dark:text-white">{{ l["name" ~ sfx] | default(value=l.name) }}</dt><dd class="text-gray-600 dark:text-gray-400">{{ trans(key="cv_level_" ~ l.level, lang=lang) | safe }}</dd></div>
+            {%- endfor %}
+          </dl>
+        </div>
+        {%- endif %}
+      </div>
+    </section>
+    {%- endif %}
   </div>
 
   {#- Art visuals declared in front matter ([[extra.viz]]), rendered generically. #}
