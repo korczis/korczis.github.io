@@ -1,0 +1,41 @@
+# The shared frame of every visual (static/js/site.js): toolbar, maximized view, simulator panel,
+# and the states the layer writes into a box.
+[js_viz_tools]
+en = "Tools: {title}"
+cs = "Nástroje: {title}"
+
+[js_viz_maximize]
+en = "Maximize"
+cs = "Maximalizovat"
+
+[js_viz_restore]
+en = "Restore"
+cs = "Obnovit velikost"
+
+[js_viz_fullscreen]
+en = "Full screen"
+cs = "Celá obrazovka"
+
+[js_viz_parameters]
+en = "Simulation parameters"
+cs = "Parametry simulace"
+
+[js_viz_play]
+en = "Play"
+cs = "Přehrát"
+
+[js_viz_pause]
+en = "Pause"
+cs = "Pozastavit"
+
+[js_viz_reset]
+en = "Reset"
+cs = "Výchozí stav"
+
+[js_viz_empty]
+en = "Nothing to show yet."
+cs = "Zatím tu není co ukázat."
+
+[js_viz_error]
+en = "This visual could not be drawn. The list below holds the same items."
+cs = "Tuhle vizualizaci se nepodařilo vykreslit. Seznam pod ní obsahuje tytéž položky."

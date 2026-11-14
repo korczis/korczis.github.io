@@ -10,10 +10,11 @@ import { readFileSync, readdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parse } from 'smol-toml';
+import { loadStrings } from './lib/strings.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const LANGS = ['cs'];
-const strings = parse(readFileSync(join(ROOT, 'i18n/strings.toml'), 'utf8'));
+const strings = loadStrings();
 const findings = [];
 const walk = (dir, ext) => readdirSync(dir, { withFileTypes: true }).flatMap((e) => {
   const p = join(dir, e.name);
@@ -34,7 +35,7 @@ for (const file of walk(join(ROOT, 'templates'), '.html')) {
       if (!Object.keys(strings).some((k) => k.startsWith(key))) findings.push(`${rel(file)}: no trans key starts with ${key}`);
       continue;
     }
-    if (!strings[key]) findings.push(`${rel(file)}: trans key ${key} is not in i18n/strings.toml`);
+    if (!strings[key]) findings.push(`${rel(file)}: trans key ${key} is not in i18n/*.toml`);
   }
   let s = raw.replace(/\{#[\s\S]*?#\}/g, '').replace(/<script\b[\s\S]*?<\/script>/g, '').replace(/<svg\b[\s\S]*?<\/svg>/g, '')
     .replace(/\{%[\s\S]*?%\}/g, '\u0000').replace(/\{\{[\s\S]*?\}\}/g, '\u0000');
@@ -44,7 +45,7 @@ for (const file of walk(join(ROOT, 'templates'), '.html')) {
   for (const t of texts) {
     const v = t.replace(/\u0000/g, '').replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
     if (!/[A-Za-z]{2}/.test(v) || VERBATIM.has(v)) continue;
-    findings.push(`${rel(file)}: untranslated text "${v.slice(0, 60)}"; move it to i18n/strings.toml and use trans()`);
+    findings.push(`${rel(file)}: untranslated text "${v.slice(0, 60)}"; move it to i18n/<feature>.toml and use trans()`);
   }
 }
 
@@ -78,7 +79,7 @@ function twins(node, where) {
 for (const file of walk(join(ROOT, 'content'), '.md')) {
   const match = readFileSync(file, 'utf8').match(/^\+\+\+\n([\s\S]*?)\n\+\+\+/);
   for (const v of (match ? parse(match[1]).extra?.viz : null) ?? []) {
-    for (const key of [v.title, v.lead]) if (!strings[key]) findings.push(`${rel(file)}: [[extra.viz]] key ${key} is not in i18n/strings.toml`);
+    for (const key of [v.title, v.lead]) if (!strings[key]) findings.push(`${rel(file)}: [[extra.viz]] key ${key} is not in i18n/*.toml`);
   }
 }
 
@@ -86,7 +87,7 @@ for (const file of walk(join(ROOT, 'content'), '.md')) {
 {
   const site = parse(readFileSync(join(ROOT, 'data/site.toml'), 'utf8'));
   for (const v of [...(site.taxonomy?.list_viz ?? []), ...(site.taxonomy?.single_viz ?? [])]) {
-    for (const key of [v.title, v.lead]) if (!strings[key]) findings.push(`data/site.toml: taxonomy visual key ${key} is not in i18n/strings.toml`);
+    for (const key of [v.title, v.lead]) if (!strings[key]) findings.push(`data/site.toml: taxonomy visual key ${key} is not in i18n/*.toml`);
   }
 }
 
