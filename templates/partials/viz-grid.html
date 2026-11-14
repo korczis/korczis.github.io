@@ -23,7 +23,9 @@
     <div class="viz-box {{ h }}{% if v.tone is defined and v.tone == "night" %} overflow-hidden rounded-lg bg-gray-950 ring-1 ring-gray-800{% endif %}" data-viz="{{ v.kind }}" data-source="{{ id }}-data" role="img" aria-label="{{ trans(key=v.lead, lang=lang) }}">{% if v.kind == "graph" or v.kind == "skillset" %}<div data-canvas class="h-full w-full"></div>{% endif %}</div>
     {%- include "partials/viz-list.html" %}
     <script type="application/json" id="{{ id }}-data">
-      {%- if v.source == "github.contributions" %}{{ vgh.contributions | json_encode | safe }}
+      {%- if v.source == "github.contributions" %}{"calendar": {{ vgh.contributions | json_encode | safe }},
+       "day_url": {% if config.extra.github %}{{ ("https://github.com/" ~ config.extra.github ~ "?tab=overview&from={date}&to={date}") | json_encode | safe }}{% else %}null{% endif %},
+       "work": [{% for r in vrc.repos %}{"repo": {{ r.name | json_encode | safe }}, "at": [{% if r.commits is defined %}{% for c in r.commits %}{{ c.at | truncate(length=10, end="") | json_encode | safe }}{% if not loop.last %}, {% endif %}{% endfor %}{% endif %}]}{% if not loop.last %}, {% endif %}{% endfor %}]}
       {%- elif v.source == "github.languages" %}{{ vgh.languages | json_encode | safe }}
       {%- elif v.source == "index.languages" %}{{ vix.languages | json_encode | safe }}
       {%- elif v.source == "index.years" %}{"years": {{ vix.languages_by_year | json_encode | safe }}, "languages": {{ vix.languages | json_encode | safe }}}
