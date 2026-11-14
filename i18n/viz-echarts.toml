@@ -89,3 +89,56 @@ cs = "používají ho {n} projekty"
 [js_graph_used_by__other]
 en = "used by {n} projects"
 cs = "používá ho {n} projektů"
+
+# --- languages.js: repositories by language over time ------------------------------------------
+[js_languages_metric]
+en = "Measure"
+cs = "Měřit"
+
+[js_languages_metric_repos]
+en = "Repositories"
+cs = "Počet repozitářů"
+
+[js_languages_metric_share]
+en = "Share of all (%)"
+cs = "Podíl ze všech (%)"
+
+[js_languages_year]
+en = "Up to the year"
+cs = "Až do roku"
+
+[js_languages_span]
+en = "Years counted"
+cs = "Započtené roky"
+
+[js_languages_years__one]
+en = "{n} year"
+cs = "{n} rok"
+
+[js_languages_years__few]
+en = "{n} years"
+cs = "{n} roky"
+
+[js_languages_years__other]
+en = "{n} years"
+cs = "{n} let"
+
+[js_languages_top]
+en = "Languages on their own"
+cs = "Samostatně zobrazené jazyky"
+
+[js_languages_total__one]
+en = "{n} repository created in these years"
+cs = "{n} repozitář založený v těchto letech"
+
+[js_languages_total__few]
+en = "{n} repositories created in these years"
+cs = "{n} repozitáře založené v těchto letech"
+
+[js_languages_total__other]
+en = "{n} repositories created in these years"
+cs = "{n} repozitářů založených v těchto letech"
+
+[js_languages_expand]
+en = "Click to show each language on its own"
+cs = "Kliknutím zobrazíte každý jazyk zvlášť"

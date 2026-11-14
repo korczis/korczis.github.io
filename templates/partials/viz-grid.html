@@ -25,7 +25,8 @@
     <script type="application/json" id="{{ id }}-data">
       {%- if v.source == "github.contributions" %}{{ vgh.contributions | json_encode | safe }}
       {%- elif v.source == "github.languages" %}{{ vgh.languages | json_encode | safe }}
-      {%- elif v.source == "index.languages" %}{{ vix.languages | json_encode | safe }}
+      {%- elif v.source == "index.languages" %}{#- [{name, repos, years: {"2012": n, ...}}]: each language with the repositories created in every year (index.languages_by_year), so a visual can scrub time; name and repos stay as they were. #}[
+       {%- for l in vix.languages %}{"name": {{ l.name | json_encode | safe }}, "repos": {{ l.repos }}, "years": { {%- for y, m in vix.languages_by_year %}{{ y | json_encode | safe }}: {% if m[l.name] is defined %}{{ m[l.name] }}{% else %}0{% endif %}{% if not loop.last %}, {% endif %}{% endfor -%} }}{% if not loop.last %}, {% endif %}{% endfor %}]
       {%- elif v.source == "index.years" %}{"years": {{ vix.languages_by_year | json_encode | safe }}, "languages": {{ vix.languages | json_encode | safe }}}
       {%- elif v.source == "index.repos" %}{"focus": {% if vfm.extra.category is defined %}{{ vfm.extra.category | json_encode | safe }}{% else %}null{% endif %}, "categories": { {%- for key, c in vcat.categories %}{{ key | json_encode | safe }}: {{ c["name" ~ vsfx] | json_encode | safe }}{% if not loop.last %}, {% endif %}{% endfor -%} },
        "recent": [{% for r in vrc.repos %}{{ r.name | json_encode | safe }}{% if not loop.last %}, {% endif %}{% endfor %}],
