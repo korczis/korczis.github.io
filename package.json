@@ -23,7 +23,7 @@
     "llms": "node scripts/build-llms.mjs",
     "build": "npm run --silent assets && zola build",
     "check": "node scripts/gates.mjs run --ci",
-    "dev": "npm run --silent assets && zola serve",
+    "dev": "node scripts/dev.mjs",
     "test:audit": "node scripts/audit-ui.mjs",
     "verify": "scripts/verify-all.sh",
     "gates": "node scripts/gates.mjs list",
