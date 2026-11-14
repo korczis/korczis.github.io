@@ -10,6 +10,9 @@ import { dirname, join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parse } from 'smol-toml';
 import { loadGlossary } from './lib/terms.mjs';
+import { cliArgs } from './lib/cli.mjs';
+
+cliArgs();
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const CONTENT = join(ROOT, 'content');

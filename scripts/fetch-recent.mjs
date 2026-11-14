@@ -12,6 +12,9 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { promisify } from 'node:util';
 import { GitLabBudgetError, gitlabClient } from './lib/gitlab.mjs';
+import { cliArgs } from './lib/cli.mjs';
+
+cliArgs();
 
 const run = promisify(execFile);
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');

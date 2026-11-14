@@ -6,6 +6,9 @@
 import { readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { cliArgs } from './lib/cli.mjs';
+
+cliArgs();
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const MAX_HOURS = Number(process.env.MAX_HOURS) || 24;
