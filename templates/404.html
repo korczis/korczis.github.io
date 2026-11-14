@@ -9,7 +9,8 @@
       {#- Pages serves one 404.html for every language; site.js shows the Czech twin under /cs/. #}
       {%- for l in ["en", "cs"] %}
       {%- set lp = "" %}{% if l != config.default_language %}{% set lp = "/" ~ l %}{% endif %}
-      <div data-404-lang="{{ l }}" lang="{{ l }}"{% if l != config.default_language %} hidden{% endif %}>
+      {%- set site = config.title %}{% if l == "cs" %}{% set site = config.extra.author_native %}{% endif %}
+      <div data-404-lang="{{ l }}" data-404-title="{{ trans(key="page_not_found", lang=l) }} · {{ site }}" lang="{{ l }}"{% if l != config.default_language %} hidden{% endif %}>
         <p class="mb-4 text-3xl font-bold tracking-tight text-gray-900 dark:text-white md:text-4xl">{{ trans(key="nothing_here", lang=l) | safe }}</p>
         <p class="mb-8 text-lg text-gray-600 dark:text-gray-400">{{ trans(key="this_page_does_not_exist_or", lang=l) | safe }} <span class="font-mono">korczis.github.io/oscilla/</span>.</p>
         <div class="flex flex-col justify-center gap-4 sm:flex-row">
