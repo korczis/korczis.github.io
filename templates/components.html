@@ -229,19 +229,20 @@
 </article>
 {% endcomponent %}
 
-{#- Flowbite Pro page header, Variant A (admin dashboard 1.1.1, section 5): breadcrumb, title, lead. -#}
+{#- Flowbite Pro page header, Variant A (admin dashboard 1.1.1, section 5): the Pro breadcrumb (home
+    icon, chevron separators, the current page last), title, lead. -#}
 {% component page_header(title: string, lang: string, lead: string = "", parent: string = "", parent_url: string = "", icon: string = "") %}
 {#- get_url gives the home without its trailing slash; the site's own links all carry one. #}
 {%- set home = get_url(path="@/_index.md", lang=lang) %}{% if not home is ending_with(pat="/") %}{% set home = home ~ "/" %}{% endif %}
 <div class="block items-center justify-between border-b border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800 sm:flex lg:mt-1.5">
   <div class="mb-1 w-full">
     <nav class="mb-5 flex print:hidden" aria-label="{{ trans(key="breadcrumb", lang=lang) }}">
-      <ol class="inline-flex items-center space-x-1 text-sm font-medium md:space-x-2">
-        <li class="inline-flex items-center"><a href="{{ home }}" class="inline-flex items-center text-gray-700 hover:text-primary-700 dark:text-gray-300 dark:hover:text-white">{{ <icon name="globe" class="mr-2.5 h-4 w-4" /> }}{{ trans(key="overview", lang=lang) | safe }}</a></li>
+      <ol class="inline-flex flex-wrap items-center space-x-1 text-sm font-medium md:space-x-2">
+        <li class="inline-flex items-center"><a href="{{ home }}" class="inline-flex items-center text-gray-700 hover:text-primary-700 dark:text-gray-300 dark:hover:text-white">{{ <icon name="home" class="mr-2.5 h-5 w-5" /> }}{{ trans(key="overview", lang=lang) | safe }}</a></li>
         {%- if parent %}
-        <li><div class="flex items-center"><span class="text-gray-500" aria-hidden="true">/</span><a href="{{ parent_url }}" class="ml-1 text-gray-700 hover:text-primary-700 dark:text-gray-300 dark:hover:text-white md:ml-2">{{ parent }}</a></div></li>
+        <li><div class="flex items-center">{{ <icon name="chevron-right" class="h-4 w-4 text-gray-500 dark:text-gray-400" /> }}<a href="{{ parent_url }}" class="ml-1 text-gray-700 hover:text-primary-700 dark:text-gray-300 dark:hover:text-white md:ml-2">{{ parent }}</a></div></li>
         {%- endif %}
-        <li aria-current="page"><div class="flex items-center"><span class="text-gray-500" aria-hidden="true">/</span><span class="ml-1 text-gray-600 dark:text-gray-400 md:ml-2">{{ title }}</span></div></li>
+        <li aria-current="page"><div class="flex items-center">{{ <icon name="chevron-right" class="h-4 w-4 text-gray-500 dark:text-gray-400" /> }}<span class="ml-1 text-gray-600 dark:text-gray-400 md:ml-2">{{ title }}</span></div></li>
       </ol>
     </nav>
     <div class="flex items-start gap-4">
