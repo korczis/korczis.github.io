@@ -12,9 +12,8 @@
 // with a halo where no ink reaches it).
 KorczisHub.viz('skillset', {
   lib: 'echarts',
-  mount(box, source, { palette, motion, go, link, escape, t }) {
+  mount(box, source, { palette, colour, motion, go, link, escape, t }) {
     const names = source.names || {};
-    const home = KorczisHub.home;
     const UNSPECIFIED = 'Unspecified';
     const repos = Array.isArray(source.repos)
       ? source.repos.map(([name, category, language, pushed]) => ({ name, category, language: language || UNSPECIFIED, pushed }))
@@ -23,31 +22,14 @@ KorczisHub.viz('skillset', {
     const size = source.size || repos?.length || 0;
     const end = new Date(source.to || repos?.[0]?.pushed || Date.now());
 
-    // --- Contrast (WCAG 2.1 relative luminance), for the label ink of every segment. -------------
-    const rgb = (text) => (String(text).match(/\d+(\.\d+)?/g) || [0, 0, 0]).slice(0, 3).map(Number);
-    const lum = (c) => {
-      const v = rgb(c).map((x) => {
-        const s = x / 255;
-        return s <= 0.04045 ? s / 12.92 : ((s + 0.055) / 1.055) ** 2.4;
-      });
-      return 0.2126 * v[0] + 0.7152 * v[1] + 0.0722 * v[2];
-    };
-    const contrast = (a, b) => {
-      const [p, q] = [lum(a), lum(b)].sort((x, y) => y - x);
-      return (p + 0.05) / (q + 0.05);
-    };
-    const mix = (a, b, share) => {
-      const [p, q] = [rgb(a), rgb(b)];
-      return `rgb(${p.map((x, i) => Math.round(x + (q[i] - x) * share)).join(', ')})`;
-    };
-    // The theme's inks (one dark, one light in either theme); the one that stands out most on the
-    // fill, and a halo of the other when even that one stays under 4.5:1.
+    // The label ink of a segment (ctx.colour.ink over the theme's inks, one dark and one light in
+    // either theme): the one that stands out most on the fill, and a halo of the ink that stands out
+    // most on that one when even it stays under 4.5:1.
     const ink = (c, fill) => {
       const inks = [c.strong, c.surface, c.page];
-      const best = inks.reduce((a, b) => (contrast(b, fill) > contrast(a, fill) ? b : a));
-      if (contrast(best, fill) >= 4.5) return { color: best, textBorderWidth: 0 };
-      const halo = inks.reduce((a, b) => (contrast(b, best) > contrast(a, best) ? b : a));
-      return { color: best, textBorderColor: halo, textBorderWidth: 3 };
+      const best = colour.ink(fill, inks);
+      if (best.ok) return { color: best.ink, textBorderWidth: 0 };
+      return { color: best.ink, textBorderColor: colour.ink(best.ink, inks).ink, textBorderWidth: 3 };
     };
 
     // --- The model: a tree for the chosen window. -------------------------------------------------
@@ -103,9 +85,9 @@ KorczisHub.viz('skillset', {
     }
 
     const pageOf = (n) => {
-      if (n.kind === 'category') return link('category', n.key) || `${home}repositories/?category=${encodeURIComponent(n.key)}`;
-      if (n.kind === 'language') return link('term', n.lang) || `${home}repositories/?category=${encodeURIComponent(n.key)}&language=${encodeURIComponent(n.lang)}`;
-      return link('work', n.repo) || `${home}repositories/?q=${encodeURIComponent(n.repo)}`;
+      if (n.kind === 'category') return link('category', n.key) ?? link('filter', { page: 'repositories', category: n.key });
+      if (n.kind === 'language') return link('term', n.lang) ?? link('filter', { page: 'repositories', category: n.key, language: n.lang });
+      return link('repo', n.repo);
     };
 
     const idOf = (n) => (n.kind === 'category' ? n.key : n.kind === 'language' ? n.lang : n.repo);
@@ -236,8 +218,6 @@ KorczisHub.viz('skillset', {
       },
     };
 
-    // The option comes last: scripts/check-viz-layer.mjs reads every `type:` after `series:` as a
-    // series type, so the controls (type: 'range', ...) must stand above it.
     function option(root) {
       const c = palette();
       const m = motion();
@@ -250,7 +230,7 @@ KorczisHub.viz('skillset', {
       const outer = 96;
       const width = (outer - inner) / shown;
       const paint = (nodes, depth, parent) => nodes.map((n, i) => {
-        const fill = depth === 0 ? ramp[i % ramp.length] : mix(parent, c.surface, Math.min(0.6, 0.16 + 0.1 * depth + 0.08 * (i % 3)));
+        const fill = depth === 0 ? ramp[i % ramp.length] : colour.mix(parent, c.surface, Math.min(0.6, 0.16 + 0.1 * depth + 0.08 * (i % 3)));
         return {
           name: n.name,
           value: n.value,
