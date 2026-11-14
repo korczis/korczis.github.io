@@ -93,15 +93,6 @@ KorczisHub.viz('atlas', {
     let radius = null;
     let hoveredId = null;
 
-    // Night-sky ink: palette().night (the --hub-night-* tokens) once the layer exposes it; until
-    // then the theme tokens that stay light on the night sky in both themes.
-    const nightOf = (c) => c.night ?? {
-      ink: c.dark ? c.strong : c.surface,
-      text: c.dark ? c.strong : c.ramp[0],
-      line: c.dark ? c.muted : c.grid,
-      shadow: c.dark ? c.page : c.strong,
-    };
-
     const visible = (n) => n.id === focus || ((model.kind === 'all' || n.kind === model.kind)
       && (!focus || model.depth >= DEPTH_ALL || (hops.get(n.id) ?? Infinity) <= model.depth));
     const span = () => Math.min(width, height);
@@ -131,7 +122,8 @@ KorczisHub.viz('atlas', {
     // Colours and sizes: on mount, on a theme change, on a resize; never a new layout.
     const paint = () => {
       const c = palette();
-      ink = { ...nightOf(c), ramp: d3.interpolateRgbBasis(c.art), font: c.font, alpha: c.alpha };
+      // The night sky is dark in both themes: its inks are the --hub-night-* tokens.
+      ink = { ...c.night, ramp: d3.interpolateRgbBasis(c.art), font: c.font, alpha: c.alpha };
       radius = d3.scaleSqrt().domain([0, d3.max(nodes, (n) => n.n) || 1]).range([3, Math.max(6, span() / 22)]);
       nodeSel.select('circle')
         .attr('r', (d) => radius(d.n) + (d.id === focus ? 4 : 0))
@@ -350,7 +342,7 @@ KorczisHub.viz('atlas', {
       destroy() {
         simulation.stop();
         svg.on('.zoom', null);
-        tip.hide();
+        tip.remove();
         svg.remove();
       },
     };

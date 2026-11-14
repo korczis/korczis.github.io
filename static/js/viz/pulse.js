@@ -16,7 +16,7 @@
 // own pulse); a lane's name opens its work or category page.
 KorczisHub.viz('pulse', {
   lib: 'd3',
-  mount(box, source, { palette, reducedMotion, motion, go, link, escape, hash, t }) {
+  mount(box, source, { palette, colour, reducedMotion, motion, go, link, escape, hash, t }) {
     const embedded = !source ? [] : source.groups
       ? source.groups.flatMap((grp) => (grp.commits || []).map((c) => ({ ...c, repo: grp.repo, lane: grp.lane, category: grp.category })))
       : source.beats || [];
@@ -174,23 +174,17 @@ KorczisHub.viz('pulse', {
       return [end - s * 1.03, end + s * 0.03];
     };
 
-    // Night-sky ink: palette().night and palette().live (the --hub-night-* and --hub-live tokens)
-    // once the layer exposes them; until then the theme tokens that stay light on the night sky.
-    const nightOf = (c) => c.night ?? {
-      ink: c.dark ? c.strong : c.surface,
-      text: c.dark ? c.text : c.grid,
-      muted: c.muted,
-    };
-
     const paint = () => {
       const c = palette();
-      const n = nightOf(c);
+      // The night sky is dark in both themes: its inks are the --hub-night-* tokens, the live dot
+      // --hub-live.
+      const n = c.night;
       ink = {
         ramp: d3.interpolateRgbBasis(c.art),
         text: c.alpha(n.text, 0.85),
         faint: c.alpha(n.muted, 0.7),
         ink: n.ink,
-        live: c.live ?? c.glow,
+        live: c.live,
         font: c.font,
         alpha: c.alpha,
       };
@@ -223,7 +217,8 @@ KorczisHub.viz('pulse', {
         key,
         category: category.get(key),
         y: 52 + (keys.length === 1 ? 0.5 : i / (keys.length - 1)) * (base - 100),
-        colour: d3.color(ink.ramp(keys.length === 1 ? 0.5 : i / (keys.length - 1))),
+        // [r, g, b], parsed once per layout: a frame only adds the alpha (colour.css).
+        colour: colour.parse(ink.ramp(keys.length === 1 ? 0.5 : i / (keys.length - 1))),
       }));
       const lane = new Map(lanes.map((l) => [l.key, l]));
       points = shown.map((b) => {
@@ -232,7 +227,7 @@ KorczisHub.viz('pulse', {
       }).sort((a, b) => a.px - b.px);
       points.x = x;
       // The trace and its colour, sampled every 2 px once per layout, not once per frame.
-      const mid = d3.color(ink.ramp(0.5));
+      const mid = colour.parse(ink.ramp(0.5));
       trace = [];
       for (let px = 0; px <= width; px += 2) {
         const near = points.find((p) => Math.abs(p.px - px) < 24);
@@ -255,7 +250,7 @@ KorczisHub.viz('pulse', {
 
     // The sweep's pace: one pass in seven seconds at 1×; a pace the visitor sets, not an animation.
     const SWEEP_MS = 7000;
-    const rgba = (c, a) => `rgba(${c.r}, ${c.g}, ${c.b}, ${a})`;
+    const tint = (rgb, a) => colour.css(rgb, a);
 
     const draw = (time = performance.now()) => {
       if (!width || !ink || !points.x) return;
@@ -285,11 +280,11 @@ KorczisHub.viz('pulse', {
       g.textAlign = 'left';
       laneLabels = [];
       for (const l of lanes) {
-        g.fillStyle = rgba(l.colour, 0.1);
+        g.fillStyle = tint(l.colour, 0.1);
         g.fillRect(16, l.y, width - 32, 1);
         if (labelled && width > 480) {
           const on = hoveredLane === l;
-          g.fillStyle = rgba(l.colour, on ? 1 : 0.75);
+          g.fillStyle = tint(l.colour, on ? 1 : 0.75);
           g.fillText(l.key, 16, l.y - 4);
           const w = g.measureText(l.key).width;
           if (on) g.fillRect(16, l.y - 2, w, 1);
@@ -306,7 +301,7 @@ KorczisHub.viz('pulse', {
         g.lineWidth = lineWidth;
         for (let i = 1; i < trace.length; i += 1) {
           const { px, y, c } = trace[i];
-          g.strokeStyle = rgba(c, a * glowAt(px));
+          g.strokeStyle = tint(c, a * glowAt(px));
           g.beginPath();
           g.moveTo(trace[i - 1].px, trace[i - 1].y);
           g.lineTo(px, y);
@@ -339,18 +334,18 @@ KorczisHub.viz('pulse', {
         // A soft halo per orb while there are few; a dense sky (the work list) keeps it for the hovered.
         if (points.length <= 160 || hovered === p) {
           const halo = g.createRadialGradient(p.px, y, 0, p.px, y, r * 4);
-          halo.addColorStop(0, rgba(p.colour, hovered === p ? 0.5 : 0.22));
-          halo.addColorStop(1, rgba(p.colour, 0));
+          halo.addColorStop(0, tint(p.colour, hovered === p ? 0.5 : 0.22));
+          halo.addColorStop(1, tint(p.colour, 0));
           g.fillStyle = halo;
           g.beginPath();
           g.arc(p.px, y, r * 4, 0, Math.PI * 2);
           g.fill();
         }
-        g.fillStyle = rgba(p.colour, 0.95);
+        g.fillStyle = tint(p.colour, 0.95);
         g.beginPath();
         g.arc(p.px, y, r, 0, Math.PI * 2);
         g.fill();
-        g.strokeStyle = rgba(p.colour, hovered === p ? 0.6 : 0.12);
+        g.strokeStyle = tint(p.colour, hovered === p ? 0.6 : 0.12);
         g.lineWidth = 1;
         g.beginPath();
         g.moveTo(p.px, y + r);
@@ -592,7 +587,7 @@ KorczisHub.viz('pulse', {
         canvas.removeEventListener('pointerleave', onLeave);
         canvas.removeEventListener('click', onClick);
         canvas.removeEventListener('auxclick', onClick);
-        tip.hide();
+        tip.remove();
         canvas.remove();
       },
     };
