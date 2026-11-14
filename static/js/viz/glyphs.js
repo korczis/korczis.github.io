@@ -19,6 +19,9 @@ KorczisHub.viz('glyphs', {
     let colours = palette();
     let visible = true;
     let instance = null;
+    // p5 2.x starts asynchronously: until setup has run there is no renderer, and p.clear() throws.
+    // A resize or a theme change before that waits for setup, which draws the current state anyway.
+    let ready = false;
 
     const sketch = (p) => {
       let glyphs = [];
@@ -66,6 +69,12 @@ KorczisHub.viz('glyphs', {
         layout();
         frame();
         if (reducedMotion()) p.noLoop();
+        ready = true;
+        // Right after setup p5 sets touch-action: none on every canvas in the document, not only its
+        // own; a simulator's canvas that already exists (a ?viz= deep link) would stop scrolling the
+        // page under a finger. Put back what the others had, once p5 is done with them.
+        const others = [...document.getElementsByTagName('canvas')].filter((c) => !box.contains(c)).map((c) => [c, c.style.touchAction]);
+        setTimeout(() => others.forEach(([c, value]) => { c.style.touchAction = value; }), 0);
       };
 
       p.draw = () => {
@@ -75,6 +84,7 @@ KorczisHub.viz('glyphs', {
       };
 
       p.redrawStill = () => {
+        if (!ready) return;
         layout();
         frame();
       };
@@ -82,12 +92,6 @@ KorczisHub.viz('glyphs', {
 
     instance = new p5(sketch, box);
 
-    const resize = new ResizeObserver(() => {
-      if (!instance || !box.clientWidth) return;
-      instance.resizeCanvas(box.clientWidth, box.clientHeight);
-      instance.redrawStill();
-    });
-    resize.observe(box);
 
     const seen = new IntersectionObserver(([entry]) => {
       visible = entry.isIntersecting && !document.hidden;
@@ -102,8 +106,13 @@ KorczisHub.viz('glyphs', {
         colours = palette();
         instance?.redrawStill();
       },
+      // The layer observes the box and calls this when its size changes.
+      resize() {
+        if (!ready || !instance || !box.clientWidth) return;
+        instance.resizeCanvas(box.clientWidth, box.clientHeight);
+        instance.redrawStill();
+      },
       destroy() {
-        resize.disconnect();
         seen.disconnect();
         instance?.remove();
       },
