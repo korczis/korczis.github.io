@@ -3,6 +3,10 @@
 // into zola.toml, between generated markers: [translations] for the default language and
 // [languages.<code>.translations] for every other. Zola's trans() reads them at build time.
 //
+// It also writes [extra.client] keys: every key the browser needs (js_* by convention,
+// or any key marked client = true), which templates/base.html embeds for KorczisHub.t(), so no
+// template keeps a hand list of them.
+//
 // usage: node scripts/build-i18n.mjs           rewrite the generated block of zola.toml
 //        node scripts/build-i18n.mjs --check   exit 1 if it is stale or a key misses a language
 import { readFileSync, writeFileSync } from 'node:fs';
@@ -29,6 +33,8 @@ for (const code of languages) {
   block.push('', code === parsed.default_language ? '[translations]' : `[languages.${code}.translations]`);
   for (const [key, values] of Object.entries(strings)) block.push(`${key} = ${q(values[code] ?? '')}`);
 }
+const client = Object.entries(strings).filter(([key, values]) => /^js_/.test(key) || values.client === true).map(([key]) => key);
+block.push('', '[extra.client]', `keys = [${client.map(q).join(', ')}]`);
 block.push(END);
 const text = `${config.includes(BEGIN) ? config.slice(0, config.indexOf(BEGIN)).trimEnd() : config.trimEnd()}\n\n${block.join('\n')}\n`;
 
@@ -37,7 +43,7 @@ if (missing.length) {
   process.exit(1);
 }
 if (process.argv.includes('--check')) {
-  if (config !== text) { console.error('zola.toml translations are stale: run npm run i18n'); process.exit(1); }
+  if (config !== text) { console.error('✗ zola.toml translations are stale: run npm run i18n'); process.exit(1); }
   console.log(`i18n: ${Object.keys(strings).length} keys in ${languages.join(', ')}, current`);
 } else {
   writeFileSync(CONFIG, text);

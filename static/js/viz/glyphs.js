@@ -3,6 +3,9 @@
 // Pauses off-screen and in a hidden tab; draws one still frame under prefers-reduced-motion.
 KorczisHub.viz('glyphs', {
   lib: 'p5',
+  // Declared static (rule project.viz-ergonomics): the decorative hero behind the page header,
+  // aria-hidden and pointer-events: none; there is nothing to maximize or drive.
+  static: 'decorative hero background, aria-hidden',
   mount(box, _source, { palette, reducedMotion }) {
     const CELL = 30;
     const FPS = 20;

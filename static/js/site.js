@@ -100,22 +100,363 @@
     };
   }
 
+  // --- Shared helpers every visual uses instead of its own copy (rule project.viz-ergonomics). ----
+  // One motion config (the owner's ECharts standard: 850 ms cubicOut in, 380 ms updates, a stagger
+  // capped at 420 ms); all of it is zero under prefers-reduced-motion.
+  const MOTION = { enter: 850, update: 380, hover: 150, stagger: 14, maxDelay: 420, easing: 'cubicOut' };
+  const motion = () => (reducedMotion() ? { ...MOTION, enter: 0, update: 0, hover: 0, stagger: 0, maxDelay: 0 } : MOTION);
+
+  const ESCAPES = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };
+  const escape = (text) => String(text ?? '').replace(/[&<>"']/g, (c) => ESCAPES[c]);
+
+  // FNV-1a: a stable 32-bit hash, so a seeded layout or colour is the same on every visit.
+  function hash(text) {
+    let h = 0x811c9dc5;
+    for (let i = 0; i < text.length; i += 1) h = Math.imul(h ^ text.charCodeAt(i), 0x01000193);
+    return h >>> 0;
+  }
+
+  // Every visual navigates through here: internal links in the same tab, external ones in a new
+  // tab, and Ctrl/Cmd/Shift or the middle button always in a new tab, as a link would.
+  function go(url, event) {
+    if (!url) return;
+    const target = new URL(url, location.href);
+    const external = target.origin !== location.origin;
+    const newTab = external || (event && (event.ctrlKey || event.metaKey || event.shiftKey || event.button === 1));
+    if (newTab) window.open(target.href, '_blank', 'noopener');
+    else location.assign(target.href);
+  }
+
+  // --- The frame: maximize, simulator controls and URL state, once for every visual. -------------
+  // A visual box is role="img", which may hold no controls, so the layer wraps it in a frame and
+  // pins the toolbar over its top-right corner (absolute: nothing shifts). handle.controls()
+  // declares the simulator's parameters; the layer renders them as Flowbite controls and keeps
+  // their values in the query string (?<id>.<key>=value), so a configured simulation is a link;
+  // ?viz=<id> opens the visual maximized.
+  const ICON = {
+    max: '<path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/>',
+    min: '<path d="M9 4v5H4M15 4v5h5M9 20v-5H4M15 20v-5h5"/>',
+    sliders: '<path d="M4 6h9M17 6h3M4 12h3M11 12h9M4 18h11M19 18h1"/><circle cx="15" cy="6" r="2"/><circle cx="9" cy="12" r="2"/><circle cx="17" cy="18" r="2"/>',
+    play: '<path d="M7 5v14l12-7z"/>',
+    pause: '<path d="M8 5v14M16 5v14"/>',
+    screen: '<path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2"/>',
+    reset: '<path d="M4 4v6h6M20 20v-6h-6M5 15a7 7 0 0 0 12 3M19 9A7 7 0 0 0 7 6"/>',
+  };
+  const icon = (name) => `<svg class="h-5 w-5" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">${ICON[name]}</svg>`;
+  const TOOL_BUTTON = 'inline-flex items-center justify-center rounded-lg bg-white/90 p-2 text-gray-600 shadow-sm ring-1 ring-gray-200 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:bg-gray-800/90 dark:text-gray-300 dark:ring-gray-700 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700';
+  const RANGE = 'h-2 w-full cursor-pointer appearance-none rounded-lg bg-gray-200 accent-primary-600 dark:bg-gray-600';
+  const SELECT = 'block w-full rounded-lg border border-gray-300 bg-gray-50 p-2 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-500 dark:bg-gray-600 dark:text-white dark:focus:border-primary-500 dark:focus:ring-primary-500';
+  const LABEL = 'mb-1 flex items-baseline justify-between gap-2 text-sm font-medium text-gray-900 dark:text-white';
+  const ACTION = 'inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-500 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600';
+
+  const vizId = (box) => box.id || box.dataset.source?.replace(/-data$/, '') || box.dataset.viz;
+  const frames = new Map();
+
+  let writeTimer = 0;
+  const pending = new Map();
+  function writeParam(name, value) {
+    pending.set(name, value);
+    clearTimeout(writeTimer);
+    // Browsers throttle replaceState; a dragged range writes once it rests.
+    writeTimer = setTimeout(() => {
+      const url = new URL(location.href);
+      for (const [k, v] of pending) {
+        if (v === null || v === undefined || v === '') url.searchParams.delete(k);
+        else url.searchParams.set(k, String(v));
+      }
+      pending.clear();
+      history.replaceState(history.state, '', url);
+    }, 150);
+  }
+  const readParam = (name) => new URLSearchParams(location.search).get(name);
+
+  function button(name, label, onClick) {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = TOOL_BUTTON;
+    b.dataset.vizTool = name;
+    b.title = label;
+    b.setAttribute('aria-label', label);
+    b.innerHTML = icon(name);
+    b.addEventListener('click', onClick);
+    return b;
+  }
+
+  function frame(box) {
+    if (frames.has(box)) return frames.get(box);
+    const spec = registry.get(box.dataset.viz);
+    if (!spec || spec.static) return null;
+    const id = vizId(box);
+    const wrap = document.createElement('div');
+    wrap.className = 'viz-frame';
+    wrap.dataset.vizFrame = id;
+    box.before(wrap);
+    // The card's own heading names the visual in the maximized view.
+    const title = box.closest('section')?.querySelector('h2')?.textContent?.trim() || box.getAttribute('aria-label') || '';
+    const cap = document.createElement('p');
+    cap.className = 'viz-cap';
+    cap.textContent = title;
+    const bar = document.createElement('div');
+    bar.className = 'viz-bar';
+    bar.setAttribute('role', 'toolbar');
+    bar.setAttribute('aria-label', t('js_viz_tools', { title }));
+    wrap.append(cap, box, bar);
+    const state = { id, wrap, box, bar, cap, max: false, inerted: [], opener: null };
+    const maxButton = button('max', t('js_viz_maximize'), () => setMax(state, !state.max));
+    maxButton.setAttribute('aria-pressed', 'false');
+    bar.append(maxButton);
+    state.maxButton = maxButton;
+    if (document.fullscreenEnabled) {
+      const fs = button('screen', t('js_viz_fullscreen'), () => {
+        if (document.fullscreenElement) document.exitFullscreen().catch(() => {});
+        else (state.max ? Promise.resolve() : setMax(state, true)).then(() => wrap.requestFullscreen?.()).catch(() => {});
+      });
+      fs.classList.add('viz-only-max');
+      bar.append(fs);
+    }
+    frames.set(box, state);
+    return state;
+  }
+
+  function setInert(state, on) {
+    if (!on) {
+      state.inerted.forEach((el) => { el.inert = false; });
+      state.inerted = [];
+      return;
+    }
+    for (let node = state.wrap; node && node !== document.body; node = node.parentElement) {
+      for (const sibling of node.parentElement.children) {
+        if (sibling === node || sibling.inert || sibling.tagName === 'SCRIPT') continue;
+        sibling.inert = true;
+        state.inerted.push(sibling);
+      }
+    }
+  }
+
+  async function setMax(state, on) {
+    if (state.max === on) return;
+    state.max = on;
+    state.wrap.classList.toggle('is-max', on);
+    if (on) {
+      state.wrap.setAttribute('role', 'dialog');
+      state.wrap.setAttribute('aria-modal', 'true');
+      state.wrap.setAttribute('aria-label', state.cap.textContent);
+    } else {
+      state.wrap.removeAttribute('role');
+      state.wrap.removeAttribute('aria-modal');
+      state.wrap.removeAttribute('aria-label');
+    }
+    root.classList.toggle('viz-locked', on);
+    setInert(state, on);
+    state.maxButton.innerHTML = icon(on ? 'min' : 'max');
+    state.maxButton.setAttribute('aria-pressed', on ? 'true' : 'false');
+    state.maxButton.title = t(on ? 'js_viz_restore' : 'js_viz_maximize');
+    state.maxButton.setAttribute('aria-label', state.maxButton.title);
+    writeParam('viz', on ? state.id : null);
+    if (on) {
+      state.opener = document.activeElement;
+      state.maxButton.focus();
+      await mount(state.box);
+    } else {
+      if (document.fullscreenElement === state.wrap) document.exitFullscreen().catch(() => {});
+      (state.opener && state.opener.isConnected && state.opener !== document.body ? state.opener : state.maxButton).focus();
+    }
+  }
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key !== 'Escape') return;
+    for (const state of frames.values()) {
+      if (state.panel && !state.panel.hidden) {
+        state.panel.hidden = true;
+        state.panelButton.setAttribute('aria-expanded', 'false');
+        state.panelButton.focus();
+        return;
+      }
+    }
+    for (const state of frames.values()) if (state.max) { setMax(state, false); return; }
+  });
+
+  function fromUrl(def, raw) {
+    if (raw === null) return undefined;
+    if (def.type === 'toggle') return raw === '1' || raw === 'true';
+    if (def.type === 'range') {
+      const n = Number(raw);
+      return Number.isFinite(n) ? Math.min(def.max, Math.max(def.min, n)) : undefined;
+    }
+    if (def.type === 'select') return def.options.some((o) => String(o.value) === raw) ? raw : undefined;
+    return undefined;
+  }
+
+  // handle.controls() → [{ key, type: 'range'|'select'|'toggle'|'play'|'action', label, value,
+  // min, max, step, options: [{ value, label }], format(v), icon, set(v) }]; labels arrive
+  // translated (the visual calls t()). The panel opens from the sliders button; play sits in the bar.
+  function controls(state, handle) {
+    const defs = typeof handle.controls === 'function' ? handle.controls() : [];
+    if (!defs.length) return;
+    const params = defs.filter((d) => d.type === 'range' || d.type === 'select' || d.type === 'toggle');
+    const actions = defs.filter((d) => d.type === 'action');
+    for (const def of defs.filter((d) => d.type === 'play')) {
+      const key = `${state.id}.${def.key}`;
+      let playing = def.value !== false;
+      const b = button(playing ? 'pause' : 'play', t(playing ? 'js_viz_pause' : 'js_viz_play'), () => setPlaying(!playing, true));
+      b.dataset.vizControl = def.key;
+      const setPlaying = (on, write) => {
+        playing = on;
+        b.innerHTML = icon(on ? 'pause' : 'play');
+        b.title = t(on ? 'js_viz_pause' : 'js_viz_play');
+        b.setAttribute('aria-label', b.title);
+        b.setAttribute('aria-pressed', on ? 'true' : 'false');
+        if (write) writeParam(key, on === (def.value !== false) ? null : (on ? 1 : 0));
+        def.set(on);
+      };
+      b.setAttribute('aria-pressed', playing ? 'true' : 'false');
+      state.bar.prepend(b);
+      const raw = readParam(key);
+      if (raw !== null && (raw !== '0') !== playing) setPlaying(raw !== '0', false);
+    }
+    if (!params.length && !actions.length) return;
+    const panelId = `${state.id}-controls`;
+    const panel = document.createElement('div');
+    panel.id = panelId;
+    panel.className = 'viz-panel';
+    panel.hidden = true;
+    panel.setAttribute('role', 'group');
+    panel.setAttribute('aria-label', t('js_viz_parameters'));
+    const toggleButton = button('sliders', t('js_viz_parameters'), () => {
+      panel.hidden = !panel.hidden;
+      toggleButton.setAttribute('aria-expanded', panel.hidden ? 'false' : 'true');
+      if (!panel.hidden) panel.querySelector('input, select, button')?.focus();
+    });
+    toggleButton.setAttribute('aria-expanded', 'false');
+    toggleButton.setAttribute('aria-controls', panelId);
+    state.bar.insertBefore(toggleButton, state.maxButton);
+    state.panel = panel;
+    state.panelButton = toggleButton;
+    for (const def of params) {
+      const key = `${state.id}.${def.key}`;
+      const inputId = `${state.id}-${def.key}`;
+      const row = document.createElement('div');
+      row.dataset.vizControl = def.key;
+      const show = (v) => (def.format ? def.format(v) : String(v));
+      if (def.type === 'range') {
+        row.innerHTML = `<label for="${inputId}" class="${LABEL}"><span>${escape(def.label)}</span><output class="tabular text-xs font-normal text-gray-600 dark:text-gray-300"></output></label><input id="${inputId}" type="range" class="${RANGE}" min="${def.min}" max="${def.max}" step="${def.step ?? 1}">`;
+        const input = row.querySelector('input');
+        const out = row.querySelector('output');
+        const apply = (v, write) => {
+          input.value = v;
+          out.textContent = show(v);
+          def.set(v);
+          if (write) writeParam(key, v === def.value ? null : v);
+        };
+        input.value = def.value;
+        out.textContent = show(def.value);
+        input.addEventListener('input', () => apply(Number(input.value), true));
+        const v = fromUrl(def, readParam(key));
+        if (v !== undefined && v !== def.value) apply(v, false);
+      } else if (def.type === 'select') {
+        row.innerHTML = `<label for="${inputId}" class="${LABEL}">${escape(def.label)}</label><select id="${inputId}" class="${SELECT}">${def.options.map((o) => `<option value="${escape(o.value)}">${escape(o.label)}</option>`).join('')}</select>`;
+        const input = row.querySelector('select');
+        input.value = String(def.value);
+        input.addEventListener('change', () => {
+          def.set(input.value);
+          writeParam(key, input.value === String(def.value) ? null : input.value);
+        });
+        const v = fromUrl(def, readParam(key));
+        if (v !== undefined && v !== String(def.value)) {
+          input.value = v;
+          def.set(v);
+        }
+      } else {
+        row.innerHTML = `<label class="inline-flex cursor-pointer items-center"><input id="${inputId}" type="checkbox" class="peer sr-only"><span class="relative h-5 w-9 shrink-0 rounded-full bg-gray-200 after:absolute after:start-[2px] after:top-[2px] after:h-4 after:w-4 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-primary-600 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:ring-4 peer-focus:ring-primary-300 dark:bg-gray-600 dark:peer-focus:ring-primary-800" aria-hidden="true"></span><span class="ms-3 text-sm font-medium text-gray-900 dark:text-white">${escape(def.label)}</span></label>`;
+        const input = row.querySelector('input');
+        input.checked = Boolean(def.value);
+        input.addEventListener('change', () => {
+          def.set(input.checked);
+          writeParam(key, input.checked === Boolean(def.value) ? null : (input.checked ? 1 : 0));
+        });
+        const v = fromUrl(def, readParam(key));
+        if (v !== undefined && v !== Boolean(def.value)) {
+          input.checked = v;
+          def.set(v);
+        }
+      }
+      panel.append(row);
+    }
+    if (actions.length) {
+      const row = document.createElement('div');
+      row.className = 'flex flex-wrap gap-2 pt-1';
+      for (const def of actions) {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.className = ACTION;
+        b.dataset.vizControl = def.key;
+        b.innerHTML = `${icon(def.icon || 'reset')}<span>${escape(def.label)}</span>`;
+        b.addEventListener('click', () => def.set());
+        row.append(b);
+      }
+      panel.append(row);
+    }
+    state.wrap.append(panel);
+  }
+
+  // The layer owns resizing: one observer per box, debounced, skipping the initial callback; a
+  // visual answers with resize(), or redraws with update() when it has none.
+  function observeSize(box, handle) {
+    if (!('ResizeObserver' in window)) return;
+    let first = true;
+    let timer = 0;
+    let last = `${box.clientWidth}x${box.clientHeight}`;
+    new ResizeObserver(() => {
+      if (first) {
+        first = false;
+        return;
+      }
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        const size = `${box.clientWidth}x${box.clientHeight}`;
+        if (size === last || !box.clientWidth || !box.clientHeight) return;
+        last = size;
+        (handle.resize || handle.update)?.call(handle);
+      }, 120);
+    }).observe(box);
+  }
+
+  function message(box, key) {
+    let note = box.querySelector(':scope > .viz-note');
+    if (!note) {
+      note = document.createElement('p');
+      note.className = 'viz-note';
+      box.append(note);
+    }
+    note.textContent = t(key);
+  }
+
   async function mount(box) {
     if (mounted.has(box)) return;
     const name = box.dataset.viz;
     const spec = registry.get(name);
     if (!spec) return;
     mounted.set(box, null);
+    const state = frame(box);
+    box.dataset.vizState = 'loading';
+    box.setAttribute('aria-busy', 'true');
     try {
       await lib(spec.lib);
       const source = box.dataset.source ? data(box.dataset.source) : null;
-      const handle = (await spec.mount(box, source, { palette, reducedMotion, isDark })) || {};
+      const ctx = { palette, reducedMotion, isDark, motion, go, escape, hash, t, id: vizId(box) };
+      const handle = (await spec.mount(box, source, ctx)) || {};
       mounted.set(box, handle);
       list(box, handle);
+      if (state) controls(state, handle);
+      observeSize(box, handle);
+      if (handle.empty) message(box, 'js_viz_empty');
       box.dataset.vizState = 'ready';
     } catch (error) {
       box.dataset.vizState = 'error';
+      message(box, 'js_viz_error');
       console.error(`[hub] ${name}:`, error);
+    } finally {
+      box.removeAttribute('aria-busy');
     }
   }
 
@@ -124,7 +465,7 @@
   // after the box (so nothing shifts); the visual's handle.items() fills it when it is opened, and
   // again on every opening, so a live visual lists what it shows now.
   function list(box, handle) {
-    const details = box.nextElementSibling;
+    const details = (frames.get(box)?.wrap ?? box).nextElementSibling;
     if (!details || !details.matches('details[data-viz-list]') || typeof handle.items !== 'function') return;
     const ul = details.querySelector('ul');
     const fill = () => {
@@ -155,6 +496,11 @@
 
   function scan() {
     const boxes = document.querySelectorAll('[data-viz]');
+    // Frames first, before any library loads: the toolbar is there from the first paint, and a
+    // deep link (?viz=<id>) opens its visual maximized at once.
+    boxes.forEach(frame);
+    const wanted = readParam('viz');
+    for (const state of frames.values()) if (state.id === wanted) setMax(state, true);
     if (!('IntersectionObserver' in window)) {
       boxes.forEach(mount);
       return;
@@ -282,7 +628,15 @@
   try {
     i18n = JSON.parse(document.getElementById('i18n-data')?.textContent || '{}');
   } catch {}
-  const t = (key, vars = {}) => Object.entries(vars).reduce((text, [k, v]) => text.replaceAll(`{${k}}`, String(v)), i18n.strings?.[key] ?? key);
+  // A text with a count picks its plural form by the language's own rule (Intl.PluralRules, CLDR):
+  // key__one, key__few, key__many, key__other, falling back to the key itself.
+  const plural = new Intl.PluralRules(i18n.locale || 'en-GB');
+  const t = (key, vars = {}) => {
+    const strings = i18n.strings || {};
+    const form = typeof vars.n === 'number' ? strings[`${key}__${plural.select(vars.n)}`] ?? strings[`${key}__other`] : undefined;
+    const text = form ?? strings[key] ?? key;
+    return Object.entries(vars).reduce((s, [k, v]) => s.replaceAll(`{${k}}`, String(v)), text);
+  };
   // Links go to the page's language (data-home); vendor bundles load from the site root (base).
   const home = root.dataset.home || base;
 
@@ -309,5 +663,5 @@
     };
   }
 
-  window.KorczisHub = { viz, lib, data, palette, reducedMotion, isDark, base, home, t, tooltip, github: document.documentElement.dataset.github || '', locale: i18n.locale || 'en-GB' };
+  window.KorczisHub = { viz, lib, data, palette, reducedMotion, isDark, motion, go, escape, hash, base, home, t, tooltip, github: document.documentElement.dataset.github || '', locale: i18n.locale || 'en-GB' };
 })();

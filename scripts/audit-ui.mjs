@@ -309,7 +309,8 @@ async function checkLists(browser) {
     if (!count) findings.push(`/${rel}: no list twin`);
     for (let i = 0; i < count; i += 1) {
       const details = page.locator('details[data-viz-list]').nth(i);
-      const box = page.locator('details[data-viz-list]').nth(i).locator('xpath=preceding-sibling::*[1]');
+      // The visual is the list's previous sibling, or inside it when the layer framed it.
+      const box = details.locator('xpath=preceding-sibling::*[1]/descendant-or-self::*[@data-viz][1]');
       await box.scrollIntoViewIfNeeded();
       await page.waitForFunction((el) => ['ready', 'error'].includes(el.dataset.vizState), await box.elementHandle(), { timeout: 15000 }).catch(() => {});
       const kind = await box.getAttribute('data-viz');
@@ -326,6 +327,100 @@ async function checkLists(browser) {
   }
   await context.close();
   return findings;
+}
+
+// Every visual that is not static is maximizable and a simulator (rule project.viz-ergonomics),
+// driven as a person would, on every page of PAGES that has one:
+//  - Maximize covers the viewport, the visual redraws to the new box, ?viz=<id> is in the address,
+//    and Escape restores it and returns focus to the button;
+//  - the deep link ?viz=<id> opens it maximized;
+//  - it declares at least one parameter, and every parameter round-trips: set it, the address
+//    carries it, reload that address, the control holds the value.
+async function checkFrames(browser) {
+  const findings = [];
+  const context = await browser.newContext({ viewport: { width: 1280, height: 860 }, reducedMotion: 'reduce' });
+  const page = await context.newPage();
+  page.on('pageerror', (e) => findings.push(`page error: ${e.message}`));
+  let visuals = 0;
+  for (const [, rel] of PAGES) {
+    await page.goto(`${BASE}${rel}`, { waitUntil: 'networkidle' });
+    const ids = await page.$$eval('[data-viz-frame]', (els) => els.map((e) => e.dataset.vizFrame));
+    const statics = await page.$$eval('[data-viz]', (els) => els.filter((b) => !b.closest('[data-viz-frame]') && !b.matches('[aria-hidden="true"]')).map((b) => b.dataset.viz));
+    for (const kind of statics) findings.push(`/${rel}: visual ${kind} has no frame and is not aria-hidden (declare it static with a reason, or let it be maximized)`);
+    for (const id of ids) {
+      visuals += 1;
+      const where = `/${rel} ${id}`;
+      const frame = page.locator(`[data-viz-frame="${id}"]`);
+      const box = frame.locator(':scope > [data-viz]');
+      await box.scrollIntoViewIfNeeded();
+      await page.waitForFunction((el) => ['ready', 'error'].includes(el.dataset.vizState), await box.elementHandle(), { timeout: 15000 }).catch(() => {});
+      if ((await box.getAttribute('data-viz-state')) !== 'ready') { findings.push(`${where}: not ready (${await box.getAttribute('data-viz-state')})`); continue; }
+      const surface = () => box.evaluate((b) => {
+        const r = b.getBoundingClientRect();
+        const drawn = [...b.querySelectorAll('canvas, svg')].map((c) => c.getBoundingClientRect()).sort((x, y) => y.width * y.height - x.width * x.height)[0];
+        return { w: r.width, h: r.height, dw: drawn?.width ?? 0, dh: drawn?.height ?? 0 };
+      });
+      const small = await surface();
+      const maxButton = frame.locator('[data-viz-tool="max"]');
+      await maxButton.click();
+      await page.waitForTimeout(700);
+      const vp = page.viewportSize();
+      const rect = await frame.evaluate((f) => f.getBoundingClientRect().toJSON());
+      if (rect.width < vp.width * 0.98 || rect.height < vp.height * 0.98) findings.push(`${where}: maximized frame is ${Math.round(rect.width)}x${Math.round(rect.height)}, not the viewport`);
+      const big = await surface();
+      if (big.h <= small.h * 1.2) findings.push(`${where}: the box did not grow when maximized (${Math.round(small.h)} -> ${Math.round(big.h)} px high)`);
+      if (big.dw < big.w * 0.8 || big.dh < big.h * 0.8) findings.push(`${where}: the visual did not redraw to the maximized box (draws ${Math.round(big.dw)}x${Math.round(big.dh)} in ${Math.round(big.w)}x${Math.round(big.h)})`);
+      await page.waitForTimeout(250);
+      if (new URL(page.url()).searchParams.get('viz') !== id) findings.push(`${where}: maximized, but the address does not say ?viz=${id}`);
+      await page.keyboard.press('Escape');
+      await page.waitForTimeout(400);
+      if (await frame.evaluate((f) => f.classList.contains('is-max'))) findings.push(`${where}: Escape did not restore it`);
+      if (!(await maxButton.evaluate((b) => b === document.activeElement))) findings.push(`${where}: focus did not return to the maximize button`);
+      // Parameters: at least one, each round-tripping through the address.
+      const keys = await frame.locator('.viz-panel [data-viz-control], .viz-bar [data-viz-control]').evaluateAll((els) => els.map((e) => e.dataset.vizControl));
+      if (!keys.length) findings.push(`${where}: declares no simulation parameter (handle.controls())`);
+      const panelButton = frame.locator('[data-viz-tool="sliders"]');
+      if (await panelButton.count()) await panelButton.click();
+      const set = await frame.evaluate((f) => {
+        const out = {};
+        for (const row of f.querySelectorAll('.viz-panel [data-viz-control]')) {
+          const input = row.querySelector('input, select');
+          if (!input) continue;
+          if (input.type === 'range') input.value = input.max === input.value ? input.min : input.max;
+          else if (input.type === 'checkbox') input.checked = !input.checked;
+          else if (input.tagName === 'SELECT') {
+            if (input.options.length < 2) continue;
+            input.selectedIndex = input.selectedIndex === input.options.length - 1 ? 0 : input.options.length - 1;
+          }
+          input.dispatchEvent(new Event(input.type === 'range' ? 'input' : 'change', { bubbles: true }));
+          out[row.dataset.vizControl] = input.type === 'checkbox' ? String(input.checked) : input.value;
+        }
+        return out;
+      });
+      await page.waitForTimeout(400);
+      const address = page.url();
+      for (const key of Object.keys(set)) if (!new URL(address).searchParams.has(`${id}.${key}`)) findings.push(`${where}: parameter ${key} changed, but the address does not carry ${id}.${key}`);
+      if (Object.keys(set).length) {
+        await page.goto(address, { waitUntil: 'networkidle' });
+        const again = page.locator(`[data-viz-frame="${id}"]`);
+        await again.scrollIntoViewIfNeeded();
+        await page.waitForFunction((el) => ['ready', 'error'].includes(el.dataset.vizState), await again.locator(':scope > [data-viz]').elementHandle(), { timeout: 15000 }).catch(() => {});
+        const held = await again.evaluate((f) => Object.fromEntries([...f.querySelectorAll('.viz-panel [data-viz-control]')].map((row) => {
+          const input = row.querySelector('input, select');
+          return [row.dataset.vizControl, input ? (input.type === 'checkbox' ? String(input.checked) : input.value) : null];
+        })));
+        for (const [key, value] of Object.entries(set)) if (held[key] !== value) findings.push(`${where}: parameter ${key}=${value} did not survive a reload of its address (holds ${held[key]})`);
+      }
+      // The deep link opens it maximized.
+      await page.goto(`${BASE}${rel}?viz=${encodeURIComponent(id)}`, { waitUntil: 'networkidle' });
+      await page.waitForTimeout(500);
+      if (!(await page.locator(`[data-viz-frame="${id}"]`).evaluate((f) => f.classList.contains('is-max')))) findings.push(`${where}: ?viz=${id} did not open it maximized`);
+      await page.goto(`${BASE}${rel}`, { waitUntil: 'networkidle' });
+    }
+  }
+  if (!visuals) findings.push('no framed visual on any page: the gate would pass vacuously');
+  await context.close();
+  return { findings, visuals };
 }
 
 const browser = await chromium.launch();
@@ -350,6 +445,16 @@ try {
       for (const f of lists) console.log(`     ${f}`);
     } else {
       console.log('ok   lists: every visual on /, /glossary/, /work/, /tags/ opens as a list of links from the keyboard');
+    }
+  }
+  if (!ONLY || ONLY.test('frames')) {
+    const { findings: frames, visuals } = await checkFrames(browser).catch((error) => ({ findings: [`threw: ${error.message.split('\n')[0]}`], visuals: 0 }));
+    if (frames.length) {
+      failed += 1;
+      console.log('FAIL maximizable simulators');
+      for (const f of frames) console.log(`     ${f}`);
+    } else {
+      console.log(`ok   frames: ${visuals} visuals maximize to the viewport, redraw, restore with Escape, deep-link, and round-trip every parameter`);
     }
   }
   if (!ONLY || ONLY.test('detail')) {
