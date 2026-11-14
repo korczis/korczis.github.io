@@ -11,7 +11,7 @@
 // glossary term, a category its page; the list twin holds every node with the same link.
 KorczisHub.viz('graph', {
   lib: 'echarts',
-  mount(box, source, { palette, motion, go, link, escape, hash, t }) {
+  mount(box, source, { palette, motion, go, link, escape, hash, t, reflect = () => {} }) {
     const { projects, measured = {} } = source;
     const hub = source.hub || null;
     const names = source.categories || null;
@@ -157,6 +157,8 @@ KorczisHub.viz('graph', {
       event.preventDefault();
       const rect = box.getBoundingClientRect();
       zoomBy(Math.exp(-event.deltaY / 300), event.clientX - rect.left, event.clientY - rect.top);
+      // The zoom control and the address follow (ctx.reflect; a no-op where the layer predates it).
+      reflect('zoom', Math.round(state.zoom * 10) / 10);
     };
     box.addEventListener('wheel', onWheel, { passive: false });
 
@@ -190,7 +192,7 @@ KorczisHub.viz('graph', {
         },
         { key: 'labels', type: 'toggle', label: t('js_graph_labels'), value: state.labels, set(v) { state.labels = Boolean(v); render(); } },
         { key: 'zoom', type: 'range', label: t('js_graph_zoom'), min: 0.3, max: 4, step: 0.1, value: 1, format: (v) => `${fmt(v)}×`, set(v) { zoomBy(v / state.zoom, box.clientWidth / 2, box.clientHeight / 2); } },
-        { key: 'reheat', type: 'action', label: t('js_graph_reheat'), icon: 'reset', set() { state.zoom = 1; render({ fresh: true }); } },
+        { key: 'reheat', type: 'action', label: t('js_graph_reheat'), icon: 'reset', set() { state.zoom = 1; reflect('zoom', 1); render({ fresh: true }); } },
       ],
       // A new size rescales the physics; the simulation moves the graph from where it is.
       resize() {

@@ -9,7 +9,7 @@
 // glossary has none. One series, one colour: bars compare counts, they need no legend or rainbow.
 KorczisHub.viz('languages', {
   lib: 'echarts',
-  mount(box, source, { palette, motion, go, link, escape, t }) {
+  mount(box, source, { palette, motion, go, link, escape, t, reflect = () => {} }) {
     const entries = (Array.isArray(source) ? source : []).filter((e) => e && e.name);
     const OTHER = 'Other';
     const home = KorczisHub.home;
@@ -60,6 +60,7 @@ KorczisHub.viz('languages', {
         // "Other" opens what it holds: every language stands on its own.
         if (bar.members?.length) {
           state.top = named.length;
+          reflect('top', state.top);
           render();
         } else {
           go(`${home}repositories/`, p.event?.event);
@@ -77,11 +78,15 @@ KorczisHub.viz('languages', {
       const firstYear = Number(years[0]);
       if (state.to >= last) {
         state.to = firstYear;
+        reflect('year', state.to);
         render();
       }
       // One year a second: a pace to read by, not an animation (the bars glide by motion().update).
       timer = setInterval(() => {
         state.to = state.to >= last ? firstYear : state.to + 1;
+        // The year control and the address follow the play (ctx.reflect; a no-op where the layer
+        // predates it).
+        reflect('year', state.to);
         render();
       }, 1000);
     };
