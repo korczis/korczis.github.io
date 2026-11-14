@@ -56,8 +56,8 @@ en = "Key concept: {list}."
 cs = "Klíčový pojem: {list}."
 
 [derive_category_how]
-en = "*How categories are made:* nobody assigns them by hand. A [[repository|repository]] falls into a category when its name, description or topics match the rule's keywords, otherwise its primary language decides; [[fork|forks]] and [[mirror|mirrors]] never count as the owner's work."
-cs = "*Jak kategorie vznikají:* nikdo je ručně nepřiřazuje. [[repository]] spadne do kategorie, když jeho název, popis nebo témata odpovídají klíčovým slovům pravidla, jinak rozhodne jeho hlavní jazyk; forky a [[mirror|mirrory]] se nepočítají za vlastní práci."
+en = "*How categories are made:* nobody assigns them by hand. Every keyword of every category's rule is scored against a [[repository|repository]]'s name, topics and description, the name counting most, and the best score wins; when no keyword fits, its primary language decides. [[fork|Forks]] and [[mirror|mirrors]] never count as the owner's work."
+cs = "*Jak kategorie vznikají:* nikdo je ručně nepřiřazuje. Každé klíčové slovo pravidel všech kategorií se poměří s názvem, tématy a popisem [[repository|repozitáře]], nejvíc váží název, a vyhraje nejlepší skóre; když nesedí žádné slovo, rozhodne hlavní jazyk. Forky a [[mirror|mirrory]] se nepočítají za vlastní práci."
 
 # Work pages (scripts/build-work.mjs)
 

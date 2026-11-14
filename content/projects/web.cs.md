@@ -4,18 +4,18 @@ title = "Web"
 description = "Weby a webové aplikace: single-page aplikace, frontendy v Phoenixu a Elmu, landing pages a weby přátel."
 template = "category.html"
 weight = 8
-updated = "2025-12-20T21:25:15Z"
+updated = "2026-11-14T17:48:17Z"
 
 [taxonomies]
-tags = ["Web", "job-processor", "nestravenkam", "tosh", "the-scratch"]
+tags = ["Web", "korczis.github.io", "korczis", "ApolloCrawler-github-io", "korczis-com"]
 
 [extra]
 category = "web"
-og_title = "Web: 9 repozitářů."
+og_title = "Web: 15 repozitářů."
 og_image = "og/cs-category-web.png"
 schema = "collection"
 terms = ["static-site-generator", "javascript", "css", "elixir", "repository"]
-keywords = ["Web", "job-processor", "nestravenkam", "tosh", "the-scratch", "web-spa", "microscratch-react", "Tomáš Korčák"]
+keywords = ["Web", "korczis.github.io", "korczis", "ApolloCrawler-github-io", "korczis-com", "korczis-github-com", "pavian-eu", "Tomáš Korčák"]
 
 [[extra.viz]]
 kind = "constellation"
@@ -28,8 +28,8 @@ tone = "night"
 +++
 Weby a webové aplikace: single-page aplikace, frontendy v Phoenixu a Elmu, landing pages a weby přátel.
 
-Kategorie má 9 repozitářů; nejčastějšími jazyky jsou [JavaScript](@/glossary/javascript.cs.md), [CSS](@/glossary/css.cs.md) a [Elixir](@/glossary/elixir.cs.md).
+Kategorie má 15 repozitářů; nejčastějšími jazyky jsou [JavaScript](@/glossary/javascript.cs.md), [CSS](@/glossary/css.cs.md), ApacheConf a [Elixir](@/glossary/elixir.cs.md).
 
 Klíčový pojem: [Generátor statických webů](@/glossary/static-site-generator.cs.md).
 
-*Jak kategorie vznikají:* nikdo je ručně nepřiřazuje. [Repozitář](@/glossary/repository.cs.md) spadne do kategorie, když jeho název, popis nebo témata odpovídají klíčovým slovům pravidla, jinak rozhodne jeho hlavní jazyk; forky a [mirrory](@/glossary/mirror.cs.md) se nepočítají za vlastní práci.
+*Jak kategorie vznikají:* nikdo je ručně nepřiřazuje. Každé klíčové slovo pravidel všech kategorií se poměří s názvem, tématy a popisem [repozitáře](@/glossary/repository.cs.md), nejvíc váží název, a vyhraje nejlepší skóre; když nesedí žádné slovo, rozhodne hlavní jazyk. Forky a [mirrory](@/glossary/mirror.cs.md) se nepočítají za vlastní práci.

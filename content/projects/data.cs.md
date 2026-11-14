@@ -4,18 +4,18 @@ title = "Data a GIS"
 description = "Katalogy a mapy otevřených dat: zdroje geodat, crawlery, hlášení incidentů geokódovaná a servírovaná z jednoho registru."
 template = "category.html"
 weight = 4
-updated = "2026-11-14T17:32:32Z"
+updated = "2026-10-29T13:50:30Z"
 
 [taxonomies]
-tags = ["Data a GIS", "Data Atlas", "Crisis map", "korczis", "apollo-crawler-extension"]
+tags = ["Data a GIS", "Data Atlas", "Crisis map", "apollo-crawler-extension", "microcrawler"]
 
 [extra]
 category = "data"
-og_title = "Data a GIS: 48 repozitářů."
+og_title = "Data a GIS: 50 repozitářů."
 og_image = "og/cs-category-data.png"
 schema = "collection"
-terms = ["gis", "ruby", "javascript", "elixir", "shell", "html", "python", "rust", "postgis", "mcp", "repository"]
-keywords = ["Data a GIS", "Data Atlas", "Crisis map", "korczis", "apollo-crawler-extension", "microcrawler-crawler-bam-brno-cz", "microcrawler-crawler-all", "microcrawler-crawler-base", "microcrawler-crawler-craiglist-com", "Tomáš Korčák"]
+terms = ["gis", "ruby", "javascript", "elixir", "html", "python", "rust", "shell", "postgis", "mcp", "repository"]
+keywords = ["Data a GIS", "Data Atlas", "Crisis map", "apollo-crawler-extension", "microcrawler", "microcrawler-browser", "microcrawler-crawler-bam-brno-cz", "microcrawler-crawler-all", "microcrawler-crawler-base", "Tomáš Korčák"]
 
 [[extra.viz]]
 kind = "constellation"
@@ -28,8 +28,8 @@ tone = "night"
 +++
 Katalogy a mapy otevřených dat: zdroje geodat, crawlery, hlášení incidentů geokódovaná a servírovaná z jednoho registru.
 
-Kategorie má 48 repozitářů; nejčastějšími jazyky jsou [Ruby](@/glossary/ruby.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Elixir](@/glossary/elixir.cs.md) a [Shell](@/glossary/shell.cs.md). Vybrané projekty: **Data Atlas** a **Crisis map**.
+Kategorie má 50 repozitářů; nejčastějšími jazyky jsou [Ruby](@/glossary/ruby.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Elixir](@/glossary/elixir.cs.md) a [HTML](@/glossary/html.cs.md). Vybrané projekty: **Data Atlas** a **Crisis map**.
 
 Klíčový pojem: [GIS](@/glossary/gis.cs.md).
 
-*Jak kategorie vznikají:* nikdo je ručně nepřiřazuje. [Repozitář](@/glossary/repository.cs.md) spadne do kategorie, když jeho název, popis nebo témata odpovídají klíčovým slovům pravidla, jinak rozhodne jeho hlavní jazyk; forky a [mirrory](@/glossary/mirror.cs.md) se nepočítají za vlastní práci.
+*Jak kategorie vznikají:* nikdo je ručně nepřiřazuje. Každé klíčové slovo pravidel všech kategorií se poměří s názvem, tématy a popisem [repozitáře](@/glossary/repository.cs.md), nejvíc váží název, a vyhraje nejlepší skóre; když nesedí žádné slovo, rozhodne hlavní jazyk. Forky a [mirrory](@/glossary/mirror.cs.md) se nepočítají za vlastní práci.

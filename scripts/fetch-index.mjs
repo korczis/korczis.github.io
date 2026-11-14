@@ -9,6 +9,7 @@
 //        node scripts/fetch-index.mjs --probe            re-check the stored sites
 import { execFile } from 'node:child_process';
 import { GitLabBudgetError, gitlabClient } from './lib/gitlab.mjs';
+import { inferCategory } from './lib/repos.mjs';
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -62,19 +63,11 @@ function ownerShare(contributors, isOwner) {
 // Not when the copy is of the owner's own data (gists-search: "a mirror of korczis's gists").
 const MIRROR = /\b(mirror of|mirrored from|cloned from|just cloned|leaked|repository from|fork of|copy of|import of)\b(?!\s+(?:korczis|my)\b)/i;
 const curatedCategory = new Map(catalogue.projects.map((p) => [p.repo.toLowerCase(), p.category]));
-const escape = (s) => s.trim().replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
+// Curated projects keep their curated category; every other repository is scored against the
+// declared rules (data/projects.toml [inference], scripts/lib/repos.mjs).
 function infer(repo) {
-  const known = curatedCategory.get(repo.name.toLowerCase());
-  if (known) return known;
-  const hay = ` ${repo.name} ${repo.description ?? ''} ${(repo.topics ?? []).join(' ')} `.toLowerCase().replace(/[-_]/g, ' ');
-  const entries = Object.entries(catalogue.categories);
-  // Keywords match from the start of a word (stems like "visuali" still match "visualisation").
-  // Short keywords (ai, gis, sql) must be whole words: "ai" must not match "air".
-  const hit = (k) => new RegExp(`\\b${escape(k)}${k.trim().length <= 3 ? '\\b' : ''}`, 'i').test(hay);
-  for (const [key, c] of entries) if ((c.keywords ?? []).some(hit)) return key;
-  for (const [key, c] of entries) if (repo.language && (c.languages ?? []).includes(repo.language)) return key;
-  return 'tools';
+  return curatedCategory.get(repo.name.toLowerCase()) ?? inferCategory(repo, catalogue.categories, catalogue.inference).category;
 }
 
 async function githubRepos() {

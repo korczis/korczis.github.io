@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Program, který z obsahu a šablon vyrobí hotové soubory ještě před návštěvou, takže web nepotřebuje serverový kód."
 aliases = []
 reference = { title = "Static site generator (Wikipedia)", url = "https://en.wikipedia.org/wiki/Static_site_generator" }
-pages = ["_index.cs.md", "projects/web.cs.md", "work/job-processor.cs.md"]
-related = ["repository", "commit", "elixir", "css", "d3", "data-visualisation", "flowbite-pro", "fork"]
+pages = ["_index.cs.md", "projects/web.cs.md", "work/korczis-github-io.cs.md", "work/korczis.cs.md"]
+related = ["repository", "commit", "javascript", "css", "open-source", "d3", "data-visualisation", "elixir"]
 og_title = "Generátor statických webů: slovník"
 og_image = "og/cs-glossary-static-site-generator.png"
 keywords = ["Generátor statických webů", "Static site generator", "Koncept", "Slovník", "Tomáš Korčák"]

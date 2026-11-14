@@ -17,7 +17,7 @@ definition = "The small, fast systems language beneath operating systems and mos
 aliases = []
 reference = { title = "C (Wikipedia)", url = "https://en.wikipedia.org/wiki/C_(programming_language)" }
 pages = ["projects/learning.md"]
-related = ["cpp", "csharp", "elixir", "haskell", "java", "javascript", "repository", "ruby"]
+related = ["cpp", "csharp", "elixir", "erlang", "haskell", "java", "javascript", "repository"]
 og_title = "C: glossary"
 og_image = "og/glossary-c.png"
 keywords = ["C (programming language)", "Programming language", "Glossary", "Tomas Korcak"]

@@ -17,7 +17,7 @@ definition = "An object-oriented language on the Java Virtual Machine, long the 
 aliases = []
 reference = { title = "dev.java", url = "https://dev.java/learn/" }
 pages = ["projects/learning.md"]
-related = ["c", "cpp", "csharp", "elixir", "haskell", "javascript", "repository", "ruby"]
+related = ["c", "cpp", "csharp", "elixir", "erlang", "haskell", "javascript", "repository"]
 og_title = "Java: glossary"
 og_image = "og/glossary-java.png"
 keywords = ["Java", "Programming language", "Glossary", "Tomas Korcak"]

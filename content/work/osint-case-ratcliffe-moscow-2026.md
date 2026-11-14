@@ -7,15 +7,15 @@ weight = 14
 updated = "2026-08-26T22:32:53Z"
 
 [taxonomies]
-tags = ["AI engineering", "HTML", "Python", "Shell"]
+tags = ["Security and OSINT", "HTML", "Python", "Shell"]
 
 [extra]
 repo = "osint-case-ratcliffe-moscow-2026"
 og_title = "osint-case-ratcliffe-moscow-2026: Open-source intelligence assessment of the CIA Director'"
 og_image = "og/work-osint-case-ratcliffe-moscow-2026.png"
 schema = "project"
-keywords = ["osint-case-ratcliffe-moscow-2026", "AI engineering", "HTML", "Python", "Shell", "Tomas Korcak"]
-terms = ["html", "python", "shell", "ai-agent", "github-pages", "repository", "commit", "open-source"]
+keywords = ["osint-case-ratcliffe-moscow-2026", "Security and OSINT", "HTML", "Python", "Shell", "Tomas Korcak"]
+terms = ["html", "python", "shell", "osint", "github-pages", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -26,7 +26,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**osint-case-ratcliffe-moscow-2026** is a project in [AI engineering](@/projects/ai.md). Its code is written mainly in [HTML](@/glossary/html.md) (74 %), with [Python](@/glossary/python.md), [Shell](@/glossary/shell.md) and Just.
+**osint-case-ratcliffe-moscow-2026** is a project in [Security and OSINT](@/projects/security.md). Its code is written mainly in [HTML](@/glossary/html.md) (74 %), with [Python](@/glossary/python.md), [Shell](@/glossary/shell.md) and Just.
 
 The [repository](@/glossary/repository.md) was created in August 2026; its latest [commit](@/glossary/commit.md) is from 26 August 2026. It reads “fix(site): claim pages for object-shaped findings (gdelt\_sweep)”. That places it among the projects active in the last 12 months.
 

@@ -17,7 +17,7 @@ definition = "Licencovaná knihovna bloků rozhraní a aplikační shell nad Tai
 aliases = ["Flowbite"]
 reference = { title = "Flowbite", url = "https://flowbite.com/" }
 pages = ["_index.cs.md", "projects/knowledge.cs.md", "projects/science.cs.md", "stack.cs.md", "work/algoglyph.cs.md", "work/kompendium-epistemicke-anihilace.cs.md"]
-related = ["alpine-js", "apache-echarts", "repository", "zola", "commit", "cytoscape-js", "data-visualisation", "elixir"]
+related = ["alpine-js", "apache-echarts", "repository", "zola", "commit", "cytoscape-js", "data-visualisation", "github-pages"]
 og_title = "Flowbite Pro: slovník"
 og_image = "og/cs-glossary-flowbite-pro.png"
 keywords = ["Flowbite Pro", "Technologie", "Slovník", "Tomáš Korčák"]

@@ -182,7 +182,7 @@
     "github": "https://github.com/korczis/apollocrawler.com"
    },
    "site": null,
-   "category": "tools",
+   "category": "data",
    "curated": false
   },
   {
@@ -305,7 +305,7 @@
     "gitlab": "https://gitlab.com/korczis/babel-plugin-transform-graphql"
    },
    "site": null,
-   "category": "science",
+   "category": "libraries",
    "curated": false
   },
   {
@@ -826,7 +826,7 @@
     "gitlab": "https://gitlab.com/korczis/docker-datasciencetoolbox"
    },
    "site": null,
-   "category": "data",
+   "category": "systems",
    "curated": false
   },
   {
@@ -844,7 +844,7 @@
     "gitlab": "https://gitlab.com/korczis/docker-dstk"
    },
    "site": null,
-   "category": "data",
+   "category": "systems",
    "curated": false
   },
   {
@@ -980,7 +980,7 @@
     "github": "https://github.com/korczis/gauc.ex"
    },
    "site": null,
-   "category": "data",
+   "category": "libraries",
    "curated": false
   },
   {
@@ -1138,7 +1138,7 @@
     "gitlab": "https://gitlab.com/korczis/gooddata-graphql"
    },
    "site": null,
-   "category": "science",
+   "category": "data",
    "curated": false
   },
   {
@@ -1390,7 +1390,7 @@
     "gitlab": "https://gitlab.com/korczis/in-rust-we-trust"
    },
    "site": null,
-   "category": "libraries",
+   "category": "tools",
    "curated": false
   },
   {
@@ -1560,7 +1560,7 @@
     "github": "https://github.com/korczis/korczis"
    },
    "site": "https://korczis.github.io/",
-   "category": "data",
+   "category": "web",
    "curated": false
   },
   {
@@ -1592,7 +1592,7 @@
     "github": "https://github.com/korczis/korczis.github.io"
    },
    "site": null,
-   "category": "ai",
+   "category": "web",
    "curated": false
   },
   {
@@ -1903,7 +1903,7 @@
     "gitlab": "https://gitlab.com/korczis/microcrawler-ng"
    },
    "site": null,
-   "category": "tools",
+   "category": "data",
    "curated": false
   },
   {
@@ -2110,7 +2110,7 @@
     "github": "https://github.com/korczis/osint-case-ratcliffe-moscow-2026"
    },
    "site": "https://korczis.github.io/osint-case-ratcliffe-moscow-2026/",
-   "category": "ai",
+   "category": "security",
    "curated": false
   },
   {
@@ -2143,7 +2143,7 @@
     "github": "https://github.com/korczis/pavian.eu"
    },
    "site": null,
-   "category": "tools",
+   "category": "web",
    "curated": false
   },
   {
@@ -2495,7 +2495,7 @@
     "gitlab": "https://gitlab.com/korczis/rustler-test"
    },
    "site": null,
-   "category": "libraries",
+   "category": "learning",
    "curated": false
   },
   {
@@ -2513,7 +2513,7 @@
     "gitlab": "https://gitlab.com/korczis/rustler_mix"
    },
    "site": null,
-   "category": "libraries",
+   "category": "tools",
    "curated": false
   },
   {
@@ -2639,7 +2639,7 @@
     "gitlab": "https://gitlab.com/korczis/skull"
    },
    "site": null,
-   "category": "knowledge",
+   "category": "learning",
    "curated": false
   },
   {
@@ -2693,7 +2693,7 @@
     "gitlab": "https://gitlab.com/korczis/skull-elixir"
    },
    "site": null,
-   "category": "knowledge",
+   "category": "learning",
    "curated": false
   },
   {
@@ -2729,7 +2729,7 @@
     "gitlab": "https://gitlab.com/korczis/skull-erlang"
    },
    "site": null,
-   "category": "knowledge",
+   "category": "learning",
    "curated": false
   },
   {
@@ -2819,7 +2819,7 @@
     "gitlab": "https://gitlab.com/korczis/skull-rust"
    },
    "site": null,
-   "category": "libraries",
+   "category": "learning",
    "curated": false
   },
   {
@@ -2855,7 +2855,7 @@
     "gitlab": "https://gitlab.com/korczis/sli2dli"
    },
    "site": null,
-   "category": "libraries",
+   "category": "tools",
    "curated": false
   },
   {
@@ -2926,7 +2926,7 @@
     "gitlab": "https://gitlab.com/korczis/streamflow"
    },
    "site": null,
-   "category": "libraries",
+   "category": "tools",
    "curated": false
   },
   {
@@ -3229,7 +3229,7 @@
     "gitlab": "https://gitlab.com/korczis/wims"
    },
    "site": null,
-   "category": "systems",
+   "category": "tools",
    "curated": false
   },
   {
@@ -3579,7 +3579,7 @@
     "gitlab": "https://gitlab.com/korczis/job-processor"
    },
    "site": null,
-   "category": "web",
+   "category": "tools",
    "curated": false
   },
   {
@@ -3723,7 +3723,7 @@
     "gitlab": "https://gitlab.com/korczis/pavian-eu"
    },
    "site": null,
-   "category": "tools",
+   "category": "web",
    "curated": false
   },
   {
@@ -3771,7 +3771,7 @@
     "gitlab": "https://gitlab.com/korczis/korczis-github-com"
    },
    "site": null,
-   "category": "tools",
+   "category": "web",
    "curated": false
   },
   {
@@ -3787,7 +3787,7 @@
     "gitlab": "https://gitlab.com/korczis/korczis-com"
    },
    "site": null,
-   "category": "tools",
+   "category": "web",
    "curated": false
   },
   {
@@ -3803,7 +3803,7 @@
     "gitlab": "https://gitlab.com/korczis/gauc-ex"
    },
    "site": null,
-   "category": "data",
+   "category": "libraries",
    "curated": false
   },
   {
@@ -3819,7 +3819,7 @@
     "gitlab": "https://gitlab.com/korczis/apollocrawler-com"
    },
    "site": null,
-   "category": "tools",
+   "category": "data",
    "curated": false
   },
   {
@@ -3851,7 +3851,7 @@
     "gitlab": "https://gitlab.com/korczis/microcrawler-elixir"
    },
    "site": null,
-   "category": "tools",
+   "category": "data",
    "curated": false
   },
   {
@@ -4073,7 +4073,7 @@
     "gitlab": "https://gitlab.com/korczis/microcrawler-browser"
    },
    "site": null,
-   "category": "tools",
+   "category": "data",
    "curated": false
   },
   {
@@ -4089,7 +4089,7 @@
     "gitlab": "https://gitlab.com/korczis/microcrawler"
    },
    "site": null,
-   "category": "tools",
+   "category": "data",
    "curated": false
   },
   {
@@ -4137,22 +4137,22 @@
     "gitlab": "https://gitlab.com/korczis/ApolloCrawler-github-io"
    },
    "site": null,
-   "category": "tools",
+   "category": "web",
    "curated": false
   }
  ],
  "by_category": {
   "media": 8,
-  "science": 14,
-  "knowledge": 8,
-  "ai": 7,
-  "data": 48,
-  "tools": 72,
-  "systems": 16,
-  "libraries": 10,
-  "web": 9,
-  "learning": 16,
-  "security": 4
+  "science": 12,
+  "knowledge": 5,
+  "web": 15,
+  "ai": 5,
+  "tools": 67,
+  "data": 50,
+  "security": 5,
+  "systems": 17,
+  "libraries": 7,
+  "learning": 21
  },
  "categories": {
   "media": {
@@ -4162,64 +4162,64 @@
    "since": "2015"
   },
   "science": {
-   "repos": 14,
+   "repos": 12,
    "sites": 3,
-   "top_language": "JavaScript",
+   "top_language": "Rust",
    "since": "2014"
   },
   "knowledge": {
-   "repos": 8,
+   "repos": 5,
    "sites": 1,
-   "top_language": "Elixir",
+   "top_language": "Swift",
    "since": "2013"
   },
-  "ai": {
-   "repos": 7,
-   "sites": 2,
-   "top_language": "HTML",
-   "since": "2024"
-  },
-  "data": {
-   "repos": 48,
-   "sites": 3,
-   "top_language": "Ruby",
+  "web": {
+   "repos": 15,
+   "sites": 1,
+   "top_language": "JavaScript",
    "since": "2014"
   },
+  "ai": {
+   "repos": 5,
+   "sites": 1,
+   "top_language": "Rust",
+   "since": "2025"
+  },
   "tools": {
-   "repos": 72,
+   "repos": 67,
    "sites": 6,
    "top_language": "JavaScript",
    "since": "2012"
   },
+  "data": {
+   "repos": 50,
+   "sites": 2,
+   "top_language": "Ruby",
+   "since": "2014"
+  },
+  "security": {
+   "repos": 5,
+   "sites": 1,
+   "top_language": "C++",
+   "since": "2014"
+  },
   "systems": {
-   "repos": 16,
+   "repos": 17,
    "sites": 1,
    "top_language": "Shell",
    "since": "2013"
   },
   "libraries": {
-   "repos": 10,
-   "sites": 0,
-   "top_language": "Rust",
-   "since": "2013"
-  },
-  "web": {
-   "repos": 9,
+   "repos": 7,
    "sites": 0,
    "top_language": "JavaScript",
-   "since": "2014"
+   "since": "2013"
   },
   "learning": {
-   "repos": 16,
+   "repos": 21,
    "sites": 0,
-   "top_language": "C#",
+   "top_language": "Elixir",
    "since": "2012"
-  },
-  "security": {
-   "repos": 4,
-   "sites": 0,
-   "top_language": "C++",
-   "since": "2014"
   }
  },
  "languages": [
@@ -4874,26 +4874,33 @@
     "Swift": 2,
     "Unspecified": 1
    },
-   "ai": {
-    "JavaScript": 1,
-    "Rust": 1,
-    "HTML": 1,
-    "Unspecified": 4
-   },
-   "data": {
+   "web": {
     "JavaScript": 2,
-    "Python": 1,
-    "Elixir": 1,
-    "Unspecified": 19
+    "Unspecified": 4,
+    "CSS": 1,
+    "Elixir": 1
+   },
+   "ai": {
+    "Rust": 1,
+    "Unspecified": 4
    },
    "tools": {
     "Python": 2,
     "JavaScript": 4,
-    "Unspecified": 28,
+    "Unspecified": 21,
     "Elixir": 4,
     "OpenSCAD": 1,
     "TypeScript": 1,
     "Shell": 1
+   },
+   "data": {
+    "Python": 1,
+    "Elixir": 1,
+    "Unspecified": 22,
+    "JavaScript": 1
+   },
+   "security": {
+    "HTML": 1
    },
    "systems": {
     "Unspecified": 3,
@@ -4901,12 +4908,7 @@
     "Shell": 5
    },
    "libraries": {
-    "Unspecified": 1
-   },
-   "web": {
-    "Unspecified": 1,
-    "CSS": 1,
-    "Elixir": 1
+    "Unspecified": 2
    },
    "learning": {
     "C++": 1
@@ -5017,7 +5019,7 @@
     "github": "https://github.com/korczis/korczis.github.io"
    },
    "site": null,
-   "category": "ai",
+   "category": "web",
    "curated": false
   },
   {
@@ -5034,7 +5036,7 @@
     "github": "https://github.com/korczis/korczis"
    },
    "site": "https://korczis.github.io/",
-   "category": "data",
+   "category": "web",
    "curated": false
   },
   {
@@ -5304,7 +5306,7 @@
     "github": "https://github.com/korczis/osint-case-ratcliffe-moscow-2026"
    },
    "site": "https://korczis.github.io/osint-case-ratcliffe-moscow-2026/",
-   "category": "ai",
+   "category": "security",
    "curated": false
   },
   {
@@ -5451,7 +5453,7 @@
     "gitlab": "https://gitlab.com/korczis/ApolloCrawler-github-io"
    },
    "site": null,
-   "category": "tools",
+   "category": "web",
    "curated": false
   },
   {
@@ -5483,7 +5485,7 @@
     "gitlab": "https://gitlab.com/korczis/microcrawler"
    },
    "site": null,
-   "category": "tools",
+   "category": "data",
    "curated": false
   },
   {
@@ -5499,7 +5501,7 @@
     "gitlab": "https://gitlab.com/korczis/microcrawler-browser"
    },
    "site": null,
-   "category": "tools",
+   "category": "data",
    "curated": false
   },
   {
@@ -5691,7 +5693,7 @@
     "gitlab": "https://gitlab.com/korczis/microcrawler-elixir"
    },
    "site": null,
-   "category": "tools",
+   "category": "data",
    "curated": false
   },
   {
@@ -5739,7 +5741,7 @@
     "gitlab": "https://gitlab.com/korczis/apollocrawler-com"
    },
    "site": null,
-   "category": "tools",
+   "category": "data",
    "curated": false
   },
   {
@@ -5755,7 +5757,7 @@
     "gitlab": "https://gitlab.com/korczis/gauc-ex"
    },
    "site": null,
-   "category": "data",
+   "category": "libraries",
    "curated": false
   },
   {
@@ -5771,7 +5773,7 @@
     "gitlab": "https://gitlab.com/korczis/korczis-com"
    },
    "site": null,
-   "category": "tools",
+   "category": "web",
    "curated": false
   },
   {
@@ -5787,7 +5789,7 @@
     "gitlab": "https://gitlab.com/korczis/korczis-github-com"
    },
    "site": null,
-   "category": "tools",
+   "category": "web",
    "curated": false
   },
   {
@@ -5835,7 +5837,7 @@
     "gitlab": "https://gitlab.com/korczis/pavian-eu"
    },
    "site": null,
-   "category": "tools",
+   "category": "web",
    "curated": false
   },
   {
@@ -5979,7 +5981,7 @@
     "gitlab": "https://gitlab.com/korczis/job-processor"
    },
    "site": null,
-   "category": "web",
+   "category": "tools",
    "curated": false
   },
   {
@@ -6776,7 +6778,7 @@
     "github": "https://github.com/korczis/gauc.ex"
    },
    "site": null,
-   "category": "data",
+   "category": "libraries",
    "curated": false
   },
   {
@@ -6894,7 +6896,7 @@
     "gitlab": "https://gitlab.com/korczis/in-rust-we-trust"
    },
    "site": null,
-   "category": "libraries",
+   "category": "tools",
    "curated": false
   },
   {
@@ -6937,7 +6939,7 @@
     "gitlab": "https://gitlab.com/korczis/rustler-test"
    },
    "site": null,
-   "category": "libraries",
+   "category": "learning",
    "curated": false
   },
   {
@@ -7052,7 +7054,7 @@
     "gitlab": "https://gitlab.com/korczis/streamflow"
    },
    "site": null,
-   "category": "libraries",
+   "category": "tools",
    "curated": false
   },
   {
@@ -7070,7 +7072,7 @@
     "gitlab": "https://gitlab.com/korczis/sli2dli"
    },
    "site": null,
-   "category": "libraries",
+   "category": "tools",
    "curated": false
   },
   {
@@ -7088,7 +7090,7 @@
     "gitlab": "https://gitlab.com/korczis/wims"
    },
    "site": null,
-   "category": "systems",
+   "category": "tools",
    "curated": false
   },
   {
@@ -7214,7 +7216,7 @@
     "gitlab": "https://gitlab.com/korczis/gooddata-graphql"
    },
    "site": null,
-   "category": "science",
+   "category": "data",
    "curated": false
   },
   {
@@ -7232,7 +7234,7 @@
     "gitlab": "https://gitlab.com/korczis/skull-elixir"
    },
    "site": null,
-   "category": "knowledge",
+   "category": "learning",
    "curated": false
   },
   {
@@ -7322,7 +7324,7 @@
     "gitlab": "https://gitlab.com/korczis/rustler_mix"
    },
    "site": null,
-   "category": "libraries",
+   "category": "tools",
    "curated": false
   },
   {
@@ -7412,7 +7414,7 @@
     "gitlab": "https://gitlab.com/korczis/skull-rust"
    },
    "site": null,
-   "category": "libraries",
+   "category": "learning",
    "curated": false
   },
   {
@@ -7484,7 +7486,7 @@
     "gitlab": "https://gitlab.com/korczis/babel-plugin-transform-graphql"
    },
    "site": null,
-   "category": "science",
+   "category": "libraries",
    "curated": false
   },
   {
@@ -7556,7 +7558,7 @@
     "gitlab": "https://gitlab.com/korczis/microcrawler-ng"
    },
    "site": null,
-   "category": "tools",
+   "category": "data",
    "curated": false
   },
   {
@@ -7680,7 +7682,7 @@
     "github": "https://github.com/korczis/pavian.eu"
    },
    "site": null,
-   "category": "tools",
+   "category": "web",
    "curated": false
   },
   {
@@ -7770,7 +7772,7 @@
     "gitlab": "https://gitlab.com/korczis/docker-dstk"
    },
    "site": null,
-   "category": "data",
+   "category": "systems",
    "curated": false
   },
   {
@@ -7788,7 +7790,7 @@
     "gitlab": "https://gitlab.com/korczis/docker-datasciencetoolbox"
    },
    "site": null,
-   "category": "data",
+   "category": "systems",
    "curated": false
   },
   {
@@ -8200,7 +8202,7 @@
     "gitlab": "https://gitlab.com/korczis/skull"
    },
    "site": null,
-   "category": "knowledge",
+   "category": "learning",
    "curated": false
   },
   {
@@ -8290,7 +8292,7 @@
     "gitlab": "https://gitlab.com/korczis/skull-erlang"
    },
    "site": null,
-   "category": "knowledge",
+   "category": "learning",
    "curated": false
   },
   {
@@ -8451,7 +8453,7 @@
     "github": "https://github.com/korczis/apollocrawler.com"
    },
    "site": null,
-   "category": "tools",
+   "category": "data",
    "curated": false
   },
   {

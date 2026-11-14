@@ -4,18 +4,18 @@ title = "Knihovny"
 description = "Znovupoužitelné stavební bloky pro jiné programy: klienti, bindingy, validátory, parsery a rozšíření frameworků, hlavně Elixir a Rust."
 template = "category.html"
 weight = 9
-updated = "2025-12-20T21:25:51Z"
+updated = "2025-12-20T21:29:16Z"
 
 [taxonomies]
-tags = ["Knihovny", "hydra", "in-rust-we-trust", "rustler-test", "streamflow"]
+tags = ["Knihovny", "gauc-ex", "hydra", "gauc.ex", "easy-plugin-plugins"]
 
 [extra]
 category = "libraries"
-og_title = "Knihovny: 10 repozitářů."
+og_title = "Knihovny: 7 repozitářů."
 og_image = "og/cs-category-libraries.png"
 schema = "collection"
-terms = ["open-source", "rust", "elixir", "javascript", "repository"]
-keywords = ["Knihovny", "hydra", "in-rust-we-trust", "rustler-test", "streamflow", "sli2dli", "rustler_mix", "Tomáš Korčák"]
+terms = ["open-source", "javascript", "elixir", "rust", "repository"]
+keywords = ["Knihovny", "gauc-ex", "hydra", "gauc.ex", "easy-plugin-plugins", "peg-parser", "babel-plugin-transform-graphql", "Tomáš Korčák"]
 
 [[extra.viz]]
 kind = "constellation"
@@ -28,8 +28,8 @@ tone = "night"
 +++
 Znovupoužitelné stavební bloky pro jiné programy: klienti, bindingy, validátory, parsery a rozšíření frameworků, hlavně Elixir a Rust.
 
-Kategorie má 10 repozitářů; nejčastějšími jazyky jsou [Rust](@/glossary/rust.cs.md), [Elixir](@/glossary/elixir.cs.md) a [JavaScript](@/glossary/javascript.cs.md).
+Kategorie má 7 repozitářů; nejčastějšími jazyky jsou [JavaScript](@/glossary/javascript.cs.md), [Elixir](@/glossary/elixir.cs.md) a [Rust](@/glossary/rust.cs.md).
 
 Klíčový pojem: [Open source](@/glossary/open-source.cs.md).
 
-*Jak kategorie vznikají:* nikdo je ručně nepřiřazuje. [Repozitář](@/glossary/repository.cs.md) spadne do kategorie, když jeho název, popis nebo témata odpovídají klíčovým slovům pravidla, jinak rozhodne jeho hlavní jazyk; forky a [mirrory](@/glossary/mirror.cs.md) se nepočítají za vlastní práci.
+*Jak kategorie vznikají:* nikdo je ručně nepřiřazuje. Každé klíčové slovo pravidel všech kategorií se poměří s názvem, tématy a popisem [repozitáře](@/glossary/repository.cs.md), nejvíc váží název, a vyhraje nejlepší skóre; když nesedí žádné slovo, rozhodne hlavní jazyk. Forky a [mirrory](@/glossary/mirror.cs.md) se nepočítají za vlastní práci.

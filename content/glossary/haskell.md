@@ -17,7 +17,7 @@ definition = "A purely functional language with lazy evaluation and a strong typ
 aliases = []
 reference = { title = "haskell.org", url = "https://www.haskell.org/" }
 pages = ["projects/learning.md", "projects/science.md"]
-related = ["cpp", "elixir", "javascript", "repository", "alpine-js", "apache-echarts", "c", "csharp"]
+related = ["cpp", "javascript", "repository", "rust", "alpine-js", "apache-echarts", "c", "csharp"]
 og_title = "Haskell: glossary"
 og_image = "og/glossary-haskell.png"
 keywords = ["Haskell", "Programming language", "Glossary", "Tomas Korcak"]

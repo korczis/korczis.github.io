@@ -17,7 +17,7 @@ definition = "Objektově orientovaný jazyk nad Java Virtual Machine, dlouho vý
 aliases = []
 reference = { title = "dev.java", url = "https://dev.java/learn/" }
 pages = ["projects/learning.cs.md"]
-related = ["c", "cpp", "csharp", "elixir", "haskell", "javascript", "repository", "ruby"]
+related = ["c", "cpp", "csharp", "elixir", "erlang", "haskell", "javascript", "repository"]
 og_title = "Java: slovník"
 og_image = "og/cs-glossary-java.png"
 keywords = ["Java", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

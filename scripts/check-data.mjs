@@ -7,6 +7,7 @@ import { readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parse } from 'smol-toml';
+import { inferCategory, ruleFindings } from './lib/repos.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const findings = [];
@@ -78,6 +79,24 @@ for (const p of catalogue.projects ?? []) {
 }
 if (index.counts?.own !== (index.repos ?? []).length) fail('data/index.json', 'counts.own does not match the listed repositories');
 
+// The category rules: none shadowed or dead, and every fixture (a repository with the category a
+// person judged right) is placed there by the rules themselves, not only by the stored index.
+for (const f of ruleFindings(categories, catalogue.inference)) fail('data/projects.toml', f);
+const fixtures = parse(readFileSync(join(ROOT, 'data/category-fixtures.toml'), 'utf8')).fixtures ?? {};
+const byName = new Map((index.repos ?? []).map((r) => [r.name, r]));
+const curatedRepos = new Set((catalogue.projects ?? []).map((p) => p.repo.toLowerCase()));
+let fixtureCount = 0;
+for (const [name, expected] of Object.entries(fixtures)) {
+  const where = `data/category-fixtures.toml ${name}`;
+  fixtureCount += 1;
+  if (!(expected in categories)) { fail(where, `expects ${expected}, which is no category`); continue; }
+  if (curatedRepos.has(name.toLowerCase())) { fail(where, 'is curated: its category is the catalogue\'s, not inferred'); continue; }
+  const r = byName.get(name);
+  if (!r) { fail(where, 'is not in data/index.json any more; remove the fixture'); continue; }
+  const got = inferCategory(r, categories, catalogue.inference);
+  if (got.category !== expected) fail(where, `the rules place it in ${got.category} (${got.by}: ${got.evidence.join(', ') || 'none'}), not ${expected}`);
+}
+
 // The owner's CV facts (ADR 0004) against static/schemas/cv.schema.json: the subset of JSON Schema
 // that schema uses (type, required, additionalProperties: false, pattern, minLength, enum, $ref).
 const cvSchema = JSON.parse(readFileSync(join(ROOT, 'static/schemas/cv.schema.json'), 'utf8'));
@@ -110,5 +129,5 @@ if (findings.length) {
   process.exit(1);
 }
 console.log(
-  `data: ${seen.size} projects, snapshot ${snapshot.generated_at} (${ageDays.toFixed(1)} days old), PASS`,
+  `data: ${seen.size} projects, ${fixtureCount} category fixtures, snapshot ${snapshot.generated_at} (${ageDays.toFixed(1)} days old), PASS`,
 );

@@ -7,15 +7,15 @@ weight = 3
 updated = "2026-11-14T17:44:30Z"
 
 [taxonomies]
-tags = ["AI engineering", "JavaScript", "HTML", "Shell"]
+tags = ["Web", "JavaScript", "HTML", "Shell"]
 
 [extra]
 repo = "korczis.github.io"
 og_title = "korczis.github.io: Tomas Korcak (korczis): software that proves its work. Projects, live s"
 og_image = "og/work-korczis-github-io.png"
 schema = "project"
-keywords = ["korczis.github.io", "AI engineering", "JavaScript", "HTML", "Shell", "Tomas Korcak"]
-terms = ["javascript", "html", "shell", "css", "ai-agent", "repository", "commit", "open-source"]
+keywords = ["korczis.github.io", "Web", "JavaScript", "HTML", "Shell", "Tomas Korcak"]
+terms = ["javascript", "html", "shell", "css", "static-site-generator", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -26,7 +26,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**korczis.github.io** is a project in [AI engineering](@/projects/ai.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (53.9 %), with [HTML](@/glossary/html.md), [Shell](@/glossary/shell.md) and [CSS](@/glossary/css.md).
+**korczis.github.io** is a project in [Web](@/projects/web.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (53.9 %), with [HTML](@/glossary/html.md), [Shell](@/glossary/shell.md) and [CSS](@/glossary/css.md).
 
 The [repository](@/glossary/repository.md) was created in December 2024; its latest [commit](@/glossary/commit.md) is from 14 November 2026. It reads “fix(verify): refuse a toolchain behind the lockfile before any gate runs”. That places it among the projects active in the last 12 months.
 

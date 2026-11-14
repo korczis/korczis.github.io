@@ -867,8 +867,6 @@
    "keywords": [
     "Inženýrství AI",
     "Majordomus",
-    "korczis.github.io",
-    "osint-case-ratcliffe-moscow-2026",
     "llm",
     "sig",
     "edna",
@@ -888,12 +886,12 @@
     "Data a GIS",
     "Data Atlas",
     "Crisis map",
-    "korczis",
     "apollo-crawler-extension",
+    "microcrawler",
+    "microcrawler-browser",
     "microcrawler-crawler-bam-brno-cz",
     "microcrawler-crawler-all",
     "microcrawler-crawler-base",
-    "microcrawler-crawler-craiglist-com",
     "Tomáš Korčák"
    ]
   },
@@ -911,9 +909,7 @@
     "ReadingPhoneNumbersInRealTime",
     "MinervaEye",
     "reading",
-    "skull-elixir",
-    "skull",
-    "skull-erlang",
+    "books",
     "Tomáš Korčák"
    ]
   },
@@ -928,11 +924,11 @@
    "keywords": [
     "Učení a experimenty",
     "happ",
+    "rustler-test",
     "Test-Elixir",
+    "skull-elixir",
+    "skull-rust",
     "node-proxy-upload",
-    "skull-cpp",
-    "grache-test",
-    "skull-emscripten",
     "Tomáš Korčák"
    ]
   },
@@ -946,12 +942,12 @@
    "og_image": "https://korczis.github.io/og/cs-category-libraries.png",
    "keywords": [
     "Knihovny",
+    "gauc-ex",
     "hydra",
-    "in-rust-we-trust",
-    "rustler-test",
-    "streamflow",
-    "sli2dli",
-    "rustler_mix",
+    "gauc.ex",
+    "easy-plugin-plugins",
+    "peg-parser",
+    "babel-plugin-transform-graphql",
     "Tomáš Korčák"
    ]
   },
@@ -993,9 +989,9 @@
     "distance-calculator",
     "rustas",
     "graph-flow",
-    "gooddata-graphql",
     "maze",
     "maze-js",
+    "haskell-world",
     "Tomáš Korčák"
    ]
   },
@@ -1009,6 +1005,7 @@
    "og_image": "https://korczis.github.io/og/cs-category-security.png",
    "keywords": [
     "Bezpečnost a OSINT",
+    "osint-case-ratcliffe-moscow-2026",
     "magic",
     "zlown",
     "peacemaker",
@@ -1067,12 +1064,12 @@
    "og_image": "https://korczis.github.io/og/cs-category-web.png",
    "keywords": [
     "Web",
-    "job-processor",
-    "nestravenkam",
-    "tosh",
-    "the-scratch",
-    "web-spa",
-    "microscratch-react",
+    "korczis.github.io",
+    "korczis",
+    "ApolloCrawler-github-io",
+    "korczis-com",
+    "korczis-github-com",
+    "pavian-eu",
     "Tomáš Korčák"
    ]
   },
@@ -1382,13 +1379,13 @@
    "url": "https://korczis.github.io/cs/work/job-processor/",
    "lang": "cs",
    "title": "job-processor · Tomas Korcak",
-   "description": "job-processor: projekt z kategorie Web, hlavní jazyk Elixir, poslední commit 1. srpna 2024.",
+   "description": "job-processor: projekt z kategorie Nástroje, hlavní jazyk Elixir, poslední commit 1. srpna 2024.",
    "type": "project",
    "category": null,
    "og_image": "https://korczis.github.io/og/cs-work-job-processor.png",
    "keywords": [
     "job-processor",
-    "Web",
+    "Nástroje",
     "Elixir",
     "Tomáš Korčák"
    ]
@@ -1414,13 +1411,13 @@
    "url": "https://korczis.github.io/cs/work/korczis-github-io/",
    "lang": "cs",
    "title": "korczis.github.io · Tomas Korcak",
-   "description": "korczis.github.io: projekt z kategorie Inženýrství AI, hlavní jazyk JavaScript, poslední commit 14. listopadu 2026.",
+   "description": "korczis.github.io: projekt z kategorie Web, hlavní jazyk JavaScript, poslední commit 14. listopadu 2026.",
    "type": "project",
    "category": null,
    "og_image": "https://korczis.github.io/og/cs-work-korczis-github-io.png",
    "keywords": [
     "korczis.github.io",
-    "Inženýrství AI",
+    "Web",
     "JavaScript",
     "HTML",
     "Shell",
@@ -1448,13 +1445,13 @@
    "url": "https://korczis.github.io/cs/work/korczis/",
    "lang": "cs",
    "title": "korczis · Tomas Korcak",
-   "description": "korczis: projekt z kategorie Data a GIS, hlavní jazyk JavaScript, poslední commit 14. listopadu 2026.",
+   "description": "korczis: projekt z kategorie Web, hlavní jazyk JavaScript, poslední commit 14. listopadu 2026.",
    "type": "project",
    "category": null,
    "og_image": "https://korczis.github.io/og/cs-work-korczis.png",
    "keywords": [
     "korczis",
-    "Data a GIS",
+    "Web",
     "JavaScript",
     "Tomáš Korčák"
    ]
@@ -1573,13 +1570,13 @@
    "url": "https://korczis.github.io/cs/work/osint-case-ratcliffe-moscow-2026/",
    "lang": "cs",
    "title": "osint-case-ratcliffe-moscow-2026 · Tomas Korcak",
-   "description": "osint-case-ratcliffe-moscow-2026: projekt z kategorie Inženýrství AI, hlavní jazyk HTML, poslední commit 26. srpna 2026.",
+   "description": "osint-case-ratcliffe-moscow-2026: projekt z kategorie Bezpečnost a OSINT, hlavní jazyk HTML, poslední commit 26. srpna 2026.",
    "type": "project",
    "category": null,
    "og_image": "https://korczis.github.io/og/cs-work-osint-case-ratcliffe-moscow-2026.png",
    "keywords": [
     "osint-case-ratcliffe-moscow-2026",
-    "Inženýrství AI",
+    "Bezpečnost a OSINT",
     "HTML",
     "Python",
     "Shell",
@@ -2613,8 +2610,6 @@
    "keywords": [
     "AI engineering",
     "Majordomus",
-    "korczis.github.io",
-    "osint-case-ratcliffe-moscow-2026",
     "llm",
     "sig",
     "edna",
@@ -2634,12 +2629,12 @@
     "Data and GIS",
     "Data Atlas",
     "Crisis map",
-    "korczis",
     "apollo-crawler-extension",
+    "microcrawler",
+    "microcrawler-browser",
     "microcrawler-crawler-bam-brno-cz",
     "microcrawler-crawler-all",
     "microcrawler-crawler-base",
-    "microcrawler-crawler-craiglist-com",
     "Tomas Korcak"
    ]
   },
@@ -2657,9 +2652,7 @@
     "ReadingPhoneNumbersInRealTime",
     "MinervaEye",
     "reading",
-    "skull-elixir",
-    "skull",
-    "skull-erlang",
+    "books",
     "Tomas Korcak"
    ]
   },
@@ -2674,11 +2667,11 @@
    "keywords": [
     "Learning and experiments",
     "happ",
+    "rustler-test",
     "Test-Elixir",
+    "skull-elixir",
+    "skull-rust",
     "node-proxy-upload",
-    "skull-cpp",
-    "grache-test",
-    "skull-emscripten",
     "Tomas Korcak"
    ]
   },
@@ -2692,12 +2685,12 @@
    "og_image": "https://korczis.github.io/og/category-libraries.png",
    "keywords": [
     "Libraries",
+    "gauc-ex",
     "hydra",
-    "in-rust-we-trust",
-    "rustler-test",
-    "streamflow",
-    "sli2dli",
-    "rustler_mix",
+    "gauc.ex",
+    "easy-plugin-plugins",
+    "peg-parser",
+    "babel-plugin-transform-graphql",
     "Tomas Korcak"
    ]
   },
@@ -2739,9 +2732,9 @@
     "distance-calculator",
     "rustas",
     "graph-flow",
-    "gooddata-graphql",
     "maze",
     "maze-js",
+    "haskell-world",
     "Tomas Korcak"
    ]
   },
@@ -2755,6 +2748,7 @@
    "og_image": "https://korczis.github.io/og/category-security.png",
    "keywords": [
     "Security and OSINT",
+    "osint-case-ratcliffe-moscow-2026",
     "magic",
     "zlown",
     "peacemaker",
@@ -2813,12 +2807,12 @@
    "og_image": "https://korczis.github.io/og/category-web.png",
    "keywords": [
     "Web",
-    "job-processor",
-    "nestravenkam",
-    "tosh",
-    "the-scratch",
-    "web-spa",
-    "microscratch-react",
+    "korczis.github.io",
+    "korczis",
+    "ApolloCrawler-github-io",
+    "korczis-com",
+    "korczis-github-com",
+    "pavian-eu",
     "Tomas Korcak"
    ]
   },
@@ -3134,7 +3128,7 @@
    "og_image": "https://korczis.github.io/og/work-job-processor.png",
    "keywords": [
     "job-processor",
-    "Web",
+    "Tools",
     "Elixir",
     "Tomas Korcak"
    ]
@@ -3166,7 +3160,7 @@
    "og_image": "https://korczis.github.io/og/work-korczis-github-io.png",
    "keywords": [
     "korczis.github.io",
-    "AI engineering",
+    "Web",
     "JavaScript",
     "HTML",
     "Shell",
@@ -3200,7 +3194,7 @@
    "og_image": "https://korczis.github.io/og/work-korczis.png",
    "keywords": [
     "korczis",
-    "Data and GIS",
+    "Web",
     "JavaScript",
     "Tomas Korcak"
    ]
@@ -3325,7 +3319,7 @@
    "og_image": "https://korczis.github.io/og/work-osint-case-ratcliffe-moscow-2026.png",
    "keywords": [
     "osint-case-ratcliffe-moscow-2026",
-    "AI engineering",
+    "Security and OSINT",
     "HTML",
     "Python",
     "Shell",
@@ -3594,28 +3588,28 @@
    "name": "AI engineering",
    "description": "Supervision for AI coding agents: one policy for every tool, scoped tasks, and work that lands only when it is proven.",
    "url": "https://korczis.github.io/projects/ai/",
-   "repositories": 7
+   "repositories": 5
   },
   {
    "key": "science",
    "name": "Science and visualisation",
    "description": "Honest instruments and drawn algorithms in the browser: acoustics, physics, sorting, mazes, each readout measured.",
    "url": "https://korczis.github.io/projects/science/",
-   "repositories": 14
+   "repositories": 12
   },
   {
    "key": "knowledge",
    "name": "Knowledge",
    "description": "Knowledge bases you can check: cross-linked taxonomies with their sources, built as books, sites and graphs.",
    "url": "https://korczis.github.io/projects/knowledge/",
-   "repositories": 8
+   "repositories": 5
   },
   {
    "key": "data",
    "name": "Data and GIS",
    "description": "Catalogues and maps of open data: geodata sources, incident reports geocoded and served from one registry.",
    "url": "https://korczis.github.io/projects/data/",
-   "repositories": 48
+   "repositories": 50
   },
   {
    "key": "media",
@@ -3629,42 +3623,42 @@
    "name": "Security and OSINT",
    "description": "Open-source intelligence, radio and network security research: cases, proofs of concept and the tooling around them.",
    "url": "https://korczis.github.io/projects/security/",
-   "repositories": 4
+   "repositories": 5
   },
   {
    "key": "systems",
    "name": "Systems and infrastructure",
    "description": "Servers, clusters and the plumbing beneath software: immutable hosts, packet processing, embedded boards and deployment.",
    "url": "https://korczis.github.io/projects/systems/",
-   "repositories": 16
+   "repositories": 17
   },
   {
    "key": "web",
    "name": "Web",
    "description": "Websites and web applications: single-page apps, Phoenix and Elm frontends, landing pages and the sites of friends.",
    "url": "https://korczis.github.io/projects/web/",
-   "repositories": 9
+   "repositories": 15
   },
   {
    "key": "libraries",
    "name": "Libraries",
    "description": "Reusable building blocks for other programs: clients, bindings, validators, parsers and framework extensions, mostly Elixir and Rust.",
    "url": "https://korczis.github.io/projects/libraries/",
-   "repositories": 10
+   "repositories": 7
   },
   {
    "key": "learning",
    "name": "Learning and experiments",
    "description": "Learning materials, katas and experiments across many languages: the sketches that came before the projects.",
    "url": "https://korczis.github.io/projects/learning/",
-   "repositories": 16
+   "repositories": 21
   },
   {
    "key": "tools",
    "name": "Tools",
    "description": "Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist search.",
    "url": "https://korczis.github.io/projects/tools/",
-   "repositories": 72
+   "repositories": 67
   }
  ],
  "projects": [
@@ -3875,7 +3869,7 @@
    "name": "korczis.github.io",
    "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
    "language": "JavaScript",
-   "category": "ai",
+   "category": "web",
    "github": "https://github.com/korczis/korczis.github.io",
    "gitlab": null,
    "site": null,
@@ -3886,7 +3880,7 @@
    "name": "korczis",
    "description": "Tomas Korcak: profile README, derived from korczis.github.io/site.json",
    "language": "JavaScript",
-   "category": "data",
+   "category": "web",
    "github": "https://github.com/korczis/korczis",
    "gitlab": null,
    "site": "https://korczis.github.io/",
@@ -4029,7 +4023,7 @@
    "name": "osint-case-ratcliffe-moscow-2026",
    "description": "Open-source intelligence assessment of the CIA Director's unannounced Moscow visit (2026-08-25) — maintained with Claude Code skills; reusable OSINT case toolkit",
    "language": "HTML",
-   "category": "ai",
+   "category": "security",
    "github": "https://github.com/korczis/osint-case-ratcliffe-moscow-2026",
    "gitlab": null,
    "site": "https://korczis.github.io/osint-case-ratcliffe-moscow-2026/",
@@ -4117,7 +4111,7 @@
    "name": "ApolloCrawler-github-io",
    "description": null,
    "language": null,
-   "category": "tools",
+   "category": "web",
    "github": null,
    "gitlab": "https://gitlab.com/korczis/ApolloCrawler-github-io",
    "site": null,
@@ -4139,7 +4133,7 @@
    "name": "microcrawler",
    "description": null,
    "language": null,
-   "category": "tools",
+   "category": "data",
    "github": null,
    "gitlab": "https://gitlab.com/korczis/microcrawler",
    "site": null,
@@ -4150,7 +4144,7 @@
    "name": "microcrawler-browser",
    "description": "Proof-of-Concept: Microcrawler in your Browser!",
    "language": null,
-   "category": "tools",
+   "category": "data",
    "github": null,
    "gitlab": "https://gitlab.com/korczis/microcrawler-browser",
    "site": null,
@@ -4282,7 +4276,7 @@
    "name": "microcrawler-elixir",
    "description": "Microcrawler Implemented in Elixir",
    "language": null,
-   "category": "tools",
+   "category": "data",
    "github": null,
    "gitlab": "https://gitlab.com/korczis/microcrawler-elixir",
    "site": null,
@@ -4315,7 +4309,7 @@
    "name": "apollocrawler-com",
    "description": "Website for apollocrawler.com ...",
    "language": null,
-   "category": "tools",
+   "category": "data",
    "github": null,
    "gitlab": "https://gitlab.com/korczis/apollocrawler-com",
    "site": null,
@@ -4326,7 +4320,7 @@
    "name": "gauc-ex",
    "description": "Elxir Wrapper for Gauc - Rust Wrapper for Couchbase",
    "language": null,
-   "category": "data",
+   "category": "libraries",
    "github": null,
    "gitlab": "https://gitlab.com/korczis/gauc-ex",
    "site": null,
@@ -4337,7 +4331,7 @@
    "name": "korczis-com",
    "description": "korczis.com website",
    "language": null,
-   "category": "tools",
+   "category": "web",
    "github": null,
    "gitlab": "https://gitlab.com/korczis/korczis-com",
    "site": null,
@@ -4348,7 +4342,7 @@
    "name": "korczis-github-com",
    "description": "Github Pages",
    "language": null,
-   "category": "tools",
+   "category": "web",
    "github": null,
    "gitlab": "https://gitlab.com/korczis/korczis-github-com",
    "site": null,
@@ -4381,7 +4375,7 @@
    "name": "pavian-eu",
    "description": "pavian.eu website",
    "language": null,
-   "category": "tools",
+   "category": "web",
    "github": null,
    "gitlab": "https://gitlab.com/korczis/pavian-eu",
    "site": null,
@@ -4480,7 +4474,7 @@
    "name": "job-processor",
    "description": "This is a simple web service built with Elixir, Plug, and Cowboy that processes job tasks with dependencies and generates execution order and bash scripts.",
    "language": null,
-   "category": "web",
+   "category": "tools",
    "github": null,
    "gitlab": "https://gitlab.com/korczis/job-processor",
    "site": null,
@@ -4986,7 +4980,7 @@
    "name": "gauc.ex",
    "description": "Elxir Wrapper for Gauc - Rust Wrapper for Couchbase",
    "language": "Elixir",
-   "category": "data",
+   "category": "libraries",
    "github": "https://github.com/korczis/gauc.ex",
    "gitlab": null,
    "site": null,
@@ -5052,7 +5046,7 @@
    "name": "in-rust-we-trust",
    "description": "In Rust We Trust",
    "language": null,
-   "category": "libraries",
+   "category": "tools",
    "github": "https://github.com/korczis/in-rust-we-trust",
    "gitlab": "https://gitlab.com/korczis/in-rust-we-trust",
    "site": null,
@@ -5074,7 +5068,7 @@
    "name": "rustler-test",
    "description": "Working Example of Rustler - Safe Rust bridge for creating Erlang NIF functions",
    "language": "Elixir",
-   "category": "libraries",
+   "category": "learning",
    "github": "https://github.com/korczis/rustler-test",
    "gitlab": "https://gitlab.com/korczis/rustler-test",
    "site": null,
@@ -5140,7 +5134,7 @@
    "name": "streamflow",
    "description": "Stream Flow - Fast Stream Processing in Rust",
    "language": "Rust",
-   "category": "libraries",
+   "category": "tools",
    "github": "https://github.com/korczis/streamflow",
    "gitlab": "https://gitlab.com/korczis/streamflow",
    "site": null,
@@ -5151,7 +5145,7 @@
    "name": "sli2dli",
    "description": "SLI to DLI implementation written in rust. Nothing more, nothing less.",
    "language": "Rust",
-   "category": "libraries",
+   "category": "tools",
    "github": "https://github.com/korczis/sli2dli",
    "gitlab": "https://gitlab.com/korczis/sli2dli",
    "site": null,
@@ -5162,7 +5156,7 @@
    "name": "wims",
    "description": "Where is my space?",
    "language": "Rust",
-   "category": "systems",
+   "category": "tools",
    "github": "https://github.com/korczis/wims",
    "gitlab": "https://gitlab.com/korczis/wims",
    "site": null,
@@ -5239,7 +5233,7 @@
    "name": "gooddata-graphql",
    "description": "GoodData Web Application Written in Elixir",
    "language": "Elixir",
-   "category": "science",
+   "category": "data",
    "github": "https://github.com/korczis/gooddata-graphql",
    "gitlab": "https://gitlab.com/korczis/gooddata-graphql",
    "site": null,
@@ -5250,7 +5244,7 @@
    "name": "skull-elixir",
    "description": "Programming learning materials, examples, sources ...",
    "language": "Elixir",
-   "category": "knowledge",
+   "category": "learning",
    "github": "https://github.com/korczis/skull-elixir",
    "gitlab": "https://gitlab.com/korczis/skull-elixir",
    "site": null,
@@ -5305,7 +5299,7 @@
    "name": "rustler_mix",
    "description": "Rustler Mix",
    "language": "Elixir",
-   "category": "libraries",
+   "category": "tools",
    "github": "https://github.com/korczis/rustler_mix",
    "gitlab": "https://gitlab.com/korczis/rustler_mix",
    "site": null,
@@ -5360,7 +5354,7 @@
    "name": "skull-rust",
    "description": "Rust experiments",
    "language": "Rust",
-   "category": "libraries",
+   "category": "learning",
    "github": "https://github.com/korczis/skull-rust",
    "gitlab": "https://gitlab.com/korczis/skull-rust",
    "site": null,
@@ -5404,7 +5398,7 @@
    "name": "babel-plugin-transform-graphql",
    "description": "Babel Plugin for Transforming GraphQL",
    "language": "JavaScript",
-   "category": "science",
+   "category": "libraries",
    "github": "https://github.com/korczis/babel-plugin-transform-graphql",
    "gitlab": "https://gitlab.com/korczis/babel-plugin-transform-graphql",
    "site": null,
@@ -5448,7 +5442,7 @@
    "name": "microcrawler-ng",
    "description": "Microcrawler",
    "language": "JavaScript",
-   "category": "tools",
+   "category": "data",
    "github": "https://github.com/korczis/microcrawler-ng",
    "gitlab": "https://gitlab.com/korczis/microcrawler-ng",
    "site": null,
@@ -5525,7 +5519,7 @@
    "name": "pavian.eu",
    "description": "pavian.eu website",
    "language": "ApacheConf",
-   "category": "tools",
+   "category": "web",
    "github": "https://github.com/korczis/pavian.eu",
    "gitlab": null,
    "site": null,
@@ -5580,7 +5574,7 @@
    "name": "docker-dstk",
    "description": "Dockerized http://www.datasciencetoolkit.org",
    "language": "Shell",
-   "category": "data",
+   "category": "systems",
    "github": "https://github.com/korczis/docker-dstk",
    "gitlab": "https://gitlab.com/korczis/docker-dstk",
    "site": null,
@@ -5591,7 +5585,7 @@
    "name": "docker-datasciencetoolbox",
    "description": "Dockerized http://datasciencetoolbox.org",
    "language": null,
-   "category": "data",
+   "category": "systems",
    "github": "https://github.com/korczis/docker-datasciencetoolbox",
    "gitlab": "https://gitlab.com/korczis/docker-datasciencetoolbox",
    "site": null,
@@ -5844,7 +5838,7 @@
    "name": "skull",
    "description": "Programming learning materials, examples, sources ...",
    "language": "Shell",
-   "category": "knowledge",
+   "category": "learning",
    "github": "https://github.com/korczis/skull",
    "gitlab": "https://gitlab.com/korczis/skull",
    "site": null,
@@ -5899,7 +5893,7 @@
    "name": "skull-erlang",
    "description": "Programming learning materials, examples, sources ...",
    "language": "Erlang",
-   "category": "knowledge",
+   "category": "learning",
    "github": "https://github.com/korczis/skull-erlang",
    "gitlab": "https://gitlab.com/korczis/skull-erlang",
    "site": null,
@@ -5998,7 +5992,7 @@
    "name": "apollocrawler.com",
    "description": "Website for apollocrawler.com ...",
    "language": "JavaScript",
-   "category": "tools",
+   "category": "data",
    "github": "https://github.com/korczis/apollocrawler.com",
    "gitlab": null,
    "site": null,

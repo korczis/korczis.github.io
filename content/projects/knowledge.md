@@ -11,11 +11,11 @@ tags = ["Knowledge", "Kompendium", "ReadingPhoneNumbersInRealTime", "MinervaEye"
 
 [extra]
 category = "knowledge"
-og_title = "Knowledge: 8 repositories."
+og_title = "Knowledge: 5 repositories."
 og_image = "og/category-knowledge.png"
 schema = "collection"
-terms = ["elixir", "swift", "erlang", "shell", "zola", "cytoscape-js", "apache-echarts", "alpine-js", "flowbite-pro", "repository"]
-keywords = ["Knowledge", "Kompendium", "ReadingPhoneNumbersInRealTime", "MinervaEye", "reading", "skull-elixir", "skull", "skull-erlang", "Tomas Korcak"]
+terms = ["swift", "elixir", "zola", "cytoscape-js", "apache-echarts", "alpine-js", "flowbite-pro", "repository"]
+keywords = ["Knowledge", "Kompendium", "ReadingPhoneNumbersInRealTime", "MinervaEye", "reading", "books", "Tomas Korcak"]
 
 [[extra.viz]]
 kind = "constellation"
@@ -28,6 +28,6 @@ tone = "night"
 +++
 Knowledge bases you can check: cross-linked taxonomies with their sources, built as books, sites and graphs.
 
-The category holds 8 original repositories, written most often in [Elixir](@/glossary/elixir.md), [Swift](@/glossary/swift.md), [Erlang](@/glossary/erlang.md) and [Shell](@/glossary/shell.md). Featured: **Kompendium**.
+The category holds 5 original repositories, written most often in [Swift](@/glossary/swift.md) and [Elixir](@/glossary/elixir.md). Featured: **Kompendium**.
 
-*How categories are made:* nobody assigns them by hand. A [repository](@/glossary/repository.md) falls into a category when its name, description or topics match the rule's keywords, otherwise its primary language decides; [forks](@/glossary/fork.md) and [mirrors](@/glossary/mirror.md) never count as the owner's work.
+*How categories are made:* nobody assigns them by hand. Every keyword of every category's rule is scored against a [repository](@/glossary/repository.md)'s name, topics and description, the name counting most, and the best score wins; when no keyword fits, its primary language decides. [Forks](@/glossary/fork.md) and [mirrors](@/glossary/mirror.md) never count as the owner's work.

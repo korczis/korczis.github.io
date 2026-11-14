@@ -17,7 +17,7 @@ definition = "Objektově orientovaný jazyk Microsoftu pro .NET."
 aliases = []
 reference = { title = "C# documentation", url = "https://learn.microsoft.com/en-us/dotnet/csharp/" }
 pages = ["projects/learning.cs.md", "projects/tools.cs.md"]
-related = ["cpp", "elixir", "javascript", "repository", "ruby", "shell", "c", "haskell"]
+related = ["cpp", "elixir", "javascript", "repository", "ruby", "rust", "shell", "c"]
 og_title = "C#: slovník"
 og_image = "og/cs-glossary-csharp.png"
 keywords = ["C#", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

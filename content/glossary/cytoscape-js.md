@@ -17,7 +17,7 @@ definition = "A library for drawing and analysing graphs (networks of nodes and 
 aliases = []
 reference = { title = "js.cytoscape.org", url = "https://js.cytoscape.org/" }
 pages = ["projects/knowledge.md", "stack.md", "work/kompendium-epistemicke-anihilace.md"]
-related = ["alpine-js", "apache-echarts", "flowbite-pro", "zola", "elixir", "github-pages", "repository", "shell"]
+related = ["alpine-js", "apache-echarts", "flowbite-pro", "zola", "elixir", "github-pages", "repository", "chart-js"]
 og_title = "Cytoscape.js: glossary"
 og_image = "og/glossary-cytoscape-js.png"
 keywords = ["Cytoscape.js", "Technology", "Glossary", "Tomas Korcak"]

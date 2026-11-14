@@ -17,7 +17,7 @@ definition = "A dynamic, expressive language designed for programmer happiness; 
 aliases = []
 reference = { title = "ruby-lang.org", url = "https://www.ruby-lang.org/en/about/" }
 pages = ["about.md", "projects/data.md", "projects/learning.md", "projects/security.md", "projects/systems.md", "projects/tools.md"]
-related = ["javascript", "repository", "rust", "elixir", "shell", "cpp", "csharp", "open-source"]
+related = ["javascript", "repository", "rust", "elixir", "shell", "cpp", "csharp", "html"]
 og_title = "Ruby: glossary"
 og_image = "og/glossary-ruby.png"
 keywords = ["Ruby", "Programming language", "Glossary", "Tomas Korcak"]

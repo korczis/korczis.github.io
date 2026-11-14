@@ -7,15 +7,15 @@ weight = 37
 updated = "2024-08-01T11:50:56Z"
 
 [taxonomies]
-tags = ["Web", "Elixir"]
+tags = ["Tools", "Elixir"]
 
 [extra]
 repo = "job-processor"
 og_title = "job-processor: This is a simple web service built with Elixir, Plug, and Cowboy that proce"
 og_image = "og/work-job-processor.png"
 schema = "project"
-keywords = ["job-processor", "Web", "Elixir", "Tomas Korcak"]
-terms = ["elixir", "static-site-generator", "repository", "commit", "open-source"]
+keywords = ["job-processor", "Tools", "Elixir", "Tomas Korcak"]
+terms = ["elixir", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -26,7 +26,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**job-processor** is a project in [Web](@/projects/web.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (100 %).
+**job-processor** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (100 %).
 
 The [repository](@/glossary/repository.md) was created in August 2024; its latest [commit](@/glossary/commit.md) is from 1 August 2024. It reads “initial version”. That places it among the projects active in the last 48 months.
 
