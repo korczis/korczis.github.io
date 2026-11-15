@@ -428,6 +428,65 @@ async function checkDrawer(browser) {
   return findings;
 }
 
+// The Pro shell's desktop collapse, driven like a person would at 1440 px: the toggle narrows the
+// sidebar to its icons and the content follows, labels leave the eye but not the accessibility
+// tree, hover and keyboard focus widen it again, the choice survives a reload, the toggle's
+// aria-expanded and label follow, and nothing overflows.
+async function checkCollapse(browser) {
+  const findings = [];
+  const context = await browser.newContext({ viewport: { width: 1440, height: 900 }, reducedMotion: 'reduce' });
+  const page = await context.newPage();
+  await page.goto(BASE, { waitUntil: 'networkidle' });
+  const away = async () => { await page.mouse.move(900, 600); await page.evaluate(() => document.activeElement?.blur?.()); await page.waitForTimeout(250); };
+  const state = () => page.evaluate(() => {
+    const s = document.getElementById('sidebar');
+    const t = document.getElementById('toggleSidebar');
+    const label = s.querySelector('[data-sidebar-label]');
+    const links = [...s.querySelectorAll('a[href]')];
+    return {
+      width: Math.round(s.getBoundingClientRect().width),
+      margin: Math.round(parseFloat(getComputedStyle(document.getElementById('main-content')).marginLeft)),
+      expanded: t?.getAttribute('aria-expanded'), label: t?.getAttribute('aria-label'),
+      labelExpand: t?.dataset.labelExpand, labelCollapse: t?.dataset.labelCollapse,
+      labelWidth: Math.round(label?.getBoundingClientRect().width ?? -1),
+      unnamed: links.filter((a) => !(a.getAttribute('aria-label') || a.innerText.trim())).length,
+      overflow: document.scrollingElement.scrollWidth > window.innerWidth,
+    };
+  });
+  await away();
+  let st = await state();
+  if (st.expanded === undefined || st.expanded === null) { await context.close(); return ['no #toggleSidebar in the navbar']; }
+  if (st.width !== 256 || st.margin !== 256 || st.expanded !== 'true' || st.label !== st.labelCollapse) findings.push(`expanded at first: ${JSON.stringify(st)}`);
+  await page.click('#toggleSidebar');
+  await away();
+  st = await state();
+  if (st.width !== 64 || st.margin !== 64 || st.expanded !== 'false' || st.label !== st.labelExpand) findings.push(`collapsed: ${JSON.stringify(st)}`);
+  if (st.labelWidth > 1) findings.push(`collapsed, a label is still visible (${st.labelWidth} px wide)`);
+  if (st.unnamed || st.overflow) findings.push(`collapsed: ${st.unnamed} unnamed link(s), overflow=${st.overflow}`);
+  await page.hover('#sidebar a[href]');
+  await page.waitForTimeout(250);
+  st = await state();
+  if (st.width !== 256 || st.margin !== 64 || st.labelWidth <= 1) findings.push(`hovered, the collapsed sidebar must widen over the content: ${JSON.stringify(st)}`);
+  await away();
+  await page.focus('#sidebar a[href]');
+  await page.waitForTimeout(250);
+  st = await state();
+  if (st.width !== 256) findings.push(`focused, the collapsed sidebar must widen: ${JSON.stringify(st)}`);
+  await away();
+  await page.reload({ waitUntil: 'networkidle' });
+  await away();
+  st = await state();
+  if (st.width !== 64 || st.expanded !== 'false') findings.push(`after a reload the collapse must hold: ${JSON.stringify(st)}`);
+  await page.click('#toggleSidebar');
+  await away();
+  await page.reload({ waitUntil: 'networkidle' });
+  await away();
+  st = await state();
+  if (st.width !== 256 || st.margin !== 256 || st.expanded !== 'true') findings.push(`expanded again and reloaded: ${JSON.stringify(st)}`);
+  await context.close();
+  return findings;
+}
+
 // The catalogue's detail drawer: Details opens it with focus on its close button and the project
 // in the address; Escape closes it, makes it inert again and returns focus to the trigger; the
 // table view filters with the cards.
@@ -667,6 +726,7 @@ async function checkFrames(browser) {
 
 const results = [];
 let failed = 0;
+let pageFailures = 0;
 if (DERIVED.findings.length) {
   failed += 1;
   console.log('FAIL pages: the derived pages do not cover every template and language');
@@ -726,6 +786,16 @@ try {
       console.log('ok   drawer: opens, focus inside, links on top, Escape closes, desktop exposed');
     }
   }
+  if (!ONLY || ONLY.test('collapse')) {
+    const collapse = await checkCollapse(browser).catch((error) => [`threw: ${error.message.split('\n')[0]}`]);
+    if (collapse.length) {
+      failed += 1;
+      console.log('FAIL sidebar collapse (1440 px)');
+      for (const f of collapse) console.log(`     ${f}`);
+    } else {
+      console.log('ok   collapse: icons only, labels named, hover and focus widen, held across reloads, toggle state follows');
+    }
+  }
   for (const [name, rel] of PAGES.filter(([n]) => !ONLY || ONLY.test(n))) {
     const runs = FULL_RUNS.map(([w, s]) => [w, s, true]).concat(LAYOUT_WIDTHS.map((w) => [w, 'light', false]));
     for (const [width, scheme, full] of runs) {
@@ -741,6 +811,7 @@ try {
       const label = `/${rel} (${name}, ${width}/${scheme}${full ? '' : ', layout only'}) cls=${r.cls} ${r.kb} kB`;
       if (findings.length) {
         failed += 1;
+        pageFailures += 1;
         console.log(`FAIL ${label}`);
         for (const f of findings) console.log(`     ${f}`);
       } else {
@@ -757,5 +828,6 @@ for (const f of LINK_FAILURES) console.log(`FAIL link ${f}`);
 console.log(`links: ${checked} internal addresses and ${FRAGMENTS.size} in-page anchors checked, ${LINK_FAILURES.length} findings`);
 if (LINK_FAILURES.length) failed += 1;
 if (JSON_OUT) writeFileSync(JSON_OUT, JSON.stringify(results, null, 1));
-console.log(`audit: ${results.length - failed}/${results.length} runs without a finding`);
+console.log(`audit: ${results.length - pageFailures}/${results.length} page runs without a finding, `
+  + `${failed - pageFailures ? `${failed - pageFailures} other check(s) failed` : 'every other check passed'}`);
 process.exit(failed ? 1 : 0);

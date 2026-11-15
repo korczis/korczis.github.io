@@ -11,7 +11,7 @@
 {%- set on = " bg-gray-100 font-medium dark:bg-gray-700" -%}
 {%- set badge = "ml-3 inline-flex h-5 min-w-5 items-center justify-center rounded-full bg-primary-100 px-1.5 text-xs font-semibold text-primary-800 dark:bg-primary-200 dark:text-primary-800" -%}
 {%- set heading = "px-2 pb-2 pt-4 text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400" -%}
-<aside id="sidebar" class="fixed left-0 top-0 z-20 flex h-full w-64 shrink-0 -translate-x-full flex-col pt-16 transition-transform duration-75 lg:translate-x-0" aria-label="{{ trans(key="sidebar", lang=lang) }}">
+<aside id="sidebar" class="fixed left-0 top-0 z-20 flex h-full w-64 shrink-0 -translate-x-full flex-col pt-16 transition-[transform,width] duration-75 lg:translate-x-0" aria-label="{{ trans(key="sidebar", lang=lang) }}">
   <div class="relative flex min-h-0 flex-1 flex-col border-r border-gray-200 bg-white pt-0 dark:border-gray-700 dark:bg-gray-800">
     <div class="flex flex-1 flex-col overflow-y-auto pb-4 pt-5">
       <div class="flex-1 space-y-1 divide-y divide-gray-200 bg-white px-3 dark:divide-gray-700 dark:bg-gray-800">
@@ -30,38 +30,38 @@
           {%- set active = here == target or (link.path != "/" and here is starting_with(pat=target)) %}
           <li>
             <a href="{{ config.base_url }}{{ target }}" class="{{ item }}{% if active %}{{ on }}{% endif %}"{% if here == target %} aria-current="page"{% endif %}>
-              {{ <icon name={link.icon} class={ico} /> }}<span class="ml-3 flex-1 whitespace-nowrap">{{ trans(key=link.key, lang=lang) }}</span>
-              {%- if link.badge == "projects" %}<span class="{{ badge }}">{{ cat.projects | length }}</span>
-              {%- elif link.badge == "repositories" %}<span class="{{ badge }}">{{ six.counts.own }}</span>
-              {%- elif link.badge == "work" %}<span class="{{ badge }}">{{ src.repos | length }}</span>
-              {%- elif link.badge == "tags" %}<span class="{{ badge }}">{{ ntags.items | length }}</span>{% endif %}
+              {{ <icon name={link.icon} class={ico} /> }}<span data-sidebar-label class="ml-3 flex-1 whitespace-nowrap">{{ trans(key=link.key, lang=lang) }}</span>
+              {%- if link.badge == "projects" %}<span data-sidebar-label class="{{ badge }}">{{ cat.projects | length }}</span>
+              {%- elif link.badge == "repositories" %}<span data-sidebar-label class="{{ badge }}">{{ six.counts.own }}</span>
+              {%- elif link.badge == "work" %}<span data-sidebar-label class="{{ badge }}">{{ src.repos | length }}</span>
+              {%- elif link.badge == "tags" %}<span data-sidebar-label class="{{ badge }}">{{ ntags.items | length }}</span>{% endif %}
             </a>
           </li>
           {%- endif %}{% endfor %}
         </ul>
         <div class="pb-2">
-          <p class="{{ heading }}" id="sidebar-categories">{{ trans(key="categories", lang=lang) | safe }}</p>
+          <p data-sidebar-label class="{{ heading }}" id="sidebar-categories">{{ trans(key="categories", lang=lang) | safe }}</p>
           <ul class="space-y-1" aria-labelledby="sidebar-categories">
             {%- for key, c in cat.categories %}
             {%- set n = six.by_category[key] | default(value=0) %}
             {%- set path = "/projects/" ~ key ~ "/" %}
             <li>
               <a href="{{ config.base_url }}{{ lp }}{{ path }}" class="{{ item }}{% if here == lp ~ path %}{{ on }}{% endif %}"{% if here == lp ~ path %} aria-current="page"{% endif %}>
-                {{ <category_icon key={key} class={ico} /> }}<span class="ml-3 flex-1 text-sm leading-tight">{{ c["name" ~ sfx] }}</span><span class="{{ badge }}">{{ n }}</span>
+                {{ <category_icon key={key} class={ico} /> }}<span data-sidebar-label class="ml-3 flex-1 text-sm leading-tight">{{ c["name" ~ sfx] }}</span><span data-sidebar-label class="{{ badge }}">{{ n }}</span>
               </a>
             </li>
             {%- endfor %}
           </ul>
         </div>
         <div class="space-y-1 pt-2">
-          <p class="{{ heading }}">{{ trans(key="elsewhere", lang=lang) | safe }}</p>
-          <a href="{{ config.extra.majordomus_url }}" class="{{ item }}">{{ <icon name="shield" class={ico} /> }}<span class="ml-3 flex-1 text-sm">majordomus.dev</span>{{ <icon name="external" class="h-4 w-4 text-gray-500 dark:text-gray-400" /> }}</a>
-          <a href="https://github.com/{{ config.extra.github }}" class="{{ item }}">{{ <icon name="github" class={ico} /> }}<span class="ml-3 flex-1 text-sm">GitHub</span>{{ <icon name="external" class="h-4 w-4 text-gray-500 dark:text-gray-400" /> }}</a>
-          <a href="{{ get_url(path='llms.txt') }}" class="{{ item }}">{{ <icon name="book" class={ico} /> }}<span class="ml-3 flex-1 text-sm">llms.txt</span></a>
+          <p data-sidebar-label class="{{ heading }}">{{ trans(key="elsewhere", lang=lang) | safe }}</p>
+          <a href="{{ config.extra.majordomus_url }}" class="{{ item }}">{{ <icon name="shield" class={ico} /> }}<span data-sidebar-label class="ml-3 flex-1 text-sm">majordomus.dev</span><span data-sidebar-label>{{ <icon name="external" class="h-4 w-4 text-gray-500 dark:text-gray-400" /> }}</span></a>
+          <a href="https://github.com/{{ config.extra.github }}" class="{{ item }}">{{ <icon name="github" class={ico} /> }}<span data-sidebar-label class="ml-3 flex-1 text-sm">GitHub</span><span data-sidebar-label>{{ <icon name="external" class="h-4 w-4 text-gray-500 dark:text-gray-400" /> }}</span></a>
+          <a href="{{ get_url(path='llms.txt') }}" class="{{ item }}">{{ <icon name="book" class={ico} /> }}<span data-sidebar-label class="ml-3 flex-1 text-sm">llms.txt</span></a>
         </div>
       </div>
     </div>
-    <div class="hidden w-full justify-center border-t border-gray-200 p-4 text-xs text-gray-600 dark:border-gray-700 dark:text-gray-400 lg:flex">
+    <div data-sidebar-label class="hidden w-full justify-center border-t border-gray-200 p-4 text-xs text-gray-600 dark:border-gray-700 dark:text-gray-400 lg:flex">
       {{ trans(key="supervised_by", lang=lang) | safe }}<a href="{{ config.extra.majordomus_url }}" class="font-medium text-primary-700 hover:underline dark:text-primary-400">Majordomus</a>
     </div>
   </div>

@@ -33,6 +33,9 @@ source file as such.
   (`page_header`), KPI cards (`kpi`), list, chart and progress cards on `gray-50`/`gray-900`.
 - `static/js/site.js` keeps the drawer's accessibility state (backdrop z-10 under the z-20
   sidebar, `inert` when closed on mobile, never `aria-hidden` on desktop); the audit drives it.
+- From lg the Pro `#toggleSidebar` collapses the sidebar to its icons (`html[data-sidebar]`, set
+  before the first paint from `localStorage`); hover and keyboard focus widen it over the content,
+  and its labels are visually hidden, never removed, so every link keeps its name.
 - Tokens live in `styles/app.css` `@theme`; charts read them through `--hub-*` (rule
   project.viz-component-layer), so a chart and a card cannot disagree.
 - Flowbite JS is self-hosted (`static/js/vendor/flowbite.min.js`, copied by `scripts/vendor.mjs`).

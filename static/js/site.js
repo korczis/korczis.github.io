@@ -779,6 +779,26 @@
     syncSidebar();
   }
 
+  // The desktop collapse (Pro shell #toggleSidebar). The state lives on <html data-sidebar>, set
+  // before the first paint from localStorage; CSS narrows the sidebar, this keeps the button's
+  // aria-expanded and label in step and stores the choice. Visuals follow through their observers.
+  const collapseToggle = document.getElementById('toggleSidebar');
+  function syncCollapse() {
+    const collapsed = root.dataset.sidebar === 'collapsed';
+    collapseToggle.setAttribute('aria-expanded', collapsed ? 'false' : 'true');
+    collapseToggle.setAttribute('aria-label', collapseToggle.dataset[collapsed ? 'labelExpand' : 'labelCollapse']);
+  }
+  if (sidebar && collapseToggle) {
+    collapseToggle.addEventListener('click', () => {
+      const collapsed = root.dataset.sidebar !== 'collapsed';
+      if (collapsed) root.dataset.sidebar = 'collapsed';
+      else delete root.dataset.sidebar;
+      try { localStorage.setItem('sidebar-collapsed', collapsed ? '1' : '0'); } catch (e) { /* private window */ }
+      syncCollapse();
+    });
+    syncCollapse();
+  }
+
   // Texts the scripts render, in the page's language: KorczisHub.t('js_n_repositories', { n: 3 }).
   let i18n = { locale: 'en-GB', strings: {} };
   try {

@@ -31,10 +31,11 @@ attention to UI, UX and consistency.
   deployment, with screenshots as an artefact. Locally: `npm run verify` (one browser launch;
   mind the headless Chrome disk cost on the owner's Mac).
 - Interactions are driven like a person would: the mobile sidebar drawer (open, focus inside,
-  links above the backdrop, Escape, desktop exposed) and the catalogue's detail drawer and table
-  view (Details opens with focus and `?project=`, Escape closes and returns focus, the table
-  follows the filter), and the command palette (Ctrl+K opens with focus, Escape closes, search
-  ranks, Enter opens the project).
+  links above the backdrop, Escape, desktop exposed), the desktop collapse (icons only with named
+  links, hover and focus widen, held across a reload, the toggle's state), and the catalogue's
+  detail drawer and table view (Details opens with focus and `?project=`, Escape closes and
+  returns focus, the table follows the filter), and the command palette (Ctrl+K opens with
+  focus, Escape closes, search ranks, Enter opens the project).
 - Every framed visual is maximized, redrawn, restored and deep-linked, and every simulator
   parameter round-trips through its address (`checkFrames`, rule project.viz-ergonomics); every
   list twin's link resolves; a Czech page links only into the Czech tree.

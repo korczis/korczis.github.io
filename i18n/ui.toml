@@ -131,3 +131,11 @@ cs = "Další pojmy"
 [more_categories]
 en = "More categories"
 cs = "Další kategorie"
+
+[sidebar_collapse]
+en = "Collapse the sidebar"
+cs = "Sbalit postranní panel"
+
+[sidebar_expand]
+en = "Expand the sidebar"
+cs = "Rozbalit postranní panel"

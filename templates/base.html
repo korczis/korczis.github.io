@@ -43,6 +43,8 @@
       try { stored = localStorage.getItem('color-theme'); } catch (e) {}
       var dark = stored ? stored === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
       root.classList.toggle('dark', dark);
+      // The desktop sidebar's collapsed state (Pro shell), also before the first paint: no shift.
+      try { if (localStorage.getItem('sidebar-collapsed') === '1') root.dataset.sidebar = 'collapsed'; } catch (e) {}
     })();
   </script>
   <link rel="stylesheet" href="{{ get_url(path='css/app.css', cachebust=true) }}">
