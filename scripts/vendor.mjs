@@ -28,13 +28,16 @@ const BUNDLES = {
 const FONTS_TARGET = join(ROOT, 'static/fonts');
 const FONT_DIR = 'node_modules/@fontsource-variable/inter/files';
 const FONTS = ['inter-latin-wght-normal.woff2', 'inter-latin-ext-wght-normal.woff2'];
+// The SIL Open Font License travels with the font files it covers.
+const FONT_LICENCE = 'OFL.txt';
 
 mkdirSync(TARGET, { recursive: true });
 mkdirSync(FONTS_TARGET, { recursive: true });
 for (const name of readdirSync(FONTS_TARGET)) {
-  if (!FONTS.includes(name)) rmSync(join(FONTS_TARGET, name));
+  if (!FONTS.includes(name) && name !== FONT_LICENCE) rmSync(join(FONTS_TARGET, name));
 }
 for (const name of FONTS) copyFileSync(join(ROOT, FONT_DIR, name), join(FONTS_TARGET, name));
+copyFileSync(join(ROOT, FONT_DIR, '../LICENSE'), join(FONTS_TARGET, FONT_LICENCE));
 // A bundle the site no longer ships (a library dropped from BUNDLES) must not linger in a local
 // build's output: the directory holds exactly these files.
 for (const name of readdirSync(TARGET)) {
