@@ -6,9 +6,11 @@
 # this file names the jobs, not a second copy of that list.
 version: 1
 gates:
+  # Each `runs` is executable as written from the repository root (majordomus evidence
+  # --run-gates runs it); CI passes the same scripts its own event range instead.
   - id: commits
     job: commits
-    runs: scripts/lint-commits.sh
+    runs: scripts/lint-commits.sh --branch
     summary: every commit subject on the branch is a conventional commit
   - id: doctor
     job: supervision

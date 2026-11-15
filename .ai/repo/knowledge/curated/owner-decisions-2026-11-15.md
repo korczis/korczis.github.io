@@ -50,8 +50,10 @@ each ADR's Acceptance section (adr-0001 to adr-0006).
 - Then, after a Pages rebuild had brought the site back (200), the owner wrote at 2026-11-15T18:13Z:
   "unable.cz nesmi nikdy bezet!" (unable.cz must never run). This supersedes the answer above.
 - Done: its deploy workflow ("Build and Deploy") is disabled, so no push publishes it again.
-  The Pages API refuses to unpublish the site (422), and deleting the gh-pages branch it serves is
-  the owner's step (a local backup is kept in the owner's checkout). In this hub, unable.cz is in
+  The Pages API refused to unpublish the site (422); the owner deleted the gh-pages branch it
+  served (2026-11-15 18:18Z), which removed the Pages site, and unable.cz has answered 404 since
+  18:21Z (a local backup of the branch is kept in the owner's checkout). Its DNS still points at
+  GitHub Pages: the owner removes those records or verifies the domain, so no one else can claim it. In this hub, unable.cz is in
   the `hidden` list of `data/projects.toml`: it is counted, never listed, and its site is never
   linked; its work pages and Open Graph images are gone and every derived page re-derived.
 - Rule: nothing in this repository or its tooling publishes, links or rebuilds unable.cz. A
