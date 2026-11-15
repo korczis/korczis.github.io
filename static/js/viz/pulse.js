@@ -17,6 +17,10 @@
 KorczisHub.viz('pulse', {
   lib: 'd3',
   mount(box, source, { palette, colour, reducedMotion, motion, go, link, escape, hash, t }) {
+    // A commit title is shown as text: terminal colour codes and other control characters are
+    // dropped (the same expression as scripts/lib/plain.mjs, which cleans the snapshot).
+    // eslint-disable-next-line no-control-regex
+    const plain = (text) => String(text || '').replace(/\x1b\[[0-?]*[ -/]*[@-~]|\x1b\][^\x07\x1b]*(?:\x07|\x1b\\)|\x1b[@-_]/g, '').replace(/[\x00-\x08\x0b-\x1f\x7f-\x9f]/g, '');
     const embedded = !source ? [] : source.groups
       ? source.groups.flatMap((grp) => (grp.commits || []).map((c) => ({ ...c, repo: grp.repo, lane: grp.lane, category: grp.category })))
       : source.beats || [];
@@ -63,9 +67,9 @@ KorczisHub.viz('pulse', {
       id: `s:${i}`,
       repo: b.repo,
       type: source.mode === 'user' ? 'push' : 'commit',
-      lane: b.lane ?? (byType ? kindOf(b.message || '') : b.repo),
+      lane: b.lane ?? (byType ? kindOf(plain(b.message)) : b.repo),
       category: b.category ?? null,
-      message: b.message || '',
+      message: plain(b.message),
       at: Date.parse(b.at),
       weight: 1,
       url: b.url,
@@ -104,11 +108,11 @@ KorczisHub.viz('pulse', {
       } else if (type === 'fork') {
         url = p.forkee?.html_url || base;
       }
-      return { id: e.id, repo, type, lane: repo, category: null, message, at: Date.parse(e.created_at), weight, url };
+      return { id: e.id, repo, type, lane: repo, category: null, message: plain(message), at: Date.parse(e.created_at), weight, url };
     };
     // A commit of the repository endpoint, read as a beat.
     const commitBeat = (c) => {
-      const message = (c.commit?.message || '').split('\n')[0];
+      const message = plain((c.commit?.message || '').split('\n')[0]);
       return { id: c.sha, repo: source.repo, type: 'commit', lane: kindOf(message), category: null, message, at: Date.parse(c.commit?.committer?.date), weight: 1, url: c.html_url };
     };
 

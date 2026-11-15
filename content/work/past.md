@@ -28,6 +28,6 @@ tone = "night"
 +++
 **past** is a project in [Tools](@/projects/tools.md).
 
-The [repository](@/glossary/repository.md) was created in April 2025; its latest [commit](@/glossary/commit.md) is from 4 February 2026. It reads “\[38;2;248;248;242mfeat(aiad): inject AIAD v1.0.0 infrastructure\[0m”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created in April 2025; its latest [commit](@/glossary/commit.md) is from 4 February 2026. It reads “feat(aiad): inject AIAD v1.0.0 infrastructure”. That places it among the projects active in the last 12 months.
 
 *How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 2 commits as a heartbeat, one lane per commit type (feat, fix, docs…), from a snapshot refreshed every 6 hours. The concepts below are explained in the [glossary](@/glossary/_index.md).
