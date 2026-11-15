@@ -9,7 +9,7 @@
 // day_url: "...{date}..." | null, work: [{ repo, at: [date, ...] }] } (the bare calendar is read too).
 KorczisHub.viz('spiral', {
   lib: 'd3',
-  mount(box, source, { palette, motion, go, link, escape, t, id }) {
+  mount(box, source, { palette, motion, go, link, escape, t, id, param }) {
     const calendar = source?.calendar ?? source ?? {};
     const all = (calendar.days ?? [])
       .filter((d) => Array.isArray(d) && /^\d{4}-\d{2}-\d{2}$/.test(d[0]))
@@ -48,14 +48,9 @@ KorczisHub.viz('spiral', {
     const DAY = 30;
     const HOLD = 1500;
     const defaults = { window: 'last', threshold: 0 };
-    const param = (key) => new URLSearchParams(location.search).get(`${id}.${key}`);
     const state = {
-      window: WINDOWS.includes(param('window')) ? param('window') : defaults.window,
-      threshold: (() => {
-        const raw = param('threshold');
-        const n = Number(raw);
-        return raw !== null && raw !== '' && Number.isFinite(n) ? Math.min(MAX, Math.max(0, Math.round(n))) : defaults.threshold;
-      })(),
+      window: param.oneOf('window', WINDOWS, defaults.window),
+      threshold: param.int('threshold', 0, MAX, defaults.threshold),
       cursor: null,
     };
 

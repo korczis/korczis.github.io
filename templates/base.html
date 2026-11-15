@@ -47,6 +47,12 @@
       try { if (localStorage.getItem('sidebar-collapsed') === '1') root.dataset.sidebar = 'collapsed'; } catch (e) {}
     })();
   </script>
+  {#- Inter's latin file is on every page's first paint; a Czech page needs latin-ext for its
+      diacritics as well (styles/app.css declares both). #}
+  <link rel="preload" href="{{ get_url(path='fonts/inter-latin-wght-normal.woff2') }}" as="font" type="font/woff2" crossorigin>
+  {%- if lang == "cs" %}
+  <link rel="preload" href="{{ get_url(path='fonts/inter-latin-ext-wght-normal.woff2') }}" as="font" type="font/woff2" crossorigin>
+  {%- endif %}
   <link rel="stylesheet" href="{{ get_url(path='css/app.css', cachebust=true) }}">
   {%- block head %}{% endblock head %}
 </head>

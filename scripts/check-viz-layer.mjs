@@ -16,6 +16,7 @@
 // Every visual that is not static (a maximizable simulator):
 //  - its mount returns a handle with items() (the list twin) and controls() (its parameters);
 //  - keeps no ResizeObserver of its own (the layer resizes it) and navigates only through go();
+//  - reads its state from the address only through ctx.param, never location or URLSearchParams;
 //  - takes every duration from motion() or honours reducedMotion, with no literal duration;
 //  - holds no colour literal (#hex, rgb(, rgba(, hsl(): colours come from palette();
 //  - references neither Chart.js nor Cytoscape (one ECharts layer);
@@ -214,11 +215,19 @@ for (const file of walk(join(ROOT, 'static/js')).filter((f) => f.endsWith('.js')
     }
   }
   const ids = (name) => all.filter((n) => n.type === 'Identifier' && n.name === name);
+  const reads = new Set();
   for (const n of all) {
     const observer = n.type === 'NewExpression' && (n.callee.name === 'ResizeObserver' || (n.callee.type === 'MemberExpression' && n.callee.property?.name === 'ResizeObserver'));
     if (observer) findings.push(`${rel}:${line(n)}: keeps its own ResizeObserver; the layer calls resize() or update()`);
     const listen = n.type === 'CallExpression' && isMember(n.callee, null, 'addEventListener') && n.arguments[0]?.type === 'Literal' && n.arguments[0].value === 'resize';
     if (listen) findings.push(`${rel}:${line(n)}: listens to resize itself; the layer calls resize() or update()`);
+    // The query string is the visual's state; a path compared with location.pathname is not.
+    const query = n.type === 'MemberExpression' && ['search', 'searchParams'].includes(n.property?.name);
+    const parser = n.type === 'NewExpression' && n.callee.name === 'URLSearchParams';
+    if ((query || parser) && !reads.has(line(n))) {
+      reads.add(line(n));
+      findings.push(`${rel}:${line(n)}: reads the address itself; take its state from ctx.param (raw, oneOf, pick, int)`);
+    }
   }
   if (!all.some((n) => n.type === 'CallExpression' && (n.callee.name === 'go' || isMember(n.callee, null, 'go')))) findings.push(`${rel}: never navigates through go(url, event)`);
   if (!ids('motion').length && !ids('reducedMotion').length) findings.push(`${rel}: animates without motion() or reducedMotion`);

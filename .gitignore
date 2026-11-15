@@ -7,6 +7,7 @@
 /public/
 /static/css/app.css
 /static/js/vendor/
+/static/fonts/
 
 # Local noise.
 .DS_Store
