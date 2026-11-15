@@ -36,7 +36,11 @@ const opts = {
 };
 
 const { names, sources } = loadDenylist();
-const SECRET_COMMAND = 'node scripts/check-nda.mjs --secret | gh secret set NDA_DENYLIST -R korczis/korczis.github.io';
+// A Dependabot run reads the Dependabot secret store, never the Actions one: the same list goes
+// into both, each with its own command.
+const SECRET_SET = 'gh secret set NDA_DENYLIST -R korczis/korczis.github.io';
+const DEPENDABOT = process.env.GITHUB_ACTOR === 'dependabot[bot]';
+const SECRET_COMMAND = `node scripts/check-nda.mjs --secret | ${SECRET_SET}${DEPENDABOT ? ' --app dependabot' : ''}`;
 if (flags.secret) {
   // The names leave this process only into a pipe the owner wrote: never a screen, a log or CI.
   if (process.env.CI) { console.error('✗ nda: --secret never runs in CI'); process.exit(2); }
@@ -48,7 +52,7 @@ if (flags.secret) {
 }
 if (!names.length) {
   if (process.env.CI) {
-    console.error('✗ nda: no denylist in CI. The owner sets it once with:');
+    console.error(`✗ nda: no denylist in CI${DEPENDABOT ? ' (Dependabot secret store)' : ''}. The owner sets it once with:`);
     console.error(`  ${SECRET_COMMAND}`);
     process.exit(1);
   }
