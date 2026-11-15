@@ -67,7 +67,7 @@ Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist s
 ## Every original repository
 
 > 212 repositories on GitHub and GitLab where the owner wrote at least half of the commits,
-> derived 2026-11-14T18:33:32Z. Forks and mirrors (283) are not listed.
+> derived 2026-11-14T23:17:37Z. Forks and mirrors (283) are not listed.
 
 ### AI engineering (5)
 
@@ -79,8 +79,8 @@ Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist s
 
 ### Science and visualisation (12)
 
-- algoglyph: Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores. (TypeScript, 2026). article https://korczis.github.io/work/algoglyph/; GitHub https://github.com/korczis/algoglyph; site https://korczis.github.io/algoglyph/
 - oscilla: A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted. (JavaScript, 2026). article https://korczis.github.io/work/oscilla/; GitHub https://github.com/korczis/oscilla; site https://korczis.github.io/oscilla/
+- algoglyph: Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores. (TypeScript, 2026). article https://korczis.github.io/work/algoglyph/; GitHub https://github.com/korczis/algoglyph; site https://korczis.github.io/algoglyph/
 - distance-calculator (2024). article https://korczis.github.io/work/distance-calculator/; GitLab https://gitlab.com/korczis/distance-calculator
 - maze-rs: Maze for Programmers (Rust) (Rust, 2016). GitHub https://github.com/korczis/maze-rs; GitLab https://gitlab.com/korczis/maze-rs; site https://korczis.github.io/maze-rs/
 - rustas: Rust - Assembler, Mathematics, GPU and many others (Rust, 2018). GitHub https://github.com/korczis/rustas; GitLab https://gitlab.com/korczis/rustas
@@ -194,8 +194,8 @@ Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist s
 
 ### Web (15)
 
-- korczis.github.io: Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus. (JavaScript, 2024). article https://korczis.github.io/work/korczis-github-io/; GitHub https://github.com/korczis/korczis.github.io
 - korczis: Tomas Korcak: profile README, derived from korczis.github.io/site.json (JavaScript, 2026). article https://korczis.github.io/work/korczis/; GitHub https://github.com/korczis/korczis; site https://korczis.github.io/
+- korczis.github.io: Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus. (JavaScript, 2024). article https://korczis.github.io/work/korczis-github-io/; GitHub https://github.com/korczis/korczis.github.io
 - ApolloCrawler-github-io (2019). GitLab https://gitlab.com/korczis/ApolloCrawler-github-io
 - korczis-com: korczis.com website (2019). GitLab https://gitlab.com/korczis/korczis-com
 - korczis-github-com: Github Pages (2019). GitLab https://gitlab.com/korczis/korczis-github-com

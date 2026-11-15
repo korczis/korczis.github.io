@@ -1,6 +1,6 @@
 {
  "schema": "korczis-hub-recent/v1",
- "generated_at": "2026-11-14T18:33:32Z",
+ "generated_at": "2026-11-14T23:17:37Z",
  "window_days": 1461,
  "periods": [
   {
@@ -20,15 +20,464 @@
  "candidates": 75,
  "repos": [
   {
+   "name": "sonic-playground",
+   "period": 12,
+   "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+   "category": "media",
+   "language": "Python",
+   "created_at": "2026-11-12T00:48:36Z",
+   "last_commit": "2026-11-14T23:10:15Z",
+   "last_message": "Merge branch 'feature/yearbook-songs-wave4': 40 songs of the 2020 yearbook, each in English and Czech",
+   "commits": [
+    {
+     "at": "2026-11-14T23:10:15Z",
+     "message": "Merge branch 'feature/yearbook-songs-wave4': 40 songs of the 2020 yearbook, each in English and Czech",
+     "url": "https://github.com/korczis/sonic-playground/commit/682393b04e6efe9241c975868f83454e00abd613"
+    },
+    {
+     "at": "2026-11-14T22:55:24Z",
+     "message": "feat(content): 40 songs of the 2020 yearbook, each in English and Czech",
+     "url": "https://github.com/korczis/sonic-playground/commit/52b8045e470bfedeb93b13699d9e3426d32c0d0f"
+    },
+    {
+     "at": "2026-11-14T22:44:33Z",
+     "message": "Merge branch 'fix/merge-commit-judged': a merge commit is judged like any commit",
+     "url": "https://github.com/korczis/sonic-playground/commit/aa52656efad0f8406935d5a7175bd729535549b8"
+    },
+    {
+     "at": "2026-11-14T22:31:34Z",
+     "message": "feat(data): the Spotify history refreshed from the evening web-player reading",
+     "url": "https://github.com/korczis/sonic-playground/commit/8392b5a1fded5f84b87d9800b6e84ff0d3cbfd89"
+    },
+    {
+     "at": "2026-11-14T22:30:54Z",
+     "message": "fix(hooks): a merge commit is judged like any commit",
+     "url": "https://github.com/korczis/sonic-playground/commit/cc174292500e7f93eb059fa03b5c7f4cf51e6449"
+    },
+    {
+     "at": "2026-11-14T22:24:53Z",
+     "message": "Merge branch 'fix/crawl-unnamed-playlist': the crawl keeps unnamed playlists and fetches rows too slow for its sweep",
+     "url": "https://github.com/korczis/sonic-playground/commit/247ea573ecdb8dd9677e109901b3d3d27b9c4b7f"
+    },
+    {
+     "at": "2026-11-14T22:21:05Z",
+     "message": "chore(data): Spotify records re-resolved after the 2021 and 2020 yearbook songs",
+     "url": "https://github.com/korczis/sonic-playground/commit/55b49c0019737212dcaf69dd631a84aef205e2e8"
+    },
+    {
+     "at": "2026-11-14T22:20:34Z",
+     "message": "Merge branch 'feature/yearbook-songs-wave3': 40 songs of the 2021 and 2020 yearbooks, each in English and Czech",
+     "url": "https://github.com/korczis/sonic-playground/commit/486a8c25ee0158676ced5cc0947531c22fe1b056"
+    },
+    {
+     "at": "2026-11-14T22:15:42Z",
+     "message": "fix(data): the crawl fetches rows too slow for its sweep by seeking to each",
+     "url": "https://github.com/korczis/sonic-playground/commit/4d2049579c2d110b9f8514fd2be7a5c3b2fd24e5"
+    },
+    {
+     "at": "2026-11-14T22:08:24Z",
+     "message": "feat(content): 40 songs of the 2021 and 2020 yearbooks, each in English and Czech",
+     "url": "https://github.com/korczis/sonic-playground/commit/6a91324e8c6fe1d536c65b3fd0c76a0658a3d98e"
+    },
+    {
+     "at": "2026-11-14T21:58:37Z",
+     "message": "Merge branch 'feature/yearbook-songs': 40 songs of the 2022 and 2021 yearbooks, each in English and Czech",
+     "url": "https://github.com/korczis/sonic-playground/commit/39e7e8f15e3720e5a5924a748dbdef542197ac6a"
+    },
+    {
+     "at": "2026-11-14T21:51:55Z",
+     "message": "feat(content): 40 songs of the 2022 and 2021 yearbooks, each in English and Czech",
+     "url": "https://github.com/korczis/sonic-playground/commit/bfeb0836e69bc1aa56409c6870a4db14cfefa9ee"
+    },
+    {
+     "at": "2026-11-14T21:51:42Z",
+     "message": "Merge branch 'fix/connections-any-review': any review can be a connection target",
+     "url": "https://github.com/korczis/sonic-playground/commit/858a8b097293b65d25905185ff96bf565e49c6bf"
+    },
+    {
+     "at": "2026-11-14T21:48:03Z",
+     "message": "fix(data): the web-player crawl keeps playlists without a name of their own",
+     "url": "https://github.com/korczis/sonic-playground/commit/360ff9aa5d3b9fefd4befefe742c509c5f25ad3e"
+    },
+    {
+     "at": "2026-11-14T21:32:32Z",
+     "message": "Merge branch 'fix/stale-records-named': the Spotify gate names stale records",
+     "url": "https://github.com/korczis/sonic-playground/commit/7de949a2717d2af2ca366fc1c2d1a37521b03144"
+    },
+    {
+     "at": "2026-11-14T21:27:15Z",
+     "message": "fix(data): the Spotify gate names the stale records; its currency check is local by design",
+     "url": "https://github.com/korczis/sonic-playground/commit/36493035103909e8bb40f0c0678380094f90762f"
+    },
+    {
+     "at": "2026-11-14T21:24:47Z",
+     "message": "fix(contract): any review can be a connection target",
+     "url": "https://github.com/korczis/sonic-playground/commit/13afc42a71d0ef29e79abe91ee700798f251ffcd"
+    },
+    {
+     "at": "2026-11-14T21:20:58Z",
+     "message": "Merge branch 'fix/override-teed-garden': TEED - Garden resolves to its review",
+     "url": "https://github.com/korczis/sonic-playground/commit/2f95eaba0d912c2b26bff178086e853be7e52c0f"
+    },
+    {
+     "at": "2026-11-14T21:16:52Z",
+     "message": "Merge branch 'feature/evolve-plurals-images': five gates that could pass while broken now fail on their breakage",
+     "url": "https://github.com/korczis/sonic-playground/commit/ccbce05ca833d7fad0633887de9d16da41d4c28b"
+    },
+    {
+     "at": "2026-11-14T21:14:32Z",
+     "message": "fix(data): TEED - Garden (yearbook 2022 #72) resolves to its review",
+     "url": "https://github.com/korczis/sonic-playground/commit/97ebed45f9350acaa97abfaeb47de21cc15c3b1e"
+    },
+    {
+     "at": "2026-11-14T21:09:38Z",
+     "message": "fix(gates): five gates that could pass while broken now fail on their breakage",
+     "url": "https://github.com/korczis/sonic-playground/commit/9a5caf54ae02d0eba56cd9559e4eafdc017cff28"
+    },
+    {
+     "at": "2026-11-14T21:09:19Z",
+     "message": "Merge branch 'fix/evolve-yearbook-lessons': commits judged on the index; writers describe sound from sources; fixtures name no real song",
+     "url": "https://github.com/korczis/sonic-playground/commit/68fee99a034fde1ce4e1918e5c0f36ba52f04aea"
+    },
+    {
+     "at": "2026-11-14T20:55:30Z",
+     "message": "fix(add-song): writers describe sound from sources only; fixtures name no real song",
+     "url": "https://github.com/korczis/sonic-playground/commit/e6915bc120c7d11247c22175725b759f203a7a73"
+    },
+    {
+     "at": "2026-11-14T20:54:41Z",
+     "message": "fix(hooks): a commit is judged on the tree it records, not the working tree",
+     "url": "https://github.com/korczis/sonic-playground/commit/2e395298cc79e3f10b604e2c22c2bc1b1fada727"
+    },
+    {
+     "at": "2026-11-14T20:44:23Z",
+     "message": "Merge branch 'feature/evolve-plurals-images': a host's transient answer for a sub-resource retries the page",
+     "url": "https://github.com/korczis/sonic-playground/commit/2f3fd719d268aa58918a20016918019843eaaa6d"
+    },
+    {
+     "at": "2026-11-14T20:42:22Z",
+     "message": "fix(smoke): a host's transient answer for a sub-resource retries the page",
+     "url": "https://github.com/korczis/sonic-playground/commit/78c8caaa48995849c6fa1f36c9c247e96d4dc7ac"
+    },
+    {
+     "at": "2026-11-14T20:36:46Z",
+     "message": "Merge branch 'fix/derive-spotify': npm run derive refreshes the Spotify records where the private store exists",
+     "url": "https://github.com/korczis/sonic-playground/commit/b51859ae4888e6de613fb36b9b152f60a7358141"
+    },
+    {
+     "at": "2026-11-14T20:34:34Z",
+     "message": "feat(dx): npm run derive refreshes the Spotify records where the private store exists",
+     "url": "https://github.com/korczis/sonic-playground/commit/1cec33fc66cb5e872e85cb74b75010999c35b5f6"
+    },
+    {
+     "at": "2026-11-14T20:28:47Z",
+     "message": "chore(data): Spotify records re-resolved after the 2022 yearbook songs",
+     "url": "https://github.com/korczis/sonic-playground/commit/1df118a12e32b67670c1c423eb21f3e9703cb169"
+    },
+    {
+     "at": "2026-11-14T20:27:38Z",
+     "message": "Merge branch 'feature/spotify-refresh': the Spotify web-player crawl as a versioned, repeatable script",
+     "url": "https://github.com/korczis/sonic-playground/commit/638c3a8c15535d425c965f80530b2af196c03c2e"
+    }
+   ],
+   "languages": [
+    {
+     "name": "Python",
+     "share": 43.8
+    },
+    {
+     "name": "JavaScript",
+     "share": 30.3
+    },
+    {
+     "name": "HTML",
+     "share": 21.4
+    },
+    {
+     "name": "Shell",
+     "share": 3.4
+    },
+    {
+     "name": "CSS",
+     "share": 1.1
+    }
+   ],
+   "readme": "A hand-picked music journal: one review per track, explored by genre, feeling and mood, played in a bottom-bar player that keeps going while you browse. Live at https://korczis.github.io/sonic-playground/.",
+   "topics": [],
+   "hosts": {
+    "github": "https://github.com/korczis/sonic-playground"
+   },
+   "site": "https://korczis.github.io/sonic-playground/",
+   "curated": true,
+   "stars": 0
+  },
+  {
+   "name": "korczis",
+   "period": 12,
+   "description": "Tomas Korcak: profile README, derived from korczis.github.io/site.json",
+   "category": "web",
+   "language": "JavaScript",
+   "created_at": "2026-11-14T17:32:26Z",
+   "last_commit": "2026-11-14T22:46:07Z",
+   "last_message": "docs(readme): re-derive from site.json",
+   "commits": [
+    {
+     "at": "2026-11-14T22:46:07Z",
+     "message": "docs(readme): re-derive from site.json",
+     "url": "https://github.com/korczis/korczis/commit/88d335b282907cf990f470b53b6bbb112e1a1688"
+    },
+    {
+     "at": "2026-11-14T17:32:25Z",
+     "message": "feat(profile): a GitHub profile README derived from site.json",
+     "url": "https://github.com/korczis/korczis/commit/128cac6c44f094446230c2a2225da310f552de0a"
+    }
+   ],
+   "languages": [
+    {
+     "name": "JavaScript",
+     "share": 100
+    }
+   ],
+   "readme": "Software for evidence: AI agents that prove their work, honest instruments in the browser, knowledge you can check.",
+   "topics": [],
+   "hosts": {
+    "github": "https://github.com/korczis/korczis"
+   },
+   "site": "https://korczis.github.io/",
+   "curated": false,
+   "stars": 0
+  },
+  {
+   "name": "kompendium-epistemicke-anihilace",
+   "period": 12,
+   "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
+   "category": "knowledge",
+   "language": "Elixir",
+   "created_at": "2026-11-09T22:04:50Z",
+   "last_commit": "2026-11-14T21:46:48Z",
+   "last_message": "chore(data): derived data regenerated after merging the access-level removal",
+   "commits": [
+    {
+     "at": "2026-11-14T21:46:48Z",
+     "message": "chore(data): derived data regenerated after merging the access-level removal",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/436d59450446ec3d688e4b0a06bfc5ac3c49bab4"
+    },
+    {
+     "at": "2026-11-14T21:21:23Z",
+     "message": "Merge remote-tracking branch 'origin/fix/pristupova-uroven' into feature/zvednuti-13",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/c6d866e8b493811cb5ee165d407513bf03aaa7e8"
+    },
+    {
+     "at": "2026-11-14T21:17:13Z",
+     "message": "Merge main (c8394d3e) into fix/pristupova-uroven",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/c996304cb5b6929dc8b2da24f67a492256626691"
+    },
+    {
+     "at": "2026-11-14T20:33:14Z",
+     "message": "chore(data): odvozená data po opravě citací s iniciálou",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/c8394d3e0d42d960c5000ec0446ae4b9aee6a548"
+    },
+    {
+     "at": "2026-11-14T20:12:26Z",
+     "message": "Merge origin/main (9ee758fd) into fix/citation-initials",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/237f4160c165f6f8d4835a60e860654a3e14fb2f"
+    },
+    {
+     "at": "2026-11-14T19:59:58Z",
+     "message": "chore(data): derived data regenerated after the 13-page lift",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/5ca451aa52f1d685fc83bfd68c82d044e26a2d9c"
+    },
+    {
+     "at": "2026-11-14T19:47:06Z",
+     "message": "fix(content): the 13 pages a derived metadata row left under the floor",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/d0b1c974d08c370664dfd2ee688e466b795c3a3e"
+    },
+    {
+     "at": "2026-11-14T19:23:25Z",
+     "message": "feat(ia): derive Přístupová úroveň — drop the content row, link the header badge",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/b9840fc2307d527f8a0717a70be2675cd71fbbdc"
+    },
+    {
+     "at": "2026-11-14T19:19:31Z",
+     "message": "docs(knowledge): a shortcode cannot be called from a page here, and why",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/9ee758fd464606ccabddb9e3af6d713d902e098a"
+    },
+    {
+     "at": "2026-11-14T19:18:04Z",
+     "message": "chore(data): derived data regenerated after the one-source refactor",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/f5da2d30236f535c43dcdfbd9657916571e79a2c"
+    },
+    {
+     "at": "2026-11-14T18:54:47Z",
+     "message": "refactor(content): the Bezpečnostní rámec table has one source, not forty copies",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/005fda471bc7769f648570358c73541084e1d243"
+    },
+    {
+     "at": "2026-11-14T18:50:07Z",
+     "message": "fix(scripts): citace s iniciálou autora se počítá",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/6aebac54378f1c25b68c206121b53e47e8d475ab"
+    },
+    {
+     "at": "2026-11-14T18:43:23Z",
+     "message": "chore(data): odvozená data a baseline po dávce D",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/bd0df758ae2e557c539b5085943f9a1e99d08c76"
+    },
+    {
+     "at": "2026-11-14T18:00:05Z",
+     "message": "Merge origin/main (15fda020, Vulnerabilní podpopulace) into integrate/batch-d",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/33b9fdd562f3b78f0624118987a7c528db0fbf04"
+    },
+    {
+     "at": "2026-11-14T17:59:17Z",
+     "message": "fix(content): filosoficky-ramec má Literaturu pro Dialektik der Aufklärung",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/d3a8e01f57abab5c4e5aaee784e0d126b980e24e"
+    },
+    {
+     "at": "2026-11-14T17:58:57Z",
+     "message": "fix(scripts): citace s dvojím letopočtem se počítá",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/5f9e6228119d91a6712d6d5490355424c15a1ef3"
+    },
+    {
+     "at": "2026-11-14T17:05:50Z",
+     "message": "fix(test): případ 03 odděluje zastaralý pokracovat.json od zastaralého grafu",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/adebcba2ade77c770e4c33ee23ee54072cda5709"
+    },
+    {
+     "at": "2026-11-14T17:01:30Z",
+     "message": "chore(data): derived data regenerated after the Vulnerabilní podpopulace slice",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/15fda0200f78f1203f901ec350cb549b07d1bf82"
+    },
+    {
+     "at": "2026-11-14T16:54:07Z",
+     "message": "Merge branch 'fix/duplicate-table': opakovaný řádek tabulky na 3+ stránkách, strop 256",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/3a35a8f67e993de4833e837f184c17ce8804b3bb"
+    },
+    {
+     "at": "2026-11-14T16:53:19Z",
+     "message": "Merge branch 'fix/ia-json-writer': build-ui-data spouští build-graph, ia.json nezastará",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/be7773118289b72a4cfebf6c2d20f211eab4f14e"
+    },
+    {
+     "at": "2026-11-14T16:52:54Z",
+     "message": "Merge branch 'fix/duplicate-ea-code': duplicate-passage normalizuje kód techniky",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/3af753a75b128d1fc5d1db9351766a1ebe62d3be"
+    },
+    {
+     "at": "2026-11-14T16:52:31Z",
+     "message": "Merge branch 'fix/chrome-footer': patička pryč z 294 stránek, chrome-trailer na nule",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/3f6a4133d67d77830361df5654fc0f14e56355a7"
+    },
+    {
+     "at": "2026-11-14T16:52:06Z",
+     "message": "Merge branch 'fix/drug-name-historie': drug-name propustí historii a rozpoznání, strop 1",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/bdb2009978c57c3a48e618567d2764153a9b6996"
+    },
+    {
+     "at": "2026-11-14T16:51:19Z",
+     "message": "chore(data): odvozená data po odstranění patičky",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/dc766f60941cf572cd75f58c8575bc43011c6da6"
+    },
+    {
+     "at": "2026-11-14T16:50:55Z",
+     "message": "fix(content): vložená patička pryč z 294 stránek, nadpisy s prázdným řádkem",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/cf169982db0c9ebe1dd53adb0c3dfe46b4ed3e73"
+    },
+    {
+     "at": "2026-11-14T16:50:27Z",
+     "message": "fix(scripts): chrome-trailer na nule, prázdný řádek za nadpisem, varování před nestaged",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/8ece929c89e5464ec01359e547126bf0d825d848"
+    },
+    {
+     "at": "2026-11-14T16:43:02Z",
+     "message": "fix(content): Vulnerabilní podpopulace says who is more exposed, not who to adapt for",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/5f662ac192b0df443a7b85c88f7d84787de50a7b"
+    },
+    {
+     "at": "2026-11-14T16:40:39Z",
+     "message": "feat(ia): duplicate-table — pasted table rows across pages (complement of duplicate-passage)",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/9d864b5bd30f6df6e32266fbe62f0da65a427103"
+    },
+    {
+     "at": "2026-11-14T16:17:43Z",
+     "message": "chore(data): odvozená data po bráně drug-name",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/9da9550997ab0583027c277022d78c7d0d8e1b06"
+    },
+    {
+     "at": "2026-11-14T16:17:13Z",
+     "message": "fix(content): dvě věty bez léku, definice a lifeworld",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/c8bfcec1a141273996b073a264a27ed248e83631"
+    }
+   ],
+   "languages": [
+    {
+     "name": "Elixir",
+     "share": 34.4
+    },
+    {
+     "name": "JavaScript",
+     "share": 21.9
+    },
+    {
+     "name": "Python",
+     "share": 15
+    },
+    {
+     "name": "HTML",
+     "share": 13.5
+    },
+    {
+     "name": "Rust",
+     "share": 8.7
+    },
+    {
+     "name": "Shell",
+     "share": 6.3
+    }
+   ],
+   "readme": "Defenzivní taxonomie jevů, které systematicky rozkládají schopnost člověka poznávat.",
+   "topics": [
+    "czech",
+    "epistemology",
+    "flowbite",
+    "kompendium",
+    "majordomus",
+    "manipulation",
+    "psychology",
+    "taxonomy",
+    "zola"
+   ],
+   "hosts": {
+    "github": "https://github.com/korczis/kompendium-epistemicke-anihilace"
+   },
+   "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+   "curated": true,
+   "stars": 0
+  },
+  {
    "name": "prismatic-majordomus",
    "period": 12,
    "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
    "category": "ai",
    "language": "Rust",
    "created_at": "2026-09-03T20:24:57Z",
-   "last_commit": "2026-11-14T18:22:24Z",
-   "last_message": "Merge pull request #3012 from korczis/chore/evolve-20261111-3",
+   "last_commit": "2026-11-14T21:20:07Z",
+   "last_message": "Merge pull request #2988 from korczis/fix/the-kit-licence-judge-starts-git-through-the-busy-retry",
    "commits": [
+    {
+     "at": "2026-11-14T21:20:07Z",
+     "message": "Merge pull request #2988 from korczis/fix/the-kit-licence-judge-starts-git-through-the-busy-retry",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/ac73c089ea7eb78930a55417ba66a8c0b19c2314"
+    },
+    {
+     "at": "2026-11-14T18:45:27Z",
+     "message": "chore(derive): derive #2988 on master aca34e6",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/d56e3378e3668466cc043bfdf0fa9f294fd7ae90"
+    },
+    {
+     "at": "2026-11-14T18:34:50Z",
+     "message": "Merge origin/master aca34e6 into #2988",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/da321ca119dca587ea9970d9c6ceb82a14865948"
+    },
     {
      "at": "2026-11-14T18:22:24Z",
      "message": "Merge pull request #3012 from korczis/chore/evolve-20261111-3",
@@ -95,6 +544,16 @@
      "url": "https://github.com/korczis/prismatic-majordomus/commit/03695157151d78d34fc8934db4f864d5967de4ae"
     },
     {
+     "at": "2026-11-12T09:03:17Z",
+     "message": "chore(derive): the generated surfaces read the merge of master",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/5c3d670608410fdc74dbbfaa4719cb1e8f3ceaef"
+    },
+    {
+     "at": "2026-11-12T08:52:36Z",
+     "message": "Merge origin/master d34f159439f into fix/the-kit-licence-judge-starts-git-through-the-busy-retry",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/81abe7d7e68879f0a109a274e8e658e0ee5ba729"
+    },
+    {
      "at": "2026-11-12T07:22:46Z",
      "message": "chore(derive): derive the I4582 scope fix",
      "url": "https://github.com/korczis/prismatic-majordomus/commit/a29400fc5f1321bd20df479dfbe2e83a76f2f687"
@@ -153,31 +612,6 @@
      "at": "2026-11-11T01:58:20Z",
      "message": "Merge pull request #3005 from korczis/chore/evolve-20261110-44b",
      "url": "https://github.com/korczis/prismatic-majordomus/commit/3a90e425b03bf5c9ef4494a5bb3b220654ea524e"
-    },
-    {
-     "at": "2026-11-10T22:25:10Z",
-     "message": "chore(derive): derive the committed merge of master into the evolve branch (I4573)",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/49c234ae02d1e86ae34a74a095ace4f387ff55aa"
-    },
-    {
-     "at": "2026-11-10T22:11:19Z",
-     "message": "Merge origin/master e0cb96020de into #3005 (I4573)",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/07281c6fd001650f1c398b2664e6d4fc6c9b1a05"
-    },
-    {
-     "at": "2026-11-10T20:55:08Z",
-     "message": "Merge pull request #2994 from korczis/feature/I2717-record-run-approved",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/e0cb96020de9fba56c441fa4a975dfc95bbdb2ad"
-    },
-    {
-     "at": "2026-11-10T20:17:42Z",
-     "message": "chore(derive): derive the merge of the I4572 closed_key fix into the I4571 branch (I4571)",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/722be91601c7feb69f2257d6211ad72a7e6c5e70"
-    },
-    {
-     "at": "2026-11-10T20:02:14Z",
-     "message": "chore(merge): merge the I4572 closed_key fix into the I4571 branch (I4571)",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/b95bf23fb02ab81e8e770bc6c672141d59c899e0"
     }
    ],
    "languages": [
@@ -236,194 +670,409 @@
    "stars": 1
   },
   {
-   "name": "sonic-playground",
+   "name": "oscilla",
    "period": 12,
-   "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-   "category": "media",
-   "language": "Python",
-   "created_at": "2026-11-12T00:48:36Z",
-   "last_commit": "2026-11-14T18:06:40Z",
-   "last_message": "Merge branch 'feature/evolve-plurals-images': Back keeps the reader's place; failed scripts retried; no typed English labels",
+   "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+   "category": "science",
+   "language": "JavaScript",
+   "created_at": "2026-10-01T21:05:33Z",
+   "last_commit": "2026-11-14T20:57:51Z",
+   "last_message": "test(ui): U112 names the 320 Synth overlap pairs for every host, and the v3.37.3 record (#546)",
    "commits": [
     {
-     "at": "2026-11-14T18:06:40Z",
-     "message": "Merge branch 'feature/evolve-plurals-images': Back keeps the reader's place; failed scripts retried; no typed English labels",
-     "url": "https://github.com/korczis/sonic-playground/commit/96818c475654362ca1a0929b0e76dc28dc2e8edc"
+     "at": "2026-11-14T20:57:51Z",
+     "message": "test(ui): U112 names the 320 Synth overlap pairs for every host, and the v3.37.3 record (#546)",
+     "url": "https://github.com/korczis/oscilla/commit/fba40f4df6105c7b18d526fc39f73a97ef1cc10b"
     },
     {
-     "at": "2026-11-14T18:01:32Z",
-     "message": "fix(site): Back keeps the reader's place; failed scripts retried; no typed English labels",
-     "url": "https://github.com/korczis/sonic-playground/commit/dd12d49d14efc012c31341c6ad6d18441f16c74e"
+     "at": "2026-11-14T18:29:45Z",
+     "message": "test(ui): U112 lands without Czech pass 3, so the 320 pairs are T19's set as CI logged it",
+     "url": "https://github.com/korczis/oscilla/commit/63a359295f8b01934d89d12673828d75755ed7f8"
     },
     {
-     "at": "2026-11-14T17:45:14Z",
-     "message": "Merge branch 'feature/evolve-plurals-images': three defects a third independent review found, each behind a gate",
-     "url": "https://github.com/korczis/sonic-playground/commit/659fceee6dc62575144b401e03f7bcc08ef41ecb"
+     "at": "2026-11-14T18:22:49Z",
+     "message": "chore(release): record v3.37.3",
+     "url": "https://github.com/korczis/oscilla/commit/bed255b1a9f51f2a50c9c4b743fd9475af278857"
     },
     {
-     "at": "2026-11-14T17:41:12Z",
-     "message": "fix(site): three defects a third independent review found, each behind a gate",
-     "url": "https://github.com/korczis/sonic-playground/commit/69399dac40e41e17d34ca8dcb8ce39505a470d22"
+     "at": "2026-11-14T18:22:49Z",
+     "message": "test(ui): U112, one '@320:synth:overlap' names its pairs for every host, as measured with Czech pass 3",
+     "url": "https://github.com/korczis/oscilla/commit/01a9d32be827e746ac15155763d747769cb9e08c"
     },
     {
-     "at": "2026-11-14T17:28:09Z",
-     "message": "Merge branch 'fix/missing-videos': the last two reviews get their official videos",
-     "url": "https://github.com/korczis/sonic-playground/commit/44fe37e88003eda1d4f2d8cd50657760433a6b02"
+     "at": "2026-11-13T05:10:17Z",
+     "message": "fix(ui): train T19, U108's review follow-ups (U111) and release v3.37.3 (#544)",
+     "url": "https://github.com/korczis/oscilla/commit/a661ae5b9a435826ff859bc02a7a13f8bc17322d"
     },
     {
-     "at": "2026-11-14T17:27:19Z",
-     "message": "Merge branch 'feature/evolve-plurals-images': three defects a second independent review found, each behind a gate",
-     "url": "https://github.com/korczis/sonic-playground/commit/7db1763e50b7bb200ed2c27f31a254ad2b0e9117"
+     "at": "2026-11-13T04:19:06Z",
+     "message": "review(ui): #544 verdict merge for train T19 (U111, v3.37.3), under the legs and receipt condition",
+     "url": "https://github.com/korczis/oscilla/commit/18feae93aad8ac3cb496f6cc4bee7154efdb629c"
     },
     {
-     "at": "2026-11-14T17:21:50Z",
-     "message": "fix(site): three defects a second independent review found, each behind a gate",
-     "url": "https://github.com/korczis/sonic-playground/commit/6bd119c782c07240e2ea0949bea02dc4cd64f077"
+     "at": "2026-11-13T04:01:54Z",
+     "message": "chore(release): v3.37.3",
+     "url": "https://github.com/korczis/oscilla/commit/698ee104a94002d229121731dd181cb8447f0314"
     },
     {
-     "at": "2026-11-14T17:18:14Z",
-     "message": "fix(content): the two reviews without a video get their official uploads",
-     "url": "https://github.com/korczis/sonic-playground/commit/96a4cd78e007ab6a31b6609803682baedfb7927b"
+     "at": "2026-11-13T03:25:14Z",
+     "message": "chore(release): record v3.37.2",
+     "url": "https://github.com/korczis/oscilla/commit/0f97037be57994db2d15ef24f9309e4172baec76"
     },
     {
-     "at": "2026-11-14T17:05:58Z",
-     "message": "Merge branch 'feature/evolve-plurals-images': three defects an independent review found, each behind a gate",
-     "url": "https://github.com/korczis/sonic-playground/commit/a0e362ebce4227afcb3a8f55a2ad6842b3b07c87"
+     "at": "2026-11-13T03:25:09Z",
+     "message": "merge(train): U111, U108's review follow-ups (75d8a533) into train T19",
+     "url": "https://github.com/korczis/oscilla/commit/3fce06be268521e9a9faee371d73cb823569629e"
     },
     {
-     "at": "2026-11-14T17:01:37Z",
-     "message": "fix(site): three defects an independent review found, each behind a gate",
-     "url": "https://github.com/korczis/sonic-playground/commit/7c54317082d46c81d3dfcf6940367ad1452a9c41"
+     "at": "2026-11-13T02:51:34Z",
+     "message": "fix(ui): U111, U108's review follow-ups: the no-source short line, a close that waits for the alert, pair-named phone debt keys, the deepest overlap and a cold s-notice",
+     "url": "https://github.com/korczis/oscilla/commit/75d8a533f224839d3dad198e2ca055a40531e8ae"
     },
     {
-     "at": "2026-11-14T16:37:02Z",
-     "message": "Merge branch 'fix/english-qa': the English reviews' errors fixed in both languages",
-     "url": "https://github.com/korczis/sonic-playground/commit/6e2aec9d9a3c1940716f65200d9001b699bd461d"
+     "at": "2026-11-13T02:38:52Z",
+     "message": "chore(plan): U108 done, landed by #541 (v3.37.2) (#543)",
+     "url": "https://github.com/korczis/oscilla/commit/7aefc37d3eb8d62721a5697b206d3b80f1ac5888"
     },
     {
-     "at": "2026-11-14T16:29:28Z",
-     "message": "fix(content): the errors the translators found in the English reviews, in both languages",
-     "url": "https://github.com/korczis/sonic-playground/commit/1edbb6a848d1de70a3984d8f33a3731212dd1072"
+     "at": "2026-11-13T02:25:24Z",
+     "message": "chore(plan): U108 done, landed by #541 (v3.37.2) under verdict 541.yaml",
+     "url": "https://github.com/korczis/oscilla/commit/9a3f094eb2e0c5a154b1b9a5057b02492847b671"
     },
     {
-     "at": "2026-11-14T16:26:52Z",
-     "message": "Merge branch 'feature/evolve-plurals-images': WCAG 2.2 AA contrast; axe-core measures every kind of page",
-     "url": "https://github.com/korczis/sonic-playground/commit/b0cb465d2555abd615cf650ab10f11453cde74cf"
+     "at": "2026-11-13T02:18:53Z",
+     "message": "chore(plan): U111 and E072 from #541's review, and U108's open findings move to U111 (#542)",
+     "url": "https://github.com/korczis/oscilla/commit/0f80b807b8cb7f18f260f77a5d7c33eb3fa2e082"
     },
     {
-     "at": "2026-11-14T16:23:24Z",
-     "message": "Merge branch 'fix/retry-record': the retry policy's record corrected",
-     "url": "https://github.com/korczis/sonic-playground/commit/96f672c5392eb882a60242e59fd108cf211ffc28"
+     "at": "2026-11-13T02:12:26Z",
+     "message": "chore(plan): U111 and E072 from #541's review, and U108's open findings move to U111",
+     "url": "https://github.com/korczis/oscilla/commit/7922fd8fd1d4f067fbacdce303620af2d3759c62"
     },
     {
-     "at": "2026-11-14T16:22:53Z",
-     "message": "feat(a11y): WCAG 2.2 AA contrast; axe-core measures every kind of page",
-     "url": "https://github.com/korczis/sonic-playground/commit/6e5b7d864a68f78ee658a735af83d290ad229b38"
+     "at": "2026-11-13T02:10:53Z",
+     "message": "fix(ui): train T18, on a phone the Synth's insert alert is above the keyboard dock (U108), and release v3.37.2 (#541)",
+     "url": "https://github.com/korczis/oscilla/commit/2885a94b4fa49e456fbeefc0d99ece3386a71e90"
     },
     {
-     "at": "2026-11-14T16:14:40Z",
-     "message": "docs(smoke): correct the record of the sweep's retry policy",
-     "url": "https://github.com/korczis/sonic-playground/commit/83cc39247459cc95d369db0281038996478198aa"
+     "at": "2026-11-12T23:25:15Z",
+     "message": "test(ui): on CI linux U108's phone padding leaves no 375 Synth overlap, so the linux keys go and the Mac's stays",
+     "url": "https://github.com/korczis/oscilla/commit/837c4b6e4d2b713e848fce310c6075d7fcfa6a13"
     },
     {
-     "at": "2026-11-14T16:09:11Z",
-     "message": "Merge branch 'fix/sweep-retry-backoff': a host's transient 5xx gets three retries",
-     "url": "https://github.com/korczis/sonic-playground/commit/534c1b4f56547b9067924a9cf1c6b506b42ef56b"
+     "at": "2026-11-12T22:18:11Z",
+     "message": "review(synth): #541 verdict re-judged at a1de4e33, the 58-char line and CI's 375 keys",
+     "url": "https://github.com/korczis/oscilla/commit/a42d1c6b103eccadb2c7c993e1680c72a3362f98"
     },
     {
-     "at": "2026-11-14T16:01:24Z",
-     "message": "fix(smoke): a live host's transient 5xx gets three retries with growing pauses",
-     "url": "https://github.com/korczis/sonic-playground/commit/d29767088febd60ed3114b5a4b4535b57eab635a"
+     "at": "2026-11-12T21:45:05Z",
+     "message": "fix(ui): U108 on CI's linux fonts: the 58-char short line and a tighter phone layout keep the alert above the dock at 320, and the 375 debt follows CI",
+     "url": "https://github.com/korczis/oscilla/commit/a1de4e33bbb8ce0c483907611857764a22fc2cd7"
     },
     {
-     "at": "2026-11-14T15:59:33Z",
-     "message": "Merge branch 'feature/evolve-plurals-images': YouTube stills by srcset from one media table",
-     "url": "https://github.com/korczis/sonic-playground/commit/d129b82fca00381983fba2cca35b515df77972d1"
+     "at": "2026-11-12T20:12:51Z",
+     "message": "review(synth): #541 verdict merge for train T18 (U108, v3.37.2), under the legs and receipt condition",
+     "url": "https://github.com/korczis/oscilla/commit/b6609c3ff29150b8ec2b61ea3297e83d6297e5cf"
     },
     {
-     "at": "2026-11-14T15:55:58Z",
-     "message": "perf(media): YouTube stills by srcset from one media table",
-     "url": "https://github.com/korczis/sonic-playground/commit/b4bed149ca1db188a47b1b5062cc84af128a40ad"
+     "at": "2026-11-12T19:55:05Z",
+     "message": "chore(release): the roadmap counts U108 in M054 (72 required), derived at v3.37.2's prepare",
+     "url": "https://github.com/korczis/oscilla/commit/2d4d939f1525f91ca2c5cb4cee4344abd9717f30"
     },
     {
-     "at": "2026-11-14T15:39:01Z",
-     "message": "Merge branch 'feature/evolve-plurals-images': the production sweep retries a host's transient 5xx once",
-     "url": "https://github.com/korczis/sonic-playground/commit/6ac2bd12fa87e344e6546862925038813fb94106"
+     "at": "2026-11-12T19:51:24Z",
+     "message": "chore(release): v3.37.2",
+     "url": "https://github.com/korczis/oscilla/commit/78bf3ffe0a410784604b7c680304693c19d16626"
     },
     {
-     "at": "2026-11-14T15:34:28Z",
-     "message": "Merge branch 'fix/term-labels': every term shown in the page's language",
-     "url": "https://github.com/korczis/sonic-playground/commit/3f90951945939a55e2d75a57c24bbf721d59f0e6"
+     "at": "2026-11-12T19:46:59Z",
+     "message": "chore(release): record v3.37.1",
+     "url": "https://github.com/korczis/oscilla/commit/b2f04be94f1d18f7be41407eeea24b389757fa98"
     },
     {
-     "at": "2026-11-14T15:30:04Z",
-     "message": "fix(smoke): the production sweep retries a live host's transient 5xx once",
-     "url": "https://github.com/korczis/sonic-playground/commit/adcb4c51121896a9fa1615040f040ea430d88f1b"
+     "at": "2026-11-12T19:38:56Z",
+     "message": "merge(main): T17 (#540, v3.37.1) into U108",
+     "url": "https://github.com/korczis/oscilla/commit/9d9c4d8a94fd67795dd46d3e715fd01b845533f4"
     },
     {
-     "at": "2026-11-14T15:27:46Z",
-     "message": "fix(i18n): every term the page shows is its label in the page's language",
-     "url": "https://github.com/korczis/sonic-playground/commit/546ecb761f5a7790b81ed9a1bcfa954789db08da"
+     "at": "2026-11-12T19:36:47Z",
+     "message": "fix(i18n): train T17, Czech pass 2 across the Playground, dock, presets and Synth panel, two review checks, and release v3.37.1 (#540)",
+     "url": "https://github.com/korczis/oscilla/commit/0a7f1847423f83828f620672f89c9f10e440e095"
     },
     {
-     "at": "2026-11-14T02:33:03Z",
-     "message": "Merge branch 'feature/evolve-plurals-images': the sitemap sweep scales with the machine",
-     "url": "https://github.com/korczis/sonic-playground/commit/bb885a412348feddfb4a8f1bdbc3817914cd09af"
+     "at": "2026-11-12T18:35:38Z",
+     "message": "test(ui): the 375 Synth overlap is owed in every engine on every host, so T17 carries one '@375:synth:overlap'",
+     "url": "https://github.com/korczis/oscilla/commit/c8cda15baacdf51f1360d44e90d49e826c02616d"
     },
     {
-     "at": "2026-11-14T02:30:18Z",
-     "message": "perf(smoke): the sitemap sweep scales with the machine's cores",
-     "url": "https://github.com/korczis/sonic-playground/commit/e06e2f6420161977557d2bd5cea94ad4b19b7194"
+     "at": "2026-11-12T18:01:26Z",
+     "message": "test(ui): in the steady state the 375 Synth overlap is measured in every engine on every host, so it is one key again",
+     "url": "https://github.com/korczis/oscilla/commit/3f0c20fdac2698edf91a98fbbd5bafef243ca150"
     },
     {
-     "at": "2026-11-14T02:22:24Z",
-     "message": "Merge branch 'feature/evolve-plurals-images': JPEG social cards under a budget; a profiled gate",
-     "url": "https://github.com/korczis/sonic-playground/commit/e9970214ddd397081d2e038e91a4b9064fa3abc4"
+     "at": "2026-11-12T17:36:10Z",
+     "message": "test(ui): phone-whole measures the Synth once the link's notice is gone, and the 375 overlap keeps its host-scoped keys from the steady state",
+     "url": "https://github.com/korczis/oscilla/commit/d09e5dc7464c83282fea388c7c2fb382a6aecd98"
     },
     {
-     "at": "2026-11-14T02:17:22Z",
-     "message": "perf(social): JPEG cards under a budget; the gate profiles itself",
-     "url": "https://github.com/korczis/sonic-playground/commit/46ab2dc2339439cff86eae31f72c408fd875da4d"
+     "at": "2026-11-12T17:17:12Z",
+     "message": "test(ui): U108's 375 Synth overlap is owed in every engine on every host: the link's notice shows as the alert closes and pushes the tabs under the dock",
+     "url": "https://github.com/korczis/oscilla/commit/fe761817d682fcced20b1dd4ce2f176a3cd66c8a"
     },
     {
-     "at": "2026-11-14T01:58:34Z",
-     "message": "Merge branch 'feature/evolve-plurals-images': every link and button has an accessible name",
-     "url": "https://github.com/korczis/sonic-playground/commit/bc6c9cc52bcee86c13797a952cd8854d1b12fe3a"
+     "at": "2026-11-12T17:06:34Z",
+     "message": "test(ui): where the dock covers the insert alert's Close, phone-whole closes it by its handler, so every host measures the page unscrolled",
+     "url": "https://github.com/korczis/oscilla/commit/a08bcfe804435823c5e7c2bdeb7dff12c5c0e5b9"
     },
     {
-     "at": "2026-11-14T01:50:55Z",
-     "message": "test(a11y): every link and button has an accessible name, checked on every page",
-     "url": "https://github.com/korczis/sonic-playground/commit/6bb352c5ebbdfecb76515ea54fd6c8f5c2fac97e"
+     "at": "2026-11-12T16:57:07Z",
+     "message": "fix(ui): U108's waiting notice runs once and the latest wins, the dock re-decides after the toast's layout, and condition 4 is checked",
+     "url": "https://github.com/korczis/oscilla/commit/65b6a442c1dcc48f2094a94a200bd77b2a4abaca"
     }
    ],
    "languages": [
     {
-     "name": "Python",
-     "share": 38.6
-    },
-    {
      "name": "JavaScript",
-     "share": 31.6
+     "share": 96.9
     },
     {
      "name": "HTML",
-     "share": 24.9
-    },
-    {
-     "name": "Shell",
-     "share": 3.6
+     "share": 1.9
     },
     {
      "name": "CSS",
-     "share": 1.3
+     "share": 1.1
+    },
+    {
+     "name": "Shell",
+     "share": 0
     }
    ],
-   "readme": "A hand-picked music journal: one review per track, explored by genre, feeling and mood, played in a bottom-bar player that keeps going while you browse. Live at https://korczis.github.io/sonic-playground/.",
-   "topics": [],
+   "readme": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+   "topics": [
+    "acoustics",
+    "audio",
+    "dsp",
+    "education",
+    "javascript",
+    "signal-processing",
+    "spectrogram",
+    "synthesizer",
+    "web-audio"
+   ],
    "hosts": {
-    "github": "https://github.com/korczis/sonic-playground"
+    "github": "https://github.com/korczis/oscilla"
    },
-   "site": "https://korczis.github.io/sonic-playground/",
+   "site": "https://korczis.github.io/oscilla/",
+   "curated": true,
+   "stars": 1
+  },
+  {
+   "name": "algoglyph",
+   "period": 12,
+   "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
+   "category": "science",
+   "language": "TypeScript",
+   "created_at": "2026-11-11T18:09:38Z",
+   "last_commit": "2026-11-14T20:18:05Z",
+   "last_message": "Merge remote-tracking branch 'origin/main' into feature/maxwell-1d",
+   "commits": [
+    {
+     "at": "2026-11-14T20:18:05Z",
+     "message": "Merge remote-tracking branch 'origin/main' into feature/maxwell-1d",
+     "url": "https://github.com/korczis/algoglyph/commit/14aae1b5b033758a43b4728c07cfd5a90b9bb2cf"
+    },
+    {
+     "at": "2026-11-14T18:12:20Z",
+     "message": "Merge remote-tracking branch 'origin/feature/articles-wave-7a' into fix/charts-by-title",
+     "url": "https://github.com/korczis/algoglyph/commit/063662c461e3e46ca595df45903f9d05692d946d"
+    },
+    {
+     "at": "2026-11-14T17:02:25Z",
+     "message": "docs(catalogue): the Euclidean MST's triangulation is of the snapped points",
+     "url": "https://github.com/korczis/algoglyph/commit/a21babdc0e57a30fe9953afca4da50b92c477fa1"
+    },
+    {
+     "at": "2026-11-14T17:02:03Z",
+     "message": "Merge remote-tracking branch 'origin/feature/articles-wave-7a' into fix/charts-by-title",
+     "url": "https://github.com/korczis/algoglyph/commit/16483a5f056a268c41e21ba859a8f2eb07a0248e"
+    },
+    {
+     "at": "2026-11-13T06:01:36Z",
+     "message": "Merge remote-tracking branch 'origin/main' into feature/articles-wave-7a",
+     "url": "https://github.com/korczis/algoglyph/commit/b07053d9561e79d0771bf60fa0fd9e398e6ad297"
+    },
+    {
+     "at": "2026-11-13T05:58:41Z",
+     "message": "docs(catalogue): transitive closure documented against BFS from every vertex",
+     "url": "https://github.com/korczis/algoglyph/commit/61a9b3b84d063d95f1f82e722b85fc6c959335a1"
+    },
+    {
+     "at": "2026-11-13T05:58:20Z",
+     "message": "docs(catalogue): topological sort documented, and which vertex takes place 0",
+     "url": "https://github.com/korczis/algoglyph/commit/ec0cd2e95ca9a358357d01ef871ba897b672efd3"
+    },
+    {
+     "at": "2026-11-13T05:58:08Z",
+     "message": "Merge remote-tracking branch 'origin/feature/bound-electron-medium' into fix/charts-by-title",
+     "url": "https://github.com/korczis/algoglyph/commit/a746e62bba0c5108bdbdc99a2be9c1ceb6d92b3d"
+    },
+    {
+     "at": "2026-11-13T05:58:01Z",
+     "message": "feat(topological-sort): a readout of edges pointing backward in the order",
+     "url": "https://github.com/korczis/algoglyph/commit/d661c8fa7f8b2f2544b0b23827b9649dba7f6090"
+    },
+    {
+     "at": "2026-11-13T05:57:42Z",
+     "message": "docs(catalogue): Tarjan documented, components in reverse topological order",
+     "url": "https://github.com/korczis/algoglyph/commit/6c281e611d86597b69263c21c47223441798cc45"
+    },
+    {
+     "at": "2026-11-13T05:57:24Z",
+     "message": "feat(tarjan-scc): a readout of edges into a later-popped component",
+     "url": "https://github.com/korczis/algoglyph/commit/207b99879ce4ba40f5d1ac1af5a5279700668008"
+    },
+    {
+     "at": "2026-11-13T05:57:06Z",
+     "message": "fix(tarjan-scc): one Strong components row",
+     "url": "https://github.com/korczis/algoglyph/commit/60f2273068d86ccbd41e6e062da3a47d36686e93"
+    },
+    {
+     "at": "2026-11-13T05:56:48Z",
+     "message": "docs(catalogue): Kosaraju documented against mutual reachability",
+     "url": "https://github.com/korczis/algoglyph/commit/1a770256f791841f78c79383d9f96aee4ae7c99c"
+    },
+    {
+     "at": "2026-11-13T05:56:30Z",
+     "message": "fix(kosaraju-scc): one Strong components row",
+     "url": "https://github.com/korczis/algoglyph/commit/3f10bcff03d7ffcf201cdcbafa5f7af0555b9b13"
+    },
+    {
+     "at": "2026-11-13T05:56:12Z",
+     "message": "docs(catalogue): the Euclidean MST documented, inside the Delaunay",
+     "url": "https://github.com/korczis/algoglyph/commit/3fa13770d2990f68177192c64bc4554e0d36e015"
+    },
+    {
+     "at": "2026-11-13T05:55:55Z",
+     "message": "fix(euclidean-mst): the exact shared triangulation instead of a float copy that lost hull edges",
+     "url": "https://github.com/korczis/algoglyph/commit/0b93e2403c06e7ae88ca803f26e828b3b94232a1"
+    },
+    {
+     "at": "2026-11-13T05:55:37Z",
+     "message": "refactor(delaunay): the exact triangulation becomes the site's shared module",
+     "url": "https://github.com/korczis/algoglyph/commit/587087d555e0251f291cd43e7bcc78a47b351904"
+    },
+    {
+     "at": "2026-11-13T05:55:18Z",
+     "message": "docs(catalogue): Borůvka documented, rounds bounded by ⌊log₂ V⌋",
+     "url": "https://github.com/korczis/algoglyph/commit/cba3f57e15e4a4db2d89b6f51e0b04f0bc6bd690"
+    },
+    {
+     "at": "2026-11-13T05:54:59Z",
+     "message": "docs(catalogue): Prim documented, the same weights and 2m scans",
+     "url": "https://github.com/korczis/algoglyph/commit/c360c9cb8dee8c06612a8b0841c569f30befc69e"
+    },
+    {
+     "at": "2026-11-13T05:54:36Z",
+     "message": "docs(catalogue): Kruskal documented, its weight equal to a dense Prim",
+     "url": "https://github.com/korczis/algoglyph/commit/864baedd8789956c88c14ab66d7ba28843b8295b"
+    },
+    {
+     "at": "2026-11-13T05:54:11Z",
+     "message": "docs(catalogue): bipartite matching documented, matching equal to the König cover",
+     "url": "https://github.com/korczis/algoglyph/commit/5f272fdfd512bbbee4c7748d5642376bab6e3668"
+    },
+    {
+     "at": "2026-11-13T05:53:45Z",
+     "message": "docs(catalogue): minimum-cost flow documented against successive shortest paths",
+     "url": "https://github.com/korczis/algoglyph/commit/762235b674ffe9b309d47fcc34628cf1e52bec79"
+    },
+    {
+     "at": "2026-11-13T05:53:21Z",
+     "message": "docs(catalogue): preflow-push documented, its height writes bounded by 2V − 1",
+     "url": "https://github.com/korczis/algoglyph/commit/884fdd92b7b947c4efe33ed94425167a8edd1c9a"
+    },
+    {
+     "at": "2026-11-13T05:52:56Z",
+     "message": "docs(catalogue): Edmonds–Karp documented, its augmentations bounded by E·⌊V/2⌋",
+     "url": "https://github.com/korczis/algoglyph/commit/1bce4eb973fbece5d39fca90ae62eb5267a12296"
+    },
+    {
+     "at": "2026-11-13T05:52:32Z",
+     "message": "docs(catalogue): Ford–Fulkerson documented, flow equal to cut",
+     "url": "https://github.com/korczis/algoglyph/commit/29952a41399bed2d5c073a4076ce3790814240dd"
+    },
+    {
+     "at": "2026-11-13T05:52:08Z",
+     "message": "feat(bipartite-matching): a König vertex cover readout",
+     "url": "https://github.com/korczis/algoglyph/commit/34639451005a227917780a1c6b3db4c39f5c254d"
+    },
+    {
+     "at": "2026-11-13T05:51:45Z",
+     "message": "feat(max-flow): a Cut capacity readout on the three max-flow plates",
+     "url": "https://github.com/korczis/algoglyph/commit/27fad3e142d915781bdc76e1df9724b5ae8068ce"
+    },
+    {
+     "at": "2026-11-13T05:51:21Z",
+     "message": "fix(min-cost-flow): one Flow value row",
+     "url": "https://github.com/korczis/algoglyph/commit/c6a14d826622f6b7e8a36211e03bfa4116305fa9"
+    },
+    {
+     "at": "2026-11-13T05:50:56Z",
+     "message": "docs(catalogue): pathfinding on terrain documented, A* pinned to the cells with f ≤ C*",
+     "url": "https://github.com/korczis/algoglyph/commit/c476c8d57a9109609624f7fcf234b0b123484bf5"
+    },
+    {
+     "at": "2026-11-13T05:50:31Z",
+     "message": "fix(pathfinding-terrain): no crash when every map attempt fails",
+     "url": "https://github.com/korczis/algoglyph/commit/a987eded1bc8c4be83b2704e646896aeb48ddb86"
+    }
+   ],
+   "languages": [
+    {
+     "name": "TypeScript",
+     "share": 79.4
+    },
+    {
+     "name": "Rust",
+     "share": 16.6
+    },
+    {
+     "name": "JavaScript",
+     "share": 2.1
+    },
+    {
+     "name": "HTML",
+     "share": 1.7
+    },
+    {
+     "name": "Shell",
+     "share": 0.1
+    },
+    {
+     "name": "Just",
+     "share": 0.1
+    }
+   ],
+   "readme": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js simulations whose every number is measured from the running state.",
+   "topics": [
+    "algorithms",
+    "alpinejs",
+    "creative-coding",
+    "data-visualization",
+    "flowbite",
+    "generative-art",
+    "majordomus",
+    "p5js",
+    "physics-simulation",
+    "tailwindcss",
+    "typescript",
+    "webgl"
+   ],
+   "hosts": {
+    "github": "https://github.com/korczis/algoglyph"
+   },
+   "site": "https://korczis.github.io/algoglyph/",
    "curated": true,
    "stars": 0
   },
@@ -434,9 +1083,14 @@
    "category": "web",
    "language": "JavaScript",
    "created_at": "2024-12-24T16:48:15Z",
-   "last_commit": "2026-11-14T17:44:30Z",
-   "last_message": "fix(verify): refuse a toolchain behind the lockfile before any gate runs",
+   "last_commit": "2026-11-14T18:48:39Z",
+   "last_message": "chore(data): refresh the snapshot and the index",
    "commits": [
+    {
+     "at": "2026-11-14T18:48:39Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/3a76b4573046788dd93d918a5c8093582548452f"
+    },
     {
      "at": "2026-11-14T17:44:30Z",
      "message": "fix(verify): refuse a toolchain behind the lockfile before any gate runs",
@@ -581,29 +1235,24 @@
      "at": "2026-11-12T04:15:21Z",
      "message": "feat(work): a page per project of the last 12, 24 and 48 months",
      "url": "https://github.com/korczis/korczis.github.io/commit/213ef86696b29a45819ea82a9048284c2fba5641"
-    },
-    {
-     "at": "2026-11-12T04:00:48Z",
-     "message": "build(deps-dev): bump the site group across 1 directory with 2 updates (#4)",
-     "url": "https://github.com/korczis/korczis.github.io/commit/857215c9db53bee8985634f37bc6513e0784be1e"
     }
    ],
    "languages": [
     {
      "name": "JavaScript",
-     "share": 53.9
+     "share": 53.4
     },
     {
      "name": "HTML",
-     "share": 42.4
+     "share": 42.9
     },
     {
      "name": "Shell",
-     "share": 2
+     "share": 2.1
     },
     {
      "name": "CSS",
-     "share": 1.7
+     "share": 1.6
     }
    ],
    "readme": "The personal hub of Tomas Korcak (korczis). It covers who I am, the projects I build with their live sites, the stack behind them, and Majordomus, which supervises the work.",
@@ -629,650 +1278,6 @@
    "site": null,
    "curated": false,
    "stars": 0
-  },
-  {
-   "name": "korczis",
-   "period": 12,
-   "description": "Tomas Korcak: profile README, derived from korczis.github.io/site.json",
-   "category": "web",
-   "language": "JavaScript",
-   "created_at": "2026-11-14T17:32:26Z",
-   "last_commit": "2026-11-14T17:32:25Z",
-   "last_message": "feat(profile): a GitHub profile README derived from site.json",
-   "commits": [
-    {
-     "at": "2026-11-14T17:32:25Z",
-     "message": "feat(profile): a GitHub profile README derived from site.json",
-     "url": "https://github.com/korczis/korczis/commit/128cac6c44f094446230c2a2225da310f552de0a"
-    }
-   ],
-   "languages": [
-    {
-     "name": "JavaScript",
-     "share": 100
-    }
-   ],
-   "readme": "Software for evidence: AI agents that prove their work, honest instruments in the browser, knowledge you can check.",
-   "topics": [],
-   "hosts": {
-    "github": "https://github.com/korczis/korczis"
-   },
-   "site": "https://korczis.github.io/",
-   "curated": false,
-   "stars": 0
-  },
-  {
-   "name": "algoglyph",
-   "period": 12,
-   "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
-   "category": "science",
-   "language": "TypeScript",
-   "created_at": "2026-11-11T18:09:38Z",
-   "last_commit": "2026-11-14T17:02:03Z",
-   "last_message": "Merge remote-tracking branch 'origin/feature/articles-wave-7a' into fix/charts-by-title",
-   "commits": [
-    {
-     "at": "2026-11-14T17:02:03Z",
-     "message": "Merge remote-tracking branch 'origin/feature/articles-wave-7a' into fix/charts-by-title",
-     "url": "https://github.com/korczis/algoglyph/commit/16483a5f056a268c41e21ba859a8f2eb07a0248e"
-    },
-    {
-     "at": "2026-11-13T06:01:36Z",
-     "message": "Merge remote-tracking branch 'origin/main' into feature/articles-wave-7a",
-     "url": "https://github.com/korczis/algoglyph/commit/b07053d9561e79d0771bf60fa0fd9e398e6ad297"
-    },
-    {
-     "at": "2026-11-13T05:58:41Z",
-     "message": "docs(catalogue): transitive closure documented against BFS from every vertex",
-     "url": "https://github.com/korczis/algoglyph/commit/61a9b3b84d063d95f1f82e722b85fc6c959335a1"
-    },
-    {
-     "at": "2026-11-13T05:58:20Z",
-     "message": "docs(catalogue): topological sort documented, and which vertex takes place 0",
-     "url": "https://github.com/korczis/algoglyph/commit/ec0cd2e95ca9a358357d01ef871ba897b672efd3"
-    },
-    {
-     "at": "2026-11-13T05:58:08Z",
-     "message": "Merge remote-tracking branch 'origin/feature/bound-electron-medium' into fix/charts-by-title",
-     "url": "https://github.com/korczis/algoglyph/commit/a746e62bba0c5108bdbdc99a2be9c1ceb6d92b3d"
-    },
-    {
-     "at": "2026-11-13T05:58:01Z",
-     "message": "feat(topological-sort): a readout of edges pointing backward in the order",
-     "url": "https://github.com/korczis/algoglyph/commit/d661c8fa7f8b2f2544b0b23827b9649dba7f6090"
-    },
-    {
-     "at": "2026-11-13T05:57:42Z",
-     "message": "docs(catalogue): Tarjan documented, components in reverse topological order",
-     "url": "https://github.com/korczis/algoglyph/commit/6c281e611d86597b69263c21c47223441798cc45"
-    },
-    {
-     "at": "2026-11-13T05:57:24Z",
-     "message": "feat(tarjan-scc): a readout of edges into a later-popped component",
-     "url": "https://github.com/korczis/algoglyph/commit/207b99879ce4ba40f5d1ac1af5a5279700668008"
-    },
-    {
-     "at": "2026-11-13T05:57:06Z",
-     "message": "fix(tarjan-scc): one Strong components row",
-     "url": "https://github.com/korczis/algoglyph/commit/60f2273068d86ccbd41e6e062da3a47d36686e93"
-    },
-    {
-     "at": "2026-11-13T05:56:48Z",
-     "message": "docs(catalogue): Kosaraju documented against mutual reachability",
-     "url": "https://github.com/korczis/algoglyph/commit/1a770256f791841f78c79383d9f96aee4ae7c99c"
-    },
-    {
-     "at": "2026-11-13T05:56:30Z",
-     "message": "fix(kosaraju-scc): one Strong components row",
-     "url": "https://github.com/korczis/algoglyph/commit/3f10bcff03d7ffcf201cdcbafa5f7af0555b9b13"
-    },
-    {
-     "at": "2026-11-13T05:56:12Z",
-     "message": "docs(catalogue): the Euclidean MST documented, inside the Delaunay",
-     "url": "https://github.com/korczis/algoglyph/commit/3fa13770d2990f68177192c64bc4554e0d36e015"
-    },
-    {
-     "at": "2026-11-13T05:55:55Z",
-     "message": "fix(euclidean-mst): the exact shared triangulation instead of a float copy that lost hull edges",
-     "url": "https://github.com/korczis/algoglyph/commit/0b93e2403c06e7ae88ca803f26e828b3b94232a1"
-    },
-    {
-     "at": "2026-11-13T05:55:37Z",
-     "message": "refactor(delaunay): the exact triangulation becomes the site's shared module",
-     "url": "https://github.com/korczis/algoglyph/commit/587087d555e0251f291cd43e7bcc78a47b351904"
-    },
-    {
-     "at": "2026-11-13T05:55:18Z",
-     "message": "docs(catalogue): Borůvka documented, rounds bounded by ⌊log₂ V⌋",
-     "url": "https://github.com/korczis/algoglyph/commit/cba3f57e15e4a4db2d89b6f51e0b04f0bc6bd690"
-    },
-    {
-     "at": "2026-11-13T05:54:59Z",
-     "message": "docs(catalogue): Prim documented, the same weights and 2m scans",
-     "url": "https://github.com/korczis/algoglyph/commit/c360c9cb8dee8c06612a8b0841c569f30befc69e"
-    },
-    {
-     "at": "2026-11-13T05:54:36Z",
-     "message": "docs(catalogue): Kruskal documented, its weight equal to a dense Prim",
-     "url": "https://github.com/korczis/algoglyph/commit/864baedd8789956c88c14ab66d7ba28843b8295b"
-    },
-    {
-     "at": "2026-11-13T05:54:11Z",
-     "message": "docs(catalogue): bipartite matching documented, matching equal to the König cover",
-     "url": "https://github.com/korczis/algoglyph/commit/5f272fdfd512bbbee4c7748d5642376bab6e3668"
-    },
-    {
-     "at": "2026-11-13T05:53:45Z",
-     "message": "docs(catalogue): minimum-cost flow documented against successive shortest paths",
-     "url": "https://github.com/korczis/algoglyph/commit/762235b674ffe9b309d47fcc34628cf1e52bec79"
-    },
-    {
-     "at": "2026-11-13T05:53:21Z",
-     "message": "docs(catalogue): preflow-push documented, its height writes bounded by 2V − 1",
-     "url": "https://github.com/korczis/algoglyph/commit/884fdd92b7b947c4efe33ed94425167a8edd1c9a"
-    },
-    {
-     "at": "2026-11-13T05:52:56Z",
-     "message": "docs(catalogue): Edmonds–Karp documented, its augmentations bounded by E·⌊V/2⌋",
-     "url": "https://github.com/korczis/algoglyph/commit/1bce4eb973fbece5d39fca90ae62eb5267a12296"
-    },
-    {
-     "at": "2026-11-13T05:52:32Z",
-     "message": "docs(catalogue): Ford–Fulkerson documented, flow equal to cut",
-     "url": "https://github.com/korczis/algoglyph/commit/29952a41399bed2d5c073a4076ce3790814240dd"
-    },
-    {
-     "at": "2026-11-13T05:52:08Z",
-     "message": "feat(bipartite-matching): a König vertex cover readout",
-     "url": "https://github.com/korczis/algoglyph/commit/34639451005a227917780a1c6b3db4c39f5c254d"
-    },
-    {
-     "at": "2026-11-13T05:51:45Z",
-     "message": "feat(max-flow): a Cut capacity readout on the three max-flow plates",
-     "url": "https://github.com/korczis/algoglyph/commit/27fad3e142d915781bdc76e1df9724b5ae8068ce"
-    },
-    {
-     "at": "2026-11-13T05:51:21Z",
-     "message": "fix(min-cost-flow): one Flow value row",
-     "url": "https://github.com/korczis/algoglyph/commit/c6a14d826622f6b7e8a36211e03bfa4116305fa9"
-    },
-    {
-     "at": "2026-11-13T05:50:56Z",
-     "message": "docs(catalogue): pathfinding on terrain documented, A* pinned to the cells with f ≤ C*",
-     "url": "https://github.com/korczis/algoglyph/commit/c476c8d57a9109609624f7fcf234b0b123484bf5"
-    },
-    {
-     "at": "2026-11-13T05:50:31Z",
-     "message": "fix(pathfinding-terrain): no crash when every map attempt fails",
-     "url": "https://github.com/korczis/algoglyph/commit/a987eded1bc8c4be83b2704e646896aeb48ddb86"
-    },
-    {
-     "at": "2026-11-13T05:50:06Z",
-     "message": "refactor(pathfinding-terrain): the shared heap instead of a private copy",
-     "url": "https://github.com/korczis/algoglyph/commit/0c013da7608f51ddf59f57def6ae839a92b6dafb"
-    },
-    {
-     "at": "2026-11-13T05:49:43Z",
-     "message": "docs(catalogue): credible path documented, the log rule maximising the product of confidences",
-     "url": "https://github.com/korczis/algoglyph/commit/6dc92968ed91294584783d0d9f10c8abca12d7c6"
-    },
-    {
-     "at": "2026-11-13T05:49:20Z",
-     "message": "docs(catalogue): Floyd–Warshall documented, and two sentences its plate contradicted corrected",
-     "url": "https://github.com/korczis/algoglyph/commit/6832e9a29be50c0f22a8ec62d6477d8f9e267d35"
-    }
-   ],
-   "languages": [
-    {
-     "name": "TypeScript",
-     "share": 78.9
-    },
-    {
-     "name": "Rust",
-     "share": 17
-    },
-    {
-     "name": "JavaScript",
-     "share": 2.1
-    },
-    {
-     "name": "HTML",
-     "share": 1.7
-    },
-    {
-     "name": "Shell",
-     "share": 0.1
-    },
-    {
-     "name": "Just",
-     "share": 0.1
-    }
-   ],
-   "readme": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js simulations whose every number is measured from the running state.",
-   "topics": [
-    "algorithms",
-    "alpinejs",
-    "creative-coding",
-    "data-visualization",
-    "flowbite",
-    "generative-art",
-    "majordomus",
-    "p5js",
-    "physics-simulation",
-    "tailwindcss",
-    "typescript",
-    "webgl"
-   ],
-   "hosts": {
-    "github": "https://github.com/korczis/algoglyph"
-   },
-   "site": "https://korczis.github.io/algoglyph/",
-   "curated": true,
-   "stars": 0
-  },
-  {
-   "name": "kompendium-epistemicke-anihilace",
-   "period": 12,
-   "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
-   "category": "knowledge",
-   "language": "Elixir",
-   "created_at": "2026-11-09T22:04:50Z",
-   "last_commit": "2026-11-14T17:01:30Z",
-   "last_message": "chore(data): derived data regenerated after the Vulnerabilní podpopulace slice",
-   "commits": [
-    {
-     "at": "2026-11-14T17:01:30Z",
-     "message": "chore(data): derived data regenerated after the Vulnerabilní podpopulace slice",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/15fda0200f78f1203f901ec350cb549b07d1bf82"
-    },
-    {
-     "at": "2026-11-14T16:43:02Z",
-     "message": "fix(content): Vulnerabilní podpopulace says who is more exposed, not who to adapt for",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/5f662ac192b0df443a7b85c88f7d84787de50a7b"
-    },
-    {
-     "at": "2026-11-13T04:01:30Z",
-     "message": "chore(data): derived data regenerated after the Bezpečnostní rámec slice",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/97fb3b3b22ef1c8b70c00d726794c3288411c662"
-    },
-    {
-     "at": "2026-11-13T03:41:12Z",
-     "message": "fix(content): the Bezpečnostní rámec table says what its absence looks like, on 40 pages",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/1af5a8042223219213a4648f8ec0d90ab805134e"
-    },
-    {
-     "at": "2026-11-12T22:18:44Z",
-     "message": "chore(data): derived data regenerated after the drug-name slice",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/b9796ad2f9d63d039ffeb78ad7a41bb8b150c635"
-    },
-    {
-     "at": "2026-11-12T21:55:24Z",
-     "message": "fix(content): medication named as an option or a plan removed from six pages",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/c7befed9f24f166e22e367e86e68b8ee8a66b61c"
-    },
-    {
-     "at": "2026-11-12T20:42:58Z",
-     "message": "chore(data): odvozená data a baseline po dávce C",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/96bcdb48442c1bf7f84f47b911d39cc41d0842dc"
-    },
-    {
-     "at": "2026-11-12T20:13:35Z",
-     "message": "fix(scripts): stropy po dávce C změřené: drug-name 31, authority 0, detail 199",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/9ff67072ae1b65769bc2c484b4437755d49046b6"
-    },
-    {
-     "at": "2026-11-12T20:11:20Z",
-     "message": "Merge branch 'fix/legitimate-indication-frame': legitimate-indication podle rodiny techniky",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/8adee0d2599b9d1cb8f30b024ae254cd58583058"
-    },
-    {
-     "at": "2026-11-12T20:10:38Z",
-     "message": "Merge branch 'feature/ramec-legitimni': rámec legitimity na EA-4 přecílen",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/890a3bd3933979a3f1b939127bdec01faa61274d"
-    },
-    {
-     "at": "2026-11-12T20:10:17Z",
-     "message": "Merge branch 'feature/klinicke-pozadi': výčet jmen, rodokmen a třída léků pryč",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/50ae389aab8f7c61e74e873136ef15e30e8ad1bb"
-    },
-    {
-     "at": "2026-11-12T20:09:53Z",
-     "message": "Merge branch 'feature/odrazky-davka-1': odrážky na prózu, dávka 1",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/13a553f6223a777033d08f6412acfd598974afbe"
-    },
-    {
-     "at": "2026-11-12T20:09:06Z",
-     "message": "Merge branch 'feature/bold-candidates': tučné kandidáty dávky A a C",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/7774ecc99915cff4cc423e81d7f5b413527511c5"
-    },
-    {
-     "at": "2026-11-12T20:07:30Z",
-     "message": "Merge branch 'fix/ea-8-1-titles': názvy EA-8.1 podle katalogu",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/ccd51b90c44562d47374d553330988edebb7ae57"
-    },
-    {
-     "at": "2026-11-12T20:07:08Z",
-     "message": "Merge branch 'feature/klinicka-cisla-obsah': ADR 0012, nález šablony se přeměří",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/2543b010179dd8253c7ad36734032bd414fb213d"
-    },
-    {
-     "at": "2026-11-12T20:06:47Z",
-     "message": "Merge branch 'fix/co-overit': Co ověřit pryč, prahy EA-5.5, code-range na nule",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/422f46e7f26eef71d840aa3f6bffed1ef2664ab5"
-    },
-    {
-     "at": "2026-11-12T20:06:24Z",
-     "message": "Merge branch 'fix/verify-tmp-build': verify-content odvozuje sekce z catalogs.toml",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/6a8c7c4ab132b17140770bcc2e82118254bdc85f"
-    },
-    {
-     "at": "2026-11-12T19:42:27Z",
-     "message": "Merge origin/main (e2b45906) into feature/bold-candidates; batch A re-applied on main's pages",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/a1687d1c662a6a3c7c6c2b3cfd7232dd924c9ffc"
-    },
-    {
-     "at": "2026-11-12T19:10:58Z",
-     "message": "fix(test): čtenáři rour čtou celý vstup, souběh je omezen na 4 úlohy",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/e2b45906bc175d6c61102e1856f50083cfc806e4"
-    },
-    {
-     "at": "2026-11-12T18:25:26Z",
-     "message": "chore(data): odvozená data a baseline po vlně \"Co ověřit\"",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/2ed2ed250417f5044ad97ec2b628a31c92a1750e"
-    },
-    {
-     "at": "2026-11-12T18:25:00Z",
-     "message": "fix(content): blok \"Co ověřit před čtením\" pryč, prahy EA-5.5 a rozsahy kódů odstraněny",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/c432cbc29997c75b31cc536d5364c6e11ae8b56d"
-    },
-    {
-     "at": "2026-11-12T18:24:33Z",
-     "message": "fix(scripts): clinical-figure chytá CDS, obecné skóre a hodiny, code-range na nule",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/e675d700ce6224a94c35300478bd8e5fdbccb94d"
-    },
-    {
-     "at": "2026-11-12T18:24:06Z",
-     "message": "docs(adr): 0013 dodatek opraven, stránka 18 drží na rozhodnutí vlastníka",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/acd8484e968b46c9d2f11547f0faec499ef901b3"
-    },
-    {
-     "at": "2026-11-12T18:16:45Z",
-     "message": "fix(test): případy běží souběžně nad jedním snímkem indexu",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/44bd878840e46d15e4bf6bd97e16fce557b08d43"
-    },
-    {
-     "at": "2026-11-12T18:16:18Z",
-     "message": "perf(scripts): check-ia hledá jednou za stránku, vzory předkompilované",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/b445d1218d21627ecefe351c751a1842d2998544"
-    },
-    {
-     "at": "2026-11-12T17:59:33Z",
-     "message": "fix(obsah): skutečný zdroj použitý jako povolení, přemířený na 15 stránkách",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/352852f0c50000ba692f4e8341fb00c9098e653c"
-    },
-    {
-     "at": "2026-11-12T16:43:37Z",
-     "message": "fix(obsah): vypůjčené autority a rodokmen technik pryč ze 75 stránek",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/780553aa9fb649595018ea239592856dd4d7dcec"
-    },
-    {
-     "at": "2026-11-12T16:36:16Z",
-     "message": "feat(ia): legitimate-indication frame — 'kdy je … legitimní' scoped by technique family",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/1c416b4f53bdae2690bb5d09317affa4f4ca83f9"
-    },
-    {
-     "at": "2026-11-12T16:24:51Z",
-     "message": "chore(data): baseline přerazítkovaný po ověření dávky B",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/3861ac6781aef1c11ad2ac6384fc4c67343f4793"
-    },
-    {
-     "at": "2026-11-12T15:30:34Z",
-     "message": "fix(tooling): verify-content kopíruje zpět všechny katalogy z data/catalogs.toml",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/d41fe4e1dac63fec7c1d0da9d4c8f52537cdab64"
-    }
-   ],
-   "languages": [
-    {
-     "name": "Elixir",
-     "share": 34.7
-    },
-    {
-     "name": "JavaScript",
-     "share": 22.1
-    },
-    {
-     "name": "Python",
-     "share": 14.8
-    },
-    {
-     "name": "HTML",
-     "share": 13.6
-    },
-    {
-     "name": "Rust",
-     "share": 8.7
-    },
-    {
-     "name": "Shell",
-     "share": 5.9
-    }
-   ],
-   "readme": "Defenzivní taxonomie jevů, které systematicky rozkládají schopnost člověka poznávat.",
-   "topics": [
-    "czech",
-    "epistemology",
-    "flowbite",
-    "kompendium",
-    "majordomus",
-    "manipulation",
-    "psychology",
-    "taxonomy",
-    "zola"
-   ],
-   "hosts": {
-    "github": "https://github.com/korczis/kompendium-epistemicke-anihilace"
-   },
-   "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
-   "curated": true,
-   "stars": 0
-  },
-  {
-   "name": "oscilla",
-   "period": 12,
-   "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-   "category": "science",
-   "language": "JavaScript",
-   "created_at": "2026-10-01T21:05:33Z",
-   "last_commit": "2026-11-13T05:10:17Z",
-   "last_message": "fix(ui): train T19, U108's review follow-ups (U111) and release v3.37.3 (#544)",
-   "commits": [
-    {
-     "at": "2026-11-13T05:10:17Z",
-     "message": "fix(ui): train T19, U108's review follow-ups (U111) and release v3.37.3 (#544)",
-     "url": "https://github.com/korczis/oscilla/commit/a661ae5b9a435826ff859bc02a7a13f8bc17322d"
-    },
-    {
-     "at": "2026-11-13T04:19:06Z",
-     "message": "review(ui): #544 verdict merge for train T19 (U111, v3.37.3), under the legs and receipt condition",
-     "url": "https://github.com/korczis/oscilla/commit/18feae93aad8ac3cb496f6cc4bee7154efdb629c"
-    },
-    {
-     "at": "2026-11-13T04:01:54Z",
-     "message": "chore(release): v3.37.3",
-     "url": "https://github.com/korczis/oscilla/commit/698ee104a94002d229121731dd181cb8447f0314"
-    },
-    {
-     "at": "2026-11-13T03:25:14Z",
-     "message": "chore(release): record v3.37.2",
-     "url": "https://github.com/korczis/oscilla/commit/0f97037be57994db2d15ef24f9309e4172baec76"
-    },
-    {
-     "at": "2026-11-13T03:25:09Z",
-     "message": "merge(train): U111, U108's review follow-ups (75d8a533) into train T19",
-     "url": "https://github.com/korczis/oscilla/commit/3fce06be268521e9a9faee371d73cb823569629e"
-    },
-    {
-     "at": "2026-11-13T02:51:34Z",
-     "message": "fix(ui): U111, U108's review follow-ups: the no-source short line, a close that waits for the alert, pair-named phone debt keys, the deepest overlap and a cold s-notice",
-     "url": "https://github.com/korczis/oscilla/commit/75d8a533f224839d3dad198e2ca055a40531e8ae"
-    },
-    {
-     "at": "2026-11-13T02:38:52Z",
-     "message": "chore(plan): U108 done, landed by #541 (v3.37.2) (#543)",
-     "url": "https://github.com/korczis/oscilla/commit/7aefc37d3eb8d62721a5697b206d3b80f1ac5888"
-    },
-    {
-     "at": "2026-11-13T02:25:24Z",
-     "message": "chore(plan): U108 done, landed by #541 (v3.37.2) under verdict 541.yaml",
-     "url": "https://github.com/korczis/oscilla/commit/9a3f094eb2e0c5a154b1b9a5057b02492847b671"
-    },
-    {
-     "at": "2026-11-13T02:18:53Z",
-     "message": "chore(plan): U111 and E072 from #541's review, and U108's open findings move to U111 (#542)",
-     "url": "https://github.com/korczis/oscilla/commit/0f80b807b8cb7f18f260f77a5d7c33eb3fa2e082"
-    },
-    {
-     "at": "2026-11-13T02:12:26Z",
-     "message": "chore(plan): U111 and E072 from #541's review, and U108's open findings move to U111",
-     "url": "https://github.com/korczis/oscilla/commit/7922fd8fd1d4f067fbacdce303620af2d3759c62"
-    },
-    {
-     "at": "2026-11-13T02:10:53Z",
-     "message": "fix(ui): train T18, on a phone the Synth's insert alert is above the keyboard dock (U108), and release v3.37.2 (#541)",
-     "url": "https://github.com/korczis/oscilla/commit/2885a94b4fa49e456fbeefc0d99ece3386a71e90"
-    },
-    {
-     "at": "2026-11-12T23:25:15Z",
-     "message": "test(ui): on CI linux U108's phone padding leaves no 375 Synth overlap, so the linux keys go and the Mac's stays",
-     "url": "https://github.com/korczis/oscilla/commit/837c4b6e4d2b713e848fce310c6075d7fcfa6a13"
-    },
-    {
-     "at": "2026-11-12T22:18:11Z",
-     "message": "review(synth): #541 verdict re-judged at a1de4e33, the 58-char line and CI's 375 keys",
-     "url": "https://github.com/korczis/oscilla/commit/a42d1c6b103eccadb2c7c993e1680c72a3362f98"
-    },
-    {
-     "at": "2026-11-12T21:45:05Z",
-     "message": "fix(ui): U108 on CI's linux fonts: the 58-char short line and a tighter phone layout keep the alert above the dock at 320, and the 375 debt follows CI",
-     "url": "https://github.com/korczis/oscilla/commit/a1de4e33bbb8ce0c483907611857764a22fc2cd7"
-    },
-    {
-     "at": "2026-11-12T20:12:51Z",
-     "message": "review(synth): #541 verdict merge for train T18 (U108, v3.37.2), under the legs and receipt condition",
-     "url": "https://github.com/korczis/oscilla/commit/b6609c3ff29150b8ec2b61ea3297e83d6297e5cf"
-    },
-    {
-     "at": "2026-11-12T19:55:05Z",
-     "message": "chore(release): the roadmap counts U108 in M054 (72 required), derived at v3.37.2's prepare",
-     "url": "https://github.com/korczis/oscilla/commit/2d4d939f1525f91ca2c5cb4cee4344abd9717f30"
-    },
-    {
-     "at": "2026-11-12T19:51:24Z",
-     "message": "chore(release): v3.37.2",
-     "url": "https://github.com/korczis/oscilla/commit/78bf3ffe0a410784604b7c680304693c19d16626"
-    },
-    {
-     "at": "2026-11-12T19:46:59Z",
-     "message": "chore(release): record v3.37.1",
-     "url": "https://github.com/korczis/oscilla/commit/b2f04be94f1d18f7be41407eeea24b389757fa98"
-    },
-    {
-     "at": "2026-11-12T19:38:56Z",
-     "message": "merge(main): T17 (#540, v3.37.1) into U108",
-     "url": "https://github.com/korczis/oscilla/commit/9d9c4d8a94fd67795dd46d3e715fd01b845533f4"
-    },
-    {
-     "at": "2026-11-12T19:36:47Z",
-     "message": "fix(i18n): train T17, Czech pass 2 across the Playground, dock, presets and Synth panel, two review checks, and release v3.37.1 (#540)",
-     "url": "https://github.com/korczis/oscilla/commit/0a7f1847423f83828f620672f89c9f10e440e095"
-    },
-    {
-     "at": "2026-11-12T18:35:38Z",
-     "message": "test(ui): the 375 Synth overlap is owed in every engine on every host, so T17 carries one '@375:synth:overlap'",
-     "url": "https://github.com/korczis/oscilla/commit/c8cda15baacdf51f1360d44e90d49e826c02616d"
-    },
-    {
-     "at": "2026-11-12T18:01:26Z",
-     "message": "test(ui): in the steady state the 375 Synth overlap is measured in every engine on every host, so it is one key again",
-     "url": "https://github.com/korczis/oscilla/commit/3f0c20fdac2698edf91a98fbbd5bafef243ca150"
-    },
-    {
-     "at": "2026-11-12T17:36:10Z",
-     "message": "test(ui): phone-whole measures the Synth once the link's notice is gone, and the 375 overlap keeps its host-scoped keys from the steady state",
-     "url": "https://github.com/korczis/oscilla/commit/d09e5dc7464c83282fea388c7c2fb382a6aecd98"
-    },
-    {
-     "at": "2026-11-12T17:17:12Z",
-     "message": "test(ui): U108's 375 Synth overlap is owed in every engine on every host: the link's notice shows as the alert closes and pushes the tabs under the dock",
-     "url": "https://github.com/korczis/oscilla/commit/fe761817d682fcced20b1dd4ce2f176a3cd66c8a"
-    },
-    {
-     "at": "2026-11-12T17:06:34Z",
-     "message": "test(ui): where the dock covers the insert alert's Close, phone-whole closes it by its handler, so every host measures the page unscrolled",
-     "url": "https://github.com/korczis/oscilla/commit/a08bcfe804435823c5e7c2bdeb7dff12c5c0e5b9"
-    },
-    {
-     "at": "2026-11-12T16:57:07Z",
-     "message": "fix(ui): U108's waiting notice runs once and the latest wins, the dock re-decides after the toast's layout, and condition 4 is checked",
-     "url": "https://github.com/korczis/oscilla/commit/65b6a442c1dcc48f2094a94a200bd77b2a4abaca"
-    },
-    {
-     "at": "2026-11-12T16:47:51Z",
-     "message": "fix(ui): on a phone the Synth's insert alert comes first, with a short line and Více, and the link's notice waits for it (U108)",
-     "url": "https://github.com/korczis/oscilla/commit/e26ed17f6ae07a3835f40499ec57ba31fcf9fff5"
-    },
-    {
-     "at": "2026-11-12T16:36:23Z",
-     "message": "merge(plan): U108's plan record into its build branch",
-     "url": "https://github.com/korczis/oscilla/commit/309dc651303b2184f962085906e1d12835f6ebd5"
-    },
-    {
-     "at": "2026-11-12T16:01:33Z",
-     "message": "review(synth): #540 verdict re-judged at bb388574, C3-540-3 closed, U108 carries C3-540-6",
-     "url": "https://github.com/korczis/oscilla/commit/79bb6ebb1ce06cfe466fb8b32f59dc4542df297b"
-    },
-    {
-     "at": "2026-11-12T15:53:39Z",
-     "message": "test(ui): phone-whole debt keys may name the host, and the 375 Synth overlap is owed on the Mac and on linux chromium and firefox, not on linux webkit",
-     "url": "https://github.com/korczis/oscilla/commit/bb3885740aabbf7ed76c00fd74977c9349179da6"
-    }
-   ],
-   "languages": [
-    {
-     "name": "JavaScript",
-     "share": 96.9
-    },
-    {
-     "name": "HTML",
-     "share": 1.9
-    },
-    {
-     "name": "CSS",
-     "share": 1.1
-    },
-    {
-     "name": "Shell",
-     "share": 0
-    }
-   ],
-   "readme": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-   "topics": [
-    "acoustics",
-    "audio",
-    "dsp",
-    "education",
-    "javascript",
-    "signal-processing",
-    "spectrogram",
-    "synthesizer",
-    "web-audio"
-   ],
-   "hosts": {
-    "github": "https://github.com/korczis/oscilla"
-   },
-   "site": "https://korczis.github.io/oscilla/",
-   "curated": true,
-   "stars": 1
   },
   {
    "name": "vomaste.cz",

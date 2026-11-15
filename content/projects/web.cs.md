@@ -4,10 +4,10 @@ title = "Web"
 description = "Weby a webové aplikace: single-page aplikace, frontendy v Phoenixu a Elmu, landing pages a weby přátel."
 template = "category.html"
 weight = 8
-updated = "2026-11-14T17:48:17Z"
+updated = "2026-11-14T22:46:08Z"
 
 [taxonomies]
-tags = ["Web", "korczis.github.io", "korczis", "ApolloCrawler-github-io", "korczis-com"]
+tags = ["Web", "korczis", "korczis.github.io", "ApolloCrawler-github-io", "korczis-com"]
 
 [extra]
 category = "web"
@@ -15,7 +15,7 @@ og_title = "Web: 15 repozitářů."
 og_image = "og/cs-category-web.png"
 schema = "collection"
 terms = ["static-site-generator", "javascript", "css", "elixir", "repository"]
-keywords = ["Web", "korczis.github.io", "korczis", "ApolloCrawler-github-io", "korczis-com", "korczis-github-com", "pavian-eu", "Tomáš Korčák"]
+keywords = ["Web", "korczis", "korczis.github.io", "ApolloCrawler-github-io", "korczis-com", "korczis-github-com", "pavian-eu", "Tomáš Korčák"]
 
 [[extra.viz]]
 kind = "constellation"

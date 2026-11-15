@@ -3,8 +3,8 @@
 title = "korczis.github.io"
 description = "korczis.github.io: projekt z kategorie Web, hlavní jazyk JavaScript, poslední commit 14. listopadu 2026."
 template = "work.html"
-weight = 3
-updated = "2026-11-14T17:44:30Z"
+weight = 7
+updated = "2026-11-14T18:48:39Z"
 
 [taxonomies]
 tags = ["Web", "JavaScript", "HTML", "Shell"]
@@ -26,8 +26,8 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**korczis.github.io** je projekt z kategorie [Web](@/projects/web.cs.md). Jeho kód je napsaný hlavně v jazyce [JavaScript](@/glossary/javascript.cs.md) (53,9 %), dále [HTML](@/glossary/html.cs.md), [Shell](@/glossary/shell.cs.md) a [CSS](@/glossary/css.cs.md).
+**korczis.github.io** je projekt z kategorie [Web](@/projects/web.cs.md). Jeho kód je napsaný hlavně v jazyce [JavaScript](@/glossary/javascript.cs.md) (53,4 %), dále [HTML](@/glossary/html.cs.md), [Shell](@/glossary/shell.cs.md) a [CSS](@/glossary/css.cs.md).
 
-[Repozitář](@/glossary/repository.cs.md) vznikl 24. prosince 2024; poslední [commit](@/glossary/commit.cs.md) je z 14. listopadu 2026. Zní „fix(verify): refuse a toolchain behind the lockfile before any gate runs“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+[Repozitář](@/glossary/repository.cs.md) vznikl 24. prosince 2024; poslední [commit](@/glossary/commit.cs.md) je z 14. listopadu 2026. Zní „chore(data): refresh the snapshot and the index“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 30 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

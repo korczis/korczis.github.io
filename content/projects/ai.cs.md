@@ -4,7 +4,7 @@ title = "Inženýrství AI"
 description = "Dohled nad AI agenty pro programování: jedna politika pro každý nástroj, vymezené úkoly a práce, která projde jen doložená."
 template = "category.html"
 weight = 1
-updated = "2026-11-13T04:00:28Z"
+updated = "2026-11-14T22:09:42Z"
 
 [taxonomies]
 tags = ["Inženýrství AI", "Majordomus", "llm", "sig", "edna"]

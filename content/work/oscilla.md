@@ -3,8 +3,8 @@
 title = "Oscilla"
 description = "A zero-install acoustic laboratory in the browser."
 template = "work.html"
-weight = 7
-updated = "2026-11-13T05:10:17Z"
+weight = 5
+updated = "2026-11-14T20:57:51Z"
 
 [taxonomies]
 tags = ["Science and visualisation", "JavaScript", "HTML", "CSS"]
@@ -28,7 +28,7 @@ tone = "night"
 +++
 **Oscilla** is a project in [Science and visualisation](@/projects/science.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (96.9 %), with [HTML](@/glossary/html.md), [CSS](@/glossary/css.md) and [Shell](@/glossary/shell.md).
 
-The [repository](@/glossary/repository.md) was created in October 2026; its latest [commit](@/glossary/commit.md) is from 13 November 2026. It reads “fix(ui): train T19, U108's review follow-ups (U111) and release v3.37.3 (\#544)”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created in October 2026; its latest [commit](@/glossary/commit.md) is from 14 November 2026. It reads “test(ui): U112 names the 320 Synth overlap pairs for every host, and the v3.37.3 record (\#546)”. That places it among the projects active in the last 12 months.
 
 It is built with [Web Audio](@/glossary/web-audio.md).
 
