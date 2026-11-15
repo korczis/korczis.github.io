@@ -3,8 +3,8 @@ schema: knowledge/v1
 id: owner-decisions-2026-11-15
 kind: knowledge
 class: fact
-title: "The owner's answers of 2026-11-15: the experience map, the derived categories, and unable.cz never runs"
-description: "Before changing data/projects.toml category rules or its hidden list, the private engagement map, or anything that would publish unable.cz."
+title: "The owner's answers of 2026-11-15: the experience map, the derived categories, unable.cz never runs, and the scope of a full refresh"
+description: "Before changing data/projects.toml category rules or its hidden list, the private engagement map, anything that would publish unable.cz, or the scope of what the hub reflects."
 status: verified
 epistemics: observed
 date: 2026-11-15
@@ -58,3 +58,21 @@ each ADR's Acceptance section (adr-0001 to adr-0006).
   linked; its work pages and Open Graph images are gone and every derived page re-derived.
 - Rule: nothing in this repository or its tooling publishes, links or rebuilds unable.cz. A
   404 there is the intended state, not a fault to repair.
+
+## The scope of a full refresh
+
+Asked in Claude Code session 3a8d2ec9-0e7b-44c6-8507-e8c771723337 at 2026-11-15T23:04Z, after
+the owner had asked three times: "vse updatuj, ignoruj ~/dev/able/*/** vse ostatni reflect,
+vsechny repos, use "gh cli" i "gl cli", deploy asap".
+
+- Question: "Tvoje zadání přišlo už potřetí. Zatím mám hotové tohle: hub znovu změřil všech 448
+  GitHub a 417 GitLab veřejných repozitářů přes gh a glab a commit c3ffa7a je na master (deploy
+  čeká na runner). Lokální repozitáře v ~/dev kromě able se fast-forwardují. Co ještě má hub
+  'reflect'?"
+- Answer: "Stačí to, jen dokonči"
+- Done: the hub reflects the public GitHub and GitLab repositories only (commit c3ffa7a,
+  measured locally with gh and authenticated glab; `top_languages` raised to 5 because the
+  fuller glab measurement put Rust fifth). Private repositories and checkouts with no public
+  remote stay out of it; that would be a new decision. The local checkouts under `~/dev` were
+  fast-forwarded only where clean and not ahead; `~/dev/able/**` and every linked worktree were
+  left untouched.
