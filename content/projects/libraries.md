@@ -14,7 +14,7 @@ category = "libraries"
 og_title = "Libraries: 7 repositories."
 og_image = "og/category-libraries.png"
 schema = "collection"
-terms = ["open-source", "javascript", "elixir", "rust", "repository"]
+terms = ["open-source", "elixir", "javascript", "rust", "repository"]
 keywords = ["Libraries", "gauc-ex", "hydra", "gauc.ex", "easy-plugin-plugins", "peg-parser", "babel-plugin-transform-graphql", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -28,7 +28,7 @@ tone = "night"
 +++
 Reusable building blocks for other programs: clients, bindings, validators, parsers and framework extensions, mostly Elixir and Rust.
 
-The category holds 7 original repositories, written most often in [JavaScript](@/glossary/javascript.md), [Elixir](@/glossary/elixir.md) and [Rust](@/glossary/rust.md).
+The category holds 7 original repositories, written most often in [Elixir](@/glossary/elixir.md), [JavaScript](@/glossary/javascript.md) and [Rust](@/glossary/rust.md).
 
 Key concept: [Open source](@/glossary/open-source.md).
 

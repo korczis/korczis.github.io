@@ -3,7 +3,7 @@
 title = "osint-case-ratcliffe-moscow-2026"
 description = "Open-source intelligence assessment of the CIA Director's unannounced Moscow visit (2026-08-25) — maintained with Claude Code skills; reusable OSINT case toolkit"
 template = "work.html"
-weight = 14
+weight = 13
 updated = "2026-08-26T22:32:53Z"
 
 [taxonomies]

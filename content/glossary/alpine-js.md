@@ -17,7 +17,7 @@ definition = "A small JavaScript framework that adds behaviour to HTML in its ow
 aliases = []
 reference = { title = "alpinejs.dev", url = "https://alpinejs.dev/" }
 pages = ["projects/knowledge.md", "projects/science.md", "stack.md", "work/algoglyph.md", "work/kompendium-epistemicke-anihilace.md"]
-related = ["apache-echarts", "flowbite-pro", "repository", "cytoscape-js", "github-pages", "javascript", "p5-js", "rust"]
+related = ["apache-echarts", "flowbite-pro", "repository", "cytoscape-js", "elixir", "github-pages", "javascript", "p5-js"]
 og_title = "Alpine.js: glossary"
 og_image = "og/glossary-alpine-js.png"
 keywords = ["Alpine.js", "Technology", "Glossary", "Tomas Korcak"]

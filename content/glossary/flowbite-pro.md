@@ -17,7 +17,7 @@ definition = "A licensed library of interface blocks and an application shell on
 aliases = ["Flowbite"]
 reference = { title = "Flowbite", url = "https://flowbite.com/" }
 pages = ["_index.md", "projects/knowledge.md", "projects/science.md", "stack.md", "work/algoglyph.md", "work/kompendium-epistemicke-anihilace.md"]
-related = ["alpine-js", "apache-echarts", "repository", "zola", "commit", "cytoscape-js", "data-visualisation", "github-pages"]
+related = ["alpine-js", "apache-echarts", "repository", "zola", "commit", "cytoscape-js", "data-visualisation", "elixir"]
 og_title = "Flowbite Pro: glossary"
 og_image = "og/glossary-flowbite-pro.png"
 keywords = ["Flowbite Pro", "Technology", "Glossary", "Tomas Korcak"]

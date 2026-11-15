@@ -17,7 +17,7 @@ definition = "Malý JavaScriptový framework, který přidává chování do HTM
 aliases = []
 reference = { title = "alpinejs.dev", url = "https://alpinejs.dev/" }
 pages = ["projects/knowledge.cs.md", "projects/science.cs.md", "stack.cs.md", "work/algoglyph.cs.md", "work/kompendium-epistemicke-anihilace.cs.md"]
-related = ["apache-echarts", "flowbite-pro", "repository", "cytoscape-js", "github-pages", "javascript", "p5-js", "rust"]
+related = ["apache-echarts", "flowbite-pro", "repository", "cytoscape-js", "elixir", "github-pages", "javascript", "p5-js"]
 og_title = "Alpine.js: slovník"
 og_image = "og/cs-glossary-alpine-js.png"
 keywords = ["Alpine.js", "Technologie", "Slovník", "Tomáš Korčák"]

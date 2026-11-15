@@ -3,7 +3,7 @@
 title = "sig"
 description = "Sig is a comprehensive Elixir-based platform that combines advanced Open Source Intelligence (OSINT) capabilities, AI agent societies, real-time collaboration…"
 template = "work.html"
-weight = 22
+weight = 21
 updated = "2026-02-04T23:36:59Z"
 
 [taxonomies]

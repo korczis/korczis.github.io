@@ -16,8 +16,8 @@ kind = "language"
 definition = "Funkcionální jazyk nad virtuálním strojem Erlangu, stavěný pro souběžné systémy odolné vůči chybám."
 aliases = []
 reference = { title = "elixir-lang.org", url = "https://elixir-lang.org/" }
-pages = ["about.cs.md", "projects/data.cs.md", "projects/knowledge.cs.md", "projects/learning.cs.md", "projects/libraries.cs.md", "projects/media.cs.md", "projects/tools.cs.md", "projects/web.cs.md", "work/corvidae.cs.md", "work/crisis-map.cs.md", "work/distance-calculator.cs.md", "work/el-magico-cache.cs.md", "work/job-processor.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/korczis-gitlab-io.cs.md", "work/kuzu-ex.cs.md", "work/llm.cs.md", "work/prismatic.cs.md", "work/sig.cs.md", "work/simple-geocoder.cs.md", "work/sonic-playground.cs.md", "work/the-psycho.cs.md"]
-related = ["repository", "open-source", "commit", "javascript", "shell", "html", "python", "css"]
+pages = ["about.cs.md", "projects/ai.cs.md", "projects/data.cs.md", "projects/knowledge.cs.md", "projects/learning.cs.md", "projects/libraries.cs.md", "projects/media.cs.md", "projects/science.cs.md", "projects/tools.cs.md", "projects/web.cs.md", "work/corvidae.cs.md", "work/crisis-map.cs.md", "work/distance-calculator.cs.md", "work/el-magico-cache.cs.md", "work/job-processor.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/korczis-gitlab-io.cs.md", "work/kuzu-ex.cs.md", "work/llm.cs.md", "work/meili-rsex.cs.md", "work/prismatic.cs.md", "work/sig.cs.md", "work/simple-geocoder.cs.md", "work/sonic-playground.cs.md", "work/the-psycho.cs.md"]
+related = ["repository", "open-source", "commit", "javascript", "shell", "html", "rust", "python"]
 og_title = "Elixir: slovník"
 og_image = "og/cs-glossary-elixir.png"
 keywords = ["Elixir", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

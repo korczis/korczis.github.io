@@ -11,10 +11,10 @@ tags = ["Data a GIS", "Data Atlas", "Crisis map", "apollo-crawler-extension", "m
 
 [extra]
 category = "data"
-og_title = "Data a GIS: 50 repozitářů."
+og_title = "Data a GIS: 51 repozitářů."
 og_image = "og/cs-category-data.png"
 schema = "collection"
-terms = ["gis", "ruby", "javascript", "elixir", "html", "python", "rust", "shell", "postgis", "mcp", "repository"]
+terms = ["gis", "javascript", "ruby", "elixir", "shell", "html", "python", "rust", "postgis", "mcp", "repository"]
 keywords = ["Data a GIS", "Data Atlas", "Crisis map", "apollo-crawler-extension", "microcrawler", "microcrawler-browser", "microcrawler-crawler-bam-brno-cz", "microcrawler-crawler-all", "microcrawler-crawler-base", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -28,7 +28,7 @@ tone = "night"
 +++
 Katalogy a mapy otevřených dat: zdroje geodat, crawlery, hlášení incidentů geokódovaná a servírovaná z jednoho registru.
 
-Kategorie má 50 repozitářů; nejčastějšími jazyky jsou [Ruby](@/glossary/ruby.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Elixir](@/glossary/elixir.cs.md) a [HTML](@/glossary/html.cs.md). Vybrané projekty: **Data Atlas** a **Crisis map**.
+Kategorie má 51 repozitářů; nejčastějšími jazyky jsou [JavaScript](@/glossary/javascript.cs.md), [Ruby](@/glossary/ruby.cs.md), [Elixir](@/glossary/elixir.cs.md), [Shell](@/glossary/shell.cs.md) a [HTML](@/glossary/html.cs.md). Vybrané projekty: **Data Atlas** a **Crisis map**.
 
 Klíčový pojem: [GIS](@/glossary/gis.cs.md).
 

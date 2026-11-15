@@ -1,6 +1,6 @@
 {
  "schema": "korczis-hub-index/v1",
- "generated_at": "2026-11-14T23:17:37Z",
+ "generated_at": "2026-11-15T22:27:14Z",
  "rule": "original = the owner wrote at least half of the listed commits; forks and mirrors are counted, not listed",
  "counts": {
   "github": 448,
@@ -8,11 +8,18 @@
   "merged": 517,
   "own": 211,
   "forks": 250,
-  "mirrors": 33,
-  "empty": 17,
+  "mirrors": 47,
+  "empty": 3,
+  "unmeasured": 0,
   "hidden": 6,
-  "mirrors_measured": 18
+  "mirrors_measured": 32
  },
+ "dropped": [
+  {
+   "name": "korczis",
+   "now": "mirror"
+  }
+ ],
  "all_repos": [
   {
    "name": "3d-print",
@@ -51,7 +58,7 @@
    ],
    "stars": 0,
    "created_at": "2026-11-11T18:09:38Z",
-   "pushed_at": "2026-11-14T22:37:26Z",
+   "pushed_at": "2026-11-15T22:14:06Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -937,7 +944,7 @@
   {
    "name": "ev",
    "description": "Import of http://dist.schmorp.de/libev/",
-   "language": null,
+   "language": "Shell",
    "topics": [],
    "stars": 1,
    "created_at": "2012-06-17T18:42:31Z",
@@ -1536,7 +1543,7 @@
    ],
    "stars": 0,
    "created_at": "2026-11-09T22:04:50Z",
-   "pushed_at": "2026-11-14T22:46:05Z",
+   "pushed_at": "2026-11-15T22:17:41Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -1545,23 +1552,6 @@
    "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
    "category": "knowledge",
    "curated": true
-  },
-  {
-   "name": "korczis",
-   "description": "Tomas Korcak: profile README, derived from korczis.github.io/site.json",
-   "language": "JavaScript",
-   "topics": [],
-   "stars": 0,
-   "created_at": "2026-11-14T17:32:26Z",
-   "pushed_at": "2026-11-14T22:46:08Z",
-   "archived": false,
-   "share": 0.5,
-   "hosts": {
-    "github": "https://github.com/korczis/korczis"
-   },
-   "site": "https://korczis.github.io/",
-   "category": "web",
-   "curated": false
   },
   {
    "name": "korczis.github.io",
@@ -1585,9 +1575,9 @@
    ],
    "stars": 0,
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-14T22:37:51Z",
+   "pushed_at": "2026-11-15T22:17:35Z",
    "archived": false,
-   "share": 0.89,
+   "share": 0.95,
    "hosts": {
     "github": "https://github.com/korczis/korczis.github.io"
    },
@@ -1633,7 +1623,7 @@
   {
    "name": "libnet",
    "description": "Libnet is a high-level API (toolkit) allowing the application programmer to construct and inject network packets. It provides a portable and simplified interface for low-level network packet shaping, handling and injection. Libnet hides much of the tedium of packet creation from the application programmer such as multiplexing, buffer management, arcane packet header information, byte-ordering, OS-dependent issues, and much more. Libnet features portable packet creation interfaces at both the IP-layer and link-layer, as well as a host of supplementary and complementary functionality. Using libnet, quick and simple packet assembly applications can be whipped up with little effort. With a bit more time, more complex programs can be written (Traceroute and Ping were easily rewritten using libnet and libpcap).",
-   "language": null,
+   "language": "C",
    "topics": [],
    "stars": 15,
    "created_at": "2012-06-21T17:04:23Z",
@@ -1649,7 +1639,7 @@
   {
    "name": "libnids",
    "description": "Libnids is an implementation of an E-component of Network Intrusion Detection System. It emulates the IP stack of Linux 2.0.x. Libnids offers IP defragmentation, TCP stream assembly and TCP port scan detection.",
-   "language": null,
+   "language": "C",
    "topics": [],
    "stars": 53,
    "created_at": "2012-06-21T16:56:41Z",
@@ -1997,7 +1987,7 @@
   {
    "name": "mongo-cxx-driver",
    "description": null,
-   "language": null,
+   "language": "C++",
    "topics": [],
    "stars": 1,
    "created_at": "2012-06-20T13:30:52Z",
@@ -2081,7 +2071,7 @@
    ],
    "stars": 1,
    "created_at": "2026-10-01T21:05:33Z",
-   "pushed_at": "2026-11-14T22:41:17Z",
+   "pushed_at": "2026-11-15T22:04:56Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -2330,7 +2320,7 @@
    ],
    "stars": 1,
    "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-14T22:09:42Z",
+   "pushed_at": "2026-11-15T22:01:24Z",
    "archived": false,
    "share": 0.99,
    "hosts": {
@@ -2519,7 +2509,7 @@
   {
    "name": "sandbox",
    "description": "Something just for fun. This is place where I play with new techs...",
-   "language": null,
+   "language": "Ruby",
    "topics": [],
    "stars": 1,
    "created_at": "2012-01-01T23:48:41Z",
@@ -2771,7 +2761,7 @@
   {
    "name": "skull-nodejs",
    "description": "Node.js Skull",
-   "language": null,
+   "language": "Makefile",
    "topics": [],
    "stars": 0,
    "created_at": "2014-07-22T04:14:32Z",
@@ -2901,7 +2891,7 @@
    "topics": [],
    "stars": 0,
    "created_at": "2026-11-12T00:48:36Z",
-   "pushed_at": "2026-11-14T22:48:05Z",
+   "pushed_at": "2026-11-15T21:01:46Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -3011,7 +3001,7 @@
   {
    "name": "tinyxpath",
    "description": "TinyXpath - Just cloned from http://sourceforge.net/projects/tinyxpath/files/latest/download",
-   "language": null,
+   "language": "C++",
    "topics": [],
    "stars": 3,
    "created_at": "2012-06-11T00:05:43Z",
@@ -3135,15 +3125,13 @@
    "topics": [],
    "stars": 0,
    "created_at": "2026-07-16T16:43:52Z",
-   "pushed_at": "2026-10-29T11:00:45Z",
+   "pushed_at": "2026-11-15T18:18:38Z",
    "archived": false,
    "share": 1,
    "hosts": {
     "github": "https://github.com/korczis/unable.cz"
    },
-   "site": null,
-   "category": "tools",
-   "curated": false
+   "site": null
   },
   {
    "name": "upx",
@@ -3314,7 +3302,7 @@
   {
    "name": "llm",
    "description": "Local-first, provider-agnostic archive of AI conversations (ChatGPT, Claude, Gemini, Codex) — immutable, content-addressed, searchable evidence layer built in Elixir/Ecto.",
-   "language": null,
+   "language": "Elixir",
    "topics": [
     "AI",
     "chatgpt",
@@ -3327,6 +3315,7 @@
    "stars": 0,
    "created_at": "2026-08-20T20:41:22.826Z",
    "pushed_at": "2026-08-21T12:51:42.304Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/llm"
@@ -3338,11 +3327,12 @@
   {
    "name": "openttd-prismatic-bridge",
    "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
-   "language": null,
+   "language": "Python",
    "topics": [],
    "stars": 0,
    "created_at": "2026-07-23T22:00:54.776Z",
    "pushed_at": "2026-10-29T10:43:46.963Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/openttd-prismatic-bridge"
@@ -3359,6 +3349,7 @@
    "stars": 0,
    "created_at": "2025-09-02T10:20:47.749Z",
    "pushed_at": "2025-12-20T21:24:46.096Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/edna"
@@ -3375,6 +3366,7 @@
    "stars": 0,
    "created_at": "2025-08-28T19:47:13.774Z",
    "pushed_at": "2025-12-20T21:24:46.834Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/GHT"
@@ -3386,11 +3378,12 @@
   {
    "name": "comtesse",
    "description": null,
-   "language": null,
+   "language": "Just",
    "topics": [],
    "stars": 0,
    "created_at": "2025-08-27T16:52:39.046Z",
    "pushed_at": "2025-12-20T21:24:47.786Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/comtesse"
@@ -3407,6 +3400,7 @@
    "stars": 0,
    "created_at": "2025-08-25T20:25:04.842Z",
    "pushed_at": "2026-02-04T23:37:16.229Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/tinder-nomics"
@@ -3418,7 +3412,7 @@
   {
    "name": "sig",
    "description": "distributed cognitive framework in Elixir/OTP.",
-   "language": null,
+   "language": "Elixir",
    "topics": [
     "AI",
     "Knowledge representation and reasoning",
@@ -3432,6 +3426,7 @@
    "stars": 0,
    "created_at": "2025-08-23T21:07:58.962Z",
    "pushed_at": "2026-02-04T23:37:01.451Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/sig"
@@ -3443,27 +3438,29 @@
   {
    "name": "korczis.gitlab.io",
    "description": null,
-   "language": null,
+   "language": "CSS",
    "topics": [],
    "stars": 0,
    "created_at": "2025-08-22T17:57:54.670Z",
    "pushed_at": "2025-12-20T21:24:49.461Z",
+   "archived": false,
    "share": 0.96,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/korczis.gitlab.io"
    },
    "site": null,
-   "category": "tools",
+   "category": "web",
    "curated": false
   },
   {
    "name": "corvidae",
    "description": null,
-   "language": null,
+   "language": "TeX",
    "topics": [],
    "stars": 0,
    "created_at": "2025-05-12T01:33:56.421Z",
    "pushed_at": "2025-12-20T21:24:52.481Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/corvidae"
@@ -3480,6 +3477,7 @@
    "stars": 0,
    "created_at": "2025-04-28T15:26:38.855Z",
    "pushed_at": "2026-02-04T23:37:03.848Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/past"
@@ -3491,11 +3489,12 @@
   {
    "name": "the-psycho",
    "description": null,
-   "language": null,
+   "language": "Elixir",
    "topics": [],
    "stars": 0,
    "created_at": "2025-01-25T02:41:53.111Z",
    "pushed_at": "2026-10-29T13:51:53.522Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/the-psycho"
@@ -3512,6 +3511,7 @@
    "stars": 0,
    "created_at": "2024-12-01T21:24:20.949Z",
    "pushed_at": "2026-02-04T23:37:05.374Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/prism"
@@ -3528,6 +3528,7 @@
    "stars": 0,
    "created_at": "2024-11-20T11:51:10.458Z",
    "pushed_at": "2026-02-04T23:37:13.798Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/the-shit"
@@ -3537,11 +3538,12 @@
   {
    "name": "kuzu-ex",
    "description": null,
-   "language": null,
+   "language": "Elixir",
    "topics": [],
    "stars": 0,
    "created_at": "2024-10-24T15:38:17.529Z",
    "pushed_at": "2025-12-20T21:25:07.561Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/kuzu-ex"
@@ -3553,11 +3555,12 @@
   {
    "name": "dispatcher",
    "description": null,
-   "language": null,
+   "language": "TypeScript",
    "topics": [],
    "stars": 0,
    "created_at": "2024-10-18T17:45:41.560Z",
    "pushed_at": "2025-12-20T21:25:14.274Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/dispatcher"
@@ -3569,11 +3572,12 @@
   {
    "name": "job-processor",
    "description": "This is a simple web service built with Elixir, Plug, and Cowboy that processes job tasks with dependencies and generates execution order and bash scripts.",
-   "language": null,
+   "language": "Elixir",
    "topics": [],
    "stars": 0,
    "created_at": "2024-08-01T10:19:22.386Z",
    "pushed_at": "2025-12-20T21:25:15.818Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/job-processor"
@@ -3583,13 +3587,31 @@
    "curated": false
   },
   {
+   "name": "meili_rsex",
+   "description": null,
+   "language": "Elixir",
+   "topics": [],
+   "stars": 0,
+   "created_at": "2024-06-03T19:14:40.235Z",
+   "pushed_at": "2025-12-20T21:25:18.073Z",
+   "archived": false,
+   "share": 1,
+   "hosts": {
+    "gitlab": "https://gitlab.com/korczis/meili_rsex"
+   },
+   "site": null,
+   "category": "data",
+   "curated": false
+  },
+  {
    "name": "simple_geocoder",
    "description": null,
-   "language": null,
+   "language": "Elixir",
    "topics": [],
    "stars": 0,
    "created_at": "2024-04-23T21:19:13.755Z",
    "pushed_at": "2025-12-20T21:25:21.048Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/simple_geocoder"
@@ -3606,6 +3628,7 @@
    "stars": 0,
    "created_at": "2024-04-17T15:17:04.884Z",
    "pushed_at": "2025-12-20T21:25:23.011Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/marketing-ideas"
@@ -3617,11 +3640,12 @@
   {
    "name": "pdf_renderer",
    "description": null,
-   "language": null,
+   "language": "Python",
    "topics": [],
    "stars": 0,
    "created_at": "2024-03-24T22:10:44.078Z",
    "pushed_at": "2025-12-20T21:25:27.753Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/pdf_renderer"
@@ -3633,11 +3657,12 @@
   {
    "name": "distance-calculator",
    "description": null,
-   "language": null,
+   "language": "Elixir",
    "topics": [],
    "stars": 0,
    "created_at": "2024-03-20T11:21:50.379Z",
    "pushed_at": "2025-12-20T21:25:21.812Z",
+   "archived": false,
    "share": 0.78,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/distance-calculator"
@@ -3649,11 +3674,12 @@
   {
    "name": "astudo",
    "description": null,
-   "language": null,
+   "language": "Elixir",
    "topics": [],
    "stars": 0,
    "created_at": "2022-04-29T18:24:17.143Z",
    "pushed_at": "2025-12-20T21:25:34.570Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/astudo"
@@ -3670,6 +3696,7 @@
    "stars": 0,
    "created_at": "2022-03-11T11:42:28.661Z",
    "pushed_at": "2025-12-20T21:25:38.251Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/rocksdb_indexer"
@@ -3681,11 +3708,12 @@
   {
    "name": "czech-stats",
    "description": null,
-   "language": null,
+   "language": "Elixir",
    "topics": [],
    "stars": 0,
    "created_at": "2020-01-01T09:21:33.793Z",
    "pushed_at": "2025-12-20T21:25:50.107Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/czech-stats"
@@ -3697,11 +3725,12 @@
   {
    "name": "hydra",
    "description": "Modular wrapper and interface for pool of orchestrated Google Chrome instances",
-   "language": null,
+   "language": "Elixir",
    "topics": [],
    "stars": 1,
    "created_at": "2019-11-13T00:35:02.364Z",
    "pushed_at": "2025-12-20T21:25:51.077Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/hydra"
@@ -3713,11 +3742,12 @@
   {
    "name": "pavian-eu",
    "description": "pavian.eu website",
-   "language": null,
+   "language": "HTML",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:04:39.573Z",
    "pushed_at": "2025-12-20T21:27:26.968Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/pavian-eu"
@@ -3734,6 +3764,7 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:34.396Z",
    "pushed_at": "2025-12-20T21:27:54.744Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/mapofffacts-com"
@@ -3745,11 +3776,12 @@
   {
    "name": "lethe-it",
    "description": "lethe.it - your personal smart links archive, organizer, classifier and much more",
-   "language": null,
+   "language": "JavaScript",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:04:31.993Z",
    "pushed_at": "2025-12-20T21:28:09.650Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/lethe-it"
@@ -3761,11 +3793,12 @@
   {
    "name": "korczis-github-com",
    "description": "Github Pages",
-   "language": null,
+   "language": "CSS",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:04:31.238Z",
    "pushed_at": "2025-12-20T21:28:14.410Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/korczis-github-com"
@@ -3777,11 +3810,12 @@
   {
    "name": "korczis-com",
    "description": "korczis.com website",
-   "language": null,
+   "language": "HTML",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:04:30.984Z",
    "pushed_at": "2025-12-20T21:28:15.309Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/korczis-com"
@@ -3793,11 +3827,12 @@
   {
    "name": "gauc-ex",
    "description": "Elxir Wrapper for Gauc - Rust Wrapper for Couchbase",
-   "language": null,
+   "language": "Elixir",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:04:20.536Z",
    "pushed_at": "2025-12-20T21:29:16.346Z",
+   "archived": false,
    "share": 0.98,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/gauc-ex"
@@ -3809,11 +3844,12 @@
   {
    "name": "apollocrawler-com",
    "description": "Website for apollocrawler.com ...",
-   "language": null,
+   "language": "JavaScript",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:04:05.535Z",
    "pushed_at": "2025-12-20T21:30:44.925Z",
+   "archived": false,
    "share": 0.94,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/apollocrawler-com"
@@ -3825,27 +3861,29 @@
   {
    "name": "annasabatova-cz",
    "description": "Petice za odvolani annysabatove.cz",
-   "language": null,
+   "language": "CSS",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:04:04.254Z",
    "pushed_at": "2025-12-20T21:30:50.816Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/annasabatova-cz"
    },
    "site": null,
-   "category": "tools",
+   "category": "web",
    "curated": false
   },
   {
    "name": "microcrawler-elixir",
    "description": "Microcrawler Implemented in Elixir",
-   "language": null,
+   "language": "Elixir",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:04:02.632Z",
    "pushed_at": "2025-12-20T21:31:00.611Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-elixir"
@@ -3857,11 +3895,12 @@
   {
    "name": "microcrawler-js",
    "description": "Scrapping made easy...",
-   "language": null,
+   "language": "JavaScript",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:04:02.688Z",
    "pushed_at": "2025-12-20T21:30:59.811Z",
+   "archived": false,
    "share": 0.99,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-js"
@@ -3873,11 +3912,12 @@
   {
    "name": "microcrawler-crawler-yelp-com",
    "description": null,
-   "language": null,
+   "language": "JavaScript",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:04:02.451Z",
    "pushed_at": "2025-12-20T21:31:02.151Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-yelp-com"
@@ -3889,11 +3929,12 @@
   {
    "name": "microcrawler-crawler-youjizz-com",
    "description": null,
-   "language": null,
+   "language": "JavaScript",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:04:02.436Z",
    "pushed_at": "2025-12-20T21:31:02.868Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-youjizz-com"
@@ -3903,11 +3944,12 @@
   {
    "name": "microcrawler-crawler-xkcd-com",
    "description": null,
-   "language": null,
+   "language": "JavaScript",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:04:01.953Z",
    "pushed_at": "2025-12-20T21:31:03.654Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-xkcd-com"
@@ -3919,11 +3961,12 @@
   {
    "name": "microcrawler-crawler-sreality-cz",
    "description": null,
-   "language": null,
+   "language": "JavaScript",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:04:01.821Z",
    "pushed_at": "2025-12-20T21:31:04.727Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-sreality-cz"
@@ -3935,11 +3978,12 @@
   {
    "name": "microcrawler-crawler-news-ycombinator-com",
    "description": null,
-   "language": null,
+   "language": "JavaScript",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:04:01.684Z",
    "pushed_at": "2025-12-20T21:31:05.525Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-news-ycombinator-com"
@@ -3951,11 +3995,12 @@
   {
    "name": "microcrawler-crawler-google-com",
    "description": null,
-   "language": null,
+   "language": "JavaScript",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:04:01.681Z",
    "pushed_at": "2025-12-20T21:31:06.310Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-google-com"
@@ -3967,11 +4012,12 @@
   {
    "name": "microcrawler-crawler-heureka-cz",
    "description": "Heureka Crawler",
-   "language": null,
+   "language": "JavaScript",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:04:01.675Z",
    "pushed_at": "2025-12-20T21:31:07.058Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-heureka-cz"
@@ -3983,11 +4029,12 @@
   {
    "name": "microcrawler-crawler-firmy-cz",
    "description": null,
-   "language": null,
+   "language": "JavaScript",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:04:01.495Z",
    "pushed_at": "2025-12-20T21:31:07.783Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-firmy-cz"
@@ -3999,11 +4046,12 @@
   {
    "name": "microcrawler-crawler-craiglist-com",
    "description": null,
-   "language": null,
+   "language": "JavaScript",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:04:01.005Z",
    "pushed_at": "2025-12-20T21:31:08.451Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-craiglist-com"
@@ -4020,6 +4068,7 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:00.877Z",
    "pushed_at": "2025-12-20T21:31:09.221Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-base"
@@ -4036,6 +4085,7 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:00.858Z",
    "pushed_at": "2025-12-20T21:31:10.041Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-all"
@@ -4047,11 +4097,12 @@
   {
    "name": "microcrawler-crawler-bam-brno-cz",
    "description": null,
-   "language": null,
+   "language": "JavaScript",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:04:00.789Z",
    "pushed_at": "2025-12-20T21:31:10.847Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-bam-brno-cz"
@@ -4063,11 +4114,12 @@
   {
    "name": "microcrawler-browser",
    "description": "Proof-of-Concept: Microcrawler in your Browser!",
-   "language": null,
+   "language": "JavaScript",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:04:00.688Z",
    "pushed_at": "2025-12-20T21:31:11.664Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-browser"
@@ -4079,11 +4131,12 @@
   {
    "name": "microcrawler",
    "description": null,
-   "language": null,
+   "language": "Shell",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:04:00.620Z",
    "pushed_at": "2025-12-20T21:31:12.479Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler"
@@ -4095,11 +4148,12 @@
   {
    "name": "docks",
    "description": "Repository containing useful Dockerfile(s)",
-   "language": null,
+   "language": "Dockerfile",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:03:59.878Z",
    "pushed_at": "2025-12-20T21:31:13.342Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/docks"
@@ -4111,11 +4165,12 @@
   {
    "name": "apollo-crawler-extension",
    "description": "Apollo Platform Chrome Extension",
-   "language": null,
+   "language": "JavaScript",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:03:59.852Z",
    "pushed_at": "2025-12-20T21:31:16.087Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/apollo-crawler-extension"
@@ -4127,11 +4182,12 @@
   {
    "name": "ApolloCrawler-github-io",
    "description": null,
-   "language": null,
+   "language": "HTML",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:03:59.854Z",
    "pushed_at": "2025-12-20T21:31:15.382Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/ApolloCrawler-github-io"
@@ -4142,36 +4198,30 @@
   }
  ],
  "by_category": {
-  "media": 8,
-  "web": 15,
   "knowledge": 5,
+  "web": 16,
   "science": 12,
   "ai": 5,
-  "tools": 66,
-  "data": 50,
+  "media": 8,
+  "tools": 64,
+  "data": 51,
   "security": 5,
   "systems": 17,
   "libraries": 7,
   "learning": 21
  },
  "categories": {
-  "media": {
-   "repos": 8,
-   "sites": 4,
-   "top_language": "HTML",
-   "since": "2015"
-  },
-  "web": {
-   "repos": 15,
-   "sites": 1,
-   "top_language": "JavaScript",
-   "since": "2014"
-  },
   "knowledge": {
    "repos": 5,
    "sites": 1,
    "top_language": "Swift",
    "since": "2013"
+  },
+  "web": {
+   "repos": 16,
+   "sites": 0,
+   "top_language": "CSS",
+   "since": "2014"
   },
   "science": {
    "repos": 12,
@@ -4182,19 +4232,25 @@
   "ai": {
    "repos": 5,
    "sites": 1,
-   "top_language": "Rust",
+   "top_language": "Elixir",
    "since": "2025"
   },
+  "media": {
+   "repos": 8,
+   "sites": 4,
+   "top_language": "HTML",
+   "since": "2015"
+  },
   "tools": {
-   "repos": 66,
+   "repos": 64,
    "sites": 6,
    "top_language": "JavaScript",
    "since": "2012"
   },
   "data": {
-   "repos": 50,
+   "repos": 51,
    "sites": 2,
-   "top_language": "Ruby",
+   "top_language": "JavaScript",
    "since": "2014"
   },
   "security": {
@@ -4212,7 +4268,7 @@
   "libraries": {
    "repos": 7,
    "sites": 0,
-   "top_language": "JavaScript",
+   "top_language": "Elixir",
    "since": "2013"
   },
   "learning": {
@@ -4225,34 +4281,42 @@
  "languages": [
   {
    "name": "JavaScript",
-   "repos": 30
-  },
-  {
-   "name": "Ruby",
-   "repos": 19
+   "repos": 43
   },
   {
    "name": "Elixir",
-   "repos": 14
+   "repos": 27
+  },
+  {
+   "name": "Ruby",
+   "repos": 20
+  },
+  {
+   "name": "Shell",
+   "repos": 13
   },
   {
    "name": "Rust",
    "repos": 12
   },
   {
-   "name": "Shell",
-   "repos": 12
+   "name": "HTML",
+   "repos": 7
+  },
+  {
+   "name": "Python",
+   "repos": 7
   },
   {
    "name": "C++",
    "repos": 6
   },
   {
-   "name": "Python",
+   "name": "CSS",
    "repos": 5
   },
   {
-   "name": "HTML",
+   "name": "Dockerfile",
    "repos": 4
   },
   {
@@ -4260,23 +4324,15 @@
    "repos": 3
   },
   {
-   "name": "Dockerfile",
-   "repos": 3
-  },
-  {
    "name": "Swift",
    "repos": 3
   },
   {
-   "name": "CSS",
-   "repos": 2
+   "name": "TypeScript",
+   "repos": 3
   },
   {
    "name": "Haskell",
-   "repos": 2
-  },
-  {
-   "name": "TypeScript",
    "repos": 2
   },
   {
@@ -4300,11 +4356,23 @@
    "repos": 1
   },
   {
+   "name": "Just",
+   "repos": 1
+  },
+  {
+   "name": "Makefile",
+   "repos": 1
+  },
+  {
    "name": "OpenSCAD",
    "repos": 1
   },
   {
    "name": "R",
+   "repos": 1
+  },
+  {
+   "name": "TeX",
    "repos": 1
   },
   {
@@ -4314,7 +4382,7 @@
  ],
  "languages_by_year": {
   "2012": {
-   "Ruby": 1,
+   "Ruby": 2,
    "C#": 1
   },
   "2013": {
@@ -4332,6 +4400,7 @@
    "C": 1,
    "Shell": 2,
    "Java": 1,
+   "Makefile": 1,
    "Haskell": 1,
    "Erlang": 1,
    "XSLT": 1,
@@ -4367,13 +4436,16 @@
    "Rust": 1
   },
   "2019": {
-   "Elixir": 3,
-   "TypeScript": 1,
-   "CSS": 1,
-   "Shell": 5,
-   "Dockerfile": 1
+   "JavaScript": 14,
+   "HTML": 3,
+   "Dockerfile": 2,
+   "Shell": 6,
+   "Elixir": 6,
+   "CSS": 3,
+   "TypeScript": 1
   },
   "2020": {
+   "Elixir": 1,
    "Swift": 1,
    "JavaScript": 1
   },
@@ -4383,25 +4455,31 @@
    "OpenSCAD": 1
   },
   "2022": {
-   "Dockerfile": 1,
-   "Elixir": 1
+   "Elixir": 2,
+   "Dockerfile": 1
   },
   "2023": {
    "Elixir": 1
   },
   "2024": {
-   "JavaScript": 3
+   "JavaScript": 3,
+   "Python": 1,
+   "Elixir": 5,
+   "TypeScript": 1
   },
   "2025": {
-   "Elixir": 1,
+   "Elixir": 3,
+   "TeX": 1,
+   "CSS": 1,
+   "Just": 1,
    "Dockerfile": 1
   },
   "2026": {
-   "Python": 4,
-   "JavaScript": 3,
-   "Elixir": 2,
+   "Elixir": 3,
    "TypeScript": 1,
+   "JavaScript": 2,
    "Rust": 1,
+   "Python": 5,
    "HTML": 3
   }
  },
@@ -4409,25 +4487,43 @@
   "languages": [
    {
     "name": "JavaScript",
-    "repos": 30,
+    "repos": 43,
     "evidence": [
      {
-      "name": "korczis",
-      "url": "https://github.com/korczis/korczis"
+      "name": "korczis.github.io",
+      "url": "https://github.com/korczis/korczis.github.io"
      },
      {
       "name": "oscilla",
       "url": "https://github.com/korczis/oscilla"
      },
      {
-      "name": "korczis.github.io",
-      "url": "https://github.com/korczis/korczis.github.io"
+      "name": "vomaste.cz",
+      "url": "https://github.com/korczis/vomaste.cz"
+     }
+    ]
+   },
+   {
+    "name": "Elixir",
+    "repos": 27,
+    "evidence": [
+     {
+      "name": "kompendium-epistemicke-anihilace",
+      "url": "https://github.com/korczis/kompendium-epistemicke-anihilace"
+     },
+     {
+      "name": "the-psycho",
+      "url": "https://gitlab.com/korczis/the-psycho"
+     },
+     {
+      "name": "crisis-map",
+      "url": "https://github.com/korczis/crisis-map"
      }
     ]
    },
    {
     "name": "Ruby",
-    "repos": 19,
+    "repos": 20,
     "evidence": [
      {
       "name": "gdc-dumpator",
@@ -4444,20 +4540,20 @@
     ]
    },
    {
-    "name": "Elixir",
-    "repos": 14,
+    "name": "Shell",
+    "repos": 13,
     "evidence": [
      {
-      "name": "kompendium-epistemicke-anihilace",
-      "url": "https://github.com/korczis/kompendium-epistemicke-anihilace"
+      "name": "microcrawler",
+      "url": "https://gitlab.com/korczis/microcrawler"
      },
      {
-      "name": "crisis-map",
-      "url": "https://github.com/korczis/crisis-map"
+      "name": "home",
+      "url": "https://github.com/korczis/home"
      },
      {
-      "name": "prismatic",
-      "url": "https://github.com/korczis/prismatic"
+      "name": "server-archlinux",
+      "url": "https://github.com/korczis/server-archlinux"
      }
     ]
    },
@@ -4480,20 +4576,38 @@
     ]
    },
    {
-    "name": "Shell",
-    "repos": 12,
+    "name": "HTML",
+    "repos": 7,
     "evidence": [
      {
-      "name": "home",
-      "url": "https://github.com/korczis/home"
+      "name": "catharsis-as-a-service",
+      "url": "https://github.com/korczis/catharsis-as-a-service"
      },
      {
-      "name": "server-archlinux",
-      "url": "https://github.com/korczis/server-archlinux"
+      "name": "majordomus-reel",
+      "url": "https://github.com/korczis/majordomus-reel"
      },
      {
-      "name": "server-atomic",
-      "url": "https://github.com/korczis/server-atomic"
+      "name": "osint-case-ratcliffe-moscow-2026",
+      "url": "https://github.com/korczis/osint-case-ratcliffe-moscow-2026"
+     }
+    ]
+   },
+   {
+    "name": "Python",
+    "repos": 7,
+    "evidence": [
+     {
+      "name": "sonic-playground",
+      "url": "https://github.com/korczis/sonic-playground"
+     },
+     {
+      "name": "astronomists",
+      "url": "https://github.com/korczis/astronomists"
+     },
+     {
+      "name": "data-atlas",
+      "url": "https://github.com/korczis/data-atlas"
      }
     ]
    },
@@ -4516,38 +4630,38 @@
     ]
    },
    {
-    "name": "Python",
+    "name": "CSS",
     "repos": 5,
     "evidence": [
      {
-      "name": "sonic-playground",
-      "url": "https://github.com/korczis/sonic-playground"
+      "name": "annasabatova-cz",
+      "url": "https://gitlab.com/korczis/annasabatova-cz"
      },
      {
-      "name": "astronomists",
-      "url": "https://github.com/korczis/astronomists"
+      "name": "korczis-github-com",
+      "url": "https://gitlab.com/korczis/korczis-github-com"
      },
      {
-      "name": "data-atlas",
-      "url": "https://github.com/korczis/data-atlas"
+      "name": "korczis.gitlab.io",
+      "url": "https://gitlab.com/korczis/korczis.gitlab.io"
      }
     ]
    },
    {
-    "name": "HTML",
+    "name": "Dockerfile",
     "repos": 4,
     "evidence": [
      {
-      "name": "catharsis-as-a-service",
-      "url": "https://github.com/korczis/catharsis-as-a-service"
+      "name": "docks",
+      "url": "https://gitlab.com/korczis/docks"
      },
      {
-      "name": "majordomus-reel",
-      "url": "https://github.com/korczis/majordomus-reel"
+      "name": "prismatic-blog",
+      "url": "https://github.com/korczis/prismatic-blog"
      },
      {
-      "name": "osint-case-ratcliffe-moscow-2026",
-      "url": "https://github.com/korczis/osint-case-ratcliffe-moscow-2026"
+      "name": "gh-exec-3000",
+      "url": "https://github.com/korczis/gh-exec-3000"
      }
     ]
    },
@@ -4570,24 +4684,6 @@
     ]
    },
    {
-    "name": "Dockerfile",
-    "repos": 3,
-    "evidence": [
-     {
-      "name": "prismatic-blog",
-      "url": "https://github.com/korczis/prismatic-blog"
-     },
-     {
-      "name": "gh-exec-3000",
-      "url": "https://github.com/korczis/gh-exec-3000"
-     },
-     {
-      "name": "zdeny-docker",
-      "url": "https://github.com/korczis/zdeny-docker"
-     }
-    ]
-   },
-   {
     "name": "Swift",
     "repos": 3,
     "evidence": [
@@ -4606,16 +4702,20 @@
     ]
    },
    {
-    "name": "CSS",
-    "repos": 2,
+    "name": "TypeScript",
+    "repos": 3,
     "evidence": [
      {
-      "name": "nestravenkam",
-      "url": "https://github.com/korczis/nestravenkam"
+      "name": "algoglyph",
+      "url": "https://github.com/korczis/algoglyph"
      },
      {
-      "name": "annasabatova.cz",
-      "url": "https://github.com/korczis/annasabatova.cz"
+      "name": "dispatcher",
+      "url": "https://gitlab.com/korczis/dispatcher"
+     },
+     {
+      "name": "ts-logger",
+      "url": "https://github.com/korczis/ts-logger"
      }
     ]
    },
@@ -4630,20 +4730,6 @@
      {
       "name": "skull-haskell",
       "url": "https://github.com/korczis/skull-haskell"
-     }
-    ]
-   },
-   {
-    "name": "TypeScript",
-    "repos": 2,
-    "evidence": [
-     {
-      "name": "algoglyph",
-      "url": "https://github.com/korczis/algoglyph"
-     },
-     {
-      "name": "ts-logger",
-      "url": "https://github.com/korczis/ts-logger"
      }
     ]
    },
@@ -4698,6 +4784,26 @@
     ]
    },
    {
+    "name": "Just",
+    "repos": 1,
+    "evidence": [
+     {
+      "name": "comtesse",
+      "url": "https://gitlab.com/korczis/comtesse"
+     }
+    ]
+   },
+   {
+    "name": "Makefile",
+    "repos": 1,
+    "evidence": [
+     {
+      "name": "skull-nodejs",
+      "url": "https://github.com/korczis/skull-nodejs"
+     }
+    ]
+   },
+   {
     "name": "OpenSCAD",
     "repos": 1,
     "evidence": [
@@ -4714,6 +4820,16 @@
      {
       "name": "datascience",
       "url": "https://github.com/korczis/datascience"
+     }
+    ]
+   },
+   {
+    "name": "TeX",
+    "repos": 1,
+    "evidence": [
+     {
+      "name": "corvidae",
+      "url": "https://gitlab.com/korczis/corvidae"
      }
     ]
    },
@@ -4854,61 +4970,64 @@
  "recent": {
   "size": 100,
   "from": "2018-06-24T03:58:28Z",
-  "to": "2026-11-14T22:48:05Z",
+  "to": "2026-11-15T22:17:41Z",
   "mix": {
-   "media": {
-    "Python": 1,
-    "HTML": 2,
-    "Unspecified": 1,
-    "Dockerfile": 1,
-    "Elixir": 1
-   },
-   "web": {
-    "JavaScript": 2,
-    "Unspecified": 4,
-    "CSS": 1,
-    "Elixir": 1
-   },
    "knowledge": {
     "Elixir": 1,
     "Swift": 2,
     "Unspecified": 1
    },
-   "science": {
+   "web": {
     "JavaScript": 1,
+    "HTML": 3,
+    "CSS": 4,
+    "Elixir": 1
+   },
+   "science": {
     "TypeScript": 1,
-    "Unspecified": 1,
+    "JavaScript": 1,
+    "Elixir": 1,
     "Rust": 1
    },
    "ai": {
     "Rust": 1,
-    "Unspecified": 4
+    "Elixir": 2,
+    "Unspecified": 2
+   },
+   "media": {
+    "Python": 2,
+    "HTML": 2,
+    "Dockerfile": 1,
+    "Elixir": 1
    },
    "tools": {
-    "Python": 2,
-    "JavaScript": 3,
-    "Unspecified": 21,
-    "Elixir": 4,
+    "Python": 3,
+    "JavaScript": 4,
+    "Elixir": 8,
+    "Unspecified": 10,
+    "TypeScript": 2,
+    "TeX": 1,
+    "Just": 1,
     "OpenSCAD": 1,
-    "TypeScript": 1,
     "Shell": 2
    },
    "data": {
     "Python": 1,
-    "Elixir": 1,
-    "Unspecified": 22,
-    "JavaScript": 1
+    "Elixir": 5,
+    "JavaScript": 14,
+    "Shell": 1,
+    "Unspecified": 5
    },
    "security": {
     "HTML": 1
    },
    "systems": {
-    "Unspecified": 3,
-    "Dockerfile": 2,
-    "Shell": 5
+    "Dockerfile": 3,
+    "Shell": 5,
+    "Unspecified": 2
    },
    "libraries": {
-    "Unspecified": 2
+    "Elixir": 2
    },
    "learning": {
     "C++": 1
@@ -4916,40 +5035,6 @@
   }
  },
  "repos": [
-  {
-   "name": "sonic-playground",
-   "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-   "language": "Python",
-   "topics": [],
-   "stars": 0,
-   "created_at": "2026-11-12T00:48:36Z",
-   "pushed_at": "2026-11-14T22:48:05Z",
-   "archived": false,
-   "share": 1,
-   "hosts": {
-    "github": "https://github.com/korczis/sonic-playground"
-   },
-   "site": "https://korczis.github.io/sonic-playground/",
-   "category": "media",
-   "curated": true
-  },
-  {
-   "name": "korczis",
-   "description": "Tomas Korcak: profile README, derived from korczis.github.io/site.json",
-   "language": "JavaScript",
-   "topics": [],
-   "stars": 0,
-   "created_at": "2026-11-14T17:32:26Z",
-   "pushed_at": "2026-11-14T22:46:08Z",
-   "archived": false,
-   "share": 0.5,
-   "hosts": {
-    "github": "https://github.com/korczis/korczis"
-   },
-   "site": "https://korczis.github.io/",
-   "category": "web",
-   "curated": false
-  },
   {
    "name": "kompendium-epistemicke-anihilace",
    "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
@@ -4967,7 +5052,7 @@
    ],
    "stars": 0,
    "created_at": "2026-11-09T22:04:50Z",
-   "pushed_at": "2026-11-14T22:46:05Z",
+   "pushed_at": "2026-11-15T22:17:41Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -4975,33 +5060,6 @@
    },
    "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
    "category": "knowledge",
-   "curated": true
-  },
-  {
-   "name": "oscilla",
-   "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-   "language": "JavaScript",
-   "topics": [
-    "acoustics",
-    "audio",
-    "dsp",
-    "education",
-    "javascript",
-    "signal-processing",
-    "spectrogram",
-    "synthesizer",
-    "web-audio"
-   ],
-   "stars": 1,
-   "created_at": "2026-10-01T21:05:33Z",
-   "pushed_at": "2026-11-14T22:41:17Z",
-   "archived": false,
-   "share": 1,
-   "hosts": {
-    "github": "https://github.com/korczis/oscilla"
-   },
-   "site": "https://korczis.github.io/oscilla/",
-   "category": "science",
    "curated": true
   },
   {
@@ -5026,9 +5084,9 @@
    ],
    "stars": 0,
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-14T22:37:51Z",
+   "pushed_at": "2026-11-15T22:17:35Z",
    "archived": false,
-   "share": 0.89,
+   "share": 0.95,
    "hosts": {
     "github": "https://github.com/korczis/korczis.github.io"
    },
@@ -5056,13 +5114,40 @@
    ],
    "stars": 0,
    "created_at": "2026-11-11T18:09:38Z",
-   "pushed_at": "2026-11-14T22:37:26Z",
+   "pushed_at": "2026-11-15T22:14:06Z",
    "archived": false,
    "share": 1,
    "hosts": {
     "github": "https://github.com/korczis/algoglyph"
    },
    "site": "https://korczis.github.io/algoglyph/",
+   "category": "science",
+   "curated": true
+  },
+  {
+   "name": "oscilla",
+   "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+   "language": "JavaScript",
+   "topics": [
+    "acoustics",
+    "audio",
+    "dsp",
+    "education",
+    "javascript",
+    "signal-processing",
+    "spectrogram",
+    "synthesizer",
+    "web-audio"
+   ],
+   "stars": 1,
+   "created_at": "2026-10-01T21:05:33Z",
+   "pushed_at": "2026-11-15T22:04:56Z",
+   "archived": false,
+   "share": 1,
+   "hosts": {
+    "github": "https://github.com/korczis/oscilla"
+   },
+   "site": "https://korczis.github.io/oscilla/",
    "category": "science",
    "curated": true
   },
@@ -5093,7 +5178,7 @@
    ],
    "stars": 1,
    "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-14T22:09:42Z",
+   "pushed_at": "2026-11-15T22:01:24Z",
    "archived": false,
    "share": 0.99,
    "hosts": {
@@ -5101,6 +5186,23 @@
    },
    "site": "https://korczis.github.io/prismatic-majordomus/",
    "category": "ai",
+   "curated": true
+  },
+  {
+   "name": "sonic-playground",
+   "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+   "language": "Python",
+   "topics": [],
+   "stars": 0,
+   "created_at": "2026-11-12T00:48:36Z",
+   "pushed_at": "2026-11-15T21:01:46Z",
+   "archived": false,
+   "share": 1,
+   "hosts": {
+    "github": "https://github.com/korczis/sonic-playground"
+   },
+   "site": "https://korczis.github.io/sonic-playground/",
+   "category": "media",
    "curated": true
   },
   {
@@ -5157,11 +5259,12 @@
   {
    "name": "the-psycho",
    "description": null,
-   "language": null,
+   "language": "Elixir",
    "topics": [],
    "stars": 0,
    "created_at": "2025-01-25T02:41:53.111Z",
    "pushed_at": "2026-10-29T13:51:53.522Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/the-psycho"
@@ -5216,11 +5319,12 @@
   {
    "name": "openttd-prismatic-bridge",
    "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
-   "language": null,
+   "language": "Python",
    "topics": [],
    "stars": 0,
    "created_at": "2026-07-23T22:00:54.776Z",
    "pushed_at": "2026-10-29T10:43:46.963Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/openttd-prismatic-bridge"
@@ -5295,7 +5399,7 @@
   {
    "name": "llm",
    "description": "Local-first, provider-agnostic archive of AI conversations (ChatGPT, Claude, Gemini, Codex) — immutable, content-addressed, searchable evidence layer built in Elixir/Ecto.",
-   "language": null,
+   "language": "Elixir",
    "topics": [
     "AI",
     "chatgpt",
@@ -5308,6 +5412,7 @@
    "stars": 0,
    "created_at": "2026-08-20T20:41:22.826Z",
    "pushed_at": "2026-08-21T12:51:42.304Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/llm"
@@ -5342,6 +5447,7 @@
    "stars": 0,
    "created_at": "2025-08-25T20:25:04.842Z",
    "pushed_at": "2026-02-04T23:37:16.229Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/tinder-nomics"
@@ -5358,6 +5464,7 @@
    "stars": 0,
    "created_at": "2024-12-01T21:24:20.949Z",
    "pushed_at": "2026-02-04T23:37:05.374Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/prism"
@@ -5374,6 +5481,7 @@
    "stars": 0,
    "created_at": "2025-04-28T15:26:38.855Z",
    "pushed_at": "2026-02-04T23:37:03.848Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/past"
@@ -5385,7 +5493,7 @@
   {
    "name": "sig",
    "description": "distributed cognitive framework in Elixir/OTP.",
-   "language": null,
+   "language": "Elixir",
    "topics": [
     "AI",
     "Knowledge representation and reasoning",
@@ -5399,6 +5507,7 @@
    "stars": 0,
    "created_at": "2025-08-23T21:07:58.962Z",
    "pushed_at": "2026-02-04T23:37:01.451Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/sig"
@@ -5410,11 +5519,12 @@
   {
    "name": "apollo-crawler-extension",
    "description": "Apollo Platform Chrome Extension",
-   "language": null,
+   "language": "JavaScript",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:03:59.852Z",
    "pushed_at": "2025-12-20T21:31:16.087Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/apollo-crawler-extension"
@@ -5426,11 +5536,12 @@
   {
    "name": "ApolloCrawler-github-io",
    "description": null,
-   "language": null,
+   "language": "HTML",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:03:59.854Z",
    "pushed_at": "2025-12-20T21:31:15.382Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/ApolloCrawler-github-io"
@@ -5442,11 +5553,12 @@
   {
    "name": "docks",
    "description": "Repository containing useful Dockerfile(s)",
-   "language": null,
+   "language": "Dockerfile",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:03:59.878Z",
    "pushed_at": "2025-12-20T21:31:13.342Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/docks"
@@ -5458,11 +5570,12 @@
   {
    "name": "microcrawler",
    "description": null,
-   "language": null,
+   "language": "Shell",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:04:00.620Z",
    "pushed_at": "2025-12-20T21:31:12.479Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler"
@@ -5474,11 +5587,12 @@
   {
    "name": "microcrawler-browser",
    "description": "Proof-of-Concept: Microcrawler in your Browser!",
-   "language": null,
+   "language": "JavaScript",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:04:00.688Z",
    "pushed_at": "2025-12-20T21:31:11.664Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-browser"
@@ -5490,11 +5604,12 @@
   {
    "name": "microcrawler-crawler-bam-brno-cz",
    "description": null,
-   "language": null,
+   "language": "JavaScript",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:04:00.789Z",
    "pushed_at": "2025-12-20T21:31:10.847Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-bam-brno-cz"
@@ -5511,6 +5626,7 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:00.858Z",
    "pushed_at": "2025-12-20T21:31:10.041Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-all"
@@ -5527,6 +5643,7 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:00.877Z",
    "pushed_at": "2025-12-20T21:31:09.221Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-base"
@@ -5538,11 +5655,12 @@
   {
    "name": "microcrawler-crawler-craiglist-com",
    "description": null,
-   "language": null,
+   "language": "JavaScript",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:04:01.005Z",
    "pushed_at": "2025-12-20T21:31:08.451Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-craiglist-com"
@@ -5554,11 +5672,12 @@
   {
    "name": "microcrawler-crawler-firmy-cz",
    "description": null,
-   "language": null,
+   "language": "JavaScript",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:04:01.495Z",
    "pushed_at": "2025-12-20T21:31:07.783Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-firmy-cz"
@@ -5570,11 +5689,12 @@
   {
    "name": "microcrawler-crawler-heureka-cz",
    "description": "Heureka Crawler",
-   "language": null,
+   "language": "JavaScript",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:04:01.675Z",
    "pushed_at": "2025-12-20T21:31:07.058Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-heureka-cz"
@@ -5586,11 +5706,12 @@
   {
    "name": "microcrawler-crawler-google-com",
    "description": null,
-   "language": null,
+   "language": "JavaScript",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:04:01.681Z",
    "pushed_at": "2025-12-20T21:31:06.310Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-google-com"
@@ -5602,11 +5723,12 @@
   {
    "name": "microcrawler-crawler-news-ycombinator-com",
    "description": null,
-   "language": null,
+   "language": "JavaScript",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:04:01.684Z",
    "pushed_at": "2025-12-20T21:31:05.525Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-news-ycombinator-com"
@@ -5618,11 +5740,12 @@
   {
    "name": "microcrawler-crawler-sreality-cz",
    "description": null,
-   "language": null,
+   "language": "JavaScript",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:04:01.821Z",
    "pushed_at": "2025-12-20T21:31:04.727Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-sreality-cz"
@@ -5634,11 +5757,12 @@
   {
    "name": "microcrawler-crawler-xkcd-com",
    "description": null,
-   "language": null,
+   "language": "JavaScript",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:04:01.953Z",
    "pushed_at": "2025-12-20T21:31:03.654Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-xkcd-com"
@@ -5650,11 +5774,12 @@
   {
    "name": "microcrawler-crawler-yelp-com",
    "description": null,
-   "language": null,
+   "language": "JavaScript",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:04:02.451Z",
    "pushed_at": "2025-12-20T21:31:02.151Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-yelp-com"
@@ -5666,11 +5791,12 @@
   {
    "name": "microcrawler-elixir",
    "description": "Microcrawler Implemented in Elixir",
-   "language": null,
+   "language": "Elixir",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:04:02.632Z",
    "pushed_at": "2025-12-20T21:31:00.611Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-elixir"
@@ -5682,11 +5808,12 @@
   {
    "name": "microcrawler-js",
    "description": "Scrapping made easy...",
-   "language": null,
+   "language": "JavaScript",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:04:02.688Z",
    "pushed_at": "2025-12-20T21:30:59.811Z",
+   "archived": false,
    "share": 0.99,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-js"
@@ -5698,27 +5825,29 @@
   {
    "name": "annasabatova-cz",
    "description": "Petice za odvolani annysabatove.cz",
-   "language": null,
+   "language": "CSS",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:04:04.254Z",
    "pushed_at": "2025-12-20T21:30:50.816Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/annasabatova-cz"
    },
    "site": null,
-   "category": "tools",
+   "category": "web",
    "curated": false
   },
   {
    "name": "apollocrawler-com",
    "description": "Website for apollocrawler.com ...",
-   "language": null,
+   "language": "JavaScript",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:04:05.535Z",
    "pushed_at": "2025-12-20T21:30:44.925Z",
+   "archived": false,
    "share": 0.94,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/apollocrawler-com"
@@ -5730,11 +5859,12 @@
   {
    "name": "gauc-ex",
    "description": "Elxir Wrapper for Gauc - Rust Wrapper for Couchbase",
-   "language": null,
+   "language": "Elixir",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:04:20.536Z",
    "pushed_at": "2025-12-20T21:29:16.346Z",
+   "archived": false,
    "share": 0.98,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/gauc-ex"
@@ -5746,11 +5876,12 @@
   {
    "name": "korczis-com",
    "description": "korczis.com website",
-   "language": null,
+   "language": "HTML",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:04:30.984Z",
    "pushed_at": "2025-12-20T21:28:15.309Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/korczis-com"
@@ -5762,11 +5893,12 @@
   {
    "name": "korczis-github-com",
    "description": "Github Pages",
-   "language": null,
+   "language": "CSS",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:04:31.238Z",
    "pushed_at": "2025-12-20T21:28:14.410Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/korczis-github-com"
@@ -5778,11 +5910,12 @@
   {
    "name": "lethe-it",
    "description": "lethe.it - your personal smart links archive, organizer, classifier and much more",
-   "language": null,
+   "language": "JavaScript",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:04:31.993Z",
    "pushed_at": "2025-12-20T21:28:09.650Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/lethe-it"
@@ -5799,6 +5932,7 @@
    "stars": 0,
    "created_at": "2019-09-16T01:04:34.396Z",
    "pushed_at": "2025-12-20T21:27:54.744Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/mapofffacts-com"
@@ -5810,11 +5944,12 @@
   {
    "name": "pavian-eu",
    "description": "pavian.eu website",
-   "language": null,
+   "language": "HTML",
    "topics": [],
    "stars": 0,
    "created_at": "2019-09-16T01:04:39.573Z",
    "pushed_at": "2025-12-20T21:27:26.968Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/pavian-eu"
@@ -5826,11 +5961,12 @@
   {
    "name": "hydra",
    "description": "Modular wrapper and interface for pool of orchestrated Google Chrome instances",
-   "language": null,
+   "language": "Elixir",
    "topics": [],
    "stars": 1,
    "created_at": "2019-11-13T00:35:02.364Z",
    "pushed_at": "2025-12-20T21:25:51.077Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/hydra"
@@ -5842,11 +5978,12 @@
   {
    "name": "czech-stats",
    "description": null,
-   "language": null,
+   "language": "Elixir",
    "topics": [],
    "stars": 0,
    "created_at": "2020-01-01T09:21:33.793Z",
    "pushed_at": "2025-12-20T21:25:50.107Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/czech-stats"
@@ -5863,6 +6000,7 @@
    "stars": 0,
    "created_at": "2022-03-11T11:42:28.661Z",
    "pushed_at": "2025-12-20T21:25:38.251Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/rocksdb_indexer"
@@ -5874,11 +6012,12 @@
   {
    "name": "astudo",
    "description": null,
-   "language": null,
+   "language": "Elixir",
    "topics": [],
    "stars": 0,
    "created_at": "2022-04-29T18:24:17.143Z",
    "pushed_at": "2025-12-20T21:25:34.570Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/astudo"
@@ -5890,11 +6029,12 @@
   {
    "name": "pdf_renderer",
    "description": null,
-   "language": null,
+   "language": "Python",
    "topics": [],
    "stars": 0,
    "created_at": "2024-03-24T22:10:44.078Z",
    "pushed_at": "2025-12-20T21:25:27.753Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/pdf_renderer"
@@ -5911,6 +6051,7 @@
    "stars": 0,
    "created_at": "2024-04-17T15:17:04.884Z",
    "pushed_at": "2025-12-20T21:25:23.011Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/marketing-ideas"
@@ -5922,11 +6063,12 @@
   {
    "name": "distance-calculator",
    "description": null,
-   "language": null,
+   "language": "Elixir",
    "topics": [],
    "stars": 0,
    "created_at": "2024-03-20T11:21:50.379Z",
    "pushed_at": "2025-12-20T21:25:21.812Z",
+   "archived": false,
    "share": 0.78,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/distance-calculator"
@@ -5938,11 +6080,12 @@
   {
    "name": "simple_geocoder",
    "description": null,
-   "language": null,
+   "language": "Elixir",
    "topics": [],
    "stars": 0,
    "created_at": "2024-04-23T21:19:13.755Z",
    "pushed_at": "2025-12-20T21:25:21.048Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/simple_geocoder"
@@ -5952,13 +6095,31 @@
    "curated": false
   },
   {
+   "name": "meili_rsex",
+   "description": null,
+   "language": "Elixir",
+   "topics": [],
+   "stars": 0,
+   "created_at": "2024-06-03T19:14:40.235Z",
+   "pushed_at": "2025-12-20T21:25:18.073Z",
+   "archived": false,
+   "share": 1,
+   "hosts": {
+    "gitlab": "https://gitlab.com/korczis/meili_rsex"
+   },
+   "site": null,
+   "category": "data",
+   "curated": false
+  },
+  {
    "name": "job-processor",
    "description": "This is a simple web service built with Elixir, Plug, and Cowboy that processes job tasks with dependencies and generates execution order and bash scripts.",
-   "language": null,
+   "language": "Elixir",
    "topics": [],
    "stars": 0,
    "created_at": "2024-08-01T10:19:22.386Z",
    "pushed_at": "2025-12-20T21:25:15.818Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/job-processor"
@@ -5970,11 +6131,12 @@
   {
    "name": "dispatcher",
    "description": null,
-   "language": null,
+   "language": "TypeScript",
    "topics": [],
    "stars": 0,
    "created_at": "2024-10-18T17:45:41.560Z",
    "pushed_at": "2025-12-20T21:25:14.274Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/dispatcher"
@@ -5986,11 +6148,12 @@
   {
    "name": "kuzu-ex",
    "description": null,
-   "language": null,
+   "language": "Elixir",
    "topics": [],
    "stars": 0,
    "created_at": "2024-10-24T15:38:17.529Z",
    "pushed_at": "2025-12-20T21:25:07.561Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/kuzu-ex"
@@ -6002,11 +6165,12 @@
   {
    "name": "corvidae",
    "description": null,
-   "language": null,
+   "language": "TeX",
    "topics": [],
    "stars": 0,
    "created_at": "2025-05-12T01:33:56.421Z",
    "pushed_at": "2025-12-20T21:24:52.481Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/corvidae"
@@ -6018,27 +6182,29 @@
   {
    "name": "korczis.gitlab.io",
    "description": null,
-   "language": null,
+   "language": "CSS",
    "topics": [],
    "stars": 0,
    "created_at": "2025-08-22T17:57:54.670Z",
    "pushed_at": "2025-12-20T21:24:49.461Z",
+   "archived": false,
    "share": 0.96,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/korczis.gitlab.io"
    },
    "site": null,
-   "category": "tools",
+   "category": "web",
    "curated": false
   },
   {
    "name": "comtesse",
    "description": null,
-   "language": null,
+   "language": "Just",
    "topics": [],
    "stars": 0,
    "created_at": "2025-08-27T16:52:39.046Z",
    "pushed_at": "2025-12-20T21:24:47.786Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/comtesse"
@@ -6055,6 +6221,7 @@
    "stars": 0,
    "created_at": "2025-08-28T19:47:13.774Z",
    "pushed_at": "2025-12-20T21:24:46.834Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/GHT"
@@ -6071,6 +6238,7 @@
    "stars": 0,
    "created_at": "2025-09-02T10:20:47.749Z",
    "pushed_at": "2025-12-20T21:24:46.096Z",
+   "archived": false,
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/edna"
@@ -8227,7 +8395,7 @@
   {
    "name": "skull-nodejs",
    "description": "Node.js Skull",
-   "language": null,
+   "language": "Makefile",
    "topics": [],
    "stars": 0,
    "created_at": "2014-07-22T04:14:32Z",
@@ -8694,7 +8862,7 @@
   {
    "name": "sandbox",
    "description": "Something just for fun. This is place where I play with new techs...",
-   "language": null,
+   "language": "Ruby",
    "topics": [],
    "stars": 1,
    "created_at": "2012-01-01T23:48:41Z",

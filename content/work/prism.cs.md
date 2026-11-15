@@ -3,7 +3,7 @@
 title = "prism"
 description = "prism: projekt z kategorie Nástroje, poslední commit 4. února 2026."
 template = "work.html"
-weight = 20
+weight = 19
 updated = "2026-02-04T23:37:02Z"
 
 [taxonomies]

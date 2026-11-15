@@ -17,7 +17,7 @@ definition = "C with classes, templates and abstractions that cost nothing at ru
 aliases = []
 reference = { title = "cppreference.com", url = "https://en.cppreference.com/" }
 pages = ["projects/learning.md", "projects/science.md", "projects/security.md", "projects/tools.md"]
-related = ["repository", "rust", "javascript", "ruby", "csharp", "elixir", "haskell", "python"]
+related = ["repository", "rust", "elixir", "javascript", "ruby", "csharp", "haskell", "python"]
 og_title = "C++: glossary"
 og_image = "og/glossary-cpp.png"
 keywords = ["C++", "Programming language", "Glossary", "Tomas Korcak"]

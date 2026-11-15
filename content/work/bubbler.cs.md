@@ -3,7 +3,7 @@
 title = "bubbler"
 description = "bubbler: projekt z kategorie Nástroje, hlavní jazyk JavaScript, poslední commit 16. září 2024."
 template = "work.html"
-weight = 35
+weight = 34
 updated = "2024-09-16T14:30:54Z"
 
 [taxonomies]

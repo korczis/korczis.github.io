@@ -16,8 +16,8 @@ kind = "language"
 definition = "Systémový jazyk, který zaručuje bezpečnost paměti bez garbage collectoru; je v něm napsaný Majordomus."
 aliases = []
 reference = { title = "The Rust Programming Language", url = "https://doc.rust-lang.org/book/" }
-pages = ["about.cs.md", "projects/ai.cs.md", "projects/data.cs.md", "projects/learning.cs.md", "projects/libraries.cs.md", "projects/science.cs.md", "projects/security.cs.md", "projects/tools.cs.md", "work/algoglyph.cs.md", "work/catharsis-as-a-service.cs.md", "work/comtesse.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/prismatic-majordomus.cs.md"]
-related = ["repository", "javascript", "open-source", "shell", "elixir", "html", "python", "commit"]
+pages = ["about.cs.md", "projects/ai.cs.md", "projects/data.cs.md", "projects/learning.cs.md", "projects/libraries.cs.md", "projects/science.cs.md", "projects/security.cs.md", "projects/tools.cs.md", "work/algoglyph.cs.md", "work/catharsis-as-a-service.cs.md", "work/comtesse.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/meili-rsex.cs.md", "work/prismatic-majordomus.cs.md"]
+related = ["repository", "javascript", "elixir", "open-source", "shell", "commit", "html", "python"]
 og_title = "Rust: slovník"
 og_image = "og/cs-glossary-rust.png"
 keywords = ["Rust", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

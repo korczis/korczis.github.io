@@ -10,8 +10,8 @@
    "png": "ef41347650d8e019"
   },
   "category-data": {
-   "svg": "80f774345d242bf3",
-   "png": "fd43c92319e5eeab"
+   "svg": "579ffc9f6014fec7",
+   "png": "9a90156b99ca6064"
   },
   "category-knowledge": {
    "svg": "403e571b2b798854",
@@ -42,12 +42,12 @@
    "png": "11ba9e1bbf422019"
   },
   "category-tools": {
-   "svg": "e8b12525eff71dde",
-   "png": "4977a72573c7afbc"
+   "svg": "cc7bd2c07c625cc6",
+   "png": "1d69f8c5d2505acc"
   },
   "category-web": {
-   "svg": "fad3e4ab8dd8db92",
-   "png": "b3a89dd82623af12"
+   "svg": "505a12433ba79cb0",
+   "png": "9e9a033e9d86b6c4"
   },
   "cs-about": {
    "svg": "a86de8400c738bd0",
@@ -58,8 +58,8 @@
    "png": "725cff3047f5ebee"
   },
   "cs-category-data": {
-   "svg": "2f4db02ee25bc355",
-   "png": "84a785ef998c3a65"
+   "svg": "66321820c372055f",
+   "png": "129e7e2e6739aa54"
   },
   "cs-category-knowledge": {
    "svg": "e1d9e507460162b0",
@@ -90,12 +90,12 @@
    "png": "a7f825ba08a39dd9"
   },
   "cs-category-tools": {
-   "svg": "e61e282659b75624",
-   "png": "71ff1e614b1fbe0f"
+   "svg": "934c1c4698283cce",
+   "png": "0c5eaff7eeb83fa4"
   },
   "cs-category-web": {
-   "svg": "95cbd931259c7259",
-   "png": "38d20f704f2d3fa1"
+   "svg": "a89bfba8f32ae5b6",
+   "png": "724e9d55eaa98b40"
   },
   "cs-glossary": {
    "svg": "769c6f041f10168d",
@@ -433,17 +433,13 @@
    "svg": "e82f16eb05a8b4ea",
    "png": "221f51a944a56844"
   },
-  "cs-work-korczis": {
-   "svg": "b71496b6489ddb8a",
-   "png": "4aec0d08990e8e2e"
-  },
   "cs-work-korczis-github-io": {
-   "svg": "eebbbbc55fcea60b",
-   "png": "3b6699df385dfa7d"
+   "svg": "0bbcf2686bf7cfc8",
+   "png": "3db800b614c1e0a5"
   },
   "cs-work-korczis-gitlab-io": {
-   "svg": "1e885d5edacfb460",
-   "png": "d5244ec0877ee77f"
+   "svg": "11990086d5921f7c",
+   "png": "56049fdaba989ac4"
   },
   "cs-work-kuzu-ex": {
    "svg": "9213ceabfe81690f",
@@ -460,6 +456,10 @@
   "cs-work-marketing-ideas": {
    "svg": "e6cf959475fc9ccc",
    "png": "df3f0a069535d445"
+  },
+  "cs-work-meili-rsex": {
+   "svg": "fb0bd7419ac42ff3",
+   "png": "a79fbe8b09909bee"
   },
   "cs-work-mindscape": {
    "svg": "57be4b344cef9b91",
@@ -873,17 +873,13 @@
    "svg": "064dc9d871d03c36",
    "png": "9b850516ce84ac9e"
   },
-  "work-korczis": {
-   "svg": "c047f7237179f65e",
-   "png": "e775f9390345ced5"
-  },
   "work-korczis-github-io": {
    "svg": "241960bb2a61dac9",
    "png": "2683272e0b8a5241"
   },
   "work-korczis-gitlab-io": {
-   "svg": "6da263753f7e4119",
-   "png": "fb72007094f8f226"
+   "svg": "eeb0cae2eed09544",
+   "png": "49e2eef7a61a892b"
   },
   "work-kuzu-ex": {
    "svg": "c3665ef58b0be372",
@@ -900,6 +896,10 @@
   "work-marketing-ideas": {
    "svg": "7507f30181080618",
    "png": "4cc92f569e62cf0f"
+  },
+  "work-meili-rsex": {
+   "svg": "3271172be8dfd5c9",
+   "png": "705a7ca6ccc3b10b"
   },
   "work-mindscape": {
    "svg": "a705b84278278311",

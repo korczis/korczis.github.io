@@ -3,8 +3,8 @@
 title = "Oscilla"
 description = "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu."
 template = "work.html"
-weight = 5
-updated = "2026-11-14T20:57:51Z"
+weight = 4
+updated = "2026-11-15T19:37:55Z"
 
 [taxonomies]
 tags = ["Věda a vizualizace", "JavaScript", "HTML", "CSS"]
@@ -15,7 +15,7 @@ og_title = "Oscilla: Akustická laboratoř v prohlížeči bez instalace."
 og_image = "og/cs-work-oscilla.png"
 schema = "project"
 keywords = ["Oscilla", "Věda a vizualizace", "JavaScript", "HTML", "CSS", "Tomáš Korčák"]
-terms = ["javascript", "html", "css", "shell", "web-audio", "data-visualisation", "github-pages", "repository", "commit", "open-source"]
+terms = ["javascript", "html", "css", "swift", "shell", "web-audio", "data-visualisation", "github-pages", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -26,9 +26,9 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**Oscilla** je projekt z kategorie [Věda a vizualizace](@/projects/science.cs.md). Jeho kód je napsaný hlavně v jazyce [JavaScript](@/glossary/javascript.cs.md) (96,9 %), dále [HTML](@/glossary/html.cs.md), [CSS](@/glossary/css.cs.md) a [Shell](@/glossary/shell.cs.md).
+**Oscilla** je projekt z kategorie [Věda a vizualizace](@/projects/science.cs.md). Jeho kód je napsaný hlavně v jazyce [JavaScript](@/glossary/javascript.cs.md) (96,9 %), dále [HTML](@/glossary/html.cs.md), [CSS](@/glossary/css.cs.md) a [Swift](@/glossary/swift.cs.md).
 
-[Repozitář](@/glossary/repository.cs.md) vznikl 1. října 2026; poslední [commit](@/glossary/commit.cs.md) je z 14. listopadu 2026. Zní „test(ui): U112 names the 320 Synth overlap pairs for every host, and the v3.37.3 record (\#546)“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+[Repozitář](@/glossary/repository.cs.md) vznikl 1. října 2026; poslední [commit](@/glossary/commit.cs.md) je z 15. listopadu 2026. Zní „fix(ui): train T23, U106 the page says it is Czech with Czech workspace names, and release v3.38.1 (\#558)“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 
 Je postavený na [Web Audio](@/glossary/web-audio.cs.md).
 

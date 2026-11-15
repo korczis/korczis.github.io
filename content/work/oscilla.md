@@ -3,8 +3,8 @@
 title = "Oscilla"
 description = "A zero-install acoustic laboratory in the browser."
 template = "work.html"
-weight = 5
-updated = "2026-11-14T20:57:51Z"
+weight = 4
+updated = "2026-11-15T19:37:55Z"
 
 [taxonomies]
 tags = ["Science and visualisation", "JavaScript", "HTML", "CSS"]
@@ -15,7 +15,7 @@ og_title = "Oscilla: A zero-install acoustic laboratory in the browser."
 og_image = "og/work-oscilla.png"
 schema = "project"
 keywords = ["Oscilla", "Science and visualisation", "JavaScript", "HTML", "CSS", "Tomas Korcak"]
-terms = ["javascript", "html", "css", "shell", "web-audio", "data-visualisation", "github-pages", "repository", "commit", "open-source"]
+terms = ["javascript", "html", "css", "swift", "shell", "web-audio", "data-visualisation", "github-pages", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -26,9 +26,9 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**Oscilla** is a project in [Science and visualisation](@/projects/science.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (96.9 %), with [HTML](@/glossary/html.md), [CSS](@/glossary/css.md) and [Shell](@/glossary/shell.md).
+**Oscilla** is a project in [Science and visualisation](@/projects/science.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (96.9 %), with [HTML](@/glossary/html.md), [CSS](@/glossary/css.md) and [Swift](@/glossary/swift.md).
 
-The [repository](@/glossary/repository.md) was created in October 2026; its latest [commit](@/glossary/commit.md) is from 14 November 2026. It reads “test(ui): U112 names the 320 Synth overlap pairs for every host, and the v3.37.3 record (\#546)”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created in October 2026; its latest [commit](@/glossary/commit.md) is from 15 November 2026. It reads “fix(ui): train T23, U106 the page says it is Czech with Czech workspace names, and release v3.38.1 (\#558)”. That places it among the projects active in the last 12 months.
 
 It is built with [Web Audio](@/glossary/web-audio.md).
 

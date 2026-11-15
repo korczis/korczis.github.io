@@ -16,8 +16,8 @@ kind = "concept"
 definition = "A program that turns content and templates into plain files before anyone visits, so the site needs no server code."
 aliases = []
 reference = { title = "Static site generator (Wikipedia)", url = "https://en.wikipedia.org/wiki/Static_site_generator" }
-pages = ["_index.md", "projects/web.md", "work/korczis-github-io.md", "work/korczis.md"]
-related = ["repository", "commit", "javascript", "css", "open-source", "d3", "data-visualisation", "elixir"]
+pages = ["_index.md", "projects/web.md", "work/korczis-github-io.md", "work/korczis-gitlab-io.md"]
+related = ["repository", "commit", "css", "html", "elixir", "javascript", "open-source", "d3"]
 og_title = "Static site generator: glossary"
 og_image = "og/glossary-static-site-generator.png"
 keywords = ["Static site generator", "Concept", "Glossary", "Tomas Korcak"]

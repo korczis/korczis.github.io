@@ -16,7 +16,7 @@ kind = "language"
 definition = "The markup language of web pages: the structure that styles and scripts work on."
 aliases = []
 reference = { title = "MDN Web Docs: HTML", url = "https://developer.mozilla.org/en-US/docs/Web/HTML" }
-pages = ["projects/data.md", "projects/media.md", "projects/security.md", "work/algoglyph.md", "work/astronomists.md", "work/bubbler.md", "work/catharsis-as-a-service.md", "work/crisis-map.md", "work/data-atlas.md", "work/el-magico-cache.md", "work/gists-search.md", "work/kompendium-epistemicke-anihilace.md", "work/korczis-github-io.md", "work/korczis-gitlab-io.md", "work/majordomus-reel.md", "work/openttd-prismatic-bridge.md", "work/oscilla.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/prismatic-majordomus.md", "work/prismatic.md", "work/sonic-playground.md", "work/u-tygra.md", "work/vomaste-cz.md"]
+pages = ["projects/data.md", "projects/media.md", "projects/security.md", "projects/web.md", "work/algoglyph.md", "work/astronomists.md", "work/bubbler.md", "work/catharsis-as-a-service.md", "work/crisis-map.md", "work/data-atlas.md", "work/el-magico-cache.md", "work/gists-search.md", "work/kompendium-epistemicke-anihilace.md", "work/korczis-github-io.md", "work/korczis-gitlab-io.md", "work/majordomus-reel.md", "work/openttd-prismatic-bridge.md", "work/oscilla.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/prismatic-majordomus.md", "work/prismatic.md", "work/sonic-playground.md", "work/u-tygra.md", "work/vomaste-cz.md"]
 related = ["repository", "commit", "open-source", "javascript", "shell", "github-pages", "css", "python"]
 og_title = "HTML: glossary"
 og_image = "og/glossary-html.png"

@@ -3,19 +3,19 @@
 title = "korczis.github.io"
 description = "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus."
 template = "work.html"
-weight = 7
-updated = "2026-11-14T18:48:39Z"
+weight = 1
+updated = "2026-11-15T20:56:30Z"
 
 [taxonomies]
-tags = ["Web", "JavaScript", "HTML", "Shell"]
+tags = ["Web", "JavaScript", "HTML", "CSS"]
 
 [extra]
 repo = "korczis.github.io"
 og_title = "korczis.github.io: Tomas Korcak (korczis): software that proves its work. Projects, live s"
 og_image = "og/work-korczis-github-io.png"
 schema = "project"
-keywords = ["korczis.github.io", "Web", "JavaScript", "HTML", "Shell", "Tomas Korcak"]
-terms = ["javascript", "html", "shell", "css", "static-site-generator", "repository", "commit", "open-source"]
+keywords = ["korczis.github.io", "Web", "JavaScript", "HTML", "CSS", "Tomas Korcak"]
+terms = ["javascript", "html", "css", "shell", "static-site-generator", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -26,8 +26,8 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**korczis.github.io** is a project in [Web](@/projects/web.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (53.4 %), with [HTML](@/glossary/html.md), [Shell](@/glossary/shell.md) and [CSS](@/glossary/css.md).
+**korczis.github.io** is a project in [Web](@/projects/web.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (69.2 %), with [HTML](@/glossary/html.md), [CSS](@/glossary/css.md) and [Shell](@/glossary/shell.md).
 
-The [repository](@/glossary/repository.md) was created in December 2024; its latest [commit](@/glossary/commit.md) is from 14 November 2026. It reads “chore(data): refresh the snapshot and the index”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created in December 2024; its latest [commit](@/glossary/commit.md) is from 15 November 2026. It reads “chore(merge): integrate \#20, the refresh bot's push passes the NDA denylist”. That places it among the projects active in the last 12 months.
 
 *How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 30 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

@@ -3,7 +3,7 @@
 title = "edna"
 description = "Edna je digitální kartářka, astroložka a analytička poháněná AI. Projekt spojuje mystiku, astrologii a psychologii s moderními LLM modely, aby uživatelům…"
 template = "work.html"
-weight = 23
+weight = 22
 updated = "2025-09-02T10:22:20Z"
 
 [taxonomies]

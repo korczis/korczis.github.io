@@ -4,7 +4,7 @@ title = "Science and visualisation"
 description = "Honest instruments and drawn algorithms in the browser: acoustics, physics, sorting, mazes, each readout measured."
 template = "category.html"
 weight = 2
-updated = "2026-11-14T22:41:17Z"
+updated = "2026-11-15T22:14:06Z"
 
 [taxonomies]
 tags = ["Science and visualisation", "Oscilla", "algoglyph", "maze-rs", "big-png"]
@@ -14,7 +14,7 @@ category = "science"
 og_title = "Science and visualisation: 12 repositories."
 og_image = "og/category-science.png"
 schema = "collection"
-terms = ["data-visualisation", "rust", "cpp", "javascript", "haskell", "python", "typescript", "web-audio", "p5-js", "apache-echarts", "alpine-js", "flowbite-pro", "repository"]
+terms = ["data-visualisation", "rust", "cpp", "javascript", "elixir", "haskell", "python", "typescript", "web-audio", "p5-js", "apache-echarts", "alpine-js", "flowbite-pro", "repository"]
 keywords = ["Science and visualisation", "Oscilla", "algoglyph", "maze-rs", "big-png", "distance-calculator", "rustas", "graph-flow", "maze", "maze-js", "haskell-world", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -28,7 +28,7 @@ tone = "night"
 +++
 Honest instruments and drawn algorithms in the browser: acoustics, physics, sorting, mazes, each readout measured.
 
-The category holds 12 original repositories, written most often in [Rust](@/glossary/rust.md), [C++](@/glossary/cpp.md), [JavaScript](@/glossary/javascript.md) and [Haskell](@/glossary/haskell.md). Featured: **Oscilla**, **algoglyph**, **maze-rs** and **big-png**.
+The category holds 12 original repositories, written most often in [Rust](@/glossary/rust.md), [C++](@/glossary/cpp.md), [JavaScript](@/glossary/javascript.md), [Elixir](@/glossary/elixir.md) and [Haskell](@/glossary/haskell.md). Featured: **Oscilla**, **algoglyph**, **maze-rs** and **big-png**.
 
 Key concept: [Data visualisation](@/glossary/data-visualisation.md).
 

@@ -16,7 +16,7 @@ kind = "concept"
 definition = "Geografické informační systémy: data vázaná na místa, uložená, analyzovaná a kreslená jako mapy."
 aliases = []
 reference = { title = "GIS (Wikipedia)", url = "https://en.wikipedia.org/wiki/Geographic_information_system" }
-pages = ["projects/_index.cs.md", "projects/data.cs.md", "work/crisis-map.cs.md", "work/data-atlas.cs.md", "work/kuzu-ex.cs.md"]
+pages = ["projects/_index.cs.md", "projects/data.cs.md", "work/crisis-map.cs.md", "work/data-atlas.cs.md", "work/kuzu-ex.cs.md", "work/meili-rsex.cs.md"]
 related = ["repository", "open-source", "commit", "elixir", "html", "javascript", "python", "github-pages"]
 og_title = "GIS: slovník"
 og_image = "og/cs-glossary-gis.png"

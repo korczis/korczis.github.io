@@ -3,8 +3,8 @@
 title = "algoglyph"
 description = "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured…"
 template = "work.html"
-weight = 6
-updated = "2026-11-14T20:18:05Z"
+weight = 5
+updated = "2026-11-15T17:15:57Z"
 
 [taxonomies]
 tags = ["Science and visualisation", "TypeScript", "Rust", "JavaScript"]
@@ -26,9 +26,9 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**algoglyph** is a project in [Science and visualisation](@/projects/science.md). Its code is written mainly in [TypeScript](@/glossary/typescript.md) (79.4 %), with [Rust](@/glossary/rust.md), [JavaScript](@/glossary/javascript.md) and [HTML](@/glossary/html.md).
+**algoglyph** is a project in [Science and visualisation](@/projects/science.md). Its code is written mainly in [TypeScript](@/glossary/typescript.md) (80.9 %), with [Rust](@/glossary/rust.md), [JavaScript](@/glossary/javascript.md) and [HTML](@/glossary/html.md).
 
-The [repository](@/glossary/repository.md) was created in November 2026; its latest [commit](@/glossary/commit.md) is from 14 November 2026. It reads “Merge remote-tracking branch 'origin/main' into feature/maxwell-1d”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created in November 2026; its latest [commit](@/glossary/commit.md) is from 15 November 2026. It reads “Merge remote-tracking branch 'origin/fix/rebuild-corners' into fix/charts-by-title”. That places it among the projects active in the last 12 months.
 
 It is built with [p5.js](@/glossary/p5-js.md), [Apache ECharts](@/glossary/apache-echarts.md), [Alpine.js](@/glossary/alpine-js.md) and [Flowbite Pro](@/glossary/flowbite-pro.md).
 

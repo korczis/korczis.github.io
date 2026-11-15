@@ -24,7 +24,7 @@
 window = 100
 # how many of the most used languages (data/index.json) count as the top ones: category articles
 # name them, and a hand page may name only these (check-front-matter)
-top_languages = 4
+top_languages = 5
 mirrors = ["foremost", "libnids", "libnet", "ucl", "upx", "ev", "petitboot", "libtwin", "mongo-cxx-driver", "cyclos", "raspberry-pi", "tsa-keys"]
 # unable.cz must never run (owner, 2026-11-15): it is not listed and its site is never linked.
 hidden = ["atp", "microcrawler-crawler-youjizz-com", "the-shit", "chujovinky", "empty-repo", "unable.cz"]

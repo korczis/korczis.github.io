@@ -4,7 +4,7 @@ title = "Věda a vizualizace"
 description = "Poctivé přístroje a kreslené algoritmy v prohlížeči: akustika, fyzika, řazení, bludiště, každý údaj změřený."
 template = "category.html"
 weight = 2
-updated = "2026-11-14T22:41:17Z"
+updated = "2026-11-15T22:14:06Z"
 
 [taxonomies]
 tags = ["Věda a vizualizace", "Oscilla", "algoglyph", "maze-rs", "big-png"]
@@ -14,7 +14,7 @@ category = "science"
 og_title = "Věda a vizualizace: 12 repozitářů."
 og_image = "og/cs-category-science.png"
 schema = "collection"
-terms = ["data-visualisation", "rust", "cpp", "javascript", "haskell", "python", "typescript", "web-audio", "p5-js", "apache-echarts", "alpine-js", "flowbite-pro", "repository"]
+terms = ["data-visualisation", "rust", "cpp", "javascript", "elixir", "haskell", "python", "typescript", "web-audio", "p5-js", "apache-echarts", "alpine-js", "flowbite-pro", "repository"]
 keywords = ["Věda a vizualizace", "Oscilla", "algoglyph", "maze-rs", "big-png", "distance-calculator", "rustas", "graph-flow", "maze", "maze-js", "haskell-world", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -28,7 +28,7 @@ tone = "night"
 +++
 Poctivé přístroje a kreslené algoritmy v prohlížeči: akustika, fyzika, řazení, bludiště, každý údaj změřený.
 
-Kategorie má 12 repozitářů; nejčastějšími jazyky jsou [Rust](@/glossary/rust.cs.md), [C++](@/glossary/cpp.cs.md), [JavaScript](@/glossary/javascript.cs.md) a [Haskell](@/glossary/haskell.cs.md). Vybrané projekty: **Oscilla**, **algoglyph**, **maze-rs** a **big-png**.
+Kategorie má 12 repozitářů; nejčastějšími jazyky jsou [Rust](@/glossary/rust.cs.md), [C++](@/glossary/cpp.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Elixir](@/glossary/elixir.cs.md) a [Haskell](@/glossary/haskell.cs.md). Vybrané projekty: **Oscilla**, **algoglyph**, **maze-rs** a **big-png**.
 
 Klíčový pojem: [Vizualizace dat](@/glossary/data-visualisation.cs.md).
 

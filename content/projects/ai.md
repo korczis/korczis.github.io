@@ -4,7 +4,7 @@ title = "AI engineering"
 description = "Supervision for AI coding agents: one policy for every tool, scoped tasks, and work that lands only when it is proven."
 template = "category.html"
 weight = 1
-updated = "2026-11-14T22:09:42Z"
+updated = "2026-11-15T22:01:24Z"
 
 [taxonomies]
 tags = ["AI engineering", "Majordomus", "llm", "sig", "edna"]
@@ -14,7 +14,7 @@ category = "ai"
 og_title = "AI engineering: 5 repositories."
 og_image = "og/category-ai.png"
 schema = "collection"
-terms = ["ai-agent", "rust", "mcp", "zola", "repository"]
+terms = ["ai-agent", "elixir", "rust", "mcp", "zola", "repository"]
 keywords = ["AI engineering", "Majordomus", "llm", "sig", "edna", "cognitive-reasoning", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -28,7 +28,7 @@ tone = "night"
 +++
 Supervision for AI coding agents: one policy for every tool, scoped tasks, and work that lands only when it is proven.
 
-The category holds 5 original repositories, written most often in [Rust](@/glossary/rust.md). Featured: **Majordomus**.
+The category holds 5 original repositories, written most often in [Elixir](@/glossary/elixir.md) and [Rust](@/glossary/rust.md). Featured: **Majordomus**.
 
 Key concept: [AI agent](@/glossary/ai-agent.md).
 

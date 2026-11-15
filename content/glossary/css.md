@@ -17,7 +17,7 @@ definition = "The style language of the web: layout, colour and typography of HT
 aliases = []
 reference = { title = "MDN Web Docs: CSS", url = "https://developer.mozilla.org/en-US/docs/Web/CSS" }
 pages = ["projects/web.md", "work/astronomists.md", "work/bubbler.md", "work/catharsis-as-a-service.md", "work/crisis-map.md", "work/korczis-github-io.md", "work/korczis-gitlab-io.md", "work/openttd-prismatic-bridge.md", "work/oscilla.md", "work/prismatic-majordomus.md", "work/prismatic.md", "work/sonic-playground.md", "work/the-psycho.md", "work/u-tygra.md", "work/vomaste-cz.md"]
-related = ["repository", "commit", "open-source", "html", "javascript", "github-pages", "shell", "elixir"]
+related = ["repository", "commit", "html", "open-source", "javascript", "github-pages", "shell", "elixir"]
 og_title = "CSS: glossary"
 og_image = "og/glossary-css.png"
 keywords = ["CSS", "Programming language", "Glossary", "Tomas Korcak"]

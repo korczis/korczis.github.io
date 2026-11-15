@@ -3,19 +3,19 @@
 title = "korczis.gitlab.io"
 description = "Kita is a clean, elegant and simple blog theme for Zola."
 template = "work.html"
-weight = 26
+weight = 25
 updated = "2025-08-22T20:21:57Z"
 
 [taxonomies]
-tags = ["Tools", "CSS", "Elixir", "SCSS"]
+tags = ["Web", "CSS", "Elixir", "SCSS"]
 
 [extra]
 repo = "korczis.gitlab.io"
-og_title = "korczis.gitlab.io: Tools"
+og_title = "korczis.gitlab.io: Web"
 og_image = "og/work-korczis-gitlab-io.png"
 schema = "project"
-keywords = ["korczis.gitlab.io", "Tools", "CSS", "Elixir", "SCSS", "Tomas Korcak"]
-terms = ["css", "elixir", "html", "open-source", "repository", "commit"]
+keywords = ["korczis.gitlab.io", "Web", "CSS", "Elixir", "SCSS", "Tomas Korcak"]
+terms = ["css", "elixir", "html", "static-site-generator", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -26,7 +26,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**korczis.gitlab.io** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [CSS](@/glossary/css.md) (32.5 %), with [Elixir](@/glossary/elixir.md), SCSS and [HTML](@/glossary/html.md).
+**korczis.gitlab.io** is a project in [Web](@/projects/web.md). Its code is written mainly in [CSS](@/glossary/css.md) (32.5 %), with [Elixir](@/glossary/elixir.md), SCSS and [HTML](@/glossary/html.md).
 
 The [repository](@/glossary/repository.md) was created in August 2025; its latest [commit](@/glossary/commit.md) is from 22 August 2025. It reads “Merge branch 'master' of gitlab.com:korczis/korczis.gitlab.io”. That places it among the projects active in the last 24 months.
 

@@ -3,7 +3,7 @@
 title = "prismatic-blog"
 description = "Book Template is a starter template of [Zola][zola] with [book][book] theme, including automatic publishing feature to [GitHub Pages][github-pages]. Contains…"
 template = "work.html"
-weight = 31
+weight = 30
 updated = "2025-03-14T02:08:36Z"
 
 [taxonomies]

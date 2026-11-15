@@ -11,10 +11,10 @@ tags = ["Data and GIS", "Data Atlas", "Crisis map", "apollo-crawler-extension", 
 
 [extra]
 category = "data"
-og_title = "Data and GIS: 50 repositories."
+og_title = "Data and GIS: 51 repositories."
 og_image = "og/category-data.png"
 schema = "collection"
-terms = ["gis", "ruby", "javascript", "elixir", "html", "python", "rust", "shell", "postgis", "mcp", "repository"]
+terms = ["gis", "javascript", "ruby", "elixir", "shell", "html", "python", "rust", "postgis", "mcp", "repository"]
 keywords = ["Data and GIS", "Data Atlas", "Crisis map", "apollo-crawler-extension", "microcrawler", "microcrawler-browser", "microcrawler-crawler-bam-brno-cz", "microcrawler-crawler-all", "microcrawler-crawler-base", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -28,7 +28,7 @@ tone = "night"
 +++
 Catalogues and maps of open data: geodata sources, incident reports geocoded and served from one registry.
 
-The category holds 50 original repositories, written most often in [Ruby](@/glossary/ruby.md), [JavaScript](@/glossary/javascript.md), [Elixir](@/glossary/elixir.md) and [HTML](@/glossary/html.md). Featured: **Data Atlas** and **Crisis map**.
+The category holds 51 original repositories, written most often in [JavaScript](@/glossary/javascript.md), [Ruby](@/glossary/ruby.md), [Elixir](@/glossary/elixir.md), [Shell](@/glossary/shell.md) and [HTML](@/glossary/html.md). Featured: **Data Atlas** and **Crisis map**.
 
 Key concept: [GIS](@/glossary/gis.md).
 

@@ -4,7 +4,7 @@ title = "Inženýrství AI"
 description = "Dohled nad AI agenty pro programování: jedna politika pro každý nástroj, vymezené úkoly a práce, která projde jen doložená."
 template = "category.html"
 weight = 1
-updated = "2026-11-14T22:09:42Z"
+updated = "2026-11-15T22:01:24Z"
 
 [taxonomies]
 tags = ["Inženýrství AI", "Majordomus", "llm", "sig", "edna"]
@@ -14,7 +14,7 @@ category = "ai"
 og_title = "Inženýrství AI: 5 repozitářů."
 og_image = "og/cs-category-ai.png"
 schema = "collection"
-terms = ["ai-agent", "rust", "mcp", "zola", "repository"]
+terms = ["ai-agent", "elixir", "rust", "mcp", "zola", "repository"]
 keywords = ["Inženýrství AI", "Majordomus", "llm", "sig", "edna", "cognitive-reasoning", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -28,7 +28,7 @@ tone = "night"
 +++
 Dohled nad AI agenty pro programování: jedna politika pro každý nástroj, vymezené úkoly a práce, která projde jen doložená.
 
-Kategorie má 5 repozitářů; nejčastějšími jazyky jsou [Rust](@/glossary/rust.cs.md). Vybrané projekty: **Majordomus**.
+Kategorie má 5 repozitářů; nejčastějšími jazyky jsou [Elixir](@/glossary/elixir.cs.md) a [Rust](@/glossary/rust.cs.md). Vybrané projekty: **Majordomus**.
 
 Klíčový pojem: [AI agent](@/glossary/ai-agent.cs.md).
 

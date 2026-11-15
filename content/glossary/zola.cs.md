@@ -17,7 +17,7 @@ definition = "Generátor statických webů v jedné binárce v Rustu: dovnitř M
 aliases = []
 reference = { title = "getzola.org", url = "https://www.getzola.org/documentation/getting-started/overview/" }
 pages = ["_index.cs.md", "projects/ai.cs.md", "projects/knowledge.cs.md", "stack.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/prismatic-majordomus.cs.md"]
-related = ["repository", "flowbite-pro", "alpine-js", "apache-echarts", "commit", "cytoscape-js", "github-pages", "rust"]
+related = ["repository", "flowbite-pro", "alpine-js", "apache-echarts", "commit", "cytoscape-js", "elixir", "github-pages"]
 og_title = "Zola: slovník"
 og_image = "og/cs-glossary-zola.png"
 keywords = ["Zola", "Technologie", "Slovník", "Tomáš Korčák"]

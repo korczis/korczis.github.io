@@ -3,7 +3,7 @@
 title = "openttd-prismatic-bridge"
 description = "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform"
 template = "work.html"
-weight = 16
+weight = 15
 updated = "2026-07-24T16:40:44Z"
 
 [taxonomies]

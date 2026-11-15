@@ -14,7 +14,7 @@ category = "libraries"
 og_title = "Knihovny: 7 repozitářů."
 og_image = "og/cs-category-libraries.png"
 schema = "collection"
-terms = ["open-source", "javascript", "elixir", "rust", "repository"]
+terms = ["open-source", "elixir", "javascript", "rust", "repository"]
 keywords = ["Knihovny", "gauc-ex", "hydra", "gauc.ex", "easy-plugin-plugins", "peg-parser", "babel-plugin-transform-graphql", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -28,7 +28,7 @@ tone = "night"
 +++
 Znovupoužitelné stavební bloky pro jiné programy: klienti, bindingy, validátory, parsery a rozšíření frameworků, hlavně Elixir a Rust.
 
-Kategorie má 7 repozitářů; nejčastějšími jazyky jsou [JavaScript](@/glossary/javascript.cs.md), [Elixir](@/glossary/elixir.cs.md) a [Rust](@/glossary/rust.cs.md).
+Kategorie má 7 repozitářů; nejčastějšími jazyky jsou [Elixir](@/glossary/elixir.cs.md), [JavaScript](@/glossary/javascript.cs.md) a [Rust](@/glossary/rust.cs.md).
 
 Klíčový pojem: [Open source](@/glossary/open-source.cs.md).
 

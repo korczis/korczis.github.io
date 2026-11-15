@@ -3,7 +3,7 @@
 title = "Gists search"
 description = "Prohledávatelný index nad zrcadlem mých GitHub gistů."
 template = "work.html"
-weight = 13
+weight = 12
 updated = "2026-08-27T20:26:10Z"
 
 [taxonomies]
