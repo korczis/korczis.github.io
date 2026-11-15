@@ -3,7 +3,7 @@ schema: adr/v1
 id: adr-0004
 kind: adr
 title: Contact from the GitHub profile, CV facts from the owner, a derived GitHub profile
-status: proposed
+status: accepted
 date: 2026-11-14
 tags:
   - content
@@ -60,3 +60,11 @@ The owner was asked in Claude Code session `c345d42d-f403-4b60-a5d8-75d67c92d0a5
 - /about/ shows a work-history section only once the owner fills `data/cv.toml`.
 - The email shown follows the GitHub profile: hiding it there hides it here at the next refresh.
 - `korczis/korczis` is a second public surface derived from this site; site.json is its contract.
+
+## Acceptance
+
+Accepted by the owner on 2026-11-15, answering in Claude Code session
+8ab4cca0-a58f-4aec-a06b-8c8a1a13b6c5 at 2026-11-15T16:09Z.
+
+- Question: "Which of the five proposed ADRs in korczis.github.io should I mark accepted? (0006, the NDA-mined experience section, is already active.)"
+- Answer: "0001 Zola + Flowbite Pro, 0002 lundra runner, 0003 all public repos, 0004 + 0005"

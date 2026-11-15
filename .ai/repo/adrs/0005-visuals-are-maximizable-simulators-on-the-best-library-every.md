@@ -3,7 +3,7 @@ schema: adr/v1
 id: adr-0005
 kind: adr
 title: Visuals are maximizable simulators on the best library, everything interlinked, enforced every task
-status: proposed
+status: accepted
 date: 2026-11-14
 tags:
   - ui
@@ -75,3 +75,11 @@ names Apache ECharts through one layer and no Chart.js or Cytoscape in the outpu
 - Every new visual must implement `controls()` and a resize path, or be declared static with a reason;
   `scripts/check-viz-layer.mjs` refuses it otherwise, and the browser audit maximizes each one.
 - The gate list has one source; adding a gate is one line there.
+
+## Acceptance
+
+Accepted by the owner on 2026-11-15, answering in Claude Code session
+8ab4cca0-a58f-4aec-a06b-8c8a1a13b6c5 at 2026-11-15T16:09Z.
+
+- Question: "Which of the five proposed ADRs in korczis.github.io should I mark accepted? (0006, the NDA-mined experience section, is already active.)"
+- Answer: "0001 Zola + Flowbite Pro, 0002 lundra runner, 0003 all public repos, 0004 + 0005"
