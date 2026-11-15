@@ -60,7 +60,9 @@ the NDA. Even a list of the names to avoid, committed here, would disclose the c
 
 ## Consequences
 
-- The owner sets the secret once: `gh secret set NDA_DENYLIST -R korczis/korczis.github.io <
-  ~/.config/korczis-hub/nda-denylist.txt`; until then CI's NDA gate fails closed.
+- The owner sets the secret, and again whenever the private map gains a client:
+  `node scripts/check-nda.mjs --secret | gh secret set NDA_DENYLIST -R korczis/korczis.github.io`
+  (the denylist file plus every client and source folder of the map); until then CI's NDA gate
+  fails closed. Set from the file alone it held 4 of the 14 names (2026-11-15).
 - Mining runs only on the owner's machine (the sources are there); CI checks the committed result.
 - Engagements without a local source show only what the owner declares in the private map.

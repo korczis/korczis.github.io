@@ -26,7 +26,9 @@ anyone remembering, and the list it checks against cannot live where it would it
   `data/experience-rules.toml`, periods, rounded scale buckets and public technology names.
   Every sentence about it comes from generic templates in `i18n/experience.toml`.
 - The names to avoid live only in `~/.config/korczis-hub/nda-denylist.txt` and the private
-  engagement map; CI reads them from the secret `NDA_DENYLIST`.
+  engagement map; CI reads them from the secret `NDA_DENYLIST`, which holds the whole composed
+  list (`node scripts/check-nda.mjs --secret | gh secret set NDA_DENYLIST …`, the list only ever
+  into a pipe). In CI the gate also fails when it cannot scan the branch's commit messages.
 - A gate's finding names the file and line, never the name it matched.
 - An owner's quotation that contains a protected name is recorded with the name replaced by
   `[client]` (ADR 0006 is the example); the redaction is stated where it is made.

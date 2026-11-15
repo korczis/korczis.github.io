@@ -85,7 +85,10 @@ jobs:
     runs-on: ${{ inputs.runner || 'ubuntu-latest' }}
     timeout-minutes: 30
     steps:
+      # Full history: the NDA gate scans every commit message of origin/master..HEAD.
       - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
       - uses: ./.github/actions/setup
         with:
           browser: 'true'

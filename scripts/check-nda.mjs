@@ -9,10 +9,18 @@
 // It prints only "<file>:<line> matches a denylisted name", never the name.
 //
 // With no denylist it skips locally (exit 0), but fails in CI (CI set), because there a missing
-// list means the secret was never set.
+// list means the secret was never set. In CI a missing base ref fails too: a shallow checkout
+// once passed with "history not scanned" (the validate job now fetches the full history).
+//
+// The CI secret must hold the whole list this gate composes locally (the denylist file plus every
+// client and source folder of the engagement map): once it held only the file, 4 names of 14.
+// --secret writes that list to a pipe, never to a terminal and never in CI, for the owner to set:
+//   node scripts/check-nda.mjs --secret | gh secret set NDA_DENYLIST -R korczis/korczis.github.io
 //
 // usage: node scripts/check-nda.mjs [--site <dir>] [--root <repository>] [--base <ref>]
-//        exit 0 clean or skipped, 1 on a match or a missing list in CI, 2 on bad arguments
+//        node scripts/check-nda.mjs --secret | <consumer>
+//        exit 0 clean or skipped, 1 on a match or a missing list or base in CI, 2 on bad arguments
+//        or --secret to a terminal or in CI
 import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
 import { dirname, join, relative, resolve } from 'node:path';
@@ -20,7 +28,7 @@ import { fileURLToPath } from 'node:url';
 import { compileDenylist, loadDenylist, matchingLines } from './lib/nda.mjs';
 import { cliArgs } from './lib/cli.mjs';
 
-const flags = cliArgs({ '--site': '<dir>', '--root': '<repository>', '--base': '<ref>' });
+const flags = cliArgs({ '--site': '<dir>', '--root': '<repository>', '--base': '<ref>', '--secret': true });
 const opts = {
   root: flags.root ? resolve(flags.root) : join(dirname(fileURLToPath(import.meta.url)), '..'),
   site: flags.site ? resolve(flags.site) : null,
@@ -28,10 +36,20 @@ const opts = {
 };
 
 const { names, sources } = loadDenylist();
+const SECRET_COMMAND = 'node scripts/check-nda.mjs --secret | gh secret set NDA_DENYLIST -R korczis/korczis.github.io';
+if (flags.secret) {
+  // The names leave this process only into a pipe the owner wrote: never a screen, a log or CI.
+  if (process.env.CI) { console.error('✗ nda: --secret never runs in CI'); process.exit(2); }
+  if (process.stdout.isTTY) { console.error(`✗ nda: --secret writes the names only into a pipe: ${SECRET_COMMAND}`); process.exit(2); }
+  if (!names.length) { console.error('✗ nda: no denylist here to write'); process.exit(1); }
+  process.stdout.write(`${names.join('\n')}\n`);
+  console.error(`nda: ${names.length} names from ${sources.join(' and ')} written to the pipe`);
+  process.exit(0);
+}
 if (!names.length) {
   if (process.env.CI) {
     console.error('✗ nda: no denylist in CI. The owner sets it once with:');
-    console.error('  gh secret set NDA_DENYLIST -R korczis/korczis.github.io < ~/.config/korczis-hub/nda-denylist.txt');
+    console.error(`  ${SECRET_COMMAND}`);
     process.exit(1);
   }
   console.log('nda: skipped: no denylist (NDA_DENYLIST, ~/.config/korczis-hub/nda-denylist.txt or the engagement map)');
@@ -80,6 +98,10 @@ if (opts.site) {
 // 3. What this branch adds to history: its commit messages and its name.
 let commits = 0;
 const hasBase = git('rev-parse', '--verify', '--quiet', opts.base).status === 0;
+if (!hasBase && process.env.CI) {
+  console.error(`✗ nda: no ${opts.base} in CI, so the branch's commit messages would go unscanned; check out with fetch-depth: 0`);
+  process.exit(1);
+}
 if (hasBase) {
   const log = git('log', '--format=%h%x1f%B%x1e', `${opts.base}..HEAD`).stdout;
   for (const entry of log.split('\x1e').map((e) => e.trim()).filter(Boolean)) {
