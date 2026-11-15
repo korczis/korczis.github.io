@@ -3,8 +3,9 @@
 // dark theme: axe-core WCAG 2.2 AA violations, console and network errors, horizontal overflow,
 // cumulative layout shift, and every visual reaching data-viz-state="ready" once scrolled into
 // view. At 320, 768, 1024 and 1920 px: overflow and errors only. Then every internal link the
-// pages rendered must resolve to a built file, and on a page of another language than the default
-// (/cs/) every internal page link stays in that language. Any finding exits 1.
+// pages rendered must resolve to a built file, every link with a fragment to an element with that
+// id in the page it names, and on a page of another language than the default (/cs/) every
+// internal page link stays in that language. Any finding exits 1.
 //
 // The pages are derived, never named: one page per template and language, read from the built
 // site's sitemap.xml, each URL's template inferred from the content front matter that renders it
@@ -314,6 +315,9 @@ async function measure(browser, name, rel, width, scheme, full) {
 
 const LINKS = new Map();
 const LINK_FAILURES = [];
+// In-page anchors: a link with a fragment needs an element with that id (or name) in the built
+// page it points to, or it scrolls nowhere and nothing else would notice.
+const FRAGMENTS = new Map();
 // Project sites share this origin on GitHub Pages (korczis.github.io/<repo>/) but are other
 // repositories' builds: they are checked by scripts/check-live.mjs, not against this build.
 const PROJECT_SITES = new Set(
@@ -359,9 +363,11 @@ function collect(result) {
     const wrongLanguage = languageFinding(result.path, raw, abs, hreflang);
     if (wrongLanguage && !LINK_FAILURES.includes(wrongLanguage)) LINK_FAILURES.push(wrongLanguage);
     const url = new URL(abs);
+    const fragment = url.hash.length > 1 ? decodeURIComponent(url.hash.slice(1)) : '';
     url.hash = '';
     url.search = '';
     if (!LINKS.has(url.href)) LINKS.set(url.href, `/${result.path}`);
+    if (fragment && !FRAGMENTS.has(`${url.href}#${fragment}`)) FRAGMENTS.set(`${url.href}#${fragment}`, { href: url.href, fragment, from: `/${result.path}` });
   }
 }
 
@@ -369,6 +375,16 @@ function checkLinks() {
   for (const [href, from] of LINKS) {
     const rel = internal(href);
     if (rel !== null && !existsSync(builtFile(rel))) LINK_FAILURES.push(`404 ${href} (linked from ${from})`);
+  }
+  const ids = new Map();
+  for (const { href, fragment, from } of FRAGMENTS.values()) {
+    const file = builtFile(internal(href));
+    if (!existsSync(file)) continue;
+    if (!ids.has(file)) {
+      const html = readFileSync(file, 'utf8');
+      ids.set(file, new Set([...html.matchAll(/\s(?:id|name)="([^"]+)"/g)].map((m) => m[1])));
+    }
+    if (!ids.get(file).has(fragment)) LINK_FAILURES.push(`no #${fragment} in ${href} (linked from ${from})`);
   }
   return LINKS.size;
 }
@@ -738,7 +754,7 @@ try {
 
 const checked = checkLinks();
 for (const f of LINK_FAILURES) console.log(`FAIL link ${f}`);
-console.log(`links: ${checked} internal addresses checked, ${LINK_FAILURES.length} findings`);
+console.log(`links: ${checked} internal addresses and ${FRAGMENTS.size} in-page anchors checked, ${LINK_FAILURES.length} findings`);
 if (LINK_FAILURES.length) failed += 1;
 if (JSON_OUT) writeFileSync(JSON_OUT, JSON.stringify(results, null, 1));
 console.log(`audit: ${results.length - failed}/${results.length} runs without a finding`);

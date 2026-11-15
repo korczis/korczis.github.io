@@ -73,7 +73,7 @@
         {%- for e in xp.engagements %}{% for x in e.capabilities %}{% if x.key == ckey %}{% set_global xce = xce + 1 %}{% set_global xcc = xcc + x.evidence.commits %}{% set_global xch = xch + x.evidence.headings %}{% set_global xcp = xcp + x.evidence.paths %}{% if x.declared %}{% set_global xcd = true %}{% endif %}{% endif %}{% endfor %}{% endfor %}
         {%- set_global xterm = "" %}{% for p in xgl.pages %}{% if p.extra.term == c.term %}{% set_global xterm = p.permalink %}{% endif %}{% endfor %}
         {%- if xce == 1 %}{% set xform = "one" %}{% elif xce >= 2 and xce <= 4 %}{% set xform = "few" %}{% else %}{% set xform = "other" %}{% endif %}
-        <li class="py-3 first:pt-0 last:pb-0">
+        <li id="xp-cap-{{ ckey }}" class="scroll-mt-24 py-3 first:pt-0 last:pb-0">
           <div class="flex items-start justify-between gap-3">
             <h4 class="font-semibold text-gray-900 dark:text-white">{% if xterm %}<a href="{{ xterm }}" class="hover:text-primary-700 hover:underline dark:hover:text-primary-400" title="{{ trans(key="xp_glossary", lang=lang) }}">{{ c["name" ~ xs] }}</a>{% else %}{{ c["name" ~ xs] }}{% endif %}</h4>
             <span class="tabular shrink-0 rounded-md bg-primary-100 px-2 py-0.5 text-xs font-medium text-primary-800 dark:bg-primary-900 dark:text-primary-300">{{ trans(key="xp_n_engagements__" ~ xform, lang=lang) | replace(from="{n}", to=xce ~ "") }}</span>
@@ -140,12 +140,31 @@
             <li>{{ trans(key=pair[1] ~ f, lang=lang) | replace(from="{n}", to=nl) }}</li>
             {%- endif %}{% endfor %}
           </ul>
-          {%- if e.capabilities | length > 0 %}
-          <ul class="mt-3 flex flex-wrap gap-1.5" aria-label="{{ trans(key="xp_capabilities", lang=lang) }}">
-            {%- for x in e.capabilities %}
+          {#- What was solved: each role's description, then the capabilities named in full: the strongest
+              of each domain first (rules' domain_order), then by score, [display] solved in all; each
+              leads to its capability card. The rest stay as chips. #}
+          {%- set xsolved = xr.display.solved %}
+          {%- set_global xpick = "|" %}{% set_global xnp = 0 %}
+          {%- for dkey in xr.domain_order %}{% set_global xdone = false %}{% for x in e.capabilities %}{% if not xdone and xnp < xsolved and xr.capabilities[x.key].domain == dkey %}{% set_global xpick = xpick ~ x.key ~ "|" %}{% set_global xnp = xnp + 1 %}{% set_global xdone = true %}{% endif %}{% endfor %}{% endfor %}
+          {%- for x in e.capabilities %}{% if xnp < xsolved and not ("|" ~ x.key ~ "|") in xpick %}{% set_global xpick = xpick ~ x.key ~ "|" %}{% set_global xnp = xnp + 1 %}{% endif %}{% endfor %}
+          {%- if e.roles | length > 0 or e.capabilities | length > 0 %}
+          <h5 class="mt-3 text-sm font-semibold text-gray-900 dark:text-white">{{ trans(key="xp_solved", lang=lang) }}</h5>
+          <ul class="mt-1 space-y-1.5 text-sm text-gray-700 dark:text-gray-300">
+            {%- for r in e.roles %}
+            <li class="flex gap-2">{{ <icon name="check" class="mt-0.5 h-4 w-4 shrink-0 text-primary-700 dark:text-primary-400" /> }}<span><span class="font-medium text-gray-900 dark:text-white">{{ xr.roles[r]["name" ~ xs] }}:</span> {{ xr.roles[r]["description" ~ xs] }}</span></li>
+            {%- endfor %}
+            {%- for x in e.capabilities %}{% if ("|" ~ x.key ~ "|") in xpick %}
+            <li class="flex gap-2">{{ <icon name="check" class="mt-0.5 h-4 w-4 shrink-0 text-primary-700 dark:text-primary-400" /> }}<span><a href="#xp-cap-{{ x.key }}" class="{{ xlink }}">{{ xr.capabilities[x.key]["name" ~ xs] }}</a>: {{ xr.capabilities[x.key]["description" ~ xs] }}</span></li>
+            {%- endif %}{% endfor %}
+          </ul>
+          {%- endif %}
+          {%- if e.capabilities | length > xnp %}
+          <ul class="mt-3 flex flex-wrap items-center gap-1.5" aria-label="{{ trans(key="xp_capabilities", lang=lang) }}">
+            <li class="text-xs font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400">{{ trans(key="xp_solved_more", lang=lang) }}:</li>
+            {%- for x in e.capabilities %}{% if not ("|" ~ x.key ~ "|") in xpick %}
             {%- set_global xterm = "" %}{% for p in xgl.pages %}{% if p.extra.term == xr.capabilities[x.key].term %}{% set_global xterm = p.permalink %}{% endif %}{% endfor %}
             <li><a href="{{ xterm }}" class="{{ xbadge }}">{{ xr.capabilities[x.key]["name" ~ xs] }}</a></li>
-            {%- endfor %}
+            {%- endif %}{% endfor %}
           </ul>
           {%- endif %}
           {%- if e.technologies | length > 0 %}

@@ -1,11 +1,16 @@
 {
   "schema": "korczis-hub-experience/v1",
-  "generated_at": "2026-11-14T21:10:29Z",
+  "generated_at": "2026-11-15T00:11:05Z",
   "engagements": [
     {
       "id": "e2",
-      "sector": null,
-      "roles": [],
+      "sector": "real-estate",
+      "roles": [
+        "architect",
+        "lead-engineer",
+        "ai-engineer",
+        "data-engineer"
+      ],
       "period": {
         "from": "2026-04",
         "to": "2026-11"
@@ -216,8 +221,11 @@
     },
     {
       "id": "e1",
-      "sector": null,
-      "roles": [],
+      "sector": "financial-group",
+      "roles": [
+        "investigator",
+        "advisor"
+      ],
       "period": {
         "from": "2026-05",
         "to": "2026-05"
@@ -304,7 +312,7 @@
     },
     {
       "id": "e3",
-      "sector": null,
+      "sector": "insurance",
       "roles": [],
       "period": null,
       "months": {},

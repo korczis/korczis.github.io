@@ -35,6 +35,11 @@ weights = { commits = 1.0, headings = 1.0, paths = 0.35 }
 # Public work (data/recent.json) is short text: its own, lower threshold.
 public_threshold = 2.0
 
+# The engagement card names what was solved: its roles, then the descriptions of its strongest
+# capabilities (data/experience.json keeps them by score); the rest stay as chips.
+[display]
+solved = 4
+
 # --- Sectors -------------------------------------------------------------------------------------
 
 [sectors.financial-group]

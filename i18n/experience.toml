@@ -115,6 +115,14 @@ cs = "Odvětví zatím neuvedeno"
 en = "No commits by the owner measured"
 cs = "Bez změřených commitů autora"
 
+[xp_solved]
+en = "What was solved"
+cs = "Co se řešilo"
+
+[xp_solved_more]
+en = "Also"
+cs = "Dále"
+
 [xp_roles]
 en = "Roles"
 cs = "Role"
