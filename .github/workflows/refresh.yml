@@ -54,8 +54,11 @@ jobs:
           NDA_DENYLIST: ${{ secrets.NDA_DENYLIST }}
         run: npm run --silent check
       - name: Commit and deploy when something changed
+        # The push runs the pre-push hook, whose gates include the NDA gate: in CI it fails
+        # closed without the denylist, so this step needs the secret as the gate step does.
         env:
           MAJORDOMUS_KIT_EVIDENCE_FLOWBITE_PRO: ${{ secrets.MAJORDOMUS_KIT_EVIDENCE_FLOWBITE_PRO }}
+          NDA_DENYLIST: ${{ secrets.NDA_DENYLIST }}
         run: |
           if git diff --quiet && [ -z "$(git ls-files --others --exclude-standard)" ]; then
             echo "nothing changed"; exit 0
