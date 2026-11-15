@@ -16,6 +16,12 @@ updates:
       # together with the sibling repositories.
       - dependency-name: playwright-core
         update-types: ['version-update:semver-minor', 'version-update:semver-major']
+      # p5 2.4.0 fetches its friendly-error translations on every load: `./<language>.json` beside
+      # the page (a 404 on every page with a sketch, which the browser audit fails), then
+      # cdn.jsdelivr.net (a third-party request the self-hosted site never makes). 2.3.x does
+      # neither. Lift this when a release can be loaded without either request.
+      - dependency-name: p5
+        update-types: ['version-update:semver-minor', 'version-update:semver-major']
     commit-message:
       prefix: build
       include: scope
