@@ -272,6 +272,23 @@
     }, 150);
   }
   const readParam = (name) => new URLSearchParams(location.search).get(name);
+  // A visual's first frame reads its own address (?<id>.<key>=value) through ctx.param, the reader
+  // the controls use too, so a deep link is restored before the entrance plays and no visual keeps
+  // its own parser: param.raw(key), param.oneOf(key, options, fallback), param.pick(key, test,
+  // fallback) and param.int(key, min, max, fallback), which rounds and clamps.
+  function paramsOf(id) {
+    const raw = (key) => readParam(`${id}.${key}`);
+    const pick = (key, ok, fallback) => {
+      const v = raw(key);
+      return v !== null && ok(v) ? v : fallback;
+    };
+    const int = (key, min, max, fallback) => {
+      const v = raw(key);
+      const n = Number(v);
+      return v !== null && v !== '' && Number.isFinite(n) ? Math.min(max, Math.max(min, Math.round(n))) : fallback;
+    };
+    return { raw, pick, int, oneOf: (key, options, fallback) => pick(key, (v) => options.includes(v), fallback) };
+  }
 
   function button(name, label, onClick) {
     const b = document.createElement('button');
@@ -598,7 +615,8 @@
         if (!night) return p;
         return { ...p, dark: true, page: p.night.shadow, surface: p.night.shadow, strong: p.night.ink, text: p.night.text, muted: p.night.muted, grid: p.night.line };
       };
-      const ctx = { palette: tonePalette, colour, reducedMotion, isDark, motion, go, link, escape, hash, t, reflect, id: vizId(box) };
+      const id = vizId(box);
+      const ctx = { palette: tonePalette, colour, reducedMotion, isDark, motion, go, link, escape, hash, t, reflect, id, param: paramsOf(id) };
       const handle = (await spec.mount(box, source, ctx)) || {};
       mounted.set(box, handle);
       list(box, handle);

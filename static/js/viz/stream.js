@@ -9,7 +9,7 @@
 // Source (viz-grid, index.years): { years: { "2016": { "Rust": 5, ... } }, languages: [{ name, repos }] }.
 KorczisHub.viz('stream', {
   lib: 'd3',
-  mount(box, source, { palette, motion, go, link, escape, hash, t, id, reflect: ctxReflect, colour: tone }) {
+  mount(box, source, { palette, motion, go, link, escape, hash, t, id, param, reflect: ctxReflect, colour: tone }) {
     const years = Object.keys(source?.years ?? {}).map(Number).filter(Number.isFinite).sort((a, b) => a - b);
     const languages = (source?.languages ?? []).map((l) => l.name).filter((name) => name && name !== 'Other');
     if (!years.length || !languages.length) return { empty: true, items: () => [], update() {}, destroy() {} };
@@ -28,18 +28,12 @@ KorczisHub.viz('stream', {
     // The first frame already shows a configured simulation (?<id>.<key>=value): the address is
     // read here, so the entrance plays once with the restored state and the layer's set() finds
     // it set.
-    const param = (key) => new URLSearchParams(location.search).get(`${id}.${key}`);
-    const numberParam = (key, min, max) => {
-      const raw = param(key);
-      const n = Number(raw);
-      return raw !== null && raw !== '' && Number.isFinite(n) ? Math.min(max, Math.max(min, Math.round(n))) : defaults[key];
-    };
     const state = {
-      from: numberParam('from', FIRST, LAST),
-      to: numberParam('to', FIRST, LAST),
-      offset: OFFSETS.includes(param('offset')) ? param('offset') : defaults.offset,
-      top: numberParam('top', TOP_MIN, TOP_MAX),
-      isolate: choices.includes(param('isolate')) ? param('isolate') : defaults.isolate,
+      from: param.int('from', FIRST, LAST, defaults.from),
+      to: param.int('to', FIRST, LAST, defaults.to),
+      offset: param.oneOf('offset', OFFSETS, defaults.offset),
+      top: param.int('top', TOP_MIN, TOP_MAX, defaults.top),
+      isolate: param.oneOf('isolate', choices, defaults.isolate),
       cursor: null,
     };
 

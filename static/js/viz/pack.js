@@ -14,7 +14,7 @@
 // filtered to it), a tag's page.
 KorczisHub.viz('pack', {
   lib: 'd3',
-  mount(box, source, { palette, motion, go, link, escape, hash, t, id, reflect: ctxReflect, colour: tone }) {
+  mount(box, source, { palette, motion, go, link, escape, hash, t, id, param, reflect: ctxReflect, colour: tone }) {
     const langUrl = (name) => link('language', name);
     const UNITS = { repos: 'js_d3_n_repositories', stars: 'js_d3_n_stars', recent: 'js_d3_n_recent' };
     const tree = build(source);
@@ -89,17 +89,11 @@ KorczisHub.viz('pack', {
     const pathName = (n) => n.ancestors().reverse().slice(1).map((a) => a.data.name).join(' › ');
 
     const defaults = { metric: tree.metrics[0], depth: Math.min(2, tree.levels), focus: tree.focus, top: tree.count ?? 0 };
-    const param = (key) => new URLSearchParams(location.search).get(`${id}.${key}`);
-    const intParam = (key, min, max) => {
-      const raw = param(key);
-      const n = Number(raw);
-      return raw !== null && raw !== '' && Number.isFinite(n) ? Math.min(max, Math.max(min, Math.round(n))) : defaults[key];
-    };
     const state = {
-      metric: tree.metrics.includes(param('metric')) ? param('metric') : defaults.metric,
-      depth: intParam('depth', 1, tree.levels),
-      focus: param('focus') !== null && (param('focus') === '' || byId.has(param('focus'))) ? param('focus') : defaults.focus,
-      top: tree.count ? intParam('top', 1, tree.count) : 0,
+      metric: param.oneOf('metric', tree.metrics, defaults.metric),
+      depth: param.int('depth', 1, tree.levels, defaults.depth),
+      focus: param.pick('focus', (v) => v === '' || byId.has(v), defaults.focus),
+      top: tree.count ? param.int('top', 1, tree.count, defaults.top) : 0,
     };
 
     // The model: the tree sized by the metric (bubbles that count nothing leave the layout), packed

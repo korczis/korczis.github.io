@@ -33,6 +33,8 @@ Done once in the layer, both hold for every visual, including the next one.
   toggle, play, action) with translated labels; each changes what the visual simulates (time,
   physics, metric, filter, depth), never only its look. The layer keeps every value in the
   address (`?<id>.<key>=value`) and restores it on load, so a configured simulation is a link.
+  A visual whose first frame needs that state reads it through `ctx.param` (`raw`, `oneOf`,
+  `pick`, `int`), the reader the controls use, never `location.search` or `URLSearchParams`.
 - **The box decides the size.** The layer observes the box and calls `resize()` (or `update()`);
   the visual draws to whatever box it has, and plays its entrance once, not on every resize.
 - **Static is declared, with the reason**, in the registration (`static: '<reason>'`), and only
@@ -49,7 +51,8 @@ Done once in the layer, both hold for every visual, including the next one.
 
 `scripts/check-viz-layer.mjs` exits 1, naming the file and the missing piece, on a non-static
 visual without `controls` or `items`, with its own ResizeObserver, its own navigation
-(`location.href =`, `window.open(`), colour literals, or a Chart.js or Cytoscape reference.
+(`location.href =`, `window.open(`), its own address reading (`.search`, `.searchParams`,
+`URLSearchParams`), colour literals, or a Chart.js or Cytoscape reference.
 `scripts/audit-ui.mjs` (checkFrames) exits 1 when a visual on any page does not maximize to the
 viewport, does not redraw to the maximized box, does not restore with Escape and return focus,
 does not open from `?viz=<id>`, declares no parameter, or loses a parameter across a reload of its
