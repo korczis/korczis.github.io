@@ -16,11 +16,7 @@
 // own pulse); a lane's name opens its work or category page.
 KorczisHub.viz('pulse', {
   lib: 'd3',
-  mount(box, source, { palette, colour, reducedMotion, motion, go, link, escape, hash, t }) {
-    // A commit title is shown as text: terminal colour codes and other control characters are
-    // dropped (the same expression as scripts/lib/plain.mjs, which cleans the snapshot).
-    // eslint-disable-next-line no-control-regex
-    const plain = (text) => String(text || '').replace(/\x1b\[[0-?]*[ -/]*[@-~]|\x1b\][^\x07\x1b]*(?:\x07|\x1b\\)|\x1b[@-_]/g, '').replace(/[\x00-\x08\x0b-\x1f\x7f-\x9f]/g, '');
+  mount(box, source, { palette, colour, reducedMotion, motion, go, link, escape, plain, hash, t }) {
     const embedded = !source ? [] : source.groups
       ? source.groups.flatMap((grp) => (grp.commits || []).map((c) => ({ ...c, repo: grp.repo, lane: grp.lane, category: grp.category })))
       : source.beats || [];
