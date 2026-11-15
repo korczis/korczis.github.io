@@ -1,6 +1,6 @@
 {
   "schema": "korczis-hub-experience/v1",
-  "generated_at": "2026-11-15T00:11:05Z",
+  "generated_at": "2026-11-15T18:13:16Z",
   "engagements": [
     {
       "id": "e2",
@@ -349,28 +349,24 @@
   ],
   "public_work": {
     "due-diligence": [
-      "unable.cz",
       "vomaste.cz"
     ],
     "decision-support": [
       "crisis-map",
-      "openttd-prismatic-bridge",
-      "unable.cz"
+      "openttd-prismatic-bridge"
     ],
     "osint-investigation": [
       "sig",
       "crisis-map",
       "data-atlas",
       "openttd-prismatic-bridge",
-      "osint-case-ratcliffe-moscow-2026",
-      "unable.cz"
+      "osint-case-ratcliffe-moscow-2026"
     ],
     "data-integration": [
       "llm",
       "sig"
     ],
     "audit-trail": [
-      "unable.cz",
       "catharsis-as-a-service",
       "llm"
     ],
@@ -379,8 +375,7 @@
       "osint-case-ratcliffe-moscow-2026",
       "astronomists",
       "llm",
-      "prismatic-majordomus",
-      "unable.cz"
+      "prismatic-majordomus"
     ],
     "document-extraction": [
       "data-atlas"

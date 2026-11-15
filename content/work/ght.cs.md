@@ -3,7 +3,7 @@
 title = "GHT"
 description = "GHT: projekt z kategorie Nástroje, poslední commit 28. srpna 2025."
 template = "work.html"
-weight = 25
+weight = 24
 updated = "2025-08-28T19:47:43Z"
 
 [taxonomies]

@@ -3,7 +3,7 @@
 title = "tap"
 description = "tap. Active in the last 48 months; tools. A project by Tomas Korcak, active in the last 48 months."
 template = "work.html"
-weight = 35
+weight = 34
 updated = "2024-10-01T18:40:56Z"
 
 [taxonomies]

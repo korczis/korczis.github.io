@@ -3,7 +3,7 @@
 title = "cognitive-reasoning"
 description = "cognitive-reasoning. Active in the last 24 months; ai engineering."
 template = "work.html"
-weight = 31
+weight = 30
 updated = "2025-04-25T11:08:12Z"
 
 [taxonomies]

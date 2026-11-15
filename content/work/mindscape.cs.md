@@ -3,7 +3,7 @@
 title = "MindScape"
 description = "MindScape: projekt z kategorie Nástroje, poslední commit 18. února 2023."
 template = "work.html"
-weight = 43
+weight = 42
 updated = "2023-02-18T16:21:16Z"
 
 [taxonomies]

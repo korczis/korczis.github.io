@@ -3,7 +3,7 @@
 title = "prismatic"
 description = "Advanced AI Agent Framework with Enterprise-Grade BEAM VM Introspection and Consolidation Tools"
 template = "work.html"
-weight = 28
+weight = 27
 updated = "2025-08-04T17:45:57Z"
 
 [taxonomies]

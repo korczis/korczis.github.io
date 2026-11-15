@@ -3,7 +3,7 @@
 title = "korczis.gitlab.io"
 description = "Kita is a clean, elegant and simple blog theme for Zola."
 template = "work.html"
-weight = 27
+weight = 26
 updated = "2025-08-22T20:21:57Z"
 
 [taxonomies]

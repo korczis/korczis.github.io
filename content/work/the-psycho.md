@@ -3,7 +3,7 @@
 title = "the-psycho"
 description = "Advanced research framework analyzing psychological manipulation patterns, dark psychology, and defense strategies. Integrating comprehensive behavioral analysis…"
 template = "work.html"
-weight = 20
+weight = 19
 updated = "2026-02-04T23:37:05Z"
 
 [taxonomies]

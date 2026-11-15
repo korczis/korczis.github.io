@@ -3,7 +3,7 @@
 title = "corvidae"
 description = "Osobní a vědecký projekt zaměřený na pozorování, dokumentaci a vztah s volně žijící vránou šedou (Corvus cornix) jménem Šedka. Projekt klade důraz na etiku,…"
 template = "work.html"
-weight = 30
+weight = 29
 updated = "2025-05-12T01:47:02Z"
 
 [taxonomies]

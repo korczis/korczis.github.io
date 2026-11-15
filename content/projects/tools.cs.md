@@ -11,11 +11,11 @@ tags = ["Nástroje", "Gists search", "json2csv", "csv2psql", "astronomists"]
 
 [extra]
 category = "tools"
-og_title = "Nástroje: 67 repozitářů."
+og_title = "Nástroje: 66 repozitářů."
 og_image = "og/cs-category-tools.png"
 schema = "collection"
 terms = ["open-source", "javascript", "ruby", "elixir", "rust", "python", "shell", "csharp", "cpp", "swift", "typescript", "postgresql", "repository"]
-keywords = ["Nástroje", "Gists search", "json2csv", "csv2psql", "astronomists", "vomaste.cz", "the-psycho", "unable.cz", "u-tygra", "tinder-nomics", "Tomáš Korčák"]
+keywords = ["Nástroje", "Gists search", "json2csv", "csv2psql", "astronomists", "vomaste.cz", "the-psycho", "u-tygra", "tinder-nomics", "prism", "Tomáš Korčák"]
 
 [[extra.viz]]
 kind = "constellation"
@@ -28,7 +28,7 @@ tone = "night"
 +++
 Malé, ostré nástroje pro příkazovou řádku a indexy: převody dat, CSV do SQL, hledání v gistech.
 
-Kategorie má 67 repozitářů; nejčastějšími jazyky jsou [JavaScript](@/glossary/javascript.cs.md), [Ruby](@/glossary/ruby.cs.md), [Elixir](@/glossary/elixir.cs.md) a [Rust](@/glossary/rust.cs.md). Vybrané projekty: **Gists search**, **json2csv** a **csv2psql**.
+Kategorie má 66 repozitářů; nejčastějšími jazyky jsou [JavaScript](@/glossary/javascript.cs.md), [Ruby](@/glossary/ruby.cs.md), [Elixir](@/glossary/elixir.cs.md) a [Rust](@/glossary/rust.cs.md). Vybrané projekty: **Gists search**, **json2csv** a **csv2psql**.
 
 Klíčový pojem: [Open source](@/glossary/open-source.cs.md).
 

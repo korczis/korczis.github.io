@@ -3,7 +3,7 @@
 title = "pissaleck"
 description = "pissaleck: projekt z kategorie Nástroje, poslední commit 27. dubna 2024."
 template = "work.html"
-weight = 38
+weight = 37
 updated = "2024-04-27T13:20:36Z"
 
 [taxonomies]

@@ -3,7 +3,7 @@
 title = "prism"
 description = "PRISM is an advanced system for behavioral analysis, pattern recognition, and social modeling using cutting-edge artificial intelligence and machine learning…"
 template = "work.html"
-weight = 21
+weight = 20
 updated = "2026-02-04T23:37:02Z"
 
 [taxonomies]

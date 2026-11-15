@@ -26,7 +26,8 @@ window = 100
 # name them, and a hand page may name only these (check-front-matter)
 top_languages = 4
 mirrors = ["foremost", "libnids", "libnet", "ucl", "upx", "ev", "petitboot", "libtwin", "mongo-cxx-driver", "cyclos", "raspberry-pi", "tsa-keys"]
-hidden = ["atp", "microcrawler-crawler-youjizz-com", "the-shit", "chujovinky", "empty-repo"]
+# unable.cz must never run (owner, 2026-11-15): it is not listed and its site is never linked.
+hidden = ["atp", "microcrawler-crawler-youjizz-com", "the-shit", "chujovinky", "empty-repo", "unable.cz"]
 
 # The recent window (scripts/fetch-recent.mjs, data/recent.json, the /work/ pages): every original
 # repository with a commit in the last periods[-1] months, each in the smallest period (months)

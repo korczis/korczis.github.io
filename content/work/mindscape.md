@@ -3,7 +3,7 @@
 title = "MindScape"
 description = "MindScape is an AI-powered platform for mental health diagnosis and treatment. It uses machine learning algorithms and virtual reality technology to create…"
 template = "work.html"
-weight = 43
+weight = 42
 updated = "2023-02-18T16:21:16Z"
 
 [taxonomies]

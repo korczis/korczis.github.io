@@ -3,7 +3,7 @@
 title = "pdf_renderer"
 description = "pdf_renderer: projekt z kategorie Nástroje, hlavní jazyk Python, poslední commit 25. března 2024."
 template = "work.html"
-weight = 42
+weight = 41
 updated = "2024-03-25T16:33:15Z"
 
 [taxonomies]

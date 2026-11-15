@@ -10,7 +10,7 @@
 - [Projects](https://korczis.github.io/projects/): Every project in the catalogue: what it is, what it is built with, whether it is live, and whether Majordomus supervises it.
 - [Repositories](https://korczis.github.io/repositories/): Every original public repository on GitHub and GitLab, merged by name, with its inferred category, language and both links.
 - [Stack](https://korczis.github.io/stack/): The tools and practices behind every project, and how this site itself is built, checked and deployed.
-- [Recent work](https://korczis.github.io/work/): Every project with a commit in the last 48 months, by period (12, 24, 48): 44 repositories on GitHub and GitLab, each with its own page.
+- [Recent work](https://korczis.github.io/work/): Every project with a commit in the last 48 months, by period (12, 24, 48): 43 repositories on GitHub and GitLab, each with its own page.
 - [Tomáš Korčák (cs)](https://korczis.github.io/cs/): Software, který svou práci dokládá: AI agenti, kteří prokazují výsledky, poctivé přístroje v prohlížeči, ověřitelné znalosti.
 
 ## AI engineering
@@ -66,7 +66,7 @@ Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist s
 
 ## Every original repository
 
-> 212 repositories on GitHub and GitLab where the owner wrote at least half of the commits,
+> 211 repositories on GitHub and GitLab where the owner wrote at least half of the commits,
 > derived 2026-11-14T23:17:37Z. Forks and mirrors (283) are not listed.
 
 ### AI engineering (5)
@@ -244,12 +244,11 @@ Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist s
 - malina: Raspberry Pi playground (Shell, 2013). GitHub https://github.com/korczis/malina; GitLab https://gitlab.com/korczis/malina
 - sandbox: Something just for fun. This is place where I play with new techs... (2012). GitHub https://github.com/korczis/sandbox; GitLab https://gitlab.com/korczis/sandbox
 
-### Tools (67)
+### Tools (66)
 
 - astronomists (Python, 2026). article https://korczis.github.io/work/astronomists/; GitHub https://github.com/korczis/astronomists; site https://korczis.github.io/astronomists/
 - vomaste.cz (JavaScript, 2026). article https://korczis.github.io/work/vomaste-cz/; GitHub https://github.com/korczis/vomaste.cz; site https://korczis.github.io/vomaste.cz/
 - the-psycho (2025). article https://korczis.github.io/work/the-psycho/; GitLab https://gitlab.com/korczis/the-psycho
-- unable.cz (JavaScript, 2026). article https://korczis.github.io/work/unable-cz/; GitHub https://github.com/korczis/unable.cz
 - gists-search: Catalogue, enrichment and search for a mirror of korczis's GitHub gists (Python, 2026). article https://korczis.github.io/work/gists-search/; GitHub https://github.com/korczis/gists-search; site https://korczis.github.io/gists-search/
 - u-tygra (JavaScript, 2024). article https://korczis.github.io/work/u-tygra/; GitHub https://github.com/korczis/u-tygra; GitLab https://gitlab.com/korczis/u-tygra; site https://korczis.github.io/u-tygra/
 - tinder-nomics (2025). article https://korczis.github.io/work/tinder-nomics/; GitLab https://gitlab.com/korczis/tinder-nomics

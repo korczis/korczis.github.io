@@ -3,7 +3,7 @@
 title = "pissaleck"
 description = "Anything about everything and vice versa. Active in the last 48 months; tools."
 template = "work.html"
-weight = 38
+weight = 37
 updated = "2024-04-27T13:20:36Z"
 
 [taxonomies]

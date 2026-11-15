@@ -3,7 +3,7 @@
 title = "corvidae"
 description = "corvidae: projekt z kategorie Nástroje, hlavní jazyk TeX, poslední commit 12. května 2025."
 template = "work.html"
-weight = 30
+weight = 29
 updated = "2025-05-12T01:47:02Z"
 
 [taxonomies]

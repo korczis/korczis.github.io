@@ -42,8 +42,8 @@
    "png": "11ba9e1bbf422019"
   },
   "category-tools": {
-   "svg": "90e8dfb15c71f6c8",
-   "png": "0ab8ec0133baf1c4"
+   "svg": "e8b12525eff71dde",
+   "png": "4977a72573c7afbc"
   },
   "category-web": {
    "svg": "fad3e4ab8dd8db92",
@@ -90,8 +90,8 @@
    "png": "a7f825ba08a39dd9"
   },
   "cs-category-tools": {
-   "svg": "e5eb21419f0cc7c0",
-   "png": "dee94b811a678224"
+   "svg": "e61e282659b75624",
+   "png": "71ff1e614b1fbe0f"
   },
   "cs-category-web": {
    "svg": "95cbd931259c7259",
@@ -362,8 +362,8 @@
    "png": "77580867779fe9a0"
   },
   "cs-work": {
-   "svg": "4f349fd5160001e3",
-   "png": "7f568e8bc8a6e7af"
+   "svg": "9a6c82cd25190b5d",
+   "png": "78914fc0dfb8b9f3"
   },
   "cs-work-algoglyph": {
    "svg": "c77dca6678c872d8",
@@ -532,10 +532,6 @@
   "cs-work-u-tygra": {
    "svg": "0b531ba54d88c116",
    "png": "240cf749f8a63fa0"
-  },
-  "cs-work-unable-cz": {
-   "svg": "219bde78fb79d6e5",
-   "png": "4886d10342d3b7ff"
   },
   "cs-work-vomaste-cz": {
    "svg": "10ce7f6d2925df28",
@@ -806,8 +802,8 @@
    "png": "be2ca00fb0e7a54f"
   },
   "work": {
-   "svg": "e238e988210f8670",
-   "png": "9f4d364a29ca25d6"
+   "svg": "6c87a1ca2ae5ef2b",
+   "png": "6211a2a5c68f324c"
   },
   "work-algoglyph": {
    "svg": "f592b33eaf4b55e7",
@@ -976,10 +972,6 @@
   "work-u-tygra": {
    "svg": "41e0c62a5787cba9",
    "png": "e9cce043ab7750d6"
-  },
-  "work-unable-cz": {
-   "svg": "f1ce72ae7384178c",
-   "png": "2869ead63a8c4424"
   },
   "work-vomaste-cz": {
    "svg": "cc962242aa3bd662",

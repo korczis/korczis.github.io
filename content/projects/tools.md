@@ -11,11 +11,11 @@ tags = ["Tools", "Gists search", "json2csv", "csv2psql", "astronomists"]
 
 [extra]
 category = "tools"
-og_title = "Tools: 67 repositories."
+og_title = "Tools: 66 repositories."
 og_image = "og/category-tools.png"
 schema = "collection"
 terms = ["open-source", "javascript", "ruby", "elixir", "rust", "python", "shell", "csharp", "cpp", "swift", "typescript", "postgresql", "repository"]
-keywords = ["Tools", "Gists search", "json2csv", "csv2psql", "astronomists", "vomaste.cz", "the-psycho", "unable.cz", "u-tygra", "tinder-nomics", "Tomas Korcak"]
+keywords = ["Tools", "Gists search", "json2csv", "csv2psql", "astronomists", "vomaste.cz", "the-psycho", "u-tygra", "tinder-nomics", "prism", "Tomas Korcak"]
 
 [[extra.viz]]
 kind = "constellation"
@@ -28,7 +28,7 @@ tone = "night"
 +++
 Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist search.
 
-The category holds 67 original repositories, written most often in [JavaScript](@/glossary/javascript.md), [Ruby](@/glossary/ruby.md), [Elixir](@/glossary/elixir.md) and [Rust](@/glossary/rust.md). Featured: **Gists search**, **json2csv** and **csv2psql**.
+The category holds 66 original repositories, written most often in [JavaScript](@/glossary/javascript.md), [Ruby](@/glossary/ruby.md), [Elixir](@/glossary/elixir.md) and [Rust](@/glossary/rust.md). Featured: **Gists search**, **json2csv** and **csv2psql**.
 
 Key concept: [Open source](@/glossary/open-source.md).
 
