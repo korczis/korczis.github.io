@@ -3,7 +3,7 @@ schema: adr/v1
 id: adr-0002
 kind: adr
 title: Pages runs on a dedicated lundra runner when hosted runners are saturated
-status: proposed
+status: accepted
 date: 2026-11-12
 tags:
   - delivery
@@ -55,3 +55,11 @@ chosen by the owner via AskUserQuestion: "Runner on lundra (Recommended)").
   `home-korczis-hub` and `runner-korczis-hub/_work`.
 - Removal: `sudo ./svc.sh uninstall` and `./config.sh remove` in the runner directory, then
   `gh variable delete PAGES_RUNNER`. Pages falls back to hosted runners with no other change.
+
+## Acceptance
+
+Accepted by the owner on 2026-11-15, answering in Claude Code session
+8ab4cca0-a58f-4aec-a06b-8c8a1a13b6c5 at 2026-11-15T16:09Z.
+
+- Question: "Which of the five proposed ADRs in korczis.github.io should I mark accepted? (0006, the NDA-mined experience section, is already active.)"
+- Answer: "0001 Zola + Flowbite Pro, 0002 lundra runner, 0003 all public repos, 0004 + 0005"

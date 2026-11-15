@@ -3,7 +3,7 @@ schema: adr/v1
 id: adr-0006
 kind: adr
 title: Experience on the landing page is mined from private sources into anonymised facts, guarded by an NDA gate
-status: proposed
+status: accepted
 date: 2026-11-14
 tags:
   - content
@@ -66,3 +66,11 @@ the NDA. Even a list of the names to avoid, committed here, would disclose the c
   fails closed. Set from the file alone it held 4 of the 14 names (2026-11-15).
 - Mining runs only on the owner's machine (the sources are there); CI checks the committed result.
 - Engagements without a local source show only what the owner declares in the private map.
+
+## Acceptance
+
+Accepted by the owner on 2026-11-15, answering in Claude Code session
+8ab4cca0-a58f-4aec-a06b-8c8a1a13b6c5 at 2026-11-15T16:13Z.
+
+- Question: "Correction: ADR 0006 (the experience section on the landing page is mined from private sources into anonymised facts, guarded by an NDA gate) is still 'proposed', not active as my previous question said. Should I mark it accepted as well?"
+- Answer: "Accept 0006"

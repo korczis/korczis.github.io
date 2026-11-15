@@ -3,7 +3,7 @@ schema: adr/v1
 id: adr-0001
 kind: adr
 title: Personal hub on Zola with Flowbite Pro, deployed to GitHub Pages
-status: proposed
+status: accepted
 date: 2026-11-12
 tags:
   - delivery
@@ -76,3 +76,11 @@ Answer: "Yes (Recommended)".
   MAJORDOMUS_KIT_EVIDENCE_FLOWBITE_PRO -R korczis/korczis.github.io`). Agents may not write it.
 - A push to `master` is a production deploy.
 - The build needs Zola and Node (Tailwind CLI) in CI; both are pinned in the workflow.
+
+## Acceptance
+
+Accepted by the owner on 2026-11-15, answering in Claude Code session
+8ab4cca0-a58f-4aec-a06b-8c8a1a13b6c5 at 2026-11-15T16:09Z.
+
+- Question: "Which of the five proposed ADRs in korczis.github.io should I mark accepted? (0006, the NDA-mined experience section, is already active.)"
+- Answer: "0001 Zola + Flowbite Pro, 0002 lundra runner, 0003 all public repos, 0004 + 0005"
