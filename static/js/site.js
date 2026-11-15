@@ -116,6 +116,10 @@
 
   const ESCAPES = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };
   const escape = (text) => String(text ?? '').replace(/[&<>"']/g, (c) => ESCAPES[c]);
+  // Measured text is shown as text: terminal colour codes ("\x1b[38;2;…m" from a coloured pager)
+  // and other control characters are dropped. The build's copy is scripts/lib/plain.mjs.
+  // eslint-disable-next-line no-control-regex
+  const plain = (text) => String(text ?? '').replace(/\x1b\[[0-?]*[ -/]*[@-~]|\x1b\][^\x07\x1b]*(?:\x07|\x1b\\)|\x1b[@-_]/g, '').replace(/[\x00-\x08\x0b-\x1f\x7f-\x9f]/g, '');
 
   // FNV-1a: a stable 32-bit hash, so a seeded layout or colour is the same on every visit.
   function hash(text) {
@@ -616,7 +620,7 @@
         return { ...p, dark: true, page: p.night.shadow, surface: p.night.shadow, strong: p.night.ink, text: p.night.text, muted: p.night.muted, grid: p.night.line };
       };
       const id = vizId(box);
-      const ctx = { palette: tonePalette, colour, reducedMotion, isDark, motion, go, link, escape, hash, t, reflect, id, param: paramsOf(id) };
+      const ctx = { palette: tonePalette, colour, reducedMotion, isDark, motion, go, link, escape, plain, hash, t, reflect, id, param: paramsOf(id) };
       const handle = (await spec.mount(box, source, ctx)) || {};
       mounted.set(box, handle);
       list(box, handle);
@@ -861,5 +865,5 @@
     };
   }
 
-  window.KorczisHub = { viz, lib, data, palette, colour, reducedMotion, isDark, motion, go, link, escape, hash, base, home, t, tooltip, github: document.documentElement.dataset.github || '', locale: i18n.locale || 'en-GB' };
+  window.KorczisHub = { viz, lib, data, palette, colour, reducedMotion, isDark, motion, go, link, escape, plain, hash, base, home, t, tooltip, github: document.documentElement.dataset.github || '', locale: i18n.locale || 'en-GB' };
 })();

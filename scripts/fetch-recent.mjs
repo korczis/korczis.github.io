@@ -19,6 +19,7 @@ import { promisify } from 'node:util';
 import { GitLabBudgetError, gitlabClient } from './lib/gitlab.mjs';
 import { identity, pool, readToml } from './lib/derive.mjs';
 import { cliArgs } from './lib/cli.mjs';
+import { plain } from './lib/plain.mjs';
 
 cliArgs({ '--derive': true, '--check': true });
 
@@ -49,10 +50,11 @@ function row(r, detail, now) {
     language: r.language,
     created_at: r.created_at,
     last_commit: detail.last_commit,
-    last_message: detail.last_message,
-    commits: detail.commits ?? [],
+    // Plain here, so a measurement kept from an earlier run is cleaned by --derive too.
+    last_message: plain(detail.last_message),
+    commits: (detail.commits ?? []).map((c) => ({ ...c, message: plain(c.message) })),
     languages: detail.languages ?? [],
-    readme: detail.readme,
+    readme: plain(detail.readme),
     topics: r.topics ?? [],
     hosts: r.hosts,
     site: r.site,

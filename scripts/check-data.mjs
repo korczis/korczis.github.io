@@ -10,6 +10,7 @@ import { parse } from 'smol-toml';
 import { limits } from './lib/derive.mjs';
 import { inferCategory, ruleFindings } from './lib/repos.mjs';
 import { cliArgs } from './lib/cli.mjs';
+import { CONTROL } from './lib/plain.mjs';
 
 cliArgs();
 
@@ -139,11 +140,24 @@ function conforms(value, schema, at) {
 conforms(cv, cvSchema, 'cv');
 for (const [i, r] of (cv.roles ?? []).entries()) if (r.end && r.end < r.start) fail('data/cv.toml', `roles[${i}] ends before it starts`);
 
+// Measured text is shown as text: no terminal colour code or other control character in any
+// string of the derived data (scripts/lib/plain.mjs cleans them where they are measured).
+const DATA = ['experience', 'github', 'index', 'og', 'recent'];
+let strings = 0;
+const walk = (value, at, file) => {
+  if (typeof value === 'string') {
+    strings += 1;
+    if (CONTROL.test(value)) fail(`data/${file}.json`, `${at} holds a control character: ${JSON.stringify(value.slice(0, 60))}`);
+  } else if (Array.isArray(value)) value.forEach((v, i) => walk(v, `${at}[${i}]`, file));
+  else if (value && typeof value === 'object') for (const [k, v] of Object.entries(value)) walk(v, `${at}.${k}`, file);
+};
+for (const file of DATA) walk(JSON.parse(readFileSync(join(ROOT, `data/${file}.json`), 'utf8')), file, file);
+
 const ageDays = (Date.now() - Date.parse(snapshot.generated_at)) / 86400000;
 if (findings.length) {
   for (const finding of findings) console.error(`✗ ${finding}`);
   process.exit(1);
 }
 console.log(
-  `data: ${seen.size} projects, ${fixtureCount} category fixtures, snapshot ${snapshot.generated_at} (${ageDays.toFixed(1)} days old), PASS`,
+  `data: ${seen.size} projects, ${fixtureCount} category fixtures, snapshot ${snapshot.generated_at} (${ageDays.toFixed(1)} days old), ${strings} strings plain, PASS`,
 );
