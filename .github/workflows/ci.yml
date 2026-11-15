@@ -79,6 +79,9 @@ jobs:
           git config core.hooksPath .githooks
           majordomus version
           majordomus doctor
+      # The skill the fleet pack ships is proven here (.ai/repo/ci/gates.yaml, gate skills-proof).
+      - name: majordomus skills verify
+        run: majordomus skills verify
 
   validate:
     name: Validate, build and audit

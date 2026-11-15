@@ -1,0 +1,28 @@
+# The CI model of this repository, read by majordomus (doctor, skills verify): which gates
+# exist, which job of .github/workflows/ci.yml runs each, and which changed paths select
+# them. This site plans nothing narrower than everything: every push and pull request runs
+# every job, so the one class below matches every path and escalates to the full plan. The
+# gates themselves are listed in scripts/gates.mjs (the manifest the validate job runs);
+# this file names the jobs, not a second copy of that list.
+version: 1
+gates:
+  - id: commits
+    job: commits
+    runs: scripts/lint-commits.sh
+    summary: every commit subject on the branch is a conventional commit
+  - id: doctor
+    job: supervision
+    runs: majordomus doctor
+    summary: the .ai/ layer, its rules, the hooks and the licence evidence are consistent
+  - id: skills-proof
+    job: supervision
+    runs: majordomus skills verify
+    summary: every active skill is valid, named by a test and invoked; an orphan fails
+  - id: validate
+    job: validate
+    runs: node scripts/gates.mjs run --ci --keep-going
+    summary: every offline gate of scripts/gates.mjs, the build and the browser audit
+classes:
+  - id: everything
+    paths: ['**']
+    gates: full
