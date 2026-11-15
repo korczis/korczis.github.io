@@ -330,10 +330,15 @@ const PROJECT_SITES = new Set(
 // A link's path inside this build, or null when it leaves the build: another origin, or a
 // same-origin path whose first segment this build does not have (another repository's GitHub Pages
 // site, korczis.github.io/<repo>/, checked by check-live, not against this build).
+// A link to the production address (zola.toml base_url) is internal too: the audit serves the site
+// under another origin, so such a link once passed here and failed only in production (a Czech
+// page linking the English home through a repository's own site, 2026-11-15).
+const PRODUCTION = new URL(`${String(CONFIG.base_url).replace(/\/+$/, '')}/`);
 function internal(abs) {
   const url = new URL(abs);
-  if (url.origin !== new URL(BASE).origin) return null;
-  const basePath = new URL(BASE).pathname;
+  const home = url.origin === new URL(BASE).origin ? new URL(BASE) : url.origin === PRODUCTION.origin ? PRODUCTION : null;
+  if (!home) return null;
+  const basePath = home.pathname;
   let rel = decodeURIComponent(url.pathname);
   rel = rel.startsWith(basePath) ? rel.slice(basePath.length) : rel.replace(/^\//, '');
   const first = rel.split('/').filter(Boolean)[0];

@@ -92,7 +92,9 @@
             <span class="flex items-center gap-3">
               {%- if r.hosts.github is defined %}<a href="{{ r.hosts.github }}" class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">{{ <icon name="github" class="h-4 w-4" /> }}<span class="sr-only">{{ r.name }} {{ trans(key="on_github_2", lang=lang) | safe }}</span></a>{% endif %}
               {%- if r.hosts.gitlab is defined %}<a href="{{ r.hosts.gitlab }}" class="text-xs font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">GL<span class="sr-only"> {{ r.name }} {{ trans(key="on_gitlab_2", lang=lang) | safe }}</span></a>{% endif %}
-              {%- if r.site %}<a href="{{ r.site }}" class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">{{ <icon name="globe" class="h-4 w-4" /> }}<span class="sr-only">{{ r.name }} {{ trans(key="live_site_2", lang=lang) | safe }}</span></a>{% endif %}
+              {#- A repository whose site is this site's home (the profile repository) links the home in
+                  the page's language; project sites on the same origin are other builds and stay. #}
+              {%- if r.site %}{%- set own = "https://" ~ config.extra.github ~ ".github.io" %}{% set rsite = r.site %}{% if r.site == own or r.site == own ~ "/" %}{% set rsite = config.base_url ~ lp ~ "/" %}{% endif %}<a href="{{ rsite }}" class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">{{ <icon name="globe" class="h-4 w-4" /> }}<span class="sr-only">{{ r.name }} {{ trans(key="live_site_2", lang=lang) | safe }}</span></a>{% endif %}
             </span>
           </td>
         </tr>

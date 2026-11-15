@@ -36,7 +36,8 @@
       </div>
       {%- endif %}
       <div class="mt-5 flex flex-wrap gap-3">
-        {%- if r.site %}{{ <button label={trans(key="open_the_site", lang=lang)} href={r.site} icon_after="external" /> }}{% endif %}
+        {#- This site's own home links in the page's language (as on the repositories page). #}
+        {%- if r.site %}{%- set own = "https://" ~ config.extra.github ~ ".github.io" %}{% set rsite = r.site %}{% if r.site == own or r.site == own ~ "/" %}{% set rsite = config.base_url ~ lp ~ "/" %}{% endif %}{{ <button label={trans(key="open_the_site", lang=lang)} href={rsite} icon_after="external" /> }}{% endif %}
         {%- if r.hosts.github is defined %}{{ <button label="GitHub" href={r.hosts.github} variant="secondary" icon="github" /> }}{% endif %}
         {%- if r.hosts.gitlab is defined %}{{ <button label="GitLab" href={r.hosts.gitlab} variant="secondary" icon="code" /> }}{% endif %}
       </div>
