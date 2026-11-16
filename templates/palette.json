@@ -35,5 +35,9 @@
   {%- if r.hosts.github is defined %}{% set u = r.hosts.github %}{% else %}{% set u = r.hosts.gitlab %}{% endif %}
   {"kind": {{ trans(key="kind_repository", lang=lang) | json_encode | safe }}, "name": {{ r.name | json_encode | safe }}, "hint": {% if r.description %}{{ r.description | json_encode | safe }}{% else %}{{ (trans(key="kind_repository", lang=lang) ~ " · " ~ r.category) | json_encode | safe }}{% endif %}, "terms": {% if r.language %}{{ (r.language ~ " " ~ r.category) | json_encode | safe }}{% else %}{{ r.category | json_encode | safe }}{% endif %}, "url": {{ u | json_encode | safe }}},
   {%- endif %}{% endfor %}
-  {"kind": {{ trans(key="kind_page", lang=lang) | json_encode | safe }}, "name": "llms.txt", "hint": {{ trans(key="hint_llms", lang=lang) | json_encode | safe }}, "url": {{ (config.base_url ~ "/llms.txt") | json_encode | safe }}}
+  {#- The topbar's interfaces menu, tile for tile (data/nav.toml [[interfaces]]). #}
+  {%- for t in pnav.interfaces %}
+  {%- if t.swagger is defined %}{% set u = config.extra.swagger_ui ~ config.base_url ~ "/openapi.json" %}{% elif t.file is defined %}{% set u = config.base_url ~ "/" ~ t.file %}{% else %}{% set u = config.base_url ~ lp ~ t.path %}{% endif %}
+  {"kind": {{ trans(key="kind_interface", lang=lang) | json_encode | safe }}, "name": {{ trans(key=t.key, lang=lang) | json_encode | safe }}, "hint": {{ trans(key=t.hint, lang=lang) | json_encode | safe }}, "url": {{ u | json_encode | safe }}}{% if not loop.last %},{% endif %}
+  {%- endfor %}
 ]

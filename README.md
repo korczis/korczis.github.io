@@ -58,6 +58,7 @@ Prerequisites (generated from the files that pin them):
 | `static/llms.txt` | Derived from the catalogue (`npm run llms`) |
 | `static/ai.json` | The Majordomus layer (`.ai/`) as Majordomus indexes it: every object with its MCP resource URI, and the capability counts; measured with `npm run interfaces -- --measure`, stamped with the tracked `.ai/` tree |
 | `static/openapi.json` | OpenAPI 3.1 of every machine-readable file the site publishes, each summary read from the file (`npm run interfaces`) |
+| `static/.well-known/api-catalog` | The API catalogue of RFC 9727 (a linkset): `openapi.json` as service-desc, /interfaces/ as service-doc, `ai.json` as describedby; every page's head links all three (RFC 8631). The deploy artefacts keep this hidden directory (`include-hidden-files`) |
 | `scripts/` | Data, vendoring and every gate; `gates.mjs` is the one list of gates, `lib/cli.mjs` the shared command line, `lib/forge.mjs` the one connection to GitHub and GitLab |
 | `.ai/` | The Majordomus layer: policy, ADRs, rules under `.ai/repo/rules/project/` |
 

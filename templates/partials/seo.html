@@ -75,6 +75,11 @@
   <meta name="twitter:image" content="{{ img }}">
   <meta name="twitter:image:alt" content="{{ og_t }}">
   <link rel="sitemap" type="application/xml" href="{{ get_url(path='sitemap.xml') }}">
+  {#- API discovery (RFC 8631, RFC 9727): the description of the published files, the Majordomus
+      layer and the catalogue that names both; scripts/build-interfaces.mjs derives all three. #}
+  <link rel="service-desc" type="application/openapi+json" href="{{ get_url(path='openapi.json') }}">
+  <link rel="describedby" type="application/json" href="{{ get_url(path='ai.json') }}">
+  <link rel="api-catalog" href="{{ get_url(path='.well-known/api-catalog') }}">
   <link rel="me" href="https://github.com/{{ config.extra.github }}">
 {%- if indexable %}
 {%- set person = config.base_url ~ "/#person" %}

@@ -11,14 +11,18 @@
 //   static/openapi.json  an OpenAPI 3.1 description of every machine-readable file the site
 //                        publishes (static/*.json, *.txt, schemas/*.json, sitemap.xml), each
 //                        summary read from the file itself; Swagger UI renders it.
+//   static/.well-known/api-catalog
+//                        the API catalogue of RFC 9727 (a linkset, RFC 9264): the site's anchor with
+//                        its service-desc (openapi.json), service-doc (/interfaces/) and describedby
+//                        (ai.json); every page links all three from its head (RFC 8631).
 //
-// usage: node scripts/build-interfaces.mjs            write static/openapi.json from the published files
-//        node scripts/build-interfaces.mjs --measure  ask Majordomus for the layer, then write both files
-//        node scripts/build-interfaces.mjs --check    exit 1 if either file is stale, or if .ai/ changed
+// usage: node scripts/build-interfaces.mjs            write openapi.json and api-catalog from the published files
+//        node scripts/build-interfaces.mjs --measure  ask Majordomus for the layer, then write every file
+//        node scripts/build-interfaces.mjs --check    exit 1 if a file is stale, or if .ai/ changed
 //                                                     since static/ai.json was measured
 import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
-import { existsSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { ROOT, identity, report } from './lib/derive.mjs';
 import { cliArgs } from './lib/cli.mjs';
@@ -26,6 +30,7 @@ import { cliArgs } from './lib/cli.mjs';
 const opts = cliArgs({ '--check': true, '--measure': true }, { derived: true });
 const AI = join(ROOT, 'static/ai.json');
 const OPENAPI = join(ROOT, 'static/openapi.json');
+const CATALOG = join(ROOT, 'static/.well-known/api-catalog');
 const me = identity();
 const text = (value) => `${JSON.stringify(value, null, 1)}\n`;
 
@@ -85,6 +90,7 @@ function summaryOf(rel, body) {
     return j.description ?? j.title ?? j.name ?? j.schema ?? rel;
   }
   if (rel.endsWith('.xml')) return 'Every page of the site, in both languages (sitemaps.org)';
+  if (rel === '.well-known/api-catalog') return 'The API catalogue (RFC 9727): where the description, the documentation and the Majordomus layer are';
   const lines = body.split('\n');
   const title = lines.find((l) => l.startsWith('# '))?.slice(2).trim();
   const lead = lines.find((l) => l.startsWith('> '))?.slice(2).trim();
@@ -96,8 +102,8 @@ function openapi() {
   const walk = (dir, prefix = '') => {
     for (const entry of readdirSync(join(ROOT, dir), { withFileTypes: true })) {
       const rel = `${prefix}${entry.name}`;
-      if (entry.isDirectory() && entry.name === 'schemas') walk(join(dir, entry.name), `${rel}/`);
-      else if (entry.isFile() && /\.(json|txt)$/.test(entry.name) && rel !== 'openapi.json') files.push(rel);
+      if (entry.isDirectory() && (entry.name === 'schemas' || entry.name === '.well-known')) walk(join(dir, entry.name), `${rel}/`);
+      else if (entry.isFile() && (/\.(json|txt)$/.test(entry.name) || rel === '.well-known/api-catalog') && rel !== 'openapi.json') files.push(rel);
     }
   };
   walk('static');
@@ -109,14 +115,13 @@ function openapi() {
         operationId: rel.replace(/[^a-z0-9]+/gi, '_').replace(/^_|_$/g, ''),
         summary: summaryOf(rel, body),
         tags: [rel.startsWith('schemas/') ? 'schemas' : rel.endsWith('.txt') ? 'text' : 'data'],
-        responses: { 200: { description: 'The file, as published', content: { [type]: { schema: type === 'application/json' ? { type: 'object' } : { type: 'string' } } } } },
+        responses: { 200: { description: 'The file, as published', content: { [type]: { schema: /json$/.test(type) ? { type: 'object' } : { type: 'string' } } } } },
       },
     };
   };
-  for (const rel of files) {
-    const body = readFileSync(join(ROOT, 'static', rel), 'utf8');
-    add(rel, body, rel.endsWith('.json') ? (rel.startsWith('schemas/') ? 'application/schema+json' : 'application/json') : 'text/plain');
-  }
+  const typeOf = (rel) => (rel === '.well-known/api-catalog' ? 'application/linkset+json'
+    : rel.startsWith('schemas/') ? 'application/schema+json' : rel.endsWith('.json') ? 'application/json' : 'text/plain');
+  for (const rel of files) add(rel, readFileSync(join(ROOT, 'static', rel), 'utf8'), typeOf(rel));
   add('sitemap.xml', '', 'application/xml');
   return {
     openapi: '3.1.0',
@@ -135,7 +140,27 @@ function openapi() {
   };
 }
 
+// RFC 9727: one linkset entry for the site, naming its machine description, its documentation for
+// people in every language, and the Majordomus layer.
+function catalog() {
+  return {
+    linkset: [{
+      anchor: `${me.base}/`,
+      'service-desc': [{ href: `${me.base}/openapi.json`, type: 'application/openapi+json' }],
+      'service-doc': [{ href: `${me.base}/interfaces/`, type: 'text/html', hreflang: ['en'] }, { href: `${me.base}/cs/interfaces/`, type: 'text/html', hreflang: ['cs'] }],
+      describedby: [{ href: `${me.base}/ai.json`, type: 'application/json', title: 'The Majordomus layer (.ai/) with MCP resource URIs' }],
+    }],
+  };
+}
+
 const findings = [];
+const linkset = text(catalog());
+if (opts.check) {
+  if (!existsSync(CATALOG) || readFileSync(CATALOG, 'utf8') !== linkset) findings.push('static/.well-known/api-catalog is stale');
+} else {
+  mkdirSync(join(ROOT, 'static/.well-known'), { recursive: true });
+  writeFileSync(CATALOG, linkset);
+}
 let ai = existsSync(AI) ? JSON.parse(readFileSync(AI, 'utf8')) : null;
 if (opts.measure) {
   ai = measure();

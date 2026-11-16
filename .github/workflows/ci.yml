@@ -123,3 +123,5 @@ jobs:
           name: site
           path: public
           retention-days: 7
+          # public/.well-known/api-catalog is a hidden directory; the artefact keeps it.
+          include-hidden-files: true

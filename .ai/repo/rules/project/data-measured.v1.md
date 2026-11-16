@@ -52,7 +52,9 @@ stale silently; a measured snapshot with a date stays honest even when it ages.
   Majordomus's own index of `.ai/` (`majordomus run objects.list`, `capabilities.list`), stamped
   with the tracked `.ai/` tree, so a change to `.ai/` that was not indexed again fails offline;
   `static/openapi.json` describes every published machine-readable file, each summary read from
-  the file. /interfaces/ and the topbar's interfaces menu render only these two files.
+  the file; `static/.well-known/api-catalog` (RFC 9727) names both and /interfaces/, and every
+  page's head links them (`service-desc`, `describedby`, `api-catalog`). /interfaces/, the topbar's
+  interfaces menu and the command palette render only these files.
 
 # Failure behaviour
 
