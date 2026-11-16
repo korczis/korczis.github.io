@@ -3,8 +3,8 @@
 title = "Sonic Playground"
 description = "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita."
 template = "work.html"
-weight = 6
-updated = "2026-11-15T20:37:21Z"
+weight = 2
+updated = "2026-11-16T04:27:33Z"
 
 [taxonomies]
 tags = ["Média a umění", "Python", "JavaScript", "HTML"]
@@ -26,9 +26,9 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**Sonic Playground** je projekt z kategorie [Média a umění](@/projects/media.cs.md). Jeho kód je napsaný hlavně v jazyce [Python](@/glossary/python.cs.md) (40,5 %), dále [JavaScript](@/glossary/javascript.cs.md), [HTML](@/glossary/html.cs.md) a [Shell](@/glossary/shell.cs.md).
+**Sonic Playground** je projekt z kategorie [Média a umění](@/projects/media.cs.md). Jeho kód je napsaný hlavně v jazyce [Python](@/glossary/python.cs.md) (40,3 %), dále [JavaScript](@/glossary/javascript.cs.md), [HTML](@/glossary/html.cs.md) a [Shell](@/glossary/shell.cs.md).
 
-[Repozitář](@/glossary/repository.cs.md) vznikl 12. listopadu 2026; poslední [commit](@/glossary/commit.cs.md) je z 15. listopadu 2026. Zní „Merge branch 'feature/visualizer': a Winamp-style visualiser, full screen and behind the hero, and a turning mosaic“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+[Repozitář](@/glossary/repository.cs.md) vznikl 12. listopadu 2026; poslední [commit](@/glossary/commit.cs.md) je z 16. listopadu 2026. Zní „Merge branch 'feature/visualizer-background': a calm picture behind every page while the player plays“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 
 Je postavený na [Elixir](@/glossary/elixir.cs.md).
 

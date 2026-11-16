@@ -3,8 +3,8 @@
 title = "Sonic Playground"
 description = "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme"
 template = "work.html"
-weight = 6
-updated = "2026-11-15T20:37:21Z"
+weight = 2
+updated = "2026-11-16T04:27:33Z"
 
 [taxonomies]
 tags = ["Media and art", "Python", "JavaScript", "HTML"]
@@ -26,9 +26,9 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**Sonic Playground** is a project in [Media and art](@/projects/media.md). Its code is written mainly in [Python](@/glossary/python.md) (40.5 %), with [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md) and [Shell](@/glossary/shell.md).
+**Sonic Playground** is a project in [Media and art](@/projects/media.md). Its code is written mainly in [Python](@/glossary/python.md) (40.3 %), with [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md) and [Shell](@/glossary/shell.md).
 
-The [repository](@/glossary/repository.md) was created in November 2026; its latest [commit](@/glossary/commit.md) is from 15 November 2026. It reads “Merge branch 'feature/visualizer': a Winamp-style visualiser, full screen and behind the hero, and a turning mosaic”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created in November 2026; its latest [commit](@/glossary/commit.md) is from 16 November 2026. It reads “Merge branch 'feature/visualizer-background': a calm picture behind every page while the player plays”. That places it among the projects active in the last 12 months.
 
 It is built with [Elixir](@/glossary/elixir.md).
 

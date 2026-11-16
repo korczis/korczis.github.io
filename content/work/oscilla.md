@@ -3,8 +3,8 @@
 title = "Oscilla"
 description = "A zero-install acoustic laboratory in the browser."
 template = "work.html"
-weight = 1
-updated = "2026-11-16T02:02:43Z"
+weight = 4
+updated = "2026-11-16T03:43:58Z"
 
 [taxonomies]
 tags = ["Science and visualisation", "JavaScript", "HTML", "CSS"]
@@ -28,7 +28,7 @@ tone = "night"
 +++
 **Oscilla** is a project in [Science and visualisation](@/projects/science.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (96.9 %), with [HTML](@/glossary/html.md), [CSS](@/glossary/css.md) and [Swift](@/glossary/swift.md).
 
-The [repository](@/glossary/repository.md) was created in October 2026; its latest [commit](@/glossary/commit.md) is from 16 November 2026. It reads “feat(studio): train T24, K226 + R050 + K247 checks + E073 + K150 + Czech pass 5 + plan records, and release v3.39.0 (\#567)”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created in October 2026; its latest [commit](@/glossary/commit.md) is from 16 November 2026. It reads “chore(plan): K247, V508 and K150 done at main eb3f0438 (T24, PR 567), and K226's Rate note (\#571)”. That places it among the projects active in the last 12 months.
 
 It is built with [Web Audio](@/glossary/web-audio.md).
 

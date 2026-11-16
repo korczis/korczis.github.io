@@ -3,8 +3,8 @@
 title = "Kompendium"
 description = "A defensive taxonomy of epistemic and cognitive manipulation (Czech)."
 template = "work.html"
-weight = 4
-updated = "2026-11-15T22:18:26Z"
+weight = 5
+updated = "2026-11-16T03:38:47Z"
 
 [taxonomies]
 tags = ["Knowledge", "Elixir", "JavaScript", "Python"]
@@ -28,7 +28,7 @@ tone = "night"
 +++
 **Kompendium** is a project in [Knowledge](@/projects/knowledge.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (33.8 %), with [JavaScript](@/glossary/javascript.md), [Python](@/glossary/python.md) and [HTML](@/glossary/html.md).
 
-The [repository](@/glossary/repository.md) was created in November 2026; its latest [commit](@/glossary/commit.md) is from 15 November 2026. It reads “Merge remote-tracking branch 'origin/main' into refactor/check-ia-list-all”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created in November 2026; its latest [commit](@/glossary/commit.md) is from 16 November 2026. It reads “fix(test): run.sh zapíše do svého dočasného adresáře pid vlastníka”. That places it among the projects active in the last 12 months.
 
 It is built with [Zola](@/glossary/zola.md), [Cytoscape.js](@/glossary/cytoscape-js.md), [Apache ECharts](@/glossary/apache-echarts.md), [Alpine.js](@/glossary/alpine-js.md) and [Flowbite Pro](@/glossary/flowbite-pro.md).
 
