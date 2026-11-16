@@ -3,7 +3,7 @@
 title = "algoglyph"
 description = "Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem."
 template = "work.html"
-weight = 5
+weight = 6
 updated = "2026-11-15T17:15:57Z"
 
 [taxonomies]

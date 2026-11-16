@@ -1,6 +1,6 @@
 {
  "schema": "korczis-hub-recent/v1",
- "generated_at": "2026-11-15T22:27:14Z",
+ "generated_at": "2026-11-16T00:14:06Z",
  "window_days": 1461,
  "periods": [
   {
@@ -26,9 +26,19 @@
    "category": "web",
    "language": "JavaScript",
    "created_at": "2024-12-24T16:48:15Z",
-   "last_commit": "2026-11-15T20:56:30Z",
-   "last_message": "chore(merge): integrate #20, the refresh bot's push passes the NDA denylist",
+   "last_commit": "2026-11-15T23:06:33Z",
+   "last_message": "docs(ai): record the owner's answer on the scope of a full refresh",
    "commits": [
+    {
+     "at": "2026-11-15T23:06:33Z",
+     "message": "docs(ai): record the owner's answer on the scope of a full refresh",
+     "url": "https://github.com/korczis/korczis.github.io/commit/0c344b057f636f30ab27410bd06022af33e82c10"
+    },
+    {
+     "at": "2026-11-15T22:31:34Z",
+     "message": "chore(data): refresh every repository measured with gh and glab",
+     "url": "https://github.com/korczis/korczis.github.io/commit/c3ffa7a56fa9f4f517f8901af440727242efc121"
+    },
     {
      "at": "2026-11-15T20:56:30Z",
      "message": "chore(merge): integrate #20, the refresh bot's push passes the NDA denylist",
@@ -168,16 +178,6 @@
      "at": "2026-11-14T23:51:31Z",
      "message": "fix(ci): one failing gate no longer hides the verdicts of the others",
      "url": "https://github.com/korczis/korczis.github.io/commit/c49f7b685c76138c658362e7382fc06c448a9b21"
-    },
-    {
-     "at": "2026-11-14T23:32:41Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/b2d713d51244023322bc2535de12ca968de4deef"
-    },
-    {
-     "at": "2026-11-14T22:25:44Z",
-     "message": "fix(viz): stream and pack labels read on every colour they sit on",
-     "url": "https://github.com/korczis/korczis.github.io/commit/c9203dcc8509325891b9ed16a0a0bdfa598eaf97"
     }
    ],
    "languages": [
@@ -220,7 +220,225 @@
    },
    "site": null,
    "curated": false,
-   "stars": 0
+   "stars": 0,
+   "supervised": true
+  },
+  {
+   "name": "prismatic-majordomus",
+   "period": 12,
+   "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+   "category": "ai",
+   "language": "Rust",
+   "created_at": "2026-09-03T20:24:57Z",
+   "last_commit": "2026-11-15T22:53:29Z",
+   "last_message": "Merge pull request #3034 from korczis/plan/adopter-evidence-and-i4594-i4595-20261115",
+   "commits": [
+    {
+     "at": "2026-11-15T22:53:29Z",
+     "message": "Merge pull request #3034 from korczis/plan/adopter-evidence-and-i4594-i4595-20261115",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/95bf064c1ef8afca879060bc6522925261a43e74"
+    },
+    {
+     "at": "2026-11-15T19:25:15Z",
+     "message": "docs(plan): derive delivery observed at the batch 2 commit",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/671470f6ec727744879140e794606b4a39643c1f"
+    },
+    {
+     "at": "2026-11-15T19:16:44Z",
+     "message": "docs(plan): english-only I4594 and OSCILLA evidence on seven issues",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/4f36a8ab95e5c3e2d31c2ae9648a1399dd5f044f"
+    },
+    {
+     "at": "2026-11-15T17:11:29Z",
+     "message": "docs(plan): derive delivery observed at the merge of 3fcaafa",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/176404ebf5fd80ca377b10698fe0e0f2299ed1a9"
+    },
+    {
+     "at": "2026-11-15T16:56:45Z",
+     "message": "Merge origin/master 3fcaafa into #3034",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/87a4898539401aeb4d3e94e01b1a76270ca48faf"
+    },
+    {
+     "at": "2026-11-15T16:35:18Z",
+     "message": "docs(plan): derive delivery observed at the records commit",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/e15f31fc6cd7d7f6422be3a33c955be9c1f88d20"
+    },
+    {
+     "at": "2026-11-15T16:26:57Z",
+     "message": "docs(plan): record dev-87 adopter evidence and plan I4594, I4595",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/1ae340905b7d56c9346de37cb0c7676fb3d9e10d"
+    },
+    {
+     "at": "2026-11-15T16:21:06Z",
+     "message": "Merge pull request #3033 from korczis/fix/I4592-the-projection-checkout-is-blobless",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/3fcaafac355b54bf7b8e42dfa34cd1d5a05fd7d5"
+    },
+    {
+     "at": "2026-11-15T12:18:49Z",
+     "message": "Merge origin/master defd88e into #3033",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/59473f5e55c712b36e7a62d0ab5f479a78681016"
+    },
+    {
+     "at": "2026-11-15T12:05:17Z",
+     "message": "Merge pull request #3013 from korczis/docs/verify-outcomes-delegated-delivery",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/defd88e5896aaacb84e08d2f578ce9f6f9d6b08e"
+    },
+    {
+     "at": "2026-11-15T10:18:12Z",
+     "message": "chore(derive): delivery.json observes the I4592 commit",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/015473dabbb5ecfd385d20a754f4388bed41d30b"
+    },
+    {
+     "at": "2026-11-15T10:07:32Z",
+     "message": "ci(github): the projection's apply checkout is blobless, bounded at 10 minutes (I4592)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/d634aa253f0422611b6943be2fbf843e4d09e969"
+    },
+    {
+     "at": "2026-11-15T09:13:08Z",
+     "message": "chore(derive): derive #3013 on master dff91f0",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/fc9633b64a8fc4f22f146bb2fc5da5561bb115e5"
+    },
+    {
+     "at": "2026-11-15T09:02:40Z",
+     "message": "Merge origin/master dff91f0 into #3013",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/a7261635f9fb84b68317e068bc6f19289e5500ff"
+    },
+    {
+     "at": "2026-11-15T08:50:10Z",
+     "message": "Merge pull request #3010 from korczis/fix/I4576-the-lease-reader-waits-for-a-whole-record",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/dff91f0a4802334c0d71f45d6da4495fd320dce8"
+    },
+    {
+     "at": "2026-11-15T04:11:43Z",
+     "message": "chore(derive): derive #3010 on master 04db703",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/0d52475745c8cf8a5cc73219ece61fc519944450"
+    },
+    {
+     "at": "2026-11-15T03:59:09Z",
+     "message": "Merge origin/master 04db703 into #3010",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/4f592708cfbfdb671494c407a09840824b1c9b8c"
+    },
+    {
+     "at": "2026-11-15T03:47:13Z",
+     "message": "Merge pull request #3009 from korczis/feature/I4570-before-push-runs-fmt-and-version-surface",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/04db70382a811c689a11a9b49111caeb5401a807"
+    },
+    {
+     "at": "2026-11-15T00:36:53Z",
+     "message": "chore(derive): derive #3009 on master c992617",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/cfb2be84235571059846174531aad8533f5925cb"
+    },
+    {
+     "at": "2026-11-15T00:23:39Z",
+     "message": "Merge origin/master c992617 into #3009",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/d470d46df42b89b5908fa3cae4a107790ab27953"
+    },
+    {
+     "at": "2026-11-15T00:13:57Z",
+     "message": "Merge pull request #2989 from korczis/fix/the-across-machines-test-waits-for-the-lease-holder",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/c992617c001546889a5a1f448c6b119dc20c9638"
+    },
+    {
+     "at": "2026-11-14T21:44:28Z",
+     "message": "chore(derive): derive #2989 on master ac73c08",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/1e4161e0f77ad9a891cb4d9d2a101d5e335c438b"
+    },
+    {
+     "at": "2026-11-14T21:29:47Z",
+     "message": "Merge origin/master ac73c08 into #2989",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/616924de810061225793b6adf396b8aae876efe3"
+    },
+    {
+     "at": "2026-11-14T21:20:07Z",
+     "message": "Merge pull request #2988 from korczis/fix/the-kit-licence-judge-starts-git-through-the-busy-retry",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/ac73c089ea7eb78930a55417ba66a8c0b19c2314"
+    },
+    {
+     "at": "2026-11-14T18:45:27Z",
+     "message": "chore(derive): derive #2988 on master aca34e6",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/d56e3378e3668466cc043bfdf0fa9f294fd7ae90"
+    },
+    {
+     "at": "2026-11-14T18:34:50Z",
+     "message": "Merge origin/master aca34e6 into #2988",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/da321ca119dca587ea9970d9c6ceb82a14865948"
+    },
+    {
+     "at": "2026-11-14T18:22:24Z",
+     "message": "Merge pull request #3012 from korczis/chore/evolve-20261111-3",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/aca34e67c56158a29d2e62703f523ce7c9379759"
+    },
+    {
+     "at": "2026-11-13T00:59:36Z",
+     "message": "chore(derive): derive #3012 on master 6f8e104",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/bfd102270321d08fa9a22a8ef78bfefacf7d8859"
+    },
+    {
+     "at": "2026-11-13T00:49:17Z",
+     "message": "Merge origin/master 6f8e104 into #3012",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/cfa92dc8e6eaeeed5bff234022d5213e34043a76"
+    },
+    {
+     "at": "2026-11-13T00:33:43Z",
+     "message": "Merge pull request #3015 from korczis/fix/I4591-mj-ms-reads-any-decimal-separator",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/6f8e1041f54fe484e909af6c607ee61a4bbbfc9b"
+    }
+   ],
+   "languages": [
+    {
+     "name": "Rust",
+     "share": 60.7
+    },
+    {
+     "name": "Shell",
+     "share": 29.5
+    },
+    {
+     "name": "JavaScript",
+     "share": 4.1
+    },
+    {
+     "name": "HTML",
+     "share": 3.8
+    },
+    {
+     "name": "CSS",
+     "share": 0.6
+    },
+    {
+     "name": "Python",
+     "share": 0.4
+    }
+   ],
+   "readme": "Your AI agents say the work is done. Majordomus makes them prove it.",
+   "topics": [
+    "agentic-ai",
+    "ai",
+    "ai-agents",
+    "ai-governance",
+    "claude-code",
+    "cli",
+    "codex",
+    "continuous-integration",
+    "developer-tools",
+    "devops",
+    "gemini",
+    "llm",
+    "llmops",
+    "mcp",
+    "mermaid",
+    "model-context-protocol",
+    "multi-agent",
+    "policy-as-code",
+    "rust"
+   ],
+   "hosts": {
+    "github": "https://github.com/korczis/prismatic-majordomus"
+   },
+   "site": "https://korczis.github.io/prismatic-majordomus/",
+   "curated": true,
+   "stars": 1,
+   "supervised": true
   },
   {
    "name": "sonic-playground",
@@ -412,7 +630,8 @@
    },
    "site": "https://korczis.github.io/sonic-playground/",
    "curated": true,
-   "stars": 0
+   "stars": 0,
+   "supervised": true
   },
   {
    "name": "kompendium-epistemicke-anihilace",
@@ -578,7 +797,7 @@
    "languages": [
     {
      "name": "Elixir",
-     "share": 33.9
+     "share": 33.8
     },
     {
      "name": "JavaScript",
@@ -598,7 +817,7 @@
     },
     {
      "name": "Shell",
-     "share": 6.9
+     "share": 7
     }
    ],
    "readme": "Defenzivní taxonomie jevů, které systematicky rozkládají schopnost člověka poznávat.",
@@ -618,7 +837,8 @@
    },
    "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
    "curated": true,
-   "stars": 0
+   "stars": 0,
+   "supervised": true
   },
   {
    "name": "oscilla",
@@ -820,7 +1040,8 @@
    },
    "site": "https://korczis.github.io/oscilla/",
    "curated": true,
-   "stars": 1
+   "stars": 1,
+   "supervised": true
   },
   {
    "name": "algoglyph",
@@ -1029,223 +1250,8 @@
    },
    "site": "https://korczis.github.io/algoglyph/",
    "curated": true,
-   "stars": 0
-  },
-  {
-   "name": "prismatic-majordomus",
-   "period": 12,
-   "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
-   "category": "ai",
-   "language": "Rust",
-   "created_at": "2026-09-03T20:24:57Z",
-   "last_commit": "2026-11-15T16:21:06Z",
-   "last_message": "Merge pull request #3033 from korczis/fix/I4592-the-projection-checkout-is-blobless",
-   "commits": [
-    {
-     "at": "2026-11-15T16:21:06Z",
-     "message": "Merge pull request #3033 from korczis/fix/I4592-the-projection-checkout-is-blobless",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/3fcaafac355b54bf7b8e42dfa34cd1d5a05fd7d5"
-    },
-    {
-     "at": "2026-11-15T12:18:49Z",
-     "message": "Merge origin/master defd88e into #3033",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/59473f5e55c712b36e7a62d0ab5f479a78681016"
-    },
-    {
-     "at": "2026-11-15T12:05:17Z",
-     "message": "Merge pull request #3013 from korczis/docs/verify-outcomes-delegated-delivery",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/defd88e5896aaacb84e08d2f578ce9f6f9d6b08e"
-    },
-    {
-     "at": "2026-11-15T10:18:12Z",
-     "message": "chore(derive): delivery.json observes the I4592 commit",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/015473dabbb5ecfd385d20a754f4388bed41d30b"
-    },
-    {
-     "at": "2026-11-15T10:07:32Z",
-     "message": "ci(github): the projection's apply checkout is blobless, bounded at 10 minutes (I4592)",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/d634aa253f0422611b6943be2fbf843e4d09e969"
-    },
-    {
-     "at": "2026-11-15T09:13:08Z",
-     "message": "chore(derive): derive #3013 on master dff91f0",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/fc9633b64a8fc4f22f146bb2fc5da5561bb115e5"
-    },
-    {
-     "at": "2026-11-15T09:02:40Z",
-     "message": "Merge origin/master dff91f0 into #3013",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/a7261635f9fb84b68317e068bc6f19289e5500ff"
-    },
-    {
-     "at": "2026-11-15T08:50:10Z",
-     "message": "Merge pull request #3010 from korczis/fix/I4576-the-lease-reader-waits-for-a-whole-record",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/dff91f0a4802334c0d71f45d6da4495fd320dce8"
-    },
-    {
-     "at": "2026-11-15T04:11:43Z",
-     "message": "chore(derive): derive #3010 on master 04db703",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/0d52475745c8cf8a5cc73219ece61fc519944450"
-    },
-    {
-     "at": "2026-11-15T03:59:09Z",
-     "message": "Merge origin/master 04db703 into #3010",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/4f592708cfbfdb671494c407a09840824b1c9b8c"
-    },
-    {
-     "at": "2026-11-15T03:47:13Z",
-     "message": "Merge pull request #3009 from korczis/feature/I4570-before-push-runs-fmt-and-version-surface",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/04db70382a811c689a11a9b49111caeb5401a807"
-    },
-    {
-     "at": "2026-11-15T00:36:53Z",
-     "message": "chore(derive): derive #3009 on master c992617",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/cfb2be84235571059846174531aad8533f5925cb"
-    },
-    {
-     "at": "2026-11-15T00:23:39Z",
-     "message": "Merge origin/master c992617 into #3009",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/d470d46df42b89b5908fa3cae4a107790ab27953"
-    },
-    {
-     "at": "2026-11-15T00:13:57Z",
-     "message": "Merge pull request #2989 from korczis/fix/the-across-machines-test-waits-for-the-lease-holder",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/c992617c001546889a5a1f448c6b119dc20c9638"
-    },
-    {
-     "at": "2026-11-14T21:44:28Z",
-     "message": "chore(derive): derive #2989 on master ac73c08",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/1e4161e0f77ad9a891cb4d9d2a101d5e335c438b"
-    },
-    {
-     "at": "2026-11-14T21:29:47Z",
-     "message": "Merge origin/master ac73c08 into #2989",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/616924de810061225793b6adf396b8aae876efe3"
-    },
-    {
-     "at": "2026-11-14T21:20:07Z",
-     "message": "Merge pull request #2988 from korczis/fix/the-kit-licence-judge-starts-git-through-the-busy-retry",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/ac73c089ea7eb78930a55417ba66a8c0b19c2314"
-    },
-    {
-     "at": "2026-11-14T18:45:27Z",
-     "message": "chore(derive): derive #2988 on master aca34e6",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/d56e3378e3668466cc043bfdf0fa9f294fd7ae90"
-    },
-    {
-     "at": "2026-11-14T18:34:50Z",
-     "message": "Merge origin/master aca34e6 into #2988",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/da321ca119dca587ea9970d9c6ceb82a14865948"
-    },
-    {
-     "at": "2026-11-14T18:22:24Z",
-     "message": "Merge pull request #3012 from korczis/chore/evolve-20261111-3",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/aca34e67c56158a29d2e62703f523ce7c9379759"
-    },
-    {
-     "at": "2026-11-13T00:59:36Z",
-     "message": "chore(derive): derive #3012 on master 6f8e104",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/bfd102270321d08fa9a22a8ef78bfefacf7d8859"
-    },
-    {
-     "at": "2026-11-13T00:49:17Z",
-     "message": "Merge origin/master 6f8e104 into #3012",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/cfa92dc8e6eaeeed5bff234022d5213e34043a76"
-    },
-    {
-     "at": "2026-11-13T00:33:43Z",
-     "message": "Merge pull request #3015 from korczis/fix/I4591-mj-ms-reads-any-decimal-separator",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/6f8e1041f54fe484e909af6c607ee61a4bbbfc9b"
-    },
-    {
-     "at": "2026-11-12T20:35:24Z",
-     "message": "chore(derive): derive #3015 on master 67e7c6a",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/32eb2749bcb58c9e01ebc4762b64543173a87140"
-    },
-    {
-     "at": "2026-11-12T20:28:35Z",
-     "message": "Merge origin/master 67e7c6a into #3015",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/8c9f7be237002a19aa2ee9799e0d2d3a0b8068fa"
-    },
-    {
-     "at": "2026-11-12T20:09:22Z",
-     "message": "chore(derive): derive #3012 on master 67e7c6a",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/52e2591593864cfccb22fd739ec808a5bc5ace2e"
-    },
-    {
-     "at": "2026-11-12T20:02:42Z",
-     "message": "Merge origin/master 67e7c6a into #3012",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/2676e80b0724e83ff1a2e27797dc461d2e7f6613"
-    },
-    {
-     "at": "2026-11-12T19:58:06Z",
-     "message": "Merge pull request #3008 from korczis/fix/suite-budget-re-derived-from-the-v1.0.2-runs",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/67e7c6a083890dcac894c6ac5ec6f0dd85103aca"
-    },
-    {
-     "at": "2026-11-12T18:34:56Z",
-     "message": "chore(derive): delivery.json observes the I4591 fix commit",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/e33ec2f58b70ee2246df2587152c49dbe95aa8cd"
-    },
-    {
-     "at": "2026-11-12T18:24:33Z",
-     "message": "fix(lib): mj_ms reads EPOCHREALTIME under any decimal separator (I4591)",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/e51c7a3afd797f2fc048fe19017530f34ae49b8d"
-    }
-   ],
-   "languages": [
-    {
-     "name": "Rust",
-     "share": 60.7
-    },
-    {
-     "name": "Shell",
-     "share": 29.5
-    },
-    {
-     "name": "JavaScript",
-     "share": 4.1
-    },
-    {
-     "name": "HTML",
-     "share": 3.8
-    },
-    {
-     "name": "CSS",
-     "share": 0.6
-    },
-    {
-     "name": "Python",
-     "share": 0.4
-    }
-   ],
-   "readme": "Your AI agents say the work is done. Majordomus makes them prove it.",
-   "topics": [
-    "agentic-ai",
-    "ai",
-    "ai-agents",
-    "ai-governance",
-    "claude-code",
-    "cli",
-    "codex",
-    "continuous-integration",
-    "developer-tools",
-    "devops",
-    "gemini",
-    "llm",
-    "llmops",
-    "mcp",
-    "mermaid",
-    "model-context-protocol",
-    "multi-agent",
-    "policy-as-code",
-    "rust"
-   ],
-   "hosts": {
-    "github": "https://github.com/korczis/prismatic-majordomus"
-   },
-   "site": "https://korczis.github.io/prismatic-majordomus/",
-   "curated": true,
-   "stars": 1
+   "stars": 0,
+   "supervised": true
   },
   {
    "name": "vomaste.cz",
@@ -1437,7 +1443,8 @@
    },
    "site": "https://korczis.github.io/vomaste.cz/",
    "curated": false,
-   "stars": 0
+   "stars": 0,
+   "supervised": false
   },
   {
    "name": "majordomus-reel",
@@ -1587,7 +1594,8 @@
    },
    "site": "https://korczis.github.io/majordomus-reel/",
    "curated": true,
-   "stars": 0
+   "stars": 0,
+   "supervised": true
   },
   {
    "name": "catharsis-as-a-service",
@@ -1758,7 +1766,8 @@
    },
    "site": "https://korczis.github.io/catharsis-as-a-service/",
    "curated": true,
-   "stars": 0
+   "stars": 0,
+   "supervised": true
   },
   {
    "name": "crisis-map",
@@ -1826,7 +1835,8 @@
    },
    "site": "https://korczis.github.io/crisis-map/",
    "curated": true,
-   "stars": 0
+   "stars": 0,
+   "supervised": false
   },
   {
    "name": "data-atlas",
@@ -2031,7 +2041,8 @@
    },
    "site": "https://korczis.github.io/data-atlas/",
    "curated": true,
-   "stars": 0
+   "stars": 0,
+   "supervised": false
   },
   {
    "name": "gists-search",
@@ -2083,7 +2094,8 @@
    },
    "site": "https://korczis.github.io/gists-search/",
    "curated": true,
-   "stars": 0
+   "stars": 0,
+   "supervised": false
   },
   {
    "name": "osint-case-ratcliffe-moscow-2026",
@@ -2176,7 +2188,8 @@
    },
    "site": "https://korczis.github.io/osint-case-ratcliffe-moscow-2026/",
    "curated": false,
-   "stars": 1
+   "stars": 1,
+   "supervised": false
   },
   {
    "name": "llm",
@@ -2290,7 +2303,8 @@
    },
    "site": null,
    "curated": false,
-   "stars": 0
+   "stars": 0,
+   "supervised": false
   },
   {
    "name": "openttd-prismatic-bridge",
@@ -2382,7 +2396,8 @@
    },
    "site": null,
    "curated": false,
-   "stars": 0
+   "stars": 0,
+   "supervised": false
   },
   {
    "name": "astronomists",
@@ -2568,7 +2583,8 @@
    },
    "site": "https://korczis.github.io/astronomists/",
    "curated": false,
-   "stars": 0
+   "stars": 0,
+   "supervised": false
   },
   {
    "name": "tinder-nomics",
@@ -2599,7 +2615,8 @@
    },
    "site": null,
    "curated": false,
-   "stars": 0
+   "stars": 0,
+   "supervised": false
   },
   {
    "name": "the-psycho",
@@ -2657,7 +2674,8 @@
    },
    "site": null,
    "curated": false,
-   "stars": 0
+   "stars": 0,
+   "supervised": false
   },
   {
    "name": "prism",
@@ -2688,7 +2706,8 @@
    },
    "site": null,
    "curated": false,
-   "stars": 0
+   "stars": 0,
+   "supervised": false
   },
   {
    "name": "past",
@@ -2719,7 +2738,8 @@
    },
    "site": null,
    "curated": false,
-   "stars": 0
+   "stars": 0,
+   "supervised": false
   },
   {
    "name": "sig",
@@ -2920,7 +2940,8 @@
    },
    "site": null,
    "curated": false,
-   "stars": 0
+   "stars": 0,
+   "supervised": false
   },
   {
    "name": "edna",
@@ -2951,7 +2972,8 @@
    },
    "site": null,
    "curated": false,
-   "stars": 0
+   "stars": 0,
+   "supervised": false
   },
   {
    "name": "GHT",
@@ -2982,7 +3004,8 @@
    },
    "site": null,
    "curated": false,
-   "stars": 0
+   "stars": 0,
+   "supervised": false
   },
   {
    "name": "comtesse",
@@ -3140,7 +3163,8 @@
    },
    "site": null,
    "curated": false,
-   "stars": 0
+   "stars": 0,
+   "supervised": false
   },
   {
    "name": "korczis.gitlab.io",
@@ -3332,7 +3356,8 @@
    },
    "site": null,
    "curated": false,
-   "stars": 0
+   "stars": 0,
+   "supervised": false
   },
   {
    "name": "prismatic",
@@ -3528,7 +3553,8 @@
    },
    "site": null,
    "curated": false,
-   "stars": 0
+   "stars": 0,
+   "supervised": false
   },
   {
    "name": "u-tygra",
@@ -3683,7 +3709,8 @@
    },
    "site": "https://korczis.github.io/u-tygra/",
    "curated": false,
-   "stars": 0
+   "stars": 0,
+   "supervised": false
   },
   {
    "name": "corvidae",
@@ -3732,7 +3759,8 @@
    },
    "site": null,
    "curated": false,
-   "stars": 0
+   "stars": 0,
+   "supervised": false
   },
   {
    "name": "cognitive-reasoning",
@@ -3758,7 +3786,8 @@
    },
    "site": null,
    "curated": false,
-   "stars": 0
+   "stars": 0,
+   "supervised": false
   },
   {
    "name": "prismatic-blog",
@@ -3789,7 +3818,8 @@
    },
    "site": "https://korczis.github.io/prismatic-blog/",
    "curated": false,
-   "stars": 0
+   "stars": 0,
+   "supervised": false
   },
   {
    "name": "kuzu-ex",
@@ -3864,7 +3894,8 @@
    },
    "site": null,
    "curated": false,
-   "stars": 0
+   "stars": 0,
+   "supervised": false
   },
   {
    "name": "dispatcher",
@@ -3969,7 +4000,8 @@
    },
    "site": null,
    "curated": false,
-   "stars": 0
+   "stars": 0,
+   "supervised": false
   },
   {
    "name": "tap",
@@ -3995,7 +4027,8 @@
    },
    "site": null,
    "curated": false,
-   "stars": 0
+   "stars": 0,
+   "supervised": false
   },
   {
    "name": "bubbler",
@@ -4179,7 +4212,8 @@
    },
    "site": "https://korczis.github.io/bubbler/",
    "curated": false,
-   "stars": 0
+   "stars": 0,
+   "supervised": false
   },
   {
    "name": "job-processor",
@@ -4215,7 +4249,8 @@
    },
    "site": null,
    "curated": false,
-   "stars": 0
+   "stars": 0,
+   "supervised": false
   },
   {
    "name": "meili_rsex",
@@ -4280,7 +4315,8 @@
    },
    "site": null,
    "curated": false,
-   "stars": 0
+   "stars": 0,
+   "supervised": false
   },
   {
    "name": "pissaleck",
@@ -4306,7 +4342,8 @@
    },
    "site": null,
    "curated": false,
-   "stars": 0
+   "stars": 0,
+   "supervised": false
   },
   {
    "name": "simple_geocoder",
@@ -4475,7 +4512,8 @@
    },
    "site": null,
    "curated": false,
-   "stars": 0
+   "stars": 0,
+   "supervised": false
   },
   {
    "name": "distance-calculator",
@@ -4556,7 +4594,8 @@
    },
    "site": null,
    "curated": false,
-   "stars": 0
+   "stars": 0,
+   "supervised": false
   },
   {
    "name": "marketing-ideas",
@@ -4607,7 +4646,8 @@
    },
    "site": null,
    "curated": false,
-   "stars": 0
+   "stars": 0,
+   "supervised": false
   },
   {
    "name": "pdf_renderer",
@@ -4651,7 +4691,8 @@
    },
    "site": null,
    "curated": false,
-   "stars": 0
+   "stars": 0,
+   "supervised": false
   },
   {
    "name": "MindScape",
@@ -4687,7 +4728,8 @@
    },
    "site": null,
    "curated": false,
-   "stars": 0
+   "stars": 0,
+   "supervised": false
   },
   {
    "name": "el-magico-cache",
@@ -4843,7 +4885,8 @@
    },
    "site": null,
    "curated": false,
-   "stars": 0
+   "stars": 0,
+   "supervised": false
   }
  ]
 }

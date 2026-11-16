@@ -3,7 +3,7 @@
 title = "Kompendium"
 description = "Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat."
 template = "work.html"
-weight = 3
+weight = 4
 updated = "2026-11-15T20:26:59Z"
 
 [taxonomies]
@@ -26,7 +26,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**Kompendium** je projekt z kategorie [Znalosti](@/projects/knowledge.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (33,9 %), dále [JavaScript](@/glossary/javascript.cs.md), [Python](@/glossary/python.cs.md) a [HTML](@/glossary/html.cs.md).
+**Kompendium** je projekt z kategorie [Znalosti](@/projects/knowledge.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (33,8 %), dále [JavaScript](@/glossary/javascript.cs.md), [Python](@/glossary/python.cs.md) a [HTML](@/glossary/html.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 9. listopadu 2026; poslední [commit](@/glossary/commit.cs.md) je z 15. listopadu 2026. Zní „Merge origin/main (637d89c9) into fix/ea-code-aliases“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 

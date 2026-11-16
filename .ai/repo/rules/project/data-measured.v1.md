@@ -29,7 +29,8 @@ stale silently; a measured snapshot with a date stays honest even when it ages.
 - Every original repository in `data/index.json` carries `supervised` (true, false, or null when
   no forge could answer), `counts.supervised` and `supervision` (marker, measured_at, kept);
   `npm run index -- --supervision` re-asks only that. A repository with no new activity keeps its
-  answer. The curated snapshot and the index must agree.
+  answer. The curated snapshot and the index must agree; `data/recent.json` and the /work/
+  pages carry the same answer, and read commits, languages and READMEs through the same layer.
 - A `GITLAB_TOKEN` that is not one line, or that GitLab refuses, is dropped with a log line and the
   refresh reads anonymously; a bad secret never costs the refresh.
 - `npm run data` (`scripts/fetch-github.mjs`) writes `data/github.json`: profile, contribution

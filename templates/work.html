@@ -19,6 +19,7 @@
         {{ <badge label={cat.categories[r.category]["name" ~ sfx]} href={base ~ "projects/" ~ r.category ~ "/"} /> }}
         {{ <badge label={trans(key="active_within", lang=lang) ~ " " ~ r.period ~ " " ~ trans(key="months", lang=lang)} tone="primary" /> }}
         {%- if r.curated %}{{ <badge label={trans(key="featured_2", lang=lang)} tone="green" href={base ~ "projects/?project=" ~ r.name} /> }}{% endif %}
+        {%- if r.supervised %}{{ <badge label="Majordomus" tone="gray" dot={true} href={base ~ "glossary/majordomus/"} /> }}{% endif %}
       </div>
       <h2 id="what-title" class="text-xl font-bold leading-none text-gray-900 dark:text-white">{{ trans(key="what_it_is", lang=lang) | safe }}</h2>
       {%- if r.readme %}

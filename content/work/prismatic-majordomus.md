@@ -3,8 +3,8 @@
 title = "Majordomus"
 description = "AI agents say the work is done; Majordomus makes them prove it."
 template = "work.html"
-weight = 6
-updated = "2026-11-15T16:21:06Z"
+weight = 2
+updated = "2026-11-15T22:53:29Z"
 
 [taxonomies]
 tags = ["AI engineering", "Rust", "Shell", "JavaScript"]
@@ -28,7 +28,7 @@ tone = "night"
 +++
 **Majordomus** is a project in [AI engineering](@/projects/ai.md). Its code is written mainly in [Rust](@/glossary/rust.md) (60.7 %), with [Shell](@/glossary/shell.md), [JavaScript](@/glossary/javascript.md) and [HTML](@/glossary/html.md).
 
-The [repository](@/glossary/repository.md) was created in September 2026; its latest [commit](@/glossary/commit.md) is from 15 November 2026. It reads “Merge pull request \#3033 from korczis/fix/I4592-the-projection-checkout-is-blobless”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created in September 2026; its latest [commit](@/glossary/commit.md) is from 15 November 2026. It reads “Merge pull request \#3034 from korczis/plan/adopter-evidence-and-i4594-i4595-20261115”. That places it among the projects active in the last 12 months.
 
 It is built with [MCP](@/glossary/mcp.md) and [Zola](@/glossary/zola.md).
 

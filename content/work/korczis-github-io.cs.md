@@ -4,7 +4,7 @@ title = "korczis.github.io"
 description = "korczis.github.io: projekt z kategorie Web, hlavní jazyk JavaScript, poslední commit 15. listopadu 2026."
 template = "work.html"
 weight = 1
-updated = "2026-11-15T20:56:30Z"
+updated = "2026-11-15T23:06:33Z"
 
 [taxonomies]
 tags = ["Web", "JavaScript", "HTML", "CSS"]
@@ -28,6 +28,6 @@ tone = "night"
 +++
 **korczis.github.io** je projekt z kategorie [Web](@/projects/web.cs.md). Jeho kód je napsaný hlavně v jazyce [JavaScript](@/glossary/javascript.cs.md) (69,2 %), dále [HTML](@/glossary/html.cs.md), [CSS](@/glossary/css.cs.md) a [Shell](@/glossary/shell.cs.md).
 
-[Repozitář](@/glossary/repository.cs.md) vznikl 24. prosince 2024; poslední [commit](@/glossary/commit.cs.md) je z 15. listopadu 2026. Zní „chore(merge): integrate \#20, the refresh bot's push passes the NDA denylist“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+[Repozitář](@/glossary/repository.cs.md) vznikl 24. prosince 2024; poslední [commit](@/glossary/commit.cs.md) je z 15. listopadu 2026. Zní „docs(ai): record the owner's answer on the scope of a full refresh“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 30 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
