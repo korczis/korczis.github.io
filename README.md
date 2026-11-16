@@ -103,7 +103,9 @@ Pages are front matter over data. Nothing on them is typed, so nothing needs upd
 - **Refresh every six hours:** `.github/workflows/refresh.yml` is scheduled at 23 minutes past
   every hour (UTC), because GitHub drops scheduled runs under load. A scheduled run measures only
   when the data on master is older than `REFRESH_HOURS` (6) minus one hour and stops after the
-  checkout otherwise; a dropped run then costs an hour, not six. By hand, `gh workflow run refresh.yml`
+  checkout otherwise; a dropped run then costs an hour, not six. A run checks out the tip of
+  master, so one that waited behind another judges that run's data. After a failed scheduled run
+  the next attempt waits the same 5 hours, so a red gate fails four times a day, not 24. By hand, `gh workflow run refresh.yml`
   always measures. It runs `npm run refresh`, then `npm run check`. Only when every
   gate passes does it commit to master and start the deploy.
   GitLab is read through one client (`scripts/lib/gitlab.mjs`): `glab` locally, REST in CI
