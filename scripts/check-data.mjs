@@ -87,6 +87,22 @@ for (const p of catalogue.projects ?? []) {
 }
 if (index.counts?.own !== (index.repos ?? []).length) fail('data/index.json', 'counts.own does not match the listed repositories');
 
+// Supervision: one marker, declared once (data/projects.toml [supervision]), asked of every listed
+// repository on every forge; the curated snapshot and the index must give the same answer.
+const marker = catalogue.supervision?.marker;
+if (!marker) fail('data/projects.toml', 'no [supervision] marker');
+if (index.supervision?.marker !== marker) fail('data/index.json', `supervision was measured for ${index.supervision?.marker ?? 'nothing'}, not ${marker}; run npm run index -- --supervision`);
+const listed = new Map((index.repos ?? []).map((r) => [r.name.toLowerCase(), r]));
+for (const r of listed.values()) {
+  if (!(typeof r.supervised === 'boolean' || r.supervised === null)) fail('data/index.json', `${r.name} has no supervision answer; run npm run index -- --supervision`);
+}
+for (const [repo, facts] of Object.entries(snapshot.projects ?? {})) {
+  const r = listed.get(repo.toLowerCase());
+  if (r && typeof r.supervised === 'boolean' && typeof facts.supervised === 'boolean' && r.supervised !== facts.supervised) {
+    fail('data/index.json', `${repo} is ${r.supervised ? '' : 'not '}supervised in the index but ${facts.supervised ? '' : 'not '}in data/github.json; re-measure both (npm run data, npm run index)`);
+  }
+}
+
 // A repository that was original at the last measurement and has no history now lost no commits:
 // the contributor list was misread, or the owner emptied it (then it belongs on [index] hidden).
 const hiddenNames = new Set((catalogue.index?.hidden ?? []).map((n) => n.toLowerCase()));

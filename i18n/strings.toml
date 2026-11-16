@@ -1416,3 +1416,15 @@ cs = "pracovně"
 [cv_level_basic]
 en = "basic"
 cs = "základy"
+
+[any_supervision]
+en = "Any supervision"
+cs = "Jakýkoli dohled"
+
+[not_supervised]
+en = "not supervised"
+cs = "bez dohledu"
+
+[kpi_supervision_marker]
+en = "{marker} on the default branch, asked of every repository on GitHub and GitLab"
+cs = "{marker} ve výchozí větvi, zjištěno u každého repozitáře na GitHubu i GitLabu"

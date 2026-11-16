@@ -6530,6 +6530,7 @@
   "empty": 3,
   "unmeasured": 0,
   "hidden": 6,
-  "mirrors_measured": 32
+  "mirrors_measured": 32,
+  "supervised": 8
  }
 }

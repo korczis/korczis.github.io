@@ -71,7 +71,7 @@
           {%- elif row.id == "recent" %}{% set v = rc.repos | length %}
           {%- elif row.id == "categories" %}{% set v = ix.by_category | length %}
           {%- elif row.id == "sites" %}{% set_global ns = 0 %}{% for r in ix.repos %}{% if r.site %}{% set_global ns = ns + 1 %}{% endif %}{% endfor %}{% set v = ns %}
-          {%- elif row.id == "supervision" %}{% set_global nsup = 0 %}{% for k, f in gh.projects %}{% if f.supervised %}{% set_global nsup = nsup + 1 %}{% endif %}{% endfor %}{% set v = nsup %}
+          {%- elif row.id == "supervision" %}{% set v = ix.counts.supervised ~ " / " ~ ix.counts.own %}
           {%- elif row.id == "release" %}{% set v = "v" ~ gh.majordomus.version %}
           {%- else %}{% set v = "—" %}{% endif %}
           <tr class="border-b border-gray-200 bg-white last:border-0 dark:border-gray-700 dark:bg-gray-800">

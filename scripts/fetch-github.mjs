@@ -14,6 +14,8 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parse } from 'smol-toml';
 import { identity } from './lib/derive.mjs';
+import { forges } from './lib/forge.mjs';
+import { gitlabClient } from './lib/gitlab.mjs';
 import { cliArgs } from './lib/cli.mjs';
 
 cliArgs({ '--stdout': true });
@@ -36,14 +38,9 @@ function graphql(query, variables = {}) {
   return gh(args).data;
 }
 
-function exists(path) {
-  try {
-    execFileSync('gh', ['api', '--silent', path], { stdio: 'ignore' });
-    return true;
-  } catch {
-    return false;
-  }
-}
+// Supervision is asked through the same connection as the index's (scripts/lib/forge.mjs), for
+// the same marker (data/projects.toml [supervision]).
+const forge = forges({ gitlab: gitlabClient() });
 
 async function probe(url) {
   try {
@@ -156,7 +153,7 @@ async function project(entry) {
       visibility: repo.visibility,
       live_status: status,
       live: status === null ? null : status >= 200 && status < 400,
-      supervised: exists(`repos/${LOGIN}/${entry.repo}/contents/.ai/manifest.yaml`),
+      supervised: await forge.hasFile(repo.html_url, catalogue.supervision.marker),
     },
   ];
 }

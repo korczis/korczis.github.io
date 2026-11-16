@@ -22,8 +22,16 @@ stale silently; a measured snapshot with a date stays honest even when it ages.
 # Required behaviour
 
 - `data/projects.toml` holds words only: name, tagline, summary, category, URL, stack. Majordomus
-  supervision is never listed in `stack`; it is measured (`.ai/manifest.yaml` on the default
-  branch).
+  supervision is never listed in `stack`; it is measured: the `[supervision] marker`
+  (`.ai/manifest.yaml`) on the default branch, declared once and asked through one connection to
+  every forge (`scripts/lib/forge.mjs`: `gh` for GitHub, the shared GitLab client for GitLab), the
+  forge, owner and name inferred from each repository's URL.
+- Every original repository in `data/index.json` carries `supervised` (true, false, or null when
+  no forge could answer), `counts.supervised` and `supervision` (marker, measured_at, kept);
+  `npm run index -- --supervision` re-asks only that. A repository with no new activity keeps its
+  answer. The curated snapshot and the index must agree.
+- A `GITLAB_TOKEN` that is not one line, or that GitLab refuses, is dropped with a log line and the
+  refresh reads anonymously; a bad secret never costs the refresh.
 - `npm run data` (`scripts/fetch-github.mjs`) writes `data/github.json`: profile, contribution
   calendar, languages, per-project facts (stars, language, push date, live HTTP status,
   supervision) and the Majordomus release from `majordomus.dev/build.json`, with `generated_at`.
@@ -43,7 +51,9 @@ stale silently; a measured snapshot with a date stays honest even when it ages.
 # Failure behaviour
 
 `scripts/check-data.mjs` exits 1 on a malformed catalogue, a project missing from the snapshot,
-a fork, a private repository, a dead live URL or a hand-typed Majordomus; `build-llms.mjs --check`
+a fork, a private repository, a dead live URL, a hand-typed Majordomus, a listed repository with
+no supervision answer, an index measured for another marker, or a curated project whose
+supervision differs between `data/github.json` and `data/index.json`; `build-llms.mjs --check`
 exits 1 on a stale `llms.txt`.
 
 # Verification

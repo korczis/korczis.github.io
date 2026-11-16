@@ -15,6 +15,13 @@
 #
 # Majordomus supervision is never typed here: it is measured (rule project.data-measured).
 
+# What makes a repository supervised by Majordomus: the file its layer is discovered by
+# (.ai/manifest.yaml on the default branch). Every fetcher asks every forge for this one path
+# (scripts/lib/forge.mjs): the curated projects (npm run data) and every original repository on
+# GitHub and GitLab (npm run index, or `-- --supervision` alone).
+[supervision]
+marker = ".ai/manifest.yaml"
+
 # The derived index of every public repository (scripts/fetch-index.mjs). Owner-editable lists:
 #   mirrors  upstream code imported with its history squashed (the contributor test cannot see
 #            it): counted as mirrors, never listed as the owner's work
