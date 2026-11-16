@@ -195,6 +195,10 @@ A push to `master` runs `.github/workflows/pages.yml` in three stages:
    artefact (the list is read from the artefact). It then runs the same browser audit against the
    public site and asks every linked live project whether it answers.
 
+`.github/workflows/ci.yml` runs once per pull request into `master` and as this first stage; a
+branch push does not run it a second time. A branch without a pull request is checked by its
+pre-push hook, or on demand with `gh workflow run ci.yml --ref <branch>`.
+
 `.github/workflows/monitor.yml` repeats that production check every day, and you can also start
 it by hand from the Actions tab.
 
