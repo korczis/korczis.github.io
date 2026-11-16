@@ -349,14 +349,16 @@ const builtFile = (rel) => join(SITE_DIR, rel === '' || rel.endsWith('/') ? `${r
 const langOfPath = (rel) => (OTHER_LANGS.includes(rel.split('/')[0]) ? rel.split('/')[0] : DEFAULT_LANG);
 
 // A page of another language than the default links to pages of its own language: every internal
-// link without a file extension (a page, not an asset, llms*.txt, a schema, an OG image or the
-// sitemap) stays under /<lang>/, except the language switch itself (hreflang).
+// link without a file extension (a page, not an asset, llms*.txt, a schema, an OG image, the
+// sitemap or a well-known URI) stays under /<lang>/, except the language switch itself (hreflang).
 function languageFinding(fromRel, raw, abs, hreflang) {
   const lang = langOfPath(fromRel);
   if (lang === DEFAULT_LANG || hreflang) return null;
   const rel = internal(abs);
   if (rel === null) return null;
   if (/\.[a-z0-9]+$/i.test(rel.split('/').pop()) && !rel.endsWith('.html')) return null;
+  // A well-known URI (RFC 8615: the API catalogue) is a machine resource with no language.
+  if (rel.startsWith('.well-known/')) return null;
   return rel.split('/')[0] === lang ? null : `/${fromRel}: link ${raw} leaves /${lang}/`;
 }
 
