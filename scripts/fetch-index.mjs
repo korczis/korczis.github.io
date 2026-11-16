@@ -103,10 +103,15 @@ async function githubRepos(stored) {
 // activity is the one already measured keeps its stored share (and language), and only active
 // projects are asked again. That keeps an anonymous refresh within GitLab's rate limits. A
 // project's primary language comes from /projects/:id/languages, asked only for original work.
+// A spent budget is per project, not per listing: the listing (every project, forks included) is
+// already read, and each project the budget no longer reaches keeps its last measurement, or is
+// counted as unreadable, so the GitLab, fork and mirror counts stay whole.
 async function gitlabRepos(stored) {
   const known = lastShare(stored, 'gitlab');
   let reused = 0;
   let kept = 0;
+  let spent = null;
+  const noteSpent = (error) => { if (error instanceof GitLabBudgetError) spent ??= error.message; };
   const all = (await paginate((page) => gitlab(`/users/${me.gitlab}/projects?visibility=public&per_page=100&page=${page}`), { maxPages: 50 }))
     // Authenticated, the API also returns private projects: only public ones are listed.
     .filter((p) => p.visibility === 'public');
@@ -123,15 +128,14 @@ async function gitlabRepos(stored) {
           .map((c) => ({ name: c.name, count: c.commits })),
         isOwner,
         previous: before?.share,
-        // A spent budget ends the whole GitLab reading; any other failure is this project's alone.
-        rethrow: (error) => error instanceof GitLabBudgetError,
+        rethrow: (error) => { noteSpent(error); return false; },
       });
       if (measured.state === 'kept') kept += 1;
     }
     let language = unchanged && !before.hosts?.github ? before.language ?? null : null;
     if (!language && !p.forked_from_project && measured.share !== null && measured.share >= 0.5) {
       language = await gitlab(`/projects/${p.id}/languages`).then(primaryLanguage, (error) => {
-        if (error instanceof GitLabBudgetError) throw error;
+        noteSpent(error);
         return before?.language ?? null;
       });
     }
@@ -153,7 +157,8 @@ async function gitlabRepos(stored) {
       state: measured.state,
     };
   }, 4).then((list) => {
-    console.error(`GitLab: ${list.length} public projects, ${reused} shares reused from the last measurement, ${kept} kept after an error`);
+    console.error(`GitLab: ${list.length} public projects, ${reused} shares reused from the last measurement, ${kept} kept after an error` +
+      `${spent ? `; ${spent}, the projects after it kept their last measurement` : ''}`);
     return list;
   });
 }
