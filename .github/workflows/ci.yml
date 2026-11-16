@@ -1,14 +1,15 @@
 name: CI
 
-# Runs on every branch but master, on every pull request into master (the merge result, and the
-# commit lint over exactly the pull request's commits), and is called by pages.yml for master, so
-# the gate in front of a deployment is exactly the gate in front of a merge. A newer push to a
-# branch or a pull request cancels the run it supersedes.
+# Runs once per pull request into master (the merge result, and the commit lint over exactly the
+# pull request's commits) and is called by pages.yml for master, so the gate in front of a
+# deployment is exactly the gate in front of a merge. A branch push does not run it as well: with
+# a pull request open that was the same gate twice. A branch without a pull request is checked by
+# its pre-push hook, or on demand: gh workflow run ci.yml --ref <branch>. A newer push to a pull
+# request cancels the run it supersedes; a run for master or on demand is never cancelled.
 on:
-  push:
-    branches-ignore: [master]
   pull_request:
     branches: [master]
+  workflow_dispatch:
   workflow_call:
     inputs:
       runner:
@@ -26,7 +27,7 @@ permissions:
 
 concurrency:
   group: ci-${{ github.workflow }}-${{ github.ref }}-${{ github.event_name }}
-  cancel-in-progress: ${{ github.event_name == 'push' || github.event_name == 'pull_request' }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   commits:
