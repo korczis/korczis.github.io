@@ -6,8 +6,9 @@ name: Refresh
 # leaves the site as it was.
 #
 # GitHub drops scheduled runs under load (2026-11-13..16: two of four a day ran), so the schedule
-# fires hourly and a run whose data on master is younger than DUE_HOURS stops after the checkout.
-# A dropped run costs an hour, not six. A run started by hand always measures.
+# fires hourly and measures once the data on master is REFRESH_HOURS old (an hour of margin for
+# the schedule's jitter); a younger run stops after the checkout. A dropped run costs an hour, not
+# six. A run started by hand always measures. REFRESH_HOURS is the cadence the pages describe.
 on:
   schedule:
     - cron: '23 * * * *'
@@ -30,22 +31,23 @@ jobs:
       GH_TOKEN: ${{ github.token }}
       GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
       MAJORDOMUS_VERSION: v1.0.1
-      DUE_HOURS: 5
+      REFRESH_HOURS: 6
     steps:
       # Full history: the commit hooks run majordomus doctor, whose clone checks read it.
       - uses: actions/checkout@v7
         with:
           fetch-depth: 0
-      # Due when started by hand, or when the data is older than DUE_HOURS (no install needed).
+      # Due when started by hand, or when the data is older than REFRESH_HOURS - 1 (no install).
       - name: Is a refresh due?
         id: due
         env:
           EVENT: ${{ github.event_name }}
         run: |
-          if [ "$EVENT" != schedule ] || ! MAX_HOURS="$DUE_HOURS" node scripts/check-fresh.mjs; then
+          due_after=$((REFRESH_HOURS - 1))
+          if [ "$EVENT" != schedule ] || ! MAX_HOURS="$due_after" node scripts/check-fresh.mjs; then
             echo "due=true" >> "$GITHUB_OUTPUT"
           else
-            echo "not due: the data on master is younger than $DUE_HOURS h"
+            echo "not due: the data on master is younger than $due_after h"
           fi
       - uses: ./.github/actions/setup
         if: steps.due.outputs.due == 'true'
