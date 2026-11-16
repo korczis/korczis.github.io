@@ -1524,3 +1524,27 @@ cs = "majordomus.dev"
 [ai_measured_with]
 en = "Indexed by Majordomus {v} from the tracked .ai/ tree; a gate refuses a change to .ai/ that was not indexed again. Source:"
 cs = "Indexováno Majordomem {v} z trackovaného stromu .ai/; gate odmítne změnu .ai/, která nebyla znovu indexována. Zdroj:"
+
+[kind_interface]
+en = "Interface"
+cs = "Rozhraní"
+
+[hint_iface_ai]
+en = "Every object of the Majordomus layer with its MCP resource URI"
+cs = "Každý objekt vrstvy Majordomu s jeho URI zdroje MCP"
+
+[hint_iface_mcp]
+en = "Connect an agent to this repository's .ai layer over MCP"
+cs = "Připojte agenta k vrstvě .ai tohoto repozitáře přes MCP"
+
+[hint_iface_api]
+en = "Every published file, described in OpenAPI 3.1"
+cs = "Každý publikovaný soubor popsaný v OpenAPI 3.1"
+
+[hint_iface_swagger]
+en = "openapi.json rendered by Swagger UI"
+cs = "openapi.json vykreslené ve Swagger UI"
+
+[hint_iface_site_json]
+en = "The whole site as data: pages, projects, repositories"
+cs = "Celý web jako data: stránky, projekty, repozitáře"

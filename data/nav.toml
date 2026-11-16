@@ -119,32 +119,39 @@ palette = false
 # Swagger UI. The /interfaces/ page explains each.
 #
 #   key   i18n key of the label        icon   a name templates/components.html `icon` knows
+#   hint  i18n key of the palette's one-line description (templates/palette.json lists every tile)
 [[interfaces]]
 key = "iface_ai"
+hint = "hint_iface_ai"
 icon = "shield"
 path = "/interfaces/#ai"
 
 [[interfaces]]
 key = "iface_mcp"
+hint = "hint_iface_mcp"
 icon = "puzzle"
 path = "/interfaces/#mcp"
 
 [[interfaces]]
 key = "iface_api"
+hint = "hint_iface_api"
 icon = "code"
 path = "/interfaces/#api"
 
 [[interfaces]]
 key = "iface_swagger"
+hint = "hint_iface_swagger"
 icon = "external"
 swagger = true
 
 [[interfaces]]
 key = "iface_llms"
+hint = "hint_llms"
 icon = "book"
 file = "llms.txt"
 
 [[interfaces]]
 key = "iface_site_json"
+hint = "hint_iface_site_json"
 icon = "graph"
 file = "site.json"

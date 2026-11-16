@@ -70,6 +70,7 @@ jobs:
         uses: actions/upload-pages-artifact@v5
         with:
           path: site
+          include-hidden-files: true
       # deploy-pages fails now and then with "Fetching artifact metadata failed" right after the
       # upload (the artifact is not yet visible to the Pages API). One fresh upload under a new name
       # and a second deploy get past it; any other failure fails the second deploy as well.
@@ -85,6 +86,7 @@ jobs:
         uses: actions/upload-pages-artifact@v5
         with:
           path: site
+          include-hidden-files: true
           name: github-pages-retry
       - name: Deploy again
         id: redeploy

@@ -1,0 +1,36 @@
+{
+ "linkset": [
+  {
+   "anchor": "https://korczis.github.io/",
+   "service-desc": [
+    {
+     "href": "https://korczis.github.io/openapi.json",
+     "type": "application/openapi+json"
+    }
+   ],
+   "service-doc": [
+    {
+     "href": "https://korczis.github.io/interfaces/",
+     "type": "text/html",
+     "hreflang": [
+      "en"
+     ]
+    },
+    {
+     "href": "https://korczis.github.io/cs/interfaces/",
+     "type": "text/html",
+     "hreflang": [
+      "cs"
+     ]
+    }
+   ],
+   "describedby": [
+    {
+     "href": "https://korczis.github.io/ai.json",
+     "type": "application/json",
+     "title": "The Majordomus layer (.ai/) with MCP resource URIs"
+    }
+   ]
+  }
+ ]
+}
