@@ -1,6 +1,6 @@
 {
  "schema": "korczis-hub-recent/v1",
- "generated_at": "2026-11-16T00:14:06Z",
+ "generated_at": "2026-11-16T01:45:27Z",
  "window_days": 1461,
  "periods": [
   {
@@ -26,9 +26,29 @@
    "category": "web",
    "language": "JavaScript",
    "created_at": "2024-12-24T16:48:15Z",
-   "last_commit": "2026-11-15T23:06:33Z",
-   "last_message": "docs(ai): record the owner's answer on the scope of a full refresh",
+   "last_commit": "2026-11-16T01:16:38Z",
+   "last_message": "chore(merge): integrate #21, Majordomus supervision inferred for every repository on every forge",
    "commits": [
+    {
+     "at": "2026-11-16T01:16:38Z",
+     "message": "chore(merge): integrate #21, Majordomus supervision inferred for every repository on every forge",
+     "url": "https://github.com/korczis/korczis.github.io/commit/066fbf823eca71f37933ebab32a8b78e6936d9d0"
+    },
+    {
+     "at": "2026-11-16T00:18:00Z",
+     "message": "refactor(data): recent work reads every forge through the forge layer",
+     "url": "https://github.com/korczis/korczis.github.io/commit/9ef233b7a41735a43b669d3f59b04de36d940b24"
+    },
+    {
+     "at": "2026-11-16T00:10:53Z",
+     "message": "feat(data): infer Majordomus supervision of every repository on every forge",
+     "url": "https://github.com/korczis/korczis.github.io/commit/67f33bffdc8cd25532a78c2399e37d4e4f97c9c8"
+    },
+    {
+     "at": "2026-11-16T00:10:31Z",
+     "message": "fix(data): a GitLab token that is not one line or is refused never costs the refresh",
+     "url": "https://github.com/korczis/korczis.github.io/commit/f05c8acce30ef0efff6a2b48039683510c6bbaaf"
+    },
     {
      "at": "2026-11-15T23:06:33Z",
      "message": "docs(ai): record the owner's answer on the scope of a full refresh",
@@ -158,26 +178,6 @@
      "at": "2026-11-15T01:34:42Z",
      "message": "fix(nda): CI checks every name and every commit message",
      "url": "https://github.com/korczis/korczis.github.io/commit/22ec698b69edae726043a11986c808258b1dd0b2"
-    },
-    {
-     "at": "2026-11-15T01:06:48Z",
-     "message": "chore(data): merge the six-hourly refresh from master and re-derive",
-     "url": "https://github.com/korczis/korczis.github.io/commit/d8d79c02d3581b2ecaa98156a4b642f67c446e19"
-    },
-    {
-     "at": "2026-11-15T00:42:30Z",
-     "message": "feat(shell): the Pro sidebar collapses to its icons on desktop",
-     "url": "https://github.com/korczis/korczis.github.io/commit/bff11687fc33cdfd82f8c574be5fd02310c35744"
-    },
-    {
-     "at": "2026-11-15T00:25:55Z",
-     "message": "feat(experience): each engagement says what was solved, and every anchor resolves",
-     "url": "https://github.com/korczis/korczis.github.io/commit/1f8164fe8e9f0da81fb9cd733c2a5f41e575e86d"
-    },
-    {
-     "at": "2026-11-14T23:51:31Z",
-     "message": "fix(ci): one failing gate no longer hides the verdicts of the others",
-     "url": "https://github.com/korczis/korczis.github.io/commit/c49f7b685c76138c658362e7382fc06c448a9b21"
     }
    ],
    "languages": [
@@ -441,6 +441,423 @@
    "supervised": true
   },
   {
+   "name": "kompendium-epistemicke-anihilace",
+   "period": 12,
+   "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
+   "category": "knowledge",
+   "language": "Elixir",
+   "created_at": "2026-11-09T22:04:50Z",
+   "last_commit": "2026-11-15T22:18:26Z",
+   "last_message": "Merge remote-tracking branch 'origin/main' into refactor/check-ia-list-all",
+   "commits": [
+    {
+     "at": "2026-11-15T22:18:26Z",
+     "message": "Merge remote-tracking branch 'origin/main' into refactor/check-ia-list-all",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/fc9576ba73264b5ea38349664eed08d931103557"
+    },
+    {
+     "at": "2026-11-15T20:26:59Z",
+     "message": "Merge origin/main (637d89c9) into fix/ea-code-aliases",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/db996a231c215c18460cf4fd1296286647b14fc4"
+    },
+    {
+     "at": "2026-11-15T20:25:12Z",
+     "message": "Merge remote-tracking branch 'origin/main' into refactor/check-ia-list-all",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/c7dfa39be2b5fbb790c367e260f4576d841bd204"
+    },
+    {
+     "at": "2026-11-15T19:56:02Z",
+     "message": "fix(scripts): alias-collision: an alias is a free old address",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/e35672fc568e8185c82793cb902cd8e9b8bef024"
+    },
+    {
+     "at": "2026-11-15T19:23:13Z",
+     "message": "fix(content): the six renumbered techniques' old addresses redirect again",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/2f75affad4bc957811485a5dbbeb70f95100788f"
+    },
+    {
+     "at": "2026-11-15T18:13:57Z",
+     "message": "Merge origin/main (c5200028) into fix/qr-karty-vyjimka",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/637d89c95d63b6b3b1c15d0911e26be0f20e1294"
+    },
+    {
+     "at": "2026-11-15T17:51:32Z",
+     "message": "Merge remote-tracking branch 'origin/main' into refactor/check-ia-list-all",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/b73d60bd54cf0c86f20a1e874c2dcacd93503dd0"
+    },
+    {
+     "at": "2026-11-15T17:35:55Z",
+     "message": "chore(data): baseline after the merge — exactly the 123 cards, again",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/97b89a1e83757e4b8bb712ae3355f3eb45a8c065"
+    },
+    {
+     "at": "2026-11-15T17:08:19Z",
+     "message": "Merge origin/main (53603b1c) into fix/qr-karty-vyjimka",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/53632f27949754aff055f35bb82acc3eda065d9b"
+    },
+    {
+     "at": "2026-11-15T16:17:36Z",
+     "message": "Merge origin/main (53603b1c) into fix/duplicate-ea-codes",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/c5200028ef49e5e9c4a3f3675394b6a7ccf0c656"
+    },
+    {
+     "at": "2026-11-15T15:27:14Z",
+     "message": "chore(data): derived data and graphics after the EA renumbering",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/26ca6be9c95de6204b87a789ee35c86075b9b6bc"
+    },
+    {
+     "at": "2026-11-15T15:14:40Z",
+     "message": "Merge remote-tracking branch 'origin/main' into refactor/check-ia-list-all",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/7ef950b54d1257266c207ee5001be21217152d39"
+    },
+    {
+     "at": "2026-11-15T15:09:54Z",
+     "message": "chore(data): baseline after the merge — one page, the one this slice changed",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/53603b1ce89057d279c9fccfe45813ce815ff0a4"
+    },
+    {
+     "at": "2026-11-15T15:07:40Z",
+     "message": "fix(data): the catalogue sources name the renumbered technique pages",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/67c29e41bc82b4959436ab16b8affdd4849808e5"
+    },
+    {
+     "at": "2026-11-15T15:01:47Z",
+     "message": "fix(scripts): duplicate-ea-code: one EA code names one technique page",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/8d0096685efbfb87befa0b7257d9f38f076f8d30"
+    },
+    {
+     "at": "2026-11-15T14:56:46Z",
+     "message": "fix(content): six techniques that shared another's EA code get codes of their own",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/a9073929da9fc58364c13dbf950e2c525cefe02b"
+    },
+    {
+     "at": "2026-11-15T14:54:37Z",
+     "message": "Merge origin/main (ea220db8) into fix/kapitoly-ramec-tvrzeni",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/abfc7bd0a7f018d9d4c30b68a067684a8076e176"
+    },
+    {
+     "at": "2026-11-15T13:01:11Z",
+     "message": "Merge remote-tracking branch 'origin/main' into refactor/check-ia-list-all",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/9292f7053b4f1136e8c577e7b84e6cecd5c7e0a9"
+    },
+    {
+     "at": "2026-11-15T10:26:41Z",
+     "message": "Merge origin/main (245eb4ff) into fix/case-16-plain-stages",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/ea220db8aae139272472981308907854e1568d89"
+    },
+    {
+     "at": "2026-11-15T09:21:26Z",
+     "message": "chore(data): odvozená data po sloučení main",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/245eb4ff39804bd80c01d4bee1186357586dcd88"
+    },
+    {
+     "at": "2026-11-15T09:19:33Z",
+     "message": "Merge origin/main (57f3261c) into fix/disk-floor",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/ef2add7542a1df992988af99acca2d037803fcc5"
+    },
+    {
+     "at": "2026-11-15T09:18:32Z",
+     "message": "fix(content): the case studies' S1–S5 stage labels are plain text, as the stage view now reads them",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/68bae65d747313fa62f525e62ee3e6140c2e2757"
+    },
+    {
+     "at": "2026-11-15T08:49:05Z",
+     "message": "chore(data): baseline jednou přerovnaná do kanonického pořadí",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/3529809540a7aca4c3c1f7f4474cce2a02cf5af6"
+    },
+    {
+     "at": "2026-11-15T08:48:52Z",
+     "message": "fix(scripts): baseline v kanonickém pořadí i v seznamu pravidel stránky",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/fb8ff7fcc59fdde92d3d03c16846029efe3cb7b1"
+    },
+    {
+     "at": "2026-11-15T08:14:22Z",
+     "message": "chore(data): derived data regenerated after merging the stack's main",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/57f3261ce27291fa94ec211e80d81d7c4356d821"
+    },
+    {
+     "at": "2026-11-15T07:55:40Z",
+     "message": "chore(data): baseline after the card exemption — exactly the 123 cards",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/37e77486c20fbc91d1a2c451ef0598c242cba7f3"
+    },
+    {
+     "at": "2026-11-15T07:55:28Z",
+     "message": "Merge origin/main (c563436e) into fix/pripad-faze-plain-stages",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/fccb012fd356bbef020353a38763786751b58cab"
+    },
+    {
+     "at": "2026-11-15T07:38:31Z",
+     "message": "feat(gate): a quick-reference card owes no citations while it links its parent page",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/e36139a9145a8f061d196131de91d55df014ada0"
+    },
+    {
+     "at": "2026-11-15T06:59:56Z",
+     "message": "chore(data): the IA baseline in the order verify-content writes it, after merging b35b711d",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/c563436e1060480e64f15964b4612d8a4835ee00"
+    },
+    {
+     "at": "2026-11-15T06:50:03Z",
+     "message": "chore(data): derived data after the chapter-claims slice",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/180d71088a9a9c70a9649321f8e663ed0eee9cf5"
+    }
+   ],
+   "languages": [
+    {
+     "name": "Elixir",
+     "share": 33.8
+    },
+    {
+     "name": "JavaScript",
+     "share": 21.7
+    },
+    {
+     "name": "Python",
+     "share": 15.5
+    },
+    {
+     "name": "HTML",
+     "share": 13.3
+    },
+    {
+     "name": "Rust",
+     "share": 8.5
+    },
+    {
+     "name": "Shell",
+     "share": 7
+    }
+   ],
+   "readme": "Defenzivní taxonomie jevů, které systematicky rozkládají schopnost člověka poznávat.",
+   "topics": [
+    "czech",
+    "epistemology",
+    "flowbite",
+    "kompendium",
+    "majordomus",
+    "manipulation",
+    "psychology",
+    "taxonomy",
+    "zola"
+   ],
+   "hosts": {
+    "github": "https://github.com/korczis/kompendium-epistemicke-anihilace"
+   },
+   "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+   "curated": true,
+   "stars": 0,
+   "supervised": true
+  },
+  {
+   "name": "algoglyph",
+   "period": 12,
+   "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
+   "category": "science",
+   "language": "TypeScript",
+   "created_at": "2026-11-11T18:09:38Z",
+   "last_commit": "2026-11-15T21:24:49Z",
+   "last_message": "Merge remote-tracking branch 'origin/feature/flow-dag' into fix/charts-by-title",
+   "commits": [
+    {
+     "at": "2026-11-15T21:24:49Z",
+     "message": "Merge remote-tracking branch 'origin/feature/flow-dag' into fix/charts-by-title",
+     "url": "https://github.com/korczis/algoglyph/commit/b2017689a6578840a7c605b554b64d9aa089ef14"
+    },
+    {
+     "at": "2026-11-15T21:24:49Z",
+     "message": "Merge remote-tracking branch 'origin/feature/graph-7b-articles-analysis' into fix/charts-by-title",
+     "url": "https://github.com/korczis/algoglyph/commit/43b4e8c06e91ecf6c2e0feba201c2a3cab02c04d"
+    },
+    {
+     "at": "2026-11-15T20:32:12Z",
+     "message": "docs(flow): RFC 0001, ADR 0011 and rule project.typed-flow",
+     "url": "https://github.com/korczis/algoglyph/commit/7681a6f991b29a10fd9c14ba0cb447efd990df46"
+    },
+    {
+     "at": "2026-11-15T20:31:00Z",
+     "message": "feat(flow): typed reactive DAG over the collection's kernels at #/flow",
+     "url": "https://github.com/korczis/algoglyph/commit/0be94974b07707ff7c3a420e5c7602cdfb975ae5"
+    },
+    {
+     "at": "2026-11-15T20:00:39Z",
+     "message": "feat(catalogue): the four layout entries cite the work each algorithm comes from",
+     "url": "https://github.com/korczis/algoglyph/commit/4565a43812b415653040e7b732d2a1fc21a90ef6"
+    },
+    {
+     "at": "2026-11-15T19:57:27Z",
+     "message": "Merge remote-tracking branch 'origin/feature/graph-7b-articles-layout' into feature/graph-7b-articles-analysis",
+     "url": "https://github.com/korczis/algoglyph/commit/0f01a1d0b84c123471c693e478bacecd217e6e65"
+    },
+    {
+     "at": "2026-11-15T19:56:37Z",
+     "message": "Merge remote-tracking branch 'origin/feature/graph-7b-articles-connectivity' into feature/graph-7b-articles-analysis",
+     "url": "https://github.com/korczis/algoglyph/commit/837581e7c3ce125cf8473787ccb3464872e3964a"
+    },
+    {
+     "at": "2026-11-15T19:54:21Z",
+     "message": "docs(catalogue): spreading activation documented against a linear solve",
+     "url": "https://github.com/korczis/algoglyph/commit/db856989510e9998dda0620d700df449cfbe9a44"
+    },
+    {
+     "at": "2026-11-15T19:53:54Z",
+     "message": "docs(catalogue): louvain and leiden documented, modularity never below the singletons",
+     "url": "https://github.com/korczis/algoglyph/commit/f065deef262d8900031f57c5cad4147d8bbb16e6"
+    },
+    {
+     "at": "2026-11-15T19:51:40Z",
+     "message": "docs(catalogue): label propagation documented, its labels between the components and half the vertices",
+     "url": "https://github.com/korczis/algoglyph/commit/b67d7057e6d562a11986f60b0168139eed15c133"
+    },
+    {
+     "at": "2026-11-15T19:51:05Z",
+     "message": "docs(ownership-cycles): the v2 article, with bounds from the strong components",
+     "url": "https://github.com/korczis/algoglyph/commit/3c8303f41cb6c5e98d73bb58be0f50cb2f635ec8"
+    },
+    {
+     "at": "2026-11-15T19:50:24Z",
+     "message": "docs(catalogue): ego network documented, the rings as breadth-first levels",
+     "url": "https://github.com/korczis/algoglyph/commit/9ce94ef8533f1beeebf0c7f62cbd00b2bd17ee33"
+    },
+    {
+     "at": "2026-11-15T19:50:08Z",
+     "message": "docs(hamilton-path): the v2 article, with claims from the subset programme and the snake",
+     "url": "https://github.com/korczis/algoglyph/commit/ebd200ab114d5403267f3ca159f1413560b66f08"
+    },
+    {
+     "at": "2026-11-15T19:49:29Z",
+     "message": "docs(catalogue): effective ownership documented, the shares a linear solve",
+     "url": "https://github.com/korczis/algoglyph/commit/8c9d60e49e3087285a757e273a0a1a31ff3ca0a2"
+    },
+    {
+     "at": "2026-11-15T19:49:01Z",
+     "message": "docs(euler-tour): the v2 article, with claims resting on Euler's condition",
+     "url": "https://github.com/korczis/algoglyph/commit/506b83ba6d216fc29f4df35e3e64b70069b2ce75"
+    },
+    {
+     "at": "2026-11-15T19:48:51Z",
+     "message": "docs(catalogue): centrality comparison documented, the eigenvalue against Jacobi",
+     "url": "https://github.com/korczis/algoglyph/commit/5f0d16c3245252a7056319a85f8fde9e57e85dde"
+    },
+    {
+     "at": "2026-11-15T19:48:04Z",
+     "message": "docs(connected-components): the v2 article, with claims from breadth-first search",
+     "url": "https://github.com/korczis/algoglyph/commit/dbe773cef42cfd259eee4b9fb0ea61dfba9eaa32"
+    },
+    {
+     "at": "2026-11-15T19:47:41Z",
+     "message": "docs(catalogue): brandes betweenness documented against the pair formula",
+     "url": "https://github.com/korczis/algoglyph/commit/3688e43480e5bc1f47e183a844ae77541aa7257f"
+    },
+    {
+     "at": "2026-11-15T19:47:27Z",
+     "message": "docs(bridges): the v2 article, with claims from deleting each edge",
+     "url": "https://github.com/korczis/algoglyph/commit/8f58d11506cbcfa408e8ed5d3ddd3a3ce98ee64d"
+    },
+    {
+     "at": "2026-11-15T19:46:50Z",
+     "message": "docs(catalogue): personalised pagerank documented, the subject's share bounded below by 1 - d",
+     "url": "https://github.com/korczis/algoglyph/commit/55693b54dfafcc4ffe15f7d47a33be78dc7348f7"
+    },
+    {
+     "at": "2026-11-15T19:46:15Z",
+     "message": "docs(catalogue): pagerank documented, its fixed point a linear solve",
+     "url": "https://github.com/korczis/algoglyph/commit/5bebecb09d781ff4adbe05ccc5713444d35bddaa"
+    },
+    {
+     "at": "2026-11-15T19:45:57Z",
+     "message": "docs(articulation-points): the v2 article, with claims from deletion and the block identity",
+     "url": "https://github.com/korczis/algoglyph/commit/16bb0699f242608b79da76d4761e546aea0989c8"
+    },
+    {
+     "at": "2026-11-15T19:33:09Z",
+     "message": "feat(sugiyama-layout): the v2 article, with claims the test computes itself",
+     "url": "https://github.com/korczis/algoglyph/commit/d2ecab89ccdd4f50ff7e370486a6e291483a594a"
+    },
+    {
+     "at": "2026-11-15T19:33:01Z",
+     "message": "test(pathfinding-terrain): compare one new map at 1440 px, in lockstep, inside the test limit",
+     "url": "https://github.com/korczis/algoglyph/commit/61b38011ff462631878258f48073d676a169b05e"
+    },
+    {
+     "at": "2026-11-15T19:29:12Z",
+     "message": "feat(geo-graph): the v2 article, with claims the test computes itself",
+     "url": "https://github.com/korczis/algoglyph/commit/4b5b23e16d1e564f948a6c60f12d3e2b96940c9e"
+    },
+    {
+     "at": "2026-11-15T19:25:18Z",
+     "message": "feat(force-atlas2): the v2 article, with claims the test computes itself",
+     "url": "https://github.com/korczis/algoglyph/commit/6e8ca6e03b6451b2843bfe34b389c1076d19e88a"
+    },
+    {
+     "at": "2026-11-15T19:21:48Z",
+     "message": "feat(catalogue): the sources the graph-analysis articles cite, each one read",
+     "url": "https://github.com/korczis/algoglyph/commit/a638445e34428c4f4edd3009bffa1bcf3b4c9146"
+    },
+    {
+     "at": "2026-11-15T19:20:29Z",
+     "message": "feat(fibonacci-sphere): the v2 article, with claims the test computes itself",
+     "url": "https://github.com/korczis/algoglyph/commit/01935c9c57ac396b48b7a51849560435fb08f49c"
+    },
+    {
+     "at": "2026-11-15T19:03:48Z",
+     "message": "Merge remote-tracking branch 'origin/feature/graph-7b-input-controls' into feature/graph-7b-articles-layout",
+     "url": "https://github.com/korczis/algoglyph/commit/cd65087f2722c79d6afe7ddf3f54eec7a097a936"
+    },
+    {
+     "at": "2026-11-15T19:03:45Z",
+     "message": "Merge remote-tracking branch 'origin/feature/graph-7b-input-controls' into feature/graph-7b-articles-connectivity",
+     "url": "https://github.com/korczis/algoglyph/commit/6881a141777800b654745046b39987383a4929b2"
+    }
+   ],
+   "languages": [
+    {
+     "name": "TypeScript",
+     "share": 80.9
+    },
+    {
+     "name": "Rust",
+     "share": 15.4
+    },
+    {
+     "name": "JavaScript",
+     "share": 2
+    },
+    {
+     "name": "HTML",
+     "share": 1.5
+    },
+    {
+     "name": "Shell",
+     "share": 0.1
+    },
+    {
+     "name": "Just",
+     "share": 0.1
+    }
+   ],
+   "readme": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js simulations whose every number is measured from the running state.",
+   "topics": [
+    "algorithms",
+    "alpinejs",
+    "creative-coding",
+    "data-visualization",
+    "flowbite",
+    "generative-art",
+    "majordomus",
+    "p5js",
+    "physics-simulation",
+    "tailwindcss",
+    "typescript",
+    "webgl"
+   ],
+   "hosts": {
+    "github": "https://github.com/korczis/algoglyph"
+   },
+   "site": "https://korczis.github.io/algoglyph/",
+   "curated": true,
+   "stars": 0,
+   "supervised": true
+  },
+  {
    "name": "sonic-playground",
    "period": 12,
    "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
@@ -629,213 +1046,6 @@
     "github": "https://github.com/korczis/sonic-playground"
    },
    "site": "https://korczis.github.io/sonic-playground/",
-   "curated": true,
-   "stars": 0,
-   "supervised": true
-  },
-  {
-   "name": "kompendium-epistemicke-anihilace",
-   "period": 12,
-   "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
-   "category": "knowledge",
-   "language": "Elixir",
-   "created_at": "2026-11-09T22:04:50Z",
-   "last_commit": "2026-11-15T20:26:59Z",
-   "last_message": "Merge origin/main (637d89c9) into fix/ea-code-aliases",
-   "commits": [
-    {
-     "at": "2026-11-15T20:26:59Z",
-     "message": "Merge origin/main (637d89c9) into fix/ea-code-aliases",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/db996a231c215c18460cf4fd1296286647b14fc4"
-    },
-    {
-     "at": "2026-11-15T19:56:02Z",
-     "message": "fix(scripts): alias-collision: an alias is a free old address",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/e35672fc568e8185c82793cb902cd8e9b8bef024"
-    },
-    {
-     "at": "2026-11-15T19:23:13Z",
-     "message": "fix(content): the six renumbered techniques' old addresses redirect again",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/2f75affad4bc957811485a5dbbeb70f95100788f"
-    },
-    {
-     "at": "2026-11-15T18:13:57Z",
-     "message": "Merge origin/main (c5200028) into fix/qr-karty-vyjimka",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/637d89c95d63b6b3b1c15d0911e26be0f20e1294"
-    },
-    {
-     "at": "2026-11-15T17:35:55Z",
-     "message": "chore(data): baseline after the merge — exactly the 123 cards, again",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/97b89a1e83757e4b8bb712ae3355f3eb45a8c065"
-    },
-    {
-     "at": "2026-11-15T17:08:19Z",
-     "message": "Merge origin/main (53603b1c) into fix/qr-karty-vyjimka",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/53632f27949754aff055f35bb82acc3eda065d9b"
-    },
-    {
-     "at": "2026-11-15T16:17:36Z",
-     "message": "Merge origin/main (53603b1c) into fix/duplicate-ea-codes",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/c5200028ef49e5e9c4a3f3675394b6a7ccf0c656"
-    },
-    {
-     "at": "2026-11-15T15:27:14Z",
-     "message": "chore(data): derived data and graphics after the EA renumbering",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/26ca6be9c95de6204b87a789ee35c86075b9b6bc"
-    },
-    {
-     "at": "2026-11-15T15:09:54Z",
-     "message": "chore(data): baseline after the merge — one page, the one this slice changed",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/53603b1ce89057d279c9fccfe45813ce815ff0a4"
-    },
-    {
-     "at": "2026-11-15T15:07:40Z",
-     "message": "fix(data): the catalogue sources name the renumbered technique pages",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/67c29e41bc82b4959436ab16b8affdd4849808e5"
-    },
-    {
-     "at": "2026-11-15T15:01:47Z",
-     "message": "fix(scripts): duplicate-ea-code: one EA code names one technique page",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/8d0096685efbfb87befa0b7257d9f38f076f8d30"
-    },
-    {
-     "at": "2026-11-15T14:56:46Z",
-     "message": "fix(content): six techniques that shared another's EA code get codes of their own",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/a9073929da9fc58364c13dbf950e2c525cefe02b"
-    },
-    {
-     "at": "2026-11-15T14:54:37Z",
-     "message": "Merge origin/main (ea220db8) into fix/kapitoly-ramec-tvrzeni",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/abfc7bd0a7f018d9d4c30b68a067684a8076e176"
-    },
-    {
-     "at": "2026-11-15T10:26:41Z",
-     "message": "Merge origin/main (245eb4ff) into fix/case-16-plain-stages",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/ea220db8aae139272472981308907854e1568d89"
-    },
-    {
-     "at": "2026-11-15T09:21:26Z",
-     "message": "chore(data): odvozená data po sloučení main",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/245eb4ff39804bd80c01d4bee1186357586dcd88"
-    },
-    {
-     "at": "2026-11-15T09:19:33Z",
-     "message": "Merge origin/main (57f3261c) into fix/disk-floor",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/ef2add7542a1df992988af99acca2d037803fcc5"
-    },
-    {
-     "at": "2026-11-15T09:18:32Z",
-     "message": "fix(content): the case studies' S1–S5 stage labels are plain text, as the stage view now reads them",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/68bae65d747313fa62f525e62ee3e6140c2e2757"
-    },
-    {
-     "at": "2026-11-15T08:49:05Z",
-     "message": "chore(data): baseline jednou přerovnaná do kanonického pořadí",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/3529809540a7aca4c3c1f7f4474cce2a02cf5af6"
-    },
-    {
-     "at": "2026-11-15T08:48:52Z",
-     "message": "fix(scripts): baseline v kanonickém pořadí i v seznamu pravidel stránky",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/fb8ff7fcc59fdde92d3d03c16846029efe3cb7b1"
-    },
-    {
-     "at": "2026-11-15T08:14:22Z",
-     "message": "chore(data): derived data regenerated after merging the stack's main",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/57f3261ce27291fa94ec211e80d81d7c4356d821"
-    },
-    {
-     "at": "2026-11-15T07:55:40Z",
-     "message": "chore(data): baseline after the card exemption — exactly the 123 cards",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/37e77486c20fbc91d1a2c451ef0598c242cba7f3"
-    },
-    {
-     "at": "2026-11-15T07:55:28Z",
-     "message": "Merge origin/main (c563436e) into fix/pripad-faze-plain-stages",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/fccb012fd356bbef020353a38763786751b58cab"
-    },
-    {
-     "at": "2026-11-15T07:38:31Z",
-     "message": "feat(gate): a quick-reference card owes no citations while it links its parent page",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/e36139a9145a8f061d196131de91d55df014ada0"
-    },
-    {
-     "at": "2026-11-15T06:59:56Z",
-     "message": "chore(data): the IA baseline in the order verify-content writes it, after merging b35b711d",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/c563436e1060480e64f15964b4612d8a4835ee00"
-    },
-    {
-     "at": "2026-11-15T06:50:03Z",
-     "message": "chore(data): derived data after the chapter-claims slice",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/180d71088a9a9c70a9649321f8e663ed0eee9cf5"
-    },
-    {
-     "at": "2026-11-15T06:38:00Z",
-     "message": "Merge origin/main (b35b711d) into feature/glossary-lists",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/e84e6aec66b1460c18b327baf2ee86ed6791cd5e"
-    },
-    {
-     "at": "2026-11-15T06:25:51Z",
-     "message": "fix(content): the chapters claim only what the book can show",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/04a93e02462318ef18fc56f60a21caa492db24a9"
-    },
-    {
-     "at": "2026-11-15T06:21:00Z",
-     "message": "Merge origin/main (b35b711d) into fix/disk-floor",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/070f0a0b307cb5cac53a202e443cb9ced223ccb5"
-    },
-    {
-     "at": "2026-11-15T05:36:15Z",
-     "message": "docs(knowledge): praxe bran: co se v baseline pohnulo, commit před sloučením, práh disku",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/48ddd09ab22631a3aa795e1362646b840fc31018"
-    },
-    {
-     "at": "2026-11-15T05:27:05Z",
-     "message": "chore(data): the IA baseline in the order verify-content writes it, after merging 6dad63af",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/50c1294fff3fadafc7808e489e8ba061ebcb9655"
-    }
-   ],
-   "languages": [
-    {
-     "name": "Elixir",
-     "share": 33.8
-    },
-    {
-     "name": "JavaScript",
-     "share": 21.7
-    },
-    {
-     "name": "Python",
-     "share": 15.5
-    },
-    {
-     "name": "HTML",
-     "share": 13.3
-    },
-    {
-     "name": "Rust",
-     "share": 8.5
-    },
-    {
-     "name": "Shell",
-     "share": 7
-    }
-   ],
-   "readme": "Defenzivní taxonomie jevů, které systematicky rozkládají schopnost člověka poznávat.",
-   "topics": [
-    "czech",
-    "epistemology",
-    "flowbite",
-    "kompendium",
-    "majordomus",
-    "manipulation",
-    "psychology",
-    "taxonomy",
-    "zola"
-   ],
-   "hosts": {
-    "github": "https://github.com/korczis/kompendium-epistemicke-anihilace"
-   },
-   "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
    "curated": true,
    "stars": 0,
    "supervised": true
@@ -1041,216 +1251,6 @@
    "site": "https://korczis.github.io/oscilla/",
    "curated": true,
    "stars": 1,
-   "supervised": true
-  },
-  {
-   "name": "algoglyph",
-   "period": 12,
-   "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
-   "category": "science",
-   "language": "TypeScript",
-   "created_at": "2026-11-11T18:09:38Z",
-   "last_commit": "2026-11-15T17:15:57Z",
-   "last_message": "Merge remote-tracking branch 'origin/fix/rebuild-corners' into fix/charts-by-title",
-   "commits": [
-    {
-     "at": "2026-11-15T17:15:57Z",
-     "message": "Merge remote-tracking branch 'origin/fix/rebuild-corners' into fix/charts-by-title",
-     "url": "https://github.com/korczis/algoglyph/commit/9bdb623cf5d2454a327176963ebf95cf69df3344"
-    },
-    {
-     "at": "2026-11-15T17:12:22Z",
-     "message": "Merge remote-tracking branch 'origin/feature/collisions' into fix/charts-by-title",
-     "url": "https://github.com/korczis/algoglyph/commit/699b9f0a48153cb38ee56e5f5ba9adc1a6b2ba97"
-    },
-    {
-     "at": "2026-11-15T16:03:25Z",
-     "message": "test(budget): read past the end of a run at every range's two ends",
-     "url": "https://github.com/korczis/algoglyph/commit/75c52c515b9ddcf8ce65f13aa68ac173d403ebef"
-    },
-    {
-     "at": "2026-11-15T16:03:20Z",
-     "message": "Merge remote-tracking branch 'origin/feature/graph-controls' into fix/charts-by-title",
-     "url": "https://github.com/korczis/algoglyph/commit/2818b5f29c155ae37438d565f72bdddbe22776af"
-    },
-    {
-     "at": "2026-11-15T15:52:39Z",
-     "message": "Merge remote-tracking branch 'origin/feature/constrained-motion' into fix/charts-by-title",
-     "url": "https://github.com/korczis/algoglyph/commit/3fc3d3589218019d34510d44122fb7adf9fda99d"
-    },
-    {
-     "at": "2026-11-15T15:44:17Z",
-     "message": "fix(pathfinding-terrain): the next map is built over frames, counted",
-     "url": "https://github.com/korczis/algoglyph/commit/e3fb659c6420d475eac1a1502993fc17fbff2995"
-    },
-    {
-     "at": "2026-11-15T14:24:16Z",
-     "message": "Merge remote-tracking branch 'origin/feature/least-action' into fix/charts-by-title",
-     "url": "https://github.com/korczis/algoglyph/commit/7c5c73e69dababb9e02cbe22a87d273b0d340863"
-    },
-    {
-     "at": "2026-11-15T14:14:52Z",
-     "message": "fix(physics): the billiard records at most two million events",
-     "url": "https://github.com/korczis/algoglyph/commit/e4ba675920361e56e447e7a3719dc2fa2fa6dd2a"
-    },
-    {
-     "at": "2026-11-15T14:13:56Z",
-     "message": "feat(physics): collisions on the hard-disk event core, from restitution to π",
-     "url": "https://github.com/korczis/algoglyph/commit/89533ece82520684e2ebc28e5a686fe10c618a50"
-    },
-    {
-     "at": "2026-11-15T14:05:44Z",
-     "message": "perf(physics): constrained-motion takes at most 4000 bead steps a frame",
-     "url": "https://github.com/korczis/algoglyph/commit/789f5b59056edba6e1df0c53401d30c0447de93b"
-    },
-    {
-     "at": "2026-11-15T14:05:32Z",
-     "message": "Merge remote-tracking branch 'origin/main' into feature/constrained-motion",
-     "url": "https://github.com/korczis/algoglyph/commit/380d5952c3a3b7fd2484e9fbc834ad200d24cae5"
-    },
-    {
-     "at": "2026-11-15T13:13:52Z",
-     "message": "fix(physics): least-action ends reach ±3, so the pendulum preset is inside its controls",
-     "url": "https://github.com/korczis/algoglyph/commit/a0da514b7448bbf96fa80e6fb672bc2ec3f12a3e"
-    },
-    {
-     "at": "2026-11-15T13:08:49Z",
-     "message": "feat(physics): least action on a discrete path, Verlet as its stationary point",
-     "url": "https://github.com/korczis/algoglyph/commit/8ec28d86a0e9d0789b126531ccfab39be720beb0"
-    },
-    {
-     "at": "2026-11-15T12:20:09Z",
-     "message": "Merge remote-tracking branch 'origin/feature/charged-particles' into fix/charts-by-title",
-     "url": "https://github.com/korczis/algoglyph/commit/123597669b8a3983b4a7549ba011703937dd59ee"
-    },
-    {
-     "at": "2026-11-15T12:04:11Z",
-     "message": "feat(physics): constrained motion by RATTLE, with the normal force measured and the cycloid's isochrony",
-     "url": "https://github.com/korczis/algoglyph/commit/3c098ecfd5381e129d9828ae866462ba3cba1c5c"
-    },
-    {
-     "at": "2026-11-15T11:05:35Z",
-     "message": "Merge remote-tracking branch 'origin/feature/two-slit-amplitudes-b' into fix/charts-by-title",
-     "url": "https://github.com/korczis/algoglyph/commit/c128aa57889158ec5150779291e95c489c343735"
-    },
-    {
-     "at": "2026-11-15T10:46:32Z",
-     "message": "Merge remote-tracking branch 'origin/main' into feature/charged-particles",
-     "url": "https://github.com/korczis/algoglyph/commit/d66cc66bcce7d473941131046bb907546feac5f5"
-    },
-    {
-     "at": "2026-11-15T09:48:56Z",
-     "message": "Merge remote-tracking branch 'origin/feature/bound-states' into fix/charts-by-title",
-     "url": "https://github.com/korczis/algoglyph/commit/bebbc925559e4d7fc1df5a46a527daa5d357b8f4"
-    },
-    {
-     "at": "2026-11-15T09:22:55Z",
-     "message": "Merge remote-tracking branch 'origin/main' into feature/charged-particles",
-     "url": "https://github.com/korczis/algoglyph/commit/8a9c80ca176a6d5c1d6a1ca6eda0a14e0a72e262"
-    },
-    {
-     "at": "2026-11-15T09:22:43Z",
-     "message": "Merge remote-tracking branch 'origin/main' into feature/two-slit-amplitudes-b",
-     "url": "https://github.com/korczis/algoglyph/commit/de4d5f8a83deacc06b253ff89363d1d1eb2fff27"
-    },
-    {
-     "at": "2026-11-15T08:50:09Z",
-     "message": "Merge remote-tracking branch 'origin/feature/analogue-ladder-maxwell' into fix/charts-by-title",
-     "url": "https://github.com/korczis/algoglyph/commit/9207a2edd8bb256db5b252c763d9f9c1ae25947f"
-    },
-    {
-     "at": "2026-11-15T08:50:03Z",
-     "message": "Merge remote-tracking branch 'origin/main' into feature/bound-states",
-     "url": "https://github.com/korczis/algoglyph/commit/a8fae387efecba96ab753360eea86c6dda45077c"
-    },
-    {
-     "at": "2026-11-15T08:31:06Z",
-     "message": "Merge remote-tracking branch 'origin/feature/rays-and-lenses' into fix/charts-by-title",
-     "url": "https://github.com/korczis/algoglyph/commit/3d74f0949f628508035ba74a3ea24cd6e97e9674"
-    },
-    {
-     "at": "2026-11-15T08:00:57Z",
-     "message": "Merge remote-tracking branch 'origin/main' into feature/analogue-ladder-maxwell",
-     "url": "https://github.com/korczis/algoglyph/commit/d89d29424353cf2fe999162b7eed570f9e519485"
-    },
-    {
-     "at": "2026-11-15T07:21:01Z",
-     "message": "Merge remote-tracking branch 'origin/fix/budget-margin' into fix/charts-by-title",
-     "url": "https://github.com/korczis/algoglyph/commit/e1a88b3d26ef9123eb04682403bdc22bcacd2de7"
-    },
-    {
-     "at": "2026-11-15T07:20:45Z",
-     "message": "Merge remote-tracking branch 'origin/feature/polarization-bench' into fix/charts-by-title",
-     "url": "https://github.com/korczis/algoglyph/commit/05a09c02c839d2bd16948303a42dde0ee6d15c2d"
-    },
-    {
-     "at": "2026-11-15T07:20:26Z",
-     "message": "ci(browser): run the browser gate as its own job, in four parts on a hosted runner",
-     "url": "https://github.com/korczis/algoglyph/commit/f0e7326e020596cefa091bc36aa8d5d11331c26e"
-    },
-    {
-     "at": "2026-11-15T06:47:24Z",
-     "message": "feat(pathfinding-terrain): wall height becomes a control",
-     "url": "https://github.com/korczis/algoglyph/commit/78652935690ee5ec1c170cd15ccdf7cbb4fc6fdd"
-    },
-    {
-     "at": "2026-11-15T06:40:52Z",
-     "message": "Merge remote-tracking branch 'origin/main' into feature/bound-states",
-     "url": "https://github.com/korczis/algoglyph/commit/0a2b6d228480fccb43f7748647aabc01c5f319bc"
-    },
-    {
-     "at": "2026-11-15T06:40:06Z",
-     "message": "Merge remote-tracking branch 'origin/main' into feature/analogue-ladder-maxwell",
-     "url": "https://github.com/korczis/algoglyph/commit/11757f1430b43e09f421f7615b6d568f5baf6d48"
-    }
-   ],
-   "languages": [
-    {
-     "name": "TypeScript",
-     "share": 80.9
-    },
-    {
-     "name": "Rust",
-     "share": 15.4
-    },
-    {
-     "name": "JavaScript",
-     "share": 2
-    },
-    {
-     "name": "HTML",
-     "share": 1.5
-    },
-    {
-     "name": "Shell",
-     "share": 0.1
-    },
-    {
-     "name": "Just",
-     "share": 0.1
-    }
-   ],
-   "readme": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js simulations whose every number is measured from the running state.",
-   "topics": [
-    "algorithms",
-    "alpinejs",
-    "creative-coding",
-    "data-visualization",
-    "flowbite",
-    "generative-art",
-    "majordomus",
-    "p5js",
-    "physics-simulation",
-    "tailwindcss",
-    "typescript",
-    "webgl"
-   ],
-   "hosts": {
-    "github": "https://github.com/korczis/algoglyph"
-   },
-   "site": "https://korczis.github.io/algoglyph/",
-   "curated": true,
-   "stars": 0,
    "supervised": true
   },
   {

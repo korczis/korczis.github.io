@@ -11,8 +11,8 @@
  },
  "front_matter_schema": "https://korczis.github.io/schemas/front-matter.schema.json",
  "data_as_of": {
-  "snapshot": "2026-11-15T22:17:41Z",
-  "index": "2026-11-15T22:27:14Z"
+  "snapshot": "2026-11-16T01:30:11Z",
+  "index": "2026-11-16T01:45:27Z"
  },
  "pages": [
   {
@@ -1329,10 +1329,10 @@
     "korczis",
     "korczis.github.io",
     "prismatic-majordomus",
-    "sonic-playground",
     "kompendium-epistemicke-anihilace",
-    "oscilla",
     "algoglyph",
+    "sonic-playground",
+    "oscilla",
     "vomaste.cz",
     "majordomus-reel"
    ]
@@ -1616,7 +1616,7 @@
    "url": "https://korczis.github.io/cs/work/korczis-github-io/",
    "lang": "cs",
    "title": "korczis.github.io · Tomas Korcak",
-   "description": "korczis.github.io: projekt z kategorie Web, hlavní jazyk JavaScript, poslední commit 15. listopadu 2026.",
+   "description": "korczis.github.io: projekt z kategorie Web, hlavní jazyk JavaScript, poslední commit 16. listopadu 2026.",
    "type": "project",
    "category": null,
    "og_image": "https://korczis.github.io/og/cs-work-korczis-github-io.png",
@@ -3249,10 +3249,10 @@
     "korczis",
     "korczis.github.io",
     "prismatic-majordomus",
-    "sonic-playground",
     "kompendium-epistemicke-anihilace",
-    "oscilla",
     "algoglyph",
+    "sonic-playground",
+    "oscilla",
     "vomaste.cz",
     "majordomus-reel"
    ]
@@ -4199,15 +4199,15 @@
  ],
  "repositories": [
   {
-   "name": "kompendium-epistemicke-anihilace",
-   "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
-   "language": "Elixir",
-   "category": "knowledge",
-   "github": "https://github.com/korczis/kompendium-epistemicke-anihilace",
+   "name": "algoglyph",
+   "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
+   "language": "TypeScript",
+   "category": "science",
+   "github": "https://github.com/korczis/algoglyph",
    "gitlab": null,
-   "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
-   "created": "2026-11-09T22:04:50Z",
-   "active": "2026-11-15T22:17:41Z"
+   "site": "https://korczis.github.io/algoglyph/",
+   "created": "2026-11-11T18:09:38Z",
+   "active": "2026-11-16T01:26:54Z"
   },
   {
    "name": "korczis.github.io",
@@ -4218,18 +4218,18 @@
    "gitlab": null,
    "site": null,
    "created": "2024-12-24T16:48:15Z",
-   "active": "2026-11-15T22:17:35Z"
+   "active": "2026-11-16T01:17:33Z"
   },
   {
-   "name": "algoglyph",
-   "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
-   "language": "TypeScript",
-   "category": "science",
-   "github": "https://github.com/korczis/algoglyph",
+   "name": "kompendium-epistemicke-anihilace",
+   "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
+   "language": "Elixir",
+   "category": "knowledge",
+   "github": "https://github.com/korczis/kompendium-epistemicke-anihilace",
    "gitlab": null,
-   "site": "https://korczis.github.io/algoglyph/",
-   "created": "2026-11-11T18:09:38Z",
-   "active": "2026-11-15T22:14:06Z"
+   "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+   "created": "2026-11-09T22:04:50Z",
+   "active": "2026-11-16T01:08:10Z"
   },
   {
    "name": "oscilla",
@@ -4240,7 +4240,7 @@
    "gitlab": null,
    "site": "https://korczis.github.io/oscilla/",
    "created": "2026-10-01T21:05:33Z",
-   "active": "2026-11-15T22:04:56Z"
+   "active": "2026-11-16T01:07:55Z"
   },
   {
    "name": "prismatic-majordomus",
@@ -4251,7 +4251,7 @@
    "gitlab": null,
    "site": "https://korczis.github.io/prismatic-majordomus/",
    "created": "2026-09-03T20:24:57Z",
-   "active": "2026-11-15T22:01:24Z"
+   "active": "2026-11-16T00:20:53Z"
   },
   {
    "name": "sonic-playground",
@@ -6225,7 +6225,7 @@
   {
    "name": "skull-nodejs",
    "description": "Node.js Skull",
-   "language": "Makefile",
+   "language": null,
    "category": "learning",
    "github": "https://github.com/korczis/skull-nodejs",
    "gitlab": "https://gitlab.com/korczis/skull-nodejs",
@@ -6511,7 +6511,7 @@
   {
    "name": "sandbox",
    "description": "Something just for fun. This is place where I play with new techs...",
-   "language": "Ruby",
+   "language": null,
    "category": "learning",
    "github": "https://github.com/korczis/sandbox",
    "gitlab": "https://gitlab.com/korczis/sandbox",
@@ -6522,15 +6522,15 @@
  ],
  "counts": {
   "github": 448,
-  "gitlab": 417,
-  "merged": 517,
+  "gitlab": 195,
+  "merged": 500,
   "own": 211,
   "forks": 250,
-  "mirrors": 47,
-  "empty": 3,
+  "mirrors": 31,
+  "empty": 2,
   "unmeasured": 0,
   "hidden": 6,
-  "mirrors_measured": 32,
+  "mirrors_measured": 16,
   "supervised": 8
  }
 }

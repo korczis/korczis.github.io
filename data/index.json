@@ -1,29 +1,24 @@
 {
  "schema": "korczis-hub-index/v1",
- "generated_at": "2026-11-15T22:27:14Z",
+ "generated_at": "2026-11-16T01:45:27Z",
  "rule": "original = the owner wrote at least half of the listed commits; forks and mirrors are counted, not listed",
  "counts": {
   "github": 448,
-  "gitlab": 417,
-  "merged": 517,
+  "gitlab": 195,
+  "merged": 500,
   "own": 211,
   "forks": 250,
-  "mirrors": 47,
-  "empty": 3,
+  "mirrors": 31,
+  "empty": 2,
   "unmeasured": 0,
   "hidden": 6,
-  "mirrors_measured": 32,
+  "mirrors_measured": 16,
   "supervised": 8
  },
- "dropped": [
-  {
-   "name": "korczis",
-   "now": "mirror"
-  }
- ],
+ "dropped": [],
  "supervision": {
   "marker": ".ai/manifest.yaml",
-  "measured_at": "2026-11-16T00:07:35Z",
+  "measured_at": "2026-11-16T01:45:27Z",
   "kept": 0
  },
  "all_repos": [
@@ -41,9 +36,9 @@
     "github": "https://github.com/korczis/3d-print"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "algoglyph",
@@ -65,16 +60,16 @@
    ],
    "stars": 0,
    "created_at": "2026-11-11T18:09:38Z",
-   "pushed_at": "2026-11-15T22:14:06Z",
+   "pushed_at": "2026-11-16T01:26:54Z",
    "archived": false,
    "share": 1,
    "hosts": {
     "github": "https://github.com/korczis/algoglyph"
    },
    "site": "https://korczis.github.io/algoglyph/",
+   "supervised": true,
    "category": "science",
-   "curated": true,
-   "supervised": true
+   "curated": true
   },
   {
    "name": "algorithms",
@@ -91,9 +86,9 @@
     "gitlab": "https://gitlab.com/korczis/algorithms"
    },
    "site": null,
+   "supervised": false,
    "category": "science",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "algorithms-ruby",
@@ -110,9 +105,9 @@
     "gitlab": "https://gitlab.com/korczis/algorithms-ruby"
    },
    "site": null,
+   "supervised": false,
    "category": "science",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "annasabatova.cz",
@@ -128,9 +123,9 @@
     "github": "https://github.com/korczis/annasabatova.cz"
    },
    "site": null,
+   "supervised": false,
    "category": "web",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "apollo-box",
@@ -147,9 +142,9 @@
     "gitlab": "https://gitlab.com/korczis/apollo-box"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "apollo-crawler",
@@ -166,9 +161,9 @@
     "gitlab": "https://gitlab.com/korczis/apollo-crawler"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "apollo-schemas",
@@ -185,9 +180,9 @@
     "gitlab": "https://gitlab.com/korczis/apollo-schemas"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "apollocrawler.com",
@@ -203,9 +198,9 @@
     "github": "https://github.com/korczis/apollocrawler.com"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "apollon",
@@ -222,9 +217,9 @@
     "gitlab": "https://gitlab.com/korczis/apollon"
    },
    "site": "https://korczis.github.io/apollon/",
+   "supervised": false,
    "category": "systems",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "ares",
@@ -241,9 +236,9 @@
     "gitlab": "https://gitlab.com/korczis/ares"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "ares-api",
@@ -260,9 +255,9 @@
     "gitlab": "https://gitlab.com/korczis/ares-api"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "astronomists",
@@ -278,9 +273,9 @@
     "github": "https://github.com/korczis/astronomists"
    },
    "site": "https://korczis.github.io/astronomists/",
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "atp",
@@ -314,9 +309,9 @@
     "gitlab": "https://gitlab.com/korczis/aws-lambda-docker"
    },
    "site": null,
+   "supervised": false,
    "category": "systems",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "babel-plugin-transform-graphql",
@@ -333,9 +328,9 @@
     "gitlab": "https://gitlab.com/korczis/babel-plugin-transform-graphql"
    },
    "site": null,
+   "supervised": false,
    "category": "libraries",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "bc-apple",
@@ -352,9 +347,9 @@
     "gitlab": "https://gitlab.com/korczis/bc-apple"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "bcnode-extra-scripts",
@@ -371,9 +366,9 @@
     "gitlab": "https://gitlab.com/korczis/bcnode-extra-scripts"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "bcnode-old",
@@ -390,9 +385,9 @@
     "gitlab": "https://gitlab.com/korczis/bcnode-old"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "big-png",
@@ -409,9 +404,9 @@
     "gitlab": "https://gitlab.com/korczis/big-png"
    },
    "site": null,
+   "supervised": false,
    "category": "science",
-   "curated": true,
-   "supervised": false
+   "curated": true
   },
   {
    "name": "books",
@@ -428,9 +423,9 @@
     "gitlab": "https://gitlab.com/korczis/books"
    },
    "site": null,
+   "supervised": false,
    "category": "knowledge",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "brepta",
@@ -447,9 +442,9 @@
     "gitlab": "https://gitlab.com/korczis/brepta"
    },
    "site": null,
+   "supervised": false,
    "category": "media",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "bubbler",
@@ -465,9 +460,9 @@
     "github": "https://github.com/korczis/bubbler"
    },
    "site": "https://korczis.github.io/bubbler/",
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "caregiver",
@@ -483,9 +478,9 @@
     "github": "https://github.com/korczis/caregiver"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "catharsis-as-a-service",
@@ -501,9 +496,9 @@
     "github": "https://github.com/korczis/catharsis-as-a-service"
    },
    "site": "https://korczis.github.io/catharsis-as-a-service/",
+   "supervised": true,
    "category": "media",
-   "curated": true,
-   "supervised": true
+   "curated": true
   },
   {
    "name": "charon",
@@ -520,9 +515,9 @@
     "gitlab": "https://gitlab.com/korczis/charon"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "chujovinky",
@@ -556,9 +551,9 @@
     "gitlab": "https://gitlab.com/korczis/cluster"
    },
    "site": null,
+   "supervised": false,
    "category": "systems",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "cluster-kubernetes",
@@ -577,9 +572,9 @@
     "gitlab": "https://gitlab.com/korczis/cluster-kubernetes"
    },
    "site": null,
+   "supervised": false,
    "category": "systems",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "codecademy",
@@ -596,9 +591,9 @@
     "gitlab": "https://gitlab.com/korczis/codecademy"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "cognitive-reasoning",
@@ -614,9 +609,9 @@
     "github": "https://github.com/korczis/cognitive-reasoning"
    },
    "site": null,
+   "supervised": false,
    "category": "ai",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "craftsmen",
@@ -633,9 +628,9 @@
     "gitlab": "https://gitlab.com/korczis/craftsmen"
    },
    "site": null,
+   "supervised": false,
    "category": "web",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "crisis-map",
@@ -651,9 +646,9 @@
     "github": "https://github.com/korczis/crisis-map"
    },
    "site": "https://korczis.github.io/crisis-map/",
+   "supervised": false,
    "category": "data",
-   "curated": true,
-   "supervised": false
+   "curated": true
   },
   {
    "name": "cs-benchmark",
@@ -670,9 +665,9 @@
     "gitlab": "https://gitlab.com/korczis/cs-benchmark"
    },
    "site": null,
+   "supervised": false,
    "category": "learning",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "csv2psql",
@@ -689,9 +684,9 @@
     "gitlab": "https://gitlab.com/korczis/csv2psql"
    },
    "site": "https://korczis.github.io/csv2psql/",
+   "supervised": false,
    "category": "tools",
-   "curated": true,
-   "supervised": false
+   "curated": true
   },
   {
    "name": "ctu-cz",
@@ -707,9 +702,9 @@
     "github": "https://github.com/korczis/ctu-cz"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "cyclos",
@@ -743,9 +738,9 @@
     "gitlab": "https://gitlab.com/korczis/data"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "data-atlas",
@@ -770,9 +765,9 @@
     "github": "https://github.com/korczis/data-atlas"
    },
    "site": "https://korczis.github.io/data-atlas/",
+   "supervised": false,
    "category": "data",
-   "curated": true,
-   "supervised": false
+   "curated": true
   },
   {
    "name": "data-playground",
@@ -788,9 +783,9 @@
     "github": "https://github.com/korczis/data-playground"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "datascience",
@@ -807,9 +802,9 @@
     "gitlab": "https://gitlab.com/korczis/datascience"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "datasciencecoursera",
@@ -826,9 +821,9 @@
     "gitlab": "https://gitlab.com/korczis/datasciencecoursera"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "dj-schnapps",
@@ -845,9 +840,9 @@
     "gitlab": "https://gitlab.com/korczis/dj-schnapps"
    },
    "site": null,
+   "supervised": false,
    "category": "media",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "docker-conf2015",
@@ -864,9 +859,9 @@
     "gitlab": "https://gitlab.com/korczis/docker-conf2015"
    },
    "site": null,
+   "supervised": false,
    "category": "systems",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "docker-datasciencetoolbox",
@@ -883,9 +878,9 @@
     "gitlab": "https://gitlab.com/korczis/docker-datasciencetoolbox"
    },
    "site": null,
+   "supervised": false,
    "category": "systems",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "docker-dstk",
@@ -902,9 +897,9 @@
     "gitlab": "https://gitlab.com/korczis/docker-dstk"
    },
    "site": null,
+   "supervised": false,
    "category": "systems",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "docker-gooddata-ruby",
@@ -921,9 +916,9 @@
     "gitlab": "https://gitlab.com/korczis/docker-gooddata-ruby"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "easy-plugin-plugins",
@@ -940,9 +935,9 @@
     "gitlab": "https://gitlab.com/korczis/easy-plugin-plugins"
    },
    "site": null,
+   "supervised": false,
    "category": "libraries",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "el-magico-cache",
@@ -958,9 +953,9 @@
     "github": "https://github.com/korczis/el-magico-cache"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "empty-repo",
@@ -994,14 +989,14 @@
     "gitlab": "https://gitlab.com/korczis/esri"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "ev",
    "description": "Import of http://dist.schmorp.de/libev/",
-   "language": "Shell",
+   "language": null,
    "topics": [],
    "stars": 1,
    "created_at": "2012-06-17T18:42:31Z",
@@ -1046,9 +1041,9 @@
     "github": "https://github.com/korczis/gauc.ex"
    },
    "site": null,
+   "supervised": false,
    "category": "libraries",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "gdc-dumpator",
@@ -1065,9 +1060,9 @@
     "gitlab": "https://gitlab.com/korczis/gdc-dumpator"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "generator-microscratch",
@@ -1084,9 +1079,9 @@
     "gitlab": "https://gitlab.com/korczis/generator-microscratch"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "generator-the-scratch",
@@ -1103,9 +1098,9 @@
     "gitlab": "https://gitlab.com/korczis/generator-the-scratch"
    },
    "site": null,
+   "supervised": false,
    "category": "learning",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "GeoIP",
@@ -1138,9 +1133,9 @@
     "github": "https://github.com/korczis/gh-exec-3000"
    },
    "site": null,
+   "supervised": false,
    "category": "systems",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "gists-search",
@@ -1156,9 +1151,9 @@
     "github": "https://github.com/korczis/gists-search"
    },
    "site": "https://korczis.github.io/gists-search/",
+   "supervised": false,
    "category": "tools",
-   "curated": true,
-   "supervised": false
+   "curated": true
   },
   {
    "name": "github-extractor",
@@ -1175,9 +1170,9 @@
     "gitlab": "https://gitlab.com/korczis/github-extractor"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "gooddata-fs",
@@ -1194,9 +1189,9 @@
     "gitlab": "https://gitlab.com/korczis/gooddata-fs"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "gooddata-graphql",
@@ -1213,9 +1208,9 @@
     "gitlab": "https://gitlab.com/korczis/gooddata-graphql"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "gooddata-lcm-tool",
@@ -1232,9 +1227,9 @@
     "gitlab": "https://gitlab.com/korczis/gooddata-lcm-tool"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "gooddata-proxy",
@@ -1251,9 +1246,9 @@
     "gitlab": "https://gitlab.com/korczis/gooddata-proxy"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "gooddata-ruby-examples",
@@ -1270,9 +1265,9 @@
     "gitlab": "https://gitlab.com/korczis/gooddata-ruby-examples"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "gooddata_connectors_metadata",
@@ -1289,9 +1284,9 @@
     "gitlab": "https://gitlab.com/korczis/gooddata_connectors_metadata"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "gooddata_rails_app",
@@ -1308,9 +1303,9 @@
     "gitlab": "https://gitlab.com/korczis/gooddata_rails_app"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "grache",
@@ -1327,9 +1322,9 @@
     "gitlab": "https://gitlab.com/korczis/grache"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "grache-test",
@@ -1346,9 +1341,9 @@
     "gitlab": "https://gitlab.com/korczis/grache-test"
    },
    "site": null,
+   "supervised": false,
    "category": "learning",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "graph-flow",
@@ -1365,9 +1360,9 @@
     "gitlab": "https://gitlab.com/korczis/graph-flow"
    },
    "site": null,
+   "supervised": false,
    "category": "science",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "happ",
@@ -1384,9 +1379,9 @@
     "gitlab": "https://gitlab.com/korczis/happ"
    },
    "site": null,
+   "supervised": false,
    "category": "learning",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "haskell-world",
@@ -1403,9 +1398,9 @@
     "gitlab": "https://gitlab.com/korczis/haskell-world"
    },
    "site": null,
+   "supervised": false,
    "category": "science",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "home",
@@ -1422,9 +1417,9 @@
     "gitlab": "https://gitlab.com/korczis/home"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "iCave",
@@ -1441,9 +1436,9 @@
     "gitlab": "https://gitlab.com/korczis/iCave"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "ideas",
@@ -1460,9 +1455,9 @@
     "gitlab": "https://gitlab.com/korczis/ideas"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "in-rust-we-trust",
@@ -1479,9 +1474,9 @@
     "gitlab": "https://gitlab.com/korczis/in-rust-we-trust"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "inspectors",
@@ -1498,9 +1493,9 @@
     "gitlab": "https://gitlab.com/korczis/inspectors"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "jetel",
@@ -1517,9 +1512,9 @@
     "gitlab": "https://gitlab.com/korczis/jetel"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "jetel-modules",
@@ -1536,9 +1531,9 @@
     "gitlab": "https://gitlab.com/korczis/jetel-modules"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "js-libp2p-umbrella",
@@ -1555,9 +1550,9 @@
     "gitlab": "https://gitlab.com/korczis/js-libp2p-umbrella"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "json2csv",
@@ -1574,9 +1569,9 @@
     "gitlab": "https://gitlab.com/korczis/json2csv"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": true,
-   "supervised": false
+   "curated": true
   },
   {
    "name": "k8s-orbis-pictus",
@@ -1593,9 +1588,9 @@
     "gitlab": "https://gitlab.com/korczis/k8s-orbis-pictus"
    },
    "site": null,
+   "supervised": false,
    "category": "systems",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "kanec",
@@ -1612,9 +1607,9 @@
     "gitlab": "https://gitlab.com/korczis/kanec"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "kompendium-epistemicke-anihilace",
@@ -1633,16 +1628,16 @@
    ],
    "stars": 0,
    "created_at": "2026-11-09T22:04:50Z",
-   "pushed_at": "2026-11-15T22:17:41Z",
+   "pushed_at": "2026-11-16T01:08:10Z",
    "archived": false,
    "share": 1,
    "hosts": {
     "github": "https://github.com/korczis/kompendium-epistemicke-anihilace"
    },
    "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+   "supervised": true,
    "category": "knowledge",
-   "curated": true,
-   "supervised": true
+   "curated": true
   },
   {
    "name": "korczis.github.io",
@@ -1666,16 +1661,16 @@
    ],
    "stars": 0,
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-15T22:17:35Z",
+   "pushed_at": "2026-11-16T01:17:33Z",
    "archived": false,
    "share": 0.95,
    "hosts": {
     "github": "https://github.com/korczis/korczis.github.io"
    },
    "site": null,
+   "supervised": true,
    "category": "web",
-   "curated": false,
-   "supervised": true
+   "curated": false
   },
   {
    "name": "kpmap-ruby",
@@ -1692,9 +1687,9 @@
     "gitlab": "https://gitlab.com/korczis/kpmap-ruby"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "lethe.it",
@@ -1710,14 +1705,14 @@
     "github": "https://github.com/korczis/lethe.it"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "libnet",
    "description": "Libnet is a high-level API (toolkit) allowing the application programmer to construct and inject network packets. It provides a portable and simplified interface for low-level network packet shaping, handling and injection. Libnet hides much of the tedium of packet creation from the application programmer such as multiplexing, buffer management, arcane packet header information, byte-ordering, OS-dependent issues, and much more. Libnet features portable packet creation interfaces at both the IP-layer and link-layer, as well as a host of supplementary and complementary functionality. Using libnet, quick and simple packet assembly applications can be whipped up with little effort. With a bit more time, more complex programs can be written (Traceroute and Ping were easily rewritten using libnet and libpcap).",
-   "language": "C",
+   "language": null,
    "topics": [],
    "stars": 15,
    "created_at": "2012-06-21T17:04:23Z",
@@ -1734,7 +1729,7 @@
   {
    "name": "libnids",
    "description": "Libnids is an implementation of an E-component of Network Intrusion Detection System. It emulates the IP stack of Linux 2.0.x. Libnids offers IP defragmentation, TCP stream assembly and TCP port scan detection.",
-   "language": "C",
+   "language": null,
    "topics": [],
    "stars": 53,
    "created_at": "2012-06-21T16:56:41Z",
@@ -1780,9 +1775,9 @@
     "gitlab": "https://gitlab.com/korczis/lola"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "magic",
@@ -1806,9 +1801,9 @@
     "gitlab": "https://gitlab.com/korczis/magic"
    },
    "site": null,
+   "supervised": false,
    "category": "security",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "magicbiz",
@@ -1825,9 +1820,9 @@
     "gitlab": "https://gitlab.com/korczis/magicbiz"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "majordomus-reel",
@@ -1850,9 +1845,9 @@
     "github": "https://github.com/korczis/majordomus-reel"
    },
    "site": "https://korczis.github.io/majordomus-reel/",
+   "supervised": true,
    "category": "media",
-   "curated": true,
-   "supervised": true
+   "curated": true
   },
   {
    "name": "malina",
@@ -1869,9 +1864,9 @@
     "gitlab": "https://gitlab.com/korczis/malina"
    },
    "site": null,
+   "supervised": false,
    "category": "learning",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "mapoffacts",
@@ -1888,9 +1883,9 @@
     "gitlab": "https://gitlab.com/korczis/mapoffacts"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "mapofffacts.com",
@@ -1906,9 +1901,9 @@
     "github": "https://github.com/korczis/mapofffacts.com"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "maze",
@@ -1925,9 +1920,9 @@
     "gitlab": "https://gitlab.com/korczis/maze"
    },
    "site": null,
+   "supervised": false,
    "category": "science",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "maze-js",
@@ -1944,9 +1939,9 @@
     "gitlab": "https://gitlab.com/korczis/maze-js"
    },
    "site": null,
+   "supervised": false,
    "category": "science",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "maze-rs",
@@ -1963,9 +1958,9 @@
     "gitlab": "https://gitlab.com/korczis/maze-rs"
    },
    "site": "https://korczis.github.io/maze-rs/",
+   "supervised": false,
    "category": "science",
-   "curated": true,
-   "supervised": false
+   "curated": true
   },
   {
    "name": "microcrawler-couchapp",
@@ -1982,9 +1977,9 @@
     "gitlab": "https://gitlab.com/korczis/microcrawler-couchapp"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "microcrawler-ng",
@@ -2001,9 +1996,9 @@
     "gitlab": "https://gitlab.com/korczis/microcrawler-ng"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "microscratch",
@@ -2020,9 +2015,9 @@
     "gitlab": "https://gitlab.com/korczis/microscratch"
    },
    "site": null,
+   "supervised": false,
    "category": "web",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "microscratch-react",
@@ -2039,9 +2034,9 @@
     "gitlab": "https://gitlab.com/korczis/microscratch-react"
    },
    "site": null,
+   "supervised": false,
    "category": "web",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "MindScape",
@@ -2057,9 +2052,9 @@
     "github": "https://github.com/korczis/MindScape"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "MinervaEye",
@@ -2075,9 +2070,9 @@
     "github": "https://github.com/korczis/MinervaEye"
    },
    "site": null,
+   "supervised": false,
    "category": "knowledge",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "models",
@@ -2094,14 +2089,14 @@
     "gitlab": "https://gitlab.com/korczis/models"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "mongo-cxx-driver",
    "description": null,
-   "language": "C++",
+   "language": null,
    "topics": [],
    "stars": 1,
    "created_at": "2012-06-20T13:30:52Z",
@@ -2130,9 +2125,9 @@
     "gitlab": "https://gitlab.com/korczis/nestravenkam"
    },
    "site": null,
+   "supervised": false,
    "category": "web",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "node-proxy-upload",
@@ -2149,9 +2144,9 @@
     "gitlab": "https://gitlab.com/korczis/node-proxy-upload"
    },
    "site": null,
+   "supervised": false,
    "category": "learning",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "nosqlight",
@@ -2168,9 +2163,9 @@
     "gitlab": "https://gitlab.com/korczis/nosqlight"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "oscilla",
@@ -2189,16 +2184,16 @@
    ],
    "stars": 1,
    "created_at": "2026-10-01T21:05:33Z",
-   "pushed_at": "2026-11-15T22:04:56Z",
+   "pushed_at": "2026-11-16T01:07:55Z",
    "archived": false,
    "share": 1,
    "hosts": {
     "github": "https://github.com/korczis/oscilla"
    },
    "site": "https://korczis.github.io/oscilla/",
+   "supervised": true,
    "category": "science",
-   "curated": true,
-   "supervised": true
+   "curated": true
   },
   {
    "name": "osint-case-ratcliffe-moscow-2026",
@@ -2219,9 +2214,9 @@
     "github": "https://github.com/korczis/osint-case-ratcliffe-moscow-2026"
    },
    "site": "https://korczis.github.io/osint-case-ratcliffe-moscow-2026/",
+   "supervised": false,
    "category": "security",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "osmocom-bb",
@@ -2254,9 +2249,9 @@
     "github": "https://github.com/korczis/pavian.eu"
    },
    "site": null,
+   "supervised": false,
    "category": "web",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "peacemaker",
@@ -2273,9 +2268,9 @@
     "gitlab": "https://gitlab.com/korczis/peacemaker"
    },
    "site": null,
+   "supervised": false,
    "category": "security",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "peg-loader",
@@ -2292,9 +2287,9 @@
     "gitlab": "https://gitlab.com/korczis/peg-loader"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "peg-parser",
@@ -2311,9 +2306,9 @@
     "gitlab": "https://gitlab.com/korczis/peg-parser"
    },
    "site": null,
+   "supervised": false,
    "category": "libraries",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "petitboot",
@@ -2347,9 +2342,9 @@
     "gitlab": "https://gitlab.com/korczis/photos"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "pissaleck",
@@ -2365,9 +2360,9 @@
     "github": "https://github.com/korczis/pissaleck"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "principal",
@@ -2384,9 +2379,9 @@
     "gitlab": "https://gitlab.com/korczis/principal"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "prismatic",
@@ -2402,9 +2397,9 @@
     "github": "https://github.com/korczis/prismatic"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "prismatic-blog",
@@ -2420,9 +2415,9 @@
     "github": "https://github.com/korczis/prismatic-blog"
    },
    "site": "https://korczis.github.io/prismatic-blog/",
+   "supervised": false,
    "category": "media",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "prismatic-majordomus",
@@ -2451,16 +2446,16 @@
    ],
    "stars": 1,
    "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-15T22:01:24Z",
+   "pushed_at": "2026-11-16T00:20:53Z",
    "archived": false,
    "share": 0.99,
    "hosts": {
     "github": "https://github.com/korczis/prismatic-majordomus"
    },
    "site": "https://korczis.github.io/prismatic-majordomus/",
+   "supervised": true,
    "category": "ai",
-   "curated": true,
-   "supervised": true
+   "curated": true
   },
   {
    "name": "raspberry-pi",
@@ -2494,9 +2489,9 @@
     "gitlab": "https://gitlab.com/korczis/ratnet"
    },
    "site": null,
+   "supervised": false,
    "category": "security",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "reading",
@@ -2513,9 +2508,9 @@
     "gitlab": "https://gitlab.com/korczis/reading"
    },
    "site": null,
+   "supervised": false,
    "category": "knowledge",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "ReadingPhoneNumbersInRealTime",
@@ -2531,9 +2526,9 @@
     "github": "https://github.com/korczis/ReadingPhoneNumbersInRealTime"
    },
    "site": null,
+   "supervised": false,
    "category": "knowledge",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "reflex",
@@ -2550,9 +2545,9 @@
     "gitlab": "https://gitlab.com/korczis/reflex"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "rest-hello-world-benchmark",
@@ -2568,9 +2563,9 @@
     "github": "https://github.com/korczis/rest-hello-world-benchmark"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "Rocnikac4",
@@ -2587,9 +2582,9 @@
     "gitlab": "https://gitlab.com/korczis/Rocnikac4"
    },
    "site": null,
+   "supervised": false,
    "category": "learning",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "rustas",
@@ -2606,9 +2601,9 @@
     "gitlab": "https://gitlab.com/korczis/rustas"
    },
    "site": null,
+   "supervised": false,
    "category": "science",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "rustler-test",
@@ -2625,9 +2620,9 @@
     "gitlab": "https://gitlab.com/korczis/rustler-test"
    },
    "site": null,
+   "supervised": false,
    "category": "learning",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "rustler_mix",
@@ -2644,14 +2639,14 @@
     "gitlab": "https://gitlab.com/korczis/rustler_mix"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "sandbox",
    "description": "Something just for fun. This is place where I play with new techs...",
-   "language": "Ruby",
+   "language": null,
    "topics": [],
    "stars": 1,
    "created_at": "2012-01-01T23:48:41Z",
@@ -2663,9 +2658,9 @@
     "gitlab": "https://gitlab.com/korczis/sandbox"
    },
    "site": null,
+   "supervised": false,
    "category": "learning",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "server-ansible",
@@ -2682,9 +2677,9 @@
     "gitlab": "https://gitlab.com/korczis/server-ansible"
    },
    "site": null,
+   "supervised": false,
    "category": "systems",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "server-archlinux",
@@ -2701,9 +2696,9 @@
     "gitlab": "https://gitlab.com/korczis/server-archlinux"
    },
    "site": null,
+   "supervised": false,
    "category": "systems",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "server-atomic",
@@ -2720,9 +2715,9 @@
     "gitlab": "https://gitlab.com/korczis/server-atomic"
    },
    "site": null,
+   "supervised": false,
    "category": "systems",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "server-coreos",
@@ -2739,9 +2734,9 @@
     "gitlab": "https://gitlab.com/korczis/server-coreos"
    },
    "site": null,
+   "supervised": false,
    "category": "systems",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "server-nixos",
@@ -2758,9 +2753,9 @@
     "gitlab": "https://gitlab.com/korczis/server-nixos"
    },
    "site": null,
+   "supervised": false,
    "category": "systems",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "skull",
@@ -2777,9 +2772,9 @@
     "gitlab": "https://gitlab.com/korczis/skull"
    },
    "site": null,
+   "supervised": false,
    "category": "learning",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "skull-c",
@@ -2796,9 +2791,9 @@
     "gitlab": "https://gitlab.com/korczis/skull-c"
    },
    "site": null,
+   "supervised": false,
    "category": "learning",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "skull-cpp",
@@ -2815,9 +2810,9 @@
     "gitlab": "https://gitlab.com/korczis/skull-cpp"
    },
    "site": null,
+   "supervised": false,
    "category": "learning",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "skull-elixir",
@@ -2834,9 +2829,9 @@
     "gitlab": "https://gitlab.com/korczis/skull-elixir"
    },
    "site": null,
+   "supervised": false,
    "category": "learning",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "skull-emscripten",
@@ -2853,9 +2848,9 @@
     "gitlab": "https://gitlab.com/korczis/skull-emscripten"
    },
    "site": null,
+   "supervised": false,
    "category": "learning",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "skull-erlang",
@@ -2872,9 +2867,9 @@
     "gitlab": "https://gitlab.com/korczis/skull-erlang"
    },
    "site": null,
+   "supervised": false,
    "category": "learning",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "skull-haskell",
@@ -2891,9 +2886,9 @@
     "gitlab": "https://gitlab.com/korczis/skull-haskell"
    },
    "site": null,
+   "supervised": false,
    "category": "learning",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "skull-java",
@@ -2910,14 +2905,14 @@
     "gitlab": "https://gitlab.com/korczis/skull-java"
    },
    "site": null,
+   "supervised": false,
    "category": "learning",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "skull-nodejs",
    "description": "Node.js Skull",
-   "language": "Makefile",
+   "language": null,
    "topics": [],
    "stars": 0,
    "created_at": "2014-07-22T04:14:32Z",
@@ -2929,9 +2924,9 @@
     "gitlab": "https://gitlab.com/korczis/skull-nodejs"
    },
    "site": null,
+   "supervised": false,
    "category": "learning",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "skull-ruby",
@@ -2948,9 +2943,9 @@
     "gitlab": "https://gitlab.com/korczis/skull-ruby"
    },
    "site": null,
+   "supervised": false,
    "category": "learning",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "skull-rust",
@@ -2967,9 +2962,9 @@
     "gitlab": "https://gitlab.com/korczis/skull-rust"
    },
    "site": null,
+   "supervised": false,
    "category": "learning",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "skype-adapter-client",
@@ -2986,9 +2981,9 @@
     "gitlab": "https://gitlab.com/korczis/skype-adapter-client"
    },
    "site": null,
+   "supervised": false,
    "category": "libraries",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "sli2dli",
@@ -3005,9 +3000,9 @@
     "gitlab": "https://gitlab.com/korczis/sli2dli"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "social-icons",
@@ -3024,9 +3019,9 @@
     "gitlab": "https://gitlab.com/korczis/social-icons"
    },
    "site": null,
+   "supervised": false,
    "category": "systems",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "solr-core-minimal",
@@ -3043,9 +3038,9 @@
     "gitlab": "https://gitlab.com/korczis/solr-core-minimal"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "sonic-playground",
@@ -3061,9 +3056,9 @@
     "github": "https://github.com/korczis/sonic-playground"
    },
    "site": "https://korczis.github.io/sonic-playground/",
+   "supervised": true,
    "category": "media",
-   "curated": true,
-   "supervised": true
+   "curated": true
   },
   {
    "name": "streamflow",
@@ -3080,9 +3075,9 @@
     "gitlab": "https://gitlab.com/korczis/streamflow"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "talkie",
@@ -3099,9 +3094,9 @@
     "gitlab": "https://gitlab.com/korczis/talkie"
    },
    "site": null,
+   "supervised": false,
    "category": "media",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "tap",
@@ -3117,9 +3112,9 @@
     "github": "https://github.com/korczis/tap"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "Test-Elixir",
@@ -3136,9 +3131,9 @@
     "gitlab": "https://gitlab.com/korczis/Test-Elixir"
    },
    "site": null,
+   "supervised": false,
    "category": "learning",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "the-scratch",
@@ -3163,14 +3158,14 @@
     "gitlab": "https://gitlab.com/korczis/the-scratch"
    },
    "site": null,
+   "supervised": false,
    "category": "web",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "tinyxpath",
    "description": "TinyXpath - Just cloned from http://sourceforge.net/projects/tinyxpath/files/latest/download",
-   "language": "C++",
+   "language": null,
    "topics": [],
    "stars": 3,
    "created_at": "2012-06-11T00:05:43Z",
@@ -3199,9 +3194,9 @@
     "gitlab": "https://gitlab.com/korczis/tosh"
    },
    "site": null,
+   "supervised": false,
    "category": "web",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "ts-logger",
@@ -3218,9 +3213,9 @@
     "gitlab": "https://gitlab.com/korczis/ts-logger"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "tsa-keys",
@@ -3254,9 +3249,9 @@
     "gitlab": "https://gitlab.com/korczis/twitter-analysis"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "u-tygra",
@@ -3273,9 +3268,9 @@
     "gitlab": "https://gitlab.com/korczis/u-tygra"
    },
    "site": "https://korczis.github.io/u-tygra/",
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "ucl",
@@ -3341,9 +3336,9 @@
     "github": "https://github.com/korczis/vomaste.cz"
    },
    "site": "https://korczis.github.io/vomaste.cz/",
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "wangsta",
@@ -3360,9 +3355,9 @@
     "gitlab": "https://gitlab.com/korczis/wangsta"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "web-spa",
@@ -3379,9 +3374,9 @@
     "gitlab": "https://gitlab.com/korczis/web-spa"
    },
    "site": null,
+   "supervised": false,
    "category": "web",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "wims",
@@ -3398,9 +3393,9 @@
     "gitlab": "https://gitlab.com/korczis/wims"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "zaas",
@@ -3417,9 +3412,9 @@
     "gitlab": "https://gitlab.com/korczis/zaas"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "zdeny-docker",
@@ -3436,9 +3431,9 @@
     "gitlab": "https://gitlab.com/korczis/zdeny-docker"
    },
    "site": null,
+   "supervised": false,
    "category": "systems",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "zeman-ucet",
@@ -3462,9 +3457,9 @@
     "gitlab": "https://gitlab.com/korczis/zeman-ucet"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "zlown",
@@ -3481,9 +3476,9 @@
     "gitlab": "https://gitlab.com/korczis/zlown"
    },
    "site": null,
+   "supervised": false,
    "category": "security",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "llm",
@@ -3507,9 +3502,9 @@
     "gitlab": "https://gitlab.com/korczis/llm"
    },
    "site": null,
+   "supervised": false,
    "category": "ai",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "openttd-prismatic-bridge",
@@ -3525,9 +3520,9 @@
     "gitlab": "https://gitlab.com/korczis/openttd-prismatic-bridge"
    },
    "site": null,
+   "supervised": false,
    "category": "media",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "edna",
@@ -3543,9 +3538,9 @@
     "gitlab": "https://gitlab.com/korczis/edna"
    },
    "site": null,
+   "supervised": false,
    "category": "ai",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "GHT",
@@ -3561,9 +3556,9 @@
     "gitlab": "https://gitlab.com/korczis/GHT"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "comtesse",
@@ -3579,9 +3574,9 @@
     "gitlab": "https://gitlab.com/korczis/comtesse"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "tinder-nomics",
@@ -3597,9 +3592,9 @@
     "gitlab": "https://gitlab.com/korczis/tinder-nomics"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "sig",
@@ -3624,9 +3619,9 @@
     "gitlab": "https://gitlab.com/korczis/sig"
    },
    "site": null,
+   "supervised": false,
    "category": "ai",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "korczis.gitlab.io",
@@ -3642,9 +3637,9 @@
     "gitlab": "https://gitlab.com/korczis/korczis.gitlab.io"
    },
    "site": null,
+   "supervised": false,
    "category": "web",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "corvidae",
@@ -3660,9 +3655,9 @@
     "gitlab": "https://gitlab.com/korczis/corvidae"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "past",
@@ -3678,9 +3673,9 @@
     "gitlab": "https://gitlab.com/korczis/past"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "the-psycho",
@@ -3696,9 +3691,9 @@
     "gitlab": "https://gitlab.com/korczis/the-psycho"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "prism",
@@ -3714,9 +3709,9 @@
     "gitlab": "https://gitlab.com/korczis/prism"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "the-shit",
@@ -3748,9 +3743,9 @@
     "gitlab": "https://gitlab.com/korczis/kuzu-ex"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "dispatcher",
@@ -3766,9 +3761,9 @@
     "gitlab": "https://gitlab.com/korczis/dispatcher"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "job-processor",
@@ -3784,9 +3779,9 @@
     "gitlab": "https://gitlab.com/korczis/job-processor"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "meili_rsex",
@@ -3802,9 +3797,9 @@
     "gitlab": "https://gitlab.com/korczis/meili_rsex"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "simple_geocoder",
@@ -3820,9 +3815,9 @@
     "gitlab": "https://gitlab.com/korczis/simple_geocoder"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "marketing-ideas",
@@ -3838,9 +3833,9 @@
     "gitlab": "https://gitlab.com/korczis/marketing-ideas"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "pdf_renderer",
@@ -3856,9 +3851,9 @@
     "gitlab": "https://gitlab.com/korczis/pdf_renderer"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "distance-calculator",
@@ -3874,9 +3869,9 @@
     "gitlab": "https://gitlab.com/korczis/distance-calculator"
    },
    "site": null,
+   "supervised": false,
    "category": "science",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "astudo",
@@ -3892,9 +3887,9 @@
     "gitlab": "https://gitlab.com/korczis/astudo"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "rocksdb_indexer",
@@ -3910,9 +3905,9 @@
     "gitlab": "https://gitlab.com/korczis/rocksdb_indexer"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "czech-stats",
@@ -3928,9 +3923,9 @@
     "gitlab": "https://gitlab.com/korczis/czech-stats"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "hydra",
@@ -3946,9 +3941,9 @@
     "gitlab": "https://gitlab.com/korczis/hydra"
    },
    "site": null,
+   "supervised": false,
    "category": "libraries",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "pavian-eu",
@@ -3964,9 +3959,9 @@
     "gitlab": "https://gitlab.com/korczis/pavian-eu"
    },
    "site": null,
+   "supervised": false,
    "category": "web",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "mapofffacts-com",
@@ -3982,9 +3977,9 @@
     "gitlab": "https://gitlab.com/korczis/mapofffacts-com"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "lethe-it",
@@ -4000,9 +3995,9 @@
     "gitlab": "https://gitlab.com/korczis/lethe-it"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "korczis-github-com",
@@ -4018,9 +4013,9 @@
     "gitlab": "https://gitlab.com/korczis/korczis-github-com"
    },
    "site": null,
+   "supervised": false,
    "category": "web",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "korczis-com",
@@ -4036,9 +4031,9 @@
     "gitlab": "https://gitlab.com/korczis/korczis-com"
    },
    "site": null,
+   "supervised": false,
    "category": "web",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "gauc-ex",
@@ -4054,9 +4049,9 @@
     "gitlab": "https://gitlab.com/korczis/gauc-ex"
    },
    "site": null,
+   "supervised": false,
    "category": "libraries",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "apollocrawler-com",
@@ -4072,9 +4067,9 @@
     "gitlab": "https://gitlab.com/korczis/apollocrawler-com"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "annasabatova-cz",
@@ -4090,9 +4085,9 @@
     "gitlab": "https://gitlab.com/korczis/annasabatova-cz"
    },
    "site": null,
+   "supervised": false,
    "category": "web",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "microcrawler-elixir",
@@ -4108,9 +4103,9 @@
     "gitlab": "https://gitlab.com/korczis/microcrawler-elixir"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "microcrawler-js",
@@ -4126,9 +4121,9 @@
     "gitlab": "https://gitlab.com/korczis/microcrawler-js"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "microcrawler-crawler-yelp-com",
@@ -4144,9 +4139,9 @@
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-yelp-com"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "microcrawler-crawler-youjizz-com",
@@ -4178,9 +4173,9 @@
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-xkcd-com"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "microcrawler-crawler-sreality-cz",
@@ -4196,9 +4191,9 @@
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-sreality-cz"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "microcrawler-crawler-news-ycombinator-com",
@@ -4214,9 +4209,9 @@
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-news-ycombinator-com"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "microcrawler-crawler-google-com",
@@ -4232,9 +4227,9 @@
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-google-com"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "microcrawler-crawler-heureka-cz",
@@ -4250,9 +4245,9 @@
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-heureka-cz"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "microcrawler-crawler-firmy-cz",
@@ -4268,9 +4263,9 @@
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-firmy-cz"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "microcrawler-crawler-craiglist-com",
@@ -4286,9 +4281,9 @@
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-craiglist-com"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "microcrawler-crawler-base",
@@ -4304,9 +4299,9 @@
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-base"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "microcrawler-crawler-all",
@@ -4322,9 +4317,9 @@
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-all"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "microcrawler-crawler-bam-brno-cz",
@@ -4340,9 +4335,9 @@
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-bam-brno-cz"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "microcrawler-browser",
@@ -4358,9 +4353,9 @@
     "gitlab": "https://gitlab.com/korczis/microcrawler-browser"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "microcrawler",
@@ -4376,9 +4371,9 @@
     "gitlab": "https://gitlab.com/korczis/microcrawler"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "docks",
@@ -4394,9 +4389,9 @@
     "gitlab": "https://gitlab.com/korczis/docks"
    },
    "site": null,
+   "supervised": false,
    "category": "systems",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "apollo-crawler-extension",
@@ -4412,9 +4407,9 @@
     "gitlab": "https://gitlab.com/korczis/apollo-crawler-extension"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "ApolloCrawler-github-io",
@@ -4430,15 +4425,15 @@
     "gitlab": "https://gitlab.com/korczis/ApolloCrawler-github-io"
    },
    "site": null,
+   "supervised": false,
    "category": "web",
-   "curated": false,
-   "supervised": false
+   "curated": false
   }
  ],
  "by_category": {
-  "knowledge": 5,
-  "web": 16,
   "science": 12,
+  "web": 16,
+  "knowledge": 5,
   "ai": 5,
   "media": 8,
   "tools": 64,
@@ -4449,11 +4444,11 @@
   "learning": 21
  },
  "categories": {
-  "knowledge": {
-   "repos": 5,
-   "sites": 1,
-   "top_language": "Swift",
-   "since": "2013"
+  "science": {
+   "repos": 12,
+   "sites": 3,
+   "top_language": "Rust",
+   "since": "2014"
   },
   "web": {
    "repos": 16,
@@ -4461,11 +4456,11 @@
    "top_language": "CSS",
    "since": "2014"
   },
-  "science": {
-   "repos": 12,
-   "sites": 3,
-   "top_language": "Rust",
-   "since": "2014"
+  "knowledge": {
+   "repos": 5,
+   "sites": 1,
+   "top_language": "Swift",
+   "since": "2013"
   },
   "ai": {
    "repos": 5,
@@ -4527,7 +4522,7 @@
   },
   {
    "name": "Ruby",
-   "repos": 20
+   "repos": 19
   },
   {
    "name": "Shell",
@@ -4598,10 +4593,6 @@
    "repos": 1
   },
   {
-   "name": "Makefile",
-   "repos": 1
-  },
-  {
    "name": "OpenSCAD",
    "repos": 1
   },
@@ -4620,7 +4611,7 @@
  ],
  "languages_by_year": {
   "2012": {
-   "Ruby": 2,
+   "Ruby": 1,
    "C#": 1
   },
   "2013": {
@@ -4638,7 +4629,6 @@
    "C": 1,
    "Shell": 2,
    "Java": 1,
-   "Makefile": 1,
    "Haskell": 1,
    "Erlang": 1,
    "XSLT": 1,
@@ -4713,8 +4703,8 @@
    "Dockerfile": 1
   },
   "2026": {
-   "Elixir": 3,
    "TypeScript": 1,
+   "Elixir": 3,
    "JavaScript": 2,
    "Rust": 1,
    "Python": 5,
@@ -4761,7 +4751,7 @@
    },
    {
     "name": "Ruby",
-    "repos": 20,
+    "repos": 19,
     "evidence": [
      {
       "name": "gdc-dumpator",
@@ -5032,16 +5022,6 @@
     ]
    },
    {
-    "name": "Makefile",
-    "repos": 1,
-    "evidence": [
-     {
-      "name": "skull-nodejs",
-      "url": "https://github.com/korczis/skull-nodejs"
-     }
-    ]
-   },
-   {
     "name": "OpenSCAD",
     "repos": 1,
     "evidence": [
@@ -5208,12 +5188,13 @@
  "recent": {
   "size": 100,
   "from": "2018-06-24T03:58:28Z",
-  "to": "2026-11-15T22:17:41Z",
+  "to": "2026-11-16T01:26:54Z",
   "mix": {
-   "knowledge": {
+   "science": {
+    "TypeScript": 1,
+    "JavaScript": 1,
     "Elixir": 1,
-    "Swift": 2,
-    "Unspecified": 1
+    "Rust": 1
    },
    "web": {
     "JavaScript": 1,
@@ -5221,11 +5202,10 @@
     "CSS": 4,
     "Elixir": 1
    },
-   "science": {
-    "TypeScript": 1,
-    "JavaScript": 1,
+   "knowledge": {
     "Elixir": 1,
-    "Rust": 1
+    "Swift": 2,
+    "Unspecified": 1
    },
    "ai": {
     "Rust": 1,
@@ -5274,32 +5254,35 @@
  },
  "repos": [
   {
-   "name": "kompendium-epistemicke-anihilace",
-   "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
-   "language": "Elixir",
+   "name": "algoglyph",
+   "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
+   "language": "TypeScript",
    "topics": [
-    "czech",
-    "epistemology",
+    "algorithms",
+    "alpinejs",
+    "creative-coding",
+    "data-visualization",
     "flowbite",
-    "kompendium",
+    "generative-art",
     "majordomus",
-    "manipulation",
-    "psychology",
-    "taxonomy",
-    "zola"
+    "p5js",
+    "physics-simulation",
+    "tailwindcss",
+    "typescript",
+    "webgl"
    ],
    "stars": 0,
-   "created_at": "2026-11-09T22:04:50Z",
-   "pushed_at": "2026-11-15T22:17:41Z",
+   "created_at": "2026-11-11T18:09:38Z",
+   "pushed_at": "2026-11-16T01:26:54Z",
    "archived": false,
    "share": 1,
    "hosts": {
-    "github": "https://github.com/korczis/kompendium-epistemicke-anihilace"
+    "github": "https://github.com/korczis/algoglyph"
    },
-   "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
-   "category": "knowledge",
-   "curated": true,
-   "supervised": true
+   "site": "https://korczis.github.io/algoglyph/",
+   "supervised": true,
+   "category": "science",
+   "curated": true
   },
   {
    "name": "korczis.github.io",
@@ -5323,47 +5306,44 @@
    ],
    "stars": 0,
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-15T22:17:35Z",
+   "pushed_at": "2026-11-16T01:17:33Z",
    "archived": false,
    "share": 0.95,
    "hosts": {
     "github": "https://github.com/korczis/korczis.github.io"
    },
    "site": null,
+   "supervised": true,
    "category": "web",
-   "curated": false,
-   "supervised": true
+   "curated": false
   },
   {
-   "name": "algoglyph",
-   "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
-   "language": "TypeScript",
+   "name": "kompendium-epistemicke-anihilace",
+   "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
+   "language": "Elixir",
    "topics": [
-    "algorithms",
-    "alpinejs",
-    "creative-coding",
-    "data-visualization",
+    "czech",
+    "epistemology",
     "flowbite",
-    "generative-art",
+    "kompendium",
     "majordomus",
-    "p5js",
-    "physics-simulation",
-    "tailwindcss",
-    "typescript",
-    "webgl"
+    "manipulation",
+    "psychology",
+    "taxonomy",
+    "zola"
    ],
    "stars": 0,
-   "created_at": "2026-11-11T18:09:38Z",
-   "pushed_at": "2026-11-15T22:14:06Z",
+   "created_at": "2026-11-09T22:04:50Z",
+   "pushed_at": "2026-11-16T01:08:10Z",
    "archived": false,
    "share": 1,
    "hosts": {
-    "github": "https://github.com/korczis/algoglyph"
+    "github": "https://github.com/korczis/kompendium-epistemicke-anihilace"
    },
-   "site": "https://korczis.github.io/algoglyph/",
-   "category": "science",
-   "curated": true,
-   "supervised": true
+   "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+   "supervised": true,
+   "category": "knowledge",
+   "curated": true
   },
   {
    "name": "oscilla",
@@ -5382,16 +5362,16 @@
    ],
    "stars": 1,
    "created_at": "2026-10-01T21:05:33Z",
-   "pushed_at": "2026-11-15T22:04:56Z",
+   "pushed_at": "2026-11-16T01:07:55Z",
    "archived": false,
    "share": 1,
    "hosts": {
     "github": "https://github.com/korczis/oscilla"
    },
    "site": "https://korczis.github.io/oscilla/",
+   "supervised": true,
    "category": "science",
-   "curated": true,
-   "supervised": true
+   "curated": true
   },
   {
    "name": "prismatic-majordomus",
@@ -5420,16 +5400,16 @@
    ],
    "stars": 1,
    "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-15T22:01:24Z",
+   "pushed_at": "2026-11-16T00:20:53Z",
    "archived": false,
    "share": 0.99,
    "hosts": {
     "github": "https://github.com/korczis/prismatic-majordomus"
    },
    "site": "https://korczis.github.io/prismatic-majordomus/",
+   "supervised": true,
    "category": "ai",
-   "curated": true,
-   "supervised": true
+   "curated": true
   },
   {
    "name": "sonic-playground",
@@ -5445,9 +5425,9 @@
     "github": "https://github.com/korczis/sonic-playground"
    },
    "site": "https://korczis.github.io/sonic-playground/",
+   "supervised": true,
    "category": "media",
-   "curated": true,
-   "supervised": true
+   "curated": true
   },
   {
    "name": "catharsis-as-a-service",
@@ -5463,9 +5443,9 @@
     "github": "https://github.com/korczis/catharsis-as-a-service"
    },
    "site": "https://korczis.github.io/catharsis-as-a-service/",
+   "supervised": true,
    "category": "media",
-   "curated": true,
-   "supervised": true
+   "curated": true
   },
   {
    "name": "astronomists",
@@ -5481,9 +5461,9 @@
     "github": "https://github.com/korczis/astronomists"
    },
    "site": "https://korczis.github.io/astronomists/",
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "vomaste.cz",
@@ -5499,9 +5479,9 @@
     "github": "https://github.com/korczis/vomaste.cz"
    },
    "site": "https://korczis.github.io/vomaste.cz/",
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "the-psycho",
@@ -5517,9 +5497,9 @@
     "gitlab": "https://gitlab.com/korczis/the-psycho"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "data-atlas",
@@ -5544,9 +5524,9 @@
     "github": "https://github.com/korczis/data-atlas"
    },
    "site": "https://korczis.github.io/data-atlas/",
+   "supervised": false,
    "category": "data",
-   "curated": true,
-   "supervised": false
+   "curated": true
   },
   {
    "name": "crisis-map",
@@ -5562,9 +5542,9 @@
     "github": "https://github.com/korczis/crisis-map"
    },
    "site": "https://korczis.github.io/crisis-map/",
+   "supervised": false,
    "category": "data",
-   "curated": true,
-   "supervised": false
+   "curated": true
   },
   {
    "name": "openttd-prismatic-bridge",
@@ -5580,9 +5560,9 @@
     "gitlab": "https://gitlab.com/korczis/openttd-prismatic-bridge"
    },
    "site": null,
+   "supervised": false,
    "category": "media",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "majordomus-reel",
@@ -5605,9 +5585,9 @@
     "github": "https://github.com/korczis/majordomus-reel"
    },
    "site": "https://korczis.github.io/majordomus-reel/",
+   "supervised": true,
    "category": "media",
-   "curated": true,
-   "supervised": true
+   "curated": true
   },
   {
    "name": "gists-search",
@@ -5623,9 +5603,9 @@
     "github": "https://github.com/korczis/gists-search"
    },
    "site": "https://korczis.github.io/gists-search/",
+   "supervised": false,
    "category": "tools",
-   "curated": true,
-   "supervised": false
+   "curated": true
   },
   {
    "name": "osint-case-ratcliffe-moscow-2026",
@@ -5646,9 +5626,9 @@
     "github": "https://github.com/korczis/osint-case-ratcliffe-moscow-2026"
    },
    "site": "https://korczis.github.io/osint-case-ratcliffe-moscow-2026/",
+   "supervised": false,
    "category": "security",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "llm",
@@ -5672,9 +5652,9 @@
     "gitlab": "https://gitlab.com/korczis/llm"
    },
    "site": null,
+   "supervised": false,
    "category": "ai",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "u-tygra",
@@ -5691,9 +5671,9 @@
     "gitlab": "https://gitlab.com/korczis/u-tygra"
    },
    "site": "https://korczis.github.io/u-tygra/",
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "tinder-nomics",
@@ -5709,9 +5689,9 @@
     "gitlab": "https://gitlab.com/korczis/tinder-nomics"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "prism",
@@ -5727,9 +5707,9 @@
     "gitlab": "https://gitlab.com/korczis/prism"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "past",
@@ -5745,9 +5725,9 @@
     "gitlab": "https://gitlab.com/korczis/past"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "sig",
@@ -5772,9 +5752,9 @@
     "gitlab": "https://gitlab.com/korczis/sig"
    },
    "site": null,
+   "supervised": false,
    "category": "ai",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "apollo-crawler-extension",
@@ -5790,9 +5770,9 @@
     "gitlab": "https://gitlab.com/korczis/apollo-crawler-extension"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "ApolloCrawler-github-io",
@@ -5808,9 +5788,9 @@
     "gitlab": "https://gitlab.com/korczis/ApolloCrawler-github-io"
    },
    "site": null,
+   "supervised": false,
    "category": "web",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "docks",
@@ -5826,9 +5806,9 @@
     "gitlab": "https://gitlab.com/korczis/docks"
    },
    "site": null,
+   "supervised": false,
    "category": "systems",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "microcrawler",
@@ -5844,9 +5824,9 @@
     "gitlab": "https://gitlab.com/korczis/microcrawler"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "microcrawler-browser",
@@ -5862,9 +5842,9 @@
     "gitlab": "https://gitlab.com/korczis/microcrawler-browser"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "microcrawler-crawler-bam-brno-cz",
@@ -5880,9 +5860,9 @@
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-bam-brno-cz"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "microcrawler-crawler-all",
@@ -5898,9 +5878,9 @@
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-all"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "microcrawler-crawler-base",
@@ -5916,9 +5896,9 @@
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-base"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "microcrawler-crawler-craiglist-com",
@@ -5934,9 +5914,9 @@
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-craiglist-com"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "microcrawler-crawler-firmy-cz",
@@ -5952,9 +5932,9 @@
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-firmy-cz"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "microcrawler-crawler-heureka-cz",
@@ -5970,9 +5950,9 @@
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-heureka-cz"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "microcrawler-crawler-google-com",
@@ -5988,9 +5968,9 @@
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-google-com"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "microcrawler-crawler-news-ycombinator-com",
@@ -6006,9 +5986,9 @@
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-news-ycombinator-com"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "microcrawler-crawler-sreality-cz",
@@ -6024,9 +6004,9 @@
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-sreality-cz"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "microcrawler-crawler-xkcd-com",
@@ -6042,9 +6022,9 @@
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-xkcd-com"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "microcrawler-crawler-yelp-com",
@@ -6060,9 +6040,9 @@
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-yelp-com"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "microcrawler-elixir",
@@ -6078,9 +6058,9 @@
     "gitlab": "https://gitlab.com/korczis/microcrawler-elixir"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "microcrawler-js",
@@ -6096,9 +6076,9 @@
     "gitlab": "https://gitlab.com/korczis/microcrawler-js"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "annasabatova-cz",
@@ -6114,9 +6094,9 @@
     "gitlab": "https://gitlab.com/korczis/annasabatova-cz"
    },
    "site": null,
+   "supervised": false,
    "category": "web",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "apollocrawler-com",
@@ -6132,9 +6112,9 @@
     "gitlab": "https://gitlab.com/korczis/apollocrawler-com"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "gauc-ex",
@@ -6150,9 +6130,9 @@
     "gitlab": "https://gitlab.com/korczis/gauc-ex"
    },
    "site": null,
+   "supervised": false,
    "category": "libraries",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "korczis-com",
@@ -6168,9 +6148,9 @@
     "gitlab": "https://gitlab.com/korczis/korczis-com"
    },
    "site": null,
+   "supervised": false,
    "category": "web",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "korczis-github-com",
@@ -6186,9 +6166,9 @@
     "gitlab": "https://gitlab.com/korczis/korczis-github-com"
    },
    "site": null,
+   "supervised": false,
    "category": "web",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "lethe-it",
@@ -6204,9 +6184,9 @@
     "gitlab": "https://gitlab.com/korczis/lethe-it"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "mapofffacts-com",
@@ -6222,9 +6202,9 @@
     "gitlab": "https://gitlab.com/korczis/mapofffacts-com"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "pavian-eu",
@@ -6240,9 +6220,9 @@
     "gitlab": "https://gitlab.com/korczis/pavian-eu"
    },
    "site": null,
+   "supervised": false,
    "category": "web",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "hydra",
@@ -6258,9 +6238,9 @@
     "gitlab": "https://gitlab.com/korczis/hydra"
    },
    "site": null,
+   "supervised": false,
    "category": "libraries",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "czech-stats",
@@ -6276,9 +6256,9 @@
     "gitlab": "https://gitlab.com/korczis/czech-stats"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "rocksdb_indexer",
@@ -6294,9 +6274,9 @@
     "gitlab": "https://gitlab.com/korczis/rocksdb_indexer"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "astudo",
@@ -6312,9 +6292,9 @@
     "gitlab": "https://gitlab.com/korczis/astudo"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "pdf_renderer",
@@ -6330,9 +6310,9 @@
     "gitlab": "https://gitlab.com/korczis/pdf_renderer"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "marketing-ideas",
@@ -6348,9 +6328,9 @@
     "gitlab": "https://gitlab.com/korczis/marketing-ideas"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "distance-calculator",
@@ -6366,9 +6346,9 @@
     "gitlab": "https://gitlab.com/korczis/distance-calculator"
    },
    "site": null,
+   "supervised": false,
    "category": "science",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "simple_geocoder",
@@ -6384,9 +6364,9 @@
     "gitlab": "https://gitlab.com/korczis/simple_geocoder"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "meili_rsex",
@@ -6402,9 +6382,9 @@
     "gitlab": "https://gitlab.com/korczis/meili_rsex"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "job-processor",
@@ -6420,9 +6400,9 @@
     "gitlab": "https://gitlab.com/korczis/job-processor"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "dispatcher",
@@ -6438,9 +6418,9 @@
     "gitlab": "https://gitlab.com/korczis/dispatcher"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "kuzu-ex",
@@ -6456,9 +6436,9 @@
     "gitlab": "https://gitlab.com/korczis/kuzu-ex"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "corvidae",
@@ -6474,9 +6454,9 @@
     "gitlab": "https://gitlab.com/korczis/corvidae"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "korczis.gitlab.io",
@@ -6492,9 +6472,9 @@
     "gitlab": "https://gitlab.com/korczis/korczis.gitlab.io"
    },
    "site": null,
+   "supervised": false,
    "category": "web",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "comtesse",
@@ -6510,9 +6490,9 @@
     "gitlab": "https://gitlab.com/korczis/comtesse"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "GHT",
@@ -6528,9 +6508,9 @@
     "gitlab": "https://gitlab.com/korczis/GHT"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "edna",
@@ -6546,9 +6526,9 @@
     "gitlab": "https://gitlab.com/korczis/edna"
    },
    "site": null,
+   "supervised": false,
    "category": "ai",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "prismatic",
@@ -6564,9 +6544,9 @@
     "github": "https://github.com/korczis/prismatic"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "cognitive-reasoning",
@@ -6582,9 +6562,9 @@
     "github": "https://github.com/korczis/cognitive-reasoning"
    },
    "site": null,
+   "supervised": false,
    "category": "ai",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "prismatic-blog",
@@ -6600,9 +6580,9 @@
     "github": "https://github.com/korczis/prismatic-blog"
    },
    "site": "https://korczis.github.io/prismatic-blog/",
+   "supervised": false,
    "category": "media",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "tap",
@@ -6618,9 +6598,9 @@
     "github": "https://github.com/korczis/tap"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "bubbler",
@@ -6636,9 +6616,9 @@
     "github": "https://github.com/korczis/bubbler"
    },
    "site": "https://korczis.github.io/bubbler/",
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "pissaleck",
@@ -6654,9 +6634,9 @@
     "github": "https://github.com/korczis/pissaleck"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "MindScape",
@@ -6672,9 +6652,9 @@
     "github": "https://github.com/korczis/MindScape"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "el-magico-cache",
@@ -6690,9 +6670,9 @@
     "github": "https://github.com/korczis/el-magico-cache"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "kanec",
@@ -6709,9 +6689,9 @@
     "gitlab": "https://gitlab.com/korczis/kanec"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "gh-exec-3000",
@@ -6727,9 +6707,9 @@
     "github": "https://github.com/korczis/gh-exec-3000"
    },
    "site": null,
+   "supervised": false,
    "category": "systems",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "rest-hello-world-benchmark",
@@ -6745,9 +6725,9 @@
     "github": "https://github.com/korczis/rest-hello-world-benchmark"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "caregiver",
@@ -6763,9 +6743,9 @@
     "github": "https://github.com/korczis/caregiver"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "maze-rs",
@@ -6782,9 +6762,9 @@
     "gitlab": "https://gitlab.com/korczis/maze-rs"
    },
    "site": "https://korczis.github.io/maze-rs/",
+   "supervised": false,
    "category": "science",
-   "curated": true,
-   "supervised": false
+   "curated": true
   },
   {
    "name": "ReadingPhoneNumbersInRealTime",
@@ -6800,9 +6780,9 @@
     "github": "https://github.com/korczis/ReadingPhoneNumbersInRealTime"
    },
    "site": null,
+   "supervised": false,
    "category": "knowledge",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "happ",
@@ -6819,9 +6799,9 @@
     "gitlab": "https://gitlab.com/korczis/happ"
    },
    "site": null,
+   "supervised": false,
    "category": "learning",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "MinervaEye",
@@ -6837,9 +6817,9 @@
     "github": "https://github.com/korczis/MinervaEye"
    },
    "site": null,
+   "supervised": false,
    "category": "knowledge",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "3d-print",
@@ -6855,9 +6835,9 @@
     "github": "https://github.com/korczis/3d-print"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "ctu-cz",
@@ -6873,9 +6853,9 @@
     "github": "https://github.com/korczis/ctu-cz"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "data-playground",
@@ -6891,9 +6871,9 @@
     "github": "https://github.com/korczis/data-playground"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "dj-schnapps",
@@ -6910,9 +6890,9 @@
     "gitlab": "https://gitlab.com/korczis/dj-schnapps"
    },
    "site": null,
+   "supervised": false,
    "category": "media",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "reading",
@@ -6929,9 +6909,9 @@
     "gitlab": "https://gitlab.com/korczis/reading"
    },
    "site": null,
+   "supervised": false,
    "category": "knowledge",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "ts-logger",
@@ -6948,9 +6928,9 @@
     "gitlab": "https://gitlab.com/korczis/ts-logger"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "nestravenkam",
@@ -6967,9 +6947,9 @@
     "gitlab": "https://gitlab.com/korczis/nestravenkam"
    },
    "site": null,
+   "supervised": false,
    "category": "web",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "home",
@@ -6986,9 +6966,9 @@
     "gitlab": "https://gitlab.com/korczis/home"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "twitter-analysis",
@@ -7005,9 +6985,9 @@
     "gitlab": "https://gitlab.com/korczis/twitter-analysis"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "server-archlinux",
@@ -7024,9 +7004,9 @@
     "gitlab": "https://gitlab.com/korczis/server-archlinux"
    },
    "site": null,
+   "supervised": false,
    "category": "systems",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "zdeny-docker",
@@ -7043,9 +7023,9 @@
     "gitlab": "https://gitlab.com/korczis/zdeny-docker"
    },
    "site": null,
+   "supervised": false,
    "category": "systems",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "k8s-orbis-pictus",
@@ -7062,9 +7042,9 @@
     "gitlab": "https://gitlab.com/korczis/k8s-orbis-pictus"
    },
    "site": null,
+   "supervised": false,
    "category": "systems",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "server-coreos",
@@ -7081,9 +7061,9 @@
     "gitlab": "https://gitlab.com/korczis/server-coreos"
    },
    "site": null,
+   "supervised": false,
    "category": "systems",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "server-atomic",
@@ -7100,9 +7080,9 @@
     "gitlab": "https://gitlab.com/korczis/server-atomic"
    },
    "site": null,
+   "supervised": false,
    "category": "systems",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "server-nixos",
@@ -7119,9 +7099,9 @@
     "gitlab": "https://gitlab.com/korczis/server-nixos"
    },
    "site": null,
+   "supervised": false,
    "category": "systems",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "server-ansible",
@@ -7138,9 +7118,9 @@
     "gitlab": "https://gitlab.com/korczis/server-ansible"
    },
    "site": null,
+   "supervised": false,
    "category": "systems",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "tosh",
@@ -7157,9 +7137,9 @@
     "gitlab": "https://gitlab.com/korczis/tosh"
    },
    "site": null,
+   "supervised": false,
    "category": "web",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "aws-lambda-docker",
@@ -7176,9 +7156,9 @@
     "gitlab": "https://gitlab.com/korczis/aws-lambda-docker"
    },
    "site": null,
+   "supervised": false,
    "category": "systems",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "bcnode-extra-scripts",
@@ -7195,9 +7175,9 @@
     "gitlab": "https://gitlab.com/korczis/bcnode-extra-scripts"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "bc-apple",
@@ -7214,9 +7194,9 @@
     "gitlab": "https://gitlab.com/korczis/bc-apple"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "js-libp2p-umbrella",
@@ -7233,9 +7213,9 @@
     "gitlab": "https://gitlab.com/korczis/js-libp2p-umbrella"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "bcnode-old",
@@ -7252,9 +7232,9 @@
     "gitlab": "https://gitlab.com/korczis/bcnode-old"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "gauc.ex",
@@ -7270,9 +7250,9 @@
     "github": "https://github.com/korczis/gauc.ex"
    },
    "site": null,
+   "supervised": false,
    "category": "libraries",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "the-scratch",
@@ -7297,9 +7277,9 @@
     "gitlab": "https://gitlab.com/korczis/the-scratch"
    },
    "site": null,
+   "supervised": false,
    "category": "web",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "rustas",
@@ -7316,9 +7296,9 @@
     "gitlab": "https://gitlab.com/korczis/rustas"
    },
    "site": null,
+   "supervised": false,
    "category": "science",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "cluster-kubernetes",
@@ -7337,9 +7317,9 @@
     "gitlab": "https://gitlab.com/korczis/cluster-kubernetes"
    },
    "site": null,
+   "supervised": false,
    "category": "systems",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "models",
@@ -7356,9 +7336,9 @@
     "gitlab": "https://gitlab.com/korczis/models"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "gdc-dumpator",
@@ -7375,9 +7355,9 @@
     "gitlab": "https://gitlab.com/korczis/gdc-dumpator"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "in-rust-we-trust",
@@ -7394,9 +7374,9 @@
     "gitlab": "https://gitlab.com/korczis/in-rust-we-trust"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "zeman-ucet",
@@ -7420,9 +7400,9 @@
     "gitlab": "https://gitlab.com/korczis/zeman-ucet"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "rustler-test",
@@ -7439,9 +7419,9 @@
     "gitlab": "https://gitlab.com/korczis/rustler-test"
    },
    "site": null,
+   "supervised": false,
    "category": "learning",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "Test-Elixir",
@@ -7458,9 +7438,9 @@
     "gitlab": "https://gitlab.com/korczis/Test-Elixir"
    },
    "site": null,
+   "supervised": false,
    "category": "learning",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "zaas",
@@ -7477,9 +7457,9 @@
     "gitlab": "https://gitlab.com/korczis/zaas"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "mapoffacts",
@@ -7496,9 +7476,9 @@
     "gitlab": "https://gitlab.com/korczis/mapoffacts"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "web-spa",
@@ -7515,9 +7495,9 @@
     "gitlab": "https://gitlab.com/korczis/web-spa"
    },
    "site": null,
+   "supervised": false,
    "category": "web",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "magic",
@@ -7541,9 +7521,9 @@
     "gitlab": "https://gitlab.com/korczis/magic"
    },
    "site": null,
+   "supervised": false,
    "category": "security",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "streamflow",
@@ -7560,9 +7540,9 @@
     "gitlab": "https://gitlab.com/korczis/streamflow"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "sli2dli",
@@ -7579,9 +7559,9 @@
     "gitlab": "https://gitlab.com/korczis/sli2dli"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "wims",
@@ -7598,9 +7578,9 @@
     "gitlab": "https://gitlab.com/korczis/wims"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "graph-flow",
@@ -7617,9 +7597,9 @@
     "gitlab": "https://gitlab.com/korczis/graph-flow"
    },
    "site": null,
+   "supervised": false,
    "category": "science",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "cluster",
@@ -7636,9 +7616,9 @@
     "gitlab": "https://gitlab.com/korczis/cluster"
    },
    "site": null,
+   "supervised": false,
    "category": "systems",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "kpmap-ruby",
@@ -7655,9 +7635,9 @@
     "gitlab": "https://gitlab.com/korczis/kpmap-ruby"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "peg-loader",
@@ -7674,9 +7654,9 @@
     "gitlab": "https://gitlab.com/korczis/peg-loader"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "brepta",
@@ -7693,9 +7673,9 @@
     "gitlab": "https://gitlab.com/korczis/brepta"
    },
    "site": null,
+   "supervised": false,
    "category": "media",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "gooddata-ruby-examples",
@@ -7712,9 +7692,9 @@
     "gitlab": "https://gitlab.com/korczis/gooddata-ruby-examples"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "gooddata-graphql",
@@ -7731,9 +7711,9 @@
     "gitlab": "https://gitlab.com/korczis/gooddata-graphql"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "skull-elixir",
@@ -7750,9 +7730,9 @@
     "gitlab": "https://gitlab.com/korczis/skull-elixir"
    },
    "site": null,
+   "supervised": false,
    "category": "learning",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "maze",
@@ -7769,9 +7749,9 @@
     "gitlab": "https://gitlab.com/korczis/maze"
    },
    "site": null,
+   "supervised": false,
    "category": "science",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "maze-js",
@@ -7788,9 +7768,9 @@
     "gitlab": "https://gitlab.com/korczis/maze-js"
    },
    "site": null,
+   "supervised": false,
    "category": "science",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "ideas",
@@ -7807,9 +7787,9 @@
     "gitlab": "https://gitlab.com/korczis/ideas"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "gooddata-lcm-tool",
@@ -7826,9 +7806,9 @@
     "gitlab": "https://gitlab.com/korczis/gooddata-lcm-tool"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "rustler_mix",
@@ -7845,9 +7825,9 @@
     "gitlab": "https://gitlab.com/korczis/rustler_mix"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "easy-plugin-plugins",
@@ -7864,9 +7844,9 @@
     "gitlab": "https://gitlab.com/korczis/easy-plugin-plugins"
    },
    "site": null,
+   "supervised": false,
    "category": "libraries",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "jetel",
@@ -7883,9 +7863,9 @@
     "gitlab": "https://gitlab.com/korczis/jetel"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "gooddata-fs",
@@ -7902,9 +7882,9 @@
     "gitlab": "https://gitlab.com/korczis/gooddata-fs"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "charon",
@@ -7921,9 +7901,9 @@
     "gitlab": "https://gitlab.com/korczis/charon"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "skull-rust",
@@ -7940,9 +7920,9 @@
     "gitlab": "https://gitlab.com/korczis/skull-rust"
    },
    "site": null,
+   "supervised": false,
    "category": "learning",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "gooddata-proxy",
@@ -7959,9 +7939,9 @@
     "gitlab": "https://gitlab.com/korczis/gooddata-proxy"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "peg-parser",
@@ -7978,9 +7958,9 @@
     "gitlab": "https://gitlab.com/korczis/peg-parser"
    },
    "site": null,
+   "supervised": false,
    "category": "libraries",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "datascience",
@@ -7997,9 +7977,9 @@
     "gitlab": "https://gitlab.com/korczis/datascience"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "babel-plugin-transform-graphql",
@@ -8016,9 +7996,9 @@
     "gitlab": "https://gitlab.com/korczis/babel-plugin-transform-graphql"
    },
    "site": null,
+   "supervised": false,
    "category": "libraries",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "node-proxy-upload",
@@ -8035,9 +8015,9 @@
     "gitlab": "https://gitlab.com/korczis/node-proxy-upload"
    },
    "site": null,
+   "supervised": false,
    "category": "learning",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "haskell-world",
@@ -8054,9 +8034,9 @@
     "gitlab": "https://gitlab.com/korczis/haskell-world"
    },
    "site": null,
+   "supervised": false,
    "category": "science",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "zlown",
@@ -8073,9 +8053,9 @@
     "gitlab": "https://gitlab.com/korczis/zlown"
    },
    "site": null,
+   "supervised": false,
    "category": "security",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "microcrawler-ng",
@@ -8092,9 +8072,9 @@
     "gitlab": "https://gitlab.com/korczis/microcrawler-ng"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "mapofffacts.com",
@@ -8110,9 +8090,9 @@
     "github": "https://github.com/korczis/mapofffacts.com"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "jetel-modules",
@@ -8129,9 +8109,9 @@
     "gitlab": "https://gitlab.com/korczis/jetel-modules"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "csv2psql",
@@ -8148,9 +8128,9 @@
     "gitlab": "https://gitlab.com/korczis/csv2psql"
    },
    "site": "https://korczis.github.io/csv2psql/",
+   "supervised": false,
    "category": "tools",
-   "curated": true,
-   "supervised": false
+   "curated": true
   },
   {
    "name": "data",
@@ -8167,9 +8147,9 @@
     "gitlab": "https://gitlab.com/korczis/data"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "json2csv",
@@ -8186,9 +8166,9 @@
     "gitlab": "https://gitlab.com/korczis/json2csv"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": true,
-   "supervised": false
+   "curated": true
   },
   {
    "name": "big-png",
@@ -8205,9 +8185,9 @@
     "gitlab": "https://gitlab.com/korczis/big-png"
    },
    "site": null,
+   "supervised": false,
    "category": "science",
-   "curated": true,
-   "supervised": false
+   "curated": true
   },
   {
    "name": "pavian.eu",
@@ -8223,9 +8203,9 @@
     "github": "https://github.com/korczis/pavian.eu"
    },
    "site": null,
+   "supervised": false,
    "category": "web",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "skull-cpp",
@@ -8242,9 +8222,9 @@
     "gitlab": "https://gitlab.com/korczis/skull-cpp"
    },
    "site": null,
+   "supervised": false,
    "category": "learning",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "docker-gooddata-ruby",
@@ -8261,9 +8241,9 @@
     "gitlab": "https://gitlab.com/korczis/docker-gooddata-ruby"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "microscratch-react",
@@ -8280,9 +8260,9 @@
     "gitlab": "https://gitlab.com/korczis/microscratch-react"
    },
    "site": null,
+   "supervised": false,
    "category": "web",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "magicbiz",
@@ -8299,9 +8279,9 @@
     "gitlab": "https://gitlab.com/korczis/magicbiz"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "docker-dstk",
@@ -8318,9 +8298,9 @@
     "gitlab": "https://gitlab.com/korczis/docker-dstk"
    },
    "site": null,
+   "supervised": false,
    "category": "systems",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "docker-datasciencetoolbox",
@@ -8337,9 +8317,9 @@
     "gitlab": "https://gitlab.com/korczis/docker-datasciencetoolbox"
    },
    "site": null,
+   "supervised": false,
    "category": "systems",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "datasciencecoursera",
@@ -8356,9 +8336,9 @@
     "gitlab": "https://gitlab.com/korczis/datasciencecoursera"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "wangsta",
@@ -8375,9 +8355,9 @@
     "gitlab": "https://gitlab.com/korczis/wangsta"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "talkie",
@@ -8394,9 +8374,9 @@
     "gitlab": "https://gitlab.com/korczis/talkie"
    },
    "site": null,
+   "supervised": false,
    "category": "media",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "algorithms-ruby",
@@ -8413,9 +8393,9 @@
     "gitlab": "https://gitlab.com/korczis/algorithms-ruby"
    },
    "site": null,
+   "supervised": false,
    "category": "science",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "grache",
@@ -8432,9 +8412,9 @@
     "gitlab": "https://gitlab.com/korczis/grache"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "docker-conf2015",
@@ -8451,9 +8431,9 @@
     "gitlab": "https://gitlab.com/korczis/docker-conf2015"
    },
    "site": null,
+   "supervised": false,
    "category": "systems",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "apollon",
@@ -8470,9 +8450,9 @@
     "gitlab": "https://gitlab.com/korczis/apollon"
    },
    "site": "https://korczis.github.io/apollon/",
+   "supervised": false,
    "category": "systems",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "grache-test",
@@ -8489,9 +8469,9 @@
     "gitlab": "https://gitlab.com/korczis/grache-test"
    },
    "site": null,
+   "supervised": false,
    "category": "learning",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "iCave",
@@ -8508,9 +8488,9 @@
     "gitlab": "https://gitlab.com/korczis/iCave"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "gooddata_connectors_metadata",
@@ -8527,9 +8507,9 @@
     "gitlab": "https://gitlab.com/korczis/gooddata_connectors_metadata"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "lethe.it",
@@ -8545,9 +8525,9 @@
     "github": "https://github.com/korczis/lethe.it"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "microscratch",
@@ -8564,9 +8544,9 @@
     "gitlab": "https://gitlab.com/korczis/microscratch"
    },
    "site": null,
+   "supervised": false,
    "category": "web",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "skull-emscripten",
@@ -8583,9 +8563,9 @@
     "gitlab": "https://gitlab.com/korczis/skull-emscripten"
    },
    "site": null,
+   "supervised": false,
    "category": "learning",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "gooddata_rails_app",
@@ -8602,9 +8582,9 @@
     "gitlab": "https://gitlab.com/korczis/gooddata_rails_app"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "annasabatova.cz",
@@ -8620,9 +8600,9 @@
     "github": "https://github.com/korczis/annasabatova.cz"
    },
    "site": null,
+   "supervised": false,
    "category": "web",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "apollo-crawler",
@@ -8639,9 +8619,9 @@
     "gitlab": "https://gitlab.com/korczis/apollo-crawler"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "peacemaker",
@@ -8658,9 +8638,9 @@
     "gitlab": "https://gitlab.com/korczis/peacemaker"
    },
    "site": null,
+   "supervised": false,
    "category": "security",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "esri",
@@ -8677,9 +8657,9 @@
     "gitlab": "https://gitlab.com/korczis/esri"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "algorithms",
@@ -8696,9 +8676,9 @@
     "gitlab": "https://gitlab.com/korczis/algorithms"
    },
    "site": null,
+   "supervised": false,
    "category": "science",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "ares-api",
@@ -8715,9 +8695,9 @@
     "gitlab": "https://gitlab.com/korczis/ares-api"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "ratnet",
@@ -8734,9 +8714,9 @@
     "gitlab": "https://gitlab.com/korczis/ratnet"
    },
    "site": null,
+   "supervised": false,
    "category": "security",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "skull-c",
@@ -8753,9 +8733,9 @@
     "gitlab": "https://gitlab.com/korczis/skull-c"
    },
    "site": null,
+   "supervised": false,
    "category": "learning",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "skull",
@@ -8772,9 +8752,9 @@
     "gitlab": "https://gitlab.com/korczis/skull"
    },
    "site": null,
+   "supervised": false,
    "category": "learning",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "skull-java",
@@ -8791,9 +8771,9 @@
     "gitlab": "https://gitlab.com/korczis/skull-java"
    },
    "site": null,
+   "supervised": false,
    "category": "learning",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "skull-ruby",
@@ -8810,14 +8790,14 @@
     "gitlab": "https://gitlab.com/korczis/skull-ruby"
    },
    "site": null,
+   "supervised": false,
    "category": "learning",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "skull-nodejs",
    "description": "Node.js Skull",
-   "language": "Makefile",
+   "language": null,
    "topics": [],
    "stars": 0,
    "created_at": "2014-07-22T04:14:32Z",
@@ -8829,9 +8809,9 @@
     "gitlab": "https://gitlab.com/korczis/skull-nodejs"
    },
    "site": null,
+   "supervised": false,
    "category": "learning",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "skull-haskell",
@@ -8848,9 +8828,9 @@
     "gitlab": "https://gitlab.com/korczis/skull-haskell"
    },
    "site": null,
+   "supervised": false,
    "category": "learning",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "skull-erlang",
@@ -8867,9 +8847,9 @@
     "gitlab": "https://gitlab.com/korczis/skull-erlang"
    },
    "site": null,
+   "supervised": false,
    "category": "learning",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "apollo-schemas",
@@ -8886,9 +8866,9 @@
     "gitlab": "https://gitlab.com/korczis/apollo-schemas"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "photos",
@@ -8905,9 +8885,9 @@
     "gitlab": "https://gitlab.com/korczis/photos"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "principal",
@@ -8924,9 +8904,9 @@
     "gitlab": "https://gitlab.com/korczis/principal"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "microcrawler-couchapp",
@@ -8943,9 +8923,9 @@
     "gitlab": "https://gitlab.com/korczis/microcrawler-couchapp"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "codecademy",
@@ -8962,9 +8942,9 @@
     "gitlab": "https://gitlab.com/korczis/codecademy"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "github-extractor",
@@ -8981,9 +8961,9 @@
     "gitlab": "https://gitlab.com/korczis/github-extractor"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "apollo-box",
@@ -9000,9 +8980,9 @@
     "gitlab": "https://gitlab.com/korczis/apollo-box"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "nosqlight",
@@ -9019,9 +8999,9 @@
     "gitlab": "https://gitlab.com/korczis/nosqlight"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "apollocrawler.com",
@@ -9037,9 +9017,9 @@
     "github": "https://github.com/korczis/apollocrawler.com"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "craftsmen",
@@ -9056,9 +9036,9 @@
     "gitlab": "https://gitlab.com/korczis/craftsmen"
    },
    "site": null,
+   "supervised": false,
    "category": "web",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "solr-core-minimal",
@@ -9075,9 +9055,9 @@
     "gitlab": "https://gitlab.com/korczis/solr-core-minimal"
    },
    "site": null,
+   "supervised": false,
    "category": "data",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "generator-microscratch",
@@ -9094,9 +9074,9 @@
     "gitlab": "https://gitlab.com/korczis/generator-microscratch"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "cs-benchmark",
@@ -9113,9 +9093,9 @@
     "gitlab": "https://gitlab.com/korczis/cs-benchmark"
    },
    "site": null,
+   "supervised": false,
    "category": "learning",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "lola",
@@ -9132,9 +9112,9 @@
     "gitlab": "https://gitlab.com/korczis/lola"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "books",
@@ -9151,9 +9131,9 @@
     "gitlab": "https://gitlab.com/korczis/books"
    },
    "site": null,
+   "supervised": false,
    "category": "knowledge",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "generator-the-scratch",
@@ -9170,9 +9150,9 @@
     "gitlab": "https://gitlab.com/korczis/generator-the-scratch"
    },
    "site": null,
+   "supervised": false,
    "category": "learning",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "Rocnikac4",
@@ -9189,9 +9169,9 @@
     "gitlab": "https://gitlab.com/korczis/Rocnikac4"
    },
    "site": null,
+   "supervised": false,
    "category": "learning",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "skype-adapter-client",
@@ -9208,9 +9188,9 @@
     "gitlab": "https://gitlab.com/korczis/skype-adapter-client"
    },
    "site": null,
+   "supervised": false,
    "category": "libraries",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "social-icons",
@@ -9227,9 +9207,9 @@
     "gitlab": "https://gitlab.com/korczis/social-icons"
    },
    "site": null,
+   "supervised": false,
    "category": "systems",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "malina",
@@ -9246,9 +9226,9 @@
     "gitlab": "https://gitlab.com/korczis/malina"
    },
    "site": null,
+   "supervised": false,
    "category": "learning",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "inspectors",
@@ -9265,9 +9245,9 @@
     "gitlab": "https://gitlab.com/korczis/inspectors"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "ares",
@@ -9284,9 +9264,9 @@
     "gitlab": "https://gitlab.com/korczis/ares"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "reflex",
@@ -9303,14 +9283,14 @@
     "gitlab": "https://gitlab.com/korczis/reflex"
    },
    "site": null,
+   "supervised": false,
    "category": "tools",
-   "curated": false,
-   "supervised": false
+   "curated": false
   },
   {
    "name": "sandbox",
    "description": "Something just for fun. This is place where I play with new techs...",
-   "language": "Ruby",
+   "language": null,
    "topics": [],
    "stars": 1,
    "created_at": "2012-01-01T23:48:41Z",
@@ -9322,9 +9302,9 @@
     "gitlab": "https://gitlab.com/korczis/sandbox"
    },
    "site": null,
+   "supervised": false,
    "category": "learning",
-   "curated": false,
-   "supervised": false
+   "curated": false
   }
  ]
 }

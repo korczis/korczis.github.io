@@ -67,7 +67,7 @@ Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist s
 ## Every original repository
 
 > 211 repositories on GitHub and GitLab where the owner wrote at least half of the commits,
-> derived 2026-11-15T22:27:14Z. Forks and mirrors (297) are not listed.
+> derived 2026-11-16T01:45:27Z. Forks and mirrors (281) are not listed.
 
 ### AI engineering (5)
 
@@ -237,14 +237,14 @@ Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist s
 - skull: Programming learning materials, examples, sources ... (Shell, 2014). GitHub https://github.com/korczis/skull; GitLab https://gitlab.com/korczis/skull
 - skull-java (Java, 2014). GitHub https://github.com/korczis/skull-java; GitLab https://gitlab.com/korczis/skull-java
 - skull-ruby: Ruby Skull (Ruby, 2014). GitHub https://github.com/korczis/skull-ruby; GitLab https://gitlab.com/korczis/skull-ruby
-- skull-nodejs: Node.js Skull (Makefile, 2014). GitHub https://github.com/korczis/skull-nodejs; GitLab https://gitlab.com/korczis/skull-nodejs
+- skull-nodejs: Node.js Skull (2014). GitHub https://github.com/korczis/skull-nodejs; GitLab https://gitlab.com/korczis/skull-nodejs
 - skull-haskell (Haskell, 2014). GitHub https://github.com/korczis/skull-haskell; GitLab https://gitlab.com/korczis/skull-haskell
 - skull-erlang: Programming learning materials, examples, sources ... (Erlang, 2014). GitHub https://github.com/korczis/skull-erlang; GitLab https://gitlab.com/korczis/skull-erlang
 - cs-benchmark: Simple C# Benchmark (C#, 2014). GitHub https://github.com/korczis/cs-benchmark; GitLab https://gitlab.com/korczis/cs-benchmark
 - generator-the-scratch: Yeoman Generator for The Scratch (JavaScript, 2013). GitHub https://github.com/korczis/generator-the-scratch; GitLab https://gitlab.com/korczis/generator-the-scratch
 - Rocnikac4 (C#, 2013). GitHub https://github.com/korczis/Rocnikac4; GitLab https://gitlab.com/korczis/Rocnikac4
 - malina: Raspberry Pi playground (Shell, 2013). GitHub https://github.com/korczis/malina; GitLab https://gitlab.com/korczis/malina
-- sandbox: Something just for fun. This is place where I play with new techs... (Ruby, 2012). GitHub https://github.com/korczis/sandbox; GitLab https://gitlab.com/korczis/sandbox
+- sandbox: Something just for fun. This is place where I play with new techs... (2012). GitHub https://github.com/korczis/sandbox; GitLab https://gitlab.com/korczis/sandbox
 
 ### Tools (64)
 
