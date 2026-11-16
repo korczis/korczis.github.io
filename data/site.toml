@@ -215,8 +215,8 @@ source_cs = "HTTPS GET každého webu; vypsané jsou jen weby, které odpovídaj
 id = "supervision"
 label = "Majordomus supervision"
 label_cs = "Dohled Majordomu"
-source = "Presence of .ai/manifest.yaml on the default branch"
-source_cs = "Přítomnost .ai/manifest.yaml ve výchozí větvi"
+source = "The [supervision] marker (.ai/manifest.yaml) on the default branch of every original repository, GitHub and GitLab"
+source_cs = "Značka [supervision] (.ai/manifest.yaml) ve výchozí větvi každého původního repozitáře, GitHub i GitLab"
 
 [[stack.data]]
 id = "release"

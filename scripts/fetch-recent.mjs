@@ -2,8 +2,8 @@
 // Derives data/recent.json: the original repositories with a commit in the recent window, in
 // detail, each placed in the smallest period of data/projects.toml [recent] that holds its last commit. "Recent" is the date of the last commit, never the host's activity date (GitLab stamps
 // every imported project with the import day). For each: the last 30 commits, language breakdown, README
-// excerpt, topics, links. Reads data/index.json for the candidates; asks GitHub and GitLab
-// through their CLIs (`gh api`, `glab api`).
+// excerpt, topics, links, Majordomus supervision. Reads data/index.json for the candidates; asks
+// each repository's forge through the one connection to GitHub and GitLab (scripts/lib/forge.mjs).
 //
 // The fields that come from data/index.json (category, curated, description, ...) and the period
 // are derivation: --derive re-applies them to the stored measurements offline, so a change to the
@@ -11,11 +11,10 @@
 //
 // usage: npm run recent                                   measure (gh, glab) and derive
 //        node scripts/fetch-recent.mjs --derive [--check] re-derive the stored file offline
-import { execFile } from 'node:child_process';
 import { readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { promisify } from 'node:util';
+import { forges } from './lib/forge.mjs';
 import { GitLabBudgetError, gitlabClient } from './lib/gitlab.mjs';
 import { identity, pool, readToml } from './lib/derive.mjs';
 import { cliArgs } from './lib/cli.mjs';
@@ -23,7 +22,6 @@ import { plain } from './lib/plain.mjs';
 
 cliArgs({ '--derive': true, '--check': true });
 
-const run = promisify(execFile);
 if (process.argv.includes('--check') && !process.argv.includes('--derive')) {
   console.error('✗ --check needs --derive (the measurement itself is never checked offline)');
   process.exit(2);
@@ -60,6 +58,7 @@ function row(r, detail, now) {
     site: r.site,
     curated: r.curated,
     stars: r.stars,
+    supervised: r.supervised ?? null,
   };
 }
 
@@ -101,22 +100,6 @@ if (process.argv.includes('--derive')) {
 const now = Date.now();
 const cutoff = new Date(now - DAYS * 86400000).toISOString();
 
-// A missing file (404) is an answer: null. A rate limit is not: wait and ask again, up to six times,
-// so a busy API never silently drops a project from the year.
-async function cli(tool, args) {
-  for (let attempt = 0; ; attempt += 1) {
-    try {
-      const { stdout } = await run(tool, ['api', ...args], { maxBuffer: 32 * 1024 * 1024 });
-      return stdout;
-    } catch (error) {
-      const why = String(error.stderr ?? error.message);
-      if (!/429|rate limit|too many|502|503/i.test(why) || attempt >= 6) return null;
-      await new Promise((resolve) => setTimeout(resolve, 2 ** attempt * 3000));
-    }
-  }
-}
-const json = (text) => { try { return text ? JSON.parse(text) : null; } catch { return null; } };
-
 // The first paragraph of prose in a README: no headings, badges, images, HTML or code.
 function excerpt(markdown) {
   if (!markdown) return null;
@@ -133,65 +116,22 @@ function excerpt(markdown) {
   return null;
 }
 
-function shares(bytes) {
-  const total = Object.values(bytes ?? {}).reduce((a, b) => a + b, 0);
-  if (!total) return [];
-  return Object.entries(bytes).map(([name, n]) => ({ name, share: Math.round((n / total) * 1000) / 10 }))
-    .sort((a, b) => b.share - a.share).slice(0, 6);
-}
+// Every forge through one connection: GitHub through gh, GitLab through the shared client (glab
+// locally, REST in CI, one time budget).
+const forge = forges({ gitlab: gitlabClient() });
 
-async function github(name) {
-  const [commits, langs, readme] = await Promise.all([
-    cli('gh', [`repos/${me.github}/${name}/commits?per_page=${COMMITS}`]),
-    cli('gh', [`repos/${me.github}/${name}/languages`]),
-    cli('gh', ['-H', 'Accept: application/vnd.github.raw', `repos/${me.github}/${name}/readme`]),
-  ]);
-  const list = json(commits) ?? [];
-  const c = list[0];
-  return {
-    last_commit: c?.commit?.committer?.date ?? null,
-    last_message: c?.commit?.message?.split('\n')[0] ?? null,
-    commits: list.map((x) => ({ at: x.commit.committer.date, message: x.commit.message.split('\n')[0], url: x.html_url })),
-    languages: shares(json(langs)),
-    readme: excerpt(readme),
-  };
-}
-
-// GitLab through the shared client (glab locally, REST in CI, one time budget).
-const gl = gitlabClient();
-async function gitlab(name) {
-  const id = encodeURIComponent(`${me.gitlab}/${name}`);
-  const project = await gl(`projects/${id}`);
-  if (!project) return {};
-  const branch = encodeURIComponent(project.default_branch ?? 'main');
-  const [commits, langs, readme] = await Promise.all([
-    gl(`projects/${id}/repository/commits?per_page=${COMMITS}&ref_name=${branch}`),
-    gl(`projects/${id}/languages`),
-    gl(`projects/${id}/repository/files/README.md/raw?ref=${branch}`, { raw: true }),
-  ]);
-  const list = commits ?? [];
-  const c = list[0];
-  return {
-    last_commit: c?.committed_date ?? null,
-    last_message: c?.title ?? null,
-    commits: list.map((x) => ({ at: x.committed_date, message: x.title, url: x.web_url })),
-    languages: Object.entries(langs ?? {}).map(([n, share]) => ({ name: n, share: Math.round(share * 10) / 10 }))
-      .sort((a, b) => b.share - a.share).slice(0, 6),
-    readme: excerpt(readme),
-  };
-}
-
-// When GitLab cannot be read in time, a project keeps its last measured record: the site loses
-// nothing, and the run says how many were kept.
+// When a forge cannot answer (an error, a spent GitLab budget), a repository keeps its last
+// measured record: the site loses nothing, and the run says how many were kept.
 const previous = (() => { try { return JSON.parse(readFileSync(TARGET, 'utf8')).repos; } catch { return []; } })();
 let kept = 0;
 async function detailOf(r) {
-  if (r.hosts.github) return github(r.name);
   try {
-    return await gitlab(r.name);
+    const d = await forge.detail(r.hosts.github ?? r.hosts.gitlab, { commits: COMMITS });
+    const latest = d.commits?.[0];
+    return { last_commit: latest?.at ?? null, last_message: latest?.message ?? null, commits: d.commits ?? [], languages: d.languages ?? [], readme: excerpt(d.readme) };
   } catch (error) {
     const before = previous.find((p) => p.name === r.name);
-    console.error(`GitLab ${r.name}: ${error instanceof GitLabBudgetError ? 'budget spent' : error.message}; ${before ? 'kept the last measurement' : 'skipped'}`);
+    console.error(`${r.name}: ${error instanceof GitLabBudgetError ? 'GitLab budget spent' : error.message}; ${before ? 'kept the last measurement' : 'skipped'}`);
     if (!before) return {};
     kept += 1;
     return { last_commit: before.last_commit, last_message: before.last_message, commits: before.commits ?? [], languages: before.languages, readme: before.readme };
@@ -210,4 +150,4 @@ writeFileSync(TARGET, text(recent));
 console.log(`data/recent.json: ${out.length} of ${candidates.length} candidates have a commit in the last ${PERIODS.at(-1)} months ` +
   `(${recent.periods.map((p) => `${p.repos} within ${p.months}`).join(', ')}); ` +
   `${out.filter((r) => r.readme).length} with a README excerpt` +
-  `${kept ? `; ${kept} GitLab project(s) kept from the last measurement` : ''}`);
+  `${kept ? `; ${kept} kept from the last measurement` : ''}`);

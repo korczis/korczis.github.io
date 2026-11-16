@@ -1,7 +1,8 @@
 // GitLab for the fetchers (fetch-index, fetch-recent), one client for both.
 //
 // - Through `glab api` where glab is installed and logged in (the owner's machine); over REST
-//   everywhere else (CI), with GITLAB_TOKEN when the environment has one, anonymously otherwise.
+//   everywhere else (CI), with GITLAB_TOKEN when the environment has one, anonymously otherwise;
+//   a token that is not one line, or that GitLab refuses (401), is dropped with a log line.
 // - 404 is an answer: null. A rate limit (429) waits for Retry-After, or a capped backoff, says so,
 //   and tries again. Any other failure throws.
 // - Every call shares one time budget. Once it is spent, calls throw GitLabBudgetError, so a
@@ -19,6 +20,13 @@ export function gitlabClient({ budgetMs = Number(process.env.GITLAB_BUDGET_MS) |
   const deadline = Date.now() + budgetMs;
   let useGlab = null;
   let waits = 0;
+  // A token is one line of printable characters; anything else (a CLI's help text stored as the
+  // secret) is not sent, since fetch() would throw on that header for every call.
+  let token = (process.env.GITLAB_TOKEN ?? '').trim() || null;
+  if (token && !/^[\x21-\x7e]+$/.test(token)) {
+    log('GitLab: GITLAB_TOKEN is not a single-line token; ignoring it and reading anonymously');
+    token = null;
+  }
 
   const left = () => deadline - Date.now();
   const spent = (path) => {
@@ -37,8 +45,15 @@ export function gitlabClient({ budgetMs = Number(process.env.GITLAB_BUDGET_MS) |
         throw new Error(`glab api ${path}: ${why.trim().split('\n')[0]}`);
       }
     }
-    const headers = process.env.GITLAB_TOKEN ? { 'PRIVATE-TOKEN': process.env.GITLAB_TOKEN } : {};
+    const headers = token ? { 'PRIVATE-TOKEN': token } : {};
     const response = await fetch(`https://gitlab.com/api/v4/${path}`, { headers, signal: AbortSignal.timeout(30000) });
+    // A token GitLab refuses is dropped once, loudly, and the call is asked again anonymously:
+    // a bad secret costs the rate limit it would have raised, never the refresh.
+    if (response.status === 401 && token) {
+      token = null;
+      log('GitLab: GITLAB_TOKEN was refused (HTTP 401); continuing anonymously');
+      return once(path);
+    }
     if (response.status === 404) return { status: 404 };
     if (response.status === 429) return { status: 429, retryAfter: Number(response.headers.get('retry-after')) || null };
     if (!response.ok) throw new Error(`GitLab ${path}: HTTP ${response.status}`);
@@ -50,7 +65,7 @@ export function gitlabClient({ budgetMs = Number(process.env.GITLAB_BUDGET_MS) |
     path = path.replace(/^\//, '');
     if (useGlab === null) {
       useGlab = await run('glab', ['auth', 'status'], { timeout: 15000 }).then(() => true, () => false);
-      log(useGlab ? 'GitLab: through glab' : `GitLab: over REST${process.env.GITLAB_TOKEN ? ' with GITLAB_TOKEN' : ', anonymously'}`);
+      log(useGlab ? 'GitLab: through glab' : `GitLab: over REST${token ? ' with GITLAB_TOKEN' : ', anonymously'}`);
     }
     for (let attempt = 0; ; attempt += 1) {
       spent(path);

@@ -1,11 +1,12 @@
-// Repository index (Alpine.js): search, category, host and language filters, sortable column
+// Repository index (Alpine.js): search, category, host, language and supervision filters, sortable column
 // headers and Flowbite Pro pagination over the rows the template rendered; the page is complete
 // without JavaScript (every row shows, the headers are plain). The whole view lives in the URL
-// query (?q=&category=&host=&language=&sort=&dir=&page=), so a sorted, filtered page can be linked.
+// query (?q=&category=&host=&language=&supervision=&sort=&dir=&page=), so a sorted, filtered page
+// can be linked; the supervision KPI links that filter.
 document.addEventListener('alpine:init', () => {
   // The direction a column sorts in on its first click: names A-Z, numbers and dates newest first.
   const FIRST_DIR = { name: 'asc', category: 'asc', language: 'asc', stars: 'desc', created: 'desc', pushed: 'desc' };
-  const FILTERS = ['q', 'category', 'host', 'language'];
+  const FILTERS = ['q', 'category', 'host', 'language', 'supervision'];
   const PAGE_SIZE = 25;
 
   Alpine.data('repoIndex', () => ({
@@ -13,6 +14,8 @@ document.addEventListener('alpine:init', () => {
     category: '',
     host: '',
     language: '',
+    // '' any, 'yes' supervised by Majordomus, 'no' not (data-supervised: true, false, or '' unknown)
+    supervision: '',
     sort: 'pushed',
     dir: 'desc',
     page: 1,
@@ -62,6 +65,7 @@ document.addEventListener('alpine:init', () => {
         const match = (!needle || row.text.includes(needle))
           && (!this.category || row.category === this.category)
           && (!this.language || row.language === this.language)
+          && (!this.supervision || (this.supervision === 'yes') === (row.supervised === 'true'))
           && (!this.host || (this.host === 'both' ? hosts.length === 2 : hosts.includes(this.host)));
         this.$refs.rows.appendChild(row.el);
         row.el.hidden = true;
@@ -113,6 +117,7 @@ document.addEventListener('alpine:init', () => {
       this.category = '';
       this.host = '';
       this.language = '';
+      this.supervision = '';
       [this.sort, this.dir, this.page] = ['pushed', 'desc', 1];
       this.apply();
     },

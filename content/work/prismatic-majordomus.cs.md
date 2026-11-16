@@ -3,8 +3,8 @@
 title = "Majordomus"
 description = "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen…"
 template = "work.html"
-weight = 6
-updated = "2026-11-15T16:21:06Z"
+weight = 2
+updated = "2026-11-15T22:53:29Z"
 
 [taxonomies]
 tags = ["Inženýrství AI", "Rust", "Shell", "JavaScript"]
@@ -28,7 +28,7 @@ tone = "night"
 +++
 **Majordomus** je projekt z kategorie [Inženýrství AI](@/projects/ai.cs.md). Jeho kód je napsaný hlavně v jazyce [Rust](@/glossary/rust.cs.md) (60,7 %), dále [Shell](@/glossary/shell.cs.md), [JavaScript](@/glossary/javascript.cs.md) a [HTML](@/glossary/html.cs.md).
 
-[Repozitář](@/glossary/repository.cs.md) vznikl 3. září 2026; poslední [commit](@/glossary/commit.cs.md) je z 15. listopadu 2026. Zní „Merge pull request \#3033 from korczis/fix/I4592-the-projection-checkout-is-blobless“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+[Repozitář](@/glossary/repository.cs.md) vznikl 3. září 2026; poslední [commit](@/glossary/commit.cs.md) je z 15. listopadu 2026. Zní „Merge pull request \#3034 from korczis/plan/adopter-evidence-and-i4594-i4595-20261115“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 
 Je postavený na [MCP](@/glossary/mcp.cs.md) a [Zola](@/glossary/zola.cs.md).
 

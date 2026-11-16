@@ -4,20 +4,25 @@
 // from the rules in data/projects.toml. Only original work is listed; forks and mirrors
 // (repositories where someone else wrote most of the commits) are counted, never shown as the
 // owner's work. A contributor list that cannot be read keeps the last measurement.
+// Every original repository is also asked, on every forge it is on (scripts/lib/forge.mjs),
+// whether it is supervised by Majordomus: the [supervision] marker of data/projects.toml on its
+// default branch. A repository with no new activity keeps its last answer.
 //
 // usage: npm run index                                  (needs the authenticated CLIs `gh` and `glab`)
 //        node scripts/fetch-index.mjs --derive [--check] re-apply the rules to the stored index offline
 //        node scripts/fetch-index.mjs --probe            re-check the stored sites
+//        node scripts/fetch-index.mjs --supervision      re-ask the stored repositories for supervision
 import { execFile } from 'node:child_process';
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { promisify } from 'node:util';
 import { ROOT, identity, pool, readToml } from './lib/derive.mjs';
+import { forges } from './lib/forge.mjs';
 import { GitLabBudgetError, gitlabClient } from './lib/gitlab.mjs';
 import { droppedSince, inferCategory, measureShare, ownerMatcher, paginate, primaryLanguage } from './lib/repos.mjs';
 import { cliArgs } from './lib/cli.mjs';
 
-cliArgs({ '--probe': true, '--derive': true, '--check': true });
+cliArgs({ '--probe': true, '--derive': true, '--check': true, '--supervision': true });
 
 const run = promisify(execFile);
 // Only the derivation can be checked offline; refuse before anything reaches the network.
@@ -153,6 +158,40 @@ async function gitlabRepos(stored) {
   });
 }
 
+// Supervision of every listed repository: true when any of its forges has the marker on the
+// default branch, false when every forge answers that it has not. A repository whose last activity
+// is the one already measured keeps its answer; a forge that cannot answer (an error, a spent
+// GitLab budget) keeps the last answer too, or leaves it unknown (null), and the run says how many.
+async function measureSupervision(repos, stored) {
+  const marker = catalogue.supervision?.marker;
+  if (!marker) throw new Error('data/projects.toml has no [supervision] marker');
+  const before = new Map((stored?.all_repos ?? []).map((r) => [r.name.toLowerCase(), r]));
+  const forge = forges({ gitlab });
+  const tally = { asked: 0, reused: 0, kept: 0 };
+  await pool(repos, async (r) => {
+    const last = before.get(r.name.toLowerCase());
+    if (last && last.pushed_at === r.pushed_at && typeof last.supervised === 'boolean') {
+      r.supervised = last.supervised;
+      tally.reused += 1;
+      return;
+    }
+    try {
+      let answer = false;
+      for (const url of Object.values(r.hosts)) {
+        if (await forge.hasFile(url, marker)) { answer = true; break; }
+      }
+      r.supervised = answer;
+      tally.asked += 1;
+    } catch {
+      r.supervised = typeof last?.supervised === 'boolean' ? last.supervised : null;
+      tally.kept += 1;
+    }
+  }, 4);
+  const yes = repos.filter((r) => r.supervised === true).length;
+  console.error(`Supervision (${marker}): ${yes} of ${repos.length} supervised; ${tally.asked} asked, ${tally.reused} reused, ${tally.kept} kept after an error`);
+  return { marker, measured_at: new Date().toISOString().replace(/\.\d{3}Z$/, 'Z'), kept: tally.kept };
+}
+
 // When GitLab cannot be read in time, its projects keep their last measured records (from the
 // stored index), so the site loses nothing; the refresh says so, and GitHub is still current.
 function storedGitlab(stored) {
@@ -165,7 +204,7 @@ function storedGitlab(stored) {
 
 // Everything below the fetch is derivation: it runs again with --derive on the stored index, so a
 // change to the category rules or the catalogue needs no network.
-function derive(allRepos, fetchedCounts, generatedAt, dropped) {
+function derive(allRepos, fetchedCounts, generatedAt, dropped, supervision) {
   // Owner-curated lists apply here, so they take effect with --derive and no network.
   const mirrorList = new Set((catalogue.index?.mirrors ?? []).map((n) => n.toLowerCase()));
   const hiddenList = new Set((catalogue.index?.hidden ?? []).map((n) => n.toLowerCase()));
@@ -179,6 +218,7 @@ function derive(allRepos, fetchedCounts, generatedAt, dropped) {
     else repos.push(r);
   }
   counts.own = repos.length;
+  counts.supervised = repos.filter((r) => r.supervised === true).length;
   for (const r of repos) {
     r.category = infer(r);
     r.curated = curated.has(r.name.toLowerCase());
@@ -251,6 +291,8 @@ function derive(allRepos, fetchedCounts, generatedAt, dropped) {
     counts,
     // Measured at the last fetch: repositories that were original before and are not now.
     ...(dropped ? { dropped } : {}),
+    // What supervision means here and when every forge was last asked about it.
+    ...(supervision ? { supervision } : {}),
     all_repos: allRepos,
     by_category: byCategory,
     categories: categoryDetail,
@@ -283,10 +325,15 @@ if (process.argv.includes('--probe')) {
   const stored = JSON.parse(readFileSync(TARGET, 'utf8'));
   const all = stored.all_repos ?? stored.repos;
   await probeSites(all);
-  index = derive(all, stored.counts, stored.generated_at, stored.dropped);
+  index = derive(all, stored.counts, stored.generated_at, stored.dropped, stored.supervision);
+} else if (process.argv.includes('--supervision')) {
+  const stored = JSON.parse(readFileSync(TARGET, 'utf8'));
+  const all = stored.all_repos ?? stored.repos;
+  const supervision = await measureSupervision(all, stored);
+  index = derive(all, stored.counts, stored.generated_at, stored.dropped, supervision);
 } else if (process.argv.includes('--derive')) {
   const stored = JSON.parse(readFileSync(TARGET, 'utf8'));
-  index = derive(stored.all_repos ?? stored.repos, stored.counts, stored.generated_at, stored.dropped);
+  index = derive(stored.all_repos ?? stored.repos, stored.counts, stored.generated_at, stored.dropped, stored.supervision);
 } else {
   const previous = existsSync(TARGET) ? JSON.parse(readFileSync(TARGET, 'utf8')) : null;
   const github = await githubRepos(previous);
@@ -338,9 +385,10 @@ if (process.argv.includes('--probe')) {
     });
   }
   await probeSites(repos);
+  const supervision = await measureSupervision(repos, previous);
   // What was the owner's work at the last measurement and is not now (check-data fails on "empty").
   const dropped = droppedSince(previous?.all_repos ?? [], [...byName.values()]);
-  index = derive(repos, counts, new Date().toISOString().replace(/\.\d{3}Z$/, 'Z'), dropped);
+  index = derive(repos, counts, new Date().toISOString().replace(/\.\d{3}Z$/, 'Z'), dropped, supervision);
 }
 
 const text = `${JSON.stringify(index, null, 1)}\n`;
@@ -358,5 +406,5 @@ writeFileSync(TARGET, text);
 const c = index.counts;
 console.log(`data/index.json: ${c.github} GitHub + ${c.gitlab} GitLab -> ${c.merged} by name; ` +
   `${c.own} original listed, ${c.mirrors} mirrors, ${c.forks} forks, ${c.empty} without history` +
-  `${c.unmeasured ? `, ${c.unmeasured} unreadable` : ''}; ` +
+  `${c.unmeasured ? `, ${c.unmeasured} unreadable` : ''}, ${c.supervised} supervised by Majordomus; ` +
   `categories ${JSON.stringify(index.by_category)}`);

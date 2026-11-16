@@ -3,7 +3,7 @@
 title = "Kompendium"
 description = "A defensive taxonomy of epistemic and cognitive manipulation (Czech)."
 template = "work.html"
-weight = 3
+weight = 4
 updated = "2026-11-15T20:26:59Z"
 
 [taxonomies]
@@ -26,7 +26,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**Kompendium** is a project in [Knowledge](@/projects/knowledge.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (33.9 %), with [JavaScript](@/glossary/javascript.md), [Python](@/glossary/python.md) and [HTML](@/glossary/html.md).
+**Kompendium** is a project in [Knowledge](@/projects/knowledge.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (33.8 %), with [JavaScript](@/glossary/javascript.md), [Python](@/glossary/python.md) and [HTML](@/glossary/html.md).
 
 The [repository](@/glossary/repository.md) was created in November 2026; its latest [commit](@/glossary/commit.md) is from 15 November 2026. It reads “Merge origin/main (637d89c9) into fix/ea-code-aliases”. That places it among the projects active in the last 12 months.
 
