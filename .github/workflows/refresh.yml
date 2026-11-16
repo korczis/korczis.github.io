@@ -34,21 +34,36 @@ jobs:
       REFRESH_HOURS: 6
     steps:
       # Full history: the commit hooks run majordomus doctor, whose clone checks read it.
+      # The tip of master when the run starts, not the commit the schedule event was created on:
+      # a run that waited in the concurrency group behind another would otherwise judge (and
+      # measure) the data that run has already replaced, and its push would be refused.
       - uses: actions/checkout@v7
         with:
+          ref: master
           fetch-depth: 0
       # Due when started by hand, or when the data is older than REFRESH_HOURS - 1 (no install).
+      # After a failed scheduled run the next attempt waits REFRESH_HOURS - 1 as well, so a gate
+      # that stays red fails four times a day, as it did before the hourly schedule, not 24.
       - name: Is a refresh due?
         id: due
         env:
           EVENT: ${{ github.event_name }}
         run: |
           due_after=$((REFRESH_HOURS - 1))
-          if [ "$EVENT" != schedule ] || ! MAX_HOURS="$due_after" node scripts/check-fresh.mjs; then
-            echo "due=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "not due: the data on master is younger than $due_after h"
+          if [ "$EVENT" != schedule ]; then
+            echo "due=true" >> "$GITHUB_OUTPUT"; exit 0
           fi
+          if MAX_HOURS="$due_after" node scripts/check-fresh.mjs; then
+            echo "not due: the data on master is younger than $due_after h"; exit 0
+          fi
+          failed=$(gh run list --workflow refresh.yml --event schedule --status failure --limit 1 \
+            --json createdAt --jq '.[0].createdAt // empty')
+          since=$(( $(date +%s) - $(date -d "${failed:-1970-01-01T00:00:00Z}" +%s) ))
+          if [ "$since" -lt $((due_after * 3600)) ]; then
+            echo "not due: the scheduled run of $failed failed; next attempt $due_after h after it"
+            exit 0
+          fi
+          echo "due=true" >> "$GITHUB_OUTPUT"
       - uses: ./.github/actions/setup
         if: steps.due.outputs.due == 'true'
       # The refresh commits like anyone else: through the repository's hooks (Majordomus doctor on

@@ -33,8 +33,8 @@ over measured data stays true by itself; a site with typed figures goes stale on
   48 months (`content/work/`, from `data/recent.json`, the last commit date decides, never the
   host's activity date), `llms.txt`, `llms-full.txt`, OG images,
   `site.json` (every page, category, project and repository as data), SEO and JSON-LD.
-- `.github/workflows/refresh.yml` re-measures on the schedule its `cron` declares (`npm run
-  refresh`: data, index, recent, derive), runs `npm run check`, and only when every gate passes commits to master and starts the
+- `.github/workflows/refresh.yml` re-measures every `REFRESH_HOURS` (its cron fires hourly and
+  a run measures only when due; `npm run refresh`: data, index, recent, derive), runs `npm run check`, and only when every gate passes commits to master and starts the
   deploy. A failing gate leaves the published site as it was.
 
 # Failure behaviour

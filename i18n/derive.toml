@@ -175,7 +175,7 @@ cs = "; na GitHubu se obnovuje živě z vašeho prohlížeče"
 en = ", from a snapshot refreshed {cadence}"
 cs = ", ze snímku obnovovaného {cadence}"
 
-# How often .github/workflows/refresh.yml re-measures (derive.mjs cadence(), from its cron)
+# How often .github/workflows/refresh.yml re-measures (derive.mjs cadence(): REFRESH_HOURS, else the cron)
 
 [derive_cadence_hours__one]
 en = "every hour"

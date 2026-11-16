@@ -11,7 +11,11 @@ import { cliArgs } from './lib/cli.mjs';
 cliArgs();
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const MAX_HOURS = Number(process.env.MAX_HOURS) || 24;
+const MAX_HOURS = process.env.MAX_HOURS ? Number(process.env.MAX_HOURS) : 24;
+if (!(MAX_HOURS > 0)) {
+  console.error(`✗ MAX_HOURS must be a positive number of hours, not ${process.env.MAX_HOURS}`);
+  process.exit(2);
+}
 const findings = [];
 for (const file of ['data/github.json', 'data/index.json', 'data/recent.json']) {
   const { generated_at: at } = JSON.parse(readFileSync(join(ROOT, file), 'utf8'));
