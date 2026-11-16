@@ -1,6 +1,6 @@
 {
  "schema": "korczis-hub-recent/v1",
- "generated_at": "2026-11-16T01:45:27Z",
+ "generated_at": "2026-11-16T02:19:02Z",
  "window_days": 1461,
  "periods": [
   {
@@ -20,15 +20,223 @@
  "candidates": 74,
  "repos": [
   {
+   "name": "oscilla",
+   "period": 12,
+   "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+   "category": "science",
+   "language": "JavaScript",
+   "created_at": "2026-10-01T21:05:33Z",
+   "last_commit": "2026-11-16T02:02:43Z",
+   "last_message": "feat(studio): train T24, K226 + R050 + K247 checks + E073 + K150 + Czech pass 5 + plan records, and release v3.39.0 (#567)",
+   "commits": [
+    {
+     "at": "2026-11-16T02:02:43Z",
+     "message": "feat(studio): train T24, K226 + R050 + K247 checks + E073 + K150 + Czech pass 5 + plan records, and release v3.39.0 (#567)",
+     "url": "https://github.com/korczis/oscilla/commit/eb3f043880c5457ed19f09f42aa6f1bdef607134"
+    },
+    {
+     "at": "2026-11-15T23:02:08Z",
+     "message": "review(train): #567 verdict merge for train T24 (K226 R050 K247 E073 K150, Czech pass 5, v3.39.0), under the legs and receipt condition",
+     "url": "https://github.com/korczis/oscilla/commit/fc1174626c49717ed520de30dce5ef90e8dea320"
+    },
+    {
+     "at": "2026-11-15T21:22:18Z",
+     "message": "chore(release): v3.39.0",
+     "url": "https://github.com/korczis/oscilla/commit/aa17cb939dfeece5e55f20841bb7079fbb732b32"
+    },
+    {
+     "at": "2026-11-15T21:15:07Z",
+     "message": "docs(about): the 3.39 station, Settings and MIDI in Czech and the step sequencer card says what plays (T24)",
+     "url": "https://github.com/korczis/oscilla/commit/e68d582cb0e199a64986ac5a6eec7b5e664c5390"
+    },
+    {
+     "at": "2026-11-15T21:11:39Z",
+     "message": "chore(plan): E075's current state after T23 (oscilla-0b and oscilla-c3's status, evidence not proof)",
+     "url": "https://github.com/korczis/oscilla/commit/86c271b3afaca559e134124604d3770fd3e085d2"
+    },
+    {
+     "at": "2026-11-15T21:09:30Z",
+     "message": "build(train): T24 one rebuild after the members (dist/index.html)",
+     "url": "https://github.com/korczis/oscilla/commit/84bf42e942aecd7db7bbcbfeadbb57f3227df311"
+    },
+    {
+     "at": "2026-11-15T21:07:04Z",
+     "message": "chore(release): record v3.38.1",
+     "url": "https://github.com/korczis/oscilla/commit/4262ea1df557ae883407cbfa38b7a86164f104f4"
+    },
+    {
+     "at": "2026-11-15T19:48:43Z",
+     "message": "merge(train): #565 5a30f8e9 (C3-565 nit: the card prints svsLength) into train T24",
+     "url": "https://github.com/korczis/oscilla/commit/1128e859439e3ba28850a7618f146f539b0fbeab"
+    },
+    {
+     "at": "2026-11-15T19:43:59Z",
+     "message": "fix(studio): K226 the card counts the steps the sound plays (svsLength), review nit",
+     "url": "https://github.com/korczis/oscilla/commit/5a30f8e9dc611dfabfc9de084e7fd0484353dfe8"
+    },
+    {
+     "at": "2026-11-15T19:43:50Z",
+     "message": "merge(train): #493 E059 into train T24",
+     "url": "https://github.com/korczis/oscilla/commit/47b31a95279a4e48e988e4ae19e255e3dd1a482e"
+    },
+    {
+     "at": "2026-11-15T19:43:50Z",
+     "message": "merge(train): #559 U113 E074 E075 into train T24",
+     "url": "https://github.com/korczis/oscilla/commit/ccb4d7b9c6dac2d97163ebd894ac3226994a3cdf"
+    },
+    {
+     "at": "2026-11-15T19:43:49Z",
+     "message": "merge(train): #562 reconcile into train T24",
+     "url": "https://github.com/korczis/oscilla/commit/2cf0887c079bfa9391ca4640fdc7b99aa47629f4"
+    },
+    {
+     "at": "2026-11-15T19:43:49Z",
+     "message": "merge(train): #557 V506+V507 done into train T24",
+     "url": "https://github.com/korczis/oscilla/commit/89f67c95816ec37e191a9cd926e8b8a94a13d937"
+    },
+    {
+     "at": "2026-11-15T19:43:49Z",
+     "message": "merge(train): Czech pass 5 (oscilla-0b) into train T24",
+     "url": "https://github.com/korczis/oscilla/commit/1b55f28293f5b27ef29c1419749d1ea6c8fdc6a1"
+    },
+    {
+     "at": "2026-11-15T19:39:13Z",
+     "message": "merge(train): #565 K226 (contains #563 R050) into train T24",
+     "url": "https://github.com/korczis/oscilla/commit/cb8e3b9358e0442bfe0ac39a161859d9e07236d6"
+    },
+    {
+     "at": "2026-11-15T19:39:00Z",
+     "message": "merge(train): #561 E073 (contains #560 K247) into train T24",
+     "url": "https://github.com/korczis/oscilla/commit/7de5ef66467b53183b72a821d22dbc396e09d1e2"
+    },
+    {
+     "at": "2026-11-15T19:39:00Z",
+     "message": "merge(train): #564 K150 into train T24",
+     "url": "https://github.com/korczis/oscilla/commit/92eef1dd605ec9251cf2926630117f51c74df6cc"
+    },
+    {
+     "at": "2026-11-15T19:37:55Z",
+     "message": "fix(ui): train T23, U106 the page says it is Czech with Czech workspace names, and release v3.38.1 (#558)",
+     "url": "https://github.com/korczis/oscilla/commit/7447efa04f7ce57c75692bfffbbc2dc18c6636b0"
+    },
+    {
+     "at": "2026-11-15T19:29:59Z",
+     "message": "fix(studio): K226 review C3-565-1, the card and the sound read one skip rule",
+     "url": "https://github.com/korczis/oscilla/commit/27a3e48366af4998ea785f9ac145a229b2343f82"
+    },
+    {
+     "at": "2026-11-15T19:19:33Z",
+     "message": "test(midi): the failed-state copy check reads its text from midiText, not an English regex",
+     "url": "https://github.com/korczis/oscilla/commit/8b91dd5773b88902d872e8ff707029ed128a9ded"
+    },
+    {
+     "at": "2026-11-15T19:19:20Z",
+     "message": "feat(studio): K226 a step sequencer with every step skipped says so on its card",
+     "url": "https://github.com/korczis/oscilla/commit/9049505dc0b4f400406fd346943327c2932dda1c"
+    },
+    {
+     "at": "2026-11-15T18:56:56Z",
+     "message": "test(patch): K150 a node type the registry does not know is left out of a Studio bay source",
+     "url": "https://github.com/korczis/oscilla/commit/1c71e28fb265a685fa8fd8bb12cf2888c56d3a98"
+    },
+    {
+     "at": "2026-11-15T18:31:14Z",
+     "message": "chore(plan): R050 names PR 563 and its follow-up C3-563-1 (Czech plural of a count)",
+     "url": "https://github.com/korczis/oscilla/commit/e264897e956237fa23b47666de68338f833c23d2"
+    },
+    {
+     "at": "2026-11-15T18:28:38Z",
+     "message": "chore(plan): C033 done, its browser fail-first recorded",
+     "url": "https://github.com/korczis/oscilla/commit/54565d6f62ff4a191221b33dff6781ff270ed764"
+    },
+    {
+     "at": "2026-11-15T18:23:26Z",
+     "message": "review(synth): #563 verdict merge for R050 criterion 2 (step counts from source), under the legs condition",
+     "url": "https://github.com/korczis/oscilla/commit/f83c2716794aa09ab6a1aaed1a8c530ed87ba2a4"
+    },
+    {
+     "at": "2026-11-15T18:11:11Z",
+     "message": "chore(plan): leave R050's record to the reconcile PR (#562), which edits the same field",
+     "url": "https://github.com/korczis/oscilla/commit/6d86f86c1b6d52eeba19b8292db8a58f9e6f3d8d"
+    },
+    {
+     "at": "2026-11-15T18:07:33Z",
+     "message": "fix(synth): R050 step counts come from their source, and a scan refuses a typed one",
+     "url": "https://github.com/korczis/oscilla/commit/c9d8b8f9e4d472fd7ce6df578483b0b11a5ce49e"
+    },
+    {
+     "at": "2026-11-15T17:54:54Z",
+     "message": "chore(plan): 16 issues delivered on main done, 11 left with what they still lack",
+     "url": "https://github.com/korczis/oscilla/commit/8edf97378d2525474e48a8ccb1944ea85967dec0"
+    },
+    {
+     "at": "2026-11-15T17:52:05Z",
+     "message": "review(ui): #558 verdict superseded at 85662bf6, firefox leg-2 red is E075 (main's), C3-558-2 P3 open",
+     "url": "https://github.com/korczis/oscilla/commit/b7aecd99e673d9dfd920a4d347c192e40149c919"
+    },
+    {
+     "at": "2026-11-15T17:22:56Z",
+     "message": "test(census): pointer drives click through the locator, re-read and hit-checked (E075)",
+     "url": "https://github.com/korczis/oscilla/commit/85662bf6ad32f0f275b1f8790f31b8709f3833d8"
+    }
+   ],
+   "languages": [
+    {
+     "name": "JavaScript",
+     "share": 96.9
+    },
+    {
+     "name": "HTML",
+     "share": 1.9
+    },
+    {
+     "name": "CSS",
+     "share": 1.1
+    },
+    {
+     "name": "Swift",
+     "share": 0
+    },
+    {
+     "name": "Shell",
+     "share": 0
+    }
+   ],
+   "readme": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+   "topics": [
+    "acoustics",
+    "audio",
+    "dsp",
+    "education",
+    "javascript",
+    "signal-processing",
+    "spectrogram",
+    "synthesizer",
+    "web-audio"
+   ],
+   "hosts": {
+    "github": "https://github.com/korczis/oscilla"
+   },
+   "site": "https://korczis.github.io/oscilla/",
+   "curated": true,
+   "stars": 1,
+   "supervised": true
+  },
+  {
    "name": "korczis.github.io",
    "period": 12,
    "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
    "category": "web",
    "language": "JavaScript",
    "created_at": "2024-12-24T16:48:15Z",
-   "last_commit": "2026-11-16T01:16:38Z",
-   "last_message": "chore(merge): integrate #21, Majordomus supervision inferred for every repository on every forge",
+   "last_commit": "2026-11-16T02:00:39Z",
+   "last_message": "chore(data): refresh the snapshot and the index",
    "commits": [
+    {
+     "at": "2026-11-16T02:00:39Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/79eebb75deaf88da3bb318488bd3c9a64fdaeb2b"
+    },
     {
      "at": "2026-11-16T01:16:38Z",
      "message": "chore(merge): integrate #21, Majordomus supervision inferred for every repository on every forge",
@@ -173,21 +381,16 @@
      "at": "2026-11-15T03:03:04Z",
      "message": "fix(links): a link to this site's home keeps the page's language",
      "url": "https://github.com/korczis/korczis.github.io/commit/6b61d5cf89741c6147ed7b2dca099db87a156846"
-    },
-    {
-     "at": "2026-11-15T01:34:42Z",
-     "message": "fix(nda): CI checks every name and every commit message",
-     "url": "https://github.com/korczis/korczis.github.io/commit/22ec698b69edae726043a11986c808258b1dd0b2"
     }
    ],
    "languages": [
     {
      "name": "JavaScript",
-     "share": 69.2
+     "share": 69.4
     },
     {
      "name": "HTML",
-     "share": 27.9
+     "share": 27.7
     },
     {
      "name": "CSS",
@@ -811,15 +1014,15 @@
    "languages": [
     {
      "name": "TypeScript",
-     "share": 80.9
+     "share": 82.1
     },
     {
      "name": "Rust",
-     "share": 15.4
+     "share": 14.3
     },
     {
      "name": "JavaScript",
-     "share": 2
+     "share": 1.9
     },
     {
      "name": "HTML",
@@ -1048,209 +1251,6 @@
    "site": "https://korczis.github.io/sonic-playground/",
    "curated": true,
    "stars": 0,
-   "supervised": true
-  },
-  {
-   "name": "oscilla",
-   "period": 12,
-   "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-   "category": "science",
-   "language": "JavaScript",
-   "created_at": "2026-10-01T21:05:33Z",
-   "last_commit": "2026-11-15T19:37:55Z",
-   "last_message": "fix(ui): train T23, U106 the page says it is Czech with Czech workspace names, and release v3.38.1 (#558)",
-   "commits": [
-    {
-     "at": "2026-11-15T19:37:55Z",
-     "message": "fix(ui): train T23, U106 the page says it is Czech with Czech workspace names, and release v3.38.1 (#558)",
-     "url": "https://github.com/korczis/oscilla/commit/7447efa04f7ce57c75692bfffbbc2dc18c6636b0"
-    },
-    {
-     "at": "2026-11-15T17:52:05Z",
-     "message": "review(ui): #558 verdict superseded at 85662bf6, firefox leg-2 red is E075 (main's), C3-558-2 P3 open",
-     "url": "https://github.com/korczis/oscilla/commit/b7aecd99e673d9dfd920a4d347c192e40149c919"
-    },
-    {
-     "at": "2026-11-15T17:22:56Z",
-     "message": "test(census): pointer drives click through the locator, re-read and hit-checked (E075)",
-     "url": "https://github.com/korczis/oscilla/commit/85662bf6ad32f0f275b1f8790f31b8709f3833d8"
-    },
-    {
-     "at": "2026-11-15T14:39:08Z",
-     "message": "review(ui): #558 verdict superseded at 85412d57, C3-558-1 closed (v31-studio-transport read the old Gain label)",
-     "url": "https://github.com/korczis/oscilla/commit/ad446314440e291f4d0b7f91c1431bf518f3ec8d"
-    },
-    {
-     "at": "2026-11-15T14:35:29Z",
-     "message": "test(studio): v31-studio-transport reads the status bar's Czech gain label, Zesílení (U106)",
-     "url": "https://github.com/korczis/oscilla/commit/85412d57d7e3bc545443c8d9146c9e1431c21c81"
-    },
-    {
-     "at": "2026-11-15T12:58:13Z",
-     "message": "review(ui): #558 verdict merge for train T23 (U106, v3.38.1), under the legs and receipt condition",
-     "url": "https://github.com/korczis/oscilla/commit/4c40b17b0035648d863e7427742c998aa397049c"
-    },
-    {
-     "at": "2026-11-15T11:19:56Z",
-     "message": "chore(release): v3.38.1",
-     "url": "https://github.com/korczis/oscilla/commit/844600151a4863a4a84ad32c24b8ad21c98b7c03"
-    },
-    {
-     "at": "2026-11-15T11:17:48Z",
-     "message": "chore(release): record v3.38.0",
-     "url": "https://github.com/korczis/oscilla/commit/c4a41d76c2a988ff22e74158af39f825acb3bc37"
-    },
-    {
-     "at": "2026-11-15T11:15:14Z",
-     "message": "test(visual): train T23's linux-x64 references re-accepted for U106's Czech shell and nav",
-     "url": "https://github.com/korczis/oscilla/commit/8cd09f5a4d4158285bffcaa05290fae910914bae"
-    },
-    {
-     "at": "2026-11-15T10:40:20Z",
-     "message": "merge(train): U106 (#556, oscilla-0b) into train T23",
-     "url": "https://github.com/korczis/oscilla/commit/59a8dc357570a7ced0f2f64b0e18e8cf6852fd40"
-    },
-    {
-     "at": "2026-11-15T10:37:59Z",
-     "message": "feat(midi): train T22, V506 + V507 + K247 + V508: MIDI controllers, one keyboard, transport and clock (#555)",
-     "url": "https://github.com/korczis/oscilla/commit/474ce9c351e979bac15bcfd77f9a8c6ca638f16b"
-    },
-    {
-     "at": "2026-11-15T10:23:27Z",
-     "message": "test(size): src/index.html's declared raise to 306000 for #556 (U106, measured 304601 -> 305066 B)",
-     "url": "https://github.com/korczis/oscilla/commit/bde33eb14466a7149af06b9386e451ae377c46b3"
-    },
-    {
-     "at": "2026-11-15T10:20:57Z",
-     "message": "fix(ui): the page says it is Czech and the workspaces have Czech names, Studio, Synth and Playground kept as names (U106)",
-     "url": "https://github.com/korczis/oscilla/commit/81350f6397e7e5f71d77b52b580a76054b33aa27"
-    },
-    {
-     "at": "2026-11-15T08:24:03Z",
-     "message": "review(midi): #555 verdict merge for train T22 (V506 V507 K247 V508, v3.38.0), under the legs and receipt condition",
-     "url": "https://github.com/korczis/oscilla/commit/9a175f9db4766d467b0d5925d48801912d0e4e95"
-    },
-    {
-     "at": "2026-11-15T08:18:46Z",
-     "message": "test(iphone): reach skips the folded body of a closed details, so Compare's Sources list is not counted covered (C3-555-2)",
-     "url": "https://github.com/korczis/oscilla/commit/f0d04d30b3357303705260dc7079958d59b023d9"
-    },
-    {
-     "at": "2026-11-15T07:01:22Z",
-     "message": "chore(release): v3.38.0",
-     "url": "https://github.com/korczis/oscilla/commit/0860f8888ddcd16fbbe47b246c7ace83f880b8e3"
-    },
-    {
-     "at": "2026-11-15T06:57:42Z",
-     "message": "docs(about): the 3.38 station, a MIDI controller plays the whole instrument (T22: V506, V507, K247, V508)",
-     "url": "https://github.com/korczis/oscilla/commit/e7c466a8204d98ec8562b811a834c35ad72a0282"
-    },
-    {
-     "at": "2026-11-15T06:55:45Z",
-     "message": "chore(release): record v3.37.5",
-     "url": "https://github.com/korczis/oscilla/commit/1a19608bbb6c7da8e131940c694fa59b6b704d3e"
-    },
-    {
-     "at": "2026-11-15T06:49:04Z",
-     "message": "chore(plan): V508 records the owner's landing order verbatim (T22 lands the stack as PR 555)",
-     "url": "https://github.com/korczis/oscilla/commit/1f5e0c509bc9edc85defe4e2249787b6b95fc77a"
-    },
-    {
-     "at": "2026-11-15T06:47:28Z",
-     "message": "Merge branch 'feat/k247-one-central-keyboard' into feat/v508-midi-transport",
-     "url": "https://github.com/korczis/oscilla/commit/468e571ced0a7e608839ca61cf567ca7ca489c0a"
-    },
-    {
-     "at": "2026-11-15T06:44:59Z",
-     "message": "chore(plan): K247 records the owner's landing order verbatim (T22 lands the stack as PR 555)",
-     "url": "https://github.com/korczis/oscilla/commit/7145ecde9ff56e3a2e6ae2287aa35adb7aa276a3"
-    },
-    {
-     "at": "2026-11-15T06:40:35Z",
-     "message": "Merge branch 'feat/v507-midi-devices' into feat/k247-one-central-keyboard",
-     "url": "https://github.com/korczis/oscilla/commit/9780403afa15475918ee6330cf304048126a3ebe"
-    },
-    {
-     "at": "2026-11-15T06:37:09Z",
-     "message": "Merge remote-tracking branch 'origin/main' into feat/v507-midi-devices",
-     "url": "https://github.com/korczis/oscilla/commit/0f829efb8fd3710877ce0860bc31ab4bddcc4751"
-    },
-    {
-     "at": "2026-11-15T06:36:09Z",
-     "message": "Merge remote-tracking branch 'origin/feat/v506-midi-cc' into feat/v507-midi-devices",
-     "url": "https://github.com/korczis/oscilla/commit/49ce99cb682294c4b0fe85d7128338f1d4950ac1"
-    },
-    {
-     "at": "2026-11-15T05:56:41Z",
-     "message": "fix(i18n): train T21, Czech pass 4 for the Studio's keys refusals and undo labels, and release v3.37.5 (#554)",
-     "url": "https://github.com/korczis/oscilla/commit/1f1b33e65aceea1c96fcc7cac08dfe1c0a262fc2"
-    },
-    {
-     "at": "2026-11-15T05:44:02Z",
-     "message": "fix(midi): V508 review C3-555-1, a refused Start or Continue moves nothing and says nothing",
-     "url": "https://github.com/korczis/oscilla/commit/a7bf87caa38a3a9bf6dc8ea4e3a485340f45a208"
-    },
-    {
-     "at": "2026-11-15T05:31:44Z",
-     "message": "Merge branch 'feat/k247-one-central-keyboard' into feat/v508-midi-transport",
-     "url": "https://github.com/korczis/oscilla/commit/aaaf26c23c24a2903f625e8d10bf63bb4c5cc9fb"
-    },
-    {
-     "at": "2026-11-15T05:29:57Z",
-     "message": "fix(midi): K247 review C3-553-2, after Zpět the follow-up names the way out",
-     "url": "https://github.com/korczis/oscilla/commit/e1d7eeb57ff3a5b4f8cb8d8be02ed47f69cbd101"
-    },
-    {
-     "at": "2026-11-15T05:23:33Z",
-     "message": "chore(size): V508 raises the src/index.html cap for the MIDI clock readout (PR 555)",
-     "url": "https://github.com/korczis/oscilla/commit/a6cbbe62ccf4b49c18c451a2700708aa1fc35a2d"
-    },
-    {
-     "at": "2026-11-15T05:20:38Z",
-     "message": "Merge branch 'feat/k247-one-central-keyboard' into feat/v508-midi-transport",
-     "url": "https://github.com/korczis/oscilla/commit/76889e3ef4e486e070bcd9379b1e37e2acaeb686"
-    }
-   ],
-   "languages": [
-    {
-     "name": "JavaScript",
-     "share": 96.9
-    },
-    {
-     "name": "HTML",
-     "share": 1.9
-    },
-    {
-     "name": "CSS",
-     "share": 1.1
-    },
-    {
-     "name": "Swift",
-     "share": 0
-    },
-    {
-     "name": "Shell",
-     "share": 0
-    }
-   ],
-   "readme": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-   "topics": [
-    "acoustics",
-    "audio",
-    "dsp",
-    "education",
-    "javascript",
-    "signal-processing",
-    "spectrogram",
-    "synthesizer",
-    "web-audio"
-   ],
-   "hosts": {
-    "github": "https://github.com/korczis/oscilla"
-   },
-   "site": "https://korczis.github.io/oscilla/",
-   "curated": true,
-   "stars": 1,
    "supervised": true
   },
   {

@@ -10,7 +10,7 @@ og_title = "43 projects, the last 4 years."
 og_image = "og/work.png"
 schema = "collection"
 terms = ["commit", "fork", "mirror", "repository", "open-source"]
-keywords = ["Tomas Korcak recent work", "korczis", "korczis.github.io", "prismatic-majordomus", "kompendium-epistemicke-anihilace", "algoglyph", "sonic-playground", "oscilla", "vomaste.cz", "majordomus-reel"]
+keywords = ["Tomas Korcak recent work", "korczis", "oscilla", "korczis.github.io", "prismatic-majordomus", "kompendium-epistemicke-anihilace", "algoglyph", "sonic-playground", "vomaste.cz", "majordomus-reel"]
 
 [[extra.viz]]
 kind = "pulse"

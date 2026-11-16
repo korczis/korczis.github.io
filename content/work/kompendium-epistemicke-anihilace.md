@@ -3,7 +3,7 @@
 title = "Kompendium"
 description = "A defensive taxonomy of epistemic and cognitive manipulation (Czech)."
 template = "work.html"
-weight = 3
+weight = 4
 updated = "2026-11-15T22:18:26Z"
 
 [taxonomies]

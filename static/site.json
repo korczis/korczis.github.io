@@ -11,8 +11,8 @@
  },
  "front_matter_schema": "https://korczis.github.io/schemas/front-matter.schema.json",
  "data_as_of": {
-  "snapshot": "2026-11-16T01:30:11Z",
-  "index": "2026-11-16T01:45:27Z"
+  "snapshot": "2026-11-16T02:10:02Z",
+  "index": "2026-11-16T02:19:02Z"
  },
  "pages": [
   {
@@ -1327,12 +1327,12 @@
    "keywords": [
     "Tomáš Korčák: nedávná práce",
     "korczis",
+    "oscilla",
     "korczis.github.io",
     "prismatic-majordomus",
     "kompendium-epistemicke-anihilace",
     "algoglyph",
     "sonic-playground",
-    "oscilla",
     "vomaste.cz",
     "majordomus-reel"
    ]
@@ -3247,12 +3247,12 @@
    "keywords": [
     "Tomas Korcak recent work",
     "korczis",
+    "oscilla",
     "korczis.github.io",
     "prismatic-majordomus",
     "kompendium-epistemicke-anihilace",
     "algoglyph",
     "sonic-playground",
-    "oscilla",
     "vomaste.cz",
     "majordomus-reel"
    ]
@@ -4199,15 +4199,15 @@
  ],
  "repositories": [
   {
-   "name": "algoglyph",
-   "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
-   "language": "TypeScript",
+   "name": "oscilla",
+   "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+   "language": "JavaScript",
    "category": "science",
-   "github": "https://github.com/korczis/algoglyph",
+   "github": "https://github.com/korczis/oscilla",
    "gitlab": null,
-   "site": "https://korczis.github.io/algoglyph/",
-   "created": "2026-11-11T18:09:38Z",
-   "active": "2026-11-16T01:26:54Z"
+   "site": "https://korczis.github.io/oscilla/",
+   "created": "2026-10-01T21:05:33Z",
+   "active": "2026-11-16T02:03:51Z"
   },
   {
    "name": "korczis.github.io",
@@ -4218,7 +4218,7 @@
    "gitlab": null,
    "site": null,
    "created": "2024-12-24T16:48:15Z",
-   "active": "2026-11-16T01:17:33Z"
+   "active": "2026-11-16T02:01:08Z"
   },
   {
    "name": "kompendium-epistemicke-anihilace",
@@ -4229,18 +4229,29 @@
    "gitlab": null,
    "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
    "created": "2026-11-09T22:04:50Z",
-   "active": "2026-11-16T01:08:10Z"
+   "active": "2026-11-16T01:59:42Z"
   },
   {
-   "name": "oscilla",
-   "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-   "language": "JavaScript",
+   "name": "algoglyph",
+   "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
+   "language": "TypeScript",
    "category": "science",
-   "github": "https://github.com/korczis/oscilla",
+   "github": "https://github.com/korczis/algoglyph",
    "gitlab": null,
-   "site": "https://korczis.github.io/oscilla/",
-   "created": "2026-10-01T21:05:33Z",
-   "active": "2026-11-16T01:07:55Z"
+   "site": "https://korczis.github.io/algoglyph/",
+   "created": "2026-11-11T18:09:38Z",
+   "active": "2026-11-16T01:54:13Z"
+  },
+  {
+   "name": "openttd-prismatic-bridge",
+   "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
+   "language": "Python",
+   "category": "media",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/openttd-prismatic-bridge",
+   "site": null,
+   "created": "2026-07-23T22:00:54.776Z",
+   "active": "2026-11-16T00:49:25.785Z"
   },
   {
    "name": "prismatic-majordomus",
@@ -4329,17 +4340,6 @@
    "site": "https://korczis.github.io/crisis-map/",
    "created": "2026-09-08T00:27:41Z",
    "active": "2026-10-29T10:46:18Z"
-  },
-  {
-   "name": "openttd-prismatic-bridge",
-   "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
-   "language": "Python",
-   "category": "media",
-   "github": null,
-   "gitlab": "https://gitlab.com/korczis/openttd-prismatic-bridge",
-   "site": null,
-   "created": "2026-07-23T22:00:54.776Z",
-   "active": "2026-10-29T10:43:46.963Z"
   },
   {
    "name": "majordomus-reel",
@@ -6225,7 +6225,7 @@
   {
    "name": "skull-nodejs",
    "description": "Node.js Skull",
-   "language": null,
+   "language": "Makefile",
    "category": "learning",
    "github": "https://github.com/korczis/skull-nodejs",
    "gitlab": "https://gitlab.com/korczis/skull-nodejs",
@@ -6511,7 +6511,7 @@
   {
    "name": "sandbox",
    "description": "Something just for fun. This is place where I play with new techs...",
-   "language": null,
+   "language": "Ruby",
    "category": "learning",
    "github": "https://github.com/korczis/sandbox",
    "gitlab": "https://gitlab.com/korczis/sandbox",
@@ -6522,15 +6522,15 @@
  ],
  "counts": {
   "github": 448,
-  "gitlab": 195,
-  "merged": 500,
+  "gitlab": 417,
+  "merged": 517,
   "own": 211,
   "forks": 250,
-  "mirrors": 31,
-  "empty": 2,
+  "mirrors": 47,
+  "empty": 3,
   "unmeasured": 0,
   "hidden": 6,
-  "mirrors_measured": 16,
+  "mirrors_measured": 32,
   "supervised": 8
  }
 }

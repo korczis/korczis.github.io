@@ -67,7 +67,7 @@ Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist s
 ## Every original repository
 
 > 211 repositories on GitHub and GitLab where the owner wrote at least half of the commits,
-> derived 2026-11-16T01:45:27Z. Forks and mirrors (281) are not listed.
+> derived 2026-11-16T02:19:02Z. Forks and mirrors (297) are not listed.
 
 ### AI engineering (5)
 
@@ -79,8 +79,8 @@ Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist s
 
 ### Science and visualisation (12)
 
-- algoglyph: Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores. (TypeScript, 2026). article https://korczis.github.io/work/algoglyph/; GitHub https://github.com/korczis/algoglyph; site https://korczis.github.io/algoglyph/
 - oscilla: A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted. (JavaScript, 2026). article https://korczis.github.io/work/oscilla/; GitHub https://github.com/korczis/oscilla; site https://korczis.github.io/oscilla/
+- algoglyph: Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores. (TypeScript, 2026). article https://korczis.github.io/work/algoglyph/; GitHub https://github.com/korczis/algoglyph; site https://korczis.github.io/algoglyph/
 - distance-calculator (Elixir, 2024). article https://korczis.github.io/work/distance-calculator/; GitLab https://gitlab.com/korczis/distance-calculator
 - maze-rs: Maze for Programmers (Rust) (Rust, 2016). GitHub https://github.com/korczis/maze-rs; GitLab https://gitlab.com/korczis/maze-rs; site https://korczis.github.io/maze-rs/
 - rustas: Rust - Assembler, Mathematics, GPU and many others (Rust, 2018). GitHub https://github.com/korczis/rustas; GitLab https://gitlab.com/korczis/rustas
@@ -156,9 +156,9 @@ Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist s
 
 ### Media and art (8)
 
+- openttd-prismatic-bridge: REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform (Python, 2026). article https://korczis.github.io/work/openttd-prismatic-bridge/; GitLab https://gitlab.com/korczis/openttd-prismatic-bridge
 - sonic-playground: Sonic Playground - Phoenix/Elixir music blog built on the Kita theme (Python, 2026). article https://korczis.github.io/work/sonic-playground/; GitHub https://github.com/korczis/sonic-playground; site https://korczis.github.io/sonic-playground/
 - catharsis-as-a-service: Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact. (HTML, 2026). article https://korczis.github.io/work/catharsis-as-a-service/; GitHub https://github.com/korczis/catharsis-as-a-service; site https://korczis.github.io/catharsis-as-a-service/
-- openttd-prismatic-bridge: REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform (Python, 2026). article https://korczis.github.io/work/openttd-prismatic-bridge/; GitLab https://gitlab.com/korczis/openttd-prismatic-bridge
 - majordomus-reel: A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound (HTML, 2026). article https://korczis.github.io/work/majordomus-reel/; GitHub https://github.com/korczis/majordomus-reel; site https://korczis.github.io/majordomus-reel/
 - prismatic-blog (Dockerfile, 2025). article https://korczis.github.io/work/prismatic-blog/; GitHub https://github.com/korczis/prismatic-blog; site https://korczis.github.io/prismatic-blog/
 - dj-schnapps: Dj Schnapps (Elixir, 2019). GitHub https://github.com/korczis/dj-schnapps; GitLab https://gitlab.com/korczis/dj-schnapps
@@ -237,14 +237,14 @@ Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist s
 - skull: Programming learning materials, examples, sources ... (Shell, 2014). GitHub https://github.com/korczis/skull; GitLab https://gitlab.com/korczis/skull
 - skull-java (Java, 2014). GitHub https://github.com/korczis/skull-java; GitLab https://gitlab.com/korczis/skull-java
 - skull-ruby: Ruby Skull (Ruby, 2014). GitHub https://github.com/korczis/skull-ruby; GitLab https://gitlab.com/korczis/skull-ruby
-- skull-nodejs: Node.js Skull (2014). GitHub https://github.com/korczis/skull-nodejs; GitLab https://gitlab.com/korczis/skull-nodejs
+- skull-nodejs: Node.js Skull (Makefile, 2014). GitHub https://github.com/korczis/skull-nodejs; GitLab https://gitlab.com/korczis/skull-nodejs
 - skull-haskell (Haskell, 2014). GitHub https://github.com/korczis/skull-haskell; GitLab https://gitlab.com/korczis/skull-haskell
 - skull-erlang: Programming learning materials, examples, sources ... (Erlang, 2014). GitHub https://github.com/korczis/skull-erlang; GitLab https://gitlab.com/korczis/skull-erlang
 - cs-benchmark: Simple C# Benchmark (C#, 2014). GitHub https://github.com/korczis/cs-benchmark; GitLab https://gitlab.com/korczis/cs-benchmark
 - generator-the-scratch: Yeoman Generator for The Scratch (JavaScript, 2013). GitHub https://github.com/korczis/generator-the-scratch; GitLab https://gitlab.com/korczis/generator-the-scratch
 - Rocnikac4 (C#, 2013). GitHub https://github.com/korczis/Rocnikac4; GitLab https://gitlab.com/korczis/Rocnikac4
 - malina: Raspberry Pi playground (Shell, 2013). GitHub https://github.com/korczis/malina; GitLab https://gitlab.com/korczis/malina
-- sandbox: Something just for fun. This is place where I play with new techs... (2012). GitHub https://github.com/korczis/sandbox; GitLab https://gitlab.com/korczis/sandbox
+- sandbox: Something just for fun. This is place where I play with new techs... (Ruby, 2012). GitHub https://github.com/korczis/sandbox; GitLab https://gitlab.com/korczis/sandbox
 
 ### Tools (64)
 
