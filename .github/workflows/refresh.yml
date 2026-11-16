@@ -4,9 +4,14 @@ name: Refresh
 # GitHub and GitLab again, re-derives everything that follows from the data, runs every gate, and
 # only when they all pass commits the result to master and starts the deploy. A failing gate
 # leaves the site as it was.
+#
+# GitHub drops scheduled runs under load (2026-11-13..16: two of four a day ran), so the schedule
+# fires hourly and measures once the data on master is REFRESH_HOURS old (an hour of margin for
+# the schedule's jitter); a younger run stops after the checkout. A dropped run costs an hour, not
+# six. A run started by hand always measures. REFRESH_HOURS is the cadence the pages describe.
 on:
   schedule:
-    - cron: '23 */6 * * *'
+    - cron: '23 * * * *'
   workflow_dispatch:
 
 permissions:
@@ -26,34 +31,54 @@ jobs:
       GH_TOKEN: ${{ github.token }}
       GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
       MAJORDOMUS_VERSION: v1.0.1
+      REFRESH_HOURS: 6
     steps:
       # Full history: the commit hooks run majordomus doctor, whose clone checks read it.
       - uses: actions/checkout@v7
         with:
           fetch-depth: 0
+      # Due when started by hand, or when the data is older than REFRESH_HOURS - 1 (no install).
+      - name: Is a refresh due?
+        id: due
+        env:
+          EVENT: ${{ github.event_name }}
+        run: |
+          due_after=$((REFRESH_HOURS - 1))
+          if [ "$EVENT" != schedule ] || ! MAX_HOURS="$due_after" node scripts/check-fresh.mjs; then
+            echo "due=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "not due: the data on master is younger than $due_after h"
+          fi
       - uses: ./.github/actions/setup
+        if: steps.due.outputs.due == 'true'
       # The refresh commits like anyone else: through the repository's hooks (Majordomus doctor on
       # commit, finish --check on push), never around them. Pinned like CI; the installer verifies
       # the release's SHA-256.
       - name: Install majordomus
+        if: steps.due.outputs.due == 'true'
         run: |
           curl -fsSL https://majordomus.dev/install.sh | sh -s -- --version "$MAJORDOMUS_VERSION"
           echo "$HOME/.local/bin" >> "$GITHUB_PATH"
           git config core.hooksPath .githooks
       - name: Renderer for the Open Graph images
+        if: steps.due.outputs.due == 'true'
         run: sudo apt-get install -y --no-install-recommends librsvg2-bin
       # GitLab reads have a 15-minute budget per fetcher and then keep the last measurement
       # (scripts/lib/gitlab.mjs); the step limit is the backstop, never the plan.
       - name: Measure (GitHub, GitLab, majordomus.dev; the last 12, 24 and 48 months)
+        if: steps.due.outputs.due == 'true'
         timeout-minutes: 45
         run: npm run --silent data && npm run --silent index && npm run --silent recent
       - name: Derive (categories, work pages, llms.txt, OG images, site.json)
+        if: steps.due.outputs.due == 'true'
         run: npm run --silent derive
       - name: Every gate (scripts/gates.mjs run --ci)
+        if: steps.due.outputs.due == 'true'
         env:
           NDA_DENYLIST: ${{ secrets.NDA_DENYLIST }}
         run: npm run --silent check
       - name: Commit and deploy when something changed
+        if: steps.due.outputs.due == 'true'
         # The push runs the pre-push hook, whose gates include the NDA gate: in CI it fails
         # closed without the denylist, so this step needs the secret as the gate step does.
         env:

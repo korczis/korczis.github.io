@@ -84,15 +84,25 @@ export function limits() {
   };
 }
 
-// How often the data is re-measured, from the schedule of .github/workflows/refresh.yml (the
-// source of truth), never typed: { unit: 'hours' | 'days' | 'weeks', n }. Throws on a schedule it
-// cannot read, so a changed cron is noticed instead of misdescribed.
+// How often the data is re-measured, from .github/workflows/refresh.yml (the source of truth),
+// never typed: { unit: 'hours' | 'days' | 'weeks', n }. The schedule may fire more often than
+// it measures (it fires hourly because GitHub drops scheduled runs); then REFRESH_HOURS in the
+// workflow is the cadence, and it must be a multiple of the cron's interval. Throws on a schedule
+// it cannot read, so a changed cron is noticed instead of misdescribed.
 export function cadence(workflow = '.github/workflows/refresh.yml') {
-  const cron = readFileSync(join(ROOT, workflow), 'utf8').match(/cron:\s*['"]([^'"]+)['"]/)?.[1];
+  const text = readFileSync(join(ROOT, workflow), 'utf8');
+  const cron = text.match(/cron:\s*['"]([^'"]+)['"]/)?.[1];
   if (!cron) throw new Error(`${workflow}: no schedule cron`);
+  const due = text.match(/^\s*REFRESH_HOURS:\s*(\d+)\s*$/m)?.[1];
   const [, hour, dom, mon, dow] = cron.trim().split(/\s+/);
   const every = (field) => (field === '*' ? 1 : /^\*\/(\d+)$/.test(field) ? Number(field.slice(2)) : null);
   if (dom === '*' && mon === '*' && dow === '*') {
+    if (every(hour) && due) {
+      if (Number(due) % every(hour)) {
+        throw new Error(`${workflow}: REFRESH_HOURS ${due} is no multiple of ${cron}`);
+      }
+      return { unit: 'hours', n: Number(due), cron };
+    }
     if (every(hour)) return { unit: 'hours', n: every(hour), cron };
     if (/^\d+$/.test(hour)) return { unit: 'days', n: 1, cron };
   }
