@@ -103,8 +103,10 @@ Pages are front matter over data. Nothing on them is typed, so nothing needs upd
   gate passes does it commit to master and start the deploy.
   GitLab is read through one client (`scripts/lib/gitlab.mjs`): `glab` locally, REST in CI
   (`GITLAB_TOKEN` raises the limits, anonymous works). Every rate-limit wait is logged. Each
-  fetcher has a 15-minute GitLab budget (`GITLAB_BUDGET_MS`), after which its GitLab projects keep
-  their last measurement and the run says how many; a refresh degrades, never hangs. An ownership
+  fetcher has a 15-minute GitLab budget (`GITLAB_BUDGET_MS`), counted from its first GitLab call.
+  Once it is spent, each project it no longer reaches keeps its last measurement (the listing is
+  already read, so the GitLab, fork and mirror counts stay whole) and the run says how many; a
+  refresh degrades, never hangs. An ownership
   share is measured again only for projects with new activity. The daily Monitor runs
   `scripts/check-fresh.mjs`, which fails when the data on master is older than 24 hours.
 

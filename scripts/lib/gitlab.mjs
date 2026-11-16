@@ -17,7 +17,9 @@ export class GitLabBudgetError extends Error {}
 
 // The budget: GITLAB_BUDGET_MS from the environment (the workflows set it), else 15 minutes.
 export function gitlabClient({ budgetMs = Number(process.env.GITLAB_BUDGET_MS) || 15 * 60 * 1000, log = (m) => console.error(m) } = {}) {
-  const deadline = Date.now() + budgetMs;
+  // The budget starts at the first GitLab call, not when the client is made: a fetcher makes it
+  // before it reads GitHub, and that time is not GitLab's (it once left the listing unread).
+  let deadline = null;
   let useGlab = null;
   let waits = 0;
   // A token is one line of printable characters; anything else (a CLI's help text stored as the
@@ -28,7 +30,7 @@ export function gitlabClient({ budgetMs = Number(process.env.GITLAB_BUDGET_MS) |
     token = null;
   }
 
-  const left = () => deadline - Date.now();
+  const left = () => (deadline ??= Date.now() + budgetMs) - Date.now();
   const spent = (path) => {
     if (left() <= 0) throw new GitLabBudgetError(`GitLab budget of ${Math.round(budgetMs / 1000)} s spent at ${path}`);
   };
