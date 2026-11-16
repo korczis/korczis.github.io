@@ -3,7 +3,7 @@
 title = "Fork"
 description = "A copy of someone else's repository under your account; forks are counted on this site but never shown as the owner's work."
 template = "term.html"
-weight = 42
+weight = 43
 
 [taxonomies]
 tags = ["Glossary", "Concept"]

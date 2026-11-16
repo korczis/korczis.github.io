@@ -6,7 +6,8 @@
 
 - [Tomas Korcak](https://korczis.github.io/): Software that proves its work: tools that make AI agents prove what they did, honest scientific instruments in the browser, and knowledge bases you can check.
 - [About](https://korczis.github.io/about/): Tomas Korcak (korczis), software engineer in Brno: what I build, the languages I build it in over the years, and where to find it.
-- [Glossary](https://korczis.github.io/glossary/): The 61 terms this site explains itself with: languages, technologies and concepts, each defined, sourced and linked to every page that uses it.
+- [Glossary](https://korczis.github.io/glossary/): The 62 terms this site explains itself with: languages, technologies and concepts, each defined, sourced and linked to every page that uses it.
+- [Interfaces](https://korczis.github.io/interfaces/): The site for machines: its Majordomus layer with MCP resource URIs, how to connect an agent over MCP, and every published file described in OpenAPI.
 - [Projects](https://korczis.github.io/projects/): Every project in the catalogue: what it is, what it is built with, whether it is live, and whether Majordomus supervises it.
 - [Repositories](https://korczis.github.io/repositories/): Every original public repository on GitHub and GitLab, merged by name, with its inferred category, language and both links.
 - [Stack](https://korczis.github.io/stack/): The tools and practices behind every project, and how this site itself is built, checked and deployed.

@@ -1428,3 +1428,99 @@ cs = "bez dohledu"
 [kpi_supervision_marker]
 en = "{marker} on the default branch, asked of every repository on GitHub and GitLab"
 cs = "{marker} ve výchozí větvi, zjištěno u každého repozitáře na GitHubu i GitLabu"
+
+[interfaces]
+en = "Interfaces"
+cs = "Rozhraní"
+
+[hint_interfaces]
+en = "The .ai layer, MCP and the site as an OpenAPI"
+cs = "Vrstva .ai, MCP a web jako OpenAPI"
+
+[interfaces_menu]
+en = "Machine interfaces"
+cs = "Strojová rozhraní"
+
+[interfaces_view_all]
+en = "All interfaces"
+cs = "Všechna rozhraní"
+
+[iface_ai]
+en = ".ai layer"
+cs = "Vrstva .ai"
+
+[iface_mcp]
+en = "MCP"
+cs = "MCP"
+
+[iface_api]
+en = "OpenAPI"
+cs = "OpenAPI"
+
+[iface_swagger]
+en = "Swagger UI"
+cs = "Swagger UI"
+
+[iface_llms]
+en = "llms.txt"
+cs = "llms.txt"
+
+[iface_site_json]
+en = "site.json"
+cs = "site.json"
+
+[kpi_ai_objects]
+en = "objects in the .ai layer"
+cs = "objektů ve vrstvě .ai"
+
+[kpi_ai_objects_note]
+en = "{n} kinds, each an MCP resource"
+cs = "{n} druhů, každý jako zdroj MCP"
+
+[kpi_ai_rules]
+en = "rules agents obey here"
+cs = "pravidel, jimiž se tu agenti řídí"
+
+[kpi_ai_rules_note]
+en = "blocking ones are enforced by a gate"
+cs = "blokující vynucuje gate"
+
+[kpi_mcp_tools]
+en = "MCP tools served"
+cs = "nabízených nástrojů MCP"
+
+[kpi_mcp_tools_note]
+en = "and {n} resources, Majordomus {v}"
+cs = "a {n} zdrojů, Majordomus {v}"
+
+[kpi_published_files]
+en = "files the site publishes as data"
+cs = "souborů, které web publikuje jako data"
+
+[open_ai_json]
+en = "ai.json"
+cs = "ai.json"
+
+[col_object]
+en = "Object"
+cs = "Objekt"
+
+[col_mcp_uri]
+en = "MCP resource"
+cs = "Zdroj MCP"
+
+[col_path]
+en = "Path"
+cs = "Cesta"
+
+[col_summary]
+en = "What it holds"
+cs = "Co obsahuje"
+
+[majordomus_docs]
+en = "majordomus.dev"
+cs = "majordomus.dev"
+
+[ai_measured_with]
+en = "Indexed by Majordomus {v} from the tracked .ai/ tree; a gate refuses a change to .ai/ that was not indexed again. Source:"
+cs = "Indexováno Majordomem {v} z trackovaného stromu .ai/; gate odmítne změnu .ai/, která nebyla znovu indexována. Zdroj:"

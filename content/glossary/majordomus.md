@@ -16,8 +16,8 @@ kind = "technology"
 definition = "The owner's supervisory layer for AI-assisted work: one policy for every coding agent, scoped tasks, and finishes that must be proven."
 aliases = []
 reference = { title = "majordomus.dev", url = "https://majordomus.dev" }
-pages = ["about.md", "stack.md"]
-related = ["ai-agent", "alpine-js", "apache-echarts", "chart-js", "cytoscape-js", "d3", "elixir", "flowbite-pro"]
+pages = ["about.md", "interfaces.md", "stack.md"]
+related = ["ai-agent", "github-pages", "alpine-js", "apache-echarts", "chart-js", "cytoscape-js", "d3", "elixir"]
 og_title = "Majordomus: glossary"
 og_image = "og/glossary-majordomus.png"
 keywords = ["Majordomus", "Technology", "Glossary", "Tomas Korcak"]

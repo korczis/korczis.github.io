@@ -3,7 +3,7 @@
 title = "Zola"
 description = "Generátor statických webů v jedné binárce v Rustu: dovnitř Markdown a šablony, ven celý vícejazyčný web."
 template = "term.html"
-weight = 33
+weight = 34
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

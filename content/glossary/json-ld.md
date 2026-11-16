@@ -3,7 +3,7 @@
 title = "JSON-LD"
 description = "Linked data in JSON embedded in a page, telling search engines and machines what the page is about (schema.org)."
 template = "term.html"
-weight = 48
+weight = 49
 
 [taxonomies]
 tags = ["Glossary", "Concept"]
@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Linked data in JSON embedded in a page, telling search engines and machines what the page is about (schema.org)."
 aliases = []
 reference = { title = "json-ld.org", url = "https://json-ld.org/" }
-pages = ["_index.md"]
-related = ["commit", "d3", "data-visualisation", "flowbite-pro", "fork", "front-matter", "mirror", "open-graph"]
+pages = ["_index.md", "interfaces.md"]
+related = ["ai-agent", "commit", "d3", "data-visualisation", "flowbite-pro", "fork", "front-matter", "github-pages"]
 og_title = "JSON-LD: glossary"
 og_image = "og/glossary-json-ld.png"
 keywords = ["JSON-LD", "Concept", "Glossary", "Tomas Korcak"]

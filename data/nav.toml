@@ -74,6 +74,16 @@ footer = true
 palette = true
 
 [[nav]]
+key = "interfaces"
+path = "/interfaces/"
+icon = "squares"
+badge = ""
+hint = "hint_interfaces"
+sidebar = true
+footer = true
+palette = true
+
+[[nav]]
 key = "glossary"
 path = "/glossary/"
 icon = "academic"
@@ -102,3 +112,39 @@ hint = "hint_data"
 sidebar = false
 footer = true
 palette = false
+
+# The topbar's interfaces menu (templates/partials/navbar.html): the site's machine interfaces,
+# one tile each. `path` is under the language prefix when it starts with "/" and names a page;
+# `file` is a published file (never language-prefixed); `swagger` opens static/openapi.json in
+# Swagger UI. The /interfaces/ page explains each.
+#
+#   key   i18n key of the label        icon   a name templates/components.html `icon` knows
+[[interfaces]]
+key = "iface_ai"
+icon = "shield"
+path = "/interfaces/#ai"
+
+[[interfaces]]
+key = "iface_mcp"
+icon = "puzzle"
+path = "/interfaces/#mcp"
+
+[[interfaces]]
+key = "iface_api"
+icon = "code"
+path = "/interfaces/#api"
+
+[[interfaces]]
+key = "iface_swagger"
+icon = "external"
+swagger = true
+
+[[interfaces]]
+key = "iface_llms"
+icon = "book"
+file = "llms.txt"
+
+[[interfaces]]
+key = "iface_site_json"
+icon = "graph"
+file = "site.json"

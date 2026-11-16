@@ -58,6 +58,7 @@ export const GATES = [
   { id: 'llms', name: 'llms.txt is current', run: ['node', 'scripts/build-llms.mjs', '--check'], ci: true, rule: 'project.data-measured' },
   { id: 'og', name: 'Open Graph images are current', run: ['node', 'scripts/build-og.mjs', '--check'], ci: true, rule: 'project.seo-derived' },
   { id: 'site-json', name: 'site.json is current', run: ['node', 'scripts/build-site-json.mjs', '--check'], ci: true, rule: 'project.front-matter-contract' },
+  { id: 'interfaces', name: 'ai.json follows .ai/ and openapi.json the published files', run: ['node', 'scripts/build-interfaces.mjs', '--check'], ci: true, rule: 'project.data-measured' },
   { id: 'viz-layer', name: 'Every visual goes through the component layer and is a maximizable simulator', run: ['node', 'scripts/check-viz-layer.mjs'], ci: true, rule: 'project.viz-component-layer' },
   { id: 'build', name: 'Build (internal links are errors)', run: ['npm', 'run', '--silent', 'build'], ci: true, rule: 'project.site-zola-pages' },
   { id: 'seo', name: 'SEO derived from front matter (titles, descriptions, OG, JSON-LD, sitemap)', run: ['node', 'scripts/check-seo.mjs'], ci: true, needs: 'build', rule: 'project.seo-derived' },

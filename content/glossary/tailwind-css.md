@@ -3,7 +3,7 @@
 title = "Tailwind CSS"
 description = "A CSS framework of small utility classes composed in the markup, compiled to only what a page uses."
 template = "term.html"
-weight = 31
+weight = 32
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

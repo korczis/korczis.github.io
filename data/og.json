@@ -98,8 +98,8 @@
    "png": "724e9d55eaa98b40"
   },
   "cs-glossary": {
-   "svg": "769c6f041f10168d",
-   "png": "076219f51fcbc074"
+   "svg": "f0be4e624bdf3868",
+   "png": "fabd15ace3b05194"
   },
   "cs-glossary-ai-agent": {
    "svg": "18fd0bdf31dea3d6",
@@ -265,6 +265,10 @@
    "svg": "bbc251c289a15413",
    "png": "513bc742de5e3482"
   },
+  "cs-glossary-openapi": {
+   "svg": "50b0d47d41417ed4",
+   "png": "4b564daac2cca10a"
+  },
   "cs-glossary-orchestration": {
    "svg": "f86f51b0824142e7",
    "png": "d79d13b65d2ed4a1"
@@ -348,6 +352,10 @@
   "cs-home": {
    "svg": "b4a02a18d34ecc1b",
    "png": "24ec5814d574312b"
+  },
+  "cs-interfaces": {
+   "svg": "a94add49a0b4a5e7",
+   "png": "f33728d6a03f4c0c"
   },
   "cs-projects": {
    "svg": "e8a8fe17c879d590",
@@ -538,8 +546,8 @@
    "png": "ddbe2e3938894ad5"
   },
   "glossary": {
-   "svg": "6ef9d871b547884c",
-   "png": "8572b8d9de6359fc"
+   "svg": "acc58998e75fe516",
+   "png": "0e583912f249e221"
   },
   "glossary-ai-agent": {
    "svg": "b9b2e5a59fece551",
@@ -705,6 +713,10 @@
    "svg": "d2d2940a43e38fb7",
    "png": "dd9336d4e49fb245"
   },
+  "glossary-openapi": {
+   "svg": "cd42ab5366e614e9",
+   "png": "3db44871a0a0e57d"
+  },
   "glossary-orchestration": {
    "svg": "53b9792497cea36d",
    "png": "8eae4cf7ed00f2c4"
@@ -788,6 +800,10 @@
   "home": {
    "svg": "ec999a7bf44e77b6",
    "png": "9d6c627004702a54"
+  },
+  "interfaces": {
+   "svg": "7d9117f8c77ed534",
+   "png": "ac4351ff01012013"
   },
   "projects": {
    "svg": "89da8601eb2dc3ba",

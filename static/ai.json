@@ -1,0 +1,1134 @@
+{
+ "schema": "korczis-hub-ai/v1",
+ "description": "The Majordomus layer of korczis/korczis.github.io: every object of .ai/ with its MCP resource URI",
+ "source": "majordomus run objects.list, capabilities.list",
+ "majordomus": "1.0.1",
+ "tree": "34942a34df42a1703b534b69d08e7d5297f351c35384bd51c299b93d97225669",
+ "counts": {
+  "objects": 138,
+  "kinds": {
+   "adr": 6,
+   "context": 21,
+   "document": 9,
+   "knowledge": 8,
+   "mesh-declaration": 1,
+   "policy": 1,
+   "profile": 4,
+   "prompt": 4,
+   "rule": 74,
+   "scope": 1,
+   "skill": 1,
+   "taxonomy": 8
+  },
+  "capabilities": 369,
+  "mcp_tools": 215,
+  "mcp_resources": 195,
+  "http_routes": 219
+ },
+ "objects": [
+  {
+   "uri": "majordomus://adr/adr-0001",
+   "kind": "adr",
+   "identity": "adr-0001",
+   "title": "Personal hub on Zola with Flowbite Pro, deployed to GitHub Pages",
+   "description": "Personal hub on Zola with Flowbite Pro, deployed to GitHub Pages",
+   "path": ".ai/repo/adrs/0001-personal-hub-on-zola-with-flowbite-pro-deployed-to-github-pa.md"
+  },
+  {
+   "uri": "majordomus://adr/adr-0002",
+   "kind": "adr",
+   "identity": "adr-0002",
+   "title": "Pages runs on a dedicated lundra runner when hosted runners are saturated",
+   "description": "Pages runs on a dedicated lundra runner when hosted runners are saturated",
+   "path": ".ai/repo/adrs/0002-pages-runs-on-a-dedicated-lundra-runner-when-hosted-runners-.md"
+  },
+  {
+   "uri": "majordomus://adr/adr-0003",
+   "kind": "adr",
+   "identity": "adr-0003",
+   "title": "Every public repository, original work only, derived through gh and glab",
+   "description": "Every public repository, original work only, derived through gh and glab",
+   "path": ".ai/repo/adrs/0003-every-public-repository-original-work-only-derived-through-g.md"
+  },
+  {
+   "uri": "majordomus://adr/adr-0004",
+   "kind": "adr",
+   "identity": "adr-0004",
+   "title": "Contact from the GitHub profile, CV facts from the owner, a derived GitHub profile",
+   "description": "Contact from the GitHub profile, CV facts from the owner, a derived GitHub profile",
+   "path": ".ai/repo/adrs/0004-contact-from-the-github-profile-cv-facts-from-the-owner-a-de.md"
+  },
+  {
+   "uri": "majordomus://adr/adr-0005",
+   "kind": "adr",
+   "identity": "adr-0005",
+   "title": "Visuals are maximizable simulators on the best library, everything interlinked, enforced every task",
+   "description": "Visuals are maximizable simulators on the best library, everything interlinked, enforced every task",
+   "path": ".ai/repo/adrs/0005-visuals-are-maximizable-simulators-on-the-best-library-every.md"
+  },
+  {
+   "uri": "majordomus://adr/adr-0006",
+   "kind": "adr",
+   "identity": "adr-0006",
+   "title": "Experience on the landing page is mined from private sources into anonymised facts, guarded by an NDA gate",
+   "description": "Experience on the landing page is mined from private sources into anonymised facts, guarded by an NDA gate",
+   "path": ".ai/repo/adrs/0006-experience-on-the-landing-page-is-mined-from-private-sources.md"
+  },
+  {
+   "uri": "majordomus://context/ai.layer",
+   "kind": "context",
+   "identity": "ai.layer",
+   "title": "Repository AI context",
+   "description": "The protocol of the layer: what it holds, who owns which half, how it is discovered, and what outranks what.",
+   "path": ".ai/README.md"
+  },
+  {
+   "uri": "majordomus://context/ai.repo",
+   "kind": "context",
+   "identity": "ai.repo",
+   "title": "Tracked repository context",
+   "description": "The tracked half of the layer and what each section under it is for.",
+   "path": ".ai/repo/README.md"
+  },
+  {
+   "uri": "majordomus://context/ai.repo.adrs",
+   "kind": "context",
+   "identity": "ai.repo.adrs",
+   "title": "Architecture decisions",
+   "description": "Accepted, durable decisions about how this repository is built.",
+   "path": ".ai/repo/adrs/README.md"
+  },
+  {
+   "uri": "majordomus://context/ai.repo.applications",
+   "kind": "context",
+   "identity": "ai.repo.applications",
+   "title": "Applications",
+   "description": "The contexts the tool suits, when each fits and when it does not, composed from use cases.",
+   "path": ".ai/repo/applications/README.md"
+  },
+  {
+   "uri": "majordomus://context/ai.repo.ci",
+   "kind": "context",
+   "identity": "ai.repo.ci",
+   "title": "CI model",
+   "description": "The CI model Majordomus reads (gates.yaml) — which job of ci.yml runs which gate, and which changed paths select them; here every change runs every job.",
+   "path": ".ai/repo/ci/README.md"
+  },
+  {
+   "uri": "majordomus://context/ai.repo.deployments",
+   "kind": "context",
+   "identity": "ai.repo.deployments",
+   "title": "Deployments",
+   "description": "One canonical object per deployment of this repository's service; every artifact built from it — the container image definition and its ignore file — is generated from it and none of them is authoritative.",
+   "path": ".ai/repo/deployments/README.md"
+  },
+  {
+   "uri": "majordomus://context/ai.repo.features",
+   "kind": "context",
+   "identity": "ai.repo.features",
+   "title": "Product features",
+   "description": "What this repository's product does for a person, one feature per file, each made of things the other registries already own; every surface that presents a feature is derived from these files.",
+   "path": ".ai/repo/features/README.md"
+  },
+  {
+   "uri": "majordomus://context/ai.repo.knowledge",
+   "kind": "context",
+   "identity": "ai.repo.knowledge",
+   "title": "Knowledge",
+   "description": "How repository knowledge is declared and discovered, never collected.",
+   "path": ".ai/repo/knowledge/README.md"
+  },
+  {
+   "uri": "majordomus://context/ai.repo.knowledge.candidates",
+   "kind": "context",
+   "identity": "ai.repo.knowledge.candidates",
+   "title": "Candidate records",
+   "description": "What the tool derived from the ledger and git at an episode boundary and nobody has reviewed yet, discovered as a knowledge source class.",
+   "path": ".ai/repo/knowledge/candidates/README.md"
+  },
+  {
+   "uri": "majordomus://context/ai.repo.knowledge.curated",
+   "kind": "context",
+   "identity": "ai.repo.knowledge.curated",
+   "title": "Curated notes",
+   "description": "What this repository chose to write about itself, discovered as a knowledge source class.",
+   "path": ".ai/repo/knowledge/curated/README.md"
+  },
+  {
+   "uri": "majordomus://context/ai.repo.mesh",
+   "kind": "context",
+   "identity": "ai.repo.mesh",
+   "title": "Mesh",
+   "description": "One canonical object that says whether this repository's servers take part in the mesh, over which transports, and which machines' keys they trust; a machine whose key is not listed keeps it closed.",
+   "path": ".ai/repo/mesh/README.md"
+  },
+  {
+   "uri": "majordomus://context/ai.repo.profiles",
+   "kind": "context",
+   "identity": "ai.repo.profiles",
+   "title": "Profiles",
+   "description": "How much context, effort and ceremony a task gets, declared per working mode.",
+   "path": ".ai/repo/profiles/README.md"
+  },
+  {
+   "uri": "majordomus://context/ai.repo.project",
+   "kind": "context",
+   "identity": "ai.repo.project",
+   "title": "Project model",
+   "description": "Milestones as outcomes, issues as execution contracts, and a dependency graph that decides what is next.",
+   "path": ".ai/repo/project/README.md"
+  },
+  {
+   "uri": "majordomus://context/ai.repo.prompts",
+   "kind": "context",
+   "identity": "ai.repo.prompts",
+   "title": "Prompt assets",
+   "description": "The provider-neutral prompts the tool renders, with the tokens it fills in.",
+   "path": ".ai/repo/prompts/README.md"
+  },
+  {
+   "uri": "majordomus://context/ai.repo.rules",
+   "kind": "context",
+   "identity": "ai.repo.rules",
+   "title": "Repository rules",
+   "description": "The rule object format, where rules live, how they are loaded and composed.",
+   "path": ".ai/repo/rules/README.md"
+  },
+  {
+   "uri": "majordomus://context/ai.repo.rules.project",
+   "kind": "context",
+   "identity": "ai.repo.rules.project",
+   "title": "Project rules",
+   "description": "The rules this repository writes for itself, resolved together with the vendored baseline.",
+   "path": ".ai/repo/rules/project/README.md"
+  },
+  {
+   "uri": "majordomus://context/ai.repo.sessions",
+   "kind": "context",
+   "identity": "ai.repo.sessions",
+   "title": "Session records",
+   "description": "One immutable record per closed execution episode, derived from git and the ledger and shared with every surface.",
+   "path": ".ai/repo/sessions/README.md"
+  },
+  {
+   "uri": "majordomus://context/ai.repo.skills",
+   "kind": "context",
+   "identity": "ai.repo.skills",
+   "title": "Skills",
+   "description": "Reusable provider-neutral operational procedures, loaded only when the task is about them.",
+   "path": ".ai/repo/skills/README.md"
+  },
+  {
+   "uri": "majordomus://context/ai.repo.use-cases",
+   "kind": "context",
+   "identity": "ai.repo.use-cases",
+   "title": "Use cases",
+   "description": "The tasks people perform with the tool, each one a file with the commands, rules and claims it names and the scenario that proves it.",
+   "path": ".ai/repo/use-cases/README.md"
+  },
+  {
+   "uri": "majordomus://context/ai.repo.why",
+   "kind": "context",
+   "identity": "ai.repo.why",
+   "title": "Why this exists",
+   "description": "The operational failure modes this repository's work is a response to, the audiences that recognise them and the areas they fall under, each one a file every projection is derived from.",
+   "path": ".ai/repo/why/README.md"
+  },
+  {
+   "uri": "majordomus://context/ai.repo.workflows",
+   "kind": "context",
+   "identity": "ai.repo.workflows",
+   "title": "Workflows",
+   "description": "The multi-step processes a worker follows here, and when each applies.",
+   "path": ".ai/repo/workflows/README.md"
+  },
+  {
+   "uri": "majordomus://document/.ai/repo/workflows/continuity.md",
+   "kind": "document",
+   "identity": ".ai/repo/workflows/continuity.md",
+   "title": "Continuity",
+   "description": null,
+   "path": ".ai/repo/workflows/continuity.md"
+  },
+  {
+   "uri": "majordomus://document/.ai/repo/workflows/every-change.md",
+   "kind": "document",
+   "identity": ".ai/repo/workflows/every-change.md",
+   "title": "Every change: the owner's standing order, applied by every task",
+   "description": null,
+   "path": ".ai/repo/workflows/every-change.md"
+  },
+  {
+   "uri": "majordomus://document/.ai/repo/workflows/plan.md",
+   "kind": "document",
+   "identity": ".ai/repo/workflows/plan.md",
+   "title": "Taking work from the plan",
+   "description": null,
+   "path": ".ai/repo/workflows/plan.md"
+  },
+  {
+   "uri": "majordomus://document/.ai/repo/workflows/task-lifecycle.md",
+   "kind": "document",
+   "identity": ".ai/repo/workflows/task-lifecycle.md",
+   "title": "The task lifecycle",
+   "description": null,
+   "path": ".ai/repo/workflows/task-lifecycle.md"
+  },
+  {
+   "uri": "majordomus://document/.ai/repo/workflows/use-cases.md",
+   "kind": "document",
+   "identity": ".ai/repo/workflows/use-cases.md",
+   "title": "Use cases",
+   "description": null,
+   "path": ".ai/repo/workflows/use-cases.md"
+  },
+  {
+   "uri": "majordomus://document/AGENTS.md",
+   "kind": "document",
+   "identity": "AGENTS.md",
+   "title": "AGENTS.md",
+   "description": null,
+   "path": "AGENTS.md"
+  },
+  {
+   "uri": "majordomus://document/CLAUDE.md",
+   "kind": "document",
+   "identity": "CLAUDE.md",
+   "title": "CLAUDE.md",
+   "description": null,
+   "path": "CLAUDE.md"
+  },
+  {
+   "uri": "majordomus://document/GEMINI.md",
+   "kind": "document",
+   "identity": "GEMINI.md",
+   "title": "GEMINI.md",
+   "description": null,
+   "path": "GEMINI.md"
+  },
+  {
+   "uri": "majordomus://document/README.md",
+   "kind": "document",
+   "identity": "README.md",
+   "title": "korczis.github.io",
+   "description": null,
+   "path": "README.md"
+  },
+  {
+   "uri": "majordomus://knowledge/alpine-scope-collisions",
+   "kind": "knowledge",
+   "identity": "alpine-scope-collisions",
+   "title": "Nested Alpine components share property names: the inner one silently writes the outer one's state",
+   "description": "When an Alpine component is placed inside another (the catalogue filter wraps the detail drawer).",
+   "path": ".ai/repo/knowledge/curated/alpine-scope-collisions.md"
+  },
+  {
+   "uri": "majordomus://knowledge/authorship-derivation",
+   "kind": "knowledge",
+   "identity": "authorship-derivation",
+   "title": "A public repository is the owner's work only when the owner wrote most of its commits, and its description does not say it is a copy",
+   "description": "When scripts/fetch-index.mjs or the rule for listing repositories changes.",
+   "path": ".ai/repo/knowledge/curated/authorship-derivation.md"
+  },
+  {
+   "uri": "majordomus://knowledge/gitlab-token-secret",
+   "kind": "knowledge",
+   "identity": "gitlab-token-secret",
+   "title": "glab 1.115 `auth token` prints its help text: store the GITLAB_TOKEN secret from the token itself",
+   "description": "When setting or rotating the GITLAB_TOKEN Actions secret, or when a refresh reads GitLab anonymously or spends its GitLab budget.",
+   "path": ".ai/repo/knowledge/curated/gitlab-token-secret.md"
+  },
+  {
+   "uri": "majordomus://knowledge/owner-decisions-2026-11-15",
+   "kind": "knowledge",
+   "identity": "owner-decisions-2026-11-15",
+   "title": "The owner's answers of 2026-11-15: the experience map, the derived categories, unable.cz never runs, and the scope of a full refresh",
+   "description": "Before changing data/projects.toml category rules or its hidden list, the private engagement map, anything that would publish unable.cz, or the scope of what the hub reflects.",
+   "path": ".ai/repo/knowledge/curated/owner-decisions-2026-11-15.md"
+  },
+  {
+   "uri": "majordomus://knowledge/p5-async-setup",
+   "kind": "knowledge",
+   "identity": "p5-async-setup",
+   "title": "p5 2.x sets up asynchronously and then sets touch-action: none on every canvas of the page",
+   "description": "When a p5 sketch is resized, recoloured or shares a page with other canvases.",
+   "path": ".ai/repo/knowledge/curated/p5-async-setup.md"
+  },
+  {
+   "uri": "majordomus://knowledge/svg-text-contrast",
+   "kind": "knowledge",
+   "identity": "svg-text-contrast",
+   "title": "axe judges SVG text by its CSS colour and the box background, never by the fill it is drawn on",
+   "description": "When a visual draws text into an SVG over shapes, gradients or a night-toned box.",
+   "path": ".ai/repo/knowledge/curated/svg-text-contrast.md"
+  },
+  {
+   "uri": "majordomus://knowledge/tera2-templates",
+   "kind": "knowledge",
+   "identity": "tera2-templates",
+   "title": "Zola 0.23 renders Tera 2: components, bracket indexing, and filters that bind tighter than ~",
+   "description": "When a template under templates/ is written or changed.",
+   "path": ".ai/repo/knowledge/curated/tera2-templates.md"
+  },
+  {
+   "uri": "majordomus://knowledge/viz-mount-sizing",
+   "kind": "knowledge",
+   "identity": "viz-mount-sizing",
+   "title": "Chart and graph mount points take their size from width and height; grid items need min-w-0",
+   "description": "When a visual (Cytoscape, ECharts, Chart.js, p5) is added or its card layout changes.",
+   "path": ".ai/repo/knowledge/curated/viz-mount-sizing.md"
+  },
+  {
+   "uri": "majordomus://mesh-declaration/mesh",
+   "kind": "mesh-declaration",
+   "identity": "mesh",
+   "title": null,
+   "description": null,
+   "path": ".ai/repo/mesh/mesh.yaml"
+  },
+  {
+   "uri": "majordomus://policy/.ai/repo/policy.yaml",
+   "kind": "policy",
+   "identity": ".ai/repo/policy.yaml",
+   "title": null,
+   "description": null,
+   "path": ".ai/repo/policy.yaml"
+  },
+  {
+   "uri": "majordomus://profile/debugging",
+   "kind": "profile",
+   "identity": "debugging",
+   "title": "debugging",
+   "description": "reproduce, isolate, fix, and prove a defect fixed",
+   "path": ".ai/repo/profiles/debugging.yaml"
+  },
+  {
+   "uri": "majordomus://profile/deep-work",
+   "kind": "profile",
+   "identity": "deep-work",
+   "title": "deep-work",
+   "description": "design, architecture, cross-cutting change, or a problem with no known shape",
+   "path": ".ai/repo/profiles/deep-work.yaml"
+  },
+  {
+   "uri": "majordomus://profile/implementation",
+   "kind": "profile",
+   "identity": "implementation",
+   "title": "implementation",
+   "description": "build a described feature or change within a known design",
+   "path": ".ai/repo/profiles/implementation.yaml"
+  },
+  {
+   "uri": "majordomus://profile/routine",
+   "kind": "profile",
+   "identity": "routine",
+   "title": "routine",
+   "description": "small, well-understood changes; rename, bump, wording, one-line fixes",
+   "path": ".ai/repo/profiles/routine.yaml"
+  },
+  {
+   "uri": "majordomus://prompt/continue",
+   "kind": "prompt",
+   "identity": "continue",
+   "title": "continue",
+   "description": "resume a task from durable state instead of from someone's memory",
+   "path": ".ai/repo/prompts/continue.md"
+  },
+  {
+   "uri": "majordomus://prompt/debug",
+   "kind": "prompt",
+   "identity": "debug",
+   "title": "debug",
+   "description": "frame a defect so that the fix is proven, not asserted",
+   "path": ".ai/repo/prompts/debug.md"
+  },
+  {
+   "uri": "majordomus://prompt/handover",
+   "kind": "prompt",
+   "identity": "handover",
+   "title": "handover",
+   "description": "produce a continuation record body for the current task",
+   "path": ".ai/repo/prompts/handover.md"
+  },
+  {
+   "uri": "majordomus://prompt/review",
+   "kind": "prompt",
+   "identity": "review",
+   "title": "review",
+   "description": "review the working diff against the claimed scope and the finish contract",
+   "path": ".ai/repo/prompts/review.md"
+  },
+  {
+   "uri": "majordomus://rule/fleet.ui-uses-flowbite-pro@1",
+   "kind": "rule",
+   "identity": "fleet.ui-uses-flowbite-pro@1",
+   "title": "Every user interface is built on Flowbite Pro",
+   "description": "Every UI this repository builds or generates uses the owner's licensed Flowbite Pro shell, blocks and components on Tailwind.",
+   "path": ".ai/repo/rules/vendor/fleet/rules/ui-uses-flowbite-pro.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.adr-integrity@1",
+   "kind": "rule",
+   "identity": "majordomus.adr-integrity@1",
+   "title": "Architecture decision integrity",
+   "description": "Every architecture decision the repository holds parses against the decision contract, claims an identity nothing else claims, and every relation and reference it makes resolves.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/adr-integrity.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.ai-layout-integrity@1",
+   "kind": "rule",
+   "identity": "majordomus.ai-layout-integrity@1",
+   "title": "AI layer integrity",
+   "description": "The repository's AI layer is real: the manifest declares a format this executable reads and every section it names exists, the checkout-local half is ignored by git and nothing under it is tracked, and no project data remains under the pre-.ai .majordomus/ path.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/ai-layout-integrity.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.blocker-resolution@1",
+   "kind": "rule",
+   "identity": "majordomus.blocker-resolution@1",
+   "title": "Blocker resolution",
+   "description": "No task can be completed while any question on this branch is unresolved; it can still be finished as blocked, partial, no_match or failed.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/blocker-resolution.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.bootstrap-integrity@1",
+   "kind": "rule",
+   "identity": "majordomus.bootstrap-integrity@1",
+   "title": "Bootstrap integrity",
+   "description": "The path from a human reader to the AI layer is unbroken — README.md names AGENTS.md, every generated instruction file points at .ai/README.md, and none of them carries a rule of its own.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/bootstrap-integrity.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.candidates-reviewed@1",
+   "kind": "rule",
+   "identity": "majordomus.candidates-reviewed@1",
+   "title": "Candidates are reviewed",
+   "description": "A review queue that grows without bound is not reviewed. More candidates than the policy cap, a candidate that has waited longer than the policy age, or a candidate the tree does not track, is reported, not stopped; both numbers are declared once in the policy.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/candidates-reviewed.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.catalogue-integrity@1",
+   "kind": "rule",
+   "identity": "majordomus.catalogue-integrity@1",
+   "title": "Catalogue integrity",
+   "description": "Every use case and application describes the tool in terms the tool has — each command, doctrine and claim it names exists, and the two catalogues reference each other in both directions.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/catalogue-integrity.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.checkpoint-freshness@1",
+   "kind": "rule",
+   "identity": "majordomus.checkpoint-freshness@1",
+   "title": "Checkpoint freshness",
+   "description": "A task whose last checkpoint is older than its profile's interval is reported, not stopped.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/checkpoint-freshness.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.command-coverage@1",
+   "kind": "rule",
+   "identity": "majordomus.command-coverage@1",
+   "title": "Every public command is exercised and refuted",
+   "description": "Every public command has a behavioural test and a negative test, computed from the registry and the coverage each case declares about itself rather than from a list someone maintains.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/command-coverage.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.command-surface@1",
+   "kind": "rule",
+   "identity": "majordomus.command-surface@1",
+   "title": "The command surface is declared and reconciled",
+   "description": "Every command the binary dispatches is described by the shipped registry, every command the registry declares public is dispatched, and a command is public exactly when the usage text lists it.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/command-surface.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.completion-gates@1",
+   "kind": "rule",
+   "identity": "majordomus.completion-gates@1",
+   "title": "Completion is gated",
+   "description": "A task reaches the outcome completed only when no validation gate its own change set selects is known to be failing, and a gate's verdict discharges nothing once the files that select it have changed since the run.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/completion-gates.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.context-budget@1",
+   "kind": "rule",
+   "identity": "majordomus.context-budget@1",
+   "title": "Context budget",
+   "description": "The always-loaded projection stays within its line budget, every reference in it resolves, it states no count that will go stale, and the assembled context fits the builder's own budget.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/context-budget.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.context-integrity@1",
+   "kind": "rule",
+   "identity": "majordomus.context-integrity@1",
+   "title": "Context integrity",
+   "description": "Every directory of the AI layer carries a context document, each one carries the contract, they compose into one deterministic chain for every path, and a tree that does not validate resolves nothing.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/context-integrity.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.dag-integrity@1",
+   "kind": "rule",
+   "identity": "majordomus.dag-integrity@1",
+   "title": "Dependency graph integrity",
+   "description": "The issue dependency graph is acyclic, every edge names an issue that exists, and no issue is executing ahead of a dependency that is not done.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/dag-integrity.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.decision-records@1",
+   "kind": "rule",
+   "identity": "majordomus.decision-records@1",
+   "title": "Decision records",
+   "description": "Every entry in decisions.md carries the task, the head and the reason, so a decision can be found by the worker who needs it.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/decision-records.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.decision-threshold@1",
+   "kind": "rule",
+   "identity": "majordomus.decision-threshold@1",
+   "title": "The decision threshold",
+   "description": "A change that is hard to reverse records the decision behind it as a decision record, and names what it put in force; an ordinary change does not.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/decision-threshold.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.define-done-first@1",
+   "kind": "rule",
+   "identity": "majordomus.define-done-first@1",
+   "title": "Define done before executing",
+   "description": "The finish contract is evaluated line by line, and nothing else counts as done.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/principle-07-define-done-first.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.deployment-contract@2",
+   "kind": "rule",
+   "identity": "majordomus.deployment-contract@2",
+   "title": "A deployment is described once, and every artifact built from it is generated from it",
+   "description": "A deployment of the executable is a canonical object of the layer against a closed contract; the container definition, its ignore file and the files of the provider it names are projections of it, never a second description.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/deployment-contract.v2.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.depth-is-not-verbosity@1",
+   "kind": "rule",
+   "identity": "majordomus.depth-is-not-verbosity@1",
+   "title": "Execution depth is not output verbosity",
+   "description": "Think as hard as the task needs; report as briefly as the profile says.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/principle-06-depth-is-not-verbosity.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.doctrine-wiring-integrity@1",
+   "kind": "rule",
+   "identity": "majordomus.doctrine-wiring-integrity@1",
+   "title": "Doctrine wiring integrity",
+   "description": "Every doctrine in this registry resolves to a validator that exists, is reached from every command it names, propagates failure, is proved by a test, and is run by CI — and every validator in the source is declared here.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/doctrine-wiring-integrity.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.enforcement-wiring@1",
+   "kind": "rule",
+   "identity": "majordomus.enforcement-wiring@1",
+   "title": "Enforcement wiring",
+   "description": "Every enforcement the policy declares is invoked by the hook it names, from a file the dispatcher will actually execute, without swallowing the exit code.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/enforcement-wiring.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.externalise-decisions@1",
+   "kind": "rule",
+   "identity": "majordomus.externalise-decisions@1",
+   "title": "Externalise decisions and durable state",
+   "description": "A decision you make goes into a record, dated, with what was rejected and why; a question for a person goes into the questions store.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/principle-03-externalise-decisions.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.handover-integrity@1",
+   "kind": "rule",
+   "identity": "majordomus.handover-integrity@1",
+   "title": "Handover integrity",
+   "description": "The resolver runs and reports either the record for this worktree and branch or its clean absence; a malformed record is never silently skipped, and a record describing a history this checkout no longer has is reported.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/handover-integrity.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.handovers-carry-state@1",
+   "kind": "rule",
+   "identity": "majordomus.handovers-carry-state@1",
+   "title": "Handovers transfer state, not transcripts",
+   "description": "A handover says what is true now and the one next action; never conversation history.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/principle-10-handovers-carry-state.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.isolated-parallelism@1",
+   "kind": "rule",
+   "identity": "majordomus.isolated-parallelism@1",
+   "title": "Parallel work requires isolation",
+   "description": "Do not start a second task in a checkout that already has one; overlapping claims across worktrees are reported.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/principle-09-isolated-parallelism.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.justified-escalation@1",
+   "kind": "rule",
+   "identity": "majordomus.justified-escalation@1",
+   "title": "Escalate capability and effort only when justified",
+   "description": "The profile sets the default capability and effort; escalation is recorded, never assumed.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/principle-05-justified-escalation.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.knowledge-graph@1",
+   "kind": "rule",
+   "identity": "majordomus.knowledge-graph@1",
+   "title": "Knowledge graph integrity",
+   "description": "The graph the knowledge compiler builds from what the repository states has one node per identity, no edge with a missing end or without provenance, and no declared path or tracked source that no longer exists; a broken owned reference is a failure, a broken link an author wrote in prose is not.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/knowledge-graph.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.knowledge-integrity@1",
+   "kind": "rule",
+   "identity": "majordomus.knowledge-integrity@1",
+   "title": "Knowledge integrity",
+   "description": "Every knowledge record is one evidenced, well-formed assertion. It is valid against its schema with no unknown key, its identity is unique and equals its file name, a verified record carries provenance, every reference it names resolves, a superseded record says what replaced it or why it was rejected, a candidate never claims to be verified, and no record carries a conversation.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/knowledge-integrity.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.knowledge-observed@1",
+   "kind": "rule",
+   "identity": "majordomus.knowledge-observed@1",
+   "title": "Knowledge observation",
+   "description": "While episodes keep closing, the knowledge they produced must keep being derived. A closed episode no derivation followed, once it is older than the freshness threshold, is a stopped writer; a lifecycle whose close path never calls the deriver while the policy switch is on is a writer that was never started.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/knowledge-observed.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.layout-integrity@1",
+   "kind": "rule",
+   "identity": "majordomus.layout-integrity@1",
+   "title": "Layout integrity",
+   "description": "The directories the durable commands write into are installed rather than created on first use.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/layout-integrity.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.ledger-integrity@1",
+   "kind": "rule",
+   "identity": "majordomus.ledger-integrity@1",
+   "title": "Ledger integrity",
+   "description": "Every line of the append-only ledger is a well-formed event; the one durable record nothing else can reconstruct stays readable.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/ledger-integrity.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.lifecycle-observed@1",
+   "kind": "rule",
+   "identity": "majordomus.lifecycle-observed@1",
+   "title": "Lifecycle observation",
+   "description": "A store that can be read is not a store that is being written. While episodes go on opening, the records a future worker resumes from must go on advancing, every lifecycle event received must leave evidence it arrived, and an episode that outlives the staleness threshold must be named rather than left open.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/lifecycle-observed.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.minimum-sufficient-context@1",
+   "kind": "rule",
+   "identity": "majordomus.minimum-sufficient-context@1",
+   "title": "Load minimum sufficient context",
+   "description": "The profile says what to load; discover everything that may apply and load only what does.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/principle-02-minimum-sufficient-context.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.note-integrity@1",
+   "kind": "rule",
+   "identity": "majordomus.note-integrity@1",
+   "title": "Note integrity",
+   "description": "Every outcome needs a note carrying the sections that outcome requires, and no transcript.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/note-integrity.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.obligation-closure@1",
+   "kind": "rule",
+   "identity": "majordomus.obligation-closure@1",
+   "title": "Obligation closure",
+   "description": "A task that declares obligations reaches the outcome completed only when each one is established by the tool or has evidence, and that evidence still describes the tree or the commit it was taken over.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/obligation-closure.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.one-worker-one-scope@1",
+   "kind": "rule",
+   "identity": "majordomus.one-worker-one-scope@1",
+   "title": "One worker, one clear scope",
+   "description": "A task claims the paths it may touch, and touches only those.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/principle-04-one-worker-one-scope.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.policy-completeness@1",
+   "kind": "rule",
+   "identity": "majordomus.policy-completeness@1",
+   "title": "Policy completeness",
+   "description": "Every policy value the code reads is declared in the skeleton policy, and no reader carries its own default for one.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/policy-completeness.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.policy-integrity@1",
+   "kind": "rule",
+   "identity": "majordomus.policy-integrity@1",
+   "title": "Policy integrity",
+   "description": "The policy and every profile parse, declare version 1, and carry no key the schema does not define.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/policy-integrity.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.profile-requirements@1",
+   "kind": "rule",
+   "identity": "majordomus.profile-requirements@1",
+   "title": "Profile requirements",
+   "description": "A profile may demand more than the shared contract — a regression test, a decision record — and finish refuses without it.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/profile-requirements.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.project-integrity@1",
+   "kind": "rule",
+   "identity": "majordomus.project-integrity@1",
+   "title": "Project model integrity",
+   "description": "Every milestone and issue file parses, carries the id its filename claims, and contains no key nobody reads.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/project-integrity.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.projection-integrity@1",
+   "kind": "rule",
+   "identity": "majordomus.projection-integrity@1",
+   "title": "Projection integrity",
+   "description": "Every generated instruction file exists, matches the stamp it carries, and is never silently overwritten after a hand edit.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/projection-integrity.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.prompt-capture@1",
+   "kind": "rule",
+   "identity": "majordomus.prompt-capture@1",
+   "title": "Prompt capture is proven, or reported unavailable",
+   "description": "A repository that declares prompt capture has it wired below the model and proven by running it; the archive stays ignored and untracked, every prompt is present as both a record and a rendering, and neither carries anything the model said.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/prompt-capture.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.prompt-continuity@1",
+   "kind": "rule",
+   "identity": "majordomus.prompt-continuity@1",
+   "title": "A prompt record carries its own identity, is bounded, and is private",
+   "description": "Every captured prompt names the episode it belongs to or says why it cannot; the archive is readable by its owner alone, bounded by a declared retention policy, and never holds credential material verbatim.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/prompt-continuity.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.prompt-integrity@1",
+   "kind": "rule",
+   "identity": "majordomus.prompt-integrity@1",
+   "title": "Prompt integrity",
+   "description": "Every repository-local prompt asset renders, and every token in it is one the renderer knows.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/prompt-integrity.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.publication-currency@1",
+   "kind": "rule",
+   "identity": "majordomus.publication-currency@1",
+   "title": "A session does not finish behind its own published site",
+   "description": "A repository that publishes has a second tree — the one the public is being served — and no commit-level gate can measure it, because no change to any file can make it right or wrong. A session that lands work and leaves the publication owed has finished nothing the public can see, and every check stays green while that is true. The gates that measure a deployment are declared as such in the CI model, and finish asks them.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/publication-currency.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.questions-store-integrity@1",
+   "kind": "rule",
+   "identity": "majordomus.questions-store-integrity@1",
+   "title": "Questions store integrity",
+   "description": "Every entry in open-questions.md parses, because a gate that cannot read an entry can be bypassed by mistyping one.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/questions-store-integrity.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.record-changed-files@1",
+   "kind": "rule",
+   "identity": "majordomus.record-changed-files@1",
+   "title": "A record's changed_files names the work, not the tool's exhaust",
+   "description": "The changed_files block of a checkpoint, a handover or a closed session names what the episode produced. Paths a declaration already calls generated, projected or local are classified out, and the classification reads those declarations rather than a list of its own.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/record-changed-files.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.retention-caps@1",
+   "kind": "rule",
+   "identity": "majordomus.retention-caps@1",
+   "title": "Retention caps",
+   "description": "The ledger, the handovers, the checkpoints and the session records stay under the caps the policy sets, so durable state does not grow without bound.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/retention-caps.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.roadmap-integrity@1",
+   "kind": "rule",
+   "identity": "majordomus.roadmap-integrity@1",
+   "title": "The roadmap is a projection, never a document",
+   "description": "No document is a second authority for the roadmap, and no milestone types its own version. While a hand-written roadmap table exists, it can neither list a release no milestone was released in nor hide one that carried a milestone; a milestone's release (released_in) is inferred from the release records, never typed.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/roadmap-integrity.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.rule-package-integrity@1",
+   "kind": "rule",
+   "identity": "majordomus.rule-package-integrity@1",
+   "title": "Rule package integrity",
+   "description": "The repository's effective rule set is real: the vendored baseline matches its manifest file for file, every rule resolves with its dependencies and no two claim one identity, and no project rule reuses the vendored namespace.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/rule-package-integrity.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.schema-integrity@1",
+   "kind": "rule",
+   "identity": "majordomus.schema-integrity@1",
+   "title": "Every object has a schema, and the rules resolve in one stated order",
+   "description": "The order the rules apply in is written down rather than left in the code; every kind the tool reads declares a schema, every schema is named by a kind, and every path under the repository's AI layer is claimed by a source so that nothing is carried through unvalidated.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/schema-integrity.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.scope-integrity@1",
+   "kind": "rule",
+   "identity": "majordomus.scope-integrity@1",
+   "title": "Scope integrity",
+   "description": "A task touches only the paths it claimed; work found elsewhere is not accepted as done.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/scope-integrity.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.session-lifecycle@1",
+   "kind": "rule",
+   "identity": "majordomus.session-lifecycle@1",
+   "title": "The episode boundary is drawn below the model, and its working context is local",
+   "description": "Where a provider fires session events, the episode is opened and closed by that provider's hook rather than by the model, the start event hands the worker the bounded briefing the policy declares, and the working context each open freezes stays under the ignored half of the layer, carries the declared keys, and never carries a conversation.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/session-lifecycle.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.session-records@1",
+   "kind": "rule",
+   "identity": "majordomus.session-records@1",
+   "title": "Session records are shared objects with a closed field set",
+   "description": "A closed execution episode is written once, into the layer's sessions section, against a schema that admits what the repository can prove and nothing else.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/session-records.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.sessions-are-workers@1",
+   "kind": "rule",
+   "identity": "majordomus.sessions-are-workers@1",
+   "title": "Sessions are workers, not memory",
+   "description": "Durable state lives in records the repository keeps, never in a conversation.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/principle-01-sessions-are-workers.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.skill-integrity@1",
+   "kind": "rule",
+   "identity": "majordomus.skill-integrity@1",
+   "title": "Skill integrity",
+   "description": "Every skill the repository declares parses against the skill contract, names the directory it lives in, carries its sections, describes itself in terms no other skill uses, and every skill or example it refers to exists.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/skill-integrity.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.state-consistency@1",
+   "kind": "rule",
+   "identity": "majordomus.state-consistency@1",
+   "title": "State consistency",
+   "description": "The task record still describes this checkout — same branch, and HEAD at or ahead of the recorded commit.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/state-consistency.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.task-continuity@1",
+   "kind": "rule",
+   "identity": "majordomus.task-continuity@1",
+   "title": "Task continuity",
+   "description": "A task finished as partial or blocked should leave a handover record, not only a note section.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/task-continuity.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.task-on-the-mesh@1",
+   "kind": "rule",
+   "identity": "majordomus.task-on-the-mesh@1",
+   "title": "A task on a repository whose mesh is enabled works on the mesh",
+   "description": "When the repository declares its mesh enabled, an active task's scope is claimed on the mesh — `start` brings the checkout's shared server up and claims it, `check` and `finish` claim it again when a server answers — and a task completed without that claim is refused.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/task-on-the-mesh.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.use-case-coverage@1",
+   "kind": "rule",
+   "identity": "majordomus.use-case-coverage@1",
+   "title": "Use-case coverage",
+   "description": "Every public command, and every guaranteed claim and MCP tool the policy asks for, is named and run by at least one active use case whose scenario executes against the real tool; a gap is a failure or a report according to the policy, never silence.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/use-case-coverage.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.verification-integrity@1",
+   "kind": "rule",
+   "identity": "majordomus.verification-integrity@1",
+   "title": "Verification integrity",
+   "description": "Completion requires a verification command that actually ran and exited 0 over a tree that did not change under it; its exit code, duration and tree are recorded.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/verification-integrity.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/majordomus.verify-outcomes@1",
+   "kind": "rule",
+   "identity": "majordomus.verify-outcomes@1",
+   "title": "Verify outcomes, not activity",
+   "description": "A test that ran and passed is evidence; a sentence saying it did is not.",
+   "path": ".ai/repo/rules/vendor/majordomus/rules/principle-08-verify-outcomes.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/project.data-measured@1",
+   "kind": "rule",
+   "identity": "project.data-measured@1",
+   "title": "Every number on the site is measured, dated and derived",
+   "description": "Figures come from data/github.json written by scripts/fetch-github.mjs and are shown with their date; the curated catalogue is data/projects.toml; llms.txt is derived and checked.",
+   "path": ".ai/repo/rules/project/data-measured.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/project.everything-interlinked@1",
+   "kind": "rule",
+   "identity": "project.everything-interlinked@1",
+   "title": "Everything links to everything it names, through derived links that are proven",
+   "description": "Every mark a visual draws, every term, language, technology, project, category and repository a page names leads to its page on this site (and to its source where there is none), in the page's language; links come from one derived index, never from addresses built by hand, and every link is resolved at build time and in the browser audit.",
+   "path": ".ai/repo/rules/project/everything-interlinked.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/project.front-matter-contract@1",
+   "kind": "rule",
+   "identity": "project.front-matter-contract@1",
+   "title": "Pages are front matter plus data; nothing is maintained by hand",
+   "description": "Every page is described by front matter that matches static/schemas/front-matter.schema.json, everything else is derived from data that the scheduled refresh re-measures, and the whole site is published as data (site.json, llms.txt).",
+   "path": ".ai/repo/rules/project/front-matter-contract.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/project.i18n-everywhere@1",
+   "kind": "rule",
+   "identity": "project.i18n-everywhere@1",
+   "title": "Every text exists in every language, through Zola's multilingual features",
+   "description": "Interface texts live in i18n/*.toml, grouped by feature, and reach templates through trans(); curated data carries a _cs twin for every text field; every page exists as x.md and x.cs.md; tags are Zola taxonomies; a gate fails on anything untranslated.",
+   "path": ".ai/repo/rules/project/i18n-everywhere.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/project.nda-never-named@1",
+   "kind": "rule",
+   "identity": "project.nda-never-named@1",
+   "title": "No client, person or private source is ever named in this public repository",
+   "description": "Work done under a non-disclosure agreement reaches the site only as anonymised, mined facts; no client or person name, private repository, path or copied text appears in any tracked file, built page or commit message, and the gate that checks it reads its list from outside the repository.",
+   "path": ".ai/repo/rules/project/nda-never-named.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/project.pages-are-articles@1",
+   "kind": "rule",
+   "identity": "project.pages-are-articles@1",
+   "title": "Every page is also an educational, linked article, described in front matter",
+   "description": "Every content page carries a Markdown article body and names the glossary terms it builds on (extra.terms); the glossary (data/glossary.toml) defines each term in both languages with a source; term pages and back-links are derived; a gate refuses a page without an article or terms, an unknown term, an unused term or an unchecked link.",
+   "path": ".ai/repo/rules/project/pages-are-articles.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/project.seo-derived@1",
+   "kind": "rule",
+   "identity": "project.seo-derived@1",
+   "title": "Search and social metadata are derived from front matter and data",
+   "description": "Titles, descriptions, canonical URLs, Open Graph and Twitter tags, OG images and JSON-LD come from each page's front matter and data/, through templates/partials/seo.html and scripts/build-og.mjs, and are gated on the built site.",
+   "path": ".ai/repo/rules/project/seo-derived.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/project.site-zola-pages@1",
+   "kind": "rule",
+   "identity": "project.site-zola-pages@1",
+   "title": "The site is Zola, self-hosted, and deployed only by the Pages workflow",
+   "description": "Zola 0.23 (Tera 2) builds the site from templates and data; every asset is self-hosted; master deploys through pages.yml after CI, and production is verified to serve the commit.",
+   "path": ".ai/repo/rules/project/site-zola-pages.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/project.ui-quality-gate@1",
+   "kind": "rule",
+   "identity": "project.ui-quality-gate@1",
+   "title": "A UI change passes the browser gate before it lands",
+   "description": "Every page, at phone and desktop width in both themes, has no WCAG 2.2 AA violation, no console or network error, no horizontal overflow, CLS at most 0.1, every visual mounted, and every internal link resolving.",
+   "path": ".ai/repo/rules/project/ui-quality-gate.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/project.ui-uses-flowbite-pro@1",
+   "kind": "rule",
+   "identity": "project.ui-uses-flowbite-pro@1",
+   "title": "Every page is built on Flowbite Pro",
+   "description": "The site is the owner's licensed Flowbite Pro application shell and blocks on Tailwind 4 and the flowbite 4 plugin; no other kit, no Pro source file committed.",
+   "path": ".ai/repo/rules/project/ui-uses-flowbite-pro.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/project.viz-component-layer@1",
+   "kind": "rule",
+   "identity": "project.viz-component-layer@1",
+   "title": "Every visual goes through one component layer",
+   "description": "p5.js, D3 and Apache ECharts are constructed only in static/js/viz/<name>.js, registered with KorczisHub.viz, lazy-loaded, themed from the CSS tokens and given a text alternative.",
+   "path": ".ai/repo/rules/project/viz-component-layer.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/project.viz-ergonomics@1",
+   "kind": "rule",
+   "identity": "project.viz-ergonomics@1",
+   "title": "Every visual is a maximizable simulator on the best library",
+   "description": "Every visual that is not declared static can be maximized to the viewport, deep-linked, restored with Escape, and is a model the visitor drives through declared parameters whose state lives in the address; charts and graphs are Apache ECharts through the layer, D3 is for bespoke layouts and physics, p5 for generative art.",
+   "path": ".ai/repo/rules/project/viz-ergonomics.v1.md"
+  },
+  {
+   "uri": "majordomus://scope/.ai/repo/scope.yaml",
+   "kind": "scope",
+   "identity": ".ai/repo/scope.yaml",
+   "title": null,
+   "description": null,
+   "path": ".ai/repo/scope.yaml"
+  },
+  {
+   "uri": "majordomus://skill/fleet-flowbite-pro",
+   "kind": "skill",
+   "identity": "fleet-flowbite-pro",
+   "title": "Build UI on Flowbite Pro",
+   "description": "Build or change any user interface on the owner's licensed Flowbite Pro shell, blocks and components, and verify it before claiming compliance.",
+   "path": ".ai/repo/skills/fleet-flowbite-pro/SKILL.md"
+  },
+  {
+   "uri": "majordomus://taxonomy/adoption",
+   "kind": "taxonomy",
+   "identity": "adoption",
+   "title": "Getting started and adoption",
+   "description": "Bringing the tool into a repository, new or old, without losing what people already wrote.",
+   "path": ".ai/repo/use-cases/taxonomy.yaml"
+  },
+  {
+   "uri": "majordomus://taxonomy/completion",
+   "kind": "taxonomy",
+   "identity": "completion",
+   "title": "Completion and quality gates",
+   "description": "Deciding whether work is finished, with a contract every line of which passes or fails.",
+   "path": ".ai/repo/use-cases/taxonomy.yaml"
+  },
+  {
+   "uri": "majordomus://taxonomy/continuity",
+   "kind": "taxonomy",
+   "identity": "continuity",
+   "title": "Sessions and handover",
+   "description": "Stopping and resuming work across sessions and workers from durable state.",
+   "path": ".ai/repo/use-cases/taxonomy.yaml"
+  },
+  {
+   "uri": "majordomus://taxonomy/drift",
+   "kind": "taxonomy",
+   "identity": "drift",
+   "title": "Drift and reconciliation",
+   "description": "Detecting that policy, projections, state and git disagree, and putting them back in step.",
+   "path": ".ai/repo/use-cases/taxonomy.yaml"
+  },
+  {
+   "uri": "majordomus://taxonomy/extension",
+   "kind": "taxonomy",
+   "identity": "extension",
+   "title": "Extension",
+   "description": "Adding a rule, a command or a use case as data, with the checks that follow from it.",
+   "path": ".ai/repo/use-cases/taxonomy.yaml"
+  },
+  {
+   "uri": "majordomus://taxonomy/knowledge",
+   "kind": "taxonomy",
+   "identity": "knowledge",
+   "title": "Repository knowledge",
+   "description": "What the repository declares about itself, and the plan, searched and validated.",
+   "path": ".ai/repo/use-cases/taxonomy.yaml"
+  },
+  {
+   "uri": "majordomus://taxonomy/policy",
+   "kind": "taxonomy",
+   "identity": "policy",
+   "title": "Policy and enforcement",
+   "description": "Declaring rules, proving they are wired, reproducing a finding.",
+   "path": ".ai/repo/use-cases/taxonomy.yaml"
+  },
+  {
+   "uri": "majordomus://taxonomy/workers",
+   "kind": "taxonomy",
+   "identity": "workers",
+   "title": "Parallel workers",
+   "description": "Several agents or people on one repository: claimed scopes, overlap, who touched what.",
+   "path": ".ai/repo/use-cases/taxonomy.yaml"
+  }
+ ]
+}
