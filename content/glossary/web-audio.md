@@ -3,7 +3,7 @@
 title = "Web Audio"
 description = "The browser API for generating, processing and analysing sound in real time."
 template = "term.html"
-weight = 32
+weight = 33
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

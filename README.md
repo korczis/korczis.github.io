@@ -56,6 +56,8 @@ Prerequisites (generated from the files that pin them):
 | `static/js/viz/` | One visual per file, registered with `KorczisHub.viz`: a simulator with `items()` and `controls()`, or `static: '<reason>'` (`scripts/check-viz-layer.mjs`) |
 | `static/js/components/` | Alpine.js components: catalogue filter, project detail drawer, command palette (⌘K), live Majordomus card |
 | `static/llms.txt` | Derived from the catalogue (`npm run llms`) |
+| `static/ai.json` | The Majordomus layer (`.ai/`) as Majordomus indexes it: every object with its MCP resource URI, and the capability counts; measured with `npm run interfaces -- --measure`, stamped with the tracked `.ai/` tree |
+| `static/openapi.json` | OpenAPI 3.1 of every machine-readable file the site publishes, each summary read from the file (`npm run interfaces`) |
 | `scripts/` | Data, vendoring and every gate; `gates.mjs` is the one list of gates, `lib/cli.mjs` the shared command line, `lib/forge.mjs` the one connection to GitHub and GitLab |
 | `.ai/` | The Majordomus layer: policy, ADRs, rules under `.ai/repo/rules/project/` |
 
@@ -129,6 +131,11 @@ Pages are front matter over data. Nothing on them is typed, so nothing needs upd
   picks one page per template and language from the sitemap by itself. Titles, Open Graph and Twitter tags and JSON-LD are derived
   from that front matter.
 
+- **Change anything under `.ai/`.** Run `npm run interfaces -- --measure` (it needs `majordomus`), then
+  `npm run derive`: `static/ai.json` is stamped with the tracked `.ai/` tree, and the `interfaces` gate
+  refuses a change to `.ai/` that was not indexed again. /interfaces/ and the topbar's interfaces menu
+  (tiles from `data/nav.toml [[interfaces]]`) read it, with `static/openapi.json`.
+
 - **Add a gate.** Add one entry to `GATES` in `scripts/gates.mjs` and run
   `node scripts/gates.mjs readme`; check, verify, CI and the refresh run it from there.
 
@@ -163,6 +170,7 @@ from it:
 | llms.txt is current | `node scripts/build-llms.mjs --check` | check, verify, CI | `project.data-measured` |
 | Open Graph images are current | `node scripts/build-og.mjs --check` | check, verify, CI | `project.seo-derived` |
 | site.json is current | `node scripts/build-site-json.mjs --check` | check, verify, CI | `project.front-matter-contract` |
+| ai.json follows .ai/ and openapi.json the published files | `node scripts/build-interfaces.mjs --check` | check, verify, CI | `project.data-measured` |
 | Every visual goes through the component layer and is a maximizable simulator | `node scripts/check-viz-layer.mjs` | check, verify, CI | `project.viz-component-layer` |
 | Build (internal links are errors) | `npm run --silent build` | check, verify, CI | `project.site-zola-pages` |
 | SEO derived from front matter (titles, descriptions, OG, JSON-LD, sitemap) | `node scripts/check-seo.mjs` | check, verify, CI | `project.seo-derived` |

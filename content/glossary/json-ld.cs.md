@@ -3,7 +3,7 @@
 title = "JSON-LD"
 description = "Propojená data ve formátu JSON vložená do stránky, která vyhledávačům a strojům říkají, o čem stránka je (schema.org)."
 template = "term.html"
-weight = 48
+weight = 49
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]
@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Propojená data ve formátu JSON vložená do stránky, která vyhledávačům a strojům říkají, o čem stránka je (schema.org)."
 aliases = []
 reference = { title = "json-ld.org", url = "https://json-ld.org/" }
-pages = ["_index.cs.md"]
-related = ["commit", "d3", "data-visualisation", "flowbite-pro", "fork", "front-matter", "mirror", "open-graph"]
+pages = ["_index.cs.md", "interfaces.cs.md"]
+related = ["ai-agent", "commit", "d3", "data-visualisation", "flowbite-pro", "fork", "front-matter", "github-pages"]
 og_title = "JSON-LD: slovník"
 og_image = "og/cs-glossary-json-ld.png"
 keywords = ["JSON-LD", "Koncept", "Slovník", "Tomáš Korčák"]

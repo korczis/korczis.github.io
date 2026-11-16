@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+
+{% block content %}
+{%- set lp = "" %}{% if lang is defined and lang != config.default_language %}{% set lp = "/" ~ lang %}{% endif -%}
+{%- set sfx = "" %}{% if lang is defined and lang != config.default_language %}{% set sfx = "_" ~ lang %}{% endif -%}
+{#- Everything below is derived: static/ai.json (the Majordomus index of .ai/) and
+    static/openapi.json (the published files), both written by scripts/build-interfaces.mjs. #}
+{%- set ai = load_data(path="static/ai.json") -%}
+{%- set oa = load_data(path="static/openapi.json") -%}
+{%- set site = load_data(path="data/site.toml") -%}
+{%- set sec = site.interfaces.sections -%}
+{%- set swagger = config.extra.swagger_ui ~ config.base_url ~ "/openapi.json" -%}
+{%- set th = "px-4 py-3" -%}
+{%- set td = "px-4 py-3 align-top" -%}
+{%- set code = "rounded bg-gray-100 px-1.5 py-0.5 font-mono text-xs text-gray-800 dark:bg-gray-700 dark:text-gray-200" -%}
+{{ <page_header title={page.title} lead={page.description} lang={lang} /> }}
+
+<div class="grid grid-cols-2 gap-4 px-4 pt-6 xl:grid-cols-4">
+  <a href="#ai" class="block rounded-lg focus:outline-none focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-800">{{ <kpi value={ai.counts.objects ~ ""} label={trans(key="kpi_ai_objects", lang=lang)} note={trans(key="kpi_ai_objects_note", lang=lang) | replace(from="{n}", to=ai.counts.kinds | length ~ "")} /> }}</a>
+  <a href="#ai-rule" class="block rounded-lg focus:outline-none focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-800">{{ <kpi value={ai.counts.kinds.rule ~ ""} label={trans(key="kpi_ai_rules", lang=lang)} note={trans(key="kpi_ai_rules_note", lang=lang)} /> }}</a>
+  <a href="#mcp" class="block rounded-lg focus:outline-none focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-800">{{ <kpi value={ai.counts.mcp_tools ~ ""} label={trans(key="kpi_mcp_tools", lang=lang)} note={trans(key="kpi_mcp_tools_note", lang=lang) | replace(from="{n}", to=ai.counts.mcp_resources ~ "") | replace(from="{v}", to=ai.majordomus)} /> }}</a>
+  <a href="#api" class="block rounded-lg focus:outline-none focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-800">{{ <kpi value={oa.paths | length ~ ""} label={trans(key="kpi_published_files", lang=lang)} note={"OpenAPI " ~ oa.openapi} /> }}</a>
+</div>
+
+<div class="space-y-4 px-4 pb-2 pt-6">
+  {#- The layer: Flowbite Pro card with one advanced table per kind, each a native disclosure. #}
+  {% <card labelledby="ai-title" attrs='id="ai"'> %}
+    {{ <card_head eyebrow={sec.ai["eyebrow" ~ sfx]} title={sec.ai["title" ~ sfx]} id="ai-title" lead={sec.ai["lead" ~ sfx]} action={trans(key="open_ai_json", lang=lang)} href={get_url(path="ai.json")} icon="external" /> }}
+    <div class="divide-y divide-gray-200 overflow-hidden rounded-lg border border-gray-200 dark:divide-gray-700 dark:border-gray-700">
+      {%- for kind, n in ai.counts.kinds %}
+      <details id="ai-{{ kind }}" class="group scroll-mt-24"{% if kind == "rule" %} open{% endif %}>
+        <summary class="flex cursor-pointer items-center justify-between gap-3 bg-gray-50 px-4 py-3 font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-700">
+          <span class="flex items-center gap-2"><code class="font-mono text-sm">{{ kind }}</code>{{ <badge label={n ~ ""} tone="primary" /> }}</span>
+          {{ <icon name="chevron-up-down" class="h-4 w-4 shrink-0" /> }}
+        </summary>
+        <div class="relative overflow-x-auto" tabindex="0" role="region" aria-label="{{ kind }}">
+          <table class="w-full text-left text-sm text-gray-600 dark:text-gray-400">
+            <thead class="bg-white text-xs uppercase text-gray-700 dark:bg-gray-800 dark:text-gray-300">
+              <tr><th scope="col" class="{{ th }}">{{ trans(key="col_object", lang=lang) | safe }}</th><th scope="col" class="{{ th }}">{{ trans(key="col_mcp_uri", lang=lang) | safe }}</th><th scope="col" class="{{ th }}">{{ trans(key="source", lang=lang) | safe }}</th></tr>
+            </thead>
+            <tbody>
+              {%- for o in ai.objects %}{% if o.kind == kind %}
+              <tr class="border-t border-gray-200 dark:border-gray-700">
+                <th scope="row" class="{{ td }} font-medium text-gray-900 dark:text-white">
+                  {% if o.title %}{{ o.title }}{% else %}<code class="font-mono text-xs">{{ o.identity }}</code>{% endif %}
+                  {%- if o.description and o.description != o.title %}<p class="mt-1 max-w-2xl text-xs font-normal text-gray-600 dark:text-gray-400">{{ o.description }}</p>{% endif %}
+                </th>
+                <td class="{{ td }}"><code class="{{ code }} break-all">{{ o.uri }}</code></td>
+                <td class="{{ td }} whitespace-nowrap"><a href="{{ config.extra.repo_url }}/blob/master/{{ o.path }}" class="font-medium text-primary-700 hover:underline dark:text-primary-400">{{ o.path | split(pat="/") | last }}</a></td>
+              </tr>
+              {%- endif %}{% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </details>
+      {%- endfor %}
+    </div>
+    <p class="mt-4 text-xs text-gray-600 dark:text-gray-400">{{ trans(key="ai_measured_with", lang=lang) | replace(from="{v}", to=ai.majordomus) | safe }} <code class="{{ code }}">{{ ai.source }}</code>.</p>
+  {% </card> %}
+
+  {#- MCP: Flowbite Pro timeline (activity list) of the steps, each with its command. #}
+    {% <card labelledby="mcp-title" attrs='id="mcp"'> %}
+      {{ <card_head eyebrow={sec.mcp["eyebrow" ~ sfx]} title={sec.mcp["title" ~ sfx]} id="mcp-title" lead={sec.mcp["lead" ~ sfx]} action={trans(key="majordomus_docs", lang=lang)} href={config.extra.majordomus_url} icon="external" /> }}
+      {%- set commands = [config.extra.majordomus_install, "git clone " ~ config.extra.repo_url ~ ".git && cd " ~ config.extra.repo_url | split(pat="/") | last, "claude mcp add majordomus -- majordomus mcp", "majordomus serve ensure"] %}
+      <ol class="relative ms-3 grid gap-x-12 border-s border-gray-200 dark:border-gray-700">
+        {%- for step in site.interfaces.mcp_steps %}
+        <li class="mb-8 ms-6 last:mb-0">
+          <span class="absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full bg-primary-100 text-xs font-semibold text-primary-800 ring-8 ring-white dark:bg-primary-900 dark:text-primary-300 dark:ring-gray-800">{{ loop.index }}</span>
+          <h3 class="mb-1 text-base font-semibold text-gray-900 dark:text-white">{{ step["title" ~ sfx] }}</h3>
+          <p class="mb-2 text-sm text-gray-600 dark:text-gray-400">{{ step["text" ~ sfx] }}</p>
+          <code class="block break-all rounded-lg bg-gray-100 px-3 py-2 font-mono text-xs text-gray-800 dark:bg-gray-700 dark:text-gray-200">{{ commands[loop.index0] }}</code>
+        </li>
+        {%- endfor %}
+      </ol>
+    {% </card> %}
+
+    {#- API: Flowbite Pro table of every published file, each row its OpenAPI operation. #}
+    {% <card labelledby="api-title" attrs='id="api"'> %}
+      {{ <card_head eyebrow={sec.api["eyebrow" ~ sfx]} title={sec.api["title" ~ sfx]} id="api-title" lead={sec.api["lead" ~ sfx]} /> }}
+      <div class="mb-4 flex flex-wrap gap-3">
+        {{ <button label={trans(key="iface_swagger", lang=lang)} href={swagger} icon="external" size="sm" /> }}
+        {{ <button label="openapi.json" href={get_url(path="openapi.json")} variant="secondary" icon="code" size="sm" /> }}
+      </div>
+      <div class="relative overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-700" tabindex="0" role="region" aria-label="{{ trans(key="kpi_published_files", lang=lang) }}">
+        <table class="w-full text-left text-sm text-gray-600 dark:text-gray-400">
+          <thead class="bg-gray-50 text-xs uppercase text-gray-700 dark:bg-gray-700 dark:text-gray-300">
+            <tr><th scope="col" class="{{ th }}">{{ trans(key="col_path", lang=lang) | safe }}</th><th scope="col" class="{{ th }}">{{ trans(key="col_summary", lang=lang) | safe }}</th></tr>
+          </thead>
+          <tbody>
+            {%- for path, ops in oa.paths %}{% for method, op in ops %}
+            <tr class="border-t border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-800">
+              <th scope="row" class="{{ td }} whitespace-nowrap font-medium text-gray-900 dark:text-white">
+                <span class="me-2 rounded bg-green-100 px-1.5 py-0.5 font-mono text-xs font-semibold text-green-800 dark:bg-green-900 dark:text-green-300">{{ method | upper }}</span><a href="{{ config.base_url }}{{ path }}" class="font-mono hover:underline">{{ path }}</a>
+              </th>
+              <td class="{{ td }}">{{ op.summary }}{% for t in op.tags %} {{ <badge label={t} /> }}{% endfor %}</td>
+            </tr>
+            {%- endfor %}{% endfor %}
+          </tbody>
+        </table>
+      </div>
+    {% </card> %}
+</div>
+{% endblock content %}

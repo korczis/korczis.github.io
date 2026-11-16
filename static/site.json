@@ -95,7 +95,7 @@
    "url": "https://korczis.github.io/cs/glossary/",
    "lang": "cs",
    "title": "Slovník · Tomas Korcak",
-   "description": "61 pojmů, kterými se web vysvětluje: jazyky, technologie a koncepty, každý definovaný, se zdrojem a s odkazem na stránky, které ho používají.",
+   "description": "62 pojmů, kterými se web vysvětluje: jazyky, technologie a koncepty, každý definovaný, se zdrojem a s odkazem na stránky, které ho používají.",
    "type": "glossary",
    "category": null,
    "og_image": "https://korczis.github.io/og/cs-glossary.png",
@@ -740,6 +740,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/openapi/",
+   "lang": "cs",
+   "title": "OpenAPI (technologie)",
+   "description": "Standardní, na jazyce nezávislý popis HTTP rozhraní: jeho cest, operací a dat, čitelný pro lidi i nástroje jako Swagger UI.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-openapi.png",
+   "keywords": [
+    "OpenAPI",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/orchestration/",
    "lang": "cs",
    "title": "Orchestrace (koncept)",
@@ -1043,6 +1058,23 @@
     "Technologie",
     "Slovník",
     "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/interfaces/",
+   "lang": "cs",
+   "title": "Rozhraní · Tomas Korcak",
+   "description": "Web pro stroje: jeho vrstva Majordomu s URI zdrojů MCP, jak připojit agenta přes MCP a každý publikovaný soubor popsaný v OpenAPI.",
+   "type": "about",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-interfaces.png",
+   "keywords": [
+    "MCP",
+    "OpenAPI",
+    "Swagger",
+    "Majordomus",
+    ".ai",
+    "llms.txt"
    ]
   },
   {
@@ -2031,7 +2063,7 @@
    "url": "https://korczis.github.io/glossary/",
    "lang": "en",
    "title": "Glossary · Tomas Korcak",
-   "description": "The 61 terms this site explains itself with: languages, technologies and concepts, each defined, sourced and linked to every page that uses it.",
+   "description": "The 62 terms this site explains itself with: languages, technologies and concepts, each defined, sourced and linked to every page that uses it.",
    "type": "glossary",
    "category": null,
    "og_image": "https://korczis.github.io/og/glossary.png",
@@ -2666,6 +2698,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/openapi/",
+   "lang": "en",
+   "title": "OpenAPI (technology)",
+   "description": "A standard, language-neutral description of an HTTP interface: its paths, operations and data, readable by people and tools such as Swagger UI.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-openapi.png",
+   "keywords": [
+    "OpenAPI",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/orchestration/",
    "lang": "en",
    "title": "Orchestration (concept)",
@@ -2963,6 +3010,23 @@
     "Technology",
     "Glossary",
     "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/interfaces/",
+   "lang": "en",
+   "title": "Interfaces · Tomas Korcak",
+   "description": "The site for machines: its Majordomus layer with MCP resource URIs, how to connect an agent over MCP, and every published file described in OpenAPI.",
+   "type": "about",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/interfaces.png",
+   "keywords": [
+    "MCP",
+    "OpenAPI",
+    "Swagger",
+    "Majordomus",
+    ".ai",
+    "llms.txt"
    ]
   },
   {

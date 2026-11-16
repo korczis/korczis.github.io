@@ -1,0 +1,197 @@
+{
+ "openapi": "3.1.0",
+ "info": {
+  "title": "Tomas Korcak · korczis.github.io",
+  "description": "Every machine-readable file this static site publishes. Read-only; no authentication.",
+  "version": "1"
+ },
+ "servers": [
+  {
+   "url": "https://korczis.github.io"
+  }
+ ],
+ "tags": [
+  {
+   "name": "data",
+   "description": "The site as data: pages, projects, repositories, the Majordomus layer"
+  },
+  {
+   "name": "text",
+   "description": "Plain text for language models (llms.txt)"
+  },
+  {
+   "name": "schemas",
+   "description": "JSON Schemas the site validates its own data against"
+  }
+ ],
+ "paths": {
+  "/ai.json": {
+   "get": {
+    "operationId": "ai_json",
+    "summary": "The Majordomus layer of korczis/korczis.github.io: every object of .ai/ with its MCP resource URI",
+    "tags": [
+     "data"
+    ],
+    "responses": {
+     "200": {
+      "description": "The file, as published",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/llms-full.txt": {
+   "get": {
+    "operationId": "llms_full_txt",
+    "summary": "Tomas Korcak: Software for evidence: AI agents that prove their work, honest instruments in the browser, knowledge you can check.",
+    "tags": [
+     "text"
+    ],
+    "responses": {
+     "200": {
+      "description": "The file, as published",
+      "content": {
+       "text/plain": {
+        "schema": {
+         "type": "string"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/llms.txt": {
+   "get": {
+    "operationId": "llms_txt",
+    "summary": "Tomas Korcak: Software for evidence: AI agents that prove their work, honest instruments in the browser, knowledge you can check.",
+    "tags": [
+     "text"
+    ],
+    "responses": {
+     "200": {
+      "description": "The file, as published",
+      "content": {
+       "text/plain": {
+        "schema": {
+         "type": "string"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/schemas/cv.schema.json": {
+   "get": {
+    "operationId": "schemas_cv_schema_json",
+    "summary": "Work history, education and spoken languages: facts no repository holds, written by the owner (ADR 0004).",
+    "tags": [
+     "schemas"
+    ],
+    "responses": {
+     "200": {
+      "description": "The file, as published",
+      "content": {
+       "application/schema+json": {
+        "schema": {
+         "type": "string"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/schemas/experience.schema.json": {
+   "get": {
+    "operationId": "schemas_experience_schema_json",
+    "summary": "data/experience.json, written by scripts/mine-experience.mjs and checked by scripts/check-experience.mjs. Every engagement is under a legal NDA: it holds a neutral id, keys of the public vocabulary in data/experience-rules.toml, dates, rounded numbers and public technology names, nothing else. No name, path or free text.",
+    "tags": [
+     "schemas"
+    ],
+    "responses": {
+     "200": {
+      "description": "The file, as published",
+      "content": {
+       "application/schema+json": {
+        "schema": {
+         "type": "string"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/schemas/front-matter.schema.json": {
+   "get": {
+    "operationId": "schemas_front_matter_schema_json",
+    "summary": "Every content/*.md carries this front matter (TOML). It drives the page's title, SEO, Open Graph and Twitter tags, OG image, JSON-LD and its place in the site; nothing about a page is typed in a template. Validated by scripts/check-front-matter.mjs.",
+    "tags": [
+     "schemas"
+    ],
+    "responses": {
+     "200": {
+      "description": "The file, as published",
+      "content": {
+       "application/schema+json": {
+        "schema": {
+         "type": "string"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/site.json": {
+   "get": {
+    "operationId": "site_json",
+    "summary": "Software for evidence: AI agents that prove their work, honest instruments in the browser, knowledge you can check.",
+    "tags": [
+     "data"
+    ],
+    "responses": {
+     "200": {
+      "description": "The file, as published",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/sitemap.xml": {
+   "get": {
+    "operationId": "sitemap_xml",
+    "summary": "Every page of the site, in both languages (sitemaps.org)",
+    "tags": [
+     "data"
+    ],
+    "responses": {
+     "200": {
+      "description": "The file, as published",
+      "content": {
+       "application/xml": {
+        "schema": {
+         "type": "string"
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

@@ -37,6 +37,30 @@
         <button type="button" data-js onclick="document.dispatchEvent(new Event('palette:open'))" class="rounded-lg p-2.5 text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-700 lg:hidden">
           <span class="sr-only">{{ trans(key="search", lang=lang) | safe }}</span>{{ <icon name="search" class="h-5 w-5" /> }}
         </button>
+        {#- Interfaces: Flowbite Pro admin shell "apps" dropdown (admin dashboard 1.1.1, navbar): a grid
+            of tiles from data/nav.toml [[interfaces]], the site's machine interfaces (/interfaces/). #}
+        {%- set inav = load_data(path="data/nav.toml") %}
+        <button id="interfaces-menu-button" type="button" data-js data-dropdown-toggle="interfaces-menu" data-dropdown-placement="bottom-end" aria-haspopup="menu" aria-expanded="false"
+          class="rounded-lg p-2.5 text-sm text-gray-600 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700">
+          <span class="sr-only">{{ trans(key="interfaces_menu", lang=lang) | safe }}</span>{{ <icon name="squares" class="h-5 w-5" /> }}
+        </button>
+        <div id="interfaces-menu" class="z-50 my-4 hidden w-80 max-w-[calc(100vw-2rem)] list-none divide-y divide-gray-100 overflow-hidden rounded-lg bg-white text-base shadow-lg dark:divide-gray-600 dark:bg-gray-700">
+          <p class="block bg-gray-50 px-4 py-2 text-center text-base font-medium text-gray-700 dark:bg-gray-700 dark:text-gray-300">{{ trans(key="interfaces", lang=lang) | safe }}</p>
+          <ul class="grid grid-cols-3 gap-4 p-4" role="menu" aria-labelledby="interfaces-menu-button">
+            {%- for t in inav.interfaces %}
+            {%- if t.swagger is defined %}{% set href = config.extra.swagger_ui ~ config.base_url ~ "/openapi.json" %}
+            {%- elif t.file is defined %}{% set href = get_url(path=t.file) %}
+            {%- else %}{% set href = config.base_url ~ lp ~ t.path %}{% endif %}
+            <li role="none">
+              <a role="menuitem" href="{{ href }}" class="block rounded-lg p-4 text-center hover:bg-gray-100 focus:bg-gray-100 focus:outline-none dark:hover:bg-gray-600 dark:focus:bg-gray-600">
+                {{ <icon name={t.icon} class="mx-auto mb-1 h-7 w-7 text-gray-500 dark:text-gray-400" /> }}
+                <span class="block text-sm font-medium text-gray-900 dark:text-white">{{ trans(key=t.key, lang=lang) | safe }}</span>
+              </a>
+            </li>
+            {%- endfor %}
+          </ul>
+          <a href="{{ config.base_url }}{{ lp }}/interfaces/" class="block bg-gray-50 py-2 text-center text-sm font-medium text-gray-900 hover:bg-gray-100 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600">{{ trans(key="interfaces_view_all", lang=lang) | safe }}</a>
+        </div>
         {#- Theme: a Flowbite dropdown with three choices, light, dark and the system's
             (static/js/components/theme.js). The icon is chosen by CSS, so nothing shifts on load. #}
         <button id="theme-menu-button" type="button" data-js data-dropdown-toggle="theme-menu" data-dropdown-placement="bottom-end" aria-haspopup="menu" aria-expanded="false"

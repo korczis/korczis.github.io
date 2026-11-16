@@ -3,7 +3,7 @@
 title = "AI agent"
 description = "A program that uses a language model to plan and act (edit code, run commands) toward a goal; Majordomus makes such agents prove their work."
 template = "term.html"
-weight = 34
+weight = 35
 
 [taxonomies]
 tags = ["Glossary", "Concept"]
@@ -16,8 +16,8 @@ kind = "concept"
 definition = "A program that uses a language model to plan and act (edit code, run commands) toward a goal; Majordomus makes such agents prove their work."
 aliases = []
 reference = { title = "Anthropic: building effective agents", url = "https://www.anthropic.com/research/building-effective-agents" }
-pages = ["about.md", "projects/_index.md", "projects/ai.md", "work/cognitive-reasoning.md", "work/edna.md", "work/llm.md", "work/prismatic-majordomus.md", "work/sig.md"]
-related = ["open-source", "repository", "commit", "elixir", "rust", "javascript", "mcp", "osint"]
+pages = ["about.md", "interfaces.md", "projects/_index.md", "projects/ai.md", "work/cognitive-reasoning.md", "work/edna.md", "work/llm.md", "work/prismatic-majordomus.md", "work/sig.md"]
+related = ["open-source", "repository", "commit", "elixir", "mcp", "rust", "github-pages", "javascript"]
 og_title = "AI agent: glossary"
 og_image = "og/glossary-ai-agent.png"
 keywords = ["AI agent", "Concept", "Glossary", "Tomas Korcak"]

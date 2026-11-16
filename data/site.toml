@@ -244,3 +244,54 @@ lead = "viz_tag_together_lead"
 span = 3
 height = "md"
 tone = "night"
+
+# The /interfaces/ page (templates/interfaces.html): the words around the derived parts. The
+# objects, counts and endpoints come from static/ai.json and static/openapi.json
+# (scripts/build-interfaces.mjs); the commands from zola.toml [extra].
+[interfaces.sections.ai]
+eyebrow = ".ai"
+eyebrow_cs = ".ai"
+title = "The Majordomus layer of this repository"
+title_cs = "Vrstva Majordomu v tomto repozitáři"
+lead = "Every rule, decision, note and workflow the agents working here obey, as Majordomus indexes them. Each has an MCP resource URI and links to its source."
+lead_cs = "Každé pravidlo, rozhodnutí, poznámka a postup, kterými se řídí agenti v tomto repozitáři, tak jak je indexuje Majordomus. Každý má URI zdroje MCP a odkaz na svůj zdroj."
+
+[interfaces.sections.mcp]
+eyebrow = "MCP"
+eyebrow_cs = "MCP"
+title = "Connect an agent over MCP"
+title_cs = "Připojte agenta přes MCP"
+lead = "Majordomus serves this layer to any MCP client: the objects below as resources, its capabilities as tools. It runs in a checkout of the repository, over stdio or on loopback HTTP."
+lead_cs = "Majordomus poskytuje tuto vrstvu každému klientovi MCP: objekty níže jako zdroje, své schopnosti jako nástroje. Běží v klonu repozitáře, přes stdio nebo přes HTTP na loopbacku."
+
+[interfaces.sections.api]
+eyebrow = "OpenAPI"
+eyebrow_cs = "OpenAPI"
+title = "The site as an API"
+title_cs = "Web jako API"
+lead = "Every machine-readable file this static site publishes, described in OpenAPI 3.1. Read-only, no authentication; Swagger UI renders the description."
+lead_cs = "Každý strojově čitelný soubor, který tento statický web publikuje, popsaný v OpenAPI 3.1. Jen pro čtení, bez přihlašování; Swagger UI popis vykreslí."
+
+[[interfaces.mcp_steps]]
+title = "Install Majordomus"
+title_cs = "Nainstalujte Majordomus"
+text = "One binary for macOS and Linux."
+text_cs = "Jedna binárka pro macOS a Linux."
+
+[[interfaces.mcp_steps]]
+title = "Clone the repository"
+title_cs = "Naklonujte repozitář"
+text = "The layer is the repository's .ai/ directory; Majordomus reads it from the checkout."
+text_cs = "Vrstva je adresář .ai/ repozitáře; Majordomus ji čte z klonu."
+
+[[interfaces.mcp_steps]]
+title = "Add it to your MCP client (stdio)"
+title_cs = "Přidejte ho do klienta MCP (stdio)"
+text = "Run inside the checkout; the client starts the server when it needs it."
+text_cs = "Spusťte uvnitř klonu; klient si server spustí, když ho potřebuje."
+
+[[interfaces.mcp_steps]]
+title = "Or over HTTP, with Swagger"
+title_cs = "Nebo přes HTTP, se Swaggerem"
+text = "The server prints its loopback address; the same capabilities answer at /mcp, /openapi.json and /swagger."
+text_cs = "Server vypíše svou adresu na loopbacku; tytéž schopnosti odpovídají na /mcp, /openapi.json a /swagger."
