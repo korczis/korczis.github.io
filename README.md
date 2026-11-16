@@ -100,9 +100,11 @@ Pages are front matter over data. Nothing on them is typed, so nothing needs upd
   the measurements.
 - **Derived:** category pages, `llms.txt`, `llms-full.txt`, OG images and `site.json` (the whole
   site as data).
-- **Refresh every six hours:** `.github/workflows/refresh.yml` runs at 23 minutes past every
-  sixth hour (UTC), or by hand with
-  `gh workflow run refresh.yml`. It runs `npm run refresh`, then `npm run check`. Only when every
+- **Refresh every six hours:** `.github/workflows/refresh.yml` is scheduled at 23 minutes past
+  every hour (UTC), because GitHub drops scheduled runs under load. A scheduled run measures only
+  when the data on master is older than 5 hours (`DUE_HOURS`) and stops after the checkout
+  otherwise; a dropped run then costs an hour, not six. By hand, `gh workflow run refresh.yml`
+  always measures. It runs `npm run refresh`, then `npm run check`. Only when every
   gate passes does it commit to master and start the deploy.
   GitLab is read through one client (`scripts/lib/gitlab.mjs`): `glab` locally, REST in CI
   (`GITLAB_TOKEN` raises the limits, anonymous works). Every rate-limit wait is logged. Each
