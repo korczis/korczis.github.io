@@ -3,19 +3,19 @@
 title = "Crisis map"
 description = "Hlášení geokódovaná přes lokální Nominatim, uložená jako PostGIS geografie a servírovaná z jednoho registru schopností: LiveView, REST, OpenAPI, MCP a CLI."
 template = "work.html"
-weight = 10
-updated = "2026-09-08T00:32:55Z"
+weight = 7
+updated = "2026-11-16T19:15:44Z"
 
 [taxonomies]
-tags = ["Data a GIS", "Elixir", "CSS", "JavaScript"]
+tags = ["Data a GIS", "Elixir", "JavaScript", "CSS"]
 
 [extra]
 repo = "crisis-map"
 og_title = "Crisis map: Hlášení incidentů normalizovaná, geokódovaná a zmapovaná."
 og_image = "og/cs-work-crisis-map.png"
 schema = "project"
-keywords = ["Crisis map", "Data a GIS", "Elixir", "CSS", "JavaScript", "Tomáš Korčák"]
-terms = ["elixir", "css", "javascript", "html", "postgis", "mcp", "gis", "github-pages", "repository", "commit", "open-source"]
+keywords = ["Crisis map", "Data a GIS", "Elixir", "JavaScript", "CSS", "Tomáš Korčák"]
+terms = ["elixir", "javascript", "css", "html", "postgis", "mcp", "gis", "github-pages", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -26,12 +26,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**Crisis map** je projekt z kategorie [Data a GIS](@/projects/data.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (96,2 %), dále [CSS](@/glossary/css.cs.md), [JavaScript](@/glossary/javascript.cs.md) a [HTML](@/glossary/html.cs.md).
+**Crisis map** je projekt z kategorie [Data a GIS](@/projects/data.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (96,9 %), dále [JavaScript](@/glossary/javascript.cs.md), [CSS](@/glossary/css.cs.md) a [HTML](@/glossary/html.cs.md).
 
-[Repozitář](@/glossary/repository.cs.md) vznikl 8. září 2026; poslední [commit](@/glossary/commit.cs.md) je z 8. září 2026. Zní „fix(site): the overview page is titled once“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+[Repozitář](@/glossary/repository.cs.md) vznikl 8. září 2026; poslední [commit](@/glossary/commit.cs.md) je z 16. listopadu 2026. Zní „Merge pull request \#1 from korczis/feature/flowbite-pro-ui“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 
 Je postavený na [PostGIS](@/glossary/postgis.cs.md) a [MCP](@/glossary/mcp.cs.md).
 
 Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/crisis-map/>.
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 6 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 8 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

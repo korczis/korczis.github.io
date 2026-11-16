@@ -3,7 +3,7 @@
 title = "vomaste.cz"
 description = "Otevřený, Git-native systém pro tvorbu a publikaci dohledatelných dossierů ve veřejném zájmu. Tvrzení, zdroje, entity, kauzy a vztahy jsou strukturovaná,…"
 template = "work.html"
-weight = 7
+weight = 10
 updated = "2026-11-08T20:48:37Z"
 
 [taxonomies]

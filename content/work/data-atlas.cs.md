@@ -3,8 +3,8 @@
 title = "Data Atlas"
 description = "Datové sady, katastr, doprava, dálkový průzkum a prostorová analytika na jedné prohledávatelné stránce."
 template = "work.html"
-weight = 11
-updated = "2026-08-30T18:44:34Z"
+weight = 6
+updated = "2026-11-16T19:15:49Z"
 
 [taxonomies]
 tags = ["Data a GIS", "Python", "HTML", "JavaScript"]
@@ -26,9 +26,9 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**Data Atlas** je projekt z kategorie [Data a GIS](@/projects/data.cs.md). Jeho kód je napsaný hlavně v jazyce [Python](@/glossary/python.cs.md) (61,2 %), dále [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md) a PLpgSQL.
+**Data Atlas** je projekt z kategorie [Data a GIS](@/projects/data.cs.md). Jeho kód je napsaný hlavně v jazyce [Python](@/glossary/python.cs.md) (61,1 %), dále [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md) a PLpgSQL.
 
-[Repozitář](@/glossary/repository.cs.md) vznikl 27. srpna 2026; poslední [commit](@/glossary/commit.cs.md) je z 30. srpna 2026. Zní „Merge pull request \#2 from korczis/test/parser-coverage“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+[Repozitář](@/glossary/repository.cs.md) vznikl 27. srpna 2026; poslední [commit](@/glossary/commit.cs.md) je z 16. listopadu 2026. Zní „Merge pull request \#4 from korczis/feature/flowbite-pro-ui“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 
 Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/data-atlas/>.
 

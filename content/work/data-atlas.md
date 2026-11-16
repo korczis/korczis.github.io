@@ -3,8 +3,8 @@
 title = "Data Atlas"
 description = "A searchable catalogue of GIS and geodata sources (Czech)."
 template = "work.html"
-weight = 11
-updated = "2026-08-30T18:44:34Z"
+weight = 6
+updated = "2026-11-16T19:15:49Z"
 
 [taxonomies]
 tags = ["Data and GIS", "Python", "HTML", "JavaScript"]
@@ -26,9 +26,9 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**Data Atlas** is a project in [Data and GIS](@/projects/data.md). Its code is written mainly in [Python](@/glossary/python.md) (61.2 %), with [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md) and PLpgSQL.
+**Data Atlas** is a project in [Data and GIS](@/projects/data.md). Its code is written mainly in [Python](@/glossary/python.md) (61.1 %), with [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md) and PLpgSQL.
 
-The [repository](@/glossary/repository.md) was created in August 2026; its latest [commit](@/glossary/commit.md) is from 30 August 2026. It reads “Merge pull request \#2 from korczis/test/parser-coverage”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created in August 2026; its latest [commit](@/glossary/commit.md) is from 16 November 2026. It reads “Merge pull request \#4 from korczis/feature/flowbite-pro-ui”. That places it among the projects active in the last 12 months.
 
 It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/data-atlas/>.
 

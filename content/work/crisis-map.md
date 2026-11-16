@@ -3,19 +3,19 @@
 title = "Crisis map"
 description = "Incident reports, normalised, geocoded and mapped."
 template = "work.html"
-weight = 10
-updated = "2026-09-08T00:32:55Z"
+weight = 7
+updated = "2026-11-16T19:15:44Z"
 
 [taxonomies]
-tags = ["Data and GIS", "Elixir", "CSS", "JavaScript"]
+tags = ["Data and GIS", "Elixir", "JavaScript", "CSS"]
 
 [extra]
 repo = "crisis-map"
 og_title = "Crisis map: Incident reports, normalised, geocoded and mapped."
 og_image = "og/work-crisis-map.png"
 schema = "project"
-keywords = ["Crisis map", "Data and GIS", "Elixir", "CSS", "JavaScript", "Tomas Korcak"]
-terms = ["elixir", "css", "javascript", "html", "postgis", "mcp", "gis", "github-pages", "repository", "commit", "open-source"]
+keywords = ["Crisis map", "Data and GIS", "Elixir", "JavaScript", "CSS", "Tomas Korcak"]
+terms = ["elixir", "javascript", "css", "html", "postgis", "mcp", "gis", "github-pages", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -26,12 +26,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**Crisis map** is a project in [Data and GIS](@/projects/data.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (96.2 %), with [CSS](@/glossary/css.md), [JavaScript](@/glossary/javascript.md) and [HTML](@/glossary/html.md).
+**Crisis map** is a project in [Data and GIS](@/projects/data.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (96.9 %), with [JavaScript](@/glossary/javascript.md), [CSS](@/glossary/css.md) and [HTML](@/glossary/html.md).
 
-The [repository](@/glossary/repository.md) was created in September 2026; its latest [commit](@/glossary/commit.md) is from 8 September 2026. It reads “fix(site): the overview page is titled once”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created in September 2026; its latest [commit](@/glossary/commit.md) is from 16 November 2026. It reads “Merge pull request \#1 from korczis/feature/flowbite-pro-ui”. That places it among the projects active in the last 12 months.
 
 It is built with [PostGIS](@/glossary/postgis.md) and [MCP](@/glossary/mcp.md).
 
 It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/crisis-map/>.
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 6 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 8 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

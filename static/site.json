@@ -11,8 +11,8 @@
  },
  "front_matter_schema": "https://korczis.github.io/schemas/front-matter.schema.json",
  "data_as_of": {
-  "snapshot": "2026-11-16T06:48:54Z",
-  "index": "2026-11-16T06:56:05Z"
+  "snapshot": "2026-11-16T21:37:52Z",
+  "index": "2026-11-16T21:46:03Z"
  },
  "pages": [
   {
@@ -1361,12 +1361,12 @@
     "korczis",
     "korczis.github.io",
     "sonic-playground",
-    "algoglyph",
+    "prismatic-majordomus",
     "oscilla",
     "kompendium-epistemicke-anihilace",
-    "prismatic-majordomus",
-    "vomaste.cz",
-    "majordomus-reel"
+    "data-atlas",
+    "crisis-map",
+    "catharsis-as-a-service"
    ]
   },
   {
@@ -1424,7 +1424,7 @@
    "url": "https://korczis.github.io/cs/work/catharsis-as-a-service/",
    "lang": "cs",
    "title": "Catharsis as a Service · Tomas Korcak",
-   "description": "Catharsis as a Service: projekt z kategorie Média a umění, hlavní jazyk HTML, poslední commit 14. září 2026.",
+   "description": "Catharsis as a Service: projekt z kategorie Média a umění, hlavní jazyk HTML, poslední commit 16. listopadu 2026.",
    "type": "project",
    "category": null,
    "og_image": "https://korczis.github.io/og/cs-work-catharsis-as-a-service.png",
@@ -1497,8 +1497,8 @@
     "Crisis map",
     "Data a GIS",
     "Elixir",
-    "CSS",
     "JavaScript",
+    "CSS",
     "Tomáš Korčák"
    ]
   },
@@ -3313,12 +3313,12 @@
     "korczis",
     "korczis.github.io",
     "sonic-playground",
-    "algoglyph",
+    "prismatic-majordomus",
     "oscilla",
     "kompendium-epistemicke-anihilace",
-    "prismatic-majordomus",
-    "vomaste.cz",
-    "majordomus-reel"
+    "data-atlas",
+    "crisis-map",
+    "catharsis-as-a-service"
    ]
   },
   {
@@ -3449,8 +3449,8 @@
     "Crisis map",
     "Data and GIS",
     "Elixir",
-    "CSS",
     "JavaScript",
+    "CSS",
     "Tomas Korcak"
    ]
   },
@@ -4263,17 +4263,6 @@
  ],
  "repositories": [
   {
-   "name": "korczis.github.io",
-   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-   "language": "JavaScript",
-   "category": "web",
-   "github": "https://github.com/korczis/korczis.github.io",
-   "gitlab": null,
-   "site": null,
-   "created": "2024-12-24T16:48:15Z",
-   "active": "2026-11-16T06:31:07Z"
-  },
-  {
    "name": "kompendium-epistemicke-anihilace",
    "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
    "language": "Elixir",
@@ -4282,18 +4271,7 @@
    "gitlab": null,
    "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
    "created": "2026-11-09T22:04:50Z",
-   "active": "2026-11-16T06:28:34Z"
-  },
-  {
-   "name": "oscilla",
-   "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-   "language": "JavaScript",
-   "category": "science",
-   "github": "https://github.com/korczis/oscilla",
-   "gitlab": null,
-   "site": "https://korczis.github.io/oscilla/",
-   "created": "2026-10-01T21:05:33Z",
-   "active": "2026-11-16T06:11:33Z"
+   "active": "2026-11-16T21:28:15Z"
   },
   {
    "name": "prismatic-majordomus",
@@ -4304,18 +4282,29 @@
    "gitlab": null,
    "site": "https://korczis.github.io/prismatic-majordomus/",
    "created": "2026-09-03T20:24:57Z",
-   "active": "2026-11-16T06:09:31Z"
+   "active": "2026-11-16T21:25:53Z"
   },
   {
-   "name": "algoglyph",
-   "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
-   "language": "TypeScript",
+   "name": "oscilla",
+   "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+   "language": "JavaScript",
    "category": "science",
-   "github": "https://github.com/korczis/algoglyph",
+   "github": "https://github.com/korczis/oscilla",
    "gitlab": null,
-   "site": "https://korczis.github.io/algoglyph/",
-   "created": "2026-11-11T18:09:38Z",
-   "active": "2026-11-16T06:08:13Z"
+   "site": "https://korczis.github.io/oscilla/",
+   "created": "2026-10-01T21:05:33Z",
+   "active": "2026-11-16T21:24:59Z"
+  },
+  {
+   "name": "korczis.github.io",
+   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+   "language": "JavaScript",
+   "category": "web",
+   "github": "https://github.com/korczis/korczis.github.io",
+   "gitlab": null,
+   "site": null,
+   "created": "2024-12-24T16:48:15Z",
+   "active": "2026-11-16T21:13:49Z"
   },
   {
    "name": "sonic-playground",
@@ -4326,7 +4315,18 @@
    "gitlab": null,
    "site": "https://korczis.github.io/sonic-playground/",
    "created": "2026-11-12T00:48:36Z",
-   "active": "2026-11-16T04:37:51Z"
+   "active": "2026-11-16T21:07:30Z"
+  },
+  {
+   "name": "algoglyph",
+   "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
+   "language": "TypeScript",
+   "category": "science",
+   "github": "https://github.com/korczis/algoglyph",
+   "gitlab": null,
+   "site": "https://korczis.github.io/algoglyph/",
+   "created": "2026-11-11T18:09:38Z",
+   "active": "2026-11-16T20:34:34Z"
   },
   {
    "name": "openttd-prismatic-bridge",
@@ -4337,7 +4337,7 @@
    "gitlab": "https://gitlab.com/korczis/openttd-prismatic-bridge",
    "site": null,
    "created": "2026-07-23T22:00:54.776Z",
-   "active": "2026-11-16T00:49:25.785Z"
+   "active": "2026-11-16T20:07:28.883Z"
   },
   {
    "name": "catharsis-as-a-service",
@@ -4348,7 +4348,29 @@
    "gitlab": null,
    "site": "https://korczis.github.io/catharsis-as-a-service/",
    "created": "2026-09-14T09:54:06Z",
-   "active": "2026-11-09T19:36:49Z"
+   "active": "2026-11-16T20:03:20Z"
+  },
+  {
+   "name": "data-atlas",
+   "description": "Katalog GIS a geodatových zdrojů — datasety, katastr, doprava, remote sensing, prostorová analytika. Jednosouborová prohledávatelná stránka.",
+   "language": "Python",
+   "category": "data",
+   "github": "https://github.com/korczis/data-atlas",
+   "gitlab": null,
+   "site": "https://korczis.github.io/data-atlas/",
+   "created": "2026-08-27T17:47:05Z",
+   "active": "2026-11-16T19:15:49Z"
+  },
+  {
+   "name": "crisis-map",
+   "description": "Mini crisis map: incident reports normalised, geocoded via local Nominatim, stored as PostGIS geography, served from one capability registry (LiveView, REST, OpenAPI, MCP, CLI)",
+   "language": "Elixir",
+   "category": "data",
+   "github": "https://github.com/korczis/crisis-map",
+   "gitlab": null,
+   "site": "https://korczis.github.io/crisis-map/",
+   "created": "2026-09-08T00:27:41Z",
+   "active": "2026-11-16T19:15:44Z"
   },
   {
    "name": "astronomists",
@@ -4359,7 +4381,7 @@
    "gitlab": null,
    "site": "https://korczis.github.io/astronomists/",
    "created": "2026-06-15T09:04:31Z",
-   "active": "2026-11-09T16:32:35Z"
+   "active": "2026-11-16T15:54:22Z"
   },
   {
    "name": "vomaste.cz",
@@ -4382,28 +4404,6 @@
    "site": null,
    "created": "2025-01-25T02:41:53.111Z",
    "active": "2026-10-29T13:51:53.522Z"
-  },
-  {
-   "name": "data-atlas",
-   "description": "Katalog GIS a geodatových zdrojů — datasety, katastr, doprava, remote sensing, prostorová analytika. Jednosouborová prohledávatelná stránka.",
-   "language": "Python",
-   "category": "data",
-   "github": "https://github.com/korczis/data-atlas",
-   "gitlab": null,
-   "site": "https://korczis.github.io/data-atlas/",
-   "created": "2026-08-27T17:47:05Z",
-   "active": "2026-10-29T13:50:30Z"
-  },
-  {
-   "name": "crisis-map",
-   "description": "Mini crisis map: incident reports normalised, geocoded via local Nominatim, stored as PostGIS geography, served from one capability registry (LiveView, REST, OpenAPI, MCP, CLI)",
-   "language": "Elixir",
-   "category": "data",
-   "github": "https://github.com/korczis/crisis-map",
-   "gitlab": null,
-   "site": "https://korczis.github.io/crisis-map/",
-   "created": "2026-09-08T00:27:41Z",
-   "active": "2026-10-29T10:46:18Z"
   },
   {
    "name": "majordomus-reel",

@@ -1,6 +1,6 @@
 {
  "schema": "korczis-hub-index/v1",
- "generated_at": "2026-11-16T06:56:05Z",
+ "generated_at": "2026-11-16T21:46:03Z",
  "rule": "original = the owner wrote at least half of the listed commits; forks and mirrors are counted, not listed",
  "counts": {
   "github": 448,
@@ -18,7 +18,7 @@
  "dropped": [],
  "supervision": {
   "marker": ".ai/manifest.yaml",
-  "measured_at": "2026-11-16T06:56:05Z",
+  "measured_at": "2026-11-16T21:46:03Z",
   "kept": 0
  },
  "all_repos": [
@@ -60,7 +60,7 @@
    ],
    "stars": 0,
    "created_at": "2026-11-11T18:09:38Z",
-   "pushed_at": "2026-11-16T06:08:13Z",
+   "pushed_at": "2026-11-16T20:34:34Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -266,7 +266,7 @@
    "topics": [],
    "stars": 0,
    "created_at": "2026-06-15T09:04:31Z",
-   "pushed_at": "2026-11-09T16:32:35Z",
+   "pushed_at": "2026-11-16T15:54:22Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -489,9 +489,9 @@
    "topics": [],
    "stars": 0,
    "created_at": "2026-09-14T09:54:06Z",
-   "pushed_at": "2026-11-09T19:36:49Z",
+   "pushed_at": "2026-11-16T20:03:20Z",
    "archived": false,
-   "share": 1,
+   "share": 0.96,
    "hosts": {
     "github": "https://github.com/korczis/catharsis-as-a-service"
    },
@@ -639,7 +639,7 @@
    "topics": [],
    "stars": 0,
    "created_at": "2026-09-08T00:27:41Z",
-   "pushed_at": "2026-10-29T10:46:18Z",
+   "pushed_at": "2026-11-16T19:15:44Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -758,7 +758,7 @@
    ],
    "stars": 0,
    "created_at": "2026-08-27T17:47:05Z",
-   "pushed_at": "2026-10-29T13:50:30Z",
+   "pushed_at": "2026-11-16T19:15:49Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -1628,7 +1628,7 @@
    ],
    "stars": 0,
    "created_at": "2026-11-09T22:04:50Z",
-   "pushed_at": "2026-11-16T06:28:34Z",
+   "pushed_at": "2026-11-16T21:28:15Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -1661,7 +1661,7 @@
    ],
    "stars": 0,
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-16T06:31:07Z",
+   "pushed_at": "2026-11-16T21:13:49Z",
    "archived": false,
    "share": 0.94,
    "hosts": {
@@ -2184,7 +2184,7 @@
    ],
    "stars": 1,
    "created_at": "2026-10-01T21:05:33Z",
-   "pushed_at": "2026-11-16T06:11:33Z",
+   "pushed_at": "2026-11-16T21:24:59Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -2446,7 +2446,7 @@
    ],
    "stars": 1,
    "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-16T06:09:31Z",
+   "pushed_at": "2026-11-16T21:25:53Z",
    "archived": false,
    "share": 0.99,
    "hosts": {
@@ -3049,7 +3049,7 @@
    "topics": [],
    "stars": 0,
    "created_at": "2026-11-12T00:48:36Z",
-   "pushed_at": "2026-11-16T04:37:51Z",
+   "pushed_at": "2026-11-16T21:07:30Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -3513,7 +3513,7 @@
    "topics": [],
    "stars": 0,
    "created_at": "2026-07-23T22:00:54.776Z",
-   "pushed_at": "2026-11-16T00:49:25.785Z",
+   "pushed_at": "2026-11-16T20:07:28.883Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -4431,36 +4431,24 @@
   }
  ],
  "by_category": {
-  "web": 16,
   "knowledge": 5,
-  "science": 12,
   "ai": 5,
+  "science": 12,
+  "web": 16,
   "media": 8,
-  "tools": 64,
   "data": 51,
+  "tools": 64,
   "security": 5,
   "systems": 17,
   "libraries": 7,
   "learning": 21
  },
  "categories": {
-  "web": {
-   "repos": 16,
-   "sites": 0,
-   "top_language": "CSS",
-   "since": "2014"
-  },
   "knowledge": {
    "repos": 5,
    "sites": 1,
    "top_language": "Swift",
    "since": "2013"
-  },
-  "science": {
-   "repos": 12,
-   "sites": 3,
-   "top_language": "Rust",
-   "since": "2014"
   },
   "ai": {
    "repos": 5,
@@ -4468,23 +4456,35 @@
    "top_language": "Elixir",
    "since": "2025"
   },
+  "science": {
+   "repos": 12,
+   "sites": 3,
+   "top_language": "Rust",
+   "since": "2014"
+  },
+  "web": {
+   "repos": 16,
+   "sites": 0,
+   "top_language": "CSS",
+   "since": "2014"
+  },
   "media": {
    "repos": 8,
    "sites": 4,
    "top_language": "HTML",
    "since": "2015"
   },
-  "tools": {
-   "repos": 64,
-   "sites": 6,
-   "top_language": "JavaScript",
-   "since": "2012"
-  },
   "data": {
    "repos": 51,
    "sites": 2,
    "top_language": "JavaScript",
    "since": "2014"
+  },
+  "tools": {
+   "repos": 64,
+   "sites": 6,
+   "top_language": "JavaScript",
+   "since": "2012"
   },
   "security": {
    "repos": 5,
@@ -4709,10 +4709,10 @@
   },
   "2026": {
    "Elixir": 3,
-   "JavaScript": 2,
    "Rust": 1,
-   "TypeScript": 1,
+   "JavaScript": 2,
    "Python": 5,
+   "TypeScript": 1,
    "HTML": 3
   }
  },
@@ -4723,12 +4723,12 @@
     "repos": 43,
     "evidence": [
      {
-      "name": "korczis.github.io",
-      "url": "https://github.com/korczis/korczis.github.io"
-     },
-     {
       "name": "oscilla",
       "url": "https://github.com/korczis/oscilla"
+     },
+     {
+      "name": "korczis.github.io",
+      "url": "https://github.com/korczis/korczis.github.io"
      },
      {
       "name": "vomaste.cz",
@@ -4745,12 +4745,12 @@
       "url": "https://github.com/korczis/kompendium-epistemicke-anihilace"
      },
      {
-      "name": "the-psycho",
-      "url": "https://gitlab.com/korczis/the-psycho"
-     },
-     {
       "name": "crisis-map",
       "url": "https://github.com/korczis/crisis-map"
+     },
+     {
+      "name": "the-psycho",
+      "url": "https://gitlab.com/korczis/the-psycho"
      }
     ]
    },
@@ -4839,8 +4839,8 @@
       "url": "https://gitlab.com/korczis/openttd-prismatic-bridge"
      },
      {
-      "name": "astronomists",
-      "url": "https://github.com/korczis/astronomists"
+      "name": "data-atlas",
+      "url": "https://github.com/korczis/data-atlas"
      }
     ]
    },
@@ -5203,18 +5203,17 @@
  "recent": {
   "size": 100,
   "from": "2018-06-24T03:58:28Z",
-  "to": "2026-11-16T06:31:07Z",
+  "to": "2026-11-16T21:28:15Z",
   "mix": {
-   "web": {
-    "JavaScript": 1,
-    "HTML": 3,
-    "CSS": 4,
-    "Elixir": 1
-   },
    "knowledge": {
     "Elixir": 1,
     "Swift": 2,
     "Unspecified": 1
+   },
+   "ai": {
+    "Rust": 1,
+    "Elixir": 2,
+    "Unspecified": 2
    },
    "science": {
     "JavaScript": 1,
@@ -5222,16 +5221,24 @@
     "Elixir": 1,
     "Rust": 1
    },
-   "ai": {
-    "Rust": 1,
-    "Elixir": 2,
-    "Unspecified": 2
+   "web": {
+    "JavaScript": 1,
+    "HTML": 3,
+    "CSS": 4,
+    "Elixir": 1
    },
    "media": {
     "Python": 2,
     "HTML": 2,
     "Dockerfile": 1,
     "Elixir": 1
+   },
+   "data": {
+    "Python": 1,
+    "Elixir": 5,
+    "JavaScript": 14,
+    "Shell": 1,
+    "Unspecified": 5
    },
    "tools": {
     "Python": 3,
@@ -5243,13 +5250,6 @@
     "Just": 1,
     "OpenSCAD": 1,
     "Shell": 2
-   },
-   "data": {
-    "Python": 1,
-    "Elixir": 5,
-    "JavaScript": 14,
-    "Shell": 1,
-    "Unspecified": 5
    },
    "security": {
     "HTML": 1
@@ -5269,39 +5269,6 @@
  },
  "repos": [
   {
-   "name": "korczis.github.io",
-   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-   "language": "JavaScript",
-   "topics": [
-    "accessibility",
-    "ai-agents",
-    "alpinejs",
-    "chartjs",
-    "cytoscape",
-    "echarts",
-    "flowbite",
-    "github-pages",
-    "majordomus",
-    "p5js",
-    "personal-website",
-    "portfolio",
-    "tailwindcss",
-    "zola"
-   ],
-   "stars": 0,
-   "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-16T06:31:07Z",
-   "archived": false,
-   "share": 0.94,
-   "hosts": {
-    "github": "https://github.com/korczis/korczis.github.io"
-   },
-   "site": null,
-   "supervised": true,
-   "category": "web",
-   "curated": false
-  },
-  {
    "name": "kompendium-epistemicke-anihilace",
    "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
    "language": "Elixir",
@@ -5318,7 +5285,7 @@
    ],
    "stars": 0,
    "created_at": "2026-11-09T22:04:50Z",
-   "pushed_at": "2026-11-16T06:28:34Z",
+   "pushed_at": "2026-11-16T21:28:15Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -5327,34 +5294,6 @@
    "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
    "supervised": true,
    "category": "knowledge",
-   "curated": true
-  },
-  {
-   "name": "oscilla",
-   "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-   "language": "JavaScript",
-   "topics": [
-    "acoustics",
-    "audio",
-    "dsp",
-    "education",
-    "javascript",
-    "signal-processing",
-    "spectrogram",
-    "synthesizer",
-    "web-audio"
-   ],
-   "stars": 1,
-   "created_at": "2026-10-01T21:05:33Z",
-   "pushed_at": "2026-11-16T06:11:33Z",
-   "archived": false,
-   "share": 1,
-   "hosts": {
-    "github": "https://github.com/korczis/oscilla"
-   },
-   "site": "https://korczis.github.io/oscilla/",
-   "supervised": true,
-   "category": "science",
    "curated": true
   },
   {
@@ -5384,7 +5323,7 @@
    ],
    "stars": 1,
    "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-16T06:09:31Z",
+   "pushed_at": "2026-11-16T21:25:53Z",
    "archived": false,
    "share": 0.99,
    "hosts": {
@@ -5393,6 +5332,85 @@
    "site": "https://korczis.github.io/prismatic-majordomus/",
    "supervised": true,
    "category": "ai",
+   "curated": true
+  },
+  {
+   "name": "oscilla",
+   "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+   "language": "JavaScript",
+   "topics": [
+    "acoustics",
+    "audio",
+    "dsp",
+    "education",
+    "javascript",
+    "signal-processing",
+    "spectrogram",
+    "synthesizer",
+    "web-audio"
+   ],
+   "stars": 1,
+   "created_at": "2026-10-01T21:05:33Z",
+   "pushed_at": "2026-11-16T21:24:59Z",
+   "archived": false,
+   "share": 1,
+   "hosts": {
+    "github": "https://github.com/korczis/oscilla"
+   },
+   "site": "https://korczis.github.io/oscilla/",
+   "supervised": true,
+   "category": "science",
+   "curated": true
+  },
+  {
+   "name": "korczis.github.io",
+   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+   "language": "JavaScript",
+   "topics": [
+    "accessibility",
+    "ai-agents",
+    "alpinejs",
+    "chartjs",
+    "cytoscape",
+    "echarts",
+    "flowbite",
+    "github-pages",
+    "majordomus",
+    "p5js",
+    "personal-website",
+    "portfolio",
+    "tailwindcss",
+    "zola"
+   ],
+   "stars": 0,
+   "created_at": "2024-12-24T16:48:15Z",
+   "pushed_at": "2026-11-16T21:13:49Z",
+   "archived": false,
+   "share": 0.94,
+   "hosts": {
+    "github": "https://github.com/korczis/korczis.github.io"
+   },
+   "site": null,
+   "supervised": true,
+   "category": "web",
+   "curated": false
+  },
+  {
+   "name": "sonic-playground",
+   "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+   "language": "Python",
+   "topics": [],
+   "stars": 0,
+   "created_at": "2026-11-12T00:48:36Z",
+   "pushed_at": "2026-11-16T21:07:30Z",
+   "archived": false,
+   "share": 1,
+   "hosts": {
+    "github": "https://github.com/korczis/sonic-playground"
+   },
+   "site": "https://korczis.github.io/sonic-playground/",
+   "supervised": true,
+   "category": "media",
    "curated": true
   },
   {
@@ -5415,7 +5433,7 @@
    ],
    "stars": 0,
    "created_at": "2026-11-11T18:09:38Z",
-   "pushed_at": "2026-11-16T06:08:13Z",
+   "pushed_at": "2026-11-16T20:34:34Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -5427,31 +5445,13 @@
    "curated": true
   },
   {
-   "name": "sonic-playground",
-   "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-   "language": "Python",
-   "topics": [],
-   "stars": 0,
-   "created_at": "2026-11-12T00:48:36Z",
-   "pushed_at": "2026-11-16T04:37:51Z",
-   "archived": false,
-   "share": 1,
-   "hosts": {
-    "github": "https://github.com/korczis/sonic-playground"
-   },
-   "site": "https://korczis.github.io/sonic-playground/",
-   "supervised": true,
-   "category": "media",
-   "curated": true
-  },
-  {
    "name": "openttd-prismatic-bridge",
    "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
    "language": "Python",
    "topics": [],
    "stars": 0,
    "created_at": "2026-07-23T22:00:54.776Z",
-   "pushed_at": "2026-11-16T00:49:25.785Z",
+   "pushed_at": "2026-11-16T20:07:28.883Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -5469,9 +5469,9 @@
    "topics": [],
    "stars": 0,
    "created_at": "2026-09-14T09:54:06Z",
-   "pushed_at": "2026-11-09T19:36:49Z",
+   "pushed_at": "2026-11-16T20:03:20Z",
    "archived": false,
-   "share": 1,
+   "share": 0.96,
    "hosts": {
     "github": "https://github.com/korczis/catharsis-as-a-service"
    },
@@ -5481,13 +5481,58 @@
    "curated": true
   },
   {
+   "name": "data-atlas",
+   "description": "Katalog GIS a geodatových zdrojů — datasety, katastr, doprava, remote sensing, prostorová analytika. Jednosouborová prohledávatelná stránka.",
+   "language": "Python",
+   "topics": [
+    "catalog",
+    "czech-republic",
+    "geodata",
+    "geospatial",
+    "gis",
+    "open-data",
+    "openstreetmap",
+    "postgis"
+   ],
+   "stars": 0,
+   "created_at": "2026-08-27T17:47:05Z",
+   "pushed_at": "2026-11-16T19:15:49Z",
+   "archived": false,
+   "share": 1,
+   "hosts": {
+    "github": "https://github.com/korczis/data-atlas"
+   },
+   "site": "https://korczis.github.io/data-atlas/",
+   "supervised": false,
+   "category": "data",
+   "curated": true
+  },
+  {
+   "name": "crisis-map",
+   "description": "Mini crisis map: incident reports normalised, geocoded via local Nominatim, stored as PostGIS geography, served from one capability registry (LiveView, REST, OpenAPI, MCP, CLI)",
+   "language": "Elixir",
+   "topics": [],
+   "stars": 0,
+   "created_at": "2026-09-08T00:27:41Z",
+   "pushed_at": "2026-11-16T19:15:44Z",
+   "archived": false,
+   "share": 1,
+   "hosts": {
+    "github": "https://github.com/korczis/crisis-map"
+   },
+   "site": "https://korczis.github.io/crisis-map/",
+   "supervised": false,
+   "category": "data",
+   "curated": true
+  },
+  {
    "name": "astronomists",
    "description": null,
    "language": "Python",
    "topics": [],
    "stars": 0,
    "created_at": "2026-06-15T09:04:31Z",
-   "pushed_at": "2026-11-09T16:32:35Z",
+   "pushed_at": "2026-11-16T15:54:22Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -5533,51 +5578,6 @@
    "supervised": false,
    "category": "tools",
    "curated": false
-  },
-  {
-   "name": "data-atlas",
-   "description": "Katalog GIS a geodatových zdrojů — datasety, katastr, doprava, remote sensing, prostorová analytika. Jednosouborová prohledávatelná stránka.",
-   "language": "Python",
-   "topics": [
-    "catalog",
-    "czech-republic",
-    "geodata",
-    "geospatial",
-    "gis",
-    "open-data",
-    "openstreetmap",
-    "postgis"
-   ],
-   "stars": 0,
-   "created_at": "2026-08-27T17:47:05Z",
-   "pushed_at": "2026-10-29T13:50:30Z",
-   "archived": false,
-   "share": 1,
-   "hosts": {
-    "github": "https://github.com/korczis/data-atlas"
-   },
-   "site": "https://korczis.github.io/data-atlas/",
-   "supervised": false,
-   "category": "data",
-   "curated": true
-  },
-  {
-   "name": "crisis-map",
-   "description": "Mini crisis map: incident reports normalised, geocoded via local Nominatim, stored as PostGIS geography, served from one capability registry (LiveView, REST, OpenAPI, MCP, CLI)",
-   "language": "Elixir",
-   "topics": [],
-   "stars": 0,
-   "created_at": "2026-09-08T00:27:41Z",
-   "pushed_at": "2026-10-29T10:46:18Z",
-   "archived": false,
-   "share": 1,
-   "hosts": {
-    "github": "https://github.com/korczis/crisis-map"
-   },
-   "site": "https://korczis.github.io/crisis-map/",
-   "supervised": false,
-   "category": "data",
-   "curated": true
   },
   {
    "name": "majordomus-reel",

@@ -3,8 +3,8 @@
 title = "Catharsis as a Service"
 description = "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact."
 template = "work.html"
-weight = 9
-updated = "2026-09-14T23:06:01Z"
+weight = 8
+updated = "2026-11-16T19:15:38Z"
 
 [taxonomies]
 tags = ["Media and art", "HTML", "Python", "JavaScript"]
@@ -28,8 +28,8 @@ tone = "night"
 +++
 **Catharsis as a Service** is a project in [Media and art](@/projects/media.md). Its code is written mainly in [HTML](@/glossary/html.md) (34.3 %), with [Python](@/glossary/python.md), [JavaScript](@/glossary/javascript.md) and [CSS](@/glossary/css.md).
 
-The [repository](@/glossary/repository.md) was created in September 2026; its latest [commit](@/glossary/commit.md) is from 14 September 2026. It reads “feat(discover): link the detection sandbox from the pages whose argument it demonstrates”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created in September 2026; its latest [commit](@/glossary/commit.md) is from 16 November 2026. It reads “Merge pull request \#3 from korczis/dependabot/npm\_and\_yarn/frontend-aae4353420”. That places it among the projects active in the last 12 months.
 
 It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/catharsis-as-a-service/>.
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 25 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 27 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

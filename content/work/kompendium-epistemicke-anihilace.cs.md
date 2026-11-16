@@ -4,7 +4,7 @@ title = "Kompendium"
 description = "Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat."
 template = "work.html"
 weight = 5
-updated = "2026-11-16T03:38:47Z"
+updated = "2026-11-16T20:11:46Z"
 
 [taxonomies]
 tags = ["Znalosti", "Elixir", "JavaScript", "Python"]
@@ -26,9 +26,9 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**Kompendium** je projekt z kategorie [Znalosti](@/projects/knowledge.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (33,8 %), dále [JavaScript](@/glossary/javascript.cs.md), [Python](@/glossary/python.cs.md) a [HTML](@/glossary/html.cs.md).
+**Kompendium** je projekt z kategorie [Znalosti](@/projects/knowledge.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (33,6 %), dále [JavaScript](@/glossary/javascript.cs.md), [Python](@/glossary/python.cs.md) a [HTML](@/glossary/html.cs.md).
 
-[Repozitář](@/glossary/repository.cs.md) vznikl 9. listopadu 2026; poslední [commit](@/glossary/commit.cs.md) je z 16. listopadu 2026. Zní „fix(test): run.sh zapíše do svého dočasného adresáře pid vlastníka“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+[Repozitář](@/glossary/repository.cs.md) vznikl 9. listopadu 2026; poslední [commit](@/glossary/commit.cs.md) je z 16. listopadu 2026. Zní „Merge origin/main (05b8ad2f, derived-catalogue landed) into feature/derived-listings“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 
 Je postavený na [Zola](@/glossary/zola.cs.md), [Cytoscape.js](@/glossary/cytoscape-js.cs.md), [Apache ECharts](@/glossary/apache-echarts.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md) a [Flowbite Pro](@/glossary/flowbite-pro.cs.md).
 
