@@ -1,6 +1,6 @@
 {
  "schema": "korczis-hub-index/v1",
- "generated_at": "2026-11-17T12:17:07Z",
+ "generated_at": "2026-11-17T21:17:02Z",
  "rule": "original = the owner wrote at least half of the listed commits; forks and mirrors are counted, not listed",
  "counts": {
   "github": 448,
@@ -18,7 +18,7 @@
  "dropped": [],
  "supervision": {
   "marker": ".ai/manifest.yaml",
-  "measured_at": "2026-11-17T12:17:07Z",
+  "measured_at": "2026-11-17T21:17:02Z",
   "kept": 0
  },
  "all_repos": [
@@ -60,7 +60,7 @@
    ],
    "stars": 0,
    "created_at": "2026-11-11T18:09:38Z",
-   "pushed_at": "2026-11-17T11:37:26Z",
+   "pushed_at": "2026-11-17T19:23:49Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -1661,9 +1661,9 @@
    ],
    "stars": 0,
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-17T03:10:28Z",
+   "pushed_at": "2026-11-17T12:21:41Z",
    "archived": false,
-   "share": 0.93,
+   "share": 0.92,
    "hosts": {
     "github": "https://github.com/korczis/korczis.github.io"
    },
@@ -1827,7 +1827,7 @@
   {
    "name": "majordomus-reel",
    "description": "A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound",
-   "language": "HTML",
+   "language": "JavaScript",
    "topics": [
     "ai-agents",
     "ffmpeg",
@@ -1838,7 +1838,7 @@
    ],
    "stars": 0,
    "created_at": "2026-10-23T00:51:59Z",
-   "pushed_at": "2026-11-17T11:12:12Z",
+   "pushed_at": "2026-11-17T19:23:27Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -2184,7 +2184,7 @@
    ],
    "stars": 1,
    "created_at": "2026-10-01T21:05:33Z",
-   "pushed_at": "2026-11-17T11:47:56Z",
+   "pushed_at": "2026-11-17T21:08:40Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -2446,7 +2446,7 @@
    ],
    "stars": 1,
    "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-17T12:06:38Z",
+   "pushed_at": "2026-11-17T20:57:51Z",
    "archived": false,
    "share": 0.99,
    "hosts": {
@@ -3049,7 +3049,7 @@
    "topics": [],
    "stars": 0,
    "created_at": "2026-11-12T00:48:36Z",
-   "pushed_at": "2026-11-16T21:07:30Z",
+   "pushed_at": "2026-11-17T20:53:34Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -3513,7 +3513,7 @@
    "topics": [],
    "stars": 0,
    "created_at": "2026-07-23T22:00:54.776Z",
-   "pushed_at": "2026-11-17T10:53:29.397Z",
+   "pushed_at": "2026-11-17T20:38:21.692Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -4431,11 +4431,11 @@
   }
  ],
  "by_category": {
-  "ai": 5,
   "science": 12,
+  "ai": 5,
   "media": 8,
-  "knowledge": 5,
   "web": 16,
+  "knowledge": 5,
   "data": 51,
   "tools": 64,
   "security": 5,
@@ -4444,35 +4444,35 @@
   "learning": 21
  },
  "categories": {
-  "ai": {
-   "repos": 5,
-   "sites": 1,
-   "top_language": "Elixir",
-   "since": "2025"
-  },
   "science": {
    "repos": 12,
    "sites": 3,
    "top_language": "Rust",
    "since": "2014"
   },
+  "ai": {
+   "repos": 5,
+   "sites": 1,
+   "top_language": "Elixir",
+   "since": "2025"
+  },
   "media": {
    "repos": 8,
    "sites": 4,
-   "top_language": "HTML",
+   "top_language": "JavaScript",
    "since": "2015"
-  },
-  "knowledge": {
-   "repos": 5,
-   "sites": 1,
-   "top_language": "Swift",
-   "since": "2013"
   },
   "web": {
    "repos": 16,
    "sites": 0,
    "top_language": "CSS",
    "since": "2014"
+  },
+  "knowledge": {
+   "repos": 5,
+   "sites": 1,
+   "top_language": "Swift",
+   "since": "2013"
   },
   "data": {
    "repos": 51,
@@ -4514,7 +4514,7 @@
  "languages": [
   {
    "name": "JavaScript",
-   "repos": 43
+   "repos": 44
   },
   {
    "name": "Elixir",
@@ -4533,15 +4533,15 @@
    "repos": 12
   },
   {
-   "name": "HTML",
-   "repos": 7
-  },
-  {
    "name": "Python",
    "repos": 7
   },
   {
    "name": "C++",
+   "repos": 6
+  },
+  {
+   "name": "HTML",
    "repos": 6
   },
   {
@@ -4708,31 +4708,31 @@
    "Dockerfile": 1
   },
   "2026": {
+   "JavaScript": 3,
    "Rust": 1,
-   "JavaScript": 2,
-   "TypeScript": 1,
-   "HTML": 3,
    "Python": 5,
-   "Elixir": 3
+   "TypeScript": 1,
+   "Elixir": 3,
+   "HTML": 2
   }
  },
  "skills": {
   "languages": [
    {
     "name": "JavaScript",
-    "repos": 43,
+    "repos": 44,
     "evidence": [
      {
       "name": "oscilla",
       "url": "https://github.com/korczis/oscilla"
      },
      {
-      "name": "korczis.github.io",
-      "url": "https://github.com/korczis/korczis.github.io"
+      "name": "majordomus-reel",
+      "url": "https://github.com/korczis/majordomus-reel"
      },
      {
-      "name": "vomaste.cz",
-      "url": "https://github.com/korczis/vomaste.cz"
+      "name": "korczis.github.io",
+      "url": "https://github.com/korczis/korczis.github.io"
      }
     ]
    },
@@ -4809,34 +4809,16 @@
     ]
    },
    {
-    "name": "HTML",
-    "repos": 7,
-    "evidence": [
-     {
-      "name": "majordomus-reel",
-      "url": "https://github.com/korczis/majordomus-reel"
-     },
-     {
-      "name": "catharsis-as-a-service",
-      "url": "https://github.com/korczis/catharsis-as-a-service"
-     },
-     {
-      "name": "osint-case-ratcliffe-moscow-2026",
-      "url": "https://github.com/korczis/osint-case-ratcliffe-moscow-2026"
-     }
-    ]
-   },
-   {
     "name": "Python",
     "repos": 7,
     "evidence": [
      {
-      "name": "openttd-prismatic-bridge",
-      "url": "https://gitlab.com/korczis/openttd-prismatic-bridge"
-     },
-     {
       "name": "sonic-playground",
       "url": "https://github.com/korczis/sonic-playground"
+     },
+     {
+      "name": "openttd-prismatic-bridge",
+      "url": "https://gitlab.com/korczis/openttd-prismatic-bridge"
      },
      {
       "name": "data-atlas",
@@ -4859,6 +4841,24 @@
      {
       "name": "iCave",
       "url": "https://github.com/korczis/iCave"
+     }
+    ]
+   },
+   {
+    "name": "HTML",
+    "repos": 6,
+    "evidence": [
+     {
+      "name": "catharsis-as-a-service",
+      "url": "https://github.com/korczis/catharsis-as-a-service"
+     },
+     {
+      "name": "osint-case-ratcliffe-moscow-2026",
+      "url": "https://github.com/korczis/osint-case-ratcliffe-moscow-2026"
+     },
+     {
+      "name": "ApolloCrawler-github-io",
+      "url": "https://gitlab.com/korczis/ApolloCrawler-github-io"
      }
     ]
    },
@@ -5203,35 +5203,36 @@
  "recent": {
   "size": 100,
   "from": "2018-06-24T03:58:28Z",
-  "to": "2026-11-17T12:06:38Z",
+  "to": "2026-11-17T21:08:40Z",
   "mix": {
-   "ai": {
-    "Rust": 1,
-    "Elixir": 2,
-    "Unspecified": 2
-   },
    "science": {
     "JavaScript": 1,
     "TypeScript": 1,
     "Elixir": 1,
     "Rust": 1
    },
+   "ai": {
+    "Rust": 1,
+    "Elixir": 2,
+    "Unspecified": 2
+   },
    "media": {
-    "HTML": 2,
     "Python": 2,
+    "JavaScript": 1,
+    "HTML": 1,
     "Dockerfile": 1,
     "Elixir": 1
-   },
-   "knowledge": {
-    "Elixir": 1,
-    "Swift": 2,
-    "Unspecified": 1
    },
    "web": {
     "JavaScript": 1,
     "HTML": 3,
     "CSS": 4,
     "Elixir": 1
+   },
+   "knowledge": {
+    "Elixir": 1,
+    "Swift": 2,
+    "Unspecified": 1
    },
    "data": {
     "Python": 1,
@@ -5269,6 +5270,34 @@
  },
  "repos": [
   {
+   "name": "oscilla",
+   "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+   "language": "JavaScript",
+   "topics": [
+    "acoustics",
+    "audio",
+    "dsp",
+    "education",
+    "javascript",
+    "signal-processing",
+    "spectrogram",
+    "synthesizer",
+    "web-audio"
+   ],
+   "stars": 1,
+   "created_at": "2026-10-01T21:05:33Z",
+   "pushed_at": "2026-11-17T21:08:40Z",
+   "archived": false,
+   "share": 1,
+   "hosts": {
+    "github": "https://github.com/korczis/oscilla"
+   },
+   "site": "https://korczis.github.io/oscilla/",
+   "supervised": true,
+   "category": "science",
+   "curated": true
+  },
+  {
    "name": "prismatic-majordomus",
    "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
    "language": "Rust",
@@ -5295,7 +5324,7 @@
    ],
    "stars": 1,
    "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-17T12:06:38Z",
+   "pushed_at": "2026-11-17T20:57:51Z",
    "archived": false,
    "share": 0.99,
    "hosts": {
@@ -5307,32 +5336,40 @@
    "curated": true
   },
   {
-   "name": "oscilla",
-   "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-   "language": "JavaScript",
-   "topics": [
-    "acoustics",
-    "audio",
-    "dsp",
-    "education",
-    "javascript",
-    "signal-processing",
-    "spectrogram",
-    "synthesizer",
-    "web-audio"
-   ],
-   "stars": 1,
-   "created_at": "2026-10-01T21:05:33Z",
-   "pushed_at": "2026-11-17T11:47:56Z",
+   "name": "sonic-playground",
+   "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+   "language": "Python",
+   "topics": [],
+   "stars": 0,
+   "created_at": "2026-11-12T00:48:36Z",
+   "pushed_at": "2026-11-17T20:53:34Z",
    "archived": false,
    "share": 1,
    "hosts": {
-    "github": "https://github.com/korczis/oscilla"
+    "github": "https://github.com/korczis/sonic-playground"
    },
-   "site": "https://korczis.github.io/oscilla/",
+   "site": "https://korczis.github.io/sonic-playground/",
    "supervised": true,
-   "category": "science",
+   "category": "media",
    "curated": true
+  },
+  {
+   "name": "openttd-prismatic-bridge",
+   "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
+   "language": "Python",
+   "topics": [],
+   "stars": 0,
+   "created_at": "2026-07-23T22:00:54.776Z",
+   "pushed_at": "2026-11-17T20:38:21.692Z",
+   "archived": false,
+   "share": 1,
+   "hosts": {
+    "gitlab": "https://gitlab.com/korczis/openttd-prismatic-bridge"
+   },
+   "site": null,
+   "supervised": false,
+   "category": "media",
+   "curated": false
   },
   {
    "name": "algoglyph",
@@ -5354,7 +5391,7 @@
    ],
    "stars": 0,
    "created_at": "2026-11-11T18:09:38Z",
-   "pushed_at": "2026-11-17T11:37:26Z",
+   "pushed_at": "2026-11-17T19:23:49Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -5368,7 +5405,7 @@
   {
    "name": "majordomus-reel",
    "description": "A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound",
-   "language": "HTML",
+   "language": "JavaScript",
    "topics": [
     "ai-agents",
     "ffmpeg",
@@ -5379,7 +5416,7 @@
    ],
    "stars": 0,
    "created_at": "2026-10-23T00:51:59Z",
-   "pushed_at": "2026-11-17T11:12:12Z",
+   "pushed_at": "2026-11-17T19:23:27Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -5391,21 +5428,36 @@
    "curated": true
   },
   {
-   "name": "openttd-prismatic-bridge",
-   "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
-   "language": "Python",
-   "topics": [],
+   "name": "korczis.github.io",
+   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+   "language": "JavaScript",
+   "topics": [
+    "accessibility",
+    "ai-agents",
+    "alpinejs",
+    "chartjs",
+    "cytoscape",
+    "echarts",
+    "flowbite",
+    "github-pages",
+    "majordomus",
+    "p5js",
+    "personal-website",
+    "portfolio",
+    "tailwindcss",
+    "zola"
+   ],
    "stars": 0,
-   "created_at": "2026-07-23T22:00:54.776Z",
-   "pushed_at": "2026-11-17T10:53:29.397Z",
+   "created_at": "2024-12-24T16:48:15Z",
+   "pushed_at": "2026-11-17T12:21:41Z",
    "archived": false,
-   "share": 1,
+   "share": 0.92,
    "hosts": {
-    "gitlab": "https://gitlab.com/korczis/openttd-prismatic-bridge"
+    "github": "https://github.com/korczis/korczis.github.io"
    },
    "site": null,
-   "supervised": false,
-   "category": "media",
+   "supervised": true,
+   "category": "web",
    "curated": false
   },
   {
@@ -5434,57 +5486,6 @@
    "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
    "supervised": true,
    "category": "knowledge",
-   "curated": true
-  },
-  {
-   "name": "korczis.github.io",
-   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-   "language": "JavaScript",
-   "topics": [
-    "accessibility",
-    "ai-agents",
-    "alpinejs",
-    "chartjs",
-    "cytoscape",
-    "echarts",
-    "flowbite",
-    "github-pages",
-    "majordomus",
-    "p5js",
-    "personal-website",
-    "portfolio",
-    "tailwindcss",
-    "zola"
-   ],
-   "stars": 0,
-   "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-17T03:10:28Z",
-   "archived": false,
-   "share": 0.93,
-   "hosts": {
-    "github": "https://github.com/korczis/korczis.github.io"
-   },
-   "site": null,
-   "supervised": true,
-   "category": "web",
-   "curated": false
-  },
-  {
-   "name": "sonic-playground",
-   "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-   "language": "Python",
-   "topics": [],
-   "stars": 0,
-   "created_at": "2026-11-12T00:48:36Z",
-   "pushed_at": "2026-11-16T21:07:30Z",
-   "archived": false,
-   "share": 1,
-   "hosts": {
-    "github": "https://github.com/korczis/sonic-playground"
-   },
-   "site": "https://korczis.github.io/sonic-playground/",
-   "supervised": true,
-   "category": "media",
    "curated": true
   },
   {

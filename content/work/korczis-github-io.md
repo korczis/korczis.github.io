@@ -3,8 +3,8 @@
 title = "korczis.github.io"
 description = "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus."
 template = "work.html"
-weight = 5
-updated = "2026-11-17T03:10:07Z"
+weight = 7
+updated = "2026-11-17T12:21:11Z"
 
 [taxonomies]
 tags = ["Web", "JavaScript", "HTML", "CSS"]

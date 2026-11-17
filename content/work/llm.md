@@ -3,7 +3,7 @@
 title = "llm"
 description = "Local-first, provider-agnostic archive of AI conversations (ChatGPT, Claude, Gemini, Codex) — immutable, content-addressed, searchable evidence layer built in…"
 template = "work.html"
-weight = 14
+weight = 15
 updated = "2026-08-21T13:01:31Z"
 
 [taxonomies]

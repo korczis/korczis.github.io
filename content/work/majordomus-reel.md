@@ -3,8 +3,8 @@
 title = "Majordomus reel"
 description = "A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound"
 template = "work.html"
-weight = 1
-updated = "2026-11-17T11:11:50Z"
+weight = 5
+updated = "2026-11-17T19:23:00Z"
 
 [taxonomies]
 tags = ["Media and art", "JavaScript", "HTML", "Shell"]
@@ -26,10 +26,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**Majordomus reel** is a project in [Media and art](@/projects/media.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (50.5 %), with [HTML](@/glossary/html.md), [Shell](@/glossary/shell.md) and [Python](@/glossary/python.md).
+**Majordomus reel** is a project in [Media and art](@/projects/media.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (51.2 %), with [HTML](@/glossary/html.md), [Shell](@/glossary/shell.md) and [Python](@/glossary/python.md).
 
-The [repository](@/glossary/repository.md) was created in October 2026; its latest [commit](@/glossary/commit.md) is from 17 November 2026. It reads “feat(reel): derive every Majordomus fact from the newest release, gate typed ones”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created in October 2026; its latest [commit](@/glossary/commit.md) is from 17 November 2026. It reads “feat(facts): pre-render a release from the commit that declares it, publish only when the tag agrees”. That places it among the projects active in the last 12 months.
 
 It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/majordomus-reel/>.
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 22 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 25 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

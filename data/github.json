@@ -1,6 +1,6 @@
 {
   "schema": "korczis-hub-github/v1",
-  "generated_at": "2026-11-17T12:07:53Z",
+  "generated_at": "2026-11-17T21:08:25Z",
   "profile": {
     "login": "korczis",
     "name": "Tomas Korcak",
@@ -12,7 +12,7 @@
     "public_repos": 198
   },
   "contributions": {
-    "total": 21609,
+    "total": 21680,
     "from": "2025-11-16",
     "to": "2026-11-17",
     "days": [
@@ -1478,11 +1478,11 @@
       ],
       [
         "2026-11-16",
-        277
+        279
       ],
       [
         "2026-11-17",
-        89
+        158
       ]
     ]
   },
@@ -1490,7 +1490,7 @@
     {
       "name": "JavaScript",
       "color": "#f1e05a",
-      "repos": 35
+      "repos": 36
     },
     {
       "name": "Ruby",
@@ -1528,13 +1528,13 @@
       "repos": 5
     },
     {
-      "name": "HTML",
-      "color": "#e34c26",
-      "repos": 4
-    },
-    {
       "name": "C#",
       "color": "#7355dd",
+      "repos": 3
+    },
+    {
+      "name": "Dockerfile",
+      "color": "#384d54",
       "repos": 3
     },
     {
@@ -1550,7 +1550,7 @@
       "language": "Rust",
       "license": "MIT",
       "created_at": "2026-09-03T20:24:57Z",
-      "pushed_at": "2026-11-17T12:06:38Z",
+      "pushed_at": "2026-11-17T20:57:51Z",
       "activity": "active",
       "archived": false,
       "fork": false,
@@ -1565,7 +1565,7 @@
       "language": "JavaScript",
       "license": "MIT",
       "created_at": "2026-10-01T21:05:33Z",
-      "pushed_at": "2026-11-17T11:47:56Z",
+      "pushed_at": "2026-11-17T20:18:14Z",
       "activity": "active",
       "archived": false,
       "fork": false,
@@ -1580,7 +1580,7 @@
       "language": "TypeScript",
       "license": "MIT",
       "created_at": "2026-11-11T18:09:38Z",
-      "pushed_at": "2026-11-17T11:37:26Z",
+      "pushed_at": "2026-11-17T19:23:49Z",
       "activity": "active",
       "archived": false,
       "fork": false,
@@ -1622,10 +1622,10 @@
     "majordomus-reel": {
       "stars": 0,
       "forks": 0,
-      "language": "HTML",
+      "language": "JavaScript",
       "license": "MIT",
       "created_at": "2026-10-23T00:51:59Z",
-      "pushed_at": "2026-11-17T11:12:12Z",
+      "pushed_at": "2026-11-17T19:23:27Z",
       "activity": "active",
       "archived": false,
       "fork": false,
@@ -1670,7 +1670,7 @@
       "language": "Python",
       "license": "MIT",
       "created_at": "2026-11-12T00:48:36Z",
-      "pushed_at": "2026-11-16T21:07:30Z",
+      "pushed_at": "2026-11-17T20:53:34Z",
       "activity": "active",
       "archived": false,
       "fork": false,

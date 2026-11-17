@@ -3,8 +3,8 @@
 title = "Majordomus reel"
 description = "Hlas, snímky, hudba i zvuk, vše generované a verzované jako software."
 template = "work.html"
-weight = 1
-updated = "2026-11-17T11:11:50Z"
+weight = 5
+updated = "2026-11-17T19:23:00Z"
 
 [taxonomies]
 tags = ["Média a umění", "JavaScript", "HTML", "Shell"]
@@ -26,10 +26,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**Majordomus reel** je projekt z kategorie [Média a umění](@/projects/media.cs.md). Jeho kód je napsaný hlavně v jazyce [JavaScript](@/glossary/javascript.cs.md) (50,5 %), dále [HTML](@/glossary/html.cs.md), [Shell](@/glossary/shell.cs.md) a [Python](@/glossary/python.cs.md).
+**Majordomus reel** je projekt z kategorie [Média a umění](@/projects/media.cs.md). Jeho kód je napsaný hlavně v jazyce [JavaScript](@/glossary/javascript.cs.md) (51,2 %), dále [HTML](@/glossary/html.cs.md), [Shell](@/glossary/shell.cs.md) a [Python](@/glossary/python.cs.md).
 
-[Repozitář](@/glossary/repository.cs.md) vznikl 23. října 2026; poslední [commit](@/glossary/commit.cs.md) je z 17. listopadu 2026. Zní „feat(reel): derive every Majordomus fact from the newest release, gate typed ones“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+[Repozitář](@/glossary/repository.cs.md) vznikl 23. října 2026; poslední [commit](@/glossary/commit.cs.md) je z 17. listopadu 2026. Zní „feat(facts): pre-render a release from the commit that declares it, publish only when the tag agrees“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 
 Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/majordomus-reel/>.
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 22 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 25 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

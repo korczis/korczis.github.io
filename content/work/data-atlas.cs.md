@@ -3,7 +3,7 @@
 title = "Data Atlas"
 description = "Datové sady, katastr, doprava, dálkový průzkum a prostorová analytika na jedné prohledávatelné stránce."
 template = "work.html"
-weight = 8
+weight = 9
 updated = "2026-11-16T19:15:49Z"
 
 [taxonomies]

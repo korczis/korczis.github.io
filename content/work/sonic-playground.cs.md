@@ -3,8 +3,8 @@
 title = "Sonic Playground"
 description = "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita."
 template = "work.html"
-weight = 7
-updated = "2026-11-16T21:02:24Z"
+weight = 2
+updated = "2026-11-17T20:47:37Z"
 
 [taxonomies]
 tags = ["Média a umění", "Python", "JavaScript", "HTML"]
@@ -28,7 +28,7 @@ tone = "night"
 +++
 **Sonic Playground** je projekt z kategorie [Média a umění](@/projects/media.cs.md). Jeho kód je napsaný hlavně v jazyce [Python](@/glossary/python.cs.md) (40,5 %), dále [JavaScript](@/glossary/javascript.cs.md), [HTML](@/glossary/html.cs.md) a [Shell](@/glossary/shell.cs.md).
 
-[Repozitář](@/glossary/repository.cs.md) vznikl 12. listopadu 2026; poslední [commit](@/glossary/commit.cs.md) je z 16. listopadu 2026. Zní „Merge branch 'fix/probe-links-second-look': the second look reads its answer like the first; pennyblack cited archived“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+[Repozitář](@/glossary/repository.cs.md) vznikl 12. listopadu 2026; poslední [commit](@/glossary/commit.cs.md) je z 17. listopadu 2026. Zní „Merge branch 'fix/spotify-crawl-topup': the crawl's top-up reads every rendered row; progress visible from any tab“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 
 Je postavený na [Elixir](@/glossary/elixir.cs.md).
 

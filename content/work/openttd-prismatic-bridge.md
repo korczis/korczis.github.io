@@ -3,8 +3,8 @@
 title = "openttd-prismatic-bridge"
 description = "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform"
 template = "work.html"
-weight = 15
-updated = "2026-07-24T16:40:44Z"
+weight = 1
+updated = "2026-11-17T20:48:46Z"
 
 [taxonomies]
 tags = ["Media and art", "Python", "HTML", "Squirrel"]
@@ -15,7 +15,7 @@ og_title = "openttd-prismatic-bridge: REST/Swagger bridge onto OpenTTD's Admin N
 og_image = "og/work-openttd-prismatic-bridge.png"
 schema = "project"
 keywords = ["openttd-prismatic-bridge", "Media and art", "Python", "HTML", "Squirrel", "Tomas Korcak"]
-terms = ["python", "html", "css", "shell", "data-visualisation", "repository", "commit", "open-source"]
+terms = ["python", "html", "shell", "css", "data-visualisation", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -26,8 +26,8 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**openttd-prismatic-bridge** is a project in [Media and art](@/projects/media.md). Its code is written mainly in [Python](@/glossary/python.md) (65.7 %), with [HTML](@/glossary/html.md), Squirrel and [CSS](@/glossary/css.md).
+**openttd-prismatic-bridge** is a project in [Media and art](@/projects/media.md). Its code is written mainly in [Python](@/glossary/python.md) (65.4 %), with [HTML](@/glossary/html.md), Squirrel and [Shell](@/glossary/shell.md).
 
-The [repository](@/glossary/repository.md) was created in July 2026; its latest [commit](@/glossary/commit.md) is from 24 July 2026. It reads “Doc: document the real prismatic-platform decision engine (Phase 3)”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created in July 2026; its latest [commit](@/glossary/commit.md) is from 17 November 2026. It reads “Add: a live check that /decision/pull leaves a decision's settings on the running AI”. That places it among the projects active in the last 12 months.
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 10 commits as a heartbeat, one lane per commit type (feat, fix, docs…), from a snapshot refreshed every 6 hours. The concepts below are explained in the [glossary](@/glossary/_index.md).
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 13 commits as a heartbeat, one lane per commit type (feat, fix, docs…), from a snapshot refreshed every 6 hours. The concepts below are explained in the [glossary](@/glossary/_index.md).

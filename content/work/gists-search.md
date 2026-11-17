@@ -3,7 +3,7 @@
 title = "Gists search"
 description = "Catalogue, enrichment and search over a mirror of my gists."
 template = "work.html"
-weight = 12
+weight = 13
 updated = "2026-08-27T20:26:10Z"
 
 [taxonomies]

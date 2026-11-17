@@ -3,7 +3,7 @@
 title = "vomaste.cz"
 description = "vomaste.cz: projekt z kategorie Nástroje, hlavní jazyk JavaScript, poslední commit 8. listopadu 2026."
 template = "work.html"
-weight = 11
+weight = 12
 updated = "2026-11-08T20:48:37Z"
 
 [taxonomies]

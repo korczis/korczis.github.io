@@ -3,7 +3,7 @@
 title = "Crisis map"
 description = "Incident reports, normalised, geocoded and mapped."
 template = "work.html"
-weight = 9
+weight = 10
 updated = "2026-11-16T19:15:44Z"
 
 [taxonomies]

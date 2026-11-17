@@ -3,8 +3,8 @@
 title = "Sonic Playground"
 description = "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme"
 template = "work.html"
-weight = 7
-updated = "2026-11-16T21:02:24Z"
+weight = 2
+updated = "2026-11-17T20:47:37Z"
 
 [taxonomies]
 tags = ["Media and art", "Python", "JavaScript", "HTML"]
@@ -28,7 +28,7 @@ tone = "night"
 +++
 **Sonic Playground** is a project in [Media and art](@/projects/media.md). Its code is written mainly in [Python](@/glossary/python.md) (40.5 %), with [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md) and [Shell](@/glossary/shell.md).
 
-The [repository](@/glossary/repository.md) was created in November 2026; its latest [commit](@/glossary/commit.md) is from 16 November 2026. It reads “Merge branch 'fix/probe-links-second-look': the second look reads its answer like the first; pennyblack cited archived”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created in November 2026; its latest [commit](@/glossary/commit.md) is from 17 November 2026. It reads “Merge branch 'fix/spotify-crawl-topup': the crawl's top-up reads every rendered row; progress visible from any tab”. That places it among the projects active in the last 12 months.
 
 It is built with [Elixir](@/glossary/elixir.md).
 

@@ -1,6 +1,6 @@
 {
  "schema": "korczis-hub-recent/v1",
- "generated_at": "2026-11-17T12:17:07Z",
+ "generated_at": "2026-11-17T21:17:02Z",
  "window_days": 1461,
  "periods": [
   {
@@ -20,15 +20,751 @@
  "candidates": 74,
  "repos": [
   {
+   "name": "openttd-prismatic-bridge",
+   "period": 12,
+   "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
+   "category": "media",
+   "language": "Python",
+   "created_at": "2026-07-23T22:00:54.776Z",
+   "last_commit": "2026-11-17T21:48:46.000+01:00",
+   "last_message": "Add: a live check that /decision/pull leaves a decision's settings on the running AI",
+   "commits": [
+    {
+     "at": "2026-11-17T21:48:46.000+01:00",
+     "message": "Add: a live check that /decision/pull leaves a decision's settings on the running AI",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/ffcc5386fc91be7c8192f4b477e8b72c11c4f90e"
+    },
+    {
+     "at": "2026-11-17T21:38:39.000+01:00",
+     "message": "Doc: README says how /decision/pull keeps a decision's settings on a running AI",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/ada69827cab271e5446f28d09a11c74446b7df18"
+    },
+    {
+     "at": "2026-11-17T21:38:19.000+01:00",
+     "message": "Fix: /decision/pull sets a company's decided settings on its running AI instead of dropping them",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/1580b4b7159386616d0c5e14b147e6a4f2ade920"
+    },
+    {
+     "at": "2026-07-24T18:40:44.000+02:00",
+     "message": "Doc: document the real prismatic-platform decision engine (Phase 3)",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/bce9937a8eb967b127e437f0f93d1c0f5f649ae9"
+    },
+    {
+     "at": "2026-07-24T18:17:50.000+02:00",
+     "message": "Add: Flowbite landing page at / + local asset pipeline (Tailwind v4, no CDN)",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/b60bcde2411061e71904f6731c428cf1438e65ef"
+    },
+    {
+     "at": "2026-07-24T18:17:37.000+02:00",
+     "message": "Fix: /decision/pull company id off-by-one (0-indexed API vs 1-indexed console)",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/07549a449550969d75529e2289e5df82d7f301f8"
+    },
+    {
+     "at": "2026-07-24T17:44:35.000+02:00",
+     "message": "Add: contract detail and cadastral parcel lookup to /legal dashboard",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/58bc5550d2f9c97e50f60da52b38f01f9524b1d7"
+    },
+    {
+     "at": "2026-07-24T17:28:36.000+02:00",
+     "message": "Add direnv support for local secrets (.envrc.local)",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/20a8dcabd6d276eed47046411939fad9e612bfcd"
+    },
+    {
+     "at": "2026-07-24T16:00:00.000+02:00",
+     "message": "Add: real map layer to /legal -- OSM base + geocoding + ČÚZK cadastral WMS",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/8c2aa4837bd38b017bcd569d6fef965a8fcf13c4"
+    },
+    {
+     "at": "2026-07-24T04:00:17.000+02:00",
+     "message": "Add: /legal dashboard -- real, live Czech open-data lookups (ARES + Hlidac Statu)",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/1ae9481ab2c795c6e6e2ec7a569b290f8be430eb"
+    },
+    {
+     "at": "2026-07-24T00:23:31.000+02:00",
+     "message": "Phase 2: give PrismaticAI a real strategy (single-town bus route)",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/d516cd0e283e0e64bd6cdc626caecae628cdf4d6"
+    },
+    {
+     "at": "2026-07-24T00:12:05.000+02:00",
+     "message": "Add architecture diagrams and a roadmap toward Prismatic's OSINT/DD/modeling apps",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/138e9cee451a13bcef59fa83342a6f4d33bcf40c"
+    },
+    {
+     "at": "2026-07-23T23:42:42.000+02:00",
+     "message": "Add OpenTTD <-> Prismatic bridge: REST/Swagger front door onto the Admin Network",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/b13f3e9ba7f7af40d183ecf7bcc6827bca5c0e9f"
+    }
+   ],
+   "languages": [
+    {
+     "name": "Python",
+     "share": 65.4
+    },
+    {
+     "name": "HTML",
+     "share": 21.6
+    },
+    {
+     "name": "Squirrel",
+     "share": 8.7
+    },
+    {
+     "name": "Shell",
+     "share": 3.8
+    },
+    {
+     "name": "CSS",
+     "share": 0.4
+    }
+   ],
+   "readme": "REST/Swagger front door onto a running OpenTTD dedicated server, so prismatic-platform (or anything else) can read game state and drive company AIs without speaking OpenTTD's binary Admin Network protocol itself.",
+   "topics": [],
+   "hosts": {
+    "gitlab": "https://gitlab.com/korczis/openttd-prismatic-bridge"
+   },
+   "site": null,
+   "curated": false,
+   "stars": 0,
+   "supervised": false
+  },
+  {
+   "name": "sonic-playground",
+   "period": 12,
+   "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+   "category": "media",
+   "language": "Python",
+   "created_at": "2026-11-12T00:48:36Z",
+   "last_commit": "2026-11-17T20:47:37Z",
+   "last_message": "Merge branch 'fix/spotify-crawl-topup': the crawl's top-up reads every rendered row; progress visible from any tab",
+   "commits": [
+    {
+     "at": "2026-11-17T20:47:37Z",
+     "message": "Merge branch 'fix/spotify-crawl-topup': the crawl's top-up reads every rendered row; progress visible from any tab",
+     "url": "https://github.com/korczis/sonic-playground/commit/aad7683aa9a7f8393db4dcfe693d891a594ab40c"
+    },
+    {
+     "at": "2026-11-17T20:37:46Z",
+     "message": "fix(spotify): the crawl's top-up reads every rendered row; progress visible from any tab",
+     "url": "https://github.com/korczis/sonic-playground/commit/922ecf9e2dbeff5d1fac0f53b7327c714dcfdaf3"
+    },
+    {
+     "at": "2026-11-16T21:02:24Z",
+     "message": "Merge branch 'fix/probe-links-second-look': the second look reads its answer like the first; pennyblack cited archived",
+     "url": "https://github.com/korczis/sonic-playground/commit/69025de9edff3a4a995de935a32952c32599ebee"
+    },
+    {
+     "at": "2026-11-16T20:45:55Z",
+     "message": "fix(probe-links): the second look reads its answer like the first; pennyblack cited archived",
+     "url": "https://github.com/korczis/sonic-playground/commit/b0bf26c7dab72e8d6fc37a9ad1e4e70ed2887301"
+    },
+    {
+     "at": "2026-11-16T20:35:09Z",
+     "message": "Merge branch 'fix/probe-links-transient': 406 is a refusal; a passing 5xx or silence is asked once more",
+     "url": "https://github.com/korczis/sonic-playground/commit/0fdb765fbfc437cd609531f68ba95237c153701b"
+    },
+    {
+     "at": "2026-11-16T20:03:56Z",
+     "message": "fix(probe-links): 406 is a refusal; a passing 5xx or silence is asked once more",
+     "url": "https://github.com/korczis/sonic-playground/commit/7d9a264f947e82fa426f566d6a7d00086cdceb8d"
+    },
+    {
+     "at": "2026-11-16T04:27:33Z",
+     "message": "Merge branch 'feature/visualizer-background': a calm picture behind every page while the player plays",
+     "url": "https://github.com/korczis/sonic-playground/commit/94cf51d8f6f179341a51fe8626becf23b23dd948"
+    },
+    {
+     "at": "2026-11-16T03:58:12Z",
+     "message": "feat(visualizer): a calm picture behind every page while the player plays",
+     "url": "https://github.com/korczis/sonic-playground/commit/f148eb877b4e6d0da8df122e2139f750bda79f77"
+    },
+    {
+     "at": "2026-11-15T20:37:21Z",
+     "message": "Merge branch 'feature/visualizer': a Winamp-style visualiser, full screen and behind the hero, and a turning mosaic",
+     "url": "https://github.com/korczis/sonic-playground/commit/2d75536428bcb5b158e451db4756eeef518d53c8"
+    },
+    {
+     "at": "2026-11-15T20:03:39Z",
+     "message": "Merge remote-tracking branch 'origin/main' into feature/visualizer",
+     "url": "https://github.com/korczis/sonic-playground/commit/de9d16e9bc805fe7502b672711eae96685feb39a"
+    },
+    {
+     "at": "2026-11-15T20:01:58Z",
+     "message": "fix(visualizer): an independent review's findings: unobtrusive, keyboard-safe, calm hero",
+     "url": "https://github.com/korczis/sonic-playground/commit/c0f96327fe9dc2378df7305ae3ae0d4e3b7b7fa9"
+    },
+    {
+     "at": "2026-11-15T19:48:40Z",
+     "message": "Merge branch 'chore/derived-attributes': the derive's outputs are declared merge=derived",
+     "url": "https://github.com/korczis/sonic-playground/commit/987785cc123bba00be1f813ce460e0f186f5037d"
+    },
+    {
+     "at": "2026-11-15T19:19:46Z",
+     "message": "Merge branch 'fix/official-videos': JPattersson's Elevator embeds the label's own upload",
+     "url": "https://github.com/korczis/sonic-playground/commit/d634e9e4ad516d115f1e18b21745824ed343421c"
+    },
+    {
+     "at": "2026-11-15T18:47:21Z",
+     "message": "fix(content): JPattersson's Elevator embeds the label's own upload",
+     "url": "https://github.com/korczis/sonic-playground/commit/e61711e18e1075832b9f834ed8a41876653b2fdf"
+    },
+    {
+     "at": "2026-11-15T18:47:12Z",
+     "message": "feat(visualizer): Winamp-style visualiser, full screen and in the hero, and a turning mosaic",
+     "url": "https://github.com/korczis/sonic-playground/commit/308258e4c32d4541e0b1ec0f6d68654672e12f58"
+    },
+    {
+     "at": "2026-11-15T18:34:22Z",
+     "message": "build(attributes): the derive's outputs are declared merge=derived",
+     "url": "https://github.com/korczis/sonic-playground/commit/11032e7106b27fe883dcd045af270a397fd81896"
+    },
+    {
+     "at": "2026-11-15T18:24:52Z",
+     "message": "Merge branch 'fix/hanging-tree-notes': the sound-alike notes record the owner's choice of a page",
+     "url": "https://github.com/korczis/sonic-playground/commit/53845cdaec7a3f645f8d82417c405f8f1ca8ca85"
+    },
+    {
+     "at": "2026-11-15T18:11:15Z",
+     "message": "Merge branch 'fix/player-video-layout': the video stays uncovered in every language, repeat state, width and height",
+     "url": "https://github.com/korczis/sonic-playground/commit/dc3b5e849b606ac43968e3f2df6d54ed9787aae3"
+    },
+    {
+     "at": "2026-11-15T18:04:16Z",
+     "message": "fix(data): the Hanging Tree sound-alike notes record the owner's choice of a page",
+     "url": "https://github.com/korczis/sonic-playground/commit/2c3b20dd585d26002a1df9eb9bd4751c9cc91ef8"
+    },
+    {
+     "at": "2026-11-15T17:55:16Z",
+     "message": "Merge branch 'feature/backlog-wave11': the last 11 backlog songs, each in English and Czech",
+     "url": "https://github.com/korczis/sonic-playground/commit/379b42dbc69ca928fff9668c7b665677271a9d18"
+    },
+    {
+     "at": "2026-11-15T17:53:44Z",
+     "message": "fix(player): the video stays uncovered in every language, repeat state, width and height",
+     "url": "https://github.com/korczis/sonic-playground/commit/c7e9855d1b81018ac6afd11e23872509165c3f2e"
+    },
+    {
+     "at": "2026-11-15T17:39:57Z",
+     "message": "Merge branch 'chore/pro-anchors-issue': PRO_ANCHORS cites I4594",
+     "url": "https://github.com/korczis/sonic-playground/commit/db475911f87d6c17152ed588265d1d7fc6ff3e50"
+    },
+    {
+     "at": "2026-11-15T17:31:50Z",
+     "message": "Merge branch 'fix/cilmi-official-upload': Cry Me a River embeds Universal's official upload",
+     "url": "https://github.com/korczis/sonic-playground/commit/b546062e107b75f6ad6c36890593f25cd6f73389"
+    },
+    {
+     "at": "2026-11-15T17:30:40Z",
+     "message": "feat(content): the last 11 backlog songs, each in English and Czech",
+     "url": "https://github.com/korczis/sonic-playground/commit/9b7f093b19768b60043f85b17f1f0b6da556e4e5"
+    },
+    {
+     "at": "2026-11-15T17:21:06Z",
+     "message": "Merge branch 'fix/gone-videos': the three gone videos replaced by the distributors' own uploads",
+     "url": "https://github.com/korczis/sonic-playground/commit/ba65fbdca6775f6cedc3f6b16b2e786e25f15e54"
+    },
+    {
+     "at": "2026-11-15T17:07:27Z",
+     "message": "fix(content): the three gone videos replaced by the distributors' own uploads",
+     "url": "https://github.com/korczis/sonic-playground/commit/450fabf949cd3151db1a6c13020798198180d0f5"
+    },
+    {
+     "at": "2026-11-15T16:59:00Z",
+     "message": "fix(content): Cry Me a River embeds Universal's official upload, not a covers channel",
+     "url": "https://github.com/korczis/sonic-playground/commit/3790562ce49227039453b18b764316b7fd5851cc"
+    },
+    {
+     "at": "2026-11-15T16:43:48Z",
+     "message": "docs(components): PRO_ANCHORS cites I4594, the kit half of lifting it",
+     "url": "https://github.com/korczis/sonic-playground/commit/176bcbf0503e9d1fe7534f724b5544d1f85d012f"
+    },
+    {
+     "at": "2026-11-15T16:28:46Z",
+     "message": "Merge branch 'fix/player-video-never-hidden': the playing video is never covered, and the bar says what it does",
+     "url": "https://github.com/korczis/sonic-playground/commit/56a9c924bf03c96c68f99cf17e41c797529f0265"
+    },
+    {
+     "at": "2026-11-15T16:06:54Z",
+     "message": "fix(player): the playing video is never covered, and the bar says what it does",
+     "url": "https://github.com/korczis/sonic-playground/commit/fb76f4bd30872afc917a4f5102db59b20c4e2a64"
+    }
+   ],
+   "languages": [
+    {
+     "name": "Python",
+     "share": 40.5
+    },
+    {
+     "name": "JavaScript",
+     "share": 34.3
+    },
+    {
+     "name": "HTML",
+     "share": 20.1
+    },
+    {
+     "name": "Shell",
+     "share": 3.8
+    },
+    {
+     "name": "CSS",
+     "share": 1.3
+    }
+   ],
+   "readme": "A hand-picked music journal: one review per track, explored by genre, feeling and mood, played in a bottom-bar player that keeps going while you browse. Live at https://korczis.github.io/sonic-playground/.",
+   "topics": [],
+   "hosts": {
+    "github": "https://github.com/korczis/sonic-playground"
+   },
+   "site": "https://korczis.github.io/sonic-playground/",
+   "curated": true,
+   "stars": 0,
+   "supervised": true
+  },
+  {
+   "name": "oscilla",
+   "period": 12,
+   "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+   "category": "science",
+   "language": "JavaScript",
+   "created_at": "2026-10-01T21:05:33Z",
+   "last_commit": "2026-11-17T20:18:13Z",
+   "last_message": "chore(release): záznam v3.41.3 (#596)",
+   "commits": [
+    {
+     "at": "2026-11-17T20:18:13Z",
+     "message": "chore(release): záznam v3.41.3 (#596)",
+     "url": "https://github.com/korczis/oscilla/commit/4682eea40739a7b37a7be04d3d19cd7be0dd5226"
+    },
+    {
+     "at": "2026-11-17T19:53:24Z",
+     "message": "chore(release): record v3.41.3",
+     "url": "https://github.com/korczis/oscilla/commit/21359a7ba3c813c180f9eff774ed5c85cddc792c"
+    },
+    {
+     "at": "2026-11-17T19:39:08Z",
+     "message": "chore(release): v3.41.3 (#595)",
+     "url": "https://github.com/korczis/oscilla/commit/fc949955a941227e2158f9bbce771a18833c1782"
+    },
+    {
+     "at": "2026-11-17T17:17:14Z",
+     "message": "chore(release): v3.41.3",
+     "url": "https://github.com/korczis/oscilla/commit/339ddc340ad7a6140b745e6b368b54248633296b"
+    },
+    {
+     "at": "2026-11-17T17:12:35Z",
+     "message": "fix(ui): řízené měření v Měření česky nad anglickými daty (U115, pass 7a) (#593)",
+     "url": "https://github.com/korczis/oscilla/commit/0b21624551d66d6b7b8f7ee2afd2edeb3c27d91d"
+    },
+    {
+     "at": "2026-11-17T14:59:39Z",
+     "message": "Merge branch 'main' into fix/czech-pass-7",
+     "url": "https://github.com/korczis/oscilla/commit/a805af99c3470aed294389075cdaad4673a590a0"
+    },
+    {
+     "at": "2026-11-17T13:27:00Z",
+     "message": "chore(review): the #593 verdict (Czech pass 7a, U115), merge under the legs condition",
+     "url": "https://github.com/korczis/oscilla/commit/207fab91cee2da92a66b9e121953edf1e7041070"
+    },
+    {
+     "at": "2026-11-17T12:59:58Z",
+     "message": "chore(plan): E077 nejen na webkitu, přetekl i firefox/http (#594)",
+     "url": "https://github.com/korczis/oscilla/commit/9af695a3b144d060e75006755778f0a9d6c387fa"
+    },
+    {
+     "at": "2026-11-17T12:54:54Z",
+     "message": "chore(plan): E077 is not webkit-only, firefox/http overran too (#593, oscilla-c3)",
+     "url": "https://github.com/korczis/oscilla/commit/1405b9542e6799ca4f7013d019b8a7dc0af4f602"
+    },
+    {
+     "at": "2026-11-17T11:47:03Z",
+     "message": "test(visual): MEASURE references re-accepted for the Czech guided flow (U115, pass 7a)",
+     "url": "https://github.com/korczis/oscilla/commit/b7e36ab5d6a9180796761cb790c10c8cc3264288"
+    },
+    {
+     "at": "2026-11-17T11:42:36Z",
+     "message": "fix(ui): the Measure guided flow speaks Czech over English data (U115, pass 7a)",
+     "url": "https://github.com/korczis/oscilla/commit/c25d0ed4a88ca201f3ea68edf3120de96cda3b90"
+    },
+    {
+     "at": "2026-11-17T10:51:45Z",
+     "message": "chore(release): záznam v3.41.2; U114 hotové (#592)",
+     "url": "https://github.com/korczis/oscilla/commit/5c697d2dfab7184a5f987e157e84108b1714c37a"
+    },
+    {
+     "at": "2026-11-17T10:47:25Z",
+     "message": "chore(release): record v3.41.2; U114 done",
+     "url": "https://github.com/korczis/oscilla/commit/c74a8ad6419e5e739b2d6ae7ffe127bf4bf05e26"
+    },
+    {
+     "at": "2026-11-17T10:36:59Z",
+     "message": "chore(release): v3.41.2 (#591)",
+     "url": "https://github.com/korczis/oscilla/commit/685db9599c9ed669fa296131627b94a1c7d058e2"
+    },
+    {
+     "at": "2026-11-17T09:36:23Z",
+     "message": "chore(release): v3.41.2",
+     "url": "https://github.com/korczis/oscilla/commit/494d7b0db130b0b3f2ba628dc56a0e792cb9af86"
+    },
+    {
+     "at": "2026-11-17T09:28:22Z",
+     "message": "fix(ui): stavy kalibrace česky nad anglickými daty, no-fake-science v3 (U114 b) (#590)",
+     "url": "https://github.com/korczis/oscilla/commit/5af668dffa02f59633065e72256c2e52563910f3"
+    },
+    {
+     "at": "2026-11-17T08:03:03Z",
+     "message": "chore(review): the #590 verdict (Czech pass 6b, U114 b), merge under the legs condition",
+     "url": "https://github.com/korczis/oscilla/commit/67688cecc41e638f21e45e6b9baea5107d1a2b98"
+    },
+    {
+     "at": "2026-11-17T07:15:02Z",
+     "message": "fix(ui): calibrationShown replaces phrases longest first, never inside a word (C3-590-1)",
+     "url": "https://github.com/korczis/oscilla/commit/58aadf2386450ac399d4729c1559539a8cd8fbf2"
+    },
+    {
+     "at": "2026-11-17T07:06:51Z",
+     "message": "test(visual): MEASURE references re-accepted for the Czech calibration display (U114 b)",
+     "url": "https://github.com/korczis/oscilla/commit/e1a718499235c85cda2a57e94c5bc5c88a788f75"
+    },
+    {
+     "at": "2026-11-17T06:59:54Z",
+     "message": "test(v3-ui): calibration-czech opens the older record when older-claim imported it first",
+     "url": "https://github.com/korczis/oscilla/commit/9fc2c5eac93a791413ae227b106d76766ae3cfc2"
+    },
+    {
+     "at": "2026-11-17T06:51:50Z",
+     "message": "fix(ui): the calibration states are shown in Czech over English data (U114 b)",
+     "url": "https://github.com/korczis/oscilla/commit/9059cde05fe8cee87bba85318ea380d0e732b24c"
+    },
+    {
+     "at": "2026-11-17T04:04:28Z",
+     "message": "chore(plan): E070 and U111 done, criteria re-checked on main (#589)",
+     "url": "https://github.com/korczis/oscilla/commit/c442499ecdd9851f570b7ebfd92b1fd62c81e412"
+    },
+    {
+     "at": "2026-11-17T03:48:06Z",
+     "message": "chore(plan): E070 and U111 done, criteria re-checked on main 3273bbbf (verdicts 531.yaml, 544.yaml)",
+     "url": "https://github.com/korczis/oscilla/commit/e1d0121effa367502d8fed7be055a77315cbf180"
+    },
+    {
+     "at": "2026-11-17T02:51:42Z",
+     "message": "chore(release): record v3.41.1 (#588)",
+     "url": "https://github.com/korczis/oscilla/commit/3273bbbfd828058bb4d7c7699cc0685d350dc609"
+    },
+    {
+     "at": "2026-11-17T02:45:31Z",
+     "message": "chore(release): record v3.41.1",
+     "url": "https://github.com/korczis/oscilla/commit/ea82a8e635e976e24ad0726249744dc9ab8208ad"
+    },
+    {
+     "at": "2026-11-17T02:11:49Z",
+     "message": "fix(release): train T27, the Release notes speak Czech (#473, Q104), and release v3.41.1 (#586)",
+     "url": "https://github.com/korczis/oscilla/commit/4543280c08965b5b14b21f2bda6e498b9ddafa0a"
+    },
+    {
+     "at": "2026-11-17T00:01:11Z",
+     "message": "review(t27): rev-seat-2 verdict for PR 586 (train T27, v3.41.1), merge under the legs condition",
+     "url": "https://github.com/korczis/oscilla/commit/4c9b8dffbbc7c7920572b19a5fc5bb3f174d53b8"
+    },
+    {
+     "at": "2026-11-16T23:56:37Z",
+     "message": "chore(release): v3.41.1",
+     "url": "https://github.com/korczis/oscilla/commit/7b3f11d28d75b70951a6e079f3a7b51106585579"
+    },
+    {
+     "at": "2026-11-16T23:17:36Z",
+     "message": "merge(train): #473 42d2e047 into train T27",
+     "url": "https://github.com/korczis/oscilla/commit/f351613067d2ecae9780d02ae690281a572dd446"
+    },
+    {
+     "at": "2026-11-16T23:17:36Z",
+     "message": "merge(train): main into train T27",
+     "url": "https://github.com/korczis/oscilla/commit/79432c5f4f4df3216589d20c3cabf2b9464b1172"
+    }
+   ],
+   "languages": [
+    {
+     "name": "JavaScript",
+     "share": 96.9
+    },
+    {
+     "name": "HTML",
+     "share": 1.9
+    },
+    {
+     "name": "CSS",
+     "share": 1.1
+    },
+    {
+     "name": "Swift",
+     "share": 0
+    },
+    {
+     "name": "Shell",
+     "share": 0
+    }
+   ],
+   "readme": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+   "topics": [
+    "acoustics",
+    "audio",
+    "dsp",
+    "education",
+    "javascript",
+    "signal-processing",
+    "spectrogram",
+    "synthesizer",
+    "web-audio"
+   ],
+   "hosts": {
+    "github": "https://github.com/korczis/oscilla"
+   },
+   "site": "https://korczis.github.io/oscilla/",
+   "curated": true,
+   "stars": 1,
+   "supervised": true
+  },
+  {
+   "name": "prismatic-majordomus",
+   "period": 12,
+   "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+   "category": "ai",
+   "language": "Rust",
+   "created_at": "2026-09-03T20:24:57Z",
+   "last_commit": "2026-11-17T19:41:34Z",
+   "last_message": "Merge pull request #3077 from korczis/integration/train-20261117f",
+   "commits": [
+    {
+     "at": "2026-11-17T19:41:34Z",
+     "message": "Merge pull request #3077 from korczis/integration/train-20261117f",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/ae13be1bd138be3139b4fd9a1a11de8c6b2f7c88"
+    },
+    {
+     "at": "2026-11-17T13:31:00Z",
+     "message": "Merge #3062 (feature/I4324-a-worktree-whose-work-is-in-trunk-is-finished) into the combined top on 7222b343dc",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/41904d87959ae992ef78a2abdbf881be687002af"
+    },
+    {
+     "at": "2026-11-17T13:17:42Z",
+     "message": "Merge #3070 (plan/i4628-a-finish-over-uncommitted-work-says-so) into the combined top on 7222b343dc",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/54edbb51ac6e92188a86ba2aba3952ca996c7254"
+    },
+    {
+     "at": "2026-11-17T13:08:23Z",
+     "message": "Merge #3068 (fix/a-merge-does-not-borrow-a-foreign-executable) into the combined top on 7222b343dc",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/188d1134bb6c1ce4b9a09e7a03448650459f6f36"
+    },
+    {
+     "at": "2026-11-17T12:41:21Z",
+     "message": "fix(release): the release job records its executable's commit at the build (I4627)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/9cbabdd175ded55842d4b671f3d18387f58d13e5"
+    },
+    {
+     "at": "2026-11-17T08:49:07Z",
+     "message": "docs(plan): I4628's scope names its one case; record I4630",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/05dd86c240345523706b31705ed5678c1cb93f29"
+    },
+    {
+     "at": "2026-11-17T08:40:44Z",
+     "message": "chore(release): declare 1.1.0, the minor release #3062's output requires",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/0807fc1b4222d6bc04d8ba4a1fbdef4fae58d940"
+    },
+    {
+     "at": "2026-11-17T06:32:46Z",
+     "message": "Merge pull request #3069 from korczis/integration/top-20261117b",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/7222b343dcb40ac2a2843111f8bdf7a2aa099774"
+    },
+    {
+     "at": "2026-11-17T03:48:05Z",
+     "message": "docs(plan): a completed finish over uncommitted work says so (I4628)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/e5a19d3b9c964ceece031a92961ed0c1608d45a9"
+    },
+    {
+     "at": "2026-11-17T03:41:20Z",
+     "message": "docs(plan): derive delivery observed at the combined top on e54bbdb12a",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/a5e1f4375620c3ba6755d6ad743a42eb4052bcdb"
+    },
+    {
+     "at": "2026-11-17T03:31:59Z",
+     "message": "test(worktree): cover every changed region of the landed readings and the reclaim",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/0ff5bf34faf8603a0ea22a120d4bd6d4d4634a51"
+    },
+    {
+     "at": "2026-11-17T03:25:35Z",
+     "message": "Merge #3064 (feat/a-build-is-bounded-by-the-machine) into the combined top on e54bbdb12a",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/32c0304f3417a86367e0a271081b05e90f1e9532"
+    },
+    {
+     "at": "2026-11-17T03:17:07Z",
+     "message": "test(derive): the I4627 case pins its shell sort (I4627)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/2f35f30d717bf889ff5b1b3e8605191edb15e50d"
+    },
+    {
+     "at": "2026-11-17T03:05:01Z",
+     "message": "Merge #3047 (fix/resolver-borrows-a-sibling-executable) into the combined top on e54bbdb12a",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/edd387c3c4236aa110cc43ab319224dd774a3cf0"
+    },
+    {
+     "at": "2026-11-17T02:50:30Z",
+     "message": "Merge #3044 (fix/evidence-record-names-suite-coverage) into the combined top on e54bbdb12a",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/de98547925151e671774238fceb1bd61903a4f1f"
+    },
+    {
+     "at": "2026-11-17T02:37:22Z",
+     "message": "fix(derive): a merged crate does not borrow an executable of another generation (I4627)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/728afa4302ce4c641f719b390af5361a88857b40"
+    },
+    {
+     "at": "2026-11-17T02:26:16Z",
+     "message": "Merge #3060 (fix/commit-debt-counts-a-renumbered-reference) into the combined top on e54bbdb12a",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/a280c3279ff25008931db9c4e46c742d6362d0da"
+    },
+    {
+     "at": "2026-11-16T23:20:53Z",
+     "message": "test(evidence): a refused write of the suite line ends the recording there",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/33ae4a9299b8b4ceacd6039a90db78957259e5a1"
+    },
+    {
+     "at": "2026-11-16T23:11:18Z",
+     "message": "feat(build): a local build refuses beside five cargo builds (I3825)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/18c3336cc3e93e4b5ac042e35438fbfa96a8d1df"
+    },
+    {
+     "at": "2026-11-16T23:05:50Z",
+     "message": "Merge pull request #3061 from korczis/plan/i4605-commit-control-character-20261116",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/e54bbdb12a99cd3ff4572f2a1574c1e5566ae8ef"
+    },
+    {
+     "at": "2026-11-16T23:01:18Z",
+     "message": "docs(plan): derive delivery observed at the merge of a134a0f",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/15f1501277d54f3309d851a50827f6be837ffdc0"
+    },
+    {
+     "at": "2026-11-16T22:51:35Z",
+     "message": "docs(plan): derive delivery observed at the merge of a134a0f",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/1acaf648d0ec908da9443f61f292f07b4f7b44da"
+    },
+    {
+     "at": "2026-11-16T22:40:47Z",
+     "message": "Merge origin/master a134a0f into #3062",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/ef77042a47c3c9c4777c1e956b8c222063cd3f91"
+    },
+    {
+     "at": "2026-11-16T22:21:48Z",
+     "message": "Merge origin/master a134a0f into #3047",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/72f490f5ba5ac00d057ce024d956f0b78b396126"
+    },
+    {
+     "at": "2026-11-16T22:07:34Z",
+     "message": "feat(worktree): cleanup offers a worktree whose work is already in the trunk",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/9998ad3f52d0367c654c9eb7affea63047eeeb87"
+    },
+    {
+     "at": "2026-11-16T21:56:56Z",
+     "message": "docs(plan): derive delivery observed at the merge of a134a0f",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/f7b96e7c36981f4351e7546750874975ef73d9ee"
+    },
+    {
+     "at": "2026-11-16T21:54:54Z",
+     "message": "fix(ci): record the renumbered plan commit as history debt (55)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/ebbdac5c5ff4cedd837419c5a65fa4c2fca40a81"
+    },
+    {
+     "at": "2026-11-16T21:47:00Z",
+     "message": "docs(plan): derive delivery observed at the merge of a134a0f",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/b2e60aadd607c21c2b463b2f21486f6643f9d75a"
+    },
+    {
+     "at": "2026-11-16T21:39:01Z",
+     "message": "Merge origin/master a134a0f into #3044",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/d33ba713c5ffd225b1f2b0a0b271a0967b0e40aa"
+    },
+    {
+     "at": "2026-11-16T21:27:40Z",
+     "message": "Merge origin/master a134a0f into #I4605",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/e5ee2d85714622514c93d694fb8a2a51b2f3152e"
+    }
+   ],
+   "languages": [
+    {
+     "name": "Rust",
+     "share": 60.7
+    },
+    {
+     "name": "Shell",
+     "share": 29.6
+    },
+    {
+     "name": "JavaScript",
+     "share": 4.1
+    },
+    {
+     "name": "HTML",
+     "share": 3.8
+    },
+    {
+     "name": "CSS",
+     "share": 0.6
+    },
+    {
+     "name": "Python",
+     "share": 0.4
+    }
+   ],
+   "readme": "Your AI agents say the work is done. Majordomus makes them prove it.",
+   "topics": [
+    "agentic-ai",
+    "ai",
+    "ai-agents",
+    "ai-governance",
+    "claude-code",
+    "cli",
+    "codex",
+    "continuous-integration",
+    "developer-tools",
+    "devops",
+    "gemini",
+    "llm",
+    "llmops",
+    "mcp",
+    "mermaid",
+    "model-context-protocol",
+    "multi-agent",
+    "policy-as-code",
+    "rust"
+   ],
+   "hosts": {
+    "github": "https://github.com/korczis/prismatic-majordomus"
+   },
+   "site": "https://korczis.github.io/prismatic-majordomus/",
+   "curated": true,
+   "stars": 1,
+   "supervised": true
+  },
+  {
    "name": "majordomus-reel",
    "period": 12,
    "description": "A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound",
    "category": "media",
-   "language": "HTML",
+   "language": "JavaScript",
    "created_at": "2026-10-23T00:51:59Z",
-   "last_commit": "2026-11-17T11:11:50Z",
-   "last_message": "feat(reel): derive every Majordomus fact from the newest release, gate typed ones",
+   "last_commit": "2026-11-17T19:23:00Z",
+   "last_message": "feat(facts): pre-render a release from the commit that declares it, publish only when the tag agrees",
    "commits": [
+    {
+     "at": "2026-11-17T19:23:00Z",
+     "message": "feat(facts): pre-render a release from the commit that declares it, publish only when the tag agrees",
+     "url": "https://github.com/korczis/majordomus-reel/commit/bd3d727da0a52c336e76084f521151eefa813c30"
+    },
+    {
+     "at": "2026-11-17T19:11:51Z",
+     "message": "fix(reel): CAPTIONS=1 burns the captions in again",
+     "url": "https://github.com/korczis/majordomus-reel/commit/31138d677e1128347c45a0b39d11a2b4ed289481"
+    },
+    {
+     "at": "2026-11-17T18:47:40Z",
+     "message": "feat(site): derive every length and requirement the page states; no drifting counts in the docs",
+     "url": "https://github.com/korczis/majordomus-reel/commit/0fa0ce88dc7925640aa610512380389f5244d510"
+    },
     {
      "at": "2026-11-17T11:11:50Z",
      "message": "feat(reel): derive every Majordomus fact from the newest release, gate typed ones",
@@ -143,11 +879,11 @@
    "languages": [
     {
      "name": "JavaScript",
-     "share": 50.5
+     "share": 51.2
     },
     {
      "name": "HTML",
-     "share": 48
+     "share": 47.4
     },
     {
      "name": "Shell",
@@ -176,218 +912,135 @@
    "supervised": true
   },
   {
-   "name": "oscilla",
-   "period": 12,
-   "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-   "category": "science",
-   "language": "JavaScript",
-   "created_at": "2026-10-01T21:05:33Z",
-   "last_commit": "2026-11-17T10:51:45Z",
-   "last_message": "chore(release): záznam v3.41.2; U114 hotové (#592)",
-   "commits": [
-    {
-     "at": "2026-11-17T10:51:45Z",
-     "message": "chore(release): záznam v3.41.2; U114 hotové (#592)",
-     "url": "https://github.com/korczis/oscilla/commit/5c697d2dfab7184a5f987e157e84108b1714c37a"
-    },
-    {
-     "at": "2026-11-17T10:47:25Z",
-     "message": "chore(release): record v3.41.2; U114 done",
-     "url": "https://github.com/korczis/oscilla/commit/c74a8ad6419e5e739b2d6ae7ffe127bf4bf05e26"
-    },
-    {
-     "at": "2026-11-17T10:36:59Z",
-     "message": "chore(release): v3.41.2 (#591)",
-     "url": "https://github.com/korczis/oscilla/commit/685db9599c9ed669fa296131627b94a1c7d058e2"
-    },
-    {
-     "at": "2026-11-17T09:36:23Z",
-     "message": "chore(release): v3.41.2",
-     "url": "https://github.com/korczis/oscilla/commit/494d7b0db130b0b3f2ba628dc56a0e792cb9af86"
-    },
-    {
-     "at": "2026-11-17T09:28:22Z",
-     "message": "fix(ui): stavy kalibrace česky nad anglickými daty, no-fake-science v3 (U114 b) (#590)",
-     "url": "https://github.com/korczis/oscilla/commit/5af668dffa02f59633065e72256c2e52563910f3"
-    },
-    {
-     "at": "2026-11-17T08:03:03Z",
-     "message": "chore(review): the #590 verdict (Czech pass 6b, U114 b), merge under the legs condition",
-     "url": "https://github.com/korczis/oscilla/commit/67688cecc41e638f21e45e6b9baea5107d1a2b98"
-    },
-    {
-     "at": "2026-11-17T07:15:02Z",
-     "message": "fix(ui): calibrationShown replaces phrases longest first, never inside a word (C3-590-1)",
-     "url": "https://github.com/korczis/oscilla/commit/58aadf2386450ac399d4729c1559539a8cd8fbf2"
-    },
-    {
-     "at": "2026-11-17T07:06:51Z",
-     "message": "test(visual): MEASURE references re-accepted for the Czech calibration display (U114 b)",
-     "url": "https://github.com/korczis/oscilla/commit/e1a718499235c85cda2a57e94c5bc5c88a788f75"
-    },
-    {
-     "at": "2026-11-17T06:59:54Z",
-     "message": "test(v3-ui): calibration-czech opens the older record when older-claim imported it first",
-     "url": "https://github.com/korczis/oscilla/commit/9fc2c5eac93a791413ae227b106d76766ae3cfc2"
-    },
-    {
-     "at": "2026-11-17T06:51:50Z",
-     "message": "fix(ui): the calibration states are shown in Czech over English data (U114 b)",
-     "url": "https://github.com/korczis/oscilla/commit/9059cde05fe8cee87bba85318ea380d0e732b24c"
-    },
-    {
-     "at": "2026-11-17T04:04:28Z",
-     "message": "chore(plan): E070 and U111 done, criteria re-checked on main (#589)",
-     "url": "https://github.com/korczis/oscilla/commit/c442499ecdd9851f570b7ebfd92b1fd62c81e412"
-    },
-    {
-     "at": "2026-11-17T03:48:06Z",
-     "message": "chore(plan): E070 and U111 done, criteria re-checked on main 3273bbbf (verdicts 531.yaml, 544.yaml)",
-     "url": "https://github.com/korczis/oscilla/commit/e1d0121effa367502d8fed7be055a77315cbf180"
-    },
-    {
-     "at": "2026-11-17T02:51:42Z",
-     "message": "chore(release): record v3.41.1 (#588)",
-     "url": "https://github.com/korczis/oscilla/commit/3273bbbfd828058bb4d7c7699cc0685d350dc609"
-    },
-    {
-     "at": "2026-11-17T02:45:31Z",
-     "message": "chore(release): record v3.41.1",
-     "url": "https://github.com/korczis/oscilla/commit/ea82a8e635e976e24ad0726249744dc9ab8208ad"
-    },
-    {
-     "at": "2026-11-17T02:11:49Z",
-     "message": "fix(release): train T27, the Release notes speak Czech (#473, Q104), and release v3.41.1 (#586)",
-     "url": "https://github.com/korczis/oscilla/commit/4543280c08965b5b14b21f2bda6e498b9ddafa0a"
-    },
-    {
-     "at": "2026-11-17T00:01:11Z",
-     "message": "review(t27): rev-seat-2 verdict for PR 586 (train T27, v3.41.1), merge under the legs condition",
-     "url": "https://github.com/korczis/oscilla/commit/4c9b8dffbbc7c7920572b19a5fc5bb3f174d53b8"
-    },
-    {
-     "at": "2026-11-16T23:56:37Z",
-     "message": "chore(release): v3.41.1",
-     "url": "https://github.com/korczis/oscilla/commit/7b3f11d28d75b70951a6e079f3a7b51106585579"
-    },
-    {
-     "at": "2026-11-16T23:17:36Z",
-     "message": "merge(train): #473 42d2e047 into train T27",
-     "url": "https://github.com/korczis/oscilla/commit/f351613067d2ecae9780d02ae690281a572dd446"
-    },
-    {
-     "at": "2026-11-16T23:17:36Z",
-     "message": "merge(train): main into train T27",
-     "url": "https://github.com/korczis/oscilla/commit/79432c5f4f4df3216589d20c3cabf2b9464b1172"
-    },
-    {
-     "at": "2026-11-16T23:14:39Z",
-     "message": "merge(main): a0bd12bc (T26 v3.41.0, Q109, V503/V509 stamps) into #473",
-     "url": "https://github.com/korczis/oscilla/commit/42d2e0472664f59f664aa7d44ab5e6476eefdb36"
-    },
-    {
-     "at": "2026-11-16T22:55:54Z",
-     "message": "chore(plan): V503 and V509 done at main db8fef03 (T25, PR 574) (#583)",
-     "url": "https://github.com/korczis/oscilla/commit/a0bd12bcdf9b86189f8243b587bb31c9dc136674"
-    },
-    {
-     "at": "2026-11-16T22:55:18Z",
-     "message": "merge(train): #473 the Release notes speak Czech (Q104, oscilla-ff rebuild) into train T27",
-     "url": "https://github.com/korczis/oscilla/commit/c5e2ac6b721df8a27f0f38e73bbf52a4d71fed9c"
-    },
-    {
-     "at": "2026-11-16T22:17:18Z",
-     "message": "Merge remote-tracking branch 'origin/main' into chore/plan-v503-v509-done",
-     "url": "https://github.com/korczis/oscilla/commit/f2624bc40710fa3693cec0add57fa30da44f4f49"
-    },
-    {
-     "at": "2026-11-16T22:17:02Z",
-     "message": "chore(plan): Q109, the owner's decision on reclaiming worktree disk (node_modules only) (#582)",
-     "url": "https://github.com/korczis/oscilla/commit/62f4aa4077b8dc13b90f898e53e951742cc7d92f"
-    },
-    {
-     "at": "2026-11-16T21:56:51Z",
-     "message": "Merge branch 'main' into chore/plan-q109-disk-sweep",
-     "url": "https://github.com/korczis/oscilla/commit/711591a38ce8c5733843521edead316c0c952f49"
-    },
-    {
-     "at": "2026-11-16T21:56:04Z",
-     "message": "chore(release): record v3.41.0 (#585)",
-     "url": "https://github.com/korczis/oscilla/commit/43d548a48d4678e38144853ed91f6a04b96b3be4"
-    },
-    {
-     "at": "2026-11-16T21:23:28Z",
-     "message": "chore(release): the v3.41.0 record back to its canonical form",
-     "url": "https://github.com/korczis/oscilla/commit/0d13a57665c744e7f5c2f2eeb76324823d82f5f6"
-    },
-    {
-     "at": "2026-11-16T21:20:35Z",
-     "message": "chore(release): record v3.41.0",
-     "url": "https://github.com/korczis/oscilla/commit/e2e73a677c5e1f1aa55734cea0c3b94d8593b0ef"
-    },
-    {
-     "at": "2026-11-16T20:33:36Z",
-     "message": "feat(midi): train T26, V510 MIDI clock out + Rychlost + shell-a11y wait + comment trim, and release v3.41.0 (#581)",
-     "url": "https://github.com/korczis/oscilla/commit/a53486b7c6a4ab528f4e7fb9bfae8eb6b7c39c2e"
-    },
-    {
-     "at": "2026-11-16T19:49:20Z",
-     "message": "chore(plan): V503 and V509 done at main db8fef03 (T25, PR 574)",
-     "url": "https://github.com/korczis/oscilla/commit/e11bb147dd29006c30a04aacde9a065ef3295b7f"
-    }
-   ],
-   "languages": [
-    {
-     "name": "JavaScript",
-     "share": 96.9
-    },
-    {
-     "name": "HTML",
-     "share": 1.9
-    },
-    {
-     "name": "CSS",
-     "share": 1.1
-    },
-    {
-     "name": "Swift",
-     "share": 0
-    },
-    {
-     "name": "Shell",
-     "share": 0
-    }
-   ],
-   "readme": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-   "topics": [
-    "acoustics",
-    "audio",
-    "dsp",
-    "education",
-    "javascript",
-    "signal-processing",
-    "spectrogram",
-    "synthesizer",
-    "web-audio"
-   ],
-   "hosts": {
-    "github": "https://github.com/korczis/oscilla"
-   },
-   "site": "https://korczis.github.io/oscilla/",
-   "curated": true,
-   "stars": 1,
-   "supervised": true
-  },
-  {
    "name": "algoglyph",
    "period": 12,
    "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
    "category": "science",
    "language": "TypeScript",
    "created_at": "2026-11-11T18:09:38Z",
-   "last_commit": "2026-11-17T09:23:07Z",
-   "last_message": "Merge remote-tracking branch 'origin/feature/second-pass-foucault-pendulum' into fix/charts-by-title",
+   "last_commit": "2026-11-17T15:34:34Z",
+   "last_message": "Merge remote-tracking branch 'origin/feature/semiconductors' into fix/charts-by-title",
    "commits": [
+    {
+     "at": "2026-11-17T15:34:34Z",
+     "message": "Merge remote-tracking branch 'origin/feature/semiconductors' into fix/charts-by-title",
+     "url": "https://github.com/korczis/algoglyph/commit/916cdc7240fb02d2b8265790f1ef45421039af49"
+    },
+    {
+     "at": "2026-11-17T14:49:42Z",
+     "message": "Merge remote-tracking branch 'origin/feature/amplitude-arrows' into fix/charts-by-title",
+     "url": "https://github.com/korczis/algoglyph/commit/2b9d6dc2997e020acbe801311b20bdfcb3887a1a"
+    },
+    {
+     "at": "2026-11-17T13:05:13Z",
+     "message": "Merge remote-tracking branch 'origin/main' into feature/semiconductors",
+     "url": "https://github.com/korczis/algoglyph/commit/8325f396df83114675d4d74668d048d4ab2542a9"
+    },
+    {
+     "at": "2026-11-17T13:04:08Z",
+     "message": "Merge remote-tracking branch 'origin/main' into feature/amplitude-arrows",
+     "url": "https://github.com/korczis/algoglyph/commit/1e76802737b1f6772482de38d6d2d26de2c58fe8"
+    },
+    {
+     "at": "2026-11-17T12:35:33Z",
+     "message": "Merge remote-tracking branch 'origin/feature/second-pass-fourier-epicycles' into fix/charts-by-title",
+     "url": "https://github.com/korczis/algoglyph/commit/df4877a3c70a74b6683f494d86c17921c3f8c003"
+    },
+    {
+     "at": "2026-11-17T12:35:33Z",
+     "message": "Merge remote-tracking branch 'origin/fix/hot-loop-imports' into fix/charts-by-title",
+     "url": "https://github.com/korczis/algoglyph/commit/a13c08d3a9b62df5f1cd1d8dd22295643e3bf004"
+    },
+    {
+     "at": "2026-11-17T11:28:35Z",
+     "message": "Merge branch 'fix/ripple-double-slit-headroom' into fix/hot-loop-imports",
+     "url": "https://github.com/korczis/algoglyph/commit/cb6ffd304f4d8bf0f336cfe000a5a17775c850a7"
+    },
+    {
+     "at": "2026-11-17T11:28:01Z",
+     "message": "perf(plates): imported helpers out of per-cell and per-particle loops, every output bit-equal",
+     "url": "https://github.com/korczis/algoglyph/commit/985395c8522068472a07807f51237ff7d351eecf"
+    },
+    {
+     "at": "2026-11-17T11:27:37Z",
+     "message": "feat(physics): semiconductors, a p-n junction by Poisson-Boltzmann against neutrality and the first integral",
+     "url": "https://github.com/korczis/algoglyph/commit/4de3aead621f9e2620cac8594dad1d47e6e1409d"
+    },
+    {
+     "at": "2026-11-17T11:20:07Z",
+     "message": "feat(physics): amplitude arrows, a glass plate's reflection by summed arrows against the Airy formula",
+     "url": "https://github.com/korczis/algoglyph/commit/d394d399e0fdaff9c893c8ac820e3548b1f5783a"
+    },
+    {
+     "at": "2026-11-17T11:11:03Z",
+     "message": "Merge remote-tracking branch 'origin/feature/ripple-tank-b' into fix/ripple-double-slit-headroom",
+     "url": "https://github.com/korczis/algoglyph/commit/7d63d8ac0595458663e41c9d598f229a5f6882bd"
+    },
+    {
+     "at": "2026-11-17T11:07:44Z",
+     "message": "Merge remote-tracking branch 'origin/feature/elastic-lattice' into fix/charts-by-title",
+     "url": "https://github.com/korczis/algoglyph/commit/daa4d9956a86487ee34a38db1f880e17aabfbd07"
+    },
+    {
+     "at": "2026-11-17T11:07:15Z",
+     "message": "Merge remote-tracking branch 'origin/feature/second-pass-n-body' into fix/charts-by-title",
+     "url": "https://github.com/korczis/algoglyph/commit/430409cc59db0b47fc497b429e83d499498eef9b"
+    },
+    {
+     "at": "2026-11-17T11:07:14Z",
+     "message": "Merge remote-tracking branch 'origin/fix/budget-vs-bundle' into fix/charts-by-title",
+     "url": "https://github.com/korczis/algoglyph/commit/df86f76cec8f401deff15c15f636bdf2ad63b351"
+    },
+    {
+     "at": "2026-11-17T11:07:14Z",
+     "message": "Merge remote-tracking branch 'origin/fix/boids-3d-headroom' into fix/charts-by-title",
+     "url": "https://github.com/korczis/algoglyph/commit/5400a0e2cea3bf521f74dc02766700502a6e0641"
+    },
+    {
+     "at": "2026-11-17T11:06:01Z",
+     "message": "Merge remote-tracking branch 'origin/feature/ripple-tank-b' into fix/charts-by-title",
+     "url": "https://github.com/korczis/algoglyph/commit/119689489ebbe2349e43c6a79c6ec8cf1a8ff958"
+    },
+    {
+     "at": "2026-11-17T10:55:19Z",
+     "message": "feat(fourier-epicycles): second pass, known series as oracles, presets and typed relations",
+     "url": "https://github.com/korczis/algoglyph/commit/83df9d2d737922b26fb132771780b42d5b873334"
+    },
+    {
+     "at": "2026-11-17T10:45:32Z",
+     "message": "docs(budget): measure the gate against the built bundle, the margin errs safe by up to 3-4x",
+     "url": "https://github.com/korczis/algoglyph/commit/2d57be172ee78ed53e709cda53ff2fd50bf906f1"
+    },
+    {
+     "at": "2026-11-17T10:41:25Z",
+     "message": "perf(boids-3d): exact nearest by shells, colours in place, the step's sums in locals; all bit-equal",
+     "url": "https://github.com/korczis/algoglyph/commit/c46ca5d965ab1073151ecdff109d86ebf20f97d2"
+    },
+    {
+     "at": "2026-11-17T09:57:16Z",
+     "message": "perf(ripple-tank): the double slit's frame 3.5× cheaper, every float and pixel unchanged",
+     "url": "https://github.com/korczis/algoglyph/commit/baff1b9d2ab846e71761ba87240985fc0182504e"
+    },
+    {
+     "at": "2026-11-17T09:33:33Z",
+     "message": "fix(ripple-tank): the Mach claim's closed form from the control, so a wrong source speed fails it",
+     "url": "https://github.com/korczis/algoglyph/commit/33a678a5a86744c081b4e8dcd65e5a69624699e3"
+    },
+    {
+     "at": "2026-11-17T09:28:07Z",
+     "message": "Merge remote-tracking branch 'origin/main' into feature/ripple-tank-b",
+     "url": "https://github.com/korczis/algoglyph/commit/d433a9d98292ed4517038af892da51affd7f2a80"
+    },
+    {
+     "at": "2026-11-17T09:27:24Z",
+     "message": "Merge remote-tracking branch 'origin/main' into feature/elastic-lattice",
+     "url": "https://github.com/korczis/algoglyph/commit/8e7a4aabe7ae751350451cc8efbd2b296998f83a"
+    },
+    {
+     "at": "2026-11-17T09:27:17Z",
+     "message": "feat(ripple-tank): second pass, a steered phased array, a Mach cone and a drum, measured against closed forms",
+     "url": "https://github.com/korczis/algoglyph/commit/230962d0cedaa3faa3a10d78ee1eb49a7193a16a"
+    },
     {
      "at": "2026-11-17T09:23:07Z",
      "message": "Merge remote-tracking branch 'origin/feature/second-pass-foucault-pendulum' into fix/charts-by-title",
@@ -404,153 +1057,33 @@
      "url": "https://github.com/korczis/algoglyph/commit/7a742f58eb6530d6d672ac03c84ba621ea21669e"
     },
     {
-     "at": "2026-11-17T08:01:34Z",
-     "message": "Merge remote-tracking branch 'origin/main' into feature/second-pass-foucault-pendulum",
-     "url": "https://github.com/korczis/algoglyph/commit/564f4e0b9c7a80f41483812a7e03abdf4e678b69"
+     "at": "2026-11-17T08:43:18Z",
+     "message": "Merge remote-tracking branch 'origin/main' into feature/second-pass-n-body",
+     "url": "https://github.com/korczis/algoglyph/commit/7c18df60795f09d9600a86fd999e3f589efb1146"
     },
     {
-     "at": "2026-11-17T07:48:38Z",
-     "message": "docs(plans): the plan names the hoisted optics and wave modules and the slices now done",
-     "url": "https://github.com/korczis/algoglyph/commit/e3ffed009cb052d8f14b23d75f605c727e10f17a"
+     "at": "2026-11-17T08:16:35Z",
+     "message": "Merge remote-tracking branch 'origin/main' into feature/ripple-tank-b",
+     "url": "https://github.com/korczis/algoglyph/commit/8e86797800316e18f8655834507edc26594c9903"
     },
     {
-     "at": "2026-11-17T07:47:54Z",
-     "message": "Merge remote-tracking branch 'origin/feature/dispersive-waves' into fix/charts-by-title",
-     "url": "https://github.com/korczis/algoglyph/commit/e9664c378ecd24c0c2bb2e74a3a8710e13961792"
-    },
-    {
-     "at": "2026-11-17T07:47:30Z",
-     "message": "Merge remote-tracking branch 'origin/feature/string-and-sound' into fix/charts-by-title",
-     "url": "https://github.com/korczis/algoglyph/commit/c7ec024969d8db17fffb05dfe962ea0df1132f57"
-    },
-    {
-     "at": "2026-11-17T07:47:29Z",
-     "message": "Merge remote-tracking branch 'origin/refactor/wave-stencil-hoist' into fix/charts-by-title",
-     "url": "https://github.com/korczis/algoglyph/commit/a66866031e8ad5ca448b7efc01adafd865c7b2b3"
-    },
-    {
-     "at": "2026-11-17T07:07:36Z",
-     "message": "fix(beam): state why each control's range ends where it does",
-     "url": "https://github.com/korczis/algoglyph/commit/2518629d96ae3f27f279ffcced1055ee414c6f16"
-    },
-    {
-     "at": "2026-11-17T07:02:01Z",
-     "message": "feat(foucault-pendulum): second pass, the conserved energy and J, and the half-swing's oracle",
-     "url": "https://github.com/korczis/algoglyph/commit/64c42b649aa055adcda67699912e71a9c573acdf"
-    },
-    {
-     "at": "2026-11-17T06:56:09Z",
-     "message": "feat(physics): a beam as Hencky's bar chain, from FL³/3EI to Euler's load and past it",
-     "url": "https://github.com/korczis/algoglyph/commit/6c28b1d944f34b053a2ab71689ee3d4e1d35396d"
-    },
-    {
-     "at": "2026-11-17T06:49:20Z",
-     "message": "feat(physics): dispersive waves, group and phase velocity measured on the leapfrog line",
-     "url": "https://github.com/korczis/algoglyph/commit/9eef43288b7a0870b72dd571726751cbac7b0781"
-    },
-    {
-     "at": "2026-11-17T06:46:43Z",
-     "message": "feat(physics): elastic lattice, Poisson's ratio 1/3 and wave speeds in the ratio √3",
-     "url": "https://github.com/korczis/algoglyph/commit/6ba0776604e536f611e9cff6b7bea63324cbc7b0"
-    },
-    {
-     "at": "2026-11-17T06:42:12Z",
-     "message": "feat(physics): a plucked string and its harmonics, on the shared leapfrog stencil",
-     "url": "https://github.com/korczis/algoglyph/commit/41a1dd237e3c0084da46d02fd11cf4574d2b714c"
-    },
-    {
-     "at": "2026-11-17T06:29:15Z",
-     "message": "refactor(wave2d): hoist ripple-tank's leapfrog stencil into a shared S2 module",
-     "url": "https://github.com/korczis/algoglyph/commit/adc4727a51d65d189c9cfbdf18b2bc5d1369801c"
-    },
-    {
-     "at": "2026-11-17T06:05:09Z",
-     "message": "Merge remote-tracking branch 'origin/feature/rate-processes' into fix/charts-by-title",
-     "url": "https://github.com/korczis/algoglyph/commit/b98ca7283e04c5e5cab68b33536d330d76c12efc"
-    },
-    {
-     "at": "2026-11-17T06:04:54Z",
-     "message": "Merge remote-tracking branch 'origin/feature/crystal-diffraction' into fix/charts-by-title",
-     "url": "https://github.com/korczis/algoglyph/commit/e447e358059f4a52710dbfdb8e1c62ac6a8c8e94"
-    },
-    {
-     "at": "2026-11-17T06:04:53Z",
-     "message": "Merge remote-tracking branch 'origin/fix/track-planning-headroom' into fix/charts-by-title",
-     "url": "https://github.com/korczis/algoglyph/commit/f9cc424f2ff1123ece9e3a68ef2579f06856b42f"
-    },
-    {
-     "at": "2026-11-17T04:50:55Z",
-     "message": "perf(track-planning): an allocation-free terrain settle, no search on the rebuild frame, a 4 ms slice",
-     "url": "https://github.com/korczis/algoglyph/commit/c122f4bf7aa91ce4787976a4da3e15675ed9c72f"
-    },
-    {
-     "at": "2026-11-17T04:50:43Z",
-     "message": "Merge remote-tracking branch 'origin/main' into feature/rate-processes",
-     "url": "https://github.com/korczis/algoglyph/commit/7283056ffebfff305d060992b5441b1cccba33dc"
-    },
-    {
-     "at": "2026-11-17T04:50:02Z",
-     "message": "Merge remote-tracking branch 'origin/main' into feature/crystal-diffraction",
-     "url": "https://github.com/korczis/algoglyph/commit/4e06fcbe861cc7b6ff9929c649ffc3de08a4944a"
-    },
-    {
-     "at": "2026-11-17T04:27:39Z",
-     "message": "Merge remote-tracking branch 'origin/fix/lorenz-frame-cost' into fix/charts-by-title",
-     "url": "https://github.com/korczis/algoglyph/commit/cf5fec72589a66038c07e73685f62c95b3115a1f"
-    },
-    {
-     "at": "2026-11-17T04:26:37Z",
-     "message": "Merge remote-tracking branch 'origin/feature/spinning-bodies' into fix/charts-by-title",
-     "url": "https://github.com/korczis/algoglyph/commit/466849ec250fb6a249b2571d321a7ae8427c3b05"
-    },
-    {
-     "at": "2026-11-17T03:24:01Z",
-     "message": "perf(lorenz-attractor): draw trails through every k-th point above 28,800 points a frame",
-     "url": "https://github.com/korczis/algoglyph/commit/0cf6f38216b2578c663c93adc7d4b80729cfda79"
-    },
-    {
-     "at": "2026-11-17T03:03:06Z",
-     "message": "Merge remote-tracking branch 'origin/feature/roots-and-logarithms' into fix/charts-by-title",
-     "url": "https://github.com/korczis/algoglyph/commit/4bb8f85b299d2ca9f7cc142fd112ac24b5064043"
-    },
-    {
-     "at": "2026-11-17T02:58:07Z",
-     "message": "fix(crystal-diffraction): shorten the panels' titles so they do not run into each other",
-     "url": "https://github.com/korczis/algoglyph/commit/a76fc9ffa70f57179db19f186d95b00c27d732d8"
-    },
-    {
-     "at": "2026-11-17T02:57:47Z",
-     "message": "fix(rate-processes): draw the excited atoms on their own scale, and shorten the panels' titles",
-     "url": "https://github.com/korczis/algoglyph/commit/c6aeafa014e3090eeccf0f57ff4c73b3ee621c9c"
-    },
-    {
-     "at": "2026-11-17T02:55:46Z",
-     "message": "feat(physics): rate processes, Bateman's chain and Planck's law from Einstein's rates",
-     "url": "https://github.com/korczis/algoglyph/commit/3174abcda1f8fdbb26e33789468a1372a222538d"
-    },
-    {
-     "at": "2026-11-17T02:48:29Z",
-     "message": "feat(physics): crystal diffraction, a cubic crystal's transform and its selection rules",
-     "url": "https://github.com/korczis/algoglyph/commit/e71485c6f2b7d71eaf6c66ea63b1cb0ab91358d9"
-    },
-    {
-     "at": "2026-11-17T02:41:09Z",
-     "message": "fix(far-field-diffraction): show the photons and the cut within a few zeros of the centre",
-     "url": "https://github.com/korczis/algoglyph/commit/4e631533356d09cd2565d21b2193f0f3b1678f9c"
+     "at": "2026-11-17T08:16:03Z",
+     "message": "feat(ripple-tank): phased array, moving source and drum experiments with their measurements",
+     "url": "https://github.com/korczis/algoglyph/commit/c2d8d930677db9626ce16541086262d8053886ba"
     }
    ],
    "languages": [
     {
      "name": "TypeScript",
-     "share": 83.6
+     "share": 83.8
     },
     {
      "name": "Rust",
-     "share": 13
+     "share": 12.8
     },
     {
      "name": "JavaScript",
-     "share": 1.9
+     "share": 2
     },
     {
      "name": "HTML",
@@ -589,232 +1122,20 @@
    "supervised": true
   },
   {
-   "name": "prismatic-majordomus",
-   "period": 12,
-   "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
-   "category": "ai",
-   "language": "Rust",
-   "created_at": "2026-09-03T20:24:57Z",
-   "last_commit": "2026-11-17T06:32:46Z",
-   "last_message": "Merge pull request #3069 from korczis/integration/top-20261117b",
-   "commits": [
-    {
-     "at": "2026-11-17T06:32:46Z",
-     "message": "Merge pull request #3069 from korczis/integration/top-20261117b",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/7222b343dcb40ac2a2843111f8bdf7a2aa099774"
-    },
-    {
-     "at": "2026-11-17T03:41:20Z",
-     "message": "docs(plan): derive delivery observed at the combined top on e54bbdb12a",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/a5e1f4375620c3ba6755d6ad743a42eb4052bcdb"
-    },
-    {
-     "at": "2026-11-17T03:25:35Z",
-     "message": "Merge #3064 (feat/a-build-is-bounded-by-the-machine) into the combined top on e54bbdb12a",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/32c0304f3417a86367e0a271081b05e90f1e9532"
-    },
-    {
-     "at": "2026-11-17T03:05:01Z",
-     "message": "Merge #3047 (fix/resolver-borrows-a-sibling-executable) into the combined top on e54bbdb12a",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/edd387c3c4236aa110cc43ab319224dd774a3cf0"
-    },
-    {
-     "at": "2026-11-17T02:50:30Z",
-     "message": "Merge #3044 (fix/evidence-record-names-suite-coverage) into the combined top on e54bbdb12a",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/de98547925151e671774238fceb1bd61903a4f1f"
-    },
-    {
-     "at": "2026-11-17T02:26:16Z",
-     "message": "Merge #3060 (fix/commit-debt-counts-a-renumbered-reference) into the combined top on e54bbdb12a",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/a280c3279ff25008931db9c4e46c742d6362d0da"
-    },
-    {
-     "at": "2026-11-16T23:20:53Z",
-     "message": "test(evidence): a refused write of the suite line ends the recording there",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/33ae4a9299b8b4ceacd6039a90db78957259e5a1"
-    },
-    {
-     "at": "2026-11-16T23:11:18Z",
-     "message": "feat(build): a local build refuses beside five cargo builds (I3825)",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/18c3336cc3e93e4b5ac042e35438fbfa96a8d1df"
-    },
-    {
-     "at": "2026-11-16T23:05:50Z",
-     "message": "Merge pull request #3061 from korczis/plan/i4605-commit-control-character-20261116",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/e54bbdb12a99cd3ff4572f2a1574c1e5566ae8ef"
-    },
-    {
-     "at": "2026-11-16T22:51:35Z",
-     "message": "docs(plan): derive delivery observed at the merge of a134a0f",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/1acaf648d0ec908da9443f61f292f07b4f7b44da"
-    },
-    {
-     "at": "2026-11-16T22:21:48Z",
-     "message": "Merge origin/master a134a0f into #3047",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/72f490f5ba5ac00d057ce024d956f0b78b396126"
-    },
-    {
-     "at": "2026-11-16T21:56:56Z",
-     "message": "docs(plan): derive delivery observed at the merge of a134a0f",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/f7b96e7c36981f4351e7546750874975ef73d9ee"
-    },
-    {
-     "at": "2026-11-16T21:54:54Z",
-     "message": "fix(ci): record the renumbered plan commit as history debt (55)",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/ebbdac5c5ff4cedd837419c5a65fa4c2fca40a81"
-    },
-    {
-     "at": "2026-11-16T21:47:00Z",
-     "message": "docs(plan): derive delivery observed at the merge of a134a0f",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/b2e60aadd607c21c2b463b2f21486f6643f9d75a"
-    },
-    {
-     "at": "2026-11-16T21:39:01Z",
-     "message": "Merge origin/master a134a0f into #3044",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/d33ba713c5ffd225b1f2b0a0b271a0967b0e40aa"
-    },
-    {
-     "at": "2026-11-16T21:27:40Z",
-     "message": "Merge origin/master a134a0f into #I4605",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/e5ee2d85714622514c93d694fb8a2a51b2f3152e"
-    },
-    {
-     "at": "2026-11-16T20:49:49Z",
-     "message": "docs(plan): derive delivery observed at the I4605 record",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/f088c7f15163d319009ad629f2b3c19169f7f743"
-    },
-    {
-     "at": "2026-11-16T20:35:23Z",
-     "message": "Merge pull request #3040 from korczis/fix/scope-refusal-names-remedies",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/a134a0fbc7acc7f22aa423263000ae01d418b041"
-    },
-    {
-     "at": "2026-11-16T20:30:12Z",
-     "message": "test(evidence): cover suite coverage's methods, count and text line",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/a9fd61ca4da6b904c73627f541acf1f9e167619f"
-    },
-    {
-     "at": "2026-11-16T20:28:45Z",
-     "message": "docs(plan): record I4605, commit validate refuses a control character",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/443bec07ab57d2d35af84ed619f033af9055220f"
-    },
-    {
-     "at": "2026-11-16T19:25:11Z",
-     "message": "docs(plan): derive delivery observed at the merge of 0c11b36",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/a5e4a3b9ea85b7e031d9d64de786cab0e0f4ab13"
-    },
-    {
-     "at": "2026-11-16T19:09:56Z",
-     "message": "Merge origin/master 0c11b36 into #3047",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/e0330e4102eb4a2b0b87ffc173a3a69064081079"
-    },
-    {
-     "at": "2026-11-16T18:34:06Z",
-     "message": "fix(evidence): count suite cases with a set and show kept() by example",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/9bd0e9fe743c4288e0224591a34873c83ea6c9b2"
-    },
-    {
-     "at": "2026-11-16T18:20:57Z",
-     "message": "docs(plan): derive delivery observed at the merge of 0c11b36",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/f6d11f40ffd8b9a0579bed9317aeb38b95ee67e7"
-    },
-    {
-     "at": "2026-11-16T18:11:28Z",
-     "message": "Merge origin/master 0c11b36 into #3044",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/cc9d8ec96c1d6b86b589af9ef0f1a9c478d7f13f"
-    },
-    {
-     "at": "2026-11-16T17:52:02Z",
-     "message": "docs(plan): derive delivery observed at the merge of 0c11b36",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/dd5091db8c458961858535b697e74350590a1af7"
-    },
-    {
-     "at": "2026-11-16T17:45:10Z",
-     "message": "Merge origin/master 0c11b36 into #3040",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/ef2f1784b705784081a23b95f6cbc9af7d703eeb"
-    },
-    {
-     "at": "2026-11-16T09:41:08Z",
-     "message": "Merge pull request #3041 from korczis/docs/plan-lessons-from-a-site-adopter",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/0c11b36be30a315ecff6ff9b85d93ee33afedb9b"
-    },
-    {
-     "at": "2026-11-16T08:19:12Z",
-     "message": "docs(plan): derive delivery observed at the merge of f986469",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/de3b1dbb16bc76d7a79b2119ba1506518002f19a"
-    },
-    {
-     "at": "2026-11-16T08:12:13Z",
-     "message": "Merge origin/master f986469 into #3041",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/1ffa5257b7eeb1e943b650b5cd08e260ab2f46d9"
-    }
-   ],
-   "languages": [
-    {
-     "name": "Rust",
-     "share": 60.7
-    },
-    {
-     "name": "Shell",
-     "share": 29.6
-    },
-    {
-     "name": "JavaScript",
-     "share": 4.1
-    },
-    {
-     "name": "HTML",
-     "share": 3.8
-    },
-    {
-     "name": "CSS",
-     "share": 0.6
-    },
-    {
-     "name": "Python",
-     "share": 0.4
-    }
-   ],
-   "readme": "Your AI agents say the work is done. Majordomus makes them prove it.",
-   "topics": [
-    "agentic-ai",
-    "ai",
-    "ai-agents",
-    "ai-governance",
-    "claude-code",
-    "cli",
-    "codex",
-    "continuous-integration",
-    "developer-tools",
-    "devops",
-    "gemini",
-    "llm",
-    "llmops",
-    "mcp",
-    "mermaid",
-    "model-context-protocol",
-    "multi-agent",
-    "policy-as-code",
-    "rust"
-   ],
-   "hosts": {
-    "github": "https://github.com/korczis/prismatic-majordomus"
-   },
-   "site": "https://korczis.github.io/prismatic-majordomus/",
-   "curated": true,
-   "stars": 1,
-   "supervised": true
-  },
-  {
    "name": "korczis.github.io",
    "period": 12,
    "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
    "category": "web",
    "language": "JavaScript",
    "created_at": "2024-12-24T16:48:15Z",
-   "last_commit": "2026-11-17T03:10:07Z",
+   "last_commit": "2026-11-17T12:21:11Z",
    "last_message": "chore(data): refresh the snapshot and the index",
    "commits": [
+    {
+     "at": "2026-11-17T12:21:11Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/942533a7bbcc0af710a24100c32d19d077976329"
+    },
     {
      "at": "2026-11-17T03:10:07Z",
      "message": "chore(data): refresh the snapshot and the index",
@@ -959,11 +1280,6 @@
      "at": "2026-11-15T20:19:17Z",
      "message": "chore(merge): integrate #19, every CI-model gate runs as declared",
      "url": "https://github.com/korczis/korczis.github.io/commit/6bd20aa2ba87d1564e556d3efe2300ddcd14085b"
-    },
-    {
-     "at": "2026-11-15T19:47:56Z",
-     "message": "fix(ci): the refresh bot's push passes the NDA denylist to its hook",
-     "url": "https://github.com/korczis/korczis.github.io/commit/0e8c72ac1dc9cc1405e0aadc2819e6da52682901"
     }
    ],
    "languages": [
@@ -1016,9 +1332,14 @@
    "category": "knowledge",
    "language": "Elixir",
    "created_at": "2026-11-09T22:04:50Z",
-   "last_commit": "2026-11-17T00:35:05Z",
-   "last_message": "chore(data): ui-data listings regenerated after merge",
+   "last_commit": "2026-11-17T06:29:33Z",
+   "last_message": "feat(scripts): platform-prose gate — refuse internal platform/runtime names in kompendium body prose",
    "commits": [
+    {
+     "at": "2026-11-17T06:29:33Z",
+     "message": "feat(scripts): platform-prose gate — refuse internal platform/runtime names in kompendium body prose",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/9045ada1ac7a09e2a6464a7a31e1f1cdb9910fcc"
+    },
     {
      "at": "2026-11-17T00:35:05Z",
      "message": "chore(data): ui-data listings regenerated after merge",
@@ -1163,11 +1484,6 @@
      "at": "2026-11-16T05:26:34Z",
      "message": "Merge origin/main (19436b02) into feature/derived-catalogue",
      "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/05b8ad2f68b94fc6d7249296176019c676071525"
-    },
-    {
-     "at": "2026-11-16T04:47:26Z",
-     "message": "fix(content): the safety-framework table is one include, not 40 pasted copies",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/b1318c5db616c735b8ddfffe86ce47ec11939a74"
     }
    ],
    "languages": [
@@ -1212,199 +1528,6 @@
     "github": "https://github.com/korczis/kompendium-epistemicke-anihilace"
    },
    "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
-   "curated": true,
-   "stars": 0,
-   "supervised": true
-  },
-  {
-   "name": "sonic-playground",
-   "period": 12,
-   "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-   "category": "media",
-   "language": "Python",
-   "created_at": "2026-11-12T00:48:36Z",
-   "last_commit": "2026-11-16T21:02:24Z",
-   "last_message": "Merge branch 'fix/probe-links-second-look': the second look reads its answer like the first; pennyblack cited archived",
-   "commits": [
-    {
-     "at": "2026-11-16T21:02:24Z",
-     "message": "Merge branch 'fix/probe-links-second-look': the second look reads its answer like the first; pennyblack cited archived",
-     "url": "https://github.com/korczis/sonic-playground/commit/69025de9edff3a4a995de935a32952c32599ebee"
-    },
-    {
-     "at": "2026-11-16T20:45:55Z",
-     "message": "fix(probe-links): the second look reads its answer like the first; pennyblack cited archived",
-     "url": "https://github.com/korczis/sonic-playground/commit/b0bf26c7dab72e8d6fc37a9ad1e4e70ed2887301"
-    },
-    {
-     "at": "2026-11-16T20:35:09Z",
-     "message": "Merge branch 'fix/probe-links-transient': 406 is a refusal; a passing 5xx or silence is asked once more",
-     "url": "https://github.com/korczis/sonic-playground/commit/0fdb765fbfc437cd609531f68ba95237c153701b"
-    },
-    {
-     "at": "2026-11-16T20:03:56Z",
-     "message": "fix(probe-links): 406 is a refusal; a passing 5xx or silence is asked once more",
-     "url": "https://github.com/korczis/sonic-playground/commit/7d9a264f947e82fa426f566d6a7d00086cdceb8d"
-    },
-    {
-     "at": "2026-11-16T04:27:33Z",
-     "message": "Merge branch 'feature/visualizer-background': a calm picture behind every page while the player plays",
-     "url": "https://github.com/korczis/sonic-playground/commit/94cf51d8f6f179341a51fe8626becf23b23dd948"
-    },
-    {
-     "at": "2026-11-16T03:58:12Z",
-     "message": "feat(visualizer): a calm picture behind every page while the player plays",
-     "url": "https://github.com/korczis/sonic-playground/commit/f148eb877b4e6d0da8df122e2139f750bda79f77"
-    },
-    {
-     "at": "2026-11-15T20:37:21Z",
-     "message": "Merge branch 'feature/visualizer': a Winamp-style visualiser, full screen and behind the hero, and a turning mosaic",
-     "url": "https://github.com/korczis/sonic-playground/commit/2d75536428bcb5b158e451db4756eeef518d53c8"
-    },
-    {
-     "at": "2026-11-15T20:03:39Z",
-     "message": "Merge remote-tracking branch 'origin/main' into feature/visualizer",
-     "url": "https://github.com/korczis/sonic-playground/commit/de9d16e9bc805fe7502b672711eae96685feb39a"
-    },
-    {
-     "at": "2026-11-15T20:01:58Z",
-     "message": "fix(visualizer): an independent review's findings: unobtrusive, keyboard-safe, calm hero",
-     "url": "https://github.com/korczis/sonic-playground/commit/c0f96327fe9dc2378df7305ae3ae0d4e3b7b7fa9"
-    },
-    {
-     "at": "2026-11-15T19:48:40Z",
-     "message": "Merge branch 'chore/derived-attributes': the derive's outputs are declared merge=derived",
-     "url": "https://github.com/korczis/sonic-playground/commit/987785cc123bba00be1f813ce460e0f186f5037d"
-    },
-    {
-     "at": "2026-11-15T19:19:46Z",
-     "message": "Merge branch 'fix/official-videos': JPattersson's Elevator embeds the label's own upload",
-     "url": "https://github.com/korczis/sonic-playground/commit/d634e9e4ad516d115f1e18b21745824ed343421c"
-    },
-    {
-     "at": "2026-11-15T18:47:21Z",
-     "message": "fix(content): JPattersson's Elevator embeds the label's own upload",
-     "url": "https://github.com/korczis/sonic-playground/commit/e61711e18e1075832b9f834ed8a41876653b2fdf"
-    },
-    {
-     "at": "2026-11-15T18:47:12Z",
-     "message": "feat(visualizer): Winamp-style visualiser, full screen and in the hero, and a turning mosaic",
-     "url": "https://github.com/korczis/sonic-playground/commit/308258e4c32d4541e0b1ec0f6d68654672e12f58"
-    },
-    {
-     "at": "2026-11-15T18:34:22Z",
-     "message": "build(attributes): the derive's outputs are declared merge=derived",
-     "url": "https://github.com/korczis/sonic-playground/commit/11032e7106b27fe883dcd045af270a397fd81896"
-    },
-    {
-     "at": "2026-11-15T18:24:52Z",
-     "message": "Merge branch 'fix/hanging-tree-notes': the sound-alike notes record the owner's choice of a page",
-     "url": "https://github.com/korczis/sonic-playground/commit/53845cdaec7a3f645f8d82417c405f8f1ca8ca85"
-    },
-    {
-     "at": "2026-11-15T18:11:15Z",
-     "message": "Merge branch 'fix/player-video-layout': the video stays uncovered in every language, repeat state, width and height",
-     "url": "https://github.com/korczis/sonic-playground/commit/dc3b5e849b606ac43968e3f2df6d54ed9787aae3"
-    },
-    {
-     "at": "2026-11-15T18:04:16Z",
-     "message": "fix(data): the Hanging Tree sound-alike notes record the owner's choice of a page",
-     "url": "https://github.com/korczis/sonic-playground/commit/2c3b20dd585d26002a1df9eb9bd4751c9cc91ef8"
-    },
-    {
-     "at": "2026-11-15T17:55:16Z",
-     "message": "Merge branch 'feature/backlog-wave11': the last 11 backlog songs, each in English and Czech",
-     "url": "https://github.com/korczis/sonic-playground/commit/379b42dbc69ca928fff9668c7b665677271a9d18"
-    },
-    {
-     "at": "2026-11-15T17:53:44Z",
-     "message": "fix(player): the video stays uncovered in every language, repeat state, width and height",
-     "url": "https://github.com/korczis/sonic-playground/commit/c7e9855d1b81018ac6afd11e23872509165c3f2e"
-    },
-    {
-     "at": "2026-11-15T17:39:57Z",
-     "message": "Merge branch 'chore/pro-anchors-issue': PRO_ANCHORS cites I4594",
-     "url": "https://github.com/korczis/sonic-playground/commit/db475911f87d6c17152ed588265d1d7fc6ff3e50"
-    },
-    {
-     "at": "2026-11-15T17:31:50Z",
-     "message": "Merge branch 'fix/cilmi-official-upload': Cry Me a River embeds Universal's official upload",
-     "url": "https://github.com/korczis/sonic-playground/commit/b546062e107b75f6ad6c36890593f25cd6f73389"
-    },
-    {
-     "at": "2026-11-15T17:30:40Z",
-     "message": "feat(content): the last 11 backlog songs, each in English and Czech",
-     "url": "https://github.com/korczis/sonic-playground/commit/9b7f093b19768b60043f85b17f1f0b6da556e4e5"
-    },
-    {
-     "at": "2026-11-15T17:21:06Z",
-     "message": "Merge branch 'fix/gone-videos': the three gone videos replaced by the distributors' own uploads",
-     "url": "https://github.com/korczis/sonic-playground/commit/ba65fbdca6775f6cedc3f6b16b2e786e25f15e54"
-    },
-    {
-     "at": "2026-11-15T17:07:27Z",
-     "message": "fix(content): the three gone videos replaced by the distributors' own uploads",
-     "url": "https://github.com/korczis/sonic-playground/commit/450fabf949cd3151db1a6c13020798198180d0f5"
-    },
-    {
-     "at": "2026-11-15T16:59:00Z",
-     "message": "fix(content): Cry Me a River embeds Universal's official upload, not a covers channel",
-     "url": "https://github.com/korczis/sonic-playground/commit/3790562ce49227039453b18b764316b7fd5851cc"
-    },
-    {
-     "at": "2026-11-15T16:43:48Z",
-     "message": "docs(components): PRO_ANCHORS cites I4594, the kit half of lifting it",
-     "url": "https://github.com/korczis/sonic-playground/commit/176bcbf0503e9d1fe7534f724b5544d1f85d012f"
-    },
-    {
-     "at": "2026-11-15T16:28:46Z",
-     "message": "Merge branch 'fix/player-video-never-hidden': the playing video is never covered, and the bar says what it does",
-     "url": "https://github.com/korczis/sonic-playground/commit/56a9c924bf03c96c68f99cf17e41c797529f0265"
-    },
-    {
-     "at": "2026-11-15T16:06:54Z",
-     "message": "fix(player): the playing video is never covered, and the bar says what it does",
-     "url": "https://github.com/korczis/sonic-playground/commit/fb76f4bd30872afc917a4f5102db59b20c4e2a64"
-    },
-    {
-     "at": "2026-11-15T15:40:00Z",
-     "message": "Merge branch 'chore/evidence-refresh': every skill's cases recorded at a2989e5, and the report fix they needed",
-     "url": "https://github.com/korczis/sonic-playground/commit/ab43646ef98e8dfd0c2328574cce7436c1b22b21"
-    },
-    {
-     "at": "2026-11-15T15:38:14Z",
-     "message": "chore(evidence): the ten skill cases' run at a2989e5, every skill proven",
-     "url": "https://github.com/korczis/sonic-playground/commit/a61fd96f840513c88adfbea3464e4dcf54073547"
-    }
-   ],
-   "languages": [
-    {
-     "name": "Python",
-     "share": 40.5
-    },
-    {
-     "name": "JavaScript",
-     "share": 34.3
-    },
-    {
-     "name": "HTML",
-     "share": 20.1
-    },
-    {
-     "name": "Shell",
-     "share": 3.8
-    },
-    {
-     "name": "CSS",
-     "share": 1.3
-    }
-   ],
-   "readme": "A hand-picked music journal: one review per track, explored by genre, feeling and mood, played in a bottom-bar player that keeps going while you browse. Live at https://korczis.github.io/sonic-playground/.",
-   "topics": [],
-   "hosts": {
-    "github": "https://github.com/korczis/sonic-playground"
-   },
-   "site": "https://korczis.github.io/sonic-playground/",
    "curated": true,
    "stars": 0,
    "supervised": true
@@ -2325,99 +2448,6 @@
    ],
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/llm"
-   },
-   "site": null,
-   "curated": false,
-   "stars": 0,
-   "supervised": false
-  },
-  {
-   "name": "openttd-prismatic-bridge",
-   "period": 12,
-   "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
-   "category": "media",
-   "language": "Python",
-   "created_at": "2026-07-23T22:00:54.776Z",
-   "last_commit": "2026-07-24T18:40:44.000+02:00",
-   "last_message": "Doc: document the real prismatic-platform decision engine (Phase 3)",
-   "commits": [
-    {
-     "at": "2026-07-24T18:40:44.000+02:00",
-     "message": "Doc: document the real prismatic-platform decision engine (Phase 3)",
-     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/bce9937a8eb967b127e437f0f93d1c0f5f649ae9"
-    },
-    {
-     "at": "2026-07-24T18:17:50.000+02:00",
-     "message": "Add: Flowbite landing page at / + local asset pipeline (Tailwind v4, no CDN)",
-     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/b60bcde2411061e71904f6731c428cf1438e65ef"
-    },
-    {
-     "at": "2026-07-24T18:17:37.000+02:00",
-     "message": "Fix: /decision/pull company id off-by-one (0-indexed API vs 1-indexed console)",
-     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/07549a449550969d75529e2289e5df82d7f301f8"
-    },
-    {
-     "at": "2026-07-24T17:44:35.000+02:00",
-     "message": "Add: contract detail and cadastral parcel lookup to /legal dashboard",
-     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/58bc5550d2f9c97e50f60da52b38f01f9524b1d7"
-    },
-    {
-     "at": "2026-07-24T17:28:36.000+02:00",
-     "message": "Add direnv support for local secrets (.envrc.local)",
-     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/20a8dcabd6d276eed47046411939fad9e612bfcd"
-    },
-    {
-     "at": "2026-07-24T16:00:00.000+02:00",
-     "message": "Add: real map layer to /legal -- OSM base + geocoding + ČÚZK cadastral WMS",
-     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/8c2aa4837bd38b017bcd569d6fef965a8fcf13c4"
-    },
-    {
-     "at": "2026-07-24T04:00:17.000+02:00",
-     "message": "Add: /legal dashboard -- real, live Czech open-data lookups (ARES + Hlidac Statu)",
-     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/1ae9481ab2c795c6e6e2ec7a569b290f8be430eb"
-    },
-    {
-     "at": "2026-07-24T00:23:31.000+02:00",
-     "message": "Phase 2: give PrismaticAI a real strategy (single-town bus route)",
-     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/d516cd0e283e0e64bd6cdc626caecae628cdf4d6"
-    },
-    {
-     "at": "2026-07-24T00:12:05.000+02:00",
-     "message": "Add architecture diagrams and a roadmap toward Prismatic's OSINT/DD/modeling apps",
-     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/138e9cee451a13bcef59fa83342a6f4d33bcf40c"
-    },
-    {
-     "at": "2026-07-23T23:42:42.000+02:00",
-     "message": "Add OpenTTD <-> Prismatic bridge: REST/Swagger front door onto the Admin Network",
-     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/b13f3e9ba7f7af40d183ecf7bcc6827bca5c0e9f"
-    }
-   ],
-   "languages": [
-    {
-     "name": "Python",
-     "share": 65.7
-    },
-    {
-     "name": "HTML",
-     "share": 23.8
-    },
-    {
-     "name": "Squirrel",
-     "share": 9.6
-    },
-    {
-     "name": "CSS",
-     "share": 0.5
-    },
-    {
-     "name": "Shell",
-     "share": 0.4
-    }
-   ],
-   "readme": "REST/Swagger front door onto a running OpenTTD dedicated server, so prismatic-platform (or anything else) can read game state and drive company AIs without speaking OpenTTD's binary Admin Network protocol itself.",
-   "topics": [],
-   "hosts": {
-    "gitlab": "https://gitlab.com/korczis/openttd-prismatic-bridge"
    },
    "site": null,
    "curated": false,

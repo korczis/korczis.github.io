@@ -3,8 +3,8 @@
 title = "algoglyph"
 description = "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured…"
 template = "work.html"
-weight = 3
-updated = "2026-11-17T09:23:07Z"
+weight = 6
+updated = "2026-11-17T15:34:34Z"
 
 [taxonomies]
 tags = ["Science and visualisation", "TypeScript", "Rust", "JavaScript"]
@@ -26,9 +26,9 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**algoglyph** is a project in [Science and visualisation](@/projects/science.md). Its code is written mainly in [TypeScript](@/glossary/typescript.md) (83.6 %), with [Rust](@/glossary/rust.md), [JavaScript](@/glossary/javascript.md) and [HTML](@/glossary/html.md).
+**algoglyph** is a project in [Science and visualisation](@/projects/science.md). Its code is written mainly in [TypeScript](@/glossary/typescript.md) (83.8 %), with [Rust](@/glossary/rust.md), [JavaScript](@/glossary/javascript.md) and [HTML](@/glossary/html.md).
 
-The [repository](@/glossary/repository.md) was created in November 2026; its latest [commit](@/glossary/commit.md) is from 17 November 2026. It reads “Merge remote-tracking branch 'origin/feature/second-pass-foucault-pendulum' into fix/charts-by-title”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created in November 2026; its latest [commit](@/glossary/commit.md) is from 17 November 2026. It reads “Merge remote-tracking branch 'origin/feature/semiconductors' into fix/charts-by-title”. That places it among the projects active in the last 12 months.
 
 It is built with [p5.js](@/glossary/p5-js.md), [Apache ECharts](@/glossary/apache-echarts.md), [Alpine.js](@/glossary/alpine-js.md) and [Flowbite Pro](@/glossary/flowbite-pro.md).
 
