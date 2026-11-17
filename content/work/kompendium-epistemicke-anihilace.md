@@ -3,8 +3,8 @@
 title = "Kompendium"
 description = "A defensive taxonomy of epistemic and cognitive manipulation (Czech)."
 template = "work.html"
-weight = 5
-updated = "2026-11-16T20:11:46Z"
+weight = 3
+updated = "2026-11-16T23:03:14Z"
 
 [taxonomies]
 tags = ["Knowledge", "Elixir", "JavaScript", "Python"]
@@ -26,9 +26,9 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**Kompendium** is a project in [Knowledge](@/projects/knowledge.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (33.6 %), with [JavaScript](@/glossary/javascript.md), [Python](@/glossary/python.md) and [HTML](@/glossary/html.md).
+**Kompendium** is a project in [Knowledge](@/projects/knowledge.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (33 %), with [JavaScript](@/glossary/javascript.md), [Python](@/glossary/python.md) and [HTML](@/glossary/html.md).
 
-The [repository](@/glossary/repository.md) was created in November 2026; its latest [commit](@/glossary/commit.md) is from 16 November 2026. It reads “Merge origin/main (05b8ad2f, derived-catalogue landed) into feature/derived-listings”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created in November 2026; its latest [commit](@/glossary/commit.md) is from 16 November 2026. It reads “chore(data): the four listings my change touches are regenerated”. That places it among the projects active in the last 12 months.
 
 It is built with [Zola](@/glossary/zola.md), [Cytoscape.js](@/glossary/cytoscape-js.md), [Apache ECharts](@/glossary/apache-echarts.md), [Alpine.js](@/glossary/alpine-js.md) and [Flowbite Pro](@/glossary/flowbite-pro.md).
 

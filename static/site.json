@@ -11,8 +11,8 @@
  },
  "front_matter_schema": "https://korczis.github.io/schemas/front-matter.schema.json",
  "data_as_of": {
-  "snapshot": "2026-11-16T21:37:52Z",
-  "index": "2026-11-16T21:46:03Z"
+  "snapshot": "2026-11-17T03:00:04Z",
+  "index": "2026-11-17T03:07:07Z"
  },
  "pages": [
   {
@@ -1359,14 +1359,14 @@
    "keywords": [
     "Tomáš Korčák: nedávná práce",
     "korczis",
+    "oscilla",
+    "prismatic-majordomus",
+    "kompendium-epistemicke-anihilace",
+    "algoglyph",
     "korczis.github.io",
     "sonic-playground",
-    "prismatic-majordomus",
-    "oscilla",
-    "kompendium-epistemicke-anihilace",
     "data-atlas",
-    "crisis-map",
-    "catharsis-as-a-service"
+    "crisis-map"
    ]
   },
   {
@@ -3311,14 +3311,14 @@
    "keywords": [
     "Tomas Korcak recent work",
     "korczis",
+    "oscilla",
+    "prismatic-majordomus",
+    "kompendium-epistemicke-anihilace",
+    "algoglyph",
     "korczis.github.io",
     "sonic-playground",
-    "prismatic-majordomus",
-    "oscilla",
-    "kompendium-epistemicke-anihilace",
     "data-atlas",
-    "crisis-map",
-    "catharsis-as-a-service"
+    "crisis-map"
    ]
   },
   {
@@ -4263,17 +4263,6 @@
  ],
  "repositories": [
   {
-   "name": "kompendium-epistemicke-anihilace",
-   "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
-   "language": "Elixir",
-   "category": "knowledge",
-   "github": "https://github.com/korczis/kompendium-epistemicke-anihilace",
-   "gitlab": null,
-   "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
-   "created": "2026-11-09T22:04:50Z",
-   "active": "2026-11-16T21:28:15Z"
-  },
-  {
    "name": "prismatic-majordomus",
    "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
    "language": "Rust",
@@ -4282,7 +4271,7 @@
    "gitlab": null,
    "site": "https://korczis.github.io/prismatic-majordomus/",
    "created": "2026-09-03T20:24:57Z",
-   "active": "2026-11-16T21:25:53Z"
+   "active": "2026-11-17T02:52:01Z"
   },
   {
    "name": "oscilla",
@@ -4293,7 +4282,40 @@
    "gitlab": null,
    "site": "https://korczis.github.io/oscilla/",
    "created": "2026-10-01T21:05:33Z",
-   "active": "2026-11-16T21:24:59Z"
+   "active": "2026-11-17T02:51:44Z"
+  },
+  {
+   "name": "algoglyph",
+   "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
+   "language": "TypeScript",
+   "category": "science",
+   "github": "https://github.com/korczis/algoglyph",
+   "gitlab": null,
+   "site": "https://korczis.github.io/algoglyph/",
+   "created": "2026-11-11T18:09:38Z",
+   "active": "2026-11-17T02:11:11Z"
+  },
+  {
+   "name": "kompendium-epistemicke-anihilace",
+   "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
+   "language": "Elixir",
+   "category": "knowledge",
+   "github": "https://github.com/korczis/kompendium-epistemicke-anihilace",
+   "gitlab": null,
+   "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+   "created": "2026-11-09T22:04:50Z",
+   "active": "2026-11-17T01:25:34Z"
+  },
+  {
+   "name": "openttd-prismatic-bridge",
+   "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
+   "language": "Python",
+   "category": "media",
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/openttd-prismatic-bridge",
+   "site": null,
+   "created": "2026-07-23T22:00:54.776Z",
+   "active": "2026-11-16T22:16:44.887Z"
   },
   {
    "name": "korczis.github.io",
@@ -4304,7 +4326,7 @@
    "gitlab": null,
    "site": null,
    "created": "2024-12-24T16:48:15Z",
-   "active": "2026-11-16T21:13:49Z"
+   "active": "2026-11-16T21:49:40Z"
   },
   {
    "name": "sonic-playground",
@@ -4316,28 +4338,6 @@
    "site": "https://korczis.github.io/sonic-playground/",
    "created": "2026-11-12T00:48:36Z",
    "active": "2026-11-16T21:07:30Z"
-  },
-  {
-   "name": "algoglyph",
-   "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
-   "language": "TypeScript",
-   "category": "science",
-   "github": "https://github.com/korczis/algoglyph",
-   "gitlab": null,
-   "site": "https://korczis.github.io/algoglyph/",
-   "created": "2026-11-11T18:09:38Z",
-   "active": "2026-11-16T20:34:34Z"
-  },
-  {
-   "name": "openttd-prismatic-bridge",
-   "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
-   "language": "Python",
-   "category": "media",
-   "github": null,
-   "gitlab": "https://gitlab.com/korczis/openttd-prismatic-bridge",
-   "site": null,
-   "created": "2026-07-23T22:00:54.776Z",
-   "active": "2026-11-16T20:07:28.883Z"
   },
   {
    "name": "catharsis-as-a-service",

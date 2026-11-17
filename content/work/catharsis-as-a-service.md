@@ -3,7 +3,7 @@
 title = "Catharsis as a Service"
 description = "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact."
 template = "work.html"
-weight = 8
+weight = 9
 updated = "2026-11-16T19:15:38Z"
 
 [taxonomies]
