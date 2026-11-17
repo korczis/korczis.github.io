@@ -3,7 +3,7 @@
 title = "Crisis map"
 description = "Hlášení geokódovaná přes lokální Nominatim, uložená jako PostGIS geografie a servírovaná z jednoho registru schopností: LiveView, REST, OpenAPI, MCP a CLI."
 template = "work.html"
-weight = 8
+weight = 9
 updated = "2026-11-16T19:15:44Z"
 
 [taxonomies]

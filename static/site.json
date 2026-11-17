@@ -11,8 +11,8 @@
  },
  "front_matter_schema": "https://korczis.github.io/schemas/front-matter.schema.json",
  "data_as_of": {
-  "snapshot": "2026-11-17T03:00:04Z",
-  "index": "2026-11-17T03:07:07Z"
+  "snapshot": "2026-11-17T12:07:53Z",
+  "index": "2026-11-17T12:17:07Z"
  },
  "pages": [
   {
@@ -1359,14 +1359,14 @@
    "keywords": [
     "Tomáš Korčák: nedávná práce",
     "korczis",
+    "majordomus-reel",
     "oscilla",
-    "prismatic-majordomus",
-    "kompendium-epistemicke-anihilace",
     "algoglyph",
+    "prismatic-majordomus",
     "korczis.github.io",
+    "kompendium-epistemicke-anihilace",
     "sonic-playground",
-    "data-atlas",
-    "crisis-map"
+    "data-atlas"
    ]
   },
   {
@@ -1648,7 +1648,7 @@
    "url": "https://korczis.github.io/cs/work/korczis-github-io/",
    "lang": "cs",
    "title": "korczis.github.io · Tomas Korcak",
-   "description": "korczis.github.io: projekt z kategorie Web, hlavní jazyk JavaScript, poslední commit 16. listopadu 2026.",
+   "description": "korczis.github.io: projekt z kategorie Web, hlavní jazyk JavaScript, poslední commit 17. listopadu 2026.",
    "type": "project",
    "category": null,
    "og_image": "https://korczis.github.io/og/cs-work-korczis-github-io.png",
@@ -1720,8 +1720,8 @@
    "keywords": [
     "Majordomus reel",
     "Média a umění",
-    "HTML",
     "JavaScript",
+    "HTML",
     "Shell",
     "Tomáš Korčák"
    ]
@@ -3311,14 +3311,14 @@
    "keywords": [
     "Tomas Korcak recent work",
     "korczis",
+    "majordomus-reel",
     "oscilla",
-    "prismatic-majordomus",
-    "kompendium-epistemicke-anihilace",
     "algoglyph",
+    "prismatic-majordomus",
     "korczis.github.io",
+    "kompendium-epistemicke-anihilace",
     "sonic-playground",
-    "data-atlas",
-    "crisis-map"
+    "data-atlas"
    ]
   },
   {
@@ -3672,8 +3672,8 @@
    "keywords": [
     "Majordomus reel",
     "Media and art",
-    "HTML",
     "JavaScript",
+    "HTML",
     "Shell",
     "Tomas Korcak"
    ]
@@ -4271,7 +4271,7 @@
    "gitlab": null,
    "site": "https://korczis.github.io/prismatic-majordomus/",
    "created": "2026-09-03T20:24:57Z",
-   "active": "2026-11-17T02:52:01Z"
+   "active": "2026-11-17T12:06:38Z"
   },
   {
    "name": "oscilla",
@@ -4282,7 +4282,7 @@
    "gitlab": null,
    "site": "https://korczis.github.io/oscilla/",
    "created": "2026-10-01T21:05:33Z",
-   "active": "2026-11-17T02:51:44Z"
+   "active": "2026-11-17T11:47:56Z"
   },
   {
    "name": "algoglyph",
@@ -4293,18 +4293,18 @@
    "gitlab": null,
    "site": "https://korczis.github.io/algoglyph/",
    "created": "2026-11-11T18:09:38Z",
-   "active": "2026-11-17T02:11:11Z"
+   "active": "2026-11-17T11:37:26Z"
   },
   {
-   "name": "kompendium-epistemicke-anihilace",
-   "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
-   "language": "Elixir",
-   "category": "knowledge",
-   "github": "https://github.com/korczis/kompendium-epistemicke-anihilace",
+   "name": "majordomus-reel",
+   "description": "A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound",
+   "language": "HTML",
+   "category": "media",
+   "github": "https://github.com/korczis/majordomus-reel",
    "gitlab": null,
-   "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
-   "created": "2026-11-09T22:04:50Z",
-   "active": "2026-11-17T01:25:34Z"
+   "site": "https://korczis.github.io/majordomus-reel/",
+   "created": "2026-10-23T00:51:59Z",
+   "active": "2026-11-17T11:12:12Z"
   },
   {
    "name": "openttd-prismatic-bridge",
@@ -4315,7 +4315,18 @@
    "gitlab": "https://gitlab.com/korczis/openttd-prismatic-bridge",
    "site": null,
    "created": "2026-07-23T22:00:54.776Z",
-   "active": "2026-11-16T22:16:44.887Z"
+   "active": "2026-11-17T10:53:29.397Z"
+  },
+  {
+   "name": "kompendium-epistemicke-anihilace",
+   "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
+   "language": "Elixir",
+   "category": "knowledge",
+   "github": "https://github.com/korczis/kompendium-epistemicke-anihilace",
+   "gitlab": null,
+   "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+   "created": "2026-11-09T22:04:50Z",
+   "active": "2026-11-17T06:29:59Z"
   },
   {
    "name": "korczis.github.io",
@@ -4326,7 +4337,7 @@
    "gitlab": null,
    "site": null,
    "created": "2024-12-24T16:48:15Z",
-   "active": "2026-11-16T21:49:40Z"
+   "active": "2026-11-17T03:10:28Z"
   },
   {
    "name": "sonic-playground",
@@ -4404,17 +4415,6 @@
    "site": null,
    "created": "2025-01-25T02:41:53.111Z",
    "active": "2026-10-29T13:51:53.522Z"
-  },
-  {
-   "name": "majordomus-reel",
-   "description": "A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound",
-   "language": "HTML",
-   "category": "media",
-   "github": "https://github.com/korczis/majordomus-reel",
-   "gitlab": null,
-   "site": "https://korczis.github.io/majordomus-reel/",
-   "created": "2026-10-23T00:51:59Z",
-   "active": "2026-10-29T10:42:22Z"
   },
   {
    "name": "gists-search",

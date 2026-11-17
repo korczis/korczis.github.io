@@ -68,7 +68,7 @@ Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist s
 ## Every original repository
 
 > 211 repositories on GitHub and GitLab where the owner wrote at least half of the commits,
-> derived 2026-11-17T03:07:07Z. Forks and mirrors (297) are not listed.
+> derived 2026-11-17T12:17:07Z. Forks and mirrors (297) are not listed.
 
 ### AI engineering (5)
 
@@ -157,10 +157,10 @@ Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist s
 
 ### Media and art (8)
 
+- majordomus-reel: A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound (HTML, 2026). article https://korczis.github.io/work/majordomus-reel/; GitHub https://github.com/korczis/majordomus-reel; site https://korczis.github.io/majordomus-reel/
 - openttd-prismatic-bridge: REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform (Python, 2026). article https://korczis.github.io/work/openttd-prismatic-bridge/; GitLab https://gitlab.com/korczis/openttd-prismatic-bridge
 - sonic-playground: Sonic Playground - Phoenix/Elixir music blog built on the Kita theme (Python, 2026). article https://korczis.github.io/work/sonic-playground/; GitHub https://github.com/korczis/sonic-playground; site https://korczis.github.io/sonic-playground/
 - catharsis-as-a-service: Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact. (HTML, 2026). article https://korczis.github.io/work/catharsis-as-a-service/; GitHub https://github.com/korczis/catharsis-as-a-service; site https://korczis.github.io/catharsis-as-a-service/
-- majordomus-reel: A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound (HTML, 2026). article https://korczis.github.io/work/majordomus-reel/; GitHub https://github.com/korczis/majordomus-reel; site https://korczis.github.io/majordomus-reel/
 - prismatic-blog (Dockerfile, 2025). article https://korczis.github.io/work/prismatic-blog/; GitHub https://github.com/korczis/prismatic-blog; site https://korczis.github.io/prismatic-blog/
 - dj-schnapps: Dj Schnapps (Elixir, 2019). GitHub https://github.com/korczis/dj-schnapps; GitLab https://gitlab.com/korczis/dj-schnapps
 - brepta: TTS via REST (JavaScript, 2017). GitHub https://github.com/korczis/brepta; GitLab https://gitlab.com/korczis/brepta

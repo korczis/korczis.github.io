@@ -3,8 +3,8 @@
 title = "algoglyph"
 description = "Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem."
 template = "work.html"
-weight = 4
-updated = "2026-11-16T22:46:15Z"
+weight = 3
+updated = "2026-11-17T09:23:07Z"
 
 [taxonomies]
 tags = ["Věda a vizualizace", "TypeScript", "Rust", "JavaScript"]
@@ -26,9 +26,9 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**algoglyph** je projekt z kategorie [Věda a vizualizace](@/projects/science.cs.md). Jeho kód je napsaný hlavně v jazyce [TypeScript](@/glossary/typescript.cs.md) (82,9 %), dále [Rust](@/glossary/rust.cs.md), [JavaScript](@/glossary/javascript.cs.md) a [HTML](@/glossary/html.cs.md).
+**algoglyph** je projekt z kategorie [Věda a vizualizace](@/projects/science.cs.md). Jeho kód je napsaný hlavně v jazyce [TypeScript](@/glossary/typescript.cs.md) (83,6 %), dále [Rust](@/glossary/rust.cs.md), [JavaScript](@/glossary/javascript.cs.md) a [HTML](@/glossary/html.cs.md).
 
-[Repozitář](@/glossary/repository.cs.md) vznikl 11. listopadu 2026; poslední [commit](@/glossary/commit.cs.md) je z 16. listopadu 2026. Zní „Merge remote-tracking branch 'origin/feature/exact-prices' into fix/charts-by-title“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+[Repozitář](@/glossary/repository.cs.md) vznikl 11. listopadu 2026; poslední [commit](@/glossary/commit.cs.md) je z 17. listopadu 2026. Zní „Merge remote-tracking branch 'origin/feature/second-pass-foucault-pendulum' into fix/charts-by-title“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 
 Je postavený na [p5.js](@/glossary/p5-js.cs.md), [Apache ECharts](@/glossary/apache-echarts.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md) a [Flowbite Pro](@/glossary/flowbite-pro.cs.md).
 

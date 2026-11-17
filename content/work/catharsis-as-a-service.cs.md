@@ -3,7 +3,7 @@
 title = "Catharsis as a Service"
 description = "Catharsis as a Service: projekt z kategorie Média a umění, hlavní jazyk HTML, poslední commit 16. listopadu 2026."
 template = "work.html"
-weight = 9
+weight = 10
 updated = "2026-11-16T19:15:38Z"
 
 [taxonomies]
