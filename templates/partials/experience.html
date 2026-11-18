@@ -6,7 +6,7 @@
     capability links to its glossary term, its categories and the public work that shares it. -#}
 {%- set xp = load_data(path="data/experience.json") -%}
 {%- set xr = load_data(path="data/experience-rules.toml") -%}
-{%- set xs = "" %}{% set xl = "" %}{% if lang is defined and lang != config.default_language %}{% set xs = "_" ~ lang %}{% set xl = "." ~ lang %}{% endif -%}
+{%- set xs = "" %}{% set xl = "" %}{% set xlp = "" %}{% if lang is defined and lang != config.default_language %}{% set xs = "_" ~ lang %}{% set xl = "." ~ lang %}{% set xlp = "/" ~ lang %}{% endif -%}
 {%- set xgl = get_section(path="glossary/_index" ~ xl ~ ".md") -%}
 {%- set xwk = get_section(path="work/_index" ~ xl ~ ".md") -%}
 {%- set xpr = get_section(path="projects/_index" ~ xl ~ ".md") -%}
@@ -80,18 +80,22 @@
           </div>
           <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">{{ c["description" ~ xs] }}</p>
           {%- if xp.public_work[ckey] is defined %}{% set xpw = xp.public_work[ckey] %}
-          {#- The public repositories that share the capability: their count, their names in the
-              tooltip (public names only, never an engagement's). #}
-          <p class="mt-1">{{ <chip label={trans(key="xp_public_work_n", lang=lang) | replace(from="{n}", to=xpw | length ~ "")} href={"#xp-cap-" ~ ckey} size="xs" variant="primary" tip={xpw | join(sep=", ")} tip_id={"tip-xp-pw-" ~ ckey} /> }}</p>
+          {#- The public repositories that share the capability: their count (linking the list of
+              their names below, each a link to its /work/<slug>/ page), the names in the tooltip
+              too (public names only, never an engagement's). #}
+          <p class="mt-1">{{ <chip label={trans(key="xp_public_work_n", lang=lang) | replace(from="{n}", to=xpw | length ~ "")} href={"#xp-pw-" ~ ckey} size="xs" variant="primary" tip={xpw | join(sep=", ")} tip_id={"tip-xp-pw-" ~ ckey} /> }}</p>
           {%- endif %}
           <p class="tabular mt-1 text-xs text-gray-500 dark:text-gray-400">{{ trans(key="xp_evidence", lang=lang) | replace(from="{commits}", to=xcc | num_format(locale=lang)) | replace(from="{headings}", to=xch | num_format(locale=lang)) | replace(from="{paths}", to=xcp | num_format(locale=lang)) }}{% if xcd %} · {{ trans(key="xp_declared", lang=lang) }}{% endif %}</p>
-          <ul class="mt-2 flex flex-wrap gap-1.5" aria-label="{{ trans(key="xp_public_work", lang=lang) }}">
+          <ul id="xp-pw-{{ ckey }}" class="mt-2 flex scroll-mt-24 flex-wrap gap-1.5" aria-label="{{ trans(key="xp_public_work", lang=lang) }}">
             {%- for cat in c.categories %}{% for p in xpr.pages %}{% if p.extra.category is defined and p.extra.category == cat %}
             <li><a href="{{ p.permalink }}" class="{{ xbadge }}">{{ <category_icon key={cat} class="mr-1 h-3 w-3" /> }}{{ p.title }}</a></li>
             {%- endif %}{% endfor %}{% endfor %}
-            {%- if xp.public_work[ckey] is defined %}{% for repo in xp.public_work[ckey] %}{% for p in xwk.pages %}{% if p.extra.repo == repo %}
-            <li><a href="{{ p.permalink }}" class="{{ xbadge }} font-mono">{{ repo }}</a></li>
-            {%- endif %}{% endfor %}{% endfor %}{% endif %}
+            {#- Every public-work name links: its /work/<slug>/ page, or, for a repository without
+                one, its entry in the projects catalogue. #}
+            {%- if xp.public_work[ckey] is defined %}{% for repo in xp.public_work[ckey] %}
+            {%- set_global xwurl = config.base_url ~ xlp ~ "/projects/?project=" ~ repo %}{% for p in xwk.pages %}{% if p.extra.repo == repo %}{% set_global xwurl = p.permalink %}{% endif %}{% endfor %}
+            <li><a href="{{ xwurl }}" class="{{ xbadge }} font-mono" data-public-work="{{ repo }}">{{ repo }}</a></li>
+            {%- endfor %}{% endif %}
           </ul>
         </li>
         {%- endif %}{% endfor %}

@@ -213,8 +213,14 @@
         <a href="{{ r.url }}" class="relative z-10 mt-auto inline-flex items-center self-start pt-3 text-sm {{ link }}">{{ trans(key="home_proof_role_link", lang=lang) | replace(from="{org}", to=org) }}{{ <icon name="external" class="ms-1 h-4 w-4" /> }}</a>
       {% </evidence_card> %}
       {%- endif %}{% endfor %}
-      {% <evidence_card href="#case-majordomus" title={trans(key="home_proof_author_of", lang=lang)} id="proof-majordomus" figure={"v" ~ gh.majordomus.version} note={trans(key="home_proof_supervised", lang=lang) | replace(from="{n}", to=ix.counts.supervised ~ "")}> %}
-        <p class="tabular mt-2 text-xs text-gray-600 dark:text-gray-400">{{ trans(key="published", lang=lang) | safe }} <time datetime="{{ gh.majordomus.published_at }}">{{ gh.majordomus.published_at | date(format="%-d %b %Y") }}</time></p>
+      {#- The release through the majordomusLive x-data (static/js/components/majordomus.js): the
+          snapshot from data/github.json without JavaScript, the current majordomus.dev release with it. #}
+      {% <evidence_card href="#case-majordomus" title={trans(key="home_proof_author_of", lang=lang)} id="proof-majordomus"> %}
+        <div class="flex flex-col" x-data="majordomusLive('{{ config.extra.majordomus_build }}', {{ gh.majordomus | json_encode }})">
+          <p class="tabular mt-3 text-3xl font-extrabold leading-none text-gray-900 dark:text-white" x-text="'v' + release.version">v{{ gh.majordomus.version }}</p>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">{{ trans(key="home_proof_supervised", lang=lang) | replace(from="{n}", to=ix.counts.supervised ~ "") }}</p>
+          <p class="tabular mt-2 text-xs text-gray-600 dark:text-gray-400">{{ trans(key="published", lang=lang) | safe }} <time datetime="{{ gh.majordomus.published_at }}" :datetime="release.published_at" x-text="date(release.published_at)">{{ gh.majordomus.published_at | date(format="%-d %b %Y") }}</time></p>
+        </div>
         <a href="{{ config.extra.majordomus_url }}" class="relative z-10 mt-auto inline-flex items-center self-start pt-3 text-sm {{ link }}">majordomus.dev{{ <icon name="external" class="ms-1 h-4 w-4" /> }}</a>
       {% </evidence_card> %}
       {% <evidence_card href="#body-of-work" title={trans(key="home_proof_public_output", lang=lang)} id="proof-output" figure={gh.contributions.total | num_format(locale=lang)} note={trans(key="home_proof_contributions", lang=lang) | replace(from="{from}", to=gh.contributions.from) | replace(from="{to}", to=gh.contributions.to)}> %}
@@ -444,6 +450,13 @@
           <dl class="tabular grid grid-cols-2 gap-3 text-sm">
             <div><dt><a href="{{ fork_term.permalink }}" class="{{ link }}">{{ trans(key="js_provenance_fork", lang=lang) }}</a></dt><dd class="text-xl font-bold text-gray-900 dark:text-white">{{ ix.counts.forks }}</dd></div>
             <div><dt><a href="{{ mirror_term.permalink }}" class="{{ link }}">{{ trans(key="js_provenance_mirror", lang=lang) }}</a></dt><dd class="text-xl font-bold text-gray-900 dark:text-white">{{ ix.counts.mirrors }}</dd></div>
+          </dl>
+          {#- The rest of the listings: counted, not listed. Each opens the provenance simulator
+              with its hidden-and-empty toggle on, where they are nodes. #}
+          <p class="mb-2 mt-4 text-sm font-medium text-gray-900 dark:text-white">{{ trans(key="body_counted_rest", lang=lang) }}</p>
+          <dl class="tabular grid grid-cols-2 gap-3 text-sm">
+            <div><dt><a href="?viz=provenance&amp;provenance.hidden=1" class="{{ link }}">{{ trans(key="js_provenance_empty", lang=lang) }}</a></dt><dd class="text-xl font-bold text-gray-900 dark:text-white">{{ ix.counts.empty }}</dd></div>
+            <div><dt><a href="?viz=provenance&amp;provenance.hidden=1" class="{{ link }}">{{ trans(key="js_provenance_hidden_node", lang=lang) }}</a></dt><dd class="text-xl font-bold text-gray-900 dark:text-white">{{ ix.counts.hidden }}</dd></div>
           </dl>
         </div>
         <div class="rounded-lg bg-gray-50 p-4 dark:bg-gray-900">
@@ -688,11 +701,13 @@
   </section>
 
   {%- if hiring %}
-  {#- 14. Questions hiring teams ask: Flowbite Pro faq-sections/grid-layout, the questions of /hire/
-      from its one partial (the FAQPage structured data stays on /hire/). #}
+  {#- 14. Questions hiring teams ask: Flowbite Pro faq-sections/grid-layout from md, the
+      faq-sections/accordion under it (data-accordion="collapse", first item open), the questions
+      of /hire/ from its one partial (the FAQPage structured data stays on /hire/). #}
   <section id="faq" class="{{ chapter }}" aria-labelledby="faq-title">
     {{ <card_head id="faq-title" title={trans(key="home_faq_title", lang=lang)} action={trans(key="home_faq_all", lang=lang)} href={base ~ "hire/#faq-title"} /> }}
-    <div class="grid grid-cols-1 gap-x-8 gap-y-6 md:grid-cols-2 xl:grid-cols-3">
+    <div class="grid grid-cols-1 gap-x-8 md:grid-cols-2 md:gap-y-6 xl:grid-cols-3" data-accordion="collapse" data-faq-accordion
+      data-active-classes="text-gray-900 dark:text-white" data-inactive-classes="text-gray-900 dark:text-white">
       {%- set faq_as = "grid" %}{% set faq_limit = 6 %}{% include "partials/hire-faq.html" %}
     </div>
   </section>
@@ -798,4 +813,5 @@
 <script src="{{ get_url(path='js/components/majordomus.js', cachebust=true) }}" defer></script>
 <script src="{{ get_url(path='js/components/clipboard.js', cachebust=true) }}" defer></script>
 <script src="{{ get_url(path='js/components/hire-role.js', cachebust=true) }}" defer></script>
+<script src="{{ get_url(path='js/components/faq-accordion.js', cachebust=true) }}" defer></script>
 {% endblock scripts %}

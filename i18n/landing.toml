@@ -327,6 +327,10 @@ cs = "Původní znamená, že {name} napsal aspoň polovinu commitů."
 en = "Forks and mirrors: counted, never shown as own work"
 cs = "Forky a zrcadla: započtené, nikdy ne jako vlastní práce"
 
+[body_counted_rest]
+en = "Empty and hidden: counted, not listed"
+cs = "Prázdné a skryté: započtené, nevypsané"
+
 [body_host_both]
 en = "On both"
 cs = "Na obou"
