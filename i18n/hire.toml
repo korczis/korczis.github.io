@@ -169,3 +169,16 @@ cs = "E-mailem {email}, nebo přes LinkedIn {linkedin}."
 [llms_link_title]
 en = "{name} for language models (llms.txt)"
 cs = "{name} pro jazykové modely (llms.txt)"
+
+# The app shell's skillset section (templates/partials/sidebar.html).
+[skills_languages]
+en = "Languages"
+cs = "Jazyky"
+
+[skills_technologies]
+en = "Technologies"
+cs = "Technologie"
+
+[skills_capabilities]
+en = "Skills"
+cs = "Dovednosti"
