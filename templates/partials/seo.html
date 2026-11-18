@@ -105,6 +105,7 @@
   <link rel="me" href="{{ v }}">{% endfor %}{% endif %}
 {%- if indexable %}
 {%- set person = config.base_url ~ "/#person" %}
+{%- set salp0 = "" %}{% if lang is defined and lang != config.default_language %}{% set salp0 = "." ~ lang %}{% endif %}
 {%- set website = config.base_url ~ lp ~ "/#website" %}
   <script type="application/ld+json">
   {"@context": "https://schema.org", "@graph": [
@@ -126,20 +127,59 @@
      {%- endif %}
      {%- for r in scv.roles %}{% if loop.first %}
      "hasOccupation": [{% endif %}{"@type": "Occupation", "name": {{ r["title" ~ sfx] | default(value=r.title) | json_encode | safe }}}{% if not loop.last %}, {% else %}],{% endif %}{% endfor %}
-     {#- worksFor: the roles still running (no end). #}
-     {%- set_global wf = "" %}{% for r in scv.roles %}{% if r.end is not defined %}{% if wf %}{% set_global wf = wf ~ ", " %}{% endif %}
-     {%- set_global wf = wf ~ '{"@type": "Organization", "name": ' ~ (r.organisation | json_encode) %}{% if r.url is defined %}{% set_global wf = wf ~ ', "url": ' ~ (r.url | json_encode) %}{% endif %}{% set_global wf = wf ~ "}" %}{% endif %}{% endfor %}
+     {#- Work history as dated roles (schema.org Role pattern): a running role (no end) is worksFor, a
+         finished one alumniOf, each an OrganizationRole with roleName, startDate, endDate and the
+         nested Organization; an organisation gets a url only when data/cv.toml gives one, so the
+         anonymised firm has none. scripts/check-seo.mjs requires every cv.roles entry here. #}
+     {%- set_global wf = "" %}{% set_global af = "" %}
+     {%- for r in scv.roles %}
+     {%- set ro = '{"@type": "Organization", "name": ' ~ (r.organisation | json_encode) %}{% if r.url is defined %}{% set ro = ro ~ ', "url": ' ~ (r.url | json_encode) %}{% endif %}{% set ro = ro ~ "}" %}
+     {%- set rr = '{"@type": "OrganizationRole", "roleName": ' ~ (r["title" ~ sfx] | default(value=r.title) | json_encode) ~ ', "startDate": ' ~ (r.start | json_encode) %}
+     {%- if r.end is defined %}
+     {%- if af %}{% set_global af = af ~ ", " %}{% endif %}{% set_global af = af ~ rr ~ ', "endDate": ' ~ (r.end | json_encode) ~ ', "alumniOf": ' ~ ro ~ "}" %}
+     {%- else %}
+     {%- if wf %}{% set_global wf = wf ~ ", " %}{% endif %}{% set_global wf = wf ~ rr ~ ', "worksFor": ' ~ ro ~ "}" %}
+     {%- endif %}
+     {%- endfor %}
      {%- if wf %}
      "worksFor": [{{ wf | safe }}],
      {%- endif %}
-     {%- for e in scv.education %}{% if loop.first %}
-     "alumniOf": [{% endif %}{"@type": "EducationalOrganization", "name": {{ e.institution | json_encode | safe }}{% if e.url is defined %}, "url": {{ e.url | json_encode | safe }}{% endif %}}{% if not loop.last %}, {% else %}],{% endif %}{% endfor %}
+     {%- for e in scv.education %}{% if af %}{% set_global af = af ~ ", " %}{% endif %}{% set_global af = af ~ '{"@type": "EducationalOrganization", "name": ' ~ (e.institution | json_encode) %}{% if e.url is defined %}{% set_global af = af ~ ', "url": ' ~ (e.url | json_encode) %}{% endif %}{% set_global af = af ~ "}" %}{% endfor %}
+     {%- if af %}
+     "alumniOf": [{{ af | safe }}],
+     {%- endif %}
      {%- for l in scv.languages %}{% if loop.first %}
      "knowsLanguage": [{% endif %}{{ l.name | json_encode | safe }}{% if not loop.last %}, {% else %}],{% endif %}{% endfor %}
      "homeLocation": {"@type": "Place", "name": {{ config.extra.location | json_encode | safe }}},
-     "sameAs": ["https://github.com/{{ config.extra.github }}", "https://gitlab.com/{{ config.extra.gitlab }}", {{ config.extra.majordomus_url | json_encode | safe }}{% if scv.links is defined %}{% for k, v in scv.links %}, {{ v | json_encode | safe }}{% endfor %}{% endif %}],
+     {#- sameAs names profiles of this person only; Majordomus is a product, its own node below. #}
+     "sameAs": ["https://github.com/{{ config.extra.github }}", "https://gitlab.com/{{ config.extra.gitlab }}"{% if scv.links is defined %}{% for k, v in scv.links %}, {{ v | json_encode | safe }}{% endfor %}{% endif %}],
      {%- set sx = load_data(path="data/index.json") %}{% set sgl = load_data(path="data/glossary.toml") %}
-     "knowsAbout": [{% for l in sx.languages %}{% if loop.index <= 8 %}{{ l.name | json_encode | safe }}, {% endif %}{% endfor %}{% for gt in sgl.terms %}{% if gt.kind == "technology" %}{{ gt.term | json_encode | safe }}, {% endif %}{% endfor %}"Software engineering"]},
+     {%- set sxp = load_data(path="data/experience.json", required=false) %}
+     {#- knowsAbout: the measured skills (data/index.json skills: languages of the original
+         repositories, technologies of the curated stacks) and the technologies of the client work
+         (data/experience.json), each one that has a glossary term, as a DefinedTerm with its
+         glossary page; a term the owner does not claim (glossary claimed = false, the libraries
+         ADR 0005 retired) never appears. /hire/ shows the same list as its skills table. #}
+     {%- set_global kns = "" %}{% for l in sx.skills.languages %}{% set_global kns = kns ~ "|" ~ l.name %}{% endfor %}
+     {%- for t in sx.skills.technologies %}{% set_global kns = kns ~ "|" ~ t.name %}{% endfor %}
+     {%- if sxp %}{% for e in sxp.engagements %}{% for t in e.technologies | default(value=[]) %}{% set_global kns = kns ~ "|" ~ t %}{% endfor %}{% endfor %}{% endif %}
+     {%- set kn = kns | split(pat="|") %}
+     {%- set_global kids = "|" %}{% set_global ka = "" %}
+     {%- for n in kn %}{% if n %}
+     {%- set_global kid = "" %}{% for gt in sgl.terms %}{% if gt.term == n or n in gt.aliases | default(value=[]) %}{% if gt.claimed is not defined or gt.claimed %}{% set_global kid = gt.id %}{% endif %}{% endif %}{% endfor %}
+     {%- if kid and not ("|" ~ kid ~ "|") in kids %}{% set_global kids = kids ~ kid ~ "|" %}
+     {%- set kp = get_page(path="glossary/" ~ kid ~ salp0 ~ ".md") %}
+     {%- if ka %}{% set_global ka = ka ~ ", " %}{% endif %}{% set_global ka = ka ~ '{"@type": "DefinedTerm", "name": ' ~ (n | json_encode) ~ ', "url": ' ~ (kp.permalink | json_encode) ~ "}" %}
+     {%- endif %}
+     {%- endif %}{% endfor %}
+     "knowsAbout": [{{ ka | safe }}]},
+    {%- set_global mterm = false %}{% for gt in sgl.terms %}{% if gt.reference.url is starting_with(pat=config.extra.majordomus_url) %}{% set_global mterm = gt %}{% endif %}{% endfor %}
+    {%- if mterm %}
+    {#- Majordomus, the owner's product: its own node, authored by the Person (not a sameAs of him). #}
+    {"@type": "SoftwareApplication", "@id": {{ (config.extra.majordomus_url ~ "/#software") | json_encode | safe }}, "name": {{ mterm.term | json_encode | safe }},
+     "url": {{ config.extra.majordomus_url | json_encode | safe }}, "description": {{ mterm["definition" ~ sfx] | default(value=mterm.definition) | json_encode | safe }},
+     "applicationCategory": "DeveloperApplication", "author": {"@id": {{ person | json_encode | safe }}}},
+    {%- endif %}
     {"@type": "WebSite", "@id": {{ website | json_encode | safe }}, "url": {{ (config.base_url ~ lp ~ "/") | json_encode | safe }},
      "name": {{ config.title | json_encode | safe }}, "description": {{ config.description | json_encode | safe }},
      "inLanguage": {{ lang | default(value=config.default_language) | json_encode | safe }}, "author": {"@id": {{ person | json_encode | safe }}}, "publisher": {"@id": {{ person | json_encode | safe }}}},
@@ -148,7 +188,7 @@
      "description": {{ d | json_encode | safe }}, "isPartOf": {"@id": {{ website | json_encode | safe }}},
      "primaryImageOfPage": {"@type": "ImageObject", "url": {{ img | json_encode | safe }}, "width": 1200, "height": 630},
      {%- if schema == "home" or schema == "profile" or schema == "hire" %}
-     "mainEntity": {"@id": {{ person | json_encode | safe }}},
+     "mainEntity": {"@id": {{ person | json_encode | safe }}}, "dateModified": {{ sx.generated_at | json_encode | safe }},
      {%- endif %}
      {%- if schema == "project" %}
      {%- set wrc = load_data(path="data/recent.json") %}
@@ -222,25 +262,9 @@
        {%- elif schema != "home" %},
        {"@type": "ListItem", "position": 2, "name": {% if fm %}{{ fm.title | json_encode | safe }}{% else %}{{ t | json_encode | safe }}{% endif %}, "item": {{ url | json_encode | safe }}}
        {%- endif %}]}}
-    {%- if schema == "hire" and scv.hire is defined and scv.hire.available %}
-    {%- set hroles = scv.hire["roles" ~ sfx] | default(value=scv.hire.roles) %}
-    {%- set hreg = scv.hire["regions" ~ sfx] | default(value=scv.hire.regions) %}
-    {%- set_global heng = "" %}{% for e in scv.hire.engagement %}{% if heng %}{% set_global heng = heng ~ ", " %}{% endif %}{% set_global heng = heng ~ trans(key="hire_engagement_" ~ e | replace(from="-", to="_"), lang=lang) %}{% endfor %}
-    {%- set_global hpast = "" %}{% for r in scv.roles %}{% if r.end is defined %}{% if hpast %}{% set_global hpast = hpast ~ "; " %}{% endif %}{% set_global hpast = hpast ~ r.title ~ ", " ~ r.organisation %}{% endif %}{% endfor %}
-    ,
+    {%- if schema == "hire" and scv.hire is defined and scv.hire.available %},
     {"@type": "FAQPage", "@id": {{ (url ~ "#faq") | json_encode | safe }}, "isPartOf": {"@id": {{ (url ~ "#webpage") | json_encode | safe }}}, "mainEntity": [
-      {"@type": "Question", "name": {{ trans(key="hire_faq_q_available", lang=lang) | replace(from="{name}", to=config.extra.author) | json_encode | safe }},
-       "acceptedAnswer": {"@type": "Answer", "text": {{ trans(key="hire_faq_a_available", lang=lang) | replace(from="{engagement}", to=heng) | replace(from="{workplace}", to=trans(key="hire_workplace_" ~ scv.hire.workplace | replace(from="-", to="_"), lang=lang)) | replace(from="{regions}", to=hreg) | json_encode | safe }}}},
-      {"@type": "Question", "name": {{ trans(key="hire_faq_q_roles", lang=lang) | json_encode | safe }},
-       "acceptedAnswer": {"@type": "Answer", "text": {{ hroles | join(sep="; ") | json_encode | safe }}}},
-      {%- if scv.hire.rate_from is defined %}
-      {"@type": "Question", "name": {{ trans(key="hire_faq_q_rate", lang=lang) | json_encode | safe }},
-       "acceptedAnswer": {"@type": "Answer", "text": {{ trans(key="hire_faq_a_rate", lang=lang) | replace(from="{rate}", to=scv.hire.rate_currency ~ " " ~ scv.hire.rate_from) | replace(from="{unit}", to=trans(key="hire_unit_" ~ scv.hire.rate_unit, lang=lang)) | json_encode | safe }}}},
-      {%- endif %}
-      {"@type": "Question", "name": {{ trans(key="hire_faq_q_experience", lang=lang) | json_encode | safe }},
-       "acceptedAnswer": {"@type": "Answer", "text": {{ hpast | json_encode | safe }}}},
-      {"@type": "Question", "name": {{ trans(key="hire_faq_q_contact", lang=lang) | json_encode | safe }},
-       "acceptedAnswer": {"@type": "Answer", "text": {{ trans(key="hire_faq_a_contact", lang=lang) | replace(from="{email}", to=sgh.profile.email | default(value="")) | replace(from="{linkedin}", to=scv.links.linkedin | default(value="")) | json_encode | safe }}}}
+      {%- set faq_as = "json" %}{% include "partials/hire-faq.html" %}
     ]}
     {%- endif %}
   ]}
