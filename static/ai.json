@@ -3,11 +3,11 @@
  "description": "The Majordomus layer of korczis/korczis.github.io: every object of .ai/ with its MCP resource URI",
  "source": "majordomus run objects.list, capabilities.list",
  "majordomus": "1.0.2",
- "tree": "43080437cfde100544853eba497fca7962d369ac31affc049ba12701ba817b15",
+ "tree": "2a765bc97f67a40037d35f36f2939916c61d7fdf3e35517593d3dd56810f7c23",
  "counts": {
-  "objects": 143,
+  "objects": 144,
   "kinds": {
-   "adr": 8,
+   "adr": 9,
    "context": 21,
    "document": 9,
    "knowledge": 9,
@@ -20,9 +20,9 @@
    "skill": 1,
    "taxonomy": 8
   },
-  "capabilities": 374,
+  "capabilities": 375,
   "mcp_tools": 215,
-  "mcp_resources": 200,
+  "mcp_resources": 201,
   "http_routes": 219
  },
  "objects": [
@@ -89,6 +89,14 @@
    "title": "One positioning derived from the hire headline; due diligence and M&A move to the fourth role and the client-work proof",
    "description": "One positioning derived from the hire headline; due diligence and M&A move to the fourth role and the client-work proof",
    "path": ".ai/repo/adrs/0008-one-positioning-derived-from-the-hire-headline-due-diligence.md"
+  },
+  {
+   "uri": "majordomus://adr/adr-0009",
+   "kind": "adr",
+   "identity": "adr-0009",
+   "title": "Repository dossiers are inferred, checked claim by claim, and never written where a safety check refuses",
+   "description": "Repository dossiers are inferred, checked claim by claim, and never written where a safety check refuses",
+   "path": ".ai/repo/adrs/0009-repository-dossiers-are-inferred-checked-claim-by-claim-and-n.md"
   },
   {
    "uri": "majordomus://context/ai.layer",
