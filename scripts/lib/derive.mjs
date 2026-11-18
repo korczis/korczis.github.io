@@ -5,6 +5,9 @@
 //   writeOrCheck()                      write derived files, or --check them (stale, missing, orphaned)
 //   t(), plural()                       i18n/*.toml through loadStrings(), with {var} and plural forms
 //   clip(), slug(), pool(), local()     small helpers that were copy-pasted three times
+//   cutAtWord()                         whether a clipped text was cut between words
+//   permalink(), urlOf()                a content page's URL as Zola makes it (path, language)
+//   roleNoun(), PROFILE_SCHEMAS         the owner's role noun, and the pages that present the owner
 import { existsSync, mkdirSync, readFileSync, readdirSync, unlinkSync, writeFileSync } from 'node:fs';
 import { dirname, join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -111,12 +114,65 @@ export function cadence(workflow = '.github/workflows/refresh.yml') {
 }
 
 // Text cut to a limit at a word boundary, with an ellipsis; padded when it is too short.
-export function clip(text, max, { min = 0, pad = '' } = {}) {
+// With `measure` (a function from text to its width, e.g. pixels at a font size) the limit is a
+// width and the cut is always between words: the longest run of whole words that fits with the
+// ellipsis, without the punctuation it ended on. A first word wider than the limit is the only
+// mid-word cut, and cutAtWord() reports it.
+export function clip(text, max, { min = 0, pad = '', measure = null } = {}) {
   let out = text;
+  if (measure) {
+    if (measure(out) <= max) return out;
+    const words = out.split(/\s+/);
+    let kept = '';
+    for (const word of words) {
+      const next = kept ? `${kept} ${word}` : word;
+      if (measure(`${next.replace(/[\s,.;:–—-]+$/, '')}…`) > max) break;
+      kept = next;
+    }
+    if (!kept) {
+      kept = words[0];
+      while (kept.length > 1 && measure(`${kept}…`) > max) kept = kept.slice(0, -1);
+    }
+    return `${kept.replace(/[\s,.;:–—-]+$/, '')}…`;
+  }
   if (out.length > max) out = `${out.slice(0, max - 3).replace(/\s+\S*$/, '')}…`;
   if (out.length < min && pad) out = `${out} ${pad}`;
   return out;
 }
+
+// Whether `shown` is `source` itself, or a cut of it between two words (an ellipsis after a
+// whole word, punctuation dropped): the assertion behind every clipped title and description.
+export function cutAtWord(source, shown) {
+  const norm = (s) => s.replace(/\s+/g, ' ').trim();
+  const src = norm(source);
+  const out = norm(shown);
+  if (out === src) return true;
+  if (!out.endsWith('…')) return false;
+  const kept = out.slice(0, -1);
+  if (!kept || !src.startsWith(kept)) return false;
+  return /^[\s,.;:–—-]/.test(src.slice(kept.length));
+}
+
+// The page's permalink path, as Zola makes it: front matter `path` wins; otherwise the content
+// path without .md (a section's _index.md is its directory), under /<lang>/ for a translation.
+// '/' is the home page, '/cs/hire/' the Czech hire page, '/work/x/' a work page.
+export function permalink({ rel, lang, fm }) {
+  if (fm?.path) return `/${fm.path.replace(/^\/|\/$/g, '')}/`;
+  const prefix = isDefault(lang) ? '' : `/${lang}`;
+  const file = rel.replace(/\.[a-z]{2}\.md$/, '.md');
+  if (file === '_index.md') return `${prefix}/`;
+  if (file.endsWith('/_index.md')) return `${prefix}/${file.slice(0, -'_index.md'.length)}`;
+  return `${prefix}/${file.replace(/\.md$/, '')}/`;
+}
+export const urlOf = (page) => `${identity().base}${permalink(page)}`;
+
+// The role noun of a headline: what it says before the first "for"/"pro" (en/cs) or comma, e.g.
+// "Staff engineer" of "Staff engineer for AI agent infrastructure, Elixir and Rust".
+export const roleNoun = (headline) => headline.split(/\s+(?:for|pro|of|na)\s+|,/)[0].trim();
+
+// Pages that present the owner (front matter `schema`): their titles and cards carry the name, the
+// headline's role noun and, while data/cv.toml [hire] says so, the availability.
+export const PROFILE_SCHEMAS = ['home', 'profile', 'hire'];
 
 // The URL slug of a repository name (content/work/<slug>.md, /work/<slug>/), one implementation.
 export const slug = (name) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
