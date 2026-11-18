@@ -54,7 +54,7 @@ const site = {
   author: {
     name: me.author, github: me.githubUrl, gitlab: me.gitlabUrl, location: config.extra.location,
     // The owner's facts (ADR 0004, 0007): profile links, availability for hire and the work history,
-    // so a consumer of this file (the profile README of korczis/korczis) states them without a copy.
+    // so a consumer of this file (the GitHub profile README, ADR 0004) states them without a copy.
     ...Object.fromEntries(Object.entries(cv.links ?? {})),
     email: readJson('data/github.json').profile?.email ?? null,
   },
