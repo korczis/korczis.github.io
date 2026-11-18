@@ -471,7 +471,11 @@ async function checkCollapse(browser) {
       expanded: t?.getAttribute('aria-expanded'), label: t?.getAttribute('aria-label'),
       labelExpand: t?.dataset.labelExpand, labelCollapse: t?.dataset.labelCollapse,
       labelWidth: Math.round(label?.getBoundingClientRect().width ?? -1),
-      unnamed: links.filter((a) => !(a.getAttribute('aria-label') || a.innerText.trim())).length,
+      // A link the browser does not show (inside a closed <details>, which Chrome hides with
+      // content-visibility, or display: none) is outside the accessibility tree and cannot be
+      // unnamed; checkVisibility() says so. A visually hidden label (1 px, clipped) is still
+      // visible to it, so a link whose only name is that label is still checked.
+      unnamed: links.filter((a) => a.checkVisibility() && !(a.getAttribute('aria-label') || a.innerText.trim())).length,
       overflow: document.scrollingElement.scrollWidth > window.innerWidth,
     };
   });

@@ -51,6 +51,10 @@ answered one during the production verify of e7d62bb on 2026-11-18): that load i
 with a growing pause, each retry printed, and only the last attempt's findings count. Every other
 status, and a host that keeps failing, is a finding as before.
 
+The collapsed-sidebar check counts only links the browser shows (`checkVisibility()`): a link in a
+closed `<details>` (hidden with content-visibility) is outside the accessibility tree, while a link
+named only by a visually hidden label is still required to have that name.
+
 # Verification
 
 ```sh
