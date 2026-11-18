@@ -93,7 +93,9 @@ function checkHire(rel, lang, text, graph) {
   }));
   if (!faq) fail(rel, 'no FAQPage while cv.toml [hire] available');
   else {
-    const asked = (faq.mainEntity ?? []).map((q) => ({ q: q.name, a: q.acceptedAnswer?.text }));
+    // Whitespace compares as plain() makes it: a non-breaking space (static/js/typography.js) is a space.
+    const ws = (t) => (t ?? '').replace(/\s+/g, ' ').trim();
+    const asked = (faq.mainEntity ?? []).map((q) => ({ q: ws(q.name), a: ws(q.acceptedAnswer?.text) }));
     for (const x of asked) {
       const v = shown.find((s) => s.q === x.q);
       if (!v) fail(rel, `FAQPage question "${x.q}" is not a visible <summary>`);

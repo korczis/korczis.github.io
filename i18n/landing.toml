@@ -4,6 +4,60 @@
 # skills_*, proven_* or instruments_* key types a digit (scripts/check-landing.mjs).
 
 # --- 1. Hero deltas -----------------------------------------------------------------------------
+# The two primary paths under the h1 (ADR 0010): what each delivers, its mail CTA and subject, and
+# the case on the page that proves it; the roles, terms and CV are the secondary path.
+[home_offer_dd_title]
+en = "Due diligence and M&A"
+cs = "Due diligence a M&A"
+
+[home_offer_dd_body]
+en = "Vetting a target before an investment or acquisition: owners, assets, risks and market, every finding with its source; a data room and decision papers for the people who sign."
+cs = "Prověrka cíle před investicí nebo akvizicí: vlastníci, majetek, rizika a trh, každé zjištění se zdrojem. Datová místnost a podklady pro ty, kdo rozhodují."
+
+[home_offer_dd_cta]
+en = "Discuss due diligence"
+cs = "Probrat due diligence"
+
+[home_offer_dd_subject]
+en = "Due diligence enquiry via {host}"
+cs = "Due diligence: dotaz přes {host}"
+
+[home_offer_dd_proof]
+en = "Client work, anonymised"
+cs = "Zakázky pro klienty (anonymizované)"
+
+[home_offer_ai_title]
+en = "AI engineering and agent infrastructure"
+cs = "AI engineering a infrastruktura agentů"
+
+[home_offer_ai_body]
+en = "Agentic workflows in production and the infrastructure that keeps agents within bounds: scoped tasks, MCP, an audit trail, and work that lands only once it is verified. Elixir, OTP, Rust."
+cs = "Agentní workflow v produkci a infrastruktura, která drží agenty v mezích: vymezené úkoly, MCP, auditní stopa a práce, která projde, jen když je ověřená. Elixir, OTP, Rust."
+
+[home_offer_ai_cta]
+en = "Discuss AI engineering"
+cs = "Probrat AI engineering"
+
+[home_offer_ai_subject]
+en = "AI engineering enquiry via {host}"
+cs = "AI engineering: dotaz přes {host}"
+
+[home_offer_ai_proof]
+en = "Case study: Majordomus"
+cs = "Případová studie: Majordomus"
+
+[home_offer_hire]
+en = "Roles, terms and CV"
+cs = "Role, podmínky a CV"
+
+[home_rate_contract]
+en = "contract {rate}"
+cs = "kontrakt {rate}"
+
+[home_terms_contact]
+en = "How to get in touch"
+cs = "Jak se domluvit"
+
 
 [home_facts_label]
 en = "Hiring facts"

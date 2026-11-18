@@ -45,8 +45,9 @@ observed on this site is marked so.
 
 HTML comments are not text nodes. Readability (Mozilla, used by reader modes and many fetchers),
 Trafilatura, Jina Reader and Firecrawl emit the extracted text or markdown and leave comments out,
-so a comment in `<head>` reaches almost no reader that matters. ADR 0007's head comment is kept
-only because it mirrors /hire/ and costs nothing; investing more there buys nothing.
+so a comment in `<head>` reaches almost no reader that matters. ADR 0010 reduced ADR 0007's head
+comment to a technical pointer (where the page is generated from, where the machine-readable
+profile is): nothing addressed to a model, no hire fact that only a comment would carry.
 
 Hidden or styled-away text (white on white, zero size, off-screen, Unicode tag characters) and
 instructions addressed to a model are what screening vendors filter and flag, and what search

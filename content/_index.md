@@ -1,6 +1,6 @@
 +++
 title = "Tomas Korcak"
-description = "Tomas Korcak, staff engineer for AI agent infrastructure, Elixir and Rust, open to remote roles and contracts: software that makes AI agents prove their work."
+description = "Tomas Korcak, staff engineer for AI agent infrastructure (Elixir, Rust): technical due diligence before a deal, and AI agents whose work you can check."
 template = "index.html"
 
 [extra]
@@ -9,7 +9,7 @@ reading_path = ["work/prismatic-majordomus.md", "stack.md", "interfaces.md", "hi
 terms = ["repository", "commit", "fork", "mirror", "data-visualisation", "d3", "front-matter", "zola", "static-site-generator", "flowbite-pro", "wcag", "json-ld", "open-graph", "ai-agent", "mcp", "orchestration", "audit-trail", "osint", "due-diligence", "elixir", "rust", "apache-echarts"]
 seo_title = "Tomas Korcak · Staff engineer, AI agent infrastructure (Elixir, Rust)"
 og_title = "Tomas Korcak: staff engineer for AI agent infrastructure."
-og_description = "Tools that make AI agents prove what they did, honest instruments in the browser, and knowledge you can check."
+og_description = "Due diligence before an investment or acquisition, and AI agent infrastructure whose work you can trace and check."
 og_image = "og/home.png"
 schema = "home"
 keywords = ["Tomas Korcak", "korczis", "Majordomus", "AI agents", "software engineering", "scientific visualisation", "Brno"]

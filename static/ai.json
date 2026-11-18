@@ -3,11 +3,11 @@
  "description": "The Majordomus layer of korczis/korczis.github.io: every object of .ai/ with its MCP resource URI",
  "source": "majordomus run objects.list, capabilities.list",
  "majordomus": "1.0.2",
- "tree": "526839b550cf0e05efadecada5bb6c260d74d35de48b1e869214dd3730c62e57",
+ "tree": "64be6c080d5425a154d94a945dc997b2518ee6a64c23b4b47799c42936a8b720",
  "counts": {
-  "objects": 147,
+  "objects": 148,
   "kinds": {
-   "adr": 9,
+   "adr": 10,
    "context": 21,
    "document": 9,
    "knowledge": 10,
@@ -20,9 +20,9 @@
    "skill": 1,
    "taxonomy": 8
   },
-  "capabilities": 378,
+  "capabilities": 379,
   "mcp_tools": 215,
-  "mcp_resources": 204,
+  "mcp_resources": 205,
   "http_routes": 219
  },
  "objects": [
@@ -97,6 +97,14 @@
    "title": "Repository dossiers are inferred, checked claim by claim, and never written where a safety check refuses",
    "description": "Repository dossiers are inferred, checked claim by claim, and never written where a safety check refuses",
    "path": ".ai/repo/adrs/0009-repository-dossiers-are-inferred-checked-claim-by-claim-and-n.md"
+  },
+  {
+   "uri": "majordomus://adr/adr-0010",
+   "kind": "adr",
+   "identity": "adr-0010",
+   "title": "Offer-first landing - two primary paths, the cases before the catalogue, honest labels and Czech typography",
+   "description": "Offer-first landing - two primary paths, the cases before the catalogue, honest labels and Czech typography",
+   "path": ".ai/repo/adrs/0010-offer-first-landing-two-primary-paths-cases-before-the-catalo.md"
   },
   {
    "uri": "majordomus://context/ai.layer",

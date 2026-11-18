@@ -69,7 +69,7 @@ Measured from every original public repository on GitHub and GitLab, derived 202
 
 ## Pages
 
-- [Tomas Korcak](https://korczis.github.io/): Tomas Korcak, staff engineer for AI agent infrastructure, Elixir and Rust, open to remote roles and contracts: software that makes AI agents prove their work.
+- [Tomas Korcak](https://korczis.github.io/): Tomas Korcak, staff engineer for AI agent infrastructure (Elixir, Rust): technical due diligence before a deal, and AI agents whose work you can check.
 - [About](https://korczis.github.io/about/): Tomas Korcak (korczis), staff engineer for AI agent infrastructure in Brno, open to remote roles: the CV, my languages over the years, and where to find the work.
 - [Glossary](https://korczis.github.io/glossary/): The 62 terms this site explains itself with: languages, technologies and concepts, each defined, sourced and linked to every page that uses it.
 - [Hire me](https://korczis.github.io/hire/): Tomas Korcak, staff engineer for AI agent infrastructure, Elixir and Rust: available remote, full-time or contract. Roles, terms, rate and evidence.

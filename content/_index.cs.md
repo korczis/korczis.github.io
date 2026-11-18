@@ -1,6 +1,6 @@
 +++
 title = "Tomáš Korčák"
-description = "Tomáš Korčák, staff engineer pro infrastrukturu AI agentů, Elixir a Rust, otevřený remote rolím a kontraktům: software, který nutí AI agenty doložit práci."
+description = "Tomáš Korčák, staff engineer pro infrastrukturu AI agentů (Elixir, Rust): technická due diligence před transakcí a AI agenti, jejichž práci lze ověřit."
 template = "index.html"
 
 [extra]
@@ -9,7 +9,7 @@ reading_path = ["work/prismatic-majordomus.md", "stack.md", "interfaces.md", "hi
 terms = ["repository", "commit", "fork", "mirror", "data-visualisation", "d3", "front-matter", "zola", "static-site-generator", "flowbite-pro", "wcag", "json-ld", "open-graph", "ai-agent", "mcp", "orchestration", "audit-trail", "osint", "due-diligence", "elixir", "rust", "apache-echarts"]
 seo_title = "Tomáš Korčák · Staff engineer, infrastruktura AI agentů (Elixir, Rust)"
 og_title = "Tomáš Korčák: staff engineer pro infrastrukturu AI agentů."
-og_description = "Nástroje, které nutí AI agenty doložit práci, poctivé přístroje v prohlížeči a znalosti, které si ověříte."
+og_description = "Due diligence před investicí nebo akvizicí a infrastruktura AI agentů, jejichž práci lze zpětně dohledat a ověřit."
 og_image = "og/cs-home.png"
 schema = "home"
 keywords = ["Tomáš Korčák", "korczis", "Majordomus", "AI agenti", "vývoj softwaru", "vědecká vizualizace", "Brno"]
