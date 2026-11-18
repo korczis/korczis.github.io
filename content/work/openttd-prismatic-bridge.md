@@ -15,7 +15,7 @@ og_title = "openttd-prismatic-bridge: REST/Swagger bridge onto OpenTTD's Admin N
 og_image = "og/work-openttd-prismatic-bridge.png"
 schema = "project"
 keywords = ["openttd-prismatic-bridge", "Media and art", "Python", "HTML", "Squirrel", "Tomas Korcak"]
-terms = ["python", "html", "shell", "css", "data-visualisation", "repository", "commit", "open-source"]
+terms = ["python", "html", "squirrel", "shell", "css", "data-visualisation", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -26,7 +26,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**openttd-prismatic-bridge** is a project in [Media and art](@/projects/media.md). Its code is written mainly in [Python](@/glossary/python.md) (65.4 %), with [HTML](@/glossary/html.md), Squirrel and [Shell](@/glossary/shell.md).
+**openttd-prismatic-bridge** is a project in [Media and art](@/projects/media.md). Its code is written mainly in [Python](@/glossary/python.md) (65.4 %), with [HTML](@/glossary/html.md), [Squirrel](@/glossary/squirrel.md) and [Shell](@/glossary/shell.md).
 
 The [repository](@/glossary/repository.md) was created in July 2026; its latest [commit](@/glossary/commit.md) is from 17 November 2026. It reads “Add: a live check that /decision/pull leaves a decision's settings on the running AI”. That places it among the projects active in the last 12 months.
 

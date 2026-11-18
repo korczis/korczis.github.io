@@ -3,7 +3,7 @@
 title = "Rust"
 description = "A systems language that guarantees memory safety without a garbage collector; Majordomus is written in it."
 template = "term.html"
-weight = 15
+weight = 24
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -23,6 +23,15 @@ og_image = "og/glossary-rust.png"
 keywords = ["Rust", "Programming language", "Glossary", "Tomas Korcak"]
 
 [[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
+
+[[extra.viz]]
 kind = "atlas"
 source = "glossary.terms"
 title = "viz_atlas_term_title"
@@ -31,3 +40,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
+I have written Rust in 17 public repositories, from 2016 to 2026; in 12 of them it is the main language.
+
+What it was for: [Tools](@/projects/tools.md) (5), [Science and visualisation](@/projects/science.md) (4), [Data and GIS](@/projects/data.md) (2) and [AI engineering](@/projects/ai.md) (1).
+
+Most recently: [algoglyph](@/work/algoglyph.md): Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core; [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore; [Majordomus](@/work/prismatic-majordomus.md): One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.
+
+5 of these projects run as live sites.
+
+How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses Rust: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links Rust to the repositories and to the other languages and technologies they use together.

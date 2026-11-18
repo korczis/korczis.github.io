@@ -15,7 +15,7 @@ og_title = "korczis.gitlab.io: Web"
 og_image = "og/work-korczis-gitlab-io.png"
 schema = "project"
 keywords = ["korczis.gitlab.io", "Web", "CSS", "Elixir", "SCSS", "Tomas Korcak"]
-terms = ["css", "elixir", "html", "static-site-generator", "repository", "commit", "open-source"]
+terms = ["css", "elixir", "scss", "html", "eex", "static-site-generator", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -26,7 +26,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**korczis.gitlab.io** is a project in [Web](@/projects/web.md). Its code is written mainly in [CSS](@/glossary/css.md) (32.5 %), with [Elixir](@/glossary/elixir.md), SCSS and [HTML](@/glossary/html.md).
+**korczis.gitlab.io** is a project in [Web](@/projects/web.md). Its code is written mainly in [CSS](@/glossary/css.md) (32.5 %), with [Elixir](@/glossary/elixir.md), [SCSS](@/glossary/scss.md) and [HTML](@/glossary/html.md).
 
 The [repository](@/glossary/repository.md) was created in August 2025; its latest [commit](@/glossary/commit.md) is from 22 August 2025. It reads “Merge branch 'master' of gitlab.com:korczis/korczis.gitlab.io”. That places it among the projects active in the last 24 months.
 

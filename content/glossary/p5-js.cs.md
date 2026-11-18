@@ -3,7 +3,7 @@
 title = "p5.js"
 description = "Knihovna pro kreativní programování odvozená z Processingu, pro kreslení a simulace v prohlížeči."
 template = "term.html"
-weight = 29
+weight = 47
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -14,13 +14,22 @@ seo_title = "p5.js (technologie)"
 term = "p5-js"
 kind = "technology"
 definition = "Knihovna pro kreativní programování odvozená z Processingu, pro kreslení a simulace v prohlížeči."
-aliases = []
+aliases = ["p5js"]
 reference = { title = "p5js.org", url = "https://p5js.org/" }
 pages = ["projects/science.cs.md", "stack.cs.md", "work/algoglyph.cs.md"]
 related = ["alpine-js", "apache-echarts", "flowbite-pro", "data-visualisation", "github-pages", "javascript", "repository", "rust"]
 og_title = "p5.js: slovník"
 og_image = "og/cs-glossary-p5-js.png"
 keywords = ["p5.js", "Technologie", "Slovník", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,3 +40,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
+p5.js je součástí 2 mých veřejných repozitářů, od roku 2024 do 2026.
+
+K čemu to sloužilo: [Věda a vizualizace](@/projects/science.cs.md) (1) a [Web](@/projects/web.cs.md) (1).
+
+Naposledy: [algoglyph](@/work/algoglyph.cs.md): Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem; [korczis.github.io](@/work/korczis-github-io.cs.md).
+
+1 z těchto projektů běží jako živý web.
+
+Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak p5.js používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje p5.js s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

@@ -3,7 +3,7 @@
 title = "HTML"
 description = "The markup language of web pages: the structure that styles and scripts work on."
 template = "term.html"
-weight = 9
+weight = 12
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -16,11 +16,20 @@ kind = "language"
 definition = "The markup language of web pages: the structure that styles and scripts work on."
 aliases = []
 reference = { title = "MDN Web Docs: HTML", url = "https://developer.mozilla.org/en-US/docs/Web/HTML" }
-pages = ["projects/data.md", "projects/media.md", "projects/security.md", "projects/web.md", "work/algoglyph.md", "work/astronomists.md", "work/bubbler.md", "work/catharsis-as-a-service.md", "work/crisis-map.md", "work/data-atlas.md", "work/el-magico-cache.md", "work/gists-search.md", "work/kompendium-epistemicke-anihilace.md", "work/korczis-github-io.md", "work/korczis-gitlab-io.md", "work/majordomus-reel.md", "work/openttd-prismatic-bridge.md", "work/oscilla.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/prismatic-majordomus.md", "work/prismatic.md", "work/sonic-playground.md", "work/u-tygra.md", "work/vomaste-cz.md"]
+pages = ["projects/data.md", "projects/media.md", "projects/security.md", "projects/web.md", "work/algoglyph.md", "work/astronomists.md", "work/bubbler.md", "work/catharsis-as-a-service.md", "work/crisis-map.md", "work/data-atlas.md", "work/el-magico-cache.md", "work/gists-search.md", "work/kompendium-epistemicke-anihilace.md", "work/korczis-github-io.md", "work/korczis-gitlab-io.md", "work/majordomus-reel.md", "work/openttd-prismatic-bridge.md", "work/oscilla.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/prismatic-majordomus.md", "work/prismatic.md", "work/sonic-playground.md", "work/u-tygra.md", "work/vomaste-cz.md", "_index.md"]
 related = ["repository", "commit", "open-source", "javascript", "shell", "github-pages", "css", "python"]
 og_title = "HTML: glossary"
 og_image = "og/glossary-html.png"
 keywords = ["HTML", "Programming language", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,3 +40,14 @@ span = 3
 height = "md"
 tone = "night"
 +++
+I have written HTML in 22 public repositories, from 2014 to 2026; in 6 of them it is the main language.
+
+What it was for: [Tools](@/projects/tools.md) (6), [Web](@/projects/web.md) (5), [Media and art](@/projects/media.md) (4) and [Data and GIS](@/projects/data.md) (2).
+
+Most recently: [algoglyph](@/work/algoglyph.md): Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core; [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore; [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.
+
+14 of these projects run as live sites.
+
+I also used it in client work under confidentiality agreements. Roles: Architect, Lead engineer, AI engineer, Data engineer, Investigator and Advisor. What was solved: LLM agents, Decision support, AI transformation, Audit trail and OSINT investigation. The use cases below give the principle and the intent of that work; no client, person, date or number is named.
+
+How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses HTML: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links HTML to the repositories and to the other languages and technologies they use together.

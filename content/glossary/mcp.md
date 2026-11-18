@@ -3,7 +3,7 @@
 title = "MCP"
 description = "The Model Context Protocol: an open protocol through which AI applications reach tools and data."
 template = "term.html"
-weight = 27
+weight = 44
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -14,13 +14,22 @@ seo_title = "MCP (technology)"
 term = "mcp"
 kind = "technology"
 definition = "The Model Context Protocol: an open protocol through which AI applications reach tools and data."
-aliases = []
+aliases = ["model-context-protocol"]
 reference = { title = "modelcontextprotocol.io", url = "https://modelcontextprotocol.io/" }
 pages = ["hire.md", "interfaces.md", "projects/ai.md", "projects/data.md", "work/crisis-map.md", "work/prismatic-majordomus.md"]
 related = ["ai-agent", "elixir", "repository", "rust", "github-pages", "html", "javascript", "open-source"]
 og_title = "MCP: glossary"
 og_image = "og/glossary-mcp.png"
 keywords = ["MCP", "Technology", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,3 +40,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
+MCP is part of 2 of my public repositories, from 2026 to 2026.
+
+What it was for: [AI engineering](@/projects/ai.md) (1) and [Data and GIS](@/projects/data.md) (1).
+
+Most recently: [Majordomus](@/work/prismatic-majordomus.md): One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model; [Crisis map](@/work/crisis-map.md): Reports geocoded through a local Nominatim, stored as PostGIS geography and served from one capability registry: LiveView, REST, OpenAPI, MCP and CLI.
+
+2 of these projects run as live sites.
+
+How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses MCP: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links MCP to the repositories and to the other languages and technologies they use together.

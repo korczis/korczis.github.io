@@ -3,7 +3,7 @@
 title = "Alpine.js"
 description = "Malý JavaScriptový framework, který přidává chování do HTML přímo v atributech; tady filtry, drawery a paleta."
 template = "term.html"
-weight = 19
+weight = 32
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -14,13 +14,22 @@ seo_title = "Alpine.js (technologie)"
 term = "alpine-js"
 kind = "technology"
 definition = "Malý JavaScriptový framework, který přidává chování do HTML přímo v atributech; tady filtry, drawery a paleta."
-aliases = []
+aliases = ["alpinejs"]
 reference = { title = "alpinejs.dev", url = "https://alpinejs.dev/" }
-pages = ["projects/knowledge.cs.md", "projects/science.cs.md", "stack.cs.md", "work/algoglyph.cs.md", "work/kompendium-epistemicke-anihilace.cs.md"]
+pages = ["projects/knowledge.cs.md", "projects/science.cs.md", "stack.cs.md", "work/algoglyph.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "_index.cs.md"]
 related = ["apache-echarts", "flowbite-pro", "repository", "cytoscape-js", "elixir", "github-pages", "javascript", "p5-js"]
 og_title = "Alpine.js: slovník"
 og_image = "og/cs-glossary-alpine-js.png"
 keywords = ["Alpine.js", "Technologie", "Slovník", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,3 +40,14 @@ span = 3
 height = "md"
 tone = "night"
 +++
+Alpine.js je součástí 3 mých veřejných repozitářů, od roku 2024 do 2026.
+
+K čemu to sloužilo: [Znalosti](@/projects/knowledge.cs.md) (1), [Věda a vizualizace](@/projects/science.cs.md) (1) a [Web](@/projects/web.cs.md) (1).
+
+Naposledy: [algoglyph](@/work/algoglyph.cs.md): Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem; [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat; [korczis.github.io](@/work/korczis-github-io.cs.md).
+
+2 z těchto projektů běží jako živé weby.
+
+Používal jsem ho také v klientské práci pod dohodami o mlčenlivosti. Role: Architekt, Vedoucí inženýr, Inženýr AI a Datový inženýr. Co se řešilo: Agenti s LLM, Podpora rozhodování, Transformace s AI a Auditní stopa. Případy užití níže popisují princip a záměr této práce; žádný klient, osoba, datum ani číslo nejsou uvedeny.
+
+Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak Alpine.js používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje Alpine.js s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

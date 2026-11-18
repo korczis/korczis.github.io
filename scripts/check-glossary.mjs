@@ -4,9 +4,13 @@
 //   - data/glossary.toml: unique ids, a kind, a definition in English and Czech, an https source;
 //   - every content page (outside content/glossary/): a non-empty body and at least one term;
 //   - every term a page names exists, and every term is used by at least one page;
-//   - article bodies link to the glossary only through @/ links (Zola checks those).
+//   - article bodies link to the glossary only through @/ links (Zola checks those);
+//   - every language and technology the measured data names (repositories' languages, curated
+//     stacks, the mined engagements' technologies; scripts/lib/skills.mjs) has a term, so every
+//     one has its own page with its evidence.
 import { ROOT, contentPages, identity } from './lib/derive.mjs';
 import { loadGlossary } from './lib/terms.mjs';
+import { loadSources, measuredNames, renderedTerms } from './lib/skills.mjs';
 import { cliArgs } from './lib/cli.mjs';
 
 cliArgs();
@@ -23,6 +27,11 @@ for (const t of g.terms) {
   if (!['language', 'technology', 'concept'].includes(t.kind)) findings.push(`data/glossary.toml: ${t.id} has kind ${t.kind}`);
   for (const f of ['term', 'definition', 'definition_cs']) if (!t[f] || t[f].length < (f === 'term' ? 1 : 20)) findings.push(`data/glossary.toml: ${t.id} lacks ${f}`);
   if (!/^https:\/\//.test(t.reference?.url ?? '') || !t.reference?.title) findings.push(`data/glossary.toml: ${t.id} needs a reference with a title and an https url`);
+}
+
+const sources = loadSources();
+for (const [name, from] of measuredNames(sources)) {
+  if (!g.byName.has(name.toLowerCase())) findings.push(`${name} (${from.slice(0, 2).join(', ')}) has no term in data/glossary.toml: add one (or an alias), so it gets its own page`);
 }
 
 const used = new Set();
@@ -45,6 +54,7 @@ for (const { path: rel, fm, body: text } of contentPages()) {
     findings.push(`${rel}: link ${target} should be an @/ link, so Zola checks it`);
   }
 }
+for (const ids of renderedTerms(g, sources).values()) for (const id of ids) used.add(id);
 for (const t of g.terms) if (!used.has(t.id)) findings.push(`data/glossary.toml: ${t.id} is used by no page; name it in a page's extra.terms or remove it`);
 
 if (findings.length) {

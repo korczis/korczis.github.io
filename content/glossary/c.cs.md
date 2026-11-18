@@ -3,7 +3,7 @@
 title = "C (programovací jazyk)"
 description = "Malý, rychlý systémový jazyk pod operačními systémy i většinou ostatních jazyků."
 template = "term.html"
-weight = 1
+weight = 2
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -17,10 +17,19 @@ definition = "Malý, rychlý systémový jazyk pod operačními systémy i vět�
 aliases = []
 reference = { title = "C (Wikipedia)", url = "https://en.wikipedia.org/wiki/C_(programming_language)" }
 pages = ["projects/learning.cs.md"]
-related = ["cpp", "csharp", "elixir", "erlang", "haskell", "java", "javascript", "repository"]
+related = ["cmake", "cpp", "csharp", "elixir", "erlang", "haskell", "java", "javascript"]
 og_title = "C: slovník"
 og_image = "og/cs-glossary-c.png"
 keywords = ["C (programovací jazyk)", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,3 +40,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
+C jsem psal v 1 veřejném repozitáři, od roku 2014 do 2014; v 1 z nich je hlavním jazykem.
+
+K čemu to sloužilo: [Učení a experimenty](@/projects/learning.cs.md) (1).
+
+Naposledy: [skull-c](https://github.com/korczis/skull-c).
+
+Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak C používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje C s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

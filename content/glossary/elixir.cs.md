@@ -3,7 +3,7 @@
 title = "Elixir"
 description = "Funkcionální jazyk nad virtuálním strojem Erlangu, stavěný pro souběžné systémy odolné vůči chybám."
 template = "term.html"
-weight = 6
+weight = 9
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -23,6 +23,15 @@ og_image = "og/cs-glossary-elixir.png"
 keywords = ["Elixir", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
 
 [[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
+
+[[extra.viz]]
 kind = "atlas"
 source = "glossary.terms"
 title = "viz_atlas_term_title"
@@ -31,3 +40,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
+Elixir jsem psal v 32 veřejných repozitářích, od roku 2016 do 2026; v 27 z nich je hlavním jazykem.
+
+K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (10), [Data a GIS](@/projects/data.cs.md) (6), [Učení a experimenty](@/projects/learning.cs.md) (3) a [Knihovny](@/projects/libraries.cs.md) (3).
+
+Naposledy: [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat; [Sonic Playground](@/work/sonic-playground.cs.md): Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita; [Crisis map](@/work/crisis-map.cs.md): Hlášení geokódovaná přes lokální Nominatim, uložená jako PostGIS geografie a servírovaná z jednoho registru schopností: LiveView, REST, OpenAPI, MCP a CLI.
+
+3 z těchto projektů běží jako živé weby.
+
+Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak Elixir používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje Elixir s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

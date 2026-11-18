@@ -3,7 +3,7 @@
 title = "Ruby"
 description = "Dynamický, expresivní jazyk navržený pro radost programátora; mnoho starších nástrojů tady je v Ruby."
 template = "term.html"
-weight = 14
+weight = 23
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -23,6 +23,15 @@ og_image = "og/cs-glossary-ruby.png"
 keywords = ["Ruby", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
 
 [[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
+
+[[extra.viz]]
 kind = "atlas"
 source = "glossary.terms"
 title = "viz_atlas_term_title"
@@ -31,3 +40,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
+Ruby jsem psal v 20 veřejných repozitářích, od roku 2012 do 2017; v 20 z nich je hlavním jazykem.
+
+K čemu to sloužilo: [Data a GIS](@/projects/data.cs.md) (7), [Nástroje](@/projects/tools.cs.md) (7), [Učení a experimenty](@/projects/learning.cs.md) (3) a [Systémy a infrastruktura](@/projects/systems.cs.md) (2).
+
+Naposledy: [gdc-dumpator](https://github.com/korczis/gdc-dumpator); [zeman-ucet](https://github.com/korczis/zeman-ucet); [cluster](https://github.com/korczis/cluster).
+
+2 z těchto projektů běží jako živé weby.
+
+Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak Ruby používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje Ruby s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

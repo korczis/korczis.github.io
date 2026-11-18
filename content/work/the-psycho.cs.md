@@ -15,7 +15,7 @@ og_title = "the-psycho: Nástroje"
 og_image = "og/cs-work-the-psycho.png"
 schema = "project"
 keywords = ["the-psycho", "Nástroje", "Elixir", "HTML+EEX", "JavaScript", "Tomáš Korčák"]
-terms = ["elixir", "javascript", "css", "open-source", "repository", "commit"]
+terms = ["elixir", "eex", "javascript", "css", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -26,7 +26,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**the-psycho** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (82,8 %), dále HTML+EEX, [JavaScript](@/glossary/javascript.cs.md) a [CSS](@/glossary/css.cs.md).
+**the-psycho** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (82,8 %), dále [HTML+EEX](@/glossary/eex.cs.md), [JavaScript](@/glossary/javascript.cs.md) a [CSS](@/glossary/css.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 25. ledna 2025; poslední [commit](@/glossary/commit.cs.md) je z 4. února 2026. Zní „feat(aiad): inject AIAD v1.0.0 infrastructure“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 

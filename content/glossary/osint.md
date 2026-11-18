@@ -3,7 +3,7 @@
 title = "OSINT"
 description = "Open-source intelligence: knowledge built from publicly available sources, with every claim traceable to its source."
 template = "term.html"
-weight = 57
+weight = 79
 
 [taxonomies]
 tags = ["Glossary", "Concept"]

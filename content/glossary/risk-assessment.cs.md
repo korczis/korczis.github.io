@@ -3,7 +3,7 @@
 title = "Hodnocení rizik"
 description = "Určení rizik, odhad jejich pravděpodobnosti a závažnosti a jejich seřazení, aby práce začala tím nejdůležitějším."
 template = "term.html"
-weight = 59
+weight = 81
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

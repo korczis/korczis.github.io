@@ -15,7 +15,7 @@ og_title = "comtesse: Tools"
 og_image = "og/work-comtesse.png"
 schema = "project"
 keywords = ["comtesse", "Tools", "Just", "Shell", "Rust", "Tomas Korcak"]
-terms = ["shell", "rust", "open-source", "repository", "commit"]
+terms = ["just", "shell", "rust", "mermaid", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -26,7 +26,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**comtesse** is a project in [Tools](@/projects/tools.md). Its code is written mainly in Just (36 %), with [Shell](@/glossary/shell.md), [Rust](@/glossary/rust.md) and Mermaid.
+**comtesse** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [Just](@/glossary/just.md) (36 %), with [Shell](@/glossary/shell.md), [Rust](@/glossary/rust.md) and [Mermaid](@/glossary/mermaid.md).
 
 The [repository](@/glossary/repository.md) was created in August 2025; its latest [commit](@/glossary/commit.md) is from 28 August 2025. It reads “docs: add src/comtesse-rs specific README.md”. That places it among the projects active in the last 24 months.
 

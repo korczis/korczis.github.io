@@ -3,7 +3,7 @@
 title = "C (programming language)"
 description = "The small, fast systems language beneath operating systems and most other languages."
 template = "term.html"
-weight = 1
+weight = 2
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -17,10 +17,19 @@ definition = "The small, fast systems language beneath operating systems and mos
 aliases = []
 reference = { title = "C (Wikipedia)", url = "https://en.wikipedia.org/wiki/C_(programming_language)" }
 pages = ["projects/learning.md"]
-related = ["cpp", "csharp", "elixir", "erlang", "haskell", "java", "javascript", "repository"]
+related = ["cmake", "cpp", "csharp", "elixir", "erlang", "haskell", "java", "javascript"]
 og_title = "C: glossary"
 og_image = "og/glossary-c.png"
 keywords = ["C (programming language)", "Programming language", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,3 +40,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
+I have written C in 1 public repository, from 2014 to 2014; in 1 of them it is the main language.
+
+What it was for: [Learning and experiments](@/projects/learning.md) (1).
+
+Most recently: [skull-c](https://github.com/korczis/skull-c).
+
+How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses C: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links C to the repositories and to the other languages and technologies they use together.

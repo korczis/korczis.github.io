@@ -151,6 +151,7 @@ reference = { title = "swift.org", url = "https://www.swift.org/documentation/" 
 id = "dockerfile"
 term = "Dockerfile"
 kind = "language"
+aliases = ["Docker", "docker"]
 definition = "The recipe that builds a container image: a base system, files and commands, reproducible anywhere."
 definition_cs = "Recept, který staví obraz kontejneru: základní systém, soubory a příkazy, reprodukovatelné kdekoli."
 reference = { title = "Dockerfile reference", url = "https://docs.docker.com/reference/dockerfile/" }
@@ -176,6 +177,7 @@ reference = { title = "Flowbite", url = "https://flowbite.com/" }
 id = "tailwind-css"
 term = "Tailwind CSS"
 kind = "technology"
+aliases = ["tailwindcss"]
 definition = "A CSS framework of small utility classes composed in the markup, compiled to only what a page uses."
 definition_cs = "CSS framework malých utilitních tříd skládaných v markupu, kompilovaný jen na to, co stránka používá."
 reference = { title = "tailwindcss.com", url = "https://tailwindcss.com/docs" }
@@ -184,7 +186,7 @@ reference = { title = "tailwindcss.com", url = "https://tailwindcss.com/docs" }
 id = "alpine-js"
 term = "Alpine.js"
 kind = "technology"
-aliases = ["Alpine.js"]
+aliases = ["Alpine.js", "alpinejs"]
 definition = "A small JavaScript framework that adds behaviour to HTML in its own attributes; here the filters, drawers and palette."
 definition_cs = "Malý JavaScriptový framework, který přidává chování do HTML přímo v atributech; tady filtry, drawery a paleta."
 reference = { title = "alpinejs.dev", url = "https://alpinejs.dev/" }
@@ -203,7 +205,7 @@ claimed = false
 id = "apache-echarts"
 term = "Apache ECharts"
 kind = "technology"
-aliases = ["Apache ECharts", "ECharts"]
+aliases = ["Apache ECharts", "ECharts", "echarts"]
 definition = "An Apache project for interactive charts: calendars, sunbursts, maps and large data sets."
 definition_cs = "Projekt Apache pro interaktivní grafy: kalendáře, sunbursty, mapy a velké datové sady."
 reference = { title = "echarts.apache.org", url = "https://echarts.apache.org/en/index.html" }
@@ -231,7 +233,7 @@ reference = { title = "d3js.org", url = "https://d3js.org/" }
 id = "p5-js"
 term = "p5.js"
 kind = "technology"
-aliases = ["p5.js"]
+aliases = ["p5.js", "p5js"]
 definition = "A creative-coding library descended from Processing, for drawing and simulation in the browser."
 definition_cs = "Knihovna pro kreativní programování odvozená z Processingu, pro kreslení a simulace v prohlížeči."
 reference = { title = "p5js.org", url = "https://p5js.org/" }
@@ -267,7 +269,7 @@ reference = { title = "OpenAPI Specification", url = "https://spec.openapis.org/
 id = "mcp"
 term = "MCP"
 kind = "technology"
-aliases = ["MCP"]
+aliases = ["MCP", "model-context-protocol"]
 definition = "The Model Context Protocol: an open protocol through which AI applications reach tools and data."
 definition_cs = "Model Context Protocol: otevřený protokol, kterým AI aplikace přistupují k nástrojům a datům."
 reference = { title = "modelcontextprotocol.io", url = "https://modelcontextprotocol.io/" }
@@ -276,7 +278,7 @@ reference = { title = "modelcontextprotocol.io", url = "https://modelcontextprot
 id = "postgresql"
 term = "PostgreSQL"
 kind = "technology"
-aliases = ["PostgreSQL"]
+aliases = ["PostgreSQL", "postgres"]
 definition = "An open-source relational database known for correctness and extensions."
 definition_cs = "Open-source relační databáze známá svou korektností a rozšířeními."
 reference = { title = "postgresql.org", url = "https://www.postgresql.org/about/" }
@@ -303,6 +305,7 @@ reference = { title = "MDN Web Docs: Web Audio API", url = "https://developer.mo
 id = "github-pages"
 term = "GitHub Pages"
 kind = "technology"
+aliases = ["github-pages"]
 definition = "GitHub's hosting for static websites, deployed from a repository; this site and most project sites live there."
 definition_cs = "Hosting statických webů od GitHubu nasazovaný z repozitáře; žije tam tento web i většina webů projektů."
 reference = { title = "GitHub Pages documentation", url = "https://docs.github.com/en/pages" }
@@ -574,3 +577,195 @@ categories = ["security"]
 definition = "Coordinating many automated steps, services or agents (queues, workflows, schedules) so they run in the right order and recover when one fails."
 definition_cs = "Koordinace mnoha automatických kroků, služeb nebo agentů (fronty, workflow, plány), aby běžely ve správném pořadí a zotavily se, když jeden selže."
 reference = { title = "Orchestration in computing (Wikipedia)", url = "https://en.wikipedia.org/wiki/Orchestration_(computing)" }
+
+# Languages and technologies the measured data names (data/index.json, data/recent.json,
+# data/projects.toml, data/experience.json): check-glossary refuses a name without a term.
+
+[[terms]]
+id = "makefile"
+term = "Makefile"
+kind = "language"
+aliases = ["Make", "make"]
+definition = "The build language of make: targets, the files they depend on and the commands that rebuild them when a dependency changes."
+definition_cs = "Jazyk nástroje make: cíle, soubory, na kterých závisí, a příkazy, které je přestaví, když se závislost změní."
+reference = { title = "GNU make manual", url = "https://www.gnu.org/software/make/manual/make.html" }
+
+[[terms]]
+id = "cmake"
+term = "CMake"
+kind = "language"
+definition = "A build-system generator for C and C++: one description of a project produces Makefiles, Ninja files or IDE projects on any platform."
+definition_cs = "Generátor buildovacích systémů pro C a C++: jeden popis projektu vytvoří Makefile, soubory Ninja nebo projekty IDE na libovolné platformě."
+reference = { title = "CMake documentation", url = "https://cmake.org/cmake/help/latest/" }
+
+[[terms]]
+id = "just"
+term = "Just"
+kind = "language"
+aliases = ["justfile"]
+definition = "A command runner: named recipes in a justfile, like make without the build semantics; the entry point of most of these repositories."
+definition_cs = "Spouštěč příkazů: pojmenované recepty v souboru justfile, jako make bez buildovací logiky; vstupní bod většiny těchto repozitářů."
+reference = { title = "just manual", url = "https://just.systems/man/en/" }
+
+[[terms]]
+id = "apacheconf"
+term = "ApacheConf"
+kind = "language"
+aliases = ["Apache"]
+definition = "The configuration language of the Apache HTTP Server: virtual hosts, rewrite rules and access control."
+definition_cs = "Konfigurační jazyk webového serveru Apache HTTP: virtuální hosty, přepisovací pravidla a řízení přístupu."
+reference = { title = "Apache HTTP Server documentation", url = "https://httpd.apache.org/docs/current/" }
+
+[[terms]]
+id = "openscad"
+term = "OpenSCAD"
+kind = "language"
+definition = "A language for solid 3D models described as code: shapes combined by union, difference and transformation, ready for 3D printing."
+definition_cs = "Jazyk pro pevné 3D modely popsané kódem: tvary skládané sjednocením, rozdílem a transformacemi, připravené pro 3D tisk."
+reference = { title = "OpenSCAD documentation", url = "https://openscad.org/documentation.html" }
+
+[[terms]]
+id = "r"
+term = "R"
+title = "R (programming language)"
+title_cs = "R (programovací jazyk)"
+kind = "language"
+definition = "A language and environment for statistics and data analysis, with plotting and a large library of statistical methods."
+definition_cs = "Jazyk a prostředí pro statistiku a analýzu dat, s grafy a rozsáhlou knihovnou statistických metod."
+reference = { title = "The R Project", url = "https://www.r-project.org/about.html" }
+
+[[terms]]
+id = "tex"
+term = "TeX"
+kind = "language"
+aliases = ["LaTeX"]
+definition = "A typesetting language for documents and mathematics; LaTeX is the macro package most documents are written in."
+definition_cs = "Sázecí jazyk pro dokumenty a matematiku; LaTeX je balík maker, ve kterém je napsaná většina dokumentů."
+reference = { title = "LaTeX project", url = "https://www.latex-project.org/about/" }
+
+[[terms]]
+id = "xslt"
+term = "XSLT"
+kind = "language"
+definition = "A language that transforms XML documents into other XML, HTML or text by templates matched against the input tree."
+definition_cs = "Jazyk, který převádí dokumenty XML na jiné XML, HTML nebo text pomocí šablon párovaných se vstupním stromem."
+reference = { title = "W3C XSLT 3.0", url = "https://www.w3.org/TR/xslt-30/" }
+
+[[terms]]
+id = "squirrel"
+term = "Squirrel"
+kind = "language"
+definition = "A small embeddable scripting language; OpenTTD runs its AI players and game scripts in it."
+definition_cs = "Malý vložitelný skriptovací jazyk; OpenTTD v něm spouští své AI hráče a herní skripty."
+reference = { title = "Squirrel on GitHub", url = "https://github.com/albertodemichelis/squirrel" }
+
+[[terms]]
+id = "plpgsql"
+term = "PL/pgSQL"
+kind = "language"
+aliases = ["PLpgSQL"]
+definition = "PostgreSQL's procedural language: functions and triggers that run SQL with variables, loops and conditions inside the database."
+definition_cs = "Procedurální jazyk PostgreSQL: funkce a triggery, které uvnitř databáze spouštějí SQL s proměnnými, cykly a podmínkami."
+reference = { title = "PostgreSQL: PL/pgSQL", url = "https://www.postgresql.org/docs/current/plpgsql.html" }
+
+[[terms]]
+id = "eex"
+term = "EEx and HEEx"
+kind = "language"
+aliases = ["HTML+EEX", "EEx", "HEEx"]
+definition = "Elixir's embedded templates: EEx puts Elixir in text, HEEx in HTML that Phoenix LiveView checks and renders."
+definition_cs = "Vložené šablony Elixiru: EEx vkládá Elixir do textu, HEEx do HTML, které Phoenix LiveView kontroluje a vykresluje."
+reference = { title = "Phoenix.Component and HEEx", url = "https://hexdocs.pm/phoenix_live_view/Phoenix.Component.html" }
+
+[[terms]]
+id = "mermaid"
+term = "Mermaid"
+kind = "language"
+definition = "A text language for diagrams (flowcharts, sequences, state machines) rendered from Markdown-like source."
+definition_cs = "Textový jazyk pro diagramy (vývojové diagramy, sekvence, stavové automaty) vykreslované ze zdroje podobného Markdownu."
+reference = { title = "Mermaid documentation", url = "https://mermaid.js.org/intro/" }
+
+[[terms]]
+id = "scss"
+term = "SCSS"
+kind = "language"
+aliases = ["Sass"]
+definition = "CSS with variables, nesting and mixins, compiled by Sass into plain CSS."
+definition_cs = "CSS s proměnnými, vnořováním a mixiny, kompilované nástrojem Sass do běžného CSS."
+reference = { title = "Sass documentation", url = "https://sass-lang.com/documentation/" }
+
+[[terms]]
+id = "fastapi"
+term = "FastAPI"
+kind = "technology"
+definition = "A Python web framework for HTTP APIs, typed with Pydantic models that validate requests and generate the OpenAPI description."
+definition_cs = "Webový framework v Pythonu pro HTTP API, typovaný modely Pydantic, které validují požadavky a generují popis OpenAPI."
+reference = { title = "FastAPI documentation", url = "https://fastapi.tiangolo.com/" }
+
+[[terms]]
+id = "react"
+term = "React"
+kind = "technology"
+aliases = ["React.js"]
+definition = "A JavaScript library for user interfaces built from components that re-render from state."
+definition_cs = "JavaScriptová knihovna pro uživatelská rozhraní skládaná z komponent, které se překreslují podle stavu."
+reference = { title = "react.dev", url = "https://react.dev/learn" }
+
+[[terms]]
+id = "playwright"
+term = "Playwright"
+kind = "technology"
+definition = "A browser automation library that drives Chromium, Firefox and WebKit for end-to-end tests and audits."
+definition_cs = "Knihovna pro automatizaci prohlížeče, která ovládá Chromium, Firefox a WebKit pro end-to-end testy a audity."
+reference = { title = "Playwright documentation", url = "https://playwright.dev/docs/intro" }
+
+[[terms]]
+id = "kubernetes"
+term = "Kubernetes"
+kind = "technology"
+aliases = ["k8s"]
+definition = "A system that runs containers across a cluster: scheduling, scaling, networking and rollouts declared as resources."
+definition_cs = "Systém, který provozuje kontejnery v clusteru: plánování, škálování, síť a nasazování deklarované jako zdroje."
+reference = { title = "Kubernetes documentation", url = "https://kubernetes.io/docs/concepts/overview/" }
+
+[[terms]]
+id = "github-actions"
+term = "GitHub Actions"
+kind = "technology"
+definition = "GitHub's continuous integration: workflows of jobs that build, test and deploy a repository on every push or on a schedule."
+definition_cs = "Průběžná integrace GitHubu: workflow s úlohami, které sestaví, otestují a nasadí repozitář při každém pushi nebo podle plánu."
+reference = { title = "GitHub Actions documentation", url = "https://docs.github.com/en/actions" }
+
+[[terms]]
+id = "claude-api"
+term = "Claude API"
+kind = "technology"
+aliases = ["claude-code", "Claude"]
+definition = "Anthropic's API to the Claude models: messages, tool use and agents that read, reason and act."
+definition_cs = "API společnosti Anthropic k modelům Claude: zprávy, používání nástrojů a agenti, kteří čtou, uvažují a jednají."
+reference = { title = "Claude API documentation", url = "https://docs.anthropic.com/" }
+
+[[terms]]
+id = "openai-api"
+term = "OpenAI API"
+kind = "technology"
+definition = "OpenAI's API to its language and embedding models, used for text generation, extraction and search."
+definition_cs = "API společnosti OpenAI k jejím jazykovým a embeddingovým modelům, používané pro generování textu, extrakci a vyhledávání."
+reference = { title = "OpenAI API documentation", url = "https://platform.openai.com/docs/overview" }
+
+[[terms]]
+id = "pydantic"
+term = "Pydantic"
+kind = "technology"
+definition = "Data validation for Python from type hints: models that parse, check and serialise input."
+definition_cs = "Validace dat v Pythonu z typových anotací: modely, které vstup parsují, kontrolují a serializují."
+reference = { title = "Pydantic documentation", url = "https://docs.pydantic.dev/latest/" }
+
+[[terms]]
+id = "tesseract"
+term = "Tesseract"
+kind = "technology"
+aliases = ["OCR"]
+definition = "An open-source OCR engine that reads text from scanned documents and images in many languages."
+definition_cs = "Open-source OCR engine, který čte text ze skenovaných dokumentů a obrázků v mnoha jazycích."
+reference = { title = "Tesseract documentation", url = "https://tesseract-ocr.github.io/" }

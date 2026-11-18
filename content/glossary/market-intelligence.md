@@ -3,7 +3,7 @@
 title = "Market intelligence"
 description = "Knowledge about a market (prices, comparables, competitors and demand) gathered from public and licensed sources to support a decision."
 template = "term.html"
-weight = 51
+weight = 73
 
 [taxonomies]
 tags = ["Glossary", "Concept"]

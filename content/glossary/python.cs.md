@@ -3,7 +3,7 @@
 title = "Python"
 description = "Univerzální jazyk ceněný pro čitelnost, běžný v práci s daty a ve skriptování."
 template = "term.html"
-weight = 13
+weight = 21
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -16,11 +16,20 @@ kind = "language"
 definition = "Univerzální jazyk ceněný pro čitelnost, běžný v práci s daty a ve skriptování."
 aliases = []
 reference = { title = "python.org", url = "https://www.python.org/about/" }
-pages = ["projects/data.cs.md", "projects/media.cs.md", "projects/science.cs.md", "projects/tools.cs.md", "work/astronomists.cs.md", "work/catharsis-as-a-service.cs.md", "work/data-atlas.cs.md", "work/gists-search.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/kuzu-ex.cs.md", "work/majordomus-reel.cs.md", "work/openttd-prismatic-bridge.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/pdf-renderer.cs.md", "work/prismatic-majordomus.cs.md", "work/prismatic.cs.md", "work/sonic-playground.cs.md"]
+pages = ["projects/data.cs.md", "projects/media.cs.md", "projects/science.cs.md", "projects/tools.cs.md", "work/astronomists.cs.md", "work/catharsis-as-a-service.cs.md", "work/data-atlas.cs.md", "work/gists-search.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/kuzu-ex.cs.md", "work/majordomus-reel.cs.md", "work/openttd-prismatic-bridge.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/pdf-renderer.cs.md", "work/prismatic-majordomus.cs.md", "work/prismatic.cs.md", "work/sonic-playground.cs.md", "_index.cs.md"]
 related = ["repository", "open-source", "commit", "html", "javascript", "shell", "github-pages", "elixir"]
 og_title = "Python: slovník"
 og_image = "og/cs-glossary-python.png"
 keywords = ["Python", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,3 +40,14 @@ span = 3
 height = "md"
 tone = "night"
 +++
+Python jsem psal v 12 veřejných repozitářích, od roku 2015 do 2026; v 7 z nich je hlavním jazykem.
+
+K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (4), [Média a umění](@/projects/media.cs.md) (3), [Data a GIS](@/projects/data.cs.md) (2) a [Znalosti](@/projects/knowledge.cs.md) (1).
+
+Naposledy: [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat; [openttd-prismatic-bridge](@/work/openttd-prismatic-bridge.cs.md); [Sonic Playground](@/work/sonic-playground.cs.md): Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.
+
+7 z těchto projektů běží jako živé weby.
+
+Používal jsem ho také v klientské práci pod dohodami o mlčenlivosti. Role: Architekt, Vedoucí inženýr, Inženýr AI, Datový inženýr, Analytik šetření a Poradce. Co se řešilo: Agenti s LLM, Podpora rozhodování, Transformace s AI, Auditní stopa a OSINT šetření. Případy užití níže popisují princip a záměr této práce; žádný klient, osoba, datum ani číslo nejsou uvedeny.
+
+Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak Python používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje Python s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

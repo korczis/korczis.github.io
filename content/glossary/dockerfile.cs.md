@@ -3,7 +3,7 @@
 title = "Dockerfile"
 description = "Recept, který staví obraz kontejneru: základní systém, soubory a příkazy, reprodukovatelné kdekoli."
 template = "term.html"
-weight = 5
+weight = 7
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -14,13 +14,22 @@ seo_title = "Dockerfile (programovací jazyk)"
 term = "dockerfile"
 kind = "language"
 definition = "Recept, který staví obraz kontejneru: základní systém, soubory a příkazy, reprodukovatelné kdekoli."
-aliases = []
+aliases = ["Docker", "docker"]
 reference = { title = "Dockerfile reference", url = "https://docs.docker.com/reference/dockerfile/" }
-pages = ["projects/media.cs.md", "projects/systems.cs.md", "work/el-magico-cache.cs.md", "work/pdf-renderer.cs.md", "work/prismatic-blog.cs.md"]
-related = ["repository", "commit", "open-source", "data-visualisation", "elixir", "html", "javascript", "python"]
+pages = ["projects/media.cs.md", "projects/systems.cs.md", "work/el-magico-cache.cs.md", "work/pdf-renderer.cs.md", "work/prismatic-blog.cs.md", "_index.cs.md"]
+related = ["repository", "commit", "open-source", "data-visualisation", "elixir", "html", "javascript", "makefile"]
 og_title = "Dockerfile: slovník"
 og_image = "og/cs-glossary-dockerfile.png"
 keywords = ["Dockerfile", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,3 +40,14 @@ span = 3
 height = "md"
 tone = "night"
 +++
+Dockerfile jsem psal v 6 veřejných repozitářích, od roku 2019 do 2025; ve 4 z nich je hlavním jazykem.
+
+K čemu to sloužilo: [Systémy a infrastruktura](@/projects/systems.cs.md) (3), [Nástroje](@/projects/tools.cs.md) (2) a [Média a umění](@/projects/media.cs.md) (1).
+
+Naposledy: [docks](https://gitlab.com/korczis/docks); [pdf\_renderer](@/work/pdf-renderer.cs.md); [prismatic-blog](@/work/prismatic-blog.cs.md).
+
+1 z těchto projektů běží jako živý web.
+
+Používal jsem ho také v klientské práci pod dohodami o mlčenlivosti. Role: Architekt, Vedoucí inženýr, Inženýr AI a Datový inženýr. Co se řešilo: Agenti s LLM, Podpora rozhodování, Transformace s AI a Auditní stopa. Případy užití níže popisují princip a záměr této práce; žádný klient, osoba, datum ani číslo nejsou uvedeny.
+
+Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak Dockerfile používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje Dockerfile s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

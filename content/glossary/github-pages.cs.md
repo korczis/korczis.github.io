@@ -3,7 +3,7 @@
 title = "GitHub Pages"
 description = "Hosting statických webů od GitHubu nasazovaný z repozitáře; žije tam tento web i většina webů projektů."
 template = "term.html"
-weight = 25
+weight = 41
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -14,13 +14,22 @@ seo_title = "GitHub Pages (technologie)"
 term = "github-pages"
 kind = "technology"
 definition = "Hosting statických webů od GitHubu nasazovaný z repozitáře; žije tam tento web i většina webů projektů."
-aliases = []
+aliases = ["github-pages"]
 reference = { title = "GitHub Pages documentation", url = "https://docs.github.com/en/pages" }
 pages = ["interfaces.cs.md", "stack.cs.md", "work/algoglyph.cs.md", "work/astronomists.cs.md", "work/bubbler.cs.md", "work/catharsis-as-a-service.cs.md", "work/crisis-map.cs.md", "work/data-atlas.cs.md", "work/gists-search.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/majordomus-reel.cs.md", "work/oscilla.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/prismatic-blog.cs.md", "work/prismatic-majordomus.cs.md", "work/sonic-playground.cs.md", "work/u-tygra.cs.md", "work/vomaste-cz.cs.md"]
 related = ["commit", "open-source", "repository", "html", "javascript", "shell", "css", "python"]
 og_title = "GitHub Pages: slovník"
 og_image = "og/cs-glossary-github-pages.png"
 keywords = ["GitHub Pages", "Technologie", "Slovník", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,3 +40,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
+GitHub Pages je součástí 1 mého veřejného repozitáře, od roku 2024 do 2026.
+
+K čemu to sloužilo: [Web](@/projects/web.cs.md) (1).
+
+Naposledy: [korczis.github.io](@/work/korczis-github-io.cs.md).
+
+Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak GitHub Pages používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje GitHub Pages s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

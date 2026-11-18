@@ -3,7 +3,7 @@
 title = "Java"
 description = "Objektově orientovaný jazyk nad Java Virtual Machine, dlouho výchozí volba podnikového softwaru."
 template = "term.html"
-weight = 10
+weight = 13
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -17,10 +17,19 @@ definition = "Objektově orientovaný jazyk nad Java Virtual Machine, dlouho vý
 aliases = []
 reference = { title = "dev.java", url = "https://dev.java/learn/" }
 pages = ["projects/learning.cs.md"]
-related = ["c", "cpp", "csharp", "elixir", "erlang", "haskell", "javascript", "repository"]
+related = ["c", "cmake", "cpp", "csharp", "elixir", "erlang", "haskell", "javascript"]
 og_title = "Java: slovník"
 og_image = "og/cs-glossary-java.png"
 keywords = ["Java", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,3 +40,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
+Java jsem psal v 1 veřejném repozitáři, od roku 2014 do 2014; v 1 z nich je hlavním jazykem.
+
+K čemu to sloužilo: [Učení a experimenty](@/projects/learning.cs.md) (1).
+
+Naposledy: [skull-java](https://github.com/korczis/skull-java).
+
+Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak Java používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje Java s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

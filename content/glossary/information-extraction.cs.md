@@ -3,7 +3,7 @@
 title = "Vytěžování informací"
 description = "Převod dokumentů (skenů, PDF, volného textu) na strukturovaná pole, jako jsou jména, data a částky, pomocí OCR a jazykových nebo obrazových modelů."
 template = "term.html"
-weight = 46
+weight = 68
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

@@ -3,7 +3,7 @@
 title = "Python"
 description = "A general-purpose language valued for readability, common in data work and scripting."
 template = "term.html"
-weight = 13
+weight = 21
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -16,11 +16,20 @@ kind = "language"
 definition = "A general-purpose language valued for readability, common in data work and scripting."
 aliases = []
 reference = { title = "python.org", url = "https://www.python.org/about/" }
-pages = ["projects/data.md", "projects/media.md", "projects/science.md", "projects/tools.md", "work/astronomists.md", "work/catharsis-as-a-service.md", "work/data-atlas.md", "work/gists-search.md", "work/kompendium-epistemicke-anihilace.md", "work/kuzu-ex.md", "work/majordomus-reel.md", "work/openttd-prismatic-bridge.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/pdf-renderer.md", "work/prismatic-majordomus.md", "work/prismatic.md", "work/sonic-playground.md"]
+pages = ["projects/data.md", "projects/media.md", "projects/science.md", "projects/tools.md", "work/astronomists.md", "work/catharsis-as-a-service.md", "work/data-atlas.md", "work/gists-search.md", "work/kompendium-epistemicke-anihilace.md", "work/kuzu-ex.md", "work/majordomus-reel.md", "work/openttd-prismatic-bridge.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/pdf-renderer.md", "work/prismatic-majordomus.md", "work/prismatic.md", "work/sonic-playground.md", "_index.md"]
 related = ["repository", "open-source", "commit", "html", "javascript", "shell", "github-pages", "elixir"]
 og_title = "Python: glossary"
 og_image = "og/glossary-python.png"
 keywords = ["Python", "Programming language", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,3 +40,14 @@ span = 3
 height = "md"
 tone = "night"
 +++
+I have written Python in 12 public repositories, from 2015 to 2026; in 7 of them it is the main language.
+
+What it was for: [Tools](@/projects/tools.md) (4), [Media and art](@/projects/media.md) (3), [Data and GIS](@/projects/data.md) (2) and [Knowledge](@/projects/knowledge.md) (1).
+
+Most recently: [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore; [openttd-prismatic-bridge](@/work/openttd-prismatic-bridge.md): REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform; [Sonic Playground](@/work/sonic-playground.md): A hand-picked music blog built with Phoenix and Elixir on the Kita theme.
+
+7 of these projects run as live sites.
+
+I also used it in client work under confidentiality agreements. Roles: Architect, Lead engineer, AI engineer, Data engineer, Investigator and Advisor. What was solved: LLM agents, Decision support, AI transformation, Audit trail and OSINT investigation. The use cases below give the principle and the intent of that work; no client, person, date or number is named.
+
+How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses Python: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links Python to the repositories and to the other languages and technologies they use together.

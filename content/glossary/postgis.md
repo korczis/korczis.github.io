@@ -3,7 +3,7 @@
 title = "PostGIS"
 description = "The spatial extension of PostgreSQL: points, shapes and geographic queries in SQL."
 template = "term.html"
-weight = 30
+weight = 49
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -23,6 +23,15 @@ og_image = "og/glossary-postgis.png"
 keywords = ["PostGIS", "Technology", "Glossary", "Tomas Korcak"]
 
 [[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
+
+[[extra.viz]]
 kind = "atlas"
 source = "glossary.terms"
 title = "viz_atlas_term_title"
@@ -31,3 +40,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
+PostGIS is part of 2 of my public repositories, from 2026 to 2026.
+
+What it was for: [Data and GIS](@/projects/data.md) (2).
+
+Most recently: [Crisis map](@/work/crisis-map.md): Reports geocoded through a local Nominatim, stored as PostGIS geography and served from one capability registry: LiveView, REST, OpenAPI, MCP and CLI; [Data Atlas](@/work/data-atlas.md): Datasets, cadastre, transport, remote sensing and spatial analytics in one single-file, searchable page.
+
+2 of these projects run as live sites.
+
+How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses PostGIS: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links PostGIS to the repositories and to the other languages and technologies they use together.

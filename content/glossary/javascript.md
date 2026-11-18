@@ -3,7 +3,7 @@
 title = "JavaScript"
 description = "The programming language of the web browser, also run on servers through Node.js. Every interactive part of this site is JavaScript."
 template = "term.html"
-weight = 11
+weight = 14
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -16,11 +16,20 @@ kind = "language"
 definition = "The programming language of the web browser, also run on servers through Node.js. Every interactive part of this site is JavaScript."
 aliases = []
 reference = { title = "MDN Web Docs: JavaScript", url = "https://developer.mozilla.org/en-US/docs/Web/JavaScript" }
-pages = ["about.md", "projects/data.md", "projects/learning.md", "projects/libraries.md", "projects/media.md", "projects/science.md", "projects/systems.md", "projects/tools.md", "projects/web.md", "work/algoglyph.md", "work/astronomists.md", "work/bubbler.md", "work/catharsis-as-a-service.md", "work/crisis-map.md", "work/data-atlas.md", "work/dispatcher.md", "work/gists-search.md", "work/kompendium-epistemicke-anihilace.md", "work/korczis-github-io.md", "work/majordomus-reel.md", "work/oscilla.md", "work/prismatic-majordomus.md", "work/prismatic.md", "work/sonic-playground.md", "work/the-psycho.md", "work/u-tygra.md", "work/vomaste-cz.md"]
+pages = ["about.md", "projects/data.md", "projects/learning.md", "projects/libraries.md", "projects/media.md", "projects/science.md", "projects/systems.md", "projects/tools.md", "projects/web.md", "work/algoglyph.md", "work/astronomists.md", "work/bubbler.md", "work/catharsis-as-a-service.md", "work/crisis-map.md", "work/data-atlas.md", "work/dispatcher.md", "work/gists-search.md", "work/kompendium-epistemicke-anihilace.md", "work/korczis-github-io.md", "work/majordomus-reel.md", "work/oscilla.md", "work/prismatic-majordomus.md", "work/prismatic.md", "work/sonic-playground.md", "work/the-psycho.md", "work/u-tygra.md", "work/vomaste-cz.md", "_index.md"]
 related = ["repository", "open-source", "html", "commit", "shell", "github-pages", "css", "elixir"]
 og_title = "JavaScript: glossary"
 og_image = "og/glossary-javascript.png"
 keywords = ["JavaScript", "Programming language", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,3 +40,14 @@ span = 3
 height = "md"
 tone = "night"
 +++
+I have written JavaScript in 56 public repositories, from 2013 to 2026; in 44 of them it is the main language.
+
+What it was for: [Data and GIS](@/projects/data.md) (21), [Tools](@/projects/tools.md) (16), [Web](@/projects/web.md) (5) and [Media and art](@/projects/media.md) (4).
+
+Most recently: [algoglyph](@/work/algoglyph.md): Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core; [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore; [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.
+
+14 of these projects run as live sites.
+
+I also used it in client work under confidentiality agreements. Roles: Architect, Lead engineer, AI engineer, Data engineer, Investigator and Advisor. What was solved: LLM agents, Decision support, AI transformation, Audit trail and OSINT investigation. The use cases below give the principle and the intent of that work; no client, person, date or number is named.
+
+How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses JavaScript: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links JavaScript to the repositories and to the other languages and technologies they use together.

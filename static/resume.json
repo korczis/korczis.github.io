@@ -242,10 +242,24 @@
    ]
   },
   {
+   "name": "ApacheConf",
+   "url": "https://korczis.github.io/glossary/apacheconf/",
+   "keywords": [
+    "pavian.eu"
+   ]
+  },
+  {
    "name": "C",
    "url": "https://korczis.github.io/glossary/c/",
    "keywords": [
     "skull-c"
+   ]
+  },
+  {
+   "name": "CMake",
+   "url": "https://korczis.github.io/glossary/cmake/",
+   "keywords": [
+    "skull-cpp"
    ]
   },
   {
@@ -260,6 +274,48 @@
    "url": "https://korczis.github.io/glossary/java/",
    "keywords": [
     "skull-java"
+   ]
+  },
+  {
+   "name": "Just",
+   "url": "https://korczis.github.io/glossary/just/",
+   "keywords": [
+    "comtesse"
+   ]
+  },
+  {
+   "name": "Makefile",
+   "url": "https://korczis.github.io/glossary/makefile/",
+   "keywords": [
+    "skull-nodejs"
+   ]
+  },
+  {
+   "name": "OpenSCAD",
+   "url": "https://korczis.github.io/glossary/openscad/",
+   "keywords": [
+    "3d-print"
+   ]
+  },
+  {
+   "name": "R",
+   "url": "https://korczis.github.io/glossary/r/",
+   "keywords": [
+    "datascience"
+   ]
+  },
+  {
+   "name": "TeX",
+   "url": "https://korczis.github.io/glossary/tex/",
+   "keywords": [
+    "corvidae"
+   ]
+  },
+  {
+   "name": "XSLT",
+   "url": "https://korczis.github.io/glossary/xslt/",
+   "keywords": [
+    "solr-core-minimal"
    ]
   },
   {

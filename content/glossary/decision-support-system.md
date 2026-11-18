@@ -3,7 +3,7 @@
 title = "Decision support system"
 description = "Software that gathers data and analysis into reports and views that help people make a decision, rather than making it for them."
 template = "term.html"
-weight = 40
+weight = 62
 
 [taxonomies]
 tags = ["Glossary", "Concept"]

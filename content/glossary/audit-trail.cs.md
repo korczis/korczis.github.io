@@ -3,7 +3,7 @@
 title = "Auditní stopa"
 description = "Chronologický záznam o tom, kdo co udělal a na základě jakých podkladů, uchovaný proto, aby šlo práci později ověřit a zrekonstruovat."
 template = "term.html"
-weight = 36
+weight = 58
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

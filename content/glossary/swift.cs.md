@@ -3,7 +3,7 @@
 title = "Swift"
 description = "Jazyk Applu pro aplikace na iOS a macOS. Pojem ze slovníku."
 template = "term.html"
-weight = 17
+weight = 28
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -23,6 +23,15 @@ og_image = "og/cs-glossary-swift.png"
 keywords = ["Swift", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
 
 [[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
+
+[[extra.viz]]
 kind = "atlas"
 source = "glossary.terms"
 title = "viz_atlas_term_title"
@@ -31,3 +40,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
+Swift jsem psal ve 3 veřejných repozitářích, od roku 2018 do 2021; ve 3 z nich je hlavním jazykem.
+
+K čemu to sloužilo: [Znalosti](@/projects/knowledge.cs.md) (2) a [Nástroje](@/projects/tools.cs.md) (1).
+
+Naposledy: [ReadingPhoneNumbersInRealTime](https://github.com/korczis/ReadingPhoneNumbersInRealTime); [MinervaEye](https://github.com/korczis/MinervaEye); [bc-apple](https://github.com/korczis/bc-apple).
+
+Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak Swift používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje Swift s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

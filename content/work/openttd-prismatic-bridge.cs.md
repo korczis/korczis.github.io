@@ -15,7 +15,7 @@ og_title = "openttd-prismatic-bridge: Média a umění"
 og_image = "og/cs-work-openttd-prismatic-bridge.png"
 schema = "project"
 keywords = ["openttd-prismatic-bridge", "Média a umění", "Python", "HTML", "Squirrel", "Tomáš Korčák"]
-terms = ["python", "html", "shell", "css", "data-visualisation", "repository", "commit", "open-source"]
+terms = ["python", "html", "squirrel", "shell", "css", "data-visualisation", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -26,7 +26,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**openttd-prismatic-bridge** je projekt z kategorie [Média a umění](@/projects/media.cs.md). Jeho kód je napsaný hlavně v jazyce [Python](@/glossary/python.cs.md) (65,4 %), dále [HTML](@/glossary/html.cs.md), Squirrel a [Shell](@/glossary/shell.cs.md).
+**openttd-prismatic-bridge** je projekt z kategorie [Média a umění](@/projects/media.cs.md). Jeho kód je napsaný hlavně v jazyce [Python](@/glossary/python.cs.md) (65,4 %), dále [HTML](@/glossary/html.cs.md), [Squirrel](@/glossary/squirrel.cs.md) a [Shell](@/glossary/shell.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 23. července 2026; poslední [commit](@/glossary/commit.cs.md) je z 17. listopadu 2026. Zní „Add: a live check that /decision/pull leaves a decision's settings on the running AI“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 

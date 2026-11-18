@@ -3,7 +3,7 @@
 title = "Web Audio"
 description = "Rozhraní prohlížeče pro generování, zpracování a analýzu zvuku v reálném čase."
 template = "term.html"
-weight = 33
+weight = 55
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -23,6 +23,15 @@ og_image = "og/cs-glossary-web-audio.png"
 keywords = ["Web Audio", "Technologie", "Slovník", "Tomáš Korčák"]
 
 [[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
+
+[[extra.viz]]
 kind = "atlas"
 source = "glossary.terms"
 title = "viz_atlas_term_title"
@@ -31,3 +40,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
+Web Audio je součástí 1 mého veřejného repozitáře, od roku 2026 do 2026.
+
+K čemu to sloužilo: [Věda a vizualizace](@/projects/science.cs.md) (1).
+
+Naposledy: [Oscilla](@/work/oscilla.cs.md): Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.
+
+1 z těchto projektů běží jako živý web.
+
+Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak Web Audio používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje Web Audio s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

@@ -3,7 +3,7 @@
 title = "OpenAPI"
 description = "Standardní, na jazyce nezávislý popis HTTP rozhraní: jeho cest, operací a dat, čitelný pro lidi i nástroje jako Swagger UI."
 template = "term.html"
-weight = 28
+weight = 46
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -31,3 +31,4 @@ span = 3
 height = "md"
 tone = "night"
 +++
+Žádný můj veřejný repozitář ani klientská zakázka OpenAPI podle měřených dat nepoužívá; tato stránka pojem vysvětluje tam, kde ho web používá.

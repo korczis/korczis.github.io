@@ -208,22 +208,22 @@
    "url": "https://korczis.github.io/cs/glossary/",
    "lang": "cs",
    "title": "Slovník · Tomas Korcak",
-   "description": "62 pojmů, kterými se web vysvětluje: jazyky, technologie a koncepty, každý definovaný, se zdrojem a s odkazem na stránky, které ho používají.",
+   "description": "84 pojmů, kterými se web vysvětluje: jazyky, technologie a koncepty, každý definovaný, se zdrojem a s odkazem na stránky, které ho používají.",
    "type": "glossary",
    "category": null,
    "og_image": "https://korczis.github.io/og/cs-glossary.png",
    "keywords": [
     "Slovník",
+    "ApacheConf",
     "C#",
     "C++",
+    "CMake",
     "CSS",
     "Dockerfile",
+    "EEx and HEEx",
     "Elixir",
     "Erlang",
     "Haskell",
-    "HTML",
-    "Java",
-    "JavaScript",
     "Tomáš Korčák"
    ]
   },
@@ -273,6 +273,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/apacheconf/",
+   "lang": "cs",
+   "title": "ApacheConf (programovací jazyk)",
+   "description": "Konfigurační jazyk webového serveru Apache HTTP: virtuální hosty, přepisovací pravidla a řízení přístupu.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-apacheconf.png",
+   "keywords": [
+    "ApacheConf",
+    "Programovací jazyk",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/audit-trail/",
    "lang": "cs",
    "title": "Auditní stopa (koncept)",
@@ -314,6 +329,36 @@
    "keywords": [
     "Chart.js",
     "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/claude-api/",
+   "lang": "cs",
+   "title": "Claude API (technologie)",
+   "description": "API společnosti Anthropic k modelům Claude: zprávy, používání nástrojů a agenti, kteří čtou, uvažují a jednají.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-claude-api.png",
+   "keywords": [
+    "Claude API",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/cmake/",
+   "lang": "cs",
+   "title": "CMake (programovací jazyk)",
+   "description": "Generátor buildovacích systémů pro C a C++: jeden popis projektu vytvoří Makefile, soubory Ninja nebo projekty IDE na libovolné platformě.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-cmake.png",
+   "keywords": [
+    "CMake",
+    "Programovací jazyk",
     "Slovník",
     "Tomáš Korčák"
    ]
@@ -487,6 +532,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/eex/",
+   "lang": "cs",
+   "title": "EEx and HEEx (programovací jazyk)",
+   "description": "Vložené šablony Elixiru: EEx vkládá Elixir do textu, HEEx do HTML, které Phoenix LiveView kontroluje a vykresluje.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-eex.png",
+   "keywords": [
+    "EEx and HEEx",
+    "Programovací jazyk",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/elixir/",
    "lang": "cs",
    "title": "Elixir (programovací jazyk)",
@@ -512,6 +572,21 @@
    "keywords": [
     "Erlang",
     "Programovací jazyk",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/fastapi/",
+   "lang": "cs",
+   "title": "FastAPI (technologie)",
+   "description": "Webový framework v Pythonu pro HTTP API, typovaný modely Pydantic, které validují požadavky a generují popis OpenAPI.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-fastapi.png",
+   "keywords": [
+    "FastAPI",
+    "Technologie",
     "Slovník",
     "Tomáš Korčák"
    ]
@@ -572,6 +647,21 @@
    "keywords": [
     "GIS",
     "Koncept",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/github-actions/",
+   "lang": "cs",
+   "title": "GitHub Actions (technologie)",
+   "description": "Průběžná integrace GitHubu: workflow s úlohami, které sestaví, otestují a nasadí repozitář při každém pushi nebo podle plánu.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-github-actions.png",
+   "keywords": [
+    "GitHub Actions",
+    "Technologie",
     "Slovník",
     "Tomáš Korčák"
    ]
@@ -715,6 +805,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/just/",
+   "lang": "cs",
+   "title": "Just (programovací jazyk)",
+   "description": "Spouštěč příkazů: pojmenované recepty v souboru justfile, jako make bez buildovací logiky; vstupní bod většiny těchto repozitářů.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-just.png",
+   "keywords": [
+    "Just",
+    "Programovací jazyk",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/knowledge-graph/",
    "lang": "cs",
    "title": "Znalostní graf (koncept)",
@@ -731,6 +836,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/kubernetes/",
+   "lang": "cs",
+   "title": "Kubernetes (technologie)",
+   "description": "Systém, který provozuje kontejnery v clusteru: plánování, škálování, síť a nasazování deklarované jako zdroje.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-kubernetes.png",
+   "keywords": [
+    "Kubernetes",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/majordomus/",
    "lang": "cs",
    "title": "Majordomus (technologie)",
@@ -741,6 +861,21 @@
    "keywords": [
     "Majordomus",
     "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/makefile/",
+   "lang": "cs",
+   "title": "Makefile (programovací jazyk)",
+   "description": "Jazyk nástroje make: cíle, soubory, na kterých závisí, a příkazy, které je přestaví, když se závislost změní.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-makefile.png",
+   "keywords": [
+    "Makefile",
+    "Programovací jazyk",
     "Slovník",
     "Tomáš Korčák"
    ]
@@ -788,6 +923,21 @@
     "Fúze a akvizice",
     "Mergers and acquisitions",
     "Koncept",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/mermaid/",
+   "lang": "cs",
+   "title": "Mermaid (programovací jazyk)",
+   "description": "Textový jazyk pro diagramy (vývojové diagramy, sekvence, stavové automaty) vykreslované ze zdroje podobného Markdownu.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-mermaid.png",
+   "keywords": [
+    "Mermaid",
+    "Programovací jazyk",
     "Slovník",
     "Tomáš Korčák"
    ]
@@ -853,6 +1003,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/openai-api/",
+   "lang": "cs",
+   "title": "OpenAI API (technologie)",
+   "description": "API společnosti OpenAI k jejím jazykovým a embeddingovým modelům, používané pro generování textu, extrakci a vyhledávání.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-openai-api.png",
+   "keywords": [
+    "OpenAI API",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/openapi/",
    "lang": "cs",
    "title": "OpenAPI (technologie)",
@@ -863,6 +1028,21 @@
    "keywords": [
     "OpenAPI",
     "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/openscad/",
+   "lang": "cs",
+   "title": "OpenSCAD (programovací jazyk)",
+   "description": "Jazyk pro pevné 3D modely popsané kódem: tvary skládané sjednocením, rozdílem a transformacemi, připravené pro 3D tisk.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-openscad.png",
+   "keywords": [
+    "OpenSCAD",
+    "Programovací jazyk",
     "Slovník",
     "Tomáš Korčák"
    ]
@@ -914,6 +1094,36 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/playwright/",
+   "lang": "cs",
+   "title": "Playwright (technologie)",
+   "description": "Knihovna pro automatizaci prohlížeče, která ovládá Chromium, Firefox a WebKit pro end-to-end testy a audity.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-playwright.png",
+   "keywords": [
+    "Playwright",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/plpgsql/",
+   "lang": "cs",
+   "title": "PL/pgSQL (programovací jazyk)",
+   "description": "Procedurální jazyk PostgreSQL: funkce a triggery, které uvnitř databáze spouštějí SQL s proměnnými, cykly a podmínkami.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-plpgsql.png",
+   "keywords": [
+    "PL/pgSQL",
+    "Programovací jazyk",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/postgis/",
    "lang": "cs",
    "title": "PostGIS (technologie)",
@@ -944,6 +1154,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/pydantic/",
+   "lang": "cs",
+   "title": "Pydantic (technologie)",
+   "description": "Validace dat v Pythonu z typových anotací: modely, které vstup parsují, kontrolují a serializují.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-pydantic.png",
+   "keywords": [
+    "Pydantic",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/python/",
    "lang": "cs",
    "title": "Python (programovací jazyk)",
@@ -954,6 +1179,36 @@
    "keywords": [
     "Python",
     "Programovací jazyk",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/r/",
+   "lang": "cs",
+   "title": "R (programovací jazyk)",
+   "description": "Jazyk a prostředí pro statistiku a analýzu dat, s grafy a rozsáhlou knihovnou statistických metod.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-r.png",
+   "keywords": [
+    "R (programovací jazyk)",
+    "Programovací jazyk",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/react/",
+   "lang": "cs",
+   "title": "React (technologie)",
+   "description": "JavaScriptová knihovna pro uživatelská rozhraní skládaná z komponent, které se překreslují podle stavu.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-react.png",
+   "keywords": [
+    "React",
+    "Technologie",
     "Slovník",
     "Tomáš Korčák"
    ]
@@ -1037,6 +1292,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/scss/",
+   "lang": "cs",
+   "title": "SCSS (programovací jazyk)",
+   "description": "CSS s proměnnými, vnořováním a mixiny, kompilované nástrojem Sass do běžného CSS.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-scss.png",
+   "keywords": [
+    "SCSS",
+    "Programovací jazyk",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/shell/",
    "lang": "cs",
    "title": "Shell (programovací jazyk)",
@@ -1046,6 +1316,21 @@
    "og_image": "https://korczis.github.io/og/cs-glossary-shell.png",
    "keywords": [
     "Shell",
+    "Programovací jazyk",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/squirrel/",
+   "lang": "cs",
+   "title": "Squirrel (programovací jazyk)",
+   "description": "Malý vložitelný skriptovací jazyk; OpenTTD v něm spouští své AI hráče a herní skripty.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-squirrel.png",
+   "keywords": [
+    "Squirrel",
     "Programovací jazyk",
     "Slovník",
     "Tomáš Korčák"
@@ -1093,6 +1378,36 @@
    "keywords": [
     "Tailwind CSS",
     "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/tesseract/",
+   "lang": "cs",
+   "title": "Tesseract (technologie)",
+   "description": "Open-source OCR engine, který čte text ze skenovaných dokumentů a obrázků v mnoha jazycích.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-tesseract.png",
+   "keywords": [
+    "Tesseract",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/tex/",
+   "lang": "cs",
+   "title": "TeX (programovací jazyk)",
+   "description": "Sázecí jazyk pro dokumenty a matematiku; LaTeX je balík maker, ve kterém je napsaná většina dokumentů.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-tex.png",
+   "keywords": [
+    "TeX",
+    "Programovací jazyk",
     "Slovník",
     "Tomáš Korčák"
    ]
@@ -1154,6 +1469,21 @@
    "keywords": [
     "Web Audio",
     "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/xslt/",
+   "lang": "cs",
+   "title": "XSLT (programovací jazyk)",
+   "description": "Jazyk, který převádí dokumenty XML na jiné XML, HTML nebo text pomocí šablon párovaných se vstupním stromem.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-xslt.png",
+   "keywords": [
+    "XSLT",
+    "Programovací jazyk",
     "Slovník",
     "Tomáš Korčák"
    ]
@@ -2201,22 +2531,22 @@
    "url": "https://korczis.github.io/glossary/",
    "lang": "en",
    "title": "Glossary · Tomas Korcak",
-   "description": "The 62 terms this site explains itself with: languages, technologies and concepts, each defined, sourced and linked to every page that uses it.",
+   "description": "The 84 terms this site explains itself with: languages, technologies and concepts, each defined, sourced and linked to every page that uses it.",
    "type": "glossary",
    "category": null,
    "og_image": "https://korczis.github.io/og/glossary.png",
    "keywords": [
     "Glossary",
+    "ApacheConf",
     "C#",
     "C++",
+    "CMake",
     "CSS",
     "Dockerfile",
+    "EEx and HEEx",
     "Elixir",
     "Erlang",
     "Haskell",
-    "HTML",
-    "Java",
-    "JavaScript",
     "Tomas Korcak"
    ]
   },
@@ -2266,6 +2596,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/apacheconf/",
+   "lang": "en",
+   "title": "ApacheConf (programming language)",
+   "description": "The configuration language of the Apache HTTP Server: virtual hosts, rewrite rules and access control.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-apacheconf.png",
+   "keywords": [
+    "ApacheConf",
+    "Programming language",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/audit-trail/",
    "lang": "en",
    "title": "Audit trail (concept)",
@@ -2306,6 +2651,36 @@
    "keywords": [
     "Chart.js",
     "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/claude-api/",
+   "lang": "en",
+   "title": "Claude API (technology)",
+   "description": "Anthropic's API to the Claude models: messages, tool use and agents that read, reason and act.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-claude-api.png",
+   "keywords": [
+    "Claude API",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/cmake/",
+   "lang": "en",
+   "title": "CMake (programming language)",
+   "description": "A build-system generator for C and C++: one description of a project produces Makefiles, Ninja files or IDE projects on any platform.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-cmake.png",
+   "keywords": [
+    "CMake",
+    "Programming language",
     "Glossary",
     "Tomas Korcak"
    ]
@@ -2476,6 +2851,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/eex/",
+   "lang": "en",
+   "title": "EEx and HEEx (programming language)",
+   "description": "Elixir's embedded templates: EEx puts Elixir in text, HEEx in HTML that Phoenix LiveView checks and renders.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-eex.png",
+   "keywords": [
+    "EEx and HEEx",
+    "Programming language",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/elixir/",
    "lang": "en",
    "title": "Elixir (programming language)",
@@ -2501,6 +2891,21 @@
    "keywords": [
     "Erlang",
     "Programming language",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/fastapi/",
+   "lang": "en",
+   "title": "FastAPI (technology)",
+   "description": "A Python web framework for HTTP APIs, typed with Pydantic models that validate requests and generate the OpenAPI description.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-fastapi.png",
+   "keywords": [
+    "FastAPI",
+    "Technology",
     "Glossary",
     "Tomas Korcak"
    ]
@@ -2561,6 +2966,21 @@
    "keywords": [
     "GIS",
     "Concept",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/github-actions/",
+   "lang": "en",
+   "title": "GitHub Actions (technology)",
+   "description": "GitHub's continuous integration: workflows of jobs that build, test and deploy a repository on every push or on a schedule.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-github-actions.png",
+   "keywords": [
+    "GitHub Actions",
+    "Technology",
     "Glossary",
     "Tomas Korcak"
    ]
@@ -2701,6 +3121,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/just/",
+   "lang": "en",
+   "title": "Just (programming language)",
+   "description": "A command runner: named recipes in a justfile, like make without the build semantics; the entry point of most of these repositories.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-just.png",
+   "keywords": [
+    "Just",
+    "Programming language",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/knowledge-graph/",
    "lang": "en",
    "title": "Knowledge graph (concept)",
@@ -2716,6 +3151,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/kubernetes/",
+   "lang": "en",
+   "title": "Kubernetes (technology)",
+   "description": "A system that runs containers across a cluster: scheduling, scaling, networking and rollouts declared as resources.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-kubernetes.png",
+   "keywords": [
+    "Kubernetes",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/majordomus/",
    "lang": "en",
    "title": "Majordomus (technology)",
@@ -2726,6 +3176,21 @@
    "keywords": [
     "Majordomus",
     "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/makefile/",
+   "lang": "en",
+   "title": "Makefile (programming language)",
+   "description": "The build language of make: targets, the files they depend on and the commands that rebuild them when a dependency changes.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-makefile.png",
+   "keywords": [
+    "Makefile",
+    "Programming language",
     "Glossary",
     "Tomas Korcak"
    ]
@@ -2771,6 +3236,21 @@
    "keywords": [
     "Mergers and acquisitions",
     "Concept",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/mermaid/",
+   "lang": "en",
+   "title": "Mermaid (programming language)",
+   "description": "A text language for diagrams (flowcharts, sequences, state machines) rendered from Markdown-like source.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-mermaid.png",
+   "keywords": [
+    "Mermaid",
+    "Programming language",
     "Glossary",
     "Tomas Korcak"
    ]
@@ -2836,6 +3316,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/openai-api/",
+   "lang": "en",
+   "title": "OpenAI API (technology)",
+   "description": "OpenAI's API to its language and embedding models, used for text generation, extraction and search.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-openai-api.png",
+   "keywords": [
+    "OpenAI API",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/openapi/",
    "lang": "en",
    "title": "OpenAPI (technology)",
@@ -2846,6 +3341,21 @@
    "keywords": [
     "OpenAPI",
     "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/openscad/",
+   "lang": "en",
+   "title": "OpenSCAD (programming language)",
+   "description": "A language for solid 3D models described as code: shapes combined by union, difference and transformation, ready for 3D printing.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-openscad.png",
+   "keywords": [
+    "OpenSCAD",
+    "Programming language",
     "Glossary",
     "Tomas Korcak"
    ]
@@ -2896,6 +3406,36 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/playwright/",
+   "lang": "en",
+   "title": "Playwright (technology)",
+   "description": "A browser automation library that drives Chromium, Firefox and WebKit for end-to-end tests and audits.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-playwright.png",
+   "keywords": [
+    "Playwright",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/plpgsql/",
+   "lang": "en",
+   "title": "PL/pgSQL (programming language)",
+   "description": "PostgreSQL's procedural language: functions and triggers that run SQL with variables, loops and conditions inside the database.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-plpgsql.png",
+   "keywords": [
+    "PL/pgSQL",
+    "Programming language",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/postgis/",
    "lang": "en",
    "title": "PostGIS (technology)",
@@ -2926,6 +3466,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/pydantic/",
+   "lang": "en",
+   "title": "Pydantic (technology)",
+   "description": "Data validation for Python from type hints: models that parse, check and serialise input.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-pydantic.png",
+   "keywords": [
+    "Pydantic",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/python/",
    "lang": "en",
    "title": "Python (programming language)",
@@ -2936,6 +3491,36 @@
    "keywords": [
     "Python",
     "Programming language",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/r/",
+   "lang": "en",
+   "title": "R (programming language)",
+   "description": "A language and environment for statistics and data analysis, with plotting and a large library of statistical methods.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-r.png",
+   "keywords": [
+    "R (programming language)",
+    "Programming language",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/react/",
+   "lang": "en",
+   "title": "React (technology)",
+   "description": "A JavaScript library for user interfaces built from components that re-render from state.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-react.png",
+   "keywords": [
+    "React",
+    "Technology",
     "Glossary",
     "Tomas Korcak"
    ]
@@ -3016,6 +3601,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/scss/",
+   "lang": "en",
+   "title": "SCSS (programming language)",
+   "description": "CSS with variables, nesting and mixins, compiled by Sass into plain CSS.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-scss.png",
+   "keywords": [
+    "SCSS",
+    "Programming language",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/shell/",
    "lang": "en",
    "title": "Shell (programming language)",
@@ -3025,6 +3625,21 @@
    "og_image": "https://korczis.github.io/og/glossary-shell.png",
    "keywords": [
     "Shell",
+    "Programming language",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/squirrel/",
+   "lang": "en",
+   "title": "Squirrel (programming language)",
+   "description": "A small embeddable scripting language; OpenTTD runs its AI players and game scripts in it.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-squirrel.png",
+   "keywords": [
+    "Squirrel",
     "Programming language",
     "Glossary",
     "Tomas Korcak"
@@ -3071,6 +3686,36 @@
    "keywords": [
     "Tailwind CSS",
     "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/tesseract/",
+   "lang": "en",
+   "title": "Tesseract (technology)",
+   "description": "An open-source OCR engine that reads text from scanned documents and images in many languages.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-tesseract.png",
+   "keywords": [
+    "Tesseract",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/tex/",
+   "lang": "en",
+   "title": "TeX (programming language)",
+   "description": "A typesetting language for documents and mathematics; LaTeX is the macro package most documents are written in.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-tex.png",
+   "keywords": [
+    "TeX",
+    "Programming language",
     "Glossary",
     "Tomas Korcak"
    ]
@@ -3131,6 +3776,21 @@
    "keywords": [
     "Web Audio",
     "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/xslt/",
+   "lang": "en",
+   "title": "XSLT (programming language)",
+   "description": "A language that transforms XML documents into other XML, HTML or text by templates matched against the input tree.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-xslt.png",
+   "keywords": [
+    "XSLT",
+    "Programming language",
     "Glossary",
     "Tomas Korcak"
    ]

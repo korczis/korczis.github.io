@@ -3,7 +3,7 @@
 title = "Flowbite Pro"
 description = "A licensed library of interface blocks and an application shell on Tailwind CSS; every page of this site is built from it."
 template = "term.html"
-weight = 24
+weight = 39
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -23,6 +23,15 @@ og_image = "og/glossary-flowbite-pro.png"
 keywords = ["Flowbite Pro", "Technology", "Glossary", "Tomas Korcak"]
 
 [[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
+
+[[extra.viz]]
 kind = "atlas"
 source = "glossary.terms"
 title = "viz_atlas_term_title"
@@ -31,3 +40,14 @@ span = 3
 height = "md"
 tone = "night"
 +++
+Flowbite Pro is part of 3 of my public repositories, from 2024 to 2026.
+
+What it was for: [Knowledge](@/projects/knowledge.md) (1), [Science and visualisation](@/projects/science.md) (1) and [Web](@/projects/web.md) (1).
+
+Most recently: [algoglyph](@/work/algoglyph.md): Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core; [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore; [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.
+
+2 of these projects run as live sites.
+
+I also used it in client work under confidentiality agreements. Roles: Architect, Lead engineer, AI engineer and Data engineer. What was solved: LLM agents, Decision support, AI transformation and Audit trail. The use cases below give the principle and the intent of that work; no client, person, date or number is named.
+
+How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses Flowbite Pro: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links Flowbite Pro to the repositories and to the other languages and technologies they use together.

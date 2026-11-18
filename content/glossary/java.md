@@ -3,7 +3,7 @@
 title = "Java"
 description = "An object-oriented language on the Java Virtual Machine, long the default of enterprise software."
 template = "term.html"
-weight = 10
+weight = 13
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -17,10 +17,19 @@ definition = "An object-oriented language on the Java Virtual Machine, long the 
 aliases = []
 reference = { title = "dev.java", url = "https://dev.java/learn/" }
 pages = ["projects/learning.md"]
-related = ["c", "cpp", "csharp", "elixir", "erlang", "haskell", "javascript", "repository"]
+related = ["c", "cmake", "cpp", "csharp", "elixir", "erlang", "haskell", "javascript"]
 og_title = "Java: glossary"
 og_image = "og/glossary-java.png"
 keywords = ["Java", "Programming language", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,3 +40,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
+I have written Java in 1 public repository, from 2014 to 2014; in 1 of them it is the main language.
+
+What it was for: [Learning and experiments](@/projects/learning.md) (1).
+
+Most recently: [skull-java](https://github.com/korczis/skull-java).
+
+How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses Java: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links Java to the repositories and to the other languages and technologies they use together.

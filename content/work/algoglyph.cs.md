@@ -15,7 +15,7 @@ og_title = "algoglyph: Algoritmy a fyzika kreslené jako glyfy."
 og_image = "og/cs-work-algoglyph.png"
 schema = "project"
 keywords = ["algoglyph", "Věda a vizualizace", "TypeScript", "Rust", "JavaScript", "Tomáš Korčák"]
-terms = ["typescript", "rust", "javascript", "html", "shell", "p5-js", "apache-echarts", "alpine-js", "flowbite-pro", "data-visualisation", "github-pages", "repository", "commit", "open-source"]
+terms = ["typescript", "rust", "javascript", "html", "shell", "just", "p5-js", "apache-echarts", "alpine-js", "flowbite-pro", "data-visualisation", "github-pages", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

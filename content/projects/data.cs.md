@@ -14,7 +14,7 @@ category = "data"
 og_title = "Data a GIS: 51 repozitářů."
 og_image = "og/cs-category-data.png"
 schema = "collection"
-terms = ["gis", "javascript", "ruby", "elixir", "shell", "html", "python", "rust", "postgis", "mcp", "repository"]
+terms = ["gis", "javascript", "ruby", "elixir", "shell", "html", "python", "r", "rust", "xslt", "postgis", "mcp", "repository"]
 keywords = ["Data a GIS", "Data Atlas", "Crisis map", "apollo-crawler-extension", "microcrawler", "microcrawler-browser", "microcrawler-crawler-bam-brno-cz", "microcrawler-crawler-all", "microcrawler-crawler-base", "Tomáš Korčák"]
 
 [[extra.viz]]

@@ -3,7 +3,7 @@
 title = "HTML"
 description = "Značkovací jazyk webových stránek: struktura, se kterou pracují styly a skripty."
 template = "term.html"
-weight = 9
+weight = 12
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -16,11 +16,20 @@ kind = "language"
 definition = "Značkovací jazyk webových stránek: struktura, se kterou pracují styly a skripty."
 aliases = []
 reference = { title = "MDN Web Docs: HTML", url = "https://developer.mozilla.org/en-US/docs/Web/HTML" }
-pages = ["projects/data.cs.md", "projects/media.cs.md", "projects/security.cs.md", "projects/web.cs.md", "work/algoglyph.cs.md", "work/astronomists.cs.md", "work/bubbler.cs.md", "work/catharsis-as-a-service.cs.md", "work/crisis-map.cs.md", "work/data-atlas.cs.md", "work/el-magico-cache.cs.md", "work/gists-search.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/korczis-github-io.cs.md", "work/korczis-gitlab-io.cs.md", "work/majordomus-reel.cs.md", "work/openttd-prismatic-bridge.cs.md", "work/oscilla.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/prismatic-majordomus.cs.md", "work/prismatic.cs.md", "work/sonic-playground.cs.md", "work/u-tygra.cs.md", "work/vomaste-cz.cs.md"]
+pages = ["projects/data.cs.md", "projects/media.cs.md", "projects/security.cs.md", "projects/web.cs.md", "work/algoglyph.cs.md", "work/astronomists.cs.md", "work/bubbler.cs.md", "work/catharsis-as-a-service.cs.md", "work/crisis-map.cs.md", "work/data-atlas.cs.md", "work/el-magico-cache.cs.md", "work/gists-search.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/korczis-github-io.cs.md", "work/korczis-gitlab-io.cs.md", "work/majordomus-reel.cs.md", "work/openttd-prismatic-bridge.cs.md", "work/oscilla.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/prismatic-majordomus.cs.md", "work/prismatic.cs.md", "work/sonic-playground.cs.md", "work/u-tygra.cs.md", "work/vomaste-cz.cs.md", "_index.cs.md"]
 related = ["repository", "commit", "open-source", "javascript", "shell", "github-pages", "css", "python"]
 og_title = "HTML: slovník"
 og_image = "og/cs-glossary-html.png"
 keywords = ["HTML", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,3 +40,14 @@ span = 3
 height = "md"
 tone = "night"
 +++
+HTML jsem psal v 22 veřejných repozitářích, od roku 2014 do 2026; v 6 z nich je hlavním jazykem.
+
+K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (6), [Web](@/projects/web.cs.md) (5), [Média a umění](@/projects/media.cs.md) (4) a [Data a GIS](@/projects/data.cs.md) (2).
+
+Naposledy: [algoglyph](@/work/algoglyph.cs.md): Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem; [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat; [korczis.github.io](@/work/korczis-github-io.cs.md).
+
+14 z těchto projektů běží jako živé weby.
+
+Používal jsem ho také v klientské práci pod dohodami o mlčenlivosti. Role: Architekt, Vedoucí inženýr, Inženýr AI, Datový inženýr, Analytik šetření a Poradce. Co se řešilo: Agenti s LLM, Podpora rozhodování, Transformace s AI, Auditní stopa a OSINT šetření. Případy užití níže popisují princip a záměr této práce; žádný klient, osoba, datum ani číslo nejsou uvedeny.
+
+Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak HTML používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje HTML s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

@@ -3,7 +3,7 @@
 title = "C++"
 description = "C s třídami, šablonami a abstrakcemi, které za běhu nic nestojí; tam, kde záleží na rychlosti."
 template = "term.html"
-weight = 3
+weight = 4
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -23,6 +23,15 @@ og_image = "og/cs-glossary-cpp.png"
 keywords = ["C++", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
 
 [[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
+
+[[extra.viz]]
 kind = "atlas"
 source = "glossary.terms"
 title = "viz_atlas_term_title"
@@ -31,3 +40,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
+C++ jsem psal v 6 veřejných repozitářích, od roku 2014 do 2021; v 6 z nich je hlavním jazykem.
+
+K čemu to sloužilo: [Učení a experimenty](@/projects/learning.cs.md) (2), [Věda a vizualizace](@/projects/science.cs.md) (2), [Bezpečnost a OSINT](@/projects/security.cs.md) (1) a [Nástroje](@/projects/tools.cs.md) (1).
+
+Naposledy: [happ](https://github.com/korczis/happ); [algorithms-ruby](https://github.com/korczis/algorithms-ruby); [iCave](https://github.com/korczis/iCave).
+
+Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak C++ používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje C++ s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

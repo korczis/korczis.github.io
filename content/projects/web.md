@@ -14,7 +14,7 @@ category = "web"
 og_title = "Web: 16 repositories."
 og_image = "og/category-web.png"
 schema = "collection"
-terms = ["static-site-generator", "css", "javascript", "html", "elixir", "repository"]
+terms = ["static-site-generator", "css", "javascript", "html", "apacheconf", "elixir", "repository"]
 keywords = ["Web", "korczis.github.io", "ApolloCrawler-github-io", "annasabatova-cz", "korczis-com", "korczis-github-com", "pavian-eu", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -28,7 +28,7 @@ tone = "night"
 +++
 Websites and web applications: single-page apps, Phoenix and Elm frontends, landing pages and the sites of friends.
 
-The category holds 16 original repositories, written most often in [CSS](@/glossary/css.md), [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md), ApacheConf and [Elixir](@/glossary/elixir.md).
+The category holds 16 original repositories, written most often in [CSS](@/glossary/css.md), [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md), [ApacheConf](@/glossary/apacheconf.md) and [Elixir](@/glossary/elixir.md).
 
 Key concept: [Static site generator](@/glossary/static-site-generator.md).
 

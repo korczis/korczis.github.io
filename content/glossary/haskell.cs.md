@@ -3,7 +3,7 @@
 title = "Haskell"
 description = "Čistě funkcionální jazyk s líným vyhodnocováním a silným typovým systémem; místo, kde se učí myslet v typech."
 template = "term.html"
-weight = 8
+weight = 11
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -23,6 +23,15 @@ og_image = "og/cs-glossary-haskell.png"
 keywords = ["Haskell", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
 
 [[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
+
+[[extra.viz]]
 kind = "atlas"
 source = "glossary.terms"
 title = "viz_atlas_term_title"
@@ -31,3 +40,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
+Haskell jsem psal ve 2 veřejných repozitářích, od roku 2014 do 2016; ve 2 z nich je hlavním jazykem.
+
+K čemu to sloužilo: [Učení a experimenty](@/projects/learning.cs.md) (1) a [Věda a vizualizace](@/projects/science.cs.md) (1).
+
+Naposledy: [haskell-world](https://github.com/korczis/haskell-world); [skull-haskell](https://github.com/korczis/skull-haskell).
+
+Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak Haskell používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje Haskell s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

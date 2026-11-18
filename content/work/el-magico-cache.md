@@ -15,7 +15,7 @@ og_title = "el-magico-cache: Elixir Cache"
 og_image = "og/work-el-magico-cache.png"
 schema = "project"
 keywords = ["el-magico-cache", "Tools", "Elixir", "Shell", "Makefile", "Tomas Korcak"]
-terms = ["elixir", "shell", "nix", "html", "dockerfile", "open-source", "repository", "commit"]
+terms = ["elixir", "shell", "makefile", "nix", "html", "dockerfile", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -26,7 +26,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**el-magico-cache** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (82.5 %), with [Shell](@/glossary/shell.md), Makefile and [Nix](@/glossary/nix.md).
+**el-magico-cache** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (82.5 %), with [Shell](@/glossary/shell.md), [Makefile](@/glossary/makefile.md) and [Nix](@/glossary/nix.md).
 
 The [repository](@/glossary/repository.md) was created in January 2023; its latest [commit](@/glossary/commit.md) is from 27 January 2023. It reads “simple cache”. That places it among the projects active in the last 48 months.
 

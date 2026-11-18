@@ -3,7 +3,7 @@
 title = "Apache ECharts"
 description = "An Apache project for interactive charts: calendars, sunbursts, maps and large data sets."
 template = "term.html"
-weight = 20
+weight = 33
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -14,13 +14,22 @@ seo_title = "Apache ECharts (technology)"
 term = "apache-echarts"
 kind = "technology"
 definition = "An Apache project for interactive charts: calendars, sunbursts, maps and large data sets."
-aliases = ["ECharts"]
+aliases = ["ECharts", "echarts"]
 reference = { title = "echarts.apache.org", url = "https://echarts.apache.org/en/index.html" }
 pages = ["projects/knowledge.md", "projects/science.md", "stack.md", "work/algoglyph.md", "work/kompendium-epistemicke-anihilace.md"]
 related = ["alpine-js", "flowbite-pro", "repository", "cytoscape-js", "elixir", "github-pages", "javascript", "p5-js"]
 og_title = "Apache ECharts: glossary"
 og_image = "og/glossary-apache-echarts.png"
 keywords = ["Apache ECharts", "Technology", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,3 +40,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
+Apache ECharts is part of 3 of my public repositories, from 2024 to 2026.
+
+What it was for: [Knowledge](@/projects/knowledge.md) (1), [Science and visualisation](@/projects/science.md) (1) and [Web](@/projects/web.md) (1).
+
+Most recently: [algoglyph](@/work/algoglyph.md): Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core; [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore; [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.
+
+2 of these projects run as live sites.
+
+How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses Apache ECharts: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links Apache ECharts to the repositories and to the other languages and technologies they use together.

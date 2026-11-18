@@ -3,7 +3,7 @@
 title = "Commit"
 description = "One recorded change in a repository, with its author and time; the last commit dates a project's activity here."
 template = "term.html"
-weight = 37
+weight = 59
 
 [taxonomies]
 tags = ["Glossary", "Concept"]

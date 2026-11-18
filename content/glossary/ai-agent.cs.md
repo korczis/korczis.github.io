@@ -3,7 +3,7 @@
 title = "AI agent"
 description = "Program, který s pomocí jazykového modelu plánuje a jedná (upravuje kód, spouští příkazy) k cíli; Majordomus nutí takové agenty doložit práci."
 template = "term.html"
-weight = 35
+weight = 57
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

@@ -3,7 +3,7 @@
 title = "Dockerfile"
 description = "The recipe that builds a container image: a base system, files and commands, reproducible anywhere."
 template = "term.html"
-weight = 5
+weight = 7
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -14,13 +14,22 @@ seo_title = "Dockerfile (programming language)"
 term = "dockerfile"
 kind = "language"
 definition = "The recipe that builds a container image: a base system, files and commands, reproducible anywhere."
-aliases = []
+aliases = ["Docker", "docker"]
 reference = { title = "Dockerfile reference", url = "https://docs.docker.com/reference/dockerfile/" }
-pages = ["projects/media.md", "projects/systems.md", "work/el-magico-cache.md", "work/pdf-renderer.md", "work/prismatic-blog.md"]
-related = ["repository", "commit", "open-source", "data-visualisation", "elixir", "html", "javascript", "python"]
+pages = ["projects/media.md", "projects/systems.md", "work/el-magico-cache.md", "work/pdf-renderer.md", "work/prismatic-blog.md", "_index.md"]
+related = ["repository", "commit", "open-source", "data-visualisation", "elixir", "html", "javascript", "makefile"]
 og_title = "Dockerfile: glossary"
 og_image = "og/glossary-dockerfile.png"
 keywords = ["Dockerfile", "Programming language", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,3 +40,14 @@ span = 3
 height = "md"
 tone = "night"
 +++
+I have written Dockerfile in 6 public repositories, from 2019 to 2025; in 4 of them it is the main language.
+
+What it was for: [Systems and infrastructure](@/projects/systems.md) (3), [Tools](@/projects/tools.md) (2) and [Media and art](@/projects/media.md) (1).
+
+Most recently: [docks](https://gitlab.com/korczis/docks): Repository containing useful Dockerfile(s); [pdf\_renderer](@/work/pdf-renderer.md); [prismatic-blog](@/work/prismatic-blog.md).
+
+1 of these projects runs as a live site.
+
+I also used it in client work under confidentiality agreements. Roles: Architect, Lead engineer, AI engineer and Data engineer. What was solved: LLM agents, Decision support, AI transformation and Audit trail. The use cases below give the principle and the intent of that work; no client, person, date or number is named.
+
+How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses Dockerfile: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links Dockerfile to the repositories and to the other languages and technologies they use together.

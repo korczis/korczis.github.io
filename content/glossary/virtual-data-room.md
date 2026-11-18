@@ -3,7 +3,7 @@
 title = "Virtual data room"
 description = "A secure online repository where the documents of a transaction are shared with the parties allowed to see them, with every access recorded."
 template = "term.html"
-weight = 61
+weight = 83
 
 [taxonomies]
 tags = ["Glossary", "Concept"]

@@ -3,7 +3,7 @@
 title = "MCP"
 description = "Model Context Protocol: otevřený protokol, kterým AI aplikace přistupují k nástrojům a datům."
 template = "term.html"
-weight = 27
+weight = 44
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -14,13 +14,22 @@ seo_title = "MCP (technologie)"
 term = "mcp"
 kind = "technology"
 definition = "Model Context Protocol: otevřený protokol, kterým AI aplikace přistupují k nástrojům a datům."
-aliases = []
+aliases = ["model-context-protocol"]
 reference = { title = "modelcontextprotocol.io", url = "https://modelcontextprotocol.io/" }
 pages = ["hire.cs.md", "interfaces.cs.md", "projects/ai.cs.md", "projects/data.cs.md", "work/crisis-map.cs.md", "work/prismatic-majordomus.cs.md"]
 related = ["ai-agent", "elixir", "repository", "rust", "github-pages", "html", "javascript", "open-source"]
 og_title = "MCP: slovník"
 og_image = "og/cs-glossary-mcp.png"
 keywords = ["MCP", "Technologie", "Slovník", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,3 +40,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
+MCP je součástí 2 mých veřejných repozitářů, od roku 2026 do 2026.
+
+K čemu to sloužilo: [Inženýrství AI](@/projects/ai.cs.md) (1) a [Data a GIS](@/projects/data.cs.md) (1).
+
+Naposledy: [Majordomus](@/work/prismatic-majordomus.cs.md): Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model; [Crisis map](@/work/crisis-map.cs.md): Hlášení geokódovaná přes lokální Nominatim, uložená jako PostGIS geografie a servírovaná z jednoho registru schopností: LiveView, REST, OpenAPI, MCP a CLI.
+
+2 z těchto projektů běží jako živé weby.
+
+Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak MCP používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje MCP s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

@@ -3,7 +3,7 @@
 title = "C#"
 description = "Microsoft's object-oriented language for .NET. A term of the glossary."
 template = "term.html"
-weight = 2
+weight = 3
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -23,6 +23,15 @@ og_image = "og/glossary-csharp.png"
 keywords = ["C#", "Programming language", "Glossary", "Tomas Korcak"]
 
 [[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
+
+[[extra.viz]]
 kind = "atlas"
 source = "glossary.terms"
 title = "viz_atlas_term_title"
@@ -31,3 +40,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
+I have written C# in 3 public repositories, from 2012 to 2014; in 3 of them it is the main language.
+
+What it was for: [Learning and experiments](@/projects/learning.md) (2) and [Tools](@/projects/tools.md) (1).
+
+Most recently: [cs-benchmark](https://github.com/korczis/cs-benchmark): Simple C\# Benchmark; [Rocnikac4](https://github.com/korczis/Rocnikac4); [reflex](https://github.com/korczis/reflex): .NET Reflection tools.
+
+How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses C#: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links C# to the repositories and to the other languages and technologies they use together.

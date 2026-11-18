@@ -15,7 +15,7 @@ og_title = "pdf_renderer: Tools"
 og_image = "og/work-pdf-renderer.png"
 schema = "project"
 keywords = ["pdf_renderer", "Tools", "Python", "Dockerfile", "Makefile", "Tomas Korcak"]
-terms = ["python", "dockerfile", "open-source", "repository", "commit"]
+terms = ["python", "dockerfile", "makefile", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -26,7 +26,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**pdf\_renderer** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [Python](@/glossary/python.md) (94.2 %), with [Dockerfile](@/glossary/dockerfile.md) and Makefile.
+**pdf\_renderer** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [Python](@/glossary/python.md) (94.2 %), with [Dockerfile](@/glossary/dockerfile.md) and [Makefile](@/glossary/makefile.md).
 
 The [repository](@/glossary/repository.md) was created in March 2024; its latest [commit](@/glossary/commit.md) is from 25 March 2024. It reads “Initial commit”. That places it among the projects active in the last 48 months.
 

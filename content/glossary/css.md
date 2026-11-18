@@ -3,7 +3,7 @@
 title = "CSS"
 description = "The style language of the web: layout, colour and typography of HTML."
 template = "term.html"
-weight = 4
+weight = 6
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -23,6 +23,15 @@ og_image = "og/glossary-css.png"
 keywords = ["CSS", "Programming language", "Glossary", "Tomas Korcak"]
 
 [[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
+
+[[extra.viz]]
 kind = "atlas"
 source = "glossary.terms"
 title = "viz_atlas_term_title"
@@ -31,3 +40,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
+I have written CSS in 14 public repositories, from 2014 to 2026; in 5 of them it is the main language.
+
+What it was for: [Web](@/projects/web.md) (6), [Tools](@/projects/tools.md) (4), [Media and art](@/projects/media.md) (2) and [Data and GIS](@/projects/data.md) (1).
+
+Most recently: [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus; [Oscilla](@/work/oscilla.md): Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty; [Sonic Playground](@/work/sonic-playground.md): A hand-picked music blog built with Phoenix and Elixir on the Kita theme.
+
+8 of these projects run as live sites.
+
+How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses CSS: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links CSS to the repositories and to the other languages and technologies they use together.

@@ -3,7 +3,7 @@
 title = "CSS"
 description = "Stylový jazyk webu: rozvržení, barvy a typografie HTML."
 template = "term.html"
-weight = 4
+weight = 6
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -23,6 +23,15 @@ og_image = "og/cs-glossary-css.png"
 keywords = ["CSS", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
 
 [[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
+
+[[extra.viz]]
 kind = "atlas"
 source = "glossary.terms"
 title = "viz_atlas_term_title"
@@ -31,3 +40,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
+CSS jsem psal v 14 veřejných repozitářích, od roku 2014 do 2026; v 5 z nich je hlavním jazykem.
+
+K čemu to sloužilo: [Web](@/projects/web.cs.md) (6), [Nástroje](@/projects/tools.cs.md) (4), [Média a umění](@/projects/media.cs.md) (2) a [Data a GIS](@/projects/data.cs.md) (1).
+
+Naposledy: [korczis.github.io](@/work/korczis-github-io.cs.md); [Oscilla](@/work/oscilla.cs.md): Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu; [Sonic Playground](@/work/sonic-playground.cs.md): Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.
+
+8 z těchto projektů běží jako živé weby.
+
+Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak CSS používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje CSS s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

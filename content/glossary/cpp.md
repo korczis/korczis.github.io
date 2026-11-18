@@ -3,7 +3,7 @@
 title = "C++"
 description = "C with classes, templates and abstractions that cost nothing at run time; used where speed matters."
 template = "term.html"
-weight = 3
+weight = 4
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -23,6 +23,15 @@ og_image = "og/glossary-cpp.png"
 keywords = ["C++", "Programming language", "Glossary", "Tomas Korcak"]
 
 [[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
+
+[[extra.viz]]
 kind = "atlas"
 source = "glossary.terms"
 title = "viz_atlas_term_title"
@@ -31,3 +40,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
+I have written C++ in 6 public repositories, from 2014 to 2021; in 6 of them it is the main language.
+
+What it was for: [Learning and experiments](@/projects/learning.md) (2), [Science and visualisation](@/projects/science.md) (2), [Security and OSINT](@/projects/security.md) (1) and [Tools](@/projects/tools.md) (1).
+
+Most recently: [happ](https://github.com/korczis/happ): Playground App created during my Hospital Stay; [algorithms-ruby](https://github.com/korczis/algorithms-ruby): Fundamental algorithms in ruby; [iCave](https://github.com/korczis/iCave): Open Home Automation Platform.
+
+How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses C++: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links C++ to the repositories and to the other languages and technologies they use together.

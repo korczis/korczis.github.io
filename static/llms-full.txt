@@ -36,9 +36,17 @@ Measured from every original public repository on GitHub and GitLab, derived 202
 - [Swift](https://korczis.github.io/glossary/swift/): primary language of 3 original repositories; evidence: [ReadingPhoneNumbersInRealTime](https://github.com/korczis/ReadingPhoneNumbersInRealTime), [MinervaEye](https://github.com/korczis/MinervaEye), [bc-apple](https://github.com/korczis/bc-apple)
 - [TypeScript](https://korczis.github.io/glossary/typescript/): primary language of 3 original repositories; evidence: [algoglyph](https://github.com/korczis/algoglyph), [dispatcher](https://gitlab.com/korczis/dispatcher), [ts-logger](https://github.com/korczis/ts-logger)
 - [Haskell](https://korczis.github.io/glossary/haskell/): primary language of 2 original repositories; evidence: [haskell-world](https://github.com/korczis/haskell-world), [skull-haskell](https://github.com/korczis/skull-haskell)
+- [ApacheConf](https://korczis.github.io/glossary/apacheconf/): primary language of 1 original repository; evidence: [pavian.eu](https://github.com/korczis/pavian.eu)
 - [C](https://korczis.github.io/glossary/c/): primary language of 1 original repository; evidence: [skull-c](https://github.com/korczis/skull-c)
+- [CMake](https://korczis.github.io/glossary/cmake/): primary language of 1 original repository; evidence: [skull-cpp](https://github.com/korczis/skull-cpp)
 - [Erlang](https://korczis.github.io/glossary/erlang/): primary language of 1 original repository; evidence: [skull-erlang](https://github.com/korczis/skull-erlang)
 - [Java](https://korczis.github.io/glossary/java/): primary language of 1 original repository; evidence: [skull-java](https://github.com/korczis/skull-java)
+- [Just](https://korczis.github.io/glossary/just/): primary language of 1 original repository; evidence: [comtesse](https://gitlab.com/korczis/comtesse)
+- [Makefile](https://korczis.github.io/glossary/makefile/): primary language of 1 original repository; evidence: [skull-nodejs](https://github.com/korczis/skull-nodejs)
+- [OpenSCAD](https://korczis.github.io/glossary/openscad/): primary language of 1 original repository; evidence: [3d-print](https://github.com/korczis/3d-print)
+- [R](https://korczis.github.io/glossary/r/): primary language of 1 original repository; evidence: [datascience](https://github.com/korczis/datascience)
+- [TeX](https://korczis.github.io/glossary/tex/): primary language of 1 original repository; evidence: [corvidae](https://gitlab.com/korczis/corvidae)
+- [XSLT](https://korczis.github.io/glossary/xslt/): primary language of 1 original repository; evidence: [solr-core-minimal](https://github.com/korczis/solr-core-minimal)
 - [Alpine.js](https://korczis.github.io/glossary/alpine-js/): in the stack of 2 curated projects; evidence: [algoglyph](https://github.com/korczis/algoglyph), [Kompendium](https://github.com/korczis/kompendium-epistemicke-anihilace)
 - [Apache ECharts](https://korczis.github.io/glossary/apache-echarts/): in the stack of 2 curated projects; evidence: [algoglyph](https://github.com/korczis/algoglyph), [Kompendium](https://github.com/korczis/kompendium-epistemicke-anihilace)
 - [Flowbite Pro](https://korczis.github.io/glossary/flowbite-pro/): in the stack of 2 curated projects; evidence: [algoglyph](https://github.com/korczis/algoglyph), [Kompendium](https://github.com/korczis/kompendium-epistemicke-anihilace)
@@ -71,7 +79,7 @@ Measured from every original public repository on GitHub and GitLab, derived 202
 
 - [Tomas Korcak](https://korczis.github.io/): Tomas Korcak, staff engineer for AI agent infrastructure, Elixir and Rust, open to remote roles and contracts: software that makes AI agents prove their work.
 - [About](https://korczis.github.io/about/): Tomas Korcak (korczis), staff engineer for AI agent infrastructure in Brno, open to remote roles: the CV, my languages over the years, and where to find the work.
-- [Glossary](https://korczis.github.io/glossary/): The 62 terms this site explains itself with: languages, technologies and concepts, each defined, sourced and linked to every page that uses it.
+- [Glossary](https://korczis.github.io/glossary/): The 84 terms this site explains itself with: languages, technologies and concepts, each defined, sourced and linked to every page that uses it.
 - [Hire me](https://korczis.github.io/hire/): Tomas Korcak, staff engineer for AI agent infrastructure, Elixir and Rust: available remote, full-time or contract. Roles, terms, rate and evidence.
 - [Interfaces](https://korczis.github.io/interfaces/): The site for machines: its Majordomus layer with MCP resource URIs, how to connect an agent over MCP, and every published file described in OpenAPI.
 - [Projects](https://korczis.github.io/projects/): Every project in the catalogue: what it is, what it is built with, whether it is live, and whether Majordomus supervises it.

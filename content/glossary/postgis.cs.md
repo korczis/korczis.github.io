@@ -3,7 +3,7 @@
 title = "PostGIS"
 description = "Prostorové rozšíření PostgreSQL: body, tvary a geografické dotazy v SQL."
 template = "term.html"
-weight = 30
+weight = 49
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -23,6 +23,15 @@ og_image = "og/cs-glossary-postgis.png"
 keywords = ["PostGIS", "Technologie", "Slovník", "Tomáš Korčák"]
 
 [[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
+
+[[extra.viz]]
 kind = "atlas"
 source = "glossary.terms"
 title = "viz_atlas_term_title"
@@ -31,3 +40,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
+PostGIS je součástí 2 mých veřejných repozitářů, od roku 2026 do 2026.
+
+K čemu to sloužilo: [Data a GIS](@/projects/data.cs.md) (2).
+
+Naposledy: [Crisis map](@/work/crisis-map.cs.md): Hlášení geokódovaná přes lokální Nominatim, uložená jako PostGIS geografie a servírovaná z jednoho registru schopností: LiveView, REST, OpenAPI, MCP a CLI; [Data Atlas](@/work/data-atlas.cs.md): Datové sady, katastr, doprava, dálkový průzkum a prostorová analytika na jedné prohledávatelné stránce.
+
+2 z těchto projektů běží jako živé weby.
+
+Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak PostGIS používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje PostGIS s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

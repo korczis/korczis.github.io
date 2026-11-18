@@ -3,7 +3,7 @@
 title = "Tailwind CSS"
 description = "A CSS framework of small utility classes composed in the markup, compiled to only what a page uses."
 template = "term.html"
-weight = 32
+weight = 53
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -14,13 +14,22 @@ seo_title = "Tailwind CSS (technology)"
 term = "tailwind-css"
 kind = "technology"
 definition = "A CSS framework of small utility classes composed in the markup, compiled to only what a page uses."
-aliases = []
+aliases = ["tailwindcss"]
 reference = { title = "tailwindcss.com", url = "https://tailwindcss.com/docs" }
-pages = ["stack.md"]
+pages = ["stack.md", "_index.md"]
 related = ["alpine-js", "apache-echarts", "chart-js", "cytoscape-js", "d3", "flowbite-pro", "github-pages", "i18n"]
 og_title = "Tailwind CSS: glossary"
 og_image = "og/glossary-tailwind-css.png"
 keywords = ["Tailwind CSS", "Technology", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,3 +40,14 @@ span = 3
 height = "md"
 tone = "night"
 +++
+Tailwind CSS is part of 2 of my public repositories, from 2024 to 2026.
+
+What it was for: [Science and visualisation](@/projects/science.md) (1) and [Web](@/projects/web.md) (1).
+
+Most recently: [algoglyph](@/work/algoglyph.md): Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core; [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.
+
+1 of these projects runs as a live site.
+
+I also used it in client work under confidentiality agreements. Roles: Architect, Lead engineer, AI engineer and Data engineer. What was solved: LLM agents, Decision support, AI transformation and Audit trail. The use cases below give the principle and the intent of that work; no client, person, date or number is named.
+
+How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses Tailwind CSS: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links Tailwind CSS to the repositories and to the other languages and technologies they use together.

@@ -3,7 +3,7 @@
 title = "JavaScript"
 description = "Programovací jazyk webového prohlížeče, na serverech běží přes Node.js. Každá interaktivní část tohoto webu je v JavaScriptu."
 template = "term.html"
-weight = 11
+weight = 14
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -16,11 +16,20 @@ kind = "language"
 definition = "Programovací jazyk webového prohlížeče, na serverech běží přes Node.js. Každá interaktivní část tohoto webu je v JavaScriptu."
 aliases = []
 reference = { title = "MDN Web Docs: JavaScript", url = "https://developer.mozilla.org/en-US/docs/Web/JavaScript" }
-pages = ["about.cs.md", "projects/data.cs.md", "projects/learning.cs.md", "projects/libraries.cs.md", "projects/media.cs.md", "projects/science.cs.md", "projects/systems.cs.md", "projects/tools.cs.md", "projects/web.cs.md", "work/algoglyph.cs.md", "work/astronomists.cs.md", "work/bubbler.cs.md", "work/catharsis-as-a-service.cs.md", "work/crisis-map.cs.md", "work/data-atlas.cs.md", "work/dispatcher.cs.md", "work/gists-search.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/korczis-github-io.cs.md", "work/majordomus-reel.cs.md", "work/oscilla.cs.md", "work/prismatic-majordomus.cs.md", "work/prismatic.cs.md", "work/sonic-playground.cs.md", "work/the-psycho.cs.md", "work/u-tygra.cs.md", "work/vomaste-cz.cs.md"]
+pages = ["about.cs.md", "projects/data.cs.md", "projects/learning.cs.md", "projects/libraries.cs.md", "projects/media.cs.md", "projects/science.cs.md", "projects/systems.cs.md", "projects/tools.cs.md", "projects/web.cs.md", "work/algoglyph.cs.md", "work/astronomists.cs.md", "work/bubbler.cs.md", "work/catharsis-as-a-service.cs.md", "work/crisis-map.cs.md", "work/data-atlas.cs.md", "work/dispatcher.cs.md", "work/gists-search.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/korczis-github-io.cs.md", "work/majordomus-reel.cs.md", "work/oscilla.cs.md", "work/prismatic-majordomus.cs.md", "work/prismatic.cs.md", "work/sonic-playground.cs.md", "work/the-psycho.cs.md", "work/u-tygra.cs.md", "work/vomaste-cz.cs.md", "_index.cs.md"]
 related = ["repository", "open-source", "html", "commit", "shell", "github-pages", "css", "elixir"]
 og_title = "JavaScript: slovník"
 og_image = "og/cs-glossary-javascript.png"
 keywords = ["JavaScript", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,3 +40,14 @@ span = 3
 height = "md"
 tone = "night"
 +++
+JavaScript jsem psal v 56 veřejných repozitářích, od roku 2013 do 2026; v 44 z nich je hlavním jazykem.
+
+K čemu to sloužilo: [Data a GIS](@/projects/data.cs.md) (21), [Nástroje](@/projects/tools.cs.md) (16), [Web](@/projects/web.cs.md) (5) a [Média a umění](@/projects/media.cs.md) (4).
+
+Naposledy: [algoglyph](@/work/algoglyph.cs.md): Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem; [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat; [korczis.github.io](@/work/korczis-github-io.cs.md).
+
+14 z těchto projektů běží jako živé weby.
+
+Používal jsem ho také v klientské práci pod dohodami o mlčenlivosti. Role: Architekt, Vedoucí inženýr, Inženýr AI, Datový inženýr, Analytik šetření a Poradce. Co se řešilo: Agenti s LLM, Podpora rozhodování, Transformace s AI, Auditní stopa a OSINT šetření. Případy užití níže popisují princip a záměr této práce; žádný klient, osoba, datum ani číslo nejsou uvedeny.
+
+Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak JavaScript používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje JavaScript s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

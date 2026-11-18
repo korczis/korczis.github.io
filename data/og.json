@@ -98,8 +98,8 @@
    "png": "c1b27b2f405937fc"
   },
   "cs-glossary": {
-   "svg": "8e30f80dc803df15",
-   "png": "55273b9c089c8be9"
+   "svg": "2fdf66f388e56d95",
+   "png": "996e07226ec874e0"
   },
   "cs-glossary-ai-agent": {
    "svg": "396dac610d59844d",
@@ -113,6 +113,10 @@
    "svg": "4711e7136925b487",
    "png": "200c41946c19b536"
   },
+  "cs-glossary-apacheconf": {
+   "svg": "6852dd06bb2dbcda",
+   "png": "179746d5ec5d50ad"
+  },
   "cs-glossary-audit-trail": {
    "svg": "6d285c5887856d56",
    "png": "b597631eebc2a7fa"
@@ -124,6 +128,14 @@
   "cs-glossary-chart-js": {
    "svg": "45dd6ee87367dd78",
    "png": "7ef880103b702f35"
+  },
+  "cs-glossary-claude-api": {
+   "svg": "51e309e7e7a45fdd",
+   "png": "e875c1a29ef5ebf4"
+  },
+  "cs-glossary-cmake": {
+   "svg": "5452958fee0c4047",
+   "png": "c9a7baa4dfe7d5b8"
   },
   "cs-glossary-commit": {
    "svg": "53cf4d95857fb8a3",
@@ -169,6 +181,10 @@
    "svg": "6ab0511d6820f254",
    "png": "88a0cd8e1b247ea9"
   },
+  "cs-glossary-eex": {
+   "svg": "8a38c6c1ffb6a976",
+   "png": "febcda8eb2e86101"
+  },
   "cs-glossary-elixir": {
    "svg": "21f8a66857699820",
    "png": "f1253c42533606cb"
@@ -176,6 +192,10 @@
   "cs-glossary-erlang": {
    "svg": "f3ffd962e8778ce8",
    "png": "158ed754e0008e49"
+  },
+  "cs-glossary-fastapi": {
+   "svg": "0c8d12d0117a9376",
+   "png": "082fef2580d788df"
   },
   "cs-glossary-flowbite-pro": {
    "svg": "1d48ff5ab89f4cd1",
@@ -192,6 +212,10 @@
   "cs-glossary-gis": {
    "svg": "da5564c2ce6c5086",
    "png": "ef3acde2cffb8aa4"
+  },
+  "cs-glossary-github-actions": {
+   "svg": "3dbfa45f91282ef2",
+   "png": "f208920801ff99b3"
   },
   "cs-glossary-github-pages": {
    "svg": "0f72a422c1eb5e4c",
@@ -229,13 +253,25 @@
    "svg": "8a59755c8b654db2",
    "png": "43a43fa82633b000"
   },
+  "cs-glossary-just": {
+   "svg": "078b5aa6b97caea2",
+   "png": "1f5b2618d6a86647"
+  },
   "cs-glossary-knowledge-graph": {
    "svg": "d0b4f23e4fa4a176",
    "png": "3540a24dbea51cd2"
   },
+  "cs-glossary-kubernetes": {
+   "svg": "2fbaa5ee85b687e3",
+   "png": "462f549aa8a40982"
+  },
   "cs-glossary-majordomus": {
    "svg": "383b8d5bbd0733bf",
    "png": "17e1e4f90d579474"
+  },
+  "cs-glossary-makefile": {
+   "svg": "20aa04dec33a4632",
+   "png": "28268c2cd280dea8"
   },
   "cs-glossary-market-intelligence": {
    "svg": "b5d3dde142997a0b",
@@ -248,6 +284,10 @@
   "cs-glossary-mergers-and-acquisitions": {
    "svg": "0da888c3c2a82e21",
    "png": "ce473b5d79fd0d2e"
+  },
+  "cs-glossary-mermaid": {
+   "svg": "bdf00134cd39df69",
+   "png": "573c36eec2783557"
   },
   "cs-glossary-mirror": {
    "svg": "bde1cd1fd6ff1b08",
@@ -265,9 +305,17 @@
    "svg": "bbc9066733defe81",
    "png": "cce95841ed88cad9"
   },
+  "cs-glossary-openai-api": {
+   "svg": "ce2a415142ff34e4",
+   "png": "93f904d9f09e1501"
+  },
   "cs-glossary-openapi": {
    "svg": "41ab477ac2aac5a0",
    "png": "5c64b8d4dda9df20"
+  },
+  "cs-glossary-openscad": {
+   "svg": "68b30cb78fb4a0c3",
+   "png": "52e80adeaf18e5f0"
   },
   "cs-glossary-orchestration": {
    "svg": "dca0813d4850c6d5",
@@ -281,6 +329,14 @@
    "svg": "758f3149873afd1c",
    "png": "6726804c3a6e6df9"
   },
+  "cs-glossary-playwright": {
+   "svg": "7b0309c861f6408f",
+   "png": "905d9bc120f21708"
+  },
+  "cs-glossary-plpgsql": {
+   "svg": "4774418c3dc34104",
+   "png": "d4a37f88ff68c295"
+  },
   "cs-glossary-postgis": {
    "svg": "ca4a8128db783013",
    "png": "0bb04c7446078925"
@@ -289,9 +345,21 @@
    "svg": "00c9121b5c455bc4",
    "png": "efb025aac4b135d9"
   },
+  "cs-glossary-pydantic": {
+   "svg": "979d8e3c0ef803c4",
+   "png": "b3e0dae8f056baa0"
+  },
   "cs-glossary-python": {
    "svg": "f5f28534f7e8d103",
    "png": "08afad73780d23f2"
+  },
+  "cs-glossary-r": {
+   "svg": "a81ef66f66bdffea",
+   "png": "1543c87125c45f59"
+  },
+  "cs-glossary-react": {
+   "svg": "5b291067060578cd",
+   "png": "0d28677e6cf44128"
   },
   "cs-glossary-record-linkage": {
    "svg": "52a18aa8237cf3ce",
@@ -313,9 +381,17 @@
    "svg": "91b152c2df3f7e7b",
    "png": "2395875f3ddb4538"
   },
+  "cs-glossary-scss": {
+   "svg": "f22d490bc144116d",
+   "png": "e4804e243b67f8fa"
+  },
   "cs-glossary-shell": {
    "svg": "ad812298eea4c354",
    "png": "da7c404ed8678ae6"
+  },
+  "cs-glossary-squirrel": {
+   "svg": "69ddf2545e2b9e07",
+   "png": "7867e0787a16675b"
   },
   "cs-glossary-static-site-generator": {
    "svg": "acf565478a33f829",
@@ -328,6 +404,14 @@
   "cs-glossary-tailwind-css": {
    "svg": "91184c9a92d0f7b2",
    "png": "9f12dc568171001f"
+  },
+  "cs-glossary-tesseract": {
+   "svg": "2f4f009380330101",
+   "png": "09680b763dbab23b"
+  },
+  "cs-glossary-tex": {
+   "svg": "ef50963b82911a7a",
+   "png": "bbbc9127887325d2"
   },
   "cs-glossary-typescript": {
    "svg": "0336c8b918afb114",
@@ -344,6 +428,10 @@
   "cs-glossary-web-audio": {
    "svg": "ba384bd6504679b1",
    "png": "725cffd07e6c3725"
+  },
+  "cs-glossary-xslt": {
+   "svg": "480d87c8506b1f54",
+   "png": "d6d9c5c1ee10723b"
   },
   "cs-glossary-zola": {
    "svg": "ca3a10adb72239bb",
@@ -550,8 +638,8 @@
    "png": "0fa59d0c2a5cbac3"
   },
   "glossary": {
-   "svg": "07ec4fa220015373",
-   "png": "cdf51dceb7cca7b1"
+   "svg": "a97251d0866d03e1",
+   "png": "232123d4db2297ad"
   },
   "glossary-ai-agent": {
    "svg": "15b8c1052c5bd097",
@@ -565,6 +653,10 @@
    "svg": "f3a333798c6c79c5",
    "png": "80b6a7dfed4db433"
   },
+  "glossary-apacheconf": {
+   "svg": "3cbca97edfebb498",
+   "png": "f2355a4f0b72ed76"
+  },
   "glossary-audit-trail": {
    "svg": "dfd9f07c65aec1c6",
    "png": "6385241c7fabcd9d"
@@ -576,6 +668,14 @@
   "glossary-chart-js": {
    "svg": "2e56274d242dcdcc",
    "png": "3d33482d6fa352d4"
+  },
+  "glossary-claude-api": {
+   "svg": "5726ddcc953f27a6",
+   "png": "c484300949bb8d12"
+  },
+  "glossary-cmake": {
+   "svg": "8c2d1d86673e7a5b",
+   "png": "e1d26e85e17d526a"
   },
   "glossary-commit": {
    "svg": "d141a6218967c7e9",
@@ -621,6 +721,10 @@
    "svg": "63e33102f4fe24b2",
    "png": "e73abc5e28629a83"
   },
+  "glossary-eex": {
+   "svg": "12be1cefa8913cd3",
+   "png": "2e9f5ce66729bcbc"
+  },
   "glossary-elixir": {
    "svg": "3145aefc5d6db3d7",
    "png": "e298b1140a4c5c2d"
@@ -628,6 +732,10 @@
   "glossary-erlang": {
    "svg": "1a50c2d95506881e",
    "png": "401d68d107b6c216"
+  },
+  "glossary-fastapi": {
+   "svg": "6a1b56b9c6fb79a9",
+   "png": "3e252060b00dccf5"
   },
   "glossary-flowbite-pro": {
    "svg": "5697bdf13ddccea1",
@@ -644,6 +752,10 @@
   "glossary-gis": {
    "svg": "e02b52a68d17e6e7",
    "png": "38edd78ffda7fb08"
+  },
+  "glossary-github-actions": {
+   "svg": "791fc625031fad28",
+   "png": "04ca8f44804d69e1"
   },
   "glossary-github-pages": {
    "svg": "05cb7de9e43e323c",
@@ -681,13 +793,25 @@
    "svg": "625835e703c79a83",
    "png": "33713ce624760677"
   },
+  "glossary-just": {
+   "svg": "bd9622a9f57fc5d6",
+   "png": "020570f4d8c40f06"
+  },
   "glossary-knowledge-graph": {
    "svg": "0565abb92c394f82",
    "png": "0c213a096b74275a"
   },
+  "glossary-kubernetes": {
+   "svg": "7a80cdd696f298b8",
+   "png": "8c878cca0602804e"
+  },
   "glossary-majordomus": {
    "svg": "3a9a3219475dce89",
    "png": "50a44fc7bf21353c"
+  },
+  "glossary-makefile": {
+   "svg": "b8c617a2724ea7e3",
+   "png": "5d51827bd3dd8e84"
   },
   "glossary-market-intelligence": {
    "svg": "b255f53e80db1b79",
@@ -700,6 +824,10 @@
   "glossary-mergers-and-acquisitions": {
    "svg": "5fafd75859d60ffd",
    "png": "bb1b5db09e0e591f"
+  },
+  "glossary-mermaid": {
+   "svg": "4478a348a65b22d8",
+   "png": "99ca5f1d006b157d"
   },
   "glossary-mirror": {
    "svg": "80409a6a3c0b3236",
@@ -717,9 +845,17 @@
    "svg": "36dfebc69c5992f5",
    "png": "905cf47a4c2a2080"
   },
+  "glossary-openai-api": {
+   "svg": "f72d1dfb2a1d05ae",
+   "png": "bf073f648946a07b"
+  },
   "glossary-openapi": {
    "svg": "11bb78b541d3a96d",
    "png": "4b8d53bb0f26b1a5"
+  },
+  "glossary-openscad": {
+   "svg": "f6c2d21d821b8c6a",
+   "png": "bcd0d08e78e0e44c"
   },
   "glossary-orchestration": {
    "svg": "1c41223b2660e49f",
@@ -733,6 +869,14 @@
    "svg": "9acfb4863689e947",
    "png": "e164fe408359989d"
   },
+  "glossary-playwright": {
+   "svg": "be456a684388f4d0",
+   "png": "f69caad6b47bc831"
+  },
+  "glossary-plpgsql": {
+   "svg": "c995db5831c6cc69",
+   "png": "6e8bfcf257dd0fec"
+  },
   "glossary-postgis": {
    "svg": "dff49eb873919502",
    "png": "ef54879f1a93e1d5"
@@ -741,9 +885,21 @@
    "svg": "8a1bc6ae6d2d6278",
    "png": "eb46541ebd074f24"
   },
+  "glossary-pydantic": {
+   "svg": "e16254e5b2ae2777",
+   "png": "5eb0630a02074340"
+  },
   "glossary-python": {
    "svg": "40cb851aaee820d2",
    "png": "f9a989af1f60c710"
+  },
+  "glossary-r": {
+   "svg": "6184941c9b3239cb",
+   "png": "498a2eaa5770512e"
+  },
+  "glossary-react": {
+   "svg": "73a145a198c8da95",
+   "png": "4eb83bde68515196"
   },
   "glossary-record-linkage": {
    "svg": "b3ba78dcd95256b2",
@@ -765,9 +921,17 @@
    "svg": "161013cb2c84b2fa",
    "png": "65ce2ae5f7f29bfc"
   },
+  "glossary-scss": {
+   "svg": "0b35be2c6e096299",
+   "png": "6e351ac1784d82ea"
+  },
   "glossary-shell": {
    "svg": "9582c43a378aaacf",
    "png": "ec1abd39b60c23ab"
+  },
+  "glossary-squirrel": {
+   "svg": "3c5aa05b4d379bc3",
+   "png": "44dc3d43395dce53"
   },
   "glossary-static-site-generator": {
    "svg": "35fce98f3be395b6",
@@ -780,6 +944,14 @@
   "glossary-tailwind-css": {
    "svg": "a8f71eb0cfd25063",
    "png": "9aa0eaf9fd9adfa5"
+  },
+  "glossary-tesseract": {
+   "svg": "f162aff572aa0a75",
+   "png": "50a0f982fffcd3dd"
+  },
+  "glossary-tex": {
+   "svg": "5b01dadd7d9fd00d",
+   "png": "b2f1aa5e3488caf8"
   },
   "glossary-typescript": {
    "svg": "2990580caa048995",
@@ -796,6 +968,10 @@
   "glossary-web-audio": {
    "svg": "05c48ca1f660498f",
    "png": "b294909a87db9eef"
+  },
+  "glossary-xslt": {
+   "svg": "9d632d62cbd33a1d",
+   "png": "113bc6d25a732216"
   },
   "glossary-zola": {
    "svg": "34b33a2bee301404",

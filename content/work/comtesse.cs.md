@@ -15,7 +15,7 @@ og_title = "comtesse: Nástroje"
 og_image = "og/cs-work-comtesse.png"
 schema = "project"
 keywords = ["comtesse", "Nástroje", "Just", "Shell", "Rust", "Tomáš Korčák"]
-terms = ["shell", "rust", "open-source", "repository", "commit"]
+terms = ["just", "shell", "rust", "mermaid", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -26,7 +26,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**comtesse** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce Just (36 %), dále [Shell](@/glossary/shell.cs.md), [Rust](@/glossary/rust.cs.md) a Mermaid.
+**comtesse** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [Just](@/glossary/just.cs.md) (36 %), dále [Shell](@/glossary/shell.cs.md), [Rust](@/glossary/rust.cs.md) a [Mermaid](@/glossary/mermaid.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 27. srpna 2025; poslední [commit](@/glossary/commit.cs.md) je z 28. srpna 2025. Zní „docs: add src/comtesse-rs specific README.md“. Patří tak mezi projekty aktivní za posledních 24 měsíců.
 

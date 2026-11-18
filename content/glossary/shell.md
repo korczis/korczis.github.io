@@ -3,7 +3,7 @@
 title = "Shell"
 description = "Scripts for the Unix command line (bash, zsh), the glue that installs, builds and deploys."
 template = "term.html"
-weight = 16
+weight = 26
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -16,11 +16,20 @@ kind = "language"
 definition = "Scripts for the Unix command line (bash, zsh), the glue that installs, builds and deploys."
 aliases = []
 reference = { title = "GNU Bash manual", url = "https://www.gnu.org/software/bash/manual/" }
-pages = ["projects/data.md", "projects/learning.md", "projects/systems.md", "projects/tools.md", "work/algoglyph.md", "work/astronomists.md", "work/catharsis-as-a-service.md", "work/comtesse.md", "work/corvidae.md", "work/data-atlas.md", "work/el-magico-cache.md", "work/gists-search.md", "work/kompendium-epistemicke-anihilace.md", "work/korczis-github-io.md", "work/majordomus-reel.md", "work/openttd-prismatic-bridge.md", "work/oscilla.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/prismatic-majordomus.md", "work/prismatic.md", "work/sig.md", "work/simple-geocoder.md", "work/sonic-playground.md", "work/vomaste-cz.md"]
+pages = ["projects/data.md", "projects/learning.md", "projects/systems.md", "projects/tools.md", "work/algoglyph.md", "work/astronomists.md", "work/catharsis-as-a-service.md", "work/comtesse.md", "work/corvidae.md", "work/data-atlas.md", "work/el-magico-cache.md", "work/gists-search.md", "work/kompendium-epistemicke-anihilace.md", "work/korczis-github-io.md", "work/majordomus-reel.md", "work/openttd-prismatic-bridge.md", "work/oscilla.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/prismatic-majordomus.md", "work/prismatic.md", "work/sig.md", "work/simple-geocoder.md", "work/sonic-playground.md", "work/vomaste-cz.md", "_index.md"]
 related = ["repository", "open-source", "commit", "html", "javascript", "python", "github-pages", "elixir"]
 og_title = "Shell: glossary"
 og_image = "og/glossary-shell.png"
 keywords = ["Shell", "Programming language", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,3 +40,14 @@ span = 3
 height = "md"
 tone = "night"
 +++
+I have written Shell in 30 public repositories, from 2013 to 2026; in 13 of them it is the main language.
+
+What it was for: [Tools](@/projects/tools.md) (10), [Systems and infrastructure](@/projects/systems.md) (7), [Media and art](@/projects/media.md) (4) and [AI engineering](@/projects/ai.md) (2).
+
+Most recently: [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore; [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus; [Majordomus reel](@/work/majordomus-reel.md): Voice, frames, music and sound, all generated and versioned like software.
+
+9 of these projects run as live sites.
+
+I also used it in client work under confidentiality agreements. Roles: Architect, Lead engineer, AI engineer and Data engineer. What was solved: LLM agents, Decision support, AI transformation and Audit trail. The use cases below give the principle and the intent of that work; no client, person, date or number is named.
+
+How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses Shell: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links Shell to the repositories and to the other languages and technologies they use together.

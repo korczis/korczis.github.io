@@ -3,7 +3,7 @@
 title = "Swift"
 description = "Apple's language for iOS and macOS applications. A term of the glossary."
 template = "term.html"
-weight = 17
+weight = 28
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -23,6 +23,15 @@ og_image = "og/glossary-swift.png"
 keywords = ["Swift", "Programming language", "Glossary", "Tomas Korcak"]
 
 [[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
+
+[[extra.viz]]
 kind = "atlas"
 source = "glossary.terms"
 title = "viz_atlas_term_title"
@@ -31,3 +40,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
+I have written Swift in 3 public repositories, from 2018 to 2021; in 3 of them it is the main language.
+
+What it was for: [Knowledge](@/projects/knowledge.md) (2) and [Tools](@/projects/tools.md) (1).
+
+Most recently: [ReadingPhoneNumbersInRealTime](https://github.com/korczis/ReadingPhoneNumbersInRealTime); [MinervaEye](https://github.com/korczis/MinervaEye): iOS application for book management; [bc-apple](https://github.com/korczis/bc-apple): BlockCollider Apple Apps.
+
+How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses Swift: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links Swift to the repositories and to the other languages and technologies they use together.

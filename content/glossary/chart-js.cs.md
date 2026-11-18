@@ -3,7 +3,7 @@
 title = "Chart.js"
 description = "Lehká knihovna pro běžné grafy (sloupce, čáry, prstence) na plátně HTML."
 template = "term.html"
-weight = 21
+weight = 34
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -31,3 +31,4 @@ span = 3
 height = "md"
 tone = "night"
 +++
+Žádný můj veřejný repozitář ani klientská zakázka Chart.js podle měřených dat nepoužívá; tato stránka pojem vysvětluje tam, kde ho web používá.

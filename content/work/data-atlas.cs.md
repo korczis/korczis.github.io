@@ -15,7 +15,7 @@ og_title = "Data Atlas: Prohledávatelný katalog zdrojů GIS a geodat."
 og_image = "og/cs-work-data-atlas.png"
 schema = "project"
 keywords = ["Data Atlas", "Data a GIS", "Python", "HTML", "JavaScript", "Tomáš Korčák"]
-terms = ["python", "html", "javascript", "shell", "gis", "github-pages", "repository", "commit", "open-source"]
+terms = ["python", "html", "javascript", "plpgsql", "just", "shell", "gis", "github-pages", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -26,7 +26,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**Data Atlas** je projekt z kategorie [Data a GIS](@/projects/data.cs.md). Jeho kód je napsaný hlavně v jazyce [Python](@/glossary/python.cs.md) (61,1 %), dále [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md) a PLpgSQL.
+**Data Atlas** je projekt z kategorie [Data a GIS](@/projects/data.cs.md). Jeho kód je napsaný hlavně v jazyce [Python](@/glossary/python.cs.md) (61,1 %), dále [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md) a [PLpgSQL](@/glossary/plpgsql.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 27. srpna 2026; poslední [commit](@/glossary/commit.cs.md) je z 16. listopadu 2026. Zní „Merge pull request \#4 from korczis/feature/flowbite-pro-ui“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 

@@ -15,7 +15,7 @@ og_title = "pdf_renderer: Nástroje"
 og_image = "og/cs-work-pdf-renderer.png"
 schema = "project"
 keywords = ["pdf_renderer", "Nástroje", "Python", "Dockerfile", "Makefile", "Tomáš Korčák"]
-terms = ["python", "dockerfile", "open-source", "repository", "commit"]
+terms = ["python", "dockerfile", "makefile", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -26,7 +26,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**pdf\_renderer** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [Python](@/glossary/python.cs.md) (94,2 %), dále [Dockerfile](@/glossary/dockerfile.cs.md) a Makefile.
+**pdf\_renderer** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [Python](@/glossary/python.cs.md) (94,2 %), dále [Dockerfile](@/glossary/dockerfile.cs.md) a [Makefile](@/glossary/makefile.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 24. března 2024; poslední [commit](@/glossary/commit.cs.md) je z 25. března 2024. Zní „Initial commit“. Patří tak mezi projekty aktivní za posledních 48 měsíců.
 

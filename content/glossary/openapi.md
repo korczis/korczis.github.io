@@ -3,7 +3,7 @@
 title = "OpenAPI"
 description = "A standard, language-neutral description of an HTTP interface: its paths, operations and data, readable by people and tools such as Swagger UI."
 template = "term.html"
-weight = 28
+weight = 46
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -31,3 +31,4 @@ span = 3
 height = "md"
 tone = "night"
 +++
+No public repository or client engagement of mine uses OpenAPI as the data measures it; this page explains the term where the site uses it.

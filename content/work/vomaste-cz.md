@@ -15,7 +15,7 @@ og_title = "vomaste.cz: Tools"
 og_image = "og/work-vomaste-cz.png"
 schema = "project"
 keywords = ["vomaste.cz", "Tools", "JavaScript", "HTML", "Shell", "Tomas Korcak"]
-terms = ["javascript", "html", "shell", "css", "open-source", "github-pages", "repository", "commit"]
+terms = ["javascript", "html", "shell", "css", "just", "open-source", "github-pages", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

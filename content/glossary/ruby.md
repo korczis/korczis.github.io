@@ -3,7 +3,7 @@
 title = "Ruby"
 description = "A dynamic, expressive language designed for programmer happiness; many of the older tools here are Ruby."
 template = "term.html"
-weight = 14
+weight = 23
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -23,6 +23,15 @@ og_image = "og/glossary-ruby.png"
 keywords = ["Ruby", "Programming language", "Glossary", "Tomas Korcak"]
 
 [[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
+
+[[extra.viz]]
 kind = "atlas"
 source = "glossary.terms"
 title = "viz_atlas_term_title"
@@ -31,3 +40,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
+I have written Ruby in 20 public repositories, from 2012 to 2017; in 20 of them it is the main language.
+
+What it was for: [Data and GIS](@/projects/data.md) (7), [Tools](@/projects/tools.md) (7), [Learning and experiments](@/projects/learning.md) (3) and [Systems and infrastructure](@/projects/systems.md) (2).
+
+Most recently: [gdc-dumpator](https://github.com/korczis/gdc-dumpator); [zeman-ucet](https://github.com/korczis/zeman-ucet): Zpravy pro prijemce ze Zemanova transparentniho uctu na predvolebni kampan; [cluster](https://github.com/korczis/cluster): Run your own CoreOS/Kubernetes cluster.
+
+2 of these projects run as live sites.
+
+How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses Ruby: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links Ruby to the repositories and to the other languages and technologies they use together.

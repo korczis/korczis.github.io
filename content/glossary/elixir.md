@@ -3,7 +3,7 @@
 title = "Elixir"
 description = "A functional language on the Erlang virtual machine, built for concurrent, fault-tolerant systems."
 template = "term.html"
-weight = 6
+weight = 9
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -23,6 +23,15 @@ og_image = "og/glossary-elixir.png"
 keywords = ["Elixir", "Programming language", "Glossary", "Tomas Korcak"]
 
 [[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
+
+[[extra.viz]]
 kind = "atlas"
 source = "glossary.terms"
 title = "viz_atlas_term_title"
@@ -31,3 +40,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
+I have written Elixir in 32 public repositories, from 2016 to 2026; in 27 of them it is the main language.
+
+What it was for: [Tools](@/projects/tools.md) (10), [Data and GIS](@/projects/data.md) (6), [Learning and experiments](@/projects/learning.md) (3) and [Libraries](@/projects/libraries.md) (3).
+
+Most recently: [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore; [Sonic Playground](@/work/sonic-playground.md): A hand-picked music blog built with Phoenix and Elixir on the Kita theme; [Crisis map](@/work/crisis-map.md): Reports geocoded through a local Nominatim, stored as PostGIS geography and served from one capability registry: LiveView, REST, OpenAPI, MCP and CLI.
+
+3 of these projects run as live sites.
+
+How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses Elixir: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links Elixir to the repositories and to the other languages and technologies they use together.

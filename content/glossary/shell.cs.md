@@ -3,7 +3,7 @@
 title = "Shell"
 description = "Skripty pro unixovou příkazovou řádku (bash, zsh), lepidlo, které instaluje, staví a nasazuje."
 template = "term.html"
-weight = 16
+weight = 26
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -16,11 +16,20 @@ kind = "language"
 definition = "Skripty pro unixovou příkazovou řádku (bash, zsh), lepidlo, které instaluje, staví a nasazuje."
 aliases = []
 reference = { title = "GNU Bash manual", url = "https://www.gnu.org/software/bash/manual/" }
-pages = ["projects/data.cs.md", "projects/learning.cs.md", "projects/systems.cs.md", "projects/tools.cs.md", "work/algoglyph.cs.md", "work/astronomists.cs.md", "work/catharsis-as-a-service.cs.md", "work/comtesse.cs.md", "work/corvidae.cs.md", "work/data-atlas.cs.md", "work/el-magico-cache.cs.md", "work/gists-search.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/korczis-github-io.cs.md", "work/majordomus-reel.cs.md", "work/openttd-prismatic-bridge.cs.md", "work/oscilla.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/prismatic-majordomus.cs.md", "work/prismatic.cs.md", "work/sig.cs.md", "work/simple-geocoder.cs.md", "work/sonic-playground.cs.md", "work/vomaste-cz.cs.md"]
+pages = ["projects/data.cs.md", "projects/learning.cs.md", "projects/systems.cs.md", "projects/tools.cs.md", "work/algoglyph.cs.md", "work/astronomists.cs.md", "work/catharsis-as-a-service.cs.md", "work/comtesse.cs.md", "work/corvidae.cs.md", "work/data-atlas.cs.md", "work/el-magico-cache.cs.md", "work/gists-search.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/korczis-github-io.cs.md", "work/majordomus-reel.cs.md", "work/openttd-prismatic-bridge.cs.md", "work/oscilla.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/prismatic-majordomus.cs.md", "work/prismatic.cs.md", "work/sig.cs.md", "work/simple-geocoder.cs.md", "work/sonic-playground.cs.md", "work/vomaste-cz.cs.md", "_index.cs.md"]
 related = ["repository", "open-source", "commit", "html", "javascript", "python", "github-pages", "elixir"]
 og_title = "Shell: slovník"
 og_image = "og/cs-glossary-shell.png"
 keywords = ["Shell", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,3 +40,14 @@ span = 3
 height = "md"
 tone = "night"
 +++
+Shell jsem psal v 30 veřejných repozitářích, od roku 2013 do 2026; v 13 z nich je hlavním jazykem.
+
+K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (10), [Systémy a infrastruktura](@/projects/systems.cs.md) (7), [Média a umění](@/projects/media.cs.md) (4) a [Inženýrství AI](@/projects/ai.cs.md) (2).
+
+Naposledy: [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat; [korczis.github.io](@/work/korczis-github-io.cs.md); [Majordomus reel](@/work/majordomus-reel.cs.md): Hlas, snímky, hudba i zvuk, vše generované a verzované jako software.
+
+9 z těchto projektů běží jako živé weby.
+
+Používal jsem ho také v klientské práci pod dohodami o mlčenlivosti. Role: Architekt, Vedoucí inženýr, Inženýr AI a Datový inženýr. Co se řešilo: Agenti s LLM, Podpora rozhodování, Transformace s AI a Auditní stopa. Případy užití níže popisují princip a záměr této práce; žádný klient, osoba, datum ani číslo nejsou uvedeny.
+
+Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak Shell používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje Shell s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

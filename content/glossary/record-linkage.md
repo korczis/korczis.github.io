@@ -3,7 +3,7 @@
 title = "Entity resolution"
 description = "Finding the records, across sources, that refer to the same company or person, by shared identifiers first and by similar names and addresses second."
 template = "term.html"
-weight = 42
+weight = 64
 
 [taxonomies]
 tags = ["Glossary", "Concept"]

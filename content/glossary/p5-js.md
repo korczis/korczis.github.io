@@ -3,7 +3,7 @@
 title = "p5.js"
 description = "A creative-coding library descended from Processing, for drawing and simulation in the browser."
 template = "term.html"
-weight = 29
+weight = 47
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -14,13 +14,22 @@ seo_title = "p5.js (technology)"
 term = "p5-js"
 kind = "technology"
 definition = "A creative-coding library descended from Processing, for drawing and simulation in the browser."
-aliases = []
+aliases = ["p5js"]
 reference = { title = "p5js.org", url = "https://p5js.org/" }
 pages = ["projects/science.md", "stack.md", "work/algoglyph.md"]
 related = ["alpine-js", "apache-echarts", "flowbite-pro", "data-visualisation", "github-pages", "javascript", "repository", "rust"]
 og_title = "p5.js: glossary"
 og_image = "og/glossary-p5-js.png"
 keywords = ["p5.js", "Technology", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,3 +40,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
+p5.js is part of 2 of my public repositories, from 2024 to 2026.
+
+What it was for: [Science and visualisation](@/projects/science.md) (1) and [Web](@/projects/web.md) (1).
+
+Most recently: [algoglyph](@/work/algoglyph.md): Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core; [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.
+
+1 of these projects runs as a live site.
+
+How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses p5.js: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links p5.js to the repositories and to the other languages and technologies they use together.

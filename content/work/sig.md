@@ -15,7 +15,7 @@ og_title = "sig: distributed cognitive framework in Elixir/OTP."
 og_image = "og/work-sig.png"
 schema = "project"
 keywords = ["sig", "AI engineering", "Elixir", "HTML+EEX", "Shell", "Tomas Korcak"]
-terms = ["elixir", "shell", "typescript", "ai-agent", "repository", "commit", "open-source"]
+terms = ["elixir", "eex", "shell", "typescript", "just", "ai-agent", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -26,7 +26,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**sig** is a project in [AI engineering](@/projects/ai.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (95.6 %), with HTML+EEX, [Shell](@/glossary/shell.md) and [TypeScript](@/glossary/typescript.md).
+**sig** is a project in [AI engineering](@/projects/ai.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (95.6 %), with [HTML+EEX](@/glossary/eex.md), [Shell](@/glossary/shell.md) and [TypeScript](@/glossary/typescript.md).
 
 The [repository](@/glossary/repository.md) was created in August 2025; its latest [commit](@/glossary/commit.md) is from 4 February 2026. It reads “feat(aiad): inject AIAD v1.0.0 infrastructure”. That places it among the projects active in the last 12 months.
 

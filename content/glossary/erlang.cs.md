@@ -3,7 +3,7 @@
 title = "Erlang"
 description = "Jazyk a běhové prostředí z telekomunikací, navržené pro systémy, které musí běžet, i když jejich části selhávají."
 template = "term.html"
-weight = 7
+weight = 10
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -17,10 +17,19 @@ definition = "Jazyk a běhové prostředí z telekomunikací, navržené pro sys
 aliases = []
 reference = { title = "erlang.org", url = "https://www.erlang.org/" }
 pages = ["projects/learning.cs.md"]
-related = ["c", "cpp", "csharp", "elixir", "haskell", "java", "javascript", "repository"]
+related = ["c", "cmake", "cpp", "csharp", "elixir", "haskell", "java", "javascript"]
 og_title = "Erlang: slovník"
 og_image = "og/cs-glossary-erlang.png"
 keywords = ["Erlang", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,3 +40,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
+Erlang jsem psal v 1 veřejném repozitáři, od roku 2014 do 2014; v 1 z nich je hlavním jazykem.
+
+K čemu to sloužilo: [Učení a experimenty](@/projects/learning.cs.md) (1).
+
+Naposledy: [skull-erlang](https://github.com/korczis/skull-erlang).
+
+Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak Erlang používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje Erlang s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.
