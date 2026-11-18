@@ -1,13 +1,13 @@
 +++
 title = "Tomáš Korčák"
-description = "Software, který svou práci dokládá: nástroje, které nutí AI agenty doložit výsledky, poctivé vědecké přístroje v prohlížeči a ověřitelné znalostní báze."
+description = "Tomáš Korčák, staff engineer pro infrastrukturu AI agentů, Elixir a Rust, otevřený remote rolím a kontraktům: software, který nutí AI agenty doložit práci."
 template = "index.html"
 
 [extra]
 article_title = "Jak číst tento web"
 terms = ["repository", "commit", "fork", "mirror", "data-visualisation", "d3", "front-matter", "zola", "static-site-generator", "flowbite-pro", "wcag", "json-ld", "open-graph"]
-seo_title = "Tomáš Korčák (korczis) · Software, který svou práci dokládá"
-og_title = "Software, který svou práci dokládá."
+seo_title = "Tomáš Korčák · Staff engineer, infrastruktura AI agentů (Elixir, Rust)"
+og_title = "Tomáš Korčák: staff engineer pro infrastrukturu AI agentů."
 og_description = "Nástroje, které nutí AI agenty doložit práci, poctivé přístroje v prohlížeči a znalosti, které si ověříte."
 og_image = "og/cs-home.png"
 schema = "home"
