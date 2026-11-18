@@ -62,6 +62,7 @@ export const GATES = [
   { id: 'viz-layer', name: 'Every visual goes through the component layer and is a maximizable simulator', run: ['node', 'scripts/check-viz-layer.mjs'], ci: true, rule: 'project.viz-component-layer' },
   { id: 'build', name: 'Build (internal links are errors)', run: ['npm', 'run', '--silent', 'build'], ci: true, rule: 'project.site-zola-pages' },
   { id: 'seo', name: 'SEO derived from front matter (titles, descriptions, OG, JSON-LD, sitemap)', run: ['node', 'scripts/check-seo.mjs'], ci: true, needs: 'build', rule: 'project.seo-derived' },
+  { id: 'work-pages', name: 'Every original repository has its own complete page (en, cs: SEO, OG, hreflang, JSON-LD on every forge)', run: ['node', 'scripts/check-work-pages.mjs'], ci: true, needs: 'build', rule: 'project.every-repository-page' },
   { id: 'nda-site', name: 'No denylisted name in the built site (NDA)', run: ['node', 'scripts/check-nda.mjs', '--site', 'public'], ci: true, needs: 'build' },
   { id: 'flowbite', name: 'Flowbite Pro fidelity', run: ['test/cases/10_fleet_flowbite_pro.sh'], ci: false, needs: 'flowbite-scanner',
     why: 'the scanner lives on the owner\'s machine; in CI majordomus doctor judges the licence', rule: 'project.ui-uses-flowbite-pro' },
@@ -88,6 +89,7 @@ const TOOLS = () => {
     ['majordomus', 'v1.0.1 (as CI)', 'the git hooks and the doctor gate (<https://majordomus.dev>)'],
     ['python3', 'any 3.x', '`npm run verify`: a free port and the static server for the browser audit'],
     ['rsvg-convert', 'librsvg', '`npm run og` / `npm run derive`: renders the Open Graph PNGs'],
+    ['pngquant', '3.x', '`npm run og` / `npm run derive`: quantises the Open Graph PNGs (32 colours, deterministic)'],
     ['gh, glab', 'authenticated', '`npm run data`, `index`, `recent`, `refresh`: measuring GitHub and GitLab'],
     ['Chromium headless shell', `playwright-core ${playwright}`, 'the browser audit: `npx playwright-core install chromium-headless-shell`'],
   ];

@@ -3,9 +3,9 @@
  "description": "The Majordomus layer of korczis/korczis.github.io: every object of .ai/ with its MCP resource URI",
  "source": "majordomus run objects.list, capabilities.list",
  "majordomus": "1.0.2",
- "tree": "2e3559703e8b7a63148b4687d6f8303a72274309c00cd8abca591ae4f7b343d3",
+ "tree": "9fecb4a030a468817ad0831e3467024bb34c8a26904e719e2030a61d4267212b",
  "counts": {
-  "objects": 139,
+  "objects": 140,
   "kinds": {
    "adr": 7,
    "context": 21,
@@ -15,14 +15,14 @@
    "policy": 1,
    "profile": 4,
    "prompt": 4,
-   "rule": 74,
+   "rule": 75,
    "scope": 1,
    "skill": 1,
    "taxonomy": 8
   },
-  "capabilities": 370,
+  "capabilities": 371,
   "mcp_tools": 215,
-  "mcp_resources": 196,
+  "mcp_resources": 197,
   "http_routes": 219
  },
  "objects": [
@@ -969,6 +969,14 @@
    "title": "Every number on the site is measured, dated and derived",
    "description": "Figures come from data/github.json written by scripts/fetch-github.mjs and are shown with their date; the curated catalogue is data/projects.toml; llms.txt is derived and checked.",
    "path": ".ai/repo/rules/project/data-measured.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/project.every-repository-page@1",
+   "kind": "rule",
+   "identity": "project.every-repository-page@1",
+   "title": "Every original repository on GitHub and GitLab has its own complete page, derived and gated",
+   "description": "The original repositories of data/index.json (both forges, merged) are the one set; each has a work page in every language with a title, description, SEO title, Open Graph card, canonical, hreflang and SoftwareSourceCode JSON-LD derived from measured facts, recent ones dated by period and the rest as honestly dated archive; the scheduled refresh re-derives them and a gate fails on any repository without a page or a page that is not complete.",
+   "path": ".ai/repo/rules/project/every-repository-page.v1.md"
   },
   {
    "uri": "majordomus://rule/project.everything-interlinked@1",
