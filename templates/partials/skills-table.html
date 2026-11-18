@@ -79,7 +79,7 @@
         <td class="{{ sk_tdn }}"><span class="{{ sk_lbl }}">{{ trans(key="skills_col_span", lang=lang) }}</span><span class="tabular">{% if y0 > 0 %}<time datetime="{{ y0 }}">{{ y0 }}</time>{% if y1 > y0 %}–<time datetime="{{ y1 }}">{{ y1 }}</time>{% endif %}{% endif %}</span></td>
         <td class="{{ sk_td }}"><span class="{{ sk_lbl }}">{{ trans(key="skills_col_evidence", lang=lang) }}</span><span>{% for e in l.evidence %}{% if loop.index <= 3 %}
           {%- set_global eu = e.url %}{% for p in sk_wsec.pages %}{% if p.extra.repo == e.name %}{% set_global eu = p.permalink %}{% endif %}{% endfor -%}
-          <a class="hover:underline" href="{{ eu }}">{{ e.name }}</a>{% if not loop.last and loop.index < 3 %}, {% endif %}{% endif %}{% endfor %}</span></td>
+          <a class="inline-block min-h-6 min-w-6 py-0.5 hover:underline" href="{{ eu }}">{{ e.name }}</a>{% if not loop.last and loop.index < 3 %}, {% endif %}{% endif %}{% endfor %}</span></td>
       </tr>
       {%- endif %}
       {%- endfor %}
@@ -100,7 +100,7 @@
         <td class="{{ sk_tdn }}"><span class="{{ sk_lbl }}">{{ trans(key="skills_col_span", lang=lang) }}</span><span class="tabular">{% if y0 > 0 %}<time datetime="{{ y0 }}">{{ y0 }}</time>{% if y1 > y0 %}–<time datetime="{{ y1 }}">{{ y1 }}</time>{% endif %}{% endif %}</span></td>
         <td class="{{ sk_td }}"><span class="{{ sk_lbl }}">{{ trans(key="skills_col_evidence", lang=lang) }}</span><span>{% for e in t.evidence %}
           {%- set_global eu = sk_base ~ "projects/?project=" ~ e.repo %}{% for p in sk_wsec.pages %}{% if p.extra.repo == e.repo %}{% set_global eu = p.permalink %}{% endif %}{% endfor -%}
-          <a class="hover:underline" href="{{ eu }}">{{ e.name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</span></td>
+          <a class="inline-block min-h-6 min-w-6 py-0.5 hover:underline" href="{{ eu }}">{{ e.name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</span></td>
       </tr>
       {%- endif %}
       {%- endfor %}
@@ -119,7 +119,7 @@
         <td class="{{ sk_td }}"><span class="{{ sk_lbl }}">{{ trans(key="skills_col_kind", lang=lang) }}</span>{{ <badge label={trans(key="skills_technologies", lang=lang)} tone="primary" /> }}</td>
         <td class="{{ sk_tdn }}"><span class="{{ sk_lbl }}">{{ trans(key="skills_col_count", lang=lang) }}</span><a class="tabular hover:underline" href="{{ sk_base }}#experience">{{ trans(key="skills_n_engagements", lang=lang) | replace(from="{n}", to=xn ~ "") }}</a></td>
         <td class="{{ sk_tdn }}"><span class="{{ sk_lbl }}">{{ trans(key="skills_col_span", lang=lang) }}</span><span class="tabular">{% if y0 > 0 %}<time datetime="{{ y0 }}">{{ y0 }}</time>{% if y1 > y0 %}–<time datetime="{{ y1 }}">{{ y1 }}</time>{% endif %}{% endif %}</span></td>
-        <td class="{{ sk_td }}"><span class="{{ sk_lbl }}">{{ trans(key="skills_col_evidence", lang=lang) }}</span><a class="hover:underline" href="{{ sk_base }}#experience">{{ trans(key="skills_client_work", lang=lang) }}</a></td>
+        <td class="{{ sk_td }}"><span class="{{ sk_lbl }}">{{ trans(key="skills_col_evidence", lang=lang) }}</span><a class="inline-block min-h-6 min-w-6 py-0.5 hover:underline" href="{{ sk_base }}#experience">{{ trans(key="skills_client_work", lang=lang) }}</a></td>
       </tr>
       {%- endif %}
       {%- endfor %}{% endif %}
@@ -139,7 +139,7 @@
         <td class="{{ sk_tdn }}"><span class="{{ sk_lbl }}">{{ trans(key="skills_col_span", lang=lang) }}</span><span class="tabular">{% if y0 > 0 %}<time datetime="{{ y0 }}">{{ y0 }}</time>{% if y1 > y0 %}–<time datetime="{{ y1 }}">{{ y1 }}</time>{% endif %}{% endif %}</span></td>
         <td class="{{ sk_td }}"><span class="{{ sk_lbl }}">{{ trans(key="skills_col_evidence", lang=lang) }}</span><span>{% if sk_xp.public_work[ckey] is defined %}{% for repo in sk_xp.public_work[ckey] %}{% if loop.index <= 3 %}
           {%- set_global eu = "" %}{% for p in sk_wsec.pages %}{% if p.extra.repo == repo %}{% set_global eu = p.permalink %}{% endif %}{% endfor -%}
-          {%- if eu %}<a class="hover:underline" href="{{ eu }}">{{ repo }}</a>{% else %}{{ repo }}{% endif %}{% if not loop.last and loop.index < 3 %}, {% endif %}{% endif %}{% endfor %}{% endif %}</span></td>
+          {%- if eu %}<a class="inline-block min-h-6 min-w-6 py-0.5 hover:underline" href="{{ eu }}">{{ repo }}</a>{% else %}{{ repo }}{% endif %}{% if not loop.last and loop.index < 3 %}, {% endif %}{% endif %}{% endfor %}{% endif %}</span></td>
       </tr>
       {%- endif %}
       {%- endfor %}{% endif %}
