@@ -178,6 +178,7 @@ from it:
 | Experience data matches its schema | `node scripts/check-experience.mjs` | check, verify, CI |  |
 | Category pages are current | `node scripts/build-categories.mjs --check` | check, verify, CI | `project.data-measured` |
 | Work pages are current | `node scripts/build-work.mjs --check` | check, verify, CI | `project.data-measured` |
+| Service and skill pages are current | `node scripts/build-services.mjs --check` | check, verify, CI | `project.services-derived` |
 | Glossary pages are current | `node scripts/build-glossary.mjs --check` | check, verify, CI | `project.pages-are-articles` |
 | Every page is an article with glossary terms; every term is used | `node scripts/check-glossary.mjs` | check, verify, CI | `project.pages-are-articles` |
 | llms.txt is current | `node scripts/build-llms.mjs --check` | check, verify, CI | `project.data-measured` |

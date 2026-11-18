@@ -3,7 +3,7 @@
 title = "Ztotožnění subjektů"
 description = "Hledání záznamů napříč zdroji, které se týkají téže firmy nebo osoby, nejdřív podle společných identifikátorů, pak podle podobných jmen a adres."
 template = "term.html"
-weight = 64
+weight = 75
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]
@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Hledání záznamů napříč zdroji, které se týkají téže firmy nebo osoby, nejdřív podle společných identifikátorů, pak podle podobných jmen a adres."
 aliases = ["record linkage"]
 reference = { title = "Record linkage (Wikipedia)", url = "https://en.wikipedia.org/wiki/Record_linkage" }
-pages = ["projects/security.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md"]
-related = ["audit-trail", "data-integration", "decision-support-system", "due-diligence", "html", "information-extraction", "insolvency", "knowledge-graph"]
+pages = ["projects/security.cs.md", "services/_index.cs.md", "services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "services/digital-investigation.cs.md", "services/due-diligence.cs.md", "skills/_index.cs.md", "skills/entity-resolution.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md"]
+related = ["html", "alpine-js", "dockerfile", "fastapi", "flowbite-pro", "javascript", "python", "risk-assessment"]
 og_title = "Ztotožnění subjektů: slovník"
 og_image = "og/cs-glossary-record-linkage.png"
 keywords = ["Ztotožnění subjektů", "Entity resolution", "Koncept", "Slovník", "Tomáš Korčák"]

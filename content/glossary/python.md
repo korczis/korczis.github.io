@@ -3,7 +3,7 @@
 title = "Python"
 description = "A general-purpose language valued for readability, common in data work and scripting."
 template = "term.html"
-weight = 21
+weight = 22
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -16,8 +16,8 @@ kind = "language"
 definition = "A general-purpose language valued for readability, common in data work and scripting."
 aliases = []
 reference = { title = "python.org", url = "https://www.python.org/about/" }
-pages = ["projects/data.md", "projects/media.md", "projects/science.md", "projects/tools.md", "work/astronomists.md", "work/catharsis-as-a-service.md", "work/data-atlas.md", "work/gists-search.md", "work/kompendium-epistemicke-anihilace.md", "work/kuzu-ex.md", "work/majordomus-reel.md", "work/openttd-prismatic-bridge.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/pdf-renderer.md", "work/prismatic-majordomus.md", "work/prismatic.md", "work/sonic-playground.md", "_index.md"]
-related = ["repository", "open-source", "commit", "html", "javascript", "shell", "github-pages", "elixir"]
+pages = ["projects/data.md", "projects/media.md", "projects/science.md", "projects/tools.md", "services/_index.md", "services/ai-engineering-governance.md", "services/compliance-screening.md", "services/decision-support-ai.md", "services/digital-forensics.md", "services/digital-investigation.md", "services/due-diligence.md", "services/interactive-data-products.md", "services/m-and-a.md", "services/reputation-intelligence.md", "skills/_index.md", "skills/audit-trail.md", "skills/decision-support.md", "skills/document-extraction.md", "skills/due-diligence.md", "skills/entity-resolution.md", "skills/geospatial-analysis.md", "skills/interactive-visualisation.md", "skills/knowledge-graph.md", "skills/llm-agents.md", "skills/m-and-a-screening.md", "skills/narrative-analysis.md", "skills/osint-investigation.md", "skills/policy-as-code.md", "work/astronomists.md", "work/catharsis-as-a-service.md", "work/data-atlas.md", "work/gists-search.md", "work/kompendium-epistemicke-anihilace.md", "work/kuzu-ex.md", "work/majordomus-reel.md", "work/openttd-prismatic-bridge.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/pdf-renderer.md", "work/prismatic-majordomus.md", "work/prismatic.md", "work/sonic-playground.md", "_index.md"]
+related = ["html", "javascript", "shell", "alpine-js", "elixir", "flowbite-pro", "claude-api", "css"]
 og_title = "Python: glossary"
 og_image = "og/glossary-python.png"
 keywords = ["Python", "Programming language", "Glossary", "Tomas Korcak"]

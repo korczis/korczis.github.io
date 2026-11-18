@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{#- The services (scripts/build-services.mjs): every service as a card that is a link as a whole,
+    with its promise, the skills it draws on and its top technologies; then the graph of services,
+    skills and technologies. Words from data/services.toml, evidence from data/services.json. #}
+{% block content %}
+{%- set sfx = "" %}{% if lang is defined and lang != config.default_language %}{% set sfx = "_" ~ lang %}{% endif -%}
+{%- set sv = load_data(path="data/services.toml") -%}
+{%- set sj = load_data(path="data/services.json") -%}
+{%- set xr = load_data(path="data/experience-rules.toml") -%}
+{{ <page_header title={section.title} lead={section.description} lang={lang} /> }}
+
+<div class="space-y-4 px-4 pt-6">
+  <ul class="grid grid-cols-1 gap-4 md:grid-cols-2 2xl:grid-cols-3">
+    {%- for s in sv.services %}{% set se = sj.services[s.id] %}
+    <li class="flex">
+      <a href="{{ get_url(path='@/services/' ~ s.id ~ '.md', lang=lang) }}" class="group flex w-full flex-col rounded-lg bg-white p-5 shadow transition hover:-translate-y-0.5 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-primary-300 motion-reduce:transition-none motion-reduce:hover:translate-y-0 dark:bg-gray-800 dark:focus:ring-primary-800 sm:p-6">
+        <span class="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary-100 text-primary-700 dark:bg-primary-900 dark:text-primary-300">{{ <icon name={s.icon} class="h-6 w-6" /> }}</span>
+        <h2 class="mt-4 text-xl font-bold text-gray-900 group-hover:text-primary-700 dark:text-white dark:group-hover:text-primary-300">{{ s["name" ~ sfx] }}</h2>
+        <p class="mt-2 text-gray-600 dark:text-gray-400">{{ s["promise" ~ sfx] }}</p>
+        <ul class="mt-4 flex flex-wrap gap-1.5" aria-label="{{ trans(key='service_skills', lang=lang) }}">
+          {%- for k in s.skills %}{% if loop.index <= 4 %}<li class="rounded-md bg-primary-50 px-2 py-0.5 text-xs font-medium text-primary-800 dark:bg-primary-900 dark:text-primary-300">{{ xr.capabilities[k]["name" ~ sfx] }}</li>{% endif %}{% endfor %}
+          {%- if s.skills | length > 4 %}<li class="rounded-md bg-gray-100 px-2 py-0.5 text-xs font-medium text-gray-700 dark:bg-gray-700 dark:text-gray-300">+{{ s.skills | length - 4 }}</li>{% endif %}
+        </ul>
+        {%- if se.stack | length > 0 %}
+        <p class="mt-3 text-xs text-gray-600 dark:text-gray-400">{% for x in se.stack %}{% if loop.index > 1 %} · {% endif %}{{ x.name }}{% endfor %}</p>
+        {%- endif %}
+        <span class="mt-auto inline-flex items-center pt-4 text-sm font-medium text-primary-700 dark:text-primary-400">{{ trans(key="service_open", lang=lang) }}{{ <icon name="arrow-right" class="ml-1.5 h-4 w-4 transition group-hover:translate-x-0.5 motion-reduce:transition-none" /> }}</span>
+      </a>
+    </li>
+    {%- endfor %}
+  </ul>
+  {%- include "partials/viz-grid.html" %}
+</div>
+{% endblock content %}

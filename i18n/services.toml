@@ -1,0 +1,215 @@
+# The services and skills section (scripts/build-services.mjs, templates/services.html, service.html,
+# skills.html, skill.html). Client work appears as use cases only: sector, role and what was solved,
+# never a name, a date or a number (ADR 0006). Keys with __one, __few, __other are chosen for {n}.
+
+[nav_services]
+en = "Services"
+cs = "Služby"
+[hint_services]
+en = "What I offer: due diligence, M&A, investigation, forensics, reputation"
+cs = "Co nabízím: due diligence, M&A, vyšetřování, forenzní analýza, reputace"
+[nav_skills]
+en = "Skills"
+cs = "Dovednosti"
+[hint_skills]
+en = "Every skill the services draw on, with its evidence"
+cs = "Každá dovednost, ze které služby čerpají, s doklady"
+
+[services_title]
+en = "Services"
+cs = "Služby"
+[services_lead]
+en = "Due diligence, M&A, digital investigation, forensics and reputation: the problem each service solves, its method, its skills and the evidence."
+cs = "Due diligence, M&A, digitální vyšetřování, forenzní analýza a reputace: problém, který každá služba řeší, postup, dovednosti a doklady."
+[services_og]
+en = "Services: due diligence, M&A, investigation, forensics"
+cs = "Služby: due diligence, M&A, vyšetřování, forenzní analýza"
+[skills_title]
+en = "Skills"
+cs = "Dovednosti"
+[skills_lead]
+en = "Every skill my services draw on, defined, with the public work that shows it, the client use cases and the technologies behind it."
+cs = "Každá dovednost, ze které moje služby čerpají, s definicí, veřejnou prací, která ji dokládá, případy užití z klientské práce a technologiemi za ní."
+[skills_og]
+en = "Skills behind the services, each with its evidence"
+cs = "Dovednosti za službami, každá s doklady"
+
+[derive_services_intro]
+en = "I offer {n} services: {list}. Each page says what problem it solves, the principle it rests on, the method step by step and what you receive, then shows the skills it draws on, the technologies, the public work that proves them and use cases from client work."
+cs = "Nabízím {n} služeb: {list}. Každá stránka říká, jaký problém řeší, na jakém principu stojí, jaký je postup krok za krokem a co dostanete, a pak ukazuje dovednosti, ze kterých čerpá, technologie, veřejnou práci, která je dokládá, a případy užití z klientské práce."
+[derive_services_how]
+en = "How this is built: the words of each service are mine; everything else is derived from measured data. The skills resolve to the same vocabulary as the [[osint|investigation]] and [[due-diligence|due diligence]] experience on the home page, the evidence comes from my public repositories and the client work is described without any name, date or number."
+cs = "Jak to vzniká: slova každé služby jsou moje; vše ostatní je odvozené z měřených dat. Dovednosti vycházejí ze stejného slovníku jako zkušenosti s [[osint|vyšetřováním]] a [[due-diligence|due diligence]] na úvodní stránce, doklady pocházejí z mých veřejných repozitářů a klientská práce je popsaná bez jakéhokoli jména, data či čísla."
+[derive_skills_intro]
+en = "{n} skills carry my {services} services. Each has its own page: what it is, which services draw on it, the technologies it is practised with, the public work that shows it and the client use cases where it was applied."
+cs = "{n} dovedností nese mých {services} služeb. Každá má vlastní stránku: co to je, které služby z ní čerpají, s jakými technologiemi se praktikuje, veřejná práce, která ji dokládá, a případy užití z klientské práce, kde byla použita."
+[derive_skills_how]
+en = "How this is built: a skill is a capability of the experience vocabulary, so the same keywords that infer it from my work also link it here; its public evidence and use cases are derived, never typed. The [[knowledge-graph|graph]] links skills to services and technologies."
+cs = "Jak to vzniká: dovednost je schopnost ze slovníku zkušeností, takže stejná klíčová slova, která ji odvozují z mé práce, ji propojují i sem; její veřejné doklady a případy užití jsou odvozené, nikdy ručně psané. [[knowledge-graph|Graf]] propojuje dovednosti se službami a technologiemi."
+
+[derive_service_skills]
+en = "It draws on these skills: {list}."
+cs = "Čerpá z těchto dovedností: {list}."
+[derive_service_tech]
+en = "The technologies behind it, measured from the work that shows those skills: {list}."
+cs = "Technologie za ní, změřené z práce, která tyto dovednosti dokládá: {list}."
+[derive_service_repos__one]
+en = "{n} public repository shows its skills ({words} by its own words)."
+cs = "Její dovednosti dokládá {n} veřejný repozitář ({words} vlastními slovy)."
+[derive_service_repos__few]
+en = "{n} public repositories show its skills ({words} by their own words)."
+cs = "Její dovednosti dokládají {n} veřejné repozitáře ({words} vlastními slovy)."
+[derive_service_repos__other]
+en = "{n} public repositories show its skills ({words} by their own words)."
+cs = "Její dovednosti dokládá {n} veřejných repozitářů ({words} vlastními slovy)."
+[derive_service_clients]
+en = "It was delivered in client work under confidentiality agreements, in {sectors}, as {roles}; the use cases describe the principle and the intent, never a client, person, date or number."
+cs = "Byla dodána v klientské práci pod dohodami o mlčenlivosti, v odvětví: {sectors}, v roli: {roles}; případy užití popisují princip a záměr, nikdy klienta, osobu, datum ani číslo."
+[derive_service_sector_any]
+en = "an undisclosed sector"
+cs = "nezveřejněné odvětví"
+[derive_service_how]
+en = "How to read this page: the method and the use cases are written by me; the skills, technologies and public evidence are derived from measured data and link to their own pages, each a [[repository|repository]], a term or a skill."
+cs = "Jak číst tuto stránku: postup a případy užití píšu já; dovednosti, technologie a veřejné doklady jsou odvozené z měřených dat a vedou na vlastní stránky, každý [[repository|repozitář]], pojem nebo dovednost."
+
+[derive_skill_term]
+en = "The concept behind it: {term}."
+cs = "Pojem, na kterém stojí: {term}."
+[derive_skill_services]
+en = "Services that draw on it: {list}."
+cs = "Služby, které z ní čerpají: {list}."
+[derive_skill_tech]
+en = "Practised with: {list}."
+cs = "Praktikovaná s: {list}."
+[derive_skill_public_words]
+en = "Public work whose own words show it: {list}."
+cs = "Veřejná práce, jejíž vlastní slova ji dokládají: {list}."
+[derive_skill_public_field__one]
+en = "{n} public repository works in the same field."
+cs = "Ve stejném oboru pracuje {n} veřejný repozitář."
+[derive_skill_public_field__few]
+en = "{n} public repositories work in the same field."
+cs = "Ve stejném oboru pracují {n} veřejné repozitáře."
+[derive_skill_public_field__other]
+en = "{n} public repositories work in the same field."
+cs = "Ve stejném oboru pracuje {n} veřejných repozitářů."
+[derive_skill_clients_cases]
+en = "It was applied in client work in {sectors}; the use cases below give the principle and the intent, without names or numbers."
+cs = "Byla použita v klientské práci v odvětví: {sectors}; případy užití níže uvádějí princip a záměr, bez jmen a čísel."
+[derive_skill_page_how]
+en = "How to read this page: the definition is the experience vocabulary's; the services, technologies, public [[repository|repositories]] and use cases are derived and each links to its page."
+cs = "Jak číst tuto stránku: definice pochází ze slovníku zkušeností; služby, technologie, veřejné [[repository|repozitáře]] a případy užití jsou odvozené a každá položka vede na svou stránku."
+
+# Templates.
+[service_problem]
+en = "The problem"
+cs = "Problém"
+[service_principle]
+en = "The principle"
+cs = "Princip"
+[service_method]
+en = "Method"
+cs = "Postup"
+[service_deliverables]
+en = "What you receive"
+cs = "Co dostanete"
+[service_sources]
+en = "Sources and techniques"
+cs = "Zdroje a techniky"
+[service_cases]
+en = "Use cases"
+cs = "Případy užití"
+[service_cases_lead]
+en = "Abstract use cases: the problem, what was done, the outcome. No client, person, date or number."
+cs = "Abstraktní případy užití: problém, co se udělalo, výsledek. Žádný klient, osoba, datum ani číslo."
+[service_case_problem]
+en = "Problem"
+cs = "Problém"
+[service_case_approach]
+en = "Approach"
+cs = "Postup"
+[service_case_outcome]
+en = "Outcome"
+cs = "Výsledek"
+[service_skills]
+en = "Skills it draws on"
+cs = "Dovednosti, ze kterých čerpá"
+[service_tech]
+en = "Technologies"
+cs = "Technologie"
+[service_tech_lead]
+en = "Measured from the public work and the client engagements that show its skills; each opens its evidence."
+cs = "Změřené z veřejné práce a klientských zakázek, které dokládají její dovednosti; každá otevře své doklady."
+[service_public]
+en = "Public evidence"
+cs = "Veřejné doklady"
+[service_public_lead]
+en = "Public repositories that show its skills: first those whose own words do, then the most recent of the same field."
+cs = "Veřejné repozitáře, které dokládají její dovednosti: nejdřív ty, jejichž vlastní slova to dokládají, pak nejnovější ze stejného oboru."
+[service_how_words]
+en = "own words"
+cs = "vlastní slova"
+[service_how_field]
+en = "same field"
+cs = "stejný obor"
+[service_engagements]
+en = "Delivered in client work"
+cs = "Dodáno v klientské práci"
+[service_engagements_lead]
+en = "Engagements under confidentiality agreements, by sector and role only."
+cs = "Zakázky pod dohodami o mlčenlivosti, jen podle odvětví a role."
+[service_open]
+en = "Open the service"
+cs = "Otevřít službu"
+[skill_services]
+en = "Services that draw on it"
+cs = "Služby, které z ní čerpají"
+[skill_concept]
+en = "Concept"
+cs = "Pojem"
+[skill_domain]
+en = "Domain"
+cs = "Doména"
+[services_all_skills]
+en = "All skills"
+cs = "Všechny dovednosti"
+[services_all]
+en = "All services"
+cs = "Všechny služby"
+[sector_undisclosed]
+en = "Undisclosed sector"
+cs = "Nezveřejněné odvětví"
+
+[viz_services_graph_title]
+en = "Services, skills and technologies"
+cs = "Služby, dovednosti a technologie"
+[viz_services_graph_lead]
+en = "Every service linked to the skills it draws on and the technologies behind them. Click a node to open its page."
+cs = "Každá služba propojená s dovednostmi, ze kterých čerpá, a technologiemi za nimi. Kliknutím na uzel otevřete jeho stránku."
+[viz_service_graph_title]
+en = "This service in the graph"
+cs = "Tato služba v grafu"
+[viz_service_graph_lead]
+en = "This service at the centre, its skills, the other services that share them and the technologies behind them."
+cs = "Tato služba uprostřed, její dovednosti, další služby, které je sdílejí, a technologie za nimi."
+[viz_skill_page_graph_title]
+en = "This skill in the graph"
+cs = "Tato dovednost v grafu"
+[viz_skill_page_graph_lead]
+en = "This skill at the centre, the services that draw on it and the technologies it is practised with."
+cs = "Tato dovednost uprostřed, služby, které z ní čerpají, a technologie, se kterými se praktikuje."
+
+[derive_service_pad]
+en = " Offered by {author}."
+cs = " Nabízí {author}."
+
+[service_built_with]
+en = "Built with"
+cs = "Postaveno na"
+[service_measured_tech]
+en = "Measured in the work that shows its skills"
+cs = "Změřeno v práci, která dokládá její dovednosti"
+
+[derive_service_stack]
+en = "It is built with {list}."
+cs = "Je postavená na: {list}."

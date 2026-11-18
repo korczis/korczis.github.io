@@ -3,7 +3,7 @@
 title = "Orchestrace"
 description = "Koordinace mnoha automatických kroků, služeb nebo agentů (fronty, workflow, plány), aby běžely ve správném pořadí a zotavily se, když jeden selže."
 template = "term.html"
-weight = 78
+weight = 91
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]
@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Koordinace mnoha automatických kroků, služeb nebo agentů (fronty, workflow, plány), aby běžely ve správném pořadí a zotavily se, když jeden selže."
 aliases = []
 reference = { title = "Orchestration in computing (Wikipedia)", url = "https://en.wikipedia.org/wiki/Orchestration_(computing)" }
-pages = ["projects/security.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md"]
-related = ["audit-trail", "data-integration", "decision-support-system", "due-diligence", "html", "information-extraction", "insolvency", "knowledge-graph"]
+pages = ["projects/security.cs.md", "services/_index.cs.md", "services/ai-engineering-governance.cs.md", "services/continuous-monitoring.cs.md", "services/decision-support-ai.cs.md", "skills/_index.cs.md", "skills/orchestration.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md"]
+related = ["html", "alpine-js", "audit-trail", "dockerfile", "flowbite-pro", "javascript", "shell", "decision-support-system"]
 og_title = "Orchestrace: slovník"
 og_image = "og/cs-glossary-orchestration.png"
 keywords = ["Orchestrace", "Orchestration", "Koncept", "Slovník", "Tomáš Korčák"]

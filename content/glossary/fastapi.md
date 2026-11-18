@@ -3,7 +3,7 @@
 title = "FastAPI"
 description = "A Python web framework for HTTP APIs, typed with Pydantic models that validate requests and generate the OpenAPI description."
 template = "term.html"
-weight = 38
+weight = 40
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "A Python web framework for HTTP APIs, typed with Pydantic models that validate requests and generate the OpenAPI description."
 aliases = []
 reference = { title = "FastAPI documentation", url = "https://fastapi.tiangolo.com/" }
-pages = ["_index.md"]
-related = []
+pages = ["services/_index.md", "services/attack-surface.md", "services/compliance-screening.md", "services/continuous-monitoring.md", "services/decision-support-ai.md", "services/digital-forensics.md", "services/digital-investigation.md", "services/due-diligence.md", "services/m-and-a.md", "services/reputation-intelligence.md", "skills/_index.md", "skills/ai-transformation.md", "skills/audit-trail.md", "skills/data-integration.md", "skills/data-room.md", "skills/decision-support.md", "skills/document-extraction.md", "skills/due-diligence.md", "skills/entity-resolution.md", "skills/insolvency-monitoring.md", "skills/m-and-a-screening.md", "skills/market-intelligence.md", "skills/orchestration.md", "skills/risk-scoring.md", "_index.md"]
+related = ["alpine-js", "dockerfile", "html", "javascript", "claude-api", "flowbite-pro", "github-actions", "kubernetes"]
 og_title = "FastAPI: glossary"
 og_image = "og/glossary-fastapi.png"
 keywords = ["FastAPI", "Technology", "Glossary", "Tomas Korcak"]

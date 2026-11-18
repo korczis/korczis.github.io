@@ -3,7 +3,7 @@
 title = "Insolvency"
 description = "The state of a debtor who cannot pay their debts; insolvency proceedings and the creditors' claims in them are recorded in public registers."
 template = "term.html"
-weight = 69
+weight = 81
 
 [taxonomies]
 tags = ["Glossary", "Concept"]
@@ -16,8 +16,8 @@ kind = "concept"
 definition = "The state of a debtor who cannot pay their debts; insolvency proceedings and the creditors' claims in them are recorded in public registers."
 aliases = []
 reference = { title = "Insolvency (Wikipedia)", url = "https://en.wikipedia.org/wiki/Insolvency" }
-pages = ["projects/security.md", "work/osint-case-ratcliffe-moscow-2026.md"]
-related = ["audit-trail", "data-integration", "decision-support-system", "due-diligence", "html", "information-extraction", "knowledge-graph", "market-intelligence"]
+pages = ["projects/security.md", "services/_index.md", "services/continuous-monitoring.md", "skills/_index.md", "skills/insolvency-monitoring.md", "work/osint-case-ratcliffe-moscow-2026.md"]
+related = ["html", "orchestration", "record-linkage", "risk-assessment", "alpine-js", "audit-trail", "data-integration", "decision-support-system"]
 og_title = "Insolvency: glossary"
 og_image = "og/glossary-insolvency.png"
 keywords = ["Insolvency", "Concept", "Glossary", "Tomas Korcak"]

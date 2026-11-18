@@ -3,7 +3,7 @@
 title = "Majordomus"
 description = "The owner's supervisory layer for AI-assisted work: one policy for every coding agent, scoped tasks, and finishes that must be proven."
 template = "term.html"
-weight = 43
+weight = 45
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "The owner's supervisory layer for AI-assisted work: one policy for every coding agent, scoped tasks, and finishes that must be proven."
 aliases = []
 reference = { title = "majordomus.dev", url = "https://majordomus.dev" }
-pages = ["about.md", "hire.md", "interfaces.md", "stack.md", "_index.md"]
-related = ["ai-agent", "elixir", "github-pages", "mcp", "open-source", "osint", "rust", "alpine-js"]
+pages = ["about.md", "hire.md", "interfaces.md", "services/_index.md", "services/ai-engineering-governance.md", "services/attack-surface.md", "services/continuous-monitoring.md", "services/decision-support-ai.md", "services/interactive-data-products.md", "skills/_index.md", "skills/ai-transformation.md", "skills/data-room.md", "skills/insolvency-monitoring.md", "skills/interactive-visualisation.md", "skills/knowledge-graph.md", "skills/market-intelligence.md", "skills/policy-as-code.md", "skills/risk-scoring.md", "stack.md", "_index.md"]
+related = ["alpine-js", "javascript", "flowbite-pro", "html", "claude-api", "dockerfile", "fastapi", "skill"]
 og_title = "Majordomus: glossary"
 og_image = "og/glossary-majordomus.png"
 keywords = ["Majordomus", "Technology", "Glossary", "Tomas Korcak"]

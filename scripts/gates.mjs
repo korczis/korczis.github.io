@@ -53,6 +53,7 @@ export const GATES = [
   { id: 'experience', name: 'Experience data matches its schema', run: ['node', 'scripts/check-experience.mjs'], ci: true },
   { id: 'categories', name: 'Category pages are current', run: ['node', 'scripts/build-categories.mjs', '--check'], ci: true, rule: 'project.data-measured' },
   { id: 'work', name: 'Work pages are current', run: ['node', 'scripts/build-work.mjs', '--check'], ci: true, rule: 'project.data-measured' },
+  { id: 'services', name: 'Service and skill pages are current', run: ['node', 'scripts/build-services.mjs', '--check'], ci: true, rule: 'project.services-derived' },
   { id: 'glossary', name: 'Glossary pages are current', run: ['node', 'scripts/build-glossary.mjs', '--check'], ci: true, rule: 'project.pages-are-articles' },
   { id: 'articles', name: 'Every page is an article with glossary terms; every term is used', run: ['node', 'scripts/check-glossary.mjs'], ci: true, rule: 'project.pages-are-articles' },
   { id: 'llms', name: 'llms.txt is current', run: ['node', 'scripts/build-llms.mjs', '--check'], ci: true, rule: 'project.data-measured' },

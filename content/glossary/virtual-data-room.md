@@ -3,7 +3,7 @@
 title = "Virtual data room"
 description = "A secure online repository where the documents of a transaction are shared with the parties allowed to see them, with every access recorded."
 template = "term.html"
-weight = 83
+weight = 104
 
 [taxonomies]
 tags = ["Glossary", "Concept"]
@@ -16,8 +16,8 @@ kind = "concept"
 definition = "A secure online repository where the documents of a transaction are shared with the parties allowed to see them, with every access recorded."
 aliases = ["data room"]
 reference = { title = "Virtual data room (Wikipedia)", url = "https://en.wikipedia.org/wiki/Virtual_data_room" }
-pages = ["projects/security.md", "work/osint-case-ratcliffe-moscow-2026.md"]
-related = ["audit-trail", "data-integration", "decision-support-system", "due-diligence", "html", "information-extraction", "insolvency", "knowledge-graph"]
+pages = ["projects/security.md", "services/_index.md", "services/m-and-a.md", "skills/_index.md", "skills/data-room.md", "work/osint-case-ratcliffe-moscow-2026.md"]
+related = ["html", "decision-support-system", "due-diligence", "market-intelligence", "mergers-and-acquisitions", "risk-assessment", "alpine-js", "audit-trail"]
 og_title = "Virtual data room: glossary"
 og_image = "og/glossary-virtual-data-room.png"
 keywords = ["Virtual data room", "Concept", "Glossary", "Tomas Korcak"]

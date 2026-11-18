@@ -3,7 +3,7 @@
 title = "Due diligence"
 description = "The investigation of a company, a person or an asset before a decision such as an acquisition or an investment: who owns it, what it holds, what it owes and what…"
 template = "term.html"
-weight = 63
+weight = 74
 
 [taxonomies]
 tags = ["Glossary", "Concept"]
@@ -16,8 +16,8 @@ kind = "concept"
 definition = "The investigation of a company, a person or an asset before a decision such as an acquisition or an investment: who owns it, what it holds, what it owes and what could go wrong."
 aliases = []
 reference = { title = "Due diligence (Wikipedia)", url = "https://en.wikipedia.org/wiki/Due_diligence" }
-pages = ["hire.md", "projects/security.md", "work/osint-case-ratcliffe-moscow-2026.md"]
-related = ["mergers-and-acquisitions", "osint", "audit-trail", "data-integration", "decision-support-system", "html", "information-extraction", "insolvency"]
+pages = ["hire.md", "projects/security.md", "services/_index.md", "services/due-diligence.md", "services/m-and-a.md", "skills/_index.md", "skills/due-diligence.md", "work/osint-case-ratcliffe-moscow-2026.md"]
+related = ["html", "decision-support-system", "mergers-and-acquisitions", "python", "risk-assessment", "alpine-js", "dockerfile", "fastapi"]
 og_title = "Due diligence: glossary"
 og_image = "og/glossary-due-diligence.png"
 keywords = ["Due diligence", "Concept", "Glossary", "Tomas Korcak"]

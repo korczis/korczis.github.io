@@ -3,7 +3,7 @@
 title = "PL/pgSQL"
 description = "Procedurální jazyk PostgreSQL: funkce a triggery, které uvnitř databáze spouštějí SQL s proměnnými, cykly a podmínkami."
 template = "term.html"
-weight = 20
+weight = 21
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -16,8 +16,8 @@ kind = "language"
 definition = "Procedurální jazyk PostgreSQL: funkce a triggery, které uvnitř databáze spouštějí SQL s proměnnými, cykly a podmínkami."
 aliases = ["PLpgSQL"]
 reference = { title = "PostgreSQL: PL/pgSQL", url = "https://www.postgresql.org/docs/current/plpgsql.html" }
-pages = ["work/data-atlas.cs.md"]
-related = ["commit", "gis", "github-pages", "html", "javascript", "just", "open-source", "python"]
+pages = ["skills/geospatial-analysis.cs.md", "work/data-atlas.cs.md"]
+related = ["gis", "html", "javascript", "just", "python", "commit", "css", "eex"]
 og_title = "PL/pgSQL: slovník"
 og_image = "og/cs-glossary-plpgsql.png"
 keywords = ["PL/pgSQL", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

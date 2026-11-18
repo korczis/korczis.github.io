@@ -3,7 +3,7 @@
 title = "PL/pgSQL"
 description = "PostgreSQL's procedural language: functions and triggers that run SQL with variables, loops and conditions inside the database."
 template = "term.html"
-weight = 20
+weight = 21
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -16,8 +16,8 @@ kind = "language"
 definition = "PostgreSQL's procedural language: functions and triggers that run SQL with variables, loops and conditions inside the database."
 aliases = ["PLpgSQL"]
 reference = { title = "PostgreSQL: PL/pgSQL", url = "https://www.postgresql.org/docs/current/plpgsql.html" }
-pages = ["work/data-atlas.md"]
-related = ["commit", "gis", "github-pages", "html", "javascript", "just", "open-source", "python"]
+pages = ["skills/geospatial-analysis.md", "work/data-atlas.md"]
+related = ["gis", "html", "javascript", "just", "python", "commit", "css", "eex"]
 og_title = "PL/pgSQL: glossary"
 og_image = "og/glossary-plpgsql.png"
 keywords = ["PL/pgSQL", "Programming language", "Glossary", "Tomas Korcak"]

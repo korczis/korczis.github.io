@@ -3,7 +3,7 @@
 title = "GIS"
 description = "Geografické informační systémy: data vázaná na místa, uložená, analyzovaná a kreslená jako mapy."
 template = "term.html"
-weight = 67
+weight = 79
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]
@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Geografické informační systémy: data vázaná na místa, uložená, analyzovaná a kreslená jako mapy."
 aliases = []
 reference = { title = "GIS (Wikipedia)", url = "https://en.wikipedia.org/wiki/Geographic_information_system" }
-pages = ["projects/_index.cs.md", "projects/data.cs.md", "work/crisis-map.cs.md", "work/data-atlas.cs.md", "work/kuzu-ex.cs.md", "work/meili-rsex.cs.md"]
-related = ["repository", "open-source", "commit", "elixir", "html", "javascript", "python", "github-pages"]
+pages = ["projects/_index.cs.md", "projects/data.cs.md", "services/_index.cs.md", "services/interactive-data-products.cs.md", "skills/_index.cs.md", "skills/geospatial-analysis.cs.md", "work/crisis-map.cs.md", "work/data-atlas.cs.md", "work/kuzu-ex.cs.md", "work/meili-rsex.cs.md"]
+related = ["html", "javascript", "python", "elixir", "repository", "open-source", "shell", "commit"]
 og_title = "GIS: slovník"
 og_image = "og/cs-glossary-gis.png"
 keywords = ["GIS", "Koncept", "Slovník", "Tomáš Korčák"]

@@ -3,7 +3,7 @@
 title = "React"
 description = "JavaScriptová knihovna pro uživatelská rozhraní skládaná z komponent, které se překreslují podle stavu."
 template = "term.html"
-weight = 52
+weight = 57
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

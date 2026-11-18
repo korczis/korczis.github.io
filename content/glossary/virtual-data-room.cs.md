@@ -3,7 +3,7 @@
 title = "Virtuální datová místnost"
 description = "Zabezpečené online úložiště, kde se dokumenty transakce sdílejí se stranami, které je smějí vidět, a každý přístup se zaznamená."
 template = "term.html"
-weight = 83
+weight = 104
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]
@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Zabezpečené online úložiště, kde se dokumenty transakce sdílejí se stranami, které je smějí vidět, a každý přístup se zaznamená."
 aliases = ["data room"]
 reference = { title = "Virtual data room (Wikipedia)", url = "https://en.wikipedia.org/wiki/Virtual_data_room" }
-pages = ["projects/security.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md"]
-related = ["audit-trail", "data-integration", "decision-support-system", "due-diligence", "html", "information-extraction", "insolvency", "knowledge-graph"]
+pages = ["projects/security.cs.md", "services/_index.cs.md", "services/m-and-a.cs.md", "skills/_index.cs.md", "skills/data-room.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md"]
+related = ["html", "decision-support-system", "due-diligence", "market-intelligence", "mergers-and-acquisitions", "risk-assessment", "alpine-js", "audit-trail"]
 og_title = "Virtuální datová místnost: slovník"
 og_image = "og/cs-glossary-virtual-data-room.png"
 keywords = ["Virtuální datová místnost", "Virtual data room", "Koncept", "Slovník", "Tomáš Korčák"]

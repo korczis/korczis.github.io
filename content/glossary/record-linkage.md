@@ -3,7 +3,7 @@
 title = "Entity resolution"
 description = "Finding the records, across sources, that refer to the same company or person, by shared identifiers first and by similar names and addresses second."
 template = "term.html"
-weight = 64
+weight = 75
 
 [taxonomies]
 tags = ["Glossary", "Concept"]
@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Finding the records, across sources, that refer to the same company or person, by shared identifiers first and by similar names and addresses second."
 aliases = ["record linkage"]
 reference = { title = "Record linkage (Wikipedia)", url = "https://en.wikipedia.org/wiki/Record_linkage" }
-pages = ["projects/security.md", "work/osint-case-ratcliffe-moscow-2026.md"]
-related = ["audit-trail", "data-integration", "decision-support-system", "due-diligence", "html", "information-extraction", "insolvency", "knowledge-graph"]
+pages = ["projects/security.md", "services/_index.md", "services/compliance-screening.md", "services/continuous-monitoring.md", "services/digital-investigation.md", "services/due-diligence.md", "skills/_index.md", "skills/entity-resolution.md", "work/osint-case-ratcliffe-moscow-2026.md"]
+related = ["html", "alpine-js", "dockerfile", "fastapi", "flowbite-pro", "javascript", "python", "risk-assessment"]
 og_title = "Entity resolution: glossary"
 og_image = "og/glossary-record-linkage.png"
 keywords = ["Entity resolution", "Concept", "Glossary", "Tomas Korcak"]

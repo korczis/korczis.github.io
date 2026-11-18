@@ -3,7 +3,7 @@
 title = "Tesseract"
 description = "An open-source OCR engine that reads text from scanned documents and images in many languages."
 template = "term.html"
-weight = 54
+weight = 59
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

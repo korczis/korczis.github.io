@@ -3,7 +3,7 @@
 title = "Front matter"
 description = "Structured data at the top of a content file (here TOML) that describes the page to the generator and to machines."
 template = "term.html"
-weight = 66
+weight = 78
 
 [taxonomies]
 tags = ["Glossary", "Concept"]

@@ -3,7 +3,7 @@
 title = "Integrace dat"
 description = "Spojení dat z mnoha zdrojů (rejstříků, API, souborů) do jednoho jednotného pohledu, kde si každý záznam pamatuje, odkud pochází."
 template = "term.html"
-weight = 60
+weight = 70
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]
@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Spojení dat z mnoha zdrojů (rejstříků, API, souborů) do jednoho jednotného pohledu, kde si každý záznam pamatuje, odkud pochází."
 aliases = []
 reference = { title = "Data integration (Wikipedia)", url = "https://en.wikipedia.org/wiki/Data_integration" }
-pages = ["projects/security.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md"]
-related = ["audit-trail", "decision-support-system", "due-diligence", "html", "information-extraction", "insolvency", "knowledge-graph", "market-intelligence"]
+pages = ["projects/security.cs.md", "services/_index.cs.md", "services/interactive-data-products.cs.md", "skills/_index.cs.md", "skills/data-integration.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md"]
+related = ["decision-support-system", "html", "knowledge-graph", "shell", "alpine-js", "audit-trail", "due-diligence", "flowbite-pro"]
 og_title = "Integrace dat: slovník"
 og_image = "og/cs-glossary-data-integration.png"
 keywords = ["Integrace dat", "Data integration", "Koncept", "Slovník", "Tomáš Korčák"]

@@ -3,7 +3,7 @@
 title = "Mergers and acquisitions"
 description = "Transactions in which companies combine or one buys another; each is prepared by screening the target, its parties and its financing."
 template = "term.html"
-weight = 74
+weight = 86
 
 [taxonomies]
 tags = ["Glossary", "Concept"]
@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Transactions in which companies combine or one buys another; each is prepared by screening the target, its parties and its financing."
 aliases = ["M&A"]
 reference = { title = "Mergers and acquisitions (Wikipedia)", url = "https://en.wikipedia.org/wiki/Mergers_and_acquisitions" }
-pages = ["hire.md", "projects/security.md", "work/osint-case-ratcliffe-moscow-2026.md"]
-related = ["due-diligence", "osint", "audit-trail", "data-integration", "decision-support-system", "html", "information-extraction", "insolvency"]
+pages = ["hire.md", "projects/security.md", "services/_index.md", "services/m-and-a.md", "skills/_index.md", "skills/m-and-a-screening.md", "work/osint-case-ratcliffe-moscow-2026.md"]
+related = ["due-diligence", "html", "decision-support-system", "market-intelligence", "osint", "python", "risk-assessment", "virtual-data-room"]
 og_title = "Mergers and acquisitions: glossary"
 og_image = "og/glossary-mergers-and-acquisitions.png"
 keywords = ["Mergers and acquisitions", "Concept", "Glossary", "Tomas Korcak"]

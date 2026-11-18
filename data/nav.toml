@@ -44,6 +44,26 @@ footer = true
 palette = true
 
 [[nav]]
+key = "nav_services"
+path = "/services/"
+icon = "briefcase"
+badge = ""
+hint = "hint_services"
+sidebar = true
+footer = true
+palette = true
+
+[[nav]]
+key = "nav_skills"
+path = "/skills/"
+icon = "academic"
+badge = ""
+hint = "hint_skills"
+sidebar = true
+footer = false
+palette = true
+
+[[nav]]
 key = "recent_work"
 path = "/work/"
 icon = "clock"

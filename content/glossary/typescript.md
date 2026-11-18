@@ -3,7 +3,7 @@
 title = "TypeScript"
 description = "JavaScript with static types, checked before the code runs and compiled to plain JavaScript."
 template = "term.html"
-weight = 30
+weight = 31
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -16,8 +16,8 @@ kind = "language"
 definition = "JavaScript with static types, checked before the code runs and compiled to plain JavaScript."
 aliases = []
 reference = { title = "TypeScript handbook", url = "https://www.typescriptlang.org/docs/" }
-pages = ["projects/science.md", "projects/tools.md", "work/algoglyph.md", "work/astronomists.md", "work/dispatcher.md", "work/sig.md", "_index.md"]
-related = ["repository", "javascript", "open-source", "commit", "shell", "elixir", "just", "python"]
+pages = ["projects/science.md", "projects/tools.md", "skills/data-integration.md", "skills/llm-agents.md", "skills/osint-investigation.md", "work/algoglyph.md", "work/astronomists.md", "work/dispatcher.md", "work/sig.md", "_index.md"]
+related = ["javascript", "shell", "elixir", "repository", "alpine-js", "open-source", "python", "commit"]
 og_title = "TypeScript: glossary"
 og_image = "og/glossary-typescript.png"
 keywords = ["TypeScript", "Programming language", "Glossary", "Tomas Korcak"]

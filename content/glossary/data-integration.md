@@ -3,7 +3,7 @@
 title = "Data integration"
 description = "Combining data from many sources (registers, APIs, files) into one consistent view, with each record keeping where it came from."
 template = "term.html"
-weight = 60
+weight = 70
 
 [taxonomies]
 tags = ["Glossary", "Concept"]
@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Combining data from many sources (registers, APIs, files) into one consistent view, with each record keeping where it came from."
 aliases = []
 reference = { title = "Data integration (Wikipedia)", url = "https://en.wikipedia.org/wiki/Data_integration" }
-pages = ["projects/security.md", "work/osint-case-ratcliffe-moscow-2026.md"]
-related = ["audit-trail", "decision-support-system", "due-diligence", "html", "information-extraction", "insolvency", "knowledge-graph", "market-intelligence"]
+pages = ["projects/security.md", "services/_index.md", "services/interactive-data-products.md", "skills/_index.md", "skills/data-integration.md", "work/osint-case-ratcliffe-moscow-2026.md"]
+related = ["decision-support-system", "html", "knowledge-graph", "shell", "alpine-js", "audit-trail", "due-diligence", "flowbite-pro"]
 og_title = "Data integration: glossary"
 og_image = "og/glossary-data-integration.png"
 keywords = ["Data integration", "Concept", "Glossary", "Tomas Korcak"]

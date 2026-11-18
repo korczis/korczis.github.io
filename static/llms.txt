@@ -79,11 +79,13 @@ Measured from every original public repository on GitHub and GitLab, derived 202
 
 - [Tomas Korcak](https://korczis.github.io/): Tomas Korcak, staff engineer for AI agent infrastructure, Elixir and Rust, open to remote roles and contracts: software that makes AI agents prove their work.
 - [About](https://korczis.github.io/about/): Tomas Korcak (korczis), staff engineer for AI agent infrastructure in Brno, open to remote roles: the CV, my languages over the years, and where to find the work.
-- [Glossary](https://korczis.github.io/glossary/): The 84 terms this site explains itself with: languages, technologies and concepts, each defined, sourced and linked to every page that uses it.
+- [Glossary](https://korczis.github.io/glossary/): The 106 terms this site explains itself with: languages, technologies and concepts, each defined, sourced and linked to every page that uses it.
 - [Hire me](https://korczis.github.io/hire/): Tomas Korcak, staff engineer for AI agent infrastructure, Elixir and Rust: available remote, full-time or contract. Roles, terms, rate and evidence.
 - [Interfaces](https://korczis.github.io/interfaces/): The site for machines: its Majordomus layer with MCP resource URIs, how to connect an agent over MCP, and every published file described in OpenAPI.
 - [Projects](https://korczis.github.io/projects/): Every project in the catalogue: what it is, what it is built with, whether it is live, and whether Majordomus supervises it.
 - [Repositories](https://korczis.github.io/repositories/): Every original public repository on GitHub and GitLab, merged by name, with its inferred category, language and both links.
+- [Services](https://korczis.github.io/services/): Due diligence, M&A, digital investigation, forensics and reputation: the problem each service solves, its method, its skills and the evidence.
+- [Skills](https://korczis.github.io/skills/): Every skill my services draw on, defined, with the public work that shows it, the client use cases and the technologies behind it.
 - [Stack](https://korczis.github.io/stack/): The tools and practices behind every project, and how this site itself is built, checked and deployed.
 - [Recent work](https://korczis.github.io/work/): Every project with a commit in the last 48 months, by period (12, 24, 48): 43 repositories on GitHub and GitLab, each with its own page.
 - [Tomáš Korčák (cs)](https://korczis.github.io/cs/): Software, který svou práci dokládá: AI agenti, kteří prokazují výsledky, poctivé přístroje v prohlížeči, ověřitelné znalosti.

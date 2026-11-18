@@ -3,7 +3,7 @@
 title = "Makefile"
 description = "Jazyk nástroje make: cíle, soubory, na kterých závisí, a příkazy, které je přestaví, když se závislost změní."
 template = "term.html"
-weight = 16
+weight = 17
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]

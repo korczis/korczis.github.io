@@ -3,9 +3,9 @@
  "description": "The Majordomus layer of korczis/korczis.github.io: every object of .ai/ with its MCP resource URI",
  "source": "majordomus run objects.list, capabilities.list",
  "majordomus": "1.0.2",
- "tree": "76e95a15bbb29a9f4f0b48a14921d6025539557b5e0998d4a4eec2b916dc062f",
+ "tree": "6c3edd789a2728e7fc7ff807c0cbf3f118eb89fd9b57fa2bf0210d1aeff8bfad",
  "counts": {
-  "objects": 143,
+  "objects": 144,
   "kinds": {
    "adr": 8,
    "context": 21,
@@ -15,14 +15,14 @@
    "policy": 1,
    "profile": 4,
    "prompt": 4,
-   "rule": 76,
+   "rule": 77,
    "scope": 1,
    "skill": 1,
    "taxonomy": 8
   },
-  "capabilities": 374,
+  "capabilities": 375,
   "mcp_tools": 215,
-  "mcp_resources": 200,
+  "mcp_resources": 201,
   "http_routes": 219
  },
  "objects": [
@@ -1041,6 +1041,14 @@
    "title": "Search and social metadata are derived from front matter and data, and state only what the page shows",
    "description": "Titles, descriptions, canonical URLs, Open Graph and Twitter tags, OG images and JSON-LD come from each page's front matter and data/, through templates/partials/seo.html and scripts/build-og.mjs; structured data states only what the page visibly shows, OG cards caption the page's own permalink, and all of it is gated on the built site.",
    "path": ".ai/repo/rules/project/seo-derived.v2.md"
+  },
+  {
+   "uri": "majordomus://rule/project.services-derived@1",
+   "kind": "rule",
+   "identity": "project.services-derived@1",
+   "title": "Services, skills, knowledge and domains form one derived, interlinked model; only the words are written",
+   "description": "Every service (data/services.toml) and every skill (a capability of data/experience-rules.toml) has its own page in every language; the owner writes only their words, while the skills a service draws on, the technologies, the public evidence, the client use cases (sector and role only) and the articles are derived by scripts/lib/services.mjs, and every skill links its concept (a glossary term), its domain, its services and its evidence.",
+   "path": ".ai/repo/rules/project/services-derived.v1.md"
   },
   {
    "uri": "majordomus://rule/project.site-zola-pages@1",

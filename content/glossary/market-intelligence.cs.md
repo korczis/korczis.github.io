@@ -3,7 +3,7 @@
 title = "Tržní zpravodajství"
 description = "Poznatky o trhu (ceny, srovnatelné případy, konkurence a poptávka) sebrané z veřejných a licencovaných zdrojů jako podklad pro rozhodnutí."
 template = "term.html"
-weight = 73
+weight = 85
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]
@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Poznatky o trhu (ceny, srovnatelné případy, konkurence a poptávka) sebrané z veřejných a licencovaných zdrojů jako podklad pro rozhodnutí."
 aliases = []
 reference = { title = "Market intelligence (Wikipedia)", url = "https://en.wikipedia.org/wiki/Market_intelligence" }
-pages = ["projects/security.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md"]
-related = ["audit-trail", "data-integration", "decision-support-system", "due-diligence", "html", "information-extraction", "insolvency", "knowledge-graph"]
+pages = ["projects/security.cs.md", "services/_index.cs.md", "services/m-and-a.cs.md", "skills/_index.cs.md", "skills/market-intelligence.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md"]
+related = ["html", "decision-support-system", "due-diligence", "mergers-and-acquisitions", "risk-assessment", "virtual-data-room", "alpine-js", "audit-trail"]
 og_title = "Tržní zpravodajství: slovník"
 og_image = "og/cs-glossary-market-intelligence.png"
 keywords = ["Tržní zpravodajství", "Market intelligence", "Koncept", "Slovník", "Tomáš Korčák"]

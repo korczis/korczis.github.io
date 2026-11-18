@@ -3,7 +3,7 @@
 title = "MCP"
 description = "The Model Context Protocol: an open protocol through which AI applications reach tools and data."
 template = "term.html"
-weight = 44
+weight = 46
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "The Model Context Protocol: an open protocol through which AI applications reach tools and data."
 aliases = ["model-context-protocol"]
 reference = { title = "modelcontextprotocol.io", url = "https://modelcontextprotocol.io/" }
-pages = ["hire.md", "interfaces.md", "projects/ai.md", "projects/data.md", "work/crisis-map.md", "work/prismatic-majordomus.md"]
-related = ["ai-agent", "elixir", "repository", "rust", "github-pages", "html", "javascript", "open-source"]
+pages = ["hire.md", "interfaces.md", "projects/ai.md", "projects/data.md", "services/ai-engineering-governance.md", "services/decision-support-ai.md", "skills/geospatial-analysis.md", "skills/registry-intelligence.md", "work/crisis-map.md", "work/prismatic-majordomus.md"]
+related = ["elixir", "javascript", "ai-agent", "css", "html", "python", "rust", "majordomus"]
 og_title = "MCP: glossary"
 og_image = "og/glossary-mcp.png"
 keywords = ["MCP", "Technology", "Glossary", "Tomas Korcak"]

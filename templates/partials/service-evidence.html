@@ -1,0 +1,78 @@
+{#- The derived evidence of a service or a skill (data/services.json, scripts/lib/services.mjs),
+    shared by templates/service.html and skill.html. Expects in scope: `se` (the evidence: repos,
+    technologies, engagements), `xr` (data/experience-rules.toml), `cat` (data/projects.toml),
+    `sfx`, `lang` and `link` (the link classes). Every technology opens its term and its evidence,
+    every repository its work page (else its forge), its forge and its category; client work is
+    sector, role and skill only (ADR 0006). -#}
+{%- if se.technologies | length > 0 or se.stack is defined %}
+{% <card labelledby="tech-title"> %}
+  {{ <card_head id="tech-title" title={trans(key="service_tech", lang=lang)} lead={trans(key="service_tech_lead", lang=lang)} /> }}
+  {%- if se.stack is defined and se.stack | length > 0 %}
+  <h3 class="mb-2 text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400">{{ trans(key="service_built_with", lang=lang) }}</h3>
+  <ul class="mb-4 flex flex-wrap gap-2">
+    {%- for x in se.stack %}{% set tp = get_page(path="glossary/" ~ x.id ~ ".md", lang=lang) %}
+    <li>{{ <chip label={tp.title} href={tp.permalink} variant="primary" /> }}</li>
+    {%- endfor %}
+  </ul>
+  <h3 class="mb-2 text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400">{{ trans(key="service_measured_tech", lang=lang) }}</h3>
+  {%- endif %}
+  <ul class="flex flex-wrap gap-2">
+    {%- for x in se.technologies %}{% set tp = get_page(path="glossary/" ~ x.id ~ ".md", lang=lang) %}
+    <li>{{ <chip label={tp.title} count={x.n ~ ""} href={tp.permalink ~ "#evidence-title"} /> }}</li>
+    {%- endfor %}
+  </ul>
+{% </card> %}
+{%- endif %}
+
+{%- if se.repos | length > 0 %}
+{% <card labelledby="public-title"> %}
+  {{ <card_head id="public-title" title={trans(key="service_public", lang=lang)} lead={trans(key="service_public_lead", lang=lang)} action={trans(key="repositories", lang=lang)} href={get_url(path="@/repositories/_index.md", lang=lang)} /> }}
+  <div class="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-700" tabindex="0" role="region" aria-labelledby="public-title">
+    <table class="w-full text-left text-sm text-gray-600 dark:text-gray-400">
+      <thead class="bg-gray-50 text-xs uppercase text-gray-700 dark:bg-gray-700 dark:text-gray-300">
+        <tr>
+          <th scope="col" class="px-4 py-3">{{ trans(key="skill_project", lang=lang) }}</th>
+          <th scope="col" class="px-4 py-3">{{ trans(key="skill_what_for", lang=lang) }}</th>
+          <th scope="col" class="px-4 py-3">{{ trans(key="skill_how", lang=lang) }}</th>
+          {%- if se.skills is defined %}<th scope="col" class="px-4 py-3">{{ trans(key="skills_title", lang=lang) }}</th>{% endif %}
+        </tr>
+      </thead>
+      <tbody>
+        {%- for r in se.repos %}
+        <tr class="border-b border-gray-200 align-top last:border-0 hover:bg-gray-50 dark:border-gray-700 dark:hover:bg-gray-700">
+          <th scope="row" class="px-4 py-3 font-medium text-gray-900 dark:text-white">
+            {%- if r.slug %}<a class="{{ link }}" href="{{ get_url(path='@/work/' ~ r.slug ~ '.md', lang=lang) }}">{{ r.title }}</a>{% else %}<a class="{{ link }}" href="{{ r.url }}" rel="noopener">{{ r.title }}</a>{% endif %}
+            <div class="mt-1 flex flex-wrap gap-2 text-xs font-normal">
+              <a class="{{ link }}" href="{{ r.url }}" rel="noopener">{% if "gitlab.com" in r.url %}GitLab{% else %}GitHub{% endif %}</a>
+              {%- if r.site %}<a class="{{ link }}" href="{{ r.site }}" rel="noopener">{{ trans(key="skill_site", lang=lang) }}</a>{% endif %}
+              <a class="{{ link }}" href="{{ get_url(path='@/projects/' ~ r.category ~ '.md', lang=lang) }}">{{ cat.categories[r.category]["name" ~ sfx] }}</a>
+            </div>
+          </th>
+          <td class="max-w-md px-4 py-3">{% if r.description %}{{ r.description }}{% else %}—{% endif %}</td>
+          <td class="px-4 py-3">{% if r.how == "words" %}{{ <badge label={trans(key="service_how_words", lang=lang)} tone="primary" /> }}{% else %}{{ <badge label={trans(key="service_how_field", lang=lang)} /> }}{% endif %}</td>
+          {%- if se.skills is defined %}<td class="px-4 py-3">{% if r.skill is defined %}<a class="{{ link }}" href="{{ get_url(path='@/skills/' ~ r.skill ~ '.md', lang=lang) }}">{{ xr.capabilities[r.skill]["name" ~ sfx] }}</a>{% endif %}</td>{% endif %}
+        </tr>
+        {%- endfor %}
+      </tbody>
+    </table>
+  </div>
+{% </card> %}
+{%- endif %}
+
+{%- if se.engagements | length > 0 %}
+{% <card labelledby="engagements-title"> %}
+  {{ <card_head id="engagements-title" title={trans(key="service_engagements", lang=lang)} lead={trans(key="service_engagements_lead", lang=lang)} action={trans(key="xp_title", lang=lang)} href={get_url(path="@/_index.md", lang=lang) ~ "#experience"} /> }}
+  <ul class="grid grid-cols-1 gap-4 lg:grid-cols-2">
+    {%- for e in se.engagements %}
+    <li class="rounded-lg border border-gray-200 p-4 dark:border-gray-700">
+      <h3 class="text-base font-semibold text-gray-900 dark:text-white"><a class="hover:text-primary-700 hover:underline dark:hover:text-primary-300" href="{{ get_url(path='@/_index.md', lang=lang) }}#experience-{{ e.id }}">{% if e.sector and xr.sectors[e.sector] is defined %}{{ xr.sectors[e.sector]["name" ~ sfx] }}{% else %}{{ trans(key="sector_undisclosed", lang=lang) }}{% endif %}</a></h3>
+      <p class="mt-1 text-sm text-gray-600 dark:text-gray-400"><span class="font-semibold">{{ trans(key="skill_role", lang=lang) }}:</span> {% for k in e.roles %}{{ xr.roles[k]["name" ~ sfx] }}{% if not loop.last %}, {% endif %}{% endfor %}</p>
+      {%- if e.skills is defined %}{% set eks = e.skills %}{% else %}{% set eks = e.with %}{% endif %}
+      {%- if eks | length > 0 %}
+      <ul class="mt-3 flex flex-wrap gap-1.5">{% for k in eks %}<li>{{ <chip label={xr.capabilities[k]["name" ~ sfx]} href={get_url(path="@/skills/" ~ k ~ ".md", lang=lang)} size="xs" /> }}</li>{% endfor %}</ul>
+      {%- endif %}
+    </li>
+    {%- endfor %}
+  </ul>
+{% </card> %}
+{%- endif %}

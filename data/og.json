@@ -98,8 +98,8 @@
    "png": "c1b27b2f405937fc"
   },
   "cs-glossary": {
-   "svg": "2fdf66f388e56d95",
-   "png": "996e07226ec874e0"
+   "svg": "99cfe7e2306febc5",
+   "png": "ca776698612b255b"
   },
   "cs-glossary-ai-agent": {
    "svg": "396dac610d59844d",
@@ -117,13 +117,33 @@
    "svg": "6852dd06bb2dbcda",
    "png": "179746d5ec5d50ad"
   },
+  "cs-glossary-attack-surface": {
+   "svg": "3a54681bc92a52f0",
+   "png": "adda2f4db293d7ec"
+  },
   "cs-glossary-audit-trail": {
    "svg": "6d285c5887856d56",
    "png": "b597631eebc2a7fa"
   },
+  "cs-glossary-beneficial-ownership": {
+   "svg": "f806a25f88bf29c6",
+   "png": "7e64379eb3940f41"
+  },
+  "cs-glossary-broadway": {
+   "svg": "36bc1cdbe4c4edf0",
+   "png": "217c51387374ef4d"
+  },
   "cs-glossary-c": {
    "svg": "6806380a44b3d683",
    "png": "102e04c41adfda8e"
+  },
+  "cs-glossary-chain-of-custody": {
+   "svg": "2391fcaf3a05704a",
+   "png": "00a960788d1f3570"
+  },
+  "cs-glossary-change-detection": {
+   "svg": "8d7389f6f5fe4e81",
+   "png": "231d4e9c19db47d6"
   },
   "cs-glossary-chart-js": {
    "svg": "45dd6ee87367dd78",
@@ -140,6 +160,10 @@
   "cs-glossary-commit": {
    "svg": "53cf4d95857fb8a3",
    "png": "485babdb9a53963f"
+  },
+  "cs-glossary-contestability": {
+   "svg": "01909465e23ddecc",
+   "png": "fababda0358bf958"
   },
   "cs-glossary-cpp": {
    "svg": "b38deda6fab6da22",
@@ -173,6 +197,10 @@
    "svg": "aa185e5df5ae1987",
    "png": "5ed48457a0aedafc"
   },
+  "cs-glossary-digital-forensics": {
+   "svg": "c0fe209e5586ec23",
+   "png": "7ee373bfbfd4bc1d"
+  },
   "cs-glossary-dockerfile": {
    "svg": "1d995089c73e56f6",
    "png": "95871b5f4931a734"
@@ -196,6 +224,10 @@
   "cs-glossary-fastapi": {
    "svg": "0c8d12d0117a9376",
    "png": "082fef2580d788df"
+  },
+  "cs-glossary-financial-statement-analysis": {
+   "svg": "b1c9ec0df0accfc8",
+   "png": "110230e8cec43a3b"
   },
   "cs-glossary-flowbite-pro": {
    "svg": "1d48ff5ab89f4cd1",
@@ -265,6 +297,10 @@
    "svg": "2fbaa5ee85b687e3",
    "png": "462f549aa8a40982"
   },
+  "cs-glossary-lean": {
+   "svg": "1981e01dc5fb85df",
+   "png": "a58447ebb9eb14c3"
+  },
   "cs-glossary-majordomus": {
    "svg": "383b8d5bbd0733bf",
    "png": "17e1e4f90d579474"
@@ -281,6 +317,10 @@
    "svg": "bdb903f814532872",
    "png": "b9a1f84a59d78027"
   },
+  "cs-glossary-meilisearch": {
+   "svg": "d5baf102419d2252",
+   "png": "5c3beb77a5ff71f1"
+  },
   "cs-glossary-mergers-and-acquisitions": {
    "svg": "0da888c3c2a82e21",
    "png": "ce473b5d79fd0d2e"
@@ -293,9 +333,17 @@
    "svg": "bde1cd1fd6ff1b08",
    "png": "7bb2bfacf5aaf1a2"
   },
+  "cs-glossary-monte-carlo-simulation": {
+   "svg": "f501cddf60bd5706",
+   "png": "2ea3b7c493267d50"
+  },
   "cs-glossary-nix": {
    "svg": "0aa2eac1bf7749f3",
    "png": "c7ad2e9af51552f7"
+  },
+  "cs-glossary-ollama": {
+   "svg": "ce330aee40967f8f",
+   "png": "d94d884e93282576"
   },
   "cs-glossary-open-graph": {
    "svg": "7b9089915fc8d859",
@@ -329,6 +377,10 @@
    "svg": "758f3149873afd1c",
    "png": "6726804c3a6e6df9"
   },
+  "cs-glossary-phoenix": {
+   "svg": "e272f9ebc01bea26",
+   "png": "e7e67465841959a1"
+  },
   "cs-glossary-playwright": {
    "svg": "7b0309c861f6408f",
    "png": "905d9bc120f21708"
@@ -337,6 +389,10 @@
    "svg": "4774418c3dc34104",
    "png": "d4a37f88ff68c295"
   },
+  "cs-glossary-policy-as-code": {
+   "svg": "bbc9bb64dd6857c4",
+   "png": "2709e163278fa8ff"
+  },
   "cs-glossary-postgis": {
    "svg": "ca4a8128db783013",
    "png": "0bb04c7446078925"
@@ -344,6 +400,10 @@
   "cs-glossary-postgresql": {
    "svg": "00c9121b5c455bc4",
    "png": "efb025aac4b135d9"
+  },
+  "cs-glossary-public-registry": {
+   "svg": "5777cfb3f7e76713",
+   "png": "5d4c78a5c0658e89"
   },
   "cs-glossary-pydantic": {
    "svg": "979d8e3c0ef803c4",
@@ -365,9 +425,17 @@
    "svg": "52a18aa8237cf3ce",
    "png": "3557c5855ad76756"
   },
+  "cs-glossary-regulatory-compliance": {
+   "svg": "73b8d0f315520839",
+   "png": "b44adc0e8659faa7"
+  },
   "cs-glossary-repository": {
    "svg": "56f9f6a1e1cb05b4",
    "png": "15c50820d21d273f"
+  },
+  "cs-glossary-reputation-risk": {
+   "svg": "ac4be4ec4d78bb13",
+   "png": "59503b6bf4088138"
   },
   "cs-glossary-risk-assessment": {
    "svg": "54e5dd1ccd7bf076",
@@ -381,13 +449,29 @@
    "svg": "91b152c2df3f7e7b",
    "png": "2395875f3ddb4538"
   },
+  "cs-glossary-sanctions-screening": {
+   "svg": "de3b8c44061535cc",
+   "png": "61a6923d715ab7a7"
+  },
   "cs-glossary-scss": {
    "svg": "f22d490bc144116d",
    "png": "e4804e243b67f8fa"
   },
+  "cs-glossary-service": {
+   "svg": "f527e3275621b1b1",
+   "png": "c1b0cba417b7d86e"
+  },
   "cs-glossary-shell": {
    "svg": "ad812298eea4c354",
    "png": "da7c404ed8678ae6"
+  },
+  "cs-glossary-skill": {
+   "svg": "e2273668f2f60552",
+   "png": "8df8ca95024a3ffa"
+  },
+  "cs-glossary-source-criticism": {
+   "svg": "2f5a4795250e2e73",
+   "png": "cfe5ac80988bb50e"
   },
   "cs-glossary-squirrel": {
    "svg": "69ddf2545e2b9e07",
@@ -429,6 +513,10 @@
    "svg": "ba384bd6504679b1",
    "png": "725cffd07e6c3725"
   },
+  "cs-glossary-web-scraping": {
+   "svg": "157a710c2f2eee75",
+   "png": "a6489945ffe7b83d"
+  },
   "cs-glossary-xslt": {
    "svg": "480d87c8506b1f54",
    "png": "d6d9c5c1ee10723b"
@@ -456,6 +544,186 @@
   "cs-repositories": {
    "svg": "90763d5b6d027bf9",
    "png": "555780086f936498"
+  },
+  "cs-service-ai-engineering-governance": {
+   "svg": "720e4e84b3dd56f1",
+   "png": "15f20dec06b1c895"
+  },
+  "cs-service-attack-surface": {
+   "svg": "a7c246cf97ce6699",
+   "png": "9d0bab2bfa0edffd"
+  },
+  "cs-service-compliance-screening": {
+   "svg": "d1e847c4b28e376b",
+   "png": "4558857f0b153e7e"
+  },
+  "cs-service-continuous-monitoring": {
+   "svg": "88a7266832d89779",
+   "png": "37868e3a20811508"
+  },
+  "cs-service-decision-support-ai": {
+   "svg": "ba1368a07a8fb067",
+   "png": "7eee406dc515e47b"
+  },
+  "cs-service-digital-forensics": {
+   "svg": "3efbb8295e2d089e",
+   "png": "9deca1fe8ff438e6"
+  },
+  "cs-service-digital-investigation": {
+   "svg": "19d87ac90aae6119",
+   "png": "7d3f2b97af32a404"
+  },
+  "cs-service-due-diligence": {
+   "svg": "a221f47530d52746",
+   "png": "f723fa5c7d7bb865"
+  },
+  "cs-service-interactive-data-products": {
+   "svg": "a86ac4ad94baf8ff",
+   "png": "23a0859ef62772e4"
+  },
+  "cs-service-m-and-a": {
+   "svg": "77a9a89b19097a82",
+   "png": "9f86fe4e8e92059d"
+  },
+  "cs-service-reputation-intelligence": {
+   "svg": "cf855db7b005b469",
+   "png": "8842393d9ec49e59"
+  },
+  "cs-services": {
+   "svg": "39b76a383fba652a",
+   "png": "3ede80f73fdc010f"
+  },
+  "cs-skill-ai-transformation": {
+   "svg": "56b70d25f35e94ab",
+   "png": "eb44cba1e7099615"
+  },
+  "cs-skill-audit-trail": {
+   "svg": "2aae8481dc2dbb6f",
+   "png": "5b63a52db3c25f18"
+  },
+  "cs-skill-chain-of-custody": {
+   "svg": "d24887d4137aa1b8",
+   "png": "2a6a47e7486f05a8"
+  },
+  "cs-skill-change-monitoring": {
+   "svg": "0adfdf7218c3a8e8",
+   "png": "2a9aa69321d0a02e"
+  },
+  "cs-skill-compliance-mapping": {
+   "svg": "03543a8a16d9cea0",
+   "png": "e22de8ec2fbc0f15"
+  },
+  "cs-skill-contestable-decisions": {
+   "svg": "2ab7c23dce9ed47d",
+   "png": "08962433d159cec6"
+  },
+  "cs-skill-data-integration": {
+   "svg": "e69f0b6940168784",
+   "png": "147d64c2f7655f43"
+  },
+  "cs-skill-data-room": {
+   "svg": "8ddb045ed06de25b",
+   "png": "b406877e663319af"
+  },
+  "cs-skill-decision-support": {
+   "svg": "999db0a1653231a7",
+   "png": "d3453b4edcd0b929"
+  },
+  "cs-skill-document-extraction": {
+   "svg": "9fba1e585daef244",
+   "png": "2f2b1d666d6951bc"
+  },
+  "cs-skill-due-diligence": {
+   "svg": "f6a3cde181d58d5a",
+   "png": "aad5935b6768e346"
+  },
+  "cs-skill-entity-resolution": {
+   "svg": "5fff3b6b2439f8a8",
+   "png": "aebcd97dc9292985"
+  },
+  "cs-skill-financial-analysis": {
+   "svg": "0ab1e92d51876628",
+   "png": "93d8368be80220ef"
+  },
+  "cs-skill-geospatial-analysis": {
+   "svg": "76c60dd869c85709",
+   "png": "f4392d94dad4e94c"
+  },
+  "cs-skill-infrastructure-osint": {
+   "svg": "65e0d97b4e11af8a",
+   "png": "8592ba6087ed6bb4"
+  },
+  "cs-skill-insolvency-monitoring": {
+   "svg": "d960771748efca55",
+   "png": "fbafb6d95967f114"
+  },
+  "cs-skill-interactive-visualisation": {
+   "svg": "208c42c49eb8b975",
+   "png": "c4c93eb4c08abd79"
+  },
+  "cs-skill-knowledge-graph": {
+   "svg": "0f03ef2025479149",
+   "png": "77e4b5c27ddf2058"
+  },
+  "cs-skill-llm-agents": {
+   "svg": "82ca66b10db960e6",
+   "png": "7dd4d58a0241e295"
+  },
+  "cs-skill-m-and-a-screening": {
+   "svg": "43e5427309d7de18",
+   "png": "c19ed6770afc95cc"
+  },
+  "cs-skill-market-intelligence": {
+   "svg": "e68cf7cc3209e4d4",
+   "png": "70759ac6a096690a"
+  },
+  "cs-skill-media-forensics": {
+   "svg": "478919a14758c293",
+   "png": "eb7d0b14b3ddf003"
+  },
+  "cs-skill-narrative-analysis": {
+   "svg": "5978ef91c746710e",
+   "png": "deb26ca53f554bad"
+  },
+  "cs-skill-orchestration": {
+   "svg": "f091cfe764de0c68",
+   "png": "fe5ded01e910ccab"
+  },
+  "cs-skill-osint-investigation": {
+   "svg": "3680585183142a32",
+   "png": "a42209cc97a126f1"
+  },
+  "cs-skill-ownership-analysis": {
+   "svg": "3d31609aaa9e7a1e",
+   "png": "f8d50b6f31b1233e"
+  },
+  "cs-skill-policy-as-code": {
+   "svg": "e7bafee2cf39a449",
+   "png": "cef93425dd6967fc"
+  },
+  "cs-skill-registry-intelligence": {
+   "svg": "ddd015f76c1ce8be",
+   "png": "af93c5484c38f596"
+  },
+  "cs-skill-risk-scoring": {
+   "svg": "2acb00ebade98524",
+   "png": "d48813e8d856d03d"
+  },
+  "cs-skill-sanctions-screening": {
+   "svg": "f08de904b807242d",
+   "png": "eb8067a3013486b3"
+  },
+  "cs-skill-source-reliability": {
+   "svg": "d43063d3b1039355",
+   "png": "7af66f6bc8a57bb9"
+  },
+  "cs-skill-web-automation": {
+   "svg": "74ff6b4850fe615f",
+   "png": "6cc54ed1794add33"
+  },
+  "cs-skills": {
+   "svg": "4840d11aad788a3b",
+   "png": "6f54a44a31f80d28"
   },
   "cs-stack": {
    "svg": "04979e5ab7f9a718",
@@ -638,8 +906,8 @@
    "png": "0fa59d0c2a5cbac3"
   },
   "glossary": {
-   "svg": "a97251d0866d03e1",
-   "png": "232123d4db2297ad"
+   "svg": "5dd9bf8c109d2b71",
+   "png": "54826ad271e44774"
   },
   "glossary-ai-agent": {
    "svg": "15b8c1052c5bd097",
@@ -657,13 +925,33 @@
    "svg": "3cbca97edfebb498",
    "png": "f2355a4f0b72ed76"
   },
+  "glossary-attack-surface": {
+   "svg": "c209e6df76e7f6f9",
+   "png": "234ae1bbea78710f"
+  },
   "glossary-audit-trail": {
    "svg": "dfd9f07c65aec1c6",
    "png": "6385241c7fabcd9d"
   },
+  "glossary-beneficial-ownership": {
+   "svg": "c30eff8670983d70",
+   "png": "e5e905d330424fac"
+  },
+  "glossary-broadway": {
+   "svg": "38a130f0c3654298",
+   "png": "d81f0f412d0f747a"
+  },
   "glossary-c": {
    "svg": "c941e36ad5f584cf",
    "png": "0779a308862e288a"
+  },
+  "glossary-chain-of-custody": {
+   "svg": "d1a5b13435e791b8",
+   "png": "72d7523695a94f7e"
+  },
+  "glossary-change-detection": {
+   "svg": "c26522375d610c45",
+   "png": "8a8989005b696375"
   },
   "glossary-chart-js": {
    "svg": "2e56274d242dcdcc",
@@ -680,6 +968,10 @@
   "glossary-commit": {
    "svg": "d141a6218967c7e9",
    "png": "4b75d9ede22c107d"
+  },
+  "glossary-contestability": {
+   "svg": "ce17defda42d9f5b",
+   "png": "a88e38e1a73a08a0"
   },
   "glossary-cpp": {
    "svg": "10ecf78897b7fba2",
@@ -713,6 +1005,10 @@
    "svg": "75e6e575c2e682ae",
    "png": "c01bc53611529425"
   },
+  "glossary-digital-forensics": {
+   "svg": "d1fb779fcd0eaf39",
+   "png": "ff9acc4e5bde4a1a"
+  },
   "glossary-dockerfile": {
    "svg": "56d8205eb9b48eee",
    "png": "6b124ac22d13d60e"
@@ -736,6 +1032,10 @@
   "glossary-fastapi": {
    "svg": "6a1b56b9c6fb79a9",
    "png": "3e252060b00dccf5"
+  },
+  "glossary-financial-statement-analysis": {
+   "svg": "de5a33587a569bc7",
+   "png": "4eed2eae40cdb784"
   },
   "glossary-flowbite-pro": {
    "svg": "5697bdf13ddccea1",
@@ -805,6 +1105,10 @@
    "svg": "7a80cdd696f298b8",
    "png": "8c878cca0602804e"
   },
+  "glossary-lean": {
+   "svg": "a35013d161411a7a",
+   "png": "5f72b221b82b933c"
+  },
   "glossary-majordomus": {
    "svg": "3a9a3219475dce89",
    "png": "50a44fc7bf21353c"
@@ -821,6 +1125,10 @@
    "svg": "e38c0acbe8937dec",
    "png": "c736037ecceeef54"
   },
+  "glossary-meilisearch": {
+   "svg": "7d1fa84921608edc",
+   "png": "227996ccdfbb07e2"
+  },
   "glossary-mergers-and-acquisitions": {
    "svg": "5fafd75859d60ffd",
    "png": "bb1b5db09e0e591f"
@@ -833,9 +1141,17 @@
    "svg": "80409a6a3c0b3236",
    "png": "ccdbf9b6e6f82417"
   },
+  "glossary-monte-carlo-simulation": {
+   "svg": "31d72b22b4f2b1cc",
+   "png": "bf3354108f331f08"
+  },
   "glossary-nix": {
    "svg": "0f3438a227f9f0af",
    "png": "7a9568e68d9c139b"
+  },
+  "glossary-ollama": {
+   "svg": "59fbc2526dc52400",
+   "png": "f886b1f490410d3b"
   },
   "glossary-open-graph": {
    "svg": "385b81863cf7eb27",
@@ -869,6 +1185,10 @@
    "svg": "9acfb4863689e947",
    "png": "e164fe408359989d"
   },
+  "glossary-phoenix": {
+   "svg": "6d0a372e09695851",
+   "png": "c2c20674a2747b27"
+  },
   "glossary-playwright": {
    "svg": "be456a684388f4d0",
    "png": "f69caad6b47bc831"
@@ -877,6 +1197,10 @@
    "svg": "c995db5831c6cc69",
    "png": "6e8bfcf257dd0fec"
   },
+  "glossary-policy-as-code": {
+   "svg": "a77d1d555efc8b83",
+   "png": "048b0c589c46045a"
+  },
   "glossary-postgis": {
    "svg": "dff49eb873919502",
    "png": "ef54879f1a93e1d5"
@@ -884,6 +1208,10 @@
   "glossary-postgresql": {
    "svg": "8a1bc6ae6d2d6278",
    "png": "eb46541ebd074f24"
+  },
+  "glossary-public-registry": {
+   "svg": "0abd1fed6a1b0f9a",
+   "png": "f0fab49dcd58a044"
   },
   "glossary-pydantic": {
    "svg": "e16254e5b2ae2777",
@@ -905,9 +1233,17 @@
    "svg": "b3ba78dcd95256b2",
    "png": "0e79c0deea4579f9"
   },
+  "glossary-regulatory-compliance": {
+   "svg": "863838b52a53d36c",
+   "png": "3a644ba1aa9e1ab8"
+  },
   "glossary-repository": {
    "svg": "49069c1fa93ec921",
    "png": "aada6f457218d950"
+  },
+  "glossary-reputation-risk": {
+   "svg": "587d47a5f277272f",
+   "png": "e44210a911364d05"
   },
   "glossary-risk-assessment": {
    "svg": "d42fcf82555b67ea",
@@ -921,13 +1257,29 @@
    "svg": "161013cb2c84b2fa",
    "png": "65ce2ae5f7f29bfc"
   },
+  "glossary-sanctions-screening": {
+   "svg": "7e67d0c92b312e9a",
+   "png": "fff9226f3296e3a0"
+  },
   "glossary-scss": {
    "svg": "0b35be2c6e096299",
    "png": "6e351ac1784d82ea"
   },
+  "glossary-service": {
+   "svg": "538352dc30b2072c",
+   "png": "8fb598f7c1e699f1"
+  },
   "glossary-shell": {
    "svg": "9582c43a378aaacf",
    "png": "ec1abd39b60c23ab"
+  },
+  "glossary-skill": {
+   "svg": "5ab4a42dbfdcbe90",
+   "png": "b310de6a7b494e8f"
+  },
+  "glossary-source-criticism": {
+   "svg": "53ae01d55859309e",
+   "png": "28f236eebb1eb004"
   },
   "glossary-squirrel": {
    "svg": "3c5aa05b4d379bc3",
@@ -969,6 +1321,10 @@
    "svg": "05c48ca1f660498f",
    "png": "b294909a87db9eef"
   },
+  "glossary-web-scraping": {
+   "svg": "d8a6e0c60fd863e0",
+   "png": "b2d6aaa162415639"
+  },
   "glossary-xslt": {
    "svg": "9d632d62cbd33a1d",
    "png": "113bc6d25a732216"
@@ -996,6 +1352,186 @@
   "repositories": {
    "svg": "aa629857580cf357",
    "png": "3ecdaf480d5d6141"
+  },
+  "service-ai-engineering-governance": {
+   "svg": "44ad77e48c777be3",
+   "png": "0c7e81ff6eb3ae22"
+  },
+  "service-attack-surface": {
+   "svg": "90f315152f6b0450",
+   "png": "ddaa4fbdebda6080"
+  },
+  "service-compliance-screening": {
+   "svg": "ef401ab927f1534f",
+   "png": "e37a69954e3b6acf"
+  },
+  "service-continuous-monitoring": {
+   "svg": "5b691b223be90f63",
+   "png": "f35a8fca4e689100"
+  },
+  "service-decision-support-ai": {
+   "svg": "4870508df40a7ccc",
+   "png": "a8aac3641984df89"
+  },
+  "service-digital-forensics": {
+   "svg": "3e83860d5bbb764b",
+   "png": "ee685b51b90338a8"
+  },
+  "service-digital-investigation": {
+   "svg": "96c190391fa72549",
+   "png": "351d2b3b0d598cba"
+  },
+  "service-due-diligence": {
+   "svg": "2ab261afad983be2",
+   "png": "22c60392bdd9bfe5"
+  },
+  "service-interactive-data-products": {
+   "svg": "133a48d4654567d7",
+   "png": "b37c55e796c3ae73"
+  },
+  "service-m-and-a": {
+   "svg": "ed139e44fb44df7f",
+   "png": "289c8bb00c972f90"
+  },
+  "service-reputation-intelligence": {
+   "svg": "6987c78d9480e964",
+   "png": "075462deee19289a"
+  },
+  "services": {
+   "svg": "d02e9b84093d8560",
+   "png": "b3e8e305818e4251"
+  },
+  "skill-ai-transformation": {
+   "svg": "fbffa5c9c06e57aa",
+   "png": "be7473699282b054"
+  },
+  "skill-audit-trail": {
+   "svg": "1287600b26e863f0",
+   "png": "f672f54ee6c59f69"
+  },
+  "skill-chain-of-custody": {
+   "svg": "049f825217e9f0fa",
+   "png": "0d9fae6852b86e8b"
+  },
+  "skill-change-monitoring": {
+   "svg": "9869618379b21091",
+   "png": "73a9ad693a35f1ae"
+  },
+  "skill-compliance-mapping": {
+   "svg": "836f6a5af5efc571",
+   "png": "289c1566c8a84911"
+  },
+  "skill-contestable-decisions": {
+   "svg": "aa8e0f9ed47f2427",
+   "png": "172d558a1cc4eb03"
+  },
+  "skill-data-integration": {
+   "svg": "197b24d2de541be4",
+   "png": "d89347c3c81f20f5"
+  },
+  "skill-data-room": {
+   "svg": "866ac584ad8282c8",
+   "png": "50a8f3f76755fd6e"
+  },
+  "skill-decision-support": {
+   "svg": "d3643a06e048b76e",
+   "png": "0afd9687ceebf504"
+  },
+  "skill-document-extraction": {
+   "svg": "27bb6fece23dbae7",
+   "png": "c80975e422d82fef"
+  },
+  "skill-due-diligence": {
+   "svg": "c4896c78342331d7",
+   "png": "7920f096ef3dcfbf"
+  },
+  "skill-entity-resolution": {
+   "svg": "aa481893bd137b79",
+   "png": "aaa4b2cff9e9f504"
+  },
+  "skill-financial-analysis": {
+   "svg": "c6db226c1cb159b1",
+   "png": "9e713d1eb6ea4972"
+  },
+  "skill-geospatial-analysis": {
+   "svg": "52f964a4b9545633",
+   "png": "7918b5d5af67c345"
+  },
+  "skill-infrastructure-osint": {
+   "svg": "7c374b5cb0acd0e1",
+   "png": "0a43ac46eca5bf66"
+  },
+  "skill-insolvency-monitoring": {
+   "svg": "6a4430bed53066e2",
+   "png": "e1c7a5ee09983264"
+  },
+  "skill-interactive-visualisation": {
+   "svg": "165788e6fd076499",
+   "png": "656b62e1f802437c"
+  },
+  "skill-knowledge-graph": {
+   "svg": "107d31132329d084",
+   "png": "df2fbf5da268b922"
+  },
+  "skill-llm-agents": {
+   "svg": "abaaa5aaa6832729",
+   "png": "90180cf96ad5020b"
+  },
+  "skill-m-and-a-screening": {
+   "svg": "866a5d8a78c5a381",
+   "png": "ceb45199e5ad4afd"
+  },
+  "skill-market-intelligence": {
+   "svg": "5afa72f1791c0495",
+   "png": "aac286a3068d268c"
+  },
+  "skill-media-forensics": {
+   "svg": "e04d58c4811c82b3",
+   "png": "4d48e9a01e360b67"
+  },
+  "skill-narrative-analysis": {
+   "svg": "f37cda15dd83f3a6",
+   "png": "78f3205e39291213"
+  },
+  "skill-orchestration": {
+   "svg": "dccccf8736d36bba",
+   "png": "b10babc1fd940fc6"
+  },
+  "skill-osint-investigation": {
+   "svg": "880e4ad229af5a33",
+   "png": "a20ed6ddd5b932bc"
+  },
+  "skill-ownership-analysis": {
+   "svg": "f2b255ec1d3feeaa",
+   "png": "53d0ddfad614ba35"
+  },
+  "skill-policy-as-code": {
+   "svg": "ba3a37786e1182a2",
+   "png": "37e2b6ff10f516ae"
+  },
+  "skill-registry-intelligence": {
+   "svg": "3aebba8e0635c1e9",
+   "png": "b77161fbf0666703"
+  },
+  "skill-risk-scoring": {
+   "svg": "928b84606b874713",
+   "png": "9581349cf3aa95b5"
+  },
+  "skill-sanctions-screening": {
+   "svg": "7e825ecc515c6944",
+   "png": "e07d549e6e5c1074"
+  },
+  "skill-source-reliability": {
+   "svg": "0d81e670f9c1c613",
+   "png": "9d7022962b536010"
+  },
+  "skill-web-automation": {
+   "svg": "4eedd3d11f9f83c5",
+   "png": "eb7ea11e9809148f"
+  },
+  "skills": {
+   "svg": "5fbc5f8bd4921f99",
+   "png": "23120e64316ed546"
   },
   "stack": {
    "svg": "4c58d77fb0f25c95",

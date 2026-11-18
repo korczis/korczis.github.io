@@ -3,7 +3,7 @@
 title = "Mermaid"
 description = "A text language for diagrams (flowcharts, sequences, state machines) rendered from Markdown-like source."
 template = "term.html"
-weight = 17
+weight = 18
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]

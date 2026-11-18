@@ -3,7 +3,7 @@
 title = "R (programovací jazyk)"
 description = "Jazyk a prostředí pro statistiku a analýzu dat, s grafy a rozsáhlou knihovnou statistických metod."
 template = "term.html"
-weight = 22
+weight = 23
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]

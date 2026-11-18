@@ -3,7 +3,7 @@
 title = "PostgreSQL"
 description = "An open-source relational database known for correctness and extensions."
 template = "term.html"
-weight = 50
+weight = 55
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "An open-source relational database known for correctness and extensions."
 aliases = ["postgres"]
 reference = { title = "postgresql.org", url = "https://www.postgresql.org/about/" }
-pages = ["hire.md", "projects/tools.md", "_index.md"]
-related = ["elixir", "open-source", "rust", "ai-agent", "cpp", "csharp", "due-diligence", "javascript"]
+pages = ["hire.md", "projects/tools.md", "services/attack-surface.md", "services/compliance-screening.md", "services/continuous-monitoring.md", "services/digital-forensics.md", "services/digital-investigation.md", "services/due-diligence.md", "services/m-and-a.md", "_index.md"]
+related = ["elixir", "javascript", "alpine-js", "claude-api", "dockerfile", "fastapi", "flowbite-pro", "html"]
 og_title = "PostgreSQL: glossary"
 og_image = "og/glossary-postgresql.png"
 keywords = ["PostgreSQL", "Technology", "Glossary", "Tomas Korcak"]

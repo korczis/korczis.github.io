@@ -3,7 +3,7 @@
 title = "Cytoscape.js"
 description = "Knihovna pro kreslení a analýzu grafů (sítí uzlů a hran) v prohlížeči."
 template = "term.html"
-weight = 36
+weight = 38
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Knihovna pro kreslení a analýzu grafů (sítí uzlů a hran) v prohlížeči."
 aliases = []
 reference = { title = "js.cytoscape.org", url = "https://js.cytoscape.org/" }
-pages = ["projects/knowledge.cs.md", "stack.cs.md", "work/kompendium-epistemicke-anihilace.cs.md"]
-related = ["alpine-js", "apache-echarts", "flowbite-pro", "zola", "elixir", "github-pages", "repository", "chart-js"]
+pages = ["projects/knowledge.cs.md", "services/digital-investigation.cs.md", "skills/knowledge-graph.cs.md", "stack.cs.md", "work/kompendium-epistemicke-anihilace.cs.md"]
+related = ["alpine-js", "flowbite-pro", "apache-echarts", "elixir", "html", "javascript", "python", "shell"]
 og_title = "Cytoscape.js: slovník"
 og_image = "og/cs-glossary-cytoscape-js.png"
 keywords = ["Cytoscape.js", "Technologie", "Slovník", "Tomáš Korčák"]

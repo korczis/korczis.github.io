@@ -3,7 +3,7 @@
 title = "MCP"
 description = "Model Context Protocol: otevřený protokol, kterým AI aplikace přistupují k nástrojům a datům."
 template = "term.html"
-weight = 44
+weight = 46
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Model Context Protocol: otevřený protokol, kterým AI aplikace přistupují k nástrojům a datům."
 aliases = ["model-context-protocol"]
 reference = { title = "modelcontextprotocol.io", url = "https://modelcontextprotocol.io/" }
-pages = ["hire.cs.md", "interfaces.cs.md", "projects/ai.cs.md", "projects/data.cs.md", "work/crisis-map.cs.md", "work/prismatic-majordomus.cs.md"]
-related = ["ai-agent", "elixir", "repository", "rust", "github-pages", "html", "javascript", "open-source"]
+pages = ["hire.cs.md", "interfaces.cs.md", "projects/ai.cs.md", "projects/data.cs.md", "services/ai-engineering-governance.cs.md", "services/decision-support-ai.cs.md", "skills/geospatial-analysis.cs.md", "skills/registry-intelligence.cs.md", "work/crisis-map.cs.md", "work/prismatic-majordomus.cs.md"]
+related = ["elixir", "javascript", "ai-agent", "css", "html", "python", "rust", "majordomus"]
 og_title = "MCP: slovník"
 og_image = "og/cs-glossary-mcp.png"
 keywords = ["MCP", "Technologie", "Slovník", "Tomáš Korčák"]

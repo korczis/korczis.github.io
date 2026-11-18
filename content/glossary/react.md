@@ -3,7 +3,7 @@
 title = "React"
 description = "A JavaScript library for user interfaces built from components that re-render from state."
 template = "term.html"
-weight = 52
+weight = 57
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

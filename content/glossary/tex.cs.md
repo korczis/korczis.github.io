@@ -3,7 +3,7 @@
 title = "TeX"
 description = "Sázecí jazyk pro dokumenty a matematiku; LaTeX je balík maker, ve kterém je napsaná většina dokumentů."
 template = "term.html"
-weight = 29
+weight = 30
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]

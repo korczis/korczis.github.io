@@ -3,7 +3,7 @@
 title = "Playwright"
 description = "Knihovna pro automatizaci prohlížeče, která ovládá Chromium, Firefox a WebKit pro end-to-end testy a audity."
 template = "term.html"
-weight = 48
+weight = 53
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Knihovna pro automatizaci prohlížeče, která ovládá Chromium, Firefox a WebKit pro end-to-end testy a audity."
 aliases = []
 reference = { title = "Playwright documentation", url = "https://playwright.dev/docs/intro" }
-pages = ["_index.cs.md"]
-related = []
+pages = ["services/digital-investigation.cs.md", "services/due-diligence.cs.md", "_index.cs.md"]
+related = ["alpine-js", "beneficial-ownership", "claude-api", "dockerfile", "elixir", "fastapi", "flowbite-pro", "github-actions"]
 og_title = "Playwright: slovník"
 og_image = "og/cs-glossary-playwright.png"
 keywords = ["Playwright", "Technologie", "Slovník", "Tomáš Korčák"]

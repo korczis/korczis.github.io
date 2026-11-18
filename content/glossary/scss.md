@@ -3,7 +3,7 @@
 title = "SCSS"
 description = "CSS with variables, nesting and mixins, compiled by Sass into plain CSS."
 template = "term.html"
-weight = 25
+weight = 26
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]

@@ -3,7 +3,7 @@
 title = "Web Audio"
 description = "Rozhraní prohlížeče pro generování, zpracování a analýzu zvuku v reálném čase."
 template = "term.html"
-weight = 55
+weight = 60
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Rozhraní prohlížeče pro generování, zpracování a analýzu zvuku v reálném čase."
 aliases = []
 reference = { title = "MDN Web Docs: Web Audio API", url = "https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API" }
-pages = ["projects/science.cs.md", "work/oscilla.cs.md"]
-related = ["data-visualisation", "javascript", "repository", "alpine-js", "apache-echarts", "commit", "cpp", "css"]
+pages = ["projects/science.cs.md", "services/interactive-data-products.cs.md", "skills/contestable-decisions.cs.md", "work/oscilla.cs.md"]
+related = ["javascript", "css", "data-visualisation", "html", "alpine-js", "apache-echarts", "elixir", "flowbite-pro"]
 og_title = "Web Audio: slovník"
 og_image = "og/cs-glossary-web-audio.png"
 keywords = ["Web Audio", "Technologie", "Slovník", "Tomáš Korčák"]

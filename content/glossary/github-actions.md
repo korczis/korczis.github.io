@@ -3,7 +3,7 @@
 title = "GitHub Actions"
 description = "GitHub's continuous integration: workflows of jobs that build, test and deploy a repository on every push or on a schedule."
 template = "term.html"
-weight = 40
+weight = 42
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "GitHub's continuous integration: workflows of jobs that build, test and deploy a repository on every push or on a schedule."
 aliases = []
 reference = { title = "GitHub Actions documentation", url = "https://docs.github.com/en/actions" }
-pages = ["_index.md"]
-related = []
+pages = ["services/ai-engineering-governance.md", "services/attack-surface.md", "services/compliance-screening.md", "services/continuous-monitoring.md", "services/digital-investigation.md", "services/due-diligence.md", "services/m-and-a.md", "services/reputation-intelligence.md", "skills/ai-transformation.md", "skills/data-integration.md", "skills/data-room.md", "skills/document-extraction.md", "skills/entity-resolution.md", "skills/insolvency-monitoring.md", "skills/m-and-a-screening.md", "skills/market-intelligence.md", "skills/orchestration.md", "skills/risk-scoring.md", "_index.md"]
+related = ["alpine-js", "claude-api", "dockerfile", "flowbite-pro", "fastapi", "html", "javascript", "kubernetes"]
 og_title = "GitHub Actions: glossary"
 og_image = "og/glossary-github-actions.png"
 keywords = ["GitHub Actions", "Technology", "Glossary", "Tomas Korcak"]

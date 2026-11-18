@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{#- The skills (scripts/build-services.mjs): every capability of data/experience-rules.toml, grouped
+    by its domain, each a card that is a link as a whole with the services that draw on it and the
+    size of its evidence (data/services.json); then the graph. #}
+{% block content %}
+{%- set sfx = "" %}{% if lang is defined and lang != config.default_language %}{% set sfx = "_" ~ lang %}{% endif -%}
+{%- set sj = load_data(path="data/services.json") -%}
+{%- set xr = load_data(path="data/experience-rules.toml") -%}
+{{ <page_header title={section.title} lead={section.description} lang={lang} /> }}
+
+<div class="space-y-4 px-4 pt-6">
+  {%- for dkey in xr.domain_order %}{% set d = xr.domains[dkey] %}
+  <section aria-labelledby="domain-{{ dkey }}">
+    <div class="mb-3 flex items-baseline justify-between gap-3">
+      <h2 id="domain-{{ dkey }}" class="text-xl font-bold text-gray-900 dark:text-white">{{ d["name" ~ sfx] }}</h2>
+      <a class="text-sm font-medium text-primary-700 hover:underline dark:text-primary-400" href="{{ get_url(path='@/_index.md', lang=lang) }}#xp-domain-{{ dkey }}">{{ trans(key="xp_title", lang=lang) }}</a>
+    </div>
+    <p class="mb-4 max-w-3xl text-gray-600 dark:text-gray-400">{{ d["description" ~ sfx] }}</p>
+    <ul class="grid grid-cols-1 gap-4 md:grid-cols-2 2xl:grid-cols-3">
+      {%- for p in section.pages %}{% set c = xr.capabilities[p.extra.skill] %}{% if c.domain == dkey %}{% set se = sj.skills[p.extra.skill] %}
+      <li class="flex">
+        <a href="{{ p.permalink }}" class="group flex w-full flex-col rounded-lg bg-white p-5 shadow hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-gray-800 dark:focus:ring-primary-800">
+          <span class="font-semibold text-gray-900 group-hover:text-primary-700 dark:text-white dark:group-hover:text-primary-300">{{ p.title }}</span>
+          <span class="mt-1 text-sm text-gray-600 line-clamp-3 dark:text-gray-400">{{ p.description }}</span>
+          <span class="tabular mt-auto flex flex-wrap gap-3 pt-3 text-xs text-gray-600 dark:text-gray-400">
+            <span>{{ trans(key="skill_services", lang=lang) }}: <b class="text-gray-900 dark:text-white">{{ se.services | length }}</b></span>
+            <span>{{ trans(key="service_public", lang=lang) }}: <b class="text-gray-900 dark:text-white">{{ se.repos | length }}</b></span>
+            <span>{{ trans(key="service_tech", lang=lang) }}: <b class="text-gray-900 dark:text-white">{{ se.technologies | length }}</b></span>
+          </span>
+        </a>
+      </li>
+      {%- endif %}{% endfor %}
+    </ul>
+  </section>
+  {%- endfor %}
+  {%- include "partials/viz-grid.html" %}
+</div>
+{% endblock content %}

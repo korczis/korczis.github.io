@@ -265,6 +265,168 @@ term = "orchestration"
 categories = ["ai"]
 keywords = ["orchest*", "workflow*", "pipeline*", "queue*", "scheduler*", "dag", "oban", "temporal", "multi agent"]
 
+# Capabilities the services draw on (data/services.toml), from the owner's platform and public work.
+
+[capabilities.registry-intelligence]
+name = "Registry intelligence"
+name_cs = "Rejstříkové zpravodajství"
+description = "Public registers turned into reliable, structured data: native connectors with rate limits and caching, and a positive control before a \"nothing found\" is believed."
+description_cs = "Veřejné rejstříky převedené na spolehlivá strukturovaná data: nativní konektory s limity a cache a pozitivní kontrola dřív, než se uvěří výsledku „nic nenalezeno“."
+domain = "data"
+term = "public-registry"
+categories = ["security", "data"]
+keywords = ["registry*", "register*", "rejstrik*", "ares", "isir", "justice cz", "companies house", "gleif", "opencorporates", "edgar", "sbirka listin"]
+
+[capabilities.ownership-analysis]
+name = "Ownership and link analysis"
+name_cs = "Analýza vlastnictví a vazeb"
+description = "Tracing control and hidden relationships: ownership chains walked to the ultimate owner, officers and addresses shared across companies, offshore layers and circular holdings."
+description_cs = "Dohledání kontroly a skrytých vztahů: vlastnické řetězce až ke skutečnému majiteli, statutáři a adresy sdílené mezi firmami, offshore vrstvy a kruhové vlastnictví."
+domain = "dd"
+term = "beneficial-ownership"
+categories = ["security"]
+keywords = ["beneficial owner*", "ubo", "ownership", "owner*", "shareholder*", "skutecn* majitel*", "vlastnick*", "link analysis", "related part*", "offshore"]
+
+[capabilities.sanctions-screening]
+name = "Sanctions and PEP screening"
+name_cs = "Sankční a PEP prověrky"
+description = "Screening against sanctions and politically exposed persons with calibrated name matching: a match, a near-miss for a human to review, or nothing, and a failed screen never shown as a clean one."
+description_cs = "Prověrka proti sankčním seznamům a politicky exponovaným osobám s kalibrovaným párováním jmen: shoda, téměř shoda k lidskému posouzení, nebo nic, a neúspěšná prověrka se nikdy nevydává za čistou."
+domain = "dd"
+term = "sanctions-screening"
+categories = ["security"]
+keywords = ["sanction*", "sankc*", "pep", "politically exposed", "ofac", "opensanctions", "kyc", "aml", "watchlist*", "screening"]
+
+[capabilities.financial-analysis]
+name = "Financial statement analysis"
+name_cs = "Analýza účetních závěrek"
+description = "Financial health read from filed statements: several years extracted from registry documents into ratios, trends and the questions they raise."
+description_cs = "Finanční zdraví vyčtené z uložených výkazů: několik let vytěžených z dokumentů v rejstříku do ukazatelů, trendů a otázek, které vyvolávají."
+domain = "dd"
+term = "financial-statement-analysis"
+categories = ["security"]
+keywords = ["financial statement*", "balance sheet*", "income statement*", "ucetni zaverk*", "rozvah*", "vykaz*", "ratio*", "ebitda", "revenue*", "trzb*"]
+
+[capabilities.infrastructure-osint]
+name = "Infrastructure OSINT"
+name_cs = "Infrastrukturní OSINT"
+description = "Domains, IP addresses and certificates investigated from the outside: Whois and DNS history, certificate transparency, subdomains and exposed services."
+description_cs = "Domény, IP adresy a certifikáty zkoumané zvenčí: historie Whois a DNS, certificate transparency, subdomény a vystavené služby."
+domain = "data"
+term = "attack-surface"
+categories = ["security"]
+keywords = ["dns", "whois", "domain*", "subdomain*", "certificate transparency", "crt sh", "shodan", "censys", "nmap", "ip address*", "attack surface"]
+
+[capabilities.media-forensics]
+name = "Web and media forensics"
+name_cs = "Forenzní analýza webu a médií"
+description = "Where web content and images came from and how they changed: metadata, reverse image search and archive history, kept apart from opinion."
+description_cs = "Odkud webový obsah a obrázky pocházejí a jak se měnily: metadata, zpětné vyhledávání obrázků a historie v archivech, oddělené od názoru."
+domain = "data"
+term = "digital-forensics"
+categories = ["security"]
+keywords = ["forensic*", "forenz*", "exif", "metadata", "reverse image", "wayback", "archive*", "provenance", "tamper*", "timeline*"]
+
+[capabilities.chain-of-custody]
+name = "Chain of custody"
+name_cs = "Řetězec úschovy důkazů"
+description = "Evidence that shows any tampering and can be replayed: every acquisition hashed and chained into an append-only store, verified and exported as a sealed package."
+description_cs = "Důkazy, na kterých je vidět každá manipulace a které lze zpětně přehrát: každý sběr zahashovaný a zřetězený do úložiště jen pro zápis, ověřený a exportovaný jako zapečetěný balík."
+domain = "data"
+term = "chain-of-custody"
+categories = ["security"]
+keywords = ["chain of custody", "custody", "hash*", "sha256", "merkle", "append only", "evidence vault", "seal*", "integrity", "replay*"]
+
+[capabilities.source-reliability]
+name = "Source reliability"
+name_cs = "Spolehlivost zdrojů"
+description = "How far each source can be trusted and where sources disagree: reliability per source, an agreement matrix, coverage gaps found before they mislead."
+description_cs = "Nakolik lze věřit každému zdroji a kde se zdroje rozcházejí: spolehlivost po zdrojích, matice shody a mezery v pokrytí odhalené dřív, než svedou."
+domain = "data"
+term = "source-criticism"
+categories = ["security", "knowledge"]
+keywords = ["reliability", "credibility", "source* critic*", "false negative*", "cross check*", "corroborat*", "disinformation", "confidence", "agreement"]
+
+[capabilities.narrative-analysis]
+name = "Narrative and reputation analysis"
+name_cs = "Analýza narativů a reputace"
+description = "Real signal told apart from noise and from a coordinated campaign: adverse media scored for strength, coherence and manipulation, with early warning when the narrative shifts. Defensive only."
+description_cs = "Skutečný signál odlišený od šumu a od koordinované kampaně: negativní zprávy hodnocené podle síly, soudržnosti a manipulace, s včasným varováním při posunu narativu. Pouze obranně."
+domain = "data"
+term = "reputation-risk"
+categories = ["security", "media"]
+keywords = ["reputation*", "reputac*", "adverse media", "sentiment", "narrative*", "narativ*", "manipulat*", "propaganda", "campaign*", "media monitoring", "gdelt"]
+
+[capabilities.change-monitoring]
+name = "Continuous monitoring"
+name_cs = "Průběžný monitoring"
+description = "Collection that runs all the time and reports only what matters: sources fingerprinted, changes classified by materiality, backpressure and retries so a failure never goes silent."
+description_cs = "Sběr, který běží pořád a hlásí jen to podstatné: otisky zdrojů, změny tříděné podle významu, backpressure a opakování, aby žádné selhání nezůstalo tiché."
+domain = "data"
+term = "change-detection"
+categories = ["security", "data"]
+keywords = ["monitor*", "watch*", "alert*", "change detect*", "diff*", "broadway", "stream*", "webhook*", "notif*", "poll*"]
+
+[capabilities.web-automation]
+name = "Web automation and crawling"
+name_cs = "Webová automatizace a crawling"
+description = "Data out of sources that are hard to reach: policy-bound browser automation and crawlers that limit themselves, with every page kept as evidence."
+description_cs = "Data i ze špatně dostupných zdrojů: automatizace prohlížeče v mezích pravidel a crawlery, které se samy omezují, s každou stránkou uloženou jako důkaz."
+domain = "data"
+term = "web-scraping"
+categories = ["data", "tools"]
+keywords = ["scrap*", "crawl*", "playwright", "puppeteer", "selenium", "headless", "browser automation", "spider*", "harvest*"]
+
+[capabilities.contestable-decisions]
+name = "Contestable decisions"
+name_cs = "Napadnutelná rozhodnutí"
+description = "Decisions that can be challenged: competing hypotheses scored, uncertainty split into what more evidence can reduce and what it cannot, dissent and a named accountable person recorded."
+description_cs = "Rozhodnutí, která lze zpochybnit: soupeřící hypotézy s hodnocením, nejistota rozdělená na tu, kterou další důkazy sníží, a tu, kterou ne, a zaznamenaný nesouhlas i jmenovitě odpovědná osoba."
+domain = "ai"
+term = "contestability"
+categories = ["ai", "security"]
+keywords = ["hypothes*", "uncertaint*", "bayes*", "monte carlo", "calibrat*", "brier", "dissent*", "contestab*", "explainab*", "decision record*"]
+
+[capabilities.compliance-mapping]
+name = "Regulatory compliance mapping"
+name_cs = "Mapování regulatorní shody"
+description = "Findings turned into regulatory evidence: exposures and vetting results mapped to the controls of cybersecurity and resilience regimes such as NIS2."
+description_cs = "Zjištění převedená na regulatorní důkazy: expozice a výsledky prověrek namapované na opatření režimů kybernetické bezpečnosti a odolnosti, jako je NIS2."
+domain = "dd"
+term = "regulatory-compliance"
+categories = ["security"]
+keywords = ["compliance", "nis2", "nis 2", "dora", "gdpr", "regulat*", "control*", "zkb", "audit*", "vetting"]
+
+[capabilities.policy-as-code]
+name = "Policy as code"
+name_cs = "Pravidla jako kód"
+description = "Rules written as code and enforced by gates: what an AI agent or a developer may change is checked before the change lands, with the evidence kept."
+description_cs = "Pravidla zapsaná jako kód a vynucená branami: co smí AI agent nebo vývojář změnit, se kontroluje dřív, než změna přistane, a doklady zůstávají."
+domain = "ai"
+term = "policy-as-code"
+categories = ["ai", "tools"]
+keywords = ["policy as code", "policy", "doctrine", "gate*", "rule*", "governance", "guard*", "majordomus", "lint*", "enforce*"]
+
+[capabilities.interactive-visualisation]
+name = "Interactive visualisation"
+name_cs = "Interaktivní vizualizace"
+description = "Data and models a reader drives: simulators, explorable explanations and dashboards where every mark leads to its source."
+description_cs = "Data a modely, které čtenář sám ovládá: simulátory, explorable explanations a dashboardy, kde každá značka vede ke svému zdroji."
+domain = "data"
+term = "data-visualisation"
+categories = ["science", "media", "web"]
+keywords = ["visuali*", "vizualiz*", "simulat*", "dashboard*", "chart*", "graph*", "d3", "echarts", "p5", "interactive", "explorable"]
+
+[capabilities.geospatial-analysis]
+name = "Geospatial analysis"
+name_cs = "Geoprostorová analýza"
+description = "Places as data: geocoding, spatial queries and maps that put events, assets and registers on the ground."
+description_cs = "Místa jako data: geokódování, prostorové dotazy a mapy, které umisťují události, majetek a rejstříky na zem."
+domain = "data"
+term = "gis"
+categories = ["data"]
+keywords = ["gis", "geocod*", "postgis", "nominatim", "map*", "spatial", "geograph*", "coordinat*", "cadastr*", "katastr*"]
+
 # --- Roles ---------------------------------------------------------------------------------------
 
 [roles.architect]

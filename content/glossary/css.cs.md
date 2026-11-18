@@ -16,8 +16,8 @@ kind = "language"
 definition = "Stylový jazyk webu: rozvržení, barvy a typografie HTML."
 aliases = []
 reference = { title = "MDN Web Docs: CSS", url = "https://developer.mozilla.org/en-US/docs/Web/CSS" }
-pages = ["projects/web.cs.md", "work/astronomists.cs.md", "work/bubbler.cs.md", "work/catharsis-as-a-service.cs.md", "work/crisis-map.cs.md", "work/korczis-github-io.cs.md", "work/korczis-gitlab-io.cs.md", "work/openttd-prismatic-bridge.cs.md", "work/oscilla.cs.md", "work/prismatic-majordomus.cs.md", "work/prismatic.cs.md", "work/sonic-playground.cs.md", "work/the-psycho.cs.md", "work/u-tygra.cs.md", "work/vomaste-cz.cs.md"]
-related = ["repository", "commit", "html", "open-source", "javascript", "github-pages", "shell", "elixir"]
+pages = ["projects/web.cs.md", "services/ai-engineering-governance.cs.md", "services/decision-support-ai.cs.md", "services/digital-forensics.cs.md", "services/interactive-data-products.cs.md", "services/reputation-intelligence.cs.md", "skills/audit-trail.cs.md", "skills/contestable-decisions.cs.md", "skills/decision-support.cs.md", "skills/due-diligence.cs.md", "skills/geospatial-analysis.cs.md", "skills/interactive-visualisation.cs.md", "skills/llm-agents.cs.md", "skills/osint-investigation.cs.md", "skills/policy-as-code.cs.md", "skills/registry-intelligence.cs.md", "work/astronomists.cs.md", "work/bubbler.cs.md", "work/catharsis-as-a-service.cs.md", "work/crisis-map.cs.md", "work/korczis-github-io.cs.md", "work/korczis-gitlab-io.cs.md", "work/openttd-prismatic-bridge.cs.md", "work/oscilla.cs.md", "work/prismatic-majordomus.cs.md", "work/prismatic.cs.md", "work/sonic-playground.cs.md", "work/the-psycho.cs.md", "work/u-tygra.cs.md", "work/vomaste-cz.cs.md"]
+related = ["html", "javascript", "shell", "python", "elixir", "repository", "commit", "open-source"]
 og_title = "CSS: slovník"
 og_image = "og/cs-glossary-css.png"
 keywords = ["CSS", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

@@ -3,7 +3,7 @@
 title = "FastAPI"
 description = "Webový framework v Pythonu pro HTTP API, typovaný modely Pydantic, které validují požadavky a generují popis OpenAPI."
 template = "term.html"
-weight = 38
+weight = 40
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Webový framework v Pythonu pro HTTP API, typovaný modely Pydantic, které validují požadavky a generují popis OpenAPI."
 aliases = []
 reference = { title = "FastAPI documentation", url = "https://fastapi.tiangolo.com/" }
-pages = ["_index.cs.md"]
-related = []
+pages = ["services/_index.cs.md", "services/attack-surface.cs.md", "services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "services/decision-support-ai.cs.md", "services/digital-forensics.cs.md", "services/digital-investigation.cs.md", "services/due-diligence.cs.md", "services/m-and-a.cs.md", "services/reputation-intelligence.cs.md", "skills/_index.cs.md", "skills/ai-transformation.cs.md", "skills/audit-trail.cs.md", "skills/data-integration.cs.md", "skills/data-room.cs.md", "skills/decision-support.cs.md", "skills/document-extraction.cs.md", "skills/due-diligence.cs.md", "skills/entity-resolution.cs.md", "skills/insolvency-monitoring.cs.md", "skills/m-and-a-screening.cs.md", "skills/market-intelligence.cs.md", "skills/orchestration.cs.md", "skills/risk-scoring.cs.md", "_index.cs.md"]
+related = ["alpine-js", "dockerfile", "html", "javascript", "claude-api", "flowbite-pro", "github-actions", "kubernetes"]
 og_title = "FastAPI: slovník"
 og_image = "og/cs-glossary-fastapi.png"
 keywords = ["FastAPI", "Technologie", "Slovník", "Tomáš Korčák"]

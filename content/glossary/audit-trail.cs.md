@@ -3,7 +3,7 @@
 title = "Auditní stopa"
 description = "Chronologický záznam o tom, kdo co udělal a na základě jakých podkladů, uchovaný proto, aby šlo práci později ověřit a zrekonstruovat."
 template = "term.html"
-weight = 58
+weight = 64
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]
@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Chronologický záznam o tom, kdo co udělal a na základě jakých podkladů, uchovaný proto, aby šlo práci později ověřit a zrekonstruovat."
 aliases = []
 reference = { title = "Audit trail (Wikipedia)", url = "https://en.wikipedia.org/wiki/Audit_trail" }
-pages = ["projects/security.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md"]
-related = ["data-integration", "decision-support-system", "due-diligence", "html", "information-extraction", "insolvency", "knowledge-graph", "market-intelligence"]
+pages = ["projects/security.cs.md", "services/_index.cs.md", "services/ai-engineering-governance.cs.md", "services/decision-support-ai.cs.md", "services/digital-forensics.cs.md", "skills/_index.cs.md", "skills/audit-trail.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md"]
+related = ["html", "python", "shell", "alpine-js", "dockerfile", "javascript", "orchestration", "decision-support-system"]
 og_title = "Auditní stopa: slovník"
 og_image = "og/cs-glossary-audit-trail.png"
 keywords = ["Auditní stopa", "Audit trail", "Koncept", "Slovník", "Tomáš Korčák"]

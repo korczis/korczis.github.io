@@ -3,7 +3,7 @@
 title = "Zola"
 description = "Generátor statických webů v jedné binárce v Rustu: dovnitř Markdown a šablony, ven celý vícejazyčný web."
 template = "term.html"
-weight = 56
+weight = 61
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Generátor statických webů v jedné binárce v Rustu: dovnitř Markdown a šablony, ven celý vícejazyčný web."
 aliases = []
 reference = { title = "getzola.org", url = "https://www.getzola.org/documentation/getting-started/overview/" }
-pages = ["_index.cs.md", "projects/ai.cs.md", "projects/knowledge.cs.md", "stack.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/prismatic-majordomus.cs.md"]
-related = ["repository", "flowbite-pro", "alpine-js", "apache-echarts", "commit", "cytoscape-js", "elixir", "github-pages"]
+pages = ["_index.cs.md", "projects/ai.cs.md", "projects/knowledge.cs.md", "services/ai-engineering-governance.cs.md", "services/interactive-data-products.cs.md", "skills/policy-as-code.cs.md", "stack.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/prismatic-majordomus.cs.md"]
+related = ["alpine-js", "flowbite-pro", "apache-echarts", "elixir", "html", "javascript", "python", "repository"]
 og_title = "Zola: slovník"
 og_image = "og/cs-glossary-zola.png"
 keywords = ["Zola", "Technologie", "Slovník", "Tomáš Korčák"]

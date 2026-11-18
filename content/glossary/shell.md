@@ -3,7 +3,7 @@
 title = "Shell"
 description = "Scripts for the Unix command line (bash, zsh), the glue that installs, builds and deploys."
 template = "term.html"
-weight = 26
+weight = 27
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -16,8 +16,8 @@ kind = "language"
 definition = "Scripts for the Unix command line (bash, zsh), the glue that installs, builds and deploys."
 aliases = []
 reference = { title = "GNU Bash manual", url = "https://www.gnu.org/software/bash/manual/" }
-pages = ["projects/data.md", "projects/learning.md", "projects/systems.md", "projects/tools.md", "work/algoglyph.md", "work/astronomists.md", "work/catharsis-as-a-service.md", "work/comtesse.md", "work/corvidae.md", "work/data-atlas.md", "work/el-magico-cache.md", "work/gists-search.md", "work/kompendium-epistemicke-anihilace.md", "work/korczis-github-io.md", "work/majordomus-reel.md", "work/openttd-prismatic-bridge.md", "work/oscilla.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/prismatic-majordomus.md", "work/prismatic.md", "work/sig.md", "work/simple-geocoder.md", "work/sonic-playground.md", "work/vomaste-cz.md", "_index.md"]
-related = ["repository", "open-source", "commit", "html", "javascript", "python", "github-pages", "elixir"]
+pages = ["projects/data.md", "projects/learning.md", "projects/systems.md", "projects/tools.md", "services/_index.md", "services/ai-engineering-governance.md", "services/decision-support-ai.md", "services/digital-forensics.md", "services/digital-investigation.md", "services/interactive-data-products.md", "services/reputation-intelligence.md", "skills/_index.md", "skills/audit-trail.md", "skills/data-integration.md", "skills/decision-support.md", "skills/due-diligence.md", "skills/interactive-visualisation.md", "skills/knowledge-graph.md", "skills/llm-agents.md", "skills/narrative-analysis.md", "skills/orchestration.md", "skills/osint-investigation.md", "skills/policy-as-code.md", "work/algoglyph.md", "work/astronomists.md", "work/catharsis-as-a-service.md", "work/comtesse.md", "work/corvidae.md", "work/data-atlas.md", "work/el-magico-cache.md", "work/gists-search.md", "work/kompendium-epistemicke-anihilace.md", "work/korczis-github-io.md", "work/majordomus-reel.md", "work/openttd-prismatic-bridge.md", "work/oscilla.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/prismatic-majordomus.md", "work/prismatic.md", "work/sig.md", "work/simple-geocoder.md", "work/sonic-playground.md", "work/vomaste-cz.md", "_index.md"]
+related = ["html", "javascript", "python", "repository", "elixir", "css", "open-source", "alpine-js"]
 og_title = "Shell: glossary"
 og_image = "og/glossary-shell.png"
 keywords = ["Shell", "Programming language", "Glossary", "Tomas Korcak"]

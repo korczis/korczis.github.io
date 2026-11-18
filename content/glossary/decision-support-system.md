@@ -3,7 +3,7 @@
 title = "Decision support system"
 description = "Software that gathers data and analysis into reports and views that help people make a decision, rather than making it for them."
 template = "term.html"
-weight = 62
+weight = 72
 
 [taxonomies]
 tags = ["Glossary", "Concept"]
@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Software that gathers data and analysis into reports and views that help people make a decision, rather than making it for them."
 aliases = []
 reference = { title = "Decision support system (Wikipedia)", url = "https://en.wikipedia.org/wiki/Decision_support_system" }
-pages = ["projects/security.md", "work/osint-case-ratcliffe-moscow-2026.md"]
-related = ["audit-trail", "data-integration", "due-diligence", "html", "information-extraction", "insolvency", "knowledge-graph", "market-intelligence"]
+pages = ["projects/security.md", "services/_index.md", "services/decision-support-ai.md", "services/due-diligence.md", "services/interactive-data-products.md", "services/m-and-a.md", "services/reputation-intelligence.md", "skills/_index.md", "skills/decision-support.md", "work/osint-case-ratcliffe-moscow-2026.md"]
+related = ["html", "python", "alpine-js", "javascript", "dockerfile", "fastapi", "flowbite-pro", "service"]
 og_title = "Decision support system: glossary"
 og_image = "og/glossary-decision-support-system.png"
 keywords = ["Decision support system", "Concept", "Glossary", "Tomas Korcak"]

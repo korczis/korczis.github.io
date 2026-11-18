@@ -3,7 +3,7 @@
 title = "PostgreSQL"
 description = "Open-source relační databáze známá svou korektností a rozšířeními."
 template = "term.html"
-weight = 50
+weight = 55
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Open-source relační databáze známá svou korektností a rozšířeními."
 aliases = ["postgres"]
 reference = { title = "postgresql.org", url = "https://www.postgresql.org/about/" }
-pages = ["hire.cs.md", "projects/tools.cs.md", "_index.cs.md"]
-related = ["elixir", "open-source", "rust", "ai-agent", "cpp", "csharp", "due-diligence", "javascript"]
+pages = ["hire.cs.md", "projects/tools.cs.md", "services/attack-surface.cs.md", "services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "services/digital-forensics.cs.md", "services/digital-investigation.cs.md", "services/due-diligence.cs.md", "services/m-and-a.cs.md", "_index.cs.md"]
+related = ["elixir", "javascript", "alpine-js", "claude-api", "dockerfile", "fastapi", "flowbite-pro", "html"]
 og_title = "PostgreSQL: slovník"
 og_image = "og/cs-glossary-postgresql.png"
 keywords = ["PostgreSQL", "Technologie", "Slovník", "Tomáš Korčák"]

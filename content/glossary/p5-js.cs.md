@@ -3,7 +3,7 @@
 title = "p5.js"
 description = "Knihovna pro kreativní programování odvozená z Processingu, pro kreslení a simulace v prohlížeči."
 template = "term.html"
-weight = 47
+weight = 51
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Knihovna pro kreativní programování odvozená z Processingu, pro kreslení a simulace v prohlížeči."
 aliases = ["p5js"]
 reference = { title = "p5js.org", url = "https://p5js.org/" }
-pages = ["projects/science.cs.md", "stack.cs.md", "work/algoglyph.cs.md"]
-related = ["alpine-js", "apache-echarts", "flowbite-pro", "data-visualisation", "github-pages", "javascript", "repository", "rust"]
+pages = ["projects/science.cs.md", "services/interactive-data-products.cs.md", "stack.cs.md", "work/algoglyph.cs.md"]
+related = ["alpine-js", "apache-echarts", "flowbite-pro", "data-visualisation", "javascript", "d3", "elixir", "github-pages"]
 og_title = "p5.js: slovník"
 og_image = "og/cs-glossary-p5-js.png"
 keywords = ["p5.js", "Technologie", "Slovník", "Tomáš Korčák"]

@@ -1,0 +1,387 @@
+# What Tomas Korcak offers: the words of each service, in English and Czech, and nothing else.
+# Every piece of evidence is derived by scripts/lib/services.mjs: the skills a service draws on
+# resolve to the capabilities of data/experience-rules.toml, whose public repositories, client use
+# cases (sector and role only) and technologies are measured; scripts/build-services.mjs writes the
+# pages (/services/, /skills/) and data/services.json. Rule project.services-derived.
+#
+# NDA (ADR 0006, rule project.nda-never-named): no client, person, company, project codename,
+# private repository, domain, date or number, here or in any case. Public sources (registers,
+# lists, standards) are proper nouns and may be named.
+#
+#   id            the page slug
+#   icon          a name templates/components.html `icon` knows
+#   name, promise, problem, principle    one line each (the promise is the page description)
+#   method        the steps, in order; deliverables  what the client receives
+#   skills        capability keys of data/experience-rules.toml, the strongest first
+#   sources       public sources and techniques it uses (proper nouns)
+#   stack         the languages and technologies it is built with, by glossary name (each needs a term)
+#   [[services.cases]]  abstract use cases: the problem, what was done, the outcome
+
+[[services]]
+id = "due-diligence"
+icon = "shield"
+name = "Corporate and counterparty due diligence"
+name_cs = "Due diligence firem a protistran"
+promise = "Know who you are dealing with before you sign: one resolved entity, every source cross-checked, every red flag explained."
+promise_cs = "Vězte, s kým jednáte, dřív než podepíšete: jedna rozpoznaná entita, každý zdroj ověřený proti ostatním, každý varovný signál vysvětlený."
+problem = "A partner, supplier or target has to be judged while the facts are scattered across registers, courts and filings, and some are hidden on purpose."
+problem_cs = "Partnera, dodavatele nebo cíl je třeba posoudit, zatímco fakta jsou rozptýlená po rejstřících, soudech a výkazech a některá jsou skrytá záměrně."
+principle = "Resolve the subject to one entity, cross-check independent sources, flag contradictions instead of averaging them, and grade every finding by depth, from a single-source lookup to an adversarial review."
+principle_cs = "Rozpoznat subjekt jako jednu entitu, ověřit nezávislé zdroje navzájem, rozpory označit místo jejich průměrování a každé zjištění odstupňovat podle hloubky, od jednoho zdroje po oponentní prověrku."
+method = ["Resolve the subject's identity", "Collect from the registers in parallel", "Map officers, owners and related parties", "Check legal standing: insolvency, litigation, enforcement", "Analyse the filed financial statements", "Score and explain the risk profile"]
+method_cs = ["Rozpoznat totožnost subjektu", "Souběžně sebrat data z rejstříků", "Zmapovat statutáry, vlastníky a spřízněné strany", "Prověřit právní stav: insolvence, spory, exekuce", "Analyzovat uložené účetní závěrky", "Ohodnotit a vysvětlit rizikový profil"]
+deliverables = ["Red-flag matrix with severity", "Entity relationship graph", "Findings register linked to its evidence", "Executive one-page brief", "Structured data beside the report"]
+deliverables_cs = ["Matice varovných signálů se závažností", "Graf vztahů entit", "Registr zjištění propojený s důkazy", "Jednostránkové shrnutí pro vedení", "Strukturovaná data vedle reportu"]
+skills = ["due-diligence", "registry-intelligence", "entity-resolution", "ownership-analysis", "financial-analysis", "risk-scoring", "source-reliability", "decision-support"]
+sources = ["ARES", "Commercial Register", "Sbírka listin", "ISIR", "ČÚZK cadastre", "Beneficial ownership register", "OpenCorporates", "GLEIF", "Companies House", "SEC EDGAR"]
+stack = ["Elixir", "Phoenix", "PostgreSQL", "Meilisearch", "Playwright"]
+
+[[services.cases]]
+problem = "A buyer had to know whether a supplier was financially sound and legally clean before a long contract."
+problem_cs = "Kupující potřeboval před dlouhodobou smlouvou vědět, zda je dodavatel finančně zdravý a právně čistý."
+approach = "Filings, insolvency and court records were checked against each other and against what the supplier had declared."
+approach_cs = "Výkazy, insolvenční a soudní záznamy se ověřily navzájem i proti tomu, co dodavatel sám uvedl."
+outcome = "An undisclosed enforcement history came to light and the contract terms were changed before signing."
+outcome_cs = "Vyšla najevo nezveřejněná exekuční minulost a podmínky smlouvy se před podpisem změnily."
+
+[[services.cases]]
+problem = "An investor received a clean \"nothing found\" from a register for the subject of a deal."
+problem_cs = "Investor dostal z rejstříku k subjektu transakce čistý výsledek „nic nenalezeno“."
+approach = "A positive control re-queried the register with a subject known to be there."
+approach_cs = "Pozitivní kontrola zopakovala dotaz se subjektem, o kterém bylo známo, že v rejstříku je."
+outcome = "The empty answer was the register's silent false negative; the real record was found and assessed."
+outcome_cs = "Prázdná odpověď byla tichou falešnou negativitou rejstříku; skutečný záznam se dohledal a posoudil."
+
+[[services]]
+id = "m-and-a"
+icon = "briefcase"
+name = "M&A pre-deal screening and analysis"
+name_cs = "Prověrka a analýza M&A transakcí"
+promise = "A fast, evidenced answer before the term sheet: go, or first ask for these documents."
+promise_cs = "Rychlá, doložená odpověď před term sheetem: jít dál, nebo si nejdřív vyžádat tyto podklady."
+problem = "Deal teams screen many targets but can afford full due diligence on few, and classic advisory ends in a static report."
+problem_cs = "Transakční týmy prověřují mnoho cílů, ale plnou due diligence si mohou dovolit jen u několika, a klasické poradenství končí statickým reportem."
+principle = "Investigate in waves, tie every finding to its source, score the competing deal hypotheses (fair terms, hidden liabilities, regulatory risk, overstated synergies) and set a walk-away position."
+principle_cs = "Šetřit ve vlnách, každé zjištění svázat se zdrojem, ohodnotit soupeřící hypotézy transakce (férové podmínky, skryté závazky, regulatorní riziko, nadsazené synergie) a stanovit hranici pro odchod od jednání."
+method = ["Take in the target, the deal thesis and the audience", "Run register and open-source reconnaissance", "Extract several years of financials from filed statements", "Map the beneficial owners and the competitors", "Test the target's public claims against independent evidence", "Red-team the thesis, write the decision memo and the pre-signing gates"]
+method_cs = ["Převzít cíl, tezi transakce a publikum", "Provést průzkum rejstříků a otevřených zdrojů", "Vytěžit několik let financí z uložených výkazů", "Zmapovat skutečné majitele a konkurenty", "Ověřit veřejná tvrzení cíle proti nezávislým důkazům", "Oponovat tezi, sepsat rozhodovací memo a podmínky před podpisem"]
+deliverables = ["Master findings and red-flag register", "Decision memo with a walk-away position", "Pre-signing information requests", "Document bundles for the board, the investment committee and counsel", "The case under version control, updated rather than rewritten"]
+deliverables_cs = ["Hlavní zjištění a registr varovných signálů", "Rozhodovací memo s hranicí pro odchod", "Žádosti o informace před podpisem", "Balíky dokumentů pro představenstvo, investiční výbor a právníky", "Případ ve verzovacím systému, aktualizovaný místo přepisování"]
+skills = ["m-and-a-screening", "due-diligence", "financial-analysis", "ownership-analysis", "market-intelligence", "contestable-decisions", "risk-scoring", "data-room", "decision-support"]
+sources = ["ARES", "Commercial Register", "Sbírka listin", "ISIR", "GLEIF", "Companies House", "SEC EDGAR", "Monte Carlo sensitivity analysis"]
+stack = ["Elixir", "Phoenix", "PostgreSQL", "Monte Carlo simulation"]
+
+[[services.cases]]
+problem = "A private-equity buyer was weighing a software company whose story rested on strategic partnerships."
+problem_cs = "Kupec z oblasti private equity zvažoval softwarovou firmu, jejíž příběh stál na strategických partnerstvích."
+approach = "Each claimed partnership was checked from the partner's side and in independent sources."
+approach_cs = "Každé deklarované partnerství se ověřilo ze strany partnera a v nezávislých zdrojích."
+outcome = "The evidence did not support the claims, and the deal moved to conditions that had to be met before signing."
+outcome_cs = "Důkazy tvrzení nepodpořily a transakce přešla na podmínky, které musely být splněny před podpisem."
+
+[[services.cases]]
+problem = "A seller needed to answer buyers' questions quickly without losing control of what was disclosed."
+problem_cs = "Prodávající potřeboval rychle odpovídat na otázky kupců, aniž by ztratil kontrolu nad tím, co zveřejňuje."
+approach = "A data room with role-based access, checklists and drafted answers that a human approves."
+approach_cs = "Datová místnost s přístupem podle rolí, kontrolními seznamy a připravenými odpověďmi, které schvaluje člověk."
+outcome = "Every question and answer was controlled and auditable through the whole process."
+outcome_cs = "Každá otázka i odpověď byly po celou dobu pod kontrolou a auditovatelné."
+
+[[services]]
+id = "digital-investigation"
+icon = "search"
+name = "Digital investigation and OSINT dossiers"
+name_cs = "Digitální vyšetřování a OSINT dossier"
+promise = "A complete, sourced picture of a person, a company or a network, from open sources only."
+promise_cs = "Úplný a ozdrojovaný obraz osoby, firmy nebo sítě, jen z otevřených zdrojů."
+problem = "Lawyers, security teams and investigators need to know who stands behind an entity, what it is connected to and what its history is."
+problem_cs = "Právníci, bezpečnostní týmy a vyšetřovatelé potřebují vědět, kdo za entitou stojí, s čím je propojená a jakou má historii."
+principle = "Many independent collectors (registers, the web, network infrastructure, social media, archives) feed one entity-resolution core; the link graph shows what no single source does."
+principle_cs = "Mnoho nezávislých sběračů (rejstříky, web, síťová infrastruktura, sociální sítě, archivy) živí jedno jádro rozpoznávání entit; graf vazeb ukáže, co žádný jednotlivý zdroj."
+method = ["Agree the scope and the rules of engagement", "Collect the identifiers", "Expand through every collector", "Resolve and deduplicate the entities", "Analyse the links and the timeline", "Write the dossier with a confidence for each claim"]
+method_cs = ["Dohodnout rozsah a pravidla postupu", "Sebrat identifikátory", "Rozšířit je přes všechny sběrače", "Rozpoznat a sloučit duplicitní entity", "Analyzovat vazby a časovou osu", "Sepsat dossier s mírou jistoty u každého tvrzení"]
+deliverables = ["Dossier", "Relationship graph", "Timeline", "Source appendix", "Evidence export"]
+deliverables_cs = ["Dossier", "Graf vztahů", "Časová osa", "Příloha se zdroji", "Export důkazů"]
+skills = ["osint-investigation", "registry-intelligence", "entity-resolution", "ownership-analysis", "infrastructure-osint", "media-forensics", "knowledge-graph", "web-automation", "change-monitoring"]
+sources = ["Corporate registers", "Whois", "Passive DNS", "Certificate transparency", "Wayback Machine", "Common Crawl", "GDELT", "EUR-Lex", "TED", "EU Transparency Register"]
+stack = ["Elixir", "Broadway", "Playwright", "PostgreSQL", "Meilisearch", "Cytoscape.js"]
+
+[[services.cases]]
+problem = "A law firm needed to know who really controlled a set of companies that looked unrelated."
+problem_cs = "Advokátní kancelář potřebovala zjistit, kdo skutečně ovládá skupinu firem, které vypadaly nesouvisle."
+approach = "Officers, addresses and web infrastructure were collected and resolved into one graph."
+approach_cs = "Statutáři, adresy a webová infrastruktura se sebrali a rozpoznali do jednoho grafu."
+outcome = "Shared people, addresses and servers tied the companies into one group under one controller."
+outcome_cs = "Společné osoby, adresy a servery spojily firmy do jedné skupiny pod jedním ovládajícím."
+
+[[services.cases]]
+problem = "A security team doubted the history a counterparty presented about itself."
+problem_cs = "Bezpečnostní tým pochyboval o historii, kterou o sobě protistrana uváděla."
+approach = "Its domains, certificates and archived pages were dated from public records."
+approach_cs = "Její domény, certifikáty a archivované stránky se datovaly z veřejných záznamů."
+outcome = "Its web identities proved recently created and inconsistent with the story told."
+outcome_cs = "Její webové identity se ukázaly jako nedávno vytvořené a v rozporu s vyprávěným příběhem."
+
+[[services]]
+id = "digital-forensics"
+icon = "lock"
+name = "Digital forensics and evidence preservation"
+name_cs = "Digitální forenzní analýza a zajištění důkazů"
+promise = "Findings that hold up when someone challenges them."
+promise_cs = "Zjištění, která obstojí, když je někdo zpochybní."
+problem = "Online evidence disappears or changes, and a conclusion is worth nothing if its origin cannot be proven."
+problem_cs = "Online důkazy mizí nebo se mění a závěr nemá cenu, pokud nelze doložit jeho původ."
+principle = "Hash and chain every raw acquisition into an append-only store, keep the investigation replayable, and keep the reconstruction of the timeline apart from opinion."
+principle_cs = "Každý surový sběr zahashovat a zřetězit do úložiště jen pro zápis, udržet šetření zpětně přehratelné a rekonstrukci časové osy držet odděleně od názoru."
+method = ["Capture the raw source with its metadata", "Hash it and link it into the custody chain", "Extract the artefacts: metadata, edits, archive snapshots, infrastructure history", "Reconstruct the timeline", "Verify the integrity of the chain", "Export a sealed evidence package"]
+method_cs = ["Zachytit surový zdroj s metadaty", "Zahashovat ho a připojit do řetězce úschovy", "Vytěžit artefakty: metadata, úpravy, snímky z archivů, historii infrastruktury", "Rekonstruovat časovou osu", "Ověřit neporušenost řetězce", "Exportovat zapečetěný balík důkazů"]
+deliverables = ["Custody log", "Integrity verification", "Reconstructed timeline", "Attribution assessment", "Sealed audit package"]
+deliverables_cs = ["Záznam úschovy", "Ověření neporušenosti", "Rekonstruovaná časová osa", "Posouzení původu", "Zapečetěný auditní balík"]
+skills = ["media-forensics", "chain-of-custody", "infrastructure-osint", "audit-trail", "narrative-analysis", "source-reliability"]
+sources = ["EXIF and file metadata", "Reverse image search", "Wayback Machine", "DNS history", "Certificate transparency", "Cryptographic hashing"]
+stack = ["Elixir", "PostgreSQL", "Lean"]
+
+[[services.cases]]
+problem = "A disputed online statement was about to be taken down."
+problem_cs = "Sporné online prohlášení mělo být brzy staženo."
+approach = "It was captured with its archive history, hashed and chained before it disappeared."
+approach_cs = "Bylo zachyceno i s historií v archivech, zahashováno a zřetězeno dřív, než zmizelo."
+outcome = "The statement and the proof of its integrity were preserved for the dispute."
+outcome_cs = "Prohlášení i důkaz jeho neporušenosti zůstaly zachované pro spor."
+
+[[services.cases]]
+problem = "Images circulating about an incident were presented as new."
+problem_cs = "Obrázky šířené k incidentu byly prezentovány jako nové."
+approach = "Their metadata, reverse search and first archived appearances were compared."
+approach_cs = "Porovnala se jejich metadata, zpětné vyhledávání a první výskyty v archivech."
+outcome = "They proved to be older material reused out of context."
+outcome_cs = "Ukázalo se, že jde o starší materiál použitý mimo kontext."
+
+[[services]]
+id = "reputation-intelligence"
+icon = "globe"
+name = "Reputation intelligence and adverse-media monitoring"
+name_cs = "Reputační zpravodajství a monitoring negativních zpráv"
+promise = "Know what is being said, how credible it is, and when the narrative shifts."
+promise_cs = "Vězte, co se říká, jak je to věrohodné a kdy se narativ mění."
+problem = "Organisations and executives learn about their reputational exposure too late and cannot tell a real signal from noise or a coordinated campaign."
+problem_cs = "Organizace a vedení se o reputační expozici dozvídají pozdě a nedokážou odlišit skutečný signál od šumu nebo koordinované kampaně."
+principle = "Collect adverse-media signals, score them for strength, noise, narrative coherence and likelihood of manipulation, and alert when an early-warning signal rises. Defensive only."
+principle_cs = "Sbírat signály negativních zpráv, hodnotit je podle síly, šumu, soudržnosti narativu a pravděpodobnosti manipulace a upozornit, když roste signál včasného varování. Pouze obranně."
+method = ["Define the watch list of entities and topics", "Monitor news, social media and archives", "Score sentiment and relevance", "Detect manipulation patterns and shifts of narrative", "Escalate with the evidence", "Report the trend periodically"]
+method_cs = ["Definovat sledované entity a témata", "Monitorovat zprávy, sociální sítě a archivy", "Hodnotit sentiment a relevanci", "Rozpoznat vzorce manipulace a posuny narativu", "Eskalovat i s důkazy", "Pravidelně reportovat vývoj"]
+deliverables = ["Adverse-media screening report", "Reputational risk score", "Early-warning alerts", "Narrative and manipulation analysis"]
+deliverables_cs = ["Report z prověrky negativních zpráv", "Skóre reputačního rizika", "Upozornění včasného varování", "Analýza narativu a manipulace"]
+skills = ["narrative-analysis", "source-reliability", "change-monitoring", "osint-investigation", "decision-support"]
+sources = ["National and international news", "GDELT", "News and social search", "Wayback Machine", "Language-model classification"]
+stack = ["Elixir", "Broadway", "Ollama", "Claude API", "Phoenix"]
+
+[[services.cases]]
+problem = "Before an appointment, a board needed adverse-media clearance on a candidate."
+problem_cs = "Před jmenováním potřebovalo představenstvo prověřit kandidáta v negativních zprávách."
+approach = "Every negative mention was traced to its origin and its sources were weighed."
+approach_cs = "Každá negativní zmínka se dohledala k původu a její zdroje se zvážily."
+outcome = "The negative press traced back to a single source of low credibility."
+outcome_cs = "Negativní zprávy vedly k jedinému zdroji nízké věrohodnosti."
+
+[[services.cases]]
+problem = "A company saw a sudden spike of negative mentions."
+problem_cs = "Firma zaznamenala náhlý nárůst negativních zmínek."
+approach = "Timing, accounts and wording of the mentions were analysed for coordination."
+approach_cs = "Načasování, účty a formulace zmínek se analyzovaly z hlediska koordinace."
+outcome = "The pattern showed coordination rather than organic criticism, and the response was planned on that."
+outcome_cs = "Vzorec ukázal koordinaci, ne přirozenou kritiku, a podle toho se naplánovala reakce."
+
+[[services]]
+id = "compliance-screening"
+icon = "check"
+name = "Sanctions, PEP and beneficial-ownership screening"
+name_cs = "Sankční a PEP prověrky a skuteční majitelé"
+promise = "Screening that neither drowns you in false positives nor quietly misses a true match."
+promise_cs = "Prověrky, které vás nezahltí falešnými shodami ani tiše nepřehlédnou skutečnou."
+problem = "Onboarding clients, suppliers or staff requires sanctions, political-exposure and ownership checks a regulator accepts."
+problem_cs = "Přijetí klientů, dodavatelů nebo zaměstnanců vyžaduje sankční, PEP a vlastnické prověrky, které regulátor přijme."
+principle = "Match names in three bands: a confident match is reported, a near-miss goes to a human, below that nothing is raised; walk ownership to the ultimate owner; never show a failed screen as a clean one."
+principle_cs = "Párovat jména ve třech pásmech: jistá shoda se hlásí, téměř shoda jde k člověku, pod tím se nic nehlásí; procházet vlastnictví až ke skutečnému majiteli; neúspěšnou prověrku nikdy nevydávat za čistou."
+method = ["Normalise names and identifiers", "Screen against the consolidated lists", "Walk the ownership chain to the ultimate beneficial owner", "Check political exposure", "Put near-misses through human review", "Record the decision with its evidence"]
+method_cs = ["Normalizovat jména a identifikátory", "Prověřit proti konsolidovaným seznamům", "Projít vlastnický řetězec ke skutečnému majiteli", "Ověřit politickou expozici", "Téměř shody předat k lidskému posouzení", "Zaznamenat rozhodnutí i s důkazy"]
+deliverables = ["Screening certificate per subject", "Ownership chain diagram", "Review queue", "Audit-ready compliance report"]
+deliverables_cs = ["Osvědčení o prověrce pro každý subjekt", "Diagram vlastnického řetězce", "Fronta k posouzení", "Report o shodě připravený na audit"]
+skills = ["sanctions-screening", "ownership-analysis", "entity-resolution", "risk-scoring", "contestable-decisions", "compliance-mapping"]
+sources = ["OpenSanctions", "OFAC SDN list", "UN consolidated list", "EU consolidated list", "GLEIF", "Companies House", "Beneficial ownership registers"]
+stack = ["Elixir", "PostgreSQL", "OpenAPI"]
+
+[[services.cases]]
+problem = "A regulated operator had to vet its suppliers."
+problem_cs = "Regulovaný provozovatel musel prověřit své dodavatele."
+approach = "Each supplier's ownership was walked up to its ultimate owner and screened."
+approach_cs = "Vlastnictví každého dodavatele se prošlo až ke skutečnému majiteli a prověřilo."
+outcome = "A vendor that looked local proved to sit under an offshore layer."
+outcome_cs = "Dodavatel, který vypadal jako místní, se ukázal být pod offshore vrstvou."
+
+[[services.cases]]
+problem = "A common name returned a near-miss against a listed person."
+problem_cs = "Běžné jméno vrátilo téměř shodu s osobou na seznamu."
+approach = "The near-miss went to a reviewer with the secondary identifiers beside it."
+approach_cs = "Téměř shoda šla k posouzení i s vedlejšími identifikátory."
+outcome = "It was cleared on those identifiers and the decision was recorded with its evidence."
+outcome_cs = "Na jejich základě byla vyloučena a rozhodnutí se zaznamenalo i s důkazy."
+
+[[services]]
+id = "continuous-monitoring"
+icon = "clock"
+name = "Insolvency, litigation and register change monitoring"
+name_cs = "Monitoring insolvencí, sporů a změn v rejstřících"
+promise = "Learn about trouble at a counterparty the day it becomes public, not at the next annual review."
+promise_cs = "Dozvíte se o problému protistrany v den, kdy se stane veřejným, ne při příští roční revizi."
+problem = "A portfolio of counterparties changes all the time: insolvency filings, court actions, new directors or owners."
+problem_cs = "Portfolio protistran se mění neustále: insolvenční návrhy, soudní řízení, noví statutáři nebo vlastníci."
+principle = "Re-collect the sources on a schedule, fingerprint the content, classify each change and alert only on the material ones, with backpressure so load never hides a failure."
+principle_cs = "Zdroje pravidelně sbírat znovu, otiskovat obsah, každou změnu klasifikovat a upozorňovat jen na podstatné, s backpressure, aby zátěž nikdy neskryla selhání."
+method = ["Set up the portfolio", "Set the refresh policy per source", "Collect continuously", "Detect changes by comparing content", "Score their materiality", "Alert and update the case"]
+method_cs = ["Nastavit portfolio", "Nastavit frekvenci obnovy pro každý zdroj", "Průběžně sbírat", "Rozpoznat změny porovnáním obsahu", "Ohodnotit jejich význam", "Upozornit a aktualizovat případ"]
+deliverables = ["Real-time alerts", "Change history", "Portfolio risk dashboard", "Periodic digest"]
+deliverables_cs = ["Upozornění v reálném čase", "Historie změn", "Dashboard rizik portfolia", "Pravidelný přehled"]
+skills = ["insolvency-monitoring", "change-monitoring", "registry-intelligence", "entity-resolution", "orchestration", "risk-scoring"]
+sources = ["ISIR", "Court notice boards", "Court case lookup", "Commercial and trade registers", "Sanctions lists", "VAT unreliable payers"]
+stack = ["Elixir", "Broadway", "Phoenix", "PostgreSQL"]
+
+[[services.cases]]
+problem = "A lender had to know early when a borrower's group came under pressure."
+problem_cs = "Věřitel potřeboval včas vědět, když se skupina dlužníka dostane pod tlak."
+approach = "The borrower and its related companies were watched in the insolvency register."
+approach_cs = "Dlužník a jeho spřízněné firmy se sledovaly v insolvenčním rejstříku."
+outcome = "An insolvency petition against a sister company raised an alert and the lender acted early."
+outcome_cs = "Insolvenční návrh na sesterskou firmu vyvolal upozornění a věřitel jednal včas."
+
+[[services.cases]]
+problem = "A procurement team relied on suppliers it had vetted once."
+problem_cs = "Nákupní tým spoléhal na dodavatele, které jednou prověřil."
+approach = "The suppliers' register entries were compared on every refresh."
+approach_cs = "Záznamy dodavatelů v rejstříku se porovnávaly při každé obnově."
+outcome = "A change in a key supplier's statutory body triggered a new round of vetting."
+outcome_cs = "Změna statutárního orgánu klíčového dodavatele spustila nové kolo prověrky."
+
+[[services]]
+id = "attack-surface"
+icon = "server"
+name = "External attack surface and cyber-exposure assessment"
+name_cs = "Hodnocení vnější útočné plochy a kybernetické expozice"
+promise = "See your organisation, or an acquisition target, the way an attacker sees it."
+promise_cs = "Uvidíte svou organizaci, nebo cíl akvizice, očima útočníka."
+problem = "Buyers and regulated entities need an outside-in view of exposed assets, leaked credentials and compliance gaps."
+problem_cs = "Kupci a regulované subjekty potřebují pohled zvenčí na vystavená aktiva, uniklé přihlašovací údaje a mezery ve shodě."
+principle = "Discover domains, addresses, certificates and services, correlate them with threat intelligence, rate the exposure with its evidence and map it to the controls of cybersecurity regulation."
+principle_cs = "Objevit domény, adresy, certifikáty a služby, propojit je se zpravodajstvím o hrozbách, ohodnotit expozici i s důkazy a namapovat ji na opatření kybernetické regulace."
+method = ["Enumerate the assets", "Fingerprint the services and look up known vulnerabilities", "Check breach and reputation exposure", "Score the risk", "Map the findings to compliance controls such as NIS2", "Set up continuous monitoring"]
+method_cs = ["Vyjmenovat aktiva", "Otisknout služby a vyhledat známé zranitelnosti", "Ověřit expozici v únicích a reputaci", "Ohodnotit riziko", "Namapovat zjištění na opatření shody, například NIS2", "Nastavit průběžný monitoring"]
+deliverables = ["Exposure report", "Security rating", "Remediation list", "Compliance gap map"]
+deliverables_cs = ["Report o expozici", "Bezpečnostní hodnocení", "Seznam náprav", "Mapa mezer ve shodě"]
+skills = ["infrastructure-osint", "compliance-mapping", "change-monitoring", "risk-scoring", "web-automation"]
+sources = ["Certificate transparency", "Shodan", "Censys", "NVD", "Nmap", "Amass", "Subfinder", "theHarvester"]
+stack = ["Elixir", "PostgreSQL", "Phoenix"]
+
+[[services.cases]]
+problem = "A buyer wanted to know the cyber exposure of a target before pricing the deal."
+problem_cs = "Kupec chtěl znát kybernetickou expozici cíle dřív, než ocení transakci."
+approach = "The target's internet-facing assets were enumerated and checked for exposure and leaks."
+approach_cs = "Aktiva cíle dostupná z internetu se vyjmenovala a prověřila na expozici a úniky."
+outcome = "Forgotten exposed services and leaked credentials were found and priced into the deal."
+outcome_cs = "Našly se zapomenuté vystavené služby a uniklé přihlašovací údaje a promítly se do ceny."
+
+[[services.cases]]
+problem = "An operator preparing for new cybersecurity obligations did not know where it stood."
+problem_cs = "Provozovatel připravující se na nové povinnosti kybernetické bezpečnosti nevěděl, kde stojí."
+approach = "Its external evidence was mapped control by control."
+approach_cs = "Jeho vnější doklady se namapovaly opatření po opatření."
+outcome = "A gap map tied to its own evidence set the order of the remediation."
+outcome_cs = "Mapa mezer svázaná s jeho vlastními doklady určila pořadí náprav."
+
+[[services]]
+id = "decision-support-ai"
+icon = "puzzle"
+name = "Decision support and AI agents for analysts"
+name_cs = "Podpora rozhodování a AI agenti pro analytiky"
+promise = "AI that makes analysts faster without taking their signature away."
+promise_cs = "AI, která analytiky zrychlí, ale podpis jim nebere."
+problem = "Analyst teams spend their time collecting and formatting instead of judging, and unmanaged AI output cannot be defended."
+problem_cs = "Analytické týmy tráví čas sběrem a formátováním místo úsudku a neřízený výstup AI nelze obhájit."
+principle = "Agents work through governed tool interfaces; every AI output waits for a human; each decision records its hypotheses, uncertainty, dissent and the person accountable, and predictions are calibrated against outcomes."
+principle_cs = "Agenti pracují přes řízená rozhraní nástrojů; každý výstup AI čeká na člověka; každé rozhodnutí zaznamenává hypotézy, nejistotu, nesouhlas a odpovědnou osobu a předpovědi se kalibrují podle výsledků."
+method = ["Frame the question as a case", "Let agents collect and transform the material", "Score the hypotheses", "Quantify the uncertainty and show the next evidence worth gathering", "A human reviews and signs", "Record the outcome and recalibrate"]
+method_cs = ["Formulovat otázku jako případ", "Nechat agenty sebrat a zpracovat podklady", "Ohodnotit hypotézy", "Vyčíslit nejistotu a ukázat, který další důkaz stojí za sběr", "Člověk posoudí a podepíše", "Zaznamenat výsledek a překalibrovat"]
+deliverables = ["Decision record with its explanation", "Calibration reports", "Analyst workspaces and tools"]
+deliverables_cs = ["Záznam rozhodnutí s vysvětlením", "Kalibrační reporty", "Pracovní prostředí a nástroje pro analytiky"]
+skills = ["llm-agents", "decision-support", "contestable-decisions", "ai-transformation", "orchestration", "document-extraction", "audit-trail"]
+sources = ["Model Context Protocol", "Claude", "Local language models", "Monte Carlo simulation", "Bayesian scoring"]
+stack = ["Elixir", "MCP", "Claude API", "Ollama", "Phoenix"]
+
+[[services.cases]]
+problem = "An analyst team spent most of its time on routine collection."
+problem_cs = "Analytický tým trávil většinu času rutinním sběrem."
+approach = "Register and media collection moved to agents behind approval gates."
+approach_cs = "Sběr z rejstříků a médií přešel na agenty za schvalovacími branami."
+outcome = "The team kept the judgement and the signature and spent its time on them."
+outcome_cs = "Tým si ponechal úsudek i podpis a věnoval čas jim."
+
+[[services.cases]]
+problem = "A decision stalled under broad, open-ended research."
+problem_cs = "Rozhodnutí uvázlo v širokém, neohraničeném výzkumu."
+approach = "The uncertainty was broken down by what further evidence could reduce."
+approach_cs = "Nejistota se rozložila podle toho, co mohou další důkazy snížit."
+outcome = "One missing filing drove most of it; the team requested that filing and stopped the rest."
+outcome_cs = "Většinu nesl jediný chybějící výkaz; tým si ho vyžádal a zbytek zastavil."
+
+[[services]]
+id = "ai-engineering-governance"
+icon = "code"
+name = "Governed AI-assisted software delivery"
+name_cs = "Řízený vývoj softwaru s AI"
+promise = "AI agents that write code under rules they cannot skip, with the evidence of every change kept."
+promise_cs = "AI agenti, kteří píší kód podle pravidel, která nemohou obejít, a doklady každé změny zůstávají."
+problem = "Teams adopt coding agents and lose track of what changed, why, and whether anyone checked it."
+problem_cs = "Týmy nasazují kódovací agenty a ztrácejí přehled o tom, co se změnilo, proč a zda to někdo zkontroloval."
+principle = "Keep the rules, decisions and handovers in the repository as code, enforce them with gates in hooks and CI, and make every claim of progress pass a verification command."
+principle_cs = "Pravidla, rozhodnutí a předávky držet v repozitáři jako kód, vynucovat je branami v hooks a CI a každé tvrzení o postupu nechat projít ověřovacím příkazem."
+method = ["Map the repository and its risks", "Write the rules and the decision records", "Wire the gates into hooks and CI", "Run agents inside scoped tasks", "Verify before any claim of progress", "Review the evidence and evolve the rules"]
+method_cs = ["Zmapovat repozitář a jeho rizika", "Sepsat pravidla a záznamy rozhodnutí", "Zapojit brány do hooks a CI", "Spouštět agenty uvnitř ohraničených úkolů", "Ověřit dřív, než se ohlásí postup", "Projít doklady a vyvíjet pravidla"]
+deliverables = ["A supervised repository layer", "Gates in hooks and CI", "Decision and handover records", "A dashboard of the work and its evidence"]
+deliverables_cs = ["Řízená vrstva repozitáře", "Brány v hooks a CI", "Záznamy rozhodnutí a předávek", "Dashboard práce a jejích dokladů"]
+skills = ["policy-as-code", "llm-agents", "audit-trail", "orchestration", "ai-transformation", "contestable-decisions"]
+sources = ["Majordomus", "Model Context Protocol", "Git hooks", "Continuous integration", "Architecture decision records"]
+stack = ["Rust", "MCP", "Claude API", "Majordomus", "GitHub Actions"]
+
+[[services.cases]]
+problem = "Several coding agents worked in one repository and overwrote each other's work."
+problem_cs = "V jednom repozitáři pracovalo několik kódovacích agentů a přepisovali si práci."
+approach = "Each worked in its own scoped task and worktree, announced on a shared board, with gates before every commit and push."
+approach_cs = "Každý pracoval ve vlastním ohraničeném úkolu a worktree, ohlašoval se na společné tabuli a před každým commitem a pushem stály brány."
+outcome = "Collisions surfaced before they landed, and every change kept its evidence."
+outcome_cs = "Kolize se ukázaly dřív, než přistály, a každá změna si ponechala doklady."
+
+[[services]]
+id = "interactive-data-products"
+icon = "graph"
+name = "Interactive data products and simulators"
+name_cs = "Interaktivní datové produkty a simulátory"
+promise = "Data and models people drive themselves, where every mark leads to its source."
+promise_cs = "Data a modely, které lidé sami ovládají a kde každá značka vede ke svému zdroji."
+problem = "Reports and static charts hide the model behind them; readers cannot ask their own questions of the data."
+problem_cs = "Reporty a statické grafy skrývají model, který za nimi stojí; čtenáři nemohou datům klást vlastní otázky."
+principle = "Build the model first and let the reader drive it: parameters, time and filters in the address, every mark linked to its evidence, accessible and fast on a phone."
+principle_cs = "Nejdřív postavit model a nechat čtenáře ho řídit: parametry, čas a filtry v adrese, každá značka propojená s doklady, přístupně a rychle i na telefonu."
+method = ["Find the question the data must answer", "Model it and measure the inputs", "Design the interaction around the question", "Link every mark to its source", "Test accessibility and performance", "Ship it as a page that refreshes itself"]
+method_cs = ["Najít otázku, na kterou mají data odpovědět", "Vymodelovat ji a změřit vstupy", "Navrhnout interakci kolem otázky", "Propojit každou značku se zdrojem", "Otestovat přístupnost a výkon", "Nasadit jako stránku, která se sama obnovuje"]
+deliverables = ["An interactive site or dashboard", "The data pipeline behind it", "Accessibility and performance audit"]
+deliverables_cs = ["Interaktivní web nebo dashboard", "Datová pipeline za ním", "Audit přístupnosti a výkonu"]
+skills = ["interactive-visualisation", "geospatial-analysis", "data-integration", "knowledge-graph", "decision-support"]
+sources = ["Apache ECharts", "D3", "p5.js", "Web Audio", "PostGIS", "GitHub Pages"]
+stack = ["Apache ECharts", "D3", "p5.js", "Web Audio", "PostGIS", "Zola"]
+
+[[services.cases]]
+problem = "A crisis had to be followed on a map from reports that arrived as free text."
+problem_cs = "Krizi bylo potřeba sledovat na mapě z hlášení, která přicházela jako volný text."
+approach = "Reports were geocoded locally, stored as geography and served through one registry to a live map and an API."
+approach_cs = "Hlášení se lokálně geokódovala, uložila jako geografie a přes jeden registr se servírovala živé mapě i API."
+outcome = "Readers could filter the events in place and time and follow each to its report."
+outcome_cs = "Čtenáři mohli události filtrovat v místě a čase a každou sledovat až k hlášení."

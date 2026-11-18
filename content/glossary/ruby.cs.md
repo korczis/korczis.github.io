@@ -3,7 +3,7 @@
 title = "Ruby"
 description = "Dynamický, expresivní jazyk navržený pro radost programátora; mnoho starších nástrojů tady je v Ruby."
 template = "term.html"
-weight = 23
+weight = 24
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]

@@ -3,7 +3,7 @@
 title = "GIS"
 description = "Geographic information systems: data tied to places, stored, analysed and drawn as maps."
 template = "term.html"
-weight = 67
+weight = 79
 
 [taxonomies]
 tags = ["Glossary", "Concept"]
@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Geographic information systems: data tied to places, stored, analysed and drawn as maps."
 aliases = []
 reference = { title = "GIS (Wikipedia)", url = "https://en.wikipedia.org/wiki/Geographic_information_system" }
-pages = ["projects/_index.md", "projects/data.md", "work/crisis-map.md", "work/data-atlas.md", "work/kuzu-ex.md", "work/meili-rsex.md"]
-related = ["repository", "open-source", "commit", "elixir", "html", "javascript", "python", "github-pages"]
+pages = ["projects/_index.md", "projects/data.md", "services/_index.md", "services/interactive-data-products.md", "skills/_index.md", "skills/geospatial-analysis.md", "work/crisis-map.md", "work/data-atlas.md", "work/kuzu-ex.md", "work/meili-rsex.md"]
+related = ["html", "javascript", "python", "elixir", "repository", "open-source", "shell", "commit"]
 og_title = "GIS: glossary"
 og_image = "og/glossary-gis.png"
 keywords = ["GIS", "Concept", "Glossary", "Tomas Korcak"]

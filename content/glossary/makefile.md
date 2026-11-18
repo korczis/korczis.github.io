@@ -3,7 +3,7 @@
 title = "Makefile"
 description = "The build language of make: targets, the files they depend on and the commands that rebuild them when a dependency changes."
 template = "term.html"
-weight = 16
+weight = 17
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]

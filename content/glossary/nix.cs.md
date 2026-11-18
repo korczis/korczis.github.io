@@ -3,7 +3,7 @@
 title = "Nix"
 description = "Jazyk a správce balíčků pro reprodukovatelnou, deklarativní konfiguraci systému."
 template = "term.html"
-weight = 18
+weight = 19
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]

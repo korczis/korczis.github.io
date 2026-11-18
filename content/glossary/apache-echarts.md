@@ -3,7 +3,7 @@
 title = "Apache ECharts"
 description = "An Apache project for interactive charts: calendars, sunbursts, maps and large data sets."
 template = "term.html"
-weight = 33
+weight = 34
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "An Apache project for interactive charts: calendars, sunbursts, maps and large data sets."
 aliases = ["ECharts", "echarts"]
 reference = { title = "echarts.apache.org", url = "https://echarts.apache.org/en/index.html" }
-pages = ["projects/knowledge.md", "projects/science.md", "stack.md", "work/algoglyph.md", "work/kompendium-epistemicke-anihilace.md"]
-related = ["alpine-js", "flowbite-pro", "repository", "cytoscape-js", "elixir", "github-pages", "javascript", "p5-js"]
+pages = ["projects/knowledge.md", "projects/science.md", "services/interactive-data-products.md", "skills/interactive-visualisation.md", "skills/knowledge-graph.md", "skills/policy-as-code.md", "stack.md", "work/algoglyph.md", "work/kompendium-epistemicke-anihilace.md"]
+related = ["alpine-js", "flowbite-pro", "javascript", "html", "python", "shell", "elixir", "majordomus"]
 og_title = "Apache ECharts: glossary"
 og_image = "og/glossary-apache-echarts.png"
 keywords = ["Apache ECharts", "Technology", "Glossary", "Tomas Korcak"]

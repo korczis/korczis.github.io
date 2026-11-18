@@ -16,8 +16,8 @@ kind = "language"
 definition = "The recipe that builds a container image: a base system, files and commands, reproducible anywhere."
 aliases = ["Docker", "docker"]
 reference = { title = "Dockerfile reference", url = "https://docs.docker.com/reference/dockerfile/" }
-pages = ["projects/media.md", "projects/systems.md", "work/el-magico-cache.md", "work/pdf-renderer.md", "work/prismatic-blog.md", "_index.md"]
-related = ["repository", "commit", "open-source", "data-visualisation", "elixir", "html", "javascript", "makefile"]
+pages = ["projects/media.md", "projects/systems.md", "services/_index.md", "services/ai-engineering-governance.md", "services/attack-surface.md", "services/compliance-screening.md", "services/continuous-monitoring.md", "services/decision-support-ai.md", "services/digital-forensics.md", "services/digital-investigation.md", "services/due-diligence.md", "services/m-and-a.md", "services/reputation-intelligence.md", "skills/_index.md", "skills/ai-transformation.md", "skills/audit-trail.md", "skills/data-integration.md", "skills/data-room.md", "skills/decision-support.md", "skills/document-extraction.md", "skills/due-diligence.md", "skills/entity-resolution.md", "skills/insolvency-monitoring.md", "skills/m-and-a-screening.md", "skills/market-intelligence.md", "skills/orchestration.md", "skills/risk-scoring.md", "work/el-magico-cache.md", "work/pdf-renderer.md", "work/prismatic-blog.md", "_index.md"]
+related = ["html", "javascript", "alpine-js", "fastapi", "claude-api", "flowbite-pro", "github-actions", "python"]
 og_title = "Dockerfile: glossary"
 og_image = "og/glossary-dockerfile.png"
 keywords = ["Dockerfile", "Programming language", "Glossary", "Tomas Korcak"]

@@ -3,7 +3,7 @@
 title = "p5.js"
 description = "A creative-coding library descended from Processing, for drawing and simulation in the browser."
 template = "term.html"
-weight = 47
+weight = 51
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "A creative-coding library descended from Processing, for drawing and simulation in the browser."
 aliases = ["p5js"]
 reference = { title = "p5js.org", url = "https://p5js.org/" }
-pages = ["projects/science.md", "stack.md", "work/algoglyph.md"]
-related = ["alpine-js", "apache-echarts", "flowbite-pro", "data-visualisation", "github-pages", "javascript", "repository", "rust"]
+pages = ["projects/science.md", "services/interactive-data-products.md", "stack.md", "work/algoglyph.md"]
+related = ["alpine-js", "apache-echarts", "flowbite-pro", "data-visualisation", "javascript", "d3", "elixir", "github-pages"]
 og_title = "p5.js: glossary"
 og_image = "og/glossary-p5-js.png"
 keywords = ["p5.js", "Technology", "Glossary", "Tomas Korcak"]

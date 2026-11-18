@@ -12,13 +12,14 @@ export const MIN_SHARE = 1;
 
 // Every name the data uses for a language or technology, with where it comes from: the coverage
 // a glossary must give a page to (rule project.everything-interlinked).
-export function measuredNames({ index, recent, catalogue, experience }) {
+export function measuredNames({ index, recent, catalogue, experience, services }) {
   const names = new Map();
   const add = (name, from) => { if (name) names.set(name, [...new Set([...(names.get(name) ?? []), from])]); };
   for (const l of index.languages) add(l.name, 'data/index.json languages');
   for (const r of recent.repos) for (const l of r.languages) if (l.share >= MIN_SHARE) add(l.name, `data/recent.json ${r.name}`);
   for (const p of catalogue.projects) for (const s of p.stack ?? []) add(s, `data/projects.toml ${p.repo}`);
   for (const e of experience.engagements) for (const s of e.technologies) add(s, `data/experience.json ${e.id}`);
+  for (const sv of services?.services ?? []) for (const s of sv.stack ?? []) add(s, `data/services.toml ${sv.id}`);
   return names;
 }
 
@@ -36,6 +37,7 @@ export function loadSources() {
     recent: readJson('data/recent.json'),
     catalogue: readToml('data/projects.toml'),
     experience: readJson('data/experience.json'),
+    services: readToml('data/services.toml'),
   };
 }
 

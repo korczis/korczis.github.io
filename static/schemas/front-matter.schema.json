@@ -81,7 +81,9 @@
             "project",
             "term",
             "glossary",
-            "hire"
+            "hire",
+            "service",
+            "skill"
           ],
           "description": "Which JSON-LD page type templates/partials/seo.html emits."
         },
@@ -146,6 +148,7 @@
                   "glossary.terms",
                   "index.skillset",
                   "term.evidence",
+                  "services.graph",
                   "catalogue.graph",
                   "tags.all",
                   "tags.together",
@@ -252,6 +255,21 @@
             "pattern": "^[a-z0-9-]+$",
             "description": "A term id of data/glossary.toml"
           }
+        },
+        "service": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$",
+          "description": "Service pages only: an id of [[services]] in data/services.toml."
+        },
+        "skill": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$",
+          "description": "Skill pages only: a key of [capabilities] in data/experience-rules.toml."
+        },
+        "icon": {
+          "type": "string",
+          "pattern": "^[a-z-]+$",
+          "description": "Service pages only: the icon of templates/components.html the service shows."
         }
       }
     },

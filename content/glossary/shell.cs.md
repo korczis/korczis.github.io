@@ -3,7 +3,7 @@
 title = "Shell"
 description = "Skripty pro unixovou příkazovou řádku (bash, zsh), lepidlo, které instaluje, staví a nasazuje."
 template = "term.html"
-weight = 26
+weight = 27
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -16,8 +16,8 @@ kind = "language"
 definition = "Skripty pro unixovou příkazovou řádku (bash, zsh), lepidlo, které instaluje, staví a nasazuje."
 aliases = []
 reference = { title = "GNU Bash manual", url = "https://www.gnu.org/software/bash/manual/" }
-pages = ["projects/data.cs.md", "projects/learning.cs.md", "projects/systems.cs.md", "projects/tools.cs.md", "work/algoglyph.cs.md", "work/astronomists.cs.md", "work/catharsis-as-a-service.cs.md", "work/comtesse.cs.md", "work/corvidae.cs.md", "work/data-atlas.cs.md", "work/el-magico-cache.cs.md", "work/gists-search.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/korczis-github-io.cs.md", "work/majordomus-reel.cs.md", "work/openttd-prismatic-bridge.cs.md", "work/oscilla.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/prismatic-majordomus.cs.md", "work/prismatic.cs.md", "work/sig.cs.md", "work/simple-geocoder.cs.md", "work/sonic-playground.cs.md", "work/vomaste-cz.cs.md", "_index.cs.md"]
-related = ["repository", "open-source", "commit", "html", "javascript", "python", "github-pages", "elixir"]
+pages = ["projects/data.cs.md", "projects/learning.cs.md", "projects/systems.cs.md", "projects/tools.cs.md", "services/_index.cs.md", "services/ai-engineering-governance.cs.md", "services/decision-support-ai.cs.md", "services/digital-forensics.cs.md", "services/digital-investigation.cs.md", "services/interactive-data-products.cs.md", "services/reputation-intelligence.cs.md", "skills/_index.cs.md", "skills/audit-trail.cs.md", "skills/data-integration.cs.md", "skills/decision-support.cs.md", "skills/due-diligence.cs.md", "skills/interactive-visualisation.cs.md", "skills/knowledge-graph.cs.md", "skills/llm-agents.cs.md", "skills/narrative-analysis.cs.md", "skills/orchestration.cs.md", "skills/osint-investigation.cs.md", "skills/policy-as-code.cs.md", "work/algoglyph.cs.md", "work/astronomists.cs.md", "work/catharsis-as-a-service.cs.md", "work/comtesse.cs.md", "work/corvidae.cs.md", "work/data-atlas.cs.md", "work/el-magico-cache.cs.md", "work/gists-search.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/korczis-github-io.cs.md", "work/majordomus-reel.cs.md", "work/openttd-prismatic-bridge.cs.md", "work/oscilla.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/prismatic-majordomus.cs.md", "work/prismatic.cs.md", "work/sig.cs.md", "work/simple-geocoder.cs.md", "work/sonic-playground.cs.md", "work/vomaste-cz.cs.md", "_index.cs.md"]
+related = ["html", "javascript", "python", "repository", "elixir", "css", "open-source", "alpine-js"]
 og_title = "Shell: slovník"
 og_image = "og/cs-glossary-shell.png"
 keywords = ["Shell", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

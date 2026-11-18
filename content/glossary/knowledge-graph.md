@@ -3,7 +3,7 @@
 title = "Knowledge graph"
 description = "Knowledge stored as entities and the relations between them, so a question can follow links (who owns what, who sits where) instead of joining tables."
 template = "term.html"
-weight = 72
+weight = 84
 
 [taxonomies]
 tags = ["Glossary", "Concept"]
@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Knowledge stored as entities and the relations between them, so a question can follow links (who owns what, who sits where) instead of joining tables."
 aliases = []
 reference = { title = "Knowledge graph (Wikipedia)", url = "https://en.wikipedia.org/wiki/Knowledge_graph" }
-pages = ["projects/security.md", "work/osint-case-ratcliffe-moscow-2026.md"]
-related = ["audit-trail", "data-integration", "decision-support-system", "due-diligence", "html", "information-extraction", "insolvency", "market-intelligence"]
+pages = ["projects/security.md", "services/_index.md", "services/digital-investigation.md", "services/interactive-data-products.md", "skills/_index.md", "skills/knowledge-graph.md", "work/osint-case-ratcliffe-moscow-2026.md"]
+related = ["html", "python", "shell", "alpine-js", "data-integration", "decision-support-system", "flowbite-pro", "javascript"]
 og_title = "Knowledge graph: glossary"
 og_image = "og/glossary-knowledge-graph.png"
 keywords = ["Knowledge graph", "Concept", "Glossary", "Tomas Korcak"]

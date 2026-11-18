@@ -769,3 +769,201 @@ aliases = ["OCR"]
 definition = "An open-source OCR engine that reads text from scanned documents and images in many languages."
 definition_cs = "Open-source OCR engine, který čte text ze skenovaných dokumentů a obrázků v mnoha jazycích."
 reference = { title = "Tesseract documentation", url = "https://tesseract-ocr.github.io/" }
+
+# Concepts of the services and skills (data/services.toml, data/experience-rules.toml capabilities).
+
+[[terms]]
+id = "public-registry"
+term = "Public registry"
+term_cs = "Veřejný rejstřík"
+kind = "concept"
+definition = "An official register a state keeps open to the public: companies, insolvencies, property, beneficial owners; the primary source of a due diligence."
+definition_cs = "Úřední rejstřík, který stát vede veřejně: firmy, insolvence, nemovitosti, skuteční majitelé; primární zdroj každé due diligence."
+reference = { title = "Open Ownership: registers", url = "https://www.openownership.org/en/topics/beneficial-ownership-registers/" }
+
+[[terms]]
+id = "beneficial-ownership"
+term = "Beneficial ownership"
+term_cs = "Skutečné vlastnictví"
+kind = "concept"
+definition = "The natural person who ultimately owns or controls a company, often behind layers of other companies; registers and chains of shareholdings reveal them."
+definition_cs = "Fyzická osoba, která firmu v konečném důsledku vlastní nebo ovládá, často za vrstvami dalších firem; odhalí ji rejstříky a řetězce podílů."
+reference = { title = "FATF: beneficial ownership", url = "https://www.fatf-gafi.org/en/topics/beneficial-ownership.html" }
+
+[[terms]]
+id = "sanctions-screening"
+term = "Sanctions screening"
+term_cs = "Sankční prověrka"
+kind = "concept"
+definition = "Checking people and companies against sanctions lists and politically exposed persons before a business relationship, as anti-money-laundering rules require."
+definition_cs = "Kontrola osob a firem proti sankčním seznamům a politicky exponovaným osobám před obchodním vztahem, jak vyžadují pravidla proti praní peněz."
+reference = { title = "OpenSanctions documentation", url = "https://www.opensanctions.org/docs/" }
+
+[[terms]]
+id = "financial-statement-analysis"
+term = "Financial statement analysis"
+term_cs = "Analýza účetních výkazů"
+kind = "concept"
+definition = "Reading a company's health from its balance sheet, income statement and cash flow: ratios, trends and what they do not say."
+definition_cs = "Čtení zdraví firmy z rozvahy, výsledovky a cash flow: ukazatele, trendy a to, co neříkají."
+reference = { title = "IFRS: financial statements", url = "https://www.ifrs.org/issued-standards/list-of-standards/ias-1-presentation-of-financial-statements/" }
+
+[[terms]]
+id = "attack-surface"
+term = "Attack surface"
+term_cs = "Útočná plocha"
+kind = "concept"
+definition = "Everything of an organisation an attacker can reach from the internet: domains, servers, services, certificates and leaked credentials."
+definition_cs = "Vše z organizace, na co útočník dosáhne z internetu: domény, servery, služby, certifikáty a uniklé přihlašovací údaje."
+reference = { title = "OWASP: attack surface analysis", url = "https://cheatsheetseries.owasp.org/cheatsheets/Attack_Surface_Analysis_Cheat_Sheet.html" }
+
+[[terms]]
+id = "digital-forensics"
+term = "Digital forensics"
+term_cs = "Digitální forenzní analýza"
+kind = "concept"
+definition = "Recovering and examining digital evidence so that what it shows, and how it was obtained, holds up when challenged."
+definition_cs = "Získávání a zkoumání digitálních důkazů tak, aby to, co ukazují, i způsob, jak byly získány, obstály při zpochybnění."
+reference = { title = "NIST: digital forensics", url = "https://www.nist.gov/digital-evidence" }
+
+[[terms]]
+id = "chain-of-custody"
+term = "Chain of custody"
+term_cs = "Řetězec úschovy"
+kind = "concept"
+definition = "The record of who acquired a piece of evidence, when and how, and every hand it passed through, so its integrity can be proven."
+definition_cs = "Záznam o tom, kdo důkaz získal, kdy a jak, a čímkoli prošel, aby šlo doložit jeho neporušenost."
+reference = { title = "NIST CSRC: chain of custody", url = "https://csrc.nist.gov/glossary/term/chain_of_custody" }
+
+[[terms]]
+id = "source-criticism"
+term = "Source criticism"
+term_cs = "Kritika zdrojů"
+kind = "concept"
+definition = "Judging a source before believing it: who made it, when, how and why, and whether independent sources agree."
+definition_cs = "Posouzení zdroje dřív, než se mu uvěří: kdo ho vytvořil, kdy, jak a proč a zda se shodují nezávislé zdroje."
+reference = { title = "Wikipedia: source criticism", url = "https://en.wikipedia.org/wiki/Source_criticism" }
+
+[[terms]]
+id = "reputation-risk"
+term = "Reputation risk"
+term_cs = "Reputační riziko"
+kind = "concept"
+definition = "The risk that what is said about an organisation or a person, true or not, costs it trust, customers or value; monitored through adverse media."
+definition_cs = "Riziko, že to, co se o organizaci nebo osobě říká, pravdivé či ne, ji stojí důvěru, zákazníky nebo hodnotu; sleduje se přes negativní zprávy."
+reference = { title = "Wikipedia: reputational risk", url = "https://en.wikipedia.org/wiki/Reputational_risk" }
+
+[[terms]]
+id = "change-detection"
+term = "Change detection"
+term_cs = "Detekce změn"
+kind = "concept"
+definition = "Noticing when a source changes and judging whether the change matters, so an alert means something."
+definition_cs = "Zachycení, že se zdroj změnil, a posouzení, zda na změně záleží, aby upozornění něco znamenalo."
+reference = { title = "Wikipedia: change detection", url = "https://en.wikipedia.org/wiki/Change_detection" }
+
+[[terms]]
+id = "web-scraping"
+term = "Web scraping"
+kind = "concept"
+definition = "Extracting data from web pages by program, from simple requests to a driven browser, within the site's terms and the law."
+definition_cs = "Programové získávání dat z webových stránek, od jednoduchých požadavků po řízený prohlížeč, v mezích podmínek webu a zákona."
+reference = { title = "Wikipedia: web scraping", url = "https://en.wikipedia.org/wiki/Web_scraping" }
+
+[[terms]]
+id = "contestability"
+term = "Contestability"
+term_cs = "Napadnutelnost"
+kind = "concept"
+definition = "The property of a decision that can be questioned: its evidence, assumptions, uncertainty and the person accountable are on record."
+definition_cs = "Vlastnost rozhodnutí, které lze zpochybnit: jeho důkazy, předpoklady, nejistota i odpovědná osoba jsou zaznamenané."
+reference = { title = "OECD AI principles: accountability", url = "https://oecd.ai/en/dashboards/ai-principles/P9" }
+
+[[terms]]
+id = "regulatory-compliance"
+term = "Regulatory compliance"
+term_cs = "Regulatorní shoda"
+kind = "concept"
+definition = "Meeting the obligations a regulation sets, and being able to show it with evidence, for example under NIS2 for cybersecurity."
+definition_cs = "Plnění povinností, které ukládá regulace, a schopnost to doložit důkazy, například podle NIS2 pro kybernetickou bezpečnost."
+reference = { title = "EU NIS2 Directive", url = "https://digital-strategy.ec.europa.eu/en/policies/nis2-directive" }
+
+[[terms]]
+id = "policy-as-code"
+term = "Policy as code"
+term_cs = "Pravidla jako kód"
+kind = "concept"
+definition = "Rules kept as code beside what they govern, checked automatically on every change instead of read and remembered."
+definition_cs = "Pravidla vedená jako kód vedle toho, co řídí, kontrolovaná automaticky při každé změně místo čtení a pamatování."
+reference = { title = "Open Policy Agent: policy as code", url = "https://www.openpolicyagent.org/docs/latest/" }
+
+[[terms]]
+id = "service"
+term = "Service"
+term_cs = "Služba"
+kind = "concept"
+definition = "Something the owner offers a client: a problem it solves, the principle it rests on, the method and what is delivered."
+definition_cs = "Něco, co vlastník nabízí klientovi: problém, který řeší, princip, na kterém stojí, postup a to, co se odevzdá."
+reference = { title = "Schema.org: Service", url = "https://schema.org/Service" }
+
+[[terms]]
+id = "skill"
+term = "Skill"
+term_cs = "Dovednost"
+kind = "concept"
+definition = "A capability the owner practises, shown by public work and client use cases, and drawn on by the services."
+definition_cs = "Schopnost, kterou vlastník praktikuje, doložená veřejnou prací a případy užití z klientské práce, a ze které čerpají služby."
+reference = { title = "Schema.org: knowsAbout", url = "https://schema.org/knowsAbout" }
+
+# Technologies the services are built with (data/services.toml stack).
+
+[[terms]]
+id = "phoenix"
+term = "Phoenix"
+kind = "technology"
+aliases = ["Phoenix LiveView", "LiveView", "phoenix_live_view"]
+definition = "Elixir's web framework; LiveView renders interactive pages on the server and pushes only the changes over a socket."
+definition_cs = "Webový framework Elixiru; LiveView vykresluje interaktivní stránky na serveru a přes socket posílá jen změny."
+reference = { title = "Phoenix Framework", url = "https://www.phoenixframework.org/" }
+
+[[terms]]
+id = "broadway"
+term = "Broadway"
+kind = "technology"
+definition = "An Elixir library for concurrent, multi-stage data pipelines with back-pressure, batching and graceful failure."
+definition_cs = "Knihovna Elixiru pro souběžné vícestupňové datové pipeline s back-pressure, dávkováním a řízeným selháním."
+reference = { title = "Broadway on HexDocs", url = "https://hexdocs.pm/broadway/" }
+
+[[terms]]
+id = "meilisearch"
+term = "Meilisearch"
+kind = "technology"
+definition = "A fast open-source search engine with typo tolerance and filters, used for full-text search over collected evidence."
+definition_cs = "Rychlý open-source vyhledávač s tolerancí překlepů a filtry, použitý pro fulltext nad sebranými důkazy."
+reference = { title = "Meilisearch documentation", url = "https://www.meilisearch.com/docs" }
+
+[[terms]]
+id = "ollama"
+term = "Ollama"
+kind = "technology"
+definition = "A runtime that serves open language models on local hardware, so sensitive material never leaves the machine."
+definition_cs = "Běhové prostředí, které servíruje otevřené jazykové modely na vlastním hardwaru, takže citlivý materiál neopustí stroj."
+reference = { title = "Ollama", url = "https://ollama.com/" }
+
+[[terms]]
+id = "monte-carlo-simulation"
+term = "Monte Carlo simulation"
+kind = "concept"
+aliases = ["Monte Carlo"]
+definition = "Estimating an uncertain outcome by sampling its inputs many times and reading the distribution of the results."
+definition_cs = "Odhad nejistého výsledku opakovaným vzorkováním vstupů a čtením rozdělení výsledků."
+reference = { title = "Wikipedia: Monte Carlo method", url = "https://en.wikipedia.org/wiki/Monte_Carlo_method" }
+
+[[terms]]
+id = "lean"
+term = "Lean"
+kind = "language"
+aliases = ["Lean 4"]
+definition = "A functional language and proof assistant: programs and the mathematical proofs that they are correct, checked by the machine."
+definition_cs = "Funkcionální jazyk a asistent důkazů: programy i matematické důkazy jejich správnosti, ověřené strojem."
+reference = { title = "Lean documentation", url = "https://lean-lang.org/documentation/" }

@@ -3,7 +3,7 @@
 title = "Static site generator"
 description = "A program that turns content and templates into plain files before anyone visits, so the site needs no server code."
 template = "term.html"
-weight = 82
+weight = 103
 
 [taxonomies]
 tags = ["Glossary", "Concept"]

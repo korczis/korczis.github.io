@@ -1,0 +1,5239 @@
+{
+  "schema": "korczis-hub-services/v1",
+  "generated_from": [
+    "data/services.toml",
+    "data/experience-rules.toml",
+    "data/experience.json",
+    "data/index.json",
+    "data/recent.json",
+    "data/projects.toml"
+  ],
+  "services": {
+    "due-diligence": {
+      "stack": [
+        {
+          "id": "elixir",
+          "name": "Elixir",
+          "n": 2,
+          "declared": true
+        },
+        {
+          "id": "phoenix",
+          "name": "Phoenix",
+          "n": 0,
+          "declared": true
+        },
+        {
+          "id": "postgresql",
+          "name": "PostgreSQL",
+          "n": 3,
+          "declared": true
+        },
+        {
+          "id": "meilisearch",
+          "name": "Meilisearch",
+          "n": 0,
+          "declared": true
+        },
+        {
+          "id": "playwright",
+          "name": "Playwright",
+          "n": 3,
+          "declared": true
+        }
+      ],
+      "skills": [
+        "due-diligence",
+        "registry-intelligence",
+        "entity-resolution",
+        "ownership-analysis",
+        "financial-analysis",
+        "risk-scoring",
+        "source-reliability",
+        "decision-support"
+      ],
+      "repos": [
+        {
+          "name": "vomaste.cz",
+          "title": "vomaste.cz",
+          "how": "words",
+          "score": 3.3,
+          "slug": "vomaste-cz",
+          "url": "https://github.com/korczis/vomaste.cz",
+          "description": null,
+          "category": "tools",
+          "site": "https://korczis.github.io/vomaste.cz/",
+          "pushed": "2026-11-08",
+          "skill": "due-diligence"
+        },
+        {
+          "name": "openttd-prismatic-bridge",
+          "title": "openttd-prismatic-bridge",
+          "how": "words",
+          "score": 3,
+          "slug": "openttd-prismatic-bridge",
+          "url": "https://gitlab.com/korczis/openttd-prismatic-bridge",
+          "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
+          "category": "media",
+          "site": null,
+          "pushed": "2026-11-17",
+          "skill": "decision-support"
+        },
+        {
+          "name": "crisis-map",
+          "title": "Crisis map",
+          "how": "words",
+          "score": 2.6,
+          "slug": "crisis-map",
+          "url": "https://github.com/korczis/crisis-map",
+          "description": "Mini crisis map: incident reports normalised, geocoded via local Nominatim, stored as PostGIS geography, served from one capability registry (LiveView, REST, OpenAPI, MCP, CLI)",
+          "category": "data",
+          "site": "https://korczis.github.io/crisis-map/",
+          "pushed": "2026-11-16",
+          "skill": "registry-intelligence"
+        }
+      ],
+      "engagements": [
+        {
+          "id": "e2",
+          "sector": "real-estate",
+          "roles": [
+            "architect",
+            "lead-engineer",
+            "ai-engineer",
+            "data-engineer"
+          ],
+          "skills": [
+            "due-diligence",
+            "entity-resolution",
+            "risk-scoring",
+            "decision-support"
+          ]
+        },
+        {
+          "id": "e1",
+          "sector": "financial-group",
+          "roles": [
+            "investigator",
+            "advisor"
+          ],
+          "skills": [
+            "due-diligence",
+            "entity-resolution",
+            "decision-support"
+          ]
+        }
+      ],
+      "technologies": [
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "n": 10
+        },
+        {
+          "id": "html",
+          "name": "HTML",
+          "n": 9
+        },
+        {
+          "id": "python",
+          "name": "Python",
+          "n": 8
+        },
+        {
+          "id": "alpine-js",
+          "name": "Alpine.js",
+          "n": 4
+        },
+        {
+          "id": "claude-api",
+          "name": "Claude API",
+          "n": 4
+        },
+        {
+          "id": "dockerfile",
+          "name": "Dockerfile",
+          "n": 4
+        },
+        {
+          "id": "fastapi",
+          "name": "FastAPI",
+          "n": 4
+        },
+        {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 4
+        },
+        {
+          "id": "github-actions",
+          "name": "GitHub Actions",
+          "n": 4
+        },
+        {
+          "id": "kubernetes",
+          "name": "Kubernetes",
+          "n": 4
+        },
+        {
+          "id": "majordomus",
+          "name": "Majordomus",
+          "n": 4
+        },
+        {
+          "id": "openai-api",
+          "name": "OpenAI API",
+          "n": 4
+        },
+        {
+          "id": "shell",
+          "name": "Shell",
+          "n": 4
+        },
+        {
+          "id": "css",
+          "name": "CSS",
+          "n": 3
+        },
+        {
+          "id": "mcp",
+          "name": "MCP",
+          "n": 2
+        },
+        {
+          "id": "pydantic",
+          "name": "Pydantic",
+          "n": 2
+        }
+      ]
+    },
+    "m-and-a": {
+      "stack": [
+        {
+          "id": "elixir",
+          "name": "Elixir",
+          "n": 1,
+          "declared": true
+        },
+        {
+          "id": "phoenix",
+          "name": "Phoenix",
+          "n": 0,
+          "declared": true
+        },
+        {
+          "id": "postgresql",
+          "name": "PostgreSQL",
+          "n": 5,
+          "declared": true
+        },
+        {
+          "id": "monte-carlo-simulation",
+          "name": "Monte Carlo simulation",
+          "n": 0,
+          "declared": true
+        }
+      ],
+      "skills": [
+        "m-and-a-screening",
+        "due-diligence",
+        "financial-analysis",
+        "ownership-analysis",
+        "market-intelligence",
+        "contestable-decisions",
+        "risk-scoring",
+        "data-room",
+        "decision-support"
+      ],
+      "repos": [
+        {
+          "name": "oscilla",
+          "title": "Oscilla",
+          "how": "words",
+          "score": 3.3,
+          "slug": "oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "category": "science",
+          "site": "https://korczis.github.io/oscilla/",
+          "pushed": "2026-11-17",
+          "skill": "contestable-decisions"
+        },
+        {
+          "name": "vomaste.cz",
+          "title": "vomaste.cz",
+          "how": "words",
+          "score": 3.3,
+          "slug": "vomaste-cz",
+          "url": "https://github.com/korczis/vomaste.cz",
+          "description": null,
+          "category": "tools",
+          "site": "https://korczis.github.io/vomaste.cz/",
+          "pushed": "2026-11-08",
+          "skill": "due-diligence"
+        },
+        {
+          "name": "openttd-prismatic-bridge",
+          "title": "openttd-prismatic-bridge",
+          "how": "words",
+          "score": 3,
+          "slug": "openttd-prismatic-bridge",
+          "url": "https://gitlab.com/korczis/openttd-prismatic-bridge",
+          "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
+          "category": "media",
+          "site": null,
+          "pushed": "2026-11-17",
+          "skill": "decision-support"
+        },
+        {
+          "name": "crisis-map",
+          "title": "Crisis map",
+          "how": "words",
+          "score": 2.3,
+          "slug": "crisis-map",
+          "url": "https://github.com/korczis/crisis-map",
+          "description": "Mini crisis map: incident reports normalised, geocoded via local Nominatim, stored as PostGIS geography, served from one capability registry (LiveView, REST, OpenAPI, MCP, CLI)",
+          "category": "data",
+          "site": "https://korczis.github.io/crisis-map/",
+          "pushed": "2026-11-16",
+          "skill": "decision-support"
+        }
+      ],
+      "engagements": [
+        {
+          "id": "e2",
+          "sector": "real-estate",
+          "roles": [
+            "architect",
+            "lead-engineer",
+            "ai-engineer",
+            "data-engineer"
+          ],
+          "skills": [
+            "m-and-a-screening",
+            "due-diligence",
+            "market-intelligence",
+            "risk-scoring",
+            "data-room",
+            "decision-support"
+          ]
+        },
+        {
+          "id": "e1",
+          "sector": "financial-group",
+          "roles": [
+            "investigator",
+            "advisor"
+          ],
+          "skills": [
+            "m-and-a-screening",
+            "due-diligence",
+            "decision-support"
+          ]
+        }
+      ],
+      "technologies": [
+        {
+          "id": "html",
+          "name": "HTML",
+          "n": 12
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "n": 12
+        },
+        {
+          "id": "python",
+          "name": "Python",
+          "n": 10
+        },
+        {
+          "id": "alpine-js",
+          "name": "Alpine.js",
+          "n": 6
+        },
+        {
+          "id": "claude-api",
+          "name": "Claude API",
+          "n": 6
+        },
+        {
+          "id": "dockerfile",
+          "name": "Dockerfile",
+          "n": 6
+        },
+        {
+          "id": "fastapi",
+          "name": "FastAPI",
+          "n": 6
+        },
+        {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 6
+        },
+        {
+          "id": "github-actions",
+          "name": "GitHub Actions",
+          "n": 6
+        },
+        {
+          "id": "kubernetes",
+          "name": "Kubernetes",
+          "n": 6
+        },
+        {
+          "id": "majordomus",
+          "name": "Majordomus",
+          "n": 6
+        },
+        {
+          "id": "openai-api",
+          "name": "OpenAI API",
+          "n": 6
+        },
+        {
+          "id": "playwright",
+          "name": "Playwright",
+          "n": 5
+        },
+        {
+          "id": "pydantic",
+          "name": "Pydantic",
+          "n": 4
+        },
+        {
+          "id": "react",
+          "name": "React",
+          "n": 4
+        },
+        {
+          "id": "shell",
+          "name": "Shell",
+          "n": 4
+        }
+      ]
+    },
+    "digital-investigation": {
+      "stack": [
+        {
+          "id": "elixir",
+          "name": "Elixir",
+          "n": 5,
+          "declared": true
+        },
+        {
+          "id": "broadway",
+          "name": "Broadway",
+          "n": 0,
+          "declared": true
+        },
+        {
+          "id": "playwright",
+          "name": "Playwright",
+          "n": 1,
+          "declared": true
+        },
+        {
+          "id": "postgresql",
+          "name": "PostgreSQL",
+          "n": 1,
+          "declared": true
+        },
+        {
+          "id": "meilisearch",
+          "name": "Meilisearch",
+          "n": 0,
+          "declared": true
+        },
+        {
+          "id": "cytoscape-js",
+          "name": "Cytoscape.js",
+          "n": 1,
+          "declared": true
+        }
+      ],
+      "skills": [
+        "osint-investigation",
+        "registry-intelligence",
+        "entity-resolution",
+        "ownership-analysis",
+        "infrastructure-osint",
+        "media-forensics",
+        "knowledge-graph",
+        "web-automation",
+        "change-monitoring"
+      ],
+      "repos": [
+        {
+          "name": "sig",
+          "title": "sig",
+          "how": "words",
+          "score": 3.6,
+          "slug": "sig",
+          "url": "https://gitlab.com/korczis/sig",
+          "description": "distributed cognitive framework in Elixir/OTP.",
+          "category": "ai",
+          "site": null,
+          "pushed": "2026-02-04",
+          "skill": "osint-investigation"
+        },
+        {
+          "name": "kompendium-epistemicke-anihilace",
+          "title": "Kompendium",
+          "how": "words",
+          "score": 2.6,
+          "slug": "kompendium-epistemicke-anihilace",
+          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
+          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
+          "category": "knowledge",
+          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+          "pushed": "2026-11-17",
+          "skill": "knowledge-graph"
+        },
+        {
+          "name": "crisis-map",
+          "title": "Crisis map",
+          "how": "words",
+          "score": 2.6,
+          "slug": "crisis-map",
+          "url": "https://github.com/korczis/crisis-map",
+          "description": "Mini crisis map: incident reports normalised, geocoded via local Nominatim, stored as PostGIS geography, served from one capability registry (LiveView, REST, OpenAPI, MCP, CLI)",
+          "category": "data",
+          "site": "https://korczis.github.io/crisis-map/",
+          "pushed": "2026-11-16",
+          "skill": "osint-investigation"
+        },
+        {
+          "name": "osint-case-ratcliffe-moscow-2026",
+          "title": "osint-case-ratcliffe-moscow-2026",
+          "how": "words",
+          "score": 2.6,
+          "slug": "osint-case-ratcliffe-moscow-2026",
+          "url": "https://github.com/korczis/osint-case-ratcliffe-moscow-2026",
+          "description": "Open-source intelligence assessment of the CIA Director's unannounced Moscow visit (2026-08-25) — maintained with Claude Code skills; reusable OSINT case toolkit",
+          "category": "security",
+          "site": "https://korczis.github.io/osint-case-ratcliffe-moscow-2026/",
+          "pushed": "2026-08-26",
+          "skill": "osint-investigation"
+        },
+        {
+          "name": "llm",
+          "title": "llm",
+          "how": "words",
+          "score": 2.6,
+          "slug": "llm",
+          "url": "https://gitlab.com/korczis/llm",
+          "description": "Local-first, provider-agnostic archive of AI conversations (ChatGPT, Claude, Gemini, Codex) — immutable, content-addressed, searchable evidence layer built in Elixir/Ecto.",
+          "category": "ai",
+          "site": null,
+          "pushed": "2026-08-21",
+          "skill": "media-forensics"
+        },
+        {
+          "name": "openttd-prismatic-bridge",
+          "title": "openttd-prismatic-bridge",
+          "how": "words",
+          "score": 2,
+          "slug": "openttd-prismatic-bridge",
+          "url": "https://gitlab.com/korczis/openttd-prismatic-bridge",
+          "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
+          "category": "media",
+          "site": null,
+          "pushed": "2026-11-17",
+          "skill": "osint-investigation"
+        },
+        {
+          "name": "data-atlas",
+          "title": "Data Atlas",
+          "how": "words",
+          "score": 2,
+          "slug": "data-atlas",
+          "url": "https://github.com/korczis/data-atlas",
+          "description": "Katalog GIS a geodatových zdrojů — datasety, katastr, doprava, remote sensing, prostorová analytika. Jednosouborová prohledávatelná stránka.",
+          "category": "data",
+          "site": "https://korczis.github.io/data-atlas/",
+          "pushed": "2026-11-16",
+          "skill": "osint-investigation"
+        }
+      ],
+      "engagements": [
+        {
+          "id": "e2",
+          "sector": "real-estate",
+          "roles": [
+            "architect",
+            "lead-engineer",
+            "ai-engineer",
+            "data-engineer"
+          ],
+          "skills": [
+            "osint-investigation",
+            "entity-resolution",
+            "knowledge-graph"
+          ]
+        },
+        {
+          "id": "e1",
+          "sector": "financial-group",
+          "roles": [
+            "investigator",
+            "advisor"
+          ],
+          "skills": [
+            "osint-investigation",
+            "entity-resolution"
+          ]
+        }
+      ],
+      "technologies": [
+        {
+          "id": "html",
+          "name": "HTML",
+          "n": 9
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "n": 9
+        },
+        {
+          "id": "python",
+          "name": "Python",
+          "n": 9
+        },
+        {
+          "id": "shell",
+          "name": "Shell",
+          "n": 6
+        },
+        {
+          "id": "claude-api",
+          "name": "Claude API",
+          "n": 5
+        },
+        {
+          "id": "alpine-js",
+          "name": "Alpine.js",
+          "n": 4
+        },
+        {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 4
+        },
+        {
+          "id": "dockerfile",
+          "name": "Dockerfile",
+          "n": 3
+        },
+        {
+          "id": "fastapi",
+          "name": "FastAPI",
+          "n": 3
+        },
+        {
+          "id": "github-actions",
+          "name": "GitHub Actions",
+          "n": 3
+        },
+        {
+          "id": "majordomus",
+          "name": "Majordomus",
+          "n": 3
+        },
+        {
+          "id": "postgis",
+          "name": "PostGIS",
+          "n": 3
+        },
+        {
+          "id": "css",
+          "name": "CSS",
+          "n": 2
+        },
+        {
+          "id": "kubernetes",
+          "name": "Kubernetes",
+          "n": 2
+        },
+        {
+          "id": "openai-api",
+          "name": "OpenAI API",
+          "n": 2
+        },
+        {
+          "id": "typescript",
+          "name": "TypeScript",
+          "n": 2
+        }
+      ]
+    },
+    "digital-forensics": {
+      "stack": [
+        {
+          "id": "elixir",
+          "name": "Elixir",
+          "n": 2,
+          "declared": true
+        },
+        {
+          "id": "postgresql",
+          "name": "PostgreSQL",
+          "n": 0,
+          "declared": true
+        },
+        {
+          "id": "lean",
+          "name": "Lean",
+          "n": 0,
+          "declared": true
+        }
+      ],
+      "skills": [
+        "media-forensics",
+        "chain-of-custody",
+        "infrastructure-osint",
+        "audit-trail",
+        "narrative-analysis",
+        "source-reliability"
+      ],
+      "repos": [
+        {
+          "name": "catharsis-as-a-service",
+          "title": "Catharsis as a Service",
+          "how": "words",
+          "score": 2.6,
+          "slug": "catharsis-as-a-service",
+          "url": "https://github.com/korczis/catharsis-as-a-service",
+          "description": "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact.",
+          "category": "media",
+          "site": "https://korczis.github.io/catharsis-as-a-service/",
+          "pushed": "2026-11-16",
+          "skill": "audit-trail"
+        },
+        {
+          "name": "llm",
+          "title": "llm",
+          "how": "words",
+          "score": 2.6,
+          "slug": "llm",
+          "url": "https://gitlab.com/korczis/llm",
+          "description": "Local-first, provider-agnostic archive of AI conversations (ChatGPT, Claude, Gemini, Codex) — immutable, content-addressed, searchable evidence layer built in Elixir/Ecto.",
+          "category": "ai",
+          "site": null,
+          "pushed": "2026-08-21",
+          "skill": "media-forensics"
+        },
+        {
+          "name": "osint-case-ratcliffe-moscow-2026",
+          "title": "osint-case-ratcliffe-moscow-2026",
+          "how": "words",
+          "score": 2,
+          "slug": "osint-case-ratcliffe-moscow-2026",
+          "url": "https://github.com/korczis/osint-case-ratcliffe-moscow-2026",
+          "description": "Open-source intelligence assessment of the CIA Director's unannounced Moscow visit (2026-08-25) — maintained with Claude Code skills; reusable OSINT case toolkit",
+          "category": "security",
+          "site": "https://korczis.github.io/osint-case-ratcliffe-moscow-2026/",
+          "pushed": "2026-08-26",
+          "skill": "narrative-analysis"
+        }
+      ],
+      "engagements": [
+        {
+          "id": "e2",
+          "sector": "real-estate",
+          "roles": [
+            "architect",
+            "lead-engineer",
+            "ai-engineer",
+            "data-engineer"
+          ],
+          "skills": [
+            "audit-trail"
+          ]
+        },
+        {
+          "id": "e1",
+          "sector": "financial-group",
+          "roles": [
+            "investigator",
+            "advisor"
+          ],
+          "skills": [
+            "audit-trail"
+          ]
+        }
+      ],
+      "technologies": [
+        {
+          "id": "claude-api",
+          "name": "Claude API",
+          "n": 4
+        },
+        {
+          "id": "html",
+          "name": "HTML",
+          "n": 4
+        },
+        {
+          "id": "python",
+          "name": "Python",
+          "n": 4
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "n": 3
+        },
+        {
+          "id": "shell",
+          "name": "Shell",
+          "n": 3
+        },
+        {
+          "id": "alpine-js",
+          "name": "Alpine.js",
+          "n": 1
+        },
+        {
+          "id": "css",
+          "name": "CSS",
+          "n": 1
+        },
+        {
+          "id": "dockerfile",
+          "name": "Dockerfile",
+          "n": 1
+        },
+        {
+          "id": "fastapi",
+          "name": "FastAPI",
+          "n": 1
+        },
+        {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 1
+        },
+        {
+          "id": "github-actions",
+          "name": "GitHub Actions",
+          "n": 1
+        },
+        {
+          "id": "kubernetes",
+          "name": "Kubernetes",
+          "n": 1
+        },
+        {
+          "id": "majordomus",
+          "name": "Majordomus",
+          "n": 1
+        },
+        {
+          "id": "openai-api",
+          "name": "OpenAI API",
+          "n": 1
+        },
+        {
+          "id": "playwright",
+          "name": "Playwright",
+          "n": 1
+        }
+      ]
+    },
+    "reputation-intelligence": {
+      "stack": [
+        {
+          "id": "elixir",
+          "name": "Elixir",
+          "n": 3,
+          "declared": true
+        },
+        {
+          "id": "broadway",
+          "name": "Broadway",
+          "n": 0,
+          "declared": true
+        },
+        {
+          "id": "ollama",
+          "name": "Ollama",
+          "n": 0,
+          "declared": true
+        },
+        {
+          "id": "claude-api",
+          "name": "Claude API",
+          "n": 4,
+          "declared": true
+        },
+        {
+          "id": "phoenix",
+          "name": "Phoenix",
+          "n": 0,
+          "declared": true
+        }
+      ],
+      "skills": [
+        "narrative-analysis",
+        "source-reliability",
+        "change-monitoring",
+        "osint-investigation",
+        "decision-support"
+      ],
+      "repos": [
+        {
+          "name": "sig",
+          "title": "sig",
+          "how": "words",
+          "score": 3.6,
+          "slug": "sig",
+          "url": "https://gitlab.com/korczis/sig",
+          "description": "distributed cognitive framework in Elixir/OTP.",
+          "category": "ai",
+          "site": null,
+          "pushed": "2026-02-04",
+          "skill": "osint-investigation"
+        },
+        {
+          "name": "openttd-prismatic-bridge",
+          "title": "openttd-prismatic-bridge",
+          "how": "words",
+          "score": 3,
+          "slug": "openttd-prismatic-bridge",
+          "url": "https://gitlab.com/korczis/openttd-prismatic-bridge",
+          "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
+          "category": "media",
+          "site": null,
+          "pushed": "2026-11-17",
+          "skill": "decision-support"
+        },
+        {
+          "name": "crisis-map",
+          "title": "Crisis map",
+          "how": "words",
+          "score": 2.6,
+          "slug": "crisis-map",
+          "url": "https://github.com/korczis/crisis-map",
+          "description": "Mini crisis map: incident reports normalised, geocoded via local Nominatim, stored as PostGIS geography, served from one capability registry (LiveView, REST, OpenAPI, MCP, CLI)",
+          "category": "data",
+          "site": "https://korczis.github.io/crisis-map/",
+          "pushed": "2026-11-16",
+          "skill": "osint-investigation"
+        },
+        {
+          "name": "osint-case-ratcliffe-moscow-2026",
+          "title": "osint-case-ratcliffe-moscow-2026",
+          "how": "words",
+          "score": 2.6,
+          "slug": "osint-case-ratcliffe-moscow-2026",
+          "url": "https://github.com/korczis/osint-case-ratcliffe-moscow-2026",
+          "description": "Open-source intelligence assessment of the CIA Director's unannounced Moscow visit (2026-08-25) — maintained with Claude Code skills; reusable OSINT case toolkit",
+          "category": "security",
+          "site": "https://korczis.github.io/osint-case-ratcliffe-moscow-2026/",
+          "pushed": "2026-08-26",
+          "skill": "osint-investigation"
+        },
+        {
+          "name": "data-atlas",
+          "title": "Data Atlas",
+          "how": "words",
+          "score": 2,
+          "slug": "data-atlas",
+          "url": "https://github.com/korczis/data-atlas",
+          "description": "Katalog GIS a geodatových zdrojů — datasety, katastr, doprava, remote sensing, prostorová analytika. Jednosouborová prohledávatelná stránka.",
+          "category": "data",
+          "site": "https://korczis.github.io/data-atlas/",
+          "pushed": "2026-11-16",
+          "skill": "osint-investigation"
+        }
+      ],
+      "engagements": [
+        {
+          "id": "e2",
+          "sector": "real-estate",
+          "roles": [
+            "architect",
+            "lead-engineer",
+            "ai-engineer",
+            "data-engineer"
+          ],
+          "skills": [
+            "osint-investigation",
+            "decision-support"
+          ]
+        },
+        {
+          "id": "e1",
+          "sector": "financial-group",
+          "roles": [
+            "investigator",
+            "advisor"
+          ],
+          "skills": [
+            "osint-investigation",
+            "decision-support"
+          ]
+        }
+      ],
+      "technologies": [
+        {
+          "id": "html",
+          "name": "HTML",
+          "n": 9
+        },
+        {
+          "id": "python",
+          "name": "Python",
+          "n": 9
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "n": 7
+        },
+        {
+          "id": "shell",
+          "name": "Shell",
+          "n": 7
+        },
+        {
+          "id": "alpine-js",
+          "name": "Alpine.js",
+          "n": 2
+        },
+        {
+          "id": "css",
+          "name": "CSS",
+          "n": 2
+        },
+        {
+          "id": "dockerfile",
+          "name": "Dockerfile",
+          "n": 2
+        },
+        {
+          "id": "fastapi",
+          "name": "FastAPI",
+          "n": 2
+        },
+        {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 2
+        },
+        {
+          "id": "github-actions",
+          "name": "GitHub Actions",
+          "n": 2
+        },
+        {
+          "id": "postgis",
+          "name": "PostGIS",
+          "n": 2
+        },
+        {
+          "id": "typescript",
+          "name": "TypeScript",
+          "n": 2
+        },
+        {
+          "id": "eex",
+          "name": "EEx and HEEx",
+          "n": 1
+        },
+        {
+          "id": "just",
+          "name": "Just",
+          "n": 1
+        },
+        {
+          "id": "kubernetes",
+          "name": "Kubernetes",
+          "n": 1
+        },
+        {
+          "id": "majordomus",
+          "name": "Majordomus",
+          "n": 1
+        }
+      ]
+    },
+    "compliance-screening": {
+      "stack": [
+        {
+          "id": "elixir",
+          "name": "Elixir",
+          "n": 0,
+          "declared": true
+        },
+        {
+          "id": "postgresql",
+          "name": "PostgreSQL",
+          "n": 2,
+          "declared": true
+        },
+        {
+          "id": "openapi",
+          "name": "OpenAPI",
+          "n": 0,
+          "declared": true
+        }
+      ],
+      "skills": [
+        "sanctions-screening",
+        "ownership-analysis",
+        "entity-resolution",
+        "risk-scoring",
+        "contestable-decisions",
+        "compliance-mapping"
+      ],
+      "repos": [
+        {
+          "name": "oscilla",
+          "title": "Oscilla",
+          "how": "words",
+          "score": 3.3,
+          "slug": "oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "category": "science",
+          "site": "https://korczis.github.io/oscilla/",
+          "pushed": "2026-11-17",
+          "skill": "contestable-decisions"
+        }
+      ],
+      "engagements": [
+        {
+          "id": "e2",
+          "sector": "real-estate",
+          "roles": [
+            "architect",
+            "lead-engineer",
+            "ai-engineer",
+            "data-engineer"
+          ],
+          "skills": [
+            "entity-resolution",
+            "risk-scoring"
+          ]
+        },
+        {
+          "id": "e1",
+          "sector": "financial-group",
+          "roles": [
+            "investigator",
+            "advisor"
+          ],
+          "skills": [
+            "entity-resolution"
+          ]
+        }
+      ],
+      "technologies": [
+        {
+          "id": "html",
+          "name": "HTML",
+          "n": 4
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "n": 4
+        },
+        {
+          "id": "python",
+          "name": "Python",
+          "n": 3
+        },
+        {
+          "id": "alpine-js",
+          "name": "Alpine.js",
+          "n": 2
+        },
+        {
+          "id": "claude-api",
+          "name": "Claude API",
+          "n": 2
+        },
+        {
+          "id": "dockerfile",
+          "name": "Dockerfile",
+          "n": 2
+        },
+        {
+          "id": "fastapi",
+          "name": "FastAPI",
+          "n": 2
+        },
+        {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 2
+        },
+        {
+          "id": "github-actions",
+          "name": "GitHub Actions",
+          "n": 2
+        },
+        {
+          "id": "kubernetes",
+          "name": "Kubernetes",
+          "n": 2
+        },
+        {
+          "id": "majordomus",
+          "name": "Majordomus",
+          "n": 2
+        },
+        {
+          "id": "openai-api",
+          "name": "OpenAI API",
+          "n": 2
+        },
+        {
+          "id": "playwright",
+          "name": "Playwright",
+          "n": 2
+        },
+        {
+          "id": "pydantic",
+          "name": "Pydantic",
+          "n": 2
+        },
+        {
+          "id": "react",
+          "name": "React",
+          "n": 2
+        },
+        {
+          "id": "css",
+          "name": "CSS",
+          "n": 1
+        }
+      ]
+    },
+    "continuous-monitoring": {
+      "stack": [
+        {
+          "id": "elixir",
+          "name": "Elixir",
+          "n": 1,
+          "declared": true
+        },
+        {
+          "id": "broadway",
+          "name": "Broadway",
+          "n": 0,
+          "declared": true
+        },
+        {
+          "id": "phoenix",
+          "name": "Phoenix",
+          "n": 0,
+          "declared": true
+        },
+        {
+          "id": "postgresql",
+          "name": "PostgreSQL",
+          "n": 4,
+          "declared": true
+        }
+      ],
+      "skills": [
+        "insolvency-monitoring",
+        "change-monitoring",
+        "registry-intelligence",
+        "entity-resolution",
+        "orchestration",
+        "risk-scoring"
+      ],
+      "repos": [
+        {
+          "name": "crisis-map",
+          "title": "Crisis map",
+          "how": "words",
+          "score": 2.6,
+          "slug": "crisis-map",
+          "url": "https://github.com/korczis/crisis-map",
+          "description": "Mini crisis map: incident reports normalised, geocoded via local Nominatim, stored as PostGIS geography, served from one capability registry (LiveView, REST, OpenAPI, MCP, CLI)",
+          "category": "data",
+          "site": "https://korczis.github.io/crisis-map/",
+          "pushed": "2026-11-16",
+          "skill": "registry-intelligence"
+        },
+        {
+          "name": "prismatic-majordomus",
+          "title": "Majordomus",
+          "how": "words",
+          "score": 2,
+          "slug": "prismatic-majordomus",
+          "url": "https://github.com/korczis/prismatic-majordomus",
+          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+          "category": "ai",
+          "site": "https://korczis.github.io/prismatic-majordomus/",
+          "pushed": "2026-11-17",
+          "skill": "orchestration"
+        }
+      ],
+      "engagements": [
+        {
+          "id": "e2",
+          "sector": "real-estate",
+          "roles": [
+            "architect",
+            "lead-engineer",
+            "ai-engineer",
+            "data-engineer"
+          ],
+          "skills": [
+            "insolvency-monitoring",
+            "entity-resolution",
+            "orchestration",
+            "risk-scoring"
+          ]
+        },
+        {
+          "id": "e1",
+          "sector": "financial-group",
+          "roles": [
+            "investigator",
+            "advisor"
+          ],
+          "skills": [
+            "entity-resolution"
+          ]
+        }
+      ],
+      "technologies": [
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "n": 7
+        },
+        {
+          "id": "html",
+          "name": "HTML",
+          "n": 6
+        },
+        {
+          "id": "claude-api",
+          "name": "Claude API",
+          "n": 5
+        },
+        {
+          "id": "alpine-js",
+          "name": "Alpine.js",
+          "n": 4
+        },
+        {
+          "id": "dockerfile",
+          "name": "Dockerfile",
+          "n": 4
+        },
+        {
+          "id": "fastapi",
+          "name": "FastAPI",
+          "n": 4
+        },
+        {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 4
+        },
+        {
+          "id": "github-actions",
+          "name": "GitHub Actions",
+          "n": 4
+        },
+        {
+          "id": "kubernetes",
+          "name": "Kubernetes",
+          "n": 4
+        },
+        {
+          "id": "majordomus",
+          "name": "Majordomus",
+          "n": 4
+        },
+        {
+          "id": "openai-api",
+          "name": "OpenAI API",
+          "n": 4
+        },
+        {
+          "id": "playwright",
+          "name": "Playwright",
+          "n": 4
+        },
+        {
+          "id": "python",
+          "name": "Python",
+          "n": 4
+        },
+        {
+          "id": "pydantic",
+          "name": "Pydantic",
+          "n": 3
+        },
+        {
+          "id": "react",
+          "name": "React",
+          "n": 3
+        },
+        {
+          "id": "mcp",
+          "name": "MCP",
+          "n": 2
+        }
+      ]
+    },
+    "attack-surface": {
+      "stack": [
+        {
+          "id": "elixir",
+          "name": "Elixir",
+          "n": 0,
+          "declared": true
+        },
+        {
+          "id": "postgresql",
+          "name": "PostgreSQL",
+          "n": 1,
+          "declared": true
+        },
+        {
+          "id": "phoenix",
+          "name": "Phoenix",
+          "n": 0,
+          "declared": true
+        }
+      ],
+      "skills": [
+        "infrastructure-osint",
+        "compliance-mapping",
+        "change-monitoring",
+        "risk-scoring",
+        "web-automation"
+      ],
+      "repos": [],
+      "engagements": [
+        {
+          "id": "e2",
+          "sector": "real-estate",
+          "roles": [
+            "architect",
+            "lead-engineer",
+            "ai-engineer",
+            "data-engineer"
+          ],
+          "skills": [
+            "risk-scoring"
+          ]
+        }
+      ],
+      "technologies": [
+        {
+          "id": "alpine-js",
+          "name": "Alpine.js",
+          "n": 1
+        },
+        {
+          "id": "claude-api",
+          "name": "Claude API",
+          "n": 1
+        },
+        {
+          "id": "dockerfile",
+          "name": "Dockerfile",
+          "n": 1
+        },
+        {
+          "id": "fastapi",
+          "name": "FastAPI",
+          "n": 1
+        },
+        {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 1
+        },
+        {
+          "id": "github-actions",
+          "name": "GitHub Actions",
+          "n": 1
+        },
+        {
+          "id": "html",
+          "name": "HTML",
+          "n": 1
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "n": 1
+        },
+        {
+          "id": "kubernetes",
+          "name": "Kubernetes",
+          "n": 1
+        },
+        {
+          "id": "majordomus",
+          "name": "Majordomus",
+          "n": 1
+        },
+        {
+          "id": "openai-api",
+          "name": "OpenAI API",
+          "n": 1
+        },
+        {
+          "id": "playwright",
+          "name": "Playwright",
+          "n": 1
+        },
+        {
+          "id": "pydantic",
+          "name": "Pydantic",
+          "n": 1
+        },
+        {
+          "id": "python",
+          "name": "Python",
+          "n": 1
+        },
+        {
+          "id": "react",
+          "name": "React",
+          "n": 1
+        }
+      ]
+    },
+    "decision-support-ai": {
+      "stack": [
+        {
+          "id": "elixir",
+          "name": "Elixir",
+          "n": 4,
+          "declared": true
+        },
+        {
+          "id": "mcp",
+          "name": "MCP",
+          "n": 2,
+          "declared": true
+        },
+        {
+          "id": "claude-api",
+          "name": "Claude API",
+          "n": 11,
+          "declared": true
+        },
+        {
+          "id": "ollama",
+          "name": "Ollama",
+          "n": 0,
+          "declared": true
+        },
+        {
+          "id": "phoenix",
+          "name": "Phoenix",
+          "n": 0,
+          "declared": true
+        }
+      ],
+      "skills": [
+        "llm-agents",
+        "decision-support",
+        "contestable-decisions",
+        "ai-transformation",
+        "orchestration",
+        "document-extraction",
+        "audit-trail"
+      ],
+      "repos": [
+        {
+          "name": "sig",
+          "title": "sig",
+          "how": "words",
+          "score": 4,
+          "slug": "sig",
+          "url": "https://gitlab.com/korczis/sig",
+          "description": "distributed cognitive framework in Elixir/OTP.",
+          "category": "ai",
+          "site": null,
+          "pushed": "2026-02-04",
+          "skill": "llm-agents"
+        },
+        {
+          "name": "prismatic-majordomus",
+          "title": "Majordomus",
+          "how": "words",
+          "score": 3.5,
+          "slug": "prismatic-majordomus",
+          "url": "https://github.com/korczis/prismatic-majordomus",
+          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+          "category": "ai",
+          "site": "https://korczis.github.io/prismatic-majordomus/",
+          "pushed": "2026-11-17",
+          "skill": "llm-agents"
+        },
+        {
+          "name": "oscilla",
+          "title": "Oscilla",
+          "how": "words",
+          "score": 3.3,
+          "slug": "oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "category": "science",
+          "site": "https://korczis.github.io/oscilla/",
+          "pushed": "2026-11-17",
+          "skill": "contestable-decisions"
+        },
+        {
+          "name": "openttd-prismatic-bridge",
+          "title": "openttd-prismatic-bridge",
+          "how": "words",
+          "score": 3,
+          "slug": "openttd-prismatic-bridge",
+          "url": "https://gitlab.com/korczis/openttd-prismatic-bridge",
+          "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
+          "category": "media",
+          "site": null,
+          "pushed": "2026-11-17",
+          "skill": "decision-support"
+        },
+        {
+          "name": "osint-case-ratcliffe-moscow-2026",
+          "title": "osint-case-ratcliffe-moscow-2026",
+          "how": "words",
+          "score": 3,
+          "slug": "osint-case-ratcliffe-moscow-2026",
+          "url": "https://github.com/korczis/osint-case-ratcliffe-moscow-2026",
+          "description": "Open-source intelligence assessment of the CIA Director's unannounced Moscow visit (2026-08-25) — maintained with Claude Code skills; reusable OSINT case toolkit",
+          "category": "security",
+          "site": "https://korczis.github.io/osint-case-ratcliffe-moscow-2026/",
+          "pushed": "2026-08-26",
+          "skill": "llm-agents"
+        },
+        {
+          "name": "llm",
+          "title": "llm",
+          "how": "words",
+          "score": 2.8,
+          "slug": "llm",
+          "url": "https://gitlab.com/korczis/llm",
+          "description": "Local-first, provider-agnostic archive of AI conversations (ChatGPT, Claude, Gemini, Codex) — immutable, content-addressed, searchable evidence layer built in Elixir/Ecto.",
+          "category": "ai",
+          "site": null,
+          "pushed": "2026-08-21",
+          "skill": "llm-agents"
+        },
+        {
+          "name": "korczis.github.io",
+          "title": "korczis.github.io",
+          "how": "words",
+          "score": 2.6,
+          "slug": "korczis-github-io",
+          "url": "https://github.com/korczis/korczis.github.io",
+          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+          "category": "web",
+          "site": null,
+          "pushed": "2026-11-17",
+          "skill": "llm-agents"
+        },
+        {
+          "name": "catharsis-as-a-service",
+          "title": "Catharsis as a Service",
+          "how": "words",
+          "score": 2.6,
+          "slug": "catharsis-as-a-service",
+          "url": "https://github.com/korczis/catharsis-as-a-service",
+          "description": "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact.",
+          "category": "media",
+          "site": "https://korczis.github.io/catharsis-as-a-service/",
+          "pushed": "2026-11-16",
+          "skill": "audit-trail"
+        },
+        {
+          "name": "astronomists",
+          "title": "astronomists",
+          "how": "words",
+          "score": 2.3,
+          "slug": "astronomists",
+          "url": "https://github.com/korczis/astronomists",
+          "description": null,
+          "category": "tools",
+          "site": "https://korczis.github.io/astronomists/",
+          "pushed": "2026-11-16",
+          "skill": "llm-agents"
+        },
+        {
+          "name": "crisis-map",
+          "title": "Crisis map",
+          "how": "words",
+          "score": 2.3,
+          "slug": "crisis-map",
+          "url": "https://github.com/korczis/crisis-map",
+          "description": "Mini crisis map: incident reports normalised, geocoded via local Nominatim, stored as PostGIS geography, served from one capability registry (LiveView, REST, OpenAPI, MCP, CLI)",
+          "category": "data",
+          "site": "https://korczis.github.io/crisis-map/",
+          "pushed": "2026-11-16",
+          "skill": "decision-support"
+        },
+        {
+          "name": "data-atlas",
+          "title": "Data Atlas",
+          "how": "words",
+          "score": 2,
+          "slug": "data-atlas",
+          "url": "https://github.com/korczis/data-atlas",
+          "description": "Katalog GIS a geodatových zdrojů — datasety, katastr, doprava, remote sensing, prostorová analytika. Jednosouborová prohledávatelná stránka.",
+          "category": "data",
+          "site": "https://korczis.github.io/data-atlas/",
+          "pushed": "2026-11-16",
+          "skill": "document-extraction"
+        }
+      ],
+      "engagements": [
+        {
+          "id": "e2",
+          "sector": "real-estate",
+          "roles": [
+            "architect",
+            "lead-engineer",
+            "ai-engineer",
+            "data-engineer"
+          ],
+          "skills": [
+            "llm-agents",
+            "decision-support",
+            "ai-transformation",
+            "orchestration",
+            "document-extraction",
+            "audit-trail"
+          ]
+        },
+        {
+          "id": "e1",
+          "sector": "financial-group",
+          "roles": [
+            "investigator",
+            "advisor"
+          ],
+          "skills": [
+            "decision-support",
+            "audit-trail"
+          ]
+        }
+      ],
+      "technologies": [
+        {
+          "id": "html",
+          "name": "HTML",
+          "n": 17
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "n": 16
+        },
+        {
+          "id": "python",
+          "name": "Python",
+          "n": 12
+        },
+        {
+          "id": "shell",
+          "name": "Shell",
+          "n": 12
+        },
+        {
+          "id": "alpine-js",
+          "name": "Alpine.js",
+          "n": 7
+        },
+        {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 7
+        },
+        {
+          "id": "majordomus",
+          "name": "Majordomus",
+          "n": 7
+        },
+        {
+          "id": "dockerfile",
+          "name": "Dockerfile",
+          "n": 6
+        },
+        {
+          "id": "css",
+          "name": "CSS",
+          "n": 5
+        },
+        {
+          "id": "fastapi",
+          "name": "FastAPI",
+          "n": 5
+        },
+        {
+          "id": "github-actions",
+          "name": "GitHub Actions",
+          "n": 5
+        },
+        {
+          "id": "kubernetes",
+          "name": "Kubernetes",
+          "n": 5
+        },
+        {
+          "id": "openai-api",
+          "name": "OpenAI API",
+          "n": 5
+        },
+        {
+          "id": "playwright",
+          "name": "Playwright",
+          "n": 4
+        },
+        {
+          "id": "typescript",
+          "name": "TypeScript",
+          "n": 3
+        },
+        {
+          "id": "postgresql",
+          "name": "PostgreSQL",
+          "n": 2
+        }
+      ]
+    },
+    "ai-engineering-governance": {
+      "stack": [
+        {
+          "id": "rust",
+          "name": "Rust",
+          "n": 3,
+          "declared": true
+        },
+        {
+          "id": "mcp",
+          "name": "MCP",
+          "n": 3,
+          "declared": true
+        },
+        {
+          "id": "claude-api",
+          "name": "Claude API",
+          "n": 10,
+          "declared": true
+        },
+        {
+          "id": "majordomus",
+          "name": "Majordomus",
+          "n": 8,
+          "declared": true
+        },
+        {
+          "id": "github-actions",
+          "name": "GitHub Actions",
+          "n": 3,
+          "declared": true
+        }
+      ],
+      "skills": [
+        "policy-as-code",
+        "llm-agents",
+        "audit-trail",
+        "orchestration",
+        "ai-transformation",
+        "contestable-decisions"
+      ],
+      "repos": [
+        {
+          "name": "majordomus-reel",
+          "title": "Majordomus reel",
+          "how": "words",
+          "score": 5.1,
+          "slug": "majordomus-reel",
+          "url": "https://github.com/korczis/majordomus-reel",
+          "description": "A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound",
+          "category": "media",
+          "site": "https://korczis.github.io/majordomus-reel/",
+          "pushed": "2026-11-17",
+          "skill": "policy-as-code"
+        },
+        {
+          "name": "korczis.github.io",
+          "title": "korczis.github.io",
+          "how": "words",
+          "score": 4,
+          "slug": "korczis-github-io",
+          "url": "https://github.com/korczis/korczis.github.io",
+          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+          "category": "web",
+          "site": null,
+          "pushed": "2026-11-17",
+          "skill": "policy-as-code"
+        },
+        {
+          "name": "sig",
+          "title": "sig",
+          "how": "words",
+          "score": 4,
+          "slug": "sig",
+          "url": "https://gitlab.com/korczis/sig",
+          "description": "distributed cognitive framework in Elixir/OTP.",
+          "category": "ai",
+          "site": null,
+          "pushed": "2026-02-04",
+          "skill": "llm-agents"
+        },
+        {
+          "name": "kompendium-epistemicke-anihilace",
+          "title": "Kompendium",
+          "how": "words",
+          "score": 3.6,
+          "slug": "kompendium-epistemicke-anihilace",
+          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
+          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
+          "category": "knowledge",
+          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+          "pushed": "2026-11-17",
+          "skill": "policy-as-code"
+        },
+        {
+          "name": "prismatic-majordomus",
+          "title": "Majordomus",
+          "how": "words",
+          "score": 3.5,
+          "slug": "prismatic-majordomus",
+          "url": "https://github.com/korczis/prismatic-majordomus",
+          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+          "category": "ai",
+          "site": "https://korczis.github.io/prismatic-majordomus/",
+          "pushed": "2026-11-17",
+          "skill": "llm-agents"
+        },
+        {
+          "name": "oscilla",
+          "title": "Oscilla",
+          "how": "words",
+          "score": 3.3,
+          "slug": "oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "category": "science",
+          "site": "https://korczis.github.io/oscilla/",
+          "pushed": "2026-11-17",
+          "skill": "contestable-decisions"
+        },
+        {
+          "name": "osint-case-ratcliffe-moscow-2026",
+          "title": "osint-case-ratcliffe-moscow-2026",
+          "how": "words",
+          "score": 3,
+          "slug": "osint-case-ratcliffe-moscow-2026",
+          "url": "https://github.com/korczis/osint-case-ratcliffe-moscow-2026",
+          "description": "Open-source intelligence assessment of the CIA Director's unannounced Moscow visit (2026-08-25) — maintained with Claude Code skills; reusable OSINT case toolkit",
+          "category": "security",
+          "site": "https://korczis.github.io/osint-case-ratcliffe-moscow-2026/",
+          "pushed": "2026-08-26",
+          "skill": "llm-agents"
+        },
+        {
+          "name": "data-atlas",
+          "title": "Data Atlas",
+          "how": "words",
+          "score": 2.8,
+          "slug": "data-atlas",
+          "url": "https://github.com/korczis/data-atlas",
+          "description": "Katalog GIS a geodatových zdrojů — datasety, katastr, doprava, remote sensing, prostorová analytika. Jednosouborová prohledávatelná stránka.",
+          "category": "data",
+          "site": "https://korczis.github.io/data-atlas/",
+          "pushed": "2026-11-16",
+          "skill": "policy-as-code"
+        },
+        {
+          "name": "llm",
+          "title": "llm",
+          "how": "words",
+          "score": 2.8,
+          "slug": "llm",
+          "url": "https://gitlab.com/korczis/llm",
+          "description": "Local-first, provider-agnostic archive of AI conversations (ChatGPT, Claude, Gemini, Codex) — immutable, content-addressed, searchable evidence layer built in Elixir/Ecto.",
+          "category": "ai",
+          "site": null,
+          "pushed": "2026-08-21",
+          "skill": "llm-agents"
+        },
+        {
+          "name": "catharsis-as-a-service",
+          "title": "Catharsis as a Service",
+          "how": "words",
+          "score": 2.6,
+          "slug": "catharsis-as-a-service",
+          "url": "https://github.com/korczis/catharsis-as-a-service",
+          "description": "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact.",
+          "category": "media",
+          "site": "https://korczis.github.io/catharsis-as-a-service/",
+          "pushed": "2026-11-16",
+          "skill": "audit-trail"
+        },
+        {
+          "name": "astronomists",
+          "title": "astronomists",
+          "how": "words",
+          "score": 2.3,
+          "slug": "astronomists",
+          "url": "https://github.com/korczis/astronomists",
+          "description": null,
+          "category": "tools",
+          "site": "https://korczis.github.io/astronomists/",
+          "pushed": "2026-11-16",
+          "skill": "llm-agents"
+        },
+        {
+          "name": "crisis-map",
+          "title": "Crisis map",
+          "how": "words",
+          "score": 2,
+          "slug": "crisis-map",
+          "url": "https://github.com/korczis/crisis-map",
+          "description": "Mini crisis map: incident reports normalised, geocoded via local Nominatim, stored as PostGIS geography, served from one capability registry (LiveView, REST, OpenAPI, MCP, CLI)",
+          "category": "data",
+          "site": "https://korczis.github.io/crisis-map/",
+          "pushed": "2026-11-16",
+          "skill": "policy-as-code"
+        },
+        {
+          "name": "vomaste.cz",
+          "title": "vomaste.cz",
+          "how": "words",
+          "score": 2,
+          "slug": "vomaste-cz",
+          "url": "https://github.com/korczis/vomaste.cz",
+          "description": null,
+          "category": "tools",
+          "site": "https://korczis.github.io/vomaste.cz/",
+          "pushed": "2026-11-08",
+          "skill": "policy-as-code"
+        }
+      ],
+      "engagements": [
+        {
+          "id": "e2",
+          "sector": "real-estate",
+          "roles": [
+            "architect",
+            "lead-engineer",
+            "ai-engineer",
+            "data-engineer"
+          ],
+          "skills": [
+            "llm-agents",
+            "audit-trail",
+            "orchestration",
+            "ai-transformation"
+          ]
+        },
+        {
+          "id": "e1",
+          "sector": "financial-group",
+          "roles": [
+            "investigator",
+            "advisor"
+          ],
+          "skills": [
+            "audit-trail"
+          ]
+        }
+      ],
+      "technologies": [
+        {
+          "id": "html",
+          "name": "HTML",
+          "n": 19
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "n": 19
+        },
+        {
+          "id": "shell",
+          "name": "Shell",
+          "n": 16
+        },
+        {
+          "id": "python",
+          "name": "Python",
+          "n": 10
+        },
+        {
+          "id": "css",
+          "name": "CSS",
+          "n": 8
+        },
+        {
+          "id": "alpine-js",
+          "name": "Alpine.js",
+          "n": 7
+        },
+        {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 7
+        },
+        {
+          "id": "elixir",
+          "name": "Elixir",
+          "n": 5
+        },
+        {
+          "id": "zola",
+          "name": "Zola",
+          "n": 5
+        },
+        {
+          "id": "dockerfile",
+          "name": "Dockerfile",
+          "n": 4
+        },
+        {
+          "id": "apache-echarts",
+          "name": "Apache ECharts",
+          "n": 3
+        },
+        {
+          "id": "fastapi",
+          "name": "FastAPI",
+          "n": 3
+        },
+        {
+          "id": "kubernetes",
+          "name": "Kubernetes",
+          "n": 3
+        },
+        {
+          "id": "openai-api",
+          "name": "OpenAI API",
+          "n": 3
+        },
+        {
+          "id": "playwright",
+          "name": "Playwright",
+          "n": 3
+        },
+        {
+          "id": "typescript",
+          "name": "TypeScript",
+          "n": 3
+        }
+      ]
+    },
+    "interactive-data-products": {
+      "stack": [
+        {
+          "id": "apache-echarts",
+          "name": "Apache ECharts",
+          "n": 3,
+          "declared": true
+        },
+        {
+          "id": "d3",
+          "name": "D3.js",
+          "n": 0,
+          "declared": true
+        },
+        {
+          "id": "p5-js",
+          "name": "p5.js",
+          "n": 1,
+          "declared": true
+        },
+        {
+          "id": "web-audio",
+          "name": "Web Audio",
+          "n": 0,
+          "declared": true
+        },
+        {
+          "id": "postgis",
+          "name": "PostGIS",
+          "n": 2,
+          "declared": true
+        },
+        {
+          "id": "zola",
+          "name": "Zola",
+          "n": 1,
+          "declared": true
+        }
+      ],
+      "skills": [
+        "interactive-visualisation",
+        "geospatial-analysis",
+        "data-integration",
+        "knowledge-graph",
+        "decision-support"
+      ],
+      "repos": [
+        {
+          "name": "algoglyph",
+          "title": "algoglyph",
+          "how": "words",
+          "score": 6.3,
+          "slug": "algoglyph",
+          "url": "https://github.com/korczis/algoglyph",
+          "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
+          "category": "science",
+          "site": "https://korczis.github.io/algoglyph/",
+          "pushed": "2026-11-17",
+          "skill": "interactive-visualisation"
+        },
+        {
+          "name": "crisis-map",
+          "title": "Crisis map",
+          "how": "words",
+          "score": 3.6,
+          "slug": "crisis-map",
+          "url": "https://github.com/korczis/crisis-map",
+          "description": "Mini crisis map: incident reports normalised, geocoded via local Nominatim, stored as PostGIS geography, served from one capability registry (LiveView, REST, OpenAPI, MCP, CLI)",
+          "category": "data",
+          "site": "https://korczis.github.io/crisis-map/",
+          "pushed": "2026-11-16",
+          "skill": "geospatial-analysis"
+        },
+        {
+          "name": "llm",
+          "title": "llm",
+          "how": "words",
+          "score": 3.2,
+          "slug": "llm",
+          "url": "https://gitlab.com/korczis/llm",
+          "description": "Local-first, provider-agnostic archive of AI conversations (ChatGPT, Claude, Gemini, Codex) — immutable, content-addressed, searchable evidence layer built in Elixir/Ecto.",
+          "category": "ai",
+          "site": null,
+          "pushed": "2026-08-21",
+          "skill": "data-integration"
+        },
+        {
+          "name": "openttd-prismatic-bridge",
+          "title": "openttd-prismatic-bridge",
+          "how": "words",
+          "score": 3,
+          "slug": "openttd-prismatic-bridge",
+          "url": "https://gitlab.com/korczis/openttd-prismatic-bridge",
+          "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
+          "category": "media",
+          "site": null,
+          "pushed": "2026-11-17",
+          "skill": "decision-support"
+        },
+        {
+          "name": "sonic-playground",
+          "title": "Sonic Playground",
+          "how": "words",
+          "score": 2.8,
+          "slug": "sonic-playground",
+          "url": "https://github.com/korczis/sonic-playground",
+          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+          "category": "media",
+          "site": "https://korczis.github.io/sonic-playground/",
+          "pushed": "2026-11-17",
+          "skill": "interactive-visualisation"
+        },
+        {
+          "name": "data-atlas",
+          "title": "Data Atlas",
+          "how": "words",
+          "score": 2.8,
+          "slug": "data-atlas",
+          "url": "https://github.com/korczis/data-atlas",
+          "description": "Katalog GIS a geodatových zdrojů — datasety, katastr, doprava, remote sensing, prostorová analytika. Jednosouborová prohledávatelná stránka.",
+          "category": "data",
+          "site": "https://korczis.github.io/data-atlas/",
+          "pushed": "2026-11-16",
+          "skill": "geospatial-analysis"
+        },
+        {
+          "name": "kompendium-epistemicke-anihilace",
+          "title": "Kompendium",
+          "how": "words",
+          "score": 2.6,
+          "slug": "kompendium-epistemicke-anihilace",
+          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
+          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
+          "category": "knowledge",
+          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+          "pushed": "2026-11-17",
+          "skill": "interactive-visualisation"
+        },
+        {
+          "name": "simple_geocoder",
+          "title": "simple_geocoder",
+          "how": "words",
+          "score": 2.6,
+          "slug": "simple-geocoder",
+          "url": "https://gitlab.com/korczis/simple_geocoder",
+          "description": null,
+          "category": "tools",
+          "site": null,
+          "pushed": "2025-12-20",
+          "skill": "geospatial-analysis"
+        },
+        {
+          "name": "astronomists",
+          "title": "astronomists",
+          "how": "words",
+          "score": 2.3,
+          "slug": "astronomists",
+          "url": "https://github.com/korczis/astronomists",
+          "description": null,
+          "category": "tools",
+          "site": "https://korczis.github.io/astronomists/",
+          "pushed": "2026-11-16",
+          "skill": "interactive-visualisation"
+        },
+        {
+          "name": "sig",
+          "title": "sig",
+          "how": "words",
+          "score": 2.3,
+          "slug": "sig",
+          "url": "https://gitlab.com/korczis/sig",
+          "description": "distributed cognitive framework in Elixir/OTP.",
+          "category": "ai",
+          "site": null,
+          "pushed": "2026-02-04",
+          "skill": "data-integration"
+        }
+      ],
+      "engagements": [
+        {
+          "id": "e2",
+          "sector": "real-estate",
+          "roles": [
+            "architect",
+            "lead-engineer",
+            "ai-engineer",
+            "data-engineer"
+          ],
+          "skills": [
+            "data-integration",
+            "knowledge-graph",
+            "decision-support"
+          ]
+        },
+        {
+          "id": "e1",
+          "sector": "financial-group",
+          "roles": [
+            "investigator",
+            "advisor"
+          ],
+          "skills": [
+            "decision-support"
+          ]
+        }
+      ],
+      "technologies": [
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "n": 12
+        },
+        {
+          "id": "html",
+          "name": "HTML",
+          "n": 11
+        },
+        {
+          "id": "shell",
+          "name": "Shell",
+          "n": 10
+        },
+        {
+          "id": "python",
+          "name": "Python",
+          "n": 9
+        },
+        {
+          "id": "elixir",
+          "name": "Elixir",
+          "n": 8
+        },
+        {
+          "id": "alpine-js",
+          "name": "Alpine.js",
+          "n": 6
+        },
+        {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 6
+        },
+        {
+          "id": "majordomus",
+          "name": "Majordomus",
+          "n": 6
+        },
+        {
+          "id": "claude-api",
+          "name": "Claude API",
+          "n": 4
+        },
+        {
+          "id": "css",
+          "name": "CSS",
+          "n": 4
+        },
+        {
+          "id": "typescript",
+          "name": "TypeScript",
+          "n": 4
+        },
+        {
+          "id": "dockerfile",
+          "name": "Dockerfile",
+          "n": 3
+        },
+        {
+          "id": "fastapi",
+          "name": "FastAPI",
+          "n": 3
+        },
+        {
+          "id": "github-actions",
+          "name": "GitHub Actions",
+          "n": 3
+        },
+        {
+          "id": "kubernetes",
+          "name": "Kubernetes",
+          "n": 3
+        },
+        {
+          "id": "openai-api",
+          "name": "OpenAI API",
+          "n": 3
+        }
+      ]
+    }
+  },
+  "skills": {
+    "due-diligence": {
+      "domain": "dd",
+      "term": "due-diligence",
+      "services": [
+        "due-diligence",
+        "m-and-a"
+      ],
+      "repos": [
+        {
+          "name": "vomaste.cz",
+          "title": "vomaste.cz",
+          "how": "words",
+          "score": 3.3,
+          "slug": "vomaste-cz",
+          "url": "https://github.com/korczis/vomaste.cz",
+          "description": null,
+          "category": "tools",
+          "site": "https://korczis.github.io/vomaste.cz/",
+          "pushed": "2026-11-08"
+        }
+      ],
+      "engagements": [
+        {
+          "id": "e2",
+          "sector": "real-estate",
+          "roles": [
+            "architect",
+            "lead-engineer",
+            "ai-engineer",
+            "data-engineer"
+          ],
+          "with": [
+            "llm-agents",
+            "decision-support",
+            "ai-transformation",
+            "audit-trail"
+          ]
+        },
+        {
+          "id": "e1",
+          "sector": "financial-group",
+          "roles": [
+            "investigator",
+            "advisor"
+          ],
+          "with": [
+            "osint-investigation",
+            "entity-resolution",
+            "decision-support",
+            "m-and-a-screening"
+          ]
+        }
+      ],
+      "technologies": [
+        {
+          "id": "html",
+          "name": "HTML",
+          "n": 3
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "n": 3
+        },
+        {
+          "id": "python",
+          "name": "Python",
+          "n": 2
+        },
+        {
+          "id": "shell",
+          "name": "Shell",
+          "n": 2
+        },
+        {
+          "id": "alpine-js",
+          "name": "Alpine.js",
+          "n": 1
+        },
+        {
+          "id": "claude-api",
+          "name": "Claude API",
+          "n": 1
+        },
+        {
+          "id": "css",
+          "name": "CSS",
+          "n": 1
+        },
+        {
+          "id": "dockerfile",
+          "name": "Dockerfile",
+          "n": 1
+        },
+        {
+          "id": "fastapi",
+          "name": "FastAPI",
+          "n": 1
+        },
+        {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 1
+        },
+        {
+          "id": "github-actions",
+          "name": "GitHub Actions",
+          "n": 1
+        },
+        {
+          "id": "kubernetes",
+          "name": "Kubernetes",
+          "n": 1
+        },
+        {
+          "id": "majordomus",
+          "name": "Majordomus",
+          "n": 1
+        },
+        {
+          "id": "openai-api",
+          "name": "OpenAI API",
+          "n": 1
+        },
+        {
+          "id": "playwright",
+          "name": "Playwright",
+          "n": 1
+        },
+        {
+          "id": "postgresql",
+          "name": "PostgreSQL",
+          "n": 1
+        }
+      ]
+    },
+    "m-and-a-screening": {
+      "domain": "dd",
+      "term": "mergers-and-acquisitions",
+      "services": [
+        "m-and-a"
+      ],
+      "repos": [],
+      "engagements": [
+        {
+          "id": "e2",
+          "sector": "real-estate",
+          "roles": [
+            "architect",
+            "lead-engineer",
+            "ai-engineer",
+            "data-engineer"
+          ],
+          "with": [
+            "llm-agents",
+            "decision-support",
+            "ai-transformation",
+            "audit-trail"
+          ]
+        },
+        {
+          "id": "e1",
+          "sector": "financial-group",
+          "roles": [
+            "investigator",
+            "advisor"
+          ],
+          "with": [
+            "osint-investigation",
+            "due-diligence",
+            "entity-resolution",
+            "decision-support"
+          ]
+        }
+      ],
+      "technologies": [
+        {
+          "id": "html",
+          "name": "HTML",
+          "n": 2
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "n": 2
+        },
+        {
+          "id": "python",
+          "name": "Python",
+          "n": 2
+        },
+        {
+          "id": "alpine-js",
+          "name": "Alpine.js",
+          "n": 1
+        },
+        {
+          "id": "claude-api",
+          "name": "Claude API",
+          "n": 1
+        },
+        {
+          "id": "dockerfile",
+          "name": "Dockerfile",
+          "n": 1
+        },
+        {
+          "id": "fastapi",
+          "name": "FastAPI",
+          "n": 1
+        },
+        {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 1
+        },
+        {
+          "id": "github-actions",
+          "name": "GitHub Actions",
+          "n": 1
+        },
+        {
+          "id": "kubernetes",
+          "name": "Kubernetes",
+          "n": 1
+        },
+        {
+          "id": "majordomus",
+          "name": "Majordomus",
+          "n": 1
+        },
+        {
+          "id": "openai-api",
+          "name": "OpenAI API",
+          "n": 1
+        },
+        {
+          "id": "playwright",
+          "name": "Playwright",
+          "n": 1
+        },
+        {
+          "id": "postgresql",
+          "name": "PostgreSQL",
+          "n": 1
+        },
+        {
+          "id": "pydantic",
+          "name": "Pydantic",
+          "n": 1
+        },
+        {
+          "id": "react",
+          "name": "React",
+          "n": 1
+        }
+      ]
+    },
+    "data-room": {
+      "domain": "dd",
+      "term": "virtual-data-room",
+      "services": [
+        "m-and-a"
+      ],
+      "repos": [],
+      "engagements": [
+        {
+          "id": "e2",
+          "sector": "real-estate",
+          "roles": [
+            "architect",
+            "lead-engineer",
+            "ai-engineer",
+            "data-engineer"
+          ],
+          "with": [
+            "llm-agents",
+            "decision-support",
+            "ai-transformation",
+            "audit-trail"
+          ]
+        }
+      ],
+      "technologies": [
+        {
+          "id": "alpine-js",
+          "name": "Alpine.js",
+          "n": 1
+        },
+        {
+          "id": "claude-api",
+          "name": "Claude API",
+          "n": 1
+        },
+        {
+          "id": "dockerfile",
+          "name": "Dockerfile",
+          "n": 1
+        },
+        {
+          "id": "fastapi",
+          "name": "FastAPI",
+          "n": 1
+        },
+        {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 1
+        },
+        {
+          "id": "github-actions",
+          "name": "GitHub Actions",
+          "n": 1
+        },
+        {
+          "id": "html",
+          "name": "HTML",
+          "n": 1
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "n": 1
+        },
+        {
+          "id": "kubernetes",
+          "name": "Kubernetes",
+          "n": 1
+        },
+        {
+          "id": "majordomus",
+          "name": "Majordomus",
+          "n": 1
+        },
+        {
+          "id": "openai-api",
+          "name": "OpenAI API",
+          "n": 1
+        },
+        {
+          "id": "playwright",
+          "name": "Playwright",
+          "n": 1
+        },
+        {
+          "id": "postgresql",
+          "name": "PostgreSQL",
+          "n": 1
+        },
+        {
+          "id": "pydantic",
+          "name": "Pydantic",
+          "n": 1
+        },
+        {
+          "id": "python",
+          "name": "Python",
+          "n": 1
+        },
+        {
+          "id": "react",
+          "name": "React",
+          "n": 1
+        }
+      ]
+    },
+    "risk-scoring": {
+      "domain": "dd",
+      "term": "risk-assessment",
+      "services": [
+        "due-diligence",
+        "m-and-a",
+        "compliance-screening",
+        "continuous-monitoring",
+        "attack-surface"
+      ],
+      "repos": [],
+      "engagements": [
+        {
+          "id": "e2",
+          "sector": "real-estate",
+          "roles": [
+            "architect",
+            "lead-engineer",
+            "ai-engineer",
+            "data-engineer"
+          ],
+          "with": [
+            "llm-agents",
+            "decision-support",
+            "ai-transformation",
+            "audit-trail"
+          ]
+        }
+      ],
+      "technologies": [
+        {
+          "id": "alpine-js",
+          "name": "Alpine.js",
+          "n": 1
+        },
+        {
+          "id": "claude-api",
+          "name": "Claude API",
+          "n": 1
+        },
+        {
+          "id": "dockerfile",
+          "name": "Dockerfile",
+          "n": 1
+        },
+        {
+          "id": "fastapi",
+          "name": "FastAPI",
+          "n": 1
+        },
+        {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 1
+        },
+        {
+          "id": "github-actions",
+          "name": "GitHub Actions",
+          "n": 1
+        },
+        {
+          "id": "html",
+          "name": "HTML",
+          "n": 1
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "n": 1
+        },
+        {
+          "id": "kubernetes",
+          "name": "Kubernetes",
+          "n": 1
+        },
+        {
+          "id": "majordomus",
+          "name": "Majordomus",
+          "n": 1
+        },
+        {
+          "id": "openai-api",
+          "name": "OpenAI API",
+          "n": 1
+        },
+        {
+          "id": "playwright",
+          "name": "Playwright",
+          "n": 1
+        },
+        {
+          "id": "postgresql",
+          "name": "PostgreSQL",
+          "n": 1
+        },
+        {
+          "id": "pydantic",
+          "name": "Pydantic",
+          "n": 1
+        },
+        {
+          "id": "python",
+          "name": "Python",
+          "n": 1
+        },
+        {
+          "id": "react",
+          "name": "React",
+          "n": 1
+        }
+      ]
+    },
+    "market-intelligence": {
+      "domain": "dd",
+      "term": "market-intelligence",
+      "services": [
+        "m-and-a"
+      ],
+      "repos": [],
+      "engagements": [
+        {
+          "id": "e2",
+          "sector": "real-estate",
+          "roles": [
+            "architect",
+            "lead-engineer",
+            "ai-engineer",
+            "data-engineer"
+          ],
+          "with": [
+            "llm-agents",
+            "decision-support",
+            "ai-transformation",
+            "audit-trail"
+          ]
+        }
+      ],
+      "technologies": [
+        {
+          "id": "alpine-js",
+          "name": "Alpine.js",
+          "n": 1
+        },
+        {
+          "id": "claude-api",
+          "name": "Claude API",
+          "n": 1
+        },
+        {
+          "id": "dockerfile",
+          "name": "Dockerfile",
+          "n": 1
+        },
+        {
+          "id": "fastapi",
+          "name": "FastAPI",
+          "n": 1
+        },
+        {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 1
+        },
+        {
+          "id": "github-actions",
+          "name": "GitHub Actions",
+          "n": 1
+        },
+        {
+          "id": "html",
+          "name": "HTML",
+          "n": 1
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "n": 1
+        },
+        {
+          "id": "kubernetes",
+          "name": "Kubernetes",
+          "n": 1
+        },
+        {
+          "id": "majordomus",
+          "name": "Majordomus",
+          "n": 1
+        },
+        {
+          "id": "openai-api",
+          "name": "OpenAI API",
+          "n": 1
+        },
+        {
+          "id": "playwright",
+          "name": "Playwright",
+          "n": 1
+        },
+        {
+          "id": "postgresql",
+          "name": "PostgreSQL",
+          "n": 1
+        },
+        {
+          "id": "pydantic",
+          "name": "Pydantic",
+          "n": 1
+        },
+        {
+          "id": "python",
+          "name": "Python",
+          "n": 1
+        },
+        {
+          "id": "react",
+          "name": "React",
+          "n": 1
+        }
+      ]
+    },
+    "decision-support": {
+      "domain": "dd",
+      "term": "decision-support-system",
+      "services": [
+        "due-diligence",
+        "m-and-a",
+        "reputation-intelligence",
+        "decision-support-ai",
+        "interactive-data-products"
+      ],
+      "repos": [
+        {
+          "name": "openttd-prismatic-bridge",
+          "title": "openttd-prismatic-bridge",
+          "how": "words",
+          "score": 3,
+          "slug": "openttd-prismatic-bridge",
+          "url": "https://gitlab.com/korczis/openttd-prismatic-bridge",
+          "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
+          "category": "media",
+          "site": null,
+          "pushed": "2026-11-17"
+        },
+        {
+          "name": "crisis-map",
+          "title": "Crisis map",
+          "how": "words",
+          "score": 2.3,
+          "slug": "crisis-map",
+          "url": "https://github.com/korczis/crisis-map",
+          "description": "Mini crisis map: incident reports normalised, geocoded via local Nominatim, stored as PostGIS geography, served from one capability registry (LiveView, REST, OpenAPI, MCP, CLI)",
+          "category": "data",
+          "site": "https://korczis.github.io/crisis-map/",
+          "pushed": "2026-11-16"
+        }
+      ],
+      "engagements": [
+        {
+          "id": "e2",
+          "sector": "real-estate",
+          "roles": [
+            "architect",
+            "lead-engineer",
+            "ai-engineer",
+            "data-engineer"
+          ],
+          "with": [
+            "llm-agents",
+            "ai-transformation",
+            "audit-trail",
+            "data-integration"
+          ]
+        },
+        {
+          "id": "e1",
+          "sector": "financial-group",
+          "roles": [
+            "investigator",
+            "advisor"
+          ],
+          "with": [
+            "osint-investigation",
+            "due-diligence",
+            "entity-resolution",
+            "m-and-a-screening"
+          ]
+        }
+      ],
+      "technologies": [
+        {
+          "id": "html",
+          "name": "HTML",
+          "n": 3
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "n": 3
+        },
+        {
+          "id": "python",
+          "name": "Python",
+          "n": 3
+        },
+        {
+          "id": "shell",
+          "name": "Shell",
+          "n": 2
+        },
+        {
+          "id": "alpine-js",
+          "name": "Alpine.js",
+          "n": 1
+        },
+        {
+          "id": "claude-api",
+          "name": "Claude API",
+          "n": 1
+        },
+        {
+          "id": "css",
+          "name": "CSS",
+          "n": 1
+        },
+        {
+          "id": "dockerfile",
+          "name": "Dockerfile",
+          "n": 1
+        },
+        {
+          "id": "elixir",
+          "name": "Elixir",
+          "n": 1
+        },
+        {
+          "id": "fastapi",
+          "name": "FastAPI",
+          "n": 1
+        },
+        {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 1
+        },
+        {
+          "id": "github-actions",
+          "name": "GitHub Actions",
+          "n": 1
+        },
+        {
+          "id": "kubernetes",
+          "name": "Kubernetes",
+          "n": 1
+        },
+        {
+          "id": "majordomus",
+          "name": "Majordomus",
+          "n": 1
+        },
+        {
+          "id": "mcp",
+          "name": "MCP",
+          "n": 1
+        },
+        {
+          "id": "openai-api",
+          "name": "OpenAI API",
+          "n": 1
+        }
+      ]
+    },
+    "osint-investigation": {
+      "domain": "data",
+      "term": "osint",
+      "services": [
+        "digital-investigation",
+        "reputation-intelligence"
+      ],
+      "repos": [
+        {
+          "name": "sig",
+          "title": "sig",
+          "how": "words",
+          "score": 3.6,
+          "slug": "sig",
+          "url": "https://gitlab.com/korczis/sig",
+          "description": "distributed cognitive framework in Elixir/OTP.",
+          "category": "ai",
+          "site": null,
+          "pushed": "2026-02-04"
+        },
+        {
+          "name": "crisis-map",
+          "title": "Crisis map",
+          "how": "words",
+          "score": 2.6,
+          "slug": "crisis-map",
+          "url": "https://github.com/korczis/crisis-map",
+          "description": "Mini crisis map: incident reports normalised, geocoded via local Nominatim, stored as PostGIS geography, served from one capability registry (LiveView, REST, OpenAPI, MCP, CLI)",
+          "category": "data",
+          "site": "https://korczis.github.io/crisis-map/",
+          "pushed": "2026-11-16"
+        },
+        {
+          "name": "osint-case-ratcliffe-moscow-2026",
+          "title": "osint-case-ratcliffe-moscow-2026",
+          "how": "words",
+          "score": 2.6,
+          "slug": "osint-case-ratcliffe-moscow-2026",
+          "url": "https://github.com/korczis/osint-case-ratcliffe-moscow-2026",
+          "description": "Open-source intelligence assessment of the CIA Director's unannounced Moscow visit (2026-08-25) — maintained with Claude Code skills; reusable OSINT case toolkit",
+          "category": "security",
+          "site": "https://korczis.github.io/osint-case-ratcliffe-moscow-2026/",
+          "pushed": "2026-08-26"
+        },
+        {
+          "name": "openttd-prismatic-bridge",
+          "title": "openttd-prismatic-bridge",
+          "how": "words",
+          "score": 2,
+          "slug": "openttd-prismatic-bridge",
+          "url": "https://gitlab.com/korczis/openttd-prismatic-bridge",
+          "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
+          "category": "media",
+          "site": null,
+          "pushed": "2026-11-17"
+        },
+        {
+          "name": "data-atlas",
+          "title": "Data Atlas",
+          "how": "words",
+          "score": 2,
+          "slug": "data-atlas",
+          "url": "https://github.com/korczis/data-atlas",
+          "description": "Katalog GIS a geodatových zdrojů — datasety, katastr, doprava, remote sensing, prostorová analytika. Jednosouborová prohledávatelná stránka.",
+          "category": "data",
+          "site": "https://korczis.github.io/data-atlas/",
+          "pushed": "2026-11-16"
+        }
+      ],
+      "engagements": [
+        {
+          "id": "e2",
+          "sector": "real-estate",
+          "roles": [
+            "architect",
+            "lead-engineer",
+            "ai-engineer",
+            "data-engineer"
+          ],
+          "with": [
+            "llm-agents",
+            "decision-support",
+            "ai-transformation",
+            "audit-trail"
+          ]
+        },
+        {
+          "id": "e1",
+          "sector": "financial-group",
+          "roles": [
+            "investigator",
+            "advisor"
+          ],
+          "with": [
+            "due-diligence",
+            "entity-resolution",
+            "decision-support",
+            "m-and-a-screening"
+          ]
+        }
+      ],
+      "technologies": [
+        {
+          "id": "html",
+          "name": "HTML",
+          "n": 5
+        },
+        {
+          "id": "python",
+          "name": "Python",
+          "n": 5
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "n": 4
+        },
+        {
+          "id": "shell",
+          "name": "Shell",
+          "n": 4
+        },
+        {
+          "id": "claude-api",
+          "name": "Claude API",
+          "n": 2
+        },
+        {
+          "id": "elixir",
+          "name": "Elixir",
+          "n": 2
+        },
+        {
+          "id": "postgis",
+          "name": "PostGIS",
+          "n": 2
+        },
+        {
+          "id": "typescript",
+          "name": "TypeScript",
+          "n": 2
+        },
+        {
+          "id": "alpine-js",
+          "name": "Alpine.js",
+          "n": 1
+        },
+        {
+          "id": "css",
+          "name": "CSS",
+          "n": 1
+        },
+        {
+          "id": "dockerfile",
+          "name": "Dockerfile",
+          "n": 1
+        },
+        {
+          "id": "eex",
+          "name": "EEx and HEEx",
+          "n": 1
+        },
+        {
+          "id": "fastapi",
+          "name": "FastAPI",
+          "n": 1
+        },
+        {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 1
+        },
+        {
+          "id": "github-actions",
+          "name": "GitHub Actions",
+          "n": 1
+        },
+        {
+          "id": "just",
+          "name": "Just",
+          "n": 1
+        }
+      ]
+    },
+    "insolvency-monitoring": {
+      "domain": "data",
+      "term": "insolvency",
+      "services": [
+        "continuous-monitoring"
+      ],
+      "repos": [],
+      "engagements": [
+        {
+          "id": "e2",
+          "sector": "real-estate",
+          "roles": [
+            "architect",
+            "lead-engineer",
+            "ai-engineer",
+            "data-engineer"
+          ],
+          "with": [
+            "llm-agents",
+            "decision-support",
+            "ai-transformation",
+            "audit-trail"
+          ]
+        }
+      ],
+      "technologies": [
+        {
+          "id": "alpine-js",
+          "name": "Alpine.js",
+          "n": 1
+        },
+        {
+          "id": "claude-api",
+          "name": "Claude API",
+          "n": 1
+        },
+        {
+          "id": "dockerfile",
+          "name": "Dockerfile",
+          "n": 1
+        },
+        {
+          "id": "fastapi",
+          "name": "FastAPI",
+          "n": 1
+        },
+        {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 1
+        },
+        {
+          "id": "github-actions",
+          "name": "GitHub Actions",
+          "n": 1
+        },
+        {
+          "id": "html",
+          "name": "HTML",
+          "n": 1
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "n": 1
+        },
+        {
+          "id": "kubernetes",
+          "name": "Kubernetes",
+          "n": 1
+        },
+        {
+          "id": "majordomus",
+          "name": "Majordomus",
+          "n": 1
+        },
+        {
+          "id": "openai-api",
+          "name": "OpenAI API",
+          "n": 1
+        },
+        {
+          "id": "playwright",
+          "name": "Playwright",
+          "n": 1
+        },
+        {
+          "id": "postgresql",
+          "name": "PostgreSQL",
+          "n": 1
+        },
+        {
+          "id": "pydantic",
+          "name": "Pydantic",
+          "n": 1
+        },
+        {
+          "id": "python",
+          "name": "Python",
+          "n": 1
+        },
+        {
+          "id": "react",
+          "name": "React",
+          "n": 1
+        }
+      ]
+    },
+    "entity-resolution": {
+      "domain": "data",
+      "term": "record-linkage",
+      "services": [
+        "due-diligence",
+        "digital-investigation",
+        "compliance-screening",
+        "continuous-monitoring"
+      ],
+      "repos": [],
+      "engagements": [
+        {
+          "id": "e2",
+          "sector": "real-estate",
+          "roles": [
+            "architect",
+            "lead-engineer",
+            "ai-engineer",
+            "data-engineer"
+          ],
+          "with": [
+            "llm-agents",
+            "decision-support",
+            "ai-transformation",
+            "audit-trail"
+          ]
+        },
+        {
+          "id": "e1",
+          "sector": "financial-group",
+          "roles": [
+            "investigator",
+            "advisor"
+          ],
+          "with": [
+            "osint-investigation",
+            "due-diligence",
+            "decision-support",
+            "m-and-a-screening"
+          ]
+        }
+      ],
+      "technologies": [
+        {
+          "id": "html",
+          "name": "HTML",
+          "n": 2
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "n": 2
+        },
+        {
+          "id": "python",
+          "name": "Python",
+          "n": 2
+        },
+        {
+          "id": "alpine-js",
+          "name": "Alpine.js",
+          "n": 1
+        },
+        {
+          "id": "claude-api",
+          "name": "Claude API",
+          "n": 1
+        },
+        {
+          "id": "dockerfile",
+          "name": "Dockerfile",
+          "n": 1
+        },
+        {
+          "id": "fastapi",
+          "name": "FastAPI",
+          "n": 1
+        },
+        {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 1
+        },
+        {
+          "id": "github-actions",
+          "name": "GitHub Actions",
+          "n": 1
+        },
+        {
+          "id": "kubernetes",
+          "name": "Kubernetes",
+          "n": 1
+        },
+        {
+          "id": "majordomus",
+          "name": "Majordomus",
+          "n": 1
+        },
+        {
+          "id": "openai-api",
+          "name": "OpenAI API",
+          "n": 1
+        },
+        {
+          "id": "playwright",
+          "name": "Playwright",
+          "n": 1
+        },
+        {
+          "id": "postgresql",
+          "name": "PostgreSQL",
+          "n": 1
+        },
+        {
+          "id": "pydantic",
+          "name": "Pydantic",
+          "n": 1
+        },
+        {
+          "id": "react",
+          "name": "React",
+          "n": 1
+        }
+      ]
+    },
+    "knowledge-graph": {
+      "domain": "data",
+      "term": "knowledge-graph",
+      "services": [
+        "digital-investigation",
+        "interactive-data-products"
+      ],
+      "repos": [
+        {
+          "name": "kompendium-epistemicke-anihilace",
+          "title": "Kompendium",
+          "how": "words",
+          "score": 2.6,
+          "slug": "kompendium-epistemicke-anihilace",
+          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
+          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
+          "category": "knowledge",
+          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+          "pushed": "2026-11-17"
+        }
+      ],
+      "engagements": [
+        {
+          "id": "e2",
+          "sector": "real-estate",
+          "roles": [
+            "architect",
+            "lead-engineer",
+            "ai-engineer",
+            "data-engineer"
+          ],
+          "with": [
+            "llm-agents",
+            "decision-support",
+            "ai-transformation",
+            "audit-trail"
+          ]
+        }
+      ],
+      "technologies": [
+        {
+          "id": "alpine-js",
+          "name": "Alpine.js",
+          "n": 2
+        },
+        {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 2
+        },
+        {
+          "id": "html",
+          "name": "HTML",
+          "n": 2
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "n": 2
+        },
+        {
+          "id": "majordomus",
+          "name": "Majordomus",
+          "n": 2
+        },
+        {
+          "id": "python",
+          "name": "Python",
+          "n": 2
+        },
+        {
+          "id": "shell",
+          "name": "Shell",
+          "n": 2
+        },
+        {
+          "id": "apache-echarts",
+          "name": "Apache ECharts",
+          "n": 1
+        },
+        {
+          "id": "claude-api",
+          "name": "Claude API",
+          "n": 1
+        },
+        {
+          "id": "cytoscape-js",
+          "name": "Cytoscape.js",
+          "n": 1
+        },
+        {
+          "id": "dockerfile",
+          "name": "Dockerfile",
+          "n": 1
+        },
+        {
+          "id": "elixir",
+          "name": "Elixir",
+          "n": 1
+        },
+        {
+          "id": "fastapi",
+          "name": "FastAPI",
+          "n": 1
+        },
+        {
+          "id": "github-actions",
+          "name": "GitHub Actions",
+          "n": 1
+        },
+        {
+          "id": "kubernetes",
+          "name": "Kubernetes",
+          "n": 1
+        },
+        {
+          "id": "openai-api",
+          "name": "OpenAI API",
+          "n": 1
+        }
+      ]
+    },
+    "data-integration": {
+      "domain": "data",
+      "term": "data-integration",
+      "services": [
+        "interactive-data-products"
+      ],
+      "repos": [
+        {
+          "name": "llm",
+          "title": "llm",
+          "how": "words",
+          "score": 3.2,
+          "slug": "llm",
+          "url": "https://gitlab.com/korczis/llm",
+          "description": "Local-first, provider-agnostic archive of AI conversations (ChatGPT, Claude, Gemini, Codex) — immutable, content-addressed, searchable evidence layer built in Elixir/Ecto.",
+          "category": "ai",
+          "site": null,
+          "pushed": "2026-08-21"
+        },
+        {
+          "name": "sig",
+          "title": "sig",
+          "how": "words",
+          "score": 2.3,
+          "slug": "sig",
+          "url": "https://gitlab.com/korczis/sig",
+          "description": "distributed cognitive framework in Elixir/OTP.",
+          "category": "ai",
+          "site": null,
+          "pushed": "2026-02-04"
+        }
+      ],
+      "engagements": [
+        {
+          "id": "e2",
+          "sector": "real-estate",
+          "roles": [
+            "architect",
+            "lead-engineer",
+            "ai-engineer",
+            "data-engineer"
+          ],
+          "with": [
+            "llm-agents",
+            "decision-support",
+            "ai-transformation",
+            "audit-trail"
+          ]
+        }
+      ],
+      "technologies": [
+        {
+          "id": "claude-api",
+          "name": "Claude API",
+          "n": 2
+        },
+        {
+          "id": "elixir",
+          "name": "Elixir",
+          "n": 2
+        },
+        {
+          "id": "shell",
+          "name": "Shell",
+          "n": 2
+        },
+        {
+          "id": "typescript",
+          "name": "TypeScript",
+          "n": 2
+        },
+        {
+          "id": "alpine-js",
+          "name": "Alpine.js",
+          "n": 1
+        },
+        {
+          "id": "dockerfile",
+          "name": "Dockerfile",
+          "n": 1
+        },
+        {
+          "id": "eex",
+          "name": "EEx and HEEx",
+          "n": 1
+        },
+        {
+          "id": "fastapi",
+          "name": "FastAPI",
+          "n": 1
+        },
+        {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 1
+        },
+        {
+          "id": "github-actions",
+          "name": "GitHub Actions",
+          "n": 1
+        },
+        {
+          "id": "html",
+          "name": "HTML",
+          "n": 1
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "n": 1
+        },
+        {
+          "id": "kubernetes",
+          "name": "Kubernetes",
+          "n": 1
+        },
+        {
+          "id": "majordomus",
+          "name": "Majordomus",
+          "n": 1
+        },
+        {
+          "id": "openai-api",
+          "name": "OpenAI API",
+          "n": 1
+        },
+        {
+          "id": "playwright",
+          "name": "Playwright",
+          "n": 1
+        }
+      ]
+    },
+    "audit-trail": {
+      "domain": "data",
+      "term": "audit-trail",
+      "services": [
+        "digital-forensics",
+        "decision-support-ai",
+        "ai-engineering-governance"
+      ],
+      "repos": [
+        {
+          "name": "catharsis-as-a-service",
+          "title": "Catharsis as a Service",
+          "how": "words",
+          "score": 2.6,
+          "slug": "catharsis-as-a-service",
+          "url": "https://github.com/korczis/catharsis-as-a-service",
+          "description": "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact.",
+          "category": "media",
+          "site": "https://korczis.github.io/catharsis-as-a-service/",
+          "pushed": "2026-11-16"
+        },
+        {
+          "name": "llm",
+          "title": "llm",
+          "how": "words",
+          "score": 2.6,
+          "slug": "llm",
+          "url": "https://gitlab.com/korczis/llm",
+          "description": "Local-first, provider-agnostic archive of AI conversations (ChatGPT, Claude, Gemini, Codex) — immutable, content-addressed, searchable evidence layer built in Elixir/Ecto.",
+          "category": "ai",
+          "site": null,
+          "pushed": "2026-08-21"
+        }
+      ],
+      "engagements": [
+        {
+          "id": "e2",
+          "sector": "real-estate",
+          "roles": [
+            "architect",
+            "lead-engineer",
+            "ai-engineer",
+            "data-engineer"
+          ],
+          "with": [
+            "llm-agents",
+            "decision-support",
+            "ai-transformation",
+            "data-integration"
+          ]
+        },
+        {
+          "id": "e1",
+          "sector": "financial-group",
+          "roles": [
+            "investigator",
+            "advisor"
+          ],
+          "with": [
+            "osint-investigation",
+            "due-diligence",
+            "entity-resolution",
+            "decision-support"
+          ]
+        }
+      ],
+      "technologies": [
+        {
+          "id": "html",
+          "name": "HTML",
+          "n": 3
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "n": 3
+        },
+        {
+          "id": "python",
+          "name": "Python",
+          "n": 3
+        },
+        {
+          "id": "claude-api",
+          "name": "Claude API",
+          "n": 2
+        },
+        {
+          "id": "shell",
+          "name": "Shell",
+          "n": 2
+        },
+        {
+          "id": "alpine-js",
+          "name": "Alpine.js",
+          "n": 1
+        },
+        {
+          "id": "css",
+          "name": "CSS",
+          "n": 1
+        },
+        {
+          "id": "dockerfile",
+          "name": "Dockerfile",
+          "n": 1
+        },
+        {
+          "id": "elixir",
+          "name": "Elixir",
+          "n": 1
+        },
+        {
+          "id": "fastapi",
+          "name": "FastAPI",
+          "n": 1
+        },
+        {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 1
+        },
+        {
+          "id": "github-actions",
+          "name": "GitHub Actions",
+          "n": 1
+        },
+        {
+          "id": "kubernetes",
+          "name": "Kubernetes",
+          "n": 1
+        },
+        {
+          "id": "majordomus",
+          "name": "Majordomus",
+          "n": 1
+        },
+        {
+          "id": "openai-api",
+          "name": "OpenAI API",
+          "n": 1
+        },
+        {
+          "id": "playwright",
+          "name": "Playwright",
+          "n": 1
+        }
+      ]
+    },
+    "ai-transformation": {
+      "domain": "ai",
+      "term": "ai-agent",
+      "services": [
+        "decision-support-ai",
+        "ai-engineering-governance"
+      ],
+      "repos": [],
+      "engagements": [
+        {
+          "id": "e2",
+          "sector": "real-estate",
+          "roles": [
+            "architect",
+            "lead-engineer",
+            "ai-engineer",
+            "data-engineer"
+          ],
+          "with": [
+            "llm-agents",
+            "decision-support",
+            "audit-trail",
+            "data-integration"
+          ]
+        }
+      ],
+      "technologies": [
+        {
+          "id": "alpine-js",
+          "name": "Alpine.js",
+          "n": 1
+        },
+        {
+          "id": "claude-api",
+          "name": "Claude API",
+          "n": 1
+        },
+        {
+          "id": "dockerfile",
+          "name": "Dockerfile",
+          "n": 1
+        },
+        {
+          "id": "fastapi",
+          "name": "FastAPI",
+          "n": 1
+        },
+        {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 1
+        },
+        {
+          "id": "github-actions",
+          "name": "GitHub Actions",
+          "n": 1
+        },
+        {
+          "id": "html",
+          "name": "HTML",
+          "n": 1
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "n": 1
+        },
+        {
+          "id": "kubernetes",
+          "name": "Kubernetes",
+          "n": 1
+        },
+        {
+          "id": "majordomus",
+          "name": "Majordomus",
+          "n": 1
+        },
+        {
+          "id": "openai-api",
+          "name": "OpenAI API",
+          "n": 1
+        },
+        {
+          "id": "playwright",
+          "name": "Playwright",
+          "n": 1
+        },
+        {
+          "id": "postgresql",
+          "name": "PostgreSQL",
+          "n": 1
+        },
+        {
+          "id": "pydantic",
+          "name": "Pydantic",
+          "n": 1
+        },
+        {
+          "id": "python",
+          "name": "Python",
+          "n": 1
+        },
+        {
+          "id": "react",
+          "name": "React",
+          "n": 1
+        }
+      ]
+    },
+    "llm-agents": {
+      "domain": "ai",
+      "term": "ai-agent",
+      "services": [
+        "decision-support-ai",
+        "ai-engineering-governance"
+      ],
+      "repos": [
+        {
+          "name": "sig",
+          "title": "sig",
+          "how": "words",
+          "score": 4,
+          "slug": "sig",
+          "url": "https://gitlab.com/korczis/sig",
+          "description": "distributed cognitive framework in Elixir/OTP.",
+          "category": "ai",
+          "site": null,
+          "pushed": "2026-02-04"
+        },
+        {
+          "name": "prismatic-majordomus",
+          "title": "Majordomus",
+          "how": "words",
+          "score": 3.5,
+          "slug": "prismatic-majordomus",
+          "url": "https://github.com/korczis/prismatic-majordomus",
+          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+          "category": "ai",
+          "site": "https://korczis.github.io/prismatic-majordomus/",
+          "pushed": "2026-11-17"
+        },
+        {
+          "name": "osint-case-ratcliffe-moscow-2026",
+          "title": "osint-case-ratcliffe-moscow-2026",
+          "how": "words",
+          "score": 3,
+          "slug": "osint-case-ratcliffe-moscow-2026",
+          "url": "https://github.com/korczis/osint-case-ratcliffe-moscow-2026",
+          "description": "Open-source intelligence assessment of the CIA Director's unannounced Moscow visit (2026-08-25) — maintained with Claude Code skills; reusable OSINT case toolkit",
+          "category": "security",
+          "site": "https://korczis.github.io/osint-case-ratcliffe-moscow-2026/",
+          "pushed": "2026-08-26"
+        },
+        {
+          "name": "llm",
+          "title": "llm",
+          "how": "words",
+          "score": 2.8,
+          "slug": "llm",
+          "url": "https://gitlab.com/korczis/llm",
+          "description": "Local-first, provider-agnostic archive of AI conversations (ChatGPT, Claude, Gemini, Codex) — immutable, content-addressed, searchable evidence layer built in Elixir/Ecto.",
+          "category": "ai",
+          "site": null,
+          "pushed": "2026-08-21"
+        },
+        {
+          "name": "korczis.github.io",
+          "title": "korczis.github.io",
+          "how": "words",
+          "score": 2.6,
+          "slug": "korczis-github-io",
+          "url": "https://github.com/korczis/korczis.github.io",
+          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+          "category": "web",
+          "site": null,
+          "pushed": "2026-11-17"
+        },
+        {
+          "name": "astronomists",
+          "title": "astronomists",
+          "how": "words",
+          "score": 2.3,
+          "slug": "astronomists",
+          "url": "https://github.com/korczis/astronomists",
+          "description": null,
+          "category": "tools",
+          "site": "https://korczis.github.io/astronomists/",
+          "pushed": "2026-11-16"
+        }
+      ],
+      "engagements": [
+        {
+          "id": "e2",
+          "sector": "real-estate",
+          "roles": [
+            "architect",
+            "lead-engineer",
+            "ai-engineer",
+            "data-engineer"
+          ],
+          "with": [
+            "decision-support",
+            "ai-transformation",
+            "audit-trail",
+            "data-integration"
+          ]
+        }
+      ],
+      "technologies": [
+        {
+          "id": "shell",
+          "name": "Shell",
+          "n": 6
+        },
+        {
+          "id": "html",
+          "name": "HTML",
+          "n": 5
+        },
+        {
+          "id": "claude-api",
+          "name": "Claude API",
+          "n": 4
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "n": 4
+        },
+        {
+          "id": "python",
+          "name": "Python",
+          "n": 3
+        },
+        {
+          "id": "typescript",
+          "name": "TypeScript",
+          "n": 3
+        },
+        {
+          "id": "alpine-js",
+          "name": "Alpine.js",
+          "n": 2
+        },
+        {
+          "id": "css",
+          "name": "CSS",
+          "n": 2
+        },
+        {
+          "id": "elixir",
+          "name": "Elixir",
+          "n": 2
+        },
+        {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 2
+        },
+        {
+          "id": "majordomus",
+          "name": "Majordomus",
+          "n": 2
+        },
+        {
+          "id": "tailwind-css",
+          "name": "Tailwind CSS",
+          "n": 2
+        },
+        {
+          "id": "zola",
+          "name": "Zola",
+          "n": 2
+        },
+        {
+          "id": "apache-echarts",
+          "name": "Apache ECharts",
+          "n": 1
+        },
+        {
+          "id": "dockerfile",
+          "name": "Dockerfile",
+          "n": 1
+        },
+        {
+          "id": "eex",
+          "name": "EEx and HEEx",
+          "n": 1
+        }
+      ]
+    },
+    "document-extraction": {
+      "domain": "ai",
+      "term": "information-extraction",
+      "services": [
+        "decision-support-ai"
+      ],
+      "repos": [
+        {
+          "name": "data-atlas",
+          "title": "Data Atlas",
+          "how": "words",
+          "score": 2,
+          "slug": "data-atlas",
+          "url": "https://github.com/korczis/data-atlas",
+          "description": "Katalog GIS a geodatových zdrojů — datasety, katastr, doprava, remote sensing, prostorová analytika. Jednosouborová prohledávatelná stránka.",
+          "category": "data",
+          "site": "https://korczis.github.io/data-atlas/",
+          "pushed": "2026-11-16"
+        }
+      ],
+      "engagements": [
+        {
+          "id": "e2",
+          "sector": "real-estate",
+          "roles": [
+            "architect",
+            "lead-engineer",
+            "ai-engineer",
+            "data-engineer"
+          ],
+          "with": [
+            "llm-agents",
+            "decision-support",
+            "ai-transformation",
+            "audit-trail"
+          ]
+        }
+      ],
+      "technologies": [
+        {
+          "id": "html",
+          "name": "HTML",
+          "n": 2
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "n": 2
+        },
+        {
+          "id": "python",
+          "name": "Python",
+          "n": 2
+        },
+        {
+          "id": "alpine-js",
+          "name": "Alpine.js",
+          "n": 1
+        },
+        {
+          "id": "claude-api",
+          "name": "Claude API",
+          "n": 1
+        },
+        {
+          "id": "dockerfile",
+          "name": "Dockerfile",
+          "n": 1
+        },
+        {
+          "id": "fastapi",
+          "name": "FastAPI",
+          "n": 1
+        },
+        {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 1
+        },
+        {
+          "id": "github-actions",
+          "name": "GitHub Actions",
+          "n": 1
+        },
+        {
+          "id": "just",
+          "name": "Just",
+          "n": 1
+        },
+        {
+          "id": "kubernetes",
+          "name": "Kubernetes",
+          "n": 1
+        },
+        {
+          "id": "majordomus",
+          "name": "Majordomus",
+          "n": 1
+        },
+        {
+          "id": "openai-api",
+          "name": "OpenAI API",
+          "n": 1
+        },
+        {
+          "id": "playwright",
+          "name": "Playwright",
+          "n": 1
+        },
+        {
+          "id": "plpgsql",
+          "name": "PL/pgSQL",
+          "n": 1
+        },
+        {
+          "id": "postgis",
+          "name": "PostGIS",
+          "n": 1
+        }
+      ]
+    },
+    "orchestration": {
+      "domain": "ai",
+      "term": "orchestration",
+      "services": [
+        "continuous-monitoring",
+        "decision-support-ai",
+        "ai-engineering-governance"
+      ],
+      "repos": [
+        {
+          "name": "prismatic-majordomus",
+          "title": "Majordomus",
+          "how": "words",
+          "score": 2,
+          "slug": "prismatic-majordomus",
+          "url": "https://github.com/korczis/prismatic-majordomus",
+          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+          "category": "ai",
+          "site": "https://korczis.github.io/prismatic-majordomus/",
+          "pushed": "2026-11-17"
+        }
+      ],
+      "engagements": [
+        {
+          "id": "e2",
+          "sector": "real-estate",
+          "roles": [
+            "architect",
+            "lead-engineer",
+            "ai-engineer",
+            "data-engineer"
+          ],
+          "with": [
+            "llm-agents",
+            "decision-support",
+            "ai-transformation",
+            "audit-trail"
+          ]
+        }
+      ],
+      "technologies": [
+        {
+          "id": "claude-api",
+          "name": "Claude API",
+          "n": 2
+        },
+        {
+          "id": "html",
+          "name": "HTML",
+          "n": 2
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "n": 2
+        },
+        {
+          "id": "shell",
+          "name": "Shell",
+          "n": 2
+        },
+        {
+          "id": "alpine-js",
+          "name": "Alpine.js",
+          "n": 1
+        },
+        {
+          "id": "dockerfile",
+          "name": "Dockerfile",
+          "n": 1
+        },
+        {
+          "id": "fastapi",
+          "name": "FastAPI",
+          "n": 1
+        },
+        {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 1
+        },
+        {
+          "id": "github-actions",
+          "name": "GitHub Actions",
+          "n": 1
+        },
+        {
+          "id": "kubernetes",
+          "name": "Kubernetes",
+          "n": 1
+        },
+        {
+          "id": "majordomus",
+          "name": "Majordomus",
+          "n": 1
+        },
+        {
+          "id": "mcp",
+          "name": "MCP",
+          "n": 1
+        },
+        {
+          "id": "mermaid",
+          "name": "Mermaid",
+          "n": 1
+        },
+        {
+          "id": "openai-api",
+          "name": "OpenAI API",
+          "n": 1
+        },
+        {
+          "id": "playwright",
+          "name": "Playwright",
+          "n": 1
+        },
+        {
+          "id": "postgresql",
+          "name": "PostgreSQL",
+          "n": 1
+        }
+      ]
+    },
+    "registry-intelligence": {
+      "domain": "data",
+      "term": "public-registry",
+      "services": [
+        "due-diligence",
+        "digital-investigation",
+        "continuous-monitoring"
+      ],
+      "repos": [
+        {
+          "name": "crisis-map",
+          "title": "Crisis map",
+          "how": "words",
+          "score": 2.6,
+          "slug": "crisis-map",
+          "url": "https://github.com/korczis/crisis-map",
+          "description": "Mini crisis map: incident reports normalised, geocoded via local Nominatim, stored as PostGIS geography, served from one capability registry (LiveView, REST, OpenAPI, MCP, CLI)",
+          "category": "data",
+          "site": "https://korczis.github.io/crisis-map/",
+          "pushed": "2026-11-16"
+        }
+      ],
+      "engagements": [],
+      "technologies": [
+        {
+          "id": "css",
+          "name": "CSS",
+          "n": 1
+        },
+        {
+          "id": "elixir",
+          "name": "Elixir",
+          "n": 1
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "n": 1
+        },
+        {
+          "id": "mcp",
+          "name": "MCP",
+          "n": 1
+        },
+        {
+          "id": "postgis",
+          "name": "PostGIS",
+          "n": 1
+        }
+      ]
+    },
+    "ownership-analysis": {
+      "domain": "dd",
+      "term": "beneficial-ownership",
+      "services": [
+        "due-diligence",
+        "m-and-a",
+        "digital-investigation",
+        "compliance-screening"
+      ],
+      "repos": [],
+      "engagements": [],
+      "technologies": []
+    },
+    "sanctions-screening": {
+      "domain": "dd",
+      "term": "sanctions-screening",
+      "services": [
+        "compliance-screening"
+      ],
+      "repos": [],
+      "engagements": [],
+      "technologies": []
+    },
+    "financial-analysis": {
+      "domain": "dd",
+      "term": "financial-statement-analysis",
+      "services": [
+        "due-diligence",
+        "m-and-a"
+      ],
+      "repos": [],
+      "engagements": [],
+      "technologies": []
+    },
+    "infrastructure-osint": {
+      "domain": "data",
+      "term": "attack-surface",
+      "services": [
+        "digital-investigation",
+        "digital-forensics",
+        "attack-surface"
+      ],
+      "repos": [],
+      "engagements": [],
+      "technologies": []
+    },
+    "media-forensics": {
+      "domain": "data",
+      "term": "digital-forensics",
+      "services": [
+        "digital-investigation",
+        "digital-forensics"
+      ],
+      "repos": [
+        {
+          "name": "llm",
+          "title": "llm",
+          "how": "words",
+          "score": 2.6,
+          "slug": "llm",
+          "url": "https://gitlab.com/korczis/llm",
+          "description": "Local-first, provider-agnostic archive of AI conversations (ChatGPT, Claude, Gemini, Codex) — immutable, content-addressed, searchable evidence layer built in Elixir/Ecto.",
+          "category": "ai",
+          "site": null,
+          "pushed": "2026-08-21"
+        }
+      ],
+      "engagements": [],
+      "technologies": [
+        {
+          "id": "claude-api",
+          "name": "Claude API",
+          "n": 1
+        },
+        {
+          "id": "elixir",
+          "name": "Elixir",
+          "n": 1
+        }
+      ]
+    },
+    "chain-of-custody": {
+      "domain": "data",
+      "term": "chain-of-custody",
+      "services": [
+        "digital-forensics"
+      ],
+      "repos": [],
+      "engagements": [],
+      "technologies": []
+    },
+    "source-reliability": {
+      "domain": "data",
+      "term": "source-criticism",
+      "services": [
+        "due-diligence",
+        "digital-forensics",
+        "reputation-intelligence"
+      ],
+      "repos": [],
+      "engagements": [],
+      "technologies": []
+    },
+    "narrative-analysis": {
+      "domain": "data",
+      "term": "reputation-risk",
+      "services": [
+        "digital-forensics",
+        "reputation-intelligence"
+      ],
+      "repos": [
+        {
+          "name": "osint-case-ratcliffe-moscow-2026",
+          "title": "osint-case-ratcliffe-moscow-2026",
+          "how": "words",
+          "score": 2,
+          "slug": "osint-case-ratcliffe-moscow-2026",
+          "url": "https://github.com/korczis/osint-case-ratcliffe-moscow-2026",
+          "description": "Open-source intelligence assessment of the CIA Director's unannounced Moscow visit (2026-08-25) — maintained with Claude Code skills; reusable OSINT case toolkit",
+          "category": "security",
+          "site": "https://korczis.github.io/osint-case-ratcliffe-moscow-2026/",
+          "pushed": "2026-08-26"
+        }
+      ],
+      "engagements": [],
+      "technologies": [
+        {
+          "id": "claude-api",
+          "name": "Claude API",
+          "n": 1
+        },
+        {
+          "id": "html",
+          "name": "HTML",
+          "n": 1
+        },
+        {
+          "id": "python",
+          "name": "Python",
+          "n": 1
+        },
+        {
+          "id": "shell",
+          "name": "Shell",
+          "n": 1
+        }
+      ]
+    },
+    "change-monitoring": {
+      "domain": "data",
+      "term": "change-detection",
+      "services": [
+        "digital-investigation",
+        "reputation-intelligence",
+        "continuous-monitoring",
+        "attack-surface"
+      ],
+      "repos": [],
+      "engagements": [],
+      "technologies": []
+    },
+    "web-automation": {
+      "domain": "data",
+      "term": "web-scraping",
+      "services": [
+        "digital-investigation",
+        "attack-surface"
+      ],
+      "repos": [],
+      "engagements": [],
+      "technologies": []
+    },
+    "contestable-decisions": {
+      "domain": "ai",
+      "term": "contestability",
+      "services": [
+        "m-and-a",
+        "compliance-screening",
+        "decision-support-ai",
+        "ai-engineering-governance"
+      ],
+      "repos": [
+        {
+          "name": "oscilla",
+          "title": "Oscilla",
+          "how": "words",
+          "score": 3.3,
+          "slug": "oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "category": "science",
+          "site": "https://korczis.github.io/oscilla/",
+          "pushed": "2026-11-17"
+        }
+      ],
+      "engagements": [],
+      "technologies": [
+        {
+          "id": "css",
+          "name": "CSS",
+          "n": 1
+        },
+        {
+          "id": "html",
+          "name": "HTML",
+          "n": 1
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "n": 1
+        },
+        {
+          "id": "web-audio",
+          "name": "Web Audio",
+          "n": 1
+        }
+      ]
+    },
+    "compliance-mapping": {
+      "domain": "dd",
+      "term": "regulatory-compliance",
+      "services": [
+        "compliance-screening",
+        "attack-surface"
+      ],
+      "repos": [],
+      "engagements": [],
+      "technologies": []
+    },
+    "policy-as-code": {
+      "domain": "ai",
+      "term": "policy-as-code",
+      "services": [
+        "ai-engineering-governance"
+      ],
+      "repos": [
+        {
+          "name": "majordomus-reel",
+          "title": "Majordomus reel",
+          "how": "words",
+          "score": 5.1,
+          "slug": "majordomus-reel",
+          "url": "https://github.com/korczis/majordomus-reel",
+          "description": "A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound",
+          "category": "media",
+          "site": "https://korczis.github.io/majordomus-reel/",
+          "pushed": "2026-11-17"
+        },
+        {
+          "name": "korczis.github.io",
+          "title": "korczis.github.io",
+          "how": "words",
+          "score": 4,
+          "slug": "korczis-github-io",
+          "url": "https://github.com/korczis/korczis.github.io",
+          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+          "category": "web",
+          "site": null,
+          "pushed": "2026-11-17"
+        },
+        {
+          "name": "kompendium-epistemicke-anihilace",
+          "title": "Kompendium",
+          "how": "words",
+          "score": 3.6,
+          "slug": "kompendium-epistemicke-anihilace",
+          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
+          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
+          "category": "knowledge",
+          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+          "pushed": "2026-11-17"
+        },
+        {
+          "name": "prismatic-majordomus",
+          "title": "Majordomus",
+          "how": "words",
+          "score": 3,
+          "slug": "prismatic-majordomus",
+          "url": "https://github.com/korczis/prismatic-majordomus",
+          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+          "category": "ai",
+          "site": "https://korczis.github.io/prismatic-majordomus/",
+          "pushed": "2026-11-17"
+        },
+        {
+          "name": "data-atlas",
+          "title": "Data Atlas",
+          "how": "words",
+          "score": 2.8,
+          "slug": "data-atlas",
+          "url": "https://github.com/korczis/data-atlas",
+          "description": "Katalog GIS a geodatových zdrojů — datasety, katastr, doprava, remote sensing, prostorová analytika. Jednosouborová prohledávatelná stránka.",
+          "category": "data",
+          "site": "https://korczis.github.io/data-atlas/",
+          "pushed": "2026-11-16"
+        },
+        {
+          "name": "catharsis-as-a-service",
+          "title": "Catharsis as a Service",
+          "how": "words",
+          "score": 2,
+          "slug": "catharsis-as-a-service",
+          "url": "https://github.com/korczis/catharsis-as-a-service",
+          "description": "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact.",
+          "category": "media",
+          "site": "https://korczis.github.io/catharsis-as-a-service/",
+          "pushed": "2026-11-16"
+        },
+        {
+          "name": "crisis-map",
+          "title": "Crisis map",
+          "how": "words",
+          "score": 2,
+          "slug": "crisis-map",
+          "url": "https://github.com/korczis/crisis-map",
+          "description": "Mini crisis map: incident reports normalised, geocoded via local Nominatim, stored as PostGIS geography, served from one capability registry (LiveView, REST, OpenAPI, MCP, CLI)",
+          "category": "data",
+          "site": "https://korczis.github.io/crisis-map/",
+          "pushed": "2026-11-16"
+        },
+        {
+          "name": "vomaste.cz",
+          "title": "vomaste.cz",
+          "how": "words",
+          "score": 2,
+          "slug": "vomaste-cz",
+          "url": "https://github.com/korczis/vomaste.cz",
+          "description": null,
+          "category": "tools",
+          "site": "https://korczis.github.io/vomaste.cz/",
+          "pushed": "2026-11-08"
+        }
+      ],
+      "engagements": [],
+      "technologies": [
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "n": 8
+        },
+        {
+          "id": "html",
+          "name": "HTML",
+          "n": 7
+        },
+        {
+          "id": "shell",
+          "name": "Shell",
+          "n": 6
+        },
+        {
+          "id": "css",
+          "name": "CSS",
+          "n": 4
+        },
+        {
+          "id": "majordomus",
+          "name": "Majordomus",
+          "n": 3
+        },
+        {
+          "id": "python",
+          "name": "Python",
+          "n": 3
+        },
+        {
+          "id": "rust",
+          "name": "Rust",
+          "n": 3
+        },
+        {
+          "id": "zola",
+          "name": "Zola",
+          "n": 3
+        },
+        {
+          "id": "alpine-js",
+          "name": "Alpine.js",
+          "n": 2
+        },
+        {
+          "id": "apache-echarts",
+          "name": "Apache ECharts",
+          "n": 2
+        },
+        {
+          "id": "elixir",
+          "name": "Elixir",
+          "n": 2
+        },
+        {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 2
+        },
+        {
+          "id": "mcp",
+          "name": "MCP",
+          "n": 2
+        },
+        {
+          "id": "postgis",
+          "name": "PostGIS",
+          "n": 2
+        },
+        {
+          "id": "claude-api",
+          "name": "Claude API",
+          "n": 1
+        },
+        {
+          "id": "cytoscape-js",
+          "name": "Cytoscape.js",
+          "n": 1
+        }
+      ]
+    },
+    "interactive-visualisation": {
+      "domain": "data",
+      "term": "data-visualisation",
+      "services": [
+        "interactive-data-products"
+      ],
+      "repos": [
+        {
+          "name": "algoglyph",
+          "title": "algoglyph",
+          "how": "words",
+          "score": 6.3,
+          "slug": "algoglyph",
+          "url": "https://github.com/korczis/algoglyph",
+          "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
+          "category": "science",
+          "site": "https://korczis.github.io/algoglyph/",
+          "pushed": "2026-11-17"
+        },
+        {
+          "name": "sonic-playground",
+          "title": "Sonic Playground",
+          "how": "words",
+          "score": 2.8,
+          "slug": "sonic-playground",
+          "url": "https://github.com/korczis/sonic-playground",
+          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+          "category": "media",
+          "site": "https://korczis.github.io/sonic-playground/",
+          "pushed": "2026-11-17"
+        },
+        {
+          "name": "kompendium-epistemicke-anihilace",
+          "title": "Kompendium",
+          "how": "words",
+          "score": 2.6,
+          "slug": "kompendium-epistemicke-anihilace",
+          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
+          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
+          "category": "knowledge",
+          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+          "pushed": "2026-11-17"
+        },
+        {
+          "name": "astronomists",
+          "title": "astronomists",
+          "how": "words",
+          "score": 2.3,
+          "slug": "astronomists",
+          "url": "https://github.com/korczis/astronomists",
+          "description": null,
+          "category": "tools",
+          "site": "https://korczis.github.io/astronomists/",
+          "pushed": "2026-11-16"
+        }
+      ],
+      "engagements": [],
+      "technologies": [
+        {
+          "id": "html",
+          "name": "HTML",
+          "n": 4
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "n": 4
+        },
+        {
+          "id": "python",
+          "name": "Python",
+          "n": 3
+        },
+        {
+          "id": "shell",
+          "name": "Shell",
+          "n": 3
+        },
+        {
+          "id": "alpine-js",
+          "name": "Alpine.js",
+          "n": 2
+        },
+        {
+          "id": "apache-echarts",
+          "name": "Apache ECharts",
+          "n": 2
+        },
+        {
+          "id": "css",
+          "name": "CSS",
+          "n": 2
+        },
+        {
+          "id": "elixir",
+          "name": "Elixir",
+          "n": 2
+        },
+        {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 2
+        },
+        {
+          "id": "majordomus",
+          "name": "Majordomus",
+          "n": 2
+        },
+        {
+          "id": "rust",
+          "name": "Rust",
+          "n": 2
+        },
+        {
+          "id": "typescript",
+          "name": "TypeScript",
+          "n": 2
+        },
+        {
+          "id": "cytoscape-js",
+          "name": "Cytoscape.js",
+          "n": 1
+        },
+        {
+          "id": "p5-js",
+          "name": "p5.js",
+          "n": 1
+        },
+        {
+          "id": "tailwind-css",
+          "name": "Tailwind CSS",
+          "n": 1
+        },
+        {
+          "id": "zola",
+          "name": "Zola",
+          "n": 1
+        }
+      ]
+    },
+    "geospatial-analysis": {
+      "domain": "data",
+      "term": "gis",
+      "services": [
+        "interactive-data-products"
+      ],
+      "repos": [
+        {
+          "name": "crisis-map",
+          "title": "Crisis map",
+          "how": "words",
+          "score": 3.6,
+          "slug": "crisis-map",
+          "url": "https://github.com/korczis/crisis-map",
+          "description": "Mini crisis map: incident reports normalised, geocoded via local Nominatim, stored as PostGIS geography, served from one capability registry (LiveView, REST, OpenAPI, MCP, CLI)",
+          "category": "data",
+          "site": "https://korczis.github.io/crisis-map/",
+          "pushed": "2026-11-16"
+        },
+        {
+          "name": "data-atlas",
+          "title": "Data Atlas",
+          "how": "words",
+          "score": 2.8,
+          "slug": "data-atlas",
+          "url": "https://github.com/korczis/data-atlas",
+          "description": "Katalog GIS a geodatových zdrojů — datasety, katastr, doprava, remote sensing, prostorová analytika. Jednosouborová prohledávatelná stránka.",
+          "category": "data",
+          "site": "https://korczis.github.io/data-atlas/",
+          "pushed": "2026-11-16"
+        },
+        {
+          "name": "simple_geocoder",
+          "title": "simple_geocoder",
+          "how": "words",
+          "score": 2.6,
+          "slug": "simple-geocoder",
+          "url": "https://gitlab.com/korczis/simple_geocoder",
+          "description": null,
+          "category": "tools",
+          "site": null,
+          "pushed": "2025-12-20"
+        }
+      ],
+      "engagements": [],
+      "technologies": [
+        {
+          "id": "elixir",
+          "name": "Elixir",
+          "n": 2
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "n": 2
+        },
+        {
+          "id": "postgis",
+          "name": "PostGIS",
+          "n": 2
+        },
+        {
+          "id": "css",
+          "name": "CSS",
+          "n": 1
+        },
+        {
+          "id": "eex",
+          "name": "EEx and HEEx",
+          "n": 1
+        },
+        {
+          "id": "html",
+          "name": "HTML",
+          "n": 1
+        },
+        {
+          "id": "just",
+          "name": "Just",
+          "n": 1
+        },
+        {
+          "id": "mcp",
+          "name": "MCP",
+          "n": 1
+        },
+        {
+          "id": "plpgsql",
+          "name": "PL/pgSQL",
+          "n": 1
+        },
+        {
+          "id": "python",
+          "name": "Python",
+          "n": 1
+        },
+        {
+          "id": "shell",
+          "name": "Shell",
+          "n": 1
+        }
+      ]
+    }
+  }
+}
