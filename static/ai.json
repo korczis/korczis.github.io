@@ -3,9 +3,9 @@
  "description": "The Majordomus layer of korczis/korczis.github.io: every object of .ai/ with its MCP resource URI",
  "source": "majordomus run objects.list, capabilities.list",
  "majordomus": "1.0.2",
- "tree": "8826c38b133ff71273247243b36d07b800a0f90a4c615d9f8bf49a6fe76ce5a3",
+ "tree": "7a849d71744b25d38ed4521d00a2a3f7e7015db1119c7b0cb968999ba87574c2",
  "counts": {
-  "objects": 150,
+  "objects": 151,
   "kinds": {
    "adr": 10,
    "context": 21,
@@ -15,14 +15,14 @@
    "policy": 1,
    "profile": 4,
    "prompt": 4,
-   "rule": 80,
+   "rule": 81,
    "scope": 1,
    "skill": 1,
    "taxonomy": 8
   },
-  "capabilities": 381,
+  "capabilities": 382,
   "mcp_tools": 215,
-  "mcp_resources": 207,
+  "mcp_resources": 208,
   "http_routes": 219
  },
  "objects": [
@@ -1001,6 +1001,14 @@
    "title": "Verify outcomes, not activity",
    "description": "A test that ran and passed is evidence; a sentence saying it did is not.",
    "path": ".ai/repo/rules/vendor/majordomus/rules/principle-08-verify-outcomes.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/project.cases-derived@1",
+   "kind": "rule",
+   "identity": "project.cases-derived@1",
+   "title": "Every client engagement with measurable sources has its own anonymised, derived case study; every figure says how it is known",
+   "description": "scripts/build-cases.mjs writes one page per engagement of data/experience.json that has a sector and inferred capabilities, in every language, linked to its skills, services, technologies and public twins; the sector and roles are declared, the period and scale measured and rounded, the capabilities inferred and labelled so; no client, person, system or repository of an engagement is named.",
+   "path": ".ai/repo/rules/project/cases-derived.v1.md"
   },
   {
    "uri": "majordomus://rule/project.data-measured@1",
