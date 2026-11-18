@@ -31,16 +31,16 @@
   },
   "highlights": [
     {
-      "en": "Elm architecture split into Model/Msg/Update/View modules per component.",
-      "cs": "Elm architektura rozdělená na moduly Model/Msg/Update/View pro každou komponentu."
+      "en": "Elm components split into Model/Msg/Update/View modules, fully so only for the application shell.",
+      "cs": "Elm komponenty rozdělené na moduly Model/Msg/Update/View, úplně jen u shellu aplikace."
     },
     {
       "en": "GraphQL schema files (.graphql) next to Absinthe resolvers.",
       "cs": "Soubory GraphQL schématu (.graphql) vedle Absinthe resolverů."
     },
     {
-      "en": "Phoenix WebSocket channel with authenticated sockets.",
-      "cs": "WebSocket kanál Phoenixu s autentizovanými sockety."
+      "en": "Phoenix WebSocket channel whose socket signs a Guardian JWT in but also lets unauthenticated clients connect.",
+      "cs": "WebSocket kanál Phoenixu, jehož socket přihlásí klienta přes JWT z Guardianu, ale pustí dovnitř i nepřihlášené."
     }
   ],
   "stack": [

@@ -33,14 +33,14 @@
       "cs": "U každého záznamu pole s původem (listingUrl)."
     },
     {
-      "en": "Smallest possible processor: one selector, one record type.",
-      "cs": "Nejmenší možný procesor: jeden selektor, jeden typ záznamu."
+      "en": "One processor, one selector, one record type; no pagination.",
+      "cs": "Jeden procesor, jeden selektor, jeden typ záznamu; bez stránkování."
     }
   ],
   "stack": [
     "JavaScript",
     "Node.js",
-    "Cheerio"
+    "npm"
   ],
   "architecture": {
     "mermaid": "flowchart LR\n  W[Worker] --> I[index processor]\n  I --> S[story title links]\n  S --> R[url title listingUrl]",

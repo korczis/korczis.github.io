@@ -9,6 +9,11 @@
     "read": [
       "README.md",
       "build.xml",
+      ".travis.yml",
+      "src/algs/Algs.java",
+      "src/algs/UnionFind.java",
+      "src/algs/UnionFindQuick.java",
+      "src/basics/HelloWorld.java",
       "tree"
     ]
   },
@@ -28,8 +33,8 @@
   },
   "highlights": [
     {
-      "en": "Union-find in two variants, mirroring the C++ algorithms repository.",
-      "cs": "Union-find ve dvou variantách, stejně jako v C++ repozitáři algorithms."
+      "en": "Union-find in two variants (quick-find and quick-union), an exercise the C++ algorithms repository also covers.",
+      "cs": "Union-find ve dvou variantách (quick-find a quick-union), cvičení, které má i C++ repozitář algorithms."
     },
     {
       "en": "Very small: four Java source files.",

@@ -16,16 +16,16 @@
   "provenance": "inferred",
   "kind": "experiment",
   "summary": {
-    "en": "A conference demo container: a hello-world Express app on CentOS 6, served on port 8080. The README walks through build, run, log inspection and a curl check.",
-    "cs": "Demo kontejner pro konferenci: hello-world aplikace v Expressu na CentOS 6, servírovaná na portu 8080. README provede buildem, spuštěním, kontrolou logů a ověřením přes curl."
+    "en": "A demo container whose name points to a 2015 conference: a hello-world Express app on CentOS 6, meant to be served on port 8080. The README walks through build, run, log inspection and a curl check.",
+    "cs": "Demo kontejner, jehož název odkazuje na konferenci v roce 2015: hello-world aplikace v Expressu na CentOS 6, která má běžet na portu 8080. README provede buildem, spuštěním, kontrolou logů a ověřením přes curl."
   },
   "problem": {
-    "en": "A talk needed a minimal, repeatable example of packaging a Node.js service as a Docker image.",
-    "cs": "Přednáška potřebovala minimální a opakovatelný příklad, jak zabalit Node.js službu do Docker image."
+    "en": "A minimal, repeatable example of packaging a Node.js service as a Docker image, presumably for a talk; the repository itself says nothing more.",
+    "cs": "Minimální a opakovatelný příklad, jak zabalit Node.js službu do Docker image, nejspíš pro přednášku; samotný repozitář nic dalšího neuvádí."
   },
   "solution": {
-    "en": "The Dockerfile enables EPEL on CentOS 6, installs npm, copies the source, runs npm install and starts node /src/index.js. The app answers every GET / with a plain text greeting.",
-    "cs": "Dockerfile na CentOS 6 zapne EPEL, nainstaluje npm, zkopíruje zdrojáky, spustí npm install a nastartuje node /src/index.js. Aplikace na každé GET / odpoví textovým pozdravem."
+    "en": "The Dockerfile enables EPEL on CentOS 6, installs npm, copies the build context to /src, runs npm install there and starts node /src/index.js. Because the context is the repository root, package.json and index.js land in /src/src/, so the paths in the Dockerfile do not match the committed layout. The app answers GET / with a plain text greeting.",
+    "cs": "Dockerfile na CentOS 6 zapne EPEL, nainstaluje npm, zkopíruje build kontext do /src, tam spustí npm install a nastartuje node /src/index.js. Kontextem je ale kořen repozitáře, takže package.json a index.js skončí v /src/src/ a cesty v Dockerfilu neodpovídají commitnuté struktuře. Aplikace na GET / odpoví textovým pozdravem."
   },
   "highlights": [
     {
@@ -33,8 +33,8 @@
       "cs": "Kompletní postup build, run, logy a curl v README"
     },
     {
-      "en": "Twelve-line Express server",
-      "cs": "Express server na dvanácti řádcích"
+      "en": "Thirteen-line Express 3 server",
+      "cs": "Server v Expressu 3 na třinácti řádcích"
     },
     {
       "en": "Port mapping from 8080 inside to a host port",
@@ -60,5 +60,5 @@
     "server-coreos",
     "rest-hello-world-benchmark"
   ],
-  "confidence": "high"
+  "confidence": "medium"
 }

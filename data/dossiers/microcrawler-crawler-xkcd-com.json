@@ -24,8 +24,8 @@
     "cs": "Workery Microcrawleru jsou obecné: stahují stránky a potřebují logiku pro konkrétní web, aby věděly, které odkazy sledovat a jaká pole vytáhnout."
   },
   "solution": {
-    "en": "The index processor queues the rel=\"prev\" link back to itself and emits the comic image source, normalised from a protocol-relative URL to https. It is a compact example of a self-recursive processor that crawls a whole linear archive from one seed.",
-    "cs": "Procesor index zařadí odkaz rel=\"prev\" zpět sám sobě a vrátí zdroj obrázku komiksu převedený z URL bez protokolu na https. Je to kompaktní ukázka samorekurzivního procesoru, který z jednoho seedu projde celý lineární archiv."
+    "en": "The index processor queues the rel=\"prev\" link back to itself and emits a record with the comic image source (a protocol-relative URL prefixed with https), its title and alt text. It is a compact example of a self-recursive processor that crawls a whole linear archive from one seed.",
+    "cs": "Procesor index zařadí odkaz rel=\"prev\" zpět sám sobě a vrátí záznam se zdrojem obrázku komiksu (URL bez protokolu doplněnou o https), jeho titulkem a alt textem. Je to kompaktní ukázka samorekurzivního procesoru, který z jednoho seedu projde celý lineární archiv."
   },
   "highlights": [
     {
@@ -33,8 +33,8 @@
       "cs": "Celý archiv z jednoho seedu díky samorekurzivnímu procesoru."
     },
     {
-      "en": "Often the demo target for the crawler (version 0.0.7).",
-      "cs": "Vhodný demo cíl pro crawler (verze 0.0.7)."
+      "en": "One of the example crawls in the microcrawler-js README (version 0.0.7).",
+      "cs": "Jeden z ukázkových crawlů v README microcrawler-js (verze 0.0.7)."
     }
   ],
   "stack": [

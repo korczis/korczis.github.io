@@ -24,8 +24,8 @@
     "cs": "Aliasy a úpravy prostředí shellu se ztratí při reinstalaci nebo výměně stroje."
   },
   "solution": {
-    "en": "The files are versioned as-is: networking aliases built on lsof and ipconfig, a pyenv init, an RVM path entry, zlib build flags for Homebrew and mouse support in tmux. There is no installer or README.",
-    "cs": "Soubory jsou verzované tak, jak jsou: síťové aliasy nad lsof a ipconfig, inicializace pyenv, cesta k RVM, příznaky pro build se zlib z Homebrew a podpora myši v tmuxu. Instalátor ani README chybí."
+    "en": "The files are versioned as-is: networking aliases built on lsof, ipconfig and dscacheutil, an exa alias for ls, init hooks for pyenv, RVM, NVM and opam, PATH entries for Go and Cargo, Homebrew build flags and mouse support in tmux. The build flags for zlib, SQLite, LLVM and OpenBLAS each re-export LDFLAGS and CPPFLAGS, so only the last value wins. There is no installer or README.",
+    "cs": "Soubory jsou verzované tak, jak jsou: síťové aliasy nad lsof, ipconfig a dscacheutil, alias exa místo ls, inicializace pyenv, RVM, NVM a opam, cesty pro Go a Cargo v PATH, příznaky pro build s knihovnami z Homebrew a podpora myši v tmuxu. Příznaky pro zlib, SQLite, LLVM a OpenBLAS pokaždé znovu exportují LDFLAGS a CPPFLAGS, takže platí jen poslední hodnota. Instalátor ani README chybí."
   },
   "highlights": [
     {
@@ -33,19 +33,25 @@
       "cs": "Aliasy pro výpis otevřených socketů, naslouchajících portů a vyprázdnění DNS cache"
     },
     {
-      "en": "Toolchain hooks for pyenv and RVM",
-      "cs": "Napojení na pyenv a RVM"
+      "en": "Toolchain hooks for pyenv, RVM, NVM, opam, Go and Rust",
+      "cs": "Napojení na pyenv, RVM, NVM, opam, Go a Rust"
+    },
+    {
+      "en": "Homebrew library flags that overwrite one another instead of accumulating",
+      "cs": "Příznaky pro knihovny z Homebrew, které se navzájem přepisují místo sčítání"
     }
   ],
   "stack": [
     "Bash",
     "tmux",
     "macOS",
+    "Homebrew",
     "pyenv",
-    "RVM"
+    "RVM",
+    "NVM"
   ],
   "architecture": {
-    "mermaid": "flowchart LR\n  Repo[home repo] --> Profile[bash_profile]\n  Repo --> Rc[bashrc]\n  Repo --> Tmux[tmux.conf]\n  Profile --> Aliases[network aliases]\n  Profile --> Pyenv[pyenv init]\n  Rc --> Rvm[RVM path]",
+    "mermaid": "flowchart LR\n  Repo[home repo] --> Profile[bash_profile]\n  Repo --> Rc[bashrc]\n  Repo --> Tmux[tmux.conf]\n  Profile --> Aliases[network aliases]\n  Profile --> Hooks[pyenv NVM RVM opam hooks]\n  Profile --> Flags[Homebrew build flags]\n  Rc --> Rvm[RVM path]\n  Tmux --> Mouse[mouse mode]",
     "caption": {
       "en": "The three dotfiles and what each one configures.",
       "cs": "Tři dotfiles a co který z nich nastavuje."

@@ -36,8 +36,8 @@
       "cs": "Volitelné downloadery (aria2, curl, wget, Ruby) a loadery (PostgreSQL, Elasticsearch, Couchbase)."
     },
     {
-      "en": "Packaged as a gem with a GLI-style CLI and help per module.",
-      "cs": "Zabaleno jako gem s GLI-style CLI a nápovědou pro každý modul."
+      "en": "Packaged as a gem with a GLI-based CLI and help per module.",
+      "cs": "Zabaleno jako gem s CLI postaveným na GLI a nápovědou pro každý modul."
     }
   ],
   "stack": [

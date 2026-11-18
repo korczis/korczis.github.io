@@ -31,8 +31,8 @@
       "cs": "Dva soubory: LICENSE a README.md."
     },
     {
-      "en": "Acts as a pointer to the main Map Of Facts repository.",
-      "cs": "Slouží jako ukazatel na hlavní repozitář Map Of Facts."
+      "en": "Same commit as the GitHub repository mapofffacts.com, whose wiki it links.",
+      "cs": "Stejný commit jako repozitář mapofffacts.com na GitHubu, na jehož wiki odkazuje."
     }
   ],
   "stack": [

@@ -18,8 +18,8 @@
     "cs": "Repozitář pro modely k 3D tisku, zatím s jedním parametrickým návrhem v OpenSCADu: otočným stojanem na ložisku pro fotogrammetrii. Rozměry jako velikost základny a průměry ložiska jsou pojmenované konstanty a stojan, držák a horní deska jsou samostatné moduly."
   },
   "problem": {
-    "en": "Photogrammetry needs the object rotated in even steps on a stable turntable, sized to an available bearing.",
-    "cs": "Fotogrammetrie potřebuje objekt otáčet po stejných krocích na stabilní točně, rozměrově sladěné s dostupným ložiskem."
+    "en": "A stable turntable for photogrammetry, sized to an available bearing, that can be printed at home.",
+    "cs": "Stabilní otočná podložka pro fotogrammetrii, rozměrově sladěná s dostupným ložiskem a vytisknutelná doma."
   },
   "solution": {
     "en": "Parametric constructive solid geometry: cube and cylinder primitives combined with difference(), with the bearing dimensions driving the pylon, mount cavity and plate.",

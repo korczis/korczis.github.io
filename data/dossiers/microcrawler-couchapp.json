@@ -36,8 +36,8 @@
       "cs": "View data-processors počítá dokumenty na procesor dvojicí map/reduce."
     },
     {
-      "en": "Front end uses Ember, Ember Data, ember-couchdb-kit, Bootstrap and socket.io-client.",
-      "cs": "Frontend používá Ember, Ember Data, ember-couchdb-kit, Bootstrap a socket.io-client."
+      "en": "Front end vendors Ember, Ember Data, ember-couchdb-kit and Bootstrap; bower.json also declares socket.io-client.",
+      "cs": "Frontend přibaluje Ember, Ember Data, ember-couchdb-kit a Bootstrap; bower.json navíc deklaruje socket.io-client."
     },
     {
       "en": "The README is still the upstream CouchApp example text.",

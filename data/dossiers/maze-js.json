@@ -28,8 +28,8 @@
   },
   "highlights": [
     {
-      "en": "Sibling of the maze web app and maze-rs.",
-      "cs": "Sourozenec webové aplikace maze a maze-rs."
+      "en": "The README holds only the title and the word Maze.",
+      "cs": "README obsahuje jen nadpis a slovo Maze."
     }
   ],
   "stack": [

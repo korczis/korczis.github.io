@@ -15,8 +15,8 @@
   "provenance": "inferred",
   "kind": "library",
   "summary": {
-    "en": "A webpack loader that compiles PEG.js grammar files into parser modules at build time. Importing a .pegjs file yields a ready parser.",
-    "cs": "Loader pro webpack, který při buildu zkompiluje gramatiky PEG.js na moduly parserů. Import souboru .pegjs vrátí hotový parser."
+    "en": "A webpack loader that compiles PEG.js grammar files into parser modules at build time. Importing a grammar file through the loader yields a ready parser.",
+    "cs": "Loader pro webpack, který při buildu zkompiluje gramatiky PEG.js na moduly parserů. Import souboru s gramatikou přes tento loader vrátí hotový parser."
   },
   "problem": {
     "en": "Generating parsers from grammars by hand adds a manual build step and generated files to the repository. Keeping grammar and parser in sync is error-prone.",
@@ -32,8 +32,8 @@
       "cs": "Zhruba tucet řádků; cacheovatelný loader pro webpack."
     },
     {
-      "en": "Published as an npm package with MIT licence.",
-      "cs": "Vydaný jako npm balíček pod licencí MIT."
+      "en": "Packaged for npm (package.json, version 0.0.2) under the MIT licence.",
+      "cs": "Připravený jako npm balíček (package.json, verze 0.0.2) pod licencí MIT."
     }
   ],
   "stack": [

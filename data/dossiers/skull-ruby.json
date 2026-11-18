@@ -31,6 +31,10 @@
     {
       "en": "Scaffold only: no Ruby sources beyond the Rakefile.",
       "cs": "Pouze kostra: kromě Rakefile žádné zdrojáky v Ruby."
+    },
+    {
+      "en": "Travis CI targets Ruby 2.0 and 2.1 and updates RubyGems and Bundler first.",
+      "cs": "Travis CI cílí na Ruby 2.0 a 2.1 a nejdřív aktualizuje RubyGems a Bundler."
     }
   ],
   "stack": [

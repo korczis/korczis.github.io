@@ -16,16 +16,16 @@
   "provenance": "inferred",
   "kind": "cli",
   "summary": {
-    "en": "A Ruby CLI that packs a project's bundled gems into a zip archive, stores it on Amazon S3 and restores it later. Archives are keyed by the SHA-256 of Gemfile.lock, so identical dependency sets reuse the same pack.",
-    "cs": "Ruby CLI, které zabalí gemy projektu do zip archivu, uloží ho na Amazon S3 a později obnoví. Archivy jsou klíčované SHA-256 souboru Gemfile.lock, takže stejná sada závislostí sdílí stejný balík."
+    "en": "A Ruby CLI that packs a project's bundled gems into a zip archive and later restores it from an Amazon S3 bucket. Archives are keyed by the SHA-256 of Gemfile.lock, so identical dependency sets reuse the same pack.",
+    "cs": "Ruby CLI, které zabalí gemy projektu do zip archivu a později ho obnoví z bucketu na Amazon S3. Archivy jsou klíčované SHA-256 souboru Gemfile.lock, takže stejná sada závislostí sdílí stejný balík."
   },
   "problem": {
     "en": "Deploying Ruby scripts to a hosted execution environment meant running bundle install there, which is slow and depends on network access to gem sources and Git remotes.",
     "cs": "Nasazení Ruby skriptů do hostovaného prostředí pro spouštění znamenalo pouštět tam bundle install, což je pomalé a závislé na síťovém přístupu ke zdrojům gemů a Git remotům."
   },
   "solution": {
-    "en": "grache pack build runs bundle pack --all to fill vendor/cache, pack zip compresses it into grache-<sha>.zip, and pack install looks up the archive by the lockfile hash, downloads and extracts it. The CLI is built on GLI, with aws-sdk for storage and rubyzip for archives, and is tested with RSpec on Travis CI.",
-    "cs": "grache pack build spustí bundle pack --all a naplní vendor/cache, pack zip ho zkomprimuje do grache-<sha>.zip a pack install podle hashe lockfilu archiv dohledá, stáhne a rozbalí. CLI stojí na GLI, s aws-sdk pro úložiště a rubyzip pro archivy, testy běží v RSpec na Travis CI."
+    "en": "grache pack build runs bundle pack --all to fill vendor/cache, pack zip compresses it into a local grache-<sha>.zip, and pack install looks up the archive by the lockfile hash at a hard-coded S3 bucket URL, downloads it over HTTP and extracts it, falling back to pack build when it is missing. Uploading the zip is not part of the code: aws-sdk is declared in the gemspec but never required. The CLI is built on GLI with rubyzip for archives; Travis CI runs rake ci on several Ruby versions, though the spec directory holds only a helper.",
+    "cs": "grache pack build spustí bundle pack --all a naplní vendor/cache, pack zip ho zkomprimuje do lokálního grache-<sha>.zip a pack install podle hashe lockfilu archiv dohledá na natvrdo zapsané adrese bucketu S3, stáhne ho přes HTTP a rozbalí; když chybí, spustí místo toho pack build. Nahrání zipu kód neřeší: aws-sdk je v gemspecu deklarované, ale nikde se nenačítá. CLI stojí na GLI, archivy obstarává rubyzip; Travis CI spouští rake ci na několika verzích Ruby, adresář spec ale obsahuje jen helper."
   },
   "highlights": [
     {
@@ -50,16 +50,14 @@
     "Bundler",
     "GLI",
     "Amazon S3",
-    "aws-sdk",
     "rubyzip",
-    "RSpec",
     "Travis CI"
   ],
   "architecture": {
-    "mermaid": "flowchart LR\n  A[Gemfile] --> B[pack build]\n  B --> C[vendor cache]\n  C --> D[pack zip]\n  E[Gemfile.lock SHA-256] --> D\n  D --> F[S3 bucket]\n  F --> G[pack install]\n  E --> G\n  G --> H[Local bundle]",
+    "mermaid": "flowchart LR\n  A[Gemfile] --> B[pack build]\n  B --> C[vendor cache]\n  C --> D[pack zip]\n  E[Gemfile.lock SHA-256] --> D\n  D --> U[Manual upload]\n  U --> F[S3 bucket]\n  F --> G[pack install]\n  E --> G\n  G --> H[Local bundle]",
     "caption": {
-      "en": "Build, upload and restore of a gem pack, keyed by the lockfile hash.",
-      "cs": "Sestavení, nahrání a obnova balíku gemů klíčovaného hashem lockfilu."
+      "en": "Build and restore of a gem pack keyed by the lockfile hash; the upload step sits outside the tool.",
+      "cs": "Sestavení a obnova balíku gemů klíčovaného hashem lockfilu; nahrání stojí mimo nástroj."
     }
   },
   "related": [

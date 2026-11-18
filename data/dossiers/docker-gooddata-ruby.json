@@ -17,12 +17,12 @@
   "provenance": "inferred",
   "kind": "experiment",
   "summary": {
-    "en": "A minimal Docker image that runs a Ruby script against a hosted analytics platform's Ruby SDK. The script prints the SDK version and then reports process memory usage every ten seconds while it deliberately allocates large strings.",
-    "cs": "Minimalní Docker image, který spouští Ruby skript nad Ruby SDK hostované analytické platformy. Skript vypíše verzi SDK a pak každých deset sekund hlásí spotřebu paměti, zatímco záměrně alokuje velké řetězce."
+    "en": "A minimal Docker image that runs a Ruby script against a hosted analytics platform's Ruby SDK. The script prints the SDK version and then reports used memory, as read by the mem_info gem, every ten seconds while it deliberately allocates large strings.",
+    "cs": "Minimální Docker image, který spouští Ruby skript nad Ruby SDK hostované analytické platformy. Skript vypíše verzi SDK a pak každých deset sekund hlásí využitou paměť, jak ji čte gem mem_info, zatímco záměrně alokuje velké řetězce."
   },
   "problem": {
-    "en": "Running the SDK inside a container raises the question of how much memory a Ruby process actually consumes under load. The repository gives no further context; its purpose beyond that probe is unclear.",
-    "cs": "Při běhu SDK v kontejneru je potřeba vědět, kolik paměti Ruby proces pod zátěží skutečně spotřebuje. Repozitář jiný kontext neuvádí, jeho účel nad rámec této sondy je nejasný."
+    "en": "Running the SDK inside a container raises the question of how memory grows under load. The repository gives no further context; its purpose beyond that probe is unclear.",
+    "cs": "Při běhu SDK v kontejneru vyvstává otázka, jak pod zátěží roste spotřeba paměti. Repozitář jiný kontext neuvádí, jeho účel nad rámec této sondy je nejasný."
   },
   "solution": {
     "en": "The image builds on the official ruby:2.1-onbuild base, installs the SDK gem and the mem_info gem, and runs app.rb. A background thread reads used memory through mem_info and prints it in human-readable units while the main loop grows an array.",
@@ -30,8 +30,8 @@
   },
   "highlights": [
     {
-      "en": "Four-line Dockerfile on the ruby:2.1-onbuild base image",
-      "cs": "Čtyřřádkový Dockerfile nad base image ruby:2.1-onbuild"
+      "en": "Four-instruction Dockerfile on the ruby:2.1-onbuild base image",
+      "cs": "Dockerfile o čtyřech instrukcích nad base image ruby:2.1-onbuild"
     },
     {
       "en": "Background thread for periodic memory reporting with byte-unit formatting",

@@ -24,8 +24,8 @@
     "cs": "Zjistit přes webové rozhraní, kdo přispívá do kterého repozitáře napříč organizací, je pracné."
   },
   "solution": {
-    "en": "With node-github and promise chains from the deferred library, the script fetches two pages of 100 repositories, maps each to a contributors request including anonymous ones, and dumps the combined data. The organisation name and OAuth token are hard-coded placeholders in app.js.",
-    "cs": "Skript přes node-github a promise řetězce z knihovny deferred stáhne dvě stránky po 100 repozitářích, pro každý vyžádá přispěvatele včetně anonymních a vypíše spojená data. Název organizace i OAuth token jsou natvrdo zapsané zástupné hodnoty v app.js."
+    "en": "With node-github and promise chains from the deferred library, the script requests two pages of 100 repositories, maps each to a contributors request including anonymous ones, and prints the repository count and the combined data. The organisation name is hard-coded in app.js and the OAuth token is a placeholder to fill in.",
+    "cs": "Skript přes node-github a promise řetězce z knihovny deferred vyžádá dvě stránky po 100 repozitářích, pro každý vyžádá přispěvatele včetně anonymních a vypíše počet repozitářů a spojená data. Název organizace je natvrdo zapsaný v app.js a OAuth token je zástupná hodnota k doplnění."
   },
   "highlights": [
     {

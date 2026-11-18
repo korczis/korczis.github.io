@@ -27,8 +27,8 @@
     "cs": "SDR hardware se ovládá přes C knihovny bez bezpečného rozhraní pro Rust nebo Elixir. Zpracování signálu navíc potřebuje rychlou vektorovou matematiku, kterou samotná smyčka na CPU nedá."
   },
   "solution": {
-    "en": "Separate -sys crates bind libhackrf and librtlsdr, safe crates (sdr_hackrf, sdr_rtl) wrap them, and an sdr crate combines both with sdr-shared types. OpenCL kernels for scalar, vector and matrix-vector operations sit in data/kernels, while math-rustler and sdr-rustler expose native code to Elixir; upstream libraries (rtl-sdr, hackrf, libusb, liquid-dsp, ocl) are git submodules.",
-    "cs": "Samostatné -sys crates vážou libhackrf a librtlsdr, bezpečné crates (sdr_hackrf, sdr_rtl) je obalují a crate sdr spojuje obojí se sdílenými typy ze sdr-shared. Kernely OpenCL pro skalární, vektorové a maticově-vektorové operace jsou v data/kernels, math-rustler a sdr-rustler zpřístupňují nativní kód Elixiru; upstreamové knihovny (rtl-sdr, hackrf, libusb, liquid-dsp, ocl) jsou git submoduly."
+    "en": "Separate -sys crates bind libhackrf and librtlsdr, safe crates (sdr_hackrf, sdr_rtl) wrap them, and an sdr crate combines both with sdr-shared types. OpenCL kernels for scalar, vector and matrix-vector operations sit in data/kernels, while math-rustler and sdr-rustler expose native code to Elixir; upstream libraries (rtl-sdr, hackrf, libusb, liquid-dsp, ocl, rustler) are git submodules.",
+    "cs": "Samostatné -sys crates vážou libhackrf a librtlsdr, bezpečné crates (sdr_hackrf, sdr_rtl) je obalují a crate sdr spojuje obojí se sdílenými typy ze sdr-shared. Kernely OpenCL pro skalární, vektorové a maticově-vektorové operace jsou v data/kernels, math-rustler a sdr-rustler zpřístupňují nativní kód Elixiru; upstreamové knihovny (rtl-sdr, hackrf, libusb, liquid-dsp, ocl, rustler) jsou git submoduly."
   },
   "highlights": [
     {
@@ -40,8 +40,8 @@
       "cs": "CLI hackrf s podpříkazy info, list a reset s výstupem v JSONu."
     },
     {
-      "en": "OpenCL matvec kernel for GPU-side signal math.",
-      "cs": "OpenCL kernel matvec pro výpočty signálu na GPU."
+      "en": "OpenCL kernels (scalar, vector, matvec) loaded at runtime by math-rust.",
+      "cs": "Kernely OpenCL (scalar, vector, matvec), které math-rust načítá za běhu."
     },
     {
       "en": "Elixir bindings via Rustler and an Elm/Phoenix sdr-web module.",

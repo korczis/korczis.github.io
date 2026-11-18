@@ -10,7 +10,17 @@
       "README.md",
       "TODO.md",
       "role-server.yml",
-      "top-level tree"
+      "role-test.yml",
+      "install-server.sh",
+      "roles/docker/tasks/main.yml",
+      "roles/docker-elk/tasks/main.yml",
+      "roles/docker-weave-scope/tasks/main.yml",
+      "roles/collectd/tasks/main.yml",
+      "roles/collectd/files/collectd.conf",
+      "roles/graphite/tasks/main.yml",
+      "roles/grafana/tasks/main.yml",
+      "roles/postgis/tasks/main.yml",
+      "recursive tree"
     ]
   },
   "provenance": "inferred",
@@ -24,8 +34,8 @@
     "cs": "Jeden stroj pro práci s daty potřebuje kontejnery, metriky, logy a databázi, a ruční nastavení se špatně opakuje."
   },
   "solution": {
-    "en": "role-server.yml applies EPEL, OS upgrade, collectd, Docker, dockerised cAdvisor, ELK and Weave Scope, fail2ban, Grafana with dashboards, Graphite, mosh, PostgreSQL and tools. Roles for PostGIS, Rust, nmap, git and Atomic exist but are commented out; a separate test role and install scripts exist for both profiles.",
-    "cs": "role-server.yml aplikuje EPEL, upgrade OS, collectd, Docker, cAdvisor v kontejneru, ELK a Weave Scope, fail2ban, Grafanu s dashboardy, Graphite, mosh, PostgreSQL a nástroje. Role pro PostGIS, Rust, nmap, git a Atomic existují, ale jsou zakomentované; pro oba profily jsou i testovací role a instalační skripty."
+    "en": "role-server.yml applies EPEL, OS upgrade, collectd, Docker, dockerised cAdvisor, ELK and Weave Scope, fail2ban, Grafana with Graphite and Prometheus datasources and panel plugins, Graphite, mosh, PostgreSQL and tools. Roles for PostGIS, Rust, nmap, git and Atomic exist but are commented out, a Prometheus role is not in the play, the Grafana dashboard import is commented out, and a separate test playbook applies only PostgreSQL; a shell script runs each playbook.",
+    "cs": "role-server.yml aplikuje EPEL, upgrade OS, collectd, Docker, cAdvisor v kontejneru, ELK a Weave Scope, fail2ban, Grafanu se zdroji dat Graphite a Prometheus a s pluginy panelů, Graphite, mosh, PostgreSQL a nástroje. Role pro PostGIS, Rust, nmap, git a Atomic existují, ale jsou zakomentované, role Prometheus v playbooku není, import dashboardu do Grafany je zakomentovaný a samostatný testovací playbook nasadí jen PostgreSQL; každý playbook spouští shellový skript."
   },
   "highlights": [
     {

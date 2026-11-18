@@ -10,48 +10,66 @@
       "README.md",
       "package.json (tree)",
       "src (tree)",
-      "__tests__ (tree)"
+      "__tests__ (tree)",
+      "package.json",
+      "webpack.config.js",
+      "src/Evaluator.js",
+      "src/grammar/grammar.peg",
+      "src/grammar/math.peg",
+      "src/functions/",
+      "src/test.js",
+      "__tests__/evaluator.js"
     ]
   },
   "provenance": "inferred",
   "kind": "library",
   "summary": {
-    "en": "A JavaScript parser built on PEG.js, packaged with Babel, a Webpack config, an example directory and a __tests__ suite. The README is a single line stating it is a parser built using PEG.js.",
-    "cs": "JavaScriptový parser postavený na PEG.js, zabalený s Babelem, Webpack configem, adresářem example a sadou __tests__. README je jediný řádek, že jde o parser postavený pomocí PEG.js."
+    "en": "An expression evaluator built on PEG.js. Its grammar compiles expressions such as $name, min(1, 2) or nested calls like min(3, min(2, 1)) into closures that are evaluated against a context of variables and functions.",
+    "cs": "Vyhodnocovač výrazů postavený na PEG.js. Jeho gramatika překládá výrazy jako $name, min(1, 2) nebo vnořená volání typu min(3, min(2, 1)) na closures, které se vyhodnotí nad kontextem proměnných a funkcí."
   },
   "problem": {
-    "en": "Parsing a small grammar in JavaScript is cleaner with a PEG generator than with hand-written string handling.",
-    "cs": "Parsování malé gramatiky v JavaScriptu je čistší s PEG generátorem než s ručním zpracováním řetězců."
+    "en": "Evaluating small user-supplied expressions over data (variables and a few functions) is cleaner with a generated parser than with hand-written string handling, and a compiled expression should be cheap to run repeatedly.",
+    "cs": "Vyhodnocovat malé výrazy nad daty (proměnné a pár funkcí) je čistší s generovaným parserem než s ručním zpracováním řetězců a jednou zkompilovaný výraz by se měl dát levně spouštět opakovaně."
   },
   "solution": {
-    "en": "The project defines a grammar and compiles it with PEG.js into a parser module, with a built dist, an example and tests. The specific grammar is not described in the README.",
-    "cs": "Projekt definuje gramatiku a kompiluje ji pomocí PEG.js do parserového modulu, s připraveným dist, příkladem a testy. Konkrétní gramatika v README popsána není."
+    "en": "src/grammar/grammar.peg turns variables, identifiers, numbers, strings and function calls into closures; Evaluator merges the caller's context with default functions (and, or, not, min, max) and returns the compiled closure or its result. Webpack with babel-loader and peg-loader builds the grammar into dist/lib.js, Jest tests cover variables, calls and nested calls, and src/test.js times a million evaluations.",
+    "cs": "src/grammar/grammar.peg převádí proměnné, identifikátory, čísla, řetězce a volání funkcí na closures; Evaluator sloučí kontext volajícího s výchozími funkcemi (and, or, not, min, max) a vrátí zkompilovanou closure nebo rovnou její výsledek. Webpack s babel-loaderem a peg-loaderem sestaví gramatiku do dist/lib.js, testy v Jestu pokrývají proměnné, volání i vnořená volání a src/test.js měří milion vyhodnocení."
   },
   "highlights": [
     {
-      "en": "PEG.js grammar compiled into a JavaScript parser module.",
-      "cs": "PEG.js gramatika zkompilovaná do JavaScriptového parserového modulu."
+      "en": "Expressions compile once into reusable closures over a context.",
+      "cs": "Výraz se zkompiluje jednou do znovupoužitelné closure nad kontextem."
     },
     {
-      "en": "Carries an example directory and a __tests__ suite.",
-      "cs": "Obsahuje adresář example a sadu __tests__."
+      "en": "Built-in logical and math functions, extensible through the context.",
+      "cs": "Vestavěné logické a matematické funkce, rozšiřitelné přes kontext."
+    },
+    {
+      "en": "Grammar loaded at build time through the owner's peg-loader.",
+      "cs": "Gramatika se načítá při buildu přes vlastní peg-loader."
+    },
+    {
+      "en": "Jest tests plus a one-million-iteration micro-benchmark.",
+      "cs": "Testy v Jestu a mikrobenchmark s milionem iterací."
     }
   ],
   "stack": [
     "JavaScript",
     "PEG.js",
     "Babel",
-    "Webpack"
+    "Webpack",
+    "Jest",
+    "ESLint"
   ],
   "architecture": {
-    "mermaid": "flowchart LR\n  A[Grammar] --> B[PEG.js compiler]\n  B --> C[Parser module]\n  C --> D[Input text]\n  D --> E[Parse tree]",
+    "mermaid": "flowchart LR\n  G[grammar.peg] --> PL[peg-loader]\n  PL --> W[Webpack and Babel]\n  W --> L[dist lib.js]\n  L --> E[Evaluator]\n  X[Expression] --> E\n  C[Context variables and functions] --> E\n  E --> F[Compiled closure]\n  F --> R[Result]",
     "caption": {
-      "en": "A PEG grammar compiles to a parser module that turns input text into a parse tree.",
-      "cs": "PEG gramatika se kompiluje do parserového modulu, který mění vstupní text na syntaktický strom."
+      "en": "The grammar is bundled through peg-loader; the Evaluator compiles an expression into a closure and runs it against a context.",
+      "cs": "Gramatika se zabalí přes peg-loader; Evaluator zkompiluje výraz na closure a spustí ji nad kontextem."
     }
   },
   "related": [
     "peg-loader"
   ],
-  "confidence": "medium"
+  "confidence": "high"
 }

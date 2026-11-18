@@ -50,22 +50,20 @@
   "stack": [
     "Zola",
     "Markdown",
-    "Sass",
     "GitHub Actions",
     "GitHub Pages",
     "Dev Containers"
   ],
   "architecture": {
-    "mermaid": "flowchart LR\n  A[Markdown content] --> B[Zola build]\n  T[Book theme submodule] --> B\n  B --> C[Static HTML]\n  C --> D[GitHub Actions]\n  D --> E[GitHub Pages]",
+    "mermaid": "flowchart LR\n  P[Push to main] --> D[GitHub Actions]\n  D --> B[Zola build]\n  A[Markdown content] --> B\n  T[Book theme submodule] --> B\n  B --> C[Static HTML]\n  C --> E[GitHub Pages]",
     "caption": {
-      "en": "Markdown chapters rendered by Zola and published by CI.",
-      "cs": "Kapitoly v Markdownu renderuje Zola a publikuje CI."
+      "en": "A push to main makes the workflow build the Markdown chapters with Zola and publish them.",
+      "cs": "Push do main spustí workflow, které kapitoly v Markdownu sestaví Zolou a publikuje."
     }
   },
   "related": [
     "prismatic",
-    "korczis.github.io",
-    "prismatic-majordomus"
+    "korczis.github.io"
   ],
   "confidence": "medium"
 }

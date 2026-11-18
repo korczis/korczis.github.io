@@ -12,31 +12,40 @@
       "Makefile",
       "lib/Microcrawler.ex",
       "lib/microcrawler/worker/coordinator.ex",
-      "tree (recursive)"
+      "tree (recursive)",
+      "lib/microcrawler/supervisor/event.ex",
+      "lib/microcrawler/supervisor/coordinator.ex",
+      "lib/microcrawler/supervisor/collector.ex",
+      "lib/microcrawler/supervisor/amqp_websocket_bridge.ex",
+      "lib/microcrawler/client/amqp.ex",
+      "lib/microcrawler/client/couchbase.ex",
+      "lib/microcrawler/client/elasticsearch.ex",
+      "lib/microcrawler/downloader/downloader.ex",
+      ".travis.yml"
     ]
   },
   "provenance": "inferred",
   "kind": "service",
   "summary": {
-    "en": "A start of a Microcrawler reimplementation in Elixir as an OTP application. It defines supervisors and workers for a coordinator, a collector, an event manager and an AMQP to WebSocket bridge, plus clients for RabbitMQ, Couchbase and Elasticsearch.",
-    "cs": "Začátek přepisu Microcrawleru do Elixiru jako OTP aplikace. Definuje supervisory a workery pro koordinátor, collector, správce událostí a most z AMQP na WebSocket a k tomu klienty pro RabbitMQ, Couchbase a Elasticsearch."
+    "en": "A start of a Microcrawler reimplementation in Elixir as an OTP application. It wires a supervision tree for a coordinator, a collector and an AMQP to WebSocket bridge, with client modules for AMQP, Couchbase and Elasticsearch; the workers and clients are still stubs.",
+    "cs": "Začátek přepisu Microcrawleru do Elixiru jako OTP aplikace. Zapojuje strom dohledu pro koordinátor, collector a most z AMQP na WebSocket s klientskými moduly pro AMQP, Couchbase a Elasticsearch; workery i klienti jsou zatím jen kostry."
   },
   "problem": {
-    "en": "The Node.js crawler ran workers as separate processes coordinated only through the queue; supervision, restarts and live progress reporting had to be handled outside the code.",
-    "cs": "Crawler v Node.js běžel jako samostatné procesy koordinované jen přes frontu; dohled, restarty a průběžné hlášení stavu se musely řešit mimo kód."
+    "en": "Microcrawler existed as a Node.js tool; this repository starts it again in Elixir, where an OTP supervision tree can own the coordinator, collector and bridge processes and restart them.",
+    "cs": "Microcrawler existoval jako nástroj v Node.js; tento repozitář ho začíná znovu v Elixiru, kde procesy koordinátoru, collectoru a mostu může vlastnit a restartovat OTP strom dohledu."
   },
   "solution": {
-    "en": "An OTP supervision tree starts an event supervisor, with dedicated supervisors for the coordinator, collector and AMQP to WebSocket bridge. Dependencies cover AMQP, Couchbase (cberl), Elasticsearch (tirexs), HTML parsing (Floki), HTTP (HTTPoison), running JavaScript processors (execjs) and Phoenix for the WebSocket side; releases are built with Distillery. Several workers, such as the coordinator, are still bare GenServer stubs.",
-    "cs": "OTP strom dohledu spouští supervisor událostí a samostatné supervisory pro koordinátor, collector a most z AMQP na WebSocket. Závislosti pokrývají AMQP, Couchbase (cberl), Elasticsearch (tirexs), parsování HTML (Floki), HTTP (HTTPoison), spouštění JavaScriptových procesorů (execjs) a Phoenix pro stranu WebSocketů; release staví Distillery. Některé workery, třeba koordinátor, jsou zatím jen holé GenServery."
+    "en": "The application starts an event supervisor that reads ~/.microcrawler/config.json and then starts one supervisor each for the coordinator, the collector and the AMQP to WebSocket bridge, each holding its worker and the client processes it needs. The workers are bare GenServers, the clients are empty GenEvent processes with the AMQP connection code commented out, and the downloader is an HTTPoison.Base module. mix.exs also declares Floki, execjs, Phoenix, tirexs, cberl and Distillery, which no code uses yet.",
+    "cs": "Aplikace spustí supervisor událostí, který načte ~/.microcrawler/config.json a pak spustí po jednom supervisoru pro koordinátor, collector a most z AMQP na WebSocket; každý drží svůj worker a klientské procesy, které potřebuje. Workery jsou holé GenServery, klienti prázdné GenEvent procesy s kódem pro připojení k AMQP zakomentovaným a downloader je modul HTTPoison.Base. mix.exs navíc deklaruje Floki, execjs, Phoenix, tirexs, cberl a Distillery, které zatím žádný kód nepoužívá."
   },
   "highlights": [
     {
-      "en": "execjs dependency to reuse the JavaScript site processors from Elixir.",
-      "cs": "Závislost execjs pro použití JavaScriptových procesorů webů z Elixiru."
+      "en": "Supervision tree as wired: event supervisor over coordinator, collector and bridge supervisors.",
+      "cs": "Strom dohledu tak, jak je zapojený: supervisor událostí nad supervisory koordinátoru, collectoru a mostu."
     },
     {
-      "en": "AMQP to WebSocket bridge as its own supervised component.",
-      "cs": "Most z AMQP na WebSocket jako samostatná dohlížená komponenta."
+      "en": "execjs among the dependencies, pointing at reuse of the JavaScript site processors; nothing calls it yet.",
+      "cs": "Mezi závislostmi je execjs, což míří na použití JavaScriptových procesorů webů; zatím ho nic nevolá."
     },
     {
       "en": "Dialyzer and ExDoc set up, Travis CI configured.",
@@ -46,19 +55,17 @@
   "stack": [
     "Elixir",
     "OTP",
-    "Phoenix",
     "RabbitMQ",
     "Couchbase",
     "Elasticsearch",
-    "Floki",
     "HTTPoison",
-    "Distillery"
+    "Poison"
   ],
   "architecture": {
-    "mermaid": "flowchart TD\n  A[Microcrawler app] --> E[Event supervisor]\n  E --> C[Coordinator]\n  E --> CO[Collector]\n  E --> BR[AMQP WebSocket bridge]\n  C --> Q[RabbitMQ]\n  CO --> CB[Couchbase]\n  CO --> ES[Elasticsearch]\n  BR --> WS[Phoenix sockets]\n  C --> DL[Downloader]",
+    "mermaid": "flowchart TD\n  A[Microcrawler app] --> E[Event supervisor]\n  E --> CFG[config.json]\n  E --> C[Coordinator supervisor]\n  E --> CO[Collector supervisor]\n  E --> BR[AMQP WebSocket bridge supervisor]\n  C --> Q[AMQP client]\n  C --> CB[Couchbase client]\n  CO --> Q\n  CO --> CB\n  CO --> ES[Elasticsearch client]\n  BR --> Q\n  BR --> CB",
     "caption": {
-      "en": "Planned OTP supervision tree and its external services.",
-      "cs": "Plánovaný OTP strom dohledu a jeho externí služby."
+      "en": "The supervision tree as wired; its workers and clients are still stubs.",
+      "cs": "Strom dohledu tak, jak je zapojený; jeho workery a klienti jsou zatím kostry."
     }
   },
   "related": [
@@ -68,5 +75,5 @@
     "microcrawler-ng",
     "docks"
   ],
-  "confidence": "medium"
+  "confidence": "low"
 }

@@ -18,16 +18,16 @@
   "provenance": "inferred",
   "kind": "config",
   "summary": {
-    "en": "Developer scripts for running several local peers of a multi-chain mining node, a rendezvous server, a libp2p mesh and Prometheus with Grafana.",
-    "cs": "Vývojářské skripty pro spuštění několika lokálních peerů multi-chain těžebního uzlu, rendezvous serveru, libp2p mesh a Promethea s Grafanou."
+    "en": "Developer scripts for running several local peers of a blockchain mining node, a rendezvous server, the node's mesh mode, Prometheus and Grafana.",
+    "cs": "Vývojářské skripty pro spuštění několika lokálních peerů těžebního blockchainového uzlu, rendezvous serveru, režimu mesh uzlu, Promethea a Grafany."
   },
   "problem": {
     "en": "Testing peer discovery and the DHT needs several node instances with separate ports and data directories, plus metrics to see what they do.",
     "cs": "Testování hledání peerů a DHT vyžaduje několik instancí uzlu s oddělenými porty a datovými adresáři a metriky, ve kterých je vidět, co dělají."
   },
   "solution": {
-    "en": "Each run-peerN.sh sets its own data directory, gRPC and UI ports and debug namespaces, starts the node CLI and tees logs to a file. Further scripts start the rendezvous server and the mesh mode, and docker-compose plus prometheus.yml bring up Grafana and Prometheus for scraping.",
-    "cs": "Každý run-peerN.sh nastaví vlastní datový adresář, porty pro gRPC a UI a debug jmenné prostory, spustí CLI uzlu a logy zapisuje přes tee do souboru. Další skripty spouštějí rendezvous server a režim mesh; docker-compose s prometheus.yml zvednou Grafanu a Prometheus pro sběr metrik."
+    "en": "Each run-peerN.sh sets its own data directory, gRPC and UI ports, miner key and debug namespaces, starts the node CLI and tees logs to a file. Further scripts start the rendezvous server and the mesh mode with libp2p DHT debugging, run a local Prometheus with prometheus.yml scraping the rendezvous and node ports, and start Grafana through Homebrew; the docker-compose file defines only a Grafana container.",
+    "cs": "Každý run-peerN.sh nastaví vlastní datový adresář, porty pro gRPC a UI, klíč těžaře a debug jmenné prostory, spustí CLI uzlu a logy zapisuje přes tee do souboru. Další skripty spouštějí rendezvous server a režim mesh s laděním libp2p DHT, lokální Prometheus, který podle prometheus.yml sbírá metriky z portů rendezvous serveru a uzlu, a Grafanu přes Homebrew; docker-compose definuje jen kontejner Grafany."
   },
   "highlights": [
     {
@@ -35,8 +35,8 @@
       "cs": "Lokální síť tří peerů s odděleným stavem"
     },
     {
-      "en": "libp2p DHT debug logging switched on per script",
-      "cs": "Ladicí logování libp2p DHT zapínané per skript"
+      "en": "libp2p DHT debug logging switched on in the mesh scripts",
+      "cs": "Ladicí logování libp2p DHT zapnuté ve skriptech pro mesh"
     },
     {
       "en": "Prometheus and Grafana for node metrics",
@@ -49,10 +49,10 @@
     "Prometheus",
     "Grafana",
     "libp2p",
-    "Node.js"
+    "Homebrew"
   ],
   "architecture": {
-    "mermaid": "flowchart LR\n  Rdv[rendezvous] --> P1[peer 1]\n  Rdv --> P2[peer 2]\n  Rdv --> P3[peer 3]\n  P1 --> Mesh[libp2p mesh]\n  P2 --> Mesh\n  P3 --> Mesh\n  Mesh --> Prom[Prometheus]\n  Prom --> Graf[Grafana]",
+    "mermaid": "flowchart LR\n  P1[peer 1] --> Rdv[rendezvous server]\n  P2[peer 2] --> Rdv\n  P3[peer 3] --> Rdv\n  Mesh[mesh mode] --> Rdv\n  Prom[Prometheus] --> Rdv\n  Prom --> Node[node metrics port]\n  Graf[Grafana] --> Prom",
     "caption": {
       "en": "Local multi-peer test bench with metrics.",
       "cs": "Lokální testovací sestava více peerů s metrikami."

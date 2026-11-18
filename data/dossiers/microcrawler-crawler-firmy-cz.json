@@ -26,13 +26,13 @@
     "cs": "Workery Microcrawleru jsou obecné: stahují stránky a potřebují logiku pro konkrétní web, aby věděly, které odkazy sledovat a jaká pole vytáhnout."
   },
   "solution": {
-    "en": "Requests use the _escaped_fragment_ AJAX crawling scheme to get server-rendered HTML. The details processor reads schema.org microdata (telephone, street address, postal code, locality, description, logo) plus the company name, website, e-mail links and the category trail, keeping the first category as the primary one.",
-    "cs": "Požadavky používají schéma _escaped_fragment_ pro AJAX crawling, aby server vrátil vyrenderované HTML. Procesor details čte microdata podle schema.org (telefon, ulice, PSČ, obec, popis, logo) a k tomu název firmy, web, e-mailové odkazy a drobečkovou navigaci kategorií, z níž první bere jako hlavní."
+    "en": "Requests use the _escaped_fragment_ AJAX crawling scheme to get server-rendered HTML. The details processor reads schema.org microdata (telephone, street address, postal code, locality, description, logo) and, from page selectors, the company name, website, e-mail links and the category list, keeping the first category as the primary one.",
+    "cs": "Požadavky používají schéma _escaped_fragment_ pro AJAX crawling, aby server vrátil vyrenderované HTML. Procesor details čte microdata podle schema.org (telefon, ulice, PSČ, obec, popis, logo) a z běžných selektorů stránky název firmy, web, e-mailové odkazy a seznam kategorií, z nichž první bere jako hlavní."
   },
   "highlights": [
     {
-      "en": "Extraction keyed on schema.org itemprop attributes rather than layout classes.",
-      "cs": "Vytěžování stojí na atributech itemprop ze schema.org, ne na třídách layoutu."
+      "en": "Contact fields keyed on schema.org itemprop attributes; name, website, e-mails and categories on page selectors.",
+      "cs": "Kontaktní pole stojí na atributech itemprop ze schema.org; název, web, e-maily a kategorie na selektorech stránky."
     },
     {
       "en": "Structured address object and multiple e-mails per company.",
@@ -46,7 +46,7 @@
   "stack": [
     "JavaScript",
     "Node.js",
-    "Cheerio"
+    "npm"
   ],
   "architecture": {
     "mermaid": "flowchart LR\n  W[Worker] --> I[index]\n  I --> L[listing]\n  L --> L\n  L --> D[details]\n  D --> M[schema.org microdata]\n  M --> R[company record]",

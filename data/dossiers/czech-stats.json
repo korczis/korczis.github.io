@@ -44,10 +44,10 @@
     "webpack"
   ],
   "architecture": {
-    "mermaid": "flowchart LR\n  XLS[Voting preference spreadsheet] --> CORE[CzechStats core]\n  CORE --> WEB[Phoenix web app]\n  WEB --> PAGE[Page controller]\n  PAGE --> USER[Browser]",
+    "mermaid": "flowchart LR\n  USER[Browser] --> ROUTER[Phoenix router]\n  ROUTER --> PAGE[Page controller]\n  PAGE --> TPL[Default index template]\n  CORE[Empty CzechStats core]\n  XLS[Voting preference spreadsheet] -. not loaded .-> CORE",
     "caption": {
-      "en": "Intended flow from the spreadsheet to a web page; only the scaffold is implemented.",
-      "cs": "Zamýšlený tok od tabulky k webové stránce; implementovaná je jen kostra."
+      "en": "Only the generated web path exists; the spreadsheet is not loaded anywhere.",
+      "cs": "Existuje jen vygenerovaná webová cesta; tabulka se nikde nenačítá."
     }
   },
   "related": [

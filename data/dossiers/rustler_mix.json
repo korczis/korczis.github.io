@@ -8,48 +8,63 @@
     "read_at": "2026-11-18",
     "read": [
       "README.md",
-      "mix.exs (tree)"
+      "mix.exs (tree)",
+      "lib/task_compile.ex",
+      "lib/task_new.ex",
+      "lib/rustler.ex",
+      "lib/rustler/compiler/rustup.ex",
+      "guides/Basics.md",
+      "tree"
     ]
   },
   "provenance": "inferred",
   "kind": "library",
   "summary": {
-    "en": "An Elixir Mix project that packages tooling around Rustler, the bridge for writing native Elixir NIFs in Rust. The tree carries a Mix project (mix.exs, lib, test), generator guides and a priv/src layout for the Rust side.",
-    "cs": "Elixir Mix projekt obalující nástroje kolem Rustleru, mostu pro psaní nativních Elixir NIFů v Rustu. Strom obsahuje Mix projekt (mix.exs, lib, test), generátorové guides a priv/src rozvržení pro rustovou stranu."
+    "en": "A copy of the Rustler project's Mix package (version 0.5.0, described as Mix compiler and runtime helpers for Rustler; mix.exs points to the upstream repository). It adds a compile.rustler Mix compiler, a mix rustler.new generator and a small TOML parser for reading Cargo.toml.",
+    "cs": "Kopie Mix balíčku projektu Rustler (verze 0.5.0, popsaná jako kompilátor pro Mix a běhové pomocníky pro Rustler; mix.exs odkazuje na upstream repozitář). Přidává kompilátor compile.rustler pro Mix, generátor mix rustler.new a malý parser TOML pro čtení Cargo.toml."
   },
   "problem": {
     "en": "Calling into Rust from Elixir means setting up a NIF crate, a build step and the right directory layout by hand, which is error-prone and repetitive for each new project.",
     "cs": "Volání Rustu z Elixiru vyžaduje ručně připravit NIF crate, build krok a správné rozvržení adresářů, což je pro každý nový projekt zdrojem chyb a opakování."
   },
   "solution": {
-    "en": "The project provides the Mix-side scaffolding and guides so a Rust NIF crate slots into an Elixir application with a standard config, lib and priv/src structure. The README is an early stub still carrying placeholder install text.",
-    "cs": "Projekt dodává scaffolding na straně Mixu a guides, takže Rust NIF crate zapadne do Elixir aplikace se standardní strukturou config, lib a priv/src. README je raná kostra ještě s výplňovým instalačním textem."
+    "en": "compile.rustler reads the rustler_crates list from the project's mix.exs, builds each crate with cargo rustc (the system cargo, a rustup toolchain or a given binary, with features and debug or release mode) and copies the library into priv/rustler, where Rustler.load_nif loads it. mix rustler.new renders EEx templates for Cargo.toml, build.rs and src/lib.rs. A leex lexer and yecc parser read the crate's library name from Cargo.toml. The README is still the generated placeholder.",
+    "cs": "compile.rustler načte seznam rustler_crates z mix.exs projektu, každý crate sestaví přes cargo rustc (systémový cargo, toolchain z rustupu nebo zadanou binárku, s features a režimem debug nebo release) a knihovnu zkopíruje do priv/rustler, odkud ji načte Rustler.load_nif. mix rustler.new vyrenderuje EEx šablony pro Cargo.toml, build.rs a src/lib.rs. Lexer v leex a parser v yecc čtou z Cargo.toml název knihovny crate. README je pořád vygenerovaná výplň."
   },
   "highlights": [
     {
-      "en": "Mix project with lib, test, config and a priv/src tree for the Rust crate.",
-      "cs": "Mix projekt s lib, test, config a priv/src stromem pro Rust crate."
+      "en": "Mix compiler that builds every configured NIF crate as part of mix compile.",
+      "cs": "Kompilátor pro Mix, který při mix compile sestaví každý nakonfigurovaný NIF crate."
     },
     {
-      "en": "Ships generator guides for wiring a NIF into an Elixir app.",
-      "cs": "Dodává generátorové guides pro zapojení NIFu do Elixir aplikace."
+      "en": "mix rustler.new generator from EEx crate templates.",
+      "cs": "Generátor mix rustler.new z EEx šablon crate."
     },
     {
-      "en": "README is an unfinished stub, so the public API is unclear.",
-      "cs": "README je nedokončená kostra, veřejné API je proto nejasné."
+      "en": "TOML lexer and parser written with leex and yecc, with a test.",
+      "cs": "Lexer a parser TOML napsaný v leex a yecc, včetně testu."
+    },
+    {
+      "en": "One guide (Basics.md) documents crate configuration and NIF loading; the README is a placeholder.",
+      "cs": "Jediný průvodce (Basics.md) popisuje konfiguraci crate a načítání NIF; README je výplň."
     }
   ],
   "stack": [
     "Elixir",
     "Mix",
     "Rust",
-    "Rustler"
+    "Rustler",
+    "Cargo",
+    "rustup",
+    "leex",
+    "yecc",
+    "EEx"
   ],
   "architecture": {
-    "mermaid": "flowchart LR\n  A[Elixir app] --> B[Mix tooling]\n  B --> C[NIF crate scaffold]\n  C --> D[Rust source]\n  D --> E[Compiled NIF]\n  E --> A",
+    "mermaid": "flowchart LR\n  G[mix rustler.new] --> TM[EEx crate templates]\n  TM --> NC[Native crate]\n  CFG[rustler_crates in mix.exs] --> B[compile.rustler]\n  NC --> B\n  B --> T[TOML parser reads Cargo.toml]\n  B --> C[cargo rustc]\n  C --> D[NIF library in priv rustler]\n  D --> L[Rustler.load_nif]",
     "caption": {
-      "en": "Mix tooling scaffolds a Rust NIF crate that compiles back into the Elixir application.",
-      "cs": "Mix nástroje vygenerují Rust NIF crate, který se zkompiluje zpět do Elixir aplikace."
+      "en": "The generator scaffolds a crate; the Mix compiler builds it with cargo and the NIF is loaded from priv.",
+      "cs": "Generátor připraví crate; kompilátor pro Mix ho sestaví cargem a NIF se načte z priv."
     }
   },
   "related": [

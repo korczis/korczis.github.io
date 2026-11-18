@@ -23,12 +23,12 @@
     "cs": "Elixirová knihovna pro Couchbase, která přes Rustler NIF volá rustového klienta gauc; na Hexu vychází jako gauc."
   },
   "problem": {
-    "en": "Elixir had no convenient Couchbase client, while a Rust binding over libcouchbase already existed.",
-    "cs": "Elixir neměl pohodlného klienta pro Couchbase, zatímco rustový binding nad libcouchbase už existoval."
+    "en": "The README's goal is an Elixir- and Erlang-friendly way to access Couchbase, while a Rust wrapper of Couchbase already existed.",
+    "cs": "Cílem podle README je přístup ke Couchbase přívětivý pro Elixir a Erlang, přičemž rustový wrapper Couchbase už existoval."
   },
   "solution": {
-    "en": "A Rust crate in native/gauc wraps the gauc client, keeps connected clients in a mutex-guarded map keyed by a handle, and exposes connect, get and upsert as NIFs. On the Elixir side Gauc.Native loads the NIF, Gauc.Client offers the direct API and Gauc.Worker runs connections in a poolboy pool configured from the application environment.",
-    "cs": "Rustový crate v native/gauc obaluje klienta gauc, připojené klienty drží v mapě pod mutexem s klíčem podle handle a vystavuje connect, get a upsert jako NIFy. Na straně Elixiru Gauc.Native načte NIF, Gauc.Client nabízí přímé API a Gauc.Worker provozuje spojení v poolu poolboy nastaveném z konfigurace aplikace."
+    "en": "A Rust crate in native/gauc wraps the gauc client, keeps connected clients in a mutex-guarded map keyed by a handle, and exposes connect, disconnect, clients and the key-value operations (add, append, get, prepend, remove, replace, set, upsert) as NIFs. On the Elixir side Gauc.Native loads the NIF, Gauc.Client offers the direct API and Gauc.Worker runs connections in a poolboy pool configured from the application environment.",
+    "cs": "Rustový crate v native/gauc obaluje klienta gauc, připojené klienty drží v mapě pod mutexem s klíčem podle handle a jako NIFy vystavuje connect, disconnect, clients a key-value operace (add, append, get, prepend, remove, replace, set, upsert). Na straně Elixiru Gauc.Native načte NIF, Gauc.Client nabízí přímé API a Gauc.Worker provozuje spojení v poolu poolboy nastaveném z konfigurace aplikace."
   },
   "highlights": [
     {
@@ -44,8 +44,8 @@
       "cs": "V toolchainu Benchee, Credo a Dialyzer"
     },
     {
-      "en": "TODO lists opaque handles, an async API and view queries",
-      "cs": "TODO zmiňuje neprůhledné handly, asynchronní API a dotazy na view"
+      "en": "TODO lists opaque handles, an async API and a documents API",
+      "cs": "TODO zmiňuje neprůhledné handly, asynchronní API a API pro dokumenty"
     }
   ],
   "stack": [

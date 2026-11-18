@@ -22,8 +22,8 @@
     "cs": "Nováček potřebuje vedenou lokální cestu ke kontejnerům a orchestraci."
   },
   "solution": {
-    "en": "The README lists a git account and git as prerequisites and links VirtualBox and Vagrant for local VMs. The content itself is marked as coming soon.",
-    "cs": "README uvádí jako prerekvizitu git a účet na gitové platformě a odkazuje na VirtualBox a Vagrant pro lokální VM. Samotný obsah je označen jako připravovaný."
+    "en": "The README lists a GitHub account and an installed git as prerequisites and links VirtualBox and Vagrant downloads. The content itself is marked as coming soon.",
+    "cs": "README uvádí jako prerekvizity účet na GitHubu a nainstalovaný git a odkazuje na stažení VirtualBoxu a Vagrantu. Samotný obsah je označen jako připravovaný."
   },
   "highlights": [
     {

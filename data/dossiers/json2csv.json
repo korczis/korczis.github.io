@@ -16,16 +16,16 @@
   "provenance": "inferred",
   "kind": "cli",
   "summary": {
-    "en": "A Ruby command-line tool that converts JSON into CSV, published as a gem. It flattens nested JSON objects into dotted column headers and supports a configurable delimiter and a root path to select the array or object to export.",
-    "cs": "Ruby nástroj příkazové řádky, který převádí JSON na CSV, publikovaný jako gem. Zplošťuje vnořené JSON objekty do tečkovaných hlaviček sloupců a podporuje nastavitelný oddělovač a root cestu pro výběr pole nebo objektu k exportu."
+    "en": "A Ruby command-line tool that converts JSON into CSV, packaged as a gem. It takes a JSON object of records, writes each key as an id column and flattens nested objects into dotted column headers, with a configurable delimiter and a root key to select the object to export.",
+    "cs": "Ruby nástroj příkazové řádky, který převádí JSON na CSV, zabalený jako gem. Bere JSON objekt se záznamy, každý klíč zapíše jako sloupec id a vnořené objekty zploští do tečkovaných hlaviček sloupců; oddělovač lze nastavit a root klíčem vybrat objekt k exportu."
   },
   "problem": {
     "en": "Nested JSON does not map directly onto a flat CSV, so converting it for spreadsheets or SQL import needs consistent flattening of keys.",
     "cs": "Vnořený JSON se nemapuje přímo na ploché CSV, takže jeho převod pro tabulky nebo SQL import potřebuje konzistentní zplošťování klíčů."
   },
   "solution": {
-    "en": "The convert command reads a JSON file and writes a CSV where nested keys become dotted headers, with options for delimiter and root. It is the inverse counterpart of the csv2psql-style flattening convention.",
-    "cs": "Příkaz convert načte JSON soubor a zapíše CSV, kde se vnořené klíče stanou tečkovanými hlavičkami, s volbami pro oddělovač a root. Je obrácenou obdobou zplošťovací konvence ve stylu csv2psql."
+    "en": "The convert command reads a JSON file, optionally descends into a root key, derives the header from the first record's nested keys and writes <file>.csv, where nested keys become dotted headers and newlines are stripped from values.",
+    "cs": "Příkaz convert načte JSON soubor, volitelně sestoupí do root klíče, odvodí hlavičku z vnořených klíčů prvního záznamu a zapíše <soubor>.csv, kde se vnořené klíče stanou tečkovanými hlavičkami a z hodnot se odstraní konce řádků."
   },
   "highlights": [
     {
@@ -33,12 +33,12 @@
       "cs": "Zplošťuje vnořené JSON klíče na tečkované CSV hlavičky."
     },
     {
-      "en": "Configurable delimiter and a root path to pick the export node.",
-      "cs": "Nastavitelný oddělovač a root cesta pro výběr exportního uzlu."
+      "en": "Configurable delimiter and a root key to pick the export node.",
+      "cs": "Nastavitelný oddělovač a root klíč pro výběr exportního uzlu."
     },
     {
-      "en": "Published as a gem with a spec suite.",
-      "cs": "Publikováno jako gem se sadou spec testů."
+      "en": "Gem with a GLI command line and Travis CI; the spec only checks that the version is defined.",
+      "cs": "Gem s příkazovou řádkou v GLI a Travis CI; spec jen ověřuje, že je definovaná verze."
     }
   ],
   "stack": [
@@ -46,7 +46,7 @@
     "RubyGems"
   ],
   "architecture": {
-    "mermaid": "flowchart LR\n  A[JSON file] --> B[Parse]\n  B --> C[Flatten keys]\n  C --> D[Dotted headers]\n  D --> E[CSV output]",
+    "mermaid": "flowchart LR\n  A[JSON file] --> B[Parse]\n  B --> R[Root key]\n  R --> C[Flatten keys]\n  C --> D[Dotted headers]\n  D --> E[CSV output]",
     "caption": {
       "en": "JSON is parsed and flattened into dotted headers written out as CSV.",
       "cs": "JSON se naparsuje a zploští do tečkovaných hlaviček zapsaných jako CSV."

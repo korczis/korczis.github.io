@@ -23,8 +23,8 @@
     "cs": "CLI crawleru má umět zpracovat jakýkoli podporovaný web, aniž by uživatel musel instalovat balíček každého webu zvlášť."
   },
   "solution": {
-    "en": "microcrawler-js depends on this package, and the worker discovers processors from the installed site packages. Version 0.0.19 lists ten site packages, each pinned to an exact version.",
-    "cs": "Na tomto balíčku závisí microcrawler-js a worker si procesory najde v nainstalovaných balíčcích webů. Verze 0.0.19 uvádí deset balíčků, každý s přesně danou verzí."
+    "en": "package.json (version 0.0.19, described as referencing all crawlers) lists ten site packages, each pinned to an exact version. The declared main file index.js is not in the repository.",
+    "cs": "package.json (verze 0.0.19, popsaný jako odkaz na všechny crawlery) uvádí deset balíčků webů, každý s přesně danou verzí. Deklarovaný hlavní soubor index.js v repozitáři není."
   },
   "highlights": [
     {
@@ -41,7 +41,7 @@
     "npm"
   ],
   "architecture": {
-    "mermaid": "flowchart LR\n  CLI[microcrawler CLI] --> ALL[crawler-all]\n  ALL --> A[site package A]\n  ALL --> B[site package B]\n  ALL --> C[more site packages]\n  A --> BASE[crawler-base]\n  B --> BASE",
+    "mermaid": "flowchart LR\n  NPM[npm install] --> ALL[crawler-all]\n  ALL --> A[site package A]\n  ALL --> B[site package B]\n  ALL --> C[more site packages]\n  A --> BASE[crawler-base]\n  B --> BASE",
     "caption": {
       "en": "The meta package fans out to the per-site packages.",
       "cs": "Meta balíček se větví do balíčků jednotlivých webů."

@@ -27,8 +27,12 @@
   },
   "highlights": [
     {
-      "en": "One image file, no code.",
-      "cs": "Jeden obrázek, žádný kód."
+      "en": "One image file of about 1.4 MB, no code.",
+      "cs": "Jeden obrázek o velikosti zhruba 1,4 MB, žádný kód."
+    },
+    {
+      "en": "The README is a single line: \"My Photos\".",
+      "cs": "README má jediný řádek: „My Photos“."
     }
   ],
   "stack": [

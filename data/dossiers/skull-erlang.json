@@ -9,6 +9,8 @@
     "read": [
       "README.md",
       "Makefile",
+      ".travis.yml",
+      "src/hello_world.erl",
       "tree"
     ]
   },
@@ -23,13 +25,17 @@
     "cs": "Vyhradit místo pro Erlang ve sbírce podle jazyků, a to s funkčním buildem."
   },
   "solution": {
-    "en": "make test runs erlc on src/hello_world.erl and calls it from a headless erl shell. Travis CI runs the same target.",
-    "cs": "make test přeloží src/hello_world.erl přes erlc a zavolá ho z erl bez interaktivního shellu. Travis CI spouští totéž."
+    "en": "make test runs erlc on src/hello_world.erl and calls it from a headless erl shell. A Travis CI configuration lists two OTP releases (R16B02 and R15B03) but no script of its own.",
+    "cs": "make test přeloží src/hello_world.erl přes erlc a zavolá ho z erl bez interaktivního shellu. Konfigurace Travis CI uvádí dvě verze OTP (R16B02 a R15B03), vlastní skript ale nemá."
   },
   "highlights": [
     {
       "en": "Minimal: one Erlang source file.",
       "cs": "Minimální: jeden zdrojový soubor v Erlangu."
+    },
+    {
+      "en": "make test compiles the module and runs it in a headless erl shell.",
+      "cs": "make test modul přeloží a spustí v erl bez interaktivního shellu."
     }
   ],
   "stack": [

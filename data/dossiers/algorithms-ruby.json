@@ -21,12 +21,12 @@
     "cs": "Kostra Ruby gemu pro základní algoritmy s nativním rozšířením v C++. Rozšíření přes Ruby C API registruje několik testovacích metod, například faktoriál."
   },
   "problem": {
-    "en": "Pure Ruby is slow for numeric and algorithmic work; the repository explores moving such code into a compiled extension while keeping a Ruby interface.",
-    "cs": "Čisté Ruby je pro numerickou a algoritmickou práci pomalé; repozitář zkoumá přesun takového kódu do kompilovaného rozšíření při zachování Ruby rozhraní."
+    "en": "The gem describes itself as fundamental algorithms in Ruby; the code explores pairing plain Ruby modules with a compiled C++ extension behind one Ruby interface.",
+    "cs": "Gem se popisuje jako základní algoritmy v Ruby; kód zkouší spojit obyčejné Ruby moduly s kompilovaným rozšířením v C++ za jedním Ruby rozhraním."
   },
   "solution": {
-    "en": "The gemspec declares ext/algorithms/extconf.rb as a native extension built with rake-compiler, with ffi and pry as runtime dependencies. lib/ autoloads Ruby modules for math and increment helpers, and bin/ provides an interactive console. The README usage section is still a TODO.",
-    "cs": "Gemspec deklaruje ext/algorithms/extconf.rb jako nativní rozšíření sestavované přes rake-compiler, s ffi a pry jako runtime závislostmi. lib/ automaticky načítá Ruby moduly pro math a increment a bin/ nabízí interaktivní konzoli. Sekce použití v README je stále TODO."
+    "en": "The gemspec declares ext/algorithms/extconf.rb (mkmf) as a native extension, the Rakefile builds it with rake-compiler's ExtensionTask, and ffi and pry are runtime dependencies. lib/ requires every Ruby file of its directory (math and increment helpers) plus the compiled extension, and bin/ starts a Pry console. The README usage section is still a TODO.",
+    "cs": "Gemspec deklaruje ext/algorithms/extconf.rb (mkmf) jako nativní rozšíření, Rakefile ho sestavuje přes ExtensionTask z rake-compileru a ffi a pry jsou runtime závislosti. lib/ načítá všechny Ruby soubory svého adresáře (pomocné funkce math a increment) i zkompilované rozšíření a bin/ spouští konzoli Pry. Sekce použití v README je stále TODO."
   },
   "highlights": [
     {
@@ -38,8 +38,8 @@
       "cs": "Registrace metod přes Ruby C API včetně faktoriálu"
     },
     {
-      "en": "Interactive console executable for experiments",
-      "cs": "Interaktivní konzole pro experimenty"
+      "en": "Interactive Pry console executable for experiments",
+      "cs": "Interaktivní konzole Pry pro experimenty"
     }
   ],
   "stack": [

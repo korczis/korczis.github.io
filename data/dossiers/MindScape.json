@@ -17,12 +17,12 @@
     "cs": "Koncept platformy pro duševní zdraví, která by spojila diagnostiku podporovanou strojovým učením, terapii ve virtuální realitě a analytické nástroje pro terapeuty. Repozitář obsahuje jen README; žádný kód, model ani data v něm nejsou."
   },
   "problem": {
-    "en": "The README frames the problem as diagnosis and treatment planning that is hard to personalise and hard for clinicians to coordinate on.",
-    "cs": "README popisuje problém jako diagnostiku a plánování léčby, které se špatně přizpůsobují pacientovi a ve kterých se terapeuti obtížně koordinují."
+    "en": "The README states no problem directly; it implies that diagnosis and therapy should be more personalised and that clinicians need better analysis and collaboration tools.",
+    "cs": "README problém přímo nepojmenovává; naznačuje, že diagnostika a terapie by měly být víc přizpůsobené pacientovi a že terapeuti potřebují lepší nástroje pro analýzu a spolupráci."
   },
   "solution": {
-    "en": "Proposed, not built: Rust for model and core logic, an Elixir/Phoenix LiveView backend and UI, and Prolog for rule-based analysis, with dashboards and collaboration features for clinicians. Claims in the README about accuracy and training data are aspirations with nothing in the repository behind them.",
-    "cs": "Navrženo, nepostaveno: Rust pro modely a jádro, backend a UI v Elixiru s Phoenix LiveView a Prolog pro pravidlovou analýzu, k tomu dashboardy a spolupráce pro terapeuty. Tvrzení v README o přesnosti a trénovacích datech jsou cíle, repozitář je ničím nedokládá."
+    "en": "Proposed, not built: Rust for the machine-learning algorithms and core platform, an Elixir backend with Phoenix APIs and a LiveView front end, and Prolog for the data-analysis algorithms, with dashboards and collaboration features for clinicians. Claims in the README about accuracy and training data are aspirations with nothing in the repository behind them.",
+    "cs": "Navrženo, nepostaveno: Rust pro algoritmy strojového učení a jádro platformy, backend v Elixiru s API ve Phoenixu a frontendem v LiveView a Prolog pro algoritmy analýzy dat, k tomu dashboardy a spolupráce pro terapeuty. Tvrzení v README o přesnosti a trénovacích datech jsou cíle, repozitář je ničím nedokládá."
   },
   "highlights": [
     {
@@ -34,8 +34,8 @@
       "cs": "Navržený vícejazyčný stack: Rust, Elixir, Phoenix LiveView, Prolog."
     },
     {
-      "en": "Mentions regulated health-data storage as a requirement.",
-      "cs": "Zmiňuje jako požadavek regulované ukládání zdravotních dat."
+      "en": "Lists HIPAA-compliant data storage and sharing as a feature.",
+      "cs": "Mezi funkcemi uvádí ukládání a sdílení dat v souladu s HIPAA."
     }
   ],
   "stack": [

@@ -10,6 +10,9 @@
       "README.md",
       ".gitmodules",
       "Rakefile",
+      ".travis.yml",
+      "git-submodules-init.sh",
+      "git-submodules-upgrade.sh",
       "tree"
     ]
   },
@@ -24,13 +27,13 @@
     "cs": "Výukové materiály k několika jazykům ležely v samostatných repozitářích, každý s vlastním CI, a chyběl jim společný rozcestník."
   },
   "solution": {
-    "en": ".gitmodules wires each skull-<language> repository in under a short directory name, and four shell scripts initialise, update, upgrade and push all submodules at once. The README lists the subprojects with their Travis CI badges.",
-    "cs": ".gitmodules připojuje každý repozitář skull-<jazyk> pod krátkým názvem adresáře a čtyři shellové skripty hromadně inicializují, aktualizují, povyšují a pushují všechny submoduly. README vypisuje podprojekty i s Travis CI odznaky."
+    "en": ".gitmodules wires each skull-<language> repository in under a short directory name, and four shell scripts initialise, update, upgrade and push all submodules at once. The tree records gitlinks for c, cpp, erlang, haskell, java, nodejs and ruby; the cuda and js entries of .gitmodules have none. The README lists seven subprojects with their Travis CI badges.",
+    "cs": ".gitmodules připojuje každý repozitář skull-<jazyk> pod krátkým názvem adresáře a čtyři shellové skripty hromadně inicializují, aktualizují, povyšují a pushují všechny submoduly. Strom zaznamenává gitlinky pro c, cpp, erlang, haskell, java, nodejs a ruby; položky cuda a js z .gitmodules žádný nemají. README vypisuje sedm podprojektů i s Travis CI odznaky."
   },
   "highlights": [
     {
-      "en": "Submodules declared for c, cpp, cuda, erlang, haskell, java, js, nodejs and ruby.",
-      "cs": "Submoduly deklarované pro c, cpp, cuda, erlang, haskell, java, js, nodejs a ruby."
+      "en": "Submodules declared for c, cpp, cuda, erlang, haskell, java, js, nodejs and ruby; seven of them are recorded in the tree.",
+      "cs": "Submoduly deklarované pro c, cpp, cuda, erlang, haskell, java, js, nodejs a ruby; ve stromu je jich zaznamenaných sedm."
     },
     {
       "en": "Helper scripts for bulk submodule init, update, upgrade and push.",

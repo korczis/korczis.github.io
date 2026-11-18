@@ -18,16 +18,16 @@
   "provenance": "inferred",
   "kind": "config",
   "summary": {
-    "en": "An umbrella Helm chart with local subcharts for data and monitoring services, plus kubectl manifests for a distributed crawler, a Couchbase gateway, a geocoder and automatic TLS.",
-    "cs": "Zastřešující Helm chart s lokálními subcharty pro datové a monitorovací služby a kubectl manifesty pro distribuovaný crawler, bránu do Couchbase, geokodér a automatické TLS."
+    "en": "An umbrella Helm chart with local subcharts for data and monitoring services, plus kubectl manifests for a distributed crawler, a REST API over Couchbase, a geocoder and automatic TLS.",
+    "cs": "Zastřešující Helm chart s lokálními subcharty pro datové a monitorovací služby a kubectl manifesty pro distribuovaný crawler, REST API nad Couchbase, geokodér a automatické TLS."
   },
   "problem": {
     "en": "A crawler platform needs message queues, document and search stores, logging and dashboards on Kubernetes, and installing each by hand is slow and inconsistent.",
     "cs": "Platforma pro crawling potřebuje na Kubernetes fronty zpráv, dokumentové a vyhledávací úložiště, logování a dashboardy, a ruční instalace každé části je pomalá a nejednotná."
   },
   "solution": {
-    "en": "requirements.yaml pulls file-based subcharts for Couchbase, Elasticsearch, etcd, Grafana, Kibana, RabbitMQ and Weave, with Fluent and PostgreSQL charts also present, so one helm install brings the stack up. A components/ tree holds deployments, services, ingresses and an autoscaler for the crawler web app and its workers, plus a gauc service, Nominatim and kube-lego, each with create, update and delete scripts.",
-    "cs": "requirements.yaml připojuje lokální subcharty pro Couchbase, Elasticsearch, etcd, Grafanu, Kibanu, RabbitMQ a Weave, k dispozici jsou i charty pro Fluent a PostgreSQL, takže stack zvedne jediný helm install. Adresář components/ obsahuje deploymenty, služby, ingressy a autoscaler pro webovou aplikaci crawleru a jeho workery, dále službu gauc, Nominatim a kube-lego, každé se skripty pro vytvoření, aktualizaci a smazání."
+    "en": "requirements.yaml pulls file-based subcharts for Couchbase, Elasticsearch, etcd, Grafana (with Prometheus, Alertmanager and kube-state-metrics), Kibana, RabbitMQ and Weave, with Fluentd and PostgreSQL charts present but not required, so one helm install brings the stack up. A components/ tree holds deployments, services, ingresses and an autoscaler for the crawler web app and its workers, plus the gauc Couchbase API, Nominatim and kube-lego, each with create, update and delete scripts.",
+    "cs": "requirements.yaml připojuje lokální subcharty pro Couchbase, Elasticsearch, etcd, Grafanu (s Prometheem, Alertmanagerem a kube-state-metrics), Kibanu, RabbitMQ a Weave; charty pro Fluentd a PostgreSQL v repozitáři jsou, ale připojené nejsou. Stack tak zvedne jediný helm install. Adresář components/ obsahuje deploymenty, služby, ingressy a autoscaler pro webovou aplikaci crawleru a jeho workery, dále API gauc nad Couchbase, Nominatim a kube-lego, každé se skripty pro vytvoření, aktualizaci a smazání."
   },
   "highlights": [
     {
@@ -52,6 +52,7 @@
     "RabbitMQ",
     "etcd",
     "Grafana",
+    "Prometheus",
     "Weave",
     "Fluentd",
     "PostgreSQL",
@@ -59,7 +60,7 @@
     "Shell"
   ],
   "architecture": {
-    "mermaid": "flowchart TD\n  Helm[umbrella chart] --> Mq[RabbitMQ]\n  Helm --> Cb[Couchbase]\n  Helm --> Es[Elasticsearch]\n  Es --> Kib[Kibana]\n  Helm --> Graf[Grafana]\n  Helm --> Etcd[etcd]\n  Web[crawler webapp] --> Workers[crawler workers]\n  Web --> Cb\n  Gauc[gauc service] --> Cb\n  Ingress[ingress and kube-lego] --> Web",
+    "mermaid": "flowchart TD\n  Helm[umbrella chart] --> Mq[RabbitMQ]\n  Helm --> Cb[Couchbase]\n  Helm --> Es[Elasticsearch]\n  Es --> Kib[Kibana]\n  Helm --> Graf[Grafana and Prometheus]\n  Helm --> Etcd[etcd]\n  Ingress[ingress and kube-lego] --> Web[crawler webapp]\n  Workers[crawler workers] --> Web\n  Web --> Mq\n  Web --> Es\n  Web --> Gauc[gauc REST API]\n  Gauc --> Cb",
     "caption": {
       "en": "Helm-managed backing services and the crawler components deployed beside them.",
       "cs": "Podpůrné služby spravované Helmem a komponenty crawleru nasazené vedle nich."

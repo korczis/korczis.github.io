@@ -10,6 +10,7 @@
       "README.md",
       "package.json",
       "Makefile",
+      ".travis.yml",
       "tree"
     ]
   },
@@ -31,6 +32,10 @@
     {
       "en": "Scaffold only, wired for CI through Make.",
       "cs": "Pouze kostra, napojená na CI přes Make."
+    },
+    {
+      "en": "Travis CI targets Node.js 0.10 and 0.11.",
+      "cs": "Travis CI cílí na Node.js 0.10 a 0.11."
     }
   ],
   "stack": [

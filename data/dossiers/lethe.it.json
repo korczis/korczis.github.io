@@ -35,8 +35,8 @@
       "cs": "OAuth přihlášení přes Passport pro tři sociální sítě"
     },
     {
-      "en": "Per-environment configuration with merging and ENV overrides",
-      "cs": "Konfigurace podle prostředí se slučováním a přepisem z ENV"
+      "en": "Per-environment configuration chosen by NODE_ENV and merged over defaults",
+      "cs": "Konfigurace podle prostředí volená přes NODE_ENV a slučovaná s výchozí"
     },
     {
       "en": "Real-time channel through socket.io middleware",

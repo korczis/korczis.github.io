@@ -7,9 +7,10 @@
     "commit": "e00de8896457718093a6e765e634772987f24eb8",
     "read_at": "2026-11-18",
     "read": [
-      "top-level tree",
+      "tree",
       "src/hello_world/Makefile",
-      "src/hello_world/main.cpp"
+      "src/hello_world/main.cpp",
+      "src/hello_world/index.html"
     ]
   },
   "provenance": "inferred",

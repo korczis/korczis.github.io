@@ -9,6 +9,15 @@
     "read": [
       "README.md",
       "skull-haskell.cabal",
+      "Makefile",
+      ".travis.yml",
+      "src/Apps/Bmi/Bmi.hs",
+      "src/Apps/Game/Game.hs",
+      "src/Lib/App/FastPing.hs",
+      "src/Lib/Net/Net.hs",
+      "src/Lib/Net/WebServer.hs",
+      "src/Lib/Parallel/Repa.hs",
+      "src/Lib/Parallel/Accelerate.hs",
       "tree"
     ]
   },
@@ -23,8 +32,8 @@
     "cs": "Osahat si Haskell od základů po paralelní pole a malý webový server v rámci jednoho sestavitelného balíčku."
   },
   "solution": {
-    "en": "The cabal file declares a library under src/Lib and one executable per app under src/Apps, compiled with -Wall -threaded -O2. Dependencies include accelerate, repa, parallel and scotty.",
-    "cs": "Cabal soubor deklaruje knihovnu v src/Lib a jednu binárku na každou aplikaci v src/Apps, kompilováno s -Wall -threaded -O2. Mezi závislostmi jsou accelerate, repa, parallel a scotty."
+    "en": "The cabal file declares a library under src/Lib, compiled with -Wall -threaded -O2, and one executable per app under src/Apps, compiled with -Wall; a Makefile installs dependencies, configures and builds with cabal. Library dependencies include accelerate, repa, parallel and scotty; the Repa module is only an import and the web server is a one-route Scotty example.",
+    "cs": "Cabal soubor deklaruje knihovnu v src/Lib, kompilovanou s -Wall -threaded -O2, a jednu binárku na každou aplikaci v src/Apps, kompilovanou s -Wall; Makefile přes cabal nainstaluje závislosti, nakonfiguruje a sestaví projekt. Mezi závislostmi knihovny jsou accelerate, repa, parallel a scotty; modul pro Repa obsahuje jen import a webový server je příklad se Scotty o jediné routě."
   },
   "highlights": [
     {

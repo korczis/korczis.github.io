@@ -9,31 +9,35 @@
     "read": [
       "README.md",
       "package.json",
-      "tree /"
+      "tree /",
+      "bower.json",
+      "lib/index.js",
+      "lib/app/index.js",
+      "lib/core/index.js"
     ]
   },
   "provenance": "inferred",
   "kind": "app",
   "summary": {
-    "en": "A Node.js web application described as a personal smart links archive, organizer and classifier. The server is built on Express with social login and a persistence abstraction, and the client is a Handlebars-templated single-page front end built with gulp.",
-    "cs": "Webová aplikace v Node.js popsaná jako osobní chytrý archiv odkazů, organizér a klasifikátor. Server stojí na Expressu se sociálním přihlášením a abstrakcí nad perzistencí, klient je jednostránkový front end se šablonami Handlebars sestavovaný gulpem."
+    "en": "A Node.js web application described as a personal smart links archive, organizer and classifier. The server is built on Express with Passport sign-in and a Mongoose persistence layer, and the client is an Ember.js and Ember Data application with Handlebars templates built with gulp. It is the GitLab copy of lethe.it at the same commit.",
+    "cs": "Webová aplikace v Node.js popsaná jako osobní chytrý archiv odkazů, organizér a klasifikátor. Server stojí na Expressu s přihlášením přes Passport a perzistencí v Mongoose, klient je aplikace v Ember.js a Ember Data se šablonami Handlebars sestavovaná gulpem. Jde o kopii lethe.it na GitLabu ve stejném commitu."
   },
   "problem": {
     "en": "Links collected across social networks and the web end up scattered and unclassified. The project aims to pull them into one archive where they can be organised and classified.",
     "cs": "Odkazy nasbírané ze sociálních sítí a z webu zůstávají rozházené a nezatříděné. Projekt je chce stáhnout do jednoho archivu, kde je lze organizovat a klasifikovat."
   },
   "solution": {
-    "en": "The server is split into app, social-network connectors, a generic processor, a persistence layer, a logger and a web layer. Passport strategies handle OAuth login, Mongoose and MongoDB store data, Socket.IO and Faye push updates, and request plus cheerio are available for fetching and parsing pages.",
-    "cs": "Server je rozdělen na aplikační jádro, konektory na sociální sítě, obecný procesor, perzistentní vrstvu, logger a webovou vrstvu. Přihlášení přes OAuth obstarávají strategie Passportu, data ukládá Mongoose do MongoDB, aktualizace posílá Socket.IO a Faye a pro stahování a parsování stránek jsou k dispozici request a cheerio."
+    "en": "The README lists connectors and processor folders, but the code has neither: lib/ holds the app, a Facebook adapter that pulls the feed through the Graph API, an empty core, helpers, a logger, a MongoDB persistence layer and the web layer. Passport strategies handle Facebook, GitHub and Twitter login and socket.io middleware shares the session; Faye, request and cheerio are declared in package.json but not used by the server code.",
+    "cs": "README uvádí složky connectors a processor, kód ale nemá ani jednu: lib/ obsahuje aplikační jádro, adaptér pro Facebook stahující feed přes Graph API, prázdné core, pomocníky, logger, perzistenci nad MongoDB a webovou vrstvu. Přihlášení přes Facebook, GitHub a Twitter obstarávají strategie Passportu a middleware socket.io sdílí session; Faye, request a cheerio jsou v package.json, serverový kód je ale nepoužívá."
   },
   "highlights": [
     {
-      "en": "Clear server-side module split: connectors, processor, persistence, web.",
-      "cs": "Čisté rozdělení serveru na moduly: konektory, procesor, perzistence, web."
+      "en": "Server modules for app, adapters, persistence, logger and web; the README's connectors and processor do not exist.",
+      "cs": "Serverové moduly pro aplikaci, adaptéry, perzistenci, logger a web; connectors a processor z README neexistují."
     },
     {
-      "en": "OAuth login through Passport with several social providers.",
-      "cs": "Přihlášení přes OAuth pomocí Passportu s několika sociálními poskytovateli."
+      "en": "OAuth login through Passport for Facebook, GitHub and Twitter.",
+      "cs": "Přihlášení přes OAuth pomocí Passportu pro Facebook, GitHub a Twitter."
     },
     {
       "en": "gulp pipeline for Sass, Handlebars templates, AMD wrapping, minification and JSDoc.",
@@ -48,20 +52,20 @@
     "JavaScript",
     "Node.js",
     "Express",
+    "Ember.js",
     "MongoDB",
     "Mongoose",
     "Passport",
     "Socket.IO",
     "Handlebars",
     "gulp",
-    "Bower",
-    "cheerio"
+    "Bower"
   ],
   "architecture": {
-    "mermaid": "flowchart LR\n  UI[Browser client] --> WEB[Express web layer]\n  WEB --> AUTH[Passport OAuth]\n  AUTH --> CON[Social connectors]\n  CON --> PROC[Generic processor]\n  PROC --> FETCH[request and cheerio]\n  PROC --> PERS[Persistence layer]\n  PERS --> DB[(MongoDB)]\n  WEB --> RT[Socket.IO realtime]\n  RT --> UI",
+    "mermaid": "flowchart LR\n  UI[Ember client] --> WEB[Express web layer]\n  WEB --> AUTH[Passport OAuth]\n  AUTH --> PROV[Facebook GitHub Twitter]\n  APP[App] --> FB[Facebook adapter]\n  FB --> PERS[Persistence layer]\n  WEB --> PERS\n  PERS --> DB[(MongoDB)]\n  WEB --> RT[socket.io]\n  RT --> UI",
     "caption": {
-      "en": "Links arrive through social connectors, pass the processor and land in MongoDB; the client gets live updates.",
-      "cs": "Odkazy přicházejí přes sociální konektory, projdou procesorem a skončí v MongoDB; klient dostává živé aktualizace."
+      "en": "Items arrive through the Facebook adapter and land in MongoDB; the Ember client talks to the Express layer and a socket.io channel.",
+      "cs": "Položky přicházejí přes adaptér pro Facebook a končí v MongoDB; klient v Emberu komunikuje s vrstvou Expressu a kanálem socket.io."
     }
   },
   "related": [

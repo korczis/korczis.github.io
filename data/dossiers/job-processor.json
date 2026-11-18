@@ -38,8 +38,8 @@
       "cs": "Detekce cyklů je namapovaná na odpověď 400."
     },
     {
-      "en": "Credo, Dialyzer, ExCoveralls, ExDoc and telemetry configured.",
-      "cs": "Nastavené Credo, Dialyzer, ExCoveralls, ExDoc a telemetrie."
+      "en": "Credo, Dialyzer, ExCoveralls and ExDoc set up in mix.exs.",
+      "cs": "V mix.exs nastavené Credo, Dialyzer, ExCoveralls a ExDoc."
     },
     {
       "en": "README lists its own improvement backlog (web UI, Swagger, templating, Dockerfile).",

@@ -24,8 +24,8 @@
     "cs": "Workery Microcrawleru jsou obecné: stahují stránky a potřebují logiku pro konkrétní web, aby věděly, které odkazy sledovat a jaká pole vytáhnout."
   },
   "solution": {
-    "en": "Result links on the page are redirect URLs, so the processor parses their query string and takes the real destination from the q parameter. Pagination links are emitted as new URLs for a listing processor.",
-    "cs": "Odkazy výsledků na stránce vedou přes přesměrování, proto procesor rozparsuje jejich query string a skutečný cíl bere z parametru q. Odkazy stránkování vrací jako nové URL pro procesor výpisu."
+    "en": "Result links on the page are redirect URLs, so the processor parses their query string and takes the real destination from the q parameter. Pagination links are emitted as new URLs for a google.listing processor that package.json does not declare (only index).",
+    "cs": "Odkazy výsledků na stránce vedou přes přesměrování, proto procesor rozparsuje jejich query string a skutečný cíl bere z parametru q. Odkazy stránkování vrací jako nové URL pro procesor google.listing, který package.json nedeklaruje (jen index)."
   },
   "highlights": [
     {
@@ -33,17 +33,17 @@
       "cs": "Rozbalí přesměrovací odkazy na skutečnou cílovou URL."
     },
     {
-      "en": "Uses Node querystring and url modules only.",
-      "cs": "Používá jen moduly querystring a url z Node."
+      "en": "Parses links with the querystring and url modules, declared as npm dependencies.",
+      "cs": "Odkazy parsuje moduly querystring a url, deklarovanými jako npm závislosti."
     }
   ],
   "stack": [
     "JavaScript",
     "Node.js",
-    "Cheerio"
+    "npm"
   ],
   "architecture": {
-    "mermaid": "flowchart LR\n  W[Worker] --> I[index processor]\n  I --> P[pagination URLs]\n  I --> Q[parse q parameter]\n  Q --> R[url and title record]",
+    "mermaid": "flowchart LR\n  W[Worker] --> I[index processor]\n  I --> P[pagination URLs]\n  P --> X[google.listing not declared]\n  I --> Q[parse q parameter]\n  Q --> R[url and title record]",
     "caption": {
       "en": "Processors emit either new URLs for the queue or extracted data records.",
       "cs": "Procesory vracejí buď nové URL do fronty, nebo vytěžené datové záznamy."

@@ -9,22 +9,24 @@
     "read": [
       "README.md",
       "index.html",
-      "tree /"
+      "tree /",
+      "bower.json",
+      ".bowerrc"
     ]
   },
   "provenance": "inferred",
   "kind": "site",
   "summary": {
-    "en": "The static website of the pavian.eu domain. The tree matches the HTML5 Boilerplate starter (.htaccess, 404.html, humans.txt, crossdomain.xml, Modernizr, normalize.css), with Bootstrap pulled in through Bower.",
-    "cs": "Statický web domény pavian.eu. Struktura odpovídá startéru HTML5 Boilerplate (.htaccess, 404.html, humans.txt, crossdomain.xml, Modernizr, normalize.css) a Bootstrap se tahá přes Bower."
+    "en": "The static website of the pavian.eu domain. The tree matches the HTML5 Boilerplate starter (.htaccess, 404.html, humans.txt, crossdomain.xml, Modernizr, normalize.css), with Bootstrap pulled in through Bower; bower.json is still named after another personal site.",
+    "cs": "Statický web domény pavian.eu. Struktura odpovídá startéru HTML5 Boilerplate (.htaccess, 404.html, humans.txt, crossdomain.xml, Modernizr, normalize.css) a Bootstrap se tahá přes Bower; bower.json stále nese jméno jiného osobního webu."
   },
   "problem": {
     "en": "A registered domain needed a minimal landing page that could be served as plain static files.",
     "cs": "Registrovaná doména potřebovala minimální úvodní stránku servírovatelnou jako čisté statické soubory."
   },
   "solution": {
-    "en": "The index page renders a centred heading linking to the domain itself on top of the boilerplate and Bootstrap styles. Any further purpose of the site is unclear from the repository.",
-    "cs": "Úvodní stránka zobrazuje na boilerplatu a stylech Bootstrapu jen vycentrovaný nadpis s odkazem na samotnou doménu. Další účel webu z repozitáře není jasný."
+    "en": "The index page renders a centred heading linking to the domain and an embedded Twitter timeline for the #pavianeu hashtag, on top of the boilerplate and Bootstrap styles, with Google Analytics. Any further purpose of the site is unclear from the repository.",
+    "cs": "Úvodní stránka zobrazuje na boilerplatu a stylech Bootstrapu vycentrovaný nadpis s odkazem na doménu a vloženou časovou osu Twitteru pro hashtag #pavianeu, k tomu Google Analytics. Další účel webu z repozitáře není jasný."
   },
   "highlights": [
     {
@@ -34,6 +36,10 @@
     {
       "en": "Front-end dependencies managed with Bower.",
       "cs": "Front-endové závislosti spravuje Bower."
+    },
+    {
+      "en": "Embedded Twitter hashtag timeline as the only content.",
+      "cs": "Jediným obsahem je vložená časová osa hashtagu z Twitteru."
     }
   ],
   "stack": [
@@ -45,7 +51,7 @@
     "Apache .htaccess"
   ],
   "architecture": {
-    "mermaid": "flowchart LR\n  BOW[Bower components] --> IDX[index.html]\n  BP[Boilerplate files] --> IDX\n  CSS[main.css] --> IDX\n  IDX --> WEB[Static web server]\n  WEB --> V[Visitor]",
+    "mermaid": "flowchart LR\n  BOW[Bower components] --> IDX[index.html]\n  BP[Boilerplate files] --> IDX\n  CSS[main.css] --> IDX\n  TW[Twitter timeline widget] --> IDX\n  IDX --> WEB[Static web server]\n  WEB --> V[Visitor]",
     "caption": {
       "en": "A boilerplate static page served as plain files.",
       "cs": "Statická stránka na boilerplatu servírovaná jako obyčejné soubory."

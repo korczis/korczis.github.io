@@ -23,8 +23,8 @@
     "cs": "Experimenty na Raspberry Pi snadno rozbijí systém na SD kartě, takže se hodí rychlý návrat do známého stavu."
   },
   "solution": {
-    "en": "sd-backup.sh copies /dev/mmcblk0 to data/backup.img with dd, and sd-restore.sh writes the image back. Nothing else is in the repository.",
-    "cs": "sd-backup.sh zkopíruje přes dd /dev/mmcblk0 do data/backup.img a sd-restore.sh obraz zapíše zpět. Nic dalšího repozitář neobsahuje."
+    "en": "sd-backup.sh copies /dev/mmcblk0 to ./../data/backup.img with dd, and sd-restore.sh writes the image back. Nothing else is in the repository.",
+    "cs": "sd-backup.sh zkopíruje přes dd /dev/mmcblk0 do ./../data/backup.img a sd-restore.sh obraz zapíše zpět. Nic dalšího repozitář neobsahuje."
   },
   "highlights": [
     {
@@ -32,8 +32,8 @@
       "cs": "Záloha a obnova celé karty přes dd"
     },
     {
-      "en": "Paths are relative to the script directory and hard-code the mmcblk0 device",
-      "cs": "Cesty jsou relativní ke skriptu a zařízení mmcblk0 je napevno"
+      "en": "The image path ./../data is relative to the working directory, and the mmcblk0 device is hard-coded",
+      "cs": "Cesta k obrazu ./../data je relativní k pracovnímu adresáři a zařízení mmcblk0 je napevno"
     }
   ],
   "stack": [

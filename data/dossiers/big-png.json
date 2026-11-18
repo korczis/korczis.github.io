@@ -15,16 +15,16 @@
   "provenance": "inferred",
   "kind": "experiment",
   "summary": {
-    "en": "A demonstration of a decompression bomb: a 420-byte bzip2 file that expands into a multi-megabyte PNG of 225,000 by 225,000 pixels, whose pixel buffer would need roughly 141 GB of RAM. It credits an upstream author and includes the Python generator and the sample files.",
-    "cs": "Ukázka dekompresní bomby: 420bajtový bzip2 soubor, který se rozbalí do několikamegabajtového PNG o rozměrech 225 000 na 225 000 pixelů, jehož pixelový buffer by potřeboval zhruba 141 GB RAM. Uvádí původního autora a obsahuje Python generátor a ukázkové soubory."
+    "en": "A copy of a published decompression-bomb hack: a 420-byte bzip2 file that expands into a 5.8 MB PNG of 225,000 by 225,000 pixels, whose pixel buffer would need roughly 141 GB of RAM. It credits the original author and includes the Python 2 generator and the sample files.",
+    "cs": "Kopie zveřejněného triku s dekompresní bombou: 420bajtový soubor bzip2 se rozbalí do PNG o velikosti 5,8 MB a rozměrech 225 000 × 225 000 pixelů, jehož pixelový buffer by potřeboval zhruba 141 GB RAM. Uvádí původního autora a obsahuje generátor v Pythonu 2 i ukázkové soubory."
   },
   "problem": {
     "en": "Image-processing pipelines that trust declared dimensions can be crashed by an image whose pixel buffer is far larger than its file; demonstrating this tests their limits.",
     "cs": "Pipeline pro zpracování obrázků, které věří deklarovaným rozměrům, lze shodit obrázkem, jehož pixelový buffer je mnohem větší než soubor; ukázka toho testuje jejich limity."
   },
   "solution": {
-    "en": "The Python script exploits DEFLATE run-length behaviour and a 1-bit colorspace to build a huge-but-tiny PNG, then bzip2 crushes the near-all-zero bytes further. The README frames it as a security-awareness demonstration with references on defending against decompression bombs.",
-    "cs": "Python skript využívá chování run-length v DEFLATE a 1bitový barevný prostor k vytvoření obrovského, ale maličkého PNG, které pak bzip2 s téměř samými nulami ještě více stlačí. README to rámuje jako ukázku pro bezpečnostní povědomí s odkazy na obranu proti dekompresním bombám."
+    "en": "The Python script writes the DEFLATE stream by hand: dynamic Huffman codes let each pair of bits stand for 258 zero bytes, about 1032:1, and a 1-bit palette packs eight pixels into a byte. bzip2's run-length step then crushes the near-all-zero PNG to a few hundred bytes. The README suggests where such a file breaks image handling and links a libpng guide on defending against decompression bombs; the secret image the script embeds is not in the repository.",
+    "cs": "Skript v Pythonu píše stream DEFLATE ručně: dynamické Huffmanovy kódy dovolí, aby každá dvojice bitů znamenala 258 nulových bajtů, tedy zhruba 1032 : 1, a 1bitová paleta vejde osm pixelů do bajtu. Krok run-length v bzip2 pak téměř nulové PNG stlačí na pár set bajtů. README naznačuje, kde takový soubor rozbije zpracování obrázků, a odkazuje na návod libpng k obraně proti dekompresním bombám; tajný obrázek, který skript vkládá, v repozitáři není."
   },
   "highlights": [
     {
@@ -32,18 +32,20 @@
       "cs": "420bajtový archiv se rozbalí do 50gigapixelového PNG."
     },
     {
-      "en": "Exploits DEFLATE run-length and a 1-bit colorspace.",
-      "cs": "Využívá run-length v DEFLATE a 1bitový barevný prostor."
+      "en": "Hand-built DEFLATE stream near its 1032:1 limit, with a 1-bit palette.",
+      "cs": "Ručně sestavený stream DEFLATE blízko limitu 1032 : 1 a 1bitová paleta."
     },
     {
-      "en": "Framed as a decompression-bomb awareness demo, with defence references.",
-      "cs": "Rámováno jako ukázka povědomí o dekompresní bombě, s odkazy na obranu."
+      "en": "Links a libpng guide on defending against decompression bombs.",
+      "cs": "Odkaz na návod libpng k obraně proti dekompresním bombám."
     }
   ],
   "stack": [
-    "Python",
+    "Python 2",
+    "PIL",
     "PNG",
     "DEFLATE",
+    "zlib",
     "bzip2"
   ],
   "architecture": {

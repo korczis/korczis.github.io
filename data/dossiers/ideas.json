@@ -29,13 +29,17 @@
     {
       "en": "Two files, no content.",
       "cs": "Dva soubory bez obsahu."
+    },
+    {
+      "en": "MIT licence dated 2016.",
+      "cs": "Licence MIT z roku 2016."
     }
   ],
   "stack": [
     "Markdown"
   ],
   "architecture": {
-    "mermaid": "flowchart LR\n  A[ideas] --> B[README]\n  A --> C[LICENSE]\n  B --> D[No entries]\n  C --> D",
+    "mermaid": "flowchart LR\n  A[ideas] --> B[README]\n  A --> C[LICENSE MIT]\n  B --> D[No entries yet]",
     "caption": {
       "en": "Repository contents only.",
       "cs": "Jen obsah repozitáře."

@@ -14,12 +14,12 @@
   "provenance": "inferred",
   "kind": "docs",
   "summary": {
-    "en": "A README-only convention for self-describing NoSQL documents in the Apollo crawler ecosystem: each document names its schema, optionally with a version, and can carry timestamps.",
-    "cs": "Konvence pro samopopisné NoSQL dokumenty v ekosystému crawleru Apollo, sepsaná jen v README: každý dokument nese název svého schématu, volitelně verzi, a může mít časová razítka."
+    "en": "A README-only convention for self-describing NoSQL documents, titled NoSQL Schemas for Apollo(n): each document names its schema, optionally with a version, and can carry timestamps.",
+    "cs": "Konvence pro samopopisné NoSQL dokumenty, sepsaná jen v README s názvem NoSQL Schemas for Apollo(n): každý dokument nese název svého schématu, volitelně verzi, a může mít časová razítka."
   },
   "problem": {
-    "en": "Documents stored by crawlers in schemaless databases need a way to say what they are and which version of the shape they follow.",
-    "cs": "Dokumenty, které crawlery ukládají do bezschémových databází, potřebují říct, co jsou zač a jaké verzi tvaru odpovídají."
+    "en": "Documents kept in schemaless databases need a way to say what they are and which version of the shape they follow.",
+    "cs": "Dokumenty uložené v bezschémových databázích potřebují říct, co jsou zač a jaké verzi tvaru odpovídají."
   },
   "solution": {
     "en": "Four examples escalate from a plain schema string, to a schema object, to a schema object with a version, to a document with createdAt and updatedAt timestamps under ts. The payload lives under a key equal to the schema name.",
@@ -31,8 +31,8 @@
       "cs": "Specifikace na příkladech; žádný validátor ani kód."
     },
     {
-      "en": "The ts.createdAt field matches what the microcrawler CouchApp views read.",
-      "cs": "Pole ts.createdAt odpovídá tomu, co čtou view v CouchApp pro microcrawler."
+      "en": "The payload sits under a key named after the schema, so a document carries its own type.",
+      "cs": "Data leží pod klíčem pojmenovaným podle schématu, takže dokument nese svůj vlastní typ."
     }
   ],
   "stack": [

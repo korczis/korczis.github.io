@@ -46,7 +46,7 @@
   "stack": [
     "JavaScript",
     "Node.js",
-    "Cheerio"
+    "npm"
   ],
   "architecture": {
     "mermaid": "flowchart LR\n  W[Worker] --> I[index]\n  I --> L[objekty listing]\n  L --> D[objekt detail]\n  D --> G[DMS to lng lat]\n  D --> R[Building record]\n  G --> R",

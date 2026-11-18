@@ -26,8 +26,8 @@
     "cs": "Ruční spouštění, zastavování a vypisování mnoha izolovaných prohlížečových profilů pro automatizované procházení neškáluje. Nástroj nabízí oddělené lokální a vzdálené API, které potřebují jeden supervizovaný vstupní bod."
   },
   "solution": {
-    "en": "A unified client module routes profile and tag listing to the remote API and start, stop and status calls to the local API. Supervisors manage browser processes and a socket watchdog, a mix task downloads the tool, and the Phoenix app maps it all to /api/v1 routes for browsers, profiles and tags.",
-    "cs": "Jednotný klientský modul směruje výpis profilů a štítků na vzdálené API a spouštění, zastavení a stav na lokální API. Supervisory hlídají procesy prohlížečů a watchdog socketu, mix task stahuje samotný nástroj a aplikace ve Phoenixu to celé mapuje na routy /api/v1 pro prohlížeče, profily a štítky."
+    "en": "A unified client module routes profile listing, profile details and tag listing to the remote API and start, stop and status calls to the local API. A supervisor keeps the tool's headless launcher (spawned through a port and a wrapper script), both API clients and a CLI wrapper running, a WebSockex watchdog attaches to a started profile's socket, a mix task downloads the tool, and the Phoenix app maps it all to /api/v1 routes for browser start and stop, profiles and tags. The README describes PostgreSQL and Ecto setup steps, but no app depends on Ecto or defines a repo.",
+    "cs": "Jednotný klientský modul směruje výpis profilů, detail profilu a výpis štítků na vzdálené API a spouštění, zastavení a stav na lokální API. Supervisor drží v chodu headless spouštěč nástroje (spuštěný přes port a obalový skript), oba API klienty a obal CLI, watchdog nad WebSockexem se připojí k socketu spuštěného profilu, mix task stahuje samotný nástroj a aplikace ve Phoenixu to celé mapuje na routy /api/v1 pro spuštění a zastavení prohlížeče, profily a štítky. README popisuje kroky pro PostgreSQL a Ecto, žádná aplikace ale na Ecto nezávisí ani nedefinuje repo."
   },
   "highlights": [
     {
@@ -35,31 +35,29 @@
       "cs": "Umbrella rozdělená na jádrovou OTP aplikaci a API aplikaci ve Phoenixu."
     },
     {
-      "en": "CLI, headless and socket-watchdog modules around the browser tool.",
-      "cs": "Moduly pro CLI, headless režim a watchdog socketu kolem prohlížečového nástroje."
+      "en": "Headless launcher, CLI wrapper and WebSocket watchdog around the browser tool.",
+      "cs": "Headless spouštěč, obal CLI a watchdog WebSocketu kolem prohlížečového nástroje."
     },
     {
-      "en": "libcluster and Distillery releases, Docker scripts and PostgreSQL via Ecto.",
-      "cs": "libcluster a releasy přes Distillery, skripty pro Docker a PostgreSQL přes Ecto."
+      "en": "Elixir release config, a Dockerfile and Docker scripts; libcluster and Distillery are declared but not configured.",
+      "cs": "Konfigurace Elixir release, Dockerfile a skripty pro Docker; libcluster a Distillery jsou deklarované, ale nenastavené."
     },
     {
-      "en": "Credo and Dialyzer configured, GitLab CI present.",
-      "cs": "Nastavené Credo a Dialyzer, přítomné GitLab CI."
+      "en": "Credo and Dialyzer configured; GitLab CI runs the tests, builds a release and a Docker image.",
+      "cs": "Nastavené Credo a Dialyzer; GitLab CI spouští testy a sestavuje release i Docker image."
     }
   ],
   "stack": [
     "Elixir",
     "Phoenix",
     "OTP",
-    "PostgreSQL",
-    "Ecto",
-    "libcluster",
-    "Distillery",
+    "HTTPoison",
+    "WebSockex",
     "Docker",
     "GitLab CI"
   ],
   "architecture": {
-    "mermaid": "flowchart LR\n  CLI[HTTP client] --> API[Phoenix API v1]\n  API --> BC[Browser controller]\n  API --> PC[Profile and tag controllers]\n  PC --> UC[Unified client]\n  BC --> SUP[Browser supervisor]\n  UC --> LOC[Local API]\n  UC --> REM[Remote API]\n  SUP --> WD[Socket watchdog]\n  LOC --> BR[Browser profiles]",
+    "mermaid": "flowchart LR\n  CLI[HTTP client] --> API[Phoenix API v1]\n  API --> BC[Browser controller]\n  API --> PC[Profile and tag controllers]\n  BC --> UC[Unified client]\n  PC --> UC\n  UC --> LOC[Local API]\n  UC --> REM[Remote API]\n  SUP[Multilogin supervisor] --> HL[Headless launcher]\n  HL --> BR[Browser profiles]\n  LOC --> BR\n  LOC --> WD[Socket watchdog]",
     "caption": {
       "en": "REST calls go through a unified client to the local or remote API of the browser-profile tool.",
       "cs": "REST volání jdou přes jednotného klienta na lokální nebo vzdálené API nástroje pro prohlížečové profily."

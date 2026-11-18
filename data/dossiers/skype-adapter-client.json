@@ -8,7 +8,8 @@
     "read_at": "2026-11-18",
     "read": [
       "README.md",
-      ".gitignore"
+      ".gitignore",
+      "tree"
     ]
   },
   "provenance": "inferred",
@@ -29,6 +30,10 @@
     {
       "en": "Declared as a Ruby client in the README only",
       "cs": "Klient v Ruby je deklarovaný jen v README"
+    },
+    {
+      "en": "Apart from the README, only a standard Ruby gem .gitignore is committed.",
+      "cs": "Kromě README je commitnutý jen standardní .gitignore pro Ruby gem."
     }
   ],
   "stack": [

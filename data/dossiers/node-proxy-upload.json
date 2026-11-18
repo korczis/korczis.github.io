@@ -8,28 +8,32 @@
     "read_at": "2026-11-18",
     "read": [
       "README.md",
-      "app.js (tree)",
-      "package.json (tree)"
+      "app.js",
+      "package.json"
     ]
   },
   "provenance": "inferred",
   "kind": "kata",
   "summary": {
-    "en": "A tiny Node.js experiment that accepts a file upload over HTTP, demonstrated with a curl command posting to an /api/upload endpoint. It is a single app.js with a package.json.",
-    "cs": "Drobný Node.js experiment, který přijímá upload souboru přes HTTP, předvedený curl příkazem posílajícím na endpoint /api/upload. Jde o jediný app.js s package.json."
+    "en": "A tiny Node.js experiment in uploading a file through a reverse proxy. One app.js starts a front Express server that proxies /api to a back-end Express server, which accepts the multipart upload; the README shows a curl command posting to /api/upload.",
+    "cs": "Drobný Node.js experiment s uploadem souboru přes reverzní proxy. Jediný app.js spustí přední Express server, který /api přeposílá na backendový Express server, a ten multipart upload přijme; README ukazuje curl příkaz posílající na /api/upload."
   },
   "problem": {
-    "en": "Testing how a Node server receives and proxies a file upload benefits from a minimal reproducible endpoint.",
-    "cs": "Ověření, jak Node server přijme a přeposílá upload souboru, těží z minimálního reprodukovatelného endpointu."
+    "en": "Checking that a multipart file upload survives a reverse proxy in front of the API is easiest with a minimal reproducible setup.",
+    "cs": "Ověřit, že multipart upload souboru projde reverzní proxy před API, jde nejsnáz na minimální reprodukovatelné sestavě."
   },
   "solution": {
-    "en": "The app exposes an upload endpoint over HTTP in a single file, meant for trying the upload flow with curl. It is a learning snippet, not a product.",
-    "cs": "Aplikace vystavuje upload endpoint přes HTTP v jediném souboru, určený k vyzkoušení upload toku pomocí curl. Jde o učební úryvek, ne o produkt."
+    "en": "The front server on port 8080 forwards every /api request with http-proxy to the back end on port 8081. The back end's /upload route stores the files with multer in uploads/ and answers with JSON listing them. It is a learning snippet, not a product.",
+    "cs": "Přední server na portu 8080 přeposílá každý požadavek na /api přes http-proxy na backend na portu 8081. Route /upload na backendu uloží soubory přes multer do uploads/ a odpoví JSONem s jejich výčtem. Jde o učební úryvek, ne o produkt."
   },
   "highlights": [
     {
-      "en": "Single-file Node HTTP upload endpoint.",
-      "cs": "Node HTTP upload endpoint v jediném souboru."
+      "en": "Two Express servers in one file: an http-proxy front and an upload back end.",
+      "cs": "Dva Express servery v jednom souboru: přední http-proxy a backend pro upload."
+    },
+    {
+      "en": "multer stores the upload and the back end returns the file list as JSON.",
+      "cs": "multer upload uloží a backend vrátí seznam souborů jako JSON."
     },
     {
       "en": "Demonstrated with a curl multipart POST.",
@@ -38,15 +42,18 @@
   ],
   "stack": [
     "JavaScript",
-    "Node.js"
+    "Node.js",
+    "Express",
+    "http-proxy",
+    "multer"
   ],
   "architecture": {
-    "mermaid": "flowchart LR\n  A[curl] --> B[HTTP server]\n  B --> C[Upload handler]\n  C --> D[Stored file]",
+    "mermaid": "flowchart LR\n  A[curl] --> F[Front Express 8080]\n  F --> P[http-proxy api]\n  P --> B[Back-end Express 8081]\n  B --> M[multer]\n  M --> U[uploads directory]\n  B --> J[JSON file list]",
     "caption": {
-      "en": "An HTTP server receives a multipart upload and stores the file.",
-      "cs": "HTTP server přijme multipart upload a uloží soubor."
+      "en": "A multipart upload passes the proxying front server and is stored by the back end.",
+      "cs": "Multipart upload projde přední proxy serverem a uloží ho backend."
     }
   },
   "related": [],
-  "confidence": "low"
+  "confidence": "medium"
 }

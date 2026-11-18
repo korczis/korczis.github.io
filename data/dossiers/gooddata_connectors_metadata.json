@@ -15,29 +15,29 @@
   "provenance": "inferred",
   "kind": "library",
   "summary": {
-    "en": "A Ruby gem for describing and validating the metadata of data connectors for a hosted analytics platform. It models entities, fields and typed values and stores metadata in MongoDB.",
-    "cs": "Ruby gem pro popis a validaci metadat datových konektorů hostované analytické platformy. Modeluje entity, pole a typované hodnoty a metadata ukládá do MongoDB."
+    "en": "A Ruby gem for describing and storing the metadata of data connectors for a hosted analytics platform. It models entities, fields and typed values and keeps metadata per schedule in MongoDB.",
+    "cs": "Ruby gem pro popis a ukládání metadat datových konektorů hostované analytické platformy. Modeluje entity, pole a typované hodnoty a metadata ukládá pro každý plán spouštění do MongoDB."
   },
   "problem": {
-    "en": "Connectors that download data from external sources need a shared description of entities, fields and types so that downstream loading can validate what arrives.",
-    "cs": "Konektory, které stahují data z externích zdrojů, potřebují sdílený popis entit, polí a typů, aby následné načítání mohlo ověřit, co přichází."
+    "en": "Connectors that download data from external sources need a shared description of entities, fields and types so that later steps can rely on what arrives.",
+    "cs": "Konektory, které stahují data z externích zdrojů, potřebují sdílený popis entit, polí a typů, aby se na příchozí data mohly spolehnout další kroky."
   },
   "solution": {
-    "en": "lib/ defines Entity, Entities, Field and Validation classes, type classes for boolean, date, decimal, integer and string, a configuration and runtime layer and dedicated exception types. It depends on the platform Ruby SDK and the mongo driver; RSpec unit and integration specs run on Travis CI. The gemspec lists another engineer as author, so this copy is likely a mirror; the README is the default template.",
-    "cs": "lib/ definuje třídy Entity, Entities, Field a Validation, typové třídy pro boolean, date, decimal, integer a string, vrstvu konfigurace a runtime a vlastní výjimky. Závisí na Ruby SDK platformy a ovladači mongo; unit a integrační testy v RSpec běží na Travis CI. Gemspec uvádí jako autora jiného inženýra, takže jde nejspíš o zrcadlo; README je výchozí šablona."
+    "en": "lib/ defines Entity, Entities, Field and Validation classes, type classes for boolean, date, decimal, integer and string, a configuration and runtime layer and dedicated exception types. A brick middleware loads the global metadata of a schedule from MongoDB and hands it down the pipeline. It depends on the platform Ruby SDK and the mongo driver; the RSpec specs are stubs run by rake ci on Travis CI. The gemspec lists another engineer as author, so this copy is likely a mirror; the README is the default template.",
+    "cs": "lib/ definuje třídy Entity, Entities, Field a Validation, typové třídy pro boolean, date, decimal, integer a string, vrstvu konfigurace a runtime a vlastní výjimky. Middleware pro bricky načte z MongoDB globální metadata plánu a předá je dál v pipeline. Závisí na Ruby SDK platformy a ovladači mongo; specifikace v RSpec jsou jen kostry spouštěné přes rake ci na Travis CI. Gemspec uvádí jako autora jiného inženýra, takže jde nejspíš o zrcadlo; README je výchozí šablona."
   },
   "highlights": [
     {
-      "en": "Typed field model with per-type validation classes",
-      "cs": "Typovaný model polí s validačními třídami pro každý typ"
+      "en": "Typed field model whose types round-trip between compact type-size strings and hashes",
+      "cs": "Typovaný model polí, jehož typy se převádějí mezi zkráceným zápisem typ-velikost a hashi"
     },
     {
       "en": "Separate exceptions for entity, metadata, type and missing-parameter errors",
       "cs": "Oddělené výjimky pro chyby entit, metadat, typů a chybějících parametrů"
     },
     {
-      "en": "Unit and integration RSpec suites",
-      "cs": "Unit a integrační sady testů v RSpec"
+      "en": "Brick middleware that loads per-schedule metadata from MongoDB",
+      "cs": "Middleware pro bricky, které načítá metadata plánu z MongoDB"
     }
   ],
   "stack": [
@@ -48,10 +48,10 @@
     "Travis CI"
   ],
   "architecture": {
-    "mermaid": "flowchart LR\n  A[Connector] --> B[Metadata API]\n  B --> C[Entities]\n  C --> D[Fields]\n  D --> E[Types]\n  E --> F[Validation]\n  B --> G[Configuration]\n  B --> H[MongoDB store]",
+    "mermaid": "flowchart LR\n  A[Brick pipeline] --> M[MetadataMiddleware]\n  M --> B[Metadata]\n  B --> C[Entities]\n  C --> D[Fields]\n  D --> E[Types]\n  B --> G[Configuration]\n  B --> H[MongoDB store]",
     "caption": {
-      "en": "Metadata model from entities down to typed, validated fields.",
-      "cs": "Model metadat od entit po typovaná a validovaná pole."
+      "en": "A middleware loads the metadata model, from entities down to typed fields.",
+      "cs": "Middleware načte model metadat od entit po typovaná pole."
     }
   },
   "related": [

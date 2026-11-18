@@ -14,31 +14,38 @@
       "Makefile",
       "lib/worker/worker.js",
       "lib/collector/collector.js",
-      "tree (recursive)"
+      "tree (recursive)",
+      "src/worker/worker.js",
+      "src/collector/collector.js",
+      "src/exporter/exporter.js",
+      "src/app/app.js",
+      "src/helper/index.js",
+      "src/helper/request.js",
+      ".travis.yml"
     ]
   },
   "provenance": "inferred",
   "kind": "cli",
   "summary": {
-    "en": "The main Microcrawler implementation: a Node.js command-line tool, published to npm as microcrawler, for distributed crawling. Workers and a collector communicate through RabbitMQ, results land in Couchbase and are indexed in Elasticsearch for exploration in Kibana.",
-    "cs": "Hlavní implementace Microcrawleru: nástroj pro příkazovou řádku v Node.js, publikovaný na npm jako microcrawler, pro distribuovaný crawling. Workery a collector komunikují přes RabbitMQ, výsledky se ukládají do Couchbase a indexují do Elasticsearch pro prohlížení v Kibaně."
+    "en": "The main Microcrawler implementation: a Node.js command-line tool, published to npm as microcrawler, for distributed crawling. Workers and a collector communicate through RabbitMQ; the collector stores results in Couchbase and indexes them in Elasticsearch for exploration in Kibana.",
+    "cs": "Hlavní implementace Microcrawleru: nástroj pro příkazovou řádku v Node.js, publikovaný na npm jako microcrawler, pro distribuovaný crawling. Workery a collector komunikují přes RabbitMQ; collector ukládá výsledky do Couchbase a indexuje je do Elasticsearch pro prohlížení v Kibaně."
   },
   "problem": {
     "en": "Crawling many sites at scale needs parallel downloaders, a place to put results, search over them, and a way to add new sites without touching the engine.",
     "cs": "Crawling mnoha webů ve velkém potřebuje paralelní stahování, místo pro výsledky, vyhledávání nad nimi a způsob, jak přidat nový web bez zásahu do jádra."
   },
   "solution": {
-    "en": "Site logic lives in separate npm packages whose processors return either URLs to enqueue or data records; the worker loads them through microcrawler-crawler-all, takes jobs from a RabbitMQ queue, downloads with superagent and parses with Cheerio. The collector consumes results, stores them in Couchbase and indexes them in Elasticsearch, and an exporter writes them out (a CSV writer is among the dependencies). Throttling, retries, timeouts, proxies and request headers are set in a JSON config created by microcrawler config init.",
-    "cs": "Logika webů je v samostatných npm balíčcích, jejichž procesory vracejí buď URL k zařazení do fronty, nebo datové záznamy; worker je načte přes microcrawler-crawler-all, bere úlohy z fronty v RabbitMQ, stahuje přes superagent a parsuje Cheeriem. Collector odebírá výsledky, ukládá je do Couchbase a indexuje do Elasticsearch a exporter je vypisuje ven (mezi závislostmi je zápis CSV). Throttling, opakování, timeouty, proxy a hlavičky požadavků se nastavují v JSON konfiguraci, kterou vytvoří microcrawler config init."
+    "en": "Site logic lives in separate npm packages whose processors return either URLs to enqueue or data records; the worker discovers every installed microcrawler-crawler-* package (pulled in through microcrawler-crawler-all), takes jobs from the worker queue, downloads with superagent, parses with Cheerio and sends the processor output to the collector queue. The collector deduplicates new URLs by a SHA-256 key in Couchbase before putting them back on the worker queue, and stores data records in Couchbase and Elasticsearch. Throttling, retries, timeouts, proxies, request headers and a fake X-Forwarded-For are set in a JSON config created by microcrawler config init; the exporter subcommand only prints that it is not implemented yet.",
+    "cs": "Logika webů je v samostatných npm balíčcích, jejichž procesory vracejí buď URL k zařazení do fronty, nebo datové záznamy; worker najde každý nainstalovaný balíček microcrawler-crawler-* (přicházejí přes microcrawler-crawler-all), bere úlohy z fronty workerů, stahuje přes superagent, parsuje Cheeriem a výstup procesoru posílá do fronty collectoru. Collector nové URL deduplikuje podle klíče SHA-256 v Couchbase, než je vrátí do fronty workerů, a datové záznamy ukládá do Couchbase a Elasticsearch. Throttling, opakování, timeouty, proxy, hlavičky požadavků a podvržená hlavička X-Forwarded-For se nastavují v JSON konfiguraci, kterou vytvoří microcrawler config init; podpříkaz exporter zatím jen vypíše, že není implementovaný."
   },
   "highlights": [
     {
-      "en": "Subcommands: worker, collector, exporter, crawl, config (commander).",
-      "cs": "Podpříkazy worker, collector, exporter, crawl a config (commander)."
+      "en": "Subcommands: worker, collector, exporter (a stub), crawl, config (commander).",
+      "cs": "Podpříkazy worker, collector, exporter (zatím prázdný), crawl a config (commander)."
     },
     {
-      "en": "Plug-in site processors as independent npm packages.",
-      "cs": "Procesory webů jako nezávislé npm balíčky v roli pluginů."
+      "en": "Plug-in site processors as independent npm packages; URLs deduplicated in Couchbase before they are crawled.",
+      "cs": "Procesory webů jako nezávislé npm balíčky v roli pluginů; URL se před stažením deduplikují v Couchbase."
     },
     {
       "en": "docker-compose stack with Couchbase, Elasticsearch, Kibana and RabbitMQ; Alpine image builds libcouchbase from source.",
@@ -62,10 +69,10 @@
     "Docker"
   ],
   "architecture": {
-    "mermaid": "flowchart LR\n  CLI[microcrawler crawl] --> Q[RabbitMQ worker queue]\n  Q --> W[Worker]\n  W --> P[Site processors]\n  P --> Q\n  P --> R[collector queue]\n  R --> C[Collector]\n  C --> CB[Couchbase]\n  C --> ES[Elasticsearch]\n  ES --> K[Kibana]\n  CB --> X[Exporter]",
+    "mermaid": "flowchart LR\n  CLI[microcrawler crawl] --> Q[RabbitMQ worker queue]\n  Q --> W[Worker]\n  W --> P[Site processors]\n  P --> R[collector queue]\n  R --> C[Collector]\n  C --> D[URL dedup in Couchbase]\n  D --> Q\n  C --> CB[Couchbase]\n  C --> ES[Elasticsearch]\n  ES --> K[Kibana]",
     "caption": {
-      "en": "Processors feed new URLs back to the worker queue and data to the collector.",
-      "cs": "Procesory vracejí nové URL zpět do fronty workerů a data collectoru."
+      "en": "Processor output goes to the collector, which deduplicates new URLs back to the worker queue and stores data.",
+      "cs": "Výstup procesorů jde collectoru, který nové URL po deduplikaci vrací do fronty workerů a data ukládá."
     }
   },
   "related": [

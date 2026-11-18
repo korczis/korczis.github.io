@@ -25,8 +25,8 @@
     "cs": "Uživatelé SDK potřebovali příklady podle úloh („naklonuj projekt“, „porovnej reporty“, „vypni plánování“) místo referenční dokumentace API. Ukázky kódu v dokumentaci zastarávají, pokud se negenerují ani nespouštějí."
   },
   "solution": {
-    "en": "Each recipe is an .asciidoc.erb template that pulls its Ruby source from src/ through an ERB helper, so the book embeds real files. Rake tasks run the ERB step and asciidoctor, watchr rebuilds on change, and Travis CI builds the book on several Ruby versions; snippets/ and apps/ hold standalone scripts.",
-    "cs": "Každý recept je šablona .asciidoc.erb, která si přes ERB helper vloží Ruby zdrojáky ze src/, takže kniha obsahuje skutečné soubory. Úlohy v Rake spustí ERB krok a asciidoctor, watchr přestaví knihu při změně a Travis CI ji staví na několika verzích Ruby; snippets/ a apps/ obsahují samostatné skripty."
+    "en": "Most recipes are .asciidoc.erb templates that pull their Ruby source from src/ through an ERB helper, so the book embeds real files. Rake tasks run the ERB step and asciidoctor, watchr rebuilds on change, and Travis CI builds the book on several Ruby versions; snippets/ and apps/ hold standalone scripts.",
+    "cs": "Většina receptů jsou šablony .asciidoc.erb, které si přes ERB helper vloží Ruby zdrojáky ze src/, takže kniha obsahuje skutečné soubory. Úlohy v Rake spustí ERB krok a asciidoctor, watchr přestaví knihu při změně a Travis CI ji staví na několika verzích Ruby; snippets/ a apps/ obsahují samostatné skripty."
   },
   "highlights": [
     {

@@ -17,16 +17,16 @@
   "provenance": "inferred",
   "kind": "data",
   "summary": {
-    "en": "A workspace for the Czech telecommunications regulator's open radio-spectrum data. A Makefile downloads the CSV export, a small Rust program walks and parses every table, and the repository keeps a snapshot of the tables plus HTML pages prepared for vis.js, three.js and Processing visualisations.",
-    "cs": "Pracovní prostor pro otevřená data českého telekomunikačního regulátora o rádiovém spektru. Makefile stáhne CSV export, malý program v Rustu projde a naparsuje všechny tabulky a repozitář drží jejich snapshot a HTML stránky připravené pro vizualizace ve vis.js, three.js a Processingu."
+    "en": "A workspace for the Czech telecommunications regulator's open radio-spectrum data. A Makefile downloads the CSV export, a small Rust program reads every table and prints its records, and the repository keeps a snapshot of the tables plus starter HTML pages for vis.js, three.js and Processing that do not use the data yet.",
+    "cs": "Pracovní prostor pro otevřená data českého telekomunikačního regulátora o rádiovém spektru. Makefile stáhne CSV export, malý program v Rustu přečte všechny tabulky a vypíše jejich záznamy a repozitář drží jejich snapshot a úvodní HTML stránky pro vis.js, three.js a Processing, které data zatím nepoužívají."
   },
   "problem": {
     "en": "The spectrum allocation plan is published as many related CSV tables (allocations, frequencies, services, licences, translations) that are hard to read as a whole.",
     "cs": "Plán přidělení kmitočtů je publikovaný jako mnoho provázaných CSV tabulek (přidělení, kmitočty, služby, licence, překlady), které se špatně čtou jako celek."
   },
   "solution": {
-    "en": "make downloads and unzips the export into spektrum/; the Rust binary reads the directory in sorted order and parses each file with the csv crate. Visualisation pages and vendored libraries sit in web/, but how far the visualisation got is unclear from the tree.",
-    "cs": "make stáhne a rozbalí export do spektrum/; binárka v Rustu čte adresář v seřazeném pořadí a každý soubor parsuje crate csv. Vizualizační stránky a přibalené knihovny jsou ve web/, jak daleko se vizualizace dostala, ale ze stromu jasné není."
+    "en": "make downloads and unzips the export into spektrum/; the Rust binary reads the directory in sorted order, parses each file with the csv crate and prints every record. The pages in web/ are library starters with vendored scripts: a vis.js network of continents, a rotating three.js cube and a Processing sketch, none of them loading the spectrum tables.",
+    "cs": "make stáhne a rozbalí export do spektrum/; binárka v Rustu čte adresář v seřazeném pořadí, každý soubor naparsuje crate csv a vypíše všechny záznamy. Stránky ve web/ jsou úvodní ukázky knihoven s přibalenými skripty: síť kontinentů ve vis.js, rotující krychle v three.js a skica v Processingu, žádná z nich tabulky spektra nenačítá."
   },
   "highlights": [
     {
@@ -38,12 +38,12 @@
       "cs": "Opakovatelné stažení a rozbalení přes Makefile."
     },
     {
-      "en": "Rust CSV reader as the parsing base.",
-      "cs": "Čtečka CSV v Rustu jako základ parsování."
+      "en": "Rust CSV reader that prints every record, as the parsing base.",
+      "cs": "Čtečka CSV v Rustu, která vypíše všechny záznamy, jako základ parsování."
     },
     {
-      "en": "Prepared vis.js network/timeline, three.js and Processing pages.",
-      "cs": "Připravené stránky pro vis.js (síť, časová osa), three.js a Processing."
+      "en": "Starter pages for vis.js, three.js and Processing, not yet wired to the data.",
+      "cs": "Úvodní stránky pro vis.js, three.js a Processing, zatím nenapojené na data."
     }
   ],
   "stack": [
@@ -57,10 +57,10 @@
     "Processing.js"
   ],
   "architecture": {
-    "mermaid": "flowchart LR\n  SRC[Open data CSV export] --> MK[Makefile download]\n  MK --> DIR[spektrum tables]\n  DIR --> RS[Rust CSV parser]\n  DIR --> WEB[web pages]\n  WEB --> VIS[vis.js]\n  WEB --> THR[three.js]\n  WEB --> PRC[Processing]",
+    "mermaid": "flowchart LR\n  SRC[Open data CSV export] --> MK[Makefile download]\n  MK --> DIR[spektrum tables]\n  DIR --> RS[Rust CSV reader]\n  RS --> OUT[Records on stdout]\n  WEB[Starter web pages] --> VIS[vis.js]\n  WEB --> THR[three.js]\n  WEB --> PRC[Processing]",
     "caption": {
-      "en": "Open data is fetched once, then parsed in Rust or visualised in the browser.",
-      "cs": "Otevřená data se jednou stáhnou a pak se parsují v Rustu nebo vizualizují v prohlížeči."
+      "en": "Open data is fetched once and printed by the Rust reader; the web pages stand apart from it.",
+      "cs": "Otevřená data se jednou stáhnou a čtečka v Rustu je vypíše; webové stránky stojí stranou."
     }
   },
   "related": [

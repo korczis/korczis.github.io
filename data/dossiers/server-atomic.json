@@ -9,8 +9,14 @@
     "read": [
       "README.md",
       "REGISTRY.md",
+      "LINKS.md",
+      ".gitmodules",
+      "setup.sh",
       "ansible/atomic-host.yml",
-      "top-level tree"
+      "ansible/provision.sh",
+      "ansible/roles/{docker-registry,firewall,cadvisor}/tasks/main.yml",
+      "ansible/roles/docker-registry/templates",
+      "recursive tree"
     ]
   },
   "provenance": "inferred",
@@ -37,8 +43,8 @@
       "cs": "Připravené, ale vypnuté role pro Kubernetes, etcd a flannel"
     },
     {
-      "en": "One-line bootstrap script for a fresh host",
-      "cs": "Jednořádkový bootstrap pro čerstvý stroj"
+      "en": "A one-line curl bootstrap that prepares SSH keys and slows RAID resync before provisioning",
+      "cs": "Jednořádkový bootstrap přes curl, který před provisioningem připraví SSH klíče a zpomalí resync RAIDu"
     }
   ],
   "stack": [

@@ -16,16 +16,16 @@
   "provenance": "inferred",
   "kind": "instrument",
   "summary": {
-    "en": "Firmware for a Teensy 3.1 sensor station, described as an open home-automation platform. It logs temperature, humidity, GPS position, speed, altitude and luminosity to an SD card and shows them on a small TFT display.",
-    "cs": "Firmware pro senzorovou stanici na Teensy 3.1, popsaný jako otevřená platforma pro domácí automatizaci. Loguje teplotu, vlhkost, polohu z GPS, rychlost, výšku a osvětlení na SD kartu a zobrazuje je na malém TFT displeji."
+    "en": "Firmware for a Teensy 3.1 sensor station, described as an open home-automation platform. It reads temperature, humidity, GPS position, speed, altitude and luminosity and shows them on a small TFT display, while the main loop logs its timing statistics as JSON to serial and an SD card.",
+    "cs": "Firmware pro senzorovou stanici na Teensy 3.1, popsaný jako otevřená platforma pro domácí automatizaci. Čte teplotu, vlhkost, polohu z GPS, rychlost, výšku a osvětlení a zobrazuje je na malém TFT displeji; hlavní smyčka přitom loguje své časové statistiky jako JSON na sériovou linku a SD kartu."
   },
   "problem": {
     "en": "Collecting environment readings from several sensors on a microcontroller requires a structure that keeps each device driver separate while sharing one main loop, memory budget and output channels.",
     "cs": "Sběr údajů z několika senzorů na mikrokontroléru vyžaduje strukturu, která drží ovladače zařízení odděleně a přitom sdílí jednu hlavní smyčku, paměťový rozpočet a výstupní kanály."
   },
   "solution": {
-    "en": "app/ splits the firmware into C++ modules (DHT22, GPS, TSL2561, display, SD card, EEPROM, serial, RFID, Wi-Fi, low-power snooze) coordinated by a manager loop, with features toggled in general.h. The README lists the required open-source Arduino libraries and hardware; the TODO notes planned custom allocators, a profiler and settings storage.",
-    "cs": "app/ dělí firmware na C++ moduly (DHT22, GPS, TSL2561, displej, SD karta, EEPROM, sériová linka, RFID, Wi-Fi, úsporný režim) koordinované smyčkou manageru, funkce se zapínají v general.h. README vyjmenovává potřebné open-source Arduino knihovny a hardware; TODO zmiňuje plánované vlastní alokátory, profiler a ukládání nastavení."
+    "en": "app/ splits the firmware into C++ modules (DHT22, GPS, TSL2561, display, SD card, EEPROM, serial, RFID, Wi-Fi, low-power snooze) coordinated by a manager loop, with features toggled in general.h, where RFID, Wi-Fi and snooze are off by default. The GPS module's display routine also renders the DHT22 and light readings. The README lists the required open-source Arduino libraries and hardware; the TODO notes planned custom allocators, a profiler and settings storage.",
+    "cs": "app/ dělí firmware na C++ moduly (DHT22, GPS, TSL2561, displej, SD karta, EEPROM, sériová linka, RFID, Wi-Fi, úsporný režim) koordinované smyčkou manageru, funkce se zapínají v general.h, kde jsou RFID, Wi-Fi a úsporný režim ve výchozím stavu vypnuté. Zobrazovací rutina GPS modulu vykresluje i hodnoty z DHT22 a senzoru osvětlení. README vyjmenovává potřebné open-source Arduino knihovny a hardware; TODO zmiňuje plánované vlastní alokátory, profiler a ukládání nastavení."
   },
   "highlights": [
     {
@@ -33,8 +33,8 @@
       "cs": "Jeden C++ modul na periferii nad společnou základní třídou"
     },
     {
-      "en": "SD-card data logging with a sample data file in data/",
-      "cs": "Logování na SD kartu s ukázkovými daty v data/"
+      "en": "Per-tick JSON loop statistics written to serial and the SD card, with a sample in data/",
+      "cs": "Statistiky smyčky jako JSON v každém taktu na sériovou linku a SD kartu, s ukázkou v data/"
     },
     {
       "en": "Compile-time feature switches in general.h",
@@ -54,10 +54,10 @@
     "I2C"
   ],
   "architecture": {
-    "mermaid": "flowchart TD\n  A[Manager loop] --> B[DHT22 temp and humidity]\n  A --> C[GPS]\n  A --> D[TSL2561 light]\n  A --> E[RFID]\n  A --> F[Wi-Fi]\n  B --> G[TFT display]\n  C --> G\n  D --> G\n  B --> H[SD card log]\n  C --> H\n  A --> I[Serial output]\n  A --> J[Snooze low power]",
+    "mermaid": "flowchart TD\n  A[Manager loop] --> B[DHT22 temp and humidity]\n  A --> C[GPS]\n  A --> D[TSL2561 light]\n  A --> E[RFID, off by default]\n  A --> F[Wi-Fi, off by default]\n  B --> G[TFT display]\n  C --> G\n  D --> G\n  A --> J[JSON loop stats]\n  J --> H[SD card log]\n  J --> I[Serial output]",
     "caption": {
-      "en": "Sensor modules feed the display, SD log and serial output from one manager loop.",
-      "cs": "Senzorové moduly plní displej, log na SD a sériový výstup z jedné smyčky manageru."
+      "en": "Sensor modules feed the display; the manager loop writes its own statistics to the SD card and serial.",
+      "cs": "Senzorové moduly plní displej; smyčka manageru zapisuje vlastní statistiky na SD kartu a sériovou linku."
     }
   },
   "related": [

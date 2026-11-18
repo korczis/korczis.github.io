@@ -18,16 +18,16 @@
   "provenance": "inferred",
   "kind": "cli",
   "summary": {
-    "en": "An R&D project for evidence-first analysis of git commits with LLMs. It specifies a JSON result contract with per-metric scores that must cite diff or context ranges, manages the research through decision records and ideas, and contains the scaffold of a Rust CLI with index and analyze commands.",
-    "cs": "Výzkumný projekt pro analýzu git commitů pomocí LLM, postavenou na důkazech. Definuje JSON kontrakt výsledku se skóre pro jednotlivé metriky, které musí citovat rozsahy diffu nebo kontextu, řídí výzkum přes rozhodovací záznamy a nápady a obsahuje kostru CLI v Rustu s příkazy index a analyze."
+    "en": "An R&D project for evidence-first analysis of git commits with LLMs. Its README specifies a JSON result contract with per-metric scores that must cite diff or context ranges, the research is managed through decision records and ideas, and the code is a Bash indexer that pushes git data into Meilisearch plus the scaffold of a Rust CLI whose index and analyze commands are stubs.",
+    "cs": "Výzkumný projekt pro analýzu git commitů s LLM postavenou na důkazech. README popisuje JSON kontrakt výsledku se skóre pro každou metriku, které musí odkazovat na rozsahy diffu nebo kontextu, výzkum se řídí rozhodovacími záznamy a nápady a kód tvoří indexer v Bashi, který posílá data z gitu do Meilisearch, a kostra CLI v Rustu, jejíž příkazy index a analyze jsou zatím prázdné."
   },
   "problem": {
     "en": "LLM-written commit assessments tend to hallucinate, score things that do not apply and drift between runs. Without traceable evidence and versioned prompts, such scores cannot be audited or compared.",
     "cs": "Hodnocení commitů psaná LLM mají sklon halucinovat, hodnotit věci, které se commitu netýkají, a mezi běhy se liší. Bez dohledatelných důkazů a verzovaných promptů nejde taková skóre auditovat ani porovnávat."
   },
   "solution": {
-    "en": "Each metric (code quality, clarity, documentation, algorithms, security, testing, accuracy, complexity) is a 0-10 checklist with gating rules that return N/A for docs-only, tests-only or config-only commits. Every non-null score carries evidence ids pointing at numbered diff hunks or context packs, and results record prompt, rubric, model and dataset versions. Retrieval is designed around Meilisearch hybrid search (BM25 plus vectors), and a Justfile manages ideas, decision records and Meilisearch indexing.",
-    "cs": "Každá metrika (kvalita kódu, čitelnost, dokumentace, algoritmizace, bezpečnost, testy, přesnost, složitost) je checklist 0-10 s pravidly gatingu, která pro commity jen s dokumentací, testy nebo konfigurací vrací N/A. Každé nenulové skóre nese identifikátory důkazů ukazující na očíslované hunky diffu nebo kontextové balíčky a výsledek zaznamenává verzi promptu, rubriky, modelu a datasetu. Vyhledávání je navržené kolem hybridního hledání v Meilisearch (BM25 a vektory) a Justfile spravuje nápady, rozhodovací záznamy a indexaci v Meilisearch."
+    "en": "Each metric (code quality, clarity, documentation, algorithms, security, testing, accuracy, complexity) is a 0-10 checklist with gating rules that return N/A for docs-only, tests-only or config-only commits. Every non-null score carries evidence ids pointing at numbered diff hunks or context packs, and results record prompt, rubric, model and dataset versions; the result schema the README links is not in the tree. Retrieval is designed around Meilisearch hybrid search (BM25 plus vectors): a Bash script already indexes repository files, commits and diffs, and a Justfile manages ideas, decision records and Meilisearch tasks.",
+    "cs": "Každá metrika (kvalita kódu, srozumitelnost, dokumentace, algoritmy, bezpečnost, testování, přesnost, složitost) je checklist 0-10 s pravidly gatingu, která pro commity jen s dokumentací, testy nebo konfigurací vrátí N/A. Každé nenulové skóre nese identifikátory důkazů ukazující na očíslované hunky diffu nebo kontextové balíčky a výsledky zaznamenávají verze promptu, rubriky, modelu a datasetu; schéma výsledku, na které README odkazuje, ve stromu není. Vyhledávání je navržené kolem hybridního hledání v Meilisearch (BM25 a vektory): skript v Bashi už indexuje soubory repozitáře, commity a diffy a Justfile spravuje nápady, rozhodovací záznamy a úlohy pro Meilisearch."
   },
   "highlights": [
     {
@@ -43,8 +43,8 @@
       "cs": "Výzkumný workflow s očíslovanými rozhodovacími záznamy, nápady a JSON schématy."
     },
     {
-      "en": "Rust CLI scaffold with clap, tokio, tracing, figment and blake3.",
-      "cs": "Kostra CLI v Rustu s clap, tokio, tracing, figment a blake3."
+      "en": "Rust CLI scaffold with clap, tokio, tracing, figment and blake3; both commands are stubs.",
+      "cs": "Kostra CLI v Rustu s clap, tokio, tracing, figment a blake3; oba příkazy jsou zatím prázdné."
     },
     {
       "en": "Ethics section: assess commits, not people; pseudonymised author ids.",
@@ -63,8 +63,8 @@
   "architecture": {
     "mermaid": "flowchart LR\n  GIT[Commit and diff] --> PRE[Hunk numbering and context packs]\n  PRE --> SEC[Secrets scanner]\n  SEC --> IDX[Indexer]\n  IDX --> MS[Meilisearch hybrid retrieval]\n  MS --> GATE[Gating engine]\n  GATE --> EVAL[Metric evaluator]\n  EVAL --> JSON[JSON result with evidence]\n  JSON --> STORE[(Results store)]\n  JSON --> CRD[Decision records loop]",
     "caption": {
-      "en": "Commits are chunked, indexed, retrieved, gated and scored into evidence-backed JSON.",
-      "cs": "Commity se rozdělí, zaindexují, vyhledají, projdou gatingem a ohodnotí do JSON podloženého důkazy."
+      "en": "The designed pipeline: commits are chunked, indexed, retrieved, gated and scored into evidence-backed JSON. Only the indexing step has working code.",
+      "cs": "Navržený tok: commity se rozdělí, zaindexují, vyhledají, projdou gatingem a ohodnotí do JSON podloženého důkazy. Funkční kód má zatím jen indexace."
     }
   },
   "related": [

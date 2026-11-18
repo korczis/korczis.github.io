@@ -14,21 +14,21 @@
   "provenance": "inferred",
   "kind": "config",
   "summary": {
-    "en": "Optional modules for the jetel ETL tool, carried as a single modules.json alongside a README and LICENSE. It is a configuration/registry file rather than executable code.",
-    "cs": "Volitelné moduly pro ETL nástroj jetel, nesené jako jediný modules.json vedle README a LICENSE. Jde o konfigurační/registrační soubor, ne o spustitelný kód."
+    "en": "A companion repository meant for optional modules of the jetel ETL tool. It holds a README (\"Optional Jetel Modules\"), a LICENSE and a modules.json that is an empty JSON object.",
+    "cs": "Doprovodný repozitář určený pro volitelné moduly ETL nástroje jetel. Obsahuje README („Optional Jetel Modules“), LICENSE a modules.json, který je prázdným JSON objektem."
   },
   "problem": {
-    "en": "An ETL tool needs an external list of optional data-source modules so the core can stay small and the catalogue can grow independently.",
-    "cs": "ETL nástroj potřebuje externí seznam volitelných modulů datových zdrojů, aby jádro zůstalo malé a katalog mohl růst nezávisle."
+    "en": "Unclear beyond the README title: optional modules were apparently meant to live outside the jetel core.",
+    "cs": "Mimo nadpis README nejasné: volitelné moduly zřejmě měly žít mimo jádro nástroje jetel."
   },
   "solution": {
-    "en": "The repository holds a modules.json describing additional jetel modules, separate from the main tool. Its contents define the optional catalogue.",
-    "cs": "Repo obsahuje modules.json popisující další jetel moduly, oddělený od hlavního nástroje. Jeho obsah definuje volitelný katalog."
+    "en": "Only the placeholder exists: modules.json contains {} and no module is described. Nothing in this repository shows how jetel would read it.",
+    "cs": "Existuje jen zástupný soubor: modules.json obsahuje {} a nepopisuje žádný modul. Nic v tomto repozitáři neukazuje, jak by ho jetel četl."
   },
   "highlights": [
     {
-      "en": "Single modules.json registry for optional jetel sources.",
-      "cs": "Jediný modules.json registr volitelných jetel zdrojů."
+      "en": "modules.json is an empty object; no module is listed.",
+      "cs": "modules.json je prázdný objekt; žádný modul v něm není."
     },
     {
       "en": "Data/config only, no executable code.",
@@ -39,10 +39,10 @@
     "JSON"
   ],
   "architecture": {
-    "mermaid": "flowchart LR\n  A[jetel core] --> B[modules.json]\n  B --> C[Optional modules]\n  C --> A\n  D[README] -.-> B",
+    "mermaid": "flowchart LR\n  A[jetel core] -.-> B[modules.json]\n  B --> C[empty object]\n  D[README] -.-> B",
     "caption": {
-      "en": "A JSON registry lists optional modules the core ETL tool can load.",
-      "cs": "JSON registr vypisuje volitelné moduly, které může jádro ETL nástroje načíst."
+      "en": "The intended link between jetel and an optional module registry; the registry is empty.",
+      "cs": "Zamýšlené propojení nástroje jetel s registrem volitelných modulů; registr je prázdný."
     }
   },
   "related": [

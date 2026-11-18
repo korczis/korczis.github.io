@@ -22,8 +22,8 @@
   "provenance": "inferred",
   "kind": "site",
   "summary": {
-    "en": "The GitLab Pages user site, built with the Zola static site generator in GitLab CI. The tree mixes Zola parts (config, content chapters, templates, themes, Sass) with a Phoenix application scaffold and a Rust NIF, so the repository looks like a workbench rather than a finished site.",
-    "cs": "Uživatelský web na GitLab Pages sestavovaný generátorem statických stránek Zola v GitLab CI. Strom míchá části Zoly (konfigurace, kapitoly obsahu, šablony, témata, Sass) s kostrou aplikace ve Phoenixu a NIF v Rustu, takže repozitář působí spíš jako dílna než jako hotový web."
+    "en": "The GitLab Pages user site, built with the Zola static site generator in GitLab CI. The Zola parts (config.toml, content chapters) are still the book theme's sample, and the tree also carries a Phoenix application and a Rust NIF named sonic_playground, so the repository looks like a workbench rather than a finished site.",
+    "cs": "Uživatelský web na GitLab Pages sestavovaný generátorem statických stránek Zola v GitLab CI. Části pro Zolu (config.toml, kapitoly obsahu) jsou stále ukázkou tématu book a strom nese i aplikaci ve Phoenixu a NIF v Rustu pojmenované sonic_playground, takže repozitář působí spíš jako dílna než jako hotový web."
   },
   "problem": {
     "en": "A personal site on GitLab Pages needs a static build that runs in CI. The author also wanted a repeatable way to produce structured blog articles, for example about music tracks.",
@@ -43,8 +43,8 @@
       "cs": "Šablona promptu, která z metadat skladby udělá celý článek pro Zolu."
     },
     {
-      "en": "Phoenix and Rust NIF scaffold shared with an audio playground project.",
-      "cs": "Kostra s Phoenixem a NIF v Rustu sdílená s projektem audio hřiště."
+      "en": "Phoenix app and Rust NIF named sonic_playground, like the audio playground project.",
+      "cs": "Aplikace ve Phoenixu a NIF v Rustu pojmenované sonic_playground, stejně jako projekt audio hřiště."
     },
     {
       "en": "README is copied from an upstream Zola blog theme and does not describe this site.",

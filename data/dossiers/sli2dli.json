@@ -10,23 +10,29 @@
       "README.md",
       "Cargo.toml",
       "Makefile",
+      "src/build.rs",
+      "src/lib.rs",
       "src/main.rs",
-      "src/processor/processor.rs"
+      "src/processor/processor.rs",
+      "src/manifest/*.rs",
+      "src/options/options.rs",
+      "src/profiler/profile_object.rs",
+      "src/types/formatter.rs"
     ]
   },
   "provenance": "inferred",
   "kind": "cli",
   "summary": {
-    "en": "A Rust command-line tool that reads CSV files described by an SLI data-load manifest and converts them toward the DLI loading format of an analytics platform. It parses the manifest, reads rows in bulks and transposes them per column on a separate thread.",
-    "cs": "Nástroj pro příkazovou řádku v Rustu, který čte CSV soubory popsané manifestem pro nahrávání dat SLI a převádí je směrem k formátu DLI analytické platformy. Rozparsuje manifest, čte řádky po dávkách a v samostatném vlákně je transponuje po sloupcích."
+    "en": "A Rust command-line prototype for the SLI-to-DLI data-load conversion of an analytics platform. It parses an SLI manifest, reads CSV rows in bulks, transposes them per column on a separate thread and prints size, time and throughput; it does not write DLI output yet.",
+    "cs": "Prototyp nástroje pro příkazovou řádku v Rustu pro převod nahrávání dat ze SLI do DLI analytické platformy. Rozparsuje manifest SLI, čte řádky CSV po dávkách, v samostatném vlákně je transponuje po sloupcích a vypíše velikost, čas a propustnost; výstup DLI zatím nezapisuje."
   },
   "problem": {
-    "en": "Converting large CSV loads between the two upload formats in a scripting language was slow. The data has to be reorganised column by column, which is memory and CPU heavy.",
-    "cs": "Převod velkých CSV dávek mezi dvěma formáty nahrávání ve skriptovacím jazyce byl pomalý. Data se musí přeskládat po sloupcích, což je náročné na paměť i CPU."
+    "en": "Data loads described by an SLI manifest have to be reorganised column by column for the DLI format, which is memory and CPU heavy on large CSV files; the README states only that this is an SLI to DLI implementation in Rust.",
+    "cs": "Nahrávky dat popsané manifestem SLI je pro formát DLI potřeba přeskládat po sloupcích, což je u velkých CSV souborů náročné na paměť i CPU; README uvádí jen, že jde o implementaci SLI do DLI v Rustu."
   },
   "solution": {
-    "en": "Serde structs model the manifest (data set, parts, CSV parameters). The processor reads records with the csv crate, sends bulks over a bounded mpsc channel and a transpose thread accumulates values per column until an end-of-stream message; a profiler module times scopes. The README lists Bloom filters, cuckoo hashing and FNV hashing as reference material, and the build targets the native CPU with SSSE3.",
-    "cs": "Serde struktury modelují manifest (data set, části, parametry CSV). Procesor čte záznamy crate csv, posílá dávky přes omezený kanál mpsc a vlákno transpozice skládá hodnoty po sloupcích až do zprávy o konci proudu; modul profiler měří čas jednotlivých bloků. README odkazuje na Bloom filtry, cuckoo hashing a FNV hash jako podklady a build cílí na nativní CPU se SSSE3."
+    "en": "Serde structs model the manifest (data set, file, CSV parameters, parts). The processor reads records with the csv crate, sends bulks over a bounded mpsc sync_channel and a transpose thread accumulates values per column until an end-of-stream message; the manifest is loaded but not yet used by the processor, and the per-column buffers are discarded. A profiler object times its scope on drop. The README lists Bloom filters, cuckoo hashing and FNV hashing as reference material; Cargo.toml also declares crates such as crossbeam, mio and ocl that the code does not import, and asks for the native CPU with SSSE3.",
+    "cs": "Serde struktury modelují manifest (data set, soubor, parametry CSV, části). Procesor čte záznamy crate csv, posílá dávky přes omezený kanál mpsc sync_channel a vlákno transpozice skládá hodnoty po sloupcích až do zprávy o konci proudu; manifest se načte, procesor ho ale zatím nepoužívá a sloupcové buffery se zahodí. Objekt profileru při dropu změří čas svého bloku. README odkazuje na Bloom filtry, cuckoo hashing a FNV hash jako podklady; Cargo.toml deklaruje i crates jako crossbeam, mio a ocl, které kód neimportuje, a žádá nativní CPU se SSSE3."
   },
   "highlights": [
     {
@@ -34,27 +40,25 @@
       "cs": "Omezený kanál mezi čtečkou a vláknem transpozice dává zpětný tlak."
     },
     {
-      "en": "Manifest-driven parsing with serde_json.",
-      "cs": "Parsování řízené manifestem přes serde_json."
+      "en": "SLI manifest modelled with serde_json structs.",
+      "cs": "Manifest SLI namodelovaný strukturami přes serde_json."
     },
     {
-      "en": "Scope profiler built on an end-of-scope trait.",
-      "cs": "Profiler bloků postavený na traitu pro konec scope."
+      "en": "Scope profiler built on Drop and an end-of-scope trait.",
+      "cs": "Profiler bloků postavený na Drop a traitu pro konec scope."
     }
   ],
   "stack": [
     "Rust",
     "serde",
     "csv",
-    "clap",
-    "crossbeam",
-    "mio"
+    "clap"
   ],
   "architecture": {
-    "mermaid": "flowchart LR\n  A[SLI manifest] --> B[Manifest parser]\n  C[CSV files] --> D[CSV reader]\n  B --> D\n  D --> E[Bulk sender]\n  E --> F[Transpose thread]\n  F --> G[Per column data]\n  H[Profiler] --> D",
+    "mermaid": "flowchart LR\n  A[SLI manifest] --> B[Manifest parser]\n  C[CSV files] --> D[CSV reader]\n  B -.-> D\n  D --> E[Bulk sender]\n  E --> F[Transpose thread]\n  F --> G[Per column buffers]\n  D --> S[Throughput stats]\n  H[Profiler] --> D",
     "caption": {
-      "en": "Manifest-driven CSV reading with a channel into a per-column transpose thread.",
-      "cs": "Čtení CSV řízené manifestem s kanálem do vlákna transpozice po sloupcích."
+      "en": "CSV reading with a bounded channel into a per-column transpose thread; the dashed edge marks the manifest, which is parsed but not yet applied.",
+      "cs": "Čtení CSV s omezeným kanálem do vlákna transpozice po sloupcích; přerušovaná hrana značí manifest, který se rozparsuje, ale zatím neuplatní."
     }
   },
   "related": [

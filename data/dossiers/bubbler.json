@@ -25,8 +25,8 @@
     "cs": "Rychlý obrázek s bublinou obvykle vyžaduje editor a výsledkem je soubor, ne odkaz, který jde upravit a znovu sdílet."
   },
   "solution": {
-    "en": "All state lives in the URL: the script reads query parameters, renders onto a canvas, and rewrites the URL so the current composition can be bookmarked. Settings can also be loaded from a custom JSON URL or saved to a hosted JSON storage service; the page carries Open Graph and Twitter card tags for link previews.",
-    "cs": "Veškerý stav je v URL: skript načte query parametry, vykreslí canvas a přepíše URL, aby šla aktuální kompozice uložit do záložek. Nastavení lze načíst i z vlastního JSONu nebo uložit do hostované JSON služby; stránka má Open Graph a Twitter card tagy pro náhledy odkazů."
+    "en": "The script reads query parameters and renders onto a canvas; an updateURL helper builds a URL from the current texts and background, but the history call that would put it in the address bar is commented out, so the shareable state is the URL the user types. Settings can also be loaded from a custom JSON URL or saved to a hosted JSON storage service, and an inline script fills Open Graph and Twitter card tags for link previews.",
+    "cs": "Skript načte query parametry a vykreslí canvas; pomocná funkce updateURL sestaví URL z aktuálních textů a pozadí, ale volání history, které by ji zapsalo do adresního řádku, je zakomentované, takže sdílitelným stavem je URL, kterou zadá uživatel. Nastavení lze načíst i z vlastního JSONu nebo uložit do hostované JSON služby a vložený skript plní tagy Open Graph a Twitter card pro náhledy odkazů."
   },
   "highlights": [
     {
@@ -38,8 +38,8 @@
       "cs": "Bez parametrů náhodný obrázek a hláška z přiložených JSON kolekcí."
     },
     {
-      "en": "Static deployment on GitHub Pages, no build step.",
-      "cs": "Statické nasazení na GitHub Pages bez build kroku."
+      "en": "Static page published on GitHub Pages, no build step; the Actions workflow is the unchanged starter template.",
+      "cs": "Statická stránka na GitHub Pages bez build kroku; workflow v Actions je nezměněná výchozí šablona."
     },
     {
       "en": "Open Graph and Twitter card meta tags for link previews.",
@@ -54,10 +54,10 @@
     "GitHub Pages"
   ],
   "architecture": {
-    "mermaid": "flowchart LR\n  A[URL query params] --> C[script.js]\n  B[wisdoms JSON] --> C\n  I[Image set] --> C\n  C --> D[Canvas render]\n  C --> E[URL rewrite]\n  C --> F[JSON storage save]\n  D --> G[Shareable image]",
+    "mermaid": "flowchart LR\n  A[URL query params] --> C[script.js]\n  B[wisdoms JSON] --> C\n  I[Image set] --> C\n  C --> D[Canvas render]\n  C --> F[JSON storage save]\n  A --> M[Open Graph and Twitter tags]\n  D --> G[Captioned image]",
     "caption": {
-      "en": "Query parameters and bundled data drive a canvas render; the URL is the saved state.",
-      "cs": "Query parametry a přiložená data řídí vykreslení canvasu; URL je uložený stav."
+      "en": "Query parameters and bundled data drive a canvas render; the typed URL is the state.",
+      "cs": "Query parametry a přiložená data řídí vykreslení canvasu; stavem je zadaná URL."
     }
   },
   "related": [

@@ -52,7 +52,11 @@
     "PostgreSQL",
     "PostGIS",
     "Nominatim",
+    "Leaflet",
+    "Tailwind CSS",
+    "Flowbite",
     "OpenAPI",
+    "Swagger UI",
     "MCP"
   ],
   "architecture": {

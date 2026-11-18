@@ -26,8 +26,8 @@
     "cs": "Workery Microcrawleru jsou obecné: stahují stránky a potřebují logiku pro konkrétní web, aby věděly, které odkazy sledovat a jaká pole vytáhnout."
   },
   "solution": {
-    "en": "The index processor emits a fixed set of search URLs, the listing processor follows pagination and detail links, and all requests use the _escaped_fragment_ scheme to get server-rendered HTML. The details processor turns Czech labels into snake_case keys without diacritics and converts known numeric fields (total price, price per square metre, floor and plot areas, floor number, year of approval or reconstruction, ceiling height) from formatted text to integers.",
-    "cs": "Procesor index vrátí pevnou sadu vyhledávacích URL, listing sleduje stránkování a odkazy na detaily a všechny požadavky používají schéma _escaped_fragment_, aby dostaly HTML vyrenderované na serveru. Procesor details převádí české popisky na klíče ve snake_case bez diakritiky a známá číselná pole (celková cena, cena za m², plochy, podlaží, rok kolaudace či rekonstrukce, výška stropu) převádí z formátovaného textu na celá čísla."
+    "en": "The index processor emits a fixed set of search URLs (auctions, sales and rentals of flats and houses, plus the projects page), and the listing processor follows pagination and detail links; the listing and detail requests use the _escaped_fragment_ scheme to get server-rendered HTML. The details processor turns Czech labels into snake_case keys without diacritics, converts a whitelist of numeric fields (total and original price, price per square metre, areas, counts, floor, year of approval or reconstruction, ceiling height) from formatted text to integers, turns the update date (including today and yesterday) into an ISO timestamp with Moment.js and computes the price per square metre from price and usable area.",
+    "cs": "Procesor index vrátí pevnou sadu vyhledávacích URL (dražby, prodeje a pronájmy bytů a domů a k tomu stránku projektů) a listing sleduje stránkování a odkazy na detaily; požadavky na výpisy a detaily používají schéma _escaped_fragment_, aby dostaly HTML vyrenderované na serveru. Procesor details převádí české popisky na klíče ve snake_case bez diakritiky, pole z whitelistu (celková a původní cena, cena za m², plochy, počty, podlaží, rok kolaudace či rekonstrukce, výška stropu) převádí z formátovaného textu na celá čísla, datum aktualizace (i „Dnes“ a „Včera“) převádí přes Moment.js na ISO časové razítko a z ceny a užitné plochy dopočítá cenu za m²."
   },
   "highlights": [
     {
@@ -39,8 +39,8 @@
       "cs": "Převod cen a ploch na čísla řízený whitelistem polí."
     },
     {
-      "en": "Most mature site package of the family (version 0.0.11); a crawl script for it ships in microcrawler-js.",
-      "cs": "Nejvyzrálejší balíček rodiny (verze 0.0.11); skript pro jeho spuštění je v microcrawler-js."
+      "en": "Version 0.0.11; a crawl script for it ships in microcrawler-js.",
+      "cs": "Verze 0.0.11; skript pro jeho spuštění je v microcrawler-js."
     }
   ],
   "stack": [

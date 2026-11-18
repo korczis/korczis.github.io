@@ -16,42 +16,44 @@
   "provenance": "inferred",
   "kind": "cli",
   "summary": {
-    "en": "A Ruby command-line tool that converts CSV files into SQL statements for PostgreSQL. It can analyze a file, infer a schema, generate CREATE/DROP/TRUNCATE and INSERT statements from ERB templates, flatten dotted headers into underscore columns, and stream output directly to a Postgres client.",
-    "cs": "Ruby nástroj příkazové řádky, který převádí CSV soubory na SQL příkazy pro PostgreSQL. Umí analyzovat soubor, odvodit schema, generovat CREATE/DROP/TRUNCATE a INSERT příkazy z ERB šablon, zploštit tečkované hlavičky na podtržítkové sloupce a streamovat výstup rovnou do Postgres klienta."
+    "en": "A Ruby command-line tool that converts CSV files into SQL statements for PostgreSQL. It can analyze column types, generate a typed schema, emit DROP/CREATE/TRUNCATE statements from ERB templates and INSERT statements, flatten dotted headers into underscore columns, and write everything to stdout so it can be piped into psql.",
+    "cs": "Ruby nástroj příkazové řádky, který převádí CSV soubory na SQL příkazy pro PostgreSQL. Umí analyzovat typy sloupců, vygenerovat typované schema, vypsat příkazy DROP/CREATE/TRUNCATE z ERB šablon a příkazy INSERT, zploštit tečkované hlavičky na podtržítkové sloupce a vše zapsat na standardní výstup, aby šlo poslat rourou do psql."
   },
   "problem": {
     "en": "Loading arbitrary CSV into a relational database by hand means writing schema and insert SQL repeatedly and coping with nested or dotted column names.",
     "cs": "Nahrávání libovolného CSV do relační databáze ručně znamená opakovaně psát schema a insert SQL a vypořádat se s vnořenými nebo tečkovanými názvy sloupců."
   },
   "solution": {
-    "en": "The CLI exposes analyze, convert and schema commands with options for delimiter, quoting, headers and transactions, rendering SQL via dialect-sensitive ERB templates. It can wrap inserts in a transaction and optionally create or truncate the target table.",
-    "cs": "CLI nabízí příkazy analyze, convert a schema s volbami pro oddělovač, uvozování, hlavičky a transakce a renderuje SQL přes ERB šablony citlivé na dialekt. Umí obalit inserty do transakce a volitelně cílovou tabulku vytvořit nebo vyprázdnit."
+    "en": "A GLI CLI exposes analyze, convert and schema commands with options for delimiter, quoting, headers, limits and transactions. Type analyzers (bigint, decimal, boolean, date, time, UUID, CIDR, MAC address) feed the schema command, while convert creates TEXT columns from an ERB template and builds the INSERT statements in Ruby. It can wrap inserts in a transaction and optionally drop, create or truncate the target table.",
+    "cs": "CLI na GLI nabízí příkazy analyze, convert a schema s volbami pro oddělovač, uvozování, hlavičky, limity a transakce. Analyzátory typů (bigint, decimal, boolean, datum, čas, UUID, CIDR, MAC adresa) slouží příkazu schema, zatímco convert vytváří sloupce TEXT z ERB šablony a příkazy INSERT skládá v Ruby. Umí obalit inserty do transakce a volitelně cílovou tabulku smazat, vytvořit nebo vyprázdnit."
   },
   "highlights": [
     {
-      "en": "Infers a schema and generates create/insert SQL from ERB templates.",
-      "cs": "Odvodí schema a generuje create/insert SQL z ERB šablon."
+      "en": "Per-column type analyzers drive a typed schema with NOT NULL detection.",
+      "cs": "Analyzátory typů po sloupcích řídí typované schema včetně rozpoznání NOT NULL."
     },
     {
       "en": "Flattens dotted CSV headers into underscore column names.",
       "cs": "Zplošťuje tečkované CSV hlavičky na podtržítkové názvy sloupců."
     },
     {
-      "en": "Can stream generated SQL directly into a Postgres client.",
-      "cs": "Umí streamovat generované SQL rovnou do Postgres klienta."
+      "en": "Writes SQL to stdout, ready to pipe into psql.",
+      "cs": "Zapisuje SQL na standardní výstup, připravené k poslání rourou do psql."
     }
   ],
   "stack": [
     "Ruby",
     "RubyGems",
-    "PostgreSQL",
-    "ERB"
+    "GLI",
+    "ERB",
+    "RSpec",
+    "PostgreSQL"
   ],
   "architecture": {
-    "mermaid": "flowchart LR\n  A[CSV file] --> B[Analyze]\n  B --> C[Schema]\n  C --> D[ERB templates]\n  D --> E[SQL statements]\n  E --> F[PostgreSQL]",
+    "mermaid": "flowchart LR\n  A[CSV file] --> Ana[Type analyzers]\n  Ana --> Sch[schema command]\n  A --> Conv[convert command]\n  Sch --> Erb[ERB DDL templates]\n  Conv --> Erb\n  Conv --> Ins[INSERT statements]\n  Erb --> Out[SQL on stdout]\n  Ins --> Out\n  Out --> Psql[psql]",
     "caption": {
-      "en": "A CSV is analysed into a schema that ERB templates render as SQL for PostgreSQL.",
-      "cs": "CSV se zanalyzuje na schema, které ERB šablony vykreslí jako SQL pro PostgreSQL."
+      "en": "A CSV is analysed into a schema or converted into inserts; the SQL goes to stdout for psql.",
+      "cs": "CSV se zanalyzuje na schema nebo převede na inserty; SQL jde na standardní výstup pro psql."
     }
   },
   "related": [

@@ -19,8 +19,8 @@
     "cs": "Zamýšlený společný základ pro crawlery jednotlivých webů v Microcrawleru. Na hlavě výchozí větve obsahuje jen package.json, nadpis v README a licenci; deklarovaný vstupní bod src/index.js chybí."
   },
   "problem": {
-    "en": "Site packages repeat the same helpers and would benefit from a common base.",
-    "cs": "Balíčky webů opakují stejné pomocné funkce a hodil by se jim společný základ."
+    "en": "The repository states no problem; its name suggests a common base for the site packages.",
+    "cs": "Repozitář žádný problém neuvádí; název naznačuje společný základ pro balíčky webů."
   },
   "solution": {
     "en": "Most site packages already declare a dependency on version 0.0.1; what it was meant to provide is unclear from the repository.",

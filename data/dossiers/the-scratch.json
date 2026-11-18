@@ -23,8 +23,8 @@
     "cs": "Znovupoužitelný základ webové aplikace potřebuje mít propojené autentizaci, API, real-time kanály a perzistenci, ne jen kostru z generátoru."
   },
   "solution": {
-    "en": "Phoenix 1.3 serves an Elm SPA built with webpack and exposes a GraphQL schema with resolvers via Absinthe. Guardian issues JWTs, Ueberauth providers handle social OAuth, a room channel and authenticated socket carry real-time traffic, and Ecto with PostgreSQL stores data. A Rust crate is compiled with Rustler, gauc provides a Couchbase module, and exprotobuf loads protobuf definitions for orders, currency pairs and users.",
-    "cs": "Phoenix 1.3 servíruje Elm SPA sestavenou webpackem a přes Absinthe vystavuje GraphQL schéma s resolvery. Guardian vydává JWT, poskytovatelé Ueberauth obsluhují sociální OAuth, room channel a autentizovaný socket nesou real-time provoz a Ecto s PostgreSQL ukládá data. Rustový crate se kompiluje přes Rustler, gauc dodává modul pro Couchbase a exprotobuf načítá protobuf definice pro objednávky, měnové páry a uživatele."
+    "en": "Phoenix 1.3 serves an Elm SPA built with webpack and exposes a GraphQL schema with resolvers via Absinthe. Guardian issues JWTs, Ueberauth providers handle social OAuth, and a room channel and authenticated socket carry real-time traffic. A Rust crate is compiled with Rustler, gauc provides a Couchbase module, and exprotobuf loads protobuf definitions for orders, currency pairs and users. The README marks PostgreSQL persistence as done, but mix.exs declares no Ecto or Postgrex dependency and the tree has no repo or migrations, so storage is not wired up and the user resolvers are still stubs.",
+    "cs": "Phoenix 1.3 servíruje Elm SPA sestavenou webpackem a přes Absinthe vystavuje GraphQL schéma s resolvery. Guardian vydává JWT, poskytovatelé Ueberauth obsluhují sociální OAuth a room channel s autentizovaným socketem nesou real-time provoz. Rustový crate se kompiluje přes Rustler, gauc dodává modul pro Couchbase a exprotobuf načítá protobuf definice pro objednávky, měnové páry a uživatele. README označuje perzistenci v PostgreSQL za hotovou, jenže mix.exs žádnou závislost na Ecto ani Postgrex nedeklaruje a ve stromu není repo ani migrace, takže úložiště napojené není a resolvery uživatelů jsou zatím jen stuby."
   },
   "highlights": [
     {
@@ -40,8 +40,8 @@
       "cs": "Pokrytí serverových testů hlášené přes ExCoveralls"
     },
     {
-      "en": "Rust NIF and Couchbase client alongside PostgreSQL",
-      "cs": "Rust NIF a klient pro Couchbase vedle PostgreSQL"
+      "en": "Rust NIF and a Couchbase client module; persistence resolvers are still stubs",
+      "cs": "Rust NIF a modul klienta pro Couchbase; resolvery perzistence jsou zatím stuby"
     }
   ],
   "stack": [
@@ -52,8 +52,6 @@
     "GraphQL",
     "Guardian",
     "Ueberauth",
-    "Ecto",
-    "PostgreSQL",
     "Rust",
     "Rustler",
     "Couchbase",
@@ -61,7 +59,7 @@
     "webpack"
   ],
   "architecture": {
-    "mermaid": "flowchart LR\n  Elm[Elm SPA] --> Gql[GraphQL Absinthe]\n  Elm --> Ws[Phoenix channels]\n  Elm --> Auth[Ueberauth OAuth]\n  Auth --> Jwt[Guardian JWT]\n  Gql --> Ecto[Ecto]\n  Ecto --> Pg[PostgreSQL]\n  Gql --> Cb[Couchbase via gauc]\n  Gql --> Nif[Rust NIF]",
+    "mermaid": "flowchart LR\n  Elm[Elm SPA] --> Gql[GraphQL Absinthe]\n  Elm --> Ws[Phoenix channels]\n  Elm --> Auth[Ueberauth OAuth]\n  Auth --> Jwt[Guardian JWT]\n  Gql --> Cb[Couchbase via gauc]\n  Gql --> Nif[Rust NIF]\n  Vfs[In-memory VFS] --> Ws",
     "caption": {
       "en": "Elm client against a Phoenix backend with several data and native integrations.",
       "cs": "Elm klient proti backendu ve Phoenixu s několika datovými a nativními integracemi."

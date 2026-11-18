@@ -24,13 +24,13 @@
     "cs": "Občanská petice potřebovala jednoduchou veřejnou webovou stránku."
   },
   "solution": {
-    "en": "Generated Express scaffold (bin/www, app.js, routes) with a single index route rendering a Hogan view, plus HTML5 Boilerplate assets in public/. Beyond the heading and the statutory petition line, the sections are lorem ipsum; no form or signature storage exists in the code.",
-    "cs": "Vygenerovaná kostra Express (bin/www, app.js, routes) s jedinou routou index, která renderuje šablonu Hogan, a assety z HTML5 Boilerplate ve složce public/. Kromě nadpisu a zákonné hlavičky petice jsou sekce lorem ipsum; formulář ani ukládání podpisů v kódu nejsou."
+    "en": "Generated Express scaffold (bin/www, app.js, routes) with an index route rendering a Hogan view, the generator's placeholder /users route, and HTML5 Boilerplate assets in public/. Beyond the heading and the statutory petition line, the sections are lorem ipsum; no form or signature storage exists in the code.",
+    "cs": "Vygenerovaná kostra Express (bin/www, app.js, routes) s routou index, která renderuje šablonu Hogan, se zástupnou routou /users z generátoru a s assety z HTML5 Boilerplate ve složce public/. Kromě nadpisu a zákonné hlavičky petice jsou sekce lorem ipsum; formulář ani ukládání podpisů v kódu nejsou."
   },
   "highlights": [
     {
-      "en": "Minimal Express and Hogan setup, one route.",
-      "cs": "Minimální sestava Express a Hogan, jedna routa."
+      "en": "Minimal Express and Hogan setup with one real page.",
+      "cs": "Minimální sestava Express a Hogan s jedinou skutečnou stránkou."
     },
     {
       "en": "Content never completed.",
@@ -48,8 +48,8 @@
   "architecture": {
     "mermaid": "flowchart LR\n  B[bin www] --> A[Express app]\n  A --> R[index route]\n  R --> V[Hogan view]\n  A --> S[static public assets]",
     "caption": {
-      "en": "Single-route Express site.",
-      "cs": "Web v Express s jedinou routou."
+      "en": "Express site with one real page.",
+      "cs": "Web v Express s jedinou skutečnou stránkou."
     }
   },
   "related": [

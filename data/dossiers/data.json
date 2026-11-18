@@ -16,33 +16,33 @@
   "provenance": "inferred",
   "kind": "data",
   "summary": {
-    "en": "A grab-bag repository of public reference data, organised into directories for codes, dictionaries, a world factbook, shapefiles and miscellaneous files. The README lists source links such as regional IP-to-geo delegation files and points to a related ESRI dataset framework.",
-    "cs": "Sběrné repo veřejných referenčních dat, uspořádané do adresářů pro kódy, slovníky, světový factbook, shapefile a různé soubory. README vypisuje odkazy na zdroje jako regionální IP-to-geo delegační soubory a odkazuje na související framework pro ESRI data."
+    "en": "A repository of public reference data: ISO and FIPS code tables, word-frequency lists in about forty languages, per-indicator world factbook CSVs and country capital and detail tables. The README also lists shapefiles and tmp directories that are not present at this commit, and links the regional internet registries' delegation files and a related ESRI dataset framework.",
+    "cs": "Repozitář veřejných referenčních dat: tabulky kódů ISO a FIPS, frekvenční seznamy slov zhruba ve čtyřiceti jazycích, CSV světového factbooku po jednotlivých ukazatelích a tabulky hlavních měst a údajů o zemích. README uvádí i adresáře shapefiles a tmp, které v tomto commitu nejsou, a odkazuje na delegační soubory regionálních internetových registrů a na související framework pro data ESRI."
   },
   "problem": {
     "en": "Projects that reuse the same public reference data benefit from one place to keep codes, dictionaries and geo files together.",
     "cs": "Projekty, které znovu používají stejná veřejná referenční data, těží z jednoho místa, kde drží kódy, slovníky a geo soubory pohromadě."
   },
   "solution": {
-    "en": "The repository collects such data by category and documents where each source comes from. It is a data store, not code.",
-    "cs": "Repo sbírá taková data podle kategorie a dokumentuje, odkud každý zdroj pochází. Jde o datové úložiště, ne o kód."
+    "en": "The repository collects such data by category as CSV and text files; the README and a source note for the word lists say where some of it comes from. It is a data store, not code.",
+    "cs": "Repozitář taková data sbírá podle kategorií jako CSV a textové soubory; README a poznámka o zdroji u seznamů slov říkají, odkud část dat pochází. Jde o datové úložiště, ne o kód."
   },
   "highlights": [
     {
-      "en": "Categorised public reference data (codes, dicts, factbook, shapefiles).",
-      "cs": "Kategorizovaná veřejná referenční data (kódy, slovníky, factbook, shapefile)."
+      "en": "Categorised public reference data: codes, word-frequency lists, factbook indicators and country tables.",
+      "cs": "Kategorizovaná veřejná referenční data: kódy, frekvenční seznamy slov, ukazatele factbooku a tabulky zemí."
     },
     {
-      "en": "README documents external source links including IP-to-geo delegation files.",
-      "cs": "README dokumentuje odkazy na externí zdroje včetně IP-to-geo delegačních souborů."
+      "en": "README links external sources, including the regional internet registries' IP delegation files.",
+      "cs": "README odkazuje na externí zdroje včetně delegačních souborů IP adres regionálních internetových registrů."
     }
   ],
   "stack": [],
   "architecture": {
-    "mermaid": "flowchart LR\n  A[Public sources] --> B[Download]\n  B --> C[Categorised folders]\n  C --> D[Consuming projects]",
+    "mermaid": "flowchart LR\n  A[Public sources] --> C[codes]\n  A --> D[dicts]\n  A --> F[factbook]\n  A --> O[other]\n  C --> P[Consuming projects]\n  D --> P\n  F --> P\n  O --> P",
     "caption": {
-      "en": "Public sources are stored in categorised folders for consuming projects.",
-      "cs": "Veřejné zdroje jsou uloženy v kategorizovaných složkách pro konzumující projekty."
+      "en": "Public sources are stored in four category folders for consuming projects.",
+      "cs": "Veřejné zdroje jsou uložené ve čtyřech složkách podle kategorie pro projekty, které je používají."
     }
   },
   "related": [

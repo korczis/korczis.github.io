@@ -15,21 +15,25 @@
   "provenance": "inferred",
   "kind": "experiment",
   "summary": {
-    "en": "A JavaScript project built on a React hot-reload boilerplate with a Babel dev server, Webpack config and a src app. The README is the upstream boilerplate text; the repository name indicates it was adapted toward proxying a BI platform frontend.",
-    "cs": "JavaScriptový projekt postavený na React hot-reload boilerplate s Babel dev serverem, Webpack configem a src aplikací. README je převzatý text boilerplate; název repa naznačuje adaptaci směrem k proxy frontendu BI platformy."
+    "en": "A Node.js Express server scaffold with webpack hot reloading that serves a placeholder React page. It started from a React hot-reload boilerplate whose README it still carries; the proxying its name promises is not implemented.",
+    "cs": "Kostra serveru v Node.js a Expressu s hot reloadem přes webpack, která servíruje zástupnou React stránku. Vznikla z React hot-reload boilerplate, jehož README stále obsahuje; proxy, kterou slibuje název, implementovaná není."
   },
   "problem": {
-    "en": "Iterating on a BI platform frontend benefits from live-reloading React components and a local dev proxy, rather than full page reloads.",
-    "cs": "Vývoj frontendu BI platformy těží z živě přenačítaných React komponent a lokální dev proxy namísto plných reloadů stránky."
+    "en": "The name points at a local proxy in front of a BI platform's API for frontend work with live-reloading React components; the repository stops before that proxy exists.",
+    "cs": "Název míří na lokální proxy před API BI platformy pro vývoj frontendu s živě přenačítanými React komponentami; repozitář ale končí dřív, než taková proxy vznikne."
   },
   "solution": {
-    "en": "The project wires a Babel-transpiled Node dev server, Webpack and react-hot-loader for live editing, with a static directory served alongside. Its own purpose beyond the boilerplate is only implied by the name.",
-    "cs": "Projekt propojuje Babel-transpilovaný Node dev server, Webpack a react-hot-loader pro živou editaci, se statickým adresářem servírovaným vedle. Vlastní účel nad rámec boilerplate je naznačen jen názvem."
+    "en": "bin/server.js registers Babel at runtime and starts an Express server on port 1616 that attaches webpack-dev-middleware and webpack-hot-middleware in development, serves the static directory and returns index.html at the root. A superagent-based ApiClient that would forward cookies to an API host sits unused and imports a config module that does not exist; express and superagent are also missing from package.json.",
+    "cs": "bin/server.js zaregistruje Babel za běhu a spustí Express server na portu 1616, který ve vývoji připojí webpack-dev-middleware a webpack-hot-middleware, servíruje statický adresář a na kořeni vrací index.html. ApiClient nad superagentem, který by předával cookies na API server, leží nevyužitý a importuje neexistující modul config; express ani superagent navíc nejsou v package.json."
   },
   "highlights": [
     {
-      "en": "React hot-loading dev setup with a Babel Node server and Webpack.",
-      "cs": "React hot-loading vývojové prostředí s Babel Node serverem a Webpackem."
+      "en": "Express server with webpack dev and hot middleware for live React editing.",
+      "cs": "Express server s webpack dev a hot middlewarem pro živou editaci React komponent."
+    },
+    {
+      "en": "ApiClient sketch that forwards cookies to an API host, not wired to any route.",
+      "cs": "Náčrt ApiClienta, který předává cookies na API server, nenapojený na žádnou routu."
     },
     {
       "en": "README is the upstream boilerplate; the proxy intent is inferred from the name.",
@@ -38,19 +42,21 @@
   ],
   "stack": [
     "JavaScript",
+    "Node.js",
+    "Express",
     "React",
     "Webpack",
     "Babel"
   ],
   "architecture": {
-    "mermaid": "flowchart LR\n  A[Browser] --> B[Dev server]\n  B --> C[Webpack bundle]\n  C --> D[React app]\n  B --> E[Backend proxy]\n  E --> F[BI platform]",
+    "mermaid": "flowchart LR\n  A[Browser] --> B[Express server]\n  B --> C[webpack dev middleware]\n  B --> D[hot middleware]\n  C --> E[React placeholder app]\n  B --> F[static index.html]\n  G[ApiClient sketch] -.-> H[API host, not wired]",
     "caption": {
-      "en": "A Babel dev server bundles a React app with Webpack and proxies calls to a backend platform.",
-      "cs": "Babel dev server sestavuje React aplikaci Webpackem a přeposílá volání na backendovou platformu."
+      "en": "An Express dev server bundles and hot-reloads a placeholder React app; the API client is not connected.",
+      "cs": "Vývojový Express server sestavuje a za běhu přenačítá zástupnou React aplikaci; API klient není připojený."
     }
   },
   "related": [
     "gooddata-fs"
   ],
-  "confidence": "medium"
+  "confidence": "low"
 }

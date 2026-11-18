@@ -25,8 +25,8 @@
     "cs": "Prohlížečová hra potřebuje vykreslování, vstup, účty a živou přítomnost ostatních klientů. Zamýšlený herní design repozitář nepopisuje."
   },
   "solution": {
-    "en": "The React/Redux client draws a WebGL scene with Three.js, reads keys through keyboardjs and shows stats.js metrics. On the server, Guardian handles auth, a GenServer stores users in DETS with hashed passwords, and a client channel broadcasts worker join, update and remove events to a lobby.",
-    "cs": "React/Redux klient kreslí WebGL scénu v Three.js, klávesy čte přes keyboardjs a zobrazuje metriky stats.js. Na serveru řeší autentizaci Guardian, uživatele ukládá GenServer do DETS s hashovanými hesly a kanál klientů rozesílá do lobby události o připojení, změně a odpojení workerů."
+    "en": "The React/Redux client draws a WebGL scene with Three.js, reads keys through keyboardjs and shows stats.js metrics. On the server, Guardian issues JWTs after a bcrypt password check, a GenServer stores users in DETS, and a client channel has broadcasts that update, remove and clear workers in a lobby. An Ecto repository on PostgreSQL is started as well, but the code keeps no users in it.",
+    "cs": "React/Redux klient kreslí WebGL scénu v Three.js, klávesy čte přes keyboardjs a zobrazuje metriky stats.js. Na serveru vydává Guardian JWT po ověření hesla přes bcrypt, uživatele ukládá GenServer do DETS a kanál klientů má broadcasty, které v lobby aktualizují, odebírají a mažou workery. Spouští se i Ecto repozitář nad PostgreSQL, uživatele v něm ale kód nedrží."
   },
   "highlights": [
     {
@@ -34,8 +34,8 @@
       "cs": "Scéna v Three.js uvnitř React kontejneru napojeného na Redux."
     },
     {
-      "en": "Users persisted in DETS through a GenServer instead of a database.",
-      "cs": "Uživatelé uložení v DETS přes GenServer místo databáze."
+      "en": "Users persisted in DETS through a GenServer, although an Ecto repository on PostgreSQL is also started.",
+      "cs": "Uživatelé uložení v DETS přes GenServer, přestože se spouští i Ecto repozitář nad PostgreSQL."
     },
     {
       "en": "Lobby broadcasts over Phoenix channels.",

@@ -9,7 +9,12 @@
     "read": [
       "README.md",
       "top-level tree",
-      "system/"
+      "system/",
+      "QUICKSTART.md",
+      "LLM_INSTRUCTIONS.md",
+      "THEMATIC_PRESETS.md",
+      "system/metrics_tracking.md",
+      "system/traits_definition.md"
     ]
   },
   "provenance": "inferred",
@@ -23,13 +28,13 @@
     "cs": "Přimět LLM, aby konzistentně napodobilo konkrétní styl psaní, je obtížné, a změny stylu mezi verzemi se málokdy měří."
   },
   "solution": {
-    "en": "A set of Markdown documents defines traits, metrics tracking, argument quality, fragment logic, perspective flow and morality guidelines, alongside a manual, glossary, quickstart, thematic presets and dedicated LLM instructions. The workflow runs iterative loops from a template, watches mood and metrics and ends with a final prompt.",
-    "cs": "Sada markdownových dokumentů definuje traits, sledování metrik, kvalitu argumentace, logiku fragmentů, tok perspektivy a morální zásady; k tomu manuál, slovníček, quickstart, tematické presety a samostatné instrukce pro LLM. Postup běží v iteracích podle šablony, sleduje náladu a metriky a končí finálním promptem."
+    "en": "A set of Markdown documents defines six traits (Depth, Humor, Reflection, Resilience, Complexity, Morality), snapshot, delta and trend metrics, argument quality, fragment logic, perspective flow and morality guidelines, alongside a manual, glossary, quickstart, thematic presets and dedicated LLM instructions. The quickstart takes a text sample, analyses style, metrics and mood, offers a micro-sample and iterates to a final prompt. The README also lists prompt, templates, examples, exports and assets directories and a loop template that are not in the tree at this commit.",
+    "cs": "Sada markdownových dokumentů definuje šest traits (Depth, Humor, Reflection, Resilience, Complexity, Morality), metriky typu snapshot, delta a trend, kvalitu argumentace, logiku fragmentů, tok perspektivy a morální zásady; k tomu manuál, slovníček, quickstart, tematické presety a samostatné instrukce pro LLM. Quickstart přijme ukázku textu, rozebere styl, metriky a náladu, nabídne micro-sample a iteruje k finálnímu promptu. README navíc uvádí adresáře prompt, templates, examples, exports a assets a šablonu smyčky, které v tomto commitu ve stromu nejsou."
   },
   "highlights": [
     {
-      "en": "Style captured as named traits with quantified metrics.",
-      "cs": "Styl zachycený jako pojmenované traits s kvantifikovanými metrikami."
+      "en": "Style captured as six named traits with snapshot, delta and trend metrics.",
+      "cs": "Styl zachycený jako šest pojmenovaných traits s metrikami snapshot, delta a trend."
     },
     {
       "en": "Dedicated LLM instructions and thematic presets.",
@@ -45,7 +50,7 @@
     "LLM prompting"
   ],
   "architecture": {
-    "mermaid": "flowchart LR\n  Sample[Writing sample] --> Traits[Trait analysis]\n  Traits --> Metrics[Metrics]\n  Metrics --> Loop[Iteration loop]\n  Loop --> Mood[Mood tracking]\n  Mood --> Loop\n  Loop --> Final[Final prompt]",
+    "mermaid": "flowchart LR\n  Sample[Writing sample] --> Traits[Trait analysis]\n  Traits --> Metrics[Metrics]\n  Metrics --> Micro[Micro-sample]\n  Micro --> Loop[Iteration loop]\n  Loop --> Mood[Mood tracking]\n  Mood --> Loop\n  Loop --> Final[Final prompt]",
     "caption": {
       "en": "A style is analysed into traits and metrics, refined in loops and condensed into a final prompt.",
       "cs": "Styl se rozloží na traits a metriky, zpřesňuje se ve smyčkách a zhustí do finálního promptu."

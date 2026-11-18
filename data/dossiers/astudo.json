@@ -27,8 +27,8 @@
     "cs": "BEAM nemá nativní přístup k MIDI zařízením a vstup a výstup zařízení v reálném čase se snáz píše v Rustu. Projekt zkoumá, jak napojit MIDI engine v Rustu do aplikace v Elixiru s webovým rozhraním."
   },
   "solution": {
-    "en": "The core app has Midi, Midi.Input and Midi.Output modules backed by a Native NIF module. The Rust crate builds both a cdylib for the NIF and a standalone binary, uses midir for device access and tokio with tonic and prost for gRPC; the proto folder includes service and example definitions. The web app is a Phoenix project with LiveView layouts and esbuild assets.",
-    "cs": "Jádrová aplikace má moduly Midi, Midi.Input a Midi.Output, za kterými stojí NIF modul Native. Rustový crate se sestavuje jako cdylib pro NIF i jako samostatná binárka, pro přístup k zařízením používá midir a pro gRPC tokio s tonic a prost; složka proto obsahuje definice služby i ukázkové definice. Webová část je projekt ve Phoenixu s layouty pro LiveView a assety přes esbuild."
+    "en": "In the core app, an Astudo.Midi module lists inputs and outputs through the Rustler NIF module Astudo.Native, which also exposes a call to start the gRPC service; Midi.Input and Midi.Output are plain structs. The Rust crate builds both a cdylib for the NIF and a standalone binary, uses midir for device access and tokio with tonic and prost for gRPC; the proto folder holds the service definition beside example protos. The web app is a Phoenix 1.6 project with LiveView layouts, LiveDashboard and esbuild assets, and its one page does not call the MIDI modules yet.",
+    "cs": "V jádrové aplikaci vypisuje modul Astudo.Midi vstupy a výstupy přes NIF modul Astudo.Native v Rustleru, který nabízí i volání pro start gRPC služby; Midi.Input a Midi.Output jsou prosté struktury. Rustový crate se sestavuje jako cdylib pro NIF i jako samostatná binárka, pro přístup k zařízením používá midir a pro gRPC tokio s tonic a prost; složka proto obsahuje definici služby vedle ukázkových proto souborů. Webová část je projekt ve Phoenixu 1.6 s layouty pro LiveView, LiveDashboardem a assety přes esbuild a jeho jediná stránka MIDI moduly zatím nevolá."
   },
   "highlights": [
     {
@@ -62,10 +62,10 @@
     "Docker"
   ],
   "architecture": {
-    "mermaid": "flowchart LR\n  DEV[MIDI device] --> MIDIR[midir]\n  MIDIR --> ENG[Rust MIDI engine]\n  ENG --> NIF[Rustler NIF]\n  NIF --> EX[Elixir Midi modules]\n  EX --> WEB[Phoenix web app]\n  ENG --> GRPC[tonic gRPC service]\n  PROTO[Proto definitions] --> GRPC",
+    "mermaid": "flowchart LR\n  DEV[MIDI device] --> MIDIR[midir]\n  MIDIR --> ENG[Rust MIDI engine]\n  ENG --> NIF[Rustler NIF]\n  NIF --> EX[Elixir Midi modules]\n  WEB[Phoenix web app] -.-> EX\n  ENG --> GRPC[tonic gRPC service]\n  PROTO[Proto definitions] --> GRPC",
     "caption": {
-      "en": "MIDI events flow from the device through Rust into Elixir; the same engine can be reached over gRPC.",
-      "cs": "MIDI události tečou ze zařízení přes Rust do Elixiru; ke stejnému enginu se lze dostat i přes gRPC."
+      "en": "MIDI device lists flow from Rust into Elixir through the NIF, and the same engine can be reached over gRPC; the dashed link from the web app is not wired yet.",
+      "cs": "Seznamy MIDI zařízení tečou z Rustu do Elixiru přes NIF a ke stejnému enginu se lze dostat i přes gRPC; přerušované spojení z webové aplikace zatím není zapojené."
     }
   },
   "related": [

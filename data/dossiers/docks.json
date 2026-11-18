@@ -15,21 +15,21 @@
   "provenance": "inferred",
   "kind": "config",
   "summary": {
-    "en": "A collection of Dockerfiles and helper scripts for the data services the crawler stack depended on: Couchbase, Elasticsearch, MongoDB, PostGIS, RabbitMQ and Nominatim, plus minimal glibc and Java 8 base images.",
-    "cs": "Sada Dockerfilů a pomocných skriptů pro datové služby, na kterých stál crawler: Couchbase, Elasticsearch, MongoDB, PostGIS, RabbitMQ a Nominatim, k tomu minimální base image s glibc a s Javou 8."
+    "en": "A collection of Dockerfiles and helper scripts for data services: Couchbase, Elasticsearch, MongoDB, PostGIS, RabbitMQ and Nominatim, plus minimal Alpine-based glibc and Java 8 base images.",
+    "cs": "Sada Dockerfilů a pomocných skriptů pro datové služby: Couchbase, Elasticsearch, MongoDB, PostGIS, RabbitMQ a Nominatim, k tomu minimální base image s glibc a s Javou 8 nad Alpine."
   },
   "problem": {
     "en": "Each backing service needed its own image with project-specific configuration, and the build, push and run commands differed per service.",
     "cs": "Každá podpůrná služba potřebovala vlastní image s konfigurací pro projekt a příkazy pro build, push a spuštění se služba od služby lišily."
   },
   "solution": {
-    "en": "One directory per service, each with a Dockerfile, its configuration files and uniform build.sh, pull.sh, push.sh and run.sh scripts. Elasticsearch ships its own elasticsearch.yml and logging config, PostGIS an init script that enables the extension, Nominatim its Apache and PHP settings; an Ubuntu base and a Kibana image are pulled in as git submodules.",
-    "cs": "Každá služba má vlastní adresář s Dockerfilem, konfigurací a jednotnými skripty build.sh, pull.sh, push.sh a run.sh. Elasticsearch má vlastní elasticsearch.yml a konfiguraci logování, PostGIS init skript zapínající rozšíření, Nominatim nastavení Apache a PHP; Ubuntu base a Kibana image jsou připojené jako git submoduly."
+    "en": "One directory per service, each with a Dockerfile and its configuration; Couchbase, Elasticsearch, MongoDB, PostGIS and RabbitMQ also carry uniform build.sh, pull.sh, push.sh and run.sh scripts. Elasticsearch ships its own elasticsearch.yml and logging config, PostGIS an init script that loads the PostGIS extensions into a template database, Nominatim its Apache and PHP settings. .gitmodules declares an Ubuntu base and a Kibana image as submodules, but the tree records neither.",
+    "cs": "Každá služba má vlastní adresář s Dockerfilem a konfigurací; Couchbase, Elasticsearch, MongoDB, PostGIS a RabbitMQ mají navíc jednotné skripty build.sh, pull.sh, push.sh a run.sh. Elasticsearch má vlastní elasticsearch.yml a konfiguraci logování, PostGIS init skript, který nahraje rozšíření PostGIS do šablonové databáze, Nominatim nastavení Apache a PHP. .gitmodules deklaruje jako submoduly Ubuntu base a image pro Kibanu, strom ale nezaznamenává ani jeden."
   },
   "highlights": [
     {
-      "en": "Same four-script interface (build, pull, push, run) for every service.",
-      "cs": "Stejné rozhraní čtyř skriptů (build, pull, push, run) pro každou službu."
+      "en": "The same four-script interface (build, pull, push, run) for five of the six services.",
+      "cs": "Stejné rozhraní čtyř skriptů (build, pull, push, run) u pěti ze šesti služeb."
     },
     {
       "en": "Includes a geocoding service (Nominatim) and a spatial database (PostGIS).",
@@ -53,8 +53,8 @@
   "architecture": {
     "mermaid": "flowchart TD\n  D[docks] --> B[Base images]\n  D --> S[Service images]\n  B --> G[minimal glibc]\n  B --> J[minimal Java 8]\n  S --> CB[Couchbase]\n  S --> ES[Elasticsearch]\n  S --> MQ[RabbitMQ]\n  S --> PG[PostGIS]\n  S --> NM[Nominatim]\n  S --> MG[MongoDB]",
     "caption": {
-      "en": "Base images and per-service images, each with the same script interface.",
-      "cs": "Base image a image jednotlivých služeb, každý se stejným rozhraním skriptů."
+      "en": "Base images and per-service images; most services share the same script interface.",
+      "cs": "Base image a image jednotlivých služeb; většina služeb sdílí stejné rozhraní skriptů."
     }
   },
   "related": [

@@ -17,21 +17,21 @@
   "provenance": "inferred",
   "kind": "experiment",
   "summary": {
-    "en": "A polyglot learning monorepo for practising languages, interop and build tooling under one CMake/Make top level. It holds hello-world and FFI examples in C, C++, Elixir, Haskell, Node.js, Prolog, Rust and Swift, plus small apps such as a Rust terminal calculator, a Qt expression evaluator and a SwiftUI app with a Redux-style store.",
-    "cs": "Vícejazyčné cvičné monorepo pro trénink jazyků, interoperability a build nástrojů pod jedním CMake/Make kořenem. Obsahuje hello-world a FFI příklady v C, C++, Elixiru, Haskellu, Node.js, Prologu, Rustu a Swiftu a k tomu menší aplikace: terminálovou kalkulačku v Rustu, vyhodnocovač výrazů v Qt a SwiftUI aplikaci se storem ve stylu Reduxu."
+    "en": "A polyglot learning monorepo for practising languages, interop and build tooling, with CMake and Make builds. It holds hello-world and FFI examples in C, C++, Elixir, Haskell, Node.js, Prolog, Rust and Swift, plus small apps such as a Rust terminal calculator, a Qt expression evaluator and a SwiftUI app with a Redux-style store.",
+    "cs": "Vícejazyčné cvičné monorepo pro trénink jazyků, interoperability a build nástrojů, s buildy v CMake a Make. Obsahuje hello-world a FFI příklady v C, C++, Elixiru, Haskellu, Node.js, Prologu, Rustu a Swiftu a k tomu menší aplikace: terminálovou kalkulačku v Rustu, vyhodnocovač výrazů v Qt a SwiftUI aplikaci se storem ve stylu Reduxu."
   },
   "problem": {
-    "en": "Learning how languages call each other (NIFs, N-API addons, embedded Prolog, C from Haskell) is easiest when every example builds from one place with the same conventions.",
-    "cs": "Jak se jazyky navzájem volají (NIF, N-API addony, vložený Prolog, C z Haskellu), se nejlépe učí, když se všechny příklady staví z jednoho místa podle stejných konvencí."
+    "en": "Learning how languages call each other (NIFs, N-API addons, Haskell FFI in both directions) is easiest when every example builds from one place with the same conventions.",
+    "cs": "Jak se jazyky navzájem volají (NIF, N-API addony, Haskell FFI oběma směry), se nejlépe učí, když se všechny příklady staví z jednoho místa podle stejných konvencí."
   },
   "solution": {
-    "en": "A root CMakeLists adds apps and examples as subprojects; the Elixir example carries native C and Rust NIF crates, the Node example covers nan, N-API and node-addon-api, and an interop folder embeds Prolog from C. Docker Compose brings up Elasticsearch and Kibana for the Elixir backend, and GitLab CI builds it.",
-    "cs": "Kořenový CMakeLists přidává aplikace a příklady jako podprojekty; příklad v Elixiru nese nativní NIF v C a Rustu, příklad v Node pokrývá nan, N-API i node-addon-api a složka interop vkládá Prolog do C. Docker Compose spouští Elasticsearch a Kibanu pro backend v Elixiru a GitLab CI ho staví."
+    "en": "A root CMakeLists adds the apps and examples directories, where CMake covers the Qt evaluator and the C/C++ examples, and a recursive Makefile walks the seven language examples. The Elixir example carries native C and Rust NIF crates, the Node example covers nan, N-API and node-addon-api, and the interop folder holds only a Makefile for embedding Prolog in C without its C sources. Docker Compose brings up Elasticsearch, Kibana, PostGIS and RabbitMQ next to the Elixir app, which has its own GitLab CI pipeline, although the root CI include points at a path that does not exist.",
+    "cs": "Kořenový CMakeLists přidává adresáře apps a examples, kde CMake pokrývá vyhodnocovač v Qt a příklady v C/C++, a rekurzivní Makefile prochází příklady sedmi jazyků. Příklad v Elixiru nese nativní NIF v C a Rustu, příklad v Node pokrývá nan, N-API i node-addon-api a složka interop obsahuje jen Makefile pro vložení Prologu do C, bez samotných zdrojáků v C. Docker Compose spouští Elasticsearch, Kibanu, PostGIS a RabbitMQ vedle aplikace v Elixiru, která má vlastní GitLab CI pipeline, kořenový include CI ale míří na neexistující cestu."
   },
   "highlights": [
     {
-      "en": "Eight languages under one CMake/Make build.",
-      "cs": "Osm jazyků pod jedním buildem CMake/Make."
+      "en": "Examples in seven languages wired into one recursive Makefile; CMake covers the C/C++ parts.",
+      "cs": "Příklady v sedmi jazycích propojené jedním rekurzivním Makefilem; části v C/C++ pokrývá CMake."
     },
     {
       "en": "Elixir NIFs in both C and Rust; three Node.js native addon styles.",
@@ -42,12 +42,12 @@
       "cs": "Ukázky v C/C++ včetně řešiče proudění s OpenGL/GLUT."
     },
     {
-      "en": "Prolog embedded in C; Haskell calling C/C++.",
-      "cs": "Prolog vložený do C; Haskell volající C/C++."
+      "en": "Haskell calling C math functions, and C calling an exported Haskell function.",
+      "cs": "Haskell volající matematické funkce z C a C volající exportovanou funkci v Haskellu."
     },
     {
-      "en": "Elasticsearch and Kibana via Docker Compose for local data work.",
-      "cs": "Elasticsearch a Kibana přes Docker Compose pro lokální práci s daty."
+      "en": "Docker Compose stack with Elasticsearch, Kibana, PostGIS and RabbitMQ next to the Elixir app.",
+      "cs": "Docker Compose s Elasticsearchem, Kibanou, PostGIS a RabbitMQ vedle aplikace v Elixiru."
     }
   ],
   "stack": [
@@ -65,15 +65,16 @@
     "Qt",
     "OpenGL",
     "Docker Compose",
+    "PostgreSQL",
     "Elasticsearch",
     "Kibana",
     "GitLab CI"
   ],
   "architecture": {
-    "mermaid": "flowchart TD\n  ROOT[Root CMake] --> APPS[apps]\n  ROOT --> EX[examples]\n  APPS --> CALC[Rust calculator]\n  APPS --> ABA[Qt evaluator]\n  APPS --> COR[SwiftUI app]\n  EX --> ELX[Elixir app]\n  ELX --> NIF[C and Rust NIFs]\n  EX --> NODE[Node addons]\n  EX --> HS[Haskell FFI]\n  EX --> PL[Prolog interop]\n  ELX --> ES[Elasticsearch]",
+    "mermaid": "flowchart TD\n  ROOT[Repository root] --> APPS[apps]\n  ROOT --> EX[examples]\n  APPS --> CALC[Rust calculator]\n  APPS --> ABA[Qt evaluator]\n  APPS --> COR[SwiftUI app]\n  EX --> ELX[Elixir app]\n  ELX --> NIF[C and Rust NIFs]\n  EX --> NODE[Node addons]\n  EX --> HS[Haskell FFI]\n  EX --> PL[Prolog examples]\n  ELX --> ES[Elasticsearch]",
     "caption": {
-      "en": "One build root fans out to apps and per-language interop examples.",
-      "cs": "Jeden kořen buildu se větví do aplikací a interop příkladů pro jednotlivé jazyky."
+      "en": "The repository fans out to apps and per-language interop examples.",
+      "cs": "Repozitář se větví do aplikací a interop příkladů pro jednotlivé jazyky."
     }
   },
   "related": [

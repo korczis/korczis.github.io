@@ -8,22 +8,22 @@
     "read_at": "2026-11-18",
     "read": [
       "README.md",
-      "top-level tree"
+      "tree"
     ]
   },
   "provenance": "inferred",
   "kind": "data",
   "summary": {
-    "en": "A set of PNG icons for about a dozen social networks and identity providers, each in 32, 64, 128 and 256 pixel sizes. The README says they were taken from an upstream open-source OmniAuth example project.",
-    "cs": "Sada PNG ikon pro zhruba tucet sociálních sítí a poskytovatelů identity, každá ve velikostech 32, 64, 128 a 256 pixelů. Podle README pochází z upstreamového open-source příkladu pro OmniAuth."
+    "en": "A set of PNG icons for twelve social networks and identity providers, each in 32, 64, 128 and 256 pixel sizes, plus a Google Apps variant in two sizes. The README says they were taken from an upstream open-source Devise and OmniAuth example project.",
+    "cs": "Sada PNG ikon pro dvanáct sociálních sítí a poskytovatelů identity, každá ve velikostech 32, 64, 128 a 256 pixelů, a navíc varianta Google Apps ve dvou velikostech. Podle README pochází z upstreamového open-source příkladu pro Devise a OmniAuth."
   },
   "problem": {
     "en": "Social login buttons need consistent provider icons in several sizes.",
     "cs": "Tlačítka pro přihlášení přes sociální sítě potřebují jednotné ikony poskytovatelů v několika velikostech."
   },
   "solution": {
-    "en": "A flat directory of PNG files named provider_size.png, kept as a reusable asset repository. There is no code.",
-    "cs": "Plochý adresář PNG souborů pojmenovaných poskytovatel_velikost.png, vedený jako znovupoužitelný repozitář assetů. Žádný kód."
+    "en": "A flat directory of PNG files named provider_size.png, with a few duplicate files suffixed copy, kept as a reusable asset repository. There is no code.",
+    "cs": "Plochý adresář PNG souborů pojmenovaných poskytovatel_velikost.png, s několika duplikáty s příponou copy, vedený jako znovupoužitelný repozitář assetů. Žádný kód."
   },
   "highlights": [
     {

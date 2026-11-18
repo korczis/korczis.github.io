@@ -14,8 +14,8 @@
   "provenance": "inferred",
   "kind": "docs",
   "summary": {
-    "en": "A repository holding a single long custom licence text, titled KX License Agreement v1.0, for the author's experimental software. Other projects of the author reference it as the GHT licence.",
-    "cs": "Repozitář s jediným dlouhým textem vlastní licence nazvané KX License Agreement v1.0 pro autorův experimentální software. Ostatní autorovy projekty na ni odkazují jako na licenci GHT."
+    "en": "A repository holding a single long custom licence text, titled KX License Agreement v1.0, for the author's experimental software. Its table of contents lists 42 sections, but the body only writes out sections 1 to 12.",
+    "cs": "Repozitář s jediným dlouhým textem vlastní licence nazvané KX License Agreement v1.0 pro autorův experimentální software. Obsah ohlašuje 42 oddílů, samotný text ale obsahuje jen oddíly 1 až 12."
   },
   "problem": {
     "en": "The author wanted terms for experimental code that are far stricter than common open-source licences, covering forks, derivatives, AI use and integration.",
@@ -31,22 +31,22 @@
       "cs": "Model se všemi právy vyhrazenými a písemným udělením licence pro každého uživatele."
     },
     {
-      "en": "Dedicated sections on AI emulation, derivatives and network execution.",
-      "cs": "Samostatné oddíly o emulaci pomocí AI, odvozených dílech a síťovém provozu."
+      "en": "The table of contents announces sections on AI emulation, derivatives and network execution that the body never reaches.",
+      "cs": "Obsah ohlašuje oddíly o emulaci pomocí AI, odvozených dílech a síťovém provozu, ke kterým se text nikdy nedostane."
     },
     {
-      "en": "Repository name and licence title differ (GHT versus KX).",
-      "cs": "Název repozitáře a licence se liší (GHT oproti KX)."
+      "en": "Naming is inconsistent: the title says KX License Agreement, a duplicated section calls it the General Honest License.",
+      "cs": "Pojmenování je nejednotné: nadpis uvádí KX License Agreement, zdvojený oddíl ji nazývá General Honest License."
     }
   ],
   "stack": [
     "Markdown"
   ],
   "architecture": {
-    "mermaid": "flowchart LR\n  TXT[Licence text] --> OWN[Ownership and origin]\n  TXT --> GRANT[Written licence grants]\n  TXT --> REST[Restrictions]\n  REST --> REV[Revocation and termination]\n  TXT --> LAW[Governing law]\n  PROJ[Projects using GHT] --> TXT",
+    "mermaid": "flowchart LR\n  TXT[KX licence text] --> OWN[Ownership and origin]\n  TXT --> GRANT[Written licence grants]\n  TXT --> REST[Restrictions]\n  REST --> REV[Revocation and termination]\n  TXT --> LAW[Czech law, Prague courts]\n  TXT --> EXP[Liability, indemnity, export]",
     "caption": {
-      "en": "One licence document referenced by the author's other projects.",
-      "cs": "Jeden licenční dokument, na který odkazují autorovy další projekty."
+      "en": "The twelve sections the body writes out; the other 30 exist only in the table of contents.",
+      "cs": "Dvanáct oddílů, které text skutečně obsahuje; zbylých 30 je jen v obsahu."
     }
   },
   "related": [

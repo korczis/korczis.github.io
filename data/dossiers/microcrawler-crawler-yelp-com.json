@@ -10,27 +10,33 @@
       "README.md",
       "package.json",
       "src/details.js",
-      "tree (recursive)"
+      "tree (recursive)",
+      "src/index.js",
+      "src/listing.js"
     ]
   },
   "provenance": "inferred",
   "kind": "library",
   "summary": {
-    "en": "A Microcrawler site package for a local business review website, with index, listing and details processors.",
-    "cs": "Balíček Microcrawleru pro web s recenzemi místních podniků s procesory index, listing a details."
+    "en": "A Microcrawler site package for a local business review website. It declares index, listing and details processors, but the index file is empty; the listing and details processors carry the logic.",
+    "cs": "Balíček Microcrawleru pro web s recenzemi místních podniků. Deklaruje procesory index, listing a details, soubor index je ale prázdný; logiku nesou procesory listing a details."
   },
   "problem": {
     "en": "Microcrawler workers are generic: they download pages and need site-specific logic to know which links to follow and which fields to extract.",
     "cs": "Workery Microcrawleru jsou obecné: stahují stránky a potřebují logiku pro konkrétní web, aby věděly, které odkazy sledovat a jaká pole vytáhnout."
   },
   "solution": {
-    "en": "The details processor receives the record built by the listing stage and enriches it with opening hours parsed from the hours table into from and to pairs. A TODO in the source notes that further detail fields were still to be added.",
-    "cs": "Procesor details dostane záznam sestavený ve fázi výpisu a obohatí ho o otevírací dobu, kterou z tabulky rozparsuje do dvojic od a do. Poznámka TODO ve zdroji říká, že další pole detailu měla teprve přibýt."
+    "en": "The listing processor follows pagination links and, for every search result, builds a record with the business name, detail URL, phone number, review count, star rating, address and categories, then queues the detail page with that record attached. The details processor enriches the record with opening hours parsed from the hours table into from and to pairs and emits it. The listing calls an extractAddress helper that is not defined under that name, and a TODO notes that further detail fields were still to be added.",
+    "cs": "Procesor listing sleduje odkazy stránkování a pro každý výsledek hledání sestaví záznam s názvem podniku, URL detailu, telefonem, počtem recenzí, hodnocením hvězdami, adresou a kategoriemi a stránku detailu zařadí do fronty i s tímto záznamem. Procesor details záznam obohatí o otevírací dobu, kterou z tabulky rozparsuje do dvojic od a do, a vrátí ho. Listing volá pomocnou funkci extractAddress, která pod tímto jménem definovaná není, a poznámka TODO říká, že další pole detailu měla teprve přibýt."
   },
   "highlights": [
     {
-      "en": "Detail stage enriches the listing record instead of rebuilding it.",
+      "en": "Detail stage enriches the record built by the listing instead of rebuilding it.",
       "cs": "Fáze detailu obohacuje záznam z výpisu, místo aby ho stavěla znovu."
+    },
+    {
+      "en": "Listing extracts name, phone, review count, stars, address and categories per result.",
+      "cs": "Výpis z každého výsledku vytáhne název, telefon, počet recenzí, hvězdy, adresu a kategorie."
     },
     {
       "en": "Opening hours as structured from and to pairs.",
@@ -43,10 +49,10 @@
     "Cheerio"
   ],
   "architecture": {
-    "mermaid": "flowchart LR\n  W[Worker] --> I[index]\n  I --> L[listing]\n  L --> D[details]\n  L --> R[business record]\n  D --> H[opening hours]\n  H --> R",
+    "mermaid": "flowchart LR\n  W[Worker] --> L[listing]\n  L --> P[pagination]\n  P --> L\n  L --> B[business fields]\n  B --> D[details]\n  D --> H[opening hours]\n  H --> R[business record]",
     "caption": {
-      "en": "Processors emit either new URLs for the queue or extracted data records.",
-      "cs": "Procesory vracejí buď nové URL do fronty, nebo vytěžené datové záznamy."
+      "en": "The listing queues each detail page with its partial record; the details processor completes and emits it.",
+      "cs": "Výpis zařadí každou stránku detailu i s rozpracovaným záznamem; procesor details ho doplní a vrátí."
     }
   },
   "related": [

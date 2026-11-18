@@ -16,37 +16,43 @@
   "provenance": "inferred",
   "kind": "library",
   "summary": {
-    "en": "A Babel plugin for transforming GraphQL in JavaScript source, packaged with a src, a dist, a test directory and ESLint/EditorConfig settings. The README is a one-line description.",
-    "cs": "Babel plugin pro transformaci GraphQL v JavaScriptovém zdroji, zabalený se src, dist, adresářem test a nastavením ESLint/EditorConfig. README je jednořádkový popis."
+    "en": "A Babel 6 plugin meant to compile graphql tagged template literals in JavaScript into plain objects at build time, packaged with src, a built dist, a test directory and ESLint/EditorConfig settings. The README is a one-line description.",
+    "cs": "Plugin pro Babel 6, který má při buildu překládat tagované šablony graphql v JavaScriptu na prosté objekty, zabalený se src, sestaveným dist, adresářem test a nastavením ESLint/EditorConfig. README je jednořádkový popis."
   },
   "problem": {
     "en": "Embedding GraphQL in JavaScript is cleaner when a build step rewrites it rather than parsing queries at runtime.",
     "cs": "Vkládání GraphQL do JavaScriptu je čistší, když jej přepíše build krok, místo parsování dotazů za běhu."
   },
   "solution": {
-    "en": "The plugin hooks into the Babel transform pipeline to rewrite GraphQL constructs during compilation, with tests covering the transform. The exact transformation rules are defined in src.",
-    "cs": "Plugin se zapojuje do Babel transform pipeline a přepisuje GraphQL konstrukce při kompilaci, s testy pokrývajícími transformaci. Přesná pravidla transformace jsou definována v src."
+    "en": "src/index.js parses the template text with graphql-parser and a visitor turns queries, fields, aliases, arguments, variables and interpolated references into Babel object expressions, wrapped in a function of params. As committed, the plugin's visitor is attached to the Program node and looks for a tag there, so it never matches a tagged template; test/test.js holds one sample query with no assertions.",
+    "cs": "src/index.js rozparsuje text šablony přes graphql-parser a visitor převede dotazy, pole, aliasy, argumenty, proměnné a interpolované reference na objektové výrazy Babelu zabalené do funkce s parametrem params. V uložené podobě je visitor pluginu navázaný na uzel Program a tag hledá tam, takže na tagovanou šablonu nikdy nenarazí; test/test.js obsahuje jeden ukázkový dotaz bez asercí."
   },
   "highlights": [
     {
-      "en": "Runs as a Babel transform plugin at compile time.",
-      "cs": "Běží jako Babel transform plugin při kompilaci."
+      "en": "GraphQL text compiled to Babel object expressions with graphql-parser.",
+      "cs": "Text GraphQL překládaný přes graphql-parser na objektové výrazy Babelu."
     },
     {
-      "en": "Includes a test directory and a built dist.",
-      "cs": "Obsahuje adresář test a sestavený dist."
+      "en": "The committed visitor never matches, so the transform is unfinished.",
+      "cs": "Uložený visitor nikdy nezabere, transformace je tedy nedokončená."
+    },
+    {
+      "en": "Includes a built dist and a sample input, but no assertions.",
+      "cs": "Obsahuje sestavený dist a ukázkový vstup, ale žádné aserce."
     }
   ],
   "stack": [
     "JavaScript",
     "Babel",
-    "GraphQL"
+    "GraphQL",
+    "graphql-parser",
+    "ESLint"
   ],
   "architecture": {
-    "mermaid": "flowchart LR\n  A[JS with GraphQL] --> B[Babel parser]\n  B --> C[Transform plugin]\n  C --> D[Rewritten AST]\n  D --> E[Output JS]",
+    "mermaid": "flowchart LR\n  A[graphql tagged template] --> B[Babel parser]\n  B --> C[Transform plugin]\n  C --> P[graphql-parser]\n  P --> V[GraphQL visitor]\n  V --> D[Object expression]\n  D --> E[Output JS]",
     "caption": {
-      "en": "The plugin rewrites GraphQL in the Babel AST into output JavaScript at build time.",
-      "cs": "Plugin přepisuje GraphQL v Babel AST na výstupní JavaScript při buildu."
+      "en": "The intended pipeline; as committed, the plugin's visitor never reaches the tagged template.",
+      "cs": "Zamýšlený postup; v uložené podobě se visitor pluginu k tagované šabloně nedostane."
     }
   },
   "related": [

@@ -10,40 +10,44 @@
       "README.md",
       "mix.exs",
       "lib/simple_geocoder.ex",
-      "tree /",
-      "tree lib/"
+      "lib/simple_geocoder/application.ex",
+      "lib/simple_geocoder/client/osm_client.ex",
+      "lib/simple_geocoder/client/mapy_client.ex",
+      "lib/simple_geocoder/distance.ex",
+      "docker-compose.yml",
+      "recursive tree"
     ]
   },
   "provenance": "inferred",
   "kind": "library",
   "summary": {
-    "en": "An Elixir library and OTP application for geocoding addresses and computing distances, with clients for OpenStreetMap and for a Czech mapping API. It grows the CSV distance workflow into a supervised application with a persistent cache.",
-    "cs": "Knihovna a OTP aplikace v Elixiru pro geokódování adres a výpočet vzdáleností s klienty pro OpenStreetMap a pro český mapový API. Rozvíjí workflow výpočtu vzdáleností z CSV do supervizované aplikace s perzistentní cache."
+    "en": "An Elixir OTP application that geocodes the addresses of a CSV through a local OpenStreetMap Nominatim, routes through the Mapy.cz API and writes straight-line and road distances from a fixed origin, with a persistent cache.",
+    "cs": "OTP aplikace v Elixiru, která geokóduje adresy z CSV přes lokální OpenStreetMap Nominatim, trasuje přes API Mapy.cz a zapíše vzdušné i silniční vzdálenosti z pevného výchozího bodu, s perzistentní cache."
   },
   "problem": {
-    "en": "Bulk distance calculation from a fixed origin to many addresses needs a geocoder that does not hammer external services and survives restarts. A single hard-wired provider was also too limiting.",
-    "cs": "Hromadný výpočet vzdáleností z jednoho výchozího bodu na mnoho adres potřebuje geokodér, který nezahltí externí služby a přežije restart. Jediný natvrdo zapojený poskytovatel byl navíc příliš omezující."
+    "en": "Bulk distance calculation from a fixed origin to many addresses needs a geocoder that does not hammer external services and keeps its answers across restarts.",
+    "cs": "Hromadný výpočet vzdáleností z jednoho výchozího bodu na mnoho adres potřebuje geokodér, který nezahltí externí služby a zachová si odpovědi i po restartu."
   },
   "solution": {
-    "en": "process_csv streams a CSV, geocodes the configurable destination column through the OpenStreetMap client, adds haversine and routed distances and writes an output CSV. Cachex caches lookups and is dumped to disk after a run. The README also documents geocode and route functions; their exact location in the code is unclear from what was read.",
-    "cs": "process_csv čte CSV streamem, geokóduje nastavitelný sloupec s cílem přes klienta OpenStreetMap, doplní vzdušnou a silniční vzdálenost a zapíše výstupní CSV. Cachex cachuje dotazy a po běhu se uloží na disk. README popisuje i funkce geocode a route; kde přesně v kódu jsou, z přečtených souborů není jasné."
+    "en": "process_csv streams a CSV, geocodes the configurable destination column through the OSM client against a Nominatim on localhost (docker-compose runs one on the Czech OSM extract), adds the haversine distance and a road distance from the Mapy.cz routing API, and writes an output CSV. Cachex caches geocodes and routes, is loaded at start and dumped to cache.etf after a run. The README documents SimpleGeocoder.geocode and route, but those functions live on the client modules, not on SimpleGeocoder.",
+    "cs": "process_csv čte CSV streamem, geokóduje nastavitelný sloupec s cílem přes klienta OSM proti Nominatimu na localhostu (docker-compose ho spouští nad českým výřezem OSM), doplní vzdušnou vzdálenost podle haversinu a silniční vzdálenost z routovacího API Mapy.cz a zapíše výstupní CSV. Cachex cachuje geokódování i trasy, načte se při startu a po běhu se uloží do cache.etf. README popisuje SimpleGeocoder.geocode a route, ty funkce ale leží v modulech klientů, ne v SimpleGeocoder."
   },
   "highlights": [
     {
-      "en": "Pluggable provider clients: OpenStreetMap and a second mapping API.",
-      "cs": "Vyměnitelní klienti poskytovatelů: OpenStreetMap a druhý mapový API."
+      "en": "Two Tesla clients: Nominatim for geocoding, Mapy.cz for routing.",
+      "cs": "Dva klienti nad Teslou: Nominatim na geokódování, Mapy.cz na trasování."
     },
     {
-      "en": "Cachex cache persisted to cache.etf between runs.",
-      "cs": "Cachex cache se mezi běhy ukládá do cache.etf."
+      "en": "Cachex cache loaded at start and persisted to cache.etf after each run.",
+      "cs": "Cachex cache se načte při startu a po každém běhu uloží do cache.etf."
     },
     {
       "en": "Failed geocodes are logged and the row is kept rather than dropped.",
       "cs": "Neúspěšné geokódování se zaloguje a řádek se ponechá místo zahození."
     },
     {
-      "en": "Credo, Dialyzer with a project PLT, release config and docker-compose.",
-      "cs": "Credo, Dialyzer s projektovým PLT, konfigurace releasu a docker-compose."
+      "en": "docker-compose runs a local Nominatim on the Czech OpenStreetMap extract.",
+      "cs": "docker-compose spouští lokální Nominatim nad českým výřezem OpenStreetMap."
     }
   ],
   "stack": [
@@ -53,15 +57,15 @@
     "Tesla",
     "CSV",
     "OpenStreetMap",
-    "Credo",
-    "Dialyzer",
+    "Nominatim",
+    "Mapy.cz API",
     "Docker"
   ],
   "architecture": {
-    "mermaid": "flowchart LR\n  IN[Input CSV] --> PC[process_csv]\n  PC --> OSM[OSM client]\n  PC --> MAP[Mapping API client]\n  OSM --> CX[(Cachex cache)]\n  PC --> DIST[Distance module]\n  DIST --> OUT[Output CSV]\n  CX --> DUMP[cache.etf on disk]",
+    "mermaid": "flowchart LR\n  IN[Input CSV] --> PC[process_csv]\n  PC --> OSM[OSM client]\n  OSM --> NOM[local Nominatim]\n  OSM --> MAP[Mapy.cz routing]\n  OSM --> CX[(Cachex cache)]\n  PC --> DIST[Haversine distance]\n  PC --> OUT[Output CSV]\n  CX --> DUMP[cache.etf on disk]",
     "caption": {
-      "en": "Provider clients feed a shared cache; the distance module enriches each row of the CSV.",
-      "cs": "Klienti poskytovatelů plní sdílenou cache; modul vzdáleností obohacuje každý řádek CSV."
+      "en": "The OSM client geocodes through Nominatim and routes through Mapy.cz behind one cache; each CSV row gets both distances.",
+      "cs": "Klient OSM geokóduje přes Nominatim a trasuje přes Mapy.cz za jednou cache; každý řádek CSV dostane obě vzdálenosti."
     }
   },
   "related": [

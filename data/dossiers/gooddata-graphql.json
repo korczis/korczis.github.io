@@ -26,8 +26,8 @@
     "cs": "REST API platformy vrací hluboce vnořený JSON postavený na odkazech a pro jeden pohled potřebuje mnoho dotazů. Frontend musel znát každý endpoint i mapování."
   },
   "solution": {
-    "en": "Absinthe (with Relay) defines types and resolvers; a Mapper remaps REST fields by path (\"meta.title\", \"links.self\") and converts URIs to ids. Requests forward the user's session cookies through HTTPoison, results are cached in Cachex and lists are resolved with a parallel map; a proxy controller passes other calls through.",
-    "cs": "Typy a resolvery definuje Absinthe (s Relay); Mapper přemapuje pole z RESTu podle cesty („meta.title“, „links.self“) a URI převede na id. Požadavky předávají session cookies uživatele přes HTTPoison, výsledky se cachují v Cachexu a seznamy se resolvují paralelním mapem; ostatní volání propouští proxy kontroler."
+    "en": "Absinthe (with Relay) defines types and resolvers; a Mapper remaps REST fields by path (\"meta.title\", \"links.self\") and converts URIs to ids. Requests forward the user's session cookies through HTTPoison, results are cached in Cachex and lists are resolved with a parallel map; a proxy controller passes other GET calls through.",
+    "cs": "Typy a resolvery definuje Absinthe (s Relay); Mapper přemapuje pole z RESTu podle cesty („meta.title“, „links.self“) a URI převede na id. Požadavky předávají session cookies uživatele přes HTTPoison, výsledky se cachují v Cachexu a seznamy se resolvují paralelním mapem; ostatní GET volání propouští proxy kontroler."
   },
   "highlights": [
     {
@@ -39,8 +39,8 @@
       "cs": "Cache v Cachexu pro GET požadavky a paralelní resolvování seznamů."
     },
     {
-      "en": "Typed schema for dashboard item kinds (filter, headline, geo chart, report, iframe, text).",
-      "cs": "Typované schéma pro druhy položek dashboardu (filtr, headline, geo graf, report, iframe, text)."
+      "en": "Typed schema for dashboard item kinds (filter, headline, geo chart, line, report, iframe, text).",
+      "cs": "Typované schéma pro druhy položek dashboardu (filtr, headline, geo graf, čára, report, iframe, text)."
     }
   ],
   "stack": [

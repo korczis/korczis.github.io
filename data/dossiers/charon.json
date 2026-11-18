@@ -15,41 +15,48 @@
   "provenance": "inferred",
   "kind": "cli",
   "summary": {
-    "en": "An early Rust project framed as a ferryman that carries other peoples network connections, with its operation area given as Wi-Fi. The tree has a Cargo manifest, a Makefile, bin, data, doc and src directories, but the README is a stub beyond the metaphor.",
-    "cs": "Rané rustové repo pojaté jako převozník nesoucí síťová připojení ostatních, s oblastí působnosti uvedenou jako Wi-Fi. Strom má Cargo manifest, Makefile, adresáře bin, data, doc a src, ale README je mimo tuto metaforu jen kostra."
+    "en": "An early Rust packet sniffer. It captures frames with libpcap, decodes Ethernet, ARP, IPv4, IPv6, ICMP, TCP and UDP with pnet and logs headers and payloads. The README frames it as a ferryman for other people's Wi-Fi connections, but only the capture and decode path exists.",
+    "cs": "Raný síťový sniffer v Rustu. Zachytává rámce přes libpcap, pomocí pnet dekóduje Ethernet, ARP, IPv4, IPv6, ICMP, TCP a UDP a loguje hlavičky i obsah paketů. README ho líčí jako převozníka cizích Wi-Fi spojení, existuje ale jen cesta zachytávání a dekódování."
   },
   "problem": {
-    "en": "Sharing or relaying network connectivity over Wi-Fi involves several moving parts; the project explores doing this from a single Rust binary.",
-    "cs": "Sdílení nebo přeposílání konektivity přes Wi-Fi zahrnuje několik částí; projekt zkoumá, jak to zvládnout jedinou rustovou binárkou."
+    "en": "Seeing what devices on a shared network send needs raw capture and protocol decoding below the socket level.",
+    "cs": "Vidět, co zařízení ve sdílené síti posílají, vyžaduje surové zachytávání a dekódování protokolů pod úrovní socketů."
   },
   "solution": {
-    "en": "The layout suggests a CLI with supporting data and documentation directories, but the concrete behaviour is unclear from the README alone and would need the source to confirm.",
-    "cs": "Rozvržení naznačuje CLI s podpůrnými adresáři pro data a dokumentaci, konkrétní chování ale ze samotného README jasné není a vyžadovalo by potvrzení ze zdrojů."
+    "en": "A clap CLI lists interfaces or starts a capture with promiscuous-mode and snap-length options; the interface and output flags are parsed but unused, so capture always opens the default device. The library matches the EtherType and the IP next-header protocol and hands each layer to a small decoder module that logs it through env_logger, printing payloads also as UTF-8 when they decode. A Wireshark MAC vendor table sits in data/ but no code reads it.",
+    "cs": "CLI na clap vypíše rozhraní nebo spustí zachytávání s volbami pro promiskuitní režim a délku snímku; volby rozhraní a výstupního souboru se načtou, ale nepoužijí, takže se vždy otevře výchozí zařízení. Knihovna rozliší EtherType a protokol další vrstvy IP a každou vrstvu předá malému dekodéru, který ji zaloguje přes env_logger a obsah vypíše i jako UTF-8, pokud se dá dekódovat. V data/ leží tabulka výrobců MAC adres z Wiresharku, žádný kód ji ale nečte."
   },
   "highlights": [
     {
-      "en": "Rust binary with bin, data, doc and src directories and a Makefile.",
-      "cs": "Rustová binárka s adresáři bin, data, doc, src a Makefile."
+      "en": "Layered decoders: Ethernet to ARP, IPv4 and IPv6, then ICMP, TCP and UDP.",
+      "cs": "Vrstvené dekodéry: z Ethernetu na ARP, IPv4 a IPv6, dál na ICMP, TCP a UDP."
     },
     {
-      "en": "Themed around relaying Wi-Fi connectivity; scope stated only loosely.",
-      "cs": "Tematizováno kolem přeposílání Wi-Fi konektivity; rozsah jen volně popsán."
+      "en": "Interface listing, promiscuous mode and snap length flags.",
+      "cs": "Výpis rozhraní a volby pro promiskuitní režim a délku snímku."
+    },
+    {
+      "en": "Travis CI build on Linux and macOS across stable, beta and nightly Rust.",
+      "cs": "Build v Travis CI na Linuxu i macOS pro stable, beta a nightly Rust."
     }
   ],
   "stack": [
     "Rust",
     "Cargo",
-    "Wi-Fi"
+    "libpcap",
+    "pnet",
+    "clap",
+    "Travis CI"
   ],
   "architecture": {
-    "mermaid": "flowchart LR\n  A[Client] --> B[Charon relay]\n  B --> C[Wi-Fi link]\n  C --> D[Upstream network]\n  D --> B\n  B --> A",
+    "mermaid": "flowchart LR\n  Nic[network interface] --> Pcap[pcap capture]\n  Pcap --> Eth[Ethernet decode]\n  Eth --> Arp[ARP]\n  Eth --> V4[IPv4]\n  Eth --> V6[IPv6]\n  V4 --> Icmp[ICMP]\n  V4 --> Tcp[TCP]\n  V4 --> Udp[UDP]\n  Tcp --> Log[log headers and payload]\n  Udp --> Log",
     "caption": {
-      "en": "A relay binary carries client connections across a Wi-Fi link to an upstream network.",
-      "cs": "Relay binárka přenáší klientská spojení přes Wi-Fi linku do nadřazené sítě."
+      "en": "Captured frames are decoded layer by layer and logged.",
+      "cs": "Zachycené rámce se dekódují vrstvu po vrstvě a logují."
     }
   },
   "related": [
     "zlown"
   ],
-  "confidence": "low"
+  "confidence": "medium"
 }

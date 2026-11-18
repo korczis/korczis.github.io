@@ -24,13 +24,13 @@
     "cs": "Vývojář s mnoha malými veřejnými repozitáři potřeboval jednu stránku, která návštěvníka nasměruje na projekty, které stojí za pozornost. Samotné repozitáře žádný přehled ani členění nenabízely."
   },
   "solution": {
-    "en": "A hand-written static page links to two flagship projects, while the README carries a longer curated list grouped into active, to-be-reviewed and postponed projects. The page was produced with the GitHub automatic page generator (params.json) and a stock theme.",
-    "cs": "Ručně psaná statická stránka odkazuje na dva hlavní projekty a README nese delší kurátorovaný seznam rozdělený na aktivní projekty, projekty k revizi a odložené. Stránka vznikla automatickým generátorem GitHub Pages (params.json) se standardním tématem."
+    "en": "A hand-written static page links to two flagship projects, while the README carries a longer curated list grouped into active, to-be-reviewed and postponed projects. params.json is left from the GitHub automatic page generator with its default text, and the stylesheets come from a stock theme.",
+    "cs": "Ručně psaná statická stránka odkazuje na dva hlavní projekty a README nese delší kurátorovaný seznam rozdělený na aktivní projekty, projekty k revizi a odložené. params.json zůstal po automatickém generátoru GitHub Pages s výchozím textem a styly pocházejí ze standardního tématu."
   },
   "highlights": [
     {
-      "en": "Curated project list with per-project Travis CI badges in the README.",
-      "cs": "Kurátorovaný seznam projektů s odznaky Travis CI u každého z nich v README."
+      "en": "Curated project list in the README, most entries with a Travis CI badge.",
+      "cs": "Kurátorovaný seznam projektů v README, u většiny položek s odznakem Travis CI."
     },
     {
       "en": "Static HTML and CSS only, no build step.",

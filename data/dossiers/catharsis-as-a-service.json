@@ -24,8 +24,8 @@
     "cs": "Populární rady o ventilování a emoční úlevě často vydávají úlevu za vyřešení a neuvádějí, jak silné jsou důkazy. Čtenář tak málokdy vidí, co je dobře podložené a co spekulace."
   },
   "solution": {
-    "en": "Every public claim is recorded in a ledger with an evidence level, confidence, sources and review dates, and references carry DOIs verified against Crossref. Advice entries are graded by evidence strength, and interactive models illustrate mechanisms such as the relief loop, peak-end memory and Kuramoto synchrony. Zola builds the site and a JSON export, Python validators check claims and references, Playwright tests the pages and Rust crates provide a CLI and content contracts.",
-    "cs": "Každé veřejné tvrzení je v evidenci s úrovní důkazu, jistotou, zdroji a daty revize a reference mají DOI ověřené proti Crossrefu. Rady jsou odstupňované podle síly důkazů a interaktivní modely ukazují mechanismy jako smyčku úlevy, paměť peak-end nebo Kuramotovu synchronizaci. Web i JSON export staví Zola, Python validátory kontrolují tvrzení a reference, Playwright testuje stránky a Rust crates dodávají CLI a obsahové kontrakty."
+    "en": "Every public claim is recorded in a ledger with an evidence level, confidence, sources and review dates, and references carry DOIs verified against Crossref. Advice entries are graded by evidence strength, and interactive models illustrate mechanisms such as the relief loop, peak-end memory and Kuramoto synchrony. Zola builds the site with Tailwind CSS, Alpine.js and Flowbite, a Python exporter writes the versioned JSON API, Python validators check claims and references, Playwright tests the pages and Rust crates consume the API as a CLI and content contracts.",
+    "cs": "Každé veřejné tvrzení je v evidenci s úrovní důkazu, jistotou, zdroji a daty revize a reference mají DOI ověřené proti Crossrefu. Rady jsou odstupňované podle síly důkazů a interaktivní modely ukazují mechanismy jako smyčku úlevy, paměť peak-end nebo Kuramotovu synchronizaci. Web staví Zola s Tailwind CSS, Alpine.js a Flowbite, verzované JSON API zapisuje exportér v Pythonu, Python validátory kontrolují tvrzení a reference, Playwright testuje stránky a Rust crates API využívají jako CLI a obsahové kontrakty."
   },
   "highlights": [
     {
@@ -47,6 +47,9 @@
   ],
   "stack": [
     "Zola",
+    "Tailwind CSS",
+    "Alpine.js",
+    "Flowbite",
     "JavaScript",
     "Python",
     "pytest",
@@ -56,10 +59,10 @@
     "GitHub Pages"
   ],
   "architecture": {
-    "mermaid": "flowchart LR\n  Claims[Claim ledger] --> Val[Python validators]\n  Refs[References] --> Xref[Crossref check]\n  Content[Research and advice] --> Zola[Zola build]\n  Val --> Zola\n  Xref --> Zola\n  Zola --> Site[Bilingual site]\n  Zola --> Api[JSON API v1]\n  Models[Interactive models] --> Site\n  Site --> E2E[Playwright tests]",
+    "mermaid": "flowchart LR\n  Claims[Claim ledger] --> Val[Python validators]\n  Refs[References] --> Xref[Crossref check]\n  Content[Research and advice] --> Zola[Zola build]\n  Val --> Zola\n  Xref --> Zola\n  Zola --> Site[Bilingual site]\n  Content --> Exp[Python API export]\n  Exp --> Api[JSON API v1]\n  Api --> Cli[Rust CLI]\n  Models[Interactive models] --> Site\n  Site --> E2E[Playwright tests]",
     "caption": {
-      "en": "Graded claims and verified references are validated before Zola builds the site and its JSON export.",
-      "cs": "Odstupňovaná tvrzení a ověřené reference projdou validací dřív, než Zola postaví web a jeho JSON export."
+      "en": "Graded claims and verified references are validated before Zola builds the site and a Python exporter writes its JSON API.",
+      "cs": "Odstupňovaná tvrzení a ověřené reference projdou validací dřív, než Zola postaví web a exportér v Pythonu zapíše jeho JSON API."
     }
   },
   "related": [

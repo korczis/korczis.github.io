@@ -23,8 +23,8 @@
     "cs": "Práce napříč mnoha malými balíčky js-libp2p je bez jednoho checkoutu, který je drží pohromadě, nepohodlná."
   },
   "solution": {
-    "en": "No modules or submodules were added, so the umbrella exists only as intent. It belongs to the same period as the libp2p-based node work.",
-    "cs": "Žádné moduly ani submoduly přidané nejsou, zastřešení tedy existuje jen jako záměr. Patří do stejného období jako práce na uzlu postaveném na libp2p."
+    "en": "No modules or submodules were added, so the umbrella exists only as intent. The README is two lines and the .gitignore is the stock Node.js one.",
+    "cs": "Žádné moduly ani submoduly přidané nejsou, zastřešení tedy existuje jen jako záměr. README má dva řádky a .gitignore je standardní pro Node.js."
   },
   "highlights": [
     {

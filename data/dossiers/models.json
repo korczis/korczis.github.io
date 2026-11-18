@@ -16,16 +16,16 @@
   "provenance": "inferred",
   "kind": "data",
   "summary": {
-    "en": "A store for two SketchUp 3D models of interior spaces (a florarium and a study), with a one-line README.",
-    "cs": "Úložiště dvou 3D modelů ze SketchUpu pro interiéry (florárium a pracovna) s jednořádkovým README."
+    "en": "A store for two SketchUp 3D models, named florarium and pracovna (a study), with a one-line README.",
+    "cs": "Úložiště dvou 3D modelů ze SketchUpu nazvaných florarium a pracovna, s jednořádkovým README."
   },
   "problem": {
-    "en": "Design files for home projects need versioning and a place to live outside one machine.",
-    "cs": "Návrhové soubory domácích projektů potřebují verzování a místo mimo jeden počítač."
+    "en": "Design files need versioning and a place to live outside one machine.",
+    "cs": "Návrhové soubory potřebují verzování a místo mimo jeden počítač."
   },
   "solution": {
-    "en": "The .skp files are committed directly to git; there is no export, rendering or tooling around them.",
-    "cs": "Soubory .skp jsou commitnuté přímo do gitu; žádný export, rendering ani nástroje kolem nich nejsou."
+    "en": "The .skp files are committed directly to git and SketchUp backup files (.skb) are ignored; there is no export, rendering or tooling around them.",
+    "cs": "Soubory .skp jsou commitnuté přímo do gitu a záložní soubory SketchUpu (.skb) jsou ignorované; žádný export, rendering ani nástroje kolem nich nejsou."
   },
   "highlights": [
     {

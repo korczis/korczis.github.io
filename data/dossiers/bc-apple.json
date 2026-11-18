@@ -16,12 +16,12 @@
   "provenance": "inferred",
   "kind": "app",
   "summary": {
-    "en": "An Xcode tab-bar app skeleton in Swift intended as an Apple client for a multi-chain mining node, with Socket.IO pulled in through Carthage.",
-    "cs": "Kostra aplikace v Xcode ve Swiftu s tab barem, zamýšlená jako klient pro Apple k multi-chain těžebnímu uzlu; Socket.IO je připojené přes Carthage."
+    "en": "An Xcode tab-bar app skeleton in Swift 4 for iPhone and iPad, which the one-line README presents as the Apple apps of the project it is named after, with the Socket.IO Swift client pulled in through Carthage.",
+    "cs": "Kostra aplikace v Xcode ve Swiftu 4 s tab barem pro iPhone a iPad, kterou jednořádkové README představuje jako aplikace pro Apple k projektu, po kterém se jmenuje; Swift klient Socket.IO je připojený přes Carthage."
   },
   "problem": {
-    "en": "Watching a node's live stream from an iPhone or Mac needs a native client that can speak the node's WebSocket interface.",
-    "cs": "Sledovat živý stream uzlu z iPhonu nebo Macu vyžaduje nativního klienta, který umí mluvit s jeho WebSocket rozhraním."
+    "en": "The project wanted native Apple apps; the Socket.IO dependency suggests a client for a real-time server interface, though the repository does not say which.",
+    "cs": "Projekt chtěl nativní aplikace pro Apple; závislost na Socket.IO naznačuje klienta pro serverové rozhraní v reálném čase, repozitář ale neříká jaké."
   },
   "solution": {
     "en": "The project contains the standard two-tab template (two view controllers, storyboards, unit and UI test targets) and a Cartfile pinning socket.io-client-swift 13.2. The view controllers are still template code, so the client logic is not implemented.",
@@ -29,8 +29,8 @@
   },
   "highlights": [
     {
-      "en": "Socket.IO Swift client chosen for the node stream",
-      "cs": "Pro stream uzlu zvolený Swift klient Socket.IO"
+      "en": "Socket.IO Swift client 13.2 declared in the Cartfile, not yet used in code",
+      "cs": "Swift klient Socket.IO 13.2 deklarovaný v Cartfile, v kódu zatím nepoužitý"
     },
     {
       "en": "Unit and UI test targets in place",
@@ -45,10 +45,10 @@
     "Socket.IO"
   ],
   "architecture": {
-    "mermaid": "flowchart LR\n  App[iOS app] --> Tabs[tab bar]\n  Tabs --> First[first view]\n  Tabs --> Second[second view]\n  App --> Sio[Socket.IO client]\n  Sio -.-> Node[node WebSocket]",
+    "mermaid": "flowchart LR\n  App[iOS app] --> Tabs[tab bar]\n  Tabs --> First[first view]\n  Tabs --> Second[second view]\n  App -.-> Sio[Socket.IO client]\n  Sio -.-> Node[server WebSocket]",
     "caption": {
-      "en": "Template app; the dashed link to the node is planned, not built.",
-      "cs": "Šablonová aplikace; přerušované spojení na uzel je plánované, ne hotové."
+      "en": "Template app; the dashed links to Socket.IO and a server are only implied by the Cartfile, not built.",
+      "cs": "Šablonová aplikace; přerušovaná spojení na Socket.IO a server jsou jen naznačená v Cartfile, ne hotová."
     }
   },
   "related": [

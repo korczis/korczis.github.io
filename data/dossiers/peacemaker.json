@@ -12,7 +12,11 @@
       ".travis.yml",
       "recursive tree",
       "lib/Engine/Capture.cpp",
-      "apps/peacemaker-cli/main.cpp"
+      "apps/peacemaker-cli/main.cpp",
+      "lib/Application/Application.cpp",
+      "lib/Engine/Engine.h",
+      "lib/Engine/Device.h",
+      "lib/CMakeLists.txt"
     ]
   },
   "provenance": "inferred",
@@ -52,6 +56,7 @@
     "libpcap",
     "Boost",
     "CMake",
+    "Google Test",
     "Travis CI"
   ],
   "architecture": {

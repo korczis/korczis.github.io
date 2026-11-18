@@ -29,8 +29,8 @@
   },
   "highlights": [
     {
-      "en": "Predecessor of the current personal hub.",
-      "cs": "Předchůdce současného osobního hubu."
+      "en": "Bower pins Bootstrap 3.1.1, jQuery 2.0.3, Modernizr, normalize.css and Font Awesome.",
+      "cs": "Bower připíná Bootstrap 3.1.1, jQuery 2.0.3, Modernizr, normalize.css a Font Awesome."
     },
     {
       "en": "Static files only; no build step besides bower install.",

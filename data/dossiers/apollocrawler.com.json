@@ -20,25 +20,25 @@
     "cs": "Web projektu Apollo crawler postavený na vlastním frameworku microscratch: backend na Expressu a MongoDB a jednostránkový frontend v Ember.js."
   },
   "problem": {
-    "en": "The crawler project needed a public site with project, datapack and demo pages, and the owner wanted to dogfood his own web framework for it.",
-    "cs": "Projekt crawleru potřeboval veřejný web se stránkami o projektech, datapackech a demech a autor chtěl při tom používat vlastní webový framework."
+    "en": "The crawler project needed a public site with project, datapack and demo pages, built on the same author's microscratch framework.",
+    "cs": "Projekt crawleru potřeboval veřejný web se stránkami o projektech, datapackech a demech, postavený na autorově frameworku microscratch."
   },
   "solution": {
-    "en": "Server modules cover auth with users, roles and permissions, config, CLI, ETL, Mongo models and migrations, sockets, Solr search and a feature-based Express server (gzip, sessions, cookies, router, views). Pluggable apps include a default app and a URL shortener. The Ember client adds about, admin, datapacks, demo and projects routes; Grunt builds assets and Mocha with Sinon and Chai runs tests.",
-    "cs": "Serverové moduly pokrývají autentizaci s uživateli, rolemi a oprávněními, konfiguraci, CLI, ETL, Mongo modely a migrace, sockety, vyhledávání v Solru a Express server složený z features (gzip, sessions, cookies, router, views). Mezi zásuvnými aplikacemi je výchozí aplikace a zkracovač URL. Ember klient přidává routy about, admin, datapacks, demo a projects; assety sestavuje Grunt a testy běží v Mocha se Sinonem a Chai."
+    "en": "Server modules cover auth with users, roles and permissions, config, CLI, ETL, Mongo models and migrations, sockets, a Solr client and a feature-based Express server (gzip, sessions stored in MongoDB, cookies, router, views). Pluggable apps include a default app and a URL shortener. The Ember client adds about, admin, datapacks, demo and projects routes; Grunt builds assets and Mocha with Sinon and Chai runs tests.",
+    "cs": "Serverové moduly pokrývají autentizaci s uživateli, rolemi a oprávněními, konfiguraci, CLI, ETL, Mongo modely a migrace, sockety, klienta pro Solr a Express server složený z features (gzip, sessions uložené v MongoDB, cookies, router, views). Mezi zásuvnými aplikacemi je výchozí aplikace a zkracovač URL. Ember klient přidává routy about, admin, datapacks, demo a projects; assety sestavuje Grunt a testy běží v Mocha se Sinonem a Chai."
   },
   "highlights": [
     {
-      "en": "Same microscratch skeleton as craftsmen, with site-specific routes added.",
-      "cs": "Stejná kostra microscratch jako u craftsmen, doplněná o routy specifické pro web."
+      "en": "Pluggable apps chosen by a CLI option: a default app and a URL shortener.",
+      "cs": "Zásuvné aplikace volené přepínačem CLI: výchozí aplikace a zkracovač URL."
     },
     {
-      "en": "Realtime channel through socket.io with shared sessions.",
-      "cs": "Realtime kanál přes socket.io se sdílenými sessions."
+      "en": "socket.io is wired into the web app, but its message handler is still a TODO.",
+      "cs": "socket.io je zapojené do webové aplikace, ale obsluha zpráv je zatím jen TODO."
     },
     {
-      "en": "Solr client module for search.",
-      "cs": "Modul se Solr klientem pro vyhledávání."
+      "en": "A Solr client module exists, though neither app.js nor the apps load it.",
+      "cs": "Modul s klientem pro Solr existuje, ale app.js ani aplikace ho nenačítají."
     },
     {
       "en": "The README body is still the generic microscratch introduction.",
@@ -60,7 +60,7 @@
     "Travis CI"
   ],
   "architecture": {
-    "mermaid": "flowchart LR\n  Browser[Ember SPA] --> Server[Express server]\n  Browser --> Sock[socket.io]\n  Server --> Auth[auth module]\n  Server --> Apps[default and shortener apps]\n  Server --> Mongo[(MongoDB)]\n  Server --> Solr[(Solr)]\n  Sock --> Server\n  Etl[ETL module] --> Mongo",
+    "mermaid": "flowchart LR\n  Browser[Ember SPA] --> Server[Express server]\n  Browser --> Sock[socket.io]\n  Server --> Auth[auth module]\n  Server --> Apps[default and shortener apps]\n  Server --> Mongo[(MongoDB)]\n  Sock --> Server\n  Etl[ETL module] --> Mongo\n  Solr[Solr module, not loaded]",
     "caption": {
       "en": "microscratch layout: Express modules behind an Ember single-page app.",
       "cs": "Rozvržení microscratch: Express moduly za jednostránkovou aplikací v Emberu."

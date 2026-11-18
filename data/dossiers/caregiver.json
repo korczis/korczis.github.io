@@ -39,7 +39,7 @@
     "Elixir"
   ],
   "architecture": {
-    "mermaid": "flowchart LR\n  D[Developer] --> C[caregiver]\n  C --> K[Containers]\n  K --> H[Health checks]\n  H --> C",
+    "mermaid": "flowchart LR\n  D[Developer] --> C[caregiver]\n  C --> K[Containers]\n  D --> Code[More time for code]",
     "caption": {
       "en": "The stated intent; nothing of it is implemented.",
       "cs": "Popsaný záměr; nic z něj není implementováno."

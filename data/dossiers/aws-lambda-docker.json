@@ -17,8 +17,8 @@
   "provenance": "inferred",
   "kind": "config",
   "summary": {
-    "en": "A Docker image matching the Amazon Linux runtime, with Python 3.6, pip, boto3 and zip, for building AWS Lambda deployment packages.",
-    "cs": "Docker image odpovídající runtime Amazon Linuxu s Pythonem 3.6, pipem, boto3 a zipem pro sestavování balíčků pro AWS Lambda."
+    "en": "A Docker image matching the Amazon Linux runtime, with Python 3.6, pip, boto3 and zip, for building AWS Lambda deployment packages as in the article its README cites. The README itself describes it as an example of running a Docker image with AWS Lambda.",
+    "cs": "Docker image odpovídající runtime Amazon Linuxu s Pythonem 3.6, pipem, boto3 a zipem pro sestavování balíčků pro AWS Lambda podle článku, na který odkazuje README. Samotné README ho popisuje jako příklad spuštění Docker image s AWS Lambda."
   },
   "problem": {
     "en": "Lambda packages with native dependencies must be built on a system compatible with the Lambda runtime, which a developer laptop usually is not.",
@@ -49,8 +49,8 @@
   "architecture": {
     "mermaid": "flowchart LR\n  Env[docker-env.sh] --> Build[docker-build.sh]\n  Build --> Image[Amazon Linux image]\n  Image --> Deps[pip install deps]\n  Deps --> Zip[zip package]\n  Zip --> Lambda[AWS Lambda]",
     "caption": {
-      "en": "Building a Lambda package inside a runtime-compatible container.",
-      "cs": "Sestavení balíčku pro Lambdu v kontejneru kompatibilním s runtime."
+      "en": "The intended flow from the referenced article; the repository holds only the image and its build and run scripts, not the packaging steps.",
+      "cs": "Zamýšlený postup podle odkazovaného článku; repozitář obsahuje jen image a skripty pro jeho build a spuštění, ne samotné kroky balení."
     }
   },
   "related": [

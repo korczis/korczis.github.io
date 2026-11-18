@@ -45,7 +45,7 @@
     "AWS Route 53"
   ],
   "architecture": {
-    "mermaid": "flowchart TD\n  A[Autonomous agents] --> B[Consensus Paxos or Raft]\n  B --> C[Voting process]\n  C --> D[Public ledger]\n  A --> E[Tor network]\n  E --> F[Anonymous VCS]\n  E --> G[Anonymous domains]\n  E --> H[Anonymous cloud]",
+    "mermaid": "flowchart TD\n  A[Autonomous agents] --> B[Consensus Paxos or Raft]\n  B --> C[Voting process]\n  C --> D[Public ledger]\n  A --> E[Tor network]\n  A --> F[Anonymous VCS]\n  A --> G[Anonymous domains]\n  A --> H[Anonymous cloud]",
     "caption": {
       "en": "Planned building blocks of the concept; none of them is implemented in the repository.",
       "cs": "Plánované stavební bloky konceptu; žádný z nich v repozitáři implementován není."

@@ -8,28 +8,29 @@
     "read_at": "2026-11-18",
     "read": [
       "README.md",
-      "Cargo.toml (tree)",
-      "src (tree)"
+      "Cargo.toml",
+      "src/main.rs",
+      "tree"
     ]
   },
   "provenance": "inferred",
   "kind": "kata",
   "summary": {
-    "en": "A small repository of Rust experiments, described in one line as such, part of a family of same-named learning repos in several languages. It has a Cargo manifest and a src tree and no further documentation.",
-    "cs": "Malé repo rustových experimentů, takto i jednořádkově popsané, součást rodiny stejnojmenných učebních rep v několika jazycích. Má Cargo manifest a src strom, bez další dokumentace."
+    "en": "A small Rust experiment, described in one line as such, part of a family of same-named learning repos in several languages. Its only program is the number-guessing game from the Rust book, built with Cargo.",
+    "cs": "Malý rustový experiment, takto i jednořádkově popsaný, součást rodiny stejnojmenných učebních rep v několika jazycích. Jediným programem je hra na hádání čísla z knihy o Rustu, sestavovaná Cargem."
   },
   "problem": {
     "en": "Learning a language is easiest with a scratch space for small exercises; this is that space for Rust.",
     "cs": "Učení jazyka jde nejlépe se škrabacím prostorem na malá cvičení; tohle je ten prostor pro Rust."
   },
   "solution": {
-    "en": "The repository collects Rust snippets under a single Cargo crate. It is a learning kata, not a reusable library.",
-    "cs": "Repo sdružuje rustové úryvky pod jediným Cargo crate. Jde o učební katu, ne o znovupoužitelnou knihovnu."
+    "en": "One binary crate: src/main.rs draws a secret number with rand, reads guesses from stdin, skips unparsable input and answers too small, too big or a win. Cargo.toml also lists chomp, which the code does not use. It is a learning kata, not a reusable library.",
+    "cs": "Jediný binární crate: src/main.rs vylosuje přes rand tajné číslo, čte tipy ze standardního vstupu, nečitelný vstup přeskočí a odpoví příliš malé, příliš velké nebo výhra. Cargo.toml uvádí i chomp, který kód nepoužívá. Jde o učební katu, ne o znovupoužitelnou knihovnu."
   },
   "highlights": [
     {
-      "en": "Single Cargo crate holding Rust practice code.",
-      "cs": "Jediný Cargo crate s cvičným rustovým kódem."
+      "en": "The Rust book guessing game: rand, stdin parsing and match on Ordering.",
+      "cs": "Hra na hádání čísla z knihy o Rustu: rand, čtení stdin a match nad Ordering."
     },
     {
       "en": "One of several same-named learning repos across languages.",
@@ -38,13 +39,14 @@
   ],
   "stack": [
     "Rust",
-    "Cargo"
+    "Cargo",
+    "rand"
   ],
   "architecture": {
-    "mermaid": "flowchart TD\n  A[Exercise] --> B[Rust module]\n  B --> C[Cargo build]\n  C --> D[Run and observe]",
+    "mermaid": "flowchart TD\n  Rand[rand secret number] --> Loop[guess loop]\n  Stdin[stdin guess] --> Parse[parse u32]\n  Parse --> Loop\n  Loop --> Cmp[compare Ordering]\n  Cmp --> Hint[too small or too big]\n  Hint --> Loop\n  Cmp --> Win[You win]",
     "caption": {
-      "en": "Exercise modules compile under one Cargo crate for practice.",
-      "cs": "Cvičné moduly se kompilují pod jedním Cargo crate pro procvičení."
+      "en": "The loop of the guessing game in src/main.rs.",
+      "cs": "Smyčka hry na hádání čísla v src/main.rs."
     }
   },
   "related": [

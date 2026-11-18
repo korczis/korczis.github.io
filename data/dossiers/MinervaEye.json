@@ -11,56 +11,64 @@
       "tree",
       "Minerva Eye/Core/Resolver/ResolverGoogleBooks.swift",
       "Minerva Eye/Component/Eye/EyeTextRecognizer.swift",
-      "Minerva Eye/Entity/Book+CoreDataProperties.swift"
+      "Minerva Eye/Entity/Book+CoreDataProperties.swift",
+      "Minerva Eye/Component/Scan/ScanViewController.swift",
+      "Minerva Eye/Component/Book/BookDetailView.swift",
+      "Minerva Eye/Component/Eye/EyeView.swift",
+      "Minerva Eye/Component/MainView.swift",
+      "NOTES.md"
     ]
   },
   "provenance": "inferred",
   "kind": "app",
   "summary": {
-    "en": "An iOS app for managing a personal book collection. It scans with the camera, recognises text on device with Vision, resolves ISBNs against the Google Books API and stores books with cover images in Core Data.",
-    "cs": "iOS aplikace pro správu vlastní knihovny. Skenuje kamerou, text rozpoznává přímo v zařízení přes Vision, ISBN dohledává v Google Books API a knihy včetně obálek ukládá do Core Data."
+    "en": "An iOS app for managing a personal book collection. It reads a book's barcode with the camera, resolves the ISBN against the Google Books API and stores the book in Core Data; covers are loaded from the Open Library covers service, and a separate scanner recognises text on device with Vision.",
+    "cs": "iOS aplikace pro správu vlastní knihovny. Kamerou přečte čárový kód knihy, ISBN dohledá v Google Books API a knihu uloží do Core Data; obálky načítá ze služby obálek Open Library a samostatný skener rozpoznává text přímo v zařízení přes Vision."
   },
   "problem": {
-    "en": "Cataloguing physical books by hand is slow; title, authors, page count and cover can be looked up once the ISBN is known.",
-    "cs": "Ruční katalogizace papírových knih je pomalá; název, autory, počet stran i obálku lze dohledat, jakmile je známé ISBN."
+    "en": "Cataloguing physical books by hand is slow; title, authors, page count and the other metadata can be looked up once the ISBN is known.",
+    "cs": "Ruční katalogizace papírových knih je pomalá; název, autory, počet stran i další metadata lze dohledat, jakmile je známé ISBN."
   },
   "solution": {
-    "en": "VisionKit document scanning feeds VNRecognizeTextRequest with Czech and English recognition languages; a resolver queries the books API by ISBN with an in-memory cache, and a Core Data Book entity keeps metadata and cover data. SwiftUI views cover the list, detail, scanner, log and settings, and the repository keeps device screenshots and logo assets.",
-    "cs": "Skenování dokumentů přes VisionKit posílá snímky do VNRecognizeTextRequest s češtinou a angličtinou; resolver dotazuje API knih podle ISBN s cache v paměti a entita Book v Core Data drží metadata i obálku. SwiftUI pohledy pokrývají seznam, detail, skener, log a nastavení; repozitář obsahuje i screenshoty a podklady loga."
+    "en": "A UIKit scan view controller runs an AVFoundation capture session that reads EAN-13, Code 128 and QR codes; each new code is resolved by ISBN against the Google Books API with an in-memory cache, and a Core Data Book entity keeps title, subtitle, authors, categories, language, page count, publication date and description. The detail view loads the cover from Open Library through Kingfisher and renders the ISBN as a barcode image. A VisionKit document scanner feeding VNRecognizeTextRequest in Czech and English is reachable from the detail view. SwiftUI views cover the library, detail, scanner, log and settings, and NOTES.md presents the app as a release candidate on TestFlight.",
+    "cs": "UIKit view controller pro skenování spouští capture session z AVFoundation, která čte kódy EAN-13, Code 128 a QR; každý nový kód se podle ISBN dohledá v Google Books API s cache v paměti a entita Book v Core Data drží název, podtitul, autory, kategorie, jazyk, počet stran, datum vydání a popis. Detail knihy načítá obálku z Open Library přes Kingfisher a ISBN vykreslí jako obrázek čárového kódu. Z detailu je dostupný i skener dokumentů z VisionKit, který posílá snímky do VNRecognizeTextRequest s češtinou a angličtinou. SwiftUI pohledy pokrývají knihovnu, detail, skener, log a nastavení a NOTES.md představuje aplikaci jako release candidate na TestFlightu."
   },
   "highlights": [
     {
-      "en": "On-device OCR with Vision in Czech and English.",
-      "cs": "OCR přímo v zařízení přes Vision, čeština a angličtina."
+      "en": "Barcode scanning with AVFoundation (EAN-13, Code 128, QR) as the way in.",
+      "cs": "Vstupem je skenování čárových kódů přes AVFoundation (EAN-13, Code 128, QR)."
     },
     {
-      "en": "ISBN lookup against a public books API with result caching.",
-      "cs": "Dohledání ISBN ve veřejném API knih s cache výsledků."
+      "en": "ISBN lookup against the Google Books API with result caching.",
+      "cs": "Dohledání ISBN v Google Books API s cache výsledků."
     },
     {
-      "en": "Core Data persistence including cover images.",
-      "cs": "Perzistence v Core Data včetně obálek."
+      "en": "Core Data persistence of book metadata; covers from Open Library via Kingfisher.",
+      "cs": "Perzistence metadat knih v Core Data; obálky z Open Library přes Kingfisher."
     },
     {
-      "en": "SwiftUI component structure: Books, Book detail, Eye scanner, Log, Settings.",
-      "cs": "Struktura komponent ve SwiftUI: Books, detail knihy, skener Eye, Log, Settings."
+      "en": "On-device OCR with Vision in Czech and English, reachable from the book detail.",
+      "cs": "OCR přímo v zařízení přes Vision, čeština a angličtina, dostupné z detailu knihy."
     }
   ],
   "stack": [
     "Swift",
     "SwiftUI",
     "UIKit",
+    "AVFoundation",
     "Vision",
     "VisionKit",
     "Core Data",
+    "Kingfisher",
     "Google Books API",
+    "Open Library Covers API",
     "Xcode"
   ],
   "architecture": {
-    "mermaid": "flowchart LR\n  CAM[Camera scan] --> VK[VisionKit]\n  VK --> OCR[Vision OCR]\n  OCR --> ISBN[ISBN]\n  ISBN --> RES[Books API resolver]\n  RES --> CACHE[Memory cache]\n  RES --> CD[Core Data Book]\n  CD --> UI[SwiftUI list and detail]",
+    "mermaid": "flowchart LR\n  CAM[Camera] --> BC[AVFoundation barcode reader]\n  BC --> ISBN[ISBN]\n  ISBN --> RES[Google Books resolver]\n  RES --> CACHE[Memory cache]\n  RES --> CD[Core Data Book]\n  CD --> UI[SwiftUI library and detail]\n  UI --> OL[Open Library cover]\n  UI --> OCR[VisionKit and Vision text scan]",
     "caption": {
-      "en": "A scan becomes an ISBN, the ISBN becomes a stored book record.",
-      "cs": "Ze skenu vznikne ISBN, z ISBN uložený záznam knihy."
+      "en": "A scanned barcode becomes an ISBN, the ISBN becomes a stored book record shown with its cover.",
+      "cs": "Z naskenovaného čárového kódu vznikne ISBN, z ISBN uložený záznam knihy zobrazený s obálkou."
     }
   },
   "related": [

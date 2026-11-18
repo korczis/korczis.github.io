@@ -36,8 +36,8 @@
       "cs": "Poznámky k návrhu bloků obalujících syscally, stdlib a shellové příkazy."
     },
     {
-      "en": "Core type modules laid out but empty.",
-      "cs": "Moduly základních typů jsou rozvržené, ale prázdné."
+      "en": "Core type files laid out as empty stubs, not yet declared in the library crate.",
+      "cs": "Soubory základních typů jsou rozvržené jako prázdné kostry a knihovna je zatím ani nedeklaruje."
     }
   ],
   "stack": [

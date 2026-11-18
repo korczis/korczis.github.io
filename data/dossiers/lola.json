@@ -18,22 +18,18 @@
   "provenance": "inferred",
   "kind": "library",
   "summary": {
-    "en": "Lola, a \"Loader & Launcher of Modular NodeJS Apps\": a lightweight module manager for Node.js with versioned modules and dependencies, published on npm. Modules live in registered directories and are loaded by name or name@version.",
-    "cs": "Lola, „Loader & Launcher of Modular NodeJS Apps“: odlehčený správce modulů pro Node.js s verzovanými moduly a závislostmi, vydaný na npm. Moduly leží v registrovaných adresářích a načítají se podle jména nebo jméno@verze."
+    "en": "Lola, a \"Loader & Launcher of Modular NodeJS Apps\": an early module loader for Node.js, packaged for npm. The README promises versioned modules and dependencies loaded by name or name@version, but the code implements only a Loader that registers directories containing a module.json and a base Module class.",
+    "cs": "Lola, „Loader & Launcher of Modular NodeJS Apps“: raný zavaděč modulů pro Node.js, zabalený pro npm. README slibuje verzované moduly a závislosti načítané podle jména nebo jméno@verze, kód ale implementuje jen Loader, který registruje adresáře s module.json, a základní třídu Module."
   },
   "problem": {
     "en": "An application split into many internal modules needs a way to discover, version and launch them without publishing each one as a separate npm package. The README explicitly states it is not a replacement for npm or Bower.",
     "cs": "Aplikace rozdělená do mnoha interních modulů potřebuje moduly najít, verzovat a spouštět, aniž by každý musel být samostatným npm balíčkem. README výslovně uvádí, že nejde o náhradu npm ani Boweru."
   },
   "solution": {
-    "en": "A Loader scans module directories and treats any directory with a module.json as a module, requiring and instantiating it. Modules derive from a base Module class built on EventEmitter with a run() method to override; the API offers addModuleDir, getModules, load and printTree.",
-    "cs": "Loader prochází adresáře modulů a každý adresář s module.json bere jako modul, který načte a instancuje. Moduly dědí ze základní třídy Module postavené na EventEmitter s metodou run() k přepsání; API nabízí addModuleDir, getModules, load a printTree."
+    "en": "Loader.addModule requires a directory that contains a module.json and registers it under the directory name; addModules does this for every subdirectory, and a static instantiateModule helper creates an instance. Modules derive from a Module base class that inherits EventEmitter with a run() to override. The README's addModuleDir, getModules, load, version-qualified load and printTree are not in the code.",
+    "cs": "Loader.addModule načte adresář obsahující module.json a zaregistruje ho pod jménem adresáře; addModules to udělá pro každý podadresář a statický pomocník instantiateModule vytvoří instanci. Moduly dědí ze základní třídy Module odvozené od EventEmitter s metodou run() k přepsání. Funkce addModuleDir, getModules, load, načítání s verzí a printTree z README v kódu nejsou."
   },
   "highlights": [
-    {
-      "en": "Version-qualified loading such as load('name@0.0.1')",
-      "cs": "Načítání s verzí, např. load('name@0.0.1')"
-    },
     {
       "en": "Module discovery by the presence of module.json",
       "cs": "Objevování modulů podle přítomnosti module.json"
@@ -41,6 +37,10 @@
     {
       "en": "Jasmine specs with sample cli and core modules, Travis CI build",
       "cs": "Specifikace v Jasmine s ukázkovými moduly cli a core, build na Travis CI"
+    },
+    {
+      "en": "README API (load('name@0.0.1'), printTree) is ahead of the code",
+      "cs": "API z README (load('name@0.0.1'), printTree) předbíhá kód"
     },
     {
       "en": "Base Module.run() still throws Not Implemented, so it is an early-stage library",
@@ -55,10 +55,10 @@
     "Travis CI"
   ],
   "architecture": {
-    "mermaid": "flowchart LR\n  App[Application] --> Lola[lola index]\n  Lola --> Loader[Loader]\n  Loader --> Dirs[Module dirs]\n  Dirs --> Json[module.json]\n  Loader --> Mod[Module instance]\n  Mod --> Base[Module base EventEmitter]\n  Mod --> Run[run]",
+    "mermaid": "flowchart LR\n  App[Application] --> Lola[lola index]\n  Lola --> Loader[Loader]\n  Loader --> Dirs[Module dirs]\n  Dirs --> Json[module.json]\n  Loader --> Inst[instantiateModule]\n  Inst --> Mod[Module instance]\n  Mod --> Base[Module base EventEmitter]",
     "caption": {
-      "en": "The loader discovers module directories, instantiates modules derived from the EventEmitter base and launches them.",
-      "cs": "Loader najde adresáře modulů, vytvoří instance modulů odvozených od základu nad EventEmitter a spustí je."
+      "en": "The loader registers directories with a module.json; a helper instantiates modules derived from the EventEmitter base.",
+      "cs": "Loader registruje adresáře s module.json; pomocník vytváří instance modulů odvozených od základu nad EventEmitter."
     }
   },
   "related": [

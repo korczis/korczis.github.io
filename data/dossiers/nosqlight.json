@@ -27,8 +27,8 @@
   },
   "highlights": [
     {
-      "en": "Design criteria borrowed explicitly from the SQLite documentation.",
-      "cs": "Kritéria návrhu jsou výslovně převzatá z dokumentace SQLite."
+      "en": "The self-contained, serverless and zero-configuration criteria link to the SQLite documentation.",
+      "cs": "Kritéria soběstačnosti, provozu bez serveru a bez konfigurace odkazují na dokumentaci SQLite."
     },
     {
       "en": "Research links only; repository has no source files.",
@@ -52,5 +52,5 @@
     "rocksdb_indexer",
     "kuzu-ex"
   ],
-  "confidence": "medium"
+  "confidence": "low"
 }

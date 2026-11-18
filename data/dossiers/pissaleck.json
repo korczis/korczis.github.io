@@ -12,10 +12,10 @@
     ]
   },
   "provenance": "inferred",
-  "kind": "kata",
+  "kind": "experiment",
   "summary": {
-    "en": "A placeholder repository with a licence file and a one-line description (\"anything about everything\"). No code or content yet.",
-    "cs": "Zástupný repozitář s licencí a jednořádkovým popisem („cokoliv o všem“). Zatím bez kódu i obsahu."
+    "en": "A placeholder repository with an MIT licence and a one-line description (\"Anything about everything and vice versa\"). No code or content yet.",
+    "cs": "Zástupný repozitář s licencí MIT a jednořádkovým popisem („Anything about everything and vice versa“). Zatím bez kódu i obsahu."
   },
   "problem": {
     "en": "Unclear; the description is intentionally open-ended.",
@@ -31,8 +31,8 @@
       "cs": "Pouze úvodní commit."
     },
     {
-      "en": "No README.",
-      "cs": "Bez README."
+      "en": "No README; the tree holds only LICENSE.",
+      "cs": "Bez README; strom obsahuje jen LICENSE."
     }
   ],
   "stack": [],

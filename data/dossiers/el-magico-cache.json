@@ -24,16 +24,16 @@
   "provenance": "inferred",
   "kind": "service",
   "summary": {
-    "en": "An Elixir cache service built around registered resolver functions: values are computed by named zero-arity functions and kept in ETS for fast lookup, exposed over an OpenAPI-described HTTP API. The repository also documents a planned self-rehydrating variant that recomputes values periodically, which is still commented out.",
-    "cs": "Cache služba v Elixiru postavená na registrovaných resolverech: hodnoty počítají pojmenované funkce bez argumentů a výsledky se drží v ETS pro rychlé čtení, vše přes HTTP API popsané OpenAPI. Repozitář dokumentuje i plánovanou samoobnovující variantu, která hodnoty periodicky přepočítává; ta je zatím zakomentovaná."
+    "en": "An Elixir experiment toward a cache service built around registered resolver functions, exposed over an OpenAPI-described HTTP API with a Swagger UI. At this commit a GET calls the named zero-arity resolver on every request: the ETS table is created but never written, and the periodic self-rehydrating cache the project is named after exists only as commented-out code.",
+    "cs": "Experiment v Elixiru směřující ke cache službě postavené na registrovaných resolverech, vystavené přes HTTP API popsané OpenAPI se Swagger UI. V tomto commitu GET při každém požadavku zavolá pojmenovanou funkci bez argumentů: ETS tabulka se sice založí, ale nic se do ní nezapisuje, a periodicky se samoobnovující cache, podle níž se projekt jmenuje, existuje jen jako zakomentovaný kód."
   },
   "problem": {
     "en": "Expensive computations whose results change rarely should not run on every request, yet callers need a simple keyed lookup and fresh enough values.",
     "cs": "Drahé výpočty, jejichž výsledek se mění zřídka, by neměly běžet při každém požadavku, a přitom volající potřebuje jednoduché čtení podle klíče a dostatečně čerstvá data."
   },
   "solution": {
-    "en": "A GenServer owns an ETS table with write concurrency and a map of resolvers; a Plug/Cowboy router serves GET /api/cache/:id and POST /api/cache, validated by open_api_spex with a Swagger UI at the root. Horde provides a distributed dynamic supervisor across connected nodes, and the app ships as a release to Fly.io on every push via GitHub Actions, with Nix files for reproducible builds.",
-    "cs": "GenServer vlastní ETS tabulku se zapnutou write concurrency a mapu resolverů; router na Plug/Cowboy obsluhuje GET /api/cache/:id a POST /api/cache s validací přes open_api_spex a Swagger UI na kořeni. Horde dodává distribuovaný dynamický supervisor přes propojené uzly a aplikace se při každém pushi nasazuje přes GitHub Actions na Fly.io; Nix soubory slouží k reprodukovatelnému buildu."
+    "en": "A SimpleCache GenServer holds a map of resolvers, one demo key preconfigured, and creates an ETS table with write concurrency. A Plug/Cowboy router serves GET /api/cache/:id and POST /api/cache, validated by open_api_spex; the POST compiles an arithmetic expression with Abacus and echoes it back without registering it. A Horde registry and dynamic supervisor start over the connected nodes but supervise nothing yet, and the app deploys to Fly.io on every push via GitHub Actions, with a Dockerfile and Nix files alongside.",
+    "cs": "GenServer SimpleCache drží mapu resolverů s jedním předem nastaveným ukázkovým klíčem a zakládá ETS tabulku se zapnutou write concurrency. Router na Plug/Cowboy obsluhuje GET /api/cache/:id a POST /api/cache s validací přes open_api_spex; POST zkompiluje aritmetický výraz přes Abacus a vrátí ho zpět, aniž by ho zaregistroval. Registry a dynamický supervisor z Horde se spustí nad propojenými uzly, zatím ale nic nesupervizují, a aplikace se při každém pushi nasazuje přes GitHub Actions na Fly.io; vedle leží Dockerfile a Nix soubory."
   },
   "highlights": [
     {
@@ -41,12 +41,12 @@
       "cs": "OpenAPI specifikace, validace požadavků a Swagger UI přes open_api_spex."
     },
     {
-      "en": "ETS-backed storage with pluggable backend modules (ETS, in-memory, Redis sketch).",
-      "cs": "Úložiště v ETS s vyměnitelnými backendy (ETS, in-memory, náčrt pro Redis)."
+      "en": "Resolver lookup works; storing results, the backend modules (ETS unused, in-memory and Redis commented out) and the periodic refresh do not yet.",
+      "cs": "Vyhledání resolveru funguje; ukládání výsledků, backendové moduly (ETS nepoužitý, in-memory a Redis zakomentované) a periodické obnovování zatím ne."
     },
     {
-      "en": "Horde distributed supervisor over the cluster membership.",
-      "cs": "Distribuovaný supervisor Horde nad členy clusteru."
+      "en": "Horde registry and dynamic supervisor whose members are the nodes connected at start-up.",
+      "cs": "Registry a dynamický supervisor z Horde, jejichž členy jsou uzly připojené při startu."
     },
     {
       "en": "Continuous deployment to Fly.io; Nix shell and release definitions.",
@@ -60,6 +60,7 @@
     "Plug",
     "Cowboy",
     "OpenApiSpex",
+    "Abacus",
     "Horde",
     "Nix",
     "Docker",
@@ -67,10 +68,10 @@
     "GitHub Actions"
   ],
   "architecture": {
-    "mermaid": "flowchart LR\n  C[HTTP client] --> R[Plug router]\n  R --> V[OpenApiSpex validation]\n  V --> H[Cache handler]\n  H --> S[Store]\n  S --> G[SimpleCache GenServer]\n  G --> E[ETS table]\n  G --> F[Resolver functions]\n  R --> U[Swagger UI]\n  X[Horde supervisor] --> G",
+    "mermaid": "flowchart LR\n  C[HTTP client] --> R[Plug router]\n  R --> U[Swagger UI]\n  R --> V[OpenApiSpex validation]\n  V --> SH[GET cache handler]\n  V --> CH[POST create handler]\n  SH --> S[Store]\n  S --> G[SimpleCache GenServer]\n  G --> F[Resolver functions]\n  CH --> A[Abacus compile]",
     "caption": {
-      "en": "Requests are validated against the OpenAPI spec, then served from ETS or computed by a registered resolver.",
-      "cs": "Požadavky se validují proti OpenAPI specifikaci a obslouží se z ETS nebo je spočítá registrovaný resolver."
+      "en": "Requests are validated against the OpenAPI spec; a GET calls the registered resolver, a POST only compiles the expression.",
+      "cs": "Požadavky se validují proti OpenAPI specifikaci; GET zavolá registrovaný resolver, POST výraz jen zkompiluje."
     }
   },
   "related": [

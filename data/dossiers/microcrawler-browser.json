@@ -16,16 +16,16 @@
   "provenance": "inferred",
   "kind": "experiment",
   "summary": {
-    "en": "A proof of concept for running Microcrawler inside the browser. It is an ES6 project transpiled with Babel, tested with Mocha and bundled with Webpack into a preload bundle plus lazily loaded bundles.",
-    "cs": "Proof of concept, jak spouštět Microcrawler přímo v prohlížeči. Jde o ES6 projekt transpilovaný Babelem, testovaný Mochou a balený Webpackem do úvodního bundle a dalších bundlů načítaných líně."
+    "en": "A proof of concept for running Microcrawler inside the browser. It is an ES6 project transpiled with Babel, tested with Mocha and bundled with Webpack into a preload bundle; the README's on-demand bundle demo is not in the code.",
+    "cs": "Proof of concept, jak spouštět Microcrawler přímo v prohlížeči. Jde o ES6 projekt transpilovaný Babelem, testovaný Mochou a balený Webpackem do úvodního bundle; ukázka bundlu na vyžádání z README v kódu není."
   },
   "problem": {
     "en": "Server-side crawling needs workers and infrastructure; extracting data from a page already open in the browser could skip most of that.",
     "cs": "Crawling na serveru potřebuje workery a infrastrukturu; vytěžení dat ze stránky, která už je otevřená v prohlížeči, by většinu z toho mohlo obejít."
   },
   "solution": {
-    "en": "The page loads the target into an iframe; the module resizes the iframe to its content and reads the inner HTML for processing. The Gulp pipeline transpiles, runs the tests and packages deduplicated, minified bundles, with an extra bundle fetched on demand.",
-    "cs": "Stránka načte cíl do iframe; modul přizpůsobí výšku iframe obsahu a přečte jeho vnitřní HTML ke zpracování. Pipeline v Gulpu transpiluje, pustí testy a zabalí deduplikované minifikované bundly, přičemž další bundle se stahuje až na vyžádání."
+    "en": "The page loads the target into an iframe; the module resizes the iframe to its content and reads its inner HTML through jQuery, which it only logs. The Gulp pipeline transpiles, runs the tests and packages a deduplicated, minified bundle exposed as a Microcrawler global.",
+    "cs": "Stránka načte cíl do iframe; modul přizpůsobí výšku iframe obsahu a přes jQuery přečte jeho vnitřní HTML, které jen vypíše do konzole. Pipeline v Gulpu transpiluje, pustí testy a zabalí deduplikovaný minifikovaný bundle vystavený jako globální Microcrawler."
   },
   "highlights": [
     {
@@ -33,8 +33,8 @@
       "cs": "Build nástroje (konfigurace Gulpu, Webpacku i Mochy) psané přímo v ES6."
     },
     {
-      "en": "Demonstrates on-demand bundle loading.",
-      "cs": "Ukazuje načítání bundlů na vyžádání."
+      "en": "The only Mocha test is a placeholder assertion.",
+      "cs": "Jediný test v Mochě je zástupná aserce."
     },
     {
       "en": "Extraction logic is only a stub; the project stayed at PoC stage.",
@@ -48,10 +48,10 @@
     "Webpack",
     "Mocha",
     "Chai",
-    "superagent"
+    "jQuery"
   ],
   "architecture": {
-    "mermaid": "flowchart LR\n  S[ES6 source] --> B[Babel]\n  B --> T[Mocha tests]\n  T --> W[Webpack bundles]\n  W --> P[Preload bundle]\n  W --> L[Lazy bundle]\n  P --> I[iframe reader]",
+    "mermaid": "flowchart LR\n  S[ES6 source] --> B[Babel]\n  B --> T[Mocha tests]\n  T --> W[Webpack]\n  W --> P[Preload bundle]\n  P --> I[iframe reader]\n  I --> C[Console log]",
     "caption": {
       "en": "Build pipeline and the in-browser iframe reader.",
       "cs": "Build pipeline a čtení iframe v prohlížeči."

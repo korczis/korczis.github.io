@@ -15,12 +15,12 @@
   "provenance": "inferred",
   "kind": "kata",
   "summary": {
-    "en": "A placeholder for a Ruby implementation of (parallel) map. The repository holds only a README, a licence and a .gitignore.",
-    "cs": "Zástupný repozitář pro implementaci (paralelního) map v Ruby. Obsahuje jen README, licenci a .gitignore."
+    "en": "A placeholder for a Ruby implementation of (p)map, which the name and README suggest is a parallel map. The repository holds only a README, a licence and a Ruby .gitignore.",
+    "cs": "Zástupný repozitář pro implementaci (p)map v Ruby, což podle názvu a README nejspíš znamená paralelní map. Obsahuje jen README, licenci a .gitignore pro Ruby."
   },
   "problem": {
-    "en": "Ruby's map runs sequentially; a parallel variant was the intended exercise. No code was committed.",
-    "cs": "Ruby map běží sekvenčně; cvičením měla být paralelní varianta. Žádný kód commitnutý není."
+    "en": "Unclear: the README says only \"korczis implementation of (p)map\". No code was committed.",
+    "cs": "Nejasné: README říká jen „korczis implementation of (p)map“. Žádný kód commitnutý není."
   },
   "solution": {
     "en": "Unclear: no implementation exists in the repository.",

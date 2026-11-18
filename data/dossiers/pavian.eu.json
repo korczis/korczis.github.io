@@ -8,24 +8,26 @@
     "read_at": "2026-11-18",
     "read": [
       "README.md",
-      "index.html (tree)",
       ".htaccess",
-      "bower.json (tree)"
+      "index.html",
+      "bower.json",
+      ".bowerrc",
+      "CHANGELOG.md"
     ]
   },
   "provenance": "inferred",
   "kind": "site",
   "summary": {
-    "en": "A static website built on an HTML5-boilerplate layout: an index.html, css and js directories, Bower dependencies, an Apache .htaccess, a custom 404 page and the usual robots.txt, humans.txt and crossdomain.xml. The README states only that it is the pavian.eu website.",
-    "cs": "Statický web postavený na rozvržení HTML5-boilerplate: index.html, adresáře css a js, Bower závislosti, Apache .htaccess, vlastní 404 stránka a obvyklé robots.txt, humans.txt a crossdomain.xml. README uvádí jen, že jde o web pavian.eu."
+    "en": "A static website built on an HTML5-boilerplate layout: an index.html, css and js directories, Bower dependencies, an Apache .htaccess, a custom 404 page and the usual robots.txt, humans.txt and crossdomain.xml. The README states only that it is the pavian.eu website; the page shows a heading and an embedded Twitter hashtag timeline.",
+    "cs": "Statický web postavený na rozvržení HTML5-boilerplate: index.html, adresáře css a js, Bower závislosti, Apache .htaccess, vlastní 404 stránka a obvyklé robots.txt, humans.txt a crossdomain.xml. README uvádí jen, že jde o web pavian.eu; stránka ukazuje nadpis a vloženou časovou osu hashtagu z Twitteru."
   },
   "problem": {
-    "en": "A personal or small-project site needs a simple, deployable static layout with sane Apache defaults and no backend.",
-    "cs": "Osobní nebo malý projektový web potřebuje jednoduché, nasaditelné statické rozvržení s rozumnými Apache defaulty a bez backendu."
+    "en": "A domain needs a simple, deployable static page with sane Apache defaults and no backend.",
+    "cs": "Doména potřebuje jednoduchou, nasaditelnou statickou stránku s rozumnými Apache defaulty a bez backendu."
   },
   "solution": {
-    "en": "The repository ships a static front-end managed with Bower and served under Apache, including a changelog and contributing notes. It is a website, not an application.",
-    "cs": "Repo dodává statický front-end spravovaný Bowerem a servírovaný pod Apache, včetně changelogu a poznámek pro přispěvatele. Jde o web, ne o aplikaci."
+    "en": "The repository ships a static front end whose Bootstrap, jQuery, Modernizr and normalize.css come through Bower into a components directory, served under Apache; the changelog, contributing notes and doc folder are the boilerplate's own. The index page carries a heading, a Twitter timeline for the #pavianeu hashtag and Google Analytics. It is a website, not an application.",
+    "cs": "Repo dodává statický front-end, jehož Bootstrap, jQuery, Modernizr a normalize.css přicházejí přes Bower do adresáře components a servírují se pod Apache; changelog, poznámky pro přispěvatele a složka doc pocházejí z boilerplatu. Úvodní stránka nese nadpis, časovou osu Twitteru pro hashtag #pavianeu a Google Analytics. Jde o web, ne o aplikaci."
   },
   "highlights": [
     {
@@ -41,11 +43,13 @@
     "HTML5",
     "CSS",
     "JavaScript",
+    "Bootstrap",
+    "jQuery",
     "Apache",
     "Bower"
   ],
   "architecture": {
-    "mermaid": "flowchart LR\n  A[Bower deps] --> B[Static assets]\n  B --> C[index.html]\n  C --> D[Apache server]\n  D --> E[Visitor]",
+    "mermaid": "flowchart LR\n  A[Bower deps] --> B[Static assets]\n  B --> C[index.html]\n  T[Twitter widget] --> C\n  C --> D[Apache server]\n  D --> E[Visitor]",
     "caption": {
       "en": "Static assets and index.html are served to visitors through Apache.",
       "cs": "Statické assety a index.html se přes Apache servírují návštěvníkům."
@@ -54,5 +58,5 @@
   "related": [
     "pavian-eu"
   ],
-  "confidence": "medium"
+  "confidence": "low"
 }

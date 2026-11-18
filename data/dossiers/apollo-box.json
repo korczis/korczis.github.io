@@ -29,8 +29,8 @@
   },
   "highlights": [
     {
-      "en": "One reproducible VM for Python, R, Go and Node based data tooling.",
-      "cs": "Jedna reprodukovatelná VM s datovými nástroji pro Python, R, Go a Node."
+      "en": "One VM bundling Python, R, Go and Node based data tooling; versions are not pinned (latest GNU parallel, unversioned packages).",
+      "cs": "Jedna VM s datovými nástroji pro Python, R, Go a Node; verze nejsou připnuté (nejnovější GNU parallel, balíčky bez verzí)."
     },
     {
       "en": "Provisioning steps are logged to bootstrap.log.",

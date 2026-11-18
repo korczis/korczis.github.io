@@ -15,16 +15,16 @@
   "provenance": "inferred",
   "kind": "site",
   "summary": {
-    "en": "Brand and website for a Czech civic movement built around a science-first motto. The repository holds the static site, a brand book, design system, messaging and visual motifs. It is built with Zola, Tailwind CSS 3 and Flowbite 2 and tested end to end with Playwright.",
-    "cs": "Brand a web pro české občanské hnutí postavené na motu o vědeckém přístupu. Repozitář obsahuje statický web, brand book, design systém, messaging a vizuální motivy. Staví se Zolou, Tailwindem 3 a Flowbitem 2 a end-to-end se testuje Playwrightem."
+    "en": "Brand and website for a Czech movement built around a science-first motto. The repository holds the static site, a brand book, design system, messaging and visual motifs. It is built with Zola, Tailwind CSS 3 and Flowbite 2 and tested end to end with Playwright.",
+    "cs": "Brand a web pro české hnutí postavené na motu o vědeckém přístupu. Repozitář obsahuje statický web, brand book, design systém, messaging a vizuální motivy. Staví se Zolou, Tailwindem 3 a Flowbitem 2 a end-to-end se testuje Playwrightem."
   },
   "problem": {
     "en": "Several AI coding tools work on the same repository, and generated code tends to mix incompatible Tailwind and Flowbite major versions. Policies written in one tool's file drift from the others.",
     "cs": "Na jednom repozitáři pracuje několik AI nástrojů a generovaný kód má sklon míchat nekompatibilní hlavní verze Tailwindu a Flowbitu. Pravidla zapsaná v souboru jednoho nástroje se rozcházejí s ostatními."
   },
   "solution": {
-    "en": "Canonical policies live in one directory and each tool's instruction file points to them instead of copying text. A git pre-commit gate checks metadata hygiene, secrets, merge markers and the pinned Flowbite 2 and Tailwind 3 syntax, warning on Czech language issues. The build script compiles CSS, vendors JavaScript, builds with Zola and runs its link check, with CI publishing to a gh-pages branch.",
-    "cs": "Kanonická pravidla leží v jednom adresáři a instrukční soubor každého nástroje na ně odkazuje místo kopírování textu. Pre-commit brána v gitu hlídá hygienu metadat, tajné údaje, merge markery a syntaxi připnutého Flowbitu 2 a Tailwindu 3, u češtiny jen varuje. Build skript zkompiluje CSS, zavendoruje JavaScript, postaví web Zolou a pustí její kontrolu odkazů; CI publikuje do větve gh-pages."
+    "en": "Canonical policies live in one directory and each tool's instruction file points to them instead of copying text. A git pre-commit gate blocks metadata files, likely secrets, merge markers and Tailwind 4 or Flowbite 4 syntax, and only warns on placeholder markers in Markdown and on a major version bump. The build script compiles CSS, vendors JavaScript, builds with Zola and runs its link check; CI repeats the doctrine guard, builds, runs Playwright smoke tests and publishes to a gh-pages branch.",
+    "cs": "Kanonická pravidla leží v jednom adresáři a instrukční soubor každého nástroje na ně odkazuje místo kopírování textu. Pre-commit brána v gitu blokuje soubory s metadaty, pravděpodobné tajné údaje, merge markery a syntaxi Tailwindu 4 nebo Flowbitu 4, jen varuje u zástupných značek v Markdownu a u skoku na novou hlavní verzi. Build skript zkompiluje CSS, zavendoruje JavaScript, postaví web Zolou a pustí její kontrolu odkazů; CI znovu spustí kontrolu doktrín, sestaví web, projede smoke testy v Playwrightu a publikuje do větve gh-pages."
   },
   "highlights": [
     {
@@ -56,10 +56,10 @@
     "GitHub Pages"
   ],
   "architecture": {
-    "mermaid": "flowchart LR\n  Pol[Canonical policies] --> Tools[Per-tool AI files]\n  Pol --> Hook[Pre-commit gate]\n  Content[Content and templates] --> Build[build.sh]\n  Brand[Brand book] --> Content\n  Build --> Zola[Zola build and check]\n  Hook --> Build\n  Zola --> Pages[gh-pages]\n  Pages --> E2E[Playwright live tests]",
+    "mermaid": "flowchart LR\n  Pol[Canonical policies] --> Tools[Per-tool AI files]\n  Pol --> Hook[Pre-commit gate]\n  Pol --> Guard[CI doctrine guard]\n  Brand[Brand book] --> Content[Content and templates]\n  Content --> Build[build.sh]\n  Guard --> Build\n  Build --> Zola[Zola build and check]\n  Zola --> E2E[Playwright smoke tests]\n  E2E --> Pages[gh-pages]",
     "caption": {
-      "en": "One policy source feeds AI tool files and a commit gate; the build script produces the static site.",
-      "cs": "Jeden zdroj pravidel napájí soubory AI nástrojů i commit bránu; build skript vyrobí statický web."
+      "en": "One policy source feeds AI tool files, a commit gate and the CI guard; the build script produces the static site that CI tests and publishes.",
+      "cs": "Jeden zdroj pravidel napájí soubory AI nástrojů, commit bránu i kontrolu v CI; build skript vyrobí statický web, který CI otestuje a publikuje."
     }
   },
   "related": [

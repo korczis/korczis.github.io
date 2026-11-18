@@ -9,22 +9,28 @@
     "read": [
       "README.md",
       "CMakeLists.txt",
+      "Makefile",
+      ".travis.yml",
+      "lib/CMakeLists.txt",
+      "src/CMakeLists.txt",
+      "src/thread/CMakeLists.txt",
+      "src/icmp_client/CMakeLists.txt",
       "tree"
     ]
   },
   "provenance": "inferred",
   "kind": "kata",
   "summary": {
-    "en": "C learning material: a small shared library plus six example programs covering DNS lookup, an HTTP client, an ICMP client, network interface listing, threads and hello world.",
-    "cs": "Výukové materiály k C: malá sdílená knihovna a šest ukázkových programů – DNS lookup, HTTP klient, ICMP klient, výpis síťových rozhraní, vlákna a hello world."
+    "en": "C learning material: a small static library plus six example programs covering DNS lookup, an HTTP client, an ICMP client, network interface listing, threads and hello world.",
+    "cs": "Výukové materiály k C: malá statická knihovna a šest ukázkových programů – DNS lookup, HTTP klient, ICMP klient, výpis síťových rozhraní, vlákna a hello world."
   },
   "problem": {
     "en": "Practising systems programming in C (sockets, raw networking, POSIX threads) in small, separately buildable examples.",
     "cs": "Procvičení systémového programování v C (sockety, síťování na nízké úrovni, POSIX vlákna) na malých, samostatně sestavitelných příkladech."
   },
   "solution": {
-    "en": "A CMake project builds lib (skull and helpers) and one executable per directory under src, each with its own README. The README asks only for a Unix system, gcc or clang and cmake.",
-    "cs": "CMake projekt sestaví lib (skull a helpers) a jednu binárku za každý adresář v src, každý s vlastním README. Ze závislostí README chce jen Unix, gcc nebo clang a cmake."
+    "en": "A CMake project builds lib (a static skull library with helpers) and one executable per directory under src, each with its own README; a Makefile wraps the CMake build and its test target runs the examples. Google Test is vendored but not wired into the build. The README asks only for a Unix system, gcc or clang and cmake.",
+    "cs": "CMake projekt sestaví lib (statickou knihovnu skull s pomocnými funkcemi) a jednu binárku za každý adresář v src, každý s vlastním README; Makefile obaluje CMake build a jeho cíl test spouští příklady. Google Test je vendorovaný, ale do buildu zapojený není. Ze závislostí README chce jen Unix, gcc nebo clang a cmake."
   },
   "highlights": [
     {

@@ -31,8 +31,8 @@
   },
   "highlights": [
     {
-      "en": "Ecto-like DSL for graph schemas and queries.",
-      "cs": "DSL ve stylu Ecta pro grafová schémata a dotazy."
+      "en": "Macro-based defgraph DSL with typed node fields and relationship cardinality checks.",
+      "cs": "Makrové DSL defgraph s typovanými poli uzlů a kontrolou kardinality vztahů."
     },
     {
       "en": "Typed error tuples for HTTP, query and connection failures.",

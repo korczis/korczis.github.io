@@ -14,35 +14,35 @@
   "provenance": "inferred",
   "kind": "experiment",
   "summary": {
-    "en": "An empty project stub whose README describes it as the component that orchestrates the other services.",
-    "cs": "Prázdná kostra projektu, kterou README popisuje jako komponentu orchestrující ostatní služby."
+    "en": "An empty project stub; its README says only \"The one who orchestrates all the folks in the circus ...\".",
+    "cs": "Prázdná kostra projektu; README říká jen „The one who orchestrates all the folks in the circus ...“."
   },
   "problem": {
     "en": "Unclear; the tree has only a README, licence and .gitignore.",
     "cs": "Nejasné; strom obsahuje jen README, licenci a .gitignore."
   },
   "solution": {
-    "en": "No implementation was committed. The intent stated in the README is an orchestrator, but nothing in the repository shows how it would work.",
-    "cs": "Žádná implementace nebyla commitnuta. README uvádí záměr orchestrátoru, ale z repozitáře nejde vyčíst, jak by fungoval."
+    "en": "No implementation was committed. The README hints at an orchestrator, but nothing in the repository shows what it would orchestrate or how.",
+    "cs": "Žádná implementace nebyla commitnuta. README naznačuje orchestrátor, ale z repozitáře nejde vyčíst, co ani jak by orchestroval."
   },
   "highlights": [
     {
-      "en": "Stub only.",
-      "cs": "Pouze kostra."
+      "en": "Stub only: README, MIT licence and .gitignore.",
+      "cs": "Pouze kostra: README, licence MIT a .gitignore."
+    },
+    {
+      "en": "A single initial commit.",
+      "cs": "Jediný úvodní commit."
     }
   ],
   "stack": [],
   "architecture": {
-    "mermaid": "flowchart LR\n  Principal[principal stub] --> Readme[README intent]\n  Readme --> Orch[orchestrator idea]\n  Orch --> Services[other services]",
+    "mermaid": "flowchart LR\n  Principal[principal stub] --> Readme[README one line]\n  Readme --> Orch[orchestrator idea]\n  Orch --> Circus[folks in the circus]",
     "caption": {
       "en": "Stated intent only; nothing implemented.",
       "cs": "Pouze deklarovaný záměr, nic implementovaného."
     }
   },
-  "related": [
-    "dispatcher",
-    "job-processor",
-    "apollon"
-  ],
+  "related": [],
   "confidence": "low"
 }

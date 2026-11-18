@@ -11,6 +11,8 @@
       "mix.exs",
       "lib/math.ex",
       "lib/greeter.ex",
+      "lib/skull.ex",
+      "test/*.exs",
       ".travis.yml"
     ]
   },

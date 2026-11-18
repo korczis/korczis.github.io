@@ -22,8 +22,8 @@
     "cs": "Získávání strukturovaných dat z mnoha webů potřebuje znovupoužitelné části pro stahování, cache, parsování pro jednotlivé weby a formátování výstupu a také způsob, jak práci rozdělit."
   },
   "solution": {
-    "en": "On the legacy branch, per-site crawler classes extend a base crawler, fetchers range from simple to smart, and caches have memory, Memcached, MongoDB, SQLite and null backends. Agents for crawling, fetching and domain handling exchange messages over AMQP, and output goes through JSON, plain or table formatters. Details beyond the file layout were not read.",
-    "cs": "Na větvi legacy rozšiřují třídy crawlerů pro jednotlivé weby základní crawler, fetchery sahají od jednoduchého po chytrý a cache mají backendy pro paměť, Memcached, MongoDB, SQLite i nulovou cache. Agenti pro crawling, stahování a práci s doménami si vyměňují zprávy přes AMQP a výstup jde přes formattery JSON, plain nebo tabulku. Detaily nad rámec struktury souborů čteny nebyly."
+    "en": "On the legacy branch (head 0d7d9b0), per-site crawler classes extend a base crawler, fetchers range from simple to smart, and caches have memory, Memcached, MongoDB, SQLite and null backends, the SQLite one only a stub. Crawler, fetcher and domainer agents bind durable AMQP queues to direct exchanges, and output goes through JSON, plain or table formatters. Details beyond the file layout and these files were not read.",
+    "cs": "Na větvi legacy (head 0d7d9b0) rozšiřují třídy crawlerů pro jednotlivé weby základní crawler, fetchery sahají od jednoduchého po chytrý a cache mají backendy pro paměť, Memcached, MongoDB, SQLite i nulovou cache, přičemž SQLite je jen kostra. Agenti crawler, fetcher a domainer napojují trvalé AMQP fronty na direct exchange a výstup jde přes formattery JSON, plain nebo tabulku. Detaily nad rámec struktury souborů a těchto souborů čteny nebyly."
   },
   "highlights": [
     {
@@ -31,8 +31,8 @@
       "cs": "Nahrazen projektem microcrawler, jak uvádí README"
     },
     {
-      "en": "Pluggable cache layer with five backends",
-      "cs": "Zásuvná cache vrstva s pěti backendy"
+      "en": "Pluggable cache layer with five backends, one of them a stub",
+      "cs": "Zásuvná cache vrstva s pěti backendy, z nichž jeden je jen kostra"
     },
     {
       "en": "AMQP-connected agents for distributed crawling",

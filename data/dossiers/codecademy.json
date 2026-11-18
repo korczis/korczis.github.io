@@ -22,13 +22,17 @@
     "cs": "Mít příklady z kurzu Ruby pro začátečníky pohromadě."
   },
   "solution": {
-    "en": "Six standalone example.*.rb files at the top level and an exams directory with one Czech-language task description.",
-    "cs": "Šest samostatných souborů example.*.rb v kořeni a adresář exams s jedním zadáním v češtině."
+    "en": "Six standalone example.*.rb files at the top level and an exams directory with one Czech-language exercise, described twice: a loop that keeps asking for a cookie until the user types the right word.",
+    "cs": "Šest samostatných souborů example.*.rb v kořeni a adresář exams s jedním zadáním v češtině, popsaným dvakrát: smyčka, která tak dlouho žádá sušenku, dokud uživatel nenapíše správné slovo."
   },
   "highlights": [
     {
-      "en": "Beginner-level scripts, no dependencies.",
-      "cs": "Skripty pro začátečníky, bez závislostí."
+      "en": "Beginner-level scripts; one loads an external gem it never uses.",
+      "cs": "Skripty pro začátečníky; jeden načítá externí gem, který vůbec nepoužije."
+    },
+    {
+      "en": "A Czech exam task on loops and console input.",
+      "cs": "Česká zkoušková úloha na smyčky a vstup z konzole."
     }
   ],
   "stack": [

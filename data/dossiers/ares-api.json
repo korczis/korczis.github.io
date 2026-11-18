@@ -14,16 +14,16 @@
   "provenance": "inferred",
   "kind": "data",
   "summary": {
-    "en": "A mirror of a former Google Code project: prebuilt Java JARs and zip archives of a client library for ARES, the Czech business register API.",
-    "cs": "Zrcadlo bývalého projektu z Google Code: hotové Java JARy a zip archivy klientské knihovny pro ARES, API českého registru ekonomických subjektů."
+    "en": "A mirror of a former Google Code project: prebuilt Java JARs and zip archives named ares-api, by its name a client library for ARES, the Czech business register API.",
+    "cs": "Zrcadlo bývalého projektu z Google Code: hotové Java JARy a zip archivy s názvem ares-api, podle názvu klientská knihovna pro ARES, API českého registru ekonomických subjektů."
   },
   "problem": {
     "en": "Google Code was shut down, so the binaries of this ARES client would otherwise have become hard to find.",
     "cs": "Google Code skončil, takže binárky tohoto klienta pro ARES by jinak bylo těžké dohledat."
   },
   "solution": {
-    "en": "The repository keeps the released artefacts as they were: ares-api JARs, common-persist and common-utils JARs, a multi-thread downloader and settings resources. There is no source code or build in the tree.",
-    "cs": "Repozitář drží vydané artefakty tak, jak byly: JARy ares-api, common-persist a common-utils, vícevláknový downloader a resources s nastavením. Zdrojový kód ani build ve stromu nejsou."
+    "en": "The repository keeps the released artefacts as they were: ares-api JARs, common-persist and common-utils JARs, and zip archives including a multi-thread downloader and settings resources. Outside the archives there is no source code or build file, and the archives' contents were not inspected.",
+    "cs": "Repozitář drží vydané artefakty tak, jak byly: JARy ares-api, common-persist a common-utils a zip archivy včetně vícevláknového downloaderu a resources s nastavením. Mimo archivy nejsou zdrojové kódy ani build soubory a obsah archivů se neprocházel."
   },
   "highlights": [
     {
@@ -42,8 +42,8 @@
   "architecture": {
     "mermaid": "flowchart LR\n  Origin[Former Google Code project] --> Mirror[ares-api mirror]\n  Mirror --> Jars[Client JARs]\n  Mirror --> Zips[Bundle archives]\n  Jars --> Ares[ARES register API]",
     "caption": {
-      "en": "What the mirror holds and what the client talks to.",
-      "cs": "Co zrcadlo obsahuje a s čím klient komunikuje."
+      "en": "What the mirror holds and, judging by its name, what the client talks to.",
+      "cs": "Co zrcadlo obsahuje a s čím klient podle názvu komunikuje."
     }
   },
   "related": [
@@ -51,5 +51,5 @@
     "craftsmen",
     "microcrawler-crawler-firmy-cz"
   ],
-  "confidence": "medium"
+  "confidence": "low"
 }
