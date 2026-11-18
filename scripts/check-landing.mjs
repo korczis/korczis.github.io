@@ -8,10 +8,13 @@
 //    URL, and every fragment it names (#terms-*, #role-*, /hire/#role-*, /about/#cv-*, #faq-*, ...)
 //    is an id of its target;
 //  - at most four mailto: links in <main>;
-//  - the landing's questions (#faq) are /hire/'s, in /hire/'s order;
+//  - the landing's questions (#faq) are /hire/'s, in /hire/'s order, as a Flowbite accordion
+//    (data-accordion="collapse", each question a button with aria-expanded and aria-controls, the
+//    first open);
+//  - every public repository data/experience.json names for a capability links its /work/ page;
 //  - every role card (#role-<slug>) is a role of data/cv.toml, and data/role-slugs.json maps it;
 //  - no library the owner does not claim (data/glossary.toml claimed = false, with its aliases)
-//    appears in #skills or #roles;
+//    appears in #skills, #roles or the sidebar's skillset ([data-skillset]);
 //  - no "years of experience" and no "adopted" in <main>;
 //  - nothing hidden (ADR 0007): no text inside aria-hidden="true", display:none, visibility:hidden
 //    or a zero font size, no text in a `hidden` element that is not a responsive variant or a copy
@@ -38,6 +41,7 @@ const findings = [];
 const fail = (where, what) => findings.push(`${where}: ${what}`);
 
 const cv = readToml('data/cv.toml');
+const experience = existsSync(join(ROOT, 'data/experience.json')) ? JSON.parse(readFileSync(join(ROOT, 'data/experience.json'), 'utf8')) : {};
 const hire = cv.hire ?? {};
 const available = hire.available === true;
 const me = identity();
@@ -129,7 +133,7 @@ const orders = {};
 
 // Libraries the owner does not claim, by every name they go by.
 const glossary = readToml('data/glossary.toml').terms ?? [];
-const UNCLAIMED = glossary.filter((t) => t.claimed === false).flatMap((t) => [t.term, ...(t.aliases ?? [])]);
+const UNCLAIMED = [...new Set(glossary.filter((t) => t.claimed === false).flatMap((t) => [t.term, ...(t.aliases ?? [])]))];
 const FORBIDDEN = [/years of experience/i, /\badopted\b/i];
 // The project sites under this site's origin (data/projects.toml url) are other repositories' Pages.
 const PROJECT_SITES = (readToml('data/projects.toml').projects ?? []).map((p) => p.url).filter((u) => u && u.startsWith(`${me.base}/`));
@@ -212,6 +216,13 @@ for (const lang of langs) {
     const t = text(part);
     for (const name of UNCLAIMED) if (t.includes(name)) fail(rel, `#${id} names ${name}, a library the owner does not claim`);
   }
+  // The sidebar's skillset ([data-skillset], outside <main>) is a list of skills on the landing too.
+  const skillset = page.match(/<div\b[^>]*\sdata-skillset[^>]*>/);
+  if (!skillset) fail(rel, 'the sidebar has no skillset ([data-skillset])');
+  else {
+    const t = text(elementAt(page, skillset.index));
+    for (const name of UNCLAIMED) if (t.includes(name)) fail(rel, `the sidebar skillset names ${name}, a library the owner does not claim`);
+  }
 
   // Employer cards are the CV's roles with a url.
   const cards = [...main.matchAll(/\sid="proof-([a-z0-9-]+)"/g)].map((m) => m[1]).filter((s) => s !== 'majordomus' && s !== 'output').sort();
@@ -231,6 +242,30 @@ for (const lang of langs) {
       const shown = [...(byId(main, 'faq') ?? '').matchAll(/<h3\b[^>]*id="faq-[^"]+"[^>]*>([\s\S]*?)<\/h3>/g)].map((x) => text(x[1]));
       if (!shown.length) fail(rel, '#faq asks no question');
       shown.forEach((q, i) => { if (q !== asked[i]) fail(rel, `#faq question ${i + 1} "${q}" is not /hire/'s "${asked[i] ?? '(none)'}"`); });
+    }
+
+    // Under md the FAQ is the Flowbite accordion: one collapse group, every question a button
+    // with aria-expanded and aria-controls naming its answer, the first one open.
+    const faq = byId(main, 'faq') ?? '';
+    if (!/\sdata-accordion="collapse"/.test(faq)) fail(rel, '#faq is not a Flowbite accordion (data-accordion="collapse")');
+    const triggers = [...faq.matchAll(/<button\b([^>]*)\sdata-accordion-target="#([^"]+)"([^>]*)>/g)].map((x) => ({ attrs: x[1] + x[3], body: x[2] }));
+    if (triggers.length !== (faq.match(/<h3\b[^>]*id="faq-/g) ?? []).length) fail(rel, '#faq: not every question is an accordion trigger');
+    triggers.forEach((t, i) => {
+      const expanded = t.attrs.match(/\saria-expanded="(true|false)"/)?.[1];
+      if (expanded !== (i === 0 ? 'true' : 'false')) fail(rel, `#faq trigger ${i + 1}: aria-expanded is ${expanded ?? 'missing'}, the first open and the rest closed`);
+      if (!t.attrs.includes(` aria-controls="${t.body}"`)) fail(rel, `#faq trigger ${i + 1}: aria-controls does not name #${t.body}`);
+      if (!new RegExp(`\\sid="${t.body}"`).test(faq)) fail(rel, `#faq trigger ${i + 1}: no answer #${t.body}`);
+    });
+  }
+
+  // Client work: every public repository named for a capability is a link to its page.
+  const xpPart = byId(main, 'experience') ?? '';
+  for (const [cap, repos] of Object.entries(experience.public_work ?? {})) {
+    if (!xpPart.includes(`id="xp-cap-${cap}"`)) continue;
+    for (const repo of repos) {
+      const a = xpPart.match(new RegExp(`<a\\s+href="([^"]+)"[^>]*\\sdata-public-work="${repo.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}"`));
+      if (!a) fail(rel, `#xp-cap-${cap}: the public repository ${repo} is not a link`);
+      else if (!/\/work\/[^/]+\/$|\/projects\/\?project=/.test(a[1])) fail(rel, `#xp-cap-${cap}: ${repo} links ${a[1]}, not its /work/<slug>/ page`);
     }
   }
 }

@@ -784,6 +784,57 @@ async function checkRoleProbe(browser, lang, rel, cv) {
   await context.close();
   return findings;
 }
+// WCAG 2.2 SC 2.4.11 (focus not obscured) for hash navigation: a deep link to a #terms-* row, a
+// #faq-* question or a chapter lands with its target below the fixed #topbar and inside the
+// viewport, at both first viewports. And the #faq contract (templates/partials/hire-faq.html):
+// under md an accordion whose first answer is open and the others closed, a click opens one and
+// sets aria-expanded; from md up every answer is shown and every trigger says aria-expanded true.
+const HASH_TARGETS = ['terms-start', 'terms-rate', 'faq-available', 'track', 'skills', 'contact'];
+async function checkHashAndFaq(browser, lang, rel) {
+  const findings = [];
+  for (const [width, height] of FIRST_VIEWPORTS) {
+    const context = await browser.newContext({ viewport: { width, height }, reducedMotion: 'reduce' });
+    const page = await context.newPage();
+    for (const id of HASH_TARGETS) {
+      await page.goto(`${BASE}${rel}#${id}`, { waitUntil: 'networkidle', timeout: 90000 });
+      await page.waitForTimeout(300);
+      const r = await page.evaluate((target) => {
+        const el = document.getElementById(target);
+        if (!el) return null;
+        const b = el.getBoundingClientRect();
+        const bar = document.getElementById('topbar')?.getBoundingClientRect();
+        return { top: Math.round(b.top), bar: Math.round(bar ? bar.bottom : 0), inView: b.top < window.innerHeight && b.bottom > 0 };
+      }, id);
+      const where = `/${rel}#${id} ${width}x${height}`;
+      if (r === null) continue; // a row cv.toml does not state is not rendered; check-landing owns presence
+      if (r.top < r.bar) findings.push(`${where}: the target's top (${r.top} px) is under the fixed topbar (${r.bar} px), WCAG 2.4.11`);
+      if (!r.inView) findings.push(`${where}: the target is outside the viewport after the hash navigation`);
+    }
+    await page.goto(BASE + rel, { waitUntil: 'networkidle', timeout: 90000 });
+    await page.waitForTimeout(300);
+    const state = () => page.evaluate(() => [...document.querySelectorAll('#faq [data-accordion-target]')].map((btn) => {
+      const body = document.querySelector(btn.getAttribute('data-accordion-target'));
+      return { expanded: btn.getAttribute('aria-expanded'), shown: Boolean(body && body.getBoundingClientRect().height > 0) };
+    }));
+    const where = `/${rel}#faq ${width}x${height}`;
+    const before = await state();
+    if (!before.length) { await context.close(); continue; }
+    if (width < 768) {
+      if (!before[0].shown || before[0].expanded !== 'true') findings.push(`${where}: the first question is not open`);
+      if (before.slice(1).some((x) => x.shown || x.expanded !== 'false')) findings.push(`${where}: a question other than the first is open on load`);
+      if (before.length > 1) {
+        await page.locator('#faq [data-accordion-target]').nth(1).click();
+        const after = await state();
+        if (!after[1].shown || after[1].expanded !== 'true') findings.push(`${where}: a click does not open the second question (aria-expanded ${after[1].expanded})`);
+        if (after[0].shown || after[0].expanded !== 'false') findings.push(`${where}: opening the second question leaves the first open (collapse)`);
+      }
+    } else if (before.some((x) => !x.shown || x.expanded !== 'true')) {
+      findings.push(`${where}: from md up every answer is shown with aria-expanded true`);
+    }
+    await context.close();
+  }
+  return findings;
+}
 async function checkFirstViewport(browser) {
   const findings = [];
   const cv = parse(readFileSync(join(ROOT, 'data/cv.toml'), 'utf8'));
@@ -843,6 +894,7 @@ async function checkFirstViewport(browser) {
       }
     }
     findings.push(...await checkRoleProbe(browser, lang, rel, cv));
+    findings.push(...await checkHashAndFaq(browser, lang, rel));
   }
   return { findings, runs };
 }
@@ -866,7 +918,7 @@ try {
       console.log('FAIL home first viewport (hiring first)');
       for (const f of first) console.log(`     ${f}`);
     } else {
-      console.log(runs ? `ok   home first viewport: h1, a /hire/ link, a mailto:, the rate and a 24x24 Hire me in view in ${runs} runs; proof precedes the visuals; ?role= reorders and labels, never cloaks`
+      console.log(runs ? `ok   home first viewport: h1, a /hire/ link, a mailto:, the rate and a 24x24 Hire me in view in ${runs} runs; proof precedes the visuals; ?role= reorders and labels, never cloaks; hash targets clear the topbar (2.4.11); #faq is an accordion under md`
         : 'ok   home first viewport: not available for hire (data/cv.toml), nothing to show');
     }
   }

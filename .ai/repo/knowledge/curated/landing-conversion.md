@@ -57,7 +57,17 @@ the default page and the canonical stays `/`: the same content for people and bo
   repository; the merged and original counts follow, and the provenance chart shows each step.
 - The supervised count says "this site included"; Majordomus supervises, it is not "adopted".
 - A library the owner does not claim (glossary `claimed = false`: Chart.js, Cytoscape.js) is never a
-  skill, through the same flag that keeps it out of `knowsAbout`.
+  skill, through the same flag that keeps it out of `knowsAbout`: not in `#skills`, `#roles` or the
+  sidebar's skillset. The spec's separate `data/ui.toml [skills].exclude` list was not created, so
+  there is one list, not two that can drift. A project's own stack in a data island (the ecosystem
+  graph) still names such a library: that is a fact about the project, not a claimed skill.
+
+## Small screens
+
+- The FAQ is the Flowbite accordion under md (first question open, the others one tap away) and the
+  grid from md up, from one list: a phone reader does not scroll six answers to reach Contact.
+- Deep links (`#terms-*`, `#faq-*`, a chapter) land below the fixed topbar (`scroll-mt-24`,
+  WCAG 2.2 SC 2.4.11); `scripts/audit-ui.mjs` navigates to them at both first viewports.
 
 ## What was tried and dropped, and why
 

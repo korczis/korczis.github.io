@@ -55,29 +55,40 @@ and what was tried and dropped, is in `.ai/repo/knowledge/curated/landing-conver
   and a responsive variant are not hidden text.
 - **Honest labels.** A span of public repositories is "public evidence", never "years of
   experience"; Majordomus supervises repositories, it is not "adopted"; a forge figure is a
-  "listing"; a library the owner does not claim (glossary `claimed = false`) is never a skill in
-  `#skills` or `#roles`.
+  "listing"; a library the owner does not claim (glossary `claimed = false`, the one list
+  `Person.knowsAbout` uses too) is never a skill in `#skills`, `#roles` or the sidebar's skillset
+  (`[data-skillset]`).
 - **One FAQ.** The landing's questions are `/hire/`'s (one partial, `templates/partials/hire-faq.html`),
-  and the FAQPage structured data stays on `/hire/`.
+  and the FAQPage structured data stays on `/hire/`. Under md they are the Flowbite accordion
+  (`data-accordion="collapse"`, each question a button with `aria-expanded` and `aria-controls`, the
+  first open); from md up every answer shows as the grid.
+- **Client work links its public twins.** Every public repository `data/experience.json`
+  `public_work` names for a capability is a link to its `/work/<slug>/` page (or its catalogue entry).
+- **Deep links land in view.** A hash target (`#terms-*`, `#faq-*`, a chapter) clears the fixed
+  topbar (WCAG 2.2 SC 2.4.11).
 
 # Failure behaviour
 
 `scripts/check-landing.mjs` exits 1 on the built `public/index.html` and `public/cs/index.html` when
 a chapter id is missing, out of order or differs between languages; a fragment or a link in `<main>`
 resolves to nothing; there are more than four mail links; a landing question differs from `/hire/`'s;
-a role slug is not in `data/role-slugs.json`; an unclaimed library shows in `#skills` or `#roles`; a
+a role slug is not in `data/role-slugs.json`; the FAQ is not an accordion with the first question
+open; a public-work name in `#experience` is not a link to its page; an unclaimed library shows in
+`#skills`, `#roles` or the sidebar's skillset; a
 forbidden label or a hidden-text pattern appears; an employer card is not a `data/cv.toml` role with
 a url; or an i18n value of the landing's keys types a digit. `--write` regenerates
 `data/role-slugs.json`. `node scripts/gates.mjs json --check` exits 1 on a stale `data/gates.json`.
 `scripts/audit-ui.mjs` (rule `project.ui-quality-gate`) fails when the h1, a `/hire/` link, a mail
 link or the rate is outside the first viewport at 375x667 or 1440x900, in either theme or language,
 or when the `?role=` probe finds no badge, a different first role card, another canonical or other
-text.
+text; when a hash navigation to `#terms-start`, `#terms-rate`, `#faq-available`, `#track`, `#skills`
+or `#contact` leaves its target under the topbar (SC 2.4.11); or when `#faq` is not an accordion
+under md (first open, a click opens another and closes it) or hides an answer from md up.
 
 # Verification
 
 ```sh
 npm run derive && npm run build
 node scripts/check-landing.mjs && node scripts/gates.mjs json --check
-BASE_URL=http://127.0.0.1:<port>/ SITE_DIR=public node scripts/audit-ui.mjs --only '^(cs-)?home'
+BASE_URL=http://127.0.0.1:<port>/ SITE_DIR=public node scripts/audit-ui.mjs --only '^(cs-)?(index$|home)'
 ```
