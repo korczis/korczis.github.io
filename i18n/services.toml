@@ -213,3 +213,10 @@ cs = "Změřeno v práci, která dokládá její dovednosti"
 [derive_service_stack]
 en = "It is built with {list}."
 cs = "Je postavená na: {list}."
+
+[knowledge_practised]
+en = "Where this knowledge is practised"
+cs = "Kde se tato znalost uplatňuje"
+[knowledge_practised_lead]
+en = "The skills that rest on it and the services that draw on them; the evidence below is the first skill's."
+cs = "Dovednosti, které na ní stojí, a služby, které z nich čerpají; doklady níže patří první dovednosti."
