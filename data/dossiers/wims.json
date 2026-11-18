@@ -1,0 +1,65 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "wims",
+  "sources": {
+    "github": "https://github.com/korczis/wims",
+    "gitlab": "https://gitlab.com/korczis/wims",
+    "commit": "b5c8f8d34931bbde4e82a74bc45c207f18213d6e",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "Cargo.toml",
+      "Makefile",
+      "src/main.rs",
+      "src/types/path_cache.rs"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "cli",
+  "summary": {
+    "en": "\"Where Is My Space?\" is a Rust disk-usage tool that walks directories, builds a size tree and prints it with optional human-readable sizes, progress output and overall statistics. Results can be cached to disk.",
+    "cs": "„Where Is My Space?“ je nástroj v Rustu na zjištění obsazeného místa: projde adresáře, postaví strom velikostí a vypíše ho s volitelně čitelnými velikostmi, průběhem a souhrnnými statistikami. Výsledky umí cachovat na disk."
+  },
+  "problem": {
+    "en": "Finding what fills a large disk with du is slow to read and gives no tree view or progress on big trees. Repeated scans also redo the full walk.",
+    "cs": "Hledat přes du, co zaplňuje velký disk, je nepřehledné, chybí stromový pohled i průběh u velkých stromů. Opakované skeny navíc procházejí všechno znovu."
+  },
+  "solution": {
+    "en": "A walker thread sends file system events over mpsc channels to a collector that fills a generic PathCache tree (BTreeMap children with dirs, files and total sizes computed recursively). The CLI offers tree depth, directories-only output, dot/path/raw progress formats and a bincode-serialised cache.",
+    "cs": "Vlákno procházející souborový systém posílá události kanály mpsc sběrači, který plní generický strom PathCache (potomci v BTreeMap, velikosti adresářů, souborů i celkové se počítají rekurzivně). CLI nabízí hloubku stromu, výpis jen adresářů, formáty průběhu dot/path/raw a cache serializovanou bincode."
+  },
+  "highlights": [
+    {
+      "en": "Generic size tree with recursive aggregation over BTreeMap children.",
+      "cs": "Generický strom velikostí s rekurzivní agregací přes potomky v BTreeMap."
+    },
+    {
+      "en": "Producer/consumer walk over mpsc channels.",
+      "cs": "Průchod typu producent/konzument přes kanály mpsc."
+    },
+    {
+      "en": "Binary on-disk cache via bincode and serde.",
+      "cs": "Binární cache na disku přes bincode a serde."
+    }
+  ],
+  "stack": [
+    "Rust",
+    "clap",
+    "serde",
+    "bincode",
+    "env_logger"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[CLI options] --> B[Directory walker]\n  B --> C[mpsc channel]\n  C --> D[Collector]\n  D --> E[PathCache tree]\n  E --> F[Size aggregation]\n  F --> G[Tree output]\n  F --> H[Stats]\n  E --> I[bincode cache]",
+    "caption": {
+      "en": "Walker and collector threads build an aggregated size tree.",
+      "cs": "Vlákna procházení a sběru staví agregovaný strom velikostí."
+    }
+  },
+  "related": [
+    "streamflow",
+    "sli2dli",
+    "gooddata-fs"
+  ],
+  "confidence": "high"
+}

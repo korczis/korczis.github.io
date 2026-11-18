@@ -1,0 +1,72 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "rest-hello-world-benchmark",
+  "sources": {
+    "github": "https://github.com/korczis/rest-hello-world-benchmark",
+    "gitlab": null,
+    "commit": "20e82a01213273e07575a737304bf3ae0d085190",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "go-fiber/pkg/main.go",
+      "tree",
+      "elixir-cowboy-plug/lib/endpoint.ex",
+      "elixir-cowboy-plug/lib/application.ex",
+      "elixir-phoenix/lib/hello_world_phoenix_web/controllers/api_controller.ex"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "experiment",
+  "summary": {
+    "en": "A small comparison of a JSON hello-world REST endpoint across web stacks: Elixir with Phoenix, Elixir with bare Plug and Cowboy, and Go with Fiber. The README fixes the contract, the hardware and the load-test command, and records ApacheBench output for the Phoenix and Fiber implementations.",
+    "cs": "Malé srovnání JSON endpointu hello-world v několika webových stackech: Elixir s Phoenixem, Elixir s čistým Plugem a Cowboyem a Go s Fiberem. README pevně stanoví kontrakt, hardware a příkaz zátěžového testu a zaznamenává výstup ApacheBench pro implementace ve Phoenixu a ve Fiberu."
+  },
+  "problem": {
+    "en": "Framework choices are often argued from impressions; a like-for-like measurement on one machine with one endpoint gives a concrete baseline.",
+    "cs": "O volbě frameworku se často rozhoduje podle dojmu; měření stejného endpointu na stejném stroji dává konkrétní výchozí bod."
+  },
+  "solution": {
+    "en": "Each implementation serves /api/hello-world on port 4000 and is driven by ApacheBench with 10,000 requests at concurrency 100. The README keeps raw outputs for Phoenix and Fiber (about 11,100 and 11,700 requests per second) and five Go runs showing that tail percentiles were too volatile to draw conclusions from; the Plug and Cowboy app has no recorded run. The Go struct tag is unquoted, so Fiber returns the key as Message rather than message.",
+    "cs": "Každá implementace vrací /api/hello-world na portu 4000 a zatěžuje se ApacheBench s 10 000 požadavky při souběhu 100. README uchovává surové výstupy pro Phoenix a Fiber (zhruba 11 100 a 11 700 požadavků za sekundu) a pět běhů v Go, které ukazují, že horní percentily jsou příliš rozkolísané na závěry; aplikace s Plugem a Cowboyem žádný zaznamenaný běh nemá. Tag struktury v Go není v uvozovkách, takže Fiber vrací klíč Message místo message."
+  },
+  "highlights": [
+    {
+      "en": "Same endpoint, port and load profile for every stack.",
+      "cs": "Stejný endpoint, port a profil zátěže pro všechny stacky."
+    },
+    {
+      "en": "Raw ApacheBench output kept in the README for Phoenix and Fiber.",
+      "cs": "Surový výstup ApacheBench uložený v README pro Phoenix a Fiber."
+    },
+    {
+      "en": "Explicit note on percentile volatility across five repeated Go runs.",
+      "cs": "Výslovná poznámka o rozptylu percentilů v pěti opakovaných bězích v Go."
+    },
+    {
+      "en": "Three implementations; the Plug and Cowboy one is not yet measured.",
+      "cs": "Tři implementace; ta s Plugem a Cowboyem zatím změřená není."
+    }
+  ],
+  "stack": [
+    "Elixir",
+    "Phoenix",
+    "Plug",
+    "Cowboy",
+    "Go",
+    "Fiber",
+    "ApacheBench"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  AB[ApacheBench] --> PX[Phoenix app]\n  AB --> GF[Go Fiber app]\n  PL[Plug Cowboy app] --> J[JSON hello]\n  PX --> J\n  GF --> J\n  PX --> RR[README results]\n  GF --> RR",
+    "caption": {
+      "en": "One load generator and one endpoint; results are recorded for Phoenix and Fiber, while the Plug and Cowboy app is implemented without a recorded run.",
+      "cs": "Jeden generátor zátěže a jeden endpoint; výsledky jsou zaznamenané pro Phoenix a Fiber, aplikace s Plugem a Cowboyem je hotová bez zaznamenaného běhu."
+    }
+  },
+  "related": [
+    "cs-benchmark",
+    "el-magico-cache",
+    "kanec"
+  ],
+  "confidence": "high"
+}

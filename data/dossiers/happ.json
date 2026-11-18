@@ -1,0 +1,88 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "happ",
+  "sources": {
+    "github": "https://github.com/korczis/happ",
+    "gitlab": "https://gitlab.com/korczis/happ",
+    "commit": "57badfee1e8e96abcdee3c5275f47122c8ee553c",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "CMakeLists.txt",
+      "docker-compose.yml",
+      ".gitlab-ci.yml",
+      "tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "experiment",
+  "summary": {
+    "en": "A polyglot learning monorepo for practising languages, interop and build tooling, with CMake and Make builds. It holds hello-world and FFI examples in C, C++, Elixir, Haskell, Node.js, Prolog, Rust and Swift, plus small apps such as a Rust terminal calculator, a Qt expression evaluator and a SwiftUI app with a Redux-style store.",
+    "cs": "Vícejazyčné cvičné monorepo pro trénink jazyků, interoperability a build nástrojů, s buildy v CMake a Make. Obsahuje hello-world a FFI příklady v C, C++, Elixiru, Haskellu, Node.js, Prologu, Rustu a Swiftu a k tomu menší aplikace: terminálovou kalkulačku v Rustu, vyhodnocovač výrazů v Qt a SwiftUI aplikaci se storem ve stylu Reduxu."
+  },
+  "problem": {
+    "en": "Learning how languages call each other (NIFs, N-API addons, Haskell FFI in both directions) is easiest when every example builds from one place with the same conventions.",
+    "cs": "Jak se jazyky navzájem volají (NIF, N-API addony, Haskell FFI oběma směry), se nejlépe učí, když se všechny příklady staví z jednoho místa podle stejných konvencí."
+  },
+  "solution": {
+    "en": "A root CMakeLists adds the apps and examples directories, where CMake covers the Qt evaluator and the C/C++ examples, and a recursive Makefile walks the seven language examples. The Elixir example carries native C and Rust NIF crates, the Node example covers nan, N-API and node-addon-api, and the interop folder holds only a Makefile for embedding Prolog in C without its C sources. Docker Compose brings up Elasticsearch, Kibana, PostGIS and RabbitMQ next to the Elixir app, which has its own GitLab CI pipeline, although the root CI include points at a path that does not exist.",
+    "cs": "Kořenový CMakeLists přidává adresáře apps a examples, kde CMake pokrývá vyhodnocovač v Qt a příklady v C/C++, a rekurzivní Makefile prochází příklady sedmi jazyků. Příklad v Elixiru nese nativní NIF v C a Rustu, příklad v Node pokrývá nan, N-API i node-addon-api a složka interop obsahuje jen Makefile pro vložení Prologu do C, bez samotných zdrojáků v C. Docker Compose spouští Elasticsearch, Kibanu, PostGIS a RabbitMQ vedle aplikace v Elixiru, která má vlastní GitLab CI pipeline, kořenový include CI ale míří na neexistující cestu."
+  },
+  "highlights": [
+    {
+      "en": "Examples in seven languages wired into one recursive Makefile; CMake covers the C/C++ parts.",
+      "cs": "Příklady v sedmi jazycích propojené jedním rekurzivním Makefilem; části v C/C++ pokrývá CMake."
+    },
+    {
+      "en": "Elixir NIFs in both C and Rust; three Node.js native addon styles.",
+      "cs": "NIFy pro Elixir v C i Rustu; tři způsoby nativních addonů pro Node.js."
+    },
+    {
+      "en": "C/C++ demos including a fluid solver with OpenGL/GLUT.",
+      "cs": "Ukázky v C/C++ včetně řešiče proudění s OpenGL/GLUT."
+    },
+    {
+      "en": "Haskell calling C math functions, and C calling an exported Haskell function.",
+      "cs": "Haskell volající matematické funkce z C a C volající exportovanou funkci v Haskellu."
+    },
+    {
+      "en": "Docker Compose stack with Elasticsearch, Kibana, PostGIS and RabbitMQ next to the Elixir app.",
+      "cs": "Docker Compose s Elasticsearchem, Kibanou, PostGIS a RabbitMQ vedle aplikace v Elixiru."
+    }
+  ],
+  "stack": [
+    "C",
+    "C++",
+    "CMake",
+    "Elixir",
+    "Phoenix",
+    "Rust",
+    "Haskell",
+    "Node.js",
+    "Prolog",
+    "Swift",
+    "SwiftUI",
+    "Qt",
+    "OpenGL",
+    "Docker Compose",
+    "PostgreSQL",
+    "Elasticsearch",
+    "Kibana",
+    "GitLab CI"
+  ],
+  "architecture": {
+    "mermaid": "flowchart TD\n  ROOT[Repository root] --> APPS[apps]\n  ROOT --> EX[examples]\n  APPS --> CALC[Rust calculator]\n  APPS --> ABA[Qt evaluator]\n  APPS --> COR[SwiftUI app]\n  EX --> ELX[Elixir app]\n  ELX --> NIF[C and Rust NIFs]\n  EX --> NODE[Node addons]\n  EX --> HS[Haskell FFI]\n  EX --> PL[Prolog examples]\n  ELX --> ES[Elasticsearch]",
+    "caption": {
+      "en": "The repository fans out to apps and per-language interop examples.",
+      "cs": "Repozitář se větví do aplikací a interop příkladů pro jednotlivé jazyky."
+    }
+  },
+  "related": [
+    "rustler-test",
+    "rustler_mix",
+    "skull",
+    "in-rust-we-trust",
+    "haskell-world"
+  ],
+  "confidence": "medium"
+}

@@ -1,0 +1,68 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "docker-dstk",
+  "sources": {
+    "github": "https://github.com/korczis/docker-dstk",
+    "gitlab": "https://gitlab.com/korczis/docker-dstk",
+    "commit": "952b50d9d64f70534f1acbaaf8e21ec58586d7d3",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "Dockerfile",
+      "run.sh",
+      "top-level tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "config",
+  "summary": {
+    "en": "A Dockerfile that packages the open-source Data Science Toolkit server on Ubuntu 14.04. It builds the GeoIP tooling from source, installs the toolkit and copies a run.sh that starts its Ruby server; the image entrypoint is commented out.",
+    "cs": "Dockerfile, který balí open-source server Data Science Toolkit na Ubuntu 14.04. Ze zdrojů sestaví nástroje GeoIP, nainstaluje toolkit a přiloží run.sh, který spouští jeho Ruby server; entrypoint image je zakomentovaný."
+  },
+  "problem": {
+    "en": "The toolkit depends on a long list of system packages, PostgreSQL, GeoIP data, a geocoder and a specific Ruby version, which makes a manual install slow and fragile.",
+    "cs": "Toolkit závisí na dlouhém seznamu systémových balíků, PostgreSQL, datech GeoIP, geokodéru a konkrétní verzi Ruby, takže ruční instalace je pomalá a křehká."
+  },
+  "solution": {
+    "en": "The image creates a sudo-enabled user, installs Java 8, PostgreSQL 9.3 and GeoIP tooling, builds geoipupdate and a GeoIP fork, installs Ruby 2.1 via RVM, prepares the Twofishes geocoder world data and runs the toolkit's install and bundle steps. run.sh launches dstk_server.rb, and port 4567 is exposed, but the image does not start it on its own.",
+    "cs": "Image založí uživatele se sudo, nainstaluje Javu 8, PostgreSQL 9.3 a nástroje GeoIP, sestaví geoipupdate a fork GeoIP, přes RVM doinstaluje Ruby 2.1, připraví světová data geokodéru Twofishes a provede instalační a bundle kroky toolkitu. run.sh spouští dstk_server.rb a port 4567 je vystavený, sám od sebe ho ale image nespustí."
+  },
+  "highlights": [
+    {
+      "en": "Single Dockerfile covering system packages, PostgreSQL 9.3, GeoIP and RVM Ruby 2.1",
+      "cs": "Jeden Dockerfile pro systémové balíky, PostgreSQL 9.3, GeoIP a Ruby 2.1 přes RVM"
+    },
+    {
+      "en": "Builds geoipupdate and GeoIP from source inside the image",
+      "cs": "Sestavení geoipupdate a GeoIP ze zdrojů přímo v image"
+    },
+    {
+      "en": "Prepares Twofishes geocoder data during the build",
+      "cs": "Příprava dat geokodéru Twofishes během buildu"
+    }
+  ],
+  "stack": [
+    "Docker",
+    "Ubuntu",
+    "Ruby",
+    "RVM",
+    "PostgreSQL",
+    "Python",
+    "Java",
+    "GeoIP"
+  ],
+  "architecture": {
+    "mermaid": "flowchart TD\n  A[Ubuntu 14.04] --> B[System packages]\n  B --> C[Java 8]\n  B --> D[PostgreSQL 9.3]\n  B --> E[GeoIP build]\n  E --> F[RVM Ruby 2.1]\n  F --> G[Twofishes data]\n  G --> H[DSTK install]\n  H --> I[run.sh starts dstk_server.rb]",
+    "caption": {
+      "en": "Build layers of the image, ending in the toolkit server.",
+      "cs": "Vrstvy buildu image zakončené serverem toolkitu."
+    }
+  },
+  "related": [
+    "docker-datasciencetoolbox",
+    "datascience",
+    "simple_geocoder",
+    "data-playground"
+  ],
+  "confidence": "medium"
+}

@@ -172,6 +172,27 @@
     }
    }
   },
+  "/schemas/dossier.schema.json": {
+   "get": {
+    "operationId": "schemas_dossier_schema_json",
+    "summary": "data/dossiers/<repo>.json, one per original public repository of data/index.json, checked by scripts/check-dossiers.mjs (rule project.dossiers-inferred). A dossier is inferred: an agent read the files named in sources.read at sources.commit on sources.read_at and wrote the problem, the solution, the stack and an architecture diagram, in English and Czech, with its confidence. It names no client, person or private source (rule project.nda-never-named); related names only other original repositories.",
+    "tags": [
+     "schemas"
+    ],
+    "responses": {
+     "200": {
+      "description": "The file, as published",
+      "content": {
+       "application/schema+json": {
+        "schema": {
+         "type": "object"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
   "/schemas/experience.schema.json": {
    "get": {
     "operationId": "schemas_experience_schema_json",

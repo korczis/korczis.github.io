@@ -1,0 +1,55 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "server-coreos",
+  "sources": {
+    "github": "https://github.com/korczis/server-coreos",
+    "gitlab": "https://gitlab.com/korczis/server-coreos",
+    "commit": "6defb052d218d455baeabde77126c18e12d23ca8",
+    "read_at": "2026-11-18",
+    "read": [
+      "LICENSE",
+      "tree",
+      "repository description"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "config",
+  "summary": {
+    "en": "A placeholder for a CoreOS-based immutable server configuration; the repository contains only a licence.",
+    "cs": "Zástupný repozitář pro konfiguraci neměnného serveru nad CoreOS; obsahuje jen licenci."
+  },
+  "problem": {
+    "en": "The description names an immutable CoreOS server; how it was to be provisioned is unclear.",
+    "cs": "Popis zmiňuje neměnný server nad CoreOS; jak se měl provisionovat, je nejasné."
+  },
+  "solution": {
+    "en": "No configuration was committed. It sits beside the Arch Linux, Atomic and NixOS server repositories as an unrealised variant.",
+    "cs": "Žádná konfigurace commitnutá není. Stojí vedle serverových repozitářů pro Arch Linux, Atomic a NixOS jako nerealizovaná varianta."
+  },
+  "highlights": [
+    {
+      "en": "Only LICENSE present",
+      "cs": "Obsahuje pouze LICENSE"
+    },
+    {
+      "en": "One of several immutable or declarative server experiments",
+      "cs": "Jeden z několika pokusů o neměnný či deklarativní server"
+    }
+  ],
+  "stack": [
+    "CoreOS"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Idea[immutable server idea] --> Repo[server-coreos]\n  Repo --> Lic[LICENSE only]\n  Idea --> Alt[sibling server repos]",
+    "caption": {
+      "en": "Only the intent is recorded.",
+      "cs": "Zachycený je jen záměr."
+    }
+  },
+  "related": [
+    "server-atomic",
+    "server-archlinux",
+    "server-nixos"
+  ],
+  "confidence": "low"
+}

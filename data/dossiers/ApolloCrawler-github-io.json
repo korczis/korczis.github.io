@@ -1,0 +1,51 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "ApolloCrawler-github-io",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/ApolloCrawler-github-io",
+    "commit": "3b9377313e9eebf2407580242ba1f6722087cd10",
+    "read_at": "2026-11-18",
+    "read": [
+      "index.html",
+      "tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "site",
+  "summary": {
+    "en": "A placeholder GitHub Pages site for the Apollo Crawler project. The repository holds a single index.html with one heading and nothing else.",
+    "cs": "Zástupný web na GitHub Pages pro projekt Apollo Crawler. Repozitář obsahuje jediný index.html s jedním nadpisem a nic dalšího."
+  },
+  "problem": {
+    "en": "The crawler project needed a public landing address.",
+    "cs": "Projekt crawleru potřeboval veřejnou adresu pro úvodní stránku."
+  },
+  "solution": {
+    "en": "A minimal static HTML page served from the forge pages host; the content was never expanded.",
+    "cs": "Minimální statická HTML stránka publikovaná přes pages hosting; obsah se dál nerozvíjel."
+  },
+  "highlights": [
+    {
+      "en": "Single static file, no build or assets.",
+      "cs": "Jeden statický soubor, žádný build ani assety."
+    }
+  ],
+  "stack": [
+    "HTML"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  R[Repository] --> P[Pages hosting]\n  P --> H[index.html]\n  H --> V[Visitor]",
+    "caption": {
+      "en": "A single static page published from the repository.",
+      "cs": "Jediná statická stránka publikovaná z repozitáře."
+    }
+  },
+  "related": [
+    "apollo-crawler",
+    "apollocrawler.com",
+    "apollocrawler-com",
+    "apollo-crawler-extension"
+  ],
+  "confidence": "low"
+}

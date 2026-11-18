@@ -1,0 +1,76 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "algoglyph",
+  "sources": {
+    "github": "https://github.com/korczis/algoglyph",
+    "gitlab": null,
+    "commit": "916cdc7240fb02d2b8265790f1ef45421039af49",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "top-level tree",
+      "crates/"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "site",
+  "summary": {
+    "en": "algoglyph is a gallery of seeded, interactive p5.js simulations of algorithms and physical systems, each called a plate. Every plate exposes its parameters as controls and reports readouts computed from the running state, such as comparisons and writes for a sort or energy drift for an integrator. The catalogue is organised in thematic wings, from sorting and graphs to physics and distributed systems.",
+    "cs": "algoglyph je galerie seedovaných interaktivních simulací algoritmů a fyzikálních systémů v p5.js, kterým se říká plates. Každá plate vystavuje parametry jako ovládací prvky a ukazuje hodnoty spočítané z běžícího stavu, třeba počet porovnání a zápisů u řazení nebo drift energie u integrátoru. Katalog je rozdělený do tematických křídel od řazení a grafů po fyziku a distribuované systémy."
+  },
+  "problem": {
+    "en": "Algorithm visualisations are often decorative: the picture does not match what the code does and displayed numbers are constants or estimates. Shared links rarely reproduce the exact picture someone saw.",
+    "cs": "Vizualizace algoritmů bývají jen ozdobné: obrázek neodpovídá tomu, co kód dělá, a zobrazená čísla jsou konstanty nebo odhady. Sdílený odkaz navíc málokdy zobrazí přesně ten obrázek, který viděl autor."
+  },
+  "solution": {
+    "en": "A single plate contract and one stage own canvas, pausing, export, accessibility and theming, so plates only draw through a provided context. The only randomness is a seeded generator from the URL, which also carries changed parameters, so a link reproduces the same frames. Pure algorithm and integrator modules are unit tested against independent references, and a headless browser gate checks accessibility, console errors, overflow and that each plate mounts and reports.",
+    "cs": "Jednotný kontrakt plate a jedna stage obstarávají canvas, pauzu, export, přístupnost i téma, takže plate kreslí jen přes předaný kontext. Jediná náhodnost je seedovaný generátor z URL, která nese i změněné parametry, a odkaz tedy reprodukuje stejné snímky. Čisté moduly algoritmů a integrátorů jsou unit testované proti nezávislým referencím a headless prohlížeč hlídá přístupnost, chyby v konzoli, přetečení a to, že každá plate naběhne a hlásí hodnoty."
+  },
+  "highlights": [
+    {
+      "en": "Readouts measured from simulation state; physics plates name their integrator and report conserved quantities.",
+      "cs": "Hodnoty měřené ze stavu simulace; fyzikální plates uvádějí integrátor a hlásí zachovávané veličiny."
+    },
+    {
+      "en": "Seeded routes make every picture reproducible from its URL.",
+      "cs": "Seedované routy dělají každý obrázek reprodukovatelný z URL."
+    },
+    {
+      "en": "Catalogue of Markdown entries drives the site and the generated README.",
+      "cs": "Katalog Markdown záznamů řídí web i generované README."
+    },
+    {
+      "en": "Accessibility and layout gate in headless Chrome at two widths and both themes before merge.",
+      "cs": "Brána přístupnosti a layoutu v headless Chrome ve dvou šířkách a obou tématech před mergem."
+    },
+    {
+      "en": "Rust crates for a CLI and compute kernels alongside the TypeScript site.",
+      "cs": "Rust crates pro CLI a výpočetní jádra vedle webu v TypeScriptu."
+    }
+  ],
+  "stack": [
+    "TypeScript",
+    "p5.js",
+    "Vite",
+    "Alpine.js",
+    "Tailwind CSS",
+    "Flowbite Pro",
+    "Vitest",
+    "axe-core",
+    "Rust",
+    "GitHub Pages"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Cat[Catalogue entries] --> Reg[Plate registry]\n  Reg --> Stage[Stage]\n  URL[Route with seed] --> Stage\n  Stage --> P5[p5 instance]\n  P5 --> Read[Measured readouts]\n  Tests[Vitest references] --> Reg\n  Audit[Browser audit] --> Site[Static site]\n  Stage --> Site",
+    "caption": {
+      "en": "Plates are registered from the catalogue and run only through the shared stage; the route seeds every frame.",
+      "cs": "Plates se registrují z katalogu a běží jen přes sdílenou stage; routa určuje seed každého snímku."
+    }
+  },
+  "related": [
+    "oscilla",
+    "korczis.github.io",
+    "prismatic-majordomus"
+  ],
+  "confidence": "high"
+}

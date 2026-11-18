@@ -1,0 +1,57 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "zdeny-docker",
+  "sources": {
+    "github": "https://github.com/korczis/zdeny-docker",
+    "gitlab": "https://gitlab.com/korczis/zdeny-docker",
+    "commit": "bf3f3f6e8661f1ea8b88bb772700ae883e8a7222",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "Dockerfile",
+      "build.sh",
+      "run.sh"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "config",
+  "summary": {
+    "en": "A Docker image that clones a git repository at container start, using SSH keys and a git ref passed as environment variables.",
+    "cs": "Docker image, který při startu kontejneru naklonuje git repozitář podle SSH klíčů a git refu předaných v proměnných prostředí."
+  },
+  "problem": {
+    "en": "Running someone's code in a clean, repeatable environment without installing anything on the host.",
+    "cs": "Spustit cizí kód v čistém a opakovatelném prostředí bez instalace čehokoli na hostitele."
+  },
+  "solution": {
+    "en": "The image is based on python:3.6-slim with git, ssh, tree and vim. The entrypoint script reads GIT_REPO, GIT_REF and SRC_DIR, clones and checks out the ref, and leaves a commented placeholder for pip install and a Python run. It is a learning scaffold rather than a finished runner.",
+    "cs": "Image vychází z python:3.6-slim a přidává git, ssh, tree a vim. Vstupní skript načte GIT_REPO, GIT_REF a SRC_DIR, naklonuje repozitář a přepne se na daný ref; místo pro pip install a spuštění Pythonu je jen zakomentované. Jde spíš o výukovou kostru než o hotový spouštěč."
+  },
+  "highlights": [
+    {
+      "en": "Repository, ref and target directory configurable through ENV",
+      "cs": "Repozitář, ref i cílový adresář se nastavují přes ENV"
+    },
+    {
+      "en": "One-line build script and a documented docker run invocation",
+      "cs": "Jednořádkový build skript a zdokumentované spuštění přes docker run"
+    }
+  ],
+  "stack": [
+    "Docker",
+    "Bash",
+    "Python",
+    "Git"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Env[ENV vars] --> Entry[run.sh]\n  Keys[SSH keys] --> Entry\n  Entry --> Clone[git clone]\n  Clone --> Checkout[git checkout ref]\n  Checkout --> Work[placeholder run]",
+    "caption": {
+      "en": "Container start: environment in, clone and checkout, then the user's code.",
+      "cs": "Start kontejneru: proměnné prostředí, klon a checkout, pak vlastní kód."
+    }
+  },
+  "related": [
+    "aws-lambda-docker"
+  ],
+  "confidence": "medium"
+}

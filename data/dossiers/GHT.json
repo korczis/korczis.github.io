@@ -1,0 +1,56 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "GHT",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/GHT",
+    "commit": "c8beb0cb7d3c6d2d6e1943dcf5d7372406f0ebfc",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "tree /"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "docs",
+  "summary": {
+    "en": "A repository holding a single long custom licence text, titled KX License Agreement v1.0, for the author's experimental software. Its table of contents lists 42 sections, but the body only writes out sections 1 to 12.",
+    "cs": "Repozitář s jediným dlouhým textem vlastní licence nazvané KX License Agreement v1.0 pro autorův experimentální software. Obsah ohlašuje 42 oddílů, samotný text ale obsahuje jen oddíly 1 až 12."
+  },
+  "problem": {
+    "en": "The author wanted terms for experimental code that are far stricter than common open-source licences, covering forks, derivatives, AI use and integration.",
+    "cs": "Autor chtěl pro experimentální kód podmínky výrazně přísnější než běžné open-source licence, které pokrývají forky, odvozená díla, využití AI a integraci."
+  },
+  "solution": {
+    "en": "The text reserves all rights, grants use only through explicit written licence grants and spells out restrictions, revocation, termination, jurisdiction under Czech law and many edge cases in numbered sections. It is written in a deliberately ceremonial style, and some section numbers and headings are duplicated.",
+    "cs": "Text si vyhrazuje všechna práva, užití povoluje jen výslovným písemným udělením licence a v číslovaných oddílech rozepisuje omezení, odvolání, ukončení, příslušnost podle českého práva a řadu okrajových případů. Je psán záměrně obřadním stylem a některá čísla a názvy oddílů se opakují."
+  },
+  "highlights": [
+    {
+      "en": "All-rights-reserved model with per-user written grants.",
+      "cs": "Model se všemi právy vyhrazenými a písemným udělením licence pro každého uživatele."
+    },
+    {
+      "en": "The table of contents announces sections on AI emulation, derivatives and network execution that the body never reaches.",
+      "cs": "Obsah ohlašuje oddíly o emulaci pomocí AI, odvozených dílech a síťovém provozu, ke kterým se text nikdy nedostane."
+    },
+    {
+      "en": "Naming is inconsistent: the title says KX License Agreement, a duplicated section calls it the General Honest License.",
+      "cs": "Pojmenování je nejednotné: nadpis uvádí KX License Agreement, zdvojený oddíl ji nazývá General Honest License."
+    }
+  ],
+  "stack": [
+    "Markdown"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  TXT[KX licence text] --> OWN[Ownership and origin]\n  TXT --> GRANT[Written licence grants]\n  TXT --> REST[Restrictions]\n  REST --> REV[Revocation and termination]\n  TXT --> LAW[Czech law, Prague courts]\n  TXT --> EXP[Liability, indemnity, export]",
+    "caption": {
+      "en": "The twelve sections the body writes out; the other 30 exist only in the table of contents.",
+      "cs": "Dvanáct oddílů, které text skutečně obsahuje; zbylých 30 je jen v obsahu."
+    }
+  },
+  "related": [
+    "comtesse"
+  ],
+  "confidence": "medium"
+}

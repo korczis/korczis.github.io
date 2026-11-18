@@ -1,0 +1,65 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "edna",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/edna",
+    "commit": "6b7ef5897a9e8e14e99e79dcbd5a3b6606f41964",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "tree /"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "docs",
+  "summary": {
+    "en": "A Czech product concept for an LLM-powered digital fortune teller offering horoscopes, tarot readings, numerology, dream interpretation and calming conversation. The repository contains only the concept README with features, persona, planned architecture, monetisation, accessibility, retention, roadmap and ethics.",
+    "cs": "Český produktový koncept digitální vědmy poháněné LLM, která nabízí horoskopy, výklad tarotu, numerologii, výklad snů a uklidňující rozhovor. Repozitář obsahuje jen README s konceptem: funkce, persona, plánovaná architektura, monetizace, přístupnost, retence, roadmapa a etika."
+  },
+  "problem": {
+    "en": "The target audience, primarily seniors, wants regular light spiritual entertainment and companionship in a simple, readable interface. The product also has to stay clearly in entertainment and never give medical or financial advice.",
+    "cs": "Cílová skupina, především senioři, chce pravidelnou lehkou duchovní zábavu a společnost v jednoduchém a čitelném rozhraní. Produkt přitom musí zůstat jasně v roli zábavy a nikdy nedávat zdravotní ani finanční rady."
+  },
+  "solution": {
+    "en": "The plan is an Elixir and Phoenix LiveView backend with modules for core readings, LLM orchestration and persona, UI, voice and text-to-speech, payments and retention. PostgreSQL would hold user data and ETS or Mnesia fast caches, with hosted or local LLMs behind the orchestration layer. Ethics rules require soft, non-categorical language, an entertainment disclaimer and a safe mode with wellbeing features only.",
+    "cs": "Plán počítá s backendem v Elixiru a Phoenix LiveView s moduly pro jádro výkladů, orchestraci LLM a personu, UI, hlas a převod textu na řeč, platby a retenci. Uživatelská data by držel PostgreSQL, rychlou cache ETS nebo Mnesia a za orchestrační vrstvou by stály hostované nebo lokální LLM. Etická pravidla vyžadují měkký, nekategorický jazyk, upozornění, že jde o zábavu, a bezpečný režim jen s funkcemi pro pohodu."
+  },
+  "highlights": [
+    {
+      "en": "Module plan separating LLM persona, voice, payments and retention.",
+      "cs": "Plán modulů, který odděluje personu LLM, hlas, platby a retenci."
+    },
+    {
+      "en": "Accessibility for seniors: large type, high contrast, phone and PIN login, voice.",
+      "cs": "Přístupnost pro seniory: velké písmo, vysoký kontrast, přihlášení telefonem a PINem, hlas."
+    },
+    {
+      "en": "Memory of past readings to keep conversations continuous.",
+      "cs": "Paměť minulých výkladů, aby rozhovory navazovaly."
+    },
+    {
+      "en": "Concept only: no code in the repository.",
+      "cs": "Jen koncept: v repozitáři není žádný kód."
+    }
+  ],
+  "stack": [
+    "Elixir",
+    "Phoenix",
+    "LiveView",
+    "PostgreSQL",
+    "Mnesia",
+    "ETS",
+    "LLM",
+    "TTS"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  U[User] --> UI[LiveView UI]\n  UI --> CORE[Readings core]\n  CORE --> LLM[LLM orchestration and persona]\n  LLM --> PROV[Hosted or local LLM]\n  CORE --> DB[(PostgreSQL)]\n  CORE --> CACHE[ETS or Mnesia cache]\n  UI --> VOICE[Voice and TTS]\n  CORE --> PAY[Payments]\n  CORE --> RET[Retention and notifications]",
+    "caption": {
+      "en": "Planned module layout around an LLM persona; nothing is implemented yet.",
+      "cs": "Plánované rozložení modulů kolem LLM persony; zatím nic není implementováno."
+    }
+  },
+  "related": [],
+  "confidence": "medium"
+}

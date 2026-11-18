@@ -8,7 +8,8 @@ having to remember; the gates below refuse a change that does not.
 
 1. **Orient.** `majordomus context`; read the rules for the paths you will touch
    (`majordomus context resolve <path>`): at least `project.viz-ergonomics`,
-   `project.everything-interlinked`, `project.front-matter-contract`, `project.data-measured`;
+   `project.everything-interlinked`, `project.front-matter-contract`, `project.data-measured`
+   (and `project.dossiers-inferred` for anything that reads or writes `data/dossiers/`);
    for anything a recruiter, a search engine or a machine reader sees (titles, front matter, OG,
    JSON-LD, `llms.txt`, `resume.json`, the hero, /about/, /hire/), also `project.hire-surfaces`,
    `project.seo-derived` and the note `ai-readers-and-sourcing-tools`.

@@ -1,0 +1,64 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "gooddata_connectors_metadata",
+  "sources": {
+    "github": "https://github.com/korczis/gooddata_connectors_metadata",
+    "gitlab": "https://gitlab.com/korczis/gooddata_connectors_metadata",
+    "commit": "04bcf6bcec97d7bed76c98cfdc0da36ffeee96f8",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "gooddata_connectors_metadata.gemspec",
+      "recursive tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "library",
+  "summary": {
+    "en": "A Ruby gem for describing and storing the metadata of data connectors for a hosted analytics platform. It models entities, fields and typed values and keeps metadata per schedule in MongoDB.",
+    "cs": "Ruby gem pro popis a ukládání metadat datových konektorů hostované analytické platformy. Modeluje entity, pole a typované hodnoty a metadata ukládá pro každý plán spouštění do MongoDB."
+  },
+  "problem": {
+    "en": "Connectors that download data from external sources need a shared description of entities, fields and types so that later steps can rely on what arrives.",
+    "cs": "Konektory, které stahují data z externích zdrojů, potřebují sdílený popis entit, polí a typů, aby se na příchozí data mohly spolehnout další kroky."
+  },
+  "solution": {
+    "en": "lib/ defines Entity, Entities, Field and Validation classes, type classes for boolean, date, decimal, integer and string, a configuration and runtime layer and dedicated exception types. A brick middleware loads the global metadata of a schedule from MongoDB and hands it down the pipeline. It depends on the platform Ruby SDK and the mongo driver; the RSpec specs are stubs run by rake ci on Travis CI. The gemspec lists another engineer as author, so this copy is likely a mirror; the README is the default template.",
+    "cs": "lib/ definuje třídy Entity, Entities, Field a Validation, typové třídy pro boolean, date, decimal, integer a string, vrstvu konfigurace a runtime a vlastní výjimky. Middleware pro bricky načte z MongoDB globální metadata plánu a předá je dál v pipeline. Závisí na Ruby SDK platformy a ovladači mongo; specifikace v RSpec jsou jen kostry spouštěné přes rake ci na Travis CI. Gemspec uvádí jako autora jiného inženýra, takže jde nejspíš o zrcadlo; README je výchozí šablona."
+  },
+  "highlights": [
+    {
+      "en": "Typed field model whose types round-trip between compact type-size strings and hashes",
+      "cs": "Typovaný model polí, jehož typy se převádějí mezi zkráceným zápisem typ-velikost a hashi"
+    },
+    {
+      "en": "Separate exceptions for entity, metadata, type and missing-parameter errors",
+      "cs": "Oddělené výjimky pro chyby entit, metadat, typů a chybějících parametrů"
+    },
+    {
+      "en": "Brick middleware that loads per-schedule metadata from MongoDB",
+      "cs": "Middleware pro bricky, které načítá metadata plánu z MongoDB"
+    }
+  ],
+  "stack": [
+    "Ruby",
+    "MongoDB",
+    "RSpec",
+    "RuboCop",
+    "Travis CI"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[Brick pipeline] --> M[MetadataMiddleware]\n  M --> B[Metadata]\n  B --> C[Entities]\n  C --> D[Fields]\n  D --> E[Types]\n  B --> G[Configuration]\n  B --> H[MongoDB store]",
+    "caption": {
+      "en": "A middleware loads the metadata model, from entities down to typed fields.",
+      "cs": "Middleware načte model metadat od entit po typovaná pole."
+    }
+  },
+  "related": [
+    "grache",
+    "gooddata-ruby-examples",
+    "gooddata-lcm-tool",
+    "gooddata-fs"
+  ],
+  "confidence": "medium"
+}

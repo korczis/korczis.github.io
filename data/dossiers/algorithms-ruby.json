@@ -1,0 +1,67 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "algorithms-ruby",
+  "sources": {
+    "github": "https://github.com/korczis/algorithms-ruby",
+    "gitlab": "https://gitlab.com/korczis/algorithms-ruby",
+    "commit": "6843ad55c92a62a35b6862e763119fbacce1e641",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "algorithms.gemspec",
+      "recursive tree",
+      "ext/algorithms/algorithms.cpp",
+      "lib/algorithms/algorithms.rb"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "library",
+  "summary": {
+    "en": "A Ruby gem skeleton for fundamental algorithms with a native C++ extension. The extension registers a few test methods, such as a factorial, through the Ruby C API.",
+    "cs": "Kostra Ruby gemu pro základní algoritmy s nativním rozšířením v C++. Rozšíření přes Ruby C API registruje několik testovacích metod, například faktoriál."
+  },
+  "problem": {
+    "en": "The gem describes itself as fundamental algorithms in Ruby; the code explores pairing plain Ruby modules with a compiled C++ extension behind one Ruby interface.",
+    "cs": "Gem se popisuje jako základní algoritmy v Ruby; kód zkouší spojit obyčejné Ruby moduly s kompilovaným rozšířením v C++ za jedním Ruby rozhraním."
+  },
+  "solution": {
+    "en": "The gemspec declares ext/algorithms/extconf.rb (mkmf) as a native extension, the Rakefile builds it with rake-compiler's ExtensionTask, and ffi and pry are runtime dependencies. lib/ requires every Ruby file of its directory (math and increment helpers) plus the compiled extension, and bin/ starts a Pry console. The README usage section is still a TODO.",
+    "cs": "Gemspec deklaruje ext/algorithms/extconf.rb (mkmf) jako nativní rozšíření, Rakefile ho sestavuje přes ExtensionTask z rake-compileru a ffi a pry jsou runtime závislosti. lib/ načítá všechny Ruby soubory svého adresáře (pomocné funkce math a increment) i zkompilované rozšíření a bin/ spouští konzoli Pry. Sekce použití v README je stále TODO."
+  },
+  "highlights": [
+    {
+      "en": "Native C++ extension wired through extconf.rb and rake-compiler",
+      "cs": "Nativní C++ rozšíření zapojené přes extconf.rb a rake-compiler"
+    },
+    {
+      "en": "Ruby C API method registration, including a factorial function",
+      "cs": "Registrace metod přes Ruby C API včetně faktoriálu"
+    },
+    {
+      "en": "Interactive Pry console executable for experiments",
+      "cs": "Interaktivní konzole Pry pro experimenty"
+    }
+  ],
+  "stack": [
+    "Ruby",
+    "C++",
+    "Ruby C API",
+    "rake-compiler",
+    "FFI",
+    "Pry"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[Ruby caller] --> B[lib algorithms]\n  B --> C[math.rb]\n  B --> D[increment.rb]\n  A --> E[Native extension]\n  F[extconf.rb] --> E\n  E --> G[algorithms.cpp]\n  H[bin console] --> A",
+    "caption": {
+      "en": "Ruby modules and the compiled extension sit side by side under one gem.",
+      "cs": "Ruby moduly a kompilované rozšíření vedle sebe v jednom gemu."
+    }
+  },
+  "related": [
+    "algorithms",
+    "skull-ruby",
+    "skull-cpp",
+    "rustler-test"
+  ],
+  "confidence": "medium"
+}

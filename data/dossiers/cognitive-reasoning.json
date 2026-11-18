@@ -1,0 +1,51 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "cognitive-reasoning",
+  "sources": {
+    "github": "https://github.com/korczis/cognitive-reasoning",
+    "gitlab": null,
+    "commit": "7b33826af208c2b97ea272c2f79311a3aca2bbbd",
+    "read_at": "2026-11-18",
+    "read": [
+      "LICENSE (tree)",
+      "commits"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "kata",
+  "summary": {
+    "en": "A placeholder repository: its only content is a licence file from the initial commit. The name suggests work on reasoning for AI systems, but nothing in the tree confirms the intended scope.",
+    "cs": "Zatím prázdný repozitář, obsahuje jen licenci z úvodního commitu. Název napovídá práci na uvažování AI systémů, ale ve stromu nic takového zatím není."
+  },
+  "problem": {
+    "en": "Unclear; the repository carries no README, code or issue description.",
+    "cs": "Nejasné; repozitář nemá README, kód ani popis."
+  },
+  "solution": {
+    "en": "Not yet implemented. The repository reserves the name and licence for future work.",
+    "cs": "Zatím neimplementováno. Repozitář jen rezervuje název a licenci pro budoucí práci."
+  },
+  "highlights": [
+    {
+      "en": "Single initial commit with a licence file only.",
+      "cs": "Jediný úvodní commit, pouze licence."
+    },
+    {
+      "en": "Scope must be read from future commits, not inferred now.",
+      "cs": "Rozsah bude zřejmý až z dalších commitů."
+    }
+  ],
+  "stack": [],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[Repository] --> B[LICENSE]\n  A --> C[Initial commit]\n  C --> D[Future work]",
+    "caption": {
+      "en": "Current state: a licence and nothing else.",
+      "cs": "Současný stav: licence a nic dalšího."
+    }
+  },
+  "related": [
+    "llm",
+    "prismatic"
+  ],
+  "confidence": "low"
+}

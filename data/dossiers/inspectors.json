@@ -1,0 +1,44 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "inspectors",
+  "sources": {
+    "github": "https://github.com/korczis/inspectors",
+    "gitlab": "https://gitlab.com/korczis/inspectors",
+    "commit": "2ee2c2d023855b38bf8b6c4ece53348f9409d976",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      ".gitignore"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "experiment",
+  "summary": {
+    "en": "A placeholder repository described as tools for various kinds of inspections. It contains only a README and a .gitignore.",
+    "cs": "Zástupný repozitář popsaný jako nástroje pro různé druhy inspekcí. Obsahuje jen README a .gitignore."
+  },
+  "problem": {
+    "en": "Unclear: the README does not say what is to be inspected.",
+    "cs": "Nejasné: README neříká, co se má kontrolovat."
+  },
+  "solution": {
+    "en": "Unclear: no code was committed.",
+    "cs": "Nejasné: žádný kód nebyl commitnut."
+  },
+  "highlights": [
+    {
+      "en": "Only a one-line description exists",
+      "cs": "Existuje jen jednořádkový popis"
+    }
+  ],
+  "stack": [],
+  "architecture": {
+    "mermaid": "flowchart LR\n  T[Target] --> I[Inspector tools]\n  I --> R[Report]\n  R --> U[User]",
+    "caption": {
+      "en": "Generic intent from the README; nothing is implemented.",
+      "cs": "Obecný záměr podle README; nic není implementováno."
+    }
+  },
+  "related": [],
+  "confidence": "low"
+}

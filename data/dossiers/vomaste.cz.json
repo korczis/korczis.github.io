@@ -1,0 +1,72 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "vomaste.cz",
+  "sources": {
+    "github": "https://github.com/korczis/vomaste.cz",
+    "gitlab": null,
+    "commit": "443a31cf9a7f7d090ba31f87c9972e5e0002f48a",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "top-level tree",
+      "repository languages"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "site",
+  "summary": {
+    "en": "An open, git-native system for writing and publishing traceable public-interest dossiers in Czech. Claims, sources, entities, cases and relations are structured, versioned data validated by reproducible tooling and rendered into a static Zola site on GitHub Pages. The site also carries onboarding material: a quick start, a bootcamp on fictional data, a curriculum, a handbook and canonical concept definitions.",
+    "cs": "Otevřený, git-nativní systém pro tvorbu a publikaci dohledatelných dossierů ve veřejném zájmu. Tvrzení, zdroje, entity, kauzy a vztahy jsou strukturovaná a verzovaná data, která validuje reprodukovatelný tooling a Zola je vyrenderuje do statického webu na GitHub Pages. Web navíc nabízí zaškolení: rychlý start, bootcamp na vymyšlených datech, kurikulum, příručku a kanonické definice pojmů."
+  },
+  "problem": {
+    "en": "Public-interest research often publishes conclusions without keeping each claim linked to its source, verification state and revision history. Contributors without programming skills also need a way in, and a public repository must not become a channel for confidential material.",
+    "cs": "Rešerše ve veřejném zájmu často publikují závěry, aniž by každé tvrzení zůstalo propojené se zdrojem, stavem ověření a historií revizí. Lidé bez programátorských dovedností potřebují cestu, jak přispět, a veřejný repozitář se nesmí stát kanálem pro důvěrné materiály."
+  },
+  "solution": {
+    "en": "Canonical dossier records are JSON validated against JSON Schema and expanded as JSON-LD, with reference, semantic and table-parity checks before the build. Templates read view models through Zola load_data, and Open Graph and schema.org types come from a central SEO configuration with a post-build verification. A written constitution, editorial rules and an authorisation log govern contributions, and the README states plainly that there is no confidential intake channel and no anonymity guarantee.",
+    "cs": "Kanonické záznamy dossierů jsou JSON validovaný JSON Schema a expandovaný jako JSON-LD; před buildem procházejí kontrolami referencí, sémantiky a parity tabulek. Šablony čtou view modely přes Zola load_data a typy Open Graph a schema.org určuje centrální SEO konfigurace s ověřením po buildu. Příspěvky řídí sepsaná konstituce, redakční pravidla a autorizační log a README otevřeně říká, že důvěrný intake kanál neexistuje a anonymita se negarantuje."
+  },
+  "highlights": [
+    {
+      "en": "Claims, sources and relations as versioned, schema-validated JSON and JSON-LD.",
+      "cs": "Tvrzení, zdroje a vztahy jako verzovaný, schématem validovaný JSON a JSON-LD."
+    },
+    {
+      "en": "Layered validation (shape, references, semantics, table parity) before Zola builds HTML.",
+      "cs": "Vrstvená validace (tvar, reference, sémantika, parita tabulek) dřív, než Zola postaví HTML."
+    },
+    {
+      "en": "Central SEO configuration with a build-failing Open Graph check.",
+      "cs": "Centrální SEO konfigurace s kontrolou Open Graph, která shodí build."
+    },
+    {
+      "en": "Public-domain licence and documented protocol for parallel AI-assisted work.",
+      "cs": "Licence public domain a zdokumentovaný protokol pro paralelní práci s AI."
+    }
+  ],
+  "stack": [
+    "Zola",
+    "Tera",
+    "JSON Schema",
+    "JSON-LD",
+    "Node.js",
+    "Tailwind CSS",
+    "esbuild",
+    "Playwright",
+    "just",
+    "GitHub Pages"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Data[Dossier JSON] --> Val[data validate]\n  Schema[JSON Schema] --> Val\n  Val --> VM[View models]\n  Assets[Tailwind and esbuild] --> Zola[Zola build]\n  VM --> Zola\n  Seo[SEO config] --> Zola\n  Zola --> Og[verify og]\n  Og --> Pages[GitHub Pages]",
+    "caption": {
+      "en": "Canonical dossier data is validated in layers, materialised by Zola and checked again on the built HTML.",
+      "cs": "Kanonická data dossierů projdou vrstvenou validací, Zola je zhmotní a nad hotovým HTML proběhne další kontrola."
+    }
+  },
+  "related": [
+    "data-atlas",
+    "osint-case-ratcliffe-moscow-2026",
+    "korczis.github.io"
+  ],
+  "confidence": "medium"
+}

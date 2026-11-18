@@ -1,0 +1,55 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "datasciencecoursera",
+  "sources": {
+    "github": "https://github.com/korczis/datasciencecoursera",
+    "gitlab": "https://gitlab.com/korczis/datasciencecoursera",
+    "commit": "93a8a412325f1f6862e14df1cdf70e0ff01e8fd6",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "HelloWorld.md"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "kata",
+  "summary": {
+    "en": "A starter repository created for an online data-science course. It holds a one-line README, a license and a HelloWorld.md file.",
+    "cs": "Startovní repozitář založený pro online kurz datové vědy. Obsahuje jednořádkové README, licenci a soubor HelloWorld.md."
+  },
+  "problem": {
+    "en": "Course exercises typically begin by setting up a Git repository; this one appears to be that setup step.",
+    "cs": "Cvičení v kurzu obvykle začínají založením Git repozitáře; tento repozitář je zřejmě právě tímto krokem."
+  },
+  "solution": {
+    "en": "A README and a Markdown file were committed. No analysis code is present.",
+    "cs": "Commitnuto bylo README a jeden Markdown soubor. Žádný analytický kód zde není."
+  },
+  "highlights": [
+    {
+      "en": "Course setup repository with no code",
+      "cs": "Repozitář k nastavení kurzu bez kódu"
+    },
+    {
+      "en": "Single Markdown exercise file",
+      "cs": "Jediný Markdown soubor jako cvičení"
+    }
+  ],
+  "stack": [
+    "Markdown",
+    "Git"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[Course task] --> B[New repository]\n  B --> C[README]\n  B --> D[HelloWorld.md]",
+    "caption": {
+      "en": "The whole content of the repository.",
+      "cs": "Celý obsah repozitáře."
+    }
+  },
+  "related": [
+    "datascience",
+    "docker-datasciencetoolbox",
+    "codecademy"
+  ],
+  "confidence": "low"
+}

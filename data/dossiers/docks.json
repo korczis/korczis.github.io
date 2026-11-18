@@ -1,0 +1,67 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "docks",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/docks",
+    "commit": "a3819bc28324c0fd155d9893e9c29ca9aeca912f",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      ".gitmodules",
+      "tree (recursive)"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "config",
+  "summary": {
+    "en": "A collection of Dockerfiles and helper scripts for data services: Couchbase, Elasticsearch, MongoDB, PostGIS, RabbitMQ and Nominatim, plus minimal Alpine-based glibc and Java 8 base images.",
+    "cs": "Sada Dockerfilů a pomocných skriptů pro datové služby: Couchbase, Elasticsearch, MongoDB, PostGIS, RabbitMQ a Nominatim, k tomu minimální base image s glibc a s Javou 8 nad Alpine."
+  },
+  "problem": {
+    "en": "Each backing service needed its own image with project-specific configuration, and the build, push and run commands differed per service.",
+    "cs": "Každá podpůrná služba potřebovala vlastní image s konfigurací pro projekt a příkazy pro build, push a spuštění se služba od služby lišily."
+  },
+  "solution": {
+    "en": "One directory per service, each with a Dockerfile and its configuration; Couchbase, Elasticsearch, MongoDB, PostGIS and RabbitMQ also carry uniform build.sh, pull.sh, push.sh and run.sh scripts. Elasticsearch ships its own elasticsearch.yml and logging config, PostGIS an init script that loads the PostGIS extensions into a template database, Nominatim its Apache and PHP settings. .gitmodules declares an Ubuntu base and a Kibana image as submodules, but the tree records neither.",
+    "cs": "Každá služba má vlastní adresář s Dockerfilem a konfigurací; Couchbase, Elasticsearch, MongoDB, PostGIS a RabbitMQ mají navíc jednotné skripty build.sh, pull.sh, push.sh a run.sh. Elasticsearch má vlastní elasticsearch.yml a konfiguraci logování, PostGIS init skript, který nahraje rozšíření PostGIS do šablonové databáze, Nominatim nastavení Apache a PHP. .gitmodules deklaruje jako submoduly Ubuntu base a image pro Kibanu, strom ale nezaznamenává ani jeden."
+  },
+  "highlights": [
+    {
+      "en": "The same four-script interface (build, pull, push, run) for five of the six services.",
+      "cs": "Stejné rozhraní čtyř skriptů (build, pull, push, run) u pěti ze šesti služeb."
+    },
+    {
+      "en": "Includes a geocoding service (Nominatim) and a spatial database (PostGIS).",
+      "cs": "Obsahuje geokódovací službu (Nominatim) a prostorovou databázi (PostGIS)."
+    },
+    {
+      "en": "The README also lists an Etcd image that is not present in the tree.",
+      "cs": "README uvádí i image pro Etcd, který ve stromu není."
+    }
+  ],
+  "stack": [
+    "Docker",
+    "Shell",
+    "Couchbase",
+    "Elasticsearch",
+    "MongoDB",
+    "PostGIS",
+    "RabbitMQ",
+    "Nominatim"
+  ],
+  "architecture": {
+    "mermaid": "flowchart TD\n  D[docks] --> B[Base images]\n  D --> S[Service images]\n  B --> G[minimal glibc]\n  B --> J[minimal Java 8]\n  S --> CB[Couchbase]\n  S --> ES[Elasticsearch]\n  S --> MQ[RabbitMQ]\n  S --> PG[PostGIS]\n  S --> NM[Nominatim]\n  S --> MG[MongoDB]",
+    "caption": {
+      "en": "Base images and per-service images; most services share the same script interface.",
+      "cs": "Base image a image jednotlivých služeb; většina služeb sdílí stejné rozhraní skriptů."
+    }
+  },
+  "related": [
+    "microcrawler",
+    "microcrawler-js",
+    "server-coreos",
+    "gauc-ex"
+  ],
+  "confidence": "medium"
+}

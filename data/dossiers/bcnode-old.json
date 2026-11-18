@@ -1,0 +1,77 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "bcnode-old",
+  "sources": {
+    "github": "https://github.com/korczis/bcnode-old",
+    "gitlab": "https://gitlab.com/korczis/bcnode-old",
+    "commit": "33d517f96528af82fe635f0a4fabbd2d1c7c1ce2",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "package.json",
+      "native/Cargo.toml",
+      "top-level tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "service",
+  "summary": {
+    "en": "An earlier snapshot of a multi-chain mining node in JavaScript with rovers that follow several public blockchains, a DHT and peer discovery, and a native Rust addon.",
+    "cs": "Starší snímek multi-chain těžebního uzlu v JavaScriptu s rovery sledujícími několik veřejných blockchainů, DHT a hledáním peerů a s nativním doplňkem v Rustu."
+  },
+  "problem": {
+    "en": "A node that mines on top of other chains has to watch Bitcoin, Ethereum, Lisk, NEO and Waves at once, talk to its own peers and stay fast enough for hashing.",
+    "cs": "Uzel, který těží nad jinými řetězci, musí současně sledovat Bitcoin, Ethereum, Lisk, NEO a Waves, komunikovat s vlastními peery a být dost rychlý na hashování."
+  },
+  "solution": {
+    "en": "Flow-typed sources are transpiled with Babel and split into rovers, miner, p2p, DHT, RPC, persistence and a web UI built with webpack. Protocol messages are defined in protobuf and served over gRPC, storage uses RocksDB and LevelDB, and networking uses libp2p and Kademlia packages. A Neon addon in native/ links a Rust core crate for performance-critical code.",
+    "cs": "Zdrojáky s Flow typy se transpilují Babelem a dělí se na rovery, miner, p2p, DHT, RPC, perzistenci a webové UI sestavované webpackem. Zprávy protokolu jsou definované v protobufu a obsluhované přes gRPC, úložiště stojí na RocksDB a LevelDB, síťování na libp2p a balíčcích pro Kademlii. Neon doplněk v native/ linkuje rustový core crate pro výkonově kritický kód."
+  },
+  "highlights": [
+    {
+      "en": "Rovers for five public chains behind one CLI flag",
+      "cs": "Rovery pro pět veřejných řetězců za jedním přepínačem CLI"
+    },
+    {
+      "en": "Rust core exposed to Node.js through Neon, with fuzz targets",
+      "cs": "Rustové jádro vystavené do Node.js přes Neon, včetně fuzz cílů"
+    },
+    {
+      "en": "protobuf and gRPC contracts for blocks, miner, rover and DB",
+      "cs": "protobuf a gRPC kontrakty pro bloky, miner, rover a DB"
+    },
+    {
+      "en": "Dist pipeline chaining proto generation, native build, lint, tests and docs",
+      "cs": "Dist pipeline řetězí generování proto, nativní build, lint, testy a dokumentaci"
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "Node.js",
+    "Flow",
+    "Babel",
+    "Rust",
+    "Neon",
+    "gRPC",
+    "protobuf",
+    "libp2p",
+    "RocksDB",
+    "LevelDB",
+    "Docker",
+    "Jest",
+    "webpack"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Chains[public chains] --> Rovers[rovers]\n  Rovers --> Engine[engine]\n  Engine --> Miner[miner]\n  Miner --> Native[Rust addon]\n  Engine --> P2p[libp2p and DHT]\n  Engine --> Db[RocksDB]\n  Engine --> Rpc[gRPC RPC]\n  Engine --> Ws[WebSocket]\n  Ws --> Ui[web UI]",
+    "caption": {
+      "en": "Rovers feed the engine, which mines, persists and serves peers and the UI.",
+      "cs": "Rovery plní engine, který těží, ukládá a obsluhuje peery i UI."
+    }
+  },
+  "related": [
+    "bcnode-extra-scripts",
+    "bc-apple",
+    "js-libp2p-umbrella"
+  ],
+  "confidence": "medium"
+}

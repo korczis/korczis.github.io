@@ -1,0 +1,66 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "the-psycho",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/the-psycho",
+    "commit": "32687a4b3abe64ca504176f9a73987b8936a0fcb",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "mix.exs",
+      "top-level tree",
+      "lib/"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "experiment",
+  "summary": {
+    "en": "The Psycho is an early-stage Phoenix application intended as a research framework on psychological manipulation patterns and defence strategies. The README outlines pattern libraries on manipulation, recognition, prevention and counter-tactics. The repository itself contains a Phoenix application skeleton; most of the structure the README describes is not present at the top level.",
+    "cs": "The Psycho je aplikace v Phoenixu v rané fázi, zamýšlená jako výzkumný rámec pro vzorce psychologické manipulace a obranné strategie. README načrtává knihovny vzorců o manipulaci, rozpoznání, prevenci a protitaktikách. V repozitáři je ale hlavně kostra Phoenix aplikace; většina struktury, kterou README popisuje, na nejvyšší úrovni chybí."
+  },
+  "problem": {
+    "en": "Knowledge about manipulation and its recognition is scattered across psychology and security literature. The project aims to organise it with a defensive focus, though the concrete research questions are unclear from the repository.",
+    "cs": "Znalosti o manipulaci a jejím rozpoznání jsou rozptýlené po psychologické a bezpečnostní literatuře. Projekt je chce uspořádat s obranným zaměřením, konkrétní výzkumné otázky ale z repozitáře nejsou zřejmé."
+  },
+  "solution": {
+    "en": "The planned approach combines Phoenix LiveView for interactive analysis, OTP for distributed processing and Rust NIFs for heavy computation. The mix.exs declares Phoenix, Ecto with PostgreSQL, LiveView, telemetry, JSON schema tooling and distributed process registries. How far the analysis engines are implemented is unclear.",
+    "cs": "Plánovaný přístup spojuje Phoenix LiveView pro interaktivní analýzu, OTP pro distribuované zpracování a Rust NIF pro náročné výpočty. mix.exs deklaruje Phoenix, Ecto s PostgreSQL, LiveView, telemetrii, nástroje pro JSON schémata a distribuované registry procesů. Nakolik jsou analytické enginy hotové, není jasné."
+  },
+  "highlights": [
+    {
+      "en": "Phoenix and LiveView application skeleton with PostgreSQL via Ecto.",
+      "cs": "Kostra aplikace v Phoenixu a LiveView s PostgreSQL přes Ecto."
+    },
+    {
+      "en": "Dependencies for JSON schema validation, telemetry and distributed process supervision.",
+      "cs": "Závislosti pro validaci JSON schémat, telemetrii a distribuovaný dohled nad procesy."
+    },
+    {
+      "en": "README describes a defence-oriented pattern taxonomy that is largely planned.",
+      "cs": "README popisuje obranně zaměřenou taxonomii vzorců, která je převážně v plánu."
+    }
+  ],
+  "stack": [
+    "Elixir",
+    "Phoenix",
+    "Phoenix LiveView",
+    "Ecto",
+    "PostgreSQL",
+    "Tailwind CSS"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Pat[Pattern definitions] --> Ana[Analysis engine]\n  Ana --> LV[LiveView UI]\n  Ana --> Db[PostgreSQL]\n  Nif[Rust NIFs planned] --> Ana\n  LV --> User[Researcher]",
+    "caption": {
+      "en": "Planned shape from the README; only the Phoenix application skeleton is confirmed in the tree.",
+      "cs": "Plánovaný tvar podle README; ve stromu je potvrzená jen kostra Phoenix aplikace."
+    }
+  },
+  "related": [
+    "prism",
+    "kompendium-epistemicke-anihilace",
+    "sig",
+    "catharsis-as-a-service"
+  ],
+  "confidence": "low"
+}

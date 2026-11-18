@@ -1,0 +1,48 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "pissaleck",
+  "sources": {
+    "github": "https://github.com/korczis/pissaleck",
+    "gitlab": null,
+    "commit": "3cdeb24d69b87b029cd52a023b16d0064e62f633",
+    "read_at": "2026-11-18",
+    "read": [
+      "LICENSE (tree)",
+      "repository description"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "experiment",
+  "summary": {
+    "en": "A placeholder repository with an MIT licence and a one-line description (\"Anything about everything and vice versa\"). No code or content yet.",
+    "cs": "Zástupný repozitář s licencí MIT a jednořádkovým popisem („Anything about everything and vice versa“). Zatím bez kódu i obsahu."
+  },
+  "problem": {
+    "en": "Unclear; the description is intentionally open-ended.",
+    "cs": "Nejasné; popis je záměrně neurčitý."
+  },
+  "solution": {
+    "en": "Not implemented.",
+    "cs": "Neimplementováno."
+  },
+  "highlights": [
+    {
+      "en": "Initial commit only.",
+      "cs": "Pouze úvodní commit."
+    },
+    {
+      "en": "No README; the tree holds only LICENSE.",
+      "cs": "Bez README; strom obsahuje jen LICENSE."
+    }
+  ],
+  "stack": [],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[Repository] --> B[LICENSE]\n  A --> C[Description]\n  C --> D[Scope open]",
+    "caption": {
+      "en": "Current state: licence and description only.",
+      "cs": "Současný stav: jen licence a popis."
+    }
+  },
+  "related": [],
+  "confidence": "low"
+}

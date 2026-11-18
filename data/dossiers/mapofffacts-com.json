@@ -1,0 +1,53 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "mapofffacts-com",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/mapofffacts-com",
+    "commit": "63c85e6e1a615c3599fee337e09446d2103c295c",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "tree /"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "docs",
+  "summary": {
+    "en": "A placeholder repository for the Map Of Facts project. It contains only a licence and a README that points to the project wiki of the mapofffacts.com repository.",
+    "cs": "Zástupný repozitář projektu Map Of Facts. Obsahuje jen licenci a README, které odkazuje na wiki repozitáře mapofffacts.com."
+  },
+  "problem": {
+    "en": "Unclear from this repository; the README gives no problem statement.",
+    "cs": "Z tohoto repozitáře není jasné; README žádné zadání problému neuvádí."
+  },
+  "solution": {
+    "en": "No implementation is present. The repository only redirects readers to the wiki of the related repository.",
+    "cs": "Žádná implementace tu není. Repozitář jen přesměrovává čtenáře na wiki souvisejícího repozitáře."
+  },
+  "highlights": [
+    {
+      "en": "Two files: LICENSE and README.md.",
+      "cs": "Dva soubory: LICENSE a README.md."
+    },
+    {
+      "en": "Same commit as the GitHub repository mapofffacts.com, whose wiki it links.",
+      "cs": "Stejný commit jako repozitář mapofffacts.com na GitHubu, na jehož wiki odkazuje."
+    }
+  ],
+  "stack": [
+    "Markdown"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  GL[GitLab repository] --> RD[README]\n  RD --> WIKI[Project wiki link]\n  WIKI --> MAIN[mapofffacts.com repository]",
+    "caption": {
+      "en": "The repository is only a signpost to the main project.",
+      "cs": "Repozitář je jen rozcestníkem k hlavnímu projektu."
+    }
+  },
+  "related": [
+    "mapofffacts.com",
+    "mapoffacts"
+  ],
+  "confidence": "low"
+}

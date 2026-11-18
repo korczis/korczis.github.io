@@ -1,0 +1,65 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "gooddata_rails_app",
+  "sources": {
+    "github": "https://github.com/korczis/gooddata_rails_app",
+    "gitlab": "https://gitlab.com/korczis/gooddata_rails_app",
+    "commit": "0b02c58e497820a048b2b6f3aa73371b3baf371d",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "Gemfile",
+      "recursive tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "app",
+  "summary": {
+    "en": "A Rails 4.1 application that wraps a hosted analytics platform's Ruby SDK in a web UI. It has controllers and views for listing and showing projects and users.",
+    "cs": "Aplikace v Rails 4.1, která obaluje Ruby SDK hostované analytické platformy webovým rozhraním. Má controllery a pohledy pro výpis a detail projektů a uživatelů."
+  },
+  "problem": {
+    "en": "Browsing platform projects and users through the SDK alone requires a Ruby console; a small web app makes them viewable in a browser.",
+    "cs": "Procházet projekty a uživatele platformy jen přes SDK vyžaduje Ruby konzoli; malá webová aplikace je zpřístupní v prohlížeči."
+  },
+  "solution": {
+    "en": "The app uses the Rails 4.1 defaults (SQLite, Sass, CoffeeScript, jQuery, Turbolinks, Jbuilder) and pulls the SDK from a personal fork branch. Credentials come from two environment variables for user and password; welcome, projects and users controllers render ERB views.",
+    "cs": "Aplikace stojí na výchozím Rails 4.1 (SQLite, Sass, CoffeeScript, jQuery, Turbolinks, Jbuilder) a SDK bere z větve osobního forku. Přihlašovací údaje čte ze dvou proměnných prostředí pro uživatele a heslo; controllery welcome, projects a users renderují ERB pohledy."
+  },
+  "highlights": [
+    {
+      "en": "Credentials supplied only through environment variables",
+      "cs": "Přihlašovací údaje jen přes proměnné prostředí"
+    },
+    {
+      "en": "Projects and users index and detail pages",
+      "cs": "Stránky výpisu a detailu projektů a uživatelů"
+    },
+    {
+      "en": "SDK pinned to a fork branch with an indexer fix",
+      "cs": "SDK připnuté na větev forku s opravou indexeru"
+    }
+  ],
+  "stack": [
+    "Ruby",
+    "Ruby on Rails",
+    "SQLite",
+    "CoffeeScript",
+    "Sass",
+    "jQuery"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[Browser] --> B[Rails routes]\n  B --> C[Projects controller]\n  B --> D[Users controller]\n  C --> E[Platform SDK]\n  D --> E\n  F[ENV credentials] --> E\n  E --> G[Analytics API]\n  C --> H[ERB views]",
+    "caption": {
+      "en": "Request path from the browser through Rails controllers to the platform SDK.",
+      "cs": "Cesta požadavku z prohlížeče přes Rails controllery do SDK platformy."
+    }
+  },
+  "related": [
+    "docker-gooddata-ruby",
+    "gooddata-ruby-examples",
+    "gooddata-proxy",
+    "gooddata-graphql"
+  ],
+  "confidence": "medium"
+}

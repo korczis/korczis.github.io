@@ -1,0 +1,62 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "babel-plugin-transform-graphql",
+  "sources": {
+    "github": "https://github.com/korczis/babel-plugin-transform-graphql",
+    "gitlab": "https://gitlab.com/korczis/babel-plugin-transform-graphql",
+    "commit": "bd4facc3dbc2c42afe50aaf1fff26f01181eea8c",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "package.json (tree)",
+      "src (tree)",
+      "test (tree)"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "library",
+  "summary": {
+    "en": "A Babel 6 plugin meant to compile graphql tagged template literals in JavaScript into plain objects at build time, packaged with src, a built dist, a test directory and ESLint/EditorConfig settings. The README is a one-line description.",
+    "cs": "Plugin pro Babel 6, který má při buildu překládat tagované šablony graphql v JavaScriptu na prosté objekty, zabalený se src, sestaveným dist, adresářem test a nastavením ESLint/EditorConfig. README je jednořádkový popis."
+  },
+  "problem": {
+    "en": "Embedding GraphQL in JavaScript is cleaner when a build step rewrites it rather than parsing queries at runtime.",
+    "cs": "Vkládání GraphQL do JavaScriptu je čistší, když jej přepíše build krok, místo parsování dotazů za běhu."
+  },
+  "solution": {
+    "en": "src/index.js parses the template text with graphql-parser and a visitor turns queries, fields, aliases, arguments, variables and interpolated references into Babel object expressions, wrapped in a function of params. As committed, the plugin's visitor is attached to the Program node and looks for a tag there, so it never matches a tagged template; test/test.js holds one sample query with no assertions.",
+    "cs": "src/index.js rozparsuje text šablony přes graphql-parser a visitor převede dotazy, pole, aliasy, argumenty, proměnné a interpolované reference na objektové výrazy Babelu zabalené do funkce s parametrem params. V uložené podobě je visitor pluginu navázaný na uzel Program a tag hledá tam, takže na tagovanou šablonu nikdy nenarazí; test/test.js obsahuje jeden ukázkový dotaz bez asercí."
+  },
+  "highlights": [
+    {
+      "en": "GraphQL text compiled to Babel object expressions with graphql-parser.",
+      "cs": "Text GraphQL překládaný přes graphql-parser na objektové výrazy Babelu."
+    },
+    {
+      "en": "The committed visitor never matches, so the transform is unfinished.",
+      "cs": "Uložený visitor nikdy nezabere, transformace je tedy nedokončená."
+    },
+    {
+      "en": "Includes a built dist and a sample input, but no assertions.",
+      "cs": "Obsahuje sestavený dist a ukázkový vstup, ale žádné aserce."
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "Babel",
+    "GraphQL",
+    "graphql-parser",
+    "ESLint"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[graphql tagged template] --> B[Babel parser]\n  B --> C[Transform plugin]\n  C --> P[graphql-parser]\n  P --> V[GraphQL visitor]\n  V --> D[Object expression]\n  D --> E[Output JS]",
+    "caption": {
+      "en": "The intended pipeline; as committed, the plugin's visitor never reaches the tagged template.",
+      "cs": "Zamýšlený postup; v uložené podobě se visitor pluginu k tagované šabloně nedostane."
+    }
+  },
+  "related": [
+    "gooddata-graphql"
+  ],
+  "confidence": "medium"
+}

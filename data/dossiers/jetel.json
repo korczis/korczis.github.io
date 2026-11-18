@@ -1,0 +1,63 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "jetel",
+  "sources": {
+    "github": "https://github.com/korczis/jetel",
+    "gitlab": "https://gitlab.com/korczis/jetel",
+    "commit": "9b685d10e2fb9de65204bf232d8f32fba896bce1",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "jetel.gemspec (tree)",
+      "lib (tree)"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "cli",
+  "summary": {
+    "en": "A Ruby command-line ETL tool that downloads public reference datasets and loads them into a database. Modules cover sources such as geolocation, ISO country codes, administrative boundaries and crime data; downloaders wrap aria2, curl, wget and native Ruby; loaders target PostgreSQL, Elasticsearch and Couchbase.",
+    "cs": "Ruby nástroj příkazové řádky pro ETL, který stahuje veřejné referenční datové sady a nahrává je do databáze. Moduly pokrývají zdroje jako geolokace, ISO kódy zemí, administrativní hranice a kriminální data; downloadery obalují aria2, curl, wget a nativní Ruby; loadery míří na PostgreSQL, Elasticsearch a Couchbase."
+  },
+  "problem": {
+    "en": "Public datasets live behind many different URLs and formats, and loading each into a database by hand is slow and inconsistent.",
+    "cs": "Veřejné datové sady jsou roztroušené za mnoha URL a formáty a ruční nahrání každé do databáze je pomalé a nekonzistentní."
+  },
+  "solution": {
+    "en": "Jetel organises each source as a module exposing download, extract, transform and load subcommands, with pluggable downloaders and database loaders chosen on the command line. A default loader targets a local PostgreSQL instance.",
+    "cs": "Jetel organizuje každý zdroj jako modul s podpříkazy download, extract, transform a load, s volitelnými downloadery a databázovými loadery volenými na příkazové řádce. Výchozí loader míří na lokální PostgreSQL."
+  },
+  "highlights": [
+    {
+      "en": "Per-source modules with download/extract/transform/load subcommands.",
+      "cs": "Moduly podle zdroje s podpříkazy download/extract/transform/load."
+    },
+    {
+      "en": "Pluggable downloaders (aria2, curl, wget, Ruby) and loaders (PostgreSQL, Elasticsearch, Couchbase).",
+      "cs": "Volitelné downloadery (aria2, curl, wget, Ruby) a loadery (PostgreSQL, Elasticsearch, Couchbase)."
+    },
+    {
+      "en": "Packaged as a gem with a GLI-based CLI and help per module.",
+      "cs": "Zabaleno jako gem s CLI postaveným na GLI a nápovědou pro každý modul."
+    }
+  ],
+  "stack": [
+    "Ruby",
+    "RubyGems",
+    "PostgreSQL",
+    "Elasticsearch",
+    "Couchbase"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[Source module] --> B[Downloader]\n  B --> C[Extract]\n  C --> D[Transform]\n  D --> E[Loader]\n  E --> F[Database]",
+    "caption": {
+      "en": "Each source module runs download, extract, transform and load into a chosen database.",
+      "cs": "Každý modul zdroje projde download, extract, transform a load do zvolené databáze."
+    }
+  },
+  "related": [
+    "jetel-modules",
+    "csv2psql",
+    "json2csv"
+  ],
+  "confidence": "high"
+}

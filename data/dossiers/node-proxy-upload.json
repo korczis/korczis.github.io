@@ -1,0 +1,59 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "node-proxy-upload",
+  "sources": {
+    "github": "https://github.com/korczis/node-proxy-upload",
+    "gitlab": "https://gitlab.com/korczis/node-proxy-upload",
+    "commit": "ce3e0150693ed26df628ced4d69de46f0e123a96",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "app.js",
+      "package.json"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "kata",
+  "summary": {
+    "en": "A tiny Node.js experiment in uploading a file through a reverse proxy. One app.js starts a front Express server that proxies /api to a back-end Express server, which accepts the multipart upload; the README shows a curl command posting to /api/upload.",
+    "cs": "Drobný Node.js experiment s uploadem souboru přes reverzní proxy. Jediný app.js spustí přední Express server, který /api přeposílá na backendový Express server, a ten multipart upload přijme; README ukazuje curl příkaz posílající na /api/upload."
+  },
+  "problem": {
+    "en": "Checking that a multipart file upload survives a reverse proxy in front of the API is easiest with a minimal reproducible setup.",
+    "cs": "Ověřit, že multipart upload souboru projde reverzní proxy před API, jde nejsnáz na minimální reprodukovatelné sestavě."
+  },
+  "solution": {
+    "en": "The front server on port 8080 forwards every /api request with http-proxy to the back end on port 8081. The back end's /upload route stores the files with multer in uploads/ and answers with JSON listing them. It is a learning snippet, not a product.",
+    "cs": "Přední server na portu 8080 přeposílá každý požadavek na /api přes http-proxy na backend na portu 8081. Route /upload na backendu uloží soubory přes multer do uploads/ a odpoví JSONem s jejich výčtem. Jde o učební úryvek, ne o produkt."
+  },
+  "highlights": [
+    {
+      "en": "Two Express servers in one file: an http-proxy front and an upload back end.",
+      "cs": "Dva Express servery v jednom souboru: přední http-proxy a backend pro upload."
+    },
+    {
+      "en": "multer stores the upload and the back end returns the file list as JSON.",
+      "cs": "multer upload uloží a backend vrátí seznam souborů jako JSON."
+    },
+    {
+      "en": "Demonstrated with a curl multipart POST.",
+      "cs": "Předvedeno curl multipart POST požadavkem."
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "Node.js",
+    "Express",
+    "http-proxy",
+    "multer"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[curl] --> F[Front Express 8080]\n  F --> P[http-proxy api]\n  P --> B[Back-end Express 8081]\n  B --> M[multer]\n  M --> U[uploads directory]\n  B --> J[JSON file list]",
+    "caption": {
+      "en": "A multipart upload passes the proxying front server and is stored by the back end.",
+      "cs": "Multipart upload projde přední proxy serverem a uloží ho backend."
+    }
+  },
+  "related": [],
+  "confidence": "medium"
+}

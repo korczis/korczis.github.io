@@ -1,0 +1,66 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "microcrawler-crawler-bam-brno-cz",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-bam-brno-cz",
+    "commit": "68c08836a95c4721673903ecd4addbd3f07341a1",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "package.json",
+      "src/index.js",
+      "src/objekty.js",
+      "src/objekt.js",
+      "tree (recursive)"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "library",
+  "summary": {
+    "en": "A Microcrawler site package for a city architecture guide website. It declares three processors in package.json (index, objekty for listings, objekt for details) and extracts structured records about individual buildings.",
+    "cs": "Balíček Microcrawleru pro web s průvodcem městskou architekturou. V package.json deklaruje tři procesory (index, objekty pro výpisy, objekt pro detail) a vytahuje strukturované záznamy o jednotlivých stavbách."
+  },
+  "problem": {
+    "en": "Microcrawler workers are generic: they download pages and need site-specific logic to know which links to follow and which fields to extract.",
+    "cs": "Workery Microcrawleru jsou obecné: stahují stránky a potřebují logiku pro konkrétní web, aby věděly, které odkazy sledovat a jaká pole vytáhnout."
+  },
+  "solution": {
+    "en": "The detail processor reads the route, address, building type, architects and description from fixed selectors and normalises whitespace. GPS coordinates given in degrees, minutes and seconds are parsed, signed by hemisphere and emitted as a [lng, lat] pair ready for geo indexing.",
+    "cs": "Procesor detailu čte z pevných selektorů trasu, adresu, typ stavby, architekty a popis a normalizuje bílé znaky. GPS souřadnice ve stupních, minutách a vteřinách rozparsuje, podle polokoule jim dá znaménko a vrací je jako dvojici [lng, lat] připravenou pro geo indexaci."
+  },
+  "highlights": [
+    {
+      "en": "DMS to decimal coordinate conversion inside the extractor.",
+      "cs": "Převod souřadnic z DMS na desetinné přímo v extraktoru."
+    },
+    {
+      "en": "Three-stage processor chain: index, listing, detail.",
+      "cs": "Třístupňový řetězec procesorů: index, výpis, detail."
+    },
+    {
+      "en": "Coordinates in [lng, lat] order, matching GeoJSON.",
+      "cs": "Souřadnice v pořadí [lng, lat], shodně s GeoJSON."
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "Node.js",
+    "npm"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  W[Worker] --> I[index]\n  I --> L[objekty listing]\n  L --> D[objekt detail]\n  D --> G[DMS to lng lat]\n  D --> R[Building record]\n  G --> R",
+    "caption": {
+      "en": "Processors emit either new URLs for the queue or extracted data records.",
+      "cs": "Procesory vracejí buď nové URL do fronty, nebo vytěžené datové záznamy."
+    }
+  },
+  "related": [
+    "microcrawler-js",
+    "microcrawler-crawler-all",
+    "microcrawler-crawler-base",
+    "mapoffacts",
+    "microcrawler-crawler-sreality-cz"
+  ],
+  "confidence": "medium"
+}

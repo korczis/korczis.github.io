@@ -1,0 +1,67 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "bcnode-extra-scripts",
+  "sources": {
+    "github": "https://github.com/korczis/bcnode-extra-scripts",
+    "gitlab": "https://gitlab.com/korczis/bcnode-extra-scripts",
+    "commit": "43fed79471e26808ea3a56d35249985d31a6c3c8",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "docker-compose.yml",
+      "prometheus.yml",
+      "run-mesh.sh",
+      "run-peer1.sh",
+      "top-level tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "config",
+  "summary": {
+    "en": "Developer scripts for running several local peers of a blockchain mining node, a rendezvous server, the node's mesh mode, Prometheus and Grafana.",
+    "cs": "Vývojářské skripty pro spuštění několika lokálních peerů těžebního blockchainového uzlu, rendezvous serveru, režimu mesh uzlu, Promethea a Grafany."
+  },
+  "problem": {
+    "en": "Testing peer discovery and the DHT needs several node instances with separate ports and data directories, plus metrics to see what they do.",
+    "cs": "Testování hledání peerů a DHT vyžaduje několik instancí uzlu s oddělenými porty a datovými adresáři a metriky, ve kterých je vidět, co dělají."
+  },
+  "solution": {
+    "en": "Each run-peerN.sh sets its own data directory, gRPC and UI ports, miner key and debug namespaces, starts the node CLI and tees logs to a file. Further scripts start the rendezvous server and the mesh mode with libp2p DHT debugging, run a local Prometheus with prometheus.yml scraping the rendezvous and node ports, and start Grafana through Homebrew; the docker-compose file defines only a Grafana container.",
+    "cs": "Každý run-peerN.sh nastaví vlastní datový adresář, porty pro gRPC a UI, klíč těžaře a debug jmenné prostory, spustí CLI uzlu a logy zapisuje přes tee do souboru. Další skripty spouštějí rendezvous server a režim mesh s laděním libp2p DHT, lokální Prometheus, který podle prometheus.yml sbírá metriky z portů rendezvous serveru a uzlu, a Grafanu přes Homebrew; docker-compose definuje jen kontejner Grafany."
+  },
+  "highlights": [
+    {
+      "en": "Three-peer local network with isolated state",
+      "cs": "Lokální síť tří peerů s odděleným stavem"
+    },
+    {
+      "en": "libp2p DHT debug logging switched on in the mesh scripts",
+      "cs": "Ladicí logování libp2p DHT zapnuté ve skriptech pro mesh"
+    },
+    {
+      "en": "Prometheus and Grafana for node metrics",
+      "cs": "Prometheus a Grafana pro metriky uzlů"
+    }
+  ],
+  "stack": [
+    "Bash",
+    "Docker Compose",
+    "Prometheus",
+    "Grafana",
+    "libp2p",
+    "Homebrew"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  P1[peer 1] --> Rdv[rendezvous server]\n  P2[peer 2] --> Rdv\n  P3[peer 3] --> Rdv\n  Mesh[mesh mode] --> Rdv\n  Prom[Prometheus] --> Rdv\n  Prom --> Node[node metrics port]\n  Graf[Grafana] --> Prom",
+    "caption": {
+      "en": "Local multi-peer test bench with metrics.",
+      "cs": "Lokální testovací sestava více peerů s metrikami."
+    }
+  },
+  "related": [
+    "bcnode-old",
+    "bc-apple",
+    "js-libp2p-umbrella"
+  ],
+  "confidence": "medium"
+}

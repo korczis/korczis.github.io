@@ -1,0 +1,55 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "js-libp2p-umbrella",
+  "sources": {
+    "github": "https://github.com/korczis/js-libp2p-umbrella",
+    "gitlab": "https://gitlab.com/korczis/js-libp2p-umbrella",
+    "commit": "790339f74a70cde1981e08505edfdac31ae1dd60",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      ".gitignore",
+      "LICENSE"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "config",
+  "summary": {
+    "en": "A placeholder umbrella repository meant to gather js-libp2p and related modules; it contains only a README, licence and gitignore.",
+    "cs": "Zástupný zastřešující repozitář, který měl sdružit js-libp2p a související moduly; obsahuje jen README, licenci a gitignore."
+  },
+  "problem": {
+    "en": "Working across many small js-libp2p packages at once is awkward without one checkout that holds them together.",
+    "cs": "Práce napříč mnoha malými balíčky js-libp2p je bez jednoho checkoutu, který je drží pohromadě, nepohodlná."
+  },
+  "solution": {
+    "en": "No modules or submodules were added, so the umbrella exists only as intent. The README is two lines and the .gitignore is the stock Node.js one.",
+    "cs": "Žádné moduly ani submoduly přidané nejsou, zastřešení tedy existuje jen jako záměr. README má dva řádky a .gitignore je standardní pro Node.js."
+  },
+  "highlights": [
+    {
+      "en": "Scaffold only",
+      "cs": "Pouze kostra"
+    },
+    {
+      "en": "Context: libp2p peer-to-peer networking",
+      "cs": "Kontext: peer-to-peer síťování přes libp2p"
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "libp2p"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Umbrella[umbrella repo] -.-> Core[js-libp2p]\n  Umbrella -.-> Transports[transports]\n  Umbrella -.-> Dht[DHT module]\n  Umbrella --> Readme[README only]",
+    "caption": {
+      "en": "Planned grouping; dashed edges were never added.",
+      "cs": "Plánované seskupení; přerušované hrany nikdy přidány nebyly."
+    }
+  },
+  "related": [
+    "bcnode-old",
+    "bcnode-extra-scripts"
+  ],
+  "confidence": "low"
+}

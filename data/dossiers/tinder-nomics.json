@@ -1,0 +1,54 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "tinder-nomics",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/tinder-nomics",
+    "commit": "b144c0794c1ac10015f780d1e3d0154d79e7acae",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "CLAUDE.md",
+      "top-level tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "config",
+  "summary": {
+    "en": "An initialised but empty personal project. The repository contains the default GitLab README template, a CLAUDE.md stating that purpose and stack are still to be decided, and an AI-tooling manifest directory.",
+    "cs": "Založený, ale prázdný osobní projekt. Repozitář obsahuje výchozí šablonu README z GitLabu, CLAUDE.md s poznámkou, že účel ani stack ještě nejsou rozhodnuté, a adresář s manifestem pro AI nástroje."
+  },
+  "problem": {
+    "en": "Unclear: the repository does not state the problem it intends to address.",
+    "cs": "Nejasné: repozitář neuvádí, jaký problém má řešit."
+  },
+  "solution": {
+    "en": "No implementation yet. The CLAUDE.md lists the next steps: decide purpose and requirements, choose a stack and update the project instructions.",
+    "cs": "Implementace zatím neexistuje. CLAUDE.md uvádí další kroky: ujasnit účel a požadavky, zvolit stack a aktualizovat instrukce projektu."
+  },
+  "highlights": [
+    {
+      "en": "Placeholder repository with AI-assistant instructions prepared before any code.",
+      "cs": "Zástupný repozitář s instrukcemi pro AI asistenta připravenými ještě před kódem."
+    },
+    {
+      "en": "Stack explicitly left undecided.",
+      "cs": "Stack je výslovně nerozhodnutý."
+    }
+  ],
+  "stack": [
+    "Markdown"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Init[Repository created] --> Readme[Template README]\n  Init --> Claude[CLAUDE.md]\n  Claude --> Plan[Decide purpose]\n  Plan --> Stack[Choose stack]",
+    "caption": {
+      "en": "Only the initial scaffolding exists; the next steps come from the CLAUDE.md.",
+      "cs": "Existuje jen počáteční kostra; další kroky popisuje CLAUDE.md."
+    }
+  },
+  "related": [
+    "prism",
+    "past"
+  ],
+  "confidence": "low"
+}

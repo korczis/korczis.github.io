@@ -1,0 +1,50 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "maze-js",
+  "sources": {
+    "github": "https://github.com/korczis/maze-js",
+    "gitlab": "https://gitlab.com/korczis/maze-js",
+    "commit": "b78d2dc71050cc9a487dea5fb1bbb2d2dbfe1c08",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      ".gitignore",
+      "LICENSE"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "kata",
+  "summary": {
+    "en": "A placeholder for a JavaScript maze project. It contains only a README, a licence and a Node.js .gitignore.",
+    "cs": "Zástupný repozitář pro bludiště v JavaScriptu. Obsahuje jen README, licenci a .gitignore pro Node.js."
+  },
+  "problem": {
+    "en": "Unclear: no code or description beyond the title.",
+    "cs": "Nejasné: kromě názvu žádný kód ani popis."
+  },
+  "solution": {
+    "en": "Unclear: nothing is implemented.",
+    "cs": "Nejasné: nic implementováno není."
+  },
+  "highlights": [
+    {
+      "en": "The README holds only the title and the word Maze.",
+      "cs": "README obsahuje jen nadpis a slovo Maze."
+    }
+  ],
+  "stack": [
+    "JavaScript"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[maze-js] --> B[README]\n  A --> C[LICENSE]\n  A --> D[gitignore]\n  A --> E[No code]",
+    "caption": {
+      "en": "Repository contents; no implementation.",
+      "cs": "Obsah repozitáře; bez implementace."
+    }
+  },
+  "related": [
+    "maze",
+    "maze-rs"
+  ],
+  "confidence": "low"
+}

@@ -1,0 +1,65 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "generator-the-scratch",
+  "sources": {
+    "github": "https://github.com/korczis/generator-the-scratch",
+    "gitlab": "https://gitlab.com/korczis/generator-the-scratch",
+    "commit": "201f295f87c3c6549fff4e7618562562aab6cb6c",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "package.json",
+      ".gitmodules",
+      "app/index.js"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "cli",
+  "summary": {
+    "en": "A Yeoman generator that scaffolds a new project from the-scratch template, which is pulled into app/templates as a git submodule. Running yo the-scratch copies the files found in the template's subdirectories into the target directory.",
+    "cs": "Yeoman generátor, který založí nový projekt ze šablony the-scratch; ta je do app/templates připojená jako git submodul. Příkaz yo the-scratch zkopíruje soubory z podadresářů šablony do cílového adresáře."
+  },
+  "problem": {
+    "en": "Reusing a project skeleton across new projects stays painful if the skeleton is copied by hand and drifts from its source. Keeping the template as its own repository lets it evolve independently of the generator.",
+    "cs": "Opakované použití kostry projektu je otravné, pokud se kopíruje ručně a rozchází se se zdrojem. Šablona jako samostatný repozitář se může vyvíjet nezávisle na generátoru."
+  },
+  "solution": {
+    "en": "The generator walks the templates directory recursively with fs.readdirSync and lstatSync, collects every subdirectory and copies each file inside them into the new project; files lying directly in the template root are not part of the walk. A leftover sample confirm prompt is still asked, and dependency installation runs at the end unless --skip-install is given.",
+    "cs": "Generátor rekurzivně projde adresář šablon přes fs.readdirSync a lstatSync, posbírá všechny podadresáře a zkopíruje každý soubor v nich do nového projektu; soubory přímo v kořeni šablony se do průchodu nedostanou. Stále se ptá na zbylou ukázkovou otázku a na konci spustí instalaci závislostí, pokud se nezadá --skip-install."
+  },
+  "highlights": [
+    {
+      "en": "Template sourced from the the-scratch repository via a git submodule",
+      "cs": "Šablona se bere z repozitáře the-scratch přes git submodul"
+    },
+    {
+      "en": "Generic recursive copy instead of a hard-coded file list",
+      "cs": "Obecné rekurzivní kopírování místo pevného seznamu souborů"
+    },
+    {
+      "en": "Mocha tests and Travis CI configuration",
+      "cs": "Testy v Mocha a konfigurace Travis CI"
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "Node.js",
+    "Yeoman",
+    "Git submodules",
+    "Mocha",
+    "Travis CI"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Y[yo the-scratch] --> G[TheScratchGenerator]\n  S[the-scratch repo] --> T[app templates submodule]\n  G --> W[Recursive dir walk]\n  T --> W\n  W --> C[Copy files from subdirs]\n  C --> I[installDependencies]",
+    "caption": {
+      "en": "The generator mirrors the submodule template tree into the new project.",
+      "cs": "Generátor zrcadlí strom šablony ze submodulu do nového projektu."
+    }
+  },
+  "related": [
+    "the-scratch",
+    "generator-microscratch",
+    "lola"
+  ],
+  "confidence": "medium"
+}

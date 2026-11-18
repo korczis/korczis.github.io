@@ -1,0 +1,62 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "gooddata-proxy",
+  "sources": {
+    "github": "https://github.com/korczis/gooddata-proxy",
+    "gitlab": "https://gitlab.com/korczis/gooddata-proxy",
+    "commit": "a159b94a52c87bb69fe1ae08290bf106195c3e3f",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "package.json (tree)",
+      "server.babel.js (tree)"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "experiment",
+  "summary": {
+    "en": "A Node.js Express server scaffold with webpack hot reloading that serves a placeholder React page. It started from a React hot-reload boilerplate whose README it still carries; the proxying its name promises is not implemented.",
+    "cs": "Kostra serveru v Node.js a Expressu s hot reloadem přes webpack, která servíruje zástupnou React stránku. Vznikla z React hot-reload boilerplate, jehož README stále obsahuje; proxy, kterou slibuje název, implementovaná není."
+  },
+  "problem": {
+    "en": "The name points at a local proxy in front of a BI platform's API for frontend work with live-reloading React components; the repository stops before that proxy exists.",
+    "cs": "Název míří na lokální proxy před API BI platformy pro vývoj frontendu s živě přenačítanými React komponentami; repozitář ale končí dřív, než taková proxy vznikne."
+  },
+  "solution": {
+    "en": "bin/server.js registers Babel at runtime and starts an Express server on port 1616 that attaches webpack-dev-middleware and webpack-hot-middleware in development, serves the static directory and returns index.html at the root. A superagent-based ApiClient that would forward cookies to an API host sits unused and imports a config module that does not exist; express and superagent are also missing from package.json.",
+    "cs": "bin/server.js zaregistruje Babel za běhu a spustí Express server na portu 1616, který ve vývoji připojí webpack-dev-middleware a webpack-hot-middleware, servíruje statický adresář a na kořeni vrací index.html. ApiClient nad superagentem, který by předával cookies na API server, leží nevyužitý a importuje neexistující modul config; express ani superagent navíc nejsou v package.json."
+  },
+  "highlights": [
+    {
+      "en": "Express server with webpack dev and hot middleware for live React editing.",
+      "cs": "Express server s webpack dev a hot middlewarem pro živou editaci React komponent."
+    },
+    {
+      "en": "ApiClient sketch that forwards cookies to an API host, not wired to any route.",
+      "cs": "Náčrt ApiClienta, který předává cookies na API server, nenapojený na žádnou routu."
+    },
+    {
+      "en": "README is the upstream boilerplate; the proxy intent is inferred from the name.",
+      "cs": "README je převzatý boilerplate; proxy záměr je odvozen z názvu."
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "Node.js",
+    "Express",
+    "React",
+    "Webpack",
+    "Babel"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[Browser] --> B[Express server]\n  B --> C[webpack dev middleware]\n  B --> D[hot middleware]\n  C --> E[React placeholder app]\n  B --> F[static index.html]\n  G[ApiClient sketch] -.-> H[API host, not wired]",
+    "caption": {
+      "en": "An Express dev server bundles and hot-reloads a placeholder React app; the API client is not connected.",
+      "cs": "Vývojový Express server sestavuje a za běhu přenačítá zástupnou React aplikaci; API klient není připojený."
+    }
+  },
+  "related": [
+    "gooddata-fs"
+  ],
+  "confidence": "low"
+}

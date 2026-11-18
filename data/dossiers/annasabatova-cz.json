@@ -1,0 +1,60 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "annasabatova-cz",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/annasabatova-cz",
+    "commit": "2a74c6fdbb92288581f9ee9b2aa036c7284b88ce",
+    "read_at": "2026-11-18",
+    "read": [
+      "package.json",
+      "routes/index.js",
+      "views/index.hjs",
+      "tree (recursive)"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "site",
+  "summary": {
+    "en": "An unfinished petition microsite about a public office-holder. It is an Express 4 application with Hogan templates and Stylus, serving one page whose body is still mostly placeholder text.",
+    "cs": "Nedokončená petiční mikrostránka týkající se veřejného činitele. Jde o aplikaci v Express 4 s šablonami Hogan a Stylusem, která servíruje jedinou stránku, jejíž obsah je stále převážně zástupný text."
+  },
+  "problem": {
+    "en": "A civic petition needed a simple public web page.",
+    "cs": "Občanská petice potřebovala jednoduchou veřejnou webovou stránku."
+  },
+  "solution": {
+    "en": "Generated Express scaffold (bin/www, app.js, routes) with an index route rendering a Hogan view, the generator's placeholder /users route, and HTML5 Boilerplate assets in public/. Beyond the heading and the statutory petition line, the sections are lorem ipsum; no form or signature storage exists in the code.",
+    "cs": "Vygenerovaná kostra Express (bin/www, app.js, routes) s routou index, která renderuje šablonu Hogan, se zástupnou routou /users z generátoru a s assety z HTML5 Boilerplate ve složce public/. Kromě nadpisu a zákonné hlavičky petice jsou sekce lorem ipsum; formulář ani ukládání podpisů v kódu nejsou."
+  },
+  "highlights": [
+    {
+      "en": "Minimal Express and Hogan setup with one real page.",
+      "cs": "Minimální sestava Express a Hogan s jedinou skutečnou stránkou."
+    },
+    {
+      "en": "Content never completed.",
+      "cs": "Obsah nebyl dokončen."
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "Node.js",
+    "Express",
+    "Hogan.js",
+    "Stylus",
+    "HTML5 Boilerplate"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  B[bin www] --> A[Express app]\n  A --> R[index route]\n  R --> V[Hogan view]\n  A --> S[static public assets]",
+    "caption": {
+      "en": "Express site with one real page.",
+      "cs": "Web v Express s jedinou skutečnou stránkou."
+    }
+  },
+  "related": [
+    "annasabatova.cz",
+    "korczis-com"
+  ],
+  "confidence": "low"
+}

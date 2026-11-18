@@ -1,0 +1,64 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "docker-gooddata-ruby",
+  "sources": {
+    "github": "https://github.com/korczis/docker-gooddata-ruby",
+    "gitlab": "https://gitlab.com/korczis/docker-gooddata-ruby",
+    "commit": "85bc1959937a3be788d18c45ac2fbbea7bab5146",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "Dockerfile",
+      "Gemfile",
+      "app.rb",
+      "build.sh"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "experiment",
+  "summary": {
+    "en": "A minimal Docker image that runs a Ruby script against a hosted analytics platform's Ruby SDK. The script prints the SDK version and then reports used memory, as read by the mem_info gem, every ten seconds while it deliberately allocates large strings.",
+    "cs": "Minimální Docker image, který spouští Ruby skript nad Ruby SDK hostované analytické platformy. Skript vypíše verzi SDK a pak každých deset sekund hlásí využitou paměť, jak ji čte gem mem_info, zatímco záměrně alokuje velké řetězce."
+  },
+  "problem": {
+    "en": "Running the SDK inside a container raises the question of how memory grows under load. The repository gives no further context; its purpose beyond that probe is unclear.",
+    "cs": "Při běhu SDK v kontejneru vyvstává otázka, jak pod zátěží roste spotřeba paměti. Repozitář jiný kontext neuvádí, jeho účel nad rámec této sondy je nejasný."
+  },
+  "solution": {
+    "en": "The image builds on the official ruby:2.1-onbuild base, installs the SDK gem and the mem_info gem, and runs app.rb. A background thread reads used memory through mem_info and prints it in human-readable units while the main loop grows an array.",
+    "cs": "Image vychází z oficiálního ruby:2.1-onbuild, instaluje gem SDK a gem mem_info a spouští app.rb. Vlákno na pozadí čte využitou paměť přes mem_info a vypisuje ji v čitelných jednotkách, zatímco hlavní smyčka zvětšuje pole."
+  },
+  "highlights": [
+    {
+      "en": "Four-instruction Dockerfile on the ruby:2.1-onbuild base image",
+      "cs": "Dockerfile o čtyřech instrukcích nad base image ruby:2.1-onbuild"
+    },
+    {
+      "en": "Background thread for periodic memory reporting with byte-unit formatting",
+      "cs": "Vlákno na pozadí pro průběžné hlášení paměti s převodem jednotek"
+    },
+    {
+      "en": "Synthetic allocation loop to observe memory growth inside the container",
+      "cs": "Syntetická alokační smyčka pro sledování růstu paměti v kontejneru"
+    }
+  ],
+  "stack": [
+    "Ruby",
+    "Docker",
+    "Bundler"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[Dockerfile] --> B[ruby 2.1 onbuild]\n  B --> C[app.rb]\n  C --> D[SDK version]\n  C --> E[Memory thread]\n  C --> F[Allocation loop]\n  E --> G[stdout report]",
+    "caption": {
+      "en": "Container start-up runs one script that prints the SDK version and a periodic memory report.",
+      "cs": "Start kontejneru spustí jeden skript, který vypíše verzi SDK a průběžný report paměti."
+    }
+  },
+  "related": [
+    "gooddata-ruby-examples",
+    "gooddata_rails_app",
+    "grache",
+    "grache-test"
+  ],
+  "confidence": "medium"
+}

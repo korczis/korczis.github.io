@@ -1,0 +1,65 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "algorithms",
+  "sources": {
+    "github": "https://github.com/korczis/algorithms",
+    "gitlab": "https://gitlab.com/korczis/algorithms",
+    "commit": "99051a5e7b92be332f01f9eb1d62afeba283557d",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "CMakeLists.txt",
+      "tests/algorithms-test/CMakeLists.txt",
+      ".travis.yml",
+      "tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "kata",
+  "summary": {
+    "en": "A small C++11 library of classic data structures (fixed stack, linked list, queue, three union-find variants) with a CLI app and a Google Test suite, built with CMake.",
+    "cs": "Malá knihovna klasických datových struktur v C++11 (zásobník pevné velikosti, spojový seznam, fronta a tři varianty union-find) s CLI aplikací a testy v Google Testu, sestavovaná přes CMake."
+  },
+  "problem": {
+    "en": "Practising textbook algorithms and data structures in C++ with a proper build and test setup rather than loose snippets.",
+    "cs": "Procvičení učebnicových algoritmů a datových struktur v C++ s pořádným buildem a testy místo volně ležících útržků."
+  },
+  "solution": {
+    "en": "A modular CMake layout splits the code into lib (headers and sources), apps (algorithms-cli) and tests (one gtest file per structure). Travis CI builds it with both gcc and clang.",
+    "cs": "Modulární CMake struktura dělí kód na lib (hlavičky a zdrojáky), apps (algorithms-cli) a tests (jeden gtest soubor na každou strukturu). Travis CI to buildí gcc i clangem."
+  },
+  "highlights": [
+    {
+      "en": "Union-find implemented three ways: quick-find, tree and weighted tree.",
+      "cs": "Union-find ve třech podobách: quick-find, strom a vážený strom."
+    },
+    {
+      "en": "Google Test vendored and compiled into the test executable.",
+      "cs": "Google Test je vendorovaný a kompiluje se přímo do testovací binárky."
+    },
+    {
+      "en": "CI matrix covers gcc and clang.",
+      "cs": "CI matice pokrývá gcc i clang."
+    }
+  ],
+  "stack": [
+    "C++11",
+    "CMake",
+    "Google Test",
+    "Travis CI"
+  ],
+  "architecture": {
+    "mermaid": "flowchart TD\n  CMake[CMakeLists] --> Lib[lib algorithms]\n  CMake --> App[algorithms-cli]\n  CMake --> Tests[algorithms-test]\n  Lib --> DS[Stack List Queue]\n  Lib --> UF[UnionFind variants]\n  App --> Lib\n  Tests --> Lib\n  Tests --> GTest[Google Test]",
+    "caption": {
+      "en": "CMake targets: one library, one CLI and one test binary linked against it.",
+      "cs": "CMake cíle: jedna knihovna, jedno CLI a jedna testovací binárka, které ji linkují."
+    }
+  },
+  "related": [
+    "algorithms-ruby",
+    "skull-cpp",
+    "skull-java",
+    "maze"
+  ],
+  "confidence": "high"
+}

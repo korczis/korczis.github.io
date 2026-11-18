@@ -1,0 +1,68 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "u-tygra",
+  "sources": {
+    "github": "https://github.com/korczis/u-tygra",
+    "gitlab": "https://gitlab.com/korczis/u-tygra",
+    "commit": "4a935f5dc19611b14fc7a6bfc24f9706e8c084e4",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "index.html",
+      "package.json",
+      "config.toml",
+      "CHANGELOG.md",
+      "top-level tree",
+      "data/",
+      "content/"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "site",
+  "summary": {
+    "en": "A small static website for a Czech pub with pages for the food menu, the drinks menu and bottled and draught beers. The GitLab repository holds the Zola source built on an open-source Tailwind theme, and the GitHub repository holds the built output. The live beer table is pulled in the browser from a published Google Sheets spreadsheet.",
+    "cs": "Malý statický web pro českou hospodu se stránkami jídelního a nápojového lístku a lahvových a točených piv. Repozitář na GitLabu obsahuje zdroj v Zole postavený na open-source tématu s Tailwindem, repozitář na GitHubu hotový výstup. Živá tabulka piv se v prohlížeči načítá z publikované tabulky Google."
+  },
+  "problem": {
+    "en": "A small venue needs a cheap, low-maintenance web presence where menus and the beer list can be updated without a CMS or server.",
+    "cs": "Malý podnik potřebuje levnou a nenáročnou webovou prezentaci, kde jde aktualizovat lístky a nabídku piv bez CMS a bez serveru."
+  },
+  "solution": {
+    "en": "Zola renders the Czech pages from Markdown content with Tailwind CSS 3 and Flowbite for components and Alpine.js for interactivity. The beer table is fetched and parsed in the browser from a published Google Sheets CSV with PapaParse; a beers.json data file is committed in the source, but the rendered pages read the table from the spreadsheet and the menu content pages are still placeholders. The site produces an Atom feed, sitemap and web manifest.",
+    "cs": "Zola vyrenderuje české stránky z markdownového obsahu; komponenty dodává Tailwind CSS 3 a Flowbite, interaktivitu Alpine.js. Tabulku piv stahuje a parsuje v prohlížeči z publikovaného Google Sheets CSV přes PapaParse; datový soubor beers.json je ve zdroji commitnutý, ale vyrenderované stránky čtou tabulku z tabulky Google a obsahové stránky lístků jsou zatím jen placeholdery. Web generuje Atom feed, sitemapu a web manifest."
+  },
+  "highlights": [
+    {
+      "en": "Static Zola site with source on GitLab and built output on GitHub.",
+      "cs": "Statický web v Zole, zdroj na GitLabu a hotový výstup na GitHubu."
+    },
+    {
+      "en": "Beer table loaded in the browser from a published Google Sheets CSV via PapaParse.",
+      "cs": "Tabulka piv načtená v prohlížeči z publikovaného Google Sheets CSV přes PapaParse."
+    },
+    {
+      "en": "Feed, sitemap and installable web manifest included.",
+      "cs": "Součástí je feed, sitemapa a instalovatelný web manifest."
+    }
+  ],
+  "stack": [
+    "Zola",
+    "Tailwind CSS",
+    "Flowbite",
+    "Alpine.js",
+    "PapaParse",
+    "GitHub Pages"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Content[Menu pages] --> Zola[Zola build]\n  Theme[Tailwind theme] --> Zola\n  Zola --> Out[Built site]\n  Out --> Pages[GitHub Pages]\n  Pages --> Visitor[Visitor]\n  Sheet[Google Sheets CSV] --> Papa[PapaParse in browser]\n  Papa --> Visitor",
+    "caption": {
+      "en": "Zola renders the content into a static site on GitHub Pages; the beer table is loaded client-side from a Google Sheets CSV.",
+      "cs": "Zola vyrenderuje obsah do statického webu na GitHub Pages; tabulka piv se načítá na klientovi z Google Sheets CSV."
+    }
+  },
+  "related": [
+    "astronomists",
+    "korczis.github.io"
+  ],
+  "confidence": "medium"
+}
