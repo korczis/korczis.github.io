@@ -46,6 +46,10 @@ cs = "AI engineering: dotaz přes {host}"
 en = "Case study: Majordomus"
 cs = "Případová studie: Majordomus"
 
+[home_offer_service]
+en = "What exactly I deliver"
+cs = "Co přesně dodávám"
+
 [home_offer_hire]
 en = "Roles, terms and CV"
 cs = "Role, podmínky a CV"

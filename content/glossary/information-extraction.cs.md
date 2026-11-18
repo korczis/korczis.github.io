@@ -3,7 +3,7 @@
 title = "Vytěžování informací"
 description = "Převod dokumentů (skenů, PDF, volného textu) na strukturovaná pole, jako jsou jména, data a částky, pomocí OCR a jazykových nebo obrazových modelů."
 template = "term.html"
-weight = 87
+weight = 88
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]
@@ -16,7 +16,7 @@ kind = "concept"
 definition = "Převod dokumentů (skenů, PDF, volného textu) na strukturovaná pole, jako jsou jména, data a částky, pomocí OCR a jazykových nebo obrazových modelů."
 aliases = []
 reference = { title = "Information extraction (Wikipedia)", url = "https://en.wikipedia.org/wiki/Information_extraction" }
-pages = ["projects/security.cs.md", "services/_index.cs.md", "services/decision-support-ai.cs.md", "skills/_index.cs.md", "skills/document-extraction.cs.md", "work/magic.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/peacemaker.cs.md", "work/ratnet.cs.md", "work/zlown.cs.md"]
+pages = ["cases/_index.cs.md", "cases/real-estate.cs.md", "projects/security.cs.md", "services/_index.cs.md", "services/decision-support-ai.cs.md", "skills/_index.cs.md", "skills/document-extraction.cs.md", "work/magic.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/peacemaker.cs.md", "work/ratnet.cs.md", "work/zlown.cs.md"]
 related = ["audit-trail", "decision-support-system", "orchestration", "data-integration", "due-diligence", "insolvency", "knowledge-graph", "market-intelligence"]
 og_title = "Vytěžování informací: slovník"
 og_image = "og/cs-glossary-information-extraction.png"

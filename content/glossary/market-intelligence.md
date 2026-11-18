@@ -3,7 +3,7 @@
 title = "Market intelligence"
 description = "Knowledge about a market (prices, comparables, competitors and demand) gathered from public and licensed sources to support a decision."
 template = "term.html"
-weight = 92
+weight = 93
 
 [taxonomies]
 tags = ["Glossary", "Concept"]
@@ -16,7 +16,7 @@ kind = "concept"
 definition = "Knowledge about a market (prices, comparables, competitors and demand) gathered from public and licensed sources to support a decision."
 aliases = []
 reference = { title = "Market intelligence (Wikipedia)", url = "https://en.wikipedia.org/wiki/Market_intelligence" }
-pages = ["projects/security.md", "services/_index.md", "services/m-and-a.md", "skills/_index.md", "skills/market-intelligence.md", "work/magic.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/peacemaker.md", "work/ratnet.md", "work/zlown.md"]
+pages = ["cases/_index.md", "cases/real-estate.md", "projects/security.md", "services/_index.md", "services/m-and-a.md", "skills/_index.md", "skills/market-intelligence.md", "work/magic.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/peacemaker.md", "work/ratnet.md", "work/zlown.md"]
 related = ["decision-support-system", "due-diligence", "mergers-and-acquisitions", "risk-assessment", "virtual-data-room", "audit-trail", "data-integration", "information-extraction"]
 og_title = "Market intelligence: glossary"
 og_image = "og/glossary-market-intelligence.png"

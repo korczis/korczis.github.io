@@ -3,7 +3,7 @@
 title = "Entity resolution"
 description = "Finding the records, across sources, that refer to the same company or person, by shared identifiers first and by similar names and addresses second."
 template = "term.html"
-weight = 82
+weight = 83
 
 [taxonomies]
 tags = ["Glossary", "Concept"]
@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Finding the records, across sources, that refer to the same company or person, by shared identifiers first and by similar names and addresses second."
 aliases = ["record linkage"]
 reference = { title = "Record linkage (Wikipedia)", url = "https://en.wikipedia.org/wiki/Record_linkage" }
-pages = ["projects/security.md", "services/_index.md", "services/compliance-screening.md", "services/continuous-monitoring.md", "services/digital-investigation.md", "services/due-diligence.md", "skills/_index.md", "skills/entity-resolution.md", "work/magic.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/peacemaker.md", "work/ratnet.md", "work/zlown.md"]
-related = ["risk-assessment", "decision-support-system", "due-diligence", "html", "insolvency", "knowledge-graph", "orchestration", "osint"]
+pages = ["cases/_index.md", "cases/financial-group.md", "cases/real-estate.md", "projects/security.md", "services/_index.md", "services/compliance-screening.md", "services/continuous-monitoring.md", "services/digital-investigation.md", "services/due-diligence.md", "skills/_index.md", "skills/entity-resolution.md", "work/magic.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/peacemaker.md", "work/ratnet.md", "work/zlown.md"]
+related = ["risk-assessment", "decision-support-system", "due-diligence", "osint", "audit-trail", "insolvency", "knowledge-graph", "mergers-and-acquisitions"]
 og_title = "Entity resolution: glossary"
 og_image = "og/glossary-record-linkage.png"
 keywords = ["Entity resolution", "Concept", "Glossary", "Tomas Korcak"]

@@ -3,7 +3,7 @@
 title = "Pravidla jako kód"
 description = "Pravidla vedená jako kód vedle toho, co řídí, kontrolovaná automaticky při každé změně místo čtení a pamatování."
 template = "term.html"
-weight = 100
+weight = 101
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

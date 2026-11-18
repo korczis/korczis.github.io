@@ -1023,3 +1023,12 @@ kind = "language"
 definition = "A small language with a terser syntax that compiles one to one into JavaScript."
 definition_cs = "Malý jazyk se stručnější syntaxí, který se překládá přímo do JavaScriptu."
 reference = { title = "coffeescript.org", url = "https://coffeescript.org/" }
+
+[[terms]]
+id = "case-study"
+term = "Case study"
+term_cs = "Případová studie"
+kind = "concept"
+definition = "An account of one piece of work: the context, the role, what was delivered, its scale and the evidence, with the limits of what can be published."
+definition_cs = "Popis jedné zakázky: kontext, role, co bylo dodáno, v jakém rozsahu a s jakými doklady, včetně mezí toho, co lze zveřejnit."
+reference = { title = "Wikipedia: Case study", url = "https://en.wikipedia.org/wiki/Case_study" }

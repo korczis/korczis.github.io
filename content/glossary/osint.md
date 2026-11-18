@@ -3,7 +3,7 @@
 title = "OSINT"
 description = "Open-source intelligence: knowledge built from publicly available sources, with every claim traceable to its source."
 template = "term.html"
-weight = 99
+weight = 100
 
 [taxonomies]
 tags = ["Glossary", "Concept"]
@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Open-source intelligence: knowledge built from publicly available sources, with every claim traceable to its source."
 aliases = []
 reference = { title = "OSINT (Wikipedia)", url = "https://en.wikipedia.org/wiki/Open-source_intelligence" }
-pages = ["_index.md", "about.md", "hire.md", "projects/_index.md", "projects/security.md", "services/_index.md", "services/digital-investigation.md", "services/reputation-intelligence.md", "skills/_index.md", "skills/osint-investigation.md", "work/magic.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/peacemaker.md", "work/ratnet.md", "work/zlown.md"]
-related = ["due-diligence", "audit-trail", "decision-support-system", "knowledge-graph", "mergers-and-acquisitions", "orchestration", "record-linkage", "data-integration"]
+pages = ["_index.md", "about.md", "cases/_index.md", "cases/financial-group.md", "cases/real-estate.md", "hire.md", "projects/_index.md", "projects/security.md", "services/_index.md", "services/digital-investigation.md", "services/reputation-intelligence.md", "skills/_index.md", "skills/osint-investigation.md", "work/magic.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/peacemaker.md", "work/ratnet.md", "work/zlown.md"]
+related = ["due-diligence", "audit-trail", "decision-support-system", "mergers-and-acquisitions", "record-linkage", "knowledge-graph", "orchestration", "data-integration"]
 og_title = "OSINT: glossary"
 og_image = "og/glossary-osint.png"
 keywords = ["OSINT", "Concept", "Glossary", "Tomas Korcak"]

@@ -141,7 +141,8 @@ en = "Expand the sidebar"
 cs = "Rozbalit postranní panel"
 
 # Date formats per language (Zola's date filter, chrono): English writes the month, Czech the
-# numeric day and month (17. 11. 2026) and the month name only with the year (listopad 2026).
+# numeric day and month (17. 11. 2026). Zola ignores date_locale for month names, so a month and
+# year takes its name from month_<n> below.
 [date_locale]
 en = "en_GB"
 cs = "cs_CZ"
@@ -158,10 +159,55 @@ cs = "%-d.\u00a0%-m.\u00a0%Y"
 en = "%-d %b"
 cs = "%-d.\u00a0%-m."
 
-[fmt_month_year]
-en = "%B %Y"
-cs = "%B %Y"
 
-[fmt_month_short]
-en = "%b %Y"
-cs = "%b %Y"
+# Month names for a month and year ("listopad 2026"): Zola's date filter writes English names only.
+[month_1]
+en = "January"
+cs = "leden"
+
+[month_2]
+en = "February"
+cs = "únor"
+
+[month_3]
+en = "March"
+cs = "březen"
+
+[month_4]
+en = "April"
+cs = "duben"
+
+[month_5]
+en = "May"
+cs = "květen"
+
+[month_6]
+en = "June"
+cs = "červen"
+
+[month_7]
+en = "July"
+cs = "červenec"
+
+[month_8]
+en = "August"
+cs = "srpen"
+
+[month_9]
+en = "September"
+cs = "září"
+
+[month_10]
+en = "October"
+cs = "říjen"
+
+[month_11]
+en = "November"
+cs = "listopad"
+
+[month_12]
+en = "December"
+cs = "prosinec"
+
+
+

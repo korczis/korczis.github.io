@@ -3,7 +3,7 @@
 title = "Orchestrace"
 description = "Koordinace mnoha automatických kroků, služeb nebo agentů (fronty, workflow, plány), aby běžely ve správném pořadí a zotavily se, když jeden selže."
 template = "term.html"
-weight = 98
+weight = 99
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]
@@ -16,7 +16,7 @@ kind = "concept"
 definition = "Koordinace mnoha automatických kroků, služeb nebo agentů (fronty, workflow, plány), aby běžely ve správném pořadí a zotavily se, když jeden selže."
 aliases = []
 reference = { title = "Orchestration in computing (Wikipedia)", url = "https://en.wikipedia.org/wiki/Orchestration_(computing)" }
-pages = ["_index.cs.md", "projects/security.cs.md", "services/_index.cs.md", "services/ai-engineering-governance.cs.md", "services/continuous-monitoring.cs.md", "services/decision-support-ai.cs.md", "skills/_index.cs.md", "skills/orchestration.cs.md", "work/magic.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/peacemaker.cs.md", "work/ratnet.cs.md", "work/zlown.cs.md"]
+pages = ["_index.cs.md", "cases/_index.cs.md", "cases/real-estate.cs.md", "projects/security.cs.md", "services/_index.cs.md", "services/ai-engineering-governance.cs.md", "services/continuous-monitoring.cs.md", "services/decision-support-ai.cs.md", "skills/_index.cs.md", "skills/orchestration.cs.md", "work/magic.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/peacemaker.cs.md", "work/ratnet.cs.md", "work/zlown.cs.md"]
 related = ["audit-trail", "decision-support-system", "due-diligence", "information-extraction", "insolvency", "osint", "record-linkage", "risk-assessment"]
 og_title = "Orchestrace: slovník"
 og_image = "og/cs-glossary-orchestration.png"

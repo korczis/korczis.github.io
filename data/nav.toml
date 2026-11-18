@@ -54,6 +54,16 @@ footer = true
 palette = true
 
 [[nav]]
+key = "nav_cases"
+path = "/cases/"
+icon = "clipboard"
+badge = ""
+hint = "hint_cases"
+sidebar = true
+footer = true
+palette = true
+
+[[nav]]
 key = "nav_skills"
 path = "/skills/"
 icon = "academic"

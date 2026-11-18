@@ -3,7 +3,7 @@
 title = "Analýza účetních výkazů"
 description = "Čtení zdraví firmy z rozvahy, výsledovky a cash flow: ukazatele, trendy a to, co neříkají."
 template = "term.html"
-weight = 83
+weight = 84
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

@@ -84,7 +84,8 @@
             "glossary",
             "hire",
             "service",
-            "skill"
+            "skill",
+            "case"
           ],
           "description": "Which JSON-LD page type templates/partials/seo.html emits."
         },
@@ -302,6 +303,44 @@
           "type": "string",
           "pattern": "^[a-z-]+$",
           "description": "Service pages only: the icon of templates/components.html the service shows."
+        },
+        "engagement": {
+          "type": "string",
+          "pattern": "^e[0-9]+$",
+          "description": "A case study's engagement id in data/experience.json (scripts/build-cases.mjs)."
+        },
+        "case_services": {
+          "type": "array",
+          "description": "A case study's services, best skill overlap first (scripts/build-cases.mjs).",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "hit",
+              "of"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "hit": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "of": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          }
+        },
+        "case_public": {
+          "type": "array",
+          "description": "Public repositories that show a case study's skills (data/experience.json public_work).",
+          "items": {
+            "type": "string"
+          }
         }
       }
     },

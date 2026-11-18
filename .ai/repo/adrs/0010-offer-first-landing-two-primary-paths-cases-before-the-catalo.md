@@ -238,8 +238,9 @@ machine-readable files.
    inference from commits, paths and headings, not proof of a result), "historie gitu existuje u
    {n} z nich", "přímé měření" for the commit buckets, and the lead says that these are signals of
    scope, not of business outcome.
-6. **Czech dates and typography.** Dates come from per-language formats (`fmt_*`, `date_locale` in
-   `i18n/ui.toml`): Czech writes `17. 11. 2026` and `listopad 2026`. `static/js/typography.js` holds
+6. **Czech dates and typography.** Dates come from per-language formats (`fmt_*` in `i18n/ui.toml`):
+   Czech writes `17. 11. 2026`; a month and year takes its name from `month_<n>` (`listopad 2026`),
+   because Zola's date filter writes English month names whatever its `locale`. `static/js/typography.js` holds
    the typesetting rules: a non-breaking space after one-letter prepositions and conjunctions, after
    binding abbreviations, inside numeric dates and after a currency code, and an en dash for a spaced
    hyphen. `scripts/build-i18n.mjs` applies them to every interface string at build time, and the

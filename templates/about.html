@@ -36,9 +36,9 @@
         </div>
       </div>
       <dl class="tabular space-y-3 text-sm">
-        <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="on_github_since", lang=lang) | safe }}</dt><dd><a class="{{ link }}" href="https://github.com/{{ gh.profile.login }}">{{ gh.profile.created_at | date(format=trans(key="fmt_month_year", lang=lang), locale=trans(key="date_locale", lang=lang)) }}</a></dd></div>
+        <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="on_github_since", lang=lang) | safe }}</dt><dd><a class="{{ link }}" href="https://github.com/{{ gh.profile.login }}">{{ trans(key="month_" ~ (gh.profile.created_at | date(format="%-m")), lang=lang) }} {{ gh.profile.created_at | date(format="%Y") }}</a></dd></div>
         <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="original_public_repositories", lang=lang) | safe }}</dt><dd><a class="{{ link }}" href="{{ base }}repositories/">{{ ix.counts.own }}</a></dd></div>
-        <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="contributions_12_months", lang=lang) | safe }}</dt><dd class="font-semibold text-gray-900 dark:text-white">{{ gh.contributions.total | num_format }}</dd></div>
+        <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="contributions_12_months", lang=lang) | safe }}</dt><dd class="font-semibold text-gray-900 dark:text-white">{{ gh.contributions.total | num_format(locale=lang) }}</dd></div>
         <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="most_used_language", lang=lang) | safe }}</dt><dd class="font-semibold text-gray-900 dark:text-white">{{ ix.languages[0].name }} ({{ ix.languages[0].repos }})</dd></div>
         <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="author_of", lang=lang) | safe }}</dt><dd><a class="{{ link }}" href="{{ config.extra.majordomus_url }}">Majordomus</a></dd></div>
       </dl>
@@ -118,6 +118,22 @@
     {% </card> %}
     {%- endif %}
   </div>
+
+  {#- What I did for clients (ADR 0010): the anonymised case studies (scripts/build-cases.mjs), each
+      a card to its page, and the services they feed (scripts/build-services.mjs), each to its page. #}
+  {%- set acs = get_section(path="cases/_index.md", lang=lang) %}{% set asv = get_section(path="services/_index.md", lang=lang, metadata_only=true) %}
+  {% <card labelledby="cases-title"> %}
+    {{ <card_head id="cases-title" title={trans(key="about_cases_title", lang=lang)} lead={trans(key="about_cases_lead", lang=lang)} action={trans(key="cases_all", lang=lang)} href={acs.permalink} /> }}
+    <ul class="grid grid-cols-1 gap-4 md:grid-cols-2">
+      {%- for cp in acs.pages %}
+      <li class="flex">{{ <link_card href={cp.permalink} title={cp.title} note={cp.description} eyebrow={trans(key="cases_title", lang=lang)} cls="w-full" /> }}</li>
+      {%- endfor %}
+    </ul>
+    <h3 class="mb-2 mt-6 text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400">{{ trans(key="nav_services", lang=lang) }}</h3>
+    <ul class="flex flex-wrap gap-2">
+      {%- for sp in asv.pages %}<li>{{ <chip label={sp.title} href={sp.permalink} size="xs" /> }}</li>{% endfor %}
+    </ul>
+  {% </card> %}
 
   {#- Art visuals declared in front matter ([[extra.viz]]), rendered generically. #}
   {%- include "partials/viz-grid.html" %}

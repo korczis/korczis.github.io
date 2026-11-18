@@ -166,6 +166,66 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cases/",
+   "lang": "en",
+   "title": "Case studies · Tomas Korcak",
+   "description": "Anonymised client work under confidentiality agreements: sector, my role, measured scale and what was delivered; every figure labelled measured or inferred.",
+   "type": "collection",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cases.png",
+   "keywords": [
+    "Case studies",
+    "Real-estate developer",
+    "Financial and investment group",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cases/financial-group/",
+   "lang": "en",
+   "title": "Financial and investment group: OSINT investigation · Tomas Korcak",
+   "description": "Anonymised case study, financial and investment group: investigator and advisor; OSINT investigation and due diligence.",
+   "type": "case",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/case-financial-group.png",
+   "keywords": [
+    "Financial and investment group",
+    "OSINT investigation",
+    "Due diligence",
+    "Entity resolution",
+    "Decision support",
+    "M&A screening",
+    "Audit trail",
+    "HTML",
+    "JavaScript",
+    "Python",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cases/real-estate/",
+   "lang": "en",
+   "title": "Real-estate developer: LLM agents and decision support · Tomas Korcak",
+   "description": "Anonymised case study, real-estate developer: architect, lead engineer, AI engineer and data engineer; LLM agents and decision support.",
+   "type": "case",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/case-real-estate.png",
+   "keywords": [
+    "Real-estate developer",
+    "LLM agents",
+    "Decision support",
+    "AI transformation",
+    "Audit trail",
+    "Data integration",
+    "Orchestration",
+    "TypeScript",
+    "Python",
+    "HTML",
+    "JavaScript",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/",
    "lang": "cs",
    "title": "Tomáš Korčák · Staff engineer, infrastruktura AI agentů (Elixir, Rust)",
@@ -205,10 +265,70 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/cases/",
+   "lang": "cs",
+   "title": "Případové studie · Tomas Korcak",
+   "description": "Anonymizovaná práce pro klienty pod dohodami o mlčenlivosti: obor, moje role, změřený rozsah a co bylo dodáno; u čísel, zda jsou změřená, nebo odvozená.",
+   "type": "collection",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-cases.png",
+   "keywords": [
+    "Případové studie",
+    "Developer nemovitostí",
+    "Finanční a investiční skupina",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/cases/financial-group/",
+   "lang": "cs",
+   "title": "Finanční a investiční skupina: OSINT šetření · Tomas Korcak",
+   "description": "Anonymizovaná případová studie, obor finanční a investiční skupina: analytik šetření a poradce; OSINT šetření a due diligence.",
+   "type": "case",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-case-financial-group.png",
+   "keywords": [
+    "Finanční a investiční skupina",
+    "OSINT šetření",
+    "Due diligence",
+    "Ztotožnění subjektů",
+    "Podpora rozhodování",
+    "Prověrka M&A",
+    "Auditní stopa",
+    "HTML",
+    "JavaScript",
+    "Python",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/cases/real-estate/",
+   "lang": "cs",
+   "title": "Developer nemovitostí: Agenti s LLM · Tomas Korcak",
+   "description": "Anonymizovaná případová studie, obor developer nemovitostí: architekt, vedoucí inženýr, inženýr AI a datový inženýr; agenti s LLM a podpora rozhodování.",
+   "type": "case",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-case-real-estate.png",
+   "keywords": [
+    "Developer nemovitostí",
+    "Agenti s LLM",
+    "Podpora rozhodování",
+    "Transformace s AI",
+    "Auditní stopa",
+    "Integrace dat",
+    "Orchestrace",
+    "TypeScript",
+    "Python",
+    "HTML",
+    "JavaScript",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/",
    "lang": "cs",
    "title": "Slovník · Tomas Korcak",
-   "description": "113 pojmů, kterými se web vysvětluje: jazyky, technologie a koncepty, každý definovaný, se zdrojem a s odkazem na stránky, které ho používají.",
+   "description": "114 pojmů, kterými se web vysvětluje: jazyky, technologie a koncepty, každý definovaný, se zdrojem a s odkazem na stránky, které ho používají.",
    "type": "glossary",
    "category": null,
    "og_image": "https://korczis.github.io/og/cs-glossary.png",
@@ -376,6 +496,22 @@
    "keywords": [
     "C (programovací jazyk)",
     "Programovací jazyk",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/case-study/",
+   "lang": "cs",
+   "title": "Případová studie (koncept)",
+   "description": "Popis jedné zakázky: kontext, role, co bylo dodáno, v jakém rozsahu a s jakými doklady, včetně mezí toho, co lze zveřejnit.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-case-study.png",
+   "keywords": [
+    "Případová studie",
+    "Case study",
+    "Koncept",
     "Slovník",
     "Tomáš Korčák"
    ]
@@ -7048,7 +7184,7 @@
    "url": "https://korczis.github.io/glossary/",
    "lang": "en",
    "title": "Glossary · Tomas Korcak",
-   "description": "The 113 terms this site explains itself with: languages, technologies and concepts, each defined, sourced and linked to every page that uses it.",
+   "description": "The 114 terms this site explains itself with: languages, technologies and concepts, each defined, sourced and linked to every page that uses it.",
    "type": "glossary",
    "category": null,
    "og_image": "https://korczis.github.io/og/glossary.png",
@@ -7213,6 +7349,21 @@
    "keywords": [
     "C (programming language)",
     "Programming language",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/case-study/",
+   "lang": "en",
+   "title": "Case study (concept)",
+   "description": "An account of one piece of work: the context, the role, what was delivered, its scale and the evidence, with the limits of what can be published.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-case-study.png",
+   "keywords": [
+    "Case study",
+    "Concept",
     "Glossary",
     "Tomas Korcak"
    ]

@@ -72,7 +72,7 @@
             </summary>
             <ul data-sidebar-label class="mt-1 flex flex-wrap gap-1.5 px-2 pb-2">
               {%- if g[0] == "skills_languages" %}
-              {%- for l in six.languages %}{% if loop.index <= 12 %}
+              {%- for l in six.languages %}{% if l.repos > 0 %}
               {%- set_global href = config.base_url ~ lp ~ "/repositories/?language=" ~ l.name | urlencode %}
               {%- for gt in sgl.terms %}{% if gt.term == l.name or l.name in gt.aliases | default(value=[]) %}{% set_global href = config.base_url ~ lp ~ "/glossary/" ~ gt.id ~ "/" %}{% endif %}{% endfor %}
               <li>{{ <chip label={l.name} href={href} count={l.repos ~ ""} size="xs" /> }}</li>
@@ -83,10 +83,20 @@
               {%- for s in six.skills.technologies %}
               {%- set_global href = config.base_url ~ lp ~ "/projects/?project=" ~ s.evidence[0].repo %}{% set_global sclaimed = true %}
               {%- for gt in sgl.terms %}{% if gt.term == s.name or s.name in gt.aliases | default(value=[]) %}{% set_global href = config.base_url ~ lp ~ "/glossary/" ~ gt.id ~ "/" %}{% if gt.claimed is defined and not gt.claimed %}{% set_global sclaimed = false %}{% endif %}{% endif %}{% endfor %}
+              {%- set_global sk_seen = "|" %}
+              {%- for s in six.skills.technologies %}{% set_global sk_seen = sk_seen ~ (s.name | lower) ~ "|" %}{% endfor %}
               {%- if sclaimed %}
               <li>{{ <chip label={s.name} href={href} count={s.projects ~ ""} size="xs" /> }}</li>
               {%- endif %}
               {%- endfor %}
+              {#- The technologies the client work uses (data/experience.json, detected in its sources),
+                  each to its glossary term, when the public catalogue does not already list it. #}
+              {%- if sxp %}{% for e in sxp.engagements %}{% for tn in e.technologies | default(value=[]) %}
+              {%- if not ("|" ~ (tn | lower) ~ "|") in sk_seen %}{% set_global sk_seen = sk_seen ~ (tn | lower) ~ "|" %}
+              {%- set_global href = "" %}{% set_global sclaimed = true %}
+              {%- for gt in sgl.terms %}{% if gt.term | lower == tn | lower or tn in gt.aliases | default(value=[]) %}{% set_global href = config.base_url ~ lp ~ "/glossary/" ~ gt.id ~ "/" %}{% if gt.claimed is defined and not gt.claimed %}{% set_global sclaimed = false %}{% endif %}{% if gt.kind == "language" %}{% set_global sclaimed = false %}{% endif %}{% endif %}{% endfor %}
+              {%- if href and sclaimed %}<li>{{ <chip label={tn} href={href} size="xs" /> }}</li>{% endif %}
+              {%- endif %}{% endfor %}{% endfor %}{% endif %}
               {%- else %}
               {%- for k in caps %}{% if sxr.capabilities[k] is defined %}
               {%- set c = sxr.capabilities[k] %}
