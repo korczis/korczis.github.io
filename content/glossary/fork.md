@@ -17,7 +17,7 @@ definition = "A copy of someone else's repository under your account; forks are 
 aliases = []
 reference = { title = "GitHub Docs: about forks", url = "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks" }
 pages = ["_index.md", "repositories/_index.md", "work/_index.md"]
-related = ["commit", "mirror", "repository", "open-source", "d3", "data-visualisation", "flowbite-pro", "front-matter"]
+related = ["commit", "mirror", "repository", "open-source", "ai-agent", "apache-echarts", "audit-trail", "d3"]
 og_title = "Fork: glossary"
 og_image = "og/glossary-fork.png"
 keywords = ["Fork", "Concept", "Glossary", "Tomas Korcak"]

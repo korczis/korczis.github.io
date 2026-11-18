@@ -224,3 +224,62 @@ cs = "Hledáte posilu? Pojďme si promluvit."
 [hire_cta_lead]
 en = "{headline}. Available for {engagement}; {workplace}, {regions}."
 cs = "{headline}. K dispozici: {engagement}; {workplace}, {regions}."
+
+# The facts for sourcing filters (ADR 0007, addendum of 2026-11-18; data/cv.toml [hire] start,
+# work_authorization, relocation, timezone, overlap): labels and the words around the owner's own.
+
+[hire_start_label]
+en = "Start"
+cs = "Nástup"
+
+[hire_start_immediately]
+en = "Immediately"
+cs = "Ihned"
+
+[hire_authorization_label]
+en = "Work authorization"
+cs = "Pracovní oprávnění"
+
+[hire_relocation_label]
+en = "Relocation"
+cs = "Relokace"
+
+[hire_relocation_open]
+en = "Open to relocation"
+cs = "Otevřený relokaci"
+
+[hire_relocation_closed]
+en = "Not relocating"
+cs = "Bez relokace"
+
+[hire_timezone_label]
+en = "Time zone and overlap"
+cs = "Časové pásmo a překryv"
+
+[hire_languages_label]
+en = "Spoken languages"
+cs = "Jazyky"
+
+[hire_faq_q_start]
+en = "When can he start?"
+cs = "Kdy může nastoupit?"
+
+[hire_faq_a_start]
+en = "{start}."
+cs = "{start}."
+
+[hire_faq_q_authorization]
+en = "Where is he authorized to work?"
+cs = "Kde smí pracovat?"
+
+[hire_faq_a_authorization]
+en = "{authorization}. {relocation}."
+cs = "{authorization}. {relocation}."
+
+[hire_faq_q_timezone]
+en = "Which time zone, and how much overlap?"
+cs = "Jaké časové pásmo a jaký překryv?"
+
+[hire_faq_a_timezone]
+en = "{zone}; {overlap}."
+cs = "{zone}; {overlap}."

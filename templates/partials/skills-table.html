@@ -1,0 +1,155 @@
+{#- Skills, each with its evidence: one table for /hire/ (every row) and the landing (sk_limit rows,
+    sk_footer for the link to the rest). Flowbite Pro application-ui/advanced-tables: a header with
+    filter tabs, the table, a footer. The rows are the visible twin of Person.knowsAbout
+    (templates/partials/seo.html, [data-skill]):
+      - language: data/index.json skills.languages with a glossary term, its repositories, the
+        first and last year its repositories were created in (languages_by_year), its evidence;
+      - technology: skills.technologies (the curated stacks), its projects, the years its evidence
+        repositories span (created to last push), and the technologies of the client work
+        (data/experience.json), counted in engagements;
+      - capability: data/experience-rules.toml capabilities the client work shows, counted in
+        engagements, with the public repositories that share them.
+    The terms the headline and the roles name come first (glossary names and aliases, read only),
+    then each kind by its count. A term the owner does not claim (glossary claimed = false, the
+    libraries ADR 0005 retired) is never a row. The filter is radio buttons styled as Flowbite tabs:
+    without JavaScript and before a choice every row shows; the choice hides the other kinds
+    (styles/app.css, [data-skills]). Under md each row stacks as a labelled list. -#}
+{%- set sk_sfx = "" %}{% set sk_xl = "" %}{% set sk_lp = "" %}{% if lang is defined and lang != config.default_language %}{% set sk_sfx = "_" ~ lang %}{% set sk_xl = "." ~ lang %}{% set sk_lp = "/" ~ lang %}{% endif -%}
+{%- set sk_base = config.base_url ~ sk_lp ~ "/" -%}
+{%- set sk_cv = load_data(path="data/cv.toml") -%}
+{%- set sk_gh = load_data(path="data/github.json") -%}
+{%- set sk_ix = load_data(path="data/index.json") -%}
+{%- set sk_gl = load_data(path="data/glossary.toml") -%}
+{%- set sk_xr = load_data(path="data/experience-rules.toml") -%}
+{%- set sk_xp = load_data(path="data/experience.json", required=false) -%}
+{%- set sk_wsec = get_section(path="work/_index" ~ sk_xl ~ ".md") -%}
+{%- if sk_limit is defined %}{% set sk_max = sk_limit %}{% else %}{% set sk_max = 999 %}{% endif -%}
+{%- set sk_link = "font-medium text-primary-700 hover:underline dark:text-primary-400" -%}
+{%- set sk_muted = "text-gray-600 dark:text-gray-400" -%}
+{#- The words the headline and the roles use, as " word word ", to find the named terms. #}
+{%- set_global sk_named_src = sk_cv.hire.headline | default(value="") %}{% for r in sk_cv.hire.roles | default(value=[]) %}{% set_global sk_named_src = sk_named_src ~ " " ~ r %}{% endfor -%}
+{%- set sk_hn = " " ~ (sk_named_src | lower | replace(from=":", to=" ") | replace(from=",", to=" ") | replace(from="&", to=" ") | replace(from="/", to=" ") | replace(from="(", to=" ") | replace(from=")", to=" ") | replace(from=".", to=" ")) ~ " " -%}
+{%- set_global sk_named = "|" %}{% for gt in sk_gl.terms %}
+{%- set_global sk_hit = (sk_hn is containing(pat=" " ~ (gt.term | lower | replace(from="&", to=" ") | replace(from=".", to=" ")) ~ " ")) %}
+{%- for a in gt.aliases | default(value=[]) %}{% if sk_hn is containing(pat=" " ~ (a | lower | replace(from="&", to=" ") | replace(from=".", to=" ")) ~ " ") %}{% set_global sk_hit = true %}{% endif %}{% endfor %}
+{%- if sk_hit %}{% set_global sk_named = sk_named ~ gt.id ~ "|" %}{% endif %}
+{%- endfor -%}
+{#- The technologies of the client work, "|"-joined, first seen first. #}
+{%- set_global sk_xtech = "" %}{% if sk_xp %}{% for e in sk_xp.engagements %}{% for t in e.technologies | default(value=[]) %}{% if not ("|" ~ t ~ "|") in ("|" ~ sk_xtech ~ "|") %}{% if sk_xtech %}{% set_global sk_xtech = sk_xtech ~ "|" %}{% endif %}{% set_global sk_xtech = sk_xtech ~ t %}{% endif %}{% endfor %}{% endfor %}{% endif -%}
+{%- set_global sk_caps = "|" %}{% if sk_xp %}{% for e in sk_xp.engagements %}{% for c in e.capabilities | default(value=[]) %}{% if not ("|" ~ c.key ~ "|") in sk_caps %}{% set_global sk_caps = sk_caps ~ c.key ~ "|" %}{% endif %}{% endfor %}{% endfor %}{% endif -%}
+{%- set sk_td = "flex items-baseline justify-between gap-3 py-0.5 md:table-cell md:px-4 md:py-3" -%}
+{%- set sk_tdn = sk_td ~ " md:whitespace-nowrap" -%}
+{%- set sk_lbl = "text-xs font-medium uppercase text-gray-500 dark:text-gray-400 md:hidden" -%}
+<div data-skills>
+  <fieldset class="mb-4">
+    <legend class="sr-only">{{ trans(key="skills_filter", lang=lang) }}</legend>
+    <div class="flex flex-wrap gap-2 text-sm font-medium">
+      {%- for f in [["all", "skills_kind_all"], ["language", "skills_languages"], ["technology", "skills_technologies"], ["capability", "skills_capabilities"]] %}
+      <label class="cursor-pointer">
+        <input type="radio" name="skills-filter" value="{{ f[0] }}" class="peer sr-only"{% if f[0] == "all" %} checked{% endif %}>
+        <span class="inline-block rounded-lg px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-gray-900 peer-checked:bg-primary-700 peer-checked:text-white peer-focus-visible:ring-4 peer-focus-visible:ring-primary-300 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:peer-checked:bg-primary-600 dark:peer-focus-visible:ring-primary-800">{{ trans(key=f[1], lang=lang) }}</span>
+      </label>
+      {%- endfor %}
+    </div>
+  </fieldset>
+  <table class="block w-full text-left text-sm text-gray-600 dark:text-gray-400 md:table">
+    <thead class="hidden bg-gray-50 text-xs uppercase text-gray-700 dark:bg-gray-700 dark:text-gray-300 md:table-header-group">
+      <tr>
+        {%- for c in ["skills_col_skill", "skills_col_kind", "skills_col_count", "skills_col_span", "skills_col_evidence"] %}
+        <th scope="col" class="px-4 py-3">{{ trans(key=c, lang=lang) }}</th>
+        {%- endfor %}
+      </tr>
+    </thead>
+    <tbody class="block md:table-row-group">
+      {%- set_global sk_n = 0 %}
+      {%- for pass in ["named", "rest"] %}
+      {#- Languages: a glossary term is required (the repositories list shows every language). #}
+      {%- for l in sk_ix.skills.languages %}
+      {%- set_global sterm = false %}{% for gt in sk_gl.terms %}{% if gt.term == l.name or l.name in gt.aliases | default(value=[]) %}{% set_global sterm = gt %}{% endif %}{% endfor %}
+      {%- if sterm and (sterm.claimed is not defined or sterm.claimed) and sk_n < sk_max and ((pass == "named") == (("|" ~ sterm.id ~ "|") in sk_named)) %}
+      {%- set_global sk_n = sk_n + 1 %}
+      {%- set_global y0 = 0 %}{% set_global y1 = 0 %}
+      {%- for y, m in sk_ix.languages_by_year %}{% if m[l.name] is defined and m[l.name] > 0 %}{% set yi = y | int %}{% if y0 == 0 or yi < y0 %}{% set_global y0 = yi %}{% endif %}{% if yi > y1 %}{% set_global y1 = yi %}{% endif %}{% endif %}{% endfor %}
+      {%- set tp = get_page(path="glossary/" ~ sterm.id ~ sk_xl ~ ".md") %}
+      {%- set lq = sk_base ~ "repositories/?language=" ~ l.name | urlencode %}
+      <tr data-kind="language" data-skill="{{ l.name }}" class="block border-b border-gray-200 py-3 dark:border-gray-700 md:table-row md:py-0">
+        <th scope="row" class="block font-medium text-gray-900 dark:text-white md:table-cell md:px-4 md:py-3"><a class="{{ sk_link }}" href="{{ tp.permalink }}">{{ l.name }}</a></th>
+        <td class="{{ sk_td }}"><span class="{{ sk_lbl }}">{{ trans(key="skills_col_kind", lang=lang) }}</span>{{ <badge label={trans(key="skills_languages", lang=lang)} /> }}</td>
+        <td class="{{ sk_tdn }}"><span class="{{ sk_lbl }}">{{ trans(key="skills_col_count", lang=lang) }}</span><a class="tabular hover:underline" href="{{ lq }}">{{ trans(key="skills_n_repos", lang=lang) | replace(from="{n}", to=l.repos ~ "") }}</a></td>
+        <td class="{{ sk_tdn }}"><span class="{{ sk_lbl }}">{{ trans(key="skills_col_span", lang=lang) }}</span><span class="tabular">{% if y0 > 0 %}<time datetime="{{ y0 }}">{{ y0 }}</time>{% if y1 > y0 %}–<time datetime="{{ y1 }}">{{ y1 }}</time>{% endif %}{% endif %}</span></td>
+        <td class="{{ sk_td }}"><span class="{{ sk_lbl }}">{{ trans(key="skills_col_evidence", lang=lang) }}</span><span>{% for e in l.evidence %}{% if loop.index <= 3 %}
+          {%- set_global eu = e.url %}{% for p in sk_wsec.pages %}{% if p.extra.repo == e.name %}{% set_global eu = p.permalink %}{% endif %}{% endfor -%}
+          <a class="hover:underline" href="{{ eu }}">{{ e.name }}</a>{% if not loop.last and loop.index < 3 %}, {% endif %}{% endif %}{% endfor %}</span></td>
+      </tr>
+      {%- endif %}
+      {%- endfor %}
+      {#- Technologies of the curated stacks. #}
+      {%- for t in sk_ix.skills.technologies %}
+      {%- set_global sterm = false %}{% for gt in sk_gl.terms %}{% if gt.term == t.name or t.name in gt.aliases | default(value=[]) %}{% set_global sterm = gt %}{% endif %}{% endfor %}
+      {%- if sterm %}{% set_global tnamed = ("|" ~ sterm.id ~ "|") in sk_named %}{% else %}{% set_global tnamed = false %}{% endif %}
+      {%- if (not sterm or sterm.claimed is not defined or sterm.claimed) and sk_n < sk_max and ((pass == "named") == tnamed) %}
+      {%- set_global sk_n = sk_n + 1 %}
+      {%- set_global y0 = 0 %}{% set_global y1 = 0 %}
+      {%- for e in t.evidence %}{% for r in sk_ix.repos %}{% if r.name == e.repo %}{% set ya = r.created_at | truncate(length=4, end="") | int %}{% set yb = r.pushed_at | truncate(length=4, end="") | int %}{% if y0 == 0 or ya < y0 %}{% set_global y0 = ya %}{% endif %}{% if yb > y1 %}{% set_global y1 = yb %}{% endif %}{% endif %}{% endfor %}{% endfor %}
+      {%- set pq = sk_base ~ "projects/?project=" ~ t.evidence[0].repo %}
+      {%- if sterm %}{% set tp = get_page(path="glossary/" ~ sterm.id ~ sk_xl ~ ".md") %}{% set th = tp.permalink %}{% else %}{% set th = pq %}{% endif %}
+      <tr data-kind="technology" data-skill="{{ t.name }}" class="block border-b border-gray-200 py-3 dark:border-gray-700 md:table-row md:py-0">
+        <th scope="row" class="block font-medium text-gray-900 dark:text-white md:table-cell md:px-4 md:py-3"><a class="{{ sk_link }}" href="{{ th }}">{{ t.name }}</a></th>
+        <td class="{{ sk_td }}"><span class="{{ sk_lbl }}">{{ trans(key="skills_col_kind", lang=lang) }}</span>{{ <badge label={trans(key="skills_technologies", lang=lang)} tone="primary" /> }}</td>
+        <td class="{{ sk_tdn }}"><span class="{{ sk_lbl }}">{{ trans(key="skills_col_count", lang=lang) }}</span><a class="tabular hover:underline" href="{{ pq }}">{{ trans(key="skills_n_projects", lang=lang) | replace(from="{n}", to=t.projects ~ "") }}</a></td>
+        <td class="{{ sk_tdn }}"><span class="{{ sk_lbl }}">{{ trans(key="skills_col_span", lang=lang) }}</span><span class="tabular">{% if y0 > 0 %}<time datetime="{{ y0 }}">{{ y0 }}</time>{% if y1 > y0 %}–<time datetime="{{ y1 }}">{{ y1 }}</time>{% endif %}{% endif %}</span></td>
+        <td class="{{ sk_td }}"><span class="{{ sk_lbl }}">{{ trans(key="skills_col_evidence", lang=lang) }}</span><span>{% for e in t.evidence %}
+          {%- set_global eu = sk_base ~ "projects/?project=" ~ e.repo %}{% for p in sk_wsec.pages %}{% if p.extra.repo == e.repo %}{% set_global eu = p.permalink %}{% endif %}{% endfor -%}
+          <a class="hover:underline" href="{{ eu }}">{{ e.name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</span></td>
+      </tr>
+      {%- endif %}
+      {%- endfor %}
+      {#- Technologies of the client work, counted in engagements (anonymised). #}
+      {%- if sk_xtech %}{% for t in sk_xtech | split(pat="|") %}
+      {%- set_global sterm = false %}{% for gt in sk_gl.terms %}{% if gt.term == t or t in gt.aliases | default(value=[]) %}{% set_global sterm = gt %}{% endif %}{% endfor %}
+      {%- if sterm %}{% set_global tnamed = ("|" ~ sterm.id ~ "|") in sk_named %}{% else %}{% set_global tnamed = false %}{% endif %}
+      {%- set_global tdup = false %}{% for st in sk_ix.skills.technologies %}{% if st.name == t %}{% set_global tdup = true %}{% endif %}{% endfor %}{% for st in sk_ix.skills.languages %}{% if st.name == t %}{% set_global tdup = true %}{% endif %}{% endfor %}
+      {%- if not tdup and (not sterm or sterm.claimed is not defined or sterm.claimed) and sk_n < sk_max and ((pass == "named") == tnamed) %}
+      {%- set_global sk_n = sk_n + 1 %}
+      {%- set_global xn = 0 %}{% set_global y0 = 0 %}{% set_global y1 = 0 %}
+      {%- for e in sk_xp.engagements %}{% if t in e.technologies | default(value=[]) %}{% set_global xn = xn + 1 %}{% if e.period %}{% set ya = e.period.from | truncate(length=4, end="") | int %}{% set yb = e.period.to | truncate(length=4, end="") | int %}{% if y0 == 0 or ya < y0 %}{% set_global y0 = ya %}{% endif %}{% if yb > y1 %}{% set_global y1 = yb %}{% endif %}{% endif %}{% endif %}{% endfor %}
+      {%- if sterm %}{% set tp = get_page(path="glossary/" ~ sterm.id ~ sk_xl ~ ".md") %}{% set th = tp.permalink %}{% else %}{% set th = sk_base ~ "#experience" %}{% endif %}
+      <tr data-kind="technology" data-skill="{{ t }}" class="block border-b border-gray-200 py-3 dark:border-gray-700 md:table-row md:py-0">
+        <th scope="row" class="block font-medium text-gray-900 dark:text-white md:table-cell md:px-4 md:py-3"><a class="{{ sk_link }}" href="{{ th }}">{{ t }}</a></th>
+        <td class="{{ sk_td }}"><span class="{{ sk_lbl }}">{{ trans(key="skills_col_kind", lang=lang) }}</span>{{ <badge label={trans(key="skills_technologies", lang=lang)} tone="primary" /> }}</td>
+        <td class="{{ sk_tdn }}"><span class="{{ sk_lbl }}">{{ trans(key="skills_col_count", lang=lang) }}</span><a class="tabular hover:underline" href="{{ sk_base }}#experience">{{ trans(key="skills_n_engagements", lang=lang) | replace(from="{n}", to=xn ~ "") }}</a></td>
+        <td class="{{ sk_tdn }}"><span class="{{ sk_lbl }}">{{ trans(key="skills_col_span", lang=lang) }}</span><span class="tabular">{% if y0 > 0 %}<time datetime="{{ y0 }}">{{ y0 }}</time>{% if y1 > y0 %}–<time datetime="{{ y1 }}">{{ y1 }}</time>{% endif %}{% endif %}</span></td>
+        <td class="{{ sk_td }}"><span class="{{ sk_lbl }}">{{ trans(key="skills_col_evidence", lang=lang) }}</span><a class="hover:underline" href="{{ sk_base }}#experience">{{ trans(key="skills_client_work", lang=lang) }}</a></td>
+      </tr>
+      {%- endif %}
+      {%- endfor %}{% endif %}
+      {#- Capabilities the client work shows, each with the public repositories that share it. #}
+      {%- if sk_xp %}{% for ckey, c in sk_xr.capabilities %}
+      {%- if c.term is defined %}{% set_global tnamed = ("|" ~ c.term ~ "|") in sk_named %}{% else %}{% set_global tnamed = false %}{% endif %}
+      {%- if ("|" ~ ckey ~ "|") in sk_caps and sk_n < sk_max and ((pass == "named") == tnamed) %}
+      {%- set_global sk_n = sk_n + 1 %}
+      {%- set_global xn = 0 %}{% set_global y0 = 0 %}{% set_global y1 = 0 %}
+      {%- for e in sk_xp.engagements %}{% set_global xhit = false %}{% for x in e.capabilities | default(value=[]) %}{% if x.key == ckey %}{% set_global xhit = true %}{% endif %}{% endfor %}
+      {%- if xhit %}{% set_global xn = xn + 1 %}{% if e.period %}{% set ya = e.period.from | truncate(length=4, end="") | int %}{% set yb = e.period.to | truncate(length=4, end="") | int %}{% if y0 == 0 or ya < y0 %}{% set_global y0 = ya %}{% endif %}{% if yb > y1 %}{% set_global y1 = yb %}{% endif %}{% endif %}{% endif %}{% endfor %}
+      {%- set_global th = sk_base ~ "#xp-cap-" ~ ckey %}{% for gt in sk_gl.terms %}{% if c.term is defined and gt.id == c.term %}{% set tp = get_page(path="glossary/" ~ gt.id ~ sk_xl ~ ".md") %}{% set_global th = tp.permalink %}{% endif %}{% endfor %}
+      <tr data-kind="capability" data-skill="{{ c.name }}" class="block border-b border-gray-200 py-3 dark:border-gray-700 md:table-row md:py-0">
+        <th scope="row" class="block font-medium text-gray-900 dark:text-white md:table-cell md:px-4 md:py-3"><a class="{{ sk_link }}" href="{{ th }}">{{ c["name" ~ sk_sfx] | default(value=c.name) }}</a></th>
+        <td class="{{ sk_td }}"><span class="{{ sk_lbl }}">{{ trans(key="skills_col_kind", lang=lang) }}</span>{{ <badge label={trans(key="skills_capabilities", lang=lang)} tone="green" /> }}</td>
+        <td class="{{ sk_tdn }}"><span class="{{ sk_lbl }}">{{ trans(key="skills_col_count", lang=lang) }}</span><a class="tabular hover:underline" href="{{ sk_base }}#xp-cap-{{ ckey }}">{{ trans(key="skills_n_engagements", lang=lang) | replace(from="{n}", to=xn ~ "") }}</a></td>
+        <td class="{{ sk_tdn }}"><span class="{{ sk_lbl }}">{{ trans(key="skills_col_span", lang=lang) }}</span><span class="tabular">{% if y0 > 0 %}<time datetime="{{ y0 }}">{{ y0 }}</time>{% if y1 > y0 %}–<time datetime="{{ y1 }}">{{ y1 }}</time>{% endif %}{% endif %}</span></td>
+        <td class="{{ sk_td }}"><span class="{{ sk_lbl }}">{{ trans(key="skills_col_evidence", lang=lang) }}</span><span>{% if sk_xp.public_work[ckey] is defined %}{% for repo in sk_xp.public_work[ckey] %}{% if loop.index <= 3 %}
+          {%- set_global eu = "" %}{% for p in sk_wsec.pages %}{% if p.extra.repo == repo %}{% set_global eu = p.permalink %}{% endif %}{% endfor -%}
+          {%- if eu %}<a class="hover:underline" href="{{ eu }}">{{ repo }}</a>{% else %}{{ repo }}{% endif %}{% if not loop.last and loop.index < 3 %}, {% endif %}{% endif %}{% endfor %}{% endif %}</span></td>
+      </tr>
+      {%- endif %}
+      {%- endfor %}{% endif %}
+      {%- endfor %}
+    </tbody>
+  </table>
+  <div class="mt-3 flex flex-wrap items-center justify-between gap-3">
+    <p class="text-xs {{ sk_muted }}">{{ trans(key="public_evidence_caption", lang=lang) | replace(from="{date}", to=sk_gh.generated_at | date(format="%Y-%m-%d")) }}</p>
+    {%- if sk_footer is defined and sk_footer %}
+    {{ <button label={trans(key="skills_view_all", lang=lang)} href={sk_base ~ "hire/#skills-title"} variant="ghost" icon_after="arrow-right" /> }}
+    {%- endif %}
+  </div>
+</div>

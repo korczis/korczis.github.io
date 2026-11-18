@@ -49,63 +49,18 @@
         {%- endif %}
       </div>
       {{ <card_head id="roles-title" title={trans(key="hire_roles_title", lang=lang)} lead={trans(key="hire_roles_lead", lang=lang) | replace(from="{years}", to=career ~ "")} /> }}
-      {#- Each role with its evidence, inferred from the role's own words (the English text, the same
-          role in every language): the glossary terms it names (a term, or an alias such as M&A),
-          and the capabilities whose keywords it matches (data/experience-rules.toml, a trailing *
-          matching any word that starts with it), which bring their glossary term and the public
-          work that shares them. The role then links those terms, the work pages that use them
-          (latest commit first) and the client work that shows the capability, anonymised. #}
+      {#- Each role with its evidence, inferred from the role's own words (partials/role-evidence.html,
+          the one inference the landing's role cards read too). Each role is a stable #role-<slug>,
+          the slug of its English heading, so ?role= links and /hire/#role-<slug> survive a translation. #}
       <ul class="space-y-4">
         {%- for r in roles %}
         {%- set ri = loop.index0 %}
-        {%- set rn = " " ~ (h.roles[ri] | lower | replace(from=":", to=" ") | replace(from=",", to=" ") | replace(from="&", to=" ") | replace(from="/", to=" ") | replace(from="(", to=" ") | replace(from=")", to=" ") | replace(from=".", to=" ") | replace(from="  ", to=" ") | replace(from="  ", to=" ")) ~ " " %}
-        {%- set_global rterms = "|" %}{% set_global rcaps = "|" %}{% set_global rrepos = "|" %}
-        {%- for gt in gl.terms %}
-        {%- set nn = " " ~ (gt.term | lower | replace(from="&", to=" ") | replace(from=".", to=" ")) ~ " " %}{% if rn is containing(pat=nn) and not ("|" ~ gt.id ~ "|") in rterms %}{% set_global rterms = rterms ~ gt.id ~ "|" %}{% endif %}
-        {%- for n in gt.aliases | default(value=[]) %}{% set nn = " " ~ (n | lower | replace(from="&", to=" ") | replace(from=".", to=" ")) ~ " " %}{% if rn is containing(pat=nn) and not ("|" ~ gt.id ~ "|") in rterms %}{% set_global rterms = rterms ~ gt.id ~ "|" %}{% endif %}{% endfor %}
-        {%- endfor %}
-        {%- for ckey, c in xr.capabilities %}
-        {%- set_global chit = false %}
-        {%- for k in c.keywords | default(value=[]) %}
-        {%- if k is ending_with(pat="*") %}{% if rn is containing(pat=" " ~ k | replace(from="*", to="")) %}{% set_global chit = true %}{% endif %}
-        {%- elif rn is containing(pat=" " ~ k ~ " ") %}{% set_global chit = true %}{% endif %}
-        {%- endfor %}
-        {%- if chit %}
-        {%- set_global rcaps = rcaps ~ ckey ~ "|" %}
-        {%- if c.term is defined and not ("|" ~ c.term ~ "|") in rterms %}{% set_global rterms = rterms ~ c.term ~ "|" %}{% endif %}
-        {%- if xp and xp.public_work[ckey] is defined %}{% for pr in xp.public_work[ckey] %}{% set_global rrepos = rrepos ~ pr ~ "|" %}{% endfor %}{% endif %}
-        {%- endif %}
-        {%- endfor %}
-        <li class="flex gap-3">
+        {%- set rslug = h.roles[ri] | split(pat=":") | first | slugify %}
+        <li id="role-{{ rslug }}" class="flex scroll-mt-24 gap-3">
           <span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary-100 text-primary-700 dark:bg-primary-900 dark:text-primary-300">{{ <icon name="check" class="h-4 w-4" /> }}</span>
           <div class="min-w-0">
             <p class="text-gray-700 dark:text-gray-300">{{ r }}</p>
-            <p data-hire-evidence="{{ ri }}" class="mt-2 flex flex-wrap items-center gap-1.5">
-              <span class="{{ muted }}">{{ trans(key="in_the_glossary", lang=lang) }}:</span>
-              {%- for gt in gl.terms %}{% if ("|" ~ gt.id ~ "|") in rterms %}
-              {%- set tp = get_page(path="glossary/" ~ gt.id ~ xl ~ ".md") %}
-              {%- set_global tcount = "" %}{% if gt.kind == "language" %}{% for l in ix.languages %}{% if l.name == gt.term or l.name in gt.aliases | default(value=[]) %}{% set_global tcount = l.repos ~ "" %}{% endif %}{% endfor %}{% endif %}
-              {{ <chip label={gt["term" ~ sfx] | default(value=gt.term)} href={tp.permalink} count={tcount} size="xs" /> }}
-              {%- endif %}{% endfor %}
-              {#- At most three work pages: first those that use one of the role's terms, then the
-                  public work that shares one of its capabilities; each pass latest commit first. #}
-              {%- set_global wn = 0 %}{% set_global wseen = "|" %}
-              {%- for pass in ["terms", "capabilities"] %}
-              {%- for p in wpages %}{% if wn < 3 and not ("|" ~ p.extra.repo ~ "|") in wseen %}
-              {%- set_global whit = false %}
-              {%- if pass == "terms" %}{% for t in p.extra.terms | default(value=[]) %}{% if ("|" ~ t ~ "|") in rterms %}{% set_global whit = true %}{% endif %}{% endfor %}
-              {%- else %}{% set_global whit = ("|" ~ p.extra.repo ~ "|") in rrepos %}{% endif %}
-              {%- if whit %}{% set_global wn = wn + 1 %}{% set_global wseen = wseen ~ p.extra.repo ~ "|" %}
-              {%- if wn == 1 %}<span class="{{ muted }} ms-1">{{ trans(key="recent_work", lang=lang) }}:</span>{% endif %}
-              {{ <chip label={p.title} href={p.permalink} size="xs" variant="primary" /> }}
-              {%- endif %}{% endif %}{% endfor %}
-              {%- endfor %}
-              {%- set_global cn = 0 %}
-              {%- for ckey, c in xr.capabilities %}{% if ("|" ~ ckey ~ "|") in rcaps and ("|" ~ ckey ~ "|") in xcaps %}{% set_global cn = cn + 1 %}
-              {%- if cn == 1 %}<span class="{{ muted }} ms-1">{{ trans(key="xp_eyebrow", lang=lang) }}:</span>{% endif %}
-              {{ <chip label={c["name" ~ sfx] | default(value=c.name)} href={base ~ "#xp-cap-" ~ ckey} size="xs" /> }}
-              {%- endif %}{% endfor %}
-            </p>
+            {%- set re_mode = "hire" %}{% include "partials/role-evidence.html" %}
           </div>
         </li>
         {%- endfor %}
@@ -123,19 +78,7 @@
 
     {% <card labelledby="terms-title"> %}
       {{ <card_head id="terms-title" title={trans(key="hire_terms_title", lang=lang)} /> }}
-      <dl class="divide-y divide-gray-200 text-sm dark:divide-gray-700">
-        <div class="flex justify-between gap-4 py-3"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="hire_engagement_label", lang=lang) }}</dt>
-          <dd class="text-end font-medium text-gray-900 dark:text-white">{% for e in h.engagement %}{{ trans(key="hire_engagement_" ~ e | replace(from="-", to="_"), lang=lang) }}{% if not loop.last %}, {% endif %}{% endfor %}</dd></div>
-        <div class="flex justify-between gap-4 py-3"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="hire_workplace_label", lang=lang) }}</dt>
-          <dd class="text-end font-medium text-gray-900 dark:text-white">{{ trans(key="hire_workplace_" ~ h.workplace | replace(from="-", to="_"), lang=lang) }}</dd></div>
-        <div class="flex justify-between gap-4 py-3"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="hire_regions_label", lang=lang) }}</dt>
-          <dd class="text-end font-medium text-gray-900 dark:text-white">{{ h["regions" ~ sfx] | default(value=h.regions) }}</dd></div>
-        {%- if h.rate_from is defined %}
-        <div class="flex justify-between gap-4 py-3"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="hire_rate_label", lang=lang) }}</dt>
-          <dd class="text-end"><span class="tabular block text-lg font-extrabold text-gray-900 dark:text-white">{{ trans(key="hire_rate_value", lang=lang) | replace(from="{rate}", to=h.rate_currency ~ " " ~ h.rate_from) | replace(from="{unit}", to=trans(key="hire_unit_" ~ h.rate_unit, lang=lang)) }}</span>
-            <span class="mt-1 block text-xs text-gray-600 dark:text-gray-400">{{ trans(key="hire_rate_note", lang=lang) }}</span></dd></div>
-        {%- endif %}
-      </dl>
+      {%- set terms_mode = "card" %}{% include "partials/hire-terms.html" %}
     {% </card> %}
   </div>
 
@@ -153,80 +96,11 @@
     <p class="mt-3 text-xs text-gray-600 dark:text-gray-400">{{ trans(key="hero_measured", lang=lang) | replace(from="{date}", to=as_of) }}</p>
   {% </card> %}
 
-  {#- Skills, measured: the visible twin of Person.knowsAbout (templates/partials/seo.html). Languages
-      of the original repositories with their count and the years their repositories were created
-      in (data/index.json languages_by_year), the technologies of the curated stacks with the
-      projects that use them, and the technologies of the client work with the engagements that
-      used them. A skill links to its glossary term (else to the list that shows it), its evidence
-      to the work page of that repository (else to the repository); a term the owner does not claim
-      (glossary claimed = false) is left out, and so is a language with no glossary term (the
-      repositories list shows every language). Flowbite Pro list groups in a dashboard card. #}
+  {#- Skills, measured: the visible twin of Person.knowsAbout (templates/partials/seo.html), one
+      table shared with the landing (partials/skills-table.html), every row here. #}
   {% <card labelledby="skills-title"> %}
-    {{ <card_head id="skills-title" title={trans(key="skills", lang=lang)} action={trans(key="every_language", lang=lang)} href={base ~ "repositories/"} /> }}
-    <div class="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
-      <div>
-        <h3 class="mb-2 text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400">{{ trans(key="languages", lang=lang) | safe }}</h3>
-        <ul class="divide-y divide-gray-200 dark:divide-gray-700">
-          {%- for l in ix.skills.languages %}
-          {%- set_global sterm = false %}{% for gt in gl.terms %}{% if gt.term == l.name or l.name in gt.aliases | default(value=[]) %}{% set_global sterm = gt %}{% endif %}{% endfor %}
-          {%- if sterm and (sterm.claimed is not defined or sterm.claimed) %}
-          {%- set_global y0 = 0 %}{% set_global y1 = 0 %}
-          {%- for y, m in ix.languages_by_year %}{% if m[l.name] is defined and m[l.name] > 0 %}{% set yi = y | int %}{% if y0 == 0 or yi < y0 %}{% set_global y0 = yi %}{% endif %}{% if yi > y1 %}{% set_global y1 = yi %}{% endif %}{% endif %}{% endfor %}
-          {%- if l.repos == 1 %}{% set form = "one" %}{% elif l.repos >= 2 and l.repos <= 4 %}{% set form = "few" %}{% else %}{% set form = "other" %}{% endif %}
-          <li class="py-2" data-skill="{{ l.name }}">
-            <div class="flex flex-wrap items-baseline justify-between gap-x-2">
-              {%- set lgp = get_page(path="glossary/" ~ sterm.id ~ xl ~ ".md") %}<a class="{{ link }}" href="{{ lgp.permalink }}">{{ l.name }}</a>
-              <span class="tabular {{ muted }}">{{ trans(key="xp_n_repositories__" ~ form, lang=lang) | replace(from="{n}", to=l.repos ~ "") }}{% if y0 > 0 %} · <time datetime="{{ y0 }}">{{ y0 }}</time>{% if y1 > y0 %}–<time datetime="{{ y1 }}">{{ y1 }}</time>{% endif %}{% endif %}</span>
-            </div>
-            <p class="{{ muted }} mt-0.5">{% for e in l.evidence %}
-              {%- set_global eu = e.url %}{% for p in wpages %}{% if p.extra.repo == e.name %}{% set_global eu = p.permalink %}{% endif %}{% endfor -%}
-              <a class="hover:underline" href="{{ eu }}">{{ e.name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>
-          </li>
-          {%- endif %}
-          {%- endfor %}
-        </ul>
-      </div>
-      <div>
-        <h3 class="mb-2 text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400">{{ trans(key="technologies", lang=lang) | safe }}</h3>
-        <ul class="divide-y divide-gray-200 dark:divide-gray-700">
-          {%- for t in ix.skills.technologies %}
-          {%- set_global sterm = false %}{% for gt in gl.terms %}{% if gt.term == t.name or t.name in gt.aliases | default(value=[]) %}{% set_global sterm = gt %}{% endif %}{% endfor %}
-          {%- if not sterm or sterm.claimed is not defined or sterm.claimed %}
-          {%- if sterm %}{% set thp = get_page(path="glossary/" ~ sterm.id ~ xl ~ ".md") %}{% set th = thp.permalink %}{% else %}{% set th = base ~ "projects/?project=" ~ t.evidence[0].repo %}{% endif %}
-          <li class="py-2" data-skill="{{ t.name }}">
-            <a class="{{ link }}" href="{{ th }}">{{ t.name }}</a>
-            <p class="{{ muted }} mt-0.5">{{ trans(key="used_in", lang=lang) }}: {% for e in t.evidence %}
-              {%- set_global eu = base ~ "projects/?project=" ~ e.repo %}{% for p in wpages %}{% if p.extra.repo == e.repo %}{% set_global eu = p.permalink %}{% endif %}{% endfor -%}
-              <a class="hover:underline" href="{{ eu }}">{{ e.name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>
-          </li>
-          {%- endif %}
-          {%- endfor %}
-        </ul>
-      </div>
-      {%- if xp %}
-      {%- set_global xtech = "" %}{% for e in xp.engagements %}{% for t in e.technologies | default(value=[]) %}{% if not ("|" ~ t ~ "|") in ("|" ~ xtech ~ "|") %}{% if xtech %}{% set_global xtech = xtech ~ "|" %}{% endif %}{% set_global xtech = xtech ~ t %}{% endif %}{% endfor %}{% endfor %}
-      {%- if xtech %}
-      <div>
-        <h3 class="mb-2 text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400">{{ trans(key="xp_eyebrow", lang=lang) }}</h3>
-        <ul class="divide-y divide-gray-200 dark:divide-gray-700">
-          {%- for t in xtech | split(pat="|") %}
-          {%- set_global sterm = false %}{% for gt in gl.terms %}{% if gt.term == t or t in gt.aliases | default(value=[]) %}{% set_global sterm = gt %}{% endif %}{% endfor %}
-          {%- if not sterm or sterm.claimed is not defined or sterm.claimed %}
-          {%- set_global xn = 0 %}{% for e in xp.engagements %}{% if t in e.technologies | default(value=[]) %}{% set_global xn = xn + 1 %}{% endif %}{% endfor %}
-          {%- if xn == 1 %}{% set form = "one" %}{% elif xn >= 2 and xn <= 4 %}{% set form = "few" %}{% else %}{% set form = "other" %}{% endif %}
-          {%- if sterm %}{% set thp = get_page(path="glossary/" ~ sterm.id ~ xl ~ ".md") %}{% set th = thp.permalink %}{% else %}{% set th = base ~ "#experience" %}{% endif %}
-          <li class="flex flex-wrap items-baseline justify-between gap-x-2 py-2" data-skill="{{ t }}">
-            <a class="{{ link }}" href="{{ th }}">{{ t }}</a>
-            <span class="tabular {{ muted }}">{{ trans(key="xp_n_engagements__" ~ form, lang=lang) | replace(from="{n}", to=xn ~ "") }}</span>
-          </li>
-          {%- endif %}
-          {%- endfor %}
-        </ul>
-      </div>
-      {%- endif %}
-      {%- endif %}
-    </div>
-    <p class="mt-3 text-xs text-gray-600 dark:text-gray-400">{{ trans(key="hero_measured", lang=lang) | replace(from="{date}", to=as_of) }}</p>
+    {{ <card_head id="skills-title" title={trans(key="skills_title", lang=lang)} lead={trans(key="skills_lead", lang=lang)} action={trans(key="every_language", lang=lang)} href={base ~ "repositories/"} /> }}
+    {%- include "partials/skills-table.html" %}
   {% </card> %}
 
   <div class="grid grid-cols-1 gap-4 xl:grid-cols-2">

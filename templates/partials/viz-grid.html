@@ -9,6 +9,9 @@
     skillset and the graph with a card beside each) sets, before an include, viz_from and viz_to
     (1-based positions in the front-matter list) and viz_bare (no grid of its own: the cards join
     the page's grid). Order, kinds and sizes stay in front matter. -#}
+{#- A page may instead select by the ids its front matter declares (`id`): viz_ids = ["galaxy", ...]
+    renders those, in front-matter order. A declared id is also the visual's address (?viz=<id>,
+    ?<id>.<key>=) and its data island's name; without one it is viz-<position>-<kind>. -#}
 {%- if viz_from is defined %}{% set vfrom = viz_from %}{% else %}{% set vfrom = 1 %}{% endif -%}
 {%- if viz_to is defined %}{% set vto = viz_to %}{% else %}{% set vto = 99 %}{% endif -%}
 {%- if viz_bare is defined and viz_bare %}{% set vbare = true %}{% else %}{% set vbare = false %}{% endif -%}
@@ -21,14 +24,15 @@
 {%- set vcat = load_data(path="data/projects.toml") -%}
 {%- set vsfx = "" %}{% if lang is defined and lang != config.default_language %}{% set vsfx = "_" ~ lang %}{% endif -%}
 {%- if not vbare %}<div class="grid grid-cols-1 gap-4 xl:grid-cols-3">{% endif %}
-  {%- for v in vlist %}{% if loop.index >= vfrom and loop.index <= vto %}
-  {%- set id = "viz-" ~ loop.index ~ "-" ~ v.kind %}
+  {%- for v in vlist %}{% if (viz_ids is defined and v.id is defined and v.id in viz_ids) or (viz_ids is not defined and loop.index >= vfrom and loop.index <= vto) %}
+  {%- if v.id is defined %}{% set id = v.id %}{% else %}{% set id = "viz-" ~ loop.index ~ "-" ~ v.kind %}{% endif %}
   {%- if v.height == "sm" %}{% set h = "h-64" %}{% elif v.height == "lg" %}{% set h = "h-[28rem]" %}{% else %}{% set h = "h-80" %}{% endif %}
   {%- if v.span == 3 %}{% set sp = "xl:col-span-3" %}{% elif v.span == 2 %}{% set sp = "xl:col-span-2" %}{% else %}{% set sp = "" %}{% endif %}
   {% <card cls={sp ~ " print:hidden"} labelledby={id ~ "-title"}> %}
     {{ <card_head id={id ~ "-title"} title={trans(key=v.title, lang=lang)} lead={trans(key=v.lead, lang=lang)} /> }}
-    <div class="viz-box {{ h }}{% if v.tone is defined and v.tone == "night" %} overflow-hidden rounded-lg bg-gray-950 ring-1 ring-gray-800{% endif %}"{% if v.tone is defined %} data-tone="{{ v.tone }}"{% endif %} data-viz="{{ v.kind }}" data-source="{{ id }}-data" role="img" aria-label="{{ trans(key=v.lead, lang=lang) }}">{% if v.kind == "graph" or v.kind == "skillset" %}<div data-canvas class="h-full w-full"></div>{% endif %}</div>
+    <div class="viz-box {{ h }}{% if v.tone is defined and v.tone == "night" %} overflow-hidden rounded-lg bg-gray-950 ring-1 ring-gray-800{% endif %}"{% if v.tone is defined %} data-tone="{{ v.tone }}"{% endif %} data-viz="{{ v.kind }}" data-source="{{ id }}-data" role="img" aria-label="{{ trans(key=v.lead, lang=lang) }}">{% if v.kind == "graph" or v.kind == "skillset" or v.kind == "provenance" %}<div data-canvas class="h-full w-full"></div>{% endif %}</div>
     {%- include "partials/viz-list.html" %}
+    {%- if v.caption is defined %}<p class="mt-2 text-xs text-gray-600 dark:text-gray-400">{{ trans(key=v.caption, lang=lang) }}</p>{% endif %}
     <script type="application/json" id="{{ id }}-data">
       {%- if v.source == "github.contributions" %}{"calendar": {{ vgh.contributions | json_encode | safe }},
        "day_url": {% if config.extra.github %}{{ ("https://github.com/" ~ config.extra.github ~ "?tab=overview&from={date}&to={date}") | json_encode | safe }}{% else %}null{% endif %},
@@ -36,6 +40,9 @@
       {%- elif v.source == "github.languages" %}{{ vgh.languages | json_encode | safe }}
       {%- elif v.source == "index.languages" %}{#- [{name, repos, years: {"2012": n, ...}}]: each language with the repositories created in every year (index.languages_by_year), so a visual can scrub time; name and repos stay as they were. #}[
        {%- for l in vix.languages %}{"name": {{ l.name | json_encode | safe }}, "repos": {{ l.repos }}, "years": { {%- for y, m in vix.languages_by_year %}{{ y | json_encode | safe }}: {% if m[l.name] is defined %}{{ m[l.name] }}{% else %}0{% endif %}{% if not loop.last %}, {% endif %}{% endfor -%} }}{% if not loop.last %}, {% endif %}{% endfor %}]
+      {%- elif v.source == "index.counts" %}{#- How the repositories are counted: the listings of both forges, merged by name, then sorted (counts), and where the original ones live (hosts: on both forges, GitHub only, GitLab only, derived from repos[].hosts). -#}
+       {%- set_global vhb = 0 %}{% set_global vhg = 0 %}{% set_global vhl = 0 %}{% for r in vix.repos %}{% if r.hosts.github is defined and r.hosts.gitlab is defined %}{% set_global vhb = vhb + 1 %}{% elif r.hosts.github is defined %}{% set_global vhg = vhg + 1 %}{% else %}{% set_global vhl = vhl + 1 %}{% endif %}{% endfor -%}
+       {"counts": {{ vix.counts | json_encode | safe }}, "hosts": {"both": {{ vhb }}, "github": {{ vhg }}, "gitlab": {{ vhl }}}}
       {%- elif v.source == "index.years" %}{"years": {{ vix.languages_by_year | json_encode | safe }}, "languages": {{ vix.languages | json_encode | safe }}}
       {%- elif v.source == "index.repos" %}{"focus": {% if vfm.extra.category is defined %}{{ vfm.extra.category | json_encode | safe }}{% else %}null{% endif %}, "categories": { {%- for key, c in vcat.categories %}{{ key | json_encode | safe }}: {{ c["name" ~ vsfx] | json_encode | safe }}{% if not loop.last %}, {% endif %}{% endfor -%} },
        "recent": [{% for r in vrc.repos %}{{ r.name | json_encode | safe }}{% if not loop.last %}, {% endif %}{% endfor %}],

@@ -17,7 +17,7 @@ definition = "A static site generator in one Rust binary: Markdown and templates
 aliases = []
 reference = { title = "getzola.org", url = "https://www.getzola.org/documentation/getting-started/overview/" }
 pages = ["_index.md", "projects/ai.md", "projects/knowledge.md", "stack.md", "work/kompendium-epistemicke-anihilace.md", "work/prismatic-majordomus.md"]
-related = ["repository", "flowbite-pro", "alpine-js", "apache-echarts", "commit", "cytoscape-js", "elixir", "github-pages"]
+related = ["repository", "apache-echarts", "elixir", "flowbite-pro", "rust", "ai-agent", "alpine-js", "commit"]
 og_title = "Zola: glossary"
 og_image = "og/glossary-zola.png"
 keywords = ["Zola", "Technology", "Glossary", "Tomas Korcak"]

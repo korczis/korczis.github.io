@@ -299,3 +299,29 @@
   </td>
 </tr>
 {% endcomponent %}
+
+{#- A tenure, computed: the months between start and end ("YYYY-MM", or "YYYY" read as January),
+    (y2*12+m2)-(y1*12+m1), rendered as home_tenure ({y} yr {m} mo); abbreviations, so no plural
+    form is needed in any language. -#}
+{% component tenure(start: string, end: string, lang: string) %}
+{%- set ts = start | split(pat="-") %}{% set te = end | split(pat="-") -%}
+{%- if ts | length > 1 %}{% set tm1 = ts[1] | int %}{% else %}{% set tm1 = 1 %}{% endif -%}
+{%- if te | length > 1 %}{% set tm2 = te[1] | int %}{% else %}{% set tm2 = 1 %}{% endif -%}
+{%- set tmonths = ((te[0] | int) * 12 + tm2) - ((ts[0] | int) * 12 + tm1) -%}
+{%- if tmonths < 0 %}{% set tmonths = 0 %}{% endif -%}
+{{ trans(key="home_tenure", lang=lang) | replace(from="{y}", to=((tmonths - tmonths % 12) / 12) | round | int ~ "") | replace(from="{m}", to=(tmonths % 12) ~ "") }}
+{%- endcomponent %}
+
+{#- A card that is one link as a whole, with room for secondary links (Flowbite Pro
+    customer-logos/cards-with-description, the figure styled as social-proof/card-statistics): the
+    title's link is stretched over the card, so no anchor nests inside another, and the body's own
+    links sit above it (relative z-10). Hover, focus ring and Ctrl/Cmd-click are a real anchor's. -#}
+{% component evidence_card(href: string, title: string, id: string = "", eyebrow: string = "", figure: string = "", note: string = "", cls: string = "") %}
+<article {% if id %}id="{{ id }}" {% endif %}class="group relative flex min-w-0 scroll-mt-24 flex-col rounded-lg border border-gray-200 bg-white p-4 hover:bg-gray-50 focus-within:ring-4 focus-within:ring-primary-300 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus-within:ring-primary-800 sm:p-5{% if cls %} {{ cls }}{% endif %}">
+  {%- if eyebrow %}<p class="mb-1 text-xs font-medium uppercase tracking-wide text-gray-600 dark:text-gray-400">{{ eyebrow }}</p>{% endif %}
+  <h3 class="text-lg font-semibold leading-tight text-gray-900 dark:text-white"><a href="{{ href }}" class="after:absolute after:inset-0 after:rounded-lg focus:outline-none group-hover:underline">{{ title }}</a></h3>
+  {%- if figure %}<p class="tabular mt-3 text-3xl font-extrabold leading-none text-gray-900 dark:text-white">{{ figure }}</p>{% endif %}
+  {%- if note %}<p class="mt-2 text-sm text-gray-600 dark:text-gray-400">{{ note }}</p>{% endif %}
+  {%- if body is defined %}{{ body }}{% endif %}
+</article>
+{%- endcomponent %}
