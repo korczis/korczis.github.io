@@ -17,8 +17,12 @@
   <h3 class="mb-2 text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400">{{ trans(key="service_measured_tech", lang=lang) }}</h3>
   {%- endif %}
   <ul class="flex flex-wrap gap-2">
+    {#- The term page shows its evidence table only when public repositories use it (term.html);
+        otherwise the chip leads to the page itself, never to a missing anchor. #}
+    {%- set sek = load_data(path="data/skills.json") %}
     {%- for x in se.technologies %}{% set tp = get_page(path="glossary/" ~ x.id ~ ".md", lang=lang) %}
-    <li>{{ <chip label={tp.title} count={x.n ~ ""} href={tp.permalink ~ "#evidence-title"} /> }}</li>
+    {%- if sek.terms[x.id] is defined and sek.terms[x.id].counts.repos > 0 %}{% set th = tp.permalink ~ "#evidence-title" %}{% else %}{% set th = tp.permalink %}{% endif %}
+    <li>{{ <chip label={tp.title} count={x.n ~ ""} href={th} /> }}</li>
     {%- endfor %}
   </ul>
 {% </card> %}
