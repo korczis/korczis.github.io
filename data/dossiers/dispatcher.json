@@ -1,0 +1,71 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "dispatcher",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/dispatcher",
+    "commit": "f4747a1d371747163eb252be9042895f57417be2",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "package.json",
+      "src/messaging.ts",
+      "tree /",
+      "tree src/"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "library",
+  "summary": {
+    "en": "A small type-safe message dispatcher in TypeScript, aimed at passing messages between the parts of a Chrome extension. Message types, payloads and handlers are declared together and registered in a central registry.",
+    "cs": "Malý typově bezpečný dispečer zpráv v TypeScriptu určený pro předávání zpráv mezi částmi rozšíření pro Chrome. Typy zpráv, payloady a handlery se deklarují společně a registrují v centrálním registru."
+  },
+  "problem": {
+    "en": "Background workers, panels and content scripts in a browser extension exchange messages, and existing libraries are either heavy or have awkward APIs. Untyped message passing lets payload mismatches slip through.",
+    "cs": "Background worker, panely a content scripty v rozšíření prohlížeče si posílají zprávy a existující knihovny jsou buď těžké, nebo mají nepohodlné API. Netypované předávání zpráv nechá projít nesoulad payloadů."
+  },
+  "solution": {
+    "en": "createMessageAction binds a message type, a payload factory and a handler into one typed action; registerMessage puts it into the registry and handleMessage dispatches incoming messages to the right handler. registerHandledMessage adds extra arguments evaluated at dispatch time, and Result types model success and error.",
+    "cs": "createMessageAction spojí typ zprávy, továrnu na payload a handler do jedné typované akce; registerMessage ji vloží do registru a handleMessage doručí příchozí zprávu správnému handleru. registerHandledMessage přidá dodatečné argumenty vyhodnocované až při doručení a typy Result modelují úspěch a chybu."
+  },
+  "highlights": [
+    {
+      "en": "Generic types tie each message type to its payload and handler signature.",
+      "cs": "Generické typy svazují každý typ zprávy s jeho payloadem a signaturou handleru."
+    },
+    {
+      "en": "No runtime dependencies; only dev tooling in package.json.",
+      "cs": "Žádné runtime závislosti; package.json obsahuje jen vývojové nástroje."
+    },
+    {
+      "en": "Rollup build, Vitest tests, ESLint and Prettier, GitLab CI.",
+      "cs": "Build přes Rollup, testy ve Vitestu, ESLint a Prettier, GitLab CI."
+    },
+    {
+      "en": "Example messages for console logging and selector clicks.",
+      "cs": "Ukázkové zprávy pro logování do konzole a kliknutí na selektor."
+    }
+  ],
+  "stack": [
+    "TypeScript",
+    "Chrome Extensions API",
+    "Rollup",
+    "Vitest",
+    "ESLint",
+    "Prettier",
+    "GitLab CI"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  DEF[Message definition] --> CMA[createMessageAction]\n  CMA --> REG[Message registry]\n  PANEL[Panel or content script] --> SEND[runtime sendMessage]\n  SEND --> BG[Background worker]\n  BG --> HM[handleMessage]\n  HM --> REG\n  REG --> H[Typed handler]",
+    "caption": {
+      "en": "Messages are defined once, registered centrally and dispatched to typed handlers.",
+      "cs": "Zprávy se definují jednou, registrují centrálně a doručují typovaným handlerům."
+    }
+  },
+  "related": [
+    "apollo-crawler-extension",
+    "microcrawler-browser",
+    "ts-logger"
+  ],
+  "confidence": "high"
+}

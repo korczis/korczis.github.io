@@ -1,0 +1,77 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "magic",
+  "sources": {
+    "github": "https://github.com/korczis/magic",
+    "gitlab": "https://gitlab.com/korczis/magic",
+    "commit": "73c76c23eb58ddfaa484f40e4b800f12b31d0a50",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "Cargo.toml",
+      ".gitmodules",
+      ".travis.yml",
+      "hackrf/Cargo.toml",
+      "sdr/Cargo.toml",
+      "data/kernels/matvec.cl"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "experiment",
+  "summary": {
+    "en": "A Rust workspace for software-defined radio work: wrappers for HackRF and RTL-SDR devices, a shared SDR layer, OpenCL math kernels and Elixir bindings through Rustler. The README documents a hackrf CLI that lists, inspects and resets devices and prints JSON.",
+    "cs": "Rustový workspace pro práci se softwarově definovaným rádiem: obaly pro zařízení HackRF a RTL-SDR, sdílená SDR vrstva, matematické kernely v OpenCL a napojení na Elixir přes Rustler. README popisuje CLI hackrf, které vypisuje, zkoumá a resetuje zařízení a vrací JSON."
+  },
+  "problem": {
+    "en": "SDR hardware is driven through C libraries with no safe Rust or Elixir interface. Signal processing also needs fast vector math that a CPU loop alone does not give.",
+    "cs": "SDR hardware se ovládá přes C knihovny bez bezpečného rozhraní pro Rust nebo Elixir. Zpracování signálu navíc potřebuje rychlou vektorovou matematiku, kterou samotná smyčka na CPU nedá."
+  },
+  "solution": {
+    "en": "Separate -sys crates bind libhackrf and librtlsdr, safe crates (sdr_hackrf, sdr_rtl) wrap them, and an sdr crate combines both with sdr-shared types. OpenCL kernels for scalar, vector and matrix-vector operations sit in data/kernels, while math-rustler and sdr-rustler expose native code to Elixir; upstream libraries (rtl-sdr, hackrf, libusb, liquid-dsp, ocl) are git submodules.",
+    "cs": "Samostatné -sys crates vážou libhackrf a librtlsdr, bezpečné crates (sdr_hackrf, sdr_rtl) je obalují a crate sdr spojuje obojí se sdílenými typy ze sdr-shared. Kernely OpenCL pro skalární, vektorové a maticově-vektorové operace jsou v data/kernels, math-rustler a sdr-rustler zpřístupňují nativní kód Elixiru; upstreamové knihovny (rtl-sdr, hackrf, libusb, liquid-dsp, ocl) jsou git submoduly."
+  },
+  "highlights": [
+    {
+      "en": "Classic -sys plus safe-wrapper crate split for two radio devices.",
+      "cs": "Klasické rozdělení na -sys a bezpečný obal pro dvě rádiová zařízení."
+    },
+    {
+      "en": "hackrf CLI with info, list and reset subcommands emitting JSON.",
+      "cs": "CLI hackrf s podpříkazy info, list a reset s výstupem v JSONu."
+    },
+    {
+      "en": "OpenCL matvec kernel for GPU-side signal math.",
+      "cs": "OpenCL kernel matvec pro výpočty signálu na GPU."
+    },
+    {
+      "en": "Elixir bindings via Rustler and an Elm/Phoenix sdr-web module.",
+      "cs": "Napojení na Elixir přes Rustler a modul sdr-web v Elm/Phoenixu."
+    }
+  ],
+  "stack": [
+    "Rust",
+    "Elixir",
+    "Rustler",
+    "OpenCL",
+    "HackRF",
+    "RTL-SDR",
+    "libusb",
+    "liquid-dsp",
+    "Phoenix",
+    "Elm",
+    "Travis CI"
+  ],
+  "architecture": {
+    "mermaid": "flowchart TD\n  A[libhackrf] --> B[hackrf-sys]\n  C[librtlsdr] --> D[rtl-sys]\n  B --> E[sdr_hackrf]\n  D --> F[sdr_rtl]\n  E --> G[sdr crate]\n  F --> G\n  H[sdr-shared] --> G\n  G --> I[hackrf CLI]\n  J[OpenCL kernels] --> K[math-rust]\n  K --> L[math-rustler NIF]",
+    "caption": {
+      "en": "Device bindings, a shared SDR layer, OpenCL math and Elixir NIFs in one workspace.",
+      "cs": "Vazby na zařízení, sdílená SDR vrstva, OpenCL matematika a Elixir NIF v jednom workspace."
+    }
+  },
+  "related": [
+    "rustler-test",
+    "rustler_mix",
+    "streamflow"
+  ],
+  "confidence": "medium"
+}

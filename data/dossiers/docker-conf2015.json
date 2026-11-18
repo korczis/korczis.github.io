@@ -1,0 +1,64 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "docker-conf2015",
+  "sources": {
+    "github": "https://github.com/korczis/docker-conf2015",
+    "gitlab": "https://gitlab.com/korczis/docker-conf2015",
+    "commit": "39a3f7b8dd29ff59f71fb2425266ffe4aed52533",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "Dockerfile",
+      "recursive tree",
+      "src/index.js"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "experiment",
+  "summary": {
+    "en": "A conference demo container: a hello-world Express app on CentOS 6, served on port 8080. The README walks through build, run, log inspection and a curl check.",
+    "cs": "Demo kontejner pro konferenci: hello-world aplikace v Expressu na CentOS 6, servírovaná na portu 8080. README provede buildem, spuštěním, kontrolou logů a ověřením přes curl."
+  },
+  "problem": {
+    "en": "A talk needed a minimal, repeatable example of packaging a Node.js service as a Docker image.",
+    "cs": "Přednáška potřebovala minimální a opakovatelný příklad, jak zabalit Node.js službu do Docker image."
+  },
+  "solution": {
+    "en": "The Dockerfile enables EPEL on CentOS 6, installs npm, copies the source, runs npm install and starts node /src/index.js. The app answers every GET / with a plain text greeting.",
+    "cs": "Dockerfile na CentOS 6 zapne EPEL, nainstaluje npm, zkopíruje zdrojáky, spustí npm install a nastartuje node /src/index.js. Aplikace na každé GET / odpoví textovým pozdravem."
+  },
+  "highlights": [
+    {
+      "en": "Complete build, run, logs and curl walkthrough in the README",
+      "cs": "Kompletní postup build, run, logy a curl v README"
+    },
+    {
+      "en": "Twelve-line Express server",
+      "cs": "Express server na dvanácti řádcích"
+    },
+    {
+      "en": "Port mapping from 8080 inside to a host port",
+      "cs": "Mapování portu 8080 z kontejneru na hostitele"
+    }
+  ],
+  "stack": [
+    "Docker",
+    "CentOS",
+    "Node.js",
+    "Express",
+    "npm"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[CentOS 6] --> B[EPEL and npm]\n  B --> C[Copy src]\n  C --> D[npm install]\n  D --> E[node index.js]\n  E --> F[Port 8080]\n  F --> G[curl check]",
+    "caption": {
+      "en": "Image build steps and the request path of the demo.",
+      "cs": "Kroky buildu image a cesta požadavku v demu."
+    }
+  },
+  "related": [
+    "apollon",
+    "server-coreos",
+    "rest-hello-world-benchmark"
+  ],
+  "confidence": "high"
+}

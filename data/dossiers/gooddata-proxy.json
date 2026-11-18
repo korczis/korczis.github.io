@@ -1,0 +1,56 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "gooddata-proxy",
+  "sources": {
+    "github": "https://github.com/korczis/gooddata-proxy",
+    "gitlab": "https://gitlab.com/korczis/gooddata-proxy",
+    "commit": "a159b94a52c87bb69fe1ae08290bf106195c3e3f",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "package.json (tree)",
+      "server.babel.js (tree)"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "experiment",
+  "summary": {
+    "en": "A JavaScript project built on a React hot-reload boilerplate with a Babel dev server, Webpack config and a src app. The README is the upstream boilerplate text; the repository name indicates it was adapted toward proxying a BI platform frontend.",
+    "cs": "JavaScriptový projekt postavený na React hot-reload boilerplate s Babel dev serverem, Webpack configem a src aplikací. README je převzatý text boilerplate; název repa naznačuje adaptaci směrem k proxy frontendu BI platformy."
+  },
+  "problem": {
+    "en": "Iterating on a BI platform frontend benefits from live-reloading React components and a local dev proxy, rather than full page reloads.",
+    "cs": "Vývoj frontendu BI platformy těží z živě přenačítaných React komponent a lokální dev proxy namísto plných reloadů stránky."
+  },
+  "solution": {
+    "en": "The project wires a Babel-transpiled Node dev server, Webpack and react-hot-loader for live editing, with a static directory served alongside. Its own purpose beyond the boilerplate is only implied by the name.",
+    "cs": "Projekt propojuje Babel-transpilovaný Node dev server, Webpack a react-hot-loader pro živou editaci, se statickým adresářem servírovaným vedle. Vlastní účel nad rámec boilerplate je naznačen jen názvem."
+  },
+  "highlights": [
+    {
+      "en": "React hot-loading dev setup with a Babel Node server and Webpack.",
+      "cs": "React hot-loading vývojové prostředí s Babel Node serverem a Webpackem."
+    },
+    {
+      "en": "README is the upstream boilerplate; the proxy intent is inferred from the name.",
+      "cs": "README je převzatý boilerplate; proxy záměr je odvozen z názvu."
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "React",
+    "Webpack",
+    "Babel"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[Browser] --> B[Dev server]\n  B --> C[Webpack bundle]\n  C --> D[React app]\n  B --> E[Backend proxy]\n  E --> F[BI platform]",
+    "caption": {
+      "en": "A Babel dev server bundles a React app with Webpack and proxies calls to a backend platform.",
+      "cs": "Babel dev server sestavuje React aplikaci Webpackem a přeposílá volání na backendovou platformu."
+    }
+  },
+  "related": [
+    "gooddata-fs"
+  ],
+  "confidence": "medium"
+}

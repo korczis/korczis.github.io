@@ -1,0 +1,52 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "jetel-modules",
+  "sources": {
+    "github": "https://github.com/korczis/jetel-modules",
+    "gitlab": "https://gitlab.com/korczis/jetel-modules",
+    "commit": "bf28dfdd9b2e32101e757ed28d188da9a50785b7",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "modules.json"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "config",
+  "summary": {
+    "en": "Optional modules for the jetel ETL tool, carried as a single modules.json alongside a README and LICENSE. It is a configuration/registry file rather than executable code.",
+    "cs": "Volitelné moduly pro ETL nástroj jetel, nesené jako jediný modules.json vedle README a LICENSE. Jde o konfigurační/registrační soubor, ne o spustitelný kód."
+  },
+  "problem": {
+    "en": "An ETL tool needs an external list of optional data-source modules so the core can stay small and the catalogue can grow independently.",
+    "cs": "ETL nástroj potřebuje externí seznam volitelných modulů datových zdrojů, aby jádro zůstalo malé a katalog mohl růst nezávisle."
+  },
+  "solution": {
+    "en": "The repository holds a modules.json describing additional jetel modules, separate from the main tool. Its contents define the optional catalogue.",
+    "cs": "Repo obsahuje modules.json popisující další jetel moduly, oddělený od hlavního nástroje. Jeho obsah definuje volitelný katalog."
+  },
+  "highlights": [
+    {
+      "en": "Single modules.json registry for optional jetel sources.",
+      "cs": "Jediný modules.json registr volitelných jetel zdrojů."
+    },
+    {
+      "en": "Data/config only, no executable code.",
+      "cs": "Jen data/konfigurace, žádný spustitelný kód."
+    }
+  ],
+  "stack": [
+    "JSON"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[jetel core] --> B[modules.json]\n  B --> C[Optional modules]\n  C --> A\n  D[README] -.-> B",
+    "caption": {
+      "en": "A JSON registry lists optional modules the core ETL tool can load.",
+      "cs": "JSON registr vypisuje volitelné moduly, které může jádro ETL nástroje načíst."
+    }
+  },
+  "related": [
+    "jetel"
+  ],
+  "confidence": "low"
+}

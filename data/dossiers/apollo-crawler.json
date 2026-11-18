@@ -1,0 +1,65 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "apollo-crawler",
+  "sources": {
+    "github": "https://github.com/korczis/apollo-crawler",
+    "gitlab": "https://gitlab.com/korczis/apollo-crawler",
+    "commit": "6945e2409f0f18fa03c5d7acaa5bef1779f6ba2c",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md (master)",
+      "recursive tree (legacy branch)"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "library",
+  "summary": {
+    "en": "An early Ruby web-crawling framework, now cancelled and superseded by microcrawler. The default branch holds only a notice; the old sources live on a legacy branch with agents, caches, crawlers, fetchers and formatters.",
+    "cs": "Raný framework pro crawling webu v Ruby, dnes zrušený a nahrazený projektem microcrawler. Výchozí větev obsahuje jen oznámení; staré zdrojáky leží na větvi legacy s agenty, cache, crawlery, fetchery a formattery."
+  },
+  "problem": {
+    "en": "Scraping structured data from many sites needs reusable pieces for fetching, caching, parsing per site and output formatting, plus a way to distribute the work.",
+    "cs": "Získávání strukturovaných dat z mnoha webů potřebuje znovupoužitelné části pro stahování, cache, parsování pro jednotlivé weby a formátování výstupu a také způsob, jak práci rozdělit."
+  },
+  "solution": {
+    "en": "On the legacy branch, per-site crawler classes extend a base crawler, fetchers range from simple to smart, and caches have memory, Memcached, MongoDB, SQLite and null backends. Agents for crawling, fetching and domain handling exchange messages over AMQP, and output goes through JSON, plain or table formatters. Details beyond the file layout were not read.",
+    "cs": "Na větvi legacy rozšiřují třídy crawlerů pro jednotlivé weby základní crawler, fetchery sahají od jednoduchého po chytrý a cache mají backendy pro paměť, Memcached, MongoDB, SQLite i nulovou cache. Agenti pro crawling, stahování a práci s doménami si vyměňují zprávy přes AMQP a výstup jde přes formattery JSON, plain nebo tabulku. Detaily nad rámec struktury souborů čteny nebyly."
+  },
+  "highlights": [
+    {
+      "en": "Superseded by microcrawler, as stated in the README",
+      "cs": "Nahrazen projektem microcrawler, jak uvádí README"
+    },
+    {
+      "en": "Pluggable cache layer with five backends",
+      "cs": "Zásuvná cache vrstva s pěti backendy"
+    },
+    {
+      "en": "AMQP-connected agents for distributed crawling",
+      "cs": "Agenti propojení přes AMQP pro distribuovaný crawling"
+    }
+  ],
+  "stack": [
+    "Ruby",
+    "AMQP",
+    "MongoDB",
+    "Mongoid",
+    "Memcached",
+    "SQLite"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[CLI] --> B[Crawler agent]\n  B --> C[Fetcher]\n  C --> D[Cache backends]\n  B --> E[Site crawlers]\n  E --> F[Formatters]\n  B --> G[AMQP exchange]\n  G --> H[Domainer agent]",
+    "caption": {
+      "en": "Component layout of the legacy branch, inferred from its file tree.",
+      "cs": "Rozložení komponent na větvi legacy odvozené ze stromu souborů."
+    }
+  },
+  "related": [
+    "microcrawler",
+    "apollo-crawler-extension",
+    "apollocrawler.com",
+    "ApolloCrawler-github-io",
+    "apollo-schemas"
+  ],
+  "confidence": "low"
+}

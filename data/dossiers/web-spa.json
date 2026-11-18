@@ -1,0 +1,70 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "web-spa",
+  "sources": {
+    "github": "https://github.com/korczis/web-spa",
+    "gitlab": "https://gitlab.com/korczis/web-spa",
+    "commit": "0e8d684fbd8c91b9c745c75c757517821fc24a3a",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "mix.exs",
+      "Dockerfile",
+      ".travis.yml",
+      "elm-package.json"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "app",
+  "summary": {
+    "en": "A starter for single-page applications written in Elm with an Elixir/Phoenix backend. It ships OAuth sign-in for several providers, Bootstrap UI pieces, Google Maps and a Phoenix WebSocket.",
+    "cs": "Startér pro jednostránkové aplikace v Elmu s Elixir/Phoenix backendem. Obsahuje OAuth přihlášení přes několik poskytovatelů, prvky Bootstrapu, Google Maps a WebSocket Phoenixu."
+  },
+  "problem": {
+    "en": "Every new web idea needed the same groundwork: a typed front end, social login, routing and a realtime channel. Rebuilding it per project was slow.",
+    "cs": "Každý nový webový nápad potřeboval stejný základ: typovaný frontend, přihlášení přes sociální sítě, routování a realtime kanál. Stavět ho pro každý projekt znovu bylo pomalé."
+  },
+  "solution": {
+    "en": "Phoenix 1.2 serves the Elm app built with Webpack and Bower assets; Ueberauth strategies cover GitHub, Google, Facebook, LinkedIn and Twitter. The README tracks done and planned features as a checklist, and a Dockerfile builds an Alpine image with Erlang and Elixir.",
+    "cs": "Phoenix 1.2 servíruje Elm aplikaci sestavenou Webpackem a assety z Boweru; strategie Ueberauth pokrývají GitHub, Google, Facebook, LinkedIn a Twitter. README vede hotové a plánované funkce jako checklist a Dockerfile staví Alpine image s Erlangem a Elixirem."
+  },
+  "highlights": [
+    {
+      "en": "Five OAuth providers wired through Ueberauth.",
+      "cs": "Pět OAuth poskytovatelů napojených přes Ueberauth."
+    },
+    {
+      "en": "Elm front end compiled by Webpack inside a Phoenix project.",
+      "cs": "Elm frontend kompilovaný Webpackem uvnitř Phoenix projektu."
+    },
+    {
+      "en": "Self-built Alpine Docker image with a pinned Elixir release candidate.",
+      "cs": "Vlastní Alpine Docker image s pevně danou RC verzí Elixiru."
+    }
+  ],
+  "stack": [
+    "Elixir",
+    "Phoenix",
+    "Elm",
+    "Ueberauth",
+    "Bootstrap",
+    "Webpack",
+    "Bower",
+    "Docker",
+    "Travis CI"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[Browser] --> B[Elm SPA]\n  B --> C[Phoenix router]\n  C --> D[Ueberauth providers]\n  C --> E[Phoenix WebSocket]\n  B --> F[Google Maps]\n  G[Webpack] --> B",
+    "caption": {
+      "en": "Elm front end on Phoenix with OAuth and a realtime channel.",
+      "cs": "Elm frontend nad Phoenixem s OAuth a realtime kanálem."
+    }
+  },
+  "related": [
+    "the-scratch",
+    "mapoffacts",
+    "zaas",
+    "microscratch"
+  ],
+  "confidence": "medium"
+}

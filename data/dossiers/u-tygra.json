@@ -1,0 +1,68 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "u-tygra",
+  "sources": {
+    "github": "https://github.com/korczis/u-tygra",
+    "gitlab": "https://gitlab.com/korczis/u-tygra",
+    "commit": "4a935f5dc19611b14fc7a6bfc24f9706e8c084e4",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "index.html",
+      "package.json",
+      "config.toml",
+      "CHANGELOG.md",
+      "top-level tree",
+      "data/",
+      "content/"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "site",
+  "summary": {
+    "en": "A small static website for a Czech pub with pages for the food menu, the drinks menu and bottled and draught beers. The GitLab repository holds the Zola source built on an open-source Tailwind theme, and the GitHub repository holds the built output. Beer data is kept in a JSON file.",
+    "cs": "Malý statický web pro českou hospodu se stránkami jídelního a nápojového lístku a lahvových a točených piv. Repozitář na GitLabu obsahuje zdroj v Zole postavený na open-source tématu s Tailwindem, repozitář na GitHubu hotový výstup. Data o pivech jsou v JSON souboru."
+  },
+  "problem": {
+    "en": "A small venue needs a cheap, low-maintenance web presence where menus and the beer list can be updated without a CMS or server.",
+    "cs": "Malý podnik potřebuje levnou a nenáročnou webovou prezentaci, kde jde aktualizovat lístky a nabídku piv bez CMS a bez serveru."
+  },
+  "solution": {
+    "en": "Zola renders Czech pages from Markdown content and a beer data file, with Tailwind CSS 3 and Flowbite for components and Alpine.js for interactivity. PapaParse is loaded on the pages, suggesting tabular data parsed in the browser. The site produces an Atom feed, sitemap and web manifest.",
+    "cs": "Zola vyrenderuje české stránky z markdownového obsahu a datového souboru s pivy; komponenty dodává Tailwind CSS 3 a Flowbite, interaktivitu Alpine.js. Stránky načítají PapaParse, což naznačuje parsování tabulkových dat v prohlížeči. Web generuje Atom feed, sitemapu a web manifest."
+  },
+  "highlights": [
+    {
+      "en": "Static Zola site with source on GitLab and built output on GitHub.",
+      "cs": "Statický web v Zole, zdroj na GitLabu a hotový výstup na GitHubu."
+    },
+    {
+      "en": "Menus and beer list driven by content files and JSON data.",
+      "cs": "Lístky a nabídka piv řízené obsahovými soubory a JSON daty."
+    },
+    {
+      "en": "Feed, sitemap and installable web manifest included.",
+      "cs": "Součástí je feed, sitemapa a instalovatelný web manifest."
+    }
+  ],
+  "stack": [
+    "Zola",
+    "Tailwind CSS",
+    "Flowbite",
+    "Alpine.js",
+    "PapaParse",
+    "GitHub Pages"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Content[Menu pages] --> Zola[Zola build]\n  Beers[beers.json] --> Zola\n  Theme[Tailwind theme] --> Zola\n  Zola --> Out[Built site]\n  Out --> Pages[GitHub Pages]\n  Pages --> Visitor[Visitor]",
+    "caption": {
+      "en": "Content and beer data are rendered by Zola into a static site published from the GitHub repository.",
+      "cs": "Obsah a data o pivech Zola vyrenderuje do statického webu publikovaného z repozitáře na GitHubu."
+    }
+  },
+  "related": [
+    "astronomists",
+    "korczis.github.io"
+  ],
+  "confidence": "medium"
+}

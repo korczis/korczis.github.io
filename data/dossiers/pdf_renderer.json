@@ -1,0 +1,71 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "pdf_renderer",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/pdf_renderer",
+    "commit": "5cea0e5e023a69d7872688dc20acf685b2025a54",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "pyproject.toml",
+      "documents/tasks.py",
+      "tree /"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "service",
+  "summary": {
+    "en": "A Django REST service written as a take-home engineering assignment. It accepts uploaded PDFs, renders every page to a PNG in a background worker and serves the status and the rendered pages over a small REST API.",
+    "cs": "REST služba v Djangu napsaná jako domácí zadání při pohovoru. Přijímá nahrané PDF, v pracovním procesu na pozadí převede každou stránku na PNG a přes malé REST API vrací stav i vyrenderované stránky."
+  },
+  "problem": {
+    "en": "Rendering multi-page PDFs is slow and CPU-heavy, so doing it inside the request cycle blocks the API and does not scale. Pages also have to be normalised to fit a 1200 x 1600 pixel box.",
+    "cs": "Renderování vícestránkových PDF je pomalé a náročné na CPU, takže v rámci požadavku blokuje API a neškáluje. Stránky navíc musí být normalizované, aby se vešly do rámečku 1200 x 1600 pixelů."
+  },
+  "solution": {
+    "en": "POST /documents stores the upload and enqueues a Dramatiq actor; the actor converts pages with pdf2image at 300 DPI and size 1200 x 1600 and saves them. GET /documents/<id> reports processing or done with the page count, and GET /documents/<id>/pages/<n> returns the PNG. PostgreSQL holds state, RabbitMQ carries the jobs, and Docker Compose starts the whole stack.",
+    "cs": "POST /documents uloží nahraný soubor a zařadí do fronty actor Dramatiq; ten převede stránky přes pdf2image při 300 DPI a velikosti 1200 x 1600 a uloží je. GET /documents/<id> vrací stav processing nebo done s počtem stránek a GET /documents/<id>/pages/<n> vrací PNG. Stav drží PostgreSQL, úlohy nese RabbitMQ a celý stack spustí Docker Compose."
+  },
+  "highlights": [
+    {
+      "en": "Asynchronous rendering offloaded to Dramatiq workers.",
+      "cs": "Asynchronní renderování přesunuté na workery Dramatiq."
+    },
+    {
+      "en": "OpenAPI description via drf-yasg (swagger.json committed).",
+      "cs": "Popis OpenAPI přes drf-yasg (swagger.json je v repozitáři)."
+    },
+    {
+      "en": "Dockerfile, docker-compose and GitLab CI included.",
+      "cs": "Součástí je Dockerfile, docker-compose a GitLab CI."
+    },
+    {
+      "en": "A set of sample PDFs in data/ for manual testing.",
+      "cs": "Sada vzorových PDF ve složce data/ pro ruční testování."
+    }
+  ],
+  "stack": [
+    "Python",
+    "Django",
+    "Django REST Framework",
+    "Dramatiq",
+    "RabbitMQ",
+    "PostgreSQL",
+    "pdf2image",
+    "Poppler",
+    "Docker",
+    "Poetry"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  C[Client] --> UP[POST documents]\n  UP --> DB[(PostgreSQL)]\n  UP --> Q[RabbitMQ queue]\n  Q --> W[Dramatiq actor]\n  W --> R[pdf2image render]\n  R --> PNG[Page PNGs]\n  W --> DB\n  C --> ST[GET status]\n  ST --> DB\n  C --> PG[GET page]\n  PG --> PNG",
+    "caption": {
+      "en": "Uploads are queued, rendered by a worker and read back through status and page endpoints.",
+      "cs": "Nahrané soubory jdou do fronty, vyrenderuje je worker a zpět se čtou přes endpointy stavu a stránek."
+    }
+  },
+  "related": [
+    "job-processor"
+  ],
+  "confidence": "high"
+}

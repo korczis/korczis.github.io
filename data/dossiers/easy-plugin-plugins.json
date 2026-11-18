@@ -1,0 +1,52 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "easy-plugin-plugins",
+  "sources": {
+    "github": "https://github.com/korczis/easy-plugin-plugins",
+    "gitlab": "https://gitlab.com/korczis/easy-plugin-plugins",
+    "commit": "80df988dafce4ac2abb8ebdc218e3216c64063a5",
+    "read_at": "2026-11-18",
+    "read": [
+      "Cargo.toml (tree)",
+      "build.rs (tree)",
+      "src (tree)"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "library",
+  "summary": {
+    "en": "A small Rust crate with a Cargo.toml, a build.rs and a src tree, apparently a set of compiler-plugin style extensions. There is no README, so the exact surface is unclear.",
+    "cs": "Malý Rust crate s Cargo.toml, build.rs a src stromem, podle názvu sada rozšíření ve stylu compiler pluginů. Chybí README, přesný rozsah je proto nejasný."
+  },
+  "problem": {
+    "en": "Extending the Rust compiler or a macro system cleanly needs a dedicated crate with a build step; this repository explores that shape.",
+    "cs": "Čisté rozšíření Rust kompilátoru nebo makro systému vyžaduje samostatný crate s build krokem; toto repo tuto podobu zkoumá."
+  },
+  "solution": {
+    "en": "The crate uses a build.rs build script alongside its source, consistent with plugin-style code generation at compile time. Without a README the behaviour has to be read from the source.",
+    "cs": "Crate používá build.rs build skript vedle zdrojů, což odpovídá generování kódu ve stylu pluginů při kompilaci. Bez README je nutné chování vyčíst ze zdrojů."
+  },
+  "highlights": [
+    {
+      "en": "Cargo crate with a build.rs compile-time step.",
+      "cs": "Cargo crate s build.rs krokem při kompilaci."
+    },
+    {
+      "en": "No README; purpose inferred from the plugin-oriented name and layout.",
+      "cs": "Bez README; účel odvozen z pluginově laděného názvu a rozvržení."
+    }
+  ],
+  "stack": [
+    "Rust",
+    "Cargo"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[Cargo.toml] --> B[build.rs]\n  B --> C[Generated code]\n  C --> D[src modules]\n  D --> E[Compiled crate]",
+    "caption": {
+      "en": "A build script feeds generated code into the crate sources at compile time.",
+      "cs": "Build skript vkládá generovaný kód do zdrojů crate při kompilaci."
+    }
+  },
+  "related": [],
+  "confidence": "low"
+}

@@ -1,0 +1,71 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "kuzu-ex",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/kuzu-ex",
+    "commit": "94a501da8eb51e16c33c89b214a7a9ca51fe6bf4",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "mix.exs",
+      "docker-compose.yml",
+      "lib/kuzu/client.ex",
+      "tree /",
+      "tree lib/"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "library",
+  "summary": {
+    "en": "An Elixir SDK for the KuzuDB graph database with a schema DSL and a composable query builder. It talks to KuzuDB over HTTP, through the Cypher endpoint of the KuzuDB Explorer container started by docker-compose.",
+    "cs": "SDK v Elixiru pro grafovou databázi KuzuDB se schématovým DSL a skládatelným query builderem. S KuzuDB komunikuje přes HTTP, a to přes Cypher endpoint kontejneru KuzuDB Explorer, který spouští docker-compose."
+  },
+  "problem": {
+    "en": "Using an embedded graph database from Elixir means writing raw Cypher strings with no schema, typing or composition. Graph analytics workloads need node and relationship schemas, bulk loading and reusable queries.",
+    "cs": "Použití embedded grafové databáze z Elixiru znamená psát holé řetězce v Cypheru bez schématu, typů a skládání. Grafová analytika potřebuje schémata uzlů a vztahů, hromadné nahrávání a znovupoužitelné dotazy."
+  },
+  "solution": {
+    "en": "A defgraph DSL declares nodes with typed fields and relationships with cardinality, and schema operations create them. Query modules (match, where, order, pagination, return, compiler) build Cypher, and the Tesla client posts it to /api/cypher with timeouts, structured errors and parameter substitution. The transaction helper only runs calls in sequence, as the code notes the HTTP API lacks transactions.",
+    "cs": "DSL defgraph deklaruje uzly s typovanými poli a vztahy s kardinalitou a schématové operace je vytvoří. Moduly dotazů (match, where, order, pagination, return, compiler) skládají Cypher a klient v Tesle ho posílá na /api/cypher s timeouty, strukturovanými chybami a dosazováním parametrů. Pomocník pro transakce volání jen řadí za sebe, protože HTTP API podle komentáře v kódu transakce nemá."
+  },
+  "highlights": [
+    {
+      "en": "Ecto-like DSL for graph schemas and queries.",
+      "cs": "DSL ve stylu Ecta pro grafová schémata a dotazy."
+    },
+    {
+      "en": "Typed error tuples for HTTP, query and connection failures.",
+      "cs": "Typované chybové n-tice pro chyby HTTP, dotazu a spojení."
+    },
+    {
+      "en": "API URL configurable through KUZU_API_URL or application env.",
+      "cs": "URL API lze nastavit přes KUZU_API_URL nebo konfiguraci aplikace."
+    },
+    {
+      "en": "README walks through a social-network analytics example schema.",
+      "cs": "README provádí ukázkovým schématem pro analytiku sociální sítě."
+    }
+  ],
+  "stack": [
+    "Elixir",
+    "KuzuDB",
+    "Cypher",
+    "Tesla",
+    "Jason",
+    "Docker Compose",
+    "Credo",
+    "GitLab CI"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  SCH[defgraph schema DSL] --> OPS[Schema operations]\n  QB[Query DSL] --> COMP[Cypher compiler]\n  OPS --> CL[Tesla client]\n  COMP --> CL\n  CL --> API[Explorer cypher endpoint]\n  API --> KZ[(KuzuDB)]\n  CL --> ERR[Typed errors]",
+    "caption": {
+      "en": "Schemas and queries compile to Cypher and go over HTTP to KuzuDB.",
+      "cs": "Schémata a dotazy se přeloží do Cypheru a jdou přes HTTP do KuzuDB."
+    }
+  },
+  "related": [
+    "rocksdb_indexer"
+  ],
+  "confidence": "medium"
+}

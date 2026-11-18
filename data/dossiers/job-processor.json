@@ -1,0 +1,72 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "job-processor",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/job-processor",
+    "commit": "6b5aae76a28a9d3836955393dad2defc25aeeeab",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "mix.exs",
+      "lib/job_processor.ex",
+      "tree /",
+      "tree lib/"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "service",
+  "summary": {
+    "en": "An Elixir HTTP service that takes a list of tasks with dependencies, orders them topologically and returns either the ordered list or a ready-to-run bash script. It is built on Plug and Cowboy without Phoenix.",
+    "cs": "HTTP služba v Elixiru, která přijme seznam úloh se závislostmi, seřadí je topologicky a vrátí buď seřazený seznam, nebo rovnou spustitelný bash skript. Stojí na Plugu a Cowboy bez Phoenixu."
+  },
+  "problem": {
+    "en": "Tasks that declare which other tasks they require must run in an order that respects every dependency, and cycles must be rejected. Doing this by hand is error-prone once the list grows.",
+    "cs": "Úlohy, které deklarují, na kterých jiných úlohách závisí, musí běžet v pořadí, které respektuje všechny závislosti, a cykly je třeba odmítnout. S rostoucím seznamem je ruční řazení náchylné k chybám."
+  },
+  "solution": {
+    "en": "Tasks become vertices and requirements become edges in an Erlang :digraph, and :digraph_utils.topsort/1 yields the execution order or signals a cycle. POST /process_jobs returns JSON with the ordered tasks and the script, POST /bash_script returns the script as plain text, and invalid input or cycles produce 400.",
+    "cs": "Úlohy se stanou vrcholy a požadavky hranami v Erlangovém :digraph a :digraph_utils.topsort/1 vrátí pořadí provádění nebo ohlásí cyklus. POST /process_jobs vrací JSON se seřazenými úlohami i skriptem, POST /bash_script vrací skript jako prostý text a neplatný vstup nebo cyklus skončí kódem 400."
+  },
+  "highlights": [
+    {
+      "en": "Uses the standard library graph module instead of a custom sort.",
+      "cs": "Využívá grafový modul ze standardní knihovny místo vlastního řazení."
+    },
+    {
+      "en": "Cycle detection mapped to a 400 response.",
+      "cs": "Detekce cyklů je namapovaná na odpověď 400."
+    },
+    {
+      "en": "Credo, Dialyzer, ExCoveralls, ExDoc and telemetry configured.",
+      "cs": "Nastavené Credo, Dialyzer, ExCoveralls, ExDoc a telemetrie."
+    },
+    {
+      "en": "README lists its own improvement backlog (web UI, Swagger, templating, Dockerfile).",
+      "cs": "README uvádí vlastní seznam vylepšení (webové UI, Swagger, šablonování, Dockerfile)."
+    }
+  ],
+  "stack": [
+    "Elixir",
+    "Erlang/OTP",
+    "Plug",
+    "Cowboy",
+    "Jason",
+    "ExDoc",
+    "Credo",
+    "Dialyzer",
+    "ExCoveralls",
+    "GitLab CI"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  REQ[POST tasks JSON] --> PARSE[Parse JSON]\n  PARSE --> DEPS[Build dependency list]\n  DEPS --> G[digraph]\n  G --> TS[topsort]\n  TS --> OK[Ordered tasks]\n  TS --> CYC[Cycle error 400]\n  OK --> SH[Generate bash script]\n  SH --> RES[JSON or text response]",
+    "caption": {
+      "en": "Tasks are turned into a graph, sorted and rendered as a bash script.",
+      "cs": "Úlohy se převedou na graf, seřadí a vykreslí jako bash skript."
+    }
+  },
+  "related": [
+    "pdf_renderer"
+  ],
+  "confidence": "high"
+}

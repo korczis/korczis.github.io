@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://korczis.github.io/schemas/dossier.schema.json",
+  "title": "A repository dossier, inferred from the repository's own files",
+  "description": "data/dossiers/<repo>.json, one per original public repository of data/index.json, checked by scripts/check-dossiers.mjs (rule project.dossiers-inferred). A dossier is inferred: an agent read the files named in sources.read at sources.commit on sources.read_at and wrote the problem, the solution, the stack and an architecture diagram, in English and Czech, with its confidence. It names no client, person or private source (rule project.nda-never-named); related names only other original repositories.",
+  "type": "object",
+  "required": ["schema", "repo", "sources", "provenance", "kind", "summary", "problem", "solution", "highlights", "stack", "architecture", "related", "confidence"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": { "enum": ["korczis-hub-dossier/v1"] },
+    "repo": { "type": "string", "pattern": "^[A-Za-z0-9._-]+$", "description": "The repository's name in data/index.json; the file is data/dossiers/<repo>.json." },
+    "sources": {
+      "type": "object",
+      "description": "Provenance: where and when the dossier was read. A dossier is re-mined when the repository's head moves past commit.",
+      "required": ["github", "gitlab", "commit", "read_at", "read"],
+      "additionalProperties": false,
+      "properties": {
+        "github": { "type": ["string", "null"], "pattern": "^https://github\\.com/korczis/[A-Za-z0-9._-]+$" },
+        "gitlab": { "type": ["string", "null"], "pattern": "^https://gitlab\\.com/korczis/[A-Za-z0-9._-]+$" },
+        "commit": { "type": "string", "pattern": "^[0-9a-f]{40}$", "description": "The head commit the files were read at." },
+        "read_at": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+        "read": { "type": "array", "items": { "type": "string", "minLength": 1 }, "description": "Repository-relative paths of the files read." }
+      }
+    },
+    "provenance": { "enum": ["inferred"], "description": "Every dossier is inferred and is labelled so wherever it is shown." },
+    "kind": { "enum": ["app", "cli", "config", "data", "docs", "experiment", "instrument", "kata", "library", "service", "site"] },
+    "summary": { "$ref": "#/$defs/text" },
+    "problem": { "$ref": "#/$defs/text" },
+    "solution": { "$ref": "#/$defs/text" },
+    "highlights": { "type": "array", "items": { "$ref": "#/$defs/text" }, "description": "At least one." },
+    "stack": { "type": "array", "items": { "type": "string", "minLength": 1 }, "description": "Public technology names." },
+    "architecture": {
+      "type": "object",
+      "required": ["mermaid", "caption"],
+      "additionalProperties": false,
+      "properties": {
+        "mermaid": { "type": "string", "pattern": "^flowchart (LR|TD)\\n", "description": "A Mermaid flowchart, LR or TD, of 4 to 12 nodes, with no HTML and no click, style, class or init directives." },
+        "caption": { "$ref": "#/$defs/text" }
+      }
+    },
+    "related": { "type": "array", "items": { "type": "string", "pattern": "^[A-Za-z0-9._-]+$" }, "description": "Other original repositories of data/index.json." },
+    "confidence": { "enum": ["low", "medium", "high"], "description": "How much of the repository the reader could verify." }
+  },
+  "$defs": {
+    "text": {
+      "type": "object",
+      "description": "The same text in every language of the site.",
+      "required": ["en", "cs"],
+      "additionalProperties": false,
+      "properties": {
+        "en": { "type": "string", "minLength": 1 },
+        "cs": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}

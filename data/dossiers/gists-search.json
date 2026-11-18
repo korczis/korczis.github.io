@@ -1,0 +1,66 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "gists-search",
+  "sources": {
+    "github": "https://github.com/korczis/gists-search",
+    "gitlab": null,
+    "commit": "cd2be398915e1b9d5b3bc8f147e4a7f3bba6f185",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "top-level tree",
+      "tools/"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "instrument",
+  "summary": {
+    "en": "A local mirror of every GitHub gist the owner has, with a pipeline that catalogues, enriches, chunks and indexes them for search. Most of the corpus is prose in Czech and English, mixed with code, configs, logs and data. The published site indexes metadata only, while full text stays in a local Meilisearch instance.",
+    "cs": "Lokální zrcadlo všech GitHub gistů autora s pipeline, která je katalogizuje, obohacuje, dělí na části a indexuje pro vyhledávání. Většina korpusu je text v češtině a angličtině, promíchaný s kódem, konfigurací, logy a daty. Publikovaný web indexuje jen metadata, plný text zůstává v lokálním Meilisearch."
+  },
+  "problem": {
+    "en": "Years of notes and snippets spread over many gists are hard to search, and most of them are secret. A public search page must not leak their content.",
+    "cs": "Roky poznámek a útržků rozházených po mnoha gistech se špatně prohledávají a většina z nich je tajná. Veřejná vyhledávací stránka přitom nesmí prozradit jejich obsah."
+  },
+  "solution": {
+    "en": "A fetch step pulls metadata from the GitHub API and gists are kept as git clones, from which a catalogue, enriched document feed and section chunks are built. Enrichment is deterministic and offline, classifying files by kind. Both feeds go into two Meilisearch indexes for local full-text search, while a metadata-only payload with MiniSearch is deployed to GitHub Pages.",
+    "cs": "Krok fetch stáhne metadata z GitHub API a gisty jsou uložené jako git klony, ze kterých vzniká katalog, obohacený proud dokumentů a části po sekcích. Obohacení je deterministické a offline a třídí soubory podle druhu. Oba proudy jdou do dvou indexů v Meilisearch pro lokální fulltext, zatímco na GitHub Pages jde jen payload s metadaty a MiniSearch."
+  },
+  "highlights": [
+    {
+      "en": "Strict split: public site has metadata only, full text stays local.",
+      "cs": "Striktní dělení: veřejný web má jen metadata, plný text zůstává lokálně."
+    },
+    {
+      "en": "Deterministic offline enrichment and section-level chunking.",
+      "cs": "Deterministické offline obohacení a dělení po sekcích."
+    },
+    {
+      "en": "Whole pipeline driven by just recipes, including drift and dirty-clone checks.",
+      "cs": "Celou pipeline řídí just recepty včetně kontroly driftu a lokálních změn v klonech."
+    }
+  ],
+  "stack": [
+    "Python",
+    "Shell",
+    "JavaScript",
+    "Meilisearch",
+    "MiniSearch",
+    "GitHub API",
+    "just",
+    "GitHub Pages"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Api[GitHub API] --> Meta[Metadata cache]\n  Clones[Gist clones] --> Docs[Enriched documents]\n  Meta --> Cat[Catalogue index]\n  Meta --> Docs\n  Docs --> Chunks[Section chunks]\n  Docs --> Meili[Local Meilisearch]\n  Chunks --> Meili\n  Meta --> Site[Metadata site]\n  Site --> Pages[GitHub Pages]",
+    "caption": {
+      "en": "Full text goes only into the local search engine; the public site receives metadata.",
+      "cs": "Plný text jde jen do lokálního vyhledávače; veřejný web dostane metadata."
+    }
+  },
+  "related": [
+    "llm",
+    "meili_rsex",
+    "korczis.github.io"
+  ],
+  "confidence": "high"
+}

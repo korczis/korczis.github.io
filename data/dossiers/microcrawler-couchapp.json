@@ -1,0 +1,72 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "microcrawler-couchapp",
+  "sources": {
+    "github": "https://github.com/korczis/microcrawler-couchapp",
+    "gitlab": "https://gitlab.com/korczis/microcrawler-couchapp",
+    "commit": "eeb897d72a0d58e4606d1bcf4ea4a7dbc1fce437",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "package.json",
+      "bower.json",
+      "Gruntfile.js",
+      "views/data-processors/map.js",
+      "views/recent-data/map.js",
+      "tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "app",
+  "summary": {
+    "en": "A CouchApp web UI for browsing microcrawler results stored in CouchDB, built with Ember.js and served directly from the database.",
+    "cs": "Webové UI ve formě CouchApp pro procházení výsledků microcrawleru uložených v CouchDB, postavené na Ember.js a servírované přímo z databáze."
+  },
+  "problem": {
+    "en": "Crawled records land in CouchDB, and inspecting them needed a lightweight UI without a separate application server.",
+    "cs": "Nacrawlované záznamy končí v CouchDB a na jejich prohlížení bylo potřeba lehké UI bez samostatného aplikačního serveru."
+  },
+  "solution": {
+    "en": "CouchDB map/reduce views index data documents by processor and by creation time, plus recent items. An Ember app under _attachments has data, queue and stream routes with Handlebars templates, assembled with Grunt and Bower and pushed with the couchapp tool.",
+    "cs": "Map/reduce view v CouchDB indexují datové dokumenty podle procesoru a podle času vytvoření, plus poslední položky. Ember aplikace v _attachments má routy data, queue a stream s Handlebars šablonami, sestavuje se Gruntem a Bowerem a nahrává nástrojem couchapp."
+  },
+  "highlights": [
+    {
+      "en": "data-processors view counts documents per processor with a map/reduce pair.",
+      "cs": "View data-processors počítá dokumenty na procesor dvojicí map/reduce."
+    },
+    {
+      "en": "Front end uses Ember, Ember Data, ember-couchdb-kit, Bootstrap and socket.io-client.",
+      "cs": "Frontend používá Ember, Ember Data, ember-couchdb-kit, Bootstrap a socket.io-client."
+    },
+    {
+      "en": "The README is still the upstream CouchApp example text.",
+      "cs": "README je pořád původní text ukázkové CouchApp."
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "CouchDB",
+    "CouchApp",
+    "Ember.js",
+    "Handlebars",
+    "Bootstrap",
+    "Grunt",
+    "Bower"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Crawler[microcrawler] --> Couch[(CouchDB)]\n  Couch --> Views[map reduce views]\n  Views --> App[Ember CouchApp]\n  App --> Data[data route]\n  App --> Queue[queue route]\n  App --> Stream[stream route]\n  Grunt[Grunt build] --> App",
+    "caption": {
+      "en": "Crawler output in CouchDB, indexed by views and browsed by an Ember app hosted in the same database.",
+      "cs": "Výstup crawleru v CouchDB, indexovaný přes view a prohlížený Ember aplikací hostovanou ve stejné databázi."
+    }
+  },
+  "related": [
+    "microcrawler",
+    "microcrawler-js",
+    "microcrawler-browser",
+    "apollo-schemas",
+    "apollo-crawler"
+  ],
+  "confidence": "medium"
+}

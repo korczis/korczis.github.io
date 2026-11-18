@@ -1,0 +1,53 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "data",
+  "sources": {
+    "github": "https://github.com/korczis/data",
+    "gitlab": "https://gitlab.com/korczis/data",
+    "commit": "419bc1e64e2aa8890e66089bf12f0065e1034618",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "codes (tree)",
+      "dicts (tree)",
+      "factbook (tree)"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "data",
+  "summary": {
+    "en": "A grab-bag repository of public reference data, organised into directories for codes, dictionaries, a world factbook, shapefiles and miscellaneous files. The README lists source links such as regional IP-to-geo delegation files and points to a related ESRI dataset framework.",
+    "cs": "Sběrné repo veřejných referenčních dat, uspořádané do adresářů pro kódy, slovníky, světový factbook, shapefile a různé soubory. README vypisuje odkazy na zdroje jako regionální IP-to-geo delegační soubory a odkazuje na související framework pro ESRI data."
+  },
+  "problem": {
+    "en": "Projects that reuse the same public reference data benefit from one place to keep codes, dictionaries and geo files together.",
+    "cs": "Projekty, které znovu používají stejná veřejná referenční data, těží z jednoho místa, kde drží kódy, slovníky a geo soubory pohromadě."
+  },
+  "solution": {
+    "en": "The repository collects such data by category and documents where each source comes from. It is a data store, not code.",
+    "cs": "Repo sbírá taková data podle kategorie a dokumentuje, odkud každý zdroj pochází. Jde o datové úložiště, ne o kód."
+  },
+  "highlights": [
+    {
+      "en": "Categorised public reference data (codes, dicts, factbook, shapefiles).",
+      "cs": "Kategorizovaná veřejná referenční data (kódy, slovníky, factbook, shapefile)."
+    },
+    {
+      "en": "README documents external source links including IP-to-geo delegation files.",
+      "cs": "README dokumentuje odkazy na externí zdroje včetně IP-to-geo delegačních souborů."
+    }
+  ],
+  "stack": [],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[Public sources] --> B[Download]\n  B --> C[Categorised folders]\n  C --> D[Consuming projects]",
+    "caption": {
+      "en": "Public sources are stored in categorised folders for consuming projects.",
+      "cs": "Veřejné zdroje jsou uloženy v kategorizovaných složkách pro konzumující projekty."
+    }
+  },
+  "related": [
+    "datascience",
+    "esri"
+  ],
+  "confidence": "low"
+}

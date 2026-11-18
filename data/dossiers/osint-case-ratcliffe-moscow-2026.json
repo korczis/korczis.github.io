@@ -1,0 +1,73 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "osint-case-ratcliffe-moscow-2026",
+  "sources": {
+    "github": "https://github.com/korczis/osint-case-ratcliffe-moscow-2026",
+    "gitlab": null,
+    "commit": "93ded3fc47300ef0836794e3b170687a1f84dbb6",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "top-level tree",
+      "repository languages"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "docs",
+  "summary": {
+    "en": "A living open-source intelligence assessment of a reported 2026 visit by a senior intelligence official, maintained with Claude Code skills and shell scripts. It is published as English and Czech briefs, PDFs and a full report, with a structured JSON mirror of the Markdown source. Apart from the case content, the repository is a reusable toolkit for running such assessments.",
+    "cs": "Živé OSINT hodnocení zprávy o návštěvě vysokého zpravodajského představitele v roce 2026, udržované pomocí skillů Claude Code a shellových skriptů. Vychází jako anglický a český brief, PDF a plná zpráva, se strukturovaným JSON zrcadlem markdownového zdroje. Kromě obsahu případu je repozitář znovupoužitelný nástroj pro podobná hodnocení."
+  },
+  "problem": {
+    "en": "Open-source assessments of fast-moving events mix commentary with evidence, rarely grade their sources and drift as new reports arrive. Keeping briefs, PDFs and structured data in sync by hand is error-prone.",
+    "cs": "OSINT hodnocení rychle se vyvíjejících událostí míchají komentáře s důkazy, málokdy hodnotí své zdroje a s každou novou zprávou se rozjíždějí. Ruční udržování briefů, PDF a strukturovaných dat v souladu je náchylné k chybám."
+  },
+  "solution": {
+    "en": "One update skill checks status, sweeps every open indicator through web search, GDELT and the Wayback Machine, traces sources to primaries, red-teams proposed changes and writes a new report section mirrored into JSON and HTML artifacts. Sources are graded on the Admiralty scale, judgments carry confidence with a reason, competing hypotheses are scored by inconsistencies, and negative results are logged. Hooks keep the data directory append-only and forbid history rewrites and reconnaissance tooling, and CI renders PDFs with WeasyPrint and deploys GitHub Pages.",
+    "cs": "Jeden update skill zkontroluje stav, projde každý otevřený indikátor přes webové hledání, GDELT a Wayback Machine, dohledá primární zdroje, nechá navržené změny projít red teamem a zapíše novou sekci zprávy zrcadlenou do JSON a HTML artefaktů. Zdroje se hodnotí na stupnici Admiralty, úsudky mají jistotu s odůvodněním, konkurenční hypotézy se bodují podle nesouladů a negativní výsledky se zapisují. Hooky drží adresář data jen pro připisování a zakazují přepis historie i průzkumné nástroje; CI renderuje PDF přes WeasyPrint a nasazuje GitHub Pages."
+  },
+  "highlights": [
+    {
+      "en": "Admiralty source grading, confidence rules and a minimal analysis of competing hypotheses.",
+      "cs": "Hodnocení zdrojů podle Admiralty, pravidla jistoty a minimální analýza konkurenčních hypotéz."
+    },
+    {
+      "en": "Subagents for indicator sweeping, source tracing and red-teaming with strict JSON contracts.",
+      "cs": "Subagenti pro procházení indikátorů, dohledávání zdrojů a red team s přísnými JSON kontrakty."
+    },
+    {
+      "en": "Guard hooks: append-only data, no hand-edited PDFs, no force-push, no reconnaissance against infrastructure.",
+      "cs": "Ochranné hooky: data jen pro připisování, žádné ručně upravené PDF, žádný force-push, žádný průzkum cizí infrastruktury."
+    },
+    {
+      "en": "Scaffold skill to start a new case with the same layout.",
+      "cs": "Skill pro založení nového případu se stejnou strukturou."
+    }
+  ],
+  "stack": [
+    "Claude Code",
+    "Python",
+    "Shell",
+    "just",
+    "jq",
+    "yq",
+    "WeasyPrint",
+    "GDELT",
+    "Wayback Machine",
+    "GitHub Actions",
+    "GitHub Pages"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Status[Case status] --> Sweep[Indicator sweep]\n  Sweep --> Trace[Source tracing]\n  Trace --> Red[Red team review]\n  Red --> Report[report.md section]\n  Report --> Json[data.json mirror]\n  Report --> Html[HTML artifacts]\n  Html --> Pdf[WeasyPrint PDFs]\n  Pdf --> Pages[GitHub Pages]",
+    "caption": {
+      "en": "One update cycle: sweep indicators, trace and challenge evidence, then sync the report into every published format.",
+      "cs": "Jeden cyklus aktualizace: projít indikátory, dohledat a zpochybnit důkazy a pak synchronizovat zprávu do všech publikovaných formátů."
+    }
+  },
+  "related": [
+    "vomaste.cz",
+    "data-atlas",
+    "gists-search"
+  ],
+  "confidence": "medium"
+}

@@ -1,0 +1,72 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "MinervaEye",
+  "sources": {
+    "github": "https://github.com/korczis/MinervaEye",
+    "gitlab": null,
+    "commit": "237a090fe53061ec0c345740c56b1cd51a7eb676",
+    "read_at": "2026-11-18",
+    "read": [
+      "repository description",
+      "tree",
+      "Minerva Eye/Core/Resolver/ResolverGoogleBooks.swift",
+      "Minerva Eye/Component/Eye/EyeTextRecognizer.swift",
+      "Minerva Eye/Entity/Book+CoreDataProperties.swift"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "app",
+  "summary": {
+    "en": "An iOS app for managing a personal book collection. It scans with the camera, recognises text on device with Vision, resolves ISBNs against the Google Books API and stores books with cover images in Core Data.",
+    "cs": "iOS aplikace pro správu vlastní knihovny. Skenuje kamerou, text rozpoznává přímo v zařízení přes Vision, ISBN dohledává v Google Books API a knihy včetně obálek ukládá do Core Data."
+  },
+  "problem": {
+    "en": "Cataloguing physical books by hand is slow; title, authors, page count and cover can be looked up once the ISBN is known.",
+    "cs": "Ruční katalogizace papírových knih je pomalá; název, autory, počet stran i obálku lze dohledat, jakmile je známé ISBN."
+  },
+  "solution": {
+    "en": "VisionKit document scanning feeds VNRecognizeTextRequest with Czech and English recognition languages; a resolver queries the books API by ISBN with an in-memory cache, and a Core Data Book entity keeps metadata and cover data. SwiftUI views cover the list, detail, scanner, log and settings, and the repository keeps device screenshots and logo assets.",
+    "cs": "Skenování dokumentů přes VisionKit posílá snímky do VNRecognizeTextRequest s češtinou a angličtinou; resolver dotazuje API knih podle ISBN s cache v paměti a entita Book v Core Data drží metadata i obálku. SwiftUI pohledy pokrývají seznam, detail, skener, log a nastavení; repozitář obsahuje i screenshoty a podklady loga."
+  },
+  "highlights": [
+    {
+      "en": "On-device OCR with Vision in Czech and English.",
+      "cs": "OCR přímo v zařízení přes Vision, čeština a angličtina."
+    },
+    {
+      "en": "ISBN lookup against a public books API with result caching.",
+      "cs": "Dohledání ISBN ve veřejném API knih s cache výsledků."
+    },
+    {
+      "en": "Core Data persistence including cover images.",
+      "cs": "Perzistence v Core Data včetně obálek."
+    },
+    {
+      "en": "SwiftUI component structure: Books, Book detail, Eye scanner, Log, Settings.",
+      "cs": "Struktura komponent ve SwiftUI: Books, detail knihy, skener Eye, Log, Settings."
+    }
+  ],
+  "stack": [
+    "Swift",
+    "SwiftUI",
+    "UIKit",
+    "Vision",
+    "VisionKit",
+    "Core Data",
+    "Google Books API",
+    "Xcode"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  CAM[Camera scan] --> VK[VisionKit]\n  VK --> OCR[Vision OCR]\n  OCR --> ISBN[ISBN]\n  ISBN --> RES[Books API resolver]\n  RES --> CACHE[Memory cache]\n  RES --> CD[Core Data Book]\n  CD --> UI[SwiftUI list and detail]",
+    "caption": {
+      "en": "A scan becomes an ISBN, the ISBN becomes a stored book record.",
+      "cs": "Ze skenu vznikne ISBN, z ISBN uložený záznam knihy."
+    }
+  },
+  "related": [
+    "ReadingPhoneNumbersInRealTime",
+    "reading",
+    "books"
+  ],
+  "confidence": "medium"
+}

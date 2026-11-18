@@ -1,0 +1,55 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "charon",
+  "sources": {
+    "github": "https://github.com/korczis/charon",
+    "gitlab": "https://gitlab.com/korczis/charon",
+    "commit": "ae23361912fbfd16f974c0f8f7f227c607077492",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "Cargo.toml (tree)",
+      "src (tree)"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "cli",
+  "summary": {
+    "en": "An early Rust project framed as a ferryman that carries other peoples network connections, with its operation area given as Wi-Fi. The tree has a Cargo manifest, a Makefile, bin, data, doc and src directories, but the README is a stub beyond the metaphor.",
+    "cs": "Rané rustové repo pojaté jako převozník nesoucí síťová připojení ostatních, s oblastí působnosti uvedenou jako Wi-Fi. Strom má Cargo manifest, Makefile, adresáře bin, data, doc a src, ale README je mimo tuto metaforu jen kostra."
+  },
+  "problem": {
+    "en": "Sharing or relaying network connectivity over Wi-Fi involves several moving parts; the project explores doing this from a single Rust binary.",
+    "cs": "Sdílení nebo přeposílání konektivity přes Wi-Fi zahrnuje několik částí; projekt zkoumá, jak to zvládnout jedinou rustovou binárkou."
+  },
+  "solution": {
+    "en": "The layout suggests a CLI with supporting data and documentation directories, but the concrete behaviour is unclear from the README alone and would need the source to confirm.",
+    "cs": "Rozvržení naznačuje CLI s podpůrnými adresáři pro data a dokumentaci, konkrétní chování ale ze samotného README jasné není a vyžadovalo by potvrzení ze zdrojů."
+  },
+  "highlights": [
+    {
+      "en": "Rust binary with bin, data, doc and src directories and a Makefile.",
+      "cs": "Rustová binárka s adresáři bin, data, doc, src a Makefile."
+    },
+    {
+      "en": "Themed around relaying Wi-Fi connectivity; scope stated only loosely.",
+      "cs": "Tematizováno kolem přeposílání Wi-Fi konektivity; rozsah jen volně popsán."
+    }
+  ],
+  "stack": [
+    "Rust",
+    "Cargo",
+    "Wi-Fi"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[Client] --> B[Charon relay]\n  B --> C[Wi-Fi link]\n  C --> D[Upstream network]\n  D --> B\n  B --> A",
+    "caption": {
+      "en": "A relay binary carries client connections across a Wi-Fi link to an upstream network.",
+      "cs": "Relay binárka přenáší klientská spojení přes Wi-Fi linku do nadřazené sítě."
+    }
+  },
+  "related": [
+    "zlown"
+  ],
+  "confidence": "low"
+}

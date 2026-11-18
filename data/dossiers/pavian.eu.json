@@ -1,0 +1,58 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "pavian.eu",
+  "sources": {
+    "github": "https://github.com/korczis/pavian.eu",
+    "gitlab": null,
+    "commit": "edd9c902106dcb286c543422219851c99dc29312",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "index.html (tree)",
+      ".htaccess",
+      "bower.json (tree)"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "site",
+  "summary": {
+    "en": "A static website built on an HTML5-boilerplate layout: an index.html, css and js directories, Bower dependencies, an Apache .htaccess, a custom 404 page and the usual robots.txt, humans.txt and crossdomain.xml. The README states only that it is the pavian.eu website.",
+    "cs": "Statický web postavený na rozvržení HTML5-boilerplate: index.html, adresáře css a js, Bower závislosti, Apache .htaccess, vlastní 404 stránka a obvyklé robots.txt, humans.txt a crossdomain.xml. README uvádí jen, že jde o web pavian.eu."
+  },
+  "problem": {
+    "en": "A personal or small-project site needs a simple, deployable static layout with sane Apache defaults and no backend.",
+    "cs": "Osobní nebo malý projektový web potřebuje jednoduché, nasaditelné statické rozvržení s rozumnými Apache defaulty a bez backendu."
+  },
+  "solution": {
+    "en": "The repository ships a static front-end managed with Bower and served under Apache, including a changelog and contributing notes. It is a website, not an application.",
+    "cs": "Repo dodává statický front-end spravovaný Bowerem a servírovaný pod Apache, včetně changelogu a poznámek pro přispěvatele. Jde o web, ne o aplikaci."
+  },
+  "highlights": [
+    {
+      "en": "HTML5-boilerplate static site with css/js and Bower dependencies.",
+      "cs": "Statický web na HTML5-boilerplate s css/js a Bower závislostmi."
+    },
+    {
+      "en": "Apache .htaccess, custom 404 and standard web metadata files.",
+      "cs": "Apache .htaccess, vlastní 404 a standardní webové metadatové soubory."
+    }
+  ],
+  "stack": [
+    "HTML5",
+    "CSS",
+    "JavaScript",
+    "Apache",
+    "Bower"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[Bower deps] --> B[Static assets]\n  B --> C[index.html]\n  C --> D[Apache server]\n  D --> E[Visitor]",
+    "caption": {
+      "en": "Static assets and index.html are served to visitors through Apache.",
+      "cs": "Statické assety a index.html se přes Apache servírují návštěvníkům."
+    }
+  },
+  "related": [
+    "pavian-eu"
+  ],
+  "confidence": "medium"
+}

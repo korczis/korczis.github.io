@@ -1,0 +1,50 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "kpmap-ruby",
+  "sources": {
+    "github": "https://github.com/korczis/kpmap-ruby",
+    "gitlab": "https://gitlab.com/korczis/kpmap-ruby",
+    "commit": "17909af4e5c72b27e1c30c8e50709a96f7ec4e18",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      ".gitignore",
+      "LICENSE"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "kata",
+  "summary": {
+    "en": "A placeholder for a Ruby implementation of (parallel) map. The repository holds only a README, a licence and a .gitignore.",
+    "cs": "Zástupný repozitář pro implementaci (paralelního) map v Ruby. Obsahuje jen README, licenci a .gitignore."
+  },
+  "problem": {
+    "en": "Ruby's map runs sequentially; a parallel variant was the intended exercise. No code was committed.",
+    "cs": "Ruby map běží sekvenčně; cvičením měla být paralelní varianta. Žádný kód commitnutý není."
+  },
+  "solution": {
+    "en": "Unclear: no implementation exists in the repository.",
+    "cs": "Nejasné: v repozitáři žádná implementace není."
+  },
+  "highlights": [
+    {
+      "en": "Empty except for metadata files.",
+      "cs": "Kromě metadat prázdné."
+    }
+  ],
+  "stack": [
+    "Ruby"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[Collection] --> B[Split]\n  B --> C[Parallel map]\n  C --> D[Results]",
+    "caption": {
+      "en": "The intended idea only; nothing is implemented.",
+      "cs": "Jen zamýšlená myšlenka; nic implementováno není."
+    }
+  },
+  "related": [
+    "algorithms-ruby",
+    "skull-ruby"
+  ],
+  "confidence": "low"
+}

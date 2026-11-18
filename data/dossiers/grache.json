@@ -1,0 +1,72 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "grache",
+  "sources": {
+    "github": "https://github.com/korczis/grache",
+    "gitlab": "https://gitlab.com/korczis/grache",
+    "commit": "e1efc0082f68a32cc39592df7f82025108e9d016",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      ".gemspec",
+      "recursive tree",
+      "lib/grache/packer/packer.rb"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "cli",
+  "summary": {
+    "en": "A Ruby CLI that packs a project's bundled gems into a zip archive, stores it on Amazon S3 and restores it later. Archives are keyed by the SHA-256 of Gemfile.lock, so identical dependency sets reuse the same pack.",
+    "cs": "Ruby CLI, které zabalí gemy projektu do zip archivu, uloží ho na Amazon S3 a později obnoví. Archivy jsou klíčované SHA-256 souboru Gemfile.lock, takže stejná sada závislostí sdílí stejný balík."
+  },
+  "problem": {
+    "en": "Deploying Ruby scripts to a hosted execution environment meant running bundle install there, which is slow and depends on network access to gem sources and Git remotes.",
+    "cs": "Nasazení Ruby skriptů do hostovaného prostředí pro spouštění znamenalo pouštět tam bundle install, což je pomalé a závislé na síťovém přístupu ke zdrojům gemů a Git remotům."
+  },
+  "solution": {
+    "en": "grache pack build runs bundle pack --all to fill vendor/cache, pack zip compresses it into grache-<sha>.zip, and pack install looks up the archive by the lockfile hash, downloads and extracts it. The CLI is built on GLI, with aws-sdk for storage and rubyzip for archives, and is tested with RSpec on Travis CI.",
+    "cs": "grache pack build spustí bundle pack --all a naplní vendor/cache, pack zip ho zkomprimuje do grache-<sha>.zip a pack install podle hashe lockfilu archiv dohledá, stáhne a rozbalí. CLI stojí na GLI, s aws-sdk pro úložiště a rubyzip pro archivy, testy běží v RSpec na Travis CI."
+  },
+  "highlights": [
+    {
+      "en": "Content-addressed gem packs keyed by the Gemfile.lock SHA-256",
+      "cs": "Obsahově adresované balíky gemů podle SHA-256 souboru Gemfile.lock"
+    },
+    {
+      "en": "Three subcommands: pack build, pack zip, pack install",
+      "cs": "Tři podpříkazy: pack build, pack zip, pack install"
+    },
+    {
+      "en": "Gemfile lookup walks up parent directories",
+      "cs": "Hledání Gemfile prochází nadřazené adresáře"
+    },
+    {
+      "en": "Published as a gem with a GLI-based CLI",
+      "cs": "Publikováno jako gem s CLI postaveným na GLI"
+    }
+  ],
+  "stack": [
+    "Ruby",
+    "Bundler",
+    "GLI",
+    "Amazon S3",
+    "aws-sdk",
+    "rubyzip",
+    "RSpec",
+    "Travis CI"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[Gemfile] --> B[pack build]\n  B --> C[vendor cache]\n  C --> D[pack zip]\n  E[Gemfile.lock SHA-256] --> D\n  D --> F[S3 bucket]\n  F --> G[pack install]\n  E --> G\n  G --> H[Local bundle]",
+    "caption": {
+      "en": "Build, upload and restore of a gem pack, keyed by the lockfile hash.",
+      "cs": "Sestavení, nahrání a obnova balíku gemů klíčovaného hashem lockfilu."
+    }
+  },
+  "related": [
+    "grache-test",
+    "el-magico-cache",
+    "docker-gooddata-ruby",
+    "gooddata-ruby-examples"
+  ],
+  "confidence": "high"
+}

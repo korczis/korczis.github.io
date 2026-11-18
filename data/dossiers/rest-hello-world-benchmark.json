@@ -1,0 +1,69 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "rest-hello-world-benchmark",
+  "sources": {
+    "github": "https://github.com/korczis/rest-hello-world-benchmark",
+    "gitlab": null,
+    "commit": "20e82a01213273e07575a737304bf3ae0d085190",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "go-fiber/pkg/main.go",
+      "tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "experiment",
+  "summary": {
+    "en": "A small, reproducible comparison of a JSON hello-world REST endpoint across web stacks: Elixir with Phoenix, Elixir with bare Plug and Cowboy, and Go with Fiber. The README fixes the contract, the hardware and the load-test command, and records ApacheBench output for each run.",
+    "cs": "Malé, opakovatelné srovnání JSON endpointu hello-world v několika webových stackech: Elixir s Phoenixem, Elixir s čistým Plugem a Cowboyem a Go s Fiberem. README pevně stanoví kontrakt, hardware a příkaz zátěžového testu a zaznamenává výstup ApacheBench pro každý běh."
+  },
+  "problem": {
+    "en": "Framework choices are often argued from impressions; a like-for-like measurement on one machine with one endpoint gives a concrete baseline.",
+    "cs": "O volbě frameworku se často rozhoduje podle dojmu; měření stejného endpointu na stejném stroji dává konkrétní výchozí bod."
+  },
+  "solution": {
+    "en": "Each implementation serves /api/hello-world with the same JSON body on port 4000 and is driven by ApacheBench with 10,000 requests at concurrency 100. The README keeps raw outputs and notes that tail percentiles were too volatile between Go runs to draw conclusions from.",
+    "cs": "Každá implementace vrací na /api/hello-world stejné JSON tělo na portu 4000 a zatěžuje se ApacheBench s 10 000 požadavky při souběhu 100. README uchovává surové výstupy a upozorňuje, že horní percentily byly mezi běhy v Go příliš rozkolísané na závěry."
+  },
+  "highlights": [
+    {
+      "en": "Same contract and load profile for every stack.",
+      "cs": "Stejný kontrakt a profil zátěže pro všechny stacky."
+    },
+    {
+      "en": "Raw ApacheBench output kept in the README.",
+      "cs": "Surový výstup ApacheBench uložený v README."
+    },
+    {
+      "en": "Explicit note on percentile volatility across repeated runs.",
+      "cs": "Výslovná poznámka o rozptylu percentilů mezi opakovanými běhy."
+    },
+    {
+      "en": "Three implementations: Phoenix, Plug/Cowboy, Fiber.",
+      "cs": "Tři implementace: Phoenix, Plug/Cowboy, Fiber."
+    }
+  ],
+  "stack": [
+    "Elixir",
+    "Phoenix",
+    "Plug",
+    "Cowboy",
+    "Go",
+    "Fiber",
+    "ApacheBench"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  AB[ApacheBench] --> PX[Phoenix app]\n  AB --> PL[Plug Cowboy app]\n  AB --> GF[Go Fiber app]\n  PX --> J[JSON hello]\n  PL --> J\n  GF --> J\n  AB --> RR[README results]",
+    "caption": {
+      "en": "One load generator, one contract, three server implementations.",
+      "cs": "Jeden generátor zátěže, jeden kontrakt, tři serverové implementace."
+    }
+  },
+  "related": [
+    "cs-benchmark",
+    "el-magico-cache",
+    "kanec"
+  ],
+  "confidence": "high"
+}

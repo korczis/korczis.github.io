@@ -1,0 +1,73 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "microcrawler",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/microcrawler",
+    "commit": "6cd0add747cedd36577b7f631394d06031c83483",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "services/start.sh",
+      "services/microcrawler-worker@.service",
+      "services/microcrawler-worker-discovery@.service",
+      "tree (recursive)"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "config",
+  "summary": {
+    "en": "Deployment units for running the Microcrawler stack on a CoreOS cluster with fleet. It holds systemd service templates for the crawler web app and workers, their data stores and a monitoring stack, each paired with a discovery unit.",
+    "cs": "Nasazovací jednotky pro běh Microcrawleru na CoreOS clusteru přes fleet. Obsahuje šablony systemd služeb pro webovou aplikaci a workery crawleru, jejich datová úložiště a monitoring, každou s párovou discovery jednotkou."
+  },
+  "problem": {
+    "en": "A distributed crawler with a queue, a document store, a search index and many workers has to be placed across machines and the instances have to find each other.",
+    "cs": "Distribuovaný crawler s frontou, dokumentovým úložištěm, vyhledávacím indexem a mnoha workery je potřeba rozmístit po strojích a jednotlivé instance se musí navzájem najít."
+  },
+  "solution": {
+    "en": "Every service is a templated unit that pulls and runs a Docker image, and a sidecar discovery unit writes the instance IP into etcd with a 60 second TTL, refreshed every 45 seconds. Fleet constraints keep worker instances on separate machines and bind each sidecar to its service. A start.sh script records the submit and start order as commented fleetctl commands.",
+    "cs": "Každá služba je šablonovaná jednotka, která stáhne a spustí Docker image, a vedlejší discovery jednotka zapisuje IP instance do etcd s TTL 60 sekund a obnovuje ho každých 45 sekund. Omezení ve fleetu drží workery na různých strojích a každý sidecar váží na jeho službu. Skript start.sh zachycuje pořadí submit a start jako zakomentované příkazy fleetctl."
+  },
+  "highlights": [
+    {
+      "en": "Service discovery through etcd keys with TTL heartbeats.",
+      "cs": "Service discovery přes klíče v etcd s TTL heartbeatem."
+    },
+    {
+      "en": "Units for Couchbase, Elasticsearch, Kibana, RabbitMQ, Nominatim and the gauc service.",
+      "cs": "Jednotky pro Couchbase, Elasticsearch, Kibanu, RabbitMQ, Nominatim a službu gauc."
+    },
+    {
+      "en": "Monitoring with cAdvisor, Heapster, InfluxDB and Grafana.",
+      "cs": "Monitoring přes cAdvisor, Heapster, InfluxDB a Grafanu."
+    },
+    {
+      "en": "X-Conflicts rule spreads worker instances across hosts.",
+      "cs": "Pravidlo X-Conflicts rozkládá workery na různé stroje."
+    }
+  ],
+  "stack": [
+    "CoreOS",
+    "fleet",
+    "systemd",
+    "etcd",
+    "Docker",
+    "Shell"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  F[fleetctl] --> U[Service unit]\n  U --> C[Docker container]\n  F --> DU[Discovery unit]\n  DU --> E[etcd keys with TTL]\n  C --> W[Workers]\n  C --> WA[Web app]\n  W --> WA\n  C --> M[Monitoring stack]",
+    "caption": {
+      "en": "Each containerised service is paired with a discovery sidecar that registers it in etcd.",
+      "cs": "Každá kontejnerová služba má discovery sidecar, který ji registruje v etcd."
+    }
+  },
+  "related": [
+    "microcrawler-js",
+    "microcrawler-elixir",
+    "docks",
+    "gauc-ex",
+    "server-coreos",
+    "mapoffacts"
+  ],
+  "confidence": "medium"
+}

@@ -1,0 +1,59 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "bc-apple",
+  "sources": {
+    "github": "https://github.com/korczis/bc-apple",
+    "gitlab": "https://gitlab.com/korczis/bc-apple",
+    "commit": "91045dfaa94022893a54d19ef86cd642310244b6",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "Cartfile (app project folder)",
+      "FirstViewController.swift",
+      "top-level tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "app",
+  "summary": {
+    "en": "An Xcode tab-bar app skeleton in Swift intended as an Apple client for a multi-chain mining node, with Socket.IO pulled in through Carthage.",
+    "cs": "Kostra aplikace v Xcode ve Swiftu s tab barem, zamýšlená jako klient pro Apple k multi-chain těžebnímu uzlu; Socket.IO je připojené přes Carthage."
+  },
+  "problem": {
+    "en": "Watching a node's live stream from an iPhone or Mac needs a native client that can speak the node's WebSocket interface.",
+    "cs": "Sledovat živý stream uzlu z iPhonu nebo Macu vyžaduje nativního klienta, který umí mluvit s jeho WebSocket rozhraním."
+  },
+  "solution": {
+    "en": "The project contains the standard two-tab template (two view controllers, storyboards, unit and UI test targets) and a Cartfile pinning socket.io-client-swift 13.2. The view controllers are still template code, so the client logic is not implemented.",
+    "cs": "Projekt obsahuje standardní šablonu se dvěma taby (dva view controllery, storyboardy, cíle pro unit a UI testy) a Cartfile se socket.io-client-swift 13.2. View controllery jsou zatím šablonový kód, logika klienta implementovaná není."
+  },
+  "highlights": [
+    {
+      "en": "Socket.IO Swift client chosen for the node stream",
+      "cs": "Pro stream uzlu zvolený Swift klient Socket.IO"
+    },
+    {
+      "en": "Unit and UI test targets in place",
+      "cs": "Připravené cíle pro unit a UI testy"
+    }
+  ],
+  "stack": [
+    "Swift",
+    "UIKit",
+    "Xcode",
+    "Carthage",
+    "Socket.IO"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  App[iOS app] --> Tabs[tab bar]\n  Tabs --> First[first view]\n  Tabs --> Second[second view]\n  App --> Sio[Socket.IO client]\n  Sio -.-> Node[node WebSocket]",
+    "caption": {
+      "en": "Template app; the dashed link to the node is planned, not built.",
+      "cs": "Šablonová aplikace; přerušované spojení na uzel je plánované, ne hotové."
+    }
+  },
+  "related": [
+    "bcnode-old",
+    "bcnode-extra-scripts"
+  ],
+  "confidence": "low"
+}

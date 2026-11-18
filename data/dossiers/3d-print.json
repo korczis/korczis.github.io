@@ -1,0 +1,52 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "3d-print",
+  "sources": {
+    "github": "https://github.com/korczis/3d-print",
+    "gitlab": null,
+    "commit": "74cfbade72bbb819fe5905db02b9f707feb15677",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "models/photogametry_stand.scad"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "kata",
+  "summary": {
+    "en": "A home for 3D-printable models, currently one parametric OpenSCAD design: a bearing-based rotating stand for photogrammetry. Dimensions such as bed size and bearing diameters are named constants, and the stand, mount and top plate are separate modules.",
+    "cs": "Repozitář pro modely k 3D tisku, zatím s jedním parametrickým návrhem v OpenSCADu: otočným stojanem na ložisku pro fotogrammetrii. Rozměry jako velikost základny a průměry ložiska jsou pojmenované konstanty a stojan, držák a horní deska jsou samostatné moduly."
+  },
+  "problem": {
+    "en": "Photogrammetry needs the object rotated in even steps on a stable turntable, sized to an available bearing.",
+    "cs": "Fotogrammetrie potřebuje objekt otáčet po stejných krocích na stabilní točně, rozměrově sladěné s dostupným ložiskem."
+  },
+  "solution": {
+    "en": "Parametric constructive solid geometry: cube and cylinder primitives combined with difference(), with the bearing dimensions driving the pylon, mount cavity and plate.",
+    "cs": "Parametrická CSG geometrie: kvádry a válce kombinované přes difference(), přičemž rozměry ložiska určují sloupek, dutinu držáku i desku."
+  },
+  "highlights": [
+    {
+      "en": "Bearing dimensions as named parameters.",
+      "cs": "Rozměry ložiska jako pojmenované parametry."
+    },
+    {
+      "en": "Stand, mount and plate as separate printable modules.",
+      "cs": "Stojan, držák a deska jako samostatně tisknutelné moduly."
+    }
+  ],
+  "stack": [
+    "OpenSCAD"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  P[Bearing parameters] --> S[Stand module]\n  P --> M[Mount module]\n  P --> T[Top plate module]\n  M --> R[Rendered part]\n  R --> X[3D print]",
+    "caption": {
+      "en": "Parameters drive three modules; one is selected for rendering.",
+      "cs": "Parametry řídí tři moduly; k vykreslení se vybírá jeden."
+    }
+  },
+  "related": [
+    "photos"
+  ],
+  "confidence": "low"
+}

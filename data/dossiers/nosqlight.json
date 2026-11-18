@@ -1,0 +1,56 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "nosqlight",
+  "sources": {
+    "github": "https://github.com/korczis/nosqlight",
+    "gitlab": "https://gitlab.com/korczis/nosqlight",
+    "commit": "48d9b6da29e70616b767365d4704581b459542ad",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "docs",
+  "summary": {
+    "en": "A requirements document for an embeddable, serverless, document-oriented JSON database in C/C++, framed as a NoSQL counterpart to SQLite. No code was written.",
+    "cs": "Sepsané požadavky na vestavitelnou, bezserverovou dokumentovou JSON databázi v C/C++, pojatou jako NoSQL obdoba SQLite. Kód nevznikl."
+  },
+  "problem": {
+    "en": "Small applications that want to store JSON documents locally lack a self-contained, zero-configuration embedded store comparable to SQLite.",
+    "cs": "Malé aplikace, které chtějí lokálně ukládat JSON dokumenty, nemají soběstačné vestavěné úložiště bez konfigurace srovnatelné se SQLite."
+  },
+  "solution": {
+    "en": "The README lists the target properties: permissive licence, multi-architecture, self-contained, serverless, zero-configuration, JSON documents, small footprint, a simple insert and query API, a native implementation and easy bindings for other languages. It links reference material on Berkeley DB, SQLite architecture and UnQL/UnQLite.",
+    "cs": "README vyjmenovává cílové vlastnosti: permisivní licence, více architektur, soběstačnost, bez serveru, bez konfigurace, JSON dokumenty, malé nároky, jednoduché API pro vkládání a dotazy, nativní implementace a snadné bindingy do dalších jazyků. Odkazuje na materiály o Berkeley DB, architektuře SQLite a UnQL/UnQLite."
+  },
+  "highlights": [
+    {
+      "en": "Design criteria borrowed explicitly from the SQLite documentation.",
+      "cs": "Kritéria návrhu jsou výslovně převzatá z dokumentace SQLite."
+    },
+    {
+      "en": "Research links only; repository has no source files.",
+      "cs": "Jen odkazy na rešerši; repozitář nemá žádné zdrojáky."
+    }
+  ],
+  "stack": [
+    "C",
+    "C++",
+    "JSON"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  App[Host application] --> Api[Insert and query API]\n  Api --> Engine[Embedded engine]\n  Engine --> File[(Database file)]\n  Bind[Language bindings] --> Api",
+    "caption": {
+      "en": "The intended shape: an in-process engine writing straight to a file, no server.",
+      "cs": "Zamýšlený tvar: engine uvnitř procesu zapisující přímo do souboru, bez serveru."
+    }
+  },
+  "related": [
+    "apollo-schemas",
+    "rocksdb_indexer",
+    "kuzu-ex"
+  ],
+  "confidence": "medium"
+}

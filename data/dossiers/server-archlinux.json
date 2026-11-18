@@ -1,0 +1,75 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "server-archlinux",
+  "sources": {
+    "github": "https://github.com/korczis/server-archlinux",
+    "gitlab": "https://gitlab.com/korczis/server-archlinux",
+    "commit": "0215d99c084f3f5b51679ce79ebf1c811730e1f4",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      ".gitmodules",
+      "Vagrantfile",
+      "ansible/playbook.yml",
+      "top-level tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "config",
+  "summary": {
+    "en": "Ansible playbooks that install and configure an Arch Linux server from a live medium, including partitioning, software RAID, LVM and the bootloader.",
+    "cs": "Ansible playbooky, které z live média nainstalují a nastaví server s Arch Linuxem, včetně rozdělení disků, softwarového RAIDu, LVM a zavaděče."
+  },
+  "problem": {
+    "en": "A manual Arch Linux install on a multi-disk machine with RAID and LVM is long, error-prone and hard to repeat.",
+    "cs": "Ruční instalace Arch Linuxu na stroj s více disky, RAIDem a LVM je zdlouhavá, náchylná k chybám a špatně se opakuje."
+  },
+  "solution": {
+    "en": "The install is split into staged playbooks (minimal, raid, core, server, host, guest, adhoc), each with a wrapper script, and roles such as pacstrap, setup-raid, bootloader, kernel, pacman, pacaur, docker and kubernetes. The main playbook declares disks, mount points and GPT partitions as YAML anchors; AUR, makepkg and mdadm support come from git submodules, and a Vagrantfile boots an Arch box for testing.",
+    "cs": "Instalace je rozdělená do etapových playbooků (minimal, raid, core, server, host, guest, adhoc) s obalovými skripty a do rolí jako pacstrap, setup-raid, bootloader, kernel, pacman, pacaur, docker nebo kubernetes. Hlavní playbook popisuje disky, přípojné body a GPT oddíly pomocí YAML kotev; podporu AUR, makepkg a mdadm dodávají git submoduly a Vagrantfile spouští Arch box na testování."
+  },
+  "highlights": [
+    {
+      "en": "Disk layout (EFI, boot on md RAID, root on LVM) declared as data in the playbook",
+      "cs": "Rozvržení disků (EFI, boot na md RAIDu, root na LVM) popsané jako data přímo v playbooku"
+    },
+    {
+      "en": "Staged playbooks from bare install to server and desktop roles",
+      "cs": "Etapové playbooky od holé instalace po serverové a desktopové role"
+    },
+    {
+      "en": "AUR and makepkg Ansible modules pulled in as submodules",
+      "cs": "Ansible moduly pro AUR a makepkg připojené jako submoduly"
+    },
+    {
+      "en": "An older role set (roles-old) shared with the Atomic host setup",
+      "cs": "Starší sada rolí (roles-old) sdílená s konfigurací Atomic hostu"
+    }
+  ],
+  "stack": [
+    "Ansible",
+    "Arch Linux",
+    "Shell",
+    "mdadm",
+    "LVM",
+    "Vagrant",
+    "VirtualBox",
+    "Docker",
+    "Kubernetes"
+  ],
+  "architecture": {
+    "mermaid": "flowchart TD\n  Live[live USB] --> Minimal[playbook-minimal]\n  Minimal --> Parts[GPT partitions]\n  Parts --> Raid[md RAID]\n  Raid --> Lvm[LVM volumes]\n  Lvm --> Pacstrap[pacstrap]\n  Pacstrap --> Boot[bootloader]\n  Boot --> Core[playbook-core]\n  Core --> Server[server roles]\n  Core --> Desktop[desktop roles]",
+    "caption": {
+      "en": "Staged install path from a live medium to a configured host.",
+      "cs": "Etapová instalace od live média po nastavený stroj."
+    }
+  },
+  "related": [
+    "server-atomic",
+    "server-nixos",
+    "server-ansible",
+    "server-coreos",
+    "cluster-kubernetes"
+  ],
+  "confidence": "medium"
+}

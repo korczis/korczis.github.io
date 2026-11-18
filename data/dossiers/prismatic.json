@@ -1,0 +1,82 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "prismatic",
+  "sources": {
+    "github": "https://github.com/korczis/prismatic",
+    "gitlab": null,
+    "commit": "fc5288c96a74deab9543e03be2d47faf9fb3a17f",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "mix.exs",
+      "apps/prismatic/mix.exs",
+      "tree /",
+      "tree apps/",
+      "tree apps/prismatic/lib/prismatic",
+      "tree apps/prismatic/lib/mix/tasks"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "app",
+  "summary": {
+    "en": "A Phoenix umbrella application presented as an AI agent framework with BEAM VM introspection, TODO management, documentation analysis and codebase consolidation tooling. It has a core app and a web app, with the core organised into agent, BEAM, blackboard, docs, event, file system, LLM, memory and TODO areas.",
+    "cs": "Umbrella aplikace ve Phoenixu prezentovaná jako framework pro AI agenty s introspekcí BEAM VM, správou TODO, analýzou dokumentace a nástroji pro konsolidaci kódu. Má jádrovou a webovou aplikaci a jádro je rozdělené na oblasti agent, BEAM, blackboard, dokumentace, události, souborový systém, LLM, paměť a TODO."
+  },
+  "problem": {
+    "en": "Running BEAM systems and growing Elixir codebases are hard to inspect and keep tidy: process and memory state, scattered TODO comments, documentation gaps and overlapping projects with conflicting dependencies. The project also wants LLM-backed agents working on top of that knowledge.",
+    "cs": "Běžící systémy na BEAM a rostoucí kódové báze v Elixiru se špatně zkoumají a udržují v pořádku: stav procesů a paměti, roztroušené TODO komentáře, mezery v dokumentaci a překrývající se projekty s konfliktními závislostmi. Projekt chce navíc nad těmito znalostmi provozovat agenty podporované LLM."
+  },
+  "solution": {
+    "en": "The core exposes introspection functions for processes, memory, modules and supervision trees, a TODO scanner with reports, documentation gap and consistency analysis, and mix tasks for consolidation analysis, planning and changelog generation. Dependencies include Ecto with PostgreSQL, Broadway, GenStage and Flow for pipelines, Req and Finch for HTTP, and Elixir clients for two hosted LLM APIs; the web app uses LiveView. The repository also carries many top-level analysis and strategy documents and Python link-validation scripts.",
+    "cs": "Jádro nabízí introspekční funkce pro procesy, paměť, moduly a stromy supervizorů, skener TODO s reporty, analýzu mezer a konzistence dokumentace a mix tasky pro analýzu a plánování konsolidace a generování changelogu. Mezi závislostmi je Ecto s PostgreSQL, Broadway, GenStage a Flow pro zpracovatelské pipeline, Req a Finch pro HTTP a klienti v Elixiru pro dvě hostovaná LLM API; webová část používá LiveView. Repozitář nese i řadu analytických a strategických dokumentů v kořeni a skripty v Pythonu pro kontrolu odkazů."
+  },
+  "highlights": [
+    {
+      "en": "BEAM introspection toolkit as a first-class module.",
+      "cs": "Sada nástrojů pro introspekci BEAM jako plnohodnotný modul."
+    },
+    {
+      "en": "Blackboard, memory and event modules for agent coordination.",
+      "cs": "Moduly blackboard, paměť a události pro koordinaci agentů."
+    },
+    {
+      "en": "Mix task suite for consolidation, versioning and changelogs.",
+      "cs": "Sada mix tasků pro konsolidaci, verzování a changelogy."
+    },
+    {
+      "en": "Broadway, GenStage and Flow for data pipelines.",
+      "cs": "Broadway, GenStage a Flow pro datové pipeline."
+    },
+    {
+      "en": "README badges are static images, so build and coverage status are not verified here.",
+      "cs": "Odznaky v README jsou statické obrázky, stav buildu a pokrytí tu proto ověřen není."
+    }
+  ],
+  "stack": [
+    "Elixir",
+    "Phoenix",
+    "LiveView",
+    "PostgreSQL",
+    "Ecto",
+    "Broadway",
+    "GenStage",
+    "Flow",
+    "Req",
+    "Finch",
+    "Tailwind CSS",
+    "Python",
+    "GitLab CI"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  WEB[Phoenix web and LiveView] --> CORE[Prismatic core]\n  CORE --> AG[Agents]\n  AG --> BB[Blackboard and memory]\n  AG --> LLM[LLM clients]\n  CORE --> BEAM[BEAM introspection]\n  CORE --> TODO[TODO scanner]\n  CORE --> DOCS[Docs analysis]\n  TASKS[Mix tasks] --> CORE\n  CORE --> DB[(PostgreSQL)]",
+    "caption": {
+      "en": "A web layer and mix tasks drive a core of agents, introspection and code-analysis modules.",
+      "cs": "Webová vrstva a mix tasky ovládají jádro z agentů, introspekce a modulů pro analýzu kódu."
+    }
+  },
+  "related": [
+    "prismatic-majordomus",
+    "prismatic-blog"
+  ],
+  "confidence": "medium"
+}

@@ -1,0 +1,48 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "principal",
+  "sources": {
+    "github": "https://github.com/korczis/principal",
+    "gitlab": "https://gitlab.com/korczis/principal",
+    "commit": "5cff95cd6e8b0d22a84ce8df995550eb3460fe8f",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "experiment",
+  "summary": {
+    "en": "An empty project stub whose README describes it as the component that orchestrates the other services.",
+    "cs": "Prázdná kostra projektu, kterou README popisuje jako komponentu orchestrující ostatní služby."
+  },
+  "problem": {
+    "en": "Unclear; the tree has only a README, licence and .gitignore.",
+    "cs": "Nejasné; strom obsahuje jen README, licenci a .gitignore."
+  },
+  "solution": {
+    "en": "No implementation was committed. The intent stated in the README is an orchestrator, but nothing in the repository shows how it would work.",
+    "cs": "Žádná implementace nebyla commitnuta. README uvádí záměr orchestrátoru, ale z repozitáře nejde vyčíst, jak by fungoval."
+  },
+  "highlights": [
+    {
+      "en": "Stub only.",
+      "cs": "Pouze kostra."
+    }
+  ],
+  "stack": [],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Principal[principal stub] --> Readme[README intent]\n  Readme --> Orch[orchestrator idea]\n  Orch --> Services[other services]",
+    "caption": {
+      "en": "Stated intent only; nothing implemented.",
+      "cs": "Pouze deklarovaný záměr, nic implementovaného."
+    }
+  },
+  "related": [
+    "dispatcher",
+    "job-processor",
+    "apollon"
+  ],
+  "confidence": "low"
+}

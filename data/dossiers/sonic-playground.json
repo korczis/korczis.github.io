@@ -1,0 +1,70 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "sonic-playground",
+  "sources": {
+    "github": "https://github.com/korczis/sonic-playground",
+    "gitlab": null,
+    "commit": "aad7683aa9a7f8393db4dcfe693d891a594ab40c",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "top-level tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "site",
+  "summary": {
+    "en": "Sonic Playground is a bilingual static music journal with one review per track, browsable by genre, feeling and mood. A persistent bottom-bar player keeps playing while the visitor navigates between pages. Every page has its own social card and the site exists in English and Czech.",
+    "cs": "Sonic Playground je dvojjazyčný statický hudební deník: jedna recenze na skladbu, procházení podle žánru, pocitu a nálady. Přehrávač ve spodní liště hraje dál, i když návštěvník přechází mezi stránkami. Každá stránka má vlastní sociální kartu a celý web existuje anglicky i česky."
+  },
+  "problem": {
+    "en": "A hand-written music journal quickly accumulates facets, related tracks, translations and media that are tedious and error-prone to maintain by hand. A static host also cannot run server-side search or a player that survives navigation.",
+    "cs": "Ručně psaný hudební deník rychle nabírá fasety, související skladby, překlady a média, jejichž ruční údržba je otravná a náchylná k chybám. Statický hosting navíc neumí serverové vyhledávání ani přehrávač, který přežije navigaci."
+  },
+  "solution": {
+    "en": "Articles carry front matter validated against a JSON schema, and Python scripts derive the catalogue, search indexes, a compact player feed, glossary pages, JSON-LD and responsive images from them. Zola builds the pages, a client-side router swaps content under the persistent player, and Czech translations sit beside each page with checks for staleness and structure. Metadata enrichment from MusicBrainz and probing for removed videos are separate scripted steps.",
+    "cs": "Články mají front matter validovaný JSON schématem a Python skripty z nich odvozují katalog, vyhledávací indexy, kompaktní data pro přehrávač, stránky glosáře, JSON-LD i responzivní obrázky. Stránky staví Zola, klientský router vyměňuje obsah pod stálým přehrávačem a české překlady leží vedle každé stránky s kontrolou zastaralosti a struktury. Doplnění metadat z MusicBrainz a detekce smazaných videí jsou samostatné skriptované kroky."
+  },
+  "highlights": [
+    {
+      "en": "Catalogue, search and player data derived from article front matter, never hand-maintained.",
+      "cs": "Katalog, vyhledávání i data přehrávače odvozené z front matter článků, nikdy ručně."
+    },
+    {
+      "en": "Persistent player across client-side page swaps on a fully static site.",
+      "cs": "Stálý přehrávač napříč klientským přepínáním stránek na čistě statickém webu."
+    },
+    {
+      "en": "Full English and Czech parity with CLDR plural rules and refused stale translations.",
+      "cs": "Plná parita angličtiny a češtiny s plurálovými pravidly CLDR a odmítáním zastaralých překladů."
+    },
+    {
+      "en": "Per-page social cards and JSON-LD for articles and recordings.",
+      "cs": "Sociální karta a JSON-LD pro každou stránku i nahrávku."
+    }
+  ],
+  "stack": [
+    "Zola",
+    "Python",
+    "TypeScript",
+    "Tailwind CSS",
+    "Flowbite Pro",
+    "JSON Schema",
+    "JSON-LD",
+    "MusicBrainz API",
+    "GitHub Pages"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  MD[Track articles] --> Cat[catalog.py]\n  Sch[Track schema] --> Cat\n  MB[MusicBrainz] --> Enr[track.py enrich]\n  Enr --> MD\n  Cat --> Data[Catalogue and search JSON]\n  I18n[Czech translations] --> Cat\n  Data --> Zola[Zola build]\n  Zola --> Site[Static pages]\n  Site --> Player[Persistent player]",
+    "caption": {
+      "en": "Written articles are the only source; scripts derive every catalogue and index file the static site and player read.",
+      "cs": "Jediným zdrojem jsou napsané články; skripty z nich odvodí všechny katalogy a indexy, které čte statický web a přehrávač."
+    }
+  },
+  "related": [
+    "oscilla",
+    "korczis.github.io",
+    "kompendium-epistemicke-anihilace"
+  ],
+  "confidence": "high"
+}

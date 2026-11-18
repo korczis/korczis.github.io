@@ -1,0 +1,62 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "microcrawler-ng",
+  "sources": {
+    "github": "https://github.com/korczis/microcrawler-ng",
+    "gitlab": "https://gitlab.com/korczis/microcrawler-ng",
+    "commit": "53b9e3f10b747fe8bf4ed8d43dd7f55ddfb545b4",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "bin (tree)",
+      "lib (tree)",
+      "package.json (tree)"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "cli",
+  "summary": {
+    "en": "A JavaScript command-line web crawler, a next-generation take on an earlier crawler of the same family. It ships built-in modules for several sites and uses jQuery-like selectors to make new plugins easy; the CLI lists modules and runs a chosen crawler type against a URL.",
+    "cs": "JavaScriptový webový crawler pro příkazovou řádku, nová generace staršího crawleru téže rodiny. Dodává vestavěné moduly pro několik webů a používá selektory ve stylu jQuery pro snadné psaní pluginů; CLI vypíše moduly a spustí zvolený typ crawleru proti URL."
+  },
+  "problem": {
+    "en": "Extracting structured data from many different sites needs a small, extensible crawler where each site is a plugin rather than a bespoke script.",
+    "cs": "Získávání strukturovaných dat z mnoha různých webů potřebuje malý, rozšiřitelný crawler, kde je každý web plugin, ne jednorázový skript."
+  },
+  "solution": {
+    "en": "The tool defines crawlers as modules with jQuery-like selectors, listed via a CLI flag and invoked by type with a target URL. The README notes a to-do list including tests, persistence and a web UI.",
+    "cs": "Nástroj definuje crawlery jako moduly se selektory ve stylu jQuery, vypisované přes CLI přepínač a volané podle typu s cílovou URL. README zmiňuje to-do seznam včetně testů, persistence a webového UI."
+  },
+  "highlights": [
+    {
+      "en": "Built-in site modules driven by jQuery-like selectors.",
+      "cs": "Vestavěné modulové crawlery řízené selektory ve stylu jQuery."
+    },
+    {
+      "en": "CLI lists modules and runs a crawler type against a URL.",
+      "cs": "CLI vypíše moduly a spustí typ crawleru proti URL."
+    },
+    {
+      "en": "README marks tests, persistence and a web UI as to-do.",
+      "cs": "README označuje testy, persistenci a webové UI za to-do."
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "Node.js",
+    "Babel"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[URL] --> B[Crawler module]\n  B --> C[Fetch page]\n  C --> D[Selector extract]\n  D --> E[Structured result]",
+    "caption": {
+      "en": "A selected crawler module fetches a page and extracts structured data with selectors.",
+      "cs": "Zvolený modul crawleru načte stránku a selektory z ní vytáhne strukturovaná data."
+    }
+  },
+  "related": [
+    "microcrawler",
+    "microcrawler-js",
+    "apollo-crawler"
+  ],
+  "confidence": "medium"
+}

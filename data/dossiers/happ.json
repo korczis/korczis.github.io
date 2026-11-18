@@ -1,0 +1,87 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "happ",
+  "sources": {
+    "github": "https://github.com/korczis/happ",
+    "gitlab": "https://gitlab.com/korczis/happ",
+    "commit": "57badfee1e8e96abcdee3c5275f47122c8ee553c",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "CMakeLists.txt",
+      "docker-compose.yml",
+      ".gitlab-ci.yml",
+      "tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "experiment",
+  "summary": {
+    "en": "A polyglot learning monorepo for practising languages, interop and build tooling under one CMake/Make top level. It holds hello-world and FFI examples in C, C++, Elixir, Haskell, Node.js, Prolog, Rust and Swift, plus small apps such as a Rust terminal calculator, a Qt expression evaluator and a SwiftUI app with a Redux-style store.",
+    "cs": "Vícejazyčné cvičné monorepo pro trénink jazyků, interoperability a build nástrojů pod jedním CMake/Make kořenem. Obsahuje hello-world a FFI příklady v C, C++, Elixiru, Haskellu, Node.js, Prologu, Rustu a Swiftu a k tomu menší aplikace: terminálovou kalkulačku v Rustu, vyhodnocovač výrazů v Qt a SwiftUI aplikaci se storem ve stylu Reduxu."
+  },
+  "problem": {
+    "en": "Learning how languages call each other (NIFs, N-API addons, embedded Prolog, C from Haskell) is easiest when every example builds from one place with the same conventions.",
+    "cs": "Jak se jazyky navzájem volají (NIF, N-API addony, vložený Prolog, C z Haskellu), se nejlépe učí, když se všechny příklady staví z jednoho místa podle stejných konvencí."
+  },
+  "solution": {
+    "en": "A root CMakeLists adds apps and examples as subprojects; the Elixir example carries native C and Rust NIF crates, the Node example covers nan, N-API and node-addon-api, and an interop folder embeds Prolog from C. Docker Compose brings up Elasticsearch and Kibana for the Elixir backend, and GitLab CI builds it.",
+    "cs": "Kořenový CMakeLists přidává aplikace a příklady jako podprojekty; příklad v Elixiru nese nativní NIF v C a Rustu, příklad v Node pokrývá nan, N-API i node-addon-api a složka interop vkládá Prolog do C. Docker Compose spouští Elasticsearch a Kibanu pro backend v Elixiru a GitLab CI ho staví."
+  },
+  "highlights": [
+    {
+      "en": "Eight languages under one CMake/Make build.",
+      "cs": "Osm jazyků pod jedním buildem CMake/Make."
+    },
+    {
+      "en": "Elixir NIFs in both C and Rust; three Node.js native addon styles.",
+      "cs": "NIFy pro Elixir v C i Rustu; tři způsoby nativních addonů pro Node.js."
+    },
+    {
+      "en": "C/C++ demos including a fluid solver with OpenGL/GLUT.",
+      "cs": "Ukázky v C/C++ včetně řešiče proudění s OpenGL/GLUT."
+    },
+    {
+      "en": "Prolog embedded in C; Haskell calling C/C++.",
+      "cs": "Prolog vložený do C; Haskell volající C/C++."
+    },
+    {
+      "en": "Elasticsearch and Kibana via Docker Compose for local data work.",
+      "cs": "Elasticsearch a Kibana přes Docker Compose pro lokální práci s daty."
+    }
+  ],
+  "stack": [
+    "C",
+    "C++",
+    "CMake",
+    "Elixir",
+    "Phoenix",
+    "Rust",
+    "Haskell",
+    "Node.js",
+    "Prolog",
+    "Swift",
+    "SwiftUI",
+    "Qt",
+    "OpenGL",
+    "Docker Compose",
+    "Elasticsearch",
+    "Kibana",
+    "GitLab CI"
+  ],
+  "architecture": {
+    "mermaid": "flowchart TD\n  ROOT[Root CMake] --> APPS[apps]\n  ROOT --> EX[examples]\n  APPS --> CALC[Rust calculator]\n  APPS --> ABA[Qt evaluator]\n  APPS --> COR[SwiftUI app]\n  EX --> ELX[Elixir app]\n  ELX --> NIF[C and Rust NIFs]\n  EX --> NODE[Node addons]\n  EX --> HS[Haskell FFI]\n  EX --> PL[Prolog interop]\n  ELX --> ES[Elasticsearch]",
+    "caption": {
+      "en": "One build root fans out to apps and per-language interop examples.",
+      "cs": "Jeden kořen buildu se větví do aplikací a interop příkladů pro jednotlivé jazyky."
+    }
+  },
+  "related": [
+    "rustler-test",
+    "rustler_mix",
+    "skull",
+    "in-rust-we-trust",
+    "haskell-world"
+  ],
+  "confidence": "medium"
+}

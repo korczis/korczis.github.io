@@ -1,0 +1,59 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "json2csv",
+  "sources": {
+    "github": "https://github.com/korczis/json2csv",
+    "gitlab": "https://gitlab.com/korczis/json2csv",
+    "commit": "2180d760a05989f3cefa75bb12929823f9a76fb6",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "json2csv.gemspec (tree)",
+      "lib (tree)",
+      "spec (tree)"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "cli",
+  "summary": {
+    "en": "A Ruby command-line tool that converts JSON into CSV, published as a gem. It flattens nested JSON objects into dotted column headers and supports a configurable delimiter and a root path to select the array or object to export.",
+    "cs": "Ruby nástroj příkazové řádky, který převádí JSON na CSV, publikovaný jako gem. Zplošťuje vnořené JSON objekty do tečkovaných hlaviček sloupců a podporuje nastavitelný oddělovač a root cestu pro výběr pole nebo objektu k exportu."
+  },
+  "problem": {
+    "en": "Nested JSON does not map directly onto a flat CSV, so converting it for spreadsheets or SQL import needs consistent flattening of keys.",
+    "cs": "Vnořený JSON se nemapuje přímo na ploché CSV, takže jeho převod pro tabulky nebo SQL import potřebuje konzistentní zplošťování klíčů."
+  },
+  "solution": {
+    "en": "The convert command reads a JSON file and writes a CSV where nested keys become dotted headers, with options for delimiter and root. It is the inverse counterpart of the csv2psql-style flattening convention.",
+    "cs": "Příkaz convert načte JSON soubor a zapíše CSV, kde se vnořené klíče stanou tečkovanými hlavičkami, s volbami pro oddělovač a root. Je obrácenou obdobou zplošťovací konvence ve stylu csv2psql."
+  },
+  "highlights": [
+    {
+      "en": "Flattens nested JSON keys into dotted CSV headers.",
+      "cs": "Zplošťuje vnořené JSON klíče na tečkované CSV hlavičky."
+    },
+    {
+      "en": "Configurable delimiter and a root path to pick the export node.",
+      "cs": "Nastavitelný oddělovač a root cesta pro výběr exportního uzlu."
+    },
+    {
+      "en": "Published as a gem with a spec suite.",
+      "cs": "Publikováno jako gem se sadou spec testů."
+    }
+  ],
+  "stack": [
+    "Ruby",
+    "RubyGems"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[JSON file] --> B[Parse]\n  B --> C[Flatten keys]\n  C --> D[Dotted headers]\n  D --> E[CSV output]",
+    "caption": {
+      "en": "JSON is parsed and flattened into dotted headers written out as CSV.",
+      "cs": "JSON se naparsuje a zploští do tečkovaných hlaviček zapsaných jako CSV."
+    }
+  },
+  "related": [
+    "csv2psql"
+  ],
+  "confidence": "high"
+}

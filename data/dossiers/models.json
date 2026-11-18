@@ -1,0 +1,52 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "models",
+  "sources": {
+    "github": "https://github.com/korczis/models",
+    "gitlab": "https://gitlab.com/korczis/models",
+    "commit": "65f53b21536af8e73a8563cb29241fb3e27af117",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      ".gitignore",
+      "LICENSE",
+      "top-level tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "data",
+  "summary": {
+    "en": "A store for two SketchUp 3D models of interior spaces (a florarium and a study), with a one-line README.",
+    "cs": "Úložiště dvou 3D modelů ze SketchUpu pro interiéry (florárium a pracovna) s jednořádkovým README."
+  },
+  "problem": {
+    "en": "Design files for home projects need versioning and a place to live outside one machine.",
+    "cs": "Návrhové soubory domácích projektů potřebují verzování a místo mimo jeden počítač."
+  },
+  "solution": {
+    "en": "The .skp files are committed directly to git; there is no export, rendering or tooling around them.",
+    "cs": "Soubory .skp jsou commitnuté přímo do gitu; žádný export, rendering ani nástroje kolem nich nejsou."
+  },
+  "highlights": [
+    {
+      "en": "Two SketchUp models",
+      "cs": "Dva modely ze SketchUpu"
+    },
+    {
+      "en": "Binary design files versioned in git",
+      "cs": "Binární návrhové soubory verzované v gitu"
+    }
+  ],
+  "stack": [
+    "SketchUp"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Sketch[SketchUp] --> Flor[florarium model]\n  Sketch --> Study[study model]\n  Flor --> Git[git repo]\n  Study --> Git",
+    "caption": {
+      "en": "Two model files versioned as-is.",
+      "cs": "Dva soubory modelů verzované tak, jak jsou."
+    }
+  },
+  "related": [],
+  "confidence": "low"
+}

@@ -1,0 +1,68 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "bubbler",
+  "sources": {
+    "github": "https://github.com/korczis/bubbler",
+    "gitlab": null,
+    "commit": "c9fff1ce7026eaa7001212272bef0aa661d04813",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "index.html",
+      "js/script.js",
+      ".github/workflows/deploy.yml",
+      "tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "app",
+  "summary": {
+    "en": "A browser app that draws speech bubbles and overlay text on an image with HTML5 canvas. Every text, font, colour and position comes from URL query parameters, so a generated image is a shareable link; when parameters are missing it picks a random image and a random saying from a bundled JSON set.",
+    "cs": "Webová aplikace, která na HTML5 canvasu kreslí bubliny s textem a popisky přes obrázek. Texty, písma, barvy i pozice se berou z query parametrů URL, takže výsledný obrázek je sdílitelný odkaz; bez parametrů zvolí náhodný obrázek a náhodnou hlášku z přiloženého JSONu."
+  },
+  "problem": {
+    "en": "Making a quick captioned meme-style image usually needs an editor, and the result is a file rather than a link that can be edited and reshared.",
+    "cs": "Rychlý obrázek s bublinou obvykle vyžaduje editor a výsledkem je soubor, ne odkaz, který jde upravit a znovu sdílet."
+  },
+  "solution": {
+    "en": "All state lives in the URL: the script reads query parameters, renders onto a canvas, and rewrites the URL so the current composition can be bookmarked. Settings can also be loaded from a custom JSON URL or saved to a hosted JSON storage service; the page carries Open Graph and Twitter card tags for link previews.",
+    "cs": "Veškerý stav je v URL: skript načte query parametry, vykreslí canvas a přepíše URL, aby šla aktuální kompozice uložit do záložek. Nastavení lze načíst i z vlastního JSONu nebo uložit do hostované JSON služby; stránka má Open Graph a Twitter card tagy pro náhledy odkazů."
+  },
+  "highlights": [
+    {
+      "en": "URL-as-state: top, center and bottom text plus font, size, colour, alignment and position parameters.",
+      "cs": "Stav v URL: horní, střední a dolní text plus písmo, velikost, barva, zarovnání a pozice."
+    },
+    {
+      "en": "Random image and saying when no parameters are given, from bundled JSON collections.",
+      "cs": "Bez parametrů náhodný obrázek a hláška z přiložených JSON kolekcí."
+    },
+    {
+      "en": "Static deployment on GitHub Pages, no build step.",
+      "cs": "Statické nasazení na GitHub Pages bez build kroku."
+    },
+    {
+      "en": "Open Graph and Twitter card meta tags for link previews.",
+      "cs": "Meta tagy Open Graph a Twitter card pro náhledy odkazů."
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "HTML5 Canvas",
+    "CSS",
+    "JSON",
+    "GitHub Pages"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[URL query params] --> C[script.js]\n  B[wisdoms JSON] --> C\n  I[Image set] --> C\n  C --> D[Canvas render]\n  C --> E[URL rewrite]\n  C --> F[JSON storage save]\n  D --> G[Shareable image]",
+    "caption": {
+      "en": "Query parameters and bundled data drive a canvas render; the URL is the saved state.",
+      "cs": "Query parametry a přiložená data řídí vykreslení canvasu; URL je uložený stav."
+    }
+  },
+  "related": [
+    "korczis.github.io",
+    "the-psycho"
+  ],
+  "confidence": "high"
+}

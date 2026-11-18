@@ -1,0 +1,69 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "maze",
+  "sources": {
+    "github": "https://github.com/korczis/maze",
+    "gitlab": "https://gitlab.com/korczis/maze",
+    "commit": "128ca3958c9e62c4fdc53efa72799283d66b056d",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "mix.exs",
+      "client/src/containers/Game/Game.js",
+      "web/channels/client_channel.ex",
+      "lib/maze/users.ex"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "app",
+  "summary": {
+    "en": "A Phoenix and React web application with a Three.js scene, user accounts and a realtime client lobby over Phoenix channels. The name suggests a maze game; the game view currently renders a textured cube with keyboard input.",
+    "cs": "Webová aplikace v Phoenixu a Reactu se scénou v Three.js, uživatelskými účty a realtime lobby klientů přes kanály Phoenixu. Název naznačuje bludišťovou hru; herní pohled zatím vykresluje otexturovanou kostku s ovládáním z klávesnice."
+  },
+  "problem": {
+    "en": "A browser game needs rendering, input, accounts and live presence of other clients. The intended game design is not described in the repository.",
+    "cs": "Prohlížečová hra potřebuje vykreslování, vstup, účty a živou přítomnost ostatních klientů. Zamýšlený herní design repozitář nepopisuje."
+  },
+  "solution": {
+    "en": "The React/Redux client draws a WebGL scene with Three.js, reads keys through keyboardjs and shows stats.js metrics. On the server, Guardian handles auth, a GenServer stores users in DETS with hashed passwords, and a client channel broadcasts worker join, update and remove events to a lobby.",
+    "cs": "React/Redux klient kreslí WebGL scénu v Three.js, klávesy čte přes keyboardjs a zobrazuje metriky stats.js. Na serveru řeší autentizaci Guardian, uživatele ukládá GenServer do DETS s hashovanými hesly a kanál klientů rozesílá do lobby události o připojení, změně a odpojení workerů."
+  },
+  "highlights": [
+    {
+      "en": "Three.js scene inside a Redux-connected React container.",
+      "cs": "Scéna v Three.js uvnitř React kontejneru napojeného na Redux."
+    },
+    {
+      "en": "Users persisted in DETS through a GenServer instead of a database.",
+      "cs": "Uživatelé uložení v DETS přes GenServer místo databáze."
+    },
+    {
+      "en": "Lobby broadcasts over Phoenix channels.",
+      "cs": "Rozesílání do lobby přes kanály Phoenixu."
+    }
+  ],
+  "stack": [
+    "Elixir",
+    "Phoenix",
+    "Guardian",
+    "DETS",
+    "React",
+    "Redux",
+    "Three.js",
+    "WebGL",
+    "Brunch"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[Keyboard input] --> B[React Game view]\n  B --> C[Three.js WebGL]\n  B --> D[Redux store]\n  D --> E[Phoenix socket]\n  E --> F[Client channel lobby]\n  G[Auth API] --> H[Users GenServer]\n  H --> I[(DETS)]",
+    "caption": {
+      "en": "Browser rendering with Three.js; accounts and lobby on Phoenix.",
+      "cs": "Vykreslení v prohlížeči přes Three.js; účty a lobby na Phoenixu."
+    }
+  },
+  "related": [
+    "maze-js",
+    "maze-rs",
+    "gooddata-graphql"
+  ],
+  "confidence": "medium"
+}

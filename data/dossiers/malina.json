@@ -1,0 +1,56 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "malina",
+  "sources": {
+    "github": "https://github.com/korczis/malina",
+    "gitlab": "https://gitlab.com/korczis/malina",
+    "commit": "acf695184dfaeba5da9233deb28dbea622e64e0e",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "script/sd-backup.sh",
+      "script/sd-restore.sh"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "config",
+  "summary": {
+    "en": "A Raspberry Pi playground (\"malina\" is Czech for raspberry). It holds two shell scripts that back up and restore the Pi's SD card as a raw image.",
+    "cs": "Hřiště pro Raspberry Pi (malina = raspberry). Obsahuje dva shellové skripty, které zálohují a obnovují SD kartu Pi jako surový obraz."
+  },
+  "problem": {
+    "en": "Experimenting on a Raspberry Pi risks breaking the SD card system image, so a quick way back to a known state is useful.",
+    "cs": "Experimenty na Raspberry Pi snadno rozbijí systém na SD kartě, takže se hodí rychlý návrat do známého stavu."
+  },
+  "solution": {
+    "en": "sd-backup.sh copies /dev/mmcblk0 to data/backup.img with dd, and sd-restore.sh writes the image back. Nothing else is in the repository.",
+    "cs": "sd-backup.sh zkopíruje přes dd /dev/mmcblk0 do data/backup.img a sd-restore.sh obraz zapíše zpět. Nic dalšího repozitář neobsahuje."
+  },
+  "highlights": [
+    {
+      "en": "Whole-card dd backup and restore",
+      "cs": "Záloha a obnova celé karty přes dd"
+    },
+    {
+      "en": "Paths are relative to the script directory and hard-code the mmcblk0 device",
+      "cs": "Cesty jsou relativní ke skriptu a zařízení mmcblk0 je napevno"
+    }
+  ],
+  "stack": [
+    "Shell",
+    "Bash",
+    "Raspberry Pi",
+    "dd"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  SD[SD card mmcblk0] --> B[sd-backup.sh]\n  B --> IMG[backup.img]\n  IMG --> R[sd-restore.sh]\n  R --> SD",
+    "caption": {
+      "en": "Round trip between the SD card and a raw image file.",
+      "cs": "Cesta tam a zpět mezi SD kartou a surovým obrazem."
+    }
+  },
+  "related": [
+    "home"
+  ],
+  "confidence": "low"
+}

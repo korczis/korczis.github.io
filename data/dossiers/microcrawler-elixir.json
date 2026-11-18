@@ -1,0 +1,72 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "microcrawler-elixir",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/microcrawler-elixir",
+    "commit": "a148fbd6b7b4242c2c60c875801c0fd9ec7b9adf",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "mix.exs",
+      "Makefile",
+      "lib/Microcrawler.ex",
+      "lib/microcrawler/worker/coordinator.ex",
+      "tree (recursive)"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "service",
+  "summary": {
+    "en": "A start of a Microcrawler reimplementation in Elixir as an OTP application. It defines supervisors and workers for a coordinator, a collector, an event manager and an AMQP to WebSocket bridge, plus clients for RabbitMQ, Couchbase and Elasticsearch.",
+    "cs": "Začátek přepisu Microcrawleru do Elixiru jako OTP aplikace. Definuje supervisory a workery pro koordinátor, collector, správce událostí a most z AMQP na WebSocket a k tomu klienty pro RabbitMQ, Couchbase a Elasticsearch."
+  },
+  "problem": {
+    "en": "The Node.js crawler ran workers as separate processes coordinated only through the queue; supervision, restarts and live progress reporting had to be handled outside the code.",
+    "cs": "Crawler v Node.js běžel jako samostatné procesy koordinované jen přes frontu; dohled, restarty a průběžné hlášení stavu se musely řešit mimo kód."
+  },
+  "solution": {
+    "en": "An OTP supervision tree starts an event supervisor, with dedicated supervisors for the coordinator, collector and AMQP to WebSocket bridge. Dependencies cover AMQP, Couchbase (cberl), Elasticsearch (tirexs), HTML parsing (Floki), HTTP (HTTPoison), running JavaScript processors (execjs) and Phoenix for the WebSocket side; releases are built with Distillery. Several workers, such as the coordinator, are still bare GenServer stubs.",
+    "cs": "OTP strom dohledu spouští supervisor událostí a samostatné supervisory pro koordinátor, collector a most z AMQP na WebSocket. Závislosti pokrývají AMQP, Couchbase (cberl), Elasticsearch (tirexs), parsování HTML (Floki), HTTP (HTTPoison), spouštění JavaScriptových procesorů (execjs) a Phoenix pro stranu WebSocketů; release staví Distillery. Některé workery, třeba koordinátor, jsou zatím jen holé GenServery."
+  },
+  "highlights": [
+    {
+      "en": "execjs dependency to reuse the JavaScript site processors from Elixir.",
+      "cs": "Závislost execjs pro použití JavaScriptových procesorů webů z Elixiru."
+    },
+    {
+      "en": "AMQP to WebSocket bridge as its own supervised component.",
+      "cs": "Most z AMQP na WebSocket jako samostatná dohlížená komponenta."
+    },
+    {
+      "en": "Dialyzer and ExDoc set up, Travis CI configured.",
+      "cs": "Nastavený Dialyzer a ExDoc, konfigurace pro Travis CI."
+    }
+  ],
+  "stack": [
+    "Elixir",
+    "OTP",
+    "Phoenix",
+    "RabbitMQ",
+    "Couchbase",
+    "Elasticsearch",
+    "Floki",
+    "HTTPoison",
+    "Distillery"
+  ],
+  "architecture": {
+    "mermaid": "flowchart TD\n  A[Microcrawler app] --> E[Event supervisor]\n  E --> C[Coordinator]\n  E --> CO[Collector]\n  E --> BR[AMQP WebSocket bridge]\n  C --> Q[RabbitMQ]\n  CO --> CB[Couchbase]\n  CO --> ES[Elasticsearch]\n  BR --> WS[Phoenix sockets]\n  C --> DL[Downloader]",
+    "caption": {
+      "en": "Planned OTP supervision tree and its external services.",
+      "cs": "Plánovaný OTP strom dohledu a jeho externí služby."
+    }
+  },
+  "related": [
+    "microcrawler-js",
+    "microcrawler",
+    "gauc-ex",
+    "microcrawler-ng",
+    "docks"
+  ],
+  "confidence": "medium"
+}

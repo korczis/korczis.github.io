@@ -1,0 +1,69 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "llm",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/llm",
+    "commit": "038a3c2d8f33304040418fd1b69a7aff3d84e5d8",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "mix.exs",
+      "top-level tree",
+      "lib/"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "library",
+  "summary": {
+    "en": "A local-first, provider-agnostic archive of AI conversations from ChatGPT, Claude, Gemini, Codex and generic JSON or JSONL exports, written in Elixir with Ecto. The archive is an immutable, content-addressed evidence layer, not memory: summaries, embeddings and extracted facts are separate rebuildable layers. The canonical domain is implemented and tested; no real provider importer is wired in yet.",
+    "cs": "Lokální archiv AI konverzací nezávislý na poskytovateli, pro exporty z ChatGPT, Claude, Gemini, Codex i obecný JSON a JSONL, napsaný v Elixiru s Ecto. Archiv je neměnná, obsahově adresovaná vrstva důkazů, ne paměť: shrnutí, embeddingy a vytěžená fakta jsou samostatné vrstvy, které jde znovu postavit. Kanonická doména je hotová a otestovaná, žádný skutečný importér poskytovatele zatím zapojený není."
+  },
+  "problem": {
+    "en": "Conversation exports from different AI providers use different shapes, and derived artefacts such as summaries are easily confused with the original transcript. Without hashing and provenance, a quote from a past conversation cannot be cited or re-verified.",
+    "cs": "Exporty konverzací od různých AI poskytovatelů mají různý tvar a odvozené artefakty jako shrnutí se snadno zamění s původním přepisem. Bez hashování a provenance nejde citát ze starší konverzace citovat ani znovu ověřit."
+  },
+  "solution": {
+    "en": "One canonical model covers sources, import runs, raw blobs, conversations, messages as a DAG, typed content blocks and deduplicated attachments, with providers as variants rather than branches. Deterministic fingerprints, a sharded content-addressed raw store and write-once import manifests make every message traceable to its import through citable URIs. An ingest pipeline wires detection, fingerprinting, raw preservation, validation with quarantine, normalisation, deduplication and persistence, verified so far against a fake provider.",
+    "cs": "Jeden kanonický model pokrývá zdroje, běhy importu, surové bloby, konverzace, zprávy jako DAG, typované bloky obsahu a deduplikované přílohy; poskytovatelé jsou varianty, ne větve. Deterministické otisky, shardované obsahově adresované úložiště a jednou zapisované manifesty importu dovolí dohledat každou zprávu až k jejímu importu přes citovatelné URI. Ingest pipeline spojuje detekci, otisk, uložení surových dat, validaci s karanténou, normalizaci, deduplikaci a uložení; zatím je ověřená proti falešnému poskytovateli."
+  },
+  "highlights": [
+    {
+      "en": "Archive treated as evidence: immutable, hashed, re-parsable and traceable to an import.",
+      "cs": "Archiv jako důkaz: neměnný, hashovaný, znovu parsovatelný a dohledatelný k importu."
+    },
+    {
+      "en": "Messages stored as a DAG with typed, forward-compatible content blocks.",
+      "cs": "Zprávy uložené jako DAG s typovanými, dopředně kompatibilními bloky obsahu."
+    },
+    {
+      "en": "Property tests for key-order-independent fingerprinting.",
+      "cs": "Property testy pro otisky nezávislé na pořadí klíčů."
+    },
+    {
+      "en": "Roadmap kept as a ratchet: nothing marked done until verified.",
+      "cs": "Roadmapa jako západka: nic se neoznačí za hotové, dokud není ověřené."
+    }
+  ],
+  "stack": [
+    "Elixir",
+    "Ecto",
+    "PostgreSQL",
+    "Jason",
+    "StreamData",
+    "GitLab CI"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Export[Provider export] --> Detect[Detect provider]\n  Detect --> Fp[Fingerprint]\n  Fp --> Raw[Raw blob store]\n  Raw --> Val[Validate or quarantine]\n  Val --> Norm[Normalise]\n  Norm --> Dedup[Deduplicate]\n  Dedup --> Db[PostgreSQL]\n  Db --> Man[Import manifest]",
+    "caption": {
+      "en": "The ingest pipeline preserves raw input before any normalisation, so every canonical message stays traceable.",
+      "cs": "Ingest pipeline uloží surový vstup ještě před normalizací, takže každá kanonická zpráva zůstává dohledatelná."
+    }
+  },
+  "related": [
+    "gists-search",
+    "sig",
+    "prismatic-majordomus"
+  ],
+  "confidence": "high"
+}

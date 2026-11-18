@@ -1,0 +1,57 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "skull-erlang",
+  "sources": {
+    "github": "https://github.com/korczis/skull-erlang",
+    "gitlab": "https://gitlab.com/korczis/skull-erlang",
+    "commit": "7817e6378d0293c37492ebbad12972012422c537",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "Makefile",
+      "tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "kata",
+  "summary": {
+    "en": "Erlang learning material in the skull family; currently a single hello_world module compiled and run by the Makefile.",
+    "cs": "Výukové materiály k Erlangu v rodině skull; zatím jediný modul hello_world, který Makefile zkompiluje a spustí."
+  },
+  "problem": {
+    "en": "Reserve an Erlang slot in the per-language learning collection with a working build.",
+    "cs": "Vyhradit místo pro Erlang ve sbírce podle jazyků, a to s funkčním buildem."
+  },
+  "solution": {
+    "en": "make test runs erlc on src/hello_world.erl and calls it from a headless erl shell. Travis CI runs the same target.",
+    "cs": "make test přeloží src/hello_world.erl přes erlc a zavolá ho z erl bez interaktivního shellu. Travis CI spouští totéž."
+  },
+  "highlights": [
+    {
+      "en": "Minimal: one Erlang source file.",
+      "cs": "Minimální: jeden zdrojový soubor v Erlangu."
+    }
+  ],
+  "stack": [
+    "Erlang",
+    "Make",
+    "Travis CI"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Make[make test] --> Erlc[erlc compile]\n  Erlc --> Beam[hello_world beam]\n  Beam --> Erl[erl noshell run]",
+    "caption": {
+      "en": "Compile and run loop of the single module.",
+      "cs": "Smyčka překladu a spuštění jediného modulu."
+    }
+  },
+  "related": [
+    "skull",
+    "skull-c",
+    "skull-cpp",
+    "skull-java",
+    "skull-ruby",
+    "skull-nodejs",
+    "skull-elixir"
+  ],
+  "confidence": "low"
+}

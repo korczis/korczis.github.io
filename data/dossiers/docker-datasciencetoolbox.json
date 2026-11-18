@@ -1,0 +1,68 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "docker-datasciencetoolbox",
+  "sources": {
+    "github": "https://github.com/korczis/docker-datasciencetoolbox",
+    "gitlab": "https://gitlab.com/korczis/docker-datasciencetoolbox",
+    "commit": "2ef449cf192a7742b2ea6224202a881c2831e80b",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "Dockefile"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "config",
+  "summary": {
+    "en": "A Docker image recipe for the open-source Data Science Toolbox environment on Ubuntu 14.04. It installs the Python scientific stack, Java 8 and a set of command-line data tools; the build file is committed as \"Dockefile\".",
+    "cs": "Recept na Docker image open-source prostředí Data Science Toolbox na Ubuntu 14.04. Instaluje vědecký stack Pythonu, Javu 8 a sadu nástrojů pro práci s daty z příkazové řádky; build soubor je commitnut jako \"Dockefile\"."
+  },
+  "problem": {
+    "en": "The toolbox is distributed as a set of install bundles for a virtual machine; running it as a lightweight container needs those steps rewritten for Docker.",
+    "cs": "Toolbox se distribuuje jako sada instalačních balíčků pro virtuální stroj; pro běh v lehkém kontejneru je potřeba tyto kroky přepsat pro Docker."
+  },
+  "solution": {
+    "en": "The file follows the toolbox bundles in sections: a base layer with NumPy, SciPy, matplotlib, pandas, scikit-learn and IPython, a statistics layer with statsmodels and seaborn, and a command-line layer with GNU parallel, jq, Go, Node.js and json2csv. R installation steps are present but commented out.",
+    "cs": "Soubor kopíruje bundly toolboxu po sekcích: základ s NumPy, SciPy, matplotlib, pandas, scikit-learn a IPythonem, statistickou vrstvu se statsmodels a seaborn a vrstvu pro příkazovou řádku s GNU parallel, jq, Go, Node.js a json2csv. Kroky pro instalaci R jsou přítomné, ale zakomentované."
+  },
+  "highlights": [
+    {
+      "en": "Sections mirror the upstream install bundles",
+      "cs": "Sekce odpovídají instalačním bundlům upstreamu"
+    },
+    {
+      "en": "Python scientific stack plus command-line data tools in one image",
+      "cs": "Vědecký stack Pythonu a nástroje pro data z příkazové řádky v jednom image"
+    },
+    {
+      "en": "Published usage via docker pull and an interactive bash session",
+      "cs": "Použití přes docker pull a interaktivní bash"
+    }
+  ],
+  "stack": [
+    "Docker",
+    "Ubuntu",
+    "Python",
+    "NumPy",
+    "pandas",
+    "scikit-learn",
+    "Java",
+    "Go",
+    "Node.js",
+    "jq"
+  ],
+  "architecture": {
+    "mermaid": "flowchart TD\n  A[Ubuntu 14.04] --> B[Base packages]\n  B --> C[Java 8]\n  B --> D[pip and Python stack]\n  D --> E[Statistics bundle]\n  B --> F[CLI tools bundle]\n  F --> G[jq and json2csv]\n  F --> H[Node.js and npm]\n  E --> I[Interactive bash]\n  G --> I",
+    "caption": {
+      "en": "Install sections of the image, from base packages to the command-line bundle.",
+      "cs": "Instalační sekce image od základních balíků po bundle nástrojů pro příkazovou řádku."
+    }
+  },
+  "related": [
+    "docker-dstk",
+    "datascience",
+    "datasciencecoursera",
+    "json2csv"
+  ],
+  "confidence": "medium"
+}

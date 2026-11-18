@@ -1,0 +1,49 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "codecademy",
+  "sources": {
+    "github": "https://github.com/korczis/codecademy",
+    "gitlab": "https://gitlab.com/korczis/codecademy",
+    "commit": "b0043b59aa1bc1d2cac3d6dae0fd082e05235a14",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "kata",
+  "summary": {
+    "en": "Small Ruby example scripts written for an online Ruby training course: arrays, conditionals, command-line input and string splitting, plus one exam exercise.",
+    "cs": "Drobné ukázkové skripty v Ruby z online kurzu Ruby: pole, podmínky, vstup z příkazové řádky a dělení řetězců, k tomu jedna zkoušková úloha."
+  },
+  "problem": {
+    "en": "Collect worked examples from a beginner Ruby course in one place.",
+    "cs": "Mít příklady z kurzu Ruby pro začátečníky pohromadě."
+  },
+  "solution": {
+    "en": "Six standalone example.*.rb files at the top level and an exams directory with one Czech-language task description.",
+    "cs": "Šest samostatných souborů example.*.rb v kořeni a adresář exams s jedním zadáním v češtině."
+  },
+  "highlights": [
+    {
+      "en": "Beginner-level scripts, no dependencies.",
+      "cs": "Skripty pro začátečníky, bez závislostí."
+    }
+  ],
+  "stack": [
+    "Ruby"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Repo[codecademy] --> Ex[example scripts]\n  Ex --> Arr[arrays]\n  Ex --> Cond[if elsif else]\n  Ex --> Input[command line input]\n  Repo --> Exams[exams task]",
+    "caption": {
+      "en": "Repository contents by topic.",
+      "cs": "Obsah repozitáře podle témat."
+    }
+  },
+  "related": [
+    "skull-ruby",
+    "algorithms-ruby"
+  ],
+  "confidence": "low"
+}

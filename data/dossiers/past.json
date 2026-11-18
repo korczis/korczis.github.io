@@ -1,0 +1,60 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "past",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/past",
+    "commit": "0acd95b8087527e4f1cb6070003c8097c158880a",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "top-level tree",
+      "system/"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "docs",
+  "summary": {
+    "en": "PAST (Prismatic Aided Story Telling) is a Czech-language prompt framework for capturing a writing style. It describes style through traits, quantifies them as metrics and tracks how the style changes over iterations. The repository is documentation and prompt material for working with an LLM, not code.",
+    "cs": "PAST (Prismatic Aided Story Telling) je česky psaný promptový rámec pro zachycení stylu psaní. Styl popisuje pomocí traits, kvantifikuje je jako metriky a sleduje, jak se styl mění v průběhu iterací. Repozitář tvoří dokumentace a promptové materiály pro práci s LLM, ne kód."
+  },
+  "problem": {
+    "en": "Getting an LLM to reproduce a particular writing style is hard to do consistently, and changes in style across drafts are rarely measured.",
+    "cs": "Přimět LLM, aby konzistentně napodobilo konkrétní styl psaní, je obtížné, a změny stylu mezi verzemi se málokdy měří."
+  },
+  "solution": {
+    "en": "A set of Markdown documents defines traits, metrics tracking, argument quality, fragment logic, perspective flow and morality guidelines, alongside a manual, glossary, quickstart, thematic presets and dedicated LLM instructions. The workflow runs iterative loops from a template, watches mood and metrics and ends with a final prompt.",
+    "cs": "Sada markdownových dokumentů definuje traits, sledování metrik, kvalitu argumentace, logiku fragmentů, tok perspektivy a morální zásady; k tomu manuál, slovníček, quickstart, tematické presety a samostatné instrukce pro LLM. Postup běží v iteracích podle šablony, sleduje náladu a metriky a končí finálním promptem."
+  },
+  "highlights": [
+    {
+      "en": "Style captured as named traits with quantified metrics.",
+      "cs": "Styl zachycený jako pojmenované traits s kvantifikovanými metrikami."
+    },
+    {
+      "en": "Dedicated LLM instructions and thematic presets.",
+      "cs": "Samostatné instrukce pro LLM a tematické presety."
+    },
+    {
+      "en": "Iterative loop with mood and metrics tracking across drafts.",
+      "cs": "Iterativní smyčka se sledováním nálady a metrik napříč verzemi."
+    }
+  ],
+  "stack": [
+    "Markdown",
+    "LLM prompting"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Sample[Writing sample] --> Traits[Trait analysis]\n  Traits --> Metrics[Metrics]\n  Metrics --> Loop[Iteration loop]\n  Loop --> Mood[Mood tracking]\n  Mood --> Loop\n  Loop --> Final[Final prompt]",
+    "caption": {
+      "en": "A style is analysed into traits and metrics, refined in loops and condensed into a final prompt.",
+      "cs": "Styl se rozloží na traits a metriky, zpřesňuje se ve smyčkách a zhustí do finálního promptu."
+    }
+  },
+  "related": [
+    "prism",
+    "tinder-nomics",
+    "cognitive-reasoning"
+  ],
+  "confidence": "low"
+}

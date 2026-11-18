@@ -1,0 +1,83 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "el-magico-cache",
+  "sources": {
+    "github": "https://github.com/korczis/el-magico-cache",
+    "gitlab": null,
+    "commit": "309449fa3cdaebd8a05a0815e6b61cc4a1d59779",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "mix.exs",
+      "fly.toml",
+      ".github/workflows/workflow.yml",
+      "lib/el_magico_labs/application.ex",
+      "lib/el_magico_labs/simple_cache.ex",
+      "lib/el_magico_labs/rehydrating_cache.ex",
+      "lib/el_magico_labs/distributed_supervisor.ex",
+      "lib/el_magico_labs/api/router.ex",
+      "lib/el_magico_labs/api/routes/cache/cache_handler.ex",
+      "lib/el_magico_labs/backend/ets_backend.ex",
+      "lib/el_magico_labs/backend/redis.ex"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "service",
+  "summary": {
+    "en": "An Elixir cache service built around registered resolver functions: values are computed by named zero-arity functions and kept in ETS for fast lookup, exposed over an OpenAPI-described HTTP API. The repository also documents a planned self-rehydrating variant that recomputes values periodically, which is still commented out.",
+    "cs": "Cache služba v Elixiru postavená na registrovaných resolverech: hodnoty počítají pojmenované funkce bez argumentů a výsledky se drží v ETS pro rychlé čtení, vše přes HTTP API popsané OpenAPI. Repozitář dokumentuje i plánovanou samoobnovující variantu, která hodnoty periodicky přepočítává; ta je zatím zakomentovaná."
+  },
+  "problem": {
+    "en": "Expensive computations whose results change rarely should not run on every request, yet callers need a simple keyed lookup and fresh enough values.",
+    "cs": "Drahé výpočty, jejichž výsledek se mění zřídka, by neměly běžet při každém požadavku, a přitom volající potřebuje jednoduché čtení podle klíče a dostatečně čerstvá data."
+  },
+  "solution": {
+    "en": "A GenServer owns an ETS table with write concurrency and a map of resolvers; a Plug/Cowboy router serves GET /api/cache/:id and POST /api/cache, validated by open_api_spex with a Swagger UI at the root. Horde provides a distributed dynamic supervisor across connected nodes, and the app ships as a release to Fly.io on every push via GitHub Actions, with Nix files for reproducible builds.",
+    "cs": "GenServer vlastní ETS tabulku se zapnutou write concurrency a mapu resolverů; router na Plug/Cowboy obsluhuje GET /api/cache/:id a POST /api/cache s validací přes open_api_spex a Swagger UI na kořeni. Horde dodává distribuovaný dynamický supervisor přes propojené uzly a aplikace se při každém pushi nasazuje přes GitHub Actions na Fly.io; Nix soubory slouží k reprodukovatelnému buildu."
+  },
+  "highlights": [
+    {
+      "en": "OpenAPI spec, request validation and Swagger UI via open_api_spex.",
+      "cs": "OpenAPI specifikace, validace požadavků a Swagger UI přes open_api_spex."
+    },
+    {
+      "en": "ETS-backed storage with pluggable backend modules (ETS, in-memory, Redis sketch).",
+      "cs": "Úložiště v ETS s vyměnitelnými backendy (ETS, in-memory, náčrt pro Redis)."
+    },
+    {
+      "en": "Horde distributed supervisor over the cluster membership.",
+      "cs": "Distribuovaný supervisor Horde nad členy clusteru."
+    },
+    {
+      "en": "Continuous deployment to Fly.io; Nix shell and release definitions.",
+      "cs": "Průběžné nasazení na Fly.io; Nix shell a definice releasu."
+    }
+  ],
+  "stack": [
+    "Elixir",
+    "OTP",
+    "ETS",
+    "Plug",
+    "Cowboy",
+    "OpenApiSpex",
+    "Horde",
+    "Nix",
+    "Docker",
+    "Fly.io",
+    "GitHub Actions"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  C[HTTP client] --> R[Plug router]\n  R --> V[OpenApiSpex validation]\n  V --> H[Cache handler]\n  H --> S[Store]\n  S --> G[SimpleCache GenServer]\n  G --> E[ETS table]\n  G --> F[Resolver functions]\n  R --> U[Swagger UI]\n  X[Horde supervisor] --> G",
+    "caption": {
+      "en": "Requests are validated against the OpenAPI spec, then served from ETS or computed by a registered resolver.",
+      "cs": "Požadavky se validují proti OpenAPI specifikaci a obslouží se z ETS nebo je spočítá registrovaný resolver."
+    }
+  },
+  "related": [
+    "grache",
+    "job-processor",
+    "dispatcher",
+    "rest-hello-world-benchmark"
+  ],
+  "confidence": "medium"
+}

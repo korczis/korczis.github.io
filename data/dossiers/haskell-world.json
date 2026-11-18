@@ -1,0 +1,53 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "haskell-world",
+  "sources": {
+    "github": "https://github.com/korczis/haskell-world",
+    "gitlab": "https://gitlab.com/korczis/haskell-world",
+    "commit": "38b8bbcaa32e72ed12690286e222cb84ab49e116",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "haskell-world.cabal (tree)",
+      "src (tree)",
+      "lib (tree)"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "kata",
+  "summary": {
+    "en": "A minimal Haskell learning project with a Cabal package, a lib and src tree, a Setup.hs and a ghci helper script. The README is a single \"Haskell World\" line.",
+    "cs": "Minimální učební Haskell projekt s Cabal balíčkem, stromem lib a src, Setup.hs a ghci pomocným skriptem. README je jediný řádek \"Haskell World\"."
+  },
+  "problem": {
+    "en": "Starting with Haskell needs a buildable Cabal skeleton and a quick way to load code into GHCi.",
+    "cs": "Začátek s Haskellem potřebuje sestavitelnou Cabal kostru a rychlý způsob načtení kódu do GHCi."
+  },
+  "solution": {
+    "en": "The project provides a Cabal package with a lib/src split and a ghci.sh convenience script for interactive sessions. It is a starter kata rather than a usable library.",
+    "cs": "Projekt poskytuje Cabal balíček s rozdělením lib/src a skript ghci.sh pro interaktivní sezení. Jde o startovní katu, ne o použitelnou knihovnu."
+  },
+  "highlights": [
+    {
+      "en": "Cabal package with a lib/src split.",
+      "cs": "Cabal balíček s rozdělením lib/src."
+    },
+    {
+      "en": "Includes a ghci helper script for interactive loading.",
+      "cs": "Obsahuje ghci pomocný skript pro interaktivní načítání."
+    }
+  ],
+  "stack": [
+    "Haskell",
+    "Cabal"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[Cabal package] --> B[src and lib]\n  B --> C[GHC build]\n  C --> D[GHCi session]",
+    "caption": {
+      "en": "A Cabal package builds with GHC and loads into a GHCi session.",
+      "cs": "Cabal balíček se sestaví pomocí GHC a načte do GHCi sezení."
+    }
+  },
+  "related": [],
+  "confidence": "low"
+}

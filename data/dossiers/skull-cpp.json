@@ -1,0 +1,56 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "skull-cpp",
+  "sources": {
+    "github": "https://github.com/korczis/skull-cpp",
+    "gitlab": "https://gitlab.com/korczis/skull-cpp",
+    "commit": "bf0e66a828fd3df9cebb9dff5bc3f1b924851c81",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "CMakeLists.txt (tree)",
+      "src (tree)"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "kata",
+  "summary": {
+    "en": "Learning materials for the C++ language, part of a family of same-named skull repos across many languages. It uses CMake and a Makefile, pulls in Boost as a submodule and has lib, src and vendor directories.",
+    "cs": "Učební materiály pro jazyk C++, součást rodiny stejnojmenných skull rep napříč mnoha jazyky. Používá CMake a Makefile, zatahuje Boost jako submodul a má adresáře lib, src a vendor."
+  },
+  "problem": {
+    "en": "Practising C++ needs a buildable sandbox with a modern build system and a common dependency wired in.",
+    "cs": "Procvičování C++ potřebuje sestavitelný sandbox s moderním build systémem a zapojenou běžnou závislostí."
+  },
+  "solution": {
+    "en": "The project sets up a CMake build with Boost vendored as a submodule, giving a place to work through C++ exercises. It is a learning kata rather than a deliverable.",
+    "cs": "Projekt připraví CMake build s Boostem vendorovaným jako submodul, čímž dává prostor pro procházení C++ cvičení. Jde o učební katu, ne o dodávku."
+  },
+  "highlights": [
+    {
+      "en": "CMake build with Boost vendored as a submodule.",
+      "cs": "CMake build s Boostem vendorovaným jako submodul."
+    },
+    {
+      "en": "One of the same-named skull learning repos across languages.",
+      "cs": "Jedno ze stejnojmenných skull učebních rep napříč jazyky."
+    }
+  ],
+  "stack": [
+    "C++",
+    "CMake",
+    "Boost"
+  ],
+  "architecture": {
+    "mermaid": "flowchart TD\n  A[Exercise] --> B[src]\n  B --> C[CMake build]\n  C --> D[Boost vendor]\n  D --> E[Binary]",
+    "caption": {
+      "en": "Exercise sources build with CMake against a vendored Boost into a binary.",
+      "cs": "Cvičné zdroje se sestaví pomocí CMake proti vendorovanému Boostu do binárky."
+    }
+  },
+  "related": [
+    "skull",
+    "skull-rust"
+  ],
+  "confidence": "low"
+}

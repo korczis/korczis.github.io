@@ -1,0 +1,77 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "the-scratch",
+  "sources": {
+    "github": "https://github.com/korczis/the-scratch",
+    "gitlab": "https://gitlab.com/korczis/the-scratch",
+    "commit": "a4387b79d97628936e2958ef53826fd8b2fbba83",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "mix.exs",
+      "top-level tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "app",
+  "summary": {
+    "en": "A single-page application with an Elm frontend and an Elixir/Phoenix backend, featuring GraphQL through Absinthe, OAuth sign-in and a Rust NIF.",
+    "cs": "Jednostránková aplikace s frontendem v Elmu a backendem v Elixiru a Phoenixu, s GraphQL přes Absinthe, přihlášením přes OAuth a Rust NIFem."
+  },
+  "problem": {
+    "en": "A reusable starting point for web apps needs authentication, an API, real-time channels and persistence wired together, not just a generator skeleton.",
+    "cs": "Znovupoužitelný základ webové aplikace potřebuje mít propojené autentizaci, API, real-time kanály a perzistenci, ne jen kostru z generátoru."
+  },
+  "solution": {
+    "en": "Phoenix 1.3 serves an Elm SPA built with webpack and exposes a GraphQL schema with resolvers via Absinthe. Guardian issues JWTs, Ueberauth providers handle social OAuth, a room channel and authenticated socket carry real-time traffic, and Ecto with PostgreSQL stores data. A Rust crate is compiled with Rustler, gauc provides a Couchbase module, and exprotobuf loads protobuf definitions for orders, currency pairs and users.",
+    "cs": "Phoenix 1.3 servíruje Elm SPA sestavenou webpackem a přes Absinthe vystavuje GraphQL schéma s resolvery. Guardian vydává JWT, poskytovatelé Ueberauth obsluhují sociální OAuth, room channel a autentizovaný socket nesou real-time provoz a Ecto s PostgreSQL ukládá data. Rustový crate se kompiluje přes Rustler, gauc dodává modul pro Couchbase a exprotobuf načítá protobuf definice pro objednávky, měnové páry a uživatele."
+  },
+  "highlights": [
+    {
+      "en": "README carries a feature checklist showing done and pending items",
+      "cs": "README obsahuje checklist funkcí s hotovými i rozpracovanými položkami"
+    },
+    {
+      "en": "JWT plus several OAuth providers",
+      "cs": "JWT a několik OAuth poskytovatelů"
+    },
+    {
+      "en": "Server-side test coverage reported through ExCoveralls",
+      "cs": "Pokrytí serverových testů hlášené přes ExCoveralls"
+    },
+    {
+      "en": "Rust NIF and Couchbase client alongside PostgreSQL",
+      "cs": "Rust NIF a klient pro Couchbase vedle PostgreSQL"
+    }
+  ],
+  "stack": [
+    "Elixir",
+    "Phoenix",
+    "Elm",
+    "Absinthe",
+    "GraphQL",
+    "Guardian",
+    "Ueberauth",
+    "Ecto",
+    "PostgreSQL",
+    "Rust",
+    "Rustler",
+    "Couchbase",
+    "protobuf",
+    "webpack"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Elm[Elm SPA] --> Gql[GraphQL Absinthe]\n  Elm --> Ws[Phoenix channels]\n  Elm --> Auth[Ueberauth OAuth]\n  Auth --> Jwt[Guardian JWT]\n  Gql --> Ecto[Ecto]\n  Ecto --> Pg[PostgreSQL]\n  Gql --> Cb[Couchbase via gauc]\n  Gql --> Nif[Rust NIF]",
+    "caption": {
+      "en": "Elm client against a Phoenix backend with several data and native integrations.",
+      "cs": "Elm klient proti backendu ve Phoenixu s několika datovými a nativními integracemi."
+    }
+  },
+  "related": [
+    "gauc.ex",
+    "tosh",
+    "generator-the-scratch",
+    "microscratch"
+  ],
+  "confidence": "medium"
+}

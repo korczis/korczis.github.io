@@ -1,0 +1,60 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "korczis-com",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/korczis-com",
+    "commit": "222df24e6faa29dc5752c624176d5dbb00f474ec",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "index.html",
+      "bower.json",
+      "tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "site",
+  "summary": {
+    "en": "An early personal website for the korczis.com domain. It is an HTML5 Boilerplate page with Bootstrap 3 from Bower, showing a heading and an embedded social timeline.",
+    "cs": "Raný osobní web pro doménu korczis.com. Je to stránka z HTML5 Boilerplate s Bootstrapem 3 přes Bower, která ukazuje nadpis a vložený timeline ze sociální sítě."
+  },
+  "problem": {
+    "en": "The personal domain needed a landing page.",
+    "cs": "Osobní doména potřebovala úvodní stránku."
+  },
+  "solution": {
+    "en": "A static index.html with Boilerplate defaults (robots.txt, humans.txt, .htaccess, 404 page), Bootstrap 3.1.1, jQuery and Modernizr managed through Bower, an embedded timeline widget and a page analytics snippet.",
+    "cs": "Statický index.html s výchozími soubory Boilerplate (robots.txt, humans.txt, .htaccess, stránka 404), Bootstrap 3.1.1, jQuery a Modernizr spravované přes Bower, vložený widget s timelinem a měřicí skript návštěvnosti."
+  },
+  "highlights": [
+    {
+      "en": "Predecessor of the current personal hub.",
+      "cs": "Předchůdce současného osobního hubu."
+    },
+    {
+      "en": "Static files only; no build step besides bower install.",
+      "cs": "Jen statické soubory; kromě bower install žádný build."
+    }
+  ],
+  "stack": [
+    "HTML",
+    "CSS",
+    "Bootstrap",
+    "jQuery",
+    "Bower"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  B[Bower components] --> I[index.html]\n  C[main.css] --> I\n  I --> W[Timeline widget]\n  I --> V[Visitor]",
+    "caption": {
+      "en": "One static page assembled from Bower components.",
+      "cs": "Jedna statická stránka složená z komponent z Boweru."
+    }
+  },
+  "related": [
+    "korczis.github.io",
+    "korczis-github-com",
+    "korczis.gitlab.io"
+  ],
+  "confidence": "low"
+}

@@ -1,0 +1,61 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "pavian-eu",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/pavian-eu",
+    "commit": "edd9c902106dcb286c543422219851c99dc29312",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "index.html",
+      "tree /"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "site",
+  "summary": {
+    "en": "The static website of the pavian.eu domain. The tree matches the HTML5 Boilerplate starter (.htaccess, 404.html, humans.txt, crossdomain.xml, Modernizr, normalize.css), with Bootstrap pulled in through Bower.",
+    "cs": "Statický web domény pavian.eu. Struktura odpovídá startéru HTML5 Boilerplate (.htaccess, 404.html, humans.txt, crossdomain.xml, Modernizr, normalize.css) a Bootstrap se tahá přes Bower."
+  },
+  "problem": {
+    "en": "A registered domain needed a minimal landing page that could be served as plain static files.",
+    "cs": "Registrovaná doména potřebovala minimální úvodní stránku servírovatelnou jako čisté statické soubory."
+  },
+  "solution": {
+    "en": "The index page renders a centred heading linking to the domain itself on top of the boilerplate and Bootstrap styles. Any further purpose of the site is unclear from the repository.",
+    "cs": "Úvodní stránka zobrazuje na boilerplatu a stylech Bootstrapu jen vycentrovaný nadpis s odkazem na samotnou doménu. Další účel webu z repozitáře není jasný."
+  },
+  "highlights": [
+    {
+      "en": "Standard boilerplate files for caching, error page and robots.",
+      "cs": "Standardní soubory boilerplatu pro cache, chybovou stránku a roboty."
+    },
+    {
+      "en": "Front-end dependencies managed with Bower.",
+      "cs": "Front-endové závislosti spravuje Bower."
+    }
+  ],
+  "stack": [
+    "HTML",
+    "CSS",
+    "Bootstrap",
+    "Modernizr",
+    "Bower",
+    "Apache .htaccess"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  BOW[Bower components] --> IDX[index.html]\n  BP[Boilerplate files] --> IDX\n  CSS[main.css] --> IDX\n  IDX --> WEB[Static web server]\n  WEB --> V[Visitor]",
+    "caption": {
+      "en": "A boilerplate static page served as plain files.",
+      "cs": "Statická stránka na boilerplatu servírovaná jako obyčejné soubory."
+    }
+  },
+  "related": [
+    "pavian.eu",
+    "korczis-com",
+    "annasabatova-cz",
+    "apollocrawler-com"
+  ],
+  "confidence": "low"
+}

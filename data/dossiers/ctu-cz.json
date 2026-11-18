@@ -1,0 +1,73 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "ctu-cz",
+  "sources": {
+    "github": "https://github.com/korczis/ctu-cz",
+    "gitlab": null,
+    "commit": "9669994e2f47e3d87df69594e0eed766f9188026",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "Cargo.toml",
+      "Makefile",
+      "src/main.rs",
+      "tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "data",
+  "summary": {
+    "en": "A workspace for the Czech telecommunications regulator's open radio-spectrum data. A Makefile downloads the CSV export, a small Rust program walks and parses every table, and the repository keeps a snapshot of the tables plus HTML pages prepared for vis.js, three.js and Processing visualisations.",
+    "cs": "Pracovní prostor pro otevřená data českého telekomunikačního regulátora o rádiovém spektru. Makefile stáhne CSV export, malý program v Rustu projde a naparsuje všechny tabulky a repozitář drží jejich snapshot a HTML stránky připravené pro vizualizace ve vis.js, three.js a Processingu."
+  },
+  "problem": {
+    "en": "The spectrum allocation plan is published as many related CSV tables (allocations, frequencies, services, licences, translations) that are hard to read as a whole.",
+    "cs": "Plán přidělení kmitočtů je publikovaný jako mnoho provázaných CSV tabulek (přidělení, kmitočty, služby, licence, překlady), které se špatně čtou jako celek."
+  },
+  "solution": {
+    "en": "make downloads and unzips the export into spektrum/; the Rust binary reads the directory in sorted order and parses each file with the csv crate. Visualisation pages and vendored libraries sit in web/, but how far the visualisation got is unclear from the tree.",
+    "cs": "make stáhne a rozbalí export do spektrum/; binárka v Rustu čte adresář v seřazeném pořadí a každý soubor parsuje crate csv. Vizualizační stránky a přibalené knihovny jsou ve web/, jak daleko se vizualizace dostala, ale ze stromu jasné není."
+  },
+  "highlights": [
+    {
+      "en": "Snapshot of about two dozen spectrum tables with translation tables.",
+      "cs": "Snapshot zhruba dvou desítek tabulek spektra včetně překladových."
+    },
+    {
+      "en": "Reproducible download and extract via Makefile.",
+      "cs": "Opakovatelné stažení a rozbalení přes Makefile."
+    },
+    {
+      "en": "Rust CSV reader as the parsing base.",
+      "cs": "Čtečka CSV v Rustu jako základ parsování."
+    },
+    {
+      "en": "Prepared vis.js network/timeline, three.js and Processing pages.",
+      "cs": "Připravené stránky pro vis.js (síť, časová osa), three.js a Processing."
+    }
+  ],
+  "stack": [
+    "Rust",
+    "csv",
+    "Make",
+    "curl",
+    "JavaScript",
+    "vis.js",
+    "three.js",
+    "Processing.js"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  SRC[Open data CSV export] --> MK[Makefile download]\n  MK --> DIR[spektrum tables]\n  DIR --> RS[Rust CSV parser]\n  DIR --> WEB[web pages]\n  WEB --> VIS[vis.js]\n  WEB --> THR[three.js]\n  WEB --> PRC[Processing]",
+    "caption": {
+      "en": "Open data is fetched once, then parsed in Rust or visualised in the browser.",
+      "cs": "Otevřená data se jednou stáhnou a pak se parsují v Rustu nebo vizualizují v prohlížeči."
+    }
+  },
+  "related": [
+    "czech-stats",
+    "data-atlas",
+    "data-playground",
+    "csv2psql"
+  ],
+  "confidence": "medium"
+}

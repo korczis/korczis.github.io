@@ -1,0 +1,68 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "sli2dli",
+  "sources": {
+    "github": "https://github.com/korczis/sli2dli",
+    "gitlab": "https://gitlab.com/korczis/sli2dli",
+    "commit": "69bcf1145b8778f3a9b5cd815615d91afdc304bf",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "Cargo.toml",
+      "Makefile",
+      "src/main.rs",
+      "src/processor/processor.rs"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "cli",
+  "summary": {
+    "en": "A Rust command-line tool that reads CSV files described by an SLI data-load manifest and converts them toward the DLI loading format of an analytics platform. It parses the manifest, reads rows in bulks and transposes them per column on a separate thread.",
+    "cs": "Nástroj pro příkazovou řádku v Rustu, který čte CSV soubory popsané manifestem pro nahrávání dat SLI a převádí je směrem k formátu DLI analytické platformy. Rozparsuje manifest, čte řádky po dávkách a v samostatném vlákně je transponuje po sloupcích."
+  },
+  "problem": {
+    "en": "Converting large CSV loads between the two upload formats in a scripting language was slow. The data has to be reorganised column by column, which is memory and CPU heavy.",
+    "cs": "Převod velkých CSV dávek mezi dvěma formáty nahrávání ve skriptovacím jazyce byl pomalý. Data se musí přeskládat po sloupcích, což je náročné na paměť i CPU."
+  },
+  "solution": {
+    "en": "Serde structs model the manifest (data set, parts, CSV parameters). The processor reads records with the csv crate, sends bulks over a bounded mpsc channel and a transpose thread accumulates values per column until an end-of-stream message; a profiler module times scopes. The README lists Bloom filters, cuckoo hashing and FNV hashing as reference material, and the build targets the native CPU with SSSE3.",
+    "cs": "Serde struktury modelují manifest (data set, části, parametry CSV). Procesor čte záznamy crate csv, posílá dávky přes omezený kanál mpsc a vlákno transpozice skládá hodnoty po sloupcích až do zprávy o konci proudu; modul profiler měří čas jednotlivých bloků. README odkazuje na Bloom filtry, cuckoo hashing a FNV hash jako podklady a build cílí na nativní CPU se SSSE3."
+  },
+  "highlights": [
+    {
+      "en": "Bounded channel between reader and transpose thread gives back-pressure.",
+      "cs": "Omezený kanál mezi čtečkou a vláknem transpozice dává zpětný tlak."
+    },
+    {
+      "en": "Manifest-driven parsing with serde_json.",
+      "cs": "Parsování řízené manifestem přes serde_json."
+    },
+    {
+      "en": "Scope profiler built on an end-of-scope trait.",
+      "cs": "Profiler bloků postavený na traitu pro konec scope."
+    }
+  ],
+  "stack": [
+    "Rust",
+    "serde",
+    "csv",
+    "clap",
+    "crossbeam",
+    "mio"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[SLI manifest] --> B[Manifest parser]\n  C[CSV files] --> D[CSV reader]\n  B --> D\n  D --> E[Bulk sender]\n  E --> F[Transpose thread]\n  F --> G[Per column data]\n  H[Profiler] --> D",
+    "caption": {
+      "en": "Manifest-driven CSV reading with a channel into a per-column transpose thread.",
+      "cs": "Čtení CSV řízené manifestem s kanálem do vlákna transpozice po sloupcích."
+    }
+  },
+  "related": [
+    "streamflow",
+    "wims",
+    "gooddata-fs",
+    "gooddata-ruby-examples",
+    "csv2psql"
+  ],
+  "confidence": "medium"
+}

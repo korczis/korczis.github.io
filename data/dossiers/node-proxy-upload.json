@@ -1,0 +1,52 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "node-proxy-upload",
+  "sources": {
+    "github": "https://github.com/korczis/node-proxy-upload",
+    "gitlab": "https://gitlab.com/korczis/node-proxy-upload",
+    "commit": "ce3e0150693ed26df628ced4d69de46f0e123a96",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "app.js (tree)",
+      "package.json (tree)"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "kata",
+  "summary": {
+    "en": "A tiny Node.js experiment that accepts a file upload over HTTP, demonstrated with a curl command posting to an /api/upload endpoint. It is a single app.js with a package.json.",
+    "cs": "Drobný Node.js experiment, který přijímá upload souboru přes HTTP, předvedený curl příkazem posílajícím na endpoint /api/upload. Jde o jediný app.js s package.json."
+  },
+  "problem": {
+    "en": "Testing how a Node server receives and proxies a file upload benefits from a minimal reproducible endpoint.",
+    "cs": "Ověření, jak Node server přijme a přeposílá upload souboru, těží z minimálního reprodukovatelného endpointu."
+  },
+  "solution": {
+    "en": "The app exposes an upload endpoint over HTTP in a single file, meant for trying the upload flow with curl. It is a learning snippet, not a product.",
+    "cs": "Aplikace vystavuje upload endpoint přes HTTP v jediném souboru, určený k vyzkoušení upload toku pomocí curl. Jde o učební úryvek, ne o produkt."
+  },
+  "highlights": [
+    {
+      "en": "Single-file Node HTTP upload endpoint.",
+      "cs": "Node HTTP upload endpoint v jediném souboru."
+    },
+    {
+      "en": "Demonstrated with a curl multipart POST.",
+      "cs": "Předvedeno curl multipart POST požadavkem."
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "Node.js"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[curl] --> B[HTTP server]\n  B --> C[Upload handler]\n  C --> D[Stored file]",
+    "caption": {
+      "en": "An HTTP server receives a multipart upload and stores the file.",
+      "cs": "HTTP server přijme multipart upload a uloží soubor."
+    }
+  },
+  "related": [],
+  "confidence": "low"
+}

@@ -1,0 +1,48 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "ideas",
+  "sources": {
+    "github": "https://github.com/korczis/ideas",
+    "gitlab": "https://gitlab.com/korczis/ideas",
+    "commit": "3a8f39e6cc2883c041cca0c5532ec86e37c3cc39",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "LICENSE"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "docs",
+  "summary": {
+    "en": "A repository meant to collect ideas. It holds only a README with the line \"Just Ideas\" and a licence.",
+    "cs": "Repozitář určený ke sbírání nápadů. Obsahuje jen README s řádkem „Just Ideas“ a licenci."
+  },
+  "problem": {
+    "en": "Unclear: no ideas are recorded yet.",
+    "cs": "Nejasné: žádné nápady zatím zapsané nejsou."
+  },
+  "solution": {
+    "en": "Unclear: nothing beyond the README exists.",
+    "cs": "Nejasné: kromě README nic neexistuje."
+  },
+  "highlights": [
+    {
+      "en": "Two files, no content.",
+      "cs": "Dva soubory bez obsahu."
+    }
+  ],
+  "stack": [
+    "Markdown"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[ideas] --> B[README]\n  A --> C[LICENSE]\n  B --> D[No entries]\n  C --> D",
+    "caption": {
+      "en": "Repository contents only.",
+      "cs": "Jen obsah repozitáře."
+    }
+  },
+  "related": [
+    "marketing-ideas"
+  ],
+  "confidence": "low"
+}

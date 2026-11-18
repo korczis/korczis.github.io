@@ -1,0 +1,56 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "babel-plugin-transform-graphql",
+  "sources": {
+    "github": "https://github.com/korczis/babel-plugin-transform-graphql",
+    "gitlab": "https://gitlab.com/korczis/babel-plugin-transform-graphql",
+    "commit": "bd4facc3dbc2c42afe50aaf1fff26f01181eea8c",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "package.json (tree)",
+      "src (tree)",
+      "test (tree)"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "library",
+  "summary": {
+    "en": "A Babel plugin for transforming GraphQL in JavaScript source, packaged with a src, a dist, a test directory and ESLint/EditorConfig settings. The README is a one-line description.",
+    "cs": "Babel plugin pro transformaci GraphQL v JavaScriptovém zdroji, zabalený se src, dist, adresářem test a nastavením ESLint/EditorConfig. README je jednořádkový popis."
+  },
+  "problem": {
+    "en": "Embedding GraphQL in JavaScript is cleaner when a build step rewrites it rather than parsing queries at runtime.",
+    "cs": "Vkládání GraphQL do JavaScriptu je čistší, když jej přepíše build krok, místo parsování dotazů za běhu."
+  },
+  "solution": {
+    "en": "The plugin hooks into the Babel transform pipeline to rewrite GraphQL constructs during compilation, with tests covering the transform. The exact transformation rules are defined in src.",
+    "cs": "Plugin se zapojuje do Babel transform pipeline a přepisuje GraphQL konstrukce při kompilaci, s testy pokrývajícími transformaci. Přesná pravidla transformace jsou definována v src."
+  },
+  "highlights": [
+    {
+      "en": "Runs as a Babel transform plugin at compile time.",
+      "cs": "Běží jako Babel transform plugin při kompilaci."
+    },
+    {
+      "en": "Includes a test directory and a built dist.",
+      "cs": "Obsahuje adresář test a sestavený dist."
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "Babel",
+    "GraphQL"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[JS with GraphQL] --> B[Babel parser]\n  B --> C[Transform plugin]\n  C --> D[Rewritten AST]\n  D --> E[Output JS]",
+    "caption": {
+      "en": "The plugin rewrites GraphQL in the Babel AST into output JavaScript at build time.",
+      "cs": "Plugin přepisuje GraphQL v Babel AST na výstupní JavaScript při buildu."
+    }
+  },
+  "related": [
+    "gooddata-graphql"
+  ],
+  "confidence": "medium"
+}

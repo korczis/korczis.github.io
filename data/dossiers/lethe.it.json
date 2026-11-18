@@ -1,0 +1,77 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "lethe.it",
+  "sources": {
+    "github": "https://github.com/korczis/lethe.it",
+    "gitlab": null,
+    "commit": "5fee04d968e8fb46355b1c0e947d156a73b40b4a",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "package.json",
+      "bower.json",
+      "TODO.md",
+      "CHANGELOG.md",
+      "recursive tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "app",
+  "summary": {
+    "en": "A personal smart-links archive: a Node.js and Express server with an Ember.js client that imports items from social accounts and stores them for organising and classification. Sign-in works through Facebook, GitHub and Twitter.",
+    "cs": "Osobní chytrý archiv odkazů: server v Node.js a Expressu s klientem v Ember.js, který importuje položky ze sociálních účtů a ukládá je k třídění a klasifikaci. Přihlášení funguje přes Facebook, GitHub a Twitter."
+  },
+  "problem": {
+    "en": "Links shared and saved across several social networks end up scattered and hard to search, categorise or keep.",
+    "cs": "Odkazy sdílené a ukládané na několika sociálních sítích skončí roztroušené a špatně se v nich hledá, třídí je nebo uchovává."
+  },
+  "solution": {
+    "en": "lib/ holds the server: modular Express middleware for auth, sessions, caching, cookies and sockets, Passport strategies, routes for items and users, a Facebook adapter and a Mongoose persistence layer with item and user models. public/app is an Ember and Ember Data client loaded with RequireJS, built by a gulp pipeline with Sass, Handlebars precompilation and live reload. The TODO shows search, categorisation and classification views and further adapters as unfinished.",
+    "cs": "lib/ obsahuje server: modulární middleware Expressu pro autentizaci, session, cache, cookies a sockety, strategie Passportu, routy pro položky a uživatele, adaptér pro Facebook a perzistenci v Mongoose s modely položky a uživatele. public/app je klient v Ember a Ember Data načítaný přes RequireJS, sestavovaný gulp pipeline se Sass, předkompilací Handlebars a live reloadem. Podle TODO zůstaly pohledy pro hledání, kategorizaci a klasifikaci a další adaptéry nedokončené."
+  },
+  "highlights": [
+    {
+      "en": "OAuth sign-in via Passport for three social providers",
+      "cs": "OAuth přihlášení přes Passport pro tři sociální sítě"
+    },
+    {
+      "en": "Per-environment configuration with merging and ENV overrides",
+      "cs": "Konfigurace podle prostředí se slučováním a přepisem z ENV"
+    },
+    {
+      "en": "Real-time channel through socket.io middleware",
+      "cs": "Kanál v reálném čase přes middleware socket.io"
+    },
+    {
+      "en": "Session store options for MongoDB and CouchDB",
+      "cs": "Úložiště session pro MongoDB a CouchDB"
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "Node.js",
+    "Express",
+    "Ember.js",
+    "Ember Data",
+    "MongoDB",
+    "Mongoose",
+    "Passport",
+    "socket.io",
+    "gulp",
+    "Bootstrap"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[Ember client] --> B[Express server]\n  B --> C[Passport auth]\n  C --> D[Facebook GitHub Twitter]\n  B --> E[Item routes]\n  E --> F[Mongoose models]\n  F --> G[MongoDB]\n  H[Facebook adapter] --> F\n  B --> I[socket.io]",
+    "caption": {
+      "en": "Client, server, auth providers and persistence of the links archive.",
+      "cs": "Klient, server, poskytovatelé přihlášení a perzistence archivu odkazů."
+    }
+  },
+  "related": [
+    "lethe-it",
+    "microscratch",
+    "generator-microscratch",
+    "microscratch-react"
+  ],
+  "confidence": "high"
+}

@@ -1,0 +1,71 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "simple_geocoder",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/simple_geocoder",
+    "commit": "c2d277fb28e7c21c1dc9ec5de0c29c00cc749ee4",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "mix.exs",
+      "lib/simple_geocoder.ex",
+      "tree /",
+      "tree lib/"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "library",
+  "summary": {
+    "en": "An Elixir library and OTP application for geocoding addresses and computing distances, with clients for OpenStreetMap and for a Czech mapping API. It grows the CSV distance workflow into a supervised application with a persistent cache.",
+    "cs": "Knihovna a OTP aplikace v Elixiru pro geokódování adres a výpočet vzdáleností s klienty pro OpenStreetMap a pro český mapový API. Rozvíjí workflow výpočtu vzdáleností z CSV do supervizované aplikace s perzistentní cache."
+  },
+  "problem": {
+    "en": "Bulk distance calculation from a fixed origin to many addresses needs a geocoder that does not hammer external services and survives restarts. A single hard-wired provider was also too limiting.",
+    "cs": "Hromadný výpočet vzdáleností z jednoho výchozího bodu na mnoho adres potřebuje geokodér, který nezahltí externí služby a přežije restart. Jediný natvrdo zapojený poskytovatel byl navíc příliš omezující."
+  },
+  "solution": {
+    "en": "process_csv streams a CSV, geocodes the configurable destination column through the OpenStreetMap client, adds haversine and routed distances and writes an output CSV. Cachex caches lookups and is dumped to disk after a run. The README also documents geocode and route functions; their exact location in the code is unclear from what was read.",
+    "cs": "process_csv čte CSV streamem, geokóduje nastavitelný sloupec s cílem přes klienta OpenStreetMap, doplní vzdušnou a silniční vzdálenost a zapíše výstupní CSV. Cachex cachuje dotazy a po běhu se uloží na disk. README popisuje i funkce geocode a route; kde přesně v kódu jsou, z přečtených souborů není jasné."
+  },
+  "highlights": [
+    {
+      "en": "Pluggable provider clients: OpenStreetMap and a second mapping API.",
+      "cs": "Vyměnitelní klienti poskytovatelů: OpenStreetMap a druhý mapový API."
+    },
+    {
+      "en": "Cachex cache persisted to cache.etf between runs.",
+      "cs": "Cachex cache se mezi běhy ukládá do cache.etf."
+    },
+    {
+      "en": "Failed geocodes are logged and the row is kept rather than dropped.",
+      "cs": "Neúspěšné geokódování se zaloguje a řádek se ponechá místo zahození."
+    },
+    {
+      "en": "Credo, Dialyzer with a project PLT, release config and docker-compose.",
+      "cs": "Credo, Dialyzer s projektovým PLT, konfigurace releasu a docker-compose."
+    }
+  ],
+  "stack": [
+    "Elixir",
+    "OTP",
+    "Cachex",
+    "Tesla",
+    "CSV",
+    "OpenStreetMap",
+    "Credo",
+    "Dialyzer",
+    "Docker"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  IN[Input CSV] --> PC[process_csv]\n  PC --> OSM[OSM client]\n  PC --> MAP[Mapping API client]\n  OSM --> CX[(Cachex cache)]\n  PC --> DIST[Distance module]\n  DIST --> OUT[Output CSV]\n  CX --> DUMP[cache.etf on disk]",
+    "caption": {
+      "en": "Provider clients feed a shared cache; the distance module enriches each row of the CSV.",
+      "cs": "Klienti poskytovatelů plní sdílenou cache; modul vzdáleností obohacuje každý řádek CSV."
+    }
+  },
+  "related": [
+    "distance-calculator"
+  ],
+  "confidence": "medium"
+}

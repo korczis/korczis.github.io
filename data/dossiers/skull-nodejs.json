@@ -1,0 +1,58 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "skull-nodejs",
+  "sources": {
+    "github": "https://github.com/korczis/skull-nodejs",
+    "gitlab": "https://gitlab.com/korczis/skull-nodejs",
+    "commit": "4cf0c989aa196c7cf5ba7cd3b4c62dc3995f5add",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "package.json",
+      "Makefile",
+      "tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "kata",
+  "summary": {
+    "en": "A placeholder for Node.js learning material in the skull family: package.json, a stub Makefile and CI config, no code.",
+    "cs": "Zárodek výukových materiálů k Node.js v rodině skull: package.json, prázdný Makefile a konfigurace CI, žádný kód."
+  },
+  "problem": {
+    "en": "Reserve a Node.js slot in the per-language learning collection.",
+    "cs": "Vyhradit místo pro Node.js ve sbírce výukových materiálů podle jazyků."
+  },
+  "solution": {
+    "en": "npm test calls make ci, whose targets are still empty. The main entry index.js named in package.json does not exist in the tree.",
+    "cs": "npm test volá make ci, jehož cíle jsou zatím prázdné. Vstupní soubor index.js uvedený v package.json ve stromu není."
+  },
+  "highlights": [
+    {
+      "en": "Scaffold only, wired for CI through Make.",
+      "cs": "Pouze kostra, napojená na CI přes Make."
+    }
+  ],
+  "stack": [
+    "Node.js",
+    "npm",
+    "Make",
+    "Travis CI"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Npm[npm test] --> Make[make ci]\n  Make --> Empty[empty targets]\n  CI[Travis CI] --> Npm",
+    "caption": {
+      "en": "The test hook chain of an otherwise empty scaffold.",
+      "cs": "Řetězec testovacích hooků jinak prázdné kostry."
+    }
+  },
+  "related": [
+    "skull",
+    "skull-c",
+    "skull-cpp",
+    "skull-java",
+    "skull-ruby",
+    "skull-haskell"
+  ],
+  "confidence": "low"
+}

@@ -1,0 +1,62 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "zlown",
+  "sources": {
+    "github": "https://github.com/korczis/zlown",
+    "gitlab": "https://gitlab.com/korczis/zlown",
+    "commit": "d096a5b32cf6b8b3f5acab51cffac5c111e82613",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "zlown.gemspec (tree)",
+      "lib (tree)",
+      "etc (tree)"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "cli",
+  "summary": {
+    "en": "A Ruby security-research CLI that turns a single-board computer into a configurable Wi-Fi access point. It connects upstream over an LTE modem, shares connectivity over Wi-Fi via hostapd and dnsmasq, logs all HTTP traffic, and runs as a systemd service with config and captured data under a dot-directory.",
+    "cs": "Ruby CLI pro bezpečnostní výzkum, které promění jednodeskový počítač v konfigurovatelný Wi-Fi přístupový bod. Připojuje se na internet přes LTE modem, sdílí konektivitu přes Wi-Fi pomocí hostapd a dnsmasq, loguje veškerý HTTP provoz a běží jako systemd služba s konfigurací a zachycenými daty pod dot-adresářem."
+  },
+  "problem": {
+    "en": "Studying how clients behave on an untrusted access point needs a reproducible, scriptable AP that records traffic for later analysis, intended for authorized testing.",
+    "cs": "Zkoumání chování klientů na nedůvěryhodném přístupovém bodu vyžaduje reprodukovatelný, skriptovatelný AP, který zaznamenává provoz pro pozdější analýzu, určený pro autorizované testování."
+  },
+  "solution": {
+    "en": "Zlown provides install, init, enable and start subcommands that provision the required services and bring up the AP, with HTTP traffic logged to a data directory. The README lists planned features and states it is for authorized testing and education only.",
+    "cs": "Zlown nabízí podpříkazy install, init, enable a start, které zprovozní potřebné služby a nastartují AP, s HTTP provozem logovaným do datového adresáře. README uvádí plánované funkce a zdůrazňuje použití jen pro autorizované testování a výuku."
+  },
+  "highlights": [
+    {
+      "en": "Brings up a Wi-Fi AP with hostapd and dnsmasq, upstream over LTE.",
+      "cs": "Zprovozní Wi-Fi AP pomocí hostapd a dnsmasq, uplink přes LTE."
+    },
+    {
+      "en": "Runs as a systemd service with config and captures under a dot-directory.",
+      "cs": "Běží jako systemd služba s konfigurací a záchyty pod dot-adresářem."
+    },
+    {
+      "en": "Logs all HTTP traffic; stated for authorized testing and education only.",
+      "cs": "Loguje veškerý HTTP provoz; výslovně jen pro autorizované testování a výuku."
+    }
+  ],
+  "stack": [
+    "Ruby",
+    "RubyGems",
+    "systemd",
+    "dnsmasq",
+    "hostapd"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[LTE modem] --> B[Router host]\n  B --> C[hostapd AP]\n  C --> D[Client device]\n  B --> E[HTTP logger]\n  E --> F[Data store]",
+    "caption": {
+      "en": "An LTE uplink feeds a Wi-Fi AP whose client HTTP traffic is logged to a data store.",
+      "cs": "LTE uplink napájí Wi-Fi AP, jehož klientský HTTP provoz se loguje do datového úložiště."
+    }
+  },
+  "related": [
+    "charon"
+  ],
+  "confidence": "high"
+}

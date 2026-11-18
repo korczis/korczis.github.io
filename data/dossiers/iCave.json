@@ -1,0 +1,70 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "iCave",
+  "sources": {
+    "github": "https://github.com/korczis/iCave",
+    "gitlab": "https://gitlab.com/korczis/iCave",
+    "commit": "606021061a3180e4768e344a97f01d85ee2ce2b9",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "TODO.md",
+      "CHANGELOG.md",
+      "recursive tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "instrument",
+  "summary": {
+    "en": "Firmware for a Teensy 3.1 sensor station, described as an open home-automation platform. It logs temperature, humidity, GPS position, speed, altitude and luminosity to an SD card and shows them on a small TFT display.",
+    "cs": "Firmware pro senzorovou stanici na Teensy 3.1, popsaný jako otevřená platforma pro domácí automatizaci. Loguje teplotu, vlhkost, polohu z GPS, rychlost, výšku a osvětlení na SD kartu a zobrazuje je na malém TFT displeji."
+  },
+  "problem": {
+    "en": "Collecting environment readings from several sensors on a microcontroller requires a structure that keeps each device driver separate while sharing one main loop, memory budget and output channels.",
+    "cs": "Sběr údajů z několika senzorů na mikrokontroléru vyžaduje strukturu, která drží ovladače zařízení odděleně a přitom sdílí jednu hlavní smyčku, paměťový rozpočet a výstupní kanály."
+  },
+  "solution": {
+    "en": "app/ splits the firmware into C++ modules (DHT22, GPS, TSL2561, display, SD card, EEPROM, serial, RFID, Wi-Fi, low-power snooze) coordinated by a manager loop, with features toggled in general.h. The README lists the required open-source Arduino libraries and hardware; the TODO notes planned custom allocators, a profiler and settings storage.",
+    "cs": "app/ dělí firmware na C++ moduly (DHT22, GPS, TSL2561, displej, SD karta, EEPROM, sériová linka, RFID, Wi-Fi, úsporný režim) koordinované smyčkou manageru, funkce se zapínají v general.h. README vyjmenovává potřebné open-source Arduino knihovny a hardware; TODO zmiňuje plánované vlastní alokátory, profiler a ukládání nastavení."
+  },
+  "highlights": [
+    {
+      "en": "One C++ module per peripheral behind a common module base",
+      "cs": "Jeden C++ modul na periferii nad společnou základní třídou"
+    },
+    {
+      "en": "SD-card data logging with a sample data file in data/",
+      "cs": "Logování na SD kartu s ukázkovými daty v data/"
+    },
+    {
+      "en": "Compile-time feature switches in general.h",
+      "cs": "Přepínače funkcí v době kompilace v general.h"
+    },
+    {
+      "en": "Supports USB, battery or lab power supply",
+      "cs": "Napájení z USB, baterie nebo laboratorního zdroje"
+    }
+  ],
+  "stack": [
+    "C++",
+    "Arduino",
+    "Teensy 3.1",
+    "ARM Cortex-M4",
+    "SPI",
+    "I2C"
+  ],
+  "architecture": {
+    "mermaid": "flowchart TD\n  A[Manager loop] --> B[DHT22 temp and humidity]\n  A --> C[GPS]\n  A --> D[TSL2561 light]\n  A --> E[RFID]\n  A --> F[Wi-Fi]\n  B --> G[TFT display]\n  C --> G\n  D --> G\n  B --> H[SD card log]\n  C --> H\n  A --> I[Serial output]\n  A --> J[Snooze low power]",
+    "caption": {
+      "en": "Sensor modules feed the display, SD log and serial output from one manager loop.",
+      "cs": "Senzorové moduly plní displej, log na SD a sériový výstup z jedné smyčky manageru."
+    }
+  },
+  "related": [
+    "home",
+    "3d-print",
+    "MinervaEye",
+    "skull-cpp"
+  ],
+  "confidence": "high"
+}

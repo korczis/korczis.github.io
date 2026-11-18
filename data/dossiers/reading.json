@@ -1,0 +1,57 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "reading",
+  "sources": {
+    "github": "https://github.com/korczis/reading",
+    "gitlab": "https://gitlab.com/korczis/reading",
+    "commit": "b04c49e3e62dec6d771796665ca1af94183e5f3c",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "docs",
+  "summary": {
+    "en": "A raw reading list of about thirty books, kept as plain links in a README. Topics range from software engineering practice, compilers, type systems, distributed and multiprocessor algorithms and Elixir, to psychology, persuasion, physics, cinematography and drawing.",
+    "cs": "Surový seznam zhruba třiceti knih ve formě odkazů v README. Témata sahají od praxe softwarového inženýrství, překladačů, typových systémů, distribuovaných a víceprocesorových algoritmů a Elixiru po psychologii, přesvědčování, fyziku, kameru a kreslení."
+  },
+  "problem": {
+    "en": "Books worth reading get lost across browser tabs and shops.",
+    "cs": "Knihy, které stojí za přečtení, se ztrácejí v záložkách a e-shopech."
+  },
+  "solution": {
+    "en": "One Markdown file with direct links, no annotations or ordering yet.",
+    "cs": "Jeden Markdown soubor s přímými odkazy, zatím bez poznámek a řazení."
+  },
+  "highlights": [
+    {
+      "en": "Classic software-engineering and computer-science texts alongside Elixir books.",
+      "cs": "Klasické texty softwarového inženýrství a informatiky vedle knih o Elixiru."
+    },
+    {
+      "en": "Includes a maze-generation book that matches the maze repositories.",
+      "cs": "Obsahuje knihu o generování bludišť, ke které se vážou repozitáře s bludišti."
+    },
+    {
+      "en": "Wide non-technical range: psychology, physics, visual craft.",
+      "cs": "Široký netechnický záběr: psychologie, fyzika, vizuální řemeslo."
+    }
+  ],
+  "stack": [
+    "Markdown"
+  ],
+  "architecture": {
+    "mermaid": "flowchart TD\n  R[Reading list] --> SE[Software engineering]\n  R --> CS[Compilers and types]\n  R --> DA[Distributed algorithms]\n  R --> EX[Elixir]\n  R --> PS[Psychology]\n  R --> PH[Physics]\n  R --> VA[Visual arts]",
+    "caption": {
+      "en": "Topics covered by the list.",
+      "cs": "Témata, která seznam pokrývá."
+    }
+  },
+  "related": [
+    "books",
+    "maze-rs",
+    "MinervaEye"
+  ],
+  "confidence": "medium"
+}

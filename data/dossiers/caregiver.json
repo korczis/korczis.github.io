@@ -1,0 +1,54 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "caregiver",
+  "sources": {
+    "github": "https://github.com/korczis/caregiver",
+    "gitlab": null,
+    "commit": "73ebc67382ba47927ee5a8dd78e95b79489b8680",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      ".gitignore"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "kata",
+  "summary": {
+    "en": "An idea repository for a tool that would look after containers on the developer's behalf. It holds a one-line README and an Elixir-style .gitignore, so the intended implementation language is probably Elixir, but no code exists.",
+    "cs": "Repozitář s nápadem na nástroj, který by se za vývojáře staral o kontejnery. Obsahuje jednořádkové README a .gitignore pro Elixir, takže zamýšlený jazyk je nejspíš Elixir, kód ale zatím chybí."
+  },
+  "problem": {
+    "en": "Keeping development containers running and healthy takes attention away from code.",
+    "cs": "Udržování vývojových kontejnerů v chodu odvádí pozornost od kódu."
+  },
+  "solution": {
+    "en": "Not implemented; only the stated intent.",
+    "cs": "Neimplementováno; jen popsaný záměr."
+  },
+  "highlights": [
+    {
+      "en": "README states the intent in one sentence.",
+      "cs": "README popisuje záměr jednou větou."
+    },
+    {
+      "en": "No source code yet.",
+      "cs": "Zatím žádný zdrojový kód."
+    }
+  ],
+  "stack": [
+    "Elixir"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  D[Developer] --> C[caregiver]\n  C --> K[Containers]\n  K --> H[Health checks]\n  H --> C",
+    "caption": {
+      "en": "The stated intent; nothing of it is implemented.",
+      "cs": "Popsaný záměr; nic z něj není implementováno."
+    }
+  },
+  "related": [
+    "zdeny-docker",
+    "server-coreos",
+    "cluster-kubernetes"
+  ],
+  "confidence": "low"
+}

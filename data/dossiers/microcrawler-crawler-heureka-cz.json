@@ -1,0 +1,58 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "microcrawler-crawler-heureka-cz",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-heureka-cz",
+    "commit": "1a09f514b99b352e5c7b9affb6dd9add584c980b",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "package.json",
+      "src/details.js",
+      "tree (recursive)"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "library",
+  "summary": {
+    "en": "A Microcrawler site package for a Czech price-comparison website, with index, listing and details processors.",
+    "cs": "Balíček Microcrawleru pro český srovnávač cen s procesory index, listing a details."
+  },
+  "problem": {
+    "en": "Microcrawler workers are generic: they download pages and need site-specific logic to know which links to follow and which fields to extract.",
+    "cs": "Workery Microcrawleru jsou obecné: stahují stránky a potřebují logiku pro konkrétní web, aby věděly, které odkazy sledovat a jaká pole vytáhnout."
+  },
+  "solution": {
+    "en": "Unlike the other site packages, the details processor does not parse the DOM: it takes a ready context object from the payload and adds the page URL and location from the options passed by the runner. That signature suggests it was written for an in-page runner rather than the Cheerio worker; the exact runtime is unclear.",
+    "cs": "Na rozdíl od ostatních balíčků procesor details neparsuje DOM: vezme hotový objekt context z payloadu a doplní URL a location z voleb, které předá spouštěč. Signatura naznačuje, že byl psaný pro běh přímo ve stránce, ne pro worker s Cheeriem; jaký runtime přesně, není jasné."
+  },
+  "highlights": [
+    {
+      "en": "Different processor signature ($, payload, opts) from the rest of the family.",
+      "cs": "Jiná signatura procesoru ($, payload, opts) než u zbytku rodiny."
+    },
+    {
+      "en": "Version 0.0.1; early stage.",
+      "cs": "Verze 0.0.1, rané stadium."
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "Node.js",
+    "Cheerio"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  W[Runner] --> I[index]\n  I --> L[listing]\n  L --> D[details]\n  D --> C[payload context]\n  C --> R[record with url]",
+    "caption": {
+      "en": "Processors emit either new URLs for the queue or extracted data records.",
+      "cs": "Procesory vracejí buď nové URL do fronty, nebo vytěžené datové záznamy."
+    }
+  },
+  "related": [
+    "microcrawler-js",
+    "microcrawler-crawler-all",
+    "microcrawler-crawler-base"
+  ],
+  "confidence": "low"
+}

@@ -1,0 +1,54 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "social-icons",
+  "sources": {
+    "github": "https://github.com/korczis/social-icons",
+    "gitlab": "https://gitlab.com/korczis/social-icons",
+    "commit": "7a2e05b50ae19b271cbef8cc757e48c0867e9df3",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "top-level tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "data",
+  "summary": {
+    "en": "A set of PNG icons for about a dozen social networks and identity providers, each in 32, 64, 128 and 256 pixel sizes. The README says they were taken from an upstream open-source OmniAuth example project.",
+    "cs": "Sada PNG ikon pro zhruba tucet sociálních sítí a poskytovatelů identity, každá ve velikostech 32, 64, 128 a 256 pixelů. Podle README pochází z upstreamového open-source příkladu pro OmniAuth."
+  },
+  "problem": {
+    "en": "Social login buttons need consistent provider icons in several sizes.",
+    "cs": "Tlačítka pro přihlášení přes sociální sítě potřebují jednotné ikony poskytovatelů v několika velikostech."
+  },
+  "solution": {
+    "en": "A flat directory of PNG files named provider_size.png, kept as a reusable asset repository. There is no code.",
+    "cs": "Plochý adresář PNG souborů pojmenovaných poskytovatel_velikost.png, vedený jako znovupoužitelný repozitář assetů. Žádný kód."
+  },
+  "highlights": [
+    {
+      "en": "Four sizes per provider: 32, 64, 128, 256 px",
+      "cs": "Čtyři velikosti pro každého poskytovatele: 32, 64, 128, 256 px"
+    },
+    {
+      "en": "Includes GitHub and OpenID among the providers",
+      "cs": "Mezi poskytovateli je i GitHub a OpenID"
+    },
+    {
+      "en": "Third-party origin noted in the README",
+      "cs": "Původ od třetí strany je uveden v README"
+    }
+  ],
+  "stack": [
+    "PNG"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  U[Upstream example] --> R[social-icons repo]\n  R --> S32[32 px]\n  R --> S64[64 px]\n  R --> S128[128 px]\n  R --> S256[256 px]\n  S64 --> L[Login buttons]",
+    "caption": {
+      "en": "Icon assets by size, intended for social login UIs.",
+      "cs": "Ikony podle velikosti, určené pro přihlašovací rozhraní."
+    }
+  },
+  "related": [],
+  "confidence": "low"
+}

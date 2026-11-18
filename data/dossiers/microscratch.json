@@ -1,0 +1,68 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "microscratch",
+  "sources": {
+    "github": "https://github.com/korczis/microscratch",
+    "gitlab": "https://gitlab.com/korczis/microscratch",
+    "commit": "7ebc4f7caf9316216afdbd4ad775c1b2fc81158e",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "package.json",
+      "TODO.md",
+      "recursive tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "library",
+  "summary": {
+    "en": "A lightweight Node.js web framework skeleton combining Express, sockets and an Ember.js client. Its README and package.json are shared with lethe.it, which appears to have grown out of it.",
+    "cs": "Kostra lehkého webového frameworku v Node.js, která spojuje Express, sockety a klienta v Ember.js. README a package.json sdílí s lethe.it, který z ní zřejmě vyrostl."
+  },
+  "problem": {
+    "en": "Each new web project needed the same server setup, front-end build, social login and storage plumbing; the repository collects that into one reusable starting point.",
+    "cs": "Každý nový webový projekt potřeboval stejné nastavení serveru, build frontendu, sociální přihlášení a napojení úložiště; repozitář to sbírá do jednoho znovupoužitelného základu."
+  },
+  "solution": {
+    "en": "lib/ provides app, core, logger, processor and web modules, connectors for Facebook, Gmail and Twitter and persistence backends for CouchDB and in-memory storage. data/public holds an Ember client with a socket initializer, and gulp builds the assets. The TODO still lists CLI, configuration, database connection and full-text search via Solr or Elasticsearch.",
+    "cs": "lib/ nabízí moduly app, core, logger, processor a web, konektory pro Facebook, Gmail a Twitter a perzistentní backendy pro CouchDB a paměť. data/public obsahuje Ember klienta s inicializací socketů a assety sestavuje gulp. V TODO dosud zůstává CLI, konfigurace, připojení k databázi a fulltext přes Solr nebo Elasticsearch."
+  },
+  "highlights": [
+    {
+      "en": "Pluggable persistence backends: CouchDB and in-memory",
+      "cs": "Zásuvné perzistentní backendy: CouchDB a paměť"
+    },
+    {
+      "en": "Connector modules for three external services",
+      "cs": "Konektory pro tři externí služby"
+    },
+    {
+      "en": "Shared gulp build with Sass and Handlebars precompilation",
+      "cs": "Společný gulp build se Sass a předkompilací Handlebars"
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "Node.js",
+    "Express",
+    "Ember.js",
+    "CouchDB",
+    "socket.io",
+    "gulp",
+    "Handlebars"
+  ],
+  "architecture": {
+    "mermaid": "flowchart TD\n  A[Ember client] --> B[Express web]\n  B --> C[Core]\n  C --> D[Processor]\n  D --> E[Connectors]\n  E --> F[Facebook Gmail Twitter]\n  C --> G[Persistence]\n  G --> H[CouchDB]\n  G --> I[Memory]",
+    "caption": {
+      "en": "Framework modules from the web layer to connectors and storage backends.",
+      "cs": "Moduly frameworku od webové vrstvy po konektory a úložiště."
+    }
+  },
+  "related": [
+    "lethe.it",
+    "microscratch-react",
+    "generator-microscratch",
+    "the-scratch"
+  ],
+  "confidence": "medium"
+}

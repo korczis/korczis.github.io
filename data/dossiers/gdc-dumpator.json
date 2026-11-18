@@ -1,0 +1,61 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "gdc-dumpator",
+  "sources": {
+    "github": "https://github.com/korczis/gdc-dumpator",
+    "gitlab": "https://gitlab.com/korczis/gdc-dumpator",
+    "commit": "216a9b123e75a13f8e5eabb930dc0fca8029002c",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "Gemfile",
+      "main.rb"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "cli",
+  "summary": {
+    "en": "A Ruby script that exports every metadata object of one project on a cloud BI platform to JSON, resolves cross-references and orders the objects by dependency.",
+    "cs": "Ruby skript, který z jednoho projektu na cloudové BI platformě exportuje všechny metadatové objekty do JSONu, rozřeší odkazy mezi nimi a seřadí je podle závislostí."
+  },
+  "problem": {
+    "en": "Copying or inspecting a BI project means dealing with metadata objects (attributes, facts, metrics, reports) that point to each other by server-specific URIs.",
+    "cs": "Kopírování nebo zkoumání BI projektu znamená pracovat s metadatovými objekty (atributy, fakty, metriky, reporty), které na sebe ukazují URI specifickými pro daný server."
+  },
+  "solution": {
+    "en": "Using the platform's Ruby SDK, it pages through each object category, writes every object to data/<project>/<category>/<identifier>.json, then scans the JSON for metadata URIs and fetches anything missing in a second pass. A depth-first topological sort over predecessor links orders the objects, and URIs are replaced by symbolic category.identifier placeholders in metadata.json.",
+    "cs": "Přes Ruby SDK dané platformy prochází stránkovaně jednotlivé kategorie objektů, každý objekt zapíše do data/<projekt>/<kategorie>/<identifikátor>.json, pak v JSONu hledá metadatová URI a ve druhém průchodu dotáhne chybějící objekty. Topologické řazení do hloubky podle odkazů na předchůdce určí pořadí a v metadata.json nahradí URI symbolickými zástupci kategorie.identifikátor."
+  },
+  "highlights": [
+    {
+      "en": "Two-pass fetch closes the reference graph",
+      "cs": "Dvouprůchodové stahování uzavře graf odkazů"
+    },
+    {
+      "en": "Topological sort over predecessor links",
+      "cs": "Topologické řazení podle odkazů na předchůdce"
+    },
+    {
+      "en": "Server-independent output with symbolic references",
+      "cs": "Výstup nezávislý na serveru díky symbolickým odkazům"
+    }
+  ],
+  "stack": [
+    "Ruby",
+    "Bundler",
+    "JSON",
+    "REST API"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Query[objects query] --> Pages[paged fetch per category]\n  Pages --> Files[per object JSON]\n  Pages --> Scan[scan URIs]\n  Scan --> Second[second pass fetch]\n  Second --> Scan\n  Scan --> Sort[topological sort]\n  Sort --> Rewrite[symbolic refs]\n  Rewrite --> Out[metadata.json]",
+    "caption": {
+      "en": "Export, close the reference graph, sort, rewrite references.",
+      "cs": "Export, uzavření grafu odkazů, seřazení a přepis odkazů."
+    }
+  },
+  "related": [
+    "gooddata-ruby-examples",
+    "gooddata-fs"
+  ],
+  "confidence": "high"
+}

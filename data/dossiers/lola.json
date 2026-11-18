@@ -1,0 +1,69 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "lola",
+  "sources": {
+    "github": "https://github.com/korczis/lola",
+    "gitlab": "https://gitlab.com/korczis/lola",
+    "commit": "0cb21141dd2a00b93ab24e51d931dc434bd7ad43",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "package.json",
+      "lib/index.js",
+      "lib/loader.js",
+      "lib/module.js",
+      "test/"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "library",
+  "summary": {
+    "en": "Lola, a \"Loader & Launcher of Modular NodeJS Apps\": a lightweight module manager for Node.js with versioned modules and dependencies, published on npm. Modules live in registered directories and are loaded by name or name@version.",
+    "cs": "Lola, „Loader & Launcher of Modular NodeJS Apps“: odlehčený správce modulů pro Node.js s verzovanými moduly a závislostmi, vydaný na npm. Moduly leží v registrovaných adresářích a načítají se podle jména nebo jméno@verze."
+  },
+  "problem": {
+    "en": "An application split into many internal modules needs a way to discover, version and launch them without publishing each one as a separate npm package. The README explicitly states it is not a replacement for npm or Bower.",
+    "cs": "Aplikace rozdělená do mnoha interních modulů potřebuje moduly najít, verzovat a spouštět, aniž by každý musel být samostatným npm balíčkem. README výslovně uvádí, že nejde o náhradu npm ani Boweru."
+  },
+  "solution": {
+    "en": "A Loader scans module directories and treats any directory with a module.json as a module, requiring and instantiating it. Modules derive from a base Module class built on EventEmitter with a run() method to override; the API offers addModuleDir, getModules, load and printTree.",
+    "cs": "Loader prochází adresáře modulů a každý adresář s module.json bere jako modul, který načte a instancuje. Moduly dědí ze základní třídy Module postavené na EventEmitter s metodou run() k přepsání; API nabízí addModuleDir, getModules, load a printTree."
+  },
+  "highlights": [
+    {
+      "en": "Version-qualified loading such as load('name@0.0.1')",
+      "cs": "Načítání s verzí, např. load('name@0.0.1')"
+    },
+    {
+      "en": "Module discovery by the presence of module.json",
+      "cs": "Objevování modulů podle přítomnosti module.json"
+    },
+    {
+      "en": "Jasmine specs with sample cli and core modules, Travis CI build",
+      "cs": "Specifikace v Jasmine s ukázkovými moduly cli a core, build na Travis CI"
+    },
+    {
+      "en": "Base Module.run() still throws Not Implemented, so it is an early-stage library",
+      "cs": "Základní Module.run() zatím hází Not Implemented, jde tedy o knihovnu v rané fázi"
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "Node.js",
+    "npm",
+    "Jasmine",
+    "Travis CI"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  App[Application] --> Lola[lola index]\n  Lola --> Loader[Loader]\n  Loader --> Dirs[Module dirs]\n  Dirs --> Json[module.json]\n  Loader --> Mod[Module instance]\n  Mod --> Base[Module base EventEmitter]\n  Mod --> Run[run]",
+    "caption": {
+      "en": "The loader discovers module directories, instantiates modules derived from the EventEmitter base and launches them.",
+      "cs": "Loader najde adresáře modulů, vytvoří instance modulů odvozených od základu nad EventEmitter a spustí je."
+    }
+  },
+  "related": [
+    "the-scratch",
+    "generator-the-scratch"
+  ],
+  "confidence": "medium"
+}

@@ -1,0 +1,60 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "magicbiz",
+  "sources": {
+    "github": "https://github.com/korczis/magicbiz",
+    "gitlab": "https://gitlab.com/korczis/magicbiz",
+    "commit": "94288ea15ad1b037eaac8145108b697982d5015f",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "docs",
+  "summary": {
+    "en": "A concept document for a decentralized autonomous organization proof of concept. The README lists principles, consensus protocols, technologies and planned modules, but no code was committed.",
+    "cs": "Koncepční dokument pro proof of concept decentralizované autonomní organizace. README shrnuje principy, konsenzuální protokoly, technologie a plánované moduly, kód ale commitnut nebyl."
+  },
+  "problem": {
+    "en": "The README asks how an organisation could run as a network of autonomous software agents, with transparent rules and no central point of control or failure.",
+    "cs": "README řeší, jak by mohla organizace fungovat jako síť autonomních softwarových agentů s transparentními pravidly a bez centrálního bodu řízení či selhání."
+  },
+  "solution": {
+    "en": "The outline proposes consensus via Paxos or Raft, voting as a core business process, Tor for anonymous communication and a blockchain as the public ledger. Planned modules are anonymous version control, anonymous domain registration and anonymous cloud instance management on AWS.",
+    "cs": "Osnova navrhuje konsenzus přes Paxos nebo Raft, hlasování jako základní proces, Tor pro anonymní komunikaci a blockchain jako veřejnou účetní knihu. Plánované moduly jsou anonymní verzování, anonymní registrace domén a anonymní správa cloudových instancí na AWS."
+  },
+  "highlights": [
+    {
+      "en": "Ten stated design principles, from autonomy to auditability",
+      "cs": "Deset formulovaných principů návrhu, od autonomie po auditovatelnost"
+    },
+    {
+      "en": "Paxos and Raft named as candidate consensus algorithms",
+      "cs": "Paxos a Raft jako kandidátní algoritmy konsenzu"
+    },
+    {
+      "en": "Planned modules for anonymous VCS, domains and cloud instances",
+      "cs": "Plánované moduly pro anonymní VCS, domény a cloudové instance"
+    }
+  ],
+  "stack": [
+    "Tor",
+    "Blockchain",
+    "AWS EC2",
+    "AWS Route 53"
+  ],
+  "architecture": {
+    "mermaid": "flowchart TD\n  A[Autonomous agents] --> B[Consensus Paxos or Raft]\n  B --> C[Voting process]\n  C --> D[Public ledger]\n  A --> E[Tor network]\n  E --> F[Anonymous VCS]\n  E --> G[Anonymous domains]\n  E --> H[Anonymous cloud]",
+    "caption": {
+      "en": "Planned building blocks of the concept; none of them is implemented in the repository.",
+      "cs": "Plánované stavební bloky konceptu; žádný z nich v repozitáři implementován není."
+    }
+  },
+  "related": [
+    "ideas",
+    "wangsta",
+    "bcnode-extra-scripts"
+  ],
+  "confidence": "low"
+}

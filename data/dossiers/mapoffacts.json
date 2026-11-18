@@ -1,0 +1,74 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "mapoffacts",
+  "sources": {
+    "github": "https://github.com/korczis/mapoffacts",
+    "gitlab": "https://gitlab.com/korczis/mapoffacts",
+    "commit": "460d0d2150db92f830a0fa85eab4985b5a06923f",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "mix.exs",
+      "Cargo.toml",
+      "Dockerfile",
+      "lib/vfs.ex",
+      "native/the-scratch/src/lib.rs"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "app",
+  "summary": {
+    "en": "The early code base for the \"map of facts\" idea, built on the owner's the-scratch starter: an Elm single-page app with a Google Maps component on a Phoenix backend. The README is a feature checklist of the template rather than of a map product.",
+    "cs": "Raná kódová základna nápadu „mapa faktů“ postavená na autorově startéru the-scratch: Elm SPA s komponentou Google Maps nad Phoenix backendem. README je checklist funkcí šablony, ne mapového produktu."
+  },
+  "problem": {
+    "en": "A map of facts needs authenticated users, a typed API and a map front end before any domain logic can be written. The domain logic itself is not present yet.",
+    "cs": "Mapa faktů potřebuje přihlášené uživatele, typované API a mapový frontend dřív, než jde psát doménovou logiku. Ta v repozitáři zatím není."
+  },
+  "solution": {
+    "en": "Elm components (application shell, auth, GraphQL view, map, navbar) talk to Phoenix, which exposes Absinthe GraphQL resolvers for users, a REST v1 users controller, OAuth sign-in via Ueberauth and JWT via Guardian. Persistence is Ecto on PostgreSQL, and a Rustler NIF and an ETS virtual file system come from the template.",
+    "cs": "Elm komponenty (shell aplikace, auth, GraphQL pohled, mapa, navbar) komunikují s Phoenixem, který vystavuje Absinthe GraphQL resolvery pro uživatele, REST v1 kontroler uživatelů, OAuth přihlášení přes Ueberauth a JWT přes Guardian. Perzistence je Ecto nad PostgreSQL; Rustler NIF a virtuální souborový systém nad ETS pocházejí ze šablony."
+  },
+  "highlights": [
+    {
+      "en": "Elm architecture split into Model/Msg/Update/View modules per component.",
+      "cs": "Elm architektura rozdělená na moduly Model/Msg/Update/View pro každou komponentu."
+    },
+    {
+      "en": "GraphQL schema files (.graphql) next to Absinthe resolvers.",
+      "cs": "Soubory GraphQL schématu (.graphql) vedle Absinthe resolverů."
+    },
+    {
+      "en": "Phoenix WebSocket channel with authenticated sockets.",
+      "cs": "WebSocket kanál Phoenixu s autentizovanými sockety."
+    }
+  ],
+  "stack": [
+    "Elixir",
+    "Phoenix",
+    "Elm",
+    "Absinthe",
+    "GraphQL",
+    "Guardian",
+    "Ueberauth",
+    "PostgreSQL",
+    "Google Maps",
+    "Rust",
+    "Webpack"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[Elm map component] --> B[Phoenix endpoint]\n  C[Elm auth] --> D[Ueberauth OAuth]\n  D --> E[Guardian JWT]\n  B --> F[Absinthe GraphQL]\n  B --> G[REST v1 users]\n  F --> H[(PostgreSQL)]\n  B --> I[WebSocket channel]",
+    "caption": {
+      "en": "Template-based front end and API for the map-of-facts idea.",
+      "cs": "Frontend a API pro nápad mapy faktů postavené na šabloně."
+    }
+  },
+  "related": [
+    "mapofffacts-com",
+    "mapofffacts.com",
+    "the-scratch",
+    "zaas",
+    "web-spa"
+  ],
+  "confidence": "low"
+}

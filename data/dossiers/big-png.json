@@ -1,0 +1,58 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "big-png",
+  "sources": {
+    "github": "https://github.com/korczis/big-png",
+    "gitlab": "https://gitlab.com/korczis/big-png",
+    "commit": "e04e33d199d415a6543f4e2b3f96af8286d07e22",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "deflate.py",
+      "spark.png.bz2"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "experiment",
+  "summary": {
+    "en": "A demonstration of a decompression bomb: a 420-byte bzip2 file that expands into a multi-megabyte PNG of 225,000 by 225,000 pixels, whose pixel buffer would need roughly 141 GB of RAM. It credits an upstream author and includes the Python generator and the sample files.",
+    "cs": "Ukázka dekompresní bomby: 420bajtový bzip2 soubor, který se rozbalí do několikamegabajtového PNG o rozměrech 225 000 na 225 000 pixelů, jehož pixelový buffer by potřeboval zhruba 141 GB RAM. Uvádí původního autora a obsahuje Python generátor a ukázkové soubory."
+  },
+  "problem": {
+    "en": "Image-processing pipelines that trust declared dimensions can be crashed by an image whose pixel buffer is far larger than its file; demonstrating this tests their limits.",
+    "cs": "Pipeline pro zpracování obrázků, které věří deklarovaným rozměrům, lze shodit obrázkem, jehož pixelový buffer je mnohem větší než soubor; ukázka toho testuje jejich limity."
+  },
+  "solution": {
+    "en": "The Python script exploits DEFLATE run-length behaviour and a 1-bit colorspace to build a huge-but-tiny PNG, then bzip2 crushes the near-all-zero bytes further. The README frames it as a security-awareness demonstration with references on defending against decompression bombs.",
+    "cs": "Python skript využívá chování run-length v DEFLATE a 1bitový barevný prostor k vytvoření obrovského, ale maličkého PNG, které pak bzip2 s téměř samými nulami ještě více stlačí. README to rámuje jako ukázku pro bezpečnostní povědomí s odkazy na obranu proti dekompresním bombám."
+  },
+  "highlights": [
+    {
+      "en": "420-byte archive expands to a 50-gigapixel PNG.",
+      "cs": "420bajtový archiv se rozbalí do 50gigapixelového PNG."
+    },
+    {
+      "en": "Exploits DEFLATE run-length and a 1-bit colorspace.",
+      "cs": "Využívá run-length v DEFLATE a 1bitový barevný prostor."
+    },
+    {
+      "en": "Framed as a decompression-bomb awareness demo, with defence references.",
+      "cs": "Rámováno jako ukázka povědomí o dekompresní bombě, s odkazy na obranu."
+    }
+  ],
+  "stack": [
+    "Python",
+    "PNG",
+    "DEFLATE",
+    "bzip2"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[Zero bytes] --> B[DEFLATE stream]\n  B --> C[PNG wrapper]\n  C --> D[bzip2 compress]\n  D --> E[Tiny archive]\n  E --> F[Huge decode]",
+    "caption": {
+      "en": "Near-all-zero pixels compress through DEFLATE and bzip2 into a tiny file that decodes huge.",
+      "cs": "Téměř samé nuly se přes DEFLATE a bzip2 stlačí do maličkého souboru, který se dekóduje obrovský."
+    }
+  },
+  "related": [],
+  "confidence": "medium"
+}

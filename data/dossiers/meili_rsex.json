@@ -1,0 +1,67 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "meili_rsex",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/meili_rsex",
+    "commit": "b0c01a575ba7730fde7292296b0e16e1a6a46d6d",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "mix.exs",
+      "native/meilirsex/Cargo.toml",
+      "native/meilirsex/src/lib.rs",
+      "tree recursive"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "experiment",
+  "summary": {
+    "en": "A minimal reproduction project for embedding the Meilisearch Rust code base into an Elixir application through a Rustler NIF. It exists to demonstrate a broken integration, not to provide search.",
+    "cs": "Minimální reprodukční projekt pro vložení kódu Meilisearch v Rustu do aplikace v Elixiru přes NIF v Rustleru. Slouží k předvedení nefunkční integrace, ne k vyhledávání."
+  },
+  "problem": {
+    "en": "Linking Meilisearch as a Rust dependency into a Rustler NIF fails to integrate cleanly with an Elixir build. Reporting such a problem upstream needs the smallest project that triggers it.",
+    "cs": "Napojení Meilisearch jako závislosti v Rustu do NIF v Rustleru se s buildem v Elixiru čistě neintegruje. Nahlásit takový problém autorům vyžaduje co nejmenší projekt, který ho vyvolá."
+  },
+  "solution": {
+    "en": "The NIF crate depends on Meilisearch pinned to a git tag and on reqwest, but exports only a trivial add/2 function. With mix deps.get and mix compile the build path alone shows the problem.",
+    "cs": "NIF crate závisí na Meilisearch připnutém na git tag a na reqwest, ale exportuje jen triviální funkci add/2. Problém ukáže samotné sestavení přes mix deps.get a mix compile."
+  },
+  "highlights": [
+    {
+      "en": "Steps-to-reproduce layout: one NIF, one function, one heavy dependency.",
+      "cs": "Struktura pro reprodukci: jeden NIF, jedna funkce, jedna těžká závislost."
+    },
+    {
+      "en": "Meilisearch pinned to a specific git tag for a deterministic repro.",
+      "cs": "Meilisearch připnutý na konkrétní git tag kvůli deterministické reprodukci."
+    },
+    {
+      "en": "GitLab CI and tool versions pinned.",
+      "cs": "GitLab CI a připnuté verze nástrojů."
+    }
+  ],
+  "stack": [
+    "Elixir",
+    "Rust",
+    "Rustler",
+    "Meilisearch",
+    "reqwest",
+    "GitLab CI"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  MIX[mix compile] --> RUS[Rustler build]\n  RUS --> CR[meilirsex crate]\n  CR --> MS[Meilisearch git dependency]\n  CR --> NIF[add NIF]\n  NIF --> EX[MeiliRsex module]",
+    "caption": {
+      "en": "The repro is the build chain itself: mix triggers a Rustler build that pulls in Meilisearch.",
+      "cs": "Reprodukcí je samotný řetězec sestavení: mix spustí build v Rustleru, který stáhne Meilisearch."
+    }
+  },
+  "related": [
+    "rustler-test",
+    "rustler_mix",
+    "astudo",
+    "comtesse"
+  ],
+  "confidence": "medium"
+}

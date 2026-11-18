@@ -1,0 +1,56 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "ReadingPhoneNumbersInRealTime",
+  "sources": {
+    "github": "https://github.com/korczis/ReadingPhoneNumbersInRealTime",
+    "gitlab": null,
+    "commit": "09ecfb7f6a259c1f0f267462790c7d9f4a2dc2ca",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "kata",
+  "summary": {
+    "en": "A copy of the platform vendor's iOS sample code for recognising phone numbers in live camera capture with the Vision framework, kept as a reference. It filters recognised text for phone-number candidates and builds confidence over successive frames.",
+    "cs": "Kopie ukázkového iOS kódu od výrobce platformy pro rozpoznávání telefonních čísel v živém obrazu z kamery pomocí frameworku Vision, uložená jako reference. Rozpoznaný text filtruje na kandidáty telefonních čísel a jistotu buduje napříč snímky."
+  },
+  "problem": {
+    "en": "Text recognition on single frames is noisy; reliable extraction of structured strings needs evidence accumulated over time.",
+    "cs": "Rozpoznávání textu z jednotlivých snímků je zašuměné; spolehlivé vytažení strukturovaných řetězců potřebuje důkazy nasbírané v čase."
+  },
+  "solution": {
+    "en": "A capture preview feeds frames to a Vision text-recognition request; string utilities pick phone-number patterns and a tracker keeps a candidate only after it has been seen repeatedly.",
+    "cs": "Náhled z kamery posílá snímky do požadavku Vision na rozpoznání textu; pomocné funkce vyberou vzory telefonních čísel a kandidát se přijme až po opakovaném výskytu."
+  },
+  "highlights": [
+    {
+      "en": "Vendor sample code, initial commit only; useful as OCR reference for the owner's own iOS work.",
+      "cs": "Ukázkový kód výrobce, jen úvodní commit; reference pro OCR ve vlastních iOS projektech."
+    },
+    {
+      "en": "Live capture plus Vision text recognition in Swift.",
+      "cs": "Živé snímání a rozpoznávání textu přes Vision ve Swiftu."
+    }
+  ],
+  "stack": [
+    "Swift",
+    "UIKit",
+    "Vision",
+    "AVFoundation",
+    "Xcode"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  CAM[Camera capture] --> PV[PreviewView]\n  PV --> VR[Vision text request]\n  VR --> SU[StringUtils filter]\n  SU --> TR[Frame tracker]\n  TR --> UI[Highlighted number]",
+    "caption": {
+      "en": "Frames flow from capture through recognition and filtering to a stable result.",
+      "cs": "Snímky jdou z kamery přes rozpoznání a filtr až ke stabilnímu výsledku."
+    }
+  },
+  "related": [
+    "MinervaEye"
+  ],
+  "confidence": "medium"
+}

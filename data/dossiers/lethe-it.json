@@ -1,0 +1,74 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "lethe-it",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/lethe-it",
+    "commit": "5fee04d968e8fb46355b1c0e947d156a73b40b4a",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "package.json",
+      "tree /"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "app",
+  "summary": {
+    "en": "A Node.js web application described as a personal smart links archive, organizer and classifier. The server is built on Express with social login and a persistence abstraction, and the client is a Handlebars-templated single-page front end built with gulp.",
+    "cs": "Webová aplikace v Node.js popsaná jako osobní chytrý archiv odkazů, organizér a klasifikátor. Server stojí na Expressu se sociálním přihlášením a abstrakcí nad perzistencí, klient je jednostránkový front end se šablonami Handlebars sestavovaný gulpem."
+  },
+  "problem": {
+    "en": "Links collected across social networks and the web end up scattered and unclassified. The project aims to pull them into one archive where they can be organised and classified.",
+    "cs": "Odkazy nasbírané ze sociálních sítí a z webu zůstávají rozházené a nezatříděné. Projekt je chce stáhnout do jednoho archivu, kde je lze organizovat a klasifikovat."
+  },
+  "solution": {
+    "en": "The server is split into app, social-network connectors, a generic processor, a persistence layer, a logger and a web layer. Passport strategies handle OAuth login, Mongoose and MongoDB store data, Socket.IO and Faye push updates, and request plus cheerio are available for fetching and parsing pages.",
+    "cs": "Server je rozdělen na aplikační jádro, konektory na sociální sítě, obecný procesor, perzistentní vrstvu, logger a webovou vrstvu. Přihlášení přes OAuth obstarávají strategie Passportu, data ukládá Mongoose do MongoDB, aktualizace posílá Socket.IO a Faye a pro stahování a parsování stránek jsou k dispozici request a cheerio."
+  },
+  "highlights": [
+    {
+      "en": "Clear server-side module split: connectors, processor, persistence, web.",
+      "cs": "Čisté rozdělení serveru na moduly: konektory, procesor, perzistence, web."
+    },
+    {
+      "en": "OAuth login through Passport with several social providers.",
+      "cs": "Přihlášení přes OAuth pomocí Passportu s několika sociálními poskytovateli."
+    },
+    {
+      "en": "gulp pipeline for Sass, Handlebars templates, AMD wrapping, minification and JSDoc.",
+      "cs": "Pipeline v gulpu pro Sass, šablony Handlebars, AMD obalování, minifikaci a JSDoc."
+    },
+    {
+      "en": "Mocha, Chai and Istanbul in the dev dependencies; the npm test script is a no-op.",
+      "cs": "Mezi vývojovými závislostmi jsou Mocha, Chai a Istanbul; skript npm test ale nic nespouští."
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "Mongoose",
+    "Passport",
+    "Socket.IO",
+    "Handlebars",
+    "gulp",
+    "Bower",
+    "cheerio"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  UI[Browser client] --> WEB[Express web layer]\n  WEB --> AUTH[Passport OAuth]\n  AUTH --> CON[Social connectors]\n  CON --> PROC[Generic processor]\n  PROC --> FETCH[request and cheerio]\n  PROC --> PERS[Persistence layer]\n  PERS --> DB[(MongoDB)]\n  WEB --> RT[Socket.IO realtime]\n  RT --> UI",
+    "caption": {
+      "en": "Links arrive through social connectors, pass the processor and land in MongoDB; the client gets live updates.",
+      "cs": "Odkazy přicházejí přes sociální konektory, projdou procesorem a skončí v MongoDB; klient dostává živé aktualizace."
+    }
+  },
+  "related": [
+    "lethe.it",
+    "microscratch",
+    "microcrawler",
+    "the-scratch"
+  ],
+  "confidence": "medium"
+}

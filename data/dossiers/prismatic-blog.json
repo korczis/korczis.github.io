@@ -1,0 +1,71 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "prismatic-blog",
+  "sources": {
+    "github": "https://github.com/korczis/prismatic-blog",
+    "gitlab": null,
+    "commit": "82b64b9e7b5593dab43306be70f1f8b0aeb6f659",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "config.toml",
+      ".gitmodules",
+      ".devcontainer/",
+      ".github/workflows/zola.yml (tree)",
+      "content/ (tree)"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "site",
+  "summary": {
+    "en": "A static blog/book site started from a public Zola starter template with the book theme. It is still at the template stage: placeholder chapters, the template base_url and no custom content yet.",
+    "cs": "Statický blog ve formě knihy, založený na veřejné šabloně pro Zolu s tématem book. Zatím je ve stavu šablony: ukázkové kapitoly, původní base_url a žádný vlastní obsah."
+  },
+  "problem": {
+    "en": "A long-form, chaptered publication needs a site that builds from Markdown and publishes itself without a server.",
+    "cs": "Delší text členěný do kapitol potřebuje web, který se staví z Markdownu a publikuje se bez vlastního serveru."
+  },
+  "solution": {
+    "en": "Zola renders the content directory through the book theme (a git submodule); a GitHub Actions workflow builds and publishes to GitHub Pages, and a dev container fixes the toolchain.",
+    "cs": "Zola vyrenderuje adresář content přes téma book (git submodul); workflow v GitHub Actions web postaví a publikuje na GitHub Pages a dev container drží jednotné prostředí."
+  },
+  "highlights": [
+    {
+      "en": "Zola static site generator with the book theme as a submodule.",
+      "cs": "Generátor Zola, téma book jako submodul."
+    },
+    {
+      "en": "Automatic publishing to GitHub Pages via a workflow.",
+      "cs": "Automatické publikování na GitHub Pages přes workflow."
+    },
+    {
+      "en": "Dev Container and Dependabot configuration included.",
+      "cs": "Součástí je Dev Container a konfigurace Dependabotu."
+    },
+    {
+      "en": "Content is still the template placeholder.",
+      "cs": "Obsah je zatím jen ukázka ze šablony."
+    }
+  ],
+  "stack": [
+    "Zola",
+    "Markdown",
+    "Sass",
+    "GitHub Actions",
+    "GitHub Pages",
+    "Dev Containers"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[Markdown content] --> B[Zola build]\n  T[Book theme submodule] --> B\n  B --> C[Static HTML]\n  C --> D[GitHub Actions]\n  D --> E[GitHub Pages]",
+    "caption": {
+      "en": "Markdown chapters rendered by Zola and published by CI.",
+      "cs": "Kapitoly v Markdownu renderuje Zola a publikuje CI."
+    }
+  },
+  "related": [
+    "prismatic",
+    "korczis.github.io",
+    "prismatic-majordomus"
+  ],
+  "confidence": "medium"
+}

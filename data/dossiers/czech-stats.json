@@ -1,0 +1,59 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "czech-stats",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/czech-stats",
+    "commit": "c044dd05db5651ed71925b9c6c9a0ac8a0a21ec5",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "mix.exs",
+      "apps/czech_stats/lib/czech_stats.ex",
+      "tree /",
+      "tree recursive"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "experiment",
+  "summary": {
+    "en": "A freshly generated Phoenix umbrella project with a core app and a web app, plus a data folder holding a 2019 voting-preference spreadsheet. No domain code beyond the generator scaffold is present.",
+    "cs": "Čerstvě vygenerovaný umbrella projekt ve Phoenixu s jádrovou a webovou aplikací a složkou dat, ve které je tabulka volebních preferencí z roku 2019. Kromě kostry z generátoru tu žádný doménový kód není."
+  },
+  "problem": {
+    "en": "Presumably presenting Czech statistical data such as voting preferences on the web; the repository does not state the goal.",
+    "cs": "Nejspíš zobrazení českých statistických dat, třeba volebních preferencí, na webu; repozitář cíl neuvádí."
+  },
+  "solution": {
+    "en": "Only the scaffold exists: an empty CzechStats context module, a default Phoenix web app with webpack assets and generated tests, and the source spreadsheet in XLSX and Numbers formats. How the data would be loaded is unclear.",
+    "cs": "Existuje jen kostra: prázdný kontextový modul CzechStats, výchozí webová aplikace ve Phoenixu s assety přes webpack a vygenerovanými testy a zdrojová tabulka ve formátech XLSX a Numbers. Jak by se data načítala, není jasné."
+  },
+  "highlights": [
+    {
+      "en": "Umbrella layout separating domain and web from the start.",
+      "cs": "Umbrella struktura, která od začátku odděluje doménu a web."
+    },
+    {
+      "en": "Source data committed next to the code.",
+      "cs": "Zdrojová data jsou uložená přímo vedle kódu."
+    }
+  ],
+  "stack": [
+    "Elixir",
+    "Phoenix",
+    "webpack"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  XLS[Voting preference spreadsheet] --> CORE[CzechStats core]\n  CORE --> WEB[Phoenix web app]\n  WEB --> PAGE[Page controller]\n  PAGE --> USER[Browser]",
+    "caption": {
+      "en": "Intended flow from the spreadsheet to a web page; only the scaffold is implemented.",
+      "cs": "Zamýšlený tok od tabulky k webové stránce; implementovaná je jen kostra."
+    }
+  },
+  "related": [
+    "data-atlas",
+    "data-playground",
+    "crisis-map"
+  ],
+  "confidence": "low"
+}

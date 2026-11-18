@@ -1,0 +1,83 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "microcrawler-js",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/microcrawler-js",
+    "commit": "2e3ae4e6f47de9a09f7009aed131eb0319d3acb9",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "package.json",
+      "Dockerfile",
+      "docker-compose.yml",
+      "Makefile",
+      "lib/worker/worker.js",
+      "lib/collector/collector.js",
+      "tree (recursive)"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "cli",
+  "summary": {
+    "en": "The main Microcrawler implementation: a Node.js command-line tool, published to npm as microcrawler, for distributed crawling. Workers and a collector communicate through RabbitMQ, results land in Couchbase and are indexed in Elasticsearch for exploration in Kibana.",
+    "cs": "Hlavní implementace Microcrawleru: nástroj pro příkazovou řádku v Node.js, publikovaný na npm jako microcrawler, pro distribuovaný crawling. Workery a collector komunikují přes RabbitMQ, výsledky se ukládají do Couchbase a indexují do Elasticsearch pro prohlížení v Kibaně."
+  },
+  "problem": {
+    "en": "Crawling many sites at scale needs parallel downloaders, a place to put results, search over them, and a way to add new sites without touching the engine.",
+    "cs": "Crawling mnoha webů ve velkém potřebuje paralelní stahování, místo pro výsledky, vyhledávání nad nimi a způsob, jak přidat nový web bez zásahu do jádra."
+  },
+  "solution": {
+    "en": "Site logic lives in separate npm packages whose processors return either URLs to enqueue or data records; the worker loads them through microcrawler-crawler-all, takes jobs from a RabbitMQ queue, downloads with superagent and parses with Cheerio. The collector consumes results, stores them in Couchbase and indexes them in Elasticsearch, and an exporter writes them out (a CSV writer is among the dependencies). Throttling, retries, timeouts, proxies and request headers are set in a JSON config created by microcrawler config init.",
+    "cs": "Logika webů je v samostatných npm balíčcích, jejichž procesory vracejí buď URL k zařazení do fronty, nebo datové záznamy; worker je načte přes microcrawler-crawler-all, bere úlohy z fronty v RabbitMQ, stahuje přes superagent a parsuje Cheeriem. Collector odebírá výsledky, ukládá je do Couchbase a indexuje do Elasticsearch a exporter je vypisuje ven (mezi závislostmi je zápis CSV). Throttling, opakování, timeouty, proxy a hlavičky požadavků se nastavují v JSON konfiguraci, kterou vytvoří microcrawler config init."
+  },
+  "highlights": [
+    {
+      "en": "Subcommands: worker, collector, exporter, crawl, config (commander).",
+      "cs": "Podpříkazy worker, collector, exporter, crawl a config (commander)."
+    },
+    {
+      "en": "Plug-in site processors as independent npm packages.",
+      "cs": "Procesory webů jako nezávislé npm balíčky v roli pluginů."
+    },
+    {
+      "en": "docker-compose stack with Couchbase, Elasticsearch, Kibana and RabbitMQ; Alpine image builds libcouchbase from source.",
+      "cs": "Stack v docker-compose s Couchbase, Elasticsearch, Kibanou a RabbitMQ; Alpine image si libcouchbase kompiluje ze zdrojů."
+    },
+    {
+      "en": "ES2015+ source compiled with Babel; Mocha tests, ESLint, Istanbul coverage and Travis CI.",
+      "cs": "Zdroj v ES2015+ kompilovaný Babelem; testy v Mocha, ESLint, pokrytí přes Istanbul a Travis CI."
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "Node.js",
+    "Babel",
+    "RabbitMQ",
+    "Couchbase",
+    "Elasticsearch",
+    "Kibana",
+    "Cheerio",
+    "superagent",
+    "Docker"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  CLI[microcrawler crawl] --> Q[RabbitMQ worker queue]\n  Q --> W[Worker]\n  W --> P[Site processors]\n  P --> Q\n  P --> R[collector queue]\n  R --> C[Collector]\n  C --> CB[Couchbase]\n  C --> ES[Elasticsearch]\n  ES --> K[Kibana]\n  CB --> X[Exporter]",
+    "caption": {
+      "en": "Processors feed new URLs back to the worker queue and data to the collector.",
+      "cs": "Procesory vracejí nové URL zpět do fronty workerů a data collectoru."
+    }
+  },
+  "related": [
+    "microcrawler",
+    "microcrawler-elixir",
+    "microcrawler-crawler-all",
+    "microcrawler-crawler-base",
+    "microcrawler-crawler-sreality-cz",
+    "microcrawler-browser",
+    "docks",
+    "microcrawler-ng",
+    "apollo-crawler"
+  ],
+  "confidence": "high"
+}

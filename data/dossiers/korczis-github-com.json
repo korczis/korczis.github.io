@@ -1,0 +1,75 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "korczis-github-com",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/korczis-github-com",
+    "commit": "55575166c18bbfff0021ffd327dc0267c235e6af",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "index.html",
+      "params.json",
+      "tree /"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "site",
+  "summary": {
+    "en": "An early personal project index from the GitHub Pages era, kept as a GitLab repository. It holds a static index.html, stylesheets and a README that lists the author's open-source projects of that time with short descriptions and CI badges.",
+    "cs": "Raný osobní rozcestník projektů z doby GitHub Pages, dnes uložený jako repozitář na GitLabu. Obsahuje statický index.html, styly a README se seznamem tehdejších open-source projektů autora, krátkými popisy a odznaky CI."
+  },
+  "problem": {
+    "en": "A developer with many small public repositories needed one page that points visitors to the projects worth looking at. The repositories themselves did not provide an overview or grouping.",
+    "cs": "Vývojář s mnoha malými veřejnými repozitáři potřeboval jednu stránku, která návštěvníka nasměruje na projekty, které stojí za pozornost. Samotné repozitáře žádný přehled ani členění nenabízely."
+  },
+  "solution": {
+    "en": "A hand-written static page links to two flagship projects, while the README carries a longer curated list grouped into active, to-be-reviewed and postponed projects. The page was produced with the GitHub automatic page generator (params.json) and a stock theme.",
+    "cs": "Ručně psaná statická stránka odkazuje na dva hlavní projekty a README nese delší kurátorovaný seznam rozdělený na aktivní projekty, projekty k revizi a odložené. Stránka vznikla automatickým generátorem GitHub Pages (params.json) se standardním tématem."
+  },
+  "highlights": [
+    {
+      "en": "Curated project list with per-project Travis CI badges in the README.",
+      "cs": "Kurátorovaný seznam projektů s odznaky Travis CI u každého z nich v README."
+    },
+    {
+      "en": "Static HTML and CSS only, no build step.",
+      "cs": "Jen statické HTML a CSS, žádný build."
+    },
+    {
+      "en": "Historical predecessor of the current personal hub.",
+      "cs": "Historický předchůdce současného osobního rozcestníku."
+    }
+  ],
+  "stack": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "GitHub Pages"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  GEN[Page generator params] --> IDX[index.html]\n  CSS[Stylesheets] --> IDX\n  RD[README project list] --> LST[Grouped project links]\n  IDX --> LST\n  LST --> REPO[Public repositories]",
+    "caption": {
+      "en": "A static page and a README both point to the public project repositories.",
+      "cs": "Statická stránka i README odkazují na veřejné repozitáře projektů."
+    }
+  },
+  "related": [
+    "korczis.github.io",
+    "korczis.gitlab.io",
+    "microcrawler",
+    "the-scratch",
+    "skull",
+    "algorithms",
+    "apollon",
+    "esri",
+    "peacemaker",
+    "github-extractor",
+    "iCave",
+    "microscratch",
+    "books",
+    "microcrawler-couchapp",
+    "ratnet"
+  ],
+  "confidence": "medium"
+}

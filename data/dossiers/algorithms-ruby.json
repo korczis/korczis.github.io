@@ -1,0 +1,67 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "algorithms-ruby",
+  "sources": {
+    "github": "https://github.com/korczis/algorithms-ruby",
+    "gitlab": "https://gitlab.com/korczis/algorithms-ruby",
+    "commit": "6843ad55c92a62a35b6862e763119fbacce1e641",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "algorithms.gemspec",
+      "recursive tree",
+      "ext/algorithms/algorithms.cpp",
+      "lib/algorithms/algorithms.rb"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "library",
+  "summary": {
+    "en": "A Ruby gem skeleton for fundamental algorithms with a native C++ extension. The extension registers a few test methods, such as a factorial, through the Ruby C API.",
+    "cs": "Kostra Ruby gemu pro základní algoritmy s nativním rozšířením v C++. Rozšíření přes Ruby C API registruje několik testovacích metod, například faktoriál."
+  },
+  "problem": {
+    "en": "Pure Ruby is slow for numeric and algorithmic work; the repository explores moving such code into a compiled extension while keeping a Ruby interface.",
+    "cs": "Čisté Ruby je pro numerickou a algoritmickou práci pomalé; repozitář zkoumá přesun takového kódu do kompilovaného rozšíření při zachování Ruby rozhraní."
+  },
+  "solution": {
+    "en": "The gemspec declares ext/algorithms/extconf.rb as a native extension built with rake-compiler, with ffi and pry as runtime dependencies. lib/ autoloads Ruby modules for math and increment helpers, and bin/ provides an interactive console. The README usage section is still a TODO.",
+    "cs": "Gemspec deklaruje ext/algorithms/extconf.rb jako nativní rozšíření sestavované přes rake-compiler, s ffi a pry jako runtime závislostmi. lib/ automaticky načítá Ruby moduly pro math a increment a bin/ nabízí interaktivní konzoli. Sekce použití v README je stále TODO."
+  },
+  "highlights": [
+    {
+      "en": "Native C++ extension wired through extconf.rb and rake-compiler",
+      "cs": "Nativní C++ rozšíření zapojené přes extconf.rb a rake-compiler"
+    },
+    {
+      "en": "Ruby C API method registration, including a factorial function",
+      "cs": "Registrace metod přes Ruby C API včetně faktoriálu"
+    },
+    {
+      "en": "Interactive console executable for experiments",
+      "cs": "Interaktivní konzole pro experimenty"
+    }
+  ],
+  "stack": [
+    "Ruby",
+    "C++",
+    "Ruby C API",
+    "rake-compiler",
+    "FFI",
+    "Pry"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[Ruby caller] --> B[lib algorithms]\n  B --> C[math.rb]\n  B --> D[increment.rb]\n  A --> E[Native extension]\n  F[extconf.rb] --> E\n  E --> G[algorithms.cpp]\n  H[bin console] --> A",
+    "caption": {
+      "en": "Ruby modules and the compiled extension sit side by side under one gem.",
+      "cs": "Ruby moduly a kompilované rozšíření vedle sebe v jednom gemu."
+    }
+  },
+  "related": [
+    "algorithms",
+    "skull-ruby",
+    "skull-cpp",
+    "rustler-test"
+  ],
+  "confidence": "medium"
+}

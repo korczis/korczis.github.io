@@ -1,0 +1,67 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "zaas",
+  "sources": {
+    "github": "https://github.com/korczis/zaas",
+    "gitlab": "https://gitlab.com/korczis/zaas",
+    "commit": "6e04c210f324aac853a64b01e63855bd2dfb95d9",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "mix.exs",
+      "Cargo.toml",
+      "Dockerfile",
+      "lib/vfs.ex",
+      "native/the-scratch/src/lib.rs"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "experiment",
+  "summary": {
+    "en": "A repository started from the owner's the-scratch starter: an Elm single-page app on a Phoenix backend with GraphQL, OAuth and a Rust NIF. Its description suggests a tongue-in-cheek \"as a service\" idea, but no code specific to that idea is committed.",
+    "cs": "Repozitář založený z autorova startéru the-scratch: Elm SPA nad Phoenix backendem s GraphQL, OAuth a Rust NIF. Popis naznačuje recesistický nápad „jako služba“, ale kód specifický pro tento nápad v repozitáři není."
+  },
+  "problem": {
+    "en": "The intent was to spin up a new web service quickly on a ready-made stack. What the service was meant to do is unclear from the code.",
+    "cs": "Záměrem bylo rychle postavit novou webovou službu na připraveném stacku. Co přesně měla služba dělat, z kódu jasné není."
+  },
+  "solution": {
+    "en": "The code is the the-scratch template: Phoenix 1.3 with Absinthe GraphQL, Guardian JWT and Ueberauth providers, Ecto on PostgreSQL, an ETS-backed in-memory virtual file system, and a Rustler crate with add/sub NIFs. The Dockerfile installs Elm and runs credo --strict during the image build.",
+    "cs": "Kód je šablona the-scratch: Phoenix 1.3 s Absinthe GraphQL, Guardian JWT a poskytovateli Ueberauth, Ecto nad PostgreSQL, paměťový virtuální souborový systém nad ETS a Rustler crate s NIF funkcemi add/sub. Dockerfile instaluje Elm a při buildu image spouští credo --strict."
+  },
+  "highlights": [
+    {
+      "en": "Template reuse: the same tree as the-scratch and mapoffacts.",
+      "cs": "Opakované použití šablony: stejný strom jako the-scratch a mapoffacts."
+    },
+    {
+      "en": "ETS-backed virtual file system served from a GenServer.",
+      "cs": "Virtuální souborový systém nad ETS obsluhovaný GenServerem."
+    }
+  ],
+  "stack": [
+    "Elixir",
+    "Phoenix",
+    "Elm",
+    "Absinthe",
+    "GraphQL",
+    "PostgreSQL",
+    "Rust",
+    "Rustler",
+    "Docker"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[Elm SPA] --> B[Phoenix router]\n  B --> C[Absinthe GraphQL]\n  B --> D[Ueberauth OAuth]\n  C --> E[(PostgreSQL)]\n  B --> F[ETS VFS]\n  B --> G[Rust NIF]",
+    "caption": {
+      "en": "The inherited the-scratch stack; no service-specific modules exist.",
+      "cs": "Zděděný stack the-scratch; moduly specifické pro službu neexistují."
+    }
+  },
+  "related": [
+    "the-scratch",
+    "mapoffacts",
+    "web-spa",
+    "rustler-test"
+  ],
+  "confidence": "low"
+}

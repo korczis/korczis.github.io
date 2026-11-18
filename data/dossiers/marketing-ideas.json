@@ -1,0 +1,53 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "marketing-ideas",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/marketing-ideas",
+    "commit": "f60bb68f8bcfc27a4623ce710ee0e6735079b037",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "blizzard-in-can/README.md",
+      "tree recursive"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "docs",
+  "summary": {
+    "en": "A small collection of product and marketing ideas written as Markdown. The only entry is a tongue-in-cheek pitch for a canister that sprays artificial snow.",
+    "cs": "Malá sbírka produktových a marketingových nápadů v Markdownu. Jediná položka je nadsázkou psaný pitch na plechovku, ze které se stříká umělý sníh."
+  },
+  "problem": {
+    "en": "A place to park product ideas and practise writing marketing copy.",
+    "cs": "Místo, kam odložit produktové nápady a procvičit si psaní marketingových textů."
+  },
+  "solution": {
+    "en": "Each idea gets its own folder with a README. The existing pitch covers the product concept, size variants, target segments, installation options and example use cases.",
+    "cs": "Každý nápad má vlastní složku s README. Stávající pitch popisuje koncept produktu, varianty balení, cílové segmenty, možnosti instalace a ukázkové scénáře použití."
+  },
+  "highlights": [
+    {
+      "en": "One idea folder per concept, linked from the root README.",
+      "cs": "Jedna složka na každý koncept, odkázaná z kořenového README."
+    },
+    {
+      "en": "Structured pitch: features, segments, installation, use cases.",
+      "cs": "Strukturovaný pitch: vlastnosti, segmenty, instalace, scénáře."
+    }
+  ],
+  "stack": [
+    "Markdown"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  RD[Root README] --> IDEA[Idea folder]\n  IDEA --> PITCH[Pitch text]\n  PITCH --> SEG[Target segments]\n  PITCH --> USE[Use cases]",
+    "caption": {
+      "en": "A root index points to one folder per idea.",
+      "cs": "Kořenový rozcestník odkazuje na složku pro každý nápad."
+    }
+  },
+  "related": [
+    "ideas"
+  ],
+  "confidence": "low"
+}

@@ -1,0 +1,52 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "microcrawler-crawler-base",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-base",
+    "commit": "597b7636fb48a592d8d7dfa9b4e9a38163ce0e83",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "package.json",
+      "tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "library",
+  "summary": {
+    "en": "An intended shared base package for Microcrawler site crawlers. At the head of the default branch it contains only package.json, a README heading and a licence; the declared entry point src/index.js is not present.",
+    "cs": "Zamýšlený společný základ pro crawlery jednotlivých webů v Microcrawleru. Na hlavě výchozí větve obsahuje jen package.json, nadpis v README a licenci; deklarovaný vstupní bod src/index.js chybí."
+  },
+  "problem": {
+    "en": "Site packages repeat the same helpers and would benefit from a common base.",
+    "cs": "Balíčky webů opakují stejné pomocné funkce a hodil by se jim společný základ."
+  },
+  "solution": {
+    "en": "Most site packages already declare a dependency on version 0.0.1; what it was meant to provide is unclear from the repository.",
+    "cs": "Většina balíčků webů už na verzi 0.0.1 závisí; co přesně měl poskytovat, z repozitáře jasné není."
+  },
+  "highlights": [
+    {
+      "en": "Referenced as a dependency by most site packages.",
+      "cs": "Jako závislost ho uvádí většina balíčků webů."
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "npm"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  S1[site package] --> B[crawler-base]\n  S2[site package] --> B\n  B --> E[empty entry point]",
+    "caption": {
+      "en": "Declared as a shared dependency, with no implementation yet.",
+      "cs": "Deklarovaná společná závislost zatím bez implementace."
+    }
+  },
+  "related": [
+    "microcrawler-crawler-all",
+    "microcrawler-js",
+    "microcrawler-crawler-sreality-cz"
+  ],
+  "confidence": "low"
+}

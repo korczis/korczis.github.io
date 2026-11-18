@@ -1,0 +1,56 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "home",
+  "sources": {
+    "github": "https://github.com/korczis/home",
+    "gitlab": "https://gitlab.com/korczis/home",
+    "commit": "4f7fc686a03ee7c7247ac4e5a6b3a008aaa6cf05",
+    "read_at": "2026-11-18",
+    "read": [
+      ".bash_profile",
+      ".bashrc",
+      ".tmux.conf",
+      "LICENSE"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "config",
+  "summary": {
+    "en": "A small dotfiles repository with a bash profile, a bashrc and a tmux configuration for a macOS workstation.",
+    "cs": "Malý repozitář dotfiles: bash profil, bashrc a konfigurace tmuxu pro pracovní stanici s macOS."
+  },
+  "problem": {
+    "en": "Shell aliases and environment tweaks get lost when a machine is reinstalled or replaced.",
+    "cs": "Aliasy a úpravy prostředí shellu se ztratí při reinstalaci nebo výměně stroje."
+  },
+  "solution": {
+    "en": "The files are versioned as-is: networking aliases built on lsof and ipconfig, a pyenv init, an RVM path entry, zlib build flags for Homebrew and mouse support in tmux. There is no installer or README.",
+    "cs": "Soubory jsou verzované tak, jak jsou: síťové aliasy nad lsof a ipconfig, inicializace pyenv, cesta k RVM, příznaky pro build se zlib z Homebrew a podpora myši v tmuxu. Instalátor ani README chybí."
+  },
+  "highlights": [
+    {
+      "en": "Networking aliases for open sockets, listening ports and DNS cache flush",
+      "cs": "Aliasy pro výpis otevřených socketů, naslouchajících portů a vyprázdnění DNS cache"
+    },
+    {
+      "en": "Toolchain hooks for pyenv and RVM",
+      "cs": "Napojení na pyenv a RVM"
+    }
+  ],
+  "stack": [
+    "Bash",
+    "tmux",
+    "macOS",
+    "pyenv",
+    "RVM"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Repo[home repo] --> Profile[bash_profile]\n  Repo --> Rc[bashrc]\n  Repo --> Tmux[tmux.conf]\n  Profile --> Aliases[network aliases]\n  Profile --> Pyenv[pyenv init]\n  Rc --> Rvm[RVM path]",
+    "caption": {
+      "en": "The three dotfiles and what each one configures.",
+      "cs": "Tři dotfiles a co který z nich nastavuje."
+    }
+  },
+  "related": [],
+  "confidence": "low"
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "skull-rust",
+  "sources": {
+    "github": "https://github.com/korczis/skull-rust",
+    "gitlab": "https://gitlab.com/korczis/skull-rust",
+    "commit": "6c8b2e949c65df47c64293db170ece53b429a216",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "Cargo.toml (tree)",
+      "src (tree)"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "kata",
+  "summary": {
+    "en": "A small repository of Rust experiments, described in one line as such, part of a family of same-named learning repos in several languages. It has a Cargo manifest and a src tree and no further documentation.",
+    "cs": "Malé repo rustových experimentů, takto i jednořádkově popsané, součást rodiny stejnojmenných učebních rep v několika jazycích. Má Cargo manifest a src strom, bez další dokumentace."
+  },
+  "problem": {
+    "en": "Learning a language is easiest with a scratch space for small exercises; this is that space for Rust.",
+    "cs": "Učení jazyka jde nejlépe se škrabacím prostorem na malá cvičení; tohle je ten prostor pro Rust."
+  },
+  "solution": {
+    "en": "The repository collects Rust snippets under a single Cargo crate. It is a learning kata, not a reusable library.",
+    "cs": "Repo sdružuje rustové úryvky pod jediným Cargo crate. Jde o učební katu, ne o znovupoužitelnou knihovnu."
+  },
+  "highlights": [
+    {
+      "en": "Single Cargo crate holding Rust practice code.",
+      "cs": "Jediný Cargo crate s cvičným rustovým kódem."
+    },
+    {
+      "en": "One of several same-named learning repos across languages.",
+      "cs": "Jedno z několika stejnojmenných učebních rep napříč jazyky."
+    }
+  ],
+  "stack": [
+    "Rust",
+    "Cargo"
+  ],
+  "architecture": {
+    "mermaid": "flowchart TD\n  A[Exercise] --> B[Rust module]\n  B --> C[Cargo build]\n  C --> D[Run and observe]",
+    "caption": {
+      "en": "Exercise modules compile under one Cargo crate for practice.",
+      "cs": "Cvičné moduly se kompilují pod jedním Cargo crate pro procvičení."
+    }
+  },
+  "related": [
+    "skull",
+    "skull-cpp"
+  ],
+  "confidence": "low"
+}

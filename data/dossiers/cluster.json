@@ -1,0 +1,65 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "cluster",
+  "sources": {
+    "github": "https://github.com/korczis/cluster",
+    "gitlab": "https://gitlab.com/korczis/cluster",
+    "commit": "2bd4b42963e4ca8772aaf5acfcd222d20f21d028",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "cluster.gemspec",
+      "Gemfile",
+      "bin/cluster",
+      "lib/cluster/cli/cli.rb",
+      "lib/cluster/kube_aws/kube_aws.rb"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "cli",
+  "summary": {
+    "en": "A Ruby gem with a CLI for running your own CoreOS/Kubernetes cluster on AWS. It downloads and drives the kube-aws and kubectl tools for the current platform.",
+    "cs": "Ruby gem s CLI pro provoz vlastního CoreOS/Kubernetes clusteru na AWS. Stahuje a ovládá nástroje kube-aws a kubectl pro aktuální platformu."
+  },
+  "problem": {
+    "en": "Standing up Kubernetes on AWS meant fetching the right tool binaries for macOS or Linux and remembering long command sequences. The README is empty, so the intended workflow is only visible from the code.",
+    "cs": "Postavit Kubernetes na AWS znamenalo stáhnout správné binárky nástrojů pro macOS nebo Linux a pamatovat si dlouhé sekvence příkazů. README je prázdné, takže zamýšlený postup je vidět jen z kódu."
+  },
+  "solution": {
+    "en": "A GLI-based CLI loads commands (init, get, aws, kube-aws, kubectl) from a directory. Helper classes pick the OS-specific release URL, download it with curl into a tools directory, unpack it and pass arguments through.",
+    "cs": "CLI postavené na GLI načítá příkazy (init, get, aws, kube-aws, kubectl) z adresáře. Pomocné třídy vyberou URL vydání podle OS, stáhnou ho curlem do adresáře tools, rozbalí a předávají mu argumenty."
+  },
+  "highlights": [
+    {
+      "en": "Command-per-file CLI structure with GLI hooks.",
+      "cs": "Struktura CLI s jedním příkazem na soubor a háčky GLI."
+    },
+    {
+      "en": "OS detection to fetch matching kube-aws and kubectl binaries.",
+      "cs": "Detekce OS pro stažení odpovídajících binárek kube-aws a kubectl."
+    }
+  ],
+  "stack": [
+    "Ruby",
+    "GLI",
+    "Kubernetes",
+    "CoreOS",
+    "AWS",
+    "kube-aws",
+    "kubectl"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[cluster CLI] --> B[GLI commands]\n  B --> C[get]\n  C --> D[Download kube-aws]\n  C --> E[Download kubectl]\n  B --> F[kube-aws passthrough]\n  B --> G[kubectl passthrough]\n  F --> H[AWS cluster]\n  G --> H",
+    "caption": {
+      "en": "The CLI fetches tool binaries and forwards commands to them.",
+      "cs": "CLI stáhne binárky nástrojů a předává jim příkazy."
+    }
+  },
+  "related": [
+    "cluster-kubernetes",
+    "server-coreos",
+    "k8s-orbis-pictus",
+    "aws-lambda-docker"
+  ],
+  "confidence": "medium"
+}

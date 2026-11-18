@@ -1,0 +1,60 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "rustler_mix",
+  "sources": {
+    "github": "https://github.com/korczis/rustler_mix",
+    "gitlab": "https://gitlab.com/korczis/rustler_mix",
+    "commit": "b7d8dadbb3490c892a88cd4dfd1b9b848bcc8c70",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "mix.exs (tree)"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "library",
+  "summary": {
+    "en": "An Elixir Mix project that packages tooling around Rustler, the bridge for writing native Elixir NIFs in Rust. The tree carries a Mix project (mix.exs, lib, test), generator guides and a priv/src layout for the Rust side.",
+    "cs": "Elixir Mix projekt obalující nástroje kolem Rustleru, mostu pro psaní nativních Elixir NIFů v Rustu. Strom obsahuje Mix projekt (mix.exs, lib, test), generátorové guides a priv/src rozvržení pro rustovou stranu."
+  },
+  "problem": {
+    "en": "Calling into Rust from Elixir means setting up a NIF crate, a build step and the right directory layout by hand, which is error-prone and repetitive for each new project.",
+    "cs": "Volání Rustu z Elixiru vyžaduje ručně připravit NIF crate, build krok a správné rozvržení adresářů, což je pro každý nový projekt zdrojem chyb a opakování."
+  },
+  "solution": {
+    "en": "The project provides the Mix-side scaffolding and guides so a Rust NIF crate slots into an Elixir application with a standard config, lib and priv/src structure. The README is an early stub still carrying placeholder install text.",
+    "cs": "Projekt dodává scaffolding na straně Mixu a guides, takže Rust NIF crate zapadne do Elixir aplikace se standardní strukturou config, lib a priv/src. README je raná kostra ještě s výplňovým instalačním textem."
+  },
+  "highlights": [
+    {
+      "en": "Mix project with lib, test, config and a priv/src tree for the Rust crate.",
+      "cs": "Mix projekt s lib, test, config a priv/src stromem pro Rust crate."
+    },
+    {
+      "en": "Ships generator guides for wiring a NIF into an Elixir app.",
+      "cs": "Dodává generátorové guides pro zapojení NIFu do Elixir aplikace."
+    },
+    {
+      "en": "README is an unfinished stub, so the public API is unclear.",
+      "cs": "README je nedokončená kostra, veřejné API je proto nejasné."
+    }
+  ],
+  "stack": [
+    "Elixir",
+    "Mix",
+    "Rust",
+    "Rustler"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[Elixir app] --> B[Mix tooling]\n  B --> C[NIF crate scaffold]\n  C --> D[Rust source]\n  D --> E[Compiled NIF]\n  E --> A",
+    "caption": {
+      "en": "Mix tooling scaffolds a Rust NIF crate that compiles back into the Elixir application.",
+      "cs": "Mix nástroje vygenerují Rust NIF crate, který se zkompiluje zpět do Elixir aplikace."
+    }
+  },
+  "related": [
+    "rustler-test",
+    "in-rust-we-trust"
+  ],
+  "confidence": "medium"
+}

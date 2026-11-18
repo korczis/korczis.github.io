@@ -1,0 +1,46 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "photos",
+  "sources": {
+    "github": "https://github.com/korczis/photos",
+    "gitlab": "https://gitlab.com/korczis/photos",
+    "commit": "4fcf8d88378acddb9563263e5eea3595bc8cb078",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "data",
+  "summary": {
+    "en": "A personal photo repository holding one stitched panorama image.",
+    "cs": "Osobní repozitář s fotkami, ve kterém je jediný slepený panoramatický snímek."
+  },
+  "problem": {
+    "en": "Unclear beyond keeping photos under version control.",
+    "cs": "Nad rámec uložení fotek do gitu nejasné."
+  },
+  "solution": {
+    "en": "A panoramas directory with a single blended JPEG; the README only says \"My Photos\".",
+    "cs": "Adresář panoramas s jedním zblendovaným JPEGem; README říká jen „My Photos“."
+  },
+  "highlights": [
+    {
+      "en": "One image file, no code.",
+      "cs": "Jeden obrázek, žádný kód."
+    }
+  ],
+  "stack": [
+    "JPEG"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Repo[photos] --> Pano[panoramas]\n  Pano --> Img[blended panorama jpg]\n  Repo --> Readme[README]",
+    "caption": {
+      "en": "Repository contents.",
+      "cs": "Obsah repozitáře."
+    }
+  },
+  "related": [],
+  "confidence": "low"
+}

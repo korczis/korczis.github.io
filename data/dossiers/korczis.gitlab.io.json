@@ -1,0 +1,83 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "korczis.gitlab.io",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/korczis.gitlab.io",
+    "commit": "12a4ab8bccdf3833226eaf5545b1e08b3127b4d4",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "mix.exs",
+      "config.toml",
+      "PROMPT.md",
+      ".gitlab-ci.yml",
+      "tree /",
+      "tree lib/",
+      "tree native/",
+      "tree content/",
+      "tree templates/"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "site",
+  "summary": {
+    "en": "The GitLab Pages user site, built with the Zola static site generator in GitLab CI. The tree mixes Zola parts (config, content chapters, templates, themes, Sass) with a Phoenix application scaffold and a Rust NIF, so the repository looks like a workbench rather than a finished site.",
+    "cs": "Uživatelský web na GitLab Pages sestavovaný generátorem statických stránek Zola v GitLab CI. Strom míchá části Zoly (konfigurace, kapitoly obsahu, šablony, témata, Sass) s kostrou aplikace ve Phoenixu a NIF v Rustu, takže repozitář působí spíš jako dílna než jako hotový web."
+  },
+  "problem": {
+    "en": "A personal site on GitLab Pages needs a static build that runs in CI. The author also wanted a repeatable way to produce structured blog articles, for example about music tracks.",
+    "cs": "Osobní web na GitLab Pages potřebuje statický build, který běží v CI. Autor chtěl navíc opakovatelný způsob, jak tvořit strukturované články na blog, třeba o hudebních skladbách."
+  },
+  "solution": {
+    "en": "A GitLab CI pages job installs Node tooling with pnpm, downloads a pinned Zola release and builds the site with recursive submodules for the theme. PROMPT.md is an LLM prompt template that yields Zola articles with front matter, genre and sentiment taxonomies, a cover image and an embedded video. A Phoenix 1.7 app with LiveView, SQLite, Tailwind and Rustler, plus Dockerfile and fly.toml, sits alongside; its role in the published site is unclear.",
+    "cs": "Job pages v GitLab CI nainstaluje přes pnpm nástroje pro Node, stáhne připnutou verzi Zoly a sestaví web s rekurzivními submoduly pro téma. PROMPT.md je šablona promptu pro LLM, ze které vznikají články pro Zolu s front matter, taxonomiemi žánru a nálady, obrázkem a vloženým videem. Vedle toho leží aplikace ve Phoenixu 1.7 s LiveView, SQLite, Tailwindem a Rustlerem, k tomu Dockerfile a fly.toml; jakou roli hraje ve zveřejněném webu, není jasné."
+  },
+  "highlights": [
+    {
+      "en": "Pinned Zola version in CI for reproducible static builds.",
+      "cs": "Připnutá verze Zoly v CI kvůli reprodukovatelným statickým buildům."
+    },
+    {
+      "en": "Prompt template that turns track metadata into a full Zola article.",
+      "cs": "Šablona promptu, která z metadat skladby udělá celý článek pro Zolu."
+    },
+    {
+      "en": "Phoenix and Rust NIF scaffold shared with an audio playground project.",
+      "cs": "Kostra s Phoenixem a NIF v Rustu sdílená s projektem audio hřiště."
+    },
+    {
+      "en": "README is copied from an upstream Zola blog theme and does not describe this site.",
+      "cs": "README je převzaté z cizího blogového tématu pro Zolu a tento web nepopisuje."
+    }
+  ],
+  "stack": [
+    "Zola",
+    "Sass",
+    "Tailwind CSS",
+    "Elixir",
+    "Phoenix",
+    "LiveView",
+    "SQLite",
+    "Rust",
+    "Rustler",
+    "GitLab CI",
+    "GitLab Pages",
+    "pnpm",
+    "Fly.io"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  PR[Prompt template] --> ART[Markdown articles]\n  ART --> CONT[content folder]\n  CONT --> ZOLA[Zola build]\n  THEME[Theme and templates] --> ZOLA\n  CI[GitLab CI pages job] --> ZOLA\n  ZOLA --> PAGES[GitLab Pages]\n  PHX[Phoenix scaffold] --> NIF[Rust NIF]",
+    "caption": {
+      "en": "Content and theme go through a pinned Zola build in CI; the Phoenix scaffold is a separate track.",
+      "cs": "Obsah a téma projdou připnutým buildem Zoly v CI; kostra ve Phoenixu je samostatná větev."
+    }
+  },
+  "related": [
+    "korczis.github.io",
+    "korczis-github-com",
+    "sonic-playground",
+    "prismatic-blog"
+  ],
+  "confidence": "low"
+}

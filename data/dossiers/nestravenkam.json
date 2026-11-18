@@ -1,0 +1,62 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "nestravenkam",
+  "sources": {
+    "github": "https://github.com/korczis/nestravenkam",
+    "gitlab": "https://gitlab.com/korczis/nestravenkam",
+    "commit": "2d57c3264cffe8b870dcf03fd97c75d61fcf9df0",
+    "read_at": "2026-11-18",
+    "read": [
+      "index.html",
+      "js/main.js",
+      "CNAME",
+      "tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "site",
+  "summary": {
+    "en": "A static site for its own .cz domain, started from HTML5 Boilerplate. The repository holds meal-voucher-themed artwork and Pixelmator source files, but the index page is still the boilerplate \"Hello world\" and main.js is empty.",
+    "cs": "Statický web pro vlastní doménu .cz založený na HTML5 Boilerplate. Repozitář obsahuje grafiku na téma stravenek a zdrojové soubory z Pixelmatoru, ale úvodní stránka je zatím boilerplate „Hello world“ a main.js je prázdný."
+  },
+  "problem": {
+    "en": "Unclear beyond the theme: the name and artwork suggest a campaign page about meal vouchers, but no copy exists.",
+    "cs": "Kromě tématu nejasné: název a grafika naznačují kampaňovou stránku o stravenkách, text ale chybí."
+  },
+  "solution": {
+    "en": "Served as static files with a CNAME for the custom domain; normalize.css, Modernizr and jQuery from the boilerplate, plus .htaccess and web manifest defaults.",
+    "cs": "Servíruje se jako statické soubory s CNAME pro vlastní doménu; z boilerplatu normalize.css, Modernizr a jQuery a k tomu výchozí .htaccess a web manifest."
+  },
+  "highlights": [
+    {
+      "en": "Custom domain via CNAME.",
+      "cs": "Vlastní doména přes CNAME."
+    },
+    {
+      "en": "Artwork prepared; page content not written.",
+      "cs": "Grafika připravená, obsah stránky nenapsaný."
+    }
+  ],
+  "stack": [
+    "HTML5 Boilerplate",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "jQuery",
+    "Modernizr",
+    "Pixelmator"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  ART[Artwork assets] --> IDX[index.html]\n  CSS[normalize and main css] --> IDX\n  JS[jQuery Modernizr] --> IDX\n  IDX --> PG[Static hosting]\n  CN[CNAME] --> PG\n  PG --> DOM[Custom domain]",
+    "caption": {
+      "en": "A boilerplate static page wired to a custom domain.",
+      "cs": "Boilerplate statická stránka napojená na vlastní doménu."
+    }
+  },
+  "related": [
+    "vomaste.cz",
+    "u-tygra",
+    "annasabatova-cz"
+  ],
+  "confidence": "low"
+}

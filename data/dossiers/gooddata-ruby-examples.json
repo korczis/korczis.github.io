@@ -1,0 +1,68 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "gooddata-ruby-examples",
+  "sources": {
+    "github": "https://github.com/korczis/gooddata-ruby-examples",
+    "gitlab": "https://gitlab.com/korczis/gooddata-ruby-examples",
+    "commit": "8d6eddeba7f5fceab0daaa8c6aaf7d2d0eab3237",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.asciidoc",
+      "Gemfile",
+      "Rakefile",
+      ".travis.yml",
+      "lib/erb_helper.rb"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "docs",
+  "summary": {
+    "en": "A cookbook of recipes for automating a cloud analytics (BI) platform with its Ruby SDK, written in AsciiDoc and built into a single book. Chapters cover connecting, users, automation, data models, testing, projects, deployment and reports.",
+    "cs": "Kuchařka receptů pro automatizaci cloudové analytické (BI) platformy přes její Ruby SDK, psaná v AsciiDocu a sestavovaná do jedné knihy. Kapitoly pokrývají připojení, uživatele, automatizaci, datové modely, testování, projekty, nasazení a reporty."
+  },
+  "problem": {
+    "en": "SDK users needed task-oriented examples (\"clone a project\", \"compare reports\", \"disable schedules\") rather than API reference. Code samples in documentation drift out of date when they are not executed or generated.",
+    "cs": "Uživatelé SDK potřebovali příklady podle úloh („naklonuj projekt“, „porovnej reporty“, „vypni plánování“) místo referenční dokumentace API. Ukázky kódu v dokumentaci zastarávají, pokud se negenerují ani nespouštějí."
+  },
+  "solution": {
+    "en": "Each recipe is an .asciidoc.erb template that pulls its Ruby source from src/ through an ERB helper, so the book embeds real files. Rake tasks run the ERB step and asciidoctor, watchr rebuilds on change, and Travis CI builds the book on several Ruby versions; snippets/ and apps/ hold standalone scripts.",
+    "cs": "Každý recept je šablona .asciidoc.erb, která si přes ERB helper vloží Ruby zdrojáky ze src/, takže kniha obsahuje skutečné soubory. Úlohy v Rake spustí ERB krok a asciidoctor, watchr přestaví knihu při změně a Travis CI ji staví na několika verzích Ruby; snippets/ a apps/ obsahují samostatné skripty."
+  },
+  "highlights": [
+    {
+      "en": "Documentation that includes code from real source files via ERB.",
+      "cs": "Dokumentace, která přes ERB vkládá kód ze skutečných zdrojových souborů."
+    },
+    {
+      "en": "Eight numbered chapters of task-oriented recipes.",
+      "cs": "Osm číslovaných kapitol receptů podle úloh."
+    },
+    {
+      "en": "CI build of the book on MRI and JRuby.",
+      "cs": "CI build knihy na MRI i JRuby."
+    }
+  ],
+  "stack": [
+    "Ruby",
+    "AsciiDoc",
+    "Asciidoctor",
+    "ERB",
+    "Rake",
+    "Travis CI"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[src Ruby examples] --> B[ERB helper]\n  C[recipe .asciidoc.erb] --> B\n  B --> D[recipe .asciidoc]\n  D --> E[book.asciidoc]\n  E --> F[Asciidoctor]\n  F --> G[book.html]\n  H[watchr] --> B",
+    "caption": {
+      "en": "Recipes and real source files are merged by ERB, then rendered by Asciidoctor.",
+      "cs": "Recepty a skutečné zdrojáky spojí ERB a vykreslí Asciidoctor."
+    }
+  },
+  "related": [
+    "gooddata-lcm-tool",
+    "gooddata-graphql",
+    "docker-gooddata-ruby",
+    "gooddata_rails_app",
+    "gooddata-fs"
+  ],
+  "confidence": "high"
+}

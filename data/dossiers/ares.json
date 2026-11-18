@@ -1,0 +1,69 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "ares",
+  "sources": {
+    "github": "https://github.com/korczis/ares",
+    "gitlab": "https://gitlab.com/korczis/ares",
+    "commit": "bcbcf21433b588806f187592fba83892e11c2cd8",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "Gemfile",
+      "lib/agent.rb",
+      "lib/master.rb",
+      "lib/slave.rb"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "service",
+  "summary": {
+    "en": "A simple AMQP-based monitoring framework in Ruby with a master and slave agents. The master periodically pings all slaves over a fanout exchange, and slaves reply with host information that the master stores in MongoDB.",
+    "cs": "Jednoduchý monitorovací framework v Ruby nad AMQP s jedním masterem a agenty typu slave. Master pravidelně posílá ping všem slave přes fanout exchange a ty odpovídají informacemi o hostiteli, které master ukládá do MongoDB."
+  },
+  "problem": {
+    "en": "Collecting basic host status from many machines needs a transport that does not require the master to know each host in advance. A message broker with broadcast exchanges solves discovery and fan-out.",
+    "cs": "Sbírání základního stavu z mnoha strojů potřebuje přenos, u kterého master nemusí dopředu znát každého hostitele. Message broker s broadcastovými exchange řeší objevování i rozesílání."
+  },
+  "solution": {
+    "en": "A shared Agent base connects to a local AMQP broker and declares two durable fanout exchanges, ares.master and ares.slave. The master runs an EventMachine loop that publishes a ping every second and inserts pong replies into a MongoDB collection; slaves answer with hostname and IP from the sys-host gem, with other sys-* gems (CPU, filesystem, process table, uptime) pulled in for richer data.",
+    "cs": "Společný základ Agent se připojí k lokálnímu AMQP brokeru a založí dvě trvalé fanout exchange, ares.master a ares.slave. Master běží ve smyčce EventMachine, každou sekundu pošle ping a odpovědi pong zapisuje do kolekce v MongoDB; slave odpovídá jménem a IP hostitele z gemu sys-host, další gemy sys-* (CPU, souborový systém, procesy, uptime) jsou připravené pro bohatší data."
+  },
+  "highlights": [
+    {
+      "en": "Broker-mediated ping/pong with two fanout exchanges",
+      "cs": "Ping/pong přes broker se dvěma fanout exchange"
+    },
+    {
+      "en": "Monitoring results persisted in MongoDB",
+      "cs": "Výsledky monitoringu ukládané do MongoDB"
+    },
+    {
+      "en": "Auto-deleting per-process queues with random names",
+      "cs": "Automaticky mazané fronty s náhodnými jmény pro každý proces"
+    },
+    {
+      "en": "Broker host is hard-coded to localhost",
+      "cs": "Adresa brokeru je napevno localhost"
+    }
+  ],
+  "stack": [
+    "Ruby",
+    "AMQP",
+    "RabbitMQ",
+    "EventMachine",
+    "MongoDB",
+    "Bundler"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  M[Master] -->|ping| SX[ares.slave fanout]\n  SX --> S1[Slave agent]\n  S1 --> H[sys-host info]\n  S1 -->|pong| MX[ares.master fanout]\n  MX --> M\n  M --> DB[MongoDB monitoring]",
+    "caption": {
+      "en": "Master and slaves exchange ping and pong over two fanout exchanges; results land in MongoDB.",
+      "cs": "Master a slave si vyměňují ping a pong přes dvě fanout exchange; výsledky končí v MongoDB."
+    }
+  },
+  "related": [
+    "job-processor",
+    "dispatcher"
+  ],
+  "confidence": "medium"
+}

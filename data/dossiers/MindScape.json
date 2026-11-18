@@ -1,0 +1,60 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "MindScape",
+  "sources": {
+    "github": "https://github.com/korczis/MindScape",
+    "gitlab": null,
+    "commit": "a9bdadd881dc061bce6d614214c944342eb8af19",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "docs",
+  "summary": {
+    "en": "A concept document for a mental-health platform that would combine machine-learning-assisted assessment, virtual-reality therapy sessions and analysis tools for clinicians. The repository contains only the README; no code, model or data exists in it.",
+    "cs": "Koncept platformy pro duševní zdraví, která by spojila diagnostiku podporovanou strojovým učením, terapii ve virtuální realitě a analytické nástroje pro terapeuty. Repozitář obsahuje jen README; žádný kód, model ani data v něm nejsou."
+  },
+  "problem": {
+    "en": "The README frames the problem as diagnosis and treatment planning that is hard to personalise and hard for clinicians to coordinate on.",
+    "cs": "README popisuje problém jako diagnostiku a plánování léčby, které se špatně přizpůsobují pacientovi a ve kterých se terapeuti obtížně koordinují."
+  },
+  "solution": {
+    "en": "Proposed, not built: Rust for model and core logic, an Elixir/Phoenix LiveView backend and UI, and Prolog for rule-based analysis, with dashboards and collaboration features for clinicians. Claims in the README about accuracy and training data are aspirations with nothing in the repository behind them.",
+    "cs": "Navrženo, nepostaveno: Rust pro modely a jádro, backend a UI v Elixiru s Phoenix LiveView a Prolog pro pravidlovou analýzu, k tomu dashboardy a spolupráce pro terapeuty. Tvrzení v README o přesnosti a trénovacích datech jsou cíle, repozitář je ničím nedokládá."
+  },
+  "highlights": [
+    {
+      "en": "Concept-only repository: a single README.",
+      "cs": "Čistě koncept: jediné README."
+    },
+    {
+      "en": "Proposed polyglot stack: Rust, Elixir, Phoenix LiveView, Prolog.",
+      "cs": "Navržený vícejazyčný stack: Rust, Elixir, Phoenix LiveView, Prolog."
+    },
+    {
+      "en": "Mentions regulated health-data storage as a requirement.",
+      "cs": "Zmiňuje jako požadavek regulované ukládání zdravotních dat."
+    }
+  ],
+  "stack": [
+    "Rust",
+    "Elixir",
+    "Phoenix",
+    "Phoenix LiveView",
+    "Prolog"
+  ],
+  "architecture": {
+    "mermaid": "flowchart TD\n  P[Patient interface] --> B[Phoenix LiveView backend]\n  B --> M[Rust ML core]\n  B --> R[Prolog analysis]\n  M --> T[Therapy plan]\n  T --> V[VR session]\n  R --> C[Clinician dashboards]\n  B --> S[Secure storage]",
+    "caption": {
+      "en": "The architecture as proposed in the README; none of it is implemented.",
+      "cs": "Architektura tak, jak ji navrhuje README; nic z ní není implementováno."
+    }
+  },
+  "related": [
+    "cognitive-reasoning",
+    "prismatic"
+  ],
+  "confidence": "low"
+}

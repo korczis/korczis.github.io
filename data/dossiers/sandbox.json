@@ -1,0 +1,62 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "sandbox",
+  "sources": {
+    "github": "https://github.com/korczis/sandbox",
+    "gitlab": "https://gitlab.com/korczis/sandbox",
+    "commit": "a8e49778650f1f9c545e13859e2d9bf9e0009b5e",
+    "read_at": "2026-11-18",
+    "read": [
+      "README",
+      "top-level tree",
+      "TweetStream/app/main.rb"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "experiment",
+  "summary": {
+    "en": "A Ruby sandbox of small experiments laid out as app/lib/spec folders, with a _Template folder for new ones. The only populated experiment is TweetStream, a command-line app intended to store a Twitter stream in PostgreSQL or CouchDB.",
+    "cs": "Pískoviště malých experimentů v Ruby, každý ve struktuře app/lib/spec, se složkou _Template pro nové. Jediný naplněný experiment je TweetStream, aplikace pro příkazovou řádku, která má ukládat proud z Twitteru do PostgreSQL nebo CouchDB."
+  },
+  "problem": {
+    "en": "Trying ideas quickly is easier with a fixed skeleton per experiment. TweetStream explores capturing a live tweet stream into either a relational or a document store.",
+    "cs": "Rychlé zkoušení nápadů je snazší s pevnou kostrou pro každý experiment. TweetStream zkoumá zachytávání živého proudu tweetů do relačního nebo dokumentového úložiště."
+  },
+  "solution": {
+    "en": "TweetStreamApp extends an application base class from a Bsl library and exposes command-line options for the database type, PostgreSQL and CouchDB connection settings and Twitter OAuth credentials, built on the tweetstream gem. The README is empty and the storage logic beyond option parsing was not reviewed.",
+    "cs": "TweetStreamApp dědí z aplikační základní třídy knihovny Bsl a nabízí volby příkazové řádky pro typ databáze, připojení k PostgreSQL a CouchDB a OAuth údaje k Twitteru, postavené na gemu tweetstream. README je prázdné a logika ukládání mimo zpracování voleb nebyla procházena."
+  },
+  "highlights": [
+    {
+      "en": "Per-experiment app/lib/spec skeleton with a reusable template",
+      "cs": "Kostra app/lib/spec pro každý experiment se znovupoužitelnou šablonou"
+    },
+    {
+      "en": "Pluggable storage choice between PostgreSQL and CouchDB via --db-type",
+      "cs": "Volba úložiště mezi PostgreSQL a CouchDB přes --db-type"
+    },
+    {
+      "en": "Credentials are placeholders passed as CLI options",
+      "cs": "Přihlašovací údaje jsou jen zástupné hodnoty předávané jako volby CLI"
+    }
+  ],
+  "stack": [
+    "Ruby",
+    "tweetstream",
+    "PostgreSQL",
+    "CouchDB",
+    "OAuth"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  CLI[CLI options] --> App[TweetStreamApp]\n  App --> Stream[Twitter stream API]\n  App --> Sel{db type}\n  Sel --> PG[PostgreSQL]\n  Sel --> CD[CouchDB]\n  Tpl[_Template] --> App",
+    "caption": {
+      "en": "TweetStream reads the stream and writes to the selected store; _Template seeds new experiments.",
+      "cs": "TweetStream čte proud a zapisuje do zvoleného úložiště; _Template slouží jako základ nových experimentů."
+    }
+  },
+  "related": [
+    "twitter-analysis",
+    "the-scratch"
+  ],
+  "confidence": "low"
+}

@@ -1,0 +1,58 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "rustas",
+  "sources": {
+    "github": "https://github.com/korczis/rustas",
+    "gitlab": "https://gitlab.com/korczis/rustas",
+    "commit": "e0d773efd93eea384dc876a87668e3f3bdb2ddbc",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "Cargo.toml",
+      ".travis.yml",
+      "src/lib.rs",
+      "src/main.rs"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "experiment",
+  "summary": {
+    "en": "A nightly Rust experiment with inline assembly; the library adds two integers with an x86 add instruction and tests the result.",
+    "cs": "Experiment v nočním Rustu s inline assemblerem; knihovna sečte dvě celá čísla instrukcí add pro x86 a výsledek otestuje."
+  },
+  "problem": {
+    "en": "Exploring how Rust reaches below safe code into assembly, and later mathematics and GPU work, as the description states.",
+    "cs": "Prozkoumat, jak se Rust dostane pod bezpečný kód až k assembleru, a podle popisu později i k matematice a GPU."
+  },
+  "solution": {
+    "en": "lib.rs uses the old feature(asm) macro inside an unsafe block, with a generic Add version left commented out. The binary is an empty main, the crate builds as rlib and dylib, and Travis runs build, tests and Clippy on nightly for Linux and macOS.",
+    "cs": "lib.rs používá starý makro feature(asm) v bloku unsafe, generická verze přes Add zůstala zakomentovaná. Binárka má prázdný main, crate se sestavuje jako rlib i dylib a Travis na nočním kanálu pro Linux i macOS spouští build, testy a Clippy."
+  },
+  "highlights": [
+    {
+      "en": "Inline assembly with register constraints in Rust",
+      "cs": "Inline assembler s registrovými omezeními v Rustu"
+    },
+    {
+      "en": "CI matrix on Linux and macOS with Clippy",
+      "cs": "CI matice pro Linux a macOS včetně Clippy"
+    }
+  ],
+  "stack": [
+    "Rust",
+    "x86 assembly",
+    "Travis CI",
+    "Clippy"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Test[unit test] --> Add[add fn]\n  Add --> Asm[inline asm]\n  Asm --> Cpu[x86 add]\n  Ci[Travis nightly] --> Test\n  Ci --> Clippy[Clippy]",
+    "caption": {
+      "en": "A single function from test down to a CPU instruction.",
+      "cs": "Jediná funkce od testu až po instrukci procesoru."
+    }
+  },
+  "related": [
+    "in-rust-we-trust"
+  ],
+  "confidence": "medium"
+}

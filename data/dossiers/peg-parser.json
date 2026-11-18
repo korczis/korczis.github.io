@@ -1,0 +1,57 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "peg-parser",
+  "sources": {
+    "github": "https://github.com/korczis/peg-parser",
+    "gitlab": "https://gitlab.com/korczis/peg-parser",
+    "commit": "cd6f79820853398c5b4d19316e9e182893b29403",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "package.json (tree)",
+      "src (tree)",
+      "__tests__ (tree)"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "library",
+  "summary": {
+    "en": "A JavaScript parser built on PEG.js, packaged with Babel, a Webpack config, an example directory and a __tests__ suite. The README is a single line stating it is a parser built using PEG.js.",
+    "cs": "JavaScriptový parser postavený na PEG.js, zabalený s Babelem, Webpack configem, adresářem example a sadou __tests__. README je jediný řádek, že jde o parser postavený pomocí PEG.js."
+  },
+  "problem": {
+    "en": "Parsing a small grammar in JavaScript is cleaner with a PEG generator than with hand-written string handling.",
+    "cs": "Parsování malé gramatiky v JavaScriptu je čistší s PEG generátorem než s ručním zpracováním řetězců."
+  },
+  "solution": {
+    "en": "The project defines a grammar and compiles it with PEG.js into a parser module, with a built dist, an example and tests. The specific grammar is not described in the README.",
+    "cs": "Projekt definuje gramatiku a kompiluje ji pomocí PEG.js do parserového modulu, s připraveným dist, příkladem a testy. Konkrétní gramatika v README popsána není."
+  },
+  "highlights": [
+    {
+      "en": "PEG.js grammar compiled into a JavaScript parser module.",
+      "cs": "PEG.js gramatika zkompilovaná do JavaScriptového parserového modulu."
+    },
+    {
+      "en": "Carries an example directory and a __tests__ suite.",
+      "cs": "Obsahuje adresář example a sadu __tests__."
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "PEG.js",
+    "Babel",
+    "Webpack"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[Grammar] --> B[PEG.js compiler]\n  B --> C[Parser module]\n  C --> D[Input text]\n  D --> E[Parse tree]",
+    "caption": {
+      "en": "A PEG grammar compiles to a parser module that turns input text into a parse tree.",
+      "cs": "PEG gramatika se kompiluje do parserového modulu, který mění vstupní text na syntaktický strom."
+    }
+  },
+  "related": [
+    "peg-loader"
+  ],
+  "confidence": "medium"
+}

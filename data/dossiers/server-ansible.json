@@ -1,0 +1,69 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "server-ansible",
+  "sources": {
+    "github": "https://github.com/korczis/server-ansible",
+    "gitlab": "https://gitlab.com/korczis/server-ansible",
+    "commit": "67ba128ba5c94df09082957deca539002202651b",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "TODO.md",
+      "role-server.yml",
+      "top-level tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "config",
+  "summary": {
+    "en": "An Ansible role collection for an RPM-based server: Docker with cAdvisor, an ELK stack and Weave Scope, Graphite and Grafana, PostgreSQL and hardening.",
+    "cs": "Sada Ansible rolí pro server na RPM distribuci: Docker s cAdvisorem, ELK stackem a Weave Scope, Graphite a Grafana, PostgreSQL a zabezpečení."
+  },
+  "problem": {
+    "en": "A single box for data work needs containers, metrics, logs and a database, and setting that up by hand does not repeat well.",
+    "cs": "Jeden stroj pro práci s daty potřebuje kontejnery, metriky, logy a databázi, a ruční nastavení se špatně opakuje."
+  },
+  "solution": {
+    "en": "role-server.yml applies EPEL, OS upgrade, collectd, Docker, dockerised cAdvisor, ELK and Weave Scope, fail2ban, Grafana with dashboards, Graphite, mosh, PostgreSQL and tools. Roles for PostGIS, Rust, nmap, git and Atomic exist but are commented out; a separate test role and install scripts exist for both profiles.",
+    "cs": "role-server.yml aplikuje EPEL, upgrade OS, collectd, Docker, cAdvisor v kontejneru, ELK a Weave Scope, fail2ban, Grafanu s dashboardy, Graphite, mosh, PostgreSQL a nástroje. Role pro PostGIS, Rust, nmap, git a Atomic existují, ale jsou zakomentované; pro oba profily jsou i testovací role a instalační skripty."
+  },
+  "highlights": [
+    {
+      "en": "Metrics path: collectd into Graphite, shown in Grafana",
+      "cs": "Cesta metrik: collectd do Graphite, zobrazení v Grafaně"
+    },
+    {
+      "en": "Container observability with cAdvisor and Weave Scope",
+      "cs": "Pozorovatelnost kontejnerů přes cAdvisor a Weave Scope"
+    },
+    {
+      "en": "Prepared PostGIS role next to PostgreSQL",
+      "cs": "Připravená role PostGIS vedle PostgreSQL"
+    }
+  ],
+  "stack": [
+    "Ansible",
+    "Docker",
+    "Elasticsearch",
+    "Logstash",
+    "Kibana",
+    "Grafana",
+    "Graphite",
+    "collectd",
+    "PostgreSQL",
+    "fail2ban"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Play[role-server] --> Docker[Docker]\n  Docker --> Cadv[cAdvisor]\n  Docker --> Elk[ELK]\n  Docker --> Scope[Weave Scope]\n  Play --> Collectd[collectd]\n  Collectd --> Graphite[Graphite]\n  Graphite --> Grafana[Grafana]\n  Play --> Pg[PostgreSQL]\n  Play --> F2b[fail2ban]",
+    "caption": {
+      "en": "What the server role installs and how metrics flow.",
+      "cs": "Co serverová role nainstaluje a jak tečou metriky."
+    }
+  },
+  "related": [
+    "server-atomic",
+    "server-archlinux",
+    "server-nixos"
+  ],
+  "confidence": "medium"
+}

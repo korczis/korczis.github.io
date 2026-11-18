@@ -1,0 +1,75 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "openttd-prismatic-bridge",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/openttd-prismatic-bridge",
+    "commit": "b19ed53f78eea7bdec88e7b512642cfed9c03b23",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "requirements.txt",
+      "package.json",
+      "bridge/",
+      "server/"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "service",
+  "summary": {
+    "en": "A standalone Python service that exposes a running OpenTTD dedicated server through a REST and Swagger API. It speaks the binary Admin Network protocol so that other systems can read game state and steer company AIs over HTTP. It also carries a small dashboard that looks up Czech companies and institutions in live public registries.",
+    "cs": "Samostatná Python služba, která zpřístupňuje běžící dedikovaný server OpenTTD přes REST a Swagger API. Mluví binárním protokolem Admin Network, takže jiné systémy mohou přes HTTP číst stav hry a řídit AI firem. Navíc obsahuje malý dashboard, který dohledává české firmy a instituce v živých veřejných registrech."
+  },
+  "problem": {
+    "en": "OpenTTD has no external API for playing: gameplay commands run only in-process and must stay deterministic for multiplayer. The Admin Network gives read-only state and console commands over a binary TCP protocol, which is awkward for an HTTP-based consumer.",
+    "cs": "OpenTTD nemá externí API pro samotné hraní: herní příkazy běží jen uvnitř procesu a musí zůstat deterministické kvůli multiplayeru. Admin Network nabízí jen stav pro čtení a konzolové příkazy přes binární TCP protokol, což se z HTTP klienta používá špatně."
+  },
+  "solution": {
+    "en": "The bridge owns the TCP connection with automatic reconnects, encodes and decodes admin packets, and maps them to endpoints for state, companies, rcon and AI start, reload and stop. External control goes through start_ai and reload_ai with a settings string read by a minimal company AI script, proving the control path end to end. A WebSocket feed pushes events, and an optional API key guards endpoints that can affect a game.",
+    "cs": "Bridge drží TCP spojení s automatickým znovupřipojením, kóduje a dekóduje admin pakety a mapuje je na endpointy pro stav, firmy, rcon a start, reload či stop AI. Vnější řízení jde přes start_ai a reload_ai s řetězcem nastavení, který čte minimální skript firemní AI, a tím je cesta řízení prověřená od začátku do konce. WebSocket posílá události a volitelný API klíč chrání endpointy, které mohou ovlivnit hru."
+  },
+  "highlights": [
+    {
+      "en": "Pure-Python implementation of the OpenTTD admin wire protocol, tested without a game server.",
+      "cs": "Čistě pythonová implementace drátového protokolu OpenTTD admin, testovaná i bez herního serveru."
+    },
+    {
+      "en": "FastAPI endpoints plus a WebSocket event stream instead of polling.",
+      "cs": "FastAPI endpointy a WebSocket proud událostí místo pollingu."
+    },
+    {
+      "en": "Externally steerable company AI skeleton via start_ai and reload_ai settings.",
+      "cs": "Kostra firemní AI řiditelná zvenčí přes nastavení start_ai a reload_ai."
+    },
+    {
+      "en": "Registry lookup dashboard limited to verified public sources (ARES, Nominatim), deliberately not generating dossiers on people.",
+      "cs": "Dashboard pro dohledání v registrech omezený na ověřené veřejné zdroje (ARES, Nominatim), záměrně bez generování dossierů o lidech."
+    }
+  ],
+  "stack": [
+    "Python",
+    "FastAPI",
+    "Uvicorn",
+    "httpx",
+    "WebSocket",
+    "OpenTTD",
+    "Squirrel",
+    "Tailwind CSS",
+    "Flowbite",
+    "Leaflet",
+    "pytest"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Client[HTTP consumer] --> Rest[FastAPI endpoints]\n  Rest --> AC[Admin client]\n  AC --> Proto[Protocol codec]\n  Proto --> Srv[OpenTTD admin port]\n  Srv --> AI[Company AI script]\n  Rest --> WS[WebSocket events]\n  Rest --> Legal[Registry dashboard]\n  Legal --> Reg[Public registries]",
+    "caption": {
+      "en": "The bridge is the only component that speaks the OpenTTD admin protocol; consumers use plain HTTP.",
+      "cs": "Bridge je jediná komponenta, která mluví protokolem OpenTTD admin; klienti používají obyčejné HTTP."
+    }
+  },
+  "related": [
+    "ares",
+    "ares-api",
+    "crisis-map"
+  ],
+  "confidence": "high"
+}

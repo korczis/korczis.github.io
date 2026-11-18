@@ -1,0 +1,52 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "books",
+  "sources": {
+    "github": "https://github.com/korczis/books",
+    "gitlab": "https://gitlab.com/korczis/books",
+    "commit": "7fa7e59cad95d1d647c82a0fa8b47db660cbfe8f",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "LICENSE"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "docs",
+  "summary": {
+    "en": "A short curated reading list kept as a single README, grouped into JavaScript, project management, software engineering and web. Each entry links to the book.",
+    "cs": "Krátký výběr doporučené literatury v jediném README, rozdělený na JavaScript, řízení projektů, softwarové inženýrství a web. Každá položka odkazuje na knihu."
+  },
+  "problem": {
+    "en": "Keeping track of books worth recommending to other engineers.",
+    "cs": "Mít po ruce knihy, které stojí za doporučení dalším inženýrům."
+  },
+  "solution": {
+    "en": "A Markdown list with eight titles in four sections, covering JavaScript performance, software project scheduling, code construction and browser networking. There is no code or tooling.",
+    "cs": "Markdownový seznam osmi titulů ve čtyřech sekcích, od výkonu JavaScriptu přes plánování softwarových projektů a psaní kódu po síťování v prohlížeči. Žádný kód ani nástroje."
+  },
+  "highlights": [
+    {
+      "en": "Four topical sections: JavaScript, project management, software engineering, web",
+      "cs": "Čtyři tematické sekce: JavaScript, řízení projektů, softwarové inženýrství, web"
+    },
+    {
+      "en": "Includes classics on software construction and schedule management alongside web performance titles",
+      "cs": "Vedle titulů o výkonu webu obsahuje klasiku o psaní kódu a řízení harmonogramu"
+    }
+  ],
+  "stack": [
+    "Markdown"
+  ],
+  "architecture": {
+    "mermaid": "flowchart TD\n  R[README] --> JS[JavaScript]\n  R --> PM[Project management]\n  R --> SE[Software engineering]\n  R --> W[Web]",
+    "caption": {
+      "en": "Structure of the reading list.",
+      "cs": "Struktura seznamu literatury."
+    }
+  },
+  "related": [
+    "reading"
+  ],
+  "confidence": "low"
+}

@@ -1,0 +1,58 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "microcrawler-crawler-yelp-com",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-yelp-com",
+    "commit": "8cb89d9907425adbd9686dc08057175f9db0479a",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "package.json",
+      "src/details.js",
+      "tree (recursive)"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "library",
+  "summary": {
+    "en": "A Microcrawler site package for a local business review website, with index, listing and details processors.",
+    "cs": "Balíček Microcrawleru pro web s recenzemi místních podniků s procesory index, listing a details."
+  },
+  "problem": {
+    "en": "Microcrawler workers are generic: they download pages and need site-specific logic to know which links to follow and which fields to extract.",
+    "cs": "Workery Microcrawleru jsou obecné: stahují stránky a potřebují logiku pro konkrétní web, aby věděly, které odkazy sledovat a jaká pole vytáhnout."
+  },
+  "solution": {
+    "en": "The details processor receives the record built by the listing stage and enriches it with opening hours parsed from the hours table into from and to pairs. A TODO in the source notes that further detail fields were still to be added.",
+    "cs": "Procesor details dostane záznam sestavený ve fázi výpisu a obohatí ho o otevírací dobu, kterou z tabulky rozparsuje do dvojic od a do. Poznámka TODO ve zdroji říká, že další pole detailu měla teprve přibýt."
+  },
+  "highlights": [
+    {
+      "en": "Detail stage enriches the listing record instead of rebuilding it.",
+      "cs": "Fáze detailu obohacuje záznam z výpisu, místo aby ho stavěla znovu."
+    },
+    {
+      "en": "Opening hours as structured from and to pairs.",
+      "cs": "Otevírací doba jako strukturované dvojice od a do."
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "Node.js",
+    "Cheerio"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  W[Worker] --> I[index]\n  I --> L[listing]\n  L --> D[details]\n  L --> R[business record]\n  D --> H[opening hours]\n  H --> R",
+    "caption": {
+      "en": "Processors emit either new URLs for the queue or extracted data records.",
+      "cs": "Procesory vracejí buď nové URL do fronty, nebo vytěžené datové záznamy."
+    }
+  },
+  "related": [
+    "microcrawler-js",
+    "microcrawler-crawler-all",
+    "microcrawler-crawler-base"
+  ],
+  "confidence": "medium"
+}

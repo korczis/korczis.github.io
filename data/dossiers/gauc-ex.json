@@ -1,0 +1,74 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "gauc-ex",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/gauc-ex",
+    "commit": "3e42c5d655f127e4234b42f19e24c5a5a8151e63",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "mix.exs",
+      "Cargo.toml",
+      "native/gauc/Cargo.toml",
+      "native/gauc/src/lib.rs",
+      "tree (recursive)"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "library",
+  "summary": {
+    "en": "An Elixir client for Couchbase, published on Hex as gauc. It wraps the owner's Rust crate gauc (a binding to libcouchbase) as a Rustler NIF and adds a poolboy worker pool on the Elixir side.",
+    "cs": "Elixirový klient pro Couchbase publikovaný na Hexu jako gauc. Obaluje vlastní Rust crate gauc (binding na libcouchbase) jako Rustler NIF a na straně Elixiru přidává pool workerů přes poolboy."
+  },
+  "problem": {
+    "en": "Couchbase access from the BEAM was limited, and the existing Erlang client was a separate C-based stack. A thin native binding reused a Rust client that already existed.",
+    "cs": "Přístup ke Couchbase z BEAM byl omezený a existující erlangový klient byl samostatný stack nad C. Tenký nativní binding umožnil využít už hotového klienta v Rustu."
+  },
+  "solution": {
+    "en": "The native crate exports functions such as connect, disconnect, clients, add, append, get and prepend to Elixir.Gauc.Native. Open connections live in a global mutex-protected map keyed by a (u32, u32) handle that is returned to Elixir. Gauc.Client exposes connect, upsert and get, and a configurable poolboy pool (size, max_overflow) serves concurrent callers.",
+    "cs": "Nativní crate exportuje do Elixir.Gauc.Native funkce jako connect, disconnect, clients, add, append, get a prepend. Otevřená spojení drží v globální mapě chráněné mutexem pod klíčem (u32, u32), který vrací Elixiru jako handle. Gauc.Client nabízí connect, upsert a get a souběžné volající obsluhuje konfigurovatelný pool poolboy (size, max_overflow)."
+  },
+  "highlights": [
+    {
+      "en": "Rust NIF via Rustler with a release profile using LTO and one codegen unit.",
+      "cs": "Rust NIF přes Rustler s release profilem s LTO a jednou codegen unit."
+    },
+    {
+      "en": "Opaque integer handles instead of passing native pointers into the BEAM.",
+      "cs": "Neprůhledné celočíselné handly místo předávání nativních ukazatelů do BEAM."
+    },
+    {
+      "en": "mix check alias runs tests, strict Credo, hex.audit and hex.outdated.",
+      "cs": "Alias mix check spouští testy, striktní Credo, hex.audit a hex.outdated."
+    },
+    {
+      "en": "Depends on nightly Rust features (link_args, plugin) of its time.",
+      "cs": "Závisí na nightly funkcích Rustu (link_args, plugin) z doby vzniku."
+    }
+  ],
+  "stack": [
+    "Elixir",
+    "Rust",
+    "Rustler",
+    "Couchbase",
+    "libcouchbase",
+    "poolboy"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  APP[Elixir caller] --> POOL[poolboy pool]\n  POOL --> CL[Gauc.Client]\n  CL --> NIF[Gauc.Native NIF]\n  NIF --> MAP[handle map]\n  NIF --> RC[gauc Rust crate]\n  RC --> LCB[libcouchbase]\n  LCB --> CB[Couchbase cluster]",
+    "caption": {
+      "en": "Elixir pool over a Rust NIF over libcouchbase.",
+      "cs": "Pool v Elixiru nad Rust NIF nad libcouchbase."
+    }
+  },
+  "related": [
+    "gauc.ex",
+    "rustler-test",
+    "rustler_mix",
+    "microcrawler-elixir",
+    "microcrawler",
+    "docks"
+  ],
+  "confidence": "high"
+}

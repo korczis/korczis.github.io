@@ -1,0 +1,58 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "microcrawler-crawler-craiglist-com",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-craiglist-com",
+    "commit": "b2bc22f66d52f1fe1c120eea10a2a808ebb0b84a",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "package.json",
+      "src/index.js",
+      "tree (recursive)"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "library",
+  "summary": {
+    "en": "A Microcrawler site package for a classifieds website. A single index processor walks the result pages and emits a title and URL for every listing.",
+    "cs": "Balíček Microcrawleru pro web s inzeráty. Jediný procesor index prochází stránky výsledků a pro každý inzerát vrací titulek a URL."
+  },
+  "problem": {
+    "en": "Microcrawler workers are generic: they download pages and need site-specific logic to know which links to follow and which fields to extract.",
+    "cs": "Workery Microcrawleru jsou obecné: stahují stránky a potřebují logiku pro konkrétní web, aby věděly, které odkazy sledovat a jaká pole vytáhnout."
+  },
+  "solution": {
+    "en": "The processor resolves the next-page button against the current URL and queues it back to itself, and emits a data record for each row link. It is the simplest pagination-plus-listing pattern in the crawler family.",
+    "cs": "Procesor složí URL tlačítka další stránky s aktuální adresou, zařadí ji zpět sám sobě a pro každý řádkový odkaz vrátí datový záznam. Je to nejjednodušší vzor stránkování s výpisem v celé rodině crawlerů."
+  },
+  "highlights": [
+    {
+      "en": "Pagination is built from the current host, so it works on regional subdomains.",
+      "cs": "Stránkování se skládá z aktuálního hostu, takže funguje i na regionálních subdoménách."
+    },
+    {
+      "en": "One processor handles both pagination and extraction.",
+      "cs": "Jeden procesor obstará stránkování i vytěžení."
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "Node.js",
+    "Cheerio"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  W[Worker] --> I[index processor]\n  I --> N[next page URL]\n  N --> I\n  I --> R[title and url record]",
+    "caption": {
+      "en": "Processors emit either new URLs for the queue or extracted data records.",
+      "cs": "Procesory vracejí buď nové URL do fronty, nebo vytěžené datové záznamy."
+    }
+  },
+  "related": [
+    "microcrawler-js",
+    "microcrawler-crawler-all",
+    "microcrawler-crawler-base"
+  ],
+  "confidence": "medium"
+}

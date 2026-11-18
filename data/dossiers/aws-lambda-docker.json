@@ -1,0 +1,60 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "aws-lambda-docker",
+  "sources": {
+    "github": "https://github.com/korczis/aws-lambda-docker",
+    "gitlab": "https://gitlab.com/korczis/aws-lambda-docker",
+    "commit": "6fde798fb437462815eaad6ed035c0b21f24c87b",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "Dockerfile",
+      "docker-build.sh",
+      "docker-run.sh",
+      "docker-env.sh"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "config",
+  "summary": {
+    "en": "A Docker image matching the Amazon Linux runtime, with Python 3.6, pip, boto3 and zip, for building AWS Lambda deployment packages.",
+    "cs": "Docker image odpovídající runtime Amazon Linuxu s Pythonem 3.6, pipem, boto3 a zipem pro sestavování balíčků pro AWS Lambda."
+  },
+  "problem": {
+    "en": "Lambda packages with native dependencies must be built on a system compatible with the Lambda runtime, which a developer laptop usually is not.",
+    "cs": "Balíčky pro Lambdu s nativními závislostmi se musí sestavit na systému kompatibilním s runtime Lambdy, a vývojářský notebook takový obvykle není."
+  },
+  "solution": {
+    "en": "The image starts from amazonlinux:2017.03, installs git, Python 3.6 and zip, upgrades pip and adds boto3. Build and run scripts share a version variable from docker-env.sh; the README links the article that motivated the approach.",
+    "cs": "Image vychází z amazonlinux:2017.03, instaluje git, Python 3.6 a zip, aktualizuje pip a přidává boto3. Skripty pro build a spuštění sdílejí proměnnou s verzí z docker-env.sh; README odkazuje na článek, ze kterého postup vychází."
+  },
+  "highlights": [
+    {
+      "en": "Build environment pinned to the Lambda base OS",
+      "cs": "Prostředí pro build svázané se základním OS Lambdy"
+    },
+    {
+      "en": "Versioned image tag kept in one env file",
+      "cs": "Verze image držená v jednom env souboru"
+    }
+  ],
+  "stack": [
+    "Docker",
+    "AWS Lambda",
+    "Amazon Linux",
+    "Python",
+    "boto3",
+    "Shell"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Env[docker-env.sh] --> Build[docker-build.sh]\n  Build --> Image[Amazon Linux image]\n  Image --> Deps[pip install deps]\n  Deps --> Zip[zip package]\n  Zip --> Lambda[AWS Lambda]",
+    "caption": {
+      "en": "Building a Lambda package inside a runtime-compatible container.",
+      "cs": "Sestavení balíčku pro Lambdu v kontejneru kompatibilním s runtime."
+    }
+  },
+  "related": [
+    "zdeny-docker"
+  ],
+  "confidence": "medium"
+}

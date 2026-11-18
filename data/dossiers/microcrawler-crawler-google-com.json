@@ -1,0 +1,58 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "microcrawler-crawler-google-com",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-google-com",
+    "commit": "259ca6ab45049fb7b1a1d971ea9214cd92f871db",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "package.json",
+      "src/index.js",
+      "tree (recursive)"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "library",
+  "summary": {
+    "en": "A Microcrawler site package for a web search engine results page. It extracts the target URL and title of each organic result and follows the pagination links.",
+    "cs": "Balíček Microcrawleru pro stránku výsledků webového vyhledávače. Vytahuje cílovou URL a titulek každého výsledku a sleduje odkazy stránkování."
+  },
+  "problem": {
+    "en": "Microcrawler workers are generic: they download pages and need site-specific logic to know which links to follow and which fields to extract.",
+    "cs": "Workery Microcrawleru jsou obecné: stahují stránky a potřebují logiku pro konkrétní web, aby věděly, které odkazy sledovat a jaká pole vytáhnout."
+  },
+  "solution": {
+    "en": "Result links on the page are redirect URLs, so the processor parses their query string and takes the real destination from the q parameter. Pagination links are emitted as new URLs for a listing processor.",
+    "cs": "Odkazy výsledků na stránce vedou přes přesměrování, proto procesor rozparsuje jejich query string a skutečný cíl bere z parametru q. Odkazy stránkování vrací jako nové URL pro procesor výpisu."
+  },
+  "highlights": [
+    {
+      "en": "Unwraps redirect links to the real destination URL.",
+      "cs": "Rozbalí přesměrovací odkazy na skutečnou cílovou URL."
+    },
+    {
+      "en": "Uses Node querystring and url modules only.",
+      "cs": "Používá jen moduly querystring a url z Node."
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "Node.js",
+    "Cheerio"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  W[Worker] --> I[index processor]\n  I --> P[pagination URLs]\n  I --> Q[parse q parameter]\n  Q --> R[url and title record]",
+    "caption": {
+      "en": "Processors emit either new URLs for the queue or extracted data records.",
+      "cs": "Procesory vracejí buď nové URL do fronty, nebo vytěžené datové záznamy."
+    }
+  },
+  "related": [
+    "microcrawler-js",
+    "microcrawler-crawler-all",
+    "microcrawler-crawler-base"
+  ],
+  "confidence": "medium"
+}

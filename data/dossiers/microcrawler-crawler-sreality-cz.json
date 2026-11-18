@@ -1,0 +1,68 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "microcrawler-crawler-sreality-cz",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-sreality-cz",
+    "commit": "726c87c449adafc57025c21ea340c5b3e7db34c4",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "package.json",
+      "src/index.js",
+      "src/listing.js",
+      "src/details.js",
+      "tree (recursive)"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "library",
+  "summary": {
+    "en": "A Microcrawler site package for a Czech real-estate listings portal. It seeds searches for auctions, sales and rentals of flats and houses, walks the result pages and extracts typed property records.",
+    "cs": "Balíček Microcrawleru pro český realitní portál. Nasadí vyhledávání dražeb, prodejů a pronájmů bytů a domů, projde stránky výsledků a vytáhne typované záznamy o nemovitostech."
+  },
+  "problem": {
+    "en": "Microcrawler workers are generic: they download pages and need site-specific logic to know which links to follow and which fields to extract.",
+    "cs": "Workery Microcrawleru jsou obecné: stahují stránky a potřebují logiku pro konkrétní web, aby věděly, které odkazy sledovat a jaká pole vytáhnout."
+  },
+  "solution": {
+    "en": "The index processor emits a fixed set of search URLs, the listing processor follows pagination and detail links, and all requests use the _escaped_fragment_ scheme to get server-rendered HTML. The details processor turns Czech labels into snake_case keys without diacritics and converts known numeric fields (total price, price per square metre, floor and plot areas, floor number, year of approval or reconstruction, ceiling height) from formatted text to integers.",
+    "cs": "Procesor index vrátí pevnou sadu vyhledávacích URL, listing sleduje stránkování a odkazy na detaily a všechny požadavky používají schéma _escaped_fragment_, aby dostaly HTML vyrenderované na serveru. Procesor details převádí české popisky na klíče ve snake_case bez diakritiky a známá číselná pole (celková cena, cena za m², plochy, podlaží, rok kolaudace či rekonstrukce, výška stropu) převádí z formátovaného textu na celá čísla."
+  },
+  "highlights": [
+    {
+      "en": "Label normalisation with the diacritics library into stable field names.",
+      "cs": "Normalizace popisků knihovnou diacritics na stabilní názvy polí."
+    },
+    {
+      "en": "Whitelist-driven numeric conversion of price and area fields.",
+      "cs": "Převod cen a ploch na čísla řízený whitelistem polí."
+    },
+    {
+      "en": "Most mature site package of the family (version 0.0.11); a crawl script for it ships in microcrawler-js.",
+      "cs": "Nejvyzrálejší balíček rodiny (verze 0.0.11); skript pro jeho spuštění je v microcrawler-js."
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "Node.js",
+    "Cheerio",
+    "diacritics",
+    "Moment.js"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  W[Worker] --> I[index seeds]\n  I --> L[listing]\n  L --> L\n  L --> D[details]\n  D --> N[label normalisation]\n  D --> V[numeric conversion]\n  N --> R[property record]\n  V --> R",
+    "caption": {
+      "en": "Processors emit either new URLs for the queue or extracted data records.",
+      "cs": "Procesory vracejí buď nové URL do fronty, nebo vytěžené datové záznamy."
+    }
+  },
+  "related": [
+    "microcrawler-js",
+    "microcrawler-crawler-all",
+    "microcrawler-crawler-base",
+    "microcrawler-crawler-bam-brno-cz",
+    "mapoffacts"
+  ],
+  "confidence": "high"
+}

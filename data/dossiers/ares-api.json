@@ -1,0 +1,55 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "ares-api",
+  "sources": {
+    "github": "https://github.com/korczis/ares-api",
+    "gitlab": "https://gitlab.com/korczis/ares-api",
+    "commit": "7df9862473d21379286c97023e5abfbb8dbffe2b",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "data",
+  "summary": {
+    "en": "A mirror of a former Google Code project: prebuilt Java JARs and zip archives of a client library for ARES, the Czech business register API.",
+    "cs": "Zrcadlo bývalého projektu z Google Code: hotové Java JARy a zip archivy klientské knihovny pro ARES, API českého registru ekonomických subjektů."
+  },
+  "problem": {
+    "en": "Google Code was shut down, so the binaries of this ARES client would otherwise have become hard to find.",
+    "cs": "Google Code skončil, takže binárky tohoto klienta pro ARES by jinak bylo těžké dohledat."
+  },
+  "solution": {
+    "en": "The repository keeps the released artefacts as they were: ares-api JARs, common-persist and common-utils JARs, a multi-thread downloader and settings resources. There is no source code or build in the tree.",
+    "cs": "Repozitář drží vydané artefakty tak, jak byly: JARy ares-api, common-persist a common-utils, vícevláknový downloader a resources s nastavením. Zdrojový kód ani build ve stromu nejsou."
+  },
+  "highlights": [
+    {
+      "en": "Preserves two ares-api JAR versions plus bundle archives.",
+      "cs": "Uchovává dvě verze JARu ares-api a k tomu souhrnné archivy."
+    },
+    {
+      "en": "Pure archive: the README states only that it is a mirror.",
+      "cs": "Čistý archiv: README říká jen, že jde o zrcadlo."
+    }
+  ],
+  "stack": [
+    "Java",
+    "ARES"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Origin[Former Google Code project] --> Mirror[ares-api mirror]\n  Mirror --> Jars[Client JARs]\n  Mirror --> Zips[Bundle archives]\n  Jars --> Ares[ARES register API]",
+    "caption": {
+      "en": "What the mirror holds and what the client talks to.",
+      "cs": "Co zrcadlo obsahuje a s čím klient komunikuje."
+    }
+  },
+  "related": [
+    "ares",
+    "craftsmen",
+    "microcrawler-crawler-firmy-cz"
+  ],
+  "confidence": "medium"
+}

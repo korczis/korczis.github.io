@@ -1,0 +1,66 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "skull",
+  "sources": {
+    "github": "https://github.com/korczis/skull",
+    "gitlab": "https://gitlab.com/korczis/skull",
+    "commit": "39a8c2cac9984fcf0d5730db167dd02a1339964a",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      ".gitmodules",
+      "Rakefile",
+      "tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "docs",
+  "summary": {
+    "en": "An umbrella repository that gathers per-language learning repositories (C, C++, Erlang, Haskell, Java, Node.js, Ruby and more) as git submodules.",
+    "cs": "Zastřešující repozitář, který jako git submoduly sdružuje výukové repozitáře pro jednotlivé jazyky (C, C++, Erlang, Haskell, Java, Node.js, Ruby a další)."
+  },
+  "problem": {
+    "en": "Learning material for several languages lived in separate repositories, each with its own CI, and needed one entry point.",
+    "cs": "Výukové materiály k několika jazykům ležely v samostatných repozitářích, každý s vlastním CI, a chyběl jim společný rozcestník."
+  },
+  "solution": {
+    "en": ".gitmodules wires each skull-<language> repository in under a short directory name, and four shell scripts initialise, update, upgrade and push all submodules at once. The README lists the subprojects with their Travis CI badges.",
+    "cs": ".gitmodules připojuje každý repozitář skull-<jazyk> pod krátkým názvem adresáře a čtyři shellové skripty hromadně inicializují, aktualizují, povyšují a pushují všechny submoduly. README vypisuje podprojekty i s Travis CI odznaky."
+  },
+  "highlights": [
+    {
+      "en": "Submodules declared for c, cpp, cuda, erlang, haskell, java, js, nodejs and ruby.",
+      "cs": "Submoduly deklarované pro c, cpp, cuda, erlang, haskell, java, js, nodejs a ruby."
+    },
+    {
+      "en": "Helper scripts for bulk submodule init, update, upgrade and push.",
+      "cs": "Pomocné skripty pro hromadný init, update, upgrade a push submodulů."
+    }
+  ],
+  "stack": [
+    "Git submodules",
+    "Shell",
+    "Rake",
+    "Travis CI"
+  ],
+  "architecture": {
+    "mermaid": "flowchart TD\n  Skull[skull umbrella] --> C[skull-c]\n  Skull --> Cpp[skull-cpp]\n  Skull --> Erl[skull-erlang]\n  Skull --> Hs[skull-haskell]\n  Skull --> Java[skull-java]\n  Skull --> Node[skull-nodejs]\n  Skull --> Ruby[skull-ruby]\n  Scripts[submodule scripts] --> Skull",
+    "caption": {
+      "en": "The umbrella and the language repositories it pulls in as submodules.",
+      "cs": "Zastřešující repozitář a jazykové repozitáře, které stahuje jako submoduly."
+    }
+  },
+  "related": [
+    "skull-c",
+    "skull-cpp",
+    "skull-java",
+    "skull-ruby",
+    "skull-nodejs",
+    "skull-haskell",
+    "skull-erlang",
+    "skull-elixir",
+    "skull-rust",
+    "skull-emscripten"
+  ],
+  "confidence": "high"
+}
