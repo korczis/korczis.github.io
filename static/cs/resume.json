@@ -1,0 +1,488 @@
+{
+ "$schema": "https://korczis.github.io/schemas/jsonresume.schema.json",
+ "basics": {
+  "name": "Tomáš Korčák",
+  "label": "Staff engineer pro infrastrukturu AI agentů, Elixir a Rust",
+  "image": "https://avatars.githubusercontent.com/korczis",
+  "email": "korczis@gmail.com",
+  "url": "https://korczis.github.io/cs/",
+  "summary": "Tomáš Korčák (korczis), staff engineer pro infrastrukturu AI agentů z Brna, otevřený remote rolím: CV, mé jazyky v průběhu let a kde najdete mou práci.",
+  "location": {
+   "city": "Brno",
+   "countryCode": "CZ"
+  },
+  "profiles": [
+   {
+    "network": "GitHub",
+    "username": "korczis",
+    "url": "https://github.com/korczis"
+   },
+   {
+    "network": "GitLab",
+    "username": "korczis",
+    "url": "https://gitlab.com/korczis"
+   },
+   {
+    "network": "LinkedIn",
+    "username": "korcaktomas",
+    "url": "https://www.linkedin.com/in/korcaktomas/"
+   }
+  ]
+ },
+ "work": [
+  {
+   "name": "Independent",
+   "position": "Freelance Technical Mentor & Engineering Advisor",
+   "startDate": "2025-01",
+   "summary": "Individuální mentoring a poradenství: softwarová architektura, Elixir, OTP a Phoenix, AI-asistované a agentní softwarové inženýrství, LLM aplikace a vývojářské nástroje, datové inženýrství a OSINT systémy, technická due diligence."
+  },
+  {
+   "name": "International Leadership Development Firm",
+   "position": "CTO / Lead Developer",
+   "startDate": "2024-12"
+  },
+  {
+   "name": "Self Employed",
+   "position": "Independent Consultant & Independent Contractor",
+   "startDate": "2023-01"
+  },
+  {
+   "name": "Kiwi.com",
+   "position": "Staff Software Engineer",
+   "url": "https://www.kiwi.com/",
+   "startDate": "2019-06",
+   "endDate": "2022-05"
+  },
+  {
+   "name": "Block Collider",
+   "position": "CTO / Core Developer",
+   "startDate": "2018-02",
+   "endDate": "2019-01"
+  },
+  {
+   "name": "GoodData",
+   "position": "Principal Software Engineer",
+   "url": "https://www.gooddata.com/",
+   "startDate": "2017-08",
+   "endDate": "2018-02"
+  },
+  {
+   "name": "GoodData",
+   "position": "Senior Software Engineer / Combat Data Engineer",
+   "url": "https://www.gooddata.com/",
+   "startDate": "2014-03",
+   "endDate": "2017-08",
+   "summary": "San Francisco Bay Area. GoodData Ruby SDK, vysokoúrovňová vrstva nad API platformy."
+  },
+  {
+   "name": "Moravia IT",
+   "position": "Software Development Lead / Software Architect",
+   "startDate": "2012-11",
+   "endDate": "2014-02"
+  },
+  {
+   "name": "Moravia IT",
+   "position": "Senior Developer",
+   "startDate": "2012-08",
+   "endDate": "2014-02"
+  },
+  {
+   "name": "Kuju Entertainment - Vatra Games",
+   "position": "Programmer",
+   "startDate": "2008-05",
+   "endDate": "2012-04",
+   "summary": "Silent Hill: Downpour (Xbox 360, PS3), Rush'N Attack Ex-Patriot (Xbox Live Arcade, PSN), Disney Sing It; programování nástrojů, i18n a L10n."
+  },
+  {
+   "name": "2K Games",
+   "position": "Gameplay Programmer",
+   "startDate": "2007-01",
+   "endDate": "2008-05"
+  },
+  {
+   "name": "Honeywell Aerospace",
+   "position": "Programmer",
+   "startDate": "2005-07",
+   "endDate": "2007-01",
+   "summary": "Greater Phoenix Area. Testovací inženýrství a programování nástrojů."
+  }
+ ],
+ "education": [
+  {
+   "institution": "SSOS - Technicke Lyceum, Prostejov",
+   "area": "Elektrotechnika",
+   "startDate": "2001-09",
+   "endDate": "2005-06"
+  }
+ ],
+ "skills": [
+  {
+   "name": "JavaScript",
+   "url": "https://korczis.github.io/cs/glossary/javascript/",
+   "keywords": [
+    "oscilla",
+    "korczis.github.io",
+    "majordomus-reel"
+   ]
+  },
+  {
+   "name": "Elixir",
+   "url": "https://korczis.github.io/cs/glossary/elixir/",
+   "keywords": [
+    "kompendium-epistemicke-anihilace",
+    "crisis-map",
+    "the-psycho"
+   ]
+  },
+  {
+   "name": "Ruby",
+   "url": "https://korczis.github.io/cs/glossary/ruby/",
+   "keywords": [
+    "gdc-dumpator",
+    "zeman-ucet",
+    "cluster"
+   ]
+  },
+  {
+   "name": "Shell",
+   "url": "https://korczis.github.io/cs/glossary/shell/",
+   "keywords": [
+    "microcrawler",
+    "home",
+    "server-archlinux"
+   ]
+  },
+  {
+   "name": "Rust",
+   "url": "https://korczis.github.io/cs/glossary/rust/",
+   "keywords": [
+    "prismatic-majordomus",
+    "maze-rs",
+    "rustas"
+   ]
+  },
+  {
+   "name": "C++",
+   "url": "https://korczis.github.io/cs/glossary/cpp/",
+   "keywords": [
+    "happ",
+    "algorithms-ruby",
+    "iCave"
+   ]
+  },
+  {
+   "name": "Python",
+   "url": "https://korczis.github.io/cs/glossary/python/",
+   "keywords": [
+    "sonic-playground",
+    "data-atlas",
+    "astronomists"
+   ]
+  },
+  {
+   "name": "HTML",
+   "url": "https://korczis.github.io/cs/glossary/html/",
+   "keywords": [
+    "catharsis-as-a-service",
+    "osint-case-ratcliffe-moscow-2026",
+    "ApolloCrawler-github-io"
+   ]
+  },
+  {
+   "name": "CSS",
+   "url": "https://korczis.github.io/cs/glossary/css/",
+   "keywords": [
+    "korczis-github-com",
+    "korczis.gitlab.io",
+    "nestravenkam"
+   ]
+  },
+  {
+   "name": "Dockerfile",
+   "url": "https://korczis.github.io/cs/glossary/dockerfile/",
+   "keywords": [
+    "docks",
+    "prismatic-blog",
+    "gh-exec-3000"
+   ]
+  },
+  {
+   "name": "C#",
+   "url": "https://korczis.github.io/cs/glossary/csharp/",
+   "keywords": [
+    "cs-benchmark",
+    "Rocnikac4",
+    "reflex"
+   ]
+  },
+  {
+   "name": "Swift",
+   "url": "https://korczis.github.io/cs/glossary/swift/",
+   "keywords": [
+    "ReadingPhoneNumbersInRealTime",
+    "MinervaEye",
+    "bc-apple"
+   ]
+  },
+  {
+   "name": "TypeScript",
+   "url": "https://korczis.github.io/cs/glossary/typescript/",
+   "keywords": [
+    "algoglyph",
+    "dispatcher",
+    "ts-logger"
+   ]
+  },
+  {
+   "name": "Haskell",
+   "url": "https://korczis.github.io/cs/glossary/haskell/",
+   "keywords": [
+    "haskell-world",
+    "skull-haskell"
+   ]
+  },
+  {
+   "name": "C",
+   "url": "https://korczis.github.io/cs/glossary/c/",
+   "keywords": [
+    "skull-c"
+   ]
+  },
+  {
+   "name": "Erlang",
+   "url": "https://korczis.github.io/cs/glossary/erlang/",
+   "keywords": [
+    "skull-erlang"
+   ]
+  },
+  {
+   "name": "Java",
+   "url": "https://korczis.github.io/cs/glossary/java/",
+   "keywords": [
+    "skull-java"
+   ]
+  },
+  {
+   "name": "Alpine.js",
+   "url": "https://korczis.github.io/cs/glossary/alpine-js/",
+   "keywords": [
+    "algoglyph",
+    "Kompendium"
+   ]
+  },
+  {
+   "name": "Apache ECharts",
+   "url": "https://korczis.github.io/cs/glossary/apache-echarts/",
+   "keywords": [
+    "algoglyph",
+    "Kompendium"
+   ]
+  },
+  {
+   "name": "Flowbite Pro",
+   "url": "https://korczis.github.io/cs/glossary/flowbite-pro/",
+   "keywords": [
+    "algoglyph",
+    "Kompendium"
+   ]
+  },
+  {
+   "name": "MCP",
+   "url": "https://korczis.github.io/cs/glossary/mcp/",
+   "keywords": [
+    "Majordomus",
+    "Crisis map"
+   ]
+  },
+  {
+   "name": "Zola",
+   "url": "https://korczis.github.io/cs/glossary/zola/",
+   "keywords": [
+    "Majordomus",
+    "Kompendium"
+   ]
+  },
+  {
+   "name": "Cytoscape.js",
+   "url": "https://korczis.github.io/cs/glossary/cytoscape-js/",
+   "keywords": [
+    "Kompendium"
+   ]
+  },
+  {
+   "name": "p5.js",
+   "url": "https://korczis.github.io/cs/glossary/p5-js/",
+   "keywords": [
+    "algoglyph"
+   ]
+  },
+  {
+   "name": "PostGIS",
+   "url": "https://korczis.github.io/cs/glossary/postgis/",
+   "keywords": [
+    "Crisis map"
+   ]
+  },
+  {
+   "name": "PostgreSQL",
+   "url": "https://korczis.github.io/cs/glossary/postgresql/",
+   "keywords": [
+    "csv2psql"
+   ]
+  },
+  {
+   "name": "Web Audio",
+   "url": "https://korczis.github.io/cs/glossary/web-audio/",
+   "keywords": [
+    "Oscilla"
+   ]
+  }
+ ],
+ "languages": [
+  {
+   "language": "čeština",
+   "fluency": "rodilý mluvčí"
+  },
+  {
+   "language": "angličtina",
+   "fluency": "plynně"
+  },
+  {
+   "language": "němčina",
+   "fluency": "základy"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Majordomus",
+   "description": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
+   "url": "https://majordomus.dev",
+   "keywords": [
+    "Rust",
+    "MCP",
+    "Zola"
+   ]
+  },
+  {
+   "name": "Oscilla",
+   "description": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
+   "url": "https://korczis.github.io/oscilla/",
+   "keywords": [
+    "JavaScript",
+    "Web Audio"
+   ]
+  },
+  {
+   "name": "algoglyph",
+   "description": "Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.",
+   "url": "https://korczis.github.io/algoglyph/",
+   "keywords": [
+    "TypeScript",
+    "p5.js",
+    "Apache ECharts",
+    "Alpine.js",
+    "Flowbite Pro"
+   ]
+  },
+  {
+   "name": "Kompendium",
+   "description": "Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat.",
+   "url": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+   "keywords": [
+    "Zola",
+    "Cytoscape.js",
+    "Apache ECharts",
+    "Alpine.js",
+    "Flowbite Pro"
+   ]
+  },
+  {
+   "name": "Data Atlas",
+   "description": "Datové sady, katastr, doprava, dálkový průzkum a prostorová analytika na jedné prohledávatelné stránce.",
+   "url": "https://korczis.github.io/data-atlas/",
+   "keywords": [
+    "Python"
+   ]
+  },
+  {
+   "name": "Majordomus reel",
+   "description": "Hlas, snímky, hudba i zvuk, vše generované a verzované jako software.",
+   "url": "https://korczis.github.io/majordomus-reel/",
+   "keywords": [
+    "HTML"
+   ]
+  },
+  {
+   "name": "Crisis map",
+   "description": "Hlášení geokódovaná přes lokální Nominatim, uložená jako PostGIS geografie a servírovaná z jednoho registru schopností: LiveView, REST, OpenAPI, MCP a CLI.",
+   "url": "https://korczis.github.io/crisis-map/",
+   "keywords": [
+    "Elixir",
+    "PostGIS",
+    "MCP"
+   ]
+  },
+  {
+   "name": "Catharsis as a Service",
+   "description": "Digitální artefakt Sig Nihl / Prismatic.",
+   "url": "https://korczis.github.io/catharsis-as-a-service/",
+   "keywords": [
+    "HTML"
+   ]
+  },
+  {
+   "name": "Sonic Playground",
+   "description": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
+   "url": "https://korczis.github.io/sonic-playground/",
+   "keywords": [
+    "Elixir"
+   ]
+  },
+  {
+   "name": "Gists search",
+   "description": "Prohledávatelný index nad zrcadlem mých GitHub gistů.",
+   "url": "https://korczis.github.io/gists-search/",
+   "keywords": [
+    "Python"
+   ]
+  },
+  {
+   "name": "json2csv",
+   "description": "Malý převodník pro příkazovou řádku v Ruby.",
+   "url": "https://github.com/korczis/json2csv",
+   "keywords": [
+    "Ruby"
+   ]
+  },
+  {
+   "name": "maze-rs",
+   "description": "Algoritmy generování bludišť z knihy, v Rustu.",
+   "url": "https://korczis.github.io/maze-rs/",
+   "keywords": [
+    "Rust"
+   ]
+  },
+  {
+   "name": "csv2psql",
+   "description": "Převádí CSV na příkazy insert nebo update pro PostgreSQL.",
+   "url": "https://korczis.github.io/csv2psql/",
+   "keywords": [
+    "Ruby",
+    "PostgreSQL"
+   ]
+  },
+  {
+   "name": "big-png",
+   "description": "Kompresní kuriozita: obrovské PNG v malém souboru.",
+   "url": "https://github.com/korczis/big-png",
+   "keywords": [
+    "Python"
+   ]
+  }
+ ],
+ "meta": {
+  "canonical": "https://korczis.github.io/cs/resume.json",
+  "version": "v1.0.0",
+  "lastModified": "2026-11-18T04:00:58Z"
+ }
+}

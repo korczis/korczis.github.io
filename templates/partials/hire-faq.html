@@ -1,0 +1,41 @@
+{#- The /hire/ questions and answers, built once (ADR 0007, rule project.seo-derived: structured data
+    states only what the page shows). Include it with faq_as = "html" for the visible accordion
+    (templates/hire.html) or faq_as = "json" for the FAQPage mainEntity (templates/partials/seo.html);
+    both read the same list, so the two cannot drift. scripts/check-seo.mjs proves the parity both
+    ways on the built /hire/ pages. Facts come from data/cv.toml and data/github.json only. -#}
+{%- set fsfx = "" %}{% if lang is defined and lang != config.default_language %}{% set fsfx = "_" ~ lang %}{% endif -%}
+{%- set fcv = load_data(path="data/cv.toml") -%}
+{%- set fgh = load_data(path="data/github.json") -%}
+{%- set fh = fcv.hire -%}
+{%- set froles = fh["roles" ~ fsfx] | default(value=fh.roles) -%}
+{%- set freg = fh["regions" ~ fsfx] | default(value=fh.regions) -%}
+{%- set fwork = trans(key="hire_workplace_" ~ fh.workplace | replace(from="-", to="_"), lang=lang) -%}
+{%- set_global feng = "" %}{% for e in fh.engagement %}{% if feng %}{% set_global feng = feng ~ ", " %}{% endif %}{% set_global feng = feng ~ trans(key="hire_engagement_" ~ e | replace(from="-", to="_"), lang=lang) %}{% endfor -%}
+{#- Where he has worked: the finished roles, newest first, each with its years. #}
+{%- set_global fpast = "" %}{% for r in fcv.roles %}{% if r.end is defined %}{% if fpast %}{% set_global fpast = fpast ~ "; " %}{% endif %}{% set_global fpast = fpast ~ (r["title" ~ fsfx] | default(value=r.title)) ~ ", " ~ r.organisation ~ " (" ~ r.start | truncate(length=4, end="") ~ "–" ~ r.end | truncate(length=4, end="") ~ ")" %}{% endif %}{% endfor -%}
+{%- set frate = [] %}{% if fh.rate_from is defined %}{% set frate = [trans(key="hire_faq_q_rate", lang=lang), trans(key="hire_faq_a_rate", lang=lang) | replace(from="{rate}", to=fh.rate_currency ~ " " ~ fh.rate_from) | replace(from="{unit}", to=trans(key="hire_unit_" ~ fh.rate_unit, lang=lang))] %}{% endif -%}
+{%- set fexp = [] %}{% if fpast %}{% set fexp = [trans(key="hire_faq_q_experience", lang=lang), fpast] %}{% endif -%}
+{%- set faq = [
+  [trans(key="hire_faq_q_available", lang=lang) | replace(from="{name}", to=config.extra.author), trans(key="hire_faq_a_available", lang=lang) | replace(from="{engagement}", to=feng) | replace(from="{workplace}", to=fwork) | replace(from="{regions}", to=freg)],
+  [trans(key="hire_faq_q_roles", lang=lang), froles | join(sep="; ")],
+  frate,
+  fexp,
+  [trans(key="hire_faq_q_contact", lang=lang), trans(key="hire_faq_a_contact", lang=lang) | replace(from="{email}", to=fgh.profile.email | default(value="")) | replace(from="{linkedin}", to=fcv.links.linkedin | default(value=""))]
+] -%}
+{%- if faq_as == "json" -%}
+{%- set_global fn = 0 -%}
+{%- for item in faq %}{% if item | length == 2 %}{% if fn > 0 %},{% endif %}{% set_global fn = fn + 1 %}
+{%- set fq = '{"@type": "Question", "name": ' ~ (item[0] | json_encode) ~ ', "acceptedAnswer": {"@type": "Answer", "text": ' ~ (item[1] | json_encode) ~ '}}' %}
+      {{ fq | safe }}
+{%- endif %}{% endfor -%}
+{%- else -%}
+{%- set_global fn = 0 -%}
+{%- for item in faq %}{% if item | length == 2 %}{% set_global fn = fn + 1 %}
+          <details class="group" data-faq-item{% if fn == 1 %} open{% endif %}>
+            <summary class="flex cursor-pointer items-center justify-between gap-3 bg-gray-50 px-4 py-3 font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-700">
+              <span>{{ item[0] }}</span>{{ <icon name="chevron-up-down" class="h-4 w-4 shrink-0" /> }}
+            </summary>
+            <p class="px-4 py-3 text-sm text-gray-600 dark:text-gray-300">{{ item[1] }}</p>
+          </details>
+{%- endif %}{% endfor -%}
+{%- endif -%}

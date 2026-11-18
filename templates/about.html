@@ -7,6 +7,7 @@
 {%- set gh = load_data(path="data/github.json") -%}
 {%- set cat = load_data(path="data/projects.toml") -%}
 {%- set cv = load_data(path="data/cv.toml") -%}
+{%- set hiring = cv.hire is defined and cv.hire.available -%}
 {%- set base = config.base_url ~ lp ~ "/" -%}
 {%- set link = "font-medium text-primary-700 hover:underline dark:text-primary-400" -%}
 {%- set since = gh.profile.created_at | date(format="%Y") -%}
@@ -23,9 +24,14 @@
         <div>
           <h2 id="profile-title" class="text-xl font-bold text-gray-900 dark:text-white">{{ gh.profile.name }}</h2>
           <p class="font-mono text-sm text-primary-700 dark:text-primary-400">{{ gh.profile.login }}</p>
+          {#- The role line: the hire headline while the owner is available (data/cv.toml [hire], the
+              one source of availability, ADR 0007), else the generic role. #}
+          {%- if hiring %}
+          <p class="text-sm font-medium text-gray-900 dark:text-white" data-role-line>{{ cv.hire["headline" ~ sfx] | default(value=cv.hire.headline) }}</p>
+          <p class="text-sm text-gray-600 dark:text-gray-400">{{ config.extra["location" ~ sfx] }}</p>
+          <span class="mt-1 inline-block">{{ <badge label={trans(key="open_to_work", lang=lang)} tone="green" dot={true} href={base ~ "hire/"} /> }}</span>
+          {%- else %}
           <p class="text-sm text-gray-600 dark:text-gray-400">{{ trans(key="software_engineer", lang=lang) | safe }} {{ config.extra["location" ~ sfx] }}</p>
-          {%- if gh.profile.hireable %}
-          <span class="mt-1 inline-block">{{ <badge label={trans(key="open_to_work", lang=lang)} tone="green" dot={true} /> }}</span>
           {%- endif %}
         </div>
       </div>
@@ -37,12 +43,19 @@
         <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="author_of", lang=lang) | safe }}</dt><dd><a class="{{ link }}" href="{{ config.extra.majordomus_url }}">Majordomus</a></dd></div>
       </dl>
       <div class="mt-5 flex flex-wrap gap-2 border-t border-gray-200 pt-4 dark:border-gray-700 print:hidden">
+        {%- if hiring %}
+        {{ <button label={trans(key="hire", lang=lang)} href={base ~ "hire/"} size="sm" icon="briefcase" /> }}
+        {%- endif %}
         {%- if gh.profile.email %}
-        {{ <button label={trans(key="contact_email", lang=lang)} href={"mailto:" ~ gh.profile.email} size="sm" icon="mail" sr={gh.profile.email} /> }}
+        {%- if hiring %}{% set mail_variant = "secondary" %}{% else %}{% set mail_variant = "primary" %}{% endif %}
+        {{ <button label={trans(key="contact_email", lang=lang)} href={"mailto:" ~ gh.profile.email} variant={mail_variant} size="sm" icon="mail" sr={gh.profile.email} /> }}
+        {%- endif %}
+        {%- if cv.links is defined and cv.links.linkedin is defined %}
+        {{ <button label={trans(key="hire_linkedin", lang=lang)} href={cv.links.linkedin} variant="secondary" size="sm" icon="linkedin" /> }}
         {%- endif %}
         {{ <button label="GitHub" href={"https://github.com/" ~ gh.profile.login} variant="secondary" size="sm" icon="github" /> }}
         {{ <button label="GitLab" href={"https://gitlab.com/" ~ config.extra.gitlab} variant="secondary" size="sm" icon="code" /> }}
-        {{ <button label="majordomus.dev" href={config.extra.majordomus_url} size="sm" icon="shield" /> }}
+        {{ <button label="majordomus.dev" href={config.extra.majordomus_url} variant="secondary" size="sm" icon="shield" /> }}
         {{ <button label={trans(key="print_as_cv", lang=lang)} variant="ghost" attrs='data-js onclick="window.print()"' /> }}
       </div>
     {% </card> %}

@@ -3,7 +3,16 @@
 // front matter that matches it, category pages name a real category, and og_image names are
 // unique. The schema is the machine-readable description; this checks exactly its rules (no
 // dependency): required keys, no unknown keys, types, lengths, patterns, enums, array sizes.
-import { ROOT, contentPages, readJson, readToml } from './lib/derive.mjs';
+//
+// Beyond the schema, on the hand-written pages (not the generated ones, whose figures are measured):
+//   - no typed number in description, seo_title, og_title or og_description: no spelled-out
+//     cardinal (an English and a Czech list) and no "<n> years" (rule project.data-measured;
+//     "Fifteen years" outlived the sixteenth). A figure belongs in a template, from data/;
+//   - while data/cv.toml [hire] available is true, the seo_title of every page that presents the
+//     owner (schema home, profile, hire) carries the author's name in the page's language and the
+//     role noun of the headline in that language (rule project.seo-derived), so a search result,
+//     a link preview and a sourcing tool read name and role first.
+import { PROFILE_SCHEMAS, ROOT, contentPages, identity, local, readJson, readToml, roleNoun } from './lib/derive.mjs';
 import { loadGlossary } from './lib/terms.mjs';
 import { cliArgs } from './lib/cli.mjs';
 
@@ -94,8 +103,54 @@ for (const { path: rel, fm, text } of pages) {
   }
 }
 
+// Typed numbers in the fields a preview shows, each language with its own words (Czech "ten" is
+// "that"). "one" / "jeden" are left out: they are as often an article ("One stack") as a count.
+// Czech words are matched without their diacritics.
+const SPOKEN = {
+  en: ['two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen',
+    'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy',
+    'eighty', 'ninety', 'hundred', 'thousand', 'dozen', 'dozens'],
+  cs: ['dva', 'dve', 'tri', 'ctyri', 'pet', 'sest', 'sedm', 'osm', 'devet', 'deset', 'jedenact', 'dvanact', 'trinact',
+    'ctrnact', 'patnact', 'sestnact', 'sedmnact', 'osmnact', 'devatenact', 'dvacet', 'tricet', 'ctyricet', 'padesat',
+    'sedesat', 'sedmdesat', 'osmdesat', 'devadesat', 'sto', 'tisic'],
+};
+const plain = (s) => s.normalize('NFD').replace(/\p{M}/gu, '').toLowerCase();
+const spokenRe = (words) => new RegExp(`(^|[^\\p{L}])(${words.join('|')})(?=$|[^\\p{L}])`, 'u');
+const SPOKEN_RE = Object.fromEntries(Object.entries(SPOKEN).map(([lang, words]) => [lang, spokenRe(words)]));
+const YEARS_RE = /\d+\s*\+?\s*(?:years?|yrs?|let|roku|roky)(?![\p{L}])/u;
+const SHOWN = [['description', (fm) => fm.description], ...['seo_title', 'og_title', 'og_description'].map((k) => [k, (fm) => fm.extra?.[k]])];
+const hire = readToml('data/cv.toml').hire ?? {};
+const me = identity();
+let numbersChecked = 0;
+let profiles = 0;
+for (const { path: rel, fm, text, lang } of pages) {
+  if (!fm || GENERATED.test(text)) continue;
+  for (const [field, get] of SHOWN) {
+    const value = get(fm);
+    if (typeof value !== 'string') continue;
+    numbersChecked += 1;
+    const spoken = SPOKEN_RE[lang] && plain(value).match(SPOKEN_RE[lang])?.[2];
+    if (spoken) findings.push(`${rel}: ${field} types the number "${spoken}"; say it without a figure, or derive it from data/`);
+    const years = plain(value).match(YEARS_RE)?.[0];
+    if (years) findings.push(`${rel}: ${field} types "${years}"; a span of years is measured, never typed`);
+  }
+  if (hire.available && PROFILE_SCHEMAS.includes(fm.extra?.schema)) {
+    profiles += 1;
+    const title = fm.extra?.seo_title ?? '';
+    const name = me.nameIn(lang);
+    const headline = local(hire, 'headline', lang) ?? hire.headline;
+    const role = roleNoun(headline);
+    if (!title.includes(name)) findings.push(`${rel}: seo_title "${title}" does not name ${name}`);
+    if (!title.toLowerCase().includes(role.toLowerCase())) {
+      findings.push(`${rel}: seo_title "${title}" does not carry the headline's role noun "${role}" (data/cv.toml [hire])`);
+    }
+  }
+}
+
 if (findings.length) {
   for (const f of findings) console.error(`✗ ${f}`);
   process.exit(1);
 }
-console.log(`front matter: ${pages.length} pages match static/schemas/front-matter.schema.json (${images.size} OG images), ${crossChecked} hand pages agree with the data, PASS`);
+console.log(`front matter: ${pages.length} pages match static/schemas/front-matter.schema.json (${images.size} OG images), `
+  + `${crossChecked} hand pages agree with the data, ${numbersChecked} shown fields type no number`
+  + `${hire.available ? `, ${profiles} profile titles carry name and role` : ''}, PASS`);

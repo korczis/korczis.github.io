@@ -7,7 +7,7 @@ description: The original repositories of data/index.json (both forges, merged) 
 statement: Never choose which repositories get a page and never type a page's metadata; the original repositories of data/index.json decide the set, data/recent.json measures each, scripts/build-work.mjs writes every page in every language from measured facts, and scripts/check-work-pages.mjs must pass on the built site.
 status: active
 class: blocking
-depends_on: [project.data-measured@1, project.seo-derived@1, project.front-matter-contract@1, project.i18n-everywhere@1, project.everything-interlinked@1, project.nda-never-named@1]
+depends_on: [project.data-measured@1, project.seo-derived@2, project.front-matter-contract@2, project.i18n-everywhere@1, project.everything-interlinked@1, project.nda-never-named@1]
 tags: [content, seo, open-graph, derived, machine-readable, automation]
 
 x-majordomus:

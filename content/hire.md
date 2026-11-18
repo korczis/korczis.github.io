@@ -7,8 +7,8 @@ path = "hire"
 [extra]
 article_title = "What a hire buys"
 terms = ["ai-agent", "majordomus", "mcp", "elixir", "rust", "postgresql", "osint", "due-diligence", "mergers-and-acquisitions", "open-source"]
-seo_title = "Hire Tomas Korcak · Staff AI agent engineer, Elixir, Rust"
-og_title = "Available: staff engineer for AI agent infrastructure."
+seo_title = "Hire Tomas Korcak · Remote staff engineer, AI agents, Elixir, Rust"
+og_title = "Available: Tomas Korcak, staff engineer for AI agent infrastructure."
 og_description = "Remote, full-time or contract: AI agent infrastructure, MCP, Elixir and Rust backends, technical due diligence. Every claim linked to its evidence."
 og_image = "og/hire.png"
 schema = "hire"

@@ -1,7 +1,7 @@
 {%- set lp = "" %}{% if lang is defined and lang != config.default_language %}{% set lp = "/" ~ lang %}{% endif -%}
 {#- Flowbite Pro application shell: navbar (admin dashboard 1.1.1, section 3). The drawer toggle
     opens #sidebar below lg; the search submits to the catalogue, which filters by ?q=. -#}
-<nav class="fixed z-30 w-full border-b border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-800" aria-label="{{ trans(key="main", lang=lang) }}">
+<nav id="topbar" class="fixed z-30 w-full border-b border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-800" aria-label="{{ trans(key="main", lang=lang) }}">
   <div class="px-3 py-3 lg:px-5 lg:pl-3">
     <div class="flex items-center justify-between">
       <div class="flex items-center justify-start">
@@ -41,7 +41,7 @@
             of tiles from data/nav.toml [[interfaces]], the site's machine interfaces (/interfaces/). #}
         {%- set inav = load_data(path="data/nav.toml") %}
         <button id="interfaces-menu-button" type="button" data-js data-dropdown-toggle="interfaces-menu" data-dropdown-placement="bottom-end" aria-haspopup="menu" aria-expanded="false"
-          class="rounded-lg p-2.5 text-sm text-gray-600 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700">
+          class="hidden rounded-lg p-2.5 sm:inline-block text-sm text-gray-600 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700">
           <span class="sr-only">{{ trans(key="interfaces_menu", lang=lang) | safe }}</span>{{ <icon name="squares" class="h-5 w-5" /> }}
         </button>
         <div id="interfaces-menu" class="z-50 my-4 hidden w-80 max-w-[calc(100vw-2rem)] list-none divide-y divide-gray-100 overflow-hidden rounded-lg bg-white text-base shadow-lg dark:divide-gray-600 dark:bg-gray-700">
@@ -81,11 +81,20 @@
             {%- endfor %}
           </ul>
         </div>
-        <a href="https://github.com/{{ config.extra.github }}" data-tooltip-target="tooltip-github" class="rounded-lg p-2.5 text-gray-600 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700">
+        <a href="https://github.com/{{ config.extra.github }}" data-tooltip-target="tooltip-github" class="hidden rounded-lg p-2.5 sm:inline-block text-gray-600 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700">
           <span class="sr-only">{{ trans(key="github_profile", lang=lang) | safe }}</span>{{ <icon name="github" class="h-5 w-5" /> }}
         </a>
         {{ <tooltip id="tooltip-github" text={"github.com/" ~ config.extra.github} size="sm" /> }}
+        {#- Hire me: the topbar's primary action on every page while the owner is available (data/cv.toml
+            [hire], ADR 0007), from the narrowest phone; Majordomus steps down to a secondary button.
+            Below sm the GitHub link and the interfaces menu live in the sidebar and the palette. #}
+        {%- set ncv = load_data(path="data/cv.toml") %}
+        {%- if ncv.hire is defined and ncv.hire.available %}
+        <span class="ml-1 inline-flex sm:ml-2" data-hire-topbar>{{ <button label={trans(key="hire", lang=lang)} href={config.base_url ~ lp ~ "/hire/"} size="sm" /> }}</span>
+        <span class="ml-2 hidden xl:inline-flex">{{ <button label="Majordomus" href={config.extra.majordomus_url} variant="secondary" size="sm" icon="shield" /> }}</span>
+        {%- else %}
         <span class="ml-2 hidden sm:inline-flex">{{ <button label="Majordomus" href={config.extra.majordomus_url} size="sm" icon="shield" /> }}</span>
+        {%- endif %}
       </div>
     </div>
   </div>

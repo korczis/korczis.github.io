@@ -7,7 +7,7 @@ description: Interface texts live in i18n/*.toml, grouped by feature, and reach 
 statement: Never write a visible text into a template, a script or a data file in one language only; add it to i18n/<feature>.toml (interface) or as a `_cs` twin (data), let generators write both language versions of a page, and keep scripts/check-i18n.mjs passing.
 status: active
 class: blocking
-depends_on: [project.front-matter-contract@1, project.seo-derived@1]
+depends_on: [project.front-matter-contract@2, project.seo-derived@2]
 tags: [i18n, content, seo]
 
 x-majordomus:
