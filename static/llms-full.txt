@@ -1,11 +1,76 @@
 # Tomas Korcak
 
-> Software for evidence: AI agents that prove their work, honest instruments in the browser, knowledge you can check.
+> Tomas Korcak: Staff engineer for AI agent infrastructure, Elixir and Rust. Remote, worldwide, working in the Central European time zone. Available for full-time, contract, and fractional work: https://korczis.github.io/hire/
+
+Software for evidence: AI agents that prove their work, honest instruments in the browser, knowledge you can check.
+
+## Hire
+
+Tomas Korcak is available for hire: Staff engineer for AI agent infrastructure, Elixir and Rust. https://korczis.github.io/hire/
+
+- Staff or principal engineer: AI agent infrastructure, developer tooling, MCP
+- Forward deployed or applied AI engineer: agentic workflows in production
+- Backend and distributed systems: Elixir, OTP, Phoenix, Rust, PostgreSQL
+- Fractional CTO and technical due diligence: data, OSINT, M&A
+- Engagement: full-time, contract, fractional; remote, worldwide, working in the Central European time zone; available since 2026-11
+- Contract rate: from USD 110 per hour, B2B; full-time compensation by conversation
+- Contact: korczis@gmail.com
+- Profile: https://www.linkedin.com/in/korcaktomas/
+- CV as data: [JSON Resume](https://korczis.github.io/resume.json), also in Czech at https://korczis.github.io/cs/resume.json
+
+## Skills
+
+Measured from every original public repository on GitHub and GitLab, derived 2026-11-17T21:17:02Z.
+
+- [JavaScript](https://korczis.github.io/glossary/javascript/): primary language of 44 original repositories; evidence: [oscilla](https://github.com/korczis/oscilla), [majordomus-reel](https://github.com/korczis/majordomus-reel), [korczis.github.io](https://github.com/korczis/korczis.github.io)
+- [Elixir](https://korczis.github.io/glossary/elixir/): primary language of 27 original repositories; evidence: [kompendium-epistemicke-anihilace](https://github.com/korczis/kompendium-epistemicke-anihilace), [crisis-map](https://github.com/korczis/crisis-map), [the-psycho](https://gitlab.com/korczis/the-psycho)
+- [Ruby](https://korczis.github.io/glossary/ruby/): primary language of 20 original repositories; evidence: [gdc-dumpator](https://github.com/korczis/gdc-dumpator), [zeman-ucet](https://github.com/korczis/zeman-ucet), [cluster](https://github.com/korczis/cluster)
+- [Shell](https://korczis.github.io/glossary/shell/): primary language of 13 original repositories; evidence: [microcrawler](https://gitlab.com/korczis/microcrawler), [home](https://github.com/korczis/home), [server-archlinux](https://github.com/korczis/server-archlinux)
+- [Rust](https://korczis.github.io/glossary/rust/): primary language of 12 original repositories; evidence: [prismatic-majordomus](https://github.com/korczis/prismatic-majordomus), [maze-rs](https://github.com/korczis/maze-rs), [rustas](https://github.com/korczis/rustas)
+- [Python](https://korczis.github.io/glossary/python/): primary language of 7 original repositories; evidence: [sonic-playground](https://github.com/korczis/sonic-playground), [openttd-prismatic-bridge](https://gitlab.com/korczis/openttd-prismatic-bridge), [data-atlas](https://github.com/korczis/data-atlas)
+- [C++](https://korczis.github.io/glossary/cpp/): primary language of 6 original repositories; evidence: [happ](https://github.com/korczis/happ), [algorithms-ruby](https://github.com/korczis/algorithms-ruby), [iCave](https://github.com/korczis/iCave)
+- [HTML](https://korczis.github.io/glossary/html/): primary language of 6 original repositories; evidence: [catharsis-as-a-service](https://github.com/korczis/catharsis-as-a-service), [osint-case-ratcliffe-moscow-2026](https://github.com/korczis/osint-case-ratcliffe-moscow-2026), [ApolloCrawler-github-io](https://gitlab.com/korczis/ApolloCrawler-github-io)
+- [CSS](https://korczis.github.io/glossary/css/): primary language of 5 original repositories; evidence: [annasabatova-cz](https://gitlab.com/korczis/annasabatova-cz), [korczis-github-com](https://gitlab.com/korczis/korczis-github-com), [korczis.gitlab.io](https://gitlab.com/korczis/korczis.gitlab.io)
+- [Dockerfile](https://korczis.github.io/glossary/dockerfile/): primary language of 4 original repositories; evidence: [docks](https://gitlab.com/korczis/docks), [prismatic-blog](https://github.com/korczis/prismatic-blog), [gh-exec-3000](https://github.com/korczis/gh-exec-3000)
+- [C#](https://korczis.github.io/glossary/csharp/): primary language of 3 original repositories; evidence: [cs-benchmark](https://github.com/korczis/cs-benchmark), [Rocnikac4](https://github.com/korczis/Rocnikac4), [reflex](https://github.com/korczis/reflex)
+- [Swift](https://korczis.github.io/glossary/swift/): primary language of 3 original repositories; evidence: [ReadingPhoneNumbersInRealTime](https://github.com/korczis/ReadingPhoneNumbersInRealTime), [MinervaEye](https://github.com/korczis/MinervaEye), [bc-apple](https://github.com/korczis/bc-apple)
+- [TypeScript](https://korczis.github.io/glossary/typescript/): primary language of 3 original repositories; evidence: [algoglyph](https://github.com/korczis/algoglyph), [dispatcher](https://gitlab.com/korczis/dispatcher), [ts-logger](https://github.com/korczis/ts-logger)
+- [Haskell](https://korczis.github.io/glossary/haskell/): primary language of 2 original repositories; evidence: [haskell-world](https://github.com/korczis/haskell-world), [skull-haskell](https://github.com/korczis/skull-haskell)
+- [C](https://korczis.github.io/glossary/c/): primary language of 1 original repository; evidence: [skull-c](https://github.com/korczis/skull-c)
+- [Erlang](https://korczis.github.io/glossary/erlang/): primary language of 1 original repository; evidence: [skull-erlang](https://github.com/korczis/skull-erlang)
+- [Java](https://korczis.github.io/glossary/java/): primary language of 1 original repository; evidence: [skull-java](https://github.com/korczis/skull-java)
+- [Alpine.js](https://korczis.github.io/glossary/alpine-js/): in the stack of 2 curated projects; evidence: [algoglyph](https://github.com/korczis/algoglyph), [Kompendium](https://github.com/korczis/kompendium-epistemicke-anihilace)
+- [Apache ECharts](https://korczis.github.io/glossary/apache-echarts/): in the stack of 2 curated projects; evidence: [algoglyph](https://github.com/korczis/algoglyph), [Kompendium](https://github.com/korczis/kompendium-epistemicke-anihilace)
+- [Flowbite Pro](https://korczis.github.io/glossary/flowbite-pro/): in the stack of 2 curated projects; evidence: [algoglyph](https://github.com/korczis/algoglyph), [Kompendium](https://github.com/korczis/kompendium-epistemicke-anihilace)
+- [MCP](https://korczis.github.io/glossary/mcp/): in the stack of 2 curated projects; evidence: [Majordomus](https://github.com/korczis/prismatic-majordomus), [Crisis map](https://github.com/korczis/crisis-map)
+- [Zola](https://korczis.github.io/glossary/zola/): in the stack of 2 curated projects; evidence: [Majordomus](https://github.com/korczis/prismatic-majordomus), [Kompendium](https://github.com/korczis/kompendium-epistemicke-anihilace)
+- [Cytoscape.js](https://korczis.github.io/glossary/cytoscape-js/): in the stack of 1 curated project; evidence: [Kompendium](https://github.com/korczis/kompendium-epistemicke-anihilace)
+- [p5.js](https://korczis.github.io/glossary/p5-js/): in the stack of 1 curated project; evidence: [algoglyph](https://github.com/korczis/algoglyph)
+- [PostGIS](https://korczis.github.io/glossary/postgis/): in the stack of 1 curated project; evidence: [Crisis map](https://github.com/korczis/crisis-map)
+- [PostgreSQL](https://korczis.github.io/glossary/postgresql/): in the stack of 1 curated project; evidence: [csv2psql](https://github.com/korczis/csv2psql)
+- [Web Audio](https://korczis.github.io/glossary/web-audio/): in the stack of 1 curated project; evidence: [Oscilla](https://github.com/korczis/oscilla)
+
+## Experience
+
+- Freelance Technical Mentor & Engineering Advisor, Independent (2025-01 to present): One-on-one mentoring and advisory: software architecture, Elixir, OTP and Phoenix, AI-assisted and agentic software engineering, LLM applications and developer tooling, data engineering and OSINT systems, technical due diligence.
+- CTO / Lead Developer, International Leadership Development Firm (2024-12 to present)
+- Independent Consultant & Independent Contractor, Self Employed (2023-01 to present)
+- Staff Software Engineer, Kiwi.com (2019-06 to 2022-05)
+- CTO / Core Developer, Block Collider (2018-02 to 2019-01)
+- Principal Software Engineer, GoodData (2017-08 to 2018-02)
+- Senior Software Engineer / Combat Data Engineer, GoodData (2014-03 to 2017-08): San Francisco Bay Area. GoodData Ruby SDK, the high-level wrapper over the platform's APIs.
+- Software Development Lead / Software Architect, Moravia IT (2012-11 to 2014-02)
+- Senior Developer, Moravia IT (2012-08 to 2014-02)
+- Programmer, Kuju Entertainment - Vatra Games (2008-05 to 2012-04): Silent Hill: Downpour (Xbox 360, PS3), Rush'N Attack Ex-Patriot (Xbox Live Arcade, PSN), Disney Sing It; tools programming, i18n and L10n.
+- Gameplay Programmer, 2K Games (2007-01 to 2008-05)
+- Programmer, Honeywell Aerospace (2005-07 to 2007-01): Greater Phoenix Area. Test engineering and tools programming.
+- Education: Electrotechnics, SSOS - Technicke Lyceum, Prostejov (2001-09 to 2005-06)
+- Languages: Czech (native), English (fluent), German (basic)
 
 ## Pages
 
-- [Tomas Korcak](https://korczis.github.io/): Software that proves its work: tools that make AI agents prove what they did, honest scientific instruments in the browser, and knowledge bases you can check.
-- [About](https://korczis.github.io/about/): Tomas Korcak (korczis), software engineer in Brno: what I build, the languages I build it in over the years, and where to find it.
+- [Tomas Korcak](https://korczis.github.io/): Tomas Korcak, staff engineer for AI agent infrastructure, Elixir and Rust, open to remote roles and contracts: software that makes AI agents prove their work.
+- [About](https://korczis.github.io/about/): Tomas Korcak (korczis), staff engineer for AI agent infrastructure in Brno, open to remote roles: the CV, my languages over the years, and where to find the work.
 - [Glossary](https://korczis.github.io/glossary/): The 62 terms this site explains itself with: languages, technologies and concepts, each defined, sourced and linked to every page that uses it.
 - [Hire me](https://korczis.github.io/hire/): Tomas Korcak, staff engineer for AI agent infrastructure, Elixir and Rust: available remote, full-time or contract. Roles, terms, rate and evidence.
 - [Interfaces](https://korczis.github.io/interfaces/): The site for machines: its Majordomus layer with MCP resource URIs, how to connect an agent over MCP, and every published file described in OpenAPI.
@@ -58,36 +123,6 @@ Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist s
 - [Gists search](https://github.com/korczis/gists-search): Catalogue, enrichment and search over a mirror of my gists. Live: https://korczis.github.io/gists-search/
 - [json2csv](https://github.com/korczis/json2csv): Easy to use tool for converting JSON to CSV.
 - [csv2psql](https://github.com/korczis/csv2psql): CSV into SQL statements for PostgreSQL. Live: https://korczis.github.io/csv2psql/
-
-## Hire
-
-> Tomas Korcak is available for hire: Staff engineer for AI agent infrastructure, Elixir and Rust. https://korczis.github.io/hire/
-
-- Staff or principal engineer: AI agent infrastructure, developer tooling, MCP
-- Forward deployed or applied AI engineer: agentic workflows in production
-- Backend and distributed systems: Elixir, OTP, Phoenix, Rust, PostgreSQL
-- Fractional CTO and technical due diligence: data, OSINT, M&A
-- Engagement: full-time, contract, fractional; remote, worldwide, working in the Central European time zone; available since 2026-11
-- Contract rate: from USD 110 per hour, B2B; full-time compensation by conversation
-- Contact: korczis@gmail.com
-- Profile: https://www.linkedin.com/in/korcaktomas/
-
-## Experience
-
-- Freelance Technical Mentor & Engineering Advisor, Independent (2025-01 to present): One-on-one mentoring and advisory: software architecture, Elixir, OTP and Phoenix, AI-assisted and agentic software engineering, LLM applications and developer tooling, data engineering and OSINT systems, technical due diligence.
-- CTO / Lead Developer, International Leadership Development Firm (2024-12 to present)
-- Independent Consultant & Independent Contractor, Self Employed (2023-01 to present)
-- Staff Software Engineer, Kiwi.com (2019-06 to 2022-05)
-- CTO / Core Developer, Block Collider (2018-02 to 2019-01)
-- Principal Software Engineer, GoodData (2017-08 to 2018-02)
-- Senior Software Engineer / Combat Data Engineer, GoodData (2014-03 to 2017-08): San Francisco Bay Area. GoodData Ruby SDK, the high-level wrapper over the platform's APIs.
-- Software Development Lead / Software Architect, Moravia IT (2012-11 to 2014-02)
-- Senior Developer, Moravia IT (2012-08 to 2014-02)
-- Programmer, Kuju Entertainment - Vatra Games (2008-05 to 2012-04): Silent Hill: Downpour (Xbox 360, PS3), Rush'N Attack Ex-Patriot (Xbox Live Arcade, PSN), Disney Sing It; tools programming, i18n and L10n.
-- Gameplay Programmer, 2K Games (2007-01 to 2008-05)
-- Programmer, Honeywell Aerospace (2005-07 to 2007-01): Greater Phoenix Area. Test engineering and tools programming.
-- Education: Electrotechnics, SSOS - Technicke Lyceum, Prostejov (2001-09 to 2005-06)
-- Languages: Czech (native), English (fluent), German (basic)
 
 ## Optional
 

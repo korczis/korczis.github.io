@@ -7,7 +7,7 @@
 // usage: node scripts/check-derive.mjs     exit 0 when every assertion holds, 1 with each failure
 import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
-import { ROOT, clip, identity, languages, plural, slug } from './lib/derive.mjs';
+import { ROOT, clip, cutAtWord, identity, languages, permalink, plural, roleNoun, slug } from './lib/derive.mjs';
 import { droppedSince, inferCategory, matchKind, measureShare, ownerMatcher, paginate, primaryLanguage, ruleFindings, words } from './lib/repos.mjs';
 import { cliArgs } from './lib/cli.mjs';
 
@@ -91,6 +91,15 @@ check('rule findings', ruleFindings({ ...categories, c: { keywords: ['graph'], l
 check('languages from zola.toml', languages()[0], 'en');
 check('slug', slug('pdf_renderer.Ex'), 'pdf-renderer-ex');
 check('clip', clip('one two three four', 12), 'one two…');
+check('clip by width, between words', clip('one two, three four', 9, { measure: (x) => x.length }), 'one two…');
+check('clip by width, a first word too wide', clip('abcdefghij', 5, { measure: (x) => x.length }), 'abcd…');
+check('cutAtWord', [cutAtWord('one two three', 'one two…'), cutAtWord('one two three', 'one tw…'), cutAtWord('a b', 'a b')], [true, false, true]);
+check('permalink', [
+  permalink({ rel: '_index.md', lang: 'en', fm: {} }), permalink({ rel: '_index.cs.md', lang: 'cs', fm: {} }),
+  permalink({ rel: 'work/x.cs.md', lang: 'cs', fm: {} }), permalink({ rel: 'glossary/_index.md', lang: 'en', fm: {} }),
+  permalink({ rel: 'hire.cs.md', lang: 'cs', fm: { path: 'cs/hire' } }),
+], ['/', '/cs/', '/cs/work/x/', '/glossary/', '/cs/hire/']);
+check('roleNoun', [roleNoun('Staff engineer for AI agents, Rust'), roleNoun('Staff engineer pro AI agenty')], ['Staff engineer', 'Staff engineer']);
 check('Czech plural', [1, 2, 5, 0].map((n) => plural('cs', n)), ['one', 'few', 'other', 'other']);
 
 // No identity or URL literal in the derivation: the owner's logins, names, host and Majordomus

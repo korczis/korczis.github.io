@@ -1,13 +1,13 @@
 +++
 title = "Tomas Korcak"
-description = "Software that proves its work: tools that make AI agents prove what they did, honest scientific instruments in the browser, and knowledge bases you can check."
+description = "Tomas Korcak, staff engineer for AI agent infrastructure, Elixir and Rust, open to remote roles and contracts: software that makes AI agents prove their work."
 template = "index.html"
 
 [extra]
 article_title = "How to read this site"
 terms = ["repository", "commit", "fork", "mirror", "data-visualisation", "d3", "front-matter", "zola", "static-site-generator", "flowbite-pro", "wcag", "json-ld", "open-graph"]
-seo_title = "Tomas Korcak (korczis) · Software that proves its work"
-og_title = "Software that proves its work."
+seo_title = "Tomas Korcak · Staff engineer, AI agent infrastructure (Elixir, Rust)"
+og_title = "Tomas Korcak: staff engineer for AI agent infrastructure."
 og_description = "Tools that make AI agents prove what they did, honest instruments in the browser, and knowledge you can check."
 og_image = "og/home.png"
 schema = "home"

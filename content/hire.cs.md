@@ -7,8 +7,8 @@ path = "cs/hire"
 [extra]
 article_title = "Co přináší najmout mě"
 terms = ["ai-agent", "majordomus", "mcp", "elixir", "rust", "postgresql", "osint", "due-diligence", "mergers-and-acquisitions", "open-source"]
-seo_title = "Najměte Tomáše Korčáka · Staff AI agent engineer, Elixir, Rust"
-og_title = "K dispozici: staff engineer pro infrastrukturu AI agentů."
+seo_title = "Tomáš Korčák · Spolupráce · Remote staff engineer, Elixir a Rust"
+og_title = "K dispozici: Tomáš Korčák, staff engineer pro AI agenty."
 og_description = "Remote, plný úvazek nebo kontrakt: infrastruktura AI agentů, MCP, backendy v Elixiru a Rustu, technická due diligence. Každé tvrzení s důkazem."
 og_image = "og/cs-hire.png"
 schema = "hire"
