@@ -76,6 +76,29 @@ Measured from every original public repository on GitHub and GitLab, derived 202
 - Education: Electrotechnics, SSOS - Technicke Lyceum, Prostejov (2001-09 to 2005-06)
 - Languages: Czech (native), English (fluent), German (basic)
 
+## Services
+
+What I offer: each service with its problem, method, deliverables, skills and evidence.
+
+- [Corporate and counterparty due diligence](https://korczis.github.io/services/due-diligence/): Know who you are dealing with before you sign: one resolved entity, every source cross-checked, every red flag explained.
+- [M&A pre-deal screening and analysis](https://korczis.github.io/services/m-and-a/): A fast, evidenced answer before the term sheet: go, or first ask for these documents.
+- [Digital investigation and OSINT dossiers](https://korczis.github.io/services/digital-investigation/): A complete, sourced picture of a person, a company or a network, from open sources only.
+- [Digital forensics and evidence preservation](https://korczis.github.io/services/digital-forensics/): Findings that hold up when someone challenges them.
+- [Reputation intelligence and adverse-media monitoring](https://korczis.github.io/services/reputation-intelligence/): Know what is being said, how credible it is, and when the narrative shifts.
+- [Sanctions, PEP and beneficial-ownership screening](https://korczis.github.io/services/compliance-screening/): Screening that neither drowns you in false positives nor quietly misses a true match.
+- [Insolvency, litigation and register change monitoring](https://korczis.github.io/services/continuous-monitoring/): Learn about trouble at a counterparty the day it becomes public, not at the next annual review.
+- [External attack surface and cyber-exposure assessment](https://korczis.github.io/services/attack-surface/): See your organisation, or an acquisition target, the way an attacker sees it.
+- [Decision support and AI agents for analysts](https://korczis.github.io/services/decision-support-ai/): AI that makes analysts faster without taking their signature away.
+- [Governed AI-assisted software delivery](https://korczis.github.io/services/ai-engineering-governance/): AI agents that write code under rules they cannot skip, with the evidence of every change kept.
+- [Interactive data products and simulators](https://korczis.github.io/services/interactive-data-products/): Data and models people drive themselves, where every mark leads to its source.
+
+## Case studies
+
+Client work under confidentiality agreements, anonymised: sector and roles declared, period and scale measured and rounded, capabilities inferred (labelled so).
+
+- [Real-estate developer: LLM agents and decision support](https://korczis.github.io/cases/real-estate/): Anonymised case study, real-estate developer: architect, lead engineer, AI engineer and data engineer; LLM agents and decision support.
+- [Financial and investment group: OSINT investigation](https://korczis.github.io/cases/financial-group/): Anonymised case study, financial and investment group: investigator and advisor; OSINT investigation and due diligence.
+
 ## Pages
 
 - [Tomas Korcak](https://korczis.github.io/): Tomas Korcak, staff engineer for AI agent infrastructure (Elixir, Rust): technical due diligence before a deal, and AI agents whose work you can check.
