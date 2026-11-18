@@ -60,11 +60,9 @@
         <div class="flex justify-between gap-4 py-3"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="hire_regions_label", lang=lang) }}</dt>
           <dd class="text-end font-medium text-gray-900 dark:text-white">{{ h["regions" ~ sfx] | default(value=h.regions) }}</dd></div>
         {%- if h.rate_from is defined %}
-        <div class="py-3">
-          <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="hire_rate_label", lang=lang) }}</dt>
-            <dd class="tabular text-end text-lg font-extrabold text-gray-900 dark:text-white">{{ trans(key="hire_rate_value", lang=lang) | replace(from="{rate}", to=h.rate_currency ~ " " ~ h.rate_from) | replace(from="{unit}", to=trans(key="hire_unit_" ~ h.rate_unit, lang=lang)) }}</dd></div>
-          <p class="mt-1 text-xs text-gray-600 dark:text-gray-400">{{ trans(key="hire_rate_note", lang=lang) }}</p>
-        </div>
+        <div class="flex justify-between gap-4 py-3"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="hire_rate_label", lang=lang) }}</dt>
+          <dd class="text-end"><span class="tabular block text-lg font-extrabold text-gray-900 dark:text-white">{{ trans(key="hire_rate_value", lang=lang) | replace(from="{rate}", to=h.rate_currency ~ " " ~ h.rate_from) | replace(from="{unit}", to=trans(key="hire_unit_" ~ h.rate_unit, lang=lang)) }}</span>
+            <span class="mt-1 block text-xs text-gray-600 dark:text-gray-400">{{ trans(key="hire_rate_note", lang=lang) }}</span></dd></div>
         {%- endif %}
       </dl>
     {% </card> %}
