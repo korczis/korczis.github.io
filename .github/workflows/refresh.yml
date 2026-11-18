@@ -75,9 +75,15 @@ jobs:
           curl -fsSL https://majordomus.dev/install.sh | sh -s -- --version "$MAJORDOMUS_VERSION"
           echo "$HOME/.local/bin" >> "$GITHUB_PATH"
           git config core.hooksPath .githooks
-      - name: Renderer for the Open Graph images
+      # scripts/build-og.mjs renders a card with rsvg-convert and quantises it with pngquant whenever
+      # its SVG changed (a new repository, a moved one); build-og --check fails when a package of its
+      # RENDERERS is missing from this line. Ubuntu ships pngquant 2.x: data/og.json records the
+      # version that wrote each card, and a version alone never re-renders one.
+      - name: Renderer and encoder for the Open Graph images
         if: steps.due.outputs.due == 'true'
-        run: sudo apt-get install -y --no-install-recommends librsvg2-bin
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y --no-install-recommends librsvg2-bin pngquant
       # GitLab reads have a 15-minute budget per fetcher and then keep the last measurement
       # (scripts/lib/gitlab.mjs); the step limit is the backstop, never the plan.
       - name: Measure (GitHub, GitLab, majordomus.dev; the last 12, 24 and 48 months)

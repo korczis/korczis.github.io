@@ -35,7 +35,7 @@ Prerequisites (generated from the files that pin them):
 | majordomus | v1.0.1 (as CI) | the git hooks and the doctor gate (<https://majordomus.dev>) |
 | python3 | any 3.x | `npm run verify`: a free port and the static server for the browser audit |
 | rsvg-convert | librsvg | `npm run og` / `npm run derive`: renders the Open Graph PNGs |
-| pngquant | 3.x | `npm run og` / `npm run derive`: quantises the Open Graph PNGs (32 colours, deterministic) |
+| pngquant | 2.x (Ubuntu, the refresh) or 3.x | `npm run og` / `npm run derive`: quantises the Open Graph PNGs (32 colours; the version is recorded per card in `data/og.json`) |
 | gh, glab | authenticated | `npm run data`, `index`, `recent`, `refresh`: measuring GitHub and GitLab |
 | Chromium headless shell | playwright-core 1.63.0 | the browser audit: `npx playwright-core install chromium-headless-shell` |
 <!-- prerequisites:end -->
@@ -174,7 +174,7 @@ from it:
 | Glossary pages are current | `node scripts/build-glossary.mjs --check` | check, verify, CI | `project.pages-are-articles` |
 | Every page is an article with glossary terms; every term is used | `node scripts/check-glossary.mjs` | check, verify, CI | `project.pages-are-articles` |
 | llms.txt is current | `node scripts/build-llms.mjs --check` | check, verify, CI | `project.data-measured` |
-| Open Graph images are current | `node scripts/build-og.mjs --check` | check, verify, CI | `project.seo-derived` |
+| Open Graph images are current, within their byte budget, renderable by the refresh | `node scripts/build-og.mjs --check` | check, verify, CI | `project.seo-derived` |
 | site.json is current | `node scripts/build-site-json.mjs --check` | check, verify, CI | `project.front-matter-contract` |
 | ai.json follows .ai/ and openapi.json the published files | `node scripts/build-interfaces.mjs --check` | check, verify, CI | `project.data-measured` |
 | Every visual goes through the component layer and is a maximizable simulator | `node scripts/check-viz-layer.mjs` | check, verify, CI | `project.viz-component-layer` |

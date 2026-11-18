@@ -80,7 +80,7 @@ export function limits() {
     description: { min: schema.properties.description.minLength, max: schema.properties.description.maxLength },
     title: { max: extra.seo_title.maxLength },
     ogTitle: { min: extra.og_title.minLength, max: extra.og_title.maxLength },
-    og: { width: og['x-width'] ?? 1200, height: og['x-height'] ?? 630 },
+    og: { width: og['x-width'] ?? 1200, height: og['x-height'] ?? 630, maxBytes: og['x-max-bytes'] },
   };
 }
 

@@ -1,39 +1,61 @@
 #!/usr/bin/env node
 // Derives the Open Graph images (1200x630) from each page's front matter: [extra] og_title (or the
-// title), og_description (or the description), and the og_image path. The SVG is deterministic (a seeded glyph field
-// like the hero's); the PNG is rendered from it with rsvg-convert (librsvg).
+// title), og_description (or the description), and the og_image path. The card is an SVG drawn
+// deterministically here (a seeded glyph field like the hero's); the PNG is rendered from it with
+// rsvg-convert (librsvg), and only the PNG is kept: no page references the SVG.
 //
 // data/og.json records, per image, the hash of the SVG each PNG was rendered from and of the PNG
-// itself, so a PNG left behind by a changed SVG is caught anywhere (file times are not, in CI).
+// itself, so a PNG left behind by a changed card is caught anywhere (file times are not, in CI).
 //
 // Size: every page has a card (one per original repository and language, hundreds of them), so
 // the PNG is quantised to a palette of ENCODER.colours with pngquant (no dithering, strongest
-// compression setting): deterministic, about a quarter of the size of the full-colour render and
-// indistinguishable on a flat dark card. The encoder is recorded in data/og.json; a change to it
-// renders every card again.
+// compression setting): about a fifth of the size of the full-colour render and indistinguishable
+// on a flat dark card. Each PNG stays within og_image x-max-bytes of the front-matter schema
+// (--check fails over it and reports the total). The encoder's settings are recorded in data/og.json, and a
+// change to them renders every card again. Its version is recorded per card: pngquant is
+// deterministic for one version, but Ubuntu's 2.x (the scheduled refresh) and Homebrew's 3.x write
+// different bytes, as librsvg does with other fonts. So a card is rendered again only when its SVG
+// changed, and data/og.json says which version wrote the PNG it holds; a version alone never
+// re-renders a card (two machines would otherwise rewrite every card in turn).
+//
+// Every tool used here is a package the scheduled refresh installs (RENDERERS: --check fails when
+// .github/workflows/refresh.yml does not install one, since --check itself renders nothing).
 //
 // The card shows the page's real address (its path from content/, as Zola publishes it) and a pill
 // with a measured fact of the page: on a work page the repository's state (supervised by
 // Majordomus, active within its period, or archive with its years) from data/recent.json; on every
 // other page the site's own supervision. Its texts are i18n (i18n/derive.toml og_pill_*).
 //
-// usage: node scripts/build-og.mjs           write static/og/<name>.svg and .png, remove orphans
-//        node scripts/build-og.mjs --check   exit 1 if an SVG is stale, a PNG is missing, not of the
-//                                            OG size, not rendered from its SVG, or an image is orphaned
+// usage: node scripts/build-og.mjs           write static/og/<name>.png, remove orphans
+//        node scripts/build-og.mjs --check   exit 1 if a PNG is missing, stale against its card, not
+//                                            of the OG size, over its byte budget, not the recorded
+//                                            render, a file of static/og is orphaned, or the refresh
+//                                            does not install a renderer
 // CI runs --check only (no renderer needed); regenerate locally after changing front matter.
 import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
-import { existsSync, mkdirSync, readFileSync, readdirSync, unlinkSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, readdirSync, statSync, unlinkSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { CHECK, ROOT, contentPages, identity, isDefault, limits, readJson, report, t } from './lib/derive.mjs';
 import { cliArgs } from './lib/cli.mjs';
 
 cliArgs({ '--check': true }, { derived: true });
 
-const { width: W, height: H } = limits().og;
+const { width: W, height: H, maxBytes: MAX_BYTES } = limits().og;
 const me = identity();
-const ENCODER = { tool: 'pngquant', colours: 32, args: ['--speed', '1', '--strip', '--nofs'] };
+const ENCODER = { tool: 'pngquant', colours: 16, args: ['--speed', '1', '--strip', '--nofs'] };
 const ENCODER_ID = `${ENCODER.tool} ${ENCODER.colours} ${ENCODER.args.join(' ')}`;
+// The command each step runs, and the Ubuntu package the refresh installs it from.
+const RENDERERS = [{ tool: 'rsvg-convert', apt: 'librsvg2-bin' }, { tool: ENCODER.tool, apt: 'pngquant' }];
+let encoderVersion = null;
+const versionOf = () => {
+  try {
+    encoderVersion ??= `${ENCODER.tool} ${execFileSync(ENCODER.tool, ['--version'], { encoding: 'utf8' }).trim().split(/\s/)[0]}`;
+  } catch (error) {
+    throw new Error(`${ENCODER.tool} is needed to encode the Open Graph cards (brew install pngquant, apt-get install pngquant): ${error.message}`);
+  }
+  return encoderVersion;
+};
 const COLOURS = { page: '#111827', ink: '#f9fafb', muted: '#9ca3af', primary: '#3b82f6', soft: '#1e3a8a', glyph: '#60a5fa' };
 
 const escape = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -160,15 +182,21 @@ const manifest = { schema: 'korczis-hub-og/v1', encoder: ENCODER_ID, images: {} 
 const reencode = stored.encoder !== ENCODER_ID;
 const findings = [];
 if (CHECK && reencode) findings.push(`data/og.json records the encoder ${stored.encoder ?? 'none'}, not ${ENCODER_ID}`);
+if (CHECK) {
+  // The refresh renders the cards a new repository or a moved one needs: it must install each tool.
+  const workflow = readFileSync(join(ROOT, '.github/workflows/refresh.yml'), 'utf8');
+  const installed = new Set([...workflow.matchAll(/apt-get install ([^\n]+)/g)].flatMap((m) => m[1].split(/\s+/)));
+  for (const r of RENDERERS) if (!installed.has(r.apt)) findings.push(`.github/workflows/refresh.yml does not install ${r.apt} (${r.tool}), which renders the cards`);
+}
 const wanted = new Set();
 mkdirSync(DIR, { recursive: true });
+let bytes = 0;
 for (const page of contentPages()) {
   const { path: file, fm } = page;
   if (!fm?.extra?.og_image) continue;
   const png = join(ROOT, 'static', fm.extra.og_image);
   const name = fm.extra.og_image.replace(/^og\//, '').replace(/\.png$/, '');
-  const source = join(DIR, `${name}.svg`);
-  wanted.add(`${name}.svg`).add(`${name}.png`);
+  wanted.add(`${name}.png`);
   const text = svg({
     title: fm.extra.og_title || fm.title,
     description: fm.extra.og_description || fm.description,
@@ -178,30 +206,35 @@ for (const page of contentPages()) {
   });
   const record = stored.images[name];
   if (CHECK) {
-    if (!existsSync(source) || readFileSync(source, 'utf8') !== text) findings.push(`${source.slice(ROOT.length + 1)} is stale`);
     if (!existsSync(png)) { findings.push(`${fm.extra.og_image} is missing`); continue; }
     const [w, h] = pngSize(png);
     if (w !== W || h !== H) findings.push(`${fm.extra.og_image} is ${w}x${h}, not ${W}x${H}`);
+    const size = statSync(png).size;
+    bytes += size;
+    if (size > MAX_BYTES) findings.push(`${fm.extra.og_image} is ${size} bytes, over the ${MAX_BYTES} of the front-matter schema (og_image x-max-bytes)`);
     if (!record) findings.push(`${fm.extra.og_image} has no record in data/og.json`);
-    else if (record.svg !== sha(text)) findings.push(`${fm.extra.og_image} was rendered from another SVG`);
+    else if (record.svg !== sha(text)) findings.push(`${fm.extra.og_image} is stale: its card (front matter, address or pill) changed since it was rendered`);
     else if (record.png !== sha(readFileSync(png))) findings.push(`${fm.extra.og_image} is not the PNG data/og.json recorded`);
+    else if (!record.by) findings.push(`${fm.extra.og_image} has no encoder version recorded in data/og.json`);
     continue;
   }
-  // Re-render only when the SVG changed (or the PNG is missing or unrecorded as its render):
-  // renderers on other machines use other fonts, and an unchanged image must not churn in a diff.
-  const same = existsSync(source) && existsSync(png) && readFileSync(source, 'utf8') === text;
-  if (!same || reencode || (record && (record.svg !== sha(text) || record.png !== sha(readFileSync(png))))) {
-    writeFileSync(source, text);
-    execFileSync('rsvg-convert', ['--width', String(W), '--height', String(H), '--output', png, source]);
+  // Render only when the card's SVG changed (its hash in data/og.json), the PNG is missing or not
+  // the recorded one, or the encoder's settings changed: renderers on other machines use other
+  // fonts and encoder versions, and an unchanged card must not churn in a diff. The SVG is never
+  // written: rsvg-convert reads it from stdin, and its hash is the whole record of it.
+  if (reencode || !record || !existsSync(png) || record.svg !== sha(text) || record.png !== sha(readFileSync(png))) {
+    execFileSync('rsvg-convert', ['--width', String(W), '--height', String(H), '--output', png], { input: text });
+    const by = versionOf();
     execFileSync(ENCODER.tool, [...ENCODER.args, '--force', '--output', png, String(ENCODER.colours), png]);
+    manifest.images[name] = { svg: sha(text), png: sha(readFileSync(png)), by };
     console.log(`og: ${fm.extra.og_image} from ${file}`);
+    continue;
   }
-  // An unrecorded pair whose SVG is current is adopted as it is (the first run of the record).
-  manifest.images[name] = { svg: sha(text), png: sha(readFileSync(png)) };
+  manifest.images[name] = record;
 }
 
-// An image no page names any more: an orphan.
-for (const f of readdirSync(DIR).filter((x) => /\.(svg|png)$/.test(x) && !wanted.has(x)).sort()) {
+// A file no page names any more (an orphan card, or an SVG source of the earlier layout).
+for (const f of readdirSync(DIR).filter((x) => !wanted.has(x)).sort()) {
   if (CHECK) findings.push(`static/og/${f} is named by no page`);
   else { unlinkSync(join(DIR, f)); console.log(`og: removed the orphan static/og/${f}`); }
 }
@@ -209,7 +242,9 @@ for (const f of readdirSync(DIR).filter((x) => /\.(svg|png)$/.test(x) && !wanted
 if (CHECK) {
   const extra = Object.keys(stored.images).filter((n) => !wanted.has(`${n}.png`));
   for (const n of extra) findings.push(`data/og.json records ${n}, which no page names`);
-  report(findings, `og images: ${wanted.size / 2} current, rendered from their SVGs, no orphan`);
+  const mib = (n) => `${(n / 2 ** 20).toFixed(1)} MiB`;
+  report(findings, `og images: ${wanted.size} current, rendered from their cards, no orphan; ${mib(bytes)} in all, ` +
+    `${Math.round(bytes / wanted.size / 1024)} KiB a card, none over ${Math.round(MAX_BYTES / 1024)} KiB`);
 } else {
   manifest.images = Object.fromEntries(Object.entries(manifest.images).sort(([a], [b]) => a.localeCompare(b)));
   writeFileSync(MANIFEST, `${JSON.stringify(manifest, null, 1)}\n`);
