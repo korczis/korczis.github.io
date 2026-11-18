@@ -120,6 +120,12 @@ Pages are front matter over data. Nothing on them is typed, so nothing needs upd
 ## Common tasks
 
 - **Fill the CV.** Write roles, education and languages into `data/cv.toml` (its header shows the shape), then `npm run verify`; /about/ and the JSON-LD Person render them. The contact email is the GitHub profile's public email, measured by `npm run data`.
+- **Change the positioning or availability.** Edit `headline`, `headline_cs` or `available` under
+  `[hire]` in `data/cv.toml`, then `npm run derive` and `npm run verify`. The home h1, /about/,
+  /hire/, the titles, the profile OG cards, the JSON-LD, `llms.txt` and `resume.json` follow, and
+  `available = false` removes every hire signal (rule `project.hire-surfaces`, ADR 0008). Where
+  machine readers look, and why nothing is hidden, is in
+  `.ai/repo/knowledge/curated/ai-readers-and-sourcing-tools.md`.
 - **Add a project.** Add an entry to `data/projects.toml`, then run `npm run data` and `npm run derive`.
   `check-data.mjs` refuses forks, private repositories, dead live URLs and a hand-typed
   "Majordomus" in `stack`.
@@ -142,7 +148,9 @@ Pages are front matter over data. Nothing on them is typed, so nothing needs upd
   (tiles from `data/nav.toml [[interfaces]]`) read it, with `static/openapi.json`.
 
 - **Add a gate.** Add one entry to `GATES` in `scripts/gates.mjs` and run
-  `node scripts/gates.mjs readme`; check, verify, CI and the refresh run it from there.
+  `node scripts/gates.mjs readme`; check, verify, CI and the refresh run it from there. A gate
+  whose script another branch is still writing takes `lands: '<lane>'`: it is skipped with that
+  reason until the script exists, so the branches merge in any order; drop `lands` once it runs.
 
 ## Gates
 
@@ -173,12 +181,14 @@ from it:
 | Glossary pages are current | `node scripts/build-glossary.mjs --check` | check, verify, CI | `project.pages-are-articles` |
 | Every page is an article with glossary terms; every term is used | `node scripts/check-glossary.mjs` | check, verify, CI | `project.pages-are-articles` |
 | llms.txt is current | `node scripts/build-llms.mjs --check` | check, verify, CI | `project.data-measured` |
+| resume.json is derived and valid JSON Resume | `node scripts/build-resume.mjs --check` | check, verify, CI | `project.hire-surfaces` |
 | Open Graph images are current | `node scripts/build-og.mjs --check` | check, verify, CI | `project.seo-derived` |
 | site.json is current | `node scripts/build-site-json.mjs --check` | check, verify, CI | `project.front-matter-contract` |
 | ai.json follows .ai/ and openapi.json the published files | `node scripts/build-interfaces.mjs --check` | check, verify, CI | `project.data-measured` |
 | Every visual goes through the component layer and is a maximizable simulator | `node scripts/check-viz-layer.mjs` | check, verify, CI | `project.viz-component-layer` |
 | Build (internal links are errors) | `npm run --silent build` | check, verify, CI | `project.site-zola-pages` |
 | SEO derived from front matter (titles, descriptions, OG, JSON-LD, sitemap) | `node scripts/check-seo.mjs` | check, verify, CI | `project.seo-derived` |
+| One positioning from the hire headline; every page links /hire/ | `node scripts/check-profile.mjs` | check, verify, CI | `project.hire-surfaces` |
 | No denylisted name in the built site (NDA) | `node scripts/check-nda.mjs --site public` | check, verify, CI |  |
 | Flowbite Pro fidelity | `test/cases/10_fleet_flowbite_pro.sh` | verify; CI: no | `project.ui-uses-flowbite-pro` |
 | Majordomus supervision | `majordomus doctor` | verify; CI: supervision job |  |

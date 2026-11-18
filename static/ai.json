@@ -3,26 +3,26 @@
  "description": "The Majordomus layer of korczis/korczis.github.io: every object of .ai/ with its MCP resource URI",
  "source": "majordomus run objects.list, capabilities.list",
  "majordomus": "1.0.2",
- "tree": "2e3559703e8b7a63148b4687d6f8303a72274309c00cd8abca591ae4f7b343d3",
+ "tree": "0459a0a61530135d82d2d137dfc02c74724838ecd4964fa4c90979dcf71e2e22",
  "counts": {
-  "objects": 139,
+  "objects": 142,
   "kinds": {
-   "adr": 7,
+   "adr": 8,
    "context": 21,
    "document": 9,
-   "knowledge": 8,
+   "knowledge": 9,
    "mesh-declaration": 1,
    "policy": 1,
    "profile": 4,
    "prompt": 4,
-   "rule": 74,
+   "rule": 75,
    "scope": 1,
    "skill": 1,
    "taxonomy": 8
   },
-  "capabilities": 370,
+  "capabilities": 373,
   "mcp_tools": 215,
-  "mcp_resources": 196,
+  "mcp_resources": 199,
   "http_routes": 219
  },
  "objects": [
@@ -81,6 +81,14 @@
    "title": "Availability for hire, the CV taken from LinkedIn, and a profile written for AI readers without hidden instructions",
    "description": "Availability for hire, the CV taken from LinkedIn, and a profile written for AI readers without hidden instructions",
    "path": ".ai/repo/adrs/0007-availability-for-hire-cv-from-linkedin-and-a-profile-written-.md"
+  },
+  {
+   "uri": "majordomus://adr/adr-0008",
+   "kind": "adr",
+   "identity": "adr-0008",
+   "title": "One positioning derived from the hire headline; due diligence and M&A move to the fourth role and the client-work proof",
+   "description": "One positioning derived from the hire headline; due diligence and M&A move to the fourth role and the client-work proof",
+   "path": ".ai/repo/adrs/0008-one-positioning-derived-from-the-hire-headline-due-diligence.md"
   },
   {
    "uri": "majordomus://context/ai.layer",
@@ -321,6 +329,14 @@
    "title": "korczis.github.io",
    "description": null,
    "path": "README.md"
+  },
+  {
+   "uri": "majordomus://knowledge/ai-readers-and-sourcing-tools",
+   "kind": "knowledge",
+   "identity": "ai-readers-and-sourcing-tools",
+   "title": "Answer engines and sourcing tools read visible text, JSON-LD and machine files; head comments reach almost none of them",
+   "description": "Before adding a hire, profile or SEO signal to any page or machine file, or deciding where a fact about the owner should live.",
+   "path": ".ai/repo/knowledge/curated/ai-readers-and-sourcing-tools.md"
   },
   {
    "uri": "majordomus://knowledge/alpine-scope-collisions",
@@ -979,12 +995,20 @@
    "path": ".ai/repo/rules/project/everything-interlinked.v1.md"
   },
   {
-   "uri": "majordomus://rule/project.front-matter-contract@1",
+   "uri": "majordomus://rule/project.front-matter-contract@2",
    "kind": "rule",
-   "identity": "project.front-matter-contract@1",
-   "title": "Pages are front matter plus data; nothing is maintained by hand",
-   "description": "Every page is described by front matter that matches static/schemas/front-matter.schema.json, everything else is derived from data that the scheduled refresh re-measures, and the whole site is published as data (site.json, llms.txt).",
-   "path": ".ai/repo/rules/project/front-matter-contract.v1.md"
+   "identity": "project.front-matter-contract@2",
+   "title": "Pages are front matter plus data; nothing is maintained by hand, and no SEO field types a count",
+   "description": "Every page is described by front matter that matches static/schemas/front-matter.schema.json, everything else is derived from data that the scheduled refresh re-measures, the whole site is published as data (site.json, llms.txt), and the search and social fields of the front matter carry no typed count.",
+   "path": ".ai/repo/rules/project/front-matter-contract.v2.md"
+  },
+  {
+   "uri": "majordomus://rule/project.hire-surfaces@1",
+   "kind": "rule",
+   "identity": "project.hire-surfaces@1",
+   "title": "One positioning from cv.hire.headline on every surface, every page links /hire/, nothing hidden",
+   "description": "While data/cv.toml [hire] says the owner is available, the name and the headline lead the home h1, the titles, the profile OG cards, the JSON-LD jobTitle, llms.txt and resume.json, every page links /hire/ from its navigation, and every hire fact is visible text first; available = false removes every signal with no other edit.",
+   "path": ".ai/repo/rules/project/hire-surfaces.v1.md"
   },
   {
    "uri": "majordomus://rule/project.i18n-everywhere@1",
@@ -1011,12 +1035,12 @@
    "path": ".ai/repo/rules/project/pages-are-articles.v1.md"
   },
   {
-   "uri": "majordomus://rule/project.seo-derived@1",
+   "uri": "majordomus://rule/project.seo-derived@2",
    "kind": "rule",
-   "identity": "project.seo-derived@1",
-   "title": "Search and social metadata are derived from front matter and data",
-   "description": "Titles, descriptions, canonical URLs, Open Graph and Twitter tags, OG images and JSON-LD come from each page's front matter and data/, through templates/partials/seo.html and scripts/build-og.mjs, and are gated on the built site.",
-   "path": ".ai/repo/rules/project/seo-derived.v1.md"
+   "identity": "project.seo-derived@2",
+   "title": "Search and social metadata are derived from front matter and data, and state only what the page shows",
+   "description": "Titles, descriptions, canonical URLs, Open Graph and Twitter tags, OG images and JSON-LD come from each page's front matter and data/, through templates/partials/seo.html and scripts/build-og.mjs; structured data states only what the page visibly shows, OG cards caption the page's own permalink, and all of it is gated on the built site.",
+   "path": ".ai/repo/rules/project/seo-derived.v2.md"
   },
   {
    "uri": "majordomus://rule/project.site-zola-pages@1",
