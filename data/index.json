@@ -1,6 +1,6 @@
 {
  "schema": "korczis-hub-index/v1",
- "generated_at": "2026-11-18T12:05:02Z",
+ "generated_at": "2026-11-18T20:52:02Z",
  "rule": "original = the owner wrote at least half of the listed commits; forks and mirrors are counted, not listed",
  "counts": {
   "github": 448,
@@ -18,7 +18,7 @@
  "dropped": [],
  "supervision": {
   "marker": ".ai/manifest.yaml",
-  "measured_at": "2026-11-18T12:05:02Z",
+  "measured_at": "2026-11-18T20:52:02Z",
   "kept": 0
  },
  "all_repos": [
@@ -1664,9 +1664,9 @@
    ],
    "stars": 0,
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-18T10:37:33Z",
+   "pushed_at": "2026-11-18T12:06:10Z",
    "archived": false,
-   "share": 0.95,
+   "share": 0.94,
    "hosts": {
     "github": "https://github.com/korczis/korczis.github.io"
    },
@@ -2189,7 +2189,7 @@
    ],
    "stars": 1,
    "created_at": "2026-10-01T21:05:33Z",
-   "pushed_at": "2026-11-18T11:29:16Z",
+   "pushed_at": "2026-11-18T19:43:04Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -2452,7 +2452,7 @@
    ],
    "stars": 1,
    "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-18T11:51:26Z",
+   "pushed_at": "2026-11-18T17:27:41Z",
    "archived": false,
    "share": 0.99,
    "hosts": {
@@ -4329,8 +4329,8 @@
   }
  ],
  "by_category": {
-  "ai": 5,
   "science": 12,
+  "ai": 5,
   "web": 14,
   "knowledge": 5,
   "media": 8,
@@ -4342,17 +4342,17 @@
   "learning": 21
  },
  "categories": {
-  "ai": {
-   "repos": 5,
-   "sites": 1,
-   "top_language": "Elixir",
-   "since": "2025"
-  },
   "science": {
    "repos": 12,
    "sites": 3,
    "top_language": "Rust",
    "since": "2014"
+  },
+  "ai": {
+   "repos": 5,
+   "sites": 1,
+   "top_language": "Elixir",
+   "since": "2025"
   },
   "web": {
    "repos": 14,
@@ -4610,8 +4610,8 @@
    "Dockerfile": 1
   },
   "2026": {
-   "Rust": 1,
    "JavaScript": 3,
+   "Rust": 1,
    "Elixir": 3,
    "Squirrel": 1,
    "Python": 4,
@@ -5116,18 +5116,18 @@
  "recent": {
   "size": 100,
   "from": "2018-03-08T21:01:52Z",
-  "to": "2026-11-18T11:51:26Z",
+  "to": "2026-11-18T19:43:04Z",
   "mix": {
-   "ai": {
-    "Rust": 1,
-    "Elixir": 2,
-    "Unspecified": 2
-   },
    "science": {
     "JavaScript": 1,
     "TypeScript": 1,
     "Elixir": 1,
     "Rust": 2
+   },
+   "ai": {
+    "Rust": 1,
+    "Elixir": 2,
+    "Unspecified": 2
    },
    "web": {
     "JavaScript": 2,
@@ -5185,6 +5185,34 @@
  },
  "repos": [
   {
+   "name": "oscilla",
+   "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+   "language": "JavaScript",
+   "topics": [
+    "acoustics",
+    "audio",
+    "dsp",
+    "education",
+    "javascript",
+    "signal-processing",
+    "spectrogram",
+    "synthesizer",
+    "web-audio"
+   ],
+   "stars": 1,
+   "created_at": "2026-10-01T21:05:33Z",
+   "pushed_at": "2026-11-18T19:43:04Z",
+   "archived": false,
+   "share": 1,
+   "hosts": {
+    "github": "https://github.com/korczis/oscilla"
+   },
+   "site": "https://korczis.github.io/oscilla/",
+   "supervised": true,
+   "category": "science",
+   "curated": true
+  },
+  {
    "name": "prismatic-majordomus",
    "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
    "language": "Rust",
@@ -5211,7 +5239,7 @@
    ],
    "stars": 1,
    "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-18T11:51:26Z",
+   "pushed_at": "2026-11-18T17:27:41Z",
    "archived": false,
    "share": 0.99,
    "hosts": {
@@ -5220,34 +5248,6 @@
    "site": "https://korczis.github.io/prismatic-majordomus/",
    "supervised": true,
    "category": "ai",
-   "curated": true
-  },
-  {
-   "name": "oscilla",
-   "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-   "language": "JavaScript",
-   "topics": [
-    "acoustics",
-    "audio",
-    "dsp",
-    "education",
-    "javascript",
-    "signal-processing",
-    "spectrogram",
-    "synthesizer",
-    "web-audio"
-   ],
-   "stars": 1,
-   "created_at": "2026-10-01T21:05:33Z",
-   "pushed_at": "2026-11-18T11:29:16Z",
-   "archived": false,
-   "share": 1,
-   "hosts": {
-    "github": "https://github.com/korczis/oscilla"
-   },
-   "site": "https://korczis.github.io/oscilla/",
-   "supervised": true,
-   "category": "science",
    "curated": true
   },
   {
@@ -5272,9 +5272,9 @@
    ],
    "stars": 0,
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-18T10:37:33Z",
+   "pushed_at": "2026-11-18T12:06:10Z",
    "archived": false,
-   "share": 0.95,
+   "share": 0.94,
    "hosts": {
     "github": "https://github.com/korczis/korczis.github.io"
    },

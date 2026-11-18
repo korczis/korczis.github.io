@@ -1,6 +1,6 @@
 {
  "schema": "korczis-hub-recent/v2",
- "generated_at": "2026-11-18T12:05:03Z",
+ "generated_at": "2026-11-18T20:52:03Z",
  "window_days": 1461,
  "periods": [
   {
@@ -18,7 +18,7 @@
  ],
  "archive": 162,
  "rule": "every original repository of data/index.json; a repository is recent when its default branch has a commit in the window, archive otherwise; host activity dates are ignored",
- "asked": 6,
+ "asked": 3,
  "repos": [
   {
    "name": "oscilla",
@@ -27,10 +27,125 @@
    "category": "science",
    "language": "JavaScript",
    "created_at": "2026-10-01T21:05:33Z",
-   "pushed_at": "2026-11-18T11:29:16Z",
-   "last_commit": "2026-11-18T11:08:36Z",
-   "last_message": "chore(release): záznam v3.41.4 (#609)",
+   "pushed_at": "2026-11-18T19:43:04Z",
+   "last_commit": "2026-11-18T20:50:08Z",
+   "last_message": "chore(release): v3.41.7 (#616)",
    "commits": [
+    {
+     "at": "2026-11-18T20:50:08Z",
+     "message": "chore(release): v3.41.7 (#616)",
+     "url": "https://github.com/korczis/oscilla/commit/0cb38ae3d64259220e446530016923a1f0444e8a"
+    },
+    {
+     "at": "2026-11-18T19:08:53Z",
+     "message": "chore(release): v3.41.7",
+     "url": "https://github.com/korczis/oscilla/commit/3fcc1d6fb6536648028ce956e0761c81d2258046"
+    },
+    {
+     "at": "2026-11-18T19:04:26Z",
+     "message": "fix(ui): akční odkazy do Studia a akce uložených položek česky (U118, fáze 8) (#613)",
+     "url": "https://github.com/korczis/oscilla/commit/e2993b1459169319b1ffbad16ff0f834232a0b77"
+    },
+    {
+     "at": "2026-11-18T18:11:33Z",
+     "message": "Merge remote-tracking branch 'origin/main' into fix/czech-u118-studio-links",
+     "url": "https://github.com/korczis/oscilla/commit/f8646a0582aef2df081614e0894c2d72534fd800"
+    },
+    {
+     "at": "2026-11-18T18:10:14Z",
+     "message": "chore(release): záznam v3.41.6; U116 zůstává otevřené s mezerou (#615)",
+     "url": "https://github.com/korczis/oscilla/commit/6c4abd578b7b9670e055b77d1a053c9080c7d56f"
+    },
+    {
+     "at": "2026-11-18T18:06:02Z",
+     "message": "chore(release): record v3.41.6; U116 left open with its gap",
+     "url": "https://github.com/korczis/oscilla/commit/27941dcd4a7ccece77ded6276043b671eedf4db9"
+    },
+    {
+     "at": "2026-11-18T17:50:45Z",
+     "message": "chore(release): v3.41.6 (#614)",
+     "url": "https://github.com/korczis/oscilla/commit/0ecb7e330c5065a2eef79c879ce3be1a40a96b7f"
+    },
+    {
+     "at": "2026-11-18T16:14:53Z",
+     "message": "chore(release): v3.41.6",
+     "url": "https://github.com/korczis/oscilla/commit/ca3945dff3888c8e082a81b3c0071c70befafc68"
+    },
+    {
+     "at": "2026-11-18T16:12:53Z",
+     "message": "Merge remote-tracking branch 'origin/main' into fix/czech-u118-studio-links",
+     "url": "https://github.com/korczis/oscilla/commit/97557d3889b1b97a9b716bdf9e6c65e71ad1e742"
+    },
+    {
+     "at": "2026-11-18T16:11:37Z",
+     "message": "fix(ui): the Studio template and workspace action links, and the Studio saved-row actions, in Czech (U118)",
+     "url": "https://github.com/korczis/oscilla/commit/113c4dc027aa11bfa871df696a1695ae76bd5cb4"
+    },
+    {
+     "at": "2026-11-18T16:10:45Z",
+     "message": "fix(ui): Výuka a Předvolby česky nad anglickými daty (U116, pass 8, zobrazovací vrstva) (#600)",
+     "url": "https://github.com/korczis/oscilla/commit/62873b29561eae94ecbacfd1e9286d28737b062c"
+    },
+    {
+     "at": "2026-11-18T14:55:41Z",
+     "message": "Merge main into fix/czech-pass-8 (#600)",
+     "url": "https://github.com/korczis/oscilla/commit/0307278083df2cf6c6612320e716bb5b7e3d4a30"
+    },
+    {
+     "at": "2026-11-18T14:54:24Z",
+     "message": "plan(E078): občasné selhání kontroly přechodů mezi pracovními plochami v link-integrity (#610)",
+     "url": "https://github.com/korczis/oscilla/commit/6558f985c5c533febaaaf2bd5e517aee0178021e"
+    },
+    {
+     "at": "2026-11-18T14:47:52Z",
+     "message": "Merge main into fix/czech-pass-8 (#600)",
+     "url": "https://github.com/korczis/oscilla/commit/f3d74ac132621bee72c126364852bc3da3815e4d"
+    },
+    {
+     "at": "2026-11-18T14:45:25Z",
+     "message": "Merge remote-tracking branch 'origin/main' into plan/e078-link-integrity-cross-workspace",
+     "url": "https://github.com/korczis/oscilla/commit/cca03de3025267db33449e65eeeb8e45de84001c"
+    },
+    {
+     "at": "2026-11-18T14:41:58Z",
+     "message": "chore(release): záznam v3.41.5; U115 hotovo (#612)",
+     "url": "https://github.com/korczis/oscilla/commit/dcdba1bcd429bb58b82962f31c091bb198ce5889"
+    },
+    {
+     "at": "2026-11-18T14:16:10Z",
+     "message": "chore(release): record v3.41.5; U115 done",
+     "url": "https://github.com/korczis/oscilla/commit/3cf4d8c8024a19b682e1660e7a0a7b279c36404f"
+    },
+    {
+     "at": "2026-11-18T13:54:37Z",
+     "message": "chore(release): v3.41.5 (#611)",
+     "url": "https://github.com/korczis/oscilla/commit/7222069c62245456a2cf35c7eba9b4b4f1212205"
+    },
+    {
+     "at": "2026-11-18T12:57:56Z",
+     "message": "chore(release): v3.41.5",
+     "url": "https://github.com/korczis/oscilla/commit/f3ef6d48542fd7245d5eed778e5da444308e876c"
+    },
+    {
+     "at": "2026-11-18T12:52:09Z",
+     "message": "fix(ui): krok posouzení, prázdný graf a konec IR česky (U115, pass 7c) (#607)",
+     "url": "https://github.com/korczis/oscilla/commit/5bccf0f8f2a8c9c0df65573fb90a24b708828d35"
+    },
+    {
+     "at": "2026-11-18T12:09:59Z",
+     "message": "plan(E078): the two reds are the press side and the landing side of one walk (oscilla-c3)",
+     "url": "https://github.com/korczis/oscilla/commit/7ba55d83fcdd316dedddf093b5e209d09c5efca7"
+    },
+    {
+     "at": "2026-11-18T12:07:32Z",
+     "message": "plan(E078): link-integrity's cross-workspace controls check fails intermittently on CI",
+     "url": "https://github.com/korczis/oscilla/commit/5f8f55707f8872e11d91f91b8c28898ce7b784a2"
+    },
+    {
+     "at": "2026-11-18T11:10:43Z",
+     "message": "Merge remote-tracking branch 'origin/main' into fix/czech-pass-7c",
+     "url": "https://github.com/korczis/oscilla/commit/48c1f6101fbfce3a427da5c0e005b27acf3d6296"
+    },
     {
      "at": "2026-11-18T11:08:36Z",
      "message": "chore(release): záznam v3.41.4 (#609)",
@@ -47,6 +162,11 @@
      "url": "https://github.com/korczis/oscilla/commit/15ab37807b9f1e79c2889b44e72185a72e4ae764"
     },
     {
+     "at": "2026-11-18T09:52:19Z",
+     "message": "chore(review): the #607 verdict (Czech pass 7c, U115), merge under the legs condition",
+     "url": "https://github.com/korczis/oscilla/commit/1a31956426fdb9c165528ac3d73bec9588a18843"
+    },
+    {
      "at": "2026-11-18T09:43:51Z",
      "message": "chore(release): v3.41.4",
      "url": "https://github.com/korczis/oscilla/commit/dc16b9bb6a7fd21ddb1b69466717f2256bf7d179"
@@ -57,129 +177,9 @@
      "url": "https://github.com/korczis/oscilla/commit/0688a0edce2713ebe7c49fda0ef9734c3b130eb2"
     },
     {
-     "at": "2026-11-18T07:37:43Z",
-     "message": "fix(release): keep the roadmap bound comment free of a future version",
-     "url": "https://github.com/korczis/oscilla/commit/1f37a19d443fd5c10ddf10aa28022ceaa47e29a6"
-    },
-    {
-     "at": "2026-11-18T07:30:05Z",
-     "message": "fix(release): roadmap spawn bound fits plan roadmap under load",
-     "url": "https://github.com/korczis/oscilla/commit/a3bcbfb4c637df2a8a51f56f35c1ba197e30ba43"
-    },
-    {
-     "at": "2026-11-18T06:58:11Z",
-     "message": "fix(ui): kvalita, výsledky a hlášení v Měření česky nad anglickými daty (U115, pass 7b) (#597)",
-     "url": "https://github.com/korczis/oscilla/commit/1f1a6183b8d760966dc0ce512d2d982e07f4f091"
-    },
-    {
-     "at": "2026-11-18T05:12:28Z",
-     "message": "Merge branch 'main' into fix/czech-pass-7b",
-     "url": "https://github.com/korczis/oscilla/commit/f44d6602e62414609ca2ec284f12019d6f07609b"
-    },
-    {
-     "at": "2026-11-18T04:34:43Z",
-     "message": "chore(plan): triáž plánu schválená vlastníkem (Q112) (#603)",
-     "url": "https://github.com/korczis/oscilla/commit/f525fff055b02e648ad4acedf5f45366f2fff380"
-    },
-    {
-     "at": "2026-11-18T04:01:14Z",
-     "message": "Merge remote-tracking branch 'origin/main' into fix/czech-pass-7b",
-     "url": "https://github.com/korczis/oscilla/commit/a005efc0e854c01dcf375278756ffbd7768e13c0"
-    },
-    {
-     "at": "2026-11-18T03:43:55Z",
-     "message": "Merge branch 'main' into chore/plan-triage-approved",
-     "url": "https://github.com/korczis/oscilla/commit/3ba222a9e334c9801030210372804bab5fae2a54"
-    },
-    {
-     "at": "2026-11-18T03:42:03Z",
-     "message": "fix(ui): drobečková navigace z registru bez opakovaného názvu, stejná horní mezera po vstupu na stránku (#598)",
-     "url": "https://github.com/korczis/oscilla/commit/d4bd1ae7946d3c58bf7e3c4fe777aec2f624b893"
-    },
-    {
-     "at": "2026-11-18T03:38:10Z",
-     "message": "chore(plan): apply the owner-approved plan triage (Q112)",
-     "url": "https://github.com/korczis/oscilla/commit/7e27b26552f1d5fdeaea8e953c6431e67338e161"
-    },
-    {
-     "at": "2026-11-18T03:11:03Z",
-     "message": "Merge branch 'main' into fix/czech-pass-7b",
-     "url": "https://github.com/korczis/oscilla/commit/b1bcee11250f6aac74861797ee4e288c56753dc2"
-    },
-    {
-     "at": "2026-11-18T02:10:14Z",
-     "message": "Merge branch 'main' into fix/one-page-frame",
-     "url": "https://github.com/korczis/oscilla/commit/d10058bc74d885e92c232e846a8f17e6fcafd807"
-    },
-    {
-     "at": "2026-11-18T01:26:10Z",
-     "message": "chore(plan): audit-and-stamp vlak A (Q111 + 4 orazítkované, 20 otevřených s mezerou) (#599)",
-     "url": "https://github.com/korczis/oscilla/commit/8e087873968df0438165b474684d6dee7ac7e5ff"
-    },
-    {
-     "at": "2026-11-18T00:27:12Z",
-     "message": "chore(plan): audit-and-stamp train A (Q111 + 4 stamped, 20 left open with gaps)",
-     "url": "https://github.com/korczis/oscilla/commit/9703d0d79a60b4bdd31b94f62de8d4ba92764960"
-    },
-    {
-     "at": "2026-11-17T23:59:04Z",
-     "message": "chore(review): the #597 verdict (Czech pass 7b, U115), merge under the legs condition",
-     "url": "https://github.com/korczis/oscilla/commit/9518fe5ec560adaa316f2b543a6ee78f00bfe3a8"
-    },
-    {
-     "at": "2026-11-17T23:45:16Z",
-     "message": "test(visual): re-accept the linux STUDIO phone reference for the 7 px top gap",
-     "url": "https://github.com/korczis/oscilla/commit/005ab75eaec0d3aa3da1b6f57fafd1256b9df734"
-    },
-    {
-     "at": "2026-11-17T23:31:09Z",
-     "message": "fix(ui): one bound scroll-pt per workspace on <main>, the Synth keeps its own",
-     "url": "https://github.com/korczis/oscilla/commit/21ae78f116af3f94fcb24650bef644a5c7344898"
-    },
-    {
-     "at": "2026-11-17T22:49:51Z",
-     "message": "test(visual): re-accept the MEASURE references for the 7 px top gap",
-     "url": "https://github.com/korczis/oscilla/commit/b02c24b5cd00449356dd1679fed3926280f7cac1"
-    },
-    {
-     "at": "2026-11-17T21:44:37Z",
-     "message": "chore(plan): Q110, the owner's decisions on the page frame, the backlog triage and stale worktrees",
-     "url": "https://github.com/korczis/oscilla/commit/958ff93d488a7939535f05929ba00a83a10b4295"
-    },
-    {
-     "at": "2026-11-17T21:39:51Z",
-     "message": "fix(ui): breadcrumb from the registry without a repeated name, page top gap kept on entry",
-     "url": "https://github.com/korczis/oscilla/commit/ae96559e7f1f50e557bc749429037863474e84de"
-    },
-    {
-     "at": "2026-11-17T21:08:39Z",
-     "message": "Merge branch 'main' into fix/czech-pass-7b",
-     "url": "https://github.com/korczis/oscilla/commit/48cd37e15700138d7987a97f3de8492f28698a83"
-    },
-    {
-     "at": "2026-11-17T20:18:13Z",
-     "message": "chore(release): záznam v3.41.3 (#596)",
-     "url": "https://github.com/korczis/oscilla/commit/4682eea40739a7b37a7be04d3d19cd7be0dd5226"
-    },
-    {
-     "at": "2026-11-17T20:05:38Z",
-     "message": "test(visual): MEASURE references re-accepted for the Czech quality panel and result views (U115, pass 7b)",
-     "url": "https://github.com/korczis/oscilla/commit/adfd584ea546321650ef1002ca046be09a6f1496"
-    },
-    {
-     "at": "2026-11-17T19:58:33Z",
-     "message": "Merge remote-tracking branch 'origin/main' into fix/czech-pass-7b",
-     "url": "https://github.com/korczis/oscilla/commit/be5f2b503cf5d3abf3b645959ae933e6006350c4"
-    },
-    {
-     "at": "2026-11-17T19:53:24Z",
-     "message": "chore(release): record v3.41.3",
-     "url": "https://github.com/korczis/oscilla/commit/21359a7ba3c813c180f9eff774ed5c85cddc792c"
-    },
-    {
-     "at": "2026-11-17T19:39:08Z",
-     "message": "chore(release): v3.41.3 (#595)",
-     "url": "https://github.com/korczis/oscilla/commit/fc949955a941227e2158f9bbce771a18833c1782"
+     "at": "2026-11-18T07:59:28Z",
+     "message": "fix(ui): the IR panel names the noise tail one way, and the response notes say 'surová křivka' (U115, pass 7c, C3-607-1)",
+     "url": "https://github.com/korczis/oscilla/commit/73a761cf2139caaf998bc1c5c815619cd49f6f1a"
     }
    ],
    "languages": [
@@ -227,16 +227,241 @@
    "supervised": true
   },
   {
+   "name": "prismatic-majordomus",
+   "period": 12,
+   "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+   "category": "ai",
+   "language": "Rust",
+   "created_at": "2026-09-03T20:24:57Z",
+   "pushed_at": "2026-11-18T17:27:41Z",
+   "last_commit": "2026-11-18T14:10:08Z",
+   "last_message": "Merge pull request #3076 from korczis/integration/train-30c-20261117",
+   "commits": [
+    {
+     "at": "2026-11-18T14:10:08Z",
+     "message": "Merge pull request #3076 from korczis/integration/train-30c-20261117",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/d0b85677b74317be030a21d0af5a46634693b4e3"
+    },
+    {
+     "at": "2026-11-18T09:48:14Z",
+     "message": "Merge origin/master 68325d3cfae into train 30c",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/48c6f2afb0044356be04337aa1fa4306ea243be3"
+    },
+    {
+     "at": "2026-11-18T08:12:44Z",
+     "message": "Merge pull request #3091 from korczis/release/record-v1.1.0",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/68325d3cfae0c05a5cfa3b6cd04de38e4aec6621"
+    },
+    {
+     "at": "2026-11-18T07:01:25Z",
+     "message": "chore(release): record v1.1.0 and the metadata it publishes",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/f22baf14bf30298f47966f90bd69284ce81bd743"
+    },
+    {
+     "at": "2026-11-18T01:59:21Z",
+     "message": "Merge origin/master 5bc2ddb10cc into train 30c",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/dcd3a31f1e26d8f77b72adb363406e71b08e1d3e"
+    },
+    {
+     "at": "2026-11-18T00:04:07Z",
+     "message": "Merge pull request #3084 from korczis/fix/delivery-observed-at-the-merge-of-train-f",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/5bc2ddb10ccc5f2e5528e03c08b0af8ed4e26a9e"
+    },
+    {
+     "at": "2026-11-17T22:39:05Z",
+     "message": "chore(derive): train 30c's derived data observes its committed head 7500bb69fd1",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/5a91cf1bf2735118d8d8ee567f4ac2185c95cf25"
+    },
+    {
+     "at": "2026-11-17T21:11:49Z",
+     "message": "docs(plan): derive delivery observed at master's merge of #3077",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/b0ffb7d8b766db67771995214e8971d7ac2ff09f"
+    },
+    {
+     "at": "2026-11-17T20:57:29Z",
+     "message": "Merge origin/master ae13be1bd13 into train 30c",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/7500bb69fd10c715262c2258f26b0789d136028f"
+    },
+    {
+     "at": "2026-11-17T19:41:34Z",
+     "message": "Merge pull request #3077 from korczis/integration/train-20261117f",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/ae13be1bd138be3139b4fd9a1a11de8c6b2f7c88"
+    },
+    {
+     "at": "2026-11-17T13:31:00Z",
+     "message": "Merge #3062 (feature/I4324-a-worktree-whose-work-is-in-trunk-is-finished) into the combined top on 7222b343dc",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/41904d87959ae992ef78a2abdbf881be687002af"
+    },
+    {
+     "at": "2026-11-17T13:17:42Z",
+     "message": "Merge #3070 (plan/i4628-a-finish-over-uncommitted-work-says-so) into the combined top on 7222b343dc",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/54edbb51ac6e92188a86ba2aba3952ca996c7254"
+    },
+    {
+     "at": "2026-11-17T13:08:23Z",
+     "message": "Merge #3068 (fix/a-merge-does-not-borrow-a-foreign-executable) into the combined top on 7222b343dc",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/188d1134bb6c1ce4b9a09e7a03448650459f6f36"
+    },
+    {
+     "at": "2026-11-17T12:41:21Z",
+     "message": "fix(release): the release job records its executable's commit at the build (I4627)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/9cbabdd175ded55842d4b671f3d18387f58d13e5"
+    },
+    {
+     "at": "2026-11-17T10:01:24Z",
+     "message": "chore(release): bump to 1.0.3",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/1c1ffe7fe7552ad7c2b90c0a491830a32bebd1c2"
+    },
+    {
+     "at": "2026-11-17T09:36:59Z",
+     "message": "chore(derive): train 30c's derived data observes its committed head ac24ab96a61",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/5b47afe8e6fd695f27d1fe9d49240e5ac8e0e5c1"
+    },
+    {
+     "at": "2026-11-17T09:30:39Z",
+     "message": "docs(performance): the profile-read timing fence is marked unrun (#2968, I4500)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/ac24ab96a616288ac91506c1547bf5d2a11ff818"
+    },
+    {
+     "at": "2026-11-17T09:18:16Z",
+     "message": "Merge #2970 c8009252009 into train 30c: feat(site): every surface names its versions by role; site-check refuses a wrong one (I3449)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/53e592a80f35f9938b4698b16720edaa05e938a7"
+    },
+    {
+     "at": "2026-11-17T08:58:01Z",
+     "message": "Merge #2968 049205f4d06 into train 30c: docs(profiles): a profile is traced from its file to finish; ADR 0232 owns the resolver (I4500)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/56cbd1914659d4f048d8c0708d31dde7b23f7018"
+    },
+    {
+     "at": "2026-11-17T08:49:07Z",
+     "message": "docs(plan): I4628's scope names its one case; record I4630",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/05dd86c240345523706b31705ed5678c1cb93f29"
+    },
+    {
+     "at": "2026-11-17T08:43:29Z",
+     "message": "Merge #3038 f932b8ad529 into train 30c: docs(plan): a recomputed line, a disk-guarded process, a wait on the person (I4597, I4599, I4622)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/38c350e3f26911ba4a0fd0af78f3ac6666555cb8"
+    },
+    {
+     "at": "2026-11-17T08:40:44Z",
+     "message": "chore(release): declare 1.1.0, the minor release #3062's output requires",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/0807fc1b4222d6bc04d8ba4a1fbdef4fae58d940"
+    },
+    {
+     "at": "2026-11-17T08:28:50Z",
+     "message": "Merge #3043 098636d2490 into train 30c: docs(knowledge): file I4604, declared .ai extension roots in gitignored subtrees",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/aeffd7cd1d897fd31fa7bef85ce3e9f2f43bcb8b"
+    },
+    {
+     "at": "2026-11-17T08:12:21Z",
+     "message": "Merge #3037 66612588e60 into train 30c: docs(plan): the owner decides what a cancelled dependency means (I4596)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/28d9aa2a743776328763f9459d3100d146262f6f"
+    },
+    {
+     "at": "2026-11-17T06:32:46Z",
+     "message": "Merge pull request #3069 from korczis/integration/top-20261117b",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/7222b343dcb40ac2a2843111f8bdf7a2aa099774"
+    },
+    {
+     "at": "2026-11-17T03:48:05Z",
+     "message": "docs(plan): a completed finish over uncommitted work says so (I4628)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/e5a19d3b9c964ceece031a92961ed0c1608d45a9"
+    },
+    {
+     "at": "2026-11-17T03:41:20Z",
+     "message": "docs(plan): derive delivery observed at the combined top on e54bbdb12a",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/a5e1f4375620c3ba6755d6ad743a42eb4052bcdb"
+    },
+    {
+     "at": "2026-11-17T03:31:59Z",
+     "message": "test(worktree): cover every changed region of the landed readings and the reclaim",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/0ff5bf34faf8603a0ea22a120d4bd6d4d4634a51"
+    },
+    {
+     "at": "2026-11-17T03:25:35Z",
+     "message": "Merge #3064 (feat/a-build-is-bounded-by-the-machine) into the combined top on e54bbdb12a",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/32c0304f3417a86367e0a271081b05e90f1e9532"
+    },
+    {
+     "at": "2026-11-17T03:17:07Z",
+     "message": "test(derive): the I4627 case pins its shell sort (I4627)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/2f35f30d717bf889ff5b1b3e8605191edb15e50d"
+    }
+   ],
+   "languages": [
+    {
+     "name": "Rust",
+     "share": 60.7
+    },
+    {
+     "name": "Shell",
+     "share": 29.6
+    },
+    {
+     "name": "JavaScript",
+     "share": 4.1
+    },
+    {
+     "name": "HTML",
+     "share": 3.8
+    },
+    {
+     "name": "CSS",
+     "share": 0.6
+    },
+    {
+     "name": "Python",
+     "share": 0.4
+    }
+   ],
+   "readme": "Your AI agents say the work is done. Majordomus makes them prove it.",
+   "readme_shared": false,
+   "description_shared": false,
+   "topics": [
+    "agentic-ai",
+    "ai",
+    "ai-agents",
+    "ai-governance",
+    "claude-code",
+    "cli",
+    "codex",
+    "continuous-integration",
+    "developer-tools",
+    "devops",
+    "gemini",
+    "llm",
+    "llmops",
+    "mcp",
+    "mermaid",
+    "model-context-protocol",
+    "multi-agent",
+    "policy-as-code",
+    "rust"
+   ],
+   "hosts": {
+    "github": "https://github.com/korczis/prismatic-majordomus"
+   },
+   "site": "https://korczis.github.io/prismatic-majordomus/",
+   "curated": true,
+   "stars": 1,
+   "supervised": true
+  },
+  {
    "name": "korczis.github.io",
    "period": 12,
    "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
    "category": "web",
    "language": "JavaScript",
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-18T10:37:33Z",
-   "last_commit": "2026-11-18T10:36:42Z",
-   "last_message": "chore(merge): integrate #39, the case services card names the skill overlap",
+   "pushed_at": "2026-11-18T12:06:10Z",
+   "last_commit": "2026-11-18T12:05:28Z",
+   "last_message": "chore(data): refresh the snapshot and the index",
    "commits": [
+    {
+     "at": "2026-11-18T12:05:28Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/d2b0daf6c6d65e380a819f404b4627cb597af9af"
+    },
     {
      "at": "2026-11-18T10:36:42Z",
      "message": "chore(merge): integrate #39, the case services card names the skill overlap",
@@ -381,11 +606,6 @@
      "at": "2026-11-18T05:15:11Z",
      "message": "chore(merge): bring master into landing-evidence",
      "url": "https://github.com/korczis/korczis.github.io/commit/d0f6422ee79a6a60ed5d07315a4dc281add28413"
-    },
-    {
-     "at": "2026-11-18T05:07:36Z",
-     "message": "chore(merge): integrate #31, repository dossiers checked claim by claim",
-     "url": "https://github.com/korczis/korczis.github.io/commit/5792ab3e7f37a70c304d712430d87dfc6e4a3298"
     }
    ],
    "languages": [
@@ -431,226 +651,6 @@
    "site": null,
    "curated": false,
    "stars": 0,
-   "supervised": true
-  },
-  {
-   "name": "prismatic-majordomus",
-   "period": 12,
-   "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
-   "category": "ai",
-   "language": "Rust",
-   "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-18T11:51:26Z",
-   "last_commit": "2026-11-18T08:12:44Z",
-   "last_message": "Merge pull request #3091 from korczis/release/record-v1.1.0",
-   "commits": [
-    {
-     "at": "2026-11-18T08:12:44Z",
-     "message": "Merge pull request #3091 from korczis/release/record-v1.1.0",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/68325d3cfae0c05a5cfa3b6cd04de38e4aec6621"
-    },
-    {
-     "at": "2026-11-18T07:01:25Z",
-     "message": "chore(release): record v1.1.0 and the metadata it publishes",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/f22baf14bf30298f47966f90bd69284ce81bd743"
-    },
-    {
-     "at": "2026-11-18T00:04:07Z",
-     "message": "Merge pull request #3084 from korczis/fix/delivery-observed-at-the-merge-of-train-f",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/5bc2ddb10ccc5f2e5528e03c08b0af8ed4e26a9e"
-    },
-    {
-     "at": "2026-11-17T21:11:49Z",
-     "message": "docs(plan): derive delivery observed at master's merge of #3077",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/b0ffb7d8b766db67771995214e8971d7ac2ff09f"
-    },
-    {
-     "at": "2026-11-17T19:41:34Z",
-     "message": "Merge pull request #3077 from korczis/integration/train-20261117f",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/ae13be1bd138be3139b4fd9a1a11de8c6b2f7c88"
-    },
-    {
-     "at": "2026-11-17T13:31:00Z",
-     "message": "Merge #3062 (feature/I4324-a-worktree-whose-work-is-in-trunk-is-finished) into the combined top on 7222b343dc",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/41904d87959ae992ef78a2abdbf881be687002af"
-    },
-    {
-     "at": "2026-11-17T13:17:42Z",
-     "message": "Merge #3070 (plan/i4628-a-finish-over-uncommitted-work-says-so) into the combined top on 7222b343dc",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/54edbb51ac6e92188a86ba2aba3952ca996c7254"
-    },
-    {
-     "at": "2026-11-17T13:08:23Z",
-     "message": "Merge #3068 (fix/a-merge-does-not-borrow-a-foreign-executable) into the combined top on 7222b343dc",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/188d1134bb6c1ce4b9a09e7a03448650459f6f36"
-    },
-    {
-     "at": "2026-11-17T12:41:21Z",
-     "message": "fix(release): the release job records its executable's commit at the build (I4627)",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/9cbabdd175ded55842d4b671f3d18387f58d13e5"
-    },
-    {
-     "at": "2026-11-17T08:49:07Z",
-     "message": "docs(plan): I4628's scope names its one case; record I4630",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/05dd86c240345523706b31705ed5678c1cb93f29"
-    },
-    {
-     "at": "2026-11-17T08:40:44Z",
-     "message": "chore(release): declare 1.1.0, the minor release #3062's output requires",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/0807fc1b4222d6bc04d8ba4a1fbdef4fae58d940"
-    },
-    {
-     "at": "2026-11-17T06:32:46Z",
-     "message": "Merge pull request #3069 from korczis/integration/top-20261117b",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/7222b343dcb40ac2a2843111f8bdf7a2aa099774"
-    },
-    {
-     "at": "2026-11-17T03:48:05Z",
-     "message": "docs(plan): a completed finish over uncommitted work says so (I4628)",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/e5a19d3b9c964ceece031a92961ed0c1608d45a9"
-    },
-    {
-     "at": "2026-11-17T03:41:20Z",
-     "message": "docs(plan): derive delivery observed at the combined top on e54bbdb12a",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/a5e1f4375620c3ba6755d6ad743a42eb4052bcdb"
-    },
-    {
-     "at": "2026-11-17T03:31:59Z",
-     "message": "test(worktree): cover every changed region of the landed readings and the reclaim",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/0ff5bf34faf8603a0ea22a120d4bd6d4d4634a51"
-    },
-    {
-     "at": "2026-11-17T03:25:35Z",
-     "message": "Merge #3064 (feat/a-build-is-bounded-by-the-machine) into the combined top on e54bbdb12a",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/32c0304f3417a86367e0a271081b05e90f1e9532"
-    },
-    {
-     "at": "2026-11-17T03:17:07Z",
-     "message": "test(derive): the I4627 case pins its shell sort (I4627)",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/2f35f30d717bf889ff5b1b3e8605191edb15e50d"
-    },
-    {
-     "at": "2026-11-17T03:05:01Z",
-     "message": "Merge #3047 (fix/resolver-borrows-a-sibling-executable) into the combined top on e54bbdb12a",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/edd387c3c4236aa110cc43ab319224dd774a3cf0"
-    },
-    {
-     "at": "2026-11-17T02:50:30Z",
-     "message": "Merge #3044 (fix/evidence-record-names-suite-coverage) into the combined top on e54bbdb12a",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/de98547925151e671774238fceb1bd61903a4f1f"
-    },
-    {
-     "at": "2026-11-17T02:37:22Z",
-     "message": "fix(derive): a merged crate does not borrow an executable of another generation (I4627)",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/728afa4302ce4c641f719b390af5361a88857b40"
-    },
-    {
-     "at": "2026-11-17T02:26:16Z",
-     "message": "Merge #3060 (fix/commit-debt-counts-a-renumbered-reference) into the combined top on e54bbdb12a",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/a280c3279ff25008931db9c4e46c742d6362d0da"
-    },
-    {
-     "at": "2026-11-16T23:20:53Z",
-     "message": "test(evidence): a refused write of the suite line ends the recording there",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/33ae4a9299b8b4ceacd6039a90db78957259e5a1"
-    },
-    {
-     "at": "2026-11-16T23:11:18Z",
-     "message": "feat(build): a local build refuses beside five cargo builds (I3825)",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/18c3336cc3e93e4b5ac042e35438fbfa96a8d1df"
-    },
-    {
-     "at": "2026-11-16T23:05:50Z",
-     "message": "Merge pull request #3061 from korczis/plan/i4605-commit-control-character-20261116",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/e54bbdb12a99cd3ff4572f2a1574c1e5566ae8ef"
-    },
-    {
-     "at": "2026-11-16T23:01:18Z",
-     "message": "docs(plan): derive delivery observed at the merge of a134a0f",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/15f1501277d54f3309d851a50827f6be837ffdc0"
-    },
-    {
-     "at": "2026-11-16T22:51:35Z",
-     "message": "docs(plan): derive delivery observed at the merge of a134a0f",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/1acaf648d0ec908da9443f61f292f07b4f7b44da"
-    },
-    {
-     "at": "2026-11-16T22:40:47Z",
-     "message": "Merge origin/master a134a0f into #3062",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/ef77042a47c3c9c4777c1e956b8c222063cd3f91"
-    },
-    {
-     "at": "2026-11-16T22:21:48Z",
-     "message": "Merge origin/master a134a0f into #3047",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/72f490f5ba5ac00d057ce024d956f0b78b396126"
-    },
-    {
-     "at": "2026-11-16T22:07:34Z",
-     "message": "feat(worktree): cleanup offers a worktree whose work is already in the trunk",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/9998ad3f52d0367c654c9eb7affea63047eeeb87"
-    },
-    {
-     "at": "2026-11-16T21:56:56Z",
-     "message": "docs(plan): derive delivery observed at the merge of a134a0f",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/f7b96e7c36981f4351e7546750874975ef73d9ee"
-    }
-   ],
-   "languages": [
-    {
-     "name": "Rust",
-     "share": 60.7
-    },
-    {
-     "name": "Shell",
-     "share": 29.6
-    },
-    {
-     "name": "JavaScript",
-     "share": 4.1
-    },
-    {
-     "name": "HTML",
-     "share": 3.8
-    },
-    {
-     "name": "CSS",
-     "share": 0.6
-    },
-    {
-     "name": "Python",
-     "share": 0.4
-    }
-   ],
-   "readme": "Your AI agents say the work is done. Majordomus makes them prove it.",
-   "readme_shared": false,
-   "description_shared": false,
-   "topics": [
-    "agentic-ai",
-    "ai",
-    "ai-agents",
-    "ai-governance",
-    "claude-code",
-    "cli",
-    "codex",
-    "continuous-integration",
-    "developer-tools",
-    "devops",
-    "gemini",
-    "llm",
-    "llmops",
-    "mcp",
-    "mermaid",
-    "model-context-protocol",
-    "multi-agent",
-    "policy-as-code",
-    "rust"
-   ],
-   "hosts": {
-    "github": "https://github.com/korczis/prismatic-majordomus"
-   },
-   "site": "https://korczis.github.io/prismatic-majordomus/",
-   "curated": true,
-   "stars": 1,
    "supervised": true
   },
   {

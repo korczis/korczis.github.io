@@ -1000,6 +1000,19 @@
           "skill": "media-forensics"
         },
         {
+          "name": "oscilla",
+          "title": "Oscilla",
+          "how": "words",
+          "score": 2,
+          "slug": "oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "category": "science",
+          "site": "https://korczis.github.io/oscilla/",
+          "pushed": "2026-11-18",
+          "skill": "chain-of-custody"
+        },
+        {
           "name": "osint-case-ratcliffe-moscow-2026",
           "title": "osint-case-ratcliffe-moscow-2026",
           "how": "words",
@@ -1069,16 +1082,21 @@
         {
           "id": "html",
           "name": "HTML",
-          "n": 5
+          "n": 7
         },
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 5
+          "n": 7
         },
         {
           "id": "claude-api",
           "name": "Claude API",
+          "n": 4
+        },
+        {
+          "id": "css",
+          "name": "CSS",
           "n": 4
         },
         {
@@ -1094,11 +1112,6 @@
         {
           "id": "alpine-js",
           "name": "Alpine.js",
-          "n": 2
-        },
-        {
-          "id": "css",
-          "name": "CSS",
           "n": 2
         },
         {
@@ -2261,7 +2274,7 @@
           "category": "science",
           "site": "https://korczis.github.io/oscilla/",
           "pushed": "2026-11-18",
-          "skill": "ai-transformation"
+          "skill": "audit-trail"
         },
         {
           "name": "data-atlas",
@@ -2341,7 +2354,7 @@
         {
           "id": "python",
           "name": "Python",
-          "n": 11
+          "n": 12
         },
         {
           "id": "alpine-js",
@@ -2474,6 +2487,19 @@
           "skill": "llm-agents"
         },
         {
+          "name": "prismatic-majordomus",
+          "title": "Majordomus",
+          "how": "words",
+          "score": 4,
+          "slug": "prismatic-majordomus",
+          "url": "https://github.com/korczis/prismatic-majordomus",
+          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+          "category": "ai",
+          "site": "https://korczis.github.io/prismatic-majordomus/",
+          "pushed": "2026-11-18",
+          "skill": "policy-as-code"
+        },
+        {
           "name": "sig",
           "title": "sig",
           "how": "words",
@@ -2484,19 +2510,6 @@
           "category": "ai",
           "site": null,
           "pushed": "2026-02-04",
-          "skill": "llm-agents"
-        },
-        {
-          "name": "prismatic-majordomus",
-          "title": "Majordomus",
-          "how": "words",
-          "score": 3.5,
-          "slug": "prismatic-majordomus",
-          "url": "https://github.com/korczis/prismatic-majordomus",
-          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
-          "category": "ai",
-          "site": "https://korczis.github.io/prismatic-majordomus/",
-          "pushed": "2026-11-18",
           "skill": "llm-agents"
         },
         {
@@ -2588,7 +2601,7 @@
           "category": "science",
           "site": "https://korczis.github.io/oscilla/",
           "pushed": "2026-11-18",
-          "skill": "ai-transformation"
+          "skill": "audit-trail"
         },
         {
           "name": "crisis-map",
@@ -2670,7 +2683,7 @@
         {
           "id": "python",
           "name": "Python",
-          "n": 8
+          "n": 9
         },
         {
           "id": "alpine-js",
@@ -4811,6 +4824,18 @@
           "category": "ai",
           "site": null,
           "pushed": "2026-08-21"
+        },
+        {
+          "name": "oscilla",
+          "title": "Oscilla",
+          "how": "words",
+          "score": 2,
+          "slug": "oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "category": "science",
+          "site": "https://korczis.github.io/oscilla/",
+          "pushed": "2026-11-18"
         }
       ],
       "engagements": [
@@ -4849,12 +4874,17 @@
         {
           "id": "html",
           "name": "HTML",
-          "n": 4
+          "n": 5
         },
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 4
+          "n": 5
+        },
+        {
+          "id": "css",
+          "name": "CSS",
+          "n": 3
         },
         {
           "id": "python",
@@ -4869,11 +4899,6 @@
         {
           "id": "claude-api",
           "name": "Claude API",
-          "n": 2
-        },
-        {
-          "id": "css",
-          "name": "CSS",
           "n": 2
         },
         {
@@ -4947,18 +4972,6 @@
           "category": "systems",
           "site": null,
           "pushed": "2019-04-04"
-        },
-        {
-          "name": "oscilla",
-          "title": "Oscilla",
-          "how": "words",
-          "score": 2,
-          "slug": "oscilla",
-          "url": "https://github.com/korczis/oscilla",
-          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-          "category": "science",
-          "site": "https://korczis.github.io/oscilla/",
-          "pushed": "2026-11-18"
         }
       ],
       "engagements": [
@@ -4981,16 +4994,6 @@
       ],
       "technologies": [
         {
-          "id": "html",
-          "name": "HTML",
-          "n": 2
-        },
-        {
-          "id": "javascript",
-          "name": "JavaScript",
-          "n": 2
-        },
-        {
           "id": "shell",
           "name": "Shell",
           "n": 2
@@ -5003,11 +5006,6 @@
         {
           "id": "claude-api",
           "name": "Claude API",
-          "n": 1
-        },
-        {
-          "id": "css",
-          "name": "CSS",
           "n": 1
         },
         {
@@ -5028,6 +5026,16 @@
         {
           "id": "github-actions",
           "name": "GitHub Actions",
+          "n": 1
+        },
+        {
+          "id": "html",
+          "name": "HTML",
+          "n": 1
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
           "n": 1
         },
         {
@@ -5058,6 +5066,11 @@
         {
           "id": "pydantic",
           "name": "Pydantic",
+          "n": 1
+        },
+        {
+          "id": "python",
+          "name": "Python",
           "n": 1
         }
       ]
@@ -5686,6 +5699,18 @@
       ],
       "repos": [
         {
+          "name": "oscilla",
+          "title": "Oscilla",
+          "how": "words",
+          "score": 2,
+          "slug": "oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "category": "science",
+          "site": "https://korczis.github.io/oscilla/",
+          "pushed": "2026-11-18"
+        },
+        {
           "name": "bcnode-old",
           "title": "bcnode-old",
           "how": "words",
@@ -5703,11 +5728,26 @@
         {
           "id": "javascript",
           "name": "JavaScript",
+          "n": 2
+        },
+        {
+          "id": "css",
+          "name": "CSS",
+          "n": 1
+        },
+        {
+          "id": "html",
+          "name": "HTML",
           "n": 1
         },
         {
           "id": "rust",
           "name": "Rust",
+          "n": 1
+        },
+        {
+          "id": "web-audio",
+          "name": "Web Audio",
           "n": 1
         }
       ]
@@ -6035,7 +6075,7 @@
           "name": "prismatic-majordomus",
           "title": "Majordomus",
           "how": "words",
-          "score": 3,
+          "score": 4,
           "slug": "prismatic-majordomus",
           "url": "https://github.com/korczis/prismatic-majordomus",
           "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",

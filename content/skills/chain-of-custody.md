@@ -13,7 +13,7 @@ skill = "chain-of-custody"
 og_title = "Chain of custody: skills"
 og_image = "og/skill-chain-of-custody.png"
 schema = "skill"
-terms = ["skill", "chain-of-custody", "javascript", "rust"]
+terms = ["skill", "chain-of-custody", "javascript", "css", "html", "rust", "web-audio"]
 keywords = ["Chain of custody", "Digital forensics and evidence preservation", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -31,8 +31,8 @@ The concept behind it: [Chain of custody](@/glossary/chain-of-custody.md).
 
 Services that draw on it: [Digital forensics and evidence preservation](@/services/digital-forensics.md).
 
-Practised with: [JavaScript](@/glossary/javascript.md) and [Rust](@/glossary/rust.md).
+Practised with: [JavaScript](@/glossary/javascript.md), [CSS](@/glossary/css.md), [HTML](@/glossary/html.md), [Rust](@/glossary/rust.md) and [Web Audio](@/glossary/web-audio.md).
 
-Public work whose own words show it: [bcnode-old](https://github.com/korczis/bcnode-old).
+Public work whose own words show it: [oscilla](https://github.com/korczis/oscilla) and [bcnode-old](https://github.com/korczis/bcnode-old).
 
 How to read this page: the definition is the experience vocabulary's; the services, technologies, public [repositories](@/glossary/repository.md) and use cases are derived and each links to its page.

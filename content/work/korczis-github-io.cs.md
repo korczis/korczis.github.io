@@ -3,8 +3,8 @@
 title = "korczis.github.io"
 description = "korczis.github.io: projekt z kategorie Web, hlavní jazyk JavaScript, poslední commit 18. listopadu 2026."
 template = "work.html"
-weight = 2
-updated = "2026-11-18T10:36:42Z"
+weight = 3
+updated = "2026-11-18T12:05:28Z"
 
 [taxonomies]
 tags = ["Web", "JavaScript", "HTML", "CSS"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **korczis.github.io** je projekt z kategorie [Web](@/projects/web.cs.md). Jeho kód je napsaný hlavně v jazyce [JavaScript](@/glossary/javascript.cs.md) (61,7 %), dále [HTML](@/glossary/html.cs.md), [CSS](@/glossary/css.cs.md) a [Shell](@/glossary/shell.cs.md).
 
-[Repozitář](@/glossary/repository.cs.md) vznikl 24. prosince 2024; poslední [commit](@/glossary/commit.cs.md) je z 18. listopadu 2026. Zní „chore(merge): integrate \#39, the case services card names the skill overlap“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+[Repozitář](@/glossary/repository.cs.md) vznikl 24. prosince 2024; poslední [commit](@/glossary/commit.cs.md) je z 18. listopadu 2026. Zní „chore(data): refresh the snapshot and the index“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 
 Zdrojový kód: [GitHub](https://github.com/korczis/korczis.github.io).
 
