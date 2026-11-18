@@ -3,9 +3,9 @@
  "description": "The Majordomus layer of korczis/korczis.github.io: every object of .ai/ with its MCP resource URI",
  "source": "majordomus run objects.list, capabilities.list",
  "majordomus": "1.0.2",
- "tree": "0459a0a61530135d82d2d137dfc02c74724838ecd4964fa4c90979dcf71e2e22",
+ "tree": "43080437cfde100544853eba497fca7962d369ac31affc049ba12701ba817b15",
  "counts": {
-  "objects": 142,
+  "objects": 143,
   "kinds": {
    "adr": 8,
    "context": 21,
@@ -15,14 +15,14 @@
    "policy": 1,
    "profile": 4,
    "prompt": 4,
-   "rule": 75,
+   "rule": 76,
    "scope": 1,
    "skill": 1,
    "taxonomy": 8
   },
-  "capabilities": 373,
+  "capabilities": 374,
   "mcp_tools": 215,
-  "mcp_resources": 199,
+  "mcp_resources": 200,
   "http_routes": 219
  },
  "objects": [
@@ -985,6 +985,14 @@
    "title": "Every number on the site is measured, dated and derived",
    "description": "Figures come from data/github.json written by scripts/fetch-github.mjs and are shown with their date; the curated catalogue is data/projects.toml; llms.txt is derived and checked.",
    "path": ".ai/repo/rules/project/data-measured.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/project.dossiers-inferred@1",
+   "kind": "rule",
+   "identity": "project.dossiers-inferred@1",
+   "title": "Repository dossiers are inferred, carry their provenance and say so wherever shown",
+   "description": "data/dossiers/<repo>.json holds, for each original public repository, a problem, a solution, a stack and a Mermaid architecture inferred from the repository's own files; each carries the commit and date it was read at and a confidence, is labelled inferred wherever it is shown, is re-mined when the repository's head moves, and passes the NDA gate.",
+   "path": ".ai/repo/rules/project/dossiers-inferred.v1.md"
   },
   {
    "uri": "majordomus://rule/project.everything-interlinked@1",
