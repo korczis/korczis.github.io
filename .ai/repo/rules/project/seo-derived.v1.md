@@ -25,16 +25,26 @@ from the same front matter the page renders from, it cannot.
   Graph (`profile` on the home page), Twitter `summary_large_image` and one JSON-LD `@graph`
   (Person, WebSite, and the page as ProfilePage, CollectionPage with an ItemList of
   SoftwareSourceCode from the catalogue, or AboutPage, with a BreadcrumbList).
-- `scripts/build-og.mjs` renders `static/og/<name>.svg` deterministically from the front matter
-  and the PNG (1200x630) with rsvg-convert; both are committed.
+- `scripts/build-og.mjs` draws each card as an SVG deterministically from the front matter and
+  renders the PNG (1200x630) from it with rsvg-convert, quantised with pngquant; only the PNG is
+  committed and deployed (no page references the SVG), and `data/og.json` records the hash of the
+  SVG and of the PNG and the encoder version that wrote it. Each PNG stays within `og_image`
+  `x-max-bytes` of the front-matter schema. `.github/workflows/refresh.yml` installs every
+  renderer the script uses, because the scheduled refresh renders the cards a new or moved
+  repository needs.
+- Every indexable page has its own description and its own `og:description`: text another page
+  has too (a template's README paragraph, a sentence of facts that fits several repositories)
+  is not a description.
 - 404 is `noindex`; every indexable page is in `sitemap.xml`.
 
 # Failure behaviour
 
-`scripts/check-seo.mjs` exits 1 on a duplicate or overlong title, a description outside 50-165
-characters, a missing tag, an OG image that is not in the build at 1200x630, JSON-LD that does
+`scripts/check-seo.mjs` exits 1 on a duplicate or overlong title, a duplicate description or
+`og:description`, a description outside 50-165 characters, a missing tag, an OG image that is not in the build at 1200x630, JSON-LD that does
 not parse, a page with other than one `<h1>`, or a canonical URL missing from the sitemap.
-`build-og.mjs --check` exits 1 on a stale SVG or a missing PNG.
+`build-og.mjs --check` exits 1 on a missing PNG, one stale against its card, not the recorded
+render, without its encoder version, over its byte budget, a file of `static/og` no page names,
+or a renderer the refresh workflow does not install.
 
 # Verification
 
