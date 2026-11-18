@@ -3,11 +3,22 @@
 // front matter of the top-level pages, data/projects.toml and data/index.json, so a language model reading the site gets the same
 // catalogue a person sees, in plain Markdown: the curated projects, then every original repository.
 //
+// The order is for a reader with a budget (an answer engine, a sourcing assistant): while
+// data/cv.toml [hire] available is true, the summary blockquote starts with the owner's name and
+// headline, then the workplace and regions and the /hire/ URL; '## Hire' is the first section,
+// and '## Skills' follows it, each skill measured in data/index.json (skills) with its evidence.
+// With available = false the summary is the site's description and the Hire section is gone.
+//
 // usage: node scripts/build-llms.mjs           write both files
-//        node scripts/build-llms.mjs --check   exit 1 if either committed file is stale
+//        node scripts/build-llms.mjs --check   exit 1 if either committed file is stale, or (while the
+//                                              owner is available) if the summary does not start with
+//                                              the name and the headline and name the /hire/ URL, if
+//                                              '## Hire' is not the first section, or if a skill line
+//                                              names no skill of data/index.json
 import { readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { CHECK, ROOT, config as siteConfig, contentPages, identity, isDefault, languages, readJson, readToml, report, slug } from './lib/derive.mjs';
+import { loadGlossary } from './lib/terms.mjs';
 import { cliArgs } from './lib/cli.mjs';
 
 cliArgs({ '--check': true }, { derived: true });
@@ -25,17 +36,81 @@ const oneLine = (text) => text.replace(/\s+/g, ' ').trim();
 const pages = contentPages().filter((p) => p.fm && isDefault(p.lang) && /^(_index|[^/]+|[^/]+\/_index)\.md$/.test(p.rel))
   .map((p) => ({ url: p.rel === '_index.md' ? `${base}/` : `${base}/${p.rel.replace(/(\/_index)?\.md$/, '')}/`, fm: p.fm }))
   .sort((x, y) => (x.url === `${base}/` ? -1 : y.url === `${base}/` ? 1 : x.url.localeCompare(y.url)));
+const cv = readToml('data/cv.toml');
+const h = cv.hire?.available ? cv.hire : null;
+const github = readJson('data/github.json');
+const index = readJson('data/index.json');
+const and = (items) => new Intl.ListFormat('en', { type: 'conjunction' }).format(items);
+const capital = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+const hireUrl = `${base}/hire/`;
+const resumeUrl = `${base}/resume.json`;
+
+// The summary: who, as what, where and how to hire, while the owner is available (ADR 0007).
+const summary = h
+  ? `${me.author}: ${h.headline}. ${capital(h.workplace)}, ${h.regions}. Available for ${and(h.engagement)} work: ${hireUrl}`
+  : oneLine(config.description);
 const lines = [
   `# ${config.title}`,
   '',
-  `> ${oneLine(config.description)}`,
+  `> ${summary}`,
   '',
+  ...(h ? [oneLine(config.description), ''] : []),
+];
+
+// Availability for hire: the owner's facts in data/cv.toml (ADR 0004, 0007), the first section, so
+// a language model asked about the owner reads them before the catalogue.
+if (h) {
+  lines.push(
+    '## Hire',
+    '',
+    `${me.author} is available for hire: ${h.headline}. ${hireUrl}`,
+    '',
+    ...h.roles.map((r) => `- ${r}`),
+    `- Engagement: ${h.engagement.join(', ')}; ${h.workplace}, ${h.regions}${h.since ? `; available since ${h.since}` : ''}`,
+    ...(h.rate_from ? [`- Contract rate: from ${h.rate_currency} ${h.rate_from} per ${h.rate_unit}, B2B; full-time compensation by conversation`] : []),
+    ...(github.profile?.email ? [`- Contact: ${github.profile.email}`] : []),
+    ...Object.values(cv.links ?? {}).map((u) => `- Profile: ${u}`),
+    `- CV as data: [JSON Resume](${resumeUrl}), also in Czech at ${base}/cs/resume.json`,
+    '',
+  );
+}
+
+// Skills with their evidence, measured in data/index.json: every language and technology that the
+// glossary defines (a page that explains it), the count that measures it, and the work that shows it.
+const glossary = loadGlossary(ROOT);
+const termPages = new Set(contentPages().filter((p) => isDefault(p.lang) && p.rel.startsWith('glossary/')).map((p) => p.rel.replace(/^glossary\/|\.md$/g, '')));
+const termUrl = (name) => {
+  const id = glossary.byName.get(name.toLowerCase());
+  return id && termPages.has(id) ? `${base}/glossary/${id}/` : null;
+};
+const count = (n, one, many) => `${n} ${n === 1 ? one : many}`;
+const skillLines = [
+  ...index.skills.languages.map((s) => ({ s, what: `primary language of ${count(s.repos, 'original repository', 'original repositories')}`, evidence: s.evidence.map((e) => `[${e.name}](${e.url})`) })),
+  ...index.skills.technologies.map((s) => ({ s, what: `in the stack of ${count(s.projects, 'curated project', 'curated projects')}`, evidence: s.evidence.map((e) => `[${e.name}](${me.repoUrl(e.repo)})`) })),
+].filter(({ s }) => termUrl(s.name))
+  .map(({ s, what, evidence }) => `- [${s.name}](${termUrl(s.name)}): ${what}; evidence: ${evidence.join(', ')}`);
+if (skillLines.length) {
+  lines.push('## Skills', '', `Measured from every original public repository on GitHub and GitLab, derived ${index.generated_at}.`, '', ...skillLines, '');
+}
+
+if (cv.roles?.length) {
+  lines.push('## Experience', '');
+  for (const r of cv.roles) {
+    const span = `${r.start} to ${r.end ?? 'present'}`;
+    lines.push(`- ${r.title}, ${r.organisation} (${span})${r.summary ? `: ${oneLine(r.summary)}` : ''}`);
+  }
+  for (const e of cv.education ?? []) lines.push(`- Education: ${e.degree}, ${e.institution}${e.start ? ` (${e.start} to ${e.end ?? 'present'})` : ''}`);
+  if (cv.languages?.length) lines.push(`- Languages: ${cv.languages.map((l) => `${l.name} (${l.level})`).join(', ')}`);
+  lines.push('');
+}
+
+lines.push(
   '## Pages',
   '',
   ...pages.map((p) => `- [${p.fm.title}](${p.url}): ${oneLine(p.fm.description)}`),
   ...languages().filter((l) => !isDefault(l)).map((l) => `- [${config.languages[l].title} (${l})](${base}/${l}/): ${oneLine(config.languages[l].description)}`),
   '',
-];
+);
 
 for (const [key, category] of Object.entries(catalogue.categories)) {
   const projects = catalogue.projects.filter((p) => p.category === key);
@@ -47,35 +122,6 @@ for (const [key, category] of Object.entries(catalogue.categories)) {
       `- [${p.name}](${me.repoUrl(p.repo)}): ${oneLine(p.tagline)}${live}`,
     );
   }
-  lines.push('');
-}
-
-// Availability for hire and the work history: the owner's facts in data/cv.toml (ADR 0004, 0007),
-// placed before the catalogue's tail so a language model asked about the owner reads them first.
-const cv = readToml('data/cv.toml');
-if (cv.hire?.available) {
-  const h = cv.hire;
-  lines.push(
-    '## Hire',
-    '',
-    `> ${config.extra.author} is available for hire: ${h.headline}. ${base}/hire/`,
-    '',
-    ...h.roles.map((r) => `- ${r}`),
-    `- Engagement: ${h.engagement.join(', ')}; ${h.workplace}, ${h.regions}${h.since ? `; available since ${h.since}` : ''}`,
-    ...(h.rate_from ? [`- Contract rate: from ${h.rate_currency} ${h.rate_from} per ${h.rate_unit}, B2B; full-time compensation by conversation`] : []),
-    ...(readJson('data/github.json').profile?.email ? [`- Contact: ${readJson('data/github.json').profile.email}`] : []),
-    ...Object.values(cv.links ?? {}).map((u) => `- Profile: ${u}`),
-    '',
-  );
-}
-if (cv.roles?.length) {
-  lines.push('## Experience', '');
-  for (const r of cv.roles) {
-    const span = `${r.start} to ${r.end ?? 'present'}`;
-    lines.push(`- ${r.title}, ${r.organisation} (${span})${r.summary ? `: ${oneLine(r.summary)}` : ''}`);
-  }
-  for (const e of cv.education ?? []) lines.push(`- Education: ${e.degree}, ${e.institution}${e.start ? ` (${e.start} to ${e.end ?? 'present'})` : ''}`);
-  if (cv.languages?.length) lines.push(`- Languages: ${cv.languages.map((l) => `${l.name} (${l.level})`).join(', ')}`);
   lines.push('');
 }
 
@@ -94,7 +140,6 @@ lines.push(
 const text = lines.join('\n');
 
 // llms-full.txt: the summary above, then every original repository, grouped by inferred category.
-const index = readJson('data/index.json');
 const recent = readJson('data/recent.json');
 const workPage = new Map(recent.repos.map((r) => [r.name, `${base}/work/${slug(r.name)}/`]));
 const full = [text.trimEnd(), '', '## Every original repository', '',
@@ -113,6 +158,25 @@ for (const [key, category] of Object.entries(catalogue.categories)) {
 }
 const fullText = full.join('\n');
 
+// What the order promises, asserted on the text (the committed file must equal it).
+function promises(body) {
+  const found = [];
+  if (!h) return found;
+  const quote = body.split('\n').find((l) => l.startsWith('> ')) ?? '';
+  if (!quote.startsWith(`> ${me.author}: ${h.headline}`)) found.push(`static/llms.txt: the summary does not start with the name and the headline ("${quote.slice(0, 80)}")`);
+  for (const part of [h.workplace, hireUrl]) if (!quote.toLowerCase().includes(part.toLowerCase())) found.push(`static/llms.txt: the summary does not name ${part}`);
+  const first = body.split('\n').find((l) => l.startsWith('## '));
+  if (first !== '## Hire') found.push(`static/llms.txt: the first section is "${first}", not "## Hire"`);
+  const names = new Set([...index.skills.languages, ...index.skills.technologies].map((x) => x.name));
+  const section = body.split('\n## Skills\n')[1]?.split('\n## ')[0];
+  if (!section) found.push('static/llms.txt: no "## Skills" section');
+  for (const l of (section ?? '').split('\n').filter((x) => x.startsWith('- '))) {
+    const name = l.match(/^- \[([^\]]+)\]/)?.[1];
+    if (!names.has(name)) found.push(`static/llms.txt: the skill line "${l.slice(0, 60)}" names no skill of data/index.json`);
+  }
+  return found;
+}
+
 const outputs = [[TARGET, text], [TARGET_FULL, fullText]];
 if (CHECK) {
   const stale = outputs.filter(([path, content]) => {
@@ -122,7 +186,8 @@ if (CHECK) {
       return true;
     }
   });
-  report(stale.map(([path]) => `${path.slice(ROOT.length + 1)} is stale`), 'static/llms.txt and llms-full.txt are current');
+  const findings = [...stale.map(([path]) => `${path.slice(ROOT.length + 1)} is stale`), ...promises(readFileSync(TARGET, 'utf8')), ...promises(text)];
+  report([...new Set(findings)], `static/llms.txt and llms-full.txt are current${h ? '; the summary names the owner, the headline and /hire/, Hire is the first section, every skill is measured' : ''}`);
 } else {
   for (const [path, content] of outputs) writeFileSync(path, content);
   console.log('static/llms.txt and llms-full.txt written');
