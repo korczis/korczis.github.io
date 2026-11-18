@@ -739,7 +739,51 @@ async function checkFrames(browser) {
 // 1440x900 in both themes and in every language, the h1 and a link to the language's /hire/ are
 // inside the first viewport, the topbar's Hire me button meets the 24x24 px target size (WCAG 2.2
 // 2.5.8), and the proof band comes first: #majordomus-title precedes the first visual after the hero.
+// Rule project.landing-contract adds: a mailto: link and the rate ([data-rate], the cv.toml rate)
+// are in the first viewport too, and a probe of /?role=<slug> (the first role, and the last, which
+// must move) finds the badge visible, #role-<slug> the first role card on screen, the canonical
+// unchanged and the text of <main>, minus the badge, the default text (no cloaking).
 const FIRST_VIEWPORTS = [[375, 667], [1440, 900]];
+const slugify = (s) => s.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+async function checkRoleProbe(browser, lang, rel, cv) {
+  const findings = [];
+  const slugs = (cv.hire?.roles ?? []).map((r) => slugify(r.split(':')[0]));
+  if (!slugs.length) return findings;
+  const context = await browser.newContext({ viewport: { width: 1440, height: 900 }, reducedMotion: 'reduce' });
+  const page = await context.newPage();
+  const snapshot = () => page.evaluate(() => {
+    const badge = document.querySelector('[data-role-badge]');
+    // The text of <main> without the badge and without what a live component writes (x-text: the
+    // live release, its date), which may differ between two loads whatever the address says.
+    const copy = document.querySelector('main')?.cloneNode(true);
+    copy?.querySelectorAll('[data-role-badge], template, script').forEach((el) => el.remove());
+    copy?.querySelectorAll('[x-text]').forEach((el) => { el.textContent = ''; });
+    const b = badge?.getBoundingClientRect();
+    const cards = [...document.querySelectorAll('#roles [id^="role-"]')].map((el) => [el.id, el.getBoundingClientRect()])
+      .sort((x, y) => x[1].top - y[1].top || x[1].left - y[1].left);
+    return {
+      badge: Boolean(b && b.width > 0 && b.height > 0 && b.top >= 0 && b.bottom <= window.innerHeight),
+      first: cards[0]?.[0] ?? null,
+      canonical: document.querySelector('link[rel="canonical"]')?.href ?? null,
+      text: (copy?.textContent ?? '').replace(/\s+/g, ' ').trim(),
+    };
+  });
+  await page.goto(BASE + rel, { waitUntil: 'networkidle', timeout: 90000 });
+  await page.waitForTimeout(300);
+  const plain = await snapshot();
+  for (const slug of [...new Set([slugs[0], slugs[slugs.length - 1]])]) {
+    await page.goto(`${BASE}${rel}?role=${slug}`, { waitUntil: 'networkidle', timeout: 90000 });
+    await page.waitForTimeout(300);
+    const r = await snapshot();
+    const where = `/${rel}?role=${slug}`;
+    if (!r.badge) findings.push(`${where}: the role badge is not visible`);
+    if (r.first !== `role-${slug}`) findings.push(`${where}: the first role card is #${r.first}, not #role-${slug}`);
+    if (r.canonical !== plain.canonical) findings.push(`${where}: the canonical is ${r.canonical}, not ${plain.canonical}`);
+    if (r.text !== plain.text) findings.push(`${where}: <main> says something the default page does not (cloaking)`);
+  }
+  await context.close();
+  return findings;
+}
 async function checkFirstViewport(browser) {
   const findings = [];
   const cv = parse(readFileSync(join(ROOT, 'data/cv.toml'), 'utf8'));
@@ -754,7 +798,7 @@ async function checkFirstViewport(browser) {
         await page.goto(BASE + rel, { waitUntil: 'networkidle', timeout: 90000 });
         await page.waitForTimeout(300);
         const where = `/${rel} ${width}x${height} ${scheme}`;
-        const r = await page.evaluate(([prefix, basePath]) => {
+        const r = await page.evaluate(([prefix, basePath, rateText]) => {
           const inside = (el) => {
             if (!el) return false;
             const b = el.getBoundingClientRect();
@@ -772,15 +816,20 @@ async function checkFirstViewport(browser) {
           const hero = document.querySelector('section[aria-labelledby="hero-title"]');
           const firstViz = [...document.querySelectorAll('[data-viz]')].find((v) => !hero?.contains(v));
           const title = document.getElementById('majordomus-title');
+          const rate = document.querySelector('[data-rate]');
           return {
             h1: inside(document.querySelector('h1')),
             hire: links.some(inside),
+            mail: [...document.querySelectorAll('main a[href^="mailto:"]')].some(inside),
+            rate: !rateText || Boolean(rate && inside(rate) && rate.textContent.includes(rateText)),
             button: box ? [Math.round(box.width), Math.round(box.height), inside(button)] : null,
             order: Boolean(title && firstViz && (title.compareDocumentPosition(firstViz) & Node.DOCUMENT_POSITION_FOLLOWING)),
             noViz: !firstViz,
           };
-        }, [rel, new URL(BASE).pathname]);
+        }, [rel, new URL(BASE).pathname, cv.hire.rate_from === undefined ? '' : `${cv.hire.rate_currency} ${cv.hire.rate_from}`]);
         if (!r.h1) findings.push(`${where}: the h1 is not inside the first viewport`);
+        if (!r.mail) findings.push(`${where}: no mailto: link is inside the first viewport`);
+        if (!r.rate) findings.push(`${where}: the rate ([data-rate]) is not inside the first viewport`);
         if (!r.hire) findings.push(`${where}: no link to /${rel}hire/ is inside the first viewport`);
         if (!r.button) findings.push(`${where}: the topbar has no Hire me button ([data-hire-topbar] a)`);
         else if (r.button[0] < 24 || r.button[1] < 24 || !r.button[2]) findings.push(`${where}: the topbar's Hire me is ${r.button[0]}x${r.button[1]} px${r.button[2] ? '' : ', outside the viewport'} (needs 24x24, WCAG 2.5.8)`);
@@ -793,6 +842,7 @@ async function checkFirstViewport(browser) {
         await context.close();
       }
     }
+    findings.push(...await checkRoleProbe(browser, lang, rel, cv));
   }
   return { findings, runs };
 }
@@ -816,7 +866,7 @@ try {
       console.log('FAIL home first viewport (hiring first)');
       for (const f of first) console.log(`     ${f}`);
     } else {
-      console.log(runs ? `ok   home first viewport: h1, a /hire/ link and a 24x24 Hire me in view in ${runs} runs; proof precedes the visuals`
+      console.log(runs ? `ok   home first viewport: h1, a /hire/ link, a mailto:, the rate and a 24x24 Hire me in view in ${runs} runs; proof precedes the visuals; ?role= reorders and labels, never cloaks`
         : 'ok   home first viewport: not available for hire (data/cv.toml), nothing to show');
     }
   }

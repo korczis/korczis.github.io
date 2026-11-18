@@ -63,7 +63,8 @@ for (const [key, c] of Object.entries(catalogue.categories)) {
 for (const p of catalogue.projects) {
   for (const f of TEXT_FIELDS.projects) for (const l of LANGS) if (!p[`${f}_${l}`]) findings.push(`data/projects.toml ${p.repo}: missing ${f}_${l}`);
 }
-const NOT_TEXT = new Set(['name', 'icon', 'id']);
+// Identifiers, not prose: names, icons, ids, and lists of glossary term ids (`*_terms`).
+const NOT_TEXT = new Set(['name', 'icon', 'id', 'point_terms']);
 function twins(node, where) {
   if (Array.isArray(node)) { node.forEach((n, i) => twins(n, `${where}[${i}]`)); return; }
   if (!node || typeof node !== 'object') return;
@@ -84,7 +85,7 @@ function twins(node, where) {
 for (const file of walk(join(ROOT, 'content'), '.md')) {
   const match = readFileSync(file, 'utf8').match(/^\+\+\+\n([\s\S]*?)\n\+\+\+/);
   for (const v of (match ? parse(match[1]).extra?.viz : null) ?? []) {
-    for (const key of [v.title, v.lead]) if (!strings[key]) findings.push(`${rel(file)}: [[extra.viz]] key ${key} is not in i18n/*.toml`);
+    for (const key of [v.title, v.lead, v.caption].filter(Boolean)) if (!strings[key]) findings.push(`${rel(file)}: [[extra.viz]] key ${key} is not in i18n/*.toml`);
   }
 }
 

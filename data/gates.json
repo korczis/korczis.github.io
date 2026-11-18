@@ -1,0 +1,601 @@
+{
+  "schema": "korczis-hub-gates/v1",
+  "source": "node scripts/gates.mjs json --write",
+  "gates": [
+    {
+      "id": "deps",
+      "name": "Installed dependencies match package-lock.json",
+      "rule": null,
+      "rule_file": null,
+      "ci": true,
+      "where": [
+        {
+          "kind": "ci",
+          "file": ".github/workflows/ci.yml"
+        },
+        {
+          "kind": "prepush",
+          "file": ".githooks/pre-push"
+        }
+      ]
+    },
+    {
+      "id": "commits",
+      "name": "Conventional commits on this branch",
+      "rule": null,
+      "rule_file": null,
+      "ci": true,
+      "where": [
+        {
+          "kind": "ci",
+          "file": ".github/workflows/ci.yml"
+        },
+        {
+          "kind": "prepush",
+          "file": ".githooks/pre-push"
+        }
+      ]
+    },
+    {
+      "id": "nda",
+      "name": "No denylisted name in tracked files or commit messages (NDA)",
+      "rule": null,
+      "rule_file": null,
+      "ci": true,
+      "where": [
+        {
+          "kind": "ci",
+          "file": ".github/workflows/ci.yml"
+        },
+        {
+          "kind": "prepush",
+          "file": ".githooks/pre-push"
+        }
+      ]
+    },
+    {
+      "id": "cli",
+      "name": "Every script answers --help and refuses an unknown flag",
+      "rule": null,
+      "rule_file": null,
+      "ci": true,
+      "where": [
+        {
+          "kind": "ci",
+          "file": ".github/workflows/ci.yml"
+        },
+        {
+          "kind": "prepush",
+          "file": ".githooks/pre-push"
+        }
+      ]
+    },
+    {
+      "id": "gates",
+      "name": "One gate list: workflows, scripts and hooks run this manifest",
+      "rule": null,
+      "rule_file": null,
+      "ci": true,
+      "where": [
+        {
+          "kind": "ci",
+          "file": ".github/workflows/ci.yml"
+        },
+        {
+          "kind": "prepush",
+          "file": ".githooks/pre-push"
+        }
+      ]
+    },
+    {
+      "id": "readme",
+      "name": "README sections generated from this manifest are current",
+      "rule": null,
+      "rule_file": null,
+      "ci": true,
+      "where": [
+        {
+          "kind": "ci",
+          "file": ".github/workflows/ci.yml"
+        },
+        {
+          "kind": "prepush",
+          "file": ".githooks/pre-push"
+        }
+      ]
+    },
+    {
+      "id": "i18n-build",
+      "name": "Translations are generated and complete",
+      "rule": "project.i18n-everywhere",
+      "rule_file": ".ai/repo/rules/project/i18n-everywhere.v1.md",
+      "ci": true,
+      "where": [
+        {
+          "kind": "ci",
+          "file": ".github/workflows/ci.yml"
+        },
+        {
+          "kind": "prepush",
+          "file": ".githooks/pre-push"
+        }
+      ]
+    },
+    {
+      "id": "i18n",
+      "name": "Every text in every language",
+      "rule": "project.i18n-everywhere",
+      "rule_file": ".ai/repo/rules/project/i18n-everywhere.v1.md",
+      "ci": true,
+      "where": [
+        {
+          "kind": "ci",
+          "file": ".github/workflows/ci.yml"
+        },
+        {
+          "kind": "prepush",
+          "file": ".githooks/pre-push"
+        }
+      ]
+    },
+    {
+      "id": "front-matter",
+      "name": "Front matter matches its schema",
+      "rule": "project.front-matter-contract",
+      "rule_file": ".ai/repo/rules/project/front-matter-contract.v2.md",
+      "ci": true,
+      "where": [
+        {
+          "kind": "ci",
+          "file": ".github/workflows/ci.yml"
+        },
+        {
+          "kind": "prepush",
+          "file": ".githooks/pre-push"
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "name": "Catalogue, snapshot and index are well-formed",
+      "rule": "project.data-measured",
+      "rule_file": ".ai/repo/rules/project/data-measured.v1.md",
+      "ci": true,
+      "where": [
+        {
+          "kind": "ci",
+          "file": ".github/workflows/ci.yml"
+        },
+        {
+          "kind": "prepush",
+          "file": ".githooks/pre-push"
+        }
+      ]
+    },
+    {
+      "id": "index-derived",
+      "name": "The index follows its rules (offline re-derivation)",
+      "rule": "project.data-measured",
+      "rule_file": ".ai/repo/rules/project/data-measured.v1.md",
+      "ci": true,
+      "where": [
+        {
+          "kind": "ci",
+          "file": ".github/workflows/ci.yml"
+        },
+        {
+          "kind": "prepush",
+          "file": ".githooks/pre-push"
+        }
+      ]
+    },
+    {
+      "id": "recent-derived",
+      "name": "recent.json follows the index",
+      "rule": "project.data-measured",
+      "rule_file": ".ai/repo/rules/project/data-measured.v1.md",
+      "ci": true,
+      "where": [
+        {
+          "kind": "ci",
+          "file": ".github/workflows/ci.yml"
+        },
+        {
+          "kind": "prepush",
+          "file": ".githooks/pre-push"
+        }
+      ]
+    },
+    {
+      "id": "derive-lib",
+      "name": "Inference, authorship and derivation behave on their fixtures",
+      "rule": "project.data-measured",
+      "rule_file": ".ai/repo/rules/project/data-measured.v1.md",
+      "ci": true,
+      "where": [
+        {
+          "kind": "ci",
+          "file": ".github/workflows/ci.yml"
+        },
+        {
+          "kind": "prepush",
+          "file": ".githooks/pre-push"
+        }
+      ]
+    },
+    {
+      "id": "experience",
+      "name": "Experience data matches its schema",
+      "rule": null,
+      "rule_file": null,
+      "ci": true,
+      "where": [
+        {
+          "kind": "ci",
+          "file": ".github/workflows/ci.yml"
+        },
+        {
+          "kind": "prepush",
+          "file": ".githooks/pre-push"
+        }
+      ]
+    },
+    {
+      "id": "categories",
+      "name": "Category pages are current",
+      "rule": "project.data-measured",
+      "rule_file": ".ai/repo/rules/project/data-measured.v1.md",
+      "ci": true,
+      "where": [
+        {
+          "kind": "ci",
+          "file": ".github/workflows/ci.yml"
+        },
+        {
+          "kind": "prepush",
+          "file": ".githooks/pre-push"
+        }
+      ]
+    },
+    {
+      "id": "work",
+      "name": "Work pages are current",
+      "rule": "project.data-measured",
+      "rule_file": ".ai/repo/rules/project/data-measured.v1.md",
+      "ci": true,
+      "where": [
+        {
+          "kind": "ci",
+          "file": ".github/workflows/ci.yml"
+        },
+        {
+          "kind": "prepush",
+          "file": ".githooks/pre-push"
+        }
+      ]
+    },
+    {
+      "id": "glossary",
+      "name": "Glossary pages are current",
+      "rule": "project.pages-are-articles",
+      "rule_file": ".ai/repo/rules/project/pages-are-articles.v1.md",
+      "ci": true,
+      "where": [
+        {
+          "kind": "ci",
+          "file": ".github/workflows/ci.yml"
+        },
+        {
+          "kind": "prepush",
+          "file": ".githooks/pre-push"
+        }
+      ]
+    },
+    {
+      "id": "articles",
+      "name": "Every page is an article with glossary terms; every term is used",
+      "rule": "project.pages-are-articles",
+      "rule_file": ".ai/repo/rules/project/pages-are-articles.v1.md",
+      "ci": true,
+      "where": [
+        {
+          "kind": "ci",
+          "file": ".github/workflows/ci.yml"
+        },
+        {
+          "kind": "prepush",
+          "file": ".githooks/pre-push"
+        }
+      ]
+    },
+    {
+      "id": "llms",
+      "name": "llms.txt is current",
+      "rule": "project.data-measured",
+      "rule_file": ".ai/repo/rules/project/data-measured.v1.md",
+      "ci": true,
+      "where": [
+        {
+          "kind": "ci",
+          "file": ".github/workflows/ci.yml"
+        },
+        {
+          "kind": "prepush",
+          "file": ".githooks/pre-push"
+        }
+      ]
+    },
+    {
+      "id": "resume",
+      "name": "resume.json is derived and valid JSON Resume",
+      "rule": "project.hire-surfaces",
+      "rule_file": ".ai/repo/rules/project/hire-surfaces.v1.md",
+      "ci": true,
+      "where": [
+        {
+          "kind": "ci",
+          "file": ".github/workflows/ci.yml"
+        },
+        {
+          "kind": "prepush",
+          "file": ".githooks/pre-push"
+        }
+      ]
+    },
+    {
+      "id": "og",
+      "name": "Open Graph images are current",
+      "rule": "project.seo-derived",
+      "rule_file": ".ai/repo/rules/project/seo-derived.v2.md",
+      "ci": true,
+      "where": [
+        {
+          "kind": "ci",
+          "file": ".github/workflows/ci.yml"
+        },
+        {
+          "kind": "prepush",
+          "file": ".githooks/pre-push"
+        }
+      ]
+    },
+    {
+      "id": "site-json",
+      "name": "site.json is current",
+      "rule": "project.front-matter-contract",
+      "rule_file": ".ai/repo/rules/project/front-matter-contract.v2.md",
+      "ci": true,
+      "where": [
+        {
+          "kind": "ci",
+          "file": ".github/workflows/ci.yml"
+        },
+        {
+          "kind": "prepush",
+          "file": ".githooks/pre-push"
+        }
+      ]
+    },
+    {
+      "id": "interfaces",
+      "name": "ai.json follows .ai/ and openapi.json the published files",
+      "rule": "project.data-measured",
+      "rule_file": ".ai/repo/rules/project/data-measured.v1.md",
+      "ci": true,
+      "where": [
+        {
+          "kind": "ci",
+          "file": ".github/workflows/ci.yml"
+        },
+        {
+          "kind": "prepush",
+          "file": ".githooks/pre-push"
+        }
+      ]
+    },
+    {
+      "id": "viz-layer",
+      "name": "Every visual goes through the component layer and is a maximizable simulator",
+      "rule": "project.viz-component-layer",
+      "rule_file": ".ai/repo/rules/project/viz-component-layer.v1.md",
+      "ci": true,
+      "where": [
+        {
+          "kind": "ci",
+          "file": ".github/workflows/ci.yml"
+        },
+        {
+          "kind": "prepush",
+          "file": ".githooks/pre-push"
+        }
+      ]
+    },
+    {
+      "id": "build",
+      "name": "Build (internal links are errors)",
+      "rule": "project.site-zola-pages",
+      "rule_file": ".ai/repo/rules/project/site-zola-pages.v1.md",
+      "ci": true,
+      "where": [
+        {
+          "kind": "ci",
+          "file": ".github/workflows/ci.yml"
+        },
+        {
+          "kind": "prepush",
+          "file": ".githooks/pre-push"
+        }
+      ]
+    },
+    {
+      "id": "seo",
+      "name": "SEO derived from front matter (titles, descriptions, OG, JSON-LD, sitemap)",
+      "rule": "project.seo-derived",
+      "rule_file": ".ai/repo/rules/project/seo-derived.v2.md",
+      "ci": true,
+      "where": [
+        {
+          "kind": "ci",
+          "file": ".github/workflows/ci.yml"
+        },
+        {
+          "kind": "prepush",
+          "file": ".githooks/pre-push"
+        }
+      ]
+    },
+    {
+      "id": "profile",
+      "name": "One positioning from the hire headline; every page links /hire/",
+      "rule": "project.hire-surfaces",
+      "rule_file": ".ai/repo/rules/project/hire-surfaces.v1.md",
+      "ci": true,
+      "where": [
+        {
+          "kind": "ci",
+          "file": ".github/workflows/ci.yml"
+        },
+        {
+          "kind": "prepush",
+          "file": ".githooks/pre-push"
+        }
+      ]
+    },
+    {
+      "id": "nda-site",
+      "name": "No denylisted name in the built site (NDA)",
+      "rule": null,
+      "rule_file": null,
+      "ci": true,
+      "where": [
+        {
+          "kind": "ci",
+          "file": ".github/workflows/ci.yml"
+        },
+        {
+          "kind": "prepush",
+          "file": ".githooks/pre-push"
+        }
+      ]
+    },
+    {
+      "id": "gates-json",
+      "name": "data/gates.json is this gate list",
+      "rule": "project.landing-contract",
+      "rule_file": ".ai/repo/rules/project/landing-contract.v1.md",
+      "ci": true,
+      "where": [
+        {
+          "kind": "ci",
+          "file": ".github/workflows/ci.yml"
+        },
+        {
+          "kind": "prepush",
+          "file": ".githooks/pre-push"
+        }
+      ]
+    },
+    {
+      "id": "landing",
+      "name": "The landing keeps its contract: sections, links, CTA budget, nothing hidden",
+      "rule": "project.landing-contract",
+      "rule_file": ".ai/repo/rules/project/landing-contract.v1.md",
+      "ci": true,
+      "where": [
+        {
+          "kind": "ci",
+          "file": ".github/workflows/ci.yml"
+        },
+        {
+          "kind": "prepush",
+          "file": ".githooks/pre-push"
+        }
+      ]
+    },
+    {
+      "id": "flowbite",
+      "name": "Flowbite Pro fidelity",
+      "rule": "project.ui-uses-flowbite-pro",
+      "rule_file": ".ai/repo/rules/project/ui-uses-flowbite-pro.v1.md",
+      "ci": false,
+      "where": [
+        {
+          "kind": "local",
+          "file": null
+        },
+        {
+          "kind": "prepush",
+          "file": ".githooks/pre-push"
+        }
+      ]
+    },
+    {
+      "id": "doctor",
+      "name": "Majordomus supervision",
+      "rule": null,
+      "rule_file": null,
+      "ci": true,
+      "where": [
+        {
+          "kind": "ci",
+          "file": ".github/workflows/ci.yml"
+        },
+        {
+          "kind": "prepush",
+          "file": ".githooks/pre-push"
+        }
+      ]
+    },
+    {
+      "id": "audit",
+      "name": "Browser audit: axe WCAG 2.2 AA, CLS, overflow, visuals, list twins, links",
+      "rule": "project.ui-quality-gate",
+      "rule_file": ".ai/repo/rules/project/ui-quality-gate.v1.md",
+      "ci": false,
+      "where": [
+        {
+          "kind": "ci",
+          "file": ".github/workflows/ci.yml"
+        },
+        {
+          "kind": "online",
+          "file": ".github/workflows/pages.yml"
+        },
+        {
+          "kind": "online",
+          "file": ".github/workflows/monitor.yml"
+        }
+      ]
+    },
+    {
+      "id": "live",
+      "name": "Every live project site answers",
+      "rule": "project.data-measured",
+      "rule_file": ".ai/repo/rules/project/data-measured.v1.md",
+      "ci": false,
+      "where": [
+        {
+          "kind": "online",
+          "file": ".github/workflows/pages.yml"
+        },
+        {
+          "kind": "online",
+          "file": ".github/workflows/monitor.yml"
+        }
+      ]
+    },
+    {
+      "id": "fresh",
+      "name": "The measured data is younger than 24 hours",
+      "rule": "project.data-measured",
+      "rule_file": ".ai/repo/rules/project/data-measured.v1.md",
+      "ci": false,
+      "where": [
+        {
+          "kind": "online",
+          "file": ".github/workflows/monitor.yml"
+        }
+      ]
+    }
+  ]
+}
