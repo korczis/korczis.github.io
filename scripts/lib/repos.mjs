@@ -179,12 +179,16 @@ export function primaryLanguage(languages) {
 // Repositories that were the owner's at the last measurement and are not now, with why. check-data
 // fails on "empty": a repository with commits does not lose them, so it is a measuring fault (or a
 // repository the owner emptied, to be put on the hidden list).
+// A record that now carries the previous one's forge URL under another name was merged into it
+// (a GitLab twin joining its GitHub repository): "merged", not gone.
 export function droppedSince(previousOwn, records) {
   const now = new Map(records.map((r) => [r.name.toLowerCase(), r]));
+  const urls = new Set(records.flatMap((r) => Object.values(r.hosts ?? {})));
   const out = [];
   for (const before of previousOwn) {
     const r = now.get(before.name.toLowerCase());
-    if (!r) out.push({ name: before.name, now: 'gone' });
+    if (!r && Object.values(before.hosts ?? {}).some((u) => urls.has(u))) out.push({ name: before.name, now: 'merged' });
+    else if (!r) out.push({ name: before.name, now: 'gone' });
     else if (r.fork) out.push({ name: before.name, now: 'fork' });
     else if (r.share === null && r.state !== 'error') out.push({ name: before.name, now: 'empty' });
     else if (r.share !== null && r.share < 0.5) out.push({ name: before.name, now: 'mirror' });

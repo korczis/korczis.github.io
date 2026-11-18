@@ -11,7 +11,7 @@
 "babel-plugin-transform-graphql" = "libraries"
 # "website" holds "site"; a domain's site and GitHub Pages are web
 "korczis-com" = "web"
-"pavian-eu" = "web"
+# (pavian-eu, its GitLab twin, is one record with pavian.eu since fetch-index merges twins by slug)
 "pavian.eu" = "web"
 "korczis-github-com" = "web"
 "ApolloCrawler-github-io" = "web"
