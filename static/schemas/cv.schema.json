@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://korczis.github.io/schemas/cv.schema.json",
   "title": "data/cv.toml",
-  "description": "Work history, education and spoken languages: facts no repository holds, written by the owner (ADR 0004).",
+  "description": "Work history, education, spoken languages, profile links and availability for hire: facts no repository holds, from the owner (ADR 0004, ADR 0007).",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -118,6 +118,91 @@
               "basic"
             ]
           }
+        }
+      }
+    },
+    "links": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Profiles the owner keeps elsewhere; each becomes a sameAs of the JSON-LD Person.",
+      "properties": {
+        "linkedin": {
+          "$ref": "#/$defs/url"
+        }
+      }
+    },
+    "hire": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Availability for hire, rendered on /hire/, in llms.txt and as the JSON-LD Person's jobTitle and makesOffer. Absent or available = false: nothing is shown.",
+      "required": [
+        "available",
+        "headline",
+        "roles",
+        "engagement",
+        "workplace",
+        "regions"
+      ],
+      "properties": {
+        "available": {
+          "type": "boolean"
+        },
+        "since": {
+          "$ref": "#/$defs/date"
+        },
+        "headline": {
+          "$ref": "#/$defs/text"
+        },
+        "headline_cs": {
+          "$ref": "#/$defs/text"
+        },
+        "roles": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/text"
+          }
+        },
+        "roles_cs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/text"
+          }
+        },
+        "engagement": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "full-time",
+              "contract",
+              "fractional"
+            ]
+          }
+        },
+        "workplace": {
+          "enum": [
+            "remote",
+            "hybrid",
+            "on-site"
+          ]
+        },
+        "regions": {
+          "$ref": "#/$defs/text"
+        },
+        "regions_cs": {
+          "$ref": "#/$defs/text"
+        },
+        "rate_from": {
+          "type": "integer"
+        },
+        "rate_currency": {
+          "type": "string",
+          "pattern": "^[A-Z]{3}$"
+        },
+        "rate_unit": {
+          "enum": [
+            "hour",
+            "day"
+          ]
         }
       }
     }

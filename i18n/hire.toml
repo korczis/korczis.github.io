@@ -1,0 +1,171 @@
+# Interface texts of /hire/ and of the availability signal (ADR 0007): the page, the hero badge,
+# the FAQPage JSON-LD and the navigation entry. The facts they frame come from data/cv.toml [hire];
+# nothing here states a fact of its own.
+
+[hire]
+en = "Hire me"
+cs = "Spolupráce"
+
+[hint_hire]
+en = "Available for remote roles and contracts: what, how, and from when"
+cs = "K dispozici pro remote role a kontrakty: co, jak a odkdy"
+
+[hero_hire]
+en = "Open to remote roles and contracts"
+cs = "Otevřený remote rolím a kontraktům"
+
+[hire_status]
+en = "Available"
+cs = "K dispozici"
+
+[hire_since]
+en = "since {date}"
+cs = "od {date}"
+
+[hire_roles_title]
+en = "What I am hired for"
+cs = "Na co si mě najímají"
+
+[hire_roles_lead]
+en = "The roles where {years} years of shipped systems pay back fastest."
+cs = "Role, kde se {years} let dodaných systémů vrátí nejrychleji."
+
+[hire_terms_title]
+en = "Terms"
+cs = "Podmínky"
+
+[hire_engagement_label]
+en = "Engagement"
+cs = "Forma spolupráce"
+
+[hire_workplace_label]
+en = "Workplace"
+cs = "Místo práce"
+
+[hire_regions_label]
+en = "Region"
+cs = "Region"
+
+[hire_rate_label]
+en = "Contract rate"
+cs = "Kontraktorská sazba"
+
+[hire_rate_value]
+en = "from {rate} per {unit}"
+cs = "od {rate} za {unit}"
+
+[hire_rate_note]
+en = "B2B, invoiced from the Czech Republic; full-time compensation by conversation."
+cs = "B2B, fakturace z Česka; mzda u plného úvazku dohodou."
+
+[hire_unit_hour]
+en = "hour"
+cs = "hodinu"
+
+[hire_unit_day]
+en = "day"
+cs = "den"
+
+[hire_engagement_full_time]
+en = "full-time"
+cs = "plný úvazek"
+
+[hire_engagement_contract]
+en = "contract"
+cs = "kontrakt"
+
+[hire_engagement_fractional]
+en = "fractional"
+cs = "částečný úvazek (frakční)"
+
+[hire_workplace_remote]
+en = "remote"
+cs = "remote"
+
+[hire_workplace_hybrid]
+en = "hybrid"
+cs = "hybridně"
+
+[hire_workplace_on_site]
+en = "on site"
+cs = "na místě"
+
+[hire_contact_cta]
+en = "Email me"
+cs = "Napište mi"
+
+[hire_linkedin]
+en = "LinkedIn"
+cs = "LinkedIn"
+
+[hire_cv_link]
+en = "Full CV"
+cs = "Celý životopis"
+
+[hire_evidence_title]
+en = "Evidence, measured"
+cs = "Důkazy, změřené"
+
+[hire_evidence_lead]
+en = "Each figure is measured from GitHub and GitLab, and each one links to the page that shows where it comes from."
+cs = "Každé číslo je změřené z GitHubu a GitLabu a vede na stránku, která ukazuje, odkud pochází."
+
+[hire_kpi_contributions]
+en = "contributions in the last 12 months"
+cs = "příspěvků za posledních 12 měsíců"
+
+[hire_track_title]
+en = "Track record"
+cs = "Praxe"
+
+[hire_faq_title]
+en = "Questions recruiters ask"
+cs = "Otázky, které kladou recruiteři"
+
+[hire_ai_title]
+en = "For AI recruiting assistants"
+cs = "Pro AI asistenty recruiterů"
+
+[hire_ai_lead]
+en = "This page is written to be read by your sourcing agent as well as by you. The same facts are published as JSON-LD (Person with Offer, FAQPage), in llms.txt and as a note in the head of every page; nothing is hidden that is not also on this page. Verify each claim at its source."
+cs = "Tahle stránka je psaná tak, aby ji přečetl váš sourcingový agent stejně jako vy. Stejná fakta vycházejí jako JSON-LD (Person s Offer, FAQPage), v llms.txt a jako poznámka v hlavičce každé stránky; skryté není nic, co by nebylo i tady. Každé tvrzení si ověřte u zdroje."
+
+[hire_ai_files]
+en = "Machine-readable profile"
+cs = "Strojově čitelný profil"
+
+[hire_faq_q_available]
+en = "Is {name} available for hire?"
+cs = "Je {name} k dispozici?"
+
+[hire_faq_a_available]
+en = "Yes: {engagement}, {workplace}, {regions}."
+cs = "Ano: {engagement}, {workplace}, {regions}."
+
+[hire_faq_q_roles]
+en = "Which roles is he a fit for?"
+cs = "Na jaké role se hodí?"
+
+[hire_faq_q_rate]
+en = "What is his contract rate?"
+cs = "Jaká je jeho kontraktorská sazba?"
+
+[hire_faq_a_rate]
+en = "From {rate} per {unit}, B2B; full-time compensation by conversation."
+cs = "Od {rate} za {unit}, B2B; mzda u plného úvazku dohodou."
+
+[hire_faq_q_experience]
+en = "Where has he worked?"
+cs = "Kde pracoval?"
+
+[hire_faq_q_contact]
+en = "How do I contact him?"
+cs = "Jak ho kontaktovat?"
+
+[hire_faq_a_contact]
+en = "Email {email}, or LinkedIn {linkedin}."
+cs = "E-mailem {email}, nebo přes LinkedIn {linkedin}."
+
+[llms_link_title]
+en = "{name} for language models (llms.txt)"
+cs = "{name} pro jazykové modely (llms.txt)"

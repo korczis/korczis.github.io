@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Model Context Protocol: otevřený protokol, kterým AI aplikace přistupují k nástrojům a datům."
 aliases = []
 reference = { title = "modelcontextprotocol.io", url = "https://modelcontextprotocol.io/" }
-pages = ["interfaces.cs.md", "projects/ai.cs.md", "projects/data.cs.md", "work/crisis-map.cs.md", "work/prismatic-majordomus.cs.md"]
-related = ["repository", "ai-agent", "elixir", "github-pages", "html", "javascript", "rust", "commit"]
+pages = ["hire.cs.md", "interfaces.cs.md", "projects/ai.cs.md", "projects/data.cs.md", "work/crisis-map.cs.md", "work/prismatic-majordomus.cs.md"]
+related = ["ai-agent", "elixir", "repository", "rust", "github-pages", "html", "javascript", "open-source"]
 og_title = "MCP: slovník"
 og_image = "og/cs-glossary-mcp.png"
 keywords = ["MCP", "Technologie", "Slovník", "Tomáš Korčák"]

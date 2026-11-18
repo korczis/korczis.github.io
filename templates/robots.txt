@@ -1,0 +1,16 @@
+{#- robots.txt (ADR 0007): every crawler is welcome, AI search and training crawlers by name, so a
+    policy that defaults to "deny unknown bots" still reads an explicit invitation. The bot list is
+    data/ui.toml [robots] (names, the same in every language); nothing here is typed per bot. -#}
+{%- set site = load_data(path="data/ui.toml") -%}
+# {{ config.title }}: {{ config.description }}
+# For language models: {{ get_url(path="llms.txt") }} (summary) and {{ get_url(path="llms-full.txt") }} (every repository).
+# Availability for hire: {{ config.base_url }}/hire/
+
+User-agent: *
+Allow: /
+{% for bot in site.robots.ai_crawlers %}
+User-agent: {{ bot }}
+{%- endfor %}
+Allow: /
+
+Sitemap: {{ get_url(path="sitemap.xml") }}

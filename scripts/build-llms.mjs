@@ -50,6 +50,35 @@ for (const [key, category] of Object.entries(catalogue.categories)) {
   lines.push('');
 }
 
+// Availability for hire and the work history: the owner's facts in data/cv.toml (ADR 0004, 0007),
+// placed before the catalogue's tail so a language model asked about the owner reads them first.
+const cv = readToml('data/cv.toml');
+if (cv.hire?.available) {
+  const h = cv.hire;
+  lines.push(
+    '## Hire',
+    '',
+    `> ${config.extra.author} is available for hire: ${h.headline}. ${base}/hire/`,
+    '',
+    ...h.roles.map((r) => `- ${r}`),
+    `- Engagement: ${h.engagement.join(', ')}; ${h.workplace}, ${h.regions}${h.since ? `; available since ${h.since}` : ''}`,
+    ...(h.rate_from ? [`- Contract rate: from ${h.rate_currency} ${h.rate_from} per ${h.rate_unit}, B2B; full-time compensation by conversation`] : []),
+    ...(readJson('data/github.json').profile?.email ? [`- Contact: ${readJson('data/github.json').profile.email}`] : []),
+    ...Object.values(cv.links ?? {}).map((u) => `- Profile: ${u}`),
+    '',
+  );
+}
+if (cv.roles?.length) {
+  lines.push('## Experience', '');
+  for (const r of cv.roles) {
+    const span = `${r.start} to ${r.end ?? 'present'}`;
+    lines.push(`- ${r.title}, ${r.organisation} (${span})${r.summary ? `: ${oneLine(r.summary)}` : ''}`);
+  }
+  for (const e of cv.education ?? []) lines.push(`- Education: ${e.degree}, ${e.institution}${e.start ? ` (${e.start} to ${e.end ?? 'present'})` : ''}`);
+  if (cv.languages?.length) lines.push(`- Languages: ${cv.languages.map((l) => `${l.name} (${l.level})`).join(', ')}`);
+  lines.push('');
+}
+
 // The supervisory layer the site is built under, as the catalogue describes it.
 const majordomus = me.majordomusUrl && catalogue.projects.find((p) => p.url?.replace(/\/$/, '') === me.majordomusUrl.replace(/\/$/, ''));
 lines.push(

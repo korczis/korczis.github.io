@@ -349,6 +349,10 @@
    "svg": "0fcbc334cf304571",
    "png": "ba88c0a7d564b29f"
   },
+  "cs-hire": {
+   "svg": "39dde62cfb406e27",
+   "png": "1bd367b40aeb6ba0"
+  },
   "cs-home": {
    "svg": "b4a02a18d34ecc1b",
    "png": "24ec5814d574312b"
@@ -796,6 +800,10 @@
   "glossary-zola": {
    "svg": "29b4433353c9b00e",
    "png": "7002ee1ee72e7edb"
+  },
+  "hire": {
+   "svg": "b94849eb65ee30b3",
+   "png": "cc56b7f432e19c95"
   },
   "home": {
    "svg": "ec999a7bf44e77b6",

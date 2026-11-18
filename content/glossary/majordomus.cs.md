@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Vlastníkova dohledová vrstva pro práci s AI: jedna politika pro každého agenta, vymezené úkoly a dokončení, která musí být doložena."
 aliases = []
 reference = { title = "majordomus.dev", url = "https://majordomus.dev" }
-pages = ["about.cs.md", "interfaces.cs.md", "stack.cs.md"]
-related = ["ai-agent", "github-pages", "alpine-js", "apache-echarts", "chart-js", "cytoscape-js", "d3", "elixir"]
+pages = ["about.cs.md", "hire.cs.md", "interfaces.cs.md", "stack.cs.md"]
+related = ["ai-agent", "elixir", "github-pages", "mcp", "open-source", "osint", "rust", "alpine-js"]
 og_title = "Majordomus: slovník"
 og_image = "og/cs-glossary-majordomus.png"
 keywords = ["Majordomus", "Technologie", "Slovník", "Tomáš Korčák"]

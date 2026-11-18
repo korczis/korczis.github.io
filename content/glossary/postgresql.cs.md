@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Open-source relační databáze známá svou korektností a rozšířeními."
 aliases = []
 reference = { title = "postgresql.org", url = "https://www.postgresql.org/about/" }
-pages = ["projects/tools.cs.md"]
-related = ["cpp", "csharp", "elixir", "javascript", "open-source", "python", "repository", "ruby"]
+pages = ["hire.cs.md", "projects/tools.cs.md"]
+related = ["elixir", "open-source", "rust", "ai-agent", "cpp", "csharp", "due-diligence", "javascript"]
 og_title = "PostgreSQL: slovník"
 og_image = "og/cs-glossary-postgresql.png"
 keywords = ["PostgreSQL", "Technologie", "Slovník", "Tomáš Korčák"]

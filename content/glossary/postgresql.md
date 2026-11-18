@@ -16,8 +16,8 @@ kind = "technology"
 definition = "An open-source relational database known for correctness and extensions."
 aliases = []
 reference = { title = "postgresql.org", url = "https://www.postgresql.org/about/" }
-pages = ["projects/tools.md"]
-related = ["cpp", "csharp", "elixir", "javascript", "open-source", "python", "repository", "ruby"]
+pages = ["hire.md", "projects/tools.md"]
+related = ["elixir", "open-source", "rust", "ai-agent", "cpp", "csharp", "due-diligence", "javascript"]
 og_title = "PostgreSQL: glossary"
 og_image = "og/glossary-postgresql.png"
 keywords = ["PostgreSQL", "Technology", "Glossary", "Tomas Korcak"]

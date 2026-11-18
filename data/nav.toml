@@ -34,6 +34,16 @@ footer = false
 palette = true
 
 [[nav]]
+key = "hire"
+path = "/hire/"
+icon = "mail"
+badge = ""
+hint = "hint_hire"
+sidebar = true
+footer = true
+palette = true
+
+[[nav]]
 key = "recent_work"
 path = "/work/"
 icon = "clock"

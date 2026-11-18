@@ -68,3 +68,5 @@ Accepted by the owner on 2026-11-15, answering in Claude Code session
 
 - Question: "Which of the five proposed ADRs in korczis.github.io should I mark accepted? (0006, the NDA-mined experience section, is already active.)"
 - Answer: "0001 Zola + Flowbite Pro, 0002 lundra runner, 0003 all public repos, 0004 + 0005"
+- Amended by ADR 0007 (2026-11-18): with the owner's consent the CV was imported from the owner's
+  LinkedIn profile, and `data/cv.toml` also holds `[links]` and `[hire]`.

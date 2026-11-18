@@ -22,6 +22,136 @@
 # name = "Czech"                       # name_cs = "čeština"
 # level = "native"                     # native | fluent | professional | basic
 
-roles = []
-education = []
-languages = []
+# Filled on 2026-11-18 from the owner's LinkedIn profile (linkedin.com/in/korcaktomas), word for
+# word, with the owner's consent in session f877b790-5df2-4d41-990a-fddee785c35e (ADR 0007).
+
+[links]
+linkedin = "https://www.linkedin.com/in/korcaktomas/"
+
+# Availability for hire (ADR 0007): /hire/, llms.txt and the JSON-LD Person read it.
+[hire]
+available = true
+since = "2026-11"
+headline = "Staff engineer for AI agent infrastructure, Elixir and Rust"
+headline_cs = "Staff engineer pro infrastrukturu AI agentů, Elixir a Rust"
+roles = [
+  "Staff or principal engineer: AI agent infrastructure, developer tooling, MCP",
+  "Forward deployed or applied AI engineer: agentic workflows in production",
+  "Backend and distributed systems: Elixir, OTP, Phoenix, Rust, PostgreSQL",
+  "Fractional CTO and technical due diligence: data, OSINT, M&A",
+]
+roles_cs = [
+  "Staff nebo principal engineer: infrastruktura AI agentů, vývojářské nástroje, MCP",
+  "Forward deployed nebo applied AI engineer: agentní workflow v produkci",
+  "Backend a distribuované systémy: Elixir, OTP, Phoenix, Rust, PostgreSQL",
+  "Frakční CTO a technická due diligence: data, OSINT, M&A",
+]
+engagement = ["full-time", "contract", "fractional"]
+workplace = "remote"
+regions = "worldwide, working in the Central European time zone"
+regions_cs = "celosvětově, v časovém pásmu střední Evropy"
+rate_from = 110
+rate_currency = "USD"
+rate_unit = "hour"
+
+[[roles]]
+title = "Freelance Technical Mentor & Engineering Advisor"
+organisation = "Independent"
+start = "2025-01"
+summary = "One-on-one mentoring and advisory: software architecture, Elixir, OTP and Phoenix, AI-assisted and agentic software engineering, LLM applications and developer tooling, data engineering and OSINT systems, technical due diligence."
+summary_cs = "Individuální mentoring a poradenství: softwarová architektura, Elixir, OTP a Phoenix, AI-asistované a agentní softwarové inženýrství, LLM aplikace a vývojářské nástroje, datové inženýrství a OSINT systémy, technická due diligence."
+
+[[roles]]
+title = "CTO / Lead Developer"
+organisation = "International Leadership Development Firm"
+start = "2024-12"
+
+[[roles]]
+title = "Independent Consultant & Independent Contractor"
+organisation = "Self Employed"
+start = "2023-01"
+
+[[roles]]
+title = "Staff Software Engineer"
+organisation = "Kiwi.com"
+url = "https://www.kiwi.com/"
+start = "2019-06"
+end = "2022-05"
+
+[[roles]]
+title = "CTO / Core Developer"
+organisation = "Block Collider"
+start = "2018-02"
+end = "2019-01"
+
+[[roles]]
+title = "Principal Software Engineer"
+organisation = "GoodData"
+url = "https://www.gooddata.com/"
+start = "2017-08"
+end = "2018-02"
+
+[[roles]]
+title = "Senior Software Engineer / Combat Data Engineer"
+organisation = "GoodData"
+url = "https://www.gooddata.com/"
+start = "2014-03"
+end = "2017-08"
+summary = "San Francisco Bay Area. GoodData Ruby SDK, the high-level wrapper over the platform's APIs."
+summary_cs = "San Francisco Bay Area. GoodData Ruby SDK, vysokoúrovňová vrstva nad API platformy."
+
+[[roles]]
+title = "Software Development Lead / Software Architect"
+organisation = "Moravia IT"
+start = "2012-11"
+end = "2014-02"
+
+[[roles]]
+title = "Senior Developer"
+organisation = "Moravia IT"
+start = "2012-08"
+end = "2014-02"
+
+[[roles]]
+title = "Programmer"
+organisation = "Kuju Entertainment - Vatra Games"
+start = "2008-05"
+end = "2012-04"
+summary = "Silent Hill: Downpour (Xbox 360, PS3), Rush'N Attack Ex-Patriot (Xbox Live Arcade, PSN), Disney Sing It; tools programming, i18n and L10n."
+summary_cs = "Silent Hill: Downpour (Xbox 360, PS3), Rush'N Attack Ex-Patriot (Xbox Live Arcade, PSN), Disney Sing It; programování nástrojů, i18n a L10n."
+
+[[roles]]
+title = "Gameplay Programmer"
+organisation = "2K Games"
+start = "2007-01"
+end = "2008-05"
+
+[[roles]]
+title = "Programmer"
+organisation = "Honeywell Aerospace"
+start = "2005-07"
+end = "2007-01"
+summary = "Greater Phoenix Area. Test engineering and tools programming."
+summary_cs = "Greater Phoenix Area. Testovací inženýrství a programování nástrojů."
+
+[[education]]
+institution = "SSOS - Technicke Lyceum, Prostejov"
+degree = "Electrotechnics"
+degree_cs = "Elektrotechnika"
+start = "2001-09"
+end = "2005-06"
+
+[[languages]]
+name = "Czech"
+name_cs = "čeština"
+level = "native"
+
+[[languages]]
+name = "English"
+name_cs = "angličtina"
+level = "fluent"
+
+[[languages]]
+name = "German"
+name_cs = "němčina"
+level = "basic"

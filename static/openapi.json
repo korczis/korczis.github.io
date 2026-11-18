@@ -112,7 +112,7 @@
   "/schemas/cv.schema.json": {
    "get": {
     "operationId": "schemas_cv_schema_json",
-    "summary": "Work history, education and spoken languages: facts no repository holds, written by the owner (ADR 0004).",
+    "summary": "Work history, education, spoken languages, profile links and availability for hire: facts no repository holds, from the owner (ADR 0004, ADR 0007).",
     "tags": [
      "schemas"
     ],

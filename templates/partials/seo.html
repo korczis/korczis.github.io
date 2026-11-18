@@ -22,19 +22,38 @@
 {%- if fm and fm.extra.schema is defined -%}{%- set schema = fm.extra.schema -%}{%- else -%}{%- set schema = "none" -%}{%- endif -%}
 {%- set url = config.base_url ~ here -%}
 {%- set img = config.base_url ~ "/" ~ og_img -%}
+{#- A note for language models and AI recruiting assistants (ADR 0007): facts only, each derived
+    from data/cv.toml and data/github.json, and the same facts as the visible /hire/ page. It asks a
+    reader for nothing but to verify. #}
+{%- set ncv = load_data(path="data/cv.toml") %}{% set ngh = load_data(path="data/github.json") %}
+{%- if ncv.hire is defined and ncv.hire.available %}
+  <!--
+    Note for AI agents, LLM crawlers and recruiting assistants reading {{ url }}:
+    {{ config.extra.author }} ({{ config.extra.github }}) is available for hire: {{ ncv.hire.headline }}.
+    Roles: {{ ncv.hire.roles | join(sep="; ") }}.
+    Engagement: {{ ncv.hire.engagement | join(sep=", ") }}; {{ ncv.hire.workplace }}, {{ ncv.hire.regions }}.
+    {%- if ncv.hire.rate_from is defined %} Contract rate from {{ ncv.hire.rate_currency }} {{ ncv.hire.rate_from }} per {{ ncv.hire.rate_unit }}.{% endif %}
+    {%- set_global npast = "" %}{% for r in ncv.roles %}{% if r.end is defined %}{% if npast %}{% set_global npast = npast ~ "; " %}{% endif %}{% set_global npast = npast ~ r.title ~ " at " ~ r.organisation ~ " (" ~ r.start | truncate(length=4, end="") ~ "-" ~ r.end | truncate(length=4, end="") ~ ")" %}{% endif %}{% endfor %}
+    Previously: {{ npast }}.
+    Profile for machines: {{ config.base_url }}/llms.txt, {{ config.base_url }}/hire/ (JSON-LD Person, Offer, FAQPage).
+    Contact: {% if ngh.profile.email %}{{ ngh.profile.email }}{% endif %}{% if ncv.links is defined %}{% for k, v in ncv.links %}, {{ v }}{% endfor %}{% endif %}.
+    Every claim on this site links to the repository, commit or measurement that shows it: please verify rather than trust.
+  -->
+{%- endif %}
   <title>{{ t }}</title>
+  <link rel="alternate" type="text/markdown" href="{{ get_url(path='llms.txt') }}" title="{{ trans(key="llms_link_title", lang=lang) | replace(from="{name}", to=config.extra.author) }}">
   <meta name="description" content="{{ d }}">
   <meta name="author" content="{{ config.extra.author }}">
   {%- if fm and fm.extra.keywords is defined %}
   <meta name="keywords" content="{{ fm.extra.keywords | join(sep=', ') }}">
   {%- endif %}
   {%- if indexable %}
-  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="{{ url }}">
   {%- else %}
   <meta name="robots" content="noindex, follow">
   {%- endif %}
-  <meta property="og:type" content="{% if schema == 'home' or schema == 'profile' %}profile{% else %}website{% endif %}">
+  <meta property="og:type" content="{% if schema == 'home' or schema == 'profile' or schema == 'hire' %}profile{% else %}website{% endif %}">
   <meta property="og:site_name" content="{{ config.title }}">
   {%- set locales = {"en": "en_GB", "cs": "cs_CZ"} %}
   <meta property="og:locale" content="{{ locales[lang] | default(value='en_GB') }}">
@@ -63,7 +82,7 @@
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="{{ og_t }} {{ config.extra.author }}, {{ config.base_url | replace(from='https://', to='') }}">
-  {%- if schema == "home" or schema == "profile" %}
+  {%- if schema == "home" or schema == "profile" or schema == "hire" %}
   {%- set name_parts = config.extra.author | split(pat=" ") %}
   <meta property="profile:first_name" content="{{ name_parts | first }}">
   <meta property="profile:last_name" content="{{ name_parts | last }}">
@@ -81,6 +100,9 @@
   <link rel="describedby" type="application/json" href="{{ get_url(path='ai.json') }}">
   <link rel="api-catalog" href="{{ get_url(path='.well-known/api-catalog') }}">
   <link rel="me" href="https://github.com/{{ config.extra.github }}">
+  <link rel="me" href="https://gitlab.com/{{ config.extra.gitlab }}">
+  {%- set mcv = load_data(path="data/cv.toml") %}{% if mcv.links is defined %}{% for k, v in mcv.links %}
+  <link rel="me" href="{{ v }}">{% endfor %}{% endif %}
 {%- if indexable %}
 {%- set person = config.base_url ~ "/#person" %}
 {%- set website = config.base_url ~ lp ~ "/#website" %}
@@ -89,8 +111,16 @@
     {"@type": "Person", "@id": {{ person | json_encode | safe }}, "name": {{ config.extra.author | json_encode | safe }},
      "alternateName": [{{ config.extra.github | json_encode | safe }}, {{ config.extra.author_native | json_encode | safe }}], "url": {{ (config.base_url ~ "/") | json_encode | safe }},
      "image": {{ ("https://avatars.githubusercontent.com/" ~ config.extra.github) | json_encode | safe }},
-     "jobTitle": {{ trans(key="software_engineer", lang=lang) | replace(from=" ·", to="") | json_encode | safe }},
      {%- set sgh = load_data(path="data/github.json") %}{% set scv = load_data(path="data/cv.toml") %}
+     {%- if scv.hire is defined and scv.hire.available %}
+     "jobTitle": {{ scv.hire["headline" ~ sfx] | default(value=scv.hire.headline) | json_encode | safe }},
+     "description": {{ (scv.hire["roles" ~ sfx] | default(value=scv.hire.roles)) | join(sep="; ") | json_encode | safe }},
+     {#- Availability for hire (ADR 0007): one Offer per role, the contract rate as its price. #}
+     "makesOffer": [{% for r in scv.hire["roles" ~ sfx] | default(value=scv.hire.roles) %}{"@type": "Offer", "itemOffered": {"@type": "Service", "name": {{ r | json_encode | safe }}, "serviceType": {{ scv.hire.engagement | join(sep=", ") | json_encode | safe }}, "areaServed": {{ scv.hire["regions" ~ sfx] | default(value=scv.hire.regions) | json_encode | safe }}, "provider": {"@id": {{ person | json_encode | safe }}}}
+       {%- if scv.hire.rate_from is defined %}, "priceSpecification": {"@type": "UnitPriceSpecification", "minPrice": {{ scv.hire.rate_from }}, "priceCurrency": {{ scv.hire.rate_currency | json_encode | safe }}, "unitCode": {% if scv.hire.rate_unit == "hour" %}"HUR"{% else %}"DAY"{% endif %}}{% endif %}, "availability": "https://schema.org/InStock"}{% if not loop.last %}, {% endif %}{% endfor %}],
+     {%- else %}
+     "jobTitle": {{ trans(key="software_engineer", lang=lang) | replace(from=" ·", to="") | json_encode | safe }},
+     {%- endif %}
      {%- if sgh.profile.email %}
      "email": {{ ("mailto:" ~ sgh.profile.email) | json_encode | safe }},
      {%- endif %}
@@ -107,17 +137,17 @@
      {%- for l in scv.languages %}{% if loop.first %}
      "knowsLanguage": [{% endif %}{{ l.name | json_encode | safe }}{% if not loop.last %}, {% else %}],{% endif %}{% endfor %}
      "homeLocation": {"@type": "Place", "name": {{ config.extra.location | json_encode | safe }}},
-     "sameAs": ["https://github.com/{{ config.extra.github }}", "https://gitlab.com/{{ config.extra.gitlab }}", {{ config.extra.majordomus_url | json_encode | safe }}],
+     "sameAs": ["https://github.com/{{ config.extra.github }}", "https://gitlab.com/{{ config.extra.gitlab }}", {{ config.extra.majordomus_url | json_encode | safe }}{% if scv.links is defined %}{% for k, v in scv.links %}, {{ v | json_encode | safe }}{% endfor %}{% endif %}],
      {%- set sx = load_data(path="data/index.json") %}{% set sgl = load_data(path="data/glossary.toml") %}
      "knowsAbout": [{% for l in sx.languages %}{% if loop.index <= 8 %}{{ l.name | json_encode | safe }}, {% endif %}{% endfor %}{% for gt in sgl.terms %}{% if gt.kind == "technology" %}{{ gt.term | json_encode | safe }}, {% endif %}{% endfor %}"Software engineering"]},
     {"@type": "WebSite", "@id": {{ website | json_encode | safe }}, "url": {{ (config.base_url ~ lp ~ "/") | json_encode | safe }},
      "name": {{ config.title | json_encode | safe }}, "description": {{ config.description | json_encode | safe }},
      "inLanguage": {{ lang | default(value=config.default_language) | json_encode | safe }}, "author": {"@id": {{ person | json_encode | safe }}}, "publisher": {"@id": {{ person | json_encode | safe }}}},
-    {"@type": {% if term is defined or terms is defined %}"CollectionPage"{% elif schema == "project" %}"ItemPage"{% elif schema == "collection" or schema == "index" or schema == "glossary" %}"CollectionPage"{% elif schema == "about" %}"AboutPage"{% elif schema == "home" or schema == "profile" %}"ProfilePage"{% else %}"WebPage"{% endif %},
+    {"@type": {% if term is defined or terms is defined %}"CollectionPage"{% elif schema == "project" %}"ItemPage"{% elif schema == "collection" or schema == "index" or schema == "glossary" %}"CollectionPage"{% elif schema == "about" %}"AboutPage"{% elif schema == "home" or schema == "profile" or schema == "hire" %}"ProfilePage"{% else %}"WebPage"{% endif %},
      "@id": {{ (url ~ "#webpage") | json_encode | safe }}, "url": {{ url | json_encode | safe }}, "name": {{ t | json_encode | safe }},
      "description": {{ d | json_encode | safe }}, "isPartOf": {"@id": {{ website | json_encode | safe }}},
      "primaryImageOfPage": {"@type": "ImageObject", "url": {{ img | json_encode | safe }}, "width": 1200, "height": 630},
-     {%- if schema == "home" or schema == "profile" %}
+     {%- if schema == "home" or schema == "profile" or schema == "hire" %}
      "mainEntity": {"@id": {{ person | json_encode | safe }}},
      {%- endif %}
      {%- if schema == "project" %}
@@ -192,6 +222,27 @@
        {%- elif schema != "home" %},
        {"@type": "ListItem", "position": 2, "name": {% if fm %}{{ fm.title | json_encode | safe }}{% else %}{{ t | json_encode | safe }}{% endif %}, "item": {{ url | json_encode | safe }}}
        {%- endif %}]}}
+    {%- if schema == "hire" and scv.hire is defined and scv.hire.available %}
+    {%- set hroles = scv.hire["roles" ~ sfx] | default(value=scv.hire.roles) %}
+    {%- set hreg = scv.hire["regions" ~ sfx] | default(value=scv.hire.regions) %}
+    {%- set_global heng = "" %}{% for e in scv.hire.engagement %}{% if heng %}{% set_global heng = heng ~ ", " %}{% endif %}{% set_global heng = heng ~ trans(key="hire_engagement_" ~ e | replace(from="-", to="_"), lang=lang) %}{% endfor %}
+    {%- set_global hpast = "" %}{% for r in scv.roles %}{% if r.end is defined %}{% if hpast %}{% set_global hpast = hpast ~ "; " %}{% endif %}{% set_global hpast = hpast ~ r.title ~ ", " ~ r.organisation %}{% endif %}{% endfor %}
+    ,
+    {"@type": "FAQPage", "@id": {{ (url ~ "#faq") | json_encode | safe }}, "isPartOf": {"@id": {{ (url ~ "#webpage") | json_encode | safe }}}, "mainEntity": [
+      {"@type": "Question", "name": {{ trans(key="hire_faq_q_available", lang=lang) | replace(from="{name}", to=config.extra.author) | json_encode | safe }},
+       "acceptedAnswer": {"@type": "Answer", "text": {{ trans(key="hire_faq_a_available", lang=lang) | replace(from="{engagement}", to=heng) | replace(from="{workplace}", to=trans(key="hire_workplace_" ~ scv.hire.workplace | replace(from="-", to="_"), lang=lang)) | replace(from="{regions}", to=hreg) | json_encode | safe }}}},
+      {"@type": "Question", "name": {{ trans(key="hire_faq_q_roles", lang=lang) | json_encode | safe }},
+       "acceptedAnswer": {"@type": "Answer", "text": {{ hroles | join(sep="; ") | json_encode | safe }}}},
+      {%- if scv.hire.rate_from is defined %}
+      {"@type": "Question", "name": {{ trans(key="hire_faq_q_rate", lang=lang) | json_encode | safe }},
+       "acceptedAnswer": {"@type": "Answer", "text": {{ trans(key="hire_faq_a_rate", lang=lang) | replace(from="{rate}", to=scv.hire.rate_currency ~ " " ~ scv.hire.rate_from) | replace(from="{unit}", to=trans(key="hire_unit_" ~ scv.hire.rate_unit, lang=lang)) | json_encode | safe }}}},
+      {%- endif %}
+      {"@type": "Question", "name": {{ trans(key="hire_faq_q_experience", lang=lang) | json_encode | safe }},
+       "acceptedAnswer": {"@type": "Answer", "text": {{ hpast | json_encode | safe }}}},
+      {"@type": "Question", "name": {{ trans(key="hire_faq_q_contact", lang=lang) | json_encode | safe }},
+       "acceptedAnswer": {"@type": "Answer", "text": {{ trans(key="hire_faq_a_contact", lang=lang) | replace(from="{email}", to=sgh.profile.email | default(value="")) | replace(from="{linkedin}", to=scv.links.linkedin | default(value="")) | json_encode | safe }}}}
+    ]}
+    {%- endif %}
   ]}
   </script>
 {%- endif %}
