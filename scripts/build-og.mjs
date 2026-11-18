@@ -91,7 +91,7 @@ const X = 80;
 const FIELD_LEFT = 820;
 const TEXT_RIGHT = 800;
 const TITLE_TOP = 230;
-const TITLE = { large: 66, small: 58, lead: 8, maxLines: 3 };
+const TITLE = { large: 66, small: 58, min: 40, lead: 8, maxLines: 3 };
 const DESC = { size: 26, line: 36, gap: 26, width: 680, maxLines: 3 };
 const PILL = { top: 540, height: 44, pad: 24, gap: 12, size: 20 };
 const GAP = 16;
@@ -181,11 +181,17 @@ function pills(card, lang = card.lang) {
 // The whole card's geometry, computed once: the SVG draws it and --check asserts it.
 function layout(card) {
   const { title, description } = card;
-  let titleSize = TITLE.large;
-  let t1 = wrap(title, { size: titleSize, weight: 800, width: TEXT_RIGHT - X, maxLines: 2 });
-  if (t1.cut) {
-    titleSize = TITLE.small;
-    t1 = wrap(title, { size: titleSize, weight: 800, width: TEXT_RIGHT - X, maxLines: TITLE.maxLines });
+  // A word wider than the text column (a long repository name, a URL) could only be cut inside
+  // itself: the title takes the size at which its widest word fits with the ellipsis, down to
+  // TITLE.min, so every cut stays between words.
+  const column = TEXT_RIGHT - X;
+  const widest = Math.max(...title.split(/\s+/).filter(Boolean).map((w) => measure(`${w}…`, 1, 800)));
+  const fit = Math.max(TITLE.min, Math.floor(column / widest));
+  let titleSize = Math.min(TITLE.large, fit);
+  let t1 = wrap(title, { size: titleSize, weight: 800, width: column, maxLines: 2 });
+  if (t1.cut || titleSize < TITLE.large) {
+    titleSize = Math.min(TITLE.small, fit);
+    t1 = wrap(title, { size: titleSize, weight: 800, width: column, maxLines: TITLE.maxLines });
   }
   const titleStep = titleSize + TITLE.lead;
   const descTop = TITLE_TOP + t1.lines.length * titleStep + DESC.gap;
