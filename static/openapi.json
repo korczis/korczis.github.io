@@ -67,10 +67,31 @@
     }
    }
   },
+  "/cs/resume.json": {
+   "get": {
+    "operationId": "cs_resume_json",
+    "summary": "JSON Resume of Tomáš Korčák: Staff engineer pro infrastrukturu AI agentů, Elixir a Rust",
+    "tags": [
+     "data"
+    ],
+    "responses": {
+     "200": {
+      "description": "The file, as published",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
   "/llms-full.txt": {
    "get": {
     "operationId": "llms_full_txt",
-    "summary": "Tomas Korcak: Software for evidence: AI agents that prove their work, honest instruments in the browser, knowledge you can check.",
+    "summary": "Tomas Korcak: Tomas Korcak: Staff engineer for AI agent infrastructure, Elixir and Rust. Remote, worldwide, working in the Central European time zone. Available for full-time, contract, and fractional work: https://korczis.github.io/hire/",
     "tags": [
      "text"
     ],
@@ -91,7 +112,7 @@
   "/llms.txt": {
    "get": {
     "operationId": "llms_txt",
-    "summary": "Tomas Korcak: Software for evidence: AI agents that prove their work, honest instruments in the browser, knowledge you can check.",
+    "summary": "Tomas Korcak: Tomas Korcak: Staff engineer for AI agent infrastructure, Elixir and Rust. Remote, worldwide, working in the Central European time zone. Available for full-time, contract, and fractional work: https://korczis.github.io/hire/",
     "tags": [
      "text"
     ],
@@ -102,6 +123,27 @@
        "text/plain": {
         "schema": {
          "type": "string"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/resume.json": {
+   "get": {
+    "operationId": "resume_json",
+    "summary": "JSON Resume of Tomas Korcak: Staff engineer for AI agent infrastructure, Elixir and Rust",
+    "tags": [
+     "data"
+    ],
+    "responses": {
+     "200": {
+      "description": "The file, as published",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object"
         }
        }
       }
@@ -155,6 +197,27 @@
    "get": {
     "operationId": "schemas_front_matter_schema_json",
     "summary": "Every content/*.md carries this front matter (TOML). It drives the page's title, SEO, Open Graph and Twitter tags, OG image, JSON-LD and its place in the site; nothing about a page is typed in a template. Validated by scripts/check-front-matter.mjs.",
+    "tags": [
+     "schemas"
+    ],
+    "responses": {
+     "200": {
+      "description": "The file, as published",
+      "content": {
+       "application/schema+json": {
+        "schema": {
+         "type": "object"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/schemas/jsonresume.schema.json": {
+   "get": {
+    "operationId": "schemas_jsonresume_schema_json",
+    "summary": "Resume Schema",
     "tags": [
      "schemas"
     ],
