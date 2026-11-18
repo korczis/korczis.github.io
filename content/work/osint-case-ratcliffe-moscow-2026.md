@@ -11,10 +11,12 @@ tags = ["Security and OSINT", "HTML", "Python", "Shell"]
 
 [extra]
 repo = "osint-case-ratcliffe-moscow-2026"
-og_title = "osint-case-ratcliffe-moscow-2026: Open-source intelligence assessment of the CIA Director'"
+seo_title = "osint-case-ratcliffe-moscow-2026, 2026 · Tomas Korcak"
+og_title = "osint-case-ratcliffe-moscow-2026: Open-source intelligence assessment of the CIA…"
+og_description = "osint-case-ratcliffe-moscow-2026: Security and OSINT in HTML, Python and Shell, 2026, active in the last 12 months. Source on GitHub. 1 star. Live site."
 og_image = "og/work-osint-case-ratcliffe-moscow-2026.png"
 schema = "project"
-keywords = ["osint-case-ratcliffe-moscow-2026", "Security and OSINT", "HTML", "Python", "Shell", "Tomas Korcak"]
+keywords = ["osint-case-ratcliffe-moscow-2026", "Security and OSINT", "HTML", "Python", "Shell", "claude-code", "intelligence-analysis", "open-source-intelligence", "osint", "2026", "GitHub", "Tomas Korcak", "korczis"]
 terms = ["html", "python", "shell", "osint", "due-diligence", "mergers-and-acquisitions", "virtual-data-room", "risk-assessment", "market-intelligence", "decision-support-system", "insolvency", "record-linkage", "knowledge-graph", "data-integration", "audit-trail", "information-extraction", "orchestration", "github-pages", "repository", "commit", "open-source"]
 
 [[extra.viz]]
@@ -28,8 +30,12 @@ tone = "night"
 +++
 **osint-case-ratcliffe-moscow-2026** is a project in [Security and OSINT](@/projects/security.md). Its code is written mainly in [HTML](@/glossary/html.md) (74 %), with [Python](@/glossary/python.md), [Shell](@/glossary/shell.md) and Just.
 
-The [repository](@/glossary/repository.md) was created in August 2026; its latest [commit](@/glossary/commit.md) is from 26 August 2026. It reads “fix(site): claim pages for object-shaped findings (gdelt\_sweep)”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created on 26 August 2026; its latest [commit](@/glossary/commit.md) is from 26 August 2026. It reads “fix(site): claim pages for object-shaped findings (gdelt\_sweep)”. That places it among the projects active in the last 12 months.
 
 It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/osint-case-ratcliffe-moscow-2026/>.
+
+Its source is on [GitHub](https://github.com/korczis/osint-case-ratcliffe-moscow-2026).
+
+Related work in [Security and OSINT](@/projects/security.md): [zlown](@/work/zlown.md) (2016), [magic](@/work/magic.md) (2017), [peacemaker](@/work/peacemaker.md) (2014) and [ratnet](@/work/ratnet.md) (2014).
 
 *How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 10 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

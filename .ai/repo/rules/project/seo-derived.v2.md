@@ -32,8 +32,16 @@ route, and search engines treat it so.
   Graph (`profile` on the home page), Twitter `summary_large_image` and one JSON-LD `@graph`
   (Person, WebSite, and the page as ProfilePage, CollectionPage with an ItemList of
   SoftwareSourceCode from the catalogue, or AboutPage, with a BreadcrumbList).
-- `scripts/build-og.mjs` renders `static/og/<name>.svg` deterministically from the front matter
-  and the PNG (1200x630) with rsvg-convert; both are committed.
+- `scripts/build-og.mjs` draws each card as an SVG deterministically from the front matter and
+  renders the PNG (1200x630) from it with rsvg-convert, quantised with pngquant; only the PNG is
+  committed and deployed (no page references the SVG), and `data/og.json` records the hash of the
+  SVG and of the PNG and the encoder version that wrote it. Each PNG stays within `og_image`
+  `x-max-bytes` of the front-matter schema. `.github/workflows/refresh.yml` installs every
+  renderer the script uses, because the scheduled refresh renders the cards a new or moved
+  repository needs.
+- Every indexable page has its own description and its own `og:description`: text another page
+  has too (a template's README paragraph, a sentence of facts that fits several repositories)
+  is not a description.
 - 404 is `noindex`; every indexable page is in `sitemap.xml`.
 - **Structured data states only what the page shows.** A list that appears both visibly and in
   JSON-LD is built once and rendered twice: the /hire/ questions and answers come from
@@ -53,21 +61,25 @@ route, and search engines treat it so.
   `data/index.json`; `homeLocation.address.addressCountry` is set only when `data/cv.toml` names the
   country.
 - **An OG card captions its own page.** The URL drawn on a card is the permalink of the page that
-  uses it, derived from its content path and language (`/work/<x>/`, `/cs/hire/`); the badge text is
-  the i18n key `kpi_supervised` in the card's language, and profile cards (home, about, hire) show
-  `hero_hire`. Text is clipped at word boundaries by the shared `clip()` of `scripts/lib/derive.mjs`,
+  uses it, derived from its content path and language (`/work/<x>/`, `/cs/hire/`); the badge is a
+  measured fact of the page in the card's language from the i18n keys `og_pill_*` (on a work page
+  the repository's state from `data/recent.json`: supervised by Majordomus, active within its
+  period, or archive with its years; on every other page the site's own supervision), and profile
+  cards (home, about, hire) also show `hero_hire`. Text is clipped at word boundaries by the shared `clip()` of `scripts/lib/derive.mjs`,
   and the layout reserves the pill's area, computed and asserted.
 
 # Failure behaviour
 
-`scripts/check-seo.mjs` exits 1 on a duplicate or overlong title, a description outside 50-165
-characters, a missing tag, an OG image that is not in the build at 1200x630, JSON-LD that does
+`scripts/check-seo.mjs` exits 1 on a duplicate or overlong title, a duplicate description or
+`og:description`, a description outside 50-165 characters, a missing tag, an OG image that is not in the build at 1200x630, JSON-LD that does
 not parse, a page with other than one `<h1>`, or a canonical URL missing from the sitemap; and on
 a `FAQPage` question or answer the page does not show (or a visible one it lacks), a `knowsAbout`
 entry that is not a measured skill or technology, has no built /glossary/ page or is a library the
 bundle keeps out, a `sameAs` host that is not a profile host, a `cv.roles` entry without its dated
 role, or a /hire/ h1 without the author.
-`build-og.mjs --check` exits 1 on a stale SVG or a missing PNG, a drawn URL that differs from the
+`build-og.mjs --check` exits 1 on a missing PNG, one stale against its card, not the recorded
+render, without its encoder version, over its byte budget, a file of `static/og` no page names,
+or a renderer the refresh workflow does not install; on a drawn URL that differs from the
 canonical of the built page using the card, an English literal on a Czech card, text clipped
 mid-word, or text overlapping the pill. Until a check named here is in its script, a reviewer owns
 the assertion.

@@ -16,8 +16,8 @@ kind = "language"
 definition = "Stylový jazyk webu: rozvržení, barvy a typografie HTML."
 aliases = []
 reference = { title = "MDN Web Docs: CSS", url = "https://developer.mozilla.org/en-US/docs/Web/CSS" }
-pages = ["projects/web.cs.md", "work/astronomists.cs.md", "work/bubbler.cs.md", "work/catharsis-as-a-service.cs.md", "work/crisis-map.cs.md", "work/korczis-github-io.cs.md", "work/korczis-gitlab-io.cs.md", "work/openttd-prismatic-bridge.cs.md", "work/oscilla.cs.md", "work/prismatic-majordomus.cs.md", "work/prismatic.cs.md", "work/sonic-playground.cs.md", "work/the-psycho.cs.md", "work/u-tygra.cs.md", "work/vomaste-cz.cs.md"]
-related = ["repository", "commit", "html", "open-source", "javascript", "github-pages", "shell", "elixir"]
+pages = ["projects/web.cs.md", "work/annasabatova-cz.cs.md", "work/apollocrawler-com.cs.md", "work/astronomists.cs.md", "work/astudo.cs.md", "work/bubbler.cs.md", "work/catharsis-as-a-service.cs.md", "work/craftsmen.cs.md", "work/crisis-map.cs.md", "work/czech-stats.cs.md", "work/dj-schnapps.cs.md", "work/gooddata-graphql.cs.md", "work/gooddata-rails-app.cs.md", "work/hydra.cs.md", "work/kanec.cs.md", "work/korczis-com.cs.md", "work/korczis-github-com.cs.md", "work/korczis-github-io.cs.md", "work/korczis-gitlab-io.cs.md", "work/lethe-it.cs.md", "work/majordomus-reel.cs.md", "work/maze.cs.md", "work/microcrawler-couchapp.cs.md", "work/microscratch.cs.md", "work/nestravenkam.cs.md", "work/openttd-prismatic-bridge.cs.md", "work/oscilla.cs.md", "work/pavian-eu.cs.md", "work/prismatic-majordomus.cs.md", "work/prismatic.cs.md", "work/rest-hello-world-benchmark.cs.md", "work/solr-core-minimal.cs.md", "work/sonic-playground.cs.md", "work/test-elixir.cs.md", "work/the-psycho.cs.md", "work/tosh.cs.md", "work/u-tygra.cs.md", "work/vomaste-cz.cs.md"]
+related = ["repository", "commit", "open-source", "javascript", "html", "shell", "elixir", "static-site-generator"]
 og_title = "CSS: slovník"
 og_image = "og/cs-glossary-css.png"
 keywords = ["CSS", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

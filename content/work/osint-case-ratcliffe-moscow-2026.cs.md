@@ -11,10 +11,12 @@ tags = ["Bezpečnost a OSINT", "HTML", "Python", "Shell"]
 
 [extra]
 repo = "osint-case-ratcliffe-moscow-2026"
-og_title = "osint-case-ratcliffe-moscow-2026: Bezpečnost a OSINT"
+seo_title = "osint-case-ratcliffe-moscow-2026, 2026 · Tomáš Korčák"
+og_title = "osint-case-ratcliffe-moscow-2026: Bezpečnost a OSINT, HTML"
+og_description = "osint-case-ratcliffe-moscow-2026: Bezpečnost a OSINT, HTML, Python a Shell, 2026, aktivní za posledních 12 měsíců. Zdrojový kód: GitHub. 1 hvězda. Živý web."
 og_image = "og/cs-work-osint-case-ratcliffe-moscow-2026.png"
 schema = "project"
-keywords = ["osint-case-ratcliffe-moscow-2026", "Bezpečnost a OSINT", "HTML", "Python", "Shell", "Tomáš Korčák"]
+keywords = ["osint-case-ratcliffe-moscow-2026", "Bezpečnost a OSINT", "HTML", "Python", "Shell", "claude-code", "intelligence-analysis", "open-source-intelligence", "osint", "2026", "GitHub", "Tomáš Korčák", "korczis"]
 terms = ["html", "python", "shell", "osint", "due-diligence", "mergers-and-acquisitions", "virtual-data-room", "risk-assessment", "market-intelligence", "decision-support-system", "insolvency", "record-linkage", "knowledge-graph", "data-integration", "audit-trail", "information-extraction", "orchestration", "github-pages", "repository", "commit", "open-source"]
 
 [[extra.viz]]
@@ -31,5 +33,9 @@ tone = "night"
 [Repozitář](@/glossary/repository.cs.md) vznikl 26. srpna 2026; poslední [commit](@/glossary/commit.cs.md) je z 26. srpna 2026. Zní „fix(site): claim pages for object-shaped findings (gdelt\_sweep)“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 
 Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/osint-case-ratcliffe-moscow-2026/>.
+
+Zdrojový kód: [GitHub](https://github.com/korczis/osint-case-ratcliffe-moscow-2026).
+
+Související práce v kategorii [Bezpečnost a OSINT](@/projects/security.cs.md): [zlown](@/work/zlown.cs.md) (2016), [magic](@/work/magic.cs.md) (2017), [peacemaker](@/work/peacemaker.cs.md) (2014) a [ratnet](@/work/ratnet.cs.md) (2014).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 10 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

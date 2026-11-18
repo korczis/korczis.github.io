@@ -3,7 +3,7 @@
   "repo": "annasabatova.cz",
   "sources": {
     "github": "https://github.com/korczis/annasabatova.cz",
-    "gitlab": null,
+    "gitlab": "https://gitlab.com/korczis/annasabatova-cz",
     "commit": "2a74c6fdbb92288581f9ee9b2aa036c7284b88ce",
     "read_at": "2026-11-18",
     "read": [
@@ -54,7 +54,6 @@
     }
   },
   "related": [
-    "annasabatova-cz",
     "korczis-com",
     "vomaste.cz"
   ],

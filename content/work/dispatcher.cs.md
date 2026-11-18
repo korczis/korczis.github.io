@@ -11,10 +11,12 @@ tags = ["Nástroje", "TypeScript", "JavaScript"]
 
 [extra]
 repo = "dispatcher"
-og_title = "dispatcher: Nástroje"
+seo_title = "dispatcher: Nástroje, TypeScript, 2024 · Tomáš Korčák"
+og_title = "dispatcher: Nástroje, TypeScript"
+og_description = "dispatcher: Nástroje, TypeScript a JavaScript, 2024, aktivní za posledních 48 měsíců. Zdrojový kód: GitLab."
 og_image = "og/cs-work-dispatcher.png"
 schema = "project"
-keywords = ["dispatcher", "Nástroje", "TypeScript", "JavaScript", "Tomáš Korčák"]
+keywords = ["dispatcher", "Nástroje", "TypeScript", "JavaScript", "2024", "GitLab", "Tomáš Korčák", "korczis"]
 terms = ["typescript", "javascript", "open-source", "repository", "commit"]
 
 [[extra.viz]]
@@ -25,9 +27,14 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "každých 6 hodin" }
 +++
 **dispatcher** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [TypeScript](@/glossary/typescript.cs.md) (83 %), dále [JavaScript](@/glossary/javascript.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 18. října 2024; poslední [commit](@/glossary/commit.cs.md) je z 19. října 2024. Zní „feat: update doc“. Patří tak mezi projekty aktivní za posledních 48 měsíců.
+
+Zdrojový kód: [GitLab](https://gitlab.com/korczis/dispatcher).
+
+Související práce v kategorii [Nástroje](@/projects/tools.cs.md): [astronomists](@/work/astronomists.cs.md) (2026), [bubbler](@/work/bubbler.cs.md) (2024), [u-tygra](@/work/u-tygra.cs.md) (2024–2025) a [prismatic](@/work/prismatic.cs.md) (2025).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 15 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…), ze snímku obnovovaného každých 6 hodin. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

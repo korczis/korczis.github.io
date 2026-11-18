@@ -3,7 +3,7 @@
   "repo": "pavian.eu",
   "sources": {
     "github": "https://github.com/korczis/pavian.eu",
-    "gitlab": null,
+    "gitlab": "https://gitlab.com/korczis/pavian-eu",
     "commit": "edd9c902106dcb286c543422219851c99dc29312",
     "read_at": "2026-11-18",
     "read": [
@@ -55,8 +55,6 @@
       "cs": "Statické assety a index.html se přes Apache servírují návštěvníkům."
     }
   },
-  "related": [
-    "pavian-eu"
-  ],
+  "related": [],
   "confidence": "low"
 }

@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Zabezpečené online úložiště, kde se dokumenty transakce sdílejí se stranami, které je smějí vidět, a každý přístup se zaznamená."
 aliases = ["data room"]
 reference = { title = "Virtual data room (Wikipedia)", url = "https://en.wikipedia.org/wiki/Virtual_data_room" }
-pages = ["projects/security.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md"]
-related = ["audit-trail", "data-integration", "decision-support-system", "due-diligence", "html", "information-extraction", "insolvency", "knowledge-graph"]
+pages = ["projects/security.cs.md", "work/magic.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/peacemaker.cs.md", "work/ratnet.cs.md", "work/zlown.cs.md"]
+related = ["audit-trail", "data-integration", "decision-support-system", "due-diligence", "information-extraction", "insolvency", "knowledge-graph", "market-intelligence"]
 og_title = "Virtuální datová místnost: slovník"
 og_image = "og/cs-glossary-virtual-data-room.png"
 keywords = ["Virtuální datová místnost", "Virtual data room", "Koncept", "Slovník", "Tomáš Korčák"]

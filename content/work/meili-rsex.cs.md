@@ -11,10 +11,12 @@ tags = ["Data a GIS", "Elixir", "Rust"]
 
 [extra]
 repo = "meili_rsex"
-og_title = "meili_rsex: Data a GIS"
+seo_title = "meili_rsex: Data a GIS, Elixir, 2024 · Tomáš Korčák"
+og_title = "meili_rsex: Data a GIS, Elixir"
+og_description = "meili_rsex: Data a GIS, Elixir a Rust, 2024, aktivní za posledních 48 měsíců. Zdrojový kód: GitLab."
 og_image = "og/cs-work-meili-rsex.png"
 schema = "project"
-keywords = ["meili_rsex", "Data a GIS", "Elixir", "Rust", "Tomáš Korčák"]
+keywords = ["meili_rsex", "Data a GIS", "Elixir", "Rust", "2024", "GitLab", "Tomáš Korčák", "korczis"]
 terms = ["elixir", "rust", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
@@ -25,9 +27,14 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "každých 6 hodin" }
 +++
 **meili\_rsex** je projekt z kategorie [Data a GIS](@/projects/data.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (95,8 %), dále [Rust](@/glossary/rust.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 3. června 2024; poslední [commit](@/glossary/commit.cs.md) je z 3. června 2024. Zní „fix: install required asdf plugins - elixir, erlang, rust“. Patří tak mezi projekty aktivní za posledních 48 měsíců.
+
+Zdrojový kód: [GitLab](https://gitlab.com/korczis/meili_rsex).
+
+Související práce v kategorii [Data a GIS](@/projects/data.cs.md): [kuzu-ex](@/work/kuzu-ex.cs.md) (2024), [Crisis map](@/work/crisis-map.cs.md) (2026), [ctu-cz](@/work/ctu-cz.cs.md) (2020) a [czech-stats](@/work/czech-stats.cs.md) (2020).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 7 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…), ze snímku obnovovaného každých 6 hodin. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

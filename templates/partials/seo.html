@@ -179,12 +179,23 @@
      {%- if schema == "project" %}
      {%- set wrc = load_data(path="data/recent.json") %}
      {%- for x in wrc.repos %}{% if x.name == fm.extra.repo %}{% set_global wr = x %}{% endif %}{% endfor %}
-     {%- if wr.hosts.github is defined %}{% set wu = wr.hosts.github %}{% else %}{% set wu = wr.hosts.gitlab %}{% endif %}
-     "mainEntity": {"@type": "SoftwareSourceCode", "name": {{ fm.title | json_encode | safe }}, "description": {{ d | json_encode | safe }},
-      "codeRepository": {{ wu | json_encode | safe }},{% if wr.site %} "url": {{ wr.site | json_encode | safe }},{% endif %}
-      "programmingLanguage": [{% for l in wr.languages %}{{ l.name | json_encode | safe }}{% if not loop.last %}, {% endif %}{% endfor %}],
-      "dateCreated": {{ wr.created_at | json_encode | safe }}, "dateModified": {{ wr.last_commit | json_encode | safe }},
-      "author": {"@id": {{ person | json_encode | safe }}}},
+     {#- The repository on every forge it is on (codeRepository, one per forge), its languages,
+         measured dates and topics; an archive project (no commit in the recent window) says so. #}
+     {%- set_global wforges = "" %}{% for host, u in wr.hosts %}{% if wforges %}{% set_global wforges = wforges ~ ", " %}{% endif %}{% set_global wforges = wforges ~ (u | json_encode) %}{% endfor %}
+     {%- if wr.last_commit %}{% set wlast = wr.last_commit %}{% else %}{% set wlast = wr.pushed_at %}{% endif %}
+     {%- set wcat = load_data(path="data/projects.toml") %}
+     "mainEntity": {"@type": "SoftwareSourceCode", "@id": {{ (url ~ "#code") | json_encode | safe }}, "name": {{ fm.title | json_encode | safe }}, "description": {{ d | json_encode | safe }},
+      "codeRepository": [{{ wforges | safe }}], "sameAs": [{{ wforges | safe }}],{% if wr.site %} "url": {{ wr.site | json_encode | safe }},{% endif %}
+      {#- The measured breakdown, else the index's primary language; none at all is left out. #}
+      {%- if wr.languages | length > 0 %} "programmingLanguage": [{% for l in wr.languages %}{{ l.name | json_encode | safe }}{% if not loop.last %}, {% endif %}{% endfor %}],
+      {%- elif wr.language %} "programmingLanguage": [{{ wr.language | json_encode | safe }}],{% endif %}
+      "genre": {{ wcat.categories[wr.category]["name" ~ sfx] | json_encode | safe }},
+      {%- if wr.topics | length > 0 %} "keywords": {{ wr.topics | join(sep=", ") | json_encode | safe }},{% endif %}
+      "image": {{ img | json_encode | safe }}, "isAccessibleForFree": true,
+      "creativeWorkStatus": {% if wr.period %}{{ trans(key="active", lang=lang) | json_encode | safe }}{% else %}{{ trans(key="archive", lang=lang) | json_encode | safe }}{% endif %},
+      {%- if wr.stars > 0 %} "interactionStatistic": {"@type": "InteractionCounter", "interactionType": "https://schema.org/LikeAction", "userInteractionCount": {{ wr.stars }}},{% endif %}
+      "dateCreated": {{ wr.created_at | json_encode | safe }}, "dateModified": {{ wlast | json_encode | safe }},
+      "author": {"@id": {{ person | json_encode | safe }}}, "subjectOf": {"@id": {{ (url ~ "#webpage") | json_encode | safe }}}},
      {%- endif %}
      {%- if term is defined %}
      "mainEntity": {"@type": "ItemList", "numberOfItems": {{ term.pages | length }}, "itemListElement": [

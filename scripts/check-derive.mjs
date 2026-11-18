@@ -61,6 +61,10 @@ check('GitLab without languages', primaryLanguage({}), null);
 check('own -> empty is dropped', droppedSince([{ name: 'a' }, { name: 'b' }, { name: 'c' }, { name: 'd' }],
   [{ name: 'a', share: null, state: 'measured' }, { name: 'b', share: null, state: 'error' }, { name: 'c', share: 0.2 }]),
   [{ name: 'a', now: 'empty' }, { name: 'c', now: 'mirror' }, { name: 'd', now: 'gone' }]);
+// A GitLab twin that joined its GitHub repository is merged, by its forge URL or by its slug.
+check('a twin is merged, not gone', droppedSince([{ name: 'lethe-it', hosts: { gitlab: 'g/lethe-it' } }, { name: 'gauc-ex' }],
+  [{ name: 'lethe.it', share: 1, hosts: { github: 'h/lethe.it', gitlab: 'g/lethe-it' } }, { name: 'gauc.ex', share: 1, hosts: { github: 'h/gauc.ex' } }]),
+  [{ name: 'lethe-it', now: 'merged', into: 'lethe.it' }, { name: 'gauc-ex', now: 'merged', into: 'gauc.ex' }]);
 
 // Keyword matching: whole words, inflections, prefixes, words inside compounds, short keywords.
 check('words split camelCase and separators', words('MinervaEye korczis.github-io'), ['minerva', 'eye', 'korczis', 'github', 'io']);

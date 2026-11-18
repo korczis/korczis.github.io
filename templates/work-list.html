@@ -7,16 +7,22 @@
 {%- set cat = load_data(path="data/projects.toml") -%}
 {%- set base = config.base_url ~ lp ~ "/" -%}
 {{ <page_header title={section.title} lead={section.description} lang={lang} /> }}
-<div class="grid grid-cols-2 gap-4 px-4 pt-6 xl:grid-cols-4">
-  {{ <kpi value={rc.repos | length ~ ""} label={trans(key="kpi_projects_four_years", lang=lang)} note={trans(key="kpi_commit_default_branch", lang=lang)} /> }}
+{#- Every original repository (data/recent.json holds them all): the recent ones by period, the rest
+    as archive by the year of their last commit. The first year is the earliest creation date or
+    commit, as scripts/build-work.mjs counts it. #}
+{%- set_global since = 9999 %}{% for r in rc.repos %}{% set y = r.created_at | truncate(length=4, end="") | int %}{% if y < since %}{% set_global since = y %}{% endif %}{% for c in r.commits %}{% set cy = c.at | truncate(length=4, end="") | int %}{% if cy < since %}{% set_global since = cy %}{% endif %}{% endfor %}{% endfor -%}
+{%- set wlast = rc.periods | last %}{% set wmax = wlast.months -%}
+<div class="grid grid-cols-2 gap-4 px-4 pt-6 xl:grid-cols-5">
+  {{ <kpi value={rc.repos | length ~ ""} label={trans(key="kpi_projects_four_years", lang=lang)} note={trans(key="kpi_commit_default_branch", lang=lang) | replace(from="{since}", to=since ~ "")} /> }}
   {%- for p in rc.periods %}
   {{ <kpi value={p.repos ~ ""} label={trans(key="kpi_within_months", lang=lang) | replace(from="{n}", to=p.months ~ "")} note={trans(key="kpi_period", lang=lang) | replace(from="{n}", to=p.months ~ "")} /> }}
   {%- endfor %}
+  {{ <kpi value={rc.archive ~ ""} label={trans(key="kpi_archive", lang=lang)} note={trans(key="kpi_archive_note", lang=lang) | replace(from="{n}", to=wmax ~ "")} /> }}
 </div>
 <div class="px-4 pt-6">{%- include "partials/viz-grid.html" %}</div>
 {%- for p in rc.periods %}
 <section class="px-4 pt-6" aria-labelledby="period-{{ p.months }}">
-  <h2 id="period-{{ p.months }}" class="mb-4 text-xl font-bold leading-none text-gray-900 dark:text-white">{{ trans(key="within", lang=lang) | safe }} {{ p.months }} {{ trans(key="months", lang=lang) | safe }} <span class="tabular text-base font-normal text-gray-600 dark:text-gray-400">· {{ p.repos }}</span></h2>
+  <h2 id="period-{{ p.months }}" class="mb-4 scroll-mt-24 text-xl font-bold leading-none text-gray-900 dark:text-white">{{ trans(key="within", lang=lang) | safe }} {{ p.months }} {{ trans(key="months", lang=lang) | safe }} <span class="tabular text-base font-normal text-gray-600 dark:text-gray-400">· {{ p.repos }}</span></h2>
   <div class="grid grid-cols-1 gap-4 md:grid-cols-2 2xl:grid-cols-3">
     {%- for page in section.pages %}
     {%- for r in rc.repos %}{% if r.name == page.extra.repo and r.period == p.months %}
@@ -33,5 +39,34 @@
   </div>
 </section>
 {%- endfor %}
+{#- The archive: the pages come sorted by weight, which is the order of data/recent.json (newest last
+    commit first), so a heading opens whenever the year of the last commit changes. #}
+{%- if rc.archive > 0 %}
+<section class="px-4 pt-8" aria-labelledby="archive">
+  <h2 id="archive" class="scroll-mt-24 text-xl font-bold leading-none text-gray-900 dark:text-white">{{ trans(key="work_archive_title", lang=lang) | safe }} <span class="tabular text-base font-normal text-gray-600 dark:text-gray-400">· {{ rc.archive }}</span></h2>
+  <p class="mt-2 max-w-3xl text-sm text-gray-600 dark:text-gray-400">{{ trans(key="work_archive_lead", lang=lang) | replace(from="{n}", to=wmax ~ "") | safe }}</p>
+  {%- set_global prev = "" %}
+  {%- for page in section.pages %}
+  {%- for r in rc.repos %}{% if r.name == page.extra.repo and not r.period %}
+  {%- if r.last_commit %}{% set ry = r.last_commit | truncate(length=4, end="") %}{% else %}{% set ry = r.pushed_at | truncate(length=4, end="") %}{% endif %}
+  {%- if ry != prev %}{% if prev %}
+  </div>{% endif %}
+  <h3 id="archive-{{ ry }}" class="mb-3 mt-6 scroll-mt-24 text-lg font-semibold text-gray-900 dark:text-white">{{ ry }}</h3>
+  <div class="grid grid-cols-1 gap-4 md:grid-cols-2 2xl:grid-cols-3">
+  {%- set_global prev = ry %}{% endif %}
+    {% <link_card href={page.permalink} title={page.title} note={page.description} eyebrow={cat.categories[r.category]["name" ~ sfx]}> %}
+      {%- if r.languages | length > 0 %}
+      <div class="mt-auto pt-4">
+        {{ <lang_bar languages={r.languages} /> }}
+        <p class="mt-1.5 text-xs text-gray-600 dark:text-gray-400">{% for l in r.languages %}{% if loop.index <= 3 %}{{ l.name }}{% if loop.index < 3 and not loop.last %} · {% endif %}{% endif %}{% endfor %}</p>
+      </div>
+      {%- endif %}
+    {% </link_card> %}
+  {%- endif %}{% endfor %}
+  {%- endfor %}
+  {%- if prev %}
+  </div>{% endif %}
+</section>
+{%- endif %}
 {{ <provenance date={rc.generated_at | date(format="%-d %B %Y")} rule={rc.rule} lang={lang} href={base ~ "repositories/"} link={trans(key="every_repository", lang=lang)} cls="px-4 pt-4" /> }}
 {% endblock content %}

@@ -16,8 +16,8 @@ kind = "language"
 definition = "Microsoft's object-oriented language for .NET."
 aliases = []
 reference = { title = "C# documentation", url = "https://learn.microsoft.com/en-us/dotnet/csharp/" }
-pages = ["projects/learning.md", "projects/tools.md"]
-related = ["cpp", "elixir", "javascript", "repository", "ruby", "rust", "shell", "c"]
+pages = ["projects/learning.md", "projects/tools.md", "work/cs-benchmark.md", "work/reflex.md", "work/rocnikac4.md"]
+related = ["repository", "open-source", "commit", "cpp", "elixir", "javascript", "ruby", "rust"]
 og_title = "C#: glossary"
 og_image = "og/glossary-csharp.png"
 keywords = ["C#", "Programming language", "Glossary", "Tomas Korcak"]

@@ -7,7 +7,7 @@ import { readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parse } from 'smol-toml';
-import { limits } from './lib/derive.mjs';
+import { limits, slug } from './lib/derive.mjs';
 import { inferCategory, ruleFindings } from './lib/repos.mjs';
 import { cliArgs } from './lib/cli.mjs';
 import { CONTROL } from './lib/plain.mjs';
@@ -106,10 +106,14 @@ for (const [repo, facts] of Object.entries(snapshot.projects ?? {})) {
 // A repository that was original at the last measurement and has no history now lost no commits:
 // the contributor list was misread, or the owner emptied it (then it belongs on [index] hidden).
 const hiddenNames = new Set((catalogue.index?.hidden ?? []).map((n) => n.toLowerCase()));
+const ownSlugs = new Map((index.repos ?? []).map((r) => [slug(r.name), r.name]));
 for (const d of index.dropped ?? []) {
   if (d.now === 'empty' && !hiddenNames.has(d.name.toLowerCase())) {
     fail('data/index.json', `${d.name} was original at the last measurement and is empty now; re-measure (npm run index) or add it to [index] hidden`);
   }
+  // A record "gone" whose slug is an original repository's was merged into it, and its page lives on.
+  const twin = d.now === 'gone' && ownSlugs.get(slug(d.name));
+  if (twin) fail('data/index.json', `${d.name} is dropped as gone, but it is the twin of ${twin}, which has a page: merged; re-measure (npm run index)`);
 }
 
 // The category rules: none shadowed or dead, and every fixture (a repository with the category a

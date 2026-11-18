@@ -11,7 +11,7 @@ tags = ["Data and GIS", "Data Atlas", "Crisis map", "apollo-crawler-extension", 
 
 [extra]
 category = "data"
-og_title = "Data and GIS: 51 repositories."
+og_title = "Data and GIS: 49 repositories."
 og_image = "og/category-data.png"
 schema = "collection"
 terms = ["gis", "javascript", "ruby", "elixir", "shell", "html", "python", "rust", "postgis", "mcp", "repository"]
@@ -28,7 +28,7 @@ tone = "night"
 +++
 Catalogues and maps of open data: geodata sources, incident reports geocoded and served from one registry.
 
-The category holds 51 original repositories, written most often in [JavaScript](@/glossary/javascript.md), [Ruby](@/glossary/ruby.md), [Elixir](@/glossary/elixir.md), [Shell](@/glossary/shell.md) and [HTML](@/glossary/html.md). Featured: **Data Atlas** and **Crisis map**.
+The category holds 49 original repositories, written most often in [JavaScript](@/glossary/javascript.md), [Ruby](@/glossary/ruby.md), [Elixir](@/glossary/elixir.md), [Shell](@/glossary/shell.md) and [HTML](@/glossary/html.md). Featured: **Data Atlas** and **Crisis map**.
 
 Key concept: [GIS](@/glossary/gis.md).
 

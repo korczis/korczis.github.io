@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Převod dokumentů (skenů, PDF, volného textu) na strukturovaná pole, jako jsou jména, data a částky, pomocí OCR a jazykových nebo obrazových modelů."
 aliases = []
 reference = { title = "Information extraction (Wikipedia)", url = "https://en.wikipedia.org/wiki/Information_extraction" }
-pages = ["projects/security.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md"]
-related = ["audit-trail", "data-integration", "decision-support-system", "due-diligence", "html", "insolvency", "knowledge-graph", "market-intelligence"]
+pages = ["projects/security.cs.md", "work/magic.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/peacemaker.cs.md", "work/ratnet.cs.md", "work/zlown.cs.md"]
+related = ["audit-trail", "data-integration", "decision-support-system", "due-diligence", "insolvency", "knowledge-graph", "market-intelligence", "mergers-and-acquisitions"]
 og_title = "Vytěžování informací: slovník"
 og_image = "og/cs-glossary-information-extraction.png"
 keywords = ["Vytěžování informací", "Information extraction", "Koncept", "Slovník", "Tomáš Korčák"]

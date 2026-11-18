@@ -61,7 +61,7 @@
     "microcrawler",
     "microcrawler-js",
     "server-coreos",
-    "gauc-ex"
+    "gauc.ex"
   ],
   "confidence": "medium"
 }

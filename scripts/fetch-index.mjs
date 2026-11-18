@@ -351,12 +351,19 @@ if (process.argv.includes('--probe')) {
   }
 
   // Merge by name: GitHub is the primary record (language, stars), GitLab adds its link; a project
-  // only on GitLab stands on its own.
+  // only on GitLab stands on its own. GitLab imports turned the dots of some names into dashes
+  // (lethe.it -> lethe-it): a GitLab project whose name matches no GitHub repository joins the one
+  // GitHub repository with the same slug (lower case, every run of other characters one dash), so
+  // one project is one record with both forges, and one page.
   const byName = new Map();
   for (const r of github) byName.set(r.name.toLowerCase(), { ...r, hosts: { github: r.url } });
+  const slugOf = (name) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  const bySlug = new Map();
+  for (const r of byName.values()) bySlug.set(slugOf(r.name), bySlug.has(slugOf(r.name)) ? null : r);
   for (const r of gitlabList) {
     const key = r.name.toLowerCase();
-    const known = byName.get(key);
+    const twin = bySlug.get(slugOf(r.name));
+    const known = byName.get(key) ?? (twin && !twin.hosts.gitlab && !byName.has(key) ? twin : undefined);
     if (known) {
       known.hosts.gitlab = r.url;
       if (known.share === null && r.share !== null) { known.share = r.share; known.state = r.state; }

@@ -10,7 +10,7 @@ sort_by = "weight"
 og_title = "Slovník: 62 pojmů, definovaných a se zdroji."
 og_image = "og/cs-glossary.png"
 schema = "glossary"
-terms = ["front-matter", "repository", "open-source", "commit", "elixir"]
+terms = ["front-matter", "repository", "open-source", "commit", "javascript"]
 keywords = ["Slovník", "C#", "C++", "CSS", "Dockerfile", "Elixir", "Erlang", "Haskell", "HTML", "Java", "JavaScript", "Tomáš Korčák"]
 
 [[extra.viz]]

@@ -70,7 +70,7 @@
     "microcrawler-js",
     "microcrawler-elixir",
     "docks",
-    "gauc-ex",
+    "gauc.ex",
     "server-coreos",
     "mapoffacts"
   ],

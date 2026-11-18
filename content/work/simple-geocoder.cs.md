@@ -11,10 +11,12 @@ tags = ["Nástroje", "Elixir", "Shell", "HTML+EEX"]
 
 [extra]
 repo = "simple_geocoder"
-og_title = "simple_geocoder: Nástroje"
+seo_title = "simple_geocoder: Nástroje, Elixir, 2024 · Tomáš Korčák"
+og_title = "simple_geocoder: Nástroje, Elixir"
+og_description = "simple_geocoder: Nástroje, Elixir, Shell a HTML+EEX, 2024, aktivní za posledních 48 měsíců. Zdrojový kód: GitLab."
 og_image = "og/cs-work-simple-geocoder.png"
 schema = "project"
-keywords = ["simple_geocoder", "Nástroje", "Elixir", "Shell", "HTML+EEX", "Tomáš Korčák"]
+keywords = ["simple_geocoder", "Nástroje", "Elixir", "Shell", "HTML+EEX", "2024", "GitLab", "Tomáš Korčák", "korczis"]
 terms = ["elixir", "shell", "open-source", "repository", "commit"]
 
 [[extra.viz]]
@@ -25,9 +27,14 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "každých 6 hodin" }
 +++
 **simple\_geocoder** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (92,2 %), dále [Shell](@/glossary/shell.cs.md) a HTML+EEX.
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 23. dubna 2024; poslední [commit](@/glossary/commit.cs.md) je z 24. dubna 2024. Zní „Disable build image“. Patří tak mezi projekty aktivní za posledních 48 měsíců.
+
+Zdrojový kód: [GitLab](https://gitlab.com/korczis/simple_geocoder).
+
+Související práce v kategorii [Nástroje](@/projects/tools.cs.md): [corvidae](@/work/corvidae.cs.md) (2025), [el-magico-cache](@/work/el-magico-cache.cs.md) (2023), [prismatic](@/work/prismatic.cs.md) (2025) a [the-psycho](@/work/the-psycho.cs.md) (2025–2026).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 27 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…), ze snímku obnovovaného každých 6 hodin. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

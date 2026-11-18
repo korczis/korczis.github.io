@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Combining data from many sources (registers, APIs, files) into one consistent view, with each record keeping where it came from."
 aliases = []
 reference = { title = "Data integration (Wikipedia)", url = "https://en.wikipedia.org/wiki/Data_integration" }
-pages = ["projects/security.md", "work/osint-case-ratcliffe-moscow-2026.md"]
-related = ["audit-trail", "decision-support-system", "due-diligence", "html", "information-extraction", "insolvency", "knowledge-graph", "market-intelligence"]
+pages = ["projects/security.md", "work/magic.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/peacemaker.md", "work/ratnet.md", "work/zlown.md"]
+related = ["audit-trail", "decision-support-system", "due-diligence", "information-extraction", "insolvency", "knowledge-graph", "market-intelligence", "mergers-and-acquisitions"]
 og_title = "Data integration: glossary"
 og_image = "og/glossary-data-integration.png"
 keywords = ["Data integration", "Concept", "Glossary", "Tomas Korcak"]

@@ -361,7 +361,7 @@
     },
     {
       "id": "og",
-      "name": "Open Graph images are current",
+      "name": "Open Graph images are current, within their byte budget, renderable by the refresh",
       "rule": "project.seo-derived",
       "rule_file": ".ai/repo/rules/project/seo-derived.v2.md",
       "ci": true,
@@ -449,6 +449,23 @@
       "name": "SEO derived from front matter (titles, descriptions, OG, JSON-LD, sitemap)",
       "rule": "project.seo-derived",
       "rule_file": ".ai/repo/rules/project/seo-derived.v2.md",
+      "ci": true,
+      "where": [
+        {
+          "kind": "ci",
+          "file": ".github/workflows/ci.yml"
+        },
+        {
+          "kind": "prepush",
+          "file": ".githooks/pre-push"
+        }
+      ]
+    },
+    {
+      "id": "work-pages",
+      "name": "Every original repository has its own complete page (en, cs: SEO, OG, hreflang, JSON-LD on every forge)",
+      "rule": "project.every-repository-page",
+      "rule_file": ".ai/repo/rules/project/every-repository-page.v1.md",
       "ci": true,
       "where": [
         {

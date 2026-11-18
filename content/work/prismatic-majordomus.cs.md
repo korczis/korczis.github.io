@@ -3,18 +3,20 @@
 title = "Majordomus"
 description = "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen…"
 template = "work.html"
-weight = 4
-updated = "2026-11-17T19:41:34Z"
+weight = 6
+updated = "2026-11-18T00:04:07Z"
 
 [taxonomies]
 tags = ["Inženýrství AI", "Rust", "Shell", "JavaScript"]
 
 [extra]
 repo = "prismatic-majordomus"
-og_title = "Majordomus: AI agenti tvrdí, že je hotovo; Majordomus je nutí to doložit."
+seo_title = "Majordomus: Inženýrství AI, Rust, 2026 · Tomáš Korčák"
+og_title = "Majordomus: AI agenti tvrdí, že je hotovo; Majordomus je nutí to doložit"
+og_description = "Majordomus: Inženýrství AI, Rust, Shell a JavaScript, 2026, aktivní za posledních 12 měsíců. Zdrojový kód: GitHub. 1 hvězda. Živý web. Pod dohledem Majordomu."
 og_image = "og/cs-work-prismatic-majordomus.png"
 schema = "project"
-keywords = ["Majordomus", "Inženýrství AI", "Rust", "Shell", "JavaScript", "Tomáš Korčák"]
+keywords = ["Majordomus", "prismatic-majordomus", "Inženýrství AI", "Rust", "Shell", "JavaScript", "agentic-ai", "ai", "ai-agents", "ai-governance", "claude-code", "cli", "2026", "GitHub", "Tomáš Korčák", "korczis"]
 terms = ["rust", "shell", "javascript", "html", "css", "python", "mcp", "zola", "ai-agent", "github-pages", "repository", "commit", "open-source"]
 
 [[extra.viz]]
@@ -28,10 +30,14 @@ tone = "night"
 +++
 **Majordomus** je projekt z kategorie [Inženýrství AI](@/projects/ai.cs.md). Jeho kód je napsaný hlavně v jazyce [Rust](@/glossary/rust.cs.md) (60,7 %), dále [Shell](@/glossary/shell.cs.md), [JavaScript](@/glossary/javascript.cs.md) a [HTML](@/glossary/html.cs.md).
 
-[Repozitář](@/glossary/repository.cs.md) vznikl 3. září 2026; poslední [commit](@/glossary/commit.cs.md) je z 17. listopadu 2026. Zní „Merge pull request \#3077 from korczis/integration/train-20261117f“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+[Repozitář](@/glossary/repository.cs.md) vznikl 3. září 2026; poslední [commit](@/glossary/commit.cs.md) je z 18. listopadu 2026. Zní „Merge pull request \#3084 from korczis/fix/delivery-observed-at-the-merge-of-train-f“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 
 Je postavený na [MCP](@/glossary/mcp.cs.md) a [Zola](@/glossary/zola.cs.md).
 
 Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/prismatic-majordomus/>.
+
+Zdrojový kód: [GitHub](https://github.com/korczis/prismatic-majordomus).
+
+Související práce v kategorii [Inženýrství AI](@/projects/ai.cs.md): [sig](@/work/sig.cs.md) (2025–2026), [llm](@/work/llm.cs.md) (2026), [edna](@/work/edna.cs.md) (2025) a [cognitive-reasoning](@/work/cognitive-reasoning.cs.md) (2025).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 30 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

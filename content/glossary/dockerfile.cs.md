@@ -16,8 +16,8 @@ kind = "language"
 definition = "Recept, který staví obraz kontejneru: základní systém, soubory a příkazy, reprodukovatelné kdekoli."
 aliases = []
 reference = { title = "Dockerfile reference", url = "https://docs.docker.com/reference/dockerfile/" }
-pages = ["projects/media.cs.md", "projects/systems.cs.md", "work/el-magico-cache.cs.md", "work/pdf-renderer.cs.md", "work/prismatic-blog.cs.md"]
-related = ["repository", "commit", "open-source", "data-visualisation", "elixir", "html", "javascript", "python"]
+pages = ["projects/media.cs.md", "projects/systems.cs.md", "work/astudo.cs.md", "work/aws-lambda-docker.cs.md", "work/docks.cs.md", "work/el-magico-cache.cs.md", "work/gh-exec-3000.cs.md", "work/hydra.cs.md", "work/microcrawler-js.cs.md", "work/pdf-renderer.cs.md", "work/prismatic-blog.cs.md", "work/tosh.cs.md", "work/zdeny-docker.cs.md"]
+related = ["repository", "commit", "open-source", "shell", "javascript", "elixir", "css", "html"]
 og_title = "Dockerfile: slovník"
 og_image = "og/cs-glossary-dockerfile.png"
 keywords = ["Dockerfile", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
