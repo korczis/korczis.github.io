@@ -11,10 +11,12 @@ tags = ["Tools"]
 
 [extra]
 repo = "pissaleck"
+seo_title = "pissaleck: Tools, 2024 · Tomas Korcak"
 og_title = "pissaleck: Anything about everything and vice versa"
+og_description = "pissaleck: Tools, 2024, active in the last 48 months. Source on GitHub."
 og_image = "og/work-pissaleck.png"
 schema = "project"
-keywords = ["pissaleck", "Tools", "Tomas Korcak"]
+keywords = ["pissaleck", "Tools", "2024", "GitHub", "Tomas Korcak", "korczis"]
 terms = ["open-source", "repository", "commit"]
 
 [[extra.viz]]
@@ -28,6 +30,10 @@ tone = "night"
 +++
 **pissaleck** is a project in [Tools](@/projects/tools.md).
 
-The [repository](@/glossary/repository.md) was created in April 2024; its latest [commit](@/glossary/commit.md) is from 27 April 2024. It reads “Initial commit”. That places it among the projects active in the last 48 months.
+The [repository](@/glossary/repository.md) was created on 27 April 2024; its latest [commit](@/glossary/commit.md) is from 27 April 2024. It reads “Initial commit”. That places it among the projects active in the last 48 months.
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws its only commit as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).
+Its source is on [GitHub](https://github.com/korczis/pissaleck).
+
+Related work in [Tools](@/projects/tools.md): [simple\_geocoder](@/work/simple-geocoder.md) (2024), [marketing-ideas](@/work/marketing-ideas.md) (2024), [pdf\_renderer](@/work/pdf-renderer.md) (2024) and [job-processor](@/work/job-processor.md) (2024).
+
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab. The pulse draws its only commit as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

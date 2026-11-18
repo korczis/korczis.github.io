@@ -3,26 +3,26 @@
  "description": "The Majordomus layer of korczis/korczis.github.io: every object of .ai/ with its MCP resource URI",
  "source": "majordomus run objects.list, capabilities.list",
  "majordomus": "1.0.2",
- "tree": "6c3edd789a2728e7fc7ff807c0cbf3f118eb89fd9b57fa2bf0210d1aeff8bfad",
+ "tree": "8826c38b133ff71273247243b36d07b800a0f90a4c615d9f8bf49a6fe76ce5a3",
  "counts": {
-  "objects": 144,
+  "objects": 150,
   "kinds": {
-   "adr": 8,
+   "adr": 10,
    "context": 21,
    "document": 9,
-   "knowledge": 9,
+   "knowledge": 10,
    "mesh-declaration": 1,
    "policy": 1,
    "profile": 4,
    "prompt": 4,
-   "rule": 77,
+   "rule": 80,
    "scope": 1,
    "skill": 1,
    "taxonomy": 8
   },
-  "capabilities": 375,
+  "capabilities": 381,
   "mcp_tools": 215,
-  "mcp_resources": 201,
+  "mcp_resources": 207,
   "http_routes": 219
  },
  "objects": [
@@ -89,6 +89,22 @@
    "title": "One positioning derived from the hire headline; due diligence and M&A move to the fourth role and the client-work proof",
    "description": "One positioning derived from the hire headline; due diligence and M&A move to the fourth role and the client-work proof",
    "path": ".ai/repo/adrs/0008-one-positioning-derived-from-the-hire-headline-due-diligence.md"
+  },
+  {
+   "uri": "majordomus://adr/adr-0009",
+   "kind": "adr",
+   "identity": "adr-0009",
+   "title": "Repository dossiers are inferred, checked claim by claim, and never written where a safety check refuses",
+   "description": "Repository dossiers are inferred, checked claim by claim, and never written where a safety check refuses",
+   "path": ".ai/repo/adrs/0009-repository-dossiers-are-inferred-checked-claim-by-claim-and-n.md"
+  },
+  {
+   "uri": "majordomus://adr/adr-0010",
+   "kind": "adr",
+   "identity": "adr-0010",
+   "title": "Offer-first landing - two primary paths, the cases before the catalogue, honest labels and Czech typography",
+   "description": "Offer-first landing - two primary paths, the cases before the catalogue, honest labels and Czech typography",
+   "path": ".ai/repo/adrs/0010-offer-first-landing-two-primary-paths-cases-before-the-catalo.md"
   },
   {
    "uri": "majordomus://context/ai.layer",
@@ -361,6 +377,14 @@
    "title": "glab 1.115 `auth token` prints its help text: store the GITLAB_TOKEN secret from the token itself",
    "description": "When setting or rotating the GITLAB_TOKEN Actions secret, or when a refresh reads GitLab anonymously or spends its GitLab budget.",
    "path": ".ai/repo/knowledge/curated/gitlab-token-secret.md"
+  },
+  {
+   "uri": "majordomus://knowledge/landing-conversion",
+   "kind": "knowledge",
+   "identity": "landing-conversion",
+   "title": "The landing is read in ten seconds by a hiring team and in ten minutes by an engineer; its chapters, its CTA budget and what was dropped",
+   "description": "Before adding, moving or removing anything on the home page (templates/index.html), or a call to action, a figure, a personalisation or a visual there.",
+   "path": ".ai/repo/knowledge/curated/landing-conversion.md"
   },
   {
    "uri": "majordomus://knowledge/owner-decisions-2026-11-15",
@@ -987,6 +1011,22 @@
    "path": ".ai/repo/rules/project/data-measured.v1.md"
   },
   {
+   "uri": "majordomus://rule/project.dossiers-inferred@1",
+   "kind": "rule",
+   "identity": "project.dossiers-inferred@1",
+   "title": "Repository dossiers are inferred, carry their provenance and say so wherever shown",
+   "description": "data/dossiers/<repo>.json holds, for each original public repository, a problem, a solution, a stack and a Mermaid architecture inferred from the repository's own files; each carries the commit and date it was read at and a confidence, is labelled inferred wherever it is shown, is re-mined when the repository's head moves, and passes the NDA gate.",
+   "path": ".ai/repo/rules/project/dossiers-inferred.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/project.every-repository-page@1",
+   "kind": "rule",
+   "identity": "project.every-repository-page@1",
+   "title": "Every original repository on GitHub and GitLab has its own complete page, derived and gated",
+   "description": "The original repositories of data/index.json (both forges, merged) are the one set; each has a work page in every language with a title, description, SEO title, Open Graph card, canonical, hreflang and SoftwareSourceCode JSON-LD derived from measured facts, recent ones dated by period and the rest as honestly dated archive; the scheduled refresh re-derives them and a gate fails on any repository without a page or a page that is not complete.",
+   "path": ".ai/repo/rules/project/every-repository-page.v1.md"
+  },
+  {
    "uri": "majordomus://rule/project.everything-interlinked@1",
    "kind": "rule",
    "identity": "project.everything-interlinked@1",
@@ -1017,6 +1057,14 @@
    "title": "Every text exists in every language, through Zola's multilingual features",
    "description": "Interface texts live in i18n/*.toml, grouped by feature, and reach templates through trans(); curated data carries a _cs twin for every text field; every page exists as x.md and x.cs.md; tags are Zola taxonomies; a gate fails on anything untranslated.",
    "path": ".ai/repo/rules/project/i18n-everywhere.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/project.landing-contract@1",
+   "kind": "rule",
+   "identity": "project.landing-contract@1",
+   "title": "The landing's chapters, their ids and order are a contract; every element links, every figure is measured, nothing is hidden",
+   "description": "The home page answers a hiring team in ten seconds and an engineer in ten minutes in fixed chapters with stable ids; every element in its main region leads to its page, every figure comes from data/ or Zola, owner facts only from data/cv.toml, ?role= only reorders and labels, at most four mail links, nothing hidden, and no inflated label.",
+   "path": ".ai/repo/rules/project/landing-contract.v1.md"
   },
   {
    "uri": "majordomus://rule/project.nda-never-named@1",

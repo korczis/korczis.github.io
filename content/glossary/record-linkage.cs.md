@@ -3,7 +3,7 @@
 title = "Ztotožnění subjektů"
 description = "Hledání záznamů napříč zdroji, které se týkají téže firmy nebo osoby, nejdřív podle společných identifikátorů, pak podle podobných jmen a adres."
 template = "term.html"
-weight = 75
+weight = 82
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]
@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Hledání záznamů napříč zdroji, které se týkají téže firmy nebo osoby, nejdřív podle společných identifikátorů, pak podle podobných jmen a adres."
 aliases = ["record linkage"]
 reference = { title = "Record linkage (Wikipedia)", url = "https://en.wikipedia.org/wiki/Record_linkage" }
-pages = ["projects/security.cs.md", "services/_index.cs.md", "services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "services/digital-investigation.cs.md", "services/due-diligence.cs.md", "skills/_index.cs.md", "skills/entity-resolution.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md"]
-related = ["html", "alpine-js", "dockerfile", "fastapi", "flowbite-pro", "javascript", "python", "risk-assessment"]
+pages = ["projects/security.cs.md", "services/_index.cs.md", "services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "services/digital-investigation.cs.md", "services/due-diligence.cs.md", "skills/_index.cs.md", "skills/entity-resolution.cs.md", "work/magic.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/peacemaker.cs.md", "work/ratnet.cs.md", "work/zlown.cs.md"]
+related = ["risk-assessment", "decision-support-system", "due-diligence", "html", "insolvency", "knowledge-graph", "orchestration", "osint"]
 og_title = "Ztotožnění subjektů: slovník"
 og_image = "og/cs-glossary-record-linkage.png"
 keywords = ["Ztotožnění subjektů", "Entity resolution", "Koncept", "Slovník", "Tomáš Korčák"]

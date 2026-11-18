@@ -3,7 +3,7 @@
 title = "Rust"
 description = "A systems language that guarantees memory safety without a garbage collector; Majordomus is written in it."
 template = "term.html"
-weight = 25
+weight = 31
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -16,8 +16,8 @@ kind = "language"
 definition = "A systems language that guarantees memory safety without a garbage collector; Majordomus is written in it."
 aliases = []
 reference = { title = "The Rust Programming Language", url = "https://doc.rust-lang.org/book/" }
-pages = ["about.md", "hire.md", "projects/ai.md", "projects/data.md", "projects/learning.md", "projects/libraries.md", "projects/science.md", "projects/security.md", "projects/tools.md", "services/ai-engineering-governance.md", "skills/policy-as-code.md", "work/algoglyph.md", "work/catharsis-as-a-service.md", "work/comtesse.md", "work/kompendium-epistemicke-anihilace.md", "work/meili-rsex.md", "work/prismatic-majordomus.md"]
-related = ["repository", "javascript", "elixir", "open-source", "shell", "html", "python", "commit"]
+pages = ["_index.md", "about.md", "hire.md", "projects/ai.md", "projects/data.md", "projects/learning.md", "projects/libraries.md", "projects/science.md", "projects/security.md", "projects/tools.md", "services/ai-engineering-governance.md", "services/digital-forensics.md", "skills/chain-of-custody.md", "skills/change-monitoring.md", "skills/media-forensics.md", "skills/policy-as-code.md", "work/algoglyph.md", "work/astudo.md", "work/bcnode-old.md", "work/catharsis-as-a-service.md", "work/charon.md", "work/comtesse.md", "work/ctu-cz.md", "work/easy-plugin-plugins.md", "work/gauc-ex.md", "work/gooddata-fs.md", "work/graph-flow.md", "work/happ.md", "work/kompendium-epistemicke-anihilace.md", "work/magic.md", "work/mapoffacts.md", "work/maze-rs.md", "work/meili-rsex.md", "work/prismatic-majordomus.md", "work/rustas.md", "work/rustler-mix.md", "work/rustler-test.md", "work/skull-rust.md", "work/sli2dli.md", "work/streamflow.md", "work/the-scratch.md", "work/wims.md", "work/zaas.md"]
+related = ["repository", "open-source", "commit", "elixir", "javascript", "html", "shell", "makefile"]
 og_title = "Rust: glossary"
 og_image = "og/glossary-rust.png"
 keywords = ["Rust", "Programming language", "Glossary", "Tomas Korcak"]
@@ -40,12 +40,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
-I have written Rust in 17 public repositories, from 2016 to 2026; in 12 of them it is the main language.
+I have written Rust in 22 public repositories, from 2016 to 2026; in 12 of them it is the main language.
 
-What it was for: [Tools](@/projects/tools.md) (5), [Science and visualisation](@/projects/science.md) (4), [Data and GIS](@/projects/data.md) (2) and [AI engineering](@/projects/ai.md) (1).
+What it was for: [Tools](@/projects/tools.md) (8), [Science and visualisation](@/projects/science.md) (4), [Data and GIS](@/projects/data.md) (2) and [Learning and experiments](@/projects/learning.md) (2).
 
-Most recently: [algoglyph](@/work/algoglyph.md): Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core; [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore; [Majordomus](@/work/prismatic-majordomus.md): One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.
+Most recently: [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore; [Majordomus](@/work/prismatic-majordomus.md): One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model; [algoglyph](@/work/algoglyph.md): Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core.
 
-5 of these projects run as live sites.
+4 of these projects run as live sites.
 
 How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses Rust: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links Rust to the repositories and to the other languages and technologies they use together.

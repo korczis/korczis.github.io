@@ -11,10 +11,12 @@ tags = ["Nástroje"]
 
 [extra]
 repo = "tap"
+seo_title = "tap: Nástroje, 2024 · Tomáš Korčák"
 og_title = "tap: Nástroje"
+og_description = "tap: Nástroje, 2024, aktivní za posledních 48 měsíců. Zdrojový kód: GitHub."
 og_image = "og/cs-work-tap.png"
 schema = "project"
-keywords = ["tap", "Nástroje", "Tomáš Korčák"]
+keywords = ["tap", "Nástroje", "2024", "GitHub", "Tomáš Korčák", "korczis"]
 terms = ["open-source", "repository", "commit"]
 
 [[extra.viz]]
@@ -30,4 +32,8 @@ tone = "night"
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 1. října 2024; poslední [commit](@/glossary/commit.cs.md) je z 1. října 2024. Zní „first commit“. Patří tak mezi projekty aktivní za posledních 48 měsíců.
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje jeho jediný commit jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+Zdrojový kód: [GitHub](https://github.com/korczis/tap).
+
+Související práce v kategorii [Nástroje](@/projects/tools.cs.md): [bubbler](@/work/bubbler.cs.md) (2024), [dispatcher](@/work/dispatcher.cs.md) (2024), [job-processor](@/work/job-processor.cs.md) (2024) a [pissaleck](@/work/pissaleck.cs.md) (2024).
+
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu. Puls ukazuje jeho jediný commit jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

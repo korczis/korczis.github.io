@@ -3,7 +3,7 @@
 title = "Swift"
 description = "Jazyk Applu pro aplikace na iOS a macOS. Pojem ze slovníku."
 template = "term.html"
-weight = 29
+weight = 36
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -16,8 +16,8 @@ kind = "language"
 definition = "Jazyk Applu pro aplikace na iOS a macOS."
 aliases = []
 reference = { title = "swift.org", url = "https://www.swift.org/documentation/" }
-pages = ["projects/knowledge.cs.md", "projects/tools.cs.md", "work/oscilla.cs.md"]
-related = ["repository", "elixir", "javascript", "open-source", "shell", "alpine-js", "apache-echarts", "commit"]
+pages = ["projects/knowledge.cs.md", "projects/tools.cs.md", "work/bc-apple.cs.md", "work/happ.cs.md", "work/minervaeye.cs.md", "work/oscilla.cs.md", "work/readingphonenumbersinrealtime.cs.md"]
+related = ["repository", "open-source", "commit", "shell", "cpp", "elixir", "javascript", "rust"]
 og_title = "Swift: slovník"
 og_image = "og/cs-glossary-swift.png"
 keywords = ["Swift", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
@@ -40,10 +40,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
-Swift jsem psal ve 3 veřejných repozitářích, od roku 2018 do 2021; ve 3 z nich je hlavním jazykem.
+Swift jsem psal ve 4 veřejných repozitářích, od roku 2018 do 2021; ve 3 z nich je hlavním jazykem.
 
-K čemu to sloužilo: [Znalosti](@/projects/knowledge.cs.md) (2) a [Nástroje](@/projects/tools.cs.md) (1).
+K čemu to sloužilo: [Znalosti](@/projects/knowledge.cs.md) (2), [Učení a experimenty](@/projects/learning.cs.md) (1) a [Nástroje](@/projects/tools.cs.md) (1).
 
-Naposledy: [ReadingPhoneNumbersInRealTime](https://github.com/korczis/ReadingPhoneNumbersInRealTime); [MinervaEye](https://github.com/korczis/MinervaEye); [bc-apple](https://github.com/korczis/bc-apple).
+Naposledy: [ReadingPhoneNumbersInRealTime](@/work/readingphonenumbersinrealtime.cs.md); [happ](@/work/happ.cs.md); [MinervaEye](@/work/minervaeye.cs.md).
 
 Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak Swift používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje Swift s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

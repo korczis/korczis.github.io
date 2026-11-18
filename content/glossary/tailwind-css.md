@@ -3,7 +3,7 @@
 title = "Tailwind CSS"
 description = "A CSS framework of small utility classes composed in the markup, compiled to only what a page uses."
 template = "term.html"
-weight = 58
+weight = 65
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "A CSS framework of small utility classes composed in the markup, compiled to only what a page uses."
 aliases = ["tailwindcss"]
 reference = { title = "tailwindcss.com", url = "https://tailwindcss.com/docs" }
-pages = ["stack.md", "_index.md"]
-related = ["alpine-js", "apache-echarts", "chart-js", "cytoscape-js", "d3", "flowbite-pro", "github-pages", "i18n"]
+pages = ["skills/audit-trail.md", "stack.md", "_index.md"]
+related = ["alpine-js", "flowbite-pro", "majordomus", "apache-echarts", "audit-trail", "chart-js", "claude-api", "css"]
 og_title = "Tailwind CSS: glossary"
 og_image = "og/glossary-tailwind-css.png"
 keywords = ["Tailwind CSS", "Technology", "Glossary", "Tomas Korcak"]
@@ -44,7 +44,7 @@ Tailwind CSS is part of 2 of my public repositories, from 2024 to 2026.
 
 What it was for: [Science and visualisation](@/projects/science.md) (1) and [Web](@/projects/web.md) (1).
 
-Most recently: [algoglyph](@/work/algoglyph.md): Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core; [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.
+Most recently: [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus; [algoglyph](@/work/algoglyph.md): Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core.
 
 1 of these projects runs as a live site.
 

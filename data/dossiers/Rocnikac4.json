@@ -1,0 +1,69 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "Rocnikac4",
+  "sources": {
+    "github": "https://github.com/korczis/Rocnikac4",
+    "gitlab": "https://gitlab.com/korczis/Rocnikac4",
+    "commit": "5ad7f86c41d69bf36fd9342f2a0461be13198e06",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "rocnikacV4.sln",
+      "rocnikacV4/",
+      "rocnikacV4/AI.cs",
+      "rocnikacV4/GlobalVariables.cs",
+      "rocnikacV4/Rules.cs",
+      "rocnikacV4/SaveLoad.cs"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "app",
+  "summary": {
+    "en": "A Windows Forms draughts game in C#, apparently a student year project (the name refers to a Czech \"ročníkový projekt\"). It plays a Frisian-style draughts variant on a 10x10 board against a minimax computer opponent.",
+    "cs": "Hra dáma ve Windows Forms v C#, zřejmě ročníkový projekt. Hraje se varianta frízské dámy na desce 10x10 proti počítači s algoritmem minimax."
+  },
+  "problem": {
+    "en": "A complete board game needs rules, move generation, a computer opponent and usual desktop conveniences such as saving and undo. The README is empty, so the goals are inferred from the source.",
+    "cs": "Plnohodnotná desková hra potřebuje pravidla, generování tahů, počítačového soupeře a běžné vymoženosti jako ukládání a krok zpět. README je prázdné, cíle jsou tedy odvozené ze zdrojového kódu."
+  },
+  "solution": {
+    "en": "Rules generates legal moves, applies them and detects a winner or a draw; AI scores positions with a depth-limited minimax over a game tree (TreeNode). Games are saved and loaded as XML move lists, UndoRedo keeps move history, and a settings form plus a compiled CHM help file complete the UI.",
+    "cs": "Třída Rules generuje legální tahy, provádí je a určuje vítěze nebo remízu; AI hodnotí pozice minimaxem s omezenou hloubkou nad herním stromem (TreeNode). Partie se ukládají a načítají jako seznam tahů v XML, UndoRedo drží historii a uživatelské rozhraní doplňuje formulář nastavení a nápověda v CHM."
+  },
+  "highlights": [
+    {
+      "en": "Depth-limited minimax opponent",
+      "cs": "Počítačový soupeř s minimaxem s omezenou hloubkou"
+    },
+    {
+      "en": "Save and load of games as XML",
+      "cs": "Ukládání a načítání partií v XML"
+    },
+    {
+      "en": "Undo and redo of moves",
+      "cs": "Krok zpět a vpřed"
+    },
+    {
+      "en": "Comments and identifiers are written in Czech",
+      "cs": "Komentáře a identifikátory jsou česky"
+    }
+  ],
+  "stack": [
+    "C#",
+    ".NET",
+    "Windows Forms",
+    "XML"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  UI[FriskaDama form] --> GB[Gameboard]\n  UI --> ST[GameSettings]\n  GB --> RU[Rules]\n  RU --> MV[Move generation]\n  GB --> AI[AI minimax]\n  AI --> TN[TreeNode]\n  GB --> UR[UndoRedo]\n  GB --> SL[SaveLoad XML]",
+    "caption": {
+      "en": "The board model sits between the forms, the rules engine, the minimax AI and persistence.",
+      "cs": "Model desky propojuje formuláře, pravidla, minimaxovou AI a ukládání."
+    }
+  },
+  "related": [
+    "algorithms",
+    "reflex"
+  ],
+  "confidence": "medium"
+}

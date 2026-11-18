@@ -3,7 +3,7 @@
 title = "Playwright"
 description = "A browser automation library that drives Chromium, Firefox and WebKit for end-to-end tests and audits."
 template = "term.html"
-weight = 53
+weight = 60
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "A browser automation library that drives Chromium, Firefox and Web
 aliases = []
 reference = { title = "Playwright documentation", url = "https://playwright.dev/docs/intro" }
 pages = ["services/digital-investigation.md", "services/due-diligence.md", "_index.md"]
-related = ["alpine-js", "beneficial-ownership", "claude-api", "dockerfile", "elixir", "fastapi", "flowbite-pro", "github-actions"]
+related = ["alpine-js", "beneficial-ownership", "claude-api", "dockerfile", "elixir", "fastapi", "flowbite-pro", "html"]
 og_title = "Playwright: glossary"
 og_image = "og/glossary-playwright.png"
 keywords = ["Playwright", "Technology", "Glossary", "Tomas Korcak"]

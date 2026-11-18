@@ -1,0 +1,54 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "brepta",
+  "sources": {
+    "github": "https://github.com/korczis/brepta",
+    "gitlab": "https://gitlab.com/korczis/brepta",
+    "commit": "bcc6c2536a452849e67d2a855a2852168339d711",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "package.json",
+      "index.js"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "service",
+  "summary": {
+    "en": "A tiny text-to-speech service over REST. A POST with a msg field makes the host machine speak the text in Czech through espeak.",
+    "cs": "Drobná služba převodu textu na řeč přes REST. POST s polem msg přiměje hostitelský stroj přečíst text česky přes espeak."
+  },
+  "problem": {
+    "en": "Triggering speech output on a machine from other devices or scripts needed a network interface. A local CLI alone could not be called remotely.",
+    "cs": "Spouštět hlasový výstup na stroji z jiných zařízení nebo skriptů vyžadovalo síťové rozhraní. Samotné lokální CLI se vzdáleně volat nedá."
+  },
+  "solution": {
+    "en": "A Koa 1 app with koa-router and koa-body listens on port 3000, reads msg from the request body and runs espeak with the Czech voice via child_process.exec, echoing the text back. The message is inserted into the shell command unescaped, so it is a trusted-network prototype only.",
+    "cs": "Aplikace v Koa 1 s koa-router a koa-body poslouchá na portu 3000, z těla požadavku vezme msg, přes child_process.exec spustí espeak s českým hlasem a text vrátí zpět. Zpráva se do shellového příkazu vkládá bez escapování, takže jde jen o prototyp pro důvěryhodnou síť."
+  },
+  "highlights": [
+    {
+      "en": "Single-file Koa service with generator-based middleware.",
+      "cs": "Služba v Koa v jednom souboru s middlewarem nad generátory."
+    },
+    {
+      "en": "Shells out to espeak with a Czech voice.",
+      "cs": "Volá espeak s českým hlasem."
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "Node.js",
+    "Koa",
+    "espeak"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[HTTP client] --> B[POST root]\n  B --> C[koa-body parser]\n  C --> D[Read msg]\n  D --> E[espeak exec]\n  E --> F[Audio output]\n  D --> G[Echo response]",
+    "caption": {
+      "en": "An HTTP request becomes spoken output on the host.",
+      "cs": "HTTP požadavek se změní v řeč na hostiteli."
+    }
+  },
+  "related": [],
+  "confidence": "high"
+}

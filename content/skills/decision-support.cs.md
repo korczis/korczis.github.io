@@ -13,7 +13,7 @@ skill = "decision-support"
 og_title = "Podpora rozhodování: dovednosti"
 og_image = "og/cs-skill-decision-support.png"
 schema = "skill"
-terms = ["skill", "decision-support-system", "html", "javascript", "python", "shell", "alpine-js", "claude-api", "css", "dockerfile", "elixir", "fastapi"]
+terms = ["skill", "decision-support-system", "html", "javascript", "python", "elixir", "shell", "alpine-js", "claude-api", "css", "dockerfile", "fastapi"]
 keywords = ["Podpora rozhodování", "Due diligence firem a protistran", "Prověrka a analýza M&A transakcí", "Reputační zpravodajství a monitoring negativních zpráv", "Podpora rozhodování a AI agenti pro analytiky", "Interaktivní datové produkty a simulátory", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -31,9 +31,9 @@ Pojem, na kterém stojí: [Systém pro podporu rozhodování](@/glossary/decisio
 
 Služby, které z ní čerpají: [Due diligence firem a protistran](@/services/due-diligence.cs.md), [Prověrka a analýza M&A transakcí](@/services/m-and-a.cs.md), [Reputační zpravodajství a monitoring negativních zpráv](@/services/reputation-intelligence.cs.md), [Podpora rozhodování a AI agenti pro analytiky](@/services/decision-support-ai.cs.md) a [Interaktivní datové produkty a simulátory](@/services/interactive-data-products.cs.md).
 
-Praktikovaná s: [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Python](@/glossary/python.cs.md), [Shell](@/glossary/shell.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md), [Claude API](@/glossary/claude-api.cs.md), [CSS](@/glossary/css.cs.md) a [Dockerfile](@/glossary/dockerfile.cs.md).
+Praktikovaná s: [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Python](@/glossary/python.cs.md), [Elixir](@/glossary/elixir.cs.md), [Shell](@/glossary/shell.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md), [Claude API](@/glossary/claude-api.cs.md) a [CSS](@/glossary/css.cs.md).
 
-Veřejná práce, jejíž vlastní slova ji dokládají: [openttd-prismatic-bridge](https://gitlab.com/korczis/openttd-prismatic-bridge) a [crisis-map](https://github.com/korczis/crisis-map).
+Veřejná práce, jejíž vlastní slova ji dokládají: [openttd-prismatic-bridge](https://gitlab.com/korczis/openttd-prismatic-bridge), [crisis-map](https://github.com/korczis/crisis-map) a [gooddata-graphql](https://github.com/korczis/gooddata-graphql).
 
 Byla použita v klientské práci v odvětví: Developer nemovitostí a Finanční a investiční skupina; případy užití níže uvádějí princip a záměr, bez jmen a čísel.
 

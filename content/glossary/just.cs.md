@@ -3,7 +3,7 @@
 title = "Just"
 description = "Spouštěč příkazů: pojmenované recepty v souboru justfile, jako make bez buildovací logiky; vstupní bod většiny těchto repozitářů."
 template = "term.html"
-weight = 15
+weight = 18
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -17,7 +17,7 @@ definition = "Spouštěč příkazů: pojmenované recepty v souboru justfile, j
 aliases = ["justfile"]
 reference = { title = "just manual", url = "https://just.systems/man/en/" }
 pages = ["projects/tools.cs.md", "skills/document-extraction.cs.md", "skills/geospatial-analysis.cs.md", "work/algoglyph.cs.md", "work/comtesse.cs.md", "work/data-atlas.cs.md", "work/gists-search.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/sig.cs.md", "work/vomaste-cz.cs.md"]
-related = ["open-source", "repository", "shell", "commit", "html", "javascript", "python", "github-pages"]
+related = ["shell", "open-source", "repository", "commit", "html", "javascript", "github-pages", "python"]
 og_title = "Just: slovník"
 og_image = "og/cs-glossary-just.png"
 keywords = ["Just", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

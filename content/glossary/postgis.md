@@ -3,7 +3,7 @@
 title = "PostGIS"
 description = "The spatial extension of PostgreSQL: points, shapes and geographic queries in SQL."
 template = "term.html"
-weight = 54
+weight = 61
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "The spatial extension of PostgreSQL: points, shapes and geographic
 aliases = []
 reference = { title = "postgis.net", url = "https://postgis.net/" }
 pages = ["projects/data.md", "services/interactive-data-products.md", "skills/geospatial-analysis.md", "skills/osint-investigation.md", "skills/registry-intelligence.md", "work/crisis-map.md"]
-related = ["elixir", "javascript", "css", "html", "gis", "mcp", "python", "shell"]
+related = ["elixir", "javascript", "css", "html", "gis", "mcp", "shell", "python"]
 og_title = "PostGIS: glossary"
 og_image = "og/glossary-postgis.png"
 keywords = ["PostGIS", "Technology", "Glossary", "Tomas Korcak"]

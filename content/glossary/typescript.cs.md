@@ -3,7 +3,7 @@
 title = "TypeScript"
 description = "JavaScript se statickými typy, kontrolovanými před spuštěním a kompilovanými do běžného JavaScriptu."
 template = "term.html"
-weight = 31
+weight = 38
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -16,8 +16,8 @@ kind = "language"
 definition = "JavaScript se statickými typy, kontrolovanými před spuštěním a kompilovanými do běžného JavaScriptu."
 aliases = []
 reference = { title = "TypeScript handbook", url = "https://www.typescriptlang.org/docs/" }
-pages = ["projects/science.cs.md", "projects/tools.cs.md", "skills/data-integration.cs.md", "skills/llm-agents.cs.md", "skills/osint-investigation.cs.md", "work/algoglyph.cs.md", "work/astronomists.cs.md", "work/dispatcher.cs.md", "work/sig.cs.md", "_index.cs.md"]
-related = ["javascript", "shell", "elixir", "repository", "alpine-js", "open-source", "python", "commit"]
+pages = ["projects/science.cs.md", "projects/tools.cs.md", "skills/data-integration.cs.md", "skills/llm-agents.cs.md", "skills/osint-investigation.cs.md", "work/algoglyph.cs.md", "work/astronomists.cs.md", "work/dispatcher.cs.md", "work/sig.cs.md", "work/ts-logger.cs.md", "_index.cs.md"]
+related = ["javascript", "repository", "shell", "elixir", "open-source", "alpine-js", "commit", "html"]
 og_title = "TypeScript: slovník"
 og_image = "og/cs-glossary-typescript.png"
 keywords = ["TypeScript", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

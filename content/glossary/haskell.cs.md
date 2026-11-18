@@ -3,7 +3,7 @@
 title = "Haskell"
 description = "Čistě funkcionální jazyk s líným vyhodnocováním a silným typovým systémem; místo, kde se učí myslet v typech."
 template = "term.html"
-weight = 11
+weight = 14
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -16,8 +16,8 @@ kind = "language"
 definition = "Čistě funkcionální jazyk s líným vyhodnocováním a silným typovým systémem; místo, kde se učí myslet v typech."
 aliases = []
 reference = { title = "haskell.org", url = "https://www.haskell.org/" }
-pages = ["projects/learning.cs.md", "projects/science.cs.md"]
-related = ["cpp", "elixir", "javascript", "repository", "rust", "alpine-js", "apache-echarts", "c"]
+pages = ["projects/learning.cs.md", "projects/science.cs.md", "work/haskell-world.cs.md", "work/skull-haskell.cs.md"]
+related = ["repository", "commit", "cpp", "data-visualisation", "elixir", "javascript", "open-source", "rust"]
 og_title = "Haskell: slovník"
 og_image = "og/cs-glossary-haskell.png"
 keywords = ["Haskell", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
@@ -44,6 +44,6 @@ Haskell jsem psal ve 2 veřejných repozitářích, od roku 2014 do 2016; ve 2 z
 
 K čemu to sloužilo: [Učení a experimenty](@/projects/learning.cs.md) (1) a [Věda a vizualizace](@/projects/science.cs.md) (1).
 
-Naposledy: [haskell-world](https://github.com/korczis/haskell-world); [skull-haskell](https://github.com/korczis/skull-haskell).
+Naposledy: [haskell-world](@/work/haskell-world.cs.md); [skull-haskell](@/work/skull-haskell.cs.md).
 
 Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak Haskell používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje Haskell s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

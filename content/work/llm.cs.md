@@ -11,10 +11,12 @@ tags = ["Inženýrství AI", "Elixir"]
 
 [extra]
 repo = "llm"
-og_title = "llm: Inženýrství AI"
+seo_title = "llm: Inženýrství AI, Elixir, 2026 · Tomáš Korčák"
+og_title = "llm: Inženýrství AI, Elixir"
+og_description = "llm: Inženýrství AI, Elixir, 2026, aktivní za posledních 12 měsíců. Zdrojový kód: GitLab."
 og_image = "og/cs-work-llm.png"
 schema = "project"
-keywords = ["llm", "Inženýrství AI", "Elixir", "Tomáš Korčák"]
+keywords = ["llm", "Inženýrství AI", "Elixir", "AI", "chatgpt", "claude", "claude-code", "gemini", "2026", "GitLab", "Tomáš Korčák", "korczis"]
 terms = ["elixir", "ai-agent", "repository", "commit", "open-source"]
 
 [[extra.viz]]
@@ -25,9 +27,14 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "každých 6 hodin" }
 +++
 **llm** je projekt z kategorie [Inženýrství AI](@/projects/ai.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (100 %).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 20. srpna 2026; poslední [commit](@/glossary/commit.cs.md) je z 21. srpna 2026. Zní „test(conversations): add DB-integration tests for every named constraint“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+
+Zdrojový kód: [GitLab](https://gitlab.com/korczis/llm).
+
+Související práce v kategorii [Inženýrství AI](@/projects/ai.cs.md): [sig](@/work/sig.cs.md) (2025–2026), [Majordomus](@/work/prismatic-majordomus.cs.md) (2026), [edna](@/work/edna.cs.md) (2025) a [cognitive-reasoning](@/work/cognitive-reasoning.cs.md) (2025).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 16 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…), ze snímku obnovovaného každých 6 hodin. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

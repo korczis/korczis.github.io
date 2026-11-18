@@ -1,0 +1,70 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "microcrawler-ng",
+  "sources": {
+    "github": "https://github.com/korczis/microcrawler-ng",
+    "gitlab": "https://gitlab.com/korczis/microcrawler-ng",
+    "commit": "53b9e3f10b747fe8bf4ed8d43dd7f55ddfb545b4",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "bin (tree)",
+      "lib (tree)",
+      "package.json (tree)",
+      "package.json",
+      "lib/app/app.js",
+      "lib/microcrawler.js",
+      "lib/modules/xkcd.js",
+      "bin/microcrawler"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "cli",
+  "summary": {
+    "en": "A small JavaScript command-line web crawler of the Microcrawler family. It ships four built-in site modules written with jQuery-like Cheerio selectors; the CLI lists the modules, or fetches a URL, runs the chosen module's listing function once and prints the result as JSON.",
+    "cs": "Malý JavaScriptový webový crawler pro příkazovou řádku z rodiny Microcrawler. Dodává čtyři vestavěné moduly webů psané selektory Cheeria ve stylu jQuery; CLI moduly vypíše, nebo stáhne URL, jednou spustí funkci listing zvoleného modulu a výsledek vypíše jako JSON."
+  },
+  "problem": {
+    "en": "Extracting structured data from many different sites needs a small, extensible crawler where each site is a plugin rather than a bespoke script.",
+    "cs": "Získávání strukturovaných dat z mnoha různých webů potřebuje malý, rozšiřitelný crawler, kde je každý web plugin, ne jednorázový skript."
+  },
+  "solution": {
+    "en": "The app loads every file in lib/modules as a module with an info block (name, URL) and a listing function, prints them as a table for -l, and for -t <type> downloads each given URL (or the module's default URL) with superagent, parses it with Cheerio and prints what listing returns. Returned URLs are printed, not followed. The README's to-do list names ESLint, tests, persistence, a React web UI and an example of use as a library.",
+    "cs": "Aplikace načte každý soubor v lib/modules jako modul s blokem info (název, URL) a funkcí listing, pro -l je vypíše jako tabulku a pro -t <typ> stáhne každou zadanou URL (nebo výchozí URL modulu) přes superagent, rozparsuje ji Cheeriem a vypíše, co listing vrátí. Vrácené URL jen vypíše, nesleduje je. To-do seznam v README uvádí ESLint, testy, persistenci, webové UI v Reactu a ukázku použití jako knihovny."
+  },
+  "highlights": [
+    {
+      "en": "Four built-in site modules driven by jQuery-like selectors.",
+      "cs": "Čtyři vestavěné moduly webů řízené selektory ve stylu jQuery."
+    },
+    {
+      "en": "Single-pass CLI: one fetch, one listing call, JSON on stdout.",
+      "cs": "Jednoprůchodové CLI: jedno stažení, jedno volání listing, JSON na výstup."
+    },
+    {
+      "en": "README marks ESLint, tests, persistence and a React web UI as to-do.",
+      "cs": "README označuje ESLint, testy, persistenci a webové UI v Reactu za to-do."
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "Node.js",
+    "Babel",
+    "Cheerio",
+    "superagent",
+    "commander"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[CLI type and URL] --> B[Crawler module]\n  B --> C[superagent fetch]\n  C --> D[Cheerio selectors]\n  D --> E[JSON on stdout]",
+    "caption": {
+      "en": "A selected module fetches a page once and its selectors turn it into JSON printed to the terminal.",
+      "cs": "Zvolený modul jednou stáhne stránku a jeho selektory z ní udělají JSON vypsaný do terminálu."
+    }
+  },
+  "related": [
+    "microcrawler",
+    "microcrawler-js",
+    "apollo-crawler"
+  ],
+  "confidence": "medium"
+}

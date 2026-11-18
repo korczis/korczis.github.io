@@ -1,0 +1,69 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "streamflow",
+  "sources": {
+    "github": "https://github.com/korczis/streamflow",
+    "gitlab": "https://gitlab.com/korczis/streamflow",
+    "commit": "fbfab0baa6728e41aaa55a68d196433eafa91df4",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "Cargo.toml",
+      "NOTES.md",
+      "src/main.rs"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "experiment",
+  "summary": {
+    "en": "A Rust prototype for fast stream processing of CSV data built from composable blocks: sources, transforms, partitioners, dispatchers, reducers and consumers. The current binary reads CSV files on a worker thread and reports row and field counts.",
+    "cs": "Prototyp rychlého proudového zpracování CSV v Rustu složený z bloků: zdroje, transformace, partitionery, dispatchery, reducery a konzumenti. Současná binárka čte CSV soubory ve vlákně a hlásí počty řádků a polí."
+  },
+  "problem": {
+    "en": "Large CSV files need per-column statistics and aggregation without loading everything into memory. A fixed tool does not let the steps be recombined into new pipelines.",
+    "cs": "Velké CSV soubory potřebují statistiky po sloupcích a agregace bez načtení všeho do paměti. Pevně daný nástroj neumožňuje skládat kroky do nových pipeline."
+  },
+  "solution": {
+    "en": "The library defines module slots for each stage of a flow, and NOTES.md sketches forward and reverse chaining notations plus a transpose block for per-column streaming. main.rs parses CLI options with clap and pushes CSV rows over mpsc channels to a stats collector; Cargo.toml pulls in tokio, futures, rayon, crossbeam and ocl for later concurrency experiments.",
+    "cs": "Knihovna má modulové sloty pro každou fázi toku a NOTES.md načrtává dopředný i zpětný zápis řetězení a blok transpozice pro proudové zpracování po sloupcích. main.rs čte volby přes clap a posílá řádky CSV kanály mpsc do sběrače statistik; Cargo.toml tahá tokio, futures, rayon, crossbeam a ocl pro další pokusy s paralelismem."
+  },
+  "highlights": [
+    {
+      "en": "Pipeline vocabulary split into producer, transform, partitioner, dispatcher, reducer and consumer modules.",
+      "cs": "Slovník pipeline rozdělený do modulů producer, transform, partitioner, dispatcher, reducer a consumer."
+    },
+    {
+      "en": "Thread and channel based CSV reading with a header-aware stats reducer.",
+      "cs": "Čtení CSV přes vlákna a kanály s reducerem statistik, který zná hlavičku."
+    },
+    {
+      "en": "Release profile with LTO and opt-level 3.",
+      "cs": "Release profil s LTO a opt-level 3."
+    }
+  ],
+  "stack": [
+    "Rust",
+    "clap",
+    "csv",
+    "tokio",
+    "futures",
+    "rayon",
+    "crossbeam",
+    "OpenCL"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[CSV files] --> B[Source]\n  B --> C[Transform]\n  C --> D[Partitioner]\n  D --> E[Dispatcher]\n  E --> F[Reducer stats]\n  F --> G[Consumer]\n  H[clap options] --> B",
+    "caption": {
+      "en": "The block chain the library is organised around; only source and stats are implemented.",
+      "cs": "Řetězec bloků, kolem kterého je knihovna postavená; implementovaný je jen zdroj a statistiky."
+    }
+  },
+  "related": [
+    "sli2dli",
+    "wims",
+    "graph-flow",
+    "jetel",
+    "csv2psql"
+  ],
+  "confidence": "medium"
+}

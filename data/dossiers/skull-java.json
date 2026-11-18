@@ -1,0 +1,67 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "skull-java",
+  "sources": {
+    "github": "https://github.com/korczis/skull-java",
+    "gitlab": "https://gitlab.com/korczis/skull-java",
+    "commit": "e6b453a054e597d643d8e49b3a7386530dc0a642",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "build.xml",
+      ".travis.yml",
+      "src/algs/Algs.java",
+      "src/algs/UnionFind.java",
+      "src/algs/UnionFindQuick.java",
+      "src/basics/HelloWorld.java",
+      "tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "kata",
+  "summary": {
+    "en": "Java learning material as a NetBeans/Ant project: a hello world and two union-find implementations.",
+    "cs": "Výukové materiály k Javě jako projekt NetBeans/Ant: hello world a dvě implementace union-find."
+  },
+  "problem": {
+    "en": "The Java member of the skull family of per-language exercises.",
+    "cs": "Javovský člen rodiny skull, tedy cvičení rozdělených podle jazyků."
+  },
+  "solution": {
+    "en": "Sources sit in src/basics and src/algs (Algs, UnionFind, UnionFindQuick) and build with the Ant script NetBeans generates. Travis CI runs the build.",
+    "cs": "Zdrojáky leží v src/basics a src/algs (Algs, UnionFind, UnionFindQuick) a sestavují se Ant skriptem vygenerovaným NetBeansem. Build pouští Travis CI."
+  },
+  "highlights": [
+    {
+      "en": "Union-find in two variants (quick-find and quick-union), an exercise the C++ algorithms repository also covers.",
+      "cs": "Union-find ve dvou variantách (quick-find a quick-union), cvičení, které má i C++ repozitář algorithms."
+    },
+    {
+      "en": "Very small: four Java source files.",
+      "cs": "Velmi malé: čtyři zdrojové soubory v Javě."
+    }
+  ],
+  "stack": [
+    "Java",
+    "Ant",
+    "NetBeans",
+    "Travis CI"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Ant[build.xml Ant] --> Basics[basics HelloWorld]\n  Ant --> Algs[algs package]\n  Algs --> UF[UnionFind]\n  Algs --> UFQ[UnionFindQuick]",
+    "caption": {
+      "en": "Ant build over two small source packages.",
+      "cs": "Ant build nad dvěma malými balíčky zdrojáků."
+    }
+  },
+  "related": [
+    "skull",
+    "skull-c",
+    "skull-cpp",
+    "skull-ruby",
+    "skull-nodejs",
+    "skull-haskell",
+    "algorithms"
+  ],
+  "confidence": "medium"
+}

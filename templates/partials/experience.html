@@ -6,7 +6,7 @@
     capability links to its glossary term, its categories and the public work that shares it. -#}
 {%- set xp = load_data(path="data/experience.json") -%}
 {%- set xr = load_data(path="data/experience-rules.toml") -%}
-{%- set xs = "" %}{% set xl = "" %}{% if lang is defined and lang != config.default_language %}{% set xs = "_" ~ lang %}{% set xl = "." ~ lang %}{% endif -%}
+{%- set xs = "" %}{% set xl = "" %}{% set xlp = "" %}{% if lang is defined and lang != config.default_language %}{% set xs = "_" ~ lang %}{% set xl = "." ~ lang %}{% set xlp = "/" ~ lang %}{% endif -%}
 {%- set xgl = get_section(path="glossary/_index" ~ xl ~ ".md") -%}
 {%- set xwk = get_section(path="work/_index" ~ xl ~ ".md") -%}
 {%- set xpr = get_section(path="projects/_index" ~ xl ~ ".md") -%}
@@ -36,7 +36,7 @@
 {%- endif %}
 
 {%- if xn > 0 %}
-<section id="experience" class="{{ xcard }}" aria-labelledby="experience-title">
+<section id="experience" class="{{ xcard }} scroll-mt-24" aria-labelledby="experience-title">
   {%- if xsector_names %}{% set xlead = trans(key="xp_lead_sectors", lang=lang) | replace(from="{sectors}", to=xsector_names) %}{% else %}{% set xlead = trans(key="xp_lead", lang=lang) %}{% endif %}
   {{ <card_head eyebrow={trans(key="xp_eyebrow", lang=lang)} title={trans(key="xp_title", lang=lang)} lead={xlead} id="experience-title" /> }}
   <p class="-mt-3 mb-6 max-w-screen-md text-sm text-gray-600 dark:text-gray-400">{{ <icon name="lock" class="-mt-0.5 mr-1 inline h-4 w-4 text-gray-500 dark:text-gray-400" /> }}{{ trans(key="xp_confidential", lang=lang) }}</p>
@@ -79,14 +79,23 @@
             <span class="tabular shrink-0 rounded-md bg-primary-100 px-2 py-0.5 text-xs font-medium text-primary-800 dark:bg-primary-900 dark:text-primary-300">{{ trans(key="xp_n_engagements__" ~ xform, lang=lang) | replace(from="{n}", to=xce ~ "") }}</span>
           </div>
           <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">{{ c["description" ~ xs] }}</p>
+          {%- if xp.public_work[ckey] is defined %}{% set xpw = xp.public_work[ckey] %}
+          {#- The public repositories that share the capability: their count (linking the list of
+              their names below, each a link to its /work/<slug>/ page), the names in the tooltip
+              too (public names only, never an engagement's). #}
+          <p class="mt-1">{{ <chip label={trans(key="xp_public_work_n", lang=lang) | replace(from="{n}", to=xpw | length ~ "")} href={"#xp-pw-" ~ ckey} size="xs" variant="primary" tip={xpw | join(sep=", ")} tip_id={"tip-xp-pw-" ~ ckey} /> }}</p>
+          {%- endif %}
           <p class="tabular mt-1 text-xs text-gray-500 dark:text-gray-400">{{ trans(key="xp_evidence", lang=lang) | replace(from="{commits}", to=xcc | num_format(locale=lang)) | replace(from="{headings}", to=xch | num_format(locale=lang)) | replace(from="{paths}", to=xcp | num_format(locale=lang)) }}{% if xcd %} · {{ trans(key="xp_declared", lang=lang) }}{% endif %}</p>
-          <ul class="mt-2 flex flex-wrap gap-1.5" aria-label="{{ trans(key="xp_public_work", lang=lang) }}">
+          <ul id="xp-pw-{{ ckey }}" class="mt-2 flex scroll-mt-24 flex-wrap gap-1.5" aria-label="{{ trans(key="xp_public_work", lang=lang) }}">
             {%- for cat in c.categories %}{% for p in xpr.pages %}{% if p.extra.category is defined and p.extra.category == cat %}
             <li><a href="{{ p.permalink }}" class="{{ xbadge }}">{{ <category_icon key={cat} class="mr-1 h-3 w-3" /> }}{{ p.title }}</a></li>
             {%- endif %}{% endfor %}{% endfor %}
-            {%- if xp.public_work[ckey] is defined %}{% for repo in xp.public_work[ckey] %}{% for p in xwk.pages %}{% if p.extra.repo == repo %}
-            <li><a href="{{ p.permalink }}" class="{{ xbadge }} font-mono">{{ repo }}</a></li>
-            {%- endif %}{% endfor %}{% endfor %}{% endif %}
+            {#- Every public-work name links: its /work/<slug>/ page, or, for a repository without
+                one, its entry in the projects catalogue. #}
+            {%- if xp.public_work[ckey] is defined %}{% for repo in xp.public_work[ckey] %}
+            {%- set_global xwurl = config.base_url ~ xlp ~ "/projects/?project=" ~ repo %}{% for p in xwk.pages %}{% if p.extra.repo == repo %}{% set_global xwurl = p.permalink %}{% endif %}{% endfor %}
+            <li><a href="{{ xwurl }}" class="{{ xbadge }} font-mono" data-public-work="{{ repo }}">{{ repo }}</a></li>
+            {%- endfor %}{% endif %}
           </ul>
         </li>
         {%- endif %}{% endfor %}
@@ -100,7 +109,7 @@
     {#- The simulator: engagements into capabilities into domains (ECharts sankey). #}
     <div class="min-w-0 xl:col-span-3">
       <h3 class="text-lg font-semibold text-gray-900 dark:text-white">{{ trans(key="xp_sim_title", lang=lang) }}</h3>
-      <p class="mb-3 mt-1 text-sm text-gray-600 dark:text-gray-400">{{ trans(key="xp_sim_lead", lang=lang) }}</p>
+      <p class="mb-3 mt-1 text-sm text-gray-600 dark:text-gray-400">{{ trans(key="xp_sim_lead", lang=lang) }}{% if xp_landing is defined and xp_landing %} <a href="?viz=experience" class="{{ xlink }}">{{ trans(key="xp_open_map", lang=lang) }}</a>{% endif %}</p>
       <div class="viz-box relative h-[24rem] sm:h-[28rem]" data-viz="experience" data-source="experience-data" role="img"
         aria-label="{{ trans(key="xp_sim_aria", lang=lang) | replace(from="{n}", to=xn ~ "") }}">
         <div data-canvas></div>
@@ -180,6 +189,13 @@
     </div>
   </div>
 
+  {%- if xp_landing is defined and xp_landing %}
+  {#- On the landing: where this work is put to use, the roles and the skills it evidences. #}
+  <p class="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm">
+    {%- if xp_roles is defined and xp_roles %}<a href="#roles" class="{{ xlink }}">{{ trans(key="xp_see_roles", lang=lang) }}</a>{% endif %}
+    <a href="#skills" class="{{ xlink }}">{{ trans(key="xp_see_skills", lang=lang) }}</a>
+  </p>
+  {%- endif %}
   <p class="mt-6 border-t border-gray-200 pt-3 text-xs text-gray-600 dark:border-gray-700 dark:text-gray-400">
     {%- set xg = xp.generated_at | date(format="%Y-%m-%d") | split(pat="-") %}
     {%- set xdate = trans(key="xp_date", lang=lang) | replace(from="{d}", to=(xg[2] | int) ~ "") | replace(from="{m}", to=trans(key="xp_month_" ~ (xg[1] | int), lang=lang)) | replace(from="{y}", to=xg[0]) %}

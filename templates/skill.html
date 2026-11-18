@@ -14,7 +14,7 @@
 {%- set key = page.extra.skill -%}
 {%- set c = xr.capabilities[key] -%}
 {%- set se = sj.skills[key] -%}
-{{ <page_header title={page.title} lead={page.description} parent={trans(key="skills_title", lang=lang)} parent_url={get_url(path="@/skills/_index.md", lang=lang)} lang={lang} /> }}
+{{ <page_header title={page.title} lead={page.description} parent={trans(key="services_skills_title", lang=lang)} parent_url={get_url(path="@/skills/_index.md", lang=lang)} lang={lang} /> }}
 
 <div class="space-y-4 px-4 pt-6">
   <div class="grid grid-cols-2 gap-4 lg:grid-cols-4">

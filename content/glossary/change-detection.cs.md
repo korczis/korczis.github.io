@@ -3,7 +3,7 @@
 title = "Detekce změn"
 description = "Zachycení, že se zdroj změnil, a posouzení, zda na změně záleží, aby upozornění něco znamenalo."
 template = "term.html"
-weight = 67
+weight = 74
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]
@@ -17,7 +17,7 @@ definition = "Zachycení, že se zdroj změnil, a posouzení, zda na změně zá
 aliases = []
 reference = { title = "Wikipedia: change detection", url = "https://en.wikipedia.org/wiki/Change_detection" }
 pages = ["services/_index.cs.md", "services/attack-surface.cs.md", "services/continuous-monitoring.cs.md", "services/digital-investigation.cs.md", "services/reputation-intelligence.cs.md", "skills/_index.cs.md", "skills/change-monitoring.cs.md"]
-related = ["alpine-js", "dockerfile", "fastapi", "flowbite-pro", "html", "javascript", "service", "attack-surface"]
+related = ["javascript", "alpine-js", "css", "dockerfile", "fastapi", "flowbite-pro", "html", "service"]
 og_title = "Detekce změn: slovník"
 og_image = "og/cs-glossary-change-detection.png"
 keywords = ["Detekce změn", "Change detection", "Koncept", "Slovník", "Tomáš Korčák"]

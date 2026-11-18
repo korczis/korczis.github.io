@@ -3,19 +3,21 @@
 title = "openttd-prismatic-bridge"
 description = "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform"
 template = "work.html"
-weight = 1
-updated = "2026-11-17T20:48:46Z"
+weight = 2
+updated = "2026-11-18T02:16:44Z"
 
 [taxonomies]
-tags = ["Media and art", "Python", "HTML", "Squirrel"]
+tags = ["Media and art", "Squirrel", "Python", "HTML"]
 
 [extra]
 repo = "openttd-prismatic-bridge"
-og_title = "openttd-prismatic-bridge: REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-"
+seo_title = "openttd-prismatic-bridge: Media and art, 2026 · Tomas Korcak"
+og_title = "openttd-prismatic-bridge: REST/Swagger bridge onto OpenTTD's Admin Network, for…"
+og_description = "openttd-prismatic-bridge: Media and art in Squirrel, Python and HTML, 2026, active in the last 12 months. Source on GitLab."
 og_image = "og/work-openttd-prismatic-bridge.png"
 schema = "project"
-keywords = ["openttd-prismatic-bridge", "Media and art", "Python", "HTML", "Squirrel", "Tomas Korcak"]
-terms = ["python", "html", "squirrel", "shell", "css", "data-visualisation", "repository", "commit", "open-source"]
+keywords = ["openttd-prismatic-bridge", "Media and art", "Squirrel", "Python", "HTML", "2026", "GitLab", "Tomas Korcak", "korczis"]
+terms = ["squirrel", "python", "html", "shell", "css", "data-visualisation", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -25,9 +27,14 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "every 6 hours" }
 +++
-**openttd-prismatic-bridge** is a project in [Media and art](@/projects/media.md). Its code is written mainly in [Python](@/glossary/python.md) (65.4 %), with [HTML](@/glossary/html.md), [Squirrel](@/glossary/squirrel.md) and [Shell](@/glossary/shell.md).
+**openttd-prismatic-bridge** is a project in [Media and art](@/projects/media.md). Its code is written mainly in [Squirrel](@/glossary/squirrel.md) (38.8 %), with [Python](@/glossary/python.md), [HTML](@/glossary/html.md) and [Shell](@/glossary/shell.md).
 
-The [repository](@/glossary/repository.md) was created in July 2026; its latest [commit](@/glossary/commit.md) is from 17 November 2026. It reads “Add: a live check that /decision/pull leaves a decision's settings on the running AI”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created on 23 July 2026; its latest [commit](@/glossary/commit.md) is from 18 November 2026. It reads “Doc: the overview's Prismatic card says a decision's settings go onto the running AI and a refused one answers 502”. That places it among the projects active in the last 12 months.
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 13 commits as a heartbeat, one lane per commit type (feat, fix, docs…), from a snapshot refreshed every 6 hours. The concepts below are explained in the [glossary](@/glossary/_index.md).
+Its source is on [GitLab](https://gitlab.com/korczis/openttd-prismatic-bridge).
+
+Related work in [Media and art](@/projects/media.md): [Majordomus reel](@/work/majordomus-reel.md) (2026), [Sonic Playground](@/work/sonic-playground.md) (2026), [Catharsis as a Service](@/work/catharsis-as-a-service.md) (2026) and [dj-schnapps](@/work/dj-schnapps.md) (2019).
+
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 30 commits as a heartbeat, one lane per commit type (feat, fix, docs…), from a snapshot refreshed every 6 hours. The concepts below are explained in the [glossary](@/glossary/_index.md).

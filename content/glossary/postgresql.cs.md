@@ -3,7 +3,7 @@
 title = "PostgreSQL"
 description = "Open-source relační databáze známá svou korektností a rozšířeními."
 template = "term.html"
-weight = 55
+weight = 62
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Open-source relační databáze známá svou korektností a rozšířeními."
 aliases = ["postgres"]
 reference = { title = "postgresql.org", url = "https://www.postgresql.org/about/" }
-pages = ["hire.cs.md", "projects/tools.cs.md", "services/attack-surface.cs.md", "services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "services/digital-forensics.cs.md", "services/digital-investigation.cs.md", "services/due-diligence.cs.md", "services/m-and-a.cs.md", "_index.cs.md"]
-related = ["elixir", "javascript", "alpine-js", "claude-api", "dockerfile", "fastapi", "flowbite-pro", "html"]
+pages = ["hire.cs.md", "projects/tools.cs.md", "services/attack-surface.cs.md", "services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "services/digital-forensics.cs.md", "services/digital-investigation.cs.md", "services/due-diligence.cs.md", "services/m-and-a.cs.md", "work/csv2psql.cs.md", "_index.cs.md"]
+related = ["elixir", "html", "javascript", "alpine-js", "claude-api", "flowbite-pro", "service", "dockerfile"]
 og_title = "PostgreSQL: slovník"
 og_image = "og/cs-glossary-postgresql.png"
 keywords = ["PostgreSQL", "Technologie", "Slovník", "Tomáš Korčák"]
@@ -44,7 +44,7 @@ PostgreSQL je součástí 1 mého veřejného repozitáře, od roku 2014 do 2015
 
 K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (1).
 
-Naposledy: [csv2psql](https://github.com/korczis/csv2psql): Převádí CSV na příkazy insert nebo update pro PostgreSQL.
+Naposledy: [csv2psql](@/work/csv2psql.cs.md): Převádí CSV na příkazy insert nebo update pro PostgreSQL.
 
 1 z těchto projektů běží jako živý web.
 

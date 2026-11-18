@@ -1,0 +1,69 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "Test-Elixir",
+  "sources": {
+    "github": "https://github.com/korczis/Test-Elixir",
+    "gitlab": "https://gitlab.com/korczis/Test-Elixir",
+    "commit": "522b0fa02f011d9439df0aa64ab728146f2ff76e",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "mix.exs",
+      "docker-compose.yml",
+      "lib/twitter/twitter.ex",
+      "lib/persistence/persistence.ex",
+      "priv/repo/migrations/20170915144605_create_tweets.exs"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "experiment",
+  "summary": {
+    "en": "A Phoenix test application that pulls tweets matching a keyword and stores their text in PostgreSQL, with an ELK stack defined in docker-compose. The README badges point to another developer's account, so this looks like a shared or copied exercise.",
+    "cs": "Testovací aplikace v Phoenixu, která stahuje tweety podle klíčového slova a ukládá jejich text do PostgreSQL; v docker-compose je k tomu definovaný ELK stack. Odznaky v README odkazují na účet jiného vývojáře, takže jde zřejmě o sdílené nebo převzaté cvičení."
+  },
+  "problem": {
+    "en": "The exercise explores how to ingest a live social-media stream into Elixir and persist it for later search. Its exact goal beyond that is unclear from the repository.",
+    "cs": "Cvičení zkoumá, jak v Elixiru přijímat živý proud ze sociální sítě a ukládat ho pro pozdější vyhledávání. Přesnější cíl z repozitáře jasný není."
+  },
+  "solution": {
+    "en": "A Twitter module uses ExTwitter search and stream_filter, maps each tweet to its text and inserts it through an Ecto repo into a tweet table with UUID keys. tirexs is a dependency for Elasticsearch, and docker-compose starts Elasticsearch, Logstash and Kibana on a bridge network.",
+    "cs": "Modul Twitter používá v ExTwitter funkce search a stream_filter, z každého tweetu vezme text a přes Ecto ho vloží do tabulky tweet s UUID klíči. Závislost tirexs slouží pro Elasticsearch a docker-compose spouští Elasticsearch, Logstash a Kibanu na společné síti."
+  },
+  "highlights": [
+    {
+      "en": "Elixir Streams over a live filtered tweet stream.",
+      "cs": "Elixir Stream nad živým filtrovaným proudem tweetů."
+    },
+    {
+      "en": "Ecto migration with UUID primary keys.",
+      "cs": "Ecto migrace s UUID primárními klíči."
+    },
+    {
+      "en": "Local ELK stack in docker-compose for indexing and dashboards.",
+      "cs": "Lokální ELK stack v docker-compose pro indexaci a dashboardy."
+    }
+  ],
+  "stack": [
+    "Elixir",
+    "Phoenix",
+    "Ecto",
+    "PostgreSQL",
+    "ExTwitter",
+    "Elasticsearch",
+    "Logstash",
+    "Kibana",
+    "Docker Compose"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[Twitter API] --> B[ExTwitter stream]\n  B --> C[Map to text]\n  C --> D[Persistence insert]\n  D --> E[(PostgreSQL)]\n  F[Phoenix endpoint] --> E\n  G[Elasticsearch] --> H[Kibana]\n  I[Logstash] --> G",
+    "caption": {
+      "en": "Tweets flow through ExTwitter into PostgreSQL; an ELK stack runs alongside.",
+      "cs": "Tweety tečou přes ExTwitter do PostgreSQL, vedle běží ELK stack."
+    }
+  },
+  "related": [
+    "twitter-analysis",
+    "web-spa"
+  ],
+  "confidence": "medium"
+}

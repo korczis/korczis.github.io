@@ -11,10 +11,12 @@ tags = ["Data a GIS", "Elixir", "JavaScript", "CSS"]
 
 [extra]
 repo = "crisis-map"
-og_title = "Crisis map: Hlášení incidentů normalizovaná, geokódovaná a zmapovaná."
+seo_title = "Crisis map: Data a GIS, Elixir, 2026 · Tomáš Korčák"
+og_title = "Crisis map: Hlášení incidentů normalizovaná, geokódovaná a zmapovaná"
+og_description = "Crisis map: Data a GIS, Elixir, JavaScript a CSS, 2026, aktivní za posledních 12 měsíců. Zdrojový kód: GitHub. Živý web."
 og_image = "og/cs-work-crisis-map.png"
 schema = "project"
-keywords = ["Crisis map", "Data a GIS", "Elixir", "JavaScript", "CSS", "Tomáš Korčák"]
+keywords = ["Crisis map", "crisis-map", "Data a GIS", "Elixir", "JavaScript", "CSS", "2026", "GitHub", "Tomáš Korčák", "korczis"]
 terms = ["elixir", "javascript", "css", "html", "postgis", "mcp", "gis", "github-pages", "repository", "commit", "open-source"]
 
 [[extra.viz]]
@@ -33,5 +35,9 @@ tone = "night"
 Je postavený na [PostGIS](@/glossary/postgis.cs.md) a [MCP](@/glossary/mcp.cs.md).
 
 Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/crisis-map/>.
+
+Zdrojový kód: [GitHub](https://github.com/korczis/crisis-map).
+
+Související práce v kategorii [Data a GIS](@/projects/data.cs.md): [czech-stats](@/work/czech-stats.cs.md) (2020), [gooddata-graphql](@/work/gooddata-graphql.cs.md) (2016), [Data Atlas](@/work/data-atlas.cs.md) (2026) a [ctu-cz](@/work/ctu-cz.cs.md) (2020).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 8 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

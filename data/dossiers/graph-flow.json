@@ -1,0 +1,60 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "graph-flow",
+  "sources": {
+    "github": "https://github.com/korczis/graph-flow",
+    "gitlab": "https://gitlab.com/korczis/graph-flow",
+    "commit": "62a51c0ef5a673f1eaa2e16b61203bd25d5498d5",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "Cargo.toml",
+      "doc/APPLICATIONS.md",
+      "doc/FEATURES.md",
+      "doc/SPECS.md",
+      "src/apps/graph-flow/main.rs",
+      "src/lib.rs"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "experiment",
+  "summary": {
+    "en": "A Rust skeleton for a graph-based flow tool in which nodes are processing blocks. Only the CLI entry point and empty core type modules (node, edge, flow, graph) exist.",
+    "cs": "Kostra nástroje v Rustu pro tok postavený na grafu, kde uzly jsou zpracovávací bloky. Existuje jen vstupní bod CLI a prázdné moduly základních typů (node, edge, flow, graph)."
+  },
+  "problem": {
+    "en": "The design notes aim at describing programs as connected blocks, for example wrapping syscalls, stdlib functions or shell commands as nodes. None of it is implemented.",
+    "cs": "Poznámky k návrhu míří na popis programů jako propojených bloků, například obalení syscallů, funkcí stdlib nebo shellových příkazů do uzlů. Nic z toho implementované není."
+  },
+  "solution": {
+    "en": "The binary parses a verbosity flag with clap and configures env_logger. The docs list intended properties such as platform- and language-independent, generated descriptions.",
+    "cs": "Binárka přes clap čte přepínač upovídanosti a nastaví env_logger. Dokumentace vyjmenovává zamýšlené vlastnosti, například generovaný popis nezávislý na platformě a jazyce."
+  },
+  "highlights": [
+    {
+      "en": "Design notes for blocks wrapping syscalls, stdlib and shell commands.",
+      "cs": "Poznámky k návrhu bloků obalujících syscally, stdlib a shellové příkazy."
+    },
+    {
+      "en": "Core type files laid out as empty stubs, not yet declared in the library crate.",
+      "cs": "Soubory základních typů jsou rozvržené jako prázdné kostry a knihovna je zatím ani nedeklaruje."
+    }
+  ],
+  "stack": [
+    "Rust",
+    "clap",
+    "env_logger"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[CLI] --> B[Logger setup]\n  C[Node] --> D[Graph]\n  E[Edge] --> D\n  D --> F[Flow]",
+    "caption": {
+      "en": "Intended core types; only the CLI stub runs.",
+      "cs": "Zamýšlené základní typy; běží jen kostra CLI."
+    }
+  },
+  "related": [
+    "streamflow",
+    "jetel"
+  ],
+  "confidence": "low"
+}

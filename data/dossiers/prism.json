@@ -1,0 +1,60 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "prism",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/prism",
+    "commit": "a82d8af2b5ca95da076a1a9367216bb24d00e322",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "CLAUDE.md",
+      "top-level tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "docs",
+  "summary": {
+    "en": "PRISM (Pattern Recognition and Integrated Social Modeling) is a design document for a behavioural analysis and social modelling system in Elixir. The repository holds only a long README with feature lists and illustrative Elixir API examples, plus a CLAUDE.md naming an intended stack. No source code is present.",
+    "cs": "PRISM (Pattern Recognition and Integrated Social Modeling) je návrhový dokument systému pro behaviorální analýzu a sociální modelování v Elixiru. Repozitář obsahuje jen dlouhé README se seznamy funkcí a ilustrativními ukázkami API v Elixiru a CLAUDE.md s plánovaným stackem. Zdrojový kód v něm není."
+  },
+  "problem": {
+    "en": "The README targets analysis of behaviour patterns, social networks and trends, but the concrete use case and data sources are unclear from the repository.",
+    "cs": "README míří na analýzu vzorců chování, sociálních sítí a trendů, konkrétní případ užití a zdroje dat ale z repozitáře nejsou zřejmé."
+  },
+  "solution": {
+    "en": "The intended design combines pattern recognition, social network analysis and predictive modelling on the BEAM, with Nx and Axon for machine learning, KuzuDB as a graph store and Meilisearch for search according to the CLAUDE.md. Example outputs in the README are illustrative and not produced by any code in the repository.",
+    "cs": "Zamýšlený návrh podle CLAUDE.md spojuje rozpoznávání vzorců, analýzu sociálních sítí a prediktivní modelování na BEAM, s Nx a Axon pro strojové učení, KuzuDB jako grafovým úložištěm a Meilisearch pro vyhledávání. Ukázkové výstupy v README jsou ilustrační a nevznikly z žádného kódu v repozitáři."
+  },
+  "highlights": [
+    {
+      "en": "Specification-only repository; illustrative API sketches, no implementation.",
+      "cs": "Repozitář jen se specifikací; ilustrativní náčrty API bez implementace."
+    },
+    {
+      "en": "Planned stack: Elixir with Nx and Axon, KuzuDB and Meilisearch.",
+      "cs": "Plánovaný stack: Elixir s Nx a Axon, KuzuDB a Meilisearch."
+    }
+  ],
+  "stack": [
+    "Elixir",
+    "Nx",
+    "Axon",
+    "KuzuDB",
+    "Meilisearch"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Data[Behavioural data] --> Pat[Pattern recognition]\n  Pat --> Soc[Social modelling]\n  Soc --> Pred[Predictive analytics]\n  Graph[Graph store] --> Soc\n  Pred --> Out[Reports]",
+    "caption": {
+      "en": "Intended pipeline as described in the README; none of it is implemented in the repository.",
+      "cs": "Zamýšlená pipeline podle README; nic z ní v repozitáři implementované není."
+    }
+  },
+  "related": [
+    "the-psycho",
+    "sig",
+    "kuzu-ex",
+    "past"
+  ],
+  "confidence": "low"
+}

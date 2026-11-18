@@ -13,7 +13,7 @@ skill = "geospatial-analysis"
 og_title = "Geospatial analysis: skills"
 og_image = "og/skill-geospatial-analysis.png"
 schema = "skill"
-terms = ["skill", "gis", "elixir", "javascript", "postgis", "css", "eex", "html", "just", "mcp", "plpgsql", "python"]
+terms = ["skill", "gis", "shell", "elixir", "javascript", "postgis", "css", "dockerfile", "eex", "html", "just", "mcp"]
 keywords = ["Geospatial analysis", "Interactive data products and simulators", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -31,8 +31,8 @@ The concept behind it: [GIS](@/glossary/gis.md).
 
 Services that draw on it: [Interactive data products and simulators](@/services/interactive-data-products.md).
 
-Practised with: [Elixir](@/glossary/elixir.md), [JavaScript](@/glossary/javascript.md), [PostGIS](@/glossary/postgis.md), [CSS](@/glossary/css.md), [EEx and HEEx](@/glossary/eex.md), [HTML](@/glossary/html.md), [Just](@/glossary/just.md) and [MCP](@/glossary/mcp.md).
+Practised with: [Shell](@/glossary/shell.md), [Elixir](@/glossary/elixir.md), [JavaScript](@/glossary/javascript.md), [PostGIS](@/glossary/postgis.md), [CSS](@/glossary/css.md), [Dockerfile](@/glossary/dockerfile.md), [EEx and HEEx](@/glossary/eex.md) and [HTML](@/glossary/html.md).
 
-Public work whose own words show it: [crisis-map](https://github.com/korczis/crisis-map), [data-atlas](https://github.com/korczis/data-atlas) and [simple\_geocoder](https://gitlab.com/korczis/simple_geocoder).
+Public work whose own words show it: [crisis-map](https://github.com/korczis/crisis-map), [data-atlas](https://github.com/korczis/data-atlas), [simple\_geocoder](https://gitlab.com/korczis/simple_geocoder) and [microcrawler](https://gitlab.com/korczis/microcrawler).
 
 How to read this page: the definition is the experience vocabulary's; the services, technologies, public [repositories](@/glossary/repository.md) and use cases are derived and each links to its page.

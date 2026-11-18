@@ -1,0 +1,60 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "big-png",
+  "sources": {
+    "github": "https://github.com/korczis/big-png",
+    "gitlab": "https://gitlab.com/korczis/big-png",
+    "commit": "e04e33d199d415a6543f4e2b3f96af8286d07e22",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "deflate.py",
+      "spark.png.bz2"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "experiment",
+  "summary": {
+    "en": "A copy of a published decompression-bomb hack: a 420-byte bzip2 file that expands into a 5.8 MB PNG of 225,000 by 225,000 pixels, whose pixel buffer would need roughly 141 GB of RAM. It credits the original author and includes the Python 2 generator and the sample files.",
+    "cs": "Kopie zveřejněného triku s dekompresní bombou: 420bajtový soubor bzip2 se rozbalí do PNG o velikosti 5,8 MB a rozměrech 225 000 × 225 000 pixelů, jehož pixelový buffer by potřeboval zhruba 141 GB RAM. Uvádí původního autora a obsahuje generátor v Pythonu 2 i ukázkové soubory."
+  },
+  "problem": {
+    "en": "Image-processing pipelines that trust declared dimensions can be crashed by an image whose pixel buffer is far larger than its file; demonstrating this tests their limits.",
+    "cs": "Pipeline pro zpracování obrázků, které věří deklarovaným rozměrům, lze shodit obrázkem, jehož pixelový buffer je mnohem větší než soubor; ukázka toho testuje jejich limity."
+  },
+  "solution": {
+    "en": "The Python script writes the DEFLATE stream by hand: dynamic Huffman codes let each pair of bits stand for 258 zero bytes, about 1032:1, and a 1-bit palette packs eight pixels into a byte. bzip2's run-length step then crushes the near-all-zero PNG to a few hundred bytes. The README suggests where such a file breaks image handling and links a libpng guide on defending against decompression bombs; the secret image the script embeds is not in the repository.",
+    "cs": "Skript v Pythonu píše stream DEFLATE ručně: dynamické Huffmanovy kódy dovolí, aby každá dvojice bitů znamenala 258 nulových bajtů, tedy zhruba 1032 : 1, a 1bitová paleta vejde osm pixelů do bajtu. Krok run-length v bzip2 pak téměř nulové PNG stlačí na pár set bajtů. README naznačuje, kde takový soubor rozbije zpracování obrázků, a odkazuje na návod libpng k obraně proti dekompresním bombám; tajný obrázek, který skript vkládá, v repozitáři není."
+  },
+  "highlights": [
+    {
+      "en": "420-byte archive expands to a 50-gigapixel PNG.",
+      "cs": "420bajtový archiv se rozbalí do 50gigapixelového PNG."
+    },
+    {
+      "en": "Hand-built DEFLATE stream near its 1032:1 limit, with a 1-bit palette.",
+      "cs": "Ručně sestavený stream DEFLATE blízko limitu 1032 : 1 a 1bitová paleta."
+    },
+    {
+      "en": "Links a libpng guide on defending against decompression bombs.",
+      "cs": "Odkaz na návod libpng k obraně proti dekompresním bombám."
+    }
+  ],
+  "stack": [
+    "Python 2",
+    "PIL",
+    "PNG",
+    "DEFLATE",
+    "zlib",
+    "bzip2"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[Zero bytes] --> B[DEFLATE stream]\n  B --> C[PNG wrapper]\n  C --> D[bzip2 compress]\n  D --> E[Tiny archive]\n  E --> F[Huge decode]",
+    "caption": {
+      "en": "Near-all-zero pixels compress through DEFLATE and bzip2 into a tiny file that decodes huge.",
+      "cs": "Téměř samé nuly se přes DEFLATE a bzip2 stlačí do maličkého souboru, který se dekóduje obrovský."
+    }
+  },
+  "related": [],
+  "confidence": "medium"
+}

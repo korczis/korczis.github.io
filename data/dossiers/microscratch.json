@@ -1,0 +1,85 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "microscratch",
+  "sources": {
+    "github": "https://github.com/korczis/microscratch",
+    "gitlab": "https://gitlab.com/korczis/microscratch",
+    "commit": "7ebc4f7caf9316216afdbd4ad775c1b2fc81158e",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "package.json",
+      "TODO.md",
+      "recursive tree",
+      "app.js",
+      "bower.json",
+      "lib/app/index.js",
+      "lib/web/index.js",
+      "lib/web/router/index.js",
+      "lib/processor/index.js",
+      "lib/core/index.js",
+      "lib/connectors/facebook/index.js",
+      "lib/connectors/gmail/index.js",
+      "lib/connectors/twitter/index.js",
+      "lib/persistence/backends/couchdb.js",
+      "lib/persistence/backends/memory.js",
+      "data/public/app/socket/initializer.js",
+      "gulpfile.js"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "library",
+  "summary": {
+    "en": "A lightweight Node.js web framework skeleton combining Express, sockets and an Ember.js client. Its README, package.json and bower.json still carry the lethe.it name, so the two share their scaffold.",
+    "cs": "Kostra lehkého webového frameworku v Node.js, která spojuje Express, sockety a klienta v Ember.js. Její README, package.json a bower.json stále nesou jméno lethe.it, oba projekty tedy sdílejí stejný základ."
+  },
+  "problem": {
+    "en": "A new web project needs the same server setup, front-end build, social login and storage plumbing; the repository collects that into one starting point.",
+    "cs": "Nový webový projekt potřebuje stejné nastavení serveru, build frontendu, sociální přihlášení a napojení úložiště; repozitář to sbírá do jednoho výchozího základu."
+  },
+  "solution": {
+    "en": "lib/ holds app, core, logger, processor and web modules. The web module sets up Express with Handlebars views, sessions stored in CouchDB through connect-couchdb and socket.io; its router sends POST /login through the processor to the Facebook connector, which reads the user's feed with the fb SDK. The Gmail and Twitter connectors and the CouchDB and in-memory persistence backends are empty stubs. data/public holds an Ember client with a socket initializer, and gulp builds Sass, Handlebars templates and scripts. The TODO still lists CLI, configuration, database connection and full-text search via Solr or Elasticsearch.",
+    "cs": "lib/ obsahuje moduly app, core, logger, processor a web. Modul web nastaví Express s pohledy v Handlebars, session ukládané do CouchDB přes connect-couchdb a socket.io; jeho router posílá POST /login přes processor do konektoru pro Facebook, který přes SDK fb čte feed uživatele. Konektory pro Gmail a Twitter i perzistentní backendy pro CouchDB a paměť jsou prázdné kostry. data/public obsahuje Ember klienta s inicializací socketů a gulp sestavuje Sass, šablony Handlebars a skripty. V TODO dosud zůstává CLI, konfigurace, připojení k databázi a fulltext přes Solr nebo Elasticsearch."
+  },
+  "highlights": [
+    {
+      "en": "Facebook login path: router, processor and connector built on the fb SDK.",
+      "cs": "Cesta přihlášení přes Facebook: router, processor a konektor nad SDK fb."
+    },
+    {
+      "en": "Express sessions kept in CouchDB; persistence backends and other connectors are stubs.",
+      "cs": "Session Expressu uložené v CouchDB; perzistentní backendy a ostatní konektory jsou kostry."
+    },
+    {
+      "en": "Shared gulp build with Sass and Handlebars precompilation",
+      "cs": "Společný gulp build se Sass a předkompilací Handlebars"
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "Node.js",
+    "Express",
+    "Ember.js",
+    "CouchDB",
+    "socket.io",
+    "gulp",
+    "Handlebars",
+    "Sass",
+    "Bootstrap",
+    "Bower"
+  ],
+  "architecture": {
+    "mermaid": "flowchart TD\n  A[Ember client] --> B[Express web]\n  A --> W[socket.io]\n  W --> B\n  B --> S[CouchDB session store]\n  B --> R[Router]\n  R --> P[Processor]\n  P --> F[Facebook connector]\n  F --> G[Facebook Graph API]",
+    "caption": {
+      "en": "The wired path from the Ember client through Express and the processor to the one working connector.",
+      "cs": "Zapojená cesta od Ember klienta přes Express a processor k jedinému funkčnímu konektoru."
+    }
+  },
+  "related": [
+    "lethe.it",
+    "microscratch-react",
+    "generator-microscratch",
+    "the-scratch"
+  ],
+  "confidence": "medium"
+}

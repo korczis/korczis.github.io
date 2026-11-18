@@ -13,7 +13,7 @@ skill = "infrastructure-osint"
 og_title = "Infrastructure OSINT: skills"
 og_image = "og/skill-infrastructure-osint.png"
 schema = "skill"
-terms = ["skill", "attack-surface"]
+terms = ["skill", "attack-surface", "c"]
 keywords = ["Infrastructure OSINT", "Digital investigation and OSINT dossiers", "Digital forensics and evidence preservation", "External attack surface and cyber-exposure assessment", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -30,5 +30,9 @@ Domains, IP addresses and certificates investigated from the outside: Whois and 
 The concept behind it: [Attack surface](@/glossary/attack-surface.md).
 
 Services that draw on it: [Digital investigation and OSINT dossiers](@/services/digital-investigation.md), [Digital forensics and evidence preservation](@/services/digital-forensics.md) and [External attack surface and cyber-exposure assessment](@/services/attack-surface.md).
+
+Practised with: [C](@/glossary/c.md).
+
+Public work whose own words show it: [skull-c](https://github.com/korczis/skull-c).
 
 How to read this page: the definition is the experience vocabulary's; the services, technologies, public [repositories](@/glossary/repository.md) and use cases are derived and each links to its page.

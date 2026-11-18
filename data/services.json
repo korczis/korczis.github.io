@@ -14,7 +14,7 @@
         {
           "id": "elixir",
           "name": "Elixir",
-          "n": 2,
+          "n": 3,
           "declared": true
         },
         {
@@ -70,13 +70,13 @@
           "name": "openttd-prismatic-bridge",
           "title": "openttd-prismatic-bridge",
           "how": "words",
-          "score": 3,
+          "score": 2.6,
           "slug": "openttd-prismatic-bridge",
           "url": "https://gitlab.com/korczis/openttd-prismatic-bridge",
           "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
           "category": "media",
           "site": null,
-          "pushed": "2026-11-17",
+          "pushed": "2026-11-18",
           "skill": "decision-support"
         },
         {
@@ -91,6 +91,19 @@
           "site": "https://korczis.github.io/crisis-map/",
           "pushed": "2026-11-16",
           "skill": "registry-intelligence"
+        },
+        {
+          "name": "gooddata-graphql",
+          "title": "gooddata-graphql",
+          "how": "words",
+          "score": 2,
+          "slug": "gooddata-graphql",
+          "url": "https://github.com/korczis/gooddata-graphql",
+          "description": "GoodData Web Application Written in Elixir",
+          "category": "data",
+          "site": null,
+          "pushed": "2016-12-19",
+          "skill": "decision-support"
         }
       ],
       "engagements": [
@@ -128,12 +141,12 @@
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 10
+          "n": 11
         },
         {
           "id": "html",
           "name": "HTML",
-          "n": 9
+          "n": 10
         },
         {
           "id": "python",
@@ -212,7 +225,7 @@
         {
           "id": "elixir",
           "name": "Elixir",
-          "n": 1,
+          "n": 2,
           "declared": true
         },
         {
@@ -256,7 +269,7 @@
           "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
           "category": "science",
           "site": "https://korczis.github.io/oscilla/",
-          "pushed": "2026-11-17",
+          "pushed": "2026-11-18",
           "skill": "contestable-decisions"
         },
         {
@@ -273,16 +286,29 @@
           "skill": "due-diligence"
         },
         {
+          "name": "cs-benchmark",
+          "title": "cs-benchmark",
+          "how": "words",
+          "score": 3.2,
+          "slug": "cs-benchmark",
+          "url": "https://github.com/korczis/cs-benchmark",
+          "description": "Simple C# Benchmark",
+          "category": "learning",
+          "site": null,
+          "pushed": "2014-01-07",
+          "skill": "market-intelligence"
+        },
+        {
           "name": "openttd-prismatic-bridge",
           "title": "openttd-prismatic-bridge",
           "how": "words",
-          "score": 3,
+          "score": 2.6,
           "slug": "openttd-prismatic-bridge",
           "url": "https://gitlab.com/korczis/openttd-prismatic-bridge",
           "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
           "category": "media",
           "site": null,
-          "pushed": "2026-11-17",
+          "pushed": "2026-11-18",
           "skill": "decision-support"
         },
         {
@@ -296,6 +322,32 @@
           "category": "data",
           "site": "https://korczis.github.io/crisis-map/",
           "pushed": "2026-11-16",
+          "skill": "decision-support"
+        },
+        {
+          "name": "maze-rs",
+          "title": "maze-rs",
+          "how": "words",
+          "score": 2,
+          "slug": "maze-rs",
+          "url": "https://github.com/korczis/maze-rs",
+          "description": "Maze for Programmers (Rust)",
+          "category": "science",
+          "site": null,
+          "pushed": "2021-12-28",
+          "skill": "market-intelligence"
+        },
+        {
+          "name": "gooddata-graphql",
+          "title": "gooddata-graphql",
+          "how": "words",
+          "score": 2,
+          "slug": "gooddata-graphql",
+          "url": "https://github.com/korczis/gooddata-graphql",
+          "description": "GoodData Web Application Written in Elixir",
+          "category": "data",
+          "site": null,
+          "pushed": "2016-12-19",
           "skill": "decision-support"
         }
       ],
@@ -336,12 +388,12 @@
         {
           "id": "html",
           "name": "HTML",
-          "n": 12
+          "n": 14
         },
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 12
+          "n": 13
         },
         {
           "id": "python",
@@ -404,14 +456,14 @@
           "n": 4
         },
         {
-          "id": "react",
-          "name": "React",
-          "n": 4
-        },
-        {
           "id": "shell",
           "name": "Shell",
           "n": 4
+        },
+        {
+          "id": "css",
+          "name": "CSS",
+          "n": 3
         }
       ]
     },
@@ -467,6 +519,32 @@
       ],
       "repos": [
         {
+          "name": "gooddata_connectors_metadata",
+          "title": "gooddata_connectors_metadata",
+          "how": "words",
+          "score": 3.9,
+          "slug": "gooddata-connectors-metadata",
+          "url": "https://github.com/korczis/gooddata_connectors_metadata",
+          "description": "The gem for accessing metadata for gooddata connector infrastructure",
+          "category": "data",
+          "site": null,
+          "pushed": "2015-01-22",
+          "skill": "media-forensics"
+        },
+        {
+          "name": "microcrawler-crawler-all",
+          "title": "microcrawler-crawler-all",
+          "how": "words",
+          "score": 3.8,
+          "slug": "microcrawler-crawler-all",
+          "url": "https://gitlab.com/korczis/microcrawler-crawler-all",
+          "description": null,
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20",
+          "skill": "web-automation"
+        },
+        {
           "name": "sig",
           "title": "sig",
           "how": "words",
@@ -480,17 +558,108 @@
           "skill": "osint-investigation"
         },
         {
+          "name": "microcrawler-crawler-sreality-cz",
+          "title": "microcrawler-crawler-sreality-cz",
+          "how": "words",
+          "score": 3.6,
+          "slug": "microcrawler-crawler-sreality-cz",
+          "url": "https://gitlab.com/korczis/microcrawler-crawler-sreality-cz",
+          "description": null,
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20",
+          "skill": "web-automation"
+        },
+        {
+          "name": "microcrawler-js",
+          "title": "microcrawler-js",
+          "how": "words",
+          "score": 3.6,
+          "slug": "microcrawler-js",
+          "url": "https://gitlab.com/korczis/microcrawler-js",
+          "description": "Scrapping made easy...",
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20",
+          "skill": "web-automation"
+        },
+        {
           "name": "kompendium-epistemicke-anihilace",
           "title": "Kompendium",
           "how": "words",
-          "score": 2.6,
+          "score": 3.3,
           "slug": "kompendium-epistemicke-anihilace",
           "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
           "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
           "category": "knowledge",
           "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
-          "pushed": "2026-11-17",
+          "pushed": "2026-11-18",
           "skill": "knowledge-graph"
+        },
+        {
+          "name": "microcrawler-crawler-xkcd-com",
+          "title": "microcrawler-crawler-xkcd-com",
+          "how": "words",
+          "score": 3.3,
+          "slug": "microcrawler-crawler-xkcd-com",
+          "url": "https://gitlab.com/korczis/microcrawler-crawler-xkcd-com",
+          "description": null,
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20",
+          "skill": "web-automation"
+        },
+        {
+          "name": "microcrawler-crawler-google-com",
+          "title": "microcrawler-crawler-google-com",
+          "how": "words",
+          "score": 3,
+          "slug": "microcrawler-crawler-google-com",
+          "url": "https://gitlab.com/korczis/microcrawler-crawler-google-com",
+          "description": null,
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20",
+          "skill": "web-automation"
+        },
+        {
+          "name": "microcrawler-crawler-news-ycombinator-com",
+          "title": "microcrawler-crawler-news-ycombinator-com",
+          "how": "words",
+          "score": 3,
+          "slug": "microcrawler-crawler-news-ycombinator-com",
+          "url": "https://gitlab.com/korczis/microcrawler-crawler-news-ycombinator-com",
+          "description": null,
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20",
+          "skill": "web-automation"
+        },
+        {
+          "name": "microcrawler-crawler-yelp-com",
+          "title": "microcrawler-crawler-yelp-com",
+          "how": "words",
+          "score": 3,
+          "slug": "microcrawler-crawler-yelp-com",
+          "url": "https://gitlab.com/korczis/microcrawler-crawler-yelp-com",
+          "description": null,
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20",
+          "skill": "web-automation"
+        },
+        {
+          "name": "gooddata-fs",
+          "title": "gooddata-fs",
+          "how": "words",
+          "score": 3,
+          "slug": "gooddata-fs",
+          "url": "https://github.com/korczis/gooddata-fs",
+          "description": "GoodData as Filesystem (using FUSE)",
+          "category": "data",
+          "site": null,
+          "pushed": "2016-07-15",
+          "skill": "media-forensics"
         },
         {
           "name": "crisis-map",
@@ -532,17 +701,43 @@
           "skill": "media-forensics"
         },
         {
-          "name": "openttd-prismatic-bridge",
-          "title": "openttd-prismatic-bridge",
+          "name": "apollo-crawler-extension",
+          "title": "apollo-crawler-extension",
           "how": "words",
-          "score": 2,
-          "slug": "openttd-prismatic-bridge",
-          "url": "https://gitlab.com/korczis/openttd-prismatic-bridge",
-          "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
-          "category": "media",
+          "score": 2.6,
+          "slug": "apollo-crawler-extension",
+          "url": "https://gitlab.com/korczis/apollo-crawler-extension",
+          "description": "Apollo Platform Chrome Extension",
+          "category": "data",
           "site": null,
-          "pushed": "2026-11-17",
-          "skill": "osint-investigation"
+          "pushed": "2025-12-20",
+          "skill": "web-automation"
+        },
+        {
+          "name": "microcrawler-crawler-craiglist-com",
+          "title": "microcrawler-crawler-craiglist-com",
+          "how": "words",
+          "score": 2.6,
+          "slug": "microcrawler-crawler-craiglist-com",
+          "url": "https://gitlab.com/korczis/microcrawler-crawler-craiglist-com",
+          "description": null,
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20",
+          "skill": "web-automation"
+        },
+        {
+          "name": "microcrawler-crawler-firmy-cz",
+          "title": "microcrawler-crawler-firmy-cz",
+          "how": "words",
+          "score": 2.6,
+          "slug": "microcrawler-crawler-firmy-cz",
+          "url": "https://gitlab.com/korczis/microcrawler-crawler-firmy-cz",
+          "description": null,
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20",
+          "skill": "web-automation"
         },
         {
           "name": "data-atlas",
@@ -555,6 +750,71 @@
           "category": "data",
           "site": "https://korczis.github.io/data-atlas/",
           "pushed": "2026-11-16",
+          "skill": "osint-investigation"
+        },
+        {
+          "name": "streamflow",
+          "title": "streamflow",
+          "how": "words",
+          "score": 2,
+          "slug": "streamflow",
+          "url": "https://github.com/korczis/streamflow",
+          "description": "Stream Flow - Fast Stream Processing in Rust",
+          "category": "tools",
+          "site": null,
+          "pushed": "2017-05-24",
+          "skill": "change-monitoring"
+        },
+        {
+          "name": "microscratch",
+          "title": "microscratch",
+          "how": "words",
+          "score": 2,
+          "slug": "microscratch",
+          "url": "https://github.com/korczis/microscratch",
+          "description": "Light Weight Web Framework using node.js, mongo, sockets, ember.js ...",
+          "category": "web",
+          "site": null,
+          "pushed": "2015-01-01",
+          "skill": "change-monitoring"
+        },
+        {
+          "name": "skull-c",
+          "title": "skull-c",
+          "how": "words",
+          "score": 2,
+          "slug": "skull-c",
+          "url": "https://github.com/korczis/skull-c",
+          "description": null,
+          "category": "learning",
+          "site": null,
+          "pushed": "2014-08-05",
+          "skill": "infrastructure-osint"
+        },
+        {
+          "name": "microcrawler-couchapp",
+          "title": "microcrawler-couchapp",
+          "how": "words",
+          "score": 2,
+          "slug": "microcrawler-couchapp",
+          "url": "https://github.com/korczis/microcrawler-couchapp",
+          "description": "Microcrawler Web UI for browsing results (couchapp) ...",
+          "category": "data",
+          "site": null,
+          "pushed": "2014-06-22",
+          "skill": "change-monitoring"
+        },
+        {
+          "name": "openttd-prismatic-bridge",
+          "title": "openttd-prismatic-bridge",
+          "how": "words",
+          "score": 0,
+          "slug": "openttd-prismatic-bridge",
+          "url": "https://gitlab.com/korczis/openttd-prismatic-bridge",
+          "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
+          "category": "media",
+          "site": null,
+          "pushed": "2026-11-18",
           "skill": "osint-investigation"
         }
       ],
@@ -589,14 +849,14 @@
       ],
       "technologies": [
         {
-          "id": "html",
-          "name": "HTML",
-          "n": 9
-        },
-        {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 9
+          "n": 20
+        },
+        {
+          "id": "html",
+          "name": "HTML",
+          "n": 10
         },
         {
           "id": "python",
@@ -606,7 +866,7 @@
         {
           "id": "shell",
           "name": "Shell",
-          "n": 6
+          "n": 7
         },
         {
           "id": "claude-api",
@@ -622,6 +882,11 @@
           "id": "flowbite-pro",
           "name": "Flowbite Pro",
           "n": 4
+        },
+        {
+          "id": "css",
+          "name": "CSS",
+          "n": 3
         },
         {
           "id": "dockerfile",
@@ -649,23 +914,18 @@
           "n": 3
         },
         {
-          "id": "css",
-          "name": "CSS",
-          "n": 2
-        },
-        {
           "id": "kubernetes",
           "name": "Kubernetes",
           "n": 2
         },
         {
-          "id": "openai-api",
-          "name": "OpenAI API",
+          "id": "makefile",
+          "name": "Makefile",
           "n": 2
         },
         {
-          "id": "typescript",
-          "name": "TypeScript",
+          "id": "openai-api",
+          "name": "OpenAI API",
           "n": 2
         }
       ]
@@ -700,6 +960,45 @@
         "source-reliability"
       ],
       "repos": [
+        {
+          "name": "gooddata_connectors_metadata",
+          "title": "gooddata_connectors_metadata",
+          "how": "words",
+          "score": 3.9,
+          "slug": "gooddata-connectors-metadata",
+          "url": "https://github.com/korczis/gooddata_connectors_metadata",
+          "description": "The gem for accessing metadata for gooddata connector infrastructure",
+          "category": "data",
+          "site": null,
+          "pushed": "2015-01-22",
+          "skill": "media-forensics"
+        },
+        {
+          "name": "gooddata-fs",
+          "title": "gooddata-fs",
+          "how": "words",
+          "score": 3,
+          "slug": "gooddata-fs",
+          "url": "https://github.com/korczis/gooddata-fs",
+          "description": "GoodData as Filesystem (using FUSE)",
+          "category": "data",
+          "site": null,
+          "pushed": "2016-07-15",
+          "skill": "media-forensics"
+        },
+        {
+          "name": "korczis.github.io",
+          "title": "korczis.github.io",
+          "how": "words",
+          "score": 2.6,
+          "slug": "korczis-github-io",
+          "url": "https://github.com/korczis/korczis.github.io",
+          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+          "category": "web",
+          "site": null,
+          "pushed": "2026-11-18",
+          "skill": "audit-trail"
+        },
         {
           "name": "catharsis-as-a-service",
           "title": "Catharsis as a Service",
@@ -738,6 +1037,32 @@
           "site": "https://korczis.github.io/osint-case-ratcliffe-moscow-2026/",
           "pushed": "2026-08-26",
           "skill": "narrative-analysis"
+        },
+        {
+          "name": "bcnode-old",
+          "title": "bcnode-old",
+          "how": "words",
+          "score": 2,
+          "slug": "bcnode-old",
+          "url": "https://github.com/korczis/bcnode-old",
+          "description": "Mining node with built-in block rover and DHT. ",
+          "category": "tools",
+          "site": null,
+          "pushed": "2018-04-12",
+          "skill": "chain-of-custody"
+        },
+        {
+          "name": "skull-c",
+          "title": "skull-c",
+          "how": "words",
+          "score": 2,
+          "slug": "skull-c",
+          "url": "https://github.com/korczis/skull-c",
+          "description": null,
+          "category": "learning",
+          "site": null,
+          "pushed": "2014-08-05",
+          "skill": "infrastructure-osint"
         }
       ],
       "engagements": [
@@ -768,13 +1093,18 @@
       ],
       "technologies": [
         {
-          "id": "claude-api",
-          "name": "Claude API",
-          "n": 4
-        },
-        {
           "id": "html",
           "name": "HTML",
+          "n": 5
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "n": 5
+        },
+        {
+          "id": "claude-api",
+          "name": "Claude API",
           "n": 4
         },
         {
@@ -783,23 +1113,48 @@
           "n": 4
         },
         {
-          "id": "javascript",
-          "name": "JavaScript",
-          "n": 3
-        },
-        {
           "id": "shell",
           "name": "Shell",
-          "n": 3
+          "n": 4
         },
         {
           "id": "alpine-js",
           "name": "Alpine.js",
-          "n": 1
+          "n": 2
         },
         {
           "id": "css",
           "name": "CSS",
+          "n": 2
+        },
+        {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 2
+        },
+        {
+          "id": "majordomus",
+          "name": "Majordomus",
+          "n": 2
+        },
+        {
+          "id": "rust",
+          "name": "Rust",
+          "n": 2
+        },
+        {
+          "id": "tailwind-css",
+          "name": "Tailwind CSS",
+          "n": 2
+        },
+        {
+          "id": "apache-echarts",
+          "name": "Apache ECharts",
+          "n": 1
+        },
+        {
+          "id": "c",
+          "name": "C",
           "n": 1
         },
         {
@@ -813,33 +1168,8 @@
           "n": 1
         },
         {
-          "id": "flowbite-pro",
-          "name": "Flowbite Pro",
-          "n": 1
-        },
-        {
           "id": "github-actions",
           "name": "GitHub Actions",
-          "n": 1
-        },
-        {
-          "id": "kubernetes",
-          "name": "Kubernetes",
-          "n": 1
-        },
-        {
-          "id": "majordomus",
-          "name": "Majordomus",
-          "n": 1
-        },
-        {
-          "id": "openai-api",
-          "name": "OpenAI API",
-          "n": 1
-        },
-        {
-          "id": "playwright",
-          "name": "Playwright",
           "n": 1
         }
       ]
@@ -849,7 +1179,7 @@
         {
           "id": "elixir",
           "name": "Elixir",
-          "n": 3,
+          "n": 4,
           "declared": true
         },
         {
@@ -902,13 +1232,13 @@
           "name": "openttd-prismatic-bridge",
           "title": "openttd-prismatic-bridge",
           "how": "words",
-          "score": 3,
+          "score": 2.6,
           "slug": "openttd-prismatic-bridge",
           "url": "https://gitlab.com/korczis/openttd-prismatic-bridge",
           "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
           "category": "media",
           "site": null,
-          "pushed": "2026-11-17",
+          "pushed": "2026-11-18",
           "skill": "decision-support"
         },
         {
@@ -949,6 +1279,58 @@
           "site": "https://korczis.github.io/data-atlas/",
           "pushed": "2026-11-16",
           "skill": "osint-investigation"
+        },
+        {
+          "name": "streamflow",
+          "title": "streamflow",
+          "how": "words",
+          "score": 2,
+          "slug": "streamflow",
+          "url": "https://github.com/korczis/streamflow",
+          "description": "Stream Flow - Fast Stream Processing in Rust",
+          "category": "tools",
+          "site": null,
+          "pushed": "2017-05-24",
+          "skill": "change-monitoring"
+        },
+        {
+          "name": "gooddata-graphql",
+          "title": "gooddata-graphql",
+          "how": "words",
+          "score": 2,
+          "slug": "gooddata-graphql",
+          "url": "https://github.com/korczis/gooddata-graphql",
+          "description": "GoodData Web Application Written in Elixir",
+          "category": "data",
+          "site": null,
+          "pushed": "2016-12-19",
+          "skill": "decision-support"
+        },
+        {
+          "name": "microscratch",
+          "title": "microscratch",
+          "how": "words",
+          "score": 2,
+          "slug": "microscratch",
+          "url": "https://github.com/korczis/microscratch",
+          "description": "Light Weight Web Framework using node.js, mongo, sockets, ember.js ...",
+          "category": "web",
+          "site": null,
+          "pushed": "2015-01-01",
+          "skill": "change-monitoring"
+        },
+        {
+          "name": "microcrawler-couchapp",
+          "title": "microcrawler-couchapp",
+          "how": "words",
+          "score": 2,
+          "slug": "microcrawler-couchapp",
+          "url": "https://github.com/korczis/microcrawler-couchapp",
+          "description": "Microcrawler Web UI for browsing results (couchapp) ...",
+          "category": "data",
+          "site": null,
+          "pushed": "2014-06-22",
+          "skill": "change-monitoring"
         }
       ],
       "engagements": [
@@ -983,7 +1365,12 @@
         {
           "id": "html",
           "name": "HTML",
-          "n": 9
+          "n": 10
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "n": 10
         },
         {
           "id": "python",
@@ -991,23 +1378,18 @@
           "n": 9
         },
         {
-          "id": "javascript",
-          "name": "JavaScript",
-          "n": 7
-        },
-        {
           "id": "shell",
           "name": "Shell",
           "n": 7
         },
         {
-          "id": "alpine-js",
-          "name": "Alpine.js",
-          "n": 2
-        },
-        {
           "id": "css",
           "name": "CSS",
+          "n": 3
+        },
+        {
+          "id": "alpine-js",
+          "name": "Alpine.js",
           "n": 2
         },
         {
@@ -1102,7 +1484,7 @@
           "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
           "category": "science",
           "site": "https://korczis.github.io/oscilla/",
-          "pushed": "2026-11-17",
+          "pushed": "2026-11-18",
           "skill": "contestable-decisions"
         }
       ],
@@ -1275,8 +1657,47 @@
           "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
           "category": "ai",
           "site": "https://korczis.github.io/prismatic-majordomus/",
-          "pushed": "2026-11-17",
+          "pushed": "2026-11-18",
           "skill": "orchestration"
+        },
+        {
+          "name": "streamflow",
+          "title": "streamflow",
+          "how": "words",
+          "score": 2,
+          "slug": "streamflow",
+          "url": "https://github.com/korczis/streamflow",
+          "description": "Stream Flow - Fast Stream Processing in Rust",
+          "category": "tools",
+          "site": null,
+          "pushed": "2017-05-24",
+          "skill": "change-monitoring"
+        },
+        {
+          "name": "microscratch",
+          "title": "microscratch",
+          "how": "words",
+          "score": 2,
+          "slug": "microscratch",
+          "url": "https://github.com/korczis/microscratch",
+          "description": "Light Weight Web Framework using node.js, mongo, sockets, ember.js ...",
+          "category": "web",
+          "site": null,
+          "pushed": "2015-01-01",
+          "skill": "change-monitoring"
+        },
+        {
+          "name": "microcrawler-couchapp",
+          "title": "microcrawler-couchapp",
+          "how": "words",
+          "score": 2,
+          "slug": "microcrawler-couchapp",
+          "url": "https://github.com/korczis/microcrawler-couchapp",
+          "description": "Microcrawler Web UI for browsing results (couchapp) ...",
+          "category": "data",
+          "site": null,
+          "pushed": "2014-06-22",
+          "skill": "change-monitoring"
         }
       ],
       "engagements": [
@@ -1312,7 +1733,7 @@
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 7
+          "n": 9
         },
         {
           "id": "html",
@@ -1385,8 +1806,8 @@
           "n": 3
         },
         {
-          "id": "mcp",
-          "name": "MCP",
+          "id": "css",
+          "name": "CSS",
           "n": 2
         }
       ]
@@ -1419,7 +1840,190 @@
         "risk-scoring",
         "web-automation"
       ],
-      "repos": [],
+      "repos": [
+        {
+          "name": "microcrawler-crawler-all",
+          "title": "microcrawler-crawler-all",
+          "how": "words",
+          "score": 3.8,
+          "slug": "microcrawler-crawler-all",
+          "url": "https://gitlab.com/korczis/microcrawler-crawler-all",
+          "description": null,
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20",
+          "skill": "web-automation"
+        },
+        {
+          "name": "microcrawler-crawler-sreality-cz",
+          "title": "microcrawler-crawler-sreality-cz",
+          "how": "words",
+          "score": 3.6,
+          "slug": "microcrawler-crawler-sreality-cz",
+          "url": "https://gitlab.com/korczis/microcrawler-crawler-sreality-cz",
+          "description": null,
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20",
+          "skill": "web-automation"
+        },
+        {
+          "name": "microcrawler-js",
+          "title": "microcrawler-js",
+          "how": "words",
+          "score": 3.6,
+          "slug": "microcrawler-js",
+          "url": "https://gitlab.com/korczis/microcrawler-js",
+          "description": "Scrapping made easy...",
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20",
+          "skill": "web-automation"
+        },
+        {
+          "name": "microcrawler-crawler-xkcd-com",
+          "title": "microcrawler-crawler-xkcd-com",
+          "how": "words",
+          "score": 3.3,
+          "slug": "microcrawler-crawler-xkcd-com",
+          "url": "https://gitlab.com/korczis/microcrawler-crawler-xkcd-com",
+          "description": null,
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20",
+          "skill": "web-automation"
+        },
+        {
+          "name": "microcrawler-crawler-google-com",
+          "title": "microcrawler-crawler-google-com",
+          "how": "words",
+          "score": 3,
+          "slug": "microcrawler-crawler-google-com",
+          "url": "https://gitlab.com/korczis/microcrawler-crawler-google-com",
+          "description": null,
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20",
+          "skill": "web-automation"
+        },
+        {
+          "name": "microcrawler-crawler-news-ycombinator-com",
+          "title": "microcrawler-crawler-news-ycombinator-com",
+          "how": "words",
+          "score": 3,
+          "slug": "microcrawler-crawler-news-ycombinator-com",
+          "url": "https://gitlab.com/korczis/microcrawler-crawler-news-ycombinator-com",
+          "description": null,
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20",
+          "skill": "web-automation"
+        },
+        {
+          "name": "microcrawler-crawler-yelp-com",
+          "title": "microcrawler-crawler-yelp-com",
+          "how": "words",
+          "score": 3,
+          "slug": "microcrawler-crawler-yelp-com",
+          "url": "https://gitlab.com/korczis/microcrawler-crawler-yelp-com",
+          "description": null,
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20",
+          "skill": "web-automation"
+        },
+        {
+          "name": "apollo-crawler-extension",
+          "title": "apollo-crawler-extension",
+          "how": "words",
+          "score": 2.6,
+          "slug": "apollo-crawler-extension",
+          "url": "https://gitlab.com/korczis/apollo-crawler-extension",
+          "description": "Apollo Platform Chrome Extension",
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20",
+          "skill": "web-automation"
+        },
+        {
+          "name": "microcrawler-crawler-craiglist-com",
+          "title": "microcrawler-crawler-craiglist-com",
+          "how": "words",
+          "score": 2.6,
+          "slug": "microcrawler-crawler-craiglist-com",
+          "url": "https://gitlab.com/korczis/microcrawler-crawler-craiglist-com",
+          "description": null,
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20",
+          "skill": "web-automation"
+        },
+        {
+          "name": "microcrawler-crawler-firmy-cz",
+          "title": "microcrawler-crawler-firmy-cz",
+          "how": "words",
+          "score": 2.6,
+          "slug": "microcrawler-crawler-firmy-cz",
+          "url": "https://gitlab.com/korczis/microcrawler-crawler-firmy-cz",
+          "description": null,
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20",
+          "skill": "web-automation"
+        },
+        {
+          "name": "streamflow",
+          "title": "streamflow",
+          "how": "words",
+          "score": 2,
+          "slug": "streamflow",
+          "url": "https://github.com/korczis/streamflow",
+          "description": "Stream Flow - Fast Stream Processing in Rust",
+          "category": "tools",
+          "site": null,
+          "pushed": "2017-05-24",
+          "skill": "change-monitoring"
+        },
+        {
+          "name": "microscratch",
+          "title": "microscratch",
+          "how": "words",
+          "score": 2,
+          "slug": "microscratch",
+          "url": "https://github.com/korczis/microscratch",
+          "description": "Light Weight Web Framework using node.js, mongo, sockets, ember.js ...",
+          "category": "web",
+          "site": null,
+          "pushed": "2015-01-01",
+          "skill": "change-monitoring"
+        },
+        {
+          "name": "skull-c",
+          "title": "skull-c",
+          "how": "words",
+          "score": 2,
+          "slug": "skull-c",
+          "url": "https://github.com/korczis/skull-c",
+          "description": null,
+          "category": "learning",
+          "site": null,
+          "pushed": "2014-08-05",
+          "skill": "infrastructure-osint"
+        },
+        {
+          "name": "microcrawler-couchapp",
+          "title": "microcrawler-couchapp",
+          "how": "words",
+          "score": 2,
+          "slug": "microcrawler-couchapp",
+          "url": "https://github.com/korczis/microcrawler-couchapp",
+          "description": "Microcrawler Web UI for browsing results (couchapp) ...",
+          "category": "data",
+          "site": null,
+          "pushed": "2014-06-22",
+          "skill": "change-monitoring"
+        }
+      ],
       "engagements": [
         {
           "id": "e2",
@@ -1437,13 +2041,33 @@
       ],
       "technologies": [
         {
+          "id": "javascript",
+          "name": "JavaScript",
+          "n": 12
+        },
+        {
+          "id": "html",
+          "name": "HTML",
+          "n": 2
+        },
+        {
           "id": "alpine-js",
           "name": "Alpine.js",
           "n": 1
         },
         {
+          "id": "c",
+          "name": "C",
+          "n": 1
+        },
+        {
           "id": "claude-api",
           "name": "Claude API",
+          "n": 1
+        },
+        {
+          "id": "css",
+          "name": "CSS",
           "n": 1
         },
         {
@@ -1467,16 +2091,6 @@
           "n": 1
         },
         {
-          "id": "html",
-          "name": "HTML",
-          "n": 1
-        },
-        {
-          "id": "javascript",
-          "name": "JavaScript",
-          "n": 1
-        },
-        {
           "id": "kubernetes",
           "name": "Kubernetes",
           "n": 1
@@ -1484,6 +2098,11 @@
         {
           "id": "majordomus",
           "name": "Majordomus",
+          "n": 1
+        },
+        {
+          "id": "makefile",
+          "name": "Makefile",
           "n": 1
         },
         {
@@ -1500,16 +2119,6 @@
           "id": "pydantic",
           "name": "Pydantic",
           "n": 1
-        },
-        {
-          "id": "python",
-          "name": "Python",
-          "n": 1
-        },
-        {
-          "id": "react",
-          "name": "React",
-          "n": 1
         }
       ]
     },
@@ -1518,7 +2127,7 @@
         {
           "id": "elixir",
           "name": "Elixir",
-          "n": 4,
+          "n": 5,
           "declared": true
         },
         {
@@ -1570,6 +2179,19 @@
           "skill": "llm-agents"
         },
         {
+          "name": "korczis.github.io",
+          "title": "korczis.github.io",
+          "how": "words",
+          "score": 3.6,
+          "slug": "korczis-github-io",
+          "url": "https://github.com/korczis/korczis.github.io",
+          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+          "category": "web",
+          "site": null,
+          "pushed": "2026-11-18",
+          "skill": "llm-agents"
+        },
+        {
           "name": "prismatic-majordomus",
           "title": "Majordomus",
           "how": "words",
@@ -1579,7 +2201,7 @@
           "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
           "category": "ai",
           "site": "https://korczis.github.io/prismatic-majordomus/",
-          "pushed": "2026-11-17",
+          "pushed": "2026-11-18",
           "skill": "llm-agents"
         },
         {
@@ -1592,21 +2214,8 @@
           "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
           "category": "science",
           "site": "https://korczis.github.io/oscilla/",
-          "pushed": "2026-11-17",
+          "pushed": "2026-11-18",
           "skill": "contestable-decisions"
-        },
-        {
-          "name": "openttd-prismatic-bridge",
-          "title": "openttd-prismatic-bridge",
-          "how": "words",
-          "score": 3,
-          "slug": "openttd-prismatic-bridge",
-          "url": "https://gitlab.com/korczis/openttd-prismatic-bridge",
-          "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
-          "category": "media",
-          "site": null,
-          "pushed": "2026-11-17",
-          "skill": "decision-support"
         },
         {
           "name": "osint-case-ratcliffe-moscow-2026",
@@ -1635,17 +2244,17 @@
           "skill": "llm-agents"
         },
         {
-          "name": "korczis.github.io",
-          "title": "korczis.github.io",
+          "name": "openttd-prismatic-bridge",
+          "title": "openttd-prismatic-bridge",
           "how": "words",
           "score": 2.6,
-          "slug": "korczis-github-io",
-          "url": "https://github.com/korczis/korczis.github.io",
-          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-          "category": "web",
+          "slug": "openttd-prismatic-bridge",
+          "url": "https://gitlab.com/korczis/openttd-prismatic-bridge",
+          "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
+          "category": "media",
           "site": null,
-          "pushed": "2026-11-17",
-          "skill": "llm-agents"
+          "pushed": "2026-11-18",
+          "skill": "decision-support"
         },
         {
           "name": "catharsis-as-a-service",
@@ -1687,6 +2296,19 @@
           "skill": "decision-support"
         },
         {
+          "name": "server-archlinux",
+          "title": "server-archlinux",
+          "how": "words",
+          "score": 2.3,
+          "slug": "server-archlinux",
+          "url": "https://github.com/korczis/server-archlinux",
+          "description": null,
+          "category": "systems",
+          "site": null,
+          "pushed": "2019-04-04",
+          "skill": "ai-transformation"
+        },
+        {
           "name": "data-atlas",
           "title": "Data Atlas",
           "how": "words",
@@ -1698,6 +2320,19 @@
           "site": "https://korczis.github.io/data-atlas/",
           "pushed": "2026-11-16",
           "skill": "document-extraction"
+        },
+        {
+          "name": "gooddata-graphql",
+          "title": "gooddata-graphql",
+          "how": "words",
+          "score": 2,
+          "slug": "gooddata-graphql",
+          "url": "https://github.com/korczis/gooddata-graphql",
+          "description": "GoodData Web Application Written in Elixir",
+          "category": "data",
+          "site": null,
+          "pushed": "2016-12-19",
+          "skill": "decision-support"
         }
       ],
       "engagements": [
@@ -1736,12 +2371,17 @@
         {
           "id": "html",
           "name": "HTML",
-          "n": 17
+          "n": 19
         },
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 16
+          "n": 18
+        },
+        {
+          "id": "shell",
+          "name": "Shell",
+          "n": 15
         },
         {
           "id": "python",
@@ -1749,34 +2389,29 @@
           "n": 12
         },
         {
-          "id": "shell",
-          "name": "Shell",
-          "n": 12
-        },
-        {
           "id": "alpine-js",
           "name": "Alpine.js",
-          "n": 7
+          "n": 8
         },
         {
           "id": "flowbite-pro",
           "name": "Flowbite Pro",
-          "n": 7
+          "n": 8
         },
         {
           "id": "majordomus",
           "name": "Majordomus",
-          "n": 7
+          "n": 8
+        },
+        {
+          "id": "css",
+          "name": "CSS",
+          "n": 6
         },
         {
           "id": "dockerfile",
           "name": "Dockerfile",
           "n": 6
-        },
-        {
-          "id": "css",
-          "name": "CSS",
-          "n": 5
         },
         {
           "id": "fastapi",
@@ -1791,27 +2426,27 @@
         {
           "id": "kubernetes",
           "name": "Kubernetes",
-          "n": 5
+          "n": 4
         },
         {
           "id": "openai-api",
           "name": "OpenAI API",
-          "n": 5
+          "n": 4
+        },
+        {
+          "id": "tailwind-css",
+          "name": "Tailwind CSS",
+          "n": 4
         },
         {
           "id": "playwright",
           "name": "Playwright",
-          "n": 4
+          "n": 3
         },
         {
           "id": "typescript",
           "name": "TypeScript",
           "n": 3
-        },
-        {
-          "id": "postgresql",
-          "name": "PostgreSQL",
-          "n": 2
         }
       ]
     },
@@ -1838,7 +2473,7 @@
         {
           "id": "majordomus",
           "name": "Majordomus",
-          "n": 8,
+          "n": 9,
           "declared": true
         },
         {
@@ -1861,26 +2496,26 @@
           "name": "majordomus-reel",
           "title": "Majordomus reel",
           "how": "words",
-          "score": 5.1,
+          "score": 5.5,
           "slug": "majordomus-reel",
           "url": "https://github.com/korczis/majordomus-reel",
           "description": "A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound",
           "category": "media",
           "site": "https://korczis.github.io/majordomus-reel/",
-          "pushed": "2026-11-17",
+          "pushed": "2026-11-18",
           "skill": "policy-as-code"
         },
         {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "how": "words",
-          "score": 4,
+          "score": 4.6,
           "slug": "korczis-github-io",
           "url": "https://github.com/korczis/korczis.github.io",
           "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
           "category": "web",
           "site": null,
-          "pushed": "2026-11-17",
+          "pushed": "2026-11-18",
           "skill": "policy-as-code"
         },
         {
@@ -1897,19 +2532,6 @@
           "skill": "llm-agents"
         },
         {
-          "name": "kompendium-epistemicke-anihilace",
-          "title": "Kompendium",
-          "how": "words",
-          "score": 3.6,
-          "slug": "kompendium-epistemicke-anihilace",
-          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
-          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
-          "category": "knowledge",
-          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
-          "pushed": "2026-11-17",
-          "skill": "policy-as-code"
-        },
-        {
           "name": "prismatic-majordomus",
           "title": "Majordomus",
           "how": "words",
@@ -1919,8 +2541,21 @@
           "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
           "category": "ai",
           "site": "https://korczis.github.io/prismatic-majordomus/",
-          "pushed": "2026-11-17",
+          "pushed": "2026-11-18",
           "skill": "llm-agents"
+        },
+        {
+          "name": "kompendium-epistemicke-anihilace",
+          "title": "Kompendium",
+          "how": "words",
+          "score": 3.3,
+          "slug": "kompendium-epistemicke-anihilace",
+          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
+          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
+          "category": "knowledge",
+          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+          "pushed": "2026-11-18",
+          "skill": "policy-as-code"
         },
         {
           "name": "oscilla",
@@ -1932,7 +2567,7 @@
           "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
           "category": "science",
           "site": "https://korczis.github.io/oscilla/",
-          "pushed": "2026-11-17",
+          "pushed": "2026-11-18",
           "skill": "contestable-decisions"
         },
         {
@@ -1999,6 +2634,19 @@
           "site": "https://korczis.github.io/astronomists/",
           "pushed": "2026-11-16",
           "skill": "llm-agents"
+        },
+        {
+          "name": "server-archlinux",
+          "title": "server-archlinux",
+          "how": "words",
+          "score": 2.3,
+          "slug": "server-archlinux",
+          "url": "https://github.com/korczis/server-archlinux",
+          "description": null,
+          "category": "systems",
+          "site": null,
+          "pushed": "2019-04-04",
+          "skill": "ai-transformation"
         },
         {
           "name": "crisis-map",
@@ -2060,17 +2708,17 @@
         {
           "id": "html",
           "name": "HTML",
-          "n": 19
+          "n": 20
         },
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 19
+          "n": 20
         },
         {
           "id": "shell",
           "name": "Shell",
-          "n": 16
+          "n": 19
         },
         {
           "id": "python",
@@ -2080,17 +2728,17 @@
         {
           "id": "css",
           "name": "CSS",
-          "n": 8
+          "n": 9
         },
         {
           "id": "alpine-js",
           "name": "Alpine.js",
-          "n": 7
+          "n": 8
         },
         {
           "id": "flowbite-pro",
           "name": "Flowbite Pro",
-          "n": 7
+          "n": 8
         },
         {
           "id": "elixir",
@@ -2103,14 +2751,19 @@
           "n": 5
         },
         {
+          "id": "apache-echarts",
+          "name": "Apache ECharts",
+          "n": 4
+        },
+        {
           "id": "dockerfile",
           "name": "Dockerfile",
           "n": 4
         },
         {
-          "id": "apache-echarts",
-          "name": "Apache ECharts",
-          "n": 3
+          "id": "tailwind-css",
+          "name": "Tailwind CSS",
+          "n": 4
         },
         {
           "id": "fastapi",
@@ -2118,24 +2771,19 @@
           "n": 3
         },
         {
+          "id": "typescript",
+          "name": "TypeScript",
+          "n": 3
+        },
+        {
           "id": "kubernetes",
           "name": "Kubernetes",
-          "n": 3
+          "n": 2
         },
         {
           "id": "openai-api",
           "name": "OpenAI API",
-          "n": 3
-        },
-        {
-          "id": "playwright",
-          "name": "Playwright",
-          "n": 3
-        },
-        {
-          "id": "typescript",
-          "name": "TypeScript",
-          "n": 3
+          "n": 2
         }
       ]
     },
@@ -2200,6 +2848,19 @@
           "skill": "interactive-visualisation"
         },
         {
+          "name": "microcrawler-crawler-all",
+          "title": "microcrawler-crawler-all",
+          "how": "words",
+          "score": 3.8,
+          "slug": "microcrawler-crawler-all",
+          "url": "https://gitlab.com/korczis/microcrawler-crawler-all",
+          "description": null,
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20",
+          "skill": "data-integration"
+        },
+        {
           "name": "crisis-map",
           "title": "Crisis map",
           "how": "words",
@@ -2211,6 +2872,45 @@
           "site": "https://korczis.github.io/crisis-map/",
           "pushed": "2026-11-16",
           "skill": "geospatial-analysis"
+        },
+        {
+          "name": "kompendium-epistemicke-anihilace",
+          "title": "Kompendium",
+          "how": "words",
+          "score": 3.3,
+          "slug": "kompendium-epistemicke-anihilace",
+          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
+          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
+          "category": "knowledge",
+          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+          "pushed": "2026-11-18",
+          "skill": "interactive-visualisation"
+        },
+        {
+          "name": "microcrawler-crawler-sreality-cz",
+          "title": "microcrawler-crawler-sreality-cz",
+          "how": "words",
+          "score": 3.3,
+          "slug": "microcrawler-crawler-sreality-cz",
+          "url": "https://gitlab.com/korczis/microcrawler-crawler-sreality-cz",
+          "description": null,
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20",
+          "skill": "data-integration"
+        },
+        {
+          "name": "microcrawler-crawler-xkcd-com",
+          "title": "microcrawler-crawler-xkcd-com",
+          "how": "words",
+          "score": 3.3,
+          "slug": "microcrawler-crawler-xkcd-com",
+          "url": "https://gitlab.com/korczis/microcrawler-crawler-xkcd-com",
+          "description": null,
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20",
+          "skill": "data-integration"
         },
         {
           "name": "llm",
@@ -2226,17 +2926,43 @@
           "skill": "data-integration"
         },
         {
-          "name": "openttd-prismatic-bridge",
-          "title": "openttd-prismatic-bridge",
+          "name": "microcrawler-crawler-google-com",
+          "title": "microcrawler-crawler-google-com",
           "how": "words",
           "score": 3,
-          "slug": "openttd-prismatic-bridge",
-          "url": "https://gitlab.com/korczis/openttd-prismatic-bridge",
-          "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
-          "category": "media",
+          "slug": "microcrawler-crawler-google-com",
+          "url": "https://gitlab.com/korczis/microcrawler-crawler-google-com",
+          "description": null,
+          "category": "data",
           "site": null,
-          "pushed": "2026-11-17",
-          "skill": "decision-support"
+          "pushed": "2025-12-20",
+          "skill": "data-integration"
+        },
+        {
+          "name": "microcrawler-crawler-news-ycombinator-com",
+          "title": "microcrawler-crawler-news-ycombinator-com",
+          "how": "words",
+          "score": 3,
+          "slug": "microcrawler-crawler-news-ycombinator-com",
+          "url": "https://gitlab.com/korczis/microcrawler-crawler-news-ycombinator-com",
+          "description": null,
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20",
+          "skill": "data-integration"
+        },
+        {
+          "name": "microcrawler-crawler-yelp-com",
+          "title": "microcrawler-crawler-yelp-com",
+          "how": "words",
+          "score": 3,
+          "slug": "microcrawler-crawler-yelp-com",
+          "url": "https://gitlab.com/korczis/microcrawler-crawler-yelp-com",
+          "description": null,
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20",
+          "skill": "data-integration"
         },
         {
           "name": "sonic-playground",
@@ -2265,17 +2991,17 @@
           "skill": "geospatial-analysis"
         },
         {
-          "name": "kompendium-epistemicke-anihilace",
-          "title": "Kompendium",
+          "name": "openttd-prismatic-bridge",
+          "title": "openttd-prismatic-bridge",
           "how": "words",
           "score": 2.6,
-          "slug": "kompendium-epistemicke-anihilace",
-          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
-          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
-          "category": "knowledge",
-          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
-          "pushed": "2026-11-17",
-          "skill": "interactive-visualisation"
+          "slug": "openttd-prismatic-bridge",
+          "url": "https://gitlab.com/korczis/openttd-prismatic-bridge",
+          "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
+          "category": "media",
+          "site": null,
+          "pushed": "2026-11-18",
+          "skill": "decision-support"
         },
         {
           "name": "simple_geocoder",
@@ -2289,6 +3015,71 @@
           "site": null,
           "pushed": "2025-12-20",
           "skill": "geospatial-analysis"
+        },
+        {
+          "name": "apollo-crawler-extension",
+          "title": "apollo-crawler-extension",
+          "how": "words",
+          "score": 2.6,
+          "slug": "apollo-crawler-extension",
+          "url": "https://gitlab.com/korczis/apollo-crawler-extension",
+          "description": "Apollo Platform Chrome Extension",
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20",
+          "skill": "data-integration"
+        },
+        {
+          "name": "microcrawler-crawler-craiglist-com",
+          "title": "microcrawler-crawler-craiglist-com",
+          "how": "words",
+          "score": 2.6,
+          "slug": "microcrawler-crawler-craiglist-com",
+          "url": "https://gitlab.com/korczis/microcrawler-crawler-craiglist-com",
+          "description": null,
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20",
+          "skill": "data-integration"
+        },
+        {
+          "name": "microcrawler-crawler-firmy-cz",
+          "title": "microcrawler-crawler-firmy-cz",
+          "how": "words",
+          "score": 2.6,
+          "slug": "microcrawler-crawler-firmy-cz",
+          "url": "https://gitlab.com/korczis/microcrawler-crawler-firmy-cz",
+          "description": null,
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20",
+          "skill": "data-integration"
+        },
+        {
+          "name": "microcrawler-js",
+          "title": "microcrawler-js",
+          "how": "words",
+          "score": 2.6,
+          "slug": "microcrawler-js",
+          "url": "https://gitlab.com/korczis/microcrawler-js",
+          "description": "Scrapping made easy...",
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20",
+          "skill": "data-integration"
+        },
+        {
+          "name": "gooddata-graphql",
+          "title": "gooddata-graphql",
+          "how": "words",
+          "score": 2.6,
+          "slug": "gooddata-graphql",
+          "url": "https://github.com/korczis/gooddata-graphql",
+          "description": "GoodData Web Application Written in Elixir",
+          "category": "data",
+          "site": null,
+          "pushed": "2016-12-19",
+          "skill": "interactive-visualisation"
         },
         {
           "name": "astronomists",
@@ -2314,6 +3105,45 @@
           "category": "ai",
           "site": null,
           "pushed": "2026-02-04",
+          "skill": "data-integration"
+        },
+        {
+          "name": "microcrawler",
+          "title": "microcrawler",
+          "how": "words",
+          "score": 2.3,
+          "slug": "microcrawler",
+          "url": "https://gitlab.com/korczis/microcrawler",
+          "description": null,
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20",
+          "skill": "geospatial-analysis"
+        },
+        {
+          "name": "docks",
+          "title": "docks",
+          "how": "words",
+          "score": 2,
+          "slug": "docks",
+          "url": "https://gitlab.com/korczis/docks",
+          "description": "Repository containing useful Dockerfile(s)",
+          "category": "systems",
+          "site": null,
+          "pushed": "2025-12-20",
+          "skill": "geospatial-analysis"
+        },
+        {
+          "name": "lethe.it",
+          "title": "lethe.it",
+          "how": "words",
+          "score": 2,
+          "slug": "lethe-it",
+          "url": "https://github.com/korczis/lethe.it",
+          "description": "lethe.it - your personal smart links archive, organizer, classifier and much more",
+          "category": "tools",
+          "site": null,
+          "pushed": "2015-01-17",
           "skill": "data-integration"
         }
       ],
@@ -2349,27 +3179,27 @@
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 12
+          "n": 24
         },
         {
           "id": "html",
           "name": "HTML",
-          "n": 11
+          "n": 14
         },
         {
           "id": "shell",
           "name": "Shell",
+          "n": 13
+        },
+        {
+          "id": "elixir",
+          "name": "Elixir",
           "n": 10
         },
         {
           "id": "python",
           "name": "Python",
           "n": 9
-        },
-        {
-          "id": "elixir",
-          "name": "Elixir",
-          "n": 8
         },
         {
           "id": "alpine-js",
@@ -2397,14 +3227,14 @@
           "n": 4
         },
         {
-          "id": "typescript",
-          "name": "TypeScript",
+          "id": "dockerfile",
+          "name": "Dockerfile",
           "n": 4
         },
         {
-          "id": "dockerfile",
-          "name": "Dockerfile",
-          "n": 3
+          "id": "typescript",
+          "name": "TypeScript",
+          "n": 4
         },
         {
           "id": "fastapi",
@@ -2914,7 +3744,32 @@
       "services": [
         "m-and-a"
       ],
-      "repos": [],
+      "repos": [
+        {
+          "name": "cs-benchmark",
+          "title": "cs-benchmark",
+          "how": "words",
+          "score": 3.2,
+          "slug": "cs-benchmark",
+          "url": "https://github.com/korczis/cs-benchmark",
+          "description": "Simple C# Benchmark",
+          "category": "learning",
+          "site": null,
+          "pushed": "2014-01-07"
+        },
+        {
+          "name": "maze-rs",
+          "title": "maze-rs",
+          "how": "words",
+          "score": 2,
+          "slug": "maze-rs",
+          "url": "https://github.com/korczis/maze-rs",
+          "description": "Maze for Programmers (Rust)",
+          "category": "science",
+          "site": null,
+          "pushed": "2021-12-28"
+        }
+      ],
       "engagements": [
         {
           "id": "e2",
@@ -2935,6 +3790,11 @@
       ],
       "technologies": [
         {
+          "id": "html",
+          "name": "HTML",
+          "n": 2
+        },
+        {
           "id": "alpine-js",
           "name": "Alpine.js",
           "n": 1
@@ -2942,6 +3802,11 @@
         {
           "id": "claude-api",
           "name": "Claude API",
+          "n": 1
+        },
+        {
+          "id": "csharp",
+          "name": "C#",
           "n": 1
         },
         {
@@ -2962,11 +3827,6 @@
         {
           "id": "github-actions",
           "name": "GitHub Actions",
-          "n": 1
-        },
-        {
-          "id": "html",
-          "name": "HTML",
           "n": 1
         },
         {
@@ -3008,11 +3868,6 @@
           "id": "python",
           "name": "Python",
           "n": 1
-        },
-        {
-          "id": "react",
-          "name": "React",
-          "n": 1
         }
       ]
     },
@@ -3031,13 +3886,13 @@
           "name": "openttd-prismatic-bridge",
           "title": "openttd-prismatic-bridge",
           "how": "words",
-          "score": 3,
+          "score": 2.6,
           "slug": "openttd-prismatic-bridge",
           "url": "https://gitlab.com/korczis/openttd-prismatic-bridge",
           "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
           "category": "media",
           "site": null,
-          "pushed": "2026-11-17"
+          "pushed": "2026-11-18"
         },
         {
           "name": "crisis-map",
@@ -3050,6 +3905,18 @@
           "category": "data",
           "site": "https://korczis.github.io/crisis-map/",
           "pushed": "2026-11-16"
+        },
+        {
+          "name": "gooddata-graphql",
+          "title": "gooddata-graphql",
+          "how": "words",
+          "score": 2,
+          "slug": "gooddata-graphql",
+          "url": "https://github.com/korczis/gooddata-graphql",
+          "description": "GoodData Web Application Written in Elixir",
+          "category": "data",
+          "site": null,
+          "pushed": "2016-12-19"
         }
       ],
       "engagements": [
@@ -3088,17 +3955,22 @@
         {
           "id": "html",
           "name": "HTML",
-          "n": 3
+          "n": 4
         },
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 3
+          "n": 4
         },
         {
           "id": "python",
           "name": "Python",
           "n": 3
+        },
+        {
+          "id": "elixir",
+          "name": "Elixir",
+          "n": 2
         },
         {
           "id": "shell",
@@ -3123,11 +3995,6 @@
         {
           "id": "dockerfile",
           "name": "Dockerfile",
-          "n": 1
-        },
-        {
-          "id": "elixir",
-          "name": "Elixir",
           "n": 1
         },
         {
@@ -3212,18 +4079,6 @@
           "pushed": "2026-08-26"
         },
         {
-          "name": "openttd-prismatic-bridge",
-          "title": "openttd-prismatic-bridge",
-          "how": "words",
-          "score": 2,
-          "slug": "openttd-prismatic-bridge",
-          "url": "https://gitlab.com/korczis/openttd-prismatic-bridge",
-          "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
-          "category": "media",
-          "site": null,
-          "pushed": "2026-11-17"
-        },
-        {
           "name": "data-atlas",
           "title": "Data Atlas",
           "how": "words",
@@ -3234,6 +4089,18 @@
           "category": "data",
           "site": "https://korczis.github.io/data-atlas/",
           "pushed": "2026-11-16"
+        },
+        {
+          "name": "openttd-prismatic-bridge",
+          "title": "openttd-prismatic-bridge",
+          "how": "words",
+          "score": 0,
+          "slug": "openttd-prismatic-bridge",
+          "url": "https://gitlab.com/korczis/openttd-prismatic-bridge",
+          "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
+          "category": "media",
+          "site": null,
+          "pushed": "2026-11-18"
         }
       ],
       "engagements": [
@@ -3596,13 +4463,13 @@
           "name": "kompendium-epistemicke-anihilace",
           "title": "Kompendium",
           "how": "words",
-          "score": 2.6,
+          "score": 3.3,
           "slug": "kompendium-epistemicke-anihilace",
           "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
           "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
           "category": "knowledge",
           "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
-          "pushed": "2026-11-17"
+          "pushed": "2026-11-18"
         }
       ],
       "engagements": [
@@ -3714,6 +4581,42 @@
       ],
       "repos": [
         {
+          "name": "microcrawler-crawler-all",
+          "title": "microcrawler-crawler-all",
+          "how": "words",
+          "score": 3.8,
+          "slug": "microcrawler-crawler-all",
+          "url": "https://gitlab.com/korczis/microcrawler-crawler-all",
+          "description": null,
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20"
+        },
+        {
+          "name": "microcrawler-crawler-sreality-cz",
+          "title": "microcrawler-crawler-sreality-cz",
+          "how": "words",
+          "score": 3.3,
+          "slug": "microcrawler-crawler-sreality-cz",
+          "url": "https://gitlab.com/korczis/microcrawler-crawler-sreality-cz",
+          "description": null,
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20"
+        },
+        {
+          "name": "microcrawler-crawler-xkcd-com",
+          "title": "microcrawler-crawler-xkcd-com",
+          "how": "words",
+          "score": 3.3,
+          "slug": "microcrawler-crawler-xkcd-com",
+          "url": "https://gitlab.com/korczis/microcrawler-crawler-xkcd-com",
+          "description": null,
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20"
+        },
+        {
           "name": "llm",
           "title": "llm",
           "how": "words",
@@ -3726,6 +4629,90 @@
           "pushed": "2026-08-21"
         },
         {
+          "name": "microcrawler-crawler-google-com",
+          "title": "microcrawler-crawler-google-com",
+          "how": "words",
+          "score": 3,
+          "slug": "microcrawler-crawler-google-com",
+          "url": "https://gitlab.com/korczis/microcrawler-crawler-google-com",
+          "description": null,
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20"
+        },
+        {
+          "name": "microcrawler-crawler-news-ycombinator-com",
+          "title": "microcrawler-crawler-news-ycombinator-com",
+          "how": "words",
+          "score": 3,
+          "slug": "microcrawler-crawler-news-ycombinator-com",
+          "url": "https://gitlab.com/korczis/microcrawler-crawler-news-ycombinator-com",
+          "description": null,
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20"
+        },
+        {
+          "name": "microcrawler-crawler-yelp-com",
+          "title": "microcrawler-crawler-yelp-com",
+          "how": "words",
+          "score": 3,
+          "slug": "microcrawler-crawler-yelp-com",
+          "url": "https://gitlab.com/korczis/microcrawler-crawler-yelp-com",
+          "description": null,
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20"
+        },
+        {
+          "name": "apollo-crawler-extension",
+          "title": "apollo-crawler-extension",
+          "how": "words",
+          "score": 2.6,
+          "slug": "apollo-crawler-extension",
+          "url": "https://gitlab.com/korczis/apollo-crawler-extension",
+          "description": "Apollo Platform Chrome Extension",
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20"
+        },
+        {
+          "name": "microcrawler-crawler-craiglist-com",
+          "title": "microcrawler-crawler-craiglist-com",
+          "how": "words",
+          "score": 2.6,
+          "slug": "microcrawler-crawler-craiglist-com",
+          "url": "https://gitlab.com/korczis/microcrawler-crawler-craiglist-com",
+          "description": null,
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20"
+        },
+        {
+          "name": "microcrawler-crawler-firmy-cz",
+          "title": "microcrawler-crawler-firmy-cz",
+          "how": "words",
+          "score": 2.6,
+          "slug": "microcrawler-crawler-firmy-cz",
+          "url": "https://gitlab.com/korczis/microcrawler-crawler-firmy-cz",
+          "description": null,
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20"
+        },
+        {
+          "name": "microcrawler-js",
+          "title": "microcrawler-js",
+          "how": "words",
+          "score": 2.6,
+          "slug": "microcrawler-js",
+          "url": "https://gitlab.com/korczis/microcrawler-js",
+          "description": "Scrapping made easy...",
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20"
+        },
+        {
           "name": "sig",
           "title": "sig",
           "how": "words",
@@ -3736,6 +4723,18 @@
           "category": "ai",
           "site": null,
           "pushed": "2026-02-04"
+        },
+        {
+          "name": "lethe.it",
+          "title": "lethe.it",
+          "how": "words",
+          "score": 2,
+          "slug": "lethe-it",
+          "url": "https://github.com/korczis/lethe.it",
+          "description": "lethe.it - your personal smart links archive, organizer, classifier and much more",
+          "category": "tools",
+          "site": null,
+          "pushed": "2015-01-17"
         }
       ],
       "engagements": [
@@ -3758,6 +4757,16 @@
       ],
       "technologies": [
         {
+          "id": "javascript",
+          "name": "JavaScript",
+          "n": 11
+        },
+        {
+          "id": "shell",
+          "name": "Shell",
+          "n": 3
+        },
+        {
           "id": "claude-api",
           "name": "Claude API",
           "n": 2
@@ -3768,8 +4777,8 @@
           "n": 2
         },
         {
-          "id": "shell",
-          "name": "Shell",
+          "id": "html",
+          "name": "HTML",
           "n": 2
         },
         {
@@ -3808,16 +4817,6 @@
           "n": 1
         },
         {
-          "id": "html",
-          "name": "HTML",
-          "n": 1
-        },
-        {
-          "id": "javascript",
-          "name": "JavaScript",
-          "n": 1
-        },
-        {
           "id": "kubernetes",
           "name": "Kubernetes",
           "n": 1
@@ -3848,6 +4847,18 @@
         "ai-engineering-governance"
       ],
       "repos": [
+        {
+          "name": "korczis.github.io",
+          "title": "korczis.github.io",
+          "how": "words",
+          "score": 2.6,
+          "slug": "korczis-github-io",
+          "url": "https://github.com/korczis/korczis.github.io",
+          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+          "category": "web",
+          "site": null,
+          "pushed": "2026-11-18"
+        },
         {
           "name": "catharsis-as-a-service",
           "title": "Catharsis as a Service",
@@ -3909,12 +4920,12 @@
         {
           "id": "html",
           "name": "HTML",
-          "n": 3
+          "n": 4
         },
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 3
+          "n": 4
         },
         {
           "id": "python",
@@ -3922,23 +4933,43 @@
           "n": 3
         },
         {
+          "id": "shell",
+          "name": "Shell",
+          "n": 3
+        },
+        {
+          "id": "alpine-js",
+          "name": "Alpine.js",
+          "n": 2
+        },
+        {
           "id": "claude-api",
           "name": "Claude API",
           "n": 2
         },
         {
-          "id": "shell",
-          "name": "Shell",
+          "id": "css",
+          "name": "CSS",
           "n": 2
         },
         {
-          "id": "alpine-js",
-          "name": "Alpine.js",
-          "n": 1
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 2
         },
         {
-          "id": "css",
-          "name": "CSS",
+          "id": "majordomus",
+          "name": "Majordomus",
+          "n": 2
+        },
+        {
+          "id": "tailwind-css",
+          "name": "Tailwind CSS",
+          "n": 2
+        },
+        {
+          "id": "apache-echarts",
+          "name": "Apache ECharts",
           "n": 1
         },
         {
@@ -3957,33 +4988,13 @@
           "n": 1
         },
         {
-          "id": "flowbite-pro",
-          "name": "Flowbite Pro",
-          "n": 1
-        },
-        {
           "id": "github-actions",
           "name": "GitHub Actions",
           "n": 1
         },
         {
-          "id": "kubernetes",
-          "name": "Kubernetes",
-          "n": 1
-        },
-        {
-          "id": "majordomus",
-          "name": "Majordomus",
-          "n": 1
-        },
-        {
-          "id": "openai-api",
-          "name": "OpenAI API",
-          "n": 1
-        },
-        {
-          "id": "playwright",
-          "name": "Playwright",
+          "id": "github-pages",
+          "name": "GitHub Pages",
           "n": 1
         }
       ]
@@ -3995,7 +5006,20 @@
         "decision-support-ai",
         "ai-engineering-governance"
       ],
-      "repos": [],
+      "repos": [
+        {
+          "name": "server-archlinux",
+          "title": "server-archlinux",
+          "how": "words",
+          "score": 2.3,
+          "slug": "server-archlinux",
+          "url": "https://github.com/korczis/server-archlinux",
+          "description": null,
+          "category": "systems",
+          "site": null,
+          "pushed": "2019-04-04"
+        }
+      ],
       "engagements": [
         {
           "id": "e2",
@@ -4015,6 +5039,11 @@
         }
       ],
       "technologies": [
+        {
+          "id": "shell",
+          "name": "Shell",
+          "n": 2
+        },
         {
           "id": "alpine-js",
           "name": "Alpine.js",
@@ -4089,11 +5118,6 @@
           "id": "python",
           "name": "Python",
           "n": 1
-        },
-        {
-          "id": "react",
-          "name": "React",
-          "n": 1
         }
       ]
     },
@@ -4118,6 +5142,18 @@
           "pushed": "2026-02-04"
         },
         {
+          "name": "korczis.github.io",
+          "title": "korczis.github.io",
+          "how": "words",
+          "score": 3.6,
+          "slug": "korczis-github-io",
+          "url": "https://github.com/korczis/korczis.github.io",
+          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+          "category": "web",
+          "site": null,
+          "pushed": "2026-11-18"
+        },
+        {
           "name": "prismatic-majordomus",
           "title": "Majordomus",
           "how": "words",
@@ -4127,7 +5163,7 @@
           "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
           "category": "ai",
           "site": "https://korczis.github.io/prismatic-majordomus/",
-          "pushed": "2026-11-17"
+          "pushed": "2026-11-18"
         },
         {
           "name": "osint-case-ratcliffe-moscow-2026",
@@ -4152,18 +5188,6 @@
           "category": "ai",
           "site": null,
           "pushed": "2026-08-21"
-        },
-        {
-          "name": "korczis.github.io",
-          "title": "korczis.github.io",
-          "how": "words",
-          "score": 2.6,
-          "slug": "korczis-github-io",
-          "url": "https://github.com/korczis/korczis.github.io",
-          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-          "category": "web",
-          "site": null,
-          "pushed": "2026-11-17"
         },
         {
           "name": "astronomists",
@@ -4419,7 +5443,7 @@
           "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
           "category": "ai",
           "site": "https://korczis.github.io/prismatic-majordomus/",
-          "pushed": "2026-11-17"
+          "pushed": "2026-11-18"
         }
       ],
       "engagements": [
@@ -4616,9 +5640,28 @@
         "digital-forensics",
         "attack-surface"
       ],
-      "repos": [],
+      "repos": [
+        {
+          "name": "skull-c",
+          "title": "skull-c",
+          "how": "words",
+          "score": 2,
+          "slug": "skull-c",
+          "url": "https://github.com/korczis/skull-c",
+          "description": null,
+          "category": "learning",
+          "site": null,
+          "pushed": "2014-08-05"
+        }
+      ],
       "engagements": [],
-      "technologies": []
+      "technologies": [
+        {
+          "id": "c",
+          "name": "C",
+          "n": 1
+        }
+      ]
     },
     "media-forensics": {
       "domain": "data",
@@ -4628,6 +5671,30 @@
         "digital-forensics"
       ],
       "repos": [
+        {
+          "name": "gooddata_connectors_metadata",
+          "title": "gooddata_connectors_metadata",
+          "how": "words",
+          "score": 3.9,
+          "slug": "gooddata-connectors-metadata",
+          "url": "https://github.com/korczis/gooddata_connectors_metadata",
+          "description": "The gem for accessing metadata for gooddata connector infrastructure",
+          "category": "data",
+          "site": null,
+          "pushed": "2015-01-22"
+        },
+        {
+          "name": "gooddata-fs",
+          "title": "gooddata-fs",
+          "how": "words",
+          "score": 3,
+          "slug": "gooddata-fs",
+          "url": "https://github.com/korczis/gooddata-fs",
+          "description": "GoodData as Filesystem (using FUSE)",
+          "category": "data",
+          "site": null,
+          "pushed": "2016-07-15"
+        },
         {
           "name": "llm",
           "title": "llm",
@@ -4652,6 +5719,21 @@
           "id": "elixir",
           "name": "Elixir",
           "n": 1
+        },
+        {
+          "id": "makefile",
+          "name": "Makefile",
+          "n": 1
+        },
+        {
+          "id": "ruby",
+          "name": "Ruby",
+          "n": 1
+        },
+        {
+          "id": "rust",
+          "name": "Rust",
+          "n": 1
         }
       ]
     },
@@ -4661,9 +5743,33 @@
       "services": [
         "digital-forensics"
       ],
-      "repos": [],
+      "repos": [
+        {
+          "name": "bcnode-old",
+          "title": "bcnode-old",
+          "how": "words",
+          "score": 2,
+          "slug": "bcnode-old",
+          "url": "https://github.com/korczis/bcnode-old",
+          "description": "Mining node with built-in block rover and DHT. ",
+          "category": "tools",
+          "site": null,
+          "pushed": "2018-04-12"
+        }
+      ],
       "engagements": [],
-      "technologies": []
+      "technologies": [
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "n": 1
+        },
+        {
+          "id": "rust",
+          "name": "Rust",
+          "n": 1
+        }
+      ]
     },
     "source-reliability": {
       "domain": "data",
@@ -4731,9 +5837,67 @@
         "continuous-monitoring",
         "attack-surface"
       ],
-      "repos": [],
+      "repos": [
+        {
+          "name": "streamflow",
+          "title": "streamflow",
+          "how": "words",
+          "score": 2,
+          "slug": "streamflow",
+          "url": "https://github.com/korczis/streamflow",
+          "description": "Stream Flow - Fast Stream Processing in Rust",
+          "category": "tools",
+          "site": null,
+          "pushed": "2017-05-24"
+        },
+        {
+          "name": "microscratch",
+          "title": "microscratch",
+          "how": "words",
+          "score": 2,
+          "slug": "microscratch",
+          "url": "https://github.com/korczis/microscratch",
+          "description": "Light Weight Web Framework using node.js, mongo, sockets, ember.js ...",
+          "category": "web",
+          "site": null,
+          "pushed": "2015-01-01"
+        },
+        {
+          "name": "microcrawler-couchapp",
+          "title": "microcrawler-couchapp",
+          "how": "words",
+          "score": 2,
+          "slug": "microcrawler-couchapp",
+          "url": "https://github.com/korczis/microcrawler-couchapp",
+          "description": "Microcrawler Web UI for browsing results (couchapp) ...",
+          "category": "data",
+          "site": null,
+          "pushed": "2014-06-22"
+        }
+      ],
       "engagements": [],
-      "technologies": []
+      "technologies": [
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "n": 2
+        },
+        {
+          "id": "css",
+          "name": "CSS",
+          "n": 1
+        },
+        {
+          "id": "makefile",
+          "name": "Makefile",
+          "n": 1
+        },
+        {
+          "id": "rust",
+          "name": "Rust",
+          "n": 1
+        }
+      ]
     },
     "web-automation": {
       "domain": "data",
@@ -4742,9 +5906,146 @@
         "digital-investigation",
         "attack-surface"
       ],
-      "repos": [],
+      "repos": [
+        {
+          "name": "microcrawler-crawler-all",
+          "title": "microcrawler-crawler-all",
+          "how": "words",
+          "score": 3.8,
+          "slug": "microcrawler-crawler-all",
+          "url": "https://gitlab.com/korczis/microcrawler-crawler-all",
+          "description": null,
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20"
+        },
+        {
+          "name": "microcrawler-crawler-sreality-cz",
+          "title": "microcrawler-crawler-sreality-cz",
+          "how": "words",
+          "score": 3.6,
+          "slug": "microcrawler-crawler-sreality-cz",
+          "url": "https://gitlab.com/korczis/microcrawler-crawler-sreality-cz",
+          "description": null,
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20"
+        },
+        {
+          "name": "microcrawler-js",
+          "title": "microcrawler-js",
+          "how": "words",
+          "score": 3.6,
+          "slug": "microcrawler-js",
+          "url": "https://gitlab.com/korczis/microcrawler-js",
+          "description": "Scrapping made easy...",
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20"
+        },
+        {
+          "name": "microcrawler-crawler-xkcd-com",
+          "title": "microcrawler-crawler-xkcd-com",
+          "how": "words",
+          "score": 3.3,
+          "slug": "microcrawler-crawler-xkcd-com",
+          "url": "https://gitlab.com/korczis/microcrawler-crawler-xkcd-com",
+          "description": null,
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20"
+        },
+        {
+          "name": "microcrawler-crawler-google-com",
+          "title": "microcrawler-crawler-google-com",
+          "how": "words",
+          "score": 3,
+          "slug": "microcrawler-crawler-google-com",
+          "url": "https://gitlab.com/korczis/microcrawler-crawler-google-com",
+          "description": null,
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20"
+        },
+        {
+          "name": "microcrawler-crawler-news-ycombinator-com",
+          "title": "microcrawler-crawler-news-ycombinator-com",
+          "how": "words",
+          "score": 3,
+          "slug": "microcrawler-crawler-news-ycombinator-com",
+          "url": "https://gitlab.com/korczis/microcrawler-crawler-news-ycombinator-com",
+          "description": null,
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20"
+        },
+        {
+          "name": "microcrawler-crawler-yelp-com",
+          "title": "microcrawler-crawler-yelp-com",
+          "how": "words",
+          "score": 3,
+          "slug": "microcrawler-crawler-yelp-com",
+          "url": "https://gitlab.com/korczis/microcrawler-crawler-yelp-com",
+          "description": null,
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20"
+        },
+        {
+          "name": "apollo-crawler-extension",
+          "title": "apollo-crawler-extension",
+          "how": "words",
+          "score": 2.6,
+          "slug": "apollo-crawler-extension",
+          "url": "https://gitlab.com/korczis/apollo-crawler-extension",
+          "description": "Apollo Platform Chrome Extension",
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20"
+        },
+        {
+          "name": "microcrawler-crawler-craiglist-com",
+          "title": "microcrawler-crawler-craiglist-com",
+          "how": "words",
+          "score": 2.6,
+          "slug": "microcrawler-crawler-craiglist-com",
+          "url": "https://gitlab.com/korczis/microcrawler-crawler-craiglist-com",
+          "description": null,
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20"
+        },
+        {
+          "name": "microcrawler-crawler-firmy-cz",
+          "title": "microcrawler-crawler-firmy-cz",
+          "how": "words",
+          "score": 2.6,
+          "slug": "microcrawler-crawler-firmy-cz",
+          "url": "https://gitlab.com/korczis/microcrawler-crawler-firmy-cz",
+          "description": null,
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20"
+        }
+      ],
       "engagements": [],
-      "technologies": []
+      "technologies": [
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "n": 9
+        },
+        {
+          "id": "html",
+          "name": "HTML",
+          "n": 1
+        },
+        {
+          "id": "shell",
+          "name": "Shell",
+          "n": 1
+        }
+      ]
     },
     "contestable-decisions": {
       "domain": "ai",
@@ -4766,7 +6067,7 @@
           "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
           "category": "science",
           "site": "https://korczis.github.io/oscilla/",
-          "pushed": "2026-11-17"
+          "pushed": "2026-11-18"
         }
       ],
       "engagements": [],
@@ -4815,37 +6116,37 @@
           "name": "majordomus-reel",
           "title": "Majordomus reel",
           "how": "words",
-          "score": 5.1,
+          "score": 5.5,
           "slug": "majordomus-reel",
           "url": "https://github.com/korczis/majordomus-reel",
           "description": "A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound",
           "category": "media",
           "site": "https://korczis.github.io/majordomus-reel/",
-          "pushed": "2026-11-17"
+          "pushed": "2026-11-18"
         },
         {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "how": "words",
-          "score": 4,
+          "score": 4.6,
           "slug": "korczis-github-io",
           "url": "https://github.com/korczis/korczis.github.io",
           "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
           "category": "web",
           "site": null,
-          "pushed": "2026-11-17"
+          "pushed": "2026-11-18"
         },
         {
           "name": "kompendium-epistemicke-anihilace",
           "title": "Kompendium",
           "how": "words",
-          "score": 3.6,
+          "score": 3.3,
           "slug": "kompendium-epistemicke-anihilace",
           "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
           "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
           "category": "knowledge",
           "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
-          "pushed": "2026-11-17"
+          "pushed": "2026-11-18"
         },
         {
           "name": "prismatic-majordomus",
@@ -4857,7 +6158,7 @@
           "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
           "category": "ai",
           "site": "https://korczis.github.io/prismatic-majordomus/",
-          "pushed": "2026-11-17"
+          "pushed": "2026-11-18"
         },
         {
           "name": "data-atlas",
@@ -5012,6 +6313,18 @@
           "pushed": "2026-11-17"
         },
         {
+          "name": "kompendium-epistemicke-anihilace",
+          "title": "Kompendium",
+          "how": "words",
+          "score": 3.3,
+          "slug": "kompendium-epistemicke-anihilace",
+          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
+          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
+          "category": "knowledge",
+          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+          "pushed": "2026-11-18"
+        },
+        {
           "name": "sonic-playground",
           "title": "Sonic Playground",
           "how": "words",
@@ -5024,16 +6337,16 @@
           "pushed": "2026-11-17"
         },
         {
-          "name": "kompendium-epistemicke-anihilace",
-          "title": "Kompendium",
+          "name": "gooddata-graphql",
+          "title": "gooddata-graphql",
           "how": "words",
           "score": 2.6,
-          "slug": "kompendium-epistemicke-anihilace",
-          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
-          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
-          "category": "knowledge",
-          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
-          "pushed": "2026-11-17"
+          "slug": "gooddata-graphql",
+          "url": "https://github.com/korczis/gooddata-graphql",
+          "description": "GoodData Web Application Written in Elixir",
+          "category": "data",
+          "site": null,
+          "pushed": "2016-12-19"
         },
         {
           "name": "astronomists",
@@ -5053,12 +6366,17 @@
         {
           "id": "html",
           "name": "HTML",
-          "n": 4
+          "n": 5
         },
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 4
+          "n": 5
+        },
+        {
+          "id": "elixir",
+          "name": "Elixir",
+          "n": 3
         },
         {
           "id": "python",
@@ -5083,11 +6401,6 @@
         {
           "id": "css",
           "name": "CSS",
-          "n": 2
-        },
-        {
-          "id": "elixir",
-          "name": "Elixir",
           "n": 2
         },
         {
@@ -5174,10 +6487,39 @@
           "category": "tools",
           "site": null,
           "pushed": "2025-12-20"
+        },
+        {
+          "name": "microcrawler",
+          "title": "microcrawler",
+          "how": "words",
+          "score": 2.3,
+          "slug": "microcrawler",
+          "url": "https://gitlab.com/korczis/microcrawler",
+          "description": null,
+          "category": "data",
+          "site": null,
+          "pushed": "2025-12-20"
+        },
+        {
+          "name": "docks",
+          "title": "docks",
+          "how": "words",
+          "score": 2,
+          "slug": "docks",
+          "url": "https://gitlab.com/korczis/docks",
+          "description": "Repository containing useful Dockerfile(s)",
+          "category": "systems",
+          "site": null,
+          "pushed": "2025-12-20"
         }
       ],
       "engagements": [],
       "technologies": [
+        {
+          "id": "shell",
+          "name": "Shell",
+          "n": 3
+        },
         {
           "id": "elixir",
           "name": "Elixir",
@@ -5196,6 +6538,11 @@
         {
           "id": "css",
           "name": "CSS",
+          "n": 1
+        },
+        {
+          "id": "dockerfile",
+          "name": "Dockerfile",
           "n": 1
         },
         {
@@ -5219,6 +6566,11 @@
           "n": 1
         },
         {
+          "id": "php",
+          "name": "PHP",
+          "n": 1
+        },
+        {
           "id": "plpgsql",
           "name": "PL/pgSQL",
           "n": 1
@@ -5226,11 +6578,6 @@
         {
           "id": "python",
           "name": "Python",
-          "n": 1
-        },
-        {
-          "id": "shell",
-          "name": "Shell",
           "n": 1
         }
       ]

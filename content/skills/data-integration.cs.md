@@ -13,7 +13,7 @@ skill = "data-integration"
 og_title = "Integrace dat: dovednosti"
 og_image = "og/cs-skill-data-integration.png"
 schema = "skill"
-terms = ["skill", "data-integration", "claude-api", "elixir", "shell", "typescript", "alpine-js", "dockerfile", "eex", "fastapi", "flowbite-pro", "github-actions"]
+terms = ["skill", "data-integration", "javascript", "shell", "claude-api", "elixir", "html", "typescript", "alpine-js", "dockerfile", "eex", "fastapi"]
 keywords = ["Integrace dat", "Interaktivní datové produkty a simulátory", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -31,9 +31,9 @@ Pojem, na kterém stojí: [Integrace dat](@/glossary/data-integration.cs.md).
 
 Služby, které z ní čerpají: [Interaktivní datové produkty a simulátory](@/services/interactive-data-products.cs.md).
 
-Praktikovaná s: [Claude API](@/glossary/claude-api.cs.md), [Elixir](@/glossary/elixir.cs.md), [Shell](@/glossary/shell.cs.md), [TypeScript](@/glossary/typescript.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md), [EEx and HEEx](@/glossary/eex.cs.md) a [FastAPI](@/glossary/fastapi.cs.md).
+Praktikovaná s: [JavaScript](@/glossary/javascript.cs.md), [Shell](@/glossary/shell.cs.md), [Claude API](@/glossary/claude-api.cs.md), [Elixir](@/glossary/elixir.cs.md), [HTML](@/glossary/html.cs.md), [TypeScript](@/glossary/typescript.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md) a [Dockerfile](@/glossary/dockerfile.cs.md).
 
-Veřejná práce, jejíž vlastní slova ji dokládají: [llm](https://gitlab.com/korczis/llm) a [sig](https://gitlab.com/korczis/sig).
+Veřejná práce, jejíž vlastní slova ji dokládají: [microcrawler-crawler-all](https://gitlab.com/korczis/microcrawler-crawler-all), [microcrawler-crawler-sreality-cz](https://gitlab.com/korczis/microcrawler-crawler-sreality-cz), [microcrawler-crawler-xkcd-com](https://gitlab.com/korczis/microcrawler-crawler-xkcd-com) a [llm](https://gitlab.com/korczis/llm).
 
 Byla použita v klientské práci v odvětví: Developer nemovitostí; případy užití níže uvádějí princip a záměr, bez jmen a čísel.
 

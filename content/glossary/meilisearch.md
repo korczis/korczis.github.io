@@ -3,7 +3,7 @@
 title = "Meilisearch"
 description = "A fast open-source search engine with typo tolerance and filters, used for full-text search over collected evidence."
 template = "term.html"
-weight = 47
+weight = 54
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "A fast open-source search engine with typo tolerance and filters, 
 aliases = []
 reference = { title = "Meilisearch documentation", url = "https://www.meilisearch.com/docs" }
 pages = ["services/digital-investigation.md", "services/due-diligence.md"]
-related = ["alpine-js", "beneficial-ownership", "claude-api", "dockerfile", "elixir", "fastapi", "flowbite-pro", "github-actions"]
+related = ["alpine-js", "beneficial-ownership", "claude-api", "dockerfile", "elixir", "fastapi", "flowbite-pro", "html"]
 og_title = "Meilisearch: glossary"
 og_image = "og/glossary-meilisearch.png"
 keywords = ["Meilisearch", "Technology", "Glossary", "Tomas Korcak"]

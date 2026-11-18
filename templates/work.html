@@ -9,6 +9,27 @@
 {%- set link = "font-medium text-primary-700 hover:underline dark:text-primary-400" -%}
 {%- for x in rc.repos %}{% if x.name == page.extra.repo %}{% set_global r = x %}{% endif %}{% endfor -%}
 {%- if r.hosts.github is defined %}{% set primary = r.hosts.github %}{% else %}{% set primary = r.hosts.gitlab %}{% endif -%}
+{#- The measured dates (scripts/build-work.mjs reads them the same way): the last commit, the host's
+    last push when no commit could be read; the first year, the earlier of the host's creation date
+    and the oldest commit read. A repository outside the recent window (period null) is archive. #}
+{%- if r.last_commit %}{% set last_at = r.last_commit %}{% else %}{% set last_at = r.pushed_at %}{% endif -%}
+{%- set_global first_y = r.created_at | truncate(length=4, end="") | int -%}
+{%- for c in r.commits %}{% set cy = c.at | truncate(length=4, end="") | int %}{% if cy < first_y %}{% set_global first_y = cy %}{% endif %}{% endfor -%}
+{%- set last_y = last_at | truncate(length=4, end="") | int -%}
+{%- if first_y < last_y %}{% set years = first_y ~ "–" ~ last_y %}{% else %}{% set years = last_y ~ "" %}{% endif -%}
+{#- Dates in the page's language: the day, the month name and the year through i18n (derive_date,
+    derive_months), as scripts/build-work.mjs writes them; Zola's date filter knows English only. #}
+{%- set months_l = trans(key="derive_months", lang=lang) | split(pat=",") -%}
+{%- set date_l = trans(key="derive_date", lang=lang) -%}
+{%- set mi = (last_at | date(format="%-m") | int) - 1 -%}
+{%- set last_text = date_l | replace(from="{day}", to=last_at | date(format="%-d")) | replace(from="{month}", to=months_l[mi]) | replace(from="{year}", to=last_at | date(format="%Y")) -%}
+{%- set mi = (r.created_at | date(format="%-m") | int) - 1 -%}
+{%- set created_text = date_l | replace(from="{day}", to=r.created_at | date(format="%-d")) | replace(from="{month}", to=months_l[mi]) | replace(from="{year}", to=r.created_at | date(format="%Y")) -%}
+{%- set mi = (rc.generated_at | date(format="%-m") | int) - 1 -%}
+{%- set measured_text = date_l | replace(from="{day}", to=rc.generated_at | date(format="%-d")) | replace(from="{month}", to=months_l[mi]) | replace(from="{year}", to=rc.generated_at | date(format="%Y")) -%}
+{#- The page's tags (its category and languages, scripts/build-work.mjs): a language that is one
+    links its tag page. #}
+{%- if page.taxonomies.tags is defined %}{% set ptags = page.taxonomies.tags %}{% else %}{% set ptags = [] %}{% endif -%}
 {{ <page_header title={page.title} lead={page.description} parent={trans(key="recent_work", lang=lang)} parent_url={base ~ "work/"} icon={r.category} lang={lang} /> }}
 
 <div class="space-y-4 px-4 pb-2 pt-6">
@@ -17,12 +38,14 @@
     {% <card cls="xl:col-span-2" labelledby="what-title"> %}
       <div class="mb-4 flex flex-wrap items-center gap-2">
         {{ <badge label={cat.categories[r.category]["name" ~ sfx]} href={base ~ "projects/" ~ r.category ~ "/"} /> }}
-        {{ <badge label={trans(key="active_within", lang=lang) ~ " " ~ r.period ~ " " ~ trans(key="months", lang=lang)} tone="primary" /> }}
+        {%- if r.period %}{{ <badge label={trans(key="active_within", lang=lang) ~ " " ~ r.period ~ " " ~ trans(key="months", lang=lang)} tone="primary" href={base ~ "work/#period-" ~ r.period} /> }}
+        {%- else %}{{ <badge label={trans(key="work_archive_years", lang=lang) | replace(from="{years}", to=years)} tone="gray" href={base ~ "work/#archive-" ~ last_y} /> }}{% endif %}
         {%- if r.curated %}{{ <badge label={trans(key="featured_2", lang=lang)} tone="green" href={base ~ "projects/?project=" ~ r.name} /> }}{% endif %}
         {%- if r.supervised %}{{ <badge label="Majordomus" tone="gray" dot={true} href={base ~ "glossary/majordomus/"} /> }}{% endif %}
       </div>
       <h2 id="what-title" class="text-xl font-bold leading-none text-gray-900 dark:text-white">{{ trans(key="what_it_is", lang=lang) | safe }}</h2>
-      {%- if r.readme %}
+      {#- A README excerpt several repositories share is a template's paragraph, not this one's words. #}
+      {%- if r.readme and not r.readme_shared %}
       <blockquote class="mt-3 border-s-4 border-primary-700 bg-gray-50 p-4 text-gray-700 dark:border-primary-400 dark:bg-gray-700 dark:text-gray-200">
         <p>{{ r.readme }}</p>
         <footer class="mt-2 text-xs text-gray-600 dark:text-gray-300">{{ trans(key="from_the_readme", lang=lang) | safe }} <a class="font-medium text-primary-700 hover:underline dark:text-primary-300" href="{{ primary }}">{{ r.name }}</a></footer>
@@ -32,8 +55,12 @@
       {%- if r.last_message %}
       <div class="mt-5 rounded-lg border border-gray-200 p-4 dark:border-gray-700">
         <p class="text-xs font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400">{{ trans(key="latest_commit", lang=lang) | safe }}</p>
+        {%- if r.commits | length > 0 and r.commits[0].url %}
+        <p class="mt-1 font-mono text-sm text-gray-900 dark:text-white"><a class="hover:underline" href="{{ r.commits[0].url }}">{{ r.last_message }}</a></p>
+        {%- else %}
         <p class="mt-1 font-mono text-sm text-gray-900 dark:text-white">{{ r.last_message }}</p>
-        <p class="mt-1 text-xs text-gray-600 dark:text-gray-400"><time datetime="{{ r.last_commit }}">{{ r.last_commit | date(format="%-d %B %Y") }}</time></p>
+        {%- endif %}
+        <p class="mt-1 text-xs text-gray-600 dark:text-gray-400"><time datetime="{{ r.last_commit }}">{{ last_text }}</time></p>
       </div>
       {%- endif %}
       <div class="mt-5 flex flex-wrap gap-3">
@@ -48,11 +75,14 @@
     {% <card labelledby="facts-title"> %}
       <h2 id="facts-title" class="text-xl font-bold leading-none text-gray-900 dark:text-white">{{ trans(key="facts", lang=lang) | safe }}</h2>
       <dl class="tabular mt-4 space-y-3 text-sm">
-        <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="created", lang=lang) | safe }}</dt><dd class="font-semibold text-gray-900 dark:text-white">{{ r.created_at | date(format="%B %Y") }}</dd></div>
-        <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="last_commit", lang=lang) | safe }}</dt><dd class="font-semibold text-gray-900 dark:text-white">{{ r.last_commit | date(format="%-d %b %Y") }}</dd></div>
-        <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="primary_language", lang=lang) | safe }}</dt><dd class="font-semibold text-gray-900 dark:text-white">{% if r.language %}<a class="{{ link }}" href="{{ base }}repositories/?language={{ r.language | urlencode }}">{{ r.language }}</a>{% elif r.languages | length > 0 %}{{ r.languages[0].name }}{% else %}—{% endif %}</dd></div>
+        <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="work_status", lang=lang) | safe }}</dt><dd class="font-semibold text-gray-900 dark:text-white">{% if r.period %}<a class="{{ link }}" href="{{ base }}work/#period-{{ r.period }}">{{ trans(key="active_within", lang=lang) | safe }} {{ r.period }} {{ trans(key="months", lang=lang) | safe }}</a>{% else %}<a class="{{ link }}" href="{{ base }}work/#archive-{{ last_y }}">{{ trans(key="work_archive_years", lang=lang) | replace(from="{years}", to=years) }}</a>{% endif %}</dd></div>
+        <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="first_year", lang=lang) | safe }}</dt><dd class="font-semibold text-gray-900 dark:text-white">{{ first_y }}</dd></div>
+        <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="created", lang=lang) | safe }}</dt><dd class="font-semibold text-gray-900 dark:text-white"><time datetime="{{ r.created_at }}">{{ created_text }}</time></dd></div>
+        <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{% if r.last_commit %}{{ trans(key="last_commit", lang=lang) | safe }}{% else %}{{ trans(key="active", lang=lang) | safe }}{% endif %}</dt><dd class="font-semibold text-gray-900 dark:text-white"><time datetime="{{ last_at }}">{{ last_text }}</time></dd></div>
+        <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="category", lang=lang) | safe }}</dt><dd class="font-semibold text-gray-900 dark:text-white"><a class="{{ link }}" href="{{ base }}projects/{{ r.category }}/">{{ cat.categories[r.category]["name" ~ sfx] }}</a></dd></div>
+        <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="primary_language", lang=lang) | safe }}</dt><dd class="font-semibold text-gray-900 dark:text-white">{% if r.language %}{% if r.language in ptags %}<a class="{{ link }}" href="{{ get_taxonomy_url(kind="tags", name=r.language, lang=lang) }}">{{ r.language }}</a>{% else %}<a class="{{ link }}" href="{{ base }}repositories/?language={{ r.language | urlencode }}">{{ r.language }}</a>{% endif %}{% elif r.languages | length > 0 %}{{ r.languages[0].name }}{% else %}—{% endif %}</dd></div>
         <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="stars_2", lang=lang) | safe }}</dt><dd class="font-semibold text-gray-900 dark:text-white">{{ r.stars }}</dd></div>
-        <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="hosts", lang=lang) | safe }}</dt><dd class="font-semibold text-gray-900 dark:text-white">{% if r.hosts.github is defined %}GitHub{% endif %}{% if r.hosts.github is defined and r.hosts.gitlab is defined %} · {% endif %}{% if r.hosts.gitlab is defined %}GitLab{% endif %}</dd></div>
+        <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="hosts", lang=lang) | safe }}</dt><dd class="font-semibold text-gray-900 dark:text-white">{% if r.hosts.github is defined %}<a class="{{ link }}" href="{{ r.hosts.github }}">GitHub</a>{% endif %}{% if r.hosts.github is defined and r.hosts.gitlab is defined %} · {% endif %}{% if r.hosts.gitlab is defined %}<a class="{{ link }}" href="{{ r.hosts.gitlab }}">GitLab</a>{% endif %}</dd></div>
       </dl>
       {%- if r.languages | length > 0 %}
       <h3 class="mb-2 mt-6 text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400">{{ trans(key="languages", lang=lang) | safe }}</h3>
@@ -61,9 +91,13 @@
       {{ <lang_bar languages={r.languages} label={trans(key="aria_language_breakdown", lang=lang) | replace(from="{list}", to=lb)} tall={true} /> }}
       <ul class="mt-3 space-y-1 text-sm">
         {%- for l in r.languages %}
-        <li class="flex justify-between"><span class="text-gray-900 dark:text-white">{{ l.name }}</span><span class="tabular text-gray-600 dark:text-gray-400">{{ l.share }}%</span></li>
+        <li class="flex justify-between"><span class="text-gray-900 dark:text-white">{% if l.name in ptags %}<a class="{{ link }}" href="{{ get_taxonomy_url(kind="tags", name=l.name, lang=lang) }}">{{ l.name }}</a>{% else %}{{ l.name }}{% endif %}</span><span class="tabular text-gray-600 dark:text-gray-400">{{ l.share }}%</span></li>
         {%- endfor %}
       </ul>
+      {%- endif %}
+      {%- if ptags | length > 0 %}
+      <h3 class="mb-2 mt-6 text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400">{{ trans(key="tags", lang=lang) | safe }}</h3>
+      <ul class="flex flex-wrap gap-1.5">{% for tg in ptags %}<li>{{ <chip label={tg} href={get_taxonomy_url(kind="tags", name=tg, lang=lang)} variant="primary" /> }}</li>{% endfor %}</ul>
       {%- endif %}
       {%- if r.topics | length > 0 %}
       <h3 class="mb-2 mt-6 text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400">{{ trans(key="topics", lang=lang) | safe }}</h3>
@@ -92,7 +126,7 @@
   {%- if page.lower %}{% set lo = page.lower %}{% else %}{% set lo = {"permalink": "", "title": "", "description": ""} %}{% endif %}
   {%- if page.higher %}{% set hi = page.higher %}{% else %}{% set hi = {"permalink": "", "title": "", "description": ""} %}{% endif %}
   {{ <pager lang={lang} label={trans(key="more_work", lang=lang)} prev_href={lo.permalink} prev_title={lo.title} prev_note={lo.description} prev_word={trans(key="older", lang=lang)} next_href={hi.permalink} next_title={hi.title} next_note={hi.description} next_word={trans(key="newer", lang=lang)} /> }}
-  {{ <provenance date={rc.generated_at | date(format="%-d %B %Y")} rule={rc.rule} lang={lang} /> }}
+  {{ <provenance date={measured_text} rule={rc.rule} lang={lang} /> }}
 </div>
 {% endblock content %}
 

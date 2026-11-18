@@ -3,7 +3,7 @@
 title = "Web scraping"
 description = "Extracting data from web pages by program, from simple requests to a driven browser, within the site's terms and the law."
 template = "term.html"
-weight = 106
+weight = 113
 
 [taxonomies]
 tags = ["Glossary", "Concept"]
@@ -17,7 +17,7 @@ definition = "Extracting data from web pages by program, from simple requests to
 aliases = []
 reference = { title = "Wikipedia: web scraping", url = "https://en.wikipedia.org/wiki/Web_scraping" }
 pages = ["services/_index.md", "services/attack-surface.md", "services/digital-investigation.md", "skills/_index.md", "skills/web-automation.md"]
-related = ["alpine-js", "attack-surface", "change-detection", "dockerfile", "fastapi", "flowbite-pro", "html", "javascript"]
+related = ["html", "javascript", "alpine-js", "attack-surface", "change-detection", "css", "dockerfile", "fastapi"]
 og_title = "Web scraping: glossary"
 og_image = "og/glossary-web-scraping.png"
 keywords = ["Web scraping", "Concept", "Glossary", "Tomas Korcak"]

@@ -3,7 +3,7 @@
 title = "GitHub Actions"
 description = "Průběžná integrace GitHubu: workflow s úlohami, které sestaví, otestují a nasadí repozitář při každém pushi nebo podle plánu."
 template = "term.html"
-weight = 42
+weight = 49
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Průběžná integrace GitHubu: workflow s úlohami, které sestaví, otestují a nasadí repozitář při každém pushi nebo podle plánu."
 aliases = []
 reference = { title = "GitHub Actions documentation", url = "https://docs.github.com/en/actions" }
-pages = ["services/ai-engineering-governance.cs.md", "services/attack-surface.cs.md", "services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "services/digital-investigation.cs.md", "services/due-diligence.cs.md", "services/m-and-a.cs.md", "services/reputation-intelligence.cs.md", "skills/ai-transformation.cs.md", "skills/data-integration.cs.md", "skills/data-room.cs.md", "skills/document-extraction.cs.md", "skills/entity-resolution.cs.md", "skills/insolvency-monitoring.cs.md", "skills/m-and-a-screening.cs.md", "skills/market-intelligence.cs.md", "skills/orchestration.cs.md", "skills/risk-scoring.cs.md", "_index.cs.md"]
-related = ["alpine-js", "claude-api", "dockerfile", "flowbite-pro", "fastapi", "html", "javascript", "kubernetes"]
+pages = ["services/ai-engineering-governance.cs.md", "services/attack-surface.cs.md", "services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "services/due-diligence.cs.md", "services/m-and-a.cs.md", "services/reputation-intelligence.cs.md", "skills/ai-transformation.cs.md", "skills/data-room.cs.md", "skills/document-extraction.cs.md", "skills/entity-resolution.cs.md", "skills/insolvency-monitoring.cs.md", "skills/m-and-a-screening.cs.md", "skills/market-intelligence.cs.md", "skills/orchestration.cs.md", "skills/risk-scoring.cs.md", "_index.cs.md"]
+related = ["alpine-js", "claude-api", "flowbite-pro", "html", "javascript", "dockerfile", "fastapi", "kubernetes"]
 og_title = "GitHub Actions: slovník"
 og_image = "og/cs-glossary-github-actions.png"
 keywords = ["GitHub Actions", "Technologie", "Slovník", "Tomáš Korčák"]

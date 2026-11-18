@@ -3,7 +3,7 @@
 title = "Lean"
 description = "A functional language and proof assistant: programs and the mathematical proofs that they are correct, checked by the machine."
 template = "term.html"
-weight = 16
+weight = 19
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -17,7 +17,7 @@ definition = "A functional language and proof assistant: programs and the mathem
 aliases = ["Lean 4"]
 reference = { title = "Lean documentation", url = "https://lean-lang.org/documentation/" }
 pages = ["services/digital-forensics.md"]
-related = ["alpine-js", "attack-surface", "audit-trail", "chain-of-custody", "claude-api", "css", "digital-forensics", "dockerfile"]
+related = ["alpine-js", "attack-surface", "audit-trail", "chain-of-custody", "claude-api", "css", "digital-forensics", "elixir"]
 og_title = "Lean: glossary"
 og_image = "og/glossary-lean.png"
 keywords = ["Lean", "Programming language", "Glossary", "Tomas Korcak"]

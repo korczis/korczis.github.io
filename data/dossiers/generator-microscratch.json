@@ -1,0 +1,65 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "generator-microscratch",
+  "sources": {
+    "github": "https://github.com/korczis/generator-microscratch",
+    "gitlab": "https://gitlab.com/korczis/generator-microscratch",
+    "commit": "cdae55f746e2d3976bb07c4cc21b11627e9e332a",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "package.json",
+      "app/index.js",
+      "app/templates/"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "cli",
+  "summary": {
+    "en": "A Yeoman generator that scaffolds a minimal Node.js project skeleton for the microscratch family of projects. Running yo microscratch creates package.json, bower.json, .editorconfig and .jshintrc from bundled templates.",
+    "cs": "Yeoman generátor, který založí minimální kostru Node.js projektu pro rodinu projektů microscratch. Příkaz yo microscratch vytvoří ze šablon package.json, bower.json, .editorconfig a .jshintrc."
+  },
+  "problem": {
+    "en": "Starting each new small JavaScript project by hand means copying the same manifests and lint settings again and again. The intent was to make that boilerplate a single command.",
+    "cs": "Ruční zakládání každého malého JavaScriptového projektu znamená pořád dokola kopírovat stejné manifesty a nastavení linteru. Cílem bylo zredukovat tenhle boilerplate na jeden příkaz."
+  },
+  "solution": {
+    "en": "The generator extends yeoman-generator Base, asks one confirm prompt, creates app/ and app/templates/ and copies the template files into the target directory. On completion it runs the dependency install unless --skip-install is passed.",
+    "cs": "Generátor dědí z yeoman-generator Base, položí jednu potvrzovací otázku, vytvoří adresáře app/ a app/templates/ a zkopíruje do cíle šablony. Na konci spustí instalaci závislostí, pokud se nepředá --skip-install."
+  },
+  "highlights": [
+    {
+      "en": "Templates for package.json, bower.json, .editorconfig and .jshintrc",
+      "cs": "Šablony pro package.json, bower.json, .editorconfig a .jshintrc"
+    },
+    {
+      "en": "Mocha test setup and a Travis CI configuration in the repository",
+      "cs": "V repozitáři je připravené testování v Mocha a konfigurace Travis CI"
+    },
+    {
+      "en": "The prompt is still the stock Yeoman placeholder, so the generator is close to the scaffold it started from",
+      "cs": "Otázka v promptu je stále výchozí placeholder z Yeomanu, generátor je tedy blízko původní kostře"
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "Node.js",
+    "Yeoman",
+    "Bower",
+    "Mocha",
+    "Travis CI"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  U[yo microscratch] --> G[MicroscratchGenerator]\n  G --> P[Confirm prompt]\n  P --> A[Create app dirs]\n  A --> T[Copy templates]\n  T --> F[Project files]\n  F --> I[installDependencies]",
+    "caption": {
+      "en": "Generator flow from the yo command to the scaffolded project.",
+      "cs": "Průběh generátoru od příkazu yo po vygenerovaný projekt."
+    }
+  },
+  "related": [
+    "microscratch",
+    "generator-the-scratch",
+    "microscratch-react"
+  ],
+  "confidence": "medium"
+}

@@ -3,7 +3,7 @@
 title = "Ruby"
 description = "Dynamický, expresivní jazyk navržený pro radost programátora; mnoho starších nástrojů tady je v Ruby."
 template = "term.html"
-weight = 24
+weight = 30
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -16,8 +16,8 @@ kind = "language"
 definition = "Dynamický, expresivní jazyk navržený pro radost programátora; mnoho starších nástrojů tady je v Ruby."
 aliases = []
 reference = { title = "ruby-lang.org", url = "https://www.ruby-lang.org/en/about/" }
-pages = ["about.cs.md", "projects/data.cs.md", "projects/learning.cs.md", "projects/security.cs.md", "projects/systems.cs.md", "projects/tools.cs.md"]
-related = ["javascript", "repository", "rust", "elixir", "shell", "cpp", "csharp", "html"]
+pages = ["about.cs.md", "projects/data.cs.md", "projects/learning.cs.md", "projects/security.cs.md", "projects/systems.cs.md", "projects/tools.cs.md", "skills/media-forensics.cs.md", "work/algorithms-ruby.cs.md", "work/apollo-crawler.cs.md", "work/apollon.cs.md", "work/ares.cs.md", "work/cluster.cs.md", "work/codecademy.cs.md", "work/csv2psql.cs.md", "work/docker-gooddata-ruby.cs.md", "work/esri.cs.md", "work/gdc-dumpator.cs.md", "work/gooddata-connectors-metadata.cs.md", "work/gooddata-lcm-tool.cs.md", "work/gooddata-rails-app.cs.md", "work/gooddata-ruby-examples.cs.md", "work/grache-test.cs.md", "work/grache.cs.md", "work/jetel.cs.md", "work/json2csv.cs.md", "work/sandbox.cs.md", "work/skull-ruby.cs.md", "work/skull.cs.md", "work/zeman-ucet.cs.md", "work/zlown.cs.md"]
+related = ["repository", "open-source", "commit", "shell", "gis", "javascript", "rust", "elixir"]
 og_title = "Ruby: slovník"
 og_image = "og/cs-glossary-ruby.png"
 keywords = ["Ruby", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
@@ -40,11 +40,11 @@ span = 3
 height = "md"
 tone = "night"
 +++
-Ruby jsem psal v 20 veřejných repozitářích, od roku 2012 do 2017; v 20 z nich je hlavním jazykem.
+Ruby jsem psal v 23 veřejných repozitářích, od roku 2012 do 2017; v 20 z nich je hlavním jazykem.
 
-K čemu to sloužilo: [Data a GIS](@/projects/data.cs.md) (7), [Nástroje](@/projects/tools.cs.md) (7), [Učení a experimenty](@/projects/learning.cs.md) (3) a [Systémy a infrastruktura](@/projects/systems.cs.md) (2).
+K čemu to sloužilo: [Data a GIS](@/projects/data.cs.md) (8), [Nástroje](@/projects/tools.cs.md) (7), [Učení a experimenty](@/projects/learning.cs.md) (4) a [Systémy a infrastruktura](@/projects/systems.cs.md) (2).
 
-Naposledy: [gdc-dumpator](https://github.com/korczis/gdc-dumpator); [zeman-ucet](https://github.com/korczis/zeman-ucet); [cluster](https://github.com/korczis/cluster).
+Naposledy: [gdc-dumpator](@/work/gdc-dumpator.cs.md); [zeman-ucet](@/work/zeman-ucet.cs.md); [cluster](@/work/cluster.cs.md).
 
 2 z těchto projektů běží jako živé weby.
 

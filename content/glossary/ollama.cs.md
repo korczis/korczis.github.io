@@ -3,7 +3,7 @@
 title = "Ollama"
 description = "Běhové prostředí, které servíruje otevřené jazykové modely na vlastním hardwaru, takže citlivý materiál neopustí stroj."
 template = "term.html"
-weight = 48
+weight = 55
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

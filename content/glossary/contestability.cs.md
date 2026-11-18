@@ -3,7 +3,7 @@
 title = "Napadnutelnost"
 description = "Vlastnost rozhodnutí, které lze zpochybnit: jeho důkazy, předpoklady, nejistota i odpovědná osoba jsou zaznamenané."
 template = "term.html"
-weight = 69
+weight = 76
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]
@@ -17,7 +17,7 @@ definition = "Vlastnost rozhodnutí, které lze zpochybnit: jeho důkazy, předp
 aliases = []
 reference = { title = "OECD AI principles: accountability", url = "https://oecd.ai/en/dashboards/ai-principles/P9" }
 pages = ["services/_index.cs.md", "services/ai-engineering-governance.cs.md", "services/compliance-screening.cs.md", "services/decision-support-ai.cs.md", "services/m-and-a.cs.md", "skills/_index.cs.md", "skills/contestable-decisions.cs.md"]
-related = ["html", "javascript", "alpine-js", "dockerfile", "flowbite-pro", "python", "service", "fastapi"]
+related = ["html", "javascript", "alpine-js", "flowbite-pro", "python", "service", "css", "dockerfile"]
 og_title = "Napadnutelnost: slovník"
 og_image = "og/cs-glossary-contestability.png"
 keywords = ["Napadnutelnost", "Contestability", "Koncept", "Slovník", "Tomáš Korčák"]

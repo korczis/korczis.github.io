@@ -36,7 +36,7 @@ Je postavená na: [Elixir](@/glossary/elixir.cs.md), [Broadway](@/glossary/broad
 
 Technologie za ní, změřené z práce, která tyto dovednosti dokládá: [JavaScript](@/glossary/javascript.cs.md), [HTML](@/glossary/html.cs.md), [Claude API](@/glossary/claude-api.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md), [FastAPI](@/glossary/fastapi.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md) a [GitHub Actions](@/glossary/github-actions.cs.md).
 
-Její dovednosti dokládají 2 veřejné repozitáře (2 vlastními slovy).
+Její dovednosti dokládá 5 veřejných repozitářů (5 vlastními slovy).
 
 Byla dodána v klientské práci pod dohodami o mlčenlivosti, v odvětví: Developer nemovitostí a Finanční a investiční skupina, v roli: Architekt, Vedoucí inženýr, Inženýr AI, Datový inženýr, Analytik šetření a Poradce; případy užití popisují princip a záměr, nikdy klienta, osobu, datum ani číslo.
 

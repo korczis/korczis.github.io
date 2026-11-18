@@ -3,7 +3,7 @@
 title = "Systém pro podporu rozhodování"
 description = "Software, který shromáždí data a analýzy do zpráv a pohledů, jež lidem pomáhají rozhodnout, místo aby rozhodoval za ně."
 template = "term.html"
-weight = 72
+weight = 79
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]
@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Software, který shromáždí data a analýzy do zpráv a pohledů, jež lidem pomáhají rozhodnout, místo aby rozhodoval za ně."
 aliases = []
 reference = { title = "Decision support system (Wikipedia)", url = "https://en.wikipedia.org/wiki/Decision_support_system" }
-pages = ["projects/security.cs.md", "services/_index.cs.md", "services/decision-support-ai.cs.md", "services/due-diligence.cs.md", "services/interactive-data-products.cs.md", "services/m-and-a.cs.md", "services/reputation-intelligence.cs.md", "skills/_index.cs.md", "skills/decision-support.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md"]
-related = ["html", "python", "alpine-js", "javascript", "dockerfile", "fastapi", "flowbite-pro", "service"]
+pages = ["projects/security.cs.md", "services/_index.cs.md", "services/decision-support-ai.cs.md", "services/due-diligence.cs.md", "services/interactive-data-products.cs.md", "services/m-and-a.cs.md", "services/reputation-intelligence.cs.md", "skills/_index.cs.md", "skills/decision-support.cs.md", "work/magic.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/peacemaker.cs.md", "work/ratnet.cs.md", "work/zlown.cs.md"]
+related = ["due-diligence", "html", "risk-assessment", "audit-trail", "data-integration", "information-extraction", "javascript", "knowledge-graph"]
 og_title = "Systém pro podporu rozhodování: slovník"
 og_image = "og/cs-glossary-decision-support-system.png"
 keywords = ["Systém pro podporu rozhodování", "Decision support system", "Koncept", "Slovník", "Tomáš Korčák"]

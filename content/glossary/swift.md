@@ -3,7 +3,7 @@
 title = "Swift"
 description = "Apple's language for iOS and macOS applications. A term of the glossary."
 template = "term.html"
-weight = 29
+weight = 36
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -16,8 +16,8 @@ kind = "language"
 definition = "Apple's language for iOS and macOS applications."
 aliases = []
 reference = { title = "swift.org", url = "https://www.swift.org/documentation/" }
-pages = ["projects/knowledge.md", "projects/tools.md", "work/oscilla.md"]
-related = ["repository", "elixir", "javascript", "open-source", "shell", "alpine-js", "apache-echarts", "commit"]
+pages = ["projects/knowledge.md", "projects/tools.md", "work/bc-apple.md", "work/happ.md", "work/minervaeye.md", "work/oscilla.md", "work/readingphonenumbersinrealtime.md"]
+related = ["repository", "open-source", "commit", "shell", "cpp", "elixir", "javascript", "rust"]
 og_title = "Swift: glossary"
 og_image = "og/glossary-swift.png"
 keywords = ["Swift", "Programming language", "Glossary", "Tomas Korcak"]
@@ -40,10 +40,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
-I have written Swift in 3 public repositories, from 2018 to 2021; in 3 of them it is the main language.
+I have written Swift in 4 public repositories, from 2018 to 2021; in 3 of them it is the main language.
 
-What it was for: [Knowledge](@/projects/knowledge.md) (2) and [Tools](@/projects/tools.md) (1).
+What it was for: [Knowledge](@/projects/knowledge.md) (2), [Learning and experiments](@/projects/learning.md) (1) and [Tools](@/projects/tools.md) (1).
 
-Most recently: [ReadingPhoneNumbersInRealTime](https://github.com/korczis/ReadingPhoneNumbersInRealTime); [MinervaEye](https://github.com/korczis/MinervaEye): iOS application for book management; [bc-apple](https://github.com/korczis/bc-apple): BlockCollider Apple Apps.
+Most recently: [ReadingPhoneNumbersInRealTime](@/work/readingphonenumbersinrealtime.md); [happ](@/work/happ.md): Playground App created during my Hospital Stay; [MinervaEye](@/work/minervaeye.md): iOS application for book management.
 
 How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses Swift: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links Swift to the repositories and to the other languages and technologies they use together.

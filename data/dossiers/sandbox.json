@@ -1,0 +1,63 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "sandbox",
+  "sources": {
+    "github": "https://github.com/korczis/sandbox",
+    "gitlab": "https://gitlab.com/korczis/sandbox",
+    "commit": "a8e49778650f1f9c545e13859e2d9bf9e0009b5e",
+    "read_at": "2026-11-18",
+    "read": [
+      "README",
+      "top-level tree",
+      "TweetStream/app/main.rb",
+      "recursive tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "experiment",
+  "summary": {
+    "en": "A Ruby sandbox of small experiments laid out as app/lib/spec folders, with a _Template folder for new ones. The only populated experiment is TweetStream, a command-line app that samples the Twitter streaming API and inserts each status text into PostgreSQL.",
+    "cs": "Pískoviště malých experimentů v Ruby, každý ve struktuře app/lib/spec, se složkou _Template pro nové. Jediný naplněný experiment je TweetStream, aplikace pro příkazovou řádku, která odebírá vzorek ze streamovacího API Twitteru a text každého statusu vkládá do PostgreSQL."
+  },
+  "problem": {
+    "en": "Trying ideas quickly is easier with a fixed skeleton per experiment. TweetStream explores capturing a live tweet stream into a database.",
+    "cs": "Rychlé zkoušení nápadů je snazší s pevnou kostrou pro každý experiment. TweetStream zkoumá zachytávání živého proudu tweetů do databáze."
+  },
+  "solution": {
+    "en": "TweetStreamApp extends an application base class from a Bsl library and parses options for a database type, PostgreSQL and CouchDB connections and Twitter OAuth credentials. main always connects to PostgreSQL, configures the tweetstream gem with OAuth and the yajl parser, prints about one tweet per second and inserts every status into a tweets table through a string-built SQL statement. The database-type and CouchDB options are parsed but never used, and the README is empty.",
+    "cs": "TweetStreamApp dědí z aplikační základní třídy knihovny Bsl a zpracovává volby pro typ databáze, připojení k PostgreSQL a CouchDB a OAuth údaje k Twitteru. main se vždy připojí k PostgreSQL, nastaví gem tweetstream s OAuth a parserem yajl, zhruba jednou za sekundu vypíše tweet a každý status vloží do tabulky tweets SQL příkazem složeným z řetězců. Volby typu databáze a CouchDB se načtou, ale nikde se nepoužijí, a README je prázdné."
+  },
+  "highlights": [
+    {
+      "en": "Per-experiment app/lib/spec skeleton with a reusable template",
+      "cs": "Kostra app/lib/spec pro každý experiment se znovupoužitelnou šablonou"
+    },
+    {
+      "en": "Only PostgreSQL is wired up; the --db-type and CouchDB options are unused",
+      "cs": "Zapojené je jen PostgreSQL; volby --db-type a CouchDB se nepoužívají"
+    },
+    {
+      "en": "Credentials are placeholders passed as CLI options",
+      "cs": "Přihlašovací údaje jsou jen zástupné hodnoty předávané jako volby CLI"
+    }
+  ],
+  "stack": [
+    "Ruby",
+    "tweetstream",
+    "PostgreSQL",
+    "OAuth",
+    "yajl"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Tpl[_Template skeleton] --> Exp[app lib spec folders]\n  Exp --> App[TweetStreamApp]\n  CLI[CLI options] --> App\n  App --> Stream[Twitter sample stream]\n  Stream --> Out[Console one tweet per second]\n  Stream --> Ins[SQL insert per status]\n  Ins --> PG[(PostgreSQL tweets table)]",
+    "caption": {
+      "en": "TweetStream reads the sample stream and writes every status to PostgreSQL; _Template seeds new experiments.",
+      "cs": "TweetStream čte vzorek proudu a každý status zapíše do PostgreSQL; _Template slouží jako základ nových experimentů."
+    }
+  },
+  "related": [
+    "twitter-analysis",
+    "the-scratch"
+  ],
+  "confidence": "medium"
+}

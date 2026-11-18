@@ -3,7 +3,7 @@
 title = "Mermaid"
 description = "Textový jazyk pro diagramy (vývojové diagramy, sekvence, stavové automaty) vykreslované ze zdroje podobného Markdownu."
 template = "term.html"
-weight = 18
+weight = 22
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]

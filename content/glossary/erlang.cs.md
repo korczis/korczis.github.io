@@ -3,7 +3,7 @@
 title = "Erlang"
 description = "Jazyk a běhové prostředí z telekomunikací, navržené pro systémy, které musí běžet, i když jejich části selhávají."
 template = "term.html"
-weight = 10
+weight = 13
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -16,8 +16,8 @@ kind = "language"
 definition = "Jazyk a běhové prostředí z telekomunikací, navržené pro systémy, které musí běžet, i když jejich části selhávají."
 aliases = []
 reference = { title = "erlang.org", url = "https://www.erlang.org/" }
-pages = ["projects/learning.cs.md"]
-related = ["c", "cmake", "cpp", "csharp", "elixir", "haskell", "java", "javascript"]
+pages = ["projects/learning.cs.md", "work/rustler-mix.cs.md", "work/skull-erlang.cs.md"]
+related = ["repository", "commit", "elixir", "open-source", "rust", "c", "cmake", "cpp"]
 og_title = "Erlang: slovník"
 og_image = "og/cs-glossary-erlang.png"
 keywords = ["Erlang", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
@@ -40,10 +40,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
-Erlang jsem psal v 1 veřejném repozitáři, od roku 2014 do 2014; v 1 z nich je hlavním jazykem.
+Erlang jsem psal ve 2 veřejných repozitářích, od roku 2014 do 2016; v 1 z nich je hlavním jazykem.
 
-K čemu to sloužilo: [Učení a experimenty](@/projects/learning.cs.md) (1).
+K čemu to sloužilo: [Učení a experimenty](@/projects/learning.cs.md) (1) a [Nástroje](@/projects/tools.cs.md) (1).
 
-Naposledy: [skull-erlang](https://github.com/korczis/skull-erlang).
+Naposledy: [rustler\_mix](@/work/rustler-mix.cs.md); [skull-erlang](@/work/skull-erlang.cs.md).
 
 Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak Erlang používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje Erlang s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

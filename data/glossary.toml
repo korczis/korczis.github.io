@@ -967,3 +967,59 @@ aliases = ["Lean 4"]
 definition = "A functional language and proof assistant: programs and the mathematical proofs that they are correct, checked by the machine."
 definition_cs = "Funkcionální jazyk a asistent důkazů: programy i matematické důkazy jejich správnosti, ověřené strojem."
 reference = { title = "Lean documentation", url = "https://lean-lang.org/documentation/" }
+
+[[terms]]
+id = "objective-c"
+term = "Objective-C"
+kind = "language"
+definition = "C with Smalltalk-style messages and objects; the language of Apple's platforms before Swift."
+definition_cs = "Jazyk C rozšířený o objekty a zprávy ve stylu Smalltalku; jazyk platforem Apple před příchodem Swiftu."
+reference = { title = "Programming with Objective-C (Apple)", url = "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html" }
+
+[[terms]]
+id = "m4"
+term = "M4"
+kind = "language"
+definition = "A general-purpose macro processor: text in, expanded text out; the engine behind Autoconf."
+definition_cs = "Univerzální makroprocesor: na vstupu text, na výstupu rozvinutý text; pohání nástroj Autoconf."
+reference = { title = "GNU M4", url = "https://www.gnu.org/software/m4/" }
+
+[[terms]]
+id = "elm"
+term = "Elm"
+kind = "language"
+definition = "A purely functional language that compiles to JavaScript for web front ends, known for having no runtime exceptions in practice."
+definition_cs = "Čistě funkcionální jazyk pro webové frontendy, který se překládá do JavaScriptu a v praxi nemá běhové výjimky."
+reference = { title = "elm-lang.org", url = "https://elm-lang.org/" }
+
+[[terms]]
+id = "smarty"
+term = "Smarty"
+kind = "language"
+definition = "A template engine for PHP that keeps presentation apart from application logic."
+definition_cs = "Šablonovací systém pro PHP, který odděluje prezentaci od aplikační logiky."
+reference = { title = "smarty.net", url = "https://www.smarty.net/" }
+
+[[terms]]
+id = "php"
+term = "PHP"
+kind = "language"
+definition = "A scripting language made for the web, run on the server to produce pages."
+definition_cs = "Skriptovací jazyk určený pro web, který na serveru generuje stránky."
+reference = { title = "php.net", url = "https://www.php.net/" }
+
+[[terms]]
+id = "arduino"
+term = "Arduino"
+kind = "language"
+definition = "The C++ dialect and libraries of the Arduino microcontroller platform, written as sketches."
+definition_cs = "Dialekt C++ a knihovny mikrokontrolérové platformy Arduino, psané jako takzvané sketche."
+reference = { title = "Arduino Language Reference", url = "https://docs.arduino.cc/language-reference/" }
+
+[[terms]]
+id = "coffeescript"
+term = "CoffeeScript"
+kind = "language"
+definition = "A small language with a terser syntax that compiles one to one into JavaScript."
+definition_cs = "Malý jazyk se stručnější syntaxí, který se překládá přímo do JavaScriptu."
+reference = { title = "coffeescript.org", url = "https://coffeescript.org/" }

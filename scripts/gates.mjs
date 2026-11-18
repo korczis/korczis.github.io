@@ -16,6 +16,9 @@
 //        node scripts/gates.mjs cli       every script answers --help and exits 2 on --bogus
 //        node scripts/gates.mjs readme [--check]   writes (or checks) README's generated sections
 //        node scripts/gates.mjs deps      node_modules matches package-lock.json
+//        node scripts/gates.mjs json --write|--check   writes (or checks) data/gates.json, this list as
+//          the site's data: each gate's id, name, rule (and its file) and where it runs; the landing's
+//          "How this page is proven" renders it (rule project.landing-contract)
 import { spawnSync } from 'node:child_process';
 import { existsSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { homedir } from 'node:os';
@@ -51,6 +54,7 @@ export const GATES = [
   { id: 'recent-derived', name: 'recent.json follows the index', run: ['node', 'scripts/fetch-recent.mjs', '--derive', '--check'], ci: true, rule: 'project.data-measured' },
   { id: 'derive-lib', name: 'Inference, authorship and derivation behave on their fixtures', run: ['node', 'scripts/check-derive.mjs'], ci: true, rule: 'project.data-measured' },
   { id: 'experience', name: 'Experience data matches its schema', run: ['node', 'scripts/check-experience.mjs'], ci: true },
+  { id: 'dossiers', name: 'Repository dossiers are inferred, sourced, bilingual and NDA-clean', run: ['node', 'scripts/check-dossiers.mjs'], ci: true, rule: 'project.dossiers-inferred' },
   { id: 'categories', name: 'Category pages are current', run: ['node', 'scripts/build-categories.mjs', '--check'], ci: true, rule: 'project.data-measured' },
   { id: 'work', name: 'Work pages are current', run: ['node', 'scripts/build-work.mjs', '--check'], ci: true, rule: 'project.data-measured' },
   { id: 'services', name: 'Service and skill pages are current', run: ['node', 'scripts/build-services.mjs', '--check'], ci: true, rule: 'project.services-derived' },
@@ -58,14 +62,17 @@ export const GATES = [
   { id: 'articles', name: 'Every page is an article with glossary terms; every term is used', run: ['node', 'scripts/check-glossary.mjs'], ci: true, rule: 'project.pages-are-articles' },
   { id: 'llms', name: 'llms.txt is current', run: ['node', 'scripts/build-llms.mjs', '--check'], ci: true, rule: 'project.data-measured' },
   { id: 'resume', name: 'resume.json is derived and valid JSON Resume', run: ['node', 'scripts/build-resume.mjs', '--check'], ci: true, lands: 'W1C', rule: 'project.hire-surfaces' },
-  { id: 'og', name: 'Open Graph images are current', run: ['node', 'scripts/build-og.mjs', '--check'], ci: true, rule: 'project.seo-derived' },
+  { id: 'og', name: 'Open Graph images are current, within their byte budget, renderable by the refresh', run: ['node', 'scripts/build-og.mjs', '--check'], ci: true, rule: 'project.seo-derived' },
   { id: 'site-json', name: 'site.json is current', run: ['node', 'scripts/build-site-json.mjs', '--check'], ci: true, rule: 'project.front-matter-contract' },
   { id: 'interfaces', name: 'ai.json follows .ai/ and openapi.json the published files', run: ['node', 'scripts/build-interfaces.mjs', '--check'], ci: true, rule: 'project.data-measured' },
   { id: 'viz-layer', name: 'Every visual goes through the component layer and is a maximizable simulator', run: ['node', 'scripts/check-viz-layer.mjs'], ci: true, rule: 'project.viz-component-layer' },
   { id: 'build', name: 'Build (internal links are errors)', run: ['npm', 'run', '--silent', 'build'], ci: true, rule: 'project.site-zola-pages' },
   { id: 'seo', name: 'SEO derived from front matter (titles, descriptions, OG, JSON-LD, sitemap)', run: ['node', 'scripts/check-seo.mjs'], ci: true, needs: 'build', rule: 'project.seo-derived' },
+  { id: 'work-pages', name: 'Every original repository has its own complete page (en, cs: SEO, OG, hreflang, JSON-LD on every forge)', run: ['node', 'scripts/check-work-pages.mjs'], ci: true, needs: 'build', rule: 'project.every-repository-page' },
   { id: 'profile', name: 'One positioning from the hire headline; every page links /hire/', run: ['node', 'scripts/check-profile.mjs'], ci: true, needs: 'build', lands: 'W1A', rule: 'project.hire-surfaces' },
   { id: 'nda-site', name: 'No denylisted name in the built site (NDA)', run: ['node', 'scripts/check-nda.mjs', '--site', 'public'], ci: true, needs: 'build' },
+  { id: 'gates-json', name: 'data/gates.json is this gate list', run: ['node', 'scripts/gates.mjs', 'json', '--check'], ci: true, rule: 'project.landing-contract' },
+  { id: 'landing', name: 'The landing keeps its contract: sections, links, CTA budget, nothing hidden', run: ['node', 'scripts/check-landing.mjs'], ci: true, needs: 'build', rule: 'project.landing-contract' },
   { id: 'flowbite', name: 'Flowbite Pro fidelity', run: ['test/cases/10_fleet_flowbite_pro.sh'], ci: false, needs: 'flowbite-scanner',
     why: 'the scanner lives on the owner\'s machine; in CI majordomus doctor judges the licence', rule: 'project.ui-uses-flowbite-pro' },
   { id: 'doctor', name: 'Majordomus supervision', run: ['majordomus', 'doctor'], ci: false, needs: 'majordomus',
@@ -91,6 +98,7 @@ const TOOLS = () => {
     ['majordomus', 'v1.0.1 (as CI)', 'the git hooks and the doctor gate (<https://majordomus.dev>)'],
     ['python3', 'any 3.x', '`npm run verify`: a free port and the static server for the browser audit'],
     ['rsvg-convert', 'librsvg', '`npm run og` / `npm run derive`: renders the Open Graph PNGs'],
+    ['pngquant', '2.x (Ubuntu, the refresh) or 3.x', '`npm run og` / `npm run derive`: quantises the Open Graph PNGs (32 colours; the version is recorded per card in `data/og.json`)'],
     ['gh, glab', 'authenticated', '`npm run data`, `index`, `recent`, `refresh`: measuring GitHub and GitLab'],
     ['Chromium headless shell', `playwright-core ${playwright}`, 'the browser audit: `npx playwright-core install chromium-headless-shell`'],
   ];
@@ -103,8 +111,8 @@ const PENDING = {
 };
 
 const opts = cliArgs({
-  '--ci': true, '--keep-going': true, '--from': '<id>', '--only': '<id,...>', '--skip': '<id,...>', '--format': '<text|github|json>', '--check': true,
-}, { positional: '<run|list|check|cli|readme|deps>' });
+  '--ci': true, '--keep-going': true, '--from': '<id>', '--only': '<id,...>', '--skip': '<id,...>', '--format': '<text|github|json>', '--check': true, '--write': true,
+}, { positional: '<run|list|check|cli|readme|deps|json>' });
 const [command = 'run', ...extra] = opts._;
 const fail2 = (message) => {
   process.stderr.write(`gates.mjs: ${message}; run with --help\n`);
@@ -372,6 +380,52 @@ function deps() {
   return process.exit(1);
 }
 
-const COMMANDS = { run: runGates, list, check: parity, cli: cliGate, readme, deps };
+// --- data/gates.json ----------------------------------------------------------------------------
+// The gate list as the site's data, without a timestamp (it changes only when a gate does): what
+// each gate checks, the rule it enforces with that rule's file, and where it runs (CI, the
+// pre-push hook through npm run verify, a workflow against the deployed site, or only locally).
+const RULES_DIR = '.ai/repo/rules/project';
+function gatesData() {
+  const ruleFiles = {};
+  for (const file of readdirSync(join(ROOT, RULES_DIR)).filter((f) => f.endsWith('.md')).sort()) {
+    const id = read(`${RULES_DIR}/${file}`).match(/^id:\s*(\S+)\s*$/m)?.[1];
+    if (id) ruleFiles[id] = `${RULES_DIR}/${file}`;
+  }
+  const CI = '.github/workflows/ci.yml';
+  const PREPUSH = '.githooks/pre-push';
+  const where = (g) => {
+    if (g.where) {
+      return [...new Set(g.where.match(/\b[\w-]+\.yml\b/g) ?? [])].map((f) => ({ kind: f === 'ci.yml' ? 'ci' : 'online', file: `.github/workflows/${f}` }));
+    }
+    const out = [];
+    if (g.ci || g.job) out.push({ kind: 'ci', file: CI });
+    else out.push({ kind: 'local', file: null });
+    out.push({ kind: 'prepush', file: PREPUSH });
+    return out;
+  };
+  const row = (g) => ({ id: g.id, name: g.name, rule: g.rule ?? null, rule_file: g.rule ? ruleFiles[g.rule] ?? null : null, ci: Boolean(g.ci || g.job), where: where(g) });
+  return { schema: 'korczis-hub-gates/v1', source: 'node scripts/gates.mjs json --write', gates: [...GATES.map(row), ...ONLINE.map(row)] };
+}
+
+function json() {
+  const file = join(ROOT, 'data/gates.json');
+  const text = `${JSON.stringify(gatesData(), null, 2)}\n`;
+  const unknown = gatesData().gates.filter((g) => g.rule && !g.rule_file).map((g) => `${g.id} names ${g.rule}, which no file of ${RULES_DIR} declares`);
+  for (const u of unknown) console.error(`✗ ${u}`);
+  if (unknown.length) process.exit(1);
+  if (opts.check) {
+    if (!existsSync(file) || readFileSync(file, 'utf8') !== text) {
+      console.error('✗ data/gates.json is stale: run node scripts/gates.mjs json --write (npm run derive)');
+      process.exit(1);
+    }
+    console.log(`gates.json: ${gatesData().gates.length} gates, each with its rule and where it runs, current`);
+    return;
+  }
+  if (!opts.write) fail2('json needs --write or --check');
+  writeFileSync(file, text);
+  console.log(`gates.json: wrote ${gatesData().gates.length} gates`);
+}
+
+const COMMANDS = { run: runGates, list, check: parity, cli: cliGate, readme, deps, json };
 if (!COMMANDS[command]) fail2(`unknown command ${command} (${Object.keys(COMMANDS).join(', ')})`);
 COMMANDS[command]();

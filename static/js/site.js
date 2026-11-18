@@ -866,5 +866,10 @@
     };
   }
 
-  window.KorczisHub = { viz, lib, data, palette, colour, reducedMotion, isDark, motion, go, link, escape, plain, hash, base, home, t, tooltip, github: document.documentElement.dataset.github || '', locale: i18n.locale || 'en-GB' };
+  // The one reader and writer of the address for components that are not visuals (the landing's
+  // ?role=, static/js/components/hire-role.js): the same readParam and writeParam the visuals' ctx.param
+  // and controls go through, so no component parses location.search or calls history itself.
+  const query = (name) => readParam(name);
+  const setQuery = (name, value) => writeParam(name, value === '' ? null : value);
+  window.KorczisHub = { viz, lib, data, palette, colour, reducedMotion, isDark, motion, go, link, escape, plain, hash, base, home, t, tooltip, query, setQuery, github: document.documentElement.dataset.github || '', locale: i18n.locale || 'en-GB' };
 })();

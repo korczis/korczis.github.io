@@ -24,10 +24,10 @@ cs = "Due diligence, M&A, digitální vyšetřování, forenzní analýza a repu
 [services_og]
 en = "Services: due diligence, M&A, investigation, forensics"
 cs = "Služby: due diligence, M&A, vyšetřování, forenzní analýza"
-[skills_title]
+[services_skills_title]
 en = "Skills"
 cs = "Dovednosti"
-[skills_lead]
+[services_skills_lead]
 en = "Every skill my services draw on, defined, with the public work that shows it, the client use cases and the technologies behind it."
 cs = "Každá dovednost, ze které moje služby čerpají, s definicí, veřejnou prací, která ji dokládá, případy užití z klientské práce a technologiemi za ní."
 [skills_og]

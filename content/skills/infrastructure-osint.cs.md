@@ -13,7 +13,7 @@ skill = "infrastructure-osint"
 og_title = "Infrastrukturní OSINT: dovednosti"
 og_image = "og/cs-skill-infrastructure-osint.png"
 schema = "skill"
-terms = ["skill", "attack-surface"]
+terms = ["skill", "attack-surface", "c"]
 keywords = ["Infrastrukturní OSINT", "Digitální vyšetřování a OSINT dossier", "Digitální forenzní analýza a zajištění důkazů", "Hodnocení vnější útočné plochy a kybernetické expozice", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -30,5 +30,9 @@ Domény, IP adresy a certifikáty zkoumané zvenčí: historie Whois a DNS, cert
 Pojem, na kterém stojí: [Útočná plocha](@/glossary/attack-surface.cs.md).
 
 Služby, které z ní čerpají: [Digitální vyšetřování a OSINT dossier](@/services/digital-investigation.cs.md), [Digitální forenzní analýza a zajištění důkazů](@/services/digital-forensics.cs.md) a [Hodnocení vnější útočné plochy a kybernetické expozice](@/services/attack-surface.cs.md).
+
+Praktikovaná s: [C](@/glossary/c.cs.md).
+
+Veřejná práce, jejíž vlastní slova ji dokládají: [skull-c](https://github.com/korczis/skull-c).
 
 Jak číst tuto stránku: definice pochází ze slovníku zkušeností; služby, technologie, veřejné [repozitáře](@/glossary/repository.cs.md) a případy užití jsou odvozené a každá položka vede na svou stránku.

@@ -1,0 +1,60 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "microcrawler-crawler-heureka-cz",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-heureka-cz",
+    "commit": "1a09f514b99b352e5c7b9affb6dd9add584c980b",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "package.json",
+      "src/index.js",
+      "src/listing.js",
+      "src/details.js",
+      "tree (recursive)"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "library",
+  "summary": {
+    "en": "A Microcrawler site package for a Czech price-comparison website, with index, listing and details processors. The index seeds fourteen fixed product searches, and the listing carries each product's title, name, description and price on to the details step.",
+    "cs": "Balíček Microcrawleru pro český srovnávač cen s procesory index, listing a details. Index zakládá čtrnáct pevně daných vyhledávání produktů a listing předává název, jméno, popis a cenu každého produktu dál do kroku details."
+  },
+  "problem": {
+    "en": "Microcrawler workers are generic: they download pages and need site-specific logic to know which links to follow and which fields to extract.",
+    "cs": "Workery Microcrawleru jsou obecné: stahují stránky a potřebují logiku pro konkrétní web, aby věděly, které odkazy sledovat a jaká pole vytáhnout."
+  },
+  "solution": {
+    "en": "The listing processor reads each product block and queues its link for details with a context object (title, name, description, price parsed from the koruna amount), and follows the pagination links. The details processor does not parse the DOM: it takes that context from the payload and adds the page URL and location from the options passed by the runner. That signature suggests an in-page runner; the exact runtime is unclear.",
+    "cs": "Procesor listing projde bloky produktů a jejich odkazy zařadí pro details s objektem context (titulek, jméno, popis, cena rozparsovaná z částky v korunách) a sleduje odkazy stránkování. Procesor details neparsuje DOM: vezme tento context z payloadu a doplní URL a location z voleb, které předá spouštěč. Signatura naznačuje běh přímo ve stránce; jaký runtime přesně, není jasné."
+  },
+  "highlights": [
+    {
+      "en": "Different processor signature ($, payload, opts) from the rest of the family.",
+      "cs": "Jiná signatura procesoru ($, payload, opts) než u zbytku rodiny."
+    },
+    {
+      "en": "Index seeds fourteen fixed product searches instead of crawling the home page.",
+      "cs": "Index zakládá čtrnáct pevně daných vyhledávání produktů místo procházení titulní stránky."
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "Node.js",
+    "npm"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  W[Runner] --> I[index seeds]\n  I --> L[listing]\n  L --> L\n  L --> C[context with price]\n  C --> D[details]\n  D --> R[record with url]",
+    "caption": {
+      "en": "Processors emit either new URLs for the queue or extracted data records.",
+      "cs": "Procesory vracejí buď nové URL do fronty, nebo vytěžené datové záznamy."
+    }
+  },
+  "related": [
+    "microcrawler-js",
+    "microcrawler-crawler-all",
+    "microcrawler-crawler-base"
+  ],
+  "confidence": "medium"
+}

@@ -3,7 +3,7 @@
 title = "Veřejný rejstřík"
 description = "Úřední rejstřík, který stát vede veřejně: firmy, insolvence, nemovitosti, skuteční majitelé; primární zdroj každé due diligence."
 template = "term.html"
-weight = 94
+weight = 101
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

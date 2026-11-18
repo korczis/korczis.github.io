@@ -3,7 +3,7 @@
 title = "Cytoscape.js"
 description = "A library for drawing and analysing graphs (networks of nodes and edges) in the browser."
 template = "term.html"
-weight = 38
+weight = 45
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

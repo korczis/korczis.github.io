@@ -3,7 +3,7 @@
 title = "Phoenix"
 description = "Webový framework Elixiru; LiveView vykresluje interaktivní stránky na serveru a přes socket posílá jen změny."
 template = "term.html"
-weight = 52
+weight = 59
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -44,6 +44,6 @@ Phoenix je součástí 1 mého veřejného repozitáře, od roku 2017 do 2018.
 
 K čemu to sloužilo: [Web](@/projects/web.cs.md) (1).
 
-Naposledy: [the-scratch](https://github.com/korczis/the-scratch).
+Naposledy: [the-scratch](@/work/the-scratch.cs.md).
 
 Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak Phoenix používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje Phoenix s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

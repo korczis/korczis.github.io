@@ -3,7 +3,7 @@
 title = "AI agent"
 description = "A program that uses a language model to plan and act (edit code, run commands) toward a goal; Majordomus makes such agents prove their work."
 template = "term.html"
-weight = 62
+weight = 69
 
 [taxonomies]
 tags = ["Glossary", "Concept"]
@@ -16,8 +16,8 @@ kind = "concept"
 definition = "A program that uses a language model to plan and act (edit code, run commands) toward a goal; Majordomus makes such agents prove their work."
 aliases = []
 reference = { title = "Anthropic: building effective agents", url = "https://www.anthropic.com/research/building-effective-agents" }
-pages = ["about.md", "hire.md", "interfaces.md", "projects/_index.md", "projects/ai.md", "services/_index.md", "services/ai-engineering-governance.md", "services/decision-support-ai.md", "skills/_index.md", "skills/ai-transformation.md", "skills/llm-agents.md", "work/cognitive-reasoning.md", "work/edna.md", "work/llm.md", "work/prismatic-majordomus.md", "work/sig.md"]
-related = ["elixir", "javascript", "majordomus", "open-source", "html", "repository", "shell", "alpine-js"]
+pages = ["_index.md", "about.md", "hire.md", "interfaces.md", "projects/_index.md", "projects/ai.md", "services/_index.md", "services/ai-engineering-governance.md", "services/decision-support-ai.md", "skills/_index.md", "skills/ai-transformation.md", "skills/llm-agents.md", "work/cognitive-reasoning.md", "work/edna.md", "work/llm.md", "work/prismatic-majordomus.md", "work/sig.md"]
+related = ["elixir", "javascript", "open-source", "repository", "shell", "flowbite-pro", "html", "majordomus"]
 og_title = "AI agent: glossary"
 og_image = "og/glossary-ai-agent.png"
 keywords = ["AI agent", "Concept", "Glossary", "Tomas Korcak"]

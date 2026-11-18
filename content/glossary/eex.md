@@ -3,7 +3,7 @@
 title = "EEx and HEEx"
 description = "Elixir's embedded templates: EEx puts Elixir in text, HEEx in HTML that Phoenix LiveView checks and renders."
 template = "term.html"
-weight = 8
+weight = 10
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -17,7 +17,7 @@ definition = "Elixir's embedded templates: EEx puts Elixir in text, HEEx in HTML
 aliases = ["HTML+EEX", "EEx", "HEEx"]
 reference = { title = "Phoenix.Component and HEEx", url = "https://hexdocs.pm/phoenix_live_view/Phoenix.Component.html" }
 pages = ["skills/data-integration.md", "skills/geospatial-analysis.md", "work/korczis-gitlab-io.md", "work/sig.md", "work/simple-geocoder.md", "work/the-psycho.md"]
-related = ["elixir", "commit", "open-source", "repository", "css", "shell", "html", "javascript"]
+related = ["elixir", "commit", "open-source", "repository", "shell", "css", "html", "javascript"]
 og_title = "EEx and HEEx: glossary"
 og_image = "og/glossary-eex.png"
 keywords = ["EEx and HEEx", "Programming language", "Glossary", "Tomas Korcak"]

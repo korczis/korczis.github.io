@@ -1,0 +1,77 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "astudo",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/astudo",
+    "commit": "9d206ff96192fb902571ff43226013da5758bb0f",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "README.ORIGINAL.md",
+      "mix.exs",
+      "apps/astudo/native/astudo/Cargo.toml",
+      "tree /",
+      "tree apps/",
+      "tree proto/"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "experiment",
+  "summary": {
+    "en": "An Elixir umbrella experiment that joins a Phoenix web app with a Rust native extension for MIDI input and output. The Rust crate is loaded through Rustler and also carries gRPC tooling generated from protobuf definitions.",
+    "cs": "Experiment v podobě umbrella projektu v Elixiru, který spojuje webovou aplikaci ve Phoenixu s nativním rozšířením v Rustu pro vstup a výstup MIDI. Rustový crate se načítá přes Rustler a nese i gRPC nástroje generované z protobuf definic."
+  },
+  "problem": {
+    "en": "The BEAM has no native access to MIDI devices, and real-time device I/O is easier in Rust. The project explores how to bridge a Rust MIDI engine into an Elixir application with a web front end.",
+    "cs": "BEAM nemá nativní přístup k MIDI zařízením a vstup a výstup zařízení v reálném čase se snáz píše v Rustu. Projekt zkoumá, jak napojit MIDI engine v Rustu do aplikace v Elixiru s webovým rozhraním."
+  },
+  "solution": {
+    "en": "In the core app, an Astudo.Midi module lists inputs and outputs through the Rustler NIF module Astudo.Native, which also exposes a call to start the gRPC service; Midi.Input and Midi.Output are plain structs. The Rust crate builds both a cdylib for the NIF and a standalone binary, uses midir for device access and tokio with tonic and prost for gRPC; the proto folder holds the service definition beside example protos. The web app is a Phoenix 1.6 project with LiveView layouts, LiveDashboard and esbuild assets, and its one page does not call the MIDI modules yet.",
+    "cs": "V jádrové aplikaci vypisuje modul Astudo.Midi vstupy a výstupy přes NIF modul Astudo.Native v Rustleru, který nabízí i volání pro start gRPC služby; Midi.Input a Midi.Output jsou prosté struktury. Rustový crate se sestavuje jako cdylib pro NIF i jako samostatná binárka, pro přístup k zařízením používá midir a pro gRPC tokio s tonic a prost; složka proto obsahuje definici služby vedle ukázkových proto souborů. Webová část je projekt ve Phoenixu 1.6 s layouty pro LiveView, LiveDashboardem a assety přes esbuild a jeho jediná stránka MIDI moduly zatím nevolá."
+  },
+  "highlights": [
+    {
+      "en": "Rust MIDI engine split into input, output and service modules.",
+      "cs": "MIDI engine v Rustu rozdělený na moduly vstupu, výstupu a služby."
+    },
+    {
+      "en": "Same crate builds a Rustler NIF and a standalone gRPC binary.",
+      "cs": "Stejný crate se sestaví jako NIF pro Rustler i jako samostatná gRPC binárka."
+    },
+    {
+      "en": "tonic-build generates gRPC code from the proto definitions at build time.",
+      "cs": "tonic-build generuje gRPC kód z proto definic při sestavení."
+    },
+    {
+      "en": "README is still the default repository template, so intent is inferred from code.",
+      "cs": "README je pořád výchozí šablona repozitáře, záměr je proto odvozen z kódu."
+    }
+  ],
+  "stack": [
+    "Elixir",
+    "Phoenix",
+    "LiveView",
+    "Rust",
+    "Rustler",
+    "midir",
+    "tokio",
+    "tonic",
+    "gRPC",
+    "protobuf",
+    "Docker"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  DEV[MIDI device] --> MIDIR[midir]\n  MIDIR --> ENG[Rust MIDI engine]\n  ENG --> NIF[Rustler NIF]\n  NIF --> EX[Elixir Midi modules]\n  WEB[Phoenix web app] -.-> EX\n  ENG --> GRPC[tonic gRPC service]\n  PROTO[Proto definitions] --> GRPC",
+    "caption": {
+      "en": "MIDI device lists flow from Rust into Elixir through the NIF, and the same engine can be reached over gRPC; the dashed link from the web app is not wired yet.",
+      "cs": "Seznamy MIDI zařízení tečou z Rustu do Elixiru přes NIF a ke stejnému enginu se lze dostat i přes gRPC; přerušované spojení z webové aplikace zatím není zapojené."
+    }
+  },
+  "related": [
+    "rustler-test",
+    "rustler_mix",
+    "meili_rsex"
+  ],
+  "confidence": "medium"
+}

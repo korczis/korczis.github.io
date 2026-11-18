@@ -3,7 +3,7 @@
 title = "Contestability"
 description = "The property of a decision that can be questioned: its evidence, assumptions, uncertainty and the person accountable are on record."
 template = "term.html"
-weight = 69
+weight = 76
 
 [taxonomies]
 tags = ["Glossary", "Concept"]
@@ -17,7 +17,7 @@ definition = "The property of a decision that can be questioned: its evidence, a
 aliases = []
 reference = { title = "OECD AI principles: accountability", url = "https://oecd.ai/en/dashboards/ai-principles/P9" }
 pages = ["services/_index.md", "services/ai-engineering-governance.md", "services/compliance-screening.md", "services/decision-support-ai.md", "services/m-and-a.md", "skills/_index.md", "skills/contestable-decisions.md"]
-related = ["html", "javascript", "alpine-js", "dockerfile", "flowbite-pro", "python", "service", "fastapi"]
+related = ["html", "javascript", "alpine-js", "flowbite-pro", "python", "service", "css", "dockerfile"]
 og_title = "Contestability: glossary"
 og_image = "og/glossary-contestability.png"
 keywords = ["Contestability", "Concept", "Glossary", "Tomas Korcak"]

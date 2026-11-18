@@ -11,10 +11,12 @@ tags = ["Nástroje", "Python", "Dockerfile", "Makefile"]
 
 [extra]
 repo = "pdf_renderer"
-og_title = "pdf_renderer: Nástroje"
+seo_title = "pdf_renderer: Nástroje, Python, 2024 · Tomáš Korčák"
+og_title = "pdf_renderer: Nástroje, Python"
+og_description = "pdf_renderer: Nástroje, Python, Dockerfile a Makefile, 2024, aktivní za posledních 48 měsíců. Zdrojový kód: GitLab."
 og_image = "og/cs-work-pdf-renderer.png"
 schema = "project"
-keywords = ["pdf_renderer", "Nástroje", "Python", "Dockerfile", "Makefile", "Tomáš Korčák"]
+keywords = ["pdf_renderer", "Nástroje", "Python", "Dockerfile", "Makefile", "2024", "GitLab", "Tomáš Korčák", "korczis"]
 terms = ["python", "dockerfile", "makefile", "open-source", "repository", "commit"]
 
 [[extra.viz]]
@@ -25,9 +27,14 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "každých 6 hodin" }
 +++
 **pdf\_renderer** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [Python](@/glossary/python.cs.md) (94,2 %), dále [Dockerfile](@/glossary/dockerfile.cs.md) a [Makefile](@/glossary/makefile.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 24. března 2024; poslední [commit](@/glossary/commit.cs.md) je z 25. března 2024. Zní „Initial commit“. Patří tak mezi projekty aktivní za posledních 48 měsíců.
+
+Zdrojový kód: [GitLab](https://gitlab.com/korczis/pdf_renderer).
+
+Související práce v kategorii [Nástroje](@/projects/tools.cs.md): [el-magico-cache](@/work/el-magico-cache.cs.md) (2023), [prismatic](@/work/prismatic.cs.md) (2025), [rest-hello-world-benchmark](@/work/rest-hello-world-benchmark.cs.md) (2022) a [astudo](@/work/astudo.cs.md) (2022).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje poslední 2 commity jako tep, jeden pruh na typ commitu (feat, fix, docs…), ze snímku obnovovaného každých 6 hodin. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

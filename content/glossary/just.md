@@ -3,7 +3,7 @@
 title = "Just"
 description = "A command runner: named recipes in a justfile, like make without the build semantics; the entry point of most of these repositories."
 template = "term.html"
-weight = 15
+weight = 18
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -17,7 +17,7 @@ definition = "A command runner: named recipes in a justfile, like make without t
 aliases = ["justfile"]
 reference = { title = "just manual", url = "https://just.systems/man/en/" }
 pages = ["projects/tools.md", "skills/document-extraction.md", "skills/geospatial-analysis.md", "work/algoglyph.md", "work/comtesse.md", "work/data-atlas.md", "work/gists-search.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/sig.md", "work/vomaste-cz.md"]
-related = ["open-source", "repository", "shell", "commit", "html", "javascript", "python", "github-pages"]
+related = ["shell", "open-source", "repository", "commit", "html", "javascript", "github-pages", "python"]
 og_title = "Just: glossary"
 og_image = "og/glossary-just.png"
 keywords = ["Just", "Programming language", "Glossary", "Tomas Korcak"]

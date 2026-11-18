@@ -1,0 +1,66 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "microcrawler-browser",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/microcrawler-browser",
+    "commit": "5f1b93937167cc53f145a8af494398eb903ee8ce",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "package.json",
+      "src/index.js",
+      "tree (recursive)"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "experiment",
+  "summary": {
+    "en": "A proof of concept for running Microcrawler inside the browser. It is an ES6 project transpiled with Babel, tested with Mocha and bundled with Webpack into a preload bundle; the README's on-demand bundle demo is not in the code.",
+    "cs": "Proof of concept, jak spouštět Microcrawler přímo v prohlížeči. Jde o ES6 projekt transpilovaný Babelem, testovaný Mochou a balený Webpackem do úvodního bundle; ukázka bundlu na vyžádání z README v kódu není."
+  },
+  "problem": {
+    "en": "Server-side crawling needs workers and infrastructure; extracting data from a page already open in the browser could skip most of that.",
+    "cs": "Crawling na serveru potřebuje workery a infrastrukturu; vytěžení dat ze stránky, která už je otevřená v prohlížeči, by většinu z toho mohlo obejít."
+  },
+  "solution": {
+    "en": "The page loads the target into an iframe; the module resizes the iframe to its content and reads its inner HTML through jQuery, which it only logs. The Gulp pipeline transpiles, runs the tests and packages a deduplicated, minified bundle exposed as a Microcrawler global.",
+    "cs": "Stránka načte cíl do iframe; modul přizpůsobí výšku iframe obsahu a přes jQuery přečte jeho vnitřní HTML, které jen vypíše do konzole. Pipeline v Gulpu transpiluje, pustí testy a zabalí deduplikovaný minifikovaný bundle vystavený jako globální Microcrawler."
+  },
+  "highlights": [
+    {
+      "en": "Build tooling (Gulp, Webpack, Mocha config) written in ES6 itself.",
+      "cs": "Build nástroje (konfigurace Gulpu, Webpacku i Mochy) psané přímo v ES6."
+    },
+    {
+      "en": "The only Mocha test is a placeholder assertion.",
+      "cs": "Jediný test v Mochě je zástupná aserce."
+    },
+    {
+      "en": "Extraction logic is only a stub; the project stayed at PoC stage.",
+      "cs": "Logika vytěžování je jen naznačená; projekt zůstal ve fázi PoC."
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "Babel",
+    "Gulp",
+    "Webpack",
+    "Mocha",
+    "Chai",
+    "jQuery"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  S[ES6 source] --> B[Babel]\n  B --> T[Mocha tests]\n  T --> W[Webpack]\n  W --> P[Preload bundle]\n  P --> I[iframe reader]\n  I --> C[Console log]",
+    "caption": {
+      "en": "Build pipeline and the in-browser iframe reader.",
+      "cs": "Build pipeline a čtení iframe v prohlížeči."
+    }
+  },
+  "related": [
+    "microcrawler-js",
+    "apollo-crawler-extension",
+    "microcrawler"
+  ],
+  "confidence": "low"
+}

@@ -3,7 +3,7 @@
 title = "Tailwind CSS"
 description = "CSS framework malých utilitních tříd skládaných v markupu, kompilovaný jen na to, co stránka používá."
 template = "term.html"
-weight = 58
+weight = 65
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "CSS framework malých utilitních tříd skládaných v markupu, kompilovaný jen na to, co stránka používá."
 aliases = ["tailwindcss"]
 reference = { title = "tailwindcss.com", url = "https://tailwindcss.com/docs" }
-pages = ["stack.cs.md", "_index.cs.md"]
-related = ["alpine-js", "apache-echarts", "chart-js", "cytoscape-js", "d3", "flowbite-pro", "github-pages", "i18n"]
+pages = ["skills/audit-trail.cs.md", "stack.cs.md", "_index.cs.md"]
+related = ["alpine-js", "flowbite-pro", "majordomus", "apache-echarts", "audit-trail", "chart-js", "claude-api", "css"]
 og_title = "Tailwind CSS: slovník"
 og_image = "og/cs-glossary-tailwind-css.png"
 keywords = ["Tailwind CSS", "Technologie", "Slovník", "Tomáš Korčák"]
@@ -44,7 +44,7 @@ Tailwind CSS je součástí 2 mých veřejných repozitářů, od roku 2024 do 2
 
 K čemu to sloužilo: [Věda a vizualizace](@/projects/science.cs.md) (1) a [Web](@/projects/web.cs.md) (1).
 
-Naposledy: [algoglyph](@/work/algoglyph.cs.md): Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem; [korczis.github.io](@/work/korczis-github-io.cs.md).
+Naposledy: [korczis.github.io](@/work/korczis-github-io.cs.md); [algoglyph](@/work/algoglyph.cs.md): Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.
 
 1 z těchto projektů běží jako živý web.
 

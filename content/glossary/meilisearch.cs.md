@@ -3,7 +3,7 @@
 title = "Meilisearch"
 description = "Rychlý open-source vyhledávač s tolerancí překlepů a filtry, použitý pro fulltext nad sebranými důkazy."
 template = "term.html"
-weight = 47
+weight = 54
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -17,7 +17,7 @@ definition = "Rychlý open-source vyhledávač s tolerancí překlepů a filtry,
 aliases = []
 reference = { title = "Meilisearch documentation", url = "https://www.meilisearch.com/docs" }
 pages = ["services/digital-investigation.cs.md", "services/due-diligence.cs.md"]
-related = ["alpine-js", "beneficial-ownership", "claude-api", "dockerfile", "elixir", "fastapi", "flowbite-pro", "github-actions"]
+related = ["alpine-js", "beneficial-ownership", "claude-api", "dockerfile", "elixir", "fastapi", "flowbite-pro", "html"]
 og_title = "Meilisearch: slovník"
 og_image = "og/cs-glossary-meilisearch.png"
 keywords = ["Meilisearch", "Technologie", "Slovník", "Tomáš Korčák"]

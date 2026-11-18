@@ -3,7 +3,7 @@
 title = "Open Graph"
 description = "Meta tags that tell social networks how to preview a link: title, description and image."
 template = "term.html"
-weight = 89
+weight = 96
 
 [taxonomies]
 tags = ["Glossary", "Concept"]
@@ -17,7 +17,7 @@ definition = "Meta tags that tell social networks how to preview a link: title, 
 aliases = []
 reference = { title = "ogp.me", url = "https://ogp.me/" }
 pages = ["_index.md"]
-related = ["commit", "d3", "data-visualisation", "flowbite-pro", "fork", "front-matter", "json-ld", "mirror"]
+related = ["ai-agent", "apache-echarts", "audit-trail", "commit", "d3", "data-visualisation", "due-diligence", "elixir"]
 og_title = "Open Graph: glossary"
 og_image = "og/glossary-open-graph.png"
 keywords = ["Open Graph", "Concept", "Glossary", "Tomas Korcak"]

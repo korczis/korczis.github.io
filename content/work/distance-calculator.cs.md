@@ -11,10 +11,12 @@ tags = ["Věda a vizualizace", "Elixir"]
 
 [extra]
 repo = "distance-calculator"
-og_title = "distance-calculator: Věda a vizualizace"
+seo_title = "distance-calculator: Věda a vizualizace, Elixir, 2024 · Tomáš Korčák"
+og_title = "distance-calculator: Věda a vizualizace, Elixir"
+og_description = "distance-calculator: Věda a vizualizace, Elixir, 2024, aktivní za posledních 48 měsíců. Zdrojový kód: GitLab."
 og_image = "og/cs-work-distance-calculator.png"
 schema = "project"
-keywords = ["distance-calculator", "Věda a vizualizace", "Elixir", "Tomáš Korčák"]
+keywords = ["distance-calculator", "Věda a vizualizace", "Elixir", "2024", "GitLab", "Tomáš Korčák", "korczis"]
 terms = ["elixir", "data-visualisation", "repository", "commit", "open-source"]
 
 [[extra.viz]]
@@ -25,9 +27,14 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "každých 6 hodin" }
 +++
 **distance-calculator** je projekt z kategorie [Věda a vizualizace](@/projects/science.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (100 %).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 20. března 2024; poslední [commit](@/glossary/commit.cs.md) je z 23. dubna 2024. Zní „logs on requests, fixed from“. Patří tak mezi projekty aktivní za posledních 48 měsíců.
+
+Zdrojový kód: [GitLab](https://gitlab.com/korczis/distance-calculator).
+
+Související práce v kategorii [Věda a vizualizace](@/projects/science.cs.md): [maze](@/work/maze.cs.md) (2016), [algoglyph](@/work/algoglyph.cs.md) (2026), [Oscilla](@/work/oscilla.cs.md) (2026) a [rustas](@/work/rustas.cs.md) (2018).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 11 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…), ze snímku obnovovaného každých 6 hodin. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

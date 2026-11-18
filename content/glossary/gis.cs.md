@@ -3,7 +3,7 @@
 title = "GIS"
 description = "Geografické informační systémy: data vázaná na místa, uložená, analyzovaná a kreslená jako mapy."
 template = "term.html"
-weight = 79
+weight = 86
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]
@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Geografické informační systémy: data vázaná na místa, uložená, analyzovaná a kreslená jako mapy."
 aliases = []
 reference = { title = "GIS (Wikipedia)", url = "https://en.wikipedia.org/wiki/Geographic_information_system" }
-pages = ["projects/_index.cs.md", "projects/data.cs.md", "services/_index.cs.md", "services/interactive-data-products.cs.md", "skills/_index.cs.md", "skills/geospatial-analysis.cs.md", "work/crisis-map.cs.md", "work/data-atlas.cs.md", "work/kuzu-ex.cs.md", "work/meili-rsex.cs.md"]
-related = ["html", "javascript", "python", "elixir", "repository", "open-source", "shell", "commit"]
+pages = ["projects/_index.cs.md", "projects/data.cs.md", "services/_index.cs.md", "services/interactive-data-products.cs.md", "skills/_index.cs.md", "skills/geospatial-analysis.cs.md", "work/apollo-box.cs.md", "work/apollo-crawler-extension.cs.md", "work/apollo-crawler.cs.md", "work/apollo-schemas.cs.md", "work/apollocrawler-com.cs.md", "work/crisis-map.cs.md", "work/ctu-cz.cs.md", "work/czech-stats.cs.md", "work/data-atlas.cs.md", "work/data-playground.cs.md", "work/data.cs.md", "work/datascience.cs.md", "work/datasciencecoursera.cs.md", "work/docker-gooddata-ruby.cs.md", "work/esri.cs.md", "work/github-extractor.cs.md", "work/gooddata-connectors-metadata.cs.md", "work/gooddata-fs.cs.md", "work/gooddata-graphql.cs.md", "work/gooddata-lcm-tool.cs.md", "work/gooddata-proxy.cs.md", "work/gooddata-rails-app.cs.md", "work/gooddata-ruby-examples.cs.md", "work/jetel-modules.cs.md", "work/jetel.cs.md", "work/kpmap-ruby.cs.md", "work/kuzu-ex.cs.md", "work/mapofffacts-com.cs.md", "work/meili-rsex.cs.md", "work/microcrawler-browser.cs.md", "work/microcrawler-couchapp.cs.md", "work/microcrawler-crawler-all.cs.md", "work/microcrawler-crawler-bam-brno-cz.cs.md", "work/microcrawler-crawler-base.cs.md", "work/microcrawler-crawler-craiglist-com.cs.md", "work/microcrawler-crawler-firmy-cz.cs.md", "work/microcrawler-crawler-google-com.cs.md", "work/microcrawler-crawler-heureka-cz.cs.md", "work/microcrawler-crawler-news-ycombinator-com.cs.md", "work/microcrawler-crawler-sreality-cz.cs.md", "work/microcrawler-crawler-xkcd-com.cs.md", "work/microcrawler-crawler-yelp-com.cs.md", "work/microcrawler-elixir.cs.md", "work/microcrawler-js.cs.md", "work/microcrawler-ng.cs.md", "work/microcrawler.cs.md", "work/nosqlight.cs.md", "work/rocksdb-indexer.cs.md", "work/solr-core-minimal.cs.md"]
+related = ["repository", "open-source", "commit", "javascript", "shell", "html", "css", "elixir"]
 og_title = "GIS: slovník"
 og_image = "og/cs-glossary-gis.png"
 keywords = ["GIS", "Koncept", "Slovník", "Tomáš Korčák"]

@@ -3,7 +3,7 @@
 title = "CMake"
 description = "Generátor buildovacích systémů pro C a C++: jeden popis projektu vytvoří Makefile, soubory Ninja nebo projekty IDE na libovolné platformě."
 template = "term.html"
-weight = 5
+weight = 6
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -16,8 +16,8 @@ kind = "language"
 definition = "Generátor buildovacích systémů pro C a C++: jeden popis projektu vytvoří Makefile, soubory Ninja nebo projekty IDE na libovolné platformě."
 aliases = []
 reference = { title = "CMake documentation", url = "https://cmake.org/cmake/help/latest/" }
-pages = ["projects/learning.cs.md"]
-related = ["c", "cpp", "csharp", "elixir", "erlang", "haskell", "java", "javascript"]
+pages = ["projects/learning.cs.md", "work/happ.cs.md", "work/skull-cpp.cs.md"]
+related = ["cpp", "repository", "commit", "makefile", "open-source", "rust", "shell", "c"]
 og_title = "CMake: slovník"
 og_image = "og/cs-glossary-cmake.png"
 keywords = ["CMake", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
@@ -44,6 +44,6 @@ CMake jsem psal v 1 veřejném repozitáři, od roku 2014 do 2015; v 1 z nich je
 
 K čemu to sloužilo: [Učení a experimenty](@/projects/learning.cs.md) (1).
 
-Naposledy: [skull-cpp](https://github.com/korczis/skull-cpp).
+Naposledy: [skull-cpp](@/work/skull-cpp.cs.md).
 
 Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak CMake používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje CMake s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

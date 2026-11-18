@@ -13,7 +13,7 @@ skill = "market-intelligence"
 og_title = "Tržní zpravodajství: dovednosti"
 og_image = "og/cs-skill-market-intelligence.png"
 schema = "skill"
-terms = ["skill", "market-intelligence", "alpine-js", "claude-api", "dockerfile", "fastapi", "flowbite-pro", "github-actions", "html", "javascript", "kubernetes", "majordomus"]
+terms = ["skill", "market-intelligence", "html", "alpine-js", "claude-api", "csharp", "dockerfile", "fastapi", "flowbite-pro", "github-actions", "javascript", "kubernetes"]
 keywords = ["Tržní zpravodajství", "Prověrka a analýza M&A transakcí", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -31,7 +31,9 @@ Pojem, na kterém stojí: [Tržní zpravodajství](@/glossary/market-intelligenc
 
 Služby, které z ní čerpají: [Prověrka a analýza M&A transakcí](@/services/m-and-a.cs.md).
 
-Praktikovaná s: [Alpine.js](@/glossary/alpine-js.cs.md), [Claude API](@/glossary/claude-api.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md), [FastAPI](@/glossary/fastapi.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md), [GitHub Actions](@/glossary/github-actions.cs.md), [HTML](@/glossary/html.cs.md) a [JavaScript](@/glossary/javascript.cs.md).
+Praktikovaná s: [HTML](@/glossary/html.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md), [Claude API](@/glossary/claude-api.cs.md), [C#](@/glossary/csharp.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md), [FastAPI](@/glossary/fastapi.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md) a [GitHub Actions](@/glossary/github-actions.cs.md).
+
+Veřejná práce, jejíž vlastní slova ji dokládají: [cs-benchmark](https://github.com/korczis/cs-benchmark) a [maze-rs](https://github.com/korczis/maze-rs).
 
 Byla použita v klientské práci v odvětví: Developer nemovitostí; případy užití níže uvádějí princip a záměr, bez jmen a čísel.
 

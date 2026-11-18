@@ -3,7 +3,7 @@
 title = "Java"
 description = "Objektově orientovaný jazyk nad Java Virtual Machine, dlouho výchozí volba podnikového softwaru."
 template = "term.html"
-weight = 13
+weight = 16
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -16,8 +16,8 @@ kind = "language"
 definition = "Objektově orientovaný jazyk nad Java Virtual Machine, dlouho výchozí volba podnikového softwaru."
 aliases = []
 reference = { title = "dev.java", url = "https://dev.java/learn/" }
-pages = ["projects/learning.cs.md"]
-related = ["c", "cmake", "cpp", "csharp", "elixir", "erlang", "haskell", "javascript"]
+pages = ["projects/learning.cs.md", "work/magic.cs.md", "work/skull-java.cs.md"]
+related = ["repository", "c", "commit", "elixir", "javascript", "open-source", "rust", "audit-trail"]
 og_title = "Java: slovník"
 og_image = "og/cs-glossary-java.png"
 keywords = ["Java", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
@@ -40,10 +40,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
-Java jsem psal v 1 veřejném repozitáři, od roku 2014 do 2014; v 1 z nich je hlavním jazykem.
+Java jsem psal ve 2 veřejných repozitářích, od roku 2014 do 2017; v 1 z nich je hlavním jazykem.
 
-K čemu to sloužilo: [Učení a experimenty](@/projects/learning.cs.md) (1).
+K čemu to sloužilo: [Učení a experimenty](@/projects/learning.cs.md) (1) a [Bezpečnost a OSINT](@/projects/security.cs.md) (1).
 
-Naposledy: [skull-java](https://github.com/korczis/skull-java).
+Naposledy: [magic](@/work/magic.cs.md); [skull-java](@/work/skull-java.cs.md).
 
 Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak Java používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje Java s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

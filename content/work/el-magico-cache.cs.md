@@ -11,10 +11,12 @@ tags = ["Nástroje", "Elixir", "Shell", "Makefile"]
 
 [extra]
 repo = "el-magico-cache"
-og_title = "el-magico-cache: Nástroje"
+seo_title = "el-magico-cache: Nástroje, Elixir, 2023 · Tomáš Korčák"
+og_title = "el-magico-cache: Nástroje, Elixir"
+og_description = "el-magico-cache: Nástroje, Elixir, Shell a Makefile, 2023, aktivní za posledních 48 měsíců. Zdrojový kód: GitHub."
 og_image = "og/cs-work-el-magico-cache.png"
 schema = "project"
-keywords = ["el-magico-cache", "Nástroje", "Elixir", "Shell", "Makefile", "Tomáš Korčák"]
+keywords = ["el-magico-cache", "Nástroje", "Elixir", "Shell", "Makefile", "2023", "GitHub", "Tomáš Korčák", "korczis"]
 terms = ["elixir", "shell", "makefile", "nix", "html", "dockerfile", "open-source", "repository", "commit"]
 
 [[extra.viz]]
@@ -29,5 +31,9 @@ tone = "night"
 **el-magico-cache** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (82,5 %), dále [Shell](@/glossary/shell.cs.md), [Makefile](@/glossary/makefile.cs.md) a [Nix](@/glossary/nix.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 26. ledna 2023; poslední [commit](@/glossary/commit.cs.md) je z 27. ledna 2023. Zní „simple cache“. Patří tak mezi projekty aktivní za posledních 48 měsíců.
+
+Zdrojový kód: [GitHub](https://github.com/korczis/el-magico-cache).
+
+Související práce v kategorii [Nástroje](@/projects/tools.cs.md): [rest-hello-world-benchmark](@/work/rest-hello-world-benchmark.cs.md) (2022), [prismatic](@/work/prismatic.cs.md) (2025), [astudo](@/work/astudo.cs.md) (2022) a [pdf\_renderer](@/work/pdf-renderer.cs.md) (2024).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 22 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

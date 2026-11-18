@@ -1,0 +1,52 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "ts-logger",
+  "sources": {
+    "github": "https://github.com/korczis/ts-logger",
+    "gitlab": "https://gitlab.com/korczis/ts-logger",
+    "commit": "88db3dfb29aa2db8f8a37ab1c313e986c6746610",
+    "read_at": "2026-11-18",
+    "read": [
+      "logger.ts"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "kata",
+  "summary": {
+    "en": "A single TypeScript file sketching a composable logger: createLogger wraps a sink function and merges bound context into every message, so nested calls (template, page, element) inherit the identifiers of their parents. Sinks for console, a database and an external log service are stubs that print to the console.",
+    "cs": "Jeden soubor v TypeScriptu s náčrtem skládacího loggeru: createLogger obalí výstupní funkci a do každé zprávy přimíchá navázaný kontext, takže vnořená volání (šablona, stránka, prvek) dědí identifikátory rodičů. Výstupy pro konzoli, databázi a externí logovací službu jsou jen stuby vypisující do konzole."
+  },
+  "problem": {
+    "en": "Log lines from deep inside a rendering pipeline lose the context of which template or page produced them.",
+    "cs": "Logy z hloubky renderovací pipeline ztrácejí kontext, která šablona nebo stránka je vyprodukovala."
+  },
+  "solution": {
+    "en": "Higher-order loggers: each level calls createLogger with its own fields and passes the result down, so context accumulates by composition rather than global state.",
+    "cs": "Loggery vyššího řádu: každá úroveň zavolá createLogger se svými poli a výsledek předá níž, takže kontext se skládá kompozicí, ne přes globální stav."
+  },
+  "highlights": [
+    {
+      "en": "Context propagation by closure composition.",
+      "cs": "Předávání kontextu skládáním closures."
+    },
+    {
+      "en": "Pluggable sink function per logger.",
+      "cs": "Vyměnitelná výstupní funkce pro každý logger."
+    }
+  ],
+  "stack": [
+    "TypeScript"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  T[executeTemplate] --> P[executePage]\n  P --> E[executeElement]\n  T --> L1[createLogger templateId]\n  P --> L2[createLogger pageId]\n  L2 --> S[Sink function]\n  S --> O[Console or DB stub]",
+    "caption": {
+      "en": "Each level wraps the logger with its own fields before passing it down.",
+      "cs": "Každá úroveň obalí logger svými poli a teprve pak ho předá níž."
+    }
+  },
+  "related": [
+    "dispatcher",
+    "job-processor"
+  ],
+  "confidence": "medium"
+}

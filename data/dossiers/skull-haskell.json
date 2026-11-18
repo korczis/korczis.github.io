@@ -1,0 +1,78 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "skull-haskell",
+  "sources": {
+    "github": "https://github.com/korczis/skull-haskell",
+    "gitlab": "https://gitlab.com/korczis/skull-haskell",
+    "commit": "c6933bcb6e2fdaee0e2e81e6344a749f7ecc51aa",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "skull-haskell.cabal",
+      "Makefile",
+      ".travis.yml",
+      "src/Apps/Bmi/Bmi.hs",
+      "src/Apps/Game/Game.hs",
+      "src/Lib/App/FastPing.hs",
+      "src/Lib/Net/Net.hs",
+      "src/Lib/Net/WebServer.hs",
+      "src/Lib/Parallel/Repa.hs",
+      "src/Lib/Parallel/Accelerate.hs",
+      "tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "kata",
+  "summary": {
+    "en": "Haskell learning material as a Cabal package: a library of small modules and five executables (Bmi, CookieEater, FastPing, Game, Playground).",
+    "cs": "Výukové materiály k Haskellu jako Cabal balíček: knihovna malých modulů a pět spustitelných programů (Bmi, CookieEater, FastPing, Game, Playground)."
+  },
+  "problem": {
+    "en": "Exploring Haskell from basics through parallel arrays and a small web server inside one buildable package.",
+    "cs": "Osahat si Haskell od základů po paralelní pole a malý webový server v rámci jednoho sestavitelného balíčku."
+  },
+  "solution": {
+    "en": "The cabal file declares a library under src/Lib, compiled with -Wall -threaded -O2, and one executable per app under src/Apps, compiled with -Wall; a Makefile installs dependencies, configures and builds with cabal. Library dependencies include accelerate, repa, parallel and scotty; the Repa module is only an import and the web server is a one-route Scotty example.",
+    "cs": "Cabal soubor deklaruje knihovnu v src/Lib, kompilovanou s -Wall -threaded -O2, a jednu binárku na každou aplikaci v src/Apps, kompilovanou s -Wall; Makefile přes cabal nainstaluje závislosti, nakonfiguruje a sestaví projekt. Mezi závislostmi knihovny jsou accelerate, repa, parallel a scotty; modul pro Repa obsahuje jen import a webový server je příklad se Scotty o jediné routě."
+  },
+  "highlights": [
+    {
+      "en": "Library modules declared for algorithms, CLI, math, networking, a web server, physics and parallelism (Repa, Accelerate).",
+      "cs": "Knihovna deklaruje moduly pro algoritmy, CLI, matematiku, síť, webový server, fyziku a paralelismus (Repa, Accelerate)."
+    },
+    {
+      "en": "Each app is a thin executable over a library module.",
+      "cs": "Každá aplikace je tenká binárka nad modulem knihovny."
+    },
+    {
+      "en": "Travis CI config present.",
+      "cs": "Obsahuje konfiguraci Travis CI."
+    }
+  ],
+  "stack": [
+    "Haskell",
+    "Cabal",
+    "GHC",
+    "Repa",
+    "Accelerate",
+    "Scotty",
+    "Travis CI"
+  ],
+  "architecture": {
+    "mermaid": "flowchart TD\n  Cabal[skull-haskell.cabal] --> Lib[Library src Lib]\n  Cabal --> Apps[Executables src Apps]\n  Apps --> Bmi[Bmi]\n  Apps --> Ping[FastPing]\n  Apps --> Game[Game]\n  Apps --> Play[Playground]\n  Bmi --> Lib\n  Ping --> Lib\n  Lib --> Par[Repa Accelerate]\n  Lib --> Web[Scotty server]",
+    "caption": {
+      "en": "One library, several thin executables on top of it.",
+      "cs": "Jedna knihovna a nad ní několik tenkých binárek."
+    }
+  },
+  "related": [
+    "skull",
+    "skull-c",
+    "skull-cpp",
+    "skull-java",
+    "skull-ruby",
+    "skull-nodejs",
+    "haskell-world"
+  ],
+  "confidence": "medium"
+}

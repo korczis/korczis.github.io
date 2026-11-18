@@ -14,7 +14,7 @@ icon = "puzzle"
 og_title = "Podpora rozhodování a AI agenti pro analytiky"
 og_image = "og/cs-service-decision-support-ai.png"
 schema = "service"
-terms = ["service", "elixir", "mcp", "claude-api", "ollama", "phoenix", "ai-agent", "decision-support-system", "contestability", "orchestration", "information-extraction", "audit-trail", "html", "javascript", "python", "shell", "alpine-js", "flowbite-pro", "majordomus", "dockerfile", "css", "fastapi"]
+terms = ["service", "elixir", "mcp", "claude-api", "ollama", "phoenix", "ai-agent", "decision-support-system", "contestability", "orchestration", "information-extraction", "audit-trail", "html", "javascript", "shell", "python", "alpine-js", "flowbite-pro", "majordomus", "css", "dockerfile", "fastapi"]
 keywords = ["Podpora rozhodování a AI agenti pro analytiky", "Agenti s LLM", "Podpora rozhodování", "Napadnutelná rozhodnutí", "Transformace s AI", "Orchestrace", "Vytěžování dokumentů", "Auditní stopa", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -34,9 +34,9 @@ Agenti pracují přes řízená rozhraní nástrojů; každý výstup AI čeká 
 
 Je postavená na: [Elixir](@/glossary/elixir.cs.md), [MCP](@/glossary/mcp.cs.md), [Claude API](@/glossary/claude-api.cs.md), [Ollama](@/glossary/ollama.cs.md) a [Phoenix](@/glossary/phoenix.cs.md).
 
-Technologie za ní, změřené z práce, která tyto dovednosti dokládá: [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Python](@/glossary/python.cs.md), [Shell](@/glossary/shell.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md), [Majordomus](@/glossary/majordomus.cs.md) a [Dockerfile](@/glossary/dockerfile.cs.md).
+Technologie za ní, změřené z práce, která tyto dovednosti dokládá: [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Shell](@/glossary/shell.cs.md), [Python](@/glossary/python.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md), [Majordomus](@/glossary/majordomus.cs.md) a [CSS](@/glossary/css.cs.md).
 
-Její dovednosti dokládá 11 veřejných repozitářů (11 vlastními slovy).
+Její dovednosti dokládá 13 veřejných repozitářů (13 vlastními slovy).
 
 Byla dodána v klientské práci pod dohodami o mlčenlivosti, v odvětví: Developer nemovitostí a Finanční a investiční skupina, v roli: Architekt, Vedoucí inženýr, Inženýr AI, Datový inženýr, Analytik šetření a Poradce; případy užití popisují princip a záměr, nikdy klienta, osobu, datum ani číslo.
 

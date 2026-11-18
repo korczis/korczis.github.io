@@ -3,7 +3,7 @@
 title = "Broadway"
 description = "An Elixir library for concurrent, multi-stage data pipelines with back-pressure, batching and graceful failure."
 template = "term.html"
-weight = 35
+weight = 42
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "An Elixir library for concurrent, multi-stage data pipelines with 
 aliases = []
 reference = { title = "Broadway on HexDocs", url = "https://hexdocs.pm/broadway/" }
 pages = ["services/continuous-monitoring.md", "services/digital-investigation.md", "services/reputation-intelligence.md"]
-related = ["alpine-js", "change-detection", "claude-api", "dockerfile", "elixir", "fastapi", "flowbite-pro", "github-actions"]
+related = ["alpine-js", "change-detection", "claude-api", "dockerfile", "elixir", "fastapi", "flowbite-pro", "html"]
 og_title = "Broadway: glossary"
 og_image = "og/glossary-broadway.png"
 keywords = ["Broadway", "Technology", "Glossary", "Tomas Korcak"]

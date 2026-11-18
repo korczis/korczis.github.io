@@ -1,0 +1,76 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "crisis-map",
+  "sources": {
+    "github": "https://github.com/korczis/crisis-map",
+    "gitlab": null,
+    "commit": "e3fc9d93e447f99a0c8263df16eef2e81146b2f1",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "top-level tree",
+      "repository languages"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "app",
+  "summary": {
+    "en": "Crisis Map is a small vertical slice in Elixir and Phoenix: incident reports come in and appear as points on a map. Records are normalised, persisted, geocoded through a local Nominatim and stored in PostGIS, then shown in a LiveView with a list, detail panel and filters. One registry of operations is projected onto a cockpit, Swagger, MCP and mix tasks.",
+    "cs": "Crisis Map je malý vertikální řez v Elixiru a Phoenixu: dovnitř jdou hlášení o událostech, ven body na mapě. Záznamy se normalizují, uloží, geokódují přes lokální Nominatim a uloží do PostGIS, pak je LiveView ukáže se seznamem, detailem a filtry. Jeden registr operací se promítá do cockpitu, Swaggeru, MCP i mix tasků."
+  },
+  "problem": {
+    "en": "Incident data arrives with unstable titles and times, and the same file may be imported repeatedly. Operator interfaces, APIs and documentation tend to drift from what the system can actually do, and an external geocoder can fail at any time.",
+    "cs": "Data o událostech přicházejí s nestabilními názvy a časy a tentýž soubor se může importovat opakovaně. Operátorské rozhraní, API a dokumentace mají tendenci se rozcházet s tím, co systém opravdu umí, a externí geokodér může kdykoli vypadnout."
+  },
+  "solution": {
+    "en": "Event identity is the source's external id with a unique index, and import is an upsert so repeated imports are idempotent. Strict layering keeps infrastructure, domain, application capabilities and presentation apart, with the geocoder behind a boundary swapped by configuration so an outage is a testable state. Capabilities are described once and projected to the web cockpit, an inferred OpenAPI document, MCP over HTTP and the shell, with gates failing when docs or projections drift.",
+    "cs": "Identita události je externí id ze zdroje s unikátním indexem a import je upsert, takže opakovaný import je idempotentní. Přísné vrstvení drží odděleně infrastrukturu, doménu, aplikační schopnosti a prezentaci; geokodér je za hranicí, kterou lze konfigurací vyměnit, takže výpadek je testovatelný stav. Schopnosti jsou popsané jednou a promítnuté do webového cockpitu, odvozeného OpenAPI, MCP přes HTTP i do shellu, a brány selžou, když se dokumentace nebo projekce rozejdou."
+  },
+  "highlights": [
+    {
+      "en": "Idempotent upsert import keyed on the source external id.",
+      "cs": "Idempotentní upsert import podle externího id ze zdroje."
+    },
+    {
+      "en": "Geocoder behind a domain-owned boundary, swappable by configuration.",
+      "cs": "Geokodér za hranicí vlastněnou doménou, vyměnitelný konfigurací."
+    },
+    {
+      "en": "One capability registry projected to cockpit, OpenAPI, Swagger, MCP and mix tasks.",
+      "cs": "Jeden registr schopností promítnutý do cockpitu, OpenAPI, Swaggeru, MCP a mix tasků."
+    },
+    {
+      "en": "Built-in benchmark and docs generation for every capability.",
+      "cs": "Vestavěný benchmark a generování dokumentace pro každou schopnost."
+    }
+  ],
+  "stack": [
+    "Elixir",
+    "Phoenix",
+    "Phoenix LiveView",
+    "Ecto",
+    "PostgreSQL",
+    "PostGIS",
+    "Nominatim",
+    "Leaflet",
+    "Tailwind CSS",
+    "Flowbite",
+    "OpenAPI",
+    "Swagger UI",
+    "MCP"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Src[Source records] --> Norm[Normalise]\n  Norm --> Persist[Upsert by external id]\n  Persist --> Geo[Geocode]\n  Geo --> Pg[PostGIS]\n  Pg --> LV[LiveView map]\n  Cap[Capability registry] --> Cockpit[Cockpit]\n  Cap --> Api[OpenAPI and MCP]\n  Cap --> Mix[mix tasks]",
+    "caption": {
+      "en": "The data path from source record to operator, beside one capability registry projected onto every surface.",
+      "cs": "Datová cesta od zdrojového záznamu k operátorovi vedle jednoho registru schopností promítnutého do všech rozhraní."
+    }
+  },
+  "related": [
+    "data-atlas",
+    "sig",
+    "openttd-prismatic-bridge",
+    "prismatic-majordomus"
+  ],
+  "confidence": "high"
+}

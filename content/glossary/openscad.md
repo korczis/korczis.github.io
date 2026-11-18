@@ -3,7 +3,7 @@
 title = "OpenSCAD"
 description = "A language for solid 3D models described as code: shapes combined by union, difference and transformation, ready for 3D printing."
 template = "term.html"
-weight = 20
+weight = 25
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -16,8 +16,8 @@ kind = "language"
 definition = "A language for solid 3D models described as code: shapes combined by union, difference and transformation, ready for 3D printing."
 aliases = []
 reference = { title = "OpenSCAD documentation", url = "https://openscad.org/documentation.html" }
-pages = ["projects/tools.md"]
-related = ["cpp", "csharp", "elixir", "javascript", "just", "open-source", "postgresql", "python"]
+pages = ["projects/tools.md", "work/3d-print.md"]
+related = ["open-source", "repository", "commit", "cpp", "csharp", "elixir", "javascript", "just"]
 og_title = "OpenSCAD: glossary"
 og_image = "og/glossary-openscad.png"
 keywords = ["OpenSCAD", "Programming language", "Glossary", "Tomas Korcak"]
@@ -44,6 +44,6 @@ I have written OpenSCAD in 1 public repository, from 2021 to 2021; in 1 of them 
 
 What it was for: [Tools](@/projects/tools.md) (1).
 
-Most recently: [3d-print](https://github.com/korczis/3d-print): 3D Print stuff.
+Most recently: [3d-print](@/work/3d-print.md): 3D Print stuff.
 
 How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses OpenSCAD: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links OpenSCAD to the repositories and to the other languages and technologies they use together.

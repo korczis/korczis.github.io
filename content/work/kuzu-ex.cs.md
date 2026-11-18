@@ -11,10 +11,12 @@ tags = ["Data a GIS", "Elixir", "Python"]
 
 [extra]
 repo = "kuzu-ex"
-og_title = "kuzu-ex: Data a GIS"
+seo_title = "kuzu-ex: Data a GIS, Elixir, 2024 · Tomáš Korčák"
+og_title = "kuzu-ex: Data a GIS, Elixir"
+og_description = "kuzu-ex: Data a GIS, Elixir a Python, 2024, aktivní za posledních 24 měsíců. Zdrojový kód: GitLab."
 og_image = "og/cs-work-kuzu-ex.png"
 schema = "project"
-keywords = ["kuzu-ex", "Data a GIS", "Elixir", "Python", "Tomáš Korčák"]
+keywords = ["kuzu-ex", "Data a GIS", "Elixir", "Python", "2024", "GitLab", "Tomáš Korčák", "korczis"]
 terms = ["elixir", "python", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
@@ -25,9 +27,14 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "každých 6 hodin" }
 +++
 **kuzu-ex** je projekt z kategorie [Data a GIS](@/projects/data.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (97,6 %), dále [Python](@/glossary/python.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 24. října 2024; poslední [commit](@/glossary/commit.cs.md) je z 29. listopadu 2024. Zní „feat: tweak loading url“. Patří tak mezi projekty aktivní za posledních 24 měsíců.
+
+Zdrojový kód: [GitLab](https://gitlab.com/korczis/kuzu-ex).
+
+Související práce v kategorii [Data a GIS](@/projects/data.cs.md): [meili\_rsex](@/work/meili-rsex.cs.md) (2024), [Crisis map](@/work/crisis-map.cs.md) (2026), [Data Atlas](@/work/data-atlas.cs.md) (2026) a [czech-stats](@/work/czech-stats.cs.md) (2020).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 9 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…), ze snímku obnovovaného každých 6 hodin. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

@@ -1,0 +1,79 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "maze-rs",
+  "sources": {
+    "github": "https://github.com/korczis/maze-rs",
+    "gitlab": "https://gitlab.com/korczis/maze-rs",
+    "commit": "86065b3aac409fcc0891be386d7d2107bfca18f9",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "Cargo.toml",
+      "src/web/mod.rs",
+      "src/distance/dijkstra.rs",
+      "tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "cli",
+  "summary": {
+    "en": "A maze generator in Rust, packaged as both a library and a command-line tool. It implements the Aldous-Broder, Binary Tree and Sidewinder algorithms, renders mazes as ASCII art, PNG or JSON, can print a Dijkstra-style shortest-path solution, and can serve Aldous-Broder mazes over a small REST interface.",
+    "cs": "Generátor bludišť v Rustu, dostupný jako knihovna i nástroj pro příkazovou řádku. Implementuje algoritmy Aldous-Broder, Binary Tree a Sidewinder, vykresluje bludiště jako ASCII art, PNG nebo JSON, umí vypsat řešení nejkratší cestou ve stylu Dijkstrova algoritmu a přes jednoduché REST rozhraní servíruje bludiště podle Aldous-Broder."
+  },
+  "problem": {
+    "en": "Maze algorithms differ in bias and cost, and comparing them needs one grid model, several generators and several outputs behind the same interface.",
+    "cs": "Algoritmy pro bludiště se liší zkreslením i náročností a jejich srovnání vyžaduje jeden model mřížky, víc generátorů a víc výstupů za stejným rozhraním."
+  },
+  "solution": {
+    "en": "A shared Grid/Cell model feeds pluggable generator modules and output writers (ascii, json, png via image/imageproc); clap provides the CLI with size, colour and algorithm options, and an Iron router returns Aldous-Broder mazes as ASCII text over HTTP, with width, height and count query parameters and the generation time in a header. Cargo benches and timing runs in the README compare the algorithms, with Binary and Sidewinder far faster than Aldous-Broder at 100x100.",
+    "cs": "Společný model Grid/Cell napájí vyměnitelné generátory a výstupní moduly (ascii, json, png přes image/imageproc); clap obstarává CLI s volbami velikosti, barev a algoritmu a router Iron vrací přes HTTP bludiště podle Aldous-Broder jako ASCII text, s parametry width, height a count a dobou generování v hlavičce. Cargo benchmarky a měření v README algoritmy porovnávají; Binary a Sidewinder jsou na mřížce 100x100 výrazně rychlejší než Aldous-Broder."
+  },
+  "highlights": [
+    {
+      "en": "Three generation algorithms behind one module interface, plus a work-in-progress Wilson generator selectable from the CLI.",
+      "cs": "Tři generační algoritmy za jedním rozhraním a k tomu rozpracovaný generátor podle Wilsona, který jde zvolit v CLI."
+    },
+    {
+      "en": "ASCII, PNG and JSON output; a --solution flag prints the shortest path and its distances.",
+      "cs": "Výstup ASCII, PNG a JSON; přepínač --solution vypíše nejkratší cestu a vzdálenosti."
+    },
+    {
+      "en": "Optional REST server mode on a configurable port, generating with Aldous-Broder only.",
+      "cs": "Volitelný režim REST serveru na nastavitelném portu, generuje jen podle Aldous-Broder."
+    },
+    {
+      "en": "Benchmarks via cargo bench recorded in the README; release profile with LTO.",
+      "cs": "Benchmarky přes cargo bench zapsané v README; release profil s LTO."
+    },
+    {
+      "en": "Small HTML/JS canvas viewer that draws an embedded JSON maze.",
+      "cs": "Jednoduchý HTML/JS prohlížeč na canvasu, který kreslí vložené bludiště v JSON."
+    }
+  ],
+  "stack": [
+    "Rust",
+    "Cargo",
+    "clap",
+    "Iron",
+    "hyper",
+    "serde",
+    "image",
+    "imageproc",
+    "JavaScript",
+    "Travis CI"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  CLI[clap CLI] --> G[Generator]\n  REST[Iron REST] --> AB[Aldous-Broder]\n  G --> AB\n  G --> BI[Binary]\n  G --> SW[Sidewinder]\n  AB --> GR[Grid model]\n  BI --> GR\n  SW --> GR\n  GR --> DJ[Shortest path solution]\n  GR --> OUT[ASCII PNG JSON]\n  OUT --> WEB[HTML viewer]",
+    "caption": {
+      "en": "Generators share one grid; outputs and the solution pass read from it. The REST route uses Aldous-Broder only.",
+      "cs": "Generátory sdílejí jednu mřížku; výstupy i výpočet řešení z ní čtou. REST cesta používá jen Aldous-Broder."
+    }
+  },
+  "related": [
+    "maze",
+    "maze-js",
+    "algorithms",
+    "reading"
+  ],
+  "confidence": "high"
+}

@@ -3,7 +3,7 @@
 title = "Zola"
 description = "A static site generator in one Rust binary: Markdown and templates in, a whole multilingual website out."
 template = "term.html"
-weight = 61
+weight = 68
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "A static site generator in one Rust binary: Markdown and templates
 aliases = []
 reference = { title = "getzola.org", url = "https://www.getzola.org/documentation/getting-started/overview/" }
 pages = ["_index.md", "projects/ai.md", "projects/knowledge.md", "services/ai-engineering-governance.md", "services/interactive-data-products.md", "skills/policy-as-code.md", "stack.md", "work/kompendium-epistemicke-anihilace.md", "work/prismatic-majordomus.md"]
-related = ["alpine-js", "flowbite-pro", "apache-echarts", "elixir", "html", "javascript", "python", "repository"]
+related = ["apache-echarts", "alpine-js", "elixir", "flowbite-pro", "rust", "html", "javascript", "python"]
 og_title = "Zola: glossary"
 og_image = "og/glossary-zola.png"
 keywords = ["Zola", "Technology", "Glossary", "Tomas Korcak"]

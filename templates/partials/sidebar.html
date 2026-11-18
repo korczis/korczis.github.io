@@ -63,7 +63,7 @@
         {%- set_global capstr = "" %}{% if sxp %}{% for e in sxp.engagements %}{% for c in e.capabilities | default(value=[]) %}{% if ("|" ~ c.key ~ "|") not in ("|" ~ capstr ~ "|") %}{% if capstr %}{% set_global capstr = capstr ~ "|" %}{% endif %}{% set_global capstr = capstr ~ c.key %}{% endif %}{% endfor %}{% endfor %}{% endif %}
         {%- if capstr %}{% set caps = capstr | split(pat="|") %}{% else %}{% set caps = [] %}{% endif %}
         {%- set groups = [["skills_languages", "code"], ["skills_technologies", "wrench"], ["skills_capabilities", "academic"]] %}
-        <div class="pb-2 pt-2">
+        <div class="pb-2 pt-2" data-skillset>
           {%- for g in groups %}
           <details class="group/sk"{% if loop.first %} open{% endif %}>
             <summary class="{{ item }} cursor-pointer list-none">
@@ -78,10 +78,14 @@
               <li>{{ <chip label={l.name} href={href} count={l.repos ~ ""} size="xs" /> }}</li>
               {%- endif %}{% endfor %}
               {%- elif g[0] == "skills_technologies" %}
+              {#- A library the owner does not claim (data/glossary.toml claimed = false, the one list
+                  Person.knowsAbout and the landing's #skills use) is never a skill here either. #}
               {%- for s in six.skills.technologies %}
-              {%- set_global href = config.base_url ~ lp ~ "/projects/?project=" ~ s.evidence[0].repo %}
-              {%- for gt in sgl.terms %}{% if gt.term == s.name or s.name in gt.aliases | default(value=[]) %}{% set_global href = config.base_url ~ lp ~ "/glossary/" ~ gt.id ~ "/" %}{% endif %}{% endfor %}
+              {%- set_global href = config.base_url ~ lp ~ "/projects/?project=" ~ s.evidence[0].repo %}{% set_global sclaimed = true %}
+              {%- for gt in sgl.terms %}{% if gt.term == s.name or s.name in gt.aliases | default(value=[]) %}{% set_global href = config.base_url ~ lp ~ "/glossary/" ~ gt.id ~ "/" %}{% if gt.claimed is defined and not gt.claimed %}{% set_global sclaimed = false %}{% endif %}{% endif %}{% endfor %}
+              {%- if sclaimed %}
               <li>{{ <chip label={s.name} href={href} count={s.projects ~ ""} size="xs" /> }}</li>
+              {%- endif %}
               {%- endfor %}
               {%- else %}
               {%- for k in caps %}{% if sxr.capabilities[k] is defined %}

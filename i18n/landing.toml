@@ -1,0 +1,630 @@
+# Interface texts of the landing page (templates/index.html, rule project.landing-contract): the
+# chapters a hiring team and an engineer read, in the order the contract fixes. Every figure they
+# frame comes from data/ or from Zola through a {placeholder}; no value of a home_*, case_*, body_*,
+# skills_*, proven_* or instruments_* key types a digit (scripts/check-landing.mjs).
+
+# --- 1. Hero deltas -----------------------------------------------------------------------------
+# The two primary paths under the h1 (ADR 0010): what each delivers, its mail CTA and subject, and
+# the case on the page that proves it; the roles, terms and CV are the secondary path.
+[home_offer_dd_title]
+en = "Due diligence and M&A"
+cs = "Due diligence a M&A"
+
+[home_offer_dd_body]
+en = "Vetting a target before an investment or acquisition: owners, assets, risks and market, every finding with its source; a data room and decision papers for the people who sign."
+cs = "Prověrka cíle před investicí nebo akvizicí: vlastníci, majetek, rizika a trh, každé zjištění se zdrojem. Datová místnost a podklady pro ty, kdo rozhodují."
+
+[home_offer_dd_cta]
+en = "Discuss due diligence"
+cs = "Probrat due diligence"
+
+[home_offer_dd_subject]
+en = "Due diligence enquiry via {host}"
+cs = "Due diligence: dotaz přes {host}"
+
+[home_offer_dd_proof]
+en = "Client work, anonymised"
+cs = "Zakázky pro klienty (anonymizované)"
+
+[home_offer_ai_title]
+en = "AI engineering and agent infrastructure"
+cs = "AI engineering a infrastruktura agentů"
+
+[home_offer_ai_body]
+en = "Agentic workflows in production and the infrastructure that keeps agents within bounds: scoped tasks, MCP, an audit trail, and work that lands only once it is verified. Elixir, OTP, Rust."
+cs = "Agentní workflow v produkci a infrastruktura, která drží agenty v mezích: vymezené úkoly, MCP, auditní stopa a práce, která projde, jen když je ověřená. Elixir, OTP, Rust."
+
+[home_offer_ai_cta]
+en = "Discuss AI engineering"
+cs = "Probrat AI engineering"
+
+[home_offer_ai_subject]
+en = "AI engineering enquiry via {host}"
+cs = "AI engineering: dotaz přes {host}"
+
+[home_offer_ai_proof]
+en = "Case study: Majordomus"
+cs = "Případová studie: Majordomus"
+
+[home_offer_hire]
+en = "Roles, terms and CV"
+cs = "Role, podmínky a CV"
+
+[home_rate_contract]
+en = "contract {rate}"
+cs = "kontrakt {rate}"
+
+[home_terms_contact]
+en = "How to get in touch"
+cs = "Jak se domluvit"
+
+
+[home_facts_label]
+en = "Hiring facts"
+cs = "Fakta pro nábor"
+
+[home_mail_subject_role]
+en = "Role: {role} (via korczis.github.io)"
+cs = "Role: {role} (přes korczis.github.io)"
+
+[home_role_for]
+en = "For: {role}"
+cs = "Pro roli: {role}"
+client = true
+
+[home_role_clear]
+en = "Show all roles"
+cs = "Zobrazit všechny role"
+client = true
+
+[home_fact_start]
+en = "Start: {value}"
+cs = "Nástup: {value}"
+
+[home_fact_timezone]
+en = "{zone}, {overlap}"
+cs = "{zone}, {overlap}"
+
+# --- 2. Hiring terms ----------------------------------------------------------------------------
+
+[home_terms_title]
+en = "Hiring terms"
+cs = "Podmínky spolupráce"
+
+[home_terms_lead]
+en = "The answers a hiring team asks for first. The same facts are on /hire/, in llms.txt and in the structured data."
+cs = "Odpovědi, na které se náborový tým ptá nejdřív. Stejná fakta jsou na /hire/, v llms.txt i ve strukturovaných datech."
+
+[home_terms_email]
+en = "Email about a role"
+cs = "Napsat e-mail o roli"
+
+[home_terms_full]
+en = "Roles, evidence and FAQ"
+cs = "Role, doklady a časté otázky"
+
+[home_terms_faq]
+en = "Questions about it"
+cs = "Otázky k tomu"
+
+# --- 3. Track record ----------------------------------------------------------------------------
+
+[home_track_title]
+en = "Track record"
+cs = "Dosavadní práce"
+
+[home_tenure]
+en = "{y} yr {m} mo"
+cs = "{y} r. {m} měs."
+
+[home_proof_author_of]
+en = "Author of Majordomus"
+cs = "Autor Majordomu"
+
+[home_proof_supervised]
+en = "Public repositories under its supervision, this site included: {n}"
+cs = "Veřejné repozitáře pod jeho dohledem, včetně tohoto webu: {n}"
+
+[home_proof_contributions]
+en = "Public contributions from {from} to {to}"
+cs = "Veřejné příspěvky od {from} do {to}"
+
+[home_proof_original]
+en = "Original repositories on GitHub and GitLab: {n}"
+cs = "Původní repozitáře na GitHubu a GitLabu: {n}"
+
+[home_proof_public_output]
+en = "Public output"
+cs = "Veřejná práce"
+
+[home_proof_role_link]
+en = "{org} website"
+cs = "Web {org}"
+
+[home_proof_cv]
+en = "In the CV"
+cs = "V životopise"
+
+# --- 4. Reading path ----------------------------------------------------------------------------
+
+[home_path_title]
+en = "A reading path for engineers"
+cs = "Čtení pro inženýry"
+
+[home_path_on_page]
+en = "On this page"
+cs = "Na této stránce"
+
+[home_path_read_next]
+en = "Read next"
+cs = "Čtěte dál"
+
+[home_path_minutes]
+en = "{n} min read"
+cs = "{n} min čtení"
+
+[home_path_total]
+en = "About {n} min in all"
+cs = "Celkem asi {n} min"
+
+[home_path_note_version]
+en = "release {version}"
+cs = "vydání {version}"
+
+[home_path_note_engagements]
+en = "engagements: {n}"
+cs = "zakázky: {n}"
+
+[home_path_note_original]
+en = "original repositories: {n}"
+cs = "původní repozitáře: {n}"
+
+[home_path_note_instruments]
+en = "live instruments: {n}"
+cs = "živé nástroje: {n}"
+
+[home_path_note_gates]
+en = "gates: {n}"
+cs = "brány: {n}"
+
+# --- 5. Roles -----------------------------------------------------------------------------------
+
+[home_roles_title]
+en = "Roles and the evidence for each"
+cs = "Role a doklady ke každé z nich"
+
+[home_roles_lead]
+en = "Every role links the public work and the anonymised client engagements that show it."
+cs = "Každá role odkazuje na veřejnou práci a anonymizované zakázky, které ji dokládají."
+
+[home_role_evidence]
+en = "Evidence for this role"
+cs = "Doklady k této roli"
+
+[home_chip_repos]
+en = "{n} repos · {from}–{to}"
+cs = "repozitáře: {n} · {from}–{to}"
+
+[home_chip_projects]
+en = "projects: {n}"
+cs = "projekty: {n}"
+
+[home_chip_engagements]
+en = "engagements: {n}"
+cs = "zakázky: {n}"
+
+# --- 6. Case study: Majordomus ------------------------------------------------------------------
+
+[case_eyebrow]
+en = "Flagship"
+cs = "Vlajková loď"
+
+[case_problem]
+en = "Problem"
+cs = "Problém"
+
+[case_mechanism]
+en = "How it works"
+cs = "Jak funguje"
+
+[case_proof]
+en = "Measured"
+cs = "Změřeno"
+
+[case_read]
+en = "Read the case"
+cs = "Číst případovou studii"
+
+[case_source]
+en = "Source"
+cs = "Zdrojový kód"
+
+[case_this_site]
+en = "This site's own .ai layer: {rules} rules, {tools} MCP tools"
+cs = "Vlastní vrstva .ai tohoto webu: pravidla {rules}, nástroje MCP {tools}"
+
+[case_layer_note]
+en = "Each rule names the gate that enforces it; the gates run before every deploy of this site."
+cs = "Každé pravidlo uvádí bránu, která ho vynucuje; brány běží před každým nasazením tohoto webu."
+
+[case_commits]
+en = "Latest commits on the trunk"
+cs = "Poslední commity v hlavní větvi"
+
+[case_copy]
+en = "Copy the install command"
+cs = "Zkopírovat instalační příkaz"
+
+[case_install]
+en = "Install"
+cs = "Instalace"
+
+[case_supervised]
+en = "Supervised repositories"
+cs = "Repozitáře pod dohledem"
+
+[case_topics]
+en = "Topics"
+cs = "Témata"
+
+# --- 7. Client work (additions to i18n/experience.toml's section) -------------------------------
+
+[xp_public_work_n]
+en = "Public repositories with this capability: {n}"
+cs = "Veřejné repozitáře s touto dovedností: {n}"
+
+[xp_see_roles]
+en = "See the roles this work supports"
+cs = "Role, které tato práce dokládá"
+
+[xp_see_skills]
+en = "Skills, each with its evidence"
+cs = "Dovednosti a doklad ke každé"
+
+[xp_open_map]
+en = "Open the engagement map"
+cs = "Otevřít mapu zakázek"
+
+# --- 8. Skills ----------------------------------------------------------------------------------
+
+[skills_title]
+en = "Skills, each with its evidence"
+cs = "Dovednosti a doklad ke každé"
+
+[skills_lead]
+en = "Measured from public repositories and anonymised engagements; headline skills first."
+cs = "Změřeno z veřejných repozitářů a anonymizovaných zakázek; nejdřív dovednosti z titulku."
+
+[skills_col_skill]
+en = "Skill"
+cs = "Dovednost"
+
+[skills_col_kind]
+en = "Kind"
+cs = "Druh"
+
+[skills_col_count]
+en = "Evidence"
+cs = "Doklady"
+
+[skills_col_span]
+en = "First–last year"
+cs = "První–poslední rok"
+
+[skills_col_evidence]
+en = "Where"
+cs = "Kde"
+
+[skills_kind_all]
+en = "All"
+cs = "Vše"
+
+[skills_filter]
+en = "Show skills of one kind"
+cs = "Zobrazit dovednosti jednoho druhu"
+
+[skills_view_all]
+en = "All skills on /hire/"
+cs = "Všechny dovednosti na /hire/"
+
+[skills_n_repos]
+en = "repositories: {n}"
+cs = "repozitáře: {n}"
+
+[skills_n_projects]
+en = "projects: {n}"
+cs = "projekty: {n}"
+
+[skills_n_engagements]
+en = "engagements: {n}"
+cs = "zakázky: {n}"
+
+[skills_client_work]
+en = "client work"
+cs = "klientská práce"
+
+[public_evidence_caption]
+en = "Public evidence: first repository to latest push, measured {date}. A span of public work, not a measure of seniority."
+cs = "Veřejné doklady: od prvního repozitáře po poslední push, změřeno {date}. Rozpětí veřejné práce, ne míra seniority."
+
+# --- 9. Body of work ----------------------------------------------------------------------------
+
+[body_title]
+en = "Body of work across GitHub and GitLab"
+cs = "Dílo na GitHubu i GitLabu"
+
+[body_lead]
+en = "Both forges are read, merged by name, and only original work is shown."
+cs = "Čtou se obě platformy, repozitáře se slučují podle jména a ukazuje se jen původní práce."
+
+[body_github]
+en = "GitHub listings"
+cs = "Položky na GitHubu"
+
+[body_gitlab]
+en = "GitLab listings"
+cs = "Položky na GitLabu"
+
+[body_merged]
+en = "After merging by name"
+cs = "Po sloučení podle jména"
+
+[body_original]
+en = "Original repositories"
+cs = "Původní repozitáře"
+
+[body_original_rule]
+en = "Original means {name} wrote at least half of the commits."
+cs = "Původní znamená, že {name} napsal aspoň polovinu commitů."
+
+[body_counted]
+en = "Forks and mirrors: counted, never shown as own work"
+cs = "Forky a zrcadla: započtené, nikdy ne jako vlastní práce"
+
+[body_counted_rest]
+en = "Empty and hidden: counted, not listed"
+cs = "Prázdné a skryté: započtené, nevypsané"
+
+[body_host_both]
+en = "On both"
+cs = "Na obou"
+
+[body_host_github_only]
+en = "GitHub only"
+cs = "Jen GitHub"
+
+[body_host_gitlab_only]
+en = "GitLab only"
+cs = "Jen GitLab"
+
+[body_stream_caption]
+en = "Public evidence: original repositories created per year, by language."
+cs = "Veřejné doklady: původní repozitáře založené v každém roce, podle jazyka."
+
+[body_contributions]
+en = "Public contributions in the last year"
+cs = "Veřejné příspěvky za poslední rok"
+
+# --- 10. Live instruments -----------------------------------------------------------------------
+
+[instruments_title]
+en = "Live instruments"
+cs = "Živé nástroje"
+
+[instruments_lead]
+en = "Zero-install tools in the browser, each checked live and linked to its source."
+cs = "Nástroje v prohlížeči bez instalace, každý ověřený naživo a s odkazem na zdroj."
+
+[instruments_open]
+en = "Open the instrument"
+cs = "Otevřít nástroj"
+
+[instruments_live_checked]
+en = "Live · HTTP {status} · checked {date}"
+cs = "Živě · HTTP {status} · ověřeno {date}"
+
+[instruments_more_live]
+en = "All live projects: {n}"
+cs = "Všechny živé projekty: {n}"
+
+[instruments_work_page]
+en = "Work page"
+cs = "Stránka projektu"
+
+[instruments_supervised]
+en = "Supervised by Majordomus"
+cs = "Pod dohledem Majordomu"
+
+[instruments_other]
+en = "More live projects"
+cs = "Další živé projekty"
+
+# --- 11. How this page is proven ----------------------------------------------------------------
+
+[proven_title]
+en = "How this page is proven"
+cs = "Jak je tato stránka ověřena"
+
+[proven_lead]
+en = "Every figure comes from a script, and gates refuse a stale or broken page before it ships."
+cs = "Každé číslo pochází ze skriptu a brány odmítnou zastaralou nebo rozbitou stránku dřív, než se nasadí."
+
+[proven_measured]
+en = "Measured"
+cs = "Změřeno"
+
+[proven_measured_text]
+en = "Data is fetched and derived by scripts, dated, and checked for freshness daily. Last measured {date}."
+cs = "Data stahují a odvozují skripty, mají datum a denně se kontroluje jejich čerstvost. Naposledy změřeno {date}."
+
+[proven_checked]
+en = "Checked"
+cs = "Zkontrolováno"
+
+[proven_checked_text]
+en = "Every build is audited in a browser at phone and desktop widths, in both themes: {gate}."
+cs = "Každé sestavení prochází auditem v prohlížeči v šířce telefonu i desktopu, v obou motivech: {gate}."
+
+[proven_supervised]
+en = "Supervised"
+cs = "Pod dohledem"
+
+[proven_supervised_text]
+en = "This repository runs under Majordomus; rules in force: {n}."
+cs = "Tento repozitář běží pod Majordomem; platná pravidla: {n}."
+
+[proven_col_gate]
+en = "Gate"
+cs = "Brána"
+
+[proven_col_rule]
+en = "Rule"
+cs = "Pravidlo"
+
+[proven_col_where]
+en = "Where it runs"
+cs = "Kde běží"
+
+[proven_where_ci]
+en = "CI"
+cs = "CI"
+
+[proven_where_prepush]
+en = "Before push"
+cs = "Před pushem"
+
+[proven_where_local]
+en = "On the owner's machine"
+cs = "Na stroji autora"
+
+[proven_where_online]
+en = "Against the deployed site"
+cs = "Proti nasazenému webu"
+
+[proven_show_all]
+en = "Show all gates ({n})"
+cs = "Zobrazit všechny brány ({n})"
+
+[proven_machines_title]
+en = "The same facts, as files"
+cs = "Stejná fakta jako soubory"
+
+[proven_file_llms]
+en = "Plain-text summary for language models"
+cs = "Textové shrnutí pro jazykové modely"
+
+[proven_file_llms_full]
+en = "Every page as plain text"
+cs = "Všechny stránky jako text"
+
+[proven_file_site]
+en = "Every page and its metadata"
+cs = "Všechny stránky a jejich metadata"
+
+[proven_file_ai]
+en = "This repository's .ai layer"
+cs = "Vrstva .ai tohoto repozitáře"
+
+[proven_file_openapi]
+en = "Published files as an API"
+cs = "Publikované soubory jako API"
+
+[proven_file_resume]
+en = "CV as JSON Resume"
+cs = "Životopis jako JSON Resume"
+
+# --- 12. Shipping now ---------------------------------------------------------------------------
+
+[home_now_title]
+en = "Shipping now"
+cs = "Co se právě dodává"
+
+[home_recent_commits]
+en = "Commits in the window: {n}."
+cs = "Commity v období: {n}."
+
+# --- 13. Archive --------------------------------------------------------------------------------
+
+[archive_title]
+en = "Explore the archive"
+cs = "Prozkoumat archiv"
+
+[archive_lead]
+en = "The whole body of work as pictures: every mark opens the work behind it."
+cs = "Celé dílo jako obrazy: každá značka otevře práci, která za ní stojí."
+
+# --- 14. FAQ ------------------------------------------------------------------------------------
+
+[home_faq_title]
+en = "Questions hiring teams ask"
+cs = "Na co se ptají náboráři"
+
+[home_faq_all]
+en = "All questions"
+cs = "Všechny otázky"
+
+[home_faq_see]
+en = "In the terms"
+cs = "V podmínkách"
+
+# --- 15. Contact --------------------------------------------------------------------------------
+
+[home_contact_title]
+en = "Work together"
+cs = "Pojďme spolupracovat"
+
+[home_contact_role_title]
+en = "Hiring for a role"
+cs = "Hledáte do týmu"
+
+[home_contact_role_lead]
+en = "Full-time, remote, with flexible hours."
+cs = "Na plný úvazek, remote, s flexibilní pracovní dobou."
+
+[home_contact_contract_title]
+en = "Contract or fractional"
+cs = "Kontrakt nebo částečný úvazek"
+
+[home_contact_contract_lead]
+en = "B2B engagements, from a short audit to a fractional CTO role."
+cs = "Spolupráce B2B, od krátkého auditu po roli frakčního CTO."
+
+[home_mail_subject_fulltime]
+en = "Full-time role (via korczis.github.io)"
+cs = "Role na plný úvazek (přes korczis.github.io)"
+
+[home_mail_subject_contract]
+en = "Contract or fractional engagement (via korczis.github.io)"
+cs = "Kontrakt nebo částečný úvazek (přes korczis.github.io)"
+
+[home_copy_email]
+en = "Copy the email address"
+cs = "Zkopírovat e-mailovou adresu"
+
+[home_email_label]
+en = "Email address"
+cs = "E-mailová adresa"
+
+[home_cv_download]
+en = "Download the CV"
+cs = "Stáhnout životopis"
+
+[home_cv_print]
+en = "CV on /about/"
+cs = "Životopis na /about/"
+
+[home_forward_title]
+en = "Forward this"
+cs = "Přepošlete dál"
+
+[home_forward_hire]
+en = "Roles, terms and FAQ"
+cs = "Role, podmínky a otázky"
+
+[home_forward_case]
+en = "The Majordomus case study"
+cs = "Případová studie Majordomus"
+
+[home_forward_cv]
+en = "The CV as data"
+cs = "Životopis jako data"

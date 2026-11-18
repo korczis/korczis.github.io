@@ -16,8 +16,8 @@ kind = "language"
 definition = "The configuration language of the Apache HTTP Server: virtual hosts, rewrite rules and access control."
 aliases = ["Apache"]
 reference = { title = "Apache HTTP Server documentation", url = "https://httpd.apache.org/docs/current/" }
-pages = ["projects/web.md"]
-related = ["css", "elixir", "html", "javascript", "repository", "static-site-generator"]
+pages = ["projects/web.md", "work/pavian-eu.md"]
+related = ["css", "html", "javascript", "repository", "static-site-generator", "commit", "elixir", "open-source"]
 og_title = "ApacheConf: glossary"
 og_image = "og/glossary-apacheconf.png"
 keywords = ["ApacheConf", "Programming language", "Glossary", "Tomas Korcak"]
@@ -44,6 +44,6 @@ I have written ApacheConf in 1 public repository, from 2015 to 2015; in 1 of the
 
 What it was for: [Web](@/projects/web.md) (1).
 
-Most recently: [pavian.eu](https://github.com/korczis/pavian.eu): pavian.eu website.
+Most recently: [pavian.eu](@/work/pavian-eu.md): pavian.eu website.
 
 How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses ApacheConf: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links ApacheConf to the repositories and to the other languages and technologies they use together.

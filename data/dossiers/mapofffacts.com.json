@@ -1,0 +1,50 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "mapofffacts.com",
+  "sources": {
+    "github": "https://github.com/korczis/mapofffacts.com",
+    "gitlab": "https://gitlab.com/korczis/mapofffacts-com",
+    "commit": "63c85e6e1a615c3599fee337e09446d2103c295c",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "LICENSE (tree)"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "docs",
+  "summary": {
+    "en": "A near-empty repository holding only a README and a LICENSE, pointing to a project wiki for \"Map Of Facts\". There is no code in the tree.",
+    "cs": "Téměř prázdné repo obsahující jen README a LICENSE, odkazující na wiki projektu \"Map Of Facts\". Ve stromu není žádný kód."
+  },
+  "problem": {
+    "en": "An idea or domain placeholder sometimes exists as a repository stub before any implementation lands.",
+    "cs": "Nápad nebo doménový placeholder někdy existuje jako kostra repa dřív, než přijde jakákoli implementace."
+  },
+  "solution": {
+    "en": "The repository serves as a landing point and license holder for the concept, deferring the content to a wiki. It carries no implementation.",
+    "cs": "Repo slouží jako vstupní bod a nositel licence pro koncept, obsah odkládá na wiki. Neobsahuje žádnou implementaci."
+  },
+  "highlights": [
+    {
+      "en": "Only a README and a LICENSE; points to a wiki.",
+      "cs": "Pouze README a LICENSE; odkazuje na wiki."
+    },
+    {
+      "en": "Placeholder repository with no code.",
+      "cs": "Placeholder repo bez kódu."
+    }
+  ],
+  "stack": [],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[Repository stub] --> B[README]\n  B --> C[Wiki link]\n  A --> D[LICENSE]",
+    "caption": {
+      "en": "A stub README points to an external wiki for the concept.",
+      "cs": "Kostra README odkazuje na externí wiki pro koncept."
+    }
+  },
+  "related": [
+    "mapoffacts"
+  ],
+  "confidence": "low"
+}

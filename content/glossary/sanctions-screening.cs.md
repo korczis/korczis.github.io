@@ -3,7 +3,7 @@
 title = "Sankční prověrka"
 description = "Kontrola osob a firem proti sankčním seznamům a politicky exponovaným osobám před obchodním vztahem, jak vyžadují pravidla proti praní peněz."
 template = "term.html"
-weight = 99
+weight = 106
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

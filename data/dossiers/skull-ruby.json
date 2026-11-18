@@ -1,0 +1,64 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "skull-ruby",
+  "sources": {
+    "github": "https://github.com/korczis/skull-ruby",
+    "gitlab": "https://gitlab.com/korczis/skull-ruby",
+    "commit": "1d7d3db1bd1fa4c35bdce018cad7c47e5fbbb3ac",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "Rakefile",
+      ".travis.yml",
+      "tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "kata",
+  "summary": {
+    "en": "A placeholder for Ruby learning material in the skull family; it holds only a Rakefile with a usage task, a Travis CI config and a README.",
+    "cs": "Zárodek výukových materiálů k Ruby v rodině skull; obsahuje jen Rakefile s úlohou usage, konfiguraci Travis CI a README."
+  },
+  "problem": {
+    "en": "Reserve a Ruby slot in the per-language learning collection.",
+    "cs": "Vyhradit místo pro Ruby ve sbírce výukových materiálů podle jazyků."
+  },
+  "solution": {
+    "en": "The scaffold sets up Bundler and Rake and tests against Ruby 2.0 and 2.1 on Travis CI. No exercises are in the tree yet.",
+    "cs": "Kostra nastavuje Bundler a Rake a na Travis CI testuje proti Ruby 2.0 a 2.1. Žádná cvičení ve stromu zatím nejsou."
+  },
+  "highlights": [
+    {
+      "en": "Scaffold only: no Ruby sources beyond the Rakefile.",
+      "cs": "Pouze kostra: kromě Rakefile žádné zdrojáky v Ruby."
+    },
+    {
+      "en": "Travis CI targets Ruby 2.0 and 2.1 and updates RubyGems and Bundler first.",
+      "cs": "Travis CI cílí na Ruby 2.0 a 2.1 a nejdřív aktualizuje RubyGems a Bundler."
+    }
+  ],
+  "stack": [
+    "Ruby",
+    "Rake",
+    "Bundler",
+    "Travis CI"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Skull[skull umbrella] --> Repo[skull-ruby]\n  Repo --> Rake[Rakefile usage]\n  Repo --> CI[Travis CI]",
+    "caption": {
+      "en": "A scaffold repository inside the skull collection.",
+      "cs": "Kostra repozitáře uvnitř sbírky skull."
+    }
+  },
+  "related": [
+    "skull",
+    "skull-c",
+    "skull-cpp",
+    "skull-java",
+    "skull-nodejs",
+    "skull-haskell",
+    "codecademy",
+    "algorithms-ruby"
+  ],
+  "confidence": "low"
+}

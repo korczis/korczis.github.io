@@ -3,7 +3,7 @@
 title = "XSLT"
 description = "Jazyk, který převádí dokumenty XML na jiné XML, HTML nebo text pomocí šablon párovaných se vstupním stromem."
 template = "term.html"
-weight = 32
+weight = 39
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -16,8 +16,8 @@ kind = "language"
 definition = "Jazyk, který převádí dokumenty XML na jiné XML, HTML nebo text pomocí šablon párovaných se vstupním stromem."
 aliases = []
 reference = { title = "W3C XSLT 3.0", url = "https://www.w3.org/TR/xslt-30/" }
-pages = ["projects/data.cs.md"]
-related = ["elixir", "gis", "html", "javascript", "mcp", "postgis", "python", "r"]
+pages = ["projects/data.cs.md", "work/solr-core-minimal.cs.md"]
+related = ["gis", "javascript", "repository", "commit", "css", "elixir", "html", "mcp"]
 og_title = "XSLT: slovník"
 og_image = "og/cs-glossary-xslt.png"
 keywords = ["XSLT", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
@@ -44,6 +44,6 @@ XSLT jsem psal v 1 veřejném repozitáři, od roku 2014 do 2014; v 1 z nich je 
 
 K čemu to sloužilo: [Data a GIS](@/projects/data.cs.md) (1).
 
-Naposledy: [solr-core-minimal](https://github.com/korczis/solr-core-minimal).
+Naposledy: [solr-core-minimal](@/work/solr-core-minimal.cs.md).
 
 Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak XSLT používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje XSLT s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

@@ -3,7 +3,7 @@
 title = "EEx and HEEx"
 description = "Vložené šablony Elixiru: EEx vkládá Elixir do textu, HEEx do HTML, které Phoenix LiveView kontroluje a vykresluje."
 template = "term.html"
-weight = 8
+weight = 10
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -17,7 +17,7 @@ definition = "Vložené šablony Elixiru: EEx vkládá Elixir do textu, HEEx do 
 aliases = ["HTML+EEX", "EEx", "HEEx"]
 reference = { title = "Phoenix.Component and HEEx", url = "https://hexdocs.pm/phoenix_live_view/Phoenix.Component.html" }
 pages = ["skills/data-integration.cs.md", "skills/geospatial-analysis.cs.md", "work/korczis-gitlab-io.cs.md", "work/sig.cs.md", "work/simple-geocoder.cs.md", "work/the-psycho.cs.md"]
-related = ["elixir", "commit", "open-source", "repository", "css", "shell", "html", "javascript"]
+related = ["elixir", "commit", "open-source", "repository", "shell", "css", "html", "javascript"]
 og_title = "EEx and HEEx: slovník"
 og_image = "og/cs-glossary-eex.png"
 keywords = ["EEx and HEEx", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

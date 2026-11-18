@@ -13,7 +13,7 @@ skill = "geospatial-analysis"
 og_title = "Geoprostorová analýza: dovednosti"
 og_image = "og/cs-skill-geospatial-analysis.png"
 schema = "skill"
-terms = ["skill", "gis", "elixir", "javascript", "postgis", "css", "eex", "html", "just", "mcp", "plpgsql", "python"]
+terms = ["skill", "gis", "shell", "elixir", "javascript", "postgis", "css", "dockerfile", "eex", "html", "just", "mcp"]
 keywords = ["Geoprostorová analýza", "Interaktivní datové produkty a simulátory", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -31,8 +31,8 @@ Pojem, na kterém stojí: [GIS](@/glossary/gis.cs.md).
 
 Služby, které z ní čerpají: [Interaktivní datové produkty a simulátory](@/services/interactive-data-products.cs.md).
 
-Praktikovaná s: [Elixir](@/glossary/elixir.cs.md), [JavaScript](@/glossary/javascript.cs.md), [PostGIS](@/glossary/postgis.cs.md), [CSS](@/glossary/css.cs.md), [EEx and HEEx](@/glossary/eex.cs.md), [HTML](@/glossary/html.cs.md), [Just](@/glossary/just.cs.md) a [MCP](@/glossary/mcp.cs.md).
+Praktikovaná s: [Shell](@/glossary/shell.cs.md), [Elixir](@/glossary/elixir.cs.md), [JavaScript](@/glossary/javascript.cs.md), [PostGIS](@/glossary/postgis.cs.md), [CSS](@/glossary/css.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md), [EEx and HEEx](@/glossary/eex.cs.md) a [HTML](@/glossary/html.cs.md).
 
-Veřejná práce, jejíž vlastní slova ji dokládají: [crisis-map](https://github.com/korczis/crisis-map), [data-atlas](https://github.com/korczis/data-atlas) a [simple\_geocoder](https://gitlab.com/korczis/simple_geocoder).
+Veřejná práce, jejíž vlastní slova ji dokládají: [crisis-map](https://github.com/korczis/crisis-map), [data-atlas](https://github.com/korczis/data-atlas), [simple\_geocoder](https://gitlab.com/korczis/simple_geocoder) a [microcrawler](https://gitlab.com/korczis/microcrawler).
 
 Jak číst tuto stránku: definice pochází ze slovníku zkušeností; služby, technologie, veřejné [repozitáře](@/glossary/repository.cs.md) a případy užití jsou odvozené a každá položka vede na svou stránku.

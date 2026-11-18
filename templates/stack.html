@@ -68,7 +68,8 @@
           {%- elif row.id == "contributions" %}{% set v = gh.contributions.total | num_format %}
           {%- elif row.id == "repositories" %}{% set v = ix.counts.own ~ " / " ~ ix.counts.merged %}
           {%- elif row.id == "excluded" %}{% set v = ix.counts.forks ~ " · " ~ ix.counts.mirrors ~ " · " ~ ix.counts.hidden %}
-          {%- elif row.id == "recent" %}{% set v = rc.repos | length %}
+          {%- elif row.id == "recent" %}{% set v = (rc.repos | length) - rc.archive %}
+          {%- elif row.id == "work_pages" %}{% set v = (rc.repos | length) ~ " · " ~ rc.archive %}
           {%- elif row.id == "categories" %}{% set v = ix.by_category | length %}
           {%- elif row.id == "sites" %}{% set_global ns = 0 %}{% for r in ix.repos %}{% if r.site %}{% set_global ns = ns + 1 %}{% endif %}{% endfor %}{% set v = ns %}
           {%- elif row.id == "supervision" %}{% set v = ix.counts.supervised ~ " / " ~ ix.counts.own %}

@@ -13,7 +13,7 @@ skill = "interactive-visualisation"
 og_title = "Interactive visualisation: skills"
 og_image = "og/skill-interactive-visualisation.png"
 schema = "skill"
-terms = ["skill", "data-visualisation", "html", "javascript", "python", "shell", "alpine-js", "apache-echarts", "css", "elixir", "flowbite-pro", "majordomus"]
+terms = ["skill", "data-visualisation", "html", "javascript", "elixir", "python", "shell", "alpine-js", "apache-echarts", "css", "flowbite-pro", "majordomus"]
 keywords = ["Interactive visualisation", "Interactive data products and simulators", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -31,8 +31,8 @@ The concept behind it: [Data visualisation](@/glossary/data-visualisation.md).
 
 Services that draw on it: [Interactive data products and simulators](@/services/interactive-data-products.md).
 
-Practised with: [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md), [Python](@/glossary/python.md), [Shell](@/glossary/shell.md), [Alpine.js](@/glossary/alpine-js.md), [Apache ECharts](@/glossary/apache-echarts.md), [CSS](@/glossary/css.md) and [Elixir](@/glossary/elixir.md).
+Practised with: [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md), [Elixir](@/glossary/elixir.md), [Python](@/glossary/python.md), [Shell](@/glossary/shell.md), [Alpine.js](@/glossary/alpine-js.md), [Apache ECharts](@/glossary/apache-echarts.md) and [CSS](@/glossary/css.md).
 
-Public work whose own words show it: [algoglyph](https://github.com/korczis/algoglyph), [sonic-playground](https://github.com/korczis/sonic-playground), [kompendium-epistemicke-anihilace](https://github.com/korczis/kompendium-epistemicke-anihilace) and [astronomists](https://github.com/korczis/astronomists).
+Public work whose own words show it: [algoglyph](https://github.com/korczis/algoglyph), [kompendium-epistemicke-anihilace](https://github.com/korczis/kompendium-epistemicke-anihilace), [sonic-playground](https://github.com/korczis/sonic-playground) and [gooddata-graphql](https://github.com/korczis/gooddata-graphql).
 
 How to read this page: the definition is the experience vocabulary's; the services, technologies, public [repositories](@/glossary/repository.md) and use cases are derived and each links to its page.

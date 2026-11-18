@@ -3,7 +3,7 @@
 title = "OpenSCAD"
 description = "Jazyk pro pevné 3D modely popsané kódem: tvary skládané sjednocením, rozdílem a transformacemi, připravené pro 3D tisk."
 template = "term.html"
-weight = 20
+weight = 25
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -16,8 +16,8 @@ kind = "language"
 definition = "Jazyk pro pevné 3D modely popsané kódem: tvary skládané sjednocením, rozdílem a transformacemi, připravené pro 3D tisk."
 aliases = []
 reference = { title = "OpenSCAD documentation", url = "https://openscad.org/documentation.html" }
-pages = ["projects/tools.cs.md"]
-related = ["cpp", "csharp", "elixir", "javascript", "just", "open-source", "postgresql", "python"]
+pages = ["projects/tools.cs.md", "work/3d-print.cs.md"]
+related = ["open-source", "repository", "commit", "cpp", "csharp", "elixir", "javascript", "just"]
 og_title = "OpenSCAD: slovník"
 og_image = "og/cs-glossary-openscad.png"
 keywords = ["OpenSCAD", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
@@ -44,6 +44,6 @@ OpenSCAD jsem psal v 1 veřejném repozitáři, od roku 2021 do 2021; v 1 z nich
 
 K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (1).
 
-Naposledy: [3d-print](https://github.com/korczis/3d-print).
+Naposledy: [3d-print](@/work/3d-print.cs.md).
 
 Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak OpenSCAD používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje OpenSCAD s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

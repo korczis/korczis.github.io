@@ -3,7 +3,7 @@
 title = "Open Graph"
 description = "Meta tagy, které sociálním sítím říkají, jak zobrazit náhled odkazu: titulek, popis a obrázek."
 template = "term.html"
-weight = 89
+weight = 96
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]
@@ -17,7 +17,7 @@ definition = "Meta tagy, které sociálním sítím říkají, jak zobrazit náh
 aliases = []
 reference = { title = "ogp.me", url = "https://ogp.me/" }
 pages = ["_index.cs.md"]
-related = ["commit", "d3", "data-visualisation", "flowbite-pro", "fork", "front-matter", "json-ld", "mirror"]
+related = ["ai-agent", "apache-echarts", "audit-trail", "commit", "d3", "data-visualisation", "due-diligence", "elixir"]
 og_title = "Open Graph: slovník"
 og_image = "og/cs-glossary-open-graph.png"
 keywords = ["Open Graph", "Koncept", "Slovník", "Tomáš Korčák"]

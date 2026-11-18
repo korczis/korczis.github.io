@@ -3,7 +3,7 @@
 title = "C++"
 description = "C with classes, templates and abstractions that cost nothing at run time; used where speed matters."
 template = "term.html"
-weight = 4
+weight = 5
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -16,8 +16,8 @@ kind = "language"
 definition = "C with classes, templates and abstractions that cost nothing at run time; used where speed matters."
 aliases = []
 reference = { title = "cppreference.com", url = "https://en.cppreference.com/" }
-pages = ["projects/learning.md", "projects/science.md", "projects/security.md", "projects/tools.md"]
-related = ["repository", "rust", "elixir", "javascript", "ruby", "csharp", "haskell", "python"]
+pages = ["projects/learning.md", "projects/science.md", "projects/security.md", "projects/tools.md", "work/algorithms-ruby.md", "work/algorithms.md", "work/happ.md", "work/icave.md", "work/peacemaker.md", "work/skull-cpp.md", "work/skull-emscripten.md"]
+related = ["repository", "open-source", "commit", "rust", "c", "ruby", "shell", "cmake"]
 og_title = "C++: glossary"
 og_image = "og/glossary-cpp.png"
 keywords = ["C++", "Programming language", "Glossary", "Tomas Korcak"]
@@ -40,10 +40,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
-I have written C++ in 6 public repositories, from 2014 to 2021; in 6 of them it is the main language.
+I have written C++ in 7 public repositories, from 2014 to 2021; in 6 of them it is the main language.
 
-What it was for: [Learning and experiments](@/projects/learning.md) (2), [Science and visualisation](@/projects/science.md) (2), [Security and OSINT](@/projects/security.md) (1) and [Tools](@/projects/tools.md) (1).
+What it was for: [Learning and experiments](@/projects/learning.md) (3), [Science and visualisation](@/projects/science.md) (2), [Security and OSINT](@/projects/security.md) (1) and [Tools](@/projects/tools.md) (1).
 
-Most recently: [happ](https://github.com/korczis/happ): Playground App created during my Hospital Stay; [algorithms-ruby](https://github.com/korczis/algorithms-ruby): Fundamental algorithms in ruby; [iCave](https://github.com/korczis/iCave): Open Home Automation Platform.
+Most recently: [happ](@/work/happ.md): Playground App created during my Hospital Stay; [skull-cpp](@/work/skull-cpp.md): C++ Skull; [algorithms-ruby](@/work/algorithms-ruby.md): Fundamental algorithms in ruby.
 
 How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses C++: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links C++ to the repositories and to the other languages and technologies they use together.

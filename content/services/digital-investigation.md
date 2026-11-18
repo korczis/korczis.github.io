@@ -14,7 +14,7 @@ icon = "search"
 og_title = "Digital investigation and OSINT dossiers"
 og_image = "og/service-digital-investigation.png"
 schema = "service"
-terms = ["service", "elixir", "broadway", "playwright", "postgresql", "meilisearch", "cytoscape-js", "osint", "public-registry", "record-linkage", "beneficial-ownership", "attack-surface", "digital-forensics", "knowledge-graph", "web-scraping", "change-detection", "html", "javascript", "python", "shell", "claude-api", "alpine-js", "flowbite-pro", "dockerfile", "fastapi", "github-actions"]
+terms = ["service", "elixir", "broadway", "playwright", "postgresql", "meilisearch", "cytoscape-js", "osint", "public-registry", "record-linkage", "beneficial-ownership", "attack-surface", "digital-forensics", "knowledge-graph", "web-scraping", "change-detection", "javascript", "html", "python", "shell", "claude-api", "alpine-js", "flowbite-pro", "css", "dockerfile", "fastapi"]
 keywords = ["Digital investigation and OSINT dossiers", "OSINT investigation", "Registry intelligence", "Entity resolution", "Ownership and link analysis", "Infrastructure OSINT", "Web and media forensics", "Knowledge graph", "Web automation and crawling", "Continuous monitoring", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -34,9 +34,9 @@ It draws on these skills: [OSINT investigation](@/skills/osint-investigation.md)
 
 It is built with [Elixir](@/glossary/elixir.md), [Broadway](@/glossary/broadway.md), [Playwright](@/glossary/playwright.md), [PostgreSQL](@/glossary/postgresql.md), [Meilisearch](@/glossary/meilisearch.md) and [Cytoscape.js](@/glossary/cytoscape-js.md).
 
-The technologies behind it, measured from the work that shows those skills: [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md), [Python](@/glossary/python.md), [Shell](@/glossary/shell.md), [Claude API](@/glossary/claude-api.md), [Alpine.js](@/glossary/alpine-js.md), [Flowbite Pro](@/glossary/flowbite-pro.md) and [Dockerfile](@/glossary/dockerfile.md).
+The technologies behind it, measured from the work that shows those skills: [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md), [Python](@/glossary/python.md), [Shell](@/glossary/shell.md), [Claude API](@/glossary/claude-api.md), [Alpine.js](@/glossary/alpine-js.md), [Flowbite Pro](@/glossary/flowbite-pro.md) and [CSS](@/glossary/css.md).
 
-7 public repositories show its skills (7 by their own words).
+23 public repositories show its skills (23 by their own words).
 
 It was delivered in client work under confidentiality agreements, in Real-estate developer and Financial and investment group, as Architect, Lead engineer, AI engineer, Data engineer, Investigator and Advisor; the use cases describe the principle and the intent, never a client, person, date or number.
 

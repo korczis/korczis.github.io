@@ -12,44 +12,44 @@ en = "Due diligence, M&A and AI for large clients"
 cs = "Due diligence, M&A a AI pro velké klienty"
 
 [xp_lead_sectors]
-en = "Engagements for {sectors}: what kind of problem each one solved, measured from the git history of its sources."
-cs = "Zakázky pro tyto klienty: {sectors}. U každé je vidět, jaký druh problému řešila, změřeno z historie gitu jejích zdrojů."
+en = "Engagements for {sectors}. For each one: the kind of problem it addressed, inferred from the git history of its sources. These are signals of the work's scope, not of its business outcome."
+cs = "Zakázky pro tyto klienty: {sectors}. U každé ukazuje, jakým druhem problému se zabývala, odvozeno z historie gitu jejích zdrojů. Jde o signály rozsahu práce, ne o její obchodní výsledek."
 
 [xp_lead]
-en = "Engagements for large clients: what kind of problem each one solved, measured from the git history of its sources."
-cs = "Zakázky pro velké klienty: u každé je vidět, jaký druh problému řešila, změřeno z historie gitu jejích zdrojů."
+en = "Engagements for large clients. For each one: the kind of problem it addressed, inferred from the git history of its sources. These are signals of the work's scope, not of its business outcome."
+cs = "Zakázky pro velké klienty. U každé ukazuje, jakým druhem problému se zabývala, odvozeno z historie gitu jejích zdrojů. Jde o signály rozsahu práce, ne o její obchodní výsledek."
 
 [xp_confidential]
-en = "The clients are not named: the work is under confidentiality agreements, so only a neutral id, the vocabulary below, dates and rounded numbers are published."
-cs = "Klienti nejsou jmenováni: práce podléhá dohodám o mlčenlivosti, a proto se zveřejňuje jen neutrální označení, slovník níže, data a zaokrouhlená čísla."
+en = "The clients are not named: the work is under confidentiality agreements, so only the sector, the vocabulary below, dates and rounded numbers are published."
+cs = "Klienty nejmenuji: práce podléhá dohodám o mlčenlivosti, proto zveřejňuji jen obor, slovník níže, data a zaokrouhlená čísla."
 
 [xp_kpi_engagements]
 en = "Engagements"
 cs = "Zakázky"
 
 [xp_kpi_engagements_note]
-en = "{n} measured from their sources in git"
-cs = "Změřeno ze zdrojů v gitu: {n}"
+en = "git history exists for {n} of them; the others have no figures below"
+cs = "historie gitu existuje u {n} z nich; ostatní níže nemají žádná čísla"
 
 [xp_kpi_capabilities]
-en = "Capabilities shown"
-cs = "Doložené schopnosti"
+en = "Capabilities inferred from project history"
+cs = "Schopnosti odvozené z historie projektů"
 
 [xp_kpi_capabilities_note]
-en = "of {m} in the vocabulary, inferred from commits, paths and headings"
-cs = "z {m} ve slovníku, odvozeno z commitů, cest a nadpisů"
+en = "of {m} in the vocabulary; matched in commits, paths and headings, an inference rather than proof of a result"
+cs = "z {m} ve slovníku; shoda v commitech, cestách a nadpisech, tedy odvození, ne doklad výsledku"
 
 [xp_kpi_commits]
 en = "Commits by the owner"
 cs = "Commity autora"
 
 [xp_kpi_commits_note]
-en = "each engagement rounded down to a bucket"
-cs = "u každé zakázky zaokrouhleno dolů na stupeň"
+en = "measured directly; each engagement rounded down to a bucket"
+cs = "přímé měření; u každé zakázky zaokrouhleno dolů na stupeň"
 
 [xp_kpi_months]
-en = "Months of measured work"
-cs = "Měsíce změřené práce"
+en = "Months with measured commits"
+cs = "Měsíce s naměřenými commity"
 
 [xp_kpi_months_note]
 en = "from {from} to {to}"
@@ -72,8 +72,8 @@ en = "Category"
 cs = "Kategorie"
 
 [xp_evidence]
-en = "Evidence: {commits} commits, {headings} headings, {paths} paths matched"
-cs = "Doklady: shoda v {commits} commitech, {headings} nadpisech a {paths} cestách"
+en = "Inferred from matches in {commits} commits, {headings} headings and {paths} paths"
+cs = "Odvozeno ze shody v {commits} commitech, {headings} nadpisech a {paths} cestách"
 
 [xp_declared]
 en = "declared by the owner"

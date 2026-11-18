@@ -3,7 +3,7 @@
 title = "Elixir"
 description = "Funkcionální jazyk nad virtuálním strojem Erlangu, stavěný pro souběžné systémy odolné vůči chybám."
 template = "term.html"
-weight = 9
+weight = 11
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -16,8 +16,8 @@ kind = "language"
 definition = "Funkcionální jazyk nad virtuálním strojem Erlangu, stavěný pro souběžné systémy odolné vůči chybám."
 aliases = []
 reference = { title = "elixir-lang.org", url = "https://elixir-lang.org/" }
-pages = ["about.cs.md", "hire.cs.md", "projects/ai.cs.md", "projects/data.cs.md", "projects/knowledge.cs.md", "projects/learning.cs.md", "projects/libraries.cs.md", "projects/media.cs.md", "projects/science.cs.md", "projects/tools.cs.md", "projects/web.cs.md", "services/ai-engineering-governance.cs.md", "services/attack-surface.cs.md", "services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "services/decision-support-ai.cs.md", "services/digital-forensics.cs.md", "services/digital-investigation.cs.md", "services/due-diligence.cs.md", "services/interactive-data-products.cs.md", "services/m-and-a.cs.md", "services/reputation-intelligence.cs.md", "skills/audit-trail.cs.md", "skills/data-integration.cs.md", "skills/decision-support.cs.md", "skills/geospatial-analysis.cs.md", "skills/interactive-visualisation.cs.md", "skills/llm-agents.cs.md", "skills/media-forensics.cs.md", "skills/osint-investigation.cs.md", "skills/registry-intelligence.cs.md", "work/corvidae.cs.md", "work/crisis-map.cs.md", "work/distance-calculator.cs.md", "work/el-magico-cache.cs.md", "work/job-processor.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/korczis-gitlab-io.cs.md", "work/kuzu-ex.cs.md", "work/llm.cs.md", "work/meili-rsex.cs.md", "work/prismatic.cs.md", "work/sig.cs.md", "work/simple-geocoder.cs.md", "work/sonic-playground.cs.md", "work/the-psycho.cs.md"]
-related = ["javascript", "html", "repository", "python", "shell", "alpine-js", "open-source", "css"]
+pages = ["_index.cs.md", "about.cs.md", "hire.cs.md", "projects/ai.cs.md", "projects/data.cs.md", "projects/knowledge.cs.md", "projects/learning.cs.md", "projects/libraries.cs.md", "projects/media.cs.md", "projects/science.cs.md", "projects/tools.cs.md", "projects/web.cs.md", "services/ai-engineering-governance.cs.md", "services/attack-surface.cs.md", "services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "services/decision-support-ai.cs.md", "services/digital-forensics.cs.md", "services/digital-investigation.cs.md", "services/due-diligence.cs.md", "services/interactive-data-products.cs.md", "services/m-and-a.cs.md", "services/reputation-intelligence.cs.md", "skills/data-integration.cs.md", "skills/decision-support.cs.md", "skills/geospatial-analysis.cs.md", "skills/interactive-visualisation.cs.md", "skills/llm-agents.cs.md", "skills/media-forensics.cs.md", "skills/osint-investigation.cs.md", "skills/registry-intelligence.cs.md", "work/astudo.cs.md", "work/corvidae.cs.md", "work/crisis-map.cs.md", "work/czech-stats.cs.md", "work/distance-calculator.cs.md", "work/dj-schnapps.cs.md", "work/el-magico-cache.cs.md", "work/gauc-ex.cs.md", "work/gooddata-graphql.cs.md", "work/hydra.cs.md", "work/job-processor.cs.md", "work/kanec.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/korczis-gitlab-io.cs.md", "work/kuzu-ex.cs.md", "work/llm.cs.md", "work/magic.cs.md", "work/mapoffacts.cs.md", "work/maze.cs.md", "work/meili-rsex.cs.md", "work/microcrawler-elixir.cs.md", "work/prismatic.cs.md", "work/rest-hello-world-benchmark.cs.md", "work/rustler-mix.cs.md", "work/rustler-test.cs.md", "work/sig.cs.md", "work/simple-geocoder.cs.md", "work/skull-elixir.cs.md", "work/sonic-playground.cs.md", "work/test-elixir.cs.md", "work/the-psycho.cs.md", "work/the-scratch.cs.md", "work/tosh.cs.md", "work/web-spa.cs.md", "work/zaas.cs.md"]
+related = ["javascript", "repository", "open-source", "html", "commit", "css", "shell", "rust"]
 og_title = "Elixir: slovník"
 og_image = "og/cs-glossary-elixir.png"
 keywords = ["Elixir", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
@@ -40,9 +40,9 @@ span = 3
 height = "md"
 tone = "night"
 +++
-Elixir jsem psal v 32 veřejných repozitářích, od roku 2016 do 2026; v 27 z nich je hlavním jazykem.
+Elixir jsem psal v 35 veřejných repozitářích, od roku 2016 do 2026; v 26 z nich je hlavním jazykem.
 
-K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (10), [Data a GIS](@/projects/data.cs.md) (6), [Učení a experimenty](@/projects/learning.cs.md) (3) a [Knihovny](@/projects/libraries.cs.md) (3).
+K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (12), [Data a GIS](@/projects/data.cs.md) (6), [Web](@/projects/web.cs.md) (4) a [Učení a experimenty](@/projects/learning.cs.md) (3).
 
 Naposledy: [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat; [Sonic Playground](@/work/sonic-playground.cs.md): Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita; [Crisis map](@/work/crisis-map.cs.md): Hlášení geokódovaná přes lokální Nominatim, uložená jako PostGIS geografie a servírovaná z jednoho registru schopností: LiveView, REST, OpenAPI, MCP a CLI.
 

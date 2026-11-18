@@ -11,10 +11,12 @@ tags = ["Tools"]
 
 [extra]
 repo = "GHT"
-og_title = "GHT: Tools"
+seo_title = "GHT: Copyright © 2024–2025 Tomas Korcak, 2025 · Tomas Korcak"
+og_title = "GHT: Copyright © 2024–2025 Tomas Korcak"
+og_description = "GHT: Tools, 2025, active in the last 24 months. Source on GitLab."
 og_image = "og/work-ght.png"
 schema = "project"
-keywords = ["GHT", "Tools", "Tomas Korcak"]
+keywords = ["GHT", "Tools", "2025", "GitLab", "Tomas Korcak", "korczis"]
 terms = ["open-source", "repository", "commit"]
 
 [[extra.viz]]
@@ -25,9 +27,14 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "every 6 hours" }
 +++
 **GHT** is a project in [Tools](@/projects/tools.md).
 
-The [repository](@/glossary/repository.md) was created in August 2025; its latest [commit](@/glossary/commit.md) is from 28 August 2025. It reads “Edit README.md”. That places it among the projects active in the last 24 months.
+The [repository](@/glossary/repository.md) was created on 28 August 2025; its latest [commit](@/glossary/commit.md) is from 28 August 2025. It reads “Edit README.md”. That places it among the projects active in the last 24 months.
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 2 commits as a heartbeat, one lane per commit type (feat, fix, docs…), from a snapshot refreshed every 6 hours. The concepts below are explained in the [glossary](@/glossary/_index.md).
+Its source is on [GitLab](https://gitlab.com/korczis/GHT).
+
+Related work in [Tools](@/projects/tools.md): [comtesse](@/work/comtesse.md) (2025), [prismatic](@/work/prismatic.md) (2025), [u-tygra](@/work/u-tygra.md) (2024–2025) and [corvidae](@/work/corvidae.md) (2025).
+
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab. The pulse draws the latest 2 commits as a heartbeat, one lane per commit type (feat, fix, docs…), from a snapshot refreshed every 6 hours. The concepts below are explained in the [glossary](@/glossary/_index.md).

@@ -1,0 +1,69 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "rocksdb_indexer",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/rocksdb_indexer",
+    "commit": "79f78b2c5896d44d4c96e171f31b33f299e2d813",
+    "read_at": "2026-11-18",
+    "read": [
+      "Cargo.toml",
+      "src/main.rs",
+      "tree /"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "experiment",
+  "summary": {
+    "en": "A Rust prototype of secondary indexes on top of RocksDB. Records are stored as JSON in a main column family, and each declared field gets an index entry pointing back to the primary key.",
+    "cs": "Prototyp sekundárních indexů nad RocksDB v Rustu. Záznamy se ukládají jako JSON do hlavní column family a každé deklarované pole dostane indexový záznam, který ukazuje zpět na primární klíč."
+  },
+  "problem": {
+    "en": "RocksDB is a key-value store with no built-in way to look records up by field value or iterate them in field order. The prototype explores how to add that on the application side.",
+    "cs": "RocksDB je key-value úložiště bez vestavěné možnosti hledat záznamy podle hodnoty pole nebo je procházet v pořadí pole. Prototyp zkoumá, jak to doplnit na straně aplikace."
+  },
+  "solution": {
+    "en": "An IndexedValue trait lists the indexed fields of a type. On put, keys of the form type, field and value separated by NUL bytes are written to string or number index column families, with a prefix extractor configured for prefix scans. get_by resolves an index key to the primary key and loads the record; sorted_by and delete are still unfinished.",
+    "cs": "Trait IndexedValue vyjmenuje indexovaná pole typu. Při zápisu se do column families pro řetězcové nebo číselné indexy uloží klíče ve tvaru typ, pole a hodnota oddělené NUL bajty a pro prefixové průchody je nastaven prefix extractor. get_by převede indexový klíč na primární klíč a načte záznam; sorted_by a mazání zatím nejsou dokončené."
+  },
+  "highlights": [
+    {
+      "en": "Three column families: main storage, string index, number index.",
+      "cs": "Tři column families: hlavní úložiště, řetězcový index, číselný index."
+    },
+    {
+      "en": "Generic over serde-serialisable types through a small trait.",
+      "cs": "Obecné řešení pro typy serializovatelné přes serde díky malému traitu."
+    },
+    {
+      "en": "Multi-threaded RocksDB handle (DBWithThreadMode<MultiThreaded>).",
+      "cs": "Vícevláknový handle RocksDB (DBWithThreadMode<MultiThreaded>)."
+    },
+    {
+      "en": "Demo in main exercises put, get and get_by with a sample record type.",
+      "cs": "Ukázka v main zkouší put, get a get_by na vzorovém typu záznamu."
+    }
+  ],
+  "stack": [
+    "Rust",
+    "RocksDB",
+    "serde",
+    "serde_json",
+    "anyhow",
+    "env_logger"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  REC[Record type] --> TR[IndexedValue trait]\n  TR --> PUT[put]\n  PUT --> MAIN[(main_storage CF)]\n  PUT --> SIDX[(string_idx CF)]\n  PUT --> NIDX[(number_idx CF)]\n  GB[get_by] --> SIDX\n  GB --> MAIN\n  SB[sorted_by prefix scan] --> SIDX",
+    "caption": {
+      "en": "Writes fan out into index column families; lookups go index first, then main storage.",
+      "cs": "Zápisy se rozdělí do indexových column families; dotazy jdou nejdřív do indexu a pak do hlavního úložiště."
+    }
+  },
+  "related": [
+    "in-rust-we-trust",
+    "rustas",
+    "nosqlight",
+    "el-magico-cache"
+  ],
+  "confidence": "medium"
+}

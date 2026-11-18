@@ -3,7 +3,7 @@
 title = "SCSS"
 description = "CSS s proměnnými, vnořováním a mixiny, kompilované nástrojem Sass do běžného CSS."
 template = "term.html"
-weight = 26
+weight = 32
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]

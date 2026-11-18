@@ -13,7 +13,7 @@ skill = "media-forensics"
 og_title = "Forenzní analýza webu a médií: dovednosti"
 og_image = "og/cs-skill-media-forensics.png"
 schema = "skill"
-terms = ["skill", "digital-forensics", "claude-api", "elixir"]
+terms = ["skill", "digital-forensics", "claude-api", "elixir", "makefile", "ruby", "rust"]
 keywords = ["Forenzní analýza webu a médií", "Digitální vyšetřování a OSINT dossier", "Digitální forenzní analýza a zajištění důkazů", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -31,8 +31,8 @@ Pojem, na kterém stojí: [Digitální forenzní analýza](@/glossary/digital-fo
 
 Služby, které z ní čerpají: [Digitální vyšetřování a OSINT dossier](@/services/digital-investigation.cs.md) a [Digitální forenzní analýza a zajištění důkazů](@/services/digital-forensics.cs.md).
 
-Praktikovaná s: [Claude API](@/glossary/claude-api.cs.md) a [Elixir](@/glossary/elixir.cs.md).
+Praktikovaná s: [Claude API](@/glossary/claude-api.cs.md), [Elixir](@/glossary/elixir.cs.md), [Makefile](@/glossary/makefile.cs.md), [Ruby](@/glossary/ruby.cs.md) a [Rust](@/glossary/rust.cs.md).
 
-Veřejná práce, jejíž vlastní slova ji dokládají: [llm](https://gitlab.com/korczis/llm).
+Veřejná práce, jejíž vlastní slova ji dokládají: [gooddata\_connectors\_metadata](https://github.com/korczis/gooddata_connectors_metadata), [gooddata-fs](https://github.com/korczis/gooddata-fs) a [llm](https://gitlab.com/korczis/llm).
 
 Jak číst tuto stránku: definice pochází ze slovníku zkušeností; služby, technologie, veřejné [repozitáře](@/glossary/repository.cs.md) a případy užití jsou odvozené a každá položka vede na svou stránku.

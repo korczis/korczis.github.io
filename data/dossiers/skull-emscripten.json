@@ -1,0 +1,61 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "skull-emscripten",
+  "sources": {
+    "github": "https://github.com/korczis/skull-emscripten",
+    "gitlab": "https://gitlab.com/korczis/skull-emscripten",
+    "commit": "e00de8896457718093a6e765e634772987f24eb8",
+    "read_at": "2026-11-18",
+    "read": [
+      "tree",
+      "src/hello_world/Makefile",
+      "src/hello_world/main.cpp",
+      "src/hello_world/index.html"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "kata",
+  "summary": {
+    "en": "The Emscripten entry in the skull series of starter projects: a C++ hello world compiled to JavaScript with emcc and loaded from an HTML page.",
+    "cs": "Emscripten díl série startovních projektů skull: C++ hello world zkompilovaný do JavaScriptu přes emcc a načtený z HTML stránky."
+  },
+  "problem": {
+    "en": "Checking that a C++ toolchain can target the browser needs the smallest possible program and build rule.",
+    "cs": "Ověření, že C++ toolchain umí cílit na prohlížeč, potřebuje co nejmenší program a pravidlo buildu."
+  },
+  "solution": {
+    "en": "A one-file main.cpp prints a greeting; the Makefile compiles it with emcc to hello-world.js and provides a clean target. index.html hosts the generated script.",
+    "cs": "Jednosouborový main.cpp vypíše pozdrav; Makefile ho přes emcc zkompiluje do hello-world.js a nabízí cíl clean. index.html hostí vygenerovaný skript."
+  },
+  "highlights": [
+    {
+      "en": "Minimal emcc build rule",
+      "cs": "Minimální pravidlo buildu přes emcc"
+    },
+    {
+      "en": "Part of a multi-language skull starter series",
+      "cs": "Součást vícejazyčné série startérů skull"
+    }
+  ],
+  "stack": [
+    "C++",
+    "Emscripten",
+    "JavaScript",
+    "Make"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[main.cpp] --> B[emcc]\n  B --> C[hello-world.js]\n  C --> D[index.html]\n  D --> E[Browser]",
+    "caption": {
+      "en": "C++ source compiled to JavaScript and run in the browser.",
+      "cs": "C++ zdroják zkompilovaný do JavaScriptu a spuštěný v prohlížeči."
+    }
+  },
+  "related": [
+    "skull",
+    "skull-cpp",
+    "skull-c",
+    "skull-rust",
+    "skull-nodejs"
+  ],
+  "confidence": "low"
+}

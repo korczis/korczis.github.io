@@ -13,7 +13,7 @@ skill = "audit-trail"
 og_title = "Audit trail: skills"
 og_image = "og/skill-audit-trail.png"
 schema = "skill"
-terms = ["skill", "audit-trail", "html", "javascript", "python", "claude-api", "shell", "alpine-js", "css", "dockerfile", "elixir", "fastapi"]
+terms = ["skill", "audit-trail", "html", "javascript", "python", "shell", "alpine-js", "claude-api", "css", "flowbite-pro", "majordomus", "tailwind-css"]
 keywords = ["Audit trail", "Digital forensics and evidence preservation", "Decision support and AI agents for analysts", "Governed AI-assisted software delivery", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -31,9 +31,9 @@ The concept behind it: [Audit trail](@/glossary/audit-trail.md).
 
 Services that draw on it: [Digital forensics and evidence preservation](@/services/digital-forensics.md), [Decision support and AI agents for analysts](@/services/decision-support-ai.md) and [Governed AI-assisted software delivery](@/services/ai-engineering-governance.md).
 
-Practised with: [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md), [Python](@/glossary/python.md), [Claude API](@/glossary/claude-api.md), [Shell](@/glossary/shell.md), [Alpine.js](@/glossary/alpine-js.md), [CSS](@/glossary/css.md) and [Dockerfile](@/glossary/dockerfile.md).
+Practised with: [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md), [Python](@/glossary/python.md), [Shell](@/glossary/shell.md), [Alpine.js](@/glossary/alpine-js.md), [Claude API](@/glossary/claude-api.md), [CSS](@/glossary/css.md) and [Flowbite Pro](@/glossary/flowbite-pro.md).
 
-Public work whose own words show it: [catharsis-as-a-service](https://github.com/korczis/catharsis-as-a-service) and [llm](https://gitlab.com/korczis/llm).
+Public work whose own words show it: [korczis.github.io](https://github.com/korczis/korczis.github.io), [catharsis-as-a-service](https://github.com/korczis/catharsis-as-a-service) and [llm](https://gitlab.com/korczis/llm).
 
 It was applied in client work in Real-estate developer and Financial and investment group; the use cases below give the principle and the intent, without names or numbers.
 

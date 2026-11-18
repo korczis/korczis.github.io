@@ -13,7 +13,7 @@ skill = "market-intelligence"
 og_title = "Market intelligence: skills"
 og_image = "og/skill-market-intelligence.png"
 schema = "skill"
-terms = ["skill", "market-intelligence", "alpine-js", "claude-api", "dockerfile", "fastapi", "flowbite-pro", "github-actions", "html", "javascript", "kubernetes", "majordomus"]
+terms = ["skill", "market-intelligence", "html", "alpine-js", "claude-api", "csharp", "dockerfile", "fastapi", "flowbite-pro", "github-actions", "javascript", "kubernetes"]
 keywords = ["Market intelligence", "M&A pre-deal screening and analysis", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -31,7 +31,9 @@ The concept behind it: [Market intelligence](@/glossary/market-intelligence.md).
 
 Services that draw on it: [M&A pre-deal screening and analysis](@/services/m-and-a.md).
 
-Practised with: [Alpine.js](@/glossary/alpine-js.md), [Claude API](@/glossary/claude-api.md), [Dockerfile](@/glossary/dockerfile.md), [FastAPI](@/glossary/fastapi.md), [Flowbite Pro](@/glossary/flowbite-pro.md), [GitHub Actions](@/glossary/github-actions.md), [HTML](@/glossary/html.md) and [JavaScript](@/glossary/javascript.md).
+Practised with: [HTML](@/glossary/html.md), [Alpine.js](@/glossary/alpine-js.md), [Claude API](@/glossary/claude-api.md), [C#](@/glossary/csharp.md), [Dockerfile](@/glossary/dockerfile.md), [FastAPI](@/glossary/fastapi.md), [Flowbite Pro](@/glossary/flowbite-pro.md) and [GitHub Actions](@/glossary/github-actions.md).
+
+Public work whose own words show it: [cs-benchmark](https://github.com/korczis/cs-benchmark) and [maze-rs](https://github.com/korczis/maze-rs).
 
 It was applied in client work in Real-estate developer; the use cases below give the principle and the intent, without names or numbers.
 

@@ -1,0 +1,78 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "esri",
+  "sources": {
+    "github": "https://github.com/korczis/esri",
+    "gitlab": "https://gitlab.com/korczis/esri",
+    "commit": "e764224ba662460415286b4b6d9a854e66539c1c",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      ".gemspec",
+      "Gemfile",
+      "HOWTO.md",
+      "POSTGIS.md",
+      "lib/esri/cli/cmd/lookup_cmd.rb",
+      "lib/esri/cli/cmd/db_cmd.rb",
+      "lib/esri/helpers/postgis_helper.rb",
+      "tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "cli",
+  "summary": {
+    "en": "A Ruby gem and command-line tool that downloads the public USA ESRI shapefile collection, imports it into PostgreSQL with PostGIS and answers reverse geo-lookups such as which ZIP code contains a given point.",
+    "cs": "Ruby gem s příkazovou řádkou, který stáhne veřejnou sadu ESRI shapefilů pro USA, naimportuje ji do PostgreSQL s PostGIS a odpovídá na reverzní geodotazy typu „do kterého PSČ spadá tento bod“."
+  },
+  "problem": {
+    "en": "The USA ESRI datasets (census block groups, ZIP polygons, highways, rail, water) are published as many separate zipped shapefiles on a university geoportal. Getting them into a queryable spatial database by hand is repetitive and error-prone.",
+    "cs": "Datové sady ESRI pro USA (census block groups, polygony PSČ, dálnice, železnice, vodstvo) leží na univerzitním geoportálu jako desítky samostatných zazipovaných shapefilů. Ruční převod do dotazovatelné prostorové databáze je zdlouhavý a náchylný k chybám."
+  },
+  "solution": {
+    "en": "A GLI-based CLI lists dataset metadata and download links, fetches the archives in parallel with aria2, unpacks them, imports each shapefile through shp2pgsql into a gis_esri_<name> table and builds GiST indexes. A lookup command then runs an ST_Contains query against the ZIP polygon table.",
+    "cs": "CLI postavené na GLI vypíše metadata a odkazy datových sad, paralelně je stáhne přes aria2, rozbalí, každý shapefile naimportuje přes shp2pgsql do tabulky gis_esri_<název> a postaví nad ní GiST index. Příkaz lookup pak nad tabulkou polygonů PSČ spustí dotaz ST_Contains."
+  },
+  "highlights": [
+    {
+      "en": "Commands grouped as dataset (info, links, download), database (import, index) and lookup (zip).",
+      "cs": "Příkazy jsou rozdělené na dataset (info, links, download), database (import, index) a lookup (zip)."
+    },
+    {
+      "en": "HOWTO and POSTGIS notes document index creation, invalid-geometry repair with ST_SimplifyPreserveTopology and an EXPLAIN ANALYZE of the indexed lookup.",
+      "cs": "Poznámky HOWTO a POSTGIS popisují tvorbu indexu, opravu nevalidních geometrií přes ST_SimplifyPreserveTopology a EXPLAIN ANALYZE indexovaného dotazu."
+    },
+    {
+      "en": "Packaged as a gem with RSpec, RuboCop, SimpleCov and Coveralls wired in, built on Travis CI.",
+      "cs": "Zabaleno jako gem s RSpec, RuboCopem, SimpleCov a Coveralls, buildováno na Travis CI."
+    },
+    {
+      "en": "Database connection settings are hard-coded in a helper rather than read from configuration.",
+      "cs": "Připojení k databázi je natvrdo v helperu, ne v konfiguraci."
+    }
+  ],
+  "stack": [
+    "Ruby",
+    "GLI",
+    "PostgreSQL",
+    "PostGIS",
+    "shp2pgsql",
+    "aria2",
+    "Nokogiri",
+    "RSpec",
+    "Travis CI"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Portal[Geoportal shapefiles] --> Links[dataset links]\n  Links --> Dl[aria2 download]\n  Dl --> Unzip[Unzip]\n  Unzip --> Import[shp2pgsql import]\n  Import --> PG[(PostGIS tables)]\n  PG --> Index[GiST index]\n  Index --> Lookup[lookup zip]\n  Lookup --> Out[ZIP code]",
+    "caption": {
+      "en": "Download, import and index pipeline ending in a point-in-polygon ZIP lookup.",
+      "cs": "Pipeline stažení, importu a indexace zakončená dotazem bod v polygonu na PSČ."
+    }
+  },
+  "related": [
+    "simple_geocoder",
+    "distance-calculator",
+    "csv2psql",
+    "czech-stats"
+  ],
+  "confidence": "high"
+}

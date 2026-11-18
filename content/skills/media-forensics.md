@@ -13,7 +13,7 @@ skill = "media-forensics"
 og_title = "Web and media forensics: skills"
 og_image = "og/skill-media-forensics.png"
 schema = "skill"
-terms = ["skill", "digital-forensics", "claude-api", "elixir"]
+terms = ["skill", "digital-forensics", "claude-api", "elixir", "makefile", "ruby", "rust"]
 keywords = ["Web and media forensics", "Digital investigation and OSINT dossiers", "Digital forensics and evidence preservation", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -31,8 +31,8 @@ The concept behind it: [Digital forensics](@/glossary/digital-forensics.md).
 
 Services that draw on it: [Digital investigation and OSINT dossiers](@/services/digital-investigation.md) and [Digital forensics and evidence preservation](@/services/digital-forensics.md).
 
-Practised with: [Claude API](@/glossary/claude-api.md) and [Elixir](@/glossary/elixir.md).
+Practised with: [Claude API](@/glossary/claude-api.md), [Elixir](@/glossary/elixir.md), [Makefile](@/glossary/makefile.md), [Ruby](@/glossary/ruby.md) and [Rust](@/glossary/rust.md).
 
-Public work whose own words show it: [llm](https://gitlab.com/korczis/llm).
+Public work whose own words show it: [gooddata\_connectors\_metadata](https://github.com/korczis/gooddata_connectors_metadata), [gooddata-fs](https://github.com/korczis/gooddata-fs) and [llm](https://gitlab.com/korczis/llm).
 
 How to read this page: the definition is the experience vocabulary's; the services, technologies, public [repositories](@/glossary/repository.md) and use cases are derived and each links to its page.

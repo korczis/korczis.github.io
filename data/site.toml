@@ -4,6 +4,9 @@
 [majordomus]
 points = ["One policy for every AI coding tool", "Scoped tasks with a finish contract", "Lands only verified work", "Local; it never calls a model"]
 points_cs = ["Jedna politika pro každý AI nástroj pro programování", "Vymezené úkoly se smlouvou o dokončení", "Pustí jen ověřenou práci", "Lokální; nikdy nevolá model"]
+# The glossary term each point stands on, by position (data/glossary.toml ids, words only): the
+# landing's case study links every point to its term.
+point_terms = ["ai-agent", "orchestration", "audit-trail", "mcp"]
 
 [stack.sections.toolkit]
 eyebrow = "Toolkit"
@@ -189,6 +192,13 @@ label = "Forks · mirrors · hidden"
 label_cs = "Forky · mirrory · skryté"
 source = "Counted, never listed: forks, other people's code, the owner's hidden list"
 source_cs = "Počítané, nikdy nevypsané: forky, cizí kód, seznam skrytých"
+
+[[stack.data]]
+id = "work_pages"
+label = "Work pages · of them archive"
+label_cs = "Stránky práce · z toho archiv"
+source = "One page per original repository (data/recent.json); archive when the last commit is older than the recent window"
+source_cs = "Jedna stránka na každý vlastní repozitář (data/recent.json); archiv, když je poslední commit starší než nedávné okno"
 
 [[stack.data]]
 id = "recent"

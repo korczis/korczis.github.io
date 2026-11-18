@@ -11,10 +11,12 @@ tags = ["Tools", "Elixir", "HTML+EEX", "JavaScript"]
 
 [extra]
 repo = "the-psycho"
-og_title = "the-psycho: Tools"
+seo_title = "the-psycho: Tools in Elixir, 2025–2026 · Tomas Korcak"
+og_title = "the-psycho: Advanced research framework analyzing psychological manipulation patterns,…"
+og_description = "the-psycho: Tools in Elixir, HTML+EEX and JavaScript, 2025–2026, active in the last 12 months. Source on GitLab."
 og_image = "og/work-the-psycho.png"
 schema = "project"
-keywords = ["the-psycho", "Tools", "Elixir", "HTML+EEX", "JavaScript", "Tomas Korcak"]
+keywords = ["the-psycho", "Tools", "Elixir", "HTML+EEX", "JavaScript", "2025–2026", "GitLab", "Tomas Korcak", "korczis"]
 terms = ["elixir", "eex", "javascript", "css", "open-source", "repository", "commit"]
 
 [[extra.viz]]
@@ -25,9 +27,14 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "every 6 hours" }
 +++
 **the-psycho** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (82.8 %), with [HTML+EEX](@/glossary/eex.md), [JavaScript](@/glossary/javascript.md) and [CSS](@/glossary/css.md).
 
-The [repository](@/glossary/repository.md) was created in January 2025; its latest [commit](@/glossary/commit.md) is from 4 February 2026. It reads “feat(aiad): inject AIAD v1.0.0 infrastructure”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created on 25 January 2025; its latest [commit](@/glossary/commit.md) is from 4 February 2026. It reads “feat(aiad): inject AIAD v1.0.0 infrastructure”. That places it among the projects active in the last 12 months.
+
+Its source is on [GitLab](https://gitlab.com/korczis/the-psycho).
+
+Related work in [Tools](@/projects/tools.md): [prismatic](@/work/prismatic.md) (2025), [rest-hello-world-benchmark](@/work/rest-hello-world-benchmark.md) (2022), [astudo](@/work/astudo.md) (2022) and [kanec](@/work/kanec.md) (2019).
 
 *How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 4 commits as a heartbeat, one lane per commit type (feat, fix, docs…), from a snapshot refreshed every 6 hours. The concepts below are explained in the [glossary](@/glossary/_index.md).

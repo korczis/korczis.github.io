@@ -33,7 +33,7 @@ Services that draw on it: [Decision support and AI agents for analysts](@/servic
 
 Practised with: [Shell](@/glossary/shell.md), [HTML](@/glossary/html.md), [Claude API](@/glossary/claude-api.md), [JavaScript](@/glossary/javascript.md), [Python](@/glossary/python.md), [TypeScript](@/glossary/typescript.md), [Alpine.js](@/glossary/alpine-js.md) and [CSS](@/glossary/css.md).
 
-Public work whose own words show it: [sig](https://gitlab.com/korczis/sig), [prismatic-majordomus](https://github.com/korczis/prismatic-majordomus), [osint-case-ratcliffe-moscow-2026](https://github.com/korczis/osint-case-ratcliffe-moscow-2026) and [llm](https://gitlab.com/korczis/llm).
+Public work whose own words show it: [sig](https://gitlab.com/korczis/sig), [korczis.github.io](https://github.com/korczis/korczis.github.io), [prismatic-majordomus](https://github.com/korczis/prismatic-majordomus) and [osint-case-ratcliffe-moscow-2026](https://github.com/korczis/osint-case-ratcliffe-moscow-2026).
 
 It was applied in client work in Real-estate developer; the use cases below give the principle and the intent, without names or numbers.
 

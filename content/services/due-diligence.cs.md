@@ -36,7 +36,7 @@ Je postavená na: [Elixir](@/glossary/elixir.cs.md), [Phoenix](@/glossary/phoeni
 
 Technologie za ní, změřené z práce, která tyto dovednosti dokládá: [JavaScript](@/glossary/javascript.cs.md), [HTML](@/glossary/html.cs.md), [Python](@/glossary/python.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md), [Claude API](@/glossary/claude-api.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md), [FastAPI](@/glossary/fastapi.cs.md) a [Flowbite Pro](@/glossary/flowbite-pro.cs.md).
 
-Její dovednosti dokládají 3 veřejné repozitáře (3 vlastními slovy).
+Její dovednosti dokládají 4 veřejné repozitáře (4 vlastními slovy).
 
 Byla dodána v klientské práci pod dohodami o mlčenlivosti, v odvětví: Developer nemovitostí a Finanční a investiční skupina, v roli: Architekt, Vedoucí inženýr, Inženýr AI, Datový inženýr, Analytik šetření a Poradce; případy užití popisují princip a záměr, nikdy klienta, osobu, datum ani číslo.
 

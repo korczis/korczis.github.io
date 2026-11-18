@@ -1,0 +1,70 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "dispatcher",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/dispatcher",
+    "commit": "f4747a1d371747163eb252be9042895f57417be2",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "package.json",
+      "src/messaging.ts",
+      "tree /",
+      "tree src/"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "library",
+  "summary": {
+    "en": "A small type-safe message dispatcher in TypeScript, aimed at passing messages between the parts of a Chrome extension. Message types, payloads and handlers are declared together and registered in a central registry.",
+    "cs": "Malý typově bezpečný dispečer zpráv v TypeScriptu určený pro předávání zpráv mezi částmi rozšíření pro Chrome. Typy zpráv, payloady a handlery se deklarují společně a registrují v centrálním registru."
+  },
+  "problem": {
+    "en": "Background workers, panels and content scripts in a browser extension exchange messages, and existing libraries are either heavy or have awkward APIs. Untyped message passing lets payload mismatches slip through.",
+    "cs": "Background worker, panely a content scripty v rozšíření prohlížeče si posílají zprávy a existující knihovny jsou buď těžké, nebo mají nepohodlné API. Netypované předávání zpráv nechá projít nesoulad payloadů."
+  },
+  "solution": {
+    "en": "createMessageAction binds an action type, static attributes, an optional dynamic-attributes function and a handler into one typed action and registers it at once when a handler is given. handleMessage looks the action up in the central registry, merges static, per-message and dynamic attributes and calls the handler; setMessageHandler swaps a handler later, and every call returns a Result that separates success from a coded error. The README and main.ts still show an older API (a payload factory and registerHandledMessage) that messaging.ts no longer exports.",
+    "cs": "createMessageAction spojí typ akce, statické atributy, volitelnou funkci pro dynamické atributy a handler do jedné typované akce a když je handler zadaný, rovnou ji zaregistruje. handleMessage najde akci v centrálním registru, sloučí statické atributy, atributy zprávy a dynamické atributy a zavolá handler; setMessageHandler handler později vymění a každé volání vrací Result, který odděluje úspěch od chyby s kódem. README a main.ts ještě ukazují starší API (továrnu na payload a registerHandledMessage), které messaging.ts už neexportuje."
+  },
+  "highlights": [
+    {
+      "en": "Generic types tie each action type to its payload and handler signature.",
+      "cs": "Generické typy svazují každý typ akce s jeho payloadem a signaturou handleru."
+    },
+    {
+      "en": "Railway-style Result and coded ErrorResult types on registration and dispatch instead of exceptions.",
+      "cs": "Typy Result a ErrorResult s kódem chyby ve stylu railway programming místo výjimek při registraci i doručení."
+    },
+    {
+      "en": "No runtime dependencies; only dev tooling in package.json.",
+      "cs": "Žádné runtime závislosti; package.json obsahuje jen vývojové nástroje."
+    },
+    {
+      "en": "GitLab CI runs the Vitest tests and the Rollup build; ESLint and Prettier are configured, the CI lint job is commented out.",
+      "cs": "GitLab CI pouští testy ve Vitestu a build přes Rollup; ESLint a Prettier jsou nastavené, lint job v CI je zakomentovaný."
+    }
+  ],
+  "stack": [
+    "TypeScript",
+    "Rollup",
+    "Vitest",
+    "ESLint",
+    "Prettier",
+    "GitLab CI"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  DEF[Action type, attributes, handler] --> CMA[createMessageAction]\n  CMA --> REG[Message registry]\n  SMH[setMessageHandler] --> REG\n  MSG[action.create message] --> HM[handleMessage]\n  HM --> REG\n  DYN[Dynamic attributes] --> HM\n  HM --> H[Typed handler]\n  HM --> RES[Result]",
+    "caption": {
+      "en": "Actions are defined once and registered centrally; handleMessage merges attributes, calls the typed handler and returns a Result.",
+      "cs": "Akce se definují jednou a registrují centrálně; handleMessage sloučí atributy, zavolá typovaný handler a vrátí Result."
+    }
+  },
+  "related": [
+    "apollo-crawler-extension",
+    "microcrawler-browser",
+    "ts-logger"
+  ],
+  "confidence": "high"
+}

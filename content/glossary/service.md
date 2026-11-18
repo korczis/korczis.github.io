@@ -3,7 +3,7 @@
 title = "Service"
 description = "Something the owner offers a client: a problem it solves, the principle it rests on, the method and what is delivered."
 template = "term.html"
-weight = 100
+weight = 107
 
 [taxonomies]
 tags = ["Glossary", "Concept"]
@@ -17,7 +17,7 @@ definition = "Something the owner offers a client: a problem it solves, the prin
 aliases = []
 reference = { title = "Schema.org: Service", url = "https://schema.org/Service" }
 pages = ["services/_index.md", "services/ai-engineering-governance.md", "services/attack-surface.md", "services/compliance-screening.md", "services/continuous-monitoring.md", "services/decision-support-ai.md", "services/digital-forensics.md", "services/digital-investigation.md", "services/due-diligence.md", "services/interactive-data-products.md", "services/m-and-a.md", "services/reputation-intelligence.md", "skills/_index.md"]
-related = ["alpine-js", "flowbite-pro", "html", "javascript", "dockerfile", "claude-api", "elixir", "fastapi"]
+related = ["alpine-js", "flowbite-pro", "html", "javascript", "claude-api", "elixir", "python", "dockerfile"]
 og_title = "Service: glossary"
 og_image = "og/glossary-service.png"
 keywords = ["Service", "Concept", "Glossary", "Tomas Korcak"]

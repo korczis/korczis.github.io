@@ -13,7 +13,7 @@ skill = "decision-support"
 og_title = "Decision support: skills"
 og_image = "og/skill-decision-support.png"
 schema = "skill"
-terms = ["skill", "decision-support-system", "html", "javascript", "python", "shell", "alpine-js", "claude-api", "css", "dockerfile", "elixir", "fastapi"]
+terms = ["skill", "decision-support-system", "html", "javascript", "python", "elixir", "shell", "alpine-js", "claude-api", "css", "dockerfile", "fastapi"]
 keywords = ["Decision support", "Corporate and counterparty due diligence", "M&A pre-deal screening and analysis", "Reputation intelligence and adverse-media monitoring", "Decision support and AI agents for analysts", "Interactive data products and simulators", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -31,9 +31,9 @@ The concept behind it: [Decision support system](@/glossary/decision-support-sys
 
 Services that draw on it: [Corporate and counterparty due diligence](@/services/due-diligence.md), [M&A pre-deal screening and analysis](@/services/m-and-a.md), [Reputation intelligence and adverse-media monitoring](@/services/reputation-intelligence.md), [Decision support and AI agents for analysts](@/services/decision-support-ai.md) and [Interactive data products and simulators](@/services/interactive-data-products.md).
 
-Practised with: [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md), [Python](@/glossary/python.md), [Shell](@/glossary/shell.md), [Alpine.js](@/glossary/alpine-js.md), [Claude API](@/glossary/claude-api.md), [CSS](@/glossary/css.md) and [Dockerfile](@/glossary/dockerfile.md).
+Practised with: [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md), [Python](@/glossary/python.md), [Elixir](@/glossary/elixir.md), [Shell](@/glossary/shell.md), [Alpine.js](@/glossary/alpine-js.md), [Claude API](@/glossary/claude-api.md) and [CSS](@/glossary/css.md).
 
-Public work whose own words show it: [openttd-prismatic-bridge](https://gitlab.com/korczis/openttd-prismatic-bridge) and [crisis-map](https://github.com/korczis/crisis-map).
+Public work whose own words show it: [openttd-prismatic-bridge](https://gitlab.com/korczis/openttd-prismatic-bridge), [crisis-map](https://github.com/korczis/crisis-map) and [gooddata-graphql](https://github.com/korczis/gooddata-graphql).
 
 It was applied in client work in Real-estate developer and Financial and investment group; the use cases below give the principle and the intent, without names or numbers.
 

@@ -3,7 +3,7 @@
 title = "Erlang"
 description = "A language and runtime from telecoms, designed for systems that must keep running while parts of them fail."
 template = "term.html"
-weight = 10
+weight = 13
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -16,8 +16,8 @@ kind = "language"
 definition = "A language and runtime from telecoms, designed for systems that must keep running while parts of them fail."
 aliases = []
 reference = { title = "erlang.org", url = "https://www.erlang.org/" }
-pages = ["projects/learning.md"]
-related = ["c", "cmake", "cpp", "csharp", "elixir", "haskell", "java", "javascript"]
+pages = ["projects/learning.md", "work/rustler-mix.md", "work/skull-erlang.md"]
+related = ["repository", "commit", "elixir", "open-source", "rust", "c", "cmake", "cpp"]
 og_title = "Erlang: glossary"
 og_image = "og/glossary-erlang.png"
 keywords = ["Erlang", "Programming language", "Glossary", "Tomas Korcak"]
@@ -40,10 +40,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
-I have written Erlang in 1 public repository, from 2014 to 2014; in 1 of them it is the main language.
+I have written Erlang in 2 public repositories, from 2014 to 2016; in 1 of them it is the main language.
 
-What it was for: [Learning and experiments](@/projects/learning.md) (1).
+What it was for: [Learning and experiments](@/projects/learning.md) (1) and [Tools](@/projects/tools.md) (1).
 
-Most recently: [skull-erlang](https://github.com/korczis/skull-erlang): Programming learning materials, examples, sources.
+Most recently: [rustler\_mix](@/work/rustler-mix.md): Rustler Mix; [skull-erlang](@/work/skull-erlang.md): Programming learning materials, examples, sources.
 
 How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses Erlang: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links Erlang to the repositories and to the other languages and technologies they use together.

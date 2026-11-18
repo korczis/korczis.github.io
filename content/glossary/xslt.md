@@ -3,7 +3,7 @@
 title = "XSLT"
 description = "A language that transforms XML documents into other XML, HTML or text by templates matched against the input tree."
 template = "term.html"
-weight = 32
+weight = 39
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -16,8 +16,8 @@ kind = "language"
 definition = "A language that transforms XML documents into other XML, HTML or text by templates matched against the input tree."
 aliases = []
 reference = { title = "W3C XSLT 3.0", url = "https://www.w3.org/TR/xslt-30/" }
-pages = ["projects/data.md"]
-related = ["elixir", "gis", "html", "javascript", "mcp", "postgis", "python", "r"]
+pages = ["projects/data.md", "work/solr-core-minimal.md"]
+related = ["gis", "javascript", "repository", "commit", "css", "elixir", "html", "mcp"]
 og_title = "XSLT: glossary"
 og_image = "og/glossary-xslt.png"
 keywords = ["XSLT", "Programming language", "Glossary", "Tomas Korcak"]
@@ -44,6 +44,6 @@ I have written XSLT in 1 public repository, from 2014 to 2014; in 1 of them it i
 
 What it was for: [Data and GIS](@/projects/data.md) (1).
 
-Most recently: [solr-core-minimal](https://github.com/korczis/solr-core-minimal): Minimal config core for solr.
+Most recently: [solr-core-minimal](@/work/solr-core-minimal.md): Minimal config core for solr.
 
 How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses XSLT: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links XSLT to the repositories and to the other languages and technologies they use together.

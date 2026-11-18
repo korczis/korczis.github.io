@@ -3,7 +3,7 @@
 title = "HTML"
 description = "The markup language of web pages: the structure that styles and scripts work on."
 template = "term.html"
-weight = 12
+weight = 15
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -16,8 +16,8 @@ kind = "language"
 definition = "The markup language of web pages: the structure that styles and scripts work on."
 aliases = []
 reference = { title = "MDN Web Docs: HTML", url = "https://developer.mozilla.org/en-US/docs/Web/HTML" }
-pages = ["projects/data.md", "projects/media.md", "projects/security.md", "projects/web.md", "services/_index.md", "services/ai-engineering-governance.md", "services/attack-surface.md", "services/compliance-screening.md", "services/continuous-monitoring.md", "services/decision-support-ai.md", "services/digital-forensics.md", "services/digital-investigation.md", "services/due-diligence.md", "services/interactive-data-products.md", "services/m-and-a.md", "services/reputation-intelligence.md", "skills/_index.md", "skills/ai-transformation.md", "skills/audit-trail.md", "skills/contestable-decisions.md", "skills/data-room.md", "skills/decision-support.md", "skills/document-extraction.md", "skills/due-diligence.md", "skills/entity-resolution.md", "skills/geospatial-analysis.md", "skills/insolvency-monitoring.md", "skills/interactive-visualisation.md", "skills/knowledge-graph.md", "skills/llm-agents.md", "skills/m-and-a-screening.md", "skills/market-intelligence.md", "skills/narrative-analysis.md", "skills/orchestration.md", "skills/osint-investigation.md", "skills/policy-as-code.md", "skills/risk-scoring.md", "work/algoglyph.md", "work/astronomists.md", "work/bubbler.md", "work/catharsis-as-a-service.md", "work/crisis-map.md", "work/data-atlas.md", "work/el-magico-cache.md", "work/gists-search.md", "work/kompendium-epistemicke-anihilace.md", "work/korczis-github-io.md", "work/korczis-gitlab-io.md", "work/majordomus-reel.md", "work/openttd-prismatic-bridge.md", "work/oscilla.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/prismatic-majordomus.md", "work/prismatic.md", "work/sonic-playground.md", "work/u-tygra.md", "work/vomaste-cz.md", "_index.md"]
-related = ["javascript", "python", "shell", "alpine-js", "css", "flowbite-pro", "claude-api", "dockerfile"]
+pages = ["projects/data.md", "projects/media.md", "projects/security.md", "projects/web.md", "services/_index.md", "services/ai-engineering-governance.md", "services/attack-surface.md", "services/compliance-screening.md", "services/continuous-monitoring.md", "services/decision-support-ai.md", "services/digital-forensics.md", "services/digital-investigation.md", "services/due-diligence.md", "services/interactive-data-products.md", "services/m-and-a.md", "services/reputation-intelligence.md", "skills/_index.md", "skills/ai-transformation.md", "skills/audit-trail.md", "skills/contestable-decisions.md", "skills/data-integration.md", "skills/data-room.md", "skills/decision-support.md", "skills/document-extraction.md", "skills/due-diligence.md", "skills/entity-resolution.md", "skills/geospatial-analysis.md", "skills/insolvency-monitoring.md", "skills/interactive-visualisation.md", "skills/knowledge-graph.md", "skills/llm-agents.md", "skills/m-and-a-screening.md", "skills/market-intelligence.md", "skills/narrative-analysis.md", "skills/orchestration.md", "skills/osint-investigation.md", "skills/policy-as-code.md", "skills/risk-scoring.md", "skills/web-automation.md", "work/algoglyph.md", "work/apollo-crawler-extension.md", "work/apollocrawler-github-io.md", "work/astronomists.md", "work/bubbler.md", "work/catharsis-as-a-service.md", "work/crisis-map.md", "work/csv2psql.md", "work/ctu-cz.md", "work/czech-stats.md", "work/data-atlas.md", "work/dj-schnapps.md", "work/el-magico-cache.md", "work/gists-search.md", "work/gooddata-graphql.md", "work/gooddata-proxy.md", "work/gooddata-ruby-examples.md", "work/jetel.md", "work/kanec.md", "work/kompendium-epistemicke-anihilace.md", "work/korczis-com.md", "work/korczis-github-com.md", "work/korczis-github-io.md", "work/korczis-gitlab-io.md", "work/majordomus-reel.md", "work/mapoffacts.md", "work/maze-rs.md", "work/maze.md", "work/microcrawler-browser.md", "work/nestravenkam.md", "work/openttd-prismatic-bridge.md", "work/oscilla.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/pavian-eu.md", "work/peg-parser.md", "work/prismatic-majordomus.md", "work/prismatic.md", "work/rest-hello-world-benchmark.md", "work/sonic-playground.md", "work/test-elixir.md", "work/the-scratch.md", "work/tosh.md", "work/u-tygra.md", "work/vomaste-cz.md", "work/web-spa.md", "work/zaas.md", "_index.md"]
+related = ["javascript", "repository", "commit", "open-source", "css", "shell", "elixir", "python"]
 og_title = "HTML: glossary"
 og_image = "og/glossary-html.png"
 keywords = ["HTML", "Programming language", "Glossary", "Tomas Korcak"]
@@ -40,13 +40,13 @@ span = 3
 height = "md"
 tone = "night"
 +++
-I have written HTML in 22 public repositories, from 2014 to 2026; in 6 of them it is the main language.
+I have written HTML in 38 public repositories, from 2014 to 2026; in 5 of them it is the main language.
 
-What it was for: [Tools](@/projects/tools.md) (6), [Web](@/projects/web.md) (5), [Media and art](@/projects/media.md) (4) and [Data and GIS](@/projects/data.md) (2).
+What it was for: [Tools](@/projects/tools.md) (9), [Data and GIS](@/projects/data.md) (8), [Web](@/projects/web.md) (8) and [Media and art](@/projects/media.md) (5).
 
-Most recently: [algoglyph](@/work/algoglyph.md): Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core; [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore; [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.
+Most recently: [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore; [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus; [Majordomus reel](@/work/majordomus-reel.md): Voice, frames, music and sound, all generated and versioned like software.
 
-14 of these projects run as live sites.
+15 of these projects run as live sites.
 
 I also used it in client work under confidentiality agreements. Roles: Architect, Lead engineer, AI engineer, Data engineer, Investigator and Advisor. What was solved: LLM agents, Decision support, AI transformation, Audit trail and OSINT investigation. The use cases below give the principle and the intent of that work; no client, person, date or number is named.
 

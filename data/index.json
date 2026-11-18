@@ -1,24 +1,24 @@
 {
  "schema": "korczis-hub-index/v1",
- "generated_at": "2026-11-17T21:17:02Z",
+ "generated_at": "2026-11-18T04:00:58Z",
  "rule": "original = the owner wrote at least half of the listed commits; forks and mirrors are counted, not listed",
  "counts": {
   "github": 448,
   "gitlab": 417,
-  "merged": 517,
-  "own": 211,
+  "merged": 499,
+  "own": 205,
   "forks": 250,
-  "mirrors": 47,
+  "mirrors": 35,
   "empty": 3,
   "unmeasured": 0,
   "hidden": 6,
-  "mirrors_measured": 32,
+  "mirrors_measured": 20,
   "supervised": 8
  },
  "dropped": [],
  "supervision": {
   "marker": ".ai/manifest.yaml",
-  "measured_at": "2026-11-17T21:17:02Z",
+  "measured_at": "2026-11-18T04:00:58Z",
   "kept": 0
  },
  "all_repos": [
@@ -120,7 +120,8 @@
    "archived": false,
    "share": 1,
    "hosts": {
-    "github": "https://github.com/korczis/annasabatova.cz"
+    "github": "https://github.com/korczis/annasabatova.cz",
+    "gitlab": "https://gitlab.com/korczis/annasabatova-cz"
    },
    "site": null,
    "supervised": false,
@@ -195,7 +196,8 @@
    "archived": false,
    "share": 0.95,
    "hosts": {
-    "github": "https://github.com/korczis/apollocrawler.com"
+    "github": "https://github.com/korczis/apollocrawler.com",
+    "gitlab": "https://gitlab.com/korczis/apollocrawler-com"
    },
    "site": null,
    "supervised": false,
@@ -1038,7 +1040,8 @@
    "archived": false,
    "share": 0.98,
    "hosts": {
-    "github": "https://github.com/korczis/gauc.ex"
+    "github": "https://github.com/korczis/gauc.ex",
+    "gitlab": "https://gitlab.com/korczis/gauc-ex"
    },
    "site": null,
    "supervised": false,
@@ -1628,7 +1631,7 @@
    ],
    "stars": 0,
    "created_at": "2026-11-09T22:04:50Z",
-   "pushed_at": "2026-11-17T06:29:59Z",
+   "pushed_at": "2026-11-18T03:06:20Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -1661,9 +1664,9 @@
    ],
    "stars": 0,
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-17T12:21:41Z",
+   "pushed_at": "2026-11-18T03:35:28Z",
    "archived": false,
-   "share": 0.92,
+   "share": 0.93,
    "hosts": {
     "github": "https://github.com/korczis/korczis.github.io"
    },
@@ -1702,7 +1705,8 @@
    "archived": false,
    "share": 1,
    "hosts": {
-    "github": "https://github.com/korczis/lethe.it"
+    "github": "https://github.com/korczis/lethe.it",
+    "gitlab": "https://gitlab.com/korczis/lethe-it"
    },
    "site": null,
    "supervised": false,
@@ -1838,7 +1842,7 @@
    ],
    "stars": 0,
    "created_at": "2026-10-23T00:51:59Z",
-   "pushed_at": "2026-11-17T19:23:27Z",
+   "pushed_at": "2026-11-18T03:20:13Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -1898,7 +1902,8 @@
    "archived": false,
    "share": 1,
    "hosts": {
-    "github": "https://github.com/korczis/mapofffacts.com"
+    "github": "https://github.com/korczis/mapofffacts.com",
+    "gitlab": "https://gitlab.com/korczis/mapofffacts-com"
    },
    "site": null,
    "supervised": false,
@@ -1957,7 +1962,7 @@
     "github": "https://github.com/korczis/maze-rs",
     "gitlab": "https://gitlab.com/korczis/maze-rs"
    },
-   "site": "https://korczis.github.io/maze-rs/",
+   "site": null,
    "supervised": false,
    "category": "science",
    "curated": true
@@ -2184,7 +2189,7 @@
    ],
    "stars": 1,
    "created_at": "2026-10-01T21:05:33Z",
-   "pushed_at": "2026-11-17T21:08:40Z",
+   "pushed_at": "2026-11-18T03:43:55Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -2246,7 +2251,8 @@
    "archived": false,
    "share": 1,
    "hosts": {
-    "github": "https://github.com/korczis/pavian.eu"
+    "github": "https://github.com/korczis/pavian.eu",
+    "gitlab": "https://gitlab.com/korczis/pavian-eu"
    },
    "site": null,
    "supervised": false,
@@ -2446,7 +2452,7 @@
    ],
    "stars": 1,
    "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-17T20:57:51Z",
+   "pushed_at": "2026-11-18T03:51:17Z",
    "archived": false,
    "share": 0.99,
    "hosts": {
@@ -3509,11 +3515,11 @@
   {
    "name": "openttd-prismatic-bridge",
    "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
-   "language": "Python",
+   "language": "Squirrel",
    "topics": [],
    "stars": 0,
    "created_at": "2026-07-23T22:00:54.776Z",
-   "pushed_at": "2026-11-17T20:38:21.692Z",
+   "pushed_at": "2026-11-18T02:16:49.082Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -3946,60 +3952,6 @@
    "curated": false
   },
   {
-   "name": "pavian-eu",
-   "description": "pavian.eu website",
-   "language": "HTML",
-   "topics": [],
-   "stars": 0,
-   "created_at": "2019-09-16T01:04:39.573Z",
-   "pushed_at": "2025-12-20T21:27:26.968Z",
-   "archived": false,
-   "share": 1,
-   "hosts": {
-    "gitlab": "https://gitlab.com/korczis/pavian-eu"
-   },
-   "site": null,
-   "supervised": false,
-   "category": "web",
-   "curated": false
-  },
-  {
-   "name": "mapofffacts-com",
-   "description": "Map Of Facts",
-   "language": null,
-   "topics": [],
-   "stars": 0,
-   "created_at": "2019-09-16T01:04:34.396Z",
-   "pushed_at": "2025-12-20T21:27:54.744Z",
-   "archived": false,
-   "share": 1,
-   "hosts": {
-    "gitlab": "https://gitlab.com/korczis/mapofffacts-com"
-   },
-   "site": null,
-   "supervised": false,
-   "category": "data",
-   "curated": false
-  },
-  {
-   "name": "lethe-it",
-   "description": "lethe.it - your personal smart links archive, organizer, classifier and much more",
-   "language": "JavaScript",
-   "topics": [],
-   "stars": 0,
-   "created_at": "2019-09-16T01:04:31.993Z",
-   "pushed_at": "2025-12-20T21:28:09.650Z",
-   "archived": false,
-   "share": 1,
-   "hosts": {
-    "gitlab": "https://gitlab.com/korczis/lethe-it"
-   },
-   "site": null,
-   "supervised": false,
-   "category": "tools",
-   "curated": false
-  },
-  {
    "name": "korczis-github-com",
    "description": "Github Pages",
    "language": "CSS",
@@ -4029,60 +3981,6 @@
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/korczis-com"
-   },
-   "site": null,
-   "supervised": false,
-   "category": "web",
-   "curated": false
-  },
-  {
-   "name": "gauc-ex",
-   "description": "Elxir Wrapper for Gauc - Rust Wrapper for Couchbase",
-   "language": "Elixir",
-   "topics": [],
-   "stars": 0,
-   "created_at": "2019-09-16T01:04:20.536Z",
-   "pushed_at": "2025-12-20T21:29:16.346Z",
-   "archived": false,
-   "share": 0.98,
-   "hosts": {
-    "gitlab": "https://gitlab.com/korczis/gauc-ex"
-   },
-   "site": null,
-   "supervised": false,
-   "category": "libraries",
-   "curated": false
-  },
-  {
-   "name": "apollocrawler-com",
-   "description": "Website for apollocrawler.com ...",
-   "language": "JavaScript",
-   "topics": [],
-   "stars": 0,
-   "created_at": "2019-09-16T01:04:05.535Z",
-   "pushed_at": "2025-12-20T21:30:44.925Z",
-   "archived": false,
-   "share": 0.94,
-   "hosts": {
-    "gitlab": "https://gitlab.com/korczis/apollocrawler-com"
-   },
-   "site": null,
-   "supervised": false,
-   "category": "data",
-   "curated": false
-  },
-  {
-   "name": "annasabatova-cz",
-   "description": "Petice za odvolani annysabatove.cz",
-   "language": "CSS",
-   "topics": [],
-   "stars": 0,
-   "created_at": "2019-09-16T01:04:04.254Z",
-   "pushed_at": "2025-12-20T21:30:50.816Z",
-   "archived": false,
-   "share": 1,
-   "hosts": {
-    "gitlab": "https://gitlab.com/korczis/annasabatova-cz"
    },
    "site": null,
    "supervised": false,
@@ -4431,42 +4329,42 @@
   }
  ],
  "by_category": {
-  "science": 12,
   "ai": 5,
+  "science": 12,
+  "web": 14,
   "media": 8,
-  "web": 16,
   "knowledge": 5,
-  "data": 51,
-  "tools": 64,
+  "data": 49,
+  "tools": 63,
   "security": 5,
   "systems": 17,
-  "libraries": 7,
+  "libraries": 6,
   "learning": 21
  },
  "categories": {
-  "science": {
-   "repos": 12,
-   "sites": 3,
-   "top_language": "Rust",
-   "since": "2014"
-  },
   "ai": {
    "repos": 5,
    "sites": 1,
    "top_language": "Elixir",
    "since": "2025"
   },
+  "science": {
+   "repos": 12,
+   "sites": 2,
+   "top_language": "Rust",
+   "since": "2014"
+  },
+  "web": {
+   "repos": 14,
+   "sites": 0,
+   "top_language": "JavaScript",
+   "since": "2014"
+  },
   "media": {
    "repos": 8,
    "sites": 4,
    "top_language": "JavaScript",
    "since": "2015"
-  },
-  "web": {
-   "repos": 16,
-   "sites": 0,
-   "top_language": "CSS",
-   "since": "2014"
   },
   "knowledge": {
    "repos": 5,
@@ -4475,13 +4373,13 @@
    "since": "2013"
   },
   "data": {
-   "repos": 51,
+   "repos": 49,
    "sites": 2,
    "top_language": "JavaScript",
    "since": "2014"
   },
   "tools": {
-   "repos": 64,
+   "repos": 63,
    "sites": 6,
    "top_language": "JavaScript",
    "since": "2012"
@@ -4499,7 +4397,7 @@
    "since": "2013"
   },
   "libraries": {
-   "repos": 7,
+   "repos": 6,
    "sites": 0,
    "top_language": "Elixir",
    "since": "2013"
@@ -4514,11 +4412,11 @@
  "languages": [
   {
    "name": "JavaScript",
-   "repos": 44
+   "repos": 42
   },
   {
    "name": "Elixir",
-   "repos": 27
+   "repos": 26
   },
   {
    "name": "Ruby",
@@ -4533,20 +4431,20 @@
    "repos": 12
   },
   {
-   "name": "Python",
-   "repos": 7
-  },
-  {
    "name": "C++",
    "repos": 6
   },
   {
-   "name": "HTML",
+   "name": "Python",
    "repos": 6
   },
   {
-   "name": "CSS",
+   "name": "HTML",
    "repos": 5
+  },
+  {
+   "name": "CSS",
+   "repos": 4
   },
   {
    "name": "Dockerfile",
@@ -4602,6 +4500,10 @@
   },
   {
    "name": "R",
+   "repos": 1
+  },
+  {
+   "name": "Squirrel",
    "repos": 1
   },
   {
@@ -4669,12 +4571,12 @@
    "Rust": 1
   },
   "2019": {
-   "JavaScript": 14,
-   "HTML": 3,
+   "JavaScript": 12,
+   "HTML": 2,
    "Dockerfile": 2,
    "Shell": 6,
-   "Elixir": 6,
-   "CSS": 3,
+   "Elixir": 5,
+   "CSS": 2,
    "TypeScript": 1
   },
   "2020": {
@@ -4708,11 +4610,12 @@
    "Dockerfile": 1
   },
   "2026": {
-   "JavaScript": 3,
    "Rust": 1,
-   "Python": 5,
-   "TypeScript": 1,
+   "JavaScript": 3,
    "Elixir": 3,
+   "Squirrel": 1,
+   "Python": 4,
+   "TypeScript": 1,
    "HTML": 2
   }
  },
@@ -4720,25 +4623,25 @@
   "languages": [
    {
     "name": "JavaScript",
-    "repos": 44,
+    "repos": 42,
     "evidence": [
      {
       "name": "oscilla",
       "url": "https://github.com/korczis/oscilla"
      },
      {
-      "name": "majordomus-reel",
-      "url": "https://github.com/korczis/majordomus-reel"
-     },
-     {
       "name": "korczis.github.io",
       "url": "https://github.com/korczis/korczis.github.io"
+     },
+     {
+      "name": "majordomus-reel",
+      "url": "https://github.com/korczis/majordomus-reel"
      }
     ]
    },
    {
     "name": "Elixir",
-    "repos": 27,
+    "repos": 26,
     "evidence": [
      {
       "name": "kompendium-epistemicke-anihilace",
@@ -4809,24 +4712,6 @@
     ]
    },
    {
-    "name": "Python",
-    "repos": 7,
-    "evidence": [
-     {
-      "name": "sonic-playground",
-      "url": "https://github.com/korczis/sonic-playground"
-     },
-     {
-      "name": "openttd-prismatic-bridge",
-      "url": "https://gitlab.com/korczis/openttd-prismatic-bridge"
-     },
-     {
-      "name": "data-atlas",
-      "url": "https://github.com/korczis/data-atlas"
-     }
-    ]
-   },
-   {
     "name": "C++",
     "repos": 6,
     "evidence": [
@@ -4845,8 +4730,26 @@
     ]
    },
    {
-    "name": "HTML",
+    "name": "Python",
     "repos": 6,
+    "evidence": [
+     {
+      "name": "sonic-playground",
+      "url": "https://github.com/korczis/sonic-playground"
+     },
+     {
+      "name": "data-atlas",
+      "url": "https://github.com/korczis/data-atlas"
+     },
+     {
+      "name": "astronomists",
+      "url": "https://github.com/korczis/astronomists"
+     }
+    ]
+   },
+   {
+    "name": "HTML",
+    "repos": 5,
     "evidence": [
      {
       "name": "catharsis-as-a-service",
@@ -4864,12 +4767,8 @@
    },
    {
     "name": "CSS",
-    "repos": 5,
+    "repos": 4,
     "evidence": [
-     {
-      "name": "annasabatova-cz",
-      "url": "https://gitlab.com/korczis/annasabatova-cz"
-     },
      {
       "name": "korczis-github-com",
       "url": "https://gitlab.com/korczis/korczis-github-com"
@@ -4877,6 +4776,10 @@
      {
       "name": "korczis.gitlab.io",
       "url": "https://gitlab.com/korczis/korczis.gitlab.io"
+     },
+     {
+      "name": "nestravenkam",
+      "url": "https://github.com/korczis/nestravenkam"
      }
     ]
    },
@@ -5057,6 +4960,16 @@
     ]
    },
    {
+    "name": "Squirrel",
+    "repos": 1,
+    "evidence": [
+     {
+      "name": "openttd-prismatic-bridge",
+      "url": "https://gitlab.com/korczis/openttd-prismatic-bridge"
+     }
+    ]
+   },
+   {
     "name": "TeX",
     "repos": 1,
     "evidence": [
@@ -5202,31 +5115,32 @@
  },
  "recent": {
   "size": 100,
-  "from": "2018-06-24T03:58:28Z",
-  "to": "2026-11-17T21:08:40Z",
+  "from": "2018-03-08T21:01:52Z",
+  "to": "2026-11-18T03:51:17Z",
   "mix": {
-   "science": {
-    "JavaScript": 1,
-    "TypeScript": 1,
-    "Elixir": 1,
-    "Rust": 1
-   },
    "ai": {
     "Rust": 1,
     "Elixir": 2,
     "Unspecified": 2
    },
-   "media": {
-    "Python": 2,
+   "science": {
     "JavaScript": 1,
-    "HTML": 1,
-    "Dockerfile": 1,
-    "Elixir": 1
+    "TypeScript": 1,
+    "Elixir": 1,
+    "Rust": 2
    },
    "web": {
+    "JavaScript": 2,
+    "HTML": 2,
+    "CSS": 3,
+    "Elixir": 1
+   },
+   "media": {
     "JavaScript": 1,
-    "HTML": 3,
-    "CSS": 4,
+    "Squirrel": 1,
+    "Python": 1,
+    "HTML": 1,
+    "Dockerfile": 1,
     "Elixir": 1
    },
    "knowledge": {
@@ -5237,20 +5151,21 @@
    "data": {
     "Python": 1,
     "Elixir": 5,
-    "JavaScript": 14,
+    "JavaScript": 13,
     "Shell": 1,
-    "Unspecified": 5
+    "Unspecified": 4
    },
    "tools": {
     "Python": 3,
     "JavaScript": 4,
     "Elixir": 8,
-    "Unspecified": 10,
+    "Unspecified": 11,
     "TypeScript": 2,
     "TeX": 1,
     "Just": 1,
     "OpenSCAD": 1,
-    "Shell": 2
+    "Shell": 2,
+    "Swift": 1
    },
    "security": {
     "HTML": 1
@@ -5269,34 +5184,6 @@
   }
  },
  "repos": [
-  {
-   "name": "oscilla",
-   "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-   "language": "JavaScript",
-   "topics": [
-    "acoustics",
-    "audio",
-    "dsp",
-    "education",
-    "javascript",
-    "signal-processing",
-    "spectrogram",
-    "synthesizer",
-    "web-audio"
-   ],
-   "stars": 1,
-   "created_at": "2026-10-01T21:05:33Z",
-   "pushed_at": "2026-11-17T21:08:40Z",
-   "archived": false,
-   "share": 1,
-   "hosts": {
-    "github": "https://github.com/korczis/oscilla"
-   },
-   "site": "https://korczis.github.io/oscilla/",
-   "supervised": true,
-   "category": "science",
-   "curated": true
-  },
   {
    "name": "prismatic-majordomus",
    "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
@@ -5324,7 +5211,7 @@
    ],
    "stars": 1,
    "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-17T20:57:51Z",
+   "pushed_at": "2026-11-18T03:51:17Z",
    "archived": false,
    "share": 0.99,
    "hosts": {
@@ -5334,6 +5221,138 @@
    "supervised": true,
    "category": "ai",
    "curated": true
+  },
+  {
+   "name": "oscilla",
+   "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+   "language": "JavaScript",
+   "topics": [
+    "acoustics",
+    "audio",
+    "dsp",
+    "education",
+    "javascript",
+    "signal-processing",
+    "spectrogram",
+    "synthesizer",
+    "web-audio"
+   ],
+   "stars": 1,
+   "created_at": "2026-10-01T21:05:33Z",
+   "pushed_at": "2026-11-18T03:43:55Z",
+   "archived": false,
+   "share": 1,
+   "hosts": {
+    "github": "https://github.com/korczis/oscilla"
+   },
+   "site": "https://korczis.github.io/oscilla/",
+   "supervised": true,
+   "category": "science",
+   "curated": true
+  },
+  {
+   "name": "korczis.github.io",
+   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+   "language": "JavaScript",
+   "topics": [
+    "accessibility",
+    "ai-agents",
+    "alpinejs",
+    "chartjs",
+    "cytoscape",
+    "echarts",
+    "flowbite",
+    "github-pages",
+    "majordomus",
+    "p5js",
+    "personal-website",
+    "portfolio",
+    "tailwindcss",
+    "zola"
+   ],
+   "stars": 0,
+   "created_at": "2024-12-24T16:48:15Z",
+   "pushed_at": "2026-11-18T03:35:28Z",
+   "archived": false,
+   "share": 0.93,
+   "hosts": {
+    "github": "https://github.com/korczis/korczis.github.io"
+   },
+   "site": null,
+   "supervised": true,
+   "category": "web",
+   "curated": false
+  },
+  {
+   "name": "majordomus-reel",
+   "description": "A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound",
+   "language": "JavaScript",
+   "topics": [
+    "ai-agents",
+    "ffmpeg",
+    "generative",
+    "majordomus",
+    "puppeteer",
+    "video"
+   ],
+   "stars": 0,
+   "created_at": "2026-10-23T00:51:59Z",
+   "pushed_at": "2026-11-18T03:20:13Z",
+   "archived": false,
+   "share": 1,
+   "hosts": {
+    "github": "https://github.com/korczis/majordomus-reel"
+   },
+   "site": "https://korczis.github.io/majordomus-reel/",
+   "supervised": true,
+   "category": "media",
+   "curated": true
+  },
+  {
+   "name": "kompendium-epistemicke-anihilace",
+   "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
+   "language": "Elixir",
+   "topics": [
+    "czech",
+    "epistemology",
+    "flowbite",
+    "kompendium",
+    "majordomus",
+    "manipulation",
+    "psychology",
+    "taxonomy",
+    "zola"
+   ],
+   "stars": 0,
+   "created_at": "2026-11-09T22:04:50Z",
+   "pushed_at": "2026-11-18T03:06:20Z",
+   "archived": false,
+   "share": 1,
+   "hosts": {
+    "github": "https://github.com/korczis/kompendium-epistemicke-anihilace"
+   },
+   "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+   "supervised": true,
+   "category": "knowledge",
+   "curated": true
+  },
+  {
+   "name": "openttd-prismatic-bridge",
+   "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
+   "language": "Squirrel",
+   "topics": [],
+   "stars": 0,
+   "created_at": "2026-07-23T22:00:54.776Z",
+   "pushed_at": "2026-11-18T02:16:49.082Z",
+   "archived": false,
+   "share": 1,
+   "hosts": {
+    "gitlab": "https://gitlab.com/korczis/openttd-prismatic-bridge"
+   },
+   "site": null,
+   "supervised": false,
+   "category": "media",
+   "curated": false
   },
   {
    "name": "sonic-playground",
@@ -5352,24 +5371,6 @@
    "supervised": true,
    "category": "media",
    "curated": true
-  },
-  {
-   "name": "openttd-prismatic-bridge",
-   "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
-   "language": "Python",
-   "topics": [],
-   "stars": 0,
-   "created_at": "2026-07-23T22:00:54.776Z",
-   "pushed_at": "2026-11-17T20:38:21.692Z",
-   "archived": false,
-   "share": 1,
-   "hosts": {
-    "gitlab": "https://gitlab.com/korczis/openttd-prismatic-bridge"
-   },
-   "site": null,
-   "supervised": false,
-   "category": "media",
-   "curated": false
   },
   {
    "name": "algoglyph",
@@ -5400,92 +5401,6 @@
    "site": "https://korczis.github.io/algoglyph/",
    "supervised": true,
    "category": "science",
-   "curated": true
-  },
-  {
-   "name": "majordomus-reel",
-   "description": "A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound",
-   "language": "JavaScript",
-   "topics": [
-    "ai-agents",
-    "ffmpeg",
-    "generative",
-    "majordomus",
-    "puppeteer",
-    "video"
-   ],
-   "stars": 0,
-   "created_at": "2026-10-23T00:51:59Z",
-   "pushed_at": "2026-11-17T19:23:27Z",
-   "archived": false,
-   "share": 1,
-   "hosts": {
-    "github": "https://github.com/korczis/majordomus-reel"
-   },
-   "site": "https://korczis.github.io/majordomus-reel/",
-   "supervised": true,
-   "category": "media",
-   "curated": true
-  },
-  {
-   "name": "korczis.github.io",
-   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-   "language": "JavaScript",
-   "topics": [
-    "accessibility",
-    "ai-agents",
-    "alpinejs",
-    "chartjs",
-    "cytoscape",
-    "echarts",
-    "flowbite",
-    "github-pages",
-    "majordomus",
-    "p5js",
-    "personal-website",
-    "portfolio",
-    "tailwindcss",
-    "zola"
-   ],
-   "stars": 0,
-   "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-17T12:21:41Z",
-   "archived": false,
-   "share": 0.92,
-   "hosts": {
-    "github": "https://github.com/korczis/korczis.github.io"
-   },
-   "site": null,
-   "supervised": true,
-   "category": "web",
-   "curated": false
-  },
-  {
-   "name": "kompendium-epistemicke-anihilace",
-   "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
-   "language": "Elixir",
-   "topics": [
-    "czech",
-    "epistemology",
-    "flowbite",
-    "kompendium",
-    "majordomus",
-    "manipulation",
-    "psychology",
-    "taxonomy",
-    "zola"
-   ],
-   "stars": 0,
-   "created_at": "2026-11-09T22:04:50Z",
-   "pushed_at": "2026-11-17T06:29:59Z",
-   "archived": false,
-   "share": 1,
-   "hosts": {
-    "github": "https://github.com/korczis/kompendium-epistemicke-anihilace"
-   },
-   "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
-   "supervised": true,
-   "category": "knowledge",
    "curated": true
   },
   {
@@ -6097,60 +6012,6 @@
    "curated": false
   },
   {
-   "name": "annasabatova-cz",
-   "description": "Petice za odvolani annysabatove.cz",
-   "language": "CSS",
-   "topics": [],
-   "stars": 0,
-   "created_at": "2019-09-16T01:04:04.254Z",
-   "pushed_at": "2025-12-20T21:30:50.816Z",
-   "archived": false,
-   "share": 1,
-   "hosts": {
-    "gitlab": "https://gitlab.com/korczis/annasabatova-cz"
-   },
-   "site": null,
-   "supervised": false,
-   "category": "web",
-   "curated": false
-  },
-  {
-   "name": "apollocrawler-com",
-   "description": "Website for apollocrawler.com ...",
-   "language": "JavaScript",
-   "topics": [],
-   "stars": 0,
-   "created_at": "2019-09-16T01:04:05.535Z",
-   "pushed_at": "2025-12-20T21:30:44.925Z",
-   "archived": false,
-   "share": 0.94,
-   "hosts": {
-    "gitlab": "https://gitlab.com/korczis/apollocrawler-com"
-   },
-   "site": null,
-   "supervised": false,
-   "category": "data",
-   "curated": false
-  },
-  {
-   "name": "gauc-ex",
-   "description": "Elxir Wrapper for Gauc - Rust Wrapper for Couchbase",
-   "language": "Elixir",
-   "topics": [],
-   "stars": 0,
-   "created_at": "2019-09-16T01:04:20.536Z",
-   "pushed_at": "2025-12-20T21:29:16.346Z",
-   "archived": false,
-   "share": 0.98,
-   "hosts": {
-    "gitlab": "https://gitlab.com/korczis/gauc-ex"
-   },
-   "site": null,
-   "supervised": false,
-   "category": "libraries",
-   "curated": false
-  },
-  {
    "name": "korczis-com",
    "description": "korczis.com website",
    "language": "HTML",
@@ -6180,60 +6041,6 @@
    "share": 1,
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/korczis-github-com"
-   },
-   "site": null,
-   "supervised": false,
-   "category": "web",
-   "curated": false
-  },
-  {
-   "name": "lethe-it",
-   "description": "lethe.it - your personal smart links archive, organizer, classifier and much more",
-   "language": "JavaScript",
-   "topics": [],
-   "stars": 0,
-   "created_at": "2019-09-16T01:04:31.993Z",
-   "pushed_at": "2025-12-20T21:28:09.650Z",
-   "archived": false,
-   "share": 1,
-   "hosts": {
-    "gitlab": "https://gitlab.com/korczis/lethe-it"
-   },
-   "site": null,
-   "supervised": false,
-   "category": "tools",
-   "curated": false
-  },
-  {
-   "name": "mapofffacts-com",
-   "description": "Map Of Facts",
-   "language": null,
-   "topics": [],
-   "stars": 0,
-   "created_at": "2019-09-16T01:04:34.396Z",
-   "pushed_at": "2025-12-20T21:27:54.744Z",
-   "archived": false,
-   "share": 1,
-   "hosts": {
-    "gitlab": "https://gitlab.com/korczis/mapofffacts-com"
-   },
-   "site": null,
-   "supervised": false,
-   "category": "data",
-   "curated": false
-  },
-  {
-   "name": "pavian-eu",
-   "description": "pavian.eu website",
-   "language": "HTML",
-   "topics": [],
-   "stars": 0,
-   "created_at": "2019-09-16T01:04:39.573Z",
-   "pushed_at": "2025-12-20T21:27:26.968Z",
-   "archived": false,
-   "share": 1,
-   "hosts": {
-    "gitlab": "https://gitlab.com/korczis/pavian-eu"
    },
    "site": null,
    "supervised": false,
@@ -6777,7 +6584,7 @@
     "github": "https://github.com/korczis/maze-rs",
     "gitlab": "https://gitlab.com/korczis/maze-rs"
    },
-   "site": "https://korczis.github.io/maze-rs/",
+   "site": null,
    "supervised": false,
    "category": "science",
    "curated": true
@@ -7263,7 +7070,8 @@
    "archived": false,
    "share": 0.98,
    "hosts": {
-    "github": "https://github.com/korczis/gauc.ex"
+    "github": "https://github.com/korczis/gauc.ex",
+    "gitlab": "https://gitlab.com/korczis/gauc-ex"
    },
    "site": null,
    "supervised": false,
@@ -8103,7 +7911,8 @@
    "archived": false,
    "share": 1,
    "hosts": {
-    "github": "https://github.com/korczis/mapofffacts.com"
+    "github": "https://github.com/korczis/mapofffacts.com",
+    "gitlab": "https://gitlab.com/korczis/mapofffacts-com"
    },
    "site": null,
    "supervised": false,
@@ -8216,7 +8025,8 @@
    "archived": false,
    "share": 1,
    "hosts": {
-    "github": "https://github.com/korczis/pavian.eu"
+    "github": "https://github.com/korczis/pavian.eu",
+    "gitlab": "https://gitlab.com/korczis/pavian-eu"
    },
    "site": null,
    "supervised": false,
@@ -8538,7 +8348,8 @@
    "archived": false,
    "share": 1,
    "hosts": {
-    "github": "https://github.com/korczis/lethe.it"
+    "github": "https://github.com/korczis/lethe.it",
+    "gitlab": "https://gitlab.com/korczis/lethe-it"
    },
    "site": null,
    "supervised": false,
@@ -8613,7 +8424,8 @@
    "archived": false,
    "share": 1,
    "hosts": {
-    "github": "https://github.com/korczis/annasabatova.cz"
+    "github": "https://github.com/korczis/annasabatova.cz",
+    "gitlab": "https://gitlab.com/korczis/annasabatova-cz"
    },
    "site": null,
    "supervised": false,
@@ -9030,7 +8842,8 @@
    "archived": false,
    "share": 0.95,
    "hosts": {
-    "github": "https://github.com/korczis/apollocrawler.com"
+    "github": "https://github.com/korczis/apollocrawler.com",
+    "gitlab": "https://gitlab.com/korczis/apollocrawler-com"
    },
    "site": null,
    "supervised": false,

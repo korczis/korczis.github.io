@@ -121,8 +121,8 @@
    "url": "https://korczis.github.io/cs/glossary/javascript/",
    "keywords": [
     "oscilla",
-    "majordomus-reel",
-    "korczis.github.io"
+    "korczis.github.io",
+    "majordomus-reel"
    ]
   },
   {
@@ -162,21 +162,21 @@
    ]
   },
   {
-   "name": "Python",
-   "url": "https://korczis.github.io/cs/glossary/python/",
-   "keywords": [
-    "sonic-playground",
-    "openttd-prismatic-bridge",
-    "data-atlas"
-   ]
-  },
-  {
    "name": "C++",
    "url": "https://korczis.github.io/cs/glossary/cpp/",
    "keywords": [
     "happ",
     "algorithms-ruby",
     "iCave"
+   ]
+  },
+  {
+   "name": "Python",
+   "url": "https://korczis.github.io/cs/glossary/python/",
+   "keywords": [
+    "sonic-playground",
+    "data-atlas",
+    "astronomists"
    ]
   },
   {
@@ -192,9 +192,9 @@
    "name": "CSS",
    "url": "https://korczis.github.io/cs/glossary/css/",
    "keywords": [
-    "annasabatova-cz",
     "korczis-github-com",
-    "korczis.gitlab.io"
+    "korczis.gitlab.io",
+    "nestravenkam"
    ]
   },
   {
@@ -302,6 +302,13 @@
    "url": "https://korczis.github.io/cs/glossary/r/",
    "keywords": [
     "datascience"
+   ]
+  },
+  {
+   "name": "Squirrel",
+   "url": "https://korczis.github.io/cs/glossary/squirrel/",
+   "keywords": [
+    "openttd-prismatic-bridge"
    ]
   },
   {
@@ -539,6 +546,6 @@
  "meta": {
   "canonical": "https://korczis.github.io/cs/resume.json",
   "version": "v1.0.0",
-  "lastModified": "2026-11-17T21:17:02Z"
+  "lastModified": "2026-11-18T04:00:58Z"
  }
 }

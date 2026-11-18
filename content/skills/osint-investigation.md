@@ -33,7 +33,7 @@ Services that draw on it: [Digital investigation and OSINT dossiers](@/services/
 
 Practised with: [HTML](@/glossary/html.md), [Python](@/glossary/python.md), [JavaScript](@/glossary/javascript.md), [Shell](@/glossary/shell.md), [Claude API](@/glossary/claude-api.md), [Elixir](@/glossary/elixir.md), [PostGIS](@/glossary/postgis.md) and [TypeScript](@/glossary/typescript.md).
 
-Public work whose own words show it: [sig](https://gitlab.com/korczis/sig), [crisis-map](https://github.com/korczis/crisis-map), [osint-case-ratcliffe-moscow-2026](https://github.com/korczis/osint-case-ratcliffe-moscow-2026) and [openttd-prismatic-bridge](https://gitlab.com/korczis/openttd-prismatic-bridge).
+Public work whose own words show it: [sig](https://gitlab.com/korczis/sig), [crisis-map](https://github.com/korczis/crisis-map), [osint-case-ratcliffe-moscow-2026](https://github.com/korczis/osint-case-ratcliffe-moscow-2026) and [data-atlas](https://github.com/korczis/data-atlas).
 
 It was applied in client work in Real-estate developer and Financial and investment group; the use cases below give the principle and the intent, without names or numbers.
 

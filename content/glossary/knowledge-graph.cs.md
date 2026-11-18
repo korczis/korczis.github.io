@@ -3,7 +3,7 @@
 title = "Znalostní graf"
 description = "Znalosti uložené jako subjekty a vztahy mezi nimi, takže dotaz může sledovat vazby (kdo co vlastní, kdo kde sedí) místo spojování tabulek."
 template = "term.html"
-weight = 84
+weight = 91
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]
@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Znalosti uložené jako subjekty a vztahy mezi nimi, takže dotaz může sledovat vazby (kdo co vlastní, kdo kde sedí) místo spojování tabulek."
 aliases = []
 reference = { title = "Knowledge graph (Wikipedia)", url = "https://en.wikipedia.org/wiki/Knowledge_graph" }
-pages = ["projects/security.cs.md", "services/_index.cs.md", "services/digital-investigation.cs.md", "services/interactive-data-products.cs.md", "skills/_index.cs.md", "skills/knowledge-graph.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md"]
-related = ["html", "python", "shell", "alpine-js", "data-integration", "decision-support-system", "flowbite-pro", "javascript"]
+pages = ["projects/security.cs.md", "services/_index.cs.md", "services/digital-investigation.cs.md", "services/interactive-data-products.cs.md", "skills/_index.cs.md", "skills/knowledge-graph.cs.md", "work/magic.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/peacemaker.cs.md", "work/ratnet.cs.md", "work/zlown.cs.md"]
+related = ["data-integration", "decision-support-system", "osint", "record-linkage", "audit-trail", "due-diligence", "information-extraction", "insolvency"]
 og_title = "Znalostní graf: slovník"
 og_image = "og/cs-glossary-knowledge-graph.png"
 keywords = ["Znalostní graf", "Knowledge graph", "Koncept", "Slovník", "Tomáš Korčák"]

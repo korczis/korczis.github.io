@@ -3,7 +3,7 @@
 title = "Nix"
 description = "A language and package manager for reproducible, declarative system configuration."
 template = "term.html"
-weight = 19
+weight = 23
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]

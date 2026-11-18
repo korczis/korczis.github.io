@@ -3,7 +3,7 @@
 title = "Static site generator"
 description = "A program that turns content and templates into plain files before anyone visits, so the site needs no server code."
 template = "term.html"
-weight = 103
+weight = 110
 
 [taxonomies]
 tags = ["Glossary", "Concept"]
@@ -16,8 +16,8 @@ kind = "concept"
 definition = "A program that turns content and templates into plain files before anyone visits, so the site needs no server code."
 aliases = []
 reference = { title = "Static site generator (Wikipedia)", url = "https://en.wikipedia.org/wiki/Static_site_generator" }
-pages = ["_index.md", "projects/web.md", "work/korczis-github-io.md", "work/korczis-gitlab-io.md"]
-related = ["repository", "commit", "css", "html", "elixir", "javascript", "open-source", "apacheconf"]
+pages = ["_index.md", "projects/web.md", "work/annasabatova-cz.md", "work/apollocrawler-github-io.md", "work/craftsmen.md", "work/korczis-com.md", "work/korczis-github-com.md", "work/korczis-github-io.md", "work/korczis-gitlab-io.md", "work/microscratch-react.md", "work/microscratch.md", "work/nestravenkam.md", "work/pavian-eu.md", "work/the-scratch.md", "work/tosh.md", "work/web-spa.md"]
+related = ["repository", "commit", "open-source", "javascript", "css", "html", "elixir", "apacheconf"]
 og_title = "Static site generator: glossary"
 og_image = "og/glossary-static-site-generator.png"
 keywords = ["Static site generator", "Concept", "Glossary", "Tomas Korcak"]

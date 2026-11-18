@@ -13,7 +13,7 @@ skill = "chain-of-custody"
 og_title = "Chain of custody: skills"
 og_image = "og/skill-chain-of-custody.png"
 schema = "skill"
-terms = ["skill", "chain-of-custody"]
+terms = ["skill", "chain-of-custody", "javascript", "rust"]
 keywords = ["Chain of custody", "Digital forensics and evidence preservation", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -30,5 +30,9 @@ Evidence that shows any tampering and can be replayed: every acquisition hashed 
 The concept behind it: [Chain of custody](@/glossary/chain-of-custody.md).
 
 Services that draw on it: [Digital forensics and evidence preservation](@/services/digital-forensics.md).
+
+Practised with: [JavaScript](@/glossary/javascript.md) and [Rust](@/glossary/rust.md).
+
+Public work whose own words show it: [bcnode-old](https://github.com/korczis/bcnode-old).
 
 How to read this page: the definition is the experience vocabulary's; the services, technologies, public [repositories](@/glossary/repository.md) and use cases are derived and each links to its page.

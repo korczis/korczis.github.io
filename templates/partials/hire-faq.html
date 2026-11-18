@@ -1,8 +1,13 @@
 {#- The /hire/ questions and answers, built once (ADR 0007, rule project.seo-derived: structured data
     states only what the page shows). Include it with faq_as = "html" for the visible accordion
-    (templates/hire.html) or faq_as = "json" for the FAQPage mainEntity (templates/partials/seo.html);
-    both read the same list, so the two cannot drift. scripts/check-seo.mjs proves the parity both
-    ways on the built /hire/ pages. Facts come from data/cv.toml and data/github.json only. -#}
+    (templates/hire.html), faq_as = "json" for the FAQPage mainEntity (templates/partials/seo.html),
+    or faq_as = "grid" for the landing (templates/index.html, Flowbite Pro faq-sections/grid-layout
+    from md, faq-sections/accordion under it; faq_limit caps it), whose questions are the same words, so the
+    structured data stays on /hire/ alone. Every mode reads the same list, so they cannot drift.
+    scripts/check-seo.mjs proves the parity both ways on the built /hire/ pages and
+    scripts/check-landing.mjs that the landing asks the same questions. Facts come from
+    data/cv.toml and data/github.json only; a question on a fact data/cv.toml does not state (the
+    facts for sourcing filters of the ADR 0007 addendum) is left out. -#}
 {%- set fsfx = "" %}{% if lang is defined and lang != config.default_language %}{% set fsfx = "_" ~ lang %}{% endif -%}
 {%- set fcv = load_data(path="data/cv.toml") -%}
 {%- set fgh = load_data(path="data/github.json") -%}
@@ -13,29 +18,60 @@
 {%- set_global feng = "" %}{% for e in fh.engagement %}{% if feng %}{% set_global feng = feng ~ ", " %}{% endif %}{% set_global feng = feng ~ trans(key="hire_engagement_" ~ e | replace(from="-", to="_"), lang=lang) %}{% endfor -%}
 {#- Where he has worked: the finished roles, newest first, each with its years. #}
 {%- set_global fpast = "" %}{% for r in fcv.roles %}{% if r.end is defined %}{% if fpast %}{% set_global fpast = fpast ~ "; " %}{% endif %}{% set_global fpast = fpast ~ (r["title" ~ fsfx] | default(value=r.title)) ~ ", " ~ r.organisation ~ " (" ~ r.start | truncate(length=4, end="") ~ "–" ~ r.end | truncate(length=4, end="") ~ ")" %}{% endif %}{% endfor -%}
-{%- set frate = [] %}{% if fh.rate_from is defined %}{% set frate = [trans(key="hire_faq_q_rate", lang=lang), trans(key="hire_faq_a_rate", lang=lang) | replace(from="{rate}", to=fh.rate_currency ~ " " ~ fh.rate_from) | replace(from="{unit}", to=trans(key="hire_unit_" ~ fh.rate_unit, lang=lang))] %}{% endif -%}
-{%- set fexp = [] %}{% if fpast %}{% set fexp = [trans(key="hire_faq_q_experience", lang=lang), fpast] %}{% endif -%}
+{%- set fstart = [] %}{% if fh.start is defined %}{% if fh.start == "immediately" %}{% set fsv = trans(key="hire_start_immediately", lang=lang) %}{% else %}{% set fsv = fh.start %}{% endif %}{% set fstart = ["start", trans(key="hire_faq_q_start", lang=lang), trans(key="hire_faq_a_start", lang=lang) | replace(from="{start}", to=fsv)] %}{% endif -%}
+{%- set fauth = [] %}{% if fh.work_authorization is defined %}{% if fh.relocation is defined and fh.relocation %}{% set frel = trans(key="hire_relocation_open", lang=lang) %}{% elif fh.relocation is defined %}{% set frel = trans(key="hire_relocation_closed", lang=lang) %}{% else %}{% set frel = "" %}{% endif %}{% set fauth = ["authorization", trans(key="hire_faq_q_authorization", lang=lang), trans(key="hire_faq_a_authorization", lang=lang) | replace(from="{authorization}", to=fh["work_authorization" ~ fsfx] | default(value=fh.work_authorization)) | replace(from=" {relocation}.", to=" " ~ frel ~ ".") | replace(from=" .", to="")] %}{% endif -%}
+{%- set fzone = [] %}{% if fh.timezone is defined %}{% set fzone = ["timezone", trans(key="hire_faq_q_timezone", lang=lang), trans(key="hire_faq_a_timezone", lang=lang) | replace(from="{zone}", to=fh.timezone) | replace(from="{overlap}", to=fh["overlap" ~ fsfx] | default(value=fh.overlap | default(value="")))] %}{% endif -%}
+{%- set frate = [] %}{% if fh.rate_from is defined %}{% set frate = ["rate", trans(key="hire_faq_q_rate", lang=lang), trans(key="hire_faq_a_rate", lang=lang) | replace(from="{rate}", to=fh.rate_currency ~ " " ~ fh.rate_from) | replace(from="{unit}", to=trans(key="hire_unit_" ~ fh.rate_unit, lang=lang))] %}{% endif -%}
+{%- set fexp = [] %}{% if fpast %}{% set fexp = ["experience", trans(key="hire_faq_q_experience", lang=lang), fpast] %}{% endif -%}
 {%- set faq = [
-  [trans(key="hire_faq_q_available", lang=lang) | replace(from="{name}", to=config.extra.author), trans(key="hire_faq_a_available", lang=lang) | replace(from="{engagement}", to=feng) | replace(from="{workplace}", to=fwork) | replace(from="{regions}", to=freg)],
-  [trans(key="hire_faq_q_roles", lang=lang), froles | join(sep="; ")],
+  ["available", trans(key="hire_faq_q_available", lang=lang) | replace(from="{name}", to=config.extra.author), trans(key="hire_faq_a_available", lang=lang) | replace(from="{engagement}", to=feng) | replace(from="{workplace}", to=fwork) | replace(from="{regions}", to=freg)],
+  fstart,
+  fauth,
+  fzone,
   frate,
+  ["roles", trans(key="hire_faq_q_roles", lang=lang), froles | join(sep="; ")],
   fexp,
-  [trans(key="hire_faq_q_contact", lang=lang), trans(key="hire_faq_a_contact", lang=lang) | replace(from="{email}", to=fgh.profile.email | default(value="")) | replace(from="{linkedin}", to=fcv.links.linkedin | default(value=""))]
+  ["contact", trans(key="hire_faq_q_contact", lang=lang), trans(key="hire_faq_a_contact", lang=lang) | replace(from="{email}", to=fgh.profile.email | default(value="")) | replace(from="{linkedin}", to=fcv.links.linkedin | default(value=""))]
 ] -%}
 {%- if faq_as == "json" -%}
 {%- set_global fn = 0 -%}
-{%- for item in faq %}{% if item | length == 2 %}{% if fn > 0 %},{% endif %}{% set_global fn = fn + 1 %}
-{%- set fq = '{"@type": "Question", "name": ' ~ (item[0] | json_encode) ~ ', "acceptedAnswer": {"@type": "Answer", "text": ' ~ (item[1] | json_encode) ~ '}}' %}
+{%- for item in faq %}{% if item | length == 3 %}{% if fn > 0 %},{% endif %}{% set_global fn = fn + 1 %}
+{%- set fq = '{"@type": "Question", "name": ' ~ (item[1] | json_encode) ~ ', "acceptedAnswer": {"@type": "Answer", "text": ' ~ (item[2] | json_encode) ~ '}}' %}
       {{ fq | safe }}
+{%- endif %}{% endfor -%}
+{%- elif faq_as == "grid" -%}
+{#- The landing: each question an h3 with a stable #faq-<key>, its answer, and a link to where the
+    page states the fact (a #terms-<key> row, the roles, the CV or the contact). Under md it is the
+    Flowbite Pro faq-sections/accordion (data-accordion="collapse", the first item open, the
+    trigger a button with aria-expanded and aria-controls, Enter and Space through the native
+    button); from md up every answer is shown as the grid-layout and
+    static/js/components/faq-accordion.js keeps the trigger inert and aria-expanded true. The answers carry "hidden md:block", a responsive
+    variant: nothing is hidden from a reader at any width (ADR 0007). -#}
+{%- set flp = "" %}{% if lang is defined and lang != config.default_language %}{% set flp = "/" ~ lang %}{% endif -%}
+{%- if faq_limit is defined %}{% set flimit = faq_limit %}{% else %}{% set flimit = 99 %}{% endif -%}
+{%- set_global fn = 0 -%}
+{%- for item in faq %}{% if item | length == 3 and fn < flimit %}{% set_global fn = fn + 1 %}
+          <div class="min-w-0 border-b border-gray-200 dark:border-gray-700 md:border-0" data-faq-question="{{ item[0] }}">
+            <h3 id="faq-{{ item[0] }}" class="scroll-mt-24 text-base font-semibold text-gray-900 dark:text-white">
+              <button type="button" class="flex min-h-11 w-full items-start gap-2 py-3 text-start focus:outline-none focus-visible:ring-4 focus-visible:ring-primary-300 dark:focus-visible:ring-primary-800 md:pointer-events-none md:min-h-0 md:py-0" data-accordion-target="#faq-body-{{ item[0] }}" aria-expanded="{% if fn == 1 %}true{% else %}false{% endif %}" aria-controls="faq-body-{{ item[0] }}">{{ <icon name="chevron-right" class="mt-1 h-4 w-4 shrink-0 text-primary-700 dark:text-primary-400" /> }}<span class="flex-1">{{ item[1] }}</span><span data-accordion-icon class="mt-1 shrink-0 md:hidden{% if fn == 1 %} rotate-180{% endif %}">{{ <icon name="chevron-down" class="h-4 w-4" /> }}</span></button>
+            </h3>
+            <div id="faq-body-{{ item[0] }}" class="{% if fn != 1 %}hidden {% endif %}pb-3 md:block md:pb-0 md:pt-2">
+            <p class="ms-6 text-sm text-gray-600 dark:text-gray-400">{{ item[2] }}</p>
+            {%- if item[0] == "available" %}{% set fsee = "#terms-engagement" %}{% elif item[0] == "roles" or item[0] == "contact" %}{% set fsee = "#" ~ item[0] %}{% elif item[0] == "experience" %}{% set fsee = config.base_url ~ flp ~ "/about/#cv-title" %}{% else %}{% set fsee = "#terms-" ~ item[0] %}{% endif %}
+            {%- if fsee %}
+            <a href="{{ fsee }}" class="ms-6 mt-1 inline-block min-h-6 py-0.5 text-sm font-medium text-primary-700 hover:underline dark:text-primary-400">{% if item[0] == "experience" %}{{ trans(key="hire_cv_link", lang=lang) }}{% elif item[0] == "roles" %}{{ trans(key="home_roles_title", lang=lang) }}{% elif item[0] == "contact" %}{{ trans(key="home_contact_title", lang=lang) }}{% else %}{{ trans(key="home_faq_see", lang=lang) }}{% endif %}<span class="sr-only">: {{ item[1] }}</span></a>
+            {%- endif %}
+            </div>
+          </div>
 {%- endif %}{% endfor -%}
 {%- else -%}
 {%- set_global fn = 0 -%}
-{%- for item in faq %}{% if item | length == 2 %}{% set_global fn = fn + 1 %}
+{%- for item in faq %}{% if item | length == 3 %}{% set_global fn = fn + 1 %}
           <details class="group" data-faq-item{% if fn == 1 %} open{% endif %}>
             <summary class="flex cursor-pointer items-center justify-between gap-3 bg-gray-50 px-4 py-3 font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-700">
-              <span>{{ item[0] }}</span>{{ <icon name="chevron-up-down" class="h-4 w-4 shrink-0" /> }}
+              <span>{{ item[1] }}</span>{{ <icon name="chevron-up-down" class="h-4 w-4 shrink-0" /> }}
             </summary>
-            <p class="px-4 py-3 text-sm text-gray-600 dark:text-gray-300">{{ item[1] }}</p>
+            <p class="px-4 py-3 text-sm text-gray-600 dark:text-gray-300">{{ item[2] }}</p>
           </details>
 {%- endif %}{% endfor -%}
 {%- endif -%}

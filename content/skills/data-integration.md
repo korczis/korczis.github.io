@@ -13,7 +13,7 @@ skill = "data-integration"
 og_title = "Data integration: skills"
 og_image = "og/skill-data-integration.png"
 schema = "skill"
-terms = ["skill", "data-integration", "claude-api", "elixir", "shell", "typescript", "alpine-js", "dockerfile", "eex", "fastapi", "flowbite-pro", "github-actions"]
+terms = ["skill", "data-integration", "javascript", "shell", "claude-api", "elixir", "html", "typescript", "alpine-js", "dockerfile", "eex", "fastapi"]
 keywords = ["Data integration", "Interactive data products and simulators", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -31,9 +31,9 @@ The concept behind it: [Data integration](@/glossary/data-integration.md).
 
 Services that draw on it: [Interactive data products and simulators](@/services/interactive-data-products.md).
 
-Practised with: [Claude API](@/glossary/claude-api.md), [Elixir](@/glossary/elixir.md), [Shell](@/glossary/shell.md), [TypeScript](@/glossary/typescript.md), [Alpine.js](@/glossary/alpine-js.md), [Dockerfile](@/glossary/dockerfile.md), [EEx and HEEx](@/glossary/eex.md) and [FastAPI](@/glossary/fastapi.md).
+Practised with: [JavaScript](@/glossary/javascript.md), [Shell](@/glossary/shell.md), [Claude API](@/glossary/claude-api.md), [Elixir](@/glossary/elixir.md), [HTML](@/glossary/html.md), [TypeScript](@/glossary/typescript.md), [Alpine.js](@/glossary/alpine-js.md) and [Dockerfile](@/glossary/dockerfile.md).
 
-Public work whose own words show it: [llm](https://gitlab.com/korczis/llm) and [sig](https://gitlab.com/korczis/sig).
+Public work whose own words show it: [microcrawler-crawler-all](https://gitlab.com/korczis/microcrawler-crawler-all), [microcrawler-crawler-sreality-cz](https://gitlab.com/korczis/microcrawler-crawler-sreality-cz), [microcrawler-crawler-xkcd-com](https://gitlab.com/korczis/microcrawler-crawler-xkcd-com) and [llm](https://gitlab.com/korczis/llm).
 
 It was applied in client work in Real-estate developer; the use cases below give the principle and the intent, without names or numbers.
 

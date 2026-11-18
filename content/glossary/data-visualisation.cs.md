@@ -3,7 +3,7 @@
 title = "Vizualizace dat"
 description = "Převod čísel na obrazy, které lze přečíst jedním pohledem: tady spirály, bubliny, proudy a grafy, každý nakreslený ze změřených dat."
 template = "term.html"
-weight = 71
+weight = 78
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]
@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Převod čísel na obrazy, které lze přečíst jedním pohledem: tady spirály, bubliny, proudy a grafy, každý nakreslený ze změřených dat."
 aliases = []
 reference = { title = "Data visualization (Wikipedia)", url = "https://en.wikipedia.org/wiki/Data_and_information_visualization" }
-pages = ["_index.cs.md", "projects/_index.cs.md", "projects/media.cs.md", "projects/science.cs.md", "services/_index.cs.md", "services/interactive-data-products.cs.md", "skills/_index.cs.md", "skills/interactive-visualisation.cs.md", "work/algoglyph.cs.md", "work/catharsis-as-a-service.cs.md", "work/distance-calculator.cs.md", "work/majordomus-reel.cs.md", "work/openttd-prismatic-bridge.cs.md", "work/oscilla.cs.md", "work/prismatic-blog.cs.md", "work/sonic-playground.cs.md"]
-related = ["repository", "html", "javascript", "python", "shell", "commit", "open-source", "flowbite-pro"]
+pages = ["_index.cs.md", "projects/_index.cs.md", "projects/media.cs.md", "projects/science.cs.md", "services/_index.cs.md", "services/interactive-data-products.cs.md", "skills/_index.cs.md", "skills/interactive-visualisation.cs.md", "work/algoglyph.cs.md", "work/algorithms-ruby.cs.md", "work/algorithms.cs.md", "work/big-png.cs.md", "work/brepta.cs.md", "work/catharsis-as-a-service.cs.md", "work/distance-calculator.cs.md", "work/dj-schnapps.cs.md", "work/graph-flow.cs.md", "work/haskell-world.cs.md", "work/majordomus-reel.cs.md", "work/maze-js.cs.md", "work/maze-rs.cs.md", "work/maze.cs.md", "work/openttd-prismatic-bridge.cs.md", "work/oscilla.cs.md", "work/prismatic-blog.cs.md", "work/rustas.cs.md", "work/sonic-playground.cs.md", "work/talkie.cs.md"]
+related = ["repository", "commit", "open-source", "html", "javascript", "shell", "css", "python"]
 og_title = "Vizualizace dat: slovník"
 og_image = "og/cs-glossary-data-visualisation.png"
 keywords = ["Vizualizace dat", "Data visualisation", "Koncept", "Slovník", "Tomáš Korčák"]

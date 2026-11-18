@@ -3,7 +3,7 @@
 title = "CSS"
 description = "Stylový jazyk webu: rozvržení, barvy a typografie HTML."
 template = "term.html"
-weight = 6
+weight = 8
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -16,8 +16,8 @@ kind = "language"
 definition = "Stylový jazyk webu: rozvržení, barvy a typografie HTML."
 aliases = []
 reference = { title = "MDN Web Docs: CSS", url = "https://developer.mozilla.org/en-US/docs/Web/CSS" }
-pages = ["projects/web.cs.md", "services/ai-engineering-governance.cs.md", "services/decision-support-ai.cs.md", "services/digital-forensics.cs.md", "services/interactive-data-products.cs.md", "services/reputation-intelligence.cs.md", "skills/audit-trail.cs.md", "skills/contestable-decisions.cs.md", "skills/decision-support.cs.md", "skills/due-diligence.cs.md", "skills/geospatial-analysis.cs.md", "skills/interactive-visualisation.cs.md", "skills/llm-agents.cs.md", "skills/osint-investigation.cs.md", "skills/policy-as-code.cs.md", "skills/registry-intelligence.cs.md", "work/astronomists.cs.md", "work/bubbler.cs.md", "work/catharsis-as-a-service.cs.md", "work/crisis-map.cs.md", "work/korczis-github-io.cs.md", "work/korczis-gitlab-io.cs.md", "work/openttd-prismatic-bridge.cs.md", "work/oscilla.cs.md", "work/prismatic-majordomus.cs.md", "work/prismatic.cs.md", "work/sonic-playground.cs.md", "work/the-psycho.cs.md", "work/u-tygra.cs.md", "work/vomaste-cz.cs.md"]
-related = ["html", "javascript", "shell", "python", "elixir", "repository", "commit", "open-source"]
+pages = ["projects/web.cs.md", "services/_index.cs.md", "services/ai-engineering-governance.cs.md", "services/attack-surface.cs.md", "services/decision-support-ai.cs.md", "services/digital-forensics.cs.md", "services/digital-investigation.cs.md", "services/interactive-data-products.cs.md", "services/reputation-intelligence.cs.md", "skills/_index.cs.md", "skills/audit-trail.cs.md", "skills/change-monitoring.cs.md", "skills/contestable-decisions.cs.md", "skills/decision-support.cs.md", "skills/due-diligence.cs.md", "skills/geospatial-analysis.cs.md", "skills/interactive-visualisation.cs.md", "skills/llm-agents.cs.md", "skills/osint-investigation.cs.md", "skills/policy-as-code.cs.md", "skills/registry-intelligence.cs.md", "work/annasabatova-cz.cs.md", "work/apollocrawler-com.cs.md", "work/astronomists.cs.md", "work/astudo.cs.md", "work/bubbler.cs.md", "work/catharsis-as-a-service.cs.md", "work/craftsmen.cs.md", "work/crisis-map.cs.md", "work/czech-stats.cs.md", "work/dj-schnapps.cs.md", "work/gooddata-graphql.cs.md", "work/gooddata-rails-app.cs.md", "work/hydra.cs.md", "work/kanec.cs.md", "work/korczis-com.cs.md", "work/korczis-github-com.cs.md", "work/korczis-github-io.cs.md", "work/korczis-gitlab-io.cs.md", "work/lethe-it.cs.md", "work/majordomus-reel.cs.md", "work/maze.cs.md", "work/microcrawler-couchapp.cs.md", "work/microscratch.cs.md", "work/nestravenkam.cs.md", "work/openttd-prismatic-bridge.cs.md", "work/oscilla.cs.md", "work/pavian-eu.cs.md", "work/prismatic-majordomus.cs.md", "work/prismatic.cs.md", "work/rest-hello-world-benchmark.cs.md", "work/solr-core-minimal.cs.md", "work/sonic-playground.cs.md", "work/test-elixir.cs.md", "work/the-psycho.cs.md", "work/tosh.cs.md", "work/u-tygra.cs.md", "work/vomaste-cz.cs.md"]
+related = ["javascript", "html", "repository", "commit", "open-source", "shell", "elixir", "python"]
 og_title = "CSS: slovník"
 og_image = "og/cs-glossary-css.png"
 keywords = ["CSS", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
@@ -40,9 +40,9 @@ span = 3
 height = "md"
 tone = "night"
 +++
-CSS jsem psal v 14 veřejných repozitářích, od roku 2014 do 2026; v 5 z nich je hlavním jazykem.
+CSS jsem psal v 27 veřejných repozitářích, od roku 2014 do 2026; ve 4 z nich je hlavním jazykem.
 
-K čemu to sloužilo: [Web](@/projects/web.cs.md) (6), [Nástroje](@/projects/tools.cs.md) (4), [Média a umění](@/projects/media.cs.md) (2) a [Data a GIS](@/projects/data.cs.md) (1).
+K čemu to sloužilo: [Web](@/projects/web.cs.md) (10), [Nástroje](@/projects/tools.cs.md) (7), [Data a GIS](@/projects/data.cs.md) (5) a [Média a umění](@/projects/media.cs.md) (3).
 
 Naposledy: [korczis.github.io](@/work/korczis-github-io.cs.md); [Oscilla](@/work/oscilla.cs.md): Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu; [Sonic Playground](@/work/sonic-playground.cs.md): Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.
 

@@ -13,7 +13,7 @@ skill = "web-automation"
 og_title = "Web automation and crawling: skills"
 og_image = "og/skill-web-automation.png"
 schema = "skill"
-terms = ["skill", "web-scraping"]
+terms = ["skill", "web-scraping", "javascript", "html", "shell"]
 keywords = ["Web automation and crawling", "Digital investigation and OSINT dossiers", "External attack surface and cyber-exposure assessment", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -30,5 +30,9 @@ Data out of sources that are hard to reach: policy-bound browser automation and 
 The concept behind it: [Web scraping](@/glossary/web-scraping.md).
 
 Services that draw on it: [Digital investigation and OSINT dossiers](@/services/digital-investigation.md) and [External attack surface and cyber-exposure assessment](@/services/attack-surface.md).
+
+Practised with: [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md) and [Shell](@/glossary/shell.md).
+
+Public work whose own words show it: [microcrawler-crawler-all](https://gitlab.com/korczis/microcrawler-crawler-all), [microcrawler-crawler-sreality-cz](https://gitlab.com/korczis/microcrawler-crawler-sreality-cz), [microcrawler-js](https://gitlab.com/korczis/microcrawler-js) and [microcrawler-crawler-xkcd-com](https://gitlab.com/korczis/microcrawler-crawler-xkcd-com).
 
 How to read this page: the definition is the experience vocabulary's; the services, technologies, public [repositories](@/glossary/repository.md) and use cases are derived and each links to its page.

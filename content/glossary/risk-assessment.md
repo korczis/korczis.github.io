@@ -3,7 +3,7 @@
 title = "Risk assessment"
 description = "Identifying risks, estimating how likely and how severe each is, and ranking them so the work starts with what matters most."
 template = "term.html"
-weight = 98
+weight = 105
 
 [taxonomies]
 tags = ["Glossary", "Concept"]
@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Identifying risks, estimating how likely and how severe each is, and ranking them so the work starts with what matters most."
 aliases = []
 reference = { title = "ISO 31000: risk management", url = "https://www.iso.org/iso-31000-risk-management.html" }
-pages = ["projects/security.md", "services/_index.md", "services/attack-surface.md", "services/compliance-screening.md", "services/continuous-monitoring.md", "services/due-diligence.md", "services/m-and-a.md", "skills/_index.md", "skills/risk-scoring.md", "work/osint-case-ratcliffe-moscow-2026.md"]
-related = ["html", "alpine-js", "dockerfile", "fastapi", "flowbite-pro", "javascript", "kubernetes", "record-linkage"]
+pages = ["projects/security.md", "services/_index.md", "services/attack-surface.md", "services/compliance-screening.md", "services/continuous-monitoring.md", "services/due-diligence.md", "services/m-and-a.md", "skills/_index.md", "skills/risk-scoring.md", "work/magic.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/peacemaker.md", "work/ratnet.md", "work/zlown.md"]
+related = ["record-linkage", "decision-support-system", "due-diligence", "html", "insolvency", "javascript", "market-intelligence", "mergers-and-acquisitions"]
 og_title = "Risk assessment: glossary"
 og_image = "og/glossary-risk-assessment.png"
 keywords = ["Risk assessment", "Concept", "Glossary", "Tomas Korcak"]

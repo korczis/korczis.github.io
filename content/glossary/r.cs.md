@@ -3,7 +3,7 @@
 title = "R (programovací jazyk)"
 description = "Jazyk a prostředí pro statistiku a analýzu dat, s grafy a rozsáhlou knihovnou statistických metod."
 template = "term.html"
-weight = 23
+weight = 29
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -16,8 +16,8 @@ kind = "language"
 definition = "Jazyk a prostředí pro statistiku a analýzu dat, s grafy a rozsáhlou knihovnou statistických metod."
 aliases = []
 reference = { title = "The R Project", url = "https://www.r-project.org/about.html" }
-pages = ["projects/data.cs.md"]
-related = ["elixir", "gis", "html", "javascript", "mcp", "postgis", "python", "repository"]
+pages = ["projects/data.cs.md", "work/datascience.cs.md", "work/zeman-ucet.cs.md"]
+related = ["repository", "commit", "gis", "open-source", "ruby", "shell", "elixir", "html"]
 og_title = "R: slovník"
 og_image = "og/cs-glossary-r.png"
 keywords = ["R (programovací jazyk)", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
@@ -40,10 +40,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
-R jsem psal v 1 veřejném repozitáři, od roku 2016 do 2016; v 1 z nich je hlavním jazykem.
+R jsem psal ve 2 veřejných repozitářích, od roku 2016 do 2017; v 1 z nich je hlavním jazykem.
 
-K čemu to sloužilo: [Data a GIS](@/projects/data.cs.md) (1).
+K čemu to sloužilo: [Data a GIS](@/projects/data.cs.md) (1) a [Nástroje](@/projects/tools.cs.md) (1).
 
-Naposledy: [datascience](https://github.com/korczis/datascience).
+Naposledy: [zeman-ucet](@/work/zeman-ucet.cs.md); [datascience](@/work/datascience.cs.md).
 
 Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak R používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje R s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

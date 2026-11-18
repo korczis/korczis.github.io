@@ -16,8 +16,8 @@ kind = "language"
 definition = "Konfigurační jazyk webového serveru Apache HTTP: virtuální hosty, přepisovací pravidla a řízení přístupu."
 aliases = ["Apache"]
 reference = { title = "Apache HTTP Server documentation", url = "https://httpd.apache.org/docs/current/" }
-pages = ["projects/web.cs.md"]
-related = ["css", "elixir", "html", "javascript", "repository", "static-site-generator"]
+pages = ["projects/web.cs.md", "work/pavian-eu.cs.md"]
+related = ["css", "html", "javascript", "repository", "static-site-generator", "commit", "elixir", "open-source"]
 og_title = "ApacheConf: slovník"
 og_image = "og/cs-glossary-apacheconf.png"
 keywords = ["ApacheConf", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
@@ -44,6 +44,6 @@ ApacheConf jsem psal v 1 veřejném repozitáři, od roku 2015 do 2015; v 1 z ni
 
 K čemu to sloužilo: [Web](@/projects/web.cs.md) (1).
 
-Naposledy: [pavian.eu](https://github.com/korczis/pavian.eu).
+Naposledy: [pavian.eu](@/work/pavian-eu.cs.md).
 
 Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak ApacheConf používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje ApacheConf s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

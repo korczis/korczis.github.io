@@ -3,7 +3,7 @@
 title = "Dockerfile"
 description = "The recipe that builds a container image: a base system, files and commands, reproducible anywhere."
 template = "term.html"
-weight = 7
+weight = 9
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -16,8 +16,8 @@ kind = "language"
 definition = "The recipe that builds a container image: a base system, files and commands, reproducible anywhere."
 aliases = ["Docker", "docker"]
 reference = { title = "Dockerfile reference", url = "https://docs.docker.com/reference/dockerfile/" }
-pages = ["projects/media.md", "projects/systems.md", "services/_index.md", "services/ai-engineering-governance.md", "services/attack-surface.md", "services/compliance-screening.md", "services/continuous-monitoring.md", "services/decision-support-ai.md", "services/digital-forensics.md", "services/digital-investigation.md", "services/due-diligence.md", "services/m-and-a.md", "services/reputation-intelligence.md", "skills/_index.md", "skills/ai-transformation.md", "skills/audit-trail.md", "skills/data-integration.md", "skills/data-room.md", "skills/decision-support.md", "skills/document-extraction.md", "skills/due-diligence.md", "skills/entity-resolution.md", "skills/insolvency-monitoring.md", "skills/m-and-a-screening.md", "skills/market-intelligence.md", "skills/orchestration.md", "skills/risk-scoring.md", "work/el-magico-cache.md", "work/pdf-renderer.md", "work/prismatic-blog.md", "_index.md"]
-related = ["html", "javascript", "alpine-js", "fastapi", "claude-api", "flowbite-pro", "github-actions", "python"]
+pages = ["projects/media.md", "projects/systems.md", "services/_index.md", "services/attack-surface.md", "services/compliance-screening.md", "services/continuous-monitoring.md", "services/decision-support-ai.md", "services/digital-investigation.md", "services/due-diligence.md", "services/m-and-a.md", "services/reputation-intelligence.md", "skills/_index.md", "skills/ai-transformation.md", "skills/data-integration.md", "skills/data-room.md", "skills/decision-support.md", "skills/document-extraction.md", "skills/due-diligence.md", "skills/entity-resolution.md", "skills/geospatial-analysis.md", "skills/insolvency-monitoring.md", "skills/m-and-a-screening.md", "skills/market-intelligence.md", "skills/orchestration.md", "skills/risk-scoring.md", "work/astudo.md", "work/aws-lambda-docker.md", "work/docks.md", "work/el-magico-cache.md", "work/gh-exec-3000.md", "work/hydra.md", "work/microcrawler-js.md", "work/pdf-renderer.md", "work/prismatic-blog.md", "work/tosh.md", "work/zdeny-docker.md", "_index.md"]
+related = ["javascript", "html", "alpine-js", "fastapi", "claude-api", "flowbite-pro", "shell", "elixir"]
 og_title = "Dockerfile: glossary"
 og_image = "og/glossary-dockerfile.png"
 keywords = ["Dockerfile", "Programming language", "Glossary", "Tomas Korcak"]
@@ -40,11 +40,11 @@ span = 3
 height = "md"
 tone = "night"
 +++
-I have written Dockerfile in 6 public repositories, from 2019 to 2025; in 4 of them it is the main language.
+I have written Dockerfile in 9 public repositories, from 2018 to 2025; in 4 of them it is the main language.
 
-What it was for: [Systems and infrastructure](@/projects/systems.md) (3), [Tools](@/projects/tools.md) (2) and [Media and art](@/projects/media.md) (1).
+What it was for: [Systems and infrastructure](@/projects/systems.md) (4), [Tools](@/projects/tools.md) (3), [Libraries](@/projects/libraries.md) (1) and [Media and art](@/projects/media.md) (1).
 
-Most recently: [docks](https://gitlab.com/korczis/docks): Repository containing useful Dockerfile(s); [pdf\_renderer](@/work/pdf-renderer.md); [prismatic-blog](@/work/prismatic-blog.md).
+Most recently: [astudo](@/work/astudo.md); [docks](@/work/docks.md): Repository containing useful Dockerfile(s); [hydra](@/work/hydra.md): Modular wrapper and interface for pool of orchestrated Google Chrome instances.
 
 1 of these projects runs as a live site.
 

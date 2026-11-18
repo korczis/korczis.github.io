@@ -3,7 +3,7 @@
 title = "C#"
 description = "Objektově orientovaný jazyk Microsoftu pro .NET. Pojem ze slovníku."
 template = "term.html"
-weight = 3
+weight = 4
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -16,8 +16,8 @@ kind = "language"
 definition = "Objektově orientovaný jazyk Microsoftu pro .NET."
 aliases = []
 reference = { title = "C# documentation", url = "https://learn.microsoft.com/en-us/dotnet/csharp/" }
-pages = ["projects/learning.cs.md", "projects/tools.cs.md"]
-related = ["cpp", "elixir", "javascript", "repository", "ruby", "rust", "shell", "c"]
+pages = ["projects/learning.cs.md", "projects/tools.cs.md", "skills/market-intelligence.cs.md", "work/cs-benchmark.cs.md", "work/reflex.cs.md", "work/rocnikac4.cs.md"]
+related = ["repository", "open-source", "commit", "javascript", "cpp", "elixir", "ruby", "rust"]
 og_title = "C#: slovník"
 og_image = "og/cs-glossary-csharp.png"
 keywords = ["C#", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
@@ -44,6 +44,6 @@ C# jsem psal ve 3 veřejných repozitářích, od roku 2012 do 2014; ve 3 z nich
 
 K čemu to sloužilo: [Učení a experimenty](@/projects/learning.cs.md) (2) a [Nástroje](@/projects/tools.cs.md) (1).
 
-Naposledy: [cs-benchmark](https://github.com/korczis/cs-benchmark); [Rocnikac4](https://github.com/korczis/Rocnikac4); [reflex](https://github.com/korczis/reflex).
+Naposledy: [cs-benchmark](@/work/cs-benchmark.cs.md); [Rocnikac4](@/work/rocnikac4.cs.md); [reflex](@/work/reflex.cs.md).
 
 Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak C# používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje C# s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

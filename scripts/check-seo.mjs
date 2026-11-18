@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // SEO gate over the built site (rule project.seo-derived): every indexable page has a unique title
-// (at most 70 characters), a description of 50-165 characters, an absolute canonical URL listed in
+// (at most 70 characters), a unique description of 50-165 characters, a unique og:description, an absolute canonical URL listed in
 // the sitemap, Open Graph and Twitter tags whose image exists in the build at 1200x630, valid
 // JSON-LD, exactly one <h1> and a lang attribute; 404.html is noindex. Reads public/ (or SITE_DIR).
 //
@@ -93,7 +93,9 @@ function checkHire(rel, lang, text, graph) {
   }));
   if (!faq) fail(rel, 'no FAQPage while cv.toml [hire] available');
   else {
-    const asked = (faq.mainEntity ?? []).map((q) => ({ q: q.name, a: q.acceptedAnswer?.text }));
+    // Whitespace compares as plain() makes it: a non-breaking space (static/js/typography.js) is a space.
+    const ws = (t) => (t ?? '').replace(/\s+/g, ' ').trim();
+    const asked = (faq.mainEntity ?? []).map((q) => ({ q: ws(q.name), a: ws(q.acceptedAnswer?.text) }));
     for (const x of asked) {
       const v = shown.find((s) => s.q === x.q);
       if (!v) fail(rel, `FAQPage question "${x.q}" is not a visible <summary>`);
@@ -136,6 +138,8 @@ const pngSize = (file) => {
 
 const sitemap = readFileSync(join(SITE, 'sitemap.xml'), 'utf8');
 const titles = new Map();
+const descriptions = new Map();
+const ogDescriptions = new Map();
 const alternates = new Map(); // canonical -> {rel, lang -> href}
 let pages = 0;
 for (const file of html(SITE)) {
@@ -162,6 +166,13 @@ for (const file of html(SITE)) {
   if (titles.has(title)) fail(rel, `title duplicates ${titles.get(title)}`);
   titles.set(title, rel);
   const description = meta(text, 'description') || '';
+  // A description or social description another page has too tells a search engine nothing about
+  // this page (a template's README paragraph, a sentence with no fact of its own).
+  for (const [key, value, seen] of [['description', description, descriptions], ['og:description', meta(text, 'og:description'), ogDescriptions]]) {
+    if (!value) continue;
+    if (seen.has(value)) fail(rel, `${key} duplicates ${seen.get(value)}`);
+    seen.set(value, rel);
+  }
   const { min, max } = LIMITS.description;
   if (description.length < min || description.length > max) fail(rel, `description is ${description.length} characters, not ${min}-${max}`);
   const canonical = (text.match(/<link rel="canonical" href="([^"]*)"/) || [])[1];
@@ -228,6 +239,6 @@ if (findings.length) {
   for (const f of findings) console.error(`✗ ${f}`);
   process.exit(1);
 }
-console.log(`seo: ${pages} pages, ${titles.size} indexable with unique titles, tags, images and JSON-LD valid, ` +
+console.log(`seo: ${pages} pages, ${titles.size} indexable with unique titles and descriptions, tags, images and JSON-LD valid, ` +
   `hreflang ${LANGS.join('/')} on every one, ${pairs / 2} pairs mutual; knowsAbout ${KNOWS.size} terms, sameAs ` +
   `profiles only, ${(CV.roles ?? []).length} dated roles${HIRING ? `, /hire/ FAQ, evidence and times on ${hirePages} pages` : ''}, PASS`);

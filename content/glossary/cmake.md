@@ -3,7 +3,7 @@
 title = "CMake"
 description = "A build-system generator for C and C++: one description of a project produces Makefiles, Ninja files or IDE projects on any platform."
 template = "term.html"
-weight = 5
+weight = 6
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -16,8 +16,8 @@ kind = "language"
 definition = "A build-system generator for C and C++: one description of a project produces Makefiles, Ninja files or IDE projects on any platform."
 aliases = []
 reference = { title = "CMake documentation", url = "https://cmake.org/cmake/help/latest/" }
-pages = ["projects/learning.md"]
-related = ["c", "cpp", "csharp", "elixir", "erlang", "haskell", "java", "javascript"]
+pages = ["projects/learning.md", "work/happ.md", "work/skull-cpp.md"]
+related = ["cpp", "repository", "commit", "makefile", "open-source", "rust", "shell", "c"]
 og_title = "CMake: glossary"
 og_image = "og/glossary-cmake.png"
 keywords = ["CMake", "Programming language", "Glossary", "Tomas Korcak"]
@@ -44,6 +44,6 @@ I have written CMake in 1 public repository, from 2014 to 2015; in 1 of them it 
 
 What it was for: [Learning and experiments](@/projects/learning.md) (1).
 
-Most recently: [skull-cpp](https://github.com/korczis/skull-cpp): C++ Skull.
+Most recently: [skull-cpp](@/work/skull-cpp.md): C++ Skull.
 
 How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses CMake: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links CMake to the repositories and to the other languages and technologies they use together.

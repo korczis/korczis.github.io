@@ -1,0 +1,59 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "json2csv",
+  "sources": {
+    "github": "https://github.com/korczis/json2csv",
+    "gitlab": "https://gitlab.com/korczis/json2csv",
+    "commit": "2180d760a05989f3cefa75bb12929823f9a76fb6",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "json2csv.gemspec (tree)",
+      "lib (tree)",
+      "spec (tree)"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "cli",
+  "summary": {
+    "en": "A Ruby command-line tool that converts JSON into CSV, packaged as a gem. It takes a JSON object of records, writes each key as an id column and flattens nested objects into dotted column headers, with a configurable delimiter and a root key to select the object to export.",
+    "cs": "Ruby nástroj příkazové řádky, který převádí JSON na CSV, zabalený jako gem. Bere JSON objekt se záznamy, každý klíč zapíše jako sloupec id a vnořené objekty zploští do tečkovaných hlaviček sloupců; oddělovač lze nastavit a root klíčem vybrat objekt k exportu."
+  },
+  "problem": {
+    "en": "Nested JSON does not map directly onto a flat CSV, so converting it for spreadsheets or SQL import needs consistent flattening of keys.",
+    "cs": "Vnořený JSON se nemapuje přímo na ploché CSV, takže jeho převod pro tabulky nebo SQL import potřebuje konzistentní zplošťování klíčů."
+  },
+  "solution": {
+    "en": "The convert command reads a JSON file, optionally descends into a root key, derives the header from the first record's nested keys and writes <file>.csv, where nested keys become dotted headers and newlines are stripped from values.",
+    "cs": "Příkaz convert načte JSON soubor, volitelně sestoupí do root klíče, odvodí hlavičku z vnořených klíčů prvního záznamu a zapíše <soubor>.csv, kde se vnořené klíče stanou tečkovanými hlavičkami a z hodnot se odstraní konce řádků."
+  },
+  "highlights": [
+    {
+      "en": "Flattens nested JSON keys into dotted CSV headers.",
+      "cs": "Zplošťuje vnořené JSON klíče na tečkované CSV hlavičky."
+    },
+    {
+      "en": "Configurable delimiter and a root key to pick the export node.",
+      "cs": "Nastavitelný oddělovač a root klíč pro výběr exportního uzlu."
+    },
+    {
+      "en": "Gem with a GLI command line and Travis CI; the spec only checks that the version is defined.",
+      "cs": "Gem s příkazovou řádkou v GLI a Travis CI; spec jen ověřuje, že je definovaná verze."
+    }
+  ],
+  "stack": [
+    "Ruby",
+    "RubyGems"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[JSON file] --> B[Parse]\n  B --> R[Root key]\n  R --> C[Flatten keys]\n  C --> D[Dotted headers]\n  D --> E[CSV output]",
+    "caption": {
+      "en": "JSON is parsed and flattened into dotted headers written out as CSV.",
+      "cs": "JSON se naparsuje a zploští do tečkovaných hlaviček zapsaných jako CSV."
+    }
+  },
+  "related": [
+    "csv2psql"
+  ],
+  "confidence": "high"
+}

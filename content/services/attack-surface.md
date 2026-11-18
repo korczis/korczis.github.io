@@ -14,7 +14,7 @@ icon = "server"
 og_title = "External attack surface and cyber-exposure assessment"
 og_image = "og/service-attack-surface.png"
 schema = "service"
-terms = ["service", "elixir", "postgresql", "phoenix", "attack-surface", "regulatory-compliance", "change-detection", "risk-assessment", "web-scraping", "alpine-js", "claude-api", "dockerfile", "fastapi", "flowbite-pro", "github-actions", "html", "javascript", "kubernetes", "majordomus"]
+terms = ["service", "elixir", "postgresql", "phoenix", "attack-surface", "regulatory-compliance", "change-detection", "risk-assessment", "web-scraping", "javascript", "html", "alpine-js", "c", "claude-api", "css", "dockerfile", "fastapi", "flowbite-pro", "github-actions"]
 keywords = ["External attack surface and cyber-exposure assessment", "Infrastructure OSINT", "Regulatory compliance mapping", "Continuous monitoring", "Risk scoring", "Web automation and crawling", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -34,7 +34,9 @@ It draws on these skills: [Infrastructure OSINT](@/skills/infrastructure-osint.m
 
 It is built with [Elixir](@/glossary/elixir.md), [PostgreSQL](@/glossary/postgresql.md) and [Phoenix](@/glossary/phoenix.md).
 
-The technologies behind it, measured from the work that shows those skills: [Alpine.js](@/glossary/alpine-js.md), [Claude API](@/glossary/claude-api.md), [Dockerfile](@/glossary/dockerfile.md), [FastAPI](@/glossary/fastapi.md), [Flowbite Pro](@/glossary/flowbite-pro.md), [GitHub Actions](@/glossary/github-actions.md), [HTML](@/glossary/html.md) and [JavaScript](@/glossary/javascript.md).
+The technologies behind it, measured from the work that shows those skills: [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md), [Alpine.js](@/glossary/alpine-js.md), [C](@/glossary/c.md), [Claude API](@/glossary/claude-api.md), [CSS](@/glossary/css.md), [Dockerfile](@/glossary/dockerfile.md) and [FastAPI](@/glossary/fastapi.md).
+
+14 public repositories show its skills (14 by their own words).
 
 It was delivered in client work under confidentiality agreements, in Real-estate developer, as Architect, Lead engineer, AI engineer and Data engineer; the use cases describe the principle and the intent, never a client, person, date or number.
 

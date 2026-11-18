@@ -33,7 +33,7 @@ Služby, které z ní čerpají: [Podpora rozhodování a AI agenti pro analytik
 
 Praktikovaná s: [Shell](@/glossary/shell.cs.md), [HTML](@/glossary/html.cs.md), [Claude API](@/glossary/claude-api.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Python](@/glossary/python.cs.md), [TypeScript](@/glossary/typescript.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md) a [CSS](@/glossary/css.cs.md).
 
-Veřejná práce, jejíž vlastní slova ji dokládají: [sig](https://gitlab.com/korczis/sig), [prismatic-majordomus](https://github.com/korczis/prismatic-majordomus), [osint-case-ratcliffe-moscow-2026](https://github.com/korczis/osint-case-ratcliffe-moscow-2026) a [llm](https://gitlab.com/korczis/llm).
+Veřejná práce, jejíž vlastní slova ji dokládají: [sig](https://gitlab.com/korczis/sig), [korczis.github.io](https://github.com/korczis/korczis.github.io), [prismatic-majordomus](https://github.com/korczis/prismatic-majordomus) a [osint-case-ratcliffe-moscow-2026](https://github.com/korczis/osint-case-ratcliffe-moscow-2026).
 
 Byla použita v klientské práci v odvětví: Developer nemovitostí; případy užití níže uvádějí princip a záměr, bez jmen a čísel.
 

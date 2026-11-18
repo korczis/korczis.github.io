@@ -138,8 +138,8 @@ ${serviceArticle(s, lang)}
 
   files.skills.set(`_index${sfx}.md`, `+++
 ${MARK_SKILLS}
-title = ${q(t('skills_title', lang))}
-description = ${q(t('skills_lead', lang, { n: skillKeys.length }))}
+title = ${q(t('services_skills_title', lang))}
+description = ${q(t('services_skills_lead', lang, { n: skillKeys.length }))}
 template = "skills.html"
 page_template = "skill.html"
 sort_by = "weight"
@@ -149,7 +149,7 @@ og_title = ${q(t('skills_og', lang, { n: skillKeys.length }))}
 og_image = ${q(`og/${ogPrefix(lang)}skills.png`)}
 schema = "collection"
 terms = [${uniq(['skill', 'service', ...termsOf(skillKeys, topTech)]).map(q).join(', ')}]
-keywords = [${[t('skills_title', lang), ...skillKeys.slice(0, 12).map((k) => capName(k, lang)), me.nameIn(lang)].map(q).join(', ')}]
+keywords = [${[t('services_skills_title', lang), ...skillKeys.slice(0, 12).map((k) => capName(k, lang)), me.nameIn(lang)].map(q).join(', ')}]
 ${graph('viz_services_graph_title', 'viz_services_graph_lead')}+++
 ${[t('derive_skills_intro', lang, { n: skillKeys.length, services: n }), tl(g, 'derive_skills_how', lang)].join('\n\n')}
 `);
@@ -167,11 +167,11 @@ template = "skill.html"
 weight = ${i + 1}
 
 [taxonomies]
-tags = [${[t('skills_title', lang), local(rules.domains[domainOf(key)], 'name', lang)].filter(Boolean).map(q).join(', ')}]
+tags = [${[t('services_skills_title', lang), local(rules.domains[domainOf(key)], 'name', lang)].filter(Boolean).map(q).join(', ')}]
 
 [extra]
 skill = ${q(key)}
-og_title = ${q(`${capName(key, lang)}: ${t('skills_title', lang).toLowerCase()}`)}
+og_title = ${q(`${capName(key, lang)}: ${t('services_skills_title', lang).toLowerCase()}`)}
 og_image = ${q(`og/${ogPrefix(lang)}skill-${key}.png`)}
 schema = "skill"
 terms = [${uniq(['skill', ...termsOf([key], e.technologies)]).map(q).join(', ')}]

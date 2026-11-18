@@ -3,7 +3,7 @@
 title = "p5.js"
 description = "Knihovna pro kreativní programování odvozená z Processingu, pro kreslení a simulace v prohlížeči."
 template = "term.html"
-weight = 51
+weight = 58
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -44,7 +44,7 @@ p5.js je součástí 2 mých veřejných repozitářů, od roku 2024 do 2026.
 
 K čemu to sloužilo: [Věda a vizualizace](@/projects/science.cs.md) (1) a [Web](@/projects/web.cs.md) (1).
 
-Naposledy: [algoglyph](@/work/algoglyph.cs.md): Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem; [korczis.github.io](@/work/korczis-github-io.cs.md).
+Naposledy: [korczis.github.io](@/work/korczis-github-io.cs.md); [algoglyph](@/work/algoglyph.cs.md): Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.
 
 1 z těchto projektů běží jako živý web.
 

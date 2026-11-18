@@ -13,7 +13,7 @@ skill = "web-automation"
 og_title = "Webová automatizace a crawling: dovednosti"
 og_image = "og/cs-skill-web-automation.png"
 schema = "skill"
-terms = ["skill", "web-scraping"]
+terms = ["skill", "web-scraping", "javascript", "html", "shell"]
 keywords = ["Webová automatizace a crawling", "Digitální vyšetřování a OSINT dossier", "Hodnocení vnější útočné plochy a kybernetické expozice", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -30,5 +30,9 @@ Data i ze špatně dostupných zdrojů: automatizace prohlížeče v mezích pra
 Pojem, na kterém stojí: [Web scraping](@/glossary/web-scraping.cs.md).
 
 Služby, které z ní čerpají: [Digitální vyšetřování a OSINT dossier](@/services/digital-investigation.cs.md) a [Hodnocení vnější útočné plochy a kybernetické expozice](@/services/attack-surface.cs.md).
+
+Praktikovaná s: [JavaScript](@/glossary/javascript.cs.md), [HTML](@/glossary/html.cs.md) a [Shell](@/glossary/shell.cs.md).
+
+Veřejná práce, jejíž vlastní slova ji dokládají: [microcrawler-crawler-all](https://gitlab.com/korczis/microcrawler-crawler-all), [microcrawler-crawler-sreality-cz](https://gitlab.com/korczis/microcrawler-crawler-sreality-cz), [microcrawler-js](https://gitlab.com/korczis/microcrawler-js) a [microcrawler-crawler-xkcd-com](https://gitlab.com/korczis/microcrawler-crawler-xkcd-com).
 
 Jak číst tuto stránku: definice pochází ze slovníku zkušeností; služby, technologie, veřejné [repozitáře](@/glossary/repository.cs.md) a případy užití jsou odvozené a každá položka vede na svou stránku.

@@ -43,9 +43,10 @@ number nobody re-measures.
   about and hire pages names the author and the headline's role noun (rule
   `project.hire-surfaces`).
 - Derived, each with a `--check`: the translation tables and the client key list in `zola.toml`
-  (`build-i18n.mjs`), category pages, glossary pages (`build-glossary.mjs`), one page per project with a commit in the last
-  48 months (`content/work/`, from `data/recent.json`, the last commit date decides, never the
-  host's activity date), `llms.txt`, `llms-full.txt`, OG images,
+  (`build-i18n.mjs`), category pages, glossary pages (`build-glossary.mjs`), one page per original repository on
+  GitHub and GitLab in every language (`content/work/`, from `data/recent.json`; rule
+  `project.every-repository-page`: the recent ones dated by the period of their last commit, never
+  the host's activity date, the rest as dated archive), `llms.txt`, `llms-full.txt`, OG images,
   `site.json` (every page, category, project and repository as data), SEO and JSON-LD.
 - `.github/workflows/refresh.yml` re-measures every `REFRESH_HOURS` (its cron fires hourly and
   a run measures only when due; `npm run refresh`: data, index, recent, derive), runs `npm run check`, and only when every gate passes commits to master and starts the

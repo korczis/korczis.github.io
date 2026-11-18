@@ -13,7 +13,7 @@ skill = "change-monitoring"
 og_title = "Průběžný monitoring: dovednosti"
 og_image = "og/cs-skill-change-monitoring.png"
 schema = "skill"
-terms = ["skill", "change-detection"]
+terms = ["skill", "change-detection", "javascript", "css", "makefile", "rust"]
 keywords = ["Průběžný monitoring", "Digitální vyšetřování a OSINT dossier", "Reputační zpravodajství a monitoring negativních zpráv", "Monitoring insolvencí, sporů a změn v rejstřících", "Hodnocení vnější útočné plochy a kybernetické expozice", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -30,5 +30,9 @@ Sběr, který běží pořád a hlásí jen to podstatné: otisky zdrojů, změn
 Pojem, na kterém stojí: [Detekce změn](@/glossary/change-detection.cs.md).
 
 Služby, které z ní čerpají: [Digitální vyšetřování a OSINT dossier](@/services/digital-investigation.cs.md), [Reputační zpravodajství a monitoring negativních zpráv](@/services/reputation-intelligence.cs.md), [Monitoring insolvencí, sporů a změn v rejstřících](@/services/continuous-monitoring.cs.md) a [Hodnocení vnější útočné plochy a kybernetické expozice](@/services/attack-surface.cs.md).
+
+Praktikovaná s: [JavaScript](@/glossary/javascript.cs.md), [CSS](@/glossary/css.cs.md), [Makefile](@/glossary/makefile.cs.md) a [Rust](@/glossary/rust.cs.md).
+
+Veřejná práce, jejíž vlastní slova ji dokládají: [streamflow](https://github.com/korczis/streamflow), [microscratch](https://github.com/korczis/microscratch) a [microcrawler-couchapp](https://github.com/korczis/microcrawler-couchapp).
 
 Jak číst tuto stránku: definice pochází ze slovníku zkušeností; služby, technologie, veřejné [repozitáře](@/glossary/repository.cs.md) a případy užití jsou odvozené a každá položka vede na svou stránku.

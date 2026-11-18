@@ -13,7 +13,7 @@ skill = "change-monitoring"
 og_title = "Continuous monitoring: skills"
 og_image = "og/skill-change-monitoring.png"
 schema = "skill"
-terms = ["skill", "change-detection"]
+terms = ["skill", "change-detection", "javascript", "css", "makefile", "rust"]
 keywords = ["Continuous monitoring", "Digital investigation and OSINT dossiers", "Reputation intelligence and adverse-media monitoring", "Insolvency, litigation and register change monitoring", "External attack surface and cyber-exposure assessment", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -30,5 +30,9 @@ Collection that runs all the time and reports only what matters: sources fingerp
 The concept behind it: [Change detection](@/glossary/change-detection.md).
 
 Services that draw on it: [Digital investigation and OSINT dossiers](@/services/digital-investigation.md), [Reputation intelligence and adverse-media monitoring](@/services/reputation-intelligence.md), [Insolvency, litigation and register change monitoring](@/services/continuous-monitoring.md) and [External attack surface and cyber-exposure assessment](@/services/attack-surface.md).
+
+Practised with: [JavaScript](@/glossary/javascript.md), [CSS](@/glossary/css.md), [Makefile](@/glossary/makefile.md) and [Rust](@/glossary/rust.md).
+
+Public work whose own words show it: [streamflow](https://github.com/korczis/streamflow), [microscratch](https://github.com/korczis/microscratch) and [microcrawler-couchapp](https://github.com/korczis/microcrawler-couchapp).
 
 How to read this page: the definition is the experience vocabulary's; the services, technologies, public [repositories](@/glossary/repository.md) and use cases are derived and each links to its page.

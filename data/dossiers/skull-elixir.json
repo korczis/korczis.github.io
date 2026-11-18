@@ -1,0 +1,65 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "skull-elixir",
+  "sources": {
+    "github": "https://github.com/korczis/skull-elixir",
+    "gitlab": "https://gitlab.com/korczis/skull-elixir",
+    "commit": "df1315f50b2e14c41a7d6626205a7987d9bde4f6",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "mix.exs",
+      "lib/math.ex",
+      "lib/greeter.ex",
+      "lib/skull.ex",
+      "test/*.exs",
+      ".travis.yml"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "kata",
+  "summary": {
+    "en": "The Elixir member of the skull family of learning repositories. It holds small exercises such as FizzBuzz, factorial and a macro that prints arithmetic as sentences, with ExUnit tests.",
+    "cs": "Elixirový člen rodiny výukových repozitářů skull. Obsahuje drobná cvičení jako FizzBuzz, faktoriál a makro, které vypisuje aritmetiku jako věty, včetně ExUnit testů."
+  },
+  "problem": {
+    "en": "Learning a new language goes faster with the same small exercises solved in each language. This repository is the Elixir edition.",
+    "cs": "Novému jazyku se člověk učí rychleji, když v každém řeší stejná malá cvičení. Tohle je elixirová verze."
+  },
+  "solution": {
+    "en": "Pattern-matching anonymous functions implement FizzBuzz and factorial, and a say macro matches on the quoted AST of +, -, * and / to print and return the result. Travis CI runs the tests.",
+    "cs": "FizzBuzz a faktoriál jsou anonymní funkce s pattern matchingem a makro say matchuje quoted AST operací +, -, * a /, výsledek vypíše a vrátí. Testy běží na Travis CI."
+  },
+  "highlights": [
+    {
+      "en": "Macro that pattern-matches on quoted AST.",
+      "cs": "Makro s pattern matchingem nad quoted AST."
+    },
+    {
+      "en": "Tests for every module.",
+      "cs": "Testy pro každý modul."
+    }
+  ],
+  "stack": [
+    "Elixir",
+    "Mix",
+    "ExUnit",
+    "Travis CI"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[Skull.Math] --> B[fizzbuzz]\n  A --> C[factorial]\n  A --> D[say macro]\n  E[Greeter] --> F[ExUnit tests]\n  A --> F",
+    "caption": {
+      "en": "Small exercise modules with tests.",
+      "cs": "Malé moduly cvičení s testy."
+    }
+  },
+  "related": [
+    "skull",
+    "skull-rust",
+    "skull-ruby",
+    "skull-erlang",
+    "skull-haskell",
+    "skull-nodejs"
+  ],
+  "confidence": "high"
+}

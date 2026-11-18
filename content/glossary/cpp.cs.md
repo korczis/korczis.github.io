@@ -3,7 +3,7 @@
 title = "C++"
 description = "C s třídami, šablonami a abstrakcemi, které za běhu nic nestojí; tam, kde záleží na rychlosti."
 template = "term.html"
-weight = 4
+weight = 5
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -16,8 +16,8 @@ kind = "language"
 definition = "C s třídami, šablonami a abstrakcemi, které za běhu nic nestojí; tam, kde záleží na rychlosti."
 aliases = []
 reference = { title = "cppreference.com", url = "https://en.cppreference.com/" }
-pages = ["projects/learning.cs.md", "projects/science.cs.md", "projects/security.cs.md", "projects/tools.cs.md"]
-related = ["repository", "rust", "elixir", "javascript", "ruby", "csharp", "haskell", "python"]
+pages = ["projects/learning.cs.md", "projects/science.cs.md", "projects/security.cs.md", "projects/tools.cs.md", "work/algorithms-ruby.cs.md", "work/algorithms.cs.md", "work/happ.cs.md", "work/icave.cs.md", "work/peacemaker.cs.md", "work/skull-cpp.cs.md", "work/skull-emscripten.cs.md"]
+related = ["repository", "open-source", "commit", "rust", "c", "ruby", "shell", "cmake"]
 og_title = "C++: slovník"
 og_image = "og/cs-glossary-cpp.png"
 keywords = ["C++", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
@@ -40,10 +40,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
-C++ jsem psal v 6 veřejných repozitářích, od roku 2014 do 2021; v 6 z nich je hlavním jazykem.
+C++ jsem psal v 7 veřejných repozitářích, od roku 2014 do 2021; v 6 z nich je hlavním jazykem.
 
-K čemu to sloužilo: [Učení a experimenty](@/projects/learning.cs.md) (2), [Věda a vizualizace](@/projects/science.cs.md) (2), [Bezpečnost a OSINT](@/projects/security.cs.md) (1) a [Nástroje](@/projects/tools.cs.md) (1).
+K čemu to sloužilo: [Učení a experimenty](@/projects/learning.cs.md) (3), [Věda a vizualizace](@/projects/science.cs.md) (2), [Bezpečnost a OSINT](@/projects/security.cs.md) (1) a [Nástroje](@/projects/tools.cs.md) (1).
 
-Naposledy: [happ](https://github.com/korczis/happ); [algorithms-ruby](https://github.com/korczis/algorithms-ruby); [iCave](https://github.com/korczis/iCave).
+Naposledy: [happ](@/work/happ.cs.md); [skull-cpp](@/work/skull-cpp.cs.md); [algorithms-ruby](@/work/algorithms-ruby.cs.md).
 
 Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak C++ používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje C++ s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

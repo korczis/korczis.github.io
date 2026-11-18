@@ -13,7 +13,7 @@ skill = "audit-trail"
 og_title = "Auditní stopa: dovednosti"
 og_image = "og/cs-skill-audit-trail.png"
 schema = "skill"
-terms = ["skill", "audit-trail", "html", "javascript", "python", "claude-api", "shell", "alpine-js", "css", "dockerfile", "elixir", "fastapi"]
+terms = ["skill", "audit-trail", "html", "javascript", "python", "shell", "alpine-js", "claude-api", "css", "flowbite-pro", "majordomus", "tailwind-css"]
 keywords = ["Auditní stopa", "Digitální forenzní analýza a zajištění důkazů", "Podpora rozhodování a AI agenti pro analytiky", "Řízený vývoj softwaru s AI", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -31,9 +31,9 @@ Pojem, na kterém stojí: [Auditní stopa](@/glossary/audit-trail.cs.md).
 
 Služby, které z ní čerpají: [Digitální forenzní analýza a zajištění důkazů](@/services/digital-forensics.cs.md), [Podpora rozhodování a AI agenti pro analytiky](@/services/decision-support-ai.cs.md) a [Řízený vývoj softwaru s AI](@/services/ai-engineering-governance.cs.md).
 
-Praktikovaná s: [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Python](@/glossary/python.cs.md), [Claude API](@/glossary/claude-api.cs.md), [Shell](@/glossary/shell.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md), [CSS](@/glossary/css.cs.md) a [Dockerfile](@/glossary/dockerfile.cs.md).
+Praktikovaná s: [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Python](@/glossary/python.cs.md), [Shell](@/glossary/shell.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md), [Claude API](@/glossary/claude-api.cs.md), [CSS](@/glossary/css.cs.md) a [Flowbite Pro](@/glossary/flowbite-pro.cs.md).
 
-Veřejná práce, jejíž vlastní slova ji dokládají: [catharsis-as-a-service](https://github.com/korczis/catharsis-as-a-service) a [llm](https://gitlab.com/korczis/llm).
+Veřejná práce, jejíž vlastní slova ji dokládají: [korczis.github.io](https://github.com/korczis/korczis.github.io), [catharsis-as-a-service](https://github.com/korczis/catharsis-as-a-service) a [llm](https://gitlab.com/korczis/llm).
 
 Byla použita v klientské práci v odvětví: Developer nemovitostí a Finanční a investiční skupina; případy užití níže uvádějí princip a záměr, bez jmen a čísel.
 

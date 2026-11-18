@@ -3,7 +3,7 @@
 title = "Phoenix"
 description = "Elixir's web framework; LiveView renders interactive pages on the server and pushes only the changes over a socket."
 template = "term.html"
-weight = 52
+weight = 59
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -44,6 +44,6 @@ Phoenix is part of 1 of my public repositories, from 2017 to 2018.
 
 What it was for: [Web](@/projects/web.md) (1).
 
-Most recently: [the-scratch](https://github.com/korczis/the-scratch): Single Page Application written in Elm with Elixir/Phoenix Backend.
+Most recently: [the-scratch](@/work/the-scratch.md): Single Page Application written in Elm with Elixir/Phoenix Backend.
 
 How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses Phoenix: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links Phoenix to the repositories and to the other languages and technologies they use together.
