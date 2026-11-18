@@ -3,39 +3,110 @@
 {% block content %}
 {%- set lp = "" %}{% if lang is defined and lang != config.default_language %}{% set lp = "/" ~ lang %}{% endif -%}
 {%- set sfx = "" %}{% if lang is defined and lang != config.default_language %}{% set sfx = "_" ~ lang %}{% endif -%}
-{#- Availability for hire (ADR 0007). The owner's facts come from data/cv.toml [hire] and [[roles]],
-    the evidence is measured (data/github.json, data/index.json); nothing on this page is typed. #}
+{%- set xl = "" %}{% if lang is defined and lang != config.default_language %}{% set xl = "." ~ lang %}{% endif -%}
+{#- Availability for hire (ADR 0007), the evidence page. The owner's facts come from data/cv.toml
+    [hire] and [[roles]]; the evidence is measured (data/github.json, data/index.json) or mined and
+    anonymised (data/experience.json); the words that tie a role to its proof are the glossary
+    (data/glossary.toml) and the capability vocabulary (data/experience-rules.toml). Nothing on this
+    page is typed; scripts/check-seo.mjs gates the built result (rule project.seo-derived). #}
 {%- set cv = load_data(path="data/cv.toml") -%}
 {%- set gh = load_data(path="data/github.json") -%}
 {%- set ix = load_data(path="data/index.json") -%}
+{%- set gl = load_data(path="data/glossary.toml") -%}
+{%- set xr = load_data(path="data/experience-rules.toml") -%}
+{%- set xp = load_data(path="data/experience.json", required=false) -%}
 {%- set base = config.base_url ~ lp ~ "/" -%}
 {%- set link = "font-medium text-primary-700 hover:underline dark:text-primary-400" -%}
+{%- set muted = "text-xs text-gray-600 dark:text-gray-400" -%}
 {%- set as_of = ix.generated_at | date(format="%Y-%m-%d") -%}
+{%- set months = trans(key="derive_months", lang=lang) | split(pat=",") -%}
 {%- set_global first_year = now() | date(format="%Y") | int -%}
 {%- for r in cv.roles %}{% set y = r.start | truncate(length=4, end="") | int %}{% if y < first_year %}{% set_global first_year = y %}{% endif %}{% endfor -%}
 {%- set career = (now() | date(format="%Y") | int) - first_year -%}
 {%- set since = gh.profile.created_at | date(format="%Y") -%}
 {%- set public_years = (now() | date(format="%Y") | int) - (since | int) -%}
-{{ <page_header title={page.title} lead={page.description} lang={lang} /> }}
+{#- The work pages of this language, the latest commit first: the evidence a role links to. #}
+{%- set wsec = get_section(path="work/_index" ~ xl ~ ".md") -%}
+{%- set wpages = wsec.pages | sort(attribute="updated") | reverse -%}
+{#- The capabilities the client work shows (data/experience.json), as "|key|key|". #}
+{%- set_global xcaps = "|" %}{% if xp %}{% for e in xp.engagements %}{% for c in e.capabilities | default(value=[]) %}{% if not ("|" ~ c.key ~ "|") in xcaps %}{% set_global xcaps = xcaps ~ c.key ~ "|" %}{% endif %}{% endfor %}{% endfor %}{% endif -%}
 
 {%- if cv.hire is defined and cv.hire.available %}
 {%- set h = cv.hire %}
 {%- set roles = h["roles" ~ sfx] | default(value=h.roles) %}
+{%- set headline = h["headline" ~ sfx] | default(value=h.headline) %}
+{#- The h1 names the person and the role, so a shared link or a reader of headings gets both. #}
+{{ <page_header title={config.extra.author ~ " · " ~ headline} lead={page.description} lang={lang} /> }}
 <div class="space-y-4 px-4 pb-2 pt-6">
   {#- Status and terms: Flowbite Pro pricing card (pricing/default), one column of terms. #}
   <div class="grid grid-cols-1 gap-4 xl:grid-cols-3">
     {% <card cls="xl:col-span-2" labelledby="roles-title"> %}
       <div class="mb-4 flex flex-wrap items-center gap-2">
         {{ <badge label={trans(key="hire_status", lang=lang)} tone="green" dot={true} /> }}
-        {%- if h.since is defined %}<span class="text-sm text-gray-600 dark:text-gray-400">{{ trans(key="hire_since", lang=lang) | replace(from="{date}", to=h.since) }}</span>{% endif %}
+        {%- if h.since is defined %}{% set sp = h.since | split(pat="-") %}
+        {%- if sp | length > 1 %}{% set sl = months[(sp[1] | int) - 1] ~ " " ~ sp[0] %}{% else %}{% set sl = sp[0] %}{% endif %}
+        <span class="text-sm text-gray-600 dark:text-gray-400">{{ trans(key="hire_since", lang=lang) | replace(from="{date}", to='<time datetime="' ~ h.since ~ '">' ~ sl ~ '</time>') | safe }}</span>
+        {%- endif %}
       </div>
-      <p class="mb-5 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ h["headline" ~ sfx] | default(value=h.headline) }}</p>
       {{ <card_head id="roles-title" title={trans(key="hire_roles_title", lang=lang)} lead={trans(key="hire_roles_lead", lang=lang) | replace(from="{years}", to=career ~ "")} /> }}
-      <ul class="space-y-3">
+      {#- Each role with its evidence, inferred from the role's own words (the English text, the same
+          role in every language): the glossary terms it names (a term, or an alias such as M&A),
+          and the capabilities whose keywords it matches (data/experience-rules.toml, a trailing *
+          matching any word that starts with it), which bring their glossary term and the public
+          work that shares them. The role then links those terms, the work pages that use them
+          (latest commit first) and the client work that shows the capability, anonymised. #}
+      <ul class="space-y-4">
         {%- for r in roles %}
+        {%- set ri = loop.index0 %}
+        {%- set rn = " " ~ (h.roles[ri] | lower | replace(from=":", to=" ") | replace(from=",", to=" ") | replace(from="&", to=" ") | replace(from="/", to=" ") | replace(from="(", to=" ") | replace(from=")", to=" ") | replace(from=".", to=" ") | replace(from="  ", to=" ") | replace(from="  ", to=" ")) ~ " " %}
+        {%- set_global rterms = "|" %}{% set_global rcaps = "|" %}{% set_global rrepos = "|" %}
+        {%- for gt in gl.terms %}
+        {%- set nn = " " ~ (gt.term | lower | replace(from="&", to=" ") | replace(from=".", to=" ")) ~ " " %}{% if rn is containing(pat=nn) and not ("|" ~ gt.id ~ "|") in rterms %}{% set_global rterms = rterms ~ gt.id ~ "|" %}{% endif %}
+        {%- for n in gt.aliases | default(value=[]) %}{% set nn = " " ~ (n | lower | replace(from="&", to=" ") | replace(from=".", to=" ")) ~ " " %}{% if rn is containing(pat=nn) and not ("|" ~ gt.id ~ "|") in rterms %}{% set_global rterms = rterms ~ gt.id ~ "|" %}{% endif %}{% endfor %}
+        {%- endfor %}
+        {%- for ckey, c in xr.capabilities %}
+        {%- set_global chit = false %}
+        {%- for k in c.keywords | default(value=[]) %}
+        {%- if k is ending_with(pat="*") %}{% if rn is containing(pat=" " ~ k | replace(from="*", to="")) %}{% set_global chit = true %}{% endif %}
+        {%- elif rn is containing(pat=" " ~ k ~ " ") %}{% set_global chit = true %}{% endif %}
+        {%- endfor %}
+        {%- if chit %}
+        {%- set_global rcaps = rcaps ~ ckey ~ "|" %}
+        {%- if c.term is defined and not ("|" ~ c.term ~ "|") in rterms %}{% set_global rterms = rterms ~ c.term ~ "|" %}{% endif %}
+        {%- if xp and xp.public_work[ckey] is defined %}{% for pr in xp.public_work[ckey] %}{% set_global rrepos = rrepos ~ pr ~ "|" %}{% endfor %}{% endif %}
+        {%- endif %}
+        {%- endfor %}
         <li class="flex gap-3">
           <span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary-100 text-primary-700 dark:bg-primary-900 dark:text-primary-300">{{ <icon name="check" class="h-4 w-4" /> }}</span>
-          <span class="text-gray-700 dark:text-gray-300">{{ r }}</span>
+          <div class="min-w-0">
+            <p class="text-gray-700 dark:text-gray-300">{{ r }}</p>
+            <p data-hire-evidence="{{ ri }}" class="mt-2 flex flex-wrap items-center gap-1.5">
+              <span class="{{ muted }}">{{ trans(key="in_the_glossary", lang=lang) }}:</span>
+              {%- for gt in gl.terms %}{% if ("|" ~ gt.id ~ "|") in rterms %}
+              {%- set tp = get_page(path="glossary/" ~ gt.id ~ xl ~ ".md") %}
+              {%- set_global tcount = "" %}{% if gt.kind == "language" %}{% for l in ix.languages %}{% if l.name == gt.term or l.name in gt.aliases | default(value=[]) %}{% set_global tcount = l.repos ~ "" %}{% endif %}{% endfor %}{% endif %}
+              {{ <chip label={gt["term" ~ sfx] | default(value=gt.term)} href={tp.permalink} count={tcount} size="xs" /> }}
+              {%- endif %}{% endfor %}
+              {#- At most three work pages: first those that use one of the role's terms, then the
+                  public work that shares one of its capabilities; each pass latest commit first. #}
+              {%- set_global wn = 0 %}{% set_global wseen = "|" %}
+              {%- for pass in ["terms", "capabilities"] %}
+              {%- for p in wpages %}{% if wn < 3 and not ("|" ~ p.extra.repo ~ "|") in wseen %}
+              {%- set_global whit = false %}
+              {%- if pass == "terms" %}{% for t in p.extra.terms | default(value=[]) %}{% if ("|" ~ t ~ "|") in rterms %}{% set_global whit = true %}{% endif %}{% endfor %}
+              {%- else %}{% set_global whit = ("|" ~ p.extra.repo ~ "|") in rrepos %}{% endif %}
+              {%- if whit %}{% set_global wn = wn + 1 %}{% set_global wseen = wseen ~ p.extra.repo ~ "|" %}
+              {%- if wn == 1 %}<span class="{{ muted }} ms-1">{{ trans(key="recent_work", lang=lang) }}:</span>{% endif %}
+              {{ <chip label={p.title} href={p.permalink} size="xs" variant="primary" /> }}
+              {%- endif %}{% endif %}{% endfor %}
+              {%- endfor %}
+              {%- set_global cn = 0 %}
+              {%- for ckey, c in xr.capabilities %}{% if ("|" ~ ckey ~ "|") in rcaps and ("|" ~ ckey ~ "|") in xcaps %}{% set_global cn = cn + 1 %}
+              {%- if cn == 1 %}<span class="{{ muted }} ms-1">{{ trans(key="xp_eyebrow", lang=lang) }}:</span>{% endif %}
+              {{ <chip label={c["name" ~ sfx] | default(value=c.name)} href={base ~ "#xp-cap-" ~ ckey} size="xs" /> }}
+              {%- endif %}{% endfor %}
+            </p>
+          </div>
         </li>
         {%- endfor %}
       </ul>
@@ -74,7 +145,7 @@
   {% <card labelledby="evidence-title"> %}
     {{ <card_head id="evidence-title" title={trans(key="hire_evidence_title", lang=lang)} lead={trans(key="hire_evidence_lead", lang=lang)} /> }}
     <ul class="tabular grid grid-cols-2 gap-4 xl:grid-cols-4">
-      {%- for stat in [[gh.contributions.total ~ "", "hire_kpi_contributions", base ~ "work/"], [public_years ~ "", "kpi_years", base ~ "about/"], [ix.counts.own ~ "", "kpi_original_repositories", base ~ "repositories/"], [ix.languages | length ~ "", "kpi_languages", base ~ "repositories/"]] %}
+      {%- for stat in [[gh.contributions.total | num_format(locale=lang), "hire_kpi_contributions", base ~ "work/"], [public_years | num_format(locale=lang), "kpi_years", base ~ "about/"], [ix.counts.own | num_format(locale=lang), "kpi_original_repositories", base ~ "repositories/"], [ix.languages | length | num_format(locale=lang), "kpi_languages", base ~ "repositories/"]] %}
       <li><a href="{{ stat[2] }}" class="flex h-full flex-col rounded-lg border border-gray-200 bg-white p-4 hover:bg-gray-50 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-primary-800">
         <span class="text-3xl font-extrabold leading-none text-gray-900 dark:text-white">{{ stat[0] }}</span>
         <span class="mt-2 text-sm text-gray-600 dark:text-gray-400">{{ trans(key=stat[1], lang=lang) }}</span>
@@ -84,51 +155,128 @@
     <p class="mt-3 text-xs text-gray-600 dark:text-gray-400">{{ trans(key="hero_measured", lang=lang) | replace(from="{date}", to=as_of) }}</p>
   {% </card> %}
 
+  {#- Skills, measured: the visible twin of Person.knowsAbout (templates/partials/seo.html). Languages
+      of the original repositories with their count and the years their repositories were created
+      in (data/index.json languages_by_year), the technologies of the curated stacks with the
+      projects that use them, and the technologies of the client work with the engagements that
+      used them. A skill links to its glossary term (else to the list that shows it), its evidence
+      to the work page of that repository (else to the repository); a term the owner does not claim
+      (glossary claimed = false) is left out, and so is a language with no glossary term (the
+      repositories list shows every language). Flowbite Pro list groups in a dashboard card. #}
+  {% <card labelledby="skills-title"> %}
+    {{ <card_head id="skills-title" title={trans(key="skills", lang=lang)} action={trans(key="every_language", lang=lang)} href={base ~ "repositories/"} /> }}
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
+      <div>
+        <h3 class="mb-2 text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400">{{ trans(key="languages", lang=lang) | safe }}</h3>
+        <ul class="divide-y divide-gray-200 dark:divide-gray-700">
+          {%- for l in ix.skills.languages %}
+          {%- set_global sterm = false %}{% for gt in gl.terms %}{% if gt.term == l.name or l.name in gt.aliases | default(value=[]) %}{% set_global sterm = gt %}{% endif %}{% endfor %}
+          {%- if sterm and (sterm.claimed is not defined or sterm.claimed) %}
+          {%- set_global y0 = 0 %}{% set_global y1 = 0 %}
+          {%- for y, m in ix.languages_by_year %}{% if m[l.name] is defined and m[l.name] > 0 %}{% set yi = y | int %}{% if y0 == 0 or yi < y0 %}{% set_global y0 = yi %}{% endif %}{% if yi > y1 %}{% set_global y1 = yi %}{% endif %}{% endif %}{% endfor %}
+          {%- if l.repos == 1 %}{% set form = "one" %}{% elif l.repos >= 2 and l.repos <= 4 %}{% set form = "few" %}{% else %}{% set form = "other" %}{% endif %}
+          <li class="py-2" data-skill="{{ l.name }}">
+            <div class="flex flex-wrap items-baseline justify-between gap-x-2">
+              {%- set lgp = get_page(path="glossary/" ~ sterm.id ~ xl ~ ".md") %}<a class="{{ link }}" href="{{ lgp.permalink }}">{{ l.name }}</a>
+              <span class="tabular {{ muted }}">{{ trans(key="xp_n_repositories__" ~ form, lang=lang) | replace(from="{n}", to=l.repos ~ "") }}{% if y0 > 0 %} · <time datetime="{{ y0 }}">{{ y0 }}</time>{% if y1 > y0 %}–<time datetime="{{ y1 }}">{{ y1 }}</time>{% endif %}{% endif %}</span>
+            </div>
+            <p class="{{ muted }} mt-0.5">{% for e in l.evidence %}
+              {%- set_global eu = e.url %}{% for p in wpages %}{% if p.extra.repo == e.name %}{% set_global eu = p.permalink %}{% endif %}{% endfor -%}
+              <a class="hover:underline" href="{{ eu }}">{{ e.name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>
+          </li>
+          {%- endif %}
+          {%- endfor %}
+        </ul>
+      </div>
+      <div>
+        <h3 class="mb-2 text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400">{{ trans(key="technologies", lang=lang) | safe }}</h3>
+        <ul class="divide-y divide-gray-200 dark:divide-gray-700">
+          {%- for t in ix.skills.technologies %}
+          {%- set_global sterm = false %}{% for gt in gl.terms %}{% if gt.term == t.name or t.name in gt.aliases | default(value=[]) %}{% set_global sterm = gt %}{% endif %}{% endfor %}
+          {%- if not sterm or sterm.claimed is not defined or sterm.claimed %}
+          {%- if sterm %}{% set thp = get_page(path="glossary/" ~ sterm.id ~ xl ~ ".md") %}{% set th = thp.permalink %}{% else %}{% set th = base ~ "projects/?project=" ~ t.evidence[0].repo %}{% endif %}
+          <li class="py-2" data-skill="{{ t.name }}">
+            <a class="{{ link }}" href="{{ th }}">{{ t.name }}</a>
+            <p class="{{ muted }} mt-0.5">{{ trans(key="used_in", lang=lang) }}: {% for e in t.evidence %}
+              {%- set_global eu = base ~ "projects/?project=" ~ e.repo %}{% for p in wpages %}{% if p.extra.repo == e.repo %}{% set_global eu = p.permalink %}{% endif %}{% endfor -%}
+              <a class="hover:underline" href="{{ eu }}">{{ e.name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>
+          </li>
+          {%- endif %}
+          {%- endfor %}
+        </ul>
+      </div>
+      {%- if xp %}
+      {%- set_global xtech = "" %}{% for e in xp.engagements %}{% for t in e.technologies | default(value=[]) %}{% if not ("|" ~ t ~ "|") in ("|" ~ xtech ~ "|") %}{% if xtech %}{% set_global xtech = xtech ~ "|" %}{% endif %}{% set_global xtech = xtech ~ t %}{% endif %}{% endfor %}{% endfor %}
+      {%- if xtech %}
+      <div>
+        <h3 class="mb-2 text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400">{{ trans(key="xp_eyebrow", lang=lang) }}</h3>
+        <ul class="divide-y divide-gray-200 dark:divide-gray-700">
+          {%- for t in xtech | split(pat="|") %}
+          {%- set_global sterm = false %}{% for gt in gl.terms %}{% if gt.term == t or t in gt.aliases | default(value=[]) %}{% set_global sterm = gt %}{% endif %}{% endfor %}
+          {%- if not sterm or sterm.claimed is not defined or sterm.claimed %}
+          {%- set_global xn = 0 %}{% for e in xp.engagements %}{% if t in e.technologies | default(value=[]) %}{% set_global xn = xn + 1 %}{% endif %}{% endfor %}
+          {%- if xn == 1 %}{% set form = "one" %}{% elif xn >= 2 and xn <= 4 %}{% set form = "few" %}{% else %}{% set form = "other" %}{% endif %}
+          {%- if sterm %}{% set thp = get_page(path="glossary/" ~ sterm.id ~ xl ~ ".md") %}{% set th = thp.permalink %}{% else %}{% set th = base ~ "#experience" %}{% endif %}
+          <li class="flex flex-wrap items-baseline justify-between gap-x-2 py-2" data-skill="{{ t }}">
+            <a class="{{ link }}" href="{{ th }}">{{ t }}</a>
+            <span class="tabular {{ muted }}">{{ trans(key="xp_n_engagements__" ~ form, lang=lang) | replace(from="{n}", to=xn ~ "") }}</span>
+          </li>
+          {%- endif %}
+          {%- endfor %}
+        </ul>
+      </div>
+      {%- endif %}
+      {%- endif %}
+    </div>
+    <p class="mt-3 text-xs text-gray-600 dark:text-gray-400">{{ trans(key="hero_measured", lang=lang) | replace(from="{date}", to=as_of) }}</p>
+  {% </card> %}
+
   <div class="grid grid-cols-1 gap-4 xl:grid-cols-2">
-    {#- Track record: the finished roles from data/cv.toml, newest first (timeline). #}
+    {#- Track record: the finished roles first, newest first, with the titles held at one
+        organisation in a row as one entry (its progression), then the roles that still run.
+        Every date is a <time> with its machine value. #}
     {% <card labelledby="track-title"> %}
       {{ <card_head id="track-title" title={trans(key="hire_track_title", lang=lang)} action={trans(key="hire_cv_link", lang=lang)} href={base ~ "about/#cv-title"} /> }}
       <ol class="relative border-s border-gray-200 dark:border-gray-700">
-        {%- for r in cv.roles %}
+        {%- set_global prev = "" %}
+        {%- for r in cv.roles %}{% if r.end is defined %}
+        {%- if r.organisation != prev %}
+        {%- if prev %}</ul></li>{% endif %}
+        {%- set_global prev = r.organisation %}
         <li class="mb-4 ms-4">
           <div class="absolute -start-1.5 mt-1.5 h-3 w-3 rounded-full border border-white bg-primary-600 dark:border-gray-900 dark:bg-primary-500"></div>
-          <time class="tabular mb-1 block text-xs leading-none text-gray-600 dark:text-gray-400">{{ r.start }} – {% if r.end is defined %}{{ r.end }}{% else %}{{ trans(key="cv_present", lang=lang) | safe }}{% endif %}</time>
-          <p class="text-sm font-semibold text-gray-900 dark:text-white">{{ r["title" ~ sfx] | default(value=r.title) }}</p>
-          <p class="text-sm text-gray-600 dark:text-gray-400">{% if r.url is defined %}<a class="{{ link }}" href="{{ r.url }}">{{ r.organisation }}</a>{% else %}{{ r.organisation }}{% endif %}</p>
+          <p class="text-sm font-semibold text-gray-900 dark:text-white">{% if r.url is defined %}<a class="{{ link }}" href="{{ r.url }}">{{ r.organisation }}</a>{% else %}{{ r.organisation }}{% endif %}</p>
+          <ul class="mt-1 space-y-1.5">
+        {%- endif %}
+        {%- set s = r.start | split(pat="-") %}{% set e = r.end | split(pat="-") %}
+            <li>
+              <p class="text-sm text-gray-700 dark:text-gray-300">{{ r["title" ~ sfx] | default(value=r.title) }}</p>
+              <p class="tabular {{ muted }}"><time datetime="{{ r.start }}">{% if s | length > 1 %}{{ trans(key="xp_month_" ~ (s[1] | int), lang=lang) }} {% endif %}{{ s[0] }}</time> – <time datetime="{{ r.end }}">{% if e | length > 1 %}{{ trans(key="xp_month_" ~ (e[1] | int), lang=lang) }} {% endif %}{{ e[0] }}</time></p>
+              {%- if r.summary is defined %}<p class="{{ muted }} mt-0.5">{{ r["summary" ~ sfx] | default(value=r.summary) }}</p>{% endif %}
+            </li>
+        {%- endif %}{% endfor %}
+        {%- if prev %}</ul></li>{% endif %}
+        {%- for r in cv.roles %}{% if r.end is not defined %}
+        {%- set s = r.start | split(pat="-") %}
+        {%- if s | length > 1 %}{% set sl = months[(s[1] | int) - 1] ~ " " ~ s[0] %}{% else %}{% set sl = s[0] %}{% endif %}
+        <li class="mb-4 ms-4">
+          <div class="absolute -start-1.5 mt-1.5 h-3 w-3 rounded-full border border-white bg-green-500 dark:border-gray-900"></div>
+          <p class="text-sm font-semibold text-gray-900 dark:text-white">{% if r.url is defined %}<a class="{{ link }}" href="{{ r.url }}">{{ r.organisation }}</a>{% else %}{{ r.organisation }}{% endif %}</p>
+          <p class="text-sm text-gray-700 dark:text-gray-300">{{ r["title" ~ sfx] | default(value=r.title) }}</p>
+          <p class="tabular {{ muted }}">{{ trans(key="hire_since", lang=lang) | replace(from="{date}", to='<time datetime="' ~ r.start ~ '">' ~ sl ~ '</time>') | safe }}</p>
+          {%- if r.summary is defined %}<p class="{{ muted }} mt-0.5">{{ r["summary" ~ sfx] | default(value=r.summary) }}</p>{% endif %}
         </li>
-        {%- endfor %}
+        {%- endif %}{% endfor %}
       </ol>
     {% </card> %}
 
     <div class="space-y-4">
-      {#- The FAQ, the same questions and answers the FAQPage JSON-LD carries (Flowbite accordion as
-          native disclosures). #}
+      {#- The FAQ, built once in partials/hire-faq.html, which the FAQPage JSON-LD renders too
+          (Flowbite accordion as native disclosures). #}
       {% <card labelledby="faq-title"> %}
         {{ <card_head id="faq-title" title={trans(key="hire_faq_title", lang=lang)} /> }}
-        <div class="divide-y divide-gray-200 overflow-hidden rounded-lg border border-gray-200 dark:divide-gray-700 dark:border-gray-700">
-          {%- set_global heng = "" %}{% for e in h.engagement %}{% if heng %}{% set_global heng = heng ~ ", " %}{% endif %}{% set_global heng = heng ~ trans(key="hire_engagement_" ~ e | replace(from="-", to="_"), lang=lang) %}{% endfor %}
-          {%- set qa = [
-            [trans(key="hire_faq_q_available", lang=lang) | replace(from="{name}", to=config.extra.author), trans(key="hire_faq_a_available", lang=lang) | replace(from="{engagement}", to=heng) | replace(from="{workplace}", to=trans(key="hire_workplace_" ~ h.workplace | replace(from="-", to="_"), lang=lang)) | replace(from="{regions}", to=h["regions" ~ sfx] | default(value=h.regions))],
-            [trans(key="hire_faq_q_roles", lang=lang), roles | join(sep="; ")],
-            [trans(key="hire_faq_q_contact", lang=lang), trans(key="hire_faq_a_contact", lang=lang) | replace(from="{email}", to=gh.profile.email | default(value="")) | replace(from="{linkedin}", to=cv.links.linkedin | default(value=""))]
-          ] %}
-          {%- if h.rate_from is defined %}{% set rate_q = [trans(key="hire_faq_q_rate", lang=lang), trans(key="hire_faq_a_rate", lang=lang) | replace(from="{rate}", to=h.rate_currency ~ " " ~ h.rate_from) | replace(from="{unit}", to=trans(key="hire_unit_" ~ h.rate_unit, lang=lang))] %}{% endif %}
-          {%- for item in qa %}
-          <details class="group"{% if loop.first %} open{% endif %}>
-            <summary class="flex cursor-pointer items-center justify-between gap-3 bg-gray-50 px-4 py-3 font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-700">
-              <span>{{ item[0] }}</span>{{ <icon name="chevron-up-down" class="h-4 w-4 shrink-0" /> }}
-            </summary>
-            <p class="px-4 py-3 text-sm text-gray-600 dark:text-gray-300">{{ item[1] }}</p>
-          </details>
-          {%- if loop.index == 2 and rate_q is defined %}
-          <details class="group">
-            <summary class="flex cursor-pointer items-center justify-between gap-3 bg-gray-50 px-4 py-3 font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-700">
-              <span>{{ rate_q[0] }}</span>{{ <icon name="chevron-up-down" class="h-4 w-4 shrink-0" /> }}
-            </summary>
-            <p class="px-4 py-3 text-sm text-gray-600 dark:text-gray-300">{{ rate_q[1] }}</p>
-          </details>
-          {%- endif %}
-          {%- endfor %}
+        <div data-faq class="divide-y divide-gray-200 overflow-hidden rounded-lg border border-gray-200 dark:divide-gray-700 dark:border-gray-700">
+          {%- set faq_as = "html" %}{% include "partials/hire-faq.html" %}
         </div>
       {% </card> %}
 
@@ -146,5 +294,7 @@
     </div>
   </div>
 </div>
+{%- else %}
+{{ <page_header title={page.title} lead={page.description} lang={lang} /> }}
 {%- endif %}
 {% endblock %}
