@@ -159,9 +159,6 @@ cs = "%-d.\u00a0%-m.\u00a0%Y"
 en = "%-d %b"
 cs = "%-d.\u00a0%-m."
 
-[fmt_month_year]
-en = "%B %Y"
-cs = "%B %Y"
 
 # Month names for a month and year ("listopad 2026"): Zola's date filter writes English names only.
 [month_1]
@@ -211,4 +208,6 @@ cs = "listopad"
 [month_12]
 en = "December"
 cs = "prosinec"
+
+
 

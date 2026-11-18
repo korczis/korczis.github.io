@@ -283,7 +283,7 @@ cs = "Role, které tato práce dokládá"
 
 [xp_see_skills]
 en = "Skills, each with its evidence"
-cs = "Dovednosti a doklad ke každé"
+cs = "Dovednosti a jejich podklady"
 
 [xp_open_map]
 en = "Open the engagement map"
@@ -293,11 +293,11 @@ cs = "Otevřít mapu zakázek"
 
 [skills_title]
 en = "Skills, each with its evidence"
-cs = "Dovednosti a doklad ke každé"
+cs = "Dovednosti a jejich podklady"
 
 [skills_lead]
-en = "Measured from public repositories and anonymised engagements; headline skills first."
-cs = "Změřeno z veřejných repozitářů a anonymizovaných zakázek; nejdřív dovednosti z titulku."
+en = "Languages and technologies measured from public repositories; engagement skills inferred from git history, an estimate rather than proof of a result. Headline skills first."
+cs = "Jazyky a technologie změřené z veřejných repozitářů; dovednosti ze zakázek odvozené z historie gitu, tedy odhad, ne doklad výsledku. Nejdřív dovednosti z titulku."
 
 [skills_col_skill]
 en = "Skill"
@@ -308,8 +308,8 @@ en = "Kind"
 cs = "Druh"
 
 [skills_col_count]
-en = "Evidence"
-cs = "Doklady"
+en = "Basis"
+cs = "Podklad"
 
 [skills_col_span]
 en = "First–last year"

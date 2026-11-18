@@ -24,11 +24,11 @@ cs = "od {date}"
 
 [hire_roles_title]
 en = "What I am hired for"
-cs = "Na co si mě najímají"
+cs = "S čím vám pomohu"
 
 [hire_roles_lead]
-en = "The roles where {years} years of shipped systems pay back fastest."
-cs = "Role, kde se {years} let dodaných systémů vrátí nejrychleji."
+en = "The roles where {years} years of shipped systems count most."
+cs = "Role, ve kterých má {years} let dodaných systémů největší přínos."
 
 [hire_terms_title]
 en = "Terms"
@@ -103,8 +103,8 @@ en = "Full CV"
 cs = "Celý životopis"
 
 [hire_evidence_title]
-en = "Evidence, measured"
-cs = "Důkazy, změřené"
+en = "Measured evidence"
+cs = "Změřené doklady"
 
 [hire_evidence_lead]
 en = "Each figure is measured from GitHub and GitLab, and each one links to the page that shows where it comes from."

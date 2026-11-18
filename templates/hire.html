@@ -18,7 +18,7 @@
 {%- set base = config.base_url ~ lp ~ "/" -%}
 {%- set link = "font-medium text-primary-700 hover:underline dark:text-primary-400" -%}
 {%- set muted = "text-xs text-gray-600 dark:text-gray-400" -%}
-{%- set as_of = ix.generated_at | date(format="%Y-%m-%d") -%}
+{%- set as_of = ix.generated_at | date(format=trans(key="fmt_date_long", lang=lang), locale=trans(key="date_locale", lang=lang)) -%}
 {%- set months = trans(key="derive_months", lang=lang) | split(pat=",") -%}
 {%- set_global first_year = now() | date(format="%Y") | int -%}
 {%- for r in cv.roles %}{% set y = r.start | truncate(length=4, end="") | int %}{% if y < first_year %}{% set_global first_year = y %}{% endif %}{% endfor -%}
