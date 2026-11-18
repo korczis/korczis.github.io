@@ -17,7 +17,7 @@ definition = "Kopie cizího repozitáře pod vlastním účtem; forky se tu poč
 aliases = []
 reference = { title = "GitHub Docs: about forks", url = "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks" }
 pages = ["_index.cs.md", "repositories/_index.cs.md", "work/_index.cs.md"]
-related = ["commit", "mirror", "repository", "open-source", "d3", "data-visualisation", "flowbite-pro", "front-matter"]
+related = ["commit", "mirror", "repository", "open-source", "ai-agent", "apache-echarts", "audit-trail", "d3"]
 og_title = "Fork: slovník"
 og_image = "og/cs-glossary-fork.png"
 keywords = ["Fork", "Koncept", "Slovník", "Tomáš Korčák"]

@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Program, který s pomocí jazykového modelu plánuje a jedná (upravuje kód, spouští příkazy) k cíli; Majordomus nutí takové agenty doložit práci."
 aliases = []
 reference = { title = "Anthropic: building effective agents", url = "https://www.anthropic.com/research/building-effective-agents" }
-pages = ["about.cs.md", "hire.cs.md", "interfaces.cs.md", "projects/_index.cs.md", "projects/ai.cs.md", "work/cognitive-reasoning.cs.md", "work/edna.cs.md", "work/llm.cs.md", "work/prismatic-majordomus.cs.md", "work/sig.cs.md"]
-related = ["open-source", "repository", "commit", "elixir", "mcp", "rust", "majordomus", "osint"]
+pages = ["_index.cs.md", "about.cs.md", "hire.cs.md", "interfaces.cs.md", "projects/_index.cs.md", "projects/ai.cs.md", "work/cognitive-reasoning.cs.md", "work/edna.cs.md", "work/llm.cs.md", "work/prismatic-majordomus.cs.md", "work/sig.cs.md"]
+related = ["open-source", "repository", "commit", "elixir", "mcp", "rust", "osint", "majordomus"]
 og_title = "AI agent: slovník"
 og_image = "og/cs-glossary-ai-agent.png"
 keywords = ["AI agent", "Koncept", "Slovník", "Tomáš Korčák"]

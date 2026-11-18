@@ -17,7 +17,7 @@ definition = "Repozitář, který kopíruje kód jiného projektu; tady se repoz
 aliases = []
 reference = { title = "Git: mirroring a repository", url = "https://docs.github.com/en/repositories/creating-and-managing-repositories/duplicating-a-repository" }
 pages = ["_index.cs.md", "repositories/_index.cs.md", "work/_index.cs.md"]
-related = ["commit", "fork", "repository", "open-source", "d3", "data-visualisation", "flowbite-pro", "front-matter"]
+related = ["commit", "fork", "repository", "open-source", "ai-agent", "apache-echarts", "audit-trail", "d3"]
 og_title = "Mirror: slovník"
 og_image = "og/cs-glossary-mirror.png"
 keywords = ["Mirror", "Koncept", "Slovník", "Tomáš Korčák"]

@@ -17,7 +17,7 @@ definition = "Linked data in JSON embedded in a page, telling search engines and
 aliases = []
 reference = { title = "json-ld.org", url = "https://json-ld.org/" }
 pages = ["_index.md", "interfaces.md"]
-related = ["ai-agent", "commit", "d3", "data-visualisation", "flowbite-pro", "fork", "front-matter", "github-pages"]
+related = ["ai-agent", "mcp", "apache-echarts", "audit-trail", "commit", "d3", "data-visualisation", "due-diligence"]
 og_title = "JSON-LD: glossary"
 og_image = "og/glossary-json-ld.png"
 keywords = ["JSON-LD", "Concept", "Glossary", "Tomas Korcak"]

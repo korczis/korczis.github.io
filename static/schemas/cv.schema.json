@@ -203,6 +203,34 @@
             "hour",
             "day"
           ]
+        },
+        "start": {
+          "type": "string",
+          "pattern": "^(immediately|\\d{4}-(0[1-9]|1[0-2])(-\\d{2})?)$",
+          "description": "When the owner can start: 'immediately' or a date (YYYY-MM or YYYY-MM-DD). ADR 0007, addendum 'facts for sourcing filters' (2026-11-18): the owner's answers, stated as given, never inferred."
+        },
+        "work_authorization": {
+          "$ref": "#/$defs/text",
+          "description": "Where the owner may work and on what terms, in the owner's words. ADR 0007, addendum 'facts for sourcing filters' (2026-11-18): the owner's answers, stated as given, never inferred."
+        },
+        "work_authorization_cs": {
+          "$ref": "#/$defs/text"
+        },
+        "relocation": {
+          "type": "boolean",
+          "description": "True when the owner is open to relocation. ADR 0007, addendum 'facts for sourcing filters' (2026-11-18): the owner's answers, stated as given, never inferred."
+        },
+        "timezone": {
+          "type": "string",
+          "pattern": "^[A-Z][A-Za-z_]+/[A-Za-z_]+$",
+          "description": "The owner's IANA time zone. ADR 0007, addendum 'facts for sourcing filters' (2026-11-18): the owner's answers, stated as given, never inferred."
+        },
+        "overlap": {
+          "$ref": "#/$defs/text",
+          "description": "The working hours the owner offers across time zones, in the owner's words. ADR 0007, addendum 'facts for sourcing filters' (2026-11-18): the owner's answers, stated as given, never inferred."
+        },
+        "overlap_cs": {
+          "$ref": "#/$defs/text"
         }
       }
     }

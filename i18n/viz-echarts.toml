@@ -195,3 +195,78 @@ cs = "{n} bez rozpoznaného jazyka"
 [js_skillset_unspecified__other]
 en = "{n} without a detected language"
 cs = "{n} bez rozpoznaného jazyka"
+
+# Provenance (static/js/viz/provenance.js): how the repositories are counted, from the listings of
+# both forges to the original work, the forks, the mirrors and the rest (data/index.json counts).
+
+[viz_provenance_title]
+en = "How the repositories are counted"
+cs = "Jak se repozitáře počítají"
+
+[viz_provenance_lead]
+en = "Listings from both forges, merged, then sorted into original work, forks, mirrors and the rest."
+cs = "Položky z obou platforem, sloučené a roztříděné na původní práci, forky, zrcadla a zbytek."
+
+[js_provenance_forge]
+en = "Forge"
+cs = "Platforma"
+
+[js_provenance_both]
+en = "Both"
+cs = "Obě"
+
+[js_provenance_hidden]
+en = "Show hidden and empty"
+cs = "Zobrazit skryté a prázdné"
+
+[js_provenance_github]
+en = "GitHub listings"
+cs = "Položky na GitHubu"
+
+[js_provenance_gitlab]
+en = "GitLab listings"
+cs = "Položky na GitLabu"
+
+[js_provenance_merged]
+en = "Merged"
+cs = "Sloučeno"
+
+[js_provenance_folded]
+en = "Listed on both, counted once"
+cs = "Na obou, počítáno jednou"
+
+[js_provenance_original]
+en = "Original"
+cs = "Původní"
+
+[js_provenance_fork]
+en = "Forks"
+cs = "Forky"
+
+[js_provenance_mirror]
+en = "Mirrors"
+cs = "Zrcadla"
+
+[js_provenance_empty]
+en = "Empty"
+cs = "Prázdné"
+
+[js_provenance_hidden_node]
+en = "Hidden"
+cs = "Skryté"
+
+[js_provenance_on_both]
+en = "On both"
+cs = "Na obou"
+
+[js_provenance_github_only]
+en = "GitHub only"
+cs = "Jen GitHub"
+
+[js_provenance_gitlab_only]
+en = "GitLab only"
+cs = "Jen GitLab"
+
+[js_provenance_readout]
+en = "{listings} listings, {merged} after merging, {original} original"
+cs = "Položek {listings}, po sloučení {merged}, původních {original}"

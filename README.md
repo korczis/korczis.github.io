@@ -193,6 +193,8 @@ from it:
 | SEO derived from front matter (titles, descriptions, OG, JSON-LD, sitemap) | `node scripts/check-seo.mjs` | check, verify, CI | `project.seo-derived` |
 | One positioning from the hire headline; every page links /hire/ | `node scripts/check-profile.mjs` | check, verify, CI | `project.hire-surfaces` |
 | No denylisted name in the built site (NDA) | `node scripts/check-nda.mjs --site public` | check, verify, CI |  |
+| data/gates.json is this gate list | `node scripts/gates.mjs json --check` | check, verify, CI | `project.landing-contract` |
+| The landing keeps its contract: sections, links, CTA budget, nothing hidden | `node scripts/check-landing.mjs` | check, verify, CI | `project.landing-contract` |
 | Flowbite Pro fidelity | `test/cases/10_fleet_flowbite_pro.sh` | verify; CI: no | `project.ui-uses-flowbite-pro` |
 | Majordomus supervision | `majordomus doctor` | verify; CI: supervision job |  |
 | Browser audit: axe WCAG 2.2 AA, CLS, overflow, visuals, list twins, links | `scripts/verify-all.sh --audit-only` | npm run verify; ci.yml validate; pages.yml and monitor.yml against production | `project.ui-quality-gate` |

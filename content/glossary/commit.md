@@ -17,7 +17,7 @@ definition = "One recorded change in a repository, with its author and time; the
 aliases = []
 reference = { title = "Pro Git: recording changes", url = "https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository" }
 pages = ["_index.md", "repositories/_index.md", "work/_index.md", "work/algoglyph.md", "work/astronomists.md", "work/bubbler.md", "work/catharsis-as-a-service.md", "work/cognitive-reasoning.md", "work/comtesse.md", "work/corvidae.md", "work/crisis-map.md", "work/data-atlas.md", "work/dispatcher.md", "work/distance-calculator.md", "work/edna.md", "work/el-magico-cache.md", "work/ght.md", "work/gists-search.md", "work/job-processor.md", "work/kompendium-epistemicke-anihilace.md", "work/korczis-github-io.md", "work/korczis-gitlab-io.md", "work/kuzu-ex.md", "work/llm.md", "work/majordomus-reel.md", "work/marketing-ideas.md", "work/meili-rsex.md", "work/mindscape.md", "work/openttd-prismatic-bridge.md", "work/oscilla.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/past.md", "work/pdf-renderer.md", "work/pissaleck.md", "work/prism.md", "work/prismatic-blog.md", "work/prismatic-majordomus.md", "work/prismatic.md", "work/sig.md", "work/simple-geocoder.md", "work/sonic-playground.md", "work/tap.md", "work/the-psycho.md", "work/tinder-nomics.md", "work/u-tygra.md", "work/vomaste-cz.md"]
-related = ["repository", "open-source", "html", "shell", "javascript", "github-pages", "elixir", "css"]
+related = ["repository", "open-source", "html", "shell", "javascript", "elixir", "github-pages", "css"]
 og_title = "Commit: glossary"
 og_image = "og/glossary-commit.png"
 keywords = ["Commit", "Concept", "Glossary", "Tomas Korcak"]

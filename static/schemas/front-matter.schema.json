@@ -126,6 +126,7 @@
                   "graph",
                   "languages",
                   "pack",
+                  "provenance",
                   "pulse",
                   "skillset",
                   "spiral",
@@ -138,6 +139,7 @@
                   "github.contributions",
                   "github.languages",
                   "index.languages",
+                  "index.counts",
                   "index.years",
                   "index.repos",
                   "recent.commits",
@@ -177,6 +179,16 @@
                   "night"
                 ],
                 "description": "A dark sky behind the visual in both themes"
+              },
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9-]*$",
+                "description": "The visual's declared id: its address (?viz=<id>, ?<id>.<key>=), its data island and how a template selects it (viz_ids); unique on its page. Without one it is viz-<position>-<kind>."
+              },
+              "caption": {
+                "type": "string",
+                "pattern": "^[a-z0-9_]+$",
+                "description": "i18n key of a visible caption under the visual (what its figures are, and are not)"
               }
             }
           }
@@ -197,6 +209,18 @@
           "minLength": 3,
           "maxLength": 80,
           "description": "Heading of the page's article (its Markdown body); defaults to the title."
+        },
+        "reading_path": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 9,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9/_-]+\\.md$",
+            "description": "A content path in the default language (work/x.md, stack.md, work/_index.md); the template reads its translation and reading time"
+          },
+          "description": "The landing's 'Read next' list (templates/index.html, rule project.landing-contract): pages in order; Zola fails the build on a path that does not exist."
         },
         "term": {
           "type": "string",

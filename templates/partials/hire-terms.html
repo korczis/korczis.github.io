@@ -1,0 +1,75 @@
+{#- The hiring terms, built once for /hire/ (terms_mode = "card": one column of rows in its Terms
+    card) and the landing (terms_mode = "panel": Flowbite Pro pricing-tables/horizontal, the rows as
+    a two-column feature list beside a gray-50 price panel with its call to action). One source, so
+    the two pages cannot drift. Every row is a deep-linkable <div id="terms-<key>">; the rows that
+    rest on the facts for sourcing filters (ADR 0007, addendum: start, work authorization,
+    relocation, time zone and overlap) render only when data/cv.toml states them, never inferred.
+    A row's term links its glossary page when the glossary defines one with the row's key. The
+    panel's Email carries data-mail-role, so static/js/components/hire-role.js names a role in it. -#}
+{%- set tsfx = "" %}{% set txl = "" %}{% if lang is defined and lang != config.default_language %}{% set tsfx = "_" ~ lang %}{% set txl = "." ~ lang %}{% endif -%}
+{%- set tlp = "" %}{% if lang is defined and lang != config.default_language %}{% set tlp = "/" ~ lang %}{% endif -%}
+{%- set tbase = config.base_url ~ tlp ~ "/" -%}
+{%- set tcv = load_data(path="data/cv.toml") -%}
+{%- set tgh = load_data(path="data/github.json") -%}
+{%- set tgl = load_data(path="data/glossary.toml") -%}
+{%- set th = tcv.hire -%}
+{%- if terms_mode is defined %}{% set tmode = terms_mode %}{% else %}{% set tmode = "card" %}{% endif -%}
+{%- set_global teng = "" %}{% for e in th.engagement %}{% if teng %}{% set_global teng = teng ~ ", " %}{% endif %}{% set_global teng = teng ~ trans(key="hire_engagement_" ~ e | replace(from="-", to="_"), lang=lang) %}{% endfor -%}
+{%- set_global tlangs = "" %}{% for l in tcv.languages | default(value=[]) %}{% if tlangs %}{% set_global tlangs = tlangs ~ ", " %}{% endif %}{% set_global tlangs = tlangs ~ (l["name" ~ tsfx] | default(value=l.name)) ~ " (" ~ trans(key="cv_level_" ~ l.level, lang=lang) ~ ")" %}{% endfor -%}
+{#- The rows: [key, label key, value]; a row whose fact data/cv.toml does not state has no value
+    and is left out (Tera 2 has no concat, so the list is whole and the loop skips). #}
+{%- set tstart = "" %}{% if th.start is defined %}{% if th.start == "immediately" %}{% set tstart = trans(key="hire_start_immediately", lang=lang) %}{% else %}{% set tstart = th.start %}{% endif %}{% endif -%}
+{%- set tauth = "" %}{% if th.work_authorization is defined %}{% set tauth = th["work_authorization" ~ tsfx] | default(value=th.work_authorization) %}{% endif -%}
+{%- set treloc = "" %}{% if th.relocation is defined %}{% if th.relocation %}{% set treloc = trans(key="hire_relocation_open", lang=lang) %}{% else %}{% set treloc = trans(key="hire_relocation_closed", lang=lang) %}{% endif %}{% endif -%}
+{%- set tzone = "" %}{% if th.timezone is defined %}{% set tzone = th.timezone %}{% if th.overlap is defined %}{% set tzone = th.timezone ~ "; " ~ (th["overlap" ~ tsfx] | default(value=th.overlap)) %}{% endif %}{% endif -%}
+{%- set trows = [
+  ["engagement", "hire_engagement_label", teng],
+  ["workplace", "hire_workplace_label", trans(key="hire_workplace_" ~ th.workplace | replace(from="-", to="_"), lang=lang)],
+  ["start", "hire_start_label", tstart],
+  ["authorization", "hire_authorization_label", tauth],
+  ["relocation", "hire_relocation_label", treloc],
+  ["timezone", "hire_timezone_label", tzone],
+  ["regions", "hire_regions_label", th["regions" ~ tsfx] | default(value=th.regions)],
+  ["languages", "hire_languages_label", tlangs]
+] -%}
+{%- if th.rate_from is defined %}{% set trate = trans(key="hire_rate_value", lang=lang) | replace(from="{rate}", to=th.rate_currency ~ " " ~ th.rate_from) | replace(from="{unit}", to=trans(key="hire_unit_" ~ th.rate_unit, lang=lang)) %}{% else %}{% set trate = "" %}{% endif -%}
+{%- set thost = config.base_url | replace(from="https://", to="") | replace(from="http://", to="") | split(pat="/") | first -%}
+
+{%- if tmode == "panel" %}
+<div class="grid grid-cols-1 gap-6 lg:grid-cols-3">
+  <dl class="grid grid-cols-1 gap-x-8 gap-y-5 sm:grid-cols-2 lg:col-span-2">
+    {%- for row in trows %}{% if row[2] %}
+    {%- set_global tterm = "" %}{% for gt in tgl.terms %}{% if gt.id == row[0] %}{% set tp = get_page(path="glossary/" ~ gt.id ~ txl ~ ".md") %}{% set_global tterm = tp.permalink %}{% endif %}{% endfor %}
+    <div id="terms-{{ row[0] }}" class="relative min-w-0 scroll-mt-24 ps-8">
+      <dt class="text-sm font-medium text-gray-600 dark:text-gray-400">{{ <icon name="check" class="absolute start-0 top-0.5 h-5 w-5 text-primary-700 dark:text-primary-400" /> }}{% if tterm %}<a href="{{ tterm }}" class="hover:underline">{{ trans(key=row[1], lang=lang) }}</a>{% else %}{{ trans(key=row[1], lang=lang) }}{% endif %}</dt>
+      <dd class="mt-0.5 font-semibold text-gray-900 dark:text-white">{{ row[2] }}{% if row[0] == "timezone" %} <a href="{{ tbase }}hire/#faq-title" class="ms-1 text-sm font-medium text-primary-700 hover:underline dark:text-primary-400">{{ trans(key="home_terms_faq", lang=lang) }}</a>{% endif %}</dd>
+    </div>
+    {%- endif %}{% endfor %}
+  </dl>
+  {%- if trate %}
+  <div id="terms-rate" class="flex scroll-mt-24 flex-col justify-center rounded-lg bg-gray-50 p-6 text-center dark:bg-gray-700">
+    <p class="text-sm font-medium text-gray-600 dark:text-gray-300">{{ trans(key="hire_rate_label", lang=lang) }}</p>
+    {#- Flowbite Pro pricing-tables: the figure in text-5xl, the words of hire_rate_value around
+        it in the body size (the same sentence, split at its {rate} placeholder). #}
+    {%- set trparts = trans(key="hire_rate_value", lang=lang) | replace(from="{unit}", to=trans(key="hire_unit_" ~ th.rate_unit, lang=lang)) | split(pat="{rate}") %}
+    <p class="tabular my-3 text-gray-600 dark:text-gray-300">{% if trparts[0] | trim %}<span class="text-base">{{ trparts[0] | trim }}</span> {% endif %}<span class="whitespace-nowrap text-5xl font-extrabold text-gray-900 dark:text-white">{{ th.rate_currency }} {{ th.rate_from }}</span>{% if trparts | length > 1 and trparts[1] | trim %} <span class="text-base">{{ trparts[1] | trim }}</span>{% endif %}</p>
+    <p class="mb-5 text-sm text-gray-600 dark:text-gray-300">{{ trans(key="hire_rate_note", lang=lang) }}</p>
+    {%- if tgh.profile.email %}
+    {{ <button label={trans(key="home_terms_email", lang=lang)} href={"mailto:" ~ tgh.profile.email ~ "?subject=" ~ trans(key="hero_mail_subject", lang=lang) | replace(from="{host}", to=thost) | urlencode} icon="mail" sr={tgh.profile.email} attrs="data-mail-role" /> }}
+    {%- endif %}
+  </div>
+  {%- endif %}
+</div>
+{%- else %}
+<dl class="divide-y divide-gray-200 text-sm dark:divide-gray-700">
+  {%- for row in trows %}{% if row[2] %}
+  <div id="terms-{{ row[0] }}" class="flex scroll-mt-24 justify-between gap-4 py-3"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key=row[1], lang=lang) }}</dt>
+    <dd class="text-end font-medium text-gray-900 dark:text-white">{{ row[2] }}</dd></div>
+  {%- endif %}{% endfor %}
+  {%- if trate %}
+  <div id="terms-rate" class="flex scroll-mt-24 justify-between gap-4 py-3"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="hire_rate_label", lang=lang) }}</dt>
+    <dd class="text-end"><span class="tabular block text-lg font-extrabold text-gray-900 dark:text-white">{{ trate }}</span>
+      <span class="mt-1 block text-xs text-gray-600 dark:text-gray-400">{{ trans(key="hire_rate_note", lang=lang) }}</span></dd></div>
+  {%- endif %}
+</dl>
+{%- endif %}

@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Coordinating many automated steps, services or agents (queues, workflows, schedules) so they run in the right order and recover when one fails."
 aliases = []
 reference = { title = "Orchestration in computing (Wikipedia)", url = "https://en.wikipedia.org/wiki/Orchestration_(computing)" }
-pages = ["projects/security.md", "work/osint-case-ratcliffe-moscow-2026.md"]
-related = ["audit-trail", "data-integration", "decision-support-system", "due-diligence", "html", "information-extraction", "insolvency", "knowledge-graph"]
+pages = ["_index.md", "projects/security.md", "work/osint-case-ratcliffe-moscow-2026.md"]
+related = ["audit-trail", "due-diligence", "osint", "repository", "commit", "data-integration", "decision-support-system", "html"]
 og_title = "Orchestration: glossary"
 og_image = "og/glossary-orchestration.png"
 keywords = ["Orchestration", "Concept", "Glossary", "Tomas Korcak"]

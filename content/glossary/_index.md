@@ -10,7 +10,7 @@ sort_by = "weight"
 og_title = "Glossary: 62 terms, defined and sourced."
 og_image = "og/glossary.png"
 schema = "glossary"
-terms = ["front-matter", "repository", "open-source", "commit", "javascript"]
+terms = ["front-matter", "repository", "open-source", "commit", "elixir"]
 keywords = ["Glossary", "C#", "C++", "CSS", "Dockerfile", "Elixir", "Erlang", "Haskell", "HTML", "Java", "JavaScript", "Tomas Korcak"]
 
 [[extra.viz]]

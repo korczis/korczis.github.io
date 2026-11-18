@@ -1,0 +1,97 @@
+{#- The evidence of one hire role (data/cv.toml [hire] roles[ri]), inferred from the role's own words:
+    the English text, the same role in every language. The glossary terms it names (a term, or an
+    alias such as M&A), and the capabilities whose keywords it matches (data/experience-rules.toml,
+    a trailing * matching any word that starts with it), which bring their glossary term and the
+    public work that shares them. Include it with `ri` set; re_mode = "hire" (templates/hire.html)
+    renders the role's line of term chips, work pages (latest commit first) and anonymised client
+    capabilities ([data-hire-evidence], which scripts/check-seo.mjs reads); re_mode = "chips" (the
+    landing's role cards) renders at most re_limit measured chips: a language with its repositories
+    and years, a technology with its projects, a capability with its engagements. A term the owner
+    does not claim (glossary claimed = false, the libraries ADR 0005 retired) is never a chip. -#}
+{%- set rel_sfx = "" %}{% set rel_xl = "" %}{% if lang is defined and lang != config.default_language %}{% set rel_sfx = "_" ~ lang %}{% set rel_xl = "." ~ lang %}{% endif -%}
+{%- set rel_lp = "" %}{% if lang is defined and lang != config.default_language %}{% set rel_lp = "/" ~ lang %}{% endif -%}
+{%- set rel_base = config.base_url ~ rel_lp ~ "/" -%}
+{%- set rel_cv = load_data(path="data/cv.toml") -%}
+{%- set rel_gl = load_data(path="data/glossary.toml") -%}
+{%- set rel_xr = load_data(path="data/experience-rules.toml") -%}
+{%- set rel_xp = load_data(path="data/experience.json", required=false) -%}
+{%- set rel_ix = load_data(path="data/index.json") -%}
+{%- set rel_muted = "text-xs text-gray-600 dark:text-gray-400" -%}
+{%- if re_mode is defined %}{% set rel_mode = re_mode %}{% else %}{% set rel_mode = "hire" %}{% endif -%}
+{%- if re_limit is defined %}{% set rel_limit = re_limit %}{% else %}{% set rel_limit = 99 %}{% endif -%}
+{%- set rel_wsec = get_section(path="work/_index" ~ rel_xl ~ ".md") -%}
+{%- set rel_wpages = rel_wsec.pages | sort(attribute="updated") | reverse -%}
+{#- The capabilities the client work shows (data/experience.json), as "|key|key|". #}
+{%- set_global rel_xcaps = "|" %}{% if rel_xp %}{% for e in rel_xp.engagements %}{% for c in e.capabilities | default(value=[]) %}{% if not ("|" ~ c.key ~ "|") in rel_xcaps %}{% set_global rel_xcaps = rel_xcaps ~ c.key ~ "|" %}{% endif %}{% endfor %}{% endfor %}{% endif -%}
+{%- set rn = " " ~ (rel_cv.hire.roles[ri] | lower | replace(from=":", to=" ") | replace(from=",", to=" ") | replace(from="&", to=" ") | replace(from="/", to=" ") | replace(from="(", to=" ") | replace(from=")", to=" ") | replace(from=".", to=" ") | replace(from="  ", to=" ") | replace(from="  ", to=" ")) ~ " " %}
+{%- set_global rterms = "|" %}{% set_global rcaps = "|" %}{% set_global rrepos = "|" %}
+{%- for gt in rel_gl.terms %}
+{%- set nn = " " ~ (gt.term | lower | replace(from="&", to=" ") | replace(from=".", to=" ")) ~ " " %}{% if rn is containing(pat=nn) and not ("|" ~ gt.id ~ "|") in rterms %}{% set_global rterms = rterms ~ gt.id ~ "|" %}{% endif %}
+{%- for n in gt.aliases | default(value=[]) %}{% set nn = " " ~ (n | lower | replace(from="&", to=" ") | replace(from=".", to=" ")) ~ " " %}{% if rn is containing(pat=nn) and not ("|" ~ gt.id ~ "|") in rterms %}{% set_global rterms = rterms ~ gt.id ~ "|" %}{% endif %}{% endfor %}
+{%- endfor %}
+{%- for ckey, c in rel_xr.capabilities %}
+{%- set_global chit = false %}
+{%- for k in c.keywords | default(value=[]) %}
+{%- if k is ending_with(pat="*") %}{% if rn is containing(pat=" " ~ k | replace(from="*", to="")) %}{% set_global chit = true %}{% endif %}
+{%- elif rn is containing(pat=" " ~ k ~ " ") %}{% set_global chit = true %}{% endif %}
+{%- endfor %}
+{%- if chit %}
+{%- set_global rcaps = rcaps ~ ckey ~ "|" %}
+{%- if c.term is defined and not ("|" ~ c.term ~ "|") in rterms %}{% set_global rterms = rterms ~ c.term ~ "|" %}{% endif %}
+{%- if rel_xp and rel_xp.public_work[ckey] is defined %}{% for pr in rel_xp.public_work[ckey] %}{% set_global rrepos = rrepos ~ pr ~ "|" %}{% endfor %}{% endif %}
+{%- endif %}
+{%- endfor %}
+{%- if rel_mode == "chips" %}
+<ul class="flex flex-wrap gap-1.5" aria-label="{{ trans(key="home_role_evidence", lang=lang) }}" data-role-evidence="{{ ri }}">
+  {%- set_global rel_n = 0 %}
+  {#- Languages first (their repositories and the years they were created in), then technologies
+      (the curated projects that use them), then the capabilities of the client work. #}
+  {%- for gt in rel_gl.terms %}{% if ("|" ~ gt.id ~ "|") in rterms and (gt.claimed is not defined or gt.claimed) and rel_n < rel_limit and gt.kind == "language" %}
+  {%- for l in rel_ix.skills.languages %}{% if l.name == gt.term or l.name in gt.aliases | default(value=[]) %}
+  {%- set_global y0 = 0 %}{% set_global y1 = 0 %}
+  {%- for y, m in rel_ix.languages_by_year %}{% if m[l.name] is defined and m[l.name] > 0 %}{% set yi = y | int %}{% if y0 == 0 or yi < y0 %}{% set_global y0 = yi %}{% endif %}{% if yi > y1 %}{% set_global y1 = yi %}{% endif %}{% endif %}{% endfor %}
+  {%- set_global rel_n = rel_n + 1 %}{% set tp = get_page(path="glossary/" ~ gt.id ~ rel_xl ~ ".md") %}
+  <li>{{ <chip label={l.name ~ " · " ~ trans(key="home_chip_repos", lang=lang) | replace(from="{n}", to=l.repos ~ "") | replace(from="{from}", to=y0 ~ "") | replace(from="{to}", to=y1 ~ "")} href={tp.permalink} size="xs" /> }}</li>
+  {%- endif %}{% endfor %}
+  {%- endif %}{% endfor %}
+  {%- for gt in rel_gl.terms %}{% if ("|" ~ gt.id ~ "|") in rterms and (gt.claimed is not defined or gt.claimed) and rel_n < rel_limit and gt.kind == "technology" %}
+  {%- for t in rel_ix.skills.technologies %}{% if t.name == gt.term or t.name in gt.aliases | default(value=[]) %}
+  {%- set_global rel_n = rel_n + 1 %}{% set tp = get_page(path="glossary/" ~ gt.id ~ rel_xl ~ ".md") %}
+  <li>{{ <chip label={t.name ~ " · " ~ trans(key="home_chip_projects", lang=lang) | replace(from="{n}", to=t.projects ~ "")} href={tp.permalink} size="xs" /> }}</li>
+  {%- endif %}{% endfor %}
+  {%- endif %}{% endfor %}
+  {%- if rel_xp %}{% for ckey, c in rel_xr.capabilities %}{% if ("|" ~ ckey ~ "|") in rcaps and ("|" ~ ckey ~ "|") in rel_xcaps and rel_n < rel_limit %}
+  {%- set_global rel_ne = 0 %}{% for e in rel_xp.engagements %}{% for x in e.capabilities | default(value=[]) %}{% if x.key == ckey %}{% set_global rel_ne = rel_ne + 1 %}{% endif %}{% endfor %}{% endfor %}
+  {%- set_global rel_href = "#experience" %}{% for gt in rel_gl.terms %}{% if c.term is defined and gt.id == c.term %}{% set tp = get_page(path="glossary/" ~ gt.id ~ rel_xl ~ ".md") %}{% set_global rel_href = tp.permalink %}{% endif %}{% endfor %}
+  {%- set_global rel_n = rel_n + 1 %}
+  <li>{{ <chip label={(c["name" ~ rel_sfx] | default(value=c.name)) ~ " · " ~ trans(key="home_chip_engagements", lang=lang) | replace(from="{n}", to=rel_ne ~ "")} href={rel_href} size="xs" variant="primary" /> }}</li>
+  {%- endif %}{% endfor %}{% endif %}
+</ul>
+{%- else %}
+            <p data-hire-evidence="{{ ri }}" class="mt-2 flex flex-wrap items-center gap-1.5">
+              <span class="{{ rel_muted }}">{{ trans(key="in_the_glossary", lang=lang) }}:</span>
+              {%- for gt in rel_gl.terms %}{% if ("|" ~ gt.id ~ "|") in rterms %}
+              {%- set tp = get_page(path="glossary/" ~ gt.id ~ rel_xl ~ ".md") %}
+              {%- set_global tcount = "" %}{% if gt.kind == "language" %}{% for l in rel_ix.languages %}{% if l.name == gt.term or l.name in gt.aliases | default(value=[]) %}{% set_global tcount = l.repos ~ "" %}{% endif %}{% endfor %}{% endif %}
+              {{ <chip label={gt["term" ~ rel_sfx] | default(value=gt.term)} href={tp.permalink} count={tcount} size="xs" /> }}
+              {%- endif %}{% endfor %}
+              {#- At most three work pages: first those that use one of the role's terms, then the
+                  public work that shares one of its capabilities; each pass latest commit first. #}
+              {%- set_global wn = 0 %}{% set_global wseen = "|" %}
+              {%- for pass in ["terms", "capabilities"] %}
+              {%- for p in rel_wpages %}{% if wn < 3 and not ("|" ~ p.extra.repo ~ "|") in wseen %}
+              {%- set_global whit = false %}
+              {%- if pass == "terms" %}{% for t in p.extra.terms | default(value=[]) %}{% if ("|" ~ t ~ "|") in rterms %}{% set_global whit = true %}{% endif %}{% endfor %}
+              {%- else %}{% set_global whit = ("|" ~ p.extra.repo ~ "|") in rrepos %}{% endif %}
+              {%- if whit %}{% set_global wn = wn + 1 %}{% set_global wseen = wseen ~ p.extra.repo ~ "|" %}
+              {%- if wn == 1 %}<span class="{{ rel_muted }} ms-1">{{ trans(key="recent_work", lang=lang) }}:</span>{% endif %}
+              {{ <chip label={p.title} href={p.permalink} size="xs" variant="primary" /> }}
+              {%- endif %}{% endif %}{% endfor %}
+              {%- endfor %}
+              {%- set_global cn = 0 %}
+              {%- for ckey, c in rel_xr.capabilities %}{% if ("|" ~ ckey ~ "|") in rcaps and ("|" ~ ckey ~ "|") in rel_xcaps %}{% set_global cn = cn + 1 %}
+              {%- if cn == 1 %}<span class="{{ rel_muted }} ms-1">{{ trans(key="xp_eyebrow", lang=lang) }}:</span>{% endif %}
+              {{ <chip label={c["name" ~ rel_sfx] | default(value=c.name)} href={rel_base ~ "#xp-cap-" ~ ckey} size="xs" /> }}
+              {%- endif %}{% endfor %}
+            </p>
+{%- endif %}

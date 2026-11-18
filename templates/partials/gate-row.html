@@ -1,0 +1,8 @@
+{#- One gate of data/gates.json as a row of the landing's "How this page is proven" table: its name,
+    the rule it enforces (linking the rule's file in the repository) and where it runs (linking the
+    workflow or hook that runs it). Included with `g` set. -#}
+          <tr class="border-b border-gray-200 last:border-b-0 dark:border-gray-700">
+            <th scope="row" class="px-4 py-3 font-medium text-gray-900 dark:text-white">{{ g.name }}</th>
+            <td class="px-4 py-3">{% if g.rule_file %}<a href="{{ config.extra.repo_url }}/blob/master/{{ g.rule_file }}" class="font-mono text-xs font-medium text-primary-700 hover:underline dark:text-primary-400">{{ g.rule }}</a>{% endif %}</td>
+            <td class="px-4 py-3"><span class="flex flex-wrap gap-1.5">{% for w in g.where %}{% if w.file %}<a href="{{ config.extra.repo_url }}/blob/master/{{ w.file }}" class="inline-flex items-center rounded-md bg-gray-100 px-2 py-0.5 text-xs font-medium text-gray-800 hover:underline dark:bg-gray-700 dark:text-gray-300">{{ trans(key="proven_where_" ~ w.kind, lang=lang) }}</a>{% else %}<span class="inline-flex items-center rounded-md bg-gray-100 px-2 py-0.5 text-xs font-medium text-gray-800 dark:bg-gray-700 dark:text-gray-300">{{ trans(key="proven_where_" ~ w.kind, lang=lang) }}</span>{% endif %}{% endfor %}</span></td>
+          </tr>

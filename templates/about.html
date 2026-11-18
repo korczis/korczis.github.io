@@ -86,10 +86,14 @@
         <div class="min-w-0{% if group[0] == "cv_experience" %} lg:col-span-2{% endif %}">
           <h3 class="mb-4 text-lg font-semibold text-gray-900 dark:text-white">{{ trans(key=group[0], lang=lang) | safe }}</h3>
           <ol class="relative border-s border-gray-200 dark:border-gray-700">
+            {#- The first role of each organisation is #cv-<organisation | slugify>, which the
+                landing's track record links. #}
+            {%- set_global cv_orgs = "|" %}
             {%- for e in group[1] %}
             {%- if e.title is defined %}{% set head = e["title" ~ sfx] | default(value=e.title) %}{% set org = e.organisation %}{% set note = e["summary" ~ sfx] | default(value=e.summary | default(value="")) %}
             {%- else %}{% set head = e["degree" ~ sfx] | default(value=e.degree) %}{% set org = e.institution %}{% set note = "" %}{% endif %}
-            <li class="mb-6 ms-4">
+            {%- set cv_id = "" %}{% if e.title is defined and not ("|" ~ e.organisation ~ "|") in cv_orgs %}{% set_global cv_orgs = cv_orgs ~ e.organisation ~ "|" %}{% set cv_id = "cv-" ~ e.organisation | slugify %}{% endif %}
+            <li {% if cv_id %}id="{{ cv_id }}" {% endif %}class="mb-6 ms-4 scroll-mt-24">
               <div class="absolute -start-1.5 mt-1.5 h-3 w-3 rounded-full border border-white bg-primary-600 dark:border-gray-900 dark:bg-primary-500"></div>
               <time class="tabular mb-1 block text-sm font-normal leading-none text-gray-600 dark:text-gray-400">{{ e.start | default(value="") }}{% if e.start is defined %} – {% endif %}{% if e.end is defined %}{{ e.end }}{% elif e.title is defined %}{{ trans(key="cv_present", lang=lang) | safe }}{% endif %}</time>
               <p class="font-semibold text-gray-900 dark:text-white">{{ head }}</p>

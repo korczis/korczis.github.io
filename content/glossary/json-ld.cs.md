@@ -17,7 +17,7 @@ definition = "Propojená data ve formátu JSON vložená do stránky, která vyh
 aliases = []
 reference = { title = "json-ld.org", url = "https://json-ld.org/" }
 pages = ["_index.cs.md", "interfaces.cs.md"]
-related = ["ai-agent", "commit", "d3", "data-visualisation", "flowbite-pro", "fork", "front-matter", "github-pages"]
+related = ["ai-agent", "mcp", "apache-echarts", "audit-trail", "commit", "d3", "data-visualisation", "due-diligence"]
 og_title = "JSON-LD: slovník"
 og_image = "og/cs-glossary-json-ld.png"
 keywords = ["JSON-LD", "Koncept", "Slovník", "Tomáš Korčák"]
