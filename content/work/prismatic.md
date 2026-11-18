@@ -13,7 +13,7 @@ tags = ["Tools", "Elixir", "JavaScript", "Python"]
 repo = "prismatic"
 seo_title = "prismatic: Tools in Elixir, 2025 · Tomas Korcak"
 og_title = "prismatic: Advanced AI Agent Framework with Enterprise-Grade BEAM VM Introspection and…"
-og_description = "Tools in Elixir, JavaScript and Python, 2025, active in the last 24 months. Source on GitHub."
+og_description = "prismatic: Tools in Elixir, JavaScript and Python, 2025, active in the last 24 months. Source on GitHub."
 og_image = "og/work-prismatic.png"
 schema = "project"
 keywords = ["prismatic", "Tools", "Elixir", "JavaScript", "Python", "2025", "GitHub", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **prismatic** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (78.4 %), with [JavaScript](@/glossary/javascript.md), [Python](@/glossary/python.md) and [Shell](@/glossary/shell.md).
 
-The [repository](@/glossary/repository.md) was created in July 2025; its latest [commit](@/glossary/commit.md) is from 4 August 2025. It reads “chore: updates”. That places it among the projects active in the last 24 months.
+The [repository](@/glossary/repository.md) was created on 24 July 2025; its latest [commit](@/glossary/commit.md) is from 4 August 2025. It reads “chore: updates”. That places it among the projects active in the last 24 months.
 
 Its source is on [GitHub](https://github.com/korczis/prismatic).
 

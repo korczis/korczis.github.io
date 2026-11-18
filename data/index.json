@@ -1,6 +1,6 @@
 {
  "schema": "korczis-hub-index/v1",
- "generated_at": "2026-11-18T02:53:01Z",
+ "generated_at": "2026-11-18T04:00:58Z",
  "rule": "original = the owner wrote at least half of the listed commits; forks and mirrors are counted, not listed",
  "counts": {
   "github": 448,
@@ -15,35 +15,10 @@
   "mirrors_measured": 20,
   "supervised": 8
  },
- "dropped": [
-  {
-   "name": "pavian-eu",
-   "now": "gone"
-  },
-  {
-   "name": "mapofffacts-com",
-   "now": "gone"
-  },
-  {
-   "name": "lethe-it",
-   "now": "gone"
-  },
-  {
-   "name": "gauc-ex",
-   "now": "gone"
-  },
-  {
-   "name": "apollocrawler-com",
-   "now": "gone"
-  },
-  {
-   "name": "annasabatova-cz",
-   "now": "gone"
-  }
- ],
+ "dropped": [],
  "supervision": {
   "marker": ".ai/manifest.yaml",
-  "measured_at": "2026-11-18T02:53:01Z",
+  "measured_at": "2026-11-18T04:00:58Z",
   "kept": 0
  },
  "all_repos": [
@@ -1656,7 +1631,7 @@
    ],
    "stars": 0,
    "created_at": "2026-11-09T22:04:50Z",
-   "pushed_at": "2026-11-18T01:57:39Z",
+   "pushed_at": "2026-11-18T03:06:20Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -1689,9 +1664,9 @@
    ],
    "stars": 0,
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-18T02:43:55Z",
+   "pushed_at": "2026-11-18T03:35:28Z",
    "archived": false,
-   "share": 0.92,
+   "share": 0.93,
    "hosts": {
     "github": "https://github.com/korczis/korczis.github.io"
    },
@@ -1867,7 +1842,7 @@
    ],
    "stars": 0,
    "created_at": "2026-10-23T00:51:59Z",
-   "pushed_at": "2026-11-18T02:26:20Z",
+   "pushed_at": "2026-11-18T03:20:13Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -1987,7 +1962,7 @@
     "github": "https://github.com/korczis/maze-rs",
     "gitlab": "https://gitlab.com/korczis/maze-rs"
    },
-   "site": "https://korczis.github.io/maze-rs/",
+   "site": null,
    "supervised": false,
    "category": "science",
    "curated": true
@@ -2214,7 +2189,7 @@
    ],
    "stars": 1,
    "created_at": "2026-10-01T21:05:33Z",
-   "pushed_at": "2026-11-18T02:23:38Z",
+   "pushed_at": "2026-11-18T03:43:55Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -2477,7 +2452,7 @@
    ],
    "stars": 1,
    "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-18T02:08:31Z",
+   "pushed_at": "2026-11-18T03:51:17Z",
    "archived": false,
    "share": 0.99,
    "hosts": {
@@ -4354,10 +4329,10 @@
   }
  ],
  "by_category": {
+  "ai": 5,
+  "science": 12,
   "web": 14,
   "media": 8,
-  "science": 12,
-  "ai": 5,
   "knowledge": 5,
   "data": 49,
   "tools": 63,
@@ -4367,6 +4342,18 @@
   "learning": 21
  },
  "categories": {
+  "ai": {
+   "repos": 5,
+   "sites": 1,
+   "top_language": "Elixir",
+   "since": "2025"
+  },
+  "science": {
+   "repos": 12,
+   "sites": 2,
+   "top_language": "Rust",
+   "since": "2014"
+  },
   "web": {
    "repos": 14,
    "sites": 0,
@@ -4378,18 +4365,6 @@
    "sites": 4,
    "top_language": "JavaScript",
    "since": "2015"
-  },
-  "science": {
-   "repos": 12,
-   "sites": 3,
-   "top_language": "Rust",
-   "since": "2014"
-  },
-  "ai": {
-   "repos": 5,
-   "sites": 1,
-   "top_language": "Elixir",
-   "since": "2025"
   },
   "knowledge": {
    "repos": 5,
@@ -4635,10 +4610,10 @@
    "Dockerfile": 1
   },
   "2026": {
-   "JavaScript": 3,
-   "Squirrel": 1,
    "Rust": 1,
+   "JavaScript": 3,
    "Elixir": 3,
+   "Squirrel": 1,
    "Python": 4,
    "TypeScript": 1,
    "HTML": 2
@@ -4651,16 +4626,16 @@
     "repos": 42,
     "evidence": [
      {
+      "name": "oscilla",
+      "url": "https://github.com/korczis/oscilla"
+     },
+     {
       "name": "korczis.github.io",
       "url": "https://github.com/korczis/korczis.github.io"
      },
      {
       "name": "majordomus-reel",
       "url": "https://github.com/korczis/majordomus-reel"
-     },
-     {
-      "name": "oscilla",
-      "url": "https://github.com/korczis/oscilla"
      }
     ]
    },
@@ -5141,8 +5116,19 @@
  "recent": {
   "size": 100,
   "from": "2018-03-08T21:01:52Z",
-  "to": "2026-11-18T02:43:55Z",
+  "to": "2026-11-18T03:51:17Z",
   "mix": {
+   "ai": {
+    "Rust": 1,
+    "Elixir": 2,
+    "Unspecified": 2
+   },
+   "science": {
+    "JavaScript": 1,
+    "TypeScript": 1,
+    "Elixir": 1,
+    "Rust": 2
+   },
    "web": {
     "JavaScript": 2,
     "HTML": 2,
@@ -5156,17 +5142,6 @@
     "HTML": 1,
     "Dockerfile": 1,
     "Elixir": 1
-   },
-   "science": {
-    "JavaScript": 1,
-    "TypeScript": 1,
-    "Elixir": 1,
-    "Rust": 2
-   },
-   "ai": {
-    "Rust": 1,
-    "Elixir": 2,
-    "Unspecified": 2
    },
    "knowledge": {
     "Elixir": 1,
@@ -5210,110 +5185,6 @@
  },
  "repos": [
   {
-   "name": "korczis.github.io",
-   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-   "language": "JavaScript",
-   "topics": [
-    "accessibility",
-    "ai-agents",
-    "alpinejs",
-    "chartjs",
-    "cytoscape",
-    "echarts",
-    "flowbite",
-    "github-pages",
-    "majordomus",
-    "p5js",
-    "personal-website",
-    "portfolio",
-    "tailwindcss",
-    "zola"
-   ],
-   "stars": 0,
-   "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-18T02:43:55Z",
-   "archived": false,
-   "share": 0.92,
-   "hosts": {
-    "github": "https://github.com/korczis/korczis.github.io"
-   },
-   "site": null,
-   "supervised": true,
-   "category": "web",
-   "curated": false
-  },
-  {
-   "name": "majordomus-reel",
-   "description": "A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound",
-   "language": "JavaScript",
-   "topics": [
-    "ai-agents",
-    "ffmpeg",
-    "generative",
-    "majordomus",
-    "puppeteer",
-    "video"
-   ],
-   "stars": 0,
-   "created_at": "2026-10-23T00:51:59Z",
-   "pushed_at": "2026-11-18T02:26:20Z",
-   "archived": false,
-   "share": 1,
-   "hosts": {
-    "github": "https://github.com/korczis/majordomus-reel"
-   },
-   "site": "https://korczis.github.io/majordomus-reel/",
-   "supervised": true,
-   "category": "media",
-   "curated": true
-  },
-  {
-   "name": "oscilla",
-   "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-   "language": "JavaScript",
-   "topics": [
-    "acoustics",
-    "audio",
-    "dsp",
-    "education",
-    "javascript",
-    "signal-processing",
-    "spectrogram",
-    "synthesizer",
-    "web-audio"
-   ],
-   "stars": 1,
-   "created_at": "2026-10-01T21:05:33Z",
-   "pushed_at": "2026-11-18T02:23:38Z",
-   "archived": false,
-   "share": 1,
-   "hosts": {
-    "github": "https://github.com/korczis/oscilla"
-   },
-   "site": "https://korczis.github.io/oscilla/",
-   "supervised": true,
-   "category": "science",
-   "curated": true
-  },
-  {
-   "name": "openttd-prismatic-bridge",
-   "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
-   "language": "Squirrel",
-   "topics": [],
-   "stars": 0,
-   "created_at": "2026-07-23T22:00:54.776Z",
-   "pushed_at": "2026-11-18T02:16:49.082Z",
-   "archived": false,
-   "share": 1,
-   "hosts": {
-    "gitlab": "https://gitlab.com/korczis/openttd-prismatic-bridge"
-   },
-   "site": null,
-   "supervised": false,
-   "category": "media",
-   "curated": false
-  },
-  {
    "name": "prismatic-majordomus",
    "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
    "language": "Rust",
@@ -5340,7 +5211,7 @@
    ],
    "stars": 1,
    "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-18T02:08:31Z",
+   "pushed_at": "2026-11-18T03:51:17Z",
    "archived": false,
    "share": 0.99,
    "hosts": {
@@ -5349,6 +5220,92 @@
    "site": "https://korczis.github.io/prismatic-majordomus/",
    "supervised": true,
    "category": "ai",
+   "curated": true
+  },
+  {
+   "name": "oscilla",
+   "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+   "language": "JavaScript",
+   "topics": [
+    "acoustics",
+    "audio",
+    "dsp",
+    "education",
+    "javascript",
+    "signal-processing",
+    "spectrogram",
+    "synthesizer",
+    "web-audio"
+   ],
+   "stars": 1,
+   "created_at": "2026-10-01T21:05:33Z",
+   "pushed_at": "2026-11-18T03:43:55Z",
+   "archived": false,
+   "share": 1,
+   "hosts": {
+    "github": "https://github.com/korczis/oscilla"
+   },
+   "site": "https://korczis.github.io/oscilla/",
+   "supervised": true,
+   "category": "science",
+   "curated": true
+  },
+  {
+   "name": "korczis.github.io",
+   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+   "language": "JavaScript",
+   "topics": [
+    "accessibility",
+    "ai-agents",
+    "alpinejs",
+    "chartjs",
+    "cytoscape",
+    "echarts",
+    "flowbite",
+    "github-pages",
+    "majordomus",
+    "p5js",
+    "personal-website",
+    "portfolio",
+    "tailwindcss",
+    "zola"
+   ],
+   "stars": 0,
+   "created_at": "2024-12-24T16:48:15Z",
+   "pushed_at": "2026-11-18T03:35:28Z",
+   "archived": false,
+   "share": 0.93,
+   "hosts": {
+    "github": "https://github.com/korczis/korczis.github.io"
+   },
+   "site": null,
+   "supervised": true,
+   "category": "web",
+   "curated": false
+  },
+  {
+   "name": "majordomus-reel",
+   "description": "A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound",
+   "language": "JavaScript",
+   "topics": [
+    "ai-agents",
+    "ffmpeg",
+    "generative",
+    "majordomus",
+    "puppeteer",
+    "video"
+   ],
+   "stars": 0,
+   "created_at": "2026-10-23T00:51:59Z",
+   "pushed_at": "2026-11-18T03:20:13Z",
+   "archived": false,
+   "share": 1,
+   "hosts": {
+    "github": "https://github.com/korczis/majordomus-reel"
+   },
+   "site": "https://korczis.github.io/majordomus-reel/",
+   "supervised": true,
+   "category": "media",
    "curated": true
   },
   {
@@ -5368,7 +5325,7 @@
    ],
    "stars": 0,
    "created_at": "2026-11-09T22:04:50Z",
-   "pushed_at": "2026-11-18T01:57:39Z",
+   "pushed_at": "2026-11-18T03:06:20Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -5378,6 +5335,24 @@
    "supervised": true,
    "category": "knowledge",
    "curated": true
+  },
+  {
+   "name": "openttd-prismatic-bridge",
+   "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
+   "language": "Squirrel",
+   "topics": [],
+   "stars": 0,
+   "created_at": "2026-07-23T22:00:54.776Z",
+   "pushed_at": "2026-11-18T02:16:49.082Z",
+   "archived": false,
+   "share": 1,
+   "hosts": {
+    "gitlab": "https://gitlab.com/korczis/openttd-prismatic-bridge"
+   },
+   "site": null,
+   "supervised": false,
+   "category": "media",
+   "curated": false
   },
   {
    "name": "sonic-playground",
@@ -6609,7 +6584,7 @@
     "github": "https://github.com/korczis/maze-rs",
     "gitlab": "https://gitlab.com/korczis/maze-rs"
    },
-   "site": "https://korczis.github.io/maze-rs/",
+   "site": null,
    "supervised": false,
    "category": "science",
    "curated": true

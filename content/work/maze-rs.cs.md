@@ -13,11 +13,11 @@ tags = ["Věda a vizualizace", "Rust", "HTML"]
 repo = "maze-rs"
 seo_title = "maze-rs: Bludiště pro programátory, v Rustu, 2016 · Tomáš Korčák"
 og_title = "maze-rs: Bludiště pro programátory, v Rustu (2016)"
-og_description = "Věda a vizualizace, Rust a HTML, 2016, archiv. Zdrojový kód: GitHub a GitLab. 8 hvězd. Živý web."
+og_description = "maze-rs: Věda a vizualizace, Rust a HTML, 2016, archiv. Zdrojový kód: GitHub a GitLab. 8 hvězd."
 og_image = "og/cs-work-maze-rs.png"
 schema = "project"
 keywords = ["maze-rs", "Věda a vizualizace", "Rust", "HTML", "2016", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["rust", "html", "data-visualisation", "github-pages", "repository", "commit", "open-source"]
+terms = ["rust", "html", "data-visualisation", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -31,8 +31,6 @@ tone = "night"
 **maze-rs** je projekt z kategorie [Věda a vizualizace](@/projects/science.cs.md). Jeho kód je napsaný hlavně v jazyce [Rust](@/glossary/rust.cs.md) (98,9 %), dále [HTML](@/glossary/html.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 11. listopadu 2016; poslední [commit](@/glossary/commit.cs.md) je z 18. listopadu 2016. Zní „More coments“. Bez commitu za posledních 48 měsíců je veden jako archiv: práce z období 2016, ponechaná pro záznam a datovaná podle měření.
-
-Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/maze-rs/>.
 
 Zdrojový kód: [GitHub](https://github.com/korczis/maze-rs) a [GitLab](https://gitlab.com/korczis/maze-rs).
 

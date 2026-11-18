@@ -13,7 +13,7 @@ tags = ["Libraries", "JavaScript", "HTML"]
 repo = "peg-parser"
 seo_title = "peg-parser: Parser built using peg.js, 2016 · Tomas Korcak"
 og_title = "peg-parser: Parser built using peg.js (2016)"
-og_description = "Libraries in JavaScript and HTML, 2016, archive. Source on GitHub and GitLab."
+og_description = "peg-parser: Libraries in JavaScript and HTML, 2016, archive. Source on GitHub and GitLab."
 og_image = "og/work-peg-parser.png"
 schema = "project"
 keywords = ["peg-parser", "Libraries", "JavaScript", "HTML", "2016", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **peg-parser** is a project in [Libraries](@/projects/libraries.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (99.9 %), with [HTML](@/glossary/html.md).
 
-The [repository](@/glossary/repository.md) was created in April 2016; its latest [commit](@/glossary/commit.md) is from 4 May 2016. It reads “Use require instead of import”. With no commit in the last 48 months it is listed as archive: work from 2016, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 26 April 2016; its latest [commit](@/glossary/commit.md) is from 4 May 2016. It reads “Use require instead of import”. With no commit in the last 48 months it is listed as archive: work from 2016, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/peg-parser) and [GitLab](https://gitlab.com/korczis/peg-parser).
 

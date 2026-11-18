@@ -13,7 +13,7 @@ tags = ["Web", "CSS", "JavaScript"]
 repo = "annasabatova.cz"
 seo_title = "annasabatova.cz: Web in CSS, 2014 · Tomas Korcak"
 og_title = "annasabatova.cz: Petice za odvolani annysabatove.cz (2014)"
-og_description = "Web in CSS and JavaScript, 2014, archive. Source on GitHub and GitLab."
+og_description = "annasabatova.cz: Web in CSS and JavaScript, 2014, archive. Source on GitHub and GitLab."
 og_image = "og/work-annasabatova-cz.png"
 schema = "project"
 keywords = ["annasabatova.cz", "Web", "CSS", "JavaScript", "2014", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **annasabatova.cz** is a project in [Web](@/projects/web.md). Its code is written mainly in [CSS](@/glossary/css.md) (67 %), with [JavaScript](@/glossary/javascript.md).
 
-The [repository](@/glossary/repository.md) was created in October 2014; its latest [commit](@/glossary/commit.md) is from 6 October 2014. It reads “Add favicon”. With no commit in the last 48 months it is listed as archive: work from 2014, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 6 October 2014; its latest [commit](@/glossary/commit.md) is from 6 October 2014. It reads “Add favicon”. With no commit in the last 48 months it is listed as archive: work from 2014, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/annasabatova.cz) and [GitLab](https://gitlab.com/korczis/annasabatova-cz).
 

@@ -13,7 +13,7 @@ tags = ["Data and GIS"]
 repo = "rocksdb_indexer"
 seo_title = "rocksdb_indexer: Data and GIS, 2022 · Tomas Korcak"
 og_title = "rocksdb_indexer: Data and GIS (2022)"
-og_description = "Data and GIS, 2022, archive. Source on GitLab. A project by Tomas Korcak."
+og_description = "rocksdb_indexer: Data and GIS, 2022, archive. Source on GitLab."
 og_image = "og/work-rocksdb-indexer.png"
 schema = "project"
 keywords = ["rocksdb_indexer", "Data and GIS", "2022", "GitLab", "Tomas Korcak", "korczis"]
@@ -27,13 +27,14 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "every 6 hours" }
 +++
 **rocksdb\_indexer** is a project in [Data and GIS](@/projects/data.md).
 
-The [repository](@/glossary/repository.md) was created in March 2022; its latest [commit](@/glossary/commit.md) is from 11 March 2022. It reads “feat: first implementation”. With no commit in the last 48 months it is listed as archive: work from 2022, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 11 March 2022; its latest [commit](@/glossary/commit.md) is from 11 March 2022. It reads “feat: first implementation”. With no commit in the last 48 months it is listed as archive: work from 2022, kept for the record and dated as measured.
 
 Its source is on [GitLab](https://gitlab.com/korczis/rocksdb_indexer).
 
 Related work in [Data and GIS](@/projects/data.md): [ctu-cz](@/work/ctu-cz.md) (2020), [data-playground](@/work/data-playground.md) (2020), [czech-stats](@/work/czech-stats.md) (2020) and [meili\_rsex](@/work/meili-rsex.md) (2024).
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws its only commit as a heartbeat, one lane per commit type (feat, fix, docs…), from a snapshot refreshed every 6 hours. The concepts below are explained in the [glossary](@/glossary/_index.md).
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab. The pulse draws its only commit as a heartbeat, one lane per commit type (feat, fix, docs…), from a snapshot refreshed every 6 hours. The concepts below are explained in the [glossary](@/glossary/_index.md).

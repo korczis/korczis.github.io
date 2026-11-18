@@ -13,7 +13,7 @@ tags = ["Data a GIS", "JavaScript", "HTML"]
 repo = "microcrawler-browser"
 seo_title = "microcrawler-browser: Data a GIS, JavaScript, 2016 · Tomáš Korčák"
 og_title = "microcrawler-browser: Data a GIS, JavaScript (2016)"
-og_description = "Data a GIS, JavaScript a HTML, 2016, archiv. Zdrojový kód: GitLab."
+og_description = "microcrawler-browser: Data a GIS, JavaScript a HTML, 2016, archiv. Zdrojový kód: GitLab."
 og_image = "og/cs-work-microcrawler-browser.png"
 schema = "project"
 keywords = ["microcrawler-browser", "Data a GIS", "JavaScript", "HTML", "2016", "GitLab", "Tomáš Korčák", "korczis"]
@@ -27,6 +27,7 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "každých 6 hodin" }
 +++
 **microcrawler-browser** je projekt z kategorie [Data a GIS](@/projects/data.cs.md). Jeho kód je napsaný hlavně v jazyce [JavaScript](@/glossary/javascript.cs.md) (91,2 %), dále [HTML](@/glossary/html.cs.md).
 

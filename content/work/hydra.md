@@ -13,7 +13,7 @@ tags = ["Libraries", "Elixir", "CSS", "JavaScript"]
 repo = "hydra"
 seo_title = "hydra: Libraries in Elixir, 2019 · Tomas Korcak"
 og_title = "hydra: Modular wrapper and interface for pool of orchestrated Google Chrome… (2019)"
-og_description = "Libraries in Elixir, CSS and JavaScript, 2019, archive. Source on GitLab. 1 star."
+og_description = "hydra: Libraries in Elixir, CSS and JavaScript, 2019, archive. Source on GitLab. 1 star."
 og_image = "og/work-hydra.png"
 schema = "project"
 keywords = ["hydra", "Libraries", "Elixir", "CSS", "JavaScript", "2019", "GitLab", "Tomas Korcak", "korczis"]
@@ -27,10 +27,11 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "every 6 hours" }
 +++
 **hydra** is a project in [Libraries](@/projects/libraries.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (72.4 %), with [CSS](@/glossary/css.md), [JavaScript](@/glossary/javascript.md) and [Dockerfile](@/glossary/dockerfile.md).
 
-The [repository](@/glossary/repository.md) was created in November 2019; its latest [commit](@/glossary/commit.md) is from 20 December 2019. It reads “Merge remote-tracking branch 'gh/master'”. With no commit in the last 48 months it is listed as archive: work from 2019, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 13 November 2019; its latest [commit](@/glossary/commit.md) is from 20 December 2019. It reads “Merge remote-tracking branch 'gh/master'”. With no commit in the last 48 months it is listed as archive: work from 2019, kept for the record and dated as measured.
 
 Its source is on [GitLab](https://gitlab.com/korczis/hydra).
 

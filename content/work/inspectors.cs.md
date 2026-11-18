@@ -13,7 +13,7 @@ tags = ["Nástroje"]
 repo = "inspectors"
 seo_title = "inspectors: Nástroje, 2012 · Tomáš Korčák"
 og_title = "inspectors: Nástroje (2012)"
-og_description = "Nástroje, 2012, archiv. Zdrojový kód: GitHub a GitLab."
+og_description = "inspectors: Nástroje, 2012, archiv. Zdrojový kód: GitHub a GitLab."
 og_image = "og/cs-work-inspectors.png"
 schema = "project"
 keywords = ["inspectors", "Nástroje", "2012", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
@@ -36,4 +36,4 @@ Zdrojový kód: [GitHub](https://github.com/korczis/inspectors) a [GitLab](https
 
 Související práce v kategorii [Nástroje](@/projects/tools.cs.md): [ares](@/work/ares.cs.md) (2012), [reflex](@/work/reflex.cs.md) (2012), [lola](@/work/lola.cs.md) (2013–2014) a [generator-microscratch](@/work/generator-microscratch.cs.md) (2014).
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje jeho jediný commit jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu. Puls ukazuje jeho jediný commit jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

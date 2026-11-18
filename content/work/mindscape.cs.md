@@ -13,7 +13,7 @@ tags = ["Nástroje"]
 repo = "MindScape"
 seo_title = "MindScape: Nástroje, 2023 · Tomáš Korčák"
 og_title = "MindScape: Nástroje"
-og_description = "Nástroje, 2023, aktivní za posledních 48 měsíců. Zdrojový kód: GitHub."
+og_description = "MindScape: Nástroje, 2023, aktivní za posledních 48 měsíců. Zdrojový kód: GitHub."
 og_image = "og/cs-work-mindscape.png"
 schema = "project"
 keywords = ["MindScape", "Nástroje", "2023", "GitHub", "Tomáš Korčák", "korczis"]
@@ -36,4 +36,4 @@ Zdrojový kód: [GitHub](https://github.com/korczis/MindScape).
 
 Související práce v kategorii [Nástroje](@/projects/tools.cs.md): [el-magico-cache](@/work/el-magico-cache.cs.md) (2023), [rest-hello-world-benchmark](@/work/rest-hello-world-benchmark.cs.md) (2022), [caregiver](@/work/caregiver.cs.md) (2022) a [astudo](@/work/astudo.cs.md) (2022).
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje poslední 3 commity jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu. Puls ukazuje poslední 3 commity jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

@@ -13,7 +13,7 @@ tags = ["Systems and infrastructure", "JavaScript"]
 repo = "docker-conf2015"
 seo_title = "docker-conf2015: Systems and infrastructure, 2015 · Tomas Korcak"
 og_title = "docker-conf2015: Dockerfile for GD ConferenceDay 2015 (2015)"
-og_description = "Systems and infrastructure in JavaScript, 2015, archive. Source on GitHub and GitLab."
+og_description = "docker-conf2015: Systems and infrastructure in JavaScript, 2015, archive. Source on GitHub and GitLab."
 og_image = "og/work-docker-conf2015.png"
 schema = "project"
 keywords = ["docker-conf2015", "Systems and infrastructure", "JavaScript", "2015", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **docker-conf2015** is a project in [Systems and infrastructure](@/projects/systems.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (100 %).
 
-The [repository](@/glossary/repository.md) was created in February 2015; its latest [commit](@/glossary/commit.md) is from 27 February 2015. It reads “Create README.md”. With no commit in the last 48 months it is listed as archive: work from 2015, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 27 February 2015; its latest [commit](@/glossary/commit.md) is from 27 February 2015. It reads “Create README.md”. With no commit in the last 48 months it is listed as archive: work from 2015, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/docker-conf2015) and [GitLab](https://gitlab.com/korczis/docker-conf2015).
 

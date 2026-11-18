@@ -3,8 +3,8 @@
 title = "Oscilla"
 description = "A zero-install acoustic laboratory in the browser."
 template = "work.html"
-weight = 4
-updated = "2026-11-18T01:26:10Z"
+weight = 1
+updated = "2026-11-18T03:42:03Z"
 
 [taxonomies]
 tags = ["Science and visualisation", "JavaScript", "HTML", "CSS"]
@@ -13,7 +13,7 @@ tags = ["Science and visualisation", "JavaScript", "HTML", "CSS"]
 repo = "oscilla"
 seo_title = "Oscilla: Science and visualisation in JavaScript, 2026 · Tomas Korcak"
 og_title = "Oscilla: A zero-install acoustic laboratory in the browser"
-og_description = "Science and visualisation in JavaScript, HTML and CSS, 2026, active in the last 12 months. Source on GitHub. 1 star. Live site. Supervised by Majordomus."
+og_description = "Oscilla: Science and visualisation in JavaScript, HTML and CSS, 2026, active in the last 12 months. Source on GitHub. 1 star. Live site. Supervised by Majordomus."
 og_image = "og/work-oscilla.png"
 schema = "project"
 keywords = ["Oscilla", "Science and visualisation", "JavaScript", "HTML", "CSS", "acoustics", "audio", "dsp", "education", "signal-processing", "2026", "GitHub", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **Oscilla** is a project in [Science and visualisation](@/projects/science.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (96.9 %), with [HTML](@/glossary/html.md), [CSS](@/glossary/css.md) and [Swift](@/glossary/swift.md).
 
-The [repository](@/glossary/repository.md) was created in October 2026; its latest [commit](@/glossary/commit.md) is from 18 November 2026. It reads “chore(plan): audit-and-stamp vlak A (Q111 + 4 orazítkované, 20 otevřených s mezerou) (\#599)”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created on 1 October 2026; its latest [commit](@/glossary/commit.md) is from 18 November 2026. It reads “fix(ui): drobečková navigace z registru bez opakovaného názvu, stejná horní mezera po vstupu na stránku (\#598)”. That places it among the projects active in the last 12 months.
 
 It is built with [Web Audio](@/glossary/web-audio.md).
 

@@ -13,7 +13,7 @@ tags = ["Data a GIS", "Elixir", "Python"]
 repo = "kuzu-ex"
 seo_title = "kuzu-ex: Data a GIS, Elixir, 2024 · Tomáš Korčák"
 og_title = "kuzu-ex: Data a GIS, Elixir"
-og_description = "Data a GIS, Elixir a Python, 2024, aktivní za posledních 24 měsíců. Zdrojový kód: GitLab."
+og_description = "kuzu-ex: Data a GIS, Elixir a Python, 2024, aktivní za posledních 24 měsíců. Zdrojový kód: GitLab."
 og_image = "og/cs-work-kuzu-ex.png"
 schema = "project"
 keywords = ["kuzu-ex", "Data a GIS", "Elixir", "Python", "2024", "GitLab", "Tomáš Korčák", "korczis"]
@@ -27,6 +27,7 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "každých 6 hodin" }
 +++
 **kuzu-ex** je projekt z kategorie [Data a GIS](@/projects/data.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (97,6 %), dále [Python](@/glossary/python.cs.md).
 

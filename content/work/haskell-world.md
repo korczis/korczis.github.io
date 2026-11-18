@@ -13,7 +13,7 @@ tags = ["Science and visualisation", "Haskell", "Shell"]
 repo = "haskell-world"
 seo_title = "haskell-world: Haskell Mathematics, 2016 · Tomas Korcak"
 og_title = "haskell-world: Haskell Mathematics (2016)"
-og_description = "Science and visualisation in Haskell and Shell, 2016, archive. Source on GitHub and GitLab."
+og_description = "haskell-world: Science and visualisation in Haskell and Shell, 2016, archive. Source on GitHub and GitLab."
 og_image = "og/work-haskell-world.png"
 schema = "project"
 keywords = ["haskell-world", "Science and visualisation", "Haskell", "Shell", "2016", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **haskell-world** is a project in [Science and visualisation](@/projects/science.md). Its code is written mainly in [Haskell](@/glossary/haskell.md) (99.6 %), with [Shell](@/glossary/shell.md).
 
-The [repository](@/glossary/repository.md) was created in April 2016; its latest [commit](@/glossary/commit.md) is from 9 April 2016. It reads “Initial implementation”. With no commit in the last 48 months it is listed as archive: work from 2016, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 6 April 2016; its latest [commit](@/glossary/commit.md) is from 9 April 2016. It reads “Initial implementation”. With no commit in the last 48 months it is listed as archive: work from 2016, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/haskell-world) and [GitLab](https://gitlab.com/korczis/haskell-world).
 

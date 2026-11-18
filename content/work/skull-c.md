@@ -13,7 +13,7 @@ tags = ["Learning and experiments"]
 repo = "skull-c"
 seo_title = "skull-c: Learning and experiments in C, 2014 · Tomas Korcak"
 og_title = "skull-c: Learning and experiments in C (2014)"
-og_description = "Learning and experiments in C, 2014, archive. Source on GitHub and GitLab."
+og_description = "skull-c: Learning and experiments in C, 2014, archive. Source on GitHub and GitLab."
 og_image = "og/work-skull-c.png"
 schema = "project"
 keywords = ["skull-c", "Learning and experiments", "2014", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **skull-c** is a project in [Learning and experiments](@/projects/learning.md). Its code is written mainly in [C](@/glossary/c.md) (100 %).
 
-The [repository](@/glossary/repository.md) was created in July 2014; its latest [commit](@/glossary/commit.md) is from 5 August 2014. It reads “Update README.md”. With no commit in the last 48 months it is listed as archive: work from 2014, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 22 July 2014; its latest [commit](@/glossary/commit.md) is from 5 August 2014. It reads “Update README.md”. With no commit in the last 48 months it is listed as archive: work from 2014, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/skull-c) and [GitLab](https://gitlab.com/korczis/skull-c).
 

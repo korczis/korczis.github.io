@@ -13,7 +13,7 @@ tags = ["Systems and infrastructure", "Dockerfile", "Shell", "PHP"]
 repo = "docks"
 seo_title = "docks: Systems and infrastructure, 2015–2017 · Tomas Korcak"
 og_title = "docks: Repository containing useful Dockerfile(s) (2015–2017)"
-og_description = "Systems and infrastructure in Dockerfile, Shell and PHP, 2015–2017, archive. Source on GitLab."
+og_description = "docks: Systems and infrastructure in Dockerfile, Shell and PHP, 2015–2017, archive. Source on GitLab."
 og_image = "og/work-docks.png"
 schema = "project"
 keywords = ["docks", "Systems and infrastructure", "Dockerfile", "Shell", "PHP", "2015–2017", "GitLab", "Tomas Korcak", "korczis"]
@@ -27,10 +27,11 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "every 6 hours" }
 +++
 **docks** is a project in [Systems and infrastructure](@/projects/systems.md). Its code is written mainly in [Dockerfile](@/glossary/dockerfile.md) (77 %), with [Shell](@/glossary/shell.md) and PHP.
 
-The [repository](@/glossary/repository.md) was created in September 2019; its latest [commit](@/glossary/commit.md) is from 5 March 2017. It reads “Update README.md”. With no commit in the last 48 months it is listed as archive: work from 2015–2017, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 16 September 2019; its latest [commit](@/glossary/commit.md) is from 5 March 2017. It reads “Update README.md”. With no commit in the last 48 months it is listed as archive: work from 2015–2017, kept for the record and dated as measured.
 
 Its source is on [GitLab](https://gitlab.com/korczis/docks).
 

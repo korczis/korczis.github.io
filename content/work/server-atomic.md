@@ -13,7 +13,7 @@ tags = ["Systems and infrastructure", "Shell"]
 repo = "server-atomic"
 seo_title = "server-atomic: Server powered by Project Atomic, 2019 · Tomas Korcak"
 og_title = "server-atomic: Server powered by Project Atomic (2019)"
-og_description = "Systems and infrastructure in Shell, 2019, archive. Source on GitHub and GitLab."
+og_description = "server-atomic: Systems and infrastructure in Shell, 2019, archive. Source on GitHub and GitLab."
 og_image = "og/work-server-atomic.png"
 schema = "project"
 keywords = ["server-atomic", "Systems and infrastructure", "Shell", "2019", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **server-atomic** is a project in [Systems and infrastructure](@/projects/systems.md). Its code is written mainly in [Shell](@/glossary/shell.md) (100 %).
 
-The [repository](@/glossary/repository.md) was created in January 2019; its latest [commit](@/glossary/commit.md) is from 12 February 2019. It reads “WIP”. With no commit in the last 48 months it is listed as archive: work from 2019, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 29 January 2019; its latest [commit](@/glossary/commit.md) is from 12 February 2019. It reads “WIP”. With no commit in the last 48 months it is listed as archive: work from 2019, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/server-atomic) and [GitLab](https://gitlab.com/korczis/server-atomic).
 

@@ -13,11 +13,11 @@ tags = ["Knowledge", "Elixir", "JavaScript", "Python"]
 repo = "kompendium-epistemicke-anihilace"
 seo_title = "Kompendium: Knowledge in Elixir, 2026 · Tomas Korcak"
 og_title = "Kompendium: A defensive taxonomy of epistemic and cognitive manipulation (Czech)"
-og_description = "Knowledge in Elixir, JavaScript and Python, 2026, active in the last 12 months. Source on GitHub. Live site. Supervised by Majordomus."
+og_description = "Kompendium: Knowledge in Elixir, JavaScript and Python, 2026, active in the last 12 months. Source on GitHub. Live site. Supervised by Majordomus."
 og_image = "og/work-kompendium-epistemicke-anihilace.png"
 schema = "project"
 keywords = ["Kompendium", "kompendium-epistemicke-anihilace", "Knowledge", "Elixir", "JavaScript", "Python", "czech", "epistemology", "flowbite", "majordomus", "manipulation", "2026", "GitHub", "Tomas Korcak", "korczis"]
-terms = ["elixir", "javascript", "python", "html", "rust", "shell", "zola", "cytoscape-js", "apache-echarts", "alpine-js", "flowbite-pro", "github-pages", "repository", "commit", "open-source"]
+terms = ["elixir", "javascript", "python", "html", "shell", "rust", "zola", "cytoscape-js", "apache-echarts", "alpine-js", "flowbite-pro", "github-pages", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,9 +28,9 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**Kompendium** is a project in [Knowledge](@/projects/knowledge.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (32.9 %), with [JavaScript](@/glossary/javascript.md), [Python](@/glossary/python.md) and [HTML](@/glossary/html.md).
+**Kompendium** is a project in [Knowledge](@/projects/knowledge.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (32.7 %), with [JavaScript](@/glossary/javascript.md), [Python](@/glossary/python.md) and [HTML](@/glossary/html.md).
 
-The [repository](@/glossary/repository.md) was created in November 2026; its latest [commit](@/glossary/commit.md) is from 18 November 2026. It reads “Merge origin/main (e1ad82c1) into train-1”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created on 9 November 2026; its latest [commit](@/glossary/commit.md) is from 18 November 2026. It reads “Merge origin/main (e1ad82c1) into train-1”. That places it among the projects active in the last 12 months.
 
 It is built with [Zola](@/glossary/zola.md), [Cytoscape.js](@/glossary/cytoscape-js.md), [Apache ECharts](@/glossary/apache-echarts.md), [Alpine.js](@/glossary/alpine-js.md) and [Flowbite Pro](@/glossary/flowbite-pro.md).
 

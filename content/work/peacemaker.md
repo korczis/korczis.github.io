@@ -13,7 +13,7 @@ tags = ["Security and OSINT"]
 repo = "peacemaker"
 seo_title = "peacemaker: Packet sniffing and processing engine, 2014 · Tomas Korcak"
 og_title = "peacemaker: Packet sniffing and processing engine (2014)"
-og_description = "Security and OSINT in C++ and C, 2014, archive. Source on GitHub and GitLab."
+og_description = "peacemaker: Security and OSINT in C++ and C, 2014, archive. Source on GitHub and GitLab."
 og_image = "og/work-peacemaker.png"
 schema = "project"
 keywords = ["peacemaker", "Security and OSINT", "C++", "2014", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **peacemaker** is a project in [Security and OSINT](@/projects/security.md). Its code is written mainly in [C++](@/glossary/cpp.md) (92 %), with [C](@/glossary/c.md).
 
-The [repository](@/glossary/repository.md) was created in June 2014; its latest [commit](@/glossary/commit.md) is from 23 August 2014. It reads “Update .travis.yml”. With no commit in the last 48 months it is listed as archive: work from 2014, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 8 June 2014; its latest [commit](@/glossary/commit.md) is from 23 August 2014. It reads “Update .travis.yml”. With no commit in the last 48 months it is listed as archive: work from 2014, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/peacemaker) and [GitLab](https://gitlab.com/korczis/peacemaker).
 

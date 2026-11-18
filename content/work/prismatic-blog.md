@@ -13,7 +13,7 @@ tags = ["Media and art", "Dockerfile"]
 repo = "prismatic-blog"
 seo_title = "prismatic-blog: Media and art in Dockerfile, 2025 · Tomas Korcak"
 og_title = "prismatic-blog: Book Template is a starter template of [Zola][zola] with [book][book]…"
-og_description = "Media and art in Dockerfile, 2025, active in the last 24 months. Source on GitHub. Live site."
+og_description = "prismatic-blog: Media and art in Dockerfile, 2025, active in the last 24 months. Source on GitHub. Live site."
 og_image = "og/work-prismatic-blog.png"
 schema = "project"
 keywords = ["prismatic-blog", "Media and art", "Dockerfile", "2025", "GitHub", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **prismatic-blog** is a project in [Media and art](@/projects/media.md). Its code is written mainly in [Dockerfile](@/glossary/dockerfile.md) (100 %).
 
-The [repository](@/glossary/repository.md) was created in March 2025; its latest [commit](@/glossary/commit.md) is from 14 March 2025. It reads “Initial commit”. That places it among the projects active in the last 24 months.
+The [repository](@/glossary/repository.md) was created on 14 March 2025; its latest [commit](@/glossary/commit.md) is from 14 March 2025. It reads “Initial commit”. That places it among the projects active in the last 24 months.
 
 It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/prismatic-blog/>.
 

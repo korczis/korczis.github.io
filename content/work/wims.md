@@ -13,7 +13,7 @@ tags = ["Tools", "Rust"]
 repo = "wims"
 seo_title = "wims: Where is my space?, 2017 · Tomas Korcak"
 og_title = "wims: Where is my space? (2017)"
-og_description = "Tools in Rust, 2017, archive. Source on GitHub and GitLab."
+og_description = "wims: Tools in Rust, 2017, archive. Source on GitHub and GitLab."
 og_image = "og/work-wims.png"
 schema = "project"
 keywords = ["wims", "Tools", "Rust", "2017", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **wims** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [Rust](@/glossary/rust.md) (100 %).
 
-The [repository](@/glossary/repository.md) was created in May 2017; its latest [commit](@/glossary/commit.md) is from 6 May 2017. It reads “Add Makefile”. With no commit in the last 48 months it is listed as archive: work from 2017, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 6 May 2017; its latest [commit](@/glossary/commit.md) is from 6 May 2017. It reads “Add Makefile”. With no commit in the last 48 months it is listed as archive: work from 2017, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/wims) and [GitLab](https://gitlab.com/korczis/wims).
 

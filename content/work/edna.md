@@ -13,7 +13,7 @@ tags = ["AI engineering"]
 repo = "edna"
 seo_title = "edna: AI engineering, 2025 · Tomas Korcak"
 og_title = "edna: AI engineering"
-og_description = "AI engineering, 2025, active in the last 24 months. Source on GitLab."
+og_description = "edna: AI engineering, 2025, active in the last 24 months. Source on GitLab."
 og_image = "og/work-edna.png"
 schema = "project"
 keywords = ["edna", "AI engineering", "2025", "GitLab", "Tomas Korcak", "korczis"]
@@ -27,13 +27,14 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "every 6 hours" }
 +++
 **edna** is a project in [AI engineering](@/projects/ai.md).
 
-The [repository](@/glossary/repository.md) was created in September 2025; its latest [commit](@/glossary/commit.md) is from 2 September 2025. It reads “Edit README.md”. That places it among the projects active in the last 24 months.
+The [repository](@/glossary/repository.md) was created on 2 September 2025; its latest [commit](@/glossary/commit.md) is from 2 September 2025. It reads “Edit README.md”. That places it among the projects active in the last 24 months.
 
 Its source is on [GitLab](https://gitlab.com/korczis/edna).
 
 Related work in [AI engineering](@/projects/ai.md): [cognitive-reasoning](@/work/cognitive-reasoning.md) (2025), [sig](@/work/sig.md) (2025–2026), [llm](@/work/llm.md) (2026) and [Majordomus](@/work/prismatic-majordomus.md) (2026).
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 2 commits as a heartbeat, one lane per commit type (feat, fix, docs…), from a snapshot refreshed every 6 hours. The concepts below are explained in the [glossary](@/glossary/_index.md).
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab. The pulse draws the latest 2 commits as a heartbeat, one lane per commit type (feat, fix, docs…), from a snapshot refreshed every 6 hours. The concepts below are explained in the [glossary](@/glossary/_index.md).

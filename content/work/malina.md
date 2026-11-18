@@ -13,7 +13,7 @@ tags = ["Learning and experiments", "Shell"]
 repo = "malina"
 seo_title = "malina: Raspberry Pi playground, 2013 · Tomas Korcak"
 og_title = "malina: Raspberry Pi playground (2013)"
-og_description = "Learning and experiments in Shell, 2013, archive. Source on GitHub and GitLab."
+og_description = "malina: Learning and experiments in Shell, 2013, archive. Source on GitHub and GitLab."
 og_image = "og/work-malina.png"
 schema = "project"
 keywords = ["malina", "Learning and experiments", "Shell", "2013", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **malina** is a project in [Learning and experiments](@/projects/learning.md). Its code is written mainly in [Shell](@/glossary/shell.md) (100 %).
 
-The [repository](@/glossary/repository.md) was created in January 2013; its latest [commit](@/glossary/commit.md) is from 8 January 2013. It reads “Basic scripts for backup/restore”. With no commit in the last 48 months it is listed as archive: work from 2013, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 6 January 2013; its latest [commit](@/glossary/commit.md) is from 8 January 2013. It reads “Basic scripts for backup/restore”. With no commit in the last 48 months it is listed as archive: work from 2013, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/malina) and [GitLab](https://gitlab.com/korczis/malina).
 

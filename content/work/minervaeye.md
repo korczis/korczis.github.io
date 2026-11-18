@@ -13,7 +13,7 @@ tags = ["Knowledge", "Swift", "Shell"]
 repo = "MinervaEye"
 seo_title = "MinervaEye: Knowledge in Swift, 2020–2021 · Tomas Korcak"
 og_title = "MinervaEye: iOS application for book management (2020–2021)"
-og_description = "Knowledge in Swift and Shell, 2020–2021, archive. Source on GitHub."
+og_description = "MinervaEye: Knowledge in Swift and Shell, 2020–2021, archive. Source on GitHub."
 og_image = "og/work-minervaeye.png"
 schema = "project"
 keywords = ["MinervaEye", "Knowledge", "Swift", "Shell", "2020–2021", "GitHub", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **MinervaEye** is a project in [Knowledge](@/projects/knowledge.md). Its code is written mainly in [Swift](@/glossary/swift.md) (99.2 %), with [Shell](@/glossary/shell.md).
 
-The [repository](@/glossary/repository.md) was created in April 2020; its latest [commit](@/glossary/commit.md) is from 8 May 2021. It reads “Fix loding covers”. With no commit in the last 48 months it is listed as archive: work from 2020–2021, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 26 April 2020; its latest [commit](@/glossary/commit.md) is from 8 May 2021. It reads “Fix loding covers”. With no commit in the last 48 months it is listed as archive: work from 2020–2021, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/MinervaEye).
 

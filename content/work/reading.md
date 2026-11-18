@@ -13,7 +13,7 @@ tags = ["Knowledge"]
 repo = "reading"
 seo_title = "reading: Reading list, 2019 · Tomas Korcak"
 og_title = "reading: Reading list (2019)"
-og_description = "Knowledge, 2019, archive. Source on GitHub and GitLab. 1 star."
+og_description = "reading: Knowledge, 2019, archive. Source on GitHub and GitLab. 1 star."
 og_image = "og/work-reading.png"
 schema = "project"
 keywords = ["reading", "Knowledge", "2019", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,10 +30,10 @@ tone = "night"
 +++
 **reading** is a project in [Knowledge](@/projects/knowledge.md).
 
-The [repository](@/glossary/repository.md) was created in October 2019; its latest [commit](@/glossary/commit.md) is from 16 October 2019. It reads “Raw list”. With no commit in the last 48 months it is listed as archive: work from 2019, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 16 October 2019; its latest [commit](@/glossary/commit.md) is from 16 October 2019. It reads “Raw list”. With no commit in the last 48 months it is listed as archive: work from 2019, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/reading) and [GitLab](https://gitlab.com/korczis/reading).
 
 Related work in [Knowledge](@/projects/knowledge.md): [MinervaEye](@/work/minervaeye.md) (2020–2021), [ReadingPhoneNumbersInRealTime](@/work/readingphonenumbersinrealtime.md) (2021), [books](@/work/books.md) (2013) and [Kompendium](@/work/kompendium-epistemicke-anihilace.md) (2026).
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 3 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab. The pulse draws the latest 3 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

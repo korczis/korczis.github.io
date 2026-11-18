@@ -13,7 +13,7 @@ tags = ["Learning and experiments", "JavaScript"]
 repo = "generator-the-scratch"
 seo_title = "generator-the-scratch: Learning and experiments, 2013 · Tomas Korcak"
 og_title = "generator-the-scratch: Yeoman Generator for The Scratch (2013)"
-og_description = "Learning and experiments in JavaScript, 2013, archive. Source on GitHub and GitLab."
+og_description = "generator-the-scratch: Learning and experiments in JavaScript, 2013, archive. Source on GitHub and GitLab."
 og_image = "og/work-generator-the-scratch.png"
 schema = "project"
 keywords = ["generator-the-scratch", "Learning and experiments", "JavaScript", "2013", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **generator-the-scratch** is a project in [Learning and experiments](@/projects/learning.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (100 %).
 
-The [repository](@/glossary/repository.md) was created in August 2013; its latest [commit](@/glossary/commit.md) is from 7 September 2013. It reads “Sanitize path properly”. With no commit in the last 48 months it is listed as archive: work from 2013, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 31 August 2013; its latest [commit](@/glossary/commit.md) is from 7 September 2013. It reads “Sanitize path properly”. With no commit in the last 48 months it is listed as archive: work from 2013, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/generator-the-scratch) and [GitLab](https://gitlab.com/korczis/generator-the-scratch).
 

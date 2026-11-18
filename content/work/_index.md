@@ -11,7 +11,7 @@ og_title = "205 projects since 2012, 43 active the last 4 years."
 og_image = "og/work.png"
 schema = "collection"
 terms = ["commit", "fork", "mirror", "repository", "open-source"]
-keywords = ["Tomas Korcak projects", "korczis", "openttd-prismatic-bridge", "korczis.github.io", "majordomus-reel", "oscilla", "kompendium-epistemicke-anihilace", "prismatic-majordomus", "sonic-playground", "algoglyph"]
+keywords = ["Tomas Korcak projects", "korczis", "oscilla", "openttd-prismatic-bridge", "majordomus-reel", "korczis.github.io", "kompendium-epistemicke-anihilace", "prismatic-majordomus", "sonic-playground", "algoglyph"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -21,6 +21,7 @@ lead = "viz_work_pulse_lead"
 span = 3
 height = "md"
 tone = "night"
+vars = { span = "the last 4 years", cadence = "every 6 hours" }
 +++
 
 This page holds every original project, each with its own page. A project is recent by the date of its last [commit](@/glossary/commit.md) on the default branch, never by when its host last saw activity, and falls into one of the periods of 12, 24 and 48 months; a project whose last commit is older than 48 months is archive, dated by its first and last year, never hidden.

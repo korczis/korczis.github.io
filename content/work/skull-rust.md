@@ -13,7 +13,7 @@ tags = ["Learning and experiments", "Rust"]
 repo = "skull-rust"
 seo_title = "skull-rust: Rust experiments, 2016 · Tomas Korcak"
 og_title = "skull-rust: Rust experiments (2016)"
-og_description = "Learning and experiments in Rust, 2016, archive. Source on GitHub and GitLab."
+og_description = "skull-rust: Learning and experiments in Rust, 2016, archive. Source on GitHub and GitLab."
 og_image = "og/work-skull-rust.png"
 schema = "project"
 keywords = ["skull-rust", "Learning and experiments", "Rust", "2016", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **skull-rust** is a project in [Learning and experiments](@/projects/learning.md). Its code is written mainly in [Rust](@/glossary/rust.md) (100 %).
 
-The [repository](@/glossary/repository.md) was created in May 2016; its latest [commit](@/glossary/commit.md) is from 24 May 2016. It reads “Initial commit”. With no commit in the last 48 months it is listed as archive: work from 2016, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 24 May 2016; its latest [commit](@/glossary/commit.md) is from 24 May 2016. It reads “Initial commit”. With no commit in the last 48 months it is listed as archive: work from 2016, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/skull-rust) and [GitLab](https://gitlab.com/korczis/skull-rust).
 

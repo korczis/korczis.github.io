@@ -13,7 +13,7 @@ tags = ["Tools", "Rust", "Makefile"]
 repo = "streamflow"
 seo_title = "streamflow: Tools in Rust, 2017 · Tomas Korcak"
 og_title = "streamflow: Stream Flow - Fast Stream Processing in Rust (2017)"
-og_description = "Tools in Rust and Makefile, 2017, archive. Source on GitHub and GitLab."
+og_description = "streamflow: Tools in Rust and Makefile, 2017, archive. Source on GitHub and GitLab."
 og_image = "og/work-streamflow.png"
 schema = "project"
 keywords = ["streamflow", "Tools", "Rust", "Makefile", "2017", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **streamflow** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [Rust](@/glossary/rust.md) (97.9 %), with Makefile.
 
-The [repository](@/glossary/repository.md) was created in May 2017; its latest [commit](@/glossary/commit.md) is from 22 May 2017. It reads “WIP”. With no commit in the last 48 months it is listed as archive: work from 2017, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 15 May 2017; its latest [commit](@/glossary/commit.md) is from 22 May 2017. It reads “WIP”. With no commit in the last 48 months it is listed as archive: work from 2017, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/streamflow) and [GitLab](https://gitlab.com/korczis/streamflow).
 

@@ -13,7 +13,7 @@ tags = ["Data and GIS", "Ruby", "CSS", "JavaScript"]
 repo = "gooddata_rails_app"
 seo_title = "gooddata_rails_app: GoodData as Rails Application, 2014 · Tomas Korcak"
 og_title = "gooddata_rails_app: GoodData as Rails Application (2014)"
-og_description = "Data and GIS in Ruby, CSS and JavaScript, 2014, archive. Source on GitHub and GitLab."
+og_description = "gooddata_rails_app: Data and GIS in Ruby, CSS and JavaScript, 2014, archive. Source on GitHub and GitLab."
 og_image = "og/work-gooddata-rails-app.png"
 schema = "project"
 keywords = ["gooddata_rails_app", "Data and GIS", "Ruby", "CSS", "JavaScript", "2014", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **gooddata\_rails\_app** is a project in [Data and GIS](@/projects/data.md). Its code is written mainly in [Ruby](@/glossary/ruby.md) (87.5 %), with [CSS](@/glossary/css.md), [JavaScript](@/glossary/javascript.md) and CoffeeScript.
 
-The [repository](@/glossary/repository.md) was created in October 2014; its latest [commit](@/glossary/commit.md) is from 31 October 2014. It reads “Update README.md”. With no commit in the last 48 months it is listed as archive: work from 2014, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 31 October 2014; its latest [commit](@/glossary/commit.md) is from 31 October 2014. It reads “Update README.md”. With no commit in the last 48 months it is listed as archive: work from 2014, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/gooddata_rails_app) and [GitLab](https://gitlab.com/korczis/gooddata_rails_app).
 

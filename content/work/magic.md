@@ -13,7 +13,7 @@ tags = ["Security and OSINT", "Rust", "JavaScript", "Elixir"]
 repo = "magic"
 seo_title = "magic: All the magic happens here, 2017 · Tomas Korcak"
 og_title = "magic: All the magic happens here (2017)"
-og_description = "Security and OSINT in Rust, JavaScript and Elixir, 2017, archive. Source on GitHub and GitLab. 2 stars."
+og_description = "magic: Security and OSINT in Rust, JavaScript and Elixir, 2017, archive. Source on GitHub and GitLab. 2 stars."
 og_image = "og/work-magic.png"
 schema = "project"
 keywords = ["magic", "Security and OSINT", "Rust", "JavaScript", "Elixir", "elixir-phoenix", "hackrf", "rtl", "sdr", "2017", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **magic** is a project in [Security and OSINT](@/projects/security.md). Its code is written mainly in [Rust](@/glossary/rust.md) (39 %), with [JavaScript](@/glossary/javascript.md), [Elixir](@/glossary/elixir.md) and Elm.
 
-The [repository](@/glossary/repository.md) was created in May 2017; its latest [commit](@/glossary/commit.md) is from 8 July 2017. It reads “WIP”. With no commit in the last 48 months it is listed as archive: work from 2017, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 29 May 2017; its latest [commit](@/glossary/commit.md) is from 8 July 2017. It reads “WIP”. With no commit in the last 48 months it is listed as archive: work from 2017, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/magic) and [GitLab](https://gitlab.com/korczis/magic).
 

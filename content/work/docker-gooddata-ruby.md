@@ -13,7 +13,7 @@ tags = ["Data and GIS", "Ruby", "Shell"]
 repo = "docker-gooddata-ruby"
 seo_title = "docker-gooddata-ruby: Dockerized GoodData Ruby, 2015 · Tomas Korcak"
 og_title = "docker-gooddata-ruby: Dockerized GoodData Ruby (2015)"
-og_description = "Data and GIS in Ruby and Shell, 2015, archive. Source on GitHub and GitLab."
+og_description = "docker-gooddata-ruby: Data and GIS in Ruby and Shell, 2015, archive. Source on GitHub and GitLab."
 og_image = "og/work-docker-gooddata-ruby.png"
 schema = "project"
 keywords = ["docker-gooddata-ruby", "Data and GIS", "Ruby", "Shell", "2015", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **docker-gooddata-ruby** is a project in [Data and GIS](@/projects/data.md). Its code is written mainly in [Ruby](@/glossary/ruby.md) (84.8 %), with [Shell](@/glossary/shell.md).
 
-The [repository](@/glossary/repository.md) was created in June 2015; its latest [commit](@/glossary/commit.md) is from 21 July 2015. It reads “WIP”. With no commit in the last 48 months it is listed as archive: work from 2015, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 19 June 2015; its latest [commit](@/glossary/commit.md) is from 21 July 2015. It reads “WIP”. With no commit in the last 48 months it is listed as archive: work from 2015, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/docker-gooddata-ruby) and [GitLab](https://gitlab.com/korczis/docker-gooddata-ruby).
 

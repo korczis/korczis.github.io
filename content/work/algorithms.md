@@ -13,7 +13,7 @@ tags = ["Science and visualisation"]
 repo = "algorithms"
 seo_title = "algorithms: Algorithms implementation, 2014 · Tomas Korcak"
 og_title = "algorithms: Algorithms implementation (2014)"
-og_description = "Science and visualisation in C++ and C, 2014, archive. Source on GitHub and GitLab."
+og_description = "algorithms: Science and visualisation in C++ and C, 2014, archive. Source on GitHub and GitLab."
 og_image = "og/work-algorithms.png"
 schema = "project"
 keywords = ["algorithms", "Science and visualisation", "C++", "2014", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **algorithms** is a project in [Science and visualisation](@/projects/science.md). Its code is written mainly in [C++](@/glossary/cpp.md) (75.9 %), with [C](@/glossary/c.md).
 
-The [repository](@/glossary/repository.md) was created in July 2014; its latest [commit](@/glossary/commit.md) is from 23 August 2014. It reads “Update README.md”. With no commit in the last 48 months it is listed as archive: work from 2014, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 18 July 2014; its latest [commit](@/glossary/commit.md) is from 23 August 2014. It reads “Update README.md”. With no commit in the last 48 months it is listed as archive: work from 2014, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/algorithms) and [GitLab](https://gitlab.com/korczis/algorithms).
 

@@ -13,7 +13,7 @@ tags = ["Tools", "Ruby", "R", "Shell"]
 repo = "zeman-ucet"
 seo_title = "zeman-ucet: Tools in Ruby, 2017 · Tomas Korcak"
 og_title = "zeman-ucet: Zpravy pro prijemce ze Zemanova transparentniho uctu na predvolebni… (2017)"
-og_description = "Tools in Ruby, R and Shell, 2017, archive. Source on GitHub and GitLab. 2 stars."
+og_description = "zeman-ucet: Tools in Ruby, R and Shell, 2017, archive. Source on GitHub and GitLab. 2 stars."
 og_image = "og/work-zeman-ucet.png"
 schema = "project"
 keywords = ["zeman-ucet", "Tools", "Ruby", "Shell", "czech-republic", "nokogiri", "prezident", "transparentni-ucet", "zeman", "2017", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **zeman-ucet** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [Ruby](@/glossary/ruby.md) (75.3 %), with R and [Shell](@/glossary/shell.md).
 
-The [repository](@/glossary/repository.md) was created in September 2017; its latest [commit](@/glossary/commit.md) is from 7 October 2017. It reads “update”. With no commit in the last 48 months it is listed as archive: work from 2017, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 3 September 2017; its latest [commit](@/glossary/commit.md) is from 7 October 2017. It reads “update”. With no commit in the last 48 months it is listed as archive: work from 2017, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/zeman-ucet) and [GitLab](https://gitlab.com/korczis/zeman-ucet).
 

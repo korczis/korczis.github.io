@@ -13,7 +13,7 @@ tags = ["Data a GIS"]
 repo = "jetel-modules"
 seo_title = "jetel-modules: Data a GIS, 2015 · Tomáš Korčák"
 og_title = "jetel-modules: Data a GIS (2015)"
-og_description = "Data a GIS, 2015, archiv. Zdrojový kód: GitHub a GitLab."
+og_description = "jetel-modules: Data a GIS, 2015, archiv. Zdrojový kód: GitHub a GitLab."
 og_image = "og/cs-work-jetel-modules.png"
 schema = "project"
 keywords = ["jetel-modules", "Data a GIS", "2015", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
@@ -36,4 +36,4 @@ Zdrojový kód: [GitHub](https://github.com/korczis/jetel-modules) a [GitLab](ht
 
 Související práce v kategorii [Data a GIS](@/projects/data.cs.md): [data](@/work/data.cs.md) (2014–2015), [mapofffacts.com](@/work/mapofffacts-com.cs.md) (2015), [microcrawler-ng](@/work/microcrawler-ng.cs.md) (2016) a [gooddata-ruby-examples](@/work/gooddata-ruby-examples.cs.md) (2014–2015).
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje poslední 2 commity jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu. Puls ukazuje poslední 2 commity jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

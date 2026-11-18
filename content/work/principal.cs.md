@@ -13,7 +13,7 @@ tags = ["Nástroje"]
 repo = "principal"
 seo_title = "principal: Nástroje, 2014 · Tomáš Korčák"
 og_title = "principal: Nástroje (2014)"
-og_description = "Nástroje, 2014, archiv. Zdrojový kód: GitHub a GitLab."
+og_description = "principal: Nástroje, 2014, archiv. Zdrojový kód: GitHub a GitLab."
 og_image = "og/cs-work-principal.png"
 schema = "project"
 keywords = ["principal", "Nástroje", "2014", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
@@ -36,4 +36,4 @@ Zdrojový kód: [GitHub](https://github.com/korczis/principal) a [GitLab](https:
 
 Související práce v kategorii [Nástroje](@/projects/tools.cs.md): [photos](@/work/photos.cs.md) (2014), [codecademy](@/work/codecademy.cs.md) (2014), [ares-api](@/work/ares-api.cs.md) (2014) a [generator-microscratch](@/work/generator-microscratch.cs.md) (2014).
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje jeho jediný commit jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu. Puls ukazuje jeho jediný commit jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

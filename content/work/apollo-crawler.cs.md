@@ -7,16 +7,16 @@ weight = 169
 updated = "2014-08-30T22:29:45Z"
 
 [taxonomies]
-tags = ["Data a GIS"]
+tags = ["Data a GIS", "Ruby"]
 
 [extra]
 repo = "apollo-crawler"
 seo_title = "apollo-crawler: Data a GIS, Ruby, 2014 · Tomáš Korčák"
 og_title = "apollo-crawler: Data a GIS, Ruby (2014)"
-og_description = "Data a GIS, 2014, archiv. Zdrojový kód: GitHub a GitLab."
+og_description = "apollo-crawler: Data a GIS, Ruby, 2014, archiv. Zdrojový kód: GitHub a GitLab."
 og_image = "og/cs-work-apollo-crawler.png"
 schema = "project"
-keywords = ["apollo-crawler", "Data a GIS", "2014", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
+keywords = ["apollo-crawler", "Data a GIS", "Ruby", "2014", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
 terms = ["ruby", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
@@ -28,12 +28,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**apollo-crawler** je projekt z kategorie [Data a GIS](@/projects/data.cs.md).
+**apollo-crawler** je projekt z kategorie [Data a GIS](@/projects/data.cs.md). Jeho kód je napsaný hlavně v jazyce [Ruby](@/glossary/ruby.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 30. srpna 2014; poslední [commit](@/glossary/commit.cs.md) je z 30. srpna 2014. Zní „Create README.md“. Bez commitu za posledních 48 měsíců je veden jako archiv: práce z období 2014, ponechaná pro záznam a datovaná podle měření.
 
 Zdrojový kód: [GitHub](https://github.com/korczis/apollo-crawler) a [GitLab](https://gitlab.com/korczis/apollo-crawler).
 
-Související práce v kategorii [Data a GIS](@/projects/data.cs.md): [esri](@/work/esri.cs.md) (2014), [apollo-schemas](@/work/apollo-schemas.cs.md) (2014), [gooddata\_rails\_app](@/work/gooddata-rails-app.cs.md) (2014) a [microcrawler-couchapp](@/work/microcrawler-couchapp.cs.md) (2014).
+Související práce v kategorii [Data a GIS](@/projects/data.cs.md): [esri](@/work/esri.cs.md) (2014), [gooddata\_rails\_app](@/work/gooddata-rails-app.cs.md) (2014), [gooddata\_connectors\_metadata](@/work/gooddata-connectors-metadata.cs.md) (2014–2015) a [docker-gooddata-ruby](@/work/docker-gooddata-ruby.cs.md) (2015).
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 5 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu. Puls ukazuje posledních 5 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

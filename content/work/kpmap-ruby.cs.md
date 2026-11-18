@@ -13,7 +13,7 @@ tags = ["Data a GIS"]
 repo = "kpmap-ruby"
 seo_title = "kpmap-ruby: Data a GIS, 2017 · Tomáš Korčák"
 og_title = "kpmap-ruby: Data a GIS (2017)"
-og_description = "Data a GIS, 2017, archiv. Zdrojový kód: GitHub a GitLab."
+og_description = "kpmap-ruby: Data a GIS, 2017, archiv. Zdrojový kód: GitHub a GitLab."
 og_image = "og/cs-work-kpmap-ruby.png"
 schema = "project"
 keywords = ["kpmap-ruby", "Data a GIS", "2017", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
@@ -36,4 +36,4 @@ Zdrojový kód: [GitHub](https://github.com/korczis/kpmap-ruby) a [GitLab](https
 
 Související práce v kategorii [Data a GIS](@/projects/data.cs.md): [microcrawler-crawler-xkcd-com](@/work/microcrawler-crawler-xkcd-com.cs.md) (2016–2017), [microcrawler-crawler-heureka-cz](@/work/microcrawler-crawler-heureka-cz.cs.md) (2017), [microcrawler-crawler-firmy-cz](@/work/microcrawler-crawler-firmy-cz.cs.md) (2016–2017) a [microcrawler-crawler-bam-brno-cz](@/work/microcrawler-crawler-bam-brno-cz.cs.md) (2017).
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje jeho jediný commit jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu. Puls ukazuje jeho jediný commit jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

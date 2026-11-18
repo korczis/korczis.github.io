@@ -13,7 +13,7 @@ tags = ["Tools"]
 repo = "inspectors"
 seo_title = "inspectors: Tools, 2012 · Tomas Korcak"
 og_title = "inspectors: Tools used for various kind of inspections  (2012)"
-og_description = "Tools, 2012, archive. Source on GitHub and GitLab."
+og_description = "inspectors: Tools, 2012, archive. Source on GitHub and GitLab."
 og_image = "og/work-inspectors.png"
 schema = "project"
 keywords = ["inspectors", "Tools", "2012", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,10 +30,10 @@ tone = "night"
 +++
 **inspectors** is a project in [Tools](@/projects/tools.md).
 
-The [repository](@/glossary/repository.md) was created in November 2012; its latest [commit](@/glossary/commit.md) is from 20 November 2012. It reads “Initial commit”. With no commit in the last 48 months it is listed as archive: work from 2012, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 20 November 2012; its latest [commit](@/glossary/commit.md) is from 20 November 2012. It reads “Initial commit”. With no commit in the last 48 months it is listed as archive: work from 2012, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/inspectors) and [GitLab](https://gitlab.com/korczis/inspectors).
 
 Related work in [Tools](@/projects/tools.md): [ares](@/work/ares.md) (2012), [reflex](@/work/reflex.md) (2012), [lola](@/work/lola.md) (2013–2014) and [generator-microscratch](@/work/generator-microscratch.md) (2014).
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws its only commit as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab. The pulse draws its only commit as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

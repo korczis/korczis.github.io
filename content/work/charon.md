@@ -13,7 +13,7 @@ tags = ["Tools", "Rust", "Makefile"]
 repo = "charon"
 seo_title = "charon: Tools in Rust, 2016 · Tomas Korcak"
 og_title = "charon: Ferryman who carries other people connections to other side (2016)"
-og_description = "Tools in Rust and Makefile, 2016, archive. Source on GitHub and GitLab."
+og_description = "charon: Tools in Rust and Makefile, 2016, archive. Source on GitHub and GitLab."
 og_image = "og/work-charon.png"
 schema = "project"
 keywords = ["charon", "Tools", "Rust", "Makefile", "2016", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **charon** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [Rust](@/glossary/rust.md) (75 %), with Makefile.
 
-The [repository](@/glossary/repository.md) was created in July 2016; its latest [commit](@/glossary/commit.md) is from 10 July 2016. It reads “Refactor”. With no commit in the last 48 months it is listed as archive: work from 2016, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 1 July 2016; its latest [commit](@/glossary/commit.md) is from 10 July 2016. It reads “Refactor”. With no commit in the last 48 months it is listed as archive: work from 2016, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/charon) and [GitLab](https://gitlab.com/korczis/charon).
 

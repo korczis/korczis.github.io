@@ -13,7 +13,7 @@ tags = ["Security and OSINT", "HTML", "Python", "Shell"]
 repo = "osint-case-ratcliffe-moscow-2026"
 seo_title = "osint-case-ratcliffe-moscow-2026, 2026 · Tomas Korcak"
 og_title = "osint-case-ratcliffe-moscow-2026: Open-source intelligence assessment of the CIA…"
-og_description = "Security and OSINT in HTML, Python and Shell, 2026, active in the last 12 months. Source on GitHub. 1 star. Live site."
+og_description = "osint-case-ratcliffe-moscow-2026: Security and OSINT in HTML, Python and Shell, 2026, active in the last 12 months. Source on GitHub. 1 star. Live site."
 og_image = "og/work-osint-case-ratcliffe-moscow-2026.png"
 schema = "project"
 keywords = ["osint-case-ratcliffe-moscow-2026", "Security and OSINT", "HTML", "Python", "Shell", "claude-code", "intelligence-analysis", "open-source-intelligence", "osint", "2026", "GitHub", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **osint-case-ratcliffe-moscow-2026** is a project in [Security and OSINT](@/projects/security.md). Its code is written mainly in [HTML](@/glossary/html.md) (74 %), with [Python](@/glossary/python.md), [Shell](@/glossary/shell.md) and Just.
 
-The [repository](@/glossary/repository.md) was created in August 2026; its latest [commit](@/glossary/commit.md) is from 26 August 2026. It reads “fix(site): claim pages for object-shaped findings (gdelt\_sweep)”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created on 26 August 2026; its latest [commit](@/glossary/commit.md) is from 26 August 2026. It reads “fix(site): claim pages for object-shaped findings (gdelt\_sweep)”. That places it among the projects active in the last 12 months.
 
 It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/osint-case-ratcliffe-moscow-2026/>.
 

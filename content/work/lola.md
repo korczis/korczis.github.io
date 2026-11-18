@@ -13,7 +13,7 @@ tags = ["Tools", "JavaScript"]
 repo = "lola"
 seo_title = "lola: Tools in JavaScript, 2013–2014 · Tomas Korcak"
 og_title = "lola: Loader & Launcher of Modular NodeJS Apps (2013–2014)"
-og_description = "Tools in JavaScript, 2013–2014, archive. Source on GitHub and GitLab."
+og_description = "lola: Tools in JavaScript, 2013–2014, archive. Source on GitHub and GitLab."
 og_image = "og/work-lola.png"
 schema = "project"
 keywords = ["lola", "Tools", "JavaScript", "2013–2014", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,10 +30,10 @@ tone = "night"
 +++
 **lola** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (100 %).
 
-The [repository](@/glossary/repository.md) was created in December 2013; its latest [commit](@/glossary/commit.md) is from 3 January 2014. It reads “Updated tests”. With no commit in the last 48 months it is listed as archive: work from 2013–2014, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 31 December 2013; its latest [commit](@/glossary/commit.md) is from 3 January 2014. It reads “Updated tests”. With no commit in the last 48 months it is listed as archive: work from 2013–2014, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/lola) and [GitLab](https://gitlab.com/korczis/lola).
 
-Related work in [Tools](@/projects/tools.md): [lethe.it](@/work/lethe-it.md) (2014–2015), [peg-loader](@/work/peg-loader.md) (2016), [mapoffacts](@/work/mapoffacts.md) (2017) and [zaas](@/work/zaas.md) (2017).
+Related work in [Tools](@/projects/tools.md): [generator-microscratch](@/work/generator-microscratch.md) (2014), [lethe.it](@/work/lethe-it.md) (2014–2015), [peg-loader](@/work/peg-loader.md) (2016) and [mapoffacts](@/work/mapoffacts.md) (2017).
 
 *How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 18 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

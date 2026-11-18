@@ -13,7 +13,7 @@ tags = ["Nástroje"]
 repo = "ares-api"
 seo_title = "ares-api: Nástroje, 2014 · Tomáš Korčák"
 og_title = "ares-api: Nástroje (2014)"
-og_description = "Nástroje, 2014, archiv. Zdrojový kód: GitHub a GitLab."
+og_description = "ares-api: Nástroje, 2014, archiv. Zdrojový kód: GitHub a GitLab."
 og_image = "og/cs-work-ares-api.png"
 schema = "project"
 keywords = ["ares-api", "Nástroje", "2014", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
@@ -36,4 +36,4 @@ Zdrojový kód: [GitHub](https://github.com/korczis/ares-api) a [GitLab](https:/
 
 Související práce v kategorii [Nástroje](@/projects/tools.cs.md): [photos](@/work/photos.cs.md) (2014), [principal](@/work/principal.cs.md) (2014), [codecademy](@/work/codecademy.cs.md) (2014) a [lethe.it](@/work/lethe-it.cs.md) (2014–2015).
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje poslední 3 commity jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu. Puls ukazuje poslední 3 commity jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

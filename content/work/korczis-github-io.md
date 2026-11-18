@@ -3,8 +3,8 @@
 title = "korczis.github.io"
 description = "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus."
 template = "work.html"
-weight = 2
-updated = "2026-11-18T02:49:49Z"
+weight = 4
+updated = "2026-11-18T03:03:38Z"
 
 [taxonomies]
 tags = ["Web", "JavaScript", "HTML", "CSS"]
@@ -13,7 +13,7 @@ tags = ["Web", "JavaScript", "HTML", "CSS"]
 repo = "korczis.github.io"
 seo_title = "korczis.github.io: Web in JavaScript, 2024–2026 · Tomas Korcak"
 og_title = "korczis.github.io: Tomas Korcak (korczis): software that proves its work"
-og_description = "Web in JavaScript, HTML and CSS, 2024–2026, active in the last 12 months. Source on GitHub. Supervised by Majordomus."
+og_description = "korczis.github.io: Web in JavaScript, HTML and CSS, 2024–2026, active in the last 12 months. Source on GitHub. Supervised by Majordomus."
 og_image = "og/work-korczis-github-io.png"
 schema = "project"
 keywords = ["korczis.github.io", "Web", "JavaScript", "HTML", "CSS", "accessibility", "ai-agents", "alpinejs", "chartjs", "cytoscape", "echarts", "2024–2026", "GitHub", "Tomas Korcak", "korczis"]
@@ -28,9 +28,9 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**korczis.github.io** is a project in [Web](@/projects/web.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (68.7 %), with [HTML](@/glossary/html.md), [CSS](@/glossary/css.md) and [Shell](@/glossary/shell.md).
+**korczis.github.io** is a project in [Web](@/projects/web.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (66.5 %), with [HTML](@/glossary/html.md), [CSS](@/glossary/css.md) and [Shell](@/glossary/shell.md).
 
-The [repository](@/glossary/repository.md) was created in December 2024; its latest [commit](@/glossary/commit.md) is from 18 November 2026. It reads “chore(merge): integrate \#28, /hire/, the CV from LinkedIn, Offer and FAQPage JSON-LD, llms.txt hire section”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created on 24 December 2024; its latest [commit](@/glossary/commit.md) is from 18 November 2026. It reads “chore(merge): integrate \#29, wave 1: one positioning, /hire/ evidence, previews and machine files, sidebar skillset”. That places it among the projects active in the last 12 months.
 
 Its source is on [GitHub](https://github.com/korczis/korczis.github.io).
 

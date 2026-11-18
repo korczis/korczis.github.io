@@ -13,7 +13,7 @@ tags = ["Tools", "Python", "HTML", "TypeScript"]
 repo = "astronomists"
 seo_title = "astronomists: Tools in Python, 2026 · Tomas Korcak"
 og_title = "astronomists: Tools in Python"
-og_description = "Tools in Python, HTML and TypeScript, 2026, active in the last 12 months. Source on GitHub. Live site."
+og_description = "astronomists: Tools in Python, HTML and TypeScript, 2026, active in the last 12 months. Source on GitHub. Live site."
 og_image = "og/work-astronomists.png"
 schema = "project"
 keywords = ["astronomists", "Tools", "Python", "HTML", "TypeScript", "2026", "GitHub", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **astronomists** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [Python](@/glossary/python.md) (41.1 %), with [HTML](@/glossary/html.md), [TypeScript](@/glossary/typescript.md) and [Shell](@/glossary/shell.md).
 
-The [repository](@/glossary/repository.md) was created in June 2026; its latest [commit](@/glossary/commit.md) is from 20 July 2026. It reads “docs: correct and expand CLAUDE.md for current build pipeline”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created on 15 June 2026; its latest [commit](@/glossary/commit.md) is from 20 July 2026. It reads “docs: correct and expand CLAUDE.md for current build pipeline”. That places it among the projects active in the last 12 months.
 
 It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/astronomists/>.
 

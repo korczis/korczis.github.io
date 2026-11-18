@@ -13,7 +13,7 @@ tags = ["Data and GIS", "JavaScript", "Shell", "Dockerfile"]
 repo = "microcrawler-js"
 seo_title = "microcrawler-js: Scrapping made easy, 2016 · Tomas Korcak"
 og_title = "microcrawler-js: Scrapping made easy (2016)"
-og_description = "Data and GIS in JavaScript, Shell and Dockerfile, 2016, archive. Source on GitLab."
+og_description = "microcrawler-js: Data and GIS in JavaScript, Shell and Dockerfile, 2016, archive. Source on GitLab."
 og_image = "og/work-microcrawler-js.png"
 schema = "project"
 keywords = ["microcrawler-js", "Data and GIS", "JavaScript", "Shell", "Dockerfile", "2016", "GitLab", "Tomas Korcak", "korczis"]
@@ -27,10 +27,11 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "every 6 hours" }
 +++
 **microcrawler-js** is a project in [Data and GIS](@/projects/data.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (96.1 %), with [Shell](@/glossary/shell.md), [Dockerfile](@/glossary/dockerfile.md) and Makefile.
 
-The [repository](@/glossary/repository.md) was created in September 2019; its latest [commit](@/glossary/commit.md) is from 3 September 2016. It reads “Merge branch 'master' of github.com:ApolloCrawler/microcrawler”. With no commit in the last 48 months it is listed as archive: work from 2016, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 16 September 2019; its latest [commit](@/glossary/commit.md) is from 3 September 2016. It reads “Merge branch 'master' of github.com:ApolloCrawler/microcrawler”. With no commit in the last 48 months it is listed as archive: work from 2016, kept for the record and dated as measured.
 
 Its source is on [GitLab](https://gitlab.com/korczis/microcrawler-js).
 

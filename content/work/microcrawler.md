@@ -13,7 +13,7 @@ tags = ["Data and GIS", "Shell"]
 repo = "microcrawler"
 seo_title = "microcrawler: Data and GIS in Shell, 2016–2017 · Tomas Korcak"
 og_title = "microcrawler: Data and GIS in Shell (2016–2017)"
-og_description = "Data and GIS in Shell, 2016–2017, archive. Source on GitLab."
+og_description = "microcrawler: Data and GIS in Shell, 2016–2017, archive. Source on GitLab."
 og_image = "og/work-microcrawler.png"
 schema = "project"
 keywords = ["microcrawler", "Data and GIS", "Shell", "2016–2017", "GitLab", "Tomas Korcak", "korczis"]
@@ -27,10 +27,11 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "every 6 hours" }
 +++
 **microcrawler** is a project in [Data and GIS](@/projects/data.md). Its code is written mainly in [Shell](@/glossary/shell.md) (100 %).
 
-The [repository](@/glossary/repository.md) was created in September 2019; its latest [commit](@/glossary/commit.md) is from 12 March 2017. It reads “Update dependencies”. With no commit in the last 48 months it is listed as archive: work from 2016–2017, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 16 September 2019; its latest [commit](@/glossary/commit.md) is from 12 March 2017. It reads “Update dependencies”. With no commit in the last 48 months it is listed as archive: work from 2016–2017, kept for the record and dated as measured.
 
 Its source is on [GitLab](https://gitlab.com/korczis/microcrawler).
 

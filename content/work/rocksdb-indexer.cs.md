@@ -13,7 +13,7 @@ tags = ["Data a GIS"]
 repo = "rocksdb_indexer"
 seo_title = "rocksdb_indexer: Data a GIS, 2022 · Tomáš Korčák"
 og_title = "rocksdb_indexer: Data a GIS (2022)"
-og_description = "Data a GIS, 2022, archiv. Zdrojový kód: GitLab. Projekt, autor Tomáš Korčák."
+og_description = "rocksdb_indexer: Data a GIS, 2022, archiv. Zdrojový kód: GitLab."
 og_image = "og/cs-work-rocksdb-indexer.png"
 schema = "project"
 keywords = ["rocksdb_indexer", "Data a GIS", "2022", "GitLab", "Tomáš Korčák", "korczis"]
@@ -27,6 +27,7 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "každých 6 hodin" }
 +++
 **rocksdb\_indexer** je projekt z kategorie [Data a GIS](@/projects/data.cs.md).
 
@@ -36,4 +37,4 @@ Zdrojový kód: [GitLab](https://gitlab.com/korczis/rocksdb_indexer).
 
 Související práce v kategorii [Data a GIS](@/projects/data.cs.md): [ctu-cz](@/work/ctu-cz.cs.md) (2020), [data-playground](@/work/data-playground.cs.md) (2020), [czech-stats](@/work/czech-stats.cs.md) (2020) a [meili\_rsex](@/work/meili-rsex.cs.md) (2024).
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje jeho jediný commit jako tep, jeden pruh na typ commitu (feat, fix, docs…), ze snímku obnovovaného každých 6 hodin. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu. Puls ukazuje jeho jediný commit jako tep, jeden pruh na typ commitu (feat, fix, docs…), ze snímku obnovovaného každých 6 hodin. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

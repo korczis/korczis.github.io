@@ -13,7 +13,7 @@ tags = ["Data a GIS"]
 repo = "nosqlight"
 seo_title = "nosqlight: Data a GIS, 2014 · Tomáš Korčák"
 og_title = "nosqlight: Data a GIS (2014)"
-og_description = "Data a GIS, 2014, archiv. Zdrojový kód: GitHub a GitLab."
+og_description = "nosqlight: Data a GIS, 2014, archiv. Zdrojový kód: GitHub a GitLab."
 og_image = "og/cs-work-nosqlight.png"
 schema = "project"
 keywords = ["nosqlight", "Data a GIS", "2014", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
@@ -36,4 +36,4 @@ Zdrojový kód: [GitHub](https://github.com/korczis/nosqlight) a [GitLab](https:
 
 Související práce v kategorii [Data a GIS](@/projects/data.cs.md): [apollo-box](@/work/apollo-box.cs.md) (2014), [github-extractor](@/work/github-extractor.cs.md) (2014), [microcrawler-couchapp](@/work/microcrawler-couchapp.cs.md) (2014) a [apollocrawler.com](@/work/apollocrawler-com.cs.md) (2014).
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 12 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu. Puls ukazuje posledních 12 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

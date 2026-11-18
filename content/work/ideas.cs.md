@@ -13,7 +13,7 @@ tags = ["Nástroje"]
 repo = "ideas"
 seo_title = "ideas: Nástroje, 2016 · Tomáš Korčák"
 og_title = "ideas: Nástroje (2016)"
-og_description = "Nástroje, 2016, archiv. Zdrojový kód: GitHub a GitLab."
+og_description = "ideas: Nástroje, 2016, archiv. Zdrojový kód: GitHub a GitLab."
 og_image = "og/cs-work-ideas.png"
 schema = "project"
 keywords = ["ideas", "Nástroje", "2016", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
@@ -36,4 +36,4 @@ Zdrojový kód: [GitHub](https://github.com/korczis/ideas) a [GitLab](https://gi
 
 Související práce v kategorii [Nástroje](@/projects/tools.cs.md): [rustler\_mix](@/work/rustler-mix.cs.md) (2016), [charon](@/work/charon.cs.md) (2016), [wims](@/work/wims.cs.md) (2017) a [sli2dli](@/work/sli2dli.cs.md) (2017).
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje jeho jediný commit jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu. Puls ukazuje jeho jediný commit jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

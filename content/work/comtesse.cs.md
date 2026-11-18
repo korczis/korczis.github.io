@@ -13,7 +13,7 @@ tags = ["Nástroje", "Just", "Shell", "Rust"]
 repo = "comtesse"
 seo_title = "comtesse: Nástroje, Just, 2025 · Tomáš Korčák"
 og_title = "comtesse: Nástroje, Just"
-og_description = "Nástroje, Just, Shell a Rust, 2025, aktivní za posledních 24 měsíců. Zdrojový kód: GitLab."
+og_description = "comtesse: Nástroje, Just, Shell a Rust, 2025, aktivní za posledních 24 měsíců. Zdrojový kód: GitLab."
 og_image = "og/cs-work-comtesse.png"
 schema = "project"
 keywords = ["comtesse", "Nástroje", "Just", "Shell", "Rust", "2025", "GitLab", "Tomáš Korčák", "korczis"]
@@ -27,6 +27,7 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "každých 6 hodin" }
 +++
 **comtesse** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce Just (36 %), dále [Shell](@/glossary/shell.cs.md), [Rust](@/glossary/rust.cs.md) a Mermaid.
 

@@ -13,7 +13,7 @@ tags = ["Data and GIS", "R"]
 repo = "datascience"
 seo_title = "datascience: Various datascience toy projects, 2016 · Tomas Korcak"
 og_title = "datascience: Various datascience toy projects (2016)"
-og_description = "Data and GIS in R, 2016, archive. Source on GitHub and GitLab."
+og_description = "datascience: Data and GIS in R, 2016, archive. Source on GitHub and GitLab."
 og_image = "og/work-datascience.png"
 schema = "project"
 keywords = ["datascience", "Data and GIS", "2016", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **datascience** is a project in [Data and GIS](@/projects/data.md). Its code is written mainly in R (100 %).
 
-The [repository](@/glossary/repository.md) was created in April 2016; its latest [commit](@/glossary/commit.md) is from 30 April 2016. It reads “Added factbook”. With no commit in the last 48 months it is listed as archive: work from 2016, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 4 April 2016; its latest [commit](@/glossary/commit.md) is from 30 April 2016. It reads “Added factbook”. With no commit in the last 48 months it is listed as archive: work from 2016, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/datascience) and [GitLab](https://gitlab.com/korczis/datascience).
 

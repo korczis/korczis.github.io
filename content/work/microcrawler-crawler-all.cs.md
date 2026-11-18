@@ -13,7 +13,7 @@ tags = ["Data a GIS"]
 repo = "microcrawler-crawler-all"
 seo_title = "microcrawler-crawler-all: Data a GIS, 2016–2017 · Tomáš Korčák"
 og_title = "microcrawler-crawler-all: Data a GIS (2016–2017)"
-og_description = "Data a GIS, 2016–2017, archiv. Zdrojový kód: GitLab."
+og_description = "microcrawler-crawler-all: Data a GIS, 2016–2017, archiv. Zdrojový kód: GitLab."
 og_image = "og/cs-work-microcrawler-crawler-all.png"
 schema = "project"
 keywords = ["microcrawler-crawler-all", "Data a GIS", "2016–2017", "GitLab", "Tomáš Korčák", "korczis"]
@@ -27,6 +27,7 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "každých 6 hodin" }
 +++
 **microcrawler-crawler-all** je projekt z kategorie [Data a GIS](@/projects/data.cs.md).
 
@@ -36,4 +37,4 @@ Zdrojový kód: [GitLab](https://gitlab.com/korczis/microcrawler-crawler-all).
 
 Související práce v kategorii [Data a GIS](@/projects/data.cs.md): [microcrawler-crawler-sreality-cz](@/work/microcrawler-crawler-sreality-cz.cs.md) (2016–2017), [microcrawler](@/work/microcrawler.cs.md) (2016–2017), [microcrawler-crawler-bam-brno-cz](@/work/microcrawler-crawler-bam-brno-cz.cs.md) (2017) a [microcrawler-crawler-firmy-cz](@/work/microcrawler-crawler-firmy-cz.cs.md) (2016–2017).
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 18 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…), ze snímku obnovovaného každých 6 hodin. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu. Puls ukazuje posledních 18 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…), ze snímku obnovovaného každých 6 hodin. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

@@ -13,7 +13,7 @@ tags = ["Systems and infrastructure", "Dockerfile", "Shell"]
 repo = "zdeny-docker"
 seo_title = "zdeny-docker: Systems and infrastructure, 2019 · Tomas Korcak"
 og_title = "zdeny-docker: Systems and infrastructure in Dockerfile (2019)"
-og_description = "Systems and infrastructure in Dockerfile and Shell, 2019, archive. Source on GitHub and GitLab."
+og_description = "zdeny-docker: Systems and infrastructure in Dockerfile and Shell, 2019, archive. Source on GitHub and GitLab."
 og_image = "og/work-zdeny-docker.png"
 schema = "project"
 keywords = ["zdeny-docker", "Systems and infrastructure", "Dockerfile", "Shell", "2019", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **zdeny-docker** is a project in [Systems and infrastructure](@/projects/systems.md). Its code is written mainly in [Dockerfile](@/glossary/dockerfile.md) (61.3 %), with [Shell](@/glossary/shell.md).
 
-The [repository](@/glossary/repository.md) was created in March 2019; its latest [commit](@/glossary/commit.md) is from 26 March 2019. It reads “Add .editorconfig”. With no commit in the last 48 months it is listed as archive: work from 2019, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 24 March 2019; its latest [commit](@/glossary/commit.md) is from 26 March 2019. It reads “Add .editorconfig”. With no commit in the last 48 months it is listed as archive: work from 2019, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/zdeny-docker) and [GitLab](https://gitlab.com/korczis/zdeny-docker).
 

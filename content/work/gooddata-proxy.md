@@ -13,7 +13,7 @@ tags = ["Data and GIS", "JavaScript", "HTML"]
 repo = "gooddata-proxy"
 seo_title = "gooddata-proxy: GoodData Proxy, 2016 · Tomas Korcak"
 og_title = "gooddata-proxy: GoodData Proxy (2016)"
-og_description = "Data and GIS in JavaScript and HTML, 2016, archive. Source on GitHub and GitLab."
+og_description = "gooddata-proxy: Data and GIS in JavaScript and HTML, 2016, archive. Source on GitHub and GitLab."
 og_image = "og/work-gooddata-proxy.png"
 schema = "project"
 keywords = ["gooddata-proxy", "Data and GIS", "JavaScript", "HTML", "2016", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **gooddata-proxy** is a project in [Data and GIS](@/projects/data.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (96.8 %), with [HTML](@/glossary/html.md).
 
-The [repository](@/glossary/repository.md) was created in May 2016; its latest [commit](@/glossary/commit.md) is from 17 May 2016. It reads “Merge branch 'master' of github.com:korczis/gooddata-proxy”. With no commit in the last 48 months it is listed as archive: work from 2016, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 17 May 2016; its latest [commit](@/glossary/commit.md) is from 17 May 2016. It reads “Merge branch 'master' of github.com:korczis/gooddata-proxy”. With no commit in the last 48 months it is listed as archive: work from 2016, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/gooddata-proxy) and [GitLab](https://gitlab.com/korczis/gooddata-proxy).
 

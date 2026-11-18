@@ -13,7 +13,7 @@ tags = ["Systémy a infrastruktura", "Dockerfile", "Shell", "PHP"]
 repo = "docks"
 seo_title = "docks: Systémy a infrastruktura, Dockerfile, 2015–2017 · Tomáš Korčák"
 og_title = "docks: Systémy a infrastruktura, Dockerfile (2015–2017)"
-og_description = "Systémy a infrastruktura, Dockerfile, Shell a PHP, 2015–2017, archiv. Zdrojový kód: GitLab."
+og_description = "docks: Systémy a infrastruktura, Dockerfile, Shell a PHP, 2015–2017, archiv. Zdrojový kód: GitLab."
 og_image = "og/cs-work-docks.png"
 schema = "project"
 keywords = ["docks", "Systémy a infrastruktura", "Dockerfile", "Shell", "PHP", "2015–2017", "GitLab", "Tomáš Korčák", "korczis"]
@@ -27,6 +27,7 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "každých 6 hodin" }
 +++
 **docks** je projekt z kategorie [Systémy a infrastruktura](@/projects/systems.cs.md). Jeho kód je napsaný hlavně v jazyce [Dockerfile](@/glossary/dockerfile.cs.md) (77 %), dále [Shell](@/glossary/shell.cs.md) a PHP.
 

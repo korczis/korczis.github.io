@@ -7,16 +7,16 @@ weight = 169
 updated = "2014-08-30T22:29:45Z"
 
 [taxonomies]
-tags = ["Data and GIS"]
+tags = ["Data and GIS", "Ruby"]
 
 [extra]
 repo = "apollo-crawler"
 seo_title = "apollo-crawler: Data and GIS in Ruby, 2014 · Tomas Korcak"
 og_title = "apollo-crawler: This project was canceled and superseded by microcrawler (2014)"
-og_description = "Data and GIS, 2014, archive. Source on GitHub and GitLab."
+og_description = "apollo-crawler: Data and GIS in Ruby, 2014, archive. Source on GitHub and GitLab."
 og_image = "og/work-apollo-crawler.png"
 schema = "project"
-keywords = ["apollo-crawler", "Data and GIS", "2014", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
+keywords = ["apollo-crawler", "Data and GIS", "Ruby", "2014", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
 terms = ["ruby", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
@@ -28,12 +28,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**apollo-crawler** is a project in [Data and GIS](@/projects/data.md).
+**apollo-crawler** is a project in [Data and GIS](@/projects/data.md). Its code is written mainly in [Ruby](@/glossary/ruby.md).
 
-The [repository](@/glossary/repository.md) was created in August 2014; its latest [commit](@/glossary/commit.md) is from 30 August 2014. It reads “Create README.md”. With no commit in the last 48 months it is listed as archive: work from 2014, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 30 August 2014; its latest [commit](@/glossary/commit.md) is from 30 August 2014. It reads “Create README.md”. With no commit in the last 48 months it is listed as archive: work from 2014, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/apollo-crawler) and [GitLab](https://gitlab.com/korczis/apollo-crawler).
 
-Related work in [Data and GIS](@/projects/data.md): [esri](@/work/esri.md) (2014), [apollo-schemas](@/work/apollo-schemas.md) (2014), [gooddata\_rails\_app](@/work/gooddata-rails-app.md) (2014) and [microcrawler-couchapp](@/work/microcrawler-couchapp.md) (2014).
+Related work in [Data and GIS](@/projects/data.md): [esri](@/work/esri.md) (2014), [gooddata\_rails\_app](@/work/gooddata-rails-app.md) (2014), [gooddata\_connectors\_metadata](@/work/gooddata-connectors-metadata.md) (2014–2015) and [docker-gooddata-ruby](@/work/docker-gooddata-ruby.md) (2015).
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 5 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab. The pulse draws the latest 5 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

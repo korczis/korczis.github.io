@@ -13,7 +13,7 @@ tags = ["Tools", "JavaScript"]
 repo = "peg-loader"
 seo_title = "peg-loader: Peg.js grammar loader, 2016 · Tomas Korcak"
 og_title = "peg-loader: Peg.js grammar loader (2016)"
-og_description = "Tools in JavaScript, 2016, archive. Source on GitHub and GitLab."
+og_description = "peg-loader: Tools in JavaScript, 2016, archive. Source on GitHub and GitLab."
 og_image = "og/work-peg-loader.png"
 schema = "project"
 keywords = ["peg-loader", "Tools", "JavaScript", "2016", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **peg-loader** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (100 %).
 
-The [repository](@/glossary/repository.md) was created in April 2016; its latest [commit](@/glossary/commit.md) is from 26 April 2016. It reads “Version 0.0.2”. With no commit in the last 48 months it is listed as archive: work from 2016, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 26 April 2016; its latest [commit](@/glossary/commit.md) is from 26 April 2016. It reads “Version 0.0.2”. With no commit in the last 48 months it is listed as archive: work from 2016, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/peg-loader) and [GitLab](https://gitlab.com/korczis/peg-loader).
 

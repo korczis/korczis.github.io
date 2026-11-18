@@ -13,7 +13,7 @@ tags = ["Tools"]
 repo = "reflex"
 seo_title = "reflex: .NET Reflection tools, 2012 · Tomas Korcak"
 og_title = "reflex: .NET Reflection tools (2012)"
-og_description = "Tools in C#, 2012, archive. Source on GitHub and GitLab."
+og_description = "reflex: Tools in C#, 2012, archive. Source on GitHub and GitLab."
 og_image = "og/work-reflex.png"
 schema = "project"
 keywords = ["reflex", "Tools", "C#", "2012", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **reflex** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [C#](@/glossary/csharp.md) (100 %).
 
-The [repository](@/glossary/repository.md) was created in August 2012; its latest [commit](@/glossary/commit.md) is from 19 August 2012. It reads “Initial add”. With no commit in the last 48 months it is listed as archive: work from 2012, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 19 August 2012; its latest [commit](@/glossary/commit.md) is from 19 August 2012. It reads “Initial add”. With no commit in the last 48 months it is listed as archive: work from 2012, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/reflex) and [GitLab](https://gitlab.com/korczis/reflex).
 

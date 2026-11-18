@@ -13,7 +13,7 @@ tags = ["Data and GIS", "Elixir", "CSS", "JavaScript"]
 repo = "czech-stats"
 seo_title = "czech-stats: Data and GIS in Elixir, 2020 · Tomas Korcak"
 og_title = "czech-stats: Data and GIS in Elixir (2020)"
-og_description = "Data and GIS in Elixir, CSS and JavaScript, 2020, archive. Source on GitLab."
+og_description = "czech-stats: Data and GIS in Elixir, CSS and JavaScript, 2020, archive. Source on GitLab."
 og_image = "og/work-czech-stats.png"
 schema = "project"
 keywords = ["czech-stats", "Data and GIS", "Elixir", "CSS", "JavaScript", "2020", "GitLab", "Tomas Korcak", "korczis"]
@@ -27,10 +27,11 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "every 6 hours" }
 +++
 **czech-stats** is a project in [Data and GIS](@/projects/data.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (59.3 %), with [CSS](@/glossary/css.md), [JavaScript](@/glossary/javascript.md) and [HTML](@/glossary/html.md).
 
-The [repository](@/glossary/repository.md) was created in January 2020; its latest [commit](@/glossary/commit.md) is from 1 January 2020. It reads “Ignore IntelliJ Idea”. With no commit in the last 48 months it is listed as archive: work from 2020, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 1 January 2020; its latest [commit](@/glossary/commit.md) is from 1 January 2020. It reads “Ignore IntelliJ Idea”. With no commit in the last 48 months it is listed as archive: work from 2020, kept for the record and dated as measured.
 
 Its source is on [GitLab](https://gitlab.com/korczis/czech-stats).
 

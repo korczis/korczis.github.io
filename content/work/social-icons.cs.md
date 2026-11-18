@@ -13,7 +13,7 @@ tags = ["Systémy a infrastruktura"]
 repo = "social-icons"
 seo_title = "social-icons: Systémy a infrastruktura, 2013 · Tomáš Korčák"
 og_title = "social-icons: Systémy a infrastruktura (2013)"
-og_description = "Systémy a infrastruktura, 2013, archiv. Zdrojový kód: GitHub a GitLab. 1 hvězda."
+og_description = "social-icons: Systémy a infrastruktura, 2013, archiv. Zdrojový kód: GitHub a GitLab. 1 hvězda."
 og_image = "og/cs-work-social-icons.png"
 schema = "project"
 keywords = ["social-icons", "Systémy a infrastruktura", "2013", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
@@ -36,4 +36,4 @@ Zdrojový kód: [GitHub](https://github.com/korczis/social-icons) a [GitLab](htt
 
 Související práce v kategorii [Systémy a infrastruktura](@/projects/systems.cs.md): [apollon](@/work/apollon.cs.md) (2014–2015), [docker-conf2015](@/work/docker-conf2015.cs.md) (2015), [docker-datasciencetoolbox](@/work/docker-datasciencetoolbox.cs.md) (2015) a [docker-dstk](@/work/docker-dstk.cs.md) (2015).
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje poslední 3 commity jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu. Puls ukazuje poslední 3 commity jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

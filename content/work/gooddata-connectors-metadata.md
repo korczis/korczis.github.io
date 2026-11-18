@@ -13,7 +13,7 @@ tags = ["Data and GIS", "Ruby"]
 repo = "gooddata_connectors_metadata"
 seo_title = "gooddata_connectors_metadata: Data and GIS, 2014–2015 · Tomas Korcak"
 og_title = "gooddata_connectors_metadata: The gem for accessing metadata for gooddata… (2014–2015)"
-og_description = "Data and GIS in Ruby, 2014–2015, archive. Source on GitHub and GitLab."
+og_description = "gooddata_connectors_metadata: Data and GIS in Ruby, 2014–2015, archive. Source on GitHub and GitLab."
 og_image = "og/work-gooddata-connectors-metadata.png"
 schema = "project"
 keywords = ["gooddata_connectors_metadata", "Data and GIS", "Ruby", "2014–2015", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,10 +30,10 @@ tone = "night"
 +++
 **gooddata\_connectors\_metadata** is a project in [Data and GIS](@/projects/data.md). Its code is written mainly in [Ruby](@/glossary/ruby.md) (100 %).
 
-The [repository](@/glossary/repository.md) was created in January 2015; its latest [commit](@/glossary/commit.md) is from 21 January 2015. It reads “Removed credentials leak”. With no commit in the last 48 months it is listed as archive: work from 2014–2015, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 22 January 2015; its latest [commit](@/glossary/commit.md) is from 21 January 2015. It reads “Removed credentials leak”. With no commit in the last 48 months it is listed as archive: work from 2014–2015, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/gooddata_connectors_metadata) and [GitLab](https://gitlab.com/korczis/gooddata_connectors_metadata).
 
-Related work in [Data and GIS](@/projects/data.md): [gooddata\_rails\_app](@/work/gooddata-rails-app.md) (2014), [esri](@/work/esri.md) (2014), [docker-gooddata-ruby](@/work/docker-gooddata-ruby.md) (2015) and [gooddata-ruby-examples](@/work/gooddata-ruby-examples.md) (2014–2015).
+Related work in [Data and GIS](@/projects/data.md): [gooddata\_rails\_app](@/work/gooddata-rails-app.md) (2014), [apollo-crawler](@/work/apollo-crawler.md) (2014), [esri](@/work/esri.md) (2014) and [docker-gooddata-ruby](@/work/docker-gooddata-ruby.md) (2015).
 
 *How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 30 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

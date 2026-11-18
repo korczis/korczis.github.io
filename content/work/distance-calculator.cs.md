@@ -13,7 +13,7 @@ tags = ["Věda a vizualizace", "Elixir"]
 repo = "distance-calculator"
 seo_title = "distance-calculator: Věda a vizualizace, Elixir, 2024 · Tomáš Korčák"
 og_title = "distance-calculator: Věda a vizualizace, Elixir"
-og_description = "Věda a vizualizace, Elixir, 2024, aktivní za posledních 48 měsíců. Zdrojový kód: GitLab."
+og_description = "distance-calculator: Věda a vizualizace, Elixir, 2024, aktivní za posledních 48 měsíců. Zdrojový kód: GitLab."
 og_image = "og/cs-work-distance-calculator.png"
 schema = "project"
 keywords = ["distance-calculator", "Věda a vizualizace", "Elixir", "2024", "GitLab", "Tomáš Korčák", "korczis"]
@@ -27,6 +27,7 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "každých 6 hodin" }
 +++
 **distance-calculator** je projekt z kategorie [Věda a vizualizace](@/projects/science.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (100 %).
 

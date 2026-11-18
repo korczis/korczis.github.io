@@ -11,7 +11,7 @@ og_title = "205 projektů od roku 2012, 43 aktivních za poslední 4 roky."
 og_image = "og/cs-work.png"
 schema = "collection"
 terms = ["commit", "fork", "mirror", "repository", "open-source"]
-keywords = ["Tomáš Korčák: projekty", "korczis", "openttd-prismatic-bridge", "korczis.github.io", "majordomus-reel", "oscilla", "kompendium-epistemicke-anihilace", "prismatic-majordomus", "sonic-playground", "algoglyph"]
+keywords = ["Tomáš Korčák: projekty", "korczis", "oscilla", "openttd-prismatic-bridge", "majordomus-reel", "korczis.github.io", "kompendium-epistemicke-anihilace", "prismatic-majordomus", "sonic-playground", "algoglyph"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -21,6 +21,7 @@ lead = "viz_work_pulse_lead"
 span = 3
 height = "md"
 tone = "night"
+vars = { span = "za poslední 4 roky", cadence = "každých 6 hodin" }
 +++
 
 Tato stránka drží každý vlastní projekt, každý s vlastní stránkou. Projekt je nedávný podle data svého posledního [commitu](@/glossary/commit.cs.md) ve výchozí větvi, ne podle toho, kdy na hostingu naposledy něco proběhlo, a řadí se do jednoho z období 12, 24 a 48 měsíců; projekt, jehož poslední commit je starší než 48 měsíců, patří do archivu, datovaný prvním a posledním rokem, nikdy skrytý.

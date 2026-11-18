@@ -13,7 +13,7 @@ tags = ["Knowledge", "Swift"]
 repo = "ReadingPhoneNumbersInRealTime"
 seo_title = "ReadingPhoneNumbersInRealTime: Knowledge in Swift, 2021 · Tomas Korcak"
 og_title = "ReadingPhoneNumbersInRealTime: Analyze and filter phone numbers from text… (2021)"
-og_description = "Knowledge in Swift, 2021, archive. Source on GitHub."
+og_description = "ReadingPhoneNumbersInRealTime: Knowledge in Swift, 2021, archive. Source on GitHub."
 og_image = "og/work-readingphonenumbersinrealtime.png"
 schema = "project"
 keywords = ["ReadingPhoneNumbersInRealTime", "Knowledge", "Swift", "2021", "GitHub", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **ReadingPhoneNumbersInRealTime** is a project in [Knowledge](@/projects/knowledge.md). Its code is written mainly in [Swift](@/glossary/swift.md) (100 %).
 
-The [repository](@/glossary/repository.md) was created in August 2021; its latest [commit](@/glossary/commit.md) is from 12 August 2021. It reads “Initial commit”. With no commit in the last 48 months it is listed as archive: work from 2021, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 12 August 2021; its latest [commit](@/glossary/commit.md) is from 12 August 2021. It reads “Initial commit”. With no commit in the last 48 months it is listed as archive: work from 2021, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/ReadingPhoneNumbersInRealTime).
 

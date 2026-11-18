@@ -13,7 +13,7 @@ tags = ["Systémy a infrastruktura"]
 repo = "docker-datasciencetoolbox"
 seo_title = "docker-datasciencetoolbox, 2015 · Tomáš Korčák"
 og_title = "docker-datasciencetoolbox: Systémy a infrastruktura (2015)"
-og_description = "Systémy a infrastruktura, 2015, archiv. Zdrojový kód: GitHub a GitLab."
+og_description = "docker-datasciencetoolbox: Systémy a infrastruktura, 2015, archiv. Zdrojový kód: GitHub a GitLab."
 og_image = "og/cs-work-docker-datasciencetoolbox.png"
 schema = "project"
 keywords = ["docker-datasciencetoolbox", "Systémy a infrastruktura", "2015", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
@@ -36,4 +36,4 @@ Zdrojový kód: [GitHub](https://github.com/korczis/docker-datasciencetoolbox) a
 
 Související práce v kategorii [Systémy a infrastruktura](@/projects/systems.cs.md): [docker-dstk](@/work/docker-dstk.cs.md) (2015), [docker-conf2015](@/work/docker-conf2015.cs.md) (2015), [apollon](@/work/apollon.cs.md) (2014–2015) a [docks](@/work/docks.cs.md) (2015–2017).
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 8 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu. Puls ukazuje posledních 8 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

@@ -13,11 +13,11 @@ tags = ["Znalosti", "Elixir", "JavaScript", "Python"]
 repo = "kompendium-epistemicke-anihilace"
 seo_title = "Kompendium: Znalosti, Elixir, 2026 · Tomáš Korčák"
 og_title = "Kompendium: Defenzivní taxonomie epistemické a kognitivní manipulace"
-og_description = "Znalosti, Elixir, JavaScript a Python, 2026, aktivní za posledních 12 měsíců. Zdrojový kód: GitHub. Živý web. Pod dohledem Majordomu."
+og_description = "Kompendium: Znalosti, Elixir, JavaScript a Python, 2026, aktivní za posledních 12 měsíců. Zdrojový kód: GitHub. Živý web. Pod dohledem Majordomu."
 og_image = "og/cs-work-kompendium-epistemicke-anihilace.png"
 schema = "project"
 keywords = ["Kompendium", "kompendium-epistemicke-anihilace", "Znalosti", "Elixir", "JavaScript", "Python", "czech", "epistemology", "flowbite", "majordomus", "manipulation", "2026", "GitHub", "Tomáš Korčák", "korczis"]
-terms = ["elixir", "javascript", "python", "html", "rust", "shell", "zola", "cytoscape-js", "apache-echarts", "alpine-js", "flowbite-pro", "github-pages", "repository", "commit", "open-source"]
+terms = ["elixir", "javascript", "python", "html", "shell", "rust", "zola", "cytoscape-js", "apache-echarts", "alpine-js", "flowbite-pro", "github-pages", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,7 +28,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**Kompendium** je projekt z kategorie [Znalosti](@/projects/knowledge.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (32,9 %), dále [JavaScript](@/glossary/javascript.cs.md), [Python](@/glossary/python.cs.md) a [HTML](@/glossary/html.cs.md).
+**Kompendium** je projekt z kategorie [Znalosti](@/projects/knowledge.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (32,7 %), dále [JavaScript](@/glossary/javascript.cs.md), [Python](@/glossary/python.cs.md) a [HTML](@/glossary/html.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 9. listopadu 2026; poslední [commit](@/glossary/commit.cs.md) je z 18. listopadu 2026. Zní „Merge origin/main (e1ad82c1) into train-1“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 

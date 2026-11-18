@@ -13,7 +13,7 @@ tags = ["Data and GIS", "Elixir", "Shell", "Makefile"]
 repo = "microcrawler-elixir"
 seo_title = "microcrawler-elixir: Data and GIS in Elixir, 2016 · Tomas Korcak"
 og_title = "microcrawler-elixir: Microcrawler Implemented in Elixir (2016)"
-og_description = "Data and GIS in Elixir, Shell and Makefile, 2016, archive. Source on GitLab."
+og_description = "microcrawler-elixir: Data and GIS in Elixir, Shell and Makefile, 2016, archive. Source on GitLab."
 og_image = "og/work-microcrawler-elixir.png"
 schema = "project"
 keywords = ["microcrawler-elixir", "Data and GIS", "Elixir", "Shell", "Makefile", "2016", "GitLab", "Tomas Korcak", "korczis"]
@@ -27,10 +27,11 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "every 6 hours" }
 +++
 **microcrawler-elixir** is a project in [Data and GIS](@/projects/data.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (95.6 %), with [Shell](@/glossary/shell.md) and Makefile.
 
-The [repository](@/glossary/repository.md) was created in September 2019; its latest [commit](@/glossary/commit.md) is from 25 September 2016. It reads “Use Microcrawler.Downloader.get for testing instead of Microcrawler.Downloader.get!”. With no commit in the last 48 months it is listed as archive: work from 2016, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 16 September 2019; its latest [commit](@/glossary/commit.md) is from 25 September 2016. It reads “Use Microcrawler.Downloader.get for testing instead of Microcrawler.Downloader.get!”. With no commit in the last 48 months it is listed as archive: work from 2016, kept for the record and dated as measured.
 
 Its source is on [GitLab](https://gitlab.com/korczis/microcrawler-elixir).
 

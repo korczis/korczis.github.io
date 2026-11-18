@@ -13,7 +13,7 @@ tags = ["Tools", "Elixir"]
 repo = "job-processor"
 seo_title = "job-processor: Tools in Elixir, 2024 · Tomas Korcak"
 og_title = "job-processor: This is a simple web service built with Elixir, Plug, and Cowboy that…"
-og_description = "Tools in Elixir, 2024, active in the last 48 months. Source on GitLab."
+og_description = "job-processor: Tools in Elixir, 2024, active in the last 48 months. Source on GitLab."
 og_image = "og/work-job-processor.png"
 schema = "project"
 keywords = ["job-processor", "Tools", "Elixir", "2024", "GitLab", "Tomas Korcak", "korczis"]
@@ -27,10 +27,11 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "every 6 hours" }
 +++
 **job-processor** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (100 %).
 
-The [repository](@/glossary/repository.md) was created in August 2024; its latest [commit](@/glossary/commit.md) is from 1 August 2024. It reads “initial version”. That places it among the projects active in the last 48 months.
+The [repository](@/glossary/repository.md) was created on 1 August 2024; its latest [commit](@/glossary/commit.md) is from 1 August 2024. It reads “initial version”. That places it among the projects active in the last 48 months.
 
 Its source is on [GitLab](https://gitlab.com/korczis/job-processor).
 

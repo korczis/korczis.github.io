@@ -13,7 +13,7 @@ tags = ["Učení a experimenty", "Ruby"]
 repo = "skull-ruby"
 seo_title = "skull-ruby: Učení a experimenty, Ruby, 2014 · Tomáš Korčák"
 og_title = "skull-ruby: Učení a experimenty, Ruby (2014)"
-og_description = "Učení a experimenty, Ruby, 2014, archiv. Zdrojový kód: GitHub a GitLab."
+og_description = "skull-ruby: Učení a experimenty, Ruby, 2014, archiv. Zdrojový kód: GitHub a GitLab."
 og_image = "og/cs-work-skull-ruby.png"
 schema = "project"
 keywords = ["skull-ruby", "Učení a experimenty", "Ruby", "2014", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
@@ -34,6 +34,6 @@ tone = "night"
 
 Zdrojový kód: [GitHub](https://github.com/korczis/skull-ruby) a [GitLab](https://gitlab.com/korczis/skull-ruby).
 
-Související práce v kategorii [Učení a experimenty](@/projects/learning.cs.md): [skull](@/work/skull.cs.md) (2014), [grache-test](@/work/grache-test.cs.md) (2015), [skull-nodejs](@/work/skull-nodejs.cs.md) (2014) a [skull-haskell](@/work/skull-haskell.cs.md) (2014).
+Související práce v kategorii [Učení a experimenty](@/projects/learning.cs.md): [skull](@/work/skull.cs.md) (2014), [grache-test](@/work/grache-test.cs.md) (2015), [sandbox](@/work/sandbox.cs.md) (2012) a [skull-nodejs](@/work/skull-nodejs.cs.md) (2014).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 5 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

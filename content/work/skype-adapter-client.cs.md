@@ -13,7 +13,7 @@ tags = ["Knihovny"]
 repo = "skype-adapter-client"
 seo_title = "skype-adapter-client: Knihovny, 2013 · Tomáš Korčák"
 og_title = "skype-adapter-client: Knihovny (2013)"
-og_description = "Knihovny, 2013, archiv. Zdrojový kód: GitHub a GitLab."
+og_description = "skype-adapter-client: Knihovny, 2013, archiv. Zdrojový kód: GitHub a GitLab."
 og_image = "og/cs-work-skype-adapter-client.png"
 schema = "project"
 keywords = ["skype-adapter-client", "Knihovny", "2013", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
@@ -36,4 +36,4 @@ Zdrojový kód: [GitHub](https://github.com/korczis/skype-adapter-client) a [Git
 
 Související práce v kategorii [Knihovny](@/projects/libraries.cs.md): [babel-plugin-transform-graphql](@/work/babel-plugin-transform-graphql.cs.md) (2016), [peg-parser](@/work/peg-parser.cs.md) (2016), [easy-plugin-plugins](@/work/easy-plugin-plugins.cs.md) (2016) a [gauc.ex](@/work/gauc-ex.cs.md) (2017–2018).
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje jeho jediný commit jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu. Puls ukazuje jeho jediný commit jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

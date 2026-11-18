@@ -13,7 +13,7 @@ tags = ["Tools"]
 repo = "prism"
 seo_title = "prism: Tools, 2024–2026 · Tomas Korcak"
 og_title = "prism: PRISM is an advanced system for behavioral analysis, pattern recognition, and…"
-og_description = "Tools, 2024–2026, active in the last 12 months. Source on GitLab."
+og_description = "prism: Tools, 2024–2026, active in the last 12 months. Source on GitLab."
 og_image = "og/work-prism.png"
 schema = "project"
 keywords = ["prism", "Tools", "2024–2026", "GitLab", "Tomas Korcak", "korczis"]
@@ -27,13 +27,14 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "every 6 hours" }
 +++
 **prism** is a project in [Tools](@/projects/tools.md).
 
-The [repository](@/glossary/repository.md) was created in December 2024; its latest [commit](@/glossary/commit.md) is from 4 February 2026. It reads “feat(aiad): inject AIAD v1.0.0 infrastructure”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created on 1 December 2024; its latest [commit](@/glossary/commit.md) is from 4 February 2026. It reads “feat(aiad): inject AIAD v1.0.0 infrastructure”. That places it among the projects active in the last 12 months.
 
 Its source is on [GitLab](https://gitlab.com/korczis/prism).
 
 Related work in [Tools](@/projects/tools.md): [past](@/work/past.md) (2025–2026), [the-psycho](@/work/the-psycho.md) (2025–2026), [tinder-nomics](@/work/tinder-nomics.md) (2025–2026) and [GHT](@/work/ght.md) (2025).
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 2 commits as a heartbeat, one lane per commit type (feat, fix, docs…), from a snapshot refreshed every 6 hours. The concepts below are explained in the [glossary](@/glossary/_index.md).
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab. The pulse draws the latest 2 commits as a heartbeat, one lane per commit type (feat, fix, docs…), from a snapshot refreshed every 6 hours. The concepts below are explained in the [glossary](@/glossary/_index.md).

@@ -13,7 +13,7 @@ tags = ["Learning and experiments", "Elixir", "Rust"]
 repo = "rustler-test"
 seo_title = "rustler-test: Learning and experiments in Elixir, 2017 · Tomas Korcak"
 og_title = "rustler-test: Working Example of Rustler - Safe Rust bridge for creating Erlang… (2017)"
-og_description = "Learning and experiments in Elixir and Rust, 2017, archive. Source on GitHub and GitLab."
+og_description = "rustler-test: Learning and experiments in Elixir and Rust, 2017, archive. Source on GitHub and GitLab."
 og_image = "og/work-rustler-test.png"
 schema = "project"
 keywords = ["rustler-test", "Learning and experiments", "Elixir", "Rust", "2017", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **rustler-test** is a project in [Learning and experiments](@/projects/learning.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (74.4 %), with [Rust](@/glossary/rust.md).
 
-The [repository](@/glossary/repository.md) was created in June 2017; its latest [commit](@/glossary/commit.md) is from 19 September 2017. It reads “Update to work with Erlang/OTP 20”. With no commit in the last 48 months it is listed as archive: work from 2017, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 18 June 2017; its latest [commit](@/glossary/commit.md) is from 19 September 2017. It reads “Update to work with Erlang/OTP 20”. With no commit in the last 48 months it is listed as archive: work from 2017, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/rustler-test) and [GitLab](https://gitlab.com/korczis/rustler-test).
 

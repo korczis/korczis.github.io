@@ -13,7 +13,7 @@ tags = ["Tools", "Just", "Shell", "Rust"]
 repo = "comtesse"
 seo_title = "comtesse: Tools in Just, 2025 · Tomas Korcak"
 og_title = "comtesse: Mission: Improve accuracy and consistency of per-commit assessments while…"
-og_description = "Tools in Just, Shell and Rust, 2025, active in the last 24 months. Source on GitLab."
+og_description = "comtesse: Tools in Just, Shell and Rust, 2025, active in the last 24 months. Source on GitLab."
 og_image = "og/work-comtesse.png"
 schema = "project"
 keywords = ["comtesse", "Tools", "Just", "Shell", "Rust", "2025", "GitLab", "Tomas Korcak", "korczis"]
@@ -27,10 +27,11 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "every 6 hours" }
 +++
 **comtesse** is a project in [Tools](@/projects/tools.md). Its code is written mainly in Just (36 %), with [Shell](@/glossary/shell.md), [Rust](@/glossary/rust.md) and Mermaid.
 
-The [repository](@/glossary/repository.md) was created in August 2025; its latest [commit](@/glossary/commit.md) is from 28 August 2025. It reads “docs: add src/comtesse-rs specific README.md”. That places it among the projects active in the last 24 months.
+The [repository](@/glossary/repository.md) was created on 27 August 2025; its latest [commit](@/glossary/commit.md) is from 28 August 2025. It reads “docs: add src/comtesse-rs specific README.md”. That places it among the projects active in the last 24 months.
 
 Its source is on [GitLab](https://gitlab.com/korczis/comtesse).
 

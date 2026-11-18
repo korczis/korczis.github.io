@@ -13,7 +13,7 @@ tags = ["Data a GIS", "Shell"]
 repo = "microcrawler"
 seo_title = "microcrawler: Data a GIS, Shell, 2016–2017 · Tomáš Korčák"
 og_title = "microcrawler: Data a GIS, Shell (2016–2017)"
-og_description = "Data a GIS, Shell, 2016–2017, archiv. Zdrojový kód: GitLab."
+og_description = "microcrawler: Data a GIS, Shell, 2016–2017, archiv. Zdrojový kód: GitLab."
 og_image = "og/cs-work-microcrawler.png"
 schema = "project"
 keywords = ["microcrawler", "Data a GIS", "Shell", "2016–2017", "GitLab", "Tomáš Korčák", "korczis"]
@@ -27,6 +27,7 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "každých 6 hodin" }
 +++
 **microcrawler** je projekt z kategorie [Data a GIS](@/projects/data.cs.md). Jeho kód je napsaný hlavně v jazyce [Shell](@/glossary/shell.cs.md) (100 %).
 

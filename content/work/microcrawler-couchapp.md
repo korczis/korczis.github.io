@@ -13,7 +13,7 @@ tags = ["Data and GIS", "JavaScript", "CSS", "Shell"]
 repo = "microcrawler-couchapp"
 seo_title = "microcrawler-couchapp: Data and GIS in JavaScript, 2014 · Tomas Korcak"
 og_title = "microcrawler-couchapp: Microcrawler Web UI for browsing results (couchapp)  (2014)"
-og_description = "Data and GIS in JavaScript, CSS and Shell, 2014, archive. Source on GitHub and GitLab."
+og_description = "microcrawler-couchapp: Data and GIS in JavaScript, CSS and Shell, 2014, archive. Source on GitHub and GitLab."
 og_image = "og/work-microcrawler-couchapp.png"
 schema = "project"
 keywords = ["microcrawler-couchapp", "Data and GIS", "JavaScript", "CSS", "Shell", "2014", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **microcrawler-couchapp** is a project in [Data and GIS](@/projects/data.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (100 %), with [CSS](@/glossary/css.md) and [Shell](@/glossary/shell.md).
 
-The [repository](@/glossary/repository.md) was created in May 2014; its latest [commit](@/glossary/commit.md) is from 22 June 2014. It reads “Update README.md”. With no commit in the last 48 months it is listed as archive: work from 2014, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 24 May 2014; its latest [commit](@/glossary/commit.md) is from 22 June 2014. It reads “Update README.md”. With no commit in the last 48 months it is listed as archive: work from 2014, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/microcrawler-couchapp) and [GitLab](https://gitlab.com/korczis/microcrawler-couchapp).
 

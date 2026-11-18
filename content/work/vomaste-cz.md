@@ -13,7 +13,7 @@ tags = ["Tools", "JavaScript", "HTML", "Shell"]
 repo = "vomaste.cz"
 seo_title = "vomaste.cz: Tools in JavaScript, 2026 · Tomas Korcak"
 og_title = "vomaste.cz: Tools in JavaScript"
-og_description = "Tools in JavaScript, HTML and Shell, 2026, active in the last 12 months. Source on GitHub. Live site."
+og_description = "vomaste.cz: Tools in JavaScript, HTML and Shell, 2026, active in the last 12 months. Source on GitHub. Live site."
 og_image = "og/work-vomaste-cz.png"
 schema = "project"
 keywords = ["vomaste.cz", "Tools", "JavaScript", "HTML", "Shell", "2026", "GitHub", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **vomaste.cz** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (81 %), with [HTML](@/glossary/html.md), [Shell](@/glossary/shell.md) and [CSS](@/glossary/css.md).
 
-The [repository](@/glossary/repository.md) was created in July 2026; its latest [commit](@/glossary/commit.md) is from 8 November 2026. It reads “feat(validate): chyby tvaru záznamu říkají, co opravit”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created on 21 July 2026; its latest [commit](@/glossary/commit.md) is from 8 November 2026. It reads “feat(validate): chyby tvaru záznamu říkají, co opravit”. That places it among the projects active in the last 12 months.
 
 It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/vomaste.cz/>.
 

@@ -13,7 +13,7 @@ tags = ["Data a GIS"]
 repo = "data-playground"
 seo_title = "data-playground: Data a GIS, 2020 · Tomáš Korčák"
 og_title = "data-playground: Data a GIS (2020)"
-og_description = "Data a GIS, 2020, archiv. Zdrojový kód: GitHub. Projekt, autor Tomáš Korčák."
+og_description = "data-playground: Data a GIS, 2020, archiv. Zdrojový kód: GitHub."
 og_image = "og/cs-work-data-playground.png"
 schema = "project"
 keywords = ["data-playground", "Data a GIS", "2020", "GitHub", "Tomáš Korčák", "korczis"]
@@ -36,4 +36,4 @@ Zdrojový kód: [GitHub](https://github.com/korczis/data-playground).
 
 Související práce v kategorii [Data a GIS](@/projects/data.cs.md): [ctu-cz](@/work/ctu-cz.cs.md) (2020), [czech-stats](@/work/czech-stats.cs.md) (2020), [rocksdb\_indexer](@/work/rocksdb-indexer.cs.md) (2022) a [microcrawler-crawler-all](@/work/microcrawler-crawler-all.cs.md) (2016–2017).
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje jeho jediný commit jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu. Puls ukazuje jeho jediný commit jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

@@ -13,7 +13,7 @@ tags = ["Systems and infrastructure"]
 repo = "docker-datasciencetoolbox"
 seo_title = "docker-datasciencetoolbox, 2015 · Tomas Korcak"
 og_title = "docker-datasciencetoolbox: Dockerized http://datasciencetoolbox.org (2015)"
-og_description = "Systems and infrastructure, 2015, archive. Source on GitHub and GitLab."
+og_description = "docker-datasciencetoolbox: Systems and infrastructure, 2015, archive. Source on GitHub and GitLab."
 og_image = "og/work-docker-datasciencetoolbox.png"
 schema = "project"
 keywords = ["docker-datasciencetoolbox", "Systems and infrastructure", "2015", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,10 +30,10 @@ tone = "night"
 +++
 **docker-datasciencetoolbox** is a project in [Systems and infrastructure](@/projects/systems.md).
 
-The [repository](@/glossary/repository.md) was created in June 2015; its latest [commit](@/glossary/commit.md) is from 6 June 2015. It reads “Update Dockefile”. With no commit in the last 48 months it is listed as archive: work from 2015, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 6 June 2015; its latest [commit](@/glossary/commit.md) is from 6 June 2015. It reads “Update Dockefile”. With no commit in the last 48 months it is listed as archive: work from 2015, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/docker-datasciencetoolbox) and [GitLab](https://gitlab.com/korczis/docker-datasciencetoolbox).
 
 Related work in [Systems and infrastructure](@/projects/systems.md): [docker-dstk](@/work/docker-dstk.md) (2015), [docker-conf2015](@/work/docker-conf2015.md) (2015), [apollon](@/work/apollon.md) (2014–2015) and [docks](@/work/docks.md) (2015–2017).
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 8 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab. The pulse draws the latest 8 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

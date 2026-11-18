@@ -13,7 +13,7 @@ tags = ["AI engineering", "Rust", "Shell", "JavaScript"]
 repo = "prismatic-majordomus"
 seo_title = "Majordomus: AI engineering in Rust, 2026 · Tomas Korcak"
 og_title = "Majordomus: AI agents say the work is done; Majordomus makes them prove it"
-og_description = "AI engineering in Rust, Shell and JavaScript, 2026, active in the last 12 months. Source on GitHub. 1 star. Live site. Supervised by Majordomus."
+og_description = "Majordomus: AI engineering in Rust, Shell and JavaScript, 2026, active in the last 12 months. Source on GitHub. 1 star. Live site. Supervised by Majordomus."
 og_image = "og/work-prismatic-majordomus.png"
 schema = "project"
 keywords = ["Majordomus", "prismatic-majordomus", "AI engineering", "Rust", "Shell", "JavaScript", "agentic-ai", "ai", "ai-agents", "ai-governance", "claude-code", "cli", "2026", "GitHub", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **Majordomus** is a project in [AI engineering](@/projects/ai.md). Its code is written mainly in [Rust](@/glossary/rust.md) (60.7 %), with [Shell](@/glossary/shell.md), [JavaScript](@/glossary/javascript.md) and [HTML](@/glossary/html.md).
 
-The [repository](@/glossary/repository.md) was created in September 2026; its latest [commit](@/glossary/commit.md) is from 18 November 2026. It reads “Merge pull request \#3084 from korczis/fix/delivery-observed-at-the-merge-of-train-f”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created on 3 September 2026; its latest [commit](@/glossary/commit.md) is from 18 November 2026. It reads “Merge pull request \#3084 from korczis/fix/delivery-observed-at-the-merge-of-train-f”. That places it among the projects active in the last 12 months.
 
 It is built with [MCP](@/glossary/mcp.md) and [Zola](@/glossary/zola.md).
 

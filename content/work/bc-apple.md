@@ -13,7 +13,7 @@ tags = ["Tools", "Swift"]
 repo = "bc-apple"
 seo_title = "bc-apple: BlockCollider Apple Apps, 2018 · Tomas Korcak"
 og_title = "bc-apple: BlockCollider Apple Apps (2018)"
-og_description = "Tools in Swift, 2018, archive. Source on GitHub and GitLab."
+og_description = "bc-apple: Tools in Swift, 2018, archive. Source on GitHub and GitLab."
 og_image = "og/work-bc-apple.png"
 schema = "project"
 keywords = ["bc-apple", "Tools", "Swift", "2018", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **bc-apple** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [Swift](@/glossary/swift.md) (100 %).
 
-The [repository](@/glossary/repository.md) was created in June 2018; its latest [commit](@/glossary/commit.md) is from 3 June 2018. It reads “Add iOS App”. With no commit in the last 48 months it is listed as archive: work from 2018, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 3 June 2018; its latest [commit](@/glossary/commit.md) is from 3 June 2018. It reads “Add iOS App”. With no commit in the last 48 months it is listed as archive: work from 2018, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/bc-apple) and [GitLab](https://gitlab.com/korczis/bc-apple).
 

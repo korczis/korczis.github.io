@@ -13,7 +13,7 @@ tags = ["Inženýrství AI"]
 repo = "cognitive-reasoning"
 seo_title = "cognitive-reasoning: Inženýrství AI, 2025 · Tomáš Korčák"
 og_title = "cognitive-reasoning: Inženýrství AI"
-og_description = "Inženýrství AI, 2025, aktivní za posledních 24 měsíců. Zdrojový kód: GitHub."
+og_description = "cognitive-reasoning: Inženýrství AI, 2025, aktivní za posledních 24 měsíců. Zdrojový kód: GitHub."
 og_image = "og/cs-work-cognitive-reasoning.png"
 schema = "project"
 keywords = ["cognitive-reasoning", "Inženýrství AI", "2025", "GitHub", "Tomáš Korčák", "korczis"]
@@ -36,4 +36,4 @@ Zdrojový kód: [GitHub](https://github.com/korczis/cognitive-reasoning).
 
 Související práce v kategorii [Inženýrství AI](@/projects/ai.cs.md): [edna](@/work/edna.cs.md) (2025), [sig](@/work/sig.cs.md) (2025–2026), [llm](@/work/llm.cs.md) (2026) a [Majordomus](@/work/prismatic-majordomus.cs.md) (2026).
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje jeho jediný commit jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu. Puls ukazuje jeho jediný commit jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

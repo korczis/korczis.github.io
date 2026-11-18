@@ -13,7 +13,7 @@ tags = ["Data a GIS"]
 repo = "microcrawler-crawler-base"
 seo_title = "microcrawler-crawler-base: Data a GIS, 2016 · Tomáš Korčák"
 og_title = "microcrawler-crawler-base: Data a GIS (2016)"
-og_description = "Data a GIS, 2016, archiv. Zdrojový kód: GitLab. Projekt, autor Tomáš Korčák."
+og_description = "microcrawler-crawler-base: Data a GIS, 2016, archiv. Zdrojový kód: GitLab."
 og_image = "og/cs-work-microcrawler-crawler-base.png"
 schema = "project"
 keywords = ["microcrawler-crawler-base", "Data a GIS", "2016", "GitLab", "Tomáš Korčák", "korczis"]
@@ -27,6 +27,7 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "každých 6 hodin" }
 +++
 **microcrawler-crawler-base** je projekt z kategorie [Data a GIS](@/projects/data.cs.md).
 
@@ -36,4 +37,4 @@ Zdrojový kód: [GitLab](https://gitlab.com/korczis/microcrawler-crawler-base).
 
 Související práce v kategorii [Data a GIS](@/projects/data.cs.md): [microcrawler-crawler-google-com](@/work/microcrawler-crawler-google-com.cs.md) (2016), [microcrawler-crawler-news-ycombinator-com](@/work/microcrawler-crawler-news-ycombinator-com.cs.md) (2016), [microcrawler-crawler-yelp-com](@/work/microcrawler-crawler-yelp-com.cs.md) (2016) a [microcrawler-js](@/work/microcrawler-js.cs.md) (2016).
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje poslední 2 commity jako tep, jeden pruh na typ commitu (feat, fix, docs…), ze snímku obnovovaného každých 6 hodin. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu. Puls ukazuje poslední 2 commity jako tep, jeden pruh na typ commitu (feat, fix, docs…), ze snímku obnovovaného každých 6 hodin. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

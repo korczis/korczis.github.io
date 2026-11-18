@@ -13,7 +13,7 @@ tags = ["Nástroje", "Elixir", "Shell", "HTML+EEX"]
 repo = "simple_geocoder"
 seo_title = "simple_geocoder: Nástroje, Elixir, 2024 · Tomáš Korčák"
 og_title = "simple_geocoder: Nástroje, Elixir"
-og_description = "Nástroje, Elixir, Shell a HTML+EEX, 2024, aktivní za posledních 48 měsíců. Zdrojový kód: GitLab."
+og_description = "simple_geocoder: Nástroje, Elixir, Shell a HTML+EEX, 2024, aktivní za posledních 48 měsíců. Zdrojový kód: GitLab."
 og_image = "og/cs-work-simple-geocoder.png"
 schema = "project"
 keywords = ["simple_geocoder", "Nástroje", "Elixir", "Shell", "HTML+EEX", "2024", "GitLab", "Tomáš Korčák", "korczis"]
@@ -27,6 +27,7 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "každých 6 hodin" }
 +++
 **simple\_geocoder** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (92,2 %), dále [Shell](@/glossary/shell.cs.md) a HTML+EEX.
 

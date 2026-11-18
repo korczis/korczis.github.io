@@ -13,7 +13,7 @@ tags = ["Tools"]
 repo = "marketing-ideas"
 seo_title = "marketing-ideas: Tools, 2024 · Tomas Korcak"
 og_title = "marketing-ideas: Tools"
-og_description = "Tools, 2024, active in the last 48 months. Source on GitLab."
+og_description = "marketing-ideas: Tools, 2024, active in the last 48 months. Source on GitLab."
 og_image = "og/work-marketing-ideas.png"
 schema = "project"
 keywords = ["marketing-ideas", "Tools", "2024", "GitLab", "Tomas Korcak", "korczis"]
@@ -27,13 +27,14 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "every 6 hours" }
 +++
 **marketing-ideas** is a project in [Tools](@/projects/tools.md).
 
-The [repository](@/glossary/repository.md) was created in April 2024; its latest [commit](@/glossary/commit.md) is from 17 April 2024. It reads “Update README.md”. That places it among the projects active in the last 48 months.
+The [repository](@/glossary/repository.md) was created on 17 April 2024; its latest [commit](@/glossary/commit.md) is from 17 April 2024. It reads “Update README.md”. That places it among the projects active in the last 48 months.
 
 Its source is on [GitLab](https://gitlab.com/korczis/marketing-ideas).
 
 Related work in [Tools](@/projects/tools.md): [simple\_geocoder](@/work/simple-geocoder.md) (2024), [pissaleck](@/work/pissaleck.md) (2024), [pdf\_renderer](@/work/pdf-renderer.md) (2024) and [job-processor](@/work/job-processor.md) (2024).
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 6 commits as a heartbeat, one lane per commit type (feat, fix, docs…), from a snapshot refreshed every 6 hours. The concepts below are explained in the [glossary](@/glossary/_index.md).
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab. The pulse draws the latest 6 commits as a heartbeat, one lane per commit type (feat, fix, docs…), from a snapshot refreshed every 6 hours. The concepts below are explained in the [glossary](@/glossary/_index.md).

@@ -13,7 +13,7 @@ tags = ["Tools", "Python", "Dockerfile", "Makefile"]
 repo = "pdf_renderer"
 seo_title = "pdf_renderer: Tools in Python, 2024 · Tomas Korcak"
 og_title = "pdf_renderer: Create a service that accepts PDF files containing one or more pages"
-og_description = "Tools in Python, Dockerfile and Makefile, 2024, active in the last 48 months. Source on GitLab."
+og_description = "pdf_renderer: Tools in Python, Dockerfile and Makefile, 2024, active in the last 48 months. Source on GitLab."
 og_image = "og/work-pdf-renderer.png"
 schema = "project"
 keywords = ["pdf_renderer", "Tools", "Python", "Dockerfile", "Makefile", "2024", "GitLab", "Tomas Korcak", "korczis"]
@@ -27,10 +27,11 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "every 6 hours" }
 +++
 **pdf\_renderer** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [Python](@/glossary/python.md) (94.2 %), with [Dockerfile](@/glossary/dockerfile.md) and Makefile.
 
-The [repository](@/glossary/repository.md) was created in March 2024; its latest [commit](@/glossary/commit.md) is from 25 March 2024. It reads “Initial commit”. That places it among the projects active in the last 48 months.
+The [repository](@/glossary/repository.md) was created on 24 March 2024; its latest [commit](@/glossary/commit.md) is from 25 March 2024. It reads “Initial commit”. That places it among the projects active in the last 48 months.
 
 Its source is on [GitLab](https://gitlab.com/korczis/pdf_renderer).
 

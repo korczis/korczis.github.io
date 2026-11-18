@@ -13,7 +13,7 @@ tags = ["Data a GIS", "JavaScript"]
 repo = "microcrawler-crawler-yelp-com"
 seo_title = "microcrawler-crawler-yelp-com: Data a GIS, 2016 · Tomáš Korčák"
 og_title = "microcrawler-crawler-yelp-com: Data a GIS, JavaScript (2016)"
-og_description = "Data a GIS, JavaScript, 2016, archiv. Zdrojový kód: GitLab."
+og_description = "microcrawler-crawler-yelp-com: Data a GIS, JavaScript, 2016, archiv. Zdrojový kód: GitLab."
 og_image = "og/cs-work-microcrawler-crawler-yelp-com.png"
 schema = "project"
 keywords = ["microcrawler-crawler-yelp-com", "Data a GIS", "JavaScript", "2016", "GitLab", "Tomáš Korčák", "korczis"]
@@ -27,6 +27,7 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "každých 6 hodin" }
 +++
 **microcrawler-crawler-yelp-com** je projekt z kategorie [Data a GIS](@/projects/data.cs.md). Jeho kód je napsaný hlavně v jazyce [JavaScript](@/glossary/javascript.cs.md) (100 %).
 

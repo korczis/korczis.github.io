@@ -13,7 +13,7 @@ tags = ["Tools"]
 repo = "ares-api"
 seo_title = "ares-api: Tools, 2014 · Tomas Korcak"
 og_title = "ares-api: Mirror of https://code.google.com/p/ares-api/ (2014)"
-og_description = "Tools, 2014, archive. Source on GitHub and GitLab."
+og_description = "ares-api: Tools, 2014, archive. Source on GitHub and GitLab."
 og_image = "og/work-ares-api.png"
 schema = "project"
 keywords = ["ares-api", "Tools", "2014", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,10 +30,10 @@ tone = "night"
 +++
 **ares-api** is a project in [Tools](@/projects/tools.md).
 
-The [repository](@/glossary/repository.md) was created in January 2014; its latest [commit](@/glossary/commit.md) is from 23 August 2014. It reads “Added binaries”. With no commit in the last 48 months it is listed as archive: work from 2014, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 28 January 2014; its latest [commit](@/glossary/commit.md) is from 23 August 2014. It reads “Added binaries”. With no commit in the last 48 months it is listed as archive: work from 2014, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/ares-api) and [GitLab](https://gitlab.com/korczis/ares-api).
 
 Related work in [Tools](@/projects/tools.md): [photos](@/work/photos.md) (2014), [principal](@/work/principal.md) (2014), [codecademy](@/work/codecademy.md) (2014) and [lethe.it](@/work/lethe-it.md) (2014–2015).
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 3 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab. The pulse draws the latest 3 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

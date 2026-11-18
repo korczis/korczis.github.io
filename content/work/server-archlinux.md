@@ -13,7 +13,7 @@ tags = ["Systems and infrastructure", "Shell"]
 repo = "server-archlinux"
 seo_title = "server-archlinux: Systems and infrastructure, 2019 · Tomas Korcak"
 og_title = "server-archlinux: Systems and infrastructure in Shell (2019)"
-og_description = "Systems and infrastructure in Shell, 2019, archive. Source on GitHub and GitLab."
+og_description = "server-archlinux: Systems and infrastructure in Shell, 2019, archive. Source on GitHub and GitLab."
 og_image = "og/work-server-archlinux.png"
 schema = "project"
 keywords = ["server-archlinux", "Systems and infrastructure", "Shell", "2019", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **server-archlinux** is a project in [Systems and infrastructure](@/projects/systems.md). Its code is written mainly in [Shell](@/glossary/shell.md) (100 %).
 
-The [repository](@/glossary/repository.md) was created in February 2019; its latest [commit](@/glossary/commit.md) is from 4 April 2019. It reads “WIP”. With no commit in the last 48 months it is listed as archive: work from 2019, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 17 February 2019; its latest [commit](@/glossary/commit.md) is from 4 April 2019. It reads “WIP”. With no commit in the last 48 months it is listed as archive: work from 2019, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/server-archlinux) and [GitLab](https://gitlab.com/korczis/server-archlinux).
 

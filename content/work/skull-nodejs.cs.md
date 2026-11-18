@@ -7,16 +7,16 @@ weight = 179
 updated = "2014-08-03T04:09:35Z"
 
 [taxonomies]
-tags = ["Učení a experimenty"]
+tags = ["Učení a experimenty", "Makefile"]
 
 [extra]
 repo = "skull-nodejs"
 seo_title = "skull-nodejs: Učení a experimenty, Makefile, 2014 · Tomáš Korčák"
 og_title = "skull-nodejs: Učení a experimenty, Makefile (2014)"
-og_description = "Učení a experimenty, 2014, archiv. Zdrojový kód: GitHub a GitLab."
+og_description = "skull-nodejs: Učení a experimenty, Makefile, 2014, archiv. Zdrojový kód: GitHub a GitLab."
 og_image = "og/cs-work-skull-nodejs.png"
 schema = "project"
-keywords = ["skull-nodejs", "Učení a experimenty", "2014", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
+keywords = ["skull-nodejs", "Učení a experimenty", "Makefile", "2014", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
 terms = ["repository", "commit", "open-source"]
 
 [[extra.viz]]
@@ -28,12 +28,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**skull-nodejs** je projekt z kategorie [Učení a experimenty](@/projects/learning.cs.md).
+**skull-nodejs** je projekt z kategorie [Učení a experimenty](@/projects/learning.cs.md). Jeho kód je napsaný hlavně v jazyce Makefile.
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 22. července 2014; poslední [commit](@/glossary/commit.cs.md) je z 3. srpna 2014. Zní „Update README.md“. Bez commitu za posledních 48 měsíců je veden jako archiv: práce z období 2014, ponechaná pro záznam a datovaná podle měření.
 
 Zdrojový kód: [GitHub](https://github.com/korczis/skull-nodejs) a [GitLab](https://gitlab.com/korczis/skull-nodejs).
 
-Související práce v kategorii [Učení a experimenty](@/projects/learning.cs.md): [skull-ruby](@/work/skull-ruby.cs.md) (2014), [skull-haskell](@/work/skull-haskell.cs.md) (2014), [skull-erlang](@/work/skull-erlang.cs.md) (2014) a [skull-java](@/work/skull-java.cs.md) (2014).
+Související práce v kategorii [Učení a experimenty](@/projects/learning.cs.md): [skull-cpp](@/work/skull-cpp.cs.md) (2014–2015), [skull-ruby](@/work/skull-ruby.cs.md) (2014), [skull-haskell](@/work/skull-haskell.cs.md) (2014) a [skull-erlang](@/work/skull-erlang.cs.md) (2014).
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 5 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu. Puls ukazuje posledních 5 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

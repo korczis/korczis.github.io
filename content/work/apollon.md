@@ -13,7 +13,7 @@ tags = ["Systems and infrastructure", "Ruby"]
 repo = "apollon"
 seo_title = "apollon: Systems and infrastructure in Ruby, 2014–2015 · Tomas Korcak"
 og_title = "apollon: Your own personal cluster built on top of the cloud (2014–2015)"
-og_description = "Systems and infrastructure in Ruby, 2014–2015, archive. Source on GitHub and GitLab. 4 stars. Live site."
+og_description = "apollon: Systems and infrastructure in Ruby, 2014–2015, archive. Source on GitHub and GitLab. 4 stars. Live site."
 og_image = "og/work-apollon.png"
 schema = "project"
 keywords = ["apollon", "Systems and infrastructure", "Ruby", "2014–2015", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **apollon** is a project in [Systems and infrastructure](@/projects/systems.md). Its code is written mainly in [Ruby](@/glossary/ruby.md) (100 %).
 
-The [repository](@/glossary/repository.md) was created in May 2014; its latest [commit](@/glossary/commit.md) is from 25 February 2015. It reads “Update and rename config/coreos/conf2015 to config/coreos/conf2015/worker.yml”. With no commit in the last 48 months it is listed as archive: work from 2014–2015, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 5 May 2014; its latest [commit](@/glossary/commit.md) is from 25 February 2015. It reads “Update and rename config/coreos/conf2015 to config/coreos/conf2015/worker.yml”. With no commit in the last 48 months it is listed as archive: work from 2014–2015, kept for the record and dated as measured.
 
 It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/apollon/>.
 

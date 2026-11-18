@@ -13,7 +13,7 @@ tags = ["Nástroje"]
 repo = "twitter-analysis"
 seo_title = "twitter-analysis: Nástroje, 2019 · Tomáš Korčák"
 og_title = "twitter-analysis: Nástroje (2019)"
-og_description = "Nástroje, 2019, archiv. Zdrojový kód: GitHub a GitLab."
+og_description = "twitter-analysis: Nástroje, 2019, archiv. Zdrojový kód: GitHub a GitLab."
 og_image = "og/cs-work-twitter-analysis.png"
 schema = "project"
 keywords = ["twitter-analysis", "Nástroje", "2019", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
@@ -36,4 +36,4 @@ Zdrojový kód: [GitHub](https://github.com/korczis/twitter-analysis) a [GitLab]
 
 Související práce v kategorii [Nástroje](@/projects/tools.cs.md): [kanec](@/work/kanec.cs.md) (2019), [home](@/work/home.cs.md) (2019), [ts-logger](@/work/ts-logger.cs.md) (2019) a [bcnode-extra-scripts](@/work/bcnode-extra-scripts.cs.md) (2018).
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje jeho jediný commit jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu. Puls ukazuje jeho jediný commit jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

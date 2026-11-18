@@ -13,7 +13,7 @@ tags = ["Web", "CSS", "HTML", "JavaScript"]
 repo = "korczis-github-com"
 seo_title = "korczis-github-com: Github Pages, 2014–2015 · Tomas Korcak"
 og_title = "korczis-github-com: Github Pages (2014–2015)"
-og_description = "Web in CSS, HTML and JavaScript, 2014–2015, archive. Source on GitLab."
+og_description = "korczis-github-com: Web in CSS, HTML and JavaScript, 2014–2015, archive. Source on GitLab."
 og_image = "og/work-korczis-github-com.png"
 schema = "project"
 keywords = ["korczis-github-com", "Web", "CSS", "HTML", "JavaScript", "2014–2015", "GitLab", "Tomas Korcak", "korczis"]
@@ -27,10 +27,11 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "every 6 hours" }
 +++
 **korczis-github-com** is a project in [Web](@/projects/web.md). Its code is written mainly in [CSS](@/glossary/css.md) (85.3 %), with [HTML](@/glossary/html.md) and [JavaScript](@/glossary/javascript.md).
 
-The [repository](@/glossary/repository.md) was created in September 2019; its latest [commit](@/glossary/commit.md) is from 18 September 2015. It reads “Update links”. With no commit in the last 48 months it is listed as archive: work from 2014–2015, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 16 September 2019; its latest [commit](@/glossary/commit.md) is from 18 September 2015. It reads “Update links”. With no commit in the last 48 months it is listed as archive: work from 2014–2015, kept for the record and dated as measured.
 
 Its source is on [GitLab](https://gitlab.com/korczis/korczis-github-com).
 

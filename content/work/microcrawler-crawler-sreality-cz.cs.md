@@ -13,7 +13,7 @@ tags = ["Data a GIS", "JavaScript"]
 repo = "microcrawler-crawler-sreality-cz"
 seo_title = "microcrawler-crawler-sreality-cz: Data a GIS, 2016–2017 · Tomáš Korčák"
 og_title = "microcrawler-crawler-sreality-cz: Data a GIS, JavaScript (2016–2017)"
-og_description = "Data a GIS, JavaScript, 2016–2017, archiv. Zdrojový kód: GitLab."
+og_description = "microcrawler-crawler-sreality-cz: Data a GIS, JavaScript, 2016–2017, archiv. Zdrojový kód: GitLab."
 og_image = "og/cs-work-microcrawler-crawler-sreality-cz.png"
 schema = "project"
 keywords = ["microcrawler-crawler-sreality-cz", "Data a GIS", "JavaScript", "2016–2017", "GitLab", "Tomáš Korčák", "korczis"]
@@ -27,6 +27,7 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "každých 6 hodin" }
 +++
 **microcrawler-crawler-sreality-cz** je projekt z kategorie [Data a GIS](@/projects/data.cs.md). Jeho kód je napsaný hlavně v jazyce [JavaScript](@/glossary/javascript.cs.md) (100 %).
 

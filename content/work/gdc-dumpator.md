@@ -13,7 +13,7 @@ tags = ["Tools", "Ruby"]
 repo = "gdc-dumpator"
 seo_title = "gdc-dumpator: Tools in Ruby, 2017 · Tomas Korcak"
 og_title = "gdc-dumpator: Tools in Ruby (2017)"
-og_description = "Tools in Ruby, 2017, archive. Source on GitHub and GitLab."
+og_description = "gdc-dumpator: Tools in Ruby, 2017, archive. Source on GitHub and GitLab."
 og_image = "og/work-gdc-dumpator.png"
 schema = "project"
 keywords = ["gdc-dumpator", "Tools", "Ruby", "2017", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **gdc-dumpator** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [Ruby](@/glossary/ruby.md) (100 %).
 
-The [repository](@/glossary/repository.md) was created in November 2017; its latest [commit](@/glossary/commit.md) is from 10 November 2017. It reads “More hacks”. With no commit in the last 48 months it is listed as archive: work from 2017, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 8 November 2017; its latest [commit](@/glossary/commit.md) is from 10 November 2017. It reads “More hacks”. With no commit in the last 48 months it is listed as archive: work from 2017, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/gdc-dumpator) and [GitLab](https://gitlab.com/korczis/gdc-dumpator).
 

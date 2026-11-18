@@ -13,7 +13,7 @@ tags = ["Data and GIS", "Elixir", "Rust"]
 repo = "meili_rsex"
 seo_title = "meili_rsex: Data and GIS in Elixir, 2024 · Tomas Korcak"
 og_title = "meili_rsex: Minimal \"steps-to-reproduce\" project to demonstrate fucked-up integration…"
-og_description = "Data and GIS in Elixir and Rust, 2024, active in the last 48 months. Source on GitLab."
+og_description = "meili_rsex: Data and GIS in Elixir and Rust, 2024, active in the last 48 months. Source on GitLab."
 og_image = "og/work-meili-rsex.png"
 schema = "project"
 keywords = ["meili_rsex", "Data and GIS", "Elixir", "Rust", "2024", "GitLab", "Tomas Korcak", "korczis"]
@@ -27,10 +27,11 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "every 6 hours" }
 +++
 **meili\_rsex** is a project in [Data and GIS](@/projects/data.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (95.8 %), with [Rust](@/glossary/rust.md).
 
-The [repository](@/glossary/repository.md) was created in June 2024; its latest [commit](@/glossary/commit.md) is from 3 June 2024. It reads “fix: install required asdf plugins - elixir, erlang, rust”. That places it among the projects active in the last 48 months.
+The [repository](@/glossary/repository.md) was created on 3 June 2024; its latest [commit](@/glossary/commit.md) is from 3 June 2024. It reads “fix: install required asdf plugins - elixir, erlang, rust”. That places it among the projects active in the last 48 months.
 
 Its source is on [GitLab](https://gitlab.com/korczis/meili_rsex).
 

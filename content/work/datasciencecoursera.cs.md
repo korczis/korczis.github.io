@@ -13,7 +13,7 @@ tags = ["Data a GIS"]
 repo = "datasciencecoursera"
 seo_title = "datasciencecoursera: Data a GIS, 2015 · Tomáš Korčák"
 og_title = "datasciencecoursera: Data a GIS (2015)"
-og_description = "Data a GIS, 2015, archiv. Zdrojový kód: GitHub a GitLab."
+og_description = "datasciencecoursera: Data a GIS, 2015, archiv. Zdrojový kód: GitHub a GitLab."
 og_image = "og/cs-work-datasciencecoursera.png"
 schema = "project"
 keywords = ["datasciencecoursera", "Data a GIS", "2015", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
@@ -36,4 +36,4 @@ Zdrojový kód: [GitHub](https://github.com/korczis/datasciencecoursera) a [GitL
 
 Související práce v kategorii [Data a GIS](@/projects/data.cs.md): [docker-gooddata-ruby](@/work/docker-gooddata-ruby.cs.md) (2015), [gooddata-ruby-examples](@/work/gooddata-ruby-examples.cs.md) (2014–2015), [gooddata\_connectors\_metadata](@/work/gooddata-connectors-metadata.cs.md) (2014–2015) a [data](@/work/data.cs.md) (2014–2015).
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje poslední 2 commity jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu. Puls ukazuje poslední 2 commity jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

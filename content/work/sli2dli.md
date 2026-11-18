@@ -13,7 +13,7 @@ tags = ["Tools", "Rust", "Makefile"]
 repo = "sli2dli"
 seo_title = "sli2dli: Tools in Rust, 2017 · Tomas Korcak"
 og_title = "sli2dli: SLI to DLI implementation written in rust (2017)"
-og_description = "Tools in Rust and Makefile, 2017, archive. Source on GitHub and GitLab."
+og_description = "sli2dli: Tools in Rust and Makefile, 2017, archive. Source on GitHub and GitLab."
 og_image = "og/work-sli2dli.png"
 schema = "project"
 keywords = ["sli2dli", "Tools", "Rust", "Makefile", "2017", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **sli2dli** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [Rust](@/glossary/rust.md) (98.9 %), with Makefile.
 
-The [repository](@/glossary/repository.md) was created in May 2017; its latest [commit](@/glossary/commit.md) is from 14 May 2017. It reads “Cosmetics”. With no commit in the last 48 months it is listed as archive: work from 2017, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 9 May 2017; its latest [commit](@/glossary/commit.md) is from 14 May 2017. It reads “Cosmetics”. With no commit in the last 48 months it is listed as archive: work from 2017, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/sli2dli) and [GitLab](https://gitlab.com/korczis/sli2dli).
 

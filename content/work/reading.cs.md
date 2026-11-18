@@ -13,7 +13,7 @@ tags = ["Znalosti"]
 repo = "reading"
 seo_title = "reading: Znalosti, 2019 · Tomáš Korčák"
 og_title = "reading: Znalosti (2019)"
-og_description = "Znalosti, 2019, archiv. Zdrojový kód: GitHub a GitLab. 1 hvězda."
+og_description = "reading: Znalosti, 2019, archiv. Zdrojový kód: GitHub a GitLab. 1 hvězda."
 og_image = "og/cs-work-reading.png"
 schema = "project"
 keywords = ["reading", "Znalosti", "2019", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
@@ -36,4 +36,4 @@ Zdrojový kód: [GitHub](https://github.com/korczis/reading) a [GitLab](https://
 
 Související práce v kategorii [Znalosti](@/projects/knowledge.cs.md): [MinervaEye](@/work/minervaeye.cs.md) (2020–2021), [ReadingPhoneNumbersInRealTime](@/work/readingphonenumbersinrealtime.cs.md) (2021), [books](@/work/books.cs.md) (2013) a [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md) (2026).
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje poslední 3 commity jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu. Puls ukazuje poslední 3 commity jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

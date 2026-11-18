@@ -13,7 +13,7 @@ tags = ["Data a GIS"]
 repo = "apollo-schemas"
 seo_title = "apollo-schemas: Data a GIS, 2014 · Tomáš Korčák"
 og_title = "apollo-schemas: Data a GIS (2014)"
-og_description = "Data a GIS, 2014, archiv. Zdrojový kód: GitHub a GitLab."
+og_description = "apollo-schemas: Data a GIS, 2014, archiv. Zdrojový kód: GitHub a GitLab."
 og_image = "og/cs-work-apollo-schemas.png"
 schema = "project"
 keywords = ["apollo-schemas", "Data a GIS", "2014", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
@@ -36,4 +36,4 @@ Zdrojový kód: [GitHub](https://github.com/korczis/apollo-schemas) a [GitLab](h
 
 Související práce v kategorii [Data a GIS](@/projects/data.cs.md): [microcrawler-couchapp](@/work/microcrawler-couchapp.cs.md) (2014), [esri](@/work/esri.cs.md) (2014), [apollo-crawler](@/work/apollo-crawler.cs.md) (2014) a [github-extractor](@/work/github-extractor.cs.md) (2014).
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 7 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu. Puls ukazuje posledních 7 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

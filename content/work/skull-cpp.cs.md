@@ -13,7 +13,7 @@ tags = ["Učení a experimenty", "CMake", "Makefile"]
 repo = "skull-cpp"
 seo_title = "skull-cpp: Učení a experimenty, CMake, 2014–2015 · Tomáš Korčák"
 og_title = "skull-cpp: Učení a experimenty, CMake (2014–2015)"
-og_description = "Učení a experimenty, CMake, Makefile a C++, 2014–2015, archiv. Zdrojový kód: GitHub a GitLab."
+og_description = "skull-cpp: Učení a experimenty, CMake, Makefile a C++, 2014–2015, archiv. Zdrojový kód: GitHub a GitLab."
 og_image = "og/cs-work-skull-cpp.png"
 schema = "project"
 keywords = ["skull-cpp", "Učení a experimenty", "CMake", "Makefile", "C++", "2014–2015", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
@@ -34,6 +34,6 @@ tone = "night"
 
 Zdrojový kód: [GitHub](https://github.com/korczis/skull-cpp) a [GitLab](https://gitlab.com/korczis/skull-cpp).
 
-Související práce v kategorii [Učení a experimenty](@/projects/learning.cs.md): [happ](@/work/happ.cs.md) (2021), [skull-emscripten](@/work/skull-emscripten.cs.md) (2014), [grache-test](@/work/grache-test.cs.md) (2015) a [node-proxy-upload](@/work/node-proxy-upload.cs.md) (2016).
+Související práce v kategorii [Učení a experimenty](@/projects/learning.cs.md): [happ](@/work/happ.cs.md) (2021), [skull-emscripten](@/work/skull-emscripten.cs.md) (2014), [skull-nodejs](@/work/skull-nodejs.cs.md) (2014) a [grache-test](@/work/grache-test.cs.md) (2015).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 30 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

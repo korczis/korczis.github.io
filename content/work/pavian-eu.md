@@ -13,7 +13,7 @@ tags = ["Web", "ApacheConf", "HTML", "CSS"]
 repo = "pavian.eu"
 seo_title = "pavian.eu: pavian.eu website, 2015 · Tomas Korcak"
 og_title = "pavian.eu: pavian.eu website (2015)"
-og_description = "Web in ApacheConf, HTML and CSS, 2015, archive. Source on GitHub and GitLab."
+og_description = "pavian.eu: Web in ApacheConf, HTML and CSS, 2015, archive. Source on GitHub and GitLab."
 og_image = "og/work-pavian-eu.png"
 schema = "project"
 keywords = ["pavian.eu", "Web", "ApacheConf", "HTML", "CSS", "2015", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **pavian.eu** is a project in [Web](@/projects/web.md). Its code is written mainly in ApacheConf (64 %), with [HTML](@/glossary/html.md), [CSS](@/glossary/css.md) and [JavaScript](@/glossary/javascript.md).
 
-The [repository](@/glossary/repository.md) was created in August 2015; its latest [commit](@/glossary/commit.md) is from 31 August 2015. It reads “Update widget”. With no commit in the last 48 months it is listed as archive: work from 2015, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 9 August 2015; its latest [commit](@/glossary/commit.md) is from 31 August 2015. It reads “Update widget”. With no commit in the last 48 months it is listed as archive: work from 2015, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/pavian.eu) and [GitLab](https://gitlab.com/korczis/pavian-eu).
 

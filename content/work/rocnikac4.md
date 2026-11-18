@@ -13,7 +13,7 @@ tags = ["Learning and experiments"]
 repo = "Rocnikac4"
 seo_title = "Rocnikac4: Learning and experiments in C#, 2013 · Tomas Korcak"
 og_title = "Rocnikac4: Learning and experiments in C# (2013)"
-og_description = "Learning and experiments in C#, 2013, archive. Source on GitHub and GitLab."
+og_description = "Rocnikac4: Learning and experiments in C#, 2013, archive. Source on GitHub and GitLab."
 og_image = "og/work-rocnikac4.png"
 schema = "project"
 keywords = ["Rocnikac4", "Learning and experiments", "C#", "2013", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **Rocnikac4** is a project in [Learning and experiments](@/projects/learning.md). Its code is written mainly in [C#](@/glossary/csharp.md) (100 %).
 
-The [repository](@/glossary/repository.md) was created in August 2013; its latest [commit](@/glossary/commit.md) is from 28 August 2013. It reads “Merge branch 'master' of https://github.com/korczis/Rocnikac4”. With no commit in the last 48 months it is listed as archive: work from 2013, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 28 August 2013; its latest [commit](@/glossary/commit.md) is from 28 August 2013. It reads “Merge branch 'master' of https://github.com/korczis/Rocnikac4”. With no commit in the last 48 months it is listed as archive: work from 2013, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/Rocnikac4) and [GitLab](https://gitlab.com/korczis/Rocnikac4).
 

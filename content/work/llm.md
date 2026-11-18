@@ -13,7 +13,7 @@ tags = ["AI engineering", "Elixir"]
 repo = "llm"
 seo_title = "llm: AI engineering in Elixir, 2026 · Tomas Korcak"
 og_title = "llm: Local-first, provider-agnostic archive of AI conversations (ChatGPT, Claude,…"
-og_description = "AI engineering in Elixir, 2026, active in the last 12 months. Source on GitLab."
+og_description = "llm: AI engineering in Elixir, 2026, active in the last 12 months. Source on GitLab."
 og_image = "og/work-llm.png"
 schema = "project"
 keywords = ["llm", "AI engineering", "Elixir", "AI", "chatgpt", "claude", "claude-code", "gemini", "2026", "GitLab", "Tomas Korcak", "korczis"]
@@ -27,10 +27,11 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "every 6 hours" }
 +++
 **llm** is a project in [AI engineering](@/projects/ai.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (100 %).
 
-The [repository](@/glossary/repository.md) was created in August 2026; its latest [commit](@/glossary/commit.md) is from 21 August 2026. It reads “test(conversations): add DB-integration tests for every named constraint”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created on 20 August 2026; its latest [commit](@/glossary/commit.md) is from 21 August 2026. It reads “test(conversations): add DB-integration tests for every named constraint”. That places it among the projects active in the last 12 months.
 
 Its source is on [GitLab](https://gitlab.com/korczis/llm).
 

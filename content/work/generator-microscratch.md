@@ -7,16 +7,16 @@ weight = 193
 updated = "2014-02-02T22:16:59Z"
 
 [taxonomies]
-tags = ["Tools"]
+tags = ["Tools", "JavaScript"]
 
 [extra]
 repo = "generator-microscratch"
 seo_title = "generator-microscratch: Tools in JavaScript, 2014 · Tomas Korcak"
 og_title = "generator-microscratch: Yeoman generator of microscratch based projects (2014)"
-og_description = "Tools, 2014, archive. Source on GitHub and GitLab."
+og_description = "generator-microscratch: Tools in JavaScript, 2014, archive. Source on GitHub and GitLab."
 og_image = "og/work-generator-microscratch.png"
 schema = "project"
-keywords = ["generator-microscratch", "Tools", "2014", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
+keywords = ["generator-microscratch", "Tools", "JavaScript", "2014", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
 terms = ["javascript", "open-source", "repository", "commit"]
 
 [[extra.viz]]
@@ -28,12 +28,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**generator-microscratch** is a project in [Tools](@/projects/tools.md).
+**generator-microscratch** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md).
 
-The [repository](@/glossary/repository.md) was created in February 2014; its latest [commit](@/glossary/commit.md) is from 2 February 2014. It reads “Update README.md”. With no commit in the last 48 months it is listed as archive: work from 2014, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 2 February 2014; its latest [commit](@/glossary/commit.md) is from 2 February 2014. It reads “Update README.md”. With no commit in the last 48 months it is listed as archive: work from 2014, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/generator-microscratch) and [GitLab](https://gitlab.com/korczis/generator-microscratch).
 
-Related work in [Tools](@/projects/tools.md): [lola](@/work/lola.md) (2013–2014), [codecademy](@/work/codecademy.md) (2014), [principal](@/work/principal.md) (2014) and [photos](@/work/photos.md) (2014).
+Related work in [Tools](@/projects/tools.md): [lola](@/work/lola.md) (2013–2014), [lethe.it](@/work/lethe-it.md) (2014–2015), [peg-loader](@/work/peg-loader.md) (2016) and [mapoffacts](@/work/mapoffacts.md) (2017).
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 3 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab. The pulse draws the latest 3 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

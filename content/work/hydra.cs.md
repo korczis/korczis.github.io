@@ -13,7 +13,7 @@ tags = ["Knihovny", "Elixir", "CSS", "JavaScript"]
 repo = "hydra"
 seo_title = "hydra: Knihovny, Elixir, 2019 · Tomáš Korčák"
 og_title = "hydra: Knihovny, Elixir (2019)"
-og_description = "Knihovny, Elixir, CSS a JavaScript, 2019, archiv. Zdrojový kód: GitLab. 1 hvězda."
+og_description = "hydra: Knihovny, Elixir, CSS a JavaScript, 2019, archiv. Zdrojový kód: GitLab. 1 hvězda."
 og_image = "og/cs-work-hydra.png"
 schema = "project"
 keywords = ["hydra", "Knihovny", "Elixir", "CSS", "JavaScript", "2019", "GitLab", "Tomáš Korčák", "korczis"]
@@ -27,6 +27,7 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "každých 6 hodin" }
 +++
 **hydra** je projekt z kategorie [Knihovny](@/projects/libraries.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (72,4 %), dále [CSS](@/glossary/css.cs.md), [JavaScript](@/glossary/javascript.cs.md) a [Dockerfile](@/glossary/dockerfile.cs.md).
 

@@ -13,7 +13,7 @@ tags = ["Inženýrství AI"]
 repo = "edna"
 seo_title = "edna: Inženýrství AI, 2025 · Tomáš Korčák"
 og_title = "edna: Edna je digitální kartářka, astroložka a analytička poháněná AI"
-og_description = "Inženýrství AI, 2025, aktivní za posledních 24 měsíců. Zdrojový kód: GitLab."
+og_description = "edna: Inženýrství AI, 2025, aktivní za posledních 24 měsíců. Zdrojový kód: GitLab."
 og_image = "og/cs-work-edna.png"
 schema = "project"
 keywords = ["edna", "Inženýrství AI", "2025", "GitLab", "Tomáš Korčák", "korczis"]
@@ -27,6 +27,7 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "každých 6 hodin" }
 +++
 **edna** je projekt z kategorie [Inženýrství AI](@/projects/ai.cs.md).
 
@@ -36,4 +37,4 @@ Zdrojový kód: [GitLab](https://gitlab.com/korczis/edna).
 
 Související práce v kategorii [Inženýrství AI](@/projects/ai.cs.md): [cognitive-reasoning](@/work/cognitive-reasoning.cs.md) (2025), [sig](@/work/sig.cs.md) (2025–2026), [llm](@/work/llm.cs.md) (2026) a [Majordomus](@/work/prismatic-majordomus.cs.md) (2026).
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje poslední 2 commity jako tep, jeden pruh na typ commitu (feat, fix, docs…), ze snímku obnovovaného každých 6 hodin. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu. Puls ukazuje poslední 2 commity jako tep, jeden pruh na typ commitu (feat, fix, docs…), ze snímku obnovovaného každých 6 hodin. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

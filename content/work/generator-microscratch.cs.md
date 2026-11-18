@@ -7,16 +7,16 @@ weight = 193
 updated = "2014-02-02T22:16:59Z"
 
 [taxonomies]
-tags = ["Nástroje"]
+tags = ["Nástroje", "JavaScript"]
 
 [extra]
 repo = "generator-microscratch"
 seo_title = "generator-microscratch: Nástroje, JavaScript, 2014 · Tomáš Korčák"
 og_title = "generator-microscratch: Nástroje, JavaScript (2014)"
-og_description = "Nástroje, 2014, archiv. Zdrojový kód: GitHub a GitLab."
+og_description = "generator-microscratch: Nástroje, JavaScript, 2014, archiv. Zdrojový kód: GitHub a GitLab."
 og_image = "og/cs-work-generator-microscratch.png"
 schema = "project"
-keywords = ["generator-microscratch", "Nástroje", "2014", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
+keywords = ["generator-microscratch", "Nástroje", "JavaScript", "2014", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
 terms = ["javascript", "open-source", "repository", "commit"]
 
 [[extra.viz]]
@@ -28,12 +28,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**generator-microscratch** je projekt z kategorie [Nástroje](@/projects/tools.cs.md).
+**generator-microscratch** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [JavaScript](@/glossary/javascript.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 2. února 2014; poslední [commit](@/glossary/commit.cs.md) je z 2. února 2014. Zní „Update README.md“. Bez commitu za posledních 48 měsíců je veden jako archiv: práce z období 2014, ponechaná pro záznam a datovaná podle měření.
 
 Zdrojový kód: [GitHub](https://github.com/korczis/generator-microscratch) a [GitLab](https://gitlab.com/korczis/generator-microscratch).
 
-Související práce v kategorii [Nástroje](@/projects/tools.cs.md): [lola](@/work/lola.cs.md) (2013–2014), [codecademy](@/work/codecademy.cs.md) (2014), [principal](@/work/principal.cs.md) (2014) a [photos](@/work/photos.cs.md) (2014).
+Související práce v kategorii [Nástroje](@/projects/tools.cs.md): [lola](@/work/lola.cs.md) (2013–2014), [lethe.it](@/work/lethe-it.cs.md) (2014–2015), [peg-loader](@/work/peg-loader.cs.md) (2016) a [mapoffacts](@/work/mapoffacts.cs.md) (2017).
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje poslední 3 commity jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu. Puls ukazuje poslední 3 commity jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

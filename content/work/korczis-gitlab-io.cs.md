@@ -13,7 +13,7 @@ tags = ["Web", "CSS", "Elixir", "SCSS"]
 repo = "korczis.gitlab.io"
 seo_title = "korczis.gitlab.io: Web, CSS, 2025 · Tomáš Korčák"
 og_title = "korczis.gitlab.io: Web, CSS"
-og_description = "Web, CSS, Elixir a SCSS, 2025, aktivní za posledních 24 měsíců. Zdrojový kód: GitLab."
+og_description = "korczis.gitlab.io: Web, CSS, Elixir a SCSS, 2025, aktivní za posledních 24 měsíců. Zdrojový kód: GitLab."
 og_image = "og/cs-work-korczis-gitlab-io.png"
 schema = "project"
 keywords = ["korczis.gitlab.io", "Web", "CSS", "Elixir", "SCSS", "2025", "GitLab", "Tomáš Korčák", "korczis"]
@@ -27,6 +27,7 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "každých 6 hodin" }
 +++
 **korczis.gitlab.io** je projekt z kategorie [Web](@/projects/web.cs.md). Jeho kód je napsaný hlavně v jazyce [CSS](@/glossary/css.cs.md) (32,5 %), dále [Elixir](@/glossary/elixir.cs.md), SCSS a [HTML](@/glossary/html.cs.md).
 

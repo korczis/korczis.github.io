@@ -13,7 +13,7 @@ tags = ["Systems and infrastructure", "Ruby"]
 repo = "cluster"
 seo_title = "cluster: Run your own CoreOS/Kubernetes cluster, 2017 · Tomas Korcak"
 og_title = "cluster: Run your own CoreOS/Kubernetes cluster (2017)"
-og_description = "Systems and infrastructure in Ruby, 2017, archive. Source on GitHub and GitLab."
+og_description = "cluster: Systems and infrastructure in Ruby, 2017, archive. Source on GitHub and GitLab."
 og_image = "og/work-cluster.png"
 schema = "project"
 keywords = ["cluster", "Systems and infrastructure", "Ruby", "2017", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **cluster** is a project in [Systems and infrastructure](@/projects/systems.md). Its code is written mainly in [Ruby](@/glossary/ruby.md) (100 %).
 
-The [repository](@/glossary/repository.md) was created in March 2017; its latest [commit](@/glossary/commit.md) is from 7 March 2017. It reads “aws command”. With no commit in the last 48 months it is listed as archive: work from 2017, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 6 March 2017; its latest [commit](@/glossary/commit.md) is from 7 March 2017. It reads “aws command”. With no commit in the last 48 months it is listed as archive: work from 2017, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/cluster) and [GitLab](https://gitlab.com/korczis/cluster).
 

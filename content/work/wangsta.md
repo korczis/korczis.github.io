@@ -13,7 +13,7 @@ tags = ["Tools"]
 repo = "wangsta"
 seo_title = "wangsta: Wanna be Gangsta, 2015 · Tomas Korcak"
 og_title = "wangsta: Wanna be Gangsta (2015)"
-og_description = "Tools, 2015, archive. Source on GitHub and GitLab."
+og_description = "wangsta: Tools, 2015, archive. Source on GitHub and GitLab."
 og_image = "og/work-wangsta.png"
 schema = "project"
 keywords = ["wangsta", "Tools", "2015", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,10 +30,10 @@ tone = "night"
 +++
 **wangsta** is a project in [Tools](@/projects/tools.md).
 
-The [repository](@/glossary/repository.md) was created in April 2015; its latest [commit](@/glossary/commit.md) is from 3 April 2015. It reads “Update README.md”. With no commit in the last 48 months it is listed as archive: work from 2015, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 3 April 2015; its latest [commit](@/glossary/commit.md) is from 3 April 2015. It reads “Update README.md”. With no commit in the last 48 months it is listed as archive: work from 2015, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/wangsta) and [GitLab](https://gitlab.com/korczis/wangsta).
 
 Related work in [Tools](@/projects/tools.md): [iCave](@/work/icave.md) (2014–2015), [grache](@/work/grache.md) (2015), [magicbiz](@/work/magicbiz.md) (2015) and [lethe.it](@/work/lethe-it.md) (2014–2015).
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 3 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab. The pulse draws the latest 3 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

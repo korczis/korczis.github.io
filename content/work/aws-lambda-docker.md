@@ -13,7 +13,7 @@ tags = ["Systems and infrastructure", "Shell", "Dockerfile"]
 repo = "aws-lambda-docker"
 seo_title = "aws-lambda-docker: Systems and infrastructure, 2018 · Tomas Korcak"
 og_title = "aws-lambda-docker: Example how to run Docker image using AWS Lambda (2018)"
-og_description = "Systems and infrastructure in Shell and Dockerfile, 2018, archive. Source on GitHub and GitLab."
+og_description = "aws-lambda-docker: Systems and infrastructure in Shell and Dockerfile, 2018, archive. Source on GitHub and GitLab."
 og_image = "og/work-aws-lambda-docker.png"
 schema = "project"
 keywords = ["aws-lambda-docker", "Systems and infrastructure", "Shell", "Dockerfile", "2018", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **aws-lambda-docker** is a project in [Systems and infrastructure](@/projects/systems.md). Its code is written mainly in [Shell](@/glossary/shell.md) (62 %), with [Dockerfile](@/glossary/dockerfile.md).
 
-The [repository](@/glossary/repository.md) was created in December 2018; its latest [commit](@/glossary/commit.md) is from 4 December 2018. It reads “Add helper docker scripts”. With no commit in the last 48 months it is listed as archive: work from 2018, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 4 December 2018; its latest [commit](@/glossary/commit.md) is from 4 December 2018. It reads “Add helper docker scripts”. With no commit in the last 48 months it is listed as archive: work from 2018, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/aws-lambda-docker) and [GitLab](https://gitlab.com/korczis/aws-lambda-docker).
 

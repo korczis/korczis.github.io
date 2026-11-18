@@ -13,7 +13,7 @@ tags = ["Data a GIS", "Elixir", "Rust"]
 repo = "meili_rsex"
 seo_title = "meili_rsex: Data a GIS, Elixir, 2024 · Tomáš Korčák"
 og_title = "meili_rsex: Data a GIS, Elixir"
-og_description = "Data a GIS, Elixir a Rust, 2024, aktivní za posledních 48 měsíců. Zdrojový kód: GitLab."
+og_description = "meili_rsex: Data a GIS, Elixir a Rust, 2024, aktivní za posledních 48 měsíců. Zdrojový kód: GitLab."
 og_image = "og/cs-work-meili-rsex.png"
 schema = "project"
 keywords = ["meili_rsex", "Data a GIS", "Elixir", "Rust", "2024", "GitLab", "Tomáš Korčák", "korczis"]
@@ -27,6 +27,7 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "každých 6 hodin" }
 +++
 **meili\_rsex** je projekt z kategorie [Data a GIS](@/projects/data.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (95,8 %), dále [Rust](@/glossary/rust.cs.md).
 

@@ -13,7 +13,7 @@ tags = ["Tools", "Shell"]
 repo = "bcnode-extra-scripts"
 seo_title = "bcnode-extra-scripts: BC Extra Scripts (DX), 2018 · Tomas Korcak"
 og_title = "bcnode-extra-scripts: BC Extra Scripts (DX) (2018)"
-og_description = "Tools in Shell, 2018, archive. Source on GitHub and GitLab."
+og_description = "bcnode-extra-scripts: Tools in Shell, 2018, archive. Source on GitHub and GitLab."
 og_image = "og/work-bcnode-extra-scripts.png"
 schema = "project"
 keywords = ["bcnode-extra-scripts", "Tools", "Shell", "2018", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **bcnode-extra-scripts** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [Shell](@/glossary/shell.md) (100 %).
 
-The [repository](@/glossary/repository.md) was created in June 2018; its latest [commit](@/glossary/commit.md) is from 24 June 2018. It reads “BC Extra .scripts”. With no commit in the last 48 months it is listed as archive: work from 2018, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 24 June 2018; its latest [commit](@/glossary/commit.md) is from 24 June 2018. It reads “BC Extra .scripts”. With no commit in the last 48 months it is listed as archive: work from 2018, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/bcnode-extra-scripts) and [GitLab](https://gitlab.com/korczis/bcnode-extra-scripts).
 

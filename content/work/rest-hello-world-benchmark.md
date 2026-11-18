@@ -13,7 +13,7 @@ tags = ["Tools", "Elixir", "CSS", "HTML"]
 repo = "rest-hello-world-benchmark"
 seo_title = "rest-hello-world-benchmark: Tools in Elixir, 2022 · Tomas Korcak"
 og_title = "rest-hello-world-benchmark: Benchmark of Hello World REST Endpoint in various… (2022)"
-og_description = "Tools in Elixir, CSS and HTML, 2022, archive. Source on GitHub."
+og_description = "rest-hello-world-benchmark: Tools in Elixir, CSS and HTML, 2022, archive. Source on GitHub."
 og_image = "og/work-rest-hello-world-benchmark.png"
 schema = "project"
 keywords = ["rest-hello-world-benchmark", "Tools", "Elixir", "CSS", "HTML", "2022", "GitHub", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **rest-hello-world-benchmark** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (66.7 %), with [CSS](@/glossary/css.md), [HTML](@/glossary/html.md) and [JavaScript](@/glossary/javascript.md).
 
-The [repository](@/glossary/repository.md) was created in July 2022; its latest [commit](@/glossary/commit.md) is from 31 July 2022. It reads “add percentiles note”. With no commit in the last 48 months it is listed as archive: work from 2022, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 31 July 2022; its latest [commit](@/glossary/commit.md) is from 31 July 2022. It reads “add percentiles note”. With no commit in the last 48 months it is listed as archive: work from 2022, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/rest-hello-world-benchmark).
 

@@ -13,7 +13,7 @@ tags = ["Science and visualisation", "Rust"]
 repo = "graph-flow"
 seo_title = "graph-flow: Science and visualisation in Rust, 2017 · Tomas Korcak"
 og_title = "graph-flow: Science and visualisation in Rust (2017)"
-og_description = "Science and visualisation in Rust, 2017, archive. Source on GitHub and GitLab."
+og_description = "graph-flow: Science and visualisation in Rust, 2017, archive. Source on GitHub and GitLab."
 og_image = "og/work-graph-flow.png"
 schema = "project"
 keywords = ["graph-flow", "Science and visualisation", "Rust", "2017", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **graph-flow** is a project in [Science and visualisation](@/projects/science.md). Its code is written mainly in [Rust](@/glossary/rust.md) (100 %).
 
-The [repository](@/glossary/repository.md) was created in April 2017; its latest [commit](@/glossary/commit.md) is from 16 April 2017. It reads “WIP”. With no commit in the last 48 months it is listed as archive: work from 2017, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 16 April 2017; its latest [commit](@/glossary/commit.md) is from 16 April 2017. It reads “WIP”. With no commit in the last 48 months it is listed as archive: work from 2017, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/graph-flow) and [GitLab](https://gitlab.com/korczis/graph-flow).
 

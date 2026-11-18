@@ -13,7 +13,7 @@ tags = ["Science and visualisation", "Elixir"]
 repo = "distance-calculator"
 seo_title = "distance-calculator: Science and visualisation, 2024 · Tomas Korcak"
 og_title = "distance-calculator: If available in Hex, the package can be installed by adding…"
-og_description = "Science and visualisation in Elixir, 2024, active in the last 48 months. Source on GitLab."
+og_description = "distance-calculator: Science and visualisation in Elixir, 2024, active in the last 48 months. Source on GitLab."
 og_image = "og/work-distance-calculator.png"
 schema = "project"
 keywords = ["distance-calculator", "Science and visualisation", "Elixir", "2024", "GitLab", "Tomas Korcak", "korczis"]
@@ -27,10 +27,11 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "every 6 hours" }
 +++
 **distance-calculator** is a project in [Science and visualisation](@/projects/science.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (100 %).
 
-The [repository](@/glossary/repository.md) was created in March 2024; its latest [commit](@/glossary/commit.md) is from 23 April 2024. It reads “logs on requests, fixed from”. That places it among the projects active in the last 48 months.
+The [repository](@/glossary/repository.md) was created on 20 March 2024; its latest [commit](@/glossary/commit.md) is from 23 April 2024. It reads “logs on requests, fixed from”. That places it among the projects active in the last 48 months.
 
 Its source is on [GitLab](https://gitlab.com/korczis/distance-calculator).
 

@@ -13,7 +13,7 @@ tags = ["Data and GIS", "Elixir", "JavaScript", "CSS"]
 repo = "crisis-map"
 seo_title = "Crisis map: Data and GIS in Elixir, 2026 · Tomas Korcak"
 og_title = "Crisis map: Incident reports, normalised, geocoded and mapped"
-og_description = "Data and GIS in Elixir, JavaScript and CSS, 2026, active in the last 12 months. Source on GitHub. Live site."
+og_description = "Crisis map: Data and GIS in Elixir, JavaScript and CSS, 2026, active in the last 12 months. Source on GitHub. Live site."
 og_image = "og/work-crisis-map.png"
 schema = "project"
 keywords = ["Crisis map", "crisis-map", "Data and GIS", "Elixir", "JavaScript", "CSS", "2026", "GitHub", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **Crisis map** is a project in [Data and GIS](@/projects/data.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (96.9 %), with [JavaScript](@/glossary/javascript.md), [CSS](@/glossary/css.md) and [HTML](@/glossary/html.md).
 
-The [repository](@/glossary/repository.md) was created in September 2026; its latest [commit](@/glossary/commit.md) is from 16 November 2026. It reads “Merge pull request \#1 from korczis/feature/flowbite-pro-ui”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created on 8 September 2026; its latest [commit](@/glossary/commit.md) is from 16 November 2026. It reads “Merge pull request \#1 from korczis/feature/flowbite-pro-ui”. That places it among the projects active in the last 12 months.
 
 It is built with [PostGIS](@/glossary/postgis.md) and [MCP](@/glossary/mcp.md).
 

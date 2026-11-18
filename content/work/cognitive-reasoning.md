@@ -13,7 +13,7 @@ tags = ["AI engineering"]
 repo = "cognitive-reasoning"
 seo_title = "cognitive-reasoning: AI engineering, 2025 · Tomas Korcak"
 og_title = "cognitive-reasoning: AI engineering"
-og_description = "AI engineering, 2025, active in the last 24 months. Source on GitHub."
+og_description = "cognitive-reasoning: AI engineering, 2025, active in the last 24 months. Source on GitHub."
 og_image = "og/work-cognitive-reasoning.png"
 schema = "project"
 keywords = ["cognitive-reasoning", "AI engineering", "2025", "GitHub", "Tomas Korcak", "korczis"]
@@ -30,10 +30,10 @@ tone = "night"
 +++
 **cognitive-reasoning** is a project in [AI engineering](@/projects/ai.md).
 
-The [repository](@/glossary/repository.md) was created in April 2025; its latest [commit](@/glossary/commit.md) is from 25 April 2025. It reads “Initial commit”. That places it among the projects active in the last 24 months.
+The [repository](@/glossary/repository.md) was created on 25 April 2025; its latest [commit](@/glossary/commit.md) is from 25 April 2025. It reads “Initial commit”. That places it among the projects active in the last 24 months.
 
 Its source is on [GitHub](https://github.com/korczis/cognitive-reasoning).
 
 Related work in [AI engineering](@/projects/ai.md): [edna](@/work/edna.md) (2025), [sig](@/work/sig.md) (2025–2026), [llm](@/work/llm.md) (2026) and [Majordomus](@/work/prismatic-majordomus.md) (2026).
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws its only commit as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab. The pulse draws its only commit as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

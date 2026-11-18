@@ -13,7 +13,7 @@ tags = ["Media and art"]
 repo = "talkie"
 seo_title = "talkie: node.js TTS application, 2015 · Tomas Korcak"
 og_title = "talkie: node.js TTS application (2015)"
-og_description = "Media and art, 2015, archive. Source on GitHub and GitLab."
+og_description = "talkie: Media and art, 2015, archive. Source on GitHub and GitLab."
 og_image = "og/work-talkie.png"
 schema = "project"
 keywords = ["talkie", "Media and art", "2015", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,10 +30,10 @@ tone = "night"
 +++
 **talkie** is a project in [Media and art](@/projects/media.md).
 
-The [repository](@/glossary/repository.md) was created in March 2015; its latest [commit](@/glossary/commit.md) is from 12 March 2015. It reads “Initial commit”. With no commit in the last 48 months it is listed as archive: work from 2015, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 12 March 2015; its latest [commit](@/glossary/commit.md) is from 12 March 2015. It reads “Initial commit”. With no commit in the last 48 months it is listed as archive: work from 2015, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/talkie) and [GitLab](https://gitlab.com/korczis/talkie).
 
 Related work in [Media and art](@/projects/media.md): [brepta](@/work/brepta.md) (2017), [dj-schnapps](@/work/dj-schnapps.md) (2019), [prismatic-blog](@/work/prismatic-blog.md) (2025) and [Catharsis as a Service](@/work/catharsis-as-a-service.md) (2026).
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws its only commit as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab. The pulse draws its only commit as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

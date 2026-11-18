@@ -13,7 +13,7 @@ tags = ["Data and GIS", "JavaScript", "HTML"]
 repo = "microcrawler-browser"
 seo_title = "microcrawler-browser: Data and GIS in JavaScript, 2016 · Tomas Korcak"
 og_title = "microcrawler-browser: Proof-of-Concept: Microcrawler in your Browser (2016)"
-og_description = "Data and GIS in JavaScript and HTML, 2016, archive. Source on GitLab."
+og_description = "microcrawler-browser: Data and GIS in JavaScript and HTML, 2016, archive. Source on GitLab."
 og_image = "og/work-microcrawler-browser.png"
 schema = "project"
 keywords = ["microcrawler-browser", "Data and GIS", "JavaScript", "HTML", "2016", "GitLab", "Tomas Korcak", "korczis"]
@@ -27,10 +27,11 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "every 6 hours" }
 +++
 **microcrawler-browser** is a project in [Data and GIS](@/projects/data.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (91.2 %), with [HTML](@/glossary/html.md).
 
-The [repository](@/glossary/repository.md) was created in September 2019; its latest [commit](@/glossary/commit.md) is from 1 October 2016. It reads “Cosmetics in package.json”. With no commit in the last 48 months it is listed as archive: work from 2016, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 16 September 2019; its latest [commit](@/glossary/commit.md) is from 1 October 2016. It reads “Cosmetics in package.json”. With no commit in the last 48 months it is listed as archive: work from 2016, kept for the record and dated as measured.
 
 Its source is on [GitLab](https://gitlab.com/korczis/microcrawler-browser).
 

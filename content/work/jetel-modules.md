@@ -13,7 +13,7 @@ tags = ["Data and GIS"]
 repo = "jetel-modules"
 seo_title = "jetel-modules: Optional Jetel Modules, 2015 · Tomas Korcak"
 og_title = "jetel-modules: Optional Jetel Modules (2015)"
-og_description = "Data and GIS, 2015, archive. Source on GitHub and GitLab."
+og_description = "jetel-modules: Data and GIS, 2015, archive. Source on GitHub and GitLab."
 og_image = "og/work-jetel-modules.png"
 schema = "project"
 keywords = ["jetel-modules", "Data and GIS", "2015", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,10 +30,10 @@ tone = "night"
 +++
 **jetel-modules** is a project in [Data and GIS](@/projects/data.md).
 
-The [repository](@/glossary/repository.md) was created in November 2015; its latest [commit](@/glossary/commit.md) is from 7 November 2015. It reads “Create modules.json”. With no commit in the last 48 months it is listed as archive: work from 2015, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 7 November 2015; its latest [commit](@/glossary/commit.md) is from 7 November 2015. It reads “Create modules.json”. With no commit in the last 48 months it is listed as archive: work from 2015, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/jetel-modules) and [GitLab](https://gitlab.com/korczis/jetel-modules).
 
 Related work in [Data and GIS](@/projects/data.md): [data](@/work/data.md) (2014–2015), [mapofffacts.com](@/work/mapofffacts-com.md) (2015), [microcrawler-ng](@/work/microcrawler-ng.md) (2016) and [gooddata-ruby-examples](@/work/gooddata-ruby-examples.md) (2014–2015).
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 2 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab. The pulse draws the latest 2 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

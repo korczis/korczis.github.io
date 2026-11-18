@@ -13,7 +13,7 @@ tags = ["Nástroje"]
 repo = "caregiver"
 seo_title = "caregiver: Nástroje, 2022 · Tomáš Korčák"
 og_title = "caregiver: Nástroje (2022)"
-og_description = "Nástroje, 2022, archiv. Zdrojový kód: GitHub. Projekt, autor Tomáš Korčák."
+og_description = "caregiver: Nástroje, 2022, archiv. Zdrojový kód: GitHub."
 og_image = "og/cs-work-caregiver.png"
 schema = "project"
 keywords = ["caregiver", "Nástroje", "2022", "GitHub", "Tomáš Korčák", "korczis"]
@@ -36,4 +36,4 @@ Zdrojový kód: [GitHub](https://github.com/korczis/caregiver).
 
 Související práce v kategorii [Nástroje](@/projects/tools.cs.md): [rest-hello-world-benchmark](@/work/rest-hello-world-benchmark.cs.md) (2022), [astudo](@/work/astudo.cs.md) (2022), [el-magico-cache](@/work/el-magico-cache.cs.md) (2023) a [MindScape](@/work/mindscape.cs.md) (2023).
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje poslední 2 commity jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu. Puls ukazuje poslední 2 commity jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

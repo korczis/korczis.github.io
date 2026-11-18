@@ -13,7 +13,7 @@ tags = ["Data and GIS", "Ruby"]
 repo = "esri"
 seo_title = "esri: Framework for working with ESRI datasets, 2014 · Tomas Korcak"
 og_title = "esri: Framework for working with ESRI datasets (2014)"
-og_description = "Data and GIS in Ruby, 2014, archive. Source on GitHub and GitLab. 1 star."
+og_description = "esri: Data and GIS in Ruby, 2014, archive. Source on GitHub and GitLab. 1 star."
 og_image = "og/work-esri.png"
 schema = "project"
 keywords = ["esri", "Data and GIS", "Ruby", "2014", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,10 +30,10 @@ tone = "night"
 +++
 **esri** is a project in [Data and GIS](@/projects/data.md). Its code is written mainly in [Ruby](@/glossary/ruby.md) (100 %).
 
-The [repository](@/glossary/repository.md) was created in August 2014; its latest [commit](@/glossary/commit.md) is from 23 August 2014. It reads “Fix rubocop issues”. With no commit in the last 48 months it is listed as archive: work from 2014, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 17 August 2014; its latest [commit](@/glossary/commit.md) is from 23 August 2014. It reads “Fix rubocop issues”. With no commit in the last 48 months it is listed as archive: work from 2014, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/esri) and [GitLab](https://gitlab.com/korczis/esri).
 
-Related work in [Data and GIS](@/projects/data.md): [gooddata\_rails\_app](@/work/gooddata-rails-app.md) (2014), [gooddata\_connectors\_metadata](@/work/gooddata-connectors-metadata.md) (2014–2015), [docker-gooddata-ruby](@/work/docker-gooddata-ruby.md) (2015) and [gooddata-ruby-examples](@/work/gooddata-ruby-examples.md) (2014–2015).
+Related work in [Data and GIS](@/projects/data.md): [apollo-crawler](@/work/apollo-crawler.md) (2014), [gooddata\_rails\_app](@/work/gooddata-rails-app.md) (2014), [gooddata\_connectors\_metadata](@/work/gooddata-connectors-metadata.md) (2014–2015) and [docker-gooddata-ruby](@/work/docker-gooddata-ruby.md) (2015).
 
 *How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 30 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

@@ -13,7 +13,7 @@ tags = ["Nástroje", "TypeScript", "JavaScript"]
 repo = "dispatcher"
 seo_title = "dispatcher: Nástroje, TypeScript, 2024 · Tomáš Korčák"
 og_title = "dispatcher: Nástroje, TypeScript"
-og_description = "Nástroje, TypeScript a JavaScript, 2024, aktivní za posledních 48 měsíců. Zdrojový kód: GitLab."
+og_description = "dispatcher: Nástroje, TypeScript a JavaScript, 2024, aktivní za posledních 48 měsíců. Zdrojový kód: GitLab."
 og_image = "og/cs-work-dispatcher.png"
 schema = "project"
 keywords = ["dispatcher", "Nástroje", "TypeScript", "JavaScript", "2024", "GitLab", "Tomáš Korčák", "korczis"]
@@ -27,6 +27,7 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "každých 6 hodin" }
 +++
 **dispatcher** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [TypeScript](@/glossary/typescript.cs.md) (83 %), dále [JavaScript](@/glossary/javascript.cs.md).
 

@@ -13,7 +13,7 @@ tags = ["Nástroje", "JavaScript"]
 repo = "lola"
 seo_title = "lola: Nástroje, JavaScript, 2013–2014 · Tomáš Korčák"
 og_title = "lola: Nástroje, JavaScript (2013–2014)"
-og_description = "Nástroje, JavaScript, 2013–2014, archiv. Zdrojový kód: GitHub a GitLab."
+og_description = "lola: Nástroje, JavaScript, 2013–2014, archiv. Zdrojový kód: GitHub a GitLab."
 og_image = "og/cs-work-lola.png"
 schema = "project"
 keywords = ["lola", "Nástroje", "JavaScript", "2013–2014", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
@@ -34,6 +34,6 @@ tone = "night"
 
 Zdrojový kód: [GitHub](https://github.com/korczis/lola) a [GitLab](https://gitlab.com/korczis/lola).
 
-Související práce v kategorii [Nástroje](@/projects/tools.cs.md): [lethe.it](@/work/lethe-it.cs.md) (2014–2015), [peg-loader](@/work/peg-loader.cs.md) (2016), [mapoffacts](@/work/mapoffacts.cs.md) (2017) a [zaas](@/work/zaas.cs.md) (2017).
+Související práce v kategorii [Nástroje](@/projects/tools.cs.md): [generator-microscratch](@/work/generator-microscratch.cs.md) (2014), [lethe.it](@/work/lethe-it.cs.md) (2014–2015), [peg-loader](@/work/peg-loader.cs.md) (2016) a [mapoffacts](@/work/mapoffacts.cs.md) (2017).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 18 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

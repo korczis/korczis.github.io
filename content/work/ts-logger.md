@@ -13,7 +13,7 @@ tags = ["Tools", "TypeScript"]
 repo = "ts-logger"
 seo_title = "ts-logger: Tools in TypeScript, 2019 · Tomas Korcak"
 og_title = "ts-logger: Tools in TypeScript (2019)"
-og_description = "Tools in TypeScript, 2019, archive. Source on GitHub and GitLab."
+og_description = "ts-logger: Tools in TypeScript, 2019, archive. Source on GitHub and GitLab."
 og_image = "og/work-ts-logger.png"
 schema = "project"
 keywords = ["ts-logger", "Tools", "TypeScript", "2019", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **ts-logger** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [TypeScript](@/glossary/typescript.md) (100 %).
 
-The [repository](@/glossary/repository.md) was created in September 2019; its latest [commit](@/glossary/commit.md) is from 18 September 2019. It reads “Create logger.ts”. With no commit in the last 48 months it is listed as archive: work from 2019, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 18 September 2019; its latest [commit](@/glossary/commit.md) is from 18 September 2019. It reads “Create logger.ts”. With no commit in the last 48 months it is listed as archive: work from 2019, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/ts-logger) and [GitLab](https://gitlab.com/korczis/ts-logger).
 

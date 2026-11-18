@@ -13,7 +13,7 @@ tags = ["Věda a vizualizace"]
 repo = "maze-js"
 seo_title = "maze-js: Věda a vizualizace, 2016 · Tomáš Korčák"
 og_title = "maze-js: Věda a vizualizace (2016)"
-og_description = "Věda a vizualizace, 2016, archiv. Zdrojový kód: GitHub a GitLab."
+og_description = "maze-js: Věda a vizualizace, 2016, archiv. Zdrojový kód: GitHub a GitLab."
 og_image = "og/cs-work-maze-js.png"
 schema = "project"
 keywords = ["maze-js", "Věda a vizualizace", "2016", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
@@ -36,4 +36,4 @@ Zdrojový kód: [GitHub](https://github.com/korczis/maze-js) a [GitLab](https://
 
 Související práce v kategorii [Věda a vizualizace](@/projects/science.cs.md): [maze-rs](@/work/maze-rs.cs.md) (2016), [maze](@/work/maze.cs.md) (2016), [graph-flow](@/work/graph-flow.cs.md) (2017) a [haskell-world](@/work/haskell-world.cs.md) (2016).
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje jeho jediný commit jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu. Puls ukazuje jeho jediný commit jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

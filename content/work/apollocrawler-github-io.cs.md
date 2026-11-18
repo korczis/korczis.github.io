@@ -13,7 +13,7 @@ tags = ["Web", "HTML"]
 repo = "ApolloCrawler-github-io"
 seo_title = "ApolloCrawler-github-io: Web, HTML, 2016 · Tomáš Korčák"
 og_title = "ApolloCrawler-github-io: Web, HTML (2016)"
-og_description = "Web, HTML, 2016, archiv. Zdrojový kód: GitLab. Projekt, autor Tomáš Korčák."
+og_description = "ApolloCrawler-github-io: Web, HTML, 2016, archiv. Zdrojový kód: GitLab."
 og_image = "og/cs-work-apollocrawler-github-io.png"
 schema = "project"
 keywords = ["ApolloCrawler-github-io", "Web", "HTML", "2016", "GitLab", "Tomáš Korčák", "korczis"]
@@ -27,6 +27,7 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "každých 6 hodin" }
 +++
 **ApolloCrawler-github-io** je projekt z kategorie [Web](@/projects/web.cs.md). Jeho kód je napsaný hlavně v jazyce [HTML](@/glossary/html.cs.md) (100 %).
 

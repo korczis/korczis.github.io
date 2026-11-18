@@ -13,7 +13,7 @@ tags = ["Tools", "TypeScript", "JavaScript"]
 repo = "dispatcher"
 seo_title = "dispatcher: 1. Introduction 2. Motivation 3, 2024 · Tomas Korcak"
 og_title = "dispatcher: 1. Introduction 2. Motivation 3"
-og_description = "Tools in TypeScript and JavaScript, 2024, active in the last 48 months. Source on GitLab."
+og_description = "dispatcher: Tools in TypeScript and JavaScript, 2024, active in the last 48 months. Source on GitLab."
 og_image = "og/work-dispatcher.png"
 schema = "project"
 keywords = ["dispatcher", "Tools", "TypeScript", "JavaScript", "2024", "GitLab", "Tomas Korcak", "korczis"]
@@ -27,10 +27,11 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "every 6 hours" }
 +++
 **dispatcher** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [TypeScript](@/glossary/typescript.md) (83 %), with [JavaScript](@/glossary/javascript.md).
 
-The [repository](@/glossary/repository.md) was created in October 2024; its latest [commit](@/glossary/commit.md) is from 19 October 2024. It reads “feat: update doc”. That places it among the projects active in the last 48 months.
+The [repository](@/glossary/repository.md) was created on 18 October 2024; its latest [commit](@/glossary/commit.md) is from 19 October 2024. It reads “feat: update doc”. That places it among the projects active in the last 48 months.
 
 Its source is on [GitLab](https://gitlab.com/korczis/dispatcher).
 

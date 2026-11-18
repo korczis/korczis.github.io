@@ -13,7 +13,7 @@ tags = ["Systems and infrastructure", "Shell"]
 repo = "docker-dstk"
 seo_title = "docker-dstk: Systems and infrastructure in Shell, 2015 · Tomas Korcak"
 og_title = "docker-dstk: Dockerized http://www.datasciencetoolkit.org (2015)"
-og_description = "Systems and infrastructure in Shell, 2015, archive. Source on GitHub and GitLab. 5 stars."
+og_description = "docker-dstk: Systems and infrastructure in Shell, 2015, archive. Source on GitHub and GitLab. 5 stars."
 og_image = "og/work-docker-dstk.png"
 schema = "project"
 keywords = ["docker-dstk", "Systems and infrastructure", "Shell", "2015", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **docker-dstk** is a project in [Systems and infrastructure](@/projects/systems.md). Its code is written mainly in [Shell](@/glossary/shell.md) (100 %).
 
-The [repository](@/glossary/repository.md) was created in June 2015; its latest [commit](@/glossary/commit.md) is from 7 June 2015. It reads “Working one”. With no commit in the last 48 months it is listed as archive: work from 2015, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 6 June 2015; its latest [commit](@/glossary/commit.md) is from 7 June 2015. It reads “Working one”. With no commit in the last 48 months it is listed as archive: work from 2015, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/docker-dstk) and [GitLab](https://gitlab.com/korczis/docker-dstk).
 

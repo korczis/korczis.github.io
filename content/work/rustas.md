@@ -13,7 +13,7 @@ tags = ["Science and visualisation", "Rust"]
 repo = "rustas"
 seo_title = "rustas: Science and visualisation in Rust, 2018 · Tomas Korcak"
 og_title = "rustas: Rust - Assembler, Mathematics, GPU and many others (2018)"
-og_description = "Science and visualisation in Rust, 2018, archive. Source on GitHub and GitLab. 1 star."
+og_description = "rustas: Science and visualisation in Rust, 2018, archive. Source on GitHub and GitLab. 1 star."
 og_image = "og/work-rustas.png"
 schema = "project"
 keywords = ["rustas", "Science and visualisation", "Rust", "2018", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **rustas** is a project in [Science and visualisation](@/projects/science.md). Its code is written mainly in [Rust](@/glossary/rust.md) (100 %).
 
-The [repository](@/glossary/repository.md) was created in March 2018; its latest [commit](@/glossary/commit.md) is from 8 March 2018. It reads “Cosmetics”. With no commit in the last 48 months it is listed as archive: work from 2018, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 8 March 2018; its latest [commit](@/glossary/commit.md) is from 8 March 2018. It reads “Cosmetics”. With no commit in the last 48 months it is listed as archive: work from 2018, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/rustas) and [GitLab](https://gitlab.com/korczis/rustas).
 

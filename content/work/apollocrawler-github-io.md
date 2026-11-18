@@ -13,7 +13,7 @@ tags = ["Web", "HTML"]
 repo = "ApolloCrawler-github-io"
 seo_title = "ApolloCrawler-github-io: Web in HTML, 2016 · Tomas Korcak"
 og_title = "ApolloCrawler-github-io: Web in HTML (2016)"
-og_description = "Web in HTML, 2016, archive. Source on GitLab. A project by Tomas Korcak."
+og_description = "ApolloCrawler-github-io: Web in HTML, 2016, archive. Source on GitLab."
 og_image = "og/work-apollocrawler-github-io.png"
 schema = "project"
 keywords = ["ApolloCrawler-github-io", "Web", "HTML", "2016", "GitLab", "Tomas Korcak", "korczis"]
@@ -27,10 +27,11 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "every 6 hours" }
 +++
 **ApolloCrawler-github-io** is a project in [Web](@/projects/web.md). Its code is written mainly in [HTML](@/glossary/html.md) (100 %).
 
-The [repository](@/glossary/repository.md) was created in September 2019; its latest [commit](@/glossary/commit.md) is from 31 August 2016. It reads “Add index.html”. With no commit in the last 48 months it is listed as archive: work from 2016, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 16 September 2019; its latest [commit](@/glossary/commit.md) is from 31 August 2016. It reads “Add index.html”. With no commit in the last 48 months it is listed as archive: work from 2016, kept for the record and dated as measured.
 
 Its source is on [GitLab](https://gitlab.com/korczis/ApolloCrawler-github-io).
 

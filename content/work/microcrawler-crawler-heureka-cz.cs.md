@@ -13,7 +13,7 @@ tags = ["Data a GIS", "JavaScript"]
 repo = "microcrawler-crawler-heureka-cz"
 seo_title = "microcrawler-crawler-heureka-cz: Data a GIS, 2017 · Tomáš Korčák"
 og_title = "microcrawler-crawler-heureka-cz: Data a GIS, JavaScript (2017)"
-og_description = "Data a GIS, JavaScript, 2017, archiv. Zdrojový kód: GitLab."
+og_description = "microcrawler-crawler-heureka-cz: Data a GIS, JavaScript, 2017, archiv. Zdrojový kód: GitLab."
 og_image = "og/cs-work-microcrawler-crawler-heureka-cz.png"
 schema = "project"
 keywords = ["microcrawler-crawler-heureka-cz", "Data a GIS", "JavaScript", "2017", "GitLab", "Tomáš Korčák", "korczis"]
@@ -27,6 +27,7 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "každých 6 hodin" }
 +++
 **microcrawler-crawler-heureka-cz** je projekt z kategorie [Data a GIS](@/projects/data.cs.md). Jeho kód je napsaný hlavně v jazyce [JavaScript](@/glossary/javascript.cs.md) (100 %).
 

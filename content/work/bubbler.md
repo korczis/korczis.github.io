@@ -13,7 +13,7 @@ tags = ["Tools", "JavaScript", "HTML", "CSS"]
 repo = "bubbler"
 seo_title = "bubbler: Tools in JavaScript, 2024 · Tomas Korcak"
 og_title = "bubbler: Bubbler is a simple JavaScript application that generates a speech bubble…"
-og_description = "Tools in JavaScript, HTML and CSS, 2024, active in the last 48 months. Source on GitHub. Live site."
+og_description = "bubbler: Tools in JavaScript, HTML and CSS, 2024, active in the last 48 months. Source on GitHub. Live site."
 og_image = "og/work-bubbler.png"
 schema = "project"
 keywords = ["bubbler", "Tools", "JavaScript", "HTML", "CSS", "2024", "GitHub", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **bubbler** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (64.5 %), with [HTML](@/glossary/html.md) and [CSS](@/glossary/css.md).
 
-The [repository](@/glossary/repository.md) was created in September 2024; its latest [commit](@/glossary/commit.md) is from 16 September 2024. It reads “feat: add OG tags”. That places it among the projects active in the last 48 months.
+The [repository](@/glossary/repository.md) was created on 15 September 2024; its latest [commit](@/glossary/commit.md) is from 16 September 2024. It reads “feat: add OG tags”. That places it among the projects active in the last 48 months.
 
 It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/bubbler/>.
 

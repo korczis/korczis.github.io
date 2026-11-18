@@ -13,7 +13,7 @@ tags = ["Data and GIS", "Ruby", "HTML", "Shell"]
 repo = "jetel"
 seo_title = "jetel: Just simple ETeL, 2015–2016 · Tomas Korcak"
 og_title = "jetel: Just simple ETeL (2015–2016)"
-og_description = "Data and GIS in Ruby, HTML and Shell, 2015–2016, archive. Source on GitHub and GitLab."
+og_description = "jetel: Data and GIS in Ruby, HTML and Shell, 2015–2016, archive. Source on GitHub and GitLab."
 og_image = "og/work-jetel.png"
 schema = "project"
 keywords = ["jetel", "Data and GIS", "Ruby", "HTML", "Shell", "2015–2016", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **jetel** is a project in [Data and GIS](@/projects/data.md). Its code is written mainly in [Ruby](@/glossary/ruby.md) (93.5 %), with [HTML](@/glossary/html.md) and [Shell](@/glossary/shell.md).
 
-The [repository](@/glossary/repository.md) was created in November 2015; its latest [commit](@/glossary/commit.md) is from 28 September 2016. It reads “Fix Travis”. With no commit in the last 48 months it is listed as archive: work from 2015–2016, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 2 November 2015; its latest [commit](@/glossary/commit.md) is from 28 September 2016. It reads “Fix Travis”. With no commit in the last 48 months it is listed as archive: work from 2015–2016, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/jetel) and [GitLab](https://gitlab.com/korczis/jetel).
 

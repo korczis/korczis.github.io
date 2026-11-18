@@ -13,7 +13,7 @@ tags = ["Data a GIS", "JavaScript", "Shell", "Dockerfile"]
 repo = "microcrawler-js"
 seo_title = "microcrawler-js: Data a GIS, JavaScript, 2016 · Tomáš Korčák"
 og_title = "microcrawler-js: Data a GIS, JavaScript (2016)"
-og_description = "Data a GIS, JavaScript, Shell a Dockerfile, 2016, archiv. Zdrojový kód: GitLab."
+og_description = "microcrawler-js: Data a GIS, JavaScript, Shell a Dockerfile, 2016, archiv. Zdrojový kód: GitLab."
 og_image = "og/cs-work-microcrawler-js.png"
 schema = "project"
 keywords = ["microcrawler-js", "Data a GIS", "JavaScript", "Shell", "Dockerfile", "2016", "GitLab", "Tomáš Korčák", "korczis"]
@@ -27,6 +27,7 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "každých 6 hodin" }
 +++
 **microcrawler-js** je projekt z kategorie [Data a GIS](@/projects/data.cs.md). Jeho kód je napsaný hlavně v jazyce [JavaScript](@/glossary/javascript.cs.md) (96,1 %), dále [Shell](@/glossary/shell.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md) a Makefile.
 

@@ -13,7 +13,7 @@ tags = ["Tools", "Ruby"]
 repo = "json2csv"
 seo_title = "json2csv: Tools in Ruby, 2014–2015 · Tomas Korcak"
 og_title = "json2csv: Easy to use tool for converting JSON to CSV (2014–2015)"
-og_description = "Tools in Ruby, 2014–2015, archive. Source on GitHub and GitLab. 34 stars."
+og_description = "json2csv: Tools in Ruby, 2014–2015, archive. Source on GitHub and GitLab. 34 stars."
 og_image = "og/work-json2csv.png"
 schema = "project"
 keywords = ["json2csv", "Tools", "Ruby", "2014–2015", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **json2csv** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [Ruby](@/glossary/ruby.md) (100 %).
 
-The [repository](@/glossary/repository.md) was created in August 2014; its latest [commit](@/glossary/commit.md) is from 18 September 2015. It reads “Merge pull request \#4 from melnikaite/master”. With no commit in the last 48 months it is listed as archive: work from 2014–2015, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 29 August 2014; its latest [commit](@/glossary/commit.md) is from 18 September 2015. It reads “Merge pull request \#4 from melnikaite/master”. With no commit in the last 48 months it is listed as archive: work from 2014–2015, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/json2csv) and [GitLab](https://gitlab.com/korczis/json2csv).
 

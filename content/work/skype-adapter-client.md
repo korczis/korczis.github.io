@@ -13,7 +13,7 @@ tags = ["Libraries"]
 repo = "skype-adapter-client"
 seo_title = "skype-adapter-client: Libraries, 2013 · Tomas Korcak"
 og_title = "skype-adapter-client: Ruby client application for korczis/skype-adapter (2013)"
-og_description = "Libraries, 2013, archive. Source on GitHub and GitLab."
+og_description = "skype-adapter-client: Libraries, 2013, archive. Source on GitHub and GitLab."
 og_image = "og/work-skype-adapter-client.png"
 schema = "project"
 keywords = ["skype-adapter-client", "Libraries", "2013", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,10 +30,10 @@ tone = "night"
 +++
 **skype-adapter-client** is a project in [Libraries](@/projects/libraries.md).
 
-The [repository](@/glossary/repository.md) was created in May 2013; its latest [commit](@/glossary/commit.md) is from 1 May 2013. It reads “Initial commit”. With no commit in the last 48 months it is listed as archive: work from 2013, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 1 May 2013; its latest [commit](@/glossary/commit.md) is from 1 May 2013. It reads “Initial commit”. With no commit in the last 48 months it is listed as archive: work from 2013, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/skype-adapter-client) and [GitLab](https://gitlab.com/korczis/skype-adapter-client).
 
 Related work in [Libraries](@/projects/libraries.md): [babel-plugin-transform-graphql](@/work/babel-plugin-transform-graphql.md) (2016), [peg-parser](@/work/peg-parser.md) (2016), [easy-plugin-plugins](@/work/easy-plugin-plugins.md) (2016) and [gauc.ex](@/work/gauc-ex.md) (2017–2018).
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws its only commit as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab. The pulse draws its only commit as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

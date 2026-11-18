@@ -13,7 +13,7 @@ tags = ["Tools", "TeX", "Elixir", "Shell"]
 repo = "corvidae"
 seo_title = "corvidae: Tools in TeX, 2025 · Tomas Korcak"
 og_title = "corvidae: Tools in TeX"
-og_description = "Tools in TeX, Elixir and Shell, 2025, active in the last 24 months. Source on GitLab."
+og_description = "corvidae: Tools in TeX, Elixir and Shell, 2025, active in the last 24 months. Source on GitLab."
 og_image = "og/work-corvidae.png"
 schema = "project"
 keywords = ["corvidae", "Tools", "TeX", "Elixir", "Shell", "2025", "GitLab", "Tomas Korcak", "korczis"]
@@ -27,10 +27,11 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "every 6 hours" }
 +++
 **corvidae** is a project in [Tools](@/projects/tools.md). Its code is written mainly in TeX (53.3 %), with [Elixir](@/glossary/elixir.md) and [Shell](@/glossary/shell.md).
 
-The [repository](@/glossary/repository.md) was created in May 2025; its latest [commit](@/glossary/commit.md) is from 12 May 2025. It reads “feat: initial commit”. That places it among the projects active in the last 24 months.
+The [repository](@/glossary/repository.md) was created on 12 May 2025; its latest [commit](@/glossary/commit.md) is from 12 May 2025. It reads “feat: initial commit”. That places it among the projects active in the last 24 months.
 
 Its source is on [GitLab](https://gitlab.com/korczis/corvidae).
 

@@ -13,7 +13,7 @@ tags = ["Nástroje", "TeX", "Elixir", "Shell"]
 repo = "corvidae"
 seo_title = "corvidae: Nástroje, TeX, 2025 · Tomáš Korčák"
 og_title = "corvidae: Osobní a vědecký projekt zaměřený na pozorování, dokumentaci a vztah s volně…"
-og_description = "Nástroje, TeX, Elixir a Shell, 2025, aktivní za posledních 24 měsíců. Zdrojový kód: GitLab."
+og_description = "corvidae: Nástroje, TeX, Elixir a Shell, 2025, aktivní za posledních 24 měsíců. Zdrojový kód: GitLab."
 og_image = "og/cs-work-corvidae.png"
 schema = "project"
 keywords = ["corvidae", "Nástroje", "TeX", "Elixir", "Shell", "2025", "GitLab", "Tomáš Korčák", "korczis"]
@@ -27,6 +27,7 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "každých 6 hodin" }
 +++
 **corvidae** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce TeX (53,3 %), dále [Elixir](@/glossary/elixir.cs.md) a [Shell](@/glossary/shell.cs.md).
 

@@ -3,8 +3,8 @@
 title = "korczis.github.io"
 description = "korczis.github.io: projekt z kategorie Web, hlavní jazyk JavaScript, poslední commit 18. listopadu 2026."
 template = "work.html"
-weight = 2
-updated = "2026-11-18T02:49:49Z"
+weight = 4
+updated = "2026-11-18T03:03:38Z"
 
 [taxonomies]
 tags = ["Web", "JavaScript", "HTML", "CSS"]
@@ -13,7 +13,7 @@ tags = ["Web", "JavaScript", "HTML", "CSS"]
 repo = "korczis.github.io"
 seo_title = "korczis.github.io: Web, JavaScript, 2024–2026 · Tomáš Korčák"
 og_title = "korczis.github.io: Web, JavaScript"
-og_description = "Web, JavaScript, HTML a CSS, 2024–2026, aktivní za posledních 12 měsíců. Zdrojový kód: GitHub. Pod dohledem Majordomu."
+og_description = "korczis.github.io: Web, JavaScript, HTML a CSS, 2024–2026, aktivní za posledních 12 měsíců. Zdrojový kód: GitHub. Pod dohledem Majordomu."
 og_image = "og/cs-work-korczis-github-io.png"
 schema = "project"
 keywords = ["korczis.github.io", "Web", "JavaScript", "HTML", "CSS", "accessibility", "ai-agents", "alpinejs", "chartjs", "cytoscape", "echarts", "2024–2026", "GitHub", "Tomáš Korčák", "korczis"]
@@ -28,9 +28,9 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**korczis.github.io** je projekt z kategorie [Web](@/projects/web.cs.md). Jeho kód je napsaný hlavně v jazyce [JavaScript](@/glossary/javascript.cs.md) (68,7 %), dále [HTML](@/glossary/html.cs.md), [CSS](@/glossary/css.cs.md) a [Shell](@/glossary/shell.cs.md).
+**korczis.github.io** je projekt z kategorie [Web](@/projects/web.cs.md). Jeho kód je napsaný hlavně v jazyce [JavaScript](@/glossary/javascript.cs.md) (66,5 %), dále [HTML](@/glossary/html.cs.md), [CSS](@/glossary/css.cs.md) a [Shell](@/glossary/shell.cs.md).
 
-[Repozitář](@/glossary/repository.cs.md) vznikl 24. prosince 2024; poslední [commit](@/glossary/commit.cs.md) je z 18. listopadu 2026. Zní „chore(merge): integrate \#28, /hire/, the CV from LinkedIn, Offer and FAQPage JSON-LD, llms.txt hire section“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+[Repozitář](@/glossary/repository.cs.md) vznikl 24. prosince 2024; poslední [commit](@/glossary/commit.cs.md) je z 18. listopadu 2026. Zní „chore(merge): integrate \#29, wave 1: one positioning, /hire/ evidence, previews and machine files, sidebar skillset“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 
 Zdrojový kód: [GitHub](https://github.com/korczis/korczis.github.io).
 

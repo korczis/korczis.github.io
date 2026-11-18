@@ -13,7 +13,7 @@ tags = ["Média a umění"]
 repo = "talkie"
 seo_title = "talkie: Média a umění, 2015 · Tomáš Korčák"
 og_title = "talkie: Média a umění (2015)"
-og_description = "Média a umění, 2015, archiv. Zdrojový kód: GitHub a GitLab."
+og_description = "talkie: Média a umění, 2015, archiv. Zdrojový kód: GitHub a GitLab."
 og_image = "og/cs-work-talkie.png"
 schema = "project"
 keywords = ["talkie", "Média a umění", "2015", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
@@ -36,4 +36,4 @@ Zdrojový kód: [GitHub](https://github.com/korczis/talkie) a [GitLab](https://g
 
 Související práce v kategorii [Média a umění](@/projects/media.cs.md): [brepta](@/work/brepta.cs.md) (2017), [dj-schnapps](@/work/dj-schnapps.cs.md) (2019), [prismatic-blog](@/work/prismatic-blog.cs.md) (2025) a [Catharsis as a Service](@/work/catharsis-as-a-service.cs.md) (2026).
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje jeho jediný commit jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu. Puls ukazuje jeho jediný commit jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

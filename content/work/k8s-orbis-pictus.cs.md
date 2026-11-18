@@ -13,7 +13,7 @@ tags = ["Systémy a infrastruktura"]
 repo = "k8s-orbis-pictus"
 seo_title = "k8s-orbis-pictus: Systémy a infrastruktura, 2019 · Tomáš Korčák"
 og_title = "k8s-orbis-pictus: Systémy a infrastruktura (2019)"
-og_description = "Systémy a infrastruktura, 2019, archiv. Zdrojový kód: GitHub a GitLab."
+og_description = "k8s-orbis-pictus: Systémy a infrastruktura, 2019, archiv. Zdrojový kód: GitHub a GitLab."
 og_image = "og/cs-work-k8s-orbis-pictus.png"
 schema = "project"
 keywords = ["k8s-orbis-pictus", "Systémy a infrastruktura", "2019", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
@@ -36,4 +36,4 @@ Zdrojový kód: [GitHub](https://github.com/korczis/k8s-orbis-pictus) a [GitLab]
 
 Související práce v kategorii [Systémy a infrastruktura](@/projects/systems.cs.md): [zdeny-docker](@/work/zdeny-docker.cs.md) (2019), [server-archlinux](@/work/server-archlinux.cs.md) (2019), [server-coreos](@/work/server-coreos.cs.md) (2019) a [server-atomic](@/work/server-atomic.cs.md) (2019).
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje poslední 3 commity jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu. Puls ukazuje poslední 3 commity jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

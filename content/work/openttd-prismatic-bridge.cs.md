@@ -3,7 +3,7 @@
 title = "openttd-prismatic-bridge"
 description = "openttd-prismatic-bridge: projekt z kategorie Média a umění, hlavní jazyk Squirrel, poslední commit 18. listopadu 2026."
 template = "work.html"
-weight = 1
+weight = 2
 updated = "2026-11-18T02:16:44Z"
 
 [taxonomies]
@@ -13,7 +13,7 @@ tags = ["Média a umění", "Squirrel", "Python", "HTML"]
 repo = "openttd-prismatic-bridge"
 seo_title = "openttd-prismatic-bridge: Média a umění, Squirrel, 2026 · Tomáš Korčák"
 og_title = "openttd-prismatic-bridge: Média a umění, Squirrel"
-og_description = "Média a umění, Squirrel, Python a HTML, 2026, aktivní za posledních 12 měsíců. Zdrojový kód: GitLab."
+og_description = "openttd-prismatic-bridge: Média a umění, Squirrel, Python a HTML, 2026, aktivní za posledních 12 měsíců. Zdrojový kód: GitLab."
 og_image = "og/cs-work-openttd-prismatic-bridge.png"
 schema = "project"
 keywords = ["openttd-prismatic-bridge", "Média a umění", "Squirrel", "Python", "HTML", "2026", "GitLab", "Tomáš Korčák", "korczis"]
@@ -27,6 +27,7 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "každých 6 hodin" }
 +++
 **openttd-prismatic-bridge** je projekt z kategorie [Média a umění](@/projects/media.cs.md). Jeho kód je napsaný hlavně v jazyce Squirrel (38,8 %), dále [Python](@/glossary/python.cs.md), [HTML](@/glossary/html.cs.md) a [Shell](@/glossary/shell.cs.md).
 

@@ -13,7 +13,7 @@ tags = ["Web", "HTML", "CSS", "JavaScript"]
 repo = "korczis-com"
 seo_title = "korczis-com: Web, HTML, 2014–2015 · Tomáš Korčák"
 og_title = "korczis-com: Web, HTML (2014–2015)"
-og_description = "Web, HTML, CSS a JavaScript, 2014–2015, archiv. Zdrojový kód: GitLab."
+og_description = "korczis-com: Web, HTML, CSS a JavaScript, 2014–2015, archiv. Zdrojový kód: GitLab."
 og_image = "og/cs-work-korczis-com.png"
 schema = "project"
 keywords = ["korczis-com", "Web", "HTML", "CSS", "JavaScript", "2014–2015", "GitLab", "Tomáš Korčák", "korczis"]
@@ -27,6 +27,7 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "každých 6 hodin" }
 +++
 **korczis-com** je projekt z kategorie [Web](@/projects/web.cs.md). Jeho kód je napsaný hlavně v jazyce [HTML](@/glossary/html.cs.md) (52,8 %), dále [CSS](@/glossary/css.cs.md) a [JavaScript](@/glossary/javascript.cs.md).
 

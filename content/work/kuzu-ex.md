@@ -13,7 +13,7 @@ tags = ["Data and GIS", "Elixir", "Python"]
 repo = "kuzu-ex"
 seo_title = "kuzu-ex: Data and GIS in Elixir, 2024 · Tomas Korcak"
 og_title = "kuzu-ex: Elixir SDK for KuzuDB with graph schema DSL and query builder, designed for…"
-og_description = "Data and GIS in Elixir and Python, 2024, active in the last 24 months. Source on GitLab."
+og_description = "kuzu-ex: Data and GIS in Elixir and Python, 2024, active in the last 24 months. Source on GitLab."
 og_image = "og/work-kuzu-ex.png"
 schema = "project"
 keywords = ["kuzu-ex", "Data and GIS", "Elixir", "Python", "2024", "GitLab", "Tomas Korcak", "korczis"]
@@ -27,10 +27,11 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "every 6 hours" }
 +++
 **kuzu-ex** is a project in [Data and GIS](@/projects/data.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (97.6 %), with [Python](@/glossary/python.md).
 
-The [repository](@/glossary/repository.md) was created in October 2024; its latest [commit](@/glossary/commit.md) is from 29 November 2024. It reads “feat: tweak loading url”. That places it among the projects active in the last 24 months.
+The [repository](@/glossary/repository.md) was created on 24 October 2024; its latest [commit](@/glossary/commit.md) is from 29 November 2024. It reads “feat: tweak loading url”. That places it among the projects active in the last 24 months.
 
 Its source is on [GitLab](https://gitlab.com/korczis/kuzu-ex).
 

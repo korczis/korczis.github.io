@@ -13,7 +13,7 @@ tags = ["Data and GIS", "JavaScript"]
 repo = "microcrawler-crawler-craiglist-com"
 seo_title = "microcrawler-crawler-craiglist-com: Data and GIS, 2016 · Tomas Korcak"
 og_title = "microcrawler-crawler-craiglist-com: Data and GIS in JavaScript (2016)"
-og_description = "Data and GIS in JavaScript, 2016, archive. Source on GitLab."
+og_description = "microcrawler-crawler-craiglist-com: Data and GIS in JavaScript, 2016, archive. Source on GitLab."
 og_image = "og/work-microcrawler-crawler-craiglist-com.png"
 schema = "project"
 keywords = ["microcrawler-crawler-craiglist-com", "Data and GIS", "JavaScript", "2016", "GitLab", "Tomas Korcak", "korczis"]
@@ -27,10 +27,11 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "every 6 hours" }
 +++
 **microcrawler-crawler-craiglist-com** is a project in [Data and GIS](@/projects/data.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (100 %).
 
-The [repository](@/glossary/repository.md) was created in September 2019; its latest [commit](@/glossary/commit.md) is from 30 August 2016. It reads “Add crawler section”. With no commit in the last 48 months it is listed as archive: work from 2016, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 16 September 2019; its latest [commit](@/glossary/commit.md) is from 30 August 2016. It reads “Add crawler section”. With no commit in the last 48 months it is listed as archive: work from 2016, kept for the record and dated as measured.
 
 Its source is on [GitLab](https://gitlab.com/korczis/microcrawler-crawler-craiglist-com).
 

@@ -13,7 +13,7 @@ tags = ["Tools", "Shell"]
 repo = "home"
 seo_title = "home: home directory, 2019 · Tomas Korcak"
 og_title = "home: home directory (2019)"
-og_description = "Tools in Shell, 2019, archive. Source on GitHub and GitLab."
+og_description = "home: Tools in Shell, 2019, archive. Source on GitHub and GitLab."
 og_image = "og/work-home.png"
 schema = "project"
 keywords = ["home", "Tools", "Shell", "2019", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **home** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [Shell](@/glossary/shell.md) (100 %).
 
-The [repository](@/glossary/repository.md) was created in June 2019; its latest [commit](@/glossary/commit.md) is from 27 June 2019. It reads “Create .bash\_profile”. With no commit in the last 48 months it is listed as archive: work from 2019, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 27 June 2019; its latest [commit](@/glossary/commit.md) is from 27 June 2019. It reads “Create .bash\_profile”. With no commit in the last 48 months it is listed as archive: work from 2019, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/home) and [GitLab](https://gitlab.com/korczis/home).
 

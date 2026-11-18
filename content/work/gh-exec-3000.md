@@ -13,7 +13,7 @@ tags = ["Systems and infrastructure", "Dockerfile", "Shell"]
 repo = "gh-exec-3000"
 seo_title = "gh-exec-3000: github executor 3000, 2022 · Tomas Korcak"
 og_title = "gh-exec-3000: github executor 3000 (2022)"
-og_description = "Systems and infrastructure in Dockerfile and Shell, 2022, archive. Source on GitHub."
+og_description = "gh-exec-3000: Systems and infrastructure in Dockerfile and Shell, 2022, archive. Source on GitHub."
 og_image = "og/work-gh-exec-3000.png"
 schema = "project"
 keywords = ["gh-exec-3000", "Systems and infrastructure", "Dockerfile", "Shell", "2022", "GitHub", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **gh-exec-3000** is a project in [Systems and infrastructure](@/projects/systems.md). Its code is written mainly in [Dockerfile](@/glossary/dockerfile.md) (72.5 %), with [Shell](@/glossary/shell.md).
 
-The [repository](@/glossary/repository.md) was created in October 2022; its latest [commit](@/glossary/commit.md) is from 8 October 2022. It reads “version 0”. With no commit in the last 48 months it is listed as archive: work from 2022, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 8 October 2022; its latest [commit](@/glossary/commit.md) is from 8 October 2022. It reads “version 0”. With no commit in the last 48 months it is listed as archive: work from 2022, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/gh-exec-3000).
 

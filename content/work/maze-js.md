@@ -13,7 +13,7 @@ tags = ["Science and visualisation"]
 repo = "maze-js"
 seo_title = "maze-js: Maze, 2016 · Tomas Korcak"
 og_title = "maze-js: Maze (2016)"
-og_description = "Science and visualisation, 2016, archive. Source on GitHub and GitLab."
+og_description = "maze-js: Science and visualisation, 2016, archive. Source on GitHub and GitLab."
 og_image = "og/work-maze-js.png"
 schema = "project"
 keywords = ["maze-js", "Science and visualisation", "2016", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,10 +30,10 @@ tone = "night"
 +++
 **maze-js** is a project in [Science and visualisation](@/projects/science.md).
 
-The [repository](@/glossary/repository.md) was created in November 2016; its latest [commit](@/glossary/commit.md) is from 18 November 2016. It reads “Initial commit”. With no commit in the last 48 months it is listed as archive: work from 2016, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 18 November 2016; its latest [commit](@/glossary/commit.md) is from 18 November 2016. It reads “Initial commit”. With no commit in the last 48 months it is listed as archive: work from 2016, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/maze-js) and [GitLab](https://gitlab.com/korczis/maze-js).
 
 Related work in [Science and visualisation](@/projects/science.md): [maze-rs](@/work/maze-rs.md) (2016), [maze](@/work/maze.md) (2016), [graph-flow](@/work/graph-flow.md) (2017) and [haskell-world](@/work/haskell-world.md) (2016).
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws its only commit as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab. The pulse draws its only commit as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

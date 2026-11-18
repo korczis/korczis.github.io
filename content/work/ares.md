@@ -13,7 +13,7 @@ tags = ["Tools", "Ruby"]
 repo = "ares"
 seo_title = "ares: Simple (AMQP Based) Monitoring framework, 2012 · Tomas Korcak"
 og_title = "ares: Simple (AMQP Based) Monitoring framework (2012)"
-og_description = "Tools in Ruby, 2012, archive. Source on GitHub and GitLab."
+og_description = "ares: Tools in Ruby, 2012, archive. Source on GitHub and GitLab."
 og_image = "og/work-ares.png"
 schema = "project"
 keywords = ["ares", "Tools", "Ruby", "2012", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **ares** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [Ruby](@/glossary/ruby.md) (100 %).
 
-The [repository](@/glossary/repository.md) was created in October 2012; its latest [commit](@/glossary/commit.md) is from 7 October 2012. It reads “Initial import”. With no commit in the last 48 months it is listed as archive: work from 2012, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 7 October 2012; its latest [commit](@/glossary/commit.md) is from 7 October 2012. It reads “Initial import”. With no commit in the last 48 months it is listed as archive: work from 2012, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/ares) and [GitLab](https://gitlab.com/korczis/ares).
 

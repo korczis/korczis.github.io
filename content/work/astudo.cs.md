@@ -13,7 +13,7 @@ tags = ["Nástroje", "Elixir", "CSS", "Rust"]
 repo = "astudo"
 seo_title = "astudo: Nástroje, Elixir, 2022 · Tomáš Korčák"
 og_title = "astudo: Nástroje, Elixir (2022)"
-og_description = "Nástroje, Elixir, CSS a Rust, 2022, archiv. Zdrojový kód: GitLab."
+og_description = "astudo: Nástroje, Elixir, CSS a Rust, 2022, archiv. Zdrojový kód: GitLab."
 og_image = "og/cs-work-astudo.png"
 schema = "project"
 keywords = ["astudo", "Nástroje", "Elixir", "CSS", "Rust", "2022", "GitLab", "Tomáš Korčák", "korczis"]
@@ -27,6 +27,7 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "každých 6 hodin" }
 +++
 **astudo** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (59,4 %), dále [CSS](@/glossary/css.cs.md), [Rust](@/glossary/rust.cs.md) a [Dockerfile](@/glossary/dockerfile.cs.md).
 

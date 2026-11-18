@@ -13,7 +13,7 @@ tags = ["Libraries", "Elixir", "Rust"]
 repo = "gauc.ex"
 seo_title = "gauc.ex: Libraries in Elixir, 2017–2018 · Tomas Korcak"
 og_title = "gauc.ex: Elxir Wrapper for Gauc - Rust Wrapper for Couchbase (2017–2018)"
-og_description = "Libraries in Elixir and Rust, 2017–2018, archive. Source on GitHub and GitLab. 3 stars."
+og_description = "gauc.ex: Libraries in Elixir and Rust, 2017–2018, archive. Source on GitHub and GitLab. 3 stars."
 og_image = "og/work-gauc-ex.png"
 schema = "project"
 keywords = ["gauc.ex", "Libraries", "Elixir", "Rust", "2017–2018", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **gauc.ex** is a project in [Libraries](@/projects/libraries.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (59.3 %), with [Rust](@/glossary/rust.md).
 
-The [repository](@/glossary/repository.md) was created in October 2017; its latest [commit](@/glossary/commit.md) is from 31 March 2018. It reads “Bump version 0.17.0 -\> 0.17.1”. With no commit in the last 48 months it is listed as archive: work from 2017–2018, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 3 October 2017; its latest [commit](@/glossary/commit.md) is from 31 March 2018. It reads “Bump version 0.17.0 -\> 0.17.1”. With no commit in the last 48 months it is listed as archive: work from 2017–2018, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/gauc.ex) and [GitLab](https://gitlab.com/korczis/gauc-ex).
 

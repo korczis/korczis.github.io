@@ -13,7 +13,7 @@ tags = ["Data a GIS", "Elixir", "Shell", "Makefile"]
 repo = "microcrawler-elixir"
 seo_title = "microcrawler-elixir: Data a GIS, Elixir, 2016 · Tomáš Korčák"
 og_title = "microcrawler-elixir: Data a GIS, Elixir (2016)"
-og_description = "Data a GIS, Elixir, Shell a Makefile, 2016, archiv. Zdrojový kód: GitLab."
+og_description = "microcrawler-elixir: Data a GIS, Elixir, Shell a Makefile, 2016, archiv. Zdrojový kód: GitLab."
 og_image = "og/cs-work-microcrawler-elixir.png"
 schema = "project"
 keywords = ["microcrawler-elixir", "Data a GIS", "Elixir", "Shell", "Makefile", "2016", "GitLab", "Tomáš Korčák", "korczis"]
@@ -27,6 +27,7 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "každých 6 hodin" }
 +++
 **microcrawler-elixir** je projekt z kategorie [Data a GIS](@/projects/data.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (95,6 %), dále [Shell](@/glossary/shell.cs.md) a Makefile.
 

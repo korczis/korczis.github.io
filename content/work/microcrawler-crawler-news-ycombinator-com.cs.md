@@ -13,7 +13,7 @@ tags = ["Data a GIS", "JavaScript"]
 repo = "microcrawler-crawler-news-ycombinator-com"
 seo_title = "microcrawler-crawler-news-ycombinator-com, 2016 · Tomáš Korčák"
 og_title = "microcrawler-crawler-news-ycombinator-com: Data a GIS, JavaScript (2016)"
-og_description = "Data a GIS, JavaScript, 2016, archiv. Zdrojový kód: GitLab."
+og_description = "microcrawler-crawler-news-ycombinator-com: Data a GIS, JavaScript, 2016, archiv. Zdrojový kód: GitLab."
 og_image = "og/cs-work-microcrawler-crawler-news-ycombinator-com.png"
 schema = "project"
 keywords = ["microcrawler-crawler-news-ycombinator-com", "Data a GIS", "JavaScript", "2016", "GitLab", "Tomáš Korčák", "korczis"]
@@ -27,6 +27,7 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "každých 6 hodin" }
 +++
 **microcrawler-crawler-news-ycombinator-com** je projekt z kategorie [Data a GIS](@/projects/data.cs.md). Jeho kód je napsaný hlavně v jazyce [JavaScript](@/glossary/javascript.cs.md) (100 %).
 

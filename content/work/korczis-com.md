@@ -13,7 +13,7 @@ tags = ["Web", "HTML", "CSS", "JavaScript"]
 repo = "korczis-com"
 seo_title = "korczis-com: korczis.com website, 2014–2015 · Tomas Korcak"
 og_title = "korczis-com: korczis.com website (2014–2015)"
-og_description = "Web in HTML, CSS and JavaScript, 2014–2015, archive. Source on GitLab."
+og_description = "korczis-com: Web in HTML, CSS and JavaScript, 2014–2015, archive. Source on GitLab."
 og_image = "og/work-korczis-com.png"
 schema = "project"
 keywords = ["korczis-com", "Web", "HTML", "CSS", "JavaScript", "2014–2015", "GitLab", "Tomas Korcak", "korczis"]
@@ -27,10 +27,11 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "every 6 hours" }
 +++
 **korczis-com** is a project in [Web](@/projects/web.md). Its code is written mainly in [HTML](@/glossary/html.md) (52.8 %), with [CSS](@/glossary/css.md) and [JavaScript](@/glossary/javascript.md).
 
-The [repository](@/glossary/repository.md) was created in September 2019; its latest [commit](@/glossary/commit.md) is from 3 September 2015. It reads “Added twitter”. With no commit in the last 48 months it is listed as archive: work from 2014–2015, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 16 September 2019; its latest [commit](@/glossary/commit.md) is from 3 September 2015. It reads “Added twitter”. With no commit in the last 48 months it is listed as archive: work from 2014–2015, kept for the record and dated as measured.
 
 Its source is on [GitLab](https://gitlab.com/korczis/korczis-com).
 

@@ -13,7 +13,7 @@ tags = ["Data and GIS", "JavaScript"]
 repo = "github-extractor"
 seo_title = "github-extractor: Extracts Data From Github, 2014 · Tomas Korcak"
 og_title = "github-extractor: Extracts Data From Github (2014)"
-og_description = "Data and GIS in JavaScript, 2014, archive. Source on GitHub and GitLab."
+og_description = "github-extractor: Data and GIS in JavaScript, 2014, archive. Source on GitHub and GitLab."
 og_image = "og/work-github-extractor.png"
 schema = "project"
 keywords = ["github-extractor", "Data and GIS", "JavaScript", "2014", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **github-extractor** is a project in [Data and GIS](@/projects/data.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (100 %).
 
-The [repository](@/glossary/repository.md) was created in May 2014; its latest [commit](@/glossary/commit.md) is from 14 May 2014. It reads “Initial commit”. With no commit in the last 48 months it is listed as archive: work from 2014, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 14 May 2014; its latest [commit](@/glossary/commit.md) is from 14 May 2014. It reads “Initial commit”. With no commit in the last 48 months it is listed as archive: work from 2014, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/github-extractor) and [GitLab](https://gitlab.com/korczis/github-extractor).
 

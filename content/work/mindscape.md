@@ -13,7 +13,7 @@ tags = ["Tools"]
 repo = "MindScape"
 seo_title = "MindScape: Tools, 2023 · Tomas Korcak"
 og_title = "MindScape: MindScape is an AI-powered platform for mental health diagnosis and treatment"
-og_description = "Tools, 2023, active in the last 48 months. Source on GitHub."
+og_description = "MindScape: Tools, 2023, active in the last 48 months. Source on GitHub."
 og_image = "og/work-mindscape.png"
 schema = "project"
 keywords = ["MindScape", "Tools", "2023", "GitHub", "Tomas Korcak", "korczis"]
@@ -30,10 +30,10 @@ tone = "night"
 +++
 **MindScape** is a project in [Tools](@/projects/tools.md).
 
-The [repository](@/glossary/repository.md) was created in February 2023; its latest [commit](@/glossary/commit.md) is from 18 February 2023. It reads “Add README.md”. That places it among the projects active in the last 48 months.
+The [repository](@/glossary/repository.md) was created on 18 February 2023; its latest [commit](@/glossary/commit.md) is from 18 February 2023. It reads “Add README.md”. That places it among the projects active in the last 48 months.
 
 Its source is on [GitHub](https://github.com/korczis/MindScape).
 
 Related work in [Tools](@/projects/tools.md): [el-magico-cache](@/work/el-magico-cache.md) (2023), [rest-hello-world-benchmark](@/work/rest-hello-world-benchmark.md) (2022), [caregiver](@/work/caregiver.md) (2022) and [astudo](@/work/astudo.md) (2022).
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 3 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab. The pulse draws the latest 3 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

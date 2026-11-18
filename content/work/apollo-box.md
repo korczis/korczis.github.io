@@ -13,7 +13,7 @@ tags = ["Data and GIS", "Shell"]
 repo = "apollo-box"
 seo_title = "apollo-box: Data and GIS in Shell, 2014 · Tomas Korcak"
 og_title = "apollo-box: All needed data science stuff in one box (2014)"
-og_description = "Data and GIS in Shell, 2014, archive. Source on GitHub and GitLab."
+og_description = "apollo-box: Data and GIS in Shell, 2014, archive. Source on GitHub and GitLab."
 og_image = "og/work-apollo-box.png"
 schema = "project"
 keywords = ["apollo-box", "Data and GIS", "Shell", "2014", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **apollo-box** is a project in [Data and GIS](@/projects/data.md). Its code is written mainly in [Shell](@/glossary/shell.md) (100 %).
 
-The [repository](@/glossary/repository.md) was created in May 2014; its latest [commit](@/glossary/commit.md) is from 5 May 2014. It reads “Added default Vagrantfile + bootstrap script”. With no commit in the last 48 months it is listed as archive: work from 2014, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 5 May 2014; its latest [commit](@/glossary/commit.md) is from 5 May 2014. It reads “Added default Vagrantfile + bootstrap script”. With no commit in the last 48 months it is listed as archive: work from 2014, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/apollo-box) and [GitLab](https://gitlab.com/korczis/apollo-box).
 

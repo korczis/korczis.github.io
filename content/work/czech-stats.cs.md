@@ -13,7 +13,7 @@ tags = ["Data a GIS", "Elixir", "CSS", "JavaScript"]
 repo = "czech-stats"
 seo_title = "czech-stats: Data a GIS, Elixir, 2020 · Tomáš Korčák"
 og_title = "czech-stats: Data a GIS, Elixir (2020)"
-og_description = "Data a GIS, Elixir, CSS a JavaScript, 2020, archiv. Zdrojový kód: GitLab."
+og_description = "czech-stats: Data a GIS, Elixir, CSS a JavaScript, 2020, archiv. Zdrojový kód: GitLab."
 og_image = "og/cs-work-czech-stats.png"
 schema = "project"
 keywords = ["czech-stats", "Data a GIS", "Elixir", "CSS", "JavaScript", "2020", "GitLab", "Tomáš Korčák", "korczis"]
@@ -27,6 +27,7 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "každých 6 hodin" }
 +++
 **czech-stats** je projekt z kategorie [Data a GIS](@/projects/data.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (59,3 %), dále [CSS](@/glossary/css.cs.md), [JavaScript](@/glossary/javascript.cs.md) a [HTML](@/glossary/html.cs.md).
 

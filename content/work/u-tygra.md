@@ -13,7 +13,7 @@ tags = ["Tools", "JavaScript", "HTML", "CSS"]
 repo = "u-tygra"
 seo_title = "u-tygra: Tools in JavaScript, 2024–2025 · Tomas Korcak"
 og_title = "u-tygra: Tools in JavaScript"
-og_description = "Tools in JavaScript, HTML and CSS, 2024–2025, active in the last 24 months. Source on GitHub and GitLab. Live site."
+og_description = "u-tygra: Tools in JavaScript, HTML and CSS, 2024–2025, active in the last 24 months. Source on GitHub and GitLab. Live site."
 og_image = "og/work-u-tygra.png"
 schema = "project"
 keywords = ["u-tygra", "Tools", "JavaScript", "HTML", "CSS", "2024–2025", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **u-tygra** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (91.8 %), with [HTML](@/glossary/html.md) and [CSS](@/glossary/css.md).
 
-The [repository](@/glossary/repository.md) was created in December 2024; its latest [commit](@/glossary/commit.md) is from 3 June 2025. It reads “remove static.yml”. That places it among the projects active in the last 24 months.
+The [repository](@/glossary/repository.md) was created on 27 December 2024; its latest [commit](@/glossary/commit.md) is from 3 June 2025. It reads “remove static.yml”. That places it among the projects active in the last 24 months.
 
 It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/u-tygra/>.
 

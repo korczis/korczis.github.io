@@ -13,7 +13,7 @@ tags = ["Nástroje"]
 repo = "in-rust-we-trust"
 seo_title = "in-rust-we-trust: Nástroje, 2017 · Tomáš Korčák"
 og_title = "in-rust-we-trust: Nástroje (2017)"
-og_description = "Nástroje, 2017, archiv. Zdrojový kód: GitHub a GitLab."
+og_description = "in-rust-we-trust: Nástroje, 2017, archiv. Zdrojový kód: GitHub a GitLab."
 og_image = "og/cs-work-in-rust-we-trust.png"
 schema = "project"
 keywords = ["in-rust-we-trust", "Nástroje", "2017", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
@@ -36,4 +36,4 @@ Zdrojový kód: [GitHub](https://github.com/korczis/in-rust-we-trust) a [GitLab]
 
 Související práce v kategorii [Nástroje](@/projects/tools.cs.md): [zeman-ucet](@/work/zeman-ucet.cs.md) (2017), [gdc-dumpator](@/work/gdc-dumpator.cs.md) (2017), [zaas](@/work/zaas.cs.md) (2017) a [models](@/work/models.cs.md) (2017).
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje poslední 2 commity jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu. Puls ukazuje poslední 2 commity jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

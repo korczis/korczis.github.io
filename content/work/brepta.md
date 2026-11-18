@@ -13,7 +13,7 @@ tags = ["Media and art", "JavaScript"]
 repo = "brepta"
 seo_title = "brepta: TTS via REST, 2017 · Tomas Korcak"
 og_title = "brepta: TTS via REST (2017)"
-og_description = "Media and art in JavaScript, 2017, archive. Source on GitHub and GitLab."
+og_description = "brepta: Media and art in JavaScript, 2017, archive. Source on GitHub and GitLab."
 og_image = "og/work-brepta.png"
 schema = "project"
 keywords = ["brepta", "Media and art", "JavaScript", "2017", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **brepta** is a project in [Media and art](@/projects/media.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (100 %).
 
-The [repository](@/glossary/repository.md) was created in January 2017; its latest [commit](@/glossary/commit.md) is from 20 January 2017. It reads “Fix”. With no commit in the last 48 months it is listed as archive: work from 2017, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 20 January 2017; its latest [commit](@/glossary/commit.md) is from 20 January 2017. It reads “Fix”. With no commit in the last 48 months it is listed as archive: work from 2017, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/brepta) and [GitLab](https://gitlab.com/korczis/brepta).
 

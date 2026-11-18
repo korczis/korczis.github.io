@@ -13,7 +13,7 @@ tags = ["Learning and experiments", "JavaScript"]
 repo = "node-proxy-upload"
 seo_title = "node-proxy-upload: Learning and experiments, 2016 · Tomas Korcak"
 og_title = "node-proxy-upload: Simple example how to upload multipart files via node http proxy (2016)"
-og_description = "Learning and experiments in JavaScript, 2016, archive. Source on GitHub and GitLab."
+og_description = "node-proxy-upload: Learning and experiments in JavaScript, 2016, archive. Source on GitHub and GitLab."
 og_image = "og/work-node-proxy-upload.png"
 schema = "project"
 keywords = ["node-proxy-upload", "Learning and experiments", "JavaScript", "2016", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **node-proxy-upload** is a project in [Learning and experiments](@/projects/learning.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (100 %).
 
-The [repository](@/glossary/repository.md) was created in April 2016; its latest [commit](@/glossary/commit.md) is from 13 April 2016. It reads “Initial update”. With no commit in the last 48 months it is listed as archive: work from 2016, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 13 April 2016; its latest [commit](@/glossary/commit.md) is from 13 April 2016. It reads “Initial update”. With no commit in the last 48 months it is listed as archive: work from 2016, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/node-proxy-upload) and [GitLab](https://gitlab.com/korczis/node-proxy-upload).
 

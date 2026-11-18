@@ -13,7 +13,7 @@ tags = ["Science and visualisation", "Ruby", "Shell"]
 repo = "algorithms-ruby"
 seo_title = "algorithms-ruby: Fundamental algorithms in ruby, 2015 · Tomas Korcak"
 og_title = "algorithms-ruby: Fundamental algorithms in ruby (2015)"
-og_description = "Science and visualisation in C++, Ruby and Shell, 2015, archive. Source on GitHub and GitLab."
+og_description = "algorithms-ruby: Science and visualisation in C++, Ruby and Shell, 2015, archive. Source on GitHub and GitLab."
 og_image = "og/work-algorithms-ruby.png"
 schema = "project"
 keywords = ["algorithms-ruby", "Science and visualisation", "C++", "Ruby", "Shell", "2015", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **algorithms-ruby** is a project in [Science and visualisation](@/projects/science.md). Its code is written mainly in [C++](@/glossary/cpp.md) (55.6 %), with [Ruby](@/glossary/ruby.md) and [Shell](@/glossary/shell.md).
 
-The [repository](@/glossary/repository.md) was created in March 2015; its latest [commit](@/glossary/commit.md) is from 2 March 2015. It reads “Added FFI gem”. With no commit in the last 48 months it is listed as archive: work from 2015, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 2 March 2015; its latest [commit](@/glossary/commit.md) is from 2 March 2015. It reads “Added FFI gem”. With no commit in the last 48 months it is listed as archive: work from 2015, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/algorithms-ruby) and [GitLab](https://gitlab.com/korczis/algorithms-ruby).
 

@@ -4,7 +4,7 @@ title = "Majordomus reel"
 description = "Hlas, snímky, hudba i zvuk, vše generované a verzované jako software."
 template = "work.html"
 weight = 3
-updated = "2026-11-18T02:24:59Z"
+updated = "2026-11-18T03:09:16Z"
 
 [taxonomies]
 tags = ["Média a umění", "JavaScript", "HTML", "Shell"]
@@ -13,7 +13,7 @@ tags = ["Média a umění", "JavaScript", "HTML", "Shell"]
 repo = "majordomus-reel"
 seo_title = "Majordomus reel: Média a umění, JavaScript, 2026 · Tomáš Korčák"
 og_title = "Majordomus reel: Promo video renderované celé z kódu"
-og_description = "Média a umění, JavaScript, HTML a Shell, 2026, aktivní za posledních 12 měsíců. Zdrojový kód: GitHub. Živý web. Pod dohledem Majordomu."
+og_description = "Majordomus reel: Média a umění, JavaScript, HTML a Shell, 2026, aktivní za posledních 12 měsíců. Zdrojový kód: GitHub. Živý web. Pod dohledem Majordomu."
 og_image = "og/cs-work-majordomus-reel.png"
 schema = "project"
 keywords = ["Majordomus reel", "majordomus-reel", "Média a umění", "JavaScript", "HTML", "Shell", "ai-agents", "ffmpeg", "generative", "majordomus", "puppeteer", "video", "2026", "GitHub", "Tomáš Korčák", "korczis"]
@@ -28,9 +28,9 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**Majordomus reel** je projekt z kategorie [Média a umění](@/projects/media.cs.md). Jeho kód je napsaný hlavně v jazyce [JavaScript](@/glossary/javascript.cs.md) (60,7 %), dále [HTML](@/glossary/html.cs.md), [Shell](@/glossary/shell.cs.md) a [CSS](@/glossary/css.cs.md).
+**Majordomus reel** je projekt z kategorie [Média a umění](@/projects/media.cs.md). Jeho kód je napsaný hlavně v jazyce [JavaScript](@/glossary/javascript.cs.md) (66,2 %), dále [HTML](@/glossary/html.cs.md), [Shell](@/glossary/shell.cs.md) a [CSS](@/glossary/css.cs.md).
 
-[Repozitář](@/glossary/repository.cs.md) vznikl 23. října 2026; poslední [commit](@/glossary/commit.cs.md) je z 18. listopadu 2026. Zní „fix(quality): prove the recorded iteration read-only at finish“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+[Repozitář](@/glossary/repository.cs.md) vznikl 23. října 2026; poslední [commit](@/glossary/commit.cs.md) je z 18. listopadu 2026. Zní „docs(rules): the site is on Tailwind and Flowbite now; name its surfaces and the class-list source“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 
 Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/majordomus-reel/>.
 

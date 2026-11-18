@@ -13,7 +13,7 @@ tags = ["Data and GIS", "Ruby"]
 repo = "gooddata-lcm-tool"
 seo_title = "gooddata-lcm-tool: Data and GIS in Ruby, 2016 · Tomas Korcak"
 og_title = "gooddata-lcm-tool: Data and GIS in Ruby (2016)"
-og_description = "Data and GIS in Ruby, 2016, archive. Source on GitHub and GitLab."
+og_description = "gooddata-lcm-tool: Data and GIS in Ruby, 2016, archive. Source on GitHub and GitLab."
 og_image = "og/work-gooddata-lcm-tool.png"
 schema = "project"
 keywords = ["gooddata-lcm-tool", "Data and GIS", "Ruby", "2016", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **gooddata-lcm-tool** is a project in [Data and GIS](@/projects/data.md). Its code is written mainly in [Ruby](@/glossary/ruby.md) (100 %).
 
-The [repository](@/glossary/repository.md) was created in August 2016; its latest [commit](@/glossary/commit.md) is from 21 October 2016. It reads “Merge branch 'master' of github.com:korczis/gooddata-lcm-tool”. With no commit in the last 48 months it is listed as archive: work from 2016, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 19 August 2016; its latest [commit](@/glossary/commit.md) is from 21 October 2016. It reads “Merge branch 'master' of github.com:korczis/gooddata-lcm-tool”. With no commit in the last 48 months it is listed as archive: work from 2016, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/gooddata-lcm-tool) and [GitLab](https://gitlab.com/korczis/gooddata-lcm-tool).
 

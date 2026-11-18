@@ -13,7 +13,7 @@ tags = ["Web", "JavaScript", "CSS"]
 repo = "microscratch"
 seo_title = "microscratch: Web in JavaScript, 2014–2015 · Tomas Korcak"
 og_title = "microscratch: Light Weight Web Framework using node.js, mongo, sockets,… (2014–2015)"
-og_description = "Web in JavaScript and CSS, 2014–2015, archive. Source on GitHub and GitLab."
+og_description = "microscratch: Web in JavaScript and CSS, 2014–2015, archive. Source on GitHub and GitLab."
 og_image = "og/work-microscratch.png"
 schema = "project"
 keywords = ["microscratch", "Web", "JavaScript", "CSS", "2014–2015", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **microscratch** is a project in [Web](@/projects/web.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (92.5 %), with [CSS](@/glossary/css.md).
 
-The [repository](@/glossary/repository.md) was created in January 2014; its latest [commit](@/glossary/commit.md) is from 1 January 2015. It reads “Merge branch 'new-age'”. With no commit in the last 48 months it is listed as archive: work from 2014–2015, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 31 January 2014; its latest [commit](@/glossary/commit.md) is from 1 January 2015. It reads “Merge branch 'new-age'”. With no commit in the last 48 months it is listed as archive: work from 2014–2015, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/microscratch) and [GitLab](https://gitlab.com/korczis/microscratch).
 

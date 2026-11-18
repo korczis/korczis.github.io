@@ -13,7 +13,7 @@ tags = ["Nástroje"]
 repo = "past"
 seo_title = "past: Nástroje, 2025–2026 · Tomáš Korčák"
 og_title = "past: Nástroje"
-og_description = "Nástroje, 2025–2026, aktivní za posledních 12 měsíců. Zdrojový kód: GitLab."
+og_description = "past: Nástroje, 2025–2026, aktivní za posledních 12 měsíců. Zdrojový kód: GitLab."
 og_image = "og/cs-work-past.png"
 schema = "project"
 keywords = ["past", "Nástroje", "2025–2026", "GitLab", "Tomáš Korčák", "korczis"]
@@ -27,6 +27,7 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "každých 6 hodin" }
 +++
 **past** je projekt z kategorie [Nástroje](@/projects/tools.cs.md).
 
@@ -36,4 +37,4 @@ Zdrojový kód: [GitLab](https://gitlab.com/korczis/past).
 
 Související práce v kategorii [Nástroje](@/projects/tools.cs.md): [prism](@/work/prism.cs.md) (2024–2026), [the-psycho](@/work/the-psycho.cs.md) (2025–2026), [tinder-nomics](@/work/tinder-nomics.cs.md) (2025–2026) a [GHT](@/work/ght.cs.md) (2025).
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje poslední 2 commity jako tep, jeden pruh na typ commitu (feat, fix, docs…), ze snímku obnovovaného každých 6 hodin. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu. Puls ukazuje poslední 2 commity jako tep, jeden pruh na typ commitu (feat, fix, docs…), ze snímku obnovovaného každých 6 hodin. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

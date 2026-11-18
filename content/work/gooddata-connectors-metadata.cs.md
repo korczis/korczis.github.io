@@ -13,7 +13,7 @@ tags = ["Data a GIS", "Ruby"]
 repo = "gooddata_connectors_metadata"
 seo_title = "gooddata_connectors_metadata: Data a GIS, 2014–2015 · Tomáš Korčák"
 og_title = "gooddata_connectors_metadata: Data a GIS, Ruby (2014–2015)"
-og_description = "Data a GIS, Ruby, 2014–2015, archiv. Zdrojový kód: GitHub a GitLab."
+og_description = "gooddata_connectors_metadata: Data a GIS, Ruby, 2014–2015, archiv. Zdrojový kód: GitHub a GitLab."
 og_image = "og/cs-work-gooddata-connectors-metadata.png"
 schema = "project"
 keywords = ["gooddata_connectors_metadata", "Data a GIS", "Ruby", "2014–2015", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
@@ -34,6 +34,6 @@ tone = "night"
 
 Zdrojový kód: [GitHub](https://github.com/korczis/gooddata_connectors_metadata) a [GitLab](https://gitlab.com/korczis/gooddata_connectors_metadata).
 
-Související práce v kategorii [Data a GIS](@/projects/data.cs.md): [gooddata\_rails\_app](@/work/gooddata-rails-app.cs.md) (2014), [esri](@/work/esri.cs.md) (2014), [docker-gooddata-ruby](@/work/docker-gooddata-ruby.cs.md) (2015) a [gooddata-ruby-examples](@/work/gooddata-ruby-examples.cs.md) (2014–2015).
+Související práce v kategorii [Data a GIS](@/projects/data.cs.md): [gooddata\_rails\_app](@/work/gooddata-rails-app.cs.md) (2014), [apollo-crawler](@/work/apollo-crawler.cs.md) (2014), [esri](@/work/esri.cs.md) (2014) a [docker-gooddata-ruby](@/work/docker-gooddata-ruby.cs.md) (2015).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 30 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

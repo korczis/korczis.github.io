@@ -13,7 +13,7 @@ tags = ["Libraries", "Rust"]
 repo = "easy-plugin-plugins"
 seo_title = "easy-plugin-plugins: Libraries in Rust, 2016 · Tomas Korcak"
 og_title = "easy-plugin-plugins: Libraries in Rust (2016)"
-og_description = "Libraries in Rust, 2016, archive. Source on GitHub and GitLab."
+og_description = "easy-plugin-plugins: Libraries in Rust, 2016, archive. Source on GitHub and GitLab."
 og_image = "og/work-easy-plugin-plugins.png"
 schema = "project"
 keywords = ["easy-plugin-plugins", "Libraries", "Rust", "2016", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **easy-plugin-plugins** is a project in [Libraries](@/projects/libraries.md). Its code is written mainly in [Rust](@/glossary/rust.md) (100 %).
 
-The [repository](@/glossary/repository.md) was created in October 2016; its latest [commit](@/glossary/commit.md) is from 15 October 2016. It reads “Initial commit”. With no commit in the last 48 months it is listed as archive: work from 2016, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 15 October 2016; its latest [commit](@/glossary/commit.md) is from 15 October 2016. It reads “Initial commit”. With no commit in the last 48 months it is listed as archive: work from 2016, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/easy-plugin-plugins) and [GitLab](https://gitlab.com/korczis/easy-plugin-plugins).
 

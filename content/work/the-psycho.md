@@ -13,7 +13,7 @@ tags = ["Tools", "Elixir", "HTML+EEX", "JavaScript"]
 repo = "the-psycho"
 seo_title = "the-psycho: Tools in Elixir, 2025–2026 · Tomas Korcak"
 og_title = "the-psycho: Advanced research framework analyzing psychological manipulation patterns,…"
-og_description = "Tools in Elixir, HTML+EEX and JavaScript, 2025–2026, active in the last 12 months. Source on GitLab."
+og_description = "the-psycho: Tools in Elixir, HTML+EEX and JavaScript, 2025–2026, active in the last 12 months. Source on GitLab."
 og_image = "og/work-the-psycho.png"
 schema = "project"
 keywords = ["the-psycho", "Tools", "Elixir", "HTML+EEX", "JavaScript", "2025–2026", "GitLab", "Tomas Korcak", "korczis"]
@@ -27,10 +27,11 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "every 6 hours" }
 +++
 **the-psycho** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (82.8 %), with HTML+EEX, [JavaScript](@/glossary/javascript.md) and [CSS](@/glossary/css.md).
 
-The [repository](@/glossary/repository.md) was created in January 2025; its latest [commit](@/glossary/commit.md) is from 4 February 2026. It reads “feat(aiad): inject AIAD v1.0.0 infrastructure”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created on 25 January 2025; its latest [commit](@/glossary/commit.md) is from 4 February 2026. It reads “feat(aiad): inject AIAD v1.0.0 infrastructure”. That places it among the projects active in the last 12 months.
 
 Its source is on [GitLab](https://gitlab.com/korczis/the-psycho).
 

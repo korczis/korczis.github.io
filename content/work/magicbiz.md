@@ -13,7 +13,7 @@ tags = ["Tools"]
 repo = "magicbiz"
 seo_title = "magicbiz: Tools, 2015 · Tomas Korcak"
 og_title = "magicbiz: A Decentralized Autonomous Organization Proof of Concept (2015)"
-og_description = "Tools, 2015, archive. Source on GitHub and GitLab."
+og_description = "magicbiz: Tools, 2015, archive. Source on GitHub and GitLab."
 og_image = "og/work-magicbiz.png"
 schema = "project"
 keywords = ["magicbiz", "Tools", "2015", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,10 +30,10 @@ tone = "night"
 +++
 **magicbiz** is a project in [Tools](@/projects/tools.md).
 
-The [repository](@/glossary/repository.md) was created in June 2015; its latest [commit](@/glossary/commit.md) is from 17 June 2015. It reads “Update README.md”. With no commit in the last 48 months it is listed as archive: work from 2015, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 17 June 2015; its latest [commit](@/glossary/commit.md) is from 17 June 2015. It reads “Update README.md”. With no commit in the last 48 months it is listed as archive: work from 2015, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/magicbiz) and [GitLab](https://gitlab.com/korczis/magicbiz).
 
 Related work in [Tools](@/projects/tools.md): [wangsta](@/work/wangsta.md) (2015), [json2csv](@/work/json2csv.md) (2014–2015), [iCave](@/work/icave.md) (2014–2015) and [grache](@/work/grache.md) (2015).
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 24 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab. The pulse draws the latest 24 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

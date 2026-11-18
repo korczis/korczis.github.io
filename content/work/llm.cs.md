@@ -13,7 +13,7 @@ tags = ["Inženýrství AI", "Elixir"]
 repo = "llm"
 seo_title = "llm: Inženýrství AI, Elixir, 2026 · Tomáš Korčák"
 og_title = "llm: Inženýrství AI, Elixir"
-og_description = "Inženýrství AI, Elixir, 2026, aktivní za posledních 12 měsíců. Zdrojový kód: GitLab."
+og_description = "llm: Inženýrství AI, Elixir, 2026, aktivní za posledních 12 měsíců. Zdrojový kód: GitLab."
 og_image = "og/cs-work-llm.png"
 schema = "project"
 keywords = ["llm", "Inženýrství AI", "Elixir", "AI", "chatgpt", "claude", "claude-code", "gemini", "2026", "GitLab", "Tomáš Korčák", "korczis"]
@@ -27,6 +27,7 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "každých 6 hodin" }
 +++
 **llm** je projekt z kategorie [Inženýrství AI](@/projects/ai.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (100 %).
 

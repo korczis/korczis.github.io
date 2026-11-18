@@ -13,7 +13,7 @@ tags = ["Nástroje", "Elixir", "HTML+EEX", "JavaScript"]
 repo = "the-psycho"
 seo_title = "the-psycho: Nástroje, Elixir, 2025–2026 · Tomáš Korčák"
 og_title = "the-psycho: Nástroje, Elixir"
-og_description = "Nástroje, Elixir, HTML+EEX a JavaScript, 2025–2026, aktivní za posledních 12 měsíců. Zdrojový kód: GitLab."
+og_description = "the-psycho: Nástroje, Elixir, HTML+EEX a JavaScript, 2025–2026, aktivní za posledních 12 měsíců. Zdrojový kód: GitLab."
 og_image = "og/cs-work-the-psycho.png"
 schema = "project"
 keywords = ["the-psycho", "Nástroje", "Elixir", "HTML+EEX", "JavaScript", "2025–2026", "GitLab", "Tomáš Korčák", "korczis"]
@@ -27,6 +27,7 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "každých 6 hodin" }
 +++
 **the-psycho** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (82,8 %), dále HTML+EEX, [JavaScript](@/glossary/javascript.cs.md) a [CSS](@/glossary/css.cs.md).
 

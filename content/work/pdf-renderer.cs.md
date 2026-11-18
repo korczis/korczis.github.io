@@ -13,7 +13,7 @@ tags = ["Nástroje", "Python", "Dockerfile", "Makefile"]
 repo = "pdf_renderer"
 seo_title = "pdf_renderer: Nástroje, Python, 2024 · Tomáš Korčák"
 og_title = "pdf_renderer: Nástroje, Python"
-og_description = "Nástroje, Python, Dockerfile a Makefile, 2024, aktivní za posledních 48 měsíců. Zdrojový kód: GitLab."
+og_description = "pdf_renderer: Nástroje, Python, Dockerfile a Makefile, 2024, aktivní za posledních 48 měsíců. Zdrojový kód: GitLab."
 og_image = "og/cs-work-pdf-renderer.png"
 schema = "project"
 keywords = ["pdf_renderer", "Nástroje", "Python", "Dockerfile", "Makefile", "2024", "GitLab", "Tomáš Korčák", "korczis"]
@@ -27,6 +27,7 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "každých 6 hodin" }
 +++
 **pdf\_renderer** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [Python](@/glossary/python.cs.md) (94,2 %), dále [Dockerfile](@/glossary/dockerfile.cs.md) a Makefile.
 

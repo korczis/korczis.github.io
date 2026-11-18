@@ -13,7 +13,7 @@ tags = ["Learning and experiments", "Haskell"]
 repo = "skull-haskell"
 seo_title = "skull-haskell: Learning and experiments, 2014 · Tomas Korcak"
 og_title = "skull-haskell: Learning and experiments in Haskell (2014)"
-og_description = "Learning and experiments in Haskell, 2014, archive. Source on GitHub and GitLab."
+og_description = "skull-haskell: Learning and experiments in Haskell, 2014, archive. Source on GitHub and GitLab."
 og_image = "og/work-skull-haskell.png"
 schema = "project"
 keywords = ["skull-haskell", "Learning and experiments", "Haskell", "2014", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **skull-haskell** is a project in [Learning and experiments](@/projects/learning.md). Its code is written mainly in [Haskell](@/glossary/haskell.md) (100 %).
 
-The [repository](@/glossary/repository.md) was created in July 2014; its latest [commit](@/glossary/commit.md) is from 3 August 2014. It reads “Update README.md”. With no commit in the last 48 months it is listed as archive: work from 2014, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 22 July 2014; its latest [commit](@/glossary/commit.md) is from 3 August 2014. It reads “Update README.md”. With no commit in the last 48 months it is listed as archive: work from 2014, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/skull-haskell) and [GitLab](https://gitlab.com/korczis/skull-haskell).
 

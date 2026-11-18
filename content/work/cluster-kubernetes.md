@@ -13,7 +13,7 @@ tags = ["Systems and infrastructure", "Shell", "Smarty"]
 repo = "cluster-kubernetes"
 seo_title = "cluster-kubernetes: Kubernetes Cluster, 2017–2018 · Tomas Korcak"
 og_title = "cluster-kubernetes: Kubernetes Cluster (2017–2018)"
-og_description = "Systems and infrastructure in Shell and Smarty, 2017–2018, archive. Source on GitHub and GitLab. 1 star."
+og_description = "cluster-kubernetes: Systems and infrastructure in Shell and Smarty, 2017–2018, archive. Source on GitHub and GitLab. 1 star."
 og_image = "og/work-cluster-kubernetes.png"
 schema = "project"
 keywords = ["cluster-kubernetes", "Systems and infrastructure", "Shell", "Smarty", "kubernetes", "2017–2018", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **cluster-kubernetes** is a project in [Systems and infrastructure](@/projects/systems.md). Its code is written mainly in [Shell](@/glossary/shell.md) (69.8 %), with Smarty.
 
-The [repository](@/glossary/repository.md) was created in March 2017; its latest [commit](@/glossary/commit.md) is from 30 January 2018. It reads “Add postgresql”. With no commit in the last 48 months it is listed as archive: work from 2017–2018, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 14 March 2017; its latest [commit](@/glossary/commit.md) is from 30 January 2018. It reads “Add postgresql”. With no commit in the last 48 months it is listed as archive: work from 2017–2018, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/cluster-kubernetes) and [GitLab](https://gitlab.com/korczis/cluster-kubernetes).
 

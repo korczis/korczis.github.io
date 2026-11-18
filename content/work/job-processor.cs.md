@@ -13,7 +13,7 @@ tags = ["Nástroje", "Elixir"]
 repo = "job-processor"
 seo_title = "job-processor: Nástroje, Elixir, 2024 · Tomáš Korčák"
 og_title = "job-processor: Nástroje, Elixir"
-og_description = "Nástroje, Elixir, 2024, aktivní za posledních 48 měsíců. Zdrojový kód: GitLab."
+og_description = "job-processor: Nástroje, Elixir, 2024, aktivní za posledních 48 měsíců. Zdrojový kód: GitLab."
 og_image = "og/cs-work-job-processor.png"
 schema = "project"
 keywords = ["job-processor", "Nástroje", "Elixir", "2024", "GitLab", "Tomáš Korčák", "korczis"]
@@ -27,6 +27,7 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "každých 6 hodin" }
 +++
 **job-processor** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (100 %).
 

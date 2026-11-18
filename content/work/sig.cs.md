@@ -13,7 +13,7 @@ tags = ["Inženýrství AI", "Elixir", "HTML+EEX", "Shell"]
 repo = "sig"
 seo_title = "sig: Inženýrství AI, Elixir, 2025–2026 · Tomáš Korčák"
 og_title = "sig: Inženýrství AI, Elixir"
-og_description = "Inženýrství AI, Elixir, HTML+EEX a Shell, 2025–2026, aktivní za posledních 12 měsíců. Zdrojový kód: GitLab."
+og_description = "sig: Inženýrství AI, Elixir, HTML+EEX a Shell, 2025–2026, aktivní za posledních 12 měsíců. Zdrojový kód: GitLab."
 og_image = "og/cs-work-sig.png"
 schema = "project"
 keywords = ["sig", "Inženýrství AI", "Elixir", "HTML+EEX", "Shell", "AI", "Knowledge representation and reasoning", "LLMs", "cognitive-science", "multi-agent-systems", "2025–2026", "GitLab", "Tomáš Korčák", "korczis"]
@@ -27,6 +27,7 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "každých 6 hodin" }
 +++
 **sig** je projekt z kategorie [Inženýrství AI](@/projects/ai.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (95,6 %), dále HTML+EEX, [Shell](@/glossary/shell.cs.md) a [TypeScript](@/glossary/typescript.cs.md).
 

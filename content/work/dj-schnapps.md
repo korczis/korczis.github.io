@@ -13,7 +13,7 @@ tags = ["Media and art", "Elixir", "CSS", "JavaScript"]
 repo = "dj-schnapps"
 seo_title = "dj-schnapps: Dj Schnapps, 2019 · Tomas Korcak"
 og_title = "dj-schnapps: Dj Schnapps (2019)"
-og_description = "Media and art in Elixir, CSS and JavaScript, 2019, archive. Source on GitHub and GitLab."
+og_description = "dj-schnapps: Media and art in Elixir, CSS and JavaScript, 2019, archive. Source on GitHub and GitLab."
 og_image = "og/work-dj-schnapps.png"
 schema = "project"
 keywords = ["dj-schnapps", "Media and art", "Elixir", "CSS", "JavaScript", "2019", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **dj-schnapps** is a project in [Media and art](@/projects/media.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (59.9 %), with [CSS](@/glossary/css.md), [JavaScript](@/glossary/javascript.md) and M4.
 
-The [repository](@/glossary/repository.md) was created in October 2019; its latest [commit](@/glossary/commit.md) is from 26 November 2019. It reads “First example project (Ableton Live)”. With no commit in the last 48 months it is listed as archive: work from 2019, kept for the record and dated as measured.
+The [repository](@/glossary/repository.md) was created on 26 October 2019; its latest [commit](@/glossary/commit.md) is from 26 November 2019. It reads “First example project (Ableton Live)”. With no commit in the last 48 months it is listed as archive: work from 2019, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/dj-schnapps) and [GitLab](https://gitlab.com/korczis/dj-schnapps).
 

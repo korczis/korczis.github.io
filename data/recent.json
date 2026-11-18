@@ -1,6 +1,6 @@
 {
  "schema": "korczis-hub-recent/v2",
- "generated_at": "2026-11-18T02:53:04Z",
+ "generated_at": "2026-11-18T04:00:59Z",
  "window_days": 1461,
  "periods": [
   {
@@ -18,8 +18,214 @@
  ],
  "archive": 162,
  "rule": "every original repository of data/index.json; a repository is recent when its default branch has a commit in the window, archive otherwise; host activity dates are ignored",
- "asked": 1,
+ "asked": 5,
  "repos": [
+  {
+   "name": "oscilla",
+   "period": 12,
+   "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+   "category": "science",
+   "language": "JavaScript",
+   "created_at": "2026-10-01T21:05:33Z",
+   "pushed_at": "2026-11-18T03:43:55Z",
+   "last_commit": "2026-11-18T03:42:03Z",
+   "last_message": "fix(ui): drobečková navigace z registru bez opakovaného názvu, stejná horní mezera po vstupu na stránku (#598)",
+   "commits": [
+    {
+     "at": "2026-11-18T03:42:03Z",
+     "message": "fix(ui): drobečková navigace z registru bez opakovaného názvu, stejná horní mezera po vstupu na stránku (#598)",
+     "url": "https://github.com/korczis/oscilla/commit/d4bd1ae7946d3c58bf7e3c4fe777aec2f624b893"
+    },
+    {
+     "at": "2026-11-18T02:10:14Z",
+     "message": "Merge branch 'main' into fix/one-page-frame",
+     "url": "https://github.com/korczis/oscilla/commit/d10058bc74d885e92c232e846a8f17e6fcafd807"
+    },
+    {
+     "at": "2026-11-18T01:26:10Z",
+     "message": "chore(plan): audit-and-stamp vlak A (Q111 + 4 orazítkované, 20 otevřených s mezerou) (#599)",
+     "url": "https://github.com/korczis/oscilla/commit/8e087873968df0438165b474684d6dee7ac7e5ff"
+    },
+    {
+     "at": "2026-11-18T00:27:12Z",
+     "message": "chore(plan): audit-and-stamp train A (Q111 + 4 stamped, 20 left open with gaps)",
+     "url": "https://github.com/korczis/oscilla/commit/9703d0d79a60b4bdd31b94f62de8d4ba92764960"
+    },
+    {
+     "at": "2026-11-17T23:45:16Z",
+     "message": "test(visual): re-accept the linux STUDIO phone reference for the 7 px top gap",
+     "url": "https://github.com/korczis/oscilla/commit/005ab75eaec0d3aa3da1b6f57fafd1256b9df734"
+    },
+    {
+     "at": "2026-11-17T23:31:09Z",
+     "message": "fix(ui): one bound scroll-pt per workspace on <main>, the Synth keeps its own",
+     "url": "https://github.com/korczis/oscilla/commit/21ae78f116af3f94fcb24650bef644a5c7344898"
+    },
+    {
+     "at": "2026-11-17T22:49:51Z",
+     "message": "test(visual): re-accept the MEASURE references for the 7 px top gap",
+     "url": "https://github.com/korczis/oscilla/commit/b02c24b5cd00449356dd1679fed3926280f7cac1"
+    },
+    {
+     "at": "2026-11-17T21:44:37Z",
+     "message": "chore(plan): Q110, the owner's decisions on the page frame, the backlog triage and stale worktrees",
+     "url": "https://github.com/korczis/oscilla/commit/958ff93d488a7939535f05929ba00a83a10b4295"
+    },
+    {
+     "at": "2026-11-17T21:39:51Z",
+     "message": "fix(ui): breadcrumb from the registry without a repeated name, page top gap kept on entry",
+     "url": "https://github.com/korczis/oscilla/commit/ae96559e7f1f50e557bc749429037863474e84de"
+    },
+    {
+     "at": "2026-11-17T20:18:13Z",
+     "message": "chore(release): záznam v3.41.3 (#596)",
+     "url": "https://github.com/korczis/oscilla/commit/4682eea40739a7b37a7be04d3d19cd7be0dd5226"
+    },
+    {
+     "at": "2026-11-17T19:53:24Z",
+     "message": "chore(release): record v3.41.3",
+     "url": "https://github.com/korczis/oscilla/commit/21359a7ba3c813c180f9eff774ed5c85cddc792c"
+    },
+    {
+     "at": "2026-11-17T19:39:08Z",
+     "message": "chore(release): v3.41.3 (#595)",
+     "url": "https://github.com/korczis/oscilla/commit/fc949955a941227e2158f9bbce771a18833c1782"
+    },
+    {
+     "at": "2026-11-17T17:17:14Z",
+     "message": "chore(release): v3.41.3",
+     "url": "https://github.com/korczis/oscilla/commit/339ddc340ad7a6140b745e6b368b54248633296b"
+    },
+    {
+     "at": "2026-11-17T17:12:35Z",
+     "message": "fix(ui): řízené měření v Měření česky nad anglickými daty (U115, pass 7a) (#593)",
+     "url": "https://github.com/korczis/oscilla/commit/0b21624551d66d6b7b8f7ee2afd2edeb3c27d91d"
+    },
+    {
+     "at": "2026-11-17T14:59:39Z",
+     "message": "Merge branch 'main' into fix/czech-pass-7",
+     "url": "https://github.com/korczis/oscilla/commit/a805af99c3470aed294389075cdaad4673a590a0"
+    },
+    {
+     "at": "2026-11-17T13:27:00Z",
+     "message": "chore(review): the #593 verdict (Czech pass 7a, U115), merge under the legs condition",
+     "url": "https://github.com/korczis/oscilla/commit/207fab91cee2da92a66b9e121953edf1e7041070"
+    },
+    {
+     "at": "2026-11-17T12:59:58Z",
+     "message": "chore(plan): E077 nejen na webkitu, přetekl i firefox/http (#594)",
+     "url": "https://github.com/korczis/oscilla/commit/9af695a3b144d060e75006755778f0a9d6c387fa"
+    },
+    {
+     "at": "2026-11-17T12:54:54Z",
+     "message": "chore(plan): E077 is not webkit-only, firefox/http overran too (#593, oscilla-c3)",
+     "url": "https://github.com/korczis/oscilla/commit/1405b9542e6799ca4f7013d019b8a7dc0af4f602"
+    },
+    {
+     "at": "2026-11-17T11:47:03Z",
+     "message": "test(visual): MEASURE references re-accepted for the Czech guided flow (U115, pass 7a)",
+     "url": "https://github.com/korczis/oscilla/commit/b7e36ab5d6a9180796761cb790c10c8cc3264288"
+    },
+    {
+     "at": "2026-11-17T11:42:36Z",
+     "message": "fix(ui): the Measure guided flow speaks Czech over English data (U115, pass 7a)",
+     "url": "https://github.com/korczis/oscilla/commit/c25d0ed4a88ca201f3ea68edf3120de96cda3b90"
+    },
+    {
+     "at": "2026-11-17T10:51:45Z",
+     "message": "chore(release): záznam v3.41.2; U114 hotové (#592)",
+     "url": "https://github.com/korczis/oscilla/commit/5c697d2dfab7184a5f987e157e84108b1714c37a"
+    },
+    {
+     "at": "2026-11-17T10:47:25Z",
+     "message": "chore(release): record v3.41.2; U114 done",
+     "url": "https://github.com/korczis/oscilla/commit/c74a8ad6419e5e739b2d6ae7ffe127bf4bf05e26"
+    },
+    {
+     "at": "2026-11-17T10:36:59Z",
+     "message": "chore(release): v3.41.2 (#591)",
+     "url": "https://github.com/korczis/oscilla/commit/685db9599c9ed669fa296131627b94a1c7d058e2"
+    },
+    {
+     "at": "2026-11-17T09:36:23Z",
+     "message": "chore(release): v3.41.2",
+     "url": "https://github.com/korczis/oscilla/commit/494d7b0db130b0b3f2ba628dc56a0e792cb9af86"
+    },
+    {
+     "at": "2026-11-17T09:28:22Z",
+     "message": "fix(ui): stavy kalibrace česky nad anglickými daty, no-fake-science v3 (U114 b) (#590)",
+     "url": "https://github.com/korczis/oscilla/commit/5af668dffa02f59633065e72256c2e52563910f3"
+    },
+    {
+     "at": "2026-11-17T08:03:03Z",
+     "message": "chore(review): the #590 verdict (Czech pass 6b, U114 b), merge under the legs condition",
+     "url": "https://github.com/korczis/oscilla/commit/67688cecc41e638f21e45e6b9baea5107d1a2b98"
+    },
+    {
+     "at": "2026-11-17T07:15:02Z",
+     "message": "fix(ui): calibrationShown replaces phrases longest first, never inside a word (C3-590-1)",
+     "url": "https://github.com/korczis/oscilla/commit/58aadf2386450ac399d4729c1559539a8cd8fbf2"
+    },
+    {
+     "at": "2026-11-17T07:06:51Z",
+     "message": "test(visual): MEASURE references re-accepted for the Czech calibration display (U114 b)",
+     "url": "https://github.com/korczis/oscilla/commit/e1a718499235c85cda2a57e94c5bc5c88a788f75"
+    },
+    {
+     "at": "2026-11-17T06:59:54Z",
+     "message": "test(v3-ui): calibration-czech opens the older record when older-claim imported it first",
+     "url": "https://github.com/korczis/oscilla/commit/9fc2c5eac93a791413ae227b106d76766ae3cfc2"
+    },
+    {
+     "at": "2026-11-17T06:51:50Z",
+     "message": "fix(ui): the calibration states are shown in Czech over English data (U114 b)",
+     "url": "https://github.com/korczis/oscilla/commit/9059cde05fe8cee87bba85318ea380d0e732b24c"
+    }
+   ],
+   "languages": [
+    {
+     "name": "JavaScript",
+     "share": 96.9
+    },
+    {
+     "name": "HTML",
+     "share": 1.9
+    },
+    {
+     "name": "CSS",
+     "share": 1.1
+    },
+    {
+     "name": "Swift",
+     "share": 0
+    },
+    {
+     "name": "Shell",
+     "share": 0
+    }
+   ],
+   "readme": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+   "readme_shared": false,
+   "description_shared": false,
+   "topics": [
+    "acoustics",
+    "audio",
+    "dsp",
+    "education",
+    "javascript",
+    "signal-processing",
+    "spectrogram",
+    "synthesizer",
+    "web-audio"
+   ],
+   "hosts": {
+    "github": "https://github.com/korczis/oscilla"
+   },
+   "site": "https://korczis.github.io/oscilla/",
+   "curated": true,
+   "stars": 1,
+   "supervised": true
+  },
   {
    "name": "openttd-prismatic-bridge",
    "period": 12,
@@ -205,6 +411,8 @@
     }
    ],
    "readme": "REST/Swagger front door onto a running OpenTTD dedicated server, so prismatic-platform (or anything else) can read game state and drive company AIs without speaking OpenTTD's binary Admin Network protocol itself.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/openttd-prismatic-bridge"
@@ -215,221 +423,36 @@
    "supervised": false
   },
   {
-   "name": "korczis.github.io",
-   "period": 12,
-   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-   "category": "web",
-   "language": "JavaScript",
-   "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-18T02:43:55Z",
-   "last_commit": "2026-11-18T02:49:49Z",
-   "last_message": "chore(merge): integrate #28, /hire/, the CV from LinkedIn, Offer and FAQPage JSON-LD, llms.txt hire section",
-   "commits": [
-    {
-     "at": "2026-11-18T02:49:49Z",
-     "message": "chore(merge): integrate #28, /hire/, the CV from LinkedIn, Offer and FAQPage JSON-LD, llms.txt hire section",
-     "url": "https://github.com/korczis/korczis.github.io/commit/e7d62bb86bd2a054df6a7d4af75abdd8d1f82012"
-    },
-    {
-     "at": "2026-11-18T02:23:58Z",
-     "message": "fix(hire): the rate row is one dt/dd group, as axe definition-list requires",
-     "url": "https://github.com/korczis/korczis.github.io/commit/91bab99e31803d0c1417472fb15a323c8825919e"
-    },
-    {
-     "at": "2026-11-18T02:02:03Z",
-     "message": "fix(site-json): name the README consumer by its ADR, not by a typed login",
-     "url": "https://github.com/korczis/korczis.github.io/commit/49d83e572d973ab2008fd5b0b116901d264effd0"
-    },
-    {
-     "at": "2026-11-18T01:49:26Z",
-     "message": "feat(site-json): availability for hire, profile links and work history in site.json",
-     "url": "https://github.com/korczis/korczis.github.io/commit/ef551d7cf41d7bb6c945a78e3c09efa769164b21"
-    },
-    {
-     "at": "2026-11-18T01:45:47Z",
-     "message": "feat(hire): /hire/ page, CV from LinkedIn, Offer and FAQPage JSON-LD, llms.txt hire section",
-     "url": "https://github.com/korczis/korczis.github.io/commit/bfb9c731feb24760cdb7c352e57d2fdf26313c35"
-    },
-    {
-     "at": "2026-11-18T01:43:46Z",
-     "message": "docs(adr): ADR 0007, availability for hire, the CV from LinkedIn, AI readers without hidden instructions",
-     "url": "https://github.com/korczis/korczis.github.io/commit/4a5746054087e72bd3082591cac324e28c3307df"
-    },
-    {
-     "at": "2026-11-17T21:20:07Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/0d36db8df17d0b057c2ff2edcd4e9f5573107f4e"
-    },
-    {
-     "at": "2026-11-17T12:21:11Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/942533a7bbcc0af710a24100c32d19d077976329"
-    },
-    {
-     "at": "2026-11-17T03:10:07Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/b4cb9575a8117ad6763008c2afb96fa91874a00d"
-    },
-    {
-     "at": "2026-11-16T21:49:11Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/42fe9019a34c2a48ac866d2ee6103837e15dab3e"
-    },
-    {
-     "at": "2026-11-16T21:13:12Z",
-     "message": "chore(merge): integrate #27, the refresh judges the master tip and backs off after a failed scheduled run",
-     "url": "https://github.com/korczis/korczis.github.io/commit/63b0ab6a38edf7995547925077437111240d5d58"
-    },
-    {
-     "at": "2026-11-16T20:43:16Z",
-     "message": "docs(refresh): the cadence is REFRESH_HOURS, not the cron",
-     "url": "https://github.com/korczis/korczis.github.io/commit/d579ae9bc83d5a3d0ad2cdeeef815a0dcdffc32c"
-    },
-    {
-     "at": "2026-11-16T20:42:58Z",
-     "message": "fix(refresh): judge the master tip, back off after a failed scheduled run",
-     "url": "https://github.com/korczis/korczis.github.io/commit/fd7c245d9de6e8546a103aeb6ceb963947e8bf20"
-    },
-    {
-     "at": "2026-11-16T20:05:02Z",
-     "message": "chore(merge): integrate #26, the refresh survives dropped schedules: hourly cron, measures only when due",
-     "url": "https://github.com/korczis/korczis.github.io/commit/4f9cb23f333559a255ffffa2fcffaf9312551798"
-    },
-    {
-     "at": "2026-11-16T19:45:56Z",
-     "message": "fix(refresh): the pages describe REFRESH_HOURS, not the hourly cron",
-     "url": "https://github.com/korczis/korczis.github.io/commit/77984a918437fdf2a33a4521123a310603c3f649"
-    },
-    {
-     "at": "2026-11-16T19:42:52Z",
-     "message": "fix(refresh): survive dropped schedules, hourly cron that measures only when due",
-     "url": "https://github.com/korczis/korczis.github.io/commit/6994b37419d3cfaf3deb44e53cd72a633ebc1798"
-    },
-    {
-     "at": "2026-11-16T19:35:37Z",
-     "message": "chore(merge): integrate #25, CI runs once per pull request, not once more for its branch push",
-     "url": "https://github.com/korczis/korczis.github.io/commit/79c55dec480f0901900b68f6bc4b15faa7064907"
-    },
-    {
-     "at": "2026-11-16T19:15:53Z",
-     "message": "fix(ci): run once per pull request, not once more for its branch push",
-     "url": "https://github.com/korczis/korczis.github.io/commit/291dac08a749c3e169a1842420e5b4ab67178030"
-    },
-    {
-     "at": "2026-11-16T06:58:11Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/f87e5a88cfde9f6b3658df62e439d7c837a883eb"
-    },
-    {
-     "at": "2026-11-16T06:30:32Z",
-     "message": "chore(merge): integrate #24, API discovery from every page, the API catalogue and palette tiles",
-     "url": "https://github.com/korczis/korczis.github.io/commit/84d084e9b11fcf913c22cc0c1d15bb9721bfa7ef"
-    },
-    {
-     "at": "2026-11-16T06:15:08Z",
-     "message": "fix(audit): a well-known URI is a machine resource, not a page in a language",
-     "url": "https://github.com/korczis/korczis.github.io/commit/f1c4462ec5b247699ddc92aae3a393cf395ff01b"
-    },
-    {
-     "at": "2026-11-16T05:49:44Z",
-     "message": "feat(interfaces): API discovery from every page, the API catalogue and palette tiles",
-     "url": "https://github.com/korczis/korczis.github.io/commit/db8c639a226eccad396ebe08a6dc64e83d6c70e3"
-    },
-    {
-     "at": "2026-11-16T05:12:23Z",
-     "message": "chore(merge): integrate #23, the topbar interfaces menu and /interfaces/ for the .ai layer, MCP and OpenAPI",
-     "url": "https://github.com/korczis/korczis.github.io/commit/93ef5fc12983216cdbc761f060736c0c9b798c34"
-    },
-    {
-     "at": "2026-11-16T04:57:42Z",
-     "message": "feat(interfaces): topbar interfaces menu and /interfaces/ for the .ai layer, MCP and OpenAPI",
-     "url": "https://github.com/korczis/korczis.github.io/commit/747e57c388e0c1fa437b4766c4d6003224933c45"
-    },
-    {
-     "at": "2026-11-16T03:58:29Z",
-     "message": "chore(merge): integrate #22, a spent GitLab budget keeps each project, never drops the listing",
-     "url": "https://github.com/korczis/korczis.github.io/commit/9a0e166f7d16a82292647df59fc697147929d88c"
-    },
-    {
-     "at": "2026-11-16T03:34:59Z",
-     "message": "fix(data): a spent GitLab budget keeps each project, never drops the listing",
-     "url": "https://github.com/korczis/korczis.github.io/commit/f853f4fcbe711f94f324bc4782a18adea12292eb"
-    },
-    {
-     "at": "2026-11-16T02:26:35Z",
-     "message": "docs(ai): glab auth token prints help, so store GITLAB_TOKEN from the token",
-     "url": "https://github.com/korczis/korczis.github.io/commit/3c97ad9e84f3707af1752db91c4d83a52cafcb9c"
-    },
-    {
-     "at": "2026-11-16T02:21:08Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/6851f10cc9073a2ba38b19c661f9f7ecbe7dd12d"
-    },
-    {
-     "at": "2026-11-16T02:00:39Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/79eebb75deaf88da3bb318488bd3c9a64fdaeb2b"
-    },
-    {
-     "at": "2026-11-16T01:16:38Z",
-     "message": "chore(merge): integrate #21, Majordomus supervision inferred for every repository on every forge",
-     "url": "https://github.com/korczis/korczis.github.io/commit/066fbf823eca71f37933ebab32a8b78e6936d9d0"
-    }
-   ],
-   "languages": [
-    {
-     "name": "JavaScript",
-     "share": 68.7
-    },
-    {
-     "name": "HTML",
-     "share": 28.4
-    },
-    {
-     "name": "CSS",
-     "share": 1.6
-    },
-    {
-     "name": "Shell",
-     "share": 1.2
-    }
-   ],
-   "readme": "The personal hub of Tomas Korcak (korczis). It covers who I am, the projects I build with their live sites, the stack behind them, and Majordomus, which supervises the work.",
-   "topics": [
-    "accessibility",
-    "ai-agents",
-    "alpinejs",
-    "chartjs",
-    "cytoscape",
-    "echarts",
-    "flowbite",
-    "github-pages",
-    "majordomus",
-    "p5js",
-    "personal-website",
-    "portfolio",
-    "tailwindcss",
-    "zola"
-   ],
-   "hosts": {
-    "github": "https://github.com/korczis/korczis.github.io"
-   },
-   "site": null,
-   "curated": false,
-   "stars": 0,
-   "supervised": true
-  },
-  {
    "name": "majordomus-reel",
    "period": 12,
    "description": "A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound",
    "category": "media",
    "language": "JavaScript",
    "created_at": "2026-10-23T00:51:59Z",
-   "pushed_at": "2026-11-18T02:26:20Z",
-   "last_commit": "2026-11-18T02:24:59Z",
-   "last_message": "fix(quality): prove the recorded iteration read-only at finish",
+   "pushed_at": "2026-11-18T03:20:13Z",
+   "last_commit": "2026-11-18T03:09:16Z",
+   "last_message": "docs(rules): the site is on Tailwind and Flowbite now; name its surfaces and the class-list source",
    "commits": [
+    {
+     "at": "2026-11-18T03:09:16Z",
+     "message": "docs(rules): the site is on Tailwind and Flowbite now; name its surfaces and the class-list source",
+     "url": "https://github.com/korczis/majordomus-reel/commit/d6ec488baab7f04c0c0de76cd7897cfe108dbcd9"
+    },
+    {
+     "at": "2026-11-18T03:08:49Z",
+     "message": "docs(rules): name this repository's UI surfaces, debt and exemptions",
+     "url": "https://github.com/korczis/majordomus-reel/commit/aa37bd9d56c2f03a7853c578dac6a0237edb359a"
+    },
+    {
+     "at": "2026-11-18T03:08:49Z",
+     "message": "docs(rules): every user interface is built on Flowbite Pro",
+     "url": "https://github.com/korczis/majordomus-reel/commit/bf39b3defc43c808e55737dfc7a4305adc068cd6"
+    },
+    {
+     "at": "2026-11-18T02:58:21Z",
+     "message": "fix(facts): find prismatic-majordomus beside the primary checkout from a linked worktree",
+     "url": "https://github.com/korczis/majordomus-reel/commit/6b9e9a2b4c853da4df592d1758068c21a58742cb"
+    },
     {
      "at": "2026-11-18T02:24:59Z",
      "message": "fix(quality): prove the recorded iteration read-only at finish",
@@ -559,36 +582,16 @@
      "at": "2026-10-23T00:45:09Z",
      "message": "feat(site): show the Shorts cut under the full reel",
      "url": "https://github.com/korczis/majordomus-reel/commit/0b2239171e873f539aa8e06ac96ca373d3ee4dd7"
-    },
-    {
-     "at": "2026-10-23T00:43:27Z",
-     "message": "docs(readme): the layout gate, PREVIEW=ends and acts; v5 posters",
-     "url": "https://github.com/korczis/majordomus-reel/commit/92af90fc6d85809d70a89676ce82373c35f21b1d"
-    },
-    {
-     "at": "2026-10-23T00:43:12Z",
-     "message": "feat(reel): v5.1, thirty-one chapters in the site's own type and colour",
-     "url": "https://github.com/korczis/majordomus-reel/commit/233508b5ec1ad6c591e52b9d5b958fcd8315d76f"
-    },
-    {
-     "at": "2026-10-23T00:42:47Z",
-     "message": "feat(render): layout gate, chapters, acts and subset cuts",
-     "url": "https://github.com/korczis/majordomus-reel/commit/8fc22c0b5646d2ccb6bdaf06b6580898185c0560"
-    },
-    {
-     "at": "2026-10-23T00:40:22Z",
-     "message": "feat(site): verify the published site",
-     "url": "https://github.com/korczis/majordomus-reel/commit/34c0bdec011a46b2725717bf70eca7f7e6b10b4e"
     }
    ],
    "languages": [
     {
      "name": "JavaScript",
-     "share": 60.7
+     "share": 66.2
     },
     {
      "name": "HTML",
-     "share": 37.4
+     "share": 32.1
     },
     {
      "name": "Shell",
@@ -596,7 +599,7 @@
     },
     {
      "name": "CSS",
-     "share": 0.6
+     "share": 0.5
     },
     {
      "name": "Python",
@@ -604,6 +607,8 @@
     }
    ],
    "readme": "A vertical promo video for Majordomus, rendered from code: narration, every frame, the music and the sound effects. Nothing is filmed, licensed or generated by a video model.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [
     "ai-agents",
     "ffmpeg",
@@ -621,207 +626,210 @@
    "supervised": true
   },
   {
-   "name": "oscilla",
+   "name": "korczis.github.io",
    "period": 12,
-   "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-   "category": "science",
+   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+   "category": "web",
    "language": "JavaScript",
-   "created_at": "2026-10-01T21:05:33Z",
-   "pushed_at": "2026-11-18T02:23:38Z",
-   "last_commit": "2026-11-18T01:26:10Z",
-   "last_message": "chore(plan): audit-and-stamp vlak A (Q111 + 4 orazítkované, 20 otevřených s mezerou) (#599)",
+   "created_at": "2024-12-24T16:48:15Z",
+   "pushed_at": "2026-11-18T03:35:28Z",
+   "last_commit": "2026-11-18T03:03:38Z",
+   "last_message": "chore(merge): integrate #29, wave 1: one positioning, /hire/ evidence, previews and machine files, sidebar skillset",
    "commits": [
     {
-     "at": "2026-11-18T01:26:10Z",
-     "message": "chore(plan): audit-and-stamp vlak A (Q111 + 4 orazítkované, 20 otevřených s mezerou) (#599)",
-     "url": "https://github.com/korczis/oscilla/commit/8e087873968df0438165b474684d6dee7ac7e5ff"
+     "at": "2026-11-18T03:03:38Z",
+     "message": "chore(merge): integrate #29, wave 1: one positioning, /hire/ evidence, previews and machine files, sidebar skillset",
+     "url": "https://github.com/korczis/korczis.github.io/commit/d3e494ba5c21f8b39d41fcd0aeccc5c6da8fcc14"
     },
     {
-     "at": "2026-11-18T00:27:12Z",
-     "message": "chore(plan): audit-and-stamp train A (Q111 + 4 stamped, 20 left open with gaps)",
-     "url": "https://github.com/korczis/oscilla/commit/9703d0d79a60b4bdd31b94f62de8d4ba92764960"
+     "at": "2026-11-18T02:58:52Z",
+     "message": "fix(hire): evidence links meet the 24 px target size (WCAG 2.5.8)",
+     "url": "https://github.com/korczis/korczis.github.io/commit/5860fa7a6661bcff1c9a1a1351e90901c0e44a75"
     },
     {
-     "at": "2026-11-17T20:18:13Z",
-     "message": "chore(release): záznam v3.41.3 (#596)",
-     "url": "https://github.com/korczis/oscilla/commit/4682eea40739a7b37a7be04d3d19cd7be0dd5226"
+     "at": "2026-11-18T02:49:49Z",
+     "message": "chore(merge): integrate #28, /hire/, the CV from LinkedIn, Offer and FAQPage JSON-LD, llms.txt hire section",
+     "url": "https://github.com/korczis/korczis.github.io/commit/e7d62bb86bd2a054df6a7d4af75abdd8d1f82012"
     },
     {
-     "at": "2026-11-17T19:53:24Z",
-     "message": "chore(release): record v3.41.3",
-     "url": "https://github.com/korczis/oscilla/commit/21359a7ba3c813c180f9eff774ed5c85cddc792c"
+     "at": "2026-11-18T02:49:23Z",
+     "message": "chore(merge): integrate w1c-previews-machine-files into wave 1",
+     "url": "https://github.com/korczis/korczis.github.io/commit/35a92d0bb6bd7e74eeca8ad7c40cfd1deade202e"
     },
     {
-     "at": "2026-11-17T19:39:08Z",
-     "message": "chore(release): v3.41.3 (#595)",
-     "url": "https://github.com/korczis/oscilla/commit/fc949955a941227e2158f9bbce771a18833c1782"
+     "at": "2026-11-18T02:49:22Z",
+     "message": "chore(merge): integrate w1a-hire-positioning into wave 1",
+     "url": "https://github.com/korczis/korczis.github.io/commit/11664e349be1a17e3d82aa313b5abf96f7474892"
     },
     {
-     "at": "2026-11-17T17:17:14Z",
-     "message": "chore(release): v3.41.3",
-     "url": "https://github.com/korczis/oscilla/commit/339ddc340ad7a6140b745e6b368b54248633296b"
+     "at": "2026-11-18T02:49:22Z",
+     "message": "chore(merge): integrate w1b-hire-evidence into wave 1",
+     "url": "https://github.com/korczis/korczis.github.io/commit/aefc1e89ff8c5336626a54c66eece4fa7562535b"
     },
     {
-     "at": "2026-11-17T17:12:35Z",
-     "message": "fix(ui): řízené měření v Měření česky nad anglickými daty (U115, pass 7a) (#593)",
-     "url": "https://github.com/korczis/oscilla/commit/0b21624551d66d6b7b8f7ee2afd2edeb3c27d91d"
+     "at": "2026-11-18T02:48:33Z",
+     "message": "chore(merge): integrate w1d-hire-governance into wave 1",
+     "url": "https://github.com/korczis/korczis.github.io/commit/7ee1a5994fd5c1c708bed972160f9c5176c6d768"
     },
     {
-     "at": "2026-11-17T14:59:39Z",
-     "message": "Merge branch 'main' into fix/czech-pass-7",
-     "url": "https://github.com/korczis/oscilla/commit/a805af99c3470aed294389075cdaad4673a590a0"
+     "at": "2026-11-18T02:40:53Z",
+     "message": "feat(resume): derived JSON Resume in every language, validated against 1.0.0",
+     "url": "https://github.com/korczis/korczis.github.io/commit/16562343a38f37c4a967f27187aa4052d045000c"
     },
     {
-     "at": "2026-11-17T13:27:00Z",
-     "message": "chore(review): the #593 verdict (Czech pass 7a, U115), merge under the legs condition",
-     "url": "https://github.com/korczis/oscilla/commit/207fab91cee2da92a66b9e121953edf1e7041070"
+     "at": "2026-11-18T02:39:47Z",
+     "message": "feat(llms): name, headline and /hire/ first; Hire leads, skills with evidence",
+     "url": "https://github.com/korczis/korczis.github.io/commit/fb1ba82d00481ab1fc01dd4dda2263369c0e203c"
     },
     {
-     "at": "2026-11-17T12:59:58Z",
-     "message": "chore(plan): E077 nejen na webkitu, přetekl i firefox/http (#594)",
-     "url": "https://github.com/korczis/oscilla/commit/9af695a3b144d060e75006755778f0a9d6c387fa"
+     "at": "2026-11-18T02:38:16Z",
+     "message": "feat(og): cards draw the page permalink, i18n pills, clip between words",
+     "url": "https://github.com/korczis/korczis.github.io/commit/b5e54ccb66e94f09ba9c2af486cbdf36c25742a2"
     },
     {
-     "at": "2026-11-17T12:54:54Z",
-     "message": "chore(plan): E077 is not webkit-only, firefox/http overran too (#593, oscilla-c3)",
-     "url": "https://github.com/korczis/oscilla/commit/1405b9542e6799ca4f7013d019b8a7dc0af4f602"
+     "at": "2026-11-18T02:36:54Z",
+     "message": "feat(seo): profile titles carry name and role, no typed numbers in previews",
+     "url": "https://github.com/korczis/korczis.github.io/commit/6e203d59a94b1f9be9da33d1e20893bff49bae47"
     },
     {
-     "at": "2026-11-17T11:47:03Z",
-     "message": "test(visual): MEASURE references re-accepted for the Czech guided flow (U115, pass 7a)",
-     "url": "https://github.com/korczis/oscilla/commit/b7e36ab5d6a9180796761cb790c10c8cc3264288"
+     "at": "2026-11-18T02:35:22Z",
+     "message": "feat(derive): shared permalink, width-aware word clipping and the role noun",
+     "url": "https://github.com/korczis/korczis.github.io/commit/abd3369c7b393517ea194e07dce607ec0aa6afcc"
     },
     {
-     "at": "2026-11-17T11:42:36Z",
-     "message": "fix(ui): the Measure guided flow speaks Czech over English data (U115, pass 7a)",
-     "url": "https://github.com/korczis/oscilla/commit/c25d0ed4a88ca201f3ea68edf3120de96cda3b90"
+     "at": "2026-11-18T02:34:45Z",
+     "message": "test(profile): gate the hire positioning and the first viewport",
+     "url": "https://github.com/korczis/korczis.github.io/commit/d6aa0bdc8ac8013bd73db541915cd3fb698ad32a"
     },
     {
-     "at": "2026-11-17T10:51:45Z",
-     "message": "chore(release): záznam v3.41.2; U114 hotové (#592)",
-     "url": "https://github.com/korczis/oscilla/commit/5c697d2dfab7184a5f987e157e84108b1714c37a"
+     "at": "2026-11-18T02:33:34Z",
+     "message": "fix(about): availability from cv.toml, the headline as the role line",
+     "url": "https://github.com/korczis/korczis.github.io/commit/91c11cf36be2e821c289e6dd91a3b8510c945a4a"
     },
     {
-     "at": "2026-11-17T10:47:25Z",
-     "message": "chore(release): record v3.41.2; U114 done",
-     "url": "https://github.com/korczis/oscilla/commit/c74a8ad6419e5e739b2d6ae7ffe127bf4bf05e26"
+     "at": "2026-11-18T02:32:34Z",
+     "message": "feat(shell): Hire me as the topbar's primary action on every page",
+     "url": "https://github.com/korczis/korczis.github.io/commit/24ad3ec31471ae57ffb2a2fdce74c4b2c183284d"
     },
     {
-     "at": "2026-11-17T10:36:59Z",
-     "message": "chore(release): v3.41.2 (#591)",
-     "url": "https://github.com/korczis/oscilla/commit/685db9599c9ed669fa296131627b94a1c7d058e2"
+     "at": "2026-11-18T02:31:39Z",
+     "message": "feat(home): lead with hiring, one positioning from cv.hire.headline",
+     "url": "https://github.com/korczis/korczis.github.io/commit/ba027b322ad2d75cfad6b20c0364c0d45bd8d0e2"
     },
     {
-     "at": "2026-11-17T09:36:23Z",
-     "message": "chore(release): v3.41.2",
-     "url": "https://github.com/korczis/oscilla/commit/494d7b0db130b0b3f2ba628dc56a0e792cb9af86"
+     "at": "2026-11-18T02:31:31Z",
+     "message": "feat(seo): gate structured data against the page and data/",
+     "url": "https://github.com/korczis/korczis.github.io/commit/ffadbbd33085be43bf2c52a080eeef38f1862816"
     },
     {
-     "at": "2026-11-17T09:28:22Z",
-     "message": "fix(ui): stavy kalibrace česky nad anglickými daty, no-fake-science v3 (U114 b) (#590)",
-     "url": "https://github.com/korczis/oscilla/commit/5af668dffa02f59633065e72256c2e52563910f3"
+     "at": "2026-11-18T02:29:51Z",
+     "message": "feat(hire): /hire/ as the evidence page",
+     "url": "https://github.com/korczis/korczis.github.io/commit/e7e0535a815e5604813511cbf9a750da9cccec75"
     },
     {
-     "at": "2026-11-17T08:03:03Z",
-     "message": "chore(review): the #590 verdict (Czech pass 6b, U114 b), merge under the legs condition",
-     "url": "https://github.com/korczis/oscilla/commit/67688cecc41e638f21e45e6b9baea5107d1a2b98"
+     "at": "2026-11-18T02:28:11Z",
+     "message": "feat(seo): structured data that states only what the page shows",
+     "url": "https://github.com/korczis/korczis.github.io/commit/a2ec7b857588e442603d7737337d4e38ff2f5852"
     },
     {
-     "at": "2026-11-17T07:15:02Z",
-     "message": "fix(ui): calibrationShown replaces phrases longest first, never inside a word (C3-590-1)",
-     "url": "https://github.com/korczis/oscilla/commit/58aadf2386450ac399d4729c1559539a8cd8fbf2"
+     "at": "2026-11-18T02:25:38Z",
+     "message": "chore(merge): bring in the /hire/ definition-list fix",
+     "url": "https://github.com/korczis/korczis.github.io/commit/0fbb279dacff7a3ab1e76c4edfeeb7a8ff5700d5"
     },
     {
-     "at": "2026-11-17T07:06:51Z",
-     "message": "test(visual): MEASURE references re-accepted for the Czech calibration display (U114 b)",
-     "url": "https://github.com/korczis/oscilla/commit/e1a718499235c85cda2a57e94c5bc5c88a788f75"
+     "at": "2026-11-18T02:23:58Z",
+     "message": "fix(hire): the rate row is one dt/dd group, as axe definition-list requires",
+     "url": "https://github.com/korczis/korczis.github.io/commit/91bab99e31803d0c1417472fb15a323c8825919e"
     },
     {
-     "at": "2026-11-17T06:59:54Z",
-     "message": "test(v3-ui): calibration-czech opens the older record when older-claim imported it first",
-     "url": "https://github.com/korczis/oscilla/commit/9fc2c5eac93a791413ae227b106d76766ae3cfc2"
+     "at": "2026-11-18T02:21:56Z",
+     "message": "feat(gates): register the profile and resume gates for project.hire-surfaces",
+     "url": "https://github.com/korczis/korczis.github.io/commit/06dc695bd5adfceba2dd93c5e6043ef258c94511"
     },
     {
-     "at": "2026-11-17T06:51:50Z",
-     "message": "fix(ui): the calibration states are shown in Czech over English data (U114 b)",
-     "url": "https://github.com/korczis/oscilla/commit/9059cde05fe8cee87bba85318ea380d0e732b24c"
+     "at": "2026-11-18T02:19:47Z",
+     "message": "docs(ai): hire-surfaces rule, seo-derived v2, front-matter v2, ADR 0008 and the AI-readers note",
+     "url": "https://github.com/korczis/korczis.github.io/commit/6fd12c253da390372f53e484e4630d0fd20c1180"
     },
     {
-     "at": "2026-11-17T04:04:28Z",
-     "message": "chore(plan): E070 and U111 done, criteria re-checked on main (#589)",
-     "url": "https://github.com/korczis/oscilla/commit/c442499ecdd9851f570b7ebfd92b1fd62c81e412"
+     "at": "2026-11-18T02:09:07Z",
+     "message": "docs(adr): ADR 0007 addendum, the owner's start date, work authorization and time zone",
+     "url": "https://github.com/korczis/korczis.github.io/commit/203200c1cb8f643374e4acf79eb85eebafdbe321"
     },
     {
-     "at": "2026-11-17T03:48:06Z",
-     "message": "chore(plan): E070 and U111 done, criteria re-checked on main 3273bbbf (verdicts 531.yaml, 544.yaml)",
-     "url": "https://github.com/korczis/oscilla/commit/e1d0121effa367502d8fed7be055a77315cbf180"
+     "at": "2026-11-18T02:05:28Z",
+     "message": "feat(shell): skillset in the sidebar, GitLab and LinkedIn under Elsewhere",
+     "url": "https://github.com/korczis/korczis.github.io/commit/5f035eeeb11b03b03126f78aa89aa79b14d3ceee"
     },
     {
-     "at": "2026-11-17T02:51:42Z",
-     "message": "chore(release): record v3.41.1 (#588)",
-     "url": "https://github.com/korczis/oscilla/commit/3273bbbfd828058bb4d7c7699cc0685d350dc609"
+     "at": "2026-11-18T02:02:03Z",
+     "message": "fix(site-json): name the README consumer by its ADR, not by a typed login",
+     "url": "https://github.com/korczis/korczis.github.io/commit/49d83e572d973ab2008fd5b0b116901d264effd0"
     },
     {
-     "at": "2026-11-17T02:45:31Z",
-     "message": "chore(release): record v3.41.1",
-     "url": "https://github.com/korczis/oscilla/commit/ea82a8e635e976e24ad0726249744dc9ab8208ad"
+     "at": "2026-11-18T01:49:26Z",
+     "message": "feat(site-json): availability for hire, profile links and work history in site.json",
+     "url": "https://github.com/korczis/korczis.github.io/commit/ef551d7cf41d7bb6c945a78e3c09efa769164b21"
     },
     {
-     "at": "2026-11-17T02:11:49Z",
-     "message": "fix(release): train T27, the Release notes speak Czech (#473, Q104), and release v3.41.1 (#586)",
-     "url": "https://github.com/korczis/oscilla/commit/4543280c08965b5b14b21f2bda6e498b9ddafa0a"
+     "at": "2026-11-18T01:45:47Z",
+     "message": "feat(hire): /hire/ page, CV from LinkedIn, Offer and FAQPage JSON-LD, llms.txt hire section",
+     "url": "https://github.com/korczis/korczis.github.io/commit/bfb9c731feb24760cdb7c352e57d2fdf26313c35"
     },
     {
-     "at": "2026-11-17T00:01:11Z",
-     "message": "review(t27): rev-seat-2 verdict for PR 586 (train T27, v3.41.1), merge under the legs condition",
-     "url": "https://github.com/korczis/oscilla/commit/4c9b8dffbbc7c7920572b19a5fc5bb3f174d53b8"
+     "at": "2026-11-18T01:43:46Z",
+     "message": "docs(adr): ADR 0007, availability for hire, the CV from LinkedIn, AI readers without hidden instructions",
+     "url": "https://github.com/korczis/korczis.github.io/commit/4a5746054087e72bd3082591cac324e28c3307df"
     },
     {
-     "at": "2026-11-16T23:56:37Z",
-     "message": "chore(release): v3.41.1",
-     "url": "https://github.com/korczis/oscilla/commit/7b3f11d28d75b70951a6e079f3a7b51106585579"
+     "at": "2026-11-17T21:20:07Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/0d36db8df17d0b057c2ff2edcd4e9f5573107f4e"
     }
    ],
    "languages": [
     {
      "name": "JavaScript",
-     "share": 96.9
+     "share": 66.5
     },
     {
      "name": "HTML",
-     "share": 1.9
+     "share": 31
     },
     {
      "name": "CSS",
-     "share": 1.1
-    },
-    {
-     "name": "Swift",
-     "share": 0
+     "share": 1.4
     },
     {
      "name": "Shell",
-     "share": 0
+     "share": 1.1
     }
    ],
-   "readme": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+   "readme": "The personal hub of Tomas Korcak (korczis). It covers who I am, the projects I build with their live sites, the stack behind them, and Majordomus, which supervises the work.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [
-    "acoustics",
-    "audio",
-    "dsp",
-    "education",
-    "javascript",
-    "signal-processing",
-    "spectrogram",
-    "synthesizer",
-    "web-audio"
+    "accessibility",
+    "ai-agents",
+    "alpinejs",
+    "chartjs",
+    "cytoscape",
+    "echarts",
+    "flowbite",
+    "github-pages",
+    "majordomus",
+    "p5js",
+    "personal-website",
+    "portfolio",
+    "tailwindcss",
+    "zola"
    ],
    "hosts": {
-    "github": "https://github.com/korczis/oscilla"
+    "github": "https://github.com/korczis/korczis.github.io"
    },
-   "site": "https://korczis.github.io/oscilla/",
-   "curated": true,
-   "stars": 1,
+   "site": null,
+   "curated": false,
+   "stars": 0,
    "supervised": true
   },
   {
@@ -831,7 +839,7 @@
    "category": "knowledge",
    "language": "Elixir",
    "created_at": "2026-11-09T22:04:50Z",
-   "pushed_at": "2026-11-18T01:57:39Z",
+   "pushed_at": "2026-11-18T03:06:20Z",
    "last_commit": "2026-11-18T00:53:25Z",
    "last_message": "Merge origin/main (e1ad82c1) into train-1",
    "commits": [
@@ -989,7 +997,7 @@
    "languages": [
     {
      "name": "Elixir",
-     "share": 32.9
+     "share": 32.7
     },
     {
      "name": "JavaScript",
@@ -997,22 +1005,24 @@
     },
     {
      "name": "Python",
-     "share": 16.4
+     "share": 16.6
     },
     {
      "name": "HTML",
-     "share": 13
-    },
-    {
-     "name": "Rust",
-     "share": 8.3
+     "share": 12.9
     },
     {
      "name": "Shell",
+     "share": 8.3
+    },
+    {
+     "name": "Rust",
      "share": 8.2
     }
    ],
    "readme": "Defenzivní taxonomie jevů, které systematicky rozkládají schopnost člověka poznávat.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [
     "czech",
     "epistemology",
@@ -1039,7 +1049,7 @@
    "category": "ai",
    "language": "Rust",
    "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-18T02:08:31Z",
+   "pushed_at": "2026-11-18T03:51:17Z",
    "last_commit": "2026-11-18T00:04:07Z",
    "last_message": "Merge pull request #3084 from korczis/fix/delivery-observed-at-the-merge-of-train-f",
    "commits": [
@@ -1221,6 +1231,8 @@
     }
    ],
    "readme": "Your AI agents say the work is done. Majordomus makes them prove it.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [
     "agentic-ai",
     "ai",
@@ -1435,6 +1447,8 @@
     }
    ],
    "readme": "A hand-picked music journal: one review per track, explored by genre, feeling and mood, played in a bottom-bar player that keeps going while you browse. Live at https://korczis.github.io/sonic-playground/.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/sonic-playground"
@@ -1633,6 +1647,8 @@
     }
    ],
    "readme": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js simulations whose every number is measured from the running state.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [
     "algorithms",
     "alpinejs",
@@ -1844,6 +1860,8 @@
     }
    ],
    "readme": "Katalog geodat, otevřených dat, veřejných registrů a OSINT/DD zdrojů Evropské unie — katastr, doprava, statistika, obchodní rejstříky, skuteční majitelé, insolvence, zakázky, soudy, regulace a rizika. Prohledávatelný, filtrovatelný, na jedné stránce.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [
     "catalog",
     "czech-republic",
@@ -1933,6 +1951,8 @@
     }
    ],
    "readme": "A small vertical slice: incident reports in, points on a map out.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/crisis-map"
@@ -2116,6 +2136,8 @@
     }
    ],
    "readme": "Live: https://korczis.github.io/catharsis-as-a-service/ (čeština) · Releases: https://github.com/korczis/catharsis-as-a-service/releases · Commands: https://korczis.github.io/catharsis-as-a-service/commands/ · API: https://korczis.github.io/catharsis-as-a-service/api/v1/index.json",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/catharsis-as-a-service"
@@ -2310,6 +2332,8 @@
     }
    ],
    "readme": "Otevřený, Git-native systém pro tvorbu a publikaci dohledatelných dossierů ve veřejném zájmu. Tvrzení, zdroje, entity, kauzy a vztahy jsou strukturovaná, verzovaná data; validují se reprodukovatelným toolingem a materializují do statického webu (Zola), nasazovaného přes GitHub Pages. Každé podstatné tvrzení má zůstat propojené se svým zdrojem, stavem ověření a historií revizí.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/vomaste.cz"
@@ -2364,6 +2388,8 @@
     }
    ],
    "readme": "A local mirror of every GitHub gist owned by korczis — 965 gists, 2 771 files, ~2.4 million words, 2011 → 2026 — plus the pipeline that catalogues, analyses, chunks and indexes it for search.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/gists-search"
@@ -2454,6 +2480,8 @@
     }
    ],
    "readme": "A living OSINT intelligence assessment, maintained entirely with Claude Code skills and a few shell scripts. Open sources only; every claim carries its source and a grade.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [
     "claude-code",
     "intelligence-analysis",
@@ -2567,6 +2595,8 @@
     }
    ],
    "readme": "A local-first, provider-agnostic archive of AI conversations — ChatGPT, Claude, Gemini, Codex, and generic JSON/JSONL exports — as an immutable, citable, searchable knowledge corpus.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [
     "AI",
     "chatgpt",
@@ -2763,6 +2793,8 @@
     }
    ],
    "readme": "Brand & web pro hnutí Astronautisté — „Myslíme na hvězdy, jednáme vědecky.\" Veřejný web: astronautiste.cz.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/astronomists"
@@ -2796,6 +2828,8 @@
    ],
    "languages": [],
    "readme": "Use the built-in continuous integration in GitLab.",
+   "readme_shared": true,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/tinder-nomics"
@@ -2856,6 +2890,8 @@
     }
    ],
    "readme": "Advanced research framework analyzing psychological manipulation patterns, dark psychology, and defense strategies. Integrating comprehensive behavioral analysis with high-performance pattern recognition.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/the-psycho"
@@ -2889,6 +2925,8 @@
    ],
    "languages": [],
    "readme": "PRISM is an advanced system for behavioral analysis, pattern recognition, and social modeling using cutting-edge artificial intelligence and machine learning techniques.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/prism"
@@ -2922,6 +2960,8 @@
    ],
    "languages": [],
    "readme": "\"Capture the soul of the story, not just its words.\"",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/past"
@@ -3116,6 +3156,8 @@
     }
    ],
    "readme": "Sig is a comprehensive Elixir-based platform that combines advanced Open Source Intelligence (OSINT) capabilities, AI agent societies, real-time collaboration systems, and interactive demonstration laboratories. The platform specializes in Czech public and commercial registries while providing a cutting-edge foundation for intelligence gathering, multi-agent coordination, and collaborative decision-making.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [
     "AI",
     "Knowledge representation and reasoning",
@@ -3158,6 +3200,8 @@
    ],
    "languages": [],
    "readme": "1. Co je Edna? 2. Klíčové funkce 3. Persona a jazyk Edny 4. Architektura 5. Monetizace 6. UX & přístupnost 7. Retenční strategie 8. Roadmapa 9. Etické zásady 10. Inspirace & zdroje",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/edna"
@@ -3191,6 +3235,8 @@
    ],
    "languages": [],
    "readme": "Copyright © 2024–2025 Tomas Korcak. ALL RIGHTS RESERVED.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/GHT"
@@ -3351,6 +3397,8 @@
     }
    ],
    "readme": "Mission: Improve accuracy and consistency of per-commit assessments while keeping context minimal and traceability maximal.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/comtesse"
@@ -3545,6 +3593,8 @@
     }
    ],
    "readme": "Kita is a clean, elegant and simple blog theme for Zola.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/korczis.gitlab.io"
@@ -3743,6 +3793,8 @@
     }
    ],
    "readme": "Advanced AI Agent Framework with Enterprise-Grade BEAM VM Introspection and Consolidation Tools",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/prismatic"
@@ -3899,6 +3951,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/u-tygra",
@@ -3951,6 +4005,8 @@
     }
    ],
    "readme": "Osobní a vědecký projekt zaměřený na pozorování, dokumentaci a vztah s volně žijící vránou šedou (Corvus cornix) jménem Šedka. Projekt klade důraz na etiku, neinvazivní přístup a rituální kvalitu mezidruhové komunikace.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/corvidae"
@@ -3979,6 +4035,8 @@
    ],
    "languages": [],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/cognitive-reasoning"
@@ -4012,6 +4070,8 @@
     }
    ],
    "readme": "Book Template is a starter template of [Zola][zola] with [book][book] theme, including automatic publishing feature to [GitHub Pages][github-pages]. Contains [Dev Containers][dev-containers] battery.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/prismatic-blog"
@@ -4089,6 +4149,8 @@
     }
    ],
    "readme": "Elixir SDK for KuzuDB with graph schema DSL and query builder, designed for large-scale graph analytics and data exploration.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/kuzu-ex"
@@ -4196,6 +4258,8 @@
     }
    ],
    "readme": "1. Introduction 2. Motivation 3. How It Started 4. Architecture 5. Features 6. Usage 7. File Structure 8. API Reference 9. Examples 10. Contributing 11. License",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/dispatcher"
@@ -4224,6 +4288,8 @@
    ],
    "languages": [],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/tap"
@@ -4410,6 +4476,8 @@
     }
    ],
    "readme": "Bubbler is a JavaScript-based application that generates speech bubbles with dynamic text over an image. The text, font, color, and positioning are fully customizable via URL query parameters, allowing for easy configuration of the speech content and the overall layout of the image.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/bubbler"
@@ -4448,6 +4516,8 @@
     }
    ],
    "readme": "The Job Processor Web Service is a robust and efficient web service built with Elixir, leveraging the Plug and Cowboy libraries. It processes job tasks with dependencies, ensuring the correct execution order, and generates corresponding bash scripts. The service is designed to be simple, scalable, and easy to integrate into your existing systems.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/job-processor"
@@ -4515,6 +4585,8 @@
     }
    ],
    "readme": "Minimal \"steps-to-reproduce\" project to demonstrate fucked-up integration of meilisearch (rust) with elixir using rustler",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/meili_rsex"
@@ -4543,6 +4615,8 @@
    ],
    "languages": [],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/pissaleck"
@@ -4714,6 +4788,8 @@
     }
    ],
    "readme": "Simple Geocoder is an Elixir library designed to facilitate geocoding and routing functionalities within your Elixir applications.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/simple_geocoder"
@@ -4797,6 +4873,8 @@
     }
    ],
    "readme": "If available in Hex, the package can be installed by adding distancecalculator to your list of dependencies in mix.exs:",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/distance-calculator"
@@ -4850,6 +4928,8 @@
    ],
    "languages": [],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/marketing-ideas"
@@ -4896,6 +4976,8 @@
     }
    ],
    "readme": "Create a service that accepts PDF files containing one or more pages. These pages should be rendered to “normalized png” files: they should fit into a 1200x1600 pixels rectangle.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/pdf_renderer"
@@ -4934,6 +5016,8 @@
    ],
    "languages": [],
    "readme": "MindScape is an AI-powered platform for mental health diagnosis and treatment. It uses machine learning algorithms and virtual reality technology to create personalized therapy experiences for patients, and provides mental health professionals with a suite of tools for analysis and treatment planning.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/MindScape"
@@ -5092,6 +5176,8 @@
     }
    ],
    "readme": "If available in Hex, the package can be installed by adding cache to your list of dependencies in mix.exs:",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/el-magico-cache"
@@ -5134,6 +5220,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/gh-exec-3000"
@@ -5207,6 +5295,8 @@
     }
    ],
    "readme": "Application MUST implement following endpoint /api/hello-world",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/rest-hello-world-benchmark"
@@ -5240,6 +5330,8 @@
    ],
    "languages": [],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/caregiver"
@@ -5299,6 +5391,8 @@
     }
    ],
    "readme": "Use the built-in continuous integration in GitLab.",
+   "readme_shared": true,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/astudo"
@@ -5327,6 +5421,8 @@
    ],
    "languages": [],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/rocksdb_indexer"
@@ -5360,6 +5456,8 @@
     }
    ],
    "readme": "Analyze and filter phone numbers from text recognized in live capture, building evidence over time.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/ReadingPhoneNumbersInRealTime"
@@ -5558,6 +5656,8 @@
     }
    ],
    "readme": "Application for learning, practicing and improving programming skills. This application begun as toy project during my hospitalization. There is no specific plan, goal neither roadmap. It is just for joy of learning and to have some fun.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/happ",
@@ -5741,6 +5841,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/MinervaEye"
@@ -5799,6 +5901,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/3d-print"
@@ -5884,6 +5988,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/ctu-cz"
@@ -5912,6 +6018,8 @@
    ],
    "languages": [],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/data-playground"
@@ -5972,6 +6080,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/czech-stats"
@@ -6166,6 +6276,8 @@
     }
    ],
    "readme": "Credo is a static code analysis tool for elixir.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/hydra"
@@ -6364,6 +6476,8 @@
     }
    ],
    "readme": "Electronic music with all the goodies and frills!",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/dj-schnapps",
@@ -6403,6 +6517,8 @@
    ],
    "languages": [],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/reading",
@@ -6437,6 +6553,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/ts-logger",
@@ -6514,6 +6632,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/nestravenkam",
@@ -6563,6 +6683,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/home",
@@ -6609,6 +6731,8 @@
     }
    ],
    "readme": "Now you can visit localhost:4000 from your browser.",
+   "readme_shared": true,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/kanec",
@@ -6638,6 +6762,8 @@
    ],
    "languages": [],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/twitter-analysis",
@@ -6817,6 +6943,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/server-archlinux",
@@ -6870,6 +6998,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/zdeny-docker",
@@ -6909,6 +7039,8 @@
    ],
    "languages": [],
    "readme": "Playground for learning docker, kubernetes, ansible and friends",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/k8s-orbis-pictus",
@@ -6938,6 +7070,8 @@
    ],
    "languages": [],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/server-coreos",
@@ -7117,6 +7251,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/server-atomic",
@@ -7296,6 +7432,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/server-nixos",
@@ -7475,6 +7613,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/server-ansible",
@@ -7600,6 +7740,8 @@
     }
    ],
    "readme": "Now you can visit localhost:4000 from your browser.",
+   "readme_shared": true,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/tosh",
@@ -7668,6 +7810,8 @@
     }
    ],
    "readme": "Example how to run Docker image using AWS Lambda",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/aws-lambda-docker",
@@ -7707,6 +7851,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/bcnode-extra-scripts",
@@ -7756,6 +7902,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/bc-apple",
@@ -7785,6 +7933,8 @@
    ],
    "languages": [],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/js-libp2p-umbrella",
@@ -7980,6 +8130,8 @@
     }
    ],
    "readme": "Block Collider Node =================== #### Release Candidate 1 - \"Boson Hunter\"",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/bcnode-old",
@@ -8163,6 +8315,8 @@
     }
    ],
    "readme": "Elixir Wrapper for Gauc - Rust Wrapper of Couchbase",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/gauc.ex",
@@ -8358,6 +8512,8 @@
     }
    ],
    "readme": "Single Page Application written in Elm with Elixir/Phoenix Backend",
+   "readme_shared": true,
+   "description_shared": true,
    "topics": [
     "ecto",
     "elixir",
@@ -8435,6 +8591,8 @@
     }
    ],
    "readme": "Rust - Assembler, Mathematics, GPU and many others",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/rustas",
@@ -8618,6 +8776,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [
     "kubernetes"
    ],
@@ -8654,6 +8814,8 @@
    ],
    "languages": [],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/models",
@@ -8703,6 +8865,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/gdc-dumpator",
@@ -8737,6 +8901,8 @@
    ],
    "languages": [],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/in-rust-we-trust",
@@ -8924,6 +9090,8 @@
     }
    ],
    "readme": "Zpravy pro prijemce ze Zemanova transparentniho uctu na predvolebni kampan",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [
     "czech-republic",
     "nokogiri",
@@ -9054,6 +9222,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/rustler-test",
@@ -9160,6 +9330,8 @@
     }
    ],
    "readme": "Now you can visit localhost:4000 from your browser.",
+   "readme_shared": true,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/Test-Elixir",
@@ -9225,6 +9397,8 @@
     }
    ],
    "readme": "Single Page Application written in Elm with Elixir/Phoenix Backend",
+   "readme_shared": true,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/zaas",
@@ -9420,6 +9594,8 @@
     }
    ],
    "readme": "Single Page Application written in Elm with Elixir/Phoenix Backend",
+   "readme_shared": true,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/mapoffacts",
@@ -9611,6 +9787,8 @@
     }
    ],
    "readme": "Now you can visit localhost:4000 from your browser.",
+   "readme_shared": true,
+   "description_shared": true,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/web-spa",
@@ -9810,6 +9988,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [
     "elixir",
     "elixir-phoenix",
@@ -9880,6 +10060,8 @@
     }
    ],
    "readme": "Stream Flow - Fast Stream Processing in Rust",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/streamflow",
@@ -10033,6 +10215,8 @@
     }
    ],
    "readme": "SLI to DLI implementation written in rust. Nothing more, nothing less.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/sli2dli",
@@ -10212,6 +10396,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/wims",
@@ -10256,6 +10442,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/graph-flow",
@@ -10370,6 +10558,8 @@
    ],
    "languages": [],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-all"
@@ -10463,6 +10653,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-sreality-cz"
@@ -10611,6 +10803,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler"
@@ -10664,6 +10858,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-bam-brno-cz"
@@ -10717,6 +10913,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/cluster",
@@ -10904,6 +11102,8 @@
     }
    ],
    "readme": "Docker in configuration files/applications.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/docks"
@@ -10972,6 +11172,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-firmy-cz"
@@ -11015,6 +11217,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-heureka-cz"
@@ -11043,6 +11247,8 @@
    ],
    "languages": [],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/kpmap-ruby",
@@ -11092,6 +11298,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/brepta",
@@ -11166,6 +11374,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-xkcd-com"
@@ -11360,6 +11570,8 @@
     }
    ],
    "readme": "Now you can visit localhost:4000 from your browser.",
+   "readme_shared": true,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/gooddata-graphql",
@@ -11428,6 +11640,8 @@
     }
    ],
    "readme": "If available in Hex, the package can be installed as:",
+   "readme_shared": true,
+   "description_shared": true,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/skull-elixir",
@@ -11488,6 +11702,8 @@
     }
    ],
    "readme": "Now you can visit localhost:4000 from your browser.",
+   "readme_shared": true,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/maze",
@@ -11517,6 +11733,8 @@
    ],
    "languages": [],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/maze-js",
@@ -11700,12 +11918,14 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/maze-rs",
     "gitlab": "https://gitlab.com/korczis/maze-rs"
    },
-   "site": "https://korczis.github.io/maze-rs/",
+   "site": null,
    "curated": true,
    "stars": 8,
    "supervised": false
@@ -11729,6 +11949,8 @@
    ],
    "languages": [],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/ideas",
@@ -11908,6 +12130,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/gooddata-lcm-tool",
@@ -11955,6 +12179,8 @@
     }
    ],
    "readme": "If available in Hex, the package can be installed as:",
+   "readme_shared": true,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/rustler_mix",
@@ -11989,6 +12215,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/easy-plugin-plugins",
@@ -12052,6 +12280,8 @@
     }
    ],
    "readme": "Proof-of-Concept: Microcrawler in your Browser!",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-browser"
@@ -12238,6 +12468,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/jetel",
@@ -12425,6 +12657,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-elixir"
@@ -12547,6 +12781,8 @@
     }
    ],
    "readme": "Simple visual point and click data extraction in your browser!",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/apollo-crawler-extension"
@@ -12737,6 +12973,8 @@
     }
    ],
    "readme": "List of official publicly available crawlers.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-js"
@@ -12790,6 +13028,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-yelp-com"
@@ -12843,6 +13083,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-news-ycombinator-com"
@@ -12896,6 +13138,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-google-com"
@@ -12929,6 +13173,8 @@
    ],
    "languages": [],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-base"
@@ -12962,6 +13208,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/ApolloCrawler-github-io"
@@ -13015,6 +13263,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-craiglist-com"
@@ -13201,6 +13451,8 @@
     }
    ],
    "readme": "For more information about GoodData Filesystem Structure see detailed documentation - root.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/gooddata-fs",
@@ -13319,6 +13571,8 @@
     }
    ],
    "readme": "Ferryman who carries other people connections to other side. Operation Area? Wi-Fi!",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/charon",
@@ -13363,6 +13617,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/skull-rust",
@@ -13411,6 +13667,8 @@
     }
    ],
    "readme": "React Hot Boilerplate =====================",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/gooddata-proxy",
@@ -13549,6 +13807,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/peg-parser",
@@ -13603,6 +13863,8 @@
     }
    ],
    "readme": "Various datascience toy projects. Nothing serious. Mostly.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/datascience",
@@ -13652,6 +13914,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/peg-loader",
@@ -13696,6 +13960,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/babel-plugin-transform-graphql",
@@ -13745,6 +14011,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/node-proxy-upload",
@@ -13788,6 +14056,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/haskell-world",
@@ -13971,6 +14241,8 @@
     }
    ],
    "readme": "These will be installed during zlown install if not present.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/zlown",
@@ -14080,6 +14352,8 @@
     }
    ],
    "readme": "You can list built-in modules with following command:",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/microcrawler-ng",
@@ -14114,6 +14388,8 @@
    ],
    "languages": [],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/mapofffacts.com",
@@ -14148,6 +14424,8 @@
    ],
    "languages": [],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/jetel-modules",
@@ -14331,6 +14609,8 @@
     }
    ],
    "readme": "Tool for transforming CSV into SQL statements",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/csv2psql",
@@ -14385,6 +14665,8 @@
    ],
    "languages": [],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/data",
@@ -14572,6 +14854,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/korczis-github-com"
@@ -14750,6 +15034,8 @@
     }
    ],
    "readme": "Easy to use tool for converting JSON to CSV",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/json2csv",
@@ -14807,6 +15093,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "gitlab": "https://gitlab.com/korczis/korczis-com"
@@ -14885,6 +15173,8 @@
     }
    ],
    "readme": "What’s the biggest pixel size of a PNG image in the smallest number of bytes? I wanted to try to create an image that could be downloaded but whose pixel buffer would be too big to store in the RAM of a PC. Here is a bzip2 file of 420 bytes that uncompresses to a PNG image of 6,132,534 bytes (5.8 MB) and 225,000 × 225,000 pixels (50.625 gigapixels), which, if represented as a pixel buffer of 3 bytes per pixel,…",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/big-png",
@@ -14986,6 +15276,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/pavian.eu",
@@ -15169,6 +15461,8 @@
     }
    ],
    "readme": "to run the tooling you need following gems",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/gooddata-ruby-examples",
@@ -15356,6 +15650,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/skull-cpp",
@@ -15399,6 +15695,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/docker-gooddata-ruby",
@@ -15428,6 +15726,8 @@
    ],
    "languages": [],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/microscratch-react",
@@ -15572,6 +15872,8 @@
    ],
    "languages": [],
    "readme": "A Decentralized Autonomous Organization Proof of Concept",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/magicbiz",
@@ -15626,6 +15928,8 @@
     }
    ],
    "readme": "Dockerized http://www.datasciencetoolkit.org",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/docker-dstk",
@@ -15690,6 +15994,8 @@
    ],
    "languages": [],
    "readme": "Dockerized http://datasciencetoolbox.org",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/docker-datasciencetoolbox",
@@ -15724,6 +16030,8 @@
    ],
    "languages": [],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/datasciencecoursera",
@@ -15763,6 +16071,8 @@
    ],
    "languages": [],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/wangsta",
@@ -15792,6 +16102,8 @@
    ],
    "languages": [],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/talkie",
@@ -15889,6 +16201,8 @@
     }
    ],
    "readme": "Add this line to your application's Gemfile:",
+   "readme_shared": true,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/algorithms-ruby",
@@ -15953,6 +16267,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/docker-conf2015",
@@ -16132,6 +16448,8 @@
     }
    ],
    "readme": "Your own personal cluster built on top of the cloud.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/apollon",
@@ -16315,6 +16633,8 @@
     }
    ],
    "readme": "Tool for inspecting GoodData Ruby Platform environment",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/grache-test",
@@ -16502,6 +16822,8 @@
     }
    ],
    "readme": "This is proof of concept, there is many things To Do (TODO.md).",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/iCave",
@@ -16681,6 +17003,8 @@
     }
    ],
    "readme": "As title suggest is fundamental command of grache.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/grache",
@@ -16860,6 +17184,8 @@
     }
    ],
    "readme": "Add this line to your application's Gemfile:",
+   "readme_shared": true,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/gooddata_connectors_metadata",
@@ -17047,6 +17373,8 @@
     }
    ],
    "readme": "lethe.it - your personal smart links archive, organizer, classifier and much more",
+   "readme_shared": true,
+   "description_shared": true,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/lethe.it",
@@ -17230,6 +17558,8 @@
     }
    ],
    "readme": "lethe.it - your personal smart links archive, organizer, classifier and much more",
+   "readme_shared": true,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/microscratch",
@@ -17269,6 +17599,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/skull-emscripten",
@@ -17340,6 +17672,8 @@
     }
    ],
    "readme": "Following environment variables must be set",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/gooddata_rails_app",
@@ -17413,6 +17747,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/annasabatova.cz",
@@ -17462,6 +17798,8 @@
    ],
    "languages": [],
    "readme": "This project was canceled and superseded by microcrawler",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/apollo-crawler",
@@ -17645,6 +17983,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/peacemaker",
@@ -17824,6 +18164,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/esri",
@@ -17957,6 +18299,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/algorithms",
@@ -17996,6 +18340,8 @@
    ],
    "languages": [],
    "readme": "Mirror of https://code.google.com/p/ares-api/",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/ares-api",
@@ -18035,6 +18381,8 @@
    ],
    "languages": [],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/ratnet",
@@ -18214,6 +18562,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/skull-c",
@@ -18397,6 +18747,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": true,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/skull",
@@ -18461,6 +18813,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/skull-java",
@@ -18515,6 +18869,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/skull-ruby",
@@ -18564,6 +18920,8 @@
    ],
    "languages": [],
    "readme": "Learning materials for Javascript (node.js) language",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/skull-nodejs",
@@ -18743,6 +19101,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/skull-haskell",
@@ -18822,6 +19182,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": true,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/skull-erlang",
@@ -18881,6 +19243,8 @@
    ],
    "languages": [],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/apollo-schemas",
@@ -18915,6 +19279,8 @@
    ],
    "languages": [],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/photos",
@@ -18944,6 +19310,8 @@
    ],
    "languages": [],
    "readme": "The one who orchestrates all the folks in the circus...",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/principal",
@@ -19131,6 +19499,8 @@
     }
    ],
    "readme": "This is meant to be an example CouchApp and to ship with most of the CouchApp goodies.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/microcrawler-couchapp",
@@ -19225,6 +19595,8 @@
     }
    ],
    "readme": "This is project with sources for codecademy Ruby training course",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/codecademy",
@@ -19264,6 +19636,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/github-extractor",
@@ -19303,6 +19677,8 @@
     }
    ],
    "readme": "All needed data science stuff in one box",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/apollo-box",
@@ -19387,6 +19763,8 @@
    ],
    "languages": [],
    "readme": "Small easily embeddable Document Oriented DB for everyday use.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/nosqlight",
@@ -19574,6 +19952,8 @@
     }
    ],
    "readme": "microscratch is minimalistic opionated modern web application framework.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/apollocrawler.com",
@@ -19761,6 +20141,8 @@
     }
    ],
    "readme": "Simple Craftsmen Listing based on top of microscratch",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/craftsmen",
@@ -19818,6 +20200,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/solr-core-minimal",
@@ -19857,6 +20241,8 @@
    ],
    "languages": [],
    "readme": "Trick question. It's not a thing. It's this guy:",
+   "readme_shared": true,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/generator-microscratch",
@@ -19946,6 +20332,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/cs-benchmark",
@@ -20065,6 +20453,8 @@
     }
    ],
    "readme": "Loader &amp; Launcher of Modular NodeJS Apps.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/lola",
@@ -20104,6 +20494,8 @@
    ],
    "languages": [],
    "readme": "List of interesting I read I consider to be good....",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/books",
@@ -20168,6 +20560,8 @@
     }
    ],
    "readme": "Trick question. It's not a thing. It's this guy:",
+   "readme_shared": true,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/generator-the-scratch",
@@ -20222,6 +20616,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/Rocnikac4",
@@ -20251,6 +20647,8 @@
    ],
    "languages": [],
    "readme": "skype-adapter-client ====================",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/skype-adapter-client",
@@ -20290,6 +20688,8 @@
    ],
    "languages": [],
    "readme": "Icons for popular social networks, stolen from holden/devise-omniauth-example.",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/social-icons",
@@ -20339,6 +20739,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/malina",
@@ -20368,6 +20770,8 @@
    ],
    "languages": [],
    "readme": "Tools used for various kind of inspections....",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/inspectors",
@@ -20407,6 +20811,8 @@
     }
    ],
    "readme": "Simple (AMQP Based) Monitoring framework",
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/ares",
@@ -20446,6 +20852,8 @@
     }
    ],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/reflex",
@@ -20515,6 +20923,8 @@
    ],
    "languages": [],
    "readme": null,
+   "readme_shared": false,
+   "description_shared": false,
    "topics": [],
    "hosts": {
     "github": "https://github.com/korczis/sandbox",
