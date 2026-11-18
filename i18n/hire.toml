@@ -182,3 +182,45 @@ cs = "Technologie"
 [skills_capabilities]
 en = "Skills"
 cs = "Dovednosti"
+
+# The hiring-first home (ADR 0007): the hero's contact row, its proof strip and stats, and the
+# closing hiring section. The facts come from data/cv.toml, data/github.json and data/index.json.
+[hero_mail_subject]
+en = "Hiring enquiry via {host}"
+cs = "Nabídka spolupráce přes {host}"
+
+[hero_copy_email]
+en = "Copy the address {email}"
+cs = "Zkopírovat adresu {email}"
+
+[js_copied]
+en = "Copied"
+cs = "Zkopírováno"
+
+[hero_proof_label]
+en = "Previously"
+cs = "Dříve"
+
+[hero_proof_role]
+en = "{title} at {org}"
+cs = "{title}, {org}"
+
+[hero_proof_author]
+en = "Author of {name} {version}"
+cs = "Autor nástroje {name} {version}"
+
+[kpi_career_years]
+en = "years of professional work"
+cs = "let profesní praxe"
+
+[home_track_lead]
+en = "Finished roles, newest first, as the CV states them."
+cs = "Ukončené role od nejnovější, jak je uvádí životopis."
+
+[hire_cta_title]
+en = "Hiring? Let's talk."
+cs = "Hledáte posilu? Pojďme si promluvit."
+
+[hire_cta_lead]
+en = "{headline}. Available for {engagement}; {workplace}, {regions}."
+cs = "{headline}. K dispozici: {engagement}; {workplace}, {regions}."
