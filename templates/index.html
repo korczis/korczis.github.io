@@ -497,7 +497,7 @@
         <img src="{{ get_url(path=ogp) }}" width="1200" height="630" loading="lazy" decoding="async" alt="{{ p.name }}: {{ p["tagline" ~ sfx] }}" class="aspect-[1200/630] h-auto w-full border-b border-gray-200 object-cover dark:border-gray-700">
         <div class="flex flex-1 flex-col p-4 sm:p-5">
           <div class="mb-3 flex flex-wrap gap-2">
-            {{ <badge label={trans(key="instruments_live_checked", lang=lang) | replace(from="{status}", to=f.live_status ~ "") | replace(from="{date}", to=gh.generated_at | date(format="%Y-%m-%d"))} tone="green" dot={true} /> }}
+            {{ <badge label={trans(key="instruments_live_checked", lang=lang) | replace(from="{status}", to=f.live_status ~ "") | replace(from="{date}", to=gh.generated_at | date(format=trans(key="fmt_date_long", lang=lang), locale=trans(key="date_locale", lang=lang)))} tone="green" dot={true} /> }}
             {%- if f.supervised %}{{ <badge label={trans(key="instruments_supervised", lang=lang)} tone="primary" /> }}{% endif %}
             {{ <status_badge activity={f.activity} lang={lang} /> }}
           </div>

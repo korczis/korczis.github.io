@@ -97,9 +97,9 @@
 {%- elif variant == "plain" %}{% set v = "bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-200" %}{% set z = "rounded px-2 py-0.5 text-xs" %}
 {%- else %}{% set v = "border border-gray-200 bg-gray-50 text-gray-900 hover:border-primary-300 hover:bg-primary-50 hover:text-primary-800 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600" %}{% endif %}
 {%- set cls = "inline-flex items-center gap-1.5 font-medium focus:outline-none focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-800 " ~ z ~ " " ~ v -%}
-{#- A linked chip names itself (its label and count) so it keeps a name wherever its text is
-    hidden: a closed disclosure, the collapsed sidebar (axe link-name, the audit's collapse check). -#}
-{%- if href %}<a href="{{ href }}" class="{{ cls }}" aria-label="{{ label }}{% if count %} ({{ count }}){% endif %}"{% if tip %} data-tooltip-target="{{ tip_id }}"{% endif %}>{% else %}<span class="{{ cls }}">{% endif -%}
+{#- A linked chip is named by its visible text (label and count), never by an aria-label that would
+    differ from it (WCAG 2.5.3); a chip in a closed disclosure is out of the tab order anyway. -#}
+{%- if href %}<a href="{{ href }}" class="{{ cls }}"{% if tip %} data-tooltip-target="{{ tip_id }}"{% endif %}>{% else %}<span class="{{ cls }}">{% endif -%}
 {%- if icon %}{{ <category_icon key={icon} class="h-4 w-4 text-primary-700 dark:text-primary-400" /> }}{% endif %}{{ label }}
 {%- if count %}<span class="tabular rounded-full bg-primary-100 px-1.5 text-xs font-semibold text-primary-800 dark:bg-primary-900 dark:text-primary-300">{{ count }}</span>{% endif -%}
 {%- if href %}</a>{% else %}</span>{% endif -%}
@@ -224,7 +224,7 @@
     <p class="tabular mb-4 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-gray-600 dark:text-gray-400">
       {%- if f.language %}<span class="inline-flex items-center gap-1">{{ <icon name="code" class="h-4 w-4" /> }}{{ f.language }}</span>{% endif %}
       <span class="inline-flex items-center gap-1">{{ <icon name="star" class="h-4 w-4" /> }}<span><span class="sr-only">{{ trans(key="stars", lang=lang) | safe }} </span>{{ f.stars }}</span></span>
-      <span class="inline-flex items-center gap-1">{{ <icon name="clock" class="h-4 w-4" /> }}<span>{{ trans(key="updated", lang=lang) | safe }} <time datetime="{{ f.pushed_at }}">{{ f.pushed_at | date(format="%b %Y") }}</time></span></span>
+      <span class="inline-flex items-center gap-1">{{ <icon name="clock" class="h-4 w-4" /> }}<span>{{ trans(key="updated", lang=lang) | safe }} <time datetime="{{ f.pushed_at }}">{{ f.pushed_at | date(format=trans(key="fmt_month_short", lang=lang), locale=trans(key="date_locale", lang=lang)) }}</time></span></span>
     </p>
     <div class="flex flex-wrap items-center gap-3">
       {%- if p.url and f.live %}
@@ -295,7 +295,7 @@
   </td>
   <td class="whitespace-nowrap px-4 py-3">{{ f.language | default(value="—") }}</td>
   <td class="tabular whitespace-nowrap px-4 py-3 text-right">{{ f.stars }}</td>
-  <td class="whitespace-nowrap px-4 py-3"><time datetime="{{ f.pushed_at }}">{{ f.pushed_at | date(format="%b %Y") }}</time></td>
+  <td class="whitespace-nowrap px-4 py-3"><time datetime="{{ f.pushed_at }}">{{ f.pushed_at | date(format=trans(key="fmt_month_short", lang=lang), locale=trans(key="date_locale", lang=lang)) }}</time></td>
   <td class="whitespace-nowrap px-4 py-3">{% if f.supervised %}{{ <badge label="Majordomus" tone="primary" /> }}{% else %}—{% endif %}</td>
   <td class="whitespace-nowrap px-4 py-3 text-right">
     {%- if p.url and f.live %}<a href="{{ p.url }}" class="font-medium text-primary-700 hover:underline dark:text-primary-400">{{ trans(key="open", lang=lang) | safe }}<span class="sr-only"> {{ p.name }}</span></a> · {% endif %}<a href="{{ source }}" class="font-medium text-primary-700 hover:underline dark:text-primary-400">{{ trans(key="source", lang=lang) | safe }}<span class="sr-only"> {{ trans(key="of", lang=lang) | safe }} {{ p.name }}</span></a>

@@ -26,7 +26,7 @@
   <div class="grid grid-cols-1 gap-4 md:grid-cols-2 2xl:grid-cols-3">
     {%- for page in section.pages %}
     {%- for r in rc.repos %}{% if r.name == page.extra.repo and r.period == p.months %}
-    {% <link_card href={page.permalink} title={page.title} note={page.description} eyebrow={r.last_commit | date(format="%-d %b %Y")}> %}
+    {% <link_card href={page.permalink} title={page.title} note={page.description} eyebrow={r.last_commit | date(format=trans(key="fmt_date_short", lang=lang), locale=trans(key="date_locale", lang=lang))}> %}
       {%- if r.languages | length > 0 %}
       <div class="mt-auto pt-4">
         {{ <lang_bar languages={r.languages} /> }}
@@ -68,5 +68,5 @@
   </div>{% endif %}
 </section>
 {%- endif %}
-{{ <provenance date={rc.generated_at | date(format="%-d %B %Y")} rule={rc.rule} lang={lang} href={base ~ "repositories/"} link={trans(key="every_repository", lang=lang)} cls="px-4 pt-4" /> }}
+{{ <provenance date={rc.generated_at | date(format=trans(key="fmt_date_long", lang=lang), locale=trans(key="date_locale", lang=lang))} rule={rc.rule} lang={lang} href={base ~ "repositories/"} link={trans(key="every_repository", lang=lang)} cls="px-4 pt-4" /> }}
 {% endblock content %}
