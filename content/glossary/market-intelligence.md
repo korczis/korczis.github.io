@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Knowledge about a market (prices, comparables, competitors and demand) gathered from public and licensed sources to support a decision."
 aliases = []
 reference = { title = "Market intelligence (Wikipedia)", url = "https://en.wikipedia.org/wiki/Market_intelligence" }
-pages = ["projects/security.md", "work/osint-case-ratcliffe-moscow-2026.md"]
-related = ["audit-trail", "data-integration", "decision-support-system", "due-diligence", "html", "information-extraction", "insolvency", "knowledge-graph"]
+pages = ["projects/security.md", "work/magic.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/peacemaker.md", "work/ratnet.md", "work/zlown.md"]
+related = ["audit-trail", "data-integration", "decision-support-system", "due-diligence", "information-extraction", "insolvency", "knowledge-graph", "mergers-and-acquisitions"]
 og_title = "Market intelligence: glossary"
 og_image = "og/glossary-market-intelligence.png"
 keywords = ["Market intelligence", "Concept", "Glossary", "Tomas Korcak"]

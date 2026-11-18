@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Finding the records, across sources, that refer to the same company or person, by shared identifiers first and by similar names and addresses second."
 aliases = ["record linkage"]
 reference = { title = "Record linkage (Wikipedia)", url = "https://en.wikipedia.org/wiki/Record_linkage" }
-pages = ["projects/security.md", "work/osint-case-ratcliffe-moscow-2026.md"]
-related = ["audit-trail", "data-integration", "decision-support-system", "due-diligence", "html", "information-extraction", "insolvency", "knowledge-graph"]
+pages = ["projects/security.md", "work/magic.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/peacemaker.md", "work/ratnet.md", "work/zlown.md"]
+related = ["audit-trail", "data-integration", "decision-support-system", "due-diligence", "information-extraction", "insolvency", "knowledge-graph", "market-intelligence"]
 og_title = "Entity resolution: glossary"
 og_image = "og/glossary-record-linkage.png"
 keywords = ["Entity resolution", "Concept", "Glossary", "Tomas Korcak"]

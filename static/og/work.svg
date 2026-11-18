@@ -7,9 +7,9 @@
 <g fill="none" stroke="#fff" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"><path d="M97.5 86v28M97.5 100l15.7-14M104.5 93.9l12.3 20.1"/></g>
 <text x="156" y="99" font-size="24" font-weight="700" fill="#f9fafb">Tomas Korcak</text>
 <text x="156" y="124" font-size="20" font-family="JetBrains Mono, Menlo, monospace" fill="#9ca3af">korczis.github.io/work/</text>
-<text x="80" y="230" font-size="66" font-weight="800" fill="#f9fafb">43 projects, the last</text><text x="80" y="304" font-size="66" font-weight="800" fill="#f9fafb">4 years.</text>
-<text x="80" y="404" font-size="26" fill="#9ca3af">Every project with a commit in the last 48</text><text x="80" y="440" font-size="26" fill="#9ca3af">months, by period (12, 24, 48): 43</text><text x="80" y="476" font-size="26" fill="#9ca3af">repositories on GitHub and GitLab, each…</text>
-<rect x="80" y="540" width="292" height="44" rx="22" fill="#1e3a8a"/>
+<text x="80" y="230" font-size="58" font-weight="800" fill="#f9fafb">205 projects since</text><text x="80" y="296" font-size="58" font-weight="800" fill="#f9fafb">2012, 43 active the</text><text x="80" y="362" font-size="58" font-weight="800" fill="#f9fafb">last 4 years.</text>
+<text x="80" y="454" font-size="26" fill="#9ca3af">All 205 original repositories on GitHub and</text><text x="80" y="490" font-size="26" fill="#9ca3af">GitLab since 2012, each with its own page: 43</text><text x="80" y="526" font-size="26" fill="#9ca3af">active in the last 48 months, the rest…</text>
+<rect x="80" y="540" width="312" height="44" rx="22" fill="#1e3a8a"/>
 <text x="104" y="569" font-size="20" font-weight="600" fill="#bfdbfe">Supervised by Majordomus</text>
 </g>
 </svg>

@@ -11,10 +11,12 @@ tags = ["Tools", "Elixir"]
 
 [extra]
 repo = "job-processor"
-og_title = "job-processor: This is a simple web service built with Elixir, Plug, and Cowboy that proce"
+seo_title = "job-processor: Tools in Elixir, 2024 · Tomas Korcak"
+og_title = "job-processor: This is a simple web service built with Elixir, Plug, and Cowboy that…"
+og_description = "Tools in Elixir, 2024, active in the last 48 months. Source on GitLab."
 og_image = "og/work-job-processor.png"
 schema = "project"
-keywords = ["job-processor", "Tools", "Elixir", "Tomas Korcak"]
+keywords = ["job-processor", "Tools", "Elixir", "2024", "GitLab", "Tomas Korcak", "korczis"]
 terms = ["elixir", "open-source", "repository", "commit"]
 
 [[extra.viz]]
@@ -29,5 +31,9 @@ tone = "night"
 **job-processor** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (100 %).
 
 The [repository](@/glossary/repository.md) was created in August 2024; its latest [commit](@/glossary/commit.md) is from 1 August 2024. It reads “initial version”. That places it among the projects active in the last 48 months.
+
+Its source is on [GitLab](https://gitlab.com/korczis/job-processor).
+
+Related work in [Tools](@/projects/tools.md): [simple\_geocoder](@/work/simple-geocoder.md) (2024), [corvidae](@/work/corvidae.md) (2025), [prismatic](@/work/prismatic.md) (2025) and [el-magico-cache](@/work/el-magico-cache.md) (2023).
 
 *How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 2 commits as a heartbeat, one lane per commit type (feat, fix, docs…), from a snapshot refreshed every 6 hours. The concepts below are explained in the [glossary](@/glossary/_index.md).

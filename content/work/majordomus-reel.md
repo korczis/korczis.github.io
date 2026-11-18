@@ -3,19 +3,21 @@
 title = "Majordomus reel"
 description = "A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound"
 template = "work.html"
-weight = 5
-updated = "2026-11-17T19:23:00Z"
+weight = 3
+updated = "2026-11-18T02:24:59Z"
 
 [taxonomies]
 tags = ["Media and art", "JavaScript", "HTML", "Shell"]
 
 [extra]
 repo = "majordomus-reel"
-og_title = "Majordomus reel: A promo reel rendered entirely from code."
+seo_title = "Majordomus reel: Media and art in JavaScript, 2026 · Tomas Korcak"
+og_title = "Majordomus reel: A promo reel rendered entirely from code"
+og_description = "Media and art in JavaScript, HTML and Shell, 2026, active in the last 12 months. Source on GitHub. Live site. Supervised by Majordomus."
 og_image = "og/work-majordomus-reel.png"
 schema = "project"
-keywords = ["Majordomus reel", "Media and art", "JavaScript", "HTML", "Shell", "Tomas Korcak"]
-terms = ["javascript", "html", "shell", "python", "data-visualisation", "github-pages", "repository", "commit", "open-source"]
+keywords = ["Majordomus reel", "majordomus-reel", "Media and art", "JavaScript", "HTML", "Shell", "ai-agents", "ffmpeg", "generative", "majordomus", "puppeteer", "video", "2026", "GitHub", "Tomas Korcak", "korczis"]
+terms = ["javascript", "html", "shell", "css", "python", "data-visualisation", "github-pages", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -26,10 +28,14 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**Majordomus reel** is a project in [Media and art](@/projects/media.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (51.2 %), with [HTML](@/glossary/html.md), [Shell](@/glossary/shell.md) and [Python](@/glossary/python.md).
+**Majordomus reel** is a project in [Media and art](@/projects/media.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (60.7 %), with [HTML](@/glossary/html.md), [Shell](@/glossary/shell.md) and [CSS](@/glossary/css.md).
 
-The [repository](@/glossary/repository.md) was created in October 2026; its latest [commit](@/glossary/commit.md) is from 17 November 2026. It reads “feat(facts): pre-render a release from the commit that declares it, publish only when the tag agrees”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created in October 2026; its latest [commit](@/glossary/commit.md) is from 18 November 2026. It reads “fix(quality): prove the recorded iteration read-only at finish”. That places it among the projects active in the last 12 months.
 
 It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/majordomus-reel/>.
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 25 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).
+Its source is on [GitHub](https://github.com/korczis/majordomus-reel).
+
+Related work in [Media and art](@/projects/media.md): [Sonic Playground](@/work/sonic-playground.md) (2026), [Catharsis as a Service](@/work/catharsis-as-a-service.md) (2026), [openttd-prismatic-bridge](@/work/openttd-prismatic-bridge.md) (2026) and [dj-schnapps](@/work/dj-schnapps.md) (2019).
+
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 30 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

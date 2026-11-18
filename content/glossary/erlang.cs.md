@@ -16,8 +16,8 @@ kind = "language"
 definition = "Jazyk a běhové prostředí z telekomunikací, navržené pro systémy, které musí běžet, i když jejich části selhávají."
 aliases = []
 reference = { title = "erlang.org", url = "https://www.erlang.org/" }
-pages = ["projects/learning.cs.md"]
-related = ["c", "cpp", "csharp", "elixir", "haskell", "java", "javascript", "repository"]
+pages = ["projects/learning.cs.md", "work/rustler-mix.cs.md", "work/skull-erlang.cs.md"]
+related = ["repository", "commit", "elixir", "open-source", "rust", "c", "cpp", "csharp"]
 og_title = "Erlang: slovník"
 og_image = "og/cs-glossary-erlang.png"
 keywords = ["Erlang", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

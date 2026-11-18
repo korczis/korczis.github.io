@@ -11,10 +11,12 @@ tags = ["Media and art", "HTML", "Python", "JavaScript"]
 
 [extra]
 repo = "catharsis-as-a-service"
-og_title = "Catharsis as a Service: An emotional state transition endpoint."
+seo_title = "Catharsis as a Service: Media and art in HTML, 2026 · Tomas Korcak"
+og_title = "Catharsis as a Service: An emotional state transition endpoint"
+og_description = "Media and art in HTML, Python and JavaScript, 2026, active in the last 12 months. Source on GitHub. Live site. Supervised by Majordomus."
 og_image = "og/work-catharsis-as-a-service.png"
 schema = "project"
-keywords = ["Catharsis as a Service", "Media and art", "HTML", "Python", "JavaScript", "Tomas Korcak"]
+keywords = ["Catharsis as a Service", "catharsis-as-a-service", "Media and art", "HTML", "Python", "JavaScript", "2026", "GitHub", "Tomas Korcak", "korczis"]
 terms = ["html", "python", "javascript", "css", "rust", "shell", "data-visualisation", "github-pages", "repository", "commit", "open-source"]
 
 [[extra.viz]]
@@ -31,5 +33,9 @@ tone = "night"
 The [repository](@/glossary/repository.md) was created in September 2026; its latest [commit](@/glossary/commit.md) is from 16 November 2026. It reads “Merge pull request \#3 from korczis/dependabot/npm\_and\_yarn/frontend-aae4353420”. That places it among the projects active in the last 12 months.
 
 It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/catharsis-as-a-service/>.
+
+Its source is on [GitHub](https://github.com/korczis/catharsis-as-a-service).
+
+Related work in [Media and art](@/projects/media.md): [Sonic Playground](@/work/sonic-playground.md) (2026), [Majordomus reel](@/work/majordomus-reel.md) (2026), [openttd-prismatic-bridge](@/work/openttd-prismatic-bridge.md) (2026) and [dj-schnapps](@/work/dj-schnapps.md) (2019).
 
 *How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 27 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

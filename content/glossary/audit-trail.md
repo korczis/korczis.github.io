@@ -16,8 +16,8 @@ kind = "concept"
 definition = "A chronological record of who did what and on which evidence, kept so that the work can be checked and retraced later."
 aliases = []
 reference = { title = "Audit trail (Wikipedia)", url = "https://en.wikipedia.org/wiki/Audit_trail" }
-pages = ["projects/security.md", "work/osint-case-ratcliffe-moscow-2026.md"]
-related = ["data-integration", "decision-support-system", "due-diligence", "html", "information-extraction", "insolvency", "knowledge-graph", "market-intelligence"]
+pages = ["projects/security.md", "work/magic.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/peacemaker.md", "work/ratnet.md", "work/zlown.md"]
+related = ["data-integration", "decision-support-system", "due-diligence", "information-extraction", "insolvency", "knowledge-graph", "market-intelligence", "mergers-and-acquisitions"]
 og_title = "Audit trail: glossary"
 og_image = "og/glossary-audit-trail.png"
 keywords = ["Audit trail", "Concept", "Glossary", "Tomas Korcak"]

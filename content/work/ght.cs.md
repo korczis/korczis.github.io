@@ -11,10 +11,12 @@ tags = ["Nástroje"]
 
 [extra]
 repo = "GHT"
+seo_title = "GHT: Nástroje, 2025 · Tomáš Korčák"
 og_title = "GHT: Nástroje"
+og_description = "Nástroje, 2025, aktivní za posledních 24 měsíců. Zdrojový kód: GitLab."
 og_image = "og/cs-work-ght.png"
 schema = "project"
-keywords = ["GHT", "Nástroje", "Tomáš Korčák"]
+keywords = ["GHT", "Nástroje", "2025", "GitLab", "Tomáš Korčák", "korczis"]
 terms = ["open-source", "repository", "commit"]
 
 [[extra.viz]]
@@ -29,5 +31,9 @@ tone = "night"
 **GHT** je projekt z kategorie [Nástroje](@/projects/tools.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 28. srpna 2025; poslední [commit](@/glossary/commit.cs.md) je z 28. srpna 2025. Zní „Edit README.md“. Patří tak mezi projekty aktivní za posledních 24 měsíců.
+
+Zdrojový kód: [GitLab](https://gitlab.com/korczis/GHT).
+
+Související práce v kategorii [Nástroje](@/projects/tools.cs.md): [comtesse](@/work/comtesse.cs.md) (2025), [prismatic](@/work/prismatic.cs.md) (2025), [u-tygra](@/work/u-tygra.cs.md) (2024–2025) a [corvidae](@/work/corvidae.cs.md) (2025).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje poslední 2 commity jako tep, jeden pruh na typ commitu (feat, fix, docs…), ze snímku obnovovaného každých 6 hodin. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

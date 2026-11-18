@@ -9,7 +9,7 @@
 <text x="156" y="124" font-size="20" font-family="JetBrains Mono, Menlo, monospace" fill="#9ca3af">korczis.github.io/glossary/</text>
 <text x="80" y="230" font-size="66" font-weight="800" fill="#f9fafb">Glossary: 62 terms,</text><text x="80" y="304" font-size="66" font-weight="800" fill="#f9fafb">defined and sourced.</text>
 <text x="80" y="404" font-size="26" fill="#9ca3af">The 62 terms this site explains itself with:</text><text x="80" y="440" font-size="26" fill="#9ca3af">languages, technologies and concepts, each</text><text x="80" y="476" font-size="26" fill="#9ca3af">defined, sourced and linked to every page…</text>
-<rect x="80" y="540" width="292" height="44" rx="22" fill="#1e3a8a"/>
+<rect x="80" y="540" width="312" height="44" rx="22" fill="#1e3a8a"/>
 <text x="104" y="569" font-size="20" font-weight="600" fill="#bfdbfe">Supervised by Majordomus</text>
 </g>
 </svg>

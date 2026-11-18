@@ -11,10 +11,12 @@ tags = ["Nástroje", "Python", "JavaScript", "HTML"]
 
 [extra]
 repo = "gists-search"
-og_title = "Gists search: Katalog, obohacení a hledání nad zrcadlem mých gistů."
+seo_title = "Gists search: Nástroje, Python, 2026 · Tomáš Korčák"
+og_title = "Gists search: Katalog, obohacení a hledání nad zrcadlem mých gistů"
+og_description = "Nástroje, Python, JavaScript a HTML, 2026, aktivní za posledních 12 měsíců. Zdrojový kód: GitHub. Živý web."
 og_image = "og/cs-work-gists-search.png"
 schema = "project"
-keywords = ["Gists search", "Nástroje", "Python", "JavaScript", "HTML", "Tomáš Korčák"]
+keywords = ["Gists search", "gists-search", "Nástroje", "Python", "JavaScript", "HTML", "2026", "GitHub", "Tomáš Korčák", "korczis"]
 terms = ["python", "javascript", "html", "shell", "open-source", "github-pages", "repository", "commit"]
 
 [[extra.viz]]
@@ -31,5 +33,9 @@ tone = "night"
 [Repozitář](@/glossary/repository.cs.md) vznikl 27. srpna 2026; poslední [commit](@/glossary/commit.cs.md) je z 27. srpna 2026. Zní „docs(gists): add README, architecture doc and deploy recipe“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 
 Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/gists-search/>.
+
+Zdrojový kód: [GitHub](https://github.com/korczis/gists-search).
+
+Související práce v kategorii [Nástroje](@/projects/tools.cs.md): [astronomists](@/work/astronomists.cs.md) (2026), [vomaste.cz](@/work/vomaste-cz.cs.md) (2026), [prismatic](@/work/prismatic.cs.md) (2025) a [comtesse](@/work/comtesse.cs.md) (2025).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje poslední 2 commity jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

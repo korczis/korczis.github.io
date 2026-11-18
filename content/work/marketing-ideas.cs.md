@@ -11,10 +11,12 @@ tags = ["Nástroje"]
 
 [extra]
 repo = "marketing-ideas"
+seo_title = "marketing-ideas: Nástroje, 2024 · Tomáš Korčák"
 og_title = "marketing-ideas: Nástroje"
+og_description = "Nástroje, 2024, aktivní za posledních 48 měsíců. Zdrojový kód: GitLab."
 og_image = "og/cs-work-marketing-ideas.png"
 schema = "project"
-keywords = ["marketing-ideas", "Nástroje", "Tomáš Korčák"]
+keywords = ["marketing-ideas", "Nástroje", "2024", "GitLab", "Tomáš Korčák", "korczis"]
 terms = ["open-source", "repository", "commit"]
 
 [[extra.viz]]
@@ -29,5 +31,9 @@ tone = "night"
 **marketing-ideas** je projekt z kategorie [Nástroje](@/projects/tools.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 17. dubna 2024; poslední [commit](@/glossary/commit.cs.md) je z 17. dubna 2024. Zní „Update README.md“. Patří tak mezi projekty aktivní za posledních 48 měsíců.
+
+Zdrojový kód: [GitLab](https://gitlab.com/korczis/marketing-ideas).
+
+Související práce v kategorii [Nástroje](@/projects/tools.cs.md): [simple\_geocoder](@/work/simple-geocoder.cs.md) (2024), [pissaleck](@/work/pissaleck.cs.md) (2024), [pdf\_renderer](@/work/pdf-renderer.cs.md) (2024) a [job-processor](@/work/job-processor.cs.md) (2024).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 6 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…), ze snímku obnovovaného každých 6 hodin. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

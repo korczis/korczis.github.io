@@ -3,18 +3,20 @@
 title = "Kompendium"
 description = "Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat."
 template = "work.html"
-weight = 8
-updated = "2026-11-17T06:29:33Z"
+weight = 5
+updated = "2026-11-18T00:53:25Z"
 
 [taxonomies]
 tags = ["Znalosti", "Elixir", "JavaScript", "Python"]
 
 [extra]
 repo = "kompendium-epistemicke-anihilace"
-og_title = "Kompendium: Defenzivní taxonomie epistemické a kognitivní manipulace."
+seo_title = "Kompendium: Znalosti, Elixir, 2026 · Tomáš Korčák"
+og_title = "Kompendium: Defenzivní taxonomie epistemické a kognitivní manipulace"
+og_description = "Znalosti, Elixir, JavaScript a Python, 2026, aktivní za posledních 12 měsíců. Zdrojový kód: GitHub. Živý web. Pod dohledem Majordomu."
 og_image = "og/cs-work-kompendium-epistemicke-anihilace.png"
 schema = "project"
-keywords = ["Kompendium", "Znalosti", "Elixir", "JavaScript", "Python", "Tomáš Korčák"]
+keywords = ["Kompendium", "kompendium-epistemicke-anihilace", "Znalosti", "Elixir", "JavaScript", "Python", "czech", "epistemology", "flowbite", "majordomus", "manipulation", "2026", "GitHub", "Tomáš Korčák", "korczis"]
 terms = ["elixir", "javascript", "python", "html", "rust", "shell", "zola", "cytoscape-js", "apache-echarts", "alpine-js", "flowbite-pro", "github-pages", "repository", "commit", "open-source"]
 
 [[extra.viz]]
@@ -28,10 +30,14 @@ tone = "night"
 +++
 **Kompendium** je projekt z kategorie [Znalosti](@/projects/knowledge.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (32,9 %), dále [JavaScript](@/glossary/javascript.cs.md), [Python](@/glossary/python.cs.md) a [HTML](@/glossary/html.cs.md).
 
-[Repozitář](@/glossary/repository.cs.md) vznikl 9. listopadu 2026; poslední [commit](@/glossary/commit.cs.md) je z 17. listopadu 2026. Zní „feat(scripts): platform-prose gate — refuse internal platform/runtime names in kompendium body prose“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+[Repozitář](@/glossary/repository.cs.md) vznikl 9. listopadu 2026; poslední [commit](@/glossary/commit.cs.md) je z 18. listopadu 2026. Zní „Merge origin/main (e1ad82c1) into train-1“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 
 Je postavený na [Zola](@/glossary/zola.cs.md), [Cytoscape.js](@/glossary/cytoscape-js.cs.md), [Apache ECharts](@/glossary/apache-echarts.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md) a [Flowbite Pro](@/glossary/flowbite-pro.cs.md).
 
 Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/kompendium-epistemicke-anihilace/>.
+
+Zdrojový kód: [GitHub](https://github.com/korczis/kompendium-epistemicke-anihilace).
+
+Související práce v kategorii [Znalosti](@/projects/knowledge.cs.md): [MinervaEye](@/work/minervaeye.cs.md) (2020–2021), [ReadingPhoneNumbersInRealTime](@/work/readingphonenumbersinrealtime.cs.md) (2021), [reading](@/work/reading.cs.md) (2019) a [books](@/work/books.cs.md) (2013).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 30 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

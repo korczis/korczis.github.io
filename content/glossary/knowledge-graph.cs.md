@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Znalosti uložené jako subjekty a vztahy mezi nimi, takže dotaz může sledovat vazby (kdo co vlastní, kdo kde sedí) místo spojování tabulek."
 aliases = []
 reference = { title = "Knowledge graph (Wikipedia)", url = "https://en.wikipedia.org/wiki/Knowledge_graph" }
-pages = ["projects/security.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md"]
-related = ["audit-trail", "data-integration", "decision-support-system", "due-diligence", "html", "information-extraction", "insolvency", "market-intelligence"]
+pages = ["projects/security.cs.md", "work/magic.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/peacemaker.cs.md", "work/ratnet.cs.md", "work/zlown.cs.md"]
+related = ["audit-trail", "data-integration", "decision-support-system", "due-diligence", "information-extraction", "insolvency", "market-intelligence", "mergers-and-acquisitions"]
 og_title = "Znalostní graf: slovník"
 og_image = "og/cs-glossary-knowledge-graph.png"
 keywords = ["Znalostní graf", "Knowledge graph", "Koncept", "Slovník", "Tomáš Korčák"]

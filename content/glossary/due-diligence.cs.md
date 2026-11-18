@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Prověrka firmy, osoby nebo majetku před rozhodnutím, například před akvizicí nebo investicí: kdo ji vlastní, co drží, co dluží a co se může pokazit."
 aliases = []
 reference = { title = "Due diligence (Wikipedia)", url = "https://en.wikipedia.org/wiki/Due_diligence" }
-pages = ["hire.cs.md", "projects/security.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md"]
-related = ["mergers-and-acquisitions", "osint", "audit-trail", "data-integration", "decision-support-system", "html", "information-extraction", "insolvency"]
+pages = ["hire.cs.md", "projects/security.cs.md", "work/magic.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/peacemaker.cs.md", "work/ratnet.cs.md", "work/zlown.cs.md"]
+related = ["mergers-and-acquisitions", "osint", "audit-trail", "data-integration", "decision-support-system", "information-extraction", "insolvency", "knowledge-graph"]
 og_title = "Due diligence: slovník"
 og_image = "og/cs-glossary-due-diligence.png"
 keywords = ["Due diligence", "Koncept", "Slovník", "Tomáš Korčák"]

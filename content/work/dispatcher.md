@@ -11,10 +11,12 @@ tags = ["Tools", "TypeScript", "JavaScript"]
 
 [extra]
 repo = "dispatcher"
-og_title = "dispatcher: Tools"
+seo_title = "dispatcher: 1. Introduction 2. Motivation 3, 2024 · Tomas Korcak"
+og_title = "dispatcher: 1. Introduction 2. Motivation 3"
+og_description = "Tools in TypeScript and JavaScript, 2024, active in the last 48 months. Source on GitLab."
 og_image = "og/work-dispatcher.png"
 schema = "project"
-keywords = ["dispatcher", "Tools", "TypeScript", "JavaScript", "Tomas Korcak"]
+keywords = ["dispatcher", "Tools", "TypeScript", "JavaScript", "2024", "GitLab", "Tomas Korcak", "korczis"]
 terms = ["typescript", "javascript", "open-source", "repository", "commit"]
 
 [[extra.viz]]
@@ -29,5 +31,9 @@ tone = "night"
 **dispatcher** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [TypeScript](@/glossary/typescript.md) (83 %), with [JavaScript](@/glossary/javascript.md).
 
 The [repository](@/glossary/repository.md) was created in October 2024; its latest [commit](@/glossary/commit.md) is from 19 October 2024. It reads “feat: update doc”. That places it among the projects active in the last 48 months.
+
+Its source is on [GitLab](https://gitlab.com/korczis/dispatcher).
+
+Related work in [Tools](@/projects/tools.md): [astronomists](@/work/astronomists.md) (2026), [bubbler](@/work/bubbler.md) (2024), [u-tygra](@/work/u-tygra.md) (2024–2025) and [prismatic](@/work/prismatic.md) (2025).
 
 *How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 15 commits as a heartbeat, one lane per commit type (feat, fix, docs…), from a snapshot refreshed every 6 hours. The concepts below are explained in the [glossary](@/glossary/_index.md).

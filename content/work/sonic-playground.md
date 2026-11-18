@@ -3,7 +3,7 @@
 title = "Sonic Playground"
 description = "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme"
 template = "work.html"
-weight = 2
+weight = 7
 updated = "2026-11-17T20:47:37Z"
 
 [taxonomies]
@@ -11,10 +11,12 @@ tags = ["Media and art", "Python", "JavaScript", "HTML"]
 
 [extra]
 repo = "sonic-playground"
-og_title = "Sonic Playground: Music that moves you, not algorithmic noise."
+seo_title = "Sonic Playground: Media and art in Python, 2026 · Tomas Korcak"
+og_title = "Sonic Playground: Music that moves you, not algorithmic noise"
+og_description = "Media and art in Python, JavaScript and HTML, 2026, active in the last 12 months. Source on GitHub. Live site. Supervised by Majordomus."
 og_image = "og/work-sonic-playground.png"
 schema = "project"
-keywords = ["Sonic Playground", "Media and art", "Python", "JavaScript", "HTML", "Tomas Korcak"]
+keywords = ["Sonic Playground", "sonic-playground", "Media and art", "Python", "JavaScript", "HTML", "2026", "GitHub", "Tomas Korcak", "korczis"]
 terms = ["python", "javascript", "html", "shell", "css", "elixir", "data-visualisation", "github-pages", "repository", "commit", "open-source"]
 
 [[extra.viz]]
@@ -33,5 +35,9 @@ The [repository](@/glossary/repository.md) was created in November 2026; its lat
 It is built with [Elixir](@/glossary/elixir.md).
 
 It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/sonic-playground/>.
+
+Its source is on [GitHub](https://github.com/korczis/sonic-playground).
+
+Related work in [Media and art](@/projects/media.md): [Majordomus reel](@/work/majordomus-reel.md) (2026), [Catharsis as a Service](@/work/catharsis-as-a-service.md) (2026), [openttd-prismatic-bridge](@/work/openttd-prismatic-bridge.md) (2026) and [dj-schnapps](@/work/dj-schnapps.md) (2019).
 
 *How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 30 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

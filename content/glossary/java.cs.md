@@ -16,8 +16,8 @@ kind = "language"
 definition = "Objektově orientovaný jazyk nad Java Virtual Machine, dlouho výchozí volba podnikového softwaru."
 aliases = []
 reference = { title = "dev.java", url = "https://dev.java/learn/" }
-pages = ["projects/learning.cs.md"]
-related = ["c", "cpp", "csharp", "elixir", "erlang", "haskell", "javascript", "repository"]
+pages = ["projects/learning.cs.md", "work/magic.cs.md", "work/skull-java.cs.md"]
+related = ["repository", "c", "commit", "elixir", "javascript", "open-source", "rust", "audit-trail"]
 og_title = "Java: slovník"
 og_image = "og/cs-glossary-java.png"
 keywords = ["Java", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

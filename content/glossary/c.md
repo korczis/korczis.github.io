@@ -16,8 +16,8 @@ kind = "language"
 definition = "The small, fast systems language beneath operating systems and most other languages."
 aliases = []
 reference = { title = "C (Wikipedia)", url = "https://en.wikipedia.org/wiki/C_(programming_language)" }
-pages = ["projects/learning.md"]
-related = ["cpp", "csharp", "elixir", "erlang", "haskell", "java", "javascript", "repository"]
+pages = ["projects/learning.md", "work/algorithms.md", "work/icave.md", "work/magic.md", "work/peacemaker.md", "work/skull-c.md"]
+related = ["repository", "commit", "open-source", "cpp", "audit-trail", "data-integration", "decision-support-system", "due-diligence"]
 og_title = "C: glossary"
 og_image = "og/glossary-c.png"
 keywords = ["C (programming language)", "Programming language", "Glossary", "Tomas Korcak"]

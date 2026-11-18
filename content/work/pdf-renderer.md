@@ -11,10 +11,12 @@ tags = ["Tools", "Python", "Dockerfile", "Makefile"]
 
 [extra]
 repo = "pdf_renderer"
-og_title = "pdf_renderer: Tools"
+seo_title = "pdf_renderer: Tools in Python, 2024 · Tomas Korcak"
+og_title = "pdf_renderer: Create a service that accepts PDF files containing one or more pages"
+og_description = "Tools in Python, Dockerfile and Makefile, 2024, active in the last 48 months. Source on GitLab."
 og_image = "og/work-pdf-renderer.png"
 schema = "project"
-keywords = ["pdf_renderer", "Tools", "Python", "Dockerfile", "Makefile", "Tomas Korcak"]
+keywords = ["pdf_renderer", "Tools", "Python", "Dockerfile", "Makefile", "2024", "GitLab", "Tomas Korcak", "korczis"]
 terms = ["python", "dockerfile", "open-source", "repository", "commit"]
 
 [[extra.viz]]
@@ -29,5 +31,9 @@ tone = "night"
 **pdf\_renderer** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [Python](@/glossary/python.md) (94.2 %), with [Dockerfile](@/glossary/dockerfile.md) and Makefile.
 
 The [repository](@/glossary/repository.md) was created in March 2024; its latest [commit](@/glossary/commit.md) is from 25 March 2024. It reads “Initial commit”. That places it among the projects active in the last 48 months.
+
+Its source is on [GitLab](https://gitlab.com/korczis/pdf_renderer).
+
+Related work in [Tools](@/projects/tools.md): [el-magico-cache](@/work/el-magico-cache.md) (2023), [prismatic](@/work/prismatic.md) (2025), [rest-hello-world-benchmark](@/work/rest-hello-world-benchmark.md) (2022) and [astudo](@/work/astudo.md) (2022).
 
 *How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 2 commits as a heartbeat, one lane per commit type (feat, fix, docs…), from a snapshot refreshed every 6 hours. The concepts below are explained in the [glossary](@/glossary/_index.md).

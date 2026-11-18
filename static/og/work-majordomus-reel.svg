@@ -6,10 +6,10 @@
 <rect x="80" y="72" width="56" height="56" rx="12" fill="#1d4ed8"/>
 <g fill="none" stroke="#fff" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"><path d="M97.5 86v28M97.5 100l15.7-14M104.5 93.9l12.3 20.1"/></g>
 <text x="156" y="99" font-size="24" font-weight="700" fill="#f9fafb">Tomas Korcak</text>
-<text x="156" y="124" font-size="20" font-family="JetBrains Mono, Menlo, monospace" fill="#9ca3af">korczis.github.io/work-majordomus-reel/</text>
-<text x="80" y="230" font-size="58" font-weight="800" fill="#f9fafb">Majordomus reel: A</text><text x="80" y="296" font-size="58" font-weight="800" fill="#f9fafb">promo reel rendered</text><text x="80" y="362" font-size="58" font-weight="800" fill="#f9fafb">entirely from code.</text>
-<text x="80" y="454" font-size="26" fill="#9ca3af">A promo reel for Majordomus rendered entirely</text><text x="80" y="490" font-size="26" fill="#9ca3af">from code: voice, frames, music and sound</text>
-<rect x="80" y="540" width="292" height="44" rx="22" fill="#1e3a8a"/>
+<text x="156" y="124" font-size="20" font-family="JetBrains Mono, Menlo, monospace" fill="#9ca3af">korczis.github.io/work/majordomus-reel/</text>
+<text x="80" y="230" font-size="58" font-weight="800" fill="#f9fafb">Majordomus reel: A</text><text x="80" y="296" font-size="58" font-weight="800" fill="#f9fafb">promo reel rendered</text><text x="80" y="362" font-size="58" font-weight="800" fill="#f9fafb">entirely from code</text>
+<text x="80" y="454" font-size="26" fill="#9ca3af">Media and art in JavaScript, HTML and Shell,</text><text x="80" y="490" font-size="26" fill="#9ca3af">2026, active in the last 12 months. Source on</text><text x="80" y="526" font-size="26" fill="#9ca3af">GitHub. Live site. Supervised by Majordomus.</text>
+<rect x="80" y="540" width="312" height="44" rx="22" fill="#1e3a8a"/>
 <text x="104" y="569" font-size="20" font-weight="600" fill="#bfdbfe">Supervised by Majordomus</text>
 </g>
 </svg>

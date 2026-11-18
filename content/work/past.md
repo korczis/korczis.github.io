@@ -11,10 +11,12 @@ tags = ["Tools"]
 
 [extra]
 repo = "past"
-og_title = "past: Tools"
+seo_title = "past: Tools, 2025–2026 · Tomas Korcak"
+og_title = "past: \"Capture the soul of the story, not just its words.\""
+og_description = "Tools, 2025–2026, active in the last 12 months. Source on GitLab."
 og_image = "og/work-past.png"
 schema = "project"
-keywords = ["past", "Tools", "Tomas Korcak"]
+keywords = ["past", "Tools", "2025–2026", "GitLab", "Tomas Korcak", "korczis"]
 terms = ["open-source", "repository", "commit"]
 
 [[extra.viz]]
@@ -29,5 +31,9 @@ tone = "night"
 **past** is a project in [Tools](@/projects/tools.md).
 
 The [repository](@/glossary/repository.md) was created in April 2025; its latest [commit](@/glossary/commit.md) is from 4 February 2026. It reads “feat(aiad): inject AIAD v1.0.0 infrastructure”. That places it among the projects active in the last 12 months.
+
+Its source is on [GitLab](https://gitlab.com/korczis/past).
+
+Related work in [Tools](@/projects/tools.md): [prism](@/work/prism.md) (2024–2026), [the-psycho](@/work/the-psycho.md) (2025–2026), [tinder-nomics](@/work/tinder-nomics.md) (2025–2026) and [GHT](@/work/ght.md) (2025).
 
 *How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 2 commits as a heartbeat, one lane per commit type (feat, fix, docs…), from a snapshot refreshed every 6 hours. The concepts below are explained in the [glossary](@/glossary/_index.md).

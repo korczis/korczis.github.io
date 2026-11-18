@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Open-source intelligence: knowledge built from publicly available sources, with every claim traceable to its source."
 aliases = []
 reference = { title = "OSINT (Wikipedia)", url = "https://en.wikipedia.org/wiki/Open-source_intelligence" }
-pages = ["about.md", "hire.md", "projects/_index.md", "projects/security.md", "work/osint-case-ratcliffe-moscow-2026.md"]
-related = ["open-source", "ai-agent", "due-diligence", "mergers-and-acquisitions", "repository", "rust", "audit-trail", "data-integration"]
+pages = ["about.md", "hire.md", "projects/_index.md", "projects/security.md", "work/magic.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/peacemaker.md", "work/ratnet.md", "work/zlown.md"]
+related = ["open-source", "due-diligence", "mergers-and-acquisitions", "repository", "audit-trail", "data-integration", "decision-support-system", "information-extraction"]
 og_title = "OSINT: glossary"
 og_image = "og/glossary-osint.png"
 keywords = ["OSINT", "Concept", "Glossary", "Tomas Korcak"]

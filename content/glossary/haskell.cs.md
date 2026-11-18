@@ -16,8 +16,8 @@ kind = "language"
 definition = "Čistě funkcionální jazyk s líným vyhodnocováním a silným typovým systémem; místo, kde se učí myslet v typech."
 aliases = []
 reference = { title = "haskell.org", url = "https://www.haskell.org/" }
-pages = ["projects/learning.cs.md", "projects/science.cs.md"]
-related = ["cpp", "elixir", "javascript", "repository", "rust", "alpine-js", "apache-echarts", "c"]
+pages = ["projects/learning.cs.md", "projects/science.cs.md", "work/haskell-world.cs.md", "work/skull-haskell.cs.md"]
+related = ["repository", "commit", "cpp", "data-visualisation", "elixir", "javascript", "open-source", "rust"]
 og_title = "Haskell: slovník"
 og_image = "og/cs-glossary-haskell.png"
 keywords = ["Haskell", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

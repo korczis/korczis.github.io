@@ -4,18 +4,18 @@ title = "Web"
 description = "Websites and web applications: single-page apps, Phoenix and Elm frontends, landing pages and the sites of friends."
 template = "category.html"
 weight = 8
-updated = "2026-11-17T12:21:41Z"
+updated = "2026-11-18T02:43:55Z"
 
 [taxonomies]
-tags = ["Web", "korczis.github.io", "ApolloCrawler-github-io", "annasabatova-cz", "korczis-com"]
+tags = ["Web", "korczis.github.io", "ApolloCrawler-github-io", "korczis-com", "korczis-github-com"]
 
 [extra]
 category = "web"
-og_title = "Web: 16 repositories."
+og_title = "Web: 14 repositories."
 og_image = "og/category-web.png"
 schema = "collection"
-terms = ["static-site-generator", "css", "javascript", "html", "elixir", "repository"]
-keywords = ["Web", "korczis.github.io", "ApolloCrawler-github-io", "annasabatova-cz", "korczis-com", "korczis-github-com", "pavian-eu", "Tomas Korcak"]
+terms = ["static-site-generator", "javascript", "css", "html", "elixir", "repository"]
+keywords = ["Web", "korczis.github.io", "ApolloCrawler-github-io", "korczis-com", "korczis-github-com", "korczis.gitlab.io", "nestravenkam", "Tomas Korcak"]
 
 [[extra.viz]]
 kind = "constellation"
@@ -28,7 +28,7 @@ tone = "night"
 +++
 Websites and web applications: single-page apps, Phoenix and Elm frontends, landing pages and the sites of friends.
 
-The category holds 16 original repositories, written most often in [CSS](@/glossary/css.md), [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md), ApacheConf and [Elixir](@/glossary/elixir.md).
+The category holds 14 original repositories, written most often in [JavaScript](@/glossary/javascript.md), [CSS](@/glossary/css.md), [HTML](@/glossary/html.md), ApacheConf and [Elixir](@/glossary/elixir.md).
 
 Key concept: [Static site generator](@/glossary/static-site-generator.md).
 

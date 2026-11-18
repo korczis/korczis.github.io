@@ -16,8 +16,8 @@ kind = "language"
 definition = "Systémový jazyk, který zaručuje bezpečnost paměti bez garbage collectoru; je v něm napsaný Majordomus."
 aliases = []
 reference = { title = "The Rust Programming Language", url = "https://doc.rust-lang.org/book/" }
-pages = ["about.cs.md", "hire.cs.md", "projects/ai.cs.md", "projects/data.cs.md", "projects/learning.cs.md", "projects/libraries.cs.md", "projects/science.cs.md", "projects/security.cs.md", "projects/tools.cs.md", "work/algoglyph.cs.md", "work/catharsis-as-a-service.cs.md", "work/comtesse.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/meili-rsex.cs.md", "work/prismatic-majordomus.cs.md"]
-related = ["repository", "elixir", "javascript", "open-source", "shell", "commit", "html", "python"]
+pages = ["about.cs.md", "hire.cs.md", "projects/ai.cs.md", "projects/data.cs.md", "projects/learning.cs.md", "projects/libraries.cs.md", "projects/science.cs.md", "projects/security.cs.md", "projects/tools.cs.md", "work/algoglyph.cs.md", "work/astudo.cs.md", "work/bcnode-old.cs.md", "work/catharsis-as-a-service.cs.md", "work/charon.cs.md", "work/comtesse.cs.md", "work/ctu-cz.cs.md", "work/easy-plugin-plugins.cs.md", "work/gauc-ex.cs.md", "work/gooddata-fs.cs.md", "work/graph-flow.cs.md", "work/happ.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/magic.cs.md", "work/mapoffacts.cs.md", "work/maze-rs.cs.md", "work/meili-rsex.cs.md", "work/prismatic-majordomus.cs.md", "work/rustas.cs.md", "work/rustler-mix.cs.md", "work/rustler-test.cs.md", "work/skull-rust.cs.md", "work/sli2dli.cs.md", "work/streamflow.cs.md", "work/the-scratch.cs.md", "work/wims.cs.md", "work/zaas.cs.md"]
+related = ["repository", "open-source", "commit", "elixir", "javascript", "html", "shell", "data-visualisation"]
 og_title = "Rust: slovník"
 og_image = "og/cs-glossary-rust.png"
 keywords = ["Rust", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

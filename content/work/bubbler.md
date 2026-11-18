@@ -11,10 +11,12 @@ tags = ["Tools", "JavaScript", "HTML", "CSS"]
 
 [extra]
 repo = "bubbler"
-og_title = "bubbler: Bubbler is a simple JavaScript application that generates a speech bubble with dy"
+seo_title = "bubbler: Tools in JavaScript, 2024 · Tomas Korcak"
+og_title = "bubbler: Bubbler is a simple JavaScript application that generates a speech bubble…"
+og_description = "Tools in JavaScript, HTML and CSS, 2024, active in the last 48 months. Source on GitHub. Live site."
 og_image = "og/work-bubbler.png"
 schema = "project"
-keywords = ["bubbler", "Tools", "JavaScript", "HTML", "CSS", "Tomas Korcak"]
+keywords = ["bubbler", "Tools", "JavaScript", "HTML", "CSS", "2024", "GitHub", "Tomas Korcak", "korczis"]
 terms = ["javascript", "html", "css", "open-source", "github-pages", "repository", "commit"]
 
 [[extra.viz]]
@@ -31,5 +33,9 @@ tone = "night"
 The [repository](@/glossary/repository.md) was created in September 2024; its latest [commit](@/glossary/commit.md) is from 16 September 2024. It reads “feat: add OG tags”. That places it among the projects active in the last 48 months.
 
 It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/bubbler/>.
+
+Its source is on [GitHub](https://github.com/korczis/bubbler).
+
+Related work in [Tools](@/projects/tools.md): [u-tygra](@/work/u-tygra.md) (2024–2025), [prismatic](@/work/prismatic.md) (2025), [astronomists](@/work/astronomists.md) (2026) and [rest-hello-world-benchmark](@/work/rest-hello-world-benchmark.md) (2022).
 
 *How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 30 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

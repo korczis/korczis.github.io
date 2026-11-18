@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Software that gathers data and analysis into reports and views that help people make a decision, rather than making it for them."
 aliases = []
 reference = { title = "Decision support system (Wikipedia)", url = "https://en.wikipedia.org/wiki/Decision_support_system" }
-pages = ["projects/security.md", "work/osint-case-ratcliffe-moscow-2026.md"]
-related = ["audit-trail", "data-integration", "due-diligence", "html", "information-extraction", "insolvency", "knowledge-graph", "market-intelligence"]
+pages = ["projects/security.md", "work/magic.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/peacemaker.md", "work/ratnet.md", "work/zlown.md"]
+related = ["audit-trail", "data-integration", "due-diligence", "information-extraction", "insolvency", "knowledge-graph", "market-intelligence", "mergers-and-acquisitions"]
 og_title = "Decision support system: glossary"
 og_image = "og/glossary-decision-support-system.png"
 keywords = ["Decision support system", "Concept", "Glossary", "Tomas Korcak"]

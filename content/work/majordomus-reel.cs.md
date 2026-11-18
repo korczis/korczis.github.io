@@ -3,19 +3,21 @@
 title = "Majordomus reel"
 description = "Hlas, snímky, hudba i zvuk, vše generované a verzované jako software."
 template = "work.html"
-weight = 5
-updated = "2026-11-17T19:23:00Z"
+weight = 3
+updated = "2026-11-18T02:24:59Z"
 
 [taxonomies]
 tags = ["Média a umění", "JavaScript", "HTML", "Shell"]
 
 [extra]
 repo = "majordomus-reel"
-og_title = "Majordomus reel: Promo video renderované celé z kódu."
+seo_title = "Majordomus reel: Média a umění, JavaScript, 2026 · Tomáš Korčák"
+og_title = "Majordomus reel: Promo video renderované celé z kódu"
+og_description = "Média a umění, JavaScript, HTML a Shell, 2026, aktivní za posledních 12 měsíců. Zdrojový kód: GitHub. Živý web. Pod dohledem Majordomu."
 og_image = "og/cs-work-majordomus-reel.png"
 schema = "project"
-keywords = ["Majordomus reel", "Média a umění", "JavaScript", "HTML", "Shell", "Tomáš Korčák"]
-terms = ["javascript", "html", "shell", "python", "data-visualisation", "github-pages", "repository", "commit", "open-source"]
+keywords = ["Majordomus reel", "majordomus-reel", "Média a umění", "JavaScript", "HTML", "Shell", "ai-agents", "ffmpeg", "generative", "majordomus", "puppeteer", "video", "2026", "GitHub", "Tomáš Korčák", "korczis"]
+terms = ["javascript", "html", "shell", "css", "python", "data-visualisation", "github-pages", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -26,10 +28,14 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**Majordomus reel** je projekt z kategorie [Média a umění](@/projects/media.cs.md). Jeho kód je napsaný hlavně v jazyce [JavaScript](@/glossary/javascript.cs.md) (51,2 %), dále [HTML](@/glossary/html.cs.md), [Shell](@/glossary/shell.cs.md) a [Python](@/glossary/python.cs.md).
+**Majordomus reel** je projekt z kategorie [Média a umění](@/projects/media.cs.md). Jeho kód je napsaný hlavně v jazyce [JavaScript](@/glossary/javascript.cs.md) (60,7 %), dále [HTML](@/glossary/html.cs.md), [Shell](@/glossary/shell.cs.md) a [CSS](@/glossary/css.cs.md).
 
-[Repozitář](@/glossary/repository.cs.md) vznikl 23. října 2026; poslední [commit](@/glossary/commit.cs.md) je z 17. listopadu 2026. Zní „feat(facts): pre-render a release from the commit that declares it, publish only when the tag agrees“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+[Repozitář](@/glossary/repository.cs.md) vznikl 23. října 2026; poslední [commit](@/glossary/commit.cs.md) je z 18. listopadu 2026. Zní „fix(quality): prove the recorded iteration read-only at finish“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 
 Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/majordomus-reel/>.
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 25 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+Zdrojový kód: [GitHub](https://github.com/korczis/majordomus-reel).
+
+Související práce v kategorii [Média a umění](@/projects/media.cs.md): [Sonic Playground](@/work/sonic-playground.cs.md) (2026), [Catharsis as a Service](@/work/catharsis-as-a-service.cs.md) (2026), [openttd-prismatic-bridge](@/work/openttd-prismatic-bridge.cs.md) (2026) a [dj-schnapps](@/work/dj-schnapps.cs.md) (2019).
+
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 30 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

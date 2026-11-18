@@ -16,8 +16,8 @@ kind = "concept"
 definition = "The state of a debtor who cannot pay their debts; insolvency proceedings and the creditors' claims in them are recorded in public registers."
 aliases = []
 reference = { title = "Insolvency (Wikipedia)", url = "https://en.wikipedia.org/wiki/Insolvency" }
-pages = ["projects/security.md", "work/osint-case-ratcliffe-moscow-2026.md"]
-related = ["audit-trail", "data-integration", "decision-support-system", "due-diligence", "html", "information-extraction", "knowledge-graph", "market-intelligence"]
+pages = ["projects/security.md", "work/magic.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/peacemaker.md", "work/ratnet.md", "work/zlown.md"]
+related = ["audit-trail", "data-integration", "decision-support-system", "due-diligence", "information-extraction", "knowledge-graph", "market-intelligence", "mergers-and-acquisitions"]
 og_title = "Insolvency: glossary"
 og_image = "og/glossary-insolvency.png"
 keywords = ["Insolvency", "Concept", "Glossary", "Tomas Korcak"]

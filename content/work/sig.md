@@ -11,10 +11,12 @@ tags = ["AI engineering", "Elixir", "HTML+EEX", "Shell"]
 
 [extra]
 repo = "sig"
-og_title = "sig: distributed cognitive framework in Elixir/OTP."
+seo_title = "sig: AI engineering in Elixir, 2025–2026 · Tomas Korcak"
+og_title = "sig: distributed cognitive framework in Elixir/OTP"
+og_description = "AI engineering in Elixir, HTML+EEX and Shell, 2025–2026, active in the last 12 months. Source on GitLab."
 og_image = "og/work-sig.png"
 schema = "project"
-keywords = ["sig", "AI engineering", "Elixir", "HTML+EEX", "Shell", "Tomas Korcak"]
+keywords = ["sig", "AI engineering", "Elixir", "HTML+EEX", "Shell", "AI", "Knowledge representation and reasoning", "LLMs", "cognitive-science", "multi-agent-systems", "2025–2026", "GitLab", "Tomas Korcak", "korczis"]
 terms = ["elixir", "shell", "typescript", "ai-agent", "repository", "commit", "open-source"]
 
 [[extra.viz]]
@@ -29,5 +31,9 @@ tone = "night"
 **sig** is a project in [AI engineering](@/projects/ai.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (95.6 %), with HTML+EEX, [Shell](@/glossary/shell.md) and [TypeScript](@/glossary/typescript.md).
 
 The [repository](@/glossary/repository.md) was created in August 2025; its latest [commit](@/glossary/commit.md) is from 4 February 2026. It reads “feat(aiad): inject AIAD v1.0.0 infrastructure”. That places it among the projects active in the last 12 months.
+
+Its source is on [GitLab](https://gitlab.com/korczis/sig).
+
+Related work in [AI engineering](@/projects/ai.md): [llm](@/work/llm.md) (2026), [Majordomus](@/work/prismatic-majordomus.md) (2026), [edna](@/work/edna.md) (2025) and [cognitive-reasoning](@/work/cognitive-reasoning.md) (2025).
 
 *How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 30 commits as a heartbeat, one lane per commit type (feat, fix, docs…), from a snapshot refreshed every 6 hours. The concepts below are explained in the [glossary](@/glossary/_index.md).

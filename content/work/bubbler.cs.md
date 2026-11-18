@@ -11,10 +11,12 @@ tags = ["Nástroje", "JavaScript", "HTML", "CSS"]
 
 [extra]
 repo = "bubbler"
-og_title = "bubbler: Nástroje"
+seo_title = "bubbler: Nástroje, JavaScript, 2024 · Tomáš Korčák"
+og_title = "bubbler: Nástroje, JavaScript"
+og_description = "Nástroje, JavaScript, HTML a CSS, 2024, aktivní za posledních 48 měsíců. Zdrojový kód: GitHub. Živý web."
 og_image = "og/cs-work-bubbler.png"
 schema = "project"
-keywords = ["bubbler", "Nástroje", "JavaScript", "HTML", "CSS", "Tomáš Korčák"]
+keywords = ["bubbler", "Nástroje", "JavaScript", "HTML", "CSS", "2024", "GitHub", "Tomáš Korčák", "korczis"]
 terms = ["javascript", "html", "css", "open-source", "github-pages", "repository", "commit"]
 
 [[extra.viz]]
@@ -31,5 +33,9 @@ tone = "night"
 [Repozitář](@/glossary/repository.cs.md) vznikl 15. září 2024; poslední [commit](@/glossary/commit.cs.md) je z 16. září 2024. Zní „feat: add OG tags“. Patří tak mezi projekty aktivní za posledních 48 měsíců.
 
 Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/bubbler/>.
+
+Zdrojový kód: [GitHub](https://github.com/korczis/bubbler).
+
+Související práce v kategorii [Nástroje](@/projects/tools.cs.md): [u-tygra](@/work/u-tygra.cs.md) (2024–2025), [prismatic](@/work/prismatic.cs.md) (2025), [astronomists](@/work/astronomists.cs.md) (2026) a [rest-hello-world-benchmark](@/work/rest-hello-world-benchmark.cs.md) (2022).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 30 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

@@ -3,7 +3,7 @@
 title = "algoglyph"
 description = "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured…"
 template = "work.html"
-weight = 6
+weight = 8
 updated = "2026-11-17T15:34:34Z"
 
 [taxonomies]
@@ -11,10 +11,12 @@ tags = ["Science and visualisation", "TypeScript", "Rust", "JavaScript"]
 
 [extra]
 repo = "algoglyph"
-og_title = "algoglyph: Algorithms and physics drawn as glyphs."
+seo_title = "algoglyph: Algorithms and physics drawn as glyphs, 2026 · Tomas Korcak"
+og_title = "algoglyph: Algorithms and physics drawn as glyphs"
+og_description = "Science and visualisation in TypeScript, Rust and JavaScript, 2026, active in the last 12 months. Source on GitHub. Live site. Supervised by Majordomus."
 og_image = "og/work-algoglyph.png"
 schema = "project"
-keywords = ["algoglyph", "Science and visualisation", "TypeScript", "Rust", "JavaScript", "Tomas Korcak"]
+keywords = ["algoglyph", "Science and visualisation", "TypeScript", "Rust", "JavaScript", "algorithms", "alpinejs", "creative-coding", "data-visualization", "flowbite", "generative-art", "2026", "GitHub", "Tomas Korcak", "korczis"]
 terms = ["typescript", "rust", "javascript", "html", "shell", "p5-js", "apache-echarts", "alpine-js", "flowbite-pro", "data-visualisation", "github-pages", "repository", "commit", "open-source"]
 
 [[extra.viz]]
@@ -33,5 +35,9 @@ The [repository](@/glossary/repository.md) was created in November 2026; its lat
 It is built with [p5.js](@/glossary/p5-js.md), [Apache ECharts](@/glossary/apache-echarts.md), [Alpine.js](@/glossary/alpine-js.md) and [Flowbite Pro](@/glossary/flowbite-pro.md).
 
 It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/algoglyph/>.
+
+Its source is on [GitHub](https://github.com/korczis/algoglyph).
+
+Related work in [Science and visualisation](@/projects/science.md): [Oscilla](@/work/oscilla.md) (2026), [maze](@/work/maze.md) (2016), [maze-rs](@/work/maze-rs.md) (2016) and [rustas](@/work/rustas.md) (2018).
 
 *How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 30 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

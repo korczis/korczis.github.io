@@ -12,7 +12,7 @@
 - [Projects](https://korczis.github.io/projects/): Every project in the catalogue: what it is, what it is built with, whether it is live, and whether Majordomus supervises it.
 - [Repositories](https://korczis.github.io/repositories/): Every original public repository on GitHub and GitLab, merged by name, with its inferred category, language and both links.
 - [Stack](https://korczis.github.io/stack/): The tools and practices behind every project, and how this site itself is built, checked and deployed.
-- [Recent work](https://korczis.github.io/work/): Every project with a commit in the last 48 months, by period (12, 24, 48): 43 repositories on GitHub and GitLab, each with its own page.
+- [Work](https://korczis.github.io/work/): All 205 original repositories on GitHub and GitLab since 2012, each with its own page: 43 active in the last 48 months, the rest as dated archive.
 - [Tomáš Korčák (cs)](https://korczis.github.io/cs/): Software, který svou práci dokládá: AI agenti, kteří prokazují výsledky, poctivé přístroje v prohlížeči, ověřitelné znalosti.
 
 ## AI engineering

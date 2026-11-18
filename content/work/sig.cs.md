@@ -11,10 +11,12 @@ tags = ["Inženýrství AI", "Elixir", "HTML+EEX", "Shell"]
 
 [extra]
 repo = "sig"
-og_title = "sig: Inženýrství AI"
+seo_title = "sig: Inženýrství AI, Elixir, 2025–2026 · Tomáš Korčák"
+og_title = "sig: Inženýrství AI, Elixir"
+og_description = "Inženýrství AI, Elixir, HTML+EEX a Shell, 2025–2026, aktivní za posledních 12 měsíců. Zdrojový kód: GitLab."
 og_image = "og/cs-work-sig.png"
 schema = "project"
-keywords = ["sig", "Inženýrství AI", "Elixir", "HTML+EEX", "Shell", "Tomáš Korčák"]
+keywords = ["sig", "Inženýrství AI", "Elixir", "HTML+EEX", "Shell", "AI", "Knowledge representation and reasoning", "LLMs", "cognitive-science", "multi-agent-systems", "2025–2026", "GitLab", "Tomáš Korčák", "korczis"]
 terms = ["elixir", "shell", "typescript", "ai-agent", "repository", "commit", "open-source"]
 
 [[extra.viz]]
@@ -29,5 +31,9 @@ tone = "night"
 **sig** je projekt z kategorie [Inženýrství AI](@/projects/ai.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (95,6 %), dále HTML+EEX, [Shell](@/glossary/shell.cs.md) a [TypeScript](@/glossary/typescript.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 23. srpna 2025; poslední [commit](@/glossary/commit.cs.md) je z 4. února 2026. Zní „feat(aiad): inject AIAD v1.0.0 infrastructure“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+
+Zdrojový kód: [GitLab](https://gitlab.com/korczis/sig).
+
+Související práce v kategorii [Inženýrství AI](@/projects/ai.cs.md): [llm](@/work/llm.cs.md) (2026), [Majordomus](@/work/prismatic-majordomus.cs.md) (2026), [edna](@/work/edna.cs.md) (2025) a [cognitive-reasoning](@/work/cognitive-reasoning.cs.md) (2025).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 30 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…), ze snímku obnovovaného každých 6 hodin. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

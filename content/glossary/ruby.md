@@ -16,8 +16,8 @@ kind = "language"
 definition = "A dynamic, expressive language designed for programmer happiness; many of the older tools here are Ruby."
 aliases = []
 reference = { title = "ruby-lang.org", url = "https://www.ruby-lang.org/en/about/" }
-pages = ["about.md", "projects/data.md", "projects/learning.md", "projects/security.md", "projects/systems.md", "projects/tools.md"]
-related = ["javascript", "repository", "rust", "elixir", "shell", "cpp", "csharp", "html"]
+pages = ["about.md", "projects/data.md", "projects/learning.md", "projects/security.md", "projects/systems.md", "projects/tools.md", "work/algorithms-ruby.md", "work/apollo-crawler.md", "work/apollon.md", "work/ares.md", "work/cluster.md", "work/codecademy.md", "work/csv2psql.md", "work/docker-gooddata-ruby.md", "work/esri.md", "work/gdc-dumpator.md", "work/gooddata-connectors-metadata.md", "work/gooddata-lcm-tool.md", "work/gooddata-rails-app.md", "work/gooddata-ruby-examples.md", "work/grache-test.md", "work/grache.md", "work/jetel.md", "work/json2csv.md", "work/sandbox.md", "work/skull-ruby.md", "work/skull.md", "work/zeman-ucet.md", "work/zlown.md"]
+related = ["repository", "open-source", "commit", "shell", "gis", "javascript", "html", "rust"]
 og_title = "Ruby: glossary"
 og_image = "og/glossary-ruby.png"
 keywords = ["Ruby", "Programming language", "Glossary", "Tomas Korcak"]

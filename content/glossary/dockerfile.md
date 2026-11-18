@@ -16,8 +16,8 @@ kind = "language"
 definition = "The recipe that builds a container image: a base system, files and commands, reproducible anywhere."
 aliases = []
 reference = { title = "Dockerfile reference", url = "https://docs.docker.com/reference/dockerfile/" }
-pages = ["projects/media.md", "projects/systems.md", "work/el-magico-cache.md", "work/pdf-renderer.md", "work/prismatic-blog.md"]
-related = ["repository", "commit", "open-source", "data-visualisation", "elixir", "html", "javascript", "python"]
+pages = ["projects/media.md", "projects/systems.md", "work/astudo.md", "work/aws-lambda-docker.md", "work/docks.md", "work/el-magico-cache.md", "work/gh-exec-3000.md", "work/hydra.md", "work/microcrawler-js.md", "work/pdf-renderer.md", "work/prismatic-blog.md", "work/tosh.md", "work/zdeny-docker.md"]
+related = ["repository", "commit", "open-source", "shell", "javascript", "elixir", "css", "html"]
 og_title = "Dockerfile: glossary"
 og_image = "og/glossary-dockerfile.png"
 keywords = ["Dockerfile", "Programming language", "Glossary", "Tomas Korcak"]

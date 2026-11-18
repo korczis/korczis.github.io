@@ -3,7 +3,7 @@
 title = "Sonic Playground"
 description = "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita."
 template = "work.html"
-weight = 2
+weight = 7
 updated = "2026-11-17T20:47:37Z"
 
 [taxonomies]
@@ -11,10 +11,12 @@ tags = ["Média a umění", "Python", "JavaScript", "HTML"]
 
 [extra]
 repo = "sonic-playground"
-og_title = "Sonic Playground: Hudba, která hýbe, ne algoritmický šum."
+seo_title = "Sonic Playground: Média a umění, Python, 2026 · Tomáš Korčák"
+og_title = "Sonic Playground: Hudba, která hýbe, ne algoritmický šum"
+og_description = "Média a umění, Python, JavaScript a HTML, 2026, aktivní za posledních 12 měsíců. Zdrojový kód: GitHub. Živý web. Pod dohledem Majordomu."
 og_image = "og/cs-work-sonic-playground.png"
 schema = "project"
-keywords = ["Sonic Playground", "Média a umění", "Python", "JavaScript", "HTML", "Tomáš Korčák"]
+keywords = ["Sonic Playground", "sonic-playground", "Média a umění", "Python", "JavaScript", "HTML", "2026", "GitHub", "Tomáš Korčák", "korczis"]
 terms = ["python", "javascript", "html", "shell", "css", "elixir", "data-visualisation", "github-pages", "repository", "commit", "open-source"]
 
 [[extra.viz]]
@@ -33,5 +35,9 @@ tone = "night"
 Je postavený na [Elixir](@/glossary/elixir.cs.md).
 
 Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/sonic-playground/>.
+
+Zdrojový kód: [GitHub](https://github.com/korczis/sonic-playground).
+
+Související práce v kategorii [Média a umění](@/projects/media.cs.md): [Majordomus reel](@/work/majordomus-reel.cs.md) (2026), [Catharsis as a Service](@/work/catharsis-as-a-service.cs.md) (2026), [openttd-prismatic-bridge](@/work/openttd-prismatic-bridge.cs.md) (2026) a [dj-schnapps](@/work/dj-schnapps.cs.md) (2019).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 30 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

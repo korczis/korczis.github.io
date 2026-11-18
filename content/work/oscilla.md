@@ -3,18 +3,20 @@
 title = "Oscilla"
 description = "A zero-install acoustic laboratory in the browser."
 template = "work.html"
-weight = 3
-updated = "2026-11-17T20:18:13Z"
+weight = 4
+updated = "2026-11-18T01:26:10Z"
 
 [taxonomies]
 tags = ["Science and visualisation", "JavaScript", "HTML", "CSS"]
 
 [extra]
 repo = "oscilla"
-og_title = "Oscilla: A zero-install acoustic laboratory in the browser."
+seo_title = "Oscilla: Science and visualisation in JavaScript, 2026 · Tomas Korcak"
+og_title = "Oscilla: A zero-install acoustic laboratory in the browser"
+og_description = "Science and visualisation in JavaScript, HTML and CSS, 2026, active in the last 12 months. Source on GitHub. 1 star. Live site. Supervised by Majordomus."
 og_image = "og/work-oscilla.png"
 schema = "project"
-keywords = ["Oscilla", "Science and visualisation", "JavaScript", "HTML", "CSS", "Tomas Korcak"]
+keywords = ["Oscilla", "Science and visualisation", "JavaScript", "HTML", "CSS", "acoustics", "audio", "dsp", "education", "signal-processing", "2026", "GitHub", "Tomas Korcak", "korczis"]
 terms = ["javascript", "html", "css", "swift", "shell", "web-audio", "data-visualisation", "github-pages", "repository", "commit", "open-source"]
 
 [[extra.viz]]
@@ -28,10 +30,14 @@ tone = "night"
 +++
 **Oscilla** is a project in [Science and visualisation](@/projects/science.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (96.9 %), with [HTML](@/glossary/html.md), [CSS](@/glossary/css.md) and [Swift](@/glossary/swift.md).
 
-The [repository](@/glossary/repository.md) was created in October 2026; its latest [commit](@/glossary/commit.md) is from 17 November 2026. It reads “chore(release): záznam v3.41.3 (\#596)”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created in October 2026; its latest [commit](@/glossary/commit.md) is from 18 November 2026. It reads “chore(plan): audit-and-stamp vlak A (Q111 + 4 orazítkované, 20 otevřených s mezerou) (\#599)”. That places it among the projects active in the last 12 months.
 
 It is built with [Web Audio](@/glossary/web-audio.md).
 
 It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/oscilla/>.
+
+Its source is on [GitHub](https://github.com/korczis/oscilla).
+
+Related work in [Science and visualisation](@/projects/science.md): [maze](@/work/maze.md) (2016), [algoglyph](@/work/algoglyph.md) (2026), [maze-rs](@/work/maze-rs.md) (2016) and [haskell-world](@/work/haskell-world.md) (2016).
 
 *How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 30 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

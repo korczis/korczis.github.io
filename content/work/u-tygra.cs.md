@@ -11,10 +11,12 @@ tags = ["Nástroje", "JavaScript", "HTML", "CSS"]
 
 [extra]
 repo = "u-tygra"
-og_title = "u-tygra: Nástroje"
+seo_title = "u-tygra: Nástroje, JavaScript, 2024–2025 · Tomáš Korčák"
+og_title = "u-tygra: Nástroje, JavaScript"
+og_description = "Nástroje, JavaScript, HTML a CSS, 2024–2025, aktivní za posledních 24 měsíců. Zdrojový kód: GitHub a GitLab. Živý web."
 og_image = "og/cs-work-u-tygra.png"
 schema = "project"
-keywords = ["u-tygra", "Nástroje", "JavaScript", "HTML", "CSS", "Tomáš Korčák"]
+keywords = ["u-tygra", "Nástroje", "JavaScript", "HTML", "CSS", "2024–2025", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
 terms = ["javascript", "html", "css", "open-source", "github-pages", "repository", "commit"]
 
 [[extra.viz]]
@@ -31,5 +33,9 @@ tone = "night"
 [Repozitář](@/glossary/repository.cs.md) vznikl 27. prosince 2024; poslední [commit](@/glossary/commit.cs.md) je z 3. června 2025. Zní „remove static.yml“. Patří tak mezi projekty aktivní za posledních 24 měsíců.
 
 Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/u-tygra/>.
+
+Zdrojový kód: [GitHub](https://github.com/korczis/u-tygra) a [GitLab](https://gitlab.com/korczis/u-tygra).
+
+Související práce v kategorii [Nástroje](@/projects/tools.cs.md): [prismatic](@/work/prismatic.cs.md) (2025), [bubbler](@/work/bubbler.cs.md) (2024), [astronomists](@/work/astronomists.cs.md) (2026) a [vomaste.cz](@/work/vomaste-cz.cs.md) (2026).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 24 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

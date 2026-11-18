@@ -3,7 +3,7 @@
 title = "algoglyph"
 description = "Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem."
 template = "work.html"
-weight = 6
+weight = 8
 updated = "2026-11-17T15:34:34Z"
 
 [taxonomies]
@@ -11,10 +11,12 @@ tags = ["Věda a vizualizace", "TypeScript", "Rust", "JavaScript"]
 
 [extra]
 repo = "algoglyph"
-og_title = "algoglyph: Algoritmy a fyzika kreslené jako glyfy."
+seo_title = "algoglyph: Algoritmy a fyzika kreslené jako glyfy, 2026 · Tomáš Korčák"
+og_title = "algoglyph: Algoritmy a fyzika kreslené jako glyfy"
+og_description = "Věda a vizualizace, TypeScript, Rust a JavaScript, 2026, aktivní za posledních 12 měsíců. Zdrojový kód: GitHub. Živý web. Pod dohledem Majordomu."
 og_image = "og/cs-work-algoglyph.png"
 schema = "project"
-keywords = ["algoglyph", "Věda a vizualizace", "TypeScript", "Rust", "JavaScript", "Tomáš Korčák"]
+keywords = ["algoglyph", "Věda a vizualizace", "TypeScript", "Rust", "JavaScript", "algorithms", "alpinejs", "creative-coding", "data-visualization", "flowbite", "generative-art", "2026", "GitHub", "Tomáš Korčák", "korczis"]
 terms = ["typescript", "rust", "javascript", "html", "shell", "p5-js", "apache-echarts", "alpine-js", "flowbite-pro", "data-visualisation", "github-pages", "repository", "commit", "open-source"]
 
 [[extra.viz]]
@@ -33,5 +35,9 @@ tone = "night"
 Je postavený na [p5.js](@/glossary/p5-js.cs.md), [Apache ECharts](@/glossary/apache-echarts.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md) a [Flowbite Pro](@/glossary/flowbite-pro.cs.md).
 
 Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/algoglyph/>.
+
+Zdrojový kód: [GitHub](https://github.com/korczis/algoglyph).
+
+Související práce v kategorii [Věda a vizualizace](@/projects/science.cs.md): [Oscilla](@/work/oscilla.cs.md) (2026), [maze](@/work/maze.cs.md) (2016), [maze-rs](@/work/maze-rs.cs.md) (2016) a [rustas](@/work/rustas.cs.md) (2018).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 30 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

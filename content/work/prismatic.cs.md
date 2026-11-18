@@ -11,10 +11,12 @@ tags = ["Nástroje", "Elixir", "JavaScript", "Python"]
 
 [extra]
 repo = "prismatic"
-og_title = "prismatic: Nástroje"
+seo_title = "prismatic: Nástroje, Elixir, 2025 · Tomáš Korčák"
+og_title = "prismatic: Nástroje, Elixir"
+og_description = "Nástroje, Elixir, JavaScript a Python, 2025, aktivní za posledních 24 měsíců. Zdrojový kód: GitHub."
 og_image = "og/cs-work-prismatic.png"
 schema = "project"
-keywords = ["prismatic", "Nástroje", "Elixir", "JavaScript", "Python", "Tomáš Korčák"]
+keywords = ["prismatic", "Nástroje", "Elixir", "JavaScript", "Python", "2025", "GitHub", "Tomáš Korčák", "korczis"]
 terms = ["elixir", "javascript", "python", "shell", "css", "html", "open-source", "repository", "commit"]
 
 [[extra.viz]]
@@ -29,5 +31,9 @@ tone = "night"
 **prismatic** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (78,4 %), dále [JavaScript](@/glossary/javascript.cs.md), [Python](@/glossary/python.cs.md) a [Shell](@/glossary/shell.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 24. července 2025; poslední [commit](@/glossary/commit.cs.md) je z 4. srpna 2025. Zní „chore: updates“. Patří tak mezi projekty aktivní za posledních 24 měsíců.
+
+Zdrojový kód: [GitHub](https://github.com/korczis/prismatic).
+
+Související práce v kategorii [Nástroje](@/projects/tools.cs.md): [astronomists](@/work/astronomists.cs.md) (2026), [Gists search](@/work/gists-search.cs.md) (2026), [vomaste.cz](@/work/vomaste-cz.cs.md) (2026) a [rest-hello-world-benchmark](@/work/rest-hello-world-benchmark.cs.md) (2022).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 30 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

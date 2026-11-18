@@ -16,8 +16,8 @@ kind = "language"
 definition = "A language and runtime from telecoms, designed for systems that must keep running while parts of them fail."
 aliases = []
 reference = { title = "erlang.org", url = "https://www.erlang.org/" }
-pages = ["projects/learning.md"]
-related = ["c", "cpp", "csharp", "elixir", "haskell", "java", "javascript", "repository"]
+pages = ["projects/learning.md", "work/rustler-mix.md", "work/skull-erlang.md"]
+related = ["repository", "commit", "elixir", "open-source", "rust", "c", "cpp", "csharp"]
 og_title = "Erlang: glossary"
 og_image = "og/glossary-erlang.png"
 keywords = ["Erlang", "Programming language", "Glossary", "Tomas Korcak"]

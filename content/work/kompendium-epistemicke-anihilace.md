@@ -3,18 +3,20 @@
 title = "Kompendium"
 description = "A defensive taxonomy of epistemic and cognitive manipulation (Czech)."
 template = "work.html"
-weight = 8
-updated = "2026-11-17T06:29:33Z"
+weight = 5
+updated = "2026-11-18T00:53:25Z"
 
 [taxonomies]
 tags = ["Knowledge", "Elixir", "JavaScript", "Python"]
 
 [extra]
 repo = "kompendium-epistemicke-anihilace"
-og_title = "Kompendium: A defensive taxonomy of epistemic and cognitive manipulation (Czech)."
+seo_title = "Kompendium: Knowledge in Elixir, 2026 · Tomas Korcak"
+og_title = "Kompendium: A defensive taxonomy of epistemic and cognitive manipulation (Czech)"
+og_description = "Knowledge in Elixir, JavaScript and Python, 2026, active in the last 12 months. Source on GitHub. Live site. Supervised by Majordomus."
 og_image = "og/work-kompendium-epistemicke-anihilace.png"
 schema = "project"
-keywords = ["Kompendium", "Knowledge", "Elixir", "JavaScript", "Python", "Tomas Korcak"]
+keywords = ["Kompendium", "kompendium-epistemicke-anihilace", "Knowledge", "Elixir", "JavaScript", "Python", "czech", "epistemology", "flowbite", "majordomus", "manipulation", "2026", "GitHub", "Tomas Korcak", "korczis"]
 terms = ["elixir", "javascript", "python", "html", "rust", "shell", "zola", "cytoscape-js", "apache-echarts", "alpine-js", "flowbite-pro", "github-pages", "repository", "commit", "open-source"]
 
 [[extra.viz]]
@@ -28,10 +30,14 @@ tone = "night"
 +++
 **Kompendium** is a project in [Knowledge](@/projects/knowledge.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (32.9 %), with [JavaScript](@/glossary/javascript.md), [Python](@/glossary/python.md) and [HTML](@/glossary/html.md).
 
-The [repository](@/glossary/repository.md) was created in November 2026; its latest [commit](@/glossary/commit.md) is from 17 November 2026. It reads “feat(scripts): platform-prose gate — refuse internal platform/runtime names in kompendium body prose”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created in November 2026; its latest [commit](@/glossary/commit.md) is from 18 November 2026. It reads “Merge origin/main (e1ad82c1) into train-1”. That places it among the projects active in the last 12 months.
 
 It is built with [Zola](@/glossary/zola.md), [Cytoscape.js](@/glossary/cytoscape-js.md), [Apache ECharts](@/glossary/apache-echarts.md), [Alpine.js](@/glossary/alpine-js.md) and [Flowbite Pro](@/glossary/flowbite-pro.md).
 
 It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/kompendium-epistemicke-anihilace/>.
+
+Its source is on [GitHub](https://github.com/korczis/kompendium-epistemicke-anihilace).
+
+Related work in [Knowledge](@/projects/knowledge.md): [MinervaEye](@/work/minervaeye.md) (2020–2021), [ReadingPhoneNumbersInRealTime](@/work/readingphonenumbersinrealtime.md) (2021), [reading](@/work/reading.md) (2019) and [books](@/work/books.md) (2013).
 
 *How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 30 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

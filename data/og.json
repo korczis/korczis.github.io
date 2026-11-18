@@ -1,1005 +1,2302 @@
 {
  "schema": "korczis-hub-og/v1",
+ "encoder": "pngquant 32 --speed 1 --strip --nofs",
  "images": {
   "about": {
-   "svg": "ff345914967aa002",
-   "png": "1eedb59fa2b6491b"
+   "svg": "a4793824e6590da0",
+   "png": "a29ceea9364d4f23"
   },
   "category-ai": {
-   "svg": "345f9e21f4050991",
-   "png": "ef41347650d8e019"
+   "svg": "2ab3fb4baaea73d9",
+   "png": "6d6f3032c296a3a1"
   },
   "category-data": {
-   "svg": "579ffc9f6014fec7",
-   "png": "9a90156b99ca6064"
+   "svg": "b65641b80af66190",
+   "png": "458a1d5cd1e41d38"
   },
   "category-knowledge": {
-   "svg": "403e571b2b798854",
-   "png": "e6c0d439df1207f3"
+   "svg": "7217bbe504f60609",
+   "png": "d0b0d80fcaa48ae4"
   },
   "category-learning": {
-   "svg": "41812d1eb3122568",
-   "png": "c2072236a7bf85c2"
+   "svg": "d53143e065706f9f",
+   "png": "37bc58a2e67e57a4"
   },
   "category-libraries": {
-   "svg": "c0f1a3a0747da5f8",
-   "png": "cb315f81721372fb"
+   "svg": "76846a0ad5f9f33f",
+   "png": "d00abcd784108c11"
   },
   "category-media": {
-   "svg": "9e0352bfa17679ee",
-   "png": "a478113874b0711e"
+   "svg": "ce4971446bb8f1c3",
+   "png": "2f9d252babd65992"
   },
   "category-science": {
-   "svg": "4205ee7aae08ec86",
-   "png": "8f04f799cce69200"
+   "svg": "06d7177c56eb7f59",
+   "png": "828fb379363afd21"
   },
   "category-security": {
-   "svg": "66e6ea2a00b44889",
-   "png": "83f36cc5b5eddfb4"
+   "svg": "e6e2abd90f494b4c",
+   "png": "82eb50ce8e51b6b6"
   },
   "category-systems": {
-   "svg": "1d7d90e567a42163",
-   "png": "11ba9e1bbf422019"
+   "svg": "1bdcd71f8f7195b0",
+   "png": "0368849a29b4310e"
   },
   "category-tools": {
-   "svg": "cc7bd2c07c625cc6",
-   "png": "1d69f8c5d2505acc"
+   "svg": "5bfb391b4f71b3a1",
+   "png": "2fadbbdb20f9856d"
   },
   "category-web": {
-   "svg": "505a12433ba79cb0",
-   "png": "9e9a033e9d86b6c4"
+   "svg": "e904bc0936418111",
+   "png": "dceffd0439cca8d0"
   },
   "cs-about": {
-   "svg": "a86de8400c738bd0",
-   "png": "be8c1ac9014962b5"
+   "svg": "38764f8452781669",
+   "png": "19c3e80221825918"
   },
   "cs-category-ai": {
-   "svg": "1f279fc3f2f2b872",
-   "png": "725cff3047f5ebee"
+   "svg": "382596573be00501",
+   "png": "15d24f4bc9e6aaff"
   },
   "cs-category-data": {
-   "svg": "66321820c372055f",
-   "png": "129e7e2e6739aa54"
+   "svg": "e6d5504b625981e0",
+   "png": "cd9a9b58bf8f8bed"
   },
   "cs-category-knowledge": {
-   "svg": "e1d9e507460162b0",
-   "png": "9804f99b8942e2fc"
+   "svg": "5d5f804c19dd6792",
+   "png": "8934ae2d31999e63"
   },
   "cs-category-learning": {
-   "svg": "2a4027b84930da5e",
-   "png": "0d20e777cbde8763"
+   "svg": "b99ec3557ac9a061",
+   "png": "4d6ac032a3ea34bd"
   },
   "cs-category-libraries": {
-   "svg": "e6ece166cfa6c293",
-   "png": "d875f48162bb6459"
+   "svg": "d03adf28b9741ae1",
+   "png": "ab5822cab25fdf84"
   },
   "cs-category-media": {
-   "svg": "647d0d5daa97aa24",
-   "png": "ea4bda535d3afedb"
+   "svg": "1688b2d5251eac0e",
+   "png": "2d04143fc38eaa6f"
   },
   "cs-category-science": {
-   "svg": "546a46d73483e286",
-   "png": "e95cd83ee7f51d26"
+   "svg": "6a13cb068c3451e7",
+   "png": "ea4d83eb143779d0"
   },
   "cs-category-security": {
-   "svg": "3c8487e10c8ca7cd",
-   "png": "ded0aabeb56dbc80"
+   "svg": "c7ad43c8e447f76d",
+   "png": "4b662be2a5c3e1b0"
   },
   "cs-category-systems": {
-   "svg": "0f742cfeb612c40b",
-   "png": "a7f825ba08a39dd9"
+   "svg": "a7425d0cca70f6d6",
+   "png": "fefaae73285259cf"
   },
   "cs-category-tools": {
-   "svg": "934c1c4698283cce",
-   "png": "0c5eaff7eeb83fa4"
+   "svg": "47964726c632a3f2",
+   "png": "2c18e2e5637ae200"
   },
   "cs-category-web": {
-   "svg": "a89bfba8f32ae5b6",
-   "png": "724e9d55eaa98b40"
+   "svg": "caf9d4e3fa9d4f5e",
+   "png": "159412c878549a66"
   },
   "cs-glossary": {
-   "svg": "f0be4e624bdf3868",
-   "png": "fabd15ace3b05194"
+   "svg": "52752d1bca2b7840",
+   "png": "ccb459f35eb62ca1"
   },
   "cs-glossary-ai-agent": {
-   "svg": "18fd0bdf31dea3d6",
-   "png": "3a62e0ff5b5b0573"
+   "svg": "e4628ffd9adbbf15",
+   "png": "c8156b70def848d6"
   },
   "cs-glossary-alpine-js": {
-   "svg": "cf692e8e197eb621",
-   "png": "8932b326f85f43b5"
+   "svg": "9bb76c22f95842e6",
+   "png": "024ea71101aef997"
   },
   "cs-glossary-apache-echarts": {
-   "svg": "1f9088742a21a625",
-   "png": "445aede73768a033"
+   "svg": "9567930634d2be48",
+   "png": "35245fb4f1eff730"
   },
   "cs-glossary-audit-trail": {
-   "svg": "2de38cacb0845318",
-   "png": "7d2d3275133b5a21"
+   "svg": "8a4d5b70563533a1",
+   "png": "0c5486be41f6b001"
   },
   "cs-glossary-c": {
-   "svg": "058415cb7814cc9a",
-   "png": "2e5bc8d61ed197c3"
+   "svg": "fe68dcc54e007e2a",
+   "png": "82afea11157a38bc"
   },
   "cs-glossary-chart-js": {
-   "svg": "0f4fa5247056e879",
-   "png": "2b7188e5b39a6f59"
+   "svg": "99cf43765b89bacb",
+   "png": "c757db594335f2f9"
   },
   "cs-glossary-commit": {
-   "svg": "a293cb2ce6cdcb6d",
-   "png": "86e7259fbbf8864a"
+   "svg": "2e14b210f6486bd7",
+   "png": "8c5e86fd403774cf"
   },
   "cs-glossary-cpp": {
-   "svg": "0d21b7625f4deec9",
-   "png": "41f6564df54024b6"
+   "svg": "da8bd7a34d4a6dce",
+   "png": "7836da12b05ce751"
   },
   "cs-glossary-csharp": {
-   "svg": "d09497c3ad985d08",
-   "png": "2b716ed3b48e9851"
+   "svg": "efefde830533d990",
+   "png": "eb0e3776b42db5cd"
   },
   "cs-glossary-css": {
-   "svg": "499f14fc2f2da6a1",
-   "png": "ea5bb3372d2a0319"
+   "svg": "86cfff5b4fb0fad6",
+   "png": "5ade5085f399735b"
   },
   "cs-glossary-cytoscape-js": {
-   "svg": "969cc05ca2ade7ae",
-   "png": "bace7a35c0930919"
+   "svg": "862c4bd91796d13b",
+   "png": "8eb1835001f2619c"
   },
   "cs-glossary-d3": {
-   "svg": "bd7bec300b15f27e",
-   "png": "4a75e66678317663"
+   "svg": "0ff947079d49bce3",
+   "png": "dec2009df9d6f5a2"
   },
   "cs-glossary-data-integration": {
-   "svg": "f58abcb2f31b21ab",
-   "png": "fbf62d7e60cad1c1"
+   "svg": "3a57e7e101681105",
+   "png": "7ab76ae682a02edc"
   },
   "cs-glossary-data-visualisation": {
-   "svg": "9c1520e646a510dc",
-   "png": "a92f9427b361a17d"
+   "svg": "8f1e075d724cd88a",
+   "png": "019d091ef78bf0cd"
   },
   "cs-glossary-decision-support-system": {
-   "svg": "99f755f494d1a6ed",
-   "png": "a1750ed8ce648ce0"
+   "svg": "de296d83edd5b5af",
+   "png": "3093e803ab1e60e5"
   },
   "cs-glossary-dockerfile": {
-   "svg": "1d078a8f09b1265c",
-   "png": "a3a3e99462def3f6"
+   "svg": "1358d4f854d30f79",
+   "png": "af2b9df1963cd07a"
   },
   "cs-glossary-due-diligence": {
-   "svg": "6ce429ca2b9fda2f",
-   "png": "f43e5596f7952927"
+   "svg": "0c7b384e3052eedb",
+   "png": "70d4c0601a46b1c0"
   },
   "cs-glossary-elixir": {
-   "svg": "95dbda03e39c2672",
-   "png": "3bcb125616d6f9f5"
+   "svg": "3107c8764b81cd7c",
+   "png": "1e557f30ff048f76"
   },
   "cs-glossary-erlang": {
-   "svg": "19e5d2e5938b141c",
-   "png": "3683f3d34e385548"
+   "svg": "3ad56a1133437a23",
+   "png": "9675e11e7d5e5f44"
   },
   "cs-glossary-flowbite-pro": {
-   "svg": "bf2f894c6c0b2af8",
-   "png": "6d7edbf6cb36a211"
+   "svg": "9f3a09568afa25f1",
+   "png": "dc4b6bc945d4d27f"
   },
   "cs-glossary-fork": {
-   "svg": "00d22061815da554",
-   "png": "fb5e84d2cb30982b"
+   "svg": "c17b3ee62f605639",
+   "png": "af94b79da334ed74"
   },
   "cs-glossary-front-matter": {
-   "svg": "d13114a082e9cbdd",
-   "png": "81e729d5a1b9a4c0"
+   "svg": "e1e5b62ae76d5209",
+   "png": "843ad9c596726a65"
   },
   "cs-glossary-gis": {
-   "svg": "dc91d4d4ca2c6f39",
-   "png": "f1b7daa893692236"
+   "svg": "91487fd2f42e6c0f",
+   "png": "09512d80641b694b"
   },
   "cs-glossary-github-pages": {
-   "svg": "f94129cfef7a6014",
-   "png": "4f875d1eade4790d"
+   "svg": "5ec69d175d9dd5e0",
+   "png": "827bd7a8655f5b43"
   },
   "cs-glossary-haskell": {
-   "svg": "9edf46d5a6d7c1b5",
-   "png": "7c7a59884d296e6d"
+   "svg": "cf5499c8c7d320a2",
+   "png": "c15041d61f3e3066"
   },
   "cs-glossary-html": {
-   "svg": "40df9bbe4659cde3",
-   "png": "9972489168488618"
+   "svg": "7361db4d3ea89408",
+   "png": "f323cb71ceaf6b07"
   },
   "cs-glossary-i18n": {
-   "svg": "17266033519e4546",
-   "png": "e36572605d182c98"
+   "svg": "25cb7e888b1ede8b",
+   "png": "64acc6c1a1e81f83"
   },
   "cs-glossary-information-extraction": {
-   "svg": "8292bff132953251",
-   "png": "87753d0efbaf226e"
+   "svg": "ba97ead528a76b14",
+   "png": "56e43dd124c89e4a"
   },
   "cs-glossary-insolvency": {
-   "svg": "e78bede0150c6dd3",
-   "png": "d5a7aa1b623f5be3"
+   "svg": "dc5d44d29956e990",
+   "png": "c3201ac3ca4a12fa"
   },
   "cs-glossary-java": {
-   "svg": "c29bbe8367b062bb",
-   "png": "70c3b82a97e60491"
+   "svg": "a9fb4ff4c9aff0d5",
+   "png": "a857ce8fe6ca6a4e"
   },
   "cs-glossary-javascript": {
-   "svg": "a3e48970f3abb7e7",
-   "png": "430c61ed4b917b25"
+   "svg": "5e0d3ab9d147def2",
+   "png": "8380b2a11c67dd0c"
   },
   "cs-glossary-json-ld": {
-   "svg": "0029cc46c2066365",
-   "png": "bb6e11937fe8961d"
+   "svg": "e6d40d6f71057247",
+   "png": "b5f241712fde4f49"
   },
   "cs-glossary-knowledge-graph": {
-   "svg": "981e5077ae21b8c4",
-   "png": "366f4f6e798a3a17"
+   "svg": "465265e107f19260",
+   "png": "2dce0c1ba7fc667f"
   },
   "cs-glossary-majordomus": {
-   "svg": "7937d5bb731c07d9",
-   "png": "55cc72c9b2f67ac8"
+   "svg": "8621da9b32e13b4a",
+   "png": "568d56ff10ea22c0"
   },
   "cs-glossary-market-intelligence": {
-   "svg": "8513ec014a9ab6b8",
-   "png": "8ad41a1b13c37c22"
+   "svg": "9e739df2ee9db171",
+   "png": "726ecc357c333169"
   },
   "cs-glossary-mcp": {
-   "svg": "0109149692a95a8a",
-   "png": "b9882bd12c0aaa93"
+   "svg": "d7d84d7affe5b804",
+   "png": "d3a4508e79c27aea"
   },
   "cs-glossary-mergers-and-acquisitions": {
-   "svg": "6afea5b9c9699fd5",
-   "png": "9bfa2e4cea023a06"
+   "svg": "925d97c0d7c5d0b4",
+   "png": "8b82794457378be1"
   },
   "cs-glossary-mirror": {
-   "svg": "421887c7b5fd71af",
-   "png": "b55e05507f95d87f"
+   "svg": "cbbb06465d92afbe",
+   "png": "e095fb280dd67328"
   },
   "cs-glossary-nix": {
-   "svg": "9033d42c557abb5e",
-   "png": "666fb7dc1c1fbb30"
+   "svg": "a7d0104f465781c8",
+   "png": "fe4f91ca52bbf116"
   },
   "cs-glossary-open-graph": {
-   "svg": "1a812c422498589b",
-   "png": "dcda9d2f88e3b00e"
+   "svg": "6fc628b04aedc37d",
+   "png": "c6a5299be198c273"
   },
   "cs-glossary-open-source": {
-   "svg": "bbc251c289a15413",
-   "png": "513bc742de5e3482"
+   "svg": "8c810a54a6eb9dd6",
+   "png": "1bf4b93f2c810bb0"
   },
   "cs-glossary-openapi": {
-   "svg": "50b0d47d41417ed4",
-   "png": "4b564daac2cca10a"
+   "svg": "0a1cec5dd6bd1aa0",
+   "png": "5c664dcfa63cf0ea"
   },
   "cs-glossary-orchestration": {
-   "svg": "f86f51b0824142e7",
-   "png": "d79d13b65d2ed4a1"
+   "svg": "3bc2d0e83e19b6ab",
+   "png": "fdb25e54c558eb9a"
   },
   "cs-glossary-osint": {
-   "svg": "2fa249d996bbd485",
-   "png": "b0edbbf120e308c7"
+   "svg": "411c6c758c442341",
+   "png": "65aef4ec82ff6d05"
   },
   "cs-glossary-p5-js": {
-   "svg": "0925e3a6cc0d61cd",
-   "png": "f366f3a88dd05d52"
+   "svg": "ad5cabf0f5311abc",
+   "png": "8d5da77a64a50d55"
   },
   "cs-glossary-postgis": {
-   "svg": "3f7918b4ba146994",
-   "png": "261c8a18ed56e145"
+   "svg": "f2d6c88157fa69f7",
+   "png": "eff4a4d1d8c92015"
   },
   "cs-glossary-postgresql": {
-   "svg": "b16dcd2402609d94",
-   "png": "0d1abfa1b04993d8"
+   "svg": "3a011f87d66976df",
+   "png": "dde02fb7106c99d1"
   },
   "cs-glossary-python": {
-   "svg": "4016606b7d319a7a",
-   "png": "0ac28552615edba0"
+   "svg": "d9dff4aebe1ff9a9",
+   "png": "63e2b4bfd84bf8f7"
   },
   "cs-glossary-record-linkage": {
-   "svg": "33ac08ba6d604630",
-   "png": "52aaefdf2b5f66bc"
+   "svg": "c563f97eda24204c",
+   "png": "574ff0fd8bd98a2e"
   },
   "cs-glossary-repository": {
-   "svg": "3fb6c342c5a7a755",
-   "png": "7d0fe5e50b927550"
+   "svg": "d76bd1023f8064f7",
+   "png": "887aa7836eb935cf"
   },
   "cs-glossary-risk-assessment": {
-   "svg": "57b16cf884157a84",
-   "png": "d8d56cd78e113e3e"
+   "svg": "bf3bd4fb1ac3b421",
+   "png": "96c7464f58dc99b0"
   },
   "cs-glossary-ruby": {
-   "svg": "7a2d36062e44a97b",
-   "png": "416d72e0e773f4c9"
+   "svg": "7c527471ff4ebdf9",
+   "png": "e49c676b72d80359"
   },
   "cs-glossary-rust": {
-   "svg": "0b50f91ddfee9fb3",
-   "png": "c1f01147a19ec5e8"
+   "svg": "49ffdede7858851b",
+   "png": "318d36b0f9d3bf06"
   },
   "cs-glossary-shell": {
-   "svg": "5368cdcf9dcdf538",
-   "png": "1bc0efa3e1619813"
+   "svg": "51d39f23c31b74e6",
+   "png": "32a9eff46068ecb1"
   },
   "cs-glossary-static-site-generator": {
-   "svg": "35072a159a5ffa01",
-   "png": "7420c148d379adbf"
+   "svg": "9cc5ed983fa71ea7",
+   "png": "c55f6ca99611029d"
   },
   "cs-glossary-swift": {
-   "svg": "81415199973f8ccc",
-   "png": "48b4c83bb2c9583a"
+   "svg": "d3c5ede975d1abf3",
+   "png": "3e6931aa9c3ae140"
   },
   "cs-glossary-tailwind-css": {
-   "svg": "fa0b2c78fbfb7bff",
-   "png": "ecad720d23edf2bd"
+   "svg": "7e8b4f7951b14849",
+   "png": "5da22e8258c36048"
   },
   "cs-glossary-typescript": {
-   "svg": "13b36d6690c68fb1",
-   "png": "43dc95b3f2045b5c"
+   "svg": "3330bb414ea460ab",
+   "png": "cbe798da6885c320"
   },
   "cs-glossary-virtual-data-room": {
-   "svg": "20a1833d4c1c92c4",
-   "png": "9c66f30c7c98be9b"
+   "svg": "a967630e48008cd9",
+   "png": "931965450828a05f"
   },
   "cs-glossary-wcag": {
-   "svg": "4f8f04d733862ce4",
-   "png": "bc87a03b5fb45f6e"
+   "svg": "2ba3b553eea1d3dc",
+   "png": "fa9016a7079f32f5"
   },
   "cs-glossary-web-audio": {
-   "svg": "024d27fa544a47a7",
-   "png": "3a8e1d628270a6e2"
+   "svg": "ca6c3231aff9d9b7",
+   "png": "ce20ea071d2abd8b"
   },
   "cs-glossary-zola": {
-   "svg": "0fcbc334cf304571",
-   "png": "ba88c0a7d564b29f"
+   "svg": "344e012587eac39a",
+   "png": "bb0590dcec9238d2"
   },
   "cs-hire": {
-   "svg": "39dde62cfb406e27",
-   "png": "1bd367b40aeb6ba0"
+   "svg": "26c78100eee26ec6",
+   "png": "53cc4c18986545a8"
   },
   "cs-home": {
-   "svg": "b4a02a18d34ecc1b",
-   "png": "24ec5814d574312b"
+   "svg": "9e0d35bbbea10428",
+   "png": "b7a0c399c3e25b30"
   },
   "cs-interfaces": {
-   "svg": "a94add49a0b4a5e7",
-   "png": "f33728d6a03f4c0c"
+   "svg": "1d19f55e91fe43fc",
+   "png": "2f6a6f84d129e800"
   },
   "cs-projects": {
-   "svg": "e8a8fe17c879d590",
-   "png": "64a3e092c4c531d3"
+   "svg": "fd3956366801ff9a",
+   "png": "8f8a77f0d9917572"
   },
   "cs-repositories": {
-   "svg": "f8c6ecb5c867e35a",
-   "png": "50ed74a6b8734b9a"
+   "svg": "0a0c67f720cb7a96",
+   "png": "21d06e5eff01f1a2"
   },
   "cs-stack": {
-   "svg": "cfd0d91d23ffdd68",
-   "png": "77580867779fe9a0"
+   "svg": "397e3e0c3bc5968c",
+   "png": "b20338df80d9661e"
   },
   "cs-work": {
-   "svg": "9a6c82cd25190b5d",
-   "png": "78914fc0dfb8b9f3"
+   "svg": "013c05bd18d8b70e",
+   "png": "eb386be451e2ab79"
+  },
+  "cs-work-3d-print": {
+   "svg": "3e27e96c92a31ffc",
+   "png": "29de9a503f8ac090"
   },
   "cs-work-algoglyph": {
-   "svg": "c77dca6678c872d8",
-   "png": "2e2eabdeec4990f9"
+   "svg": "95769b06ff5edc9d",
+   "png": "b33f891a185c576f"
+  },
+  "cs-work-algorithms": {
+   "svg": "1de1dcd940143c70",
+   "png": "665f1af824346895"
+  },
+  "cs-work-algorithms-ruby": {
+   "svg": "7ce628cd33064a11",
+   "png": "07fc7b60023c4755"
+  },
+  "cs-work-annasabatova-cz": {
+   "svg": "742d810349a0a2ce",
+   "png": "f24fd84bb64e753a"
+  },
+  "cs-work-apollo-box": {
+   "svg": "45b07ae92edd666e",
+   "png": "75e046f06467dd98"
+  },
+  "cs-work-apollo-crawler": {
+   "svg": "b02dfac022f2b907",
+   "png": "d3b3309eff31a875"
+  },
+  "cs-work-apollo-crawler-extension": {
+   "svg": "469d8cf6853ce2b6",
+   "png": "b30bfa8ffd46f617"
+  },
+  "cs-work-apollo-schemas": {
+   "svg": "a2b59bcb994143b4",
+   "png": "86787d3987410376"
+  },
+  "cs-work-apollocrawler-com": {
+   "svg": "0645fe662b572557",
+   "png": "2f506fadd8cc060e"
+  },
+  "cs-work-apollocrawler-github-io": {
+   "svg": "dd059e62a77185d4",
+   "png": "2b75929aa1338587"
+  },
+  "cs-work-apollon": {
+   "svg": "0071ced6a7e12896",
+   "png": "69f64e4b8fe3541e"
+  },
+  "cs-work-ares": {
+   "svg": "61a48b0c67a9bac1",
+   "png": "665780e641d61575"
+  },
+  "cs-work-ares-api": {
+   "svg": "95762e9435c13bc0",
+   "png": "b431d434ebb2b69e"
   },
   "cs-work-astronomists": {
-   "svg": "8973dd080e0171ca",
-   "png": "485a024456f7c4aa"
+   "svg": "31117bcaf089ae20",
+   "png": "47170f32cc6281eb"
+  },
+  "cs-work-astudo": {
+   "svg": "8fb7b562cf299bd9",
+   "png": "0ed1c7477709a622"
+  },
+  "cs-work-aws-lambda-docker": {
+   "svg": "b66b03e7b971535e",
+   "png": "c7c443f76663602f"
+  },
+  "cs-work-babel-plugin-transform-graphql": {
+   "svg": "49a8f74e7332ba56",
+   "png": "7fcadbe575ccf0f0"
+  },
+  "cs-work-bc-apple": {
+   "svg": "5984242d0b76c0d4",
+   "png": "8b7b62466859521e"
+  },
+  "cs-work-bcnode-extra-scripts": {
+   "svg": "81ecdaac068be79b",
+   "png": "5078f55dd79b8bdc"
+  },
+  "cs-work-bcnode-old": {
+   "svg": "9f5e94391281fdce",
+   "png": "96c9ae4e575e3967"
+  },
+  "cs-work-big-png": {
+   "svg": "2cf2a2d9a2c66561",
+   "png": "196e7bffafd1bbb4"
+  },
+  "cs-work-books": {
+   "svg": "097074cc92837655",
+   "png": "777495a1d59e3007"
+  },
+  "cs-work-brepta": {
+   "svg": "3766f4eaee5d650e",
+   "png": "5ba3132f52804b42"
   },
   "cs-work-bubbler": {
-   "svg": "d41d444da8ec76e5",
-   "png": "42626d2e283e67f4"
+   "svg": "3cc3583d90b78a13",
+   "png": "edef267fb7a3975a"
+  },
+  "cs-work-caregiver": {
+   "svg": "e6c376a5af0c2600",
+   "png": "7a1de1d9c91cd80c"
   },
   "cs-work-catharsis-as-a-service": {
-   "svg": "e23ab3491965588c",
-   "png": "6cae0c17274cf499"
+   "svg": "243ba99875516697",
+   "png": "3676649c8046b644"
+  },
+  "cs-work-charon": {
+   "svg": "09cf62043e09c8a3",
+   "png": "5ae5aafca6d590d8"
+  },
+  "cs-work-cluster": {
+   "svg": "d6117ee7378a331b",
+   "png": "7373aacffc21c730"
+  },
+  "cs-work-cluster-kubernetes": {
+   "svg": "833b7f75710d2a09",
+   "png": "be33dd404544e0c6"
+  },
+  "cs-work-codecademy": {
+   "svg": "ccd40a487f09d648",
+   "png": "d704dc4a12197a65"
   },
   "cs-work-cognitive-reasoning": {
-   "svg": "ceea3296e6b8febd",
-   "png": "d362bc6705dfa670"
+   "svg": "2a9ce79f544e76f2",
+   "png": "f99655901d02bee4"
   },
   "cs-work-comtesse": {
-   "svg": "916ade9f33e21b26",
-   "png": "d83432a7fa40bbbc"
+   "svg": "eb80b8c1f8e33eb2",
+   "png": "91182265fe6e1dba"
   },
   "cs-work-corvidae": {
-   "svg": "49e9263c53b2977c",
-   "png": "73197d90fc292665"
+   "svg": "16c45cfd5c9835ad",
+   "png": "cfe073a90353397b"
+  },
+  "cs-work-craftsmen": {
+   "svg": "38427c4e8358e695",
+   "png": "5228073466224a37"
   },
   "cs-work-crisis-map": {
-   "svg": "89a8e17c9b9d9f5c",
-   "png": "c91a058430a44f94"
+   "svg": "b4849db3a48462a7",
+   "png": "d7f3b2066b77a8cd"
+  },
+  "cs-work-cs-benchmark": {
+   "svg": "49f6c586630b913b",
+   "png": "ac10fcb7b4b0072d"
+  },
+  "cs-work-csv2psql": {
+   "svg": "84874b2e68654ad4",
+   "png": "365e44506c264422"
+  },
+  "cs-work-ctu-cz": {
+   "svg": "7b3f124c3a683f00",
+   "png": "f2c406574d2a3ea2"
+  },
+  "cs-work-czech-stats": {
+   "svg": "226565eac0b1436b",
+   "png": "6058d1a9d6f19134"
+  },
+  "cs-work-data": {
+   "svg": "9380dc59d500b3d1",
+   "png": "2f09e7a83c7f87c0"
   },
   "cs-work-data-atlas": {
-   "svg": "362801f95a0439ab",
-   "png": "08a9280d6e83f5f1"
+   "svg": "ccf590e56f5fd1b1",
+   "png": "26d10978ffbd143d"
+  },
+  "cs-work-data-playground": {
+   "svg": "3ad8f54f4a4dde09",
+   "png": "43c8eb8ac2e98606"
+  },
+  "cs-work-datascience": {
+   "svg": "bc56c7693348bad6",
+   "png": "7d3ed9aa4bab3e38"
+  },
+  "cs-work-datasciencecoursera": {
+   "svg": "31216b6afc768490",
+   "png": "d342fde5c9fe8e66"
   },
   "cs-work-dispatcher": {
-   "svg": "0e934f2f2448671f",
-   "png": "c5ce927ee55d8b92"
+   "svg": "744275ac5bd1163c",
+   "png": "93b4428069901c11"
   },
   "cs-work-distance-calculator": {
-   "svg": "65c5794404300b4d",
-   "png": "c1e7e9b5e81450ff"
+   "svg": "af296638a5b347d9",
+   "png": "0499e364a0b24050"
+  },
+  "cs-work-dj-schnapps": {
+   "svg": "180ea5f7a98dcaca",
+   "png": "4314d14a3a030493"
+  },
+  "cs-work-docker-conf2015": {
+   "svg": "1b1f9b59a9ce0f6b",
+   "png": "334bed755cd10420"
+  },
+  "cs-work-docker-datasciencetoolbox": {
+   "svg": "d2f19170792311f7",
+   "png": "1a43c4d0bac15a81"
+  },
+  "cs-work-docker-dstk": {
+   "svg": "1c77ed9a63e763b1",
+   "png": "710176fd81dd8124"
+  },
+  "cs-work-docker-gooddata-ruby": {
+   "svg": "a1edf80c73980d31",
+   "png": "3a53f09240600ea0"
+  },
+  "cs-work-docks": {
+   "svg": "5852ce871ff42b5f",
+   "png": "a71d48b9805b96ce"
+  },
+  "cs-work-easy-plugin-plugins": {
+   "svg": "f65f809624ad62bb",
+   "png": "47c055507c03cc0d"
   },
   "cs-work-edna": {
-   "svg": "16e8cc223f8fff62",
-   "png": "91003ae19902d6ea"
+   "svg": "918c5bec745fd39b",
+   "png": "f96981ad108adcf0"
   },
   "cs-work-el-magico-cache": {
-   "svg": "86547e032677143f",
-   "png": "ff88fad7da25eb44"
+   "svg": "0ef88dce26e19cfa",
+   "png": "2fe782f76329d115"
+  },
+  "cs-work-esri": {
+   "svg": "17b90bb6f308f486",
+   "png": "5cc4f5799a8a8c23"
+  },
+  "cs-work-gauc-ex": {
+   "svg": "535d28182c6e96eb",
+   "png": "4fb86e3a4352aee7"
+  },
+  "cs-work-gdc-dumpator": {
+   "svg": "2f4fd95add69ac3f",
+   "png": "4dd54a4786769851"
+  },
+  "cs-work-generator-microscratch": {
+   "svg": "ef6d74306c5eee83",
+   "png": "166352e63fdf2bc4"
+  },
+  "cs-work-generator-the-scratch": {
+   "svg": "2dce594c845c40dd",
+   "png": "660ac58106b31187"
+  },
+  "cs-work-gh-exec-3000": {
+   "svg": "9f9b30c5f88144b7",
+   "png": "11aae7a240608c80"
   },
   "cs-work-ght": {
-   "svg": "ddf69f5ecfbdb046",
-   "png": "eeb3287aa9a133b1"
+   "svg": "852e8be16a35d79f",
+   "png": "1b28e1dea79650a8"
   },
   "cs-work-gists-search": {
-   "svg": "9e9bb5cdabbeeede",
-   "png": "70cd563955b44941"
+   "svg": "6f1d18954f13b51b",
+   "png": "0b65e0fb7fea2467"
+  },
+  "cs-work-github-extractor": {
+   "svg": "5fd2112766510d6a",
+   "png": "9a6a38538587bac1"
+  },
+  "cs-work-gooddata-connectors-metadata": {
+   "svg": "f331516c3a75aead",
+   "png": "e990c7df35b1942c"
+  },
+  "cs-work-gooddata-fs": {
+   "svg": "8fe85e60f35d725a",
+   "png": "f4ac1a162d1d5fe5"
+  },
+  "cs-work-gooddata-graphql": {
+   "svg": "bdef6287254793df",
+   "png": "8f0593a7dbb2dc67"
+  },
+  "cs-work-gooddata-lcm-tool": {
+   "svg": "85a7deab3de85797",
+   "png": "272dd46aa584367a"
+  },
+  "cs-work-gooddata-proxy": {
+   "svg": "ca7243642e3503d3",
+   "png": "2f25dc531d018150"
+  },
+  "cs-work-gooddata-rails-app": {
+   "svg": "1d17c60a05282738",
+   "png": "df2962803413fd7b"
+  },
+  "cs-work-gooddata-ruby-examples": {
+   "svg": "50eb00c3bd9cca94",
+   "png": "5cbfaad20369a96f"
+  },
+  "cs-work-grache": {
+   "svg": "6a55de0ebbf1839d",
+   "png": "9ec8aa07b8654356"
+  },
+  "cs-work-grache-test": {
+   "svg": "679125358f5d1779",
+   "png": "07937a2bc9f886c9"
+  },
+  "cs-work-graph-flow": {
+   "svg": "db123f4b3e1e0b10",
+   "png": "72d1b0ced129b085"
+  },
+  "cs-work-happ": {
+   "svg": "31fa6757fb951215",
+   "png": "c68d161ae0932741"
+  },
+  "cs-work-haskell-world": {
+   "svg": "a0821f052b8f0c48",
+   "png": "af4e34711b7dfa3a"
+  },
+  "cs-work-home": {
+   "svg": "007aa4c58a84a742",
+   "png": "4b65427331b8806f"
+  },
+  "cs-work-hydra": {
+   "svg": "933e9d1e5482476a",
+   "png": "5d6f62530562ee51"
+  },
+  "cs-work-icave": {
+   "svg": "ee46c6c4957eb334",
+   "png": "2238ed9238cc7a8e"
+  },
+  "cs-work-ideas": {
+   "svg": "a6671a25d9c29b78",
+   "png": "77b67063339b784a"
+  },
+  "cs-work-in-rust-we-trust": {
+   "svg": "fd479bbf81a00388",
+   "png": "c56a55d93b91e5ce"
+  },
+  "cs-work-inspectors": {
+   "svg": "8e64e4ad8e875e95",
+   "png": "164264ded280baf4"
+  },
+  "cs-work-jetel": {
+   "svg": "8352e05f7ca48db2",
+   "png": "a09ad138e7644ad0"
+  },
+  "cs-work-jetel-modules": {
+   "svg": "a5cfbfa396e5ccd6",
+   "png": "d631d796a83401aa"
   },
   "cs-work-job-processor": {
-   "svg": "8a427a7fe59bc8da",
-   "png": "040981cd69758168"
+   "svg": "f968ec860a51cc15",
+   "png": "6071fe7ef3e812bc"
+  },
+  "cs-work-js-libp2p-umbrella": {
+   "svg": "18b5528d69db702a",
+   "png": "ad35278e074634ab"
+  },
+  "cs-work-json2csv": {
+   "svg": "38a24e37f7b23ad7",
+   "png": "01c58cb4c1cff7b6"
+  },
+  "cs-work-k8s-orbis-pictus": {
+   "svg": "9e8e61756ce880a4",
+   "png": "e2982588eab07516"
+  },
+  "cs-work-kanec": {
+   "svg": "b2a77640cbc23118",
+   "png": "b9f406908420b631"
   },
   "cs-work-kompendium-epistemicke-anihilace": {
-   "svg": "e82f16eb05a8b4ea",
-   "png": "221f51a944a56844"
+   "svg": "f13b1e9a651820d0",
+   "png": "2dd4250936bce9b8"
+  },
+  "cs-work-korczis-com": {
+   "svg": "613f7e4537bbcf22",
+   "png": "7fcc8c35d390ff1e"
+  },
+  "cs-work-korczis-github-com": {
+   "svg": "4d66a729a352745b",
+   "png": "c89c4cefdccde121"
   },
   "cs-work-korczis-github-io": {
-   "svg": "bb7be4a2b4d6768b",
-   "png": "a6b1aa1498a9d01a"
+   "svg": "d07e89808f786542",
+   "png": "70e8a18719c44539"
   },
   "cs-work-korczis-gitlab-io": {
-   "svg": "11990086d5921f7c",
-   "png": "56049fdaba989ac4"
+   "svg": "b6c4a7dfe03a0b5e",
+   "png": "eb7f88cf4185c86c"
+  },
+  "cs-work-kpmap-ruby": {
+   "svg": "0507476c144c2f45",
+   "png": "dcb367c3f8fc480f"
   },
   "cs-work-kuzu-ex": {
-   "svg": "9213ceabfe81690f",
-   "png": "0fa0bce3e82cf1c7"
+   "svg": "1483ad879e1814f3",
+   "png": "9adf37de1d811a90"
+  },
+  "cs-work-lethe-it": {
+   "svg": "b0701c2a8fc6e919",
+   "png": "f106247009e46ffb"
   },
   "cs-work-llm": {
-   "svg": "daa079df12d699cb",
-   "png": "5bd213eba447d044"
+   "svg": "a12019c7ab83c490",
+   "png": "c3e4caec2e7de393"
+  },
+  "cs-work-lola": {
+   "svg": "2866806dc88ca847",
+   "png": "8aa4011beaba2685"
+  },
+  "cs-work-magic": {
+   "svg": "d1b8c157fdbec06c",
+   "png": "7c7d28f6d308c0c2"
+  },
+  "cs-work-magicbiz": {
+   "svg": "2c7db5d1d929daec",
+   "png": "b9f8476dc7f8796e"
   },
   "cs-work-majordomus-reel": {
-   "svg": "b508914e1a11401b",
-   "png": "de24868b76b53dfc"
+   "svg": "50eab49989e28d51",
+   "png": "fa1e7e57784454f4"
+  },
+  "cs-work-malina": {
+   "svg": "b6416414906f06c1",
+   "png": "aa182610af0792ce"
+  },
+  "cs-work-mapoffacts": {
+   "svg": "880c61bcb28501be",
+   "png": "a295227badfacf21"
+  },
+  "cs-work-mapofffacts-com": {
+   "svg": "35502bd6d31983c1",
+   "png": "489c1f9cc29f8607"
   },
   "cs-work-marketing-ideas": {
-   "svg": "e6cf959475fc9ccc",
-   "png": "df3f0a069535d445"
+   "svg": "40431f6943fd5286",
+   "png": "1d5a1854c15b0c61"
+  },
+  "cs-work-maze": {
+   "svg": "aaef762397a103cd",
+   "png": "dc92eab76abd43bf"
+  },
+  "cs-work-maze-js": {
+   "svg": "7357d8262a2c9789",
+   "png": "a9f7f5e094365af1"
+  },
+  "cs-work-maze-rs": {
+   "svg": "1de5251a5f7765ad",
+   "png": "d4a9834487d8d380"
   },
   "cs-work-meili-rsex": {
-   "svg": "fb0bd7419ac42ff3",
-   "png": "a79fbe8b09909bee"
+   "svg": "a406693e4aa77aeb",
+   "png": "4e967ff2237d3b41"
+  },
+  "cs-work-microcrawler": {
+   "svg": "e35b49b0bf69112d",
+   "png": "b083cb565a49b24a"
+  },
+  "cs-work-microcrawler-browser": {
+   "svg": "ee4709e31c101529",
+   "png": "7e1ddbf73d662411"
+  },
+  "cs-work-microcrawler-couchapp": {
+   "svg": "ece1b97c571aa4d2",
+   "png": "70510ef2cb13482d"
+  },
+  "cs-work-microcrawler-crawler-all": {
+   "svg": "fb1c3bc9a46eae72",
+   "png": "2e9ed0fea6dd9119"
+  },
+  "cs-work-microcrawler-crawler-bam-brno-cz": {
+   "svg": "dccf79df525afad2",
+   "png": "1c59fd7f92b17b22"
+  },
+  "cs-work-microcrawler-crawler-base": {
+   "svg": "726d365fe7d45e9f",
+   "png": "e9d5f887dc258eee"
+  },
+  "cs-work-microcrawler-crawler-craiglist-com": {
+   "svg": "83c329f88fbfea68",
+   "png": "b6566ce918be753a"
+  },
+  "cs-work-microcrawler-crawler-firmy-cz": {
+   "svg": "8bb0db885fd90afe",
+   "png": "c60f0858e7ed41dc"
+  },
+  "cs-work-microcrawler-crawler-google-com": {
+   "svg": "4b1aa3391bb974ba",
+   "png": "896f90fd59f40aa2"
+  },
+  "cs-work-microcrawler-crawler-heureka-cz": {
+   "svg": "d74d00bc42994c4f",
+   "png": "962e5843ab963cd8"
+  },
+  "cs-work-microcrawler-crawler-news-ycombinator-com": {
+   "svg": "326b2e7f095556e3",
+   "png": "a2a337f0a1309b3e"
+  },
+  "cs-work-microcrawler-crawler-sreality-cz": {
+   "svg": "38c396729591a13d",
+   "png": "438bdb23d19ac7cb"
+  },
+  "cs-work-microcrawler-crawler-xkcd-com": {
+   "svg": "03a82af06824c7fb",
+   "png": "cdf36815c6e5087c"
+  },
+  "cs-work-microcrawler-crawler-yelp-com": {
+   "svg": "2e8f6f9a227eaf8f",
+   "png": "01307d230aadd898"
+  },
+  "cs-work-microcrawler-elixir": {
+   "svg": "4c6b66ea8490dcd2",
+   "png": "7c474f78ead79a40"
+  },
+  "cs-work-microcrawler-js": {
+   "svg": "6503bee14b0777af",
+   "png": "bca2b882622b9950"
+  },
+  "cs-work-microcrawler-ng": {
+   "svg": "ac9430a0b77a0bec",
+   "png": "7af2c60a6b79e17c"
+  },
+  "cs-work-microscratch": {
+   "svg": "67cb7f628d7cbebd",
+   "png": "3ecf91ac74e7e52c"
+  },
+  "cs-work-microscratch-react": {
+   "svg": "a62850682b054ef9",
+   "png": "184d0e7146ef93e9"
   },
   "cs-work-mindscape": {
-   "svg": "57be4b344cef9b91",
-   "png": "49134a590f82fe88"
+   "svg": "27a8911286a7d779",
+   "png": "9988f5b4e534a378"
+  },
+  "cs-work-minervaeye": {
+   "svg": "6aed7bf7a4b7609e",
+   "png": "a98a8be67f1b16e0"
+  },
+  "cs-work-models": {
+   "svg": "68157e8b4ff6f02e",
+   "png": "597c7b9a0fded0ab"
+  },
+  "cs-work-nestravenkam": {
+   "svg": "6682aa1cb5d61eba",
+   "png": "20d6981d95820b0f"
+  },
+  "cs-work-node-proxy-upload": {
+   "svg": "1f0de22b9c7db576",
+   "png": "cce154a358433bf8"
+  },
+  "cs-work-nosqlight": {
+   "svg": "b56a75e6d972799f",
+   "png": "e1b82ff115381410"
   },
   "cs-work-openttd-prismatic-bridge": {
-   "svg": "a34913fdd849c704",
-   "png": "f93b73ae87ad6252"
+   "svg": "cedbdfb26042004a",
+   "png": "1fb7922e617f6ab8"
   },
   "cs-work-oscilla": {
-   "svg": "a9d25062cb618442",
-   "png": "11a07c2419ccd734"
+   "svg": "e6bf37f162425ae5",
+   "png": "b1f0c76a57e6571f"
   },
   "cs-work-osint-case-ratcliffe-moscow-2026": {
-   "svg": "d45c4e9ff427a883",
-   "png": "f8bdd19e703922a2"
+   "svg": "d5fb5b0140b8e5fc",
+   "png": "a32d41fd3a883f86"
   },
   "cs-work-past": {
-   "svg": "a636f88d1fb34972",
-   "png": "7ffe4ec86b874200"
+   "svg": "33210a249e847163",
+   "png": "981ed7edd3f59b67"
+  },
+  "cs-work-pavian-eu": {
+   "svg": "e9aacd3bfffabe90",
+   "png": "d2850bbb1d9b0282"
   },
   "cs-work-pdf-renderer": {
-   "svg": "1875e86664d8ce58",
-   "png": "1c4a3193d663f69f"
+   "svg": "dddc58bf855f5afa",
+   "png": "7464ec44e9e1c8cf"
+  },
+  "cs-work-peacemaker": {
+   "svg": "70377b74ec04cc45",
+   "png": "b84bb3325438bca9"
+  },
+  "cs-work-peg-loader": {
+   "svg": "244f1da69406c653",
+   "png": "fe4d761704354e17"
+  },
+  "cs-work-peg-parser": {
+   "svg": "1a90ffa6d062edd7",
+   "png": "2bb098e5a656a358"
+  },
+  "cs-work-photos": {
+   "svg": "959c7ff0e77ca98b",
+   "png": "72b8e7584c57899b"
   },
   "cs-work-pissaleck": {
-   "svg": "c284aa167f811097",
-   "png": "c0036a65f745512a"
+   "svg": "656d0a9d7d4b80b5",
+   "png": "715626f453765ef7"
+  },
+  "cs-work-principal": {
+   "svg": "1b684d2c20215754",
+   "png": "305f6fe79fc58053"
   },
   "cs-work-prism": {
-   "svg": "f13a2129a6c87c68",
-   "png": "c792d5e4c90262c5"
+   "svg": "c74394d1fa4a3caa",
+   "png": "b8d2328507a01647"
   },
   "cs-work-prismatic": {
-   "svg": "4a5296e4ef722be9",
-   "png": "127e695907d12dd8"
+   "svg": "0a198e9349161f22",
+   "png": "cefae8a0083a91d0"
   },
   "cs-work-prismatic-blog": {
-   "svg": "fa2d1a962c49a477",
-   "png": "a052780c2224ebf6"
+   "svg": "7d30e15e34fd9a70",
+   "png": "3237f826cfe75cdb"
   },
   "cs-work-prismatic-majordomus": {
-   "svg": "52eefee86f3be25f",
-   "png": "b3dd6fcb9fe086da"
+   "svg": "79d929351d165cd1",
+   "png": "f2cc3d7f29e1cf82"
+  },
+  "cs-work-ratnet": {
+   "svg": "275a988e55e650da",
+   "png": "7a8aadef947d4e4f"
+  },
+  "cs-work-reading": {
+   "svg": "4b6977b0dbcb2ce3",
+   "png": "25725bbda2eb964b"
+  },
+  "cs-work-readingphonenumbersinrealtime": {
+   "svg": "4b0fb0f2058cb650",
+   "png": "914b379dc5b0429e"
+  },
+  "cs-work-reflex": {
+   "svg": "cb516fe2db8a5b4c",
+   "png": "3141031597435fbf"
+  },
+  "cs-work-rest-hello-world-benchmark": {
+   "svg": "f41020d23295de90",
+   "png": "174b349923d6b764"
+  },
+  "cs-work-rocksdb-indexer": {
+   "svg": "07725798ec2a49ca",
+   "png": "f6c1c8b0e23a436c"
+  },
+  "cs-work-rocnikac4": {
+   "svg": "a4969eabd6891ad0",
+   "png": "030b6702db516248"
+  },
+  "cs-work-rustas": {
+   "svg": "79e324b2255734e6",
+   "png": "66658d8389bdd5a6"
+  },
+  "cs-work-rustler-mix": {
+   "svg": "d557d2db513e3147",
+   "png": "a715d797b71920fe"
+  },
+  "cs-work-rustler-test": {
+   "svg": "67cc3b050ab67214",
+   "png": "b3e531b46800eef0"
+  },
+  "cs-work-sandbox": {
+   "svg": "cb8b8d7a30f7a6f4",
+   "png": "0d87dfa48d446b84"
+  },
+  "cs-work-server-ansible": {
+   "svg": "205a43d65a738e49",
+   "png": "d92fc8edf3d27d5a"
+  },
+  "cs-work-server-archlinux": {
+   "svg": "812b46728d2830b0",
+   "png": "c0c993f9fb9f2d2d"
+  },
+  "cs-work-server-atomic": {
+   "svg": "5a2e9f6528d9f59f",
+   "png": "96e2579bd438370b"
+  },
+  "cs-work-server-coreos": {
+   "svg": "f0f8152ae6c8fc20",
+   "png": "0c07bb498ea9b655"
+  },
+  "cs-work-server-nixos": {
+   "svg": "d3e7a9bd80071f4d",
+   "png": "9da1e6c1a4f0ce5e"
   },
   "cs-work-sig": {
-   "svg": "39d168ba0138699c",
-   "png": "f96855175c1455d1"
+   "svg": "41c3df2bbdefee2d",
+   "png": "9ed2fa46072753f2"
   },
   "cs-work-simple-geocoder": {
-   "svg": "d94b029cfadada2a",
-   "png": "39f3282883ba10aa"
+   "svg": "29ef1c16a3e28e20",
+   "png": "a19604646056c2aa"
+  },
+  "cs-work-skull": {
+   "svg": "5b78fe2d2e9a8014",
+   "png": "cf0922dee040f1fa"
+  },
+  "cs-work-skull-c": {
+   "svg": "4b038038a3b8169d",
+   "png": "855668fcf34f2132"
+  },
+  "cs-work-skull-cpp": {
+   "svg": "3b60e80db654a541",
+   "png": "da7f1cde8a95aa42"
+  },
+  "cs-work-skull-elixir": {
+   "svg": "07fe01a04de7926e",
+   "png": "cdc6be14487c3f05"
+  },
+  "cs-work-skull-emscripten": {
+   "svg": "0f6f6f5c871cb2ab",
+   "png": "3b8b4598faeea03e"
+  },
+  "cs-work-skull-erlang": {
+   "svg": "4aa5c70b48f819e4",
+   "png": "3861dfcfeab217b7"
+  },
+  "cs-work-skull-haskell": {
+   "svg": "256360c7004c496c",
+   "png": "b4c9d524a3ceaae5"
+  },
+  "cs-work-skull-java": {
+   "svg": "9cbc95f1ef432f35",
+   "png": "e13458cb5883f933"
+  },
+  "cs-work-skull-nodejs": {
+   "svg": "8056506c0740dbca",
+   "png": "42fe4eca764fd5b8"
+  },
+  "cs-work-skull-ruby": {
+   "svg": "7d226a1c3e6568a2",
+   "png": "f9533e0bb6c1c609"
+  },
+  "cs-work-skull-rust": {
+   "svg": "a1c68fafb314ede9",
+   "png": "b777a940d94cc856"
+  },
+  "cs-work-skype-adapter-client": {
+   "svg": "f5d6baf463499861",
+   "png": "101d91e0218bd177"
+  },
+  "cs-work-sli2dli": {
+   "svg": "a61eac76d665ae68",
+   "png": "d482de62630103b9"
+  },
+  "cs-work-social-icons": {
+   "svg": "072a83bb768f6964",
+   "png": "da9ae366ab04a9cc"
+  },
+  "cs-work-solr-core-minimal": {
+   "svg": "0e314066fae843d7",
+   "png": "0e7cecafeeaf2a31"
   },
   "cs-work-sonic-playground": {
-   "svg": "8e51aebe987b9280",
-   "png": "4fd3fc93085e3336"
+   "svg": "c787d354f00ca999",
+   "png": "ec643a637c4f6ab5"
+  },
+  "cs-work-streamflow": {
+   "svg": "89c8e0bc31ff67e6",
+   "png": "e1f23b053af3c739"
+  },
+  "cs-work-talkie": {
+   "svg": "fde9cf1ac942cf1e",
+   "png": "3afa6174b60c72d8"
   },
   "cs-work-tap": {
-   "svg": "6e8bf34900297629",
-   "png": "160cae24105912ac"
+   "svg": "1bad7ca2e8fc4b97",
+   "png": "2667459f6cbde2af"
+  },
+  "cs-work-test-elixir": {
+   "svg": "97f045ae3f6feb22",
+   "png": "ba55b8f085fccf7a"
   },
   "cs-work-the-psycho": {
-   "svg": "bed58bdc3236b7c1",
-   "png": "27ff52a1a91d3603"
+   "svg": "95f271c12086a67f",
+   "png": "f8e8ddeb50bd995e"
+  },
+  "cs-work-the-scratch": {
+   "svg": "3ade08095aa614da",
+   "png": "06d5b8eace7ae154"
   },
   "cs-work-tinder-nomics": {
-   "svg": "97c60cd8d6d93915",
-   "png": "07a333b23e660519"
+   "svg": "299ac607d70f51d4",
+   "png": "3c2ffb364b567d20"
+  },
+  "cs-work-tosh": {
+   "svg": "fb28f87fb495aa11",
+   "png": "0b83caa4d1df57a8"
+  },
+  "cs-work-ts-logger": {
+   "svg": "7ff86243ec3af794",
+   "png": "a83c20f87d22cea8"
+  },
+  "cs-work-twitter-analysis": {
+   "svg": "fcf8c5eca70703d4",
+   "png": "f71d0dac87b107d8"
   },
   "cs-work-u-tygra": {
-   "svg": "0b531ba54d88c116",
-   "png": "240cf749f8a63fa0"
+   "svg": "4a2eb0b442e3afe8",
+   "png": "595007e1f2e10275"
   },
   "cs-work-vomaste-cz": {
-   "svg": "10ce7f6d2925df28",
-   "png": "ddbe2e3938894ad5"
+   "svg": "37719c7c607aa7e6",
+   "png": "815eb6509ed91e00"
+  },
+  "cs-work-wangsta": {
+   "svg": "86e0605b45cd203f",
+   "png": "94fce020a8fcc74d"
+  },
+  "cs-work-web-spa": {
+   "svg": "d23fb0f1932ede1c",
+   "png": "0ed98b6ce5228a99"
+  },
+  "cs-work-wims": {
+   "svg": "5a4dde3d71538467",
+   "png": "80b3e8be491faf73"
+  },
+  "cs-work-zaas": {
+   "svg": "99df944438b413fb",
+   "png": "2f3fe5e98ca7512e"
+  },
+  "cs-work-zdeny-docker": {
+   "svg": "3b2dd8a096978ea5",
+   "png": "50c50d0e71951696"
+  },
+  "cs-work-zeman-ucet": {
+   "svg": "dfe367d77797ac90",
+   "png": "e9f70f49f60c3637"
+  },
+  "cs-work-zlown": {
+   "svg": "6ea466c12650d4d5",
+   "png": "6f2959e0df9e3abd"
   },
   "glossary": {
-   "svg": "acc58998e75fe516",
-   "png": "0e583912f249e221"
+   "svg": "c5a1d080dcad79e4",
+   "png": "806f44ca00853ca0"
   },
   "glossary-ai-agent": {
-   "svg": "b9b2e5a59fece551",
-   "png": "19611e56e0be2853"
+   "svg": "3c5aa931bdc10114",
+   "png": "23512a0f5d112905"
   },
   "glossary-alpine-js": {
-   "svg": "4fe2d3cd0ec03337",
-   "png": "dae96dfbce2dc590"
+   "svg": "3b7ceb331d46ccda",
+   "png": "b8e7e0f194685122"
   },
   "glossary-apache-echarts": {
-   "svg": "330afe3c567b789a",
-   "png": "35f2dbc90b0090ef"
+   "svg": "9cec2d517135ee7b",
+   "png": "2787d8ca613fc798"
   },
   "glossary-audit-trail": {
-   "svg": "0a8ed5db9da0ff34",
-   "png": "7531e2e0a497f130"
+   "svg": "9257e6ab335a5147",
+   "png": "5d7ea244908ca685"
   },
   "glossary-c": {
-   "svg": "223896a4be5f2813",
-   "png": "1c378ed4d4c2f22f"
+   "svg": "7b53fd049596eaf1",
+   "png": "3496851f8c703b79"
   },
   "glossary-chart-js": {
-   "svg": "f88fb87a678e30a1",
-   "png": "35457e74226214d7"
+   "svg": "8f09c7a78c2dd51d",
+   "png": "db299914685423f5"
   },
   "glossary-commit": {
-   "svg": "6eef50bcdbde7d3c",
-   "png": "88017b336eebce9c"
+   "svg": "d3f2b89dbe79b3db",
+   "png": "7cb489b155e2a97e"
   },
   "glossary-cpp": {
-   "svg": "6e89f8ccb0644201",
-   "png": "9e7a96cc9784dfdd"
+   "svg": "274f0e1c419d09b9",
+   "png": "fe03c74d14ab7f5f"
   },
   "glossary-csharp": {
-   "svg": "6ac6d02ac026ff59",
-   "png": "4134aa2456781e5c"
+   "svg": "c2d64efcf48f070e",
+   "png": "6414c93ad8231cd8"
   },
   "glossary-css": {
-   "svg": "4b97f3d987b37f6f",
-   "png": "acb685d8030f1e79"
+   "svg": "a0f25e8595a43723",
+   "png": "f50f9eff32ce18d1"
   },
   "glossary-cytoscape-js": {
-   "svg": "e742716117ba2dbe",
-   "png": "79bed2ff4a0ac7bb"
+   "svg": "b161ecfbe1d5944e",
+   "png": "e48e0f08f1c81aed"
   },
   "glossary-d3": {
-   "svg": "128e4b9b7b29e011",
-   "png": "d269e9d42e64554f"
+   "svg": "e00cd6044af6d32f",
+   "png": "82e6bb49f4263630"
   },
   "glossary-data-integration": {
-   "svg": "d044f97e9bdc32d4",
-   "png": "bb0b5819304dc86e"
+   "svg": "9e635c00273dd8f3",
+   "png": "30f91c3b529ad168"
   },
   "glossary-data-visualisation": {
-   "svg": "018e59b3adbd21dc",
-   "png": "94a3cb889b918a99"
+   "svg": "ca09480df183bde2",
+   "png": "3d8e2c6a00f4202a"
   },
   "glossary-decision-support-system": {
-   "svg": "54d53e65d8fdacae",
-   "png": "d1f9757673194f44"
+   "svg": "9bd7ef372f5ac1a6",
+   "png": "1ef6073c6f0d2b2a"
   },
   "glossary-dockerfile": {
-   "svg": "3399d23994e1fef7",
-   "png": "7cefb028c2c923b8"
+   "svg": "87b9aae89ce237f7",
+   "png": "01dbc736cfa0506a"
   },
   "glossary-due-diligence": {
-   "svg": "8e50066c83e59909",
-   "png": "b46c5e55b9221f55"
+   "svg": "8098792f983f3e65",
+   "png": "bf854d05be564bcf"
   },
   "glossary-elixir": {
-   "svg": "2831fcc5a1d55b35",
-   "png": "93ff528021b85621"
+   "svg": "552d38db0ab1e1d6",
+   "png": "3d87e3c7338331b5"
   },
   "glossary-erlang": {
-   "svg": "03ad7ea07e3bdd38",
-   "png": "c9a2a806523e07a9"
+   "svg": "e53a70ab1883bb78",
+   "png": "abc5e53340ad0d09"
   },
   "glossary-flowbite-pro": {
-   "svg": "d4ada966955ef5f4",
-   "png": "b8bfa329e5cc43ee"
+   "svg": "39890179d7e0df3f",
+   "png": "13e3929c91d14054"
   },
   "glossary-fork": {
-   "svg": "1b710ddbffc4f946",
-   "png": "1db11bc587b40951"
+   "svg": "bf2e6d6c0062c0f4",
+   "png": "e00bbb1502f0cbcf"
   },
   "glossary-front-matter": {
-   "svg": "118e691cf56a5dfc",
-   "png": "1f0ffafbf2bd2d76"
+   "svg": "87f7d38dfc4841f7",
+   "png": "6ffa23e9e3eae6b5"
   },
   "glossary-gis": {
-   "svg": "f6314203ca0b26e3",
-   "png": "8e5bafd1e20afefd"
+   "svg": "0cada339d4487181",
+   "png": "9cd74b113233e0f4"
   },
   "glossary-github-pages": {
-   "svg": "276ded98acebe77a",
-   "png": "230a878906a0ef70"
+   "svg": "15141c9efb2d0695",
+   "png": "c8f05e0b1e2e440e"
   },
   "glossary-haskell": {
-   "svg": "7db91bc6f3a427fc",
-   "png": "5621d2d0dceac91f"
+   "svg": "1c9341f583d2e481",
+   "png": "c6cf3246611dbf46"
   },
   "glossary-html": {
-   "svg": "942b649a2e7d9f36",
-   "png": "fc86bcf45be38681"
+   "svg": "9c1f8c94fb3777d1",
+   "png": "7f4cebe988d07a61"
   },
   "glossary-i18n": {
-   "svg": "b672ee91d44f82cc",
-   "png": "31c68acb69308cfb"
+   "svg": "83fbd47abb36036b",
+   "png": "43405e1f69b474be"
   },
   "glossary-information-extraction": {
-   "svg": "8576f8d5775e1b10",
-   "png": "c02c7819fe3e247e"
+   "svg": "c2b3f1fb239bd766",
+   "png": "f47f8d50872e71a1"
   },
   "glossary-insolvency": {
-   "svg": "a5c882fb1efcab24",
-   "png": "8e432b7cf8b5bf8f"
+   "svg": "2e39cbe6eb1b9ca6",
+   "png": "0cf59ad91fd33c67"
   },
   "glossary-java": {
-   "svg": "77ab5f8aa8976077",
-   "png": "332bffeb208f2844"
+   "svg": "b5fe270d7e537f60",
+   "png": "9363aa944579b6c1"
   },
   "glossary-javascript": {
-   "svg": "b71bf24b0540c139",
-   "png": "7a47122498092bcc"
+   "svg": "f4a90da503fda934",
+   "png": "2d6f67bcec7eab83"
   },
   "glossary-json-ld": {
-   "svg": "975153be9c1d3a32",
-   "png": "afd73670d644606a"
+   "svg": "bdfc146b34f18210",
+   "png": "e1f98b48a5792fd2"
   },
   "glossary-knowledge-graph": {
-   "svg": "6cc1b2006a3e0cef",
-   "png": "76d10f425dacdab8"
+   "svg": "e803e0d844b00bf9",
+   "png": "f979c401a7174559"
   },
   "glossary-majordomus": {
-   "svg": "f12ac240c76d8067",
-   "png": "37dd6e14329cab66"
+   "svg": "2a10bd3194e1cf3e",
+   "png": "2af5390bab77255c"
   },
   "glossary-market-intelligence": {
-   "svg": "43c872ba43c8595d",
-   "png": "8797542aa3f8aa72"
+   "svg": "4a81e87aa887d044",
+   "png": "0e841b6c5c0c6fd6"
   },
   "glossary-mcp": {
-   "svg": "a07db3c3963ba190",
-   "png": "2a6b3f921a39b38d"
+   "svg": "a6c6af6ba2fe51d9",
+   "png": "8c54bb40eaf75031"
   },
   "glossary-mergers-and-acquisitions": {
-   "svg": "8b18dd02a2dfbff4",
-   "png": "bcf84534ec05ff25"
+   "svg": "0c8e179f0936ffed",
+   "png": "91513ac655f4f4d8"
   },
   "glossary-mirror": {
-   "svg": "c00abcd4291f916b",
-   "png": "81182529a530870e"
+   "svg": "5e0fa436ae1f207a",
+   "png": "a3c532b2f2499449"
   },
   "glossary-nix": {
-   "svg": "51ac39f85c6aa416",
-   "png": "1c812e7851b1ccdf"
+   "svg": "26216f4315191322",
+   "png": "f4f0aa0afc239074"
   },
   "glossary-open-graph": {
-   "svg": "51a7d5d9ee0ecfa5",
-   "png": "0b3debc42535fbd7"
+   "svg": "94ee2977e5b08701",
+   "png": "e0969827d989db9b"
   },
   "glossary-open-source": {
-   "svg": "d2d2940a43e38fb7",
-   "png": "dd9336d4e49fb245"
+   "svg": "e62e19d071fa5f70",
+   "png": "efe327ef8129cf51"
   },
   "glossary-openapi": {
-   "svg": "cd42ab5366e614e9",
-   "png": "3db44871a0a0e57d"
+   "svg": "d4198569615d420f",
+   "png": "6489365d3bc10fc1"
   },
   "glossary-orchestration": {
-   "svg": "53b9792497cea36d",
-   "png": "8eae4cf7ed00f2c4"
+   "svg": "9927663c9f21667c",
+   "png": "69e6469a0653b5e6"
   },
   "glossary-osint": {
-   "svg": "afcda6d9b54d07c2",
-   "png": "5d8bc3e956ec34e9"
+   "svg": "d04fc74c6f3a2d39",
+   "png": "5cecc8147d63a601"
   },
   "glossary-p5-js": {
-   "svg": "b6c0bdf6188ee4e2",
-   "png": "a93d7b5e0f966a76"
+   "svg": "e4529d97afb2deeb",
+   "png": "2a63226f11bf1ca1"
   },
   "glossary-postgis": {
-   "svg": "8a97ba6d62350624",
-   "png": "ccab9fc05b247fba"
+   "svg": "50450c02f93e1b7f",
+   "png": "f476623b6458c0b1"
   },
   "glossary-postgresql": {
-   "svg": "ccfdf51af42d367f",
-   "png": "fd8d34ca4132e2a0"
+   "svg": "8d6fdf3e83900d42",
+   "png": "ebaeed154e273750"
   },
   "glossary-python": {
-   "svg": "599213d86b768eb3",
-   "png": "c22a2db5640ed219"
+   "svg": "bb9e7d6b1f61f1a2",
+   "png": "b7be388be5c85cfd"
   },
   "glossary-record-linkage": {
-   "svg": "d590948ee74dec6e",
-   "png": "47b2efa051012d92"
+   "svg": "40d9e34b29e36223",
+   "png": "9f61dc1f92f1ec95"
   },
   "glossary-repository": {
-   "svg": "a78e60802ee01197",
-   "png": "1ce74352c7a1fd00"
+   "svg": "000cfb12e63f24f3",
+   "png": "06cab43a5ecebf4d"
   },
   "glossary-risk-assessment": {
-   "svg": "fef5e9fc2f448608",
-   "png": "1f760be4d0a47923"
+   "svg": "cfc6a6a97a1470bd",
+   "png": "8ef3f75c471dd5f7"
   },
   "glossary-ruby": {
-   "svg": "5fd64a08e6eaa02a",
-   "png": "303462af261bcdd5"
+   "svg": "c30cd1795e747a79",
+   "png": "d6a87421ce22eed1"
   },
   "glossary-rust": {
-   "svg": "b0387f798dcae55b",
-   "png": "c6472d715dc9bf0c"
+   "svg": "900308ddc2806574",
+   "png": "5233c6f449757bde"
   },
   "glossary-shell": {
-   "svg": "3a7c696cb339d6a9",
-   "png": "cb53ad28257e6aa6"
+   "svg": "ee1c825f9252b3ad",
+   "png": "9a64e3c77d63e71f"
   },
   "glossary-static-site-generator": {
-   "svg": "5b37edf23ad7a380",
-   "png": "e46ac73e10a91470"
+   "svg": "c1059d315ba031da",
+   "png": "afb257b4e53a4017"
   },
   "glossary-swift": {
-   "svg": "67c17a501efc7762",
-   "png": "3622cefb7d1df43d"
+   "svg": "3e17d939b66db058",
+   "png": "3b69a2a3627559f2"
   },
   "glossary-tailwind-css": {
-   "svg": "d637a39bd2776dce",
-   "png": "3c19aa1bc163cbca"
+   "svg": "b085701d6e1e2113",
+   "png": "b3a242b3d9a6c860"
   },
   "glossary-typescript": {
-   "svg": "84bf413fb1d34532",
-   "png": "c3f47aae332e42d2"
+   "svg": "3b9deee2e7ef3d33",
+   "png": "ecfa4385e2215be2"
   },
   "glossary-virtual-data-room": {
-   "svg": "cd0de2b55ef762d4",
-   "png": "7cfbc7c2437a169d"
+   "svg": "4884a7cc2e54c424",
+   "png": "472d9318fb7af15c"
   },
   "glossary-wcag": {
-   "svg": "9ceabf1adf2511cb",
-   "png": "d586b570339bc2c7"
+   "svg": "c9580cf26e69bf6d",
+   "png": "48d38eee39a3d9f1"
   },
   "glossary-web-audio": {
-   "svg": "c1cfe03797e1fd26",
-   "png": "267777e6688b2771"
+   "svg": "8004dc51b2cf5d94",
+   "png": "fa683788aa9b663d"
   },
   "glossary-zola": {
-   "svg": "29b4433353c9b00e",
-   "png": "7002ee1ee72e7edb"
+   "svg": "6b928015fdaa5b66",
+   "png": "c5fb9b673f7c3a95"
   },
   "hire": {
-   "svg": "b94849eb65ee30b3",
-   "png": "cc56b7f432e19c95"
+   "svg": "0e6210f137928e9f",
+   "png": "0ccd9fb1a80c4e45"
   },
   "home": {
-   "svg": "ec999a7bf44e77b6",
-   "png": "9d6c627004702a54"
+   "svg": "de6871edbe95d91c",
+   "png": "031f809e198c2375"
   },
   "interfaces": {
-   "svg": "7d9117f8c77ed534",
-   "png": "ac4351ff01012013"
+   "svg": "29a6c6466d44d8eb",
+   "png": "19268102fd1263ea"
   },
   "projects": {
-   "svg": "89da8601eb2dc3ba",
-   "png": "96a86234f71bd528"
+   "svg": "d65b159c72d941c0",
+   "png": "171f4895d50c4912"
   },
   "repositories": {
-   "svg": "d61d34a263b5aceb",
-   "png": "9942d0622676fd4e"
+   "svg": "8a0e8f23cb06e30e",
+   "png": "56f4513556a8456d"
   },
   "stack": {
-   "svg": "c34f7c85771849cd",
-   "png": "be2ca00fb0e7a54f"
+   "svg": "88afdcf18a3ab47f",
+   "png": "869ad06467f491b8"
   },
   "work": {
-   "svg": "6c87a1ca2ae5ef2b",
-   "png": "6211a2a5c68f324c"
+   "svg": "afe2b960c50a3516",
+   "png": "48e537248197f813"
+  },
+  "work-3d-print": {
+   "svg": "69039dd35c5e09d5",
+   "png": "84f1fd0de96adb90"
   },
   "work-algoglyph": {
-   "svg": "f592b33eaf4b55e7",
-   "png": "007de2cdfe0b90ba"
+   "svg": "b6b8e25bde19f2eb",
+   "png": "a769d3fd41498bf1"
+  },
+  "work-algorithms": {
+   "svg": "f665bfec725c5652",
+   "png": "e8282910d0aa0ac8"
+  },
+  "work-algorithms-ruby": {
+   "svg": "88b732ca2d5730db",
+   "png": "3922f41e5098adfb"
+  },
+  "work-annasabatova-cz": {
+   "svg": "c927bee3c9ffba8e",
+   "png": "8e4ff10341f8c182"
+  },
+  "work-apollo-box": {
+   "svg": "530d0a6847871d60",
+   "png": "3bdad7aab234f09d"
+  },
+  "work-apollo-crawler": {
+   "svg": "725561af7f567930",
+   "png": "af03fcc4c4fa0d1d"
+  },
+  "work-apollo-crawler-extension": {
+   "svg": "dec1697f2dfb5db6",
+   "png": "92c4215b474c32b1"
+  },
+  "work-apollo-schemas": {
+   "svg": "d8b97816e4f64bcb",
+   "png": "cfa20d977d10dd63"
+  },
+  "work-apollocrawler-com": {
+   "svg": "306d741db2dbc056",
+   "png": "374aca826051f0a3"
+  },
+  "work-apollocrawler-github-io": {
+   "svg": "221b904223bc3b0d",
+   "png": "a71c5eb21efbb368"
+  },
+  "work-apollon": {
+   "svg": "5b4712cc2242b229",
+   "png": "08cf0da47c44753d"
+  },
+  "work-ares": {
+   "svg": "564ddbed05b0e31d",
+   "png": "3cb8f8f687f0a00c"
+  },
+  "work-ares-api": {
+   "svg": "4d5dd44e193ab221",
+   "png": "3a3e902f2d4444dd"
   },
   "work-astronomists": {
-   "svg": "7518412fca57b763",
-   "png": "3443ea4fbd7fec0d"
+   "svg": "3fab385635ac08c0",
+   "png": "ac3dbb481fee471b"
+  },
+  "work-astudo": {
+   "svg": "03530e5134928b77",
+   "png": "0d94b6b3e7717df6"
+  },
+  "work-aws-lambda-docker": {
+   "svg": "8311ef5bb1a38d80",
+   "png": "f53bd0789c057e98"
+  },
+  "work-babel-plugin-transform-graphql": {
+   "svg": "be75d10469405afe",
+   "png": "2c5330564aebacbb"
+  },
+  "work-bc-apple": {
+   "svg": "555bbf355c3f2744",
+   "png": "bfc68479cfcc73c2"
+  },
+  "work-bcnode-extra-scripts": {
+   "svg": "4d92c5a6e14379d8",
+   "png": "1fe2cb8c329118e5"
+  },
+  "work-bcnode-old": {
+   "svg": "92e824431fe1670e",
+   "png": "0cc5f81b61aab0f9"
+  },
+  "work-big-png": {
+   "svg": "4c38c50f5a52d185",
+   "png": "5445fb745ddffde5"
+  },
+  "work-books": {
+   "svg": "6e53461253f13388",
+   "png": "7e0816e1bde98bf7"
+  },
+  "work-brepta": {
+   "svg": "c6d30a5826dfc5be",
+   "png": "8a322e7e68778d21"
   },
   "work-bubbler": {
-   "svg": "a03700ffbf427b4a",
-   "png": "c7288c4a5ecb9e08"
+   "svg": "2af8847657f494cd",
+   "png": "8a087b8d770cb4db"
+  },
+  "work-caregiver": {
+   "svg": "bf9367ab02fce149",
+   "png": "88312fdd2c6d6dd0"
   },
   "work-catharsis-as-a-service": {
-   "svg": "41120b5da06c5cdb",
-   "png": "911d349dcbffa7d8"
+   "svg": "6ed728592489ca0f",
+   "png": "93c8c98271466474"
+  },
+  "work-charon": {
+   "svg": "d9e6735f9fbebd4f",
+   "png": "7f19183b884b9493"
+  },
+  "work-cluster": {
+   "svg": "2f4fbd542d7667a7",
+   "png": "23c0f4910282a090"
+  },
+  "work-cluster-kubernetes": {
+   "svg": "b05dd2a9044db712",
+   "png": "a627ff46247055b3"
+  },
+  "work-codecademy": {
+   "svg": "198cba3d6f397e00",
+   "png": "f3288989b45b863b"
   },
   "work-cognitive-reasoning": {
-   "svg": "a5ba4e81db450a2c",
-   "png": "d93b33442bfea8c0"
+   "svg": "293541b2d9d754a7",
+   "png": "670b244d906eb957"
   },
   "work-comtesse": {
-   "svg": "6d3aaea1c346fd78",
-   "png": "416fc55a598f0510"
+   "svg": "35c50bbee5186117",
+   "png": "973daa195d4caa0b"
   },
   "work-corvidae": {
-   "svg": "507ed07442dd9e19",
-   "png": "8a1f6dd1c9dd0cd3"
+   "svg": "d3de40e91e317f25",
+   "png": "5fd2f0ef76824b0b"
+  },
+  "work-craftsmen": {
+   "svg": "2a4248d28b636904",
+   "png": "bbdbd6f2886fd9e7"
   },
   "work-crisis-map": {
-   "svg": "1fe764edf20ea8e9",
-   "png": "67815f0d77efda5d"
+   "svg": "f7bf9053f8fea96f",
+   "png": "13eb15cb779642a8"
+  },
+  "work-cs-benchmark": {
+   "svg": "17bcda1839b6295e",
+   "png": "db29dfb9220fc61f"
+  },
+  "work-csv2psql": {
+   "svg": "f421288f5db0408a",
+   "png": "d5909cccbdfcca79"
+  },
+  "work-ctu-cz": {
+   "svg": "45f31d3822464b05",
+   "png": "e2c7f58db416c8d2"
+  },
+  "work-czech-stats": {
+   "svg": "473a89fd21efa4af",
+   "png": "116a46c86f7c4ed2"
+  },
+  "work-data": {
+   "svg": "8d23ca2d5df313ed",
+   "png": "eab658392af27ddd"
   },
   "work-data-atlas": {
-   "svg": "ab9e3b403c8da3b0",
-   "png": "971d13b44239d4fb"
+   "svg": "8579dd7f930e561f",
+   "png": "87b41395357f2203"
+  },
+  "work-data-playground": {
+   "svg": "03220ed701c43e8e",
+   "png": "91db7c5d0089e44a"
+  },
+  "work-datascience": {
+   "svg": "4a25eeeea3388f73",
+   "png": "48339e053d2e26db"
+  },
+  "work-datasciencecoursera": {
+   "svg": "23997ecf334e8937",
+   "png": "587b37a03731bdc7"
   },
   "work-dispatcher": {
-   "svg": "564d9c30625a64c1",
-   "png": "e60d8d5641bad52e"
+   "svg": "2ef526700f47023c",
+   "png": "84cd21067ed4f757"
   },
   "work-distance-calculator": {
-   "svg": "e2dccc95b971db77",
-   "png": "2f081b44a7d07105"
+   "svg": "e560b1e357004e0a",
+   "png": "768873596578c7b3"
+  },
+  "work-dj-schnapps": {
+   "svg": "12980dc71067f47d",
+   "png": "82a2aaa5c6ab3849"
+  },
+  "work-docker-conf2015": {
+   "svg": "190676b1122a3f0e",
+   "png": "96d4a4f0e57c94c4"
+  },
+  "work-docker-datasciencetoolbox": {
+   "svg": "dab31a3b19940f4b",
+   "png": "dff285dc1820dbbc"
+  },
+  "work-docker-dstk": {
+   "svg": "4c0e366234ea76aa",
+   "png": "7740dc6490b1365e"
+  },
+  "work-docker-gooddata-ruby": {
+   "svg": "530b6cf14a67cb63",
+   "png": "9bbce3b80bbc05a3"
+  },
+  "work-docks": {
+   "svg": "123dc0ec69d5a9e8",
+   "png": "4053c70d38fa2635"
+  },
+  "work-easy-plugin-plugins": {
+   "svg": "ba2cabf1bc65192e",
+   "png": "230ba7415ffb17e9"
   },
   "work-edna": {
-   "svg": "e67701dc83527481",
-   "png": "ae0170e5ad39654b"
+   "svg": "f23e3df4b9036cdc",
+   "png": "20916562cc5ec02a"
   },
   "work-el-magico-cache": {
-   "svg": "a2e36fd06eab540f",
-   "png": "39f236d314e9b25f"
+   "svg": "8981b60d8ac01a8e",
+   "png": "a3b8993816740e58"
+  },
+  "work-esri": {
+   "svg": "5dd3496f4182ec01",
+   "png": "5e5ca0fb10cc2801"
+  },
+  "work-gauc-ex": {
+   "svg": "124ffbde45ffd01c",
+   "png": "06554b50dc2ab5cb"
+  },
+  "work-gdc-dumpator": {
+   "svg": "eec110ea1f9ae05d",
+   "png": "5aef05b914a6bd1d"
+  },
+  "work-generator-microscratch": {
+   "svg": "c808cdea428e033a",
+   "png": "e12ff65f4b1550ca"
+  },
+  "work-generator-the-scratch": {
+   "svg": "f800e8cdc8fcd931",
+   "png": "69cb47b80084784f"
+  },
+  "work-gh-exec-3000": {
+   "svg": "96e8983d507c41ff",
+   "png": "1d4e7c6c9229801c"
   },
   "work-ght": {
-   "svg": "cc236fa2fca0e1fa",
-   "png": "432eb98e449057dd"
+   "svg": "0ad96ee5e119ef8c",
+   "png": "705e2bb7e5ecfdb2"
   },
   "work-gists-search": {
-   "svg": "809531aabbddf50f",
-   "png": "d59dbeed84cf16b2"
+   "svg": "42b61de406523aa1",
+   "png": "4cf27c127fded5a2"
+  },
+  "work-github-extractor": {
+   "svg": "de41917d81205230",
+   "png": "00d640f8113c6f59"
+  },
+  "work-gooddata-connectors-metadata": {
+   "svg": "251becc5a32e3817",
+   "png": "8036121a39cb177d"
+  },
+  "work-gooddata-fs": {
+   "svg": "bb2744a530e5f52c",
+   "png": "dce926e3f9246925"
+  },
+  "work-gooddata-graphql": {
+   "svg": "9c9e47110b1b6671",
+   "png": "cc83dd55ad0abe65"
+  },
+  "work-gooddata-lcm-tool": {
+   "svg": "7f41042b33a2ceee",
+   "png": "1974c0fcf91d9f5c"
+  },
+  "work-gooddata-proxy": {
+   "svg": "f19616defd1a50bc",
+   "png": "443b2ce6569e51f9"
+  },
+  "work-gooddata-rails-app": {
+   "svg": "a4afb15f09c80ece",
+   "png": "1e3be82c48bd8453"
+  },
+  "work-gooddata-ruby-examples": {
+   "svg": "1b8a5b33993780bb",
+   "png": "3363a3852f62eba9"
+  },
+  "work-grache": {
+   "svg": "6f092c786acd9455",
+   "png": "f1bc8cab004266e1"
+  },
+  "work-grache-test": {
+   "svg": "5e51c0de298af1ad",
+   "png": "6ccbe3f5968e73b3"
+  },
+  "work-graph-flow": {
+   "svg": "effeb1a9400758fe",
+   "png": "dbca904dda587d17"
+  },
+  "work-happ": {
+   "svg": "e248b8f3ade1eaae",
+   "png": "26b820fba10ef27d"
+  },
+  "work-haskell-world": {
+   "svg": "9236207b8e0b18af",
+   "png": "15251c4a080232d4"
+  },
+  "work-home": {
+   "svg": "5e03457ef71d9d56",
+   "png": "062a4c35cbab402d"
+  },
+  "work-hydra": {
+   "svg": "18782e2ce7300e1b",
+   "png": "98f8b5dfd6ce340b"
+  },
+  "work-icave": {
+   "svg": "d07ea9323dfebfe0",
+   "png": "13d8c896ca86fcda"
+  },
+  "work-ideas": {
+   "svg": "0754d87f6db14a33",
+   "png": "a566db3e1ffe47d9"
+  },
+  "work-in-rust-we-trust": {
+   "svg": "1630fa80b94fa975",
+   "png": "6bbe2e9aa2e621e9"
+  },
+  "work-inspectors": {
+   "svg": "4b0931e6a38e3a51",
+   "png": "5ab2f7ff12fa47f7"
+  },
+  "work-jetel": {
+   "svg": "9fec8b6cb2e8917d",
+   "png": "5a8cb6bd2647954e"
+  },
+  "work-jetel-modules": {
+   "svg": "4cbecbc463921463",
+   "png": "9129ba4a2e149890"
   },
   "work-job-processor": {
-   "svg": "ece051a7d172cdc1",
-   "png": "17d7ddc40b92b179"
+   "svg": "7ada98bd67e7cd12",
+   "png": "729060020415e749"
+  },
+  "work-js-libp2p-umbrella": {
+   "svg": "7c78f0f417818a85",
+   "png": "8877290481853a00"
+  },
+  "work-json2csv": {
+   "svg": "8ffe99f4bb9fe53e",
+   "png": "0abac1a93c004557"
+  },
+  "work-k8s-orbis-pictus": {
+   "svg": "1d3a1b06ef25ce94",
+   "png": "8a6c7adcfb46dd2e"
+  },
+  "work-kanec": {
+   "svg": "e7c6231c99455349",
+   "png": "112f9f3c8f4c1f82"
   },
   "work-kompendium-epistemicke-anihilace": {
-   "svg": "064dc9d871d03c36",
-   "png": "9b850516ce84ac9e"
+   "svg": "5d8598bd012bf236",
+   "png": "0f37e7205a15b488"
+  },
+  "work-korczis-com": {
+   "svg": "684a672457dbd7c0",
+   "png": "5992ac83a314dd77"
+  },
+  "work-korczis-github-com": {
+   "svg": "f4a1c12f8b34357a",
+   "png": "0d50528b22ad9377"
   },
   "work-korczis-github-io": {
-   "svg": "241960bb2a61dac9",
-   "png": "2683272e0b8a5241"
+   "svg": "28049a0467a49c5b",
+   "png": "bb14a4db00619642"
   },
   "work-korczis-gitlab-io": {
-   "svg": "eeb0cae2eed09544",
-   "png": "49e2eef7a61a892b"
+   "svg": "26dae2cabeeb2bbf",
+   "png": "d9ca884df49af05e"
+  },
+  "work-kpmap-ruby": {
+   "svg": "536c14b05e5dc724",
+   "png": "0afd1f9e88ebb667"
   },
   "work-kuzu-ex": {
-   "svg": "c3665ef58b0be372",
-   "png": "58221ee819a22f86"
+   "svg": "ed66002dcb891619",
+   "png": "5e72e22ffe6fb751"
+  },
+  "work-lethe-it": {
+   "svg": "9c227c590f189243",
+   "png": "d4061e84ba7a86d8"
   },
   "work-llm": {
-   "svg": "4070acadc0f0a015",
-   "png": "69e2cd00c4efdf3f"
+   "svg": "73066db3fac727dd",
+   "png": "06d549f2dc5c4fa9"
+  },
+  "work-lola": {
+   "svg": "43908bd59b8a5b81",
+   "png": "01776bde64ea7e45"
+  },
+  "work-magic": {
+   "svg": "6ba53181a095b619",
+   "png": "0481e557ddad99d3"
+  },
+  "work-magicbiz": {
+   "svg": "3b950afd6ab0cbb5",
+   "png": "f6966b1d28e1b3dc"
   },
   "work-majordomus-reel": {
-   "svg": "0026a4af27e2e41d",
-   "png": "2435a7bb2fb35857"
+   "svg": "710c4767e79642f0",
+   "png": "1a54318992e5fd9b"
+  },
+  "work-malina": {
+   "svg": "124c8e7bc82a07d4",
+   "png": "d5ade9e9c4ee242b"
+  },
+  "work-mapoffacts": {
+   "svg": "b9d74fd9bc19e62c",
+   "png": "a9f33a954ee829fd"
+  },
+  "work-mapofffacts-com": {
+   "svg": "ffafbd3cabb99480",
+   "png": "8bfd1603f4e68c96"
   },
   "work-marketing-ideas": {
-   "svg": "7507f30181080618",
-   "png": "4cc92f569e62cf0f"
+   "svg": "118d9a46d621e339",
+   "png": "928b6561093d69a7"
+  },
+  "work-maze": {
+   "svg": "44746355d2ce8b2e",
+   "png": "238c09689f643b99"
+  },
+  "work-maze-js": {
+   "svg": "1cc66dbedf87b965",
+   "png": "0c38111b1321fda1"
+  },
+  "work-maze-rs": {
+   "svg": "7beac0aa09940c1a",
+   "png": "55be1cdcad524d38"
   },
   "work-meili-rsex": {
-   "svg": "3271172be8dfd5c9",
-   "png": "705a7ca6ccc3b10b"
+   "svg": "e5ac84c80bf9a90c",
+   "png": "4fc0a1a2b0a33b0a"
+  },
+  "work-microcrawler": {
+   "svg": "e445797424667614",
+   "png": "71d71fafd289e67b"
+  },
+  "work-microcrawler-browser": {
+   "svg": "00f8eecb03ddcbdb",
+   "png": "90650adaf40ec720"
+  },
+  "work-microcrawler-couchapp": {
+   "svg": "2c6874b656c2fb21",
+   "png": "994494a7cde4a45d"
+  },
+  "work-microcrawler-crawler-all": {
+   "svg": "ec6c913258ed39c9",
+   "png": "8c3f3ce5cb46ca69"
+  },
+  "work-microcrawler-crawler-bam-brno-cz": {
+   "svg": "e5b670cd62ffcfb7",
+   "png": "32499c8aad07925b"
+  },
+  "work-microcrawler-crawler-base": {
+   "svg": "2133ddb4edea17be",
+   "png": "3b95fc5471ef50fc"
+  },
+  "work-microcrawler-crawler-craiglist-com": {
+   "svg": "a83c1c46dd0c7bf0",
+   "png": "409d4e7f599df6b1"
+  },
+  "work-microcrawler-crawler-firmy-cz": {
+   "svg": "df7e49a4cdc77bd0",
+   "png": "12270f199d13486f"
+  },
+  "work-microcrawler-crawler-google-com": {
+   "svg": "3c6ed53529463418",
+   "png": "52830f18e0d46614"
+  },
+  "work-microcrawler-crawler-heureka-cz": {
+   "svg": "7e70fac9ecaa9a65",
+   "png": "2411fb2246d1dff0"
+  },
+  "work-microcrawler-crawler-news-ycombinator-com": {
+   "svg": "3d84b308df3e0877",
+   "png": "c2dbf4e567965558"
+  },
+  "work-microcrawler-crawler-sreality-cz": {
+   "svg": "644ed5432ce059bc",
+   "png": "36837b6ff7c6c711"
+  },
+  "work-microcrawler-crawler-xkcd-com": {
+   "svg": "83d80a0a5a8c96f2",
+   "png": "d42a5b272c8a3407"
+  },
+  "work-microcrawler-crawler-yelp-com": {
+   "svg": "92baae7e656f30a9",
+   "png": "8bf4db7eca1a92a0"
+  },
+  "work-microcrawler-elixir": {
+   "svg": "d059e15fc7b7de4d",
+   "png": "4bd10953398b0b4c"
+  },
+  "work-microcrawler-js": {
+   "svg": "b72e1db36a3a7ef8",
+   "png": "47a54bc871b628fb"
+  },
+  "work-microcrawler-ng": {
+   "svg": "cfb933a2bd3fc815",
+   "png": "6b873e21b2adeae1"
+  },
+  "work-microscratch": {
+   "svg": "059bf4d8ce9c9b56",
+   "png": "b5da0de0fcad1af2"
+  },
+  "work-microscratch-react": {
+   "svg": "62027d119e397755",
+   "png": "df4cd9990fb09dbe"
   },
   "work-mindscape": {
-   "svg": "a705b84278278311",
-   "png": "34b10af82beb0b29"
+   "svg": "465edbb31a01869c",
+   "png": "04d61d405246aa10"
+  },
+  "work-minervaeye": {
+   "svg": "e71b2adc30d0d9f8",
+   "png": "87d47e224b847955"
+  },
+  "work-models": {
+   "svg": "c2fed7404d5f6442",
+   "png": "63b99343fca3f478"
+  },
+  "work-nestravenkam": {
+   "svg": "056bd53e2ba0a4fd",
+   "png": "698830d50b13db89"
+  },
+  "work-node-proxy-upload": {
+   "svg": "01cbd4e2aa06a3dd",
+   "png": "7f0dbf65995cc9cb"
+  },
+  "work-nosqlight": {
+   "svg": "e3f93a83f51102e0",
+   "png": "ae9bf22507081de4"
   },
   "work-openttd-prismatic-bridge": {
-   "svg": "1b0675f465ac21f0",
-   "png": "bb68280946045ea1"
+   "svg": "03790ec50310a98a",
+   "png": "0c3fae66e2245a96"
   },
   "work-oscilla": {
-   "svg": "5129d7729784e78c",
-   "png": "49781f188f330132"
+   "svg": "820b77859c52821e",
+   "png": "177b77bbc9098401"
   },
   "work-osint-case-ratcliffe-moscow-2026": {
-   "svg": "8b5b50fdf27c928c",
-   "png": "0854f1e06ba135c9"
+   "svg": "7095117d0c66a948",
+   "png": "ed5af2b213dd8b5f"
   },
   "work-past": {
-   "svg": "1e594dd810a75925",
-   "png": "a32f2cce7d0eb552"
+   "svg": "81ff0589d3a6f4eb",
+   "png": "3b92d3941751246f"
+  },
+  "work-pavian-eu": {
+   "svg": "ba512081e07088e2",
+   "png": "b3faa492ad1063cd"
   },
   "work-pdf-renderer": {
-   "svg": "b1c006b995b97146",
-   "png": "03c150f601e32df7"
+   "svg": "e1da35f126217bdd",
+   "png": "5d9d117deb50392f"
+  },
+  "work-peacemaker": {
+   "svg": "474aae7a3ce1fdbd",
+   "png": "32c2c4e38c3b1b02"
+  },
+  "work-peg-loader": {
+   "svg": "ed82c4ea0f3c8319",
+   "png": "ac3518e2fdb7a626"
+  },
+  "work-peg-parser": {
+   "svg": "f7313bd46dc1de9c",
+   "png": "c6f354081baf647e"
+  },
+  "work-photos": {
+   "svg": "3eeadbe0f86b338b",
+   "png": "e8ec854c0c510ef8"
   },
   "work-pissaleck": {
-   "svg": "ab6a6a5d3276fec7",
-   "png": "63552c22358ae88b"
+   "svg": "97d244a3c49f0528",
+   "png": "712d0eae03d4ef79"
+  },
+  "work-principal": {
+   "svg": "0ac269ec3b459d6a",
+   "png": "96c8cfcbf903c8cb"
   },
   "work-prism": {
-   "svg": "bd5b91e1d5797cd9",
-   "png": "eb19cfe90a8d0444"
+   "svg": "63a9f75c0ce49ec5",
+   "png": "4d18fa079f63c092"
   },
   "work-prismatic": {
-   "svg": "843d40538458ae32",
-   "png": "00cbf1936b182a86"
+   "svg": "55447ebee4770b71",
+   "png": "78eddf43a0c1f740"
   },
   "work-prismatic-blog": {
-   "svg": "a786a0cfa897663b",
-   "png": "d72391567091a881"
+   "svg": "7a6423d013aae870",
+   "png": "63f3fccecc1b0cad"
   },
   "work-prismatic-majordomus": {
-   "svg": "e71d7327df951e5c",
-   "png": "6ceac81705d8e043"
+   "svg": "a80d73a24dc4b305",
+   "png": "64512d342a592c2a"
+  },
+  "work-ratnet": {
+   "svg": "fb6ccef63f7c53aa",
+   "png": "43ebf6da3bf03713"
+  },
+  "work-reading": {
+   "svg": "5e338f42c569a861",
+   "png": "be9f8983b21123ab"
+  },
+  "work-readingphonenumbersinrealtime": {
+   "svg": "d65d36788bc0c9d9",
+   "png": "631670899e152c83"
+  },
+  "work-reflex": {
+   "svg": "142f41d41e690f22",
+   "png": "c925d4630e206a96"
+  },
+  "work-rest-hello-world-benchmark": {
+   "svg": "f9e39af5497c18c3",
+   "png": "0f4377d120847b4f"
+  },
+  "work-rocksdb-indexer": {
+   "svg": "8ee4d29dbbcb1dc5",
+   "png": "f9a48acab8f28715"
+  },
+  "work-rocnikac4": {
+   "svg": "52f521d4e8af58ca",
+   "png": "731adc49874ed46f"
+  },
+  "work-rustas": {
+   "svg": "a19c50dec8f5e471",
+   "png": "1626720deca3c8e4"
+  },
+  "work-rustler-mix": {
+   "svg": "2dfb86cef7c2d81e",
+   "png": "86d2df44a5b5b01a"
+  },
+  "work-rustler-test": {
+   "svg": "234fe2cde4ebff0e",
+   "png": "3038ffe59ab86627"
+  },
+  "work-sandbox": {
+   "svg": "1f948a473b2fe69b",
+   "png": "f3f101063b8aa9fa"
+  },
+  "work-server-ansible": {
+   "svg": "802420e77afd09d9",
+   "png": "510ad6d9fe3f85a2"
+  },
+  "work-server-archlinux": {
+   "svg": "9da30d8ed6692e2a",
+   "png": "adc70835299e85ef"
+  },
+  "work-server-atomic": {
+   "svg": "7d7ed7be4250dadb",
+   "png": "4123d6fabb750429"
+  },
+  "work-server-coreos": {
+   "svg": "c7215b87d90ffb22",
+   "png": "0454ffb60c824605"
+  },
+  "work-server-nixos": {
+   "svg": "def240ecb46da3d1",
+   "png": "c0ba895ae64c94b1"
   },
   "work-sig": {
-   "svg": "ef05ba3e1557c805",
-   "png": "fb7dd7e3bcbf4d9f"
+   "svg": "a70802ec41ce7dcc",
+   "png": "e3d9c382c15bb8c6"
   },
   "work-simple-geocoder": {
-   "svg": "ac0d975ecbc3e149",
-   "png": "9e0aea9b1237e319"
+   "svg": "83f5ead157708efc",
+   "png": "05db65e2fdae0cde"
+  },
+  "work-skull": {
+   "svg": "6623238a0f202bfb",
+   "png": "fd3395ac83aa0646"
+  },
+  "work-skull-c": {
+   "svg": "113a2fd943e2a18f",
+   "png": "73e4077e7caa6d4d"
+  },
+  "work-skull-cpp": {
+   "svg": "b1456f1d8d58df0c",
+   "png": "0b236b1ab1936765"
+  },
+  "work-skull-elixir": {
+   "svg": "d205d5a25bc1d293",
+   "png": "60995123c0808def"
+  },
+  "work-skull-emscripten": {
+   "svg": "bfa644c55039ccc2",
+   "png": "17f2d8a4e24f9029"
+  },
+  "work-skull-erlang": {
+   "svg": "9640bbbbde7571c7",
+   "png": "d2d8f9bebc703eff"
+  },
+  "work-skull-haskell": {
+   "svg": "6914c4a1dc840573",
+   "png": "e2a09dfcaa01e5b2"
+  },
+  "work-skull-java": {
+   "svg": "0cdbe9c92545fbde",
+   "png": "f391545b4f1cdf7c"
+  },
+  "work-skull-nodejs": {
+   "svg": "112f1105be250548",
+   "png": "13bad83300479a05"
+  },
+  "work-skull-ruby": {
+   "svg": "4dd15bbf23671270",
+   "png": "6a198fefd4b60ff1"
+  },
+  "work-skull-rust": {
+   "svg": "dce5261cc9f5552e",
+   "png": "d631e0eec6170aaf"
+  },
+  "work-skype-adapter-client": {
+   "svg": "f64c64059e0fe902",
+   "png": "f8627c290220c51f"
+  },
+  "work-sli2dli": {
+   "svg": "d6dabd2d01e6d4b7",
+   "png": "b0e851e7b4e201bb"
+  },
+  "work-social-icons": {
+   "svg": "2555c07ff33bccd2",
+   "png": "8db9054a26252fc6"
+  },
+  "work-solr-core-minimal": {
+   "svg": "66fb1c087f5ed651",
+   "png": "110a6389633f3d56"
   },
   "work-sonic-playground": {
-   "svg": "8dfb21e13158742f",
-   "png": "45e3075369c98aff"
+   "svg": "65992744b7e46df9",
+   "png": "82997b11e949479d"
+  },
+  "work-streamflow": {
+   "svg": "c071d2679592732d",
+   "png": "f92ae169dd08cf18"
+  },
+  "work-talkie": {
+   "svg": "eb7e6f0df8e8437f",
+   "png": "1bba8750c4a5d359"
   },
   "work-tap": {
-   "svg": "515d463800261eaf",
-   "png": "1042945dd2dcd19c"
+   "svg": "d9774a6d58460757",
+   "png": "f9f644ca4241d3c2"
+  },
+  "work-test-elixir": {
+   "svg": "8fa33d4efa3664b6",
+   "png": "1b160ac53b8953a5"
   },
   "work-the-psycho": {
-   "svg": "903991d798f63fca",
-   "png": "0c2b3d7e49e84af9"
+   "svg": "a36fd4e859a23a4f",
+   "png": "61a808a8f1022dbe"
+  },
+  "work-the-scratch": {
+   "svg": "0503582b6f568426",
+   "png": "5a3ae89c229b606d"
   },
   "work-tinder-nomics": {
-   "svg": "7739399f43560f23",
-   "png": "e6e116d13c18200c"
+   "svg": "305815c9ab2a7923",
+   "png": "904b59643870b706"
+  },
+  "work-tosh": {
+   "svg": "33d78b072e5cbf35",
+   "png": "7590a831622bc5f6"
+  },
+  "work-ts-logger": {
+   "svg": "74378e23c036fc49",
+   "png": "43ca16fa709add0a"
+  },
+  "work-twitter-analysis": {
+   "svg": "882f1ec171440a00",
+   "png": "e16246fa2febd4b6"
   },
   "work-u-tygra": {
-   "svg": "41e0c62a5787cba9",
-   "png": "e9cce043ab7750d6"
+   "svg": "609ffeed21b9352c",
+   "png": "ee95d12b5898d3b9"
   },
   "work-vomaste-cz": {
-   "svg": "cc962242aa3bd662",
-   "png": "69b6dcf6d36e24d5"
+   "svg": "d721b689bc390349",
+   "png": "30c312f6c1e866aa"
+  },
+  "work-wangsta": {
+   "svg": "84e4e4c86a77123d",
+   "png": "bf26ef3dff325e43"
+  },
+  "work-web-spa": {
+   "svg": "66820d20f41120e4",
+   "png": "457c319573c35a7b"
+  },
+  "work-wims": {
+   "svg": "2d4cc31d6d160075",
+   "png": "911546b6cc8706c1"
+  },
+  "work-zaas": {
+   "svg": "9dfdba76711357e2",
+   "png": "dbbc4f985bd397a9"
+  },
+  "work-zdeny-docker": {
+   "svg": "4405db953c0205f8",
+   "png": "e009e5c83d140445"
+  },
+  "work-zeman-ucet": {
+   "svg": "23cf8861be860384",
+   "png": "8b002bcf23ee4fa3"
+  },
+  "work-zlown": {
+   "svg": "15d968d15378754d",
+   "png": "d68db822113caec0"
   }
  }
 }

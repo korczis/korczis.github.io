@@ -16,8 +16,8 @@ kind = "language"
 definition = "JavaScript with static types, checked before the code runs and compiled to plain JavaScript."
 aliases = []
 reference = { title = "TypeScript handbook", url = "https://www.typescriptlang.org/docs/" }
-pages = ["projects/science.md", "projects/tools.md", "work/algoglyph.md", "work/astronomists.md", "work/dispatcher.md", "work/sig.md"]
-related = ["repository", "javascript", "open-source", "commit", "shell", "elixir", "python", "rust"]
+pages = ["projects/science.md", "projects/tools.md", "work/algoglyph.md", "work/astronomists.md", "work/dispatcher.md", "work/sig.md", "work/ts-logger.md"]
+related = ["repository", "open-source", "commit", "javascript", "shell", "elixir", "python", "rust"]
 og_title = "TypeScript: glossary"
 og_image = "og/glossary-typescript.png"
 keywords = ["TypeScript", "Programming language", "Glossary", "Tomas Korcak"]

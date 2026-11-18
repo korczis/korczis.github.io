@@ -11,10 +11,12 @@ tags = ["Tools", "Python", "JavaScript", "HTML"]
 
 [extra]
 repo = "gists-search"
-og_title = "Gists search: Catalogue, enrichment and search over a mirror of my gists."
+seo_title = "Gists search: Tools in Python, 2026 · Tomas Korcak"
+og_title = "Gists search: Catalogue, enrichment and search over a mirror of my gists"
+og_description = "Tools in Python, JavaScript and HTML, 2026, active in the last 12 months. Source on GitHub. Live site."
 og_image = "og/work-gists-search.png"
 schema = "project"
-keywords = ["Gists search", "Tools", "Python", "JavaScript", "HTML", "Tomas Korcak"]
+keywords = ["Gists search", "gists-search", "Tools", "Python", "JavaScript", "HTML", "2026", "GitHub", "Tomas Korcak", "korczis"]
 terms = ["python", "javascript", "html", "shell", "open-source", "github-pages", "repository", "commit"]
 
 [[extra.viz]]
@@ -31,5 +33,9 @@ tone = "night"
 The [repository](@/glossary/repository.md) was created in August 2026; its latest [commit](@/glossary/commit.md) is from 27 August 2026. It reads “docs(gists): add README, architecture doc and deploy recipe”. That places it among the projects active in the last 12 months.
 
 It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/gists-search/>.
+
+Its source is on [GitHub](https://github.com/korczis/gists-search).
+
+Related work in [Tools](@/projects/tools.md): [astronomists](@/work/astronomists.md) (2026), [vomaste.cz](@/work/vomaste-cz.md) (2026), [prismatic](@/work/prismatic.md) (2025) and [comtesse](@/work/comtesse.md) (2025).
 
 *How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 2 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

@@ -3,18 +3,20 @@
 title = "Majordomus"
 description = "AI agents say the work is done; Majordomus makes them prove it."
 template = "work.html"
-weight = 4
-updated = "2026-11-17T19:41:34Z"
+weight = 6
+updated = "2026-11-18T00:04:07Z"
 
 [taxonomies]
 tags = ["AI engineering", "Rust", "Shell", "JavaScript"]
 
 [extra]
 repo = "prismatic-majordomus"
-og_title = "Majordomus: AI agents say the work is done; Majordomus makes them prove it."
+seo_title = "Majordomus: AI engineering in Rust, 2026 · Tomas Korcak"
+og_title = "Majordomus: AI agents say the work is done; Majordomus makes them prove it"
+og_description = "AI engineering in Rust, Shell and JavaScript, 2026, active in the last 12 months. Source on GitHub. 1 star. Live site. Supervised by Majordomus."
 og_image = "og/work-prismatic-majordomus.png"
 schema = "project"
-keywords = ["Majordomus", "AI engineering", "Rust", "Shell", "JavaScript", "Tomas Korcak"]
+keywords = ["Majordomus", "prismatic-majordomus", "AI engineering", "Rust", "Shell", "JavaScript", "agentic-ai", "ai", "ai-agents", "ai-governance", "claude-code", "cli", "2026", "GitHub", "Tomas Korcak", "korczis"]
 terms = ["rust", "shell", "javascript", "html", "css", "python", "mcp", "zola", "ai-agent", "github-pages", "repository", "commit", "open-source"]
 
 [[extra.viz]]
@@ -28,10 +30,14 @@ tone = "night"
 +++
 **Majordomus** is a project in [AI engineering](@/projects/ai.md). Its code is written mainly in [Rust](@/glossary/rust.md) (60.7 %), with [Shell](@/glossary/shell.md), [JavaScript](@/glossary/javascript.md) and [HTML](@/glossary/html.md).
 
-The [repository](@/glossary/repository.md) was created in September 2026; its latest [commit](@/glossary/commit.md) is from 17 November 2026. It reads “Merge pull request \#3077 from korczis/integration/train-20261117f”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created in September 2026; its latest [commit](@/glossary/commit.md) is from 18 November 2026. It reads “Merge pull request \#3084 from korczis/fix/delivery-observed-at-the-merge-of-train-f”. That places it among the projects active in the last 12 months.
 
 It is built with [MCP](@/glossary/mcp.md) and [Zola](@/glossary/zola.md).
 
 It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/prismatic-majordomus/>.
+
+Its source is on [GitHub](https://github.com/korczis/prismatic-majordomus).
+
+Related work in [AI engineering](@/projects/ai.md): [sig](@/work/sig.md) (2025–2026), [llm](@/work/llm.md) (2026), [edna](@/work/edna.md) (2025) and [cognitive-reasoning](@/work/cognitive-reasoning.md) (2025).
 
 *How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 30 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

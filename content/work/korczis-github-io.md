@@ -3,18 +3,20 @@
 title = "korczis.github.io"
 description = "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus."
 template = "work.html"
-weight = 7
-updated = "2026-11-17T12:21:11Z"
+weight = 2
+updated = "2026-11-18T02:49:49Z"
 
 [taxonomies]
 tags = ["Web", "JavaScript", "HTML", "CSS"]
 
 [extra]
 repo = "korczis.github.io"
-og_title = "korczis.github.io: Tomas Korcak (korczis): software that proves its work. Projects, live s"
+seo_title = "korczis.github.io: Web in JavaScript, 2024–2026 · Tomas Korcak"
+og_title = "korczis.github.io: Tomas Korcak (korczis): software that proves its work"
+og_description = "Web in JavaScript, HTML and CSS, 2024–2026, active in the last 12 months. Source on GitHub. Supervised by Majordomus."
 og_image = "og/work-korczis-github-io.png"
 schema = "project"
-keywords = ["korczis.github.io", "Web", "JavaScript", "HTML", "CSS", "Tomas Korcak"]
+keywords = ["korczis.github.io", "Web", "JavaScript", "HTML", "CSS", "accessibility", "ai-agents", "alpinejs", "chartjs", "cytoscape", "echarts", "2024–2026", "GitHub", "Tomas Korcak", "korczis"]
 terms = ["javascript", "html", "css", "shell", "static-site-generator", "repository", "commit", "open-source"]
 
 [[extra.viz]]
@@ -28,6 +30,10 @@ tone = "night"
 +++
 **korczis.github.io** is a project in [Web](@/projects/web.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (68.7 %), with [HTML](@/glossary/html.md), [CSS](@/glossary/css.md) and [Shell](@/glossary/shell.md).
 
-The [repository](@/glossary/repository.md) was created in December 2024; its latest [commit](@/glossary/commit.md) is from 17 November 2026. It reads “chore(data): refresh the snapshot and the index”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created in December 2024; its latest [commit](@/glossary/commit.md) is from 18 November 2026. It reads “chore(merge): integrate \#28, /hire/, the CV from LinkedIn, Offer and FAQPage JSON-LD, llms.txt hire section”. That places it among the projects active in the last 12 months.
+
+Its source is on [GitHub](https://github.com/korczis/korczis.github.io).
+
+Related work in [Web](@/projects/web.md): [nestravenkam](@/work/nestravenkam.md) (2019), [tosh](@/work/tosh.md) (2019), [korczis-github-com](@/work/korczis-github-com.md) (2014–2015) and [korczis-com](@/work/korczis-com.md) (2014–2015).
 
 *How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 30 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

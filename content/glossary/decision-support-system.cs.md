@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Software, který shromáždí data a analýzy do zpráv a pohledů, jež lidem pomáhají rozhodnout, místo aby rozhodoval za ně."
 aliases = []
 reference = { title = "Decision support system (Wikipedia)", url = "https://en.wikipedia.org/wiki/Decision_support_system" }
-pages = ["projects/security.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md"]
-related = ["audit-trail", "data-integration", "due-diligence", "html", "information-extraction", "insolvency", "knowledge-graph", "market-intelligence"]
+pages = ["projects/security.cs.md", "work/magic.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/peacemaker.cs.md", "work/ratnet.cs.md", "work/zlown.cs.md"]
+related = ["audit-trail", "data-integration", "due-diligence", "information-extraction", "insolvency", "knowledge-graph", "market-intelligence", "mergers-and-acquisitions"]
 og_title = "Systém pro podporu rozhodování: slovník"
 og_image = "og/cs-glossary-decision-support-system.png"
 keywords = ["Systém pro podporu rozhodování", "Decision support system", "Koncept", "Slovník", "Tomáš Korčák"]

@@ -11,10 +11,12 @@ tags = ["Nástroje", "Elixir", "HTML+EEX", "JavaScript"]
 
 [extra]
 repo = "the-psycho"
-og_title = "the-psycho: Nástroje"
+seo_title = "the-psycho: Nástroje, Elixir, 2025–2026 · Tomáš Korčák"
+og_title = "the-psycho: Nástroje, Elixir"
+og_description = "Nástroje, Elixir, HTML+EEX a JavaScript, 2025–2026, aktivní za posledních 12 měsíců. Zdrojový kód: GitLab."
 og_image = "og/cs-work-the-psycho.png"
 schema = "project"
-keywords = ["the-psycho", "Nástroje", "Elixir", "HTML+EEX", "JavaScript", "Tomáš Korčák"]
+keywords = ["the-psycho", "Nástroje", "Elixir", "HTML+EEX", "JavaScript", "2025–2026", "GitLab", "Tomáš Korčák", "korczis"]
 terms = ["elixir", "javascript", "css", "open-source", "repository", "commit"]
 
 [[extra.viz]]
@@ -29,5 +31,9 @@ tone = "night"
 **the-psycho** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (82,8 %), dále HTML+EEX, [JavaScript](@/glossary/javascript.cs.md) a [CSS](@/glossary/css.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 25. ledna 2025; poslední [commit](@/glossary/commit.cs.md) je z 4. února 2026. Zní „feat(aiad): inject AIAD v1.0.0 infrastructure“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+
+Zdrojový kód: [GitLab](https://gitlab.com/korczis/the-psycho).
+
+Související práce v kategorii [Nástroje](@/projects/tools.cs.md): [prismatic](@/work/prismatic.cs.md) (2025), [rest-hello-world-benchmark](@/work/rest-hello-world-benchmark.cs.md) (2022), [astudo](@/work/astudo.cs.md) (2022) a [kanec](@/work/kanec.cs.md) (2019).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje poslední 4 commity jako tep, jeden pruh na typ commitu (feat, fix, docs…), ze snímku obnovovaného každých 6 hodin. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

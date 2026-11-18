@@ -11,10 +11,12 @@ tags = ["Tools", "Just", "Shell", "Rust"]
 
 [extra]
 repo = "comtesse"
-og_title = "comtesse: Tools"
+seo_title = "comtesse: Tools in Just, 2025 · Tomas Korcak"
+og_title = "comtesse: Mission: Improve accuracy and consistency of per-commit assessments while…"
+og_description = "Tools in Just, Shell and Rust, 2025, active in the last 24 months. Source on GitLab."
 og_image = "og/work-comtesse.png"
 schema = "project"
-keywords = ["comtesse", "Tools", "Just", "Shell", "Rust", "Tomas Korcak"]
+keywords = ["comtesse", "Tools", "Just", "Shell", "Rust", "2025", "GitLab", "Tomas Korcak", "korczis"]
 terms = ["shell", "rust", "open-source", "repository", "commit"]
 
 [[extra.viz]]
@@ -29,5 +31,9 @@ tone = "night"
 **comtesse** is a project in [Tools](@/projects/tools.md). Its code is written mainly in Just (36 %), with [Shell](@/glossary/shell.md), [Rust](@/glossary/rust.md) and Mermaid.
 
 The [repository](@/glossary/repository.md) was created in August 2025; its latest [commit](@/glossary/commit.md) is from 28 August 2025. It reads “docs: add src/comtesse-rs specific README.md”. That places it among the projects active in the last 24 months.
+
+Its source is on [GitLab](https://gitlab.com/korczis/comtesse).
+
+Related work in [Tools](@/projects/tools.md): [Gists search](@/work/gists-search.md) (2026), [vomaste.cz](@/work/vomaste-cz.md) (2026), [bcnode-old](@/work/bcnode-old.md) (2018) and [prismatic](@/work/prismatic.md) (2025).
 
 *How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 24 commits as a heartbeat, one lane per commit type (feat, fix, docs…), from a snapshot refreshed every 6 hours. The concepts below are explained in the [glossary](@/glossary/_index.md).

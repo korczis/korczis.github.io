@@ -11,10 +11,12 @@ tags = ["Nástroje"]
 
 [extra]
 repo = "pissaleck"
+seo_title = "pissaleck: Nástroje, 2024 · Tomáš Korčák"
 og_title = "pissaleck: Nástroje"
+og_description = "Nástroje, 2024, aktivní za posledních 48 měsíců. Zdrojový kód: GitHub."
 og_image = "og/cs-work-pissaleck.png"
 schema = "project"
-keywords = ["pissaleck", "Nástroje", "Tomáš Korčák"]
+keywords = ["pissaleck", "Nástroje", "2024", "GitHub", "Tomáš Korčák", "korczis"]
 terms = ["open-source", "repository", "commit"]
 
 [[extra.viz]]
@@ -29,5 +31,9 @@ tone = "night"
 **pissaleck** je projekt z kategorie [Nástroje](@/projects/tools.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 27. dubna 2024; poslední [commit](@/glossary/commit.cs.md) je z 27. dubna 2024. Zní „Initial commit“. Patří tak mezi projekty aktivní za posledních 48 měsíců.
+
+Zdrojový kód: [GitHub](https://github.com/korczis/pissaleck).
+
+Související práce v kategorii [Nástroje](@/projects/tools.cs.md): [simple\_geocoder](@/work/simple-geocoder.cs.md) (2024), [marketing-ideas](@/work/marketing-ideas.cs.md) (2024), [pdf\_renderer](@/work/pdf-renderer.cs.md) (2024) a [job-processor](@/work/job-processor.cs.md) (2024).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje jeho jediný commit jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

@@ -11,10 +11,12 @@ tags = ["Tools"]
 
 [extra]
 repo = "tinder-nomics"
-og_title = "tinder-nomics: Tools"
+seo_title = "tinder-nomics: Tools, 2025–2026 · Tomas Korcak"
+og_title = "tinder-nomics: Use the built-in continuous integration in GitLab"
+og_description = "Tools, 2025–2026, active in the last 12 months. Source on GitLab."
 og_image = "og/work-tinder-nomics.png"
 schema = "project"
-keywords = ["tinder-nomics", "Tools", "Tomas Korcak"]
+keywords = ["tinder-nomics", "Tools", "2025–2026", "GitLab", "Tomas Korcak", "korczis"]
 terms = ["open-source", "repository", "commit"]
 
 [[extra.viz]]
@@ -29,5 +31,9 @@ tone = "night"
 **tinder-nomics** is a project in [Tools](@/projects/tools.md).
 
 The [repository](@/glossary/repository.md) was created in August 2025; its latest [commit](@/glossary/commit.md) is from 4 February 2026. It reads “feat(aiad): inject AIAD v1.0.0 infrastructure”. That places it among the projects active in the last 12 months.
+
+Its source is on [GitLab](https://gitlab.com/korczis/tinder-nomics).
+
+Related work in [Tools](@/projects/tools.md): [the-psycho](@/work/the-psycho.md) (2025–2026), [prism](@/work/prism.md) (2024–2026), [past](@/work/past.md) (2025–2026) and [GHT](@/work/ght.md) (2025).
 
 *How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 2 commits as a heartbeat, one lane per commit type (feat, fix, docs…), from a snapshot refreshed every 6 hours. The concepts below are explained in the [glossary](@/glossary/_index.md).

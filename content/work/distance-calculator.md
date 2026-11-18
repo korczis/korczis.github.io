@@ -11,10 +11,12 @@ tags = ["Science and visualisation", "Elixir"]
 
 [extra]
 repo = "distance-calculator"
-og_title = "distance-calculator: Science and visualisation"
+seo_title = "distance-calculator: Science and visualisation, 2024 · Tomas Korcak"
+og_title = "distance-calculator: If available in Hex, the package can be installed by adding…"
+og_description = "Science and visualisation in Elixir, 2024, active in the last 48 months. Source on GitLab."
 og_image = "og/work-distance-calculator.png"
 schema = "project"
-keywords = ["distance-calculator", "Science and visualisation", "Elixir", "Tomas Korcak"]
+keywords = ["distance-calculator", "Science and visualisation", "Elixir", "2024", "GitLab", "Tomas Korcak", "korczis"]
 terms = ["elixir", "data-visualisation", "repository", "commit", "open-source"]
 
 [[extra.viz]]
@@ -29,5 +31,9 @@ tone = "night"
 **distance-calculator** is a project in [Science and visualisation](@/projects/science.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (100 %).
 
 The [repository](@/glossary/repository.md) was created in March 2024; its latest [commit](@/glossary/commit.md) is from 23 April 2024. It reads “logs on requests, fixed from”. That places it among the projects active in the last 48 months.
+
+Its source is on [GitLab](https://gitlab.com/korczis/distance-calculator).
+
+Related work in [Science and visualisation](@/projects/science.md): [maze](@/work/maze.md) (2016), [algoglyph](@/work/algoglyph.md) (2026), [Oscilla](@/work/oscilla.md) (2026) and [rustas](@/work/rustas.md) (2018).
 
 *How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 11 commits as a heartbeat, one lane per commit type (feat, fix, docs…), from a snapshot refreshed every 6 hours. The concepts below are explained in the [glossary](@/glossary/_index.md).
