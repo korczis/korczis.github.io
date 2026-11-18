@@ -1,0 +1,67 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "gh-exec-3000",
+  "sources": {
+    "github": "https://github.com/korczis/gh-exec-3000",
+    "gitlab": null,
+    "commit": "e6543f91b1d520a6adabb78e0f21becc9c9823ca",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "action.yml",
+      "Dockerfile",
+      "entrypoint.sh",
+      ".github/workflows/main.yml",
+      "tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "experiment",
+  "summary": {
+    "en": "A first version of a Docker-based GitHub Action meant to run arbitrary commands as a workflow step. The container image is prepared with Elixir, Erlang headers, Rust/Cargo, Node.js and Yarn, but the entrypoint is still the hello-world greeting that sets an output.",
+    "cs": "První verze GitHub Action postavené na Dockeru, která má spouštět libovolné příkazy jako krok workflow. Image obsahuje Elixir, hlavičky Erlangu, Rust/Cargo, Node.js a Yarn, ale entrypoint je zatím jen ukázkový pozdrav, který nastaví výstup."
+  },
+  "problem": {
+    "en": "Polyglot build steps in CI need one prepared image instead of installing toolchains in each job.",
+    "cs": "Vícejazyčné kroky v CI potřebují jeden připravený image místo instalace toolchainů v každém jobu."
+  },
+  "solution": {
+    "en": "action.yml declares a docker action built from the repository Dockerfile (elixir:1.14-alpine plus build tools); a workflow in the same repository runs it on push and reads its output.",
+    "cs": "action.yml deklaruje docker action z Dockerfile v repozitáři (elixir:1.14-alpine plus build nástroje); workflow ve stejném repozitáři ji při pushi spustí a přečte její výstup."
+  },
+  "highlights": [
+    {
+      "en": "Container action with Elixir, Rust, Node.js and Yarn toolchains.",
+      "cs": "Kontejnerová action s toolchainy Elixir, Rust, Node.js a Yarn."
+    },
+    {
+      "en": "Self-test workflow invoking the action from the repository root.",
+      "cs": "Testovací workflow volá action přímo z kořene repozitáře."
+    },
+    {
+      "en": "Execution logic still at the template stage.",
+      "cs": "Spouštěcí logika je zatím na úrovni šablony."
+    }
+  ],
+  "stack": [
+    "GitHub Actions",
+    "Docker",
+    "Alpine Linux",
+    "Elixir",
+    "Rust",
+    "Node.js",
+    "Shell"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  P[Push] --> W[Workflow]\n  W --> A[action.yml]\n  A --> I[Docker image build]\n  I --> E[entrypoint.sh]\n  E --> O[Step output]\n  O --> W",
+    "caption": {
+      "en": "A push triggers the workflow, which builds and runs the container action.",
+      "cs": "Push spustí workflow, které postaví a spustí kontejnerovou action."
+    }
+  },
+  "related": [
+    "aws-lambda-docker",
+    "zdeny-docker"
+  ],
+  "confidence": "low"
+}

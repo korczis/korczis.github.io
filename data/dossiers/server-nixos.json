@@ -1,0 +1,67 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "server-nixos",
+  "sources": {
+    "github": "https://github.com/korczis/server-nixos",
+    "gitlab": "https://gitlab.com/korczis/server-nixos",
+    "commit": "54fe7577d88713356d468b74e8a3e71aedd25170",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "setup.sh",
+      "scripts/*.sh",
+      "ansible/role-nixos-server.yml",
+      "ansible/provision-nixos-server.sh",
+      "ansible/roles/{os-core,os-fs,os-install,pre-os-upgrade}/tasks/main.yml",
+      "recursive tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "config",
+  "summary": {
+    "en": "Setup scripts and Ansible roles for bringing up a NixOS server, started with a one-line curl bootstrap.",
+    "cs": "Instalační skripty a Ansible role pro zprovoznění serveru s NixOS, spouštěné jednořádkovým bootstrapem přes curl."
+  },
+  "problem": {
+    "en": "NixOS is configured declaratively, but the first steps on a fresh machine (git, Python for Ansible, filesystems, SSH) still need scripting.",
+    "cs": "NixOS se konfiguruje deklarativně, ale první kroky na čerstvém stroji (git, Python pro Ansible, souborové systémy, SSH) je stejně potřeba naskriptovat."
+  },
+  "solution": {
+    "en": "setup.sh installs git, Python, Ruby and OpenSSH through nix-env, links python into /usr/bin so Ansible can run, and enables sshd with an authorized key. Shell scripts cover formatting and mounting md RAID partitions; a separate provision script runs the Ansible play, which wires roles os-core, os-fs, os-install, os-tweaks and pre-os-upgrade, of which only os-core (a shutdown link and a reboot) is enabled. os-install renders configuration.nix from a template and runs nixos-install.",
+    "cs": "setup.sh přes nix-env nainstaluje git, Python, Ruby a OpenSSH, nalinkuje python do /usr/bin, aby šlo spustit Ansible, a zapne sshd s autorizovaným klíčem. Shellové skripty formátují a připojují oddíly na md RAIDu; Ansible play spouští samostatný provisioning skript a zapojuje role os-core, os-fs, os-install, os-tweaks a pre-os-upgrade, z nichž je zapnutá jen os-core (odkaz na shutdown a restart). os-install vygeneruje configuration.nix ze šablony a spustí nixos-install."
+  },
+  "highlights": [
+    {
+      "en": "Bootstrap with nix-env that prepares Python and SSH for a later Ansible run",
+      "cs": "Bootstrap přes nix-env, který připraví Python a SSH pro následné spuštění Ansiblu"
+    },
+    {
+      "en": "Role split into core, filesystem, install, tweaks and pre-upgrade",
+      "cs": "Role rozdělené na core, souborové systémy, instalaci, úpravy a přípravu upgradu"
+    },
+    {
+      "en": "A templated configuration.nix installed with nixos-install from the os-install role",
+      "cs": "Šablonovaný configuration.nix, který role os-install nainstaluje přes nixos-install"
+    }
+  ],
+  "stack": [
+    "NixOS",
+    "Nix",
+    "Ansible",
+    "Shell",
+    "Python"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Curl[curl one-liner] --> Setup[setup.sh]\n  Setup --> NixEnv[nix-env: git, Python, SSH]\n  Prov[provision script] --> Ansible[Ansible play]\n  NixEnv -.-> Ansible\n  Ansible --> Core[os-core]\n  Ansible -.-> Fs[os-fs]\n  Ansible -.-> Install[os-install]\n  Ansible -.-> Tweaks[os-tweaks]",
+    "caption": {
+      "en": "Bootstrap prepares the host, a separate script runs Ansible; dashed roles exist but are commented out.",
+      "cs": "Bootstrap připraví stroj, Ansible spouští samostatný skript; přerušované role existují, ale jsou zakomentované."
+    }
+  },
+  "related": [
+    "server-archlinux",
+    "server-ansible",
+    "server-atomic"
+  ],
+  "confidence": "medium"
+}

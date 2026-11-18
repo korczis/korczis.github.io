@@ -1,0 +1,76 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "peacemaker",
+  "sources": {
+    "github": "https://github.com/korczis/peacemaker",
+    "gitlab": "https://gitlab.com/korczis/peacemaker",
+    "commit": "f10462dc921fb6b9a2866d3b06f068734ff5c561",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "CMakeLists.txt",
+      ".travis.yml",
+      "recursive tree",
+      "lib/Engine/Capture.cpp",
+      "apps/peacemaker-cli/main.cpp",
+      "lib/Application/Application.cpp",
+      "lib/Engine/Engine.h",
+      "lib/Engine/Device.h",
+      "lib/CMakeLists.txt"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "cli",
+  "summary": {
+    "en": "A C++ packet sniffing and processing engine built on libpcap and Boost. It is split into a reusable library, a command-line app and a test target, with packet types for Ethernet, IP, TCP, UDP and DNS.",
+    "cs": "Engine pro odchytávání a zpracování síťových paketů v C++ nad libpcap a Boostem. Je rozdělený na znovupoužitelnou knihovnu, aplikaci pro příkazovou řádku a testovací cíl, s typy paketů pro Ethernet, IP, TCP, UDP a DNS."
+  },
+  "problem": {
+    "en": "Observing traffic on a network interface needs device selection, live capture and decoding of protocol layers into usable structures.",
+    "cs": "Sledování provozu na síťovém rozhraní vyžaduje výběr zařízení, živé odchytávání a dekódování protokolových vrstev do použitelných struktur."
+  },
+  "solution": {
+    "en": "lib/ contains Application, Engine (Capture, Device, Engine), Logger, Helpers and header-only packet structures; Capture registers a libpcap handler callback. CMake builds apps/peacemaker-cli and tests/peacemaker-test with a FindPCAP module, and Travis CI compiles with both GCC and Clang against Boost 1.54. A man page is included.",
+    "cs": "lib/ obsahuje Application, Engine (Capture, Device, Engine), Logger, Helpers a hlavičkové struktury paketů; Capture registruje callback pro libpcap. CMake sestavuje apps/peacemaker-cli a tests/peacemaker-test s modulem FindPCAP a Travis CI kompiluje přes GCC i Clang proti Boostu 1.54. Součástí je man stránka."
+  },
+  "highlights": [
+    {
+      "en": "Library, CLI and tests as separate CMake subdirectories",
+      "cs": "Knihovna, CLI a testy jako samostatné podadresáře CMake"
+    },
+    {
+      "en": "Packet structures for Ethernet, IP, TCP, UDP and DNS",
+      "cs": "Struktury paketů pro Ethernet, IP, TCP, UDP a DNS"
+    },
+    {
+      "en": "CI matrix with GCC and Clang",
+      "cs": "CI matice s GCC a Clangem"
+    },
+    {
+      "en": "Custom FindPCAP CMake module",
+      "cs": "Vlastní CMake modul FindPCAP"
+    }
+  ],
+  "stack": [
+    "C++",
+    "libpcap",
+    "Boost",
+    "CMake",
+    "Google Test",
+    "Travis CI"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[peacemaker-cli] --> B[Application]\n  B --> C[Engine]\n  C --> D[Device]\n  D --> E[Capture]\n  E --> F[libpcap]\n  E --> G[Packet decoders]\n  G --> H[Ethernet IP TCP UDP DNS]\n  B --> I[Logger]",
+    "caption": {
+      "en": "From the CLI through device selection and capture to protocol decoding.",
+      "cs": "Od CLI přes výběr zařízení a odchyt k dekódování protokolů."
+    }
+  },
+  "related": [
+    "ratnet",
+    "skull-cpp",
+    "inspectors",
+    "charon"
+  ],
+  "confidence": "medium"
+}

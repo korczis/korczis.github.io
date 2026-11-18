@@ -1,0 +1,66 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "tosh",
+  "sources": {
+    "github": "https://github.com/korczis/tosh",
+    "gitlab": "https://gitlab.com/korczis/tosh",
+    "commit": "dc197f223b460e5769ceaa47d8058202aeab66b8",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "mix.exs",
+      "Dockerfile",
+      "docker-compose.yml",
+      "top-level tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "app",
+  "summary": {
+    "en": "Tosh is a Phoenix web application template with Ecto, a webpack asset pipeline, a socket endpoint and an SPA page template.",
+    "cs": "Tosh je šablona webové aplikace ve Phoenixu s Ecto, webpackovou asset pipeline, socketovým endpointem a šablonou pro SPA stránku."
+  },
+  "problem": {
+    "en": "Starting each new web project from the bare Phoenix generator repeats the same setup of database, assets, containers and logging.",
+    "cs": "Každý nový webový projekt od holého Phoenix generátoru znamená znovu nastavit databázi, assety, kontejnery a logování."
+  },
+  "solution": {
+    "en": "The project is the generated Phoenix 1.4-era structure plus a page controller with index and SPA templates, a user socket, Ecto setup aliases and a Dockerfile that installs a nightly Rust toolchain next to Elixir 1.7. docker-compose brings up PostgreSQL and an ELK container next to the web service.",
+    "cs": "Projekt je vygenerovaná struktura Phoenixu doplněná o page controller se šablonami index a SPA, uživatelský socket, aliasy pro Ecto a Dockerfile, který vedle Elixiru 1.7 instaluje noční Rust toolchain. docker-compose k webové službě přidá PostgreSQL a kontejner s ELK."
+  },
+  "highlights": [
+    {
+      "en": "Container image prepared for Rust NIFs next to Elixir",
+      "cs": "Image připravený na Rust NIFy vedle Elixiru"
+    },
+    {
+      "en": "Local PostgreSQL and ELK through docker-compose",
+      "cs": "Lokální PostgreSQL a ELK přes docker-compose"
+    },
+    {
+      "en": "Separate default and SPA layouts",
+      "cs": "Oddělené výchozí a SPA layouty"
+    }
+  ],
+  "stack": [
+    "Elixir",
+    "Phoenix",
+    "Ecto",
+    "PostgreSQL",
+    "webpack",
+    "Docker",
+    "Rust",
+    "ELK"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Browser[browser] --> Endpoint[Phoenix endpoint]\n  Endpoint --> Router[router]\n  Router --> Page[page controller]\n  Page --> Spa[SPA template]\n  Endpoint --> Socket[user socket]\n  Page --> Repo[Ecto repo]\n  Repo --> Pg[PostgreSQL]\n  Assets[webpack assets] --> Spa",
+    "caption": {
+      "en": "Request path through the template and its data store.",
+      "cs": "Cesta požadavku šablonou až k databázi."
+    }
+  },
+  "related": [
+    "the-scratch"
+  ],
+  "confidence": "medium"
+}

@@ -1,0 +1,58 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "k8s-orbis-pictus",
+  "sources": {
+    "github": "https://github.com/korczis/k8s-orbis-pictus",
+    "gitlab": "https://gitlab.com/korczis/k8s-orbis-pictus",
+    "commit": "9d44d185caf3ed474d12fc03c616cc6fdbaab60f",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "LICENSE"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "kata",
+  "summary": {
+    "en": "A planned playground for learning Docker, Kubernetes and Ansible; only the README with prerequisites and links exists.",
+    "cs": "Plánované hřiště pro učení Dockeru, Kubernetes a Ansible; existuje jen README s prerekvizitami a odkazy."
+  },
+  "problem": {
+    "en": "Newcomers need a guided, local path into containers and orchestration.",
+    "cs": "Nováček potřebuje vedenou lokální cestu ke kontejnerům a orchestraci."
+  },
+  "solution": {
+    "en": "The README lists a GitHub account and an installed git as prerequisites and links VirtualBox and Vagrant downloads. The content itself is marked as coming soon.",
+    "cs": "README uvádí jako prerekvizity účet na GitHubu a nainstalovaný git a odkazuje na stažení VirtualBoxu a Vagrantu. Samotný obsah je označen jako připravovaný."
+  },
+  "highlights": [
+    {
+      "en": "Intended local stack: VirtualBox and Vagrant",
+      "cs": "Zamýšlený lokální stack: VirtualBox a Vagrant"
+    },
+    {
+      "en": "No exercises committed yet",
+      "cs": "Cvičení zatím nejsou commitnutá"
+    }
+  ],
+  "stack": [
+    "Docker",
+    "Kubernetes",
+    "Ansible",
+    "Vagrant",
+    "VirtualBox"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Learner[learner] --> Vbox[VirtualBox]\n  Vbox --> Vagrant[Vagrant VMs]\n  Vagrant --> Docker[Docker]\n  Docker --> K8s[Kubernetes]\n  Vagrant --> Ansible[Ansible]",
+    "caption": {
+      "en": "The learning path the README outlines; none of it is implemented yet.",
+      "cs": "Výuková cesta naznačená v README; zatím nic z ní není implementováno."
+    }
+  },
+  "related": [
+    "cluster-kubernetes",
+    "server-ansible",
+    "cluster"
+  ],
+  "confidence": "low"
+}

@@ -1,0 +1,53 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "microscratch-react",
+  "sources": {
+    "github": "https://github.com/korczis/microscratch-react",
+    "gitlab": "https://gitlab.com/korczis/microscratch-react",
+    "commit": "1661c4fdeb1535a55b2a2946dd37ddf540e30f18",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "experiment",
+  "summary": {
+    "en": "A placeholder repository for a React variant of the microscratch web framework. It contains only a README, a license and a .gitignore.",
+    "cs": "Zástupný repozitář pro React variantu webového frameworku microscratch. Obsahuje jen README, licenci a .gitignore."
+  },
+  "problem": {
+    "en": "The README states the intent of a React version of microscratch; what it would change is not described.",
+    "cs": "README uvádí záměr udělat React verzi microscratch; co by měla změnit, popsáno není."
+  },
+  "solution": {
+    "en": "No code was committed, so no solution exists in the repository. It records the idea only.",
+    "cs": "Žádný kód nebyl commitnut, takže řešení v repozitáři není. Zachycuje jen nápad."
+  },
+  "highlights": [
+    {
+      "en": "Declared as the React counterpart of microscratch",
+      "cs": "Ohlášeno jako React protějšek microscratch"
+    },
+    {
+      "en": "No source files on the default branch",
+      "cs": "Na výchozí větvi nejsou žádné zdrojové soubory"
+    }
+  ],
+  "stack": [
+    "React"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[microscratch] --> B[Idea]\n  B --> C[React port]\n  C --> D[Not started]",
+    "caption": {
+      "en": "The repository marks a planned port that was never started.",
+      "cs": "Repozitář označuje plánovaný port, který nebyl započat."
+    }
+  },
+  "related": [
+    "microscratch",
+    "generator-microscratch",
+    "the-scratch"
+  ],
+  "confidence": "low"
+}

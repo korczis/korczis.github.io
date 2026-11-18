@@ -1,0 +1,79 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "microcrawler-elixir",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/microcrawler-elixir",
+    "commit": "a148fbd6b7b4242c2c60c875801c0fd9ec7b9adf",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "mix.exs",
+      "Makefile",
+      "lib/Microcrawler.ex",
+      "lib/microcrawler/worker/coordinator.ex",
+      "tree (recursive)",
+      "lib/microcrawler/supervisor/event.ex",
+      "lib/microcrawler/supervisor/coordinator.ex",
+      "lib/microcrawler/supervisor/collector.ex",
+      "lib/microcrawler/supervisor/amqp_websocket_bridge.ex",
+      "lib/microcrawler/client/amqp.ex",
+      "lib/microcrawler/client/couchbase.ex",
+      "lib/microcrawler/client/elasticsearch.ex",
+      "lib/microcrawler/downloader/downloader.ex",
+      ".travis.yml"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "service",
+  "summary": {
+    "en": "A start of a Microcrawler reimplementation in Elixir as an OTP application. It wires a supervision tree for a coordinator, a collector and an AMQP to WebSocket bridge, with client modules for AMQP, Couchbase and Elasticsearch; the workers and clients are still stubs.",
+    "cs": "Začátek přepisu Microcrawleru do Elixiru jako OTP aplikace. Zapojuje strom dohledu pro koordinátor, collector a most z AMQP na WebSocket s klientskými moduly pro AMQP, Couchbase a Elasticsearch; workery i klienti jsou zatím jen kostry."
+  },
+  "problem": {
+    "en": "Microcrawler existed as a Node.js tool; this repository starts it again in Elixir, where an OTP supervision tree can own the coordinator, collector and bridge processes and restart them.",
+    "cs": "Microcrawler existoval jako nástroj v Node.js; tento repozitář ho začíná znovu v Elixiru, kde procesy koordinátoru, collectoru a mostu může vlastnit a restartovat OTP strom dohledu."
+  },
+  "solution": {
+    "en": "The application starts an event supervisor that reads ~/.microcrawler/config.json and then starts one supervisor each for the coordinator, the collector and the AMQP to WebSocket bridge, each holding its worker and the client processes it needs. The workers are bare GenServers, the clients are empty GenEvent processes with the AMQP connection code commented out, and the downloader is an HTTPoison.Base module. mix.exs also declares Floki, execjs, Phoenix, tirexs, cberl and Distillery, which no code uses yet.",
+    "cs": "Aplikace spustí supervisor událostí, který načte ~/.microcrawler/config.json a pak spustí po jednom supervisoru pro koordinátor, collector a most z AMQP na WebSocket; každý drží svůj worker a klientské procesy, které potřebuje. Workery jsou holé GenServery, klienti prázdné GenEvent procesy s kódem pro připojení k AMQP zakomentovaným a downloader je modul HTTPoison.Base. mix.exs navíc deklaruje Floki, execjs, Phoenix, tirexs, cberl a Distillery, které zatím žádný kód nepoužívá."
+  },
+  "highlights": [
+    {
+      "en": "Supervision tree as wired: event supervisor over coordinator, collector and bridge supervisors.",
+      "cs": "Strom dohledu tak, jak je zapojený: supervisor událostí nad supervisory koordinátoru, collectoru a mostu."
+    },
+    {
+      "en": "execjs among the dependencies, pointing at reuse of the JavaScript site processors; nothing calls it yet.",
+      "cs": "Mezi závislostmi je execjs, což míří na použití JavaScriptových procesorů webů; zatím ho nic nevolá."
+    },
+    {
+      "en": "Dialyzer and ExDoc set up, Travis CI configured.",
+      "cs": "Nastavený Dialyzer a ExDoc, konfigurace pro Travis CI."
+    }
+  ],
+  "stack": [
+    "Elixir",
+    "OTP",
+    "RabbitMQ",
+    "Couchbase",
+    "Elasticsearch",
+    "HTTPoison",
+    "Poison"
+  ],
+  "architecture": {
+    "mermaid": "flowchart TD\n  A[Microcrawler app] --> E[Event supervisor]\n  E --> CFG[config.json]\n  E --> C[Coordinator supervisor]\n  E --> CO[Collector supervisor]\n  E --> BR[AMQP WebSocket bridge supervisor]\n  C --> Q[AMQP client]\n  C --> CB[Couchbase client]\n  CO --> Q\n  CO --> CB\n  CO --> ES[Elasticsearch client]\n  BR --> Q\n  BR --> CB",
+    "caption": {
+      "en": "The supervision tree as wired; its workers and clients are still stubs.",
+      "cs": "Strom dohledu tak, jak je zapojený; jeho workery a klienti jsou zatím kostry."
+    }
+  },
+  "related": [
+    "microcrawler-js",
+    "microcrawler",
+    "gauc-ex",
+    "microcrawler-ng",
+    "docks"
+  ],
+  "confidence": "low"
+}

@@ -1,0 +1,53 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "in-rust-we-trust",
+  "sources": {
+    "github": "https://github.com/korczis/in-rust-we-trust",
+    "gitlab": "https://gitlab.com/korczis/in-rust-we-trust",
+    "commit": "2ea31bac3d540f8f6b1c13f3f9c68a01a339c291",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      ".gitignore",
+      "LICENSE"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "kata",
+  "summary": {
+    "en": "An empty Rust-themed repository with only a README title, a licence and a gitignore.",
+    "cs": "Prázdný repozitář s rustovou tematikou, obsahuje jen nadpis v README, licenci a gitignore."
+  },
+  "problem": {
+    "en": "The intended content is not stated, so the purpose is unclear.",
+    "cs": "Zamýšlený obsah uvedený není, účel je tedy nejasný."
+  },
+  "solution": {
+    "en": "Nothing beyond the scaffold was committed.",
+    "cs": "Kromě kostry nebylo nic commitnuto."
+  },
+  "highlights": [
+    {
+      "en": "Scaffold only",
+      "cs": "Pouze kostra"
+    },
+    {
+      "en": "Name suggests a Rust collection or notes",
+      "cs": "Název naznačuje sbírku nebo poznámky k Rustu"
+    }
+  ],
+  "stack": [
+    "Rust"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Idea[Rust idea] --> Repo[empty repo]\n  Repo --> Readme[README title]\n  Repo --> Lic[LICENSE]",
+    "caption": {
+      "en": "Only the scaffold exists.",
+      "cs": "Existuje jen kostra."
+    }
+  },
+  "related": [
+    "rustas"
+  ],
+  "confidence": "low"
+}

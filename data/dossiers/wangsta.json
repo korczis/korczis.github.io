@@ -1,0 +1,58 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "wangsta",
+  "sources": {
+    "github": "https://github.com/korczis/wangsta",
+    "gitlab": "https://gitlab.com/korczis/wangsta",
+    "commit": "f6aca6ecb3d616cb041575825fdf8fc2d2323cdc",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "docs",
+  "summary": {
+    "en": "A design note for a distributed counter that issues IDs consistently across several database engines. Only the README exists; no implementation was committed.",
+    "cs": "Návrhová poznámka k distribuovanému čítači, který vydává ID konzistentně napříč několika databázovými enginy. Existuje jen README, implementace commitnuta nebyla."
+  },
+  "problem": {
+    "en": "When data lives in more than one database, records need one shared identifier, and each engine's own sequences do not agree with each other.",
+    "cs": "Když data žijí ve více databázích, záznamy potřebují jeden společný identifikátor a vlastní sekvence jednotlivých enginů se spolu neshodují."
+  },
+  "solution": {
+    "en": "The README sets the goal of a consistent, reliable cross-engine counter, names PostgreSQL and Couchbase as targets and cites Paxos and Raft as inspiration. How the counter would be built is not specified.",
+    "cs": "README stanovuje cíl konzistentního a spolehlivého čítače napříč enginy, jako cíle uvádí PostgreSQL a Couchbase a jako inspiraci Paxos a Raft. Jak by byl čítač postaven, specifikováno není."
+  },
+  "highlights": [
+    {
+      "en": "Goal: one ID that joins records across database engines",
+      "cs": "Cíl: jedno ID, které spojí záznamy napříč databázovými enginy"
+    },
+    {
+      "en": "PostgreSQL and Couchbase named as integrations",
+      "cs": "PostgreSQL a Couchbase uvedené jako integrace"
+    },
+    {
+      "en": "Consensus literature listed as the design basis",
+      "cs": "Literatura o konsenzu jako základ návrhu"
+    }
+  ],
+  "stack": [
+    "PostgreSQL",
+    "Couchbase"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[Client] --> B[Counter service]\n  B --> C[Consensus Paxos or Raft]\n  C --> D[Next ID]\n  D --> E[PostgreSQL]\n  D --> F[Couchbase]",
+    "caption": {
+      "en": "Intended flow of an ID request; the service itself is not implemented.",
+      "cs": "Zamýšlený tok žádosti o ID; samotná služba implementována není."
+    }
+  },
+  "related": [
+    "magicbiz",
+    "ideas",
+    "nosqlight"
+  ],
+  "confidence": "low"
+}

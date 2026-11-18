@@ -1,0 +1,76 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "dj-schnapps",
+  "sources": {
+    "github": "https://github.com/korczis/dj-schnapps",
+    "gitlab": "https://gitlab.com/korczis/dj-schnapps",
+    "commit": "7128988695855161f22d0ef2dd9ef61b46ba6f9a",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "Cargo.toml",
+      "Makefile",
+      "build.sh",
+      ".gitlab-ci.yml",
+      "dots/infrastructure.dot.m4",
+      "src/schnapps/Cargo.toml",
+      "src/schnapps/src/main.rs",
+      "tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "docs",
+  "summary": {
+    "en": "Documentation and scaffolding for a home electronic-music studio. The core is a studio wiring diagram written as Graphviz with m4 macros, rendered to SVG, PNG, JPG and PostScript; around it sit a Rust workspace stub, a Phoenix umbrella scaffold and a first DAW sandbox project.",
+    "cs": "Dokumentace a kostra domácího studia elektronické hudby. Jádrem je schéma zapojení studia napsané v Graphvizu s makry m4 a renderované do SVG, PNG, JPG a PostScriptu; kolem něj je kostra Rust workspace, scaffold umbrella aplikace ve Phoenixu a první sandbox projekt pro DAW."
+  },
+  "problem": {
+    "en": "A studio with a dozen devices across USB, MIDI and audio connections is hard to keep in your head; the wiring needs to be documented and regenerated when it changes.",
+    "cs": "Studio s tuctem zařízení propojených přes USB, MIDI a audio se špatně drží v hlavě; zapojení je potřeba zdokumentovat a při změně znovu vygenerovat."
+  },
+  "solution": {
+    "en": "m4 macros define edge styles per signal type (audio, data, MIDI) and expand into a DOT graph; build.sh renders it to four formats via make. The README lists each device by role, and GitLab CI runs cargo test on the Rust workspace.",
+    "cs": "Makra m4 definují styly hran podle typu signálu (audio, data, MIDI) a expandují se do DOT grafu; build.sh ho přes make vyrenderuje do čtyř formátů. README uvádí každé zařízení podle role a GitLab CI pouští cargo test nad Rust workspace."
+  },
+  "highlights": [
+    {
+      "en": "Studio topology as code: Graphviz plus m4 macros.",
+      "cs": "Topologie studia jako kód: Graphviz a makra m4."
+    },
+    {
+      "en": "Separate edge styles for audio, data and MIDI signals.",
+      "cs": "Oddělené styly hran pro audio, data a MIDI."
+    },
+    {
+      "en": "Multi-format rendering from one source via make.",
+      "cs": "Rendering do více formátů z jednoho zdroje přes make."
+    },
+    {
+      "en": "Rust and Phoenix parts are still scaffolds.",
+      "cs": "Části v Rustu a Phoenixu jsou zatím jen kostry."
+    }
+  ],
+  "stack": [
+    "Graphviz",
+    "m4",
+    "Make",
+    "Shell",
+    "Rust",
+    "Elixir",
+    "Phoenix",
+    "GitLab CI"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  M4[infrastructure.dot.m4] --> EXP[m4 expand]\n  EXP --> DOT[infrastructure.dot]\n  DOT --> GV[Graphviz dot]\n  GV --> IMG[SVG PNG JPG PS]\n  IMG --> RD[README diagram]\n  MK[Makefile] --> EXP\n  MK --> RS[Rust workspace]",
+    "caption": {
+      "en": "The studio wiring diagram is generated from macro-expanded DOT source.",
+      "cs": "Schéma zapojení studia se generuje z DOT zdroje rozvinutého přes makra."
+    }
+  },
+  "related": [
+    "sonic-playground",
+    "oscilla",
+    "kanec"
+  ],
+  "confidence": "medium"
+}

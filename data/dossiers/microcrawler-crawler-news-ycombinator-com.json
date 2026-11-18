@@ -1,0 +1,58 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "microcrawler-crawler-news-ycombinator-com",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-news-ycombinator-com",
+    "commit": "a11878d795c6b7c52c0d21e6445fd11286045c77",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "package.json",
+      "src/index.js",
+      "tree (recursive)"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "library",
+  "summary": {
+    "en": "A Microcrawler site package for a technology news aggregator front page. It emits one record per story with its URL, title and the listing page it came from.",
+    "cs": "Balíček Microcrawleru pro titulní stránku agregátoru technologických zpráviček. Pro každý příspěvek vrací záznam s URL, titulkem a stránkou výpisu, ze které pochází."
+  },
+  "problem": {
+    "en": "Microcrawler workers are generic: they download pages and need site-specific logic to know which links to follow and which fields to extract.",
+    "cs": "Workery Microcrawleru jsou obecné: stahují stránky a potřebují logiku pro konkrétní web, aby věděly, které odkazy sledovat a jaká pole vytáhnout."
+  },
+  "solution": {
+    "en": "A single index processor selects the story title links in the table layout and emits data records; the listingUrl field keeps provenance for each record. It does not follow pagination.",
+    "cs": "Jediný procesor index vybere odkazy titulků v tabulkovém layoutu a vrátí datové záznamy; pole listingUrl uchovává původ každého záznamu. Stránkování nesleduje."
+  },
+  "highlights": [
+    {
+      "en": "Provenance field (listingUrl) on every record.",
+      "cs": "U každého záznamu pole s původem (listingUrl)."
+    },
+    {
+      "en": "One processor, one selector, one record type; no pagination.",
+      "cs": "Jeden procesor, jeden selektor, jeden typ záznamu; bez stránkování."
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "Node.js",
+    "npm"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  W[Worker] --> I[index processor]\n  I --> S[story title links]\n  S --> R[url title listingUrl]",
+    "caption": {
+      "en": "Processors emit either new URLs for the queue or extracted data records.",
+      "cs": "Procesory vracejí buď nové URL do fronty, nebo vytěžené datové záznamy."
+    }
+  },
+  "related": [
+    "microcrawler-js",
+    "microcrawler-crawler-all",
+    "microcrawler-crawler-base"
+  ],
+  "confidence": "medium"
+}

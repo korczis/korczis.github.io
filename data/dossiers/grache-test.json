@@ -1,0 +1,65 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "grache-test",
+  "sources": {
+    "github": "https://github.com/korczis/grache-test",
+    "gitlab": "https://gitlab.com/korczis/grache-test",
+    "commit": "2fd32e07592c0eeaa54c2cd235973b07f0362300",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "Gemfile",
+      "core.rb",
+      "stub.rb",
+      "top-level tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "experiment",
+  "summary": {
+    "en": "A test harness for grache inside a hosted script-execution environment. It packages Ruby scripts with their dependencies and boots them through a stub that fetches grache, restores the gem pack and runs Bundler locally.",
+    "cs": "Testovací harness pro grache v hostovaném prostředí pro spouštění skriptů. Balí Ruby skripty se závislostmi a startuje je přes stub, který stáhne grache, obnoví balík gemů a lokálně spustí Bundler."
+  },
+  "problem": {
+    "en": "The target environment runs scripts on the JVM with an unusual set of tools on PATH, so it was unclear which interpreters, gem paths and parameters a deployed script actually sees.",
+    "cs": "Cílové prostředí spouští skripty na JVM s neobvyklou sadou nástrojů v PATH, takže nebylo jasné, jaké interprety, cesty ke gemům a parametry nasazený skript skutečně vidí."
+  },
+  "solution": {
+    "en": "core.rb detects bash, curl, bundler, java and ruby and falls back to a JRuby jar when no ruby binary exists, wrapping each in a small helper. inspect.rb dumps ENV and script parameters, stub.rb downloads grache, installs the pack and invokes Bundler in local deployment mode before requiring main.rb, and pack.sh zips everything for upload.",
+    "cs": "core.rb zjistí bash, curl, bundler, javu a ruby a pokud ruby chybí, sáhne po JRuby jaru; každý nástroj obalí malou funkcí. inspect.rb vypíše ENV a parametry skriptu, stub.rb stáhne grache, nainstaluje balík a pustí Bundler v lokálním deployment režimu, než načte main.rb, a pack.sh vše zazipuje k nahrání."
+  },
+  "highlights": [
+    {
+      "en": "Interpreter detection with a JRuby fallback",
+      "cs": "Detekce interpretu se záložním JRuby"
+    },
+    {
+      "en": "Environment inspector that logs ENV and script parameters",
+      "cs": "Inspektor prostředí, který loguje ENV a parametry skriptu"
+    },
+    {
+      "en": "Bootstrap stub that restores a grache pack before running main.rb",
+      "cs": "Bootstrap stub, který před spuštěním main.rb obnoví balík grache"
+    }
+  ],
+  "stack": [
+    "Ruby",
+    "JRuby",
+    "Bundler",
+    "Bash",
+    "curl"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[pack.sh zip] --> B[Upload]\n  B --> C[stub.rb]\n  C --> D[Fetch grache]\n  D --> E[Restore gem pack]\n  E --> F[Bundler local install]\n  F --> G[main.rb]\n  C --> H[core.rb tool detection]\n  I[inspect.rb] --> J[ENV dump]",
+    "caption": {
+      "en": "Deployment and boot sequence of a packaged script.",
+      "cs": "Nasazení a startovací sekvence zabaleného skriptu."
+    }
+  },
+  "related": [
+    "grache",
+    "docker-gooddata-ruby",
+    "gooddata-ruby-examples"
+  ],
+  "confidence": "medium"
+}

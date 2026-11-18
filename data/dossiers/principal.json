@@ -1,0 +1,48 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "principal",
+  "sources": {
+    "github": "https://github.com/korczis/principal",
+    "gitlab": "https://gitlab.com/korczis/principal",
+    "commit": "5cff95cd6e8b0d22a84ce8df995550eb3460fe8f",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "experiment",
+  "summary": {
+    "en": "An empty project stub; its README says only \"The one who orchestrates all the folks in the circus ...\".",
+    "cs": "Prázdná kostra projektu; README říká jen „The one who orchestrates all the folks in the circus ...“."
+  },
+  "problem": {
+    "en": "Unclear; the tree has only a README, licence and .gitignore.",
+    "cs": "Nejasné; strom obsahuje jen README, licenci a .gitignore."
+  },
+  "solution": {
+    "en": "No implementation was committed. The README hints at an orchestrator, but nothing in the repository shows what it would orchestrate or how.",
+    "cs": "Žádná implementace nebyla commitnuta. README naznačuje orchestrátor, ale z repozitáře nejde vyčíst, co ani jak by orchestroval."
+  },
+  "highlights": [
+    {
+      "en": "Stub only: README, MIT licence and .gitignore.",
+      "cs": "Pouze kostra: README, licence MIT a .gitignore."
+    },
+    {
+      "en": "A single initial commit.",
+      "cs": "Jediný úvodní commit."
+    }
+  ],
+  "stack": [],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Principal[principal stub] --> Readme[README one line]\n  Readme --> Orch[orchestrator idea]\n  Orch --> Circus[folks in the circus]",
+    "caption": {
+      "en": "Stated intent only; nothing implemented.",
+      "cs": "Pouze deklarovaný záměr, nic implementovaného."
+    }
+  },
+  "related": [],
+  "confidence": "low"
+}

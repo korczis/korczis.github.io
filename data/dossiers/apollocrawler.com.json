@@ -1,0 +1,78 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "apollocrawler.com",
+  "sources": {
+    "github": "https://github.com/korczis/apollocrawler.com",
+    "gitlab": null,
+    "commit": "41a374cbf4aeccfca2dfa17415a7119b2bb875a9",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "package.json",
+      "config.js",
+      "tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "site",
+  "summary": {
+    "en": "The website for the Apollo crawler project, built on the owner's microscratch framework: an Express and MongoDB back end with an Ember.js single-page front end.",
+    "cs": "Web projektu Apollo crawler postavený na vlastním frameworku microscratch: backend na Expressu a MongoDB a jednostránkový frontend v Ember.js."
+  },
+  "problem": {
+    "en": "The crawler project needed a public site with project, datapack and demo pages, built on the same author's microscratch framework.",
+    "cs": "Projekt crawleru potřeboval veřejný web se stránkami o projektech, datapackech a demech, postavený na autorově frameworku microscratch."
+  },
+  "solution": {
+    "en": "Server modules cover auth with users, roles and permissions, config, CLI, ETL, Mongo models and migrations, sockets, a Solr client and a feature-based Express server (gzip, sessions stored in MongoDB, cookies, router, views). Pluggable apps include a default app and a URL shortener. The Ember client adds about, admin, datapacks, demo and projects routes; Grunt builds assets and Mocha with Sinon and Chai runs tests.",
+    "cs": "Serverové moduly pokrývají autentizaci s uživateli, rolemi a oprávněními, konfiguraci, CLI, ETL, Mongo modely a migrace, sockety, klienta pro Solr a Express server složený z features (gzip, sessions uložené v MongoDB, cookies, router, views). Mezi zásuvnými aplikacemi je výchozí aplikace a zkracovač URL. Ember klient přidává routy about, admin, datapacks, demo a projects; assety sestavuje Grunt a testy běží v Mocha se Sinonem a Chai."
+  },
+  "highlights": [
+    {
+      "en": "Pluggable apps chosen by a CLI option: a default app and a URL shortener.",
+      "cs": "Zásuvné aplikace volené přepínačem CLI: výchozí aplikace a zkracovač URL."
+    },
+    {
+      "en": "socket.io is wired into the web app, but its message handler is still a TODO.",
+      "cs": "socket.io je zapojené do webové aplikace, ale obsluha zpráv je zatím jen TODO."
+    },
+    {
+      "en": "A Solr client module exists, though neither app.js nor the apps load it.",
+      "cs": "Modul s klientem pro Solr existuje, ale app.js ani aplikace ho nenačítají."
+    },
+    {
+      "en": "The README body is still the generic microscratch introduction.",
+      "cs": "Text README je zatím obecný úvod k microscratch."
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "Mongoose",
+    "socket.io",
+    "Ember.js",
+    "Handlebars",
+    "Solr",
+    "Grunt",
+    "Mocha",
+    "Travis CI"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Browser[Ember SPA] --> Server[Express server]\n  Browser --> Sock[socket.io]\n  Server --> Auth[auth module]\n  Server --> Apps[default and shortener apps]\n  Server --> Mongo[(MongoDB)]\n  Sock --> Server\n  Etl[ETL module] --> Mongo\n  Solr[Solr module, not loaded]",
+    "caption": {
+      "en": "microscratch layout: Express modules behind an Ember single-page app.",
+      "cs": "Rozvržení microscratch: Express moduly za jednostránkovou aplikací v Emberu."
+    }
+  },
+  "related": [
+    "microscratch",
+    "craftsmen",
+    "apollocrawler-com",
+    "apollo-crawler",
+    "solr-core-minimal",
+    "generator-microscratch"
+  ],
+  "confidence": "medium"
+}

@@ -1,0 +1,70 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "gooddata-lcm-tool",
+  "sources": {
+    "github": "https://github.com/korczis/gooddata-lcm-tool",
+    "gitlab": "https://gitlab.com/korczis/gooddata-lcm-tool",
+    "commit": "017142b289529397ff71d0e6f00c122f9b907253",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "Gemfile",
+      "config.template.rb",
+      "doc/TRAINING.md",
+      "scripts/deploy_release_brick.rb",
+      "data/releases.csv"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "cli",
+  "summary": {
+    "en": "Training scripts for lifecycle management (LCM) of many analytics workspaces on a cloud BI platform, using its Ruby SDK. They create master and development projects, define segments and deploy the release, provisioning, rollout and user-management bricks.",
+    "cs": "Školicí skripty pro řízení životního cyklu (LCM) mnoha analytických workspaců na cloudové BI platformě přes její Ruby SDK. Zakládají master a vývojové projekty, definují segmenty a nasazují bricky pro release, provisioning, rollout a správu uživatelů."
+  },
+  "problem": {
+    "en": "A multi-tenant analytics product keeps one master per product tier and many client workspaces that must stay in sync with it. Doing releases, provisioning and user sync by hand does not scale and is hard to teach.",
+    "cs": "Multi-tenantní analytický produkt drží jeden master pro každou úroveň produktu a mnoho klientských workspaců, které s ním musí zůstat v souladu. Ruční release, provisioning a synchronizace uživatelů neškálují a špatně se učí."
+  },
+  "solution": {
+    "en": "Each step is a short Ruby script that connects with credentials from config.rb, finds or replaces a scheduled process in the service project and deploys a brick from the platform's app store with hidden parameters for the data warehouse connection. CSV inputs (projects, releases per segment, users), SQL load scripts and a CloudConnect ETL graph feed the bricks, and TRAINING.md walks through the agenda.",
+    "cs": "Každý krok je krátký Ruby skript, který se připojí s údaji z config.rb, v servisním projektu najde nebo nahradí naplánovaný proces a nasadí brick z app store platformy se skrytými parametry pro připojení k datovému skladu. Bricky krmí CSV vstupy (projekty, releasy podle segmentů, uživatelé), SQL skripty pro načtení a ETL graf pro CloudConnect; TRAINING.md provede celou agendou."
+  },
+  "highlights": [
+    {
+      "en": "Basic and premium segments, each with its own master project.",
+      "cs": "Segmenty basic a premium, každý s vlastním master projektem."
+    },
+    {
+      "en": "Idempotent deployment: an existing process with the same name is deleted first.",
+      "cs": "Idempotentní nasazení: existující proces se stejným jménem se nejdřív smaže."
+    },
+    {
+      "en": "Training document covering provisioning, release, soft delete and role sync.",
+      "cs": "Školicí dokument pokrývající provisioning, release, měkké mazání a synchronizaci rolí."
+    }
+  ],
+  "stack": [
+    "Ruby",
+    "Bundler",
+    "SQL",
+    "CSV",
+    "CloudConnect ETL",
+    "Vertica",
+    "PostgreSQL"
+  ],
+  "architecture": {
+    "mermaid": "flowchart TD\n  A[config.rb] --> B[Ruby SDK connection]\n  C[CSV inputs] --> D[SQL load scripts]\n  D --> E[(Data warehouse)]\n  B --> F[Master projects per segment]\n  B --> G[Service project]\n  G --> H[Release brick]\n  G --> I[Provisioning brick]\n  G --> J[Rollout brick]\n  G --> K[Users bricks]\n  E --> H\n  H --> L[Client workspaces]\n  I --> L\n  J --> L",
+    "caption": {
+      "en": "Scripts deploy LCM bricks that sync client workspaces with segment masters.",
+      "cs": "Skripty nasazují LCM bricky, které synchronizují klientské workspacy s mastery segmentů."
+    }
+  },
+  "related": [
+    "gooddata-ruby-examples",
+    "docker-gooddata-ruby",
+    "gooddata_connectors_metadata",
+    "gdc-dumpator",
+    "csv2psql"
+  ],
+  "confidence": "medium"
+}

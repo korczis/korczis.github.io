@@ -1,0 +1,59 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "haskell-world",
+  "sources": {
+    "github": "https://github.com/korczis/haskell-world",
+    "gitlab": "https://gitlab.com/korczis/haskell-world",
+    "commit": "38b8bbcaa32e72ed12690286e222cb84ab49e116",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "haskell-world.cabal (tree)",
+      "src (tree)",
+      "lib (tree)"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "kata",
+  "summary": {
+    "en": "A small Haskell learning project: a Cabal library of maths modules (calculus, combinatorics, statistics, 2D and 3D vectors, units, random numbers) with two executables, a CLI that prints random samples and an empty OpenGL/GLUT window. The README is a single \"Haskell World\" line.",
+    "cs": "Malý učební projekt v Haskellu: Cabal knihovna matematických modulů (kalkulus, kombinatorika, statistika, 2D a 3D vektory, jednotky, náhodná čísla) se dvěma spustitelnými programy, CLI, které vypíše náhodné vzorky, a prázdným oknem v OpenGL/GLUT. README je jediný řádek \"Haskell World\"."
+  },
+  "problem": {
+    "en": "Practising Haskell on familiar maths, such as numeric integration, means and variance or vector algebra, needs a buildable package and a quick way to load it into GHCi.",
+    "cs": "Procvičování Haskellu na známé matematice, jako je numerická integrace, průměry a rozptyl nebo vektorová algebra, potřebuje sestavitelný balíček a rychlý způsob, jak ho načíst do GHCi."
+  },
+  "solution": {
+    "en": "The Cabal file exposes nine modules from lib/ and builds a cli and a glui executable from src/. Statistics implements geometric and harmonic means, median, standard deviation and variance; Calculus integrates numerically with a fixed step count. ghci.sh loads the CLI together with the library into GHCi. It is a practice project rather than a usable library.",
+    "cs": "Soubor Cabal vystavuje devět modulů z lib/ a ze src/ sestavuje programy cli a glui. Statistics implementuje geometrický a harmonický průměr, medián, směrodatnou odchylku a rozptyl; Calculus integruje numericky s pevným počtem kroků. ghci.sh načte CLI spolu s knihovnou do GHCi. Jde o cvičný projekt, ne o použitelnou knihovnu."
+  },
+  "highlights": [
+    {
+      "en": "Nine maths modules exposed as one Cabal library.",
+      "cs": "Devět matematických modulů vystavených jako jedna Cabal knihovna."
+    },
+    {
+      "en": "Two executables: a random-sample CLI and an OpenGL/GLUT window stub.",
+      "cs": "Dva programy: CLI s náhodnými vzorky a kostra okna v OpenGL/GLUT."
+    },
+    {
+      "en": "ghci.sh loads the CLI and the library into an interactive session.",
+      "cs": "ghci.sh načte CLI i knihovnu do interaktivního sezení."
+    }
+  ],
+  "stack": [
+    "Haskell",
+    "Cabal",
+    "OpenGL",
+    "GLUT"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  L[lib maths modules] --> P[Cabal package]\n  P --> CLI[cli executable]\n  P --> GL[glui executable]\n  GL --> W[OpenGL GLUT window]\n  L --> G[GHCi via ghci.sh]",
+    "caption": {
+      "en": "One maths library feeds two executables and an interactive GHCi session.",
+      "cs": "Jedna matematická knihovna napájí dva programy a interaktivní sezení GHCi."
+    }
+  },
+  "related": [],
+  "confidence": "low"
+}

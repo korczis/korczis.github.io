@@ -1,0 +1,70 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "rustler-test",
+  "sources": {
+    "github": "https://github.com/korczis/rustler-test",
+    "gitlab": "https://gitlab.com/korczis/rustler-test",
+    "commit": "855d3db7d7b90a3c8d132e5fbed921ac4865621f",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "mix.exs",
+      "Cargo.toml",
+      "native/calculator/Cargo.toml",
+      "native/calculator/src/lib.rs",
+      "lib/calculator/native.ex",
+      "test/rustler_test_test.exs",
+      ".travis.yml"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "experiment",
+  "summary": {
+    "en": "A minimal working example of calling Rust from Elixir through Rustler NIFs. A Rust crate exports add and sub functions that Elixir calls as Calculator.Native.",
+    "cs": "Minimální funkční příklad volání Rustu z Elixiru přes Rustler NIF. Rustový crate exportuje funkce add a sub, které Elixir volá jako Calculator.Native."
+  },
+  "problem": {
+    "en": "Native code inside the BEAM is usually written in C, where a crash takes down the whole VM. Wiring a Rust crate into a Mix build was not obvious at the time and needed a reference project.",
+    "cs": "Nativní kód uvnitř BEAM se obvykle píše v C, kde pád shodí celý virtuální stroj. Napojit Rustový crate do buildu Mixu tehdy nebylo samozřejmé a chyběl referenční projekt."
+  },
+  "solution": {
+    "en": "mix.exs adds the :rustler compiler and declares the native/calculator crate; the crate uses rustler_export_nifs! to expose two integer functions returning {:ok, result}. ExUnit tests call both functions, and Travis CI runs the build.",
+    "cs": "mix.exs přidává kompilátor :rustler a deklaruje crate native/calculator; ten přes rustler_export_nifs! vystavuje dvě celočíselné funkce vracející {:ok, výsledek}. ExUnit testy obě funkce volají a build běží na Travis CI."
+  },
+  "highlights": [
+    {
+      "en": "Rust crate compiled by Mix as part of the normal Elixir build.",
+      "cs": "Rustový crate se kompiluje Mixem jako součást běžného Elixir buildu."
+    },
+    {
+      "en": "NIF terms decoded and encoded with Rustler's typed API.",
+      "cs": "Termy NIF se dekódují a kódují typovaným API Rustleru."
+    },
+    {
+      "en": "ExUnit tests exercise the native functions directly.",
+      "cs": "ExUnit testy volají nativní funkce napřímo."
+    }
+  ],
+  "stack": [
+    "Elixir",
+    "Rust",
+    "Rustler",
+    "Erlang NIF",
+    "Mix",
+    "Travis CI"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[mix compile] --> B[Rustler compiler]\n  B --> C[native calculator crate]\n  C --> D[NIF shared library]\n  E[Calculator.Native] --> D\n  F[ExUnit tests] --> E\n  G[iex session] --> E",
+    "caption": {
+      "en": "Mix builds the Rust crate into a NIF that Elixir modules and tests call.",
+      "cs": "Mix sestaví Rustový crate do NIF, který volají Elixir moduly i testy."
+    }
+  },
+  "related": [
+    "rustler_mix",
+    "the-scratch",
+    "magic",
+    "zaas"
+  ],
+  "confidence": "high"
+}

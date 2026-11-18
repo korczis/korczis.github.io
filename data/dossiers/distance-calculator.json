@@ -1,0 +1,64 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "distance-calculator",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/distance-calculator",
+    "commit": "1dec9f65ab1e66bfafb01445fd6bee6e5557b7e9",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "mix.exs",
+      "lib/distance_calculator.ex",
+      "tree recursive"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "library",
+  "summary": {
+    "en": "An Elixir module that reads a CSV of destinations, geocodes each one through a Czech mapping REST API and computes both the straight-line and the driving distance from a fixed origin. The results are written to a new CSV next to the input.",
+    "cs": "Modul v Elixiru, který načte CSV s cíli, každý z nich geokóduje přes český mapový REST API a spočítá vzdušnou i silniční vzdálenost od pevně daného výchozího bodu. Výsledky zapíše do nového CSV vedle vstupu."
+  },
+  "problem": {
+    "en": "Distances from one place to a list of addresses were needed in bulk, both as the crow flies and by road. Doing it by hand in a map application does not scale beyond a few rows.",
+    "cs": "Bylo potřeba hromadně zjistit vzdálenosti z jednoho místa na seznam adres, vzdušnou i po silnici. Ručně v mapové aplikaci to nad pár řádků neškáluje."
+  },
+  "solution": {
+    "en": "Tesla calls the geocoding and routing endpoints, an ETS table caches geocoded addresses, and the haversine formula gives the straight-line distance. The CSV is streamed, rows that fail to geocode are dropped, and the output carries coordinates plus both distances in kilometres. Origin and API configuration are hard-coded in the module.",
+    "cs": "Tesla volá endpointy pro geokódování a plánování trasy, ETS tabulka cachuje geokódované adresy a vzdušnou vzdálenost dává haversinův vzorec. CSV se zpracovává streamem, řádky, které se nepodaří geokódovat, se zahodí, a výstup nese souřadnice a obě vzdálenosti v kilometrech. Výchozí bod i konfigurace API jsou natvrdo v modulu."
+  },
+  "highlights": [
+    {
+      "en": "Streaming CSV in and out, so input size is not bound by memory.",
+      "cs": "CSV se čte i zapisuje streamem, takže velikost vstupu neomezuje paměť."
+    },
+    {
+      "en": "ETS cache avoids repeated geocoding of the same address.",
+      "cs": "ETS cache brání opakovanému geokódování stejné adresy."
+    },
+    {
+      "en": "Haversine and routed distance side by side for comparison.",
+      "cs": "Vzdušná a silniční vzdálenost vedle sebe pro porovnání."
+    }
+  ],
+  "stack": [
+    "Elixir",
+    "Tesla",
+    "Jason",
+    "CSV",
+    "ETS",
+    "ExDoc",
+    "GitLab CI"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  IN[Input CSV] --> ST[Stream rows]\n  ST --> GC[Geocode address]\n  GC --> CACHE[(ETS cache)]\n  GC --> API[Mapping REST API]\n  ST --> HAV[Haversine distance]\n  ST --> RT[Routed distance]\n  RT --> API\n  HAV --> OUT[Output CSV]\n  RT --> OUT",
+    "caption": {
+      "en": "Each row is geocoded once, measured two ways and written to the output CSV.",
+      "cs": "Každý řádek se jednou geokóduje, změří dvěma způsoby a zapíše do výstupního CSV."
+    }
+  },
+  "related": [
+    "simple_geocoder"
+  ],
+  "confidence": "high"
+}

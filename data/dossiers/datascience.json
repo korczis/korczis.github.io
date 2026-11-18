@@ -1,0 +1,54 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "datascience",
+  "sources": {
+    "github": "https://github.com/korczis/datascience",
+    "gitlab": "https://gitlab.com/korczis/datascience",
+    "commit": "de37aa4a34163e0efa58be9feb1377bf529aa16b",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "factbook (tree)",
+      "sfpd (tree)",
+      "world-food-facts (tree)"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "experiment",
+  "summary": {
+    "en": "A collection of small data-science toy projects in R, self-described as nothing serious. Subdirectories cover a world factbook, a city police dataset and world food facts.",
+    "cs": "Sbírka malých hračičkovských data-science projektů v R, autorsky popsaná jako nic vážného. Podadresáře pokrývají světový factbook, městskou policejní datovou sadu a world food facts."
+  },
+  "problem": {
+    "en": "Exploring public datasets for practice needs a sandbox where several unrelated analyses can live together.",
+    "cs": "Průzkum veřejných datových sad pro procvičení potřebuje sandbox, kde vedle sebe žije několik nesouvisejících analýz."
+  },
+  "solution": {
+    "en": "The repository groups independent exploratory analyses by dataset, each in its own directory. It is exploratory rather than a finished product.",
+    "cs": "Repo sdružuje nezávislé explorativní analýzy podle datové sady, každou ve vlastním adresáři. Jde o průzkum, ne o hotový produkt."
+  },
+  "highlights": [
+    {
+      "en": "Independent R analyses grouped by public dataset.",
+      "cs": "Nezávislé R analýzy seskupené podle veřejné datové sady."
+    },
+    {
+      "en": "Explicitly a toy/exploratory collection.",
+      "cs": "Výslovně hračičkovská/explorativní sbírka."
+    }
+  ],
+  "stack": [
+    "R"
+  ],
+  "architecture": {
+    "mermaid": "flowchart TD\n  A[Public dataset] --> B[R scripts]\n  B --> C[Exploration]\n  C --> D[Plots and notes]",
+    "caption": {
+      "en": "Each dataset is explored by its own R scripts into plots and notes.",
+      "cs": "Každá datová sada se zkoumá vlastními R skripty do grafů a poznámek."
+    }
+  },
+  "related": [
+    "data"
+  ],
+  "confidence": "low"
+}

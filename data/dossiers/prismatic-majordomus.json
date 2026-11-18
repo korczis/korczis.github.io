@@ -1,0 +1,69 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "prismatic-majordomus",
+  "sources": {
+    "github": "https://github.com/korczis/prismatic-majordomus",
+    "gitlab": null,
+    "commit": "5bc2ddb10ccc5f2e5528e03c08b0af8ed4e26a9e",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "top-level tree",
+      "apps/"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "cli",
+  "summary": {
+    "en": "Prismatic Majordomus is a supervisory control layer for AI coding agents working in a git repository. It keeps one canonical policy, generates the instruction file each AI tool reads, records tasks, scopes and handovers in the repository, and refuses to call work finished until a declared contract is met. It never invokes a model itself.",
+    "cs": "Prismatic Majordomus je dohledová vrstva pro AI agenty, kteří pracují v git repozitáři. Drží jednu kanonickou politiku, generuje z ní instrukční soubor pro každý AI nástroj, zapisuje úkoly, rozsahy a předávky přímo do repozitáře a odmítne označit práci za hotovou, dokud není splněný deklarovaný kontrakt. Sám žádný model nevolá."
+  },
+  "problem": {
+    "en": "Instruction files for different AI tools in the same repository drift apart, checks documented as blocking are often not wired, and an agent can declare a task done without proof. State that should be durable ends up in conversation transcripts, and parallel workers collide on the same files.",
+    "cs": "Instrukční soubory různých AI nástrojů v jednom repozitáři se rozcházejí, kontroly popsané jako blokující často vůbec nejsou zapojené a agent může prohlásit úkol za hotový bez důkazu. Stav, který má přežít, končí v přepisech konverzací, a paralelní workeři si šlapou do stejných souborů."
+  },
+  "solution": {
+    "en": "A task lifecycle of start, check and finish records the task, its path scope and branch state computed from git. The finish step runs the verification command for real and checks scope, blockers and state, failing with a reproducible command per finding. A Rust executable adds a local server with MCP, HTTP and a cockpit, a worker mesh, planning and an integration queue, while a small portable shell tool answers the basic task cycle.",
+    "cs": "Životní cyklus úkolu start, check a finish zapisuje úkol, jeho rozsah cest a stav větve spočítaný z gitu. Krok finish verifikační příkaz opravdu spustí a zkontroluje rozsah, blokery i stav, přičemž ke každému nálezu dá příkaz pro reprodukci. Rust binárka přidává lokální server s MCP, HTTP a cockpitem, mesh workerů, plánování a integrační frontu; základní cyklus zvládne i malý přenositelný shellový nástroj."
+  },
+  "highlights": [
+    {
+      "en": "One policy projected into per-tool instruction files; generated regions are never hand-edited.",
+      "cs": "Jedna politika promítnutá do instrukčních souborů jednotlivých nástrojů; generované oblasti se ručně needitují."
+    },
+    {
+      "en": "finish refuses completion unless verification, scope, blockers and state all pass.",
+      "cs": "finish odmítne dokončení, dokud neprojde verifikace, rozsah, blokery i stav."
+    },
+    {
+      "en": "Collision reporting across worktrees and a peer board for concurrent AI workers.",
+      "cs": "Hlášení kolizí napříč worktree a nástěnka peerů pro souběžné AI workery."
+    },
+    {
+      "en": "Runs entirely on local machines; MCP and HTTP projections of one capability registry.",
+      "cs": "Běží čistě na vlastních strojích; MCP a HTTP projekce jednoho registru schopností."
+    }
+  ],
+  "stack": [
+    "Rust",
+    "Shell",
+    "MCP",
+    "Git",
+    "YAML",
+    "GitHub Actions"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  P[Person] --> S[start task with scope]\n  S --> G[Git and repository]\n  S --> I[Generated instructions]\n  I --> W[AI worker edits]\n  W --> C[check scope and drift]\n  C --> F[finish runs verification]\n  F --> R{Contract met}\n  R --> D[Done]\n  R --> X[Refused with repro]",
+    "caption": {
+      "en": "A task held to its contract: the repository and git decide when work is done, not the worker.",
+      "cs": "Úkol držený kontraktem: o hotovosti rozhoduje repozitář a git, ne worker."
+    }
+  },
+  "related": [
+    "korczis.github.io",
+    "majordomus-reel",
+    "oscilla",
+    "algoglyph"
+  ],
+  "confidence": "high"
+}

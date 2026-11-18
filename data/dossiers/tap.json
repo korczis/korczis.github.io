@@ -1,0 +1,47 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "tap",
+  "sources": {
+    "github": "https://github.com/korczis/tap",
+    "gitlab": null,
+    "commit": "a22f94143f3a4c53eb540ac540269d79f040033c",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "kata",
+  "summary": {
+    "en": "An empty repository with a README that holds only its title. The name is consistent with a package-manager tap, but nothing confirms it.",
+    "cs": "Prázdný repozitář, README obsahuje jen nadpis. Název by odpovídal tapu pro správce balíčků, ale nic to nepotvrzuje."
+  },
+  "problem": {
+    "en": "Unclear; no description or code.",
+    "cs": "Nejasné; chybí popis i kód."
+  },
+  "solution": {
+    "en": "Not implemented; a single first commit.",
+    "cs": "Neimplementováno; jediný první commit."
+  },
+  "highlights": [
+    {
+      "en": "One commit, README title only.",
+      "cs": "Jeden commit, v README jen nadpis."
+    },
+    {
+      "en": "Purpose undocumented.",
+      "cs": "Účel není zdokumentován."
+    }
+  ],
+  "stack": [],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[Repository] --> B[README title]\n  A --> C[First commit]\n  C --> D[Purpose unclear]",
+    "caption": {
+      "en": "Current state of an empty repository.",
+      "cs": "Současný stav prázdného repozitáře."
+    }
+  },
+  "related": [],
+  "confidence": "low"
+}

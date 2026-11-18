@@ -1,0 +1,53 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "talkie",
+  "sources": {
+    "github": "https://github.com/korczis/talkie",
+    "gitlab": "https://gitlab.com/korczis/talkie",
+    "commit": "522244bc765572e322d08d7e4e0158605d8f2b40",
+    "read_at": "2026-11-18",
+    "read": [
+      "top-level tree",
+      "repository description"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "experiment",
+  "summary": {
+    "en": "A repository described as a Node.js text-to-speech application. The default branch contains only a .gitignore and a license.",
+    "cs": "Repozitář popsaný jako aplikace pro převod textu na řeč v Node.js. Výchozí větev obsahuje jen .gitignore a licenci."
+  },
+  "problem": {
+    "en": "The description points to speech synthesis from text in Node.js; nothing else about the intended use is recorded.",
+    "cs": "Popis míří na syntézu řeči z textu v Node.js; nic dalšího o zamýšleném použití zaznamenáno není."
+  },
+  "solution": {
+    "en": "No code was committed, so the approach is unclear.",
+    "cs": "Žádný kód commitnut nebyl, přístup je proto nejasný."
+  },
+  "highlights": [
+    {
+      "en": "Text-to-speech idea recorded in the repository description",
+      "cs": "Nápad na převod textu na řeč zachycený v popisu repozitáře"
+    },
+    {
+      "en": "No source files on the default branch",
+      "cs": "Na výchozí větvi nejsou žádné zdrojové soubory"
+    }
+  ],
+  "stack": [
+    "Node.js"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[Text input] --> B[Node.js app]\n  B --> C[TTS engine]\n  C --> D[Audio]",
+    "caption": {
+      "en": "The flow implied by the description; nothing of it is implemented.",
+      "cs": "Tok odvozený z popisu; nic z něj není implementováno."
+    }
+  },
+  "related": [
+    "sonic-playground",
+    "skype-adapter-client"
+  ],
+  "confidence": "low"
+}

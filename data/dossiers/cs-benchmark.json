@@ -1,0 +1,62 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "cs-benchmark",
+  "sources": {
+    "github": "https://github.com/korczis/cs-benchmark",
+    "gitlab": "https://gitlab.com/korczis/cs-benchmark",
+    "commit": "2e2164cf46c84c5f97f613149a41295dbc044f19",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "cs-benchmark.sln",
+      "calls-benchmark/Program.cs",
+      "calls-benchmark/"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "experiment",
+  "summary": {
+    "en": "A small C# console micro-benchmark that measures the cost of different ways of calling the same method in .NET: direct, virtual, lambda, delegates and reflection. Each variant runs 10 million iterations timed with a Stopwatch.",
+    "cs": "Malý konzolový mikrobenchmark v C#, který měří cenu různých způsobů volání téže metody v .NET: přímé volání, virtuální metoda, lambda, delegáti a reflexe. Každá varianta běží 10 milionů iterací měřených přes Stopwatch."
+  },
+  "problem": {
+    "en": "Reflection and dynamic invocation are convenient but their overhead relative to a plain call is often only guessed. The project measures it directly instead.",
+    "cs": "Reflexe a dynamické volání jsou pohodlné, ale jejich režie oproti obyčejnému volání se většinou jen odhaduje. Projekt ji místo toho přímo měří."
+  },
+  "solution": {
+    "en": "A Benchmark class increments a public counter (to prevent the call from being optimised away) through each call style and prints elapsed time, calls per second and the ratio to the direct-call baseline. Reflection variants obtain a MethodInfo and either bind it to an Action, wrap it as a Delegate invoked with DynamicInvoke, or call MethodInfo.Invoke.",
+    "cs": "Třída Benchmark zvyšuje veřejný čítač (aby překladač volání nevyhodil) každým stylem volání a vypíše čas, počet volání za sekundu a poměr k přímému volání. Varianty s reflexí získají MethodInfo a buď ho navážou na Action, obalí jako Delegate volaný přes DynamicInvoke, nebo zavolají MethodInfo.Invoke."
+  },
+  "highlights": [
+    {
+      "en": "Seven call styles compared against one baseline",
+      "cs": "Sedm stylů volání porovnaných proti jedné referenci"
+    },
+    {
+      "en": "The README sample output shows Delegate.DynamicInvoke and MethodInfo.Invoke an order of magnitude or more slower than a direct call, while a reflected method bound to Action runs at direct-call speed",
+      "cs": "Ukázkový výstup v README ukazuje, že Delegate.DynamicInvoke a MethodInfo.Invoke jsou o řád i víc pomalejší než přímé volání, kdežto reflektovaná metoda navázaná na Action běží stejně rychle jako přímé volání"
+    },
+    {
+      "en": "Plain Visual Studio solution with no external dependencies",
+      "cs": "Čisté řešení pro Visual Studio bez externích závislostí"
+    }
+  ],
+  "stack": [
+    "C#",
+    ".NET",
+    "System.Reflection",
+    "Visual Studio"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  M[Main] --> B[Benchmark]\n  B --> N[Normal call]\n  B --> V[Virtual call]\n  B --> L[Lambda]\n  B --> D[Delegates]\n  B --> R[Reflection Invoke]\n  N --> S[Stopwatch]\n  V --> S\n  L --> S\n  D --> S\n  R --> S\n  S --> O[Report vs baseline]",
+    "caption": {
+      "en": "Each call style is timed by the same Stopwatch harness and reported relative to the direct call.",
+      "cs": "Každý styl volání měří stejný harness se Stopwatch a výsledek se vztahuje k přímému volání."
+    }
+  },
+  "related": [
+    "reflex",
+    "rest-hello-world-benchmark"
+  ],
+  "confidence": "high"
+}

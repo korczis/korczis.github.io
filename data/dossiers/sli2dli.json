@@ -1,0 +1,72 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "sli2dli",
+  "sources": {
+    "github": "https://github.com/korczis/sli2dli",
+    "gitlab": "https://gitlab.com/korczis/sli2dli",
+    "commit": "69bcf1145b8778f3a9b5cd815615d91afdc304bf",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "Cargo.toml",
+      "Makefile",
+      "src/build.rs",
+      "src/lib.rs",
+      "src/main.rs",
+      "src/processor/processor.rs",
+      "src/manifest/*.rs",
+      "src/options/options.rs",
+      "src/profiler/profile_object.rs",
+      "src/types/formatter.rs"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "cli",
+  "summary": {
+    "en": "A Rust command-line prototype for the SLI-to-DLI data-load conversion of an analytics platform. It parses an SLI manifest, reads CSV rows in bulks, transposes them per column on a separate thread and prints size, time and throughput; it does not write DLI output yet.",
+    "cs": "Prototyp nástroje pro příkazovou řádku v Rustu pro převod nahrávání dat ze SLI do DLI analytické platformy. Rozparsuje manifest SLI, čte řádky CSV po dávkách, v samostatném vlákně je transponuje po sloupcích a vypíše velikost, čas a propustnost; výstup DLI zatím nezapisuje."
+  },
+  "problem": {
+    "en": "Data loads described by an SLI manifest have to be reorganised column by column for the DLI format, which is memory and CPU heavy on large CSV files; the README states only that this is an SLI to DLI implementation in Rust.",
+    "cs": "Nahrávky dat popsané manifestem SLI je pro formát DLI potřeba přeskládat po sloupcích, což je u velkých CSV souborů náročné na paměť i CPU; README uvádí jen, že jde o implementaci SLI do DLI v Rustu."
+  },
+  "solution": {
+    "en": "Serde structs model the manifest (data set, file, CSV parameters, parts). The processor reads records with the csv crate, sends bulks over a bounded mpsc sync_channel and a transpose thread accumulates values per column until an end-of-stream message; the manifest is loaded but not yet used by the processor, and the per-column buffers are discarded. A profiler object times its scope on drop. The README lists Bloom filters, cuckoo hashing and FNV hashing as reference material; Cargo.toml also declares crates such as crossbeam, mio and ocl that the code does not import, and asks for the native CPU with SSSE3.",
+    "cs": "Serde struktury modelují manifest (data set, soubor, parametry CSV, části). Procesor čte záznamy crate csv, posílá dávky přes omezený kanál mpsc sync_channel a vlákno transpozice skládá hodnoty po sloupcích až do zprávy o konci proudu; manifest se načte, procesor ho ale zatím nepoužívá a sloupcové buffery se zahodí. Objekt profileru při dropu změří čas svého bloku. README odkazuje na Bloom filtry, cuckoo hashing a FNV hash jako podklady; Cargo.toml deklaruje i crates jako crossbeam, mio a ocl, které kód neimportuje, a žádá nativní CPU se SSSE3."
+  },
+  "highlights": [
+    {
+      "en": "Bounded channel between reader and transpose thread gives back-pressure.",
+      "cs": "Omezený kanál mezi čtečkou a vláknem transpozice dává zpětný tlak."
+    },
+    {
+      "en": "SLI manifest modelled with serde_json structs.",
+      "cs": "Manifest SLI namodelovaný strukturami přes serde_json."
+    },
+    {
+      "en": "Scope profiler built on Drop and an end-of-scope trait.",
+      "cs": "Profiler bloků postavený na Drop a traitu pro konec scope."
+    }
+  ],
+  "stack": [
+    "Rust",
+    "serde",
+    "csv",
+    "clap"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[SLI manifest] --> B[Manifest parser]\n  C[CSV files] --> D[CSV reader]\n  B -.-> D\n  D --> E[Bulk sender]\n  E --> F[Transpose thread]\n  F --> G[Per column buffers]\n  D --> S[Throughput stats]\n  H[Profiler] --> D",
+    "caption": {
+      "en": "CSV reading with a bounded channel into a per-column transpose thread; the dashed edge marks the manifest, which is parsed but not yet applied.",
+      "cs": "Čtení CSV s omezeným kanálem do vlákna transpozice po sloupcích; přerušovaná hrana značí manifest, který se rozparsuje, ale zatím neuplatní."
+    }
+  },
+  "related": [
+    "streamflow",
+    "wims",
+    "gooddata-fs",
+    "gooddata-ruby-examples",
+    "csv2psql"
+  ],
+  "confidence": "medium"
+}

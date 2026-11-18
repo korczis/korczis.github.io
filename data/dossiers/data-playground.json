@@ -1,0 +1,52 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "data-playground",
+  "sources": {
+    "github": "https://github.com/korczis/data-playground",
+    "gitlab": null,
+    "commit": "182c87815d255673bbb7d522f62d14d280bcb658",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "kata",
+  "summary": {
+    "en": "A placeholder for experiments with data: a README line, a licence and a .gitignore from the initial commit. No datasets or code are present.",
+    "cs": "Zástupný repozitář pro hraní si s daty: řádek v README, licence a .gitignore z úvodního commitu. Žádná data ani kód v něm nejsou."
+  },
+  "problem": {
+    "en": "Unclear; the README states only the general intent.",
+    "cs": "Nejasné; README uvádí jen obecný záměr."
+  },
+  "solution": {
+    "en": "Not implemented.",
+    "cs": "Neimplementováno."
+  },
+  "highlights": [
+    {
+      "en": "Initial commit only.",
+      "cs": "Pouze úvodní commit."
+    },
+    {
+      "en": "Intent: a sandbox for data exploration.",
+      "cs": "Záměr: pískoviště pro průzkum dat."
+    }
+  ],
+  "stack": [],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[Repository] --> B[README]\n  A --> C[LICENSE]\n  B --> D[Data sandbox intent]",
+    "caption": {
+      "en": "Current state of a placeholder.",
+      "cs": "Současný stav zástupného repozitáře."
+    }
+  },
+  "related": [
+    "datascience",
+    "ctu-cz",
+    "data"
+  ],
+  "confidence": "low"
+}

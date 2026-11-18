@@ -1,0 +1,73 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "oscilla",
+  "sources": {
+    "github": "https://github.com/korczis/oscilla",
+    "gitlab": null,
+    "commit": "8e087873968df0438165b474684d6dee7ac7e5ff",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "package.json",
+      "top-level tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "app",
+  "summary": {
+    "en": "OSCILLA is a browser-based acoustic laboratory shipped as one self-contained HTML file. It generates tones, sweeps and sequences, shows them as waveform, spectrum and spectrogram, and measures a speaker, room and microphone chain with log sweeps. Each measurement states its valid range and the reasons behind its quality rating.",
+    "cs": "OSCILLA je akustická laboratoř v prohlížeči, distribuovaná jako jediný soběstačný HTML soubor. Generuje tóny, sweepy a sekvence, zobrazuje je jako průběh, spektrum a spektrogram a log sweepem měří řetězec reproduktor, místnost, mikrofon. Každé měření uvádí svůj platný rozsah a důvody svého hodnocení kvality."
+  },
+  "problem": {
+    "en": "A browser knows sample values, not sound pressure, so an acoustic curve drawn in a browser is easy to over-read, for example as dB SPL. The README also sets repeating and comparing an experiment, and running without an install, an account or a network, as goals.",
+    "cs": "Prohlížeč zná hodnoty vzorků, ne akustický tlak, takže akustickou křivku nakreslenou v prohlížeči je snadné přecenit, třeba jako dB SPL. README si za cíl klade i opakování a porovnání experimentu a běh bez instalace, účtu a sítě."
+  },
+  "solution": {
+    "en": "The app runs from a single file that loads nothing at runtime and also opens from disk. Measurements report relative dB until the level is calibrated, experiments are saved as recipes that can be rerun, and two records can be compared with every difference named. A Studio compiles a patched signal graph into the graph that actually sounds, and claims in the README are tied to tests through a claims file.",
+    "cs": "Aplikace běží z jednoho souboru, který za běhu nic nenačítá a funguje i otevřený z disku. Dokud není úroveň zkalibrovaná, měření hlásí jen relativní dB; experiment se ukládá jako recept, který jde spustit znovu, a dva záznamy lze porovnat s výčtem všech rozdílů. Studio překládá nakreslený signálový graf přímo na ten, který hraje, a tvrzení v README jsou přes soubor claims navázaná na testy."
+  },
+  "highlights": [
+    {
+      "en": "Single self-contained HTML build, no runtime network requests.",
+      "cs": "Jediný soběstačný HTML build bez síťových požadavků za běhu."
+    },
+    {
+      "en": "Log-sweep transfer function, impulse response and RTA with stated validity and quality reasons.",
+      "cs": "Přenosová funkce, impulsní odezva a RTA z log sweepu s uvedenou platností a důvody kvality."
+    },
+    {
+      "en": "Studio signal graph and a semi-modular Synth playable from keyboard or MIDI, sharing one patch library.",
+      "cs": "Signálový graf ve Studiu a semimodulární syntezátor ovladatelný klávesnicí i přes MIDI se sdílenou knihovnou patchů."
+    },
+    {
+      "en": "README claims mapped to tests in docs/CLAIMS.yaml; visual regression gate with Playwright and pixelmatch.",
+      "cs": "Tvrzení z README navázaná na testy v docs/CLAIMS.yaml; vizuální regresní brána přes Playwright a pixelmatch."
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "Web Audio API",
+    "Alpine.js",
+    "p5.js",
+    "uPlot",
+    "Tailwind CSS",
+    "Flowbite",
+    "esbuild",
+    "Playwright",
+    "axe-core",
+    "GitHub Pages"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Gen[Generate tone or sweep] --> Obs[Waveform and spectrum]\n  Obs --> Mea[Measure chain]\n  Mea --> Int[Interpret with validity]\n  Int --> Exp[Save recipe]\n  Exp --> Cmp[Compare records]\n  Gen --> Stu[Studio graph]\n  Stu --> Syn[Synth and patches]",
+    "caption": {
+      "en": "From a generated signal to a measured, interpreted and comparable result; the Studio reuses the same engine as a patch.",
+      "cs": "Od generovaného signálu k měřenému, interpretovanému a porovnatelnému výsledku; Studio používá stejný engine jako patch."
+    }
+  },
+  "related": [
+    "algoglyph",
+    "sonic-playground",
+    "prismatic-majordomus"
+  ],
+  "confidence": "high"
+}

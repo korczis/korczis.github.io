@@ -1,0 +1,63 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "apollo-crawler-extension",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/apollo-crawler-extension",
+    "commit": "b7f9e5d4f98054107a0b4f1fe020be6db6b47319",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "manifest.json",
+      "contentscript.js",
+      "tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "app",
+  "summary": {
+    "en": "A Chrome extension (Manifest V2) for point-and-click data extraction. Per the README, the user clicks the toolbar icon to inject an extractor into the page, clicks two example elements, and the extension writes the matching data to a data.json file.",
+    "cs": "Rozšíření pro Chrome (Manifest V2) na vytěžování dat klikáním. Podle README se ikonou v liště do stránky vloží extraktor, uživatel klikne na dva vzorové prvky a rozšíření uloží odpovídající data do souboru data.json."
+  },
+  "problem": {
+    "en": "Writing a scraper usually means inspecting the DOM by hand and writing CSS selectors for each repeated field. For quick one-off extraction that is more effort than the data is worth.",
+    "cs": "Psaní scraperu obvykle znamená ruční procházení DOM a ladění CSS selektorů pro každé opakované pole. U jednorázového vytažení dat je to víc práce, než kolik data stojí."
+  },
+  "solution": {
+    "en": "The background page injects jQuery and the content script on a toolbar click. The content script records the CSS path of each clicked element, then diffs the two paths token by token: segments that match are kept, segments that differ are reduced to their tag name. The result is a generalised selector that matches the whole repeated set, whose text, links and image sources are saved through a console.save helper. As committed, the entry point is declared as var main() {, a syntax error, so the script does not run without that fix.",
+    "cs": "Background stránka po kliknutí na ikonu vloží do stránky jQuery a content script. Ten si zapamatuje CSS cestu každého kliknutého prvku a obě cesty porovná po segmentech: shodné segmenty ponechá, rozdílné zredukuje na samotný tag. Vznikne zobecněný selektor pro celou opakovanou skupinu a její texty, odkazy a zdroje obrázků se uloží přes pomocnou funkci console.save. V uložené podobě je vstupní bod zapsaný jako var main() {, což je syntaktická chyba, takže skript bez této opravy nepoběží."
+  },
+  "highlights": [
+    {
+      "en": "Selector inference from exactly two example clicks, by diffing their DOM paths.",
+      "cs": "Odvození selektoru ze dvou vzorových kliknutí porovnáním jejich DOM cest."
+    },
+    {
+      "en": "Walks up from the clicked node to find the enclosing link or image.",
+      "cs": "Od kliknutého uzlu stoupá stromem a hledá nadřazený odkaz nebo obrázek."
+    },
+    {
+      "en": "Loaded as an unpacked extension; no build step.",
+      "cs": "Instaluje se jako rozbalené rozšíření, bez build kroku."
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "Chrome Extensions API",
+    "jQuery"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  U[Toolbar click] --> B[Background page]\n  B --> C[Inject content script]\n  C --> K1[First click path]\n  C --> K2[Second click path]\n  K1 --> D[Path diff]\n  K2 --> D\n  D --> S[Generalised selector]\n  S --> J[data.json download]",
+    "caption": {
+      "en": "From two example clicks to a generalised selector and a JSON download.",
+      "cs": "Od dvou vzorových kliknutí k zobecněnému selektoru a stažení JSON."
+    }
+  },
+  "related": [
+    "apollo-crawler",
+    "microcrawler-js",
+    "microcrawler-browser",
+    "ApolloCrawler-github-io"
+  ],
+  "confidence": "medium"
+}

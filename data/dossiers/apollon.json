@@ -1,0 +1,82 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "apollon",
+  "sources": {
+    "github": "https://github.com/korczis/apollon",
+    "gitlab": "https://gitlab.com/korczis/apollon",
+    "commit": "e9e82dfb14bd729f43194a9d93758c1cbb26cbe0",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      ".gemspec",
+      ".gitmodules",
+      "recursive tree",
+      "config/coreos/conf2015/README.md"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "cli",
+  "summary": {
+    "en": "A Ruby CLI for running a personal container cluster on cloud VMs, built around CoreOS, etcd, fleet and Docker. It manages providers, machines, keys and clusters on DigitalOcean and AWS and ships systemd units for Flannel and Kubernetes components.",
+    "cs": "Ruby CLI pro provoz vlastního kontejnerového clusteru na cloudových VM postavené na CoreOS, etcd, fleetu a Dockeru. Spravuje providery, stroje, klíče a clustery na DigitalOcean a AWS a obsahuje systemd unity pro Flannel a komponenty Kubernetes."
+  },
+  "problem": {
+    "en": "Standing up a CoreOS cluster by hand means creating VMs at a provider, writing cloud-config for etcd and worker nodes and submitting units to fleet, repeatedly and per provider.",
+    "cs": "Ruční sestavení CoreOS clusteru znamená založit VM u providera, napsat cloud-config pro etcd a worker uzly a odeslat unity do fleetu, a to opakovaně a pro každého providera zvlášť."
+  },
+  "solution": {
+    "en": "The apollon executable (GLI) exposes auth, clusters, machines, providers, keys and version commands. Provider classes use fog for both DigitalOcean and AWS, with barge creating DigitalOcean droplets; aws-sdk-core and fleet-api are declared in the gemspec but not used by the code. config/coreos holds etcd, master, node and worker cloud-configs, and units/ contains fleet units for Flannel, the Kubernetes API server, controller manager, scheduler, kubelet, proxy and MongoDB, shipped as files rather than submitted by the CLI.",
+    "cs": "Spustitelný apollon (GLI) nabízí příkazy auth, clusters, machines, providers, keys a version. Třídy providerů používají fog pro DigitalOcean i AWS a droplety na DigitalOcean zakládá přes barge; aws-sdk-core a fleet-api jsou v gemspecu deklarované, ale kód je nepoužívá. config/coreos obsahuje cloud-configy pro etcd, master, node a worker a units/ nese fleet unity pro Flannel, Kubernetes API server, controller manager, scheduler, kubelet, proxy a MongoDB, které jsou přiložené jako soubory a CLI je neodesílá."
+  },
+  "highlights": [
+    {
+      "en": "Pluggable provider layer for DigitalOcean and AWS",
+      "cs": "Zásuvná vrstva providerů pro DigitalOcean a AWS"
+    },
+    {
+      "en": "CoreOS cloud-config templates for etcd, master and worker roles",
+      "cs": "Šablony CoreOS cloud-config pro role etcd, master a worker"
+    },
+    {
+      "en": "fleet units for Flannel and the Kubernetes control plane, kept as files beside the CLI",
+      "cs": "fleet unity pro Flannel a control plane Kubernetes, uložené jako soubory vedle CLI"
+    },
+    {
+      "en": "RSpec unit specs per CLI command, Travis CI and Coveralls",
+      "cs": "RSpec testy pro každý příkaz CLI, Travis CI a Coveralls"
+    },
+    {
+      "en": "Dockerfiles for mongod, mongos and nginx images",
+      "cs": "Dockerfiles pro image mongod, mongos a nginx"
+    }
+  ],
+  "stack": [
+    "Ruby",
+    "GLI",
+    "CoreOS",
+    "etcd",
+    "fleet",
+    "Flannel",
+    "Kubernetes",
+    "Docker",
+    "fog",
+    "AWS",
+    "DigitalOcean",
+    "RSpec"
+  ],
+  "architecture": {
+    "mermaid": "flowchart TD\n  A[apollon CLI] --> B[Provider layer]\n  B --> C[DigitalOcean via fog and barge]\n  B --> D[AWS via fog]\n  C --> E[CoreOS VMs]\n  D --> E\n  F[cloud-config files] --> E\n  E --> G[etcd]\n  I[fleet unit files] --> H[fleet]\n  H --> E\n  I --> J[Flannel]\n  I --> K[Kubernetes]",
+    "caption": {
+      "en": "The CLI creates and lists CoreOS machines through providers; cloud-configs and fleet units are shipped as files, not submitted by the CLI.",
+      "cs": "CLI zakládá a vypisuje CoreOS stroje přes providery; cloud-configy a fleet unity jsou přiložené jako soubory a CLI je neodesílá."
+    }
+  },
+  "related": [
+    "server-coreos",
+    "cluster-kubernetes",
+    "cluster",
+    "docker-conf2015",
+    "k8s-orbis-pictus"
+  ],
+  "confidence": "high"
+}

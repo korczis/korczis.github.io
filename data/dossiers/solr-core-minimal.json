@@ -1,0 +1,57 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "solr-core-minimal",
+  "sources": {
+    "github": "https://github.com/korczis/solr-core-minimal",
+    "gitlab": "https://gitlab.com/korczis/solr-core-minimal",
+    "commit": "08f859fe53c283b2440afd3cf93cf94a64563ecd",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "config",
+  "summary": {
+    "en": "A minimal Apache Solr home with one core (solr-minimal): schema, solrconfig, language analysis resources and the SLF4J/log4j JARs needed to run it.",
+    "cs": "Minimální Apache Solr home s jedním jádrem (solr-minimal): schema, solrconfig, jazykové zdroje pro analýzu a SLF4J/log4j JARy potřebné ke spuštění."
+  },
+  "problem": {
+    "en": "Starting a Solr core from the full example distribution brings a lot of unneeded configuration.",
+    "cs": "Založení Solr jádra z plné ukázkové distribuce s sebou nese spoustu nepotřebné konfigurace."
+  },
+  "solution": {
+    "en": "The repository keeps just solr.xml, a core.properties, the core conf directory (schema.xml, solrconfig.xml, stopwords, synonyms, per-language stopword lists, an update script, the luke XSLT) and logging libraries under lib/ext. An empty index segment is committed as well.",
+    "cs": "Repozitář drží jen solr.xml, core.properties, adresář conf jádra (schema.xml, solrconfig.xml, stopwords, synonyma, stopwords pro jednotlivé jazyky, update skript, XSLT luke) a logovací knihovny v lib/ext. Commitnutý je i prázdný segment indexu."
+  },
+  "highlights": [
+    {
+      "en": "Includes a Czech stopword list among the language resources.",
+      "cs": "Mezi jazykovými zdroji je i seznam českých stopwords."
+    },
+    {
+      "en": "Drop-in Solr home; no code of its own.",
+      "cs": "Hotový Solr home k použití; vlastní kód neobsahuje."
+    }
+  ],
+  "stack": [
+    "Apache Solr",
+    "XML",
+    "log4j",
+    "SLF4J"
+  ],
+  "architecture": {
+    "mermaid": "flowchart TD\n  Home[solr.xml home] --> Core[solr-minimal core]\n  Core --> Schema[schema.xml]\n  Core --> Conf[solrconfig.xml]\n  Core --> Lang[lang stopwords]\n  Core --> Index[(data index)]\n  Lib[lib ext logging] --> Home",
+    "caption": {
+      "en": "Layout of the Solr home and its single core.",
+      "cs": "Struktura Solr home a jeho jediného jádra."
+    }
+  },
+  "related": [
+    "craftsmen",
+    "apollocrawler.com",
+    "microscratch"
+  ],
+  "confidence": "medium"
+}

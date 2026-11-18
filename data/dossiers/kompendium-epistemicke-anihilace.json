@@ -1,0 +1,73 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "kompendium-epistemicke-anihilace",
+  "sources": {
+    "github": "https://github.com/korczis/kompendium-epistemicke-anihilace",
+    "gitlab": null,
+    "commit": "fd11ca9bb3b4a6bf6d6005d6c0c57a53b7bcea35",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "top-level tree",
+      "crates/kompendium-engine/README.md",
+      "repository languages"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "site",
+  "summary": {
+    "en": "A Czech-language compendium that classifies phenomena which systematically erode a person's ability to know: trust in perception and memory, weighing of evidence, meaning of words and shared reality. For each phenomenon it describes the mechanism at a structural level, detection markers, a clinical frame and paths to defence and recovery. It is published as a static book site with chapters, a technique catalogue, case studies, self-defence guides and a generative p5.js gallery.",
+    "cs": "Česky psané kompendium, které třídí jevy systematicky rozkládající schopnost člověka poznávat: důvěru ve vlastní vnímání a paměť, vážení důkazů, význam slov i sdílenou realitu. U každého jevu popisuje mechanismus na úrovni struktury, detekční markery, klinický rámec a cestu k obraně a zotavení. Vychází jako statický knižní web s kapitolami, katalogem technik, případy, návody sebeobrany a generativní galerií v p5.js."
+  },
+  "problem": {
+    "en": "Material on manipulation and disinformation tends to be either scattered or written as an operational how-to. Professionals such as clinicians, investigators and researchers lack a defensive taxonomy that connects mechanisms, markers and recovery.",
+    "cs": "Materiály o manipulaci a dezinformacích bývají buď roztříštěné, nebo psané jako operativní návod. Odborníkům typu klinik, vyšetřovatel či výzkumník chybí defenzivní taxonomie, která propojí mechanismy, markery a zotavení."
+  },
+  "solution": {
+    "en": "Content is organised into a taxonomy and built with Zola into a navigable site, with a wiki generated from the same content by Python scripts. Search and graph neighbourhood queries run in the browser through a query engine written in Rust for WebAssembly that mirrors a Python reference byte for byte. An ethics section frames the technical chapters, and an archived earlier extraction pipeline in Elixir remains in the repository.",
+    "cs": "Obsah je uspořádaný do taxonomie a Zola z něj staví navigovatelný web; wiki z téhož obsahu generují Python skripty. Vyhledávání a dotazy na sousedství v grafu běží v prohlížeči přes dotazový engine v Rustu pro WebAssembly, který bajt po bajtu odpovídá referenci v Pythonu. Technickým kapitolám předchází oddíl etických aspektů a v repozitáři zůstává archivovaná starší extrakční pipeline v Elixiru."
+  },
+  "highlights": [
+    {
+      "en": "Defensive taxonomy aimed at qualified readers, explicitly not an operational manual.",
+      "cs": "Defenzivní taxonomie pro kvalifikované čtenáře, výslovně ne operativní manuál."
+    },
+    {
+      "en": "Rust to wasm32 query engine with a conformance test against the Python reference.",
+      "cs": "Dotazový engine v Rustu pro wasm32 s testem shody proti referenci v Pythonu."
+    },
+    {
+      "en": "README sections and wiki generated from the content, not written by hand.",
+      "cs": "Oddíly README i wiki se generují z obsahu, nepíšou se ručně."
+    },
+    {
+      "en": "Generative p5.js gallery rendered also into GIFs for the README.",
+      "cs": "Generativní galerie v p5.js renderovaná i do GIFů pro README."
+    }
+  ],
+  "stack": [
+    "Zola",
+    "Tailwind CSS",
+    "Flowbite",
+    "p5.js",
+    "Python",
+    "Rust",
+    "WebAssembly",
+    "Elixir",
+    "GitHub Pages"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Content[Book content] --> Zola[Zola build]\n  Content --> Wiki[build-wiki.py]\n  Content --> Data[Search and graph data]\n  Data --> Engine[Rust wasm engine]\n  Ref[Python reference engine] --> Conf[Conformance test]\n  Engine --> Conf\n  Engine --> Site[Book site]\n  Zola --> Site\n  P5[p5.js gallery] --> Site",
+    "caption": {
+      "en": "One body of content feeds the site, the wiki and the data that the in-browser query engine reads.",
+      "cs": "Jeden obsah napájí web, wiki i data, která čte dotazový engine v prohlížeči."
+    }
+  },
+  "related": [
+    "the-psycho",
+    "catharsis-as-a-service",
+    "prism",
+    "korczis.github.io"
+  ],
+  "confidence": "medium"
+}

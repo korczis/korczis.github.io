@@ -241,6 +241,23 @@
       ]
     },
     {
+      "id": "dossiers",
+      "name": "Repository dossiers are inferred, sourced, bilingual and NDA-clean",
+      "rule": "project.dossiers-inferred",
+      "rule_file": ".ai/repo/rules/project/dossiers-inferred.v1.md",
+      "ci": true,
+      "where": [
+        {
+          "kind": "ci",
+          "file": ".github/workflows/ci.yml"
+        },
+        {
+          "kind": "prepush",
+          "file": ".githooks/pre-push"
+        }
+      ]
+    },
+    {
       "id": "categories",
       "name": "Category pages are current",
       "rule": "project.data-measured",

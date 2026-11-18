@@ -1,0 +1,60 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "github-extractor",
+  "sources": {
+    "github": "https://github.com/korczis/github-extractor",
+    "gitlab": "https://gitlab.com/korczis/github-extractor",
+    "commit": "2a483ab26ee2eaaca8eab68a4fecfbaa3c359444",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "package.json",
+      "app.js",
+      "tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "cli",
+  "summary": {
+    "en": "A Node.js script that lists the repositories of one GitHub organisation through the GitHub API and fetches the contributors of each, printing the result as JSON.",
+    "cs": "Skript v Node.js, který přes GitHub API vypíše repozitáře jedné GitHub organizace, ke každému stáhne přispěvatele a výsledek vytiskne jako JSON."
+  },
+  "problem": {
+    "en": "Getting a view of who contributes to which repository across an organisation is tedious through the web interface.",
+    "cs": "Zjistit přes webové rozhraní, kdo přispívá do kterého repozitáře napříč organizací, je pracné."
+  },
+  "solution": {
+    "en": "With node-github and promise chains from the deferred library, the script requests two pages of 100 repositories, maps each to a contributors request including anonymous ones, and prints the repository count and the combined data. The organisation name is hard-coded in app.js and the OAuth token is a placeholder to fill in.",
+    "cs": "Skript přes node-github a promise řetězce z knihovny deferred vyžádá dvě stránky po 100 repozitářích, pro každý vyžádá přispěvatele včetně anonymních a vypíše počet repozitářů a spojená data. Název organizace je natvrdo zapsaný v app.js a OAuth token je zástupná hodnota k doplnění."
+  },
+  "highlights": [
+    {
+      "en": "Parallel per-repository requests with deferred.map.",
+      "cs": "Paralelní dotazy na jednotlivé repozitáře přes deferred.map."
+    },
+    {
+      "en": "Single-file tool, no tests.",
+      "cs": "Nástroj v jednom souboru, bez testů."
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "Node.js",
+    "GitHub API",
+    "node-github",
+    "deferred"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Auth[OAuth token] --> Api[GitHub API]\n  Api --> Repos[org repos pages]\n  Repos --> Map[deferred map]\n  Map --> Contrib[contributors per repo]\n  Contrib --> Json[JSON stdout]",
+    "caption": {
+      "en": "Repository listing fanned out into contributor queries.",
+      "cs": "Výpis repozitářů rozvětvený do dotazů na přispěvatele."
+    }
+  },
+  "related": [
+    "gh-exec-3000",
+    "twitter-analysis",
+    "json2csv"
+  ],
+  "confidence": "high"
+}

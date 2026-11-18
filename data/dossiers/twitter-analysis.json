@@ -1,0 +1,49 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "twitter-analysis",
+  "sources": {
+    "github": "https://github.com/korczis/twitter-analysis",
+    "gitlab": "https://gitlab.com/korczis/twitter-analysis",
+    "commit": "131ea39dcc0057ae6e97a94b612b6e6a61643018",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      ".gitignore",
+      "LICENSE"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "kata",
+  "summary": {
+    "en": "A placeholder repository titled Twitter Analysis; it holds only a README heading, a licence and a gitignore.",
+    "cs": "Zástupný repozitář s názvem Twitter Analysis; obsahuje jen nadpis v README, licenci a gitignore."
+  },
+  "problem": {
+    "en": "The intended analysis is not described in the repository, so the problem it was meant to address is unclear.",
+    "cs": "Zamýšlená analýza v repozitáři popsaná není, takže řešený problém je nejasný."
+  },
+  "solution": {
+    "en": "No code was committed. The repository records the intent of analysing Twitter data and nothing more.",
+    "cs": "Žádný kód nebyl commitnut. Repozitář zachycuje jen záměr analyzovat data z Twitteru."
+  },
+  "highlights": [
+    {
+      "en": "Scaffold only: README, LICENSE and .gitignore",
+      "cs": "Pouze kostra: README, LICENSE a .gitignore"
+    },
+    {
+      "en": "Scope and method unclear from the contents",
+      "cs": "Rozsah ani metoda z obsahu nevyplývají"
+    }
+  ],
+  "stack": [],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Idea[analysis idea] --> Repo[empty repo]\n  Repo --> Readme[README title]\n  Repo --> Lic[LICENSE]",
+    "caption": {
+      "en": "Only the scaffold exists.",
+      "cs": "Existuje jen kostra."
+    }
+  },
+  "related": [],
+  "confidence": "low"
+}

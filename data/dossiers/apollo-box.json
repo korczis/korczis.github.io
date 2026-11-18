@@ -1,0 +1,68 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "apollo-box",
+  "sources": {
+    "github": "https://github.com/korczis/apollo-box",
+    "gitlab": "https://gitlab.com/korczis/apollo-box",
+    "commit": "4640b228386441ce89f4827c18e5aadcea7bfed7",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "Vagrantfile",
+      "scripts/bootstrap.sh",
+      "tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "config",
+  "summary": {
+    "en": "A Vagrant box definition that provisions an Ubuntu VM with a command-line data science toolkit in one shell script.",
+    "cs": "Definice Vagrant boxu, která jedním shellovým skriptem připraví Ubuntu VM s nástroji pro datovou vědu z příkazové řádky."
+  },
+  "problem": {
+    "en": "Setting up the same mix of Python, R, Go and Node data tools on each machine by hand is slow and drifts.",
+    "cs": "Ruční instalace stejné směsi datových nástrojů v Pythonu, R, Go a Node na každý stroj je pomalá a konfigurace se rozjíždějí."
+  },
+  "solution": {
+    "en": "The Vagrantfile defines one apollo-master VM on Ubuntu Precise and provisions it with scripts/bootstrap.sh. The script installs the scientific Python stack, IPython, GNU parallel, jq, csvkit, json2csv, xml2json, R with sqldf, ggplot2 and plyr, and an open-source command-line data science toolbox, logging each step.",
+    "cs": "Vagrantfile definuje jednu VM apollo-master na Ubuntu Precise a provisionuje ji skriptem scripts/bootstrap.sh. Ten nainstaluje vědecký stack Pythonu, IPython, GNU parallel, jq, csvkit, json2csv, xml2json, R s balíčky sqldf, ggplot2 a plyr a open-source sadu nástrojů pro datovou vědu v příkazové řádce, přičemž každý krok loguje."
+  },
+  "highlights": [
+    {
+      "en": "One VM bundling Python, R, Go and Node based data tooling; versions are not pinned (latest GNU parallel, unversioned packages).",
+      "cs": "Jedna VM s datovými nástroji pro Python, R, Go a Node; verze nejsou připnuté (nejnovější GNU parallel, balíčky bez verzí)."
+    },
+    {
+      "en": "Provisioning steps are logged to bootstrap.log.",
+      "cs": "Kroky provisioningu se logují do bootstrap.log."
+    }
+  ],
+  "stack": [
+    "Vagrant",
+    "Ubuntu",
+    "Bash",
+    "Python",
+    "NumPy",
+    "pandas",
+    "R",
+    "Go",
+    "Node.js",
+    "jq",
+    "csvkit"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Vagrant[Vagrantfile] --> VM[apollo-master VM]\n  VM --> Boot[bootstrap.sh]\n  Boot --> Py[Python stack]\n  Boot --> R[R packages]\n  Boot --> Cli[jq csvkit parallel]\n  Boot --> Conv[json2csv xml2json]\n  Boot --> Log[bootstrap.log]",
+    "caption": {
+      "en": "One VM, one provisioning script, several toolchains.",
+      "cs": "Jedna VM, jeden provisioning skript, několik toolchainů."
+    }
+  },
+  "related": [
+    "docker-datasciencetoolbox",
+    "docker-dstk",
+    "datascience",
+    "json2csv",
+    "apollo-crawler"
+  ],
+  "confidence": "high"
+}
