@@ -6,7 +6,8 @@
 // The order is for a reader with a budget (an answer engine, a sourcing assistant): while
 // data/cv.toml [hire] available is true, the summary blockquote starts with the owner's name and
 // headline, then the workplace and regions and the /hire/ URL; '## Hire' is the first section,
-// and '## Skills' follows it, each skill measured in data/index.json (skills) with its evidence.
+// and '## Skills' follows it, each skill measured in data/index.json (skills) with its evidence;
+// after the experience come '## Services' and '## Case studies', one line per page of each section.
 // With available = false the summary is the site's description and the Hire section is gone.
 //
 // usage: node scripts/build-llms.mjs           write both files
@@ -102,6 +103,21 @@ if (cv.roles?.length) {
   for (const e of cv.education ?? []) lines.push(`- Education: ${e.degree}, ${e.institution}${e.start ? ` (${e.start} to ${e.end ?? 'present'})` : ''}`);
   if (cv.languages?.length) lines.push(`- Languages: ${cv.languages.map((l) => `${l.name} (${l.level})`).join(', ')}`);
   lines.push('');
+}
+
+// The services and the anonymised case studies (scripts/build-services.mjs, build-cases.mjs), one
+// line each from their own front matter, in their section's order: what a sourcing assistant asks
+// first after the role ("what does he deliver, and where has he done it?").
+const sectionPages = (dir) => contentPages()
+  .filter((p) => p.fm && isDefault(p.lang) && p.rel.startsWith(`${dir}/`) && !p.rel.endsWith('_index.md'))
+  .sort((a, b) => (a.fm.weight ?? 0) - (b.fm.weight ?? 0) || a.rel.localeCompare(b.rel))
+  .map((p) => `- [${p.fm.title}](${base}/${p.rel.replace(/\.md$/, '')}/): ${oneLine(p.fm.description)}`);
+for (const [dir, heading, note] of [
+  ['services', '## Services', 'What I offer: each service with its problem, method, deliverables, skills and evidence.'],
+  ['cases', '## Case studies', 'Client work under confidentiality agreements, anonymised: sector and roles declared, period and scale measured and rounded, capabilities inferred (labelled so).'],
+]) {
+  const list = sectionPages(dir);
+  if (list.length) lines.push(heading, '', note, '', ...list, '');
 }
 
 lines.push(
