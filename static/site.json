@@ -7,8 +7,119 @@
   "name": "Tomas Korcak",
   "github": "https://github.com/korczis",
   "gitlab": "https://gitlab.com/korczis",
-  "location": "Brno, Czech Republic"
+  "location": "Brno, Czech Republic",
+  "linkedin": "https://www.linkedin.com/in/korcaktomas/",
+  "email": "korczis@gmail.com"
  },
+ "hire": {
+  "url": "https://korczis.github.io/hire/",
+  "headline": "Staff engineer for AI agent infrastructure, Elixir and Rust",
+  "roles": [
+   "Staff or principal engineer: AI agent infrastructure, developer tooling, MCP",
+   "Forward deployed or applied AI engineer: agentic workflows in production",
+   "Backend and distributed systems: Elixir, OTP, Phoenix, Rust, PostgreSQL",
+   "Fractional CTO and technical due diligence: data, OSINT, M&A"
+  ],
+  "engagement": [
+   "full-time",
+   "contract",
+   "fractional"
+  ],
+  "workplace": "remote",
+  "regions": "worldwide, working in the Central European time zone",
+  "since": "2026-11",
+  "rate": {
+   "from": 110,
+   "currency": "USD",
+   "unit": "hour"
+  }
+ },
+ "experience": [
+  {
+   "title": "Freelance Technical Mentor & Engineering Advisor",
+   "organisation": "Independent",
+   "url": null,
+   "start": "2025-01",
+   "end": null
+  },
+  {
+   "title": "CTO / Lead Developer",
+   "organisation": "International Leadership Development Firm",
+   "url": null,
+   "start": "2024-12",
+   "end": null
+  },
+  {
+   "title": "Independent Consultant & Independent Contractor",
+   "organisation": "Self Employed",
+   "url": null,
+   "start": "2023-01",
+   "end": null
+  },
+  {
+   "title": "Staff Software Engineer",
+   "organisation": "Kiwi.com",
+   "url": "https://www.kiwi.com/",
+   "start": "2019-06",
+   "end": "2022-05"
+  },
+  {
+   "title": "CTO / Core Developer",
+   "organisation": "Block Collider",
+   "url": null,
+   "start": "2018-02",
+   "end": "2019-01"
+  },
+  {
+   "title": "Principal Software Engineer",
+   "organisation": "GoodData",
+   "url": "https://www.gooddata.com/",
+   "start": "2017-08",
+   "end": "2018-02"
+  },
+  {
+   "title": "Senior Software Engineer / Combat Data Engineer",
+   "organisation": "GoodData",
+   "url": "https://www.gooddata.com/",
+   "start": "2014-03",
+   "end": "2017-08"
+  },
+  {
+   "title": "Software Development Lead / Software Architect",
+   "organisation": "Moravia IT",
+   "url": null,
+   "start": "2012-11",
+   "end": "2014-02"
+  },
+  {
+   "title": "Senior Developer",
+   "organisation": "Moravia IT",
+   "url": null,
+   "start": "2012-08",
+   "end": "2014-02"
+  },
+  {
+   "title": "Programmer",
+   "organisation": "Kuju Entertainment - Vatra Games",
+   "url": null,
+   "start": "2008-05",
+   "end": "2012-04"
+  },
+  {
+   "title": "Gameplay Programmer",
+   "organisation": "2K Games",
+   "url": null,
+   "start": "2007-01",
+   "end": "2008-05"
+  },
+  {
+   "title": "Programmer",
+   "organisation": "Honeywell Aerospace",
+   "url": null,
+   "start": "2005-07",
+   "end": "2007-01"
+  }
+ ],
  "front_matter_schema": "https://korczis.github.io/schemas/front-matter.schema.json",
  "data_as_of": {
   "snapshot": "2026-11-17T21:08:25Z",

@@ -18,6 +18,7 @@ const config = siteConfig();
 const catalogue = readToml('data/projects.toml');
 const index = readJson('data/index.json');
 const me = identity();
+const cv = readToml('data/cv.toml');
 const base = me.base;
 
 // The public URL of a content file: a translation (x.cs.md) lives under /cs/.
@@ -50,7 +51,19 @@ const site = {
   url: `${base}/`,
   name: config.title,
   description: config.description,
-  author: { name: me.author, github: me.githubUrl, gitlab: me.gitlabUrl, location: config.extra.location },
+  author: {
+    name: me.author, github: me.githubUrl, gitlab: me.gitlabUrl, location: config.extra.location,
+    // The owner's facts (ADR 0004, 0007): profile links, availability for hire and the work history,
+    // so a consumer of this file (the profile README of korczis/korczis) states them without a copy.
+    ...Object.fromEntries(Object.entries(cv.links ?? {})),
+    email: readJson('data/github.json').profile?.email ?? null,
+  },
+  hire: cv.hire?.available ? {
+    url: `${base}/hire/`, headline: cv.hire.headline, roles: cv.hire.roles, engagement: cv.hire.engagement,
+    workplace: cv.hire.workplace, regions: cv.hire.regions, since: cv.hire.since ?? null,
+    rate: cv.hire.rate_from ? { from: cv.hire.rate_from, currency: cv.hire.rate_currency, unit: cv.hire.rate_unit } : null,
+  } : null,
+  experience: (cv.roles ?? []).map((r) => ({ title: r.title, organisation: r.organisation, url: r.url ?? null, start: r.start, end: r.end ?? null })),
   front_matter_schema: `${base}/schemas/front-matter.schema.json`,
   data_as_of: { snapshot: readJson('data/github.json').generated_at, index: index.generated_at },
   pages,
