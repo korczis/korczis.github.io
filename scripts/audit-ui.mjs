@@ -888,7 +888,8 @@ async function checkFirstViewport(browser) {
             h1: inside(document.querySelector('h1')),
             hire: links.some(inside),
             mail: [...document.querySelectorAll('main a[href^="mailto:"]')].some(inside),
-            rate: !rateText || Boolean(rate && inside(rate) && rate.textContent.includes(rateText)),
+            // A non-breaking space (static/js/typography.js binds a currency to its amount) is a space.
+            rate: !rateText || Boolean(rate && inside(rate) && rate.textContent.replace(/\s+/g, ' ').includes(rateText)),
             button: box ? [Math.round(box.width), Math.round(box.height), inside(button)] : null,
             order: Boolean(title && firstViz && (title.compareDocumentPosition(firstViz) & Node.DOCUMENT_POSITION_FOLLOWING)),
             noViz: !firstViz,

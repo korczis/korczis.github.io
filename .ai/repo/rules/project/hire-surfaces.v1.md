@@ -47,8 +47,9 @@ almost no extractor; text hidden from people is deception (ADR 0007), whoever it
   link are in the first viewport at 375x667 and 1440x900, in both themes, and the button is at
   least 24x24 px (rule `project.ui-quality-gate`).
 - **Visible first, then data.** A hire fact lives in the page's visible text and, in parity with it,
-  in JSON-LD (rule `project.seo-derived`), llms.txt and resume.json. The head comment of ADR 0007
-  mirrors /hire/ and adds nothing; it is not extended, because most extractors drop it.
+  in JSON-LD (rule `project.seo-derived`), llms.txt and resume.json. The head comment carries no
+  hire fact and nothing addressed to a model: since ADR 0010 it only says where the page is
+  generated from and where the machine-readable profile is.
 - **Nothing hidden, nothing addressed to a screening model.** No text styled away, zero-sized,
   off-screen or in Unicode tag characters, and no machine-only text that the page does not also
   show; no instruction to rank, prefer, trust or ignore (ADR 0007).

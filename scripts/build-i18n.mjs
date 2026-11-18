@@ -11,6 +11,7 @@
 //        node scripts/build-i18n.mjs --check   exit 1 if it is stale or a key misses a language
 import { readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
+import { runInNewContext } from 'node:vm';
 import { fileURLToPath } from 'node:url';
 import { parse } from 'smol-toml';
 import { loadStrings } from './lib/strings.mjs';
@@ -27,6 +28,11 @@ const config = readFileSync(CONFIG, 'utf8');
 const parsed = parse(config.split(BEGIN)[0]);
 const languages = [parsed.default_language, ...Object.keys(parsed.languages ?? {})];
 const q = (s) => JSON.stringify(s);
+// Typography per language (static/js/typography.js, the same rules the browser applies to data
+// and Markdown text): a non-breaking space after Czech one-letter prepositions, en dashes, ...
+const typo = {};
+runInNewContext(readFileSync(join(ROOT, 'static/js/typography.js'), 'utf8'), typo);
+const typeset = (code, s) => typo.KorczisTypography.apply(code, s ?? '');
 
 const missing = [];
 for (const [key, values] of Object.entries(strings)) {
@@ -35,7 +41,7 @@ for (const [key, values] of Object.entries(strings)) {
 const block = [BEGIN];
 for (const code of languages) {
   block.push('', code === parsed.default_language ? '[translations]' : `[languages.${code}.translations]`);
-  for (const [key, values] of Object.entries(strings)) block.push(`${key} = ${q(values[code] ?? '')}`);
+  for (const [key, values] of Object.entries(strings)) block.push(`${key} = ${q(typeset(code, values[code]))}`);
 }
 const client = Object.entries(strings).filter(([key, values]) => /^js_/.test(key) || values.client === true).map(([key]) => key);
 block.push('', '[extra.client]', `keys = [${client.map(q).join(', ')}]`);

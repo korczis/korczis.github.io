@@ -265,8 +265,8 @@ en = "Software that proves its&nbsp;work."
 cs = "Software, který svou práci dokládá."
 
 [hero_lead]
-en = "I build tools that make AI agents prove what they did, honest scientific instruments in the browser, and knowledge bases you can check. Engineer {location}, on GitHub since {year}."
-cs = "Stavím nástroje, které nutí AI agenty doložit, co udělali, poctivé vědecké přístroje v prohlížeči a znalostní báze, které si můžete ověřit. Inženýr {location}, na GitHubu od roku {year}."
+en = "I help investors and deal teams vet a company and its data before a transaction. I build AI agents and the infrastructure under them, so that you can trace afterwards what they did and what they relied on. Engineer {location}, on GitHub since {year}."
+cs = "Pomáhám investorům a transakčním týmům prověřit firmu a její data před transakcí. Stavím AI agenty a infrastrukturu pod nimi tak, aby šlo zpětně zjistit, co udělali a z čeho vycházeli. Inženýr {location}, na GitHubu od roku {year}."
 
 [explore]
 en = "Explore"

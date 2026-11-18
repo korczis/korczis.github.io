@@ -4,7 +4,7 @@ version: 1
 kind: rule
 title: The landing's chapters, their ids and order are a contract; every element links, every figure is measured, nothing is hidden
 description: The home page answers a hiring team in ten seconds and an engineer in ten minutes in fixed chapters with stable ids; every element in its main region leads to its page, every figure comes from data/ or Zola, owner facts only from data/cv.toml, ?role= only reorders and labels, at most four mail links, nothing hidden, and no inflated label.
-statement: Keep the landing's sections hero-title, terms, track, path, roles, case-majordomus, experience, skills, body-of-work, instruments, proven, now, archive, faq and contact in that order and identical in every language; give every element in <main> a link that resolves; take every figure from data/ or Zola and type no digit in a home_*, case_*, body_*, skills_*, proven_* or instruments_* text; take owner facts only from data/cv.toml; let ?role= reorder and label, never add or remove content; keep at most four mailto links in <main>; hide nothing (ADR 0007); never label public evidence "years of experience" or "adopted"; never list a library the owner does not claim as a skill; and keep scripts/check-landing.mjs and node scripts/gates.mjs json --check passing.
+statement: Keep the landing's sections hero-title, case-majordomus, experience, terms, track, path, roles, skills, body-of-work, instruments, proven, now, archive, faq and contact in that order and identical in every language; give every element in <main> a link that resolves; take every figure from data/ or Zola and type no digit in a home_*, case_*, body_*, skills_*, proven_* or instruments_* text; take owner facts only from data/cv.toml; let ?role= reorder and label, never add or remove content; keep at most four mailto links in <main>; hide nothing (ADR 0007); never label public evidence "years of experience" or "adopted"; never list a library the owner does not claim as a skill; and keep scripts/check-landing.mjs and node scripts/gates.mjs json --check passing.
 status: active
 class: blocking
 depends_on: [project.hire-surfaces@1, project.data-measured@1, project.everything-interlinked@1, project.i18n-everywhere@1, project.ui-uses-flowbite-pro@1, project.viz-ergonomics@1, project.nda-never-named@1, project.ui-quality-gate@1]
@@ -28,10 +28,12 @@ and what was tried and dropped, is in `.ai/repo/knowledge/curated/landing-conver
 # Required behaviour
 
 - **The chapters.** `templates/index.html` renders, in this order and with these ids, in every
-  language: `hero-title` (the h1), `terms`, `track`, `path`, `roles`, `case-majordomus` (its h2 keeps
-  `majordomus-title`), `experience`, `skills`, `body-of-work`, `instruments`, `proven`, `now`,
-  `archive`, `faq`, `contact` (its heading keeps `cta-title`), then the article. A new chapter or a
-  new order changes this rule and its gate together.
+  language: `hero-title` (the h1, with the two primary paths of ADR 0010 under it: due diligence
+  and M&A, then AI engineering, each with its mail CTA and a link to its case), `case-majordomus`
+  (its h2 keeps `majordomus-title`), `experience`, `terms`, `track`, `path`, `roles`, `skills`,
+  `body-of-work`, `instruments`, `proven`, `now`, `archive`, `faq`, `contact` (its heading keeps
+  `cta-title`), then the article. The cases come before the terms and the catalogue (ADR 0010). A
+  new chapter or a new order changes this rule and its gate together.
 - **Everything links.** Every `<a>` in `<main>` has an href that resolves to a built file or is an
   external URL; every in-page and cross-page fragment the page uses (`#terms-*`, `#role-*`,
   `/hire/#role-*`, `/about/#cv-*`, `#faq-*`) names an element of its target (rule
@@ -48,8 +50,9 @@ and what was tried and dropped, is in `.ai/repo/knowledge/curated/landing-conver
   role keeps its old slug as an alias) adds one visible badge, reorders the role cards with CSS
   order and names the role in the mail subjects; the server HTML is the default page, the canonical
   stays `/`, and the text minus the badge is the default text.
-- **A budget for asking.** At most four `mailto:` links in `<main>`; the copy-email field is the
-  only one on the page.
+- **A budget for asking.** At most four `mailto:` links in `<main>`: the two primary paths in the
+  hero and the two cards of the closing section; the terms panel leads to `#contact`. The
+  copy-email field is the only one on the page.
 - **Nothing hidden (ADR 0007).** No text in an `aria-hidden` element, styled `display:none`,
   `visibility:hidden` or zero-sized, and no Unicode tag characters; a disclosure the visitor opens
   and a responsive variant are not hidden text.

@@ -79,6 +79,7 @@
   {#- Cache-busted by the bundle's own hash, written out so the address names the file it loads. #}
   <script src="{{ config.base_url }}/js/vendor/flowbite.min.js?h={{ get_hash(path='js/vendor/flowbite.min.js', sha_type=256, base64=false) | truncate(length=20, end='') }}" defer></script>
   <script src="{{ get_url(path='js/site.js', cachebust=true) }}" defer></script>
+  {%- if lang != config.default_language %}<script src="{{ get_url(path='js/typography.js', cachebust=true) }}" defer></script>{% endif %}
   {%- block scripts %}{% endblock scripts %}
   {%- set vlist = [] %}{% if page is defined and page.extra.viz is defined %}{% set vlist = page.extra.viz %}{% elif section is defined and section.extra.viz is defined %}{% set vlist = section.extra.viz %}{% elif taxonomy is defined %}{% set vtx = load_data(path="data/site.toml") %}{% if term is defined %}{% set vlist = vtx.taxonomy.single_viz %}{% else %}{% set vlist = vtx.taxonomy.list_viz %}{% endif %}{% endif %}
   {%- if vlist | length > 0 %}{% set_global seen = "|" %}{% for v in vlist %}{% if not ("|" ~ v.kind ~ "|") in seen %}{% set_global seen = seen ~ v.kind ~ "|" %}
