@@ -147,7 +147,7 @@
     </tbody>
   </table>
   <div class="mt-3 flex flex-wrap items-center justify-between gap-3">
-    <p class="text-xs {{ sk_muted }}">{{ trans(key="public_evidence_caption", lang=lang) | replace(from="{date}", to=sk_gh.generated_at | date(format="%Y-%m-%d")) }}</p>
+    <p class="text-xs {{ sk_muted }}">{{ trans(key="public_evidence_caption", lang=lang) | replace(from="{date}", to=sk_gh.generated_at | date(format=trans(key="fmt_date_long", lang=lang), locale=trans(key="date_locale", lang=lang))) }}</p>
     {%- if sk_footer is defined and sk_footer %}
     {{ <button label={trans(key="skills_view_all", lang=lang)} href={sk_base ~ "hire/#skills-title"} variant="ghost" icon_after="arrow-right" /> }}
     {%- endif %}

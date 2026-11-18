@@ -98,7 +98,7 @@
           <td class="whitespace-nowrap px-4 py-3">{% if r.language %}{{ r.language }}{% else %}—{% endif %}</td>
           <td class="tabular whitespace-nowrap px-4 py-3 text-right">{{ r.stars }}</td>
           <td class="tabular whitespace-nowrap px-4 py-3"><time datetime="{{ r.created_at }}">{{ r.created_at | date(format="%Y") }}</time></td>
-          <td class="tabular whitespace-nowrap px-4 py-3"><time datetime="{{ r.pushed_at }}">{{ r.pushed_at | date(format="%b %Y") }}</time></td>
+          <td class="tabular whitespace-nowrap px-4 py-3"><time datetime="{{ r.pushed_at }}">{{ r.pushed_at | date(format=trans(key="fmt_month_short", lang=lang), locale=trans(key="date_locale", lang=lang)) }}</time></td>
           <td class="whitespace-nowrap px-4 py-3">
             <span class="flex items-center gap-3">
               {%- if r.hosts.github is defined %}<a href="{{ r.hosts.github }}" class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">{{ <icon name="github" class="h-4 w-4" /> }}<span class="sr-only">{{ r.name }} {{ trans(key="on_github_2", lang=lang) | safe }}</span></a>{% endif %}
@@ -134,7 +134,7 @@
     <p class="text-sm text-gray-600 dark:text-gray-400">{{ trans(key="no_repository_matches", lang=lang) | safe }} <button type="button" @click="reset()" class="font-medium text-primary-700 hover:underline dark:text-primary-400">{{ trans(key="clear_them", lang=lang) | safe }}</button></p>
   </div>
   <p class="mt-4 text-xs text-gray-600 dark:text-gray-400">
-    {{ trans(key="derived_on", lang=lang) | safe }} {{ ix.generated_at | date(format="%-d %B %Y") }} {{ trans(key="from_the_github_and_gitlab_apis", lang=lang) | safe }}<code class="font-mono">gh</code>, <code class="font-mono">glab</code>{{ trans(key="rule", lang=lang) | safe }} {{ ix.rule }}; {{ ix.counts.empty }} {{ trans(key="repositories_without_history_are_left_out", lang=lang) | safe }}
+    {{ trans(key="derived_on", lang=lang) | safe }} {{ ix.generated_at | date(format=trans(key="fmt_date_long", lang=lang), locale=trans(key="date_locale", lang=lang)) }} {{ trans(key="from_the_github_and_gitlab_apis", lang=lang) | safe }}<code class="font-mono">gh</code>, <code class="font-mono">glab</code>{{ trans(key="rule", lang=lang) | safe }} {{ ix.rule }}; {{ ix.counts.empty }} {{ trans(key="repositories_without_history_are_left_out", lang=lang) | safe }}
     <a class="font-medium text-primary-700 hover:underline dark:text-primary-400" href="{{ config.extra.repo_url }}/blob/master/data/projects.toml">data/projects.toml</a>.
   </p>
 </section>

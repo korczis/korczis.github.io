@@ -222,7 +222,7 @@
     <p class="tabular mb-4 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-gray-600 dark:text-gray-400">
       {%- if f.language %}<span class="inline-flex items-center gap-1">{{ <icon name="code" class="h-4 w-4" /> }}{{ f.language }}</span>{% endif %}
       <span class="inline-flex items-center gap-1">{{ <icon name="star" class="h-4 w-4" /> }}<span><span class="sr-only">{{ trans(key="stars", lang=lang) | safe }} </span>{{ f.stars }}</span></span>
-      <span class="inline-flex items-center gap-1">{{ <icon name="clock" class="h-4 w-4" /> }}<span>{{ trans(key="updated", lang=lang) | safe }} <time datetime="{{ f.pushed_at }}">{{ f.pushed_at | date(format="%b %Y") }}</time></span></span>
+      <span class="inline-flex items-center gap-1">{{ <icon name="clock" class="h-4 w-4" /> }}<span>{{ trans(key="updated", lang=lang) | safe }} <time datetime="{{ f.pushed_at }}">{{ f.pushed_at | date(format=trans(key="fmt_month_short", lang=lang), locale=trans(key="date_locale", lang=lang)) }}</time></span></span>
     </p>
     <div class="flex flex-wrap items-center gap-3">
       {%- if p.url and f.live %}
@@ -293,7 +293,7 @@
   </td>
   <td class="whitespace-nowrap px-4 py-3">{{ f.language | default(value="—") }}</td>
   <td class="tabular whitespace-nowrap px-4 py-3 text-right">{{ f.stars }}</td>
-  <td class="whitespace-nowrap px-4 py-3"><time datetime="{{ f.pushed_at }}">{{ f.pushed_at | date(format="%b %Y") }}</time></td>
+  <td class="whitespace-nowrap px-4 py-3"><time datetime="{{ f.pushed_at }}">{{ f.pushed_at | date(format=trans(key="fmt_month_short", lang=lang), locale=trans(key="date_locale", lang=lang)) }}</time></td>
   <td class="whitespace-nowrap px-4 py-3">{% if f.supervised %}{{ <badge label="Majordomus" tone="primary" /> }}{% else %}—{% endif %}</td>
   <td class="whitespace-nowrap px-4 py-3 text-right">
     {%- if p.url and f.live %}<a href="{{ p.url }}" class="font-medium text-primary-700 hover:underline dark:text-primary-400">{{ trans(key="open", lang=lang) | safe }}<span class="sr-only"> {{ p.name }}</span></a> · {% endif %}<a href="{{ source }}" class="font-medium text-primary-700 hover:underline dark:text-primary-400">{{ trans(key="source", lang=lang) | safe }}<span class="sr-only"> {{ trans(key="of", lang=lang) | safe }} {{ p.name }}</span></a>

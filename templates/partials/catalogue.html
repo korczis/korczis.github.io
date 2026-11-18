@@ -105,7 +105,7 @@
     </div>
 
     <p class="mt-6 text-xs text-gray-600 dark:text-gray-400">
-      {{ trans(key="stars_languages_update_dates_live_status", lang=lang) | safe }} {{ gh.generated_at | date(format="%-d %B %Y") }}{{ trans(key="active_means_pushed_within_45_days", lang=lang) | safe }}
+      {{ trans(key="stars_languages_update_dates_live_status", lang=lang) | safe }} {{ gh.generated_at | date(format=trans(key="fmt_date_long", lang=lang), locale=trans(key="date_locale", lang=lang)) }}{{ trans(key="active_means_pushed_within_45_days", lang=lang) | safe }}
     </p>
   </div>
 </section>
