@@ -180,7 +180,7 @@
             </div>
             <p class="{{ muted }} mt-0.5">{% for e in l.evidence %}
               {%- set_global eu = e.url %}{% for p in wpages %}{% if p.extra.repo == e.name %}{% set_global eu = p.permalink %}{% endif %}{% endfor -%}
-              <a class="hover:underline" href="{{ eu }}">{{ e.name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>
+              <a class="inline-block min-h-6 min-w-6 py-0.5 hover:underline" href="{{ eu }}">{{ e.name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>
           </li>
           {%- endif %}
           {%- endfor %}
@@ -197,7 +197,7 @@
             <a class="{{ link }}" href="{{ th }}">{{ t.name }}</a>
             <p class="{{ muted }} mt-0.5">{{ trans(key="used_in", lang=lang) }}: {% for e in t.evidence %}
               {%- set_global eu = base ~ "projects/?project=" ~ e.repo %}{% for p in wpages %}{% if p.extra.repo == e.repo %}{% set_global eu = p.permalink %}{% endif %}{% endfor -%}
-              <a class="hover:underline" href="{{ eu }}">{{ e.name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>
+              <a class="inline-block min-h-6 min-w-6 py-0.5 hover:underline" href="{{ eu }}">{{ e.name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>
           </li>
           {%- endif %}
           {%- endfor %}
