@@ -44,8 +44,8 @@
     page states the fact (a #terms-<key> row, the roles, the CV or the contact). Under md it is the
     Flowbite Pro faq-sections/accordion (data-accordion="collapse", the first item open, the
     trigger a button with aria-expanded and aria-controls, Enter and Space through the native
-    button); from md up every answer is shown as the grid-layout and static/js/site.js keeps the
-    trigger inert and aria-expanded true. The answers carry "hidden md:block", a responsive
+    button); from md up every answer is shown as the grid-layout and
+    static/js/components/faq-accordion.js keeps the trigger inert and aria-expanded true. The answers carry "hidden md:block", a responsive
     variant: nothing is hidden from a reader at any width (ADR 0007). -#}
 {%- set flp = "" %}{% if lang is defined and lang != config.default_language %}{% set flp = "/" ~ lang %}{% endif -%}
 {%- if faq_limit is defined %}{% set flimit = faq_limit %}{% else %}{% set flimit = 99 %}{% endif -%}
