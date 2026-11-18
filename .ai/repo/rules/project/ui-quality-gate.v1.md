@@ -46,6 +46,11 @@ attention to UI, UX and consistency.
 
 Any finding exits 1 and blocks the merge and the deployment (`pages.yml` needs `ci`).
 
+A 502, 503 or 504 for the audited page itself is the host failing, not the site (GitHub Pages
+answered one during the production verify of e7d62bb on 2026-11-18): that load is retried twice
+with a growing pause, each retry printed, and only the last attempt's findings count. Every other
+status, and a host that keeps failing, is a finding as before.
+
 # Verification
 
 ```sh
