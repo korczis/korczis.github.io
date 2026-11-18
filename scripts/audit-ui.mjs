@@ -174,7 +174,19 @@ async function measure(browser, name, rel, width, scheme, full) {
     } catch {}
   });
   const expectStatus = rel === '404.html' ? [200, 404] : [200];
-  const response = await page.goto(BASE + rel, { waitUntil: 'networkidle', timeout: 90000 });
+  // A 502, 503 or 504 for the page itself is the host failing, not the site: GitHub Pages answers one
+  // now and then during the production verify. Such a load is retried twice with a pause, each retry
+  // printed, and only the last attempt's findings count. Any other status fails at once.
+  let response;
+  for (let attempt = 0; ; attempt += 1) {
+    response = await page.goto(BASE + rel, { waitUntil: 'networkidle', timeout: 90000 });
+    const status = response ? response.status() : 0;
+    if (![502, 503, 504].includes(status) || attempt >= 2) break;
+    console.log(`retry /${rel} (${name}, ${width}/${scheme}): HTTP ${status} from the host, attempt ${attempt + 2} of 3`);
+    errors.length = 0;
+    bytes = 0;
+    await page.waitForTimeout(2000 * (attempt + 1));
+  }
   if (!response || !expectStatus.includes(response.status())) errors.push(`HTTP ${response && response.status()}`);
   await page.waitForTimeout(500);
   const before = await page.evaluate(() => ({
@@ -459,7 +471,11 @@ async function checkCollapse(browser) {
       expanded: t?.getAttribute('aria-expanded'), label: t?.getAttribute('aria-label'),
       labelExpand: t?.dataset.labelExpand, labelCollapse: t?.dataset.labelCollapse,
       labelWidth: Math.round(label?.getBoundingClientRect().width ?? -1),
-      unnamed: links.filter((a) => !(a.getAttribute('aria-label') || a.innerText.trim())).length,
+      // A link the browser does not show (inside a closed <details>, which Chrome hides with
+      // content-visibility, or display: none) is outside the accessibility tree and cannot be
+      // unnamed; checkVisibility() says so. A visually hidden label (1 px, clipped) is still
+      // visible to it, so a link whose only name is that label is still checked.
+      unnamed: links.filter((a) => a.checkVisibility() && !(a.getAttribute('aria-label') || a.innerText.trim())).length,
       overflow: document.scrollingElement.scrollWidth > window.innerWidth,
     };
   });
