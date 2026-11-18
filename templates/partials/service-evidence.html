@@ -41,8 +41,8 @@
         {%- for r in se.repos %}
         <tr class="border-b border-gray-200 align-top last:border-0 hover:bg-gray-50 dark:border-gray-700 dark:hover:bg-gray-700">
           <th scope="row" class="px-4 py-3 font-medium text-gray-900 dark:text-white">
-            {%- if r.slug %}<a class="{{ link }}" href="{{ get_url(path='@/work/' ~ r.slug ~ '.md', lang=lang) }}">{{ r.title }}</a>{% else %}<a class="{{ link }}" href="{{ r.url }}" rel="noopener">{{ r.title }}</a>{% endif %}
-            <div class="mt-1 flex flex-wrap gap-2 text-xs font-normal">
+            {%- if r.slug %}<a class="{{ link }} inline-flex min-h-6 min-w-6 items-center" href="{{ get_url(path='@/work/' ~ r.slug ~ '.md', lang=lang) }}">{{ r.title }}</a>{% else %}<a class="{{ link }} inline-flex min-h-6 min-w-6 items-center" href="{{ r.url }}" rel="noopener">{{ r.title }}</a>{% endif %}
+            <div class="mt-1 flex flex-wrap gap-x-3 text-xs font-normal [&>a]:inline-flex [&>a]:min-h-6 [&>a]:items-center">
               <a class="{{ link }}" href="{{ r.url }}" rel="noopener">{% if "gitlab.com" in r.url %}GitLab{% else %}GitHub{% endif %}</a>
               {%- if r.site %}<a class="{{ link }}" href="{{ r.site }}" rel="noopener">{{ trans(key="skill_site", lang=lang) }}</a>{% endif %}
               <a class="{{ link }}" href="{{ get_url(path='@/projects/' ~ r.category ~ '.md', lang=lang) }}">{{ cat.categories[r.category]["name" ~ sfx] }}</a>

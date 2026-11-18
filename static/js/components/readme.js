@@ -106,13 +106,16 @@ document.addEventListener('alpine:init', () => {
         a.setAttribute('aria-label', new URL(a.href).hostname + new URL(a.href).pathname);
       }
     }
-    for (const el of box.querySelectorAll('table, pre')) {
+    // A wide table scrolls in a focusable wrapper; a code block scrolls itself, so it takes the
+    // focus (axe scrollable-region-focusable: a keyboard must reach what scrolls).
+    for (const el of box.querySelectorAll('table')) {
       const wrap = document.createElement('div');
       wrap.className = 'overflow-x-auto';
       wrap.tabIndex = 0;
       el.replaceWith(wrap);
       wrap.append(el);
     }
+    for (const el of box.querySelectorAll('pre')) el.tabIndex = 0;
     return box;
   }
 
