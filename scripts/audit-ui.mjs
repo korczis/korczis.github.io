@@ -212,7 +212,13 @@ async function measure(browser, name, rel, width, scheme, full) {
   }
 
   const hrefs = full
-    ? await page.evaluate(() => [...document.querySelectorAll('a[href]')].map((a) => [a.getAttribute('href'), a.href, a.hreflang]))
+    // The fourth field: an in-page anchor whose target exists in the rendered page (content a
+    // script rendered, such as the live README of a work page, has ids the built file cannot hold).
+    ? await page.evaluate(() => [...document.querySelectorAll('a[href]')].map((a) => {
+      const u = new URL(a.href);
+      const here = u.origin === location.origin && u.pathname === location.pathname && u.hash.length > 1;
+      return [a.getAttribute('href'), a.href, a.hreflang, here && Boolean(document.getElementById(decodeURIComponent(u.hash.slice(1))))];
+    }))
     : [];
   let axe = [];
   if (full) {
@@ -366,7 +372,7 @@ function languageFinding(fromRel, raw, abs, hreflang) {
 }
 
 function collect(result) {
-  for (const [raw, abs, hreflang] of result.hrefs) {
+  for (const [raw, abs, hreflang, rendered] of result.hrefs) {
     const rel = internal(abs);
     if (rel === null) continue;
     if (rel !== rel.toLowerCase()) LINK_FAILURES.push(`/${result.path}: upper case in link ${raw}`);
@@ -377,7 +383,7 @@ function collect(result) {
     url.hash = '';
     url.search = '';
     if (!LINKS.has(url.href)) LINKS.set(url.href, `/${result.path}`);
-    if (fragment && !FRAGMENTS.has(`${url.href}#${fragment}`)) FRAGMENTS.set(`${url.href}#${fragment}`, { href: url.href, fragment, from: `/${result.path}` });
+    if (fragment && !rendered && !FRAGMENTS.has(`${url.href}#${fragment}`)) FRAGMENTS.set(`${url.href}#${fragment}`, { href: url.href, fragment, from: `/${result.path}` });
   }
 }
 

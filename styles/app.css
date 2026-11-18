@@ -5,6 +5,7 @@
 @source '../data/ui.toml';
 @source '../static/js/site.js';
 @source '../static/js/viz';
+@source '../static/js/components';
 @source '../node_modules/flowbite/lib/esm/components';
 
 @plugin 'flowbite/plugin';

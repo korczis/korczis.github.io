@@ -21,6 +21,9 @@ const BUNDLES = {
   'alpine.min.js': 'node_modules/alpinejs/dist/cdn.min.js',
   'p5.min.js': 'node_modules/p5/lib/p5.min.js',
   'd3.min.js': 'node_modules/d3/dist/d3.min.js',
+  // A work page renders its repository's README live: marked parses it, DOMPurify sanitises it.
+  'marked.min.js': 'node_modules/marked/lib/marked.umd.js',
+  'purify.min.js': 'node_modules/dompurify/dist/purify.min.js',
 };
 
 // Inter, the variable font the theme names (styles/app.css): the latin subset every page needs

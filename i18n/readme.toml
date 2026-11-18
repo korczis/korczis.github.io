@@ -1,0 +1,30 @@
+# The live README card of a work page (templates/work.html, static/js/components/readme.js): the
+# repository's README as its forge serves it now. Keys for scripts start with js_.
+
+[readme_title]
+en = "README"
+cs = "README"
+
+[readme_lead]
+en = "The repository's own README, read live from {forge} on every visit: always as current as the repository."
+cs = "Vlastní README repozitáře, načtené živě z {forge} při každé návštěvě: vždy tak aktuální jako repozitář."
+
+[readme_open]
+en = "Open the README"
+cs = "Otevřít README"
+
+[readme_loading]
+en = "Loading the README from the repository…"
+cs = "Načítám README z repozitáře…"
+
+[readme_missing]
+en = "The repository has no README yet."
+cs = "Repozitář zatím nemá README."
+
+[readme_failed]
+en = "The README could not be loaded right now (offline, blocked or rate-limited). The excerpt above is from the last measurement; the repository has the full text."
+cs = "README se teď nepodařilo načíst (offline, blokováno nebo omezeno limitem). Úryvek výše je z posledního měření; plný text je v repozitáři."
+
+[readme_noscript]
+en = "The live README needs JavaScript; the excerpt above is from the last measurement."
+cs = "Živé README potřebuje JavaScript; úryvek výše je z posledního měření."
