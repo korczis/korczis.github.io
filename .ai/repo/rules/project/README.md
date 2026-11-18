@@ -18,7 +18,11 @@ The rules this repository writes for itself. The format, the loading and the com
 are the section's, in `../README.md`, and are not repeated here.
 
 A file here is `<slug>.v<version>.md`, and the file name is a convenience: identity is the
-`id` and `version` in the front matter. A project rule may add a constraint the vendored
+`id` and `version` in the front matter. A rule whose normative `statement` changes takes the next
+version: the file is renamed with it, the rationale says what the version adds, and every
+`depends_on` naming the old version moves to the new one in the same change, because an exact
+reference to a version no file carries does not resolve. A rule that gains a requirement its
+statement already implies keeps its version. A project rule may add a constraint the vendored
 baseline does not carry. It may not reuse a vendored identity, weaken a vendored rule, or
 exist only to restate one — the effective set is additive and has no override mechanism,
 so a rule that contradicts its baseline is two rules in force at once.

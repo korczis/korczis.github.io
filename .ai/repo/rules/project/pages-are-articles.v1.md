@@ -7,7 +7,7 @@ description: Every content page carries a Markdown article body and names the gl
 statement: Give every page a body that explains, in plain words, what the page shows and how to read it, with links to glossary terms as @/ links (Zola checks them), and list those terms in extra.terms. Generated pages get their article and terms from their generator, derived from the data (scripts/lib/terms.mjs), never typed per page. Add a new concept to data/glossary.toml, never inline in a template. Keep scripts/check-glossary.mjs and build-glossary --check passing.
 status: active
 class: blocking
-depends_on: [project.front-matter-contract@1, project.i18n-everywhere@1, project.data-measured@1]
+depends_on: [project.front-matter-contract@2, project.i18n-everywhere@1, project.data-measured@1]
 tags: [content, education, front-matter, seo]
 
 x-majordomus:
