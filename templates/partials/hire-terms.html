@@ -54,9 +54,9 @@
     {%- set trparts = trans(key="hire_rate_value", lang=lang) | replace(from="{unit}", to=trans(key="hire_unit_" ~ th.rate_unit, lang=lang)) | split(pat="{rate}") %}
     <p class="tabular my-3 text-gray-600 dark:text-gray-300">{% if trparts[0] | trim %}<span class="text-base">{{ trparts[0] | trim }}</span> {% endif %}<span class="whitespace-nowrap text-5xl font-extrabold text-gray-900 dark:text-white">{{ th.rate_currency }} {{ th.rate_from }}</span>{% if trparts | length > 1 and trparts[1] | trim %} <span class="text-base">{{ trparts[1] | trim }}</span>{% endif %}</p>
     <p class="mb-5 text-sm text-gray-600 dark:text-gray-300">{{ trans(key="hire_rate_note", lang=lang) }}</p>
-    {%- if tgh.profile.email %}
-    {{ <button label={trans(key="home_terms_email", lang=lang)} href={"mailto:" ~ tgh.profile.email ~ "?subject=" ~ trans(key="hero_mail_subject", lang=lang) | replace(from="{host}", to=thost) | urlencode} icon="mail" sr={tgh.profile.email} attrs="data-mail-role" /> }}
-    {%- endif %}
+    {#- The landing's mail budget (rule project.landing-contract) goes to the two primary paths and
+        the closing section; the panel leads there. #}
+    {{ <button label={trans(key="home_terms_contact", lang=lang)} href="#contact" variant="secondary" icon="arrow-right" /> }}
   </div>
   {%- endif %}
 </div>

@@ -26,7 +26,7 @@
 {%- set year_now = now() | date(format="%Y") | int -%}
 {%- set year_joined = gh.profile.created_at | date(format="%Y") | int -%}
 {%- set years = year_now - year_joined -%}
-{%- set as_of = gh.generated_at | date(format="%-d %B %Y") -%}
+{%- set as_of = gh.generated_at | date(format=trans(key="fmt_date_long", lang=lang), locale=trans(key="date_locale", lang=lang)) -%}
 {%- set wsec = get_section(path="work/_index" ~ xl ~ ".md") -%}
 {%- set link = "font-medium text-primary-700 hover:underline dark:text-primary-400" -%}
 {%- set muted = "text-sm text-gray-600 dark:text-gray-400" -%}
@@ -69,7 +69,7 @@
         {#- The availability pill: Flowbite's announcement pill, leading to the language's /hire/. #}
         <a href="{{ base }}hire/" data-hire-pill class="order-1 mb-5 inline-flex max-w-full items-center self-start rounded-2xl bg-green-50 p-1 pr-4 text-sm text-green-900 ring-1 ring-green-200 hover:bg-green-100 focus:outline-none focus:ring-4 focus:ring-green-300 dark:bg-green-900/40 dark:text-green-200 dark:ring-green-800 dark:hover:bg-green-900 dark:focus:ring-green-800 sm:order-none sm:rounded-full">
           <span class="mr-3 inline-flex shrink-0 items-center gap-1.5 rounded-full bg-green-700 px-3 py-1 text-xs font-medium text-white"><span class="h-1.5 w-1.5 rounded-full bg-white" aria-hidden="true"></span>{{ trans(key="hire_status", lang=lang) }}</span>
-          <span class="text-sm font-medium" data-rate>{{ trans(key="hero_hire", lang=lang) }}{% if rate %} · {{ rate }}{% endif %}</span>
+          <span class="text-sm font-medium" data-rate>{{ trans(key="hero_hire", lang=lang) }}{% if rate %} · {{ trans(key="home_rate_contract", lang=lang) | replace(from="{rate}", to=rate) }}{% endif %}</span>
           {{ <icon name="arrow-right" class="ml-2 h-4 w-4 shrink-0" /> }}
         </a>
         <p class="order-1 mb-3 font-mono text-sm font-medium uppercase tracking-widest text-primary-700 dark:text-primary-400 sm:order-none">{{ gh.profile.login }} · {{ host }}</p>
@@ -86,7 +86,7 @@
             </span>
           </p>
         </template>
-        <p class="order-5 mb-3 text-lg font-medium text-gray-800 dark:text-gray-100 sm:order-none sm:text-xl">{{ trans(key="hero_title", lang=lang) | safe }}</p>
+        <p class="order-4 mb-3 text-lg font-semibold text-gray-800 dark:text-gray-100 sm:order-none sm:text-xl">{{ trans(key="hero_title", lang=lang) | safe }}</p>
         {%- else %}
         <a href="{{ gh.majordomus.notes_url }}"
           x-data="majordomusLive('{{ config.extra.majordomus_build }}', {{ gh.majordomus | json_encode }})"
@@ -102,18 +102,32 @@
         </h1>
         <p class="mb-4 text-lg text-gray-700 dark:text-gray-200 sm:text-xl">{{ trans(key="hero_pitch", lang=lang) }}</p>
         {%- endif %}
-        <p class="order-6 mb-6 text-base text-gray-600 dark:text-gray-300 sm:order-none">
+        <p class="order-6 mb-5 text-base text-gray-600 dark:text-gray-300 sm:order-none">
           {{ trans(key="hero_lead", lang=lang) | replace(from="{location}", to=config.extra["location_in" ~ sfx]) | replace(from="{year}", to=gh.profile.created_at | date(format="%Y")) }}
         </p>
-        {#- CTAs in hiring order: Hire me, then Email (a subject; [data-mail-role] names a ?role=) and
-            LinkedIn side by side. The copy-email field is in Contact. Unavailable: Email and About. #}
-        <div class="order-4 mb-2 flex flex-wrap items-center gap-3 sm:order-none">
+        {%- if hiring %}
+        {#- The two primary paths (owner's brief of 2026-11-18, ADR 0010): due diligence and M&A, then
+            AI engineering. Each says what is delivered, opens a mail with its own subject and leads to
+            the case on this page that proves it. Roles, terms and the CV are the secondary path. #}
+        <div class="order-5 mb-4 grid grid-cols-1 gap-3 sm:order-none md:grid-cols-2" data-paths>
+          {%- for op in [["dd", "#experience"], ["ai", "#case-majordomus"]] %}
+          <article id="offer-{{ op[0] }}" class="flex flex-col rounded-lg border border-gray-200 bg-white/90 p-4 dark:border-gray-700 dark:bg-gray-800/90">
+            <h2 class="text-base font-bold text-gray-900 dark:text-white">{{ trans(key="home_offer_" ~ op[0] ~ "_title", lang=lang) }}</h2>
+            <p class="mt-1 flex-1 text-sm text-gray-600 dark:text-gray-300">{{ trans(key="home_offer_" ~ op[0] ~ "_body", lang=lang) }}</p>
+            <div class="mt-3 flex flex-wrap items-center gap-x-4 gap-y-2">
+              {%- if gh.profile.email %}{{ <button label={trans(key="home_offer_" ~ op[0] ~ "_cta", lang=lang)} href={"mailto:" ~ gh.profile.email ~ "?subject=" ~ trans(key="home_offer_" ~ op[0] ~ "_subject", lang=lang) | replace(from="{host}", to=host) | urlencode} icon="mail" sr={gh.profile.email} /> }}{% endif %}
+              <a href="{{ op[1] }}" class="inline-flex min-h-6 items-center text-sm {{ link }}">{{ trans(key="home_offer_" ~ op[0] ~ "_proof", lang=lang) }}</a>
+            </div>
+          </article>
+          {%- endfor %}
+        </div>
+        {%- endif %}
+        {#- The secondary path: roles, terms and the CV on /hire/, and LinkedIn. Unavailable: Email
+            and About. #}
+        <div class="order-7 mb-2 flex flex-wrap items-center gap-3 sm:order-none">
           {%- if hiring %}
-          {{ <button label={trans(key="hire", lang=lang)} href={base ~ "hire/"} size="lg" icon="briefcase" /> }}
-          <div class="flex flex-wrap gap-3">
-            {%- if mail %}{{ <button label={trans(key="hire_contact_cta", lang=lang)} href={mail} variant="secondary" icon="mail" sr={gh.profile.email} attrs="data-mail-role" /> }}{% endif %}
-            {%- if cv.links is defined and cv.links.linkedin is defined %}{{ <button label={trans(key="hire_linkedin", lang=lang)} href={cv.links.linkedin} variant="secondary" icon="linkedin" attrs='rel="me"' /> }}{% endif %}
-          </div>
+          {{ <button label={trans(key="home_offer_hire", lang=lang)} href={base ~ "hire/"} variant="secondary" icon="briefcase" /> }}
+          {%- if cv.links is defined and cv.links.linkedin is defined %}{{ <button label={trans(key="hire_linkedin", lang=lang)} href={cv.links.linkedin} variant="secondary" icon="linkedin" attrs='rel="me"' /> }}{% endif %}
           {%- else %}
           {%- if mail %}{{ <button label={trans(key="hero_contact", lang=lang)} href={mail} size="lg" icon="mail" sr={gh.profile.email} /> }}{% endif %}
           {{ <button label={trans(key="about_and_cv", lang=lang)} href={base ~ "about/"} variant="secondary" size="lg" icon="book" /> }}
@@ -121,7 +135,7 @@
         </div>
         {#- Proof strip: the finished roles the CV links (one per organisation, newest first), each to
             its card in the track record, and the Majordomus release, to its case study. #}
-        <p class="order-7 mt-4 text-sm text-gray-700 dark:text-gray-300 sm:order-none" data-proof-strip>
+        <p class="order-8 mt-4 text-sm text-gray-700 dark:text-gray-300 sm:order-none" data-proof-strip>
           <span class="font-semibold text-gray-900 dark:text-white">{{ trans(key="hero_proof_label", lang=lang) }}:</span>
           {%- set_global orgs = "|" %}
           {%- for r in cv.roles %}{% if r.url is defined and r.end is defined and not ("|" ~ r.organisation ~ "|") in orgs %}{% set_global orgs = orgs ~ r.organisation ~ "|" %}
@@ -132,7 +146,7 @@
         {%- if hiring %}
         {#- The hiring facts, each to its row in #terms, each only when data/cv.toml states it. #}
         {%- set_global facts_eng = "" %}{% for e in h.engagement %}{% if facts_eng %}{% set_global facts_eng = facts_eng ~ ", " %}{% endif %}{% set_global facts_eng = facts_eng ~ trans(key="hire_engagement_" ~ e | replace(from="-", to="_"), lang=lang) %}{% endfor %}
-        <ul class="order-8 mt-4 flex flex-wrap gap-2 sm:order-none" aria-label="{{ trans(key="home_facts_label", lang=lang) }}">
+        <ul class="order-9 mt-4 flex flex-wrap gap-2 sm:order-none" aria-label="{{ trans(key="home_facts_label", lang=lang) }}">
           {%- if h.start is defined %}{% if h.start == "immediately" %}{% set fs = trans(key="hire_start_immediately", lang=lang) %}{% else %}{% set fs = h.start %}{% endif %}
           <li>{{ <chip label={trans(key="home_fact_start", lang=lang) | replace(from="{value}", to=fs)} href="#terms-start" size="xs" variant="primary" /> }}</li>
           {%- endif %}
@@ -148,17 +162,6 @@
           <li>{{ <chip label={facts_eng} href="#terms-engagement" size="xs" variant="primary" /> }}</li>
         </ul>
         {%- endif %}
-        {#- The languages of every original repository, each a link into the index (derived): the
-            languages the headline names first, then by count. #}
-        {%- set hw = "|" ~ headline | replace(from=",", to="") | replace(from=" ", to="|") ~ "|" %}
-        <ul class="order-9 mt-4 flex flex-wrap gap-2 sm:order-none" aria-label="{{ trans(key="most_used_languages", lang=lang) }}">
-          {%- set_global shown_langs = 0 %}
-          {%- for pass in ["named", "rest"] %}{% for l in ix.languages %}
-          {%- set named = ("|" ~ l.name ~ "|") in hw %}
-          {%- if shown_langs < 8 and ((pass == "named" and named) or (pass == "rest" and not named)) %}{% set_global shown_langs = shown_langs + 1 %}
-          <li>{{ <chip label={l.name} href={base ~ "repositories/?language=" ~ l.name | urlencode} count={l.repos ~ ""} size="xs" /> }}</li>
-          {%- endif %}{% endfor %}{% endfor %}
-        </ul>
       </div>
       {#- Stats: social-proof/default, each figure measured (data/cv.toml, data/github.json,
           data/index.json) and linked to the page that shows where it comes from. #}
@@ -177,132 +180,6 @@
       </div>
     </div>
   </section>
-
-  {%- if hiring %}
-  {#- 2. Hiring terms, answered: Flowbite Pro pricing-tables/horizontal in a dashboard card, the one
-      partial /hire/ renders too (partials/hire-terms.html). #}
-  <section id="terms" class="{{ chapter }}" aria-labelledby="terms-title">
-    {{ <card_head id="terms-title" title={trans(key="home_terms_title", lang=lang)} lead={trans(key="home_terms_lead", lang=lang)} action={trans(key="home_terms_full", lang=lang)} href={base ~ "hire/"} /> }}
-    {%- set terms_mode = "panel" %}{% include "partials/hire-terms.html" %}
-  </section>
-  {%- endif %}
-
-  {#- 3. Track record: Flowbite Pro customer-logos/cards-with-description, one card per employer the
-      CV links (data/cv.toml roles with a url, by organisation, the latest end first: an anonymised
-      organisation has no url and is left out by structure), its titles in start order as one
-      progression, the tenure computed; then Majordomus and the public output. #}
-  {%- set_global n_done = 0 %}{% for r in cv.roles %}{% if r.end is defined %}{% set_global n_done = n_done + 1 %}{% endif %}{% endfor %}
-  <section id="track" class="{{ chapter }}" aria-labelledby="track-title">
-    {{ <card_head id="track-title" title={trans(key="home_track_title", lang=lang)} lead={trans(key="home_track_lead", lang=lang)} action={trans(key="hire_cv_link", lang=lang)} href={base ~ "about/#cv-title"} /> }}
-    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
-      {%- set_global track_orgs = "|" %}
-      {%- for r in cv.roles %}{% if r.url is defined and not ("|" ~ r.organisation ~ "|") in track_orgs %}{% set_global track_orgs = track_orgs ~ r.organisation ~ "|" %}
-      {%- set org = r.organisation %}{% set oslug = org | slugify %}
-      {%- set_global t_titles = "" %}{% set_global t_start = "" %}{% set_global t_end = "" %}{% set_global t_current = false %}{% set_global t_summary = "" %}
-      {%- for x in cv.roles | reverse %}{% if x.organisation == org %}
-      {%- if t_titles %}{% set_global t_titles = t_titles ~ " → " %}{% endif %}{% set_global t_titles = t_titles ~ (x["title" ~ sfx] | default(value=x.title)) %}
-      {%- if t_start == "" or x.start < t_start %}{% set_global t_start = x.start %}{% endif %}
-      {%- if x.end is defined %}{% if x.end > t_end %}{% set_global t_end = x.end %}{% endif %}{% else %}{% set_global t_current = true %}{% endif %}
-      {%- if x.summary is defined %}{% set_global t_summary = x["summary" ~ sfx] | default(value=x.summary) %}{% endif %}
-      {%- endif %}{% endfor %}
-      {%- if t_current %}{% set t_to = now() | date(format="%Y-%m") %}{% else %}{% set t_to = t_end %}{% endif %}
-      {% <evidence_card href={base ~ "about/#cv-" ~ oslug} title={org} id={"proof-" ~ oslug} note={t_titles}> %}
-        <p class="tabular mt-3 text-3xl font-extrabold leading-none text-gray-900 dark:text-white">{{ <tenure start={t_start} end={t_to} lang={lang} /> }}</p>
-        <p class="tabular mt-2 text-xs text-gray-600 dark:text-gray-400"><time datetime="{{ t_start }}">{{ t_start | truncate(length=4, end="") }}</time>–{% if t_current %}{{ trans(key="cv_present", lang=lang) | safe }}{% else %}<time datetime="{{ t_end }}">{{ t_end | truncate(length=4, end="") }}</time>{% endif %}</p>
-        {%- if t_summary %}<p class="mt-2 text-sm text-gray-600 dark:text-gray-400">{{ t_summary }}</p>{% endif %}
-        <a href="{{ r.url }}" class="relative z-10 mt-auto inline-flex items-center self-start pt-3 text-sm {{ link }}">{{ trans(key="home_proof_role_link", lang=lang) | replace(from="{org}", to=org) }}{{ <icon name="external" class="ms-1 h-4 w-4" /> }}</a>
-      {% </evidence_card> %}
-      {%- endif %}{% endfor %}
-      {#- The release through the majordomusLive x-data (static/js/components/majordomus.js): the
-          snapshot from data/github.json without JavaScript, the current majordomus.dev release with it. #}
-      {% <evidence_card href="#case-majordomus" title={trans(key="home_proof_author_of", lang=lang)} id="proof-majordomus"> %}
-        <div class="flex flex-col" x-data="majordomusLive('{{ config.extra.majordomus_build }}', {{ gh.majordomus | json_encode }})">
-          <p class="tabular mt-3 text-3xl font-extrabold leading-none text-gray-900 dark:text-white" x-text="'v' + release.version">v{{ gh.majordomus.version }}</p>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">{{ trans(key="home_proof_supervised", lang=lang) | replace(from="{n}", to=ix.counts.supervised ~ "") }}</p>
-          <p class="tabular mt-2 text-xs text-gray-600 dark:text-gray-400">{{ trans(key="published", lang=lang) | safe }} <time datetime="{{ gh.majordomus.published_at }}" :datetime="release.published_at" x-text="date(release.published_at)">{{ gh.majordomus.published_at | date(format="%-d %b %Y") }}</time></p>
-        </div>
-        <a href="{{ config.extra.majordomus_url }}" class="relative z-10 mt-auto inline-flex items-center self-start pt-3 text-sm {{ link }}">majordomus.dev{{ <icon name="external" class="ms-1 h-4 w-4" /> }}</a>
-      {% </evidence_card> %}
-      {% <evidence_card href="#body-of-work" title={trans(key="home_proof_public_output", lang=lang)} id="proof-output" figure={gh.contributions.total | num_format(locale=lang)} note={trans(key="home_proof_contributions", lang=lang) | replace(from="{from}", to=gh.contributions.from) | replace(from="{to}", to=gh.contributions.to)}> %}
-        <p class="mt-2 text-xs text-gray-600 dark:text-gray-400">{{ trans(key="home_proof_original", lang=lang) | replace(from="{n}", to=ix.counts.own ~ "") }}</p>
-        <a href="https://github.com/{{ config.extra.github }}" rel="me" class="relative z-10 mt-auto inline-flex items-center self-start pt-3 text-sm {{ link }}">GitHub{{ <icon name="external" class="ms-1 h-4 w-4" /> }}</a>
-      {% </evidence_card> %}
-    </div>
-    <p class="mt-4 text-xs text-gray-600 dark:text-gray-400">{{ trans(key="hero_measured", lang=lang) | replace(from="{date}", to=as_of) }} <a href="{{ base }}stack/#data" class="{{ link }}">{{ trans(key="how_these_numbers_are_made", lang=lang) }}</a></p>
-  </section>
-
-  {#- 4. A reading path: Flowbite Pro content-sections/table-contents in two columns; "Read next" is
-      the front matter's reading_path (content paths, so Zola fails a missing one), each with its
-      reading time in this language, and the sum. #}
-  <section id="path" class="{{ chapter }}" aria-labelledby="path-title">
-    {{ <card_head id="path-title" title={trans(key="home_path_title", lang=lang)} /> }}
-    <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
-      <div class="min-w-0 md:order-last">
-        {%- set_global path_total = 0 %}
-        {%- set rp = section.extra.reading_path | default(value=[]) %}
-        <h3 class="mb-3 text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400">{{ trans(key="home_path_read_next", lang=lang) }}</h3>
-        <ol class="space-y-1">
-          {%- for p in rp %}
-          {%- if p is ending_with(pat="_index.md") %}{% set rpage = get_section(path=p | replace(from=".md", to=xl ~ ".md"), metadata_only=true) %}{% else %}{% set rpage = get_page(path=p, lang=lang) %}{% endif %}
-          {%- set_global path_total = path_total + rpage.reading_time %}
-          <li><a href="{{ rpage.permalink }}" class="group -mx-2 flex items-start gap-3 rounded-lg px-2 py-2.5 hover:bg-gray-50 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-700">
-            <span class="tabular flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary-100 text-sm font-semibold text-primary-700 dark:bg-primary-900 dark:text-primary-300">{{ loop.index }}</span>
-            <span class="min-w-0 flex-1">
-              <span class="block font-semibold text-gray-900 group-hover:underline dark:text-white">{{ rpage.title }}</span>
-              <span class="block text-sm text-gray-600 dark:text-gray-400">{{ rpage.description }}</span>
-            </span>
-            <span class="tabular shrink-0 text-xs text-gray-600 dark:text-gray-400">{{ trans(key="home_path_minutes", lang=lang) | replace(from="{n}", to=rpage.reading_time ~ "") }}</span>
-          </a></li>
-          {%- endfor %}
-        </ol>
-        <p class="mt-3 text-xs text-gray-600 dark:text-gray-400">{{ trans(key="home_path_total", lang=lang) | replace(from="{n}", to=path_total ~ "") }}</p>
-      </div>
-      <div class="min-w-0">
-        <h3 class="mb-3 text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400">{{ trans(key="home_path_on_page", lang=lang) }}</h3>
-        {%- set on_page = [["track", "home_track_title", ""], ["case-majordomus", "home_forward_case", trans(key="home_path_note_version", lang=lang) | replace(from="{version}", to="v" ~ gh.majordomus.version)], ["experience", "xp_title", trans(key="home_path_note_engagements", lang=lang) | replace(from="{n}", to=n_xp ~ "")], ["skills", "skills_title", ""], ["body-of-work", "body_title", trans(key="home_path_note_original", lang=lang) | replace(from="{n}", to=ix.counts.own ~ "")], ["instruments", "instruments_title", trans(key="home_path_note_instruments", lang=lang) | replace(from="{n}", to=n_instr ~ "")], ["proven", "proven_title", trans(key="home_path_note_gates", lang=lang) | replace(from="{n}", to=gates.gates | length ~ "")], ["now", "home_now_title", ""], ["archive", "archive_title", ""]] %}
-        <ol class="divide-y divide-gray-200 dark:divide-gray-700">
-          {%- if hiring %}
-          <li><a href="#terms" class="flex items-baseline justify-between gap-3 py-2 {{ link }}">{{ trans(key="home_terms_title", lang=lang) }}</a></li>
-          <li><a href="#roles" class="flex items-baseline justify-between gap-3 py-2 {{ link }}">{{ trans(key="home_roles_title", lang=lang) }}</a></li>
-          {%- endif %}
-          {%- for item in on_page %}{% if item[0] != "experience" or n_xp > 0 %}
-          <li><a href="#{{ item[0] }}" class="flex items-baseline justify-between gap-3 py-2 {{ link }}"><span>{{ trans(key=item[1], lang=lang) }}</span>{% if item[2] %}<span class="tabular shrink-0 text-xs font-normal text-gray-600 dark:text-gray-400">{{ item[2] }}</span>{% endif %}</a></li>
-          {%- endif %}{% endfor %}
-          {%- if hiring %}
-          <li><a href="#faq" class="flex items-baseline justify-between gap-3 py-2 {{ link }}">{{ trans(key="home_faq_title", lang=lang) }}</a></li>
-          {%- endif %}
-          <li><a href="#contact" class="flex items-baseline justify-between gap-3 py-2 {{ link }}">{{ trans(key="home_contact_title", lang=lang) }}</a></li>
-        </ol>
-      </div>
-    </div>
-  </section>
-
-  {%- if hiring %}
-  {#- 5. Roles and the evidence for each: Flowbite Pro feature-sections/card-list, one card per
-      data/cv.toml [hire] role (#role-<slug>), its measured chips (partials/role-evidence.html, the
-      inference /hire/ uses) and its evidence on /hire/. No card asks for mail. #}
-  <section id="roles" class="{{ chapter }}" aria-labelledby="roles-title">
-    {{ <card_head id="roles-title" title={trans(key="home_roles_title", lang=lang)} lead={trans(key="home_roles_lead", lang=lang)} action={trans(key="home_terms_full", lang=lang)} href={base ~ "hire/#roles-title"} /> }}
-    <ul class="grid grid-cols-1 gap-4 md:grid-cols-2">
-      {%- for r in roles %}
-      {%- set ri = loop.index0 %}
-      {%- set rslug = h.roles[ri] | split(pat=":") | first | slugify %}
-      {%- set rhead = r | split(pat=":") | first | trim %}{% set rlead = r | replace(from=rhead ~ ":", to="") | trim %}
-      <li id="role-{{ rslug }}" class="flex min-w-0 scroll-mt-24 flex-col rounded-lg border border-gray-200 p-4 focus-within:ring-4 focus-within:ring-primary-300 dark:border-gray-700 dark:focus-within:ring-primary-800 sm:p-5">
-        <div class="mb-3 flex items-start gap-3">
-          <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary-100 text-primary-700 dark:bg-primary-900 dark:text-primary-300">{{ <icon name="briefcase" class="h-5 w-5" /> }}</span>
-          <div class="min-w-0">
-            <h3 class="text-lg font-semibold leading-tight text-gray-900 dark:text-white"><a href="{{ base }}hire/#role-{{ rslug }}" class="hover:text-primary-700 hover:underline dark:hover:text-primary-400">{{ rhead }}</a></h3>
-            <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">{{ rlead }}</p>
-          </div>
-        </div>
-        {%- set re_mode = "chips" %}{% set re_limit = 4 %}{% include "partials/role-evidence.html" %}
-        <a href="{{ base }}hire/#role-{{ rslug }}" class="mt-auto inline-flex items-center self-start pt-4 text-sm {{ link }}">{{ trans(key="home_role_evidence", lang=lang) }}<span class="sr-only">: {{ rhead }}</span>{{ <icon name="arrow-right" class="ms-1 h-4 w-4" /> }}</a>
-      </li>
-      {%- endfor %}
-    </ul>
-  </section>
-  {%- endif %}
 
   {#- 6. Case study: Majordomus. Flowbite Pro feature-sections/alternate with the figures of
       social-proof/heading-statistics and the clipboard input for the install command. The release is
@@ -346,7 +223,7 @@
           </div>
           <div>
             <dt class="text-sm text-gray-600 dark:text-gray-400">{{ trans(key="published", lang=lang) | safe }}</dt>
-            <dd class="text-base font-semibold text-gray-900 dark:text-white" x-text="date(release.published_at)">{{ gh.majordomus.published_at | date(format="%-d %b %Y") }}</dd>
+            <dd class="text-base font-semibold text-gray-900 dark:text-white" x-text="date(release.published_at)">{{ gh.majordomus.published_at | date(format=trans(key="fmt_date_short", lang=lang), locale=trans(key="date_locale", lang=lang)) }}</dd>
           </div>
           <div>
             <dt class="text-sm text-gray-600 dark:text-gray-400">{{ trans(key="site_built_from", lang=lang) | safe }}</dt>
@@ -354,7 +231,7 @@
           </div>
           <div>
             <dt class="text-sm text-gray-600 dark:text-gray-400">{{ trans(key="commit_time", lang=lang) | safe }}</dt>
-            <dd class="text-base font-semibold text-gray-900 dark:text-white" x-text="date(release.commit_time)">{{ gh.majordomus.commit_time | date(format="%-d %b %Y") }}</dd>
+            <dd class="text-base font-semibold text-gray-900 dark:text-white" x-text="date(release.commit_time)">{{ gh.majordomus.commit_time | date(format=trans(key="fmt_date_short", lang=lang), locale=trans(key="date_locale", lang=lang)) }}</dd>
           </div>
         </dl>
         <p class="mb-2 text-sm"><a href="{{ base }}repositories/?supervision=yes" class="{{ link }}">{{ trans(key="home_proof_supervised", lang=lang) | replace(from="{n}", to=ix.counts.supervised ~ "") }}</a></p>
@@ -392,7 +269,7 @@
           <li><a href="{{ c.url }}" class="flex items-start gap-3 px-4 py-3 hover:bg-gray-50 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-700">
             {%- if ctyped %}{{ <badge label={chead | split(pat="(") | first | replace(from="!", to="")} tone="primary" /> }}{% endif %}
             <span class="min-w-0 flex-1 truncate text-sm text-gray-900 dark:text-white">{% if ctyped %}{{ c.message | replace(from=chead ~ ":", to="") | trim }}{% else %}{{ c.message }}{% endif %}</span>
-            <time datetime="{{ c.at }}" class="tabular shrink-0 text-xs text-gray-600 dark:text-gray-400">{{ c.at | date(format="%-d %b") }}</time>
+            <time datetime="{{ c.at }}" class="tabular shrink-0 text-xs text-gray-600 dark:text-gray-400">{{ c.at | date(format=trans(key="fmt_day", lang=lang), locale=trans(key="date_locale", lang=lang)) }}</time>
           </a></li>
           {%- endif %}{% endfor %}{% endif %}{% endfor %}
         </ol>
@@ -416,6 +293,129 @@
 
   {#- 7. Client work under NDA: due diligence, M&A and AI, anonymised (the experience partial). #}
   {%- if xp %}{% set xp_landing = true %}{% set xp_roles = hiring %}{% include "partials/experience.html" %}{% endif %}
+
+  {%- if hiring %}
+  {#- 2. Hiring terms, answered: Flowbite Pro pricing-tables/horizontal in a dashboard card, the one
+      partial /hire/ renders too (partials/hire-terms.html). #}
+  <section id="terms" class="{{ chapter }}" aria-labelledby="terms-title">
+    {{ <card_head id="terms-title" title={trans(key="home_terms_title", lang=lang)} lead={trans(key="home_terms_lead", lang=lang)} action={trans(key="home_terms_full", lang=lang)} href={base ~ "hire/"} /> }}
+    {%- set terms_mode = "panel" %}{% include "partials/hire-terms.html" %}
+  </section>
+  {%- endif %}
+
+  {#- 3. Track record: Flowbite Pro customer-logos/cards-with-description, one card per employer the
+      CV links (data/cv.toml roles with a url, by organisation, the latest end first: an anonymised
+      organisation has no url and is left out by structure), its titles in start order as one
+      progression, the tenure computed; then Majordomus and the public output. #}
+  {%- set_global n_done = 0 %}{% for r in cv.roles %}{% if r.end is defined %}{% set_global n_done = n_done + 1 %}{% endif %}{% endfor %}
+  <section id="track" class="{{ chapter }}" aria-labelledby="track-title">
+    {{ <card_head id="track-title" title={trans(key="home_track_title", lang=lang)} lead={trans(key="home_track_lead", lang=lang)} action={trans(key="hire_cv_link", lang=lang)} href={base ~ "about/#cv-title"} /> }}
+    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
+      {%- set_global track_orgs = "|" %}
+      {%- for r in cv.roles %}{% if r.url is defined and not ("|" ~ r.organisation ~ "|") in track_orgs %}{% set_global track_orgs = track_orgs ~ r.organisation ~ "|" %}
+      {%- set org = r.organisation %}{% set oslug = org | slugify %}
+      {%- set_global t_titles = "" %}{% set_global t_start = "" %}{% set_global t_end = "" %}{% set_global t_current = false %}{% set_global t_summary = "" %}
+      {%- for x in cv.roles | reverse %}{% if x.organisation == org %}
+      {%- if t_titles %}{% set_global t_titles = t_titles ~ " → " %}{% endif %}{% set_global t_titles = t_titles ~ (x["title" ~ sfx] | default(value=x.title)) %}
+      {%- if t_start == "" or x.start < t_start %}{% set_global t_start = x.start %}{% endif %}
+      {%- if x.end is defined %}{% if x.end > t_end %}{% set_global t_end = x.end %}{% endif %}{% else %}{% set_global t_current = true %}{% endif %}
+      {%- if x.summary is defined %}{% set_global t_summary = x["summary" ~ sfx] | default(value=x.summary) %}{% endif %}
+      {%- endif %}{% endfor %}
+      {%- if t_current %}{% set t_to = now() | date(format="%Y-%m") %}{% else %}{% set t_to = t_end %}{% endif %}
+      {% <evidence_card href={base ~ "about/#cv-" ~ oslug} title={org} id={"proof-" ~ oslug} note={t_titles}> %}
+        <p class="tabular mt-3 text-3xl font-extrabold leading-none text-gray-900 dark:text-white">{{ <tenure start={t_start} end={t_to} lang={lang} /> }}</p>
+        <p class="tabular mt-2 text-xs text-gray-600 dark:text-gray-400"><time datetime="{{ t_start }}">{{ t_start | truncate(length=4, end="") }}</time>–{% if t_current %}{{ trans(key="cv_present", lang=lang) | safe }}{% else %}<time datetime="{{ t_end }}">{{ t_end | truncate(length=4, end="") }}</time>{% endif %}</p>
+        {%- if t_summary %}<p class="mt-2 text-sm text-gray-600 dark:text-gray-400">{{ t_summary }}</p>{% endif %}
+        <a href="{{ r.url }}" class="relative z-10 mt-auto inline-flex items-center self-start pt-3 text-sm {{ link }}">{{ trans(key="home_proof_role_link", lang=lang) | replace(from="{org}", to=org) }}{{ <icon name="external" class="ms-1 h-4 w-4" /> }}</a>
+      {% </evidence_card> %}
+      {%- endif %}{% endfor %}
+      {#- The release through the majordomusLive x-data (static/js/components/majordomus.js): the
+          snapshot from data/github.json without JavaScript, the current majordomus.dev release with it. #}
+      {% <evidence_card href="#case-majordomus" title={trans(key="home_proof_author_of", lang=lang)} id="proof-majordomus"> %}
+        <div class="flex flex-col" x-data="majordomusLive('{{ config.extra.majordomus_build }}', {{ gh.majordomus | json_encode }})">
+          <p class="tabular mt-3 text-3xl font-extrabold leading-none text-gray-900 dark:text-white" x-text="'v' + release.version">v{{ gh.majordomus.version }}</p>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">{{ trans(key="home_proof_supervised", lang=lang) | replace(from="{n}", to=ix.counts.supervised ~ "") }}</p>
+          <p class="tabular mt-2 text-xs text-gray-600 dark:text-gray-400">{{ trans(key="published", lang=lang) | safe }} <time datetime="{{ gh.majordomus.published_at }}" :datetime="release.published_at" x-text="date(release.published_at)">{{ gh.majordomus.published_at | date(format=trans(key="fmt_date_short", lang=lang), locale=trans(key="date_locale", lang=lang)) }}</time></p>
+        </div>
+        <a href="{{ config.extra.majordomus_url }}" class="relative z-10 mt-auto inline-flex items-center self-start pt-3 text-sm {{ link }}">majordomus.dev{{ <icon name="external" class="ms-1 h-4 w-4" /> }}</a>
+      {% </evidence_card> %}
+      {% <evidence_card href="#body-of-work" title={trans(key="home_proof_public_output", lang=lang)} id="proof-output" figure={gh.contributions.total | num_format(locale=lang)} note={trans(key="home_proof_contributions", lang=lang) | replace(from="{from}", to=gh.contributions.from) | replace(from="{to}", to=gh.contributions.to)}> %}
+        <p class="mt-2 text-xs text-gray-600 dark:text-gray-400">{{ trans(key="home_proof_original", lang=lang) | replace(from="{n}", to=ix.counts.own ~ "") }}</p>
+        <a href="https://github.com/{{ config.extra.github }}" rel="me" class="relative z-10 mt-auto inline-flex items-center self-start pt-3 text-sm {{ link }}">GitHub{{ <icon name="external" class="ms-1 h-4 w-4" /> }}</a>
+      {% </evidence_card> %}
+    </div>
+    <p class="mt-4 text-xs text-gray-600 dark:text-gray-400">{{ trans(key="hero_measured", lang=lang) | replace(from="{date}", to=as_of) }} <a href="{{ base }}stack/#data" class="{{ link }}">{{ trans(key="how_these_numbers_are_made", lang=lang) }}</a></p>
+  </section>
+
+  {#- 4. A reading path: Flowbite Pro content-sections/table-contents in two columns; "Read next" is
+      the front matter's reading_path (content paths, so Zola fails a missing one), each with its
+      reading time in this language, and the sum. #}
+  <section id="path" class="{{ chapter }}" aria-labelledby="path-title">
+    {{ <card_head id="path-title" title={trans(key="home_path_title", lang=lang)} /> }}
+    <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+      <div class="min-w-0 md:order-last">
+        {%- set_global path_total = 0 %}
+        {%- set rp = section.extra.reading_path | default(value=[]) %}
+        <h3 class="mb-3 text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400">{{ trans(key="home_path_read_next", lang=lang) }}</h3>
+        <ol class="space-y-1">
+          {%- for p in rp %}
+          {%- if p is ending_with(pat="_index.md") %}{% set rpage = get_section(path=p | replace(from=".md", to=xl ~ ".md"), metadata_only=true) %}{% else %}{% set rpage = get_page(path=p, lang=lang) %}{% endif %}
+          {%- set_global path_total = path_total + rpage.reading_time %}
+          <li><a href="{{ rpage.permalink }}" class="group -mx-2 flex items-start gap-3 rounded-lg px-2 py-2.5 hover:bg-gray-50 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-700">
+            <span class="tabular flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary-100 text-sm font-semibold text-primary-700 dark:bg-primary-900 dark:text-primary-300">{{ loop.index }}</span>
+            <span class="min-w-0 flex-1">
+              <span class="block font-semibold text-gray-900 group-hover:underline dark:text-white">{{ rpage.title }}</span>
+              <span class="block text-sm text-gray-600 dark:text-gray-400">{{ rpage.description }}</span>
+            </span>
+            <span class="tabular shrink-0 text-xs text-gray-600 dark:text-gray-400">{{ trans(key="home_path_minutes", lang=lang) | replace(from="{n}", to=rpage.reading_time ~ "") }}</span>
+          </a></li>
+          {%- endfor %}
+        </ol>
+        <p class="mt-3 text-xs text-gray-600 dark:text-gray-400">{{ trans(key="home_path_total", lang=lang) | replace(from="{n}", to=path_total ~ "") }}</p>
+      </div>
+      <div class="min-w-0">
+        <h3 class="mb-3 text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400">{{ trans(key="home_path_on_page", lang=lang) }}</h3>
+        {%- set on_page = [["case-majordomus", "home_forward_case", trans(key="home_path_note_version", lang=lang) | replace(from="{version}", to="v" ~ gh.majordomus.version)], ["experience", "xp_title", trans(key="home_path_note_engagements", lang=lang) | replace(from="{n}", to=n_xp ~ "")], ["terms", "home_terms_title", ""], ["track", "home_track_title", ""], ["roles", "home_roles_title", ""], ["skills", "skills_title", ""], ["body-of-work", "body_title", trans(key="home_path_note_original", lang=lang) | replace(from="{n}", to=ix.counts.own ~ "")], ["instruments", "instruments_title", trans(key="home_path_note_instruments", lang=lang) | replace(from="{n}", to=n_instr ~ "")], ["proven", "proven_title", trans(key="home_path_note_gates", lang=lang) | replace(from="{n}", to=gates.gates | length ~ "")], ["now", "home_now_title", ""], ["archive", "archive_title", ""]] %}
+        <ol class="divide-y divide-gray-200 dark:divide-gray-700">
+
+          {%- for item in on_page %}{% if (item[0] != "experience" or n_xp > 0) and (hiring or (item[0] != "terms" and item[0] != "roles")) %}
+          <li><a href="#{{ item[0] }}" class="flex items-baseline justify-between gap-3 py-2 {{ link }}"><span>{{ trans(key=item[1], lang=lang) }}</span>{% if item[2] %}<span class="tabular shrink-0 text-xs font-normal text-gray-600 dark:text-gray-400">{{ item[2] }}</span>{% endif %}</a></li>
+          {%- endif %}{% endfor %}
+          {%- if hiring %}
+          <li><a href="#faq" class="flex items-baseline justify-between gap-3 py-2 {{ link }}">{{ trans(key="home_faq_title", lang=lang) }}</a></li>
+          {%- endif %}
+          <li><a href="#contact" class="flex items-baseline justify-between gap-3 py-2 {{ link }}">{{ trans(key="home_contact_title", lang=lang) }}</a></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  {%- if hiring %}
+  {#- 5. Roles and the evidence for each: Flowbite Pro feature-sections/card-list, one card per
+      data/cv.toml [hire] role (#role-<slug>), its measured chips (partials/role-evidence.html, the
+      inference /hire/ uses) and its evidence on /hire/. No card asks for mail. #}
+  <section id="roles" class="{{ chapter }}" aria-labelledby="roles-title">
+    {{ <card_head id="roles-title" title={trans(key="home_roles_title", lang=lang)} lead={trans(key="home_roles_lead", lang=lang)} action={trans(key="home_terms_full", lang=lang)} href={base ~ "hire/#roles-title"} /> }}
+    <ul class="grid grid-cols-1 gap-4 md:grid-cols-2">
+      {%- for r in roles %}
+      {%- set ri = loop.index0 %}
+      {%- set rslug = h.roles[ri] | split(pat=":") | first | slugify %}
+      {%- set rhead = r | split(pat=":") | first | trim %}{% set rlead = r | replace(from=rhead ~ ":", to="") | trim %}
+      <li id="role-{{ rslug }}" class="flex min-w-0 scroll-mt-24 flex-col rounded-lg border border-gray-200 p-4 focus-within:ring-4 focus-within:ring-primary-300 dark:border-gray-700 dark:focus-within:ring-primary-800 sm:p-5">
+        <div class="mb-3 flex items-start gap-3">
+          <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary-100 text-primary-700 dark:bg-primary-900 dark:text-primary-300">{{ <icon name="briefcase" class="h-5 w-5" /> }}</span>
+          <div class="min-w-0">
+            <h3 class="text-lg font-semibold leading-tight text-gray-900 dark:text-white"><a href="{{ base }}hire/#role-{{ rslug }}" class="hover:text-primary-700 hover:underline dark:hover:text-primary-400">{{ rhead }}</a></h3>
+            <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">{{ rlead }}</p>
+          </div>
+        </div>
+        {%- set re_mode = "chips" %}{% set re_limit = 4 %}{% include "partials/role-evidence.html" %}
+        <a href="{{ base }}hire/#role-{{ rslug }}" class="mt-auto inline-flex items-center self-start pt-4 text-sm {{ link }}">{{ trans(key="home_role_evidence", lang=lang) }}<span class="sr-only">: {{ rhead }}</span>{{ <icon name="arrow-right" class="ms-1 h-4 w-4" /> }}</a>
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+  {%- endif %}
 
   {#- 8. Skills, each with its evidence: Flowbite Pro advanced-tables (partials/skills-table.html, the
       table /hire/ shows whole), beside the skillset sunburst. #}
@@ -610,7 +610,7 @@
                 <span class="block truncate text-sm text-gray-600 dark:text-gray-400">{% if rline %}{{ rline }}{% elif r.description %}{{ r.description }}{% elif r.readme %}{{ r.readme }}{% endif %}</span>
               </span>
               <span class="hidden shrink-0 text-right sm:block">
-                <time datetime="{{ r.last_commit }}" class="tabular block text-xs text-gray-600 dark:text-gray-400">{{ r.last_commit | date(format="%-d %b %Y") }}</time>
+                <time datetime="{{ r.last_commit }}" class="tabular block text-xs text-gray-600 dark:text-gray-400">{{ r.last_commit | date(format=trans(key="fmt_date_short", lang=lang), locale=trans(key="date_locale", lang=lang)) }}</time>
                 <span class="block text-xs text-gray-600 dark:text-gray-400">{% if r.languages | length > 0 %}{{ r.languages[0].name }}{% endif %}</span>
               </span>
             </a>
@@ -633,7 +633,7 @@
                 <span class="block truncate text-sm font-medium text-gray-900 group-hover:underline dark:text-white">{{ r.name }}</span>
                 <span class="block text-xs text-gray-600 dark:text-gray-400">{{ cat.categories[r.category]["name" ~ sfx] }}{% if r.language %} · {{ r.language }}{% endif %}</span>
               </span>
-              <time datetime="{{ r.pushed_at }}" class="tabular shrink-0 text-xs text-gray-600 dark:text-gray-400">{{ r.pushed_at | date(format="%-d %b") }}</time>
+              <time datetime="{{ r.pushed_at }}" class="tabular shrink-0 text-xs text-gray-600 dark:text-gray-400">{{ r.pushed_at | date(format=trans(key="fmt_day", lang=lang), locale=trans(key="date_locale", lang=lang)) }}</time>
             </a>
           </li>
           {%- endif %}{% endfor %}
@@ -685,7 +685,7 @@
           {%- set f = gh.projects[repo] %}
           <li class="mb-6 ms-6 last:mb-0">
             <span class="absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full bg-primary-100 text-primary-700 ring-8 ring-white dark:bg-primary-900 dark:text-primary-300 dark:ring-gray-800">{{ <category_icon key={p.category} class="h-3.5 w-3.5" /> }}</span>
-            <time datetime="{{ f.created_at }}" class="mb-1 block text-sm font-normal leading-none text-gray-600 dark:text-gray-400">{{ f.created_at | date(format="%B %Y") }}</time>
+            <time datetime="{{ f.created_at }}" class="mb-1 block text-sm font-normal leading-none text-gray-600 dark:text-gray-400">{{ f.created_at | date(format=trans(key="fmt_month_year", lang=lang), locale=trans(key="date_locale", lang=lang)) }}</time>
             <h4 class="flex flex-wrap items-center gap-2 text-base font-semibold text-gray-900 dark:text-white">
               <a href="{{ base }}projects/?project={{ repo }}" class="hover:underline">{{ p.name }}</a>
               {{ <status_badge activity={f.activity} lang={lang} /> }}

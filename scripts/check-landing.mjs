@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Gate for rule project.landing-contract over the built landing (public/index.html and every
 // language's twin, or SITE_DIR). While data/cv.toml [hire] available is true it asserts:
-//  - the chapter ids hero-title, terms, track, path, roles, case-majordomus, experience, skills,
+//  - the chapter ids hero-title, case-majordomus, experience, terms, track, path, roles, skills,
 //    body-of-work, instruments, proven, now, archive, faq and contact exist, in that order, the
 //    same in every language (without availability: the chapters that do not hire);
 //  - every <a> in <main> has an href that resolves to a built file, the page itself or an external
@@ -125,7 +125,7 @@ const htmlOf = (file) => {
 };
 
 // --- the chapters ---------------------------------------------------------------------------------
-const CHAPTERS = ['hero-title', 'terms', 'track', 'path', 'roles', 'case-majordomus', 'experience', 'skills',
+const CHAPTERS = ['hero-title', 'case-majordomus', 'experience', 'terms', 'track', 'path', 'roles', 'skills',
   'body-of-work', 'instruments', 'proven', 'now', 'archive', 'faq', 'contact'];
 const HIRE_ONLY = new Set(['terms', 'roles', 'faq']);
 const want = CHAPTERS.filter((id) => available || !HIRE_ONLY.has(id));
