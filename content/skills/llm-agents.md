@@ -13,7 +13,7 @@ skill = "llm-agents"
 og_title = "LLM agents: skills"
 og_image = "og/skill-llm-agents.png"
 schema = "skill"
-terms = ["skill", "ai-agent", "shell", "html", "claude-api", "javascript", "python", "typescript", "alpine-js", "css", "elixir", "flowbite-pro"]
+terms = ["skill", "ai-agent", "html", "shell", "claude-api", "javascript", "python", "typescript", "alpine-js", "css", "elixir", "flowbite-pro"]
 keywords = ["LLM agents", "Decision support and AI agents for analysts", "Governed AI-assisted software delivery", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -31,9 +31,9 @@ The concept behind it: [AI agent](@/glossary/ai-agent.md).
 
 Services that draw on it: [Decision support and AI agents for analysts](@/services/decision-support-ai.md) and [Governed AI-assisted software delivery](@/services/ai-engineering-governance.md).
 
-Practised with: [Shell](@/glossary/shell.md), [HTML](@/glossary/html.md), [Claude API](@/glossary/claude-api.md), [JavaScript](@/glossary/javascript.md), [Python](@/glossary/python.md), [TypeScript](@/glossary/typescript.md), [Alpine.js](@/glossary/alpine-js.md) and [CSS](@/glossary/css.md).
+Practised with: [HTML](@/glossary/html.md), [Shell](@/glossary/shell.md), [Claude API](@/glossary/claude-api.md), [JavaScript](@/glossary/javascript.md), [Python](@/glossary/python.md), [TypeScript](@/glossary/typescript.md), [Alpine.js](@/glossary/alpine-js.md) and [CSS](@/glossary/css.md).
 
-Public work whose own words show it: [sig](https://gitlab.com/korczis/sig), [korczis.github.io](https://github.com/korczis/korczis.github.io), [prismatic-majordomus](https://github.com/korczis/prismatic-majordomus) and [osint-case-ratcliffe-moscow-2026](https://github.com/korczis/osint-case-ratcliffe-moscow-2026).
+Public work whose own words show it: [korczis.github.io](https://github.com/korczis/korczis.github.io), [sig](https://gitlab.com/korczis/sig), [prismatic-majordomus](https://github.com/korczis/prismatic-majordomus) and [osint-case-ratcliffe-moscow-2026](https://github.com/korczis/osint-case-ratcliffe-moscow-2026).
 
 It was applied in client work in Real-estate developer; the use cases below give the principle and the intent, without names or numbers.
 

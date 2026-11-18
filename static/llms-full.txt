@@ -20,7 +20,7 @@ Tomas Korcak is available for hire: Staff engineer for AI agent infrastructure, 
 
 ## Skills
 
-Measured from every original public repository on GitHub and GitLab, derived 2026-11-18T04:00:58Z.
+Measured from every original public repository on GitHub and GitLab, derived 2026-11-18T12:05:02Z.
 
 - [JavaScript](https://korczis.github.io/glossary/javascript/): primary language of 42 original repositories; evidence: [oscilla](https://github.com/korczis/oscilla), [korczis.github.io](https://github.com/korczis/korczis.github.io), [majordomus-reel](https://github.com/korczis/majordomus-reel)
 - [Elixir](https://korczis.github.io/glossary/elixir/): primary language of 26 original repositories; evidence: [kompendium-epistemicke-anihilace](https://github.com/korczis/kompendium-epistemicke-anihilace), [crisis-map](https://github.com/korczis/crisis-map), [the-psycho](https://gitlab.com/korczis/the-psycho)
@@ -169,7 +169,7 @@ Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist s
 ## Every original repository
 
 > 205 repositories on GitHub and GitLab where the owner wrote at least half of the commits,
-> derived 2026-11-18T04:00:58Z. Forks and mirrors (285) are not listed.
+> derived 2026-11-18T12:05:02Z. Forks and mirrors (285) are not listed.
 
 ### AI engineering (5)
 
@@ -184,7 +184,7 @@ Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist s
 - oscilla: A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted. (JavaScript, 2026, active within 12 months, 1 stars, supervised by Majordomus). page https://korczis.github.io/work/oscilla/; cs page https://korczis.github.io/cs/work/oscilla/; GitHub https://github.com/korczis/oscilla; site https://korczis.github.io/oscilla/
 - algoglyph: Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores. (TypeScript, 2026, active within 12 months, supervised by Majordomus). page https://korczis.github.io/work/algoglyph/; cs page https://korczis.github.io/cs/work/algoglyph/; GitHub https://github.com/korczis/algoglyph; site https://korczis.github.io/algoglyph/
 - distance-calculator (Elixir, 2024, active within 48 months). page https://korczis.github.io/work/distance-calculator/; cs page https://korczis.github.io/cs/work/distance-calculator/; GitLab https://gitlab.com/korczis/distance-calculator
-- maze-rs: Maze for Programmers (Rust) (Rust, 2016, archive, 8 stars). page https://korczis.github.io/work/maze-rs/; cs page https://korczis.github.io/cs/work/maze-rs/; GitHub https://github.com/korczis/maze-rs; GitLab https://gitlab.com/korczis/maze-rs
+- maze-rs: Maze for Programmers (Rust) (Rust, 2016, archive, 8 stars). page https://korczis.github.io/work/maze-rs/; cs page https://korczis.github.io/cs/work/maze-rs/; GitHub https://github.com/korczis/maze-rs; GitLab https://gitlab.com/korczis/maze-rs; site https://korczis.github.io/maze-rs/
 - rustas: Rust - Assembler, Mathematics, GPU and many others (Rust, 2018, archive, 1 stars). page https://korczis.github.io/work/rustas/; cs page https://korczis.github.io/cs/work/rustas/; GitHub https://github.com/korczis/rustas; GitLab https://gitlab.com/korczis/rustas
 - graph-flow (Rust, 2017, archive). page https://korczis.github.io/work/graph-flow/; cs page https://korczis.github.io/cs/work/graph-flow/; GitHub https://github.com/korczis/graph-flow; GitLab https://gitlab.com/korczis/graph-flow
 - maze: Maze Web Application (JavaScript, 2016, archive). page https://korczis.github.io/work/maze/; cs page https://korczis.github.io/cs/work/maze/; GitHub https://github.com/korczis/maze; GitLab https://gitlab.com/korczis/maze

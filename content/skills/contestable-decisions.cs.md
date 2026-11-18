@@ -13,7 +13,7 @@ skill = "contestable-decisions"
 og_title = "Napadnutelná rozhodnutí: dovednosti"
 og_image = "og/cs-skill-contestable-decisions.png"
 schema = "skill"
-terms = ["skill", "contestability", "css", "html", "javascript", "web-audio"]
+terms = ["skill", "contestability"]
 keywords = ["Napadnutelná rozhodnutí", "Prověrka a analýza M&A transakcí", "Sankční a PEP prověrky a skuteční majitelé", "Podpora rozhodování a AI agenti pro analytiky", "Řízený vývoj softwaru s AI", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -30,9 +30,5 @@ Rozhodnutí, která lze zpochybnit: soupeřící hypotézy s hodnocením, nejist
 Pojem, na kterém stojí: [Napadnutelnost](@/glossary/contestability.cs.md).
 
 Služby, které z ní čerpají: [Prověrka a analýza M&A transakcí](@/services/m-and-a.cs.md), [Sankční a PEP prověrky a skuteční majitelé](@/services/compliance-screening.cs.md), [Podpora rozhodování a AI agenti pro analytiky](@/services/decision-support-ai.cs.md) a [Řízený vývoj softwaru s AI](@/services/ai-engineering-governance.cs.md).
-
-Praktikovaná s: [CSS](@/glossary/css.cs.md), [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md) a [Web Audio](@/glossary/web-audio.cs.md).
-
-Veřejná práce, jejíž vlastní slova ji dokládají: [oscilla](https://github.com/korczis/oscilla).
 
 Jak číst tuto stránku: definice pochází ze slovníku zkušeností; služby, technologie, veřejné [repozitáře](@/glossary/repository.cs.md) a případy užití jsou odvozené a každá položka vede na svou stránku.

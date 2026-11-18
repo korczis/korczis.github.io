@@ -13,11 +13,11 @@ tags = ["Science and visualisation", "Rust", "HTML"]
 repo = "maze-rs"
 seo_title = "maze-rs: Mazes for Programmers, in Rust, 2016 · Tomas Korcak"
 og_title = "maze-rs: Mazes for Programmers, in Rust (2016)"
-og_description = "maze-rs: Science and visualisation in Rust and HTML, 2016, archive. Source on GitHub and GitLab. 8 stars."
+og_description = "maze-rs: Science and visualisation in Rust and HTML, 2016, archive. Source on GitHub and GitLab. 8 stars. Live site."
 og_image = "og/work-maze-rs.png"
 schema = "project"
 keywords = ["maze-rs", "Science and visualisation", "Rust", "HTML", "2016", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["rust", "html", "data-visualisation", "repository", "commit", "open-source"]
+terms = ["rust", "html", "data-visualisation", "github-pages", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -31,6 +31,8 @@ tone = "night"
 **maze-rs** is a project in [Science and visualisation](@/projects/science.md). Its code is written mainly in [Rust](@/glossary/rust.md) (98.9 %), with [HTML](@/glossary/html.md).
 
 The [repository](@/glossary/repository.md) was created on 11 November 2016; its latest [commit](@/glossary/commit.md) is from 18 November 2016. It reads “More coments”. With no commit in the last 48 months it is listed as archive: work from 2016, kept for the record and dated as measured.
+
+It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/maze-rs/>.
 
 Its source is on [GitHub](https://github.com/korczis/maze-rs) and [GitLab](https://gitlab.com/korczis/maze-rs).
 

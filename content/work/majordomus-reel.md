@@ -3,8 +3,8 @@
 title = "Majordomus reel"
 description = "A promo reel rendered entirely from code. Active in the last 12 months; media and art."
 template = "work.html"
-weight = 3
-updated = "2026-11-18T03:09:16Z"
+weight = 4
+updated = "2026-11-18T06:51:33Z"
 
 [taxonomies]
 tags = ["Media and art", "JavaScript", "HTML", "Shell"]
@@ -28,9 +28,9 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**Majordomus reel** is a project in [Media and art](@/projects/media.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (66.2 %), with [HTML](@/glossary/html.md), [Shell](@/glossary/shell.md) and [CSS](@/glossary/css.md).
+**Majordomus reel** is a project in [Media and art](@/projects/media.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (66.3 %), with [HTML](@/glossary/html.md), [Shell](@/glossary/shell.md) and [CSS](@/glossary/css.md).
 
-The [repository](@/glossary/repository.md) was created on 23 October 2026; its latest [commit](@/glossary/commit.md) is from 18 November 2026. It reads “docs(rules): the site is on Tailwind and Flowbite now; name its surfaces and the class-list source”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created on 23 October 2026; its latest [commit](@/glossary/commit.md) is from 18 November 2026. It reads “fix(site): an explicit language route stays in its language”. That places it among the projects active in the last 12 months.
 
 It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/majordomus-reel/>.
 

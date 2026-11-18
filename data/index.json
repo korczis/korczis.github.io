@@ -1,6 +1,6 @@
 {
  "schema": "korczis-hub-index/v1",
- "generated_at": "2026-11-18T04:00:58Z",
+ "generated_at": "2026-11-18T12:05:02Z",
  "rule": "original = the owner wrote at least half of the listed commits; forks and mirrors are counted, not listed",
  "counts": {
   "github": 448,
@@ -18,7 +18,7 @@
  "dropped": [],
  "supervision": {
   "marker": ".ai/manifest.yaml",
-  "measured_at": "2026-11-18T04:00:58Z",
+  "measured_at": "2026-11-18T12:05:02Z",
   "kept": 0
  },
  "all_repos": [
@@ -1631,7 +1631,7 @@
    ],
    "stars": 0,
    "created_at": "2026-11-09T22:04:50Z",
-   "pushed_at": "2026-11-18T03:06:20Z",
+   "pushed_at": "2026-11-18T10:05:17Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -1664,9 +1664,9 @@
    ],
    "stars": 0,
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-18T03:35:28Z",
+   "pushed_at": "2026-11-18T10:37:33Z",
    "archived": false,
-   "share": 0.93,
+   "share": 0.95,
    "hosts": {
     "github": "https://github.com/korczis/korczis.github.io"
    },
@@ -1842,7 +1842,7 @@
    ],
    "stars": 0,
    "created_at": "2026-10-23T00:51:59Z",
-   "pushed_at": "2026-11-18T03:20:13Z",
+   "pushed_at": "2026-11-18T07:00:26Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -1962,7 +1962,7 @@
     "github": "https://github.com/korczis/maze-rs",
     "gitlab": "https://gitlab.com/korczis/maze-rs"
    },
-   "site": null,
+   "site": "https://korczis.github.io/maze-rs/",
    "supervised": false,
    "category": "science",
    "curated": true
@@ -2189,7 +2189,7 @@
    ],
    "stars": 1,
    "created_at": "2026-10-01T21:05:33Z",
-   "pushed_at": "2026-11-18T03:43:55Z",
+   "pushed_at": "2026-11-18T11:29:16Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -2452,7 +2452,7 @@
    ],
    "stars": 1,
    "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-18T03:51:17Z",
+   "pushed_at": "2026-11-18T11:51:26Z",
    "archived": false,
    "share": 0.99,
    "hosts": {
@@ -3519,7 +3519,7 @@
    "topics": [],
    "stars": 0,
    "created_at": "2026-07-23T22:00:54.776Z",
-   "pushed_at": "2026-11-18T02:16:49.082Z",
+   "pushed_at": "2026-11-18T06:54:45.222Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -4332,8 +4332,8 @@
   "ai": 5,
   "science": 12,
   "web": 14,
-  "media": 8,
   "knowledge": 5,
+  "media": 8,
   "data": 49,
   "tools": 63,
   "security": 5,
@@ -4350,7 +4350,7 @@
   },
   "science": {
    "repos": 12,
-   "sites": 2,
+   "sites": 3,
    "top_language": "Rust",
    "since": "2014"
   },
@@ -4360,17 +4360,17 @@
    "top_language": "JavaScript",
    "since": "2014"
   },
-  "media": {
-   "repos": 8,
-   "sites": 4,
-   "top_language": "JavaScript",
-   "since": "2015"
-  },
   "knowledge": {
    "repos": 5,
    "sites": 1,
    "top_language": "Swift",
    "since": "2013"
+  },
+  "media": {
+   "repos": 8,
+   "sites": 4,
+   "top_language": "JavaScript",
+   "since": "2015"
   },
   "data": {
    "repos": 49,
@@ -5116,7 +5116,7 @@
  "recent": {
   "size": 100,
   "from": "2018-03-08T21:01:52Z",
-  "to": "2026-11-18T03:51:17Z",
+  "to": "2026-11-18T11:51:26Z",
   "mix": {
    "ai": {
     "Rust": 1,
@@ -5135,6 +5135,11 @@
     "CSS": 3,
     "Elixir": 1
    },
+   "knowledge": {
+    "Elixir": 1,
+    "Swift": 2,
+    "Unspecified": 1
+   },
    "media": {
     "JavaScript": 1,
     "Squirrel": 1,
@@ -5142,11 +5147,6 @@
     "HTML": 1,
     "Dockerfile": 1,
     "Elixir": 1
-   },
-   "knowledge": {
-    "Elixir": 1,
-    "Swift": 2,
-    "Unspecified": 1
    },
    "data": {
     "Python": 1,
@@ -5211,7 +5211,7 @@
    ],
    "stars": 1,
    "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-18T03:51:17Z",
+   "pushed_at": "2026-11-18T11:51:26Z",
    "archived": false,
    "share": 0.99,
    "hosts": {
@@ -5239,7 +5239,7 @@
    ],
    "stars": 1,
    "created_at": "2026-10-01T21:05:33Z",
-   "pushed_at": "2026-11-18T03:43:55Z",
+   "pushed_at": "2026-11-18T11:29:16Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -5272,9 +5272,9 @@
    ],
    "stars": 0,
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-18T03:35:28Z",
+   "pushed_at": "2026-11-18T10:37:33Z",
    "archived": false,
-   "share": 0.93,
+   "share": 0.95,
    "hosts": {
     "github": "https://github.com/korczis/korczis.github.io"
    },
@@ -5282,31 +5282,6 @@
    "supervised": true,
    "category": "web",
    "curated": false
-  },
-  {
-   "name": "majordomus-reel",
-   "description": "A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound",
-   "language": "JavaScript",
-   "topics": [
-    "ai-agents",
-    "ffmpeg",
-    "generative",
-    "majordomus",
-    "puppeteer",
-    "video"
-   ],
-   "stars": 0,
-   "created_at": "2026-10-23T00:51:59Z",
-   "pushed_at": "2026-11-18T03:20:13Z",
-   "archived": false,
-   "share": 1,
-   "hosts": {
-    "github": "https://github.com/korczis/majordomus-reel"
-   },
-   "site": "https://korczis.github.io/majordomus-reel/",
-   "supervised": true,
-   "category": "media",
-   "curated": true
   },
   {
    "name": "kompendium-epistemicke-anihilace",
@@ -5325,7 +5300,7 @@
    ],
    "stars": 0,
    "created_at": "2026-11-09T22:04:50Z",
-   "pushed_at": "2026-11-18T03:06:20Z",
+   "pushed_at": "2026-11-18T10:05:17Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -5337,13 +5312,38 @@
    "curated": true
   },
   {
+   "name": "majordomus-reel",
+   "description": "A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound",
+   "language": "JavaScript",
+   "topics": [
+    "ai-agents",
+    "ffmpeg",
+    "generative",
+    "majordomus",
+    "puppeteer",
+    "video"
+   ],
+   "stars": 0,
+   "created_at": "2026-10-23T00:51:59Z",
+   "pushed_at": "2026-11-18T07:00:26Z",
+   "archived": false,
+   "share": 1,
+   "hosts": {
+    "github": "https://github.com/korczis/majordomus-reel"
+   },
+   "site": "https://korczis.github.io/majordomus-reel/",
+   "supervised": true,
+   "category": "media",
+   "curated": true
+  },
+  {
    "name": "openttd-prismatic-bridge",
    "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
    "language": "Squirrel",
    "topics": [],
    "stars": 0,
    "created_at": "2026-07-23T22:00:54.776Z",
-   "pushed_at": "2026-11-18T02:16:49.082Z",
+   "pushed_at": "2026-11-18T06:54:45.222Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -6584,7 +6584,7 @@
     "github": "https://github.com/korczis/maze-rs",
     "gitlab": "https://gitlab.com/korczis/maze-rs"
    },
-   "site": null,
+   "site": "https://korczis.github.io/maze-rs/",
    "supervised": false,
    "category": "science",
    "curated": true

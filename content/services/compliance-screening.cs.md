@@ -36,8 +36,6 @@ Je postavená na: [Elixir](@/glossary/elixir.cs.md), [PostgreSQL](@/glossary/pos
 
 Technologie za ní, změřené z práce, která tyto dovednosti dokládá: [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Python](@/glossary/python.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md), [Claude API](@/glossary/claude-api.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md), [FastAPI](@/glossary/fastapi.cs.md) a [Flowbite Pro](@/glossary/flowbite-pro.cs.md).
 
-Její dovednosti dokládá 1 veřejný repozitář (1 vlastními slovy).
-
 Byla dodána v klientské práci pod dohodami o mlčenlivosti, v odvětví: Developer nemovitostí a Finanční a investiční skupina, v roli: Architekt, Vedoucí inženýr, Inženýr AI, Datový inženýr, Analytik šetření a Poradce; případy užití popisují princip a záměr, nikdy klienta, osobu, datum ani číslo.
 
 Jak číst tuto stránku: postup a případy užití píšu já; dovednosti, technologie a veřejné doklady jsou odvozené z měřených dat a vedou na vlastní stránky, každý [repozitář](@/glossary/repository.cs.md), pojem nebo dovednost.

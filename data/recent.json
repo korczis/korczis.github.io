@@ -1,6 +1,6 @@
 {
  "schema": "korczis-hub-recent/v2",
- "generated_at": "2026-11-18T04:00:59Z",
+ "generated_at": "2026-11-18T12:05:03Z",
  "window_days": 1461,
  "periods": [
   {
@@ -18,7 +18,7 @@
  ],
  "archive": 162,
  "rule": "every original repository of data/index.json; a repository is recent when its default branch has a commit in the window, archive otherwise; host activity dates are ignored",
- "asked": 5,
+ "asked": 6,
  "repos": [
   {
    "name": "oscilla",
@@ -27,14 +27,84 @@
    "category": "science",
    "language": "JavaScript",
    "created_at": "2026-10-01T21:05:33Z",
-   "pushed_at": "2026-11-18T03:43:55Z",
-   "last_commit": "2026-11-18T03:42:03Z",
-   "last_message": "fix(ui): drobečková navigace z registru bez opakovaného názvu, stejná horní mezera po vstupu na stránku (#598)",
+   "pushed_at": "2026-11-18T11:29:16Z",
+   "last_commit": "2026-11-18T11:08:36Z",
+   "last_message": "chore(release): záznam v3.41.4 (#609)",
    "commits": [
+    {
+     "at": "2026-11-18T11:08:36Z",
+     "message": "chore(release): záznam v3.41.4 (#609)",
+     "url": "https://github.com/korczis/oscilla/commit/89209735d4d5a5ba02835a4ddf7da3326f7284f2"
+    },
+    {
+     "at": "2026-11-18T11:02:38Z",
+     "message": "chore(release): record v3.41.4",
+     "url": "https://github.com/korczis/oscilla/commit/b0a3a334c308bbf5ca6cb019c3c124752bcce93c"
+    },
+    {
+     "at": "2026-11-18T10:46:44Z",
+     "message": "chore(release): v3.41.4 (#608)",
+     "url": "https://github.com/korczis/oscilla/commit/15ab37807b9f1e79c2889b44e72185a72e4ae764"
+    },
+    {
+     "at": "2026-11-18T09:43:51Z",
+     "message": "chore(release): v3.41.4",
+     "url": "https://github.com/korczis/oscilla/commit/dc16b9bb6a7fd21ddb1b69466717f2256bf7d179"
+    },
+    {
+     "at": "2026-11-18T09:38:44Z",
+     "message": "fix(release): limit pro plan roadmap odpovídá změřenému běhu pod zátěží (#606)",
+     "url": "https://github.com/korczis/oscilla/commit/0688a0edce2713ebe7c49fda0ef9734c3b130eb2"
+    },
+    {
+     "at": "2026-11-18T07:37:43Z",
+     "message": "fix(release): keep the roadmap bound comment free of a future version",
+     "url": "https://github.com/korczis/oscilla/commit/1f37a19d443fd5c10ddf10aa28022ceaa47e29a6"
+    },
+    {
+     "at": "2026-11-18T07:30:05Z",
+     "message": "fix(release): roadmap spawn bound fits plan roadmap under load",
+     "url": "https://github.com/korczis/oscilla/commit/a3bcbfb4c637df2a8a51f56f35c1ba197e30ba43"
+    },
+    {
+     "at": "2026-11-18T06:58:11Z",
+     "message": "fix(ui): kvalita, výsledky a hlášení v Měření česky nad anglickými daty (U115, pass 7b) (#597)",
+     "url": "https://github.com/korczis/oscilla/commit/1f1a6183b8d760966dc0ce512d2d982e07f4f091"
+    },
+    {
+     "at": "2026-11-18T05:12:28Z",
+     "message": "Merge branch 'main' into fix/czech-pass-7b",
+     "url": "https://github.com/korczis/oscilla/commit/f44d6602e62414609ca2ec284f12019d6f07609b"
+    },
+    {
+     "at": "2026-11-18T04:34:43Z",
+     "message": "chore(plan): triáž plánu schválená vlastníkem (Q112) (#603)",
+     "url": "https://github.com/korczis/oscilla/commit/f525fff055b02e648ad4acedf5f45366f2fff380"
+    },
+    {
+     "at": "2026-11-18T04:01:14Z",
+     "message": "Merge remote-tracking branch 'origin/main' into fix/czech-pass-7b",
+     "url": "https://github.com/korczis/oscilla/commit/a005efc0e854c01dcf375278756ffbd7768e13c0"
+    },
+    {
+     "at": "2026-11-18T03:43:55Z",
+     "message": "Merge branch 'main' into chore/plan-triage-approved",
+     "url": "https://github.com/korczis/oscilla/commit/3ba222a9e334c9801030210372804bab5fae2a54"
+    },
     {
      "at": "2026-11-18T03:42:03Z",
      "message": "fix(ui): drobečková navigace z registru bez opakovaného názvu, stejná horní mezera po vstupu na stránku (#598)",
      "url": "https://github.com/korczis/oscilla/commit/d4bd1ae7946d3c58bf7e3c4fe777aec2f624b893"
+    },
+    {
+     "at": "2026-11-18T03:38:10Z",
+     "message": "chore(plan): apply the owner-approved plan triage (Q112)",
+     "url": "https://github.com/korczis/oscilla/commit/7e27b26552f1d5fdeaea8e953c6431e67338e161"
+    },
+    {
+     "at": "2026-11-18T03:11:03Z",
+     "message": "Merge branch 'main' into fix/czech-pass-7b",
+     "url": "https://github.com/korczis/oscilla/commit/b1bcee11250f6aac74861797ee4e288c56753dc2"
     },
     {
      "at": "2026-11-18T02:10:14Z",
@@ -50,6 +120,11 @@
      "at": "2026-11-18T00:27:12Z",
      "message": "chore(plan): audit-and-stamp train A (Q111 + 4 stamped, 20 left open with gaps)",
      "url": "https://github.com/korczis/oscilla/commit/9703d0d79a60b4bdd31b94f62de8d4ba92764960"
+    },
+    {
+     "at": "2026-11-17T23:59:04Z",
+     "message": "chore(review): the #597 verdict (Czech pass 7b, U115), merge under the legs condition",
+     "url": "https://github.com/korczis/oscilla/commit/9518fe5ec560adaa316f2b543a6ee78f00bfe3a8"
     },
     {
      "at": "2026-11-17T23:45:16Z",
@@ -77,9 +152,24 @@
      "url": "https://github.com/korczis/oscilla/commit/ae96559e7f1f50e557bc749429037863474e84de"
     },
     {
+     "at": "2026-11-17T21:08:39Z",
+     "message": "Merge branch 'main' into fix/czech-pass-7b",
+     "url": "https://github.com/korczis/oscilla/commit/48cd37e15700138d7987a97f3de8492f28698a83"
+    },
+    {
      "at": "2026-11-17T20:18:13Z",
      "message": "chore(release): záznam v3.41.3 (#596)",
      "url": "https://github.com/korczis/oscilla/commit/4682eea40739a7b37a7be04d3d19cd7be0dd5226"
+    },
+    {
+     "at": "2026-11-17T20:05:38Z",
+     "message": "test(visual): MEASURE references re-accepted for the Czech quality panel and result views (U115, pass 7b)",
+     "url": "https://github.com/korczis/oscilla/commit/adfd584ea546321650ef1002ca046be09a6f1496"
+    },
+    {
+     "at": "2026-11-17T19:58:33Z",
+     "message": "Merge remote-tracking branch 'origin/main' into fix/czech-pass-7b",
+     "url": "https://github.com/korczis/oscilla/commit/be5f2b503cf5d3abf3b645959ae933e6006350c4"
     },
     {
      "at": "2026-11-17T19:53:24Z",
@@ -90,96 +180,6 @@
      "at": "2026-11-17T19:39:08Z",
      "message": "chore(release): v3.41.3 (#595)",
      "url": "https://github.com/korczis/oscilla/commit/fc949955a941227e2158f9bbce771a18833c1782"
-    },
-    {
-     "at": "2026-11-17T17:17:14Z",
-     "message": "chore(release): v3.41.3",
-     "url": "https://github.com/korczis/oscilla/commit/339ddc340ad7a6140b745e6b368b54248633296b"
-    },
-    {
-     "at": "2026-11-17T17:12:35Z",
-     "message": "fix(ui): řízené měření v Měření česky nad anglickými daty (U115, pass 7a) (#593)",
-     "url": "https://github.com/korczis/oscilla/commit/0b21624551d66d6b7b8f7ee2afd2edeb3c27d91d"
-    },
-    {
-     "at": "2026-11-17T14:59:39Z",
-     "message": "Merge branch 'main' into fix/czech-pass-7",
-     "url": "https://github.com/korczis/oscilla/commit/a805af99c3470aed294389075cdaad4673a590a0"
-    },
-    {
-     "at": "2026-11-17T13:27:00Z",
-     "message": "chore(review): the #593 verdict (Czech pass 7a, U115), merge under the legs condition",
-     "url": "https://github.com/korczis/oscilla/commit/207fab91cee2da92a66b9e121953edf1e7041070"
-    },
-    {
-     "at": "2026-11-17T12:59:58Z",
-     "message": "chore(plan): E077 nejen na webkitu, přetekl i firefox/http (#594)",
-     "url": "https://github.com/korczis/oscilla/commit/9af695a3b144d060e75006755778f0a9d6c387fa"
-    },
-    {
-     "at": "2026-11-17T12:54:54Z",
-     "message": "chore(plan): E077 is not webkit-only, firefox/http overran too (#593, oscilla-c3)",
-     "url": "https://github.com/korczis/oscilla/commit/1405b9542e6799ca4f7013d019b8a7dc0af4f602"
-    },
-    {
-     "at": "2026-11-17T11:47:03Z",
-     "message": "test(visual): MEASURE references re-accepted for the Czech guided flow (U115, pass 7a)",
-     "url": "https://github.com/korczis/oscilla/commit/b7e36ab5d6a9180796761cb790c10c8cc3264288"
-    },
-    {
-     "at": "2026-11-17T11:42:36Z",
-     "message": "fix(ui): the Measure guided flow speaks Czech over English data (U115, pass 7a)",
-     "url": "https://github.com/korczis/oscilla/commit/c25d0ed4a88ca201f3ea68edf3120de96cda3b90"
-    },
-    {
-     "at": "2026-11-17T10:51:45Z",
-     "message": "chore(release): záznam v3.41.2; U114 hotové (#592)",
-     "url": "https://github.com/korczis/oscilla/commit/5c697d2dfab7184a5f987e157e84108b1714c37a"
-    },
-    {
-     "at": "2026-11-17T10:47:25Z",
-     "message": "chore(release): record v3.41.2; U114 done",
-     "url": "https://github.com/korczis/oscilla/commit/c74a8ad6419e5e739b2d6ae7ffe127bf4bf05e26"
-    },
-    {
-     "at": "2026-11-17T10:36:59Z",
-     "message": "chore(release): v3.41.2 (#591)",
-     "url": "https://github.com/korczis/oscilla/commit/685db9599c9ed669fa296131627b94a1c7d058e2"
-    },
-    {
-     "at": "2026-11-17T09:36:23Z",
-     "message": "chore(release): v3.41.2",
-     "url": "https://github.com/korczis/oscilla/commit/494d7b0db130b0b3f2ba628dc56a0e792cb9af86"
-    },
-    {
-     "at": "2026-11-17T09:28:22Z",
-     "message": "fix(ui): stavy kalibrace česky nad anglickými daty, no-fake-science v3 (U114 b) (#590)",
-     "url": "https://github.com/korczis/oscilla/commit/5af668dffa02f59633065e72256c2e52563910f3"
-    },
-    {
-     "at": "2026-11-17T08:03:03Z",
-     "message": "chore(review): the #590 verdict (Czech pass 6b, U114 b), merge under the legs condition",
-     "url": "https://github.com/korczis/oscilla/commit/67688cecc41e638f21e45e6b9baea5107d1a2b98"
-    },
-    {
-     "at": "2026-11-17T07:15:02Z",
-     "message": "fix(ui): calibrationShown replaces phrases longest first, never inside a word (C3-590-1)",
-     "url": "https://github.com/korczis/oscilla/commit/58aadf2386450ac399d4729c1559539a8cd8fbf2"
-    },
-    {
-     "at": "2026-11-17T07:06:51Z",
-     "message": "test(visual): MEASURE references re-accepted for the Czech calibration display (U114 b)",
-     "url": "https://github.com/korczis/oscilla/commit/e1a718499235c85cda2a57e94c5bc5c88a788f75"
-    },
-    {
-     "at": "2026-11-17T06:59:54Z",
-     "message": "test(v3-ui): calibration-czech opens the older record when older-claim imported it first",
-     "url": "https://github.com/korczis/oscilla/commit/9fc2c5eac93a791413ae227b106d76766ae3cfc2"
-    },
-    {
-     "at": "2026-11-17T06:51:50Z",
-     "message": "fix(ui): the calibration states are shown in Czech over English data (U114 b)",
-     "url": "https://github.com/korczis/oscilla/commit/9059cde05fe8cee87bba85318ea380d0e732b24c"
     }
    ],
    "languages": [
@@ -227,13 +227,853 @@
    "supervised": true
   },
   {
+   "name": "korczis.github.io",
+   "period": 12,
+   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+   "category": "web",
+   "language": "JavaScript",
+   "created_at": "2024-12-24T16:48:15Z",
+   "pushed_at": "2026-11-18T10:37:33Z",
+   "last_commit": "2026-11-18T10:36:42Z",
+   "last_message": "chore(merge): integrate #39, the case services card names the skill overlap",
+   "commits": [
+    {
+     "at": "2026-11-18T10:36:42Z",
+     "message": "chore(merge): integrate #39, the case services card names the skill overlap",
+     "url": "https://github.com/korczis/korczis.github.io/commit/8a93b252470eb1ffcd4c1f40ed39ceb322d466ef"
+    },
+    {
+     "at": "2026-11-18T10:13:42Z",
+     "message": "fix(cases): the services card names the skill overlap, not a delivery",
+     "url": "https://github.com/korczis/korczis.github.io/commit/dfe28569d6e302a63a3565bd4a98e0ad428f0e5e"
+    },
+    {
+     "at": "2026-11-18T09:39:31Z",
+     "message": "chore(merge): integrate #38, services and case studies sections in llms.txt",
+     "url": "https://github.com/korczis/korczis.github.io/commit/4105c47568182eac71a914d417af087b7850e0fe"
+    },
+    {
+     "at": "2026-11-18T09:13:15Z",
+     "message": "chore(merge): bring master (#37) into llms-services",
+     "url": "https://github.com/korczis/korczis.github.io/commit/8b1bf9f56a31380959069c46e44533a09f9253a9"
+    },
+    {
+     "at": "2026-11-18T09:11:33Z",
+     "message": "chore(merge): integrate #37, a derived, anonymised case study per client engagement",
+     "url": "https://github.com/korczis/korczis.github.io/commit/d05a43c8fea852c69fc186334ea278b6eca34eb2"
+    },
+    {
+     "at": "2026-11-18T09:01:24Z",
+     "message": "feat(llms): services and case studies sections in llms.txt",
+     "url": "https://github.com/korczis/korczis.github.io/commit/a9ecc7412fe6df78e24a760449e841b6309216b4"
+    },
+    {
+     "at": "2026-11-18T08:57:48Z",
+     "message": "chore(merge): integrate #32, live READMEs, services, skills and evidence for every language and technology",
+     "url": "https://github.com/korczis/korczis.github.io/commit/0063c12fb42050d680a423517d83b1a6b1ddcf93"
+    },
+    {
+     "at": "2026-11-18T08:36:22Z",
+     "message": "chore(merge): bring readme-embed into case-studies; short month names from translations",
+     "url": "https://github.com/korczis/korczis.github.io/commit/df09b16b80f145f04d8f60f57097ba55e944c332"
+    },
+    {
+     "at": "2026-11-18T08:33:25Z",
+     "message": "fix(glossary): a technology chip leads to the evidence anchor only when the term page has one",
+     "url": "https://github.com/korczis/korczis.github.io/commit/f2f2813a4caa70891dc532319dd3627efcccc58c"
+    },
+    {
+     "at": "2026-11-18T08:13:57Z",
+     "message": "feat(landing): offers lead to their services, /about/ shows what I did for clients",
+     "url": "https://github.com/korczis/korczis.github.io/commit/2ef102682c62a2d48f8d102298dde3ad083a5256"
+    },
+    {
+     "at": "2026-11-18T08:09:27Z",
+     "message": "chore(merge): bring master (#36) into readme-embed; chips named by their visible text",
+     "url": "https://github.com/korczis/korczis.github.io/commit/55b7bfbce45f43a972f410e97809d682db2ca249"
+    },
+    {
+     "at": "2026-11-18T08:06:24Z",
+     "message": "chore(merge): integrate #36, Czech dates and honest skill labels on /hire/, repositories and catalogue",
+     "url": "https://github.com/korczis/korczis.github.io/commit/36fd5375b904749641e596b9387cb8f0103f9450"
+    },
+    {
+     "at": "2026-11-18T07:45:01Z",
+     "message": "fix(i18n): Czech month names from translations, Czech number format on /about/",
+     "url": "https://github.com/korczis/korczis.github.io/commit/538e294f186ebebe0beab47edee9c6f7e1110a61"
+    },
+    {
+     "at": "2026-11-18T07:41:48Z",
+     "message": "feat(shell): the sidebar skillset lists every language and the client work's technologies",
+     "url": "https://github.com/korczis/korczis.github.io/commit/f7c59c1ed9ce86ae73c85bdc44ab57a2f19f2b8c"
+    },
+    {
+     "at": "2026-11-18T07:38:48Z",
+     "message": "feat(cases): a derived, anonymised case study per client engagement",
+     "url": "https://github.com/korczis/korczis.github.io/commit/46bb57c77b2282083a00d6ef3fedb1dcaba8b9c3"
+    },
+    {
+     "at": "2026-11-18T07:24:19Z",
+     "message": "chore(merge): bring master (#33-#35) into readme-embed",
+     "url": "https://github.com/korczis/korczis.github.io/commit/eead0044e7ee3e516d74a3e8a1aa358d38605526"
+    },
+    {
+     "at": "2026-11-18T07:19:18Z",
+     "message": "feat(i18n): Czech dates on the recent-work list",
+     "url": "https://github.com/korczis/korczis.github.io/commit/6675493cad4e5c18c5d37e1d235107bdad6f1eb9"
+    },
+    {
+     "at": "2026-11-18T07:18:12Z",
+     "message": "chore(merge): bring master (#33) into cs-follow-up",
+     "url": "https://github.com/korczis/korczis.github.io/commit/1f70ea8e0f7385f7b57e179c7ccd3c7da2e96ff6"
+    },
+    {
+     "at": "2026-11-18T07:16:48Z",
+     "message": "chore(merge): integrate #33, a page for every original repository",
+     "url": "https://github.com/korczis/korczis.github.io/commit/94701a9f43b49ee0d656f053f9336ffec5d6544b"
+    },
+    {
+     "at": "2026-11-18T07:14:54Z",
+     "message": "feat(i18n): Czech dates and honest skill labels on /hire/, repositories and catalogue",
+     "url": "https://github.com/korczis/korczis.github.io/commit/c8eef294c1db0cf96e60cecd88901d3fb10de72e"
+    },
+    {
+     "at": "2026-11-18T06:15:32Z",
+     "message": "chore(merge): bring the offer-first landing into every-repo-pages",
+     "url": "https://github.com/korczis/korczis.github.io/commit/6b7d381c5406d8cc421403ebc20e979135685a52"
+    },
+    {
+     "at": "2026-11-18T06:13:57Z",
+     "message": "chore(merge): integrate #35, the offer-first landing with two primary paths",
+     "url": "https://github.com/korczis/korczis.github.io/commit/e9fe56bf1744b4a8a370c1b2eac8d7921058fa6c"
+    },
+    {
+     "at": "2026-11-18T05:45:50Z",
+     "message": "chore(merge): bring master into every-repo-pages",
+     "url": "https://github.com/korczis/korczis.github.io/commit/62c9adc7071382a40bf44d36ddb67b0d92070851"
+    },
+    {
+     "at": "2026-11-18T05:44:05Z",
+     "message": "chore(merge): bring master (#34) into landing-offer",
+     "url": "https://github.com/korczis/korczis.github.io/commit/33572ecc9d3a53c60ffe158f13505e2f44a68c2c"
+    },
+    {
+     "at": "2026-11-18T05:43:46Z",
+     "message": "chore(merge): integrate #34, the evidence landing on top of the hiring hero",
+     "url": "https://github.com/korczis/korczis.github.io/commit/9e4ea192cececd70d91b6cea7c443c39eb58ae00"
+    },
+    {
+     "at": "2026-11-18T05:42:16Z",
+     "message": "fix(audit): the first-viewport rate check reads a non-breaking space as a space",
+     "url": "https://github.com/korczis/korczis.github.io/commit/f9cf894a41fcfee6d6140d7a015ffe5a941dfed0"
+    },
+    {
+     "at": "2026-11-18T05:33:39Z",
+     "message": "feat(landing): offer first, two primary paths, cases before the catalogue",
+     "url": "https://github.com/korczis/korczis.github.io/commit/da29a411c1c23f19173b28e5d3b37a52d8a58101"
+    },
+    {
+     "at": "2026-11-18T05:32:52Z",
+     "message": "feat(i18n): Czech typesetting and per-language date formats",
+     "url": "https://github.com/korczis/korczis.github.io/commit/ab3daa10de6bfd5685278c515ae27be8726b8cac"
+    },
+    {
+     "at": "2026-11-18T05:15:11Z",
+     "message": "chore(merge): bring master into landing-evidence",
+     "url": "https://github.com/korczis/korczis.github.io/commit/d0f6422ee79a6a60ed5d07315a4dc281add28413"
+    },
+    {
+     "at": "2026-11-18T05:07:36Z",
+     "message": "chore(merge): integrate #31, repository dossiers checked claim by claim",
+     "url": "https://github.com/korczis/korczis.github.io/commit/5792ab3e7f37a70c304d712430d87dfc6e4a3298"
+    }
+   ],
+   "languages": [
+    {
+     "name": "JavaScript",
+     "share": 61.7
+    },
+    {
+     "name": "HTML",
+     "share": 36.4
+    },
+    {
+     "name": "CSS",
+     "share": 1.1
+    },
+    {
+     "name": "Shell",
+     "share": 0.8
+    }
+   ],
+   "readme": "The personal hub of Tomas Korcak (korczis). It covers who I am, the projects I build with their live sites, the stack behind them, and Majordomus, which supervises the work.",
+   "readme_shared": false,
+   "description_shared": false,
+   "topics": [
+    "accessibility",
+    "ai-agents",
+    "alpinejs",
+    "chartjs",
+    "cytoscape",
+    "echarts",
+    "flowbite",
+    "github-pages",
+    "majordomus",
+    "p5js",
+    "personal-website",
+    "portfolio",
+    "tailwindcss",
+    "zola"
+   ],
+   "hosts": {
+    "github": "https://github.com/korczis/korczis.github.io"
+   },
+   "site": null,
+   "curated": false,
+   "stars": 0,
+   "supervised": true
+  },
+  {
+   "name": "prismatic-majordomus",
+   "period": 12,
+   "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+   "category": "ai",
+   "language": "Rust",
+   "created_at": "2026-09-03T20:24:57Z",
+   "pushed_at": "2026-11-18T11:51:26Z",
+   "last_commit": "2026-11-18T08:12:44Z",
+   "last_message": "Merge pull request #3091 from korczis/release/record-v1.1.0",
+   "commits": [
+    {
+     "at": "2026-11-18T08:12:44Z",
+     "message": "Merge pull request #3091 from korczis/release/record-v1.1.0",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/68325d3cfae0c05a5cfa3b6cd04de38e4aec6621"
+    },
+    {
+     "at": "2026-11-18T07:01:25Z",
+     "message": "chore(release): record v1.1.0 and the metadata it publishes",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/f22baf14bf30298f47966f90bd69284ce81bd743"
+    },
+    {
+     "at": "2026-11-18T00:04:07Z",
+     "message": "Merge pull request #3084 from korczis/fix/delivery-observed-at-the-merge-of-train-f",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/5bc2ddb10ccc5f2e5528e03c08b0af8ed4e26a9e"
+    },
+    {
+     "at": "2026-11-17T21:11:49Z",
+     "message": "docs(plan): derive delivery observed at master's merge of #3077",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/b0ffb7d8b766db67771995214e8971d7ac2ff09f"
+    },
+    {
+     "at": "2026-11-17T19:41:34Z",
+     "message": "Merge pull request #3077 from korczis/integration/train-20261117f",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/ae13be1bd138be3139b4fd9a1a11de8c6b2f7c88"
+    },
+    {
+     "at": "2026-11-17T13:31:00Z",
+     "message": "Merge #3062 (feature/I4324-a-worktree-whose-work-is-in-trunk-is-finished) into the combined top on 7222b343dc",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/41904d87959ae992ef78a2abdbf881be687002af"
+    },
+    {
+     "at": "2026-11-17T13:17:42Z",
+     "message": "Merge #3070 (plan/i4628-a-finish-over-uncommitted-work-says-so) into the combined top on 7222b343dc",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/54edbb51ac6e92188a86ba2aba3952ca996c7254"
+    },
+    {
+     "at": "2026-11-17T13:08:23Z",
+     "message": "Merge #3068 (fix/a-merge-does-not-borrow-a-foreign-executable) into the combined top on 7222b343dc",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/188d1134bb6c1ce4b9a09e7a03448650459f6f36"
+    },
+    {
+     "at": "2026-11-17T12:41:21Z",
+     "message": "fix(release): the release job records its executable's commit at the build (I4627)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/9cbabdd175ded55842d4b671f3d18387f58d13e5"
+    },
+    {
+     "at": "2026-11-17T08:49:07Z",
+     "message": "docs(plan): I4628's scope names its one case; record I4630",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/05dd86c240345523706b31705ed5678c1cb93f29"
+    },
+    {
+     "at": "2026-11-17T08:40:44Z",
+     "message": "chore(release): declare 1.1.0, the minor release #3062's output requires",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/0807fc1b4222d6bc04d8ba4a1fbdef4fae58d940"
+    },
+    {
+     "at": "2026-11-17T06:32:46Z",
+     "message": "Merge pull request #3069 from korczis/integration/top-20261117b",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/7222b343dcb40ac2a2843111f8bdf7a2aa099774"
+    },
+    {
+     "at": "2026-11-17T03:48:05Z",
+     "message": "docs(plan): a completed finish over uncommitted work says so (I4628)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/e5a19d3b9c964ceece031a92961ed0c1608d45a9"
+    },
+    {
+     "at": "2026-11-17T03:41:20Z",
+     "message": "docs(plan): derive delivery observed at the combined top on e54bbdb12a",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/a5e1f4375620c3ba6755d6ad743a42eb4052bcdb"
+    },
+    {
+     "at": "2026-11-17T03:31:59Z",
+     "message": "test(worktree): cover every changed region of the landed readings and the reclaim",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/0ff5bf34faf8603a0ea22a120d4bd6d4d4634a51"
+    },
+    {
+     "at": "2026-11-17T03:25:35Z",
+     "message": "Merge #3064 (feat/a-build-is-bounded-by-the-machine) into the combined top on e54bbdb12a",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/32c0304f3417a86367e0a271081b05e90f1e9532"
+    },
+    {
+     "at": "2026-11-17T03:17:07Z",
+     "message": "test(derive): the I4627 case pins its shell sort (I4627)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/2f35f30d717bf889ff5b1b3e8605191edb15e50d"
+    },
+    {
+     "at": "2026-11-17T03:05:01Z",
+     "message": "Merge #3047 (fix/resolver-borrows-a-sibling-executable) into the combined top on e54bbdb12a",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/edd387c3c4236aa110cc43ab319224dd774a3cf0"
+    },
+    {
+     "at": "2026-11-17T02:50:30Z",
+     "message": "Merge #3044 (fix/evidence-record-names-suite-coverage) into the combined top on e54bbdb12a",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/de98547925151e671774238fceb1bd61903a4f1f"
+    },
+    {
+     "at": "2026-11-17T02:37:22Z",
+     "message": "fix(derive): a merged crate does not borrow an executable of another generation (I4627)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/728afa4302ce4c641f719b390af5361a88857b40"
+    },
+    {
+     "at": "2026-11-17T02:26:16Z",
+     "message": "Merge #3060 (fix/commit-debt-counts-a-renumbered-reference) into the combined top on e54bbdb12a",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/a280c3279ff25008931db9c4e46c742d6362d0da"
+    },
+    {
+     "at": "2026-11-16T23:20:53Z",
+     "message": "test(evidence): a refused write of the suite line ends the recording there",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/33ae4a9299b8b4ceacd6039a90db78957259e5a1"
+    },
+    {
+     "at": "2026-11-16T23:11:18Z",
+     "message": "feat(build): a local build refuses beside five cargo builds (I3825)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/18c3336cc3e93e4b5ac042e35438fbfa96a8d1df"
+    },
+    {
+     "at": "2026-11-16T23:05:50Z",
+     "message": "Merge pull request #3061 from korczis/plan/i4605-commit-control-character-20261116",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/e54bbdb12a99cd3ff4572f2a1574c1e5566ae8ef"
+    },
+    {
+     "at": "2026-11-16T23:01:18Z",
+     "message": "docs(plan): derive delivery observed at the merge of a134a0f",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/15f1501277d54f3309d851a50827f6be837ffdc0"
+    },
+    {
+     "at": "2026-11-16T22:51:35Z",
+     "message": "docs(plan): derive delivery observed at the merge of a134a0f",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/1acaf648d0ec908da9443f61f292f07b4f7b44da"
+    },
+    {
+     "at": "2026-11-16T22:40:47Z",
+     "message": "Merge origin/master a134a0f into #3062",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/ef77042a47c3c9c4777c1e956b8c222063cd3f91"
+    },
+    {
+     "at": "2026-11-16T22:21:48Z",
+     "message": "Merge origin/master a134a0f into #3047",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/72f490f5ba5ac00d057ce024d956f0b78b396126"
+    },
+    {
+     "at": "2026-11-16T22:07:34Z",
+     "message": "feat(worktree): cleanup offers a worktree whose work is already in the trunk",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/9998ad3f52d0367c654c9eb7affea63047eeeb87"
+    },
+    {
+     "at": "2026-11-16T21:56:56Z",
+     "message": "docs(plan): derive delivery observed at the merge of a134a0f",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/f7b96e7c36981f4351e7546750874975ef73d9ee"
+    }
+   ],
+   "languages": [
+    {
+     "name": "Rust",
+     "share": 60.7
+    },
+    {
+     "name": "Shell",
+     "share": 29.6
+    },
+    {
+     "name": "JavaScript",
+     "share": 4.1
+    },
+    {
+     "name": "HTML",
+     "share": 3.8
+    },
+    {
+     "name": "CSS",
+     "share": 0.6
+    },
+    {
+     "name": "Python",
+     "share": 0.4
+    }
+   ],
+   "readme": "Your AI agents say the work is done. Majordomus makes them prove it.",
+   "readme_shared": false,
+   "description_shared": false,
+   "topics": [
+    "agentic-ai",
+    "ai",
+    "ai-agents",
+    "ai-governance",
+    "claude-code",
+    "cli",
+    "codex",
+    "continuous-integration",
+    "developer-tools",
+    "devops",
+    "gemini",
+    "llm",
+    "llmops",
+    "mcp",
+    "mermaid",
+    "model-context-protocol",
+    "multi-agent",
+    "policy-as-code",
+    "rust"
+   ],
+   "hosts": {
+    "github": "https://github.com/korczis/prismatic-majordomus"
+   },
+   "site": "https://korczis.github.io/prismatic-majordomus/",
+   "curated": true,
+   "stars": 1,
+   "supervised": true
+  },
+  {
+   "name": "majordomus-reel",
+   "period": 12,
+   "description": "A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound",
+   "category": "media",
+   "language": "JavaScript",
+   "created_at": "2026-10-23T00:51:59Z",
+   "pushed_at": "2026-11-18T07:00:26Z",
+   "last_commit": "2026-11-18T06:51:33Z",
+   "last_message": "fix(site): an explicit language route stays in its language",
+   "commits": [
+    {
+     "at": "2026-11-18T06:51:33Z",
+     "message": "fix(site): an explicit language route stays in its language",
+     "url": "https://github.com/korczis/majordomus-reel/commit/6429c67267499b149e25e5bf0562136333e7ca02"
+    },
+    {
+     "at": "2026-11-18T05:17:56Z",
+     "message": "chore(quality): iteration 6, the Czech renders of every English cut format and the film's tablet and desktop",
+     "url": "https://github.com/korczis/majordomus-reel/commit/21eb794f8056d030d72de3cbc8fdad93a0a6b20f"
+    },
+    {
+     "at": "2026-11-18T04:41:42Z",
+     "message": "Merge pull request #1: every user interface is built on Flowbite Pro",
+     "url": "https://github.com/korczis/majordomus-reel/commit/e518ba1a3cdf684eb3865926230a4ed3e2ce6844"
+    },
+    {
+     "at": "2026-11-18T04:40:56Z",
+     "message": "Merge main into chore/ui-uses-flowbite-pro: the rule as main carries it (d6ec488)",
+     "url": "https://github.com/korczis/majordomus-reel/commit/67d5ecd55e7a46f580adb6b4cfafbb4dae802e43"
+    },
+    {
+     "at": "2026-11-18T03:09:16Z",
+     "message": "docs(rules): the site is on Tailwind and Flowbite now; name its surfaces and the class-list source",
+     "url": "https://github.com/korczis/majordomus-reel/commit/d6ec488baab7f04c0c0de76cd7897cfe108dbcd9"
+    },
+    {
+     "at": "2026-11-18T03:08:49Z",
+     "message": "docs(rules): name this repository's UI surfaces, debt and exemptions",
+     "url": "https://github.com/korczis/majordomus-reel/commit/aa37bd9d56c2f03a7853c578dac6a0237edb359a"
+    },
+    {
+     "at": "2026-11-18T03:08:49Z",
+     "message": "docs(rules): every user interface is built on Flowbite Pro",
+     "url": "https://github.com/korczis/majordomus-reel/commit/bf39b3defc43c808e55737dfc7a4305adc068cd6"
+    },
+    {
+     "at": "2026-11-18T02:58:21Z",
+     "message": "fix(facts): find prismatic-majordomus beside the primary checkout from a linked worktree",
+     "url": "https://github.com/korczis/majordomus-reel/commit/6b9e9a2b4c853da4df592d1758068c21a58742cb"
+    },
+    {
+     "at": "2026-11-18T02:24:59Z",
+     "message": "fix(quality): prove the recorded iteration read-only at finish",
+     "url": "https://github.com/korczis/majordomus-reel/commit/8af6a9a9b75b3fb74acd725eb8884c17132f0c72"
+    },
+    {
+     "at": "2026-11-18T01:39:47Z",
+     "message": "feat(site): bilingual site, English at the root and Czech at /cs/, with a switcher and an automatic first choice",
+     "url": "https://github.com/korczis/majordomus-reel/commit/ed34393e7baae85b9dbbcc0fcc27c2566779fe64"
+    },
+    {
+     "at": "2026-11-18T00:51:41Z",
+     "message": "feat(rules): bilingual reel and the every-iteration-better ratchet",
+     "url": "https://github.com/korczis/majordomus-reel/commit/f534a0c4e5cb89d9d01ae184a813aa115da67963"
+    },
+    {
+     "at": "2026-11-18T00:48:01Z",
+     "message": "feat(i18n): render every cut in Czech, words, voice and screen alike",
+     "url": "https://github.com/korczis/majordomus-reel/commit/d8c4757778dfb4a37e505852a36ebd9cd7bf3d27"
+    },
+    {
+     "at": "2026-11-18T00:32:59Z",
+     "message": "fix(site): the carousel keeps its own autoplay timer, and the pressed chip stays in sight",
+     "url": "https://github.com/korczis/majordomus-reel/commit/ea2482f00662bc758d84f8eb00361a06e0362d62"
+    },
+    {
+     "at": "2026-11-18T00:09:57Z",
+     "message": "feat(site): a derived route per cut, stories first in a carousel, browser and gallery",
+     "url": "https://github.com/korczis/majordomus-reel/commit/b27e04989355aafdcd0d0478bf17082276387ba0"
+    },
+    {
+     "at": "2026-11-18T00:06:19Z",
+     "message": "feat(reel): render any cut in phone, tablet and desktop, and one story per use-case category",
+     "url": "https://github.com/korczis/majordomus-reel/commit/227113a62d5703f18f9f27435a84294ab8f429d8"
+    },
+    {
+     "at": "2026-11-17T19:23:00Z",
+     "message": "feat(facts): pre-render a release from the commit that declares it, publish only when the tag agrees",
+     "url": "https://github.com/korczis/majordomus-reel/commit/bd3d727da0a52c336e76084f521151eefa813c30"
+    },
+    {
+     "at": "2026-11-17T19:11:51Z",
+     "message": "fix(reel): CAPTIONS=1 burns the captions in again",
+     "url": "https://github.com/korczis/majordomus-reel/commit/31138d677e1128347c45a0b39d11a2b4ed289481"
+    },
+    {
+     "at": "2026-11-17T18:47:40Z",
+     "message": "feat(site): derive every length and requirement the page states; no drifting counts in the docs",
+     "url": "https://github.com/korczis/majordomus-reel/commit/0fa0ce88dc7925640aa610512380389f5244d510"
+    },
+    {
+     "at": "2026-11-17T11:11:50Z",
+     "message": "feat(reel): derive every Majordomus fact from the newest release, gate typed ones",
+     "url": "https://github.com/korczis/majordomus-reel/commit/9261d7c362cdc515cd603c909f4983e410974185"
+    },
+    {
+     "at": "2026-10-28T21:35:54Z",
+     "message": "docs(rules): name this repository's UI surfaces, debt and exemptions",
+     "url": "https://github.com/korczis/majordomus-reel/commit/541bbcfe1c0406e21c96d53f982d18194f52eceb"
+    },
+    {
+     "at": "2026-10-28T21:13:57Z",
+     "message": "docs(rules): every user interface is built on Flowbite Pro",
+     "url": "https://github.com/korczis/majordomus-reel/commit/19b304dcaa7ff885e8829a213aa50933bf5e9d86"
+    },
+    {
+     "at": "2026-10-26T01:08:35Z",
+     "message": "chore(rules): vendor the majordomus standard rules of 1.0.0-alpha.8",
+     "url": "https://github.com/korczis/majordomus-reel/commit/3fdfed0651a2d8ce515b1e09a4e41e609a5a7e59"
+    },
+    {
+     "at": "2026-10-26T00:58:07Z",
+     "message": "feat(reel): v5.7, majordomus 1.0.0-alpha.8: no ordinary command builds, one-commit deployments",
+     "url": "https://github.com/korczis/majordomus-reel/commit/7f3b68446a76483f6a08ead76b80972a42de7d5b"
+    },
+    {
+     "at": "2026-10-25T22:35:47Z",
+     "message": "feat(reel): v5.6, two new scenes: integration trains and the mesh build cache",
+     "url": "https://github.com/korczis/majordomus-reel/commit/9558f339f199bb137ece912b25aae665564915ee"
+    },
+    {
+     "at": "2026-10-23T18:02:39Z",
+     "message": "docs(metadata): v5.5 published as zcDgXorKhjs; v5.3 and v5.1 unlisted and linked to it",
+     "url": "https://github.com/korczis/majordomus-reel/commit/290f3f7cbe71a2f8bf63bd6add8370e994202cc8"
+    },
+    {
+     "at": "2026-10-23T17:59:37Z",
+     "message": "feat(site): link the v5.5 film on YouTube",
+     "url": "https://github.com/korczis/majordomus-reel/commit/9f3035150b2934538d1a318a847e90b60c7fbd85"
+    },
+    {
+     "at": "2026-10-23T16:57:58Z",
+     "message": "docs(readme): publish command for the v5.5 hybrid cut",
+     "url": "https://github.com/korczis/majordomus-reel/commit/91152e740dd66b937b5c819fe1a953b43a9e53d6"
+    },
+    {
+     "at": "2026-10-23T16:53:44Z",
+     "message": "feat(reel): v5.5, the hybrid: modern networks, v5.1 motion, four new scenes",
+     "url": "https://github.com/korczis/majordomus-reel/commit/ea17e1d0c9c7477345d79af431d99d19a3c2c13a"
+    },
+    {
+     "at": "2026-10-23T04:07:14Z",
+     "message": "docs(readme): publish command matches the v5.3 cut on gh-pages",
+     "url": "https://github.com/korczis/majordomus-reel/commit/a03a90d185bf986fbb494c5b52b2ceffcb0d311f"
+    },
+    {
+     "at": "2026-10-23T02:09:05Z",
+     "message": "feat(reel): v5.3, the two hooks and the local half; the act in the eyebrow",
+     "url": "https://github.com/korczis/majordomus-reel/commit/2dc1dd1bae7022d17b100fa3954b6a9004dd425f"
+    }
+   ],
+   "languages": [
+    {
+     "name": "JavaScript",
+     "share": 66.3
+    },
+    {
+     "name": "HTML",
+     "share": 32
+    },
+    {
+     "name": "Shell",
+     "share": 1
+    },
+    {
+     "name": "CSS",
+     "share": 0.5
+    },
+    {
+     "name": "Python",
+     "share": 0.2
+    }
+   ],
+   "readme": "A vertical promo video for Majordomus, rendered from code: narration, every frame, the music and the sound effects. Nothing is filmed, licensed or generated by a video model.",
+   "readme_shared": false,
+   "description_shared": false,
+   "topics": [
+    "ai-agents",
+    "ffmpeg",
+    "generative",
+    "majordomus",
+    "puppeteer",
+    "video"
+   ],
+   "hosts": {
+    "github": "https://github.com/korczis/majordomus-reel"
+   },
+   "site": "https://korczis.github.io/majordomus-reel/",
+   "curated": true,
+   "stars": 0,
+   "supervised": true
+  },
+  {
+   "name": "kompendium-epistemicke-anihilace",
+   "period": 12,
+   "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
+   "category": "knowledge",
+   "language": "Elixir",
+   "created_at": "2026-11-09T22:04:50Z",
+   "pushed_at": "2026-11-18T10:05:17Z",
+   "last_commit": "2026-11-18T06:34:59Z",
+   "last_message": "test(e2e): kontrola zvětšení po interakci znovu projede líné grafy",
+   "commits": [
+    {
+     "at": "2026-11-18T06:34:59Z",
+     "message": "test(e2e): kontrola zvětšení po interakci znovu projede líné grafy",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/0e08d15bb808ac33e1583708fe143b6aaf1fa918"
+    },
+    {
+     "at": "2026-11-18T05:14:19Z",
+     "message": "fix(viz): posuvník intenzity najde plátno v obrázku i po zabalení rámcem",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/9eef54cfd74543f9460e0c728632bc8a4a5db8e2"
+    },
+    {
+     "at": "2026-11-18T04:00:23Z",
+     "message": "chore(data): surfaces.json po přidání stránek původní taxonomie",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/07bad5cc9e21181bc77a2081a4dcb9a5f1ca3428"
+    },
+    {
+     "at": "2026-11-18T03:56:38Z",
+     "message": "chore(data): odvozená data přegenerovaná po sloučení vlaku 2",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/e3877ac926ba14670347a30d975aa76cc6168386"
+    },
+    {
+     "at": "2026-11-18T03:41:36Z",
+     "message": "Merge fix/kapitola-6-hub (327cc2f2) into train-2",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/27e97de91cda84b00f813afed9f33f0440039b84"
+    },
+    {
+     "at": "2026-11-18T03:40:33Z",
+     "message": "Merge feature/puvodni-taxonomie-rebuild (210a1514) into train-2",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/847f6c79052f64428121bfd745cb8756f813993a"
+    },
+    {
+     "at": "2026-11-18T03:40:32Z",
+     "message": "Merge feature/echarts-only (e2c35a69) into train-2",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/e895e5e937dbd98ef45fb5c3e85f58c02032e939"
+    },
+    {
+     "at": "2026-11-18T03:15:24Z",
+     "message": "chore(data): surfaces.json regenerated for the merged train",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/c78c0077f833e202b1aed135450a78ef6dde0ef3"
+    },
+    {
+     "at": "2026-11-18T03:10:47Z",
+     "message": "chore(data): surfaces.json regenerated without Chart.js and cytoscape",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/e2c35a6907240050967803312a5e9b3d65840e90"
+    },
+    {
+     "at": "2026-11-18T03:08:08Z",
+     "message": "test(viz): a page with a derived view counts its chart_inline hosts as painted",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/40118015a59ae81c8eb792ab35831e11b4b5e1d5"
+    },
+    {
+     "at": "2026-11-18T03:07:00Z",
+     "message": "test(scripts): the worklist and wiki cases take allocated numbers 64-67",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/352763f46c1453f1d1d2632bff9a8b3aff531a53"
+    },
+    {
+     "at": "2026-11-18T03:01:52Z",
+     "message": "Merge feature/ui-consistency (b8fa5fda) into train-2",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/73736a0bc6e15dc1b683685876f7aca2d71a716a"
+    },
+    {
+     "at": "2026-11-18T02:57:08Z",
+     "message": "Merge fix/interactivity (981153fa) into train-2",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/b336774bf64bd8dcc68d9999229212dff3dd59b6"
+    },
+    {
+     "at": "2026-11-18T02:57:07Z",
+     "message": "Merge feature/echarts-only (98fe05bd) into train-2",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/e553d4d50a9e01bd2f123593b6942d7d374740e7"
+    },
+    {
+     "at": "2026-11-18T02:54:11Z",
+     "message": "chore(data): derived files regenerated after the second kapitola-6 hub and its links",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/327cc2f246924e6aac61cc6326a62db1b952fff9"
+    },
+    {
+     "at": "2026-11-18T02:45:50Z",
+     "message": "docs(ai): the kapitola-6 record lists its follow-up pages as delivered",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/f53504bfc35d84cbe252c00d1a7a9a12d9b4deef"
+    },
+    {
+     "at": "2026-11-18T02:43:10Z",
+     "message": "docs(content): epistemická singularita links kapitola-6 without the cluster frame",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/164a83707a84eb4430d90b2705bc4160aa6880ae"
+    },
+    {
+     "at": "2026-11-18T02:41:21Z",
+     "message": "docs(content): the kapitola-6 techniques hub follows the techniques, not clusters D–F",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/dcc195905c0595ff491d563df092d0c5d03add77"
+    },
+    {
+     "at": "2026-11-18T02:12:12Z",
+     "message": "chore(data): derived files regenerated after the kapitola-6 hub rewrite",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/199d7202b6c02739b84eb2c01217e9a74f76eb85"
+    },
+    {
+     "at": "2026-11-18T02:05:18Z",
+     "message": "docs(content): the hub's bibliography entries on one line each, references regenerated",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/41125dec5043887c499b8d6877dbada88ab445c9"
+    },
+    {
+     "at": "2026-11-18T01:59:10Z",
+     "message": "fix(content): původní taxonomie, vlna 2: citace přesně podle toho, co díla dokládají",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/210a1514eadedec7fa7308a9daa83202b560653f"
+    },
+    {
+     "at": "2026-11-18T01:58:37Z",
+     "message": "docs(ai): the kapitola-6 listing record says it was delivered",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/9975bce05ded03f100a476c29b86ee6e8b193c18"
+    },
+    {
+     "at": "2026-11-18T01:55:43Z",
+     "message": "docs(content): the kapitola-6 operations hub follows the techniques, not the cluster frame",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/67fe257318f661c964c104537c37ef501aea65e8"
+    },
+    {
+     "at": "2026-11-18T01:24:18Z",
+     "message": "chore(data): derived files regenerated after wave 2 of the original taxonomy",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/3b87b1ba4a199cc775153adfc65edb3d0083be2c"
+    },
+    {
+     "at": "2026-11-18T01:19:29Z",
+     "message": "fix(viz): ring layout shrinks nodes to the room on their ring",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/98fe05bdaf61e545978223634ac761322ce57635"
+    },
+    {
+     "at": "2026-11-18T01:15:32Z",
+     "message": "fix(viz): chapter 3 risk axis name above the axis, clear of its labels",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/d5e73dbcc90e32d9bf382cf8b330b30e09781230"
+    },
+    {
+     "at": "2026-11-18T01:11:00Z",
+     "message": "test(viz): maximize round trip in the surfaces gate, old libraries refused in case 23",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/2cf7ce45d8239a5cd37b4c7cf2da6add1c8ceb27"
+    },
+    {
+     "at": "2026-11-18T01:08:40Z",
+     "message": "feat(scripts): check-viz-layer refuses Chart.js and cytoscape anywhere",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/0a6ab311172caa97ad3eab7fdf2bbb0fddc50098"
+    },
+    {
+     "at": "2026-11-18T01:07:15Z",
+     "message": "chore(deps): drop Chart.js and cytoscape",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/7fbde1d6d32e72e9c3beaaab6a7aee032abead7c"
+    },
+    {
+     "at": "2026-11-18T01:05:52Z",
+     "message": "refactor(viz): charts and graphs through one ECharts chart and one network wrapper",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/1d277f2b77128222a98d4512368bd3d9b42e664a"
+    }
+   ],
+   "languages": [
+    {
+     "name": "Elixir",
+     "share": 32.3
+    },
+    {
+     "name": "JavaScript",
+     "share": 22.4
+    },
+    {
+     "name": "Python",
+     "share": 16.6
+    },
+    {
+     "name": "HTML",
+     "share": 11.4
+    },
+    {
+     "name": "Shell",
+     "share": 9
+    },
+    {
+     "name": "Rust",
+     "share": 8.1
+    }
+   ],
+   "readme": "Defenzivní taxonomie jevů, které systematicky rozkládají schopnost člověka poznávat.",
+   "readme_shared": false,
+   "description_shared": false,
+   "topics": [
+    "czech",
+    "epistemology",
+    "flowbite",
+    "kompendium",
+    "majordomus",
+    "manipulation",
+    "psychology",
+    "taxonomy",
+    "zola"
+   ],
+   "hosts": {
+    "github": "https://github.com/korczis/kompendium-epistemicke-anihilace"
+   },
+   "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+   "curated": true,
+   "stars": 0,
+   "supervised": true
+  },
+  {
    "name": "openttd-prismatic-bridge",
    "period": 12,
    "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
    "category": "media",
    "language": "Squirrel",
    "created_at": "2026-07-23T22:00:54.776Z",
-   "pushed_at": "2026-11-18T02:16:49.082Z",
+   "pushed_at": "2026-11-18T06:54:45.222Z",
    "last_commit": "2026-11-18T03:16:44.000+01:00",
    "last_message": "Doc: the overview's Prismatic card says a decision's settings go onto the running AI and a refused one answers 502",
    "commits": [
@@ -421,846 +1261,6 @@
    "curated": false,
    "stars": 0,
    "supervised": false
-  },
-  {
-   "name": "majordomus-reel",
-   "period": 12,
-   "description": "A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound",
-   "category": "media",
-   "language": "JavaScript",
-   "created_at": "2026-10-23T00:51:59Z",
-   "pushed_at": "2026-11-18T03:20:13Z",
-   "last_commit": "2026-11-18T03:09:16Z",
-   "last_message": "docs(rules): the site is on Tailwind and Flowbite now; name its surfaces and the class-list source",
-   "commits": [
-    {
-     "at": "2026-11-18T03:09:16Z",
-     "message": "docs(rules): the site is on Tailwind and Flowbite now; name its surfaces and the class-list source",
-     "url": "https://github.com/korczis/majordomus-reel/commit/d6ec488baab7f04c0c0de76cd7897cfe108dbcd9"
-    },
-    {
-     "at": "2026-11-18T03:08:49Z",
-     "message": "docs(rules): name this repository's UI surfaces, debt and exemptions",
-     "url": "https://github.com/korczis/majordomus-reel/commit/aa37bd9d56c2f03a7853c578dac6a0237edb359a"
-    },
-    {
-     "at": "2026-11-18T03:08:49Z",
-     "message": "docs(rules): every user interface is built on Flowbite Pro",
-     "url": "https://github.com/korczis/majordomus-reel/commit/bf39b3defc43c808e55737dfc7a4305adc068cd6"
-    },
-    {
-     "at": "2026-11-18T02:58:21Z",
-     "message": "fix(facts): find prismatic-majordomus beside the primary checkout from a linked worktree",
-     "url": "https://github.com/korczis/majordomus-reel/commit/6b9e9a2b4c853da4df592d1758068c21a58742cb"
-    },
-    {
-     "at": "2026-11-18T02:24:59Z",
-     "message": "fix(quality): prove the recorded iteration read-only at finish",
-     "url": "https://github.com/korczis/majordomus-reel/commit/8af6a9a9b75b3fb74acd725eb8884c17132f0c72"
-    },
-    {
-     "at": "2026-11-18T01:39:47Z",
-     "message": "feat(site): bilingual site, English at the root and Czech at /cs/, with a switcher and an automatic first choice",
-     "url": "https://github.com/korczis/majordomus-reel/commit/ed34393e7baae85b9dbbcc0fcc27c2566779fe64"
-    },
-    {
-     "at": "2026-11-18T00:51:41Z",
-     "message": "feat(rules): bilingual reel and the every-iteration-better ratchet",
-     "url": "https://github.com/korczis/majordomus-reel/commit/f534a0c4e5cb89d9d01ae184a813aa115da67963"
-    },
-    {
-     "at": "2026-11-18T00:48:01Z",
-     "message": "feat(i18n): render every cut in Czech, words, voice and screen alike",
-     "url": "https://github.com/korczis/majordomus-reel/commit/d8c4757778dfb4a37e505852a36ebd9cd7bf3d27"
-    },
-    {
-     "at": "2026-11-18T00:32:59Z",
-     "message": "fix(site): the carousel keeps its own autoplay timer, and the pressed chip stays in sight",
-     "url": "https://github.com/korczis/majordomus-reel/commit/ea2482f00662bc758d84f8eb00361a06e0362d62"
-    },
-    {
-     "at": "2026-11-18T00:09:57Z",
-     "message": "feat(site): a derived route per cut, stories first in a carousel, browser and gallery",
-     "url": "https://github.com/korczis/majordomus-reel/commit/b27e04989355aafdcd0d0478bf17082276387ba0"
-    },
-    {
-     "at": "2026-11-18T00:06:19Z",
-     "message": "feat(reel): render any cut in phone, tablet and desktop, and one story per use-case category",
-     "url": "https://github.com/korczis/majordomus-reel/commit/227113a62d5703f18f9f27435a84294ab8f429d8"
-    },
-    {
-     "at": "2026-11-17T19:23:00Z",
-     "message": "feat(facts): pre-render a release from the commit that declares it, publish only when the tag agrees",
-     "url": "https://github.com/korczis/majordomus-reel/commit/bd3d727da0a52c336e76084f521151eefa813c30"
-    },
-    {
-     "at": "2026-11-17T19:11:51Z",
-     "message": "fix(reel): CAPTIONS=1 burns the captions in again",
-     "url": "https://github.com/korczis/majordomus-reel/commit/31138d677e1128347c45a0b39d11a2b4ed289481"
-    },
-    {
-     "at": "2026-11-17T18:47:40Z",
-     "message": "feat(site): derive every length and requirement the page states; no drifting counts in the docs",
-     "url": "https://github.com/korczis/majordomus-reel/commit/0fa0ce88dc7925640aa610512380389f5244d510"
-    },
-    {
-     "at": "2026-11-17T11:11:50Z",
-     "message": "feat(reel): derive every Majordomus fact from the newest release, gate typed ones",
-     "url": "https://github.com/korczis/majordomus-reel/commit/9261d7c362cdc515cd603c909f4983e410974185"
-    },
-    {
-     "at": "2026-10-26T01:08:35Z",
-     "message": "chore(rules): vendor the majordomus standard rules of 1.0.0-alpha.8",
-     "url": "https://github.com/korczis/majordomus-reel/commit/3fdfed0651a2d8ce515b1e09a4e41e609a5a7e59"
-    },
-    {
-     "at": "2026-10-26T00:58:07Z",
-     "message": "feat(reel): v5.7, majordomus 1.0.0-alpha.8: no ordinary command builds, one-commit deployments",
-     "url": "https://github.com/korczis/majordomus-reel/commit/7f3b68446a76483f6a08ead76b80972a42de7d5b"
-    },
-    {
-     "at": "2026-10-25T22:35:47Z",
-     "message": "feat(reel): v5.6, two new scenes: integration trains and the mesh build cache",
-     "url": "https://github.com/korczis/majordomus-reel/commit/9558f339f199bb137ece912b25aae665564915ee"
-    },
-    {
-     "at": "2026-10-23T18:02:39Z",
-     "message": "docs(metadata): v5.5 published as zcDgXorKhjs; v5.3 and v5.1 unlisted and linked to it",
-     "url": "https://github.com/korczis/majordomus-reel/commit/290f3f7cbe71a2f8bf63bd6add8370e994202cc8"
-    },
-    {
-     "at": "2026-10-23T17:59:37Z",
-     "message": "feat(site): link the v5.5 film on YouTube",
-     "url": "https://github.com/korczis/majordomus-reel/commit/9f3035150b2934538d1a318a847e90b60c7fbd85"
-    },
-    {
-     "at": "2026-10-23T16:57:58Z",
-     "message": "docs(readme): publish command for the v5.5 hybrid cut",
-     "url": "https://github.com/korczis/majordomus-reel/commit/91152e740dd66b937b5c819fe1a953b43a9e53d6"
-    },
-    {
-     "at": "2026-10-23T16:53:44Z",
-     "message": "feat(reel): v5.5, the hybrid: modern networks, v5.1 motion, four new scenes",
-     "url": "https://github.com/korczis/majordomus-reel/commit/ea17e1d0c9c7477345d79af431d99d19a3c2c13a"
-    },
-    {
-     "at": "2026-10-23T04:07:14Z",
-     "message": "docs(readme): publish command matches the v5.3 cut on gh-pages",
-     "url": "https://github.com/korczis/majordomus-reel/commit/a03a90d185bf986fbb494c5b52b2ceffcb0d311f"
-    },
-    {
-     "at": "2026-10-23T02:09:05Z",
-     "message": "feat(reel): v5.3, the two hooks and the local half; the act in the eyebrow",
-     "url": "https://github.com/korczis/majordomus-reel/commit/2dc1dd1bae7022d17b100fa3954b6a9004dd425f"
-    },
-    {
-     "at": "2026-10-23T01:58:10Z",
-     "message": "docs(readme): the v5.2 stack",
-     "url": "https://github.com/korczis/majordomus-reel/commit/bddb8663bad41039b4b743ceaf28c7f20e1ff0b7"
-    },
-    {
-     "at": "2026-10-23T01:57:20Z",
-     "message": "feat(reel): v5.2, the owner's stack, seven acts, reviewed twice",
-     "url": "https://github.com/korczis/majordomus-reel/commit/6e18ddd3efa254c7c30729e98e1cfcd388bdfe05"
-    },
-    {
-     "at": "2026-10-23T01:21:35Z",
-     "message": "docs(readme): the short's poster is thumbnail.jpg",
-     "url": "https://github.com/korczis/majordomus-reel/commit/f242a2f5b9b915ca4be0e40cea27221e9814bc49"
-    },
-    {
-     "at": "2026-10-23T01:18:38Z",
-     "message": "feat(thumbs): the published posters, in the earlier style the owner prefers",
-     "url": "https://github.com/korczis/majordomus-reel/commit/abe32a6c78100dcd5c07f6c04b0e9030597da3c2"
-    },
-    {
-     "at": "2026-10-23T01:17:56Z",
-     "message": "feat(site): link the full film on YouTube",
-     "url": "https://github.com/korczis/majordomus-reel/commit/d2ce58227d1aabf1e2c229ac1d1a2ec547c67224"
-    },
-    {
-     "at": "2026-10-23T00:45:09Z",
-     "message": "feat(site): show the Shorts cut under the full reel",
-     "url": "https://github.com/korczis/majordomus-reel/commit/0b2239171e873f539aa8e06ac96ca373d3ee4dd7"
-    }
-   ],
-   "languages": [
-    {
-     "name": "JavaScript",
-     "share": 66.2
-    },
-    {
-     "name": "HTML",
-     "share": 32.1
-    },
-    {
-     "name": "Shell",
-     "share": 1
-    },
-    {
-     "name": "CSS",
-     "share": 0.5
-    },
-    {
-     "name": "Python",
-     "share": 0.2
-    }
-   ],
-   "readme": "A vertical promo video for Majordomus, rendered from code: narration, every frame, the music and the sound effects. Nothing is filmed, licensed or generated by a video model.",
-   "readme_shared": false,
-   "description_shared": false,
-   "topics": [
-    "ai-agents",
-    "ffmpeg",
-    "generative",
-    "majordomus",
-    "puppeteer",
-    "video"
-   ],
-   "hosts": {
-    "github": "https://github.com/korczis/majordomus-reel"
-   },
-   "site": "https://korczis.github.io/majordomus-reel/",
-   "curated": true,
-   "stars": 0,
-   "supervised": true
-  },
-  {
-   "name": "korczis.github.io",
-   "period": 12,
-   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-   "category": "web",
-   "language": "JavaScript",
-   "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-18T03:35:28Z",
-   "last_commit": "2026-11-18T03:03:38Z",
-   "last_message": "chore(merge): integrate #29, wave 1: one positioning, /hire/ evidence, previews and machine files, sidebar skillset",
-   "commits": [
-    {
-     "at": "2026-11-18T03:03:38Z",
-     "message": "chore(merge): integrate #29, wave 1: one positioning, /hire/ evidence, previews and machine files, sidebar skillset",
-     "url": "https://github.com/korczis/korczis.github.io/commit/d3e494ba5c21f8b39d41fcd0aeccc5c6da8fcc14"
-    },
-    {
-     "at": "2026-11-18T02:58:52Z",
-     "message": "fix(hire): evidence links meet the 24 px target size (WCAG 2.5.8)",
-     "url": "https://github.com/korczis/korczis.github.io/commit/5860fa7a6661bcff1c9a1a1351e90901c0e44a75"
-    },
-    {
-     "at": "2026-11-18T02:49:49Z",
-     "message": "chore(merge): integrate #28, /hire/, the CV from LinkedIn, Offer and FAQPage JSON-LD, llms.txt hire section",
-     "url": "https://github.com/korczis/korczis.github.io/commit/e7d62bb86bd2a054df6a7d4af75abdd8d1f82012"
-    },
-    {
-     "at": "2026-11-18T02:49:23Z",
-     "message": "chore(merge): integrate w1c-previews-machine-files into wave 1",
-     "url": "https://github.com/korczis/korczis.github.io/commit/35a92d0bb6bd7e74eeca8ad7c40cfd1deade202e"
-    },
-    {
-     "at": "2026-11-18T02:49:22Z",
-     "message": "chore(merge): integrate w1a-hire-positioning into wave 1",
-     "url": "https://github.com/korczis/korczis.github.io/commit/11664e349be1a17e3d82aa313b5abf96f7474892"
-    },
-    {
-     "at": "2026-11-18T02:49:22Z",
-     "message": "chore(merge): integrate w1b-hire-evidence into wave 1",
-     "url": "https://github.com/korczis/korczis.github.io/commit/aefc1e89ff8c5336626a54c66eece4fa7562535b"
-    },
-    {
-     "at": "2026-11-18T02:48:33Z",
-     "message": "chore(merge): integrate w1d-hire-governance into wave 1",
-     "url": "https://github.com/korczis/korczis.github.io/commit/7ee1a5994fd5c1c708bed972160f9c5176c6d768"
-    },
-    {
-     "at": "2026-11-18T02:40:53Z",
-     "message": "feat(resume): derived JSON Resume in every language, validated against 1.0.0",
-     "url": "https://github.com/korczis/korczis.github.io/commit/16562343a38f37c4a967f27187aa4052d045000c"
-    },
-    {
-     "at": "2026-11-18T02:39:47Z",
-     "message": "feat(llms): name, headline and /hire/ first; Hire leads, skills with evidence",
-     "url": "https://github.com/korczis/korczis.github.io/commit/fb1ba82d00481ab1fc01dd4dda2263369c0e203c"
-    },
-    {
-     "at": "2026-11-18T02:38:16Z",
-     "message": "feat(og): cards draw the page permalink, i18n pills, clip between words",
-     "url": "https://github.com/korczis/korczis.github.io/commit/b5e54ccb66e94f09ba9c2af486cbdf36c25742a2"
-    },
-    {
-     "at": "2026-11-18T02:36:54Z",
-     "message": "feat(seo): profile titles carry name and role, no typed numbers in previews",
-     "url": "https://github.com/korczis/korczis.github.io/commit/6e203d59a94b1f9be9da33d1e20893bff49bae47"
-    },
-    {
-     "at": "2026-11-18T02:35:22Z",
-     "message": "feat(derive): shared permalink, width-aware word clipping and the role noun",
-     "url": "https://github.com/korczis/korczis.github.io/commit/abd3369c7b393517ea194e07dce607ec0aa6afcc"
-    },
-    {
-     "at": "2026-11-18T02:34:45Z",
-     "message": "test(profile): gate the hire positioning and the first viewport",
-     "url": "https://github.com/korczis/korczis.github.io/commit/d6aa0bdc8ac8013bd73db541915cd3fb698ad32a"
-    },
-    {
-     "at": "2026-11-18T02:33:34Z",
-     "message": "fix(about): availability from cv.toml, the headline as the role line",
-     "url": "https://github.com/korczis/korczis.github.io/commit/91c11cf36be2e821c289e6dd91a3b8510c945a4a"
-    },
-    {
-     "at": "2026-11-18T02:32:34Z",
-     "message": "feat(shell): Hire me as the topbar's primary action on every page",
-     "url": "https://github.com/korczis/korczis.github.io/commit/24ad3ec31471ae57ffb2a2fdce74c4b2c183284d"
-    },
-    {
-     "at": "2026-11-18T02:31:39Z",
-     "message": "feat(home): lead with hiring, one positioning from cv.hire.headline",
-     "url": "https://github.com/korczis/korczis.github.io/commit/ba027b322ad2d75cfad6b20c0364c0d45bd8d0e2"
-    },
-    {
-     "at": "2026-11-18T02:31:31Z",
-     "message": "feat(seo): gate structured data against the page and data/",
-     "url": "https://github.com/korczis/korczis.github.io/commit/ffadbbd33085be43bf2c52a080eeef38f1862816"
-    },
-    {
-     "at": "2026-11-18T02:29:51Z",
-     "message": "feat(hire): /hire/ as the evidence page",
-     "url": "https://github.com/korczis/korczis.github.io/commit/e7e0535a815e5604813511cbf9a750da9cccec75"
-    },
-    {
-     "at": "2026-11-18T02:28:11Z",
-     "message": "feat(seo): structured data that states only what the page shows",
-     "url": "https://github.com/korczis/korczis.github.io/commit/a2ec7b857588e442603d7737337d4e38ff2f5852"
-    },
-    {
-     "at": "2026-11-18T02:25:38Z",
-     "message": "chore(merge): bring in the /hire/ definition-list fix",
-     "url": "https://github.com/korczis/korczis.github.io/commit/0fbb279dacff7a3ab1e76c4edfeeb7a8ff5700d5"
-    },
-    {
-     "at": "2026-11-18T02:23:58Z",
-     "message": "fix(hire): the rate row is one dt/dd group, as axe definition-list requires",
-     "url": "https://github.com/korczis/korczis.github.io/commit/91bab99e31803d0c1417472fb15a323c8825919e"
-    },
-    {
-     "at": "2026-11-18T02:21:56Z",
-     "message": "feat(gates): register the profile and resume gates for project.hire-surfaces",
-     "url": "https://github.com/korczis/korczis.github.io/commit/06dc695bd5adfceba2dd93c5e6043ef258c94511"
-    },
-    {
-     "at": "2026-11-18T02:19:47Z",
-     "message": "docs(ai): hire-surfaces rule, seo-derived v2, front-matter v2, ADR 0008 and the AI-readers note",
-     "url": "https://github.com/korczis/korczis.github.io/commit/6fd12c253da390372f53e484e4630d0fd20c1180"
-    },
-    {
-     "at": "2026-11-18T02:09:07Z",
-     "message": "docs(adr): ADR 0007 addendum, the owner's start date, work authorization and time zone",
-     "url": "https://github.com/korczis/korczis.github.io/commit/203200c1cb8f643374e4acf79eb85eebafdbe321"
-    },
-    {
-     "at": "2026-11-18T02:05:28Z",
-     "message": "feat(shell): skillset in the sidebar, GitLab and LinkedIn under Elsewhere",
-     "url": "https://github.com/korczis/korczis.github.io/commit/5f035eeeb11b03b03126f78aa89aa79b14d3ceee"
-    },
-    {
-     "at": "2026-11-18T02:02:03Z",
-     "message": "fix(site-json): name the README consumer by its ADR, not by a typed login",
-     "url": "https://github.com/korczis/korczis.github.io/commit/49d83e572d973ab2008fd5b0b116901d264effd0"
-    },
-    {
-     "at": "2026-11-18T01:49:26Z",
-     "message": "feat(site-json): availability for hire, profile links and work history in site.json",
-     "url": "https://github.com/korczis/korczis.github.io/commit/ef551d7cf41d7bb6c945a78e3c09efa769164b21"
-    },
-    {
-     "at": "2026-11-18T01:45:47Z",
-     "message": "feat(hire): /hire/ page, CV from LinkedIn, Offer and FAQPage JSON-LD, llms.txt hire section",
-     "url": "https://github.com/korczis/korczis.github.io/commit/bfb9c731feb24760cdb7c352e57d2fdf26313c35"
-    },
-    {
-     "at": "2026-11-18T01:43:46Z",
-     "message": "docs(adr): ADR 0007, availability for hire, the CV from LinkedIn, AI readers without hidden instructions",
-     "url": "https://github.com/korczis/korczis.github.io/commit/4a5746054087e72bd3082591cac324e28c3307df"
-    },
-    {
-     "at": "2026-11-17T21:20:07Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/0d36db8df17d0b057c2ff2edcd4e9f5573107f4e"
-    }
-   ],
-   "languages": [
-    {
-     "name": "JavaScript",
-     "share": 66.5
-    },
-    {
-     "name": "HTML",
-     "share": 31
-    },
-    {
-     "name": "CSS",
-     "share": 1.4
-    },
-    {
-     "name": "Shell",
-     "share": 1.1
-    }
-   ],
-   "readme": "The personal hub of Tomas Korcak (korczis). It covers who I am, the projects I build with their live sites, the stack behind them, and Majordomus, which supervises the work.",
-   "readme_shared": false,
-   "description_shared": false,
-   "topics": [
-    "accessibility",
-    "ai-agents",
-    "alpinejs",
-    "chartjs",
-    "cytoscape",
-    "echarts",
-    "flowbite",
-    "github-pages",
-    "majordomus",
-    "p5js",
-    "personal-website",
-    "portfolio",
-    "tailwindcss",
-    "zola"
-   ],
-   "hosts": {
-    "github": "https://github.com/korczis/korczis.github.io"
-   },
-   "site": null,
-   "curated": false,
-   "stars": 0,
-   "supervised": true
-  },
-  {
-   "name": "kompendium-epistemicke-anihilace",
-   "period": 12,
-   "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
-   "category": "knowledge",
-   "language": "Elixir",
-   "created_at": "2026-11-09T22:04:50Z",
-   "pushed_at": "2026-11-18T03:06:20Z",
-   "last_commit": "2026-11-18T00:53:25Z",
-   "last_message": "Merge origin/main (e1ad82c1) into train-1",
-   "commits": [
-    {
-     "at": "2026-11-18T00:53:25Z",
-     "message": "Merge origin/main (e1ad82c1) into train-1",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/fd11ca9bb3b4a6bf6d6005d6c0c57a53b7bcea35"
-    },
-    {
-     "at": "2026-11-18T00:50:54Z",
-     "message": "fix(test): případ 58 čte rouru celou, jak žádá případ 35",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/0080a3da83427c05fe4fe95e56f4e2eb993bb21c"
-    },
-    {
-     "at": "2026-11-18T00:06:17Z",
-     "message": "chore(data): odvozená data přegenerovaná po sloučení vlaku 1",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/25bc1fed9eb75ab071282e7f77e260885fe59415"
-    },
-    {
-     "at": "2026-11-17T23:39:09Z",
-     "message": "Merge feature/kapitola-6-listing (abea30cb) into train-1",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/baadb6601923e8238cb36a70fe9a9c8b7fcb71b7"
-    },
-    {
-     "at": "2026-11-17T23:33:40Z",
-     "message": "Merge fix/dead-links-drobnosti (7348713a) into train-1",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/8d452e5f006dd886166e259db2125b651dbda383"
-    },
-    {
-     "at": "2026-11-17T23:31:45Z",
-     "message": "Merge feature/ea-5-4-floor (7f24af8d) into train-1",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/92f7b222436ffad7ed6e547decea6f9bf39f026c"
-    },
-    {
-     "at": "2026-11-17T23:31:43Z",
-     "message": "Merge fix/verify-builds-wasm (b77616b5) into train-1",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/d2f245b2a58362dfa745c4a1bc266ba216e78ed8"
-    },
-    {
-     "at": "2026-11-17T23:17:18Z",
-     "message": "chore(data): engine fixtures and section graphics regenerated after the EA-5.4 floor",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/7f24af8d253bc57de512b1dab63f630bc5148ca5"
-    },
-    {
-     "at": "2026-11-17T22:55:36Z",
-     "message": "chore(data): derived graph, ui data and README regenerated after the EA-5.4 floor",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/b6c73473e5aba571a38806034ed9c2f5571f456d"
-    },
-    {
-     "at": "2026-11-17T22:52:56Z",
-     "message": "docs(content): EA-5.4 pages extended to the 1100-word detail floor",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/d3b3c826b734487d8f13c833e28518add876d2a9"
-    },
-    {
-     "at": "2026-11-17T22:47:30Z",
-     "message": "docs(adr): 0015 amended for kapitola-6, an application of P",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/abea30cb9b3dc1c7a71247e4f8e14235c8d48091"
-    },
-    {
-     "at": "2026-11-17T22:46:12Z",
-     "message": "ci(links): weekly check of the built site's distinct external URLs",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/7348713a06e21601c3ed0c64247d9d318eb28d5f"
-    },
-    {
-     "at": "2026-11-17T22:45:37Z",
-     "message": "chore(data): derived files regenerated after the kapitola-6 listing",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/673fb31299e95085e1971bf0b5998b893727e578"
-    },
-    {
-     "at": "2026-11-17T22:44:36Z",
-     "message": "test(content): case 58 refuses links into external locations measured dead",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/3a7daf0422dc8020458ad522d7fe85d74d4c5175"
-    },
-    {
-     "at": "2026-11-17T22:43:57Z",
-     "message": "feat(content): kapitola-6 renders EA-5.1 from the pages; the cluster map is gone",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/0f1723f63d06e2fe8ea92b526aa24cfecdbf5652"
-    },
-    {
-     "at": "2026-11-17T22:43:12Z",
-     "message": "chore(data): derived graph, ui data and README regenerated after the link fixes",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/ce3cd60a1dc73aa8308fbaf70a5f425cb7ea0855"
-    },
-    {
-     "at": "2026-11-17T22:41:54Z",
-     "message": "fix(techniky): osiřelý odkaz na krok a nepodložené prahy",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/53ce76588e74e9ae8258e8b0dedfb2a8f49cdb18"
-    },
-    {
-     "at": "2026-11-17T22:40:20Z",
-     "message": "fix(content): dead platform-era links lead to the book's own pages",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/eb7d4ad0d04a9149fd6effcad4fd1ac4e423355a"
-    },
-    {
-     "at": "2026-11-17T22:26:02Z",
-     "message": "fix(verify): lokální verify sestaví wasm engine jako CI",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/b77616b5c33aea160df126db2c310aff757413ec"
-    },
-    {
-     "at": "2026-11-17T22:19:20Z",
-     "message": "docs(ai): four owner answers of 2026-11-17 and the content work they leave unowned",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/e1ad82c16f7f62d12e27475e9099ac4b9883ec53"
-    },
-    {
-     "at": "2026-11-17T21:13:03Z",
-     "message": "Merge remote-tracking branch 'origin/main' into feature/kapitola-6-record",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/ef184217b981457f6c8ea454b7ee7fd312b6589f"
-    },
-    {
-     "at": "2026-11-17T21:12:23Z",
-     "message": "docs(ai): the owner's answers on the two ghost CI runs and content-placeholders",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/be525a8c93ba60d0e046c54a580e1b65e9566338"
-    },
-    {
-     "at": "2026-11-17T06:29:33Z",
-     "message": "feat(scripts): platform-prose gate — refuse internal platform/runtime names in kompendium body prose",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/9045ada1ac7a09e2a6464a7a31e1f1cdb9910fcc"
-    },
-    {
-     "at": "2026-11-17T01:25:11Z",
-     "message": "docs(ai): kapitola-6 derived listing is a committed, unowned follow-up",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/2f32867f3a5d1472f6420f364073e37dd472cb05"
-    },
-    {
-     "at": "2026-11-17T00:35:05Z",
-     "message": "chore(data): ui-data listings regenerated after merge",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/73bd6e4527bb61f1f3ae3dc23469d694fae1d5ca"
-    },
-    {
-     "at": "2026-11-17T00:30:35Z",
-     "message": "chore(data): derived graph data regenerated after merging main into reader-command-gate",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/6184486442512edfa2a7a55461f4dfdc0b3bbd43"
-    },
-    {
-     "at": "2026-11-17T00:25:42Z",
-     "message": "Merge remote-tracking branch 'origin/main' into feature/reader-command-gate",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/5c70595f25e16ec2bfc01f6f8c3b27358ffa2837"
-    },
-    {
-     "at": "2026-11-16T23:03:14Z",
-     "message": "chore(data): the four listings my change touches are regenerated",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/f690027021fc8ef364e4f41e1aa8d444970b9e45"
-    },
-    {
-     "at": "2026-11-16T22:57:29Z",
-     "message": "chore(data): derived files regenerated from the merged tree",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/e6cdda326397d59877d81640c74fe26da18a00ad"
-    },
-    {
-     "at": "2026-11-16T22:21:39Z",
-     "message": "Merge feature/typed-count-gate (53a5f666): the typed-count gate and the EA-1.4.2 slice",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/7241b955de894aa7efbaf0c15d774c5b9434708a"
-    }
-   ],
-   "languages": [
-    {
-     "name": "Elixir",
-     "share": 32.7
-    },
-    {
-     "name": "JavaScript",
-     "share": 21
-    },
-    {
-     "name": "Python",
-     "share": 16.6
-    },
-    {
-     "name": "HTML",
-     "share": 12.9
-    },
-    {
-     "name": "Shell",
-     "share": 8.3
-    },
-    {
-     "name": "Rust",
-     "share": 8.2
-    }
-   ],
-   "readme": "Defenzivní taxonomie jevů, které systematicky rozkládají schopnost člověka poznávat.",
-   "readme_shared": false,
-   "description_shared": false,
-   "topics": [
-    "czech",
-    "epistemology",
-    "flowbite",
-    "kompendium",
-    "majordomus",
-    "manipulation",
-    "psychology",
-    "taxonomy",
-    "zola"
-   ],
-   "hosts": {
-    "github": "https://github.com/korczis/kompendium-epistemicke-anihilace"
-   },
-   "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
-   "curated": true,
-   "stars": 0,
-   "supervised": true
-  },
-  {
-   "name": "prismatic-majordomus",
-   "period": 12,
-   "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
-   "category": "ai",
-   "language": "Rust",
-   "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-18T03:51:17Z",
-   "last_commit": "2026-11-18T00:04:07Z",
-   "last_message": "Merge pull request #3084 from korczis/fix/delivery-observed-at-the-merge-of-train-f",
-   "commits": [
-    {
-     "at": "2026-11-18T00:04:07Z",
-     "message": "Merge pull request #3084 from korczis/fix/delivery-observed-at-the-merge-of-train-f",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/5bc2ddb10ccc5f2e5528e03c08b0af8ed4e26a9e"
-    },
-    {
-     "at": "2026-11-17T21:11:49Z",
-     "message": "docs(plan): derive delivery observed at master's merge of #3077",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/b0ffb7d8b766db67771995214e8971d7ac2ff09f"
-    },
-    {
-     "at": "2026-11-17T19:41:34Z",
-     "message": "Merge pull request #3077 from korczis/integration/train-20261117f",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/ae13be1bd138be3139b4fd9a1a11de8c6b2f7c88"
-    },
-    {
-     "at": "2026-11-17T13:31:00Z",
-     "message": "Merge #3062 (feature/I4324-a-worktree-whose-work-is-in-trunk-is-finished) into the combined top on 7222b343dc",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/41904d87959ae992ef78a2abdbf881be687002af"
-    },
-    {
-     "at": "2026-11-17T13:17:42Z",
-     "message": "Merge #3070 (plan/i4628-a-finish-over-uncommitted-work-says-so) into the combined top on 7222b343dc",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/54edbb51ac6e92188a86ba2aba3952ca996c7254"
-    },
-    {
-     "at": "2026-11-17T13:08:23Z",
-     "message": "Merge #3068 (fix/a-merge-does-not-borrow-a-foreign-executable) into the combined top on 7222b343dc",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/188d1134bb6c1ce4b9a09e7a03448650459f6f36"
-    },
-    {
-     "at": "2026-11-17T12:41:21Z",
-     "message": "fix(release): the release job records its executable's commit at the build (I4627)",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/9cbabdd175ded55842d4b671f3d18387f58d13e5"
-    },
-    {
-     "at": "2026-11-17T08:49:07Z",
-     "message": "docs(plan): I4628's scope names its one case; record I4630",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/05dd86c240345523706b31705ed5678c1cb93f29"
-    },
-    {
-     "at": "2026-11-17T08:40:44Z",
-     "message": "chore(release): declare 1.1.0, the minor release #3062's output requires",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/0807fc1b4222d6bc04d8ba4a1fbdef4fae58d940"
-    },
-    {
-     "at": "2026-11-17T06:32:46Z",
-     "message": "Merge pull request #3069 from korczis/integration/top-20261117b",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/7222b343dcb40ac2a2843111f8bdf7a2aa099774"
-    },
-    {
-     "at": "2026-11-17T03:48:05Z",
-     "message": "docs(plan): a completed finish over uncommitted work says so (I4628)",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/e5a19d3b9c964ceece031a92961ed0c1608d45a9"
-    },
-    {
-     "at": "2026-11-17T03:41:20Z",
-     "message": "docs(plan): derive delivery observed at the combined top on e54bbdb12a",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/a5e1f4375620c3ba6755d6ad743a42eb4052bcdb"
-    },
-    {
-     "at": "2026-11-17T03:31:59Z",
-     "message": "test(worktree): cover every changed region of the landed readings and the reclaim",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/0ff5bf34faf8603a0ea22a120d4bd6d4d4634a51"
-    },
-    {
-     "at": "2026-11-17T03:25:35Z",
-     "message": "Merge #3064 (feat/a-build-is-bounded-by-the-machine) into the combined top on e54bbdb12a",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/32c0304f3417a86367e0a271081b05e90f1e9532"
-    },
-    {
-     "at": "2026-11-17T03:17:07Z",
-     "message": "test(derive): the I4627 case pins its shell sort (I4627)",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/2f35f30d717bf889ff5b1b3e8605191edb15e50d"
-    },
-    {
-     "at": "2026-11-17T03:05:01Z",
-     "message": "Merge #3047 (fix/resolver-borrows-a-sibling-executable) into the combined top on e54bbdb12a",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/edd387c3c4236aa110cc43ab319224dd774a3cf0"
-    },
-    {
-     "at": "2026-11-17T02:50:30Z",
-     "message": "Merge #3044 (fix/evidence-record-names-suite-coverage) into the combined top on e54bbdb12a",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/de98547925151e671774238fceb1bd61903a4f1f"
-    },
-    {
-     "at": "2026-11-17T02:37:22Z",
-     "message": "fix(derive): a merged crate does not borrow an executable of another generation (I4627)",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/728afa4302ce4c641f719b390af5361a88857b40"
-    },
-    {
-     "at": "2026-11-17T02:26:16Z",
-     "message": "Merge #3060 (fix/commit-debt-counts-a-renumbered-reference) into the combined top on e54bbdb12a",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/a280c3279ff25008931db9c4e46c742d6362d0da"
-    },
-    {
-     "at": "2026-11-16T23:20:53Z",
-     "message": "test(evidence): a refused write of the suite line ends the recording there",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/33ae4a9299b8b4ceacd6039a90db78957259e5a1"
-    },
-    {
-     "at": "2026-11-16T23:11:18Z",
-     "message": "feat(build): a local build refuses beside five cargo builds (I3825)",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/18c3336cc3e93e4b5ac042e35438fbfa96a8d1df"
-    },
-    {
-     "at": "2026-11-16T23:05:50Z",
-     "message": "Merge pull request #3061 from korczis/plan/i4605-commit-control-character-20261116",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/e54bbdb12a99cd3ff4572f2a1574c1e5566ae8ef"
-    },
-    {
-     "at": "2026-11-16T23:01:18Z",
-     "message": "docs(plan): derive delivery observed at the merge of a134a0f",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/15f1501277d54f3309d851a50827f6be837ffdc0"
-    },
-    {
-     "at": "2026-11-16T22:51:35Z",
-     "message": "docs(plan): derive delivery observed at the merge of a134a0f",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/1acaf648d0ec908da9443f61f292f07b4f7b44da"
-    },
-    {
-     "at": "2026-11-16T22:40:47Z",
-     "message": "Merge origin/master a134a0f into #3062",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/ef77042a47c3c9c4777c1e956b8c222063cd3f91"
-    },
-    {
-     "at": "2026-11-16T22:21:48Z",
-     "message": "Merge origin/master a134a0f into #3047",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/72f490f5ba5ac00d057ce024d956f0b78b396126"
-    },
-    {
-     "at": "2026-11-16T22:07:34Z",
-     "message": "feat(worktree): cleanup offers a worktree whose work is already in the trunk",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/9998ad3f52d0367c654c9eb7affea63047eeeb87"
-    },
-    {
-     "at": "2026-11-16T21:56:56Z",
-     "message": "docs(plan): derive delivery observed at the merge of a134a0f",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/f7b96e7c36981f4351e7546750874975ef73d9ee"
-    },
-    {
-     "at": "2026-11-16T21:54:54Z",
-     "message": "fix(ci): record the renumbered plan commit as history debt (55)",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/ebbdac5c5ff4cedd837419c5a65fa4c2fca40a81"
-    },
-    {
-     "at": "2026-11-16T21:47:00Z",
-     "message": "docs(plan): derive delivery observed at the merge of a134a0f",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/b2e60aadd607c21c2b463b2f21486f6643f9d75a"
-    }
-   ],
-   "languages": [
-    {
-     "name": "Rust",
-     "share": 60.7
-    },
-    {
-     "name": "Shell",
-     "share": 29.6
-    },
-    {
-     "name": "JavaScript",
-     "share": 4.1
-    },
-    {
-     "name": "HTML",
-     "share": 3.8
-    },
-    {
-     "name": "CSS",
-     "share": 0.6
-    },
-    {
-     "name": "Python",
-     "share": 0.4
-    }
-   ],
-   "readme": "Your AI agents say the work is done. Majordomus makes them prove it.",
-   "readme_shared": false,
-   "description_shared": false,
-   "topics": [
-    "agentic-ai",
-    "ai",
-    "ai-agents",
-    "ai-governance",
-    "claude-code",
-    "cli",
-    "codex",
-    "continuous-integration",
-    "developer-tools",
-    "devops",
-    "gemini",
-    "llm",
-    "llmops",
-    "mcp",
-    "mermaid",
-    "model-context-protocol",
-    "multi-agent",
-    "policy-as-code",
-    "rust"
-   ],
-   "hosts": {
-    "github": "https://github.com/korczis/prismatic-majordomus"
-   },
-   "site": "https://korczis.github.io/prismatic-majordomus/",
-   "curated": true,
-   "stars": 1,
-   "supervised": true
   },
   {
    "name": "sonic-playground",
@@ -11925,7 +11925,7 @@
     "github": "https://github.com/korczis/maze-rs",
     "gitlab": "https://gitlab.com/korczis/maze-rs"
    },
-   "site": null,
+   "site": "https://korczis.github.io/maze-rs/",
    "curated": true,
    "stars": 8,
    "supervised": false

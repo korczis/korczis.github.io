@@ -13,7 +13,7 @@ skill = "policy-as-code"
 og_title = "Policy as code: skills"
 og_image = "og/skill-policy-as-code.png"
 schema = "skill"
-terms = ["skill", "policy-as-code", "javascript", "html", "shell", "css", "majordomus", "python", "rust", "zola", "alpine-js", "apache-echarts"]
+terms = ["skill", "policy-as-code", "javascript", "html", "css", "shell", "majordomus", "mcp", "postgis", "python", "rust", "zola"]
 keywords = ["Policy as code", "Governed AI-assisted software delivery", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -31,8 +31,8 @@ The concept behind it: [Policy as code](@/glossary/policy-as-code.md).
 
 Services that draw on it: [Governed AI-assisted software delivery](@/services/ai-engineering-governance.md).
 
-Practised with: [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md), [Shell](@/glossary/shell.md), [CSS](@/glossary/css.md), [Majordomus](@/glossary/majordomus.md), [Python](@/glossary/python.md), [Rust](@/glossary/rust.md) and [Zola](@/glossary/zola.md).
+Practised with: [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md), [CSS](@/glossary/css.md), [Shell](@/glossary/shell.md), [Majordomus](@/glossary/majordomus.md), [MCP](@/glossary/mcp.md), [PostGIS](@/glossary/postgis.md) and [Python](@/glossary/python.md).
 
-Public work whose own words show it: [majordomus-reel](https://github.com/korczis/majordomus-reel), [korczis.github.io](https://github.com/korczis/korczis.github.io), [kompendium-epistemicke-anihilace](https://github.com/korczis/kompendium-epistemicke-anihilace) and [prismatic-majordomus](https://github.com/korczis/prismatic-majordomus).
+Public work whose own words show it: [majordomus-reel](https://github.com/korczis/majordomus-reel), [prismatic-majordomus](https://github.com/korczis/prismatic-majordomus), [data-atlas](https://github.com/korczis/data-atlas) and [korczis.github.io](https://github.com/korczis/korczis.github.io).
 
 How to read this page: the definition is the experience vocabulary's; the services, technologies, public [repositories](@/glossary/repository.md) and use cases are derived and each links to its page.

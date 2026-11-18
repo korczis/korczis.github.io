@@ -13,7 +13,7 @@ skill = "knowledge-graph"
 og_title = "Znalostní graf: dovednosti"
 og_image = "og/cs-skill-knowledge-graph.png"
 schema = "skill"
-terms = ["skill", "knowledge-graph", "alpine-js", "flowbite-pro", "html", "javascript", "majordomus", "python", "shell", "apache-echarts", "claude-api", "cytoscape-js"]
+terms = ["skill", "knowledge-graph", "alpine-js", "claude-api", "dockerfile", "fastapi", "flowbite-pro", "github-actions", "html", "javascript", "kubernetes", "majordomus"]
 keywords = ["Znalostní graf", "Digitální vyšetřování a OSINT dossier", "Interaktivní datové produkty a simulátory", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -31,9 +31,7 @@ Pojem, na kterém stojí: [Znalostní graf](@/glossary/knowledge-graph.cs.md).
 
 Služby, které z ní čerpají: [Digitální vyšetřování a OSINT dossier](@/services/digital-investigation.cs.md) a [Interaktivní datové produkty a simulátory](@/services/interactive-data-products.cs.md).
 
-Praktikovaná s: [Alpine.js](@/glossary/alpine-js.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md), [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Majordomus](@/glossary/majordomus.cs.md), [Python](@/glossary/python.cs.md), [Shell](@/glossary/shell.cs.md) a [Apache ECharts](@/glossary/apache-echarts.cs.md).
-
-Veřejná práce, jejíž vlastní slova ji dokládají: [kompendium-epistemicke-anihilace](https://github.com/korczis/kompendium-epistemicke-anihilace).
+Praktikovaná s: [Alpine.js](@/glossary/alpine-js.cs.md), [Claude API](@/glossary/claude-api.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md), [FastAPI](@/glossary/fastapi.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md), [GitHub Actions](@/glossary/github-actions.cs.md), [HTML](@/glossary/html.cs.md) a [JavaScript](@/glossary/javascript.cs.md).
 
 Byla použita v klientské práci v odvětví: Developer nemovitostí; případy užití níže uvádějí princip a záměr, bez jmen a čísel.
 

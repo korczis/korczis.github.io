@@ -13,7 +13,7 @@ skill = "contestable-decisions"
 og_title = "Contestable decisions: skills"
 og_image = "og/skill-contestable-decisions.png"
 schema = "skill"
-terms = ["skill", "contestability", "css", "html", "javascript", "web-audio"]
+terms = ["skill", "contestability"]
 keywords = ["Contestable decisions", "M&A pre-deal screening and analysis", "Sanctions, PEP and beneficial-ownership screening", "Decision support and AI agents for analysts", "Governed AI-assisted software delivery", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -30,9 +30,5 @@ Decisions that can be challenged: competing hypotheses scored, uncertainty split
 The concept behind it: [Contestability](@/glossary/contestability.md).
 
 Services that draw on it: [M&A pre-deal screening and analysis](@/services/m-and-a.md), [Sanctions, PEP and beneficial-ownership screening](@/services/compliance-screening.md), [Decision support and AI agents for analysts](@/services/decision-support-ai.md) and [Governed AI-assisted software delivery](@/services/ai-engineering-governance.md).
-
-Practised with: [CSS](@/glossary/css.md), [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md) and [Web Audio](@/glossary/web-audio.md).
-
-Public work whose own words show it: [oscilla](https://github.com/korczis/oscilla).
 
 How to read this page: the definition is the experience vocabulary's; the services, technologies, public [repositories](@/glossary/repository.md) and use cases are derived and each links to its page.

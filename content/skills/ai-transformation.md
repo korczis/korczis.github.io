@@ -13,7 +13,7 @@ skill = "ai-transformation"
 og_title = "AI transformation: skills"
 og_image = "og/skill-ai-transformation.png"
 schema = "skill"
-terms = ["skill", "ai-agent", "shell", "alpine-js", "claude-api", "dockerfile", "fastapi", "flowbite-pro", "github-actions", "html", "javascript", "kubernetes"]
+terms = ["skill", "ai-agent", "html", "javascript", "shell", "alpine-js", "claude-api", "css", "dockerfile", "fastapi", "flowbite-pro", "github-actions"]
 keywords = ["AI transformation", "Decision support and AI agents for analysts", "Governed AI-assisted software delivery", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -31,9 +31,9 @@ The concept behind it: [AI agent](@/glossary/ai-agent.md).
 
 Services that draw on it: [Decision support and AI agents for analysts](@/services/decision-support-ai.md) and [Governed AI-assisted software delivery](@/services/ai-engineering-governance.md).
 
-Practised with: [Shell](@/glossary/shell.md), [Alpine.js](@/glossary/alpine-js.md), [Claude API](@/glossary/claude-api.md), [Dockerfile](@/glossary/dockerfile.md), [FastAPI](@/glossary/fastapi.md), [Flowbite Pro](@/glossary/flowbite-pro.md), [GitHub Actions](@/glossary/github-actions.md) and [HTML](@/glossary/html.md).
+Practised with: [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md), [Shell](@/glossary/shell.md), [Alpine.js](@/glossary/alpine-js.md), [Claude API](@/glossary/claude-api.md), [CSS](@/glossary/css.md), [Dockerfile](@/glossary/dockerfile.md) and [FastAPI](@/glossary/fastapi.md).
 
-Public work whose own words show it: [server-archlinux](https://github.com/korczis/server-archlinux).
+Public work whose own words show it: [server-archlinux](https://github.com/korczis/server-archlinux) and [oscilla](https://github.com/korczis/oscilla).
 
 It was applied in client work in Real-estate developer; the use cases below give the principle and the intent, without names or numbers.
 

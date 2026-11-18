@@ -36,8 +36,6 @@ It is built with [Elixir](@/glossary/elixir.md), [PostgreSQL](@/glossary/postgre
 
 The technologies behind it, measured from the work that shows those skills: [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md), [Python](@/glossary/python.md), [Alpine.js](@/glossary/alpine-js.md), [Claude API](@/glossary/claude-api.md), [Dockerfile](@/glossary/dockerfile.md), [FastAPI](@/glossary/fastapi.md) and [Flowbite Pro](@/glossary/flowbite-pro.md).
 
-1 public repository shows its skills (1 by its own words).
-
 It was delivered in client work under confidentiality agreements, in Real-estate developer and Financial and investment group, as Architect, Lead engineer, AI engineer, Data engineer, Investigator and Advisor; the use cases describe the principle and the intent, never a client, person, date or number.
 
 How to read this page: the method and the use cases are written by me; the skills, technologies and public evidence are derived from measured data and link to their own pages, each a [repository](@/glossary/repository.md), a term or a skill.

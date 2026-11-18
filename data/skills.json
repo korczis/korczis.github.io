@@ -80,7 +80,7 @@
           "created": "2026-11-09",
           "pushed": "2026-11-18",
           "primary": false,
-          "share": 21,
+          "share": 22.4,
           "via": [
             "code"
           ],
@@ -114,7 +114,7 @@
           "created": "2024-12-24",
           "pushed": "2026-11-18",
           "primary": true,
-          "share": 66.5,
+          "share": 61.7,
           "via": [
             "primary",
             "code"
@@ -124,7 +124,6 @@
             "JavaScript",
             "HTML",
             "CSS",
-            "Shell",
             "Alpine.js",
             "Apache ECharts",
             "Flowbite Pro",
@@ -149,7 +148,7 @@
           "created": "2026-10-23",
           "pushed": "2026-11-18",
           "primary": true,
-          "share": 66.2,
+          "share": 66.3,
           "via": [
             "primary",
             "code"
@@ -2764,7 +2763,7 @@
           "created": "2026-11-09",
           "pushed": "2026-11-18",
           "primary": true,
-          "share": 32.7,
+          "share": 32.3,
           "via": [
             "primary",
             "code"
@@ -3764,7 +3763,7 @@
       "counts": {
         "repos": 22,
         "primary": 12,
-        "sites": 4,
+        "sites": 5,
         "work": 22,
         "engagements": 0
       },
@@ -3823,7 +3822,7 @@
           "created": "2026-11-09",
           "pushed": "2026-11-18",
           "primary": false,
-          "share": 8.2,
+          "share": 8.1,
           "via": [
             "code"
           ],
@@ -4019,7 +4018,7 @@
           "url": "https://github.com/korczis/maze-rs",
           "work": true,
           "slug": "maze-rs",
-          "site": null,
+          "site": "https://korczis.github.io/maze-rs/",
           "category": "science",
           "description": "Maze for Programmers (Rust)",
           "summary": "Maze generation algorithms from the book, in Rust.",
@@ -4798,10 +4797,10 @@
       "name": "Shell",
       "kind": "language",
       "counts": {
-        "repos": 42,
+        "repos": 41,
         "primary": 13,
         "sites": 9,
-        "work": 42,
+        "work": 41,
         "engagements": 1
       },
       "first": 2013,
@@ -4846,10 +4845,6 @@
         {
           "key": "science",
           "n": 1
-        },
-        {
-          "key": "web",
-          "n": 1
         }
       ],
       "repos": [
@@ -4867,7 +4862,7 @@
           "created": "2026-11-09",
           "pushed": "2026-11-18",
           "primary": false,
-          "share": 8.3,
+          "share": 9,
           "via": [
             "code"
           ],
@@ -4885,40 +4880,6 @@
             "Alpine.js",
             "Flowbite Pro",
             "Majordomus"
-          ]
-        },
-        {
-          "name": "korczis.github.io",
-          "title": "korczis.github.io",
-          "url": "https://github.com/korczis/korczis.github.io",
-          "work": true,
-          "slug": "korczis-github-io",
-          "site": null,
-          "category": "web",
-          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-          "summary": null,
-          "summary_cs": null,
-          "created": "2024-12-24",
-          "pushed": "2026-11-18",
-          "primary": false,
-          "share": 1.1,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Shell",
-            "Alpine.js",
-            "Apache ECharts",
-            "Flowbite Pro",
-            "GitHub Pages",
-            "Majordomus",
-            "p5.js",
-            "Tailwind CSS",
-            "Zola"
           ]
         },
         {
@@ -5958,7 +5919,7 @@
       "counts": {
         "repos": 38,
         "primary": 5,
-        "sites": 15,
+        "sites": 16,
         "work": 38,
         "engagements": 2
       },
@@ -6017,7 +5978,7 @@
           "created": "2026-11-09",
           "pushed": "2026-11-18",
           "primary": false,
-          "share": 12.9,
+          "share": 11.4,
           "via": [
             "code"
           ],
@@ -6051,7 +6012,7 @@
           "created": "2024-12-24",
           "pushed": "2026-11-18",
           "primary": false,
-          "share": 31,
+          "share": 36.4,
           "via": [
             "code"
           ],
@@ -6060,7 +6021,6 @@
             "JavaScript",
             "HTML",
             "CSS",
-            "Shell",
             "Alpine.js",
             "Apache ECharts",
             "Flowbite Pro",
@@ -6085,7 +6045,7 @@
           "created": "2026-10-23",
           "pushed": "2026-11-18",
           "primary": false,
-          "share": 32.1,
+          "share": 32,
           "via": [
             "code",
             "stack"
@@ -6717,7 +6677,7 @@
           "url": "https://github.com/korczis/maze-rs",
           "work": true,
           "slug": "maze-rs",
-          "site": null,
+          "site": "https://korczis.github.io/maze-rs/",
           "category": "science",
           "description": "Maze for Programmers (Rust)",
           "summary": "Maze generation algorithms from the book, in Rust.",
@@ -7099,7 +7059,7 @@
           "created": "2024-12-24",
           "pushed": "2026-11-18",
           "primary": false,
-          "share": 1.4,
+          "share": 1.1,
           "via": [
             "code"
           ],
@@ -7108,7 +7068,6 @@
             "JavaScript",
             "HTML",
             "CSS",
-            "Shell",
             "Alpine.js",
             "Apache ECharts",
             "Flowbite Pro",
@@ -8962,7 +8921,6 @@
             "JavaScript",
             "HTML",
             "CSS",
-            "Shell",
             "Alpine.js",
             "Apache ECharts",
             "Flowbite Pro",
@@ -9072,7 +9030,6 @@
             "JavaScript",
             "HTML",
             "CSS",
-            "Shell",
             "Alpine.js",
             "Apache ECharts",
             "Flowbite Pro",
@@ -9219,7 +9176,6 @@
             "JavaScript",
             "HTML",
             "CSS",
-            "Shell",
             "Alpine.js",
             "Apache ECharts",
             "Flowbite Pro",
@@ -9423,7 +9379,6 @@
             "JavaScript",
             "HTML",
             "CSS",
-            "Shell",
             "Alpine.js",
             "Apache ECharts",
             "Flowbite Pro",
@@ -9547,7 +9502,6 @@
             "JavaScript",
             "HTML",
             "CSS",
-            "Shell",
             "Alpine.js",
             "Apache ECharts",
             "Flowbite Pro",
@@ -9679,7 +9633,6 @@
             "JavaScript",
             "HTML",
             "CSS",
-            "Shell",
             "Alpine.js",
             "Apache ECharts",
             "Flowbite Pro",
@@ -9811,7 +9764,6 @@
             "JavaScript",
             "HTML",
             "CSS",
-            "Shell",
             "Alpine.js",
             "Apache ECharts",
             "Flowbite Pro",
@@ -10232,7 +10184,6 @@
             "JavaScript",
             "HTML",
             "CSS",
-            "Shell",
             "Alpine.js",
             "Apache ECharts",
             "Flowbite Pro",

@@ -3,7 +3,7 @@
 title = "openttd-prismatic-bridge"
 description = "openttd-prismatic-bridge: projekt z kategorie Média a umění, hlavní jazyk Squirrel, poslední commit 18. listopadu 2026."
 template = "work.html"
-weight = 2
+weight = 6
 updated = "2026-11-18T02:16:44Z"
 
 [taxonomies]

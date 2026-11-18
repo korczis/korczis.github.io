@@ -17,7 +17,7 @@ definition = "The owner's supervisory layer for AI-assisted work: one policy for
 aliases = []
 reference = { title = "majordomus.dev", url = "https://majordomus.dev" }
 pages = ["about.md", "hire.md", "interfaces.md", "services/_index.md", "services/ai-engineering-governance.md", "services/continuous-monitoring.md", "services/decision-support-ai.md", "services/digital-forensics.md", "services/interactive-data-products.md", "skills/_index.md", "skills/audit-trail.md", "skills/data-room.md", "skills/insolvency-monitoring.md", "skills/interactive-visualisation.md", "skills/knowledge-graph.md", "skills/policy-as-code.md", "skills/risk-scoring.md", "stack.md", "_index.md"]
-related = ["alpine-js", "javascript", "flowbite-pro", "html", "claude-api", "python", "shell", "css"]
+related = ["javascript", "alpine-js", "flowbite-pro", "html", "claude-api", "css", "dockerfile", "python"]
 og_title = "Majordomus: glossary"
 og_image = "og/glossary-majordomus.png"
 keywords = ["Majordomus", "Technology", "Glossary", "Tomas Korcak"]

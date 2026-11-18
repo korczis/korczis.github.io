@@ -13,7 +13,7 @@ skill = "knowledge-graph"
 og_title = "Knowledge graph: skills"
 og_image = "og/skill-knowledge-graph.png"
 schema = "skill"
-terms = ["skill", "knowledge-graph", "alpine-js", "flowbite-pro", "html", "javascript", "majordomus", "python", "shell", "apache-echarts", "claude-api", "cytoscape-js"]
+terms = ["skill", "knowledge-graph", "alpine-js", "claude-api", "dockerfile", "fastapi", "flowbite-pro", "github-actions", "html", "javascript", "kubernetes", "majordomus"]
 keywords = ["Knowledge graph", "Digital investigation and OSINT dossiers", "Interactive data products and simulators", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -31,9 +31,7 @@ The concept behind it: [Knowledge graph](@/glossary/knowledge-graph.md).
 
 Services that draw on it: [Digital investigation and OSINT dossiers](@/services/digital-investigation.md) and [Interactive data products and simulators](@/services/interactive-data-products.md).
 
-Practised with: [Alpine.js](@/glossary/alpine-js.md), [Flowbite Pro](@/glossary/flowbite-pro.md), [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md), [Majordomus](@/glossary/majordomus.md), [Python](@/glossary/python.md), [Shell](@/glossary/shell.md) and [Apache ECharts](@/glossary/apache-echarts.md).
-
-Public work whose own words show it: [kompendium-epistemicke-anihilace](https://github.com/korczis/kompendium-epistemicke-anihilace).
+Practised with: [Alpine.js](@/glossary/alpine-js.md), [Claude API](@/glossary/claude-api.md), [Dockerfile](@/glossary/dockerfile.md), [FastAPI](@/glossary/fastapi.md), [Flowbite Pro](@/glossary/flowbite-pro.md), [GitHub Actions](@/glossary/github-actions.md), [HTML](@/glossary/html.md) and [JavaScript](@/glossary/javascript.md).
 
 It was applied in client work in Real-estate developer; the use cases below give the principle and the intent, without names or numbers.
 

@@ -17,7 +17,7 @@ definition = "A capability the owner practises, shown by public work and client 
 aliases = []
 reference = { title = "Schema.org: knowsAbout", url = "https://schema.org/knowsAbout" }
 pages = ["services/_index.md", "skills/_index.md", "skills/ai-transformation.md", "skills/audit-trail.md", "skills/chain-of-custody.md", "skills/change-monitoring.md", "skills/compliance-mapping.md", "skills/contestable-decisions.md", "skills/data-integration.md", "skills/data-room.md", "skills/decision-support.md", "skills/document-extraction.md", "skills/due-diligence.md", "skills/entity-resolution.md", "skills/financial-analysis.md", "skills/geospatial-analysis.md", "skills/infrastructure-osint.md", "skills/insolvency-monitoring.md", "skills/interactive-visualisation.md", "skills/knowledge-graph.md", "skills/llm-agents.md", "skills/m-and-a-screening.md", "skills/market-intelligence.md", "skills/media-forensics.md", "skills/narrative-analysis.md", "skills/orchestration.md", "skills/osint-investigation.md", "skills/ownership-analysis.md", "skills/policy-as-code.md", "skills/registry-intelligence.md", "skills/risk-scoring.md", "skills/sanctions-screening.md", "skills/source-reliability.md", "skills/web-automation.md"]
-related = ["javascript", "html", "alpine-js", "claude-api", "flowbite-pro", "shell", "dockerfile", "fastapi"]
+related = ["javascript", "html", "alpine-js", "claude-api", "dockerfile", "flowbite-pro", "fastapi", "shell"]
 og_title = "Skill: glossary"
 og_image = "og/glossary-skill.png"
 keywords = ["Skill", "Concept", "Glossary", "Tomas Korcak"]

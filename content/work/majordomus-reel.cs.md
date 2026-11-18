@@ -3,8 +3,8 @@
 title = "Majordomus reel"
 description = "Hlas, snímky, hudba i zvuk, vše generované a verzované jako software."
 template = "work.html"
-weight = 3
-updated = "2026-11-18T03:09:16Z"
+weight = 4
+updated = "2026-11-18T06:51:33Z"
 
 [taxonomies]
 tags = ["Média a umění", "JavaScript", "HTML", "Shell"]
@@ -28,9 +28,9 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**Majordomus reel** je projekt z kategorie [Média a umění](@/projects/media.cs.md). Jeho kód je napsaný hlavně v jazyce [JavaScript](@/glossary/javascript.cs.md) (66,2 %), dále [HTML](@/glossary/html.cs.md), [Shell](@/glossary/shell.cs.md) a [CSS](@/glossary/css.cs.md).
+**Majordomus reel** je projekt z kategorie [Média a umění](@/projects/media.cs.md). Jeho kód je napsaný hlavně v jazyce [JavaScript](@/glossary/javascript.cs.md) (66,3 %), dále [HTML](@/glossary/html.cs.md), [Shell](@/glossary/shell.cs.md) a [CSS](@/glossary/css.cs.md).
 
-[Repozitář](@/glossary/repository.cs.md) vznikl 23. října 2026; poslední [commit](@/glossary/commit.cs.md) je z 18. listopadu 2026. Zní „docs(rules): the site is on Tailwind and Flowbite now; name its surfaces and the class-list source“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+[Repozitář](@/glossary/repository.cs.md) vznikl 23. října 2026; poslední [commit](@/glossary/commit.cs.md) je z 18. listopadu 2026. Zní „fix(site): an explicit language route stays in its language“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 
 Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/majordomus-reel/>.
 

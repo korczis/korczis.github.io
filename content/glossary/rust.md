@@ -46,6 +46,6 @@ What it was for: [Tools](@/projects/tools.md) (8), [Science and visualisation](@
 
 Most recently: [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore; [Majordomus](@/work/prismatic-majordomus.md): One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model; [algoglyph](@/work/algoglyph.md): Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core.
 
-4 of these projects run as live sites.
+5 of these projects run as live sites.
 
 How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses Rust: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links Rust to the repositories and to the other languages and technologies they use together.

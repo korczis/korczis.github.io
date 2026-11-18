@@ -17,7 +17,7 @@ definition = "A licensed library of interface blocks and an application shell on
 aliases = ["Flowbite"]
 reference = { title = "Flowbite", url = "https://flowbite.com/" }
 pages = ["_index.md", "projects/knowledge.md", "projects/science.md", "services/_index.md", "services/ai-engineering-governance.md", "services/attack-surface.md", "services/compliance-screening.md", "services/continuous-monitoring.md", "services/decision-support-ai.md", "services/digital-forensics.md", "services/digital-investigation.md", "services/due-diligence.md", "services/interactive-data-products.md", "services/m-and-a.md", "services/reputation-intelligence.md", "skills/_index.md", "skills/ai-transformation.md", "skills/audit-trail.md", "skills/data-room.md", "skills/document-extraction.md", "skills/due-diligence.md", "skills/entity-resolution.md", "skills/insolvency-monitoring.md", "skills/interactive-visualisation.md", "skills/knowledge-graph.md", "skills/llm-agents.md", "skills/m-and-a-screening.md", "skills/market-intelligence.md", "skills/orchestration.md", "skills/risk-scoring.md", "stack.md", "work/algoglyph.md", "work/kompendium-epistemicke-anihilace.md"]
-related = ["alpine-js", "javascript", "html", "claude-api", "python", "dockerfile", "fastapi", "elixir"]
+related = ["alpine-js", "javascript", "html", "claude-api", "dockerfile", "fastapi", "python", "elixir"]
 og_title = "Flowbite Pro: glossary"
 og_image = "og/glossary-flowbite-pro.png"
 keywords = ["Flowbite Pro", "Technology", "Glossary", "Tomas Korcak"]

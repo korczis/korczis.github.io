@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Prostorové rozšíření PostgreSQL: body, tvary a geografické dotazy v SQL."
 aliases = []
 reference = { title = "postgis.net", url = "https://postgis.net/" }
-pages = ["projects/data.cs.md", "services/interactive-data-products.cs.md", "skills/geospatial-analysis.cs.md", "skills/osint-investigation.cs.md", "skills/registry-intelligence.cs.md", "work/crisis-map.cs.md"]
-related = ["elixir", "javascript", "css", "html", "gis", "mcp", "shell", "python"]
+pages = ["projects/data.cs.md", "services/interactive-data-products.cs.md", "skills/geospatial-analysis.cs.md", "skills/osint-investigation.cs.md", "skills/policy-as-code.cs.md", "skills/registry-intelligence.cs.md", "work/crisis-map.cs.md"]
+related = ["javascript", "css", "elixir", "html", "mcp", "shell", "gis", "python"]
 og_title = "PostGIS: slovník"
 og_image = "og/cs-glossary-postgis.png"
 keywords = ["PostGIS", "Technologie", "Slovník", "Tomáš Korčák"]

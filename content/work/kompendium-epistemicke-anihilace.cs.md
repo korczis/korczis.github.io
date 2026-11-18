@@ -4,7 +4,7 @@ title = "Kompendium"
 description = "Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat."
 template = "work.html"
 weight = 5
-updated = "2026-11-18T00:53:25Z"
+updated = "2026-11-18T06:34:59Z"
 
 [taxonomies]
 tags = ["Znalosti", "Elixir", "JavaScript", "Python"]
@@ -28,9 +28,9 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**Kompendium** je projekt z kategorie [Znalosti](@/projects/knowledge.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (32,7 %), dále [JavaScript](@/glossary/javascript.cs.md), [Python](@/glossary/python.cs.md) a [HTML](@/glossary/html.cs.md).
+**Kompendium** je projekt z kategorie [Znalosti](@/projects/knowledge.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (32,3 %), dále [JavaScript](@/glossary/javascript.cs.md), [Python](@/glossary/python.cs.md) a [HTML](@/glossary/html.cs.md).
 
-[Repozitář](@/glossary/repository.cs.md) vznikl 9. listopadu 2026; poslední [commit](@/glossary/commit.cs.md) je z 18. listopadu 2026. Zní „Merge origin/main (e1ad82c1) into train-1“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+[Repozitář](@/glossary/repository.cs.md) vznikl 9. listopadu 2026; poslední [commit](@/glossary/commit.cs.md) je z 18. listopadu 2026. Zní „test(e2e): kontrola zvětšení po interakci znovu projede líné grafy“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 
 Je postavený na [Zola](@/glossary/zola.cs.md), [Cytoscape.js](@/glossary/cytoscape-js.cs.md), [Apache ECharts](@/glossary/apache-echarts.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md) a [Flowbite Pro](@/glossary/flowbite-pro.cs.md).
 

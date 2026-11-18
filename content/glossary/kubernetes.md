@@ -16,7 +16,7 @@ kind = "technology"
 definition = "A system that runs containers across a cluster: scheduling, scaling, networking and rollouts declared as resources."
 aliases = ["k8s"]
 reference = { title = "Kubernetes documentation", url = "https://kubernetes.io/docs/concepts/overview/" }
-pages = ["services/compliance-screening.md", "services/continuous-monitoring.md", "services/due-diligence.md", "services/m-and-a.md", "skills/ai-transformation.md", "skills/data-room.md", "skills/entity-resolution.md", "skills/insolvency-monitoring.md", "skills/m-and-a-screening.md", "skills/market-intelligence.md", "skills/orchestration.md", "skills/risk-scoring.md", "_index.md"]
+pages = ["services/compliance-screening.md", "services/continuous-monitoring.md", "services/due-diligence.md", "services/m-and-a.md", "skills/data-room.md", "skills/entity-resolution.md", "skills/insolvency-monitoring.md", "skills/knowledge-graph.md", "skills/m-and-a-screening.md", "skills/market-intelligence.md", "skills/orchestration.md", "skills/risk-scoring.md", "_index.md"]
 related = ["alpine-js", "claude-api", "dockerfile", "fastapi", "flowbite-pro", "github-actions", "html", "javascript"]
 og_title = "Kubernetes: glossary"
 og_image = "og/glossary-kubernetes.png"

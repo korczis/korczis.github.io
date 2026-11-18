@@ -260,19 +260,6 @@
       ],
       "repos": [
         {
-          "name": "oscilla",
-          "title": "Oscilla",
-          "how": "words",
-          "score": 3.3,
-          "slug": "oscilla",
-          "url": "https://github.com/korczis/oscilla",
-          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-          "category": "science",
-          "site": "https://korczis.github.io/oscilla/",
-          "pushed": "2026-11-18",
-          "skill": "contestable-decisions"
-        },
-        {
           "name": "vomaste.cz",
           "title": "vomaste.cz",
           "how": "words",
@@ -333,7 +320,7 @@
           "url": "https://github.com/korczis/maze-rs",
           "description": "Maze for Programmers (Rust)",
           "category": "science",
-          "site": null,
+          "site": "https://korczis.github.io/maze-rs/",
           "pushed": "2021-12-28",
           "skill": "market-intelligence"
         },
@@ -388,12 +375,12 @@
         {
           "id": "html",
           "name": "HTML",
-          "n": 14
+          "n": 13
         },
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 13
+          "n": 12
         },
         {
           "id": "python",
@@ -461,8 +448,8 @@
           "n": 4
         },
         {
-          "id": "css",
-          "name": "CSS",
+          "id": "react",
+          "name": "React",
           "n": 3
         }
       ]
@@ -472,7 +459,7 @@
         {
           "id": "elixir",
           "name": "Elixir",
-          "n": 5,
+          "n": 4,
           "declared": true
         },
         {
@@ -484,13 +471,13 @@
         {
           "id": "playwright",
           "name": "Playwright",
-          "n": 1,
+          "n": 2,
           "declared": true
         },
         {
           "id": "postgresql",
           "name": "PostgreSQL",
-          "n": 1,
+          "n": 2,
           "declared": true
         },
         {
@@ -502,7 +489,7 @@
         {
           "id": "cytoscape-js",
           "name": "Cytoscape.js",
-          "n": 1,
+          "n": 0,
           "declared": true
         }
       ],
@@ -582,19 +569,6 @@
           "site": null,
           "pushed": "2025-12-20",
           "skill": "web-automation"
-        },
-        {
-          "name": "kompendium-epistemicke-anihilace",
-          "title": "Kompendium",
-          "how": "words",
-          "score": 3.3,
-          "slug": "kompendium-epistemicke-anihilace",
-          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
-          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
-          "category": "knowledge",
-          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
-          "pushed": "2026-11-18",
-          "skill": "knowledge-graph"
         },
         {
           "name": "microcrawler-crawler-xkcd-com",
@@ -851,22 +825,17 @@
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 20
+          "n": 19
         },
         {
           "id": "html",
           "name": "HTML",
-          "n": 10
+          "n": 9
         },
         {
           "id": "python",
           "name": "Python",
-          "n": 9
-        },
-        {
-          "id": "shell",
-          "name": "Shell",
-          "n": 7
+          "n": 8
         },
         {
           "id": "claude-api",
@@ -874,14 +843,14 @@
           "n": 5
         },
         {
-          "id": "alpine-js",
-          "name": "Alpine.js",
-          "n": 4
+          "id": "shell",
+          "name": "Shell",
+          "n": 5
         },
         {
-          "id": "flowbite-pro",
-          "name": "Flowbite Pro",
-          "n": 4
+          "id": "alpine-js",
+          "name": "Alpine.js",
+          "n": 3
         },
         {
           "id": "css",
@@ -899,13 +868,13 @@
           "n": 3
         },
         {
-          "id": "github-actions",
-          "name": "GitHub Actions",
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
           "n": 3
         },
         {
-          "id": "majordomus",
-          "name": "Majordomus",
+          "id": "github-actions",
+          "name": "GitHub Actions",
           "n": 3
         },
         {
@@ -916,6 +885,11 @@
         {
           "id": "kubernetes",
           "name": "Kubernetes",
+          "n": 2
+        },
+        {
+          "id": "majordomus",
+          "name": "Majordomus",
           "n": 2
         },
         {
@@ -1115,7 +1089,7 @@
         {
           "id": "shell",
           "name": "Shell",
-          "n": 4
+          "n": 3
         },
         {
           "id": "alpine-js",
@@ -1473,21 +1447,7 @@
         "contestable-decisions",
         "compliance-mapping"
       ],
-      "repos": [
-        {
-          "name": "oscilla",
-          "title": "Oscilla",
-          "how": "words",
-          "score": 3.3,
-          "slug": "oscilla",
-          "url": "https://github.com/korczis/oscilla",
-          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-          "category": "science",
-          "site": "https://korczis.github.io/oscilla/",
-          "pushed": "2026-11-18",
-          "skill": "contestable-decisions"
-        }
-      ],
+      "repos": [],
       "engagements": [
         {
           "id": "e2",
@@ -1519,12 +1479,12 @@
         {
           "id": "html",
           "name": "HTML",
-          "n": 4
+          "n": 3
         },
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 4
+          "n": 3
         },
         {
           "id": "python",
@@ -1590,11 +1550,6 @@
           "id": "react",
           "name": "React",
           "n": 2
-        },
-        {
-          "id": "css",
-          "name": "CSS",
-          "n": 1
         }
       ]
     },
@@ -2166,6 +2121,19 @@
       ],
       "repos": [
         {
+          "name": "korczis.github.io",
+          "title": "korczis.github.io",
+          "how": "words",
+          "score": 4.3,
+          "slug": "korczis-github-io",
+          "url": "https://github.com/korczis/korczis.github.io",
+          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+          "category": "web",
+          "site": null,
+          "pushed": "2026-11-18",
+          "skill": "llm-agents"
+        },
+        {
           "name": "sig",
           "title": "sig",
           "how": "words",
@@ -2176,19 +2144,6 @@
           "category": "ai",
           "site": null,
           "pushed": "2026-02-04",
-          "skill": "llm-agents"
-        },
-        {
-          "name": "korczis.github.io",
-          "title": "korczis.github.io",
-          "how": "words",
-          "score": 3.6,
-          "slug": "korczis-github-io",
-          "url": "https://github.com/korczis/korczis.github.io",
-          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-          "category": "web",
-          "site": null,
-          "pushed": "2026-11-18",
           "skill": "llm-agents"
         },
         {
@@ -2203,19 +2158,6 @@
           "site": "https://korczis.github.io/prismatic-majordomus/",
           "pushed": "2026-11-18",
           "skill": "llm-agents"
-        },
-        {
-          "name": "oscilla",
-          "title": "Oscilla",
-          "how": "words",
-          "score": 3.3,
-          "slug": "oscilla",
-          "url": "https://github.com/korczis/oscilla",
-          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-          "category": "science",
-          "site": "https://korczis.github.io/oscilla/",
-          "pushed": "2026-11-18",
-          "skill": "contestable-decisions"
         },
         {
           "name": "osint-case-ratcliffe-moscow-2026",
@@ -2309,6 +2251,19 @@
           "skill": "ai-transformation"
         },
         {
+          "name": "oscilla",
+          "title": "Oscilla",
+          "how": "words",
+          "score": 2,
+          "slug": "oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "category": "science",
+          "site": "https://korczis.github.io/oscilla/",
+          "pushed": "2026-11-18",
+          "skill": "ai-transformation"
+        },
+        {
           "name": "data-atlas",
           "title": "Data Atlas",
           "how": "words",
@@ -2381,12 +2336,12 @@
         {
           "id": "shell",
           "name": "Shell",
-          "n": 15
+          "n": 13
         },
         {
           "id": "python",
           "name": "Python",
-          "n": 12
+          "n": 11
         },
         {
           "id": "alpine-js",
@@ -2455,7 +2410,7 @@
         {
           "id": "rust",
           "name": "Rust",
-          "n": 3,
+          "n": 2,
           "declared": true
         },
         {
@@ -2473,7 +2428,7 @@
         {
           "id": "majordomus",
           "name": "Majordomus",
-          "n": 9,
+          "n": 8,
           "declared": true
         },
         {
@@ -2496,7 +2451,7 @@
           "name": "majordomus-reel",
           "title": "Majordomus reel",
           "how": "words",
-          "score": 5.5,
+          "score": 5.9,
           "slug": "majordomus-reel",
           "url": "https://github.com/korczis/majordomus-reel",
           "description": "A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound",
@@ -2509,14 +2464,14 @@
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "how": "words",
-          "score": 4.6,
+          "score": 4.3,
           "slug": "korczis-github-io",
           "url": "https://github.com/korczis/korczis.github.io",
           "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
           "category": "web",
           "site": null,
           "pushed": "2026-11-18",
-          "skill": "policy-as-code"
+          "skill": "llm-agents"
         },
         {
           "name": "sig",
@@ -2543,32 +2498,6 @@
           "site": "https://korczis.github.io/prismatic-majordomus/",
           "pushed": "2026-11-18",
           "skill": "llm-agents"
-        },
-        {
-          "name": "kompendium-epistemicke-anihilace",
-          "title": "Kompendium",
-          "how": "words",
-          "score": 3.3,
-          "slug": "kompendium-epistemicke-anihilace",
-          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
-          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
-          "category": "knowledge",
-          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
-          "pushed": "2026-11-18",
-          "skill": "policy-as-code"
-        },
-        {
-          "name": "oscilla",
-          "title": "Oscilla",
-          "how": "words",
-          "score": 3.3,
-          "slug": "oscilla",
-          "url": "https://github.com/korczis/oscilla",
-          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-          "category": "science",
-          "site": "https://korczis.github.io/oscilla/",
-          "pushed": "2026-11-18",
-          "skill": "contestable-decisions"
         },
         {
           "name": "osint-case-ratcliffe-moscow-2026",
@@ -2649,6 +2578,19 @@
           "skill": "ai-transformation"
         },
         {
+          "name": "oscilla",
+          "title": "Oscilla",
+          "how": "words",
+          "score": 2,
+          "slug": "oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "category": "science",
+          "site": "https://korczis.github.io/oscilla/",
+          "pushed": "2026-11-18",
+          "skill": "ai-transformation"
+        },
+        {
           "name": "crisis-map",
           "title": "Crisis map",
           "how": "words",
@@ -2708,22 +2650,17 @@
         {
           "id": "html",
           "name": "HTML",
-          "n": 20
+          "n": 19
         },
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 20
+          "n": 19
         },
         {
           "id": "shell",
           "name": "Shell",
-          "n": 19
-        },
-        {
-          "id": "python",
-          "name": "Python",
-          "n": 10
+          "n": 15
         },
         {
           "id": "css",
@@ -2731,29 +2668,19 @@
           "n": 9
         },
         {
+          "id": "python",
+          "name": "Python",
+          "n": 8
+        },
+        {
           "id": "alpine-js",
           "name": "Alpine.js",
-          "n": 8
+          "n": 7
         },
         {
           "id": "flowbite-pro",
           "name": "Flowbite Pro",
-          "n": 8
-        },
-        {
-          "id": "elixir",
-          "name": "Elixir",
-          "n": 5
-        },
-        {
-          "id": "zola",
-          "name": "Zola",
-          "n": 5
-        },
-        {
-          "id": "apache-echarts",
-          "name": "Apache ECharts",
-          "n": 4
+          "n": 7
         },
         {
           "id": "dockerfile",
@@ -2761,9 +2688,24 @@
           "n": 4
         },
         {
+          "id": "elixir",
+          "name": "Elixir",
+          "n": 4
+        },
+        {
           "id": "tailwind-css",
           "name": "Tailwind CSS",
           "n": 4
+        },
+        {
+          "id": "zola",
+          "name": "Zola",
+          "n": 4
+        },
+        {
+          "id": "apache-echarts",
+          "name": "Apache ECharts",
+          "n": 3
         },
         {
           "id": "fastapi",
@@ -2776,13 +2718,13 @@
           "n": 3
         },
         {
-          "id": "kubernetes",
-          "name": "Kubernetes",
+          "id": "github-pages",
+          "name": "GitHub Pages",
           "n": 2
         },
         {
-          "id": "openai-api",
-          "name": "OpenAI API",
+          "id": "kubernetes",
+          "name": "Kubernetes",
           "n": 2
         }
       ]
@@ -2792,7 +2734,7 @@
         {
           "id": "apache-echarts",
           "name": "Apache ECharts",
-          "n": 3,
+          "n": 2,
           "declared": true
         },
         {
@@ -2848,6 +2790,19 @@
           "skill": "interactive-visualisation"
         },
         {
+          "name": "kompendium-epistemicke-anihilace",
+          "title": "Kompendium",
+          "how": "words",
+          "score": 4,
+          "slug": "kompendium-epistemicke-anihilace",
+          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
+          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
+          "category": "knowledge",
+          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+          "pushed": "2026-11-18",
+          "skill": "interactive-visualisation"
+        },
+        {
           "name": "microcrawler-crawler-all",
           "title": "microcrawler-crawler-all",
           "how": "words",
@@ -2872,19 +2827,6 @@
           "site": "https://korczis.github.io/crisis-map/",
           "pushed": "2026-11-16",
           "skill": "geospatial-analysis"
-        },
-        {
-          "name": "kompendium-epistemicke-anihilace",
-          "title": "Kompendium",
-          "how": "words",
-          "score": 3.3,
-          "slug": "kompendium-epistemicke-anihilace",
-          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
-          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
-          "category": "knowledge",
-          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
-          "pushed": "2026-11-18",
-          "skill": "interactive-visualisation"
         },
         {
           "name": "microcrawler-crawler-sreality-cz",
@@ -3179,42 +3121,42 @@
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 24
+          "n": 23
         },
         {
           "id": "html",
           "name": "HTML",
-          "n": 14
+          "n": 13
         },
         {
           "id": "shell",
           "name": "Shell",
-          "n": 13
+          "n": 11
         },
         {
           "id": "elixir",
           "name": "Elixir",
-          "n": 10
+          "n": 9
         },
         {
           "id": "python",
           "name": "Python",
-          "n": 9
+          "n": 8
         },
         {
           "id": "alpine-js",
           "name": "Alpine.js",
-          "n": 6
+          "n": 5
         },
         {
           "id": "flowbite-pro",
           "name": "Flowbite Pro",
-          "n": 6
+          "n": 5
         },
         {
           "id": "majordomus",
           "name": "Majordomus",
-          "n": 6
+          "n": 5
         },
         {
           "id": "claude-api",
@@ -3766,7 +3708,7 @@
           "url": "https://github.com/korczis/maze-rs",
           "description": "Maze for Programmers (Rust)",
           "category": "science",
-          "site": null,
+          "site": "https://korczis.github.io/maze-rs/",
           "pushed": "2021-12-28"
         }
       ],
@@ -4458,20 +4400,7 @@
         "digital-investigation",
         "interactive-data-products"
       ],
-      "repos": [
-        {
-          "name": "kompendium-epistemicke-anihilace",
-          "title": "Kompendium",
-          "how": "words",
-          "score": 3.3,
-          "slug": "kompendium-epistemicke-anihilace",
-          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
-          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
-          "category": "knowledge",
-          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
-          "pushed": "2026-11-18"
-        }
-      ],
+      "repos": [],
       "engagements": [
         {
           "id": "e2",
@@ -4494,41 +4423,6 @@
         {
           "id": "alpine-js",
           "name": "Alpine.js",
-          "n": 2
-        },
-        {
-          "id": "flowbite-pro",
-          "name": "Flowbite Pro",
-          "n": 2
-        },
-        {
-          "id": "html",
-          "name": "HTML",
-          "n": 2
-        },
-        {
-          "id": "javascript",
-          "name": "JavaScript",
-          "n": 2
-        },
-        {
-          "id": "majordomus",
-          "name": "Majordomus",
-          "n": 2
-        },
-        {
-          "id": "python",
-          "name": "Python",
-          "n": 2
-        },
-        {
-          "id": "shell",
-          "name": "Shell",
-          "n": 2
-        },
-        {
-          "id": "apache-echarts",
-          "name": "Apache ECharts",
           "n": 1
         },
         {
@@ -4537,18 +4431,8 @@
           "n": 1
         },
         {
-          "id": "cytoscape-js",
-          "name": "Cytoscape.js",
-          "n": 1
-        },
-        {
           "id": "dockerfile",
           "name": "Dockerfile",
-          "n": 1
-        },
-        {
-          "id": "elixir",
-          "name": "Elixir",
           "n": 1
         },
         {
@@ -4557,8 +4441,23 @@
           "n": 1
         },
         {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 1
+        },
+        {
           "id": "github-actions",
           "name": "GitHub Actions",
+          "n": 1
+        },
+        {
+          "id": "html",
+          "name": "HTML",
+          "n": 1
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
           "n": 1
         },
         {
@@ -4567,8 +4466,38 @@
           "n": 1
         },
         {
+          "id": "majordomus",
+          "name": "Majordomus",
+          "n": 1
+        },
+        {
           "id": "openai-api",
           "name": "OpenAI API",
+          "n": 1
+        },
+        {
+          "id": "playwright",
+          "name": "Playwright",
+          "n": 1
+        },
+        {
+          "id": "postgresql",
+          "name": "PostgreSQL",
+          "n": 1
+        },
+        {
+          "id": "pydantic",
+          "name": "Pydantic",
+          "n": 1
+        },
+        {
+          "id": "python",
+          "name": "Python",
+          "n": 1
+        },
+        {
+          "id": "react",
+          "name": "React",
           "n": 1
         }
       ]
@@ -4933,11 +4862,6 @@
           "n": 3
         },
         {
-          "id": "shell",
-          "name": "Shell",
-          "n": 3
-        },
-        {
           "id": "alpine-js",
           "name": "Alpine.js",
           "n": 2
@@ -4960,6 +4884,11 @@
         {
           "id": "majordomus",
           "name": "Majordomus",
+          "n": 2
+        },
+        {
+          "id": "shell",
+          "name": "Shell",
           "n": 2
         },
         {
@@ -5018,6 +4947,18 @@
           "category": "systems",
           "site": null,
           "pushed": "2019-04-04"
+        },
+        {
+          "name": "oscilla",
+          "title": "Oscilla",
+          "how": "words",
+          "score": 2,
+          "slug": "oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "category": "science",
+          "site": "https://korczis.github.io/oscilla/",
+          "pushed": "2026-11-18"
         }
       ],
       "engagements": [
@@ -5040,6 +4981,16 @@
       ],
       "technologies": [
         {
+          "id": "html",
+          "name": "HTML",
+          "n": 2
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "n": 2
+        },
+        {
           "id": "shell",
           "name": "Shell",
           "n": 2
@@ -5052,6 +5003,11 @@
         {
           "id": "claude-api",
           "name": "Claude API",
+          "n": 1
+        },
+        {
+          "id": "css",
+          "name": "CSS",
           "n": 1
         },
         {
@@ -5072,16 +5028,6 @@
         {
           "id": "github-actions",
           "name": "GitHub Actions",
-          "n": 1
-        },
-        {
-          "id": "html",
-          "name": "HTML",
-          "n": 1
-        },
-        {
-          "id": "javascript",
-          "name": "JavaScript",
           "n": 1
         },
         {
@@ -5113,11 +5059,6 @@
           "id": "pydantic",
           "name": "Pydantic",
           "n": 1
-        },
-        {
-          "id": "python",
-          "name": "Python",
-          "n": 1
         }
       ]
     },
@@ -5130,6 +5071,18 @@
       ],
       "repos": [
         {
+          "name": "korczis.github.io",
+          "title": "korczis.github.io",
+          "how": "words",
+          "score": 4.3,
+          "slug": "korczis-github-io",
+          "url": "https://github.com/korczis/korczis.github.io",
+          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+          "category": "web",
+          "site": null,
+          "pushed": "2026-11-18"
+        },
+        {
           "name": "sig",
           "title": "sig",
           "how": "words",
@@ -5140,18 +5093,6 @@
           "category": "ai",
           "site": null,
           "pushed": "2026-02-04"
-        },
-        {
-          "name": "korczis.github.io",
-          "title": "korczis.github.io",
-          "how": "words",
-          "score": 3.6,
-          "slug": "korczis-github-io",
-          "url": "https://github.com/korczis/korczis.github.io",
-          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-          "category": "web",
-          "site": null,
-          "pushed": "2026-11-18"
         },
         {
           "name": "prismatic-majordomus",
@@ -5222,13 +5163,13 @@
       ],
       "technologies": [
         {
-          "id": "shell",
-          "name": "Shell",
-          "n": 6
-        },
-        {
           "id": "html",
           "name": "HTML",
+          "n": 5
+        },
+        {
+          "id": "shell",
+          "name": "Shell",
           "n": 5
         },
         {
@@ -6056,43 +5997,9 @@
         "decision-support-ai",
         "ai-engineering-governance"
       ],
-      "repos": [
-        {
-          "name": "oscilla",
-          "title": "Oscilla",
-          "how": "words",
-          "score": 3.3,
-          "slug": "oscilla",
-          "url": "https://github.com/korczis/oscilla",
-          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-          "category": "science",
-          "site": "https://korczis.github.io/oscilla/",
-          "pushed": "2026-11-18"
-        }
-      ],
+      "repos": [],
       "engagements": [],
-      "technologies": [
-        {
-          "id": "css",
-          "name": "CSS",
-          "n": 1
-        },
-        {
-          "id": "html",
-          "name": "HTML",
-          "n": 1
-        },
-        {
-          "id": "javascript",
-          "name": "JavaScript",
-          "n": 1
-        },
-        {
-          "id": "web-audio",
-          "name": "Web Audio",
-          "n": 1
-        }
-      ]
+      "technologies": []
     },
     "compliance-mapping": {
       "domain": "dd",
@@ -6116,36 +6023,12 @@
           "name": "majordomus-reel",
           "title": "Majordomus reel",
           "how": "words",
-          "score": 5.5,
+          "score": 5.9,
           "slug": "majordomus-reel",
           "url": "https://github.com/korczis/majordomus-reel",
           "description": "A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound",
           "category": "media",
           "site": "https://korczis.github.io/majordomus-reel/",
-          "pushed": "2026-11-18"
-        },
-        {
-          "name": "korczis.github.io",
-          "title": "korczis.github.io",
-          "how": "words",
-          "score": 4.6,
-          "slug": "korczis-github-io",
-          "url": "https://github.com/korczis/korczis.github.io",
-          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-          "category": "web",
-          "site": null,
-          "pushed": "2026-11-18"
-        },
-        {
-          "name": "kompendium-epistemicke-anihilace",
-          "title": "Kompendium",
-          "how": "words",
-          "score": 3.3,
-          "slug": "kompendium-epistemicke-anihilace",
-          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
-          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
-          "category": "knowledge",
-          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
           "pushed": "2026-11-18"
         },
         {
@@ -6171,6 +6054,18 @@
           "category": "data",
           "site": "https://korczis.github.io/data-atlas/",
           "pushed": "2026-11-16"
+        },
+        {
+          "name": "korczis.github.io",
+          "title": "korczis.github.io",
+          "how": "words",
+          "score": 2,
+          "slug": "korczis-github-io",
+          "url": "https://github.com/korczis/korczis.github.io",
+          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+          "category": "web",
+          "site": null,
+          "pushed": "2026-11-18"
         },
         {
           "name": "catharsis-as-a-service",
@@ -6214,16 +6109,11 @@
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 8
+          "n": 7
         },
         {
           "id": "html",
           "name": "HTML",
-          "n": 7
-        },
-        {
-          "id": "shell",
-          "name": "Shell",
           "n": 6
         },
         {
@@ -6232,43 +6122,13 @@
           "n": 4
         },
         {
+          "id": "shell",
+          "name": "Shell",
+          "n": 4
+        },
+        {
           "id": "majordomus",
           "name": "Majordomus",
-          "n": 3
-        },
-        {
-          "id": "python",
-          "name": "Python",
-          "n": 3
-        },
-        {
-          "id": "rust",
-          "name": "Rust",
-          "n": 3
-        },
-        {
-          "id": "zola",
-          "name": "Zola",
-          "n": 3
-        },
-        {
-          "id": "alpine-js",
-          "name": "Alpine.js",
-          "n": 2
-        },
-        {
-          "id": "apache-echarts",
-          "name": "Apache ECharts",
-          "n": 2
-        },
-        {
-          "id": "elixir",
-          "name": "Elixir",
-          "n": 2
-        },
-        {
-          "id": "flowbite-pro",
-          "name": "Flowbite Pro",
           "n": 2
         },
         {
@@ -6282,13 +6142,48 @@
           "n": 2
         },
         {
+          "id": "python",
+          "name": "Python",
+          "n": 2
+        },
+        {
+          "id": "rust",
+          "name": "Rust",
+          "n": 2
+        },
+        {
+          "id": "zola",
+          "name": "Zola",
+          "n": 2
+        },
+        {
+          "id": "alpine-js",
+          "name": "Alpine.js",
+          "n": 1
+        },
+        {
+          "id": "apache-echarts",
+          "name": "Apache ECharts",
+          "n": 1
+        },
+        {
           "id": "claude-api",
           "name": "Claude API",
           "n": 1
         },
         {
-          "id": "cytoscape-js",
-          "name": "Cytoscape.js",
+          "id": "elixir",
+          "name": "Elixir",
+          "n": 1
+        },
+        {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 1
+        },
+        {
+          "id": "github-pages",
+          "name": "GitHub Pages",
           "n": 1
         }
       ]
@@ -6316,7 +6211,7 @@
           "name": "kompendium-epistemicke-anihilace",
           "title": "Kompendium",
           "how": "words",
-          "score": 3.3,
+          "score": 4,
           "slug": "kompendium-epistemicke-anihilace",
           "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
           "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
