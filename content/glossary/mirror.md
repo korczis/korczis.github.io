@@ -17,7 +17,7 @@ definition = "A repository that copies another project's code; here a repository
 aliases = []
 reference = { title = "Git: mirroring a repository", url = "https://docs.github.com/en/repositories/creating-and-managing-repositories/duplicating-a-repository" }
 pages = ["_index.md", "repositories/_index.md", "work/_index.md"]
-related = ["commit", "fork", "repository", "open-source", "d3", "data-visualisation", "flowbite-pro", "front-matter"]
+related = ["commit", "fork", "repository", "open-source", "ai-agent", "apache-echarts", "audit-trail", "d3"]
 og_title = "Mirror: glossary"
 og_image = "og/glossary-mirror.png"
 keywords = ["Mirror", "Concept", "Glossary", "Tomas Korcak"]

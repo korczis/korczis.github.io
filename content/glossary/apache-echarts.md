@@ -16,8 +16,8 @@ kind = "technology"
 definition = "An Apache project for interactive charts: calendars, sunbursts, maps and large data sets."
 aliases = ["ECharts"]
 reference = { title = "echarts.apache.org", url = "https://echarts.apache.org/en/index.html" }
-pages = ["projects/knowledge.md", "projects/science.md", "stack.md", "work/algoglyph.md", "work/kompendium-epistemicke-anihilace.md"]
-related = ["alpine-js", "flowbite-pro", "repository", "cytoscape-js", "elixir", "github-pages", "javascript", "p5-js"]
+pages = ["_index.md", "projects/knowledge.md", "projects/science.md", "stack.md", "work/algoglyph.md", "work/kompendium-epistemicke-anihilace.md"]
+related = ["flowbite-pro", "alpine-js", "repository", "elixir", "rust", "zola", "commit", "cytoscape-js"]
 og_title = "Apache ECharts: glossary"
 og_image = "og/glossary-apache-echarts.png"
 keywords = ["Apache ECharts", "Technology", "Glossary", "Tomas Korcak"]

@@ -17,7 +17,7 @@ definition = "A program that turns content and templates into plain files before
 aliases = []
 reference = { title = "Static site generator (Wikipedia)", url = "https://en.wikipedia.org/wiki/Static_site_generator" }
 pages = ["_index.md", "projects/web.md", "work/annasabatova-cz.md", "work/apollocrawler-github-io.md", "work/craftsmen.md", "work/korczis-com.md", "work/korczis-github-com.md", "work/korczis-github-io.md", "work/korczis-gitlab-io.md", "work/microscratch-react.md", "work/microscratch.md", "work/nestravenkam.md", "work/pavian-eu.md", "work/the-scratch.md", "work/tosh.md", "work/web-spa.md"]
-related = ["repository", "commit", "open-source", "javascript", "css", "html", "elixir", "shell"]
+related = ["repository", "commit", "open-source", "javascript", "css", "html", "elixir", "rust"]
 og_title = "Static site generator: glossary"
 og_image = "og/glossary-static-site-generator.png"
 keywords = ["Static site generator", "Concept", "Glossary", "Tomas Korcak"]

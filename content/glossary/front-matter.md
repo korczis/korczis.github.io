@@ -17,7 +17,7 @@ definition = "Structured data at the top of a content file (here TOML) that desc
 aliases = []
 reference = { title = "Zola: page front matter", url = "https://www.getzola.org/documentation/content/page/#front-matter" }
 pages = ["_index.md"]
-related = ["commit", "d3", "data-visualisation", "flowbite-pro", "fork", "json-ld", "mirror", "open-graph"]
+related = ["ai-agent", "apache-echarts", "audit-trail", "commit", "d3", "data-visualisation", "due-diligence", "elixir"]
 og_title = "Front matter: glossary"
 og_image = "og/glossary-front-matter.png"
 keywords = ["Front matter", "Concept", "Glossary", "Tomas Korcak"]

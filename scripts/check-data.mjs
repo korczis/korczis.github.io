@@ -169,6 +169,11 @@ if (cv.hire) {
   if (cv.hire.roles_cs && cv.hire.roles_cs.length !== cv.hire.roles.length) fail('data/cv.toml', 'cv.hire.roles_cs is not as long as cv.hire.roles');
   const rate = ['rate_from', 'rate_currency', 'rate_unit'].filter((k) => k in cv.hire);
   if (rate.length && rate.length !== 3) fail('data/cv.toml', 'cv.hire states a rate only with rate_from, rate_currency and rate_unit together');
+  // The facts for sourcing filters (ADR 0007, addendum of 2026-11-18: start, work authorization,
+  // relocation, time zone and overlap): each is optional and never inferred; a text one is shown in
+  // every language, so it carries its Czech twin, and an overlap is stated only with its zone.
+  for (const key of ['work_authorization', 'overlap']) if (key in cv.hire && !(`${key}_cs` in cv.hire)) fail('data/cv.toml', `cv.hire.${key} has no ${key}_cs twin`);
+  if ('overlap' in cv.hire && !('timezone' in cv.hire)) fail('data/cv.toml', 'cv.hire states an overlap only with its timezone');
 }
 
 // Measured text is shown as text: no terminal colour code or other control character in any

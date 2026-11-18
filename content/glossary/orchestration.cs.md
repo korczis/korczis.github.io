@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Koordinace mnoha automatických kroků, služeb nebo agentů (fronty, workflow, plány), aby běžely ve správném pořadí a zotavily se, když jeden selže."
 aliases = []
 reference = { title = "Orchestration in computing (Wikipedia)", url = "https://en.wikipedia.org/wiki/Orchestration_(computing)" }
-pages = ["projects/security.cs.md", "work/magic.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/peacemaker.cs.md", "work/ratnet.cs.md", "work/zlown.cs.md"]
-related = ["audit-trail", "data-integration", "decision-support-system", "due-diligence", "information-extraction", "insolvency", "knowledge-graph", "market-intelligence"]
+pages = ["_index.cs.md", "projects/security.cs.md", "work/magic.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/peacemaker.cs.md", "work/ratnet.cs.md", "work/zlown.cs.md"]
+related = ["audit-trail", "due-diligence", "osint", "repository", "commit", "data-integration", "decision-support-system", "information-extraction"]
 og_title = "Orchestrace: slovník"
 og_image = "og/cs-glossary-orchestration.png"
 keywords = ["Orchestrace", "Orchestration", "Koncept", "Slovník", "Tomáš Korčák"]

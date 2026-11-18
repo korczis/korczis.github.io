@@ -4,6 +4,9 @@
 [majordomus]
 points = ["One policy for every AI coding tool", "Scoped tasks with a finish contract", "Lands only verified work", "Local; it never calls a model"]
 points_cs = ["Jedna politika pro každý AI nástroj pro programování", "Vymezené úkoly se smlouvou o dokončení", "Pustí jen ověřenou práci", "Lokální; nikdy nevolá model"]
+# The glossary term each point stands on, by position (data/glossary.toml ids, words only): the
+# landing's case study links every point to its term.
+point_terms = ["ai-agent", "orchestration", "audit-trail", "mcp"]
 
 [stack.sections.toolkit]
 eyebrow = "Toolkit"

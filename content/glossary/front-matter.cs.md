@@ -17,7 +17,7 @@ definition = "Strukturovaná data na začátku obsahového souboru (tady TOML), 
 aliases = []
 reference = { title = "Zola: page front matter", url = "https://www.getzola.org/documentation/content/page/#front-matter" }
 pages = ["_index.cs.md"]
-related = ["commit", "d3", "data-visualisation", "flowbite-pro", "fork", "json-ld", "mirror", "open-graph"]
+related = ["ai-agent", "apache-echarts", "audit-trail", "commit", "d3", "data-visualisation", "due-diligence", "elixir"]
 og_title = "Front matter: slovník"
 og_image = "og/cs-glossary-front-matter.png"
 keywords = ["Front matter", "Koncept", "Slovník", "Tomáš Korčák"]

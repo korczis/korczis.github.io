@@ -5,6 +5,7 @@
 @source '../data/ui.toml';
 @source '../static/js/site.js';
 @source '../static/js/viz';
+@source '../static/js/components';
 @source '../node_modules/flowbite/lib/esm/components';
 
 @plugin 'flowbite/plugin';
@@ -170,6 +171,15 @@
     position: absolute;
     inset: 0;
     max-width: 100%;
+  }
+
+  /* The skills table's kind filter (templates/partials/skills-table.html): radio buttons styled as
+     Flowbite tabs. With "All" checked, and without CSS :has(), every row shows; a kind hides the
+     rows of the other kinds. Nothing is hidden before the visitor chooses. */
+  [data-skills]:has(input[value='language']:checked) tr[data-kind]:not([data-kind='language']),
+  [data-skills]:has(input[value='technology']:checked) tr[data-kind]:not([data-kind='technology']),
+  [data-skills]:has(input[value='capability']:checked) tr[data-kind]:not([data-kind='capability']) {
+    display: none;
   }
 
   /* Paint containment clips the sketch to its box and keeps it out of the page's scrollable

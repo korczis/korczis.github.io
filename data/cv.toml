@@ -53,6 +53,16 @@ regions_cs = "celosvětově, v časovém pásmu střední Evropy"
 rate_from = 110
 rate_currency = "USD"
 rate_unit = "hour"
+# Facts for sourcing filters, as the owner answered them in session
+# f877b790-5df2-4d41-990a-fddee785c35e at about 2026-11-18T02:10Z (ADR 0007, addendum "facts for
+# sourcing filters"): start "Ihned"; "EU občan, otevřený relokaci"; "Flexibilně, i US Pacific".
+start = "immediately"
+work_authorization = "EU citizen (Czech Republic): no visa needed in the EU/EEA; elsewhere as a B2B contractor, no sponsorship needed"
+work_authorization_cs = "Občan EU (Česko): v EU/EHP bez víza; jinde jako B2B kontraktor, bez potřeby sponzorství"
+relocation = true
+timezone = "Europe/Prague"
+overlap = "flexible hours, including US Pacific overlap"
+overlap_cs = "flexibilní pracovní doba, včetně překryvu s US Pacific"
 
 [[roles]]
 title = "Freelance Technical Mentor & Engineering Advisor"

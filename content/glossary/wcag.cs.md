@@ -17,7 +17,7 @@ definition = "Web Content Accessibility Guidelines; každá stránka tady se př
 aliases = []
 reference = { title = "W3C: WCAG 2.2", url = "https://www.w3.org/TR/WCAG22/" }
 pages = ["_index.cs.md"]
-related = ["commit", "d3", "data-visualisation", "flowbite-pro", "fork", "front-matter", "json-ld", "mirror"]
+related = ["ai-agent", "apache-echarts", "audit-trail", "commit", "d3", "data-visualisation", "due-diligence", "elixir"]
 og_title = "WCAG: slovník"
 og_image = "og/cs-glossary-wcag.png"
 keywords = ["WCAG", "Koncept", "Slovník", "Tomáš Korčák"]

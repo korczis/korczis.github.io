@@ -16,8 +16,8 @@ kind = "concept"
 definition = "The investigation of a company, a person or an asset before a decision such as an acquisition or an investment: who owns it, what it holds, what it owes and what could go wrong."
 aliases = []
 reference = { title = "Due diligence (Wikipedia)", url = "https://en.wikipedia.org/wiki/Due_diligence" }
-pages = ["hire.md", "projects/security.md", "work/magic.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/peacemaker.md", "work/ratnet.md", "work/zlown.md"]
-related = ["mergers-and-acquisitions", "osint", "audit-trail", "data-integration", "decision-support-system", "information-extraction", "insolvency", "knowledge-graph"]
+pages = ["_index.md", "hire.md", "projects/security.md", "work/magic.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/peacemaker.md", "work/ratnet.md", "work/zlown.md"]
+related = ["osint", "audit-trail", "mergers-and-acquisitions", "orchestration", "repository", "commit", "data-integration", "decision-support-system"]
 og_title = "Due diligence: glossary"
 og_image = "og/glossary-due-diligence.png"
 keywords = ["Due diligence", "Concept", "Glossary", "Tomas Korcak"]

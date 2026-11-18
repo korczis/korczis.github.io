@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Chronologický záznam o tom, kdo co udělal a na základě jakých podkladů, uchovaný proto, aby šlo práci později ověřit a zrekonstruovat."
 aliases = []
 reference = { title = "Audit trail (Wikipedia)", url = "https://en.wikipedia.org/wiki/Audit_trail" }
-pages = ["projects/security.cs.md", "work/magic.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/peacemaker.cs.md", "work/ratnet.cs.md", "work/zlown.cs.md"]
-related = ["data-integration", "decision-support-system", "due-diligence", "information-extraction", "insolvency", "knowledge-graph", "market-intelligence", "mergers-and-acquisitions"]
+pages = ["_index.cs.md", "projects/security.cs.md", "work/magic.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/peacemaker.cs.md", "work/ratnet.cs.md", "work/zlown.cs.md"]
+related = ["due-diligence", "orchestration", "osint", "repository", "commit", "data-integration", "decision-support-system", "information-extraction"]
 og_title = "Auditní stopa: slovník"
 og_image = "og/cs-glossary-audit-trail.png"
 keywords = ["Auditní stopa", "Audit trail", "Koncept", "Slovník", "Tomáš Korčák"]
