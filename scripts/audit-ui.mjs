@@ -5,7 +5,10 @@
 // view. At 320, 768, 1024 and 1920 px: overflow and errors only. Then every internal link the
 // pages rendered must resolve to a built file, every link with a fragment to an element with that
 // id in the page it names, and on a page of another language than the default (/cs/) every
-// internal page link stays in that language. Any finding exits 1.
+// internal page link stays in that language. While data/cv.toml [hire] available is true, the
+// home's first viewport (375x667 and 1440x900, both themes, every language) shows the h1 and a
+// /hire/ link, the topbar's Hire me is at least 24x24 px, and the proof band precedes the visuals
+// (check name home-first-viewport). Any finding exits 1.
 //
 // The pages are derived, never named: one page per template and language, read from the built
 // site's sitemap.xml, each URL's template inferred from the content front matter that renders it
@@ -731,6 +734,69 @@ async function checkFrames(browser) {
   return { findings, visuals };
 }
 
+// The home's first viewport, as a hiring manager sees it in ten seconds (rule project.hire-surfaces,
+// under project.ui-quality-gate): while data/cv.toml [hire] available is true, at 375x667 and
+// 1440x900 in both themes and in every language, the h1 and a link to the language's /hire/ are
+// inside the first viewport, the topbar's Hire me button meets the 24x24 px target size (WCAG 2.2
+// 2.5.8), and the proof band comes first: #majordomus-title precedes the first visual after the hero.
+const FIRST_VIEWPORTS = [[375, 667], [1440, 900]];
+async function checkFirstViewport(browser) {
+  const findings = [];
+  const cv = parse(readFileSync(join(ROOT, 'data/cv.toml'), 'utf8'));
+  if (cv.hire?.available !== true) return { findings, runs: 0 };
+  let runs = 0;
+  for (const lang of LANGS) {
+    const rel = lang === DEFAULT_LANG ? '' : `${lang}/`;
+    for (const [width, height] of FIRST_VIEWPORTS) {
+      for (const scheme of ['light', 'dark']) {
+        const context = await browser.newContext({ viewport: { width, height }, colorScheme: scheme, reducedMotion: 'reduce' });
+        const page = await context.newPage();
+        await page.goto(BASE + rel, { waitUntil: 'networkidle', timeout: 90000 });
+        await page.waitForTimeout(300);
+        const where = `/${rel} ${width}x${height} ${scheme}`;
+        const r = await page.evaluate(([prefix, basePath]) => {
+          const inside = (el) => {
+            if (!el) return false;
+            const b = el.getBoundingClientRect();
+            const st = getComputedStyle(el);
+            return b.width > 0 && b.height > 0 && st.visibility !== 'hidden' && b.top >= 0 && b.left >= 0
+              && b.bottom <= window.innerHeight && b.right <= window.innerWidth;
+          };
+          // The language switch (hreflang) leads to the other language's twin, never to hiring.
+          const links = [...document.querySelectorAll('a[href]')].filter((a) => {
+            const url = new URL(a.href);
+            return !a.hasAttribute('hreflang') && url.origin === window.location.origin && url.pathname === `${basePath}${prefix}hire/`;
+          });
+          const button = document.querySelector('#topbar [data-hire-topbar] a');
+          const box = button?.getBoundingClientRect();
+          const hero = document.querySelector('section[aria-labelledby="hero-title"]');
+          const firstViz = [...document.querySelectorAll('[data-viz]')].find((v) => !hero?.contains(v));
+          const title = document.getElementById('majordomus-title');
+          return {
+            h1: inside(document.querySelector('h1')),
+            hire: links.some(inside),
+            button: box ? [Math.round(box.width), Math.round(box.height), inside(button)] : null,
+            order: Boolean(title && firstViz && (title.compareDocumentPosition(firstViz) & Node.DOCUMENT_POSITION_FOLLOWING)),
+            noViz: !firstViz,
+          };
+        }, [rel, new URL(BASE).pathname]);
+        if (!r.h1) findings.push(`${where}: the h1 is not inside the first viewport`);
+        if (!r.hire) findings.push(`${where}: no link to /${rel}hire/ is inside the first viewport`);
+        if (!r.button) findings.push(`${where}: the topbar has no Hire me button ([data-hire-topbar] a)`);
+        else if (r.button[0] < 24 || r.button[1] < 24 || !r.button[2]) findings.push(`${where}: the topbar's Hire me is ${r.button[0]}x${r.button[1]} px${r.button[2] ? '' : ', outside the viewport'} (needs 24x24, WCAG 2.5.8)`);
+        if (!r.order && !r.noViz) findings.push(`${where}: #majordomus-title does not precede the first visual after the hero (proof first)`);
+        if (SHOTS) {
+          mkdirSync(SHOTS, { recursive: true });
+          await page.screenshot({ path: join(SHOTS, `home-first-viewport-${lang}-${width}x${height}-${scheme}.png`) });
+        }
+        runs += 1;
+        await context.close();
+      }
+    }
+  }
+  return { findings, runs };
+}
+
 const results = [];
 let failed = 0;
 let pageFailures = 0;
@@ -743,6 +809,17 @@ if (DERIVED.findings.length) {
 }
 const browser = await chromium.launch();
 try {
+  if (!ONLY || ONLY.test('home-first-viewport')) {
+    const { findings: first, runs } = await checkFirstViewport(browser).catch((error) => ({ findings: [`threw: ${error.message.split('\n')[0]}`], runs: 0 }));
+    if (first.length) {
+      failed += 1;
+      console.log('FAIL home first viewport (hiring first)');
+      for (const f of first) console.log(`     ${f}`);
+    } else {
+      console.log(runs ? `ok   home first viewport: h1, a /hire/ link and a 24x24 Hire me in view in ${runs} runs; proof precedes the visuals`
+        : 'ok   home first viewport: not available for hire (data/cv.toml), nothing to show');
+    }
+  }
   if (!ONLY || ONLY.test('palette')) {
     const palette = await checkPalette(browser).catch((error) => [`threw: ${error.message.split('\n')[0]}`]);
     if (palette.length) {

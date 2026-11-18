@@ -10,6 +10,9 @@
 #   definition  one or two sentences, plain words; definition_cs the same in Czech
 #   reference   a source to read further (title + url)
 #   categories  (concepts) catalogue categories whose pages explain themselves with this term
+#   claimed     false for a technology the owner does not claim as a skill (the libraries ADR 0005
+#               retired): its page still explains it, but no skill list and no Person.knowsAbout
+#               names it (templates/hire.html, templates/partials/seo.html; scripts/check-seo.mjs)
 
 [[terms]]
 id = "javascript"
@@ -194,6 +197,7 @@ aliases = ["Cytoscape.js"]
 definition = "A library for drawing and analysing graphs (networks of nodes and edges) in the browser."
 definition_cs = "Knihovna pro kreslení a analýzu grafů (sítí uzlů a hran) v prohlížeči."
 reference = { title = "js.cytoscape.org", url = "https://js.cytoscape.org/" }
+claimed = false
 
 [[terms]]
 id = "apache-echarts"
@@ -212,6 +216,7 @@ aliases = ["Chart.js"]
 definition = "A light library for common charts (bars, lines, doughnuts) on an HTML canvas."
 definition_cs = "Lehká knihovna pro běžné grafy (sloupce, čáry, prstence) na plátně HTML."
 reference = { title = "chartjs.org", url = "https://www.chartjs.org/docs/latest/" }
+claimed = false
 
 [[terms]]
 id = "d3"

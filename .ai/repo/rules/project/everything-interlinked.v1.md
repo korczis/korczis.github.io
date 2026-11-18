@@ -35,6 +35,13 @@ lead to its work page, is a dead end on a page meant to be read onward.
   back to the default language), and the glossary for every term.
 - **One language per tree.** Every internal link on a `/cs/` page stays under `/cs/`, except
   shared assets (scripts, styles, images, schemas, `llms*.txt`, the sitemap).
+- **Every hire role links its evidence.** /hire/ and /cs/hire/ link, for each `cv.hire.roles`
+  entry, at least one existing work page (last commit first) and the glossary term the role names.
+  The match is inferred from the role's own words against the glossary terms and the languages of
+  `data/index.json`, never kept as a hand list; a config file is added only for a role inference
+  finds nothing for. The Czech page links into the Czech tree.
+- **Every page links /hire/ while available**, inside `<nav>`, in its own language (rule
+  `project.hire-surfaces`).
 
 # Failure behaviour
 
@@ -42,10 +49,14 @@ lead to its work page, is a dead end on a page meant to be read onward.
 builds a site path by hand. `scripts/audit-ui.mjs` fails on any rendered internal link that does
 not resolve to a built file, on a list twin's link that does not resolve, and on a `/cs/` page that
 links into the English tree.
+`scripts/check-seo.mjs` fails on a hire role with no existing work page linked from /hire/ or
+/cs/hire/, or a Czech one that leaves `/cs/`; `scripts/check-profile.mjs` fails on a built page
+with no /hire/ link in `<nav>` while available.
 
 # Verification
 
 ```sh
 npm run check
+npm run build && node scripts/check-seo.mjs && node scripts/check-profile.mjs
 npm run verify -- --audit-only
 ```

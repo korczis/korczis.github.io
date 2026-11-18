@@ -1,18 +1,18 @@
 +++
 title = "About"
-description = "Tomas Korcak (korczis), software engineer in Brno: what I build, the languages I build it in over the years, and where to find it."
+description = "Tomas Korcak (korczis), staff engineer for AI agent infrastructure in Brno, open to remote roles: the CV, my languages over the years, and where to find the work."
 template = "about.html"
 path = "about"
 
 [extra]
 article_title = "A working method"
 terms = ["majordomus", "ai-agent", "osint", "open-source", "rust", "elixir", "ruby", "javascript"]
-seo_title = "Tomas Korcak (korczis) · About and CV"
-og_title = "Tomas Korcak, software engineer."
-og_description = "Fifteen years of public work on GitHub and GitLab: AI supervision, scientific instruments, data and tools."
+seo_title = "Tomas Korcak · About and CV · Staff engineer, Elixir and Rust"
+og_title = "About Tomas Korcak, staff engineer for Elixir, Rust and AI agents."
+og_description = "Years of public work on GitHub and GitLab: AI agent supervision, scientific instruments, data and tools."
 og_image = "og/about.png"
 schema = "profile"
-keywords = ["Tomas Korcak", "korczis", "CV", "software engineer", "Brno", "Majordomus", "Elixir", "Rust", "open source"]
+keywords = ["Tomas Korcak", "korczis", "CV", "staff engineer", "software engineer", "Brno", "Majordomus", "Elixir", "Rust", "open source"]
 [[extra.viz]]
 kind = "stream"
 source = "index.years"

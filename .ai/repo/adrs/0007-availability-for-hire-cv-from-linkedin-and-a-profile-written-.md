@@ -77,3 +77,21 @@ and answers verbatim:
   `alumniOf` and `knowsLanguage`.
 - When the owner is no longer available, `available = false` removes /hire/'s content, the hero
   pill, the Offers, the FAQ, the llms.txt section and the head comment, with no other edit.
+
+## Addendum: facts for sourcing filters (2026-11-18)
+
+Asked in the same session `f877b790-5df2-4d41-990a-fddee785c35e` at about 2026-11-18T02:10Z
+(AskUserQuestion), because sourcing tools filter on them and they may not be inferred; questions and
+answers verbatim:
+
+- "HR sourcing nástroje filtrují kandidáty podle data nástupu. Odkdy můžeš nastoupit (bude to na
+  /hire/, v JSON-LD, llms.txt a resume.json)?" — "Ihned"
+- "Pracovní oprávnění: filtry ho čtou jako 'authorized to work in'. Co mám uvést?" — "EU občan,
+  otevřený relokaci" (the option read: "EU citizen (Czech Republic): no visa needed in the EU/EEA;
+  elsewhere as a B2B contractor, no sponsorship needed", plus "open to relocation")
+- "Časové pásmo a překryv: remote role z USA filtrují podle překryvu pracovní doby. Co mám uvést?"
+  — "Flexibilně, i US Pacific" (the option read: "Europe/Prague; flexible hours, including US
+  Pacific overlap.")
+
+These become `data/cv.toml [hire]` fields (start, work authorization, relocation, timezone and
+overlap) when the schema for them lands (plan workstream W3A); until then this record is their source.

@@ -9,8 +9,9 @@
 //                        stamped with the tracked .ai tree it was measured from, so a change to
 //                        .ai/ that was not re-measured is caught offline (in CI, with no Majordomus).
 //   static/openapi.json  an OpenAPI 3.1 description of every machine-readable file the site
-//                        publishes (static/*.json, *.txt, schemas/*.json, sitemap.xml), each
-//                        summary read from the file itself; Swagger UI renders it.
+//                        publishes (static/*.json, *.txt, schemas/*.json, the translations'
+//                        static/<lang>/*.json such as cs/resume.json, sitemap.xml), each summary
+//                        read from the file itself; Swagger UI renders it.
 //   static/.well-known/api-catalog
 //                        the API catalogue of RFC 9727 (a linkset, RFC 9264): the site's anchor with
 //                        its service-desc (openapi.json), service-doc (/interfaces/) and describedby
@@ -24,7 +25,7 @@ import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { ROOT, identity, report } from './lib/derive.mjs';
+import { ROOT, identity, isDefault, languages, report } from './lib/derive.mjs';
 import { cliArgs } from './lib/cli.mjs';
 
 const opts = cliArgs({ '--check': true, '--measure': true }, { derived: true });
@@ -87,6 +88,8 @@ function measure() {
 function summaryOf(rel, body) {
   if (rel.endsWith('.json')) {
     const j = JSON.parse(body);
+    // A JSON Resume (jsonresume.org) has no description of its own: who it is and in what role.
+    if (j.basics?.name && j.meta?.canonical) return `JSON Resume of ${j.basics.name}: ${j.basics.label ?? 'CV'}`;
     return j.description ?? j.title ?? j.name ?? j.schema ?? rel;
   }
   if (rel.endsWith('.xml')) return 'Every page of the site, in both languages (sitemaps.org)';
@@ -102,7 +105,8 @@ function openapi() {
   const walk = (dir, prefix = '') => {
     for (const entry of readdirSync(join(ROOT, dir), { withFileTypes: true })) {
       const rel = `${prefix}${entry.name}`;
-      if (entry.isDirectory() && (entry.name === 'schemas' || entry.name === '.well-known')) walk(join(dir, entry.name), `${rel}/`);
+      const translation = !prefix && languages().some((l) => !isDefault(l) && l === entry.name);
+      if (entry.isDirectory() && (entry.name === 'schemas' || entry.name === '.well-known' || translation)) walk(join(dir, entry.name), `${rel}/`);
       else if (entry.isFile() && (/\.(json|txt)$/.test(entry.name) || rel === '.well-known/api-catalog') && rel !== 'openapi.json') files.push(rel);
     }
   };

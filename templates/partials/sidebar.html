@@ -53,10 +53,55 @@
             {%- endfor %}
           </ul>
         </div>
+        {#- Skillset (ADR 0007): languages from every original repository on GitHub and GitLab, the
+            technologies of the curated stacks, and the capabilities mined from the owner's work, each
+            a link to its glossary term when it has one, else to the list that shows its evidence.
+            Flowbite Pro sidebar dropdowns as native disclosures; the first stays open. #}
+        {%- set sgl = load_data(path="data/glossary.toml") %}
+        {%- set sxp = load_data(path="data/experience.json", required=false) %}
+        {%- set sxr = load_data(path="data/experience-rules.toml") %}
+        {%- set_global capstr = "" %}{% if sxp %}{% for e in sxp.engagements %}{% for c in e.capabilities | default(value=[]) %}{% if ("|" ~ c.key ~ "|") not in ("|" ~ capstr ~ "|") %}{% if capstr %}{% set_global capstr = capstr ~ "|" %}{% endif %}{% set_global capstr = capstr ~ c.key %}{% endif %}{% endfor %}{% endfor %}{% endif %}
+        {%- if capstr %}{% set caps = capstr | split(pat="|") %}{% else %}{% set caps = [] %}{% endif %}
+        {%- set groups = [["skills_languages", "code"], ["skills_technologies", "wrench"], ["skills_capabilities", "academic"]] %}
+        <div class="pb-2 pt-2">
+          {%- for g in groups %}
+          <details class="group/sk"{% if loop.first %} open{% endif %}>
+            <summary class="{{ item }} cursor-pointer list-none">
+              {{ <icon name={g[1]} class={ico} /> }}<span data-sidebar-label class="ml-3 flex-1 text-sm font-medium">{{ trans(key=g[0], lang=lang) }}</span>
+              <span data-sidebar-label>{{ <icon name="chevron-up-down" class="h-4 w-4 text-gray-500 dark:text-gray-400" /> }}</span>
+            </summary>
+            <ul data-sidebar-label class="mt-1 flex flex-wrap gap-1.5 px-2 pb-2">
+              {%- if g[0] == "skills_languages" %}
+              {%- for l in six.languages %}{% if loop.index <= 12 %}
+              {%- set_global href = config.base_url ~ lp ~ "/repositories/?language=" ~ l.name | urlencode %}
+              {%- for gt in sgl.terms %}{% if gt.term == l.name or l.name in gt.aliases | default(value=[]) %}{% set_global href = config.base_url ~ lp ~ "/glossary/" ~ gt.id ~ "/" %}{% endif %}{% endfor %}
+              <li>{{ <chip label={l.name} href={href} count={l.repos ~ ""} size="xs" /> }}</li>
+              {%- endif %}{% endfor %}
+              {%- elif g[0] == "skills_technologies" %}
+              {%- for s in six.skills.technologies %}
+              {%- set_global href = config.base_url ~ lp ~ "/projects/?project=" ~ s.evidence[0].repo %}
+              {%- for gt in sgl.terms %}{% if gt.term == s.name or s.name in gt.aliases | default(value=[]) %}{% set_global href = config.base_url ~ lp ~ "/glossary/" ~ gt.id ~ "/" %}{% endif %}{% endfor %}
+              <li>{{ <chip label={s.name} href={href} count={s.projects ~ ""} size="xs" /> }}</li>
+              {%- endfor %}
+              {%- else %}
+              {%- for k in caps %}{% if sxr.capabilities[k] is defined %}
+              {%- set c = sxr.capabilities[k] %}
+              {%- if c.term is defined %}{% set href = config.base_url ~ lp ~ "/glossary/" ~ c.term ~ "/" %}{% else %}{% set href = config.base_url ~ lp ~ "/#experience" %}{% endif %}
+              <li>{{ <chip label={c["name" ~ sfx] | default(value=c.name)} href={href} size="xs" /> }}</li>
+              {%- endif %}{% endfor %}
+              {%- endif %}
+            </ul>
+          </details>
+          {%- endfor %}
+        </div>
         <div class="space-y-1 pt-2">
           <p data-sidebar-label class="{{ heading }}">{{ trans(key="elsewhere", lang=lang) | safe }}</p>
           <a href="{{ config.extra.majordomus_url }}" class="{{ item }}">{{ <icon name="shield" class={ico} /> }}<span data-sidebar-label class="ml-3 flex-1 text-sm">majordomus.dev</span><span data-sidebar-label>{{ <icon name="external" class="h-4 w-4 text-gray-500 dark:text-gray-400" /> }}</span></a>
           <a href="https://github.com/{{ config.extra.github }}" class="{{ item }}">{{ <icon name="github" class={ico} /> }}<span data-sidebar-label class="ml-3 flex-1 text-sm">GitHub</span><span data-sidebar-label>{{ <icon name="external" class="h-4 w-4 text-gray-500 dark:text-gray-400" /> }}</span></a>
+          <a href="https://gitlab.com/{{ config.extra.gitlab }}" class="{{ item }}">{{ <icon name="code" class={ico} /> }}<span data-sidebar-label class="ml-3 flex-1 text-sm">GitLab</span><span data-sidebar-label>{{ <icon name="external" class="h-4 w-4 text-gray-500 dark:text-gray-400" /> }}</span></a>
+          {%- set scv = load_data(path="data/cv.toml") %}{% if scv.links is defined and scv.links.linkedin is defined %}
+          <a href="{{ scv.links.linkedin }}" class="{{ item }}">{{ <icon name="link" class={ico} /> }}<span data-sidebar-label class="ml-3 flex-1 text-sm">{{ trans(key="hire_linkedin", lang=lang) }}</span><span data-sidebar-label>{{ <icon name="external" class="h-4 w-4 text-gray-500 dark:text-gray-400" /> }}</span></a>
+          {%- endif %}
           <a href="{{ get_url(path='llms.txt') }}" class="{{ item }}">{{ <icon name="book" class={ico} /> }}<span data-sidebar-label class="ml-3 flex-1 text-sm">llms.txt</span></a>
         </div>
       </div>
