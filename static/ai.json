@@ -3,9 +3,9 @@
  "description": "The Majordomus layer of korczis/korczis.github.io: every object of .ai/ with its MCP resource URI",
  "source": "majordomus run objects.list, capabilities.list",
  "majordomus": "1.0.2",
- "tree": "0459a0a61530135d82d2d137dfc02c74724838ecd4964fa4c90979dcf71e2e22",
+ "tree": "76e95a15bbb29a9f4f0b48a14921d6025539557b5e0998d4a4eec2b916dc062f",
  "counts": {
-  "objects": 142,
+  "objects": 143,
   "kinds": {
    "adr": 8,
    "context": 21,
@@ -15,14 +15,14 @@
    "policy": 1,
    "profile": 4,
    "prompt": 4,
-   "rule": 75,
+   "rule": 76,
    "scope": 1,
    "skill": 1,
    "taxonomy": 8
   },
-  "capabilities": 373,
+  "capabilities": 374,
   "mcp_tools": 215,
-  "mcp_resources": 199,
+  "mcp_resources": 200,
   "http_routes": 219
  },
  "objects": [
@@ -1049,6 +1049,14 @@
    "title": "The site is Zola, self-hosted, and deployed only by the Pages workflow",
    "description": "Zola 0.23 (Tera 2) builds the site from templates and data; every asset is self-hosted; master deploys through pages.yml after CI, and production is verified to serve the commit.",
    "path": ".ai/repo/rules/project/site-zola-pages.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/project.skills-evidenced@1",
+   "kind": "rule",
+   "identity": "project.skills-evidenced@1",
+   "title": "Every language and technology has its own page with derived evidence; every project page embeds its live README",
+   "description": "Each language and technology the measured data names (repositories' languages, curated stacks, the mined engagements' technologies) has a glossary term whose page shows the evidence derived from the data (repositories, how each uses it, what it solves, years, categories, live sites, a reference graph) and the client use cases without names, dates or numbers; each work page renders its repository's README live from the forge instead of copying it.",
+   "path": ".ai/repo/rules/project/skills-evidenced.v1.md"
   },
   {
    "uri": "majordomus://rule/project.ui-quality-gate@1",
