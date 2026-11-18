@@ -3,7 +3,7 @@
 title = "OSINT"
 description = "Zpravodajství z otevřených zdrojů: poznání vystavěné z veřejně dostupných zdrojů, kde každé tvrzení vede ke svému zdroji."
 template = "term.html"
-weight = 57
+weight = 99
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]
@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Zpravodajství z otevřených zdrojů: poznání vystavěné z veřejně dostupných zdrojů, kde každé tvrzení vede ke svému zdroji."
 aliases = []
 reference = { title = "OSINT (Wikipedia)", url = "https://en.wikipedia.org/wiki/Open-source_intelligence" }
-pages = ["_index.cs.md", "about.cs.md", "hire.cs.md", "projects/_index.cs.md", "projects/security.cs.md", "work/magic.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/peacemaker.cs.md", "work/ratnet.cs.md", "work/zlown.cs.md"]
-related = ["due-diligence", "open-source", "repository", "audit-trail", "mergers-and-acquisitions", "orchestration", "commit", "data-integration"]
+pages = ["_index.cs.md", "about.cs.md", "hire.cs.md", "projects/_index.cs.md", "projects/security.cs.md", "services/_index.cs.md", "services/digital-investigation.cs.md", "services/reputation-intelligence.cs.md", "skills/_index.cs.md", "skills/osint-investigation.cs.md", "work/magic.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/peacemaker.cs.md", "work/ratnet.cs.md", "work/zlown.cs.md"]
+related = ["due-diligence", "audit-trail", "decision-support-system", "knowledge-graph", "mergers-and-acquisitions", "orchestration", "record-linkage", "data-integration"]
 og_title = "OSINT: slovník"
 og_image = "og/cs-glossary-osint.png"
 keywords = ["OSINT", "Koncept", "Slovník", "Tomáš Korčák"]

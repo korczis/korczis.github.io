@@ -97,6 +97,8 @@
 {%- elif variant == "plain" %}{% set v = "bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-200" %}{% set z = "rounded px-2 py-0.5 text-xs" %}
 {%- else %}{% set v = "border border-gray-200 bg-gray-50 text-gray-900 hover:border-primary-300 hover:bg-primary-50 hover:text-primary-800 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600" %}{% endif %}
 {%- set cls = "inline-flex items-center gap-1.5 font-medium focus:outline-none focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-800 " ~ z ~ " " ~ v -%}
+{#- A linked chip is named by its visible text (label and count), never by an aria-label that would
+    differ from it (WCAG 2.5.3); a chip in a closed disclosure is out of the tab order anyway. -#}
 {%- if href %}<a href="{{ href }}" class="{{ cls }}"{% if tip %} data-tooltip-target="{{ tip_id }}"{% endif %}>{% else %}<span class="{{ cls }}">{% endif -%}
 {%- if icon %}{{ <category_icon key={icon} class="h-4 w-4 text-primary-700 dark:text-primary-400" /> }}{% endif %}{{ label }}
 {%- if count %}<span class="tabular rounded-full bg-primary-100 px-1.5 text-xs font-semibold text-primary-800 dark:bg-primary-900 dark:text-primary-300">{{ count }}</span>{% endif -%}

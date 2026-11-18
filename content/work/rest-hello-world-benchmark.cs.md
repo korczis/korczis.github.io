@@ -17,7 +17,7 @@ og_description = "rest-hello-world-benchmark: Nástroje, Elixir, CSS a HTML, 202
 og_image = "og/cs-work-rest-hello-world-benchmark.png"
 schema = "project"
 keywords = ["rest-hello-world-benchmark", "Nástroje", "Elixir", "CSS", "HTML", "2022", "GitHub", "Tomáš Korčák", "korczis"]
-terms = ["elixir", "css", "html", "javascript", "open-source", "repository", "commit"]
+terms = ["elixir", "css", "html", "javascript", "makefile", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

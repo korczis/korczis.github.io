@@ -14,7 +14,7 @@ category = "learning"
 og_title = "Učení a experimenty: 21 repozitářů."
 og_image = "og/cs-category-learning.png"
 schema = "collection"
-terms = ["elixir", "ruby", "csharp", "cpp", "javascript", "shell", "c", "erlang", "haskell", "java", "rust", "repository"]
+terms = ["elixir", "ruby", "csharp", "cpp", "javascript", "shell", "c", "cmake", "erlang", "haskell", "java", "makefile", "rust", "repository"]
 keywords = ["Učení a experimenty", "happ", "rustler-test", "Test-Elixir", "skull-elixir", "skull-rust", "node-proxy-upload", "Tomáš Korčák"]
 
 [[extra.viz]]

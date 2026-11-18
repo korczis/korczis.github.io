@@ -17,7 +17,7 @@ og_description = "web-spa: Web in JavaScript, Elixir and Elm, 2017, archive. Sou
 og_image = "og/work-web-spa.png"
 schema = "project"
 keywords = ["web-spa", "Web", "JavaScript", "Elixir", "Elm", "2017", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["javascript", "elixir", "html", "static-site-generator", "repository", "commit", "open-source"]
+terms = ["javascript", "elixir", "elm", "html", "static-site-generator", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,7 +28,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**web-spa** is a project in [Web](@/projects/web.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (43.4 %), with [Elixir](@/glossary/elixir.md), Elm and [HTML](@/glossary/html.md).
+**web-spa** is a project in [Web](@/projects/web.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (43.4 %), with [Elixir](@/glossary/elixir.md), [Elm](@/glossary/elm.md) and [HTML](@/glossary/html.md).
 
 The [repository](@/glossary/repository.md) was created on 9 July 2017; its latest [commit](@/glossary/commit.md) is from 19 July 2017. It reads “More modularization”. With no commit in the last 48 months it is listed as archive: work from 2017, kept for the record and dated as measured.
 

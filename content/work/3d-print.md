@@ -17,7 +17,7 @@ og_description = "3d-print: Tools in OpenSCAD, 2021, archive. Source on GitHub."
 og_image = "og/work-3d-print.png"
 schema = "project"
 keywords = ["3d-print", "Tools", "OpenSCAD", "2021", "GitHub", "Tomas Korcak", "korczis"]
-terms = ["open-source", "repository", "commit"]
+terms = ["openscad", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,7 +28,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**3d-print** is a project in [Tools](@/projects/tools.md). Its code is written mainly in OpenSCAD (100 %).
+**3d-print** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [OpenSCAD](@/glossary/openscad.md) (100 %).
 
 The [repository](@/glossary/repository.md) was created on 3 March 2021; its latest [commit](@/glossary/commit.md) is from 4 March 2021. It reads “Fix typo”. With no commit in the last 48 months it is listed as archive: work from 2021, kept for the record and dated as measured.
 

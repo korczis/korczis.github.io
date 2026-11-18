@@ -3,9 +3,9 @@
  "description": "The Majordomus layer of korczis/korczis.github.io: every object of .ai/ with its MCP resource URI",
  "source": "majordomus run objects.list, capabilities.list",
  "majordomus": "1.0.2",
- "tree": "64be6c080d5425a154d94a945dc997b2518ee6a64c23b4b47799c42936a8b720",
+ "tree": "8826c38b133ff71273247243b36d07b800a0f90a4c615d9f8bf49a6fe76ce5a3",
  "counts": {
-  "objects": 148,
+  "objects": 150,
   "kinds": {
    "adr": 10,
    "context": 21,
@@ -15,14 +15,14 @@
    "policy": 1,
    "profile": 4,
    "prompt": 4,
-   "rule": 78,
+   "rule": 80,
    "scope": 1,
    "skill": 1,
    "taxonomy": 8
   },
-  "capabilities": 379,
+  "capabilities": 381,
   "mcp_tools": 215,
-  "mcp_resources": 205,
+  "mcp_resources": 207,
   "http_routes": 219
  },
  "objects": [
@@ -1091,12 +1091,28 @@
    "path": ".ai/repo/rules/project/seo-derived.v2.md"
   },
   {
+   "uri": "majordomus://rule/project.services-derived@1",
+   "kind": "rule",
+   "identity": "project.services-derived@1",
+   "title": "Services, skills, knowledge and domains form one derived, interlinked model; only the words are written",
+   "description": "Every service (data/services.toml) and every skill (a capability of data/experience-rules.toml) has its own page in every language; the owner writes only their words, while the skills a service draws on, the technologies, the public evidence, the client use cases (sector and role only) and the articles are derived by scripts/lib/services.mjs, and every skill links its concept (a glossary term), its domain, its services and its evidence.",
+   "path": ".ai/repo/rules/project/services-derived.v1.md"
+  },
+  {
    "uri": "majordomus://rule/project.site-zola-pages@1",
    "kind": "rule",
    "identity": "project.site-zola-pages@1",
    "title": "The site is Zola, self-hosted, and deployed only by the Pages workflow",
    "description": "Zola 0.23 (Tera 2) builds the site from templates and data; every asset is self-hosted; master deploys through pages.yml after CI, and production is verified to serve the commit.",
    "path": ".ai/repo/rules/project/site-zola-pages.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/project.skills-evidenced@1",
+   "kind": "rule",
+   "identity": "project.skills-evidenced@1",
+   "title": "Every language and technology has its own page with derived evidence; every project page embeds its live README",
+   "description": "Each language and technology the measured data names (repositories' languages, curated stacks, the mined engagements' technologies) has a glossary term whose page shows the evidence derived from the data (repositories, how each uses it, what it solves, years, categories, live sites, a reference graph) and the client use cases without names, dates or numbers; each work page renders its repository's README live from the forge instead of copying it.",
+   "path": ".ai/repo/rules/project/skills-evidenced.v1.md"
   },
   {
    "uri": "majordomus://rule/project.ui-quality-gate@1",

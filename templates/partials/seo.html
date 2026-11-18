@@ -241,6 +241,17 @@
       "sameAs": {{ fm.extra.reference.url | json_encode | safe }},
       "inDefinedTermSet": {"@type": "DefinedTermSet", "@id": {{ (gloss ~ "#set") | json_encode | safe }}, "name": {{ trans(key="glossary", lang=lang) | json_encode | safe }}, "url": {{ gloss | json_encode | safe }}}},
      {%- endif %}
+     {%- if schema == "service" %}{% set svs = get_url(path="@/services/_index.md", lang=lang) %}{% set svd = load_data(path="data/services.json") %}{% set svx = load_data(path="data/experience-rules.toml") %}
+     "mainEntity": {"@type": "Service", "@id": {{ (url ~ "#service") | json_encode | safe }}, "name": {{ fm.title | json_encode | safe }},
+      "description": {{ fm.description | json_encode | safe }}, "url": {{ url | json_encode | safe }}, "serviceType": {{ fm.title | json_encode | safe }},
+      "provider": {"@id": {{ person | json_encode | safe }}}, "areaServed": "Worldwide",
+      "isRelatedTo": [{% for k in svd.services[fm.extra.service].skills %}{"@type": "DefinedTerm", "name": {{ svx.capabilities[k]["name" ~ (salp | replace(from=".", to="_"))] | default(value=k) | json_encode | safe }}, "url": {{ get_url(path="@/skills/" ~ k ~ ".md", lang=lang) | json_encode | safe }}}{% if not loop.last %},{% endif %}{% endfor %}]},
+     {%- endif %}
+     {%- if schema == "skill" %}{% set sks = get_url(path="@/skills/_index.md", lang=lang) %}
+     "mainEntity": {"@type": "DefinedTerm", "@id": {{ (url ~ "#skill") | json_encode | safe }}, "name": {{ fm.title | json_encode | safe }},
+      "description": {{ fm.description | json_encode | safe }}, "termCode": {{ fm.extra.skill | json_encode | safe }}, "url": {{ url | json_encode | safe }},
+      "inDefinedTermSet": {"@type": "DefinedTermSet", "@id": {{ (sks ~ "#set") | json_encode | safe }}, "name": {{ trans(key="services_skills_title", lang=lang) | json_encode | safe }}, "url": {{ sks | json_encode | safe }}}},
+     {%- endif %}
      {%- if schema == "glossary" %}
      "mainEntity": {"@type": "DefinedTermSet", "@id": {{ (url ~ "#set") | json_encode | safe }}, "name": {{ fm.title | json_encode | safe }}, "hasDefinedTerm": [
        {%- for gp in fm.pages %}{"@type": "DefinedTerm", "name": {{ gp.title | json_encode | safe }}, "termCode": {{ gp.extra.term | json_encode | safe }}, "url": {{ gp.permalink | json_encode | safe }}}{% if not loop.last %},{% endif %}{% endfor %}]},
@@ -252,6 +263,9 @@
        {"@type": "ListItem", "position": 1, "name": {{ trans(key="home", lang=lang) | json_encode | safe }}, "item": {{ (config.base_url ~ lp ~ "/") | json_encode | safe }}}
        {%- if schema == "project" %},
        {"@type": "ListItem", "position": 2, "name": {{ trans(key="recent_work", lang=lang) | json_encode | safe }}, "item": {{ (config.base_url ~ lp ~ "/work/") | json_encode | safe }}},
+       {"@type": "ListItem", "position": 3, "name": {{ fm.title | json_encode | safe }}, "item": {{ url | json_encode | safe }}}
+       {%- elif schema == "service" or schema == "skill" %}{% if schema == "service" %}{% set bsec = get_url(path="@/services/_index.md", lang=lang) %}{% set bname = trans(key="services_title", lang=lang) %}{% else %}{% set bsec = get_url(path="@/skills/_index.md", lang=lang) %}{% set bname = trans(key="skills_title", lang=lang) %}{% endif %},
+       {"@type": "ListItem", "position": 2, "name": {{ bname | json_encode | safe }}, "item": {{ bsec | json_encode | safe }}},
        {"@type": "ListItem", "position": 3, "name": {{ fm.title | json_encode | safe }}, "item": {{ url | json_encode | safe }}}
        {%- elif schema == "term" %},
        {"@type": "ListItem", "position": 2, "name": {{ trans(key="glossary", lang=lang) | json_encode | safe }}, "item": {{ gloss | json_encode | safe }}},

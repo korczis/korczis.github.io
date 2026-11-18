@@ -3,7 +3,7 @@
 title = "OpenAPI"
 description = "Standardní, na jazyce nezávislý popis HTTP rozhraní: jeho cest, operací a dat, čitelný pro lidi i nástroje jako Swagger UI."
 template = "term.html"
-weight = 28
+weight = 57
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Standardní, na jazyce nezávislý popis HTTP rozhraní: jeho cest, operací a dat, čitelný pro lidi i nástroje jako Swagger UI."
 aliases = ["Swagger"]
 reference = { title = "OpenAPI Specification", url = "https://spec.openapis.org/oas/latest.html" }
-pages = ["interfaces.cs.md"]
-related = ["ai-agent", "github-pages", "json-ld", "majordomus", "mcp"]
+pages = ["interfaces.cs.md", "services/compliance-screening.cs.md"]
+related = ["ai-agent", "alpine-js", "beneficial-ownership", "claude-api", "contestability", "dockerfile", "elixir", "fastapi"]
 og_title = "OpenAPI: slovník"
 og_image = "og/cs-glossary-openapi.png"
 keywords = ["OpenAPI", "Technologie", "Slovník", "Tomáš Korčák"]
@@ -31,3 +31,4 @@ span = 3
 height = "md"
 tone = "night"
 +++
+Žádný můj veřejný repozitář ani klientská zakázka OpenAPI podle měřených dat nepoužívá; tato stránka pojem vysvětluje tam, kde ho web používá.

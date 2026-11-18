@@ -17,7 +17,7 @@ og_description = "sli2dli: Nástroje, Rust a Makefile, 2017, archiv. Zdrojový k
 og_image = "og/cs-work-sli2dli.png"
 schema = "project"
 keywords = ["sli2dli", "Nástroje", "Rust", "Makefile", "2017", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["rust", "open-source", "repository", "commit"]
+terms = ["rust", "makefile", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,7 +28,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**sli2dli** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [Rust](@/glossary/rust.cs.md) (98,9 %), dále Makefile.
+**sli2dli** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [Rust](@/glossary/rust.cs.md) (98,9 %), dále [Makefile](@/glossary/makefile.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 9. května 2017; poslední [commit](@/glossary/commit.cs.md) je z 14. května 2017. Zní „Cosmetics“. Bez commitu za posledních 48 měsíců je veden jako archiv: práce z období 2017, ponechaná pro záznam a datovaná podle měření.
 

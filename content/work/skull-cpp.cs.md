@@ -17,7 +17,7 @@ og_description = "skull-cpp: Učení a experimenty, CMake, Makefile a C++, 2014�
 og_image = "og/cs-work-skull-cpp.png"
 schema = "project"
 keywords = ["skull-cpp", "Učení a experimenty", "CMake", "Makefile", "C++", "2014–2015", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["cpp", "repository", "commit", "open-source"]
+terms = ["cmake", "makefile", "cpp", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,7 +28,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**skull-cpp** je projekt z kategorie [Učení a experimenty](@/projects/learning.cs.md). Jeho kód je napsaný hlavně v jazyce CMake (67,2 %), dále Makefile a [C++](@/glossary/cpp.cs.md).
+**skull-cpp** je projekt z kategorie [Učení a experimenty](@/projects/learning.cs.md). Jeho kód je napsaný hlavně v jazyce [CMake](@/glossary/cmake.cs.md) (67,2 %), dále [Makefile](@/glossary/makefile.cs.md) a [C++](@/glossary/cpp.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 22. července 2014; poslední [commit](@/glossary/commit.cs.md) je z 24. července 2015. Zní „Added boost“. Bez commitu za posledních 48 měsíců je veden jako archiv: práce z období 2014–2015, ponechaná pro záznam a datovaná podle měření.
 

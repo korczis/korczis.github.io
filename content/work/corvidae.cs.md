@@ -17,7 +17,7 @@ og_description = "corvidae: Nástroje, TeX, Elixir a Shell, 2025, aktivní za po
 og_image = "og/cs-work-corvidae.png"
 schema = "project"
 keywords = ["corvidae", "Nástroje", "TeX", "Elixir", "Shell", "2025", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["elixir", "shell", "open-source", "repository", "commit"]
+terms = ["tex", "elixir", "shell", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -29,7 +29,7 @@ height = "md"
 tone = "night"
 vars = { cadence = "každých 6 hodin" }
 +++
-**corvidae** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce TeX (53,3 %), dále [Elixir](@/glossary/elixir.cs.md) a [Shell](@/glossary/shell.cs.md).
+**corvidae** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [TeX](@/glossary/tex.cs.md) (53,3 %), dále [Elixir](@/glossary/elixir.cs.md) a [Shell](@/glossary/shell.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 12. května 2025; poslední [commit](@/glossary/commit.cs.md) je z 12. května 2025. Zní „feat: initial commit“. Patří tak mezi projekty aktivní za posledních 24 měsíců.
 

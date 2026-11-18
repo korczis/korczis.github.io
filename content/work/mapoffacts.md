@@ -17,7 +17,7 @@ og_description = "mapoffacts: Tools in JavaScript, Elixir and Elm, 2017, archive
 og_image = "og/work-mapoffacts.png"
 schema = "project"
 keywords = ["mapoffacts", "Tools", "JavaScript", "Elixir", "Elm", "2017", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["javascript", "elixir", "rust", "html", "open-source", "repository", "commit"]
+terms = ["javascript", "elixir", "elm", "rust", "html", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,7 +28,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**mapoffacts** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (37.5 %), with [Elixir](@/glossary/elixir.md), Elm and [Rust](@/glossary/rust.md).
+**mapoffacts** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (37.5 %), with [Elixir](@/glossary/elixir.md), [Elm](@/glossary/elm.md) and [Rust](@/glossary/rust.md).
 
 The [repository](@/glossary/repository.md) was created on 21 July 2017; its latest [commit](@/glossary/commit.md) is from 22 August 2017. It reads “WIP”. With no commit in the last 48 months it is listed as archive: work from 2017, kept for the record and dated as measured.
 

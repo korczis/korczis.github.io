@@ -17,7 +17,7 @@ og_description = "Gists search: Tools in Python, JavaScript and HTML, 2026, acti
 og_image = "og/work-gists-search.png"
 schema = "project"
 keywords = ["Gists search", "gists-search", "Tools", "Python", "JavaScript", "HTML", "2026", "GitHub", "Tomas Korcak", "korczis"]
-terms = ["python", "javascript", "html", "shell", "open-source", "github-pages", "repository", "commit"]
+terms = ["python", "javascript", "html", "just", "shell", "open-source", "github-pages", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,7 +28,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**Gists search** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [Python](@/glossary/python.md) (58.5 %), with [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md) and Just.
+**Gists search** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [Python](@/glossary/python.md) (58.5 %), with [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md) and [Just](@/glossary/just.md).
 
 The [repository](@/glossary/repository.md) was created on 27 August 2026; its latest [commit](@/glossary/commit.md) is from 27 August 2026. It reads “docs(gists): add README, architecture doc and deploy recipe”. That places it among the projects active in the last 12 months.
 

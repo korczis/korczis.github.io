@@ -3,7 +3,7 @@
 title = "Web Audio"
 description = "Rozhraní prohlížeče pro generování, zpracování a analýzu zvuku v reálném čase."
 template = "term.html"
-weight = 33
+weight = 67
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -16,11 +16,20 @@ kind = "technology"
 definition = "Rozhraní prohlížeče pro generování, zpracování a analýzu zvuku v reálném čase."
 aliases = []
 reference = { title = "MDN Web Docs: Web Audio API", url = "https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API" }
-pages = ["projects/science.cs.md", "work/oscilla.cs.md"]
-related = ["data-visualisation", "javascript", "repository", "alpine-js", "apache-echarts", "commit", "cpp", "css"]
+pages = ["projects/science.cs.md", "services/interactive-data-products.cs.md", "skills/contestable-decisions.cs.md", "work/oscilla.cs.md"]
+related = ["javascript", "css", "data-visualisation", "html", "alpine-js", "apache-echarts", "elixir", "flowbite-pro"]
 og_title = "Web Audio: slovník"
 og_image = "og/cs-glossary-web-audio.png"
 keywords = ["Web Audio", "Technologie", "Slovník", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,3 +40,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
+Web Audio je součástí 1 mého veřejného repozitáře, od roku 2026 do 2026.
+
+K čemu to sloužilo: [Věda a vizualizace](@/projects/science.cs.md) (1).
+
+Naposledy: [Oscilla](@/work/oscilla.cs.md): Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.
+
+1 z těchto projektů běží jako živý web.
+
+Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak Web Audio používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje Web Audio s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

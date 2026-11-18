@@ -17,7 +17,7 @@ og_description = "web-spa: Web, JavaScript, Elixir a Elm, 2017, archiv. Zdrojov�
 og_image = "og/cs-work-web-spa.png"
 schema = "project"
 keywords = ["web-spa", "Web", "JavaScript", "Elixir", "Elm", "2017", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["javascript", "elixir", "html", "static-site-generator", "repository", "commit", "open-source"]
+terms = ["javascript", "elixir", "elm", "html", "static-site-generator", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,7 +28,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**web-spa** je projekt z kategorie [Web](@/projects/web.cs.md). Jeho kód je napsaný hlavně v jazyce [JavaScript](@/glossary/javascript.cs.md) (43,4 %), dále [Elixir](@/glossary/elixir.cs.md), Elm a [HTML](@/glossary/html.cs.md).
+**web-spa** je projekt z kategorie [Web](@/projects/web.cs.md). Jeho kód je napsaný hlavně v jazyce [JavaScript](@/glossary/javascript.cs.md) (43,4 %), dále [Elixir](@/glossary/elixir.cs.md), [Elm](@/glossary/elm.cs.md) a [HTML](@/glossary/html.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 9. července 2017; poslední [commit](@/glossary/commit.cs.md) je z 19. července 2017. Zní „More modularization“. Bez commitu za posledních 48 měsíců je veden jako archiv: práce z období 2017, ponechaná pro záznam a datovaná podle měření.
 

@@ -3,7 +3,7 @@
 title = "Zola"
 description = "Generátor statických webů v jedné binárce v Rustu: dovnitř Markdown a šablony, ven celý vícejazyčný web."
 template = "term.html"
-weight = 34
+weight = 68
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -16,11 +16,20 @@ kind = "technology"
 definition = "Generátor statických webů v jedné binárce v Rustu: dovnitř Markdown a šablony, ven celý vícejazyčný web."
 aliases = []
 reference = { title = "getzola.org", url = "https://www.getzola.org/documentation/getting-started/overview/" }
-pages = ["_index.cs.md", "projects/ai.cs.md", "projects/knowledge.cs.md", "stack.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/prismatic-majordomus.cs.md"]
-related = ["repository", "apache-echarts", "elixir", "flowbite-pro", "rust", "ai-agent", "alpine-js", "commit"]
+pages = ["_index.cs.md", "projects/ai.cs.md", "projects/knowledge.cs.md", "services/ai-engineering-governance.cs.md", "services/interactive-data-products.cs.md", "skills/policy-as-code.cs.md", "stack.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/prismatic-majordomus.cs.md"]
+related = ["apache-echarts", "alpine-js", "elixir", "flowbite-pro", "rust", "html", "javascript", "python"]
 og_title = "Zola: slovník"
 og_image = "og/cs-glossary-zola.png"
 keywords = ["Zola", "Technologie", "Slovník", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,3 +40,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
+Zola je součástí 3 mých veřejných repozitářů, od roku 2024 do 2026.
+
+K čemu to sloužilo: [Inženýrství AI](@/projects/ai.cs.md) (1), [Znalosti](@/projects/knowledge.cs.md) (1) a [Web](@/projects/web.cs.md) (1).
+
+Naposledy: [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat; [korczis.github.io](@/work/korczis-github-io.cs.md); [Majordomus](@/work/prismatic-majordomus.cs.md): Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.
+
+2 z těchto projektů běží jako živé weby.
+
+Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak Zola používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje Zola s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

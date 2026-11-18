@@ -17,7 +17,7 @@ og_description = "skull-nodejs: Učení a experimenty, Makefile, 2014, archiv. Z
 og_image = "og/cs-work-skull-nodejs.png"
 schema = "project"
 keywords = ["skull-nodejs", "Učení a experimenty", "Makefile", "2014", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["repository", "commit", "open-source"]
+terms = ["makefile", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,7 +28,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**skull-nodejs** je projekt z kategorie [Učení a experimenty](@/projects/learning.cs.md). Jeho kód je napsaný hlavně v jazyce Makefile.
+**skull-nodejs** je projekt z kategorie [Učení a experimenty](@/projects/learning.cs.md). Jeho kód je napsaný hlavně v jazyce [Makefile](@/glossary/makefile.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 22. července 2014; poslední [commit](@/glossary/commit.cs.md) je z 3. srpna 2014. Zní „Update README.md“. Bez commitu za posledních 48 měsíců je veden jako archiv: práce z období 2014, ponechaná pro záznam a datovaná podle měření.
 

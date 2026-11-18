@@ -208,22 +208,22 @@
    "url": "https://korczis.github.io/cs/glossary/",
    "lang": "cs",
    "title": "Slovník · Tomas Korcak",
-   "description": "62 pojmů, kterými se web vysvětluje: jazyky, technologie a koncepty, každý definovaný, se zdrojem a s odkazem na stránky, které ho používají.",
+   "description": "113 pojmů, kterými se web vysvětluje: jazyky, technologie a koncepty, každý definovaný, se zdrojem a s odkazem na stránky, které ho používají.",
    "type": "glossary",
    "category": null,
    "og_image": "https://korczis.github.io/og/cs-glossary.png",
    "keywords": [
     "Slovník",
+    "ApacheConf",
+    "Arduino",
     "C#",
     "C++",
+    "CMake",
+    "CoffeeScript",
     "CSS",
     "Dockerfile",
+    "EEx and HEEx",
     "Elixir",
-    "Erlang",
-    "Haskell",
-    "HTML",
-    "Java",
-    "JavaScript",
     "Tomáš Korčák"
    ]
   },
@@ -273,6 +273,52 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/apacheconf/",
+   "lang": "cs",
+   "title": "ApacheConf (programovací jazyk)",
+   "description": "Konfigurační jazyk webového serveru Apache HTTP: virtuální hosty, přepisovací pravidla a řízení přístupu.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-apacheconf.png",
+   "keywords": [
+    "ApacheConf",
+    "Programovací jazyk",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/arduino/",
+   "lang": "cs",
+   "title": "Arduino (programovací jazyk)",
+   "description": "Dialekt C++ a knihovny mikrokontrolérové platformy Arduino, psané jako takzvané sketche.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-arduino.png",
+   "keywords": [
+    "Arduino",
+    "Programovací jazyk",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/attack-surface/",
+   "lang": "cs",
+   "title": "Útočná plocha (koncept)",
+   "description": "Vše z organizace, na co útočník dosáhne z internetu: domény, servery, služby, certifikáty a uniklé přihlašovací údaje.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-attack-surface.png",
+   "keywords": [
+    "Útočná plocha",
+    "Attack surface",
+    "Koncept",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/audit-trail/",
    "lang": "cs",
    "title": "Auditní stopa (koncept)",
@@ -284,6 +330,37 @@
     "Auditní stopa",
     "Audit trail",
     "Koncept",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/beneficial-ownership/",
+   "lang": "cs",
+   "title": "Skutečné vlastnictví (koncept)",
+   "description": "Fyzická osoba, která firmu v konečném důsledku vlastní nebo ovládá, často za vrstvami dalších firem; odhalí ji rejstříky a řetězce podílů.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-beneficial-ownership.png",
+   "keywords": [
+    "Skutečné vlastnictví",
+    "Beneficial ownership",
+    "Koncept",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/broadway/",
+   "lang": "cs",
+   "title": "Broadway (technologie)",
+   "description": "Knihovna Elixiru pro souběžné vícestupňové datové pipeline s back-pressure, dávkováním a řízeným selháním.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-broadway.png",
+   "keywords": [
+    "Broadway",
+    "Technologie",
     "Slovník",
     "Tomáš Korčák"
    ]
@@ -304,6 +381,38 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/chain-of-custody/",
+   "lang": "cs",
+   "title": "Řetězec úschovy (koncept)",
+   "description": "Záznam o tom, kdo důkaz získal, kdy a jak, a čímkoli prošel, aby šlo doložit jeho neporušenost.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-chain-of-custody.png",
+   "keywords": [
+    "Řetězec úschovy",
+    "Chain of custody",
+    "Koncept",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/change-detection/",
+   "lang": "cs",
+   "title": "Detekce změn (koncept)",
+   "description": "Zachycení, že se zdroj změnil, a posouzení, zda na změně záleží, aby upozornění něco znamenalo.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-change-detection.png",
+   "keywords": [
+    "Detekce změn",
+    "Change detection",
+    "Koncept",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/chart-js/",
    "lang": "cs",
    "title": "Chart.js (technologie)",
@@ -319,6 +428,51 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/claude-api/",
+   "lang": "cs",
+   "title": "Claude API (technologie)",
+   "description": "API společnosti Anthropic k modelům Claude: zprávy, používání nástrojů a agenti, kteří čtou, uvažují a jednají.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-claude-api.png",
+   "keywords": [
+    "Claude API",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/cmake/",
+   "lang": "cs",
+   "title": "CMake (programovací jazyk)",
+   "description": "Generátor buildovacích systémů pro C a C++: jeden popis projektu vytvoří Makefile, soubory Ninja nebo projekty IDE na libovolné platformě.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-cmake.png",
+   "keywords": [
+    "CMake",
+    "Programovací jazyk",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/coffeescript/",
+   "lang": "cs",
+   "title": "CoffeeScript (programovací jazyk)",
+   "description": "Malý jazyk se stručnější syntaxí, který se překládá přímo do JavaScriptu.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-coffeescript.png",
+   "keywords": [
+    "CoffeeScript",
+    "Programovací jazyk",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/commit/",
    "lang": "cs",
    "title": "Commit (koncept)",
@@ -328,6 +482,22 @@
    "og_image": "https://korczis.github.io/og/cs-glossary-commit.png",
    "keywords": [
     "Commit",
+    "Koncept",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/contestability/",
+   "lang": "cs",
+   "title": "Napadnutelnost (koncept)",
+   "description": "Vlastnost rozhodnutí, které lze zpochybnit: jeho důkazy, předpoklady, nejistota i odpovědná osoba jsou zaznamenané.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-contestability.png",
+   "keywords": [
+    "Napadnutelnost",
+    "Contestability",
     "Koncept",
     "Slovník",
     "Tomáš Korčák"
@@ -457,6 +627,22 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/digital-forensics/",
+   "lang": "cs",
+   "title": "Digitální forenzní analýza (koncept)",
+   "description": "Získávání a zkoumání digitálních důkazů tak, aby to, co ukazují, i způsob, jak byly získány, obstály při zpochybnění.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-digital-forensics.png",
+   "keywords": [
+    "Digitální forenzní analýza",
+    "Digital forensics",
+    "Koncept",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/dockerfile/",
    "lang": "cs",
    "title": "Dockerfile (programovací jazyk)",
@@ -487,6 +673,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/eex/",
+   "lang": "cs",
+   "title": "EEx and HEEx (programovací jazyk)",
+   "description": "Vložené šablony Elixiru: EEx vkládá Elixir do textu, HEEx do HTML, které Phoenix LiveView kontroluje a vykresluje.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-eex.png",
+   "keywords": [
+    "EEx and HEEx",
+    "Programovací jazyk",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/elixir/",
    "lang": "cs",
    "title": "Elixir (programovací jazyk)",
@@ -496,6 +697,21 @@
    "og_image": "https://korczis.github.io/og/cs-glossary-elixir.png",
    "keywords": [
     "Elixir",
+    "Programovací jazyk",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/elm/",
+   "lang": "cs",
+   "title": "Elm (programovací jazyk)",
+   "description": "Čistě funkcionální jazyk pro webové frontendy, který se překládá do JavaScriptu a v praxi nemá běhové výjimky.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-elm.png",
+   "keywords": [
+    "Elm",
     "Programovací jazyk",
     "Slovník",
     "Tomáš Korčák"
@@ -512,6 +728,37 @@
    "keywords": [
     "Erlang",
     "Programovací jazyk",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/fastapi/",
+   "lang": "cs",
+   "title": "FastAPI (technologie)",
+   "description": "Webový framework v Pythonu pro HTTP API, typovaný modely Pydantic, které validují požadavky a generují popis OpenAPI.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-fastapi.png",
+   "keywords": [
+    "FastAPI",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/financial-statement-analysis/",
+   "lang": "cs",
+   "title": "Analýza účetních výkazů (koncept)",
+   "description": "Čtení zdraví firmy z rozvahy, výsledovky a cash flow: ukazatele, trendy a to, co neříkají.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-financial-statement-analysis.png",
+   "keywords": [
+    "Analýza účetních výkazů",
+    "Financial statement analysis",
+    "Koncept",
     "Slovník",
     "Tomáš Korčák"
    ]
@@ -572,6 +819,21 @@
    "keywords": [
     "GIS",
     "Koncept",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/github-actions/",
+   "lang": "cs",
+   "title": "GitHub Actions (technologie)",
+   "description": "Průběžná integrace GitHubu: workflow s úlohami, které sestaví, otestují a nasadí repozitář při každém pushi nebo podle plánu.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-github-actions.png",
+   "keywords": [
+    "GitHub Actions",
+    "Technologie",
     "Slovník",
     "Tomáš Korčák"
    ]
@@ -715,6 +977,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/just/",
+   "lang": "cs",
+   "title": "Just (programovací jazyk)",
+   "description": "Spouštěč příkazů: pojmenované recepty v souboru justfile, jako make bez buildovací logiky; vstupní bod většiny těchto repozitářů.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-just.png",
+   "keywords": [
+    "Just",
+    "Programovací jazyk",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/knowledge-graph/",
    "lang": "cs",
    "title": "Znalostní graf (koncept)",
@@ -731,6 +1008,51 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/kubernetes/",
+   "lang": "cs",
+   "title": "Kubernetes (technologie)",
+   "description": "Systém, který provozuje kontejnery v clusteru: plánování, škálování, síť a nasazování deklarované jako zdroje.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-kubernetes.png",
+   "keywords": [
+    "Kubernetes",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/lean/",
+   "lang": "cs",
+   "title": "Lean (programovací jazyk)",
+   "description": "Funkcionální jazyk a asistent důkazů: programy i matematické důkazy jejich správnosti, ověřené strojem.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-lean.png",
+   "keywords": [
+    "Lean",
+    "Programovací jazyk",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/m4/",
+   "lang": "cs",
+   "title": "M4 (programovací jazyk)",
+   "description": "Univerzální makroprocesor: na vstupu text, na výstupu rozvinutý text; pohání nástroj Autoconf.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-m4.png",
+   "keywords": [
+    "M4",
+    "Programovací jazyk",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/majordomus/",
    "lang": "cs",
    "title": "Majordomus (technologie)",
@@ -741,6 +1063,21 @@
    "keywords": [
     "Majordomus",
     "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/makefile/",
+   "lang": "cs",
+   "title": "Makefile (programovací jazyk)",
+   "description": "Jazyk nástroje make: cíle, soubory, na kterých závisí, a příkazy, které je přestaví, když se závislost změní.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-makefile.png",
+   "keywords": [
+    "Makefile",
+    "Programovací jazyk",
     "Slovník",
     "Tomáš Korčák"
    ]
@@ -777,6 +1114,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/meilisearch/",
+   "lang": "cs",
+   "title": "Meilisearch (technologie)",
+   "description": "Rychlý open-source vyhledávač s tolerancí překlepů a filtry, použitý pro fulltext nad sebranými důkazy.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-meilisearch.png",
+   "keywords": [
+    "Meilisearch",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/mergers-and-acquisitions/",
    "lang": "cs",
    "title": "Fúze a akvizice (koncept)",
@@ -788,6 +1140,21 @@
     "Fúze a akvizice",
     "Mergers and acquisitions",
     "Koncept",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/mermaid/",
+   "lang": "cs",
+   "title": "Mermaid (programovací jazyk)",
+   "description": "Textový jazyk pro diagramy (vývojové diagramy, sekvence, stavové automaty) vykreslované ze zdroje podobného Markdownu.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-mermaid.png",
+   "keywords": [
+    "Mermaid",
+    "Programovací jazyk",
     "Slovník",
     "Tomáš Korčák"
    ]
@@ -808,6 +1175,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/monte-carlo-simulation/",
+   "lang": "cs",
+   "title": "Monte Carlo simulation (koncept)",
+   "description": "Odhad nejistého výsledku opakovaným vzorkováním vstupů a čtením rozdělení výsledků.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-monte-carlo-simulation.png",
+   "keywords": [
+    "Monte Carlo simulation",
+    "Koncept",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/nix/",
    "lang": "cs",
    "title": "Nix (programovací jazyk)",
@@ -818,6 +1200,36 @@
    "keywords": [
     "Nix",
     "Programovací jazyk",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/objective-c/",
+   "lang": "cs",
+   "title": "Objective-C (programovací jazyk)",
+   "description": "Jazyk C rozšířený o objekty a zprávy ve stylu Smalltalku; jazyk platforem Apple před příchodem Swiftu.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-objective-c.png",
+   "keywords": [
+    "Objective-C",
+    "Programovací jazyk",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/ollama/",
+   "lang": "cs",
+   "title": "Ollama (technologie)",
+   "description": "Běhové prostředí, které servíruje otevřené jazykové modely na vlastním hardwaru, takže citlivý materiál neopustí stroj.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-ollama.png",
+   "keywords": [
+    "Ollama",
+    "Technologie",
     "Slovník",
     "Tomáš Korčák"
    ]
@@ -853,6 +1265,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/openai-api/",
+   "lang": "cs",
+   "title": "OpenAI API (technologie)",
+   "description": "API společnosti OpenAI k jejím jazykovým a embeddingovým modelům, používané pro generování textu, extrakci a vyhledávání.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-openai-api.png",
+   "keywords": [
+    "OpenAI API",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/openapi/",
    "lang": "cs",
    "title": "OpenAPI (technologie)",
@@ -863,6 +1290,21 @@
    "keywords": [
     "OpenAPI",
     "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/openscad/",
+   "lang": "cs",
+   "title": "OpenSCAD (programovací jazyk)",
+   "description": "Jazyk pro pevné 3D modely popsané kódem: tvary skládané sjednocením, rozdílem a transformacemi, připravené pro 3D tisk.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-openscad.png",
+   "keywords": [
+    "OpenSCAD",
+    "Programovací jazyk",
     "Slovník",
     "Tomáš Korčák"
    ]
@@ -914,6 +1356,82 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/phoenix/",
+   "lang": "cs",
+   "title": "Phoenix (technologie)",
+   "description": "Webový framework Elixiru; LiveView vykresluje interaktivní stránky na serveru a přes socket posílá jen změny.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-phoenix.png",
+   "keywords": [
+    "Phoenix",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/php/",
+   "lang": "cs",
+   "title": "PHP (programovací jazyk)",
+   "description": "Skriptovací jazyk určený pro web, který na serveru generuje stránky.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-php.png",
+   "keywords": [
+    "PHP",
+    "Programovací jazyk",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/playwright/",
+   "lang": "cs",
+   "title": "Playwright (technologie)",
+   "description": "Knihovna pro automatizaci prohlížeče, která ovládá Chromium, Firefox a WebKit pro end-to-end testy a audity.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-playwright.png",
+   "keywords": [
+    "Playwright",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/plpgsql/",
+   "lang": "cs",
+   "title": "PL/pgSQL (programovací jazyk)",
+   "description": "Procedurální jazyk PostgreSQL: funkce a triggery, které uvnitř databáze spouštějí SQL s proměnnými, cykly a podmínkami.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-plpgsql.png",
+   "keywords": [
+    "PL/pgSQL",
+    "Programovací jazyk",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/policy-as-code/",
+   "lang": "cs",
+   "title": "Pravidla jako kód (koncept)",
+   "description": "Pravidla vedená jako kód vedle toho, co řídí, kontrolovaná automaticky při každé změně místo čtení a pamatování.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-policy-as-code.png",
+   "keywords": [
+    "Pravidla jako kód",
+    "Policy as code",
+    "Koncept",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/postgis/",
    "lang": "cs",
    "title": "PostGIS (technologie)",
@@ -944,6 +1462,37 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/public-registry/",
+   "lang": "cs",
+   "title": "Veřejný rejstřík (koncept)",
+   "description": "Úřední rejstřík, který stát vede veřejně: firmy, insolvence, nemovitosti, skuteční majitelé; primární zdroj každé due diligence.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-public-registry.png",
+   "keywords": [
+    "Veřejný rejstřík",
+    "Public registry",
+    "Koncept",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/pydantic/",
+   "lang": "cs",
+   "title": "Pydantic (technologie)",
+   "description": "Validace dat v Pythonu z typových anotací: modely, které vstup parsují, kontrolují a serializují.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-pydantic.png",
+   "keywords": [
+    "Pydantic",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/python/",
    "lang": "cs",
    "title": "Python (programovací jazyk)",
@@ -954,6 +1503,36 @@
    "keywords": [
     "Python",
     "Programovací jazyk",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/r/",
+   "lang": "cs",
+   "title": "R (programovací jazyk)",
+   "description": "Jazyk a prostředí pro statistiku a analýzu dat, s grafy a rozsáhlou knihovnou statistických metod.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-r.png",
+   "keywords": [
+    "R (programovací jazyk)",
+    "Programovací jazyk",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/react/",
+   "lang": "cs",
+   "title": "React (technologie)",
+   "description": "JavaScriptová knihovna pro uživatelská rozhraní skládaná z komponent, které se překreslují podle stavu.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-react.png",
+   "keywords": [
+    "React",
+    "Technologie",
     "Slovník",
     "Tomáš Korčák"
    ]
@@ -975,6 +1554,22 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/regulatory-compliance/",
+   "lang": "cs",
+   "title": "Regulatorní shoda (koncept)",
+   "description": "Plnění povinností, které ukládá regulace, a schopnost to doložit důkazy, například podle NIS2 pro kybernetickou bezpečnost.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-regulatory-compliance.png",
+   "keywords": [
+    "Regulatorní shoda",
+    "Regulatory compliance",
+    "Koncept",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/repository/",
    "lang": "cs",
    "title": "Repozitář (koncept)",
@@ -985,6 +1580,22 @@
    "keywords": [
     "Repozitář",
     "Repository",
+    "Koncept",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/reputation-risk/",
+   "lang": "cs",
+   "title": "Reputační riziko (koncept)",
+   "description": "Riziko, že to, co se o organizaci nebo osobě říká, pravdivé či ne, ji stojí důvěru, zákazníky nebo hodnotu; sleduje se přes negativní zprávy.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-reputation-risk.png",
+   "keywords": [
+    "Reputační riziko",
+    "Reputation risk",
     "Koncept",
     "Slovník",
     "Tomáš Korčák"
@@ -1037,6 +1648,53 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/sanctions-screening/",
+   "lang": "cs",
+   "title": "Sankční prověrka (koncept)",
+   "description": "Kontrola osob a firem proti sankčním seznamům a politicky exponovaným osobám před obchodním vztahem, jak vyžadují pravidla proti praní peněz.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-sanctions-screening.png",
+   "keywords": [
+    "Sankční prověrka",
+    "Sanctions screening",
+    "Koncept",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/scss/",
+   "lang": "cs",
+   "title": "SCSS (programovací jazyk)",
+   "description": "CSS s proměnnými, vnořováním a mixiny, kompilované nástrojem Sass do běžného CSS.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-scss.png",
+   "keywords": [
+    "SCSS",
+    "Programovací jazyk",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/service/",
+   "lang": "cs",
+   "title": "Služba (koncept)",
+   "description": "Něco, co vlastník nabízí klientovi: problém, který řeší, princip, na kterém stojí, postup a to, co se odevzdá.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-service.png",
+   "keywords": [
+    "Služba",
+    "Service",
+    "Koncept",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/shell/",
    "lang": "cs",
    "title": "Shell (programovací jazyk)",
@@ -1046,6 +1704,68 @@
    "og_image": "https://korczis.github.io/og/cs-glossary-shell.png",
    "keywords": [
     "Shell",
+    "Programovací jazyk",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/skill/",
+   "lang": "cs",
+   "title": "Dovednost (koncept)",
+   "description": "Schopnost, kterou vlastník praktikuje, doložená veřejnou prací a případy užití z klientské práce, a ze které čerpají služby.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-skill.png",
+   "keywords": [
+    "Dovednost",
+    "Skill",
+    "Koncept",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/smarty/",
+   "lang": "cs",
+   "title": "Smarty (programovací jazyk)",
+   "description": "Šablonovací systém pro PHP, který odděluje prezentaci od aplikační logiky.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-smarty.png",
+   "keywords": [
+    "Smarty",
+    "Programovací jazyk",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/source-criticism/",
+   "lang": "cs",
+   "title": "Kritika zdrojů (koncept)",
+   "description": "Posouzení zdroje dřív, než se mu uvěří: kdo ho vytvořil, kdy, jak a proč a zda se shodují nezávislé zdroje.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-source-criticism.png",
+   "keywords": [
+    "Kritika zdrojů",
+    "Source criticism",
+    "Koncept",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/squirrel/",
+   "lang": "cs",
+   "title": "Squirrel (programovací jazyk)",
+   "description": "Malý vložitelný skriptovací jazyk; OpenTTD v něm spouští své AI hráče a herní skripty.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-squirrel.png",
+   "keywords": [
+    "Squirrel",
     "Programovací jazyk",
     "Slovník",
     "Tomáš Korčák"
@@ -1093,6 +1813,36 @@
    "keywords": [
     "Tailwind CSS",
     "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/tesseract/",
+   "lang": "cs",
+   "title": "Tesseract (technologie)",
+   "description": "Open-source OCR engine, který čte text ze skenovaných dokumentů a obrázků v mnoha jazycích.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-tesseract.png",
+   "keywords": [
+    "Tesseract",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/tex/",
+   "lang": "cs",
+   "title": "TeX (programovací jazyk)",
+   "description": "Sázecí jazyk pro dokumenty a matematiku; LaTeX je balík maker, ve kterém je napsaná většina dokumentů.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-tex.png",
+   "keywords": [
+    "TeX",
+    "Programovací jazyk",
     "Slovník",
     "Tomáš Korčák"
    ]
@@ -1154,6 +1904,36 @@
    "keywords": [
     "Web Audio",
     "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/web-scraping/",
+   "lang": "cs",
+   "title": "Web scraping (koncept)",
+   "description": "Programové získávání dat z webových stránek, od jednoduchých požadavků po řízený prohlížeč, v mezích podmínek webu a zákona.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-web-scraping.png",
+   "keywords": [
+    "Web scraping",
+    "Koncept",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/xslt/",
+   "lang": "cs",
+   "title": "XSLT (programovací jazyk)",
+   "description": "Jazyk, který převádí dokumenty XML na jiné XML, HTML nebo text pomocí šablon párovaných se vstupním stromem.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-xslt.png",
+   "keywords": [
+    "XSLT",
+    "Programovací jazyk",
     "Slovník",
     "Tomáš Korčák"
    ]
@@ -1467,6 +2247,758 @@
     "Rust",
     "Ruby",
     "JavaScript"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/services/",
+   "lang": "cs",
+   "title": "Služby · Tomas Korcak",
+   "description": "Due diligence, M&A, digitální vyšetřování, forenzní analýza a reputace: problém, který každá služba řeší, postup, dovednosti a doklady.",
+   "type": "collection",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-services.png",
+   "keywords": [
+    "Služby",
+    "Due diligence firem a protistran",
+    "Prověrka a analýza M&A transakcí",
+    "Digitální vyšetřování a OSINT dossier",
+    "Digitální forenzní analýza a zajištění důkazů",
+    "Reputační zpravodajství a monitoring negativních zpráv",
+    "Sankční a PEP prověrky a skuteční majitelé",
+    "Monitoring insolvencí, sporů a změn v rejstřících",
+    "Hodnocení vnější útočné plochy a kybernetické expozice",
+    "Podpora rozhodování a AI agenti pro analytiky",
+    "Řízený vývoj softwaru s AI",
+    "Interaktivní datové produkty a simulátory",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/services/ai-engineering-governance/",
+   "lang": "cs",
+   "title": "Řízený vývoj softwaru s AI · Tomas Korcak",
+   "description": "AI agenti, kteří píší kód podle pravidel, která nemohou obejít, a doklady každé změny zůstávají.",
+   "type": "service",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-service-ai-engineering-governance.png",
+   "keywords": [
+    "Řízený vývoj softwaru s AI",
+    "Pravidla jako kód",
+    "Agenti s LLM",
+    "Auditní stopa",
+    "Orchestrace",
+    "Transformace s AI",
+    "Napadnutelná rozhodnutí",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/services/attack-surface/",
+   "lang": "cs",
+   "title": "Hodnocení vnější útočné plochy a kybernetické expozice · Tomas Korcak",
+   "description": "Uvidíte svou organizaci, nebo cíl akvizice, očima útočníka.",
+   "type": "service",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-service-attack-surface.png",
+   "keywords": [
+    "Hodnocení vnější útočné plochy a kybernetické expozice",
+    "Infrastrukturní OSINT",
+    "Mapování regulatorní shody",
+    "Průběžný monitoring",
+    "Hodnocení rizik",
+    "Webová automatizace a crawling",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/services/compliance-screening/",
+   "lang": "cs",
+   "title": "Sankční a PEP prověrky a skuteční majitelé · Tomas Korcak",
+   "description": "Prověrky, které vás nezahltí falešnými shodami ani tiše nepřehlédnou skutečnou.",
+   "type": "service",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-service-compliance-screening.png",
+   "keywords": [
+    "Sankční a PEP prověrky a skuteční majitelé",
+    "Sankční a PEP prověrky",
+    "Analýza vlastnictví a vazeb",
+    "Ztotožnění subjektů",
+    "Hodnocení rizik",
+    "Napadnutelná rozhodnutí",
+    "Mapování regulatorní shody",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/services/continuous-monitoring/",
+   "lang": "cs",
+   "title": "Monitoring insolvencí, sporů a změn v rejstřících · Tomas Korcak",
+   "description": "Dozvíte se o problému protistrany v den, kdy se stane veřejným, ne při příští roční revizi.",
+   "type": "service",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-service-continuous-monitoring.png",
+   "keywords": [
+    "Monitoring insolvencí, sporů a změn v rejstřících",
+    "Sledování insolvencí",
+    "Průběžný monitoring",
+    "Rejstříkové zpravodajství",
+    "Ztotožnění subjektů",
+    "Orchestrace",
+    "Hodnocení rizik",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/services/decision-support-ai/",
+   "lang": "cs",
+   "title": "Podpora rozhodování a AI agenti pro analytiky · Tomas Korcak",
+   "description": "AI, která analytiky zrychlí, ale podpis jim nebere.",
+   "type": "service",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-service-decision-support-ai.png",
+   "keywords": [
+    "Podpora rozhodování a AI agenti pro analytiky",
+    "Agenti s LLM",
+    "Podpora rozhodování",
+    "Napadnutelná rozhodnutí",
+    "Transformace s AI",
+    "Orchestrace",
+    "Vytěžování dokumentů",
+    "Auditní stopa",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/services/digital-forensics/",
+   "lang": "cs",
+   "title": "Digitální forenzní analýza a zajištění důkazů · Tomas Korcak",
+   "description": "Zjištění, která obstojí, když je někdo zpochybní.  Nabízí Tomáš Korčák.",
+   "type": "service",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-service-digital-forensics.png",
+   "keywords": [
+    "Digitální forenzní analýza a zajištění důkazů",
+    "Forenzní analýza webu a médií",
+    "Řetězec úschovy důkazů",
+    "Infrastrukturní OSINT",
+    "Auditní stopa",
+    "Analýza narativů a reputace",
+    "Spolehlivost zdrojů",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/services/digital-investigation/",
+   "lang": "cs",
+   "title": "Digitální vyšetřování a OSINT dossier · Tomas Korcak",
+   "description": "Úplný a ozdrojovaný obraz osoby, firmy nebo sítě, jen z otevřených zdrojů.",
+   "type": "service",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-service-digital-investigation.png",
+   "keywords": [
+    "Digitální vyšetřování a OSINT dossier",
+    "OSINT šetření",
+    "Rejstříkové zpravodajství",
+    "Ztotožnění subjektů",
+    "Analýza vlastnictví a vazeb",
+    "Infrastrukturní OSINT",
+    "Forenzní analýza webu a médií",
+    "Znalostní graf",
+    "Webová automatizace a crawling",
+    "Průběžný monitoring",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/services/due-diligence/",
+   "lang": "cs",
+   "title": "Due diligence firem a protistran · Tomas Korcak",
+   "description": "Vězte, s kým jednáte, dřív než podepíšete: jedna rozpoznaná entita, každý zdroj ověřený proti ostatním, každý varovný signál vysvětlený.",
+   "type": "service",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-service-due-diligence.png",
+   "keywords": [
+    "Due diligence firem a protistran",
+    "Due diligence",
+    "Rejstříkové zpravodajství",
+    "Ztotožnění subjektů",
+    "Analýza vlastnictví a vazeb",
+    "Analýza účetních závěrek",
+    "Hodnocení rizik",
+    "Spolehlivost zdrojů",
+    "Podpora rozhodování",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/services/interactive-data-products/",
+   "lang": "cs",
+   "title": "Interaktivní datové produkty a simulátory · Tomas Korcak",
+   "description": "Data a modely, které lidé sami ovládají a kde každá značka vede ke svému zdroji.",
+   "type": "service",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-service-interactive-data-products.png",
+   "keywords": [
+    "Interaktivní datové produkty a simulátory",
+    "Interaktivní vizualizace",
+    "Geoprostorová analýza",
+    "Integrace dat",
+    "Znalostní graf",
+    "Podpora rozhodování",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/services/m-and-a/",
+   "lang": "cs",
+   "title": "Prověrka a analýza M&A transakcí · Tomas Korcak",
+   "description": "Rychlá, doložená odpověď před term sheetem: jít dál, nebo si nejdřív vyžádat tyto podklady.",
+   "type": "service",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-service-m-and-a.png",
+   "keywords": [
+    "Prověrka a analýza M&A transakcí",
+    "Prověrka M&A",
+    "Due diligence",
+    "Analýza účetních závěrek",
+    "Analýza vlastnictví a vazeb",
+    "Tržní zpravodajství",
+    "Napadnutelná rozhodnutí",
+    "Hodnocení rizik",
+    "Datová místnost",
+    "Podpora rozhodování",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/services/reputation-intelligence/",
+   "lang": "cs",
+   "title": "Reputační zpravodajství a monitoring negativních zpráv · Tomas Korcak",
+   "description": "Vězte, co se říká, jak je to věrohodné a kdy se narativ mění.",
+   "type": "service",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-service-reputation-intelligence.png",
+   "keywords": [
+    "Reputační zpravodajství a monitoring negativních zpráv",
+    "Analýza narativů a reputace",
+    "Spolehlivost zdrojů",
+    "Průběžný monitoring",
+    "OSINT šetření",
+    "Podpora rozhodování",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/skills/",
+   "lang": "cs",
+   "title": "Dovednosti · Tomas Korcak",
+   "description": "Každá dovednost, ze které moje služby čerpají, s definicí, veřejnou prací, která ji dokládá, případy užití z klientské práce a technologiemi za ní.",
+   "type": "collection",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-skills.png",
+   "keywords": [
+    "Dovednosti",
+    "Due diligence",
+    "Prověrka M&A",
+    "Datová místnost",
+    "Hodnocení rizik",
+    "Tržní zpravodajství",
+    "Podpora rozhodování",
+    "OSINT šetření",
+    "Sledování insolvencí",
+    "Ztotožnění subjektů",
+    "Znalostní graf",
+    "Integrace dat",
+    "Auditní stopa",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/skills/ai-transformation/",
+   "lang": "cs",
+   "title": "Transformace s AI · Tomas Korcak",
+   "description": "Program transformace s AI: kde AI pomáhá, pravidla a řízení, pod kterými pracuje, a plán, který ji zavádí.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-skill-ai-transformation.png",
+   "keywords": [
+    "Transformace s AI",
+    "Podpora rozhodování a AI agenti pro analytiky",
+    "Řízený vývoj softwaru s AI",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/skills/audit-trail/",
+   "lang": "cs",
+   "title": "Auditní stopa · Tomas Korcak",
+   "description": "Důkazy a původ uchované ke každému kroku, s branami, které nepřipustí tichou ztrátu, aby šlo práci zpětně ověřit.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-skill-audit-trail.png",
+   "keywords": [
+    "Auditní stopa",
+    "Digitální forenzní analýza a zajištění důkazů",
+    "Podpora rozhodování a AI agenti pro analytiky",
+    "Řízený vývoj softwaru s AI",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/skills/chain-of-custody/",
+   "lang": "cs",
+   "title": "Řetězec úschovy důkazů · Tomas Korcak",
+   "description": "Důkazy, na kterých je vidět každá manipulace a které lze zpětně přehrát: každý sběr zahashovaný a zřetězený do úložiště jen pro zápis, ověřený a exportovaný jako…",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-skill-chain-of-custody.png",
+   "keywords": [
+    "Řetězec úschovy důkazů",
+    "Digitální forenzní analýza a zajištění důkazů",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/skills/change-monitoring/",
+   "lang": "cs",
+   "title": "Průběžný monitoring · Tomas Korcak",
+   "description": "Sběr, který běží pořád a hlásí jen to podstatné: otisky zdrojů, změny tříděné podle významu, backpressure a opakování, aby žádné selhání nezůstalo tiché.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-skill-change-monitoring.png",
+   "keywords": [
+    "Průběžný monitoring",
+    "Digitální vyšetřování a OSINT dossier",
+    "Reputační zpravodajství a monitoring negativních zpráv",
+    "Monitoring insolvencí, sporů a změn v rejstřících",
+    "Hodnocení vnější útočné plochy a kybernetické expozice",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/skills/compliance-mapping/",
+   "lang": "cs",
+   "title": "Mapování regulatorní shody · Tomas Korcak",
+   "description": "Zjištění převedená na regulatorní důkazy: expozice a výsledky prověrek namapované na opatření režimů kybernetické bezpečnosti a odolnosti, jako je NIS2.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-skill-compliance-mapping.png",
+   "keywords": [
+    "Mapování regulatorní shody",
+    "Sankční a PEP prověrky a skuteční majitelé",
+    "Hodnocení vnější útočné plochy a kybernetické expozice",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/skills/contestable-decisions/",
+   "lang": "cs",
+   "title": "Napadnutelná rozhodnutí · Tomas Korcak",
+   "description": "Rozhodnutí, která lze zpochybnit: soupeřící hypotézy s hodnocením, nejistota rozdělená na tu, kterou další důkazy sníží, a tu, kterou ne, a zaznamenaný nesouhlas…",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-skill-contestable-decisions.png",
+   "keywords": [
+    "Napadnutelná rozhodnutí",
+    "Prověrka a analýza M&A transakcí",
+    "Sankční a PEP prověrky a skuteční majitelé",
+    "Podpora rozhodování a AI agenti pro analytiky",
+    "Řízený vývoj softwaru s AI",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/skills/data-integration/",
+   "lang": "cs",
+   "title": "Integrace dat · Tomas Korcak",
+   "description": "Konektory na rejstříky a API, se stahováním, mezipamětí a limity, aby každý zdroj dorazil v jednom jednotném tvaru.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-skill-data-integration.png",
+   "keywords": [
+    "Integrace dat",
+    "Interaktivní datové produkty a simulátory",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/skills/data-room/",
+   "lang": "cs",
+   "title": "Datová místnost · Tomas Korcak",
+   "description": "Virtuální datová místnost: dokumenty roztříděné, zaindexované a prohledávatelné pro každou stranu transakce, s pohledem podle role.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-skill-data-room.png",
+   "keywords": [
+    "Datová místnost",
+    "Prověrka a analýza M&A transakcí",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/skills/decision-support/",
+   "lang": "cs",
+   "title": "Podpora rozhodování · Tomas Korcak",
+   "description": "Zprávy, přehledy a jednostránkové shrnutí, která z podkladů dělají rozhodnutí pro ty, kdo ho podepisují.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-skill-decision-support.png",
+   "keywords": [
+    "Podpora rozhodování",
+    "Due diligence firem a protistran",
+    "Prověrka a analýza M&A transakcí",
+    "Reputační zpravodajství a monitoring negativních zpráv",
+    "Podpora rozhodování a AI agenti pro analytiky",
+    "Interaktivní datové produkty a simulátory",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/skills/document-extraction/",
+   "lang": "cs",
+   "title": "Vytěžování dokumentů · Tomas Korcak",
+   "description": "Čtení naskenovaných i digitálních dokumentů pomocí OCR a modelů vidění do strukturovaných, ověřených polí.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-skill-document-extraction.png",
+   "keywords": [
+    "Vytěžování dokumentů",
+    "Podpora rozhodování a AI agenti pro analytiky",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/skills/due-diligence/",
+   "lang": "cs",
+   "title": "Due diligence · Tomas Korcak",
+   "description": "Technická, datová a podkladová prověrka cíle: vlastnictví, lidé, majetek a varovné signály, každé zjištění s jeho zdrojem.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-skill-due-diligence.png",
+   "keywords": [
+    "Due diligence",
+    "Due diligence firem a protistran",
+    "Prověrka a analýza M&A transakcí",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/skills/entity-resolution/",
+   "lang": "cs",
+   "title": "Ztotožnění subjektů · Tomas Korcak",
+   "description": "Spárování záznamů, které ve více zdrojích jmenují tutéž firmu nebo osobu, nejdřív podle identifikátoru, pak podle podobnosti.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-skill-entity-resolution.png",
+   "keywords": [
+    "Ztotožnění subjektů",
+    "Due diligence firem a protistran",
+    "Digitální vyšetřování a OSINT dossier",
+    "Sankční a PEP prověrky a skuteční majitelé",
+    "Monitoring insolvencí, sporů a změn v rejstřících",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/skills/financial-analysis/",
+   "lang": "cs",
+   "title": "Analýza účetních závěrek · Tomas Korcak",
+   "description": "Finanční zdraví vyčtené z uložených výkazů: několik let vytěžených z dokumentů v rejstříku do ukazatelů, trendů a otázek, které vyvolávají.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-skill-financial-analysis.png",
+   "keywords": [
+    "Analýza účetních závěrek",
+    "Due diligence firem a protistran",
+    "Prověrka a analýza M&A transakcí",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/skills/geospatial-analysis/",
+   "lang": "cs",
+   "title": "Geoprostorová analýza · Tomas Korcak",
+   "description": "Místa jako data: geokódování, prostorové dotazy a mapy, které umisťují události, majetek a rejstříky na zem.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-skill-geospatial-analysis.png",
+   "keywords": [
+    "Geoprostorová analýza",
+    "Interaktivní datové produkty a simulátory",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/skills/infrastructure-osint/",
+   "lang": "cs",
+   "title": "Infrastrukturní OSINT · Tomas Korcak",
+   "description": "Domény, IP adresy a certifikáty zkoumané zvenčí: historie Whois a DNS, certificate transparency, subdomény a vystavené služby.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-skill-infrastructure-osint.png",
+   "keywords": [
+    "Infrastrukturní OSINT",
+    "Digitální vyšetřování a OSINT dossier",
+    "Digitální forenzní analýza a zajištění důkazů",
+    "Hodnocení vnější útočné plochy a kybernetické expozice",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/skills/insolvency-monitoring/",
+   "lang": "cs",
+   "title": "Sledování insolvencí · Tomas Korcak",
+   "description": "Sledování veřejného insolvenčního rejstříku ve velkém: dlužníci, přihlášky věřitelů a každá změna, s kontrolou úplnosti.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-skill-insolvency-monitoring.png",
+   "keywords": [
+    "Sledování insolvencí",
+    "Monitoring insolvencí, sporů a změn v rejstřících",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/skills/interactive-visualisation/",
+   "lang": "cs",
+   "title": "Interaktivní vizualizace · Tomas Korcak",
+   "description": "Data a modely, které čtenář sám ovládá: simulátory, explorable explanations a dashboardy, kde každá značka vede ke svému zdroji.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-skill-interactive-visualisation.png",
+   "keywords": [
+    "Interaktivní vizualizace",
+    "Interaktivní datové produkty a simulátory",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/skills/knowledge-graph/",
+   "lang": "cs",
+   "title": "Znalostní graf · Tomas Korcak",
+   "description": "Graf subjektů a jejich vztahů, postavený z podkladů a dotazovaný tak, aby ukázal vazby, které tabulka skryje.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-skill-knowledge-graph.png",
+   "keywords": [
+    "Znalostní graf",
+    "Digitální vyšetřování a OSINT dossier",
+    "Interaktivní datové produkty a simulátory",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/skills/llm-agents/",
+   "lang": "cs",
+   "title": "Agenti s LLM · Tomas Korcak",
+   "description": "Agenti na velkých jazykových modelech, kteří plánují, volají nástroje a předávají práci s důkazem, pod jednou politikou.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-skill-llm-agents.png",
+   "keywords": [
+    "Agenti s LLM",
+    "Podpora rozhodování a AI agenti pro analytiky",
+    "Řízený vývoj softwaru s AI",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/skills/m-and-a-screening/",
+   "lang": "cs",
+   "title": "Prověrka M&A · Tomas Korcak",
+   "description": "Prověrka akvizice nebo investice: souvislosti transakce, její strany, financování a podklady pro ocenění.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-skill-m-and-a-screening.png",
+   "keywords": [
+    "Prověrka M&A",
+    "Prověrka a analýza M&A transakcí",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/skills/market-intelligence/",
+   "lang": "cs",
+   "title": "Tržní zpravodajství · Tomas Korcak",
+   "description": "Srovnatelné případy, ceny a konkurence sebrané z veřejných zdrojů do obrazu trhu, o který se dá opřít rozhodnutí.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-skill-market-intelligence.png",
+   "keywords": [
+    "Tržní zpravodajství",
+    "Prověrka a analýza M&A transakcí",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/skills/media-forensics/",
+   "lang": "cs",
+   "title": "Forenzní analýza webu a médií · Tomas Korcak",
+   "description": "Odkud webový obsah a obrázky pocházejí a jak se měnily: metadata, zpětné vyhledávání obrázků a historie v archivech, oddělené od názoru.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-skill-media-forensics.png",
+   "keywords": [
+    "Forenzní analýza webu a médií",
+    "Digitální vyšetřování a OSINT dossier",
+    "Digitální forenzní analýza a zajištění důkazů",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/skills/narrative-analysis/",
+   "lang": "cs",
+   "title": "Analýza narativů a reputace · Tomas Korcak",
+   "description": "Skutečný signál odlišený od šumu a od koordinované kampaně: negativní zprávy hodnocené podle síly, soudržnosti a manipulace, s včasným varováním při posunu…",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-skill-narrative-analysis.png",
+   "keywords": [
+    "Analýza narativů a reputace",
+    "Digitální forenzní analýza a zajištění důkazů",
+    "Reputační zpravodajství a monitoring negativních zpráv",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/skills/orchestration/",
+   "lang": "cs",
+   "title": "Orchestrace · Tomas Korcak",
+   "description": "Orchestrace pipeline a agentů: fronty, workflow a plány, které spolehlivě a ve správném pořadí spouštějí mnoho kroků.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-skill-orchestration.png",
+   "keywords": [
+    "Orchestrace",
+    "Monitoring insolvencí, sporů a změn v rejstřících",
+    "Podpora rozhodování a AI agenti pro analytiky",
+    "Řízený vývoj softwaru s AI",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/skills/osint-investigation/",
+   "lang": "cs",
+   "title": "OSINT šetření · Tomas Korcak",
+   "description": "Šetření z otevřených zdrojů a veřejných rejstříků: firmy, lidé a jejich vazby, každé tvrzení dohledatelné ke zdroji.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-skill-osint-investigation.png",
+   "keywords": [
+    "OSINT šetření",
+    "Digitální vyšetřování a OSINT dossier",
+    "Reputační zpravodajství a monitoring negativních zpráv",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/skills/ownership-analysis/",
+   "lang": "cs",
+   "title": "Analýza vlastnictví a vazeb · Tomas Korcak",
+   "description": "Dohledání kontroly a skrytých vztahů: vlastnické řetězce až ke skutečnému majiteli, statutáři a adresy sdílené mezi firmami, offshore vrstvy a kruhové vlastnictví.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-skill-ownership-analysis.png",
+   "keywords": [
+    "Analýza vlastnictví a vazeb",
+    "Due diligence firem a protistran",
+    "Prověrka a analýza M&A transakcí",
+    "Digitální vyšetřování a OSINT dossier",
+    "Sankční a PEP prověrky a skuteční majitelé",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/skills/policy-as-code/",
+   "lang": "cs",
+   "title": "Pravidla jako kód · Tomas Korcak",
+   "description": "Pravidla zapsaná jako kód a vynucená branami: co smí AI agent nebo vývojář změnit, se kontroluje dřív, než změna přistane, a doklady zůstávají.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-skill-policy-as-code.png",
+   "keywords": [
+    "Pravidla jako kód",
+    "Řízený vývoj softwaru s AI",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/skills/registry-intelligence/",
+   "lang": "cs",
+   "title": "Rejstříkové zpravodajství · Tomas Korcak",
+   "description": "Veřejné rejstříky převedené na spolehlivá strukturovaná data: nativní konektory s limity a cache a pozitivní kontrola dřív, než se uvěří výsledku „nic nenalezeno“.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-skill-registry-intelligence.png",
+   "keywords": [
+    "Rejstříkové zpravodajství",
+    "Due diligence firem a protistran",
+    "Digitální vyšetřování a OSINT dossier",
+    "Monitoring insolvencí, sporů a změn v rejstřících",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/skills/risk-scoring/",
+   "lang": "cs",
+   "title": "Hodnocení rizik · Tomas Korcak",
+   "description": "Bodování a řazení rizik ze změřených signálů, aby prověrka začala tím nejdůležitějším.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-skill-risk-scoring.png",
+   "keywords": [
+    "Hodnocení rizik",
+    "Due diligence firem a protistran",
+    "Prověrka a analýza M&A transakcí",
+    "Sankční a PEP prověrky a skuteční majitelé",
+    "Monitoring insolvencí, sporů a změn v rejstřících",
+    "Hodnocení vnější útočné plochy a kybernetické expozice",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/skills/sanctions-screening/",
+   "lang": "cs",
+   "title": "Sankční a PEP prověrky · Tomas Korcak",
+   "description": "Prověrka proti sankčním seznamům a politicky exponovaným osobám s kalibrovaným párováním jmen: shoda, téměř shoda k lidskému posouzení, nebo nic, a neúspěšná…",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-skill-sanctions-screening.png",
+   "keywords": [
+    "Sankční a PEP prověrky",
+    "Sankční a PEP prověrky a skuteční majitelé",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/skills/source-reliability/",
+   "lang": "cs",
+   "title": "Spolehlivost zdrojů · Tomas Korcak",
+   "description": "Nakolik lze věřit každému zdroji a kde se zdroje rozcházejí: spolehlivost po zdrojích, matice shody a mezery v pokrytí odhalené dřív, než svedou.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-skill-source-reliability.png",
+   "keywords": [
+    "Spolehlivost zdrojů",
+    "Due diligence firem a protistran",
+    "Digitální forenzní analýza a zajištění důkazů",
+    "Reputační zpravodajství a monitoring negativních zpráv",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/skills/web-automation/",
+   "lang": "cs",
+   "title": "Webová automatizace a crawling · Tomas Korcak",
+   "description": "Data i ze špatně dostupných zdrojů: automatizace prohlížeče v mezích pravidel a crawlery, které se samy omezují, s každou stránkou uloženou jako důkaz.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-skill-web-automation.png",
+   "keywords": [
+    "Webová automatizace a crawling",
+    "Digitální vyšetřování a OSINT dossier",
+    "Hodnocení vnější útočné plochy a kybernetické expozice",
+    "Tomáš Korčák"
    ]
   },
   {
@@ -5516,22 +7048,22 @@
    "url": "https://korczis.github.io/glossary/",
    "lang": "en",
    "title": "Glossary · Tomas Korcak",
-   "description": "The 62 terms this site explains itself with: languages, technologies and concepts, each defined, sourced and linked to every page that uses it.",
+   "description": "The 113 terms this site explains itself with: languages, technologies and concepts, each defined, sourced and linked to every page that uses it.",
    "type": "glossary",
    "category": null,
    "og_image": "https://korczis.github.io/og/glossary.png",
    "keywords": [
     "Glossary",
+    "ApacheConf",
+    "Arduino",
     "C#",
     "C++",
+    "CMake",
+    "CoffeeScript",
     "CSS",
     "Dockerfile",
+    "EEx and HEEx",
     "Elixir",
-    "Erlang",
-    "Haskell",
-    "HTML",
-    "Java",
-    "JavaScript",
     "Tomas Korcak"
    ]
   },
@@ -5581,6 +7113,51 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/apacheconf/",
+   "lang": "en",
+   "title": "ApacheConf (programming language)",
+   "description": "The configuration language of the Apache HTTP Server: virtual hosts, rewrite rules and access control.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-apacheconf.png",
+   "keywords": [
+    "ApacheConf",
+    "Programming language",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/arduino/",
+   "lang": "en",
+   "title": "Arduino (programming language)",
+   "description": "The C++ dialect and libraries of the Arduino microcontroller platform, written as sketches.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-arduino.png",
+   "keywords": [
+    "Arduino",
+    "Programming language",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/attack-surface/",
+   "lang": "en",
+   "title": "Attack surface (concept)",
+   "description": "Everything of an organisation an attacker can reach from the internet: domains, servers, services, certificates and leaked credentials.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-attack-surface.png",
+   "keywords": [
+    "Attack surface",
+    "Concept",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/audit-trail/",
    "lang": "en",
    "title": "Audit trail (concept)",
@@ -5591,6 +7168,36 @@
    "keywords": [
     "Audit trail",
     "Concept",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/beneficial-ownership/",
+   "lang": "en",
+   "title": "Beneficial ownership (concept)",
+   "description": "The natural person who ultimately owns or controls a company, often behind layers of other companies; registers and chains of shareholdings reveal them.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-beneficial-ownership.png",
+   "keywords": [
+    "Beneficial ownership",
+    "Concept",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/broadway/",
+   "lang": "en",
+   "title": "Broadway (technology)",
+   "description": "An Elixir library for concurrent, multi-stage data pipelines with back-pressure, batching and graceful failure.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-broadway.png",
+   "keywords": [
+    "Broadway",
+    "Technology",
     "Glossary",
     "Tomas Korcak"
    ]
@@ -5611,6 +7218,36 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/chain-of-custody/",
+   "lang": "en",
+   "title": "Chain of custody (concept)",
+   "description": "The record of who acquired a piece of evidence, when and how, and every hand it passed through, so its integrity can be proven.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-chain-of-custody.png",
+   "keywords": [
+    "Chain of custody",
+    "Concept",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/change-detection/",
+   "lang": "en",
+   "title": "Change detection (concept)",
+   "description": "Noticing when a source changes and judging whether the change matters, so an alert means something.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-change-detection.png",
+   "keywords": [
+    "Change detection",
+    "Concept",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/chart-js/",
    "lang": "en",
    "title": "Chart.js (technology)",
@@ -5626,6 +7263,51 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/claude-api/",
+   "lang": "en",
+   "title": "Claude API (technology)",
+   "description": "Anthropic's API to the Claude models: messages, tool use and agents that read, reason and act.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-claude-api.png",
+   "keywords": [
+    "Claude API",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/cmake/",
+   "lang": "en",
+   "title": "CMake (programming language)",
+   "description": "A build-system generator for C and C++: one description of a project produces Makefiles, Ninja files or IDE projects on any platform.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-cmake.png",
+   "keywords": [
+    "CMake",
+    "Programming language",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/coffeescript/",
+   "lang": "en",
+   "title": "CoffeeScript (programming language)",
+   "description": "A small language with a terser syntax that compiles one to one into JavaScript.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-coffeescript.png",
+   "keywords": [
+    "CoffeeScript",
+    "Programming language",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/commit/",
    "lang": "en",
    "title": "Commit (concept)",
@@ -5635,6 +7317,21 @@
    "og_image": "https://korczis.github.io/og/glossary-commit.png",
    "keywords": [
     "Commit",
+    "Concept",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/contestability/",
+   "lang": "en",
+   "title": "Contestability (concept)",
+   "description": "The property of a decision that can be questioned: its evidence, assumptions, uncertainty and the person accountable are on record.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-contestability.png",
+   "keywords": [
+    "Contestability",
     "Concept",
     "Glossary",
     "Tomas Korcak"
@@ -5761,6 +7458,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/digital-forensics/",
+   "lang": "en",
+   "title": "Digital forensics (concept)",
+   "description": "Recovering and examining digital evidence so that what it shows, and how it was obtained, holds up when challenged.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-digital-forensics.png",
+   "keywords": [
+    "Digital forensics",
+    "Concept",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/dockerfile/",
    "lang": "en",
    "title": "Dockerfile (programming language)",
@@ -5791,6 +7503,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/eex/",
+   "lang": "en",
+   "title": "EEx and HEEx (programming language)",
+   "description": "Elixir's embedded templates: EEx puts Elixir in text, HEEx in HTML that Phoenix LiveView checks and renders.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-eex.png",
+   "keywords": [
+    "EEx and HEEx",
+    "Programming language",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/elixir/",
    "lang": "en",
    "title": "Elixir (programming language)",
@@ -5800,6 +7527,21 @@
    "og_image": "https://korczis.github.io/og/glossary-elixir.png",
    "keywords": [
     "Elixir",
+    "Programming language",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/elm/",
+   "lang": "en",
+   "title": "Elm (programming language)",
+   "description": "A purely functional language that compiles to JavaScript for web front ends, known for having no runtime exceptions in practice.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-elm.png",
+   "keywords": [
+    "Elm",
     "Programming language",
     "Glossary",
     "Tomas Korcak"
@@ -5816,6 +7558,36 @@
    "keywords": [
     "Erlang",
     "Programming language",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/fastapi/",
+   "lang": "en",
+   "title": "FastAPI (technology)",
+   "description": "A Python web framework for HTTP APIs, typed with Pydantic models that validate requests and generate the OpenAPI description.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-fastapi.png",
+   "keywords": [
+    "FastAPI",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/financial-statement-analysis/",
+   "lang": "en",
+   "title": "Financial statement analysis (concept)",
+   "description": "Reading a company's health from its balance sheet, income statement and cash flow: ratios, trends and what they do not say.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-financial-statement-analysis.png",
+   "keywords": [
+    "Financial statement analysis",
+    "Concept",
     "Glossary",
     "Tomas Korcak"
    ]
@@ -5876,6 +7648,21 @@
    "keywords": [
     "GIS",
     "Concept",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/github-actions/",
+   "lang": "en",
+   "title": "GitHub Actions (technology)",
+   "description": "GitHub's continuous integration: workflows of jobs that build, test and deploy a repository on every push or on a schedule.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-github-actions.png",
+   "keywords": [
+    "GitHub Actions",
+    "Technology",
     "Glossary",
     "Tomas Korcak"
    ]
@@ -6016,6 +7803,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/just/",
+   "lang": "en",
+   "title": "Just (programming language)",
+   "description": "A command runner: named recipes in a justfile, like make without the build semantics; the entry point of most of these repositories.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-just.png",
+   "keywords": [
+    "Just",
+    "Programming language",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/knowledge-graph/",
    "lang": "en",
    "title": "Knowledge graph (concept)",
@@ -6031,6 +7833,51 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/kubernetes/",
+   "lang": "en",
+   "title": "Kubernetes (technology)",
+   "description": "A system that runs containers across a cluster: scheduling, scaling, networking and rollouts declared as resources.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-kubernetes.png",
+   "keywords": [
+    "Kubernetes",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/lean/",
+   "lang": "en",
+   "title": "Lean (programming language)",
+   "description": "A functional language and proof assistant: programs and the mathematical proofs that they are correct, checked by the machine.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-lean.png",
+   "keywords": [
+    "Lean",
+    "Programming language",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/m4/",
+   "lang": "en",
+   "title": "M4 (programming language)",
+   "description": "A general-purpose macro processor: text in, expanded text out; the engine behind Autoconf.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-m4.png",
+   "keywords": [
+    "M4",
+    "Programming language",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/majordomus/",
    "lang": "en",
    "title": "Majordomus (technology)",
@@ -6041,6 +7888,21 @@
    "keywords": [
     "Majordomus",
     "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/makefile/",
+   "lang": "en",
+   "title": "Makefile (programming language)",
+   "description": "The build language of make: targets, the files they depend on and the commands that rebuild them when a dependency changes.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-makefile.png",
+   "keywords": [
+    "Makefile",
+    "Programming language",
     "Glossary",
     "Tomas Korcak"
    ]
@@ -6076,6 +7938,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/meilisearch/",
+   "lang": "en",
+   "title": "Meilisearch (technology)",
+   "description": "A fast open-source search engine with typo tolerance and filters, used for full-text search over collected evidence.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-meilisearch.png",
+   "keywords": [
+    "Meilisearch",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/mergers-and-acquisitions/",
    "lang": "en",
    "title": "Mergers and acquisitions (concept)",
@@ -6086,6 +7963,21 @@
    "keywords": [
     "Mergers and acquisitions",
     "Concept",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/mermaid/",
+   "lang": "en",
+   "title": "Mermaid (programming language)",
+   "description": "A text language for diagrams (flowcharts, sequences, state machines) rendered from Markdown-like source.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-mermaid.png",
+   "keywords": [
+    "Mermaid",
+    "Programming language",
     "Glossary",
     "Tomas Korcak"
    ]
@@ -6106,6 +7998,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/monte-carlo-simulation/",
+   "lang": "en",
+   "title": "Monte Carlo simulation (concept)",
+   "description": "Estimating an uncertain outcome by sampling its inputs many times and reading the distribution of the results.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-monte-carlo-simulation.png",
+   "keywords": [
+    "Monte Carlo simulation",
+    "Concept",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/nix/",
    "lang": "en",
    "title": "Nix (programming language)",
@@ -6116,6 +8023,36 @@
    "keywords": [
     "Nix",
     "Programming language",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/objective-c/",
+   "lang": "en",
+   "title": "Objective-C (programming language)",
+   "description": "C with Smalltalk-style messages and objects; the language of Apple's platforms before Swift.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-objective-c.png",
+   "keywords": [
+    "Objective-C",
+    "Programming language",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/ollama/",
+   "lang": "en",
+   "title": "Ollama (technology)",
+   "description": "A runtime that serves open language models on local hardware, so sensitive material never leaves the machine.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-ollama.png",
+   "keywords": [
+    "Ollama",
+    "Technology",
     "Glossary",
     "Tomas Korcak"
    ]
@@ -6151,6 +8088,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/openai-api/",
+   "lang": "en",
+   "title": "OpenAI API (technology)",
+   "description": "OpenAI's API to its language and embedding models, used for text generation, extraction and search.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-openai-api.png",
+   "keywords": [
+    "OpenAI API",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/openapi/",
    "lang": "en",
    "title": "OpenAPI (technology)",
@@ -6161,6 +8113,21 @@
    "keywords": [
     "OpenAPI",
     "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/openscad/",
+   "lang": "en",
+   "title": "OpenSCAD (programming language)",
+   "description": "A language for solid 3D models described as code: shapes combined by union, difference and transformation, ready for 3D printing.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-openscad.png",
+   "keywords": [
+    "OpenSCAD",
+    "Programming language",
     "Glossary",
     "Tomas Korcak"
    ]
@@ -6211,6 +8178,81 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/phoenix/",
+   "lang": "en",
+   "title": "Phoenix (technology)",
+   "description": "Elixir's web framework; LiveView renders interactive pages on the server and pushes only the changes over a socket.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-phoenix.png",
+   "keywords": [
+    "Phoenix",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/php/",
+   "lang": "en",
+   "title": "PHP (programming language)",
+   "description": "A scripting language made for the web, run on the server to produce pages.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-php.png",
+   "keywords": [
+    "PHP",
+    "Programming language",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/playwright/",
+   "lang": "en",
+   "title": "Playwright (technology)",
+   "description": "A browser automation library that drives Chromium, Firefox and WebKit for end-to-end tests and audits.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-playwright.png",
+   "keywords": [
+    "Playwright",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/plpgsql/",
+   "lang": "en",
+   "title": "PL/pgSQL (programming language)",
+   "description": "PostgreSQL's procedural language: functions and triggers that run SQL with variables, loops and conditions inside the database.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-plpgsql.png",
+   "keywords": [
+    "PL/pgSQL",
+    "Programming language",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/policy-as-code/",
+   "lang": "en",
+   "title": "Policy as code (concept)",
+   "description": "Rules kept as code beside what they govern, checked automatically on every change instead of read and remembered.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-policy-as-code.png",
+   "keywords": [
+    "Policy as code",
+    "Concept",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/postgis/",
    "lang": "en",
    "title": "PostGIS (technology)",
@@ -6241,6 +8283,36 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/public-registry/",
+   "lang": "en",
+   "title": "Public registry (concept)",
+   "description": "An official register a state keeps open to the public: companies, insolvencies, property, beneficial owners; the primary source of a due diligence.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-public-registry.png",
+   "keywords": [
+    "Public registry",
+    "Concept",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/pydantic/",
+   "lang": "en",
+   "title": "Pydantic (technology)",
+   "description": "Data validation for Python from type hints: models that parse, check and serialise input.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-pydantic.png",
+   "keywords": [
+    "Pydantic",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/python/",
    "lang": "en",
    "title": "Python (programming language)",
@@ -6251,6 +8323,36 @@
    "keywords": [
     "Python",
     "Programming language",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/r/",
+   "lang": "en",
+   "title": "R (programming language)",
+   "description": "A language and environment for statistics and data analysis, with plotting and a large library of statistical methods.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-r.png",
+   "keywords": [
+    "R (programming language)",
+    "Programming language",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/react/",
+   "lang": "en",
+   "title": "React (technology)",
+   "description": "A JavaScript library for user interfaces built from components that re-render from state.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-react.png",
+   "keywords": [
+    "React",
+    "Technology",
     "Glossary",
     "Tomas Korcak"
    ]
@@ -6271,6 +8373,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/regulatory-compliance/",
+   "lang": "en",
+   "title": "Regulatory compliance (concept)",
+   "description": "Meeting the obligations a regulation sets, and being able to show it with evidence, for example under NIS2 for cybersecurity.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-regulatory-compliance.png",
+   "keywords": [
+    "Regulatory compliance",
+    "Concept",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/repository/",
    "lang": "en",
    "title": "Repository (concept)",
@@ -6280,6 +8397,21 @@
    "og_image": "https://korczis.github.io/og/glossary-repository.png",
    "keywords": [
     "Repository",
+    "Concept",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/reputation-risk/",
+   "lang": "en",
+   "title": "Reputation risk (concept)",
+   "description": "The risk that what is said about an organisation or a person, true or not, costs it trust, customers or value; monitored through adverse media.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-reputation-risk.png",
+   "keywords": [
+    "Reputation risk",
     "Concept",
     "Glossary",
     "Tomas Korcak"
@@ -6331,6 +8463,51 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/sanctions-screening/",
+   "lang": "en",
+   "title": "Sanctions screening (concept)",
+   "description": "Checking people and companies against sanctions lists and politically exposed persons before a business relationship, as anti-money-laundering rules require.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-sanctions-screening.png",
+   "keywords": [
+    "Sanctions screening",
+    "Concept",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/scss/",
+   "lang": "en",
+   "title": "SCSS (programming language)",
+   "description": "CSS with variables, nesting and mixins, compiled by Sass into plain CSS.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-scss.png",
+   "keywords": [
+    "SCSS",
+    "Programming language",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/service/",
+   "lang": "en",
+   "title": "Service (concept)",
+   "description": "Something the owner offers a client: a problem it solves, the principle it rests on, the method and what is delivered.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-service.png",
+   "keywords": [
+    "Service",
+    "Concept",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/shell/",
    "lang": "en",
    "title": "Shell (programming language)",
@@ -6340,6 +8517,66 @@
    "og_image": "https://korczis.github.io/og/glossary-shell.png",
    "keywords": [
     "Shell",
+    "Programming language",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/skill/",
+   "lang": "en",
+   "title": "Skill (concept)",
+   "description": "A capability the owner practises, shown by public work and client use cases, and drawn on by the services.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-skill.png",
+   "keywords": [
+    "Skill",
+    "Concept",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/smarty/",
+   "lang": "en",
+   "title": "Smarty (programming language)",
+   "description": "A template engine for PHP that keeps presentation apart from application logic.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-smarty.png",
+   "keywords": [
+    "Smarty",
+    "Programming language",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/source-criticism/",
+   "lang": "en",
+   "title": "Source criticism (concept)",
+   "description": "Judging a source before believing it: who made it, when, how and why, and whether independent sources agree.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-source-criticism.png",
+   "keywords": [
+    "Source criticism",
+    "Concept",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/squirrel/",
+   "lang": "en",
+   "title": "Squirrel (programming language)",
+   "description": "A small embeddable scripting language; OpenTTD runs its AI players and game scripts in it.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-squirrel.png",
+   "keywords": [
+    "Squirrel",
     "Programming language",
     "Glossary",
     "Tomas Korcak"
@@ -6386,6 +8623,36 @@
    "keywords": [
     "Tailwind CSS",
     "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/tesseract/",
+   "lang": "en",
+   "title": "Tesseract (technology)",
+   "description": "An open-source OCR engine that reads text from scanned documents and images in many languages.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-tesseract.png",
+   "keywords": [
+    "Tesseract",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/tex/",
+   "lang": "en",
+   "title": "TeX (programming language)",
+   "description": "A typesetting language for documents and mathematics; LaTeX is the macro package most documents are written in.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-tex.png",
+   "keywords": [
+    "TeX",
+    "Programming language",
     "Glossary",
     "Tomas Korcak"
    ]
@@ -6446,6 +8713,36 @@
    "keywords": [
     "Web Audio",
     "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/web-scraping/",
+   "lang": "en",
+   "title": "Web scraping (concept)",
+   "description": "Extracting data from web pages by program, from simple requests to a driven browser, within the site's terms and the law.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-web-scraping.png",
+   "keywords": [
+    "Web scraping",
+    "Concept",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/xslt/",
+   "lang": "en",
+   "title": "XSLT (programming language)",
+   "description": "A language that transforms XML documents into other XML, HTML or text by templates matched against the input tree.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-xslt.png",
+   "keywords": [
+    "XSLT",
+    "Programming language",
     "Glossary",
     "Tomas Korcak"
    ]
@@ -6759,6 +9056,758 @@
     "Rust",
     "Ruby",
     "JavaScript"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/services/",
+   "lang": "en",
+   "title": "Services · Tomas Korcak",
+   "description": "Due diligence, M&A, digital investigation, forensics and reputation: the problem each service solves, its method, its skills and the evidence.",
+   "type": "collection",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/services.png",
+   "keywords": [
+    "Services",
+    "Corporate and counterparty due diligence",
+    "M&A pre-deal screening and analysis",
+    "Digital investigation and OSINT dossiers",
+    "Digital forensics and evidence preservation",
+    "Reputation intelligence and adverse-media monitoring",
+    "Sanctions, PEP and beneficial-ownership screening",
+    "Insolvency, litigation and register change monitoring",
+    "External attack surface and cyber-exposure assessment",
+    "Decision support and AI agents for analysts",
+    "Governed AI-assisted software delivery",
+    "Interactive data products and simulators",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/services/ai-engineering-governance/",
+   "lang": "en",
+   "title": "Governed AI-assisted software delivery · Tomas Korcak",
+   "description": "AI agents that write code under rules they cannot skip, with the evidence of every change kept.",
+   "type": "service",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/service-ai-engineering-governance.png",
+   "keywords": [
+    "Governed AI-assisted software delivery",
+    "Policy as code",
+    "LLM agents",
+    "Audit trail",
+    "Orchestration",
+    "AI transformation",
+    "Contestable decisions",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/services/attack-surface/",
+   "lang": "en",
+   "title": "External attack surface and cyber-exposure assessment · Tomas Korcak",
+   "description": "See your organisation, or an acquisition target, the way an attacker sees it.",
+   "type": "service",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/service-attack-surface.png",
+   "keywords": [
+    "External attack surface and cyber-exposure assessment",
+    "Infrastructure OSINT",
+    "Regulatory compliance mapping",
+    "Continuous monitoring",
+    "Risk scoring",
+    "Web automation and crawling",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/services/compliance-screening/",
+   "lang": "en",
+   "title": "Sanctions, PEP and beneficial-ownership screening · Tomas Korcak",
+   "description": "Screening that neither drowns you in false positives nor quietly misses a true match.",
+   "type": "service",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/service-compliance-screening.png",
+   "keywords": [
+    "Sanctions, PEP and beneficial-ownership screening",
+    "Sanctions and PEP screening",
+    "Ownership and link analysis",
+    "Entity resolution",
+    "Risk scoring",
+    "Contestable decisions",
+    "Regulatory compliance mapping",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/services/continuous-monitoring/",
+   "lang": "en",
+   "title": "Insolvency, litigation and register change monitoring · Tomas Korcak",
+   "description": "Learn about trouble at a counterparty the day it becomes public, not at the next annual review.",
+   "type": "service",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/service-continuous-monitoring.png",
+   "keywords": [
+    "Insolvency, litigation and register change monitoring",
+    "Insolvency monitoring",
+    "Continuous monitoring",
+    "Registry intelligence",
+    "Entity resolution",
+    "Orchestration",
+    "Risk scoring",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/services/decision-support-ai/",
+   "lang": "en",
+   "title": "Decision support and AI agents for analysts · Tomas Korcak",
+   "description": "AI that makes analysts faster without taking their signature away.",
+   "type": "service",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/service-decision-support-ai.png",
+   "keywords": [
+    "Decision support and AI agents for analysts",
+    "LLM agents",
+    "Decision support",
+    "Contestable decisions",
+    "AI transformation",
+    "Orchestration",
+    "Document extraction",
+    "Audit trail",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/services/digital-forensics/",
+   "lang": "en",
+   "title": "Digital forensics and evidence preservation · Tomas Korcak",
+   "description": "Findings that hold up when someone challenges them.",
+   "type": "service",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/service-digital-forensics.png",
+   "keywords": [
+    "Digital forensics and evidence preservation",
+    "Web and media forensics",
+    "Chain of custody",
+    "Infrastructure OSINT",
+    "Audit trail",
+    "Narrative and reputation analysis",
+    "Source reliability",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/services/digital-investigation/",
+   "lang": "en",
+   "title": "Digital investigation and OSINT dossiers · Tomas Korcak",
+   "description": "A complete, sourced picture of a person, a company or a network, from open sources only.",
+   "type": "service",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/service-digital-investigation.png",
+   "keywords": [
+    "Digital investigation and OSINT dossiers",
+    "OSINT investigation",
+    "Registry intelligence",
+    "Entity resolution",
+    "Ownership and link analysis",
+    "Infrastructure OSINT",
+    "Web and media forensics",
+    "Knowledge graph",
+    "Web automation and crawling",
+    "Continuous monitoring",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/services/due-diligence/",
+   "lang": "en",
+   "title": "Corporate and counterparty due diligence · Tomas Korcak",
+   "description": "Know who you are dealing with before you sign: one resolved entity, every source cross-checked, every red flag explained.",
+   "type": "service",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/service-due-diligence.png",
+   "keywords": [
+    "Corporate and counterparty due diligence",
+    "Due diligence",
+    "Registry intelligence",
+    "Entity resolution",
+    "Ownership and link analysis",
+    "Financial statement analysis",
+    "Risk scoring",
+    "Source reliability",
+    "Decision support",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/services/interactive-data-products/",
+   "lang": "en",
+   "title": "Interactive data products and simulators · Tomas Korcak",
+   "description": "Data and models people drive themselves, where every mark leads to its source.",
+   "type": "service",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/service-interactive-data-products.png",
+   "keywords": [
+    "Interactive data products and simulators",
+    "Interactive visualisation",
+    "Geospatial analysis",
+    "Data integration",
+    "Knowledge graph",
+    "Decision support",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/services/m-and-a/",
+   "lang": "en",
+   "title": "M&A pre-deal screening and analysis · Tomas Korcak",
+   "description": "A fast, evidenced answer before the term sheet: go, or first ask for these documents.",
+   "type": "service",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/service-m-and-a.png",
+   "keywords": [
+    "M&A pre-deal screening and analysis",
+    "M&A screening",
+    "Due diligence",
+    "Financial statement analysis",
+    "Ownership and link analysis",
+    "Market intelligence",
+    "Contestable decisions",
+    "Risk scoring",
+    "Data room",
+    "Decision support",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/services/reputation-intelligence/",
+   "lang": "en",
+   "title": "Reputation intelligence and adverse-media monitoring · Tomas Korcak",
+   "description": "Know what is being said, how credible it is, and when the narrative shifts.",
+   "type": "service",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/service-reputation-intelligence.png",
+   "keywords": [
+    "Reputation intelligence and adverse-media monitoring",
+    "Narrative and reputation analysis",
+    "Source reliability",
+    "Continuous monitoring",
+    "OSINT investigation",
+    "Decision support",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/skills/",
+   "lang": "en",
+   "title": "Skills · Tomas Korcak",
+   "description": "Every skill my services draw on, defined, with the public work that shows it, the client use cases and the technologies behind it.",
+   "type": "collection",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/skills.png",
+   "keywords": [
+    "Skills",
+    "Due diligence",
+    "M&A screening",
+    "Data room",
+    "Risk scoring",
+    "Market intelligence",
+    "Decision support",
+    "OSINT investigation",
+    "Insolvency monitoring",
+    "Entity resolution",
+    "Knowledge graph",
+    "Data integration",
+    "Audit trail",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/skills/ai-transformation/",
+   "lang": "en",
+   "title": "AI transformation · Tomas Korcak",
+   "description": "An AI transformation programme: where AI helps, the doctrine and governance it works under, and the roadmap that delivers it.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/skill-ai-transformation.png",
+   "keywords": [
+    "AI transformation",
+    "Decision support and AI agents for analysts",
+    "Governed AI-assisted software delivery",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/skills/audit-trail/",
+   "lang": "en",
+   "title": "Audit trail · Tomas Korcak",
+   "description": "Evidence and provenance kept for every step, with gates that refuse a silent loss, so a reviewer can retrace the work.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/skill-audit-trail.png",
+   "keywords": [
+    "Audit trail",
+    "Digital forensics and evidence preservation",
+    "Decision support and AI agents for analysts",
+    "Governed AI-assisted software delivery",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/skills/chain-of-custody/",
+   "lang": "en",
+   "title": "Chain of custody · Tomas Korcak",
+   "description": "Evidence that shows any tampering and can be replayed: every acquisition hashed and chained into an append-only store, verified and exported as a sealed package.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/skill-chain-of-custody.png",
+   "keywords": [
+    "Chain of custody",
+    "Digital forensics and evidence preservation",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/skills/change-monitoring/",
+   "lang": "en",
+   "title": "Continuous monitoring · Tomas Korcak",
+   "description": "Collection that runs all the time and reports only what matters: sources fingerprinted, changes classified by materiality, backpressure and retries so a failure…",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/skill-change-monitoring.png",
+   "keywords": [
+    "Continuous monitoring",
+    "Digital investigation and OSINT dossiers",
+    "Reputation intelligence and adverse-media monitoring",
+    "Insolvency, litigation and register change monitoring",
+    "External attack surface and cyber-exposure assessment",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/skills/compliance-mapping/",
+   "lang": "en",
+   "title": "Regulatory compliance mapping · Tomas Korcak",
+   "description": "Findings turned into regulatory evidence: exposures and vetting results mapped to the controls of cybersecurity and resilience regimes such as NIS2.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/skill-compliance-mapping.png",
+   "keywords": [
+    "Regulatory compliance mapping",
+    "Sanctions, PEP and beneficial-ownership screening",
+    "External attack surface and cyber-exposure assessment",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/skills/contestable-decisions/",
+   "lang": "en",
+   "title": "Contestable decisions · Tomas Korcak",
+   "description": "Decisions that can be challenged: competing hypotheses scored, uncertainty split into what more evidence can reduce and what it cannot, dissent and a named…",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/skill-contestable-decisions.png",
+   "keywords": [
+    "Contestable decisions",
+    "M&A pre-deal screening and analysis",
+    "Sanctions, PEP and beneficial-ownership screening",
+    "Decision support and AI agents for analysts",
+    "Governed AI-assisted software delivery",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/skills/data-integration/",
+   "lang": "en",
+   "title": "Data integration · Tomas Korcak",
+   "description": "Connectors to registers and APIs, with ingestion, caching and quotas, so every source arrives in one consistent shape.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/skill-data-integration.png",
+   "keywords": [
+    "Data integration",
+    "Interactive data products and simulators",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/skills/data-room/",
+   "lang": "en",
+   "title": "Data room · Tomas Korcak",
+   "description": "A virtual data room: documents sorted, indexed and searchable for every party of a transaction, with views per role.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/skill-data-room.png",
+   "keywords": [
+    "Data room",
+    "M&A pre-deal screening and analysis",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/skills/decision-support/",
+   "lang": "en",
+   "title": "Decision support · Tomas Korcak",
+   "description": "Reports, dashboards and one-page briefs that turn the evidence into a decision for the people who sign it.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/skill-decision-support.png",
+   "keywords": [
+    "Decision support",
+    "Corporate and counterparty due diligence",
+    "M&A pre-deal screening and analysis",
+    "Reputation intelligence and adverse-media monitoring",
+    "Decision support and AI agents for analysts",
+    "Interactive data products and simulators",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/skills/document-extraction/",
+   "lang": "en",
+   "title": "Document extraction · Tomas Korcak",
+   "description": "Reading scanned and digital documents with OCR and vision models into structured, checked fields.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/skill-document-extraction.png",
+   "keywords": [
+    "Document extraction",
+    "Decision support and AI agents for analysts",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/skills/due-diligence/",
+   "lang": "en",
+   "title": "Due diligence · Tomas Korcak",
+   "description": "Technical, data and background due diligence of a target: ownership, people, assets and red flags, each finding with its source.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/skill-due-diligence.png",
+   "keywords": [
+    "Due diligence",
+    "Corporate and counterparty due diligence",
+    "M&A pre-deal screening and analysis",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/skills/entity-resolution/",
+   "lang": "en",
+   "title": "Entity resolution · Tomas Korcak",
+   "description": "Matching records that name the same company or person across sources, by identifier first and by fuzzy evidence second.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/skill-entity-resolution.png",
+   "keywords": [
+    "Entity resolution",
+    "Corporate and counterparty due diligence",
+    "Digital investigation and OSINT dossiers",
+    "Sanctions, PEP and beneficial-ownership screening",
+    "Insolvency, litigation and register change monitoring",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/skills/financial-analysis/",
+   "lang": "en",
+   "title": "Financial statement analysis · Tomas Korcak",
+   "description": "Financial health read from filed statements: several years extracted from registry documents into ratios, trends and the questions they raise.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/skill-financial-analysis.png",
+   "keywords": [
+    "Financial statement analysis",
+    "Corporate and counterparty due diligence",
+    "M&A pre-deal screening and analysis",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/skills/geospatial-analysis/",
+   "lang": "en",
+   "title": "Geospatial analysis · Tomas Korcak",
+   "description": "Places as data: geocoding, spatial queries and maps that put events, assets and registers on the ground.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/skill-geospatial-analysis.png",
+   "keywords": [
+    "Geospatial analysis",
+    "Interactive data products and simulators",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/skills/infrastructure-osint/",
+   "lang": "en",
+   "title": "Infrastructure OSINT · Tomas Korcak",
+   "description": "Domains, IP addresses and certificates investigated from the outside: Whois and DNS history, certificate transparency, subdomains and exposed services.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/skill-infrastructure-osint.png",
+   "keywords": [
+    "Infrastructure OSINT",
+    "Digital investigation and OSINT dossiers",
+    "Digital forensics and evidence preservation",
+    "External attack surface and cyber-exposure assessment",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/skills/insolvency-monitoring/",
+   "lang": "en",
+   "title": "Insolvency monitoring · Tomas Korcak",
+   "description": "Monitoring of a public insolvency register at scale: debtors, creditors' claims and every change, checked for completeness.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/skill-insolvency-monitoring.png",
+   "keywords": [
+    "Insolvency monitoring",
+    "Insolvency, litigation and register change monitoring",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/skills/interactive-visualisation/",
+   "lang": "en",
+   "title": "Interactive visualisation · Tomas Korcak",
+   "description": "Data and models a reader drives: simulators, explorable explanations and dashboards where every mark leads to its source.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/skill-interactive-visualisation.png",
+   "keywords": [
+    "Interactive visualisation",
+    "Interactive data products and simulators",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/skills/knowledge-graph/",
+   "lang": "en",
+   "title": "Knowledge graph · Tomas Korcak",
+   "description": "A graph of entities and their relations, built from the evidence and queried to find the links a table hides.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/skill-knowledge-graph.png",
+   "keywords": [
+    "Knowledge graph",
+    "Digital investigation and OSINT dossiers",
+    "Interactive data products and simulators",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/skills/llm-agents/",
+   "lang": "en",
+   "title": "LLM agents · Tomas Korcak",
+   "description": "Agents on large language models that plan, call tools and hand their work over with proof, under one policy.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/skill-llm-agents.png",
+   "keywords": [
+    "LLM agents",
+    "Decision support and AI agents for analysts",
+    "Governed AI-assisted software delivery",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/skills/m-and-a-screening/",
+   "lang": "en",
+   "title": "M&A screening · Tomas Korcak",
+   "description": "Screening of an acquisition or investment: the transaction's context, its parties, financing and valuation inputs.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/skill-m-and-a-screening.png",
+   "keywords": [
+    "M&A screening",
+    "M&A pre-deal screening and analysis",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/skills/market-intelligence/",
+   "lang": "en",
+   "title": "Market intelligence · Tomas Korcak",
+   "description": "Comparables, prices and competitors gathered from public sources into a market picture a decision can rest on.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/skill-market-intelligence.png",
+   "keywords": [
+    "Market intelligence",
+    "M&A pre-deal screening and analysis",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/skills/media-forensics/",
+   "lang": "en",
+   "title": "Web and media forensics · Tomas Korcak",
+   "description": "Where web content and images came from and how they changed: metadata, reverse image search and archive history, kept apart from opinion.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/skill-media-forensics.png",
+   "keywords": [
+    "Web and media forensics",
+    "Digital investigation and OSINT dossiers",
+    "Digital forensics and evidence preservation",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/skills/narrative-analysis/",
+   "lang": "en",
+   "title": "Narrative and reputation analysis · Tomas Korcak",
+   "description": "Real signal told apart from noise and from a coordinated campaign: adverse media scored for strength, coherence and manipulation, with early warning when the…",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/skill-narrative-analysis.png",
+   "keywords": [
+    "Narrative and reputation analysis",
+    "Digital forensics and evidence preservation",
+    "Reputation intelligence and adverse-media monitoring",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/skills/orchestration/",
+   "lang": "en",
+   "title": "Orchestration · Tomas Korcak",
+   "description": "Orchestration of pipelines and agents: queues, workflows and schedules that run many steps reliably and in order.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/skill-orchestration.png",
+   "keywords": [
+    "Orchestration",
+    "Insolvency, litigation and register change monitoring",
+    "Decision support and AI agents for analysts",
+    "Governed AI-assisted software delivery",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/skills/osint-investigation/",
+   "lang": "en",
+   "title": "OSINT investigation · Tomas Korcak",
+   "description": "Investigation from open sources and public registers: companies, people and their links, every claim traced to its source.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/skill-osint-investigation.png",
+   "keywords": [
+    "OSINT investigation",
+    "Digital investigation and OSINT dossiers",
+    "Reputation intelligence and adverse-media monitoring",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/skills/ownership-analysis/",
+   "lang": "en",
+   "title": "Ownership and link analysis · Tomas Korcak",
+   "description": "Tracing control and hidden relationships: ownership chains walked to the ultimate owner, officers and addresses shared across companies, offshore layers and…",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/skill-ownership-analysis.png",
+   "keywords": [
+    "Ownership and link analysis",
+    "Corporate and counterparty due diligence",
+    "M&A pre-deal screening and analysis",
+    "Digital investigation and OSINT dossiers",
+    "Sanctions, PEP and beneficial-ownership screening",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/skills/policy-as-code/",
+   "lang": "en",
+   "title": "Policy as code · Tomas Korcak",
+   "description": "Rules written as code and enforced by gates: what an AI agent or a developer may change is checked before the change lands, with the evidence kept.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/skill-policy-as-code.png",
+   "keywords": [
+    "Policy as code",
+    "Governed AI-assisted software delivery",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/skills/registry-intelligence/",
+   "lang": "en",
+   "title": "Registry intelligence · Tomas Korcak",
+   "description": "Public registers turned into reliable, structured data: native connectors with rate limits and caching, and a positive control before a \"nothing found\" is believed.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/skill-registry-intelligence.png",
+   "keywords": [
+    "Registry intelligence",
+    "Corporate and counterparty due diligence",
+    "Digital investigation and OSINT dossiers",
+    "Insolvency, litigation and register change monitoring",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/skills/risk-scoring/",
+   "lang": "en",
+   "title": "Risk scoring · Tomas Korcak",
+   "description": "Scoring and ranking of risks from measured signals, so the review starts with what matters most.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/skill-risk-scoring.png",
+   "keywords": [
+    "Risk scoring",
+    "Corporate and counterparty due diligence",
+    "M&A pre-deal screening and analysis",
+    "Sanctions, PEP and beneficial-ownership screening",
+    "Insolvency, litigation and register change monitoring",
+    "External attack surface and cyber-exposure assessment",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/skills/sanctions-screening/",
+   "lang": "en",
+   "title": "Sanctions and PEP screening · Tomas Korcak",
+   "description": "Screening against sanctions and politically exposed persons with calibrated name matching: a match, a near-miss for a human to review, or nothing, and a failed…",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/skill-sanctions-screening.png",
+   "keywords": [
+    "Sanctions and PEP screening",
+    "Sanctions, PEP and beneficial-ownership screening",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/skills/source-reliability/",
+   "lang": "en",
+   "title": "Source reliability · Tomas Korcak",
+   "description": "How far each source can be trusted and where sources disagree: reliability per source, an agreement matrix, coverage gaps found before they mislead.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/skill-source-reliability.png",
+   "keywords": [
+    "Source reliability",
+    "Corporate and counterparty due diligence",
+    "Digital forensics and evidence preservation",
+    "Reputation intelligence and adverse-media monitoring",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/skills/web-automation/",
+   "lang": "en",
+   "title": "Web automation and crawling · Tomas Korcak",
+   "description": "Data out of sources that are hard to reach: policy-bound browser automation and crawlers that limit themselves, with every page kept as evidence.",
+   "type": "skill",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/skill-web-automation.png",
+   "keywords": [
+    "Web automation and crawling",
+    "Digital investigation and OSINT dossiers",
+    "External attack surface and cyber-exposure assessment",
+    "Tomas Korcak"
    ]
   },
   {

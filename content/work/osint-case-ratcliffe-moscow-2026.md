@@ -17,7 +17,7 @@ og_description = "osint-case-ratcliffe-moscow-2026: Security and OSINT in HTML, 
 og_image = "og/work-osint-case-ratcliffe-moscow-2026.png"
 schema = "project"
 keywords = ["osint-case-ratcliffe-moscow-2026", "Security and OSINT", "HTML", "Python", "Shell", "claude-code", "intelligence-analysis", "open-source-intelligence", "osint", "2026", "GitHub", "Tomas Korcak", "korczis"]
-terms = ["html", "python", "shell", "osint", "due-diligence", "mergers-and-acquisitions", "virtual-data-room", "risk-assessment", "market-intelligence", "decision-support-system", "insolvency", "record-linkage", "knowledge-graph", "data-integration", "audit-trail", "information-extraction", "orchestration", "github-pages", "repository", "commit", "open-source"]
+terms = ["html", "python", "shell", "just", "osint", "due-diligence", "mergers-and-acquisitions", "virtual-data-room", "risk-assessment", "market-intelligence", "decision-support-system", "insolvency", "record-linkage", "knowledge-graph", "data-integration", "audit-trail", "information-extraction", "orchestration", "github-pages", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,7 +28,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**osint-case-ratcliffe-moscow-2026** is a project in [Security and OSINT](@/projects/security.md). Its code is written mainly in [HTML](@/glossary/html.md) (74 %), with [Python](@/glossary/python.md), [Shell](@/glossary/shell.md) and Just.
+**osint-case-ratcliffe-moscow-2026** is a project in [Security and OSINT](@/projects/security.md). Its code is written mainly in [HTML](@/glossary/html.md) (74 %), with [Python](@/glossary/python.md), [Shell](@/glossary/shell.md) and [Just](@/glossary/just.md).
 
 The [repository](@/glossary/repository.md) was created on 26 August 2026; its latest [commit](@/glossary/commit.md) is from 26 August 2026. It reads “fix(site): claim pages for object-shaped findings (gdelt\_sweep)”. That places it among the projects active in the last 12 months.
 

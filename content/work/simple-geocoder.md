@@ -17,7 +17,7 @@ og_description = "simple_geocoder: Tools in Elixir, Shell and HTML+EEX, 2024, ac
 og_image = "og/work-simple-geocoder.png"
 schema = "project"
 keywords = ["simple_geocoder", "Tools", "Elixir", "Shell", "HTML+EEX", "2024", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["elixir", "shell", "open-source", "repository", "commit"]
+terms = ["elixir", "shell", "eex", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -29,7 +29,7 @@ height = "md"
 tone = "night"
 vars = { cadence = "every 6 hours" }
 +++
-**simple\_geocoder** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (92.2 %), with [Shell](@/glossary/shell.md) and HTML+EEX.
+**simple\_geocoder** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (92.2 %), with [Shell](@/glossary/shell.md) and [HTML+EEX](@/glossary/eex.md).
 
 The [repository](@/glossary/repository.md) was created on 23 April 2024; its latest [commit](@/glossary/commit.md) is from 24 April 2024. It reads “Disable build image”. That places it among the projects active in the last 48 months.
 

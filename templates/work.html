@@ -106,6 +106,19 @@
     {% </card> %}
   </div>
 
+  {#- The README, live: the repository's own README as its forge serves it now, rendered in the browser
+      (static/js/components/readme.js), so this page is as current as the repository. The excerpt
+      above is the measured fallback for readers and crawlers without JavaScript. #}
+  {%- if r.hosts.github is defined %}{% set forge = "GitHub" %}{% else %}{% set forge = "GitLab" %}{% endif %}
+  {% <card tag="article" labelledby="readme-title" attrs={"x-data='readme(" ~ r.hosts | json_encode ~ ")'"}> %}
+    {{ <card_head id="readme-title" title={trans(key="readme_title", lang=lang)} lead={trans(key="readme_lead", lang=lang) | replace(from="{forge}", to=forge)} action={trans(key="readme_open", lang=lang)} href={primary} icon="external" /> }}
+    <p class="text-sm text-gray-600 dark:text-gray-400" x-show="state === 'loading'" role="status">{{ trans(key="readme_loading", lang=lang) | safe }}</p>
+    <p class="text-sm text-gray-600 dark:text-gray-400" x-cloak x-show="state === 'missing'">{{ trans(key="readme_missing", lang=lang) | safe }}</p>
+    <p class="text-sm text-gray-600 dark:text-gray-400" x-cloak x-show="state === 'failed'" role="alert">{{ trans(key="readme_failed", lang=lang) | safe }}</p>
+    <noscript><p class="text-sm text-gray-600 dark:text-gray-400">{{ trans(key="readme_noscript", lang=lang) | safe }}</p></noscript>
+    <div x-ref="body" x-cloak x-show="state === 'ready'" class="format format-blue max-w-none dark:format-invert"></div>
+  {% </card> %}
+
   {#- The project's pulse, declared in its front matter ([[extra.viz]], written by build-work). #}
   {%- include "partials/viz-grid.html" %}
 
@@ -116,3 +129,9 @@
   {{ <provenance date={measured_text} rule={rc.rule} lang={lang} /> }}
 </div>
 {% endblock content %}
+
+{% block scripts %}
+  <script src="{{ get_url(path='js/vendor/marked.min.js', cachebust=true) }}" defer></script>
+  <script src="{{ get_url(path='js/vendor/purify.min.js', cachebust=true) }}" defer></script>
+  <script src="{{ get_url(path='js/components/readme.js', cachebust=true) }}" defer></script>
+{% endblock scripts %}

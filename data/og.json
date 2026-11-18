@@ -123,8 +123,8 @@
    "by": "pngquant 3.0.3"
   },
   "cs-glossary": {
-   "svg": "8e30f80dc803df15",
-   "png": "e83975fecca02bbf",
+   "svg": "9d8a446050e14d3c",
+   "png": "5fcb71af4a2e43da",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-ai-agent": {
@@ -142,9 +142,34 @@
    "png": "404ba2d8e0eb5627",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-apacheconf": {
+   "svg": "6852dd06bb2dbcda",
+   "png": "74392bbf9b299dea",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-arduino": {
+   "svg": "59ad6a13771e5bb8",
+   "png": "a58e2bf0abafe61c",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-attack-surface": {
+   "svg": "3a54681bc92a52f0",
+   "png": "a1998232f5633a8c",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-audit-trail": {
    "svg": "6d285c5887856d56",
    "png": "7212291843a638e3",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-beneficial-ownership": {
+   "svg": "f806a25f88bf29c6",
+   "png": "05c712f9528896f1",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-broadway": {
+   "svg": "36bc1cdbe4c4edf0",
+   "png": "6f620c6852e91c66",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-c": {
@@ -152,14 +177,44 @@
    "png": "f5ee2da771e99687",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-chain-of-custody": {
+   "svg": "2391fcaf3a05704a",
+   "png": "39661c4ff500fb2e",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-change-detection": {
+   "svg": "8d7389f6f5fe4e81",
+   "png": "378518d0c7127123",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-chart-js": {
    "svg": "45dd6ee87367dd78",
    "png": "4ded889fadf6605b",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-claude-api": {
+   "svg": "51e309e7e7a45fdd",
+   "png": "3e7064e28222b657",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-cmake": {
+   "svg": "5452958fee0c4047",
+   "png": "1c120b70c9bbbb06",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-coffeescript": {
+   "svg": "e8ebe1d59f6d341a",
+   "png": "27109b3b4676b9ba",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-commit": {
    "svg": "53cf4d95857fb8a3",
    "png": "991b277e623a1837",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-contestability": {
+   "svg": "01909465e23ddecc",
+   "png": "67dbb9f0767631d2",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-cpp": {
@@ -202,6 +257,11 @@
    "png": "8c01106672968ab0",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-digital-forensics": {
+   "svg": "c0fe209e5586ec23",
+   "png": "489638ff188c0f5a",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-dockerfile": {
    "svg": "1d995089c73e56f6",
    "png": "75e97111e7a0678f",
@@ -212,14 +272,34 @@
    "png": "82c4210265ec8003",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-eex": {
+   "svg": "8a38c6c1ffb6a976",
+   "png": "81a356347e38baf8",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-elixir": {
    "svg": "21f8a66857699820",
    "png": "cf26b98aedcc8e6d",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-elm": {
+   "svg": "7a6e27431482055a",
+   "png": "49f40b32aff64694",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-erlang": {
    "svg": "f3ffd962e8778ce8",
    "png": "2655729399459c2a",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-fastapi": {
+   "svg": "0c8d12d0117a9376",
+   "png": "e74841bc32833118",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-financial-statement-analysis": {
+   "svg": "b1c9ec0df0accfc8",
+   "png": "bb7c7ee635d8b652",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-flowbite-pro": {
@@ -240,6 +320,11 @@
   "cs-glossary-gis": {
    "svg": "da5564c2ce6c5086",
    "png": "06893fbcb6cf07e8",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-github-actions": {
+   "svg": "3dbfa45f91282ef2",
+   "png": "913b987e6b953946",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-github-pages": {
@@ -287,14 +372,39 @@
    "png": "74821abf61741be5",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-just": {
+   "svg": "078b5aa6b97caea2",
+   "png": "0bfbe455157be6aa",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-knowledge-graph": {
    "svg": "d0b4f23e4fa4a176",
    "png": "31626244594df303",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-kubernetes": {
+   "svg": "2fbaa5ee85b687e3",
+   "png": "800af484b291e9b6",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-lean": {
+   "svg": "1981e01dc5fb85df",
+   "png": "2776096e2a984be8",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-m4": {
+   "svg": "ca23f5785a24a924",
+   "png": "1426f65c925f2785",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-majordomus": {
    "svg": "383b8d5bbd0733bf",
    "png": "b8c410a485a64162",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-makefile": {
+   "svg": "20aa04dec33a4632",
+   "png": "3da28db9c0825082",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-market-intelligence": {
@@ -307,9 +417,19 @@
    "png": "57f8df79e0059d4c",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-meilisearch": {
+   "svg": "d5baf102419d2252",
+   "png": "5eb8064c46a4626b",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-mergers-and-acquisitions": {
    "svg": "0da888c3c2a82e21",
    "png": "c6c32ae57ed53318",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-mermaid": {
+   "svg": "bdf00134cd39df69",
+   "png": "bcbdc16f4c594978",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-mirror": {
@@ -317,9 +437,24 @@
    "png": "533b48240df7a834",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-monte-carlo-simulation": {
+   "svg": "f501cddf60bd5706",
+   "png": "63866802b4c96c21",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-nix": {
    "svg": "0aa2eac1bf7749f3",
    "png": "0e28b2b3b7b3c0ae",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-objective-c": {
+   "svg": "34faa16fcd5c254d",
+   "png": "b42c20d8a8eab37f",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-ollama": {
+   "svg": "ce330aee40967f8f",
+   "png": "8c1d32b0e0d72c4b",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-open-graph": {
@@ -332,9 +467,19 @@
    "png": "358c5ac7c0300881",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-openai-api": {
+   "svg": "ce2a415142ff34e4",
+   "png": "d0f15a0046f94048",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-openapi": {
    "svg": "41ab477ac2aac5a0",
    "png": "a1dbbd063534bce4",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-openscad": {
+   "svg": "68b30cb78fb4a0c3",
+   "png": "4fb2f77d0300af6f",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-orchestration": {
@@ -352,6 +497,31 @@
    "png": "9ca4c5950b960451",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-phoenix": {
+   "svg": "e272f9ebc01bea26",
+   "png": "c75309e30ae51bc9",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-php": {
+   "svg": "a1ac9973c6f1065c",
+   "png": "2a3ec8f9b10d0b9d",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-playwright": {
+   "svg": "7b0309c861f6408f",
+   "png": "08e5f5cc8328fe0a",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-plpgsql": {
+   "svg": "4774418c3dc34104",
+   "png": "7d875cce1e8fda6f",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-policy-as-code": {
+   "svg": "bbc9bb64dd6857c4",
+   "png": "f9d7fb65f76e7dc0",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-postgis": {
    "svg": "ca4a8128db783013",
    "png": "8fee968147c8e5d8",
@@ -362,9 +532,29 @@
    "png": "310a38692fe0f26b",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-public-registry": {
+   "svg": "5777cfb3f7e76713",
+   "png": "444d2b7828262ad9",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-pydantic": {
+   "svg": "979d8e3c0ef803c4",
+   "png": "4ca36ef2fd2ea841",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-python": {
    "svg": "f5f28534f7e8d103",
    "png": "75c2682381bcab05",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-r": {
+   "svg": "a81ef66f66bdffea",
+   "png": "0deaca6c2569f862",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-react": {
+   "svg": "5b291067060578cd",
+   "png": "d759f5c892f0552b",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-record-linkage": {
@@ -372,9 +562,19 @@
    "png": "d6923210cd930fe9",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-regulatory-compliance": {
+   "svg": "73b8d0f315520839",
+   "png": "5c9270a284342317",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-repository": {
    "svg": "56f9f6a1e1cb05b4",
    "png": "ac33109fcb100d72",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-reputation-risk": {
+   "svg": "ac4be4ec4d78bb13",
+   "png": "7b31400afbf46018",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-risk-assessment": {
@@ -392,9 +592,44 @@
    "png": "11459bdfcabde4bb",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-sanctions-screening": {
+   "svg": "de3b8c44061535cc",
+   "png": "0fd47376f5016316",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-scss": {
+   "svg": "f22d490bc144116d",
+   "png": "9ce24d71c0e08d1c",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-service": {
+   "svg": "f527e3275621b1b1",
+   "png": "9b2862022947a2ef",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-shell": {
    "svg": "ad812298eea4c354",
    "png": "69845634fcd6ebfe",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-skill": {
+   "svg": "e2273668f2f60552",
+   "png": "320286e8fc4e9ad5",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-smarty": {
+   "svg": "21656f1a03e1970a",
+   "png": "efa900ccdf95c509",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-source-criticism": {
+   "svg": "2f5a4795250e2e73",
+   "png": "5c86ee2b2cb21ec3",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-squirrel": {
+   "svg": "69ddf2545e2b9e07",
+   "png": "0da1190ab9a4721c",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-static-site-generator": {
@@ -410,6 +645,16 @@
   "cs-glossary-tailwind-css": {
    "svg": "91184c9a92d0f7b2",
    "png": "f8954ed71806de2d",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-tesseract": {
+   "svg": "2f4f009380330101",
+   "png": "43522c4b379dd69a",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-tex": {
+   "svg": "ef50963b82911a7a",
+   "png": "fe748de6a8fe6fd5",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-typescript": {
@@ -430,6 +675,16 @@
   "cs-glossary-web-audio": {
    "svg": "ba384bd6504679b1",
    "png": "baa2b52d4f82851e",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-web-scraping": {
+   "svg": "157a710c2f2eee75",
+   "png": "b94803dad504fe22",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-xslt": {
+   "svg": "480d87c8506b1f54",
+   "png": "ce00584b3ec1decd",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-zola": {
@@ -460,6 +715,231 @@
   "cs-repositories": {
    "svg": "90763d5b6d027bf9",
    "png": "64448de1edbd21c8",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-service-ai-engineering-governance": {
+   "svg": "720e4e84b3dd56f1",
+   "png": "1005167ff27c83da",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-service-attack-surface": {
+   "svg": "a7c246cf97ce6699",
+   "png": "c1544d38a4d50707",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-service-compliance-screening": {
+   "svg": "d1e847c4b28e376b",
+   "png": "f5f9cc09627e66fd",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-service-continuous-monitoring": {
+   "svg": "88a7266832d89779",
+   "png": "508e52a3e2f07178",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-service-decision-support-ai": {
+   "svg": "ba1368a07a8fb067",
+   "png": "f920b551324e7061",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-service-digital-forensics": {
+   "svg": "3efbb8295e2d089e",
+   "png": "744cee77cf600d0d",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-service-digital-investigation": {
+   "svg": "19d87ac90aae6119",
+   "png": "75fa9377bc782f7f",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-service-due-diligence": {
+   "svg": "a221f47530d52746",
+   "png": "ba2e736de0addd37",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-service-interactive-data-products": {
+   "svg": "a86ac4ad94baf8ff",
+   "png": "57909b9674468423",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-service-m-and-a": {
+   "svg": "77a9a89b19097a82",
+   "png": "a7f2291669f55682",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-service-reputation-intelligence": {
+   "svg": "cf855db7b005b469",
+   "png": "7097081897b8d792",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-services": {
+   "svg": "39b76a383fba652a",
+   "png": "5d3e6dafaea42ae7",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-skill-ai-transformation": {
+   "svg": "56b70d25f35e94ab",
+   "png": "f4f5f1a4ddcdb190",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-skill-audit-trail": {
+   "svg": "2aae8481dc2dbb6f",
+   "png": "651c3ad1927f4d05",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-skill-chain-of-custody": {
+   "svg": "d24887d4137aa1b8",
+   "png": "0f3ece3333ee1495",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-skill-change-monitoring": {
+   "svg": "0adfdf7218c3a8e8",
+   "png": "ece4bb3ad7b042e5",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-skill-compliance-mapping": {
+   "svg": "03543a8a16d9cea0",
+   "png": "0d754416d977599b",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-skill-contestable-decisions": {
+   "svg": "2ab7c23dce9ed47d",
+   "png": "0c0d40766849bcd4",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-skill-data-integration": {
+   "svg": "e69f0b6940168784",
+   "png": "df7945951c2fdbf7",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-skill-data-room": {
+   "svg": "8ddb045ed06de25b",
+   "png": "8504e4aecc125a66",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-skill-decision-support": {
+   "svg": "999db0a1653231a7",
+   "png": "496ae3258b341f59",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-skill-document-extraction": {
+   "svg": "9fba1e585daef244",
+   "png": "2c5582edbab536db",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-skill-due-diligence": {
+   "svg": "f6a3cde181d58d5a",
+   "png": "55107b8b9c9d7e0f",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-skill-entity-resolution": {
+   "svg": "5fff3b6b2439f8a8",
+   "png": "18f259b6cb51020c",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-skill-financial-analysis": {
+   "svg": "0ab1e92d51876628",
+   "png": "d9a2ae99d8ad90fb",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-skill-geospatial-analysis": {
+   "svg": "76c60dd869c85709",
+   "png": "f3e9de400837b3f1",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-skill-infrastructure-osint": {
+   "svg": "65e0d97b4e11af8a",
+   "png": "65309fa19401fe0b",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-skill-insolvency-monitoring": {
+   "svg": "d960771748efca55",
+   "png": "07693c16194d3808",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-skill-interactive-visualisation": {
+   "svg": "208c42c49eb8b975",
+   "png": "19644dde7b3deb0a",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-skill-knowledge-graph": {
+   "svg": "0f03ef2025479149",
+   "png": "20aaf72570e791c4",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-skill-llm-agents": {
+   "svg": "82ca66b10db960e6",
+   "png": "a1a424e41756b052",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-skill-m-and-a-screening": {
+   "svg": "43e5427309d7de18",
+   "png": "bcf2e707821a0048",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-skill-market-intelligence": {
+   "svg": "e68cf7cc3209e4d4",
+   "png": "a5031a5b106da9b4",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-skill-media-forensics": {
+   "svg": "478919a14758c293",
+   "png": "628f810566a3d25b",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-skill-narrative-analysis": {
+   "svg": "5978ef91c746710e",
+   "png": "b468e28695755215",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-skill-orchestration": {
+   "svg": "f091cfe764de0c68",
+   "png": "44de21f0145919f0",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-skill-osint-investigation": {
+   "svg": "3680585183142a32",
+   "png": "1631f34cebe1f45e",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-skill-ownership-analysis": {
+   "svg": "3d31609aaa9e7a1e",
+   "png": "f35d3aa74eb6d13a",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-skill-policy-as-code": {
+   "svg": "e7bafee2cf39a449",
+   "png": "aec217451f3419c1",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-skill-registry-intelligence": {
+   "svg": "ddd015f76c1ce8be",
+   "png": "6f8a6bd6e90abee2",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-skill-risk-scoring": {
+   "svg": "2acb00ebade98524",
+   "png": "3c2e15a994efe8ee",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-skill-sanctions-screening": {
+   "svg": "f08de904b807242d",
+   "png": "a351b54d5fdc1996",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-skill-source-reliability": {
+   "svg": "d43063d3b1039355",
+   "png": "618a6f7b952ee662",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-skill-web-automation": {
+   "svg": "74ff6b4850fe615f",
+   "png": "81815b20797297cf",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-skills": {
+   "svg": "4840d11aad788a3b",
+   "png": "b2d619581bd58b6d",
    "by": "pngquant 3.0.3"
   },
   "cs-stack": {
@@ -1498,8 +1978,8 @@
    "by": "pngquant 3.0.3"
   },
   "glossary": {
-   "svg": "07ec4fa220015373",
-   "png": "f0ef729ac0b59e10",
+   "svg": "8a7e7d4a2e11abf7",
+   "png": "f606af0b78c3e363",
    "by": "pngquant 3.0.3"
   },
   "glossary-ai-agent": {
@@ -1517,9 +1997,34 @@
    "png": "f34952329413965f",
    "by": "pngquant 3.0.3"
   },
+  "glossary-apacheconf": {
+   "svg": "3cbca97edfebb498",
+   "png": "a802574583dea9a7",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-arduino": {
+   "svg": "99c251180d2d1f11",
+   "png": "a83edde6c0d7c26a",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-attack-surface": {
+   "svg": "c209e6df76e7f6f9",
+   "png": "0fd39f0e57d5f23f",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-audit-trail": {
    "svg": "dfd9f07c65aec1c6",
    "png": "f8dda2501fd6ffc3",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-beneficial-ownership": {
+   "svg": "c30eff8670983d70",
+   "png": "b352b02b000d7133",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-broadway": {
+   "svg": "38a130f0c3654298",
+   "png": "4deec3373411b8fd",
    "by": "pngquant 3.0.3"
   },
   "glossary-c": {
@@ -1527,14 +2032,44 @@
    "png": "9ab2df1672a346f2",
    "by": "pngquant 3.0.3"
   },
+  "glossary-chain-of-custody": {
+   "svg": "d1a5b13435e791b8",
+   "png": "0feccd2d406137d6",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-change-detection": {
+   "svg": "c26522375d610c45",
+   "png": "d38acfa9fc2c84bc",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-chart-js": {
    "svg": "2e56274d242dcdcc",
    "png": "cc463057861cda16",
    "by": "pngquant 3.0.3"
   },
+  "glossary-claude-api": {
+   "svg": "5726ddcc953f27a6",
+   "png": "7f7e3ecf7d91757a",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-cmake": {
+   "svg": "8c2d1d86673e7a5b",
+   "png": "52960bd377cf48ad",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-coffeescript": {
+   "svg": "fc56d0aeea232f52",
+   "png": "bf51d1ca7a2526f5",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-commit": {
    "svg": "d141a6218967c7e9",
    "png": "450c27f0659c4d83",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-contestability": {
+   "svg": "ce17defda42d9f5b",
+   "png": "9ed5ec93f8c72cb5",
    "by": "pngquant 3.0.3"
   },
   "glossary-cpp": {
@@ -1577,6 +2112,11 @@
    "png": "a27dc61af82cfeb7",
    "by": "pngquant 3.0.3"
   },
+  "glossary-digital-forensics": {
+   "svg": "d1fb779fcd0eaf39",
+   "png": "4006cea1590d5744",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-dockerfile": {
    "svg": "56d8205eb9b48eee",
    "png": "cdd40363c1784453",
@@ -1587,14 +2127,34 @@
    "png": "172d14ecdda9a497",
    "by": "pngquant 3.0.3"
   },
+  "glossary-eex": {
+   "svg": "12be1cefa8913cd3",
+   "png": "089fd16f54559f50",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-elixir": {
    "svg": "3145aefc5d6db3d7",
    "png": "a0e8b90019eac1df",
    "by": "pngquant 3.0.3"
   },
+  "glossary-elm": {
+   "svg": "929f5d49075f90d8",
+   "png": "326c7b752288ba77",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-erlang": {
    "svg": "1a50c2d95506881e",
    "png": "56e50d6bb0578186",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-fastapi": {
+   "svg": "6a1b56b9c6fb79a9",
+   "png": "586be039318e8ba5",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-financial-statement-analysis": {
+   "svg": "de5a33587a569bc7",
+   "png": "d21f5ed9453378bf",
    "by": "pngquant 3.0.3"
   },
   "glossary-flowbite-pro": {
@@ -1615,6 +2175,11 @@
   "glossary-gis": {
    "svg": "e02b52a68d17e6e7",
    "png": "742cf02b4878585d",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-github-actions": {
+   "svg": "791fc625031fad28",
+   "png": "314a97490e7a48ad",
    "by": "pngquant 3.0.3"
   },
   "glossary-github-pages": {
@@ -1662,14 +2227,39 @@
    "png": "4637992c7476af1f",
    "by": "pngquant 3.0.3"
   },
+  "glossary-just": {
+   "svg": "bd9622a9f57fc5d6",
+   "png": "0c5981faab6525ac",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-knowledge-graph": {
    "svg": "0565abb92c394f82",
    "png": "61bf709072a426a6",
    "by": "pngquant 3.0.3"
   },
+  "glossary-kubernetes": {
+   "svg": "7a80cdd696f298b8",
+   "png": "138864c6b82565b7",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-lean": {
+   "svg": "a35013d161411a7a",
+   "png": "0e4fc89df88458b9",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-m4": {
+   "svg": "0a08ff7431bc11a8",
+   "png": "8d37c17042a65ef6",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-majordomus": {
    "svg": "3a9a3219475dce89",
    "png": "c215aecdb66bc225",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-makefile": {
+   "svg": "b8c617a2724ea7e3",
+   "png": "19977b7e008a2470",
    "by": "pngquant 3.0.3"
   },
   "glossary-market-intelligence": {
@@ -1682,9 +2272,19 @@
    "png": "f32773490ba6cb57",
    "by": "pngquant 3.0.3"
   },
+  "glossary-meilisearch": {
+   "svg": "7d1fa84921608edc",
+   "png": "fbdbf0bad1315b61",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-mergers-and-acquisitions": {
    "svg": "5fafd75859d60ffd",
    "png": "7d892aec122c0a6a",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-mermaid": {
+   "svg": "4478a348a65b22d8",
+   "png": "719ae8d4ae4d7f26",
    "by": "pngquant 3.0.3"
   },
   "glossary-mirror": {
@@ -1692,9 +2292,24 @@
    "png": "a7dba6ccfb8a82e3",
    "by": "pngquant 3.0.3"
   },
+  "glossary-monte-carlo-simulation": {
+   "svg": "31d72b22b4f2b1cc",
+   "png": "bdfdbc9cc6dfc909",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-nix": {
    "svg": "0f3438a227f9f0af",
    "png": "4db300d7963cebde",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-objective-c": {
+   "svg": "9659da6188e51d86",
+   "png": "982a9f35ebb3a761",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-ollama": {
+   "svg": "59fbc2526dc52400",
+   "png": "77382b5f04d5a7b1",
    "by": "pngquant 3.0.3"
   },
   "glossary-open-graph": {
@@ -1707,9 +2322,19 @@
    "png": "d3d2cf7abb8dda97",
    "by": "pngquant 3.0.3"
   },
+  "glossary-openai-api": {
+   "svg": "f72d1dfb2a1d05ae",
+   "png": "f22427353d187343",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-openapi": {
    "svg": "11bb78b541d3a96d",
    "png": "0db4c9eaf69a1691",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-openscad": {
+   "svg": "f6c2d21d821b8c6a",
+   "png": "29ffbffcecc988d2",
    "by": "pngquant 3.0.3"
   },
   "glossary-orchestration": {
@@ -1727,6 +2352,31 @@
    "png": "965356cfbe431d32",
    "by": "pngquant 3.0.3"
   },
+  "glossary-phoenix": {
+   "svg": "6d0a372e09695851",
+   "png": "01fa9db7e727b369",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-php": {
+   "svg": "e94dbc73c94b9a9b",
+   "png": "70f9f17fc213f223",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-playwright": {
+   "svg": "be456a684388f4d0",
+   "png": "f943129d76fe4456",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-plpgsql": {
+   "svg": "c995db5831c6cc69",
+   "png": "1c67ac5f35470574",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-policy-as-code": {
+   "svg": "a77d1d555efc8b83",
+   "png": "af9d7a3475be8b30",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-postgis": {
    "svg": "dff49eb873919502",
    "png": "d9d76735b977e5ef",
@@ -1737,9 +2387,29 @@
    "png": "5296f3fffb8930ac",
    "by": "pngquant 3.0.3"
   },
+  "glossary-public-registry": {
+   "svg": "0abd1fed6a1b0f9a",
+   "png": "5eaaf97b5e72a423",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-pydantic": {
+   "svg": "e16254e5b2ae2777",
+   "png": "58846913935ea318",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-python": {
    "svg": "40cb851aaee820d2",
    "png": "54c5325756e7f0d2",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-r": {
+   "svg": "6184941c9b3239cb",
+   "png": "c52904706df2afbf",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-react": {
+   "svg": "73a145a198c8da95",
+   "png": "f7ca1534a44a9c07",
    "by": "pngquant 3.0.3"
   },
   "glossary-record-linkage": {
@@ -1747,9 +2417,19 @@
    "png": "745e4be0a3bb559c",
    "by": "pngquant 3.0.3"
   },
+  "glossary-regulatory-compliance": {
+   "svg": "863838b52a53d36c",
+   "png": "cbac84e2524ee0b6",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-repository": {
    "svg": "49069c1fa93ec921",
    "png": "db3500363314670b",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-reputation-risk": {
+   "svg": "587d47a5f277272f",
+   "png": "47617ed9ac42b281",
    "by": "pngquant 3.0.3"
   },
   "glossary-risk-assessment": {
@@ -1767,9 +2447,44 @@
    "png": "4a6a01bf6f7750c1",
    "by": "pngquant 3.0.3"
   },
+  "glossary-sanctions-screening": {
+   "svg": "7e67d0c92b312e9a",
+   "png": "f797f9e0c44f14ce",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-scss": {
+   "svg": "0b35be2c6e096299",
+   "png": "851d8e89787da20b",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-service": {
+   "svg": "538352dc30b2072c",
+   "png": "e7eaec3471dfeb47",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-shell": {
    "svg": "9582c43a378aaacf",
    "png": "efdbb39c1a63da0a",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-skill": {
+   "svg": "5ab4a42dbfdcbe90",
+   "png": "de336d2c940b2f78",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-smarty": {
+   "svg": "be6cbd595ab6c3af",
+   "png": "e3dc63588b433040",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-source-criticism": {
+   "svg": "53ae01d55859309e",
+   "png": "6799a360171b5ce6",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-squirrel": {
+   "svg": "3c5aa05b4d379bc3",
+   "png": "7c68051aac24c7ab",
    "by": "pngquant 3.0.3"
   },
   "glossary-static-site-generator": {
@@ -1785,6 +2500,16 @@
   "glossary-tailwind-css": {
    "svg": "a8f71eb0cfd25063",
    "png": "4eb2d4b708a11ce1",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-tesseract": {
+   "svg": "f162aff572aa0a75",
+   "png": "d14ff9a84ffa5228",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-tex": {
+   "svg": "5b01dadd7d9fd00d",
+   "png": "f898d0c34143a118",
    "by": "pngquant 3.0.3"
   },
   "glossary-typescript": {
@@ -1805,6 +2530,16 @@
   "glossary-web-audio": {
    "svg": "05c48ca1f660498f",
    "png": "a34d40400be438a3",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-web-scraping": {
+   "svg": "d8a6e0c60fd863e0",
+   "png": "30497b76fe5f4a76",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-xslt": {
+   "svg": "9d632d62cbd33a1d",
+   "png": "f9eb1e34480e155d",
    "by": "pngquant 3.0.3"
   },
   "glossary-zola": {
@@ -1835,6 +2570,231 @@
   "repositories": {
    "svg": "aa629857580cf357",
    "png": "2abd997cc2fee552",
+   "by": "pngquant 3.0.3"
+  },
+  "service-ai-engineering-governance": {
+   "svg": "44ad77e48c777be3",
+   "png": "258fe457e5030139",
+   "by": "pngquant 3.0.3"
+  },
+  "service-attack-surface": {
+   "svg": "90f315152f6b0450",
+   "png": "575a2a8e2f6bda72",
+   "by": "pngquant 3.0.3"
+  },
+  "service-compliance-screening": {
+   "svg": "ef401ab927f1534f",
+   "png": "1a46f43a371d5b60",
+   "by": "pngquant 3.0.3"
+  },
+  "service-continuous-monitoring": {
+   "svg": "5b691b223be90f63",
+   "png": "a435e39dc53851e1",
+   "by": "pngquant 3.0.3"
+  },
+  "service-decision-support-ai": {
+   "svg": "4870508df40a7ccc",
+   "png": "e471ace0f2b390ab",
+   "by": "pngquant 3.0.3"
+  },
+  "service-digital-forensics": {
+   "svg": "3e83860d5bbb764b",
+   "png": "7e7b2b35322a2a6b",
+   "by": "pngquant 3.0.3"
+  },
+  "service-digital-investigation": {
+   "svg": "96c190391fa72549",
+   "png": "d6472d785abe3507",
+   "by": "pngquant 3.0.3"
+  },
+  "service-due-diligence": {
+   "svg": "2ab261afad983be2",
+   "png": "16453f4ac3209376",
+   "by": "pngquant 3.0.3"
+  },
+  "service-interactive-data-products": {
+   "svg": "133a48d4654567d7",
+   "png": "ab2376e5a400e69a",
+   "by": "pngquant 3.0.3"
+  },
+  "service-m-and-a": {
+   "svg": "ed139e44fb44df7f",
+   "png": "67565b69256f2a96",
+   "by": "pngquant 3.0.3"
+  },
+  "service-reputation-intelligence": {
+   "svg": "6987c78d9480e964",
+   "png": "9f6d92395f849b74",
+   "by": "pngquant 3.0.3"
+  },
+  "services": {
+   "svg": "d02e9b84093d8560",
+   "png": "a6bf674b4105f328",
+   "by": "pngquant 3.0.3"
+  },
+  "skill-ai-transformation": {
+   "svg": "fbffa5c9c06e57aa",
+   "png": "2a1ca19e0bdc6033",
+   "by": "pngquant 3.0.3"
+  },
+  "skill-audit-trail": {
+   "svg": "1287600b26e863f0",
+   "png": "a4a21b51283d0621",
+   "by": "pngquant 3.0.3"
+  },
+  "skill-chain-of-custody": {
+   "svg": "049f825217e9f0fa",
+   "png": "627051e2560f70c6",
+   "by": "pngquant 3.0.3"
+  },
+  "skill-change-monitoring": {
+   "svg": "9869618379b21091",
+   "png": "e3263788ce82fb2c",
+   "by": "pngquant 3.0.3"
+  },
+  "skill-compliance-mapping": {
+   "svg": "836f6a5af5efc571",
+   "png": "c5b422400d1c3856",
+   "by": "pngquant 3.0.3"
+  },
+  "skill-contestable-decisions": {
+   "svg": "aa8e0f9ed47f2427",
+   "png": "a6fcdeca9da69095",
+   "by": "pngquant 3.0.3"
+  },
+  "skill-data-integration": {
+   "svg": "197b24d2de541be4",
+   "png": "16bfbcd5937c7d5a",
+   "by": "pngquant 3.0.3"
+  },
+  "skill-data-room": {
+   "svg": "866ac584ad8282c8",
+   "png": "0be9fa0fa90ac8c0",
+   "by": "pngquant 3.0.3"
+  },
+  "skill-decision-support": {
+   "svg": "d3643a06e048b76e",
+   "png": "85d999d61c2bae52",
+   "by": "pngquant 3.0.3"
+  },
+  "skill-document-extraction": {
+   "svg": "27bb6fece23dbae7",
+   "png": "3610ffe6fab2d18b",
+   "by": "pngquant 3.0.3"
+  },
+  "skill-due-diligence": {
+   "svg": "c4896c78342331d7",
+   "png": "4bcfdafebe85a186",
+   "by": "pngquant 3.0.3"
+  },
+  "skill-entity-resolution": {
+   "svg": "aa481893bd137b79",
+   "png": "fc72404110cfe8ef",
+   "by": "pngquant 3.0.3"
+  },
+  "skill-financial-analysis": {
+   "svg": "c6db226c1cb159b1",
+   "png": "2b04bf69ee414bbb",
+   "by": "pngquant 3.0.3"
+  },
+  "skill-geospatial-analysis": {
+   "svg": "52f964a4b9545633",
+   "png": "c3088ee9e16c2a0f",
+   "by": "pngquant 3.0.3"
+  },
+  "skill-infrastructure-osint": {
+   "svg": "7c374b5cb0acd0e1",
+   "png": "6ab81ba2018a5afb",
+   "by": "pngquant 3.0.3"
+  },
+  "skill-insolvency-monitoring": {
+   "svg": "6a4430bed53066e2",
+   "png": "9168185dcf4250ab",
+   "by": "pngquant 3.0.3"
+  },
+  "skill-interactive-visualisation": {
+   "svg": "165788e6fd076499",
+   "png": "2d07946fa44b149d",
+   "by": "pngquant 3.0.3"
+  },
+  "skill-knowledge-graph": {
+   "svg": "107d31132329d084",
+   "png": "f99e4a37419413a2",
+   "by": "pngquant 3.0.3"
+  },
+  "skill-llm-agents": {
+   "svg": "abaaa5aaa6832729",
+   "png": "b1b084142f2578cf",
+   "by": "pngquant 3.0.3"
+  },
+  "skill-m-and-a-screening": {
+   "svg": "866a5d8a78c5a381",
+   "png": "08769e9d3aec46a1",
+   "by": "pngquant 3.0.3"
+  },
+  "skill-market-intelligence": {
+   "svg": "5afa72f1791c0495",
+   "png": "8933cf7a31be2f64",
+   "by": "pngquant 3.0.3"
+  },
+  "skill-media-forensics": {
+   "svg": "e04d58c4811c82b3",
+   "png": "0fee6d06554a990c",
+   "by": "pngquant 3.0.3"
+  },
+  "skill-narrative-analysis": {
+   "svg": "f37cda15dd83f3a6",
+   "png": "0120ccdd0590b3ed",
+   "by": "pngquant 3.0.3"
+  },
+  "skill-orchestration": {
+   "svg": "dccccf8736d36bba",
+   "png": "e518dd77212095ae",
+   "by": "pngquant 3.0.3"
+  },
+  "skill-osint-investigation": {
+   "svg": "880e4ad229af5a33",
+   "png": "5c75e4ba5af9f746",
+   "by": "pngquant 3.0.3"
+  },
+  "skill-ownership-analysis": {
+   "svg": "f2b255ec1d3feeaa",
+   "png": "c48bf91f5326aedd",
+   "by": "pngquant 3.0.3"
+  },
+  "skill-policy-as-code": {
+   "svg": "ba3a37786e1182a2",
+   "png": "b0f8c8d08428567a",
+   "by": "pngquant 3.0.3"
+  },
+  "skill-registry-intelligence": {
+   "svg": "3aebba8e0635c1e9",
+   "png": "2ff3511d022f5f83",
+   "by": "pngquant 3.0.3"
+  },
+  "skill-risk-scoring": {
+   "svg": "928b84606b874713",
+   "png": "65ca17d1c42d75b0",
+   "by": "pngquant 3.0.3"
+  },
+  "skill-sanctions-screening": {
+   "svg": "7e825ecc515c6944",
+   "png": "071e18c5ee2c2f42",
+   "by": "pngquant 3.0.3"
+  },
+  "skill-source-reliability": {
+   "svg": "0d81e670f9c1c613",
+   "png": "83c2ebdddf54d0d2",
+   "by": "pngquant 3.0.3"
+  },
+  "skill-web-automation": {
+   "svg": "4eedd3d11f9f83c5",
+   "png": "42d00a43ba27fdf0",
+   "by": "pngquant 3.0.3"
+  },
+  "skills": {
+   "svg": "5fbc5f8bd4921f99",
+   "png": "235bb6bdfdf7f69b",
    "by": "pngquant 3.0.3"
   },
   "stack": {

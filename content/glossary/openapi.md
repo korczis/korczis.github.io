@@ -3,7 +3,7 @@
 title = "OpenAPI"
 description = "A standard, language-neutral description of an HTTP interface: its paths, operations and data, readable by people and tools such as Swagger UI."
 template = "term.html"
-weight = 28
+weight = 57
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "A standard, language-neutral description of an HTTP interface: its paths, operations and data, readable by people and tools such as Swagger UI."
 aliases = ["Swagger"]
 reference = { title = "OpenAPI Specification", url = "https://spec.openapis.org/oas/latest.html" }
-pages = ["interfaces.md"]
-related = ["ai-agent", "github-pages", "json-ld", "majordomus", "mcp"]
+pages = ["interfaces.md", "services/compliance-screening.md"]
+related = ["ai-agent", "alpine-js", "beneficial-ownership", "claude-api", "contestability", "dockerfile", "elixir", "fastapi"]
 og_title = "OpenAPI: glossary"
 og_image = "og/glossary-openapi.png"
 keywords = ["OpenAPI", "Technology", "Glossary", "Tomas Korcak"]
@@ -31,3 +31,4 @@ span = 3
 height = "md"
 tone = "night"
 +++
+No public repository or client engagement of mine uses OpenAPI as the data measures it; this page explains the term where the site uses it.

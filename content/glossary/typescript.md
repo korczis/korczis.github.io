@@ -3,7 +3,7 @@
 title = "TypeScript"
 description = "JavaScript with static types, checked before the code runs and compiled to plain JavaScript."
 template = "term.html"
-weight = 18
+weight = 38
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -16,11 +16,20 @@ kind = "language"
 definition = "JavaScript with static types, checked before the code runs and compiled to plain JavaScript."
 aliases = []
 reference = { title = "TypeScript handbook", url = "https://www.typescriptlang.org/docs/" }
-pages = ["projects/science.md", "projects/tools.md", "work/algoglyph.md", "work/astronomists.md", "work/dispatcher.md", "work/sig.md", "work/ts-logger.md"]
-related = ["repository", "open-source", "commit", "javascript", "shell", "elixir", "python", "rust"]
+pages = ["projects/science.md", "projects/tools.md", "skills/data-integration.md", "skills/llm-agents.md", "skills/osint-investigation.md", "work/algoglyph.md", "work/astronomists.md", "work/dispatcher.md", "work/sig.md", "work/ts-logger.md", "_index.md"]
+related = ["javascript", "repository", "shell", "elixir", "open-source", "alpine-js", "commit", "html"]
 og_title = "TypeScript: glossary"
 og_image = "og/glossary-typescript.png"
 keywords = ["TypeScript", "Programming language", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,3 +40,14 @@ span = 3
 height = "md"
 tone = "night"
 +++
+I have written TypeScript in 5 public repositories, from 2019 to 2026; in 3 of them it is the main language.
+
+What it was for: [Tools](@/projects/tools.md) (3), [AI engineering](@/projects/ai.md) (1) and [Science and visualisation](@/projects/science.md) (1).
+
+Most recently: [algoglyph](@/work/algoglyph.md): Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core; [astronomists](@/work/astronomists.md); [sig](@/work/sig.md): distributed cognitive framework in Elixir/OTP.
+
+2 of these projects run as live sites.
+
+I also used it in client work under confidentiality agreements. Roles: Architect, Lead engineer, AI engineer and Data engineer. What was solved: LLM agents, Decision support, AI transformation and Audit trail. The use cases below give the principle and the intent of that work; no client, person, date or number is named.
+
+How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses TypeScript: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links TypeScript to the repositories and to the other languages and technologies they use together.

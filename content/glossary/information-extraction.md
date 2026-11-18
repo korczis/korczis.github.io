@@ -3,7 +3,7 @@
 title = "Information extraction"
 description = "Turning documents (scans, PDFs, free text) into structured fields such as names, dates and amounts, with OCR and language or vision models."
 template = "term.html"
-weight = 46
+weight = 87
 
 [taxonomies]
 tags = ["Glossary", "Concept"]
@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Turning documents (scans, PDFs, free text) into structured fields such as names, dates and amounts, with OCR and language or vision models."
 aliases = []
 reference = { title = "Information extraction (Wikipedia)", url = "https://en.wikipedia.org/wiki/Information_extraction" }
-pages = ["projects/security.md", "work/magic.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/peacemaker.md", "work/ratnet.md", "work/zlown.md"]
-related = ["audit-trail", "data-integration", "decision-support-system", "due-diligence", "insolvency", "knowledge-graph", "market-intelligence", "mergers-and-acquisitions"]
+pages = ["projects/security.md", "services/_index.md", "services/decision-support-ai.md", "skills/_index.md", "skills/document-extraction.md", "work/magic.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/peacemaker.md", "work/ratnet.md", "work/zlown.md"]
+related = ["audit-trail", "decision-support-system", "orchestration", "data-integration", "due-diligence", "insolvency", "knowledge-graph", "market-intelligence"]
 og_title = "Information extraction: glossary"
 og_image = "og/glossary-information-extraction.png"
 keywords = ["Information extraction", "Concept", "Glossary", "Tomas Korcak"]

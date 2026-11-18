@@ -17,7 +17,7 @@ og_description = "korczis.gitlab.io: Web, CSS, Elixir a SCSS, 2025, aktivní za 
 og_image = "og/cs-work-korczis-gitlab-io.png"
 schema = "project"
 keywords = ["korczis.gitlab.io", "Web", "CSS", "Elixir", "SCSS", "2025", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["css", "elixir", "html", "static-site-generator", "repository", "commit", "open-source"]
+terms = ["css", "elixir", "scss", "html", "eex", "static-site-generator", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -29,7 +29,7 @@ height = "md"
 tone = "night"
 vars = { cadence = "každých 6 hodin" }
 +++
-**korczis.gitlab.io** je projekt z kategorie [Web](@/projects/web.cs.md). Jeho kód je napsaný hlavně v jazyce [CSS](@/glossary/css.cs.md) (32,5 %), dále [Elixir](@/glossary/elixir.cs.md), SCSS a [HTML](@/glossary/html.cs.md).
+**korczis.gitlab.io** je projekt z kategorie [Web](@/projects/web.cs.md). Jeho kód je napsaný hlavně v jazyce [CSS](@/glossary/css.cs.md) (32,5 %), dále [Elixir](@/glossary/elixir.cs.md), [SCSS](@/glossary/scss.cs.md) a [HTML](@/glossary/html.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 22. srpna 2025; poslední [commit](@/glossary/commit.cs.md) je z 22. srpna 2025. Zní „Merge branch 'master' of gitlab.com:korczis/korczis.gitlab.io“. Patří tak mezi projekty aktivní za posledních 24 měsíců.
 

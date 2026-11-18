@@ -3,7 +3,7 @@
 title = "Fúze a akvizice"
 description = "Transakce, při kterých se firmy spojují nebo jedna kupuje druhou; každou připravuje prověrka cíle, jeho stran a financování."
 template = "term.html"
-weight = 52
+weight = 93
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]
@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Transakce, při kterých se firmy spojují nebo jedna kupuje druhou; každou připravuje prověrka cíle, jeho stran a financování."
 aliases = ["M&A"]
 reference = { title = "Mergers and acquisitions (Wikipedia)", url = "https://en.wikipedia.org/wiki/Mergers_and_acquisitions" }
-pages = ["hire.cs.md", "projects/security.cs.md", "work/magic.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/peacemaker.cs.md", "work/ratnet.cs.md", "work/zlown.cs.md"]
-related = ["due-diligence", "osint", "audit-trail", "data-integration", "decision-support-system", "information-extraction", "insolvency", "knowledge-graph"]
+pages = ["hire.cs.md", "projects/security.cs.md", "services/_index.cs.md", "services/m-and-a.cs.md", "skills/_index.cs.md", "skills/m-and-a-screening.cs.md", "work/magic.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/peacemaker.cs.md", "work/ratnet.cs.md", "work/zlown.cs.md"]
+related = ["due-diligence", "decision-support-system", "market-intelligence", "osint", "risk-assessment", "virtual-data-room", "audit-trail", "data-integration"]
 og_title = "Fúze a akvizice: slovník"
 og_image = "og/cs-glossary-mergers-and-acquisitions.png"
 keywords = ["Fúze a akvizice", "Mergers and acquisitions", "Koncept", "Slovník", "Tomáš Korčák"]

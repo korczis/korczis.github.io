@@ -17,7 +17,7 @@ og_description = "solr-core-minimal: Data and GIS in XSLT, JavaScript and CSS, 2
 og_image = "og/work-solr-core-minimal.png"
 schema = "project"
 keywords = ["solr-core-minimal", "Data and GIS", "XSLT", "JavaScript", "CSS", "2014", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["javascript", "css", "gis", "repository", "commit", "open-source"]
+terms = ["xslt", "javascript", "css", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,7 +28,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**solr-core-minimal** is a project in [Data and GIS](@/projects/data.md). Its code is written mainly in XSLT (49.8 %), with [JavaScript](@/glossary/javascript.md) and [CSS](@/glossary/css.md).
+**solr-core-minimal** is a project in [Data and GIS](@/projects/data.md). Its code is written mainly in [XSLT](@/glossary/xslt.md) (49.8 %), with [JavaScript](@/glossary/javascript.md) and [CSS](@/glossary/css.md).
 
 The [repository](@/glossary/repository.md) was created on 5 February 2014; its latest [commit](@/glossary/commit.md) is from 5 February 2014. It reads “Removed uncessary stuff”. With no commit in the last 48 months it is listed as archive: work from 2014, kept for the record and dated as measured.
 

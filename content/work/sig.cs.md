@@ -17,7 +17,7 @@ og_description = "sig: Inženýrství AI, Elixir, HTML+EEX a Shell, 2025–2026,
 og_image = "og/cs-work-sig.png"
 schema = "project"
 keywords = ["sig", "Inženýrství AI", "Elixir", "HTML+EEX", "Shell", "AI", "Knowledge representation and reasoning", "LLMs", "cognitive-science", "multi-agent-systems", "2025–2026", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["elixir", "shell", "typescript", "ai-agent", "repository", "commit", "open-source"]
+terms = ["elixir", "eex", "shell", "typescript", "just", "ai-agent", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -29,7 +29,7 @@ height = "md"
 tone = "night"
 vars = { cadence = "každých 6 hodin" }
 +++
-**sig** je projekt z kategorie [Inženýrství AI](@/projects/ai.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (95,6 %), dále HTML+EEX, [Shell](@/glossary/shell.cs.md) a [TypeScript](@/glossary/typescript.cs.md).
+**sig** je projekt z kategorie [Inženýrství AI](@/projects/ai.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (95,6 %), dále [HTML+EEX](@/glossary/eex.cs.md), [Shell](@/glossary/shell.cs.md) a [TypeScript](@/glossary/typescript.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 23. srpna 2025; poslední [commit](@/glossary/commit.cs.md) je z 4. února 2026. Zní „feat(aiad): inject AIAD v1.0.0 infrastructure“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 

@@ -17,7 +17,7 @@ og_description = "3d-print: Nástroje, OpenSCAD, 2021, archiv. Zdrojový kód: G
 og_image = "og/cs-work-3d-print.png"
 schema = "project"
 keywords = ["3d-print", "Nástroje", "OpenSCAD", "2021", "GitHub", "Tomáš Korčák", "korczis"]
-terms = ["open-source", "repository", "commit"]
+terms = ["openscad", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,7 +28,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**3d-print** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce OpenSCAD (100 %).
+**3d-print** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [OpenSCAD](@/glossary/openscad.cs.md) (100 %).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 3. března 2021; poslední [commit](@/glossary/commit.cs.md) je z 4. března 2021. Zní „Fix typo“. Bez commitu za posledních 48 měsíců je veden jako archiv: práce z období 2021, ponechaná pro záznam a datovaná podle měření.
 

@@ -17,7 +17,7 @@ og_description = "magic: Bezpečnost a OSINT, Rust, JavaScript a Elixir, 2017, a
 og_image = "og/cs-work-magic.png"
 schema = "project"
 keywords = ["magic", "Bezpečnost a OSINT", "Rust", "JavaScript", "Elixir", "elixir-phoenix", "hackrf", "rtl", "sdr", "2017", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["rust", "javascript", "elixir", "c", "java", "osint", "due-diligence", "mergers-and-acquisitions", "virtual-data-room", "risk-assessment", "market-intelligence", "decision-support-system", "insolvency", "record-linkage", "knowledge-graph", "data-integration", "audit-trail", "information-extraction", "orchestration", "repository", "commit", "open-source"]
+terms = ["rust", "javascript", "elixir", "elm", "c", "java", "osint", "due-diligence", "mergers-and-acquisitions", "virtual-data-room", "risk-assessment", "market-intelligence", "decision-support-system", "insolvency", "record-linkage", "knowledge-graph", "data-integration", "audit-trail", "information-extraction", "orchestration", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,7 +28,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**magic** je projekt z kategorie [Bezpečnost a OSINT](@/projects/security.cs.md). Jeho kód je napsaný hlavně v jazyce [Rust](@/glossary/rust.cs.md) (39 %), dále [JavaScript](@/glossary/javascript.cs.md), [Elixir](@/glossary/elixir.cs.md) a Elm.
+**magic** je projekt z kategorie [Bezpečnost a OSINT](@/projects/security.cs.md). Jeho kód je napsaný hlavně v jazyce [Rust](@/glossary/rust.cs.md) (39 %), dále [JavaScript](@/glossary/javascript.cs.md), [Elixir](@/glossary/elixir.cs.md) a [Elm](@/glossary/elm.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 29. května 2017; poslední [commit](@/glossary/commit.cs.md) je z 8. července 2017. Zní „WIP“. Bez commitu za posledních 48 měsíců je veden jako archiv: práce z období 2017, ponechaná pro záznam a datovaná podle měření.
 

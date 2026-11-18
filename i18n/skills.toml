@@ -1,0 +1,157 @@
+# The evidence of a language or technology on its glossary page (templates/term.html, the article
+# scripts/build-glossary.mjs derives from scripts/lib/skills.mjs). Client work appears as use cases
+# only: the sector, the roles and what was solved, never a name, a date or a number (ADR 0006).
+# [[term-id|label]] links a term; keys with __one, __few, __other are chosen for their {n}.
+
+[derive_skill_language__one]
+en = "I have written {term} in {n} public repository, from {first} to {last}{primary}."
+cs = "{term} jsem psal v {n} veřejném repozitáři, od roku {first} do {last}{primary}."
+[derive_skill_language__few]
+en = "I have written {term} in {n} public repositories, from {first} to {last}{primary}."
+cs = "{term} jsem psal ve {n} veřejných repozitářích, od roku {first} do {last}{primary}."
+[derive_skill_language__other]
+en = "I have written {term} in {n} public repositories, from {first} to {last}{primary}."
+cs = "{term} jsem psal v {n} veřejných repozitářích, od roku {first} do {last}{primary}."
+
+[derive_skill_primary__one]
+en = "; in {n} of them it is the main language"
+cs = "; v {n} z nich je hlavním jazykem"
+[derive_skill_primary__few]
+en = "; in {n} of them it is the main language"
+cs = "; ve {n} z nich je hlavním jazykem"
+[derive_skill_primary__other]
+en = "; in {n} of them it is the main language"
+cs = "; v {n} z nich je hlavním jazykem"
+
+[derive_skill_technology__one]
+en = "{term} is part of {n} of my public repositories, from {first} to {last}."
+cs = "{term} je součástí {n} mého veřejného repozitáře, od roku {first} do {last}."
+[derive_skill_technology__few]
+en = "{term} is part of {n} of my public repositories, from {first} to {last}."
+cs = "{term} je součástí {n} mých veřejných repozitářů, od roku {first} do {last}."
+[derive_skill_technology__other]
+en = "{term} is part of {n} of my public repositories, from {first} to {last}."
+cs = "{term} je součástí {n} mých veřejných repozitářů, od roku {first} do {last}."
+
+[derive_skill_none]
+en = "No public repository of mine uses {term} as the data measures it; the evidence is the client work described below."
+cs = "Žádný můj veřejný repozitář {term} podle měřených dat nepoužívá; dokladem je klientská práce popsaná níže."
+
+[derive_skill_nothing]
+en = "No public repository or client engagement of mine uses {term} as the data measures it; this page explains the term where the site uses it."
+cs = "Žádný můj veřejný repozitář ani klientská zakázka {term} podle měřených dat nepoužívá; tato stránka pojem vysvětluje tam, kde ho web používá."
+
+[derive_skill_for]
+en = "What it was for: {list}."
+cs = "K čemu to sloužilo: {list}."
+
+[derive_skill_recent]
+en = "Most recently: {list}."
+cs = "Naposledy: {list}."
+
+[derive_skill_sites__one]
+en = "{n} of these projects runs as a live site."
+cs = "{n} z těchto projektů běží jako živý web."
+[derive_skill_sites__few]
+en = "{n} of these projects run as live sites."
+cs = "{n} z těchto projektů běží jako živé weby."
+[derive_skill_sites__other]
+en = "{n} of these projects run as live sites."
+cs = "{n} z těchto projektů běží jako živé weby."
+
+[derive_skill_clients]
+en = "I also used it in client work under confidentiality agreements. Roles: {roles}. What was solved: {solved}. The use cases below give the principle and the intent of that work; no client, person, date or number is named."
+cs = "Používal jsem ho také v klientské práci pod dohodami o mlčenlivosti. Role: {roles}. Co se řešilo: {solved}. Případy užití níže popisují princip a záměr této práce; žádný klient, osoba, datum ani číslo nejsou uvedeny."
+
+[derive_skill_how]
+en = "How to read the evidence: every [[repository|repository]] below is measured from GitHub and GitLab ({cadence}) and says how it uses {term}: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links {term} to the repositories and to the other languages and technologies they use together."
+cs = "Jak číst doklady: každý [[repository|repozitář]] níže je změřený z GitHubu a GitLabu ({cadence}) a říká, jak {term} používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje {term} s repozitáři a s dalšími jazyky a technologiemi, které spolu používají."
+
+# The term page (templates/term.html).
+[skill_evidence]
+en = "Evidence"
+cs = "Doklady"
+
+[skill_evidence_lead]
+en = "Every public repository that uses it, newest first, with what it is for and how it uses it; measured, never typed."
+cs = "Každý veřejný repozitář, který ho používá, od nejnovějšího, s tím, k čemu slouží a jak ho používá; změřené, nikdy ručně psané."
+
+[skill_repos]
+en = "Repositories"
+cs = "Repozitáře"
+
+[skill_as_main]
+en = "As the main language"
+cs = "Jako hlavní jazyk"
+
+[skill_years]
+en = "Years"
+cs = "Roky"
+
+[skill_live_sites]
+en = "Live sites"
+cs = "Živé weby"
+
+[skill_project]
+en = "Project"
+cs = "Projekt"
+
+[skill_what_for]
+en = "What it solves"
+cs = "Co řeší"
+
+[skill_how]
+en = "How"
+cs = "Jak"
+
+[skill_active]
+en = "Active"
+cs = "Aktivní"
+
+[skill_via_primary]
+en = "main language"
+cs = "hlavní jazyk"
+
+[skill_via_code]
+en = "share of code"
+cs = "podíl kódu"
+
+[skill_via_stack]
+en = "stack"
+cs = "stack"
+
+[skill_via_topic]
+en = "topic"
+cs = "téma"
+
+[skill_used_for]
+en = "What it was used for"
+cs = "K čemu sloužil"
+
+[skill_used_for_lead]
+en = "The categories of the repositories that use it."
+cs = "Kategorie repozitářů, které ho používají."
+
+[skill_use_cases]
+en = "Use cases from client work"
+cs = "Případy užití z klientské práce"
+
+[skill_use_cases_lead]
+en = "Work under confidentiality agreements: the sector, my role and what was solved, as principle and intent. No client, person, date or number is named."
+cs = "Práce pod dohodami o mlčenlivosti: odvětví, moje role a co se řešilo, jako princip a záměr. Žádný klient, osoba, datum ani číslo nejsou uvedeny."
+
+[skill_role]
+en = "Role"
+cs = "Role"
+
+[skill_site]
+en = "Site"
+cs = "Web"
+
+[viz_skill_graph_title]
+en = "Reference graph"
+cs = "Graf referencí"
+
+[viz_skill_graph_lead]
+en = "This term at the centre, every repository that uses it, and the other languages and technologies those repositories use with it. Click a node to open its page."
+cs = "Tento pojem uprostřed, každý repozitář, který ho používá, a další jazyky a technologie, které s ním tyto repozitáře používají. Kliknutím na uzel otevřete jeho stránku."

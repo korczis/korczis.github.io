@@ -17,7 +17,7 @@ og_description = "datascience: Data and GIS in R, 2016, archive. Source on GitHu
 og_image = "og/work-datascience.png"
 schema = "project"
 keywords = ["datascience", "Data and GIS", "2016", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["gis", "repository", "commit", "open-source"]
+terms = ["r", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,7 +28,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**datascience** is a project in [Data and GIS](@/projects/data.md). Its code is written mainly in R (100 %).
+**datascience** is a project in [Data and GIS](@/projects/data.md). Its code is written mainly in [R](@/glossary/r.md) (100 %).
 
 The [repository](@/glossary/repository.md) was created on 4 April 2016; its latest [commit](@/glossary/commit.md) is from 30 April 2016. It reads “Added factbook”. With no commit in the last 48 months it is listed as archive: work from 2016, kept for the record and dated as measured.
 

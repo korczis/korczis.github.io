@@ -14,7 +14,7 @@ category = "media"
 og_title = "Media and art: 8 repositories."
 og_image = "og/category-media.png"
 schema = "collection"
-terms = ["data-visualisation", "javascript", "dockerfile", "elixir", "html", "python", "repository"]
+terms = ["data-visualisation", "javascript", "dockerfile", "elixir", "html", "python", "squirrel", "repository"]
 keywords = ["Media and art", "Majordomus reel", "Catharsis as a Service", "Sonic Playground", "openttd-prismatic-bridge", "prismatic-blog", "dj-schnapps", "brepta", "talkie", "Tomas Korcak"]
 
 [[extra.viz]]

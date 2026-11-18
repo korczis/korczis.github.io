@@ -3,7 +3,7 @@
 title = "Apache ECharts"
 description = "Projekt Apache pro interaktivní grafy: kalendáře, sunbursty, mapy a velké datové sady."
 template = "term.html"
-weight = 20
+weight = 41
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -14,13 +14,22 @@ seo_title = "Apache ECharts (technologie)"
 term = "apache-echarts"
 kind = "technology"
 definition = "Projekt Apache pro interaktivní grafy: kalendáře, sunbursty, mapy a velké datové sady."
-aliases = ["ECharts"]
+aliases = ["ECharts", "echarts"]
 reference = { title = "echarts.apache.org", url = "https://echarts.apache.org/en/index.html" }
-pages = ["_index.cs.md", "projects/knowledge.cs.md", "projects/science.cs.md", "stack.cs.md", "work/algoglyph.cs.md", "work/kompendium-epistemicke-anihilace.cs.md"]
-related = ["flowbite-pro", "alpine-js", "repository", "elixir", "rust", "zola", "commit", "cytoscape-js"]
+pages = ["_index.cs.md", "projects/knowledge.cs.md", "projects/science.cs.md", "services/ai-engineering-governance.cs.md", "services/interactive-data-products.cs.md", "skills/interactive-visualisation.cs.md", "skills/knowledge-graph.cs.md", "skills/policy-as-code.cs.md", "stack.cs.md", "work/algoglyph.cs.md", "work/kompendium-epistemicke-anihilace.cs.md"]
+related = ["alpine-js", "flowbite-pro", "javascript", "elixir", "html", "python", "shell", "zola"]
 og_title = "Apache ECharts: slovník"
 og_image = "og/cs-glossary-apache-echarts.png"
 keywords = ["Apache ECharts", "Technologie", "Slovník", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,3 +40,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
+Apache ECharts je součástí 3 mých veřejných repozitářů, od roku 2024 do 2026.
+
+K čemu to sloužilo: [Znalosti](@/projects/knowledge.cs.md) (1), [Věda a vizualizace](@/projects/science.cs.md) (1) a [Web](@/projects/web.cs.md) (1).
+
+Naposledy: [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat; [korczis.github.io](@/work/korczis-github-io.cs.md); [algoglyph](@/work/algoglyph.cs.md): Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.
+
+2 z těchto projektů běží jako živé weby.
+
+Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak Apache ECharts používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje Apache ECharts s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

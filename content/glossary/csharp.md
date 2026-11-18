@@ -3,7 +3,7 @@
 title = "C#"
 description = "Microsoft's object-oriented language for .NET. A term of the glossary."
 template = "term.html"
-weight = 2
+weight = 4
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -16,11 +16,20 @@ kind = "language"
 definition = "Microsoft's object-oriented language for .NET."
 aliases = []
 reference = { title = "C# documentation", url = "https://learn.microsoft.com/en-us/dotnet/csharp/" }
-pages = ["projects/learning.md", "projects/tools.md", "work/cs-benchmark.md", "work/reflex.md", "work/rocnikac4.md"]
-related = ["repository", "open-source", "commit", "cpp", "elixir", "javascript", "ruby", "rust"]
+pages = ["projects/learning.md", "projects/tools.md", "skills/market-intelligence.md", "work/cs-benchmark.md", "work/reflex.md", "work/rocnikac4.md"]
+related = ["repository", "open-source", "commit", "javascript", "cpp", "elixir", "ruby", "rust"]
 og_title = "C#: glossary"
 og_image = "og/glossary-csharp.png"
 keywords = ["C#", "Programming language", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,3 +40,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
+I have written C# in 3 public repositories, from 2012 to 2014; in 3 of them it is the main language.
+
+What it was for: [Learning and experiments](@/projects/learning.md) (2) and [Tools](@/projects/tools.md) (1).
+
+Most recently: [cs-benchmark](@/work/cs-benchmark.md): Simple C\# Benchmark; [Rocnikac4](@/work/rocnikac4.md); [reflex](@/work/reflex.md): .NET Reflection tools.
+
+How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses C#: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links C# to the repositories and to the other languages and technologies they use together.

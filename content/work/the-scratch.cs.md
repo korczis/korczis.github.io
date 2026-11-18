@@ -17,7 +17,7 @@ og_description = "the-scratch: Web, JavaScript, Elixir a Elm, 2017–2018, archi
 og_image = "og/cs-work-the-scratch.png"
 schema = "project"
 keywords = ["the-scratch", "Web", "JavaScript", "Elixir", "Elm", "ecto", "phoenix", "phoenix-backend", "single-page-app", "2017–2018", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["javascript", "elixir", "rust", "html", "static-site-generator", "repository", "commit", "open-source"]
+terms = ["javascript", "elixir", "elm", "rust", "html", "static-site-generator", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,7 +28,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**the-scratch** je projekt z kategorie [Web](@/projects/web.cs.md). Jeho kód je napsaný hlavně v jazyce [JavaScript](@/glossary/javascript.cs.md) (37,1 %), dále [Elixir](@/glossary/elixir.cs.md), Elm a [Rust](@/glossary/rust.cs.md).
+**the-scratch** je projekt z kategorie [Web](@/projects/web.cs.md). Jeho kód je napsaný hlavně v jazyce [JavaScript](@/glossary/javascript.cs.md) (37,1 %), dále [Elixir](@/glossary/elixir.cs.md), [Elm](@/glossary/elm.cs.md) a [Rust](@/glossary/rust.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 21. července 2017; poslední [commit](@/glossary/commit.cs.md) je z 10. března 2018. Zní „Upgrade dependencies“. Bez commitu za posledních 48 měsíců je veden jako archiv: práce z období 2017–2018, ponechaná pro záznam a datovaná podle měření.
 

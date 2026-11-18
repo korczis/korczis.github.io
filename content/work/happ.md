@@ -17,7 +17,7 @@ og_description = "happ: Learning and experiments in C++, Objective-C and Swift, 
 og_image = "og/work-happ.png"
 schema = "project"
 keywords = ["happ", "Learning and experiments", "C++", "Objective-C", "Swift", "2021", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["cpp", "swift", "rust", "shell", "repository", "commit", "open-source"]
+terms = ["cpp", "objective-c", "swift", "rust", "shell", "cmake", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,7 +28,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**happ** is a project in [Learning and experiments](@/projects/learning.md). Its code is written mainly in [C++](@/glossary/cpp.md) (62.7 %), with Objective-C, [Swift](@/glossary/swift.md) and [Rust](@/glossary/rust.md).
+**happ** is a project in [Learning and experiments](@/projects/learning.md). Its code is written mainly in [C++](@/glossary/cpp.md) (62.7 %), with [Objective-C](@/glossary/objective-c.md), [Swift](@/glossary/swift.md) and [Rust](@/glossary/rust.md).
 
 The [repository](@/glossary/repository.md) was created on 23 April 2021; its latest [commit](@/glossary/commit.md) is from 3 June 2021. It reads “Improve Charts”. With no commit in the last 48 months it is listed as archive: work from 2021, kept for the record and dated as measured.
 

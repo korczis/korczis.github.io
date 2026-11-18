@@ -17,7 +17,7 @@ og_description = "pavian.eu: Web, ApacheConf, HTML a CSS, 2015, archiv. Zdrojov�
 og_image = "og/cs-work-pavian-eu.png"
 schema = "project"
 keywords = ["pavian.eu", "Web", "ApacheConf", "HTML", "CSS", "2015", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["html", "css", "javascript", "static-site-generator", "repository", "commit", "open-source"]
+terms = ["apacheconf", "html", "css", "javascript", "static-site-generator", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,7 +28,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**pavian.eu** je projekt z kategorie [Web](@/projects/web.cs.md). Jeho kód je napsaný hlavně v jazyce ApacheConf (64 %), dále [HTML](@/glossary/html.cs.md), [CSS](@/glossary/css.cs.md) a [JavaScript](@/glossary/javascript.cs.md).
+**pavian.eu** je projekt z kategorie [Web](@/projects/web.cs.md). Jeho kód je napsaný hlavně v jazyce [ApacheConf](@/glossary/apacheconf.cs.md) (64 %), dále [HTML](@/glossary/html.cs.md), [CSS](@/glossary/css.cs.md) a [JavaScript](@/glossary/javascript.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 9. srpna 2015; poslední [commit](@/glossary/commit.cs.md) je z 31. srpna 2015. Zní „Update widget“. Bez commitu za posledních 48 měsíců je veden jako archiv: práce z období 2015, ponechaná pro záznam a datovaná podle měření.
 

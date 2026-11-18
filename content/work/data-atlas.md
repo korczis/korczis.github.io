@@ -17,7 +17,7 @@ og_description = "Data Atlas: Data and GIS in Python, HTML and JavaScript, 2026,
 og_image = "og/work-data-atlas.png"
 schema = "project"
 keywords = ["Data Atlas", "data-atlas", "Data and GIS", "Python", "HTML", "JavaScript", "catalog", "czech-republic", "geodata", "geospatial", "gis", "open-data", "2026", "GitHub", "Tomas Korcak", "korczis"]
-terms = ["python", "html", "javascript", "shell", "gis", "github-pages", "repository", "commit", "open-source"]
+terms = ["python", "html", "javascript", "plpgsql", "just", "shell", "gis", "github-pages", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,7 +28,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**Data Atlas** is a project in [Data and GIS](@/projects/data.md). Its code is written mainly in [Python](@/glossary/python.md) (61.1 %), with [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md) and PLpgSQL.
+**Data Atlas** is a project in [Data and GIS](@/projects/data.md). Its code is written mainly in [Python](@/glossary/python.md) (61.1 %), with [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md) and [PLpgSQL](@/glossary/plpgsql.md).
 
 The [repository](@/glossary/repository.md) was created on 27 August 2026; its latest [commit](@/glossary/commit.md) is from 16 November 2026. It reads “Merge pull request \#4 from korczis/feature/flowbite-pro-ui”. That places it among the projects active in the last 12 months.
 

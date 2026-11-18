@@ -17,7 +17,7 @@ og_description = "zaas: Nástroje, JavaScript, Elixir a Elm, 2017, archiv. Zdroj
 og_image = "og/cs-work-zaas.png"
 schema = "project"
 keywords = ["zaas", "Nástroje", "JavaScript", "Elixir", "Elm", "2017", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["javascript", "elixir", "rust", "html", "open-source", "repository", "commit"]
+terms = ["javascript", "elixir", "elm", "rust", "html", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,7 +28,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**zaas** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [JavaScript](@/glossary/javascript.cs.md) (37,3 %), dále [Elixir](@/glossary/elixir.cs.md), Elm a [Rust](@/glossary/rust.cs.md).
+**zaas** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [JavaScript](@/glossary/javascript.cs.md) (37,3 %), dále [Elixir](@/glossary/elixir.cs.md), [Elm](@/glossary/elm.cs.md) a [Rust](@/glossary/rust.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 7. září 2017; poslední [commit](@/glossary/commit.cs.md) je z 7. září 2017. Zní „Update“. Bez commitu za posledních 48 měsíců je veden jako archiv: práce z období 2017, ponechaná pro záznam a datovaná podle měření.
 

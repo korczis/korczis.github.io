@@ -3,7 +3,7 @@
 title = "Dockerfile"
 description = "The recipe that builds a container image: a base system, files and commands, reproducible anywhere."
 template = "term.html"
-weight = 5
+weight = 9
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -14,13 +14,22 @@ seo_title = "Dockerfile (programming language)"
 term = "dockerfile"
 kind = "language"
 definition = "The recipe that builds a container image: a base system, files and commands, reproducible anywhere."
-aliases = []
+aliases = ["Docker", "docker"]
 reference = { title = "Dockerfile reference", url = "https://docs.docker.com/reference/dockerfile/" }
-pages = ["projects/media.md", "projects/systems.md", "work/astudo.md", "work/aws-lambda-docker.md", "work/docks.md", "work/el-magico-cache.md", "work/gh-exec-3000.md", "work/hydra.md", "work/microcrawler-js.md", "work/pdf-renderer.md", "work/prismatic-blog.md", "work/tosh.md", "work/zdeny-docker.md"]
-related = ["repository", "commit", "open-source", "shell", "javascript", "elixir", "css", "html"]
+pages = ["projects/media.md", "projects/systems.md", "services/_index.md", "services/attack-surface.md", "services/compliance-screening.md", "services/continuous-monitoring.md", "services/decision-support-ai.md", "services/digital-investigation.md", "services/due-diligence.md", "services/m-and-a.md", "services/reputation-intelligence.md", "skills/_index.md", "skills/ai-transformation.md", "skills/data-integration.md", "skills/data-room.md", "skills/decision-support.md", "skills/document-extraction.md", "skills/due-diligence.md", "skills/entity-resolution.md", "skills/geospatial-analysis.md", "skills/insolvency-monitoring.md", "skills/m-and-a-screening.md", "skills/market-intelligence.md", "skills/orchestration.md", "skills/risk-scoring.md", "work/astudo.md", "work/aws-lambda-docker.md", "work/docks.md", "work/el-magico-cache.md", "work/gh-exec-3000.md", "work/hydra.md", "work/microcrawler-js.md", "work/pdf-renderer.md", "work/prismatic-blog.md", "work/tosh.md", "work/zdeny-docker.md", "_index.md"]
+related = ["javascript", "html", "alpine-js", "fastapi", "claude-api", "flowbite-pro", "shell", "elixir"]
 og_title = "Dockerfile: glossary"
 og_image = "og/glossary-dockerfile.png"
 keywords = ["Dockerfile", "Programming language", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,3 +40,14 @@ span = 3
 height = "md"
 tone = "night"
 +++
+I have written Dockerfile in 9 public repositories, from 2018 to 2025; in 4 of them it is the main language.
+
+What it was for: [Systems and infrastructure](@/projects/systems.md) (4), [Tools](@/projects/tools.md) (3), [Libraries](@/projects/libraries.md) (1) and [Media and art](@/projects/media.md) (1).
+
+Most recently: [astudo](@/work/astudo.md); [docks](@/work/docks.md): Repository containing useful Dockerfile(s); [hydra](@/work/hydra.md): Modular wrapper and interface for pool of orchestrated Google Chrome instances.
+
+1 of these projects runs as a live site.
+
+I also used it in client work under confidentiality agreements. Roles: Architect, Lead engineer, AI engineer and Data engineer. What was solved: LLM agents, Decision support, AI transformation and Audit trail. The use cases below give the principle and the intent of that work; no client, person, date or number is named.
+
+How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses Dockerfile: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links Dockerfile to the repositories and to the other languages and technologies they use together.

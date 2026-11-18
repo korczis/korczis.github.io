@@ -17,7 +17,7 @@ og_description = "microcrawler-elixir: Data a GIS, Elixir, Shell a Makefile, 201
 og_image = "og/cs-work-microcrawler-elixir.png"
 schema = "project"
 keywords = ["microcrawler-elixir", "Data a GIS", "Elixir", "Shell", "Makefile", "2016", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["elixir", "shell", "gis", "repository", "commit", "open-source"]
+terms = ["elixir", "shell", "makefile", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -29,7 +29,7 @@ height = "md"
 tone = "night"
 vars = { cadence = "každých 6 hodin" }
 +++
-**microcrawler-elixir** je projekt z kategorie [Data a GIS](@/projects/data.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (95,6 %), dále [Shell](@/glossary/shell.cs.md) a Makefile.
+**microcrawler-elixir** je projekt z kategorie [Data a GIS](@/projects/data.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (95,6 %), dále [Shell](@/glossary/shell.cs.md) a [Makefile](@/glossary/makefile.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 16. září 2019; poslední [commit](@/glossary/commit.cs.md) je z 25. září 2016. Zní „Use Microcrawler.Downloader.get for testing instead of Microcrawler.Downloader.get!“. Bez commitu za posledních 48 měsíců je veden jako archiv: práce z období 2016, ponechaná pro záznam a datovaná podle měření.
 

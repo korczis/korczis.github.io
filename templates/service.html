@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+
+{#- One service (scripts/build-services.mjs from data/services.toml): the owner's words (promise,
+    problem, principle, method, deliverables, sources, use cases) and the derived evidence
+    (data/services.json): the skills it draws on, the technologies, the public repositories and the
+    client engagements by sector and role. Rule project.services-derived. #}
+{% block content %}
+{%- set sfx = "" %}{% if lang is defined and lang != config.default_language %}{% set sfx = "_" ~ lang %}{% endif -%}
+{%- set link = "font-medium text-primary-700 hover:underline dark:text-primary-300" -%}
+{%- set sv = load_data(path="data/services.toml") -%}
+{%- set sj = load_data(path="data/services.json") -%}
+{%- set xr = load_data(path="data/experience-rules.toml") -%}
+{%- set cat = load_data(path="data/projects.toml") -%}
+{%- for x in sv.services %}{% if x.id == page.extra.service %}{% set_global s = x %}{% endif %}{% endfor -%}
+{%- set se = sj.services[s.id] -%}
+{{ <page_header title={page.title} lead={page.description} parent={trans(key="services_title", lang=lang)} parent_url={get_url(path="@/services/_index.md", lang=lang)} lang={lang} /> }}
+
+<div class="space-y-4 px-4 pt-6">
+  {#- The case for it: the problem and the principle, beside the skills it draws on. #}
+  <div class="grid grid-cols-1 gap-4 xl:grid-cols-3">
+    {% <card cls="xl:col-span-2" labelledby="problem-title"> %}
+      <div class="flex items-start gap-4">
+        <span class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-primary-100 text-primary-700 dark:bg-primary-900 dark:text-primary-300">{{ <icon name={s.icon} class="h-6 w-6" /> }}</span>
+        <div class="min-w-0">
+          <h2 id="problem-title" class="text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400">{{ trans(key="service_problem", lang=lang) }}</h2>
+          <p class="mt-2 text-lg leading-relaxed text-gray-900 dark:text-white">{{ s["problem" ~ sfx] }}</p>
+        </div>
+      </div>
+      <h2 class="mt-6 text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400">{{ trans(key="service_principle", lang=lang) }}</h2>
+      <p class="mt-2 leading-relaxed text-gray-700 dark:text-gray-300">{{ s["principle" ~ sfx] }}</p>
+      <h2 class="mt-6 text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400">{{ trans(key="service_sources", lang=lang) }}</h2>
+      <ul class="mt-2 flex flex-wrap gap-1.5">{% for src in s.sources %}<li>{{ <chip label={src} variant="plain" /> }}</li>{% endfor %}</ul>
+    {% </card> %}
+    {% <card labelledby="skills-title"> %}
+      {{ <card_head id="skills-title" title={trans(key="service_skills", lang=lang)} action={trans(key="services_all_skills", lang=lang)} href={get_url(path="@/skills/_index.md", lang=lang)} /> }}
+      <ul class="space-y-2">
+        {%- for k in s.skills %}{% set c = xr.capabilities[k] %}
+        <li><a href="{{ get_url(path='@/skills/' ~ k ~ '.md', lang=lang) }}" class="group block rounded-lg border border-gray-200 p-3 hover:border-primary-300 hover:bg-primary-50 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-primary-800">
+          <span class="font-semibold text-gray-900 group-hover:text-primary-700 dark:text-white dark:group-hover:text-primary-300">{{ c["name" ~ sfx] }}</span>
+          <span class="mt-0.5 block text-xs text-gray-600 line-clamp-2 dark:text-gray-400">{{ c["description" ~ sfx] }}</span>
+        </a></li>
+        {%- endfor %}
+      </ul>
+    {% </card> %}
+  </div>
+
+  {#- Method (Flowbite Pro stepper, vertical) and what is delivered. #}
+  <div class="grid grid-cols-1 gap-4 xl:grid-cols-3">
+    {% <card cls="xl:col-span-2" labelledby="method-title"> %}
+      {{ <card_head id="method-title" title={trans(key="service_method", lang=lang)} /> }}
+      <ol class="relative space-y-6 border-s border-gray-200 ps-8 dark:border-gray-700">
+        {%- for step in s["method" ~ sfx] %}
+        <li class="relative">
+          <span class="absolute -start-12 flex h-8 w-8 items-center justify-center rounded-full bg-primary-100 text-sm font-bold text-primary-800 ring-4 ring-white dark:bg-primary-900 dark:text-primary-300 dark:ring-gray-800">{{ loop.index }}</span>
+          <p class="pt-1 text-gray-900 dark:text-white">{{ step }}</p>
+        </li>
+        {%- endfor %}
+      </ol>
+    {% </card> %}
+    {% <card labelledby="deliverables-title"> %}
+      {{ <card_head id="deliverables-title" title={trans(key="service_deliverables", lang=lang)} /> }}
+      <ul class="space-y-3">
+        {%- for d in s["deliverables" ~ sfx] %}
+        <li class="flex items-start gap-2 text-gray-700 dark:text-gray-300">{{ <icon name="check" class="mt-0.5 h-5 w-5 shrink-0 text-green-600 dark:text-green-400" /> }}<span>{{ d }}</span></li>
+        {%- endfor %}
+      </ul>
+    {% </card> %}
+  </div>
+
+  {#- Abstract use cases: problem, approach, outcome. #}
+  {%- if s.cases is defined and s.cases | length > 0 %}
+  {% <card labelledby="cases-title"> %}
+    {{ <card_head id="cases-title" title={trans(key="service_cases", lang=lang)} lead={trans(key="service_cases_lead", lang=lang)} /> }}
+    <ol class="grid grid-cols-1 gap-4 lg:grid-cols-2">
+      {%- for c in s.cases %}
+      <li class="rounded-lg border border-gray-200 p-4 dark:border-gray-700">
+        <dl class="space-y-3 text-sm">
+          <div><dt class="text-xs font-semibold uppercase tracking-wide text-red-700 dark:text-red-400">{{ trans(key="service_case_problem", lang=lang) }}</dt><dd class="mt-1 text-gray-900 dark:text-white">{{ c["problem" ~ sfx] }}</dd></div>
+          <div><dt class="text-xs font-semibold uppercase tracking-wide text-primary-700 dark:text-primary-300">{{ trans(key="service_case_approach", lang=lang) }}</dt><dd class="mt-1 text-gray-700 dark:text-gray-300">{{ c["approach" ~ sfx] }}</dd></div>
+          <div><dt class="text-xs font-semibold uppercase tracking-wide text-green-700 dark:text-green-400">{{ trans(key="service_case_outcome", lang=lang) }}</dt><dd class="mt-1 text-gray-700 dark:text-gray-300">{{ c["outcome" ~ sfx] }}</dd></div>
+        </dl>
+      </li>
+      {%- endfor %}
+    </ol>
+  {% </card> %}
+  {%- endif %}
+
+  {%- include "partials/viz-grid.html" %}
+  {%- include "partials/service-evidence.html" %}
+
+  {%- if page.lower %}{% set lo = page.lower %}{% else %}{% set lo = {"permalink": "", "title": "", "description": ""} %}{% endif %}
+  {%- if page.higher %}{% set hi = page.higher %}{% else %}{% set hi = {"permalink": "", "title": "", "description": ""} %}{% endif %}
+  {{ <pager lang={lang} label={trans(key="services_all", lang=lang)} prev_href={lo.permalink} prev_title={lo.title} prev_note={lo.description} next_href={hi.permalink} next_title={hi.title} next_note={hi.description} /> }}
+</div>
+{% endblock content %}

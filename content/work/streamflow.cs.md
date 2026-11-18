@@ -17,7 +17,7 @@ og_description = "streamflow: Nástroje, Rust a Makefile, 2017, archiv. Zdrojov�
 og_image = "og/cs-work-streamflow.png"
 schema = "project"
 keywords = ["streamflow", "Nástroje", "Rust", "Makefile", "2017", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["rust", "open-source", "repository", "commit"]
+terms = ["rust", "makefile", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,7 +28,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**streamflow** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [Rust](@/glossary/rust.cs.md) (97,9 %), dále Makefile.
+**streamflow** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [Rust](@/glossary/rust.cs.md) (97,9 %), dále [Makefile](@/glossary/makefile.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 15. května 2017; poslední [commit](@/glossary/commit.cs.md) je z 22. května 2017. Zní „WIP“. Bez commitu za posledních 48 měsíců je veden jako archiv: práce z období 2017, ponechaná pro záznam a datovaná podle měření.
 

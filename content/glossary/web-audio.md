@@ -3,7 +3,7 @@
 title = "Web Audio"
 description = "The browser API for generating, processing and analysing sound in real time."
 template = "term.html"
-weight = 33
+weight = 67
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -16,11 +16,20 @@ kind = "technology"
 definition = "The browser API for generating, processing and analysing sound in real time."
 aliases = []
 reference = { title = "MDN Web Docs: Web Audio API", url = "https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API" }
-pages = ["projects/science.md", "work/oscilla.md"]
-related = ["data-visualisation", "javascript", "repository", "alpine-js", "apache-echarts", "commit", "cpp", "css"]
+pages = ["projects/science.md", "services/interactive-data-products.md", "skills/contestable-decisions.md", "work/oscilla.md"]
+related = ["javascript", "css", "data-visualisation", "html", "alpine-js", "apache-echarts", "elixir", "flowbite-pro"]
 og_title = "Web Audio: glossary"
 og_image = "og/glossary-web-audio.png"
 keywords = ["Web Audio", "Technology", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,3 +40,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
+Web Audio is part of 1 of my public repositories, from 2026 to 2026.
+
+What it was for: [Science and visualisation](@/projects/science.md) (1).
+
+Most recently: [Oscilla](@/work/oscilla.md): Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.
+
+1 of these projects runs as a live site.
+
+How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses Web Audio: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links Web Audio to the repositories and to the other languages and technologies they use together.

@@ -3,7 +3,7 @@
 title = "Cytoscape.js"
 description = "Knihovna pro kreslení a analýzu grafů (sítí uzlů a hran) v prohlížeči."
 template = "term.html"
-weight = 22
+weight = 45
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -16,11 +16,20 @@ kind = "technology"
 definition = "Knihovna pro kreslení a analýzu grafů (sítí uzlů a hran) v prohlížeči."
 aliases = []
 reference = { title = "js.cytoscape.org", url = "https://js.cytoscape.org/" }
-pages = ["projects/knowledge.cs.md", "stack.cs.md", "work/kompendium-epistemicke-anihilace.cs.md"]
-related = ["alpine-js", "apache-echarts", "flowbite-pro", "zola", "elixir", "github-pages", "repository", "chart-js"]
+pages = ["projects/knowledge.cs.md", "services/digital-investigation.cs.md", "skills/knowledge-graph.cs.md", "stack.cs.md", "work/kompendium-epistemicke-anihilace.cs.md"]
+related = ["alpine-js", "flowbite-pro", "apache-echarts", "elixir", "html", "javascript", "python", "shell"]
 og_title = "Cytoscape.js: slovník"
 og_image = "og/cs-glossary-cytoscape-js.png"
 keywords = ["Cytoscape.js", "Technologie", "Slovník", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,3 +40,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
+Cytoscape.js je součástí 1 mého veřejného repozitáře, od roku 2026 do 2026.
+
+K čemu to sloužilo: [Znalosti](@/projects/knowledge.cs.md) (1).
+
+Naposledy: [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat.
+
+1 z těchto projektů běží jako živý web.
+
+Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak Cytoscape.js používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje Cytoscape.js s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

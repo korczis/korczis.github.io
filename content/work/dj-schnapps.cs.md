@@ -17,7 +17,7 @@ og_description = "dj-schnapps: Média a umění, Elixir, CSS a JavaScript, 2019,
 og_image = "og/cs-work-dj-schnapps.png"
 schema = "project"
 keywords = ["dj-schnapps", "Média a umění", "Elixir", "CSS", "JavaScript", "2019", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["elixir", "css", "javascript", "html", "data-visualisation", "repository", "commit", "open-source"]
+terms = ["elixir", "css", "javascript", "m4", "html", "makefile", "data-visualisation", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,7 +28,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**dj-schnapps** je projekt z kategorie [Média a umění](@/projects/media.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (59,9 %), dále [CSS](@/glossary/css.cs.md), [JavaScript](@/glossary/javascript.cs.md) a M4.
+**dj-schnapps** je projekt z kategorie [Média a umění](@/projects/media.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (59,9 %), dále [CSS](@/glossary/css.cs.md), [JavaScript](@/glossary/javascript.cs.md) a [M4](@/glossary/m4.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 26. října 2019; poslední [commit](@/glossary/commit.cs.md) je z 26. listopadu 2019. Zní „First example project (Ableton Live)“. Bez commitu za posledních 48 měsíců je veden jako archiv: práce z období 2019, ponechaná pro záznam a datovaná podle měření.
 

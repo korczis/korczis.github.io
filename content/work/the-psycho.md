@@ -17,7 +17,7 @@ og_description = "the-psycho: Tools in Elixir, HTML+EEX and JavaScript, 2025–2
 og_image = "og/work-the-psycho.png"
 schema = "project"
 keywords = ["the-psycho", "Tools", "Elixir", "HTML+EEX", "JavaScript", "2025–2026", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["elixir", "javascript", "css", "open-source", "repository", "commit"]
+terms = ["elixir", "eex", "javascript", "css", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -29,7 +29,7 @@ height = "md"
 tone = "night"
 vars = { cadence = "every 6 hours" }
 +++
-**the-psycho** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (82.8 %), with HTML+EEX, [JavaScript](@/glossary/javascript.md) and [CSS](@/glossary/css.md).
+**the-psycho** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (82.8 %), with [HTML+EEX](@/glossary/eex.md), [JavaScript](@/glossary/javascript.md) and [CSS](@/glossary/css.md).
 
 The [repository](@/glossary/repository.md) was created on 25 January 2025; its latest [commit](@/glossary/commit.md) is from 4 February 2026. It reads “feat(aiad): inject AIAD v1.0.0 infrastructure”. That places it among the projects active in the last 12 months.
 

@@ -17,7 +17,7 @@ og_description = "gooddata_rails_app: Data a GIS, Ruby, CSS a JavaScript, 2014, 
 og_image = "og/cs-work-gooddata-rails-app.png"
 schema = "project"
 keywords = ["gooddata_rails_app", "Data a GIS", "Ruby", "CSS", "JavaScript", "2014", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["ruby", "css", "javascript", "gis", "repository", "commit", "open-source"]
+terms = ["ruby", "css", "javascript", "coffeescript", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,7 +28,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**gooddata\_rails\_app** je projekt z kategorie [Data a GIS](@/projects/data.cs.md). Jeho kód je napsaný hlavně v jazyce [Ruby](@/glossary/ruby.cs.md) (87,5 %), dále [CSS](@/glossary/css.cs.md), [JavaScript](@/glossary/javascript.cs.md) a CoffeeScript.
+**gooddata\_rails\_app** je projekt z kategorie [Data a GIS](@/projects/data.cs.md). Jeho kód je napsaný hlavně v jazyce [Ruby](@/glossary/ruby.cs.md) (87,5 %), dále [CSS](@/glossary/css.cs.md), [JavaScript](@/glossary/javascript.cs.md) a [CoffeeScript](@/glossary/coffeescript.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 31. října 2014; poslední [commit](@/glossary/commit.cs.md) je z 31. října 2014. Zní „Update README.md“. Bez commitu za posledních 48 měsíců je veden jako archiv: práce z období 2014, ponechaná pro záznam a datovaná podle měření.
 

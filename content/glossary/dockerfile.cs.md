@@ -3,7 +3,7 @@
 title = "Dockerfile"
 description = "Recept, který staví obraz kontejneru: základní systém, soubory a příkazy, reprodukovatelné kdekoli."
 template = "term.html"
-weight = 5
+weight = 9
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -14,13 +14,22 @@ seo_title = "Dockerfile (programovací jazyk)"
 term = "dockerfile"
 kind = "language"
 definition = "Recept, který staví obraz kontejneru: základní systém, soubory a příkazy, reprodukovatelné kdekoli."
-aliases = []
+aliases = ["Docker", "docker"]
 reference = { title = "Dockerfile reference", url = "https://docs.docker.com/reference/dockerfile/" }
-pages = ["projects/media.cs.md", "projects/systems.cs.md", "work/astudo.cs.md", "work/aws-lambda-docker.cs.md", "work/docks.cs.md", "work/el-magico-cache.cs.md", "work/gh-exec-3000.cs.md", "work/hydra.cs.md", "work/microcrawler-js.cs.md", "work/pdf-renderer.cs.md", "work/prismatic-blog.cs.md", "work/tosh.cs.md", "work/zdeny-docker.cs.md"]
-related = ["repository", "commit", "open-source", "shell", "javascript", "elixir", "css", "html"]
+pages = ["projects/media.cs.md", "projects/systems.cs.md", "services/_index.cs.md", "services/attack-surface.cs.md", "services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "services/decision-support-ai.cs.md", "services/digital-investigation.cs.md", "services/due-diligence.cs.md", "services/m-and-a.cs.md", "services/reputation-intelligence.cs.md", "skills/_index.cs.md", "skills/ai-transformation.cs.md", "skills/data-integration.cs.md", "skills/data-room.cs.md", "skills/decision-support.cs.md", "skills/document-extraction.cs.md", "skills/due-diligence.cs.md", "skills/entity-resolution.cs.md", "skills/geospatial-analysis.cs.md", "skills/insolvency-monitoring.cs.md", "skills/m-and-a-screening.cs.md", "skills/market-intelligence.cs.md", "skills/orchestration.cs.md", "skills/risk-scoring.cs.md", "work/astudo.cs.md", "work/aws-lambda-docker.cs.md", "work/docks.cs.md", "work/el-magico-cache.cs.md", "work/gh-exec-3000.cs.md", "work/hydra.cs.md", "work/microcrawler-js.cs.md", "work/pdf-renderer.cs.md", "work/prismatic-blog.cs.md", "work/tosh.cs.md", "work/zdeny-docker.cs.md", "_index.cs.md"]
+related = ["javascript", "html", "alpine-js", "fastapi", "claude-api", "flowbite-pro", "shell", "elixir"]
 og_title = "Dockerfile: slovník"
 og_image = "og/cs-glossary-dockerfile.png"
 keywords = ["Dockerfile", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,3 +40,14 @@ span = 3
 height = "md"
 tone = "night"
 +++
+Dockerfile jsem psal v 9 veřejných repozitářích, od roku 2018 do 2025; ve 4 z nich je hlavním jazykem.
+
+K čemu to sloužilo: [Systémy a infrastruktura](@/projects/systems.cs.md) (4), [Nástroje](@/projects/tools.cs.md) (3), [Knihovny](@/projects/libraries.cs.md) (1) a [Média a umění](@/projects/media.cs.md) (1).
+
+Naposledy: [astudo](@/work/astudo.cs.md); [docks](@/work/docks.cs.md); [hydra](@/work/hydra.cs.md).
+
+1 z těchto projektů běží jako živý web.
+
+Používal jsem ho také v klientské práci pod dohodami o mlčenlivosti. Role: Architekt, Vedoucí inženýr, Inženýr AI a Datový inženýr. Co se řešilo: Agenti s LLM, Podpora rozhodování, Transformace s AI a Auditní stopa. Případy užití níže popisují princip a záměr této práce; žádný klient, osoba, datum ani číslo nejsou uvedeny.
+
+Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak Dockerfile používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje Dockerfile s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

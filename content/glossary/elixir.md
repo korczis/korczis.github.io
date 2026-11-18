@@ -3,7 +3,7 @@
 title = "Elixir"
 description = "A functional language on the Erlang virtual machine, built for concurrent, fault-tolerant systems."
 template = "term.html"
-weight = 6
+weight = 11
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -16,11 +16,20 @@ kind = "language"
 definition = "A functional language on the Erlang virtual machine, built for concurrent, fault-tolerant systems."
 aliases = []
 reference = { title = "elixir-lang.org", url = "https://elixir-lang.org/" }
-pages = ["_index.md", "about.md", "hire.md", "projects/ai.md", "projects/data.md", "projects/knowledge.md", "projects/learning.md", "projects/libraries.md", "projects/media.md", "projects/science.md", "projects/tools.md", "projects/web.md", "work/astudo.md", "work/corvidae.md", "work/crisis-map.md", "work/czech-stats.md", "work/distance-calculator.md", "work/dj-schnapps.md", "work/el-magico-cache.md", "work/gauc-ex.md", "work/gooddata-graphql.md", "work/hydra.md", "work/job-processor.md", "work/kanec.md", "work/kompendium-epistemicke-anihilace.md", "work/korczis-gitlab-io.md", "work/kuzu-ex.md", "work/llm.md", "work/magic.md", "work/mapoffacts.md", "work/maze.md", "work/meili-rsex.md", "work/microcrawler-elixir.md", "work/prismatic.md", "work/rest-hello-world-benchmark.md", "work/rustler-mix.md", "work/rustler-test.md", "work/sig.md", "work/simple-geocoder.md", "work/skull-elixir.md", "work/sonic-playground.md", "work/test-elixir.md", "work/the-psycho.md", "work/the-scratch.md", "work/tosh.md", "work/web-spa.md", "work/zaas.md"]
-related = ["repository", "open-source", "commit", "javascript", "html", "rust", "css", "shell"]
+pages = ["_index.md", "about.md", "hire.md", "projects/ai.md", "projects/data.md", "projects/knowledge.md", "projects/learning.md", "projects/libraries.md", "projects/media.md", "projects/science.md", "projects/tools.md", "projects/web.md", "services/ai-engineering-governance.md", "services/attack-surface.md", "services/compliance-screening.md", "services/continuous-monitoring.md", "services/decision-support-ai.md", "services/digital-forensics.md", "services/digital-investigation.md", "services/due-diligence.md", "services/interactive-data-products.md", "services/m-and-a.md", "services/reputation-intelligence.md", "skills/data-integration.md", "skills/decision-support.md", "skills/geospatial-analysis.md", "skills/interactive-visualisation.md", "skills/llm-agents.md", "skills/media-forensics.md", "skills/osint-investigation.md", "skills/registry-intelligence.md", "work/astudo.md", "work/corvidae.md", "work/crisis-map.md", "work/czech-stats.md", "work/distance-calculator.md", "work/dj-schnapps.md", "work/el-magico-cache.md", "work/gauc-ex.md", "work/gooddata-graphql.md", "work/hydra.md", "work/job-processor.md", "work/kanec.md", "work/kompendium-epistemicke-anihilace.md", "work/korczis-gitlab-io.md", "work/kuzu-ex.md", "work/llm.md", "work/magic.md", "work/mapoffacts.md", "work/maze.md", "work/meili-rsex.md", "work/microcrawler-elixir.md", "work/prismatic.md", "work/rest-hello-world-benchmark.md", "work/rustler-mix.md", "work/rustler-test.md", "work/sig.md", "work/simple-geocoder.md", "work/skull-elixir.md", "work/sonic-playground.md", "work/test-elixir.md", "work/the-psycho.md", "work/the-scratch.md", "work/tosh.md", "work/web-spa.md", "work/zaas.md"]
+related = ["javascript", "repository", "open-source", "html", "commit", "css", "shell", "rust"]
 og_title = "Elixir: glossary"
 og_image = "og/glossary-elixir.png"
 keywords = ["Elixir", "Programming language", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,3 +40,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
+I have written Elixir in 35 public repositories, from 2016 to 2026; in 26 of them it is the main language.
+
+What it was for: [Tools](@/projects/tools.md) (12), [Data and GIS](@/projects/data.md) (6), [Web](@/projects/web.md) (4) and [Learning and experiments](@/projects/learning.md) (3).
+
+Most recently: [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore; [Sonic Playground](@/work/sonic-playground.md): A hand-picked music blog built with Phoenix and Elixir on the Kita theme; [Crisis map](@/work/crisis-map.md): Reports geocoded through a local Nominatim, stored as PostGIS geography and served from one capability registry: LiveView, REST, OpenAPI, MCP and CLI.
+
+3 of these projects run as live sites.
+
+How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses Elixir: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links Elixir to the repositories and to the other languages and technologies they use together.

@@ -132,6 +132,7 @@
   //   link('term', 'Rust')        a glossary term by id, title or alias
   //   link('work', 'algoglyph')   a work page by repository
   //   link('category', 'ai')      a category page by key
+  //   link('service', 'm-and-a')  a service page by id; link('skill', 'osint-investigation') a skill
   //   link('page', 'repositories')  a listing page (projects, work, glossary, repositories)
   //   link('filter', { page: 'repositories', language: 'Rust' })   a listing filtered by its query
   //   link('language', 'Rust')    its term page, else the repositories filtered by it

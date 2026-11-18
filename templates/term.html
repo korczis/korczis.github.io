@@ -1,7 +1,10 @@
 {% extends "base.html" %}
 
 {#- One glossary term (scripts/build-glossary.mjs): its definition, a source, the pages of this site
-    that build on it (extra.pages, derived from their front matter) and related terms. #}
+    that build on it (extra.pages, derived from their front matter) and related terms. A language or
+    a technology also shows its evidence (data/skills.json, scripts/lib/skills.mjs): the measured
+    KPIs, what it was used for, every public repository that uses it and how, and the use cases of
+    client work, named by sector, role and capability only (ADR 0006). #}
 {% block content %}
 {%- set alp = "" %}{% if lang is defined and lang != config.default_language %}{% set alp = "." ~ lang %}{% endif -%}
 {%- set link = "font-medium text-primary-700 hover:underline dark:text-primary-300" -%}
@@ -24,6 +27,114 @@
       </ul>
     {% </card> %}
   </div>
+  {%- set sk = load_data(path="data/skills.json") -%}
+  {%- set cat = load_data(path="data/projects.toml") -%}
+  {%- set xr = load_data(path="data/experience-rules.toml") -%}
+  {%- set sfx = "" %}{% if lang is defined and lang != config.default_language %}{% set sfx = "_" ~ lang %}{% endif -%}
+  {%- if sk.terms[page.extra.term] is defined %}{% set ev = sk.terms[page.extra.term] -%}
+  {%- if ev.counts.repos > 0 %}
+  {#- The measured KPIs (Flowbite Pro stat cards), each linking to where it is shown. #}
+  <div class="grid grid-cols-2 gap-4 lg:grid-cols-4">
+    <a href="#evidence-title" class="block rounded-lg hover:ring-2 hover:ring-primary-300 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:hover:ring-primary-800">{{ <kpi value={ev.counts.repos ~ ""} label={trans(key="skill_repos", lang=lang)} /> }}</a>
+    {%- if page.extra.kind == "language" %}
+    <a href="{{ get_url(path='@/repositories/_index.md', lang=lang) }}?language={{ page.title | urlencode }}" class="block rounded-lg hover:ring-2 hover:ring-primary-300 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:hover:ring-primary-800">{{ <kpi value={ev.counts.primary ~ ""} label={trans(key="skill_as_main", lang=lang)} /> }}</a>
+    {%- else %}
+    <a href="#used-for-title" class="block rounded-lg hover:ring-2 hover:ring-primary-300 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:hover:ring-primary-800">{{ <kpi value={ev.categories | length ~ ""} label={trans(key="category", lang=lang)} /> }}</a>
+    {%- endif %}
+    <a href="#evidence-title" class="block rounded-lg hover:ring-2 hover:ring-primary-300 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:hover:ring-primary-800">{{ <kpi value={ev.first ~ "–" ~ ev.last} label={trans(key="skill_years", lang=lang)} /> }}</a>
+    <a href="#evidence-title" class="block rounded-lg hover:ring-2 hover:ring-primary-300 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:hover:ring-primary-800">{{ <kpi value={ev.counts.sites ~ ""} label={trans(key="skill_live_sites", lang=lang)} /> }}</a>
+  </div>
+
+  {#- What it was used for: the categories of the repositories, each to its category page. #}
+  {% <card labelledby="used-for-title"> %}
+    {{ <card_head id="used-for-title" title={trans(key="skill_used_for", lang=lang)} lead={trans(key="skill_used_for_lead", lang=lang)} /> }}
+    <ul class="flex flex-wrap gap-2">
+      {%- for c in ev.categories %}
+      <li>{{ <chip label={cat.categories[c.key]["name" ~ sfx]} count={c.n ~ ""} href={get_url(path="@/projects/" ~ c.key ~ ".md", lang=lang)} /> }}</li>
+      {%- endfor %}
+    </ul>
+  {% </card> %}
+
+  {#- Every repository that uses it, newest first (Flowbite Pro table): what it solves, how it uses
+      the term, when it was active, and every link it has. #}
+  {% <card labelledby="evidence-title"> %}
+    {{ <card_head id="evidence-title" title={trans(key="skill_evidence", lang=lang)} lead={trans(key="skill_evidence_lead", lang=lang)} /> }}
+    <div class="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-700" tabindex="0" role="region" aria-labelledby="evidence-title">
+      <table class="w-full text-left text-sm text-gray-600 dark:text-gray-400">
+        <thead class="bg-gray-50 text-xs uppercase text-gray-700 dark:bg-gray-700 dark:text-gray-300">
+          <tr>
+            <th scope="col" class="px-4 py-3">{{ trans(key="skill_project", lang=lang) }}</th>
+            <th scope="col" class="px-4 py-3">{{ trans(key="skill_what_for", lang=lang) }}</th>
+            <th scope="col" class="px-4 py-3">{{ trans(key="skill_how", lang=lang) }}</th>
+            <th scope="col" class="px-4 py-3">{{ trans(key="skill_active", lang=lang) }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {%- for r in ev.repos %}
+          {%- set words = r.description %}{% if sfx == "" and r.summary %}{% set words = r.summary %}{% elif sfx != "" and r["summary" ~ sfx] %}{% set words = r["summary" ~ sfx] %}{% endif %}
+          <tr class="border-b border-gray-200 align-top last:border-0 hover:bg-gray-50 dark:border-gray-700 dark:hover:bg-gray-700">
+            <th scope="row" class="px-4 py-3 font-medium text-gray-900 dark:text-white">
+              {%- if r.work %}<a class="{{ link }} inline-flex min-h-6 min-w-6 items-center" href="{{ get_url(path='@/work/' ~ r.slug ~ '.md', lang=lang) }}">{{ r.title }}</a>{% else %}<a class="{{ link }} inline-flex min-h-6 min-w-6 items-center" href="{{ r.url }}" rel="noopener">{{ r.title }}</a>{% endif %}
+              <div class="mt-1 flex flex-wrap gap-x-3 text-xs font-normal">
+                <a class="{{ link }} inline-flex min-h-6 items-center" href="{{ r.url }}" rel="noopener">{% if "gitlab.com" in r.url %}GitLab{% else %}GitHub{% endif %}</a>
+                {%- if r.site %}<a class="{{ link }} inline-flex min-h-6 items-center" href="{{ r.site }}" rel="noopener">{{ trans(key="skill_site", lang=lang) }}</a>{% endif %}
+                <a class="{{ link }} inline-flex min-h-6 items-center" href="{{ get_url(path='@/projects/' ~ r.category ~ '.md', lang=lang) }}">{{ cat.categories[r.category]["name" ~ sfx] }}</a>
+              </div>
+            </th>
+            <td class="max-w-md px-4 py-3">{% if words %}{{ words }}{% else %}—{% endif %}</td>
+            <td class="px-4 py-3"><ul class="flex flex-wrap gap-1">{% for v in r.via %}{% set vl = trans(key="skill_via_" ~ v, lang=lang) %}{% if v == "code" and r.share %}{% set vl = vl ~ " " ~ r.share ~ " %" %}{% endif %}{% set vt = "gray" %}{% if v == "primary" %}{% set vt = "primary" %}{% endif %}<li>{{ <badge label={vl} tone={vt} /> }}</li>{% endfor %}</ul></td>
+            <td class="tabular whitespace-nowrap px-4 py-3"><time datetime="{{ r.created }}">{{ r.created | truncate(length=4, end="") }}</time>–<time datetime="{{ r.pushed }}">{{ r.pushed | truncate(length=4, end="") }}</time></td>
+          </tr>
+          {%- endfor %}
+        </tbody>
+      </table>
+    </div>
+  {% </card> %}
+  {%- endif %}
+
+  {#- Client work as use cases: sector, role, and what was solved (the capability's principle and
+      intent). No client, person, date or number (ADR 0006, rule project.nda-never-named). #}
+  {%- if ev.engagements | length > 0 %}
+  {% <card labelledby="use-cases-title"> %}
+    {{ <card_head id="use-cases-title" title={trans(key="skill_use_cases", lang=lang)} lead={trans(key="skill_use_cases_lead", lang=lang)} action={trans(key="xp_title", lang=lang)} href={get_url(path="@/_index.md", lang=lang) ~ "#experience"} /> }}
+    <ol class="grid grid-cols-1 gap-4 lg:grid-cols-2">
+      {%- for e in ev.engagements %}
+      <li class="rounded-lg border border-gray-200 p-4 dark:border-gray-700">
+        <h3 class="text-base font-semibold text-gray-900 dark:text-white"><a class="hover:text-primary-700 hover:underline dark:hover:text-primary-300" href="{{ get_url(path='@/_index.md', lang=lang) }}#experience-{{ e.id }}">{{ xr.sectors[e.sector]["name" ~ sfx] }}</a></h3>
+        <p class="mt-1 text-sm text-gray-600 dark:text-gray-400"><span class="font-semibold">{{ trans(key="skill_role", lang=lang) }}:</span> {% for k in e.roles %}{{ xr.roles[k]["name" ~ sfx] }}{% if not loop.last %}, {% endif %}{% endfor %}</p>
+        <ul class="mt-3 space-y-2">
+          {%- for k in e.capabilities %}{% set c = xr.capabilities[k] %}
+          <li class="text-sm"><a class="{{ link }}" href="{{ get_url(path='@/_index.md', lang=lang) }}#xp-cap-{{ k }}">{{ c["name" ~ sfx] }}</a><span class="text-gray-600 dark:text-gray-400">: {{ c["description" ~ sfx] }}</span></li>
+          {%- endfor %}
+        </ul>
+      </li>
+      {%- endfor %}
+    </ol>
+  {% </card> %}
+  {%- endif %}
+  {%- endif %}
+  {#- Knowledge put to work: a concept that skills rest on (a capability's `term`) shows those
+      skills, the services that draw on them and the first skill's evidence (data/services.json),
+      so a piece of knowledge links forward to where it is practised and proven. #}
+  {%- if page.extra.kind == "concept" %}{% set sj = load_data(path="data/services.json") %}{% set sv = load_data(path="data/services.toml") -%}
+  {%- set_global kfirst = "" %}{% for k, c in xr.capabilities %}{% if c.term == page.extra.term and not kfirst %}{% set_global kfirst = k %}{% endif %}{% endfor -%}
+  {%- if kfirst %}
+  {% <card labelledby="practised-title"> %}
+    {{ <card_head id="practised-title" title={trans(key="knowledge_practised", lang=lang)} lead={trans(key="knowledge_practised_lead", lang=lang)} action={trans(key="services_all_skills", lang=lang)} href={get_url(path="@/skills/_index.md", lang=lang)} /> }}
+    <ul class="grid grid-cols-1 gap-3 md:grid-cols-2">
+      {%- for k, c in xr.capabilities %}{% if c.term == page.extra.term %}
+      <li><a href="{{ get_url(path='@/skills/' ~ k ~ '.md', lang=lang) }}" class="group block h-full rounded-lg border border-gray-200 p-4 hover:border-primary-300 hover:bg-primary-50 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-primary-800">
+        <span class="font-semibold text-gray-900 group-hover:text-primary-700 dark:text-white dark:group-hover:text-primary-300">{{ c["name" ~ sfx] }}</span>
+        <span class="mt-1 block text-sm text-gray-600 dark:text-gray-400">{{ c["description" ~ sfx] }}</span>
+        <span class="mt-3 flex flex-wrap gap-1.5">{% for s in sv.services %}{% if k in s.skills %}<span class="rounded-md bg-primary-50 px-2 py-0.5 text-xs font-medium text-primary-800 dark:bg-primary-900 dark:text-primary-300">{{ s["name" ~ sfx] }}</span>{% endif %}{% endfor %}</span>
+      </a></li>
+      {%- endif %}{% endfor %}
+    </ul>
+  {% </card> %}
+  {%- set se = sj.skills[kfirst] %}{% set cat = load_data(path="data/projects.toml") %}
+  {%- include "partials/service-evidence.html" %}
+  {%- endif %}
+  {%- endif %}
   {%- include "partials/viz-grid.html" %}
   {%- if page.extra.pages | length > 0 %}
   {% <card labelledby="used-title"> %}

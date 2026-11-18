@@ -17,7 +17,7 @@ og_description = "iCave: Tools in C++, Arduino and C, 2014–2015, archive. Sour
 og_image = "og/work-icave.png"
 schema = "project"
 keywords = ["iCave", "Tools", "C++", "Arduino", "2014–2015", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["cpp", "c", "open-source", "repository", "commit"]
+terms = ["cpp", "arduino", "c", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,7 +28,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**iCave** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [C++](@/glossary/cpp.md) (86.9 %), with Arduino and [C](@/glossary/c.md).
+**iCave** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [C++](@/glossary/cpp.md) (86.9 %), with [Arduino](@/glossary/arduino.md) and [C](@/glossary/c.md).
 
 The [repository](@/glossary/repository.md) was created on 1 March 2014; its latest [commit](@/glossary/commit.md) is from 22 February 2015. It reads “Update display.h”. With no commit in the last 48 months it is listed as archive: work from 2014–2015, kept for the record and dated as measured.
 

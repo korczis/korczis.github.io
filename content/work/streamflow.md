@@ -17,7 +17,7 @@ og_description = "streamflow: Tools in Rust and Makefile, 2017, archive. Source 
 og_image = "og/work-streamflow.png"
 schema = "project"
 keywords = ["streamflow", "Tools", "Rust", "Makefile", "2017", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["rust", "open-source", "repository", "commit"]
+terms = ["rust", "makefile", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,7 +28,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**streamflow** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [Rust](@/glossary/rust.md) (97.9 %), with Makefile.
+**streamflow** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [Rust](@/glossary/rust.md) (97.9 %), with [Makefile](@/glossary/makefile.md).
 
 The [repository](@/glossary/repository.md) was created on 15 May 2017; its latest [commit](@/glossary/commit.md) is from 22 May 2017. It reads “WIP”. With no commit in the last 48 months it is listed as archive: work from 2017, kept for the record and dated as measured.
 

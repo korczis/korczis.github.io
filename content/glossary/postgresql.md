@@ -3,7 +3,7 @@
 title = "PostgreSQL"
 description = "An open-source relational database known for correctness and extensions."
 template = "term.html"
-weight = 31
+weight = 62
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -14,13 +14,22 @@ seo_title = "PostgreSQL (technology)"
 term = "postgresql"
 kind = "technology"
 definition = "An open-source relational database known for correctness and extensions."
-aliases = []
+aliases = ["postgres"]
 reference = { title = "postgresql.org", url = "https://www.postgresql.org/about/" }
-pages = ["hire.md", "projects/tools.md", "work/csv2psql.md"]
-related = ["open-source", "elixir", "repository", "ruby", "rust", "ai-agent", "commit", "cpp"]
+pages = ["hire.md", "projects/tools.md", "services/attack-surface.md", "services/compliance-screening.md", "services/continuous-monitoring.md", "services/digital-forensics.md", "services/digital-investigation.md", "services/due-diligence.md", "services/m-and-a.md", "work/csv2psql.md", "_index.md"]
+related = ["elixir", "html", "javascript", "alpine-js", "claude-api", "flowbite-pro", "service", "dockerfile"]
 og_title = "PostgreSQL: glossary"
 og_image = "og/glossary-postgresql.png"
 keywords = ["PostgreSQL", "Technology", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,3 +40,14 @@ span = 3
 height = "md"
 tone = "night"
 +++
+PostgreSQL is part of 1 of my public repositories, from 2014 to 2015.
+
+What it was for: [Tools](@/projects/tools.md) (1).
+
+Most recently: [csv2psql](@/work/csv2psql.md): Turns CSV into insert or update statements for PostgreSQL.
+
+1 of these projects runs as a live site.
+
+I also used it in client work under confidentiality agreements. Roles: Architect, Lead engineer, AI engineer and Data engineer. What was solved: LLM agents, Decision support, AI transformation and Audit trail. The use cases below give the principle and the intent of that work; no client, person, date or number is named.
+
+How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses PostgreSQL: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links PostgreSQL to the repositories and to the other languages and technologies they use together.

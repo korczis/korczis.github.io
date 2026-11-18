@@ -3,7 +3,7 @@
 title = "Auditní stopa"
 description = "Chronologický záznam o tom, kdo co udělal a na základě jakých podkladů, uchovaný proto, aby šlo práci později ověřit a zrekonstruovat."
 template = "term.html"
-weight = 36
+weight = 71
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]
@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Chronologický záznam o tom, kdo co udělal a na základě jakých podkladů, uchovaný proto, aby šlo práci později ověřit a zrekonstruovat."
 aliases = []
 reference = { title = "Audit trail (Wikipedia)", url = "https://en.wikipedia.org/wiki/Audit_trail" }
-pages = ["_index.cs.md", "projects/security.cs.md", "work/magic.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/peacemaker.cs.md", "work/ratnet.cs.md", "work/zlown.cs.md"]
-related = ["due-diligence", "orchestration", "osint", "repository", "commit", "data-integration", "decision-support-system", "information-extraction"]
+pages = ["_index.cs.md", "projects/security.cs.md", "services/_index.cs.md", "services/ai-engineering-governance.cs.md", "services/decision-support-ai.cs.md", "services/digital-forensics.cs.md", "skills/_index.cs.md", "skills/audit-trail.cs.md", "work/magic.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/peacemaker.cs.md", "work/ratnet.cs.md", "work/zlown.cs.md"]
+related = ["orchestration", "decision-support-system", "due-diligence", "information-extraction", "osint", "data-integration", "html", "insolvency"]
 og_title = "Auditní stopa: slovník"
 og_image = "og/cs-glossary-audit-trail.png"
 keywords = ["Auditní stopa", "Audit trail", "Koncept", "Slovník", "Tomáš Korčák"]

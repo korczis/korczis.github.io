@@ -17,7 +17,7 @@ og_description = "solr-core-minimal: Data a GIS, XSLT, JavaScript a CSS, 2014, a
 og_image = "og/cs-work-solr-core-minimal.png"
 schema = "project"
 keywords = ["solr-core-minimal", "Data a GIS", "XSLT", "JavaScript", "CSS", "2014", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["javascript", "css", "gis", "repository", "commit", "open-source"]
+terms = ["xslt", "javascript", "css", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,7 +28,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**solr-core-minimal** je projekt z kategorie [Data a GIS](@/projects/data.cs.md). Jeho kód je napsaný hlavně v jazyce XSLT (49,8 %), dále [JavaScript](@/glossary/javascript.cs.md) a [CSS](@/glossary/css.cs.md).
+**solr-core-minimal** je projekt z kategorie [Data a GIS](@/projects/data.cs.md). Jeho kód je napsaný hlavně v jazyce [XSLT](@/glossary/xslt.cs.md) (49,8 %), dále [JavaScript](@/glossary/javascript.cs.md) a [CSS](@/glossary/css.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 5. února 2014; poslední [commit](@/glossary/commit.cs.md) je z 5. února 2014. Zní „Removed uncessary stuff“. Bez commitu za posledních 48 měsíců je veden jako archiv: práce z období 2014, ponechaná pro záznam a datovaná podle měření.
 

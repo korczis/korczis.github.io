@@ -17,7 +17,7 @@ og_description = "ctu-cz: Data and GIS in JavaScript, HTML and Rust, 2020, archi
 og_image = "og/work-ctu-cz.png"
 schema = "project"
 keywords = ["ctu-cz", "Data and GIS", "JavaScript", "HTML", "Rust", "2020", "GitHub", "Tomas Korcak", "korczis"]
-terms = ["javascript", "html", "rust", "gis", "repository", "commit", "open-source"]
+terms = ["javascript", "html", "rust", "makefile", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,7 +28,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**ctu-cz** is a project in [Data and GIS](@/projects/data.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (99.9 %), with [HTML](@/glossary/html.md), [Rust](@/glossary/rust.md) and Makefile.
+**ctu-cz** is a project in [Data and GIS](@/projects/data.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (99.9 %), with [HTML](@/glossary/html.md), [Rust](@/glossary/rust.md) and [Makefile](@/glossary/makefile.md).
 
 The [repository](@/glossary/repository.md) was created on 24 April 2020; its latest [commit](@/glossary/commit.md) is from 15 May 2020. It reads “Update README.md”. With no commit in the last 48 months it is listed as archive: work from 2020, kept for the record and dated as measured.
 

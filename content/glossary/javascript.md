@@ -3,7 +3,7 @@
 title = "JavaScript"
 description = "The programming language of the web browser, also run on servers through Node.js. Every interactive part of this site is JavaScript."
 template = "term.html"
-weight = 11
+weight = 17
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -16,11 +16,20 @@ kind = "language"
 definition = "The programming language of the web browser, also run on servers through Node.js. Every interactive part of this site is JavaScript."
 aliases = []
 reference = { title = "MDN Web Docs: JavaScript", url = "https://developer.mozilla.org/en-US/docs/Web/JavaScript" }
-pages = ["about.md", "projects/data.md", "projects/learning.md", "projects/libraries.md", "projects/media.md", "projects/science.md", "projects/systems.md", "projects/tools.md", "projects/web.md", "work/algoglyph.md", "work/annasabatova-cz.md", "work/apollo-crawler-extension.md", "work/apollocrawler-com.md", "work/astronomists.md", "work/astudo.md", "work/babel-plugin-transform-graphql.md", "work/bcnode-old.md", "work/brepta.md", "work/bubbler.md", "work/catharsis-as-a-service.md", "work/craftsmen.md", "work/crisis-map.md", "work/ctu-cz.md", "work/czech-stats.md", "work/data-atlas.md", "work/dispatcher.md", "work/dj-schnapps.md", "work/docker-conf2015.md", "work/generator-microscratch.md", "work/generator-the-scratch.md", "work/gists-search.md", "work/github-extractor.md", "work/gooddata-graphql.md", "work/gooddata-proxy.md", "work/gooddata-rails-app.md", "work/hydra.md", "work/kanec.md", "work/kompendium-epistemicke-anihilace.md", "work/korczis-com.md", "work/korczis-github-com.md", "work/korczis-github-io.md", "work/lethe-it.md", "work/lola.md", "work/magic.md", "work/majordomus-reel.md", "work/mapoffacts.md", "work/maze.md", "work/microcrawler-browser.md", "work/microcrawler-couchapp.md", "work/microcrawler-crawler-bam-brno-cz.md", "work/microcrawler-crawler-craiglist-com.md", "work/microcrawler-crawler-firmy-cz.md", "work/microcrawler-crawler-google-com.md", "work/microcrawler-crawler-heureka-cz.md", "work/microcrawler-crawler-news-ycombinator-com.md", "work/microcrawler-crawler-sreality-cz.md", "work/microcrawler-crawler-xkcd-com.md", "work/microcrawler-crawler-yelp-com.md", "work/microcrawler-js.md", "work/microcrawler-ng.md", "work/microscratch.md", "work/nestravenkam.md", "work/node-proxy-upload.md", "work/oscilla.md", "work/pavian-eu.md", "work/peg-loader.md", "work/peg-parser.md", "work/prismatic-majordomus.md", "work/prismatic.md", "work/rest-hello-world-benchmark.md", "work/solr-core-minimal.md", "work/sonic-playground.md", "work/test-elixir.md", "work/the-psycho.md", "work/the-scratch.md", "work/tosh.md", "work/u-tygra.md", "work/vomaste-cz.md", "work/web-spa.md", "work/zaas.md"]
-related = ["repository", "open-source", "commit", "html", "css", "elixir", "shell", "gis"]
+pages = ["about.md", "projects/data.md", "projects/learning.md", "projects/libraries.md", "projects/media.md", "projects/science.md", "projects/systems.md", "projects/tools.md", "projects/web.md", "services/_index.md", "services/ai-engineering-governance.md", "services/attack-surface.md", "services/compliance-screening.md", "services/continuous-monitoring.md", "services/decision-support-ai.md", "services/digital-forensics.md", "services/digital-investigation.md", "services/due-diligence.md", "services/interactive-data-products.md", "services/m-and-a.md", "services/reputation-intelligence.md", "skills/_index.md", "skills/ai-transformation.md", "skills/audit-trail.md", "skills/chain-of-custody.md", "skills/change-monitoring.md", "skills/contestable-decisions.md", "skills/data-integration.md", "skills/data-room.md", "skills/decision-support.md", "skills/document-extraction.md", "skills/due-diligence.md", "skills/entity-resolution.md", "skills/geospatial-analysis.md", "skills/insolvency-monitoring.md", "skills/interactive-visualisation.md", "skills/knowledge-graph.md", "skills/llm-agents.md", "skills/m-and-a-screening.md", "skills/market-intelligence.md", "skills/orchestration.md", "skills/osint-investigation.md", "skills/policy-as-code.md", "skills/registry-intelligence.md", "skills/risk-scoring.md", "skills/web-automation.md", "work/algoglyph.md", "work/annasabatova-cz.md", "work/apollo-crawler-extension.md", "work/apollocrawler-com.md", "work/astronomists.md", "work/astudo.md", "work/babel-plugin-transform-graphql.md", "work/bcnode-old.md", "work/brepta.md", "work/bubbler.md", "work/catharsis-as-a-service.md", "work/craftsmen.md", "work/crisis-map.md", "work/ctu-cz.md", "work/czech-stats.md", "work/data-atlas.md", "work/dispatcher.md", "work/dj-schnapps.md", "work/docker-conf2015.md", "work/generator-microscratch.md", "work/generator-the-scratch.md", "work/gists-search.md", "work/github-extractor.md", "work/gooddata-graphql.md", "work/gooddata-proxy.md", "work/gooddata-rails-app.md", "work/hydra.md", "work/kanec.md", "work/kompendium-epistemicke-anihilace.md", "work/korczis-com.md", "work/korczis-github-com.md", "work/korczis-github-io.md", "work/lethe-it.md", "work/lola.md", "work/magic.md", "work/majordomus-reel.md", "work/mapoffacts.md", "work/maze.md", "work/microcrawler-browser.md", "work/microcrawler-couchapp.md", "work/microcrawler-crawler-bam-brno-cz.md", "work/microcrawler-crawler-craiglist-com.md", "work/microcrawler-crawler-firmy-cz.md", "work/microcrawler-crawler-google-com.md", "work/microcrawler-crawler-heureka-cz.md", "work/microcrawler-crawler-news-ycombinator-com.md", "work/microcrawler-crawler-sreality-cz.md", "work/microcrawler-crawler-xkcd-com.md", "work/microcrawler-crawler-yelp-com.md", "work/microcrawler-js.md", "work/microcrawler-ng.md", "work/microscratch.md", "work/nestravenkam.md", "work/node-proxy-upload.md", "work/oscilla.md", "work/pavian-eu.md", "work/peg-loader.md", "work/peg-parser.md", "work/prismatic-majordomus.md", "work/prismatic.md", "work/rest-hello-world-benchmark.md", "work/solr-core-minimal.md", "work/sonic-playground.md", "work/test-elixir.md", "work/the-psycho.md", "work/the-scratch.md", "work/tosh.md", "work/u-tygra.md", "work/vomaste-cz.md", "work/web-spa.md", "work/zaas.md", "_index.md"]
+related = ["repository", "html", "open-source", "commit", "css", "shell", "elixir", "python"]
 og_title = "JavaScript: glossary"
 og_image = "og/glossary-javascript.png"
 keywords = ["JavaScript", "Programming language", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,3 +40,14 @@ span = 3
 height = "md"
 tone = "night"
 +++
+I have written JavaScript in 70 public repositories, from 2013 to 2026; in 42 of them it is the main language.
+
+What it was for: [Data and GIS](@/projects/data.md) (24), [Tools](@/projects/tools.md) (18), [Web](@/projects/web.md) (10) and [Media and art](@/projects/media.md) (5).
+
+Most recently: [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore; [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus; [Majordomus reel](@/work/majordomus-reel.md): Voice, frames, music and sound, all generated and versioned like software.
+
+14 of these projects run as live sites.
+
+I also used it in client work under confidentiality agreements. Roles: Architect, Lead engineer, AI engineer, Data engineer, Investigator and Advisor. What was solved: LLM agents, Decision support, AI transformation, Audit trail and OSINT investigation. The use cases below give the principle and the intent of that work; no client, person, date or number is named.
+
+How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses JavaScript: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links JavaScript to the repositories and to the other languages and technologies they use together.

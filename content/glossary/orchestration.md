@@ -3,7 +3,7 @@
 title = "Orchestration"
 description = "Coordinating many automated steps, services or agents (queues, workflows, schedules) so they run in the right order and recover when one fails."
 template = "term.html"
-weight = 56
+weight = 98
 
 [taxonomies]
 tags = ["Glossary", "Concept"]
@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Coordinating many automated steps, services or agents (queues, workflows, schedules) so they run in the right order and recover when one fails."
 aliases = []
 reference = { title = "Orchestration in computing (Wikipedia)", url = "https://en.wikipedia.org/wiki/Orchestration_(computing)" }
-pages = ["_index.md", "projects/security.md", "work/magic.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/peacemaker.md", "work/ratnet.md", "work/zlown.md"]
-related = ["audit-trail", "due-diligence", "osint", "repository", "commit", "data-integration", "decision-support-system", "information-extraction"]
+pages = ["_index.md", "projects/security.md", "services/_index.md", "services/ai-engineering-governance.md", "services/continuous-monitoring.md", "services/decision-support-ai.md", "skills/_index.md", "skills/orchestration.md", "work/magic.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/peacemaker.md", "work/ratnet.md", "work/zlown.md"]
+related = ["audit-trail", "decision-support-system", "due-diligence", "information-extraction", "insolvency", "osint", "record-linkage", "risk-assessment"]
 og_title = "Orchestration: glossary"
 og_image = "og/glossary-orchestration.png"
 keywords = ["Orchestration", "Concept", "Glossary", "Tomas Korcak"]

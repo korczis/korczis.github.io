@@ -17,7 +17,7 @@ og_description = "docks: Systémy a infrastruktura, Dockerfile, Shell a PHP, 201
 og_image = "og/cs-work-docks.png"
 schema = "project"
 keywords = ["docks", "Systémy a infrastruktura", "Dockerfile", "Shell", "PHP", "2015–2017", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["dockerfile", "shell", "repository", "commit", "open-source"]
+terms = ["dockerfile", "shell", "php", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -29,7 +29,7 @@ height = "md"
 tone = "night"
 vars = { cadence = "každých 6 hodin" }
 +++
-**docks** je projekt z kategorie [Systémy a infrastruktura](@/projects/systems.cs.md). Jeho kód je napsaný hlavně v jazyce [Dockerfile](@/glossary/dockerfile.cs.md) (77 %), dále [Shell](@/glossary/shell.cs.md) a PHP.
+**docks** je projekt z kategorie [Systémy a infrastruktura](@/projects/systems.cs.md). Jeho kód je napsaný hlavně v jazyce [Dockerfile](@/glossary/dockerfile.cs.md) (77 %), dále [Shell](@/glossary/shell.cs.md) a [PHP](@/glossary/php.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 16. září 2019; poslední [commit](@/glossary/commit.cs.md) je z 5. března 2017. Zní „Update README.md“. Bez commitu za posledních 48 měsíců je veden jako archiv: práce z období 2015–2017, ponechaná pro záznam a datovaná podle měření.
 

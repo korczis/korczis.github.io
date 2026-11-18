@@ -3,7 +3,7 @@
 title = "GitHub Pages"
 description = "GitHub's hosting for static websites, deployed from a repository; this site and most project sites live there."
 template = "term.html"
-weight = 25
+weight = 50
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -14,13 +14,22 @@ seo_title = "GitHub Pages (technology)"
 term = "github-pages"
 kind = "technology"
 definition = "GitHub's hosting for static websites, deployed from a repository; this site and most project sites live there."
-aliases = []
+aliases = ["github-pages"]
 reference = { title = "GitHub Pages documentation", url = "https://docs.github.com/en/pages" }
 pages = ["interfaces.md", "stack.md", "work/algoglyph.md", "work/apollon.md", "work/astronomists.md", "work/bubbler.md", "work/catharsis-as-a-service.md", "work/crisis-map.md", "work/csv2psql.md", "work/data-atlas.md", "work/gists-search.md", "work/kompendium-epistemicke-anihilace.md", "work/majordomus-reel.md", "work/oscilla.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/prismatic-blog.md", "work/prismatic-majordomus.md", "work/sonic-playground.md", "work/u-tygra.md", "work/vomaste-cz.md"]
 related = ["commit", "open-source", "repository", "html", "javascript", "shell", "css", "python"]
 og_title = "GitHub Pages: glossary"
 og_image = "og/glossary-github-pages.png"
 keywords = ["GitHub Pages", "Technology", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,3 +40,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
+GitHub Pages is part of 1 of my public repositories, from 2024 to 2026.
+
+What it was for: [Web](@/projects/web.md) (1).
+
+Most recently: [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.
+
+How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses GitHub Pages: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links GitHub Pages to the repositories and to the other languages and technologies they use together.

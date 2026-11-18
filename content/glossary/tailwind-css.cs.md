@@ -3,7 +3,7 @@
 title = "Tailwind CSS"
 description = "CSS framework malých utilitních tříd skládaných v markupu, kompilovaný jen na to, co stránka používá."
 template = "term.html"
-weight = 32
+weight = 65
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -14,13 +14,22 @@ seo_title = "Tailwind CSS (technologie)"
 term = "tailwind-css"
 kind = "technology"
 definition = "CSS framework malých utilitních tříd skládaných v markupu, kompilovaný jen na to, co stránka používá."
-aliases = []
+aliases = ["tailwindcss"]
 reference = { title = "tailwindcss.com", url = "https://tailwindcss.com/docs" }
-pages = ["stack.cs.md"]
-related = ["alpine-js", "apache-echarts", "chart-js", "cytoscape-js", "d3", "flowbite-pro", "github-pages", "i18n"]
+pages = ["skills/audit-trail.cs.md", "stack.cs.md", "_index.cs.md"]
+related = ["alpine-js", "flowbite-pro", "majordomus", "apache-echarts", "audit-trail", "chart-js", "claude-api", "css"]
 og_title = "Tailwind CSS: slovník"
 og_image = "og/cs-glossary-tailwind-css.png"
 keywords = ["Tailwind CSS", "Technologie", "Slovník", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,3 +40,14 @@ span = 3
 height = "md"
 tone = "night"
 +++
+Tailwind CSS je součástí 2 mých veřejných repozitářů, od roku 2024 do 2026.
+
+K čemu to sloužilo: [Věda a vizualizace](@/projects/science.cs.md) (1) a [Web](@/projects/web.cs.md) (1).
+
+Naposledy: [korczis.github.io](@/work/korczis-github-io.cs.md); [algoglyph](@/work/algoglyph.cs.md): Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.
+
+1 z těchto projektů běží jako živý web.
+
+Používal jsem ho také v klientské práci pod dohodami o mlčenlivosti. Role: Architekt, Vedoucí inženýr, Inženýr AI a Datový inženýr. Co se řešilo: Agenti s LLM, Podpora rozhodování, Transformace s AI a Auditní stopa. Případy užití níže popisují princip a záměr této práce; žádný klient, osoba, datum ani číslo nejsou uvedeny.
+
+Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak Tailwind CSS používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje Tailwind CSS s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

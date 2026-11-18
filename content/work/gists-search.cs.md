@@ -17,7 +17,7 @@ og_description = "Gists search: Nástroje, Python, JavaScript a HTML, 2026, akti
 og_image = "og/cs-work-gists-search.png"
 schema = "project"
 keywords = ["Gists search", "gists-search", "Nástroje", "Python", "JavaScript", "HTML", "2026", "GitHub", "Tomáš Korčák", "korczis"]
-terms = ["python", "javascript", "html", "shell", "open-source", "github-pages", "repository", "commit"]
+terms = ["python", "javascript", "html", "just", "shell", "open-source", "github-pages", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,7 +28,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**Gists search** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [Python](@/glossary/python.cs.md) (58,5 %), dále [JavaScript](@/glossary/javascript.cs.md), [HTML](@/glossary/html.cs.md) a Just.
+**Gists search** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [Python](@/glossary/python.cs.md) (58,5 %), dále [JavaScript](@/glossary/javascript.cs.md), [HTML](@/glossary/html.cs.md) a [Just](@/glossary/just.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 27. srpna 2026; poslední [commit](@/glossary/commit.cs.md) je z 27. srpna 2026. Zní „docs(gists): add README, architecture doc and deploy recipe“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 

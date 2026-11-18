@@ -17,7 +17,7 @@ og_description = "osint-case-ratcliffe-moscow-2026: Bezpečnost a OSINT, HTML, P
 og_image = "og/cs-work-osint-case-ratcliffe-moscow-2026.png"
 schema = "project"
 keywords = ["osint-case-ratcliffe-moscow-2026", "Bezpečnost a OSINT", "HTML", "Python", "Shell", "claude-code", "intelligence-analysis", "open-source-intelligence", "osint", "2026", "GitHub", "Tomáš Korčák", "korczis"]
-terms = ["html", "python", "shell", "osint", "due-diligence", "mergers-and-acquisitions", "virtual-data-room", "risk-assessment", "market-intelligence", "decision-support-system", "insolvency", "record-linkage", "knowledge-graph", "data-integration", "audit-trail", "information-extraction", "orchestration", "github-pages", "repository", "commit", "open-source"]
+terms = ["html", "python", "shell", "just", "osint", "due-diligence", "mergers-and-acquisitions", "virtual-data-room", "risk-assessment", "market-intelligence", "decision-support-system", "insolvency", "record-linkage", "knowledge-graph", "data-integration", "audit-trail", "information-extraction", "orchestration", "github-pages", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,7 +28,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**osint-case-ratcliffe-moscow-2026** je projekt z kategorie [Bezpečnost a OSINT](@/projects/security.cs.md). Jeho kód je napsaný hlavně v jazyce [HTML](@/glossary/html.cs.md) (74 %), dále [Python](@/glossary/python.cs.md), [Shell](@/glossary/shell.cs.md) a Just.
+**osint-case-ratcliffe-moscow-2026** je projekt z kategorie [Bezpečnost a OSINT](@/projects/security.cs.md). Jeho kód je napsaný hlavně v jazyce [HTML](@/glossary/html.cs.md) (74 %), dále [Python](@/glossary/python.cs.md), [Shell](@/glossary/shell.cs.md) a [Just](@/glossary/just.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 26. srpna 2026; poslední [commit](@/glossary/commit.cs.md) je z 26. srpna 2026. Zní „fix(site): claim pages for object-shaped findings (gdelt\_sweep)“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 

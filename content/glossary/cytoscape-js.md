@@ -3,7 +3,7 @@
 title = "Cytoscape.js"
 description = "A library for drawing and analysing graphs (networks of nodes and edges) in the browser."
 template = "term.html"
-weight = 22
+weight = 45
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -16,11 +16,20 @@ kind = "technology"
 definition = "A library for drawing and analysing graphs (networks of nodes and edges) in the browser."
 aliases = []
 reference = { title = "js.cytoscape.org", url = "https://js.cytoscape.org/" }
-pages = ["projects/knowledge.md", "stack.md", "work/kompendium-epistemicke-anihilace.md"]
-related = ["alpine-js", "apache-echarts", "flowbite-pro", "zola", "elixir", "github-pages", "repository", "chart-js"]
+pages = ["projects/knowledge.md", "services/digital-investigation.md", "skills/knowledge-graph.md", "stack.md", "work/kompendium-epistemicke-anihilace.md"]
+related = ["alpine-js", "flowbite-pro", "apache-echarts", "elixir", "html", "javascript", "python", "shell"]
 og_title = "Cytoscape.js: glossary"
 og_image = "og/glossary-cytoscape-js.png"
 keywords = ["Cytoscape.js", "Technology", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,3 +40,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
+Cytoscape.js is part of 1 of my public repositories, from 2026 to 2026.
+
+What it was for: [Knowledge](@/projects/knowledge.md) (1).
+
+Most recently: [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore.
+
+1 of these projects runs as a live site.
+
+How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses Cytoscape.js: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links Cytoscape.js to the repositories and to the other languages and technologies they use together.

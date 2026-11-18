@@ -17,7 +17,7 @@ og_description = "openttd-prismatic-bridge: Média a umění, Squirrel, Python a
 og_image = "og/cs-work-openttd-prismatic-bridge.png"
 schema = "project"
 keywords = ["openttd-prismatic-bridge", "Média a umění", "Squirrel", "Python", "HTML", "2026", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["python", "html", "shell", "css", "data-visualisation", "repository", "commit", "open-source"]
+terms = ["squirrel", "python", "html", "shell", "css", "data-visualisation", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -29,7 +29,7 @@ height = "md"
 tone = "night"
 vars = { cadence = "každých 6 hodin" }
 +++
-**openttd-prismatic-bridge** je projekt z kategorie [Média a umění](@/projects/media.cs.md). Jeho kód je napsaný hlavně v jazyce Squirrel (38,8 %), dále [Python](@/glossary/python.cs.md), [HTML](@/glossary/html.cs.md) a [Shell](@/glossary/shell.cs.md).
+**openttd-prismatic-bridge** je projekt z kategorie [Média a umění](@/projects/media.cs.md). Jeho kód je napsaný hlavně v jazyce [Squirrel](@/glossary/squirrel.cs.md) (38,8 %), dále [Python](@/glossary/python.cs.md), [HTML](@/glossary/html.cs.md) a [Shell](@/glossary/shell.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 23. července 2026; poslední [commit](@/glossary/commit.cs.md) je z 18. listopadu 2026. Zní „Doc: the overview's Prismatic card says a decision's settings go onto the running AI and a refused one answers 502“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 

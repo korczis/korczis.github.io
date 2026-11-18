@@ -14,7 +14,7 @@ category = "media"
 og_title = "Média a umění: 8 repozitářů."
 og_image = "og/cs-category-media.png"
 schema = "collection"
-terms = ["data-visualisation", "javascript", "dockerfile", "elixir", "html", "python", "repository"]
+terms = ["data-visualisation", "javascript", "dockerfile", "elixir", "html", "python", "squirrel", "repository"]
 keywords = ["Média a umění", "Majordomus reel", "Catharsis as a Service", "Sonic Playground", "openttd-prismatic-bridge", "prismatic-blog", "dj-schnapps", "brepta", "talkie", "Tomáš Korčák"]
 
 [[extra.viz]]

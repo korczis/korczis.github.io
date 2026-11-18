@@ -17,7 +17,7 @@ og_description = "zeman-ucet: Tools in Ruby, R and Shell, 2017, archive. Source 
 og_image = "og/work-zeman-ucet.png"
 schema = "project"
 keywords = ["zeman-ucet", "Tools", "Ruby", "Shell", "czech-republic", "nokogiri", "prezident", "transparentni-ucet", "zeman", "2017", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["ruby", "shell", "open-source", "repository", "commit"]
+terms = ["ruby", "r", "shell", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,7 +28,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**zeman-ucet** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [Ruby](@/glossary/ruby.md) (75.3 %), with R and [Shell](@/glossary/shell.md).
+**zeman-ucet** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [Ruby](@/glossary/ruby.md) (75.3 %), with [R](@/glossary/r.md) and [Shell](@/glossary/shell.md).
 
 The [repository](@/glossary/repository.md) was created on 3 September 2017; its latest [commit](@/glossary/commit.md) is from 7 October 2017. It reads “update”. With no commit in the last 48 months it is listed as archive: work from 2017, kept for the record and dated as measured.
 

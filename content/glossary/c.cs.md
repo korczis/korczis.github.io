@@ -3,7 +3,7 @@
 title = "C (programovací jazyk)"
 description = "Malý, rychlý systémový jazyk pod operačními systémy i většinou ostatních jazyků."
 template = "term.html"
-weight = 1
+weight = 3
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -16,11 +16,20 @@ kind = "language"
 definition = "Malý, rychlý systémový jazyk pod operačními systémy i většinou ostatních jazyků."
 aliases = []
 reference = { title = "C (Wikipedia)", url = "https://en.wikipedia.org/wiki/C_(programming_language)" }
-pages = ["projects/learning.cs.md", "work/algorithms.cs.md", "work/icave.cs.md", "work/magic.cs.md", "work/peacemaker.cs.md", "work/skull-c.cs.md"]
-related = ["repository", "commit", "open-source", "cpp", "audit-trail", "data-integration", "decision-support-system", "due-diligence"]
+pages = ["projects/learning.cs.md", "services/attack-surface.cs.md", "skills/infrastructure-osint.cs.md", "work/algorithms.cs.md", "work/icave.cs.md", "work/magic.cs.md", "work/peacemaker.cs.md", "work/skull-c.cs.md"]
+related = ["repository", "commit", "open-source", "cpp", "elixir", "javascript", "risk-assessment", "attack-surface"]
 og_title = "C: slovník"
 og_image = "og/cs-glossary-c.png"
 keywords = ["C (programovací jazyk)", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,3 +40,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
+C jsem psal v 5 veřejných repozitářích, od roku 2014 do 2017; v 1 z nich je hlavním jazykem.
+
+K čemu to sloužilo: [Bezpečnost a OSINT](@/projects/security.cs.md) (2), [Učení a experimenty](@/projects/learning.cs.md) (1), [Věda a vizualizace](@/projects/science.cs.md) (1) a [Nástroje](@/projects/tools.cs.md) (1).
+
+Naposledy: [magic](@/work/magic.cs.md); [iCave](@/work/icave.cs.md); [algorithms](@/work/algorithms.cs.md).
+
+Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak C používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje C s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

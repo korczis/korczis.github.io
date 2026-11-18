@@ -17,7 +17,7 @@ og_description = "pavian.eu: Web in ApacheConf, HTML and CSS, 2015, archive. Sou
 og_image = "og/work-pavian-eu.png"
 schema = "project"
 keywords = ["pavian.eu", "Web", "ApacheConf", "HTML", "CSS", "2015", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["html", "css", "javascript", "static-site-generator", "repository", "commit", "open-source"]
+terms = ["apacheconf", "html", "css", "javascript", "static-site-generator", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,7 +28,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**pavian.eu** is a project in [Web](@/projects/web.md). Its code is written mainly in ApacheConf (64 %), with [HTML](@/glossary/html.md), [CSS](@/glossary/css.md) and [JavaScript](@/glossary/javascript.md).
+**pavian.eu** is a project in [Web](@/projects/web.md). Its code is written mainly in [ApacheConf](@/glossary/apacheconf.md) (64 %), with [HTML](@/glossary/html.md), [CSS](@/glossary/css.md) and [JavaScript](@/glossary/javascript.md).
 
 The [repository](@/glossary/repository.md) was created on 9 August 2015; its latest [commit](@/glossary/commit.md) is from 31 August 2015. It reads “Update widget”. With no commit in the last 48 months it is listed as archive: work from 2015, kept for the record and dated as measured.
 

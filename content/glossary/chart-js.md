@@ -3,7 +3,7 @@
 title = "Chart.js"
 description = "A light library for common charts (bars, lines, doughnuts) on an HTML canvas."
 template = "term.html"
-weight = 21
+weight = 43
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -31,3 +31,4 @@ span = 3
 height = "md"
 tone = "night"
 +++
+No public repository or client engagement of mine uses Chart.js as the data measures it; this page explains the term where the site uses it.

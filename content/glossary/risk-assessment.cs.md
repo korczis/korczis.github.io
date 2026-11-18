@@ -3,7 +3,7 @@
 title = "Hodnocení rizik"
 description = "Určení rizik, odhad jejich pravděpodobnosti a závažnosti a jejich seřazení, aby práce začala tím nejdůležitějším."
 template = "term.html"
-weight = 59
+weight = 105
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]
@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Určení rizik, odhad jejich pravděpodobnosti a závažnosti a jejich seřazení, aby práce začala tím nejdůležitějším."
 aliases = []
 reference = { title = "ISO 31000: risk management", url = "https://www.iso.org/iso-31000-risk-management.html" }
-pages = ["projects/security.cs.md", "work/magic.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/peacemaker.cs.md", "work/ratnet.cs.md", "work/zlown.cs.md"]
-related = ["audit-trail", "data-integration", "decision-support-system", "due-diligence", "information-extraction", "insolvency", "knowledge-graph", "market-intelligence"]
+pages = ["projects/security.cs.md", "services/_index.cs.md", "services/attack-surface.cs.md", "services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "services/due-diligence.cs.md", "services/m-and-a.cs.md", "skills/_index.cs.md", "skills/risk-scoring.cs.md", "work/magic.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/peacemaker.cs.md", "work/ratnet.cs.md", "work/zlown.cs.md"]
+related = ["record-linkage", "decision-support-system", "due-diligence", "html", "insolvency", "javascript", "market-intelligence", "mergers-and-acquisitions"]
 og_title = "Hodnocení rizik: slovník"
 og_image = "og/cs-glossary-risk-assessment.png"
 keywords = ["Hodnocení rizik", "Risk assessment", "Koncept", "Slovník", "Tomáš Korčák"]

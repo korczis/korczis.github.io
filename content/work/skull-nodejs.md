@@ -17,7 +17,7 @@ og_description = "skull-nodejs: Learning and experiments in Makefile, 2014, arch
 og_image = "og/work-skull-nodejs.png"
 schema = "project"
 keywords = ["skull-nodejs", "Learning and experiments", "Makefile", "2014", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["repository", "commit", "open-source"]
+terms = ["makefile", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,7 +28,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**skull-nodejs** is a project in [Learning and experiments](@/projects/learning.md). Its code is written mainly in Makefile.
+**skull-nodejs** is a project in [Learning and experiments](@/projects/learning.md). Its code is written mainly in [Makefile](@/glossary/makefile.md).
 
 The [repository](@/glossary/repository.md) was created on 22 July 2014; its latest [commit](@/glossary/commit.md) is from 3 August 2014. It reads “Update README.md”. With no commit in the last 48 months it is listed as archive: work from 2014, kept for the record and dated as measured.
 

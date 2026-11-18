@@ -3,7 +3,7 @@
 title = "PostgreSQL"
 description = "Open-source relační databáze známá svou korektností a rozšířeními."
 template = "term.html"
-weight = 31
+weight = 62
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -14,13 +14,22 @@ seo_title = "PostgreSQL (technologie)"
 term = "postgresql"
 kind = "technology"
 definition = "Open-source relační databáze známá svou korektností a rozšířeními."
-aliases = []
+aliases = ["postgres"]
 reference = { title = "postgresql.org", url = "https://www.postgresql.org/about/" }
-pages = ["hire.cs.md", "projects/tools.cs.md", "work/csv2psql.cs.md"]
-related = ["open-source", "elixir", "repository", "ruby", "rust", "ai-agent", "commit", "cpp"]
+pages = ["hire.cs.md", "projects/tools.cs.md", "services/attack-surface.cs.md", "services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "services/digital-forensics.cs.md", "services/digital-investigation.cs.md", "services/due-diligence.cs.md", "services/m-and-a.cs.md", "work/csv2psql.cs.md", "_index.cs.md"]
+related = ["elixir", "html", "javascript", "alpine-js", "claude-api", "flowbite-pro", "service", "dockerfile"]
 og_title = "PostgreSQL: slovník"
 og_image = "og/cs-glossary-postgresql.png"
 keywords = ["PostgreSQL", "Technologie", "Slovník", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,3 +40,14 @@ span = 3
 height = "md"
 tone = "night"
 +++
+PostgreSQL je součástí 1 mého veřejného repozitáře, od roku 2014 do 2015.
+
+K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (1).
+
+Naposledy: [csv2psql](@/work/csv2psql.cs.md): Převádí CSV na příkazy insert nebo update pro PostgreSQL.
+
+1 z těchto projektů běží jako živý web.
+
+Používal jsem ho také v klientské práci pod dohodami o mlčenlivosti. Role: Architekt, Vedoucí inženýr, Inženýr AI a Datový inženýr. Co se řešilo: Agenti s LLM, Podpora rozhodování, Transformace s AI a Auditní stopa. Případy užití níže popisují princip a záměr této práce; žádný klient, osoba, datum ani číslo nejsou uvedeny.
+
+Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak PostgreSQL používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje PostgreSQL s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

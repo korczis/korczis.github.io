@@ -17,7 +17,7 @@ og_description = "skull-cpp: Learning and experiments in CMake, Makefile and C++
 og_image = "og/work-skull-cpp.png"
 schema = "project"
 keywords = ["skull-cpp", "Learning and experiments", "CMake", "Makefile", "C++", "2014–2015", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["cpp", "repository", "commit", "open-source"]
+terms = ["cmake", "makefile", "cpp", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,7 +28,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**skull-cpp** is a project in [Learning and experiments](@/projects/learning.md). Its code is written mainly in CMake (67.2 %), with Makefile and [C++](@/glossary/cpp.md).
+**skull-cpp** is a project in [Learning and experiments](@/projects/learning.md). Its code is written mainly in [CMake](@/glossary/cmake.md) (67.2 %), with [Makefile](@/glossary/makefile.md) and [C++](@/glossary/cpp.md).
 
 The [repository](@/glossary/repository.md) was created on 22 July 2014; its latest [commit](@/glossary/commit.md) is from 24 July 2015. It reads “Added boost”. With no commit in the last 48 months it is listed as archive: work from 2014–2015, kept for the record and dated as measured.
 

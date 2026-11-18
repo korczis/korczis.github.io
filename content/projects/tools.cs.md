@@ -14,7 +14,7 @@ category = "tools"
 og_title = "Nástroje: 63 repozitářů."
 og_image = "og/cs-category-tools.png"
 schema = "collection"
-terms = ["open-source", "javascript", "elixir", "ruby", "rust", "python", "shell", "typescript", "csharp", "cpp", "swift", "postgresql", "repository"]
+terms = ["open-source", "javascript", "elixir", "ruby", "rust", "python", "shell", "typescript", "csharp", "cpp", "just", "openscad", "swift", "tex", "postgresql", "repository"]
 keywords = ["Nástroje", "Gists search", "json2csv", "csv2psql", "astronomists", "vomaste.cz", "the-psycho", "u-tygra", "tinder-nomics", "prism", "Tomáš Korčák"]
 
 [[extra.viz]]

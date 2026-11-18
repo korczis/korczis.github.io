@@ -3,7 +3,7 @@
 title = "C (programming language)"
 description = "The small, fast systems language beneath operating systems and most other languages."
 template = "term.html"
-weight = 1
+weight = 3
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -16,11 +16,20 @@ kind = "language"
 definition = "The small, fast systems language beneath operating systems and most other languages."
 aliases = []
 reference = { title = "C (Wikipedia)", url = "https://en.wikipedia.org/wiki/C_(programming_language)" }
-pages = ["projects/learning.md", "work/algorithms.md", "work/icave.md", "work/magic.md", "work/peacemaker.md", "work/skull-c.md"]
-related = ["repository", "commit", "open-source", "cpp", "audit-trail", "data-integration", "decision-support-system", "due-diligence"]
+pages = ["projects/learning.md", "services/attack-surface.md", "skills/infrastructure-osint.md", "work/algorithms.md", "work/icave.md", "work/magic.md", "work/peacemaker.md", "work/skull-c.md"]
+related = ["repository", "commit", "open-source", "cpp", "elixir", "javascript", "risk-assessment", "attack-surface"]
 og_title = "C: glossary"
 og_image = "og/glossary-c.png"
 keywords = ["C (programming language)", "Programming language", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,3 +40,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
+I have written C in 5 public repositories, from 2014 to 2017; in 1 of them it is the main language.
+
+What it was for: [Security and OSINT](@/projects/security.md) (2), [Learning and experiments](@/projects/learning.md) (1), [Science and visualisation](@/projects/science.md) (1) and [Tools](@/projects/tools.md) (1).
+
+Most recently: [magic](@/work/magic.md): All the magic happens here!; [iCave](@/work/icave.md): Open Home Automation Platform; [algorithms](@/work/algorithms.md): Algorithms implementation.
+
+How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses C: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links C to the repositories and to the other languages and technologies they use together.

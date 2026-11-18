@@ -1,14 +1,19 @@
 #!/usr/bin/env node
 // Derives the glossary, content/glossary/, from data/glossary.toml: one page per term and language
-// and the section page. Where a term is used and which terms are related are derived from the
+// and the section page. A language or technology also gets its evidence (scripts/lib/skills.mjs):
+// data/skills.json, which templates/term.html and the reference graph read, and the page's article,
+// derived from it (what it was used for, the latest work, the client use cases without names). Where a term is used and which terms are related are derived from the
 // front matter of every other page (extra.terms): a page that names a term links to it, and the
 // term's page links back. Nothing in these files is written by hand.
 //
 // usage: node scripts/build-glossary.mjs           write them (and remove stale ones)
 //        node scripts/build-glossary.mjs --check   exit 1 if any is missing, stale or orphaned
 import { join } from 'node:path';
-import { CONTENT, ROOT, clip, contentPages, identity, languages, limits, local, ogPrefix, q, suffix, writeOrCheck } from './lib/derive.mjs';
-import { linkedTerms, loadGlossary, tl } from './lib/terms.mjs';
+import {
+  CONTENT, ROOT, cadence, clip, contentPages, identity, languages, limits, local, ogPrefix, q, readToml, suffix, t, writeOrCheck,
+} from './lib/derive.mjs';
+import { linkedTerms, listing, loadGlossary, mdEscape, tl } from './lib/terms.mjs';
+import { loadSources, renderedTerms, skillEvidence } from './lib/skills.mjs';
 import { vizBlock } from './lib/viz.mjs';
 import { loadStrings } from './lib/strings.mjs';
 import { cliArgs } from './lib/cli.mjs';
@@ -36,6 +41,63 @@ for (const page of contentPages()) {
     if (!usage.has(id)) continue; // check-glossary reports unknown ids
     usage.get(id)[lang].push(path);
     if (lang === LANGS[0]) for (const other of terms) if (other !== id && usage.has(other)) together.get(id).set(other, (together.get(id).get(other) ?? 0) + 1);
+  }
+}
+
+// The evidence of every language and technology, and the words its article is made of.
+const sources = loadSources();
+const evidence = skillEvidence(g, sources);
+const rules = readToml('data/experience-rules.toml');
+const refresh = cadence();
+const catName = (key, lang) => local(sources.catalogue.categories[key], 'name', lang) ?? key;
+const repoLink = (r, lang) => (r.work ? `[${mdEscape(r.title)}](@/work/${r.slug}${suffix(lang)}.md)` : `[${mdEscape(r.title)}](${r.url})`);
+const what = (r, lang) => (lang === LANGS[0] ? r.summary ?? r.description : r[`summary_${lang}`]) ?? null;
+
+function skillArticle(term, lang) {
+  const ev = evidence[term.id];
+  const name = local(term, 'term', lang) || term.term;
+  const { counts } = ev;
+  const p = [];
+  if (!counts.repos) {
+    p.push(t(counts.engagements ? 'derive_skill_none' : 'derive_skill_nothing', lang, { term: name }));
+  } else if (term.kind === 'language') {
+    const primary = counts.primary ? t('derive_skill_primary', lang, { n: counts.primary }) : '';
+    p.push(t('derive_skill_language', lang, { term: name, n: counts.repos, first: ev.first, last: ev.last, primary }));
+  } else {
+    p.push(t('derive_skill_technology', lang, { term: name, n: counts.repos, first: ev.first, last: ev.last }));
+  }
+  if (counts.repos) {
+    const cats = ev.categories.slice(0, 4).map((c) => `[${catName(c.key, lang)}](@/projects/${c.key}${suffix(lang)}.md) (${c.n})`);
+    p.push(t('derive_skill_for', lang, { list: listing(cats, lang) }));
+    const latest = ev.repos.slice(0, 3).map((r) => {
+      const words = what(r, lang);
+      return words ? `${repoLink(r, lang)}: ${mdEscape(words.replace(/\s+/g, ' ').replace(/[.\s]+$/, ''))}` : repoLink(r, lang);
+    });
+    p.push(t('derive_skill_recent', lang, { list: latest.join('; ') }));
+    if (counts.sites) p.push(t('derive_skill_sites', lang, { n: counts.sites }));
+  }
+  if (counts.engagements) {
+    const roles = [...new Set(ev.engagements.flatMap((e) => e.roles))].map((k) => local(rules.roles[k], 'name', lang) ?? k);
+    const solved = [...new Set(ev.engagements.flatMap((e) => e.capabilities))].slice(0, 5).map((k) => local(rules.capabilities[k], 'name', lang) ?? k);
+    p.push(t('derive_skill_clients', lang, { roles: listing(roles, lang), solved: listing(solved, lang) }));
+  }
+  if (counts.repos) p.push(tl(g, 'derive_skill_how', lang, { term: name, cadence: t(`derive_cadence_${refresh.unit}`, lang, { n: refresh.n }) }));
+  return p.join('\n\n');
+}
+
+// data/skills.json: the evidence, per term, in the shape templates/term.html and viz-grid read.
+// Client work is reduced to use cases (sector, roles, capabilities): no name, date or number.
+const skillsJson = `${JSON.stringify({
+  schema: 'korczis-hub-skills/v1',
+  generated_from: ['data/index.json', 'data/recent.json', 'data/projects.toml', 'data/experience.json'],
+  terms: evidence,
+}, null, 2)}\n`;
+
+// The terms pages name through the data their templates render (the landing's experience section).
+for (const [path, ids] of renderedTerms(g, loadSources())) {
+  for (const lang of LANGS) for (const id of ids) {
+    const rel = `${path}${suffix(lang)}.md`;
+    if (usage.has(id) && !usage.get(id)[lang].includes(rel)) usage.get(id)[lang].push(rel);
   }
 }
 
@@ -96,10 +158,11 @@ related = [${related.map(q).join(', ')}]
 og_title = ${q(`${name}: ${tr('glossary', lang).toLowerCase()}`)}
 og_image = ${q(`og/${ogPrefix(lang)}glossary-${t.id}.png`)}
 keywords = [${[title, name, t.term, tr(`kind_term_${t.kind}`, lang), tr('glossary', lang), me.nameIn(lang)].filter((k, i, a) => k.length > 1 && a.indexOf(k) === i).map(q).join(', ')}]
-${vizBlock({ kind: 'atlas', source: 'glossary.terms', title: 'viz_atlas_term_title', lead: 'viz_atlas_term_lead' })}+++
-`);
+${evidence[t.id]?.counts.repos ? vizBlock({ kind: 'graph', source: 'term.evidence', title: 'viz_skill_graph_title', lead: 'viz_skill_graph_lead', height: 'lg' }) : ''}${vizBlock({ kind: 'atlas', source: 'glossary.terms', title: 'viz_atlas_term_title', lead: 'viz_atlas_term_lead' })}+++
+${evidence[t.id] ? `${skillArticle(t, lang)}\n` : ''}`);
   });
 }
 
 writeOrCheck(wanted, { dir: DIR, mark: MARK, label: 'glossary', orphanWhy: 'has no term any more' });
+writeOrCheck(new Map([['skills.json', skillsJson]]), { dir: join(ROOT, 'data'), mark: null, label: 'skills' });
 console.log(`glossary: ${g.terms.length} terms x ${LANGS.length} languages`);

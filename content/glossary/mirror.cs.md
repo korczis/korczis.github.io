@@ -3,7 +3,7 @@
 title = "Mirror"
 description = "Repozitář, který kopíruje kód jiného projektu; tady se repozitář počítá za původní, jen když vlastník napsal aspoň polovinu jeho commitů."
 template = "term.html"
-weight = 53
+weight = 94
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

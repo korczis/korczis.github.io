@@ -9,6 +9,11 @@
 // Starting positions are seeded from each node's id (ctx.hash), so the same data settles the same
 // way on every visit. A project opens its catalogue entry (?project=), a language or technology its
 // glossary term, a category its page; the list twin holds every node with the same link.
+// The services graph (services.graph) is the same model: services as projects, their skills as
+// diamonds (each opening its skill page) and the technologies behind them.
+// On a term's page (source.focus, the source term.evidence) the same model is that term's reference
+// graph: the term held at the centre, every repository that uses it (its work page, else the
+// repository) and the other languages and technologies those repositories use with it.
 KorczisHub.viz('graph', {
   lib: 'echarts',
   mount(box, source, { palette, colour, motion, go, link, escape, hash, t, reflect = () => {} }) {
@@ -39,7 +44,8 @@ KorczisHub.viz('graph', {
     // Category groups need their names (the catalogue's source carries them); without, the
     // grouping starts at none and offers no category option.
     const GROUPS = names && Object.keys(names).length ? ['category', 'language', 'none'] : ['language', 'none'];
-    const state = { group: GROUPS[0] === 'category' ? 'category' : 'none', repulsion: 150, edgeLength: 55, gravity: 0.2, labels: false, zoom: 1 };
+    // A term's reference graph starts ungrouped: the term itself is the centre the eye should find.
+    const state = { group: GROUPS[0] === 'category' && !source.focus ? 'category' : 'none', repulsion: 150, edgeLength: 55, gravity: 0.2, labels: false, zoom: 1 };
     // The physics is written for a 420 px drawing; a larger box (maximized) scales every length
     // with it, so the same parameters give the same picture at any size: lengths by k, repulsion
     // by k squared (it acts as repulsion / distance), gravity unchanged (it acts as gravity * distance).
@@ -62,9 +68,17 @@ KorczisHub.viz('graph', {
         if (kind === 'uses') nodes.get(to).uses += 1;
       };
       for (const p of projects) {
-        node(`p:${p.repo}`, { kind: 'project', label: p.name, repo: p.repo, group: groupOf(p), facts: measured[p.repo] || {}, url: catalogue(p.repo) });
+        // A project of a term's reference graph opens its work page, else its repository; a service
+        // of the services graph its service page.
+        const url = p.kind === 'service' ? link('service', p.repo) : p.work ? link('work', p.repo) ?? p.url : p.url ?? catalogue(p.repo);
+        node(`p:${p.repo}`, { kind: 'project', label: p.name, repo: p.repo, group: groupOf(p), facts: measured[p.repo] || {}, url });
       }
       for (const p of projects) {
+        // Skills (the services graph): a node of their own, opening the skill's page.
+        for (const k of p.skills ?? []) {
+          node(`s:${k.key}`, { kind: 'tech', skill: true, label: k.name, group: null, url: link('skill', k.key) });
+          edge(`p:${p.repo}`, `s:${k.key}`, 'uses');
+        }
         for (const tech of p.stack) {
           node(`t:${tech}`, { kind: 'tech', label: tech, group: null, url: termUrl(tech) });
           edge(`p:${p.repo}`, `t:${tech}`, 'uses');
@@ -192,9 +206,20 @@ KorczisHub.viz('graph', {
       const k = scale();
       const width = box.clientWidth || 600;
       const height = box.clientHeight || 400;
+      // The node a page is about (a term, a service or a skill), held at the centre.
+      const focus = source.focus || null;
       const data = model.nodes.map((n) => {
         const h = hash(n.id);
         const plain = n.kind === 'tech' && !n.group;
+        if (n.id === focus) {
+          return {
+            id: n.id, name: n.label, category: category(n), value: n.degree, url: n.url,
+            x: width / 2, y: height / 2, fixed: true, symbol: 'circle',
+            symbolSize: Math.round(22 + 4 * Math.sqrt(n.degree)),
+            itemStyle: { color: c.primary, borderColor: c.surface, borderWidth: 2 },
+            label: { show: true, fontWeight: 700 },
+          };
+        }
         return {
           id: n.id,
           name: n.label,
@@ -203,7 +228,7 @@ KorczisHub.viz('graph', {
           // A seeded start, the same on every visit; the simulation takes it from there.
           x: ((h % 1000) / 1000) * width,
           y: (((h >>> 10) % 1000) / 1000) * height,
-          symbol: n.kind === 'category' ? 'roundRect' : 'circle',
+          symbol: n.kind === 'category' ? 'roundRect' : n.skill ? 'diamond' : 'circle',
           symbolSize: Math.round((plain ? 6 : 10) + 6 * Math.sqrt(n.degree)),
           itemStyle: plain ? { color: c.surface, borderColor: c.muted, borderWidth: 2 } : { borderColor: c.surface, borderWidth: 1 },
           label: { show: state.labels || shown.has(n.id), fontWeight: plain ? 400 : 600 },

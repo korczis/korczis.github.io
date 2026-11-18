@@ -3,7 +3,7 @@
 title = "Insolvence"
 description = "Stav dlužníka, který nedokáže splácet své dluhy; insolvenční řízení a přihlášky věřitelů v nich se zapisují do veřejných rejstříků."
 template = "term.html"
-weight = 47
+weight = 88
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]
@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Stav dlužníka, který nedokáže splácet své dluhy; insolvenční řízení a přihlášky věřitelů v nich se zapisují do veřejných rejstříků."
 aliases = []
 reference = { title = "Insolvency (Wikipedia)", url = "https://en.wikipedia.org/wiki/Insolvency" }
-pages = ["projects/security.cs.md", "work/magic.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/peacemaker.cs.md", "work/ratnet.cs.md", "work/zlown.cs.md"]
-related = ["audit-trail", "data-integration", "decision-support-system", "due-diligence", "information-extraction", "knowledge-graph", "market-intelligence", "mergers-and-acquisitions"]
+pages = ["projects/security.cs.md", "services/_index.cs.md", "services/continuous-monitoring.cs.md", "skills/_index.cs.md", "skills/insolvency-monitoring.cs.md", "work/magic.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/peacemaker.cs.md", "work/ratnet.cs.md", "work/zlown.cs.md"]
+related = ["orchestration", "record-linkage", "risk-assessment", "audit-trail", "data-integration", "decision-support-system", "due-diligence", "information-extraction"]
 og_title = "Insolvence: slovník"
 og_image = "og/cs-glossary-insolvency.png"
 keywords = ["Insolvence", "Insolvency", "Koncept", "Slovník", "Tomáš Korčák"]

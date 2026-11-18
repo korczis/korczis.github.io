@@ -17,7 +17,7 @@ og_description = "cluster-kubernetes: Systémy a infrastruktura, Shell a Smarty,
 og_image = "og/cs-work-cluster-kubernetes.png"
 schema = "project"
 keywords = ["cluster-kubernetes", "Systémy a infrastruktura", "Shell", "Smarty", "kubernetes", "2017–2018", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["shell", "repository", "commit", "open-source"]
+terms = ["shell", "smarty", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,7 +28,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**cluster-kubernetes** je projekt z kategorie [Systémy a infrastruktura](@/projects/systems.cs.md). Jeho kód je napsaný hlavně v jazyce [Shell](@/glossary/shell.cs.md) (69,8 %), dále Smarty.
+**cluster-kubernetes** je projekt z kategorie [Systémy a infrastruktura](@/projects/systems.cs.md). Jeho kód je napsaný hlavně v jazyce [Shell](@/glossary/shell.cs.md) (69,8 %), dále [Smarty](@/glossary/smarty.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 14. března 2017; poslední [commit](@/glossary/commit.cs.md) je z 30. ledna 2018. Zní „Add postgresql“. Bez commitu za posledních 48 měsíců je veden jako archiv: práce z období 2017–2018, ponechaná pro záznam a datovaná podle měření.
 

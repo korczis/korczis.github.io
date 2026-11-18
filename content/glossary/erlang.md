@@ -3,7 +3,7 @@
 title = "Erlang"
 description = "A language and runtime from telecoms, designed for systems that must keep running while parts of them fail."
 template = "term.html"
-weight = 7
+weight = 13
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -17,10 +17,19 @@ definition = "A language and runtime from telecoms, designed for systems that mu
 aliases = []
 reference = { title = "erlang.org", url = "https://www.erlang.org/" }
 pages = ["projects/learning.md", "work/rustler-mix.md", "work/skull-erlang.md"]
-related = ["repository", "commit", "elixir", "open-source", "rust", "c", "cpp", "csharp"]
+related = ["repository", "commit", "elixir", "open-source", "rust", "c", "cmake", "cpp"]
 og_title = "Erlang: glossary"
 og_image = "og/glossary-erlang.png"
 keywords = ["Erlang", "Programming language", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,3 +40,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
+I have written Erlang in 2 public repositories, from 2014 to 2016; in 1 of them it is the main language.
+
+What it was for: [Learning and experiments](@/projects/learning.md) (1) and [Tools](@/projects/tools.md) (1).
+
+Most recently: [rustler\_mix](@/work/rustler-mix.md): Rustler Mix; [skull-erlang](@/work/skull-erlang.md): Programming learning materials, examples, sources.
+
+How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses Erlang: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links Erlang to the repositories and to the other languages and technologies they use together.

@@ -17,7 +17,7 @@ og_description = "mapoffacts: Nástroje, JavaScript, Elixir a Elm, 2017, archiv.
 og_image = "og/cs-work-mapoffacts.png"
 schema = "project"
 keywords = ["mapoffacts", "Nástroje", "JavaScript", "Elixir", "Elm", "2017", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["javascript", "elixir", "rust", "html", "open-source", "repository", "commit"]
+terms = ["javascript", "elixir", "elm", "rust", "html", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,7 +28,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**mapoffacts** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [JavaScript](@/glossary/javascript.cs.md) (37,5 %), dále [Elixir](@/glossary/elixir.cs.md), Elm a [Rust](@/glossary/rust.cs.md).
+**mapoffacts** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [JavaScript](@/glossary/javascript.cs.md) (37,5 %), dále [Elixir](@/glossary/elixir.cs.md), [Elm](@/glossary/elm.cs.md) a [Rust](@/glossary/rust.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 21. července 2017; poslední [commit](@/glossary/commit.cs.md) je z 22. srpna 2017. Zní „WIP“. Bez commitu za posledních 48 měsíců je veden jako archiv: práce z období 2017, ponechaná pro záznam a datovaná podle měření.
 

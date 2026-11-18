@@ -17,7 +17,7 @@ og_description = "charon: Nástroje, Rust a Makefile, 2016, archiv. Zdrojový k�
 og_image = "og/cs-work-charon.png"
 schema = "project"
 keywords = ["charon", "Nástroje", "Rust", "Makefile", "2016", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["rust", "open-source", "repository", "commit"]
+terms = ["rust", "makefile", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,7 +28,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**charon** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [Rust](@/glossary/rust.cs.md) (75 %), dále Makefile.
+**charon** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [Rust](@/glossary/rust.cs.md) (75 %), dále [Makefile](@/glossary/makefile.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 1. července 2016; poslední [commit](@/glossary/commit.cs.md) je z 10. července 2016. Zní „Refactor“. Bez commitu za posledních 48 měsíců je veden jako archiv: práce z období 2016, ponechaná pro záznam a datovaná podle měření.
 

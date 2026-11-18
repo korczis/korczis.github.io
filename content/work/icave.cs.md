@@ -17,7 +17,7 @@ og_description = "iCave: Nástroje, C++, Arduino a C, 2014–2015, archiv. Zdroj
 og_image = "og/cs-work-icave.png"
 schema = "project"
 keywords = ["iCave", "Nástroje", "C++", "Arduino", "2014–2015", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["cpp", "c", "open-source", "repository", "commit"]
+terms = ["cpp", "arduino", "c", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,7 +28,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**iCave** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [C++](@/glossary/cpp.cs.md) (86,9 %), dále Arduino a [C](@/glossary/c.cs.md).
+**iCave** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [C++](@/glossary/cpp.cs.md) (86,9 %), dále [Arduino](@/glossary/arduino.cs.md) a [C](@/glossary/c.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 1. března 2014; poslední [commit](@/glossary/commit.cs.md) je z 22. února 2015. Zní „Update display.h“. Bez commitu za posledních 48 měsíců je veden jako archiv: práce z období 2014–2015, ponechaná pro záznam a datovaná podle měření.
 

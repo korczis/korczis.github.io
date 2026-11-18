@@ -17,7 +17,7 @@ og_description = "gooddata-fs: Data a GIS, Rust, Makefile a Shell, 2016, archiv.
 og_image = "og/cs-work-gooddata-fs.png"
 schema = "project"
 keywords = ["gooddata-fs", "Data a GIS", "Rust", "Makefile", "Shell", "2016", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["rust", "shell", "gis", "repository", "commit", "open-source"]
+terms = ["rust", "makefile", "shell", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,7 +28,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**gooddata-fs** je projekt z kategorie [Data a GIS](@/projects/data.cs.md). Jeho kód je napsaný hlavně v jazyce [Rust](@/glossary/rust.cs.md) (97,9 %), dále Makefile a [Shell](@/glossary/shell.cs.md).
+**gooddata-fs** je projekt z kategorie [Data a GIS](@/projects/data.cs.md). Jeho kód je napsaný hlavně v jazyce [Rust](@/glossary/rust.cs.md) (97,9 %), dále [Makefile](@/glossary/makefile.cs.md) a [Shell](@/glossary/shell.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 25. května 2016; poslední [commit](@/glossary/commit.cs.md) je z 15. července 2016. Zní „Sanitize project title“. Bez commitu za posledních 48 měsíců je veden jako archiv: práce z období 2016, ponechaná pro záznam a datovaná podle měření.
 

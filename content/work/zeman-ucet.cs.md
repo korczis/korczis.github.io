@@ -17,7 +17,7 @@ og_description = "zeman-ucet: Nástroje, Ruby, R a Shell, 2017, archiv. Zdrojov�
 og_image = "og/cs-work-zeman-ucet.png"
 schema = "project"
 keywords = ["zeman-ucet", "Nástroje", "Ruby", "Shell", "czech-republic", "nokogiri", "prezident", "transparentni-ucet", "zeman", "2017", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["ruby", "shell", "open-source", "repository", "commit"]
+terms = ["ruby", "r", "shell", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,7 +28,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**zeman-ucet** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [Ruby](@/glossary/ruby.cs.md) (75,3 %), dále R a [Shell](@/glossary/shell.cs.md).
+**zeman-ucet** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [Ruby](@/glossary/ruby.cs.md) (75,3 %), dále [R](@/glossary/r.cs.md) a [Shell](@/glossary/shell.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 3. září 2017; poslední [commit](@/glossary/commit.cs.md) je z 7. října 2017. Zní „update“. Bez commitu za posledních 48 měsíců je veden jako archiv: práce z období 2017, ponechaná pro záznam a datovaná podle měření.
 

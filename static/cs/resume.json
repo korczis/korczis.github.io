@@ -242,10 +242,24 @@
    ]
   },
   {
+   "name": "ApacheConf",
+   "url": "https://korczis.github.io/cs/glossary/apacheconf/",
+   "keywords": [
+    "pavian.eu"
+   ]
+  },
+  {
    "name": "C",
    "url": "https://korczis.github.io/cs/glossary/c/",
    "keywords": [
     "skull-c"
+   ]
+  },
+  {
+   "name": "CMake",
+   "url": "https://korczis.github.io/cs/glossary/cmake/",
+   "keywords": [
+    "skull-cpp"
    ]
   },
   {
@@ -260,6 +274,55 @@
    "url": "https://korczis.github.io/cs/glossary/java/",
    "keywords": [
     "skull-java"
+   ]
+  },
+  {
+   "name": "Just",
+   "url": "https://korczis.github.io/cs/glossary/just/",
+   "keywords": [
+    "comtesse"
+   ]
+  },
+  {
+   "name": "Makefile",
+   "url": "https://korczis.github.io/cs/glossary/makefile/",
+   "keywords": [
+    "skull-nodejs"
+   ]
+  },
+  {
+   "name": "OpenSCAD",
+   "url": "https://korczis.github.io/cs/glossary/openscad/",
+   "keywords": [
+    "3d-print"
+   ]
+  },
+  {
+   "name": "R",
+   "url": "https://korczis.github.io/cs/glossary/r/",
+   "keywords": [
+    "datascience"
+   ]
+  },
+  {
+   "name": "Squirrel",
+   "url": "https://korczis.github.io/cs/glossary/squirrel/",
+   "keywords": [
+    "openttd-prismatic-bridge"
+   ]
+  },
+  {
+   "name": "TeX",
+   "url": "https://korczis.github.io/cs/glossary/tex/",
+   "keywords": [
+    "corvidae"
+   ]
+  },
+  {
+   "name": "XSLT",
+   "url": "https://korczis.github.io/cs/glossary/xslt/",
+   "keywords": [
+    "solr-core-minimal"
    ]
   },
   {

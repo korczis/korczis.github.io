@@ -17,7 +17,7 @@ og_description = "happ: Učení a experimenty, C++, Objective-C a Swift, 2021, a
 og_image = "og/cs-work-happ.png"
 schema = "project"
 keywords = ["happ", "Učení a experimenty", "C++", "Objective-C", "Swift", "2021", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["cpp", "swift", "rust", "shell", "repository", "commit", "open-source"]
+terms = ["cpp", "objective-c", "swift", "rust", "shell", "cmake", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,7 +28,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**happ** je projekt z kategorie [Učení a experimenty](@/projects/learning.cs.md). Jeho kód je napsaný hlavně v jazyce [C++](@/glossary/cpp.cs.md) (62,7 %), dále Objective-C, [Swift](@/glossary/swift.cs.md) a [Rust](@/glossary/rust.cs.md).
+**happ** je projekt z kategorie [Učení a experimenty](@/projects/learning.cs.md). Jeho kód je napsaný hlavně v jazyce [C++](@/glossary/cpp.cs.md) (62,7 %), dále [Objective-C](@/glossary/objective-c.cs.md), [Swift](@/glossary/swift.cs.md) a [Rust](@/glossary/rust.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 23. dubna 2021; poslední [commit](@/glossary/commit.cs.md) je z 3. června 2021. Zní „Improve Charts“. Bez commitu za posledních 48 měsíců je veden jako archiv: práce z období 2021, ponechaná pro záznam a datovaná podle měření.
 

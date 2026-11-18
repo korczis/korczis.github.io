@@ -17,7 +17,7 @@ og_description = "openttd-prismatic-bridge: Media and art in Squirrel, Python an
 og_image = "og/work-openttd-prismatic-bridge.png"
 schema = "project"
 keywords = ["openttd-prismatic-bridge", "Media and art", "Squirrel", "Python", "HTML", "2026", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["python", "html", "shell", "css", "data-visualisation", "repository", "commit", "open-source"]
+terms = ["squirrel", "python", "html", "shell", "css", "data-visualisation", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -29,7 +29,7 @@ height = "md"
 tone = "night"
 vars = { cadence = "every 6 hours" }
 +++
-**openttd-prismatic-bridge** is a project in [Media and art](@/projects/media.md). Its code is written mainly in Squirrel (38.8 %), with [Python](@/glossary/python.md), [HTML](@/glossary/html.md) and [Shell](@/glossary/shell.md).
+**openttd-prismatic-bridge** is a project in [Media and art](@/projects/media.md). Its code is written mainly in [Squirrel](@/glossary/squirrel.md) (38.8 %), with [Python](@/glossary/python.md), [HTML](@/glossary/html.md) and [Shell](@/glossary/shell.md).
 
 The [repository](@/glossary/repository.md) was created on 23 July 2026; its latest [commit](@/glossary/commit.md) is from 18 November 2026. It reads “Doc: the overview's Prismatic card says a decision's settings go onto the running AI and a refused one answers 502”. That places it among the projects active in the last 12 months.
 

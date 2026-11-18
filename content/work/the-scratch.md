@@ -17,7 +17,7 @@ og_description = "the-scratch: Web in JavaScript, Elixir and Elm, 2017–2018, a
 og_image = "og/work-the-scratch.png"
 schema = "project"
 keywords = ["the-scratch", "Web", "JavaScript", "Elixir", "Elm", "ecto", "phoenix", "phoenix-backend", "single-page-app", "2017–2018", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["javascript", "elixir", "rust", "html", "static-site-generator", "repository", "commit", "open-source"]
+terms = ["javascript", "elixir", "elm", "rust", "html", "static-site-generator", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,7 +28,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**the-scratch** is a project in [Web](@/projects/web.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (37.1 %), with [Elixir](@/glossary/elixir.md), Elm and [Rust](@/glossary/rust.md).
+**the-scratch** is a project in [Web](@/projects/web.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (37.1 %), with [Elixir](@/glossary/elixir.md), [Elm](@/glossary/elm.md) and [Rust](@/glossary/rust.md).
 
 The [repository](@/glossary/repository.md) was created on 21 July 2017; its latest [commit](@/glossary/commit.md) is from 10 March 2018. It reads “Upgrade dependencies”. With no commit in the last 48 months it is listed as archive: work from 2017–2018, kept for the record and dated as measured.
 

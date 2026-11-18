@@ -14,7 +14,7 @@ category = "web"
 og_title = "Web: 14 repozitářů."
 og_image = "og/cs-category-web.png"
 schema = "collection"
-terms = ["static-site-generator", "javascript", "css", "html", "elixir", "repository"]
+terms = ["static-site-generator", "javascript", "css", "html", "apacheconf", "elixir", "repository"]
 keywords = ["Web", "korczis.github.io", "ApolloCrawler-github-io", "korczis-com", "korczis-github-com", "korczis.gitlab.io", "nestravenkam", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -28,7 +28,7 @@ tone = "night"
 +++
 Weby a webové aplikace: single-page aplikace, frontendy v Phoenixu a Elmu, landing pages a weby přátel.
 
-Kategorie má 14 repozitářů; nejčastějšími jazyky jsou [JavaScript](@/glossary/javascript.cs.md), [CSS](@/glossary/css.cs.md), [HTML](@/glossary/html.cs.md), ApacheConf a [Elixir](@/glossary/elixir.cs.md).
+Kategorie má 14 repozitářů; nejčastějšími jazyky jsou [JavaScript](@/glossary/javascript.cs.md), [CSS](@/glossary/css.cs.md), [HTML](@/glossary/html.cs.md), [ApacheConf](@/glossary/apacheconf.cs.md) a [Elixir](@/glossary/elixir.cs.md).
 
 Klíčový pojem: [Generátor statických webů](@/glossary/static-site-generator.cs.md).
 

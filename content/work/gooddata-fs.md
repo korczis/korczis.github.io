@@ -17,7 +17,7 @@ og_description = "gooddata-fs: Data and GIS in Rust, Makefile and Shell, 2016, a
 og_image = "og/work-gooddata-fs.png"
 schema = "project"
 keywords = ["gooddata-fs", "Data and GIS", "Rust", "Makefile", "Shell", "2016", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["rust", "shell", "gis", "repository", "commit", "open-source"]
+terms = ["rust", "makefile", "shell", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,7 +28,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**gooddata-fs** is a project in [Data and GIS](@/projects/data.md). Its code is written mainly in [Rust](@/glossary/rust.md) (97.9 %), with Makefile and [Shell](@/glossary/shell.md).
+**gooddata-fs** is a project in [Data and GIS](@/projects/data.md). Its code is written mainly in [Rust](@/glossary/rust.md) (97.9 %), with [Makefile](@/glossary/makefile.md) and [Shell](@/glossary/shell.md).
 
 The [repository](@/glossary/repository.md) was created on 25 May 2016; its latest [commit](@/glossary/commit.md) is from 15 July 2016. It reads “Sanitize project title”. With no commit in the last 48 months it is listed as archive: work from 2016, kept for the record and dated as measured.
 

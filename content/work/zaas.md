@@ -17,7 +17,7 @@ og_description = "zaas: Tools in JavaScript, Elixir and Elm, 2017, archive. Sour
 og_image = "og/work-zaas.png"
 schema = "project"
 keywords = ["zaas", "Tools", "JavaScript", "Elixir", "Elm", "2017", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["javascript", "elixir", "rust", "html", "open-source", "repository", "commit"]
+terms = ["javascript", "elixir", "elm", "rust", "html", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,7 +28,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**zaas** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (37.3 %), with [Elixir](@/glossary/elixir.md), Elm and [Rust](@/glossary/rust.md).
+**zaas** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (37.3 %), with [Elixir](@/glossary/elixir.md), [Elm](@/glossary/elm.md) and [Rust](@/glossary/rust.md).
 
 The [repository](@/glossary/repository.md) was created on 7 September 2017; its latest [commit](@/glossary/commit.md) is from 7 September 2017. It reads “Update”. With no commit in the last 48 months it is listed as archive: work from 2017, kept for the record and dated as measured.
 

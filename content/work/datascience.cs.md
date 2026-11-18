@@ -17,7 +17,7 @@ og_description = "datascience: Data a GIS, R, 2016, archiv. Zdrojový kód: GitH
 og_image = "og/cs-work-datascience.png"
 schema = "project"
 keywords = ["datascience", "Data a GIS", "2016", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["gis", "repository", "commit", "open-source"]
+terms = ["r", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,7 +28,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**datascience** je projekt z kategorie [Data a GIS](@/projects/data.cs.md). Jeho kód je napsaný hlavně v jazyce R (100 %).
+**datascience** je projekt z kategorie [Data a GIS](@/projects/data.cs.md). Jeho kód je napsaný hlavně v jazyce [R](@/glossary/r.cs.md) (100 %).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 4. dubna 2016; poslední [commit](@/glossary/commit.cs.md) je z 30. dubna 2016. Zní „Added factbook“. Bez commitu za posledních 48 měsíců je veden jako archiv: práce z období 2016, ponechaná pro záznam a datovaná podle měření.
 

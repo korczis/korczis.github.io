@@ -3,7 +3,7 @@
 title = "Shell"
 description = "Skripty pro unixovou příkazovou řádku (bash, zsh), lepidlo, které instaluje, staví a nasazuje."
 template = "term.html"
-weight = 16
+weight = 33
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -16,11 +16,20 @@ kind = "language"
 definition = "Skripty pro unixovou příkazovou řádku (bash, zsh), lepidlo, které instaluje, staví a nasazuje."
 aliases = []
 reference = { title = "GNU Bash manual", url = "https://www.gnu.org/software/bash/manual/" }
-pages = ["projects/data.cs.md", "projects/learning.cs.md", "projects/systems.cs.md", "projects/tools.cs.md", "work/algoglyph.cs.md", "work/algorithms-ruby.cs.md", "work/apollo-box.cs.md", "work/apollocrawler-com.cs.md", "work/astronomists.cs.md", "work/aws-lambda-docker.cs.md", "work/bcnode-extra-scripts.cs.md", "work/bcnode-old.cs.md", "work/catharsis-as-a-service.cs.md", "work/cluster-kubernetes.cs.md", "work/comtesse.cs.md", "work/corvidae.cs.md", "work/craftsmen.cs.md", "work/data-atlas.cs.md", "work/docker-dstk.cs.md", "work/docker-gooddata-ruby.cs.md", "work/docks.cs.md", "work/el-magico-cache.cs.md", "work/gh-exec-3000.cs.md", "work/gists-search.cs.md", "work/gooddata-fs.cs.md", "work/gooddata-graphql.cs.md", "work/grache-test.cs.md", "work/happ.cs.md", "work/haskell-world.cs.md", "work/home.cs.md", "work/hydra.cs.md", "work/jetel.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/korczis-github-io.cs.md", "work/lethe-it.cs.md", "work/majordomus-reel.cs.md", "work/malina.cs.md", "work/maze.cs.md", "work/microcrawler-couchapp.cs.md", "work/microcrawler-elixir.cs.md", "work/microcrawler-js.cs.md", "work/microcrawler.cs.md", "work/minervaeye.cs.md", "work/openttd-prismatic-bridge.cs.md", "work/oscilla.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/prismatic-majordomus.cs.md", "work/prismatic.cs.md", "work/server-ansible.cs.md", "work/server-archlinux.cs.md", "work/server-atomic.cs.md", "work/server-nixos.cs.md", "work/sig.cs.md", "work/simple-geocoder.cs.md", "work/skull-elixir.cs.md", "work/skull.cs.md", "work/sonic-playground.cs.md", "work/vomaste-cz.cs.md", "work/zdeny-docker.cs.md", "work/zeman-ucet.cs.md", "work/zlown.cs.md"]
-related = ["repository", "open-source", "commit", "javascript", "html", "css", "elixir", "python"]
+pages = ["projects/data.cs.md", "projects/learning.cs.md", "projects/systems.cs.md", "projects/tools.cs.md", "services/_index.cs.md", "services/ai-engineering-governance.cs.md", "services/decision-support-ai.cs.md", "services/digital-forensics.cs.md", "services/digital-investigation.cs.md", "services/interactive-data-products.cs.md", "services/reputation-intelligence.cs.md", "skills/_index.cs.md", "skills/ai-transformation.cs.md", "skills/audit-trail.cs.md", "skills/data-integration.cs.md", "skills/decision-support.cs.md", "skills/due-diligence.cs.md", "skills/geospatial-analysis.cs.md", "skills/interactive-visualisation.cs.md", "skills/knowledge-graph.cs.md", "skills/llm-agents.cs.md", "skills/narrative-analysis.cs.md", "skills/orchestration.cs.md", "skills/osint-investigation.cs.md", "skills/policy-as-code.cs.md", "skills/web-automation.cs.md", "work/algoglyph.cs.md", "work/algorithms-ruby.cs.md", "work/apollo-box.cs.md", "work/apollocrawler-com.cs.md", "work/astronomists.cs.md", "work/aws-lambda-docker.cs.md", "work/bcnode-extra-scripts.cs.md", "work/bcnode-old.cs.md", "work/catharsis-as-a-service.cs.md", "work/cluster-kubernetes.cs.md", "work/comtesse.cs.md", "work/corvidae.cs.md", "work/craftsmen.cs.md", "work/data-atlas.cs.md", "work/docker-dstk.cs.md", "work/docker-gooddata-ruby.cs.md", "work/docks.cs.md", "work/el-magico-cache.cs.md", "work/gh-exec-3000.cs.md", "work/gists-search.cs.md", "work/gooddata-fs.cs.md", "work/gooddata-graphql.cs.md", "work/grache-test.cs.md", "work/happ.cs.md", "work/haskell-world.cs.md", "work/home.cs.md", "work/hydra.cs.md", "work/jetel.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/korczis-github-io.cs.md", "work/lethe-it.cs.md", "work/majordomus-reel.cs.md", "work/malina.cs.md", "work/maze.cs.md", "work/microcrawler-couchapp.cs.md", "work/microcrawler-elixir.cs.md", "work/microcrawler-js.cs.md", "work/microcrawler.cs.md", "work/minervaeye.cs.md", "work/openttd-prismatic-bridge.cs.md", "work/oscilla.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/prismatic-majordomus.cs.md", "work/prismatic.cs.md", "work/server-ansible.cs.md", "work/server-archlinux.cs.md", "work/server-atomic.cs.md", "work/server-nixos.cs.md", "work/sig.cs.md", "work/simple-geocoder.cs.md", "work/skull-elixir.cs.md", "work/skull.cs.md", "work/sonic-playground.cs.md", "work/vomaste-cz.cs.md", "work/zdeny-docker.cs.md", "work/zeman-ucet.cs.md", "work/zlown.cs.md", "_index.cs.md"]
+related = ["repository", "open-source", "commit", "javascript", "html", "css", "python", "elixir"]
 og_title = "Shell: slovník"
 og_image = "og/cs-glossary-shell.png"
 keywords = ["Shell", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,3 +40,14 @@ span = 3
 height = "md"
 tone = "night"
 +++
+Shell jsem psal v 42 veřejných repozitářích, od roku 2013 do 2026; v 13 z nich je hlavním jazykem.
+
+K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (11), [Systémy a infrastruktura](@/projects/systems.cs.md) (10), [Data a GIS](@/projects/data.cs.md) (5) a [Učení a experimenty](@/projects/learning.cs.md) (4).
+
+Naposledy: [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat; [korczis.github.io](@/work/korczis-github-io.cs.md); [Majordomus reel](@/work/majordomus-reel.cs.md): Hlas, snímky, hudba i zvuk, vše generované a verzované jako software.
+
+9 z těchto projektů běží jako živé weby.
+
+Používal jsem ho také v klientské práci pod dohodami o mlčenlivosti. Role: Architekt, Vedoucí inženýr, Inženýr AI a Datový inženýr. Co se řešilo: Agenti s LLM, Podpora rozhodování, Transformace s AI a Auditní stopa. Případy užití níže popisují princip a záměr této práce; žádný klient, osoba, datum ani číslo nejsou uvedeny.
+
+Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak Shell používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje Shell s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

@@ -3,7 +3,7 @@
 title = "Haskell"
 description = "A purely functional language with lazy evaluation and a strong type system; a place to learn to think in types."
 template = "term.html"
-weight = 8
+weight = 14
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -23,6 +23,15 @@ og_image = "og/glossary-haskell.png"
 keywords = ["Haskell", "Programming language", "Glossary", "Tomas Korcak"]
 
 [[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
+
+[[extra.viz]]
 kind = "atlas"
 source = "glossary.terms"
 title = "viz_atlas_term_title"
@@ -31,3 +40,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
+I have written Haskell in 2 public repositories, from 2014 to 2016; in 2 of them it is the main language.
+
+What it was for: [Learning and experiments](@/projects/learning.md) (1) and [Science and visualisation](@/projects/science.md) (1).
+
+Most recently: [haskell-world](@/work/haskell-world.md): Haskell Mathematics; [skull-haskell](@/work/skull-haskell.md).
+
+How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses Haskell: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links Haskell to the repositories and to the other languages and technologies they use together.
