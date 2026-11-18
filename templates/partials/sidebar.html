@@ -86,7 +86,7 @@
               {%- else %}
               {%- for k in caps %}{% if sxr.capabilities[k] is defined %}
               {%- set c = sxr.capabilities[k] %}
-              {%- if c.term is defined %}{% set href = config.base_url ~ lp ~ "/glossary/" ~ c.term ~ "/" %}{% else %}{% set href = config.base_url ~ lp ~ "/#experience" %}{% endif %}
+              {%- set href = get_url(path="@/skills/" ~ k ~ ".md", lang=lang) %}
               <li>{{ <chip label={c["name" ~ sfx] | default(value=c.name)} href={href} size="xs" /> }}</li>
               {%- endif %}{% endfor %}
               {%- endif %}
