@@ -80,7 +80,8 @@
             "about",
             "project",
             "term",
-            "glossary"
+            "glossary",
+            "hire"
           ],
           "description": "Which JSON-LD page type templates/partials/seo.html emits."
         },

@@ -16,8 +16,8 @@ kind = "language"
 definition = "A functional language on the Erlang virtual machine, built for concurrent, fault-tolerant systems."
 aliases = []
 reference = { title = "elixir-lang.org", url = "https://elixir-lang.org/" }
-pages = ["about.md", "projects/ai.md", "projects/data.md", "projects/knowledge.md", "projects/learning.md", "projects/libraries.md", "projects/media.md", "projects/science.md", "projects/tools.md", "projects/web.md", "work/corvidae.md", "work/crisis-map.md", "work/distance-calculator.md", "work/el-magico-cache.md", "work/job-processor.md", "work/kompendium-epistemicke-anihilace.md", "work/korczis-gitlab-io.md", "work/kuzu-ex.md", "work/llm.md", "work/meili-rsex.md", "work/prismatic.md", "work/sig.md", "work/simple-geocoder.md", "work/sonic-playground.md", "work/the-psycho.md"]
-related = ["repository", "open-source", "commit", "javascript", "shell", "html", "rust", "python"]
+pages = ["about.md", "hire.md", "projects/ai.md", "projects/data.md", "projects/knowledge.md", "projects/learning.md", "projects/libraries.md", "projects/media.md", "projects/science.md", "projects/tools.md", "projects/web.md", "work/corvidae.md", "work/crisis-map.md", "work/distance-calculator.md", "work/el-magico-cache.md", "work/job-processor.md", "work/kompendium-epistemicke-anihilace.md", "work/korczis-gitlab-io.md", "work/kuzu-ex.md", "work/llm.md", "work/meili-rsex.md", "work/prismatic.md", "work/sig.md", "work/simple-geocoder.md", "work/sonic-playground.md", "work/the-psycho.md"]
+related = ["repository", "open-source", "commit", "javascript", "rust", "shell", "html", "python"]
 og_title = "Elixir: glossary"
 og_image = "og/glossary-elixir.png"
 keywords = ["Elixir", "Programming language", "Glossary", "Tomas Korcak"]

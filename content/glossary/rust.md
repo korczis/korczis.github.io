@@ -16,8 +16,8 @@ kind = "language"
 definition = "A systems language that guarantees memory safety without a garbage collector; Majordomus is written in it."
 aliases = []
 reference = { title = "The Rust Programming Language", url = "https://doc.rust-lang.org/book/" }
-pages = ["about.md", "projects/ai.md", "projects/data.md", "projects/learning.md", "projects/libraries.md", "projects/science.md", "projects/security.md", "projects/tools.md", "work/algoglyph.md", "work/catharsis-as-a-service.md", "work/comtesse.md", "work/kompendium-epistemicke-anihilace.md", "work/meili-rsex.md", "work/prismatic-majordomus.md"]
-related = ["repository", "javascript", "elixir", "open-source", "shell", "commit", "html", "python"]
+pages = ["about.md", "hire.md", "projects/ai.md", "projects/data.md", "projects/learning.md", "projects/libraries.md", "projects/science.md", "projects/security.md", "projects/tools.md", "work/algoglyph.md", "work/catharsis-as-a-service.md", "work/comtesse.md", "work/kompendium-epistemicke-anihilace.md", "work/meili-rsex.md", "work/prismatic-majordomus.md"]
+related = ["repository", "elixir", "javascript", "open-source", "shell", "commit", "html", "python"]
 og_title = "Rust: glossary"
 og_image = "og/glossary-rust.png"
 keywords = ["Rust", "Programming language", "Glossary", "Tomas Korcak"]

@@ -1061,6 +1061,31 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/hire/",
+   "lang": "cs",
+   "title": "Najměte Tomáše Korčáka · Staff AI agent engineer, Elixir, Rust",
+   "description": "Tomáš Korčák, staff engineer pro infrastrukturu AI agentů, Elixir a Rust: k dispozici remote, na plný úvazek i kontrakt. Role, podmínky, sazba, důkazy.",
+   "type": "hire",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-hire.png",
+   "keywords": [
+    "spolupráce",
+    "remote",
+    "staff engineer",
+    "AI engineer",
+    "AI agenti",
+    "LLM engineer",
+    "MCP",
+    "Elixir",
+    "Rust",
+    "forward deployed engineer",
+    "frakční CTO",
+    "kontrakt",
+    "Tomáš Korčák",
+    "korczis"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/interfaces/",
    "lang": "cs",
    "title": "Rozhraní · Tomas Korcak",
@@ -3010,6 +3035,31 @@
     "Technology",
     "Glossary",
     "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/hire/",
+   "lang": "en",
+   "title": "Hire Tomas Korcak · Staff AI agent engineer, Elixir, Rust",
+   "description": "Tomas Korcak, staff engineer for AI agent infrastructure, Elixir and Rust: available remote, full-time or contract. Roles, terms, rate and evidence.",
+   "type": "hire",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/hire.png",
+   "keywords": [
+    "hire",
+    "remote",
+    "staff engineer",
+    "AI engineer",
+    "AI agents",
+    "LLM engineer",
+    "MCP",
+    "Elixir",
+    "Rust",
+    "forward deployed engineer",
+    "fractional CTO",
+    "contract",
+    "Tomas Korcak",
+    "korczis"
    ]
   },
   {

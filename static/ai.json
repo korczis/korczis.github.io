@@ -2,12 +2,12 @@
  "schema": "korczis-hub-ai/v1",
  "description": "The Majordomus layer of korczis/korczis.github.io: every object of .ai/ with its MCP resource URI",
  "source": "majordomus run objects.list, capabilities.list",
- "majordomus": "1.0.1",
- "tree": "097005dc9469d5e273ee42bbcdaec3d8abe2485b955678df974987d4958f09e1",
+ "majordomus": "1.0.2",
+ "tree": "58b772ccb71759be75a2358ad9529a677ad89dd26c9613fbea5e7ad756d9a2df",
  "counts": {
-  "objects": 138,
+  "objects": 139,
   "kinds": {
-   "adr": 6,
+   "adr": 7,
    "context": 21,
    "document": 9,
    "knowledge": 8,
@@ -20,9 +20,9 @@
    "skill": 1,
    "taxonomy": 8
   },
-  "capabilities": 369,
+  "capabilities": 370,
   "mcp_tools": 215,
-  "mcp_resources": 195,
+  "mcp_resources": 196,
   "http_routes": 219
  },
  "objects": [
@@ -73,6 +73,14 @@
    "title": "Experience on the landing page is mined from private sources into anonymised facts, guarded by an NDA gate",
    "description": "Experience on the landing page is mined from private sources into anonymised facts, guarded by an NDA gate",
    "path": ".ai/repo/adrs/0006-experience-on-the-landing-page-is-mined-from-private-sources.md"
+  },
+  {
+   "uri": "majordomus://adr/adr-0007",
+   "kind": "adr",
+   "identity": "adr-0007",
+   "title": "Availability for hire, the CV taken from LinkedIn, and a profile written for AI readers without hidden instructions",
+   "description": "Availability for hire, the CV taken from LinkedIn, and a profile written for AI readers without hidden instructions",
+   "path": ".ai/repo/adrs/0007-availability-for-hire-cv-from-linkedin-and-a-profile-written-.md"
   },
   {
    "uri": "majordomus://context/ai.layer",

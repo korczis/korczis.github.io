@@ -132,6 +132,7 @@ for (const [name, expected] of Object.entries(fixtures)) {
 
 // The owner's CV facts (ADR 0004) against static/schemas/cv.schema.json: the subset of JSON Schema
 // that schema uses (type, required, additionalProperties: false, pattern, minLength, enum, $ref).
+// Availability for hire (ADR 0007) also needs its Czech twins: a list of roles of the same length.
 const cvSchema = JSON.parse(readFileSync(join(ROOT, 'static/schemas/cv.schema.json'), 'utf8'));
 const cv = parse(readFileSync(join(ROOT, 'data/cv.toml'), 'utf8'));
 function conforms(value, schema, at) {
@@ -147,6 +148,10 @@ function conforms(value, schema, at) {
   } else if (schema.type === 'array') {
     if (!Array.isArray(value)) return fail('data/cv.toml', `${at} is not a list`);
     value.forEach((item, i) => conforms(item, schema.items, `${at}[${i}]`));
+  } else if (schema.type === 'boolean') {
+    if (typeof value !== 'boolean') fail('data/cv.toml', `${at} is not true or false`);
+  } else if (schema.type === 'integer') {
+    if (!Number.isInteger(value) || value < 0) fail('data/cv.toml', `${at} is not a whole number`);
   } else if (schema.type === 'string') {
     if (typeof value !== 'string') return fail('data/cv.toml', `${at} is not a string (quote dates: "2020-01")`);
     if (schema.minLength && value.length < schema.minLength) fail('data/cv.toml', `${at} is empty`);
@@ -155,6 +160,12 @@ function conforms(value, schema, at) {
 }
 conforms(cv, cvSchema, 'cv');
 for (const [i, r] of (cv.roles ?? []).entries()) if (r.end && r.end < r.start) fail('data/cv.toml', `roles[${i}] ends before it starts`);
+if (cv.hire) {
+  for (const key of ['headline', 'regions', 'roles']) if (!(`${key}_cs` in cv.hire)) fail('data/cv.toml', `cv.hire.${key} has no ${key}_cs twin`);
+  if (cv.hire.roles_cs && cv.hire.roles_cs.length !== cv.hire.roles.length) fail('data/cv.toml', 'cv.hire.roles_cs is not as long as cv.hire.roles');
+  const rate = ['rate_from', 'rate_currency', 'rate_unit'].filter((k) => k in cv.hire);
+  if (rate.length && rate.length !== 3) fail('data/cv.toml', 'cv.hire states a rate only with rate_from, rate_currency and rate_unit together');
+}
 
 // Measured text is shown as text: no terminal colour code or other control character in any
 // string of the derived data (scripts/lib/plain.mjs cleans them where they are measured).

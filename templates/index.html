@@ -43,6 +43,14 @@
         <p class="mb-8 text-base text-gray-600 dark:text-gray-300">
           {{ trans(key="hero_lead", lang=lang) | replace(from="{location}", to=config.extra["location_in" ~ sfx]) | replace(from="{year}", to=gh.profile.created_at | date(format="%Y")) }}
         </p>
+        {#- Availability for hire (ADR 0007): data/cv.toml [hire], linked to /hire/. #}
+        {%- set hcv = load_data(path="data/cv.toml") %}
+        {%- if hcv.hire is defined and hcv.hire.available %}
+        <a href="{{ base }}hire/" class="mb-5 inline-flex items-center gap-2 rounded-full border border-green-300 bg-green-50 px-3 py-1 text-sm font-medium text-green-800 hover:bg-green-100 focus:outline-none focus:ring-4 focus:ring-green-200 dark:border-green-800 dark:bg-green-900/40 dark:text-green-300 dark:hover:bg-green-900 dark:focus:ring-green-800">
+          <span class="h-2 w-2 rounded-full bg-green-500" aria-hidden="true"></span>{{ trans(key="hero_hire", lang=lang) }}{% if hcv.hire.rate_from is defined %} · {{ trans(key="hire_rate_value", lang=lang) | replace(from="{rate}", to=hcv.hire.rate_currency ~ " " ~ hcv.hire.rate_from) | replace(from="{unit}", to=trans(key="hire_unit_" ~ hcv.hire.rate_unit, lang=lang)) }}{% endif %}
+          {{ <icon name="arrow-right" class="h-4 w-4" /> }}
+        </a>
+        {%- endif %}
         <div class="flex flex-col gap-3 sm:flex-row">
           {%- if gh.profile.email %}
           {{ <button label={trans(key="hero_contact", lang=lang)} href={"mailto:" ~ gh.profile.email} size="lg" icon="mail" sr={gh.profile.email} /> }}

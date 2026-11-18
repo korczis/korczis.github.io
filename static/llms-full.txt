@@ -7,6 +7,7 @@
 - [Tomas Korcak](https://korczis.github.io/): Software that proves its work: tools that make AI agents prove what they did, honest scientific instruments in the browser, and knowledge bases you can check.
 - [About](https://korczis.github.io/about/): Tomas Korcak (korczis), software engineer in Brno: what I build, the languages I build it in over the years, and where to find it.
 - [Glossary](https://korczis.github.io/glossary/): The 62 terms this site explains itself with: languages, technologies and concepts, each defined, sourced and linked to every page that uses it.
+- [Hire me](https://korczis.github.io/hire/): Tomas Korcak, staff engineer for AI agent infrastructure, Elixir and Rust: available remote, full-time or contract. Roles, terms, rate and evidence.
 - [Interfaces](https://korczis.github.io/interfaces/): The site for machines: its Majordomus layer with MCP resource URIs, how to connect an agent over MCP, and every published file described in OpenAPI.
 - [Projects](https://korczis.github.io/projects/): Every project in the catalogue: what it is, what it is built with, whether it is live, and whether Majordomus supervises it.
 - [Repositories](https://korczis.github.io/repositories/): Every original public repository on GitHub and GitLab, merged by name, with its inferred category, language and both links.
@@ -57,6 +58,36 @@ Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist s
 - [Gists search](https://github.com/korczis/gists-search): Catalogue, enrichment and search over a mirror of my gists. Live: https://korczis.github.io/gists-search/
 - [json2csv](https://github.com/korczis/json2csv): Easy to use tool for converting JSON to CSV.
 - [csv2psql](https://github.com/korczis/csv2psql): CSV into SQL statements for PostgreSQL. Live: https://korczis.github.io/csv2psql/
+
+## Hire
+
+> Tomas Korcak is available for hire: Staff engineer for AI agent infrastructure, Elixir and Rust. https://korczis.github.io/hire/
+
+- Staff or principal engineer: AI agent infrastructure, developer tooling, MCP
+- Forward deployed or applied AI engineer: agentic workflows in production
+- Backend and distributed systems: Elixir, OTP, Phoenix, Rust, PostgreSQL
+- Fractional CTO and technical due diligence: data, OSINT, M&A
+- Engagement: full-time, contract, fractional; remote, worldwide, working in the Central European time zone; available since 2026-11
+- Contract rate: from USD 110 per hour, B2B; full-time compensation by conversation
+- Contact: korczis@gmail.com
+- Profile: https://www.linkedin.com/in/korcaktomas/
+
+## Experience
+
+- Freelance Technical Mentor & Engineering Advisor, Independent (2025-01 to present): One-on-one mentoring and advisory: software architecture, Elixir, OTP and Phoenix, AI-assisted and agentic software engineering, LLM applications and developer tooling, data engineering and OSINT systems, technical due diligence.
+- CTO / Lead Developer, International Leadership Development Firm (2024-12 to present)
+- Independent Consultant & Independent Contractor, Self Employed (2023-01 to present)
+- Staff Software Engineer, Kiwi.com (2019-06 to 2022-05)
+- CTO / Core Developer, Block Collider (2018-02 to 2019-01)
+- Principal Software Engineer, GoodData (2017-08 to 2018-02)
+- Senior Software Engineer / Combat Data Engineer, GoodData (2014-03 to 2017-08): San Francisco Bay Area. GoodData Ruby SDK, the high-level wrapper over the platform's APIs.
+- Software Development Lead / Software Architect, Moravia IT (2012-11 to 2014-02)
+- Senior Developer, Moravia IT (2012-08 to 2014-02)
+- Programmer, Kuju Entertainment - Vatra Games (2008-05 to 2012-04): Silent Hill: Downpour (Xbox 360, PS3), Rush'N Attack Ex-Patriot (Xbox Live Arcade, PSN), Disney Sing It; tools programming, i18n and L10n.
+- Gameplay Programmer, 2K Games (2007-01 to 2008-05)
+- Programmer, Honeywell Aerospace (2005-07 to 2007-01): Greater Phoenix Area. Test engineering and tools programming.
+- Education: Electrotechnics, SSOS - Technicke Lyceum, Prostejov (2001-09 to 2005-06)
+- Languages: Czech (native), English (fluent), German (basic)
 
 ## Optional
 

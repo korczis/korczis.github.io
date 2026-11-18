@@ -31,3 +31,16 @@ label = "maintained"
 [status.dormant]
 tone = "gray"
 label = "archive"
+
+# The AI crawlers templates/robots.txt invites by name (ADR 0007): search, assistant and training
+# agents of the model vendors and answer engines, as each vendor documents its user agent.
+[robots]
+ai_crawlers = [
+  "GPTBot", "OAI-SearchBot", "ChatGPT-User",
+  "ClaudeBot", "Claude-SearchBot", "Claude-User",
+  "PerplexityBot", "Perplexity-User",
+  "Google-Extended", "Googlebot", "Bingbot",
+  "Applebot", "Applebot-Extended",
+  "Amazonbot", "meta-externalagent", "DuckAssistBot",
+  "MistralAI-User", "cohere-ai", "CCBot", "YouBot",
+]
