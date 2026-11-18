@@ -36,9 +36,9 @@
         </div>
       </div>
       <dl class="tabular space-y-3 text-sm">
-        <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="on_github_since", lang=lang) | safe }}</dt><dd><a class="{{ link }}" href="https://github.com/{{ gh.profile.login }}">{{ gh.profile.created_at | date(format=trans(key="fmt_month_year", lang=lang), locale=trans(key="date_locale", lang=lang)) }}</a></dd></div>
+        <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="on_github_since", lang=lang) | safe }}</dt><dd><a class="{{ link }}" href="https://github.com/{{ gh.profile.login }}">{{ trans(key="month_" ~ (gh.profile.created_at | date(format="%-m")), lang=lang) }} {{ gh.profile.created_at | date(format="%Y") }}</a></dd></div>
         <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="original_public_repositories", lang=lang) | safe }}</dt><dd><a class="{{ link }}" href="{{ base }}repositories/">{{ ix.counts.own }}</a></dd></div>
-        <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="contributions_12_months", lang=lang) | safe }}</dt><dd class="font-semibold text-gray-900 dark:text-white">{{ gh.contributions.total | num_format }}</dd></div>
+        <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="contributions_12_months", lang=lang) | safe }}</dt><dd class="font-semibold text-gray-900 dark:text-white">{{ gh.contributions.total | num_format(locale=lang) }}</dd></div>
         <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="most_used_language", lang=lang) | safe }}</dt><dd class="font-semibold text-gray-900 dark:text-white">{{ ix.languages[0].name }} ({{ ix.languages[0].repos }})</dd></div>
         <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="author_of", lang=lang) | safe }}</dt><dd><a class="{{ link }}" href="{{ config.extra.majordomus_url }}">Majordomus</a></dd></div>
       </dl>
