@@ -3,7 +3,7 @@
  "description": "The Majordomus layer of korczis/korczis.github.io: every object of .ai/ with its MCP resource URI",
  "source": "majordomus run objects.list, capabilities.list",
  "majordomus": "1.0.2",
- "tree": "58b772ccb71759be75a2358ad9529a677ad89dd26c9613fbea5e7ad756d9a2df",
+ "tree": "2e3559703e8b7a63148b4687d6f8303a72274309c00cd8abca591ae4f7b343d3",
  "counts": {
   "objects": 139,
   "kinds": {
