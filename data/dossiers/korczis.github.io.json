@@ -1,0 +1,76 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "korczis.github.io",
+  "sources": {
+    "github": "https://github.com/korczis/korczis.github.io",
+    "gitlab": null,
+    "commit": "e7d62bb86bd2a054df6a7d4af75abdd8d1f82012",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "package.json",
+      "top-level tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "site",
+  "summary": {
+    "en": "The owner's personal hub: who he is, the projects he builds with their live sites, the stack behind them, and the Majordomus tool that supervises the work. It is a Zola site on Flowbite Pro and Tailwind, deployed to GitHub Pages from master. Project pages and catalogues are generated from measured snapshots of GitHub and GitLab.",
+    "cs": "Osobní rozcestník autora: kdo je, jaké projekty staví i s jejich živými weby, jaký stack za nimi stojí a nástroj Majordomus, který na práci dohlíží. Je to web na Zole s Flowbite Pro a Tailwindem, nasazovaný na GitHub Pages z větve master. Stránky projektů a katalogy se generují z naměřených snapshotů GitHubu a GitLabu."
+  },
+  "problem": {
+    "en": "A portfolio covering many repositories on two forges goes stale as soon as it is written by hand. Counts, languages and recent activity drift, and per-project pages multiply maintenance.",
+    "cs": "Portfolio pokrývající mnoho repozitářů na dvou forgích zastará v okamžiku, kdy se píše ručně. Počty, jazyky a nedávná aktivita se rozjíždějí a stránky jednotlivých projektů znásobují údržbu."
+  },
+  "solution": {
+    "en": "Curated words live in hand-written TOML, while measured data such as the repository index, recent activity and GitHub snapshot are written by scripts through gh and glab. A derive step regenerates every derived page and file, gates run in CI and locally, and a browser audit checks the built site. Visuals go through one component layer over pinned, self-hosted libraries, and git hooks run Majordomus checks on commit and push.",
+    "cs": "Kurátorovaný text je v ručně psaném TOML, zatímco naměřená data jako index repozitářů, nedávná aktivita a snapshot GitHubu zapisují skripty přes gh a glab. Krok derive přegeneruje každou odvozenou stránku a soubor, brány běží v CI i lokálně a prohlížečový audit kontroluje sestavený web. Vizualizace jdou přes jednu komponentovou vrstvu nad připnutými, self-hostovanými knihovnami a git hooky spouštějí kontroly Majordomu při commitu i pushi."
+  },
+  "highlights": [
+    {
+      "en": "Hand-written words separated from measured data; derived files are never edited by hand.",
+      "cs": "Ručně psaný text oddělený od naměřených dat; odvozené soubory se ručně neupravují."
+    },
+    {
+      "en": "Every public GitHub and GitLab repository indexed with category and supervision state.",
+      "cs": "Každý veřejný repozitář na GitHubu a GitLabu zaindexovaný s kategorií a stavem dohledu."
+    },
+    {
+      "en": "Generated Open Graph images and a gate set shared between CI and local runs.",
+      "cs": "Generované obrázky Open Graph a sada bran sdílená mezi CI a lokálním během."
+    },
+    {
+      "en": "ECharts, D3 and p5.js behind a single visual component layer.",
+      "cs": "ECharts, D3 a p5.js za jedinou vizuální komponentovou vrstvou."
+    }
+  ],
+  "stack": [
+    "Zola",
+    "Tera",
+    "Tailwind CSS",
+    "Flowbite Pro",
+    "Alpine.js",
+    "Apache ECharts",
+    "D3",
+    "p5.js",
+    "Node.js",
+    "Playwright",
+    "axe-core",
+    "GitHub Pages"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Toml[Curated TOML] --> Derive[npm run derive]\n  Forge[GitHub and GitLab] --> Snap[Measured snapshots]\n  Snap --> Derive\n  Derive --> Pages[Generated pages]\n  Pages --> Zola[Zola build]\n  Toml --> Zola\n  Zola --> Gates[Gates and audit]\n  Gates --> Deploy[GitHub Pages]",
+    "caption": {
+      "en": "Curated text and measured forge data meet in a derive step; gates decide what is deployed.",
+      "cs": "Kurátorovaný text a naměřená data z forgí se potkávají v kroku derive; o nasazení rozhodují brány."
+    }
+  },
+  "related": [
+    "prismatic-majordomus",
+    "algoglyph",
+    "oscilla",
+    "sonic-playground",
+    "majordomus-reel"
+  ],
+  "confidence": "high"
+}

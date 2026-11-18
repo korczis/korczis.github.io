@@ -1,0 +1,75 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "data-atlas",
+  "sources": {
+    "github": "https://github.com/korczis/data-atlas",
+    "gitlab": null,
+    "commit": "12aef57ecbc16f03b679e9196d83c440345ab570",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "top-level tree",
+      "warehouse/AGENTS.md",
+      "warehouse/pyproject.toml",
+      "tools/",
+      "src/"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "data",
+  "summary": {
+    "en": "Data Atlas is a searchable, filterable catalogue of European geodata, open data, public registries and OSINT and due-diligence sources, covering all EU member states plus EU-wide and global sources. Each source is classified on two independent axes, topic and country, and records both access barriers and machine availability. A separate warehouse subsystem ingests datasets into PostgreSQL with provenance.",
+    "cs": "Data Atlas je prohledávatelný a filtrovatelný katalog evropských geodat, otevřených dat, veřejných registrů a zdrojů pro OSINT a due diligence, pokrývající všechny členské státy EU i celoevropské a globální zdroje. Každý zdroj je zařazen na dvou nezávislých osách, téma a země, a u každého je zapsána překážka přístupu i strojová dostupnost. Samostatný subsystém warehouse ukládá datové sady do PostgreSQL i s provenance."
+  },
+  "problem": {
+    "en": "Registries and geodata portals differ per country, and whether you can get in is a different question from what you can take away. An empty cell in a coverage matrix is ambiguous: nobody looked, or someone looked and found no public source.",
+    "cs": "Registry a geoportály se liší stát od státu a otázka, jestli se dovnitř dostaneš, je jiná než co si odneseš. Prázdné políčko v matici pokrytí je dvojznačné: buď se nikdo nedíval, nebo se díval a veřejný zdroj nenašel."
+  },
+  "solution": {
+    "en": "Curated JSON per source is compiled into a CSV catalogue and a static page with per-country pages, and documented gaps are recorded with a reason and hatched in the matrix. just check runs deterministic offline checks: source validation, generated docs, UI and Markdown lint, jsdom smoke tests, responsiveness, typography and axe-core accessibility measured in headless Chrome, and Playwright end-to-end tests; link checking is a separate networked recipe. The warehouse is a Python package with a single PostgreSQL driver dependency and numbered SQL migrations; only its offline parser tests run in the catalogue gate, so a clean clone builds without a database.",
+    "cs": "Kurátorovaný JSON pro každý zdroj se kompiluje do CSV katalogu a statické stránky se stránkami zemí; doložené mezery se zapisují i s důvodem a v matici se šrafují. just check pouští deterministické offline kontroly: validaci zdrojů, generovanou dokumentaci, lint UI a Markdownu, smoke testy v jsdom, responzivitu, sazbu a přístupnost přes axe-core měřené v headless Chromu a end-to-end testy v Playwrightu; kontrola odkazů je samostatný recept, který jde po síti. Warehouse je Python balíček s jedinou závislostí na ovladači PostgreSQL a číslovanými SQL migracemi; v bráně katalogu běží jen jeho offline testy parserů, takže se čistý klon postaví i bez databáze."
+  },
+  "highlights": [
+    {
+      "en": "Two orthogonal axes, topic and country, with separate access-barrier and machine-availability vocabularies.",
+      "cs": "Dvě nezávislé osy, téma a země, se zvláštními slovníky pro překážku přístupu a strojovou dostupnost."
+    },
+    {
+      "en": "Distinguishes verified absence from unexplored cells in the coverage matrix.",
+      "cs": "Rozlišuje doloženou neexistenci od neprozkoumaného políčka v matici pokrytí."
+    },
+    {
+      "en": "Offline, deterministic build gate; link checking is a separate networked step.",
+      "cs": "Offline deterministická brána buildu; kontrola odkazů je zvlášť a jde po síti."
+    },
+    {
+      "en": "PostgreSQL warehouse with migrations as schema source of truth and dataset manifests.",
+      "cs": "Warehouse v PostgreSQL s migracemi jako zdrojem pravdy o schématu a manifesty datových sad."
+    }
+  ],
+  "stack": [
+    "Python",
+    "PostgreSQL",
+    "PL/pgSQL",
+    "psycopg",
+    "JavaScript",
+    "Tailwind CSS",
+    "Playwright",
+    "just",
+    "GitHub Pages"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Src[Source JSON files] --> Cat[build_catalog]\n  Gaps[Documented gaps] --> Page[build_page]\n  Cat --> Csv[catalog.csv]\n  Csv --> Page\n  Page --> Site[Static catalogue]\n  Gate[just check] --> Site\n  Man[Dataset manifests] --> Ingest[atlasdata ingest]\n  Ingest --> Pg[PostgreSQL warehouse]",
+    "caption": {
+      "en": "The catalogue is built offline from curated JSON; the warehouse is a separate ingestion path into PostgreSQL.",
+      "cs": "Katalog se staví offline z kurátorovaného JSON; warehouse je samostatná cesta ingestu do PostgreSQL."
+    }
+  },
+  "related": [
+    "crisis-map",
+    "vomaste.cz",
+    "ares",
+    "czech-stats"
+  ],
+  "confidence": "high"
+}

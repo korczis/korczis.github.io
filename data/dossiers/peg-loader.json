@@ -1,0 +1,58 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "peg-loader",
+  "sources": {
+    "github": "https://github.com/korczis/peg-loader",
+    "gitlab": "https://gitlab.com/korczis/peg-loader",
+    "commit": "ba15cf6ebd18fb17aa4da40ab043ec6450516299",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "package.json",
+      "index.js"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "library",
+  "summary": {
+    "en": "A webpack loader that compiles PEG.js grammar files into parser modules at build time. Importing a grammar file through the loader yields a ready parser.",
+    "cs": "Loader pro webpack, který při buildu zkompiluje gramatiky PEG.js na moduly parserů. Import souboru s gramatikou přes tento loader vrátí hotový parser."
+  },
+  "problem": {
+    "en": "Generating parsers from grammars by hand adds a manual build step and generated files to the repository. Keeping grammar and parser in sync is error-prone.",
+    "cs": "Ruční generování parserů z gramatik přidává do buildu krok navíc a do repozitáře vygenerované soubory. Udržet gramatiku a parser v souladu je náchylné k chybám."
+  },
+  "solution": {
+    "en": "The loader marks itself cacheable, calls PEG.buildParser with output \"source\" on the grammar text and returns it as a CommonJS module export. It depends only on pegjs 0.9.",
+    "cs": "Loader se označí jako cacheovatelný, na text gramatiky zavolá PEG.buildParser s výstupem \"source\" a vrátí ho jako export CommonJS modulu. Jedinou závislostí je pegjs 0.9."
+  },
+  "highlights": [
+    {
+      "en": "About a dozen lines; cacheable webpack loader.",
+      "cs": "Zhruba tucet řádků; cacheovatelný loader pro webpack."
+    },
+    {
+      "en": "Packaged for npm (package.json, version 0.0.2) under the MIT licence.",
+      "cs": "Připravený jako npm balíček (package.json, verze 0.0.2) pod licencí MIT."
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "Node.js",
+    "webpack",
+    "PEG.js",
+    "npm"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[grammar .pegjs] --> B[webpack]\n  B --> C[peg-loader]\n  C --> D[PEG.buildParser]\n  D --> E[parser source]\n  E --> F[bundled module]",
+    "caption": {
+      "en": "Grammar files become parser modules during the webpack build.",
+      "cs": "Soubory gramatik se při buildu webpacku mění na moduly parserů."
+    }
+  },
+  "related": [
+    "peg-parser",
+    "babel-plugin-transform-graphql"
+  ],
+  "confidence": "high"
+}

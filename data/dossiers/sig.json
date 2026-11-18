@@ -1,0 +1,82 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "sig",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/sig",
+    "commit": "72a34d7662b961a2f46e5d50b309f833152f6794",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "mix.exs",
+      "recursive tree",
+      "lib/sig/application.ex",
+      "lib/sig/osint/coordinator.ex",
+      "lib/sig/osint/behaviour.ex",
+      "lib/blackboard/storage/mnesia.ex",
+      "lib/sig_web/router.ex",
+      "project description"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "app",
+  "summary": {
+    "en": "Sig is an Elixir and Phoenix platform combining OSINT over Czech public and commercial registries, multi-agent AI experiments, a blackboard for shared state and interactive demonstration labs. The project description frames it as a distributed cognitive framework on OTP with recursive introspection, blackboard memory and LLM integration. The README links a live deployment with docs, ADRs and a Swagger UI.",
+    "cs": "Sig je platforma v Elixiru a Phoenixu, která spojuje OSINT nad českými veřejnými a komerčními registry, multiagentní AI experimenty, blackboard pro sdílený stav a interaktivní demonstrační laboratoře. Popis projektu ji označuje za distribuovaný kognitivní rámec na OTP s rekurzivní introspekcí, blackboard pamětí a napojením na LLM. README odkazuje na živé nasazení s dokumentací, ADR a Swagger UI."
+  },
+  "problem": {
+    "en": "Lookups across many registries are slow when done one by one and return conflicting entity data. Experiments with cooperating AI agents need a shared coordination space rather than ad hoc messaging.",
+    "cs": "Dotazy do mnoha registrů jsou po jednom pomalé a vracejí si odporující data o entitách. Experimenty se spolupracujícími AI agenty potřebují sdílený koordinační prostor místo nahodilého posílání zpráv."
+  },
+  "solution": {
+    "en": "Registry providers follow one behaviour (search, get_by_id, metadata) and a coordinator queries them in parallel with Task.async_stream, then merges the results and deduplicates them by id or IČO; deeper normalisation, entity resolution and result storage are still stubs in the code. A blackboard server provides the shared coordination hub on ETS storage, with a Mnesia backend via Memento present but not started. The app uses Phoenix LiveView, Ecto with PostgreSQL, Oban for background jobs, OpenApiSpex with a Swagger UI for the API and Credo, Sobelow, Dialyzer and mix_audit for quality, and ships Dockerfiles and a Fly.io configuration.",
+    "cs": "Poskytovatelé registrů implementují jedno behaviour (search, get_by_id, metadata) a koordinátor se jich dotazuje paralelně přes Task.async_stream, výsledky spojí a odstraní duplicity podle id nebo IČO; hlubší normalizace, rozpoznávání entit a ukládání výsledků jsou v kódu zatím jen náznaky. Blackboard server poskytuje sdílené koordinační centrum nad úložištěm v ETS; backend v Mnesii přes Memento existuje, ale nespouští se. Aplikace používá Phoenix LiveView, Ecto s PostgreSQL, Oban na úlohy na pozadí, OpenApiSpex se Swagger UI pro API a Credo, Sobelow, Dialyzer a mix_audit pro kvalitu; obsahuje Dockerfile a konfiguraci pro Fly.io."
+  },
+  "highlights": [
+    {
+      "en": "Behaviour-based provider architecture for parallel registry queries.",
+      "cs": "Architektura poskytovatelů na behaviours pro paralelní dotazy do registrů."
+    },
+    {
+      "en": "Blackboard module for multi-agent coordination on ETS, with an optional Mnesia backend.",
+      "cs": "Modul blackboard pro koordinaci více agentů nad ETS s volitelným backendem v Mnesii."
+    },
+    {
+      "en": "OpenAPI description with Swagger UI, background jobs on Oban.",
+      "cs": "Popis OpenAPI se Swagger UI, úlohy na pozadí v Oban."
+    },
+    {
+      "en": "Static analysis and security tooling wired in: Credo, Sobelow, Dialyzer, mix_audit.",
+      "cs": "Zapojená statická analýza a bezpečnostní nástroje: Credo, Sobelow, Dialyzer, mix_audit."
+    }
+  ],
+  "stack": [
+    "Elixir",
+    "Phoenix",
+    "Phoenix LiveView",
+    "Ecto",
+    "PostgreSQL",
+    "Oban",
+    "OpenApiSpex",
+    "Mnesia",
+    "Meilisearch",
+    "Docker",
+    "Fly.io"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  User[Analyst] --> LV[LiveView UI]\n  LV --> Osint[OSINT coordinator]\n  Api[OpenAPI endpoints] --> Osint\n  Osint --> Prov[Registry providers]\n  Prov --> Dedup[Merge and deduplicate]\n  LV --> BB[Blackboard]\n  Agents[AI agents] --> BB\n  BB --> Ets[ETS store]\n  Jobs[Oban jobs] --> Db[PostgreSQL]",
+    "caption": {
+      "en": "Registry search and agent coordination share one Phoenix application; the blackboard is the agents' common state.",
+      "cs": "Vyhledávání v registrech a koordinace agentů sdílejí jednu Phoenix aplikaci; blackboard je společný stav agentů."
+    }
+  },
+  "related": [
+    "crisis-map",
+    "ares",
+    "ares-api",
+    "the-psycho",
+    "prism",
+    "llm"
+  ],
+  "confidence": "medium"
+}

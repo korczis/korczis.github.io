@@ -1,0 +1,74 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "server-atomic",
+  "sources": {
+    "github": "https://github.com/korczis/server-atomic",
+    "gitlab": "https://gitlab.com/korczis/server-atomic",
+    "commit": "43a1dfac3780e2e02e8e355a87a96ebded03ab47",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "REGISTRY.md",
+      "LINKS.md",
+      ".gitmodules",
+      "setup.sh",
+      "ansible/atomic-host.yml",
+      "ansible/provision.sh",
+      "ansible/roles/{docker-registry,firewall,cadvisor}/tasks/main.yml",
+      "ansible/roles/docker-registry/templates",
+      "recursive tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "config",
+  "summary": {
+    "en": "Ansible roles that turn a CentOS Atomic Host into a container server with a local Docker registry mirror, Cockpit, cAdvisor and hardening.",
+    "cs": "Ansible role, které z CentOS Atomic Hostu udělají kontejnerový server s lokálním zrcadlem Docker registry, Cockpitem, cAdvisorem a zabezpečením."
+  },
+  "problem": {
+    "en": "Setting up an image-based host for containers repeatedly, with monitoring, firewall and a pull-through registry, by hand.",
+    "cs": "Opakované ruční nastavování image-based hostu pro kontejnery včetně monitoringu, firewallu a pull-through registry."
+  },
+  "solution": {
+    "en": "The atomic-host playbook applies roles for OS info and updates, Docker, a docker-registry service, users, firewall, fail2ban, SSH, Cockpit, tuned, cAdvisor and two lightweight desktops. Roles for etcd, flannel, Prometheus, Grafana and Kubernetes master and node exist but are commented out. REGISTRY.md documents running registry:2 as a Docker Hub proxy with an SELinux context fix.",
+    "cs": "Playbook atomic-host aplikuje role pro informace o OS a aktualizace, Docker, službu docker-registry, uživatele, firewall, fail2ban, SSH, Cockpit, tuned, cAdvisor a dvě odlehčená desktopová prostředí. Role pro etcd, flannel, Prometheus, Grafanu a Kubernetes master a node existují, ale jsou zakomentované. REGISTRY.md popisuje provoz registry:2 jako proxy Docker Hubu včetně úpravy SELinux kontextu."
+  },
+  "highlights": [
+    {
+      "en": "Pull-through Docker registry cache with persistent storage",
+      "cs": "Pull-through cache Docker registry s perzistentním úložištěm"
+    },
+    {
+      "en": "Prepared but disabled Kubernetes, etcd and flannel roles",
+      "cs": "Připravené, ale vypnuté role pro Kubernetes, etcd a flannel"
+    },
+    {
+      "en": "A one-line curl bootstrap that prepares SSH keys and slows RAID resync before provisioning",
+      "cs": "Jednořádkový bootstrap přes curl, který před provisioningem připraví SSH klíče a zpomalí resync RAIDu"
+    }
+  ],
+  "stack": [
+    "Ansible",
+    "CentOS Atomic Host",
+    "Docker",
+    "Cockpit",
+    "cAdvisor",
+    "fail2ban",
+    "SELinux",
+    "Shell"
+  ],
+  "architecture": {
+    "mermaid": "flowchart TD\n  Iso[Atomic installer ISO] --> Host[Atomic host]\n  Host --> Play[atomic-host playbook]\n  Play --> Os[os and updates]\n  Play --> Docker[Docker]\n  Docker --> Registry[registry mirror]\n  Play --> Sec[firewall and fail2ban]\n  Play --> Mon[Cockpit and cAdvisor]\n  Play -.-> K8s[Kubernetes roles off]",
+    "caption": {
+      "en": "Roles applied to an Atomic host; the dashed edge marks roles present but disabled.",
+      "cs": "Role aplikované na Atomic host; přerušovaná hrana značí role připravené, ale vypnuté."
+    }
+  },
+  "related": [
+    "server-archlinux",
+    "server-ansible",
+    "server-coreos",
+    "cluster-kubernetes"
+  ],
+  "confidence": "medium"
+}

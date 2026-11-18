@@ -1,0 +1,64 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "corvidae",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/corvidae",
+    "commit": "2ab3bd80a4ba0b6f145f4dfcc3d706bfedc6f0b4",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "README_GITHUB.md",
+      "README_LIVEVIEW.md",
+      "tree /"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "docs",
+  "summary": {
+    "en": "A Czech-language field ethology project documenting a non-invasive relationship with one free-living hooded crow in a park in Brno, started in May 2025. The repository holds daily logs, a bonding plan, a catalogue of gestures and sounds, a gift registry, maps, an ethics manifesto and a LaTeX paper draft.",
+    "cs": "Česky psaný terénní etologický projekt, který od května 2025 dokumentuje neinvazivní vztah s jednou volně žijící vránou šedou v brněnském parku. Repozitář obsahuje denní zápisy, plán sbližování, katalog gest a zvuků, registr darů, mapy, etický manifest a rozpracovaný článek v LaTeXu."
+  },
+  "problem": {
+    "en": "Observations of a single wild animal over time are easy to lose and hard to analyse unless they are logged consistently. The project also wants an explicit ethical frame: trust without domestication and no reward-for-behaviour training.",
+    "cs": "Pozorování jednoho divokého zvířete v čase se snadno ztratí a bez důsledného zapisování se špatně analyzují. Projekt navíc chce výslovný etický rámec: důvěra bez domestikace a žádný výcvik odměnou za chování."
+  },
+  "solution": {
+    "en": "Each kind of record has its own folder (logs, plan, rituals, gifts, maps with GeoJSON, manifesto, project metadata); the photo folder holds only a README. Further folders cover analytics, visualisations, a glossary and ontology, NLP and LLM material and loose Elixir modules, among them a LiveView timeline sketch with no Mix project around it. Many folder READMEs are templated, machine-expanded text. Archival metadata is prepared for a DOI under CC BY-NC-ND 4.0.",
+    "cs": "Každý druh záznamu má vlastní složku (zápisy, plán, rituály, dary, mapy s GeoJSON, manifest, metadata projektu); složka s fotografiemi obsahuje jen README. Další složky pokrývají analytiku, vizualizace, glosář a ontologii, materiál k NLP a LLM a samostatné moduly v Elixiru, mezi nimi náčrt časové osy v LiveView bez Mix projektu. Řada README ve složkách je šablonovitý, strojově rozšířený text. Archivní metadata jsou připravená pro DOI pod licencí CC BY-NC-ND 4.0."
+  },
+  "highlights": [
+    {
+      "en": "Structured field notes with a separate gift registry and gesture catalogue.",
+      "cs": "Strukturované terénní zápisy s odděleným registrem darů a katalogem gest."
+    },
+    {
+      "en": "Chart images of approach distance, vocalisations and gifts over time.",
+      "cs": "Grafy vzdálenosti přiblížení, vokalizací a darů v čase jako obrázky."
+    },
+    {
+      "en": "Paper draft in LaTeX and archival metadata prepared for a DOI.",
+      "cs": "Rozpracovaný článek v LaTeXu a archivní metadata připravená pro DOI."
+    },
+    {
+      "en": "Explicit ethics manifesto against domestication.",
+      "cs": "Výslovný etický manifest proti domestikaci."
+    }
+  ],
+  "stack": [
+    "Markdown",
+    "LaTeX",
+    "GeoJSON",
+    "Elixir",
+    "Phoenix LiveView"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  OBS[Field observation] --> LOG[Daily logs]\n  LOG --> RIT[Gesture and sound catalogue]\n  LOG --> GIFT[Gift registry]\n  LOG --> MAP[GeoJSON maps]\n  LOG --> AN[Analytics and charts]\n  AN --> PAPER[LaTeX paper draft]\n  RIT --> ONT[Glossary and ontology]\n  ONT --> PANEL[LiveView sketch]\n  PAPER --> ARCH[Archive metadata]",
+    "caption": {
+      "en": "Daily observations feed catalogues, maps and analytics, which feed a paper and a sketched interactive panel.",
+      "cs": "Denní pozorování plní katalogy, mapy a analytiku, z nichž vzniká článek a náčrt interaktivního panelu."
+    }
+  },
+  "related": [],
+  "confidence": "medium"
+}

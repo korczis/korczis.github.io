@@ -1,0 +1,64 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "microcrawler-crawler-all",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-all",
+    "commit": "4d6f35f9d4229214f06a2d2701352d15c8df637a",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "package.json",
+      "tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "library",
+  "summary": {
+    "en": "A meta package that pulls in every published Microcrawler site package as a dependency with a pinned version. It contains no code of its own, only package.json.",
+    "cs": "Meta balíček, který jako závislosti s pevnou verzí natahuje všechny publikované balíčky Microcrawleru pro jednotlivé weby. Vlastní kód nemá, jen package.json."
+  },
+  "problem": {
+    "en": "The crawler CLI should be able to process any supported site without the user installing each site package separately.",
+    "cs": "CLI crawleru má umět zpracovat jakýkoli podporovaný web, aniž by uživatel musel instalovat balíček každého webu zvlášť."
+  },
+  "solution": {
+    "en": "package.json (version 0.0.19, described as referencing all crawlers) lists ten site packages, each pinned to an exact version. The declared main file index.js is not in the repository.",
+    "cs": "package.json (verze 0.0.19, popsaný jako odkaz na všechny crawlery) uvádí deset balíčků webů, každý s přesně danou verzí. Deklarovaný hlavní soubor index.js v repozitáři není."
+  },
+  "highlights": [
+    {
+      "en": "One dependency turns on all site crawlers.",
+      "cs": "Jedna závislost zapne všechny crawlery webů."
+    },
+    {
+      "en": "Exact version pins make a crawler set reproducible.",
+      "cs": "Přesné verze dělají sadu crawlerů reprodukovatelnou."
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "npm"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  NPM[npm install] --> ALL[crawler-all]\n  ALL --> A[site package A]\n  ALL --> B[site package B]\n  ALL --> C[more site packages]\n  A --> BASE[crawler-base]\n  B --> BASE",
+    "caption": {
+      "en": "The meta package fans out to the per-site packages.",
+      "cs": "Meta balíček se větví do balíčků jednotlivých webů."
+    }
+  },
+  "related": [
+    "microcrawler-js",
+    "microcrawler-crawler-base",
+    "microcrawler-crawler-sreality-cz",
+    "microcrawler-crawler-firmy-cz",
+    "microcrawler-crawler-yelp-com",
+    "microcrawler-crawler-xkcd-com",
+    "microcrawler-crawler-google-com",
+    "microcrawler-crawler-news-ycombinator-com",
+    "microcrawler-crawler-craiglist-com",
+    "microcrawler-crawler-heureka-cz",
+    "microcrawler-crawler-bam-brno-cz"
+  ],
+  "confidence": "medium"
+}

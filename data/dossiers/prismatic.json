@@ -1,0 +1,91 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "prismatic",
+  "sources": {
+    "github": "https://github.com/korczis/prismatic",
+    "gitlab": null,
+    "commit": "fc5288c96a74deab9543e03be2d47faf9fb3a17f",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "mix.exs",
+      "apps/prismatic/mix.exs",
+      "tree /",
+      "tree apps/",
+      "tree apps/prismatic/lib/prismatic",
+      "tree apps/prismatic/lib/mix/tasks",
+      "apps/prismatic_web/mix.exs",
+      "apps/prismatic/lib/prismatic/application.ex",
+      "apps/prismatic/lib/prismatic/repo.ex",
+      "apps/prismatic/lib/prismatic/agent/protocol.ex",
+      "apps/prismatic_web/lib/prismatic_web/router.ex",
+      "config/dev.exs",
+      ".gitlab-ci.yml",
+      ".github/workflows/ci.yml"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "app",
+  "summary": {
+    "en": "A Phoenix umbrella application presented as an AI agent framework with BEAM VM introspection, TODO management, documentation analysis and codebase consolidation tooling. It has a core app and a web app; the core holds BEAM, blackboard, docs, event, memory, LLM and TODO modules, while the agent protocol itself is still a placeholder.",
+    "cs": "Umbrella aplikace ve Phoenixu prezentovaná jako framework pro AI agenty s introspekcí BEAM VM, správou TODO, analýzou dokumentace a nástroji pro konsolidaci kódu. Má jádrovou a webovou aplikaci; jádro obsahuje moduly BEAM, blackboard, dokumentace, události, paměť, LLM a TODO, samotný protokol agentů je ale zatím jen zástupný."
+  },
+  "problem": {
+    "en": "Running BEAM systems and growing Elixir codebases are hard to inspect and keep tidy: process and memory state, scattered TODO comments, documentation gaps and overlapping projects with conflicting dependencies. The project also wants LLM-backed agents working on top of that knowledge.",
+    "cs": "Běžící systémy na BEAM a rostoucí kódové báze v Elixiru se špatně zkoumají a udržují v pořádku: stav procesů a paměti, roztroušené TODO komentáře, mezery v dokumentaci a překrývající se projekty s konfliktními závislostmi. Projekt chce navíc nad těmito znalostmi provozovat agenty podporované LLM."
+  },
+  "solution": {
+    "en": "The core exposes introspection functions for processes, memory, modules and supervision trees, a TODO scanner with reports, documentation gap and consistency analysis, an event bus and a blackboard started under the application supervisor, and mix tasks for consolidation analysis, planning and changelog generation. An Ecto Repo for PostgreSQL starts with the application, but no migrations are committed. Broadway, GenStage and Flow drive a document pipeline, Req and Finch handle HTTP, and backends exist for two hosted LLM APIs. The web app is a stock Phoenix page with LiveDashboard in development. The repository also carries many top-level analysis and strategy documents and Python link-validation scripts.",
+    "cs": "Jádro nabízí introspekční funkce pro procesy, paměť, moduly a stromy supervizorů, skener TODO s reporty, analýzu mezer a konzistence dokumentace, sběrnici událostí a blackboard spouštěné pod supervizorem aplikace a mix tasky pro analýzu a plánování konsolidace a generování changelogu. Spolu s aplikací startuje Ecto Repo pro PostgreSQL, žádné migrace ale commitnuté nejsou. Broadway, GenStage a Flow pohánějí pipeline dokumentů, Req a Finch obsluhují HTTP a jsou připravené backendy pro dvě hostovaná LLM API. Webová část je výchozí stránka Phoenixu s LiveDashboardem ve vývojovém režimu. Repozitář nese i řadu analytických a strategických dokumentů v kořeni a skripty v Pythonu pro kontrolu odkazů."
+  },
+  "highlights": [
+    {
+      "en": "BEAM introspection toolkit as a first-class module.",
+      "cs": "Sada nástrojů pro introspekci BEAM jako plnohodnotný modul."
+    },
+    {
+      "en": "Blackboard, memory and event modules intended for agent coordination; the agent protocol is marked as a placeholder.",
+      "cs": "Moduly blackboard, paměť a události určené ke koordinaci agentů; protokol agentů je označený jako zástupný."
+    },
+    {
+      "en": "Mix task suite for consolidation, versioning and changelogs.",
+      "cs": "Sada mix tasků pro konsolidaci, verzování a changelogy."
+    },
+    {
+      "en": "Broadway, GenStage and Flow for a document pipeline.",
+      "cs": "Broadway, GenStage a Flow pro pipeline dokumentů."
+    },
+    {
+      "en": "README badges are static images, so build and coverage status are not verified here.",
+      "cs": "Odznaky v README jsou statické obrázky, stav buildu a pokrytí tu proto ověřen není."
+    }
+  ],
+  "stack": [
+    "Elixir",
+    "Phoenix",
+    "Phoenix LiveDashboard",
+    "PostgreSQL",
+    "Ecto",
+    "Broadway",
+    "GenStage",
+    "Flow",
+    "Req",
+    "Finch",
+    "Tailwind CSS",
+    "Python",
+    "GitLab CI",
+    "GitHub Actions"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  WEB[Phoenix web] --> CORE[Prismatic core]\n  TASKS[Mix tasks] --> CORE\n  CORE --> EV[Event bus]\n  CORE --> BB[Blackboard and memory]\n  CORE --> LLM[LLM backends]\n  CORE --> BEAM[BEAM introspection]\n  CORE --> TODO[TODO scanner]\n  CORE --> DOCS[Docs analysis]\n  CORE --> DB[(PostgreSQL Repo)]",
+    "caption": {
+      "en": "A web layer and mix tasks drive a core of event, blackboard, introspection and code-analysis modules.",
+      "cs": "Webová vrstva a mix tasky ovládají jádro z modulů pro události, blackboard, introspekci a analýzu kódu."
+    }
+  },
+  "related": [
+    "prismatic-majordomus",
+    "prismatic-blog"
+  ],
+  "confidence": "medium"
+}

@@ -1,0 +1,60 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "easy-plugin-plugins",
+  "sources": {
+    "github": "https://github.com/korczis/easy-plugin-plugins",
+    "gitlab": "https://gitlab.com/korczis/easy-plugin-plugins",
+    "commit": "80df988dafce4ac2abb8ebdc218e3216c64063a5",
+    "read_at": "2026-11-18",
+    "read": [
+      "Cargo.toml",
+      "build.rs",
+      "src/lib.rs",
+      "src/lib.rs.in",
+      "tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "library",
+  "summary": {
+    "en": "A copy of the upstream easy-plugin-plugins crate (version 0.9.1, Apache-2.0): compiler plugins used internally by the easy-plugin crate for writing Rust syntax extensions. It registers one macro, __easy_plugin_convert, that generates converter functions which pull values out of AST nodes, such as expr_to_vec, and return a PluginResult.",
+    "cs": "Kopie upstreamového crate easy-plugin-plugins (verze 0.9.1, Apache-2.0): compiler pluginy, které interně používá crate easy-plugin pro psaní syntaktických rozšíření Rustu. Registruje jediné makro __easy_plugin_convert, které generuje převodní funkce vytahující hodnoty z uzlů AST, například expr_to_vec, a vracející PluginResult."
+  },
+  "problem": {
+    "en": "Writing compiler plugins against the unstable libsyntax AST means a lot of repetitive matching to extract the value of each node variant, and the same code has to build both on nightly and, through syntex, on stable Rust.",
+    "cs": "Psaní compiler pluginů nad nestabilním AST z libsyntax znamená spoustu opakovaného matchování, než se z každé varianty uzlu vytáhne hodnota, a stejný kód se musí sestavit na nightly i přes syntex na stabilním Rustu."
+  },
+  "solution": {
+    "en": "Cargo.toml declares a plugin library with an optional stable feature built on syntex. build.rs expands src/lib.rs.in into OUT_DIR, through synthax when syntex is enabled and as a plain copy otherwise, and src/lib.rs includes the result. The macro emits, per converter set, an exhaustive match function and the converter functions, plus a list of all converter names and functions returning each converter's type and value.",
+    "cs": "Cargo.toml deklaruje knihovnu typu plugin s volitelnou feature stable postavenou na syntexu. build.rs rozbalí src/lib.rs.in do OUT_DIR, se zapnutým syntexem přes synthax, jinak prostou kopií, a src/lib.rs výsledek vloží. Makro pro každou sadu převodníků vygeneruje vyčerpávající match funkci a samotné převodní funkce, k tomu seznam názvů všech převodníků a funkce, které vracejí typ a hodnotu každého z nich."
+  },
+  "highlights": [
+    {
+      "en": "Third-party code: the manifest names an upstream repository and the sources carry the original author's copyright; one initial commit.",
+      "cs": "Cizí kód: manifest uvádí upstreamový repozitář a zdroje nesou copyright původního autora; jediný úvodní commit."
+    },
+    {
+      "en": "Builds either as a nightly compiler plugin or, with the stable feature, through syntex.",
+      "cs": "Sestaví se buď jako compiler plugin na nightly, nebo s feature stable přes syntex."
+    },
+    {
+      "en": "Code generation with quote_expr! produces typed converters from AST nodes.",
+      "cs": "Generování kódu přes quote_expr! vytváří typované převodníky z uzlů AST."
+    }
+  ],
+  "stack": [
+    "Rust",
+    "Cargo",
+    "syntex",
+    "synthax"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  IN[src/lib.rs.in] --> B[build.rs]\n  B --> S{syntex feature}\n  S -->|yes| X[synthax expand]\n  S -->|no| CP[Plain copy]\n  X --> O[OUT_DIR lib.rs]\n  CP --> O\n  O --> L[src/lib.rs include]\n  L --> M[__easy_plugin_convert macro]",
+    "caption": {
+      "en": "build.rs expands or copies the plugin source into OUT_DIR, where the crate includes it and registers the converter macro.",
+      "cs": "build.rs rozbalí nebo zkopíruje zdroj pluginu do OUT_DIR, kde ho crate vloží a zaregistruje makro pro převodníky."
+    }
+  },
+  "related": [],
+  "confidence": "medium"
+}

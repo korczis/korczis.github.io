@@ -1,0 +1,65 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "skull-cpp",
+  "sources": {
+    "github": "https://github.com/korczis/skull-cpp",
+    "gitlab": "https://gitlab.com/korczis/skull-cpp",
+    "commit": "bf0e66a828fd3df9cebb9dff5bc3f1b924851c81",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      ".gitmodules",
+      "CMakeLists.txt",
+      "Makefile",
+      ".travis.yml",
+      "src/CMakeLists.txt",
+      "src/HelloWorld/CMakeLists.txt",
+      "src/HelloWorld/Main.cpp",
+      "lib/CMakeLists.txt",
+      "tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "kata",
+  "summary": {
+    "en": "Learning materials for the C++ language, part of a family of same-named skull repos across many languages. A Makefile drives a CMake build of one C++11 hello-world program; Boost is added as a git submodule and Google Test is vendored, neither used by the build yet.",
+    "cs": "Učební materiály pro jazyk C++, součást rodiny stejnojmenných skull rep napříč mnoha jazyky. Makefile řídí CMake build jednoho programu hello world v C++11; Boost je přidaný jako git submodul a Google Test je vendorovaný, build zatím nepoužívá ani jedno."
+  },
+  "problem": {
+    "en": "Practising C++ needs a buildable sandbox with a modern build system and a common dependency wired in.",
+    "cs": "Procvičování C++ potřebuje sestavitelný sandbox s moderním build systémem a zapojenou běžnou závislostí."
+  },
+  "solution": {
+    "en": "The project sets up the same modular CMake layout as the C skull (lib, src, vendor) with a single HelloWorld executable, a Makefile wrapper and a Travis CI configuration for clang. It is a learning kata rather than a deliverable.",
+    "cs": "Projekt připraví stejnou modulární CMake strukturu jako skull pro C (lib, src, vendor) s jedinou binárkou HelloWorld, obalovým Makefilem a konfigurací Travis CI pro clang. Jde o učební katu, ne o dodávku."
+  },
+  "highlights": [
+    {
+      "en": "Boost added as a git submodule, not yet referenced by the CMake build.",
+      "cs": "Boost přidaný jako git submodul, na který se CMake build zatím neodkazuje."
+    },
+    {
+      "en": "One of the same-named skull learning repos across languages.",
+      "cs": "Jedno ze stejnojmenných skull učebních rep napříč jazyky."
+    }
+  ],
+  "stack": [
+    "C++11",
+    "CMake",
+    "Make",
+    "Travis CI"
+  ],
+  "architecture": {
+    "mermaid": "flowchart TD\n  Make[Makefile] --> CMake[CMakeLists]\n  CMake --> Src[src HelloWorld]\n  Src --> Bin[HelloWorld binary]\n  CMake --> Lib[lib placeholder]\n  Boost[boost submodule] -.-> CMake\n  Gtest[vendored gtest] -.-> CMake",
+    "caption": {
+      "en": "The build produces one hello-world binary; the dashed dependencies are present but not wired in.",
+      "cs": "Build vyrobí jednu binárku hello world; přerušované závislosti v repozitáři jsou, ale zapojené nejsou."
+    }
+  },
+  "related": [
+    "skull",
+    "skull-c",
+    "skull-rust"
+  ],
+  "confidence": "low"
+}

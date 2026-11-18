@@ -1,0 +1,60 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "gooddata-fs",
+  "sources": {
+    "github": "https://github.com/korczis/gooddata-fs",
+    "gitlab": "https://gitlab.com/korczis/gooddata-fs",
+    "commit": "27fd4d49c9835f5c6c339b7804911f037e51e6fc",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "Cargo.toml (tree)",
+      "doc (tree)"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "instrument",
+  "summary": {
+    "en": "A Rust program that mounts a hosted business-intelligence platform as a FUSE filesystem, so projects, reports and metadata appear as directories and files. It authenticates with a username, password and optional token and exposes a projects tree plus a user.json under the mount point.",
+    "cs": "Rustový program, který připojí hostovanou business-intelligence platformu jako FUSE filesystem, takže projekty, reporty a metadata vypadají jako adresáře a soubory. Autentizuje se jménem, heslem a volitelným tokenem a pod mount pointem vystavuje strom projects a user.json."
+  },
+  "problem": {
+    "en": "A hosted analytics platform is normally reached only through its web UI and REST API, which makes ad-hoc exploration and scripting with ordinary Unix tools awkward.",
+    "cs": "Hostovaná analytická platforma je běžně dostupná jen přes webové UI a REST API, což komplikuje ad-hoc průzkum a skriptování běžnými unixovými nástroji."
+  },
+  "solution": {
+    "en": "Using FUSE, the tool maps platform entities onto a directory hierarchy with an LRU cache, letting a user browse and read them with ls, tree and cat. The README stresses Rust memory-safety guarantees and measures a small binary and memory footprint.",
+    "cs": "Pomocí FUSE nástroj mapuje entity platformy na adresářovou hierarchii s LRU cache, takže je lze procházet a číst příkazy ls, tree a cat. README zdůrazňuje paměťovou bezpečnost Rustu a uvádí malou velikost binárky i paměťovou stopu."
+  },
+  "highlights": [
+    {
+      "en": "Mounts remote BI entities as a browsable FUSE filesystem.",
+      "cs": "Připojuje vzdálené BI entity jako procházitelný FUSE filesystem."
+    },
+    {
+      "en": "LRU cache with a configurable size and a selectable server.",
+      "cs": "LRU cache s nastavitelnou velikostí a volitelným serverem."
+    },
+    {
+      "en": "Ships Dockerfiles (including an Alpine variant) and documents the filesystem layout.",
+      "cs": "Dodává Dockerfily (včetně Alpine varianty) a dokumentuje rozvržení filesystemu."
+    }
+  ],
+  "stack": [
+    "Rust",
+    "FUSE",
+    "Docker"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[Credentials] --> B[REST client]\n  B --> C[LRU cache]\n  C --> D[FUSE layer]\n  D --> E[Mounted tree]\n  E --> F[Unix tools]",
+    "caption": {
+      "en": "A REST client behind an LRU cache backs a FUSE layer that presents remote data as a mounted tree.",
+      "cs": "REST klient za LRU cache napájí FUSE vrstvu, která vystavuje vzdálená data jako připojený strom."
+    }
+  },
+  "related": [
+    "gooddata-proxy",
+    "gdc-dumpator"
+  ],
+  "confidence": "high"
+}

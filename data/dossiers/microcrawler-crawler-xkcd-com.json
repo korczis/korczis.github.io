@@ -1,0 +1,58 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "microcrawler-crawler-xkcd-com",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-xkcd-com",
+    "commit": "f62c41fc8f4c29a26ad7e4d68f6d567eeddb6d5a",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "package.json",
+      "src/index.js",
+      "tree (recursive)"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "library",
+  "summary": {
+    "en": "A Microcrawler site package for a webcomic archive. It walks the archive backwards through the previous links and extracts each comic image.",
+    "cs": "Balíček Microcrawleru pro archiv webového komiksu. Prochází archiv pozpátku přes odkazy na předchozí díl a vytahuje obrázek každého dílu."
+  },
+  "problem": {
+    "en": "Microcrawler workers are generic: they download pages and need site-specific logic to know which links to follow and which fields to extract.",
+    "cs": "Workery Microcrawleru jsou obecné: stahují stránky a potřebují logiku pro konkrétní web, aby věděly, které odkazy sledovat a jaká pole vytáhnout."
+  },
+  "solution": {
+    "en": "The index processor queues the rel=\"prev\" link back to itself and emits a record with the comic image source (a protocol-relative URL prefixed with https), its title and alt text. It is a compact example of a self-recursive processor that crawls a whole linear archive from one seed.",
+    "cs": "Procesor index zařadí odkaz rel=\"prev\" zpět sám sobě a vrátí záznam se zdrojem obrázku komiksu (URL bez protokolu doplněnou o https), jeho titulkem a alt textem. Je to kompaktní ukázka samorekurzivního procesoru, který z jednoho seedu projde celý lineární archiv."
+  },
+  "highlights": [
+    {
+      "en": "Whole archive from one seed via a self-recursive processor.",
+      "cs": "Celý archiv z jednoho seedu díky samorekurzivnímu procesoru."
+    },
+    {
+      "en": "One of the example crawls in the microcrawler-js README (version 0.0.7).",
+      "cs": "Jeden z ukázkových crawlů v README microcrawler-js (verze 0.0.7)."
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "Node.js",
+    "Cheerio"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  S[Seed page] --> I[index processor]\n  I --> P[prev link]\n  P --> I\n  I --> R[image record]",
+    "caption": {
+      "en": "Processors emit either new URLs for the queue or extracted data records.",
+      "cs": "Procesory vracejí buď nové URL do fronty, nebo vytěžené datové záznamy."
+    }
+  },
+  "related": [
+    "microcrawler-js",
+    "microcrawler-crawler-all",
+    "microcrawler-crawler-base"
+  ],
+  "confidence": "medium"
+}

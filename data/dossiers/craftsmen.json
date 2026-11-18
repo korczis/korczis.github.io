@@ -1,0 +1,76 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "craftsmen",
+  "sources": {
+    "github": "https://github.com/korczis/craftsmen",
+    "gitlab": "https://gitlab.com/korczis/craftsmen",
+    "commit": "781c3ea1ba992940a224e96507fd2c245da048ce",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "package.json",
+      "bower.json",
+      "config.js",
+      "public/app/routes/index.hbs",
+      "tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "app",
+  "summary": {
+    "en": "A searchable listing of tradespeople and companies, built on the owner's microscratch framework with an Express and MongoDB back end, Solr search and an Ember.js front end.",
+    "cs": "Vyhledávatelný katalog řemeslníků a firem, postavený na vlastním frameworku microscratch: backend na Expressu a MongoDB, vyhledávání v Solru a frontend v Ember.js."
+  },
+  "problem": {
+    "en": "Company records (name, address, description, phone, email) held in MongoDB and indexed in Solr needed a simple public search interface.",
+    "cs": "Záznamy o firmách (název, adresa, popis, telefon, e-mail) uložené v MongoDB a zaindexované v Solru potřebovaly jednoduché veřejné vyhledávací rozhraní."
+  },
+  "solution": {
+    "en": "The index route has a search box bound to a query; each change calls /fts, which asks Solr for matching ids and loads up to ten records from the Mongo datasets collection, rendered with name, street and city, description and contact details. The server side reuses the microscratch modules (auth, Mongo, sockets, Solr, ETL, scraper); the local, development and test environments all point to one local apollo MongoDB database.",
+    "cs": "Hlavní routa má vyhledávací pole navázané na dotaz; každá změna zavolá /fts, které se zeptá Solru na odpovídající id a z kolekce datasets v Mongu načte až deset záznamů, vykreslených s názvem, ulicí a městem, popisem a kontakty. Serverová část přebírá moduly microscratch (auth, Mongo, sockety, Solr, ETL, scraper); prostředí local, development i test míří na jednu lokální MongoDB databázi apollo."
+  },
+  "highlights": [
+    {
+      "en": "Search-first UI: a single query field over Solr-backed results.",
+      "cs": "UI postavené na hledání: jedno pole pro dotaz nad výsledky ze Solru."
+    },
+    {
+      "en": "Thin product on the microscratch skeleton: most of its README is the framework's FAQ.",
+      "cs": "Tenký produkt nad kostrou microscratch: většinu README tvoří FAQ frameworku."
+    },
+    {
+      "en": "Travis CI and Mocha test setup carried over from the skeleton.",
+      "cs": "Travis CI a testy v Mocha převzaté z kostry."
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "Mongoose",
+    "Solr",
+    "socket.io",
+    "Ember.js",
+    "Handlebars",
+    "Bootstrap",
+    "Grunt",
+    "Mocha"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  User[Search box] --> Ember[Ember index route]\n  Ember --> Server[Express fts controller]\n  Server --> Solr[(Solr index)]\n  Solr --> Ids[Matching ids]\n  Ids --> Mongo[(MongoDB datasets)]\n  Mongo --> Results[Result cards]",
+    "caption": {
+      "en": "Query from the Ember search box to Solr and back as result cards.",
+      "cs": "Dotaz z vyhledávacího pole v Emberu do Solru a zpět jako karty výsledků."
+    }
+  },
+  "related": [
+    "microscratch",
+    "apollocrawler.com",
+    "microcrawler-crawler-firmy-cz",
+    "ares",
+    "ares-api",
+    "solr-core-minimal"
+  ],
+  "confidence": "medium"
+}

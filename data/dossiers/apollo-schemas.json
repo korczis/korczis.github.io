@@ -1,0 +1,56 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "apollo-schemas",
+  "sources": {
+    "github": "https://github.com/korczis/apollo-schemas",
+    "gitlab": "https://gitlab.com/korczis/apollo-schemas",
+    "commit": "6a031fbb06d0a5741fd8fe8c2d1f87a6c6ed6797",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "docs",
+  "summary": {
+    "en": "A README-only convention for self-describing NoSQL documents, titled NoSQL Schemas for Apollo(n): each document names its schema, optionally with a version, and can carry timestamps.",
+    "cs": "Konvence pro samopopisné NoSQL dokumenty, sepsaná jen v README s názvem NoSQL Schemas for Apollo(n): každý dokument nese název svého schématu, volitelně verzi, a může mít časová razítka."
+  },
+  "problem": {
+    "en": "Documents kept in schemaless databases need a way to say what they are and which version of the shape they follow.",
+    "cs": "Dokumenty uložené v bezschémových databázích potřebují říct, co jsou zač a jaké verzi tvaru odpovídají."
+  },
+  "solution": {
+    "en": "Four examples escalate from a plain schema string, to a schema object, to a schema object with a version, to a document with createdAt and updatedAt timestamps under ts. The payload lives under a key equal to the schema name.",
+    "cs": "Čtyři příklady postupují od prostého řetězce schema přes objekt schématu a objekt s verzí až po dokument s časovými razítky createdAt a updatedAt pod klíčem ts. Data samotná leží pod klíčem pojmenovaným podle schématu."
+  },
+  "highlights": [
+    {
+      "en": "Specification by example; there is no validator or code.",
+      "cs": "Specifikace na příkladech; žádný validátor ani kód."
+    },
+    {
+      "en": "The payload sits under a key named after the schema, so a document carries its own type.",
+      "cs": "Data leží pod klíčem pojmenovaným podle schématu, takže dokument nese svůj vlastní typ."
+    }
+  ],
+  "stack": [
+    "JSON",
+    "NoSQL"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Doc[Document] --> Schema[schema name]\n  Schema --> Ver[optional version]\n  Doc --> Payload[payload under schema key]\n  Doc --> Ts[ts createdAt updatedAt]",
+    "caption": {
+      "en": "The fields a conforming document carries.",
+      "cs": "Pole, která dokument podle konvence nese."
+    }
+  },
+  "related": [
+    "apollo-crawler",
+    "apollon",
+    "microcrawler-couchapp",
+    "nosqlight"
+  ],
+  "confidence": "medium"
+}

@@ -1,0 +1,61 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "annasabatova.cz",
+  "sources": {
+    "github": "https://github.com/korczis/annasabatova.cz",
+    "gitlab": "https://gitlab.com/korczis/annasabatova-cz",
+    "commit": "2a74c6fdbb92288581f9ee9b2aa036c7284b88ce",
+    "read_at": "2026-11-18",
+    "read": [
+      "package.json",
+      "app.js",
+      "recursive tree",
+      "repository description"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "site",
+  "summary": {
+    "en": "A small Czech-language petition website served by Express. The repository description identifies it as a civic petition about a public office holder; there is no README.",
+    "cs": "Malý český web s peticí servírovaný Expressem. Popis repozitáře ho uvádí jako občanskou petici týkající se veřejného činitele; README chybí."
+  },
+  "problem": {
+    "en": "A petition needed a simple public page that could be put online quickly.",
+    "cs": "Petice potřebovala jednoduchou veřejnou stránku, kterou šlo rychle zveřejnit."
+  },
+  "solution": {
+    "en": "The app is the Express 4 generator skeleton with Hogan (hjs) templates, Stylus middleware, morgan logging and static files from an HTML5 Boilerplate based public/ directory with jQuery and Modernizr. One index view and an error view are rendered.",
+    "cs": "Aplikace je kostra z generátoru Express 4 se šablonami Hogan (hjs), middlewarem Stylus, logováním morgan a statickými soubory ve složce public/ založené na HTML5 Boilerplate s jQuery a Modernizrem. Renderuje jeden indexový pohled a pohled pro chyby."
+  },
+  "highlights": [
+    {
+      "en": "Express 4 skeleton with Hogan templates and Stylus",
+      "cs": "Kostra Express 4 se šablonami Hogan a Stylusem"
+    },
+    {
+      "en": "HTML5 Boilerplate static assets",
+      "cs": "Statické assety z HTML5 Boilerplate"
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "Node.js",
+    "Express",
+    "Hogan.js",
+    "Stylus",
+    "jQuery",
+    "HTML5 Boilerplate"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[Visitor] --> B[Express app]\n  B --> C[Stylus middleware]\n  B --> D[Static public]\n  B --> E[Index route]\n  E --> F[Hogan view]",
+    "caption": {
+      "en": "Request handling of the single-page site.",
+      "cs": "Obsluha požadavku jednostránkového webu."
+    }
+  },
+  "related": [
+    "korczis-com",
+    "vomaste.cz"
+  ],
+  "confidence": "low"
+}

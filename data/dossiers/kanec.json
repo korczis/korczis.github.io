@@ -1,0 +1,60 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "kanec",
+  "sources": {
+    "github": "https://github.com/korczis/kanec",
+    "gitlab": "https://gitlab.com/korczis/kanec",
+    "commit": "7b96f4c4246ef0885055102a4b6bb2a1a8d5e18a",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "mix.exs",
+      "tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "kata",
+  "summary": {
+    "en": "A freshly generated Phoenix 1.4 application with Ecto and PostgreSQL, committed as a single initial commit. It contains the generator defaults (page controller, layout, channels socket, webpack assets) and no application-specific code.",
+    "cs": "Čerstvě vygenerovaná aplikace Phoenix 1.4 s Ectem a PostgreSQL v jediném úvodním commitu. Obsahuje jen výchozí výstup generátoru (page controller, layout, socket pro kanály, assety přes webpack), žádný vlastní kód."
+  },
+  "problem": {
+    "en": "Unclear; the README is the stock Phoenix setup text.",
+    "cs": "Nejasné; README je standardní návod Phoenixu."
+  },
+  "solution": {
+    "en": "A starting skeleton only: mix aliases for ecto.setup, Gettext, live reload in development and Cowboy as the HTTP server.",
+    "cs": "Pouze startovní kostra: mix aliasy pro ecto.setup, Gettext, live reload ve vývoji a Cowboy jako HTTP server."
+  },
+  "highlights": [
+    {
+      "en": "Phoenix 1.4 scaffold with Ecto SQL and Postgrex.",
+      "cs": "Kostra Phoenix 1.4 s Ecto SQL a Postgrexem."
+    },
+    {
+      "en": "Mirrored on GitHub and GitLab.",
+      "cs": "Zrcadleno na GitHubu i GitLabu."
+    }
+  ],
+  "stack": [
+    "Elixir",
+    "Phoenix",
+    "Ecto",
+    "PostgreSQL",
+    "Cowboy",
+    "webpack"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  B[Browser] --> E[Endpoint]\n  E --> R[Router]\n  R --> P[PageController]\n  P --> V[Views and templates]\n  E --> S[UserSocket]\n  A[Application] --> Q[Ecto Repo]\n  Q --> D[PostgreSQL]",
+    "caption": {
+      "en": "The default Phoenix request path as generated; the Repo is started by the application but no page uses it.",
+      "cs": "Výchozí cesta požadavku ve vygenerované aplikaci Phoenix; Repo spouští aplikace, ale žádná stránka ho nepoužívá."
+    }
+  },
+  "related": [
+    "dj-schnapps",
+    "rest-hello-world-benchmark",
+    "Test-Elixir"
+  ],
+  "confidence": "low"
+}

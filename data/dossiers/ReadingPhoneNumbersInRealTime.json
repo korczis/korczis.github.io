@@ -1,0 +1,62 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "ReadingPhoneNumbersInRealTime",
+  "sources": {
+    "github": "https://github.com/korczis/ReadingPhoneNumbersInRealTime",
+    "gitlab": null,
+    "commit": "09ecfb7f6a259c1f0f267462790c7d9f4a2dc2ca",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "tree",
+      "RealtimeNumberReader/VisionViewController.swift",
+      "RealtimeNumberReader/StringUtils.swift"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "experiment",
+  "summary": {
+    "en": "The platform vendor's iOS sample for reading phone numbers from live camera capture with the Vision framework, committed with one change: the recognition handler calls an added extractMillage function that looks for 6 to 7 digit numbers instead of the sample's US phone-number extractor.",
+    "cs": "Ukázkový iOS projekt výrobce platformy pro čtení telefonních čísel z živého obrazu kamery přes framework Vision, commitnutý s jednou změnou: obsluha rozpoznávání volá přidanou funkci extractMillage, která hledá šesti až sedmimístná čísla místo původního extraktoru amerických telefonních čísel."
+  },
+  "problem": {
+    "en": "Text recognition on single frames is noisy; reliable extraction of a number from live video needs evidence accumulated over time.",
+    "cs": "Rozpoznávání textu z jednotlivých snímků je zašuměné; spolehlivé vytažení čísla z živého videa potřebuje důkazy nasbírané v čase."
+  },
+  "solution": {
+    "en": "Camera frames feed a fast VNRecognizeTextRequest limited to a region of interest without language correction; extractMillage matches 6 to 7 digits, and StringTracker accepts a candidate only after about ten sightings, dropping strings unseen for 30 frames. Matches are boxed on the preview and the stable number is shown. The original phone-number extractor stays in StringUtils but is unused.",
+    "cs": "Snímky z kamery jdou do rychlého VNRecognizeTextRequest omezeného na oblast zájmu a bez jazykové korekce; extractMillage hledá 6 až 7 číslic a StringTracker přijme kandidáta až po zhruba deseti výskytech a zahodí řetězce, které 30 snímků neviděl. Shody se v náhledu orámují a stabilní číslo se zobrazí. Původní extraktor telefonních čísel ve StringUtils zůstal, ale nepoužívá se."
+  },
+  "highlights": [
+    {
+      "en": "Vendor sample in a single initial commit, retargeted from phone numbers to 6 to 7 digit numbers.",
+      "cs": "Ukázka výrobce v jediném úvodním commitu, přesměrovaná z telefonních čísel na šesti až sedmimístná čísla."
+    },
+    {
+      "en": "Live capture plus Vision text recognition in Swift.",
+      "cs": "Živé snímání a rozpoznávání textu přes Vision ve Swiftu."
+    },
+    {
+      "en": "Temporal voting over frames before a number is accepted.",
+      "cs": "Hlasování napříč snímky, než se číslo přijme."
+    }
+  ],
+  "stack": [
+    "Swift",
+    "UIKit",
+    "Vision",
+    "AVFoundation",
+    "Xcode"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  CAM[Camera capture] --> PV[PreviewView]\n  CAM --> VR[Vision text request]\n  VR --> SU[extractMillage 6-7 digits]\n  SU --> TR[StringTracker]\n  SU --> BX[Boxes on preview]\n  TR --> UI[Stable number shown]",
+    "caption": {
+      "en": "Frames flow from capture through recognition and a digit filter to a stable result.",
+      "cs": "Snímky jdou z kamery přes rozpoznání a filtr číslic až ke stabilnímu výsledku."
+    }
+  },
+  "related": [
+    "MinervaEye"
+  ],
+  "confidence": "medium"
+}

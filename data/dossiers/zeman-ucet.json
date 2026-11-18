@@ -1,0 +1,71 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "zeman-ucet",
+  "sources": {
+    "github": "https://github.com/korczis/zeman-ucet",
+    "gitlab": "https://gitlab.com/korczis/zeman-ucet",
+    "commit": "ff622439560f90518a09943a6d07e626c1394f29",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "Gemfile",
+      "main.rb",
+      "update.sh",
+      "wordcloud.r"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "data",
+  "summary": {
+    "en": "A small Ruby scraper that turns the public transparent bank account of a presidential election campaign into a CSV and JSON dataset of payments and the messages senders attached to them. The extracted data is committed alongside the script.",
+    "cs": "Malý scraper v Ruby, který z veřejného transparentního účtu prezidentské volební kampaně vytáhne platby i se zprávami pro příjemce a uloží je jako CSV a JSON. Vytěžená data jsou commitnutá přímo v repozitáři."
+  },
+  "problem": {
+    "en": "A bank's transparent-account page shows transactions only as an HTML table, which is awkward to filter, analyse or diff over time. The free-text payment messages are the interesting part, but they cannot be processed in bulk from the web page.",
+    "cs": "Transparentní účet banky ukazuje transakce jen jako HTML tabulku, kterou nejde pohodlně filtrovat, analyzovat ani sledovat v čase. Nejzajímavější jsou textové zprávy k platbám, jenže z webové stránky je hromadně nezpracujete."
+  },
+  "solution": {
+    "en": "main.rb fetches the account page for a fixed date range with open-uri, parses the table rows with Nokogiri, normalises the date to ISO 8601, splits the amount into value and currency and adds a SHA-256 id per row. update.sh pulls, regenerates and commits the data, and an R script builds a word cloud from the messages.",
+    "cs": "main.rb stáhne stránku účtu za pevné období přes open-uri, řádky tabulky rozparsuje Nokogiri, datum převede na ISO 8601, částku rozdělí na hodnotu a měnu a každému řádku přidá SHA-256 identifikátor. update.sh data stáhne znovu, přegeneruje a commitne, R skript z textů zpráv vykreslí word cloud."
+  },
+  "highlights": [
+    {
+      "en": "Scrape-to-dataset pipeline in one Ruby file with Nokogiri CSS selectors.",
+      "cs": "Celá pipeline od scrapu po dataset v jednom Ruby souboru s CSS selektory Nokogiri."
+    },
+    {
+      "en": "Content-hash ids (SHA-256 of the row) make rows stable across re-runs.",
+      "cs": "Identifikátor jako SHA-256 obsahu řádku drží řádky stabilní mezi běhy."
+    },
+    {
+      "en": "Git itself is the update log: a shell script pulls, regenerates and pushes.",
+      "cs": "Historii změn drží samotný git: shellový skript stáhne, přegeneruje a pushne."
+    },
+    {
+      "en": "Text mining of payment messages with R (tm, SnowballC, wordcloud).",
+      "cs": "Textová analýza zpráv k platbám v R (tm, SnowballC, wordcloud)."
+    }
+  ],
+  "stack": [
+    "Ruby",
+    "Nokogiri",
+    "R",
+    "Bash",
+    "CSV",
+    "JSON"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[Transparent account page] --> B[open-uri fetch]\n  B --> C[Nokogiri table parse]\n  C --> D[Normalise date and amount]\n  D --> E[SHA-256 row id]\n  E --> F[data.json]\n  E --> G[data.csv]\n  G --> H[R word cloud]\n  I[update.sh] --> B",
+    "caption": {
+      "en": "From the public account page to a committed CSV/JSON dataset and a word cloud.",
+      "cs": "Od veřejné stránky účtu ke commitnutému CSV/JSON datasetu a word cloudu."
+    }
+  },
+  "related": [
+    "czech-stats",
+    "zaas",
+    "csv2psql",
+    "json2csv"
+  ],
+  "confidence": "high"
+}

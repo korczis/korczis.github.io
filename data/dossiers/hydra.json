@@ -1,0 +1,72 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "hydra",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/hydra",
+    "commit": "319ee51d8fe1c24ef869ea81cdb542be481c69d6",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "mix.exs",
+      "apps/hydra/lib/hydra/multilogin/client.ex",
+      "apps/hydra_web/lib/hydra_web/router.ex",
+      "tree /",
+      "tree apps/"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "service",
+  "summary": {
+    "en": "An Elixir umbrella application that controls browser profiles of a commercial browser-profile manager and exposes them over a JSON API. One app wraps the tool's local and remote APIs, the other is a Phoenix web layer with REST endpoints.",
+    "cs": "Umbrella aplikace v Elixiru, která ovládá prohlížečové profily komerčního správce profilů a zpřístupňuje je přes JSON API. Jedna aplikace obaluje lokální a vzdálené API nástroje, druhá je webová vrstva ve Phoenixu s REST endpointy."
+  },
+  "problem": {
+    "en": "Starting, stopping and listing many isolated browser profiles by hand does not scale for automated browsing. The tool offers separate local and remote APIs that need a single, supervised entry point.",
+    "cs": "Ruční spouštění, zastavování a vypisování mnoha izolovaných prohlížečových profilů pro automatizované procházení neškáluje. Nástroj nabízí oddělené lokální a vzdálené API, které potřebují jeden supervizovaný vstupní bod."
+  },
+  "solution": {
+    "en": "A unified client module routes profile listing, profile details and tag listing to the remote API and start, stop and status calls to the local API. A supervisor keeps the tool's headless launcher (spawned through a port and a wrapper script), both API clients and a CLI wrapper running, a WebSockex watchdog attaches to a started profile's socket, a mix task downloads the tool, and the Phoenix app maps it all to /api/v1 routes for browser start and stop, profiles and tags. The README describes PostgreSQL and Ecto setup steps, but no app depends on Ecto or defines a repo.",
+    "cs": "Jednotný klientský modul směruje výpis profilů, detail profilu a výpis štítků na vzdálené API a spouštění, zastavení a stav na lokální API. Supervisor drží v chodu headless spouštěč nástroje (spuštěný přes port a obalový skript), oba API klienty a obal CLI, watchdog nad WebSockexem se připojí k socketu spuštěného profilu, mix task stahuje samotný nástroj a aplikace ve Phoenixu to celé mapuje na routy /api/v1 pro spuštění a zastavení prohlížeče, profily a štítky. README popisuje kroky pro PostgreSQL a Ecto, žádná aplikace ale na Ecto nezávisí ani nedefinuje repo."
+  },
+  "highlights": [
+    {
+      "en": "Umbrella split into a core OTP app and a Phoenix API app.",
+      "cs": "Umbrella rozdělená na jádrovou OTP aplikaci a API aplikaci ve Phoenixu."
+    },
+    {
+      "en": "Headless launcher, CLI wrapper and WebSocket watchdog around the browser tool.",
+      "cs": "Headless spouštěč, obal CLI a watchdog WebSocketu kolem prohlížečového nástroje."
+    },
+    {
+      "en": "Elixir release config, a Dockerfile and Docker scripts; libcluster and Distillery are declared but not configured.",
+      "cs": "Konfigurace Elixir release, Dockerfile a skripty pro Docker; libcluster a Distillery jsou deklarované, ale nenastavené."
+    },
+    {
+      "en": "Credo and Dialyzer configured; GitLab CI runs the tests, builds a release and a Docker image.",
+      "cs": "Nastavené Credo a Dialyzer; GitLab CI spouští testy a sestavuje release i Docker image."
+    }
+  ],
+  "stack": [
+    "Elixir",
+    "Phoenix",
+    "OTP",
+    "HTTPoison",
+    "WebSockex",
+    "Docker",
+    "GitLab CI"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  CLI[HTTP client] --> API[Phoenix API v1]\n  API --> BC[Browser controller]\n  API --> PC[Profile and tag controllers]\n  BC --> UC[Unified client]\n  PC --> UC\n  UC --> LOC[Local API]\n  UC --> REM[Remote API]\n  SUP[Multilogin supervisor] --> HL[Headless launcher]\n  HL --> BR[Browser profiles]\n  LOC --> BR\n  LOC --> WD[Socket watchdog]",
+    "caption": {
+      "en": "REST calls go through a unified client to the local or remote API of the browser-profile tool.",
+      "cs": "REST volání jdou přes jednotného klienta na lokální nebo vzdálené API nástroje pro prohlížečové profily."
+    }
+  },
+  "related": [
+    "microcrawler-elixir",
+    "apollo-crawler-extension",
+    "microcrawler-browser"
+  ],
+  "confidence": "medium"
+}

@@ -3,11 +3,11 @@
  "description": "The Majordomus layer of korczis/korczis.github.io: every object of .ai/ with its MCP resource URI",
  "source": "majordomus run objects.list, capabilities.list",
  "majordomus": "1.0.2",
- "tree": "220f2da341c9c0cb3200b4cbb610379bc2d12ebe8d95c5041e892c6d296d1ae8",
+ "tree": "526839b550cf0e05efadecada5bb6c260d74d35de48b1e869214dd3730c62e57",
  "counts": {
-  "objects": 145,
+  "objects": 147,
   "kinds": {
-   "adr": 8,
+   "adr": 9,
    "context": 21,
    "document": 9,
    "knowledge": 10,
@@ -15,14 +15,14 @@
    "policy": 1,
    "profile": 4,
    "prompt": 4,
-   "rule": 77,
+   "rule": 78,
    "scope": 1,
    "skill": 1,
    "taxonomy": 8
   },
-  "capabilities": 376,
+  "capabilities": 378,
   "mcp_tools": 215,
-  "mcp_resources": 202,
+  "mcp_resources": 204,
   "http_routes": 219
  },
  "objects": [
@@ -89,6 +89,14 @@
    "title": "One positioning derived from the hire headline; due diligence and M&A move to the fourth role and the client-work proof",
    "description": "One positioning derived from the hire headline; due diligence and M&A move to the fourth role and the client-work proof",
    "path": ".ai/repo/adrs/0008-one-positioning-derived-from-the-hire-headline-due-diligence.md"
+  },
+  {
+   "uri": "majordomus://adr/adr-0009",
+   "kind": "adr",
+   "identity": "adr-0009",
+   "title": "Repository dossiers are inferred, checked claim by claim, and never written where a safety check refuses",
+   "description": "Repository dossiers are inferred, checked claim by claim, and never written where a safety check refuses",
+   "path": ".ai/repo/adrs/0009-repository-dossiers-are-inferred-checked-claim-by-claim-and-n.md"
   },
   {
    "uri": "majordomus://context/ai.layer",
@@ -993,6 +1001,14 @@
    "title": "Every number on the site is measured, dated and derived",
    "description": "Figures come from data/github.json written by scripts/fetch-github.mjs and are shown with their date; the curated catalogue is data/projects.toml; llms.txt is derived and checked.",
    "path": ".ai/repo/rules/project/data-measured.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/project.dossiers-inferred@1",
+   "kind": "rule",
+   "identity": "project.dossiers-inferred@1",
+   "title": "Repository dossiers are inferred, carry their provenance and say so wherever shown",
+   "description": "data/dossiers/<repo>.json holds, for each original public repository, a problem, a solution, a stack and a Mermaid architecture inferred from the repository's own files; each carries the commit and date it was read at and a confidence, is labelled inferred wherever it is shown, is re-mined when the repository's head moves, and passes the NDA gate.",
+   "path": ".ai/repo/rules/project/dossiers-inferred.v1.md"
   },
   {
    "uri": "majordomus://rule/project.every-repository-page@1",

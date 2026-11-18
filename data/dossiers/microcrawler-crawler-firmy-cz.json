@@ -1,0 +1,66 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "microcrawler-crawler-firmy-cz",
+  "sources": {
+    "github": null,
+    "gitlab": "https://gitlab.com/korczis/microcrawler-crawler-firmy-cz",
+    "commit": "bbc761b0ba283f025379877abaee4031688bec1f",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "package.json",
+      "src/index.js",
+      "src/listing.js",
+      "src/details.js",
+      "tree (recursive)"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "library",
+  "summary": {
+    "en": "A Microcrawler site package for a Czech business directory. It has index, listing and details processors and turns company detail pages into structured contact records.",
+    "cs": "Balíček Microcrawleru pro český katalog firem. Má procesory index, listing a details a z detailních stránek firem dělá strukturované kontaktní záznamy."
+  },
+  "problem": {
+    "en": "Microcrawler workers are generic: they download pages and need site-specific logic to know which links to follow and which fields to extract.",
+    "cs": "Workery Microcrawleru jsou obecné: stahují stránky a potřebují logiku pro konkrétní web, aby věděly, které odkazy sledovat a jaká pole vytáhnout."
+  },
+  "solution": {
+    "en": "Requests use the _escaped_fragment_ AJAX crawling scheme to get server-rendered HTML. The details processor reads schema.org microdata (telephone, street address, postal code, locality, description, logo) and, from page selectors, the company name, website, e-mail links and the category list, keeping the first category as the primary one.",
+    "cs": "Požadavky používají schéma _escaped_fragment_ pro AJAX crawling, aby server vrátil vyrenderované HTML. Procesor details čte microdata podle schema.org (telefon, ulice, PSČ, obec, popis, logo) a z běžných selektorů stránky název firmy, web, e-mailové odkazy a seznam kategorií, z nichž první bere jako hlavní."
+  },
+  "highlights": [
+    {
+      "en": "Contact fields keyed on schema.org itemprop attributes; name, website, e-mails and categories on page selectors.",
+      "cs": "Kontaktní pole stojí na atributech itemprop ze schema.org; název, web, e-maily a kategorie na selektorech stránky."
+    },
+    {
+      "en": "Structured address object and multiple e-mails per company.",
+      "cs": "Strukturovaný objekt adresy a více e-mailů na firmu."
+    },
+    {
+      "en": "Three-stage index, listing, details chain.",
+      "cs": "Třístupňový řetězec index, listing, details."
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "Node.js",
+    "npm"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  W[Worker] --> I[index]\n  I --> L[listing]\n  L --> L\n  L --> D[details]\n  D --> M[schema.org microdata]\n  M --> R[company record]",
+    "caption": {
+      "en": "Processors emit either new URLs for the queue or extracted data records.",
+      "cs": "Procesory vracejí buď nové URL do fronty, nebo vytěžené datové záznamy."
+    }
+  },
+  "related": [
+    "microcrawler-js",
+    "microcrawler-crawler-all",
+    "microcrawler-crawler-base",
+    "ares",
+    "ares-api"
+  ],
+  "confidence": "medium"
+}

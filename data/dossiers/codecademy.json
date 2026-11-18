@@ -1,0 +1,53 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "codecademy",
+  "sources": {
+    "github": "https://github.com/korczis/codecademy",
+    "gitlab": "https://gitlab.com/korczis/codecademy",
+    "commit": "b0043b59aa1bc1d2cac3d6dae0fd082e05235a14",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "kata",
+  "summary": {
+    "en": "Small Ruby example scripts written for an online Ruby training course: arrays, conditionals, command-line input and string splitting, plus one exam exercise.",
+    "cs": "Drobné ukázkové skripty v Ruby z online kurzu Ruby: pole, podmínky, vstup z příkazové řádky a dělení řetězců, k tomu jedna zkoušková úloha."
+  },
+  "problem": {
+    "en": "Collect worked examples from a beginner Ruby course in one place.",
+    "cs": "Mít příklady z kurzu Ruby pro začátečníky pohromadě."
+  },
+  "solution": {
+    "en": "Six standalone example.*.rb files at the top level and an exams directory with one Czech-language exercise, described twice: a loop that keeps asking for a cookie until the user types the right word.",
+    "cs": "Šest samostatných souborů example.*.rb v kořeni a adresář exams s jedním zadáním v češtině, popsaným dvakrát: smyčka, která tak dlouho žádá sušenku, dokud uživatel nenapíše správné slovo."
+  },
+  "highlights": [
+    {
+      "en": "Beginner-level scripts; one loads an external gem it never uses.",
+      "cs": "Skripty pro začátečníky; jeden načítá externí gem, který vůbec nepoužije."
+    },
+    {
+      "en": "A Czech exam task on loops and console input.",
+      "cs": "Česká zkoušková úloha na smyčky a vstup z konzole."
+    }
+  ],
+  "stack": [
+    "Ruby"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  Repo[codecademy] --> Ex[example scripts]\n  Ex --> Arr[arrays]\n  Ex --> Cond[if elsif else]\n  Ex --> Input[command line input]\n  Repo --> Exams[exams task]",
+    "caption": {
+      "en": "Repository contents by topic.",
+      "cs": "Obsah repozitáře podle témat."
+    }
+  },
+  "related": [
+    "skull-ruby",
+    "algorithms-ruby"
+  ],
+  "confidence": "low"
+}

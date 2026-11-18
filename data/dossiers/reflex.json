@@ -1,0 +1,65 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "reflex",
+  "sources": {
+    "github": "https://github.com/korczis/reflex",
+    "gitlab": "https://gitlab.com/korczis/reflex",
+    "commit": "3fd564b1428716ea2e095f6c7b8b0d8e531b9a4d",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "Reflex.sln",
+      "Reflex/Factory.cs",
+      "Reflex/Helper.cs",
+      "Reflex/Models/",
+      "Test/",
+      "Test/Program.cs",
+      "Reflex/Reflex.csproj"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "library",
+  "summary": {
+    "en": "A small .NET library of reflection helpers with a test console project. Its main helper lists all classes in the executing assembly that derive from a given base type.",
+    "cs": "Malá .NET knihovna pomocníků pro reflexi s testovacím konzolovým projektem. Hlavní pomocník vypíše všechny třídy ve spuštěném assembly, které dědí ze zadaného základního typu."
+  },
+  "problem": {
+    "en": "Plugin-style code often needs to find every implementation of a base class at runtime without registering them by hand.",
+    "cs": "Kód ve stylu pluginů často potřebuje za běhu najít všechny implementace základní třídy, aniž by se musely ručně registrovat."
+  },
+  "solution": {
+    "en": "Helper.GetSubclasses resolves the base type by name and filters Assembly.GetTypes() with a LINQ query on IsClass and IsSubclassOf. The test program asks for subclasses of Reflex.Models.Entity and then looks up public static Find and Create methods on each one by reflection; sample models (Entity, Project, Task, User) give it something to discover, and the Factory class is still an empty stub. The projects target .NET Framework 4.0.",
+    "cs": "Helper.GetSubclasses najde základní typ podle jména a výsledky Assembly.GetTypes() profiltruje LINQ dotazem na IsClass a IsSubclassOf. Testovací program si vyžádá podtřídy Reflex.Models.Entity a na každé z nich reflexí hledá veřejné statické metody Find a Create; ukázkové modely (Entity, Project, Task, User) slouží jako materiál k objevení a třída Factory je zatím prázdná kostra. Projekty cílí na .NET Framework 4.0."
+  },
+  "highlights": [
+    {
+      "en": "Subclass discovery via System.Reflection and LINQ",
+      "cs": "Hledání podtříd přes System.Reflection a LINQ"
+    },
+    {
+      "en": "Sample entity models and a separate test project",
+      "cs": "Ukázkové entitní modely a samostatný testovací projekt"
+    },
+    {
+      "en": "Factory is an unimplemented stub",
+      "cs": "Factory je neimplementovaná kostra"
+    }
+  ],
+  "stack": [
+    "C#",
+    ".NET",
+    "System.Reflection",
+    "LINQ"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  T[Test program] --> H[Helper GetSubclasses]\n  H --> A[Executing assembly]\n  A --> M[Models Entity Project Task User]\n  H --> L[List of types]\n  L --> FM[Static Find and Create lookup]\n  T --> F[Factory stub]",
+    "caption": {
+      "en": "The test program asks the helper for subclasses found by scanning the assembly, then probes them for static factory methods.",
+      "cs": "Testovací program se ptá pomocníka na podtřídy nalezené procházením assembly a pak u nich hledá statické tovární metody."
+    }
+  },
+  "related": [
+    "cs-benchmark"
+  ],
+  "confidence": "medium"
+}

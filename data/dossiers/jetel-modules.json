@@ -1,0 +1,52 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "jetel-modules",
+  "sources": {
+    "github": "https://github.com/korczis/jetel-modules",
+    "gitlab": "https://gitlab.com/korczis/jetel-modules",
+    "commit": "bf28dfdd9b2e32101e757ed28d188da9a50785b7",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      "modules.json"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "config",
+  "summary": {
+    "en": "A companion repository meant for optional modules of the jetel ETL tool. It holds a README (\"Optional Jetel Modules\"), a LICENSE and a modules.json that is an empty JSON object.",
+    "cs": "Doprovodný repozitář určený pro volitelné moduly ETL nástroje jetel. Obsahuje README („Optional Jetel Modules“), LICENSE a modules.json, který je prázdným JSON objektem."
+  },
+  "problem": {
+    "en": "Unclear beyond the README title: optional modules were apparently meant to live outside the jetel core.",
+    "cs": "Mimo nadpis README nejasné: volitelné moduly zřejmě měly žít mimo jádro nástroje jetel."
+  },
+  "solution": {
+    "en": "Only the placeholder exists: modules.json contains {} and no module is described. Nothing in this repository shows how jetel would read it.",
+    "cs": "Existuje jen zástupný soubor: modules.json obsahuje {} a nepopisuje žádný modul. Nic v tomto repozitáři neukazuje, jak by ho jetel četl."
+  },
+  "highlights": [
+    {
+      "en": "modules.json is an empty object; no module is listed.",
+      "cs": "modules.json je prázdný objekt; žádný modul v něm není."
+    },
+    {
+      "en": "Data/config only, no executable code.",
+      "cs": "Jen data/konfigurace, žádný spustitelný kód."
+    }
+  ],
+  "stack": [
+    "JSON"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  A[jetel core] -.-> B[modules.json]\n  B --> C[empty object]\n  D[README] -.-> B",
+    "caption": {
+      "en": "The intended link between jetel and an optional module registry; the registry is empty.",
+      "cs": "Zamýšlené propojení nástroje jetel s registrem volitelných modulů; registr je prázdný."
+    }
+  },
+  "related": [
+    "jetel"
+  ],
+  "confidence": "low"
+}

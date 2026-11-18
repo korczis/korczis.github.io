@@ -1,0 +1,51 @@
+{
+  "schema": "korczis-hub-dossier/v1",
+  "repo": "skype-adapter-client",
+  "sources": {
+    "github": "https://github.com/korczis/skype-adapter-client",
+    "gitlab": "https://gitlab.com/korczis/skype-adapter-client",
+    "commit": "648f4002bc8f4003ed3bf5ee1ea53e4df9940694",
+    "read_at": "2026-11-18",
+    "read": [
+      "README.md",
+      ".gitignore",
+      "tree"
+    ]
+  },
+  "provenance": "inferred",
+  "kind": "experiment",
+  "summary": {
+    "en": "A placeholder repository for a Ruby client to a separate skype-adapter project. It contains only a one-line README and a .gitignore.",
+    "cs": "Zástupný repozitář pro klienta v Ruby k samostatnému projektu skype-adapter. Obsahuje jen jednořádkové README a .gitignore."
+  },
+  "problem": {
+    "en": "The intent, per the README, was a Ruby client application talking to a Skype adapter service. No further detail exists in the repository.",
+    "cs": "Podle README měl vzniknout klient v Ruby komunikující se službou skype-adapter. Víc podrobností repozitář neobsahuje."
+  },
+  "solution": {
+    "en": "Unclear: no code was committed.",
+    "cs": "Nejasné: žádný kód nebyl commitnut."
+  },
+  "highlights": [
+    {
+      "en": "Declared as a Ruby client in the README only",
+      "cs": "Klient v Ruby je deklarovaný jen v README"
+    },
+    {
+      "en": "Apart from the README, only a standard Ruby gem .gitignore is committed.",
+      "cs": "Kromě README je commitnutý jen standardní .gitignore pro Ruby gem."
+    }
+  ],
+  "stack": [
+    "Ruby"
+  ],
+  "architecture": {
+    "mermaid": "flowchart LR\n  C[Ruby client] --> A[skype-adapter service]\n  A --> S[Skype]\n  C --> U[User]",
+    "caption": {
+      "en": "Intended relationship as stated in the README; nothing is implemented.",
+      "cs": "Zamýšlený vztah podle README; nic není implementováno."
+    }
+  },
+  "related": [],
+  "confidence": "low"
+}

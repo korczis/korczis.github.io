@@ -54,6 +54,7 @@ export const GATES = [
   { id: 'recent-derived', name: 'recent.json follows the index', run: ['node', 'scripts/fetch-recent.mjs', '--derive', '--check'], ci: true, rule: 'project.data-measured' },
   { id: 'derive-lib', name: 'Inference, authorship and derivation behave on their fixtures', run: ['node', 'scripts/check-derive.mjs'], ci: true, rule: 'project.data-measured' },
   { id: 'experience', name: 'Experience data matches its schema', run: ['node', 'scripts/check-experience.mjs'], ci: true },
+  { id: 'dossiers', name: 'Repository dossiers are inferred, sourced, bilingual and NDA-clean', run: ['node', 'scripts/check-dossiers.mjs'], ci: true, rule: 'project.dossiers-inferred' },
   { id: 'categories', name: 'Category pages are current', run: ['node', 'scripts/build-categories.mjs', '--check'], ci: true, rule: 'project.data-measured' },
   { id: 'work', name: 'Work pages are current', run: ['node', 'scripts/build-work.mjs', '--check'], ci: true, rule: 'project.data-measured' },
   { id: 'glossary', name: 'Glossary pages are current', run: ['node', 'scripts/build-glossary.mjs', '--check'], ci: true, rule: 'project.pages-are-articles' },
