@@ -6,6 +6,17 @@
 // data/og.json records, per image, the hash of the SVG each PNG was rendered from and of the PNG
 // itself, so a PNG left behind by a changed SVG is caught anywhere (file times are not, in CI).
 //
+// Size: every page has a card (one per original repository and language, hundreds of them), so
+// the PNG is quantised to a palette of ENCODER.colours with pngquant (no dithering, strongest
+// compression setting): deterministic, about a quarter of the size of the full-colour render and
+// indistinguishable on a flat dark card. The encoder is recorded in data/og.json; a change to it
+// renders every card again.
+//
+// The card shows the page's real address (its path from content/, as Zola publishes it) and a pill
+// with a measured fact of the page: on a work page the repository's state (supervised by
+// Majordomus, active within its period, or archive with its years) from data/recent.json; on every
+// other page the site's own supervision. Its texts are i18n (i18n/derive.toml og_pill_*).
+//
 // usage: node scripts/build-og.mjs           write static/og/<name>.svg and .png, remove orphans
 //        node scripts/build-og.mjs --check   exit 1 if an SVG is stale, a PNG is missing, not of the
 //                                            OG size, not rendered from its SVG, or an image is orphaned
@@ -14,13 +25,15 @@ import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { existsSync, mkdirSync, readFileSync, readdirSync, unlinkSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { CHECK, ROOT, contentPages, identity, limits, report } from './lib/derive.mjs';
+import { CHECK, ROOT, contentPages, identity, isDefault, limits, readJson, report, t } from './lib/derive.mjs';
 import { cliArgs } from './lib/cli.mjs';
 
 cliArgs({ '--check': true }, { derived: true });
 
 const { width: W, height: H } = limits().og;
 const me = identity();
+const ENCODER = { tool: 'pngquant', colours: 32, args: ['--speed', '1', '--strip', '--nofs'] };
+const ENCODER_ID = `${ENCODER.tool} ${ENCODER.colours} ${ENCODER.args.join(' ')}`;
 const COLOURS = { page: '#111827', ink: '#f9fafb', muted: '#9ca3af', primary: '#3b82f6', soft: '#1e3a8a', glyph: '#60a5fa' };
 
 const escape = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -77,8 +90,33 @@ function glyphField(seed) {
   return paths.join('');
 }
 
-function svg({ title, description, path }) {
+// The page's address as Zola publishes it: content/x.md -> /x/, content/x.cs.md -> /cs/x/,
+// content/s/_index.md -> /s/, the home -> "" (the host alone).
+function addressOf({ rel, lang }, fm) {
+  if (fm.path) return `/${fm.path.replace(/^\/|\/$/g, '')}/`;
+  const prefix = isDefault(lang) ? '' : `/${lang}`;
+  const file = rel.replace(/\.[a-z]{2}\.md$/, '.md');
+  if (file === '_index.md') return prefix ? `${prefix}/` : '';
+  if (file.endsWith('/_index.md')) return `${prefix}/${file.slice(0, -'_index.md'.length)}`;
+  return `${prefix}/${file.replace(/\.md$/, '')}/`;
+}
+
+// The pill: a measured fact of the page (see the header).
+const recent = readJson('data/recent.json');
+const repoOf = new Map(recent.repos.map((r) => [r.name, r]));
+function pillOf(fm, lang) {
+  const r = fm.extra?.repo ? repoOf.get(fm.extra.repo) : null;
+  if (!r) return t('og_pill_site', lang);
+  if (r.supervised) return t('og_pill_supervised', lang);
+  if (r.period) return t('og_pill_active', lang, { period: r.period });
+  const first = Math.min(...[r.created_at, ...r.commits.map((c) => c.at)].filter(Boolean).map((x) => new Date(x).getUTCFullYear()));
+  const last = new Date(r.last_commit ?? r.pushed_at).getUTCFullYear();
+  return t('og_pill_archive', lang, { years: first < last ? `${first}–${last}` : String(last) });
+}
+
+function svg({ title, description, path, address, pill }) {
   const seed = [...path].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 7);
+  const pillWidth = Math.round(48 + pill.length * 11);
   const titleLines = wrap(title, 21, 3);
   const descLines = wrap(description, 46, 3);
   const titleSize = titleLines.length > 2 ? 58 : 66;
@@ -98,11 +136,11 @@ function svg({ title, description, path }) {
 <rect x="80" y="72" width="56" height="56" rx="12" fill="#1d4ed8"/>
 <g fill="none" stroke="#fff" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"><path d="M97.5 86v28M97.5 100l15.7-14M104.5 93.9l12.3 20.1"/></g>
 <text x="156" y="99" font-size="24" font-weight="700" fill="${COLOURS.ink}">${escape(me.author)}</text>
-<text x="156" y="124" font-size="20" font-family="JetBrains Mono, Menlo, monospace" fill="${COLOURS.muted}">${escape(me.host)}${escape(path === 'home' ? '' : `/${path}/`)}</text>
+<text x="156" y="124" font-size="20" font-family="JetBrains Mono, Menlo, monospace" fill="${COLOURS.muted}">${escape(me.host)}${escape(address)}</text>
 ${titleText}
 ${descText}
-<rect x="80" y="540" width="292" height="44" rx="22" fill="${COLOURS.soft}"/>
-<text x="104" y="569" font-size="20" font-weight="600" fill="#bfdbfe">Supervised by Majordomus</text>
+<rect x="80" y="540" width="${pillWidth}" height="44" rx="22" fill="${COLOURS.soft}"/>
+<text x="104" y="569" font-size="20" font-weight="600" fill="#bfdbfe">${escape(pill)}</text>
 </g>
 </svg>
 `;
@@ -117,11 +155,15 @@ const sha = (data) => createHash('sha256').update(data).digest('hex').slice(0, 1
 const DIR = join(ROOT, 'static/og');
 const MANIFEST = join(ROOT, 'data/og.json');
 const stored = existsSync(MANIFEST) ? JSON.parse(readFileSync(MANIFEST, 'utf8')) : { images: {} };
-const manifest = { schema: 'korczis-hub-og/v1', images: {} };
+const manifest = { schema: 'korczis-hub-og/v1', encoder: ENCODER_ID, images: {} };
+// Cards rendered by another encoder are rendered again (and --check reports them).
+const reencode = stored.encoder !== ENCODER_ID;
 const findings = [];
+if (CHECK && reencode) findings.push(`data/og.json records the encoder ${stored.encoder ?? 'none'}, not ${ENCODER_ID}`);
 const wanted = new Set();
 mkdirSync(DIR, { recursive: true });
-for (const { path: file, fm } of contentPages()) {
+for (const page of contentPages()) {
+  const { path: file, fm } = page;
   if (!fm?.extra?.og_image) continue;
   const png = join(ROOT, 'static', fm.extra.og_image);
   const name = fm.extra.og_image.replace(/^og\//, '').replace(/\.png$/, '');
@@ -131,6 +173,8 @@ for (const { path: file, fm } of contentPages()) {
     title: fm.extra.og_title || fm.title,
     description: fm.extra.og_description || fm.description,
     path: name,
+    address: addressOf(page, fm),
+    pill: pillOf(fm, page.lang),
   });
   const record = stored.images[name];
   if (CHECK) {
@@ -146,9 +190,10 @@ for (const { path: file, fm } of contentPages()) {
   // Re-render only when the SVG changed (or the PNG is missing or unrecorded as its render):
   // renderers on other machines use other fonts, and an unchanged image must not churn in a diff.
   const same = existsSync(source) && existsSync(png) && readFileSync(source, 'utf8') === text;
-  if (!same || (record && (record.svg !== sha(text) || record.png !== sha(readFileSync(png))))) {
+  if (!same || reencode || (record && (record.svg !== sha(text) || record.png !== sha(readFileSync(png))))) {
     writeFileSync(source, text);
     execFileSync('rsvg-convert', ['--width', String(W), '--height', String(H), '--output', png, source]);
+    execFileSync(ENCODER.tool, [...ENCODER.args, '--force', '--output', png, String(ENCODER.colours), png]);
     console.log(`og: ${fm.extra.og_image} from ${file}`);
   }
   // An unrecorded pair whose SVG is current is adopted as it is (the first run of the record).
