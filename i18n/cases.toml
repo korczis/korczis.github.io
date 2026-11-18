@@ -51,8 +51,8 @@ cs = "Nejsilnější schopnosti odvozené z commitů, cest a nadpisů: signál r
 en = "Technologies detected in the sources"
 cs = "Technologie zjištěné ve zdrojích"
 [case_services]
-en = "Services this case delivers"
-cs = "Služby, které tento případ dodává"
+en = "Services with the largest skill overlap"
+cs = "Služby s největším překryvem dovedností"
 [case_public]
 en = "Public work with the same skills"
 cs = "Veřejná práce se stejnými dovednostmi"
