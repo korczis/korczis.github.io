@@ -3,7 +3,7 @@
 title = "Napadnutelnost"
 description = "Vlastnost rozhodnutí, které lze zpochybnit: jeho důkazy, předpoklady, nejistota i odpovědná osoba jsou zaznamenané."
 template = "term.html"
-weight = 76
+weight = 77
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

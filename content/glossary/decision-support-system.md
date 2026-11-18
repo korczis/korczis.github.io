@@ -3,7 +3,7 @@
 title = "Decision support system"
 description = "Software that gathers data and analysis into reports and views that help people make a decision, rather than making it for them."
 template = "term.html"
-weight = 79
+weight = 80
 
 [taxonomies]
 tags = ["Glossary", "Concept"]
@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Software that gathers data and analysis into reports and views that help people make a decision, rather than making it for them."
 aliases = []
 reference = { title = "Decision support system (Wikipedia)", url = "https://en.wikipedia.org/wiki/Decision_support_system" }
-pages = ["projects/security.md", "services/_index.md", "services/decision-support-ai.md", "services/due-diligence.md", "services/interactive-data-products.md", "services/m-and-a.md", "services/reputation-intelligence.md", "skills/_index.md", "skills/decision-support.md", "work/magic.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/peacemaker.md", "work/ratnet.md", "work/zlown.md"]
-related = ["due-diligence", "html", "risk-assessment", "audit-trail", "data-integration", "information-extraction", "javascript", "knowledge-graph"]
+pages = ["cases/_index.md", "cases/financial-group.md", "cases/real-estate.md", "projects/security.md", "services/_index.md", "services/decision-support-ai.md", "services/due-diligence.md", "services/interactive-data-products.md", "services/m-and-a.md", "services/reputation-intelligence.md", "skills/_index.md", "skills/decision-support.md", "work/magic.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/peacemaker.md", "work/ratnet.md", "work/zlown.md"]
+related = ["due-diligence", "audit-trail", "mergers-and-acquisitions", "osint", "record-linkage", "risk-assessment", "data-integration", "html"]
 og_title = "Decision support system: glossary"
 og_image = "og/glossary-decision-support-system.png"
 keywords = ["Decision support system", "Concept", "Glossary", "Tomas Korcak"]

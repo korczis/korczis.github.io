@@ -7,6 +7,21 @@
    "png": "bdef071f79fc0b3d",
    "by": "pngquant 3.0.3"
   },
+  "case-financial-group": {
+   "svg": "6dd772c59911a348",
+   "png": "5ab7a8ef907d0a4a",
+   "by": "pngquant 3.0.3"
+  },
+  "case-real-estate": {
+   "svg": "f606ad5a9342bad6",
+   "png": "75a7ecb1f361bd09",
+   "by": "pngquant 3.0.3"
+  },
+  "cases": {
+   "svg": "68c3c3efda39a020",
+   "png": "1740bc924c867481",
+   "by": "pngquant 3.0.3"
+  },
   "category-ai": {
    "svg": "2e2cb1ccb2ef5964",
    "png": "f6526a693a72b3ac",
@@ -67,6 +82,21 @@
    "png": "e5d949bcd2b19964",
    "by": "pngquant 3.0.3"
   },
+  "cs-case-financial-group": {
+   "svg": "999c5b87847d69bf",
+   "png": "499b0d3d7f29747b",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-case-real-estate": {
+   "svg": "bb8a5ba99a36da59",
+   "png": "ac92389c7f00dada",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-cases": {
+   "svg": "bd1d248602e9c22c",
+   "png": "e7a690f7e86b437a",
+   "by": "pngquant 3.0.3"
+  },
   "cs-category-ai": {
    "svg": "b79d8472ab0fca3f",
    "png": "b06d1a066690c1e3",
@@ -123,8 +153,8 @@
    "by": "pngquant 3.0.3"
   },
   "cs-glossary": {
-   "svg": "9d8a446050e14d3c",
-   "png": "5fcb71af4a2e43da",
+   "svg": "eb360de512d9c1ac",
+   "png": "bac9c8698c24e3b8",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-ai-agent": {
@@ -175,6 +205,11 @@
   "cs-glossary-c": {
    "svg": "6806380a44b3d683",
    "png": "f5ee2da771e99687",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-case-study": {
+   "svg": "3b048cd087cf7a04",
+   "png": "9eb5e586adcdb298",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-chain-of-custody": {
@@ -1978,8 +2013,8 @@
    "by": "pngquant 3.0.3"
   },
   "glossary": {
-   "svg": "8a7e7d4a2e11abf7",
-   "png": "f606af0b78c3e363",
+   "svg": "8a041e36aecde630",
+   "png": "f3c39c5565450ee2",
    "by": "pngquant 3.0.3"
   },
   "glossary-ai-agent": {
@@ -2030,6 +2065,11 @@
   "glossary-c": {
    "svg": "c941e36ad5f584cf",
    "png": "9ab2df1672a346f2",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-case-study": {
+   "svg": "8f3e775791e17a48",
+   "png": "eb58a82bcba9267b",
    "by": "pngquant 3.0.3"
   },
   "glossary-chain-of-custody": {

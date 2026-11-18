@@ -1,0 +1,131 @@
+# The case studies (scripts/build-cases.mjs, templates/cases.html, case.html; ADR 0010): one page per
+# client engagement with measurable sources, anonymised (ADR 0006). The sector and roles are the
+# owner's declarations; the period and scale are measured and rounded; the capabilities are inferred
+# and always labelled so. Figures come only through {placeholders}.
+
+[nav_cases]
+en = "Case studies"
+cs = "Případové studie"
+[hint_cases]
+en = "Anonymised client work: sector, role, scale, what was delivered"
+cs = "Anonymizovaná práce pro klienty: obor, role, rozsah, co bylo dodáno"
+
+[cases_title]
+en = "Case studies"
+cs = "Případové studie"
+[cases_lead]
+en = "Anonymised client work under confidentiality agreements: sector, my role, measured scale and what was delivered; every figure labelled measured or inferred."
+cs = "Anonymizovaná práce pro klienty pod dohodami o mlčenlivosti: obor, moje role, změřený rozsah a co bylo dodáno; u čísel, zda jsou změřená, nebo odvozená."
+[cases_og]
+en = "Case studies: anonymised client work in due diligence, AI and data"
+cs = "Případové studie: anonymizovaná práce pro klienty v due diligence, AI a datech"
+[cases_open]
+en = "Read the case study"
+cs = "Číst případovou studii"
+[cases_all]
+en = "All case studies"
+cs = "Všechny případové studie"
+
+[case_kpi_months]
+en = "months with measured commits"
+cs = "měsíců s naměřenými commity"
+[case_kpi_commits]
+en = "commits by me, rounded down"
+cs = "mých commitů, zaokrouhleno dolů"
+[case_kpi_team]
+en = "people on the team, rounded down"
+cs = "lidí v týmu, zaokrouhleno dolů"
+[case_kpi_tests]
+en = "tests, rounded down"
+cs = "testů, zaokrouhleno dolů"
+[case_role]
+en = "My role"
+cs = "Moje role"
+[case_delivered]
+en = "What was delivered"
+cs = "Co bylo dodáno"
+[case_delivered_lead]
+en = "The strongest capabilities inferred from commits, paths and headings: a signal of scope, not a measured business outcome."
+cs = "Nejsilnější schopnosti odvozené z commitů, cest a nadpisů: signál rozsahu práce, ne změřený obchodní výsledek."
+[case_tech]
+en = "Technologies detected in the sources"
+cs = "Technologie zjištěné ve zdrojích"
+[case_services]
+en = "Services this case delivers"
+cs = "Služby, které tento případ dodává"
+[case_public]
+en = "Public work with the same skills"
+cs = "Veřejná práce se stejnými dovednostmi"
+[case_limits]
+en = "What is not published"
+cs = "Co se nezveřejňuje"
+[case_limits_text]
+en = "The client, the people, the systems and the repositories stay unnamed, and business results stay with the client. The capabilities are inferred, the scale is measured and rounded down to a bucket."
+cs = "Klient, lidé, systémy ani repozitáře nejsou jmenováni a obchodní výsledky zůstávají u klienta. Schopnosti jsou odvozené, rozsah je změřený a zaokrouhlený dolů na stupeň."
+[case_measured]
+en = "measured"
+cs = "změřeno"
+[case_inferred]
+en = "inferred"
+cs = "odvozeno"
+[case_declared]
+en = "declared by me"
+cs = "uvádím já"
+
+[derive_case_title]
+en = "{sector}: {skills}"
+cs = "{sector}: {skills}"
+[derive_case_description]
+en = "Anonymised case study, {sector}: {roles}; {skills}."
+cs = "Anonymizovaná případová studie, obor {sector}: {roles}; {skills}."
+[derive_case_pad]
+en = " Every figure labelled as measured or inferred."
+cs = " Každé číslo s uvedením, zda je změřené, nebo odvozené."
+[derive_case_context]
+en = "Context: a client in the sector {sector}, under a confidentiality agreement. The client, people and systems are not named; this page shows the sector, my role, the measured scale and the kinds of problems, inferred from the git history of the sources ([[commit|commitů]])."
+cs = "Kontext: klient v oboru {sector}, pod dohodou o mlčenlivosti. Klient, lidé ani systémy nejsou jmenováni; stránka ukazuje obor, moji roli, změřený rozsah a druhy problémů odvozené z historie gitu jeho zdrojů ([[commit|commitů]])."
+[derive_case_role]
+en = "My role (declared by me):"
+cs = "Moje role (uvádím já):"
+[derive_case_period]
+en = "Period (measured): from {from} to {to}; months with measured commits: {n}."
+cs = "Období (změřeno): od {from} do {to}; měsíců s naměřenými commity: {n}."
+[derive_case_delivered]
+en = "What was delivered, by the strongest inferred capabilities (an inference from commits, paths and headings, not a measured outcome):"
+cs = "Co bylo dodáno, podle nejsilnějších odvozených schopností (odvození z commitů, cest a nadpisů, ne změřený výsledek):"
+[derive_case_more]
+en = "Further inferred capabilities: {list}."
+cs = "Další odvozené schopnosti: {list}."
+[derive_case_scale]
+en = "Scale (measured, each figure rounded down to a bucket): {commits}+ commits by me in {repositories} repositories, a team of {team}+ people, {files}+ files and {tests}+ tests."
+cs = "Rozsah (změřeno, každé číslo zaokrouhleno dolů na stupeň): {commits}+ mých commitů v {repositories} repozitářích, tým {team}+ lidí, {files}+ souborů a {tests}+ testů."
+[derive_case_tech]
+en = "Technologies detected in the sources (file types, dependency manifests, marker paths): {list}."
+cs = "Technologie zjištěné ve zdrojích (typy souborů, manifesty závislostí, značkové cesty): {list}."
+[derive_case_services]
+en = "The services whose skills this case covers best: {list}."
+cs = "Služby, jejichž dovednosti tento případ pokrývá nejvíc: {list}."
+[derive_case_public]
+en = "Public work that shows the same skills: {list}."
+cs = "Veřejná práce, která dokládá stejné dovednosti: {list}."
+[derive_case_limits]
+en = "Limits: the capabilities are an inference, a signal of the work's scope rather than its business outcome; the results stay with the client and are not published. How the inference works is described with the [client work on the landing page]({landing})."
+cs = "Meze: schopnosti jsou odvozené, jde o signál rozsahu práce, ne o její obchodní výsledek; výsledky zůstávají u klienta a nezveřejňují se. Jak odvození funguje, popisuje [práce pro klienty na úvodní stránce]({landing})."
+[derive_cases_intro]
+en = "Anonymised engagements with measurable sources ({n}): {list}."
+cs = "Anonymizované zakázky s měřitelnými zdroji ({n}): {list}."
+[derive_cases_rest]
+en = "Engagements without git sources to measure ({n}) are counted on the landing page but have no case study: there is nothing on them that could be shown honestly."
+cs = "Zakázky bez zdrojů v gitu, které by šlo změřit ({n}), jsou započítané na úvodní stránce, ale nemají případovou studii: není z čeho poctivě nic ukázat."
+[derive_cases_flagship]
+en = "The public flagship has its own case study with its sources open: {link}."
+cs = "Veřejná vlajková loď má vlastní případovou studii s otevřenými zdroji: {link}."
+[derive_cases_how]
+en = "How to read these pages: the sector and the roles are my declarations; the period and the scale are measured from the [[commit|commits]] and rounded; the capabilities are inferred and each links to its skill page, the technologies to the glossary."
+cs = "Jak tyto stránky číst: obor a role uvádím já; období a rozsah jsou změřené z [[commit|commitů]] a zaokrouhlené; schopnosti jsou odvozené a každá vede na stránku dovednosti, technologie do slovníku."
+[derive_case_service_item]
+en = "{link} ({hit} of its {of} skills)"
+cs = "{link} ({hit} z jejích {of} dovedností)"
+[derive_case_scale_untested]
+en = "Scale (measured, each figure rounded down to a bucket): {commits}+ commits by me in {repositories} repositories, a team of {team}+ people and {files}+ files."
+cs = "Rozsah (změřeno, každé číslo zaokrouhleno dolů na stupeň): {commits}+ mých commitů v {repositories} repozitářích, tým {team}+ lidí a {files}+ souborů."

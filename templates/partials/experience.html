@@ -149,6 +149,10 @@
             <li>{{ trans(key=pair[1] ~ f, lang=lang) | replace(from="{n}", to=nl) }}</li>
             {%- endif %}{% endfor %}
           </ul>
+          {#- Its case study (scripts/build-cases.mjs), when it has measurable sources. #}
+          {%- if e.sector and e.capabilities | length > 0 %}
+          <a href="{{ get_url(path='@/cases/' ~ e.sector ~ '.md', lang=lang) }}" class="mt-2 inline-flex min-h-6 items-center text-sm {{ xlink }}">{{ trans(key="cases_open", lang=lang) }}{{ <icon name="arrow-right" class="ms-1 h-4 w-4" /> }}</a>
+          {%- endif %}
           {#- What was solved: each role's description, then the capabilities named in full: the strongest
               of each domain first (rules' domain_order), then by score, [display] solved in all; each
               leads to its capability card. The rest stay as chips. #}
@@ -194,6 +198,7 @@
   <p class="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm">
     {%- if xp_roles is defined and xp_roles %}<a href="#roles" class="{{ xlink }}">{{ trans(key="xp_see_roles", lang=lang) }}</a>{% endif %}
     <a href="#skills" class="{{ xlink }}">{{ trans(key="xp_see_skills", lang=lang) }}</a>
+    <a href="{{ get_url(path='@/cases/_index.md', lang=lang) }}" class="{{ xlink }}">{{ trans(key="cases_all", lang=lang) }}</a>
   </p>
   {%- endif %}
   <p class="mt-6 border-t border-gray-200 pt-3 text-xs text-gray-600 dark:border-gray-700 dark:text-gray-400">

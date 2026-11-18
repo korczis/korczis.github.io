@@ -3,7 +3,7 @@
 title = "Digitální forenzní analýza"
 description = "Získávání a zkoumání digitálních důkazů tak, aby to, co ukazují, i způsob, jak byly získány, obstály při zpochybnění."
 template = "term.html"
-weight = 80
+weight = 81
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

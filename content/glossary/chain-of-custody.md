@@ -3,7 +3,7 @@
 title = "Chain of custody"
 description = "The record of who acquired a piece of evidence, when and how, and every hand it passed through, so its integrity can be proven."
 template = "term.html"
-weight = 73
+weight = 74
 
 [taxonomies]
 tags = ["Glossary", "Concept"]

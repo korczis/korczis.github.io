@@ -3,7 +3,7 @@
 title = "Knowledge graph"
 description = "Knowledge stored as entities and the relations between them, so a question can follow links (who owns what, who sits where) instead of joining tables."
 template = "term.html"
-weight = 91
+weight = 92
 
 [taxonomies]
 tags = ["Glossary", "Concept"]
@@ -16,7 +16,7 @@ kind = "concept"
 definition = "Knowledge stored as entities and the relations between them, so a question can follow links (who owns what, who sits where) instead of joining tables."
 aliases = []
 reference = { title = "Knowledge graph (Wikipedia)", url = "https://en.wikipedia.org/wiki/Knowledge_graph" }
-pages = ["projects/security.md", "services/_index.md", "services/digital-investigation.md", "services/interactive-data-products.md", "skills/_index.md", "skills/knowledge-graph.md", "work/magic.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/peacemaker.md", "work/ratnet.md", "work/zlown.md"]
+pages = ["cases/_index.md", "cases/real-estate.md", "projects/security.md", "services/_index.md", "services/digital-investigation.md", "services/interactive-data-products.md", "skills/_index.md", "skills/knowledge-graph.md", "work/magic.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/peacemaker.md", "work/ratnet.md", "work/zlown.md"]
 related = ["data-integration", "decision-support-system", "osint", "record-linkage", "audit-trail", "due-diligence", "information-extraction", "insolvency"]
 og_title = "Knowledge graph: glossary"
 og_image = "og/glossary-knowledge-graph.png"

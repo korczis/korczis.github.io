@@ -3,7 +3,7 @@
 title = "Commit"
 description = "Jedna zaznamenaná změna v repozitáři s autorem a časem; podle posledního commitu se tady datuje aktivita projektu."
 template = "term.html"
-weight = 75
+weight = 76
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

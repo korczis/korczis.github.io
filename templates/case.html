@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+
+{#- One case study (scripts/build-cases.mjs from an engagement of data/experience.json; ADR 0006,
+    ADR 0010): the measured scale as KPIs, the roles I declare, what was delivered (the strongest
+    inferred capabilities, each to its skill page), the technologies detected in the sources (each to
+    its glossary term), the services whose skills it covers best (with the overlap), the public work
+    with the same skills, and what is not published. Every block says whether it is measured,
+    inferred or declared. Then the derived article. #}
+{% block content %}
+{%- set sfx = "" %}{% if lang is defined and lang != config.default_language %}{% set sfx = "_" ~ lang %}{% endif -%}
+{%- set xl = "" %}{% if lang is defined and lang != config.default_language %}{% set xl = "." ~ lang %}{% endif -%}
+{%- set link = "font-medium text-primary-700 hover:underline dark:text-primary-300" -%}
+{%- set xp = load_data(path="data/experience.json") -%}
+{%- set xr = load_data(path="data/experience-rules.toml") -%}
+{%- set sv = load_data(path="data/services.toml") -%}
+{%- set gl = load_data(path="data/glossary.toml") -%}
+{%- set rc = load_data(path="data/recent.json") -%}
+{%- for x in xp.engagements %}{% if x.id == page.extra.engagement %}{% set_global e = x %}{% endif %}{% endfor -%}
+{%- set solved = xr.display.solved | default(value=4) -%}
+{%- set loc = "en-GB" %}{% if lang == "cs" %}{% set loc = "cs" %}{% endif -%}
+{{ <page_header title={page.title} lead={page.description} parent={trans(key="cases_title", lang=lang)} parent_url={get_url(path="@/cases/_index.md", lang=lang)} lang={lang} icon="briefcase" /> }}
+
+<div class="space-y-4 px-4 pt-6">
+  {#- The measured scale (Flowbite Pro stats), each figure a bucket floor. #}
+  <div class="grid grid-cols-2 gap-4 lg:grid-cols-4" aria-label="{{ trans(key='case_measured', lang=lang) }}">
+    {{ <kpi value={e.months | length ~ ""} label={trans(key="case_kpi_months", lang=lang)} note={trans(key="case_measured", lang=lang)} /> }}
+    {{ <kpi value={e.scale.commits | num_format(locale=loc) ~ "+"} label={trans(key="case_kpi_commits", lang=lang)} note={trans(key="case_measured", lang=lang)} /> }}
+    {{ <kpi value={e.scale.team | num_format(locale=loc) ~ "+"} label={trans(key="case_kpi_team", lang=lang)} note={trans(key="case_measured", lang=lang)} /> }}
+    {%- if e.scale.tests > 0 %}
+    {{ <kpi value={e.scale.tests | num_format(locale=loc) ~ "+"} label={trans(key="case_kpi_tests", lang=lang)} note={trans(key="case_measured", lang=lang)} /> }}
+    {%- else %}
+    {{ <kpi value={e.technologies | length ~ ""} label={trans(key="case_tech", lang=lang)} note={trans(key="case_measured", lang=lang)} /> }}
+    {%- endif %}
+  </div>
+
+  <div class="grid grid-cols-1 gap-4 xl:grid-cols-3">
+    {#- What was delivered: the strongest inferred capabilities as cards, the rest as chips. #}
+    {% <card cls="xl:col-span-2" labelledby="delivered-title"> %}
+      {{ <card_head id="delivered-title" title={trans(key="case_delivered", lang=lang)} lead={trans(key="case_delivered_lead", lang=lang)} eyebrow={trans(key="case_inferred", lang=lang)} /> }}
+      <ul class="grid grid-cols-1 gap-3 md:grid-cols-2">
+        {%- for c in e.capabilities %}{% if loop.index <= solved %}{% set cap = xr.capabilities[c.key] %}
+        <li class="flex"><a href="{{ get_url(path='@/skills/' ~ c.key ~ '.md', lang=lang) }}" class="group flex w-full flex-col rounded-lg border border-gray-200 p-4 hover:border-primary-300 hover:bg-primary-50 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-primary-800">
+          <span class="font-semibold text-gray-900 group-hover:text-primary-700 dark:text-white dark:group-hover:text-primary-300">{{ cap["name" ~ sfx] }}</span>
+          <span class="mt-1 text-sm text-gray-600 dark:text-gray-400">{{ cap["description" ~ sfx] }}</span>
+          <span class="tabular mt-auto pt-2 text-xs text-gray-600 dark:text-gray-400">{{ trans(key="xp_evidence", lang=lang) | replace(from="{commits}", to=c.evidence.commits | num_format(locale=loc)) | replace(from="{headings}", to=c.evidence.headings | num_format(locale=loc)) | replace(from="{paths}", to=c.evidence.paths | num_format(locale=loc)) }}</span>
+        </a></li>
+        {%- endif %}{% endfor %}
+      </ul>
+      {%- if e.capabilities | length > solved %}
+      <ul class="mt-4 flex flex-wrap gap-2">
+        {%- for c in e.capabilities %}{% if loop.index > solved %}
+        <li>{{ <chip label={xr.capabilities[c.key]["name" ~ sfx]} href={get_url(path="@/skills/" ~ c.key ~ ".md", lang=lang)} size="xs" /> }}</li>
+        {%- endif %}{% endfor %}
+      </ul>
+      {%- endif %}
+    {% </card> %}
+
+    {#- My role, declared, with the period. #}
+    {% <card labelledby="role-title"> %}
+      {{ <card_head id="role-title" title={trans(key="case_role", lang=lang)} eyebrow={trans(key="case_declared", lang=lang)} /> }}
+      <ul class="space-y-3">
+        {%- for r in e.roles %}{% set ro = xr.roles[r] %}
+        <li class="flex items-start gap-2">{{ <icon name="check" class="mt-0.5 h-5 w-5 shrink-0 text-primary-700 dark:text-primary-400" /> }}<span><span class="font-semibold text-gray-900 dark:text-white">{{ ro["name" ~ sfx] }}</span> <span class="block text-sm text-gray-600 dark:text-gray-400">{{ ro["description" ~ sfx] }}</span></span></li>
+        {%- endfor %}
+      </ul>
+      {%- if e.period %}
+      {%- set months_l = trans(key="derive_months", lang=lang) | split(pat=",") %}
+      <p class="tabular mt-4 border-t border-gray-200 pt-4 text-sm text-gray-600 dark:border-gray-700 dark:text-gray-400"><time datetime="{{ e.period.from }}">{{ months_l[(e.period.from | split(pat="-") | last | int) - 1] }} {{ e.period.from | split(pat="-") | first }}</time> – <time datetime="{{ e.period.to }}">{{ months_l[(e.period.to | split(pat="-") | last | int) - 1] }} {{ e.period.to | split(pat="-") | first }}</time> · {{ trans(key="case_measured", lang=lang) }}</p>
+      {%- endif %}
+    {% </card> %}
+  </div>
+
+  <div class="grid grid-cols-1 gap-4 xl:grid-cols-3">
+    {#- The technologies detected in the sources, each to its glossary term. #}
+    {% <card labelledby="tech-title"> %}
+      {{ <card_head id="tech-title" title={trans(key="case_tech", lang=lang)} eyebrow={trans(key="case_measured", lang=lang)} /> }}
+      <ul class="flex flex-wrap gap-2">
+        {%- for name in e.technologies %}
+        {%- set_global th = "" %}{% for gt in gl.terms %}{% if gt.term | lower == name | lower or name in gt.aliases | default(value=[]) %}{% set_global th = get_url(path="@/glossary/" ~ gt.id ~ ".md", lang=lang) %}{% endif %}{% endfor %}
+        <li>{{ <chip label={name} href={th} size="xs" /> }}</li>
+        {%- endfor %}
+      </ul>
+    {% </card> %}
+
+    {#- The services whose skills this case covers best, with the overlap. #}
+    {% <card labelledby="services-title"> %}
+      {{ <card_head id="services-title" title={trans(key="case_services", lang=lang)} action={trans(key="services_all", lang=lang)} href={get_url(path="@/services/_index.md", lang=lang)} /> }}
+      <ul class="space-y-2">
+        {%- for cs_ in page.extra.case_services %}{% for s in sv.services %}{% if s.id == cs_.id %}
+        <li><a href="{{ get_url(path='@/services/' ~ s.id ~ '.md', lang=lang) }}" class="group flex items-start gap-3 rounded-lg border border-gray-200 p-3 hover:border-primary-300 hover:bg-primary-50 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-primary-800">
+          <span class="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-primary-100 text-primary-700 dark:bg-primary-900 dark:text-primary-300">{{ <icon name={s.icon} class="h-4 w-4" /> }}</span>
+          <span class="min-w-0"><span class="font-semibold text-gray-900 group-hover:text-primary-700 dark:text-white dark:group-hover:text-primary-300">{{ s["name" ~ sfx] }}</span>
+            <span class="tabular mt-0.5 block text-xs text-gray-600 dark:text-gray-400">{{ trans(key="derive_case_service_item", lang=lang) | replace(from="{link} ", to="") | replace(from="{hit}", to=cs_.hit ~ "") | replace(from="{of}", to=cs_.of ~ "") }}</span></span>
+        </a></li>
+        {%- endif %}{% endfor %}{% endfor %}
+      </ul>
+    {% </card> %}
+
+    {#- Public work with the same skills, each to its work page. #}
+    {% <card labelledby="public-title"> %}
+      {{ <card_head id="public-title" title={trans(key="case_public", lang=lang)} /> }}
+      <ul class="flex flex-wrap gap-2">
+        {%- for name in page.extra.case_public %}
+        {%- set_global ph = "" %}{% for r in rc.repos %}{% if r.name == name %}{% set_global ph = get_url(path="@/work/" ~ name | slugify ~ ".md", lang=lang) %}{% endif %}{% endfor %}
+        <li>{{ <chip label={name} href={ph} size="xs" /> }}</li>
+        {%- endfor %}
+      </ul>
+    {% </card> %}
+  </div>
+
+  {#- What is not published (ADR 0006). #}
+  <div class="flex items-start gap-3 rounded-lg border border-gray-200 bg-gray-50 p-4 text-sm text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-300" role="note">
+    {{ <icon name="lock" class="mt-0.5 h-5 w-5 shrink-0 text-gray-600 dark:text-gray-400" /> }}
+    <p><span class="font-semibold text-gray-900 dark:text-white">{{ trans(key="case_limits", lang=lang) }}.</span> {{ trans(key="case_limits_text", lang=lang) }}</p>
+  </div>
+
+  {%- if page.lower %}{% set lo = page.lower %}{% else %}{% set lo = {"permalink": "", "title": "", "description": ""} %}{% endif %}
+  {%- if page.higher %}{% set hi = page.higher %}{% else %}{% set hi = {"permalink": "", "title": "", "description": ""} %}{% endif %}
+  {{ <pager lang={lang} label={trans(key="cases_all", lang=lang)} prev_href={lo.permalink} prev_title={lo.title} prev_note={lo.description} next_href={hi.permalink} next_title={hi.title} next_note={hi.description} /> }}
+</div>
+{% endblock content %}

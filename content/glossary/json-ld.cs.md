@@ -3,7 +3,7 @@
 title = "JSON-LD"
 description = "Propojená data ve formátu JSON vložená do stránky, která vyhledávačům a strojům říkají, o čem stránka je (schema.org)."
 template = "term.html"
-weight = 90
+weight = 91
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

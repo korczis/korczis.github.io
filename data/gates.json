@@ -309,6 +309,23 @@
       ]
     },
     {
+      "id": "cases",
+      "name": "Case study pages are current",
+      "rule": "project.cases-derived",
+      "rule_file": ".ai/repo/rules/project/cases-derived.v1.md",
+      "ci": true,
+      "where": [
+        {
+          "kind": "ci",
+          "file": ".github/workflows/ci.yml"
+        },
+        {
+          "kind": "prepush",
+          "file": ".githooks/pre-push"
+        }
+      ]
+    },
+    {
       "id": "glossary",
       "name": "Glossary pages are current",
       "rule": "project.pages-are-articles",
