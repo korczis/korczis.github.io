@@ -129,3 +129,9 @@ cs = "{link} ({hit} z jejích {of} dovedností)"
 [derive_case_scale_untested]
 en = "Scale (measured, each figure rounded down to a bucket): {commits}+ commits by me in {repositories} repositories, a team of {team}+ people and {files}+ files."
 cs = "Rozsah (změřeno, každé číslo zaokrouhleno dolů na stupeň): {commits}+ mých commitů v {repositories} repozitářích, tým {team}+ lidí a {files}+ souborů."
+[about_cases_title]
+en = "What I did for clients"
+cs = "Co jsem dělal pro klienty"
+[about_cases_lead]
+en = "Anonymised case studies with their measured scale, and the services they feed."
+cs = "Anonymizované případové studie se změřeným rozsahem a služby, na které navazují."
