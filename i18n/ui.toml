@@ -161,3 +161,7 @@ cs = "%-d.\u00a0%-m."
 [fmt_month_year]
 en = "%B %Y"
 cs = "%B %Y"
+
+[fmt_month_short]
+en = "%b %Y"
+cs = "%b %Y"
