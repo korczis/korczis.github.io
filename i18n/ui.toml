@@ -16,8 +16,8 @@ cs = "Odkud pochází každé číslo na webu"
 
 # The home hero: positioning in words (no client or person names, no number that is not measured).
 [hero_title]
-en = "Due diligence, M&amp;A and AI engineering, on evidence."
-cs = "Due diligence, M&amp;A a AI inženýrství postavené na důkazech."
+en = "Due diligence and AI systems whose conclusions you can check."
+cs = "Due diligence a AI systémy, jejichž závěry lze ověřit."
 
 [hero_pitch]
 en = "I help investors and deal teams see what a company really is: open-source intelligence, data analysis and AI agents that have to prove every finding."
@@ -139,3 +139,25 @@ cs = "Sbalit postranní panel"
 [sidebar_expand]
 en = "Expand the sidebar"
 cs = "Rozbalit postranní panel"
+
+# Date formats per language (Zola's date filter, chrono): English writes the month, Czech the
+# numeric day and month (17. 11. 2026) and the month name only with the year (listopad 2026).
+[date_locale]
+en = "en_GB"
+cs = "cs_CZ"
+
+[fmt_date_long]
+en = "%-d %B %Y"
+cs = "%-d.\u00a0%-m.\u00a0%Y"
+
+[fmt_date_short]
+en = "%-d %b %Y"
+cs = "%-d.\u00a0%-m.\u00a0%Y"
+
+[fmt_day]
+en = "%-d %b"
+cs = "%-d.\u00a0%-m."
+
+[fmt_month_year]
+en = "%B %Y"
+cs = "%B %Y"

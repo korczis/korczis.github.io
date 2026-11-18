@@ -12,7 +12,7 @@
 {%- set link = "font-medium text-primary-700 hover:underline dark:text-primary-400" -%}
 {%- set since = gh.profile.created_at | date(format="%Y") -%}
 {%- set years = (now() | date(format="%Y") | int) - (since | int) -%}
-{%- set as_of = ix.generated_at | date(format="%-d %B %Y") -%}
+{%- set as_of = ix.generated_at | date(format=trans(key="fmt_date_long", lang=lang), locale=trans(key="date_locale", lang=lang)) -%}
 {{ <page_header title={page.title} lead={page.description} lang={lang} /> }}
 
 <div class="space-y-4 px-4 pb-2 pt-6">
@@ -36,7 +36,7 @@
         </div>
       </div>
       <dl class="tabular space-y-3 text-sm">
-        <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="on_github_since", lang=lang) | safe }}</dt><dd><a class="{{ link }}" href="https://github.com/{{ gh.profile.login }}">{{ gh.profile.created_at | date(format="%B %Y") }}</a></dd></div>
+        <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="on_github_since", lang=lang) | safe }}</dt><dd><a class="{{ link }}" href="https://github.com/{{ gh.profile.login }}">{{ gh.profile.created_at | date(format=trans(key="fmt_month_year", lang=lang), locale=trans(key="date_locale", lang=lang)) }}</a></dd></div>
         <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="original_public_repositories", lang=lang) | safe }}</dt><dd><a class="{{ link }}" href="{{ base }}repositories/">{{ ix.counts.own }}</a></dd></div>
         <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="contributions_12_months", lang=lang) | safe }}</dt><dd class="font-semibold text-gray-900 dark:text-white">{{ gh.contributions.total | num_format }}</dd></div>
         <div class="flex justify-between gap-4"><dt class="text-gray-600 dark:text-gray-400">{{ trans(key="most_used_language", lang=lang) | safe }}</dt><dd class="font-semibold text-gray-900 dark:text-white">{{ ix.languages[0].name }} ({{ ix.languages[0].repos }})</dd></div>
@@ -178,7 +178,7 @@
   {% <card labelledby="sources-title" attrs="data-print-links"> %}
     {{ <card_head id="sources-title" title={trans(key="sources", lang=lang)} /> }}
     <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
-      <li>{{ <icon name="check" class="mr-1.5 inline h-4 w-4 text-primary-700 dark:text-primary-400" /> }}{{ trans(key="profile_contributions_and_languages", lang=lang) | safe }} <a class="{{ link }}" href="https://github.com/{{ gh.profile.login }}">{{ trans(key="github_api", lang=lang) | safe }}</a>, {{ gh.generated_at | date(format="%-d %B %Y") }}.</li>
+      <li>{{ <icon name="check" class="mr-1.5 inline h-4 w-4 text-primary-700 dark:text-primary-400" /> }}{{ trans(key="profile_contributions_and_languages", lang=lang) | safe }} <a class="{{ link }}" href="https://github.com/{{ gh.profile.login }}">{{ trans(key="github_api", lang=lang) | safe }}</a>, {{ gh.generated_at | date(format=trans(key="fmt_date_long", lang=lang), locale=trans(key="date_locale", lang=lang)) }}.</li>
       <li>{{ <icon name="check" class="mr-1.5 inline h-4 w-4 text-primary-700 dark:text-primary-400" /> }}{{ trans(key="repositories_and_authorship_github_and", lang=lang) | safe }} <a class="{{ link }}" href="https://gitlab.com/{{ config.extra.gitlab }}">GitLab</a> {{ trans(key="apis_through", lang=lang) | safe }} <code class="font-mono">gh</code> {{ trans(key="and", lang=lang) | safe }} <code class="font-mono">glab</code>, {{ as_of }}; {{ ix.rule }}.</li>
       <li>{{ <icon name="check" class="mr-1.5 inline h-4 w-4 text-primary-700 dark:text-primary-400" /> }}{{ trans(key="majordomus_release", lang=lang) | safe }} <a class="{{ link }}" href="{{ config.extra.majordomus_build }}">majordomus.dev/build.json</a>, v{{ gh.majordomus.version }}.</li>
       <li>{{ <icon name="check" class="mr-1.5 inline h-4 w-4 text-primary-700 dark:text-primary-400" /> }}{{ trans(key="method_and_every_derivation", lang=lang) | safe }} <a class="{{ link }}" href="{{ base }}stack/#data">{{ trans(key="stack_data", lang=lang) | safe }}</a> {{ trans(key="and_the", lang=lang) | safe }} <a class="{{ link }}" href="{{ config.extra.repo_url }}">{{ trans(key="source_of_this_site", lang=lang) | safe }}</a>.</li>
