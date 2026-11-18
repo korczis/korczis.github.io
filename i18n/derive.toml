@@ -62,50 +62,52 @@ cs = "*Jak kategorie vznikají:* nikdo je ručně nepřiřazuje. Každé klíčo
 # Work pages (scripts/build-work.mjs)
 
 [derive_work_title]
-en = "Recent work"
-cs = "Nedávná práce"
+en = "Work"
+cs = "Práce"
 
 [derive_work_list_description__one]
-en = "Every project with a commit in the last {max} months, by period ({periods}): {n} repository on GitHub and GitLab, with its own page."
-cs = "Každý projekt s commitem za posledních {max} měsíců, podle období ({periods}): {n} repozitář na GitHubu a GitLabu, s vlastní stránkou."
+en = "All {n} original repository on GitHub and GitLab since {since}, each with its own page: {recent} active in the last {max} months, the rest as dated archive."
+cs = "{n} vlastní repozitář z GitHubu a GitLabu od roku {since}, každý s vlastní stránkou: {recent} aktivních za posledních {max} měsíců, zbytek v datovaném archivu."
 
 [derive_work_list_description__few]
-en = "Every project with a commit in the last {max} months, by period ({periods}): {n} repositories on GitHub and GitLab, each with its own page."
-cs = "Každý projekt s commitem za posledních {max} měsíců, podle období ({periods}): {n} repozitáře na GitHubu a GitLabu, každý s vlastní stránkou."
+en = "All {n} original repositories on GitHub and GitLab since {since}, each with its own page: {recent} active in the last {max} months, the rest as dated archive."
+cs = "{n} vlastní repozitáře z GitHubu a GitLabu od roku {since}, každý s vlastní stránkou: {recent} aktivních za posledních {max} měsíců, zbytek v datovaném archivu."
 
 [derive_work_list_description__other]
-en = "Every project with a commit in the last {max} months, by period ({periods}): {n} repositories on GitHub and GitLab, each with its own page."
-cs = "Každý projekt s commitem za posledních {max} měsíců, podle období ({periods}): {n} repozitářů na GitHubu a GitLabu, každý s vlastní stránkou."
+en = "All {n} original repositories on GitHub and GitLab since {since}, each with its own page: {recent} active in the last {max} months, the rest as dated archive."
+cs = "{n} vlastních repozitářů z GitHubu a GitLabu od roku {since}, každý s vlastní stránkou: {recent} aktivních za posledních {max} měsíců, zbytek v datovaném archivu."
 
 [derive_work_list_og__one]
-en = "{n} project, {span}."
-cs = "{n} projekt {span}."
+en = "{n} project since {since}, {recent} active {span}."
+cs = "{n} projekt od roku {since}, {recent} aktivních {span}."
 
 [derive_work_list_og__few]
-en = "{n} projects, {span}."
-cs = "{n} projekty {span}."
+en = "{n} projects since {since}, {recent} active {span}."
+cs = "{n} projekty od roku {since}, {recent} aktivních {span}."
 
 [derive_work_list_og__other]
-en = "{n} projects, {span}."
-cs = "{n} projektů {span}."
+en = "{n} projects since {since}, {recent} active {span}."
+cs = "{n} projektů od roku {since}, {recent} aktivních {span}."
 
 [derive_work_list_keyword]
-en = "{author} recent work"
-cs = "{author}: nedávná práce"
+en = "{author} projects"
+cs = "{author}: projekty"
 
 [derive_work_list_article]
 en = """
-This page answers the question of what is being worked on now. A project belongs here by the date of its last [[commit|commit]] on the default branch, never by when its host last saw activity, and falls into one of the periods of {periods} months.
 
-Every project has its own page with a derived article, measured facts and the concepts it builds on. [[fork|Forks]] and [[mirror|mirrors]] are left out: this is the owner's own work only."""
+This page holds every original project, each with its own page. A project is recent by the date of its last [[commit|commit]] on the default branch, never by when its host last saw activity, and falls into one of the periods of {periods} months; a project whose last commit is older than {max} months is archive, dated by its first and last year, never hidden.
+
+Every project has its own page with a derived article, measured facts, its source on each forge, related work and the concepts it builds on. [[fork|Forks]] and [[mirror|mirrors]] are left out: this is the owner's own work only."""
 cs = """
-Tato stránka odpovídá na otázku, na čem se pracuje teď. Projekt sem patří podle data svého posledního [[commit|commitu]] ve výchozí větvi, ne podle toho, kdy na hostingu naposledy něco proběhlo, a řadí se do jednoho z období {periods} měsíců.
 
-Každý projekt má vlastní stránku s odvozeným článkem, změřenými fakty a pojmy, na kterých stojí. [[fork|Forky]] a [[mirror|mirrory]] tu nejsou: jde jen o vlastní práci."""
+Tato stránka drží každý vlastní projekt, každý s vlastní stránkou. Projekt je nedávný podle data svého posledního [[commit|commitu]] ve výchozí větvi, ne podle toho, kdy na hostingu naposledy něco proběhlo, a řadí se do jednoho z období {periods} měsíců; projekt, jehož poslední commit je starší než {max} měsíců, patří do archivu, datovaný prvním a posledním rokem, nikdy skrytý.
+
+Každý projekt má vlastní stránku s odvozeným článkem, změřenými fakty, zdrojem na každém hostingu, související prací a pojmy, na kterých stojí. [[fork|Forky]] a [[mirror|mirrory]] tu nejsou: jde jen o vlastní práci."""
 
 [derive_work_description_fallback]
-en = "{text}. Active in the last {period} months; {category}."
-cs = "{text}. Aktivní za posledních {period} měsíců; {category}."
+en = "{text}. Active in the last {period} months; {lower}."
+cs = "{text}. Aktivní za posledních {period} měsíců; {lower}."
 
 [derive_work_description_pad]
 en = "A project by {author}, active in the last {period} months."
@@ -166,6 +168,114 @@ cs = "posledních {n} commitů"
 [derive_work_how]
 en = "*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws {latest} as a heartbeat, one lane per commit type (feat, fix, docs…){refresh}. The concepts below are explained in the [glossary]({glossary})."
 cs = "*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje {latest} jako tep, jeden pruh na typ commitu (feat, fix, docs…){refresh}. Pojmy níže vysvětluje [slovník]({glossary})."
+
+[derive_work_list_seo_title__one]
+en = "Work: {n} project since {since} · {author}"
+cs = "Práce: {n} projekt od roku {since} · {author}"
+
+[derive_work_list_seo_title__few]
+en = "Work: {n} projects since {since} · {author}"
+cs = "Práce: {n} projekty od roku {since} · {author}"
+
+[derive_work_list_seo_title__other]
+en = "Work: {n} projects since {since} · {author}"
+cs = "Práce: {n} projektů od roku {since} · {author}"
+
+[derive_work_description_fallback_archive]
+en = "{text}. Archive, {years}; {lower}."
+cs = "{text}. Archiv, {years}; {lower}."
+
+[derive_work_description_pad_archive]
+en = "An archived project by {author}, {years}."
+cs = "Archivní projekt, autor {author}, {years}."
+
+[derive_work_description_archive]
+en = "{name}: an archived project in {category}{language}, {years}; last commit on {last}."
+cs = "{name}: archivní projekt z kategorie {category}{language}, {years}; poslední commit {last}."
+
+[derive_work_history_archive]
+en = "The [[repository|repository]] was created in {created_month}; its latest [[commit|commit]] is from {last}.{message} With no commit in the last {window} months it is listed as archive: work from {years}, kept for the record and dated as measured."
+cs = "[[repository]] vznikl {created}; poslední [[commit|commit]] je z {last}.{message} Bez commitu za posledních {window} měsíců je veden jako archiv: práce z období {years}, ponechaná pro záznam a datovaná podle měření."
+
+[derive_work_history_unread]
+en = "The [[repository|repository]] was created in {created_month}; its host last saw activity on {last}. Its commits could not be read, so this page shows what the index measured."
+cs = "[[repository]] vznikl {created}; naposledy se na hostingu něco dělo {last}. Jeho commity se nepodařilo přečíst, proto stránka ukazuje, co změřil index."
+
+[derive_work_forges]
+en = "Its source is on {list}."
+cs = "Zdrojový kód: {list}."
+
+[derive_work_related]
+en = "Related work in {category}: {list}."
+cs = "Související práce v kategorii {category}: {list}."
+
+[derive_work_how_facts]
+en = "*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The concepts below are explained in the [glossary]({glossary})."
+cs = "*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Pojmy níže vysvětluje [slovník]({glossary})."
+
+[derive_work_seo_what]
+en = "{category} in {language}"
+cs = "{category}, {language}"
+
+[derive_work_seo_title]
+en = "{name}: {what}, {years} · {author}"
+cs = "{name}: {what}, {years} · {author}"
+
+[derive_work_seo_title_short]
+en = "{name}, {years} · {author}"
+cs = "{name}, {years} · {author}"
+
+[derive_work_og_title]
+en = "{name}: {what}"
+cs = "{name}: {what}"
+
+[derive_work_og_title_archive]
+en = "{name}: {what} ({years})"
+cs = "{name}: {what} ({years})"
+
+[derive_work_og_facts_languages]
+en = "{category} in {list}, {years}, {state}."
+cs = "{category}, {list}, {years}, {state}."
+
+[derive_work_og_facts]
+en = "{category}, {years}, {state}."
+cs = "{category}, {years}, {state}."
+
+[derive_work_og_active]
+en = "active in the last {period} months"
+cs = "aktivní za posledních {period} měsíců"
+
+[derive_work_og_archive]
+en = "archive"
+cs = "archiv"
+
+[derive_work_og_forges]
+en = "Source on {list}."
+cs = "Zdrojový kód: {list}."
+
+[derive_work_og_stars__one]
+en = "{n} star."
+cs = "{n} hvězda."
+
+[derive_work_og_stars__few]
+en = "{n} stars."
+cs = "{n} hvězdy."
+
+[derive_work_og_stars__other]
+en = "{n} stars."
+cs = "{n} hvězd."
+
+[derive_work_og_site]
+en = "Live site."
+cs = "Živý web."
+
+[derive_work_og_supervised]
+en = "Supervised by Majordomus."
+cs = "Pod dohledem Majordomu."
+
+[derive_work_og_by]
+en = "A project by {author}."
+cs = "Projekt, autor {author}."
 
 [derive_work_refresh_live]
 en = ", refreshed live from your browser on GitHub"
@@ -238,3 +348,21 @@ Slovník je společný jazyk celého webu. Každá stránka ve svém [[front-mat
 Každá definice je krátká a srozumitelná a odkazuje na zdroj, kde se dá číst dál: dokumentaci, specifikaci nebo encyklopedii. Pojmy jsou tří druhů: programovací jazyky, technologie a koncepty.
 
 Mapa nahoře kreslí tytéž vazby jako síť: každý pojem je hvězda, větší podle počtu stránek, které ho jmenují, a vlákna vedou k pojmům, které se objevují na stejných stránkách. Takové mapě se říká graf souvýskytu; pojmy, které stojí uprostřed, drží web pohromadě."""
+
+# The pill of the Open Graph cards (scripts/build-og.mjs): a measured fact of the page
+
+[og_pill_site]
+en = "Supervised by Majordomus"
+cs = "Pod dohledem Majordomu"
+
+[og_pill_supervised]
+en = "Supervised by Majordomus"
+cs = "Pod dohledem Majordomu"
+
+[og_pill_active]
+en = "Active in the last {period} months"
+cs = "Aktivní za posledních {period} měsíců"
+
+[og_pill_archive]
+en = "Archive · {years}"
+cs = "Archiv · {years}"

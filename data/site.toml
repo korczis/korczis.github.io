@@ -191,6 +191,13 @@ source = "Counted, never listed: forks, other people's code, the owner's hidden 
 source_cs = "Počítané, nikdy nevypsané: forky, cizí kód, seznam skrytých"
 
 [[stack.data]]
+id = "work_pages"
+label = "Work pages · of them archive"
+label_cs = "Stránky práce · z toho archiv"
+source = "One page per original repository (data/recent.json); archive when the last commit is older than the recent window"
+source_cs = "Jedna stránka na každý vlastní repozitář (data/recent.json); archiv, když je poslední commit starší než nedávné okno"
+
+[[stack.data]]
 id = "recent"
 label = "Projects of the last 48 months"
 label_cs = "Projekty posledních 48 měsíců"

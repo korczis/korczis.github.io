@@ -8,7 +8,7 @@
 //        node scripts/build-site-json.mjs --check   exit 1 if the committed file is stale
 import { readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { CHECK, ROOT, config as siteConfig, contentPages, identity, isDefault, readJson, readToml, report } from './lib/derive.mjs';
+import { CHECK, ROOT, config as siteConfig, contentPages, identity, isDefault, readJson, readToml, report, slug } from './lib/derive.mjs';
 import { cliArgs } from './lib/cli.mjs';
 
 cliArgs({ '--check': true }, { derived: true });
@@ -20,6 +20,7 @@ const index = readJson('data/index.json');
 const me = identity();
 const cv = readToml('data/cv.toml');
 const base = me.base;
+const detail = new Map(readJson('data/recent.json').repos.map((r) => [r.name, r]));
 
 // The public URL of a content file: a translation (x.cs.md) lives under /cs/.
 function urlOf({ rel: file, lang }, fm) {
@@ -74,10 +75,18 @@ const site = {
     name: p.name, repo: me.repoUrl(p.repo), url: `${base}/projects/?project=${p.repo}`,
     site: p.url ?? null, category: p.category, tagline: p.tagline, stack: p.stack,
   })),
-  repositories: index.repos.map((r) => ({
-    name: r.name, description: r.description, language: r.language, category: r.category,
-    github: r.hosts.github ?? null, gitlab: r.hosts.gitlab ?? null, site: r.site, created: r.created_at, active: r.pushed_at,
-  })),
+  // Every original repository with its own page (scripts/build-work.mjs) and its measured dates:
+  // the last commit, and recent (the period of months that holds it) or archive (period null).
+  repositories: index.repos.map((r) => {
+    const d = detail.get(r.name);
+    return {
+      name: r.name, description: r.description, language: r.language, category: r.category,
+      page: `${base}/work/${slug(r.name)}/`,
+      github: r.hosts.github ?? null, gitlab: r.hosts.gitlab ?? null, site: r.site, created: r.created_at, active: r.pushed_at,
+      last_commit: d?.last_commit ?? null, period: d ? d.period : null, archive: d ? d.period === null : null,
+      stars: r.stars, supervised: r.supervised ?? null,
+    };
+  }),
   counts: index.counts,
 };
 

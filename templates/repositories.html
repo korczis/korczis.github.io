@@ -81,6 +81,7 @@
         </tr>
       </thead>
       <tbody x-ref="rows">
+        {%- if lang == config.default_language %}{% set wsalp = "" %}{% else %}{% set wsalp = "." ~ lang %}{% endif %}
         {%- for r in ix.repos %}
         {%- if r.hosts.github is defined %}{% set primary = r.hosts.github %}{% else %}{% set primary = r.hosts.gitlab %}{% endif %}
         <tr data-repo data-name="{{ r.name | lower }}" data-text="{{ r.name | lower }} {% if r.description %}{{ r.description | lower }}{% endif %}"
@@ -89,7 +90,10 @@
           data-host="{% if r.hosts.github is defined %}github{% endif %} {% if r.hosts.gitlab is defined %}gitlab{% endif %}"
           class="border-b border-gray-200 hover:bg-gray-50 dark:border-gray-700 dark:hover:bg-gray-700">
           <th scope="row" class="px-4 py-3 font-medium text-gray-900 dark:text-white">
-            <a href="{% if r.curated %}{{ config.base_url }}{{ lp }}/projects/?project={{ r.name }}{% else %}{{ primary }}{% endif %}" class="hover:underline">{{ r.name }}</a>
+            {#- Every original repository has its work page (scripts/build-work.mjs); get_page fails the
+                build when one is missing, so this link is proven. #}
+            {%- set wp = get_page(path="work/" ~ (r.name | slugify) ~ wsalp ~ ".md") %}
+            <a href="{{ wp.permalink }}" class="hover:underline">{{ r.name }}</a>
             {%- if r.curated %} {{ <badge label={trans(key="featured", lang=lang)} tone="primary" /> }}{% endif %}
             {%- if r.supervised %} {{ <badge label="Majordomus" tone="green" href={config.base_url ~ lp ~ "/glossary/majordomus/"} /> }}{% endif %}
             {%- if r.description %}<p class="max-w-md truncate text-xs font-normal text-gray-600 dark:text-gray-400">{{ r.description }}</p>{% endif %}

@@ -244,10 +244,12 @@
   {% <card labelledby="recent-title"> %}
     {{ <card_head id="recent-title" title={trans(key="recently_active", lang=lang)} action={trans(key="recent_work", lang=lang)} href={base ~ "work/"} /> }}
     <ul class="divide-y divide-gray-200 dark:divide-gray-700">
+      {%- if lang == config.default_language %}{% set wsalp = "" %}{% else %}{% set wsalp = "." ~ lang %}{% endif %}
       {%- for r in ix.repos %}{% if loop.index <= 9 %}
       {%- if r.hosts.github is defined %}{% set u = r.hosts.github %}{% else %}{% set u = r.hosts.gitlab %}{% endif %}
       <li>
-        <a href="{% if r.curated %}{{ base }}projects/?project={{ r.name }}{% else %}{{ u }}{% endif %}" class="group -mx-2 flex items-center justify-between gap-3 rounded-lg px-2 py-2.5 hover:bg-gray-50 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-700">
+        {%- set wp = get_page(path="work/" ~ (r.name | slugify) ~ wsalp ~ ".md") %}
+        <a href="{{ wp.permalink }}" class="group -mx-2 flex items-center justify-between gap-3 rounded-lg px-2 py-2.5 hover:bg-gray-50 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-700">
           <span class="min-w-0">
             <span class="block truncate text-sm font-medium text-gray-900 group-hover:underline dark:text-white">{{ r.name }}</span>
             <span class="block text-xs text-gray-600 dark:text-gray-400">{{ cat.categories[r.category]["name" ~ sfx] }}{% if r.language %} · {{ r.language }}{% endif %}</span>

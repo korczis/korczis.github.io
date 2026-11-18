@@ -96,7 +96,17 @@ const text = lines.join('\n');
 // llms-full.txt: the summary above, then every original repository, grouped by inferred category.
 const index = readJson('data/index.json');
 const recent = readJson('data/recent.json');
+// Every original repository has its page (scripts/build-work.mjs), dated as measured: the first
+// year (creation or the oldest commit read), the last commit, and recent (its period) or archive.
 const workPage = new Map(recent.repos.map((r) => [r.name, `${base}/work/${slug(r.name)}/`]));
+const detail = new Map(recent.repos.map((r) => [r.name, r]));
+const datesOf = (r) => {
+  const d = detail.get(r.name);
+  if (!d) return r.created_at.slice(0, 4);
+  const first = Math.min(...[d.created_at, ...d.commits.map((c) => c.at)].filter(Boolean).map((x) => new Date(x).getUTCFullYear()));
+  const last = new Date(d.last_commit ?? d.pushed_at).getUTCFullYear();
+  return `${first < last ? `${first}–${last}` : last}, ${d.period ? `active within ${d.period} months` : 'archive'}`;
+};
 const full = [text.trimEnd(), '', '## Every original repository', '',
   `> ${index.counts.own} repositories on GitHub and GitLab where the owner wrote at least half of the commits,`,
   `> derived ${index.generated_at}. Forks and mirrors (${index.counts.forks + index.counts.mirrors}) are not listed.`, ''];
@@ -105,8 +115,8 @@ for (const [key, category] of Object.entries(catalogue.categories)) {
   if (!repos.length) continue;
   full.push(`### ${category.name} (${repos.length})`, '');
   for (const r of repos) {
-    const links = [workPage.has(r.name) && `article ${workPage.get(r.name)}`, r.hosts.github && `GitHub ${r.hosts.github}`, r.hosts.gitlab && `GitLab ${r.hosts.gitlab}`, r.site && `site ${r.site}`].filter(Boolean).join('; ');
-    const facts = [r.language, r.created_at.slice(0, 4)].filter(Boolean).join(', ');
+    const links = [workPage.has(r.name) && `page ${workPage.get(r.name)}`, r.hosts.github && `GitHub ${r.hosts.github}`, r.hosts.gitlab && `GitLab ${r.hosts.gitlab}`, r.site && `site ${r.site}`].filter(Boolean).join('; ');
+    const facts = [r.language, datesOf(r), r.stars ? `${r.stars} stars` : null, r.supervised ? 'supervised by Majordomus' : null].filter(Boolean).join(', ');
     full.push(`- ${r.name}${r.description ? `: ${oneLine(r.description)}` : ''} (${facts}). ${links}`);
   }
   full.push('');
