@@ -8,7 +8,9 @@
 //     lastmod), hreflang for every language and x-default, or JSON-LD whose page entity is a
 //     SoftwareSourceCode with a codeRepository for every forge the repository is on, its languages,
 //     its dates and its state (active or archive, as data/recent.json measured it);
-//   - static/llms-full.txt or static/site.json does not name the page.
+//   - it links none of its own tag pages (/tags/<tag>/, its category and languages);
+//   - static/llms-full.txt or static/site.json does not name the page in every language, or
+//     site.json's pages[] gives it no category.
 //
 // usage: npm run build && node scripts/check-work-pages.mjs
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
@@ -24,7 +26,9 @@ const { width: OG_W, height: OG_H } = limits().og;
 const index = readJson('data/index.json');
 const recent = new Map(readJson('data/recent.json').repos.map((r) => [r.name, r]));
 const llms = readFileSync(join(ROOT, 'static/llms-full.txt'), 'utf8');
-const site = new Map(readJson('static/site.json').repositories.map((r) => [r.name, r]));
+const siteJson = readJson('static/site.json');
+const site = new Map(siteJson.repositories.map((r) => [r.name, r]));
+const sitePages = new Map(siteJson.pages.map((p) => [p.url, p]));
 const sitemap = existsSync(join(SITE, 'sitemap.xml')) ? readFileSync(join(SITE, 'sitemap.xml'), 'utf8') : '';
 const findings = [];
 const fail = (where, what) => findings.push(`${where}: ${what}`);
@@ -84,11 +88,24 @@ for (const r of index.repos) {
     const repos = [code.codeRepository].flat();
     for (const u of forges) if (!repos.includes(u)) fail(rel, `JSON-LD codeRepository lacks ${u}`);
     if (!code.dateCreated || !code.dateModified) fail(rel, 'JSON-LD SoftwareSourceCode has no dateCreated or dateModified');
-    if (detail?.languages?.length && !code.programmingLanguage?.length) fail(rel, 'JSON-LD SoftwareSourceCode has no programmingLanguage');
+    if ((detail?.languages?.length || detail?.language) && !code.programmingLanguage?.length) fail(rel, 'JSON-LD SoftwareSourceCode has no programmingLanguage');
+    if (Array.isArray(code.programmingLanguage) && !code.programmingLanguage.length) fail(rel, 'JSON-LD SoftwareSourceCode has an empty programmingLanguage');
+    // Each tag of the page (its category and languages) links its own tag page, not only /tags/.
+    const tagsHere = [...html.matchAll(/<a [^>]*href="([^"]*\/tags\/[^"/]+\/)"/g)].length;
+    if (!tagsHere) fail(rel, 'links no tag page of its own (/tags/<tag>/)');
     const state = t(detail?.period ? 'active' : 'archive', lang);
     if (code.creativeWorkStatus !== state) fail(rel, `JSON-LD creativeWorkStatus is ${code.creativeWorkStatus}, not ${state} as data/recent.json measured`);
   }
-  if (!llms.includes(`${me.base}/work/${s}/`)) fail('static/llms-full.txt', `does not name the page of ${r.name}`);
+  // Every language's page, in llms-full.txt and site.json (repositories[].pages, and pages[] with
+  // the repository's category).
+  for (const lang of LANGS) {
+    const url = `${me.base}/${prefixOf(lang)}work/${s}/`;
+    if (!llms.includes(` ${url}`)) fail('static/llms-full.txt', `does not name the ${lang} page of ${r.name}`);
+    if (site.get(r.name)?.pages?.[lang] !== url) fail('static/site.json', `repositories[] does not name the ${lang} page of ${r.name}`);
+    const entry = sitePages.get(url);
+    if (!entry) fail('static/site.json', `pages[] does not list ${url}`);
+    else if (entry.category !== r.category) fail('static/site.json', `pages[] gives ${url} the category ${entry.category}, not ${r.category}`);
+  }
   if (site.get(r.name)?.page !== `${me.base}/work/${s}/`) fail('static/site.json', `does not name the page of ${r.name}`);
 }
 

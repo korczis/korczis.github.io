@@ -98,7 +98,9 @@ const index = readJson('data/index.json');
 const recent = readJson('data/recent.json');
 // Every original repository has its page (scripts/build-work.mjs), dated as measured: the first
 // year (creation or the oldest commit read), the last commit, and recent (its period) or archive.
-const workPage = new Map(recent.repos.map((r) => [r.name, `${base}/work/${slug(r.name)}/`]));
+// Its page in every language: the default one at the root, every other under /<lang>/.
+const workPages = (name) => languages().map((l) => `${isDefault(l) ? 'page' : `${l} page`} ${base}${isDefault(l) ? '' : `/${l}`}/work/${slug(name)}/`);
+const workPage = new Set(recent.repos.map((r) => r.name));
 const detail = new Map(recent.repos.map((r) => [r.name, r]));
 const datesOf = (r) => {
   const d = detail.get(r.name);
@@ -115,7 +117,7 @@ for (const [key, category] of Object.entries(catalogue.categories)) {
   if (!repos.length) continue;
   full.push(`### ${category.name} (${repos.length})`, '');
   for (const r of repos) {
-    const links = [workPage.has(r.name) && `page ${workPage.get(r.name)}`, r.hosts.github && `GitHub ${r.hosts.github}`, r.hosts.gitlab && `GitLab ${r.hosts.gitlab}`, r.site && `site ${r.site}`].filter(Boolean).join('; ');
+    const links = [...(workPage.has(r.name) ? workPages(r.name) : []), r.hosts.github && `GitHub ${r.hosts.github}`, r.hosts.gitlab && `GitLab ${r.hosts.gitlab}`, r.site && `site ${r.site}`].filter(Boolean).join('; ');
     const facts = [r.language, datesOf(r), r.stars ? `${r.stars} stars` : null, r.supervised ? 'supervised by Majordomus' : null].filter(Boolean).join(', ');
     full.push(`- ${r.name}${r.description ? `: ${oneLine(r.description)}` : ''} (${facts}). ${links}`);
   }

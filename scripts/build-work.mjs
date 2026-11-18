@@ -31,6 +31,8 @@ const me = identity();
 const LIMITS = limits();
 const periods = recent.periods.map((p) => p.months);
 const refresh = cadence();
+// How often the data is measured, in words: "every 6 hours" (from .github/workflows/refresh.yml).
+const cadenceIn = (lang) => t(`derive_cadence_${refresh.unit}`, lang, { n: refresh.n });
 
 // The one set: every original repository of the index has its page, and no page has no repository.
 {
@@ -61,7 +63,6 @@ const archived = (r) => r.period === null;
 // differ between this Mac and CI, and a generated file must come out byte-identical everywhere).
 const months = (lang) => t('derive_months', lang).split(',');
 const date = (iso, lang) => { const d = new Date(iso); return t('derive_date', lang, { day: d.getUTCDate(), month: months(lang)[d.getUTCMonth()], year: d.getUTCFullYear() }); };
-const monthYear = (iso, lang) => { const d = new Date(iso); return `${months(lang)[d.getUTCMonth()]} ${d.getUTCFullYear()}`; };
 const share = (n, lang) => new Intl.NumberFormat(lang, { maximumFractionDigits: 1, useGrouping: false }).format(n);
 
 // The measured dates of a repository: its last commit (the host's last push when no commit could be
@@ -72,6 +73,9 @@ const firstYear = (r) => Math.min(...[r.created_at, ...r.commits.map((c) => c.at
 const lastYear = (r) => new Date(lastAt(r)).getUTCFullYear();
 const years = (r) => (firstYear(r) >= lastYear(r) ? String(lastYear(r)) : `${firstYear(r)}–${lastYear(r)}`);
 const mainLanguage = (r) => r.languages[0]?.name ?? r.language ?? null;
+// The languages of a repository: the measured breakdown by bytes, else the index's primary
+// language alone (share unknown: a forge that reported no breakdown still named it).
+const langsOf = (r) => (r.languages.length ? r.languages : r.language ? [{ name: r.language, share: null }] : []);
 
 // Which language a text a repository wrote itself is in: Czech when its letters carry Czech
 // diacritics (ě š č ř ž ů ...), the default language otherwise. Its own words are shown only on the
@@ -82,12 +86,18 @@ function textLanguage(text) {
   const letters = (text.match(/\p{L}/gu) ?? []).length;
   return letters && (text.match(CZECH) ?? []).length / letters > 0.02 ? 'cs' : languages()[0];
 }
-const ownWords = (r, lang) => [local(curatedOf(r), 'tagline', lang), ...[r.description, r.readme].filter((x) => x && textLanguage(x) === lang)]
+// The README excerpt counts only when it is the repository's own: one that several repositories
+// share verbatim (readme_shared, measured by scripts/fetch-recent.mjs) is a generator's or a
+// template's text ("Now you can visit localhost:4000 from your browser."), never a description.
+// The repository's own description comes before its README, however short.
+const ownWords = (r, lang) => [local(curatedOf(r), 'tagline', lang), ...[r.description, r.readme_shared ? null : r.readme].filter((x) => x && textLanguage(x) === lang)]
   .filter(Boolean).map((x) => x.replace(/\s+/g, ' ').trim());
 
 // A description within the schema's limits: the repository's own words in this language (curated
-// tagline, description, else README), else a sentence derived from the data (category, language,
-// years, last commit).
+// tagline, else description, else README), whole when long enough and its own, else within a
+// sentence that adds its state and category (and its name, when other repositories use the same
+// words: description_shared), else a sentence derived from the data (category, language, years,
+// last commit). Every description is unique (check-seo).
 function describe(r, lang) {
   const { min, max } = LIMITS.description;
   const curated = curatedOf(r);
@@ -103,8 +113,11 @@ function describe(r, lang) {
     last: date(lastAt(r), lang),
   };
   const kind = archived(r) ? '_archive' : '';
-  const text = words.find((x) => x.length >= min)
-    ?? (words.length ? t(`derive_work_description_fallback${kind}`, lang, vars) : t(`derive_work_description${kind}`, lang, vars));
+  const own = words[0];
+  const shared = own && own === r.description?.replace(/\s+/g, ' ').trim() && r.description_shared;
+  if (shared) vars.text = t('derive_work_named', lang, { name, text: vars.text });
+  const text = own && own.length >= min && !shared ? own
+    : own ? t(`derive_work_description_fallback${kind}`, lang, vars) : t(`derive_work_description${kind}`, lang, vars);
   return clip(text, max, { min, pad: t(`derive_work_description_pad${kind}`, lang, vars) });
 }
 
@@ -156,11 +169,11 @@ function ogTitle(r, lang) {
 // state, forges, stars, live site, supervision).
 function ogDescription(r, lang) {
   const { min, max } = LIMITS.description;
-  const langs = r.languages.slice(0, 3).map((l) => l.name);
+  const langs = langsOf(r).slice(0, 3).map((l) => l.name);
   const forges = [r.hosts.github && 'GitHub', r.hosts.gitlab && 'GitLab'].filter(Boolean);
   const facts = [
     t(langs.length ? 'derive_work_og_facts_languages' : 'derive_work_og_facts', lang, {
-      category: categoryName(r, lang), list: listing(langs, lang), years: years(r),
+      name: curatedOf(r)?.name ?? r.name, category: categoryName(r, lang), list: listing(langs, lang), years: years(r),
       state: archived(r) ? t('derive_work_og_archive', lang) : t('derive_work_og_active', lang, { period: r.period }),
     }),
     t('derive_work_og_forges', lang, { list: listing(forges, lang) }),
@@ -175,10 +188,10 @@ function ogDescription(r, lang) {
 // then by time, the name breaking ties; derived, never chosen.
 const RELATED = 4;
 function related(r) {
-  const mine = new Set(r.languages.map((l) => l.name));
+  const mine = new Set(langsOf(r).map((l) => l.name));
   const at = Date.parse(lastAt(r));
   return recent.repos.filter((o) => o.name !== r.name && o.category === r.category)
-    .map((o) => ({ o, shared: o.languages.filter((l) => mine.has(l.name)).length, gap: Math.abs(Date.parse(lastAt(o)) - at) }))
+    .map((o) => ({ o, shared: langsOf(o).filter((l) => mine.has(l.name)).length, gap: Math.abs(Date.parse(lastAt(o)) - at) }))
     .sort((a, b) => b.shared - a.shared || a.gap - b.gap || a.o.name.localeCompare(b.o.name))
     .slice(0, RELATED).map((x) => x.o);
 }
@@ -190,10 +203,10 @@ function related(r) {
 function article(r, curated, lang) {
   const title = `**${mdEscape(curated?.name ?? r.name)}**`;
   const category = `[${categoryName(r, lang)}](@/projects/${r.category}${suffix(lang)}.md)`;
-  const langs = r.languages.slice(0, 4);
+  const langs = langsOf(r).slice(0, 4);
   const p = [];
   if (langs.length) {
-    const main = `${nameLink(glossary, langs[0].name, lang)} (${share(langs[0].share, lang)} %)`;
+    const main = nameLink(glossary, langs[0].name, lang) + (langs[0].share === null ? '' : ` (${share(langs[0].share, lang)} %)`);
     const rest = listing(langs.slice(1).map((l) => nameLink(glossary, l.name, lang)), lang);
     p.push(t('derive_work_intro_languages', lang, { title, category, main, rest: rest ? t('derive_work_intro_rest', lang, { list: rest }) : '' }));
   } else {
@@ -202,7 +215,7 @@ function article(r, curated, lang) {
   const message = r.last_message ? t('derive_work_message', lang, { message: mdEscape(r.last_message) }) : '';
   const history = r.last_commit ? (archived(r) ? 'derive_work_history_archive' : 'derive_work_history') : 'derive_work_history_unread';
   p.push(tl(glossary, history, lang, {
-    created: date(r.created_at, lang), created_month: monthYear(r.created_at, lang), last: date(lastAt(r), lang), message,
+    created: date(r.created_at, lang), last: date(lastAt(r), lang), message,
     period: r.period, years: years(r), window: periods.at(-1),
   }));
   const stack = (curated?.stack ?? []).filter((n) => glossary.byName.has(n.toLowerCase()) && !langs.some((l) => l.name === n));
@@ -219,9 +232,10 @@ function article(r, curated, lang) {
     }));
   }
   p.push(t(r.commits.length ? 'derive_work_how' : 'derive_work_how_facts', lang, {
+    shares: r.languages.length ? t('derive_work_how_shares', lang) : '',
     latest: t('derive_work_latest_commits', lang, { n: r.commits.length }),
     refresh: t(r.hosts.github ? 'derive_work_refresh_live' : 'derive_work_refresh_snapshot', lang, {
-      cadence: t(`derive_cadence_${refresh.unit}`, lang, { n: refresh.n }),
+      cadence: cadenceIn(lang),
     }),
     glossary: `@/glossary/_index${suffix(lang)}.md`,
   }));
@@ -233,14 +247,14 @@ function article(r, curated, lang) {
 // language is no tag (its glossary term and the repositories filter still lead to it).
 const TAGGED = 3;
 const tagSlugs = new Map();
-for (const r of recent.repos) for (const l of r.languages.slice(0, TAGGED)) tagSlugs.set(slug(l.name), new Set([...(tagSlugs.get(slug(l.name)) ?? []), l.name]));
+for (const r of recent.repos) for (const l of langsOf(r).slice(0, TAGGED)) tagSlugs.set(slug(l.name), new Set([...(tagSlugs.get(slug(l.name)) ?? []), l.name]));
 const ambiguous = (name) => (tagSlugs.get(slug(name))?.size ?? 0) > 1;
-const tags = (r, lang) => [...new Set([categoryName(r, lang), ...r.languages.slice(0, TAGGED).map((l) => l.name).filter((n) => !ambiguous(n))])];
+const tags = (r, lang) => [...new Set([categoryName(r, lang), ...langsOf(r).slice(0, TAGGED).map((l) => l.name).filter((n) => !ambiguous(n))])];
 // Keywords: what a search for this project would name, all measured: name, category, languages,
 // topics, years, forges and the author; within the schema's 16.
 function keywords(r, lang) {
   const name = curatedOf(r)?.name ?? r.name;
-  const words = [name, r.name, categoryName(r, lang), ...r.languages.slice(0, TAGGED).map((l) => l.name), ...(r.topics ?? []).slice(0, 6), years(r),
+  const words = [name, r.name, categoryName(r, lang), ...langsOf(r).slice(0, TAGGED).map((l) => l.name), ...(r.topics ?? []).slice(0, 6), years(r),
     r.hosts.github && 'GitHub', r.hosts.gitlab && 'GitLab', me.nameIn(lang), me.github];
   const seen = new Set();
   return words.filter((w) => {
@@ -274,7 +288,7 @@ og_image = ${q(`og/${ogPrefix(lang)}work.png`)}
 schema = "collection"
 terms = [${listTerms.map(q).join(', ')}]
 keywords = [${[t('derive_work_list_keyword', lang, { author: me.nameIn(lang) }), me.github, ...recent.repos.slice(0, 8).map((r) => r.name)].map(q).join(', ')}]
-${vizBlock({ kind: 'pulse', source: 'work.all', title: 'viz_work_pulse_title', lead: 'viz_work_pulse_lead' })}+++
+${vizBlock({ kind: 'pulse', source: 'work.all', title: 'viz_work_pulse_title', lead: 'viz_work_pulse_lead', vars: { span: span(lang), cadence: cadenceIn(lang) } })}+++
 ${listArticle(lang)}
 `);
   recent.repos.forEach((r, position) => {
@@ -300,7 +314,10 @@ og_image = ${q(`og/${ogPrefix(lang)}work-${slug(r.name)}.png`)}
 schema = "project"
 keywords = [${keywords(r, lang).map(q).join(', ')}]
 terms = [${termsForRepo(glossary, r, curated).map(q).join(', ')}]
-${r.commits.length ? vizBlock({ kind: 'pulse', source: 'work.commits', title: 'viz_commits_title', lead: r.hosts.github ? 'viz_commits_lead_live' : 'viz_commits_lead_snapshot' }) : ''}+++
+${r.commits.length ? vizBlock({
+    kind: 'pulse', source: 'work.commits', title: 'viz_commits_title', lead: r.hosts.github ? 'viz_commits_lead_live' : 'viz_commits_lead_snapshot',
+    vars: r.hosts.github ? null : { cadence: cadenceIn(lang) },
+  }) : ''}+++
 ${article(r, curated, lang)}
 `);
   });

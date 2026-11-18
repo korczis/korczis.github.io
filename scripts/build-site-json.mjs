@@ -8,7 +8,7 @@
 //        node scripts/build-site-json.mjs --check   exit 1 if the committed file is stale
 import { readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { CHECK, ROOT, config as siteConfig, contentPages, identity, isDefault, readJson, readToml, report, slug } from './lib/derive.mjs';
+import { CHECK, ROOT, config as siteConfig, contentPages, identity, isDefault, languages, readJson, readToml, report, slug } from './lib/derive.mjs';
 import { cliArgs } from './lib/cli.mjs';
 
 cliArgs({ '--check': true }, { derived: true });
@@ -41,7 +41,8 @@ const pages = contentPages().map((page) => {
     title: fm.extra?.seo_title ?? (fm.title ? `${fm.title} · ${config.title}` : config.title),
     description: fm.description,
     type: fm.extra?.schema ?? null,
-    category: fm.extra?.category ?? null,
+    // A category page names its category; a work page is in its repository's.
+    category: fm.extra?.category ?? detail.get(fm.extra?.repo)?.category ?? null,
     og_image: fm.extra?.og_image ? `${base}/${fm.extra.og_image}` : null,
     keywords: fm.extra?.keywords ?? [],
   };
@@ -81,7 +82,9 @@ const site = {
     const d = detail.get(r.name);
     return {
       name: r.name, description: r.description, language: r.language, category: r.category,
+      // Its page in every language (the default language at the root, every other under /<lang>/).
       page: `${base}/work/${slug(r.name)}/`,
+      pages: Object.fromEntries(languages().map((l) => [l, `${base}${isDefault(l) ? '' : `/${l}`}/work/${slug(r.name)}/`])),
       github: r.hosts.github ?? null, gitlab: r.hosts.gitlab ?? null, site: r.site, created: r.created_at, active: r.pushed_at,
       last_commit: d?.last_commit ?? null, period: d ? d.period : null, archive: d ? d.period === null : null,
       stars: r.stars, supervised: r.supervised ?? null,

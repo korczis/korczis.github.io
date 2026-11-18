@@ -65,6 +65,8 @@ function row(r, detail, now) {
     commits: (detail.commits ?? []).map((c) => ({ ...c, message: plain(c.message) })),
     languages: detail.languages ?? [],
     readme: plain(detail.readme),
+    readme_shared: false,
+    description_shared: false,
     topics: r.topics ?? [],
     hosts: r.hosts,
     site: r.site,
@@ -77,8 +79,24 @@ function row(r, detail, now) {
 // Newest last commit first (the host's push date stands in for a repository with no readable
 // commit), the name breaking ties, so the order is the same on every machine.
 const lastOf = (r) => r.last_commit ?? r.pushed_at ?? '';
+// A text several repositories carry verbatim (their README excerpt or description) is shared: in a
+// README that is a generator's or template's paragraph ("Now you can visit localhost:4000 from your
+// browser."), never the repository's own description; a shared description is the owner's but does
+// not tell the repositories apart. Measured over the whole set, every run (--derive too).
+const norm = (x) => (x ?? '').replace(/\s+/g, ' ').trim().toLowerCase();
+function markShared(repos) {
+  const holders = new Map();
+  for (const r of repos) {
+    for (const x of new Set([norm(r.description), norm(r.readme)].filter(Boolean))) holders.set(x, (holders.get(x) ?? 0) + 1);
+  }
+  for (const r of repos) {
+    r.readme_shared = Boolean(r.readme) && holders.get(norm(r.readme)) > 1;
+    r.description_shared = Boolean(r.description) && holders.get(norm(r.description)) > 1;
+  }
+}
 function document(repos, now, asked) {
   repos.sort((a, b) => lastOf(b).localeCompare(lastOf(a)) || a.name.localeCompare(b.name));
+  markShared(repos);
   return {
     schema: 'korczis-hub-recent/v2',
     generated_at: new Date(now).toISOString().replace(/\.\d{3}Z$/, 'Z'),
