@@ -16,8 +16,8 @@ kind = "language"
 definition = "A purely functional language with lazy evaluation and a strong type system; a place to learn to think in types."
 aliases = []
 reference = { title = "haskell.org", url = "https://www.haskell.org/" }
-pages = ["projects/learning.md", "projects/science.md"]
-related = ["cpp", "elixir", "javascript", "repository", "rust", "alpine-js", "apache-echarts", "c"]
+pages = ["projects/learning.md", "projects/science.md", "work/haskell-world.md", "work/skull-haskell.md"]
+related = ["repository", "commit", "cpp", "data-visualisation", "elixir", "javascript", "open-source", "rust"]
 og_title = "Haskell: glossary"
 og_image = "og/glossary-haskell.png"
 keywords = ["Haskell", "Programming language", "Glossary", "Tomas Korcak"]

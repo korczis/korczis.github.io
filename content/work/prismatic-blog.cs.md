@@ -11,10 +11,12 @@ tags = ["Média a umění", "Dockerfile"]
 
 [extra]
 repo = "prismatic-blog"
-og_title = "prismatic-blog: Média a umění"
+seo_title = "prismatic-blog: Média a umění, Dockerfile, 2025 · Tomáš Korčák"
+og_title = "prismatic-blog: Média a umění, Dockerfile"
+og_description = "prismatic-blog: Média a umění, Dockerfile, 2025, aktivní za posledních 24 měsíců. Zdrojový kód: GitHub. Živý web."
 og_image = "og/cs-work-prismatic-blog.png"
 schema = "project"
-keywords = ["prismatic-blog", "Média a umění", "Dockerfile", "Tomáš Korčák"]
+keywords = ["prismatic-blog", "Média a umění", "Dockerfile", "2025", "GitHub", "Tomáš Korčák", "korczis"]
 terms = ["dockerfile", "data-visualisation", "github-pages", "repository", "commit", "open-source"]
 
 [[extra.viz]]
@@ -31,5 +33,9 @@ tone = "night"
 [Repozitář](@/glossary/repository.cs.md) vznikl 14. března 2025; poslední [commit](@/glossary/commit.cs.md) je z 14. března 2025. Zní „Initial commit“. Patří tak mezi projekty aktivní za posledních 24 měsíců.
 
 Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/prismatic-blog/>.
+
+Zdrojový kód: [GitHub](https://github.com/korczis/prismatic-blog).
+
+Související práce v kategorii [Média a umění](@/projects/media.cs.md): [Catharsis as a Service](@/work/catharsis-as-a-service.cs.md) (2026), [Sonic Playground](@/work/sonic-playground.cs.md) (2026), [openttd-prismatic-bridge](@/work/openttd-prismatic-bridge.cs.md) (2026) a [Majordomus reel](@/work/majordomus-reel.cs.md) (2026).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje jeho jediný commit jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

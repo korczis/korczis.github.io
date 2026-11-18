@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Turning documents (scans, PDFs, free text) into structured fields such as names, dates and amounts, with OCR and language or vision models."
 aliases = []
 reference = { title = "Information extraction (Wikipedia)", url = "https://en.wikipedia.org/wiki/Information_extraction" }
-pages = ["projects/security.md", "work/osint-case-ratcliffe-moscow-2026.md"]
-related = ["audit-trail", "data-integration", "decision-support-system", "due-diligence", "html", "insolvency", "knowledge-graph", "market-intelligence"]
+pages = ["projects/security.md", "work/magic.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/peacemaker.md", "work/ratnet.md", "work/zlown.md"]
+related = ["audit-trail", "data-integration", "decision-support-system", "due-diligence", "insolvency", "knowledge-graph", "market-intelligence", "mergers-and-acquisitions"]
 og_title = "Information extraction: glossary"
 og_image = "og/glossary-information-extraction.png"
 keywords = ["Information extraction", "Concept", "Glossary", "Tomas Korcak"]

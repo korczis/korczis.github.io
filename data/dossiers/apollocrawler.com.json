@@ -3,7 +3,7 @@
   "repo": "apollocrawler.com",
   "sources": {
     "github": "https://github.com/korczis/apollocrawler.com",
-    "gitlab": null,
+    "gitlab": "https://gitlab.com/korczis/apollocrawler-com",
     "commit": "41a374cbf4aeccfca2dfa17415a7119b2bb875a9",
     "read_at": "2026-11-18",
     "read": [
@@ -69,7 +69,6 @@
   "related": [
     "microscratch",
     "craftsmen",
-    "apollocrawler-com",
     "apollo-crawler",
     "solr-core-minimal",
     "generator-microscratch"

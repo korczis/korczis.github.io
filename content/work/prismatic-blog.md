@@ -11,10 +11,12 @@ tags = ["Media and art", "Dockerfile"]
 
 [extra]
 repo = "prismatic-blog"
-og_title = "prismatic-blog: Media and art"
+seo_title = "prismatic-blog: Media and art in Dockerfile, 2025 · Tomas Korcak"
+og_title = "prismatic-blog: Book Template is a starter template of [Zola][zola] with [book][book]…"
+og_description = "prismatic-blog: Media and art in Dockerfile, 2025, active in the last 24 months. Source on GitHub. Live site."
 og_image = "og/work-prismatic-blog.png"
 schema = "project"
-keywords = ["prismatic-blog", "Media and art", "Dockerfile", "Tomas Korcak"]
+keywords = ["prismatic-blog", "Media and art", "Dockerfile", "2025", "GitHub", "Tomas Korcak", "korczis"]
 terms = ["dockerfile", "data-visualisation", "github-pages", "repository", "commit", "open-source"]
 
 [[extra.viz]]
@@ -28,8 +30,12 @@ tone = "night"
 +++
 **prismatic-blog** is a project in [Media and art](@/projects/media.md). Its code is written mainly in [Dockerfile](@/glossary/dockerfile.md) (100 %).
 
-The [repository](@/glossary/repository.md) was created in March 2025; its latest [commit](@/glossary/commit.md) is from 14 March 2025. It reads “Initial commit”. That places it among the projects active in the last 24 months.
+The [repository](@/glossary/repository.md) was created on 14 March 2025; its latest [commit](@/glossary/commit.md) is from 14 March 2025. It reads “Initial commit”. That places it among the projects active in the last 24 months.
 
 It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/prismatic-blog/>.
+
+Its source is on [GitHub](https://github.com/korczis/prismatic-blog).
+
+Related work in [Media and art](@/projects/media.md): [Catharsis as a Service](@/work/catharsis-as-a-service.md) (2026), [Sonic Playground](@/work/sonic-playground.md) (2026), [openttd-prismatic-bridge](@/work/openttd-prismatic-bridge.md) (2026) and [Majordomus reel](@/work/majordomus-reel.md) (2026).
 
 *How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws its only commit as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

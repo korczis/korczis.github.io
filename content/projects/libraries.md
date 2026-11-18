@@ -4,18 +4,18 @@ title = "Libraries"
 description = "Reusable building blocks for other programs: clients, bindings, validators, parsers and framework extensions, mostly Elixir and Rust."
 template = "category.html"
 weight = 9
-updated = "2025-12-20T21:29:16Z"
+updated = "2025-12-20T21:25:51Z"
 
 [taxonomies]
-tags = ["Libraries", "gauc-ex", "hydra", "gauc.ex", "easy-plugin-plugins"]
+tags = ["Libraries", "hydra", "gauc.ex", "easy-plugin-plugins", "peg-parser"]
 
 [extra]
 category = "libraries"
-og_title = "Libraries: 7 repositories."
+og_title = "Libraries: 6 repositories."
 og_image = "og/category-libraries.png"
 schema = "collection"
 terms = ["open-source", "elixir", "javascript", "rust", "repository"]
-keywords = ["Libraries", "gauc-ex", "hydra", "gauc.ex", "easy-plugin-plugins", "peg-parser", "babel-plugin-transform-graphql", "Tomas Korcak"]
+keywords = ["Libraries", "hydra", "gauc.ex", "easy-plugin-plugins", "peg-parser", "babel-plugin-transform-graphql", "skype-adapter-client", "Tomas Korcak"]
 
 [[extra.viz]]
 kind = "constellation"
@@ -28,7 +28,7 @@ tone = "night"
 +++
 Reusable building blocks for other programs: clients, bindings, validators, parsers and framework extensions, mostly Elixir and Rust.
 
-The category holds 7 original repositories, written most often in [Elixir](@/glossary/elixir.md), [JavaScript](@/glossary/javascript.md) and [Rust](@/glossary/rust.md).
+The category holds 6 original repositories, written most often in [Elixir](@/glossary/elixir.md), [JavaScript](@/glossary/javascript.md) and [Rust](@/glossary/rust.md).
 
 Key concept: [Open source](@/glossary/open-source.md).
 

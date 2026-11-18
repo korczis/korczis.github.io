@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Turning numbers into pictures people can read at a glance: here spirals, bubbles, streams and graphs, each drawn from measured data."
 aliases = []
 reference = { title = "Data visualization (Wikipedia)", url = "https://en.wikipedia.org/wiki/Data_and_information_visualization" }
-pages = ["_index.md", "projects/_index.md", "projects/media.md", "projects/science.md", "work/algoglyph.md", "work/catharsis-as-a-service.md", "work/distance-calculator.md", "work/majordomus-reel.md", "work/openttd-prismatic-bridge.md", "work/oscilla.md", "work/prismatic-blog.md", "work/sonic-playground.md"]
-related = ["repository", "commit", "open-source", "html", "javascript", "github-pages", "python", "shell"]
+pages = ["_index.md", "projects/_index.md", "projects/media.md", "projects/science.md", "work/algoglyph.md", "work/algorithms-ruby.md", "work/algorithms.md", "work/big-png.md", "work/brepta.md", "work/catharsis-as-a-service.md", "work/distance-calculator.md", "work/dj-schnapps.md", "work/graph-flow.md", "work/haskell-world.md", "work/majordomus-reel.md", "work/maze-js.md", "work/maze-rs.md", "work/maze.md", "work/openttd-prismatic-bridge.md", "work/oscilla.md", "work/prismatic-blog.md", "work/rustas.md", "work/sonic-playground.md", "work/talkie.md"]
+related = ["repository", "commit", "open-source", "html", "javascript", "shell", "css", "elixir"]
 og_title = "Data visualisation: glossary"
 og_image = "og/glossary-data-visualisation.png"
 keywords = ["Data visualisation", "Concept", "Glossary", "Tomas Korcak"]

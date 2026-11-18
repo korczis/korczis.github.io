@@ -321,8 +321,8 @@ en = "projects with a commit this year, newest first; each has its own page."
 cs = "projektů s commitem za poslední rok, od nejnovějšího; každý má vlastní stránku."
 
 [all_recent_work]
-en = "All recent work"
-cs = "Všechna nedávná práce"
+en = "All work"
+cs = "Všechna práce"
 
 [featured]
 en = "featured"
@@ -397,8 +397,8 @@ en = "Recently active"
 cs = "Nedávno aktivní"
 
 [recent_work]
-en = "Recent work"
-cs = "Nedávná práce"
+en = "Work"
+cs = "Práce"
 
 [contributions]
 en = "contributions,"
@@ -895,12 +895,12 @@ en = "{n} active in the last 45 days"
 cs = "{n} aktivních za posledních 45 dní"
 
 [kpi_projects_four_years]
-en = "projects in four years"
-cs = "projektů za čtyři roky"
+en = "original projects, each with a page"
+cs = "vlastních projektů, každý se stránkou"
 
 [kpi_commit_default_branch]
-en = "A commit on the default branch"
-cs = "Commit ve výchozí větvi"
+en = "Every original repository since {since}"
+cs = "Každý vlastní repozitář od roku {since}"
 
 [kpi_within_months]
 en = "last commit within {n} months"
@@ -1027,8 +1027,8 @@ en = "Every original repository on GitHub and GitLab"
 cs = "Každý původní repozitář na GitHubu a GitLabu"
 
 [hint_work]
-en = "Every project with a commit in the last 12, 24 and 48 months"
-cs = "Každý projekt s commitem za posledních 12, 24 a 48 měsíců"
+en = "Every original project, recent by period, older as dated archive"
+cs = "Každý vlastní projekt, nedávné podle období, starší v datovaném archivu"
 
 [hint_stack]
 en = "Tools, practice, pipeline, data"
@@ -1290,8 +1290,8 @@ en = "The latest commits as a heartbeat, one lane per commit type, refreshed liv
 cs = "Poslední commity jako tep, jeden pruh na typ commitu, živě obnovované z GitHubu; každý úder otevře svůj commit."
 
 [viz_commits_lead_snapshot]
-en = "The latest commits as a heartbeat, one lane per commit type, measured on GitLab every six hours; every beat opens its commit."
-cs = "Poslední commity jako tep, jeden pruh na typ commitu, měřené na GitLabu každých šest hodin; každý úder otevře svůj commit."
+en = "The latest commits as a heartbeat, one lane per commit type, measured on GitLab {cadence}; every beat opens its commit."
+cs = "Poslední commity jako tep, jeden pruh na typ commitu, měřené na GitLabu {cadence}; každý úder otevře svůj commit."
 
 [js_n_pages]
 en = "{n} pages"
@@ -1322,12 +1322,12 @@ en = "Every original repository as a star, one arm per category; this category's
 cs = "Každý původní repozitář jako hvězda, jedno rameno na kategorii; rameno této kategorie je nakreslené jako souhvězdí. Tažením otočíte, kliknutím otevřete."
 
 [viz_work_pulse_title]
-en = "Pulse of four years"
-cs = "Puls čtyř let"
+en = "Pulse of {span}"
+cs = "Puls {span}"
 
 [viz_work_pulse_lead]
-en = "The latest commits of every recent project as one heartbeat, a lane per category, measured every six hours; every beat opens its commit."
-cs = "Poslední commity každého nedávného projektu jako jeden tep, pruh na kategorii, měřené každých šest hodin; každý úder otevře svůj commit."
+en = "The latest commits of every recent project as one heartbeat, a lane per category, measured {cadence}; every beat opens its commit."
+cs = "Poslední commity každého nedávného projektu jako jeden tep, pruh na kategorii, měřené {cadence}; každý úder otevře svůj commit."
 
 [viz_skillset_title]
 en = "Skills, measured"
@@ -1548,3 +1548,31 @@ cs = "openapi.json vykreslené ve Swagger UI"
 [hint_iface_site_json]
 en = "The whole site as data: pages, projects, repositories"
 cs = "Celý web jako data: stránky, projekty, repozitáře"
+
+[kpi_archive]
+en = "in the archive"
+cs = "v archivu"
+
+[kpi_archive_note]
+en = "Last commit older than {n} months"
+cs = "Poslední commit starší než {n} měsíců"
+
+[work_archive_title]
+en = "Archive"
+cs = "Archiv"
+
+[work_archive_lead]
+en = "Every project whose last commit is older than {n} months, by the year of its last commit; each keeps its page, dated as measured."
+cs = "Každý projekt, jehož poslední commit je starší než {n} měsíců, podle roku posledního commitu; každý má dál svou stránku, datovanou podle měření."
+
+[work_archive_years]
+en = "Archive · {years}"
+cs = "Archiv · {years}"
+
+[first_year]
+en = "First year"
+cs = "První rok"
+
+[work_status]
+en = "Status"
+cs = "Stav"

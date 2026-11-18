@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Určení rizik, odhad jejich pravděpodobnosti a závažnosti a jejich seřazení, aby práce začala tím nejdůležitějším."
 aliases = []
 reference = { title = "ISO 31000: risk management", url = "https://www.iso.org/iso-31000-risk-management.html" }
-pages = ["projects/security.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md"]
-related = ["audit-trail", "data-integration", "decision-support-system", "due-diligence", "html", "information-extraction", "insolvency", "knowledge-graph"]
+pages = ["projects/security.cs.md", "work/magic.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/peacemaker.cs.md", "work/ratnet.cs.md", "work/zlown.cs.md"]
+related = ["audit-trail", "data-integration", "decision-support-system", "due-diligence", "information-extraction", "insolvency", "knowledge-graph", "market-intelligence"]
 og_title = "Hodnocení rizik: slovník"
 og_image = "og/cs-glossary-risk-assessment.png"
 keywords = ["Hodnocení rizik", "Risk assessment", "Koncept", "Slovník", "Tomáš Korčák"]

@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Hledání záznamů napříč zdroji, které se týkají téže firmy nebo osoby, nejdřív podle společných identifikátorů, pak podle podobných jmen a adres."
 aliases = ["record linkage"]
 reference = { title = "Record linkage (Wikipedia)", url = "https://en.wikipedia.org/wiki/Record_linkage" }
-pages = ["projects/security.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md"]
-related = ["audit-trail", "data-integration", "decision-support-system", "due-diligence", "html", "information-extraction", "insolvency", "knowledge-graph"]
+pages = ["projects/security.cs.md", "work/magic.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/peacemaker.cs.md", "work/ratnet.cs.md", "work/zlown.cs.md"]
+related = ["audit-trail", "data-integration", "decision-support-system", "due-diligence", "information-extraction", "insolvency", "knowledge-graph", "market-intelligence"]
 og_title = "Ztotožnění subjektů: slovník"
 og_image = "og/cs-glossary-record-linkage.png"
 keywords = ["Ztotožnění subjektů", "Entity resolution", "Koncept", "Slovník", "Tomáš Korčák"]

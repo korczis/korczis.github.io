@@ -3,7 +3,7 @@
   "repo": "gauc.ex",
   "sources": {
     "github": "https://github.com/korczis/gauc.ex",
-    "gitlab": null,
+    "gitlab": "https://gitlab.com/korczis/gauc-ex",
     "commit": "3e42c5d655f127e4234b42f19e24c5a5a8151e63",
     "read_at": "2026-11-18",
     "read": [
@@ -64,7 +64,6 @@
     }
   },
   "related": [
-    "gauc-ex",
     "the-scratch",
     "cluster-kubernetes",
     "rustler-test",

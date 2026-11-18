@@ -51,7 +51,9 @@ function publicWork() {
   const catalogue = parse(readFileSync(join(ROOT, 'data/projects.toml'), 'utf8'));
   const curated = new Map((catalogue.projects ?? []).map((p) => [p.repo, p]));
   const out = {};
-  for (const r of recent.repos) {
+  // The recent window only (data/recent.json also holds the archive, period null): experience is
+  // about the capabilities the current work shows.
+  for (const r of recent.repos.filter((x) => x.period !== null)) {
     const p = curated.get(r.name);
     const found = infer(rules, {
       commits: (r.commits ?? []).map((c) => c.message),

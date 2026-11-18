@@ -16,8 +16,8 @@ kind = "language"
 definition = "An object-oriented language on the Java Virtual Machine, long the default of enterprise software."
 aliases = []
 reference = { title = "dev.java", url = "https://dev.java/learn/" }
-pages = ["projects/learning.md"]
-related = ["c", "cpp", "csharp", "elixir", "erlang", "haskell", "javascript", "repository"]
+pages = ["projects/learning.md", "work/magic.md", "work/skull-java.md"]
+related = ["repository", "c", "commit", "elixir", "javascript", "open-source", "rust", "audit-trail"]
 og_title = "Java: glossary"
 og_image = "og/glossary-java.png"
 keywords = ["Java", "Programming language", "Glossary", "Tomas Korcak"]

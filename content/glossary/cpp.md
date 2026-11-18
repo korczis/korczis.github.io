@@ -16,8 +16,8 @@ kind = "language"
 definition = "C with classes, templates and abstractions that cost nothing at run time; used where speed matters."
 aliases = []
 reference = { title = "cppreference.com", url = "https://en.cppreference.com/" }
-pages = ["projects/learning.md", "projects/science.md", "projects/security.md", "projects/tools.md"]
-related = ["repository", "rust", "elixir", "javascript", "ruby", "csharp", "haskell", "python"]
+pages = ["projects/learning.md", "projects/science.md", "projects/security.md", "projects/tools.md", "work/algorithms-ruby.md", "work/algorithms.md", "work/happ.md", "work/icave.md", "work/peacemaker.md", "work/skull-cpp.md", "work/skull-emscripten.md"]
+related = ["repository", "open-source", "commit", "rust", "c", "ruby", "shell", "data-visualisation"]
 og_title = "C++: glossary"
 og_image = "og/glossary-cpp.png"
 keywords = ["C++", "Programming language", "Glossary", "Tomas Korcak"]

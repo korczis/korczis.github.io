@@ -16,8 +16,8 @@ kind = "language"
 definition = "Dynamický, expresivní jazyk navržený pro radost programátora; mnoho starších nástrojů tady je v Ruby."
 aliases = []
 reference = { title = "ruby-lang.org", url = "https://www.ruby-lang.org/en/about/" }
-pages = ["about.cs.md", "projects/data.cs.md", "projects/learning.cs.md", "projects/security.cs.md", "projects/systems.cs.md", "projects/tools.cs.md"]
-related = ["javascript", "repository", "rust", "elixir", "shell", "cpp", "csharp", "html"]
+pages = ["about.cs.md", "projects/data.cs.md", "projects/learning.cs.md", "projects/security.cs.md", "projects/systems.cs.md", "projects/tools.cs.md", "work/algorithms-ruby.cs.md", "work/apollo-crawler.cs.md", "work/apollon.cs.md", "work/ares.cs.md", "work/cluster.cs.md", "work/codecademy.cs.md", "work/csv2psql.cs.md", "work/docker-gooddata-ruby.cs.md", "work/esri.cs.md", "work/gdc-dumpator.cs.md", "work/gooddata-connectors-metadata.cs.md", "work/gooddata-lcm-tool.cs.md", "work/gooddata-rails-app.cs.md", "work/gooddata-ruby-examples.cs.md", "work/grache-test.cs.md", "work/grache.cs.md", "work/jetel.cs.md", "work/json2csv.cs.md", "work/sandbox.cs.md", "work/skull-ruby.cs.md", "work/skull.cs.md", "work/zeman-ucet.cs.md", "work/zlown.cs.md"]
+related = ["repository", "open-source", "commit", "shell", "gis", "javascript", "html", "rust"]
 og_title = "Ruby: slovník"
 og_image = "og/cs-glossary-ruby.png"
 keywords = ["Ruby", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

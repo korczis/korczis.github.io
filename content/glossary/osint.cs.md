@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Zpravodajství z otevřených zdrojů: poznání vystavěné z veřejně dostupných zdrojů, kde každé tvrzení vede ke svému zdroji."
 aliases = []
 reference = { title = "OSINT (Wikipedia)", url = "https://en.wikipedia.org/wiki/Open-source_intelligence" }
-pages = ["_index.cs.md", "about.cs.md", "hire.cs.md", "projects/_index.cs.md", "projects/security.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md"]
-related = ["ai-agent", "due-diligence", "open-source", "repository", "rust", "audit-trail", "elixir", "mergers-and-acquisitions"]
+pages = ["_index.cs.md", "about.cs.md", "hire.cs.md", "projects/_index.cs.md", "projects/security.cs.md", "work/magic.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/peacemaker.cs.md", "work/ratnet.cs.md", "work/zlown.cs.md"]
+related = ["due-diligence", "open-source", "repository", "audit-trail", "mergers-and-acquisitions", "orchestration", "commit", "data-integration"]
 og_title = "OSINT: slovník"
 og_image = "og/cs-glossary-osint.png"
 keywords = ["OSINT", "Koncept", "Slovník", "Tomáš Korčák"]

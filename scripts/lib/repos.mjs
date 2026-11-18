@@ -179,12 +179,20 @@ export function primaryLanguage(languages) {
 // Repositories that were the owner's at the last measurement and are not now, with why. check-data
 // fails on "empty": a repository with commits does not lose them, so it is a measuring fault (or a
 // repository the owner emptied, to be put on the hidden list).
+// A record that now carries the previous one's forge URL, or the same slug (lower case, every run
+// of other characters one dash: lethe-it and lethe.it), under another name was merged into it (a
+// GitLab twin joining its GitHub repository): "merged" with the record it joined, not gone.
 export function droppedSince(previousOwn, records) {
+  const slugOf = (name) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
   const now = new Map(records.map((r) => [r.name.toLowerCase(), r]));
+  const byUrl = new Map(records.flatMap((r) => Object.values(r.hosts ?? {}).map((u) => [u, r])));
+  const bySlug = new Map(records.map((r) => [slugOf(r.name), r]));
   const out = [];
   for (const before of previousOwn) {
     const r = now.get(before.name.toLowerCase());
-    if (!r) out.push({ name: before.name, now: 'gone' });
+    const into = r ? null : Object.values(before.hosts ?? {}).map((u) => byUrl.get(u)).find(Boolean) ?? bySlug.get(slugOf(before.name));
+    if (into) out.push({ name: before.name, now: 'merged', into: into.name });
+    else if (!r) out.push({ name: before.name, now: 'gone' });
     else if (r.fork) out.push({ name: before.name, now: 'fork' });
     else if (r.share === null && r.state !== 'error') out.push({ name: before.name, now: 'empty' });
     else if (r.share !== null && r.share < 0.5) out.push({ name: before.name, now: 'mirror' });

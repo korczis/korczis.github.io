@@ -3,18 +3,20 @@
 title = "Oscilla"
 description = "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu."
 template = "work.html"
-weight = 3
-updated = "2026-11-17T20:18:13Z"
+weight = 1
+updated = "2026-11-18T03:42:03Z"
 
 [taxonomies]
 tags = ["Věda a vizualizace", "JavaScript", "HTML", "CSS"]
 
 [extra]
 repo = "oscilla"
-og_title = "Oscilla: Akustická laboratoř v prohlížeči bez instalace."
+seo_title = "Oscilla: Věda a vizualizace, JavaScript, 2026 · Tomáš Korčák"
+og_title = "Oscilla: Akustická laboratoř v prohlížeči bez instalace"
+og_description = "Oscilla: Věda a vizualizace, JavaScript, HTML a CSS, 2026, aktivní za posledních 12 měsíců. Zdrojový kód: GitHub. 1 hvězda. Živý web. Pod dohledem Majordomu."
 og_image = "og/cs-work-oscilla.png"
 schema = "project"
-keywords = ["Oscilla", "Věda a vizualizace", "JavaScript", "HTML", "CSS", "Tomáš Korčák"]
+keywords = ["Oscilla", "Věda a vizualizace", "JavaScript", "HTML", "CSS", "acoustics", "audio", "dsp", "education", "signal-processing", "2026", "GitHub", "Tomáš Korčák", "korczis"]
 terms = ["javascript", "html", "css", "swift", "shell", "web-audio", "data-visualisation", "github-pages", "repository", "commit", "open-source"]
 
 [[extra.viz]]
@@ -28,10 +30,14 @@ tone = "night"
 +++
 **Oscilla** je projekt z kategorie [Věda a vizualizace](@/projects/science.cs.md). Jeho kód je napsaný hlavně v jazyce [JavaScript](@/glossary/javascript.cs.md) (96,9 %), dále [HTML](@/glossary/html.cs.md), [CSS](@/glossary/css.cs.md) a [Swift](@/glossary/swift.cs.md).
 
-[Repozitář](@/glossary/repository.cs.md) vznikl 1. října 2026; poslední [commit](@/glossary/commit.cs.md) je z 17. listopadu 2026. Zní „chore(release): záznam v3.41.3 (\#596)“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+[Repozitář](@/glossary/repository.cs.md) vznikl 1. října 2026; poslední [commit](@/glossary/commit.cs.md) je z 18. listopadu 2026. Zní „fix(ui): drobečková navigace z registru bez opakovaného názvu, stejná horní mezera po vstupu na stránku (\#598)“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 
 Je postavený na [Web Audio](@/glossary/web-audio.cs.md).
 
 Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/oscilla/>.
+
+Zdrojový kód: [GitHub](https://github.com/korczis/oscilla).
+
+Související práce v kategorii [Věda a vizualizace](@/projects/science.cs.md): [maze](@/work/maze.cs.md) (2016), [algoglyph](@/work/algoglyph.cs.md) (2026), [maze-rs](@/work/maze-rs.cs.md) (2016) a [haskell-world](@/work/haskell-world.cs.md) (2016).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 30 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

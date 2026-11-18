@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Identifying risks, estimating how likely and how severe each is, and ranking them so the work starts with what matters most."
 aliases = []
 reference = { title = "ISO 31000: risk management", url = "https://www.iso.org/iso-31000-risk-management.html" }
-pages = ["projects/security.md", "work/osint-case-ratcliffe-moscow-2026.md"]
-related = ["audit-trail", "data-integration", "decision-support-system", "due-diligence", "html", "information-extraction", "insolvency", "knowledge-graph"]
+pages = ["projects/security.md", "work/magic.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/peacemaker.md", "work/ratnet.md", "work/zlown.md"]
+related = ["audit-trail", "data-integration", "decision-support-system", "due-diligence", "information-extraction", "insolvency", "knowledge-graph", "market-intelligence"]
 og_title = "Risk assessment: glossary"
 og_image = "og/glossary-risk-assessment.png"
 keywords = ["Risk assessment", "Concept", "Glossary", "Tomas Korcak"]

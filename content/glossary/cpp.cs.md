@@ -16,8 +16,8 @@ kind = "language"
 definition = "C s třídami, šablonami a abstrakcemi, které za běhu nic nestojí; tam, kde záleží na rychlosti."
 aliases = []
 reference = { title = "cppreference.com", url = "https://en.cppreference.com/" }
-pages = ["projects/learning.cs.md", "projects/science.cs.md", "projects/security.cs.md", "projects/tools.cs.md"]
-related = ["repository", "rust", "elixir", "javascript", "ruby", "csharp", "haskell", "python"]
+pages = ["projects/learning.cs.md", "projects/science.cs.md", "projects/security.cs.md", "projects/tools.cs.md", "work/algorithms-ruby.cs.md", "work/algorithms.cs.md", "work/happ.cs.md", "work/icave.cs.md", "work/peacemaker.cs.md", "work/skull-cpp.cs.md", "work/skull-emscripten.cs.md"]
+related = ["repository", "open-source", "commit", "rust", "c", "ruby", "shell", "data-visualisation"]
 og_title = "C++: slovník"
 og_image = "og/cs-glossary-cpp.png"
 keywords = ["C++", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

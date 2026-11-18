@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Knowledge stored as entities and the relations between them, so a question can follow links (who owns what, who sits where) instead of joining tables."
 aliases = []
 reference = { title = "Knowledge graph (Wikipedia)", url = "https://en.wikipedia.org/wiki/Knowledge_graph" }
-pages = ["projects/security.md", "work/osint-case-ratcliffe-moscow-2026.md"]
-related = ["audit-trail", "data-integration", "decision-support-system", "due-diligence", "html", "information-extraction", "insolvency", "market-intelligence"]
+pages = ["projects/security.md", "work/magic.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/peacemaker.md", "work/ratnet.md", "work/zlown.md"]
+related = ["audit-trail", "data-integration", "decision-support-system", "due-diligence", "information-extraction", "insolvency", "market-intelligence", "mergers-and-acquisitions"]
 og_title = "Knowledge graph: glossary"
 og_image = "og/glossary-knowledge-graph.png"
 keywords = ["Knowledge graph", "Concept", "Glossary", "Tomas Korcak"]

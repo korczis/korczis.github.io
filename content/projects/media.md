@@ -4,7 +4,7 @@ title = "Media and art"
 description = "Work made from code: a promo reel rendered end to end, a music blog, and a digital artifact or two."
 template = "category.html"
 weight = 5
-updated = "2026-11-17T20:53:34Z"
+updated = "2026-11-18T03:20:13Z"
 
 [taxonomies]
 tags = ["Media and art", "Majordomus reel", "Catharsis as a Service", "Sonic Playground", "openttd-prismatic-bridge"]
@@ -14,7 +14,7 @@ category = "media"
 og_title = "Media and art: 8 repositories."
 og_image = "og/category-media.png"
 schema = "collection"
-terms = ["data-visualisation", "javascript", "python", "dockerfile", "elixir", "html", "repository"]
+terms = ["data-visualisation", "javascript", "dockerfile", "elixir", "html", "python", "repository"]
 keywords = ["Media and art", "Majordomus reel", "Catharsis as a Service", "Sonic Playground", "openttd-prismatic-bridge", "prismatic-blog", "dj-schnapps", "brepta", "talkie", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -28,7 +28,7 @@ tone = "night"
 +++
 Work made from code: a promo reel rendered end to end, a music blog, and a digital artifact or two.
 
-The category holds 8 original repositories, written most often in [JavaScript](@/glossary/javascript.md), [Python](@/glossary/python.md), [Dockerfile](@/glossary/dockerfile.md), [Elixir](@/glossary/elixir.md) and [HTML](@/glossary/html.md). Featured: **Majordomus reel**, **Catharsis as a Service** and **Sonic Playground**.
+The category holds 8 original repositories, written most often in [JavaScript](@/glossary/javascript.md), [Dockerfile](@/glossary/dockerfile.md), [Elixir](@/glossary/elixir.md), [HTML](@/glossary/html.md) and [Python](@/glossary/python.md). Featured: **Majordomus reel**, **Catharsis as a Service** and **Sonic Playground**.
 
 Key concept: [Data visualisation](@/glossary/data-visualisation.md).
 

@@ -4,7 +4,7 @@ title = "Média a umění"
 description = "Díla z kódu: promo video renderované od začátku do konce, hudební blog a pár digitálních artefaktů."
 template = "category.html"
 weight = 5
-updated = "2026-11-17T20:53:34Z"
+updated = "2026-11-18T03:20:13Z"
 
 [taxonomies]
 tags = ["Média a umění", "Majordomus reel", "Catharsis as a Service", "Sonic Playground", "openttd-prismatic-bridge"]
@@ -14,7 +14,7 @@ category = "media"
 og_title = "Média a umění: 8 repozitářů."
 og_image = "og/cs-category-media.png"
 schema = "collection"
-terms = ["data-visualisation", "javascript", "python", "dockerfile", "elixir", "html", "repository"]
+terms = ["data-visualisation", "javascript", "dockerfile", "elixir", "html", "python", "repository"]
 keywords = ["Média a umění", "Majordomus reel", "Catharsis as a Service", "Sonic Playground", "openttd-prismatic-bridge", "prismatic-blog", "dj-schnapps", "brepta", "talkie", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -28,7 +28,7 @@ tone = "night"
 +++
 Díla z kódu: promo video renderované od začátku do konce, hudební blog a pár digitálních artefaktů.
 
-Kategorie má 8 repozitářů; nejčastějšími jazyky jsou [JavaScript](@/glossary/javascript.cs.md), [Python](@/glossary/python.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md), [Elixir](@/glossary/elixir.cs.md) a [HTML](@/glossary/html.cs.md). Vybrané projekty: **Majordomus reel**, **Catharsis as a Service** a **Sonic Playground**.
+Kategorie má 8 repozitářů; nejčastějšími jazyky jsou [JavaScript](@/glossary/javascript.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md), [Elixir](@/glossary/elixir.cs.md), [HTML](@/glossary/html.cs.md) a [Python](@/glossary/python.cs.md). Vybrané projekty: **Majordomus reel**, **Catharsis as a Service** a **Sonic Playground**.
 
 Klíčový pojem: [Vizualizace dat](@/glossary/data-visualisation.cs.md).
 

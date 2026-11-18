@@ -20,17 +20,17 @@ Tomas Korcak is available for hire: Staff engineer for AI agent infrastructure, 
 
 ## Skills
 
-Measured from every original public repository on GitHub and GitLab, derived 2026-11-17T21:17:02Z.
+Measured from every original public repository on GitHub and GitLab, derived 2026-11-18T04:00:58Z.
 
-- [JavaScript](https://korczis.github.io/glossary/javascript/): primary language of 44 original repositories; evidence: [oscilla](https://github.com/korczis/oscilla), [majordomus-reel](https://github.com/korczis/majordomus-reel), [korczis.github.io](https://github.com/korczis/korczis.github.io)
-- [Elixir](https://korczis.github.io/glossary/elixir/): primary language of 27 original repositories; evidence: [kompendium-epistemicke-anihilace](https://github.com/korczis/kompendium-epistemicke-anihilace), [crisis-map](https://github.com/korczis/crisis-map), [the-psycho](https://gitlab.com/korczis/the-psycho)
+- [JavaScript](https://korczis.github.io/glossary/javascript/): primary language of 42 original repositories; evidence: [oscilla](https://github.com/korczis/oscilla), [korczis.github.io](https://github.com/korczis/korczis.github.io), [majordomus-reel](https://github.com/korczis/majordomus-reel)
+- [Elixir](https://korczis.github.io/glossary/elixir/): primary language of 26 original repositories; evidence: [kompendium-epistemicke-anihilace](https://github.com/korczis/kompendium-epistemicke-anihilace), [crisis-map](https://github.com/korczis/crisis-map), [the-psycho](https://gitlab.com/korczis/the-psycho)
 - [Ruby](https://korczis.github.io/glossary/ruby/): primary language of 20 original repositories; evidence: [gdc-dumpator](https://github.com/korczis/gdc-dumpator), [zeman-ucet](https://github.com/korczis/zeman-ucet), [cluster](https://github.com/korczis/cluster)
 - [Shell](https://korczis.github.io/glossary/shell/): primary language of 13 original repositories; evidence: [microcrawler](https://gitlab.com/korczis/microcrawler), [home](https://github.com/korczis/home), [server-archlinux](https://github.com/korczis/server-archlinux)
 - [Rust](https://korczis.github.io/glossary/rust/): primary language of 12 original repositories; evidence: [prismatic-majordomus](https://github.com/korczis/prismatic-majordomus), [maze-rs](https://github.com/korczis/maze-rs), [rustas](https://github.com/korczis/rustas)
-- [Python](https://korczis.github.io/glossary/python/): primary language of 7 original repositories; evidence: [sonic-playground](https://github.com/korczis/sonic-playground), [openttd-prismatic-bridge](https://gitlab.com/korczis/openttd-prismatic-bridge), [data-atlas](https://github.com/korczis/data-atlas)
 - [C++](https://korczis.github.io/glossary/cpp/): primary language of 6 original repositories; evidence: [happ](https://github.com/korczis/happ), [algorithms-ruby](https://github.com/korczis/algorithms-ruby), [iCave](https://github.com/korczis/iCave)
-- [HTML](https://korczis.github.io/glossary/html/): primary language of 6 original repositories; evidence: [catharsis-as-a-service](https://github.com/korczis/catharsis-as-a-service), [osint-case-ratcliffe-moscow-2026](https://github.com/korczis/osint-case-ratcliffe-moscow-2026), [ApolloCrawler-github-io](https://gitlab.com/korczis/ApolloCrawler-github-io)
-- [CSS](https://korczis.github.io/glossary/css/): primary language of 5 original repositories; evidence: [annasabatova-cz](https://gitlab.com/korczis/annasabatova-cz), [korczis-github-com](https://gitlab.com/korczis/korczis-github-com), [korczis.gitlab.io](https://gitlab.com/korczis/korczis.gitlab.io)
+- [Python](https://korczis.github.io/glossary/python/): primary language of 6 original repositories; evidence: [sonic-playground](https://github.com/korczis/sonic-playground), [data-atlas](https://github.com/korczis/data-atlas), [astronomists](https://github.com/korczis/astronomists)
+- [HTML](https://korczis.github.io/glossary/html/): primary language of 5 original repositories; evidence: [catharsis-as-a-service](https://github.com/korczis/catharsis-as-a-service), [osint-case-ratcliffe-moscow-2026](https://github.com/korczis/osint-case-ratcliffe-moscow-2026), [ApolloCrawler-github-io](https://gitlab.com/korczis/ApolloCrawler-github-io)
+- [CSS](https://korczis.github.io/glossary/css/): primary language of 4 original repositories; evidence: [korczis-github-com](https://gitlab.com/korczis/korczis-github-com), [korczis.gitlab.io](https://gitlab.com/korczis/korczis.gitlab.io), [nestravenkam](https://github.com/korczis/nestravenkam)
 - [Dockerfile](https://korczis.github.io/glossary/dockerfile/): primary language of 4 original repositories; evidence: [docks](https://gitlab.com/korczis/docks), [prismatic-blog](https://github.com/korczis/prismatic-blog), [gh-exec-3000](https://github.com/korczis/gh-exec-3000)
 - [C#](https://korczis.github.io/glossary/csharp/): primary language of 3 original repositories; evidence: [cs-benchmark](https://github.com/korczis/cs-benchmark), [Rocnikac4](https://github.com/korczis/Rocnikac4), [reflex](https://github.com/korczis/reflex)
 - [Swift](https://korczis.github.io/glossary/swift/): primary language of 3 original repositories; evidence: [ReadingPhoneNumbersInRealTime](https://github.com/korczis/ReadingPhoneNumbersInRealTime), [MinervaEye](https://github.com/korczis/MinervaEye), [bc-apple](https://github.com/korczis/bc-apple)
@@ -77,7 +77,7 @@ Measured from every original public repository on GitHub and GitLab, derived 202
 - [Projects](https://korczis.github.io/projects/): Every project in the catalogue: what it is, what it is built with, whether it is live, and whether Majordomus supervises it.
 - [Repositories](https://korczis.github.io/repositories/): Every original public repository on GitHub and GitLab, merged by name, with its inferred category, language and both links.
 - [Stack](https://korczis.github.io/stack/): The tools and practices behind every project, and how this site itself is built, checked and deployed.
-- [Recent work](https://korczis.github.io/work/): Every project with a commit in the last 48 months, by period (12, 24, 48): 43 repositories on GitHub and GitLab, each with its own page.
+- [Work](https://korczis.github.io/work/): All 205 original repositories on GitHub and GitLab since 2012, each with its own page: 43 active in the last 48 months, the rest as dated archive.
 - [Tomáš Korčák (cs)](https://korczis.github.io/cs/): Software, který svou práci dokládá: AI agenti, kteří prokazují výsledky, poctivé přístroje v prohlížeči, ověřitelné znalosti.
 
 ## AI engineering
@@ -133,249 +133,243 @@ Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist s
 
 ## Every original repository
 
-> 211 repositories on GitHub and GitLab where the owner wrote at least half of the commits,
-> derived 2026-11-17T21:17:02Z. Forks and mirrors (297) are not listed.
+> 205 repositories on GitHub and GitLab where the owner wrote at least half of the commits,
+> derived 2026-11-18T04:00:58Z. Forks and mirrors (285) are not listed.
 
 ### AI engineering (5)
 
-- prismatic-majordomus: AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model. (Rust, 2026). article https://korczis.github.io/work/prismatic-majordomus/; GitHub https://github.com/korczis/prismatic-majordomus; site https://korczis.github.io/prismatic-majordomus/
-- llm: Local-first, provider-agnostic archive of AI conversations (ChatGPT, Claude, Gemini, Codex) — immutable, content-addressed, searchable evidence layer built in Elixir/Ecto. (Elixir, 2026). article https://korczis.github.io/work/llm/; GitLab https://gitlab.com/korczis/llm
-- sig: distributed cognitive framework in Elixir/OTP. (Elixir, 2025). article https://korczis.github.io/work/sig/; GitLab https://gitlab.com/korczis/sig
-- edna: Edna je digitální kartářka, astroložka a analytička poháněná AI. Projekt spojuje mystiku, astrologii a psychologii s moderními LLM modely, aby uživatelům přinášel denní horoskopy, výklady karet, životní vhledy a psychologické reflexe. (2025). article https://korczis.github.io/work/edna/; GitLab https://gitlab.com/korczis/edna
-- cognitive-reasoning (2025). article https://korczis.github.io/work/cognitive-reasoning/; GitHub https://github.com/korczis/cognitive-reasoning
+- prismatic-majordomus: AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model. (Rust, 2026, active within 12 months, 1 stars, supervised by Majordomus). page https://korczis.github.io/work/prismatic-majordomus/; cs page https://korczis.github.io/cs/work/prismatic-majordomus/; GitHub https://github.com/korczis/prismatic-majordomus; site https://korczis.github.io/prismatic-majordomus/
+- llm: Local-first, provider-agnostic archive of AI conversations (ChatGPT, Claude, Gemini, Codex) — immutable, content-addressed, searchable evidence layer built in Elixir/Ecto. (Elixir, 2026, active within 12 months). page https://korczis.github.io/work/llm/; cs page https://korczis.github.io/cs/work/llm/; GitLab https://gitlab.com/korczis/llm
+- sig: distributed cognitive framework in Elixir/OTP. (Elixir, 2025–2026, active within 12 months). page https://korczis.github.io/work/sig/; cs page https://korczis.github.io/cs/work/sig/; GitLab https://gitlab.com/korczis/sig
+- edna: Edna je digitální kartářka, astroložka a analytička poháněná AI. Projekt spojuje mystiku, astrologii a psychologii s moderními LLM modely, aby uživatelům přinášel denní horoskopy, výklady karet, životní vhledy a psychologické reflexe. (2025, active within 24 months). page https://korczis.github.io/work/edna/; cs page https://korczis.github.io/cs/work/edna/; GitLab https://gitlab.com/korczis/edna
+- cognitive-reasoning (2025, active within 24 months). page https://korczis.github.io/work/cognitive-reasoning/; cs page https://korczis.github.io/cs/work/cognitive-reasoning/; GitHub https://github.com/korczis/cognitive-reasoning
 
 ### Science and visualisation (12)
 
-- oscilla: A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted. (JavaScript, 2026). article https://korczis.github.io/work/oscilla/; GitHub https://github.com/korczis/oscilla; site https://korczis.github.io/oscilla/
-- algoglyph: Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores. (TypeScript, 2026). article https://korczis.github.io/work/algoglyph/; GitHub https://github.com/korczis/algoglyph; site https://korczis.github.io/algoglyph/
-- distance-calculator (Elixir, 2024). article https://korczis.github.io/work/distance-calculator/; GitLab https://gitlab.com/korczis/distance-calculator
-- maze-rs: Maze for Programmers (Rust) (Rust, 2016). GitHub https://github.com/korczis/maze-rs; GitLab https://gitlab.com/korczis/maze-rs; site https://korczis.github.io/maze-rs/
-- rustas: Rust - Assembler, Mathematics, GPU and many others (Rust, 2018). GitHub https://github.com/korczis/rustas; GitLab https://gitlab.com/korczis/rustas
-- graph-flow (Rust, 2017). GitHub https://github.com/korczis/graph-flow; GitLab https://gitlab.com/korczis/graph-flow
-- maze: Maze Web Application (JavaScript, 2016). GitHub https://github.com/korczis/maze; GitLab https://gitlab.com/korczis/maze
-- maze-js: Maze (2016). GitHub https://github.com/korczis/maze-js; GitLab https://gitlab.com/korczis/maze-js
-- haskell-world: Haskell Mathematics (Haskell, 2016). GitHub https://github.com/korczis/haskell-world; GitLab https://gitlab.com/korczis/haskell-world
-- big-png: Biggest image in the smallest space (Python, 2015). GitHub https://github.com/korczis/big-png; GitLab https://gitlab.com/korczis/big-png
-- algorithms-ruby: Fundamental algorithms in ruby (C++, 2015). GitHub https://github.com/korczis/algorithms-ruby; GitLab https://gitlab.com/korczis/algorithms-ruby
-- algorithms: Algorithms implementation (C++, 2014). GitHub https://github.com/korczis/algorithms; GitLab https://gitlab.com/korczis/algorithms
+- oscilla: A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted. (JavaScript, 2026, active within 12 months, 1 stars, supervised by Majordomus). page https://korczis.github.io/work/oscilla/; cs page https://korczis.github.io/cs/work/oscilla/; GitHub https://github.com/korczis/oscilla; site https://korczis.github.io/oscilla/
+- algoglyph: Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores. (TypeScript, 2026, active within 12 months, supervised by Majordomus). page https://korczis.github.io/work/algoglyph/; cs page https://korczis.github.io/cs/work/algoglyph/; GitHub https://github.com/korczis/algoglyph; site https://korczis.github.io/algoglyph/
+- distance-calculator (Elixir, 2024, active within 48 months). page https://korczis.github.io/work/distance-calculator/; cs page https://korczis.github.io/cs/work/distance-calculator/; GitLab https://gitlab.com/korczis/distance-calculator
+- maze-rs: Maze for Programmers (Rust) (Rust, 2016, archive, 8 stars). page https://korczis.github.io/work/maze-rs/; cs page https://korczis.github.io/cs/work/maze-rs/; GitHub https://github.com/korczis/maze-rs; GitLab https://gitlab.com/korczis/maze-rs
+- rustas: Rust - Assembler, Mathematics, GPU and many others (Rust, 2018, archive, 1 stars). page https://korczis.github.io/work/rustas/; cs page https://korczis.github.io/cs/work/rustas/; GitHub https://github.com/korczis/rustas; GitLab https://gitlab.com/korczis/rustas
+- graph-flow (Rust, 2017, archive). page https://korczis.github.io/work/graph-flow/; cs page https://korczis.github.io/cs/work/graph-flow/; GitHub https://github.com/korczis/graph-flow; GitLab https://gitlab.com/korczis/graph-flow
+- maze: Maze Web Application (JavaScript, 2016, archive). page https://korczis.github.io/work/maze/; cs page https://korczis.github.io/cs/work/maze/; GitHub https://github.com/korczis/maze; GitLab https://gitlab.com/korczis/maze
+- maze-js: Maze (2016, archive). page https://korczis.github.io/work/maze-js/; cs page https://korczis.github.io/cs/work/maze-js/; GitHub https://github.com/korczis/maze-js; GitLab https://gitlab.com/korczis/maze-js
+- haskell-world: Haskell Mathematics (Haskell, 2016, archive). page https://korczis.github.io/work/haskell-world/; cs page https://korczis.github.io/cs/work/haskell-world/; GitHub https://github.com/korczis/haskell-world; GitLab https://gitlab.com/korczis/haskell-world
+- big-png: Biggest image in the smallest space (Python, 2015, archive, 9 stars). page https://korczis.github.io/work/big-png/; cs page https://korczis.github.io/cs/work/big-png/; GitHub https://github.com/korczis/big-png; GitLab https://gitlab.com/korczis/big-png
+- algorithms-ruby: Fundamental algorithms in ruby (C++, 2015, archive). page https://korczis.github.io/work/algorithms-ruby/; cs page https://korczis.github.io/cs/work/algorithms-ruby/; GitHub https://github.com/korczis/algorithms-ruby; GitLab https://gitlab.com/korczis/algorithms-ruby
+- algorithms: Algorithms implementation (C++, 2014, archive). page https://korczis.github.io/work/algorithms/; cs page https://korczis.github.io/cs/work/algorithms/; GitHub https://github.com/korczis/algorithms; GitLab https://gitlab.com/korczis/algorithms
 
 ### Knowledge (5)
 
-- kompendium-epistemicke-anihilace: Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki. (Elixir, 2026). article https://korczis.github.io/work/kompendium-epistemicke-anihilace/; GitHub https://github.com/korczis/kompendium-epistemicke-anihilace; site https://korczis.github.io/kompendium-epistemicke-anihilace/
-- ReadingPhoneNumbersInRealTime (Swift, 2021). GitHub https://github.com/korczis/ReadingPhoneNumbersInRealTime
-- MinervaEye: iOS application for book management (Swift, 2020). GitHub https://github.com/korczis/MinervaEye
-- reading: Reading list (2019). GitHub https://github.com/korczis/reading; GitLab https://gitlab.com/korczis/reading
-- books: List of good books (2013). GitHub https://github.com/korczis/books; GitLab https://gitlab.com/korczis/books
+- kompendium-epistemicke-anihilace: Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki. (Elixir, 2026, active within 12 months, supervised by Majordomus). page https://korczis.github.io/work/kompendium-epistemicke-anihilace/; cs page https://korczis.github.io/cs/work/kompendium-epistemicke-anihilace/; GitHub https://github.com/korczis/kompendium-epistemicke-anihilace; site https://korczis.github.io/kompendium-epistemicke-anihilace/
+- ReadingPhoneNumbersInRealTime (Swift, 2021, archive). page https://korczis.github.io/work/readingphonenumbersinrealtime/; cs page https://korczis.github.io/cs/work/readingphonenumbersinrealtime/; GitHub https://github.com/korczis/ReadingPhoneNumbersInRealTime
+- MinervaEye: iOS application for book management (Swift, 2020–2021, archive). page https://korczis.github.io/work/minervaeye/; cs page https://korczis.github.io/cs/work/minervaeye/; GitHub https://github.com/korczis/MinervaEye
+- reading: Reading list (2019, archive, 1 stars). page https://korczis.github.io/work/reading/; cs page https://korczis.github.io/cs/work/reading/; GitHub https://github.com/korczis/reading; GitLab https://gitlab.com/korczis/reading
+- books: List of good books (2013, archive). page https://korczis.github.io/work/books/; cs page https://korczis.github.io/cs/work/books/; GitHub https://github.com/korczis/books; GitLab https://gitlab.com/korczis/books
 
-### Data and GIS (51)
+### Data and GIS (49)
 
-- data-atlas: Katalog GIS a geodatových zdrojů — datasety, katastr, doprava, remote sensing, prostorová analytika. Jednosouborová prohledávatelná stránka. (Python, 2026). article https://korczis.github.io/work/data-atlas/; GitHub https://github.com/korczis/data-atlas; site https://korczis.github.io/data-atlas/
-- crisis-map: Mini crisis map: incident reports normalised, geocoded via local Nominatim, stored as PostGIS geography, served from one capability registry (LiveView, REST, OpenAPI, MCP, CLI) (Elixir, 2026). article https://korczis.github.io/work/crisis-map/; GitHub https://github.com/korczis/crisis-map; site https://korczis.github.io/crisis-map/
-- apollo-crawler-extension: Apollo Platform Chrome Extension (JavaScript, 2019). GitLab https://gitlab.com/korczis/apollo-crawler-extension
-- microcrawler (Shell, 2019). GitLab https://gitlab.com/korczis/microcrawler
-- microcrawler-browser: Proof-of-Concept: Microcrawler in your Browser! (JavaScript, 2019). GitLab https://gitlab.com/korczis/microcrawler-browser
-- microcrawler-crawler-bam-brno-cz (JavaScript, 2019). GitLab https://gitlab.com/korczis/microcrawler-crawler-bam-brno-cz
-- microcrawler-crawler-all (2019). GitLab https://gitlab.com/korczis/microcrawler-crawler-all
-- microcrawler-crawler-base (2019). GitLab https://gitlab.com/korczis/microcrawler-crawler-base
-- microcrawler-crawler-craiglist-com (JavaScript, 2019). GitLab https://gitlab.com/korczis/microcrawler-crawler-craiglist-com
-- microcrawler-crawler-firmy-cz (JavaScript, 2019). GitLab https://gitlab.com/korczis/microcrawler-crawler-firmy-cz
-- microcrawler-crawler-heureka-cz: Heureka Crawler (JavaScript, 2019). GitLab https://gitlab.com/korczis/microcrawler-crawler-heureka-cz
-- microcrawler-crawler-google-com (JavaScript, 2019). GitLab https://gitlab.com/korczis/microcrawler-crawler-google-com
-- microcrawler-crawler-news-ycombinator-com (JavaScript, 2019). GitLab https://gitlab.com/korczis/microcrawler-crawler-news-ycombinator-com
-- microcrawler-crawler-sreality-cz (JavaScript, 2019). GitLab https://gitlab.com/korczis/microcrawler-crawler-sreality-cz
-- microcrawler-crawler-xkcd-com (JavaScript, 2019). GitLab https://gitlab.com/korczis/microcrawler-crawler-xkcd-com
-- microcrawler-crawler-yelp-com (JavaScript, 2019). GitLab https://gitlab.com/korczis/microcrawler-crawler-yelp-com
-- microcrawler-elixir: Microcrawler Implemented in Elixir (Elixir, 2019). GitLab https://gitlab.com/korczis/microcrawler-elixir
-- microcrawler-js: Scrapping made easy... (JavaScript, 2019). GitLab https://gitlab.com/korczis/microcrawler-js
-- apollocrawler-com: Website for apollocrawler.com ... (JavaScript, 2019). GitLab https://gitlab.com/korczis/apollocrawler-com
-- mapofffacts-com: Map Of Facts (2019). GitLab https://gitlab.com/korczis/mapofffacts-com
-- czech-stats (Elixir, 2020). GitLab https://gitlab.com/korczis/czech-stats
-- rocksdb_indexer (2022). GitLab https://gitlab.com/korczis/rocksdb_indexer
-- meili_rsex (Elixir, 2024). article https://korczis.github.io/work/meili-rsex/; GitLab https://gitlab.com/korczis/meili_rsex
-- kuzu-ex (Elixir, 2024). article https://korczis.github.io/work/kuzu-ex/; GitLab https://gitlab.com/korczis/kuzu-ex
-- ctu-cz: Otevrena data ceskeho telekomunikacniho uradu (JavaScript, 2020). GitHub https://github.com/korczis/ctu-cz
-- data-playground: Playground for toying with data (2020). GitHub https://github.com/korczis/data-playground
-- kpmap-ruby: korczis implementation of (p)map (2017). GitHub https://github.com/korczis/kpmap-ruby; GitLab https://gitlab.com/korczis/kpmap-ruby
-- gooddata-ruby-examples: gooddata-ruby-examples (HTML, 2014). GitHub https://github.com/korczis/gooddata-ruby-examples; GitLab https://gitlab.com/korczis/gooddata-ruby-examples
-- gooddata-graphql: GoodData Web Application Written in Elixir (Elixir, 2016). GitHub https://github.com/korczis/gooddata-graphql; GitLab https://gitlab.com/korczis/gooddata-graphql
-- gooddata-lcm-tool (Ruby, 2016). GitHub https://github.com/korczis/gooddata-lcm-tool; GitLab https://gitlab.com/korczis/gooddata-lcm-tool
-- jetel: Just simple ETeL (Ruby, 2015). GitHub https://github.com/korczis/jetel; GitLab https://gitlab.com/korczis/jetel
-- gooddata-fs: GoodData as Filesystem (using FUSE) (Rust, 2016). GitHub https://github.com/korczis/gooddata-fs; GitLab https://gitlab.com/korczis/gooddata-fs
-- gooddata-proxy: GoodData Proxy (JavaScript, 2016). GitHub https://github.com/korczis/gooddata-proxy; GitLab https://gitlab.com/korczis/gooddata-proxy
-- datascience (R, 2016). GitHub https://github.com/korczis/datascience; GitLab https://gitlab.com/korczis/datascience
-- microcrawler-ng: Microcrawler (JavaScript, 2016). GitHub https://github.com/korczis/microcrawler-ng; GitLab https://gitlab.com/korczis/microcrawler-ng
-- mapofffacts.com: Map Of Facts (2015). GitHub https://github.com/korczis/mapofffacts.com
-- jetel-modules: Optional Jetel Modules (2015). GitHub https://github.com/korczis/jetel-modules; GitLab https://gitlab.com/korczis/jetel-modules
-- data: Various data (2014). GitHub https://github.com/korczis/data; GitLab https://gitlab.com/korczis/data
-- docker-gooddata-ruby: Dockerized GoodData Ruby (Ruby, 2015). GitHub https://github.com/korczis/docker-gooddata-ruby; GitLab https://gitlab.com/korczis/docker-gooddata-ruby
-- datasciencecoursera: Data Science Coursera Coursera (2015). GitHub https://github.com/korczis/datasciencecoursera; GitLab https://gitlab.com/korczis/datasciencecoursera
-- gooddata_connectors_metadata: The gem for accessing metadata for gooddata connector infrastructure (Ruby, 2015). GitHub https://github.com/korczis/gooddata_connectors_metadata; GitLab https://gitlab.com/korczis/gooddata_connectors_metadata
-- gooddata_rails_app: GoodData as Rails Application (Ruby, 2014). GitHub https://github.com/korczis/gooddata_rails_app; GitLab https://gitlab.com/korczis/gooddata_rails_app
-- apollo-crawler (Ruby, 2014). GitHub https://github.com/korczis/apollo-crawler; GitLab https://gitlab.com/korczis/apollo-crawler
-- esri: Framework for working with ESRI datasets (Ruby, 2014). GitHub https://github.com/korczis/esri; GitLab https://gitlab.com/korczis/esri
-- apollo-schemas: NoSql Schemas for Apollo (2014). GitHub https://github.com/korczis/apollo-schemas; GitLab https://gitlab.com/korczis/apollo-schemas
-- microcrawler-couchapp: Microcrawler Web UI for browsing results (couchapp) ... (JavaScript, 2014). GitHub https://github.com/korczis/microcrawler-couchapp; GitLab https://gitlab.com/korczis/microcrawler-couchapp
-- github-extractor: Extracts Data From Github (JavaScript, 2014). GitHub https://github.com/korczis/github-extractor; GitLab https://gitlab.com/korczis/github-extractor
-- apollo-box: All needed data science stuff in one box (Shell, 2014). GitHub https://github.com/korczis/apollo-box; GitLab https://gitlab.com/korczis/apollo-box
-- nosqlight: Document Oriented SQLite like Database (2014). GitHub https://github.com/korczis/nosqlight; GitLab https://gitlab.com/korczis/nosqlight
-- apollocrawler.com: Website for apollocrawler.com ... (JavaScript, 2014). GitHub https://github.com/korczis/apollocrawler.com
-- solr-core-minimal: Minimal config core for solr (XSLT, 2014). GitHub https://github.com/korczis/solr-core-minimal; GitLab https://gitlab.com/korczis/solr-core-minimal
+- data-atlas: Katalog GIS a geodatových zdrojů — datasety, katastr, doprava, remote sensing, prostorová analytika. Jednosouborová prohledávatelná stránka. (Python, 2026, active within 12 months). page https://korczis.github.io/work/data-atlas/; cs page https://korczis.github.io/cs/work/data-atlas/; GitHub https://github.com/korczis/data-atlas; site https://korczis.github.io/data-atlas/
+- crisis-map: Mini crisis map: incident reports normalised, geocoded via local Nominatim, stored as PostGIS geography, served from one capability registry (LiveView, REST, OpenAPI, MCP, CLI) (Elixir, 2026, active within 12 months). page https://korczis.github.io/work/crisis-map/; cs page https://korczis.github.io/cs/work/crisis-map/; GitHub https://github.com/korczis/crisis-map; site https://korczis.github.io/crisis-map/
+- apollo-crawler-extension: Apollo Platform Chrome Extension (JavaScript, 2013–2016, archive). page https://korczis.github.io/work/apollo-crawler-extension/; cs page https://korczis.github.io/cs/work/apollo-crawler-extension/; GitLab https://gitlab.com/korczis/apollo-crawler-extension
+- microcrawler (Shell, 2016–2017, archive). page https://korczis.github.io/work/microcrawler/; cs page https://korczis.github.io/cs/work/microcrawler/; GitLab https://gitlab.com/korczis/microcrawler
+- microcrawler-browser: Proof-of-Concept: Microcrawler in your Browser! (JavaScript, 2016, archive). page https://korczis.github.io/work/microcrawler-browser/; cs page https://korczis.github.io/cs/work/microcrawler-browser/; GitLab https://gitlab.com/korczis/microcrawler-browser
+- microcrawler-crawler-bam-brno-cz (JavaScript, 2017, archive). page https://korczis.github.io/work/microcrawler-crawler-bam-brno-cz/; cs page https://korczis.github.io/cs/work/microcrawler-crawler-bam-brno-cz/; GitLab https://gitlab.com/korczis/microcrawler-crawler-bam-brno-cz
+- microcrawler-crawler-all (2016–2017, archive). page https://korczis.github.io/work/microcrawler-crawler-all/; cs page https://korczis.github.io/cs/work/microcrawler-crawler-all/; GitLab https://gitlab.com/korczis/microcrawler-crawler-all
+- microcrawler-crawler-base (2016, archive). page https://korczis.github.io/work/microcrawler-crawler-base/; cs page https://korczis.github.io/cs/work/microcrawler-crawler-base/; GitLab https://gitlab.com/korczis/microcrawler-crawler-base
+- microcrawler-crawler-craiglist-com (JavaScript, 2016, archive). page https://korczis.github.io/work/microcrawler-crawler-craiglist-com/; cs page https://korczis.github.io/cs/work/microcrawler-crawler-craiglist-com/; GitLab https://gitlab.com/korczis/microcrawler-crawler-craiglist-com
+- microcrawler-crawler-firmy-cz (JavaScript, 2016–2017, archive). page https://korczis.github.io/work/microcrawler-crawler-firmy-cz/; cs page https://korczis.github.io/cs/work/microcrawler-crawler-firmy-cz/; GitLab https://gitlab.com/korczis/microcrawler-crawler-firmy-cz
+- microcrawler-crawler-heureka-cz: Heureka Crawler (JavaScript, 2017, archive). page https://korczis.github.io/work/microcrawler-crawler-heureka-cz/; cs page https://korczis.github.io/cs/work/microcrawler-crawler-heureka-cz/; GitLab https://gitlab.com/korczis/microcrawler-crawler-heureka-cz
+- microcrawler-crawler-google-com (JavaScript, 2016, archive). page https://korczis.github.io/work/microcrawler-crawler-google-com/; cs page https://korczis.github.io/cs/work/microcrawler-crawler-google-com/; GitLab https://gitlab.com/korczis/microcrawler-crawler-google-com
+- microcrawler-crawler-news-ycombinator-com (JavaScript, 2016, archive). page https://korczis.github.io/work/microcrawler-crawler-news-ycombinator-com/; cs page https://korczis.github.io/cs/work/microcrawler-crawler-news-ycombinator-com/; GitLab https://gitlab.com/korczis/microcrawler-crawler-news-ycombinator-com
+- microcrawler-crawler-sreality-cz (JavaScript, 2016–2017, archive). page https://korczis.github.io/work/microcrawler-crawler-sreality-cz/; cs page https://korczis.github.io/cs/work/microcrawler-crawler-sreality-cz/; GitLab https://gitlab.com/korczis/microcrawler-crawler-sreality-cz
+- microcrawler-crawler-xkcd-com (JavaScript, 2016–2017, archive). page https://korczis.github.io/work/microcrawler-crawler-xkcd-com/; cs page https://korczis.github.io/cs/work/microcrawler-crawler-xkcd-com/; GitLab https://gitlab.com/korczis/microcrawler-crawler-xkcd-com
+- microcrawler-crawler-yelp-com (JavaScript, 2016, archive). page https://korczis.github.io/work/microcrawler-crawler-yelp-com/; cs page https://korczis.github.io/cs/work/microcrawler-crawler-yelp-com/; GitLab https://gitlab.com/korczis/microcrawler-crawler-yelp-com
+- microcrawler-elixir: Microcrawler Implemented in Elixir (Elixir, 2016, archive). page https://korczis.github.io/work/microcrawler-elixir/; cs page https://korczis.github.io/cs/work/microcrawler-elixir/; GitLab https://gitlab.com/korczis/microcrawler-elixir
+- microcrawler-js: Scrapping made easy... (JavaScript, 2016, archive). page https://korczis.github.io/work/microcrawler-js/; cs page https://korczis.github.io/cs/work/microcrawler-js/; GitLab https://gitlab.com/korczis/microcrawler-js
+- czech-stats (Elixir, 2020, archive). page https://korczis.github.io/work/czech-stats/; cs page https://korczis.github.io/cs/work/czech-stats/; GitLab https://gitlab.com/korczis/czech-stats
+- rocksdb_indexer (2022, archive). page https://korczis.github.io/work/rocksdb-indexer/; cs page https://korczis.github.io/cs/work/rocksdb-indexer/; GitLab https://gitlab.com/korczis/rocksdb_indexer
+- meili_rsex (Elixir, 2024, active within 48 months). page https://korczis.github.io/work/meili-rsex/; cs page https://korczis.github.io/cs/work/meili-rsex/; GitLab https://gitlab.com/korczis/meili_rsex
+- kuzu-ex (Elixir, 2024, active within 24 months). page https://korczis.github.io/work/kuzu-ex/; cs page https://korczis.github.io/cs/work/kuzu-ex/; GitLab https://gitlab.com/korczis/kuzu-ex
+- ctu-cz: Otevrena data ceskeho telekomunikacniho uradu (JavaScript, 2020, archive, 1 stars). page https://korczis.github.io/work/ctu-cz/; cs page https://korczis.github.io/cs/work/ctu-cz/; GitHub https://github.com/korczis/ctu-cz
+- data-playground: Playground for toying with data (2020, archive). page https://korczis.github.io/work/data-playground/; cs page https://korczis.github.io/cs/work/data-playground/; GitHub https://github.com/korczis/data-playground
+- kpmap-ruby: korczis implementation of (p)map (2017, archive). page https://korczis.github.io/work/kpmap-ruby/; cs page https://korczis.github.io/cs/work/kpmap-ruby/; GitHub https://github.com/korczis/kpmap-ruby; GitLab https://gitlab.com/korczis/kpmap-ruby
+- gooddata-ruby-examples: gooddata-ruby-examples (HTML, 2014–2015, archive). page https://korczis.github.io/work/gooddata-ruby-examples/; cs page https://korczis.github.io/cs/work/gooddata-ruby-examples/; GitHub https://github.com/korczis/gooddata-ruby-examples; GitLab https://gitlab.com/korczis/gooddata-ruby-examples
+- gooddata-graphql: GoodData Web Application Written in Elixir (Elixir, 2016, archive, 1 stars). page https://korczis.github.io/work/gooddata-graphql/; cs page https://korczis.github.io/cs/work/gooddata-graphql/; GitHub https://github.com/korczis/gooddata-graphql; GitLab https://gitlab.com/korczis/gooddata-graphql
+- gooddata-lcm-tool (Ruby, 2016, archive). page https://korczis.github.io/work/gooddata-lcm-tool/; cs page https://korczis.github.io/cs/work/gooddata-lcm-tool/; GitHub https://github.com/korczis/gooddata-lcm-tool; GitLab https://gitlab.com/korczis/gooddata-lcm-tool
+- jetel: Just simple ETeL (Ruby, 2015–2016, archive). page https://korczis.github.io/work/jetel/; cs page https://korczis.github.io/cs/work/jetel/; GitHub https://github.com/korczis/jetel; GitLab https://gitlab.com/korczis/jetel
+- gooddata-fs: GoodData as Filesystem (using FUSE) (Rust, 2016, archive). page https://korczis.github.io/work/gooddata-fs/; cs page https://korczis.github.io/cs/work/gooddata-fs/; GitHub https://github.com/korczis/gooddata-fs; GitLab https://gitlab.com/korczis/gooddata-fs
+- gooddata-proxy: GoodData Proxy (JavaScript, 2016, archive). page https://korczis.github.io/work/gooddata-proxy/; cs page https://korczis.github.io/cs/work/gooddata-proxy/; GitHub https://github.com/korczis/gooddata-proxy; GitLab https://gitlab.com/korczis/gooddata-proxy
+- datascience (R, 2016, archive). page https://korczis.github.io/work/datascience/; cs page https://korczis.github.io/cs/work/datascience/; GitHub https://github.com/korczis/datascience; GitLab https://gitlab.com/korczis/datascience
+- microcrawler-ng: Microcrawler (JavaScript, 2016, archive). page https://korczis.github.io/work/microcrawler-ng/; cs page https://korczis.github.io/cs/work/microcrawler-ng/; GitHub https://github.com/korczis/microcrawler-ng; GitLab https://gitlab.com/korczis/microcrawler-ng
+- mapofffacts.com: Map Of Facts (2015, archive). page https://korczis.github.io/work/mapofffacts-com/; cs page https://korczis.github.io/cs/work/mapofffacts-com/; GitHub https://github.com/korczis/mapofffacts.com; GitLab https://gitlab.com/korczis/mapofffacts-com
+- jetel-modules: Optional Jetel Modules (2015, archive). page https://korczis.github.io/work/jetel-modules/; cs page https://korczis.github.io/cs/work/jetel-modules/; GitHub https://github.com/korczis/jetel-modules; GitLab https://gitlab.com/korczis/jetel-modules
+- data: Various data (2014–2015, archive, 2 stars). page https://korczis.github.io/work/data/; cs page https://korczis.github.io/cs/work/data/; GitHub https://github.com/korczis/data; GitLab https://gitlab.com/korczis/data
+- docker-gooddata-ruby: Dockerized GoodData Ruby (Ruby, 2015, archive). page https://korczis.github.io/work/docker-gooddata-ruby/; cs page https://korczis.github.io/cs/work/docker-gooddata-ruby/; GitHub https://github.com/korczis/docker-gooddata-ruby; GitLab https://gitlab.com/korczis/docker-gooddata-ruby
+- datasciencecoursera: Data Science Coursera Coursera (2015, archive). page https://korczis.github.io/work/datasciencecoursera/; cs page https://korczis.github.io/cs/work/datasciencecoursera/; GitHub https://github.com/korczis/datasciencecoursera; GitLab https://gitlab.com/korczis/datasciencecoursera
+- gooddata_connectors_metadata: The gem for accessing metadata for gooddata connector infrastructure (Ruby, 2014–2015, archive). page https://korczis.github.io/work/gooddata-connectors-metadata/; cs page https://korczis.github.io/cs/work/gooddata-connectors-metadata/; GitHub https://github.com/korczis/gooddata_connectors_metadata; GitLab https://gitlab.com/korczis/gooddata_connectors_metadata
+- gooddata_rails_app: GoodData as Rails Application (Ruby, 2014, archive). page https://korczis.github.io/work/gooddata-rails-app/; cs page https://korczis.github.io/cs/work/gooddata-rails-app/; GitHub https://github.com/korczis/gooddata_rails_app; GitLab https://gitlab.com/korczis/gooddata_rails_app
+- apollo-crawler (Ruby, 2014, archive). page https://korczis.github.io/work/apollo-crawler/; cs page https://korczis.github.io/cs/work/apollo-crawler/; GitHub https://github.com/korczis/apollo-crawler; GitLab https://gitlab.com/korczis/apollo-crawler
+- esri: Framework for working with ESRI datasets (Ruby, 2014, archive, 1 stars). page https://korczis.github.io/work/esri/; cs page https://korczis.github.io/cs/work/esri/; GitHub https://github.com/korczis/esri; GitLab https://gitlab.com/korczis/esri
+- apollo-schemas: NoSql Schemas for Apollo (2014, archive). page https://korczis.github.io/work/apollo-schemas/; cs page https://korczis.github.io/cs/work/apollo-schemas/; GitHub https://github.com/korczis/apollo-schemas; GitLab https://gitlab.com/korczis/apollo-schemas
+- microcrawler-couchapp: Microcrawler Web UI for browsing results (couchapp) ... (JavaScript, 2014, archive). page https://korczis.github.io/work/microcrawler-couchapp/; cs page https://korczis.github.io/cs/work/microcrawler-couchapp/; GitHub https://github.com/korczis/microcrawler-couchapp; GitLab https://gitlab.com/korczis/microcrawler-couchapp
+- github-extractor: Extracts Data From Github (JavaScript, 2014, archive). page https://korczis.github.io/work/github-extractor/; cs page https://korczis.github.io/cs/work/github-extractor/; GitHub https://github.com/korczis/github-extractor; GitLab https://gitlab.com/korczis/github-extractor
+- apollo-box: All needed data science stuff in one box (Shell, 2014, archive). page https://korczis.github.io/work/apollo-box/; cs page https://korczis.github.io/cs/work/apollo-box/; GitHub https://github.com/korczis/apollo-box; GitLab https://gitlab.com/korczis/apollo-box
+- nosqlight: Document Oriented SQLite like Database (2014, archive). page https://korczis.github.io/work/nosqlight/; cs page https://korczis.github.io/cs/work/nosqlight/; GitHub https://github.com/korczis/nosqlight; GitLab https://gitlab.com/korczis/nosqlight
+- apollocrawler.com: Website for apollocrawler.com ... (JavaScript, 2014, archive). page https://korczis.github.io/work/apollocrawler-com/; cs page https://korczis.github.io/cs/work/apollocrawler-com/; GitHub https://github.com/korczis/apollocrawler.com; GitLab https://gitlab.com/korczis/apollocrawler-com
+- solr-core-minimal: Minimal config core for solr (XSLT, 2014, archive). page https://korczis.github.io/work/solr-core-minimal/; cs page https://korczis.github.io/cs/work/solr-core-minimal/; GitHub https://github.com/korczis/solr-core-minimal; GitLab https://gitlab.com/korczis/solr-core-minimal
 
 ### Media and art (8)
 
-- sonic-playground: Sonic Playground - Phoenix/Elixir music blog built on the Kita theme (Python, 2026). article https://korczis.github.io/work/sonic-playground/; GitHub https://github.com/korczis/sonic-playground; site https://korczis.github.io/sonic-playground/
-- openttd-prismatic-bridge: REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform (Python, 2026). article https://korczis.github.io/work/openttd-prismatic-bridge/; GitLab https://gitlab.com/korczis/openttd-prismatic-bridge
-- majordomus-reel: A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound (JavaScript, 2026). article https://korczis.github.io/work/majordomus-reel/; GitHub https://github.com/korczis/majordomus-reel; site https://korczis.github.io/majordomus-reel/
-- catharsis-as-a-service: Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact. (HTML, 2026). article https://korczis.github.io/work/catharsis-as-a-service/; GitHub https://github.com/korczis/catharsis-as-a-service; site https://korczis.github.io/catharsis-as-a-service/
-- prismatic-blog (Dockerfile, 2025). article https://korczis.github.io/work/prismatic-blog/; GitHub https://github.com/korczis/prismatic-blog; site https://korczis.github.io/prismatic-blog/
-- dj-schnapps: Dj Schnapps (Elixir, 2019). GitHub https://github.com/korczis/dj-schnapps; GitLab https://gitlab.com/korczis/dj-schnapps
-- brepta: TTS via REST (JavaScript, 2017). GitHub https://github.com/korczis/brepta; GitLab https://gitlab.com/korczis/brepta
-- talkie: node.js TTS application (2015). GitHub https://github.com/korczis/talkie; GitLab https://gitlab.com/korczis/talkie
+- majordomus-reel: A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound (JavaScript, 2026, active within 12 months, supervised by Majordomus). page https://korczis.github.io/work/majordomus-reel/; cs page https://korczis.github.io/cs/work/majordomus-reel/; GitHub https://github.com/korczis/majordomus-reel; site https://korczis.github.io/majordomus-reel/
+- openttd-prismatic-bridge: REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform (Squirrel, 2026, active within 12 months). page https://korczis.github.io/work/openttd-prismatic-bridge/; cs page https://korczis.github.io/cs/work/openttd-prismatic-bridge/; GitLab https://gitlab.com/korczis/openttd-prismatic-bridge
+- sonic-playground: Sonic Playground - Phoenix/Elixir music blog built on the Kita theme (Python, 2026, active within 12 months, supervised by Majordomus). page https://korczis.github.io/work/sonic-playground/; cs page https://korczis.github.io/cs/work/sonic-playground/; GitHub https://github.com/korczis/sonic-playground; site https://korczis.github.io/sonic-playground/
+- catharsis-as-a-service: Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact. (HTML, 2026, active within 12 months, supervised by Majordomus). page https://korczis.github.io/work/catharsis-as-a-service/; cs page https://korczis.github.io/cs/work/catharsis-as-a-service/; GitHub https://github.com/korczis/catharsis-as-a-service; site https://korczis.github.io/catharsis-as-a-service/
+- prismatic-blog (Dockerfile, 2025, active within 24 months). page https://korczis.github.io/work/prismatic-blog/; cs page https://korczis.github.io/cs/work/prismatic-blog/; GitHub https://github.com/korczis/prismatic-blog; site https://korczis.github.io/prismatic-blog/
+- dj-schnapps: Dj Schnapps (Elixir, 2019, archive). page https://korczis.github.io/work/dj-schnapps/; cs page https://korczis.github.io/cs/work/dj-schnapps/; GitHub https://github.com/korczis/dj-schnapps; GitLab https://gitlab.com/korczis/dj-schnapps
+- brepta: TTS via REST (JavaScript, 2017, archive). page https://korczis.github.io/work/brepta/; cs page https://korczis.github.io/cs/work/brepta/; GitHub https://github.com/korczis/brepta; GitLab https://gitlab.com/korczis/brepta
+- talkie: node.js TTS application (2015, archive). page https://korczis.github.io/work/talkie/; cs page https://korczis.github.io/cs/work/talkie/; GitHub https://github.com/korczis/talkie; GitLab https://gitlab.com/korczis/talkie
 
 ### Security and OSINT (5)
 
-- osint-case-ratcliffe-moscow-2026: Open-source intelligence assessment of the CIA Director's unannounced Moscow visit (2026-08-25) — maintained with Claude Code skills; reusable OSINT case toolkit (HTML, 2026). article https://korczis.github.io/work/osint-case-ratcliffe-moscow-2026/; GitHub https://github.com/korczis/osint-case-ratcliffe-moscow-2026; site https://korczis.github.io/osint-case-ratcliffe-moscow-2026/
-- magic: All the magic happens here! (Rust, 2017). GitHub https://github.com/korczis/magic; GitLab https://gitlab.com/korczis/magic
-- zlown: Rogue and Evil Access Point (Ruby, 2016). GitHub https://github.com/korczis/zlown; GitLab https://gitlab.com/korczis/zlown
-- peacemaker: Packet sniffing and processing engine (C++, 2014). GitHub https://github.com/korczis/peacemaker; GitLab https://gitlab.com/korczis/peacemaker
-- ratnet: Educational Purposes Botnet (2014). GitHub https://github.com/korczis/ratnet; GitLab https://gitlab.com/korczis/ratnet
+- osint-case-ratcliffe-moscow-2026: Open-source intelligence assessment of the CIA Director's unannounced Moscow visit (2026-08-25) — maintained with Claude Code skills; reusable OSINT case toolkit (HTML, 2026, active within 12 months, 1 stars). page https://korczis.github.io/work/osint-case-ratcliffe-moscow-2026/; cs page https://korczis.github.io/cs/work/osint-case-ratcliffe-moscow-2026/; GitHub https://github.com/korczis/osint-case-ratcliffe-moscow-2026; site https://korczis.github.io/osint-case-ratcliffe-moscow-2026/
+- magic: All the magic happens here! (Rust, 2017, archive, 2 stars). page https://korczis.github.io/work/magic/; cs page https://korczis.github.io/cs/work/magic/; GitHub https://github.com/korczis/magic; GitLab https://gitlab.com/korczis/magic
+- zlown: Rogue and Evil Access Point (Ruby, 2016, archive, 1 stars). page https://korczis.github.io/work/zlown/; cs page https://korczis.github.io/cs/work/zlown/; GitHub https://github.com/korczis/zlown; GitLab https://gitlab.com/korczis/zlown
+- peacemaker: Packet sniffing and processing engine (C++, 2014, archive). page https://korczis.github.io/work/peacemaker/; cs page https://korczis.github.io/cs/work/peacemaker/; GitHub https://github.com/korczis/peacemaker; GitLab https://gitlab.com/korczis/peacemaker
+- ratnet: Educational Purposes Botnet (2014, archive). page https://korczis.github.io/work/ratnet/; cs page https://korczis.github.io/cs/work/ratnet/; GitHub https://github.com/korczis/ratnet; GitLab https://gitlab.com/korczis/ratnet
 
 ### Systems and infrastructure (17)
 
-- docks: Repository containing useful Dockerfile(s) (Dockerfile, 2019). GitLab https://gitlab.com/korczis/docks
-- gh-exec-3000: github executor 3000 (Dockerfile, 2022). GitHub https://github.com/korczis/gh-exec-3000
-- server-archlinux (Shell, 2019). GitHub https://github.com/korczis/server-archlinux; GitLab https://gitlab.com/korczis/server-archlinux
-- zdeny-docker (Dockerfile, 2019). GitHub https://github.com/korczis/zdeny-docker; GitLab https://gitlab.com/korczis/zdeny-docker
-- k8s-orbis-pictus: Playground for learning docker, kubernetes, ansible and friends (2019). GitHub https://github.com/korczis/k8s-orbis-pictus; GitLab https://gitlab.com/korczis/k8s-orbis-pictus
-- server-coreos: CoreOS based immutable server (2019). GitHub https://github.com/korczis/server-coreos; GitLab https://gitlab.com/korczis/server-coreos
-- server-atomic: Server powered by Project Atomic (Shell, 2019). GitHub https://github.com/korczis/server-atomic; GitLab https://gitlab.com/korczis/server-atomic
-- server-nixos: NixOS Configuration (Shell, 2019). GitHub https://github.com/korczis/server-nixos; GitLab https://gitlab.com/korczis/server-nixos
-- server-ansible: Server Ansible (Shell, 2019). GitHub https://github.com/korczis/server-ansible; GitLab https://gitlab.com/korczis/server-ansible
-- aws-lambda-docker: Example how to run Docker image using AWS Lambda (Shell, 2018). GitHub https://github.com/korczis/aws-lambda-docker; GitLab https://gitlab.com/korczis/aws-lambda-docker
-- cluster-kubernetes: Kubernetes Cluster (Shell, 2017). GitHub https://github.com/korczis/cluster-kubernetes; GitLab https://gitlab.com/korczis/cluster-kubernetes
-- cluster: Run your own CoreOS/Kubernetes cluster (Ruby, 2017). GitHub https://github.com/korczis/cluster; GitLab https://gitlab.com/korczis/cluster
-- docker-dstk: Dockerized http://www.datasciencetoolkit.org (Shell, 2015). GitHub https://github.com/korczis/docker-dstk; GitLab https://gitlab.com/korczis/docker-dstk
-- docker-datasciencetoolbox: Dockerized http://datasciencetoolbox.org (2015). GitHub https://github.com/korczis/docker-datasciencetoolbox; GitLab https://gitlab.com/korczis/docker-datasciencetoolbox
-- docker-conf2015: Dockerfile for GD ConferenceDay 2015 (JavaScript, 2015). GitHub https://github.com/korczis/docker-conf2015; GitLab https://gitlab.com/korczis/docker-conf2015
-- apollon: Your own personal cluster built on top of the cloud. (Ruby, 2014). GitHub https://github.com/korczis/apollon; GitLab https://gitlab.com/korczis/apollon; site https://korczis.github.io/apollon/
-- social-icons: Social Networks icons from Devise Example (2013). GitHub https://github.com/korczis/social-icons; GitLab https://gitlab.com/korczis/social-icons
+- docks: Repository containing useful Dockerfile(s) (Dockerfile, 2015–2017, archive). page https://korczis.github.io/work/docks/; cs page https://korczis.github.io/cs/work/docks/; GitLab https://gitlab.com/korczis/docks
+- gh-exec-3000: github executor 3000 (Dockerfile, 2022, archive). page https://korczis.github.io/work/gh-exec-3000/; cs page https://korczis.github.io/cs/work/gh-exec-3000/; GitHub https://github.com/korczis/gh-exec-3000
+- server-archlinux (Shell, 2019, archive). page https://korczis.github.io/work/server-archlinux/; cs page https://korczis.github.io/cs/work/server-archlinux/; GitHub https://github.com/korczis/server-archlinux; GitLab https://gitlab.com/korczis/server-archlinux
+- zdeny-docker (Dockerfile, 2019, archive). page https://korczis.github.io/work/zdeny-docker/; cs page https://korczis.github.io/cs/work/zdeny-docker/; GitHub https://github.com/korczis/zdeny-docker; GitLab https://gitlab.com/korczis/zdeny-docker
+- k8s-orbis-pictus: Playground for learning docker, kubernetes, ansible and friends (2019, archive). page https://korczis.github.io/work/k8s-orbis-pictus/; cs page https://korczis.github.io/cs/work/k8s-orbis-pictus/; GitHub https://github.com/korczis/k8s-orbis-pictus; GitLab https://gitlab.com/korczis/k8s-orbis-pictus
+- server-coreos: CoreOS based immutable server (2019, archive). page https://korczis.github.io/work/server-coreos/; cs page https://korczis.github.io/cs/work/server-coreos/; GitHub https://github.com/korczis/server-coreos; GitLab https://gitlab.com/korczis/server-coreos
+- server-atomic: Server powered by Project Atomic (Shell, 2019, archive). page https://korczis.github.io/work/server-atomic/; cs page https://korczis.github.io/cs/work/server-atomic/; GitHub https://github.com/korczis/server-atomic; GitLab https://gitlab.com/korczis/server-atomic
+- server-nixos: NixOS Configuration (Shell, 2019, archive). page https://korczis.github.io/work/server-nixos/; cs page https://korczis.github.io/cs/work/server-nixos/; GitHub https://github.com/korczis/server-nixos; GitLab https://gitlab.com/korczis/server-nixos
+- server-ansible: Server Ansible (Shell, 2019, archive). page https://korczis.github.io/work/server-ansible/; cs page https://korczis.github.io/cs/work/server-ansible/; GitHub https://github.com/korczis/server-ansible; GitLab https://gitlab.com/korczis/server-ansible
+- aws-lambda-docker: Example how to run Docker image using AWS Lambda (Shell, 2018, archive). page https://korczis.github.io/work/aws-lambda-docker/; cs page https://korczis.github.io/cs/work/aws-lambda-docker/; GitHub https://github.com/korczis/aws-lambda-docker; GitLab https://gitlab.com/korczis/aws-lambda-docker
+- cluster-kubernetes: Kubernetes Cluster (Shell, 2017–2018, archive, 1 stars). page https://korczis.github.io/work/cluster-kubernetes/; cs page https://korczis.github.io/cs/work/cluster-kubernetes/; GitHub https://github.com/korczis/cluster-kubernetes; GitLab https://gitlab.com/korczis/cluster-kubernetes
+- cluster: Run your own CoreOS/Kubernetes cluster (Ruby, 2017, archive). page https://korczis.github.io/work/cluster/; cs page https://korczis.github.io/cs/work/cluster/; GitHub https://github.com/korczis/cluster; GitLab https://gitlab.com/korczis/cluster
+- docker-dstk: Dockerized http://www.datasciencetoolkit.org (Shell, 2015, archive, 5 stars). page https://korczis.github.io/work/docker-dstk/; cs page https://korczis.github.io/cs/work/docker-dstk/; GitHub https://github.com/korczis/docker-dstk; GitLab https://gitlab.com/korczis/docker-dstk
+- docker-datasciencetoolbox: Dockerized http://datasciencetoolbox.org (2015, archive). page https://korczis.github.io/work/docker-datasciencetoolbox/; cs page https://korczis.github.io/cs/work/docker-datasciencetoolbox/; GitHub https://github.com/korczis/docker-datasciencetoolbox; GitLab https://gitlab.com/korczis/docker-datasciencetoolbox
+- docker-conf2015: Dockerfile for GD ConferenceDay 2015 (JavaScript, 2015, archive). page https://korczis.github.io/work/docker-conf2015/; cs page https://korczis.github.io/cs/work/docker-conf2015/; GitHub https://github.com/korczis/docker-conf2015; GitLab https://gitlab.com/korczis/docker-conf2015
+- apollon: Your own personal cluster built on top of the cloud. (Ruby, 2014–2015, archive, 4 stars). page https://korczis.github.io/work/apollon/; cs page https://korczis.github.io/cs/work/apollon/; GitHub https://github.com/korczis/apollon; GitLab https://gitlab.com/korczis/apollon; site https://korczis.github.io/apollon/
+- social-icons: Social Networks icons from Devise Example (2013, archive, 1 stars). page https://korczis.github.io/work/social-icons/; cs page https://korczis.github.io/cs/work/social-icons/; GitHub https://github.com/korczis/social-icons; GitLab https://gitlab.com/korczis/social-icons
 
-### Web (16)
+### Web (14)
 
-- korczis.github.io: Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus. (JavaScript, 2024). article https://korczis.github.io/work/korczis-github-io/; GitHub https://github.com/korczis/korczis.github.io
-- ApolloCrawler-github-io (HTML, 2019). GitLab https://gitlab.com/korczis/ApolloCrawler-github-io
-- annasabatova-cz: Petice za odvolani annysabatove.cz (CSS, 2019). GitLab https://gitlab.com/korczis/annasabatova-cz
-- korczis-com: korczis.com website (HTML, 2019). GitLab https://gitlab.com/korczis/korczis-com
-- korczis-github-com: Github Pages (CSS, 2019). GitLab https://gitlab.com/korczis/korczis-github-com
-- pavian-eu: pavian.eu website (HTML, 2019). GitLab https://gitlab.com/korczis/pavian-eu
-- korczis.gitlab.io (CSS, 2025). article https://korczis.github.io/work/korczis-gitlab-io/; GitLab https://gitlab.com/korczis/korczis.gitlab.io
-- nestravenkam: Stravenky (CSS, 2019). GitHub https://github.com/korczis/nestravenkam; GitLab https://gitlab.com/korczis/nestravenkam
-- tosh: Yet Another Web Application Template/Framework (Elixir, 2019). GitHub https://github.com/korczis/tosh; GitLab https://gitlab.com/korczis/tosh
-- the-scratch: Single Page Application written in Elm with Elixir/Phoenix Backend (JavaScript, 2017). GitHub https://github.com/korczis/the-scratch; GitLab https://gitlab.com/korczis/the-scratch
-- web-spa: Single Page Application written in Elm with Elixir/Phoenix Backend (JavaScript, 2017). GitHub https://github.com/korczis/web-spa; GitLab https://gitlab.com/korczis/web-spa
-- pavian.eu: pavian.eu website (ApacheConf, 2015). GitHub https://github.com/korczis/pavian.eu
-- microscratch-react: Rect version of microscratch (2015). GitHub https://github.com/korczis/microscratch-react; GitLab https://gitlab.com/korczis/microscratch-react
-- microscratch: Light Weight Web Framework using node.js, mongo, sockets, ember.js ... (JavaScript, 2014). GitHub https://github.com/korczis/microscratch; GitLab https://gitlab.com/korczis/microscratch
-- annasabatova.cz: Petice za odvolani annysabatove.cz (CSS, 2014). GitHub https://github.com/korczis/annasabatova.cz
-- craftsmen: Web UI for listing of czech companies (JavaScript, 2014). GitHub https://github.com/korczis/craftsmen; GitLab https://gitlab.com/korczis/craftsmen
+- korczis.github.io: Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus. (JavaScript, 2024–2026, active within 12 months, supervised by Majordomus). page https://korczis.github.io/work/korczis-github-io/; cs page https://korczis.github.io/cs/work/korczis-github-io/; GitHub https://github.com/korczis/korczis.github.io
+- ApolloCrawler-github-io (HTML, 2016, archive). page https://korczis.github.io/work/apollocrawler-github-io/; cs page https://korczis.github.io/cs/work/apollocrawler-github-io/; GitLab https://gitlab.com/korczis/ApolloCrawler-github-io
+- korczis-com: korczis.com website (HTML, 2014–2015, archive). page https://korczis.github.io/work/korczis-com/; cs page https://korczis.github.io/cs/work/korczis-com/; GitLab https://gitlab.com/korczis/korczis-com
+- korczis-github-com: Github Pages (CSS, 2014–2015, archive). page https://korczis.github.io/work/korczis-github-com/; cs page https://korczis.github.io/cs/work/korczis-github-com/; GitLab https://gitlab.com/korczis/korczis-github-com
+- korczis.gitlab.io (CSS, 2025, active within 24 months). page https://korczis.github.io/work/korczis-gitlab-io/; cs page https://korczis.github.io/cs/work/korczis-gitlab-io/; GitLab https://gitlab.com/korczis/korczis.gitlab.io
+- nestravenkam: Stravenky (CSS, 2019, archive). page https://korczis.github.io/work/nestravenkam/; cs page https://korczis.github.io/cs/work/nestravenkam/; GitHub https://github.com/korczis/nestravenkam; GitLab https://gitlab.com/korczis/nestravenkam
+- tosh: Yet Another Web Application Template/Framework (Elixir, 2019, archive). page https://korczis.github.io/work/tosh/; cs page https://korczis.github.io/cs/work/tosh/; GitHub https://github.com/korczis/tosh; GitLab https://gitlab.com/korczis/tosh
+- the-scratch: Single Page Application written in Elm with Elixir/Phoenix Backend (JavaScript, 2017–2018, archive, 3 stars). page https://korczis.github.io/work/the-scratch/; cs page https://korczis.github.io/cs/work/the-scratch/; GitHub https://github.com/korczis/the-scratch; GitLab https://gitlab.com/korczis/the-scratch
+- web-spa: Single Page Application written in Elm with Elixir/Phoenix Backend (JavaScript, 2017, archive, 1 stars). page https://korczis.github.io/work/web-spa/; cs page https://korczis.github.io/cs/work/web-spa/; GitHub https://github.com/korczis/web-spa; GitLab https://gitlab.com/korczis/web-spa
+- pavian.eu: pavian.eu website (ApacheConf, 2015, archive). page https://korczis.github.io/work/pavian-eu/; cs page https://korczis.github.io/cs/work/pavian-eu/; GitHub https://github.com/korczis/pavian.eu; GitLab https://gitlab.com/korczis/pavian-eu
+- microscratch-react: Rect version of microscratch (2015, archive). page https://korczis.github.io/work/microscratch-react/; cs page https://korczis.github.io/cs/work/microscratch-react/; GitHub https://github.com/korczis/microscratch-react; GitLab https://gitlab.com/korczis/microscratch-react
+- microscratch: Light Weight Web Framework using node.js, mongo, sockets, ember.js ... (JavaScript, 2014–2015, archive). page https://korczis.github.io/work/microscratch/; cs page https://korczis.github.io/cs/work/microscratch/; GitHub https://github.com/korczis/microscratch; GitLab https://gitlab.com/korczis/microscratch
+- annasabatova.cz: Petice za odvolani annysabatove.cz (CSS, 2014, archive). page https://korczis.github.io/work/annasabatova-cz/; cs page https://korczis.github.io/cs/work/annasabatova-cz/; GitHub https://github.com/korczis/annasabatova.cz; GitLab https://gitlab.com/korczis/annasabatova-cz
+- craftsmen: Web UI for listing of czech companies (JavaScript, 2014, archive). page https://korczis.github.io/work/craftsmen/; cs page https://korczis.github.io/cs/work/craftsmen/; GitHub https://github.com/korczis/craftsmen; GitLab https://gitlab.com/korczis/craftsmen
 
-### Libraries (7)
+### Libraries (6)
 
-- gauc-ex: Elxir Wrapper for Gauc - Rust Wrapper for Couchbase (Elixir, 2019). GitLab https://gitlab.com/korczis/gauc-ex
-- hydra: Modular wrapper and interface for pool of orchestrated Google Chrome instances (Elixir, 2019). GitLab https://gitlab.com/korczis/hydra
-- gauc.ex: Elxir Wrapper for Gauc - Rust Wrapper for Couchbase (Elixir, 2017). GitHub https://github.com/korczis/gauc.ex
-- easy-plugin-plugins (Rust, 2016). GitHub https://github.com/korczis/easy-plugin-plugins; GitLab https://gitlab.com/korczis/easy-plugin-plugins
-- peg-parser: Parser built using peg.js (JavaScript, 2016). GitHub https://github.com/korczis/peg-parser; GitLab https://gitlab.com/korczis/peg-parser
-- babel-plugin-transform-graphql: Babel Plugin for Transforming GraphQL (JavaScript, 2016). GitHub https://github.com/korczis/babel-plugin-transform-graphql; GitLab https://gitlab.com/korczis/babel-plugin-transform-graphql
-- skype-adapter-client: Ruby client application for korczis/skype-adapter (2013). GitHub https://github.com/korczis/skype-adapter-client; GitLab https://gitlab.com/korczis/skype-adapter-client
+- hydra: Modular wrapper and interface for pool of orchestrated Google Chrome instances (Elixir, 2019, archive, 1 stars). page https://korczis.github.io/work/hydra/; cs page https://korczis.github.io/cs/work/hydra/; GitLab https://gitlab.com/korczis/hydra
+- gauc.ex: Elxir Wrapper for Gauc - Rust Wrapper for Couchbase (Elixir, 2017–2018, archive, 3 stars). page https://korczis.github.io/work/gauc-ex/; cs page https://korczis.github.io/cs/work/gauc-ex/; GitHub https://github.com/korczis/gauc.ex; GitLab https://gitlab.com/korczis/gauc-ex
+- easy-plugin-plugins (Rust, 2016, archive). page https://korczis.github.io/work/easy-plugin-plugins/; cs page https://korczis.github.io/cs/work/easy-plugin-plugins/; GitHub https://github.com/korczis/easy-plugin-plugins; GitLab https://gitlab.com/korczis/easy-plugin-plugins
+- peg-parser: Parser built using peg.js (JavaScript, 2016, archive). page https://korczis.github.io/work/peg-parser/; cs page https://korczis.github.io/cs/work/peg-parser/; GitHub https://github.com/korczis/peg-parser; GitLab https://gitlab.com/korczis/peg-parser
+- babel-plugin-transform-graphql: Babel Plugin for Transforming GraphQL (JavaScript, 2016, archive). page https://korczis.github.io/work/babel-plugin-transform-graphql/; cs page https://korczis.github.io/cs/work/babel-plugin-transform-graphql/; GitHub https://github.com/korczis/babel-plugin-transform-graphql; GitLab https://gitlab.com/korczis/babel-plugin-transform-graphql
+- skype-adapter-client: Ruby client application for korczis/skype-adapter (2013, archive). page https://korczis.github.io/work/skype-adapter-client/; cs page https://korczis.github.io/cs/work/skype-adapter-client/; GitHub https://github.com/korczis/skype-adapter-client; GitLab https://gitlab.com/korczis/skype-adapter-client
 
 ### Learning and experiments (21)
 
-- happ: Playground App created during my Hospital Stay (C++, 2021). GitHub https://github.com/korczis/happ; GitLab https://gitlab.com/korczis/happ
-- rustler-test: Working Example of Rustler - Safe Rust bridge for creating Erlang NIF functions (Elixir, 2017). GitHub https://github.com/korczis/rustler-test; GitLab https://gitlab.com/korczis/rustler-test
-- Test-Elixir (Elixir, 2017). GitHub https://github.com/korczis/Test-Elixir; GitLab https://gitlab.com/korczis/Test-Elixir
-- skull-elixir: Programming learning materials, examples, sources ... (Elixir, 2016). GitHub https://github.com/korczis/skull-elixir; GitLab https://gitlab.com/korczis/skull-elixir
-- skull-rust: Rust experiments (Rust, 2016). GitHub https://github.com/korczis/skull-rust; GitLab https://gitlab.com/korczis/skull-rust
-- node-proxy-upload: Simple example how to upload multipart files via node http proxy (JavaScript, 2016). GitHub https://github.com/korczis/node-proxy-upload; GitLab https://gitlab.com/korczis/node-proxy-upload
-- skull-cpp: C++ Skull (CMake, 2014). GitHub https://github.com/korczis/skull-cpp; GitLab https://gitlab.com/korczis/skull-cpp
-- grache-test: Test project for grache (Ruby, 2015). GitHub https://github.com/korczis/grache-test; GitLab https://gitlab.com/korczis/grache-test
-- skull-emscripten: Emscripten Skull (C++, 2014). GitHub https://github.com/korczis/skull-emscripten; GitLab https://gitlab.com/korczis/skull-emscripten
-- skull-c (C, 2014). GitHub https://github.com/korczis/skull-c; GitLab https://gitlab.com/korczis/skull-c
-- skull: Programming learning materials, examples, sources ... (Shell, 2014). GitHub https://github.com/korczis/skull; GitLab https://gitlab.com/korczis/skull
-- skull-java (Java, 2014). GitHub https://github.com/korczis/skull-java; GitLab https://gitlab.com/korczis/skull-java
-- skull-ruby: Ruby Skull (Ruby, 2014). GitHub https://github.com/korczis/skull-ruby; GitLab https://gitlab.com/korczis/skull-ruby
-- skull-nodejs: Node.js Skull (Makefile, 2014). GitHub https://github.com/korczis/skull-nodejs; GitLab https://gitlab.com/korczis/skull-nodejs
-- skull-haskell (Haskell, 2014). GitHub https://github.com/korczis/skull-haskell; GitLab https://gitlab.com/korczis/skull-haskell
-- skull-erlang: Programming learning materials, examples, sources ... (Erlang, 2014). GitHub https://github.com/korczis/skull-erlang; GitLab https://gitlab.com/korczis/skull-erlang
-- cs-benchmark: Simple C# Benchmark (C#, 2014). GitHub https://github.com/korczis/cs-benchmark; GitLab https://gitlab.com/korczis/cs-benchmark
-- generator-the-scratch: Yeoman Generator for The Scratch (JavaScript, 2013). GitHub https://github.com/korczis/generator-the-scratch; GitLab https://gitlab.com/korczis/generator-the-scratch
-- Rocnikac4 (C#, 2013). GitHub https://github.com/korczis/Rocnikac4; GitLab https://gitlab.com/korczis/Rocnikac4
-- malina: Raspberry Pi playground (Shell, 2013). GitHub https://github.com/korczis/malina; GitLab https://gitlab.com/korczis/malina
-- sandbox: Something just for fun. This is place where I play with new techs... (Ruby, 2012). GitHub https://github.com/korczis/sandbox; GitLab https://gitlab.com/korczis/sandbox
+- happ: Playground App created during my Hospital Stay (C++, 2021, archive, 1 stars). page https://korczis.github.io/work/happ/; cs page https://korczis.github.io/cs/work/happ/; GitHub https://github.com/korczis/happ; GitLab https://gitlab.com/korczis/happ
+- rustler-test: Working Example of Rustler - Safe Rust bridge for creating Erlang NIF functions (Elixir, 2017, archive). page https://korczis.github.io/work/rustler-test/; cs page https://korczis.github.io/cs/work/rustler-test/; GitHub https://github.com/korczis/rustler-test; GitLab https://gitlab.com/korczis/rustler-test
+- Test-Elixir (Elixir, 2017, archive). page https://korczis.github.io/work/test-elixir/; cs page https://korczis.github.io/cs/work/test-elixir/; GitHub https://github.com/korczis/Test-Elixir; GitLab https://gitlab.com/korczis/Test-Elixir
+- skull-elixir: Programming learning materials, examples, sources ... (Elixir, 2016, archive). page https://korczis.github.io/work/skull-elixir/; cs page https://korczis.github.io/cs/work/skull-elixir/; GitHub https://github.com/korczis/skull-elixir; GitLab https://gitlab.com/korczis/skull-elixir
+- skull-rust: Rust experiments (Rust, 2016, archive). page https://korczis.github.io/work/skull-rust/; cs page https://korczis.github.io/cs/work/skull-rust/; GitHub https://github.com/korczis/skull-rust; GitLab https://gitlab.com/korczis/skull-rust
+- node-proxy-upload: Simple example how to upload multipart files via node http proxy (JavaScript, 2016, archive). page https://korczis.github.io/work/node-proxy-upload/; cs page https://korczis.github.io/cs/work/node-proxy-upload/; GitHub https://github.com/korczis/node-proxy-upload; GitLab https://gitlab.com/korczis/node-proxy-upload
+- skull-cpp: C++ Skull (CMake, 2014–2015, archive). page https://korczis.github.io/work/skull-cpp/; cs page https://korczis.github.io/cs/work/skull-cpp/; GitHub https://github.com/korczis/skull-cpp; GitLab https://gitlab.com/korczis/skull-cpp
+- grache-test: Test project for grache (Ruby, 2015, archive). page https://korczis.github.io/work/grache-test/; cs page https://korczis.github.io/cs/work/grache-test/; GitHub https://github.com/korczis/grache-test; GitLab https://gitlab.com/korczis/grache-test
+- skull-emscripten: Emscripten Skull (C++, 2014, archive). page https://korczis.github.io/work/skull-emscripten/; cs page https://korczis.github.io/cs/work/skull-emscripten/; GitHub https://github.com/korczis/skull-emscripten; GitLab https://gitlab.com/korczis/skull-emscripten
+- skull-c (C, 2014, archive). page https://korczis.github.io/work/skull-c/; cs page https://korczis.github.io/cs/work/skull-c/; GitHub https://github.com/korczis/skull-c; GitLab https://gitlab.com/korczis/skull-c
+- skull: Programming learning materials, examples, sources ... (Shell, 2014, archive, 2 stars). page https://korczis.github.io/work/skull/; cs page https://korczis.github.io/cs/work/skull/; GitHub https://github.com/korczis/skull; GitLab https://gitlab.com/korczis/skull
+- skull-java (Java, 2014, archive). page https://korczis.github.io/work/skull-java/; cs page https://korczis.github.io/cs/work/skull-java/; GitHub https://github.com/korczis/skull-java; GitLab https://gitlab.com/korczis/skull-java
+- skull-ruby: Ruby Skull (Ruby, 2014, archive). page https://korczis.github.io/work/skull-ruby/; cs page https://korczis.github.io/cs/work/skull-ruby/; GitHub https://github.com/korczis/skull-ruby; GitLab https://gitlab.com/korczis/skull-ruby
+- skull-nodejs: Node.js Skull (Makefile, 2014, archive). page https://korczis.github.io/work/skull-nodejs/; cs page https://korczis.github.io/cs/work/skull-nodejs/; GitHub https://github.com/korczis/skull-nodejs; GitLab https://gitlab.com/korczis/skull-nodejs
+- skull-haskell (Haskell, 2014, archive). page https://korczis.github.io/work/skull-haskell/; cs page https://korczis.github.io/cs/work/skull-haskell/; GitHub https://github.com/korczis/skull-haskell; GitLab https://gitlab.com/korczis/skull-haskell
+- skull-erlang: Programming learning materials, examples, sources ... (Erlang, 2014, archive). page https://korczis.github.io/work/skull-erlang/; cs page https://korczis.github.io/cs/work/skull-erlang/; GitHub https://github.com/korczis/skull-erlang; GitLab https://gitlab.com/korczis/skull-erlang
+- cs-benchmark: Simple C# Benchmark (C#, 2014, archive). page https://korczis.github.io/work/cs-benchmark/; cs page https://korczis.github.io/cs/work/cs-benchmark/; GitHub https://github.com/korczis/cs-benchmark; GitLab https://gitlab.com/korczis/cs-benchmark
+- generator-the-scratch: Yeoman Generator for The Scratch (JavaScript, 2013, archive). page https://korczis.github.io/work/generator-the-scratch/; cs page https://korczis.github.io/cs/work/generator-the-scratch/; GitHub https://github.com/korczis/generator-the-scratch; GitLab https://gitlab.com/korczis/generator-the-scratch
+- Rocnikac4 (C#, 2013, archive). page https://korczis.github.io/work/rocnikac4/; cs page https://korczis.github.io/cs/work/rocnikac4/; GitHub https://github.com/korczis/Rocnikac4; GitLab https://gitlab.com/korczis/Rocnikac4
+- malina: Raspberry Pi playground (Shell, 2013, archive). page https://korczis.github.io/work/malina/; cs page https://korczis.github.io/cs/work/malina/; GitHub https://github.com/korczis/malina; GitLab https://gitlab.com/korczis/malina
+- sandbox: Something just for fun. This is place where I play with new techs... (Ruby, 2012, archive, 1 stars). page https://korczis.github.io/work/sandbox/; cs page https://korczis.github.io/cs/work/sandbox/; GitHub https://github.com/korczis/sandbox; GitLab https://gitlab.com/korczis/sandbox
 
-### Tools (64)
+### Tools (63)
 
-- astronomists (Python, 2026). article https://korczis.github.io/work/astronomists/; GitHub https://github.com/korczis/astronomists; site https://korczis.github.io/astronomists/
-- vomaste.cz (JavaScript, 2026). article https://korczis.github.io/work/vomaste-cz/; GitHub https://github.com/korczis/vomaste.cz; site https://korczis.github.io/vomaste.cz/
-- the-psycho (Elixir, 2025). article https://korczis.github.io/work/the-psycho/; GitLab https://gitlab.com/korczis/the-psycho
-- gists-search: Catalogue, enrichment and search for a mirror of korczis's GitHub gists (Python, 2026). article https://korczis.github.io/work/gists-search/; GitHub https://github.com/korczis/gists-search; site https://korczis.github.io/gists-search/
-- u-tygra (JavaScript, 2024). article https://korczis.github.io/work/u-tygra/; GitHub https://github.com/korczis/u-tygra; GitLab https://gitlab.com/korczis/u-tygra; site https://korczis.github.io/u-tygra/
-- tinder-nomics (2025). article https://korczis.github.io/work/tinder-nomics/; GitLab https://gitlab.com/korczis/tinder-nomics
-- prism (2024). article https://korczis.github.io/work/prism/; GitLab https://gitlab.com/korczis/prism
-- past (2025). article https://korczis.github.io/work/past/; GitLab https://gitlab.com/korczis/past
-- lethe-it: lethe.it - your personal smart links archive, organizer, classifier and much more (JavaScript, 2019). GitLab https://gitlab.com/korczis/lethe-it
-- astudo (Elixir, 2022). GitLab https://gitlab.com/korczis/astudo
-- pdf_renderer (Python, 2024). article https://korczis.github.io/work/pdf-renderer/; GitLab https://gitlab.com/korczis/pdf_renderer
-- marketing-ideas (2024). article https://korczis.github.io/work/marketing-ideas/; GitLab https://gitlab.com/korczis/marketing-ideas
-- simple_geocoder (Elixir, 2024). article https://korczis.github.io/work/simple-geocoder/; GitLab https://gitlab.com/korczis/simple_geocoder
-- job-processor: This is a simple web service built with Elixir, Plug, and Cowboy that processes job tasks with dependencies and generates execution order and bash scripts. (Elixir, 2024). article https://korczis.github.io/work/job-processor/; GitLab https://gitlab.com/korczis/job-processor
-- dispatcher (TypeScript, 2024). article https://korczis.github.io/work/dispatcher/; GitLab https://gitlab.com/korczis/dispatcher
-- corvidae (TeX, 2025). article https://korczis.github.io/work/corvidae/; GitLab https://gitlab.com/korczis/corvidae
-- comtesse (Just, 2025). article https://korczis.github.io/work/comtesse/; GitLab https://gitlab.com/korczis/comtesse
-- GHT (2025). article https://korczis.github.io/work/ght/; GitLab https://gitlab.com/korczis/GHT
-- prismatic (Elixir, 2025). article https://korczis.github.io/work/prismatic/; GitHub https://github.com/korczis/prismatic
-- tap (2024). article https://korczis.github.io/work/tap/; GitHub https://github.com/korczis/tap
-- bubbler: Bubbler is a simple JavaScript application that generates a speech bubble with dynamic text over an image of a boy. The text is passed through a URL query parameter, allowing for easy customization of the speech content. (JavaScript, 2024). article https://korczis.github.io/work/bubbler/; GitHub https://github.com/korczis/bubbler; site https://korczis.github.io/bubbler/
-- pissaleck: Anything about everything and vice versa (2024). article https://korczis.github.io/work/pissaleck/; GitHub https://github.com/korczis/pissaleck
-- MindScape (2023). article https://korczis.github.io/work/mindscape/; GitHub https://github.com/korczis/MindScape
-- el-magico-cache: Elixir Cache (Elixir, 2023). article https://korczis.github.io/work/el-magico-cache/; GitHub https://github.com/korczis/el-magico-cache
-- kanec (Elixir, 2019). GitHub https://github.com/korczis/kanec; GitLab https://gitlab.com/korczis/kanec
-- rest-hello-world-benchmark: Benchmark of Hello World REST Endpoint in various languages / frameworks (Elixir, 2022). GitHub https://github.com/korczis/rest-hello-world-benchmark
-- caregiver: Takes responsibility for your containers so you can spend more time with your (2022). GitHub https://github.com/korczis/caregiver
-- 3d-print: 3D Print stuff (OpenSCAD, 2021). GitHub https://github.com/korczis/3d-print
-- ts-logger (TypeScript, 2019). GitHub https://github.com/korczis/ts-logger; GitLab https://gitlab.com/korczis/ts-logger
-- home: home directory (Shell, 2019). GitHub https://github.com/korczis/home; GitLab https://gitlab.com/korczis/home
-- twitter-analysis: Twitter Analysis (2019). GitHub https://github.com/korczis/twitter-analysis; GitLab https://gitlab.com/korczis/twitter-analysis
-- bcnode-extra-scripts: BC Extra Scripts (DX) (Shell, 2018). GitHub https://github.com/korczis/bcnode-extra-scripts; GitLab https://gitlab.com/korczis/bcnode-extra-scripts
-- bc-apple: BlockCollider Apple Apps (Swift, 2018). GitHub https://github.com/korczis/bc-apple; GitLab https://gitlab.com/korczis/bc-apple
-- js-libp2p-umbrella: Umbrella repository for j2-libp2p and relavant modules (2018). GitHub https://github.com/korczis/js-libp2p-umbrella; GitLab https://gitlab.com/korczis/js-libp2p-umbrella
-- bcnode-old: Mining node with built-in block rover and DHT. (JavaScript, 2018). GitHub https://github.com/korczis/bcnode-old; GitLab https://gitlab.com/korczis/bcnode-old
-- models: Just Models ;-) (2017). GitHub https://github.com/korczis/models; GitLab https://gitlab.com/korczis/models
-- gdc-dumpator (Ruby, 2017). GitHub https://github.com/korczis/gdc-dumpator; GitLab https://gitlab.com/korczis/gdc-dumpator
-- in-rust-we-trust: In Rust We Trust (2017). GitHub https://github.com/korczis/in-rust-we-trust; GitLab https://gitlab.com/korczis/in-rust-we-trust
-- zeman-ucet: Zpravy pro prijemce ze Zemanova transparentniho uctu na predvolebni kampan (Ruby, 2017). GitHub https://github.com/korczis/zeman-ucet; GitLab https://gitlab.com/korczis/zeman-ucet
-- zaas: ZaaS - Zeman As A Service (JavaScript, 2017). GitHub https://github.com/korczis/zaas; GitLab https://gitlab.com/korczis/zaas
-- mapoffacts (JavaScript, 2017). GitHub https://github.com/korczis/mapoffacts; GitLab https://gitlab.com/korczis/mapoffacts
-- streamflow: Stream Flow - Fast Stream Processing in Rust (Rust, 2017). GitHub https://github.com/korczis/streamflow; GitLab https://gitlab.com/korczis/streamflow
-- sli2dli: SLI to DLI implementation written in rust. Nothing more, nothing less. (Rust, 2017). GitHub https://github.com/korczis/sli2dli; GitLab https://gitlab.com/korczis/sli2dli
-- wims: Where is my space? (Rust, 2017). GitHub https://github.com/korczis/wims; GitLab https://gitlab.com/korczis/wims
-- peg-loader: Peg.js grammar loader (JavaScript, 2016). GitHub https://github.com/korczis/peg-loader; GitLab https://gitlab.com/korczis/peg-loader
-- ideas: Just Ideas (2016). GitHub https://github.com/korczis/ideas; GitLab https://gitlab.com/korczis/ideas
-- rustler_mix: Rustler Mix (Elixir, 2016). GitHub https://github.com/korczis/rustler_mix; GitLab https://gitlab.com/korczis/rustler_mix
-- charon: Ferryman who carries other people connections to other side. Operation Area? Wi-Fi! (Rust, 2016). GitHub https://github.com/korczis/charon; GitLab https://gitlab.com/korczis/charon
-- csv2psql: Tool for transforming CSV into SQL statements for insert or update into DB (Ruby, 2014). GitHub https://github.com/korczis/csv2psql; GitLab https://gitlab.com/korczis/csv2psql; site https://korczis.github.io/csv2psql/
-- json2csv: Easy to use tool for converting JSON to CSV (Ruby, 2014). GitHub https://github.com/korczis/json2csv; GitLab https://gitlab.com/korczis/json2csv
-- magicbiz: A Decentralized Autonomous Organization Proof of Concept (2015). GitHub https://github.com/korczis/magicbiz; GitLab https://gitlab.com/korczis/magicbiz
-- wangsta: Wanna be Gangsta (2015). GitHub https://github.com/korczis/wangsta; GitLab https://gitlab.com/korczis/wangsta
-- grache: Cache for ruby gems (Ruby, 2015). GitHub https://github.com/korczis/grache; GitLab https://gitlab.com/korczis/grache
-- iCave: Open Home Automation Platform (C++, 2014). GitHub https://github.com/korczis/iCave; GitLab https://gitlab.com/korczis/iCave
-- lethe.it: lethe.it - your personal smart links archive, organizer, classifier and much more (JavaScript, 2014). GitHub https://github.com/korczis/lethe.it
-- ares-api (2014). GitHub https://github.com/korczis/ares-api; GitLab https://gitlab.com/korczis/ares-api
-- photos: My Photos (2014). GitHub https://github.com/korczis/photos; GitLab https://gitlab.com/korczis/photos
-- principal: The one who orchestrates all the folks in the circus ... (2014). GitHub https://github.com/korczis/principal; GitLab https://gitlab.com/korczis/principal
-- codecademy: exmples (Ruby, 2014). GitHub https://github.com/korczis/codecademy; GitLab https://gitlab.com/korczis/codecademy
-- generator-microscratch: Yeoman generator of microscratch based projects (JavaScript, 2014). GitHub https://github.com/korczis/generator-microscratch; GitLab https://gitlab.com/korczis/generator-microscratch
-- lola: Loader & Launcher of Modular NodeJS Apps (JavaScript, 2013). GitHub https://github.com/korczis/lola; GitLab https://gitlab.com/korczis/lola
-- inspectors: Tools used for various kind of inspections .... (2012). GitHub https://github.com/korczis/inspectors; GitLab https://gitlab.com/korczis/inspectors
-- ares: Simple (AMQP Based) Monitoring framework (Ruby, 2012). GitHub https://github.com/korczis/ares; GitLab https://gitlab.com/korczis/ares
-- reflex: .NET Reflection tools (C#, 2012). GitHub https://github.com/korczis/reflex; GitLab https://gitlab.com/korczis/reflex
+- astronomists (Python, 2026, active within 12 months). page https://korczis.github.io/work/astronomists/; cs page https://korczis.github.io/cs/work/astronomists/; GitHub https://github.com/korczis/astronomists; site https://korczis.github.io/astronomists/
+- vomaste.cz (JavaScript, 2026, active within 12 months). page https://korczis.github.io/work/vomaste-cz/; cs page https://korczis.github.io/cs/work/vomaste-cz/; GitHub https://github.com/korczis/vomaste.cz; site https://korczis.github.io/vomaste.cz/
+- the-psycho (Elixir, 2025–2026, active within 12 months). page https://korczis.github.io/work/the-psycho/; cs page https://korczis.github.io/cs/work/the-psycho/; GitLab https://gitlab.com/korczis/the-psycho
+- gists-search: Catalogue, enrichment and search for a mirror of korczis's GitHub gists (Python, 2026, active within 12 months). page https://korczis.github.io/work/gists-search/; cs page https://korczis.github.io/cs/work/gists-search/; GitHub https://github.com/korczis/gists-search; site https://korczis.github.io/gists-search/
+- u-tygra (JavaScript, 2024–2025, active within 24 months). page https://korczis.github.io/work/u-tygra/; cs page https://korczis.github.io/cs/work/u-tygra/; GitHub https://github.com/korczis/u-tygra; GitLab https://gitlab.com/korczis/u-tygra; site https://korczis.github.io/u-tygra/
+- tinder-nomics (2025–2026, active within 12 months). page https://korczis.github.io/work/tinder-nomics/; cs page https://korczis.github.io/cs/work/tinder-nomics/; GitLab https://gitlab.com/korczis/tinder-nomics
+- prism (2024–2026, active within 12 months). page https://korczis.github.io/work/prism/; cs page https://korczis.github.io/cs/work/prism/; GitLab https://gitlab.com/korczis/prism
+- past (2025–2026, active within 12 months). page https://korczis.github.io/work/past/; cs page https://korczis.github.io/cs/work/past/; GitLab https://gitlab.com/korczis/past
+- astudo (Elixir, 2022, archive). page https://korczis.github.io/work/astudo/; cs page https://korczis.github.io/cs/work/astudo/; GitLab https://gitlab.com/korczis/astudo
+- pdf_renderer (Python, 2024, active within 48 months). page https://korczis.github.io/work/pdf-renderer/; cs page https://korczis.github.io/cs/work/pdf-renderer/; GitLab https://gitlab.com/korczis/pdf_renderer
+- marketing-ideas (2024, active within 48 months). page https://korczis.github.io/work/marketing-ideas/; cs page https://korczis.github.io/cs/work/marketing-ideas/; GitLab https://gitlab.com/korczis/marketing-ideas
+- simple_geocoder (Elixir, 2024, active within 48 months). page https://korczis.github.io/work/simple-geocoder/; cs page https://korczis.github.io/cs/work/simple-geocoder/; GitLab https://gitlab.com/korczis/simple_geocoder
+- job-processor: This is a simple web service built with Elixir, Plug, and Cowboy that processes job tasks with dependencies and generates execution order and bash scripts. (Elixir, 2024, active within 48 months). page https://korczis.github.io/work/job-processor/; cs page https://korczis.github.io/cs/work/job-processor/; GitLab https://gitlab.com/korczis/job-processor
+- dispatcher (TypeScript, 2024, active within 48 months). page https://korczis.github.io/work/dispatcher/; cs page https://korczis.github.io/cs/work/dispatcher/; GitLab https://gitlab.com/korczis/dispatcher
+- corvidae (TeX, 2025, active within 24 months). page https://korczis.github.io/work/corvidae/; cs page https://korczis.github.io/cs/work/corvidae/; GitLab https://gitlab.com/korczis/corvidae
+- comtesse (Just, 2025, active within 24 months). page https://korczis.github.io/work/comtesse/; cs page https://korczis.github.io/cs/work/comtesse/; GitLab https://gitlab.com/korczis/comtesse
+- GHT (2025, active within 24 months). page https://korczis.github.io/work/ght/; cs page https://korczis.github.io/cs/work/ght/; GitLab https://gitlab.com/korczis/GHT
+- prismatic (Elixir, 2025, active within 24 months). page https://korczis.github.io/work/prismatic/; cs page https://korczis.github.io/cs/work/prismatic/; GitHub https://github.com/korczis/prismatic
+- tap (2024, active within 48 months). page https://korczis.github.io/work/tap/; cs page https://korczis.github.io/cs/work/tap/; GitHub https://github.com/korczis/tap
+- bubbler: Bubbler is a simple JavaScript application that generates a speech bubble with dynamic text over an image of a boy. The text is passed through a URL query parameter, allowing for easy customization of the speech content. (JavaScript, 2024, active within 48 months). page https://korczis.github.io/work/bubbler/; cs page https://korczis.github.io/cs/work/bubbler/; GitHub https://github.com/korczis/bubbler; site https://korczis.github.io/bubbler/
+- pissaleck: Anything about everything and vice versa (2024, active within 48 months). page https://korczis.github.io/work/pissaleck/; cs page https://korczis.github.io/cs/work/pissaleck/; GitHub https://github.com/korczis/pissaleck
+- MindScape (2023, active within 48 months). page https://korczis.github.io/work/mindscape/; cs page https://korczis.github.io/cs/work/mindscape/; GitHub https://github.com/korczis/MindScape
+- el-magico-cache: Elixir Cache (Elixir, 2023, active within 48 months). page https://korczis.github.io/work/el-magico-cache/; cs page https://korczis.github.io/cs/work/el-magico-cache/; GitHub https://github.com/korczis/el-magico-cache
+- kanec (Elixir, 2019, archive). page https://korczis.github.io/work/kanec/; cs page https://korczis.github.io/cs/work/kanec/; GitHub https://github.com/korczis/kanec; GitLab https://gitlab.com/korczis/kanec
+- rest-hello-world-benchmark: Benchmark of Hello World REST Endpoint in various languages / frameworks (Elixir, 2022, archive). page https://korczis.github.io/work/rest-hello-world-benchmark/; cs page https://korczis.github.io/cs/work/rest-hello-world-benchmark/; GitHub https://github.com/korczis/rest-hello-world-benchmark
+- caregiver: Takes responsibility for your containers so you can spend more time with your (2022, archive). page https://korczis.github.io/work/caregiver/; cs page https://korczis.github.io/cs/work/caregiver/; GitHub https://github.com/korczis/caregiver
+- 3d-print: 3D Print stuff (OpenSCAD, 2021, archive). page https://korczis.github.io/work/3d-print/; cs page https://korczis.github.io/cs/work/3d-print/; GitHub https://github.com/korczis/3d-print
+- ts-logger (TypeScript, 2019, archive). page https://korczis.github.io/work/ts-logger/; cs page https://korczis.github.io/cs/work/ts-logger/; GitHub https://github.com/korczis/ts-logger; GitLab https://gitlab.com/korczis/ts-logger
+- home: home directory (Shell, 2019, archive). page https://korczis.github.io/work/home/; cs page https://korczis.github.io/cs/work/home/; GitHub https://github.com/korczis/home; GitLab https://gitlab.com/korczis/home
+- twitter-analysis: Twitter Analysis (2019, archive). page https://korczis.github.io/work/twitter-analysis/; cs page https://korczis.github.io/cs/work/twitter-analysis/; GitHub https://github.com/korczis/twitter-analysis; GitLab https://gitlab.com/korczis/twitter-analysis
+- bcnode-extra-scripts: BC Extra Scripts (DX) (Shell, 2018, archive). page https://korczis.github.io/work/bcnode-extra-scripts/; cs page https://korczis.github.io/cs/work/bcnode-extra-scripts/; GitHub https://github.com/korczis/bcnode-extra-scripts; GitLab https://gitlab.com/korczis/bcnode-extra-scripts
+- bc-apple: BlockCollider Apple Apps (Swift, 2018, archive). page https://korczis.github.io/work/bc-apple/; cs page https://korczis.github.io/cs/work/bc-apple/; GitHub https://github.com/korczis/bc-apple; GitLab https://gitlab.com/korczis/bc-apple
+- js-libp2p-umbrella: Umbrella repository for j2-libp2p and relavant modules (2018, archive). page https://korczis.github.io/work/js-libp2p-umbrella/; cs page https://korczis.github.io/cs/work/js-libp2p-umbrella/; GitHub https://github.com/korczis/js-libp2p-umbrella; GitLab https://gitlab.com/korczis/js-libp2p-umbrella
+- bcnode-old: Mining node with built-in block rover and DHT. (JavaScript, 2018, archive). page https://korczis.github.io/work/bcnode-old/; cs page https://korczis.github.io/cs/work/bcnode-old/; GitHub https://github.com/korczis/bcnode-old; GitLab https://gitlab.com/korczis/bcnode-old
+- models: Just Models ;-) (2017, archive). page https://korczis.github.io/work/models/; cs page https://korczis.github.io/cs/work/models/; GitHub https://github.com/korczis/models; GitLab https://gitlab.com/korczis/models
+- gdc-dumpator (Ruby, 2017, archive). page https://korczis.github.io/work/gdc-dumpator/; cs page https://korczis.github.io/cs/work/gdc-dumpator/; GitHub https://github.com/korczis/gdc-dumpator; GitLab https://gitlab.com/korczis/gdc-dumpator
+- in-rust-we-trust: In Rust We Trust (2017, archive). page https://korczis.github.io/work/in-rust-we-trust/; cs page https://korczis.github.io/cs/work/in-rust-we-trust/; GitHub https://github.com/korczis/in-rust-we-trust; GitLab https://gitlab.com/korczis/in-rust-we-trust
+- zeman-ucet: Zpravy pro prijemce ze Zemanova transparentniho uctu na predvolebni kampan (Ruby, 2017, archive, 2 stars). page https://korczis.github.io/work/zeman-ucet/; cs page https://korczis.github.io/cs/work/zeman-ucet/; GitHub https://github.com/korczis/zeman-ucet; GitLab https://gitlab.com/korczis/zeman-ucet
+- zaas: ZaaS - Zeman As A Service (JavaScript, 2017, archive). page https://korczis.github.io/work/zaas/; cs page https://korczis.github.io/cs/work/zaas/; GitHub https://github.com/korczis/zaas; GitLab https://gitlab.com/korczis/zaas
+- mapoffacts (JavaScript, 2017, archive). page https://korczis.github.io/work/mapoffacts/; cs page https://korczis.github.io/cs/work/mapoffacts/; GitHub https://github.com/korczis/mapoffacts; GitLab https://gitlab.com/korczis/mapoffacts
+- streamflow: Stream Flow - Fast Stream Processing in Rust (Rust, 2017, archive). page https://korczis.github.io/work/streamflow/; cs page https://korczis.github.io/cs/work/streamflow/; GitHub https://github.com/korczis/streamflow; GitLab https://gitlab.com/korczis/streamflow
+- sli2dli: SLI to DLI implementation written in rust. Nothing more, nothing less. (Rust, 2017, archive). page https://korczis.github.io/work/sli2dli/; cs page https://korczis.github.io/cs/work/sli2dli/; GitHub https://github.com/korczis/sli2dli; GitLab https://gitlab.com/korczis/sli2dli
+- wims: Where is my space? (Rust, 2017, archive). page https://korczis.github.io/work/wims/; cs page https://korczis.github.io/cs/work/wims/; GitHub https://github.com/korczis/wims; GitLab https://gitlab.com/korczis/wims
+- peg-loader: Peg.js grammar loader (JavaScript, 2016, archive). page https://korczis.github.io/work/peg-loader/; cs page https://korczis.github.io/cs/work/peg-loader/; GitHub https://github.com/korczis/peg-loader; GitLab https://gitlab.com/korczis/peg-loader
+- ideas: Just Ideas (2016, archive). page https://korczis.github.io/work/ideas/; cs page https://korczis.github.io/cs/work/ideas/; GitHub https://github.com/korczis/ideas; GitLab https://gitlab.com/korczis/ideas
+- rustler_mix: Rustler Mix (Elixir, 2016, archive). page https://korczis.github.io/work/rustler-mix/; cs page https://korczis.github.io/cs/work/rustler-mix/; GitHub https://github.com/korczis/rustler_mix; GitLab https://gitlab.com/korczis/rustler_mix
+- charon: Ferryman who carries other people connections to other side. Operation Area? Wi-Fi! (Rust, 2016, archive). page https://korczis.github.io/work/charon/; cs page https://korczis.github.io/cs/work/charon/; GitHub https://github.com/korczis/charon; GitLab https://gitlab.com/korczis/charon
+- csv2psql: Tool for transforming CSV into SQL statements for insert or update into DB (Ruby, 2014–2015, archive, 5 stars). page https://korczis.github.io/work/csv2psql/; cs page https://korczis.github.io/cs/work/csv2psql/; GitHub https://github.com/korczis/csv2psql; GitLab https://gitlab.com/korczis/csv2psql; site https://korczis.github.io/csv2psql/
+- json2csv: Easy to use tool for converting JSON to CSV (Ruby, 2014–2015, archive, 34 stars). page https://korczis.github.io/work/json2csv/; cs page https://korczis.github.io/cs/work/json2csv/; GitHub https://github.com/korczis/json2csv; GitLab https://gitlab.com/korczis/json2csv
+- magicbiz: A Decentralized Autonomous Organization Proof of Concept (2015, archive). page https://korczis.github.io/work/magicbiz/; cs page https://korczis.github.io/cs/work/magicbiz/; GitHub https://github.com/korczis/magicbiz; GitLab https://gitlab.com/korczis/magicbiz
+- wangsta: Wanna be Gangsta (2015, archive). page https://korczis.github.io/work/wangsta/; cs page https://korczis.github.io/cs/work/wangsta/; GitHub https://github.com/korczis/wangsta; GitLab https://gitlab.com/korczis/wangsta
+- grache: Cache for ruby gems (Ruby, 2015, archive). page https://korczis.github.io/work/grache/; cs page https://korczis.github.io/cs/work/grache/; GitHub https://github.com/korczis/grache; GitLab https://gitlab.com/korczis/grache
+- iCave: Open Home Automation Platform (C++, 2014–2015, archive, 1 stars). page https://korczis.github.io/work/icave/; cs page https://korczis.github.io/cs/work/icave/; GitHub https://github.com/korczis/iCave; GitLab https://gitlab.com/korczis/iCave
+- lethe.it: lethe.it - your personal smart links archive, organizer, classifier and much more (JavaScript, 2014–2015, archive). page https://korczis.github.io/work/lethe-it/; cs page https://korczis.github.io/cs/work/lethe-it/; GitHub https://github.com/korczis/lethe.it; GitLab https://gitlab.com/korczis/lethe-it
+- ares-api (2014, archive). page https://korczis.github.io/work/ares-api/; cs page https://korczis.github.io/cs/work/ares-api/; GitHub https://github.com/korczis/ares-api; GitLab https://gitlab.com/korczis/ares-api
+- photos: My Photos (2014, archive). page https://korczis.github.io/work/photos/; cs page https://korczis.github.io/cs/work/photos/; GitHub https://github.com/korczis/photos; GitLab https://gitlab.com/korczis/photos
+- principal: The one who orchestrates all the folks in the circus ... (2014, archive). page https://korczis.github.io/work/principal/; cs page https://korczis.github.io/cs/work/principal/; GitHub https://github.com/korczis/principal; GitLab https://gitlab.com/korczis/principal
+- codecademy: exmples (Ruby, 2014, archive). page https://korczis.github.io/work/codecademy/; cs page https://korczis.github.io/cs/work/codecademy/; GitHub https://github.com/korczis/codecademy; GitLab https://gitlab.com/korczis/codecademy
+- generator-microscratch: Yeoman generator of microscratch based projects (JavaScript, 2014, archive). page https://korczis.github.io/work/generator-microscratch/; cs page https://korczis.github.io/cs/work/generator-microscratch/; GitHub https://github.com/korczis/generator-microscratch; GitLab https://gitlab.com/korczis/generator-microscratch
+- lola: Loader & Launcher of Modular NodeJS Apps (JavaScript, 2013–2014, archive). page https://korczis.github.io/work/lola/; cs page https://korczis.github.io/cs/work/lola/; GitHub https://github.com/korczis/lola; GitLab https://gitlab.com/korczis/lola
+- inspectors: Tools used for various kind of inspections .... (2012, archive). page https://korczis.github.io/work/inspectors/; cs page https://korczis.github.io/cs/work/inspectors/; GitHub https://github.com/korczis/inspectors; GitLab https://gitlab.com/korczis/inspectors
+- ares: Simple (AMQP Based) Monitoring framework (Ruby, 2012, archive). page https://korczis.github.io/work/ares/; cs page https://korczis.github.io/cs/work/ares/; GitHub https://github.com/korczis/ares; GitLab https://gitlab.com/korczis/ares
+- reflex: .NET Reflection tools (C#, 2012, archive). page https://korczis.github.io/work/reflex/; cs page https://korczis.github.io/cs/work/reflex/; GitHub https://github.com/korczis/reflex; GitLab https://gitlab.com/korczis/reflex

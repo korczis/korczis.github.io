@@ -16,8 +16,8 @@ kind = "language"
 definition = "Malý, rychlý systémový jazyk pod operačními systémy i většinou ostatních jazyků."
 aliases = []
 reference = { title = "C (Wikipedia)", url = "https://en.wikipedia.org/wiki/C_(programming_language)" }
-pages = ["projects/learning.cs.md"]
-related = ["cpp", "csharp", "elixir", "erlang", "haskell", "java", "javascript", "repository"]
+pages = ["projects/learning.cs.md", "work/algorithms.cs.md", "work/icave.cs.md", "work/magic.cs.md", "work/peacemaker.cs.md", "work/skull-c.cs.md"]
+related = ["repository", "commit", "open-source", "cpp", "audit-trail", "data-integration", "decision-support-system", "due-diligence"]
 og_title = "C: slovník"
 og_image = "og/cs-glossary-c.png"
 keywords = ["C (programovací jazyk)", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

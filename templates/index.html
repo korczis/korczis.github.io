@@ -618,17 +618,15 @@
           {%- endif %}{% endfor %}
         </ul>
       {% </card> %}
-      {#- Recently active: the latest pushes across every original repository; a repository opens its
-          work page where one exists, else its catalogue entry, else its forge. #}
+      {#- Recently active: the latest pushes across every original repository (data/index.json);
+          each opens its own work page (every original repository has one), in the page's language. #}
       {% <card labelledby="recent-title" tag="div"> %}
         {{ <card_head id="recent-title" title={trans(key="recently_active", lang=lang)} action={trans(key="recent_work", lang=lang)} href={base ~ "work/"} level="h3" /> }}
         <ul class="divide-y divide-gray-200 dark:divide-gray-700">
           {%- for r in ix.repos %}{% if loop.index <= 9 %}
-          {%- if r.hosts.github is defined %}{% set_global u = r.hosts.github %}{% else %}{% set_global u = r.hosts.gitlab %}{% endif %}
-          {%- if r.curated %}{% set_global u = base ~ "projects/?project=" ~ r.name %}{% endif %}
-          {%- for p in wsec.pages %}{% if p.extra.repo == r.name %}{% set_global u = p.permalink %}{% endif %}{% endfor %}
+          {%- set wp = get_page(path="work/" ~ (r.name | slugify) ~ xl ~ ".md") %}
           <li>
-            <a href="{{ u }}" class="group -mx-2 flex items-center justify-between gap-3 rounded-lg px-2 py-2.5 hover:bg-gray-50 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-700">
+            <a href="{{ wp.permalink }}" class="group -mx-2 flex items-center justify-between gap-3 rounded-lg px-2 py-2.5 hover:bg-gray-50 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-700">
               <span class="min-w-0">
                 <span class="block truncate text-sm font-medium text-gray-900 group-hover:underline dark:text-white">{{ r.name }}</span>
                 <span class="block text-xs text-gray-600 dark:text-gray-400">{{ cat.categories[r.category]["name" ~ sfx] }}{% if r.language %} · {{ r.language }}{% endif %}</span>

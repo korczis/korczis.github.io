@@ -11,10 +11,12 @@ tags = ["Nástroje"]
 
 [extra]
 repo = "tinder-nomics"
+seo_title = "tinder-nomics: Nástroje, 2025–2026 · Tomáš Korčák"
 og_title = "tinder-nomics: Nástroje"
+og_description = "tinder-nomics: Nástroje, 2025–2026, aktivní za posledních 12 měsíců. Zdrojový kód: GitLab."
 og_image = "og/cs-work-tinder-nomics.png"
 schema = "project"
-keywords = ["tinder-nomics", "Nástroje", "Tomáš Korčák"]
+keywords = ["tinder-nomics", "Nástroje", "2025–2026", "GitLab", "Tomáš Korčák", "korczis"]
 terms = ["open-source", "repository", "commit"]
 
 [[extra.viz]]
@@ -25,9 +27,14 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "každých 6 hodin" }
 +++
 **tinder-nomics** je projekt z kategorie [Nástroje](@/projects/tools.cs.md).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 25. srpna 2025; poslední [commit](@/glossary/commit.cs.md) je z 4. února 2026. Zní „feat(aiad): inject AIAD v1.0.0 infrastructure“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje poslední 2 commity jako tep, jeden pruh na typ commitu (feat, fix, docs…), ze snímku obnovovaného každých 6 hodin. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+Zdrojový kód: [GitLab](https://gitlab.com/korczis/tinder-nomics).
+
+Související práce v kategorii [Nástroje](@/projects/tools.cs.md): [the-psycho](@/work/the-psycho.cs.md) (2025–2026), [prism](@/work/prism.cs.md) (2024–2026), [past](@/work/past.cs.md) (2025–2026) a [GHT](@/work/ght.cs.md) (2025).
+
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu. Puls ukazuje poslední 2 commity jako tep, jeden pruh na typ commitu (feat, fix, docs…), ze snímku obnovovaného každých 6 hodin. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

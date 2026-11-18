@@ -11,10 +11,12 @@ tags = ["Data a GIS", "Python", "HTML", "JavaScript"]
 
 [extra]
 repo = "data-atlas"
-og_title = "Data Atlas: Prohledávatelný katalog zdrojů GIS a geodat."
+seo_title = "Data Atlas: Data a GIS, Python, 2026 · Tomáš Korčák"
+og_title = "Data Atlas: Prohledávatelný katalog zdrojů GIS a geodat"
+og_description = "Data Atlas: Data a GIS, Python, HTML a JavaScript, 2026, aktivní za posledních 12 měsíců. Zdrojový kód: GitHub. Živý web."
 og_image = "og/cs-work-data-atlas.png"
 schema = "project"
-keywords = ["Data Atlas", "Data a GIS", "Python", "HTML", "JavaScript", "Tomáš Korčák"]
+keywords = ["Data Atlas", "data-atlas", "Data a GIS", "Python", "HTML", "JavaScript", "catalog", "czech-republic", "geodata", "geospatial", "gis", "open-data", "2026", "GitHub", "Tomáš Korčák", "korczis"]
 terms = ["python", "html", "javascript", "shell", "gis", "github-pages", "repository", "commit", "open-source"]
 
 [[extra.viz]]
@@ -31,5 +33,9 @@ tone = "night"
 [Repozitář](@/glossary/repository.cs.md) vznikl 27. srpna 2026; poslední [commit](@/glossary/commit.cs.md) je z 16. listopadu 2026. Zní „Merge pull request \#4 from korczis/feature/flowbite-pro-ui“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 
 Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/data-atlas/>.
+
+Zdrojový kód: [GitHub](https://github.com/korczis/data-atlas).
+
+Související práce v kategorii [Data a GIS](@/projects/data.cs.md): [gooddata-graphql](@/work/gooddata-graphql.cs.md) (2016), [Crisis map](@/work/crisis-map.cs.md) (2026), [ctu-cz](@/work/ctu-cz.cs.md) (2020) a [czech-stats](@/work/czech-stats.cs.md) (2020).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 30 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

@@ -3,7 +3,7 @@
   "repo": "lethe.it",
   "sources": {
     "github": "https://github.com/korczis/lethe.it",
-    "gitlab": null,
+    "gitlab": "https://gitlab.com/korczis/lethe-it",
     "commit": "5fee04d968e8fb46355b1c0e947d156a73b40b4a",
     "read_at": "2026-11-18",
     "read": [
@@ -68,7 +68,6 @@
     }
   },
   "related": [
-    "lethe-it",
     "microscratch",
     "generator-microscratch",
     "microscratch-react"

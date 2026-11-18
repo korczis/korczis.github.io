@@ -11,10 +11,12 @@ tags = ["Data and GIS", "Elixir", "JavaScript", "CSS"]
 
 [extra]
 repo = "crisis-map"
-og_title = "Crisis map: Incident reports, normalised, geocoded and mapped."
+seo_title = "Crisis map: Data and GIS in Elixir, 2026 · Tomas Korcak"
+og_title = "Crisis map: Incident reports, normalised, geocoded and mapped"
+og_description = "Crisis map: Data and GIS in Elixir, JavaScript and CSS, 2026, active in the last 12 months. Source on GitHub. Live site."
 og_image = "og/work-crisis-map.png"
 schema = "project"
-keywords = ["Crisis map", "Data and GIS", "Elixir", "JavaScript", "CSS", "Tomas Korcak"]
+keywords = ["Crisis map", "crisis-map", "Data and GIS", "Elixir", "JavaScript", "CSS", "2026", "GitHub", "Tomas Korcak", "korczis"]
 terms = ["elixir", "javascript", "css", "html", "postgis", "mcp", "gis", "github-pages", "repository", "commit", "open-source"]
 
 [[extra.viz]]
@@ -28,10 +30,14 @@ tone = "night"
 +++
 **Crisis map** is a project in [Data and GIS](@/projects/data.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (96.9 %), with [JavaScript](@/glossary/javascript.md), [CSS](@/glossary/css.md) and [HTML](@/glossary/html.md).
 
-The [repository](@/glossary/repository.md) was created in September 2026; its latest [commit](@/glossary/commit.md) is from 16 November 2026. It reads “Merge pull request \#1 from korczis/feature/flowbite-pro-ui”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created on 8 September 2026; its latest [commit](@/glossary/commit.md) is from 16 November 2026. It reads “Merge pull request \#1 from korczis/feature/flowbite-pro-ui”. That places it among the projects active in the last 12 months.
 
 It is built with [PostGIS](@/glossary/postgis.md) and [MCP](@/glossary/mcp.md).
 
 It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/crisis-map/>.
+
+Its source is on [GitHub](https://github.com/korczis/crisis-map).
+
+Related work in [Data and GIS](@/projects/data.md): [czech-stats](@/work/czech-stats.md) (2020), [gooddata-graphql](@/work/gooddata-graphql.md) (2016), [Data Atlas](@/work/data-atlas.md) (2026) and [ctu-cz](@/work/ctu-cz.md) (2020).
 
 *How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 8 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

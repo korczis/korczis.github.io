@@ -16,8 +16,8 @@ kind = "concept"
 definition = "Spojení dat z mnoha zdrojů (rejstříků, API, souborů) do jednoho jednotného pohledu, kde si každý záznam pamatuje, odkud pochází."
 aliases = []
 reference = { title = "Data integration (Wikipedia)", url = "https://en.wikipedia.org/wiki/Data_integration" }
-pages = ["projects/security.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md"]
-related = ["audit-trail", "decision-support-system", "due-diligence", "html", "information-extraction", "insolvency", "knowledge-graph", "market-intelligence"]
+pages = ["projects/security.cs.md", "work/magic.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/peacemaker.cs.md", "work/ratnet.cs.md", "work/zlown.cs.md"]
+related = ["audit-trail", "decision-support-system", "due-diligence", "information-extraction", "insolvency", "knowledge-graph", "market-intelligence", "mergers-and-acquisitions"]
 og_title = "Integrace dat: slovník"
 og_image = "og/cs-glossary-data-integration.png"
 keywords = ["Integrace dat", "Data integration", "Koncept", "Slovník", "Tomáš Korčák"]

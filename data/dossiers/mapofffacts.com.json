@@ -3,7 +3,7 @@
   "repo": "mapofffacts.com",
   "sources": {
     "github": "https://github.com/korczis/mapofffacts.com",
-    "gitlab": null,
+    "gitlab": "https://gitlab.com/korczis/mapofffacts-com",
     "commit": "63c85e6e1a615c3599fee337e09446d2103c295c",
     "read_at": "2026-11-18",
     "read": [
@@ -44,7 +44,6 @@
     }
   },
   "related": [
-    "mapofffacts-com",
     "mapoffacts"
   ],
   "confidence": "low"

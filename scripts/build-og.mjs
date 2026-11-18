@@ -1,38 +1,60 @@
 #!/usr/bin/env node
 // Derives the Open Graph images (1200x630) from each page's front matter: [extra] og_title (or the
-// title), og_description (or the description), and the og_image path. The SVG is deterministic (a seeded glyph field
-// like the hero's); the PNG is rendered from it with rsvg-convert (librsvg).
+// title), og_description (or the description), and the og_image path. The card is an SVG drawn
+// deterministically here (a seeded glyph field like the hero's); the PNG is rendered from it with
+// rsvg-convert (librsvg), which reads the SVG from stdin, and only the PNG is kept: no page
+// references the SVG, and its hash in data/og.json is the whole record of it.
 //
 // What a card shows, and where each piece comes from (rule project.seo-derived):
 //   - the author, and under it the page's own address: the host and the permalink Zola gives the
 //     page (scripts/lib/derive.mjs permalink()), so a card reads /work/<x>/ or /cs/hire/;
 //   - the title and the description, wrapped by measured text width and clipped only between
 //     words (the shared clip() of lib/derive.mjs), in the space left above the pills;
-//   - the pills, in the card's language from i18n: kpi_supervised on every card, and on the cards
-//     of the pages that present the owner (front matter schema home, profile, hire) the
-//     availability text hero_hire, while data/cv.toml [hire] available is true.
+//   - the pills, in the card's language from i18n: a measured fact of the page on every card (on a
+//     work page the repository's state from data/recent.json: supervised by Majordomus, active
+//     within its period, or archive with its years; on every other page the site's own
+//     supervision; i18n/derive.toml og_pill_*), and on the cards of the pages that present the
+//     owner (front matter schema home, profile, hire) the availability text hero_hire, while
+//     data/cv.toml [hire] available is true.
 //
 // data/og.json records, per image, the hash of the SVG each PNG was rendered from and of the PNG
-// itself, so a PNG left behind by a changed SVG is caught anywhere (file times are not, in CI).
+// itself, so a PNG left behind by a changed card is caught anywhere (file times are not, in CI).
 //
-// usage: node scripts/build-og.mjs                write static/og/<name>.svg and .png, remove orphans
-//        node scripts/build-og.mjs --check        exit 1 if an SVG is stale, a PNG is missing, not of the
-//                                                 OG size, not rendered from its SVG, or an image is orphaned;
-//                                                 if the address drawn on a card is not the page's permalink;
-//                                                 if a card of another language than the default carries a
-//                                                 text of the default language; if a title or description is
-//                                                 clipped inside a word; or if text overlaps the pills
+// Size: every page has a card (one per original repository and language, hundreds of them), so
+// the PNG is quantised to a palette of ENCODER.colours with pngquant (no dithering, strongest
+// compression setting): about a fifth of the size of the full-colour render and indistinguishable
+// on a flat dark card. Each PNG stays within og_image x-max-bytes of the front-matter schema
+// (--check fails over it and reports the total). The encoder's settings are recorded in
+// data/og.json, and a change to them renders every card again. Its version is recorded per card:
+// pngquant is deterministic for one version, but Ubuntu's 2.x (the scheduled refresh) and
+// Homebrew's 3.x write different bytes, as librsvg does with other fonts. So a card is rendered
+// again only when its SVG changed, and data/og.json says which version wrote the PNG it holds; a
+// version alone never re-renders a card (two machines would otherwise rewrite every card in turn).
+//
+// Every tool used here is a package the scheduled refresh installs (RENDERERS: --check fails when
+// .github/workflows/refresh.yml does not install one, since --check itself renders nothing).
+//
+// usage: node scripts/build-og.mjs                write static/og/<name>.png, remove orphans
+//        node scripts/build-og.mjs --check        exit 1 if a PNG is missing, stale against its card,
+//                                                 not of the OG size, over its byte budget, not the
+//                                                 recorded render, a file of static/og is orphaned,
+//                                                 or the refresh does not install a renderer; if the
+//                                                 address drawn on a card is not the page's permalink;
+//                                                 if a card of another language than the default
+//                                                 carries a text of the default language; if a title
+//                                                 or description is clipped inside a word; or if text
+//                                                 overlaps the pills
 //        node scripts/build-og.mjs --check --site public
 //                                                 also: the drawn address is the canonical URL of the built
 //                                                 page, and that page's og:image names the card
 // CI runs --check only (no renderer needed); regenerate locally after changing front matter.
 import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
-import { existsSync, mkdirSync, readFileSync, readdirSync, unlinkSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, readdirSync, statSync, unlinkSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import {
-  CHECK, PROFILE_SCHEMAS, ROOT, clip, contentPages, cutAtWord, defaultLanguage, identity, isDefault, limits, permalink, readToml,
-  report, t,
+  CHECK, PROFILE_SCHEMAS, ROOT, clip, contentPages, cutAtWord, defaultLanguage, identity, isDefault, limits, permalink, readJson,
+  readToml, report, t,
 } from './lib/derive.mjs';
 import { cliArgs } from './lib/cli.mjs';
 
@@ -42,8 +64,21 @@ if (opts.site && !CHECK) {
   process.exit(2);
 }
 
-const { width: W, height: H } = limits().og;
+const { width: W, height: H, maxBytes: MAX_BYTES } = limits().og;
 const me = identity();
+const ENCODER = { tool: 'pngquant', colours: 16, args: ['--speed', '1', '--strip', '--nofs'] };
+const ENCODER_ID = `${ENCODER.tool} ${ENCODER.colours} ${ENCODER.args.join(' ')}`;
+// The command each step runs, and the Ubuntu package the refresh installs it from.
+const RENDERERS = [{ tool: 'rsvg-convert', apt: 'librsvg2-bin' }, { tool: ENCODER.tool, apt: 'pngquant' }];
+let encoderVersion = null;
+const versionOf = () => {
+  try {
+    encoderVersion ??= `${ENCODER.tool} ${execFileSync(ENCODER.tool, ['--version'], { encoding: 'utf8' }).trim().split(/\s/)[0]}`;
+  } catch (error) {
+    throw new Error(`${ENCODER.tool} is needed to encode the Open Graph cards (brew install pngquant, apt-get install pngquant): ${error.message}`);
+  }
+  return encoderVersion;
+};
 const hire = readToml('data/cv.toml').hire ?? {};
 const COLOURS = {
   page: '#111827', ink: '#f9fafb', muted: '#9ca3af', primary: '#3b82f6', soft: '#1e3a8a', glyph: '#60a5fa', pill: '#bfdbfe',
@@ -56,7 +91,7 @@ const X = 80;
 const FIELD_LEFT = 820;
 const TEXT_RIGHT = 800;
 const TITLE_TOP = 230;
-const TITLE = { large: 66, small: 58, lead: 8, maxLines: 3 };
+const TITLE = { large: 66, small: 58, min: 40, lead: 8, maxLines: 3 };
 const DESC = { size: 26, line: 36, gap: 26, width: 680, maxLines: 3 };
 const PILL = { top: 540, height: 44, pad: 24, gap: 12, size: 20 };
 const GAP = 16;
@@ -111,15 +146,29 @@ function wrap(text, { size, weight, width, maxLines }) {
   return { lines, cut: false };
 }
 
+// The fact a card's badge states, in its language (see the header): the repository's state on a
+// work page, the site's own supervision on every other page.
+const recent = readJson('data/recent.json');
+const repoOf = new Map(recent.repos.map((r) => [r.name, r]));
+function factOf(repo, lang) {
+  const r = repo ? repoOf.get(repo) : null;
+  if (!r) return t('og_pill_site', lang);
+  if (r.supervised) return t('og_pill_supervised', lang);
+  if (r.period) return t('og_pill_active', lang, { period: r.period });
+  const years = [r.created_at, ...r.commits.map((c) => c.at)].filter(Boolean).map((x) => new Date(x).getUTCFullYear());
+  const first = Math.min(...years);
+  const last = new Date(r.last_commit ?? r.pushed_at).getUTCFullYear();
+  return t('og_pill_archive', lang, { years: first < last ? `${first}–${last}` : String(last) });
+}
+
 // The pills of a card, in its language: availability first on the owner's pages, then the badge.
-const capital = (s, lang) => s.charAt(0).toLocaleUpperCase(lang) + s.slice(1);
-const CHROME = { badge: (lang) => capital(t('kpi_supervised', lang), lang), available: (lang) => t('hero_hire', lang) };
-function pills(schema, lang) {
+const CHROME = { badge: (lang, card) => factOf(card.repo, lang), available: (lang) => t('hero_hire', lang) };
+function pills(card, lang = card.lang) {
   const list = [];
-  if (hire.available && PROFILE_SCHEMAS.includes(schema)) {
-    list.push({ key: 'available', text: CHROME.available(lang), fill: COLOURS.open, ink: COLOURS.openInk });
+  if (hire.available && PROFILE_SCHEMAS.includes(card.schema)) {
+    list.push({ key: 'available', text: CHROME.available(lang, card), fill: COLOURS.open, ink: COLOURS.openInk });
   }
-  list.push({ key: 'badge', text: CHROME.badge(lang), fill: COLOURS.soft, ink: COLOURS.pill });
+  list.push({ key: 'badge', text: CHROME.badge(lang, card), fill: COLOURS.soft, ink: COLOURS.pill });
   let x = X;
   return list.map((p) => {
     const w = Math.ceil(measure(p.text, PILL.size, 600) + 2 * PILL.pad);
@@ -130,12 +179,19 @@ function pills(schema, lang) {
 }
 
 // The whole card's geometry, computed once: the SVG draws it and --check asserts it.
-function layout({ title, description, schema, lang }) {
-  let titleSize = TITLE.large;
-  let t1 = wrap(title, { size: titleSize, weight: 800, width: TEXT_RIGHT - X, maxLines: 2 });
-  if (t1.cut) {
-    titleSize = TITLE.small;
-    t1 = wrap(title, { size: titleSize, weight: 800, width: TEXT_RIGHT - X, maxLines: TITLE.maxLines });
+function layout(card) {
+  const { title, description } = card;
+  // A word wider than the text column (a long repository name, a URL) could only be cut inside
+  // itself: the title takes the size at which its widest word fits with the ellipsis, down to
+  // TITLE.min, so every cut stays between words.
+  const column = TEXT_RIGHT - X;
+  const widest = Math.max(...title.split(/\s+/).filter(Boolean).map((w) => measure(`${w}…`, 1, 800)));
+  const fit = Math.max(TITLE.min, Math.floor(column / widest));
+  let titleSize = Math.min(TITLE.large, fit);
+  let t1 = wrap(title, { size: titleSize, weight: 800, width: column, maxLines: 2 });
+  if (t1.cut || titleSize < TITLE.large) {
+    titleSize = Math.min(TITLE.small, fit);
+    t1 = wrap(title, { size: titleSize, weight: 800, width: column, maxLines: TITLE.maxLines });
   }
   const titleStep = titleSize + TITLE.lead;
   const descTop = TITLE_TOP + t1.lines.length * titleStep + DESC.gap;
@@ -147,7 +203,7 @@ function layout({ title, description, schema, lang }) {
   return {
     title: { ...t1, size: titleSize, step: titleStep },
     desc: { ...d1, top: descTop, bottom: descBottom },
-    pills: pills(schema, lang),
+    pills: pills(card),
   };
 }
 
@@ -214,7 +270,7 @@ function glyphField(seed) {
   return paths.join('');
 }
 
-// The assertions --check makes on a card: its committed SVG draws the page's address, its texts
+// The assertions --check makes on a card: its SVG (the one its PNG is recorded as rendered from) draws the page's address, its texts
 // were cut only between words, nothing overlaps the pills, and a translation carries none of the
 // default language's texts.
 function assertCard(card, box, text, rel) {
@@ -231,8 +287,8 @@ function assertCard(card, box, text, rel) {
   const last = box.pills.at(-1);
   if (last && last.x + last.w > W - X) found.push(`${rel}: the pills run to x=${last.x + last.w}, past ${W - X}`);
   if (!isDefault(card.lang)) {
-    const own = new Set(Object.values(CHROME).map((f) => f(card.lang)));
-    const foreign = Object.values(CHROME).map((f) => f(defaultLanguage())).filter((s) => !own.has(s));
+    const own = new Set(Object.values(CHROME).map((f) => f(card.lang, card)));
+    const foreign = Object.values(CHROME).map((f) => f(defaultLanguage(), card)).filter((s) => !own.has(s));
     for (const [, s] of text.matchAll(/<text[^>]*>([^<]*)<\/text>/g)) {
       if (foreign.includes(unescape(s))) found.push(`${rel}: a ${card.lang} card carries the ${defaultLanguage()} text "${unescape(s)}"`);
     }
@@ -269,8 +325,19 @@ const sha = (data) => createHash('sha256').update(data).digest('hex').slice(0, 1
 const DIR = join(ROOT, 'static/og');
 const MANIFEST = join(ROOT, 'data/og.json');
 const stored = existsSync(MANIFEST) ? JSON.parse(readFileSync(MANIFEST, 'utf8')) : { images: {} };
-const manifest = { schema: 'korczis-hub-og/v1', images: {} };
+const manifest = { schema: 'korczis-hub-og/v1', encoder: ENCODER_ID, images: {} };
+// Cards rendered by another encoder are rendered again (and --check reports them).
+const reencode = stored.encoder !== ENCODER_ID;
 const findings = [];
+if (CHECK && reencode) findings.push(`data/og.json records the encoder ${stored.encoder ?? 'none'}, not ${ENCODER_ID}`);
+if (CHECK) {
+  // The refresh renders the cards a new repository or a moved one needs: it must install each tool.
+  const workflow = readFileSync(join(ROOT, '.github/workflows/refresh.yml'), 'utf8');
+  const installed = new Set([...workflow.matchAll(/apt-get install ([^\n]+)/g)].flatMap((m) => m[1].split(/\s+/)));
+  for (const r of RENDERERS) {
+    if (!installed.has(r.apt)) findings.push(`.github/workflows/refresh.yml does not install ${r.apt} (${r.tool}), which renders the cards`);
+  }
+}
 const wanted = new Set();
 const site = opts.site ? join(ROOT, opts.site) : null;
 if (site && !existsSync(site)) {
@@ -278,19 +345,20 @@ if (site && !existsSync(site)) {
   process.exit(2);
 }
 mkdirSync(DIR, { recursive: true });
+let bytes = 0;
 for (const page of contentPages()) {
   const { path: file, fm } = page;
   if (!fm?.extra?.og_image) continue;
   const png = join(ROOT, 'static', fm.extra.og_image);
   const name = fm.extra.og_image.replace(/^og\//, '').replace(/\.png$/, '');
-  const source = join(DIR, `${name}.svg`);
-  wanted.add(`${name}.svg`).add(`${name}.png`);
+  wanted.add(`${name}.png`);
   const path = permalink(page);
   const card = {
     title: fm.extra.og_title || fm.title,
     description: fm.extra.og_description || fm.description,
     name,
     schema: fm.extra.schema,
+    repo: fm.extra.repo ?? null,
     lang: page.lang,
     path,
     address: `${me.host}${path}`,
@@ -298,32 +366,37 @@ for (const page of contentPages()) {
   const text = svg(card);
   const record = stored.images[name];
   if (CHECK) {
-    const committed = existsSync(source) ? readFileSync(source, 'utf8') : null;
-    if (committed !== text) findings.push(`${source.slice(ROOT.length + 1)} is stale`);
-    findings.push(...assertCard(card, layout(card), committed ?? text, file));
+    findings.push(...assertCard(card, layout(card), text, file));
     if (site) findings.push(...assertSite(site, page, card, file));
     if (!existsSync(png)) { findings.push(`${fm.extra.og_image} is missing`); continue; }
     const [w, h] = pngSize(png);
     if (w !== W || h !== H) findings.push(`${fm.extra.og_image} is ${w}x${h}, not ${W}x${H}`);
+    const size = statSync(png).size;
+    bytes += size;
+    if (size > MAX_BYTES) findings.push(`${fm.extra.og_image} is ${size} bytes, over the ${MAX_BYTES} of the front-matter schema (og_image x-max-bytes)`);
     if (!record) findings.push(`${fm.extra.og_image} has no record in data/og.json`);
-    else if (record.svg !== sha(text)) findings.push(`${fm.extra.og_image} was rendered from another SVG`);
+    else if (record.svg !== sha(text)) findings.push(`${fm.extra.og_image} is stale: its card (front matter, address or pill) changed since it was rendered`);
     else if (record.png !== sha(readFileSync(png))) findings.push(`${fm.extra.og_image} is not the PNG data/og.json recorded`);
+    else if (!record.by) findings.push(`${fm.extra.og_image} has no encoder version recorded in data/og.json`);
     continue;
   }
-  // Re-render only when the SVG changed (or the PNG is missing or unrecorded as its render):
-  // renderers on other machines use other fonts, and an unchanged image must not churn in a diff.
-  const same = existsSync(source) && existsSync(png) && readFileSync(source, 'utf8') === text;
-  if (!same || (record && (record.svg !== sha(text) || record.png !== sha(readFileSync(png))))) {
-    writeFileSync(source, text);
-    execFileSync('rsvg-convert', ['--width', String(W), '--height', String(H), '--output', png, source]);
+  // Render only when the card's SVG changed (its hash in data/og.json), the PNG is missing or not
+  // the recorded one, or the encoder's settings changed: renderers on other machines use other
+  // fonts and encoder versions, and an unchanged card must not churn in a diff. The SVG is never
+  // written: rsvg-convert reads it from stdin, and its hash is the whole record of it.
+  if (reencode || !record || !existsSync(png) || record.svg !== sha(text) || record.png !== sha(readFileSync(png))) {
+    execFileSync('rsvg-convert', ['--width', String(W), '--height', String(H), '--output', png], { input: text });
+    const by = versionOf();
+    execFileSync(ENCODER.tool, [...ENCODER.args, '--force', '--output', png, String(ENCODER.colours), png]);
+    manifest.images[name] = { svg: sha(text), png: sha(readFileSync(png)), by };
     console.log(`og: ${fm.extra.og_image} from ${file}`);
+    continue;
   }
-  // An unrecorded pair whose SVG is current is adopted as it is (the first run of the record).
-  manifest.images[name] = { svg: sha(text), png: sha(readFileSync(png)) };
+  manifest.images[name] = record;
 }
 
-// An image no page names any more: an orphan.
-for (const f of readdirSync(DIR).filter((x) => /\.(svg|png)$/.test(x) && !wanted.has(x)).sort()) {
+// A file no page names any more (an orphan card, or an SVG source of the earlier layout).
+for (const f of readdirSync(DIR).filter((x) => !wanted.has(x)).sort()) {
   if (CHECK) findings.push(`static/og/${f} is named by no page`);
   else { unlinkSync(join(DIR, f)); console.log(`og: removed the orphan static/og/${f}`); }
 }
@@ -331,7 +404,9 @@ for (const f of readdirSync(DIR).filter((x) => /\.(svg|png)$/.test(x) && !wanted
 if (CHECK) {
   const extra = Object.keys(stored.images).filter((n) => !wanted.has(`${n}.png`));
   for (const n of extra) findings.push(`data/og.json records ${n}, which no page names`);
-  report(findings, `og images: ${wanted.size / 2} current, rendered from their SVGs, no orphan; each draws its page's address`
+  const mib = (n) => `${(n / 2 ** 20).toFixed(1)} MiB`;
+  report(findings, `og images: ${wanted.size} current, rendered from their cards, no orphan; ${mib(bytes)} in all, `
+    + `${Math.round(bytes / wanted.size / 1024)} KiB a card, none over ${Math.round(MAX_BYTES / 1024)} KiB; each draws its page's address`
     + `${site ? ' (the built canonical)' : ''} in its language, clipped between words, clear of the pills`);
 } else {
   manifest.images = Object.fromEntries(Object.entries(manifest.images).sort(([a], [b]) => a.localeCompare(b)));

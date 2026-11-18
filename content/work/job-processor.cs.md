@@ -11,10 +11,12 @@ tags = ["Nástroje", "Elixir"]
 
 [extra]
 repo = "job-processor"
-og_title = "job-processor: Nástroje"
+seo_title = "job-processor: Nástroje, Elixir, 2024 · Tomáš Korčák"
+og_title = "job-processor: Nástroje, Elixir"
+og_description = "job-processor: Nástroje, Elixir, 2024, aktivní za posledních 48 měsíců. Zdrojový kód: GitLab."
 og_image = "og/cs-work-job-processor.png"
 schema = "project"
-keywords = ["job-processor", "Nástroje", "Elixir", "Tomáš Korčák"]
+keywords = ["job-processor", "Nástroje", "Elixir", "2024", "GitLab", "Tomáš Korčák", "korczis"]
 terms = ["elixir", "open-source", "repository", "commit"]
 
 [[extra.viz]]
@@ -25,9 +27,14 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "každých 6 hodin" }
 +++
 **job-processor** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (100 %).
 
 [Repozitář](@/glossary/repository.cs.md) vznikl 1. srpna 2024; poslední [commit](@/glossary/commit.cs.md) je z 1. srpna 2024. Zní „initial version“. Patří tak mezi projekty aktivní za posledních 48 měsíců.
+
+Zdrojový kód: [GitLab](https://gitlab.com/korczis/job-processor).
+
+Související práce v kategorii [Nástroje](@/projects/tools.cs.md): [simple\_geocoder](@/work/simple-geocoder.cs.md) (2024), [corvidae](@/work/corvidae.cs.md) (2025), [prismatic](@/work/prismatic.cs.md) (2025) a [el-magico-cache](@/work/el-magico-cache.cs.md) (2023).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje poslední 2 commity jako tep, jeden pruh na typ commitu (feat, fix, docs…), ze snímku obnovovaného každých 6 hodin. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

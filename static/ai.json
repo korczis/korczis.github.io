@@ -3,9 +3,9 @@
  "description": "The Majordomus layer of korczis/korczis.github.io: every object of .ai/ with its MCP resource URI",
  "source": "majordomus run objects.list, capabilities.list",
  "majordomus": "1.0.2",
- "tree": "f5d061cdc6cf9b0b1905b05d7c4df14d4d8d159d2d306ab0ff56add8aeab1a91",
+ "tree": "64be6c080d5425a154d94a945dc997b2518ee6a64c23b4b47799c42936a8b720",
  "counts": {
-  "objects": 147,
+  "objects": 148,
   "kinds": {
    "adr": 10,
    "context": 21,
@@ -15,14 +15,14 @@
    "policy": 1,
    "profile": 4,
    "prompt": 4,
-   "rule": 77,
+   "rule": 78,
    "scope": 1,
    "skill": 1,
    "taxonomy": 8
   },
-  "capabilities": 378,
+  "capabilities": 379,
   "mcp_tools": 215,
-  "mcp_resources": 204,
+  "mcp_resources": 205,
   "http_routes": 219
  },
  "objects": [
@@ -1017,6 +1017,14 @@
    "title": "Repository dossiers are inferred, carry their provenance and say so wherever shown",
    "description": "data/dossiers/<repo>.json holds, for each original public repository, a problem, a solution, a stack and a Mermaid architecture inferred from the repository's own files; each carries the commit and date it was read at and a confidence, is labelled inferred wherever it is shown, is re-mined when the repository's head moves, and passes the NDA gate.",
    "path": ".ai/repo/rules/project/dossiers-inferred.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/project.every-repository-page@1",
+   "kind": "rule",
+   "identity": "project.every-repository-page@1",
+   "title": "Every original repository on GitHub and GitLab has its own complete page, derived and gated",
+   "description": "The original repositories of data/index.json (both forges, merged) are the one set; each has a work page in every language with a title, description, SEO title, Open Graph card, canonical, hreflang and SoftwareSourceCode JSON-LD derived from measured facts, recent ones dated by period and the rest as honestly dated archive; the scheduled refresh re-derives them and a gate fails on any repository without a page or a page that is not complete.",
+   "path": ".ai/repo/rules/project/every-repository-page.v1.md"
   },
   {
    "uri": "majordomus://rule/project.everything-interlinked@1",

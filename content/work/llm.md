@@ -11,10 +11,12 @@ tags = ["AI engineering", "Elixir"]
 
 [extra]
 repo = "llm"
-og_title = "llm: Local-first, provider-agnostic archive of AI conversations (ChatGPT, Claude, Gemini, "
+seo_title = "llm: AI engineering in Elixir, 2026 · Tomas Korcak"
+og_title = "llm: Local-first, provider-agnostic archive of AI conversations (ChatGPT, Claude,…"
+og_description = "llm: AI engineering in Elixir, 2026, active in the last 12 months. Source on GitLab."
 og_image = "og/work-llm.png"
 schema = "project"
-keywords = ["llm", "AI engineering", "Elixir", "Tomas Korcak"]
+keywords = ["llm", "AI engineering", "Elixir", "AI", "chatgpt", "claude", "claude-code", "gemini", "2026", "GitLab", "Tomas Korcak", "korczis"]
 terms = ["elixir", "ai-agent", "repository", "commit", "open-source"]
 
 [[extra.viz]]
@@ -25,9 +27,14 @@ lead = "viz_commits_lead_snapshot"
 span = 3
 height = "md"
 tone = "night"
+vars = { cadence = "every 6 hours" }
 +++
 **llm** is a project in [AI engineering](@/projects/ai.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (100 %).
 
-The [repository](@/glossary/repository.md) was created in August 2026; its latest [commit](@/glossary/commit.md) is from 21 August 2026. It reads “test(conversations): add DB-integration tests for every named constraint”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created on 20 August 2026; its latest [commit](@/glossary/commit.md) is from 21 August 2026. It reads “test(conversations): add DB-integration tests for every named constraint”. That places it among the projects active in the last 12 months.
+
+Its source is on [GitLab](https://gitlab.com/korczis/llm).
+
+Related work in [AI engineering](@/projects/ai.md): [sig](@/work/sig.md) (2025–2026), [Majordomus](@/work/prismatic-majordomus.md) (2026), [edna](@/work/edna.md) (2025) and [cognitive-reasoning](@/work/cognitive-reasoning.md) (2025).
 
 *How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 16 commits as a heartbeat, one lane per commit type (feat, fix, docs…), from a snapshot refreshed every 6 hours. The concepts below are explained in the [glossary](@/glossary/_index.md).

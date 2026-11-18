@@ -37,8 +37,9 @@ mirrors = ["foremost", "libnids", "libnet", "ucl", "upx", "ev", "petitboot", "li
 hidden = ["atp", "microcrawler-crawler-youjizz-com", "the-shit", "chujovinky", "empty-repo", "unable.cz"]
 
 # The recent window (scripts/fetch-recent.mjs, data/recent.json, the /work/ pages): every original
-# repository with a commit in the last periods[-1] months, each in the smallest period (months)
-# that holds its last commit, with its latest `commits` commits.
+# repository is measured with its latest `commits` commits and gets a page; one with a commit in
+# the last periods[-1] months is placed in the smallest period (months) that holds its last commit,
+# every other one is archive (period null), dated by its first and last year.
 [recent]
 periods = [12, 24, 48]
 commits = 30
