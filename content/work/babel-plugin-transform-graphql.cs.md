@@ -17,7 +17,7 @@ og_description = "babel-plugin-transform-graphql: Knihovny, JavaScript, 2016, ar
 og_image = "og/cs-work-babel-plugin-transform-graphql.png"
 schema = "project"
 keywords = ["babel-plugin-transform-graphql", "Knihovny", "JavaScript", "2016", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["javascript", "babel", "graphql", "open-source", "repository", "commit"]
+terms = ["javascript", "babel", "graphql", "eslint", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

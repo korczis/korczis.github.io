@@ -3,7 +3,7 @@
 title = "Public registry"
 description = "An official register a state keeps open to the public: companies, insolvencies, property, beneficial owners; the primary source of a due diligence."
 template = "term.html"
-weight = 137
+weight = 163
 
 [taxonomies]
 tags = ["Glossary", "Concept"]

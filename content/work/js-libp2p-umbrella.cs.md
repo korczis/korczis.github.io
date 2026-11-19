@@ -17,7 +17,7 @@ og_description = "js-libp2p-umbrella: Nástroje, 2018, archiv. Zdrojový kód: G
 og_image = "og/cs-work-js-libp2p-umbrella.png"
 schema = "project"
 keywords = ["js-libp2p-umbrella", "Nástroje", "2018", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["javascript", "open-source", "repository", "commit"]
+terms = ["javascript", "libp2p", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

@@ -3,7 +3,7 @@
 title = "Phoenix"
 description = "Webový framework Elixiru; LiveView vykresluje interaktivní stránky na serveru a přes socket posílá jen změny."
 template = "term.html"
-weight = 87
+weight = 104
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

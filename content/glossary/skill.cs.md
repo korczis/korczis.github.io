@@ -3,7 +3,7 @@
 title = "Dovednost"
 description = "Schopnost, kterou vlastník praktikuje, doložená veřejnou prací a případy užití z klientské práce, a ze které čerpají služby."
 template = "term.html"
-weight = 144
+weight = 170
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

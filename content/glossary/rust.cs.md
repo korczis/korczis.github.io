@@ -3,7 +3,7 @@
 title = "Rust"
 description = "Systémový jazyk, který zaručuje bezpečnost paměti bez garbage collectoru; je v něm napsaný Majordomus."
 template = "term.html"
-weight = 31
+weight = 32
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]

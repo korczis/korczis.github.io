@@ -3,7 +3,7 @@
 title = "Ecto"
 description = "Elixir's database toolkit: schemas, changesets that validate data, composable queries and migrations, most often over PostgreSQL."
 template = "term.html"
-weight = 58
+weight = 61
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

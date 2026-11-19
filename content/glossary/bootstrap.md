@@ -3,7 +3,7 @@
 title = "Bootstrap"
 description = "A CSS framework of a responsive grid and ready-made components for building web pages quickly."
 template = "term.html"
-weight = 45
+weight = 48
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

@@ -3,7 +3,7 @@
 title = "Makefile"
 description = "The build language of make: targets, the files they depend on and the commands that rebuild them when a dependency changes."
 template = "term.html"
-weight = 21
+weight = 22
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -16,8 +16,8 @@ kind = "language"
 definition = "The build language of make: targets, the files they depend on and the commands that rebuild them when a dependency changes."
 aliases = ["Make", "make"]
 reference = { title = "GNU make manual", url = "https://www.gnu.org/software/make/manual/make.html" }
-pages = ["projects/learning.md", "skills/change-monitoring.md", "skills/media-forensics.md", "work/bcnode-old.md", "work/charon.md", "work/ctu-cz.md", "work/dj-schnapps.md", "work/el-magico-cache.md", "work/gooddata-fs.md", "work/microcrawler-elixir.md", "work/microcrawler-js.md", "work/pdf-renderer.md", "work/rest-hello-world-benchmark.md", "work/skull-cpp.md", "work/skull-emscripten.md", "work/skull-erlang.md", "work/skull-nodejs.md", "work/sli2dli.md", "work/streamflow.md"]
-related = ["repository", "commit", "open-source", "javascript", "rust", "shell", "dockerfile", "elixir"]
+pages = ["projects/learning.md", "skills/media-forensics.md", "work/bcnode-old.md", "work/charon.md", "work/ctu-cz.md", "work/dj-schnapps.md", "work/el-magico-cache.md", "work/gooddata-fs.md", "work/microcrawler-elixir.md", "work/microcrawler-js.md", "work/pdf-renderer.md", "work/rest-hello-world-benchmark.md", "work/skull-cpp.md", "work/skull-emscripten.md", "work/skull-erlang.md", "work/skull-nodejs.md", "work/sli2dli.md", "work/streamflow.md"]
+related = ["repository", "commit", "open-source", "rust", "javascript", "shell", "dockerfile", "elixir"]
 og_title = "Makefile: glossary"
 og_image = "og/glossary-makefile.png"
 keywords = ["Makefile", "Programming language", "Glossary", "Tomas Korcak"]

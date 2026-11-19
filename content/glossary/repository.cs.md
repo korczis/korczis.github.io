@@ -3,7 +3,7 @@
 title = "Repozitář"
 description = "Složka projektu pod správou verzí: jeho soubory a celá historie commitů."
 template = "term.html"
-weight = 139
+weight = 165
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

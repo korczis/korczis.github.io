@@ -3,7 +3,7 @@
 title = "webpack"
 description = "A bundler that follows a JavaScript application's imports and packs its modules, styles and assets into files a browser loads."
 template = "term.html"
-weight = 102
+weight = 127
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

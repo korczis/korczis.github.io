@@ -3,7 +3,7 @@
 title = "Lean"
 description = "A functional language and proof assistant: programs and the mathematical proofs that they are correct, checked by the machine."
 template = "term.html"
-weight = 19
+weight = 20
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]

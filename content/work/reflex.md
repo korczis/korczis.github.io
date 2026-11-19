@@ -17,7 +17,7 @@ og_description = "reflex: Tools in C#, 2012, archive. Source on GitHub and GitLa
 og_image = "og/work-reflex.png"
 schema = "project"
 keywords = ["reflex", "Tools", "C#", "2012", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["csharp", "open-source", "repository", "commit"]
+terms = ["csharp", "dotnet", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

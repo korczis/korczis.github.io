@@ -17,7 +17,7 @@ og_description = "apollo-crawler: Data and GIS in Ruby, 2014, archive. Source on
 og_image = "og/work-apollo-crawler.png"
 schema = "project"
 keywords = ["apollo-crawler", "Data and GIS", "Ruby", "2014", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["ruby", "rabbitmq", "mongodb", "gis", "repository", "commit", "open-source"]
+terms = ["ruby", "rabbitmq", "mongodb", "sqlite", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

@@ -3,7 +3,7 @@
 title = "Web scraping"
 description = "Programové získávání dat z webových stránek, od jednoduchých požadavků po řízený prohlížeč, v mezích podmínek webu a zákona."
 template = "term.html"
-weight = 149
+weight = 175
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

@@ -13,7 +13,7 @@ skill = "orchestration"
 og_title = "Orchestrace: dovednosti"
 og_image = "og/cs-skill-orchestration.png"
 schema = "skill"
-terms = ["skill", "orchestration", "claude-api", "github-actions", "html", "javascript", "shell", "alpine-js", "dockerfile", "fastapi", "flowbite-pro", "kubernetes"]
+terms = ["skill", "orchestration", "claude-api", "github-actions", "html", "javascript", "shell", "alpine-js", "dockerfile", "fastapi", "flowbite-pro", "git"]
 keywords = ["Orchestrace", "Monitoring insolvencí, sporů a změn v rejstřících", "Podpora rozhodování a AI agenti pro analytiky", "Řízený vývoj softwaru s AI", "Tomáš Korčák"]
 
 [[extra.viz]]

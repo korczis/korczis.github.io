@@ -153,8 +153,8 @@
    "by": "pngquant 3.0.3"
   },
   "cs-glossary": {
-   "svg": "95a34f8d3484c3d6",
-   "png": "fe90975a4d1d432d",
+   "svg": "76e2136bbc0b4b3d",
+   "png": "9b09ba068079ae6f",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-absinthe": {
@@ -200,6 +200,11 @@
   "cs-glossary-audit-trail": {
    "svg": "6d285c5887856d56",
    "png": "7212291843a638e3",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-axe-core": {
+   "svg": "7bc996ad1c91387d",
+   "png": "b3f2ca6d684485bc",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-babel": {
@@ -357,6 +362,11 @@
    "png": "75e97111e7a0678f",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-dotnet": {
+   "svg": "29ac9efb8026cceb",
+   "png": "9a8ffb0d167b61bc",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-due-diligence": {
    "svg": "6ab0511d6820f254",
    "png": "82c4210265ec8003",
@@ -392,9 +402,24 @@
    "png": "ebd2e9d62366b4b2",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-env-logger": {
+   "svg": "0537ffdb5d49dfe2",
+   "png": "b60505c32575de41",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-erlang": {
    "svg": "f3ffd962e8778ce8",
    "png": "2655729399459c2a",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-eslint": {
+   "svg": "6365d474a044f07a",
+   "png": "9ad7b52d654ccf5d",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-etcd": {
+   "svg": "9fbe3440c39938df",
+   "png": "d68763cf00e2603e",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-express": {
@@ -417,6 +442,11 @@
    "png": "91ed0e1ad399471f",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-fly-io": {
+   "svg": "6cc4ce67603b698d",
+   "png": "8eed6ef7d939bbcd",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-fork": {
    "svg": "e86e53bd08ad6e90",
    "png": "69895164516068d4",
@@ -430,6 +460,11 @@
   "cs-glossary-gis": {
    "svg": "da5564c2ce6c5086",
    "png": "06893fbcb6cf07e8",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-git": {
+   "svg": "34fb720f2505fefd",
+   "png": "b588d65996cc6c17",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-github-actions": {
@@ -452,9 +487,34 @@
    "png": "4333b45ce470f7f6",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-go": {
+   "svg": "68f85425d198b2bc",
+   "png": "d3762bf6d94aa7d3",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-grafana": {
+   "svg": "55a88cc937bf00f8",
+   "png": "c6f9ac67baf782c1",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-graphql": {
    "svg": "f95391b19f4536ee",
    "png": "d55a510a97163f08",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-grunt": {
+   "svg": "8adcd3539635b3d6",
+   "png": "f2d5e8bb67910007",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-guardian": {
+   "svg": "13014ce48cfd5a24",
+   "png": "5159d7673c0097da",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-gulp": {
+   "svg": "b845024afb5a15fe",
+   "png": "396e125f5936cd95",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-handlebars": {
@@ -470,6 +530,11 @@
   "cs-glossary-html": {
    "svg": "279a0b2b70bff083",
    "png": "ad9fa8499f4f0288",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-httpoison": {
+   "svg": "6a61e55a61b08867",
+   "png": "681700d8cb272789",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-i18n": {
@@ -502,6 +567,11 @@
    "png": "e11c648e7af996ad",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-jq": {
+   "svg": "ec953d56910a7d11",
+   "png": "2f921c14295520d8",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-jquery": {
    "svg": "41d0f1c870508f12",
    "png": "da8ed1ac36431741",
@@ -515,6 +585,11 @@
   "cs-glossary-json-ld": {
    "svg": "8a59755c8b654db2",
    "png": "74821abf61741be5",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-json-schema": {
+   "svg": "3938187704f04e54",
+   "png": "93af49bc8d4290e9",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-just": {
@@ -540,6 +615,11 @@
   "cs-glossary-lean": {
    "svg": "1981e01dc5fb85df",
    "png": "2776096e2a984be8",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-libp2p": {
+   "svg": "dad8871db7aa6ffc",
+   "png": "357e35de4a5d78ca",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-m4": {
@@ -600,6 +680,11 @@
   "cs-glossary-mongodb": {
    "svg": "dd3e29fb5ae32311",
    "png": "76951afcafed5614",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-mongoose": {
+   "svg": "1b43978695a01c0b",
+   "png": "d0e561008a454702",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-monte-carlo-simulation": {
@@ -692,6 +777,11 @@
    "png": "7d875cce1e8fda6f",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-plug": {
+   "svg": "4e57e3db2eb1ea0f",
+   "png": "2813f864cfe89315",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-policy-as-code": {
    "svg": "bbc9bb64dd6857c4",
    "png": "f9d7fb65f76e7dc0",
@@ -705,6 +795,11 @@
   "cs-glossary-postgresql": {
    "svg": "00c9121b5c455bc4",
    "png": "310a38692fe0f26b",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-protobuf": {
+   "svg": "c23a321c62ac28b0",
+   "png": "11c414a30e034542",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-public-registry": {
@@ -827,6 +922,11 @@
    "png": "5c86ee2b2cb21ec3",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-sqlite": {
+   "svg": "e85fbbe9009837df",
+   "png": "f88c7547c4c97ce5",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-squirrel": {
    "svg": "69ddf2545e2b9e07",
    "png": "0da1190ab9a4721c",
@@ -847,6 +947,11 @@
    "png": "f8954ed71806de2d",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-tesla": {
+   "svg": "f80052c20062dc25",
+   "png": "decf103e3ab36627",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-tesseract": {
    "svg": "2f4f009380330101",
    "png": "43522c4b379dd69a",
@@ -865,6 +970,26 @@
   "cs-glossary-typescript": {
    "svg": "0336c8b918afb114",
    "png": "57b79f9ce691eff5",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-ubuntu": {
+   "svg": "8261d1f910b24ef1",
+   "png": "d4236f13f687a2fd",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-ueberauth": {
+   "svg": "1c1b0ed2d0913aa8",
+   "png": "0c04befa605100d7",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-uikit": {
+   "svg": "d291c5ffedce0f6b",
+   "png": "aa6a5245e36f50cf",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-vagrant": {
+   "svg": "e7af22520d6c7d4f",
+   "png": "3b23b25fa9a6e95e",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-virtual-data-room": {
@@ -890,6 +1015,11 @@
   "cs-glossary-webpack": {
    "svg": "150171937c7d66ca",
    "png": "c9dd8bf5efec7fa2",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-xcode": {
+   "svg": "9464f270a82044c9",
+   "png": "b5ba06a24f521ca2",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-xslt": {
@@ -2188,8 +2318,8 @@
    "by": "pngquant 3.0.3"
   },
   "glossary": {
-   "svg": "d9fa654e60e04060",
-   "png": "a9aa8302b456d77b",
+   "svg": "ef8c23205e9f5d19",
+   "png": "7828d05c77784e04",
    "by": "pngquant 3.0.3"
   },
   "glossary-absinthe": {
@@ -2235,6 +2365,11 @@
   "glossary-audit-trail": {
    "svg": "dfd9f07c65aec1c6",
    "png": "f8dda2501fd6ffc3",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-axe-core": {
+   "svg": "991028d246377a9a",
+   "png": "28c92a6e74f2dd4e",
    "by": "pngquant 3.0.3"
   },
   "glossary-babel": {
@@ -2392,6 +2527,11 @@
    "png": "cdd40363c1784453",
    "by": "pngquant 3.0.3"
   },
+  "glossary-dotnet": {
+   "svg": "2250dfc81904b1ae",
+   "png": "7130cccf80ff15bc",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-due-diligence": {
    "svg": "63e33102f4fe24b2",
    "png": "172d14ecdda9a497",
@@ -2427,9 +2567,24 @@
    "png": "45834abacb56b91b",
    "by": "pngquant 3.0.3"
   },
+  "glossary-env-logger": {
+   "svg": "335bc1d43ede0e8e",
+   "png": "21cdbf521315dd6b",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-erlang": {
    "svg": "1a50c2d95506881e",
    "png": "56e50d6bb0578186",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-eslint": {
+   "svg": "9b2e5db609c0cf3f",
+   "png": "10852e0fc36d4137",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-etcd": {
+   "svg": "8c7de74072d9e44e",
+   "png": "0b7325cf3079efc2",
    "by": "pngquant 3.0.3"
   },
   "glossary-express": {
@@ -2452,6 +2607,11 @@
    "png": "09b132746924bb04",
    "by": "pngquant 3.0.3"
   },
+  "glossary-fly-io": {
+   "svg": "876d5e4f2bd790ea",
+   "png": "ba9beb8ae1afff23",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-fork": {
    "svg": "3a4e9e4604acb44c",
    "png": "007cb5348641295a",
@@ -2465,6 +2625,11 @@
   "glossary-gis": {
    "svg": "e02b52a68d17e6e7",
    "png": "742cf02b4878585d",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-git": {
+   "svg": "dcc7ae782bd923c0",
+   "png": "ba9dafde31a38ea0",
    "by": "pngquant 3.0.3"
   },
   "glossary-github-actions": {
@@ -2487,9 +2652,34 @@
    "png": "889021e6e3a53d93",
    "by": "pngquant 3.0.3"
   },
+  "glossary-go": {
+   "svg": "709d5998bc9b71c7",
+   "png": "dfa46d4cb0e4c15b",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-grafana": {
+   "svg": "59df165a57efb921",
+   "png": "7fdbba0143c7f613",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-graphql": {
    "svg": "fcde7f28ea37feac",
    "png": "7ac80743fa2026d3",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-grunt": {
+   "svg": "db0a09110e322c56",
+   "png": "1454b9d723c42b16",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-guardian": {
+   "svg": "75d4c9bae5ee5696",
+   "png": "98575793c4bb20c3",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-gulp": {
+   "svg": "bd77f8995a65920c",
+   "png": "cd9c92ea5b9361e7",
    "by": "pngquant 3.0.3"
   },
   "glossary-handlebars": {
@@ -2505,6 +2695,11 @@
   "glossary-html": {
    "svg": "1622b1789e015449",
    "png": "1f7022c0065dbe4c",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-httpoison": {
+   "svg": "96ad89f15eae5ae3",
+   "png": "a5ffcba0b423fbe7",
    "by": "pngquant 3.0.3"
   },
   "glossary-i18n": {
@@ -2537,6 +2732,11 @@
    "png": "52c4c106f08233b4",
    "by": "pngquant 3.0.3"
   },
+  "glossary-jq": {
+   "svg": "c7cc5d91b5b4c8b4",
+   "png": "5eb51dd1d02ceae7",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-jquery": {
    "svg": "cf004ab6297af027",
    "png": "1fa356460dfda7be",
@@ -2550,6 +2750,11 @@
   "glossary-json-ld": {
    "svg": "625835e703c79a83",
    "png": "4637992c7476af1f",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-json-schema": {
+   "svg": "1166672100f4e400",
+   "png": "e59cfacb8bbc0a31",
    "by": "pngquant 3.0.3"
   },
   "glossary-just": {
@@ -2575,6 +2780,11 @@
   "glossary-lean": {
    "svg": "a35013d161411a7a",
    "png": "0e4fc89df88458b9",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-libp2p": {
+   "svg": "41e973d5c70a4445",
+   "png": "422d0232dfbc27e1",
    "by": "pngquant 3.0.3"
   },
   "glossary-m4": {
@@ -2635,6 +2845,11 @@
   "glossary-mongodb": {
    "svg": "b03866aedfe1a797",
    "png": "dc4d3139ae9d1297",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-mongoose": {
+   "svg": "6a895c3b2cc3d9c8",
+   "png": "1e433c38d029039a",
    "by": "pngquant 3.0.3"
   },
   "glossary-monte-carlo-simulation": {
@@ -2727,6 +2942,11 @@
    "png": "1c67ac5f35470574",
    "by": "pngquant 3.0.3"
   },
+  "glossary-plug": {
+   "svg": "681acc4566c527b0",
+   "png": "f9d550fad689a757",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-policy-as-code": {
    "svg": "a77d1d555efc8b83",
    "png": "af9d7a3475be8b30",
@@ -2740,6 +2960,11 @@
   "glossary-postgresql": {
    "svg": "8a1bc6ae6d2d6278",
    "png": "5296f3fffb8930ac",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-protobuf": {
+   "svg": "807419c12f6a188e",
+   "png": "a59bc0229d6d76b3",
    "by": "pngquant 3.0.3"
   },
   "glossary-public-registry": {
@@ -2862,6 +3087,11 @@
    "png": "6799a360171b5ce6",
    "by": "pngquant 3.0.3"
   },
+  "glossary-sqlite": {
+   "svg": "ddaa3f8524cd1d48",
+   "png": "9a01f48e9a687764",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-squirrel": {
    "svg": "3c5aa05b4d379bc3",
    "png": "7c68051aac24c7ab",
@@ -2882,6 +3112,11 @@
    "png": "4eb2d4b708a11ce1",
    "by": "pngquant 3.0.3"
   },
+  "glossary-tesla": {
+   "svg": "9f05430f115c043e",
+   "png": "e369c8f008d18f44",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-tesseract": {
    "svg": "f162aff572aa0a75",
    "png": "d14ff9a84ffa5228",
@@ -2900,6 +3135,26 @@
   "glossary-typescript": {
    "svg": "2990580caa048995",
    "png": "ce6c99e560af532c",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-ubuntu": {
+   "svg": "ac61da8d855127dd",
+   "png": "ea523c848fac6e36",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-ueberauth": {
+   "svg": "e9bb7d146b5258fe",
+   "png": "816c60a18867b872",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-uikit": {
+   "svg": "45cc7b0d70b33d42",
+   "png": "74b5ae316d344055",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-vagrant": {
+   "svg": "776c76288da00db5",
+   "png": "27c3638822792553",
    "by": "pngquant 3.0.3"
   },
   "glossary-virtual-data-room": {
@@ -2925,6 +3180,11 @@
   "glossary-webpack": {
    "svg": "2e55772557cfba9c",
    "png": "c6b44673759ff2e7",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-xcode": {
+   "svg": "25ebcfa54f55528b",
+   "png": "5ffaf1d2e3c19913",
    "by": "pngquant 3.0.3"
   },
   "glossary-xslt": {

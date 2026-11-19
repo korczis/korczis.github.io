@@ -3,7 +3,7 @@
 title = "TypeScript"
 description = "JavaScript with static types, checked before the code runs and compiled to plain JavaScript."
 template = "term.html"
-weight = 38
+weight = 39
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]

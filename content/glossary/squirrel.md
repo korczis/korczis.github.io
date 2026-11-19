@@ -3,7 +3,7 @@
 title = "Squirrel"
 description = "A small embeddable scripting language; OpenTTD runs its AI players and game scripts in it."
 template = "term.html"
-weight = 35
+weight = 36
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]

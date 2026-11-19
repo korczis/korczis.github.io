@@ -3,7 +3,7 @@
 title = "Apache ECharts"
 description = "Projekt Apache pro interaktivní grafy: kalendáře, sunbursty, mapy a velké datové sady."
 template = "term.html"
-weight = 43
+weight = 45
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

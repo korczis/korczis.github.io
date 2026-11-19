@@ -3,7 +3,7 @@
 title = "Bower"
 description = "Raný správce balíčků pro frontendové knihovny, dnes nahrazený npm a bundlery."
 template = "term.html"
-weight = 46
+weight = 49
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

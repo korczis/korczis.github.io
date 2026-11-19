@@ -17,7 +17,7 @@ og_description = "microcrawler-browser: Data a GIS, JavaScript a HTML, 2016, arc
 og_image = "og/cs-work-microcrawler-browser.png"
 schema = "project"
 keywords = ["microcrawler-browser", "Data a GIS", "JavaScript", "HTML", "2016", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["javascript", "html", "babel", "webpack", "mocha", "jquery", "gis", "repository", "commit", "open-source"]
+terms = ["javascript", "html", "babel", "gulp", "webpack", "mocha", "jquery", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

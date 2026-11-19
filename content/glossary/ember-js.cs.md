@@ -3,7 +3,7 @@
 title = "Ember.js"
 description = "Framework JavaScriptu pro rozsáhlé jednostránkové aplikace s konvencemi pro routování, data a šablony."
 template = "term.html"
-weight = 60
+weight = 63
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

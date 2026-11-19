@@ -17,7 +17,7 @@ og_description = "comtesse: Tools in Just, Shell and Rust, 2025, active in the l
 og_image = "og/work-comtesse.png"
 schema = "project"
 keywords = ["comtesse", "Tools", "Just", "Shell", "Rust", "2025", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["just", "shell", "rust", "mermaid", "meilisearch", "open-source", "repository", "commit"]
+terms = ["just", "shell", "rust", "mermaid", "meilisearch", "json-schema", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

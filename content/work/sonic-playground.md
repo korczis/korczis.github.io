@@ -17,7 +17,7 @@ og_description = "Sonic Playground: Media and art in Python, JavaScript and HTML
 og_image = "og/work-sonic-playground.png"
 schema = "project"
 keywords = ["Sonic Playground", "sonic-playground", "Media and art", "Python", "JavaScript", "HTML", "2026", "GitHub", "Tomas Korcak", "korczis"]
-terms = ["python", "javascript", "html", "shell", "css", "elixir", "zola", "typescript", "tailwind-css", "flowbite-pro", "json-ld", "github-pages", "data-visualisation", "repository", "commit", "open-source"]
+terms = ["python", "javascript", "html", "shell", "css", "elixir", "zola", "typescript", "tailwind-css", "flowbite-pro", "json-schema", "json-ld", "github-pages", "data-visualisation", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

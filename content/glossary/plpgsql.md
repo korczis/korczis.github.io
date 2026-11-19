@@ -3,7 +3,7 @@
 title = "PL/pgSQL"
 description = "PostgreSQL's procedural language: functions and triggers that run SQL with variables, loops and conditions inside the database."
 template = "term.html"
-weight = 27
+weight = 28
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]

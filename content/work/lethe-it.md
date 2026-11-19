@@ -17,7 +17,7 @@ og_description = "lethe.it: Tools in JavaScript, Shell and CSS, 2014–2015, arc
 og_image = "og/work-lethe-it.png"
 schema = "project"
 keywords = ["lethe.it", "Tools", "JavaScript", "Shell", "CSS", "2014–2015", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["javascript", "shell", "css", "nodejs", "express", "ember-js", "mongodb", "socket-io", "bootstrap", "open-source", "repository", "commit"]
+terms = ["javascript", "shell", "css", "nodejs", "express", "ember-js", "mongodb", "mongoose", "socket-io", "gulp", "bootstrap", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

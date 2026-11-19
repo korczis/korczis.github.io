@@ -17,7 +17,7 @@ og_description = "edna: AI engineering, 2025, active in the last 24 months. Sour
 og_image = "og/work-edna.png"
 schema = "project"
 keywords = ["edna", "AI engineering", "2025", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["elixir", "phoenix", "postgresql", "ai-agent", "repository", "commit", "open-source"]
+terms = ["elixir", "phoenix", "postgresql", "erlang", "ai-agent", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

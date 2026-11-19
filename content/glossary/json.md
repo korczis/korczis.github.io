@@ -3,7 +3,7 @@
 title = "JSON"
 description = "A text format for structured data (objects, arrays, strings, numbers) that nearly every language reads and writes."
 template = "term.html"
-weight = 72
+weight = 86
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

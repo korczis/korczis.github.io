@@ -3,7 +3,7 @@
 title = "Absinthe"
 description = "The GraphQL toolkit for Elixir: a schema in Elixir code that resolves queries, mutations and subscriptions."
 template = "term.html"
-weight = 40
+weight = 42
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

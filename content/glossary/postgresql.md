@@ -3,7 +3,7 @@
 title = "PostgreSQL"
 description = "An open-source relational database known for correctness and extensions."
 template = "term.html"
-weight = 90
+weight = 108
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

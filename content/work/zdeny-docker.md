@@ -17,7 +17,7 @@ og_description = "zdeny-docker: Systems and infrastructure in Dockerfile and She
 og_image = "og/work-zdeny-docker.png"
 schema = "project"
 keywords = ["zdeny-docker", "Systems and infrastructure", "Dockerfile", "Shell", "2019", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["dockerfile", "shell", "python", "repository", "commit", "open-source"]
+terms = ["dockerfile", "shell", "python", "git", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

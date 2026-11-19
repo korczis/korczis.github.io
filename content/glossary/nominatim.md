@@ -3,7 +3,7 @@
 title = "Nominatim"
 description = "The geocoder of OpenStreetMap: it turns addresses into coordinates and coordinates back into addresses."
 template = "term.html"
-weight = 82
+weight = 99
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

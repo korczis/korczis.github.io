@@ -3,7 +3,7 @@
 title = "TypeScript"
 description = "JavaScript se statickými typy, kontrolovanými před spuštěním a kompilovanými do běžného JavaScriptu."
 template = "term.html"
-weight = 38
+weight = 39
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]

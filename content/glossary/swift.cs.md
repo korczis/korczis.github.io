@@ -3,7 +3,7 @@
 title = "Swift"
 description = "Jazyk Applu pro aplikace na iOS a macOS. Pojem ze slovníku."
 template = "term.html"
-weight = 36
+weight = 37
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -17,7 +17,7 @@ definition = "Jazyk Applu pro aplikace na iOS a macOS."
 aliases = []
 reference = { title = "swift.org", url = "https://www.swift.org/documentation/" }
 pages = ["projects/knowledge.cs.md", "projects/tools.cs.md", "work/bc-apple.cs.md", "work/happ.cs.md", "work/minervaeye.cs.md", "work/oscilla.cs.md", "work/readingphonenumbersinrealtime.cs.md"]
-related = ["repository", "open-source", "commit", "shell", "elixir", "alpine-js", "cpp", "flowbite-pro"]
+related = ["repository", "open-source", "commit", "shell", "elixir", "uikit", "xcode", "alpine-js"]
 og_title = "Swift: slovník"
 og_image = "og/cs-glossary-swift.png"
 keywords = ["Swift", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

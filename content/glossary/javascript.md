@@ -3,7 +3,7 @@
 title = "JavaScript"
 description = "The programming language of the web browser, also run on servers through Node.js. Every interactive part of this site is JavaScript."
 template = "term.html"
-weight = 17
+weight = 18
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]

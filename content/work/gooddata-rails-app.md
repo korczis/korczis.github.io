@@ -17,7 +17,7 @@ og_description = "gooddata_rails_app: Data and GIS in Ruby, CSS and JavaScript, 
 og_image = "og/work-gooddata-rails-app.png"
 schema = "project"
 keywords = ["gooddata_rails_app", "Data and GIS", "Ruby", "CSS", "JavaScript", "2014", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["ruby", "css", "javascript", "coffeescript", "scss", "jquery", "gis", "repository", "commit", "open-source"]
+terms = ["ruby", "css", "javascript", "coffeescript", "sqlite", "scss", "jquery", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

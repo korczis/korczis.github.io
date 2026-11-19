@@ -3,7 +3,7 @@
 title = "Kubernetes"
 description = "Systém, který provozuje kontejnery v clusteru: plánování, škálování, síť a nasazování deklarované jako zdroje."
 template = "term.html"
-weight = 74
+weight = 89
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -16,7 +16,7 @@ kind = "technology"
 definition = "Systém, který provozuje kontejnery v clusteru: plánování, škálování, síť a nasazování deklarované jako zdroje."
 aliases = ["k8s"]
 reference = { title = "Kubernetes documentation", url = "https://kubernetes.io/docs/concepts/overview/" }
-pages = ["services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "skills/data-room.cs.md", "skills/entity-resolution.cs.md", "skills/insolvency-monitoring.cs.md", "skills/knowledge-graph.cs.md", "skills/m-and-a-screening.cs.md", "skills/orchestration.cs.md", "skills/risk-scoring.cs.md", "work/apollon.cs.md", "work/cluster-kubernetes.cs.md", "work/cluster.cs.md", "work/k8s-orbis-pictus.cs.md", "_index.cs.md"]
+pages = ["services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "skills/data-room.cs.md", "skills/entity-resolution.cs.md", "skills/insolvency-monitoring.cs.md", "skills/knowledge-graph.cs.md", "skills/m-and-a-screening.cs.md", "skills/risk-scoring.cs.md", "work/apollon.cs.md", "work/cluster-kubernetes.cs.md", "work/cluster.cs.md", "work/k8s-orbis-pictus.cs.md", "_index.cs.md"]
 related = ["dockerfile", "alpine-js", "claude-api", "fastapi", "flowbite-pro", "github-actions", "html", "javascript"]
 og_title = "Kubernetes: slovník"
 og_image = "og/cs-glossary-kubernetes.png"

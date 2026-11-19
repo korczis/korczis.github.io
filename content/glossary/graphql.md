@@ -3,7 +3,7 @@
 title = "GraphQL"
 description = "A query language for APIs in which the client asks for exactly the fields it needs, against a typed schema."
 template = "term.html"
-weight = 68
+weight = 77
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

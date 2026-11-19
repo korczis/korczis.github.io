@@ -17,7 +17,7 @@ og_description = "ReadingPhoneNumbersInRealTime: Knowledge in Swift, 2021, archi
 og_image = "og/work-readingphonenumbersinrealtime.png"
 schema = "project"
 keywords = ["ReadingPhoneNumbersInRealTime", "Knowledge", "Swift", "2021", "GitHub", "Tomas Korcak", "korczis"]
-terms = ["swift", "repository", "commit", "open-source"]
+terms = ["swift", "uikit", "xcode", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

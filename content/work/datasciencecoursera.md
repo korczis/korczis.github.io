@@ -17,7 +17,7 @@ og_description = "datasciencecoursera: Data and GIS, 2015, archive. Source on Gi
 og_image = "og/work-datasciencecoursera.png"
 schema = "project"
 keywords = ["datasciencecoursera", "Data and GIS", "2015", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["markdown", "gis", "repository", "commit", "open-source"]
+terms = ["markdown", "git", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

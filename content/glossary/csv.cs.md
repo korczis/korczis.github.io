@@ -3,7 +3,7 @@
 title = "CSV"
 description = "Hodnoty oddělené čárkou: tabulka jako prostý text, jeden záznam na řádek, běžný formát datových exportů a otevřených dat."
 template = "term.html"
-weight = 55
+weight = 58
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -17,7 +17,7 @@ definition = "Hodnoty oddělené čárkou: tabulka jako prostý text, jeden záz
 aliases = ["csv"]
 reference = { title = "RFC 4180: Common Format for CSV Files", url = "https://www.rfc-editor.org/rfc/rfc4180" }
 pages = ["skills/change-monitoring.cs.md", "work/ctu-cz.cs.md", "work/distance-calculator.cs.md", "work/gooddata-lcm-tool.cs.md", "work/simple-geocoder.cs.md", "work/sli2dli.cs.md", "work/streamflow.cs.md", "work/zeman-ucet.cs.md"]
-related = ["commit", "open-source", "repository", "makefile", "clap", "rust", "elixir", "gis"]
+related = ["commit", "open-source", "repository", "clap", "makefile", "rust", "elixir", "erlang"]
 og_title = "CSV: slovník"
 og_image = "og/cs-glossary-csv.png"
 keywords = ["CSV", "Technologie", "Slovník", "Tomáš Korčák"]

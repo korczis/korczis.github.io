@@ -3,7 +3,7 @@
 title = "SCSS"
 description = "CSS s proměnnými, vnořováním a mixiny, kompilované nástrojem Sass do běžného CSS."
 template = "term.html"
-weight = 32
+weight = 33
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -17,7 +17,7 @@ definition = "CSS s proměnnými, vnořováním a mixiny, kompilované nástroje
 aliases = ["Sass"]
 reference = { title = "Sass documentation", url = "https://sass-lang.com/documentation/" }
 pages = ["work/gooddata-rails-app.cs.md", "work/korczis-gitlab-io.cs.md", "work/microscratch.cs.md"]
-related = ["commit", "css", "open-source", "repository", "javascript", "static-site-generator", "bootstrap", "bower"]
+related = ["commit", "css", "open-source", "repository", "javascript", "sqlite", "static-site-generator", "bootstrap"]
 og_title = "SCSS: slovník"
 og_image = "og/cs-glossary-scss.png"
 keywords = ["SCSS", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

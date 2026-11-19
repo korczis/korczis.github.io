@@ -3,7 +3,7 @@
 title = "Markdown"
 description = "A plain-text format whose light marks (headings, lists, links) render as HTML; READMEs and this site's pages are written in it."
 template = "term.html"
-weight = 76
+weight = 92
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "A plain-text format whose light marks (headings, lists, links) ren
 aliases = []
 reference = { title = "CommonMark", url = "https://commonmark.org/" }
 pages = ["work/books.md", "work/corvidae.md", "work/datasciencecoursera.md", "work/ght.md", "work/ideas.md", "work/marketing-ideas.md", "work/past.md", "work/prismatic-blog.md", "work/reading.md", "work/tinder-nomics.md"]
-related = ["commit", "open-source", "repository", "data-visualisation", "dockerfile", "elixir", "gis", "github-actions"]
+related = ["commit", "open-source", "repository", "data-visualisation", "dockerfile", "elixir", "gis", "git"]
 og_title = "Markdown: glossary"
 og_image = "og/glossary-markdown.png"
 keywords = ["Markdown", "Technology", "Glossary", "Tomas Korcak"]

@@ -3,7 +3,7 @@
 title = "Due diligence"
 description = "Prověrka firmy, osoby nebo majetku před rozhodnutím, například před akvizicí nebo investicí: kdo ji vlastní, co drží, co dluží a co se může pokazit."
 template = "term.html"
-weight = 117
+weight = 143
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

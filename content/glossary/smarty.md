@@ -3,7 +3,7 @@
 title = "Smarty"
 description = "A template engine for PHP that keeps presentation apart from application logic."
 template = "term.html"
-weight = 34
+weight = 35
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -17,7 +17,7 @@ definition = "A template engine for PHP that keeps presentation apart from appli
 aliases = []
 reference = { title = "smarty.net", url = "https://www.smarty.net/" }
 pages = ["work/cluster-kubernetes.md"]
-related = ["commit", "couchbase", "elasticsearch", "kibana", "kubernetes", "nominatim", "open-source", "postgresql"]
+related = ["commit", "couchbase", "elasticsearch", "etcd", "grafana", "kibana", "kubernetes", "nominatim"]
 og_title = "Smarty: glossary"
 og_image = "og/glossary-smarty.png"
 keywords = ["Smarty", "Programming language", "Glossary", "Tomas Korcak"]

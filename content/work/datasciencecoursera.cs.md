@@ -17,7 +17,7 @@ og_description = "datasciencecoursera: Data a GIS, 2015, archiv. Zdrojový kód:
 og_image = "og/cs-work-datasciencecoursera.png"
 schema = "project"
 keywords = ["datasciencecoursera", "Data a GIS", "2015", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["markdown", "gis", "repository", "commit", "open-source"]
+terms = ["markdown", "git", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

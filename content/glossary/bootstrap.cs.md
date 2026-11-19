@@ -3,7 +3,7 @@
 title = "Bootstrap"
 description = "CSS framework s responzivní mřížkou a hotovými komponentami pro rychlou stavbu webových stránek."
 template = "term.html"
-weight = 45
+weight = 48
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

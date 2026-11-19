@@ -17,7 +17,7 @@ og_description = "server-ansible: Systémy a infrastruktura, Shell, 2019, archiv
 og_image = "og/cs-work-server-ansible.png"
 schema = "project"
 keywords = ["server-ansible", "Systémy a infrastruktura", "Shell", "2019", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["shell", "ansible", "dockerfile", "elasticsearch", "kibana", "postgresql", "repository", "commit", "open-source"]
+terms = ["shell", "ansible", "dockerfile", "elasticsearch", "kibana", "grafana", "postgresql", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

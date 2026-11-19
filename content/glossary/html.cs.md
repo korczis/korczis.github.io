@@ -3,7 +3,7 @@
 title = "HTML"
 description = "Značkovací jazyk webových stránek: struktura, se kterou pracují styly a skripty."
 template = "term.html"
-weight = 15
+weight = 16
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]

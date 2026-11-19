@@ -17,7 +17,7 @@ og_description = "microcrawler-elixir: Data a GIS, Elixir, Shell a Makefile, 201
 og_image = "og/cs-work-microcrawler-elixir.png"
 schema = "project"
 keywords = ["microcrawler-elixir", "Data a GIS", "Elixir", "Shell", "Makefile", "2016", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["elixir", "shell", "makefile", "erlang", "rabbitmq", "couchbase", "elasticsearch", "gis", "repository", "commit", "open-source"]
+terms = ["elixir", "shell", "makefile", "erlang", "rabbitmq", "couchbase", "elasticsearch", "httpoison", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

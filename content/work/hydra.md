@@ -17,7 +17,7 @@ og_description = "hydra: Libraries in Elixir, CSS and JavaScript, 2019, archive.
 og_image = "og/work-hydra.png"
 schema = "project"
 keywords = ["hydra", "Libraries", "Elixir", "CSS", "JavaScript", "2019", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["elixir", "css", "javascript", "dockerfile", "shell", "phoenix", "erlang", "gitlab-ci", "open-source", "repository", "commit"]
+terms = ["elixir", "css", "javascript", "dockerfile", "shell", "phoenix", "erlang", "httpoison", "gitlab-ci", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

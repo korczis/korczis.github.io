@@ -103,7 +103,7 @@ Client work under confidentiality agreements, anonymised: sector and roles decla
 - [Tomas Korcak](https://korczis.github.io/): Tomas Korcak, staff engineer for AI agent infrastructure (Elixir, Rust): technical due diligence before a deal, and AI agents whose work you can check.
 - [About](https://korczis.github.io/about/): Tomas Korcak (korczis), staff engineer for AI agent infrastructure in Brno, open to remote roles: the CV, my languages over the years, and where to find the work.
 - [Case studies](https://korczis.github.io/cases/): Anonymised client work under confidentiality agreements: sector, my role, measured scale and what was delivered; every figure labelled measured or inferred.
-- [Glossary](https://korczis.github.io/glossary/): The 149 terms this site explains itself with: languages, technologies and concepts, each defined, sourced and linked to every page that uses it.
+- [Glossary](https://korczis.github.io/glossary/): The 175 terms this site explains itself with: languages, technologies and concepts, each defined, sourced and linked to every page that uses it.
 - [Hire me](https://korczis.github.io/hire/): Tomas Korcak, staff engineer for AI agent infrastructure, Elixir and Rust: available remote, full-time or contract. Roles, terms, rate and evidence.
 - [Interfaces](https://korczis.github.io/interfaces/): The site for machines: its Majordomus layer with MCP resource URIs, how to connect an agent over MCP, and every published file described in OpenAPI.
 - [Projects](https://korczis.github.io/projects/): Every project in the catalogue: what it is, what it is built with, whether it is live, and whether Majordomus supervises it.

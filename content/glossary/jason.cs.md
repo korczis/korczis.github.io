@@ -3,7 +3,7 @@
 title = "Jason"
 description = "Parser a generátor JSON, který používá většina projektů v Elixiru včetně Phoenixu."
 template = "term.html"
-weight = 70
+weight = 83
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

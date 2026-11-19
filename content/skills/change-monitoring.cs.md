@@ -13,7 +13,7 @@ skill = "change-monitoring"
 og_title = "Průběžný monitoring: dovednosti"
 og_image = "og/cs-skill-change-monitoring.png"
 schema = "skill"
-terms = ["skill", "change-detection", "bootstrap", "bower", "ember-js", "handlebars", "javascript", "clap", "css", "csv", "express", "makefile"]
+terms = ["skill", "change-detection", "bootstrap", "bower", "ember-js", "handlebars", "javascript", "clap", "css", "csv", "express", "grunt"]
 keywords = ["Průběžný monitoring", "Digitální vyšetřování a OSINT dossier", "Reputační zpravodajství a monitoring negativních zpráv", "Monitoring insolvencí, sporů a změn v rejstřících", "Hodnocení vnější útočné plochy a kybernetické expozice", "Tomáš Korčák"]
 
 [[extra.viz]]

@@ -3,7 +3,7 @@
 title = "Swift"
 description = "Apple's language for iOS and macOS applications. A term of the glossary."
 template = "term.html"
-weight = 36
+weight = 37
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -17,7 +17,7 @@ definition = "Apple's language for iOS and macOS applications."
 aliases = []
 reference = { title = "swift.org", url = "https://www.swift.org/documentation/" }
 pages = ["projects/knowledge.md", "projects/tools.md", "work/bc-apple.md", "work/happ.md", "work/minervaeye.md", "work/oscilla.md", "work/readingphonenumbersinrealtime.md"]
-related = ["repository", "open-source", "commit", "shell", "elixir", "alpine-js", "cpp", "flowbite-pro"]
+related = ["repository", "open-source", "commit", "shell", "elixir", "uikit", "xcode", "alpine-js"]
 og_title = "Swift: glossary"
 og_image = "og/glossary-swift.png"
 keywords = ["Swift", "Programming language", "Glossary", "Tomas Korcak"]

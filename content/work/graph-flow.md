@@ -17,7 +17,7 @@ og_description = "graph-flow: Science and visualisation in Rust, 2017, archive. 
 og_image = "og/work-graph-flow.png"
 schema = "project"
 keywords = ["graph-flow", "Science and visualisation", "Rust", "2017", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["rust", "clap", "data-visualisation", "repository", "commit", "open-source"]
+terms = ["rust", "clap", "env-logger", "data-visualisation", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

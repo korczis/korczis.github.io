@@ -3,7 +3,7 @@
 title = "Objective-C"
 description = "C with Smalltalk-style messages and objects; the language of Apple's platforms before Swift."
 template = "term.html"
-weight = 24
+weight = 25
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]

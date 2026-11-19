@@ -3,7 +3,7 @@
 title = "Alpine.js"
 description = "Malý JavaScriptový framework, který přidává chování do HTML přímo v atributech; tady filtry, drawery a paleta."
 template = "term.html"
-weight = 41
+weight = 43
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

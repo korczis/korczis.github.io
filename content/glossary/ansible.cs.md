@@ -3,7 +3,7 @@
 title = "Ansible"
 description = "Nástroj pro automatizaci bez agentů, který konfiguruje servery přes SSH podle deklarativních playbooků v YAML."
 template = "term.html"
-weight = 42
+weight = 44
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -17,7 +17,7 @@ definition = "Nástroj pro automatizaci bez agentů, který konfiguruje servery 
 aliases = []
 reference = { title = "Ansible documentation", url = "https://docs.ansible.com/" }
 pages = ["skills/ai-transformation.cs.md", "work/k8s-orbis-pictus.cs.md", "work/server-ansible.cs.md", "work/server-archlinux.cs.md", "work/server-atomic.cs.md", "work/server-nixos.cs.md"]
-related = ["commit", "dockerfile", "open-source", "repository", "shell", "ai-agent", "alpine-js", "claude-api"]
+related = ["commit", "dockerfile", "open-source", "repository", "shell", "vagrant", "ai-agent", "alpine-js"]
 og_title = "Ansible: slovník"
 og_image = "og/cs-glossary-ansible.png"
 keywords = ["Ansible", "Technologie", "Slovník", "Tomáš Korčák"]

@@ -3,7 +3,7 @@
 title = "Handlebars"
 description = "Šablonovací jazyk bez logiky, který plní HTML šablony daty pomocí výrazů {{…}}."
 template = "term.html"
-weight = 69
+weight = 81
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -17,7 +17,7 @@ definition = "Šablonovací jazyk bez logiky, který plní HTML šablony daty po
 aliases = []
 reference = { title = "Handlebars", url = "https://handlebarsjs.com/" }
 pages = ["services/attack-surface.cs.md", "skills/change-monitoring.cs.md", "work/apollocrawler-com.cs.md", "work/craftsmen.cs.md", "work/microcrawler-couchapp.cs.md", "work/microscratch.cs.md"]
-related = ["ember-js", "javascript", "bootstrap", "css", "bower", "commit", "express", "nodejs"]
+related = ["ember-js", "javascript", "bootstrap", "css", "bower", "commit", "express", "grunt"]
 og_title = "Handlebars: slovník"
 og_image = "og/cs-glossary-handlebars.png"
 keywords = ["Handlebars", "Technologie", "Slovník", "Tomáš Korčák"]

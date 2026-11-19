@@ -3,7 +3,7 @@
 title = "Data visualisation"
 description = "Turning numbers into pictures people can read at a glance: here spirals, bubbles, streams and graphs, each drawn from measured data."
 template = "term.html"
-weight = 114
+weight = 140
 
 [taxonomies]
 tags = ["Glossary", "Concept"]
