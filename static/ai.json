@@ -3,9 +3,9 @@
  "description": "The Majordomus layer of korczis/korczis.github.io: every object of .ai/ with its MCP resource URI",
  "source": "majordomus run objects.list, capabilities.list",
  "majordomus": "1.0.2",
- "tree": "ae5ebf13afe5804888d82196d3315b45a4c18444fd9f4222e5cf845a6417eb76",
+ "tree": "ce6545fa6664000e2f89a520da35708821317afb22b0928c770e9b6c981496c8",
  "counts": {
-  "objects": 151,
+  "objects": 152,
   "kinds": {
    "adr": 10,
    "context": 21,
@@ -15,14 +15,14 @@
    "policy": 1,
    "profile": 4,
    "prompt": 4,
-   "rule": 81,
+   "rule": 82,
    "scope": 1,
    "skill": 1,
    "taxonomy": 8
   },
-  "capabilities": 382,
+  "capabilities": 383,
   "mcp_tools": 215,
-  "mcp_resources": 208,
+  "mcp_resources": 209,
   "http_routes": 219
  },
  "objects": [
@@ -1081,6 +1081,14 @@
    "title": "No client, person or private source is ever named in this public repository",
    "description": "Work done under a non-disclosure agreement reaches the site only as anonymised, mined facts; no client or person name, private repository, path or copied text appears in any tracked file, built page or commit message, and the gate that checks it reads its list from outside the repository.",
    "path": ".ai/repo/rules/project/nda-never-named.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/project.numerals-agree@1",
+   "kind": "rule",
+   "identity": "project.numerals-agree@1",
+   "title": "Every count in running text agrees with its word, in every language and at every number the data can give",
+   "description": "A text with a count either takes the plural form its number needs (key__one, key__few, key__other, chosen by scripts/lib/derive.mjs t() in generators and by the count component in templates) or is phrased so that no form depends on the number (\"Pages: {n}\", \"in commits ({n})\"); scripts/check-numerals.mjs refuses a disagreeing count anywhere in the built site.",
+   "path": ".ai/repo/rules/project/numerals-agree.v1.md"
   },
   {
    "uri": "majordomus://rule/project.pages-are-articles@1",
