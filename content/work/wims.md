@@ -17,7 +17,7 @@ og_description = "wims: Tools in Rust, 2017, archive. Source on GitHub and GitLa
 og_image = "og/work-wims.png"
 schema = "project"
 keywords = ["wims", "Tools", "Rust", "2017", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["rust", "clap", "serde", "open-source", "repository", "commit"]
+terms = ["rust", "clap", "serde", "env-logger", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

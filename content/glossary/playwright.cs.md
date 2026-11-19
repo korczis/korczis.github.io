@@ -3,7 +3,7 @@
 title = "Playwright"
 description = "Knihovna pro automatizaci prohlížeče, která ovládá Chromium, Firefox a WebKit pro end-to-end testy a audity."
 template = "term.html"
-weight = 88
+weight = 105
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

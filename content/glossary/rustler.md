@@ -3,7 +3,7 @@
 title = "Rustler"
 description = "A library for writing Erlang native functions (NIFs) in Rust, so Elixir code can call fast, memory-safe Rust."
 template = "term.html"
-weight = 95
+weight = 114
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

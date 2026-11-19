@@ -3,7 +3,7 @@
 title = "Bower"
 description = "An early package manager for front-end libraries, since superseded by npm and bundlers."
 template = "term.html"
-weight = 46
+weight = 49
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

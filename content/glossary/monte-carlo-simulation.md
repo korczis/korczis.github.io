@@ -3,7 +3,7 @@
 title = "Monte Carlo simulation"
 description = "Estimating an uncertain outcome by sampling its inputs many times and reading the distribution of the results."
 template = "term.html"
-weight = 131
+weight = 157
 
 [taxonomies]
 tags = ["Glossary", "Concept"]

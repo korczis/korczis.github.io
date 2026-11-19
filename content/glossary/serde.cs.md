@@ -3,7 +3,7 @@
 title = "serde"
 description = "Framework Rustu pro serializaci a deserializaci datových struktur do JSON, TOML, YAML a dalších formátů."
 template = "term.html"
-weight = 96
+weight = 115
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -17,7 +17,7 @@ definition = "Framework Rustu pro serializaci a deserializaci datových struktur
 aliases = []
 reference = { title = "serde", url = "https://serde.rs/" }
 pages = ["work/maze-rs.cs.md", "work/rocksdb-indexer.cs.md", "work/sli2dli.cs.md", "work/wims.cs.md"]
-related = ["commit", "open-source", "repository", "rust", "clap", "csv", "data-visualisation", "gis"]
+related = ["commit", "open-source", "repository", "rust", "clap", "env-logger", "csv", "data-visualisation"]
 og_title = "serde: slovník"
 og_image = "og/cs-glossary-serde.png"
 keywords = ["serde", "Technologie", "Slovník", "Tomáš Korčák"]

@@ -3,7 +3,7 @@
 title = "Skutečné vlastnictví"
 description = "Fyzická osoba, která firmu v konečném důsledku vlastní nebo ovládá, často za vrstvami dalších firem; odhalí ji rejstříky a řetězce podílů."
 template = "term.html"
-weight = 107
+weight = 133
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

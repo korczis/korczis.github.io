@@ -3,7 +3,7 @@
 title = "clap"
 description = "Rust's command-line argument parser: subcommands, flags, validation and generated help from a typed definition."
 template = "term.html"
-weight = 50
+weight = 53
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "Rust's command-line argument parser: subcommands, flags, validatio
 aliases = []
 reference = { title = "clap documentation", url = "https://docs.rs/clap/" }
 pages = ["skills/change-monitoring.md", "skills/market-intelligence.md", "work/charon.md", "work/graph-flow.md", "work/maze-rs.md", "work/sli2dli.md", "work/streamflow.md", "work/wims.md"]
-related = ["commit", "open-source", "repository", "rust", "makefile", "csv", "javascript", "serde"]
+related = ["commit", "open-source", "repository", "rust", "csv", "javascript", "makefile", "serde"]
 og_title = "clap: glossary"
 og_image = "og/glossary-clap.png"
 keywords = ["clap", "Technology", "Glossary", "Tomas Korcak"]

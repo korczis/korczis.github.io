@@ -3,7 +3,7 @@
 title = "Tržní zpravodajství"
 description = "Poznatky o trhu (ceny, srovnatelné případy, konkurence a poptávka) sebrané z veřejných a licencovaných zdrojů jako podklad pro rozhodnutí."
 template = "term.html"
-weight = 128
+weight = 154
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

@@ -3,7 +3,7 @@
 title = "Risk assessment"
 description = "Identifying risks, estimating how likely and how severe each is, and ranking them so the work starts with what matters most."
 template = "term.html"
-weight = 141
+weight = 167
 
 [taxonomies]
 tags = ["Glossary", "Concept"]

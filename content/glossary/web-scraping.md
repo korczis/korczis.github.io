@@ -3,7 +3,7 @@
 title = "Web scraping"
 description = "Extracting data from web pages by program, from simple requests to a driven browser, within the site's terms and the law."
 template = "term.html"
-weight = 149
+weight = 175
 
 [taxonomies]
 tags = ["Glossary", "Concept"]

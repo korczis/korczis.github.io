@@ -17,7 +17,7 @@ og_description = "js-libp2p-umbrella: Tools, 2018, archive. Source on GitHub and
 og_image = "og/work-js-libp2p-umbrella.png"
 schema = "project"
 keywords = ["js-libp2p-umbrella", "Tools", "2018", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["javascript", "open-source", "repository", "commit"]
+terms = ["javascript", "libp2p", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

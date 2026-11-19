@@ -3,7 +3,7 @@
 title = "RabbitMQ"
 description = "Message broker, který směruje zprávy mezi producenty a konzumenty přes exchange a fronty (AMQP)."
 template = "term.html"
-weight = 92
+weight = 111
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

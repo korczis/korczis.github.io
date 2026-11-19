@@ -3,7 +3,7 @@
 title = "PostGIS"
 description = "The spatial extension of PostgreSQL: points, shapes and geographic queries in SQL."
 template = "term.html"
-weight = 89
+weight = 107
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

@@ -3,7 +3,7 @@
 title = "Lean"
 description = "Funkcionální jazyk a asistent důkazů: programy i matematické důkazy jejich správnosti, ověřené strojem."
 template = "term.html"
-weight = 19
+weight = 20
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]

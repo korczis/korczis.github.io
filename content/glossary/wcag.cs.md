@@ -3,7 +3,7 @@
 title = "WCAG"
 description = "Web Content Accessibility Guidelines; každá stránka tady se před nasazením kontroluje proti WCAG 2.2, úrovni AA."
 template = "term.html"
-weight = 148
+weight = 174
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

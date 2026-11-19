@@ -3,7 +3,7 @@
 title = "Kubernetes"
 description = "A system that runs containers across a cluster: scheduling, scaling, networking and rollouts declared as resources."
 template = "term.html"
-weight = 74
+weight = 89
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -16,7 +16,7 @@ kind = "technology"
 definition = "A system that runs containers across a cluster: scheduling, scaling, networking and rollouts declared as resources."
 aliases = ["k8s"]
 reference = { title = "Kubernetes documentation", url = "https://kubernetes.io/docs/concepts/overview/" }
-pages = ["services/compliance-screening.md", "services/continuous-monitoring.md", "skills/data-room.md", "skills/entity-resolution.md", "skills/insolvency-monitoring.md", "skills/knowledge-graph.md", "skills/m-and-a-screening.md", "skills/orchestration.md", "skills/risk-scoring.md", "work/apollon.md", "work/cluster-kubernetes.md", "work/cluster.md", "work/k8s-orbis-pictus.md", "_index.md"]
+pages = ["services/compliance-screening.md", "services/continuous-monitoring.md", "skills/data-room.md", "skills/entity-resolution.md", "skills/insolvency-monitoring.md", "skills/knowledge-graph.md", "skills/m-and-a-screening.md", "skills/risk-scoring.md", "work/apollon.md", "work/cluster-kubernetes.md", "work/cluster.md", "work/k8s-orbis-pictus.md", "_index.md"]
 related = ["dockerfile", "alpine-js", "claude-api", "fastapi", "flowbite-pro", "github-actions", "html", "javascript"]
 og_title = "Kubernetes: glossary"
 og_image = "og/glossary-kubernetes.png"

@@ -3,7 +3,7 @@
 title = "Smarty"
 description = "Šablonovací systém pro PHP, který odděluje prezentaci od aplikační logiky."
 template = "term.html"
-weight = 34
+weight = 35
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -17,7 +17,7 @@ definition = "Šablonovací systém pro PHP, který odděluje prezentaci od apli
 aliases = []
 reference = { title = "smarty.net", url = "https://www.smarty.net/" }
 pages = ["work/cluster-kubernetes.cs.md"]
-related = ["commit", "couchbase", "elasticsearch", "kibana", "kubernetes", "nominatim", "open-source", "postgresql"]
+related = ["commit", "couchbase", "elasticsearch", "etcd", "grafana", "kibana", "kubernetes", "nominatim"]
 og_title = "Smarty: slovník"
 og_image = "og/cs-glossary-smarty.png"
 keywords = ["Smarty", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

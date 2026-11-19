@@ -3,7 +3,7 @@
 title = "Broadway"
 description = "An Elixir library for concurrent, multi-stage data pipelines with back-pressure, batching and graceful failure."
 template = "term.html"
-weight = 47
+weight = 50
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

@@ -3,7 +3,7 @@
 title = "Virtuální datová místnost"
 description = "Zabezpečené online úložiště, kde se dokumenty transakce sdílejí se stranami, které je smějí vidět, a každý přístup se zaznamená."
 template = "term.html"
-weight = 147
+weight = 173
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

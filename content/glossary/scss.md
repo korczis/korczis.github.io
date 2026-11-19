@@ -3,7 +3,7 @@
 title = "SCSS"
 description = "CSS with variables, nesting and mixins, compiled by Sass into plain CSS."
 template = "term.html"
-weight = 32
+weight = 33
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -17,7 +17,7 @@ definition = "CSS with variables, nesting and mixins, compiled by Sass into plai
 aliases = ["Sass"]
 reference = { title = "Sass documentation", url = "https://sass-lang.com/documentation/" }
 pages = ["work/gooddata-rails-app.md", "work/korczis-gitlab-io.md", "work/microscratch.md"]
-related = ["commit", "css", "open-source", "repository", "javascript", "static-site-generator", "bootstrap", "bower"]
+related = ["commit", "css", "open-source", "repository", "javascript", "sqlite", "static-site-generator", "bootstrap"]
 og_title = "SCSS: glossary"
 og_image = "og/glossary-scss.png"
 keywords = ["SCSS", "Programming language", "Glossary", "Tomas Korcak"]

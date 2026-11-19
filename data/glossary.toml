@@ -34,7 +34,7 @@ reference = { title = "TypeScript handbook", url = "https://www.typescriptlang.o
 id = "ruby"
 term = "Ruby"
 kind = "language"
-aliases = ["Bundler", "RubyGems"]
+aliases = ["Bundler", "RubyGems", "Rake"]
 definition = "A dynamic, expressive language designed for programmer happiness; many of the older tools here are Ruby."
 definition_cs = "Dynamický, expresivní jazyk navržený pro radost programátora; mnoho starších nástrojů tady je v Ruby."
 reference = { title = "ruby-lang.org", url = "https://www.ruby-lang.org/en/about/" }
@@ -43,6 +43,7 @@ reference = { title = "ruby-lang.org", url = "https://www.ruby-lang.org/en/about
 id = "elixir"
 term = "Elixir"
 kind = "language"
+aliases = ["Mix"]
 definition = "A functional language on the Erlang virtual machine, built for concurrent, fault-tolerant systems."
 definition_cs = "Funkcionální jazyk nad virtuálním strojem Erlangu, stavěný pro souběžné systémy odolné vůči chybám."
 reference = { title = "elixir-lang.org", url = "https://elixir-lang.org/" }
@@ -51,7 +52,7 @@ reference = { title = "elixir-lang.org", url = "https://elixir-lang.org/" }
 id = "erlang"
 term = "Erlang"
 kind = "language"
-aliases = ["OTP"]
+aliases = ["OTP", "ETS"]
 definition = "A language and runtime from telecoms, designed for systems that must keep running while parts of them fail."
 definition_cs = "Jazyk a běhové prostředí z telekomunikací, navržené pro systémy, které musí běžet, i když jejich části selhávají."
 reference = { title = "erlang.org", url = "https://www.erlang.org/" }
@@ -1324,3 +1325,213 @@ kind = "technology"
 definition = "The geocoder of OpenStreetMap: it turns addresses into coordinates and coordinates back into addresses."
 definition_cs = "Geokodér OpenStreetMap: převádí adresy na souřadnice a souřadnice zpět na adresy."
 reference = { title = "Nominatim documentation", url = "https://nominatim.org/release-docs/latest/" }
+
+[[terms]]
+id = "go"
+term = "Go"
+kind = "language"
+aliases = ["Golang"]
+definition = "A compiled language from Google with goroutines and channels for concurrency, used for network services and command-line tools."
+definition_cs = "Kompilovaný jazyk od Googlu s gorutinami a kanály pro souběžnost, používaný pro síťové služby a nástroje příkazové řádky."
+reference = { title = "The Go Programming Language", url = "https://go.dev/doc/" }
+
+[[terms]]
+id = "sqlite"
+term = "SQLite"
+kind = "technology"
+definition = "An embedded SQL database in a single file, with no server: the most widely deployed database engine."
+definition_cs = "Vestavěná SQL databáze v jediném souboru, bez serveru: nejrozšířenější databázový engine."
+reference = { title = "SQLite documentation", url = "https://www.sqlite.org/docs.html" }
+
+[[terms]]
+id = "git"
+term = "Git"
+kind = "technology"
+definition = "The distributed version-control system: every clone holds the full history of commits, branches and tags."
+definition_cs = "Distribuovaný systém správy verzí: každý klon drží celou historii commitů, větví a tagů."
+reference = { title = "Git documentation", url = "https://git-scm.com/doc" }
+
+[[terms]]
+id = "ubuntu"
+term = "Ubuntu"
+kind = "technology"
+definition = "A Debian-based Linux distribution, common on servers, in containers and in CI runners."
+definition_cs = "Distribuce Linuxu založená na Debianu, běžná na serverech, v kontejnerech a v CI runnerech."
+reference = { title = "Ubuntu documentation", url = "https://help.ubuntu.com/" }
+
+[[terms]]
+id = "vagrant"
+term = "Vagrant"
+kind = "technology"
+definition = "A tool that builds reproducible development virtual machines from a Vagrantfile."
+definition_cs = "Nástroj, který podle souboru Vagrantfile staví reprodukovatelné vývojové virtuální stroje."
+reference = { title = "Vagrant documentation", url = "https://developer.hashicorp.com/vagrant/docs" }
+
+[[terms]]
+id = "etcd"
+term = "etcd"
+kind = "technology"
+definition = "A distributed, consistent key-value store (Raft) for configuration and service discovery; Kubernetes keeps its state in it."
+definition_cs = "Distribuované, konzistentní úložiště klíč–hodnota (Raft) pro konfiguraci a vyhledávání služeb; Kubernetes v něm drží svůj stav."
+reference = { title = "etcd documentation", url = "https://etcd.io/docs/" }
+
+[[terms]]
+id = "grafana"
+term = "Grafana"
+kind = "technology"
+definition = "An observability dashboard over metrics, logs and traces from many data sources."
+definition_cs = "Dashboard pro pozorovatelnost nad metrikami, logy a trasami z mnoha datových zdrojů."
+reference = { title = "Grafana documentation", url = "https://grafana.com/docs/grafana/latest/" }
+
+[[terms]]
+id = "protobuf"
+term = "Protocol Buffers"
+kind = "technology"
+aliases = ["protobuf"]
+definition = "Google's language-neutral binary serialisation format, with schemas in .proto files compiled to code."
+definition_cs = "Binární serializační formát Googlu nezávislý na jazyce, se schématy v souborech .proto kompilovanými do kódu."
+reference = { title = "Protocol Buffers documentation", url = "https://protobuf.dev/" }
+
+[[terms]]
+id = "json-schema"
+term = "JSON Schema"
+kind = "technology"
+definition = "A vocabulary for describing and validating the structure of JSON documents."
+definition_cs = "Slovník pro popis a validaci struktury dokumentů JSON."
+reference = { title = "JSON Schema", url = "https://json-schema.org/" }
+
+[[terms]]
+id = "jq"
+term = "jq"
+kind = "technology"
+definition = "A command-line processor that filters and transforms JSON with a small functional language."
+definition_cs = "Procesor pro příkazovou řádku, který filtruje a transformuje JSON malým funkcionálním jazykem."
+reference = { title = "jq manual", url = "https://jqlang.github.io/jq/manual/" }
+
+[[terms]]
+id = "eslint"
+term = "ESLint"
+kind = "technology"
+definition = "A configurable linter that finds problems and enforces style in JavaScript and TypeScript code."
+definition_cs = "Konfigurovatelný linter, který hledá chyby a vynucuje styl v kódu JavaScriptu a TypeScriptu."
+reference = { title = "ESLint", url = "https://eslint.org/docs/latest/" }
+
+[[terms]]
+id = "axe-core"
+term = "axe-core"
+kind = "technology"
+definition = "An accessibility testing engine that checks rendered pages against WCAG rules; this site's browser audit runs it."
+definition_cs = "Engine pro testování přístupnosti, který kontroluje vykreslené stránky podle pravidel WCAG; spouští ho browser audit tohoto webu."
+reference = { title = "axe-core on GitHub", url = "https://github.com/dequelabs/axe-core" }
+
+[[terms]]
+id = "grunt"
+term = "Grunt"
+kind = "technology"
+definition = "An early JavaScript task runner configured by a Gruntfile: concatenation, minification, tests."
+definition_cs = "Raný spouštěč úloh pro JavaScript nastavovaný souborem Gruntfile: spojování, minifikace, testy."
+reference = { title = "Grunt", url = "https://gruntjs.com/" }
+
+[[terms]]
+id = "gulp"
+term = "gulp"
+kind = "technology"
+definition = "A streaming JavaScript build system whose tasks are code: files flow through plugins."
+definition_cs = "Streamovací build systém pro JavaScript, jehož úlohy jsou kód: soubory proudí přes pluginy."
+reference = { title = "gulp.js", url = "https://gulpjs.com/docs/en/getting-started/quick-start" }
+
+[[terms]]
+id = "mongoose"
+term = "Mongoose"
+kind = "technology"
+definition = "An object-document mapper for MongoDB in Node.js, with schemas, validation and queries."
+definition_cs = "Objektově-dokumentový mapper pro MongoDB v Node.js se schématy, validací a dotazy."
+reference = { title = "Mongoose", url = "https://mongoosejs.com/docs/" }
+
+[[terms]]
+id = "plug"
+term = "Plug"
+kind = "technology"
+definition = "Elixir's specification of composable modules for web applications; Phoenix's request pipeline is built from plugs."
+definition_cs = "Specifikace skládatelných modulů pro webové aplikace v Elixiru; pipeline požadavků Phoenixu je složená z plugů."
+reference = { title = "Plug documentation", url = "https://hexdocs.pm/plug/" }
+
+[[terms]]
+id = "tesla"
+term = "Tesla"
+kind = "technology"
+definition = "An HTTP client for Elixir built from middleware, with swappable adapters."
+definition_cs = "HTTP klient pro Elixir složený z middleware, s vyměnitelnými adaptéry."
+reference = { title = "Tesla documentation", url = "https://hexdocs.pm/tesla/" }
+
+[[terms]]
+id = "httpoison"
+term = "HTTPoison"
+kind = "technology"
+definition = "An HTTP client for Elixir built on hackney."
+definition_cs = "HTTP klient pro Elixir postavený na knihovně hackney."
+reference = { title = "HTTPoison documentation", url = "https://hexdocs.pm/httpoison/" }
+
+[[terms]]
+id = "guardian"
+term = "Guardian"
+kind = "technology"
+definition = "A token-based authentication library for Elixir, most often issuing JSON Web Tokens."
+definition_cs = "Knihovna pro autentizaci tokeny v Elixiru, nejčastěji vydávající JSON Web Tokeny."
+reference = { title = "Guardian documentation", url = "https://hexdocs.pm/guardian/" }
+
+[[terms]]
+id = "ueberauth"
+term = "Ueberauth"
+kind = "technology"
+definition = "An authentication framework for Elixir with strategies for OAuth providers."
+definition_cs = "Autentizační framework pro Elixir se strategiemi pro poskytovatele OAuth."
+reference = { title = "Ueberauth documentation", url = "https://hexdocs.pm/ueberauth/" }
+
+[[terms]]
+id = "libp2p"
+term = "libp2p"
+kind = "technology"
+definition = "A modular networking stack for peer-to-peer applications: transports, discovery, routing and pub-sub."
+definition_cs = "Modulární síťová vrstva pro aplikace peer-to-peer: transporty, vyhledávání, směrování a pub-sub."
+reference = { title = "libp2p documentation", url = "https://docs.libp2p.io/" }
+
+[[terms]]
+id = "env-logger"
+term = "env_logger"
+kind = "technology"
+definition = "A Rust logger configured by the RUST_LOG environment variable."
+definition_cs = "Logger pro Rust nastavovaný proměnnou prostředí RUST_LOG."
+reference = { title = "env_logger documentation", url = "https://docs.rs/env_logger/" }
+
+[[terms]]
+id = "fly-io"
+term = "Fly.io"
+kind = "technology"
+definition = "A platform that runs applications as micro-VMs close to their users, deployed from a Dockerfile."
+definition_cs = "Platforma, která spouští aplikace jako mikro-VM blízko uživatelům, nasazované z Dockerfile."
+reference = { title = "Fly.io documentation", url = "https://fly.io/docs/" }
+
+[[terms]]
+id = "dotnet"
+term = ".NET"
+kind = "technology"
+definition = "Microsoft's runtime and libraries for C# and other languages, across Windows, Linux and macOS."
+definition_cs = "Běhové prostředí a knihovny Microsoftu pro C# a další jazyky na Windows, Linuxu i macOS."
+reference = { title = ".NET documentation", url = "https://learn.microsoft.com/en-us/dotnet/" }
+
+[[terms]]
+id = "xcode"
+term = "Xcode"
+kind = "technology"
+definition = "Apple's development environment for building, testing and shipping apps for its platforms."
+definition_cs = "Vývojové prostředí Applu pro stavbu, testování a vydávání aplikací pro jeho platformy."
+reference = { title = "Xcode documentation", url = "https://developer.apple.com/documentation/xcode" }
+
+[[terms]]
+id = "uikit"
+term = "UIKit"
+kind = "technology"
+definition = "Apple's framework for the user interface of iOS apps: views, controllers, events."
+definition_cs = "Framework Applu pro uživatelské rozhraní aplikací pro iOS: pohledy, kontrolery, události."
+reference = { title = "UIKit documentation", url = "https://developer.apple.com/documentation/uikit" }

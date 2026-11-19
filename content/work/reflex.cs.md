@@ -17,7 +17,7 @@ og_description = "reflex: Nástroje, C#, 2012, archiv. Zdrojový kód: GitHub a 
 og_image = "og/cs-work-reflex.png"
 schema = "project"
 keywords = ["reflex", "Nástroje", "C#", "2012", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["csharp", "open-source", "repository", "commit"]
+terms = ["csharp", "dotnet", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

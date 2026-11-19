@@ -17,7 +17,7 @@ og_description = "microcrawler: Data a GIS, Shell, 2016–2017, archiv. Zdrojov�
 og_image = "og/cs-work-microcrawler.png"
 schema = "project"
 keywords = ["microcrawler", "Data a GIS", "Shell", "2016–2017", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["shell", "coreos", "dockerfile", "gis", "repository", "commit", "open-source"]
+terms = ["shell", "coreos", "etcd", "dockerfile", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

@@ -264,8 +264,133 @@
       "repos": 4
     },
     {
+      "id": "dotnet",
+      "name": ".NET",
+      "repos": 3
+    },
+    {
+      "id": "axe-core",
+      "name": "axe-core",
+      "repos": 3
+    },
+    {
       "id": "claude-api",
       "name": "Claude API",
+      "repos": 3
+    },
+    {
+      "id": "env-logger",
+      "name": "env_logger",
+      "repos": 3
+    },
+    {
+      "id": "eslint",
+      "name": "ESLint",
+      "repos": 3
+    },
+    {
+      "id": "etcd",
+      "name": "etcd",
+      "repos": 3
+    },
+    {
+      "id": "fly-io",
+      "name": "Fly.io",
+      "repos": 3
+    },
+    {
+      "id": "git",
+      "name": "Git",
+      "repos": 3
+    },
+    {
+      "id": "grafana",
+      "name": "Grafana",
+      "repos": 3
+    },
+    {
+      "id": "grunt",
+      "name": "Grunt",
+      "repos": 3
+    },
+    {
+      "id": "guardian",
+      "name": "Guardian",
+      "repos": 3
+    },
+    {
+      "id": "gulp",
+      "name": "gulp",
+      "repos": 3
+    },
+    {
+      "id": "httpoison",
+      "name": "HTTPoison",
+      "repos": 3
+    },
+    {
+      "id": "jq",
+      "name": "jq",
+      "repos": 3
+    },
+    {
+      "id": "json-schema",
+      "name": "JSON Schema",
+      "repos": 3
+    },
+    {
+      "id": "libp2p",
+      "name": "libp2p",
+      "repos": 3
+    },
+    {
+      "id": "mongoose",
+      "name": "Mongoose",
+      "repos": 3
+    },
+    {
+      "id": "plug",
+      "name": "Plug",
+      "repos": 3
+    },
+    {
+      "id": "protobuf",
+      "name": "Protocol Buffers",
+      "repos": 3
+    },
+    {
+      "id": "sqlite",
+      "name": "SQLite",
+      "repos": 3
+    },
+    {
+      "id": "tesla",
+      "name": "Tesla",
+      "repos": 3
+    },
+    {
+      "id": "ubuntu",
+      "name": "Ubuntu",
+      "repos": 3
+    },
+    {
+      "id": "ueberauth",
+      "name": "Ueberauth",
+      "repos": 3
+    },
+    {
+      "id": "uikit",
+      "name": "UIKit",
+      "repos": 3
+    },
+    {
+      "id": "vagrant",
+      "name": "Vagrant",
+      "repos": 3
+    },
+    {
+      "id": "xcode",
+      "name": "Xcode",
       "repos": 3
     },
     {
@@ -430,7 +555,8 @@
             "Zola",
             "D3.js",
             "Node.js",
-            "Playwright"
+            "Playwright",
+            "axe-core"
           ]
         },
         {
@@ -530,6 +656,7 @@
             "Tailwind CSS",
             "Flowbite Pro",
             "Playwright",
+            "axe-core",
             "GitHub Pages"
           ]
         },
@@ -561,6 +688,7 @@
             "Zola",
             "Claude API",
             "Mermaid",
+            "Git",
             "GitHub Actions"
           ]
         },
@@ -594,6 +722,7 @@
             "Flowbite Pro",
             "Majordomus",
             "Tailwind CSS",
+            "axe-core",
             "GitHub Pages"
           ]
         },
@@ -627,6 +756,7 @@
             "TypeScript",
             "Tailwind CSS",
             "Flowbite Pro",
+            "JSON Schema",
             "GitHub Pages"
           ]
         },
@@ -792,6 +922,7 @@
             "Shell",
             "CSS",
             "Zola",
+            "JSON Schema",
             "Node.js",
             "Tailwind CSS",
             "Playwright",
@@ -942,7 +1073,8 @@
             "Dockerfile",
             "JavaScript",
             "Phoenix",
-            "Rustler"
+            "Rustler",
+            "Protocol Buffers"
           ]
         },
         {
@@ -995,6 +1127,7 @@
           "uses": [
             "TypeScript",
             "JavaScript",
+            "ESLint",
             "GitLab CI"
           ]
         },
@@ -1025,6 +1158,7 @@
             "Shell",
             "Phoenix",
             "Erlang",
+            "HTTPoison",
             "GitLab CI"
           ]
         },
@@ -1107,6 +1241,7 @@
             "JavaScript",
             "HTML",
             "Babel",
+            "gulp",
             "webpack",
             "Mocha",
             "jQuery"
@@ -1549,7 +1684,9 @@
             "HTML",
             "JavaScript",
             "Phoenix",
-            "Cowboy"
+            "Plug",
+            "Cowboy",
+            "Go"
           ]
         },
         {
@@ -1719,7 +1856,8 @@
           ],
           "supervised": false,
           "uses": [
-            "JavaScript"
+            "JavaScript",
+            "libp2p"
           ]
         },
         {
@@ -1748,6 +1886,8 @@
             "Rust",
             "Node.js",
             "Babel",
+            "Protocol Buffers",
+            "libp2p",
             "Dockerfile",
             "webpack"
           ]
@@ -1780,9 +1920,12 @@
             "Phoenix",
             "Absinthe",
             "GraphQL",
+            "Guardian",
+            "Ueberauth",
             "Rust",
             "Rustler",
             "Couchbase",
+            "Protocol Buffers",
             "webpack"
           ]
         },
@@ -1877,6 +2020,8 @@
             "Phoenix",
             "Absinthe",
             "GraphQL",
+            "Guardian",
+            "Ueberauth",
             "PostgreSQL",
             "Rust",
             "webpack"
@@ -1907,6 +2052,7 @@
             "Elixir",
             "Elm",
             "Phoenix",
+            "Ueberauth",
             "Bootstrap",
             "webpack",
             "Bower",
@@ -2024,6 +2170,7 @@
             "Phoenix",
             "Absinthe",
             "GraphQL",
+            "HTTPoison",
             "React",
             "Dockerfile"
           ]
@@ -2053,6 +2200,7 @@
             "Elixir",
             "HTML",
             "Phoenix",
+            "Guardian",
             "React"
           ]
         },
@@ -2134,7 +2282,8 @@
           "uses": [
             "JavaScript",
             "Babel",
-            "webpack"
+            "webpack",
+            "ESLint"
           ]
         },
         {
@@ -2161,7 +2310,8 @@
           "uses": [
             "JavaScript",
             "Babel",
-            "GraphQL"
+            "GraphQL",
+            "ESLint"
           ]
         },
         {
@@ -2303,7 +2453,9 @@
             "Express",
             "Ember.js",
             "MongoDB",
+            "Mongoose",
             "Socket.IO",
+            "gulp",
             "Bootstrap"
           ]
         },
@@ -2335,6 +2487,7 @@
             "Express",
             "Ember.js",
             "Socket.IO",
+            "gulp",
             "Handlebars",
             "SCSS",
             "Bootstrap",
@@ -2390,6 +2543,7 @@
             "CSS",
             "JavaScript",
             "CoffeeScript",
+            "SQLite",
             "SCSS",
             "jQuery"
           ]
@@ -2448,6 +2602,7 @@
             "Ember.js",
             "Handlebars",
             "Bootstrap",
+            "Grunt",
             "Bower"
           ]
         },
@@ -2504,9 +2659,11 @@
             "Node.js",
             "Express",
             "MongoDB",
+            "Mongoose",
             "Socket.IO",
             "Ember.js",
             "Handlebars",
+            "Grunt",
             "Mocha",
             "Travis CI"
           ]
@@ -2538,10 +2695,12 @@
             "Node.js",
             "Express",
             "MongoDB",
+            "Mongoose",
             "Socket.IO",
             "Ember.js",
             "Handlebars",
             "Bootstrap",
+            "Grunt",
             "Mocha"
           ]
         },
@@ -2752,6 +2911,7 @@
             "Flowbite Pro",
             "Majordomus",
             "Tailwind CSS",
+            "axe-core",
             "GitHub Pages"
           ]
         },
@@ -2785,6 +2945,7 @@
             "TypeScript",
             "Tailwind CSS",
             "Flowbite Pro",
+            "JSON Schema",
             "GitHub Pages"
           ]
         },
@@ -2852,7 +3013,8 @@
             "Ecto",
             "PostgreSQL",
             "Meilisearch",
-            "Dockerfile"
+            "Dockerfile",
+            "Fly.io"
           ]
         },
         {
@@ -2879,6 +3041,7 @@
           "uses": [
             "TypeScript",
             "JavaScript",
+            "ESLint",
             "GitLab CI"
           ]
         },
@@ -3290,6 +3453,7 @@
           "uses": [
             "Shell",
             "Dockerfile",
+            "Ubuntu",
             "Ruby",
             "PostgreSQL",
             "Python",
@@ -3374,6 +3538,7 @@
             "Ruby",
             "GLI",
             "CoreOS",
+            "etcd",
             "Kubernetes",
             "Dockerfile",
             "RSpec"
@@ -3459,6 +3624,7 @@
             "CSS",
             "JavaScript",
             "CoffeeScript",
+            "SQLite",
             "SCSS",
             "jQuery"
           ]
@@ -3486,7 +3652,8 @@
           "uses": [
             "Ruby",
             "RabbitMQ",
-            "MongoDB"
+            "MongoDB",
+            "SQLite"
           ]
         },
         {
@@ -3535,7 +3702,8 @@
           "primary": false,
           "share": 27.9,
           "via": [
-            "code"
+            "code",
+            "files"
           ],
           "supervised": false,
           "uses": [
@@ -3801,6 +3969,7 @@
             "TypeScript",
             "Tailwind CSS",
             "Flowbite Pro",
+            "JSON Schema",
             "GitHub Pages"
           ]
         },
@@ -3959,7 +4128,8 @@
             "Ecto",
             "PostgreSQL",
             "Meilisearch",
-            "Dockerfile"
+            "Dockerfile",
+            "Fly.io"
           ]
         },
         {
@@ -3990,7 +4160,8 @@
             "Dockerfile",
             "JavaScript",
             "Phoenix",
-            "Rustler"
+            "Rustler",
+            "Protocol Buffers"
           ]
         },
         {
@@ -4074,8 +4245,10 @@
           "supervised": false,
           "uses": [
             "Elixir",
+            "Tesla",
             "Jason",
             "CSV",
+            "Erlang",
             "GitLab CI"
           ]
         },
@@ -4101,7 +4274,8 @@
           "uses": [
             "Elixir",
             "Phoenix",
-            "PostgreSQL"
+            "PostgreSQL",
+            "Erlang"
           ]
         },
         {
@@ -4133,6 +4307,7 @@
             "Shell",
             "Phoenix",
             "Erlang",
+            "HTTPoison",
             "GitLab CI"
           ]
         },
@@ -4159,6 +4334,7 @@
           "supervised": false,
           "uses": [
             "Elixir",
+            "Plug",
             "Cowboy",
             "Jason",
             "GitLab CI"
@@ -4193,9 +4369,11 @@
             "Zola",
             "Tailwind CSS",
             "Phoenix",
+            "SQLite",
             "Rust",
             "Rustler",
-            "GitLab CI"
+            "GitLab CI",
+            "Fly.io"
           ]
         },
         {
@@ -4222,6 +4400,7 @@
           "uses": [
             "Elixir",
             "Python",
+            "Tesla",
             "Jason",
             "Dockerfile",
             "GitLab CI"
@@ -4283,7 +4462,8 @@
             "Erlang",
             "RabbitMQ",
             "Couchbase",
-            "Elasticsearch"
+            "Elasticsearch",
+            "HTTPoison"
           ]
         },
         {
@@ -4312,6 +4492,7 @@
             "Shell",
             "EEx and HEEx",
             "Erlang",
+            "Tesla",
             "CSV",
             "Nominatim",
             "Dockerfile"
@@ -4406,7 +4587,9 @@
             "HTML",
             "Dockerfile",
             "Erlang",
+            "Plug",
             "Cowboy",
+            "Fly.io",
             "GitHub Actions"
           ]
         },
@@ -4498,7 +4681,9 @@
             "HTML",
             "JavaScript",
             "Phoenix",
-            "Cowboy"
+            "Plug",
+            "Cowboy",
+            "Go"
           ]
         },
         {
@@ -4686,9 +4871,12 @@
             "Phoenix",
             "Absinthe",
             "GraphQL",
+            "Guardian",
+            "Ueberauth",
             "Rust",
             "Rustler",
             "Couchbase",
+            "Protocol Buffers",
             "webpack"
           ]
         },
@@ -4813,6 +5001,8 @@
             "Phoenix",
             "Absinthe",
             "GraphQL",
+            "Guardian",
+            "Ueberauth",
             "PostgreSQL",
             "Rust",
             "webpack"
@@ -4843,6 +5033,7 @@
             "Elixir",
             "Elm",
             "Phoenix",
+            "Ueberauth",
             "Bootstrap",
             "webpack",
             "Bower",
@@ -4911,6 +5102,7 @@
             "Phoenix",
             "Absinthe",
             "GraphQL",
+            "HTTPoison",
             "React",
             "Dockerfile"
           ]
@@ -4967,6 +5159,7 @@
             "Elixir",
             "HTML",
             "Phoenix",
+            "Guardian",
             "React"
           ]
         },
@@ -5006,10 +5199,10 @@
       "name": "Erlang",
       "kind": "language",
       "counts": {
-        "repos": 7,
+        "repos": 9,
         "primary": 1,
         "sites": 0,
-        "work": 7,
+        "work": 9,
         "engagements": 0
       },
       "first": 2014,
@@ -5021,7 +5214,7 @@
         },
         {
           "key": "ai",
-          "n": 1
+          "n": 2
         },
         {
           "key": "data",
@@ -5033,6 +5226,10 @@
         },
         {
           "key": "libraries",
+          "n": 1
+        },
+        {
+          "key": "science",
           "n": 1
         }
       ],
@@ -5066,7 +5263,62 @@
             "Ecto",
             "PostgreSQL",
             "Meilisearch",
-            "Dockerfile"
+            "Dockerfile",
+            "Fly.io"
+          ]
+        },
+        {
+          "name": "distance-calculator",
+          "title": "distance-calculator",
+          "url": "https://gitlab.com/korczis/distance-calculator",
+          "work": true,
+          "slug": "distance-calculator",
+          "site": null,
+          "category": "science",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2024-03-20",
+          "pushed": "2025-12-20",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Elixir",
+            "Tesla",
+            "Jason",
+            "CSV",
+            "Erlang",
+            "GitLab CI"
+          ]
+        },
+        {
+          "name": "edna",
+          "title": "edna",
+          "url": "https://gitlab.com/korczis/edna",
+          "work": true,
+          "slug": "edna",
+          "site": null,
+          "category": "ai",
+          "description": "Edna je digitální kartářka, astroložka a analytička poháněná AI. Projekt spojuje mystiku, astrologii a psychologii s moderními LLM modely, aby uživatelům přinášel denní horoskopy, výklady karet, životní vhledy a psychologické reflexe.",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2025-09-02",
+          "pushed": "2025-12-20",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Elixir",
+            "Phoenix",
+            "PostgreSQL",
+            "Erlang"
           ]
         },
         {
@@ -5096,6 +5348,7 @@
             "Shell",
             "Phoenix",
             "Erlang",
+            "HTTPoison",
             "GitLab CI"
           ]
         },
@@ -5124,7 +5377,8 @@
             "Erlang",
             "RabbitMQ",
             "Couchbase",
-            "Elasticsearch"
+            "Elasticsearch",
+            "HTTPoison"
           ]
         },
         {
@@ -5151,6 +5405,7 @@
             "Shell",
             "EEx and HEEx",
             "Erlang",
+            "Tesla",
             "CSV",
             "Nominatim",
             "Dockerfile"
@@ -5183,7 +5438,9 @@
             "HTML",
             "Dockerfile",
             "Erlang",
+            "Plug",
             "Cowboy",
+            "Fly.io",
             "GitHub Actions"
           ]
         },
@@ -5373,6 +5630,7 @@
             "Zola",
             "Claude API",
             "Mermaid",
+            "Git",
             "GitHub Actions"
           ]
         },
@@ -5407,6 +5665,7 @@
             "Flowbite Pro",
             "Majordomus",
             "Tailwind CSS",
+            "axe-core",
             "GitHub Pages"
           ]
         },
@@ -5472,7 +5731,8 @@
             "Dockerfile",
             "JavaScript",
             "Phoenix",
-            "Rustler"
+            "Rustler",
+            "Protocol Buffers"
           ]
         },
         {
@@ -5500,7 +5760,8 @@
             "Shell",
             "Rust",
             "Mermaid",
-            "Meilisearch"
+            "Meilisearch",
+            "JSON Schema"
           ]
         },
         {
@@ -5531,9 +5792,11 @@
             "Zola",
             "Tailwind CSS",
             "Phoenix",
+            "SQLite",
             "Rust",
             "Rustler",
-            "GitLab CI"
+            "GitLab CI",
+            "Fly.io"
           ]
         },
         {
@@ -5585,7 +5848,8 @@
           "supervised": false,
           "uses": [
             "Rust",
-            "serde"
+            "serde",
+            "env_logger"
           ]
         },
         {
@@ -5824,6 +6088,8 @@
             "Rust",
             "Node.js",
             "Babel",
+            "Protocol Buffers",
+            "libp2p",
             "Dockerfile",
             "webpack"
           ]
@@ -5882,9 +6148,12 @@
             "Phoenix",
             "Absinthe",
             "GraphQL",
+            "Guardian",
+            "Ueberauth",
             "Rust",
             "Rustler",
             "Couchbase",
+            "Protocol Buffers",
             "webpack"
           ]
         },
@@ -6022,6 +6291,8 @@
             "Phoenix",
             "Absinthe",
             "GraphQL",
+            "Guardian",
+            "Ueberauth",
             "PostgreSQL",
             "Rust",
             "webpack"
@@ -6142,7 +6413,8 @@
           "uses": [
             "Rust",
             "clap",
-            "serde"
+            "serde",
+            "env_logger"
           ]
         },
         {
@@ -6168,7 +6440,8 @@
           "supervised": false,
           "uses": [
             "Rust",
-            "clap"
+            "clap",
+            "env_logger"
           ]
         },
         {
@@ -6484,6 +6757,7 @@
             "TypeScript",
             "Tailwind CSS",
             "Flowbite Pro",
+            "JSON Schema",
             "GitHub Pages"
           ]
         },
@@ -6651,6 +6925,7 @@
             "Shell",
             "Claude API",
             "Just",
+            "jq",
             "GitHub Actions",
             "GitHub Pages"
           ]
@@ -6677,6 +6952,7 @@
           "uses": [
             "Elixir",
             "Python",
+            "Tesla",
             "Jason",
             "Dockerfile",
             "GitLab CI"
@@ -6767,7 +7043,8 @@
           "uses": [
             "Dockerfile",
             "Shell",
-            "Python"
+            "Python",
+            "Git"
           ]
         },
         {
@@ -6868,6 +7145,7 @@
           "uses": [
             "Shell",
             "Dockerfile",
+            "Ubuntu",
             "Ruby",
             "PostgreSQL",
             "Python",
@@ -6895,9 +7173,12 @@
           "supervised": false,
           "uses": [
             "Dockerfile",
+            "Ubuntu",
             "Python",
             "Java",
-            "Node.js"
+            "Go",
+            "Node.js",
+            "jq"
           ]
         },
         {
@@ -6921,9 +7202,13 @@
           "supervised": false,
           "uses": [
             "Shell",
+            "Vagrant",
+            "Ubuntu",
             "Python",
             "R",
-            "Node.js"
+            "Go",
+            "Node.js",
+            "jq"
           ]
         }
       ],
@@ -7143,6 +7428,7 @@
             "Zola",
             "Claude API",
             "Mermaid",
+            "Git",
             "GitHub Actions"
           ]
         },
@@ -7176,6 +7462,7 @@
             "TypeScript",
             "Tailwind CSS",
             "Flowbite Pro",
+            "JSON Schema",
             "GitHub Pages"
           ]
         },
@@ -7273,6 +7560,7 @@
             "Shell",
             "CSS",
             "Zola",
+            "JSON Schema",
             "Node.js",
             "Tailwind CSS",
             "Playwright",
@@ -7336,6 +7624,7 @@
             "Shell",
             "Claude API",
             "Just",
+            "jq",
             "GitHub Actions",
             "GitHub Pages"
           ]
@@ -7369,7 +7658,8 @@
             "Ecto",
             "PostgreSQL",
             "Meilisearch",
-            "Dockerfile"
+            "Dockerfile",
+            "Fly.io"
           ]
         },
         {
@@ -7397,7 +7687,8 @@
             "Shell",
             "Rust",
             "Mermaid",
-            "Meilisearch"
+            "Meilisearch",
+            "JSON Schema"
           ]
         },
         {
@@ -7486,6 +7777,7 @@
             "Shell",
             "Phoenix",
             "Erlang",
+            "HTTPoison",
             "GitLab CI"
           ]
         },
@@ -7513,6 +7805,7 @@
           "uses": [
             "Shell",
             "CoreOS",
+            "etcd",
             "Dockerfile"
           ]
         },
@@ -7541,7 +7834,8 @@
             "Erlang",
             "RabbitMQ",
             "Couchbase",
-            "Elasticsearch"
+            "Elasticsearch",
+            "HTTPoison"
           ]
         },
         {
@@ -7600,6 +7894,7 @@
             "Shell",
             "EEx and HEEx",
             "Erlang",
+            "Tesla",
             "CSV",
             "Nominatim",
             "Dockerfile"
@@ -7665,7 +7960,9 @@
             "HTML",
             "Dockerfile",
             "Erlang",
+            "Plug",
             "Cowboy",
+            "Fly.io",
             "GitHub Actions"
           ]
         },
@@ -7779,6 +8076,7 @@
           "uses": [
             "Shell",
             "Ansible",
+            "Vagrant",
             "Dockerfile"
           ]
         },
@@ -7805,7 +8103,8 @@
           "uses": [
             "Dockerfile",
             "Shell",
-            "Python"
+            "Python",
+            "Git"
           ]
         },
         {
@@ -7889,6 +8188,7 @@
             "Dockerfile",
             "Elasticsearch",
             "Kibana",
+            "Grafana",
             "PostgreSQL"
           ]
         },
@@ -7942,7 +8242,9 @@
           "supervised": false,
           "uses": [
             "Shell",
-            "Dockerfile"
+            "Dockerfile",
+            "Grafana",
+            "libp2p"
           ]
         },
         {
@@ -7974,6 +8276,8 @@
             "Elasticsearch",
             "Kibana",
             "RabbitMQ",
+            "etcd",
+            "Grafana",
             "PostgreSQL",
             "Nominatim"
           ]
@@ -8103,6 +8407,7 @@
           "uses": [
             "Shell",
             "Dockerfile",
+            "Ubuntu",
             "Ruby",
             "PostgreSQL",
             "Python",
@@ -8209,9 +8514,13 @@
           "supervised": false,
           "uses": [
             "Shell",
+            "Vagrant",
+            "Ubuntu",
             "Python",
             "R",
-            "Node.js"
+            "Go",
+            "Node.js",
+            "jq"
           ]
         },
         {
@@ -8380,7 +8689,8 @@
             "Zola",
             "D3.js",
             "Node.js",
-            "Playwright"
+            "Playwright",
+            "axe-core"
           ]
         },
         {
@@ -8475,6 +8785,7 @@
             "Tailwind CSS",
             "Flowbite Pro",
             "Playwright",
+            "axe-core",
             "GitHub Pages"
           ]
         },
@@ -8506,6 +8817,7 @@
             "Zola",
             "Claude API",
             "Mermaid",
+            "Git",
             "GitHub Actions"
           ]
         },
@@ -8539,6 +8851,7 @@
             "Flowbite Pro",
             "Majordomus",
             "Tailwind CSS",
+            "axe-core",
             "GitHub Pages"
           ]
         },
@@ -8572,6 +8885,7 @@
             "TypeScript",
             "Tailwind CSS",
             "Flowbite Pro",
+            "JSON Schema",
             "GitHub Pages"
           ]
         },
@@ -8702,6 +9016,7 @@
             "Shell",
             "CSS",
             "Zola",
+            "JSON Schema",
             "Node.js",
             "Tailwind CSS",
             "Playwright",
@@ -8764,6 +9079,7 @@
             "Shell",
             "Claude API",
             "Just",
+            "jq",
             "GitHub Actions",
             "GitHub Pages"
           ]
@@ -8961,9 +9277,11 @@
             "Zola",
             "Tailwind CSS",
             "Phoenix",
+            "SQLite",
             "Rust",
             "Rustler",
-            "GitLab CI"
+            "GitLab CI",
+            "Fly.io"
           ]
         },
         {
@@ -8989,6 +9307,7 @@
             "JavaScript",
             "HTML",
             "Babel",
+            "gulp",
             "webpack",
             "Mocha",
             "jQuery"
@@ -9048,7 +9367,9 @@
             "HTML",
             "Dockerfile",
             "Erlang",
+            "Plug",
             "Cowboy",
+            "Fly.io",
             "GitHub Actions"
           ]
         },
@@ -9108,7 +9429,9 @@
             "HTML",
             "JavaScript",
             "Phoenix",
-            "Cowboy"
+            "Plug",
+            "Cowboy",
+            "Go"
           ]
         },
         {
@@ -9313,6 +9636,7 @@
             "Phoenix",
             "Absinthe",
             "GraphQL",
+            "HTTPoison",
             "React",
             "Dockerfile"
           ]
@@ -9341,6 +9665,7 @@
             "Elixir",
             "HTML",
             "Phoenix",
+            "Guardian",
             "React"
           ]
         },
@@ -9562,7 +9887,8 @@
             "Zola",
             "D3.js",
             "Node.js",
-            "Playwright"
+            "Playwright",
+            "axe-core"
           ]
         },
         {
@@ -9594,6 +9920,7 @@
             "Tailwind CSS",
             "Flowbite Pro",
             "Playwright",
+            "axe-core",
             "GitHub Pages"
           ]
         },
@@ -9627,6 +9954,7 @@
             "TypeScript",
             "Tailwind CSS",
             "Flowbite Pro",
+            "JSON Schema",
             "GitHub Pages"
           ]
         },
@@ -9757,6 +10085,7 @@
             "Shell",
             "CSS",
             "Zola",
+            "JSON Schema",
             "Node.js",
             "Tailwind CSS",
             "Playwright",
@@ -9820,7 +10149,8 @@
             "Dockerfile",
             "JavaScript",
             "Phoenix",
-            "Rustler"
+            "Rustler",
+            "Protocol Buffers"
           ]
         },
         {
@@ -9878,6 +10208,7 @@
             "Shell",
             "Phoenix",
             "Erlang",
+            "HTTPoison",
             "GitLab CI"
           ]
         },
@@ -9967,9 +10298,11 @@
             "Zola",
             "Tailwind CSS",
             "Phoenix",
+            "SQLite",
             "Rust",
             "Rustler",
-            "GitLab CI"
+            "GitLab CI",
+            "Fly.io"
           ]
         },
         {
@@ -10056,7 +10389,9 @@
             "HTML",
             "JavaScript",
             "Phoenix",
-            "Cowboy"
+            "Plug",
+            "Cowboy",
+            "Go"
           ]
         },
         {
@@ -10207,6 +10542,7 @@
             "Express",
             "Ember.js",
             "Socket.IO",
+            "gulp",
             "Handlebars",
             "SCSS",
             "Bootstrap",
@@ -10237,6 +10573,7 @@
             "CSS",
             "JavaScript",
             "CoffeeScript",
+            "SQLite",
             "SCSS",
             "jQuery"
           ]
@@ -10294,9 +10631,11 @@
             "Node.js",
             "Express",
             "MongoDB",
+            "Mongoose",
             "Socket.IO",
             "Ember.js",
             "Handlebars",
+            "Grunt",
             "Mocha",
             "Travis CI"
           ]
@@ -10326,10 +10665,12 @@
             "Node.js",
             "Express",
             "MongoDB",
+            "Mongoose",
             "Socket.IO",
             "Ember.js",
             "Handlebars",
             "Bootstrap",
+            "Grunt",
             "Mocha"
           ]
         },
@@ -10905,7 +11246,8 @@
           ],
           "supervised": false,
           "uses": [
-            "C#"
+            "C#",
+            ".NET"
           ]
         },
         {
@@ -10930,7 +11272,8 @@
           ],
           "supervised": false,
           "uses": [
-            "C#"
+            "C#",
+            ".NET"
           ]
         },
         {
@@ -10955,7 +11298,8 @@
           ],
           "supervised": false,
           "uses": [
-            "C#"
+            "C#",
+            ".NET"
           ]
         }
       ],
@@ -11159,6 +11503,7 @@
           "uses": [
             "Shell",
             "Dockerfile",
+            "Ubuntu",
             "Ruby",
             "PostgreSQL",
             "Python",
@@ -11186,9 +11531,12 @@
           "supervised": false,
           "uses": [
             "Dockerfile",
+            "Ubuntu",
             "Python",
             "Java",
-            "Node.js"
+            "Go",
+            "Node.js",
+            "jq"
           ]
         },
         {
@@ -11292,7 +11640,9 @@
           ],
           "supervised": false,
           "uses": [
-            "Swift"
+            "Swift",
+            "UIKit",
+            "Xcode"
           ]
         },
         {
@@ -11355,7 +11705,9 @@
           ],
           "supervised": false,
           "uses": [
-            "Swift"
+            "Swift",
+            "UIKit",
+            "Xcode"
           ]
         },
         {
@@ -11381,6 +11733,8 @@
           "supervised": false,
           "uses": [
             "Swift",
+            "UIKit",
+            "Xcode",
             "Socket.IO"
           ]
         }
@@ -11463,7 +11817,8 @@
             "Ecto",
             "PostgreSQL",
             "Meilisearch",
-            "Dockerfile"
+            "Dockerfile",
+            "Fly.io"
           ]
         },
         {
@@ -11493,7 +11848,8 @@
             "Dockerfile",
             "JavaScript",
             "Phoenix",
-            "Rustler"
+            "Rustler",
+            "Protocol Buffers"
           ]
         },
         {
@@ -11557,6 +11913,7 @@
             "Shell",
             "Phoenix",
             "Erlang",
+            "HTTPoison",
             "GitLab CI"
           ]
         },
@@ -11582,6 +11939,7 @@
           "uses": [
             "Elixir",
             "Python",
+            "Tesla",
             "Jason",
             "Dockerfile",
             "GitLab CI"
@@ -11609,6 +11967,7 @@
           "uses": [
             "Shell",
             "CoreOS",
+            "etcd",
             "Dockerfile"
           ]
         },
@@ -11696,6 +12055,7 @@
             "Shell",
             "EEx and HEEx",
             "Erlang",
+            "Tesla",
             "CSV",
             "Nominatim",
             "Dockerfile"
@@ -11757,7 +12117,9 @@
             "HTML",
             "Dockerfile",
             "Erlang",
+            "Plug",
             "Cowboy",
+            "Fly.io",
             "GitHub Actions"
           ]
         },
@@ -11850,6 +12212,7 @@
           "uses": [
             "Shell",
             "Ansible",
+            "Vagrant",
             "Dockerfile"
           ]
         },
@@ -11877,7 +12240,8 @@
           "uses": [
             "Dockerfile",
             "Shell",
-            "Python"
+            "Python",
+            "Git"
           ]
         },
         {
@@ -11902,7 +12266,8 @@
           "uses": [
             "Dockerfile",
             "Kubernetes",
-            "Ansible"
+            "Ansible",
+            "Vagrant"
           ]
         },
         {
@@ -11955,6 +12320,7 @@
             "Dockerfile",
             "Elasticsearch",
             "Kibana",
+            "Grafana",
             "PostgreSQL"
           ]
         },
@@ -12037,7 +12403,9 @@
           "supervised": false,
           "uses": [
             "Shell",
-            "Dockerfile"
+            "Dockerfile",
+            "Grafana",
+            "libp2p"
           ]
         },
         {
@@ -12064,6 +12432,8 @@
             "Rust",
             "Node.js",
             "Babel",
+            "Protocol Buffers",
+            "libp2p",
             "Dockerfile",
             "webpack"
           ]
@@ -12155,6 +12525,7 @@
             "Elixir",
             "Elm",
             "Phoenix",
+            "Ueberauth",
             "Bootstrap",
             "webpack",
             "Bower",
@@ -12188,6 +12559,7 @@
             "Phoenix",
             "Absinthe",
             "GraphQL",
+            "HTTPoison",
             "React",
             "Dockerfile"
           ]
@@ -12264,6 +12636,7 @@
           "uses": [
             "Shell",
             "Dockerfile",
+            "Ubuntu",
             "Ruby",
             "PostgreSQL",
             "Python",
@@ -12291,9 +12664,12 @@
           "supervised": false,
           "uses": [
             "Dockerfile",
+            "Ubuntu",
             "Python",
             "Java",
-            "Node.js"
+            "Go",
+            "Node.js",
+            "jq"
           ]
         },
         {
@@ -12345,6 +12721,7 @@
             "Ruby",
             "GLI",
             "CoreOS",
+            "etcd",
             "Kubernetes",
             "Dockerfile",
             "RSpec"
@@ -12421,7 +12798,9 @@
             "HTML",
             "Dockerfile",
             "Erlang",
+            "Plug",
             "Cowboy",
+            "Fly.io",
             "GitHub Actions"
           ]
         },
@@ -12566,7 +12945,8 @@
             "Zola",
             "D3.js",
             "Node.js",
-            "Playwright"
+            "Playwright",
+            "axe-core"
           ]
         },
         {
@@ -12660,6 +13040,7 @@
             "Tailwind CSS",
             "Flowbite Pro",
             "Playwright",
+            "axe-core",
             "GitHub Pages"
           ]
         },
@@ -12695,6 +13076,7 @@
             "Flowbite Pro",
             "Majordomus",
             "Tailwind CSS",
+            "axe-core",
             "GitHub Pages"
           ]
         },
@@ -12728,6 +13110,7 @@
             "TypeScript",
             "Tailwind CSS",
             "Flowbite Pro",
+            "JSON Schema",
             "GitHub Pages"
           ]
         },
@@ -12993,7 +13376,8 @@
             "Zola",
             "D3.js",
             "Node.js",
-            "Playwright"
+            "Playwright",
+            "axe-core"
           ]
         },
         {
@@ -13087,6 +13471,7 @@
             "Tailwind CSS",
             "Flowbite Pro",
             "Playwright",
+            "axe-core",
             "GitHub Pages"
           ]
         },
@@ -13121,6 +13506,7 @@
             "Flowbite Pro",
             "Majordomus",
             "Tailwind CSS",
+            "axe-core",
             "GitHub Pages"
           ]
         },
@@ -13154,6 +13540,7 @@
             "TypeScript",
             "Tailwind CSS",
             "Flowbite Pro",
+            "JSON Schema",
             "GitHub Pages"
           ]
         },
@@ -13316,6 +13703,7 @@
             "Shell",
             "CSS",
             "Zola",
+            "JSON Schema",
             "Node.js",
             "Tailwind CSS",
             "Playwright",
@@ -13410,9 +13798,11 @@
             "Zola",
             "Tailwind CSS",
             "Phoenix",
+            "SQLite",
             "Rust",
             "Rustler",
-            "GitLab CI"
+            "GitLab CI",
+            "Fly.io"
           ]
         },
         {
@@ -13574,7 +13964,8 @@
             "Zola",
             "D3.js",
             "Node.js",
-            "Playwright"
+            "Playwright",
+            "axe-core"
           ]
         },
         {
@@ -13606,6 +13997,7 @@
             "Tailwind CSS",
             "Flowbite Pro",
             "Playwright",
+            "axe-core",
             "GitHub Pages"
           ]
         },
@@ -13641,6 +14033,7 @@
             "Flowbite Pro",
             "Majordomus",
             "Tailwind CSS",
+            "axe-core",
             "GitHub Pages"
           ]
         },
@@ -13923,7 +14316,8 @@
             "Zola",
             "D3.js",
             "Node.js",
-            "Playwright"
+            "Playwright",
+            "axe-core"
           ]
         },
         {
@@ -13988,6 +14382,7 @@
             "Flowbite Pro",
             "Majordomus",
             "Tailwind CSS",
+            "axe-core",
             "GitHub Pages"
           ]
         }
@@ -14062,7 +14457,8 @@
             "Zola",
             "D3.js",
             "Node.js",
-            "Playwright"
+            "Playwright",
+            "axe-core"
           ]
         }
       ],
@@ -14170,7 +14566,8 @@
             "Zola",
             "D3.js",
             "Node.js",
-            "Playwright"
+            "Playwright",
+            "axe-core"
           ]
         },
         {
@@ -14234,6 +14631,7 @@
             "Tailwind CSS",
             "Flowbite Pro",
             "Playwright",
+            "axe-core",
             "GitHub Pages"
           ]
         },
@@ -14269,6 +14667,7 @@
             "Flowbite Pro",
             "Majordomus",
             "Tailwind CSS",
+            "axe-core",
             "GitHub Pages"
           ]
         }
@@ -14383,7 +14782,8 @@
             "Zola",
             "D3.js",
             "Node.js",
-            "Playwright"
+            "Playwright",
+            "axe-core"
           ]
         },
         {
@@ -14414,6 +14814,7 @@
             "Zola",
             "Claude API",
             "Mermaid",
+            "Git",
             "GitHub Actions"
           ]
         },
@@ -14447,6 +14848,7 @@
             "TypeScript",
             "Tailwind CSS",
             "Flowbite Pro",
+            "JSON Schema",
             "GitHub Pages"
           ]
         },
@@ -14543,6 +14945,7 @@
             "Shell",
             "CSS",
             "Zola",
+            "JSON Schema",
             "Node.js",
             "Tailwind CSS",
             "Playwright",
@@ -14608,9 +15011,11 @@
             "Zola",
             "Tailwind CSS",
             "Phoenix",
+            "SQLite",
             "Rust",
             "Rustler",
-            "GitLab CI"
+            "GitLab CI",
+            "Fly.io"
           ]
         },
         {
@@ -14744,7 +15149,8 @@
             "Zola",
             "D3.js",
             "Node.js",
-            "Playwright"
+            "Playwright",
+            "axe-core"
           ]
         },
         {
@@ -14809,6 +15215,7 @@
             "Flowbite Pro",
             "Majordomus",
             "Tailwind CSS",
+            "axe-core",
             "GitHub Pages"
           ]
         }
@@ -14941,6 +15348,7 @@
             "Zola",
             "Claude API",
             "Mermaid",
+            "Git",
             "GitHub Actions"
           ]
         },
@@ -15173,7 +15581,8 @@
             "Ecto",
             "PostgreSQL",
             "Meilisearch",
-            "Dockerfile"
+            "Dockerfile",
+            "Fly.io"
           ]
         },
         {
@@ -15198,7 +15607,8 @@
           "uses": [
             "Elixir",
             "Phoenix",
-            "PostgreSQL"
+            "PostgreSQL",
+            "Erlang"
           ]
         },
         {
@@ -15354,6 +15764,7 @@
             "Dockerfile",
             "Elasticsearch",
             "Kibana",
+            "Grafana",
             "PostgreSQL"
           ]
         },
@@ -15416,6 +15827,8 @@
             "Elasticsearch",
             "Kibana",
             "RabbitMQ",
+            "etcd",
+            "Grafana",
             "PostgreSQL",
             "Nominatim"
           ]
@@ -15509,6 +15922,8 @@
             "Phoenix",
             "Absinthe",
             "GraphQL",
+            "Guardian",
+            "Ueberauth",
             "PostgreSQL",
             "Rust",
             "webpack"
@@ -15616,6 +16031,7 @@
           "uses": [
             "Shell",
             "Dockerfile",
+            "Ubuntu",
             "Ruby",
             "PostgreSQL",
             "Python",
@@ -15919,6 +16335,7 @@
             "Tailwind CSS",
             "Flowbite Pro",
             "Playwright",
+            "axe-core",
             "GitHub Pages"
           ]
         }
@@ -16039,7 +16456,8 @@
             "Zola",
             "D3.js",
             "Node.js",
-            "Playwright"
+            "Playwright",
+            "axe-core"
           ]
         },
         {
@@ -16071,6 +16489,7 @@
             "Tailwind CSS",
             "Flowbite Pro",
             "Playwright",
+            "axe-core",
             "GitHub Pages"
           ]
         },
@@ -16104,6 +16523,7 @@
             "Flowbite Pro",
             "Majordomus",
             "Tailwind CSS",
+            "axe-core",
             "GitHub Pages"
           ]
         },
@@ -16137,6 +16557,7 @@
             "TypeScript",
             "Tailwind CSS",
             "Flowbite Pro",
+            "JSON Schema",
             "GitHub Pages"
           ]
         },
@@ -16265,6 +16686,7 @@
             "Shell",
             "CSS",
             "Zola",
+            "JSON Schema",
             "Node.js",
             "Tailwind CSS",
             "Playwright",
@@ -16326,6 +16748,7 @@
             "Shell",
             "Claude API",
             "Just",
+            "jq",
             "GitHub Actions",
             "GitHub Pages"
           ]
@@ -16528,7 +16951,9 @@
             "HTML",
             "Dockerfile",
             "Erlang",
+            "Plug",
             "Cowboy",
+            "Fly.io",
             "GitHub Actions"
           ]
         },
@@ -17057,6 +17482,7 @@
             "Shell",
             "CSS",
             "Zola",
+            "JSON Schema",
             "Node.js",
             "Tailwind CSS",
             "Playwright",
@@ -17119,6 +17545,7 @@
             "Shell",
             "Claude API",
             "Just",
+            "jq",
             "GitHub Actions",
             "GitHub Pages"
           ]
@@ -17149,7 +17576,8 @@
             "Shell",
             "Rust",
             "Mermaid",
-            "Meilisearch"
+            "Meilisearch",
+            "JSON Schema"
           ]
         }
       ],
@@ -17352,9 +17780,13 @@
           "supervised": false,
           "uses": [
             "Shell",
+            "Vagrant",
+            "Ubuntu",
             "Python",
             "R",
-            "Node.js"
+            "Go",
+            "Node.js",
+            "jq"
           ]
         }
       ],
@@ -17652,7 +18084,8 @@
             "Ecto",
             "PostgreSQL",
             "Meilisearch",
-            "Dockerfile"
+            "Dockerfile",
+            "Fly.io"
           ]
         },
         {
@@ -17683,9 +18116,11 @@
             "Zola",
             "Tailwind CSS",
             "Phoenix",
+            "SQLite",
             "Rust",
             "Rustler",
-            "GitLab CI"
+            "GitLab CI",
+            "Fly.io"
           ]
         },
         {
@@ -17712,6 +18147,7 @@
             "Shell",
             "EEx and HEEx",
             "Erlang",
+            "Tesla",
             "CSV",
             "Nominatim",
             "Dockerfile"
@@ -17798,6 +18234,7 @@
             "Zola",
             "Claude API",
             "Mermaid",
+            "Git",
             "GitHub Actions"
           ]
         },
@@ -17826,7 +18263,8 @@
             "Shell",
             "Rust",
             "Mermaid",
-            "Meilisearch"
+            "Meilisearch",
+            "JSON Schema"
           ]
         }
       ],
@@ -17884,9 +18322,11 @@
             "Zola",
             "Tailwind CSS",
             "Phoenix",
+            "SQLite",
             "Rust",
             "Rustler",
-            "GitLab CI"
+            "GitLab CI",
+            "Fly.io"
           ]
         },
         {
@@ -17915,6 +18355,7 @@
             "Express",
             "Ember.js",
             "Socket.IO",
+            "gulp",
             "Handlebars",
             "SCSS",
             "Bootstrap",
@@ -17945,6 +18386,7 @@
             "CSS",
             "JavaScript",
             "CoffeeScript",
+            "SQLite",
             "SCSS",
             "jQuery"
           ]
@@ -18074,6 +18516,7 @@
             "Phoenix",
             "Absinthe",
             "GraphQL",
+            "HTTPoison",
             "React",
             "Dockerfile"
           ]
@@ -18102,6 +18545,7 @@
             "Elixir",
             "HTML",
             "Phoenix",
+            "Guardian",
             "React"
           ]
         },
@@ -18245,7 +18689,8 @@
             "Zola",
             "D3.js",
             "Node.js",
-            "Playwright"
+            "Playwright",
+            "axe-core"
           ]
         },
         {
@@ -18277,6 +18722,7 @@
             "Tailwind CSS",
             "Flowbite Pro",
             "Playwright",
+            "axe-core",
             "GitHub Pages"
           ]
         },
@@ -18405,6 +18851,7 @@
             "Shell",
             "CSS",
             "Zola",
+            "JSON Schema",
             "Node.js",
             "Tailwind CSS",
             "Playwright",
@@ -18473,7 +18920,8 @@
           "uses": [
             "Dockerfile",
             "Kubernetes",
-            "Ansible"
+            "Ansible",
+            "Vagrant"
           ]
         },
         {
@@ -18504,6 +18952,8 @@
             "Elasticsearch",
             "Kibana",
             "RabbitMQ",
+            "etcd",
+            "Grafana",
             "PostgreSQL",
             "Nominatim"
           ]
@@ -18557,6 +19007,7 @@
             "Ruby",
             "GLI",
             "CoreOS",
+            "etcd",
             "Kubernetes",
             "Dockerfile",
             "RSpec"
@@ -18645,6 +19096,7 @@
             "Zola",
             "Claude API",
             "Mermaid",
+            "Git",
             "GitHub Actions"
           ]
         },
@@ -18673,6 +19125,7 @@
             "Shell",
             "Claude API",
             "Just",
+            "jq",
             "GitHub Actions",
             "GitHub Pages"
           ]
@@ -18764,7 +19217,9 @@
             "HTML",
             "Dockerfile",
             "Erlang",
+            "Plug",
             "Cowboy",
+            "Fly.io",
             "GitHub Actions"
           ]
         },
@@ -18867,6 +19322,7 @@
             "Zola",
             "Claude API",
             "Mermaid",
+            "Git",
             "GitHub Actions"
           ]
         },
@@ -18895,6 +19351,7 @@
             "Shell",
             "Claude API",
             "Just",
+            "jq",
             "GitHub Actions",
             "GitHub Pages"
           ]
@@ -19189,7 +19646,8 @@
             "Ecto",
             "PostgreSQL",
             "Meilisearch",
-            "Dockerfile"
+            "Dockerfile",
+            "Fly.io"
           ]
         },
         {
@@ -19218,7 +19676,8 @@
             "Dockerfile",
             "JavaScript",
             "Phoenix",
-            "Rustler"
+            "Rustler",
+            "Protocol Buffers"
           ]
         },
         {
@@ -19298,7 +19757,8 @@
           "uses": [
             "Elixir",
             "Phoenix",
-            "PostgreSQL"
+            "PostgreSQL",
+            "Erlang"
           ]
         },
         {
@@ -19328,6 +19788,7 @@
             "Shell",
             "Phoenix",
             "Erlang",
+            "HTTPoison",
             "GitLab CI"
           ]
         },
@@ -19359,9 +19820,11 @@
             "Zola",
             "Tailwind CSS",
             "Phoenix",
+            "SQLite",
             "Rust",
             "Rustler",
-            "GitLab CI"
+            "GitLab CI",
+            "Fly.io"
           ]
         },
         {
@@ -19478,7 +19941,9 @@
             "HTML",
             "JavaScript",
             "Phoenix",
-            "Cowboy"
+            "Plug",
+            "Cowboy",
+            "Go"
           ]
         },
         {
@@ -19610,9 +20075,12 @@
             "Phoenix",
             "Absinthe",
             "GraphQL",
+            "Guardian",
+            "Ueberauth",
             "Rust",
             "Rustler",
             "Couchbase",
+            "Protocol Buffers",
             "webpack"
           ]
         },
@@ -19705,6 +20173,8 @@
             "Phoenix",
             "Absinthe",
             "GraphQL",
+            "Guardian",
+            "Ueberauth",
             "PostgreSQL",
             "Rust",
             "webpack"
@@ -19734,6 +20204,7 @@
             "Elixir",
             "Elm",
             "Phoenix",
+            "Ueberauth",
             "Bootstrap",
             "webpack",
             "Bower",
@@ -19798,6 +20269,7 @@
             "Phoenix",
             "Absinthe",
             "GraphQL",
+            "HTTPoison",
             "React",
             "Dockerfile"
           ]
@@ -19826,6 +20298,7 @@
             "Elixir",
             "HTML",
             "Phoenix",
+            "Guardian",
             "React"
           ]
         }
@@ -19996,7 +20469,8 @@
             "Ecto",
             "PostgreSQL",
             "Meilisearch",
-            "Dockerfile"
+            "Dockerfile",
+            "Fly.io"
           ]
         },
         {
@@ -20023,7 +20497,8 @@
             "Shell",
             "Rust",
             "Mermaid",
-            "Meilisearch"
+            "Meilisearch",
+            "JSON Schema"
           ]
         },
         {
@@ -20258,9 +20733,12 @@
             "Phoenix",
             "Absinthe",
             "GraphQL",
+            "Guardian",
+            "Ueberauth",
             "Rust",
             "Rustler",
             "Couchbase",
+            "Protocol Buffers",
             "webpack"
           ]
         },
@@ -20324,6 +20802,8 @@
             "Phoenix",
             "Absinthe",
             "GraphQL",
+            "Guardian",
+            "Ueberauth",
             "PostgreSQL",
             "Rust",
             "webpack"
@@ -20354,6 +20834,7 @@
             "Elixir",
             "Elm",
             "Phoenix",
+            "Ueberauth",
             "Bootstrap",
             "webpack",
             "Bower",
@@ -20442,6 +20923,8 @@
             "Elasticsearch",
             "Kibana",
             "RabbitMQ",
+            "etcd",
+            "Grafana",
             "PostgreSQL",
             "Nominatim"
           ]
@@ -20594,6 +21077,7 @@
             "CSS",
             "JavaScript",
             "CoffeeScript",
+            "SQLite",
             "SCSS",
             "jQuery"
           ]
@@ -20673,7 +21157,8 @@
             "Zola",
             "D3.js",
             "Node.js",
-            "Playwright"
+            "Playwright",
+            "axe-core"
           ]
         },
         {
@@ -20733,6 +21218,7 @@
             "Shell",
             "CSS",
             "Zola",
+            "JSON Schema",
             "Node.js",
             "Tailwind CSS",
             "Playwright",
@@ -21128,6 +21614,8 @@
             "Rust",
             "Node.js",
             "Babel",
+            "Protocol Buffers",
+            "libp2p",
             "Dockerfile",
             "webpack"
           ]
@@ -21282,9 +21770,12 @@
           "supervised": false,
           "uses": [
             "Dockerfile",
+            "Ubuntu",
             "Python",
             "Java",
-            "Node.js"
+            "Go",
+            "Node.js",
+            "jq"
           ]
         },
         {
@@ -21361,7 +21852,9 @@
             "Express",
             "Ember.js",
             "MongoDB",
+            "Mongoose",
             "Socket.IO",
+            "gulp",
             "Bootstrap"
           ]
         },
@@ -21391,6 +21884,7 @@
             "Express",
             "Ember.js",
             "Socket.IO",
+            "gulp",
             "Handlebars",
             "SCSS",
             "Bootstrap",
@@ -21494,9 +21988,13 @@
           "supervised": false,
           "uses": [
             "Shell",
+            "Vagrant",
+            "Ubuntu",
             "Python",
             "R",
-            "Node.js"
+            "Go",
+            "Node.js",
+            "jq"
           ]
         },
         {
@@ -21524,9 +22022,11 @@
             "Node.js",
             "Express",
             "MongoDB",
+            "Mongoose",
             "Socket.IO",
             "Ember.js",
             "Handlebars",
+            "Grunt",
             "Mocha",
             "Travis CI"
           ]
@@ -21556,10 +22056,12 @@
             "Node.js",
             "Express",
             "MongoDB",
+            "Mongoose",
             "Socket.IO",
             "Ember.js",
             "Handlebars",
             "Bootstrap",
+            "Grunt",
             "Mocha"
           ]
         },
@@ -21785,6 +22287,7 @@
             "Elixir",
             "Elm",
             "Phoenix",
+            "Ueberauth",
             "Bootstrap",
             "webpack",
             "Bower",
@@ -22253,9 +22756,11 @@
             "Node.js",
             "Express",
             "MongoDB",
+            "Mongoose",
             "Socket.IO",
             "Ember.js",
             "Handlebars",
+            "Grunt",
             "Mocha",
             "Travis CI"
           ]
@@ -22438,6 +22943,7 @@
           "uses": [
             "TypeScript",
             "JavaScript",
+            "ESLint",
             "GitLab CI"
           ]
         },
@@ -22462,8 +22968,10 @@
           "supervised": false,
           "uses": [
             "Elixir",
+            "Tesla",
             "Jason",
             "CSV",
+            "Erlang",
             "GitLab CI"
           ]
         },
@@ -22494,6 +23002,7 @@
             "Shell",
             "Phoenix",
             "Erlang",
+            "HTTPoison",
             "GitLab CI"
           ]
         },
@@ -22518,6 +23027,7 @@
           "supervised": false,
           "uses": [
             "Elixir",
+            "Plug",
             "Cowboy",
             "Jason",
             "GitLab CI"
@@ -22551,9 +23061,11 @@
             "Zola",
             "Tailwind CSS",
             "Phoenix",
+            "SQLite",
             "Rust",
             "Rustler",
-            "GitLab CI"
+            "GitLab CI",
+            "Fly.io"
           ]
         },
         {
@@ -22578,6 +23090,7 @@
           "uses": [
             "Elixir",
             "Python",
+            "Tesla",
             "Jason",
             "Dockerfile",
             "GitLab CI"
@@ -22797,6 +23310,7 @@
             "JavaScript",
             "HTML",
             "Babel",
+            "gulp",
             "webpack",
             "Mocha",
             "jQuery"
@@ -22889,6 +23403,8 @@
             "Rust",
             "Node.js",
             "Babel",
+            "Protocol Buffers",
+            "libp2p",
             "Dockerfile",
             "webpack"
           ]
@@ -22920,9 +23436,12 @@
             "Phoenix",
             "Absinthe",
             "GraphQL",
+            "Guardian",
+            "Ueberauth",
             "Rust",
             "Rustler",
             "Couchbase",
+            "Protocol Buffers",
             "webpack"
           ]
         },
@@ -22952,6 +23471,8 @@
             "Phoenix",
             "Absinthe",
             "GraphQL",
+            "Guardian",
+            "Ueberauth",
             "PostgreSQL",
             "Rust",
             "webpack"
@@ -22981,6 +23502,7 @@
             "Elixir",
             "Elm",
             "Phoenix",
+            "Ueberauth",
             "Bootstrap",
             "webpack",
             "Bower",
@@ -23064,7 +23586,8 @@
           "uses": [
             "JavaScript",
             "Babel",
-            "webpack"
+            "webpack",
+            "ESLint"
           ]
         }
       ],
@@ -23120,6 +23643,7 @@
             "JavaScript",
             "HTML",
             "Babel",
+            "gulp",
             "webpack",
             "Mocha",
             "jQuery"
@@ -23181,6 +23705,8 @@
             "Rust",
             "Node.js",
             "Babel",
+            "Protocol Buffers",
+            "libp2p",
             "Dockerfile",
             "webpack"
           ]
@@ -23236,7 +23762,8 @@
           "uses": [
             "JavaScript",
             "Babel",
-            "webpack"
+            "webpack",
+            "ESLint"
           ]
         },
         {
@@ -23261,7 +23788,8 @@
           "uses": [
             "JavaScript",
             "Babel",
-            "GraphQL"
+            "GraphQL",
+            "ESLint"
           ]
         },
         {
@@ -23536,7 +24064,8 @@
           ],
           "supervised": false,
           "uses": [
-            "Markdown"
+            "Markdown",
+            "Git"
           ]
         },
         {
@@ -23788,8 +24317,10 @@
           "supervised": false,
           "uses": [
             "Elixir",
+            "Tesla",
             "Jason",
             "CSV",
+            "Erlang",
             "GitLab CI"
           ]
         },
@@ -23817,6 +24348,7 @@
             "Shell",
             "EEx and HEEx",
             "Erlang",
+            "Tesla",
             "CSV",
             "Nominatim",
             "Dockerfile"
@@ -24021,7 +24553,8 @@
             "Dockerfile",
             "JavaScript",
             "Phoenix",
-            "Rustler"
+            "Rustler",
+            "Protocol Buffers"
           ]
         },
         {
@@ -24052,9 +24585,11 @@
             "Zola",
             "Tailwind CSS",
             "Phoenix",
+            "SQLite",
             "Rust",
             "Rustler",
-            "GitLab CI"
+            "GitLab CI",
+            "Fly.io"
           ]
         },
         {
@@ -24137,9 +24672,12 @@
             "Phoenix",
             "Absinthe",
             "GraphQL",
+            "Guardian",
+            "Ueberauth",
             "Rust",
             "Rustler",
             "Couchbase",
+            "Protocol Buffers",
             "webpack"
           ]
         },
@@ -24417,7 +24955,8 @@
             "Ecto",
             "PostgreSQL",
             "Meilisearch",
-            "Dockerfile"
+            "Dockerfile",
+            "Fly.io"
           ]
         },
         {
@@ -24543,9 +25082,12 @@
             "Phoenix",
             "Absinthe",
             "GraphQL",
+            "Guardian",
+            "Ueberauth",
             "Rust",
             "Rustler",
             "Couchbase",
+            "Protocol Buffers",
             "webpack"
           ]
         },
@@ -24663,8 +25205,10 @@
           "supervised": false,
           "uses": [
             "Elixir",
+            "Tesla",
             "Jason",
             "CSV",
+            "Erlang",
             "GitLab CI"
           ]
         },
@@ -24689,6 +25233,7 @@
           "supervised": false,
           "uses": [
             "Elixir",
+            "Plug",
             "Cowboy",
             "Jason",
             "GitLab CI"
@@ -24716,6 +25261,7 @@
           "uses": [
             "Elixir",
             "Python",
+            "Tesla",
             "Jason",
             "Dockerfile",
             "GitLab CI"
@@ -24764,6 +25310,7 @@
           "supervised": false,
           "uses": [
             "Elixir",
+            "Plug",
             "Cowboy",
             "Jason",
             "GitLab CI"
@@ -24796,7 +25343,9 @@
             "HTML",
             "Dockerfile",
             "Erlang",
+            "Plug",
             "Cowboy",
+            "Fly.io",
             "GitHub Actions"
           ]
         },
@@ -24856,7 +25405,9 @@
             "HTML",
             "JavaScript",
             "Phoenix",
-            "Cowboy"
+            "Plug",
+            "Cowboy",
+            "Go"
           ]
         }
       ],
@@ -24916,9 +25467,12 @@
             "Phoenix",
             "Absinthe",
             "GraphQL",
+            "Guardian",
+            "Ueberauth",
             "Rust",
             "Rustler",
             "Couchbase",
+            "Protocol Buffers",
             "webpack"
           ]
         },
@@ -24980,6 +25534,8 @@
             "Phoenix",
             "Absinthe",
             "GraphQL",
+            "Guardian",
+            "Ueberauth",
             "PostgreSQL",
             "Rust",
             "webpack"
@@ -25011,6 +25567,7 @@
             "Phoenix",
             "Absinthe",
             "GraphQL",
+            "HTTPoison",
             "React",
             "Dockerfile"
           ]
@@ -25076,9 +25633,12 @@
             "Phoenix",
             "Absinthe",
             "GraphQL",
+            "Guardian",
+            "Ueberauth",
             "Rust",
             "Rustler",
             "Couchbase",
+            "Protocol Buffers",
             "webpack"
           ]
         },
@@ -25140,6 +25700,8 @@
             "Phoenix",
             "Absinthe",
             "GraphQL",
+            "Guardian",
+            "Ueberauth",
             "PostgreSQL",
             "Rust",
             "webpack"
@@ -25171,6 +25733,7 @@
             "Phoenix",
             "Absinthe",
             "GraphQL",
+            "HTTPoison",
             "React",
             "Dockerfile"
           ]
@@ -25197,7 +25760,8 @@
           "uses": [
             "JavaScript",
             "Babel",
-            "GraphQL"
+            "GraphQL",
+            "ESLint"
           ]
         }
       ],
@@ -25286,7 +25850,8 @@
             "Erlang",
             "RabbitMQ",
             "Couchbase",
-            "Elasticsearch"
+            "Elasticsearch",
+            "HTTPoison"
           ]
         },
         {
@@ -25383,6 +25948,7 @@
             "Dockerfile",
             "Elasticsearch",
             "Kibana",
+            "Grafana",
             "PostgreSQL"
           ]
         },
@@ -25413,6 +25979,8 @@
             "Elasticsearch",
             "Kibana",
             "RabbitMQ",
+            "etcd",
+            "Grafana",
             "PostgreSQL",
             "Nominatim"
           ]
@@ -25599,6 +26167,7 @@
             "Dockerfile",
             "Elasticsearch",
             "Kibana",
+            "Grafana",
             "PostgreSQL"
           ]
         },
@@ -25629,6 +26198,8 @@
             "Elasticsearch",
             "Kibana",
             "RabbitMQ",
+            "etcd",
+            "Grafana",
             "PostgreSQL",
             "Nominatim"
           ]
@@ -25780,7 +26351,9 @@
             "Express",
             "Ember.js",
             "MongoDB",
+            "Mongoose",
             "Socket.IO",
+            "gulp",
             "Bootstrap"
           ]
         },
@@ -25806,7 +26379,8 @@
           "uses": [
             "Ruby",
             "RabbitMQ",
-            "MongoDB"
+            "MongoDB",
+            "SQLite"
           ]
         },
         {
@@ -25834,9 +26408,11 @@
             "Node.js",
             "Express",
             "MongoDB",
+            "Mongoose",
             "Socket.IO",
             "Ember.js",
             "Handlebars",
+            "Grunt",
             "Mocha",
             "Travis CI"
           ]
@@ -25866,10 +26442,12 @@
             "Node.js",
             "Express",
             "MongoDB",
+            "Mongoose",
             "Socket.IO",
             "Ember.js",
             "Handlebars",
             "Bootstrap",
+            "Grunt",
             "Mocha"
           ]
         },
@@ -25992,7 +26570,8 @@
             "Erlang",
             "RabbitMQ",
             "Couchbase",
-            "Elasticsearch"
+            "Elasticsearch",
+            "HTTPoison"
           ]
         },
         {
@@ -26080,9 +26659,12 @@
             "Phoenix",
             "Absinthe",
             "GraphQL",
+            "Guardian",
+            "Ueberauth",
             "Rust",
             "Rustler",
             "Couchbase",
+            "Protocol Buffers",
             "webpack"
           ]
         },
@@ -26113,6 +26695,8 @@
             "Elasticsearch",
             "Kibana",
             "RabbitMQ",
+            "etcd",
+            "Grafana",
             "PostgreSQL",
             "Nominatim"
           ]
@@ -26254,7 +26838,8 @@
             "Erlang",
             "RabbitMQ",
             "Couchbase",
-            "Elasticsearch"
+            "Elasticsearch",
+            "HTTPoison"
           ]
         },
         {
@@ -26343,6 +26928,8 @@
             "Elasticsearch",
             "Kibana",
             "RabbitMQ",
+            "etcd",
+            "Grafana",
             "PostgreSQL",
             "Nominatim"
           ]
@@ -26369,7 +26956,8 @@
           "uses": [
             "Ruby",
             "RabbitMQ",
-            "MongoDB"
+            "MongoDB",
+            "SQLite"
           ]
         },
         {
@@ -26540,7 +27128,9 @@
             "Express",
             "Ember.js",
             "MongoDB",
+            "Mongoose",
             "Socket.IO",
+            "gulp",
             "Bootstrap"
           ]
         },
@@ -26570,6 +27160,7 @@
             "Express",
             "Ember.js",
             "Socket.IO",
+            "gulp",
             "Handlebars",
             "SCSS",
             "Bootstrap",
@@ -26628,9 +27219,11 @@
             "Node.js",
             "Express",
             "MongoDB",
+            "Mongoose",
             "Socket.IO",
             "Ember.js",
             "Handlebars",
+            "Grunt",
             "Mocha",
             "Travis CI"
           ]
@@ -26660,10 +27253,12 @@
             "Node.js",
             "Express",
             "MongoDB",
+            "Mongoose",
             "Socket.IO",
             "Ember.js",
             "Handlebars",
             "Bootstrap",
+            "Grunt",
             "Mocha"
           ]
         }
@@ -26718,6 +27313,8 @@
           "supervised": false,
           "uses": [
             "Swift",
+            "UIKit",
+            "Xcode",
             "Socket.IO"
           ]
         },
@@ -26746,7 +27343,9 @@
             "Express",
             "Ember.js",
             "MongoDB",
+            "Mongoose",
             "Socket.IO",
+            "gulp",
             "Bootstrap"
           ]
         },
@@ -26776,6 +27375,7 @@
             "Express",
             "Ember.js",
             "Socket.IO",
+            "gulp",
             "Handlebars",
             "SCSS",
             "Bootstrap",
@@ -26807,9 +27407,11 @@
             "Node.js",
             "Express",
             "MongoDB",
+            "Mongoose",
             "Socket.IO",
             "Ember.js",
             "Handlebars",
+            "Grunt",
             "Mocha",
             "Travis CI"
           ]
@@ -26839,10 +27441,12 @@
             "Node.js",
             "Express",
             "MongoDB",
+            "Mongoose",
             "Socket.IO",
             "Ember.js",
             "Handlebars",
             "Bootstrap",
+            "Grunt",
             "Mocha"
           ]
         }
@@ -27103,6 +27707,7 @@
             "JavaScript",
             "HTML",
             "Babel",
+            "gulp",
             "webpack",
             "Mocha",
             "jQuery"
@@ -27187,6 +27792,7 @@
             "CSS",
             "JavaScript",
             "CoffeeScript",
+            "SQLite",
             "SCSS",
             "jQuery"
           ]
@@ -27273,7 +27879,9 @@
             "Express",
             "Ember.js",
             "MongoDB",
+            "Mongoose",
             "Socket.IO",
+            "gulp",
             "Bootstrap"
           ]
         },
@@ -27303,6 +27911,7 @@
             "Express",
             "Ember.js",
             "Socket.IO",
+            "gulp",
             "Handlebars",
             "SCSS",
             "Bootstrap",
@@ -27333,6 +27942,7 @@
             "Ember.js",
             "Handlebars",
             "Bootstrap",
+            "Grunt",
             "Bower"
           ]
         },
@@ -27361,9 +27971,11 @@
             "Node.js",
             "Express",
             "MongoDB",
+            "Mongoose",
             "Socket.IO",
             "Ember.js",
             "Handlebars",
+            "Grunt",
             "Mocha",
             "Travis CI"
           ]
@@ -27393,10 +28005,12 @@
             "Node.js",
             "Express",
             "MongoDB",
+            "Mongoose",
             "Socket.IO",
             "Ember.js",
             "Handlebars",
             "Bootstrap",
+            "Grunt",
             "Mocha"
           ]
         }
@@ -27452,6 +28066,7 @@
             "Express",
             "Ember.js",
             "Socket.IO",
+            "gulp",
             "Handlebars",
             "SCSS",
             "Bootstrap",
@@ -27482,6 +28097,7 @@
             "Ember.js",
             "Handlebars",
             "Bootstrap",
+            "Grunt",
             "Bower"
           ]
         },
@@ -27510,9 +28126,11 @@
             "Node.js",
             "Express",
             "MongoDB",
+            "Mongoose",
             "Socket.IO",
             "Ember.js",
             "Handlebars",
+            "Grunt",
             "Mocha",
             "Travis CI"
           ]
@@ -27542,10 +28160,12 @@
             "Node.js",
             "Express",
             "MongoDB",
+            "Mongoose",
             "Socket.IO",
             "Ember.js",
             "Handlebars",
             "Bootstrap",
+            "Grunt",
             "Mocha"
           ]
         }
@@ -27631,6 +28251,7 @@
             "Elixir",
             "Elm",
             "Phoenix",
+            "Ueberauth",
             "Bootstrap",
             "webpack",
             "Bower",
@@ -27692,7 +28313,9 @@
             "Express",
             "Ember.js",
             "MongoDB",
+            "Mongoose",
             "Socket.IO",
+            "gulp",
             "Bootstrap"
           ]
         },
@@ -27722,6 +28345,7 @@
             "Express",
             "Ember.js",
             "Socket.IO",
+            "gulp",
             "Handlebars",
             "SCSS",
             "Bootstrap",
@@ -27752,6 +28376,7 @@
             "Ember.js",
             "Handlebars",
             "Bootstrap",
+            "Grunt",
             "Bower"
           ]
         },
@@ -27780,10 +28405,12 @@
             "Node.js",
             "Express",
             "MongoDB",
+            "Mongoose",
             "Socket.IO",
             "Ember.js",
             "Handlebars",
             "Bootstrap",
+            "Grunt",
             "Mocha"
           ]
         }
@@ -27869,6 +28496,7 @@
             "Elixir",
             "Elm",
             "Phoenix",
+            "Ueberauth",
             "Bootstrap",
             "webpack",
             "Bower",
@@ -27931,6 +28559,7 @@
             "Express",
             "Ember.js",
             "Socket.IO",
+            "gulp",
             "Handlebars",
             "SCSS",
             "Bootstrap",
@@ -27961,6 +28590,7 @@
             "Ember.js",
             "Handlebars",
             "Bootstrap",
+            "Grunt",
             "Bower"
           ]
         },
@@ -28048,6 +28678,7 @@
             "JavaScript",
             "HTML",
             "Babel",
+            "gulp",
             "webpack",
             "Mocha",
             "jQuery"
@@ -28078,9 +28709,11 @@
             "Node.js",
             "Express",
             "MongoDB",
+            "Mongoose",
             "Socket.IO",
             "Ember.js",
             "Handlebars",
+            "Grunt",
             "Mocha",
             "Travis CI"
           ]
@@ -28110,10 +28743,12 @@
             "Node.js",
             "Express",
             "MongoDB",
+            "Mongoose",
             "Socket.IO",
             "Ember.js",
             "Handlebars",
             "Bootstrap",
+            "Grunt",
             "Mocha"
           ]
         },
@@ -28250,6 +28885,7 @@
             "Ruby",
             "GLI",
             "CoreOS",
+            "etcd",
             "Kubernetes",
             "Dockerfile",
             "RSpec"
@@ -28440,6 +29076,7 @@
             "Ruby",
             "GLI",
             "CoreOS",
+            "etcd",
             "Kubernetes",
             "Dockerfile",
             "RSpec"
@@ -28602,7 +29239,8 @@
           "uses": [
             "Rust",
             "clap",
-            "serde"
+            "serde",
+            "env_logger"
           ]
         },
         {
@@ -28626,7 +29264,8 @@
           "supervised": false,
           "uses": [
             "Rust",
-            "clap"
+            "clap",
+            "env_logger"
           ]
         },
         {
@@ -28706,7 +29345,8 @@
           "supervised": false,
           "uses": [
             "Rust",
-            "serde"
+            "serde",
+            "env_logger"
           ]
         },
         {
@@ -28786,7 +29426,8 @@
           "uses": [
             "Rust",
             "clap",
-            "serde"
+            "serde",
+            "env_logger"
           ]
         }
       ],
@@ -28833,6 +29474,7 @@
           "uses": [
             "Shell",
             "Ansible",
+            "Vagrant",
             "Dockerfile"
           ]
         },
@@ -28858,7 +29500,8 @@
           "uses": [
             "Dockerfile",
             "Kubernetes",
-            "Ansible"
+            "Ansible",
+            "Vagrant"
           ]
         },
         {
@@ -28937,6 +29580,7 @@
             "Dockerfile",
             "Elasticsearch",
             "Kibana",
+            "Grafana",
             "PostgreSQL"
           ]
         }
@@ -28988,6 +29632,7 @@
           "uses": [
             "Shell",
             "CoreOS",
+            "etcd",
             "Dockerfile"
           ]
         },
@@ -29063,6 +29708,7 @@
             "Ruby",
             "GLI",
             "CoreOS",
+            "etcd",
             "Kubernetes",
             "Dockerfile",
             "RSpec"
@@ -29187,6 +29833,7 @@
             "Shell",
             "EEx and HEEx",
             "Erlang",
+            "Tesla",
             "CSV",
             "Nominatim",
             "Dockerfile"
@@ -29219,8 +29866,3017 @@
             "Elasticsearch",
             "Kibana",
             "RabbitMQ",
+            "etcd",
+            "Grafana",
             "PostgreSQL",
             "Nominatim"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "go": {
+      "name": "Go",
+      "kind": "language",
+      "counts": {
+        "repos": 3,
+        "primary": 0,
+        "sites": 0,
+        "work": 3,
+        "engagements": 0
+      },
+      "first": 2014,
+      "last": 2022,
+      "categories": [
+        {
+          "key": "data",
+          "n": 1
+        },
+        {
+          "key": "systems",
+          "n": 1
+        },
+        {
+          "key": "tools",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "rest-hello-world-benchmark",
+          "title": "rest-hello-world-benchmark",
+          "url": "https://github.com/korczis/rest-hello-world-benchmark",
+          "work": true,
+          "slug": "rest-hello-world-benchmark",
+          "site": null,
+          "category": "tools",
+          "description": "Benchmark of Hello World REST Endpoint in various languages / frameworks",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2022-07-31",
+          "pushed": "2022-07-31",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Elixir",
+            "CSS",
+            "HTML",
+            "JavaScript",
+            "Phoenix",
+            "Plug",
+            "Cowboy",
+            "Go"
+          ]
+        },
+        {
+          "name": "docker-datasciencetoolbox",
+          "title": "docker-datasciencetoolbox",
+          "url": "https://github.com/korczis/docker-datasciencetoolbox",
+          "work": true,
+          "slug": "docker-datasciencetoolbox",
+          "site": null,
+          "category": "systems",
+          "description": "Dockerized http://datasciencetoolbox.org",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2015-06-06",
+          "pushed": "2015-06-06",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Dockerfile",
+            "Ubuntu",
+            "Python",
+            "Java",
+            "Go",
+            "Node.js",
+            "jq"
+          ]
+        },
+        {
+          "name": "apollo-box",
+          "title": "apollo-box",
+          "url": "https://github.com/korczis/apollo-box",
+          "work": true,
+          "slug": "apollo-box",
+          "site": null,
+          "category": "data",
+          "description": "All needed data science stuff in one box ",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2014-05-05",
+          "pushed": "2014-05-05",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Shell",
+            "Vagrant",
+            "Ubuntu",
+            "Python",
+            "R",
+            "Go",
+            "Node.js",
+            "jq"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "sqlite": {
+      "name": "SQLite",
+      "kind": "technology",
+      "counts": {
+        "repos": 3,
+        "primary": 0,
+        "sites": 0,
+        "work": 3,
+        "engagements": 0
+      },
+      "first": 2014,
+      "last": 2025,
+      "categories": [
+        {
+          "key": "data",
+          "n": 2
+        },
+        {
+          "key": "web",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "korczis.gitlab.io",
+          "title": "korczis.gitlab.io",
+          "url": "https://gitlab.com/korczis/korczis.gitlab.io",
+          "work": true,
+          "slug": "korczis-gitlab-io",
+          "site": null,
+          "category": "web",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2025-08-22",
+          "pushed": "2025-12-20",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "CSS",
+            "Elixir",
+            "SCSS",
+            "HTML",
+            "EEx and HEEx",
+            "Zola",
+            "Tailwind CSS",
+            "Phoenix",
+            "SQLite",
+            "Rust",
+            "Rustler",
+            "GitLab CI",
+            "Fly.io"
+          ]
+        },
+        {
+          "name": "gooddata_rails_app",
+          "title": "gooddata_rails_app",
+          "url": "https://github.com/korczis/gooddata_rails_app",
+          "work": true,
+          "slug": "gooddata-rails-app",
+          "site": null,
+          "category": "data",
+          "description": "GoodData as Rails Application",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2014-10-31",
+          "pushed": "2014-10-31",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Ruby",
+            "CSS",
+            "JavaScript",
+            "CoffeeScript",
+            "SQLite",
+            "SCSS",
+            "jQuery"
+          ]
+        },
+        {
+          "name": "apollo-crawler",
+          "title": "apollo-crawler",
+          "url": "https://github.com/korczis/apollo-crawler",
+          "work": true,
+          "slug": "apollo-crawler",
+          "site": null,
+          "category": "data",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2014-08-30",
+          "pushed": "2014-08-30",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Ruby",
+            "RabbitMQ",
+            "MongoDB",
+            "SQLite"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "git": {
+      "name": "Git",
+      "kind": "technology",
+      "counts": {
+        "repos": 3,
+        "primary": 0,
+        "sites": 1,
+        "work": 3,
+        "engagements": 0
+      },
+      "first": 2015,
+      "last": 2026,
+      "categories": [
+        {
+          "key": "ai",
+          "n": 1
+        },
+        {
+          "key": "data",
+          "n": 1
+        },
+        {
+          "key": "systems",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "prismatic-majordomus",
+          "title": "Majordomus",
+          "url": "https://github.com/korczis/prismatic-majordomus",
+          "work": true,
+          "slug": "prismatic-majordomus",
+          "site": "https://korczis.github.io/prismatic-majordomus/",
+          "category": "ai",
+          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+          "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
+          "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
+          "created": "2026-09-03",
+          "pushed": "2026-11-19",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "Rust",
+            "Shell",
+            "JavaScript",
+            "HTML",
+            "MCP",
+            "Zola",
+            "Claude API",
+            "Mermaid",
+            "Git",
+            "GitHub Actions"
+          ]
+        },
+        {
+          "name": "zdeny-docker",
+          "title": "zdeny-docker",
+          "url": "https://github.com/korczis/zdeny-docker",
+          "work": true,
+          "slug": "zdeny-docker",
+          "site": null,
+          "category": "systems",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2019-03-24",
+          "pushed": "2019-03-26",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Dockerfile",
+            "Shell",
+            "Python",
+            "Git"
+          ]
+        },
+        {
+          "name": "datasciencecoursera",
+          "title": "datasciencecoursera",
+          "url": "https://github.com/korczis/datasciencecoursera",
+          "work": true,
+          "slug": "datasciencecoursera",
+          "site": null,
+          "category": "data",
+          "description": "Data Science Coursera Coursera",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2015-05-08",
+          "pushed": "2015-05-08",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Markdown",
+            "Git"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "ubuntu": {
+      "name": "Ubuntu",
+      "kind": "technology",
+      "counts": {
+        "repos": 3,
+        "primary": 0,
+        "sites": 0,
+        "work": 3,
+        "engagements": 0
+      },
+      "first": 2014,
+      "last": 2015,
+      "categories": [
+        {
+          "key": "systems",
+          "n": 2
+        },
+        {
+          "key": "data",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "docker-dstk",
+          "title": "docker-dstk",
+          "url": "https://github.com/korczis/docker-dstk",
+          "work": true,
+          "slug": "docker-dstk",
+          "site": null,
+          "category": "systems",
+          "description": "Dockerized http://www.datasciencetoolkit.org",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2015-06-06",
+          "pushed": "2015-06-07",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Shell",
+            "Dockerfile",
+            "Ubuntu",
+            "Ruby",
+            "PostgreSQL",
+            "Python",
+            "Java"
+          ]
+        },
+        {
+          "name": "docker-datasciencetoolbox",
+          "title": "docker-datasciencetoolbox",
+          "url": "https://github.com/korczis/docker-datasciencetoolbox",
+          "work": true,
+          "slug": "docker-datasciencetoolbox",
+          "site": null,
+          "category": "systems",
+          "description": "Dockerized http://datasciencetoolbox.org",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2015-06-06",
+          "pushed": "2015-06-06",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Dockerfile",
+            "Ubuntu",
+            "Python",
+            "Java",
+            "Go",
+            "Node.js",
+            "jq"
+          ]
+        },
+        {
+          "name": "apollo-box",
+          "title": "apollo-box",
+          "url": "https://github.com/korczis/apollo-box",
+          "work": true,
+          "slug": "apollo-box",
+          "site": null,
+          "category": "data",
+          "description": "All needed data science stuff in one box ",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2014-05-05",
+          "pushed": "2014-05-05",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Shell",
+            "Vagrant",
+            "Ubuntu",
+            "Python",
+            "R",
+            "Go",
+            "Node.js",
+            "jq"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "vagrant": {
+      "name": "Vagrant",
+      "kind": "technology",
+      "counts": {
+        "repos": 3,
+        "primary": 0,
+        "sites": 0,
+        "work": 3,
+        "engagements": 0
+      },
+      "first": 2014,
+      "last": 2019,
+      "categories": [
+        {
+          "key": "systems",
+          "n": 2
+        },
+        {
+          "key": "data",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "server-archlinux",
+          "title": "server-archlinux",
+          "url": "https://github.com/korczis/server-archlinux",
+          "work": true,
+          "slug": "server-archlinux",
+          "site": null,
+          "category": "systems",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2019-02-17",
+          "pushed": "2019-04-04",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Shell",
+            "Ansible",
+            "Vagrant",
+            "Dockerfile"
+          ]
+        },
+        {
+          "name": "k8s-orbis-pictus",
+          "title": "k8s-orbis-pictus",
+          "url": "https://github.com/korczis/k8s-orbis-pictus",
+          "work": true,
+          "slug": "k8s-orbis-pictus",
+          "site": null,
+          "category": "systems",
+          "description": "Playground for learning docker, kubernetes, ansible and friends",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2019-03-14",
+          "pushed": "2019-03-14",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Dockerfile",
+            "Kubernetes",
+            "Ansible",
+            "Vagrant"
+          ]
+        },
+        {
+          "name": "apollo-box",
+          "title": "apollo-box",
+          "url": "https://github.com/korczis/apollo-box",
+          "work": true,
+          "slug": "apollo-box",
+          "site": null,
+          "category": "data",
+          "description": "All needed data science stuff in one box ",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2014-05-05",
+          "pushed": "2014-05-05",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Shell",
+            "Vagrant",
+            "Ubuntu",
+            "Python",
+            "R",
+            "Go",
+            "Node.js",
+            "jq"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "etcd": {
+      "name": "etcd",
+      "kind": "technology",
+      "counts": {
+        "repos": 3,
+        "primary": 0,
+        "sites": 1,
+        "work": 3,
+        "engagements": 0
+      },
+      "first": 2014,
+      "last": 2025,
+      "categories": [
+        {
+          "key": "systems",
+          "n": 2
+        },
+        {
+          "key": "data",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "microcrawler",
+          "title": "microcrawler",
+          "url": "https://gitlab.com/korczis/microcrawler",
+          "work": true,
+          "slug": "microcrawler",
+          "site": null,
+          "category": "data",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2019-09-16",
+          "pushed": "2025-12-20",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Shell",
+            "CoreOS",
+            "etcd",
+            "Dockerfile"
+          ]
+        },
+        {
+          "name": "cluster-kubernetes",
+          "title": "cluster-kubernetes",
+          "url": "https://github.com/korczis/cluster-kubernetes",
+          "work": true,
+          "slug": "cluster-kubernetes",
+          "site": null,
+          "category": "systems",
+          "description": "Kubernetes Cluster",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2017-03-14",
+          "pushed": "2018-01-30",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Shell",
+            "Smarty",
+            "Kubernetes",
+            "Couchbase",
+            "Elasticsearch",
+            "Kibana",
+            "RabbitMQ",
+            "etcd",
+            "Grafana",
+            "PostgreSQL",
+            "Nominatim"
+          ]
+        },
+        {
+          "name": "apollon",
+          "title": "apollon",
+          "url": "https://github.com/korczis/apollon",
+          "work": true,
+          "slug": "apollon",
+          "site": "https://korczis.github.io/apollon/",
+          "category": "systems",
+          "description": "Your own personal cluster built on top of the cloud.",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2014-05-05",
+          "pushed": "2015-02-25",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Ruby",
+            "GLI",
+            "CoreOS",
+            "etcd",
+            "Kubernetes",
+            "Dockerfile",
+            "RSpec"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "grafana": {
+      "name": "Grafana",
+      "kind": "technology",
+      "counts": {
+        "repos": 3,
+        "primary": 0,
+        "sites": 0,
+        "work": 3,
+        "engagements": 0
+      },
+      "first": 2017,
+      "last": 2019,
+      "categories": [
+        {
+          "key": "systems",
+          "n": 2
+        },
+        {
+          "key": "tools",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "server-ansible",
+          "title": "server-ansible",
+          "url": "https://github.com/korczis/server-ansible",
+          "work": true,
+          "slug": "server-ansible",
+          "site": null,
+          "category": "systems",
+          "description": "Server Ansible",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2019-01-26",
+          "pushed": "2019-01-29",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Shell",
+            "Ansible",
+            "Dockerfile",
+            "Elasticsearch",
+            "Kibana",
+            "Grafana",
+            "PostgreSQL"
+          ]
+        },
+        {
+          "name": "bcnode-extra-scripts",
+          "title": "bcnode-extra-scripts",
+          "url": "https://github.com/korczis/bcnode-extra-scripts",
+          "work": true,
+          "slug": "bcnode-extra-scripts",
+          "site": null,
+          "category": "tools",
+          "description": "BC Extra Scripts (DX)",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2018-06-24",
+          "pushed": "2018-06-24",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Shell",
+            "Dockerfile",
+            "Grafana",
+            "libp2p"
+          ]
+        },
+        {
+          "name": "cluster-kubernetes",
+          "title": "cluster-kubernetes",
+          "url": "https://github.com/korczis/cluster-kubernetes",
+          "work": true,
+          "slug": "cluster-kubernetes",
+          "site": null,
+          "category": "systems",
+          "description": "Kubernetes Cluster",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2017-03-14",
+          "pushed": "2018-01-30",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Shell",
+            "Smarty",
+            "Kubernetes",
+            "Couchbase",
+            "Elasticsearch",
+            "Kibana",
+            "RabbitMQ",
+            "etcd",
+            "Grafana",
+            "PostgreSQL",
+            "Nominatim"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "protobuf": {
+      "name": "Protocol Buffers",
+      "kind": "technology",
+      "counts": {
+        "repos": 3,
+        "primary": 0,
+        "sites": 0,
+        "work": 3,
+        "engagements": 0
+      },
+      "first": 2017,
+      "last": 2025,
+      "categories": [
+        {
+          "key": "tools",
+          "n": 2
+        },
+        {
+          "key": "web",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "astudo",
+          "title": "astudo",
+          "url": "https://gitlab.com/korczis/astudo",
+          "work": true,
+          "slug": "astudo",
+          "site": null,
+          "category": "tools",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2022-04-29",
+          "pushed": "2025-12-20",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Elixir",
+            "CSS",
+            "Rust",
+            "Dockerfile",
+            "JavaScript",
+            "Phoenix",
+            "Rustler",
+            "Protocol Buffers"
+          ]
+        },
+        {
+          "name": "bcnode-old",
+          "title": "bcnode-old",
+          "url": "https://github.com/korczis/bcnode-old",
+          "work": true,
+          "slug": "bcnode-old",
+          "site": null,
+          "category": "tools",
+          "description": "Mining node with built-in block rover and DHT. ",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2018-01-07",
+          "pushed": "2018-04-12",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "JavaScript",
+            "Rust",
+            "Node.js",
+            "Babel",
+            "Protocol Buffers",
+            "libp2p",
+            "Dockerfile",
+            "webpack"
+          ]
+        },
+        {
+          "name": "the-scratch",
+          "title": "the-scratch",
+          "url": "https://github.com/korczis/the-scratch",
+          "work": true,
+          "slug": "the-scratch",
+          "site": null,
+          "category": "web",
+          "description": "Single Page Application written in Elm with Elixir/Phoenix Backend",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2017-07-21",
+          "pushed": "2018-03-10",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "JavaScript",
+            "Elixir",
+            "Elm",
+            "Ecto",
+            "Phoenix",
+            "Absinthe",
+            "GraphQL",
+            "Guardian",
+            "Ueberauth",
+            "Rust",
+            "Rustler",
+            "Couchbase",
+            "Protocol Buffers",
+            "webpack"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "json-schema": {
+      "name": "JSON Schema",
+      "kind": "technology",
+      "counts": {
+        "repos": 3,
+        "primary": 0,
+        "sites": 2,
+        "work": 3,
+        "engagements": 0
+      },
+      "first": 2025,
+      "last": 2026,
+      "categories": [
+        {
+          "key": "tools",
+          "n": 2
+        },
+        {
+          "key": "media",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "sonic-playground",
+          "title": "Sonic Playground",
+          "url": "https://github.com/korczis/sonic-playground",
+          "work": true,
+          "slug": "sonic-playground",
+          "site": "https://korczis.github.io/sonic-playground/",
+          "category": "media",
+          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
+          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
+          "created": "2026-11-12",
+          "pushed": "2026-11-17",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "Python",
+            "JavaScript",
+            "HTML",
+            "Shell",
+            "CSS",
+            "Elixir",
+            "Zola",
+            "TypeScript",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "JSON Schema",
+            "GitHub Pages"
+          ]
+        },
+        {
+          "name": "vomaste.cz",
+          "title": "vomaste.cz",
+          "url": "https://github.com/korczis/vomaste.cz",
+          "work": true,
+          "slug": "vomaste-cz",
+          "site": "https://korczis.github.io/vomaste.cz/",
+          "category": "tools",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2026-07-21",
+          "pushed": "2026-11-08",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "Shell",
+            "CSS",
+            "Zola",
+            "JSON Schema",
+            "Node.js",
+            "Tailwind CSS",
+            "Playwright",
+            "Just",
+            "GitHub Pages"
+          ]
+        },
+        {
+          "name": "comtesse",
+          "title": "comtesse",
+          "url": "https://gitlab.com/korczis/comtesse",
+          "work": true,
+          "slug": "comtesse",
+          "site": null,
+          "category": "tools",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2025-08-27",
+          "pushed": "2025-12-20",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Just",
+            "Shell",
+            "Rust",
+            "Mermaid",
+            "Meilisearch",
+            "JSON Schema"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "jq": {
+      "name": "jq",
+      "kind": "technology",
+      "counts": {
+        "repos": 3,
+        "primary": 0,
+        "sites": 1,
+        "work": 3,
+        "engagements": 0
+      },
+      "first": 2014,
+      "last": 2026,
+      "categories": [
+        {
+          "key": "data",
+          "n": 1
+        },
+        {
+          "key": "security",
+          "n": 1
+        },
+        {
+          "key": "systems",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "osint-case-ratcliffe-moscow-2026",
+          "title": "osint-case-ratcliffe-moscow-2026",
+          "url": "https://github.com/korczis/osint-case-ratcliffe-moscow-2026",
+          "work": true,
+          "slug": "osint-case-ratcliffe-moscow-2026",
+          "site": "https://korczis.github.io/osint-case-ratcliffe-moscow-2026/",
+          "category": "security",
+          "description": "Open-source intelligence assessment of the CIA Director's unannounced Moscow visit (2026-08-25) — maintained with Claude Code skills; reusable OSINT case toolkit",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2026-08-26",
+          "pushed": "2026-08-26",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "HTML",
+            "Python",
+            "Shell",
+            "Claude API",
+            "Just",
+            "jq",
+            "GitHub Actions",
+            "GitHub Pages"
+          ]
+        },
+        {
+          "name": "docker-datasciencetoolbox",
+          "title": "docker-datasciencetoolbox",
+          "url": "https://github.com/korczis/docker-datasciencetoolbox",
+          "work": true,
+          "slug": "docker-datasciencetoolbox",
+          "site": null,
+          "category": "systems",
+          "description": "Dockerized http://datasciencetoolbox.org",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2015-06-06",
+          "pushed": "2015-06-06",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Dockerfile",
+            "Ubuntu",
+            "Python",
+            "Java",
+            "Go",
+            "Node.js",
+            "jq"
+          ]
+        },
+        {
+          "name": "apollo-box",
+          "title": "apollo-box",
+          "url": "https://github.com/korczis/apollo-box",
+          "work": true,
+          "slug": "apollo-box",
+          "site": null,
+          "category": "data",
+          "description": "All needed data science stuff in one box ",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2014-05-05",
+          "pushed": "2014-05-05",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Shell",
+            "Vagrant",
+            "Ubuntu",
+            "Python",
+            "R",
+            "Go",
+            "Node.js",
+            "jq"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "eslint": {
+      "name": "ESLint",
+      "kind": "technology",
+      "counts": {
+        "repos": 3,
+        "primary": 0,
+        "sites": 0,
+        "work": 3,
+        "engagements": 0
+      },
+      "first": 2016,
+      "last": 2025,
+      "categories": [
+        {
+          "key": "libraries",
+          "n": 2
+        },
+        {
+          "key": "tools",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "dispatcher",
+          "title": "dispatcher",
+          "url": "https://gitlab.com/korczis/dispatcher",
+          "work": true,
+          "slug": "dispatcher",
+          "site": null,
+          "category": "tools",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2024-10-18",
+          "pushed": "2025-12-20",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "TypeScript",
+            "JavaScript",
+            "ESLint",
+            "GitLab CI"
+          ]
+        },
+        {
+          "name": "peg-parser",
+          "title": "peg-parser",
+          "url": "https://github.com/korczis/peg-parser",
+          "work": true,
+          "slug": "peg-parser",
+          "site": null,
+          "category": "libraries",
+          "description": "Parser built using peg.js",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2016-04-26",
+          "pushed": "2016-05-04",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "JavaScript",
+            "Babel",
+            "webpack",
+            "ESLint"
+          ]
+        },
+        {
+          "name": "babel-plugin-transform-graphql",
+          "title": "babel-plugin-transform-graphql",
+          "url": "https://github.com/korczis/babel-plugin-transform-graphql",
+          "work": true,
+          "slug": "babel-plugin-transform-graphql",
+          "site": null,
+          "category": "libraries",
+          "description": "Babel Plugin for Transforming GraphQL",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2016-04-15",
+          "pushed": "2016-04-15",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "JavaScript",
+            "Babel",
+            "GraphQL",
+            "ESLint"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "axe-core": {
+      "name": "axe-core",
+      "kind": "technology",
+      "counts": {
+        "repos": 3,
+        "primary": 0,
+        "sites": 2,
+        "work": 3,
+        "engagements": 0
+      },
+      "first": 2024,
+      "last": 2026,
+      "categories": [
+        {
+          "key": "science",
+          "n": 2
+        },
+        {
+          "key": "web",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "korczis.github.io",
+          "title": "korczis.github.io",
+          "url": "https://github.com/korczis/korczis.github.io",
+          "work": true,
+          "slug": "korczis-github-io",
+          "site": null,
+          "category": "web",
+          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2024-12-24",
+          "pushed": "2026-11-19",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Alpine.js",
+            "Apache ECharts",
+            "Flowbite Pro",
+            "GitHub Pages",
+            "Majordomus",
+            "p5.js",
+            "Tailwind CSS",
+            "Zola",
+            "D3.js",
+            "Node.js",
+            "Playwright",
+            "axe-core"
+          ]
+        },
+        {
+          "name": "oscilla",
+          "title": "Oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "work": true,
+          "slug": "oscilla",
+          "site": "https://korczis.github.io/oscilla/",
+          "category": "science",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
+          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
+          "created": "2026-10-01",
+          "pushed": "2026-11-19",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Web Audio",
+            "Alpine.js",
+            "p5.js",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "Playwright",
+            "axe-core",
+            "GitHub Pages"
+          ]
+        },
+        {
+          "name": "algoglyph",
+          "title": "algoglyph",
+          "url": "https://github.com/korczis/algoglyph",
+          "work": true,
+          "slug": "algoglyph",
+          "site": "https://korczis.github.io/algoglyph/",
+          "category": "science",
+          "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
+          "summary": "Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core.",
+          "summary_cs": "Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.",
+          "created": "2026-11-11",
+          "pushed": "2026-11-17",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "TypeScript",
+            "Rust",
+            "JavaScript",
+            "HTML",
+            "p5.js",
+            "Apache ECharts",
+            "Alpine.js",
+            "Flowbite Pro",
+            "Majordomus",
+            "Tailwind CSS",
+            "axe-core",
+            "GitHub Pages"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "grunt": {
+      "name": "Grunt",
+      "kind": "technology",
+      "counts": {
+        "repos": 3,
+        "primary": 0,
+        "sites": 0,
+        "work": 3,
+        "engagements": 0
+      },
+      "first": 2014,
+      "last": 2014,
+      "categories": [
+        {
+          "key": "data",
+          "n": 2
+        },
+        {
+          "key": "web",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "microcrawler-couchapp",
+          "title": "microcrawler-couchapp",
+          "url": "https://github.com/korczis/microcrawler-couchapp",
+          "work": true,
+          "slug": "microcrawler-couchapp",
+          "site": null,
+          "category": "data",
+          "description": "Microcrawler Web UI for browsing results (couchapp) ...",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2014-05-24",
+          "pushed": "2014-06-22",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "JavaScript",
+            "Ember.js",
+            "Handlebars",
+            "Bootstrap",
+            "Grunt",
+            "Bower"
+          ]
+        },
+        {
+          "name": "apollocrawler.com",
+          "title": "apollocrawler.com",
+          "url": "https://github.com/korczis/apollocrawler.com",
+          "work": true,
+          "slug": "apollocrawler-com",
+          "site": null,
+          "category": "data",
+          "description": "Website for apollocrawler.com ...",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2014-01-31",
+          "pushed": "2014-02-24",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "JavaScript",
+            "CSS",
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "Mongoose",
+            "Socket.IO",
+            "Ember.js",
+            "Handlebars",
+            "Grunt",
+            "Mocha",
+            "Travis CI"
+          ]
+        },
+        {
+          "name": "craftsmen",
+          "title": "craftsmen",
+          "url": "https://github.com/korczis/craftsmen",
+          "work": true,
+          "slug": "craftsmen",
+          "site": null,
+          "category": "web",
+          "description": "Web UI for listing of czech companies",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2014-01-31",
+          "pushed": "2014-02-24",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "JavaScript",
+            "CSS",
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "Mongoose",
+            "Socket.IO",
+            "Ember.js",
+            "Handlebars",
+            "Bootstrap",
+            "Grunt",
+            "Mocha"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "gulp": {
+      "name": "gulp",
+      "kind": "technology",
+      "counts": {
+        "repos": 3,
+        "primary": 0,
+        "sites": 0,
+        "work": 3,
+        "engagements": 0
+      },
+      "first": 2014,
+      "last": 2025,
+      "categories": [
+        {
+          "key": "data",
+          "n": 1
+        },
+        {
+          "key": "tools",
+          "n": 1
+        },
+        {
+          "key": "web",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "microcrawler-browser",
+          "title": "microcrawler-browser",
+          "url": "https://gitlab.com/korczis/microcrawler-browser",
+          "work": true,
+          "slug": "microcrawler-browser",
+          "site": null,
+          "category": "data",
+          "description": "Proof-of-Concept: Microcrawler in your Browser!",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2019-09-16",
+          "pushed": "2025-12-20",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "Babel",
+            "gulp",
+            "webpack",
+            "Mocha",
+            "jQuery"
+          ]
+        },
+        {
+          "name": "lethe.it",
+          "title": "lethe.it",
+          "url": "https://github.com/korczis/lethe.it",
+          "work": true,
+          "slug": "lethe-it",
+          "site": null,
+          "category": "tools",
+          "description": "lethe.it - your personal smart links archive, organizer, classifier and much more",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2014-12-20",
+          "pushed": "2015-01-17",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "JavaScript",
+            "Node.js",
+            "Express",
+            "Ember.js",
+            "MongoDB",
+            "Mongoose",
+            "Socket.IO",
+            "gulp",
+            "Bootstrap"
+          ]
+        },
+        {
+          "name": "microscratch",
+          "title": "microscratch",
+          "url": "https://github.com/korczis/microscratch",
+          "work": true,
+          "slug": "microscratch",
+          "site": null,
+          "category": "web",
+          "description": "Light Weight Web Framework using node.js, mongo, sockets, ember.js ...",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2014-01-31",
+          "pushed": "2015-01-01",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "JavaScript",
+            "CSS",
+            "Node.js",
+            "Express",
+            "Ember.js",
+            "Socket.IO",
+            "gulp",
+            "Handlebars",
+            "SCSS",
+            "Bootstrap",
+            "Bower"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "mongoose": {
+      "name": "Mongoose",
+      "kind": "technology",
+      "counts": {
+        "repos": 3,
+        "primary": 0,
+        "sites": 0,
+        "work": 3,
+        "engagements": 0
+      },
+      "first": 2014,
+      "last": 2015,
+      "categories": [
+        {
+          "key": "data",
+          "n": 1
+        },
+        {
+          "key": "tools",
+          "n": 1
+        },
+        {
+          "key": "web",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "lethe.it",
+          "title": "lethe.it",
+          "url": "https://github.com/korczis/lethe.it",
+          "work": true,
+          "slug": "lethe-it",
+          "site": null,
+          "category": "tools",
+          "description": "lethe.it - your personal smart links archive, organizer, classifier and much more",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2014-12-20",
+          "pushed": "2015-01-17",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "JavaScript",
+            "Node.js",
+            "Express",
+            "Ember.js",
+            "MongoDB",
+            "Mongoose",
+            "Socket.IO",
+            "gulp",
+            "Bootstrap"
+          ]
+        },
+        {
+          "name": "apollocrawler.com",
+          "title": "apollocrawler.com",
+          "url": "https://github.com/korczis/apollocrawler.com",
+          "work": true,
+          "slug": "apollocrawler-com",
+          "site": null,
+          "category": "data",
+          "description": "Website for apollocrawler.com ...",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2014-01-31",
+          "pushed": "2014-02-24",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "JavaScript",
+            "CSS",
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "Mongoose",
+            "Socket.IO",
+            "Ember.js",
+            "Handlebars",
+            "Grunt",
+            "Mocha",
+            "Travis CI"
+          ]
+        },
+        {
+          "name": "craftsmen",
+          "title": "craftsmen",
+          "url": "https://github.com/korczis/craftsmen",
+          "work": true,
+          "slug": "craftsmen",
+          "site": null,
+          "category": "web",
+          "description": "Web UI for listing of czech companies",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2014-01-31",
+          "pushed": "2014-02-24",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "JavaScript",
+            "CSS",
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "Mongoose",
+            "Socket.IO",
+            "Ember.js",
+            "Handlebars",
+            "Bootstrap",
+            "Grunt",
+            "Mocha"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "plug": {
+      "name": "Plug",
+      "kind": "technology",
+      "counts": {
+        "repos": 3,
+        "primary": 0,
+        "sites": 0,
+        "work": 3,
+        "engagements": 0
+      },
+      "first": 2022,
+      "last": 2025,
+      "categories": [
+        {
+          "key": "tools",
+          "n": 3
+        }
+      ],
+      "repos": [
+        {
+          "name": "job-processor",
+          "title": "job-processor",
+          "url": "https://gitlab.com/korczis/job-processor",
+          "work": true,
+          "slug": "job-processor",
+          "site": null,
+          "category": "tools",
+          "description": "This is a simple web service built with Elixir, Plug, and Cowboy that processes job tasks with dependencies and generates execution order and bash scripts.",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2024-08-01",
+          "pushed": "2025-12-20",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Elixir",
+            "Plug",
+            "Cowboy",
+            "Jason",
+            "GitLab CI"
+          ]
+        },
+        {
+          "name": "el-magico-cache",
+          "title": "el-magico-cache",
+          "url": "https://github.com/korczis/el-magico-cache",
+          "work": true,
+          "slug": "el-magico-cache",
+          "site": null,
+          "category": "tools",
+          "description": "Elixir Cache",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2023-01-26",
+          "pushed": "2023-01-27",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Elixir",
+            "Shell",
+            "Makefile",
+            "Nix",
+            "HTML",
+            "Dockerfile",
+            "Erlang",
+            "Plug",
+            "Cowboy",
+            "Fly.io",
+            "GitHub Actions"
+          ]
+        },
+        {
+          "name": "rest-hello-world-benchmark",
+          "title": "rest-hello-world-benchmark",
+          "url": "https://github.com/korczis/rest-hello-world-benchmark",
+          "work": true,
+          "slug": "rest-hello-world-benchmark",
+          "site": null,
+          "category": "tools",
+          "description": "Benchmark of Hello World REST Endpoint in various languages / frameworks",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2022-07-31",
+          "pushed": "2022-07-31",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Elixir",
+            "CSS",
+            "HTML",
+            "JavaScript",
+            "Phoenix",
+            "Plug",
+            "Cowboy",
+            "Go"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "tesla": {
+      "name": "Tesla",
+      "kind": "technology",
+      "counts": {
+        "repos": 3,
+        "primary": 0,
+        "sites": 0,
+        "work": 3,
+        "engagements": 0
+      },
+      "first": 2024,
+      "last": 2025,
+      "categories": [
+        {
+          "key": "data",
+          "n": 1
+        },
+        {
+          "key": "science",
+          "n": 1
+        },
+        {
+          "key": "tools",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "distance-calculator",
+          "title": "distance-calculator",
+          "url": "https://gitlab.com/korczis/distance-calculator",
+          "work": true,
+          "slug": "distance-calculator",
+          "site": null,
+          "category": "science",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2024-03-20",
+          "pushed": "2025-12-20",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Elixir",
+            "Tesla",
+            "Jason",
+            "CSV",
+            "Erlang",
+            "GitLab CI"
+          ]
+        },
+        {
+          "name": "kuzu-ex",
+          "title": "kuzu-ex",
+          "url": "https://gitlab.com/korczis/kuzu-ex",
+          "work": true,
+          "slug": "kuzu-ex",
+          "site": null,
+          "category": "data",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2024-10-24",
+          "pushed": "2025-12-20",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Elixir",
+            "Python",
+            "Tesla",
+            "Jason",
+            "Dockerfile",
+            "GitLab CI"
+          ]
+        },
+        {
+          "name": "simple_geocoder",
+          "title": "simple_geocoder",
+          "url": "https://gitlab.com/korczis/simple_geocoder",
+          "work": true,
+          "slug": "simple-geocoder",
+          "site": null,
+          "category": "tools",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2024-04-23",
+          "pushed": "2025-12-20",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Elixir",
+            "Shell",
+            "EEx and HEEx",
+            "Erlang",
+            "Tesla",
+            "CSV",
+            "Nominatim",
+            "Dockerfile"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "httpoison": {
+      "name": "HTTPoison",
+      "kind": "technology",
+      "counts": {
+        "repos": 3,
+        "primary": 0,
+        "sites": 0,
+        "work": 3,
+        "engagements": 0
+      },
+      "first": 2016,
+      "last": 2025,
+      "categories": [
+        {
+          "key": "data",
+          "n": 2
+        },
+        {
+          "key": "libraries",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "hydra",
+          "title": "hydra",
+          "url": "https://gitlab.com/korczis/hydra",
+          "work": true,
+          "slug": "hydra",
+          "site": null,
+          "category": "libraries",
+          "description": "Modular wrapper and interface for pool of orchestrated Google Chrome instances",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2019-11-13",
+          "pushed": "2025-12-20",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Elixir",
+            "CSS",
+            "JavaScript",
+            "Dockerfile",
+            "Shell",
+            "Phoenix",
+            "Erlang",
+            "HTTPoison",
+            "GitLab CI"
+          ]
+        },
+        {
+          "name": "microcrawler-elixir",
+          "title": "microcrawler-elixir",
+          "url": "https://gitlab.com/korczis/microcrawler-elixir",
+          "work": true,
+          "slug": "microcrawler-elixir",
+          "site": null,
+          "category": "data",
+          "description": "Microcrawler Implemented in Elixir",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2019-09-16",
+          "pushed": "2025-12-20",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Elixir",
+            "Shell",
+            "Erlang",
+            "RabbitMQ",
+            "Couchbase",
+            "Elasticsearch",
+            "HTTPoison"
+          ]
+        },
+        {
+          "name": "gooddata-graphql",
+          "title": "gooddata-graphql",
+          "url": "https://github.com/korczis/gooddata-graphql",
+          "work": true,
+          "slug": "gooddata-graphql",
+          "site": null,
+          "category": "data",
+          "description": "GoodData Web Application Written in Elixir",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2016-12-01",
+          "pushed": "2016-12-19",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Elixir",
+            "JavaScript",
+            "HTML",
+            "Phoenix",
+            "Absinthe",
+            "GraphQL",
+            "HTTPoison",
+            "React",
+            "Dockerfile"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "guardian": {
+      "name": "Guardian",
+      "kind": "technology",
+      "counts": {
+        "repos": 3,
+        "primary": 0,
+        "sites": 0,
+        "work": 3,
+        "engagements": 0
+      },
+      "first": 2016,
+      "last": 2018,
+      "categories": [
+        {
+          "key": "science",
+          "n": 1
+        },
+        {
+          "key": "tools",
+          "n": 1
+        },
+        {
+          "key": "web",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "the-scratch",
+          "title": "the-scratch",
+          "url": "https://github.com/korczis/the-scratch",
+          "work": true,
+          "slug": "the-scratch",
+          "site": null,
+          "category": "web",
+          "description": "Single Page Application written in Elm with Elixir/Phoenix Backend",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2017-07-21",
+          "pushed": "2018-03-10",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "JavaScript",
+            "Elixir",
+            "Elm",
+            "Ecto",
+            "Phoenix",
+            "Absinthe",
+            "GraphQL",
+            "Guardian",
+            "Ueberauth",
+            "Rust",
+            "Rustler",
+            "Couchbase",
+            "Protocol Buffers",
+            "webpack"
+          ]
+        },
+        {
+          "name": "mapoffacts",
+          "title": "mapoffacts",
+          "url": "https://github.com/korczis/mapoffacts",
+          "work": true,
+          "slug": "mapoffacts",
+          "site": null,
+          "category": "tools",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2017-07-21",
+          "pushed": "2017-08-23",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "JavaScript",
+            "Elixir",
+            "Elm",
+            "Phoenix",
+            "Absinthe",
+            "GraphQL",
+            "Guardian",
+            "Ueberauth",
+            "PostgreSQL",
+            "Rust",
+            "webpack"
+          ]
+        },
+        {
+          "name": "maze",
+          "title": "maze",
+          "url": "https://github.com/korczis/maze",
+          "work": true,
+          "slug": "maze",
+          "site": null,
+          "category": "science",
+          "description": "Maze Web Application",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2016-11-18",
+          "pushed": "2016-11-20",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "JavaScript",
+            "Elixir",
+            "HTML",
+            "Phoenix",
+            "Guardian",
+            "React"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "ueberauth": {
+      "name": "Ueberauth",
+      "kind": "technology",
+      "counts": {
+        "repos": 3,
+        "primary": 0,
+        "sites": 0,
+        "work": 3,
+        "engagements": 0
+      },
+      "first": 2017,
+      "last": 2018,
+      "categories": [
+        {
+          "key": "web",
+          "n": 2
+        },
+        {
+          "key": "tools",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "the-scratch",
+          "title": "the-scratch",
+          "url": "https://github.com/korczis/the-scratch",
+          "work": true,
+          "slug": "the-scratch",
+          "site": null,
+          "category": "web",
+          "description": "Single Page Application written in Elm with Elixir/Phoenix Backend",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2017-07-21",
+          "pushed": "2018-03-10",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "JavaScript",
+            "Elixir",
+            "Elm",
+            "Ecto",
+            "Phoenix",
+            "Absinthe",
+            "GraphQL",
+            "Guardian",
+            "Ueberauth",
+            "Rust",
+            "Rustler",
+            "Couchbase",
+            "Protocol Buffers",
+            "webpack"
+          ]
+        },
+        {
+          "name": "mapoffacts",
+          "title": "mapoffacts",
+          "url": "https://github.com/korczis/mapoffacts",
+          "work": true,
+          "slug": "mapoffacts",
+          "site": null,
+          "category": "tools",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2017-07-21",
+          "pushed": "2017-08-23",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "JavaScript",
+            "Elixir",
+            "Elm",
+            "Phoenix",
+            "Absinthe",
+            "GraphQL",
+            "Guardian",
+            "Ueberauth",
+            "PostgreSQL",
+            "Rust",
+            "webpack"
+          ]
+        },
+        {
+          "name": "web-spa",
+          "title": "web-spa",
+          "url": "https://github.com/korczis/web-spa",
+          "work": true,
+          "slug": "web-spa",
+          "site": null,
+          "category": "web",
+          "description": "Single Page Application written in Elm with Elixir/Phoenix Backend",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2017-07-09",
+          "pushed": "2017-07-19",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "JavaScript",
+            "Elixir",
+            "Elm",
+            "Phoenix",
+            "Ueberauth",
+            "Bootstrap",
+            "webpack",
+            "Bower",
+            "Dockerfile",
+            "Travis CI"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "libp2p": {
+      "name": "libp2p",
+      "kind": "technology",
+      "counts": {
+        "repos": 3,
+        "primary": 0,
+        "sites": 0,
+        "work": 3,
+        "engagements": 0
+      },
+      "first": 2018,
+      "last": 2018,
+      "categories": [
+        {
+          "key": "tools",
+          "n": 3
+        }
+      ],
+      "repos": [
+        {
+          "name": "bcnode-extra-scripts",
+          "title": "bcnode-extra-scripts",
+          "url": "https://github.com/korczis/bcnode-extra-scripts",
+          "work": true,
+          "slug": "bcnode-extra-scripts",
+          "site": null,
+          "category": "tools",
+          "description": "BC Extra Scripts (DX)",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2018-06-24",
+          "pushed": "2018-06-24",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Shell",
+            "Dockerfile",
+            "Grafana",
+            "libp2p"
+          ]
+        },
+        {
+          "name": "js-libp2p-umbrella",
+          "title": "js-libp2p-umbrella",
+          "url": "https://github.com/korczis/js-libp2p-umbrella",
+          "work": true,
+          "slug": "js-libp2p-umbrella",
+          "site": null,
+          "category": "tools",
+          "description": "Umbrella repository for j2-libp2p and relavant modules",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2018-05-03",
+          "pushed": "2018-05-03",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "JavaScript",
+            "libp2p"
+          ]
+        },
+        {
+          "name": "bcnode-old",
+          "title": "bcnode-old",
+          "url": "https://github.com/korczis/bcnode-old",
+          "work": true,
+          "slug": "bcnode-old",
+          "site": null,
+          "category": "tools",
+          "description": "Mining node with built-in block rover and DHT. ",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2018-01-07",
+          "pushed": "2018-04-12",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "JavaScript",
+            "Rust",
+            "Node.js",
+            "Babel",
+            "Protocol Buffers",
+            "libp2p",
+            "Dockerfile",
+            "webpack"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "env-logger": {
+      "name": "env_logger",
+      "kind": "technology",
+      "counts": {
+        "repos": 3,
+        "primary": 0,
+        "sites": 0,
+        "work": 3,
+        "engagements": 0
+      },
+      "first": 2017,
+      "last": 2025,
+      "categories": [
+        {
+          "key": "data",
+          "n": 1
+        },
+        {
+          "key": "science",
+          "n": 1
+        },
+        {
+          "key": "tools",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "rocksdb_indexer",
+          "title": "rocksdb_indexer",
+          "url": "https://gitlab.com/korczis/rocksdb_indexer",
+          "work": true,
+          "slug": "rocksdb-indexer",
+          "site": null,
+          "category": "data",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2022-03-11",
+          "pushed": "2025-12-20",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Rust",
+            "serde",
+            "env_logger"
+          ]
+        },
+        {
+          "name": "wims",
+          "title": "wims",
+          "url": "https://github.com/korczis/wims",
+          "work": true,
+          "slug": "wims",
+          "site": null,
+          "category": "tools",
+          "description": "Where is my space?",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2017-05-06",
+          "pushed": "2017-05-06",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Rust",
+            "clap",
+            "serde",
+            "env_logger"
+          ]
+        },
+        {
+          "name": "graph-flow",
+          "title": "graph-flow",
+          "url": "https://github.com/korczis/graph-flow",
+          "work": true,
+          "slug": "graph-flow",
+          "site": null,
+          "category": "science",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2017-04-16",
+          "pushed": "2017-04-16",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Rust",
+            "clap",
+            "env_logger"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "fly-io": {
+      "name": "Fly.io",
+      "kind": "technology",
+      "counts": {
+        "repos": 3,
+        "primary": 0,
+        "sites": 0,
+        "work": 3,
+        "engagements": 0
+      },
+      "first": 2023,
+      "last": 2026,
+      "categories": [
+        {
+          "key": "ai",
+          "n": 1
+        },
+        {
+          "key": "tools",
+          "n": 1
+        },
+        {
+          "key": "web",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "sig",
+          "title": "sig",
+          "url": "https://gitlab.com/korczis/sig",
+          "work": true,
+          "slug": "sig",
+          "site": null,
+          "category": "ai",
+          "description": "distributed cognitive framework in Elixir/OTP.",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2025-08-23",
+          "pushed": "2026-02-04",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Elixir",
+            "EEx and HEEx",
+            "Shell",
+            "TypeScript",
+            "Erlang",
+            "Phoenix",
+            "Ecto",
+            "PostgreSQL",
+            "Meilisearch",
+            "Dockerfile",
+            "Fly.io"
+          ]
+        },
+        {
+          "name": "korczis.gitlab.io",
+          "title": "korczis.gitlab.io",
+          "url": "https://gitlab.com/korczis/korczis.gitlab.io",
+          "work": true,
+          "slug": "korczis-gitlab-io",
+          "site": null,
+          "category": "web",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2025-08-22",
+          "pushed": "2025-12-20",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "CSS",
+            "Elixir",
+            "SCSS",
+            "HTML",
+            "EEx and HEEx",
+            "Zola",
+            "Tailwind CSS",
+            "Phoenix",
+            "SQLite",
+            "Rust",
+            "Rustler",
+            "GitLab CI",
+            "Fly.io"
+          ]
+        },
+        {
+          "name": "el-magico-cache",
+          "title": "el-magico-cache",
+          "url": "https://github.com/korczis/el-magico-cache",
+          "work": true,
+          "slug": "el-magico-cache",
+          "site": null,
+          "category": "tools",
+          "description": "Elixir Cache",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2023-01-26",
+          "pushed": "2023-01-27",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Elixir",
+            "Shell",
+            "Makefile",
+            "Nix",
+            "HTML",
+            "Dockerfile",
+            "Erlang",
+            "Plug",
+            "Cowboy",
+            "Fly.io",
+            "GitHub Actions"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "dotnet": {
+      "name": ".NET",
+      "kind": "technology",
+      "counts": {
+        "repos": 3,
+        "primary": 0,
+        "sites": 0,
+        "work": 3,
+        "engagements": 0
+      },
+      "first": 2012,
+      "last": 2014,
+      "categories": [
+        {
+          "key": "learning",
+          "n": 2
+        },
+        {
+          "key": "tools",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "cs-benchmark",
+          "title": "cs-benchmark",
+          "url": "https://github.com/korczis/cs-benchmark",
+          "work": true,
+          "slug": "cs-benchmark",
+          "site": null,
+          "category": "learning",
+          "description": "Simple C# Benchmark",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2014-01-06",
+          "pushed": "2014-01-07",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "C#",
+            ".NET"
+          ]
+        },
+        {
+          "name": "Rocnikac4",
+          "title": "Rocnikac4",
+          "url": "https://github.com/korczis/Rocnikac4",
+          "work": true,
+          "slug": "rocnikac4",
+          "site": null,
+          "category": "learning",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2013-08-28",
+          "pushed": "2013-08-28",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "C#",
+            ".NET"
+          ]
+        },
+        {
+          "name": "reflex",
+          "title": "reflex",
+          "url": "https://github.com/korczis/reflex",
+          "work": true,
+          "slug": "reflex",
+          "site": null,
+          "category": "tools",
+          "description": ".NET Reflection tools",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2012-08-19",
+          "pushed": "2012-08-19",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "C#",
+            ".NET"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "xcode": {
+      "name": "Xcode",
+      "kind": "technology",
+      "counts": {
+        "repos": 3,
+        "primary": 0,
+        "sites": 0,
+        "work": 3,
+        "engagements": 0
+      },
+      "first": 2018,
+      "last": 2021,
+      "categories": [
+        {
+          "key": "knowledge",
+          "n": 2
+        },
+        {
+          "key": "tools",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "ReadingPhoneNumbersInRealTime",
+          "title": "ReadingPhoneNumbersInRealTime",
+          "url": "https://github.com/korczis/ReadingPhoneNumbersInRealTime",
+          "work": true,
+          "slug": "readingphonenumbersinrealtime",
+          "site": null,
+          "category": "knowledge",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2021-08-12",
+          "pushed": "2021-08-12",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Swift",
+            "UIKit",
+            "Xcode"
+          ]
+        },
+        {
+          "name": "MinervaEye",
+          "title": "MinervaEye",
+          "url": "https://github.com/korczis/MinervaEye",
+          "work": true,
+          "slug": "minervaeye",
+          "site": null,
+          "category": "knowledge",
+          "description": "iOS application for book management",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2020-04-26",
+          "pushed": "2021-05-08",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Swift",
+            "UIKit",
+            "Xcode"
+          ]
+        },
+        {
+          "name": "bc-apple",
+          "title": "bc-apple",
+          "url": "https://github.com/korczis/bc-apple",
+          "work": true,
+          "slug": "bc-apple",
+          "site": null,
+          "category": "tools",
+          "description": "BlockCollider Apple Apps",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2018-06-03",
+          "pushed": "2018-06-03",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Swift",
+            "UIKit",
+            "Xcode",
+            "Socket.IO"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "uikit": {
+      "name": "UIKit",
+      "kind": "technology",
+      "counts": {
+        "repos": 3,
+        "primary": 0,
+        "sites": 0,
+        "work": 3,
+        "engagements": 0
+      },
+      "first": 2018,
+      "last": 2021,
+      "categories": [
+        {
+          "key": "knowledge",
+          "n": 2
+        },
+        {
+          "key": "tools",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "ReadingPhoneNumbersInRealTime",
+          "title": "ReadingPhoneNumbersInRealTime",
+          "url": "https://github.com/korczis/ReadingPhoneNumbersInRealTime",
+          "work": true,
+          "slug": "readingphonenumbersinrealtime",
+          "site": null,
+          "category": "knowledge",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2021-08-12",
+          "pushed": "2021-08-12",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Swift",
+            "UIKit",
+            "Xcode"
+          ]
+        },
+        {
+          "name": "MinervaEye",
+          "title": "MinervaEye",
+          "url": "https://github.com/korczis/MinervaEye",
+          "work": true,
+          "slug": "minervaeye",
+          "site": null,
+          "category": "knowledge",
+          "description": "iOS application for book management",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2020-04-26",
+          "pushed": "2021-05-08",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Swift",
+            "UIKit",
+            "Xcode"
+          ]
+        },
+        {
+          "name": "bc-apple",
+          "title": "bc-apple",
+          "url": "https://github.com/korczis/bc-apple",
+          "work": true,
+          "slug": "bc-apple",
+          "site": null,
+          "category": "tools",
+          "description": "BlockCollider Apple Apps",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2018-06-03",
+          "pushed": "2018-06-03",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Swift",
+            "UIKit",
+            "Xcode",
+            "Socket.IO"
           ]
         }
       ],

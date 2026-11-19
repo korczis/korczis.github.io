@@ -3,7 +3,7 @@
 title = "Detekce změn"
 description = "Zachycení, že se zdroj změnil, a posouzení, zda na změně záleží, aby upozornění něco znamenalo."
 template = "term.html"
-weight = 110
+weight = 136
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

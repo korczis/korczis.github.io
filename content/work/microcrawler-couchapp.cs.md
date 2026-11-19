@@ -17,7 +17,7 @@ og_description = "microcrawler-couchapp: Data a GIS, JavaScript, CSS a Shell, 20
 og_image = "og/cs-work-microcrawler-couchapp.png"
 schema = "project"
 keywords = ["microcrawler-couchapp", "Data a GIS", "JavaScript", "CSS", "Shell", "2014", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["javascript", "css", "shell", "ember-js", "handlebars", "bootstrap", "bower", "gis", "repository", "commit", "open-source"]
+terms = ["javascript", "css", "shell", "ember-js", "handlebars", "bootstrap", "grunt", "bower", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

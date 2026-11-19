@@ -3,7 +3,7 @@
 title = "GitLab CI"
 description = "GitLab's built-in pipelines: jobs declared in .gitlab-ci.yml run on every push and merge request."
 template = "term.html"
-weight = 66
+weight = 74
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

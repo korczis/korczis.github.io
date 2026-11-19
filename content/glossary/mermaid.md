@@ -3,7 +3,7 @@
 title = "Mermaid"
 description = "A text language for diagrams (flowcharts, sequences, state machines) rendered from Markdown-like source."
 template = "term.html"
-weight = 22
+weight = 23
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -17,7 +17,7 @@ definition = "A text language for diagrams (flowcharts, sequences, state machine
 aliases = []
 reference = { title = "Mermaid documentation", url = "https://mermaid.js.org/intro/" }
 pages = ["work/comtesse.md"]
-related = ["commit", "just", "meilisearch", "open-source", "repository", "rust", "shell"]
+related = ["commit", "json-schema", "just", "meilisearch", "open-source", "repository", "rust", "shell"]
 og_title = "Mermaid: glossary"
 og_image = "og/glossary-mermaid.png"
 keywords = ["Mermaid", "Programming language", "Glossary", "Tomas Korcak"]

@@ -3,7 +3,7 @@
 title = "Elasticsearch"
 description = "A distributed search and analytics engine over JSON documents, with full-text search and aggregations."
 template = "term.html"
-weight = 59
+weight = 62
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

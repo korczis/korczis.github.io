@@ -14,10 +14,10 @@ seo_title = "Erlang (programovací jazyk)"
 term = "erlang"
 kind = "language"
 definition = "Jazyk a běhové prostředí z telekomunikací, navržené pro systémy, které musí běžet, i když jejich části selhávají."
-aliases = ["OTP"]
+aliases = ["OTP", "ETS"]
 reference = { title = "erlang.org", url = "https://www.erlang.org/" }
-pages = ["projects/learning.cs.md", "work/el-magico-cache.cs.md", "work/hydra.cs.md", "work/microcrawler-elixir.cs.md", "work/rustler-mix.cs.md", "work/simple-geocoder.cs.md", "work/skull-erlang.cs.md"]
-related = ["repository", "commit", "elixir", "open-source", "shell", "makefile", "dockerfile", "eex"]
+pages = ["projects/learning.cs.md", "work/distance-calculator.cs.md", "work/edna.cs.md", "work/el-magico-cache.cs.md", "work/hydra.cs.md", "work/microcrawler-elixir.cs.md", "work/rustler-mix.cs.md", "work/simple-geocoder.cs.md", "work/skull-erlang.cs.md"]
+related = ["repository", "commit", "elixir", "open-source", "shell", "makefile", "dockerfile", "csv"]
 og_title = "Erlang: slovník"
 og_image = "og/cs-glossary-erlang.png"
 keywords = ["Erlang", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
@@ -40,10 +40,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
-Erlang jsem psal v 7 veřejných repozitářích, od roku 2014 do 2026; v 1 z nich je hlavním jazykem.
+Erlang jsem psal v 9 veřejných repozitářích, od roku 2014 do 2026; v 1 z nich je hlavním jazykem.
 
-K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (3), [Inženýrství AI](@/projects/ai.cs.md) (1), [Data a GIS](@/projects/data.cs.md) (1) a [Učení a experimenty](@/projects/learning.cs.md) (1).
+K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (3), [Inženýrství AI](@/projects/ai.cs.md) (2), [Data a GIS](@/projects/data.cs.md) (1) a [Učení a experimenty](@/projects/learning.cs.md) (1).
 
-Naposledy: [sig](@/work/sig.cs.md); [hydra](@/work/hydra.cs.md); [microcrawler-elixir](@/work/microcrawler-elixir.cs.md).
+Naposledy: [sig](@/work/sig.cs.md); [distance-calculator](@/work/distance-calculator.cs.md); [edna](@/work/edna.cs.md).
 
 Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak Erlang používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje Erlang s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

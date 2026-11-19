@@ -14,10 +14,10 @@ seo_title = "Erlang (programming language)"
 term = "erlang"
 kind = "language"
 definition = "A language and runtime from telecoms, designed for systems that must keep running while parts of them fail."
-aliases = ["OTP"]
+aliases = ["OTP", "ETS"]
 reference = { title = "erlang.org", url = "https://www.erlang.org/" }
-pages = ["projects/learning.md", "work/el-magico-cache.md", "work/hydra.md", "work/microcrawler-elixir.md", "work/rustler-mix.md", "work/simple-geocoder.md", "work/skull-erlang.md"]
-related = ["repository", "commit", "elixir", "open-source", "shell", "makefile", "dockerfile", "eex"]
+pages = ["projects/learning.md", "work/distance-calculator.md", "work/edna.md", "work/el-magico-cache.md", "work/hydra.md", "work/microcrawler-elixir.md", "work/rustler-mix.md", "work/simple-geocoder.md", "work/skull-erlang.md"]
+related = ["repository", "commit", "elixir", "open-source", "shell", "makefile", "dockerfile", "csv"]
 og_title = "Erlang: glossary"
 og_image = "og/glossary-erlang.png"
 keywords = ["Erlang", "Programming language", "Glossary", "Tomas Korcak"]
@@ -40,10 +40,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
-I have written Erlang in 7 public repositories, from 2014 to 2026; in 1 of them it is the main language.
+I have written Erlang in 9 public repositories, from 2014 to 2026; in 1 of them it is the main language.
 
-What it was for: [Tools](@/projects/tools.md) (3), [AI engineering](@/projects/ai.md) (1), [Data and GIS](@/projects/data.md) (1) and [Learning and experiments](@/projects/learning.md) (1).
+What it was for: [Tools](@/projects/tools.md) (3), [AI engineering](@/projects/ai.md) (2), [Data and GIS](@/projects/data.md) (1) and [Learning and experiments](@/projects/learning.md) (1).
 
-Most recently: [sig](@/work/sig.md): distributed cognitive framework in Elixir/OTP; [hydra](@/work/hydra.md): Modular wrapper and interface for pool of orchestrated Google Chrome instances; [microcrawler-elixir](@/work/microcrawler-elixir.md): Microcrawler Implemented in Elixir.
+Most recently: [sig](@/work/sig.md): distributed cognitive framework in Elixir/OTP; [distance-calculator](@/work/distance-calculator.md); [edna](@/work/edna.md): Edna je digitální kartářka, astroložka a analytička poháněná AI. Projekt spojuje mystiku, astrologii a psychologii s moderními LLM modely, aby uživatelům přinášel denní horoskopy, výklady karet, životní vhledy a psychologické reflexe.
 
 How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses Erlang: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links Erlang to the repositories and to the other languages and technologies they use together.

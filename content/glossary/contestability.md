@@ -3,7 +3,7 @@
 title = "Contestability"
 description = "The property of a decision that can be questioned: its evidence, assumptions, uncertainty and the person accountable are on record."
 template = "term.html"
-weight = 112
+weight = 138
 
 [taxonomies]
 tags = ["Glossary", "Concept"]

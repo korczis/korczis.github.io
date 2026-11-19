@@ -3,7 +3,7 @@
 title = "MCP"
 description = "Model Context Protocol: otevřený protokol, kterým AI aplikace přistupují k nástrojům a datům."
 template = "term.html"
-weight = 77
+weight = 93
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

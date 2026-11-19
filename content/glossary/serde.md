@@ -3,7 +3,7 @@
 title = "serde"
 description = "Rust's framework for serialising and deserialising data structures to JSON, TOML, YAML and other formats."
 template = "term.html"
-weight = 96
+weight = 115
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "Rust's framework for serialising and deserialising data structures
 aliases = []
 reference = { title = "serde", url = "https://serde.rs/" }
 pages = ["work/maze-rs.md", "work/rocksdb-indexer.md", "work/sli2dli.md", "work/wims.md"]
-related = ["commit", "open-source", "repository", "rust", "clap", "csv", "data-visualisation", "gis"]
+related = ["commit", "open-source", "repository", "rust", "clap", "env-logger", "csv", "data-visualisation"]
 og_title = "serde: glossary"
 og_image = "og/glossary-serde.png"
 keywords = ["serde", "Technology", "Glossary", "Tomas Korcak"]

@@ -3,7 +3,7 @@
 title = "Playwright"
 description = "A browser automation library that drives Chromium, Firefox and WebKit for end-to-end tests and audits."
 template = "term.html"
-weight = 88
+weight = 105
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

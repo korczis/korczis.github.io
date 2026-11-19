@@ -3,7 +3,7 @@
 title = "Ember.js"
 description = "A JavaScript framework for ambitious single-page applications, with conventions for routing, data and templates."
 template = "term.html"
-weight = 60
+weight = 63
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

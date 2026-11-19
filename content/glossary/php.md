@@ -3,7 +3,7 @@
 title = "PHP"
 description = "A scripting language made for the web, run on the server to produce pages."
 template = "term.html"
-weight = 26
+weight = 27
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]

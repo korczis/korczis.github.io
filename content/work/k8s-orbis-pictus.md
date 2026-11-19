@@ -17,7 +17,7 @@ og_description = "k8s-orbis-pictus: Systems and infrastructure, 2019, archive. S
 og_image = "og/work-k8s-orbis-pictus.png"
 schema = "project"
 keywords = ["k8s-orbis-pictus", "Systems and infrastructure", "2019", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["dockerfile", "kubernetes", "ansible", "repository", "commit", "open-source"]
+terms = ["dockerfile", "kubernetes", "ansible", "vagrant", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

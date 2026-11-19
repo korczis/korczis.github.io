@@ -3,7 +3,7 @@
 title = "PHP"
 description = "Skriptovací jazyk určený pro web, který na serveru generuje stránky."
 template = "term.html"
-weight = 26
+weight = 27
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]

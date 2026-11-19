@@ -3,7 +3,7 @@
 title = "Socket.IO"
 description = "Knihovna pro obousměrnou komunikaci mezi prohlížečem a serverem v reálném čase, přes WebSocket se záložními cestami."
 template = "term.html"
-weight = 97
+weight = 116
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

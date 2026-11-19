@@ -3,7 +3,7 @@
 title = "Služba"
 description = "Něco, co vlastník nabízí klientovi: problém, který řeší, princip, na kterém stojí, postup a to, co se odevzdá."
 template = "term.html"
-weight = 143
+weight = 169
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

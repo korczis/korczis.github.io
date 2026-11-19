@@ -3,7 +3,7 @@
 title = "Ruby"
 description = "Dynamický, expresivní jazyk navržený pro radost programátora; mnoho starších nástrojů tady je v Ruby."
 template = "term.html"
-weight = 30
+weight = 31
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -14,7 +14,7 @@ seo_title = "Ruby (programovací jazyk)"
 term = "ruby"
 kind = "language"
 definition = "Dynamický, expresivní jazyk navržený pro radost programátora; mnoho starších nástrojů tady je v Ruby."
-aliases = ["Bundler", "RubyGems"]
+aliases = ["Bundler", "RubyGems", "Rake"]
 reference = { title = "ruby-lang.org", url = "https://www.ruby-lang.org/en/about/" }
 pages = ["about.cs.md", "projects/data.cs.md", "projects/learning.cs.md", "projects/security.cs.md", "projects/systems.cs.md", "projects/tools.cs.md", "work/algorithms-ruby.cs.md", "work/apollo-crawler.cs.md", "work/apollon.cs.md", "work/ares.cs.md", "work/cluster.cs.md", "work/codecademy.cs.md", "work/csv2psql.cs.md", "work/docker-dstk.cs.md", "work/docker-gooddata-ruby.cs.md", "work/esri.cs.md", "work/gdc-dumpator.cs.md", "work/gooddata-connectors-metadata.cs.md", "work/gooddata-lcm-tool.cs.md", "work/gooddata-rails-app.cs.md", "work/gooddata-ruby-examples.cs.md", "work/grache-test.cs.md", "work/grache.cs.md", "work/jetel.cs.md", "work/json2csv.cs.md", "work/kpmap-ruby.cs.md", "work/sandbox.cs.md", "work/skull-ruby.cs.md", "work/skull.cs.md", "work/skype-adapter-client.cs.md", "work/zeman-ucet.cs.md", "work/zlown.cs.md"]
 related = ["repository", "open-source", "commit", "shell", "gis", "postgresql", "javascript", "travis-ci"]

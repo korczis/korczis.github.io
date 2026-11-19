@@ -3,7 +3,7 @@
 title = "JSON-LD"
 description = "Linked data in JSON embedded in a page, telling search engines and machines what the page is about (schema.org)."
 template = "term.html"
-weight = 126
+weight = 152
 
 [taxonomies]
 tags = ["Glossary", "Concept"]

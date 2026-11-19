@@ -17,7 +17,7 @@ og_description = "cs-benchmark: Učení a experimenty, C#, 2014, archiv. Zdrojov
 og_image = "og/cs-work-cs-benchmark.png"
 schema = "project"
 keywords = ["cs-benchmark", "Učení a experimenty", "C#", "2014", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["csharp", "repository", "commit", "open-source"]
+terms = ["csharp", "dotnet", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

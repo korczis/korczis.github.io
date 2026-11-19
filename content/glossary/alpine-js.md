@@ -3,7 +3,7 @@
 title = "Alpine.js"
 description = "A small JavaScript framework that adds behaviour to HTML in its own attributes; here the filters, drawers and palette."
 template = "term.html"
-weight = 41
+weight = 43
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

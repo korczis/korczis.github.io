@@ -3,7 +3,7 @@
 title = "Java"
 description = "Objektově orientovaný jazyk nad Java Virtual Machine, dlouho výchozí volba podnikového softwaru."
 template = "term.html"
-weight = 16
+weight = 17
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]

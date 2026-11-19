@@ -3,7 +3,7 @@
 title = "PostgreSQL"
 description = "Open-source relační databáze známá svou korektností a rozšířeními."
 template = "term.html"
-weight = 90
+weight = 108
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

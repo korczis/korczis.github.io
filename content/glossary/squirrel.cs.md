@@ -3,7 +3,7 @@
 title = "Squirrel"
 description = "Malý vložitelný skriptovací jazyk; OpenTTD v něm spouští své AI hráče a herní skripty."
 template = "term.html"
-weight = 35
+weight = 36
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]

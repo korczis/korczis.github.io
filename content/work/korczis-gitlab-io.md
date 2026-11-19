@@ -17,7 +17,7 @@ og_description = "korczis.gitlab.io: Web in CSS, Elixir and SCSS, 2025, active i
 og_image = "og/work-korczis-gitlab-io.png"
 schema = "project"
 keywords = ["korczis.gitlab.io", "Web", "CSS", "Elixir", "SCSS", "2025", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["css", "elixir", "scss", "html", "eex", "zola", "tailwind-css", "phoenix", "rust", "rustler", "gitlab-ci", "static-site-generator", "repository", "commit", "open-source"]
+terms = ["css", "elixir", "scss", "html", "eex", "zola", "tailwind-css", "phoenix", "sqlite", "rust", "rustler", "gitlab-ci", "fly-io", "static-site-generator", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

@@ -3,7 +3,7 @@
 title = "Regulatorní shoda"
 description = "Plnění povinností, které ukládá regulace, a schopnost to doložit důkazy, například podle NIS2 pro kybernetickou bezpečnost."
 template = "term.html"
-weight = 138
+weight = 164
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

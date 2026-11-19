@@ -3,7 +3,7 @@
 title = "MongoDB"
 description = "A document database that stores records as JSON-like documents without a fixed schema."
 template = "term.html"
-weight = 80
+weight = 96
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

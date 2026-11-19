@@ -3,7 +3,7 @@
 title = "HTML"
 description = "The markup language of web pages: the structure that styles and scripts work on."
 template = "term.html"
-weight = 15
+weight = 16
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]

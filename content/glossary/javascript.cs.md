@@ -3,7 +3,7 @@
 title = "JavaScript"
 description = "Programovací jazyk webového prohlížeče, na serverech běží přes Node.js. Každá interaktivní část tohoto webu je v JavaScriptu."
 template = "term.html"
-weight = 17
+weight = 18
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]

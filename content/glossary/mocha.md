@@ -3,7 +3,7 @@
 title = "Mocha"
 description = "A JavaScript test framework for Node.js and the browser, with describe/it suites and asynchronous tests."
 template = "term.html"
-weight = 79
+weight = 95
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

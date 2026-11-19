@@ -3,7 +3,7 @@
 title = "Case study"
 description = "An account of one piece of work: the context, the role, what was delivered, its scale and the evidence, with the limits of what can be published."
 template = "term.html"
-weight = 108
+weight = 134
 
 [taxonomies]
 tags = ["Glossary", "Concept"]

@@ -17,7 +17,7 @@ og_description = "sig: AI engineering in Elixir, HTML+EEX and Shell, 2025–2026
 og_image = "og/work-sig.png"
 schema = "project"
 keywords = ["sig", "AI engineering", "Elixir", "HTML+EEX", "Shell", "AI", "Knowledge representation and reasoning", "LLMs", "cognitive-science", "multi-agent-systems", "2025–2026", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["elixir", "eex", "shell", "typescript", "just", "phoenix", "ecto", "postgresql", "meilisearch", "dockerfile", "ai-agent", "repository", "commit", "open-source"]
+terms = ["elixir", "eex", "shell", "typescript", "just", "phoenix", "ecto", "postgresql", "meilisearch", "dockerfile", "fly-io", "ai-agent", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

@@ -3,7 +3,7 @@
 title = "clap"
 description = "Parser argumentů příkazové řádky v Rustu: podpříkazy, přepínače, validace a generovaná nápověda z typované definice."
 template = "term.html"
-weight = 50
+weight = 53
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -17,7 +17,7 @@ definition = "Parser argumentů příkazové řádky v Rustu: podpříkazy, pře
 aliases = []
 reference = { title = "clap documentation", url = "https://docs.rs/clap/" }
 pages = ["skills/change-monitoring.cs.md", "skills/market-intelligence.cs.md", "work/charon.cs.md", "work/graph-flow.cs.md", "work/maze-rs.cs.md", "work/sli2dli.cs.md", "work/streamflow.cs.md", "work/wims.cs.md"]
-related = ["commit", "open-source", "repository", "rust", "makefile", "csv", "javascript", "serde"]
+related = ["commit", "open-source", "repository", "rust", "csv", "javascript", "makefile", "serde"]
 og_title = "clap: slovník"
 og_image = "og/cs-glossary-clap.png"
 keywords = ["clap", "Technologie", "Slovník", "Tomáš Korčák"]

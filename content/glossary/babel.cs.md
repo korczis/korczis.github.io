@@ -3,7 +3,7 @@
 title = "Babel"
 description = "Kompilátor JavaScriptu, který přepisuje moderní syntaxi do kódu, kterému rozumějí starší prohlížeče a běhová prostředí."
 template = "term.html"
-weight = 44
+weight = 47
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

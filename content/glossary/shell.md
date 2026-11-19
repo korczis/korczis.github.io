@@ -3,7 +3,7 @@
 title = "Shell"
 description = "Scripts for the Unix command line (bash, zsh), the glue that installs, builds and deploys."
 template = "term.html"
-weight = 33
+weight = 34
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]

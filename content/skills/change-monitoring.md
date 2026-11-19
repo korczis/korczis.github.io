@@ -13,7 +13,7 @@ skill = "change-monitoring"
 og_title = "Continuous monitoring: skills"
 og_image = "og/skill-change-monitoring.png"
 schema = "skill"
-terms = ["skill", "change-detection", "bootstrap", "bower", "ember-js", "handlebars", "javascript", "clap", "css", "csv", "express", "makefile"]
+terms = ["skill", "change-detection", "bootstrap", "bower", "ember-js", "handlebars", "javascript", "clap", "css", "csv", "express", "grunt"]
 keywords = ["Continuous monitoring", "Digital investigation and OSINT dossiers", "Reputation intelligence and adverse-media monitoring", "Insolvency, litigation and register change monitoring", "External attack surface and cyber-exposure assessment", "Tomas Korcak"]
 
 [[extra.viz]]

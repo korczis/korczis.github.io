@@ -17,7 +17,7 @@ og_description = "el-magico-cache: Nástroje, Elixir, Shell a Makefile, 2023, ak
 og_image = "og/cs-work-el-magico-cache.png"
 schema = "project"
 keywords = ["el-magico-cache", "Nástroje", "Elixir", "Shell", "Makefile", "2023", "GitHub", "Tomáš Korčák", "korczis"]
-terms = ["elixir", "shell", "makefile", "nix", "html", "dockerfile", "erlang", "cowboy", "github-actions", "open-source", "repository", "commit"]
+terms = ["elixir", "shell", "makefile", "nix", "html", "dockerfile", "erlang", "plug", "cowboy", "fly-io", "github-actions", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

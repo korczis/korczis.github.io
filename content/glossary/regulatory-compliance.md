@@ -3,7 +3,7 @@
 title = "Regulatory compliance"
 description = "Meeting the obligations a regulation sets, and being able to show it with evidence, for example under NIS2 for cybersecurity."
 template = "term.html"
-weight = 138
+weight = 164
 
 [taxonomies]
 tags = ["Glossary", "Concept"]

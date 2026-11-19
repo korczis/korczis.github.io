@@ -3,7 +3,7 @@
 title = "Reputační riziko"
 description = "Riziko, že to, co se o organizaci nebo osobě říká, pravdivé či ne, ji stojí důvěru, zákazníky nebo hodnotu; sleduje se přes negativní zprávy."
 template = "term.html"
-weight = 140
+weight = 166
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

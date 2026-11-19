@@ -206,7 +206,7 @@
         {
           "id": "kubernetes",
           "name": "Kubernetes",
-          "n": 3
+          "n": 2
         },
         {
           "id": "majordomus",
@@ -423,11 +423,6 @@
           "n": 5
         },
         {
-          "id": "kubernetes",
-          "name": "Kubernetes",
-          "n": 5
-        },
-        {
           "id": "react",
           "name": "React",
           "n": 5
@@ -436,6 +431,11 @@
           "id": "tailwind-css",
           "name": "Tailwind CSS",
           "n": 5
+        },
+        {
+          "id": "kubernetes",
+          "name": "Kubernetes",
+          "n": 4
         },
         {
           "id": "majordomus",
@@ -448,8 +448,8 @@
           "n": 4
         },
         {
-          "id": "pydantic",
-          "name": "Pydantic",
+          "id": "shell",
+          "name": "Shell",
           "n": 4
         }
       ]
@@ -1563,7 +1563,7 @@
         {
           "id": "postgresql",
           "name": "PostgreSQL",
-          "n": 5,
+          "n": 4,
           "declared": true
         }
       ],
@@ -2318,14 +2318,14 @@
           "n": 11
         },
         {
-          "id": "postgresql",
-          "name": "PostgreSQL",
-          "n": 11
-        },
-        {
           "id": "python",
           "name": "Python",
           "n": 11
+        },
+        {
+          "id": "postgresql",
+          "name": "PostgreSQL",
+          "n": 10
         },
         {
           "id": "tailwind-css",
@@ -2677,13 +2677,13 @@
           "n": 7
         },
         {
-          "id": "postgresql",
-          "name": "PostgreSQL",
-          "n": 7
-        },
-        {
           "id": "dockerfile",
           "name": "Dockerfile",
+          "n": 6
+        },
+        {
+          "id": "postgresql",
+          "name": "PostgreSQL",
           "n": 6
         },
         {
@@ -3301,13 +3301,13 @@
           "n": 1
         },
         {
-          "id": "just",
-          "name": "Just",
+          "id": "json-schema",
+          "name": "JSON Schema",
           "n": 1
         },
         {
-          "id": "kubernetes",
-          "name": "Kubernetes",
+          "id": "just",
+          "name": "Just",
           "n": 1
         }
       ]
@@ -3741,6 +3741,11 @@
           "n": 1
         },
         {
+          "id": "dotnet",
+          "name": ".NET",
+          "n": 1
+        },
+        {
           "id": "fastapi",
           "name": "FastAPI",
           "n": 1
@@ -3778,11 +3783,6 @@
         {
           "id": "postgresql",
           "name": "PostgreSQL",
-          "n": 1
-        },
-        {
-          "id": "pydantic",
-          "name": "Pydantic",
           "n": 1
         }
       ]
@@ -5402,6 +5402,11 @@
           "n": 1
         },
         {
+          "id": "git",
+          "name": "Git",
+          "n": 1
+        },
+        {
           "id": "kubernetes",
           "name": "Kubernetes",
           "n": 1
@@ -5429,11 +5434,6 @@
         {
           "id": "playwright",
           "name": "Playwright",
-          "n": 1
-        },
-        {
-          "id": "postgresql",
-          "name": "PostgreSQL",
           "n": 1
         }
       ]
@@ -5751,8 +5751,18 @@
           "n": 1
         },
         {
+          "id": "libp2p",
+          "name": "libp2p",
+          "n": 1
+        },
+        {
           "id": "nodejs",
           "name": "Node.js",
+          "n": 1
+        },
+        {
+          "id": "protobuf",
+          "name": "Protocol Buffers",
           "n": 1
         },
         {
@@ -5820,6 +5830,11 @@
         {
           "id": "html",
           "name": "HTML",
+          "n": 1
+        },
+        {
+          "id": "jq",
+          "name": "jq",
           "n": 1
         },
         {
@@ -5931,6 +5946,16 @@
         {
           "id": "express",
           "name": "Express",
+          "n": 1
+        },
+        {
+          "id": "grunt",
+          "name": "Grunt",
+          "n": 1
+        },
+        {
+          "id": "gulp",
+          "name": "gulp",
           "n": 1
         },
         {
