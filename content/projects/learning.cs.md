@@ -14,7 +14,7 @@ category = "learning"
 og_title = "Učení a experimenty: 21 repozitářů."
 og_image = "og/cs-category-learning.png"
 schema = "collection"
-terms = ["elixir", "ruby", "csharp", "cpp", "javascript", "shell", "c", "cmake", "erlang", "haskell", "java", "makefile", "rust", "repository"]
+terms = ["elixir", "csharp", "cpp", "javascript", "ruby", "shell", "c", "cmake", "erlang", "haskell", "java", "rust", "repository"]
 keywords = ["Učení a experimenty", "happ", "rustler-test", "Test-Elixir", "skull-elixir", "skull-rust", "node-proxy-upload", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -28,6 +28,6 @@ tone = "night"
 +++
 Výukové materiály, katy a experimenty napříč mnoha jazyky: náčrty, které přišly před projekty.
 
-Kategorie má 21 repozitářů; nejčastějšími jazyky jsou [Elixir](@/glossary/elixir.cs.md), [Ruby](@/glossary/ruby.cs.md), [C#](@/glossary/csharp.cs.md), [C++](@/glossary/cpp.cs.md) a [JavaScript](@/glossary/javascript.cs.md).
+Kategorie má 21 repozitářů; nejčastějšími jazyky jsou [Elixir](@/glossary/elixir.cs.md), [C#](@/glossary/csharp.cs.md), [C++](@/glossary/cpp.cs.md), [JavaScript](@/glossary/javascript.cs.md) a [Ruby](@/glossary/ruby.cs.md).
 
 *Jak kategorie vznikají:* nikdo je ručně nepřiřazuje. Každé klíčové slovo pravidel všech kategorií se poměří s názvem, tématy a popisem [repozitáře](@/glossary/repository.cs.md), nejvíc váží název, a vyhraje nejlepší skóre; když nesedí žádné slovo, rozhodne hlavní jazyk. Forky a [mirrory](@/glossary/mirror.cs.md) se nepočítají za vlastní práci.

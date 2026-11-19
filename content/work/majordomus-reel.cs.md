@@ -3,7 +3,7 @@
 title = "Majordomus reel"
 description = "Hlas, snímky, hudba i zvuk, vše generované a verzované jako software."
 template = "work.html"
-weight = 6
+weight = 7
 updated = "2026-11-18T06:51:33Z"
 
 [taxonomies]
@@ -36,6 +36,6 @@ Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https
 
 Zdrojový kód: [GitHub](https://github.com/korczis/majordomus-reel).
 
-Související práce v kategorii [Média a umění](@/projects/media.cs.md): [Sonic Playground](@/work/sonic-playground.cs.md) (2026), [Catharsis as a Service](@/work/catharsis-as-a-service.cs.md) (2026), [openttd-prismatic-bridge](@/work/openttd-prismatic-bridge.cs.md) (2026) a [dj-schnapps](@/work/dj-schnapps.cs.md) (2019).
+Související práce v kategorii [Média a umění](@/projects/media.cs.md): [Catharsis as a Service](@/work/catharsis-as-a-service.cs.md) (2026), [Sonic Playground](@/work/sonic-playground.cs.md) (2026), [openttd-prismatic-bridge](@/work/openttd-prismatic-bridge.cs.md) (2026) a [dj-schnapps](@/work/dj-schnapps.cs.md) (2019).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 30 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

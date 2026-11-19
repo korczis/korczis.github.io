@@ -34,6 +34,6 @@ The [repository](@/glossary/repository.md) was created on 26 October 2019; its l
 
 Its source is on [GitHub](https://github.com/korczis/dj-schnapps) and [GitLab](https://gitlab.com/korczis/dj-schnapps).
 
-Related work in [Media and art](@/projects/media.md): [Catharsis as a Service](@/work/catharsis-as-a-service.md) (2026), [Sonic Playground](@/work/sonic-playground.md) (2026), [Majordomus reel](@/work/majordomus-reel.md) (2026) and [openttd-prismatic-bridge](@/work/openttd-prismatic-bridge.md) (2026).
+Related work in [Media and art](@/projects/media.md): [Catharsis as a Service](@/work/catharsis-as-a-service.md) (2026), [Majordomus reel](@/work/majordomus-reel.md) (2026), [Sonic Playground](@/work/sonic-playground.md) (2026) and [openttd-prismatic-bridge](@/work/openttd-prismatic-bridge.md) (2026).
 
 *How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 30 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

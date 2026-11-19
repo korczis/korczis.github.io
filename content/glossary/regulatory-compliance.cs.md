@@ -17,7 +17,7 @@ definition = "Plnění povinností, které ukládá regulace, a schopnost to dol
 aliases = []
 reference = { title = "EU NIS2 Directive", url = "https://digital-strategy.ec.europa.eu/en/policies/nis2-directive" }
 pages = ["services/_index.cs.md", "services/attack-surface.cs.md", "services/compliance-screening.cs.md", "skills/_index.cs.md", "skills/compliance-mapping.cs.md"]
-related = ["alpine-js", "dockerfile", "html", "javascript", "risk-assessment", "service", "attack-surface", "beneficial-ownership"]
+related = ["alpine-js", "html", "javascript", "dockerfile", "flowbite-pro", "playwright", "risk-assessment", "service"]
 og_title = "Regulatorní shoda: slovník"
 og_image = "og/cs-glossary-regulatory-compliance.png"
 keywords = ["Regulatorní shoda", "Regulatory compliance", "Koncept", "Slovník", "Tomáš Korčák"]

@@ -17,7 +17,7 @@ definition = "A language and runtime from telecoms, designed for systems that mu
 aliases = ["OTP", "ETS"]
 reference = { title = "erlang.org", url = "https://www.erlang.org/" }
 pages = ["projects/learning.md", "work/distance-calculator.md", "work/edna.md", "work/el-magico-cache.md", "work/hydra.md", "work/microcrawler-elixir.md", "work/rustler-mix.md", "work/simple-geocoder.md", "work/skull-erlang.md"]
-related = ["repository", "commit", "elixir", "open-source", "shell", "makefile", "dockerfile", "csv"]
+related = ["repository", "commit", "elixir", "open-source", "shell", "dockerfile", "makefile", "csv"]
 og_title = "Erlang: glossary"
 og_image = "og/glossary-erlang.png"
 keywords = ["Erlang", "Programming language", "Glossary", "Tomas Korcak"]

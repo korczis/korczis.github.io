@@ -17,7 +17,7 @@ definition = "Framework JavaScriptu pro rozsáhlé jednostránkové aplikace s k
 aliases = ["Ember"]
 reference = { title = "Ember.js Guides", url = "https://guides.emberjs.com/" }
 pages = ["services/attack-surface.cs.md", "skills/change-monitoring.cs.md", "work/apollocrawler-com.cs.md", "work/craftsmen.cs.md", "work/lethe-it.cs.md", "work/microcrawler-couchapp.cs.md", "work/microscratch.cs.md"]
-related = ["javascript", "bootstrap", "css", "handlebars", "commit", "express", "nodejs", "open-source"]
+related = ["css", "javascript", "bootstrap", "commit", "express", "handlebars", "nodejs", "open-source"]
 og_title = "Ember.js: slovník"
 og_image = "og/cs-glossary-ember-js.png"
 keywords = ["Ember.js", "Technologie", "Slovník", "Tomáš Korčák"]

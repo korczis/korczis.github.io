@@ -16,8 +16,8 @@ kind = "technology"
 definition = "A static site generator in one Rust binary: Markdown and templates in, a whole multilingual website out."
 aliases = []
 reference = { title = "getzola.org", url = "https://www.getzola.org/documentation/getting-started/overview/" }
-pages = ["_index.md", "projects/ai.md", "projects/knowledge.md", "services/ai-engineering-governance.md", "services/interactive-data-products.md", "skills/policy-as-code.md", "stack.md", "work/astronomists.md", "work/catharsis-as-a-service.md", "work/kompendium-epistemicke-anihilace.md", "work/korczis-github-io.md", "work/korczis-gitlab-io.md", "work/prismatic-blog.md", "work/prismatic-majordomus.md", "work/sonic-playground.md", "work/u-tygra.md", "work/vomaste-cz.md"]
-related = ["repository", "flowbite-pro", "github-pages", "html", "tailwind-css", "commit", "javascript", "open-source"]
+pages = ["_index.md", "projects/ai.md", "projects/knowledge.md", "services/interactive-data-products.md", "skills/policy-as-code.md", "stack.md", "work/astronomists.md", "work/catharsis-as-a-service.md", "work/kompendium-epistemicke-anihilace.md", "work/korczis-github-io.md", "work/korczis-gitlab-io.md", "work/prismatic-blog.md", "work/prismatic-majordomus.md", "work/sonic-playground.md", "work/u-tygra.md", "work/vomaste-cz.md"]
+related = ["repository", "commit", "flowbite-pro", "github-pages", "html", "tailwind-css", "javascript", "open-source"]
 og_title = "Zola: glossary"
 og_image = "og/glossary-zola.png"
 keywords = ["Zola", "Technology", "Glossary", "Tomas Korcak"]

@@ -36,6 +36,6 @@ It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://k
 
 Its source is on [GitHub](https://github.com/korczis/catharsis-as-a-service).
 
-Related work in [Media and art](@/projects/media.md): [Sonic Playground](@/work/sonic-playground.md) (2026), [Majordomus reel](@/work/majordomus-reel.md) (2026), [openttd-prismatic-bridge](@/work/openttd-prismatic-bridge.md) (2026) and [dj-schnapps](@/work/dj-schnapps.md) (2019).
+Related work in [Media and art](@/projects/media.md): [Majordomus reel](@/work/majordomus-reel.md) (2026), [Sonic Playground](@/work/sonic-playground.md) (2026), [openttd-prismatic-bridge](@/work/openttd-prismatic-bridge.md) (2026) and [dj-schnapps](@/work/dj-schnapps.md) (2019).
 
 *How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 27 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

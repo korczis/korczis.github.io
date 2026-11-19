@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Generátor statických webů v jedné binárce v Rustu: dovnitř Markdown a šablony, ven celý vícejazyčný web."
 aliases = []
 reference = { title = "getzola.org", url = "https://www.getzola.org/documentation/getting-started/overview/" }
-pages = ["_index.cs.md", "projects/ai.cs.md", "projects/knowledge.cs.md", "services/ai-engineering-governance.cs.md", "services/interactive-data-products.cs.md", "skills/policy-as-code.cs.md", "stack.cs.md", "work/astronomists.cs.md", "work/catharsis-as-a-service.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/korczis-github-io.cs.md", "work/korczis-gitlab-io.cs.md", "work/prismatic-blog.cs.md", "work/prismatic-majordomus.cs.md", "work/sonic-playground.cs.md", "work/u-tygra.cs.md", "work/vomaste-cz.cs.md"]
-related = ["repository", "flowbite-pro", "github-pages", "html", "tailwind-css", "commit", "javascript", "open-source"]
+pages = ["_index.cs.md", "projects/ai.cs.md", "projects/knowledge.cs.md", "services/interactive-data-products.cs.md", "skills/policy-as-code.cs.md", "stack.cs.md", "work/astronomists.cs.md", "work/catharsis-as-a-service.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/korczis-github-io.cs.md", "work/korczis-gitlab-io.cs.md", "work/prismatic-blog.cs.md", "work/prismatic-majordomus.cs.md", "work/sonic-playground.cs.md", "work/u-tygra.cs.md", "work/vomaste-cz.cs.md"]
+related = ["repository", "commit", "flowbite-pro", "github-pages", "html", "tailwind-css", "javascript", "open-source"]
 og_title = "Zola: slovník"
 og_image = "og/cs-glossary-zola.png"
 keywords = ["Zola", "Technologie", "Slovník", "Tomáš Korčák"]

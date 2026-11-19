@@ -14,7 +14,7 @@ icon = "search"
 og_title = "Digitální vyšetřování a OSINT dossier"
 og_image = "og/cs-service-digital-investigation.png"
 schema = "service"
-terms = ["service", "elixir", "broadway", "playwright", "postgresql", "meilisearch", "cytoscape-js", "osint", "public-registry", "record-linkage", "beneficial-ownership", "attack-surface", "digital-forensics", "knowledge-graph", "web-scraping", "change-detection", "javascript", "nodejs", "html", "python", "dockerfile", "flowbite-pro", "claude-api", "shell", "tailwind-css", "cheerio"]
+terms = ["service", "elixir", "broadway", "playwright", "postgresql", "meilisearch", "cytoscape-js", "osint", "public-registry", "record-linkage", "beneficial-ownership", "attack-surface", "digital-forensics", "knowledge-graph", "web-scraping", "change-detection", "javascript", "html", "nodejs", "python", "flowbite-pro", "dockerfile", "shell", "tailwind-css", "claude-api", "cheerio"]
 keywords = ["Digitální vyšetřování a OSINT dossier", "OSINT šetření", "Rejstříkové zpravodajství", "Ztotožnění subjektů", "Analýza vlastnictví a vazeb", "Infrastrukturní OSINT", "Forenzní analýza webu a médií", "Znalostní graf", "Webová automatizace a crawling", "Průběžný monitoring", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -34,9 +34,9 @@ Mnoho nezávislých sběračů (rejstříky, web, síťová infrastruktura, soci
 
 Je postavená na: [Elixir](@/glossary/elixir.cs.md), [Broadway](@/glossary/broadway.cs.md), [Playwright](@/glossary/playwright.cs.md), [PostgreSQL](@/glossary/postgresql.cs.md), [Meilisearch](@/glossary/meilisearch.cs.md) a [Cytoscape.js](@/glossary/cytoscape-js.cs.md).
 
-Technologie za ní, změřené z práce, která tyto dovednosti dokládá: [JavaScript](@/glossary/javascript.cs.md), [Node.js](@/glossary/nodejs.cs.md), [HTML](@/glossary/html.cs.md), [Python](@/glossary/python.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md), [Claude API](@/glossary/claude-api.cs.md) a [Shell](@/glossary/shell.cs.md).
+Technologie za ní, změřené z práce, která tyto dovednosti dokládá: [JavaScript](@/glossary/javascript.cs.md), [HTML](@/glossary/html.cs.md), [Node.js](@/glossary/nodejs.cs.md), [Python](@/glossary/python.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md), [Shell](@/glossary/shell.cs.md) a [Tailwind CSS](@/glossary/tailwind-css.cs.md).
 
-Její dovednosti dokládá 22 veřejných repozitářů (22 vlastními slovy).
+Její dovednosti dokládá 23 veřejných repozitářů (23 vlastními slovy).
 
 Byla dodána v klientské práci pod dohodami o mlčenlivosti, v odvětví: Developer nemovitostí a Finanční a investiční skupina, v roli: Architekt, Vedoucí inženýr, Inženýr AI, Datový inženýr, Analytik šetření a Poradce; případy užití popisují princip a záměr, nikdy klienta, osobu, datum ani číslo.
 

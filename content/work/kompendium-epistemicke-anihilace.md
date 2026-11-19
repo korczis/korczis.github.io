@@ -3,8 +3,8 @@
 title = "Kompendium"
 description = "A defensive taxonomy of epistemic and cognitive manipulation (Czech)."
 template = "work.html"
-weight = 3
-updated = "2026-11-19T04:33:24Z"
+weight = 4
+updated = "2026-11-19T11:05:50Z"
 
 [taxonomies]
 tags = ["Knowledge", "Elixir", "JavaScript", "Python"]
@@ -28,9 +28,9 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**Kompendium** is a project in [Knowledge](@/projects/knowledge.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (32 %), with [JavaScript](@/glossary/javascript.md), [Python](@/glossary/python.md) and [HTML](@/glossary/html.md).
+**Kompendium** is a project in [Knowledge](@/projects/knowledge.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (32.1 %), with [JavaScript](@/glossary/javascript.md), [Python](@/glossary/python.md) and [HTML](@/glossary/html.md).
 
-The [repository](@/glossary/repository.md) was created on 9 November 2026; its latest [commit](@/glossary/commit.md) is from 19 November 2026. It reads “Merge feature/remove-dead-scripts (43998822) into train-5”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created on 9 November 2026; its latest [commit](@/glossary/commit.md) is from 19 November 2026. It reads “Merge feature/coverage-containlabel-rules (1991002c) into train-6”. That places it among the projects active in the last 12 months.
 
 It is built with [Zola](@/glossary/zola.md), [Cytoscape.js](@/glossary/cytoscape-js.md), [Apache ECharts](@/glossary/apache-echarts.md), [Alpine.js](@/glossary/alpine-js.md) and [Flowbite Pro](@/glossary/flowbite-pro.md).
 

@@ -16,8 +16,8 @@ kind = "technology"
 definition = "A creative-coding library descended from Processing, for drawing and simulation in the browser."
 aliases = ["p5js"]
 reference = { title = "p5js.org", url = "https://p5js.org/" }
-pages = ["projects/science.md", "services/interactive-data-products.md", "stack.md", "work/algoglyph.md", "work/kompendium-epistemicke-anihilace.md", "work/korczis-github-io.md", "work/majordomus-reel.md", "work/oscilla.md"]
-related = ["flowbite-pro", "apache-echarts", "javascript", "tailwind-css", "alpine-js", "github-pages", "html", "repository"]
+pages = ["projects/science.md", "services/interactive-data-products.md", "skills/compliance-mapping.md", "stack.md", "work/algoglyph.md", "work/kompendium-epistemicke-anihilace.md", "work/korczis-github-io.md", "work/majordomus-reel.md", "work/oscilla.md"]
+related = ["flowbite-pro", "javascript", "tailwind-css", "alpine-js", "apache-echarts", "github-pages", "html", "repository"]
 og_title = "p5.js: glossary"
 og_image = "og/glossary-p5-js.png"
 keywords = ["p5.js", "Technology", "Glossary", "Tomas Korcak"]

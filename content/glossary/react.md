@@ -16,8 +16,8 @@ kind = "technology"
 definition = "A JavaScript library for user interfaces built from components that re-render from state."
 aliases = ["React.js"]
 reference = { title = "react.dev", url = "https://react.dev/learn" }
-pages = ["services/due-diligence.md", "work/gooddata-graphql.md", "work/gooddata-proxy.md", "work/maze.md", "work/microscratch-react.md", "_index.md"]
-related = ["commit", "html", "javascript", "open-source", "repository", "elixir", "phoenix", "css"]
+pages = ["work/gooddata-graphql.md", "work/gooddata-proxy.md", "work/maze.md", "work/microscratch-react.md", "_index.md"]
+related = ["commit", "open-source", "repository", "html", "javascript", "css", "elixir", "gis"]
 og_title = "React: glossary"
 og_image = "og/glossary-react.png"
 keywords = ["React", "Technology", "Glossary", "Tomas Korcak"]

@@ -7,17 +7,17 @@ weight = 179
 updated = "2014-08-03T04:09:35Z"
 
 [taxonomies]
-tags = ["Learning and experiments", "Makefile"]
+tags = ["Learning and experiments"]
 
 [extra]
 repo = "skull-nodejs"
 seo_title = "skull-nodejs: Node.js Skull, 2014 · Tomas Korcak"
 og_title = "skull-nodejs: Node.js Skull (2014)"
-og_description = "skull-nodejs: Learning and experiments in Makefile, 2014, archive. Source on GitHub and GitLab."
+og_description = "skull-nodejs: Learning and experiments, 2014, archive. Source on GitHub and GitLab."
 og_image = "og/work-skull-nodejs.png"
 schema = "project"
-keywords = ["skull-nodejs", "Learning and experiments", "Makefile", "2014", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["makefile", "nodejs", "travis-ci", "repository", "commit", "open-source"]
+keywords = ["skull-nodejs", "Learning and experiments", "2014", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
+terms = ["nodejs", "makefile", "travis-ci", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,12 +28,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**skull-nodejs** is a project in [Learning and experiments](@/projects/learning.md). Its code is written mainly in [Makefile](@/glossary/makefile.md).
+**skull-nodejs** is a project in [Learning and experiments](@/projects/learning.md).
 
 The [repository](@/glossary/repository.md) was created on 22 July 2014; its latest [commit](@/glossary/commit.md) is from 3 August 2014. It reads “Update README.md”. With no commit in the last 48 months it is listed as archive: work from 2014, kept for the record and dated as measured.
 
 Its source is on [GitHub](https://github.com/korczis/skull-nodejs) and [GitLab](https://gitlab.com/korczis/skull-nodejs).
 
-Related work in [Learning and experiments](@/projects/learning.md): [skull-cpp](@/work/skull-cpp.md) (2014–2015), [skull-ruby](@/work/skull-ruby.md) (2014), [skull-haskell](@/work/skull-haskell.md) (2014) and [skull-erlang](@/work/skull-erlang.md) (2014).
+Related work in [Learning and experiments](@/projects/learning.md): [skull-ruby](@/work/skull-ruby.md) (2014), [skull-haskell](@/work/skull-haskell.md) (2014), [skull-erlang](@/work/skull-erlang.md) (2014) and [skull-java](@/work/skull-java.md) (2014).
 
 *How to read this page:* the facts beside this article are measured from GitHub and GitLab. The pulse draws the latest 5 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

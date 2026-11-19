@@ -16,8 +16,8 @@ kind = "technology"
 definition = "A logic-less templating language that fills HTML templates from data with {{expressions}}."
 aliases = []
 reference = { title = "Handlebars", url = "https://handlebarsjs.com/" }
-pages = ["services/attack-surface.md", "skills/change-monitoring.md", "work/apollocrawler-com.md", "work/craftsmen.md", "work/microcrawler-couchapp.md", "work/microscratch.md"]
-related = ["ember-js", "javascript", "bootstrap", "css", "bower", "commit", "express", "grunt"]
+pages = ["skills/change-monitoring.md", "work/apollocrawler-com.md", "work/craftsmen.md", "work/microcrawler-couchapp.md", "work/microscratch.md"]
+related = ["css", "ember-js", "javascript", "bootstrap", "commit", "express", "grunt", "open-source"]
 og_title = "Handlebars: glossary"
 og_image = "og/glossary-handlebars.png"
 keywords = ["Handlebars", "Technology", "Glossary", "Tomas Korcak"]

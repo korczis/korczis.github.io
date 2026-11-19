@@ -40,7 +40,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-I have written Ruby in 26 public repositories, from 2012 to 2017; in 20 of them it is the main language.
+I have written Ruby in 26 public repositories, from 2012 to 2017; in 19 of them it is the main language.
 
 What it was for: [Data and GIS](@/projects/data.md) (9), [Tools](@/projects/tools.md) (7), [Learning and experiments](@/projects/learning.md) (4) and [Systems and infrastructure](@/projects/systems.md) (3).
 

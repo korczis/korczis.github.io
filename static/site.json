@@ -122,8 +122,8 @@
  ],
  "front_matter_schema": "https://korczis.github.io/schemas/front-matter.schema.json",
  "data_as_of": {
-  "snapshot": "2026-11-19T11:54:45Z",
-  "index": "2026-11-19T12:01:03Z"
+  "snapshot": "2026-11-19T20:50:04Z",
+  "index": "2026-11-19T20:51:02Z"
  },
  "pages": [
   {
@@ -4080,13 +4080,13 @@
    "keywords": [
     "Tomáš Korčák: projekty",
     "korczis",
-    "korczis.github.io",
+    "sonic-playground",
     "oscilla",
+    "korczis.github.io",
     "kompendium-epistemicke-anihilace",
     "prismatic-majordomus",
     "openttd-prismatic-bridge",
     "majordomus-reel",
-    "sonic-playground",
     "algoglyph"
    ]
   },
@@ -7249,15 +7249,14 @@
   {
    "url": "https://korczis.github.io/cs/work/sandbox/",
    "lang": "cs",
-   "title": "sandbox: Učení a experimenty, Ruby, 2012 · Tomáš Korčák",
-   "description": "sandbox: archivní projekt z kategorie Učení a experimenty, hlavní jazyk Ruby, 2012; poslední commit 2. ledna 2012.",
+   "title": "sandbox: Učení a experimenty, 2012 · Tomáš Korčák",
+   "description": "sandbox: archivní projekt z kategorie Učení a experimenty, 2012; poslední commit 2. ledna 2012.",
    "type": "project",
    "category": "learning",
    "og_image": "https://korczis.github.io/og/cs-work-sandbox.png",
    "keywords": [
     "sandbox",
     "Učení a experimenty",
-    "Ruby",
     "2012",
     "GitHub",
     "GitLab",
@@ -7542,15 +7541,14 @@
   {
    "url": "https://korczis.github.io/cs/work/skull-nodejs/",
    "lang": "cs",
-   "title": "skull-nodejs: Učení a experimenty, Makefile, 2014 · Tomáš Korčák",
-   "description": "skull-nodejs: archivní projekt z kategorie Učení a experimenty, hlavní jazyk Makefile, 2014; poslední commit 3. srpna 2014.",
+   "title": "skull-nodejs: Učení a experimenty, 2014 · Tomáš Korčák",
+   "description": "skull-nodejs: archivní projekt z kategorie Učení a experimenty, 2014; poslední commit 3. srpna 2014.",
    "type": "project",
    "category": "learning",
    "og_image": "https://korczis.github.io/og/cs-work-skull-nodejs.png",
    "keywords": [
     "skull-nodejs",
     "Učení a experimenty",
-    "Makefile",
     "2014",
     "GitHub",
     "GitLab",
@@ -11819,13 +11817,13 @@
    "keywords": [
     "Tomas Korcak projects",
     "korczis",
-    "korczis.github.io",
+    "sonic-playground",
     "oscilla",
+    "korczis.github.io",
     "kompendium-epistemicke-anihilace",
     "prismatic-majordomus",
     "openttd-prismatic-bridge",
     "majordomus-reel",
-    "sonic-playground",
     "algoglyph"
    ]
   },
@@ -14996,7 +14994,6 @@
    "keywords": [
     "sandbox",
     "Learning and experiments",
-    "Ruby",
     "2012",
     "GitHub",
     "GitLab",
@@ -15289,7 +15286,6 @@
    "keywords": [
     "skull-nodejs",
     "Learning and experiments",
-    "Makefile",
     "2014",
     "GitHub",
     "GitLab",
@@ -16086,21 +16082,21 @@
  ],
  "repositories": [
   {
-   "name": "korczis.github.io",
-   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-   "language": "JavaScript",
-   "category": "web",
-   "page": "https://korczis.github.io/work/korczis-github-io/",
+   "name": "sonic-playground",
+   "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+   "language": "Python",
+   "category": "media",
+   "page": "https://korczis.github.io/work/sonic-playground/",
    "pages": {
-    "en": "https://korczis.github.io/work/korczis-github-io/",
-    "cs": "https://korczis.github.io/cs/work/korczis-github-io/"
+    "en": "https://korczis.github.io/work/sonic-playground/",
+    "cs": "https://korczis.github.io/cs/work/sonic-playground/"
    },
-   "github": "https://github.com/korczis/korczis.github.io",
+   "github": "https://github.com/korczis/sonic-playground",
    "gitlab": null,
-   "site": null,
-   "created": "2024-12-24T16:48:15Z",
-   "active": "2026-11-19T11:40:49Z",
-   "last_commit": "2026-11-19T11:37:42Z",
+   "site": "https://korczis.github.io/sonic-playground/",
+   "created": "2026-11-12T00:48:36Z",
+   "active": "2026-11-19T19:16:08Z",
+   "last_commit": "2026-11-19T19:02:55Z",
    "period": 12,
    "archive": false,
    "stars": 0,
@@ -16120,11 +16116,32 @@
    "gitlab": null,
    "site": "https://korczis.github.io/oscilla/",
    "created": "2026-10-01T21:05:33Z",
-   "active": "2026-11-19T11:35:47Z",
-   "last_commit": "2026-11-19T11:21:47Z",
+   "active": "2026-11-19T17:46:35Z",
+   "last_commit": "2026-11-19T17:46:32Z",
    "period": 12,
    "archive": false,
    "stars": 1,
+   "supervised": true
+  },
+  {
+   "name": "korczis.github.io",
+   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+   "language": "JavaScript",
+   "category": "web",
+   "page": "https://korczis.github.io/work/korczis-github-io/",
+   "pages": {
+    "en": "https://korczis.github.io/work/korczis-github-io/",
+    "cs": "https://korczis.github.io/cs/work/korczis-github-io/"
+   },
+   "github": "https://github.com/korczis/korczis.github.io",
+   "gitlab": null,
+   "site": null,
+   "created": "2024-12-24T16:48:15Z",
+   "active": "2026-11-19T15:03:31Z",
+   "last_commit": "2026-11-19T13:15:49Z",
+   "period": 12,
+   "archive": false,
+   "stars": 0,
    "supervised": true
   },
   {
@@ -16141,8 +16158,8 @@
    "gitlab": null,
    "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
    "created": "2026-11-09T22:04:50Z",
-   "active": "2026-11-19T11:06:13Z",
-   "last_commit": "2026-11-19T04:33:24Z",
+   "active": "2026-11-19T13:16:44Z",
+   "last_commit": "2026-11-19T11:05:50Z",
    "period": 12,
    "archive": false,
    "stars": 0,
@@ -16210,27 +16227,6 @@
    "archive": false,
    "stars": 0,
    "supervised": false
-  },
-  {
-   "name": "sonic-playground",
-   "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-   "language": "Python",
-   "category": "media",
-   "page": "https://korczis.github.io/work/sonic-playground/",
-   "pages": {
-    "en": "https://korczis.github.io/work/sonic-playground/",
-    "cs": "https://korczis.github.io/cs/work/sonic-playground/"
-   },
-   "github": "https://github.com/korczis/sonic-playground",
-   "gitlab": null,
-   "site": "https://korczis.github.io/sonic-playground/",
-   "created": "2026-11-12T00:48:36Z",
-   "active": "2026-11-17T20:53:34Z",
-   "last_commit": "2026-11-17T20:47:37Z",
-   "period": 12,
-   "archive": false,
-   "stars": 0,
-   "supervised": true
   },
   {
    "name": "algoglyph",
@@ -19826,7 +19822,7 @@
   {
    "name": "skull-nodejs",
    "description": "Node.js Skull",
-   "language": "Makefile",
+   "language": null,
    "category": "learning",
    "page": "https://korczis.github.io/work/skull-nodejs/",
    "pages": {
@@ -20372,7 +20368,7 @@
   {
    "name": "sandbox",
    "description": "Something just for fun. This is place where I play with new techs...",
-   "language": "Ruby",
+   "language": null,
    "category": "learning",
    "page": "https://korczis.github.io/work/sandbox/",
    "pages": {
@@ -20393,15 +20389,15 @@
  ],
  "counts": {
   "github": 448,
-  "gitlab": 417,
-  "merged": 499,
+  "gitlab": 195,
+  "merged": 494,
   "own": 205,
   "forks": 250,
-  "mirrors": 35,
-  "empty": 3,
+  "mirrors": 31,
+  "empty": 2,
   "unmeasured": 0,
   "hidden": 6,
-  "mirrors_measured": 20,
+  "mirrors_measured": 16,
   "supervised": 8
  }
 }

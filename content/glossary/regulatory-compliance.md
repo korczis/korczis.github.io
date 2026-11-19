@@ -17,7 +17,7 @@ definition = "Meeting the obligations a regulation sets, and being able to show 
 aliases = []
 reference = { title = "EU NIS2 Directive", url = "https://digital-strategy.ec.europa.eu/en/policies/nis2-directive" }
 pages = ["services/_index.md", "services/attack-surface.md", "services/compliance-screening.md", "skills/_index.md", "skills/compliance-mapping.md"]
-related = ["alpine-js", "dockerfile", "html", "javascript", "risk-assessment", "service", "attack-surface", "beneficial-ownership"]
+related = ["alpine-js", "html", "javascript", "dockerfile", "flowbite-pro", "playwright", "risk-assessment", "service"]
 og_title = "Regulatory compliance: glossary"
 og_image = "og/glossary-regulatory-compliance.png"
 keywords = ["Regulatory compliance", "Concept", "Glossary", "Tomas Korcak"]

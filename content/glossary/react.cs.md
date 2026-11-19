@@ -16,8 +16,8 @@ kind = "technology"
 definition = "JavaScriptová knihovna pro uživatelská rozhraní skládaná z komponent, které se překreslují podle stavu."
 aliases = ["React.js"]
 reference = { title = "react.dev", url = "https://react.dev/learn" }
-pages = ["services/due-diligence.cs.md", "work/gooddata-graphql.cs.md", "work/gooddata-proxy.cs.md", "work/maze.cs.md", "work/microscratch-react.cs.md", "_index.cs.md"]
-related = ["commit", "html", "javascript", "open-source", "repository", "elixir", "phoenix", "css"]
+pages = ["work/gooddata-graphql.cs.md", "work/gooddata-proxy.cs.md", "work/maze.cs.md", "work/microscratch-react.cs.md", "_index.cs.md"]
+related = ["commit", "open-source", "repository", "html", "javascript", "css", "elixir", "gis"]
 og_title = "React: slovník"
 og_image = "og/cs-glossary-react.png"
 keywords = ["React", "Technologie", "Slovník", "Tomáš Korčák"]

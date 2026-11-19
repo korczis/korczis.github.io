@@ -13,7 +13,7 @@ skill = "ownership-analysis"
 og_title = "Ownership and link analysis: skills"
 og_image = "og/skill-ownership-analysis.png"
 schema = "skill"
-terms = ["skill", "beneficial-ownership"]
+terms = ["skill", "beneficial-ownership", "css", "elixir", "flowbite-pro", "github-pages", "html", "javascript", "json-schema", "python", "shell", "tailwind-css"]
 keywords = ["Ownership and link analysis", "Corporate and counterparty due diligence", "M&A pre-deal screening and analysis", "Digital investigation and OSINT dossiers", "Sanctions, PEP and beneficial-ownership screening", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -30,5 +30,9 @@ Tracing control and hidden relationships: ownership chains walked to the ultimat
 The concept behind it: [Beneficial ownership](@/glossary/beneficial-ownership.md).
 
 Services that draw on it: [Corporate and counterparty due diligence](@/services/due-diligence.md), [M&A pre-deal screening and analysis](@/services/m-and-a.md), [Digital investigation and OSINT dossiers](@/services/digital-investigation.md) and [Sanctions, PEP and beneficial-ownership screening](@/services/compliance-screening.md).
+
+Practised with: [CSS](@/glossary/css.md), [Elixir](@/glossary/elixir.md), [Flowbite Pro](@/glossary/flowbite-pro.md), [GitHub Pages](@/glossary/github-pages.md), [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md), [JSON Schema](@/glossary/json-schema.md) and [Python](@/glossary/python.md).
+
+Public work whose own words show it: [sonic-playground](https://github.com/korczis/sonic-playground).
 
 How to read this page: the definition is the experience vocabulary's; the services, technologies, public [repositories](@/glossary/repository.md) and use cases are derived and each links to its page.

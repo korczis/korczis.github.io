@@ -17,7 +17,7 @@ definition = "CSS framework s responzivní mřížkou a hotovými komponentami p
 aliases = []
 reference = { title = "Bootstrap documentation", url = "https://getbootstrap.com/docs/" }
 pages = ["services/attack-surface.cs.md", "skills/change-monitoring.cs.md", "work/craftsmen.cs.md", "work/korczis-com.cs.md", "work/lethe-it.cs.md", "work/microcrawler-couchapp.cs.md", "work/microscratch.cs.md", "work/pavian-eu.cs.md", "work/web-spa.cs.md"]
-related = ["javascript", "bower", "commit", "css", "open-source", "repository", "ember-js", "handlebars"]
+related = ["javascript", "css", "bower", "commit", "open-source", "repository", "ember-js", "static-site-generator"]
 og_title = "Bootstrap: slovník"
 og_image = "og/cs-glossary-bootstrap.png"
 keywords = ["Bootstrap", "Technologie", "Slovník", "Tomáš Korčák"]

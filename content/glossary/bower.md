@@ -17,7 +17,7 @@ definition = "An early package manager for front-end libraries, since superseded
 aliases = []
 reference = { title = "Bower", url = "https://bower.io/" }
 pages = ["services/attack-surface.md", "skills/change-monitoring.md", "work/generator-microscratch.md", "work/korczis-com.md", "work/microcrawler-couchapp.md", "work/microscratch.md", "work/pavian-eu.md", "work/web-spa.md"]
-related = ["javascript", "bootstrap", "commit", "open-source", "repository", "css", "ember-js", "handlebars"]
+related = ["javascript", "bootstrap", "commit", "css", "open-source", "repository", "ember-js", "html"]
 og_title = "Bower: glossary"
 og_image = "og/glossary-bower.png"
 keywords = ["Bower", "Technology", "Glossary", "Tomas Korcak"]

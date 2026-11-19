@@ -16,8 +16,8 @@ kind = "language"
 definition = "The build language of make: targets, the files they depend on and the commands that rebuild them when a dependency changes."
 aliases = ["Make", "make"]
 reference = { title = "GNU make manual", url = "https://www.gnu.org/software/make/manual/make.html" }
-pages = ["projects/learning.md", "skills/media-forensics.md", "work/bcnode-old.md", "work/charon.md", "work/ctu-cz.md", "work/dj-schnapps.md", "work/el-magico-cache.md", "work/gooddata-fs.md", "work/microcrawler-elixir.md", "work/microcrawler-js.md", "work/pdf-renderer.md", "work/rest-hello-world-benchmark.md", "work/skull-cpp.md", "work/skull-emscripten.md", "work/skull-erlang.md", "work/skull-nodejs.md", "work/sli2dli.md", "work/streamflow.md"]
-related = ["repository", "commit", "open-source", "rust", "javascript", "shell", "dockerfile", "elixir"]
+pages = ["skills/media-forensics.md", "work/bcnode-old.md", "work/charon.md", "work/ctu-cz.md", "work/dj-schnapps.md", "work/el-magico-cache.md", "work/gooddata-fs.md", "work/microcrawler-elixir.md", "work/microcrawler-js.md", "work/pdf-renderer.md", "work/rest-hello-world-benchmark.md", "work/skull-cpp.md", "work/skull-emscripten.md", "work/skull-erlang.md", "work/skull-nodejs.md", "work/sli2dli.md", "work/streamflow.md"]
+related = ["commit", "open-source", "repository", "rust", "dockerfile", "javascript", "shell", "elixir"]
 og_title = "Makefile: glossary"
 og_image = "og/glossary-makefile.png"
 keywords = ["Makefile", "Programming language", "Glossary", "Tomas Korcak"]
@@ -40,7 +40,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-I have written Makefile in 12 public repositories, from 2014 to 2025; in 1 of them it is the main language.
+I have written Makefile in 12 public repositories, from 2014 to 2025.
 
 What it was for: [Tools](@/projects/tools.md) (5), [Learning and experiments](@/projects/learning.md) (4), [Data and GIS](@/projects/data.md) (2) and [Media and art](@/projects/media.md) (1).
 

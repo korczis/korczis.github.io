@@ -14,7 +14,7 @@ icon = "check"
 og_title = "Sankční a PEP prověrky a skuteční majitelé"
 og_image = "og/cs-service-compliance-screening.png"
 schema = "service"
-terms = ["service", "elixir", "postgresql", "openapi", "sanctions-screening", "beneficial-ownership", "record-linkage", "risk-assessment", "contestability", "regulatory-compliance", "html", "javascript", "python", "alpine-js", "claude-api", "dockerfile", "fastapi", "flowbite-pro", "github-actions", "kubernetes"]
+terms = ["service", "elixir", "postgresql", "openapi", "sanctions-screening", "beneficial-ownership", "record-linkage", "risk-assessment", "contestability", "regulatory-compliance", "html", "javascript", "flowbite-pro", "python", "alpine-js", "playwright", "claude-api", "css", "dockerfile", "fastapi"]
 keywords = ["Sankční a PEP prověrky a skuteční majitelé", "Sankční a PEP prověrky", "Analýza vlastnictví a vazeb", "Ztotožnění subjektů", "Hodnocení rizik", "Napadnutelná rozhodnutí", "Mapování regulatorní shody", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -34,7 +34,9 @@ Párovat jména ve třech pásmech: jistá shoda se hlásí, téměř shoda jde 
 
 Je postavená na: [Elixir](@/glossary/elixir.cs.md), [PostgreSQL](@/glossary/postgresql.cs.md) a [OpenAPI](@/glossary/openapi.cs.md).
 
-Technologie za ní, změřené z práce, která tyto dovednosti dokládá: [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Python](@/glossary/python.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md), [Claude API](@/glossary/claude-api.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md), [FastAPI](@/glossary/fastapi.cs.md) a [Flowbite Pro](@/glossary/flowbite-pro.cs.md).
+Technologie za ní, změřené z práce, která tyto dovednosti dokládá: [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md), [Python](@/glossary/python.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md), [Playwright](@/glossary/playwright.cs.md), [Claude API](@/glossary/claude-api.cs.md) a [CSS](@/glossary/css.cs.md).
+
+Její dovednosti dokládají 2 veřejné repozitáře (2 vlastními slovy).
 
 Byla dodána v klientské práci pod dohodami o mlčenlivosti, v odvětví: Developer nemovitostí a Finanční a investiční skupina, v roli: Architekt, Vedoucí inženýr, Inženýr AI, Datový inženýr, Analytik šetření a Poradce; případy užití popisují princip a záměr, nikdy klienta, osobu, datum ani číslo.
 

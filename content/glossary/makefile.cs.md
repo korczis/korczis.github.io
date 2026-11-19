@@ -16,8 +16,8 @@ kind = "language"
 definition = "Jazyk nástroje make: cíle, soubory, na kterých závisí, a příkazy, které je přestaví, když se závislost změní."
 aliases = ["Make", "make"]
 reference = { title = "GNU make manual", url = "https://www.gnu.org/software/make/manual/make.html" }
-pages = ["projects/learning.cs.md", "skills/media-forensics.cs.md", "work/bcnode-old.cs.md", "work/charon.cs.md", "work/ctu-cz.cs.md", "work/dj-schnapps.cs.md", "work/el-magico-cache.cs.md", "work/gooddata-fs.cs.md", "work/microcrawler-elixir.cs.md", "work/microcrawler-js.cs.md", "work/pdf-renderer.cs.md", "work/rest-hello-world-benchmark.cs.md", "work/skull-cpp.cs.md", "work/skull-emscripten.cs.md", "work/skull-erlang.cs.md", "work/skull-nodejs.cs.md", "work/sli2dli.cs.md", "work/streamflow.cs.md"]
-related = ["repository", "commit", "open-source", "rust", "javascript", "shell", "dockerfile", "elixir"]
+pages = ["skills/media-forensics.cs.md", "work/bcnode-old.cs.md", "work/charon.cs.md", "work/ctu-cz.cs.md", "work/dj-schnapps.cs.md", "work/el-magico-cache.cs.md", "work/gooddata-fs.cs.md", "work/microcrawler-elixir.cs.md", "work/microcrawler-js.cs.md", "work/pdf-renderer.cs.md", "work/rest-hello-world-benchmark.cs.md", "work/skull-cpp.cs.md", "work/skull-emscripten.cs.md", "work/skull-erlang.cs.md", "work/skull-nodejs.cs.md", "work/sli2dli.cs.md", "work/streamflow.cs.md"]
+related = ["commit", "open-source", "repository", "rust", "dockerfile", "javascript", "shell", "elixir"]
 og_title = "Makefile: slovník"
 og_image = "og/cs-glossary-makefile.png"
 keywords = ["Makefile", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
@@ -40,7 +40,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-Makefile jsem psal v 12 veřejných repozitářích, od roku 2014 do 2025; v 1 z nich je hlavním jazykem.
+Makefile jsem psal v 12 veřejných repozitářích, od roku 2014 do 2025.
 
 K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (5), [Učení a experimenty](@/projects/learning.cs.md) (4), [Data a GIS](@/projects/data.cs.md) (2) a [Média a umění](@/projects/media.cs.md) (1).
 

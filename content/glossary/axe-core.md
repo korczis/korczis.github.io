@@ -16,8 +16,8 @@ kind = "technology"
 definition = "An accessibility testing engine that checks rendered pages against WCAG rules; this site's browser audit runs it."
 aliases = []
 reference = { title = "axe-core on GitHub", url = "https://github.com/dequelabs/axe-core" }
-pages = ["work/algoglyph.md", "work/korczis-github-io.md", "work/oscilla.md"]
-related = ["alpine-js", "commit", "flowbite-pro", "github-pages", "html", "javascript", "open-source", "p5-js"]
+pages = ["skills/compliance-mapping.md", "work/algoglyph.md", "work/korczis-github-io.md", "work/oscilla.md"]
+related = ["alpine-js", "flowbite-pro", "github-pages", "html", "javascript", "p5-js", "tailwind-css", "commit"]
 og_title = "axe-core: glossary"
 og_image = "og/glossary-axe-core.png"
 keywords = ["axe-core", "Technology", "Glossary", "Tomas Korcak"]

@@ -14,7 +14,7 @@
         {
           "id": "elixir",
           "name": "Elixir",
-          "n": 3,
+          "n": 4,
           "declared": true
         },
         {
@@ -65,6 +65,19 @@
           "site": "https://korczis.github.io/vomaste.cz/",
           "pushed": "2026-11-08",
           "skill": "due-diligence"
+        },
+        {
+          "name": "sonic-playground",
+          "title": "Sonic Playground",
+          "how": "words",
+          "score": 2.8,
+          "slug": "sonic-playground",
+          "url": "https://github.com/korczis/sonic-playground",
+          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+          "category": "media",
+          "site": "https://korczis.github.io/sonic-playground/",
+          "pushed": "2026-11-19",
+          "skill": "ownership-analysis"
         },
         {
           "name": "openttd-prismatic-bridge",
@@ -141,27 +154,27 @@
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 12
+          "n": 13
         },
         {
           "id": "html",
           "name": "HTML",
-          "n": 10
+          "n": 11
         },
         {
           "id": "python",
           "name": "Python",
-          "n": 8
+          "n": 9
         },
         {
           "id": "flowbite-pro",
           "name": "Flowbite Pro",
-          "n": 7
+          "n": 8
         },
         {
           "id": "tailwind-css",
           "name": "Tailwind CSS",
-          "n": 6
+          "n": 7
         },
         {
           "id": "dockerfile",
@@ -171,6 +184,11 @@
         {
           "id": "fastapi",
           "name": "FastAPI",
+          "n": 5
+        },
+        {
+          "id": "shell",
+          "name": "Shell",
           "n": 5
         },
         {
@@ -184,19 +202,14 @@
           "n": 4
         },
         {
+          "id": "css",
+          "name": "CSS",
+          "n": 4
+        },
+        {
           "id": "react",
           "name": "React",
           "n": 4
-        },
-        {
-          "id": "shell",
-          "name": "Shell",
-          "n": 4
-        },
-        {
-          "id": "css",
-          "name": "CSS",
-          "n": 3
         },
         {
           "id": "github-actions",
@@ -204,18 +217,18 @@
           "n": 3
         },
         {
+          "id": "github-pages",
+          "name": "GitHub Pages",
+          "n": 2
+        },
+        {
+          "id": "json-schema",
+          "name": "JSON Schema",
+          "n": 2
+        },
+        {
           "id": "kubernetes",
           "name": "Kubernetes",
-          "n": 2
-        },
-        {
-          "id": "majordomus",
-          "name": "Majordomus",
-          "n": 2
-        },
-        {
-          "id": "openai-api",
-          "name": "OpenAI API",
           "n": 2
         }
       ]
@@ -225,7 +238,7 @@
         {
           "id": "elixir",
           "name": "Elixir",
-          "n": 2,
+          "n": 3,
           "declared": true
         },
         {
@@ -284,6 +297,19 @@
           "site": null,
           "pushed": "2014-01-07",
           "skill": "market-intelligence"
+        },
+        {
+          "name": "sonic-playground",
+          "title": "Sonic Playground",
+          "how": "words",
+          "score": 2.8,
+          "slug": "sonic-playground",
+          "url": "https://github.com/korczis/sonic-playground",
+          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+          "category": "media",
+          "site": "https://korczis.github.io/sonic-playground/",
+          "pushed": "2026-11-19",
+          "skill": "ownership-analysis"
         },
         {
           "name": "openttd-prismatic-bridge",
@@ -375,22 +401,22 @@
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 14
+          "n": 15
         },
         {
           "id": "html",
           "name": "HTML",
-          "n": 13
+          "n": 14
         },
         {
           "id": "python",
           "name": "Python",
-          "n": 9
+          "n": 10
         },
         {
           "id": "flowbite-pro",
           "name": "Flowbite Pro",
-          "n": 8
+          "n": 9
         },
         {
           "id": "dockerfile",
@@ -418,6 +444,11 @@
           "n": 6
         },
         {
+          "id": "tailwind-css",
+          "name": "Tailwind CSS",
+          "n": 6
+        },
+        {
           "id": "github-actions",
           "name": "GitHub Actions",
           "n": 5
@@ -428,8 +459,8 @@
           "n": 5
         },
         {
-          "id": "tailwind-css",
-          "name": "Tailwind CSS",
+          "id": "shell",
+          "name": "Shell",
           "n": 5
         },
         {
@@ -446,11 +477,6 @@
           "id": "openai-api",
           "name": "OpenAI API",
           "n": 4
-        },
-        {
-          "id": "shell",
-          "name": "Shell",
-          "n": 4
         }
       ]
     },
@@ -459,7 +485,7 @@
         {
           "id": "elixir",
           "name": "Elixir",
-          "n": 4,
+          "n": 5,
           "declared": true
         },
         {
@@ -634,6 +660,19 @@
           "site": null,
           "pushed": "2016-07-15",
           "skill": "media-forensics"
+        },
+        {
+          "name": "sonic-playground",
+          "title": "Sonic Playground",
+          "how": "words",
+          "score": 2.8,
+          "slug": "sonic-playground",
+          "url": "https://github.com/korczis/sonic-playground",
+          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+          "category": "media",
+          "site": "https://korczis.github.io/sonic-playground/",
+          "pushed": "2026-11-19",
+          "skill": "ownership-analysis"
         },
         {
           "name": "crisis-map",
@@ -825,7 +864,12 @@
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 21
+          "n": 22
+        },
+        {
+          "id": "html",
+          "name": "HTML",
+          "n": 10
         },
         {
           "id": "nodejs",
@@ -833,14 +877,14 @@
           "n": 10
         },
         {
-          "id": "html",
-          "name": "HTML",
+          "id": "python",
+          "name": "Python",
           "n": 9
         },
         {
-          "id": "python",
-          "name": "Python",
-          "n": 8
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 7
         },
         {
           "id": "dockerfile",
@@ -848,23 +892,18 @@
           "n": 6
         },
         {
-          "id": "flowbite-pro",
-          "name": "Flowbite Pro",
+          "id": "shell",
+          "name": "Shell",
+          "n": 6
+        },
+        {
+          "id": "tailwind-css",
+          "name": "Tailwind CSS",
           "n": 6
         },
         {
           "id": "claude-api",
           "name": "Claude API",
-          "n": 5
-        },
-        {
-          "id": "shell",
-          "name": "Shell",
-          "n": 5
-        },
-        {
-          "id": "tailwind-css",
-          "name": "Tailwind CSS",
           "n": 5
         },
         {
@@ -888,19 +927,19 @@
           "n": 4
         },
         {
-          "id": "phoenix",
-          "name": "Phoenix",
+          "id": "css",
+          "name": "CSS",
           "n": 3
         },
         {
-          "id": "alpine-js",
-          "name": "Alpine.js",
-          "n": 2
+          "id": "github-pages",
+          "name": "GitHub Pages",
+          "n": 3
         },
         {
-          "id": "bootstrap",
-          "name": "Bootstrap",
-          "n": 2
+          "id": "phoenix",
+          "name": "Phoenix",
+          "n": 3
         }
       ]
     },
@@ -959,6 +998,19 @@
           "site": null,
           "pushed": "2016-07-15",
           "skill": "media-forensics"
+        },
+        {
+          "name": "oscilla",
+          "title": "Oscilla",
+          "how": "words",
+          "score": 2.6,
+          "slug": "oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "category": "science",
+          "site": "https://korczis.github.io/oscilla/",
+          "pushed": "2026-11-19",
+          "skill": "audit-trail"
         },
         {
           "name": "catharsis-as-a-service",
@@ -1054,18 +1106,18 @@
       ],
       "technologies": [
         {
-          "id": "claude-api",
-          "name": "Claude API",
-          "n": 4
-        },
-        {
           "id": "html",
           "name": "HTML",
-          "n": 4
+          "n": 5
         },
         {
           "id": "javascript",
           "name": "JavaScript",
+          "n": 5
+        },
+        {
+          "id": "claude-api",
+          "name": "Claude API",
           "n": 4
         },
         {
@@ -1074,8 +1126,28 @@
           "n": 4
         },
         {
+          "id": "alpine-js",
+          "name": "Alpine.js",
+          "n": 3
+        },
+        {
           "id": "dockerfile",
           "name": "Dockerfile",
+          "n": 3
+        },
+        {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 3
+        },
+        {
+          "id": "github-pages",
+          "name": "GitHub Pages",
+          "n": 3
+        },
+        {
+          "id": "playwright",
+          "name": "Playwright",
           "n": 3
         },
         {
@@ -1084,8 +1156,13 @@
           "n": 3
         },
         {
-          "id": "alpine-js",
-          "name": "Alpine.js",
+          "id": "tailwind-css",
+          "name": "Tailwind CSS",
+          "n": 3
+        },
+        {
+          "id": "css",
+          "name": "CSS",
           "n": 2
         },
         {
@@ -1094,28 +1171,8 @@
           "n": 2
         },
         {
-          "id": "flowbite-pro",
-          "name": "Flowbite Pro",
-          "n": 2
-        },
-        {
-          "id": "github-actions",
-          "name": "GitHub Actions",
-          "n": 2
-        },
-        {
-          "id": "playwright",
-          "name": "Playwright",
-          "n": 2
-        },
-        {
           "id": "rust",
           "name": "Rust",
-          "n": 2
-        },
-        {
-          "id": "tailwind-css",
-          "name": "Tailwind CSS",
           "n": 2
         },
         {
@@ -1124,13 +1181,8 @@
           "n": 2
         },
         {
-          "id": "babel",
-          "name": "Babel",
-          "n": 1
-        },
-        {
-          "id": "c",
-          "name": "C",
+          "id": "axe-core",
+          "name": "axe-core",
           "n": 1
         }
       ]
@@ -1410,7 +1462,7 @@
         {
           "id": "elixir",
           "name": "Elixir",
-          "n": 0,
+          "n": 1,
           "declared": true
         },
         {
@@ -1434,7 +1486,34 @@
         "contestable-decisions",
         "compliance-mapping"
       ],
-      "repos": [],
+      "repos": [
+        {
+          "name": "sonic-playground",
+          "title": "Sonic Playground",
+          "how": "words",
+          "score": 2.8,
+          "slug": "sonic-playground",
+          "url": "https://github.com/korczis/sonic-playground",
+          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+          "category": "media",
+          "site": "https://korczis.github.io/sonic-playground/",
+          "pushed": "2026-11-19",
+          "skill": "ownership-analysis"
+        },
+        {
+          "name": "oscilla",
+          "title": "Oscilla",
+          "how": "words",
+          "score": 2.3,
+          "slug": "oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "category": "science",
+          "site": "https://korczis.github.io/oscilla/",
+          "pushed": "2026-11-19",
+          "skill": "compliance-mapping"
+        }
+      ],
       "engagements": [
         {
           "id": "e2",
@@ -1466,26 +1545,41 @@
         {
           "id": "html",
           "name": "HTML",
-          "n": 3
+          "n": 5
         },
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 3
+          "n": 5
+        },
+        {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 4
         },
         {
           "id": "python",
           "name": "Python",
-          "n": 3
+          "n": 4
         },
         {
           "id": "alpine-js",
           "name": "Alpine.js",
-          "n": 2
+          "n": 3
+        },
+        {
+          "id": "playwright",
+          "name": "Playwright",
+          "n": 3
         },
         {
           "id": "claude-api",
           "name": "Claude API",
+          "n": 2
+        },
+        {
+          "id": "css",
+          "name": "CSS",
           "n": 2
         },
         {
@@ -1499,13 +1593,13 @@
           "n": 2
         },
         {
-          "id": "flowbite-pro",
-          "name": "Flowbite Pro",
+          "id": "github-actions",
+          "name": "GitHub Actions",
           "n": 2
         },
         {
-          "id": "github-actions",
-          "name": "GitHub Actions",
+          "id": "github-pages",
+          "name": "GitHub Pages",
           "n": 2
         },
         {
@@ -1524,18 +1618,8 @@
           "n": 2
         },
         {
-          "id": "playwright",
-          "name": "Playwright",
-          "n": 2
-        },
-        {
           "id": "pydantic",
           "name": "Pydantic",
-          "n": 2
-        },
-        {
-          "id": "react",
-          "name": "React",
           "n": 2
         }
       ]
@@ -1914,6 +1998,19 @@
           "skill": "web-automation"
         },
         {
+          "name": "oscilla",
+          "title": "Oscilla",
+          "how": "words",
+          "score": 2.3,
+          "slug": "oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "category": "science",
+          "site": "https://korczis.github.io/oscilla/",
+          "pushed": "2026-11-19",
+          "skill": "compliance-mapping"
+        },
+        {
           "name": "streamflow",
           "title": "streamflow",
           "how": "words",
@@ -1985,7 +2082,7 @@
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 13
+          "n": 14
         },
         {
           "id": "nodejs",
@@ -1998,6 +2095,16 @@
           "n": 4
         },
         {
+          "id": "html",
+          "name": "HTML",
+          "n": 3
+        },
+        {
+          "id": "alpine-js",
+          "name": "Alpine.js",
+          "n": 2
+        },
+        {
           "id": "bootstrap",
           "name": "Bootstrap",
           "n": 2
@@ -2005,6 +2112,11 @@
         {
           "id": "bower",
           "name": "Bower",
+          "n": 2
+        },
+        {
+          "id": "css",
+          "name": "CSS",
           "n": 2
         },
         {
@@ -2018,18 +2130,23 @@
           "n": 2
         },
         {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 2
+        },
+        {
           "id": "handlebars",
           "name": "Handlebars",
           "n": 2
         },
         {
-          "id": "html",
-          "name": "HTML",
+          "id": "playwright",
+          "name": "Playwright",
           "n": 2
         },
         {
-          "id": "alpine-js",
-          "name": "Alpine.js",
+          "id": "axe-core",
+          "name": "axe-core",
           "n": 1
         },
         {
@@ -2040,26 +2157,6 @@
         {
           "id": "c",
           "name": "C",
-          "n": 1
-        },
-        {
-          "id": "clap",
-          "name": "clap",
-          "n": 1
-        },
-        {
-          "id": "claude-api",
-          "name": "Claude API",
-          "n": 1
-        },
-        {
-          "id": "cmake",
-          "name": "CMake",
-          "n": 1
-        },
-        {
-          "id": "couchbase",
-          "name": "Couchbase",
           "n": 1
         }
       ]
@@ -2186,6 +2283,19 @@
           "skill": "decision-support"
         },
         {
+          "name": "oscilla",
+          "title": "Oscilla",
+          "how": "words",
+          "score": 2.6,
+          "slug": "oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "category": "science",
+          "site": "https://korczis.github.io/oscilla/",
+          "pushed": "2026-11-19",
+          "skill": "audit-trail"
+        },
+        {
           "name": "catharsis-as-a-service",
           "title": "Catharsis as a Service",
           "how": "words",
@@ -2300,12 +2410,12 @@
         {
           "id": "html",
           "name": "HTML",
-          "n": 17
+          "n": 18
         },
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 17
+          "n": 18
         },
         {
           "id": "shell",
@@ -2315,7 +2425,7 @@
         {
           "id": "flowbite-pro",
           "name": "Flowbite Pro",
-          "n": 11
+          "n": 12
         },
         {
           "id": "python",
@@ -2323,19 +2433,24 @@
           "n": 11
         },
         {
-          "id": "postgresql",
-          "name": "PostgreSQL",
-          "n": 10
-        },
-        {
           "id": "tailwind-css",
           "name": "Tailwind CSS",
-          "n": 10
+          "n": 11
         },
         {
           "id": "alpine-js",
           "name": "Alpine.js",
-          "n": 9
+          "n": 10
+        },
+        {
+          "id": "playwright",
+          "name": "Playwright",
+          "n": 10
+        },
+        {
+          "id": "postgresql",
+          "name": "PostgreSQL",
+          "n": 10
         },
         {
           "id": "dockerfile",
@@ -2343,29 +2458,24 @@
           "n": 9
         },
         {
-          "id": "playwright",
-          "name": "Playwright",
-          "n": 9
-        },
-        {
           "id": "github-actions",
           "name": "GitHub Actions",
-          "n": 8
+          "n": 7
         },
         {
-          "id": "fastapi",
-          "name": "FastAPI",
+          "id": "github-pages",
+          "name": "GitHub Pages",
           "n": 6
         },
         {
           "id": "css",
           "name": "CSS",
-          "n": 4
+          "n": 5
         },
         {
-          "id": "github-pages",
-          "name": "GitHub Pages",
-          "n": 4
+          "id": "fastapi",
+          "name": "FastAPI",
+          "n": 5
         },
         {
           "id": "kubernetes",
@@ -2408,7 +2518,7 @@
         {
           "id": "github-actions",
           "name": "GitHub Actions",
-          "n": 7,
+          "n": 6,
           "declared": true
         }
       ],
@@ -2474,6 +2584,19 @@
           "skill": "llm-agents"
         },
         {
+          "name": "kompendium-epistemicke-anihilace",
+          "title": "Kompendium",
+          "how": "words",
+          "score": 3.3,
+          "slug": "kompendium-epistemicke-anihilace",
+          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
+          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
+          "category": "knowledge",
+          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+          "pushed": "2026-11-19",
+          "skill": "policy-as-code"
+        },
+        {
           "name": "osint-case-ratcliffe-moscow-2026",
           "title": "osint-case-ratcliffe-moscow-2026",
           "how": "words",
@@ -2513,17 +2636,17 @@
           "skill": "llm-agents"
         },
         {
-          "name": "kompendium-epistemicke-anihilace",
-          "title": "Kompendium",
+          "name": "oscilla",
+          "title": "Oscilla",
           "how": "words",
           "score": 2.6,
-          "slug": "kompendium-epistemicke-anihilace",
-          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
-          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
-          "category": "knowledge",
-          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+          "slug": "oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "category": "science",
+          "site": "https://korczis.github.io/oscilla/",
           "pushed": "2026-11-19",
-          "skill": "policy-as-code"
+          "skill": "audit-trail"
         },
         {
           "name": "catharsis-as-a-service",
@@ -2624,12 +2747,12 @@
         {
           "id": "html",
           "name": "HTML",
-          "n": 18
+          "n": 19
         },
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 18
+          "n": 19
         },
         {
           "id": "shell",
@@ -2639,21 +2762,26 @@
         {
           "id": "flowbite-pro",
           "name": "Flowbite Pro",
-          "n": 12
+          "n": 13
         },
         {
           "id": "tailwind-css",
           "name": "Tailwind CSS",
-          "n": 12
+          "n": 13
         },
         {
           "id": "playwright",
           "name": "Playwright",
-          "n": 11
+          "n": 12
         },
         {
           "id": "alpine-js",
           "name": "Alpine.js",
+          "n": 11
+        },
+        {
+          "id": "github-pages",
+          "name": "GitHub Pages",
           "n": 10
         },
         {
@@ -2662,19 +2790,14 @@
           "n": 10
         },
         {
-          "id": "github-pages",
-          "name": "GitHub Pages",
+          "id": "css",
+          "name": "CSS",
           "n": 8
         },
         {
           "id": "zola",
           "name": "Zola",
           "n": 8
-        },
-        {
-          "id": "css",
-          "name": "CSS",
-          "n": 7
         },
         {
           "id": "dockerfile",
@@ -2692,13 +2815,13 @@
           "n": 3
         },
         {
-          "id": "fastapi",
-          "name": "FastAPI",
+          "id": "nodejs",
+          "name": "Node.js",
           "n": 3
         },
         {
-          "id": "nodejs",
-          "name": "Node.js",
+          "id": "p5-js",
+          "name": "p5.js",
           "n": 3
         }
       ]
@@ -2767,7 +2890,7 @@
           "name": "kompendium-epistemicke-anihilace",
           "title": "Kompendium",
           "how": "words",
-          "score": 4.2,
+          "score": 4,
           "slug": "kompendium-epistemicke-anihilace",
           "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
           "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
@@ -2890,7 +3013,7 @@
           "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
           "category": "media",
           "site": "https://korczis.github.io/sonic-playground/",
-          "pushed": "2026-11-17",
+          "pushed": "2026-11-19",
           "skill": "interactive-visualisation"
         },
         {
@@ -4751,6 +4874,18 @@
       ],
       "repos": [
         {
+          "name": "oscilla",
+          "title": "Oscilla",
+          "how": "words",
+          "score": 2.6,
+          "slug": "oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "category": "science",
+          "site": "https://korczis.github.io/oscilla/",
+          "pushed": "2026-11-19"
+        },
+        {
           "name": "catharsis-as-a-service",
           "title": "Catharsis as a Service",
           "how": "words",
@@ -4811,11 +4946,26 @@
         {
           "id": "html",
           "name": "HTML",
-          "n": 3
+          "n": 4
         },
         {
           "id": "javascript",
           "name": "JavaScript",
+          "n": 4
+        },
+        {
+          "id": "alpine-js",
+          "name": "Alpine.js",
+          "n": 3
+        },
+        {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 3
+        },
+        {
+          "id": "playwright",
+          "name": "Playwright",
           "n": 3
         },
         {
@@ -4824,9 +4974,9 @@
           "n": 3
         },
         {
-          "id": "alpine-js",
-          "name": "Alpine.js",
-          "n": 2
+          "id": "tailwind-css",
+          "name": "Tailwind CSS",
+          "n": 3
         },
         {
           "id": "claude-api",
@@ -4834,13 +4984,13 @@
           "n": 2
         },
         {
-          "id": "flowbite-pro",
-          "name": "Flowbite Pro",
+          "id": "css",
+          "name": "CSS",
           "n": 2
         },
         {
-          "id": "playwright",
-          "name": "Playwright",
+          "id": "github-pages",
+          "name": "GitHub Pages",
           "n": 2
         },
         {
@@ -4854,13 +5004,8 @@
           "n": 2
         },
         {
-          "id": "tailwind-css",
-          "name": "Tailwind CSS",
-          "n": 2
-        },
-        {
-          "id": "css",
-          "name": "CSS",
+          "id": "axe-core",
+          "name": "axe-core",
           "n": 1
         },
         {
@@ -4876,16 +5021,6 @@
         {
           "id": "elixir",
           "name": "Elixir",
-          "n": 1
-        },
-        {
-          "id": "fastapi",
-          "name": "FastAPI",
-          "n": 1
-        },
-        {
-          "id": "github-actions",
-          "name": "GitHub Actions",
           "n": 1
         }
       ]
@@ -5533,9 +5668,83 @@
         "digital-investigation",
         "compliance-screening"
       ],
-      "repos": [],
+      "repos": [
+        {
+          "name": "sonic-playground",
+          "title": "Sonic Playground",
+          "how": "words",
+          "score": 2.8,
+          "slug": "sonic-playground",
+          "url": "https://github.com/korczis/sonic-playground",
+          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+          "category": "media",
+          "site": "https://korczis.github.io/sonic-playground/",
+          "pushed": "2026-11-19"
+        }
+      ],
       "engagements": [],
-      "technologies": []
+      "technologies": [
+        {
+          "id": "css",
+          "name": "CSS",
+          "n": 1
+        },
+        {
+          "id": "elixir",
+          "name": "Elixir",
+          "n": 1
+        },
+        {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 1
+        },
+        {
+          "id": "github-pages",
+          "name": "GitHub Pages",
+          "n": 1
+        },
+        {
+          "id": "html",
+          "name": "HTML",
+          "n": 1
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "n": 1
+        },
+        {
+          "id": "json-schema",
+          "name": "JSON Schema",
+          "n": 1
+        },
+        {
+          "id": "python",
+          "name": "Python",
+          "n": 1
+        },
+        {
+          "id": "shell",
+          "name": "Shell",
+          "n": 1
+        },
+        {
+          "id": "tailwind-css",
+          "name": "Tailwind CSS",
+          "n": 1
+        },
+        {
+          "id": "typescript",
+          "name": "TypeScript",
+          "n": 1
+        },
+        {
+          "id": "zola",
+          "name": "Zola",
+          "n": 1
+        }
+      ]
     },
     "sanctions-screening": {
       "domain": "dd",
@@ -6198,9 +6407,78 @@
         "compliance-screening",
         "attack-surface"
       ],
-      "repos": [],
+      "repos": [
+        {
+          "name": "oscilla",
+          "title": "Oscilla",
+          "how": "words",
+          "score": 2.3,
+          "slug": "oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "category": "science",
+          "site": "https://korczis.github.io/oscilla/",
+          "pushed": "2026-11-19"
+        }
+      ],
       "engagements": [],
-      "technologies": []
+      "technologies": [
+        {
+          "id": "alpine-js",
+          "name": "Alpine.js",
+          "n": 1
+        },
+        {
+          "id": "axe-core",
+          "name": "axe-core",
+          "n": 1
+        },
+        {
+          "id": "css",
+          "name": "CSS",
+          "n": 1
+        },
+        {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 1
+        },
+        {
+          "id": "github-pages",
+          "name": "GitHub Pages",
+          "n": 1
+        },
+        {
+          "id": "html",
+          "name": "HTML",
+          "n": 1
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "n": 1
+        },
+        {
+          "id": "p5-js",
+          "name": "p5.js",
+          "n": 1
+        },
+        {
+          "id": "playwright",
+          "name": "Playwright",
+          "n": 1
+        },
+        {
+          "id": "tailwind-css",
+          "name": "Tailwind CSS",
+          "n": 1
+        },
+        {
+          "id": "web-audio",
+          "name": "Web Audio",
+          "n": 1
+        }
+      ]
     },
     "policy-as-code": {
       "domain": "ai",
@@ -6246,6 +6524,18 @@
           "pushed": "2026-11-19"
         },
         {
+          "name": "kompendium-epistemicke-anihilace",
+          "title": "Kompendium",
+          "how": "words",
+          "score": 3.3,
+          "slug": "kompendium-epistemicke-anihilace",
+          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
+          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
+          "category": "knowledge",
+          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+          "pushed": "2026-11-19"
+        },
+        {
           "name": "data-atlas",
           "title": "Data Atlas",
           "how": "words",
@@ -6256,18 +6546,6 @@
           "category": "data",
           "site": "https://korczis.github.io/data-atlas/",
           "pushed": "2026-11-16"
-        },
-        {
-          "name": "kompendium-epistemicke-anihilace",
-          "title": "Kompendium",
-          "how": "words",
-          "score": 2.6,
-          "slug": "kompendium-epistemicke-anihilace",
-          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
-          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
-          "category": "knowledge",
-          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
-          "pushed": "2026-11-19"
         },
         {
           "name": "catharsis-as-a-service",
@@ -6413,7 +6691,7 @@
           "name": "kompendium-epistemicke-anihilace",
           "title": "Kompendium",
           "how": "words",
-          "score": 4.2,
+          "score": 4,
           "slug": "kompendium-epistemicke-anihilace",
           "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
           "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
@@ -6431,7 +6709,7 @@
           "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
           "category": "media",
           "site": "https://korczis.github.io/sonic-playground/",
-          "pushed": "2026-11-17"
+          "pushed": "2026-11-19"
         },
         {
           "name": "gooddata-graphql",
