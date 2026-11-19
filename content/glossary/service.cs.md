@@ -17,7 +17,7 @@ definition = "Něco, co vlastník nabízí klientovi: problém, který řeší, 
 aliases = []
 reference = { title = "Schema.org: Service", url = "https://schema.org/Service" }
 pages = ["services/_index.cs.md", "services/ai-engineering-governance.cs.md", "services/attack-surface.cs.md", "services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "services/decision-support-ai.cs.md", "services/digital-forensics.cs.md", "services/digital-investigation.cs.md", "services/due-diligence.cs.md", "services/interactive-data-products.cs.md", "services/m-and-a.cs.md", "services/reputation-intelligence.cs.md", "skills/_index.cs.md"]
-related = ["alpine-js", "claude-api", "flowbite-pro", "html", "javascript", "dockerfile", "elixir", "python"]
+related = ["alpine-js", "html", "javascript", "dockerfile", "flowbite-pro", "claude-api", "elixir", "python"]
 og_title = "Služba: slovník"
 og_image = "og/cs-glossary-service.png"
 keywords = ["Služba", "Service", "Koncept", "Slovník", "Tomáš Korčák"]

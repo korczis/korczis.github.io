@@ -44,7 +44,7 @@ Shell jsem psal v 41 veřejných repozitářích, od roku 2013 do 2026; v 13 z n
 
 K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (11), [Systémy a infrastruktura](@/projects/systems.cs.md) (10), [Data a GIS](@/projects/data.cs.md) (5) a [Učení a experimenty](@/projects/learning.cs.md) (4).
 
-Naposledy: [openttd-prismatic-bridge](@/work/openttd-prismatic-bridge.cs.md); [Majordomus](@/work/prismatic-majordomus.cs.md): Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model; [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat.
+Naposledy: [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat; [Majordomus reel](@/work/majordomus-reel.cs.md): Hlas, snímky, hudba i zvuk, vše generované a verzované jako software; [openttd-prismatic-bridge](@/work/openttd-prismatic-bridge.cs.md).
 
 9 z těchto projektů běží jako živé weby.
 

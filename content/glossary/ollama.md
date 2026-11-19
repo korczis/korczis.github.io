@@ -17,7 +17,7 @@ definition = "A runtime that serves open language models on local hardware, so s
 aliases = []
 reference = { title = "Ollama", url = "https://ollama.com/" }
 pages = ["services/decision-support-ai.md", "services/reputation-intelligence.md"]
-related = ["alpine-js", "claude-api", "css", "decision-support-system", "dockerfile", "elixir", "fastapi", "flowbite-pro"]
+related = ["alpine-js", "claude-api", "decision-support-system", "dockerfile", "elixir", "fastapi", "flowbite-pro", "github-actions"]
 og_title = "Ollama: glossary"
 og_image = "og/glossary-ollama.png"
 keywords = ["Ollama", "Technology", "Glossary", "Tomas Korcak"]

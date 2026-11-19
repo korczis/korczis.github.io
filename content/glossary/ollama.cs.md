@@ -17,7 +17,7 @@ definition = "Běhové prostředí, které servíruje otevřené jazykové model
 aliases = []
 reference = { title = "Ollama", url = "https://ollama.com/" }
 pages = ["services/decision-support-ai.cs.md", "services/reputation-intelligence.cs.md"]
-related = ["alpine-js", "claude-api", "css", "decision-support-system", "dockerfile", "elixir", "fastapi", "flowbite-pro"]
+related = ["alpine-js", "claude-api", "decision-support-system", "dockerfile", "elixir", "fastapi", "flowbite-pro", "github-actions"]
 og_title = "Ollama: slovník"
 og_image = "og/cs-glossary-ollama.png"
 keywords = ["Ollama", "Technologie", "Slovník", "Tomáš Korčák"]

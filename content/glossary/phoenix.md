@@ -17,7 +17,7 @@ definition = "Elixir's web framework; LiveView renders interactive pages on the 
 aliases = ["Phoenix LiveView", "LiveView", "phoenix_live_view"]
 reference = { title = "Phoenix Framework", url = "https://www.phoenixframework.org/" }
 pages = ["services/attack-surface.md", "services/continuous-monitoring.md", "services/decision-support-ai.md", "services/due-diligence.md", "services/m-and-a.md", "services/reputation-intelligence.md"]
-related = ["alpine-js", "claude-api", "dockerfile", "elixir", "fastapi", "flowbite-pro", "html", "javascript"]
+related = ["alpine-js", "claude-api", "dockerfile", "elixir", "fastapi", "flowbite-pro", "github-actions", "html"]
 og_title = "Phoenix: glossary"
 og_image = "og/glossary-phoenix.png"
 keywords = ["Phoenix", "Technology", "Glossary", "Tomas Korcak"]

@@ -13,7 +13,7 @@ skill = "policy-as-code"
 og_title = "Pravidla jako kód: dovednosti"
 og_image = "og/cs-skill-policy-as-code.png"
 schema = "skill"
-terms = ["skill", "policy-as-code", "javascript", "html", "css", "shell", "majordomus", "mcp", "postgis", "python", "rust", "zola"]
+terms = ["skill", "policy-as-code", "javascript", "html", "shell", "css", "majordomus", "python", "rust", "zola", "alpine-js", "apache-echarts"]
 keywords = ["Pravidla jako kód", "Řízený vývoj softwaru s AI", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -31,7 +31,7 @@ Pojem, na kterém stojí: [Pravidla jako kód](@/glossary/policy-as-code.cs.md).
 
 Služby, které z ní čerpají: [Řízený vývoj softwaru s AI](@/services/ai-engineering-governance.cs.md).
 
-Praktikovaná s: [JavaScript](@/glossary/javascript.cs.md), [HTML](@/glossary/html.cs.md), [CSS](@/glossary/css.cs.md), [Shell](@/glossary/shell.cs.md), [Majordomus](@/glossary/majordomus.cs.md), [MCP](@/glossary/mcp.cs.md), [PostGIS](@/glossary/postgis.cs.md) a [Python](@/glossary/python.cs.md).
+Praktikovaná s: [JavaScript](@/glossary/javascript.cs.md), [HTML](@/glossary/html.cs.md), [Shell](@/glossary/shell.cs.md), [CSS](@/glossary/css.cs.md), [Majordomus](@/glossary/majordomus.cs.md), [Python](@/glossary/python.cs.md), [Rust](@/glossary/rust.cs.md) a [Zola](@/glossary/zola.cs.md).
 
 Veřejná práce, jejíž vlastní slova ji dokládají: [majordomus-reel](https://github.com/korczis/majordomus-reel), [prismatic-majordomus](https://github.com/korczis/prismatic-majordomus), [korczis.github.io](https://github.com/korczis/korczis.github.io) a [data-atlas](https://github.com/korczis/data-atlas).
 

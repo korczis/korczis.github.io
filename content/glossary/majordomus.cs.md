@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Vlastníkova dohledová vrstva pro práci s AI: jedna politika pro každého agenta, vymezené úkoly a dokončení, která musí být doložena."
 aliases = []
 reference = { title = "majordomus.dev", url = "https://majordomus.dev" }
-pages = ["about.cs.md", "hire.cs.md", "interfaces.cs.md", "services/_index.cs.md", "services/ai-engineering-governance.cs.md", "services/continuous-monitoring.cs.md", "services/decision-support-ai.cs.md", "services/digital-forensics.cs.md", "services/interactive-data-products.cs.md", "skills/_index.cs.md", "skills/audit-trail.cs.md", "skills/data-room.cs.md", "skills/insolvency-monitoring.cs.md", "skills/interactive-visualisation.cs.md", "skills/knowledge-graph.cs.md", "skills/policy-as-code.cs.md", "skills/risk-scoring.cs.md", "stack.cs.md", "_index.cs.md"]
-related = ["javascript", "alpine-js", "flowbite-pro", "html", "claude-api", "dockerfile", "python", "shell"]
+pages = ["about.cs.md", "hire.cs.md", "interfaces.cs.md", "services/_index.cs.md", "services/ai-engineering-governance.cs.md", "services/continuous-monitoring.cs.md", "services/decision-support-ai.cs.md", "services/interactive-data-products.cs.md", "skills/_index.cs.md", "skills/data-room.cs.md", "skills/insolvency-monitoring.cs.md", "skills/interactive-visualisation.cs.md", "skills/knowledge-graph.cs.md", "skills/policy-as-code.cs.md", "skills/risk-scoring.cs.md", "stack.cs.md", "_index.cs.md"]
+related = ["alpine-js", "javascript", "flowbite-pro", "html", "dockerfile", "claude-api", "fastapi", "skill"]
 og_title = "Majordomus: slovník"
 og_image = "og/cs-glossary-majordomus.png"
 keywords = ["Majordomus", "Technologie", "Slovník", "Tomáš Korčák"]
@@ -44,7 +44,7 @@ Majordomus je součástí 4 mých veřejných repozitářů, od roku 2024 do 202
 
 K čemu to sloužilo: [Znalosti](@/projects/knowledge.cs.md) (1), [Média a umění](@/projects/media.cs.md) (1), [Věda a vizualizace](@/projects/science.cs.md) (1) a [Web](@/projects/web.cs.md) (1).
 
-Naposledy: [korczis.github.io](@/work/korczis-github-io.cs.md); [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat; [Majordomus reel](@/work/majordomus-reel.cs.md): Hlas, snímky, hudba i zvuk, vše generované a verzované jako software.
+Naposledy: [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat; [korczis.github.io](@/work/korczis-github-io.cs.md); [Majordomus reel](@/work/majordomus-reel.cs.md): Hlas, snímky, hudba i zvuk, vše generované a verzované jako software.
 
 3 z těchto projektů běží jako živé weby.
 

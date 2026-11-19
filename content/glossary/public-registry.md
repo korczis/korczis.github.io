@@ -17,7 +17,7 @@ definition = "An official register a state keeps open to the public: companies, 
 aliases = []
 reference = { title = "Open Ownership: registers", url = "https://www.openownership.org/en/topics/beneficial-ownership-registers/" }
 pages = ["services/_index.md", "services/continuous-monitoring.md", "services/digital-investigation.md", "services/due-diligence.md", "skills/_index.md", "skills/registry-intelligence.md"]
-related = ["javascript", "alpine-js", "claude-api", "dockerfile", "fastapi", "flowbite-pro", "html", "record-linkage"]
+related = ["javascript", "alpine-js", "dockerfile", "fastapi", "flowbite-pro", "html", "record-linkage", "service"]
 og_title = "Public registry: glossary"
 og_image = "og/glossary-public-registry.png"
 keywords = ["Public registry", "Concept", "Glossary", "Tomas Korcak"]

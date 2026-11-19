@@ -16,8 +16,8 @@ kind = "technology"
 definition = "A static site generator in one Rust binary: Markdown and templates in, a whole multilingual website out."
 aliases = []
 reference = { title = "getzola.org", url = "https://www.getzola.org/documentation/getting-started/overview/" }
-pages = ["_index.md", "projects/ai.md", "projects/knowledge.md", "services/interactive-data-products.md", "skills/policy-as-code.md", "stack.md", "work/kompendium-epistemicke-anihilace.md", "work/prismatic-majordomus.md"]
-related = ["apache-echarts", "elixir", "flowbite-pro", "repository", "rust", "alpine-js", "html", "javascript"]
+pages = ["_index.md", "projects/ai.md", "projects/knowledge.md", "services/ai-engineering-governance.md", "services/interactive-data-products.md", "skills/policy-as-code.md", "stack.md", "work/kompendium-epistemicke-anihilace.md", "work/prismatic-majordomus.md"]
+related = ["alpine-js", "apache-echarts", "elixir", "flowbite-pro", "rust", "html", "javascript", "python"]
 og_title = "Zola: glossary"
 og_image = "og/glossary-zola.png"
 keywords = ["Zola", "Technology", "Glossary", "Tomas Korcak"]
@@ -44,7 +44,7 @@ Zola is part of 3 of my public repositories, from 2024 to 2026.
 
 What it was for: [AI engineering](@/projects/ai.md) (1), [Knowledge](@/projects/knowledge.md) (1) and [Web](@/projects/web.md) (1).
 
-Most recently: [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus; [Majordomus](@/work/prismatic-majordomus.md): One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model; [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore.
+Most recently: [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore; [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus; [Majordomus](@/work/prismatic-majordomus.md): One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.
 
 2 of these projects run as live sites.
 

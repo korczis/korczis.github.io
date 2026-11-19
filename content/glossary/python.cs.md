@@ -17,7 +17,7 @@ definition = "Univerzální jazyk ceněný pro čitelnost, běžný v práci s d
 aliases = []
 reference = { title = "python.org", url = "https://www.python.org/about/" }
 pages = ["cases/financial-group.cs.md", "projects/data.cs.md", "projects/media.cs.md", "projects/science.cs.md", "projects/tools.cs.md", "services/_index.cs.md", "services/ai-engineering-governance.cs.md", "services/compliance-screening.cs.md", "services/decision-support-ai.cs.md", "services/digital-forensics.cs.md", "services/digital-investigation.cs.md", "services/due-diligence.cs.md", "services/interactive-data-products.cs.md", "services/m-and-a.cs.md", "services/reputation-intelligence.cs.md", "skills/_index.cs.md", "skills/audit-trail.cs.md", "skills/decision-support.cs.md", "skills/document-extraction.cs.md", "skills/due-diligence.cs.md", "skills/entity-resolution.cs.md", "skills/interactive-visualisation.cs.md", "skills/llm-agents.cs.md", "skills/m-and-a-screening.cs.md", "skills/narrative-analysis.cs.md", "skills/osint-investigation.cs.md", "skills/policy-as-code.cs.md", "work/astronomists.cs.md", "work/big-png.cs.md", "work/catharsis-as-a-service.cs.md", "work/data-atlas.cs.md", "work/gists-search.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/kuzu-ex.cs.md", "work/majordomus-reel.cs.md", "work/openttd-prismatic-bridge.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/pdf-renderer.cs.md", "work/prismatic-majordomus.cs.md", "work/prismatic.cs.md", "work/sonic-playground.cs.md", "_index.cs.md"]
-related = ["html", "javascript", "shell", "alpine-js", "elixir", "claude-api", "flowbite-pro", "css"]
+related = ["html", "javascript", "shell", "alpine-js", "elixir", "claude-api", "css", "dockerfile"]
 og_title = "Python: slovník"
 og_image = "og/cs-glossary-python.png"
 keywords = ["Python", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
@@ -44,7 +44,7 @@ Python jsem psal v 12 veřejných repozitářích, od roku 2015 do 2026; v 7 z n
 
 K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (4), [Média a umění](@/projects/media.cs.md) (3), [Data a GIS](@/projects/data.cs.md) (2) a [Znalosti](@/projects/knowledge.cs.md) (1).
 
-Naposledy: [openttd-prismatic-bridge](@/work/openttd-prismatic-bridge.cs.md); [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat; [Sonic Playground](@/work/sonic-playground.cs.md): Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.
+Naposledy: [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat; [openttd-prismatic-bridge](@/work/openttd-prismatic-bridge.cs.md); [Sonic Playground](@/work/sonic-playground.cs.md): Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.
 
 7 z těchto projektů běží jako živé weby.
 

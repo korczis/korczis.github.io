@@ -67,6 +67,40 @@
       ],
       "repos": [
         {
+          "name": "kompendium-epistemicke-anihilace",
+          "title": "Kompendium",
+          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
+          "work": true,
+          "slug": "kompendium-epistemicke-anihilace",
+          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+          "category": "knowledge",
+          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
+          "summary": "A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore.",
+          "summary_cs": "Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat.",
+          "created": "2026-11-09",
+          "pushed": "2026-11-19",
+          "primary": false,
+          "share": 22.4,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "Elixir",
+            "JavaScript",
+            "Python",
+            "HTML",
+            "Shell",
+            "Rust",
+            "Zola",
+            "Cytoscape.js",
+            "Apache ECharts",
+            "Alpine.js",
+            "Flowbite Pro",
+            "Majordomus"
+          ]
+        },
+        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "url": "https://github.com/korczis/korczis.github.io",
@@ -98,6 +132,33 @@
             "p5.js",
             "Tailwind CSS",
             "Zola"
+          ]
+        },
+        {
+          "name": "majordomus-reel",
+          "title": "Majordomus reel",
+          "url": "https://github.com/korczis/majordomus-reel",
+          "work": true,
+          "slug": "majordomus-reel",
+          "site": "https://korczis.github.io/majordomus-reel/",
+          "category": "media",
+          "description": "A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound",
+          "summary": "Voice, frames, music and sound, all generated and versioned like software.",
+          "summary_cs": "Hlas, snímky, hudba i zvuk, vše generované a verzované jako software.",
+          "created": "2026-10-23",
+          "pushed": "2026-11-19",
+          "primary": true,
+          "share": 66.3,
+          "via": [
+            "primary",
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "Shell",
+            "Majordomus"
           ]
         },
         {
@@ -184,67 +245,6 @@
             "Zola",
             "Claude API",
             "Mermaid"
-          ]
-        },
-        {
-          "name": "kompendium-epistemicke-anihilace",
-          "title": "Kompendium",
-          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
-          "work": true,
-          "slug": "kompendium-epistemicke-anihilace",
-          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
-          "category": "knowledge",
-          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
-          "summary": "A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore.",
-          "summary_cs": "Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat.",
-          "created": "2026-11-09",
-          "pushed": "2026-11-18",
-          "primary": false,
-          "share": 22.4,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "Elixir",
-            "JavaScript",
-            "Python",
-            "HTML",
-            "Shell",
-            "Rust",
-            "Zola",
-            "Cytoscape.js",
-            "Apache ECharts",
-            "Alpine.js",
-            "Flowbite Pro",
-            "Majordomus"
-          ]
-        },
-        {
-          "name": "majordomus-reel",
-          "title": "Majordomus reel",
-          "url": "https://github.com/korczis/majordomus-reel",
-          "work": true,
-          "slug": "majordomus-reel",
-          "site": "https://korczis.github.io/majordomus-reel/",
-          "category": "media",
-          "description": "A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound",
-          "summary": "Voice, frames, music and sound, all generated and versioned like software.",
-          "summary_cs": "Hlas, snímky, hudba i zvuk, vše generované a verzované jako software.",
-          "created": "2026-10-23",
-          "pushed": "2026-11-18",
-          "primary": true,
-          "share": 66.3,
-          "via": [
-            "primary",
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "Shell",
-            "Majordomus"
           ]
         },
         {
@@ -2788,9 +2788,9 @@
           "summary": "A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore.",
           "summary_cs": "Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat.",
           "created": "2026-11-09",
-          "pushed": "2026-11-18",
+          "pushed": "2026-11-19",
           "primary": true,
-          "share": 32.3,
+          "share": 32,
           "via": [
             "primary",
             "code"
@@ -3836,6 +3836,40 @@
       ],
       "repos": [
         {
+          "name": "kompendium-epistemicke-anihilace",
+          "title": "Kompendium",
+          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
+          "work": true,
+          "slug": "kompendium-epistemicke-anihilace",
+          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+          "category": "knowledge",
+          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
+          "summary": "A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore.",
+          "summary_cs": "Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat.",
+          "created": "2026-11-09",
+          "pushed": "2026-11-19",
+          "primary": false,
+          "share": 8,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "Elixir",
+            "JavaScript",
+            "Python",
+            "HTML",
+            "Shell",
+            "Rust",
+            "Zola",
+            "Cytoscape.js",
+            "Apache ECharts",
+            "Alpine.js",
+            "Flowbite Pro",
+            "Majordomus"
+          ]
+        },
+        {
           "name": "prismatic-majordomus",
           "title": "Majordomus",
           "url": "https://github.com/korczis/prismatic-majordomus",
@@ -3866,40 +3900,6 @@
             "Zola",
             "Claude API",
             "Mermaid"
-          ]
-        },
-        {
-          "name": "kompendium-epistemicke-anihilace",
-          "title": "Kompendium",
-          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
-          "work": true,
-          "slug": "kompendium-epistemicke-anihilace",
-          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
-          "category": "knowledge",
-          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
-          "summary": "A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore.",
-          "summary_cs": "Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat.",
-          "created": "2026-11-09",
-          "pushed": "2026-11-18",
-          "primary": false,
-          "share": 8.1,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "Elixir",
-            "JavaScript",
-            "Python",
-            "HTML",
-            "Shell",
-            "Rust",
-            "Zola",
-            "Cytoscape.js",
-            "Apache ECharts",
-            "Alpine.js",
-            "Flowbite Pro",
-            "Majordomus"
           ]
         },
         {
@@ -4455,6 +4455,40 @@
       ],
       "repos": [
         {
+          "name": "kompendium-epistemicke-anihilace",
+          "title": "Kompendium",
+          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
+          "work": true,
+          "slug": "kompendium-epistemicke-anihilace",
+          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+          "category": "knowledge",
+          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
+          "summary": "A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore.",
+          "summary_cs": "Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat.",
+          "created": "2026-11-09",
+          "pushed": "2026-11-19",
+          "primary": false,
+          "share": 16.8,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "Elixir",
+            "JavaScript",
+            "Python",
+            "HTML",
+            "Shell",
+            "Rust",
+            "Zola",
+            "Cytoscape.js",
+            "Apache ECharts",
+            "Alpine.js",
+            "Flowbite Pro",
+            "Majordomus"
+          ]
+        },
+        {
           "name": "openttd-prismatic-bridge",
           "title": "openttd-prismatic-bridge",
           "url": "https://gitlab.com/korczis/openttd-prismatic-bridge",
@@ -4480,40 +4514,6 @@
             "HTML",
             "JavaScript",
             "Shell"
-          ]
-        },
-        {
-          "name": "kompendium-epistemicke-anihilace",
-          "title": "Kompendium",
-          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
-          "work": true,
-          "slug": "kompendium-epistemicke-anihilace",
-          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
-          "category": "knowledge",
-          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
-          "summary": "A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore.",
-          "summary_cs": "Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat.",
-          "created": "2026-11-09",
-          "pushed": "2026-11-18",
-          "primary": false,
-          "share": 16.6,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "Elixir",
-            "JavaScript",
-            "Python",
-            "HTML",
-            "Shell",
-            "Rust",
-            "Zola",
-            "Cytoscape.js",
-            "Apache ECharts",
-            "Alpine.js",
-            "Flowbite Pro",
-            "Majordomus"
           ]
         },
         {
@@ -4878,6 +4878,66 @@
       ],
       "repos": [
         {
+          "name": "kompendium-epistemicke-anihilace",
+          "title": "Kompendium",
+          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
+          "work": true,
+          "slug": "kompendium-epistemicke-anihilace",
+          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+          "category": "knowledge",
+          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
+          "summary": "A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore.",
+          "summary_cs": "Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat.",
+          "created": "2026-11-09",
+          "pushed": "2026-11-19",
+          "primary": false,
+          "share": 9.2,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "Elixir",
+            "JavaScript",
+            "Python",
+            "HTML",
+            "Shell",
+            "Rust",
+            "Zola",
+            "Cytoscape.js",
+            "Apache ECharts",
+            "Alpine.js",
+            "Flowbite Pro",
+            "Majordomus"
+          ]
+        },
+        {
+          "name": "majordomus-reel",
+          "title": "Majordomus reel",
+          "url": "https://github.com/korczis/majordomus-reel",
+          "work": true,
+          "slug": "majordomus-reel",
+          "site": "https://korczis.github.io/majordomus-reel/",
+          "category": "media",
+          "description": "A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound",
+          "summary": "Voice, frames, music and sound, all generated and versioned like software.",
+          "summary_cs": "Hlas, snímky, hudba i zvuk, vše generované a verzované jako software.",
+          "created": "2026-10-23",
+          "pushed": "2026-11-19",
+          "primary": false,
+          "share": 1,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "Shell",
+            "Majordomus"
+          ]
+        },
+        {
           "name": "openttd-prismatic-bridge",
           "title": "openttd-prismatic-bridge",
           "url": "https://gitlab.com/korczis/openttd-prismatic-bridge",
@@ -4932,66 +4992,6 @@
             "Zola",
             "Claude API",
             "Mermaid"
-          ]
-        },
-        {
-          "name": "kompendium-epistemicke-anihilace",
-          "title": "Kompendium",
-          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
-          "work": true,
-          "slug": "kompendium-epistemicke-anihilace",
-          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
-          "category": "knowledge",
-          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
-          "summary": "A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore.",
-          "summary_cs": "Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat.",
-          "created": "2026-11-09",
-          "pushed": "2026-11-18",
-          "primary": false,
-          "share": 9,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "Elixir",
-            "JavaScript",
-            "Python",
-            "HTML",
-            "Shell",
-            "Rust",
-            "Zola",
-            "Cytoscape.js",
-            "Apache ECharts",
-            "Alpine.js",
-            "Flowbite Pro",
-            "Majordomus"
-          ]
-        },
-        {
-          "name": "majordomus-reel",
-          "title": "Majordomus reel",
-          "url": "https://github.com/korczis/majordomus-reel",
-          "work": true,
-          "slug": "majordomus-reel",
-          "site": "https://korczis.github.io/majordomus-reel/",
-          "category": "media",
-          "description": "A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound",
-          "summary": "Voice, frames, music and sound, all generated and versioned like software.",
-          "summary_cs": "Hlas, snímky, hudba i zvuk, vše generované a verzované jako software.",
-          "created": "2026-10-23",
-          "pushed": "2026-11-18",
-          "primary": false,
-          "share": 1,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "Shell",
-            "Majordomus"
           ]
         },
         {
@@ -5995,6 +5995,40 @@
       ],
       "repos": [
         {
+          "name": "kompendium-epistemicke-anihilace",
+          "title": "Kompendium",
+          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
+          "work": true,
+          "slug": "kompendium-epistemicke-anihilace",
+          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+          "category": "knowledge",
+          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
+          "summary": "A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore.",
+          "summary_cs": "Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat.",
+          "created": "2026-11-09",
+          "pushed": "2026-11-19",
+          "primary": false,
+          "share": 11.3,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "Elixir",
+            "JavaScript",
+            "Python",
+            "HTML",
+            "Shell",
+            "Rust",
+            "Zola",
+            "Cytoscape.js",
+            "Apache ECharts",
+            "Alpine.js",
+            "Flowbite Pro",
+            "Majordomus"
+          ]
+        },
+        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "url": "https://github.com/korczis/korczis.github.io",
@@ -6025,6 +6059,33 @@
             "p5.js",
             "Tailwind CSS",
             "Zola"
+          ]
+        },
+        {
+          "name": "majordomus-reel",
+          "title": "Majordomus reel",
+          "url": "https://github.com/korczis/majordomus-reel",
+          "work": true,
+          "slug": "majordomus-reel",
+          "site": "https://korczis.github.io/majordomus-reel/",
+          "category": "media",
+          "description": "A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound",
+          "summary": "Voice, frames, music and sound, all generated and versioned like software.",
+          "summary_cs": "Hlas, snímky, hudba i zvuk, vše generované a verzované jako software.",
+          "created": "2026-10-23",
+          "pushed": "2026-11-19",
+          "primary": false,
+          "share": 32,
+          "via": [
+            "code",
+            "stack"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "Shell",
+            "Majordomus"
           ]
         },
         {
@@ -6108,67 +6169,6 @@
             "Zola",
             "Claude API",
             "Mermaid"
-          ]
-        },
-        {
-          "name": "kompendium-epistemicke-anihilace",
-          "title": "Kompendium",
-          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
-          "work": true,
-          "slug": "kompendium-epistemicke-anihilace",
-          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
-          "category": "knowledge",
-          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
-          "summary": "A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore.",
-          "summary_cs": "Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat.",
-          "created": "2026-11-09",
-          "pushed": "2026-11-18",
-          "primary": false,
-          "share": 11.4,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "Elixir",
-            "JavaScript",
-            "Python",
-            "HTML",
-            "Shell",
-            "Rust",
-            "Zola",
-            "Cytoscape.js",
-            "Apache ECharts",
-            "Alpine.js",
-            "Flowbite Pro",
-            "Majordomus"
-          ]
-        },
-        {
-          "name": "majordomus-reel",
-          "title": "Majordomus reel",
-          "url": "https://github.com/korczis/majordomus-reel",
-          "work": true,
-          "slug": "majordomus-reel",
-          "site": "https://korczis.github.io/majordomus-reel/",
-          "category": "media",
-          "description": "A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound",
-          "summary": "Voice, frames, music and sound, all generated and versioned like software.",
-          "summary_cs": "Hlas, snímky, hudba i zvuk, vše generované a verzované jako software.",
-          "created": "2026-10-23",
-          "pushed": "2026-11-18",
-          "primary": false,
-          "share": 32,
-          "via": [
-            "code",
-            "stack"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "Shell",
-            "Majordomus"
           ]
         },
         {
@@ -8895,6 +8895,41 @@
       ],
       "repos": [
         {
+          "name": "kompendium-epistemicke-anihilace",
+          "title": "Kompendium",
+          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
+          "work": true,
+          "slug": "kompendium-epistemicke-anihilace",
+          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+          "category": "knowledge",
+          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
+          "summary": "A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore.",
+          "summary_cs": "Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat.",
+          "created": "2026-11-09",
+          "pushed": "2026-11-19",
+          "primary": false,
+          "share": null,
+          "via": [
+            "stack",
+            "topic"
+          ],
+          "supervised": true,
+          "uses": [
+            "Elixir",
+            "JavaScript",
+            "Python",
+            "HTML",
+            "Shell",
+            "Rust",
+            "Zola",
+            "Cytoscape.js",
+            "Apache ECharts",
+            "Alpine.js",
+            "Flowbite Pro",
+            "Majordomus"
+          ]
+        },
+        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "url": "https://github.com/korczis/korczis.github.io",
@@ -8925,41 +8960,6 @@
             "p5.js",
             "Tailwind CSS",
             "Zola"
-          ]
-        },
-        {
-          "name": "kompendium-epistemicke-anihilace",
-          "title": "Kompendium",
-          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
-          "work": true,
-          "slug": "kompendium-epistemicke-anihilace",
-          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
-          "category": "knowledge",
-          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
-          "summary": "A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore.",
-          "summary_cs": "Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat.",
-          "created": "2026-11-09",
-          "pushed": "2026-11-18",
-          "primary": false,
-          "share": null,
-          "via": [
-            "stack",
-            "topic"
-          ],
-          "supervised": true,
-          "uses": [
-            "Elixir",
-            "JavaScript",
-            "Python",
-            "HTML",
-            "Shell",
-            "Rust",
-            "Zola",
-            "Cytoscape.js",
-            "Apache ECharts",
-            "Alpine.js",
-            "Flowbite Pro",
-            "Majordomus"
           ]
         },
         {
@@ -9151,6 +9151,40 @@
       ],
       "repos": [
         {
+          "name": "kompendium-epistemicke-anihilace",
+          "title": "Kompendium",
+          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
+          "work": true,
+          "slug": "kompendium-epistemicke-anihilace",
+          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+          "category": "knowledge",
+          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
+          "summary": "A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore.",
+          "summary_cs": "Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat.",
+          "created": "2026-11-09",
+          "pushed": "2026-11-19",
+          "primary": false,
+          "share": null,
+          "via": [
+            "stack"
+          ],
+          "supervised": true,
+          "uses": [
+            "Elixir",
+            "JavaScript",
+            "Python",
+            "HTML",
+            "Shell",
+            "Rust",
+            "Zola",
+            "Cytoscape.js",
+            "Apache ECharts",
+            "Alpine.js",
+            "Flowbite Pro",
+            "Majordomus"
+          ]
+        },
+        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "url": "https://github.com/korczis/korczis.github.io",
@@ -9181,40 +9215,6 @@
             "p5.js",
             "Tailwind CSS",
             "Zola"
-          ]
-        },
-        {
-          "name": "kompendium-epistemicke-anihilace",
-          "title": "Kompendium",
-          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
-          "work": true,
-          "slug": "kompendium-epistemicke-anihilace",
-          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
-          "category": "knowledge",
-          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
-          "summary": "A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore.",
-          "summary_cs": "Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat.",
-          "created": "2026-11-09",
-          "pushed": "2026-11-18",
-          "primary": false,
-          "share": null,
-          "via": [
-            "stack"
-          ],
-          "supervised": true,
-          "uses": [
-            "Elixir",
-            "JavaScript",
-            "Python",
-            "HTML",
-            "Shell",
-            "Rust",
-            "Zola",
-            "Cytoscape.js",
-            "Apache ECharts",
-            "Alpine.js",
-            "Flowbite Pro",
-            "Majordomus"
           ]
         },
         {
@@ -9301,7 +9301,7 @@
           "summary": "A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore.",
           "summary_cs": "Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat.",
           "created": "2026-11-09",
-          "pushed": "2026-11-18",
+          "pushed": "2026-11-19",
           "primary": false,
           "share": null,
           "via": [
@@ -9354,6 +9354,40 @@
       ],
       "repos": [
         {
+          "name": "kompendium-epistemicke-anihilace",
+          "title": "Kompendium",
+          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
+          "work": true,
+          "slug": "kompendium-epistemicke-anihilace",
+          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+          "category": "knowledge",
+          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
+          "summary": "A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore.",
+          "summary_cs": "Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat.",
+          "created": "2026-11-09",
+          "pushed": "2026-11-19",
+          "primary": false,
+          "share": null,
+          "via": [
+            "stack"
+          ],
+          "supervised": true,
+          "uses": [
+            "Elixir",
+            "JavaScript",
+            "Python",
+            "HTML",
+            "Shell",
+            "Rust",
+            "Zola",
+            "Cytoscape.js",
+            "Apache ECharts",
+            "Alpine.js",
+            "Flowbite Pro",
+            "Majordomus"
+          ]
+        },
+        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "url": "https://github.com/korczis/korczis.github.io",
@@ -9384,40 +9418,6 @@
             "p5.js",
             "Tailwind CSS",
             "Zola"
-          ]
-        },
-        {
-          "name": "kompendium-epistemicke-anihilace",
-          "title": "Kompendium",
-          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
-          "work": true,
-          "slug": "kompendium-epistemicke-anihilace",
-          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
-          "category": "knowledge",
-          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
-          "summary": "A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore.",
-          "summary_cs": "Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat.",
-          "created": "2026-11-09",
-          "pushed": "2026-11-18",
-          "primary": false,
-          "share": null,
-          "via": [
-            "stack"
-          ],
-          "supervised": true,
-          "uses": [
-            "Elixir",
-            "JavaScript",
-            "Python",
-            "HTML",
-            "Shell",
-            "Rust",
-            "Zola",
-            "Cytoscape.js",
-            "Apache ECharts",
-            "Alpine.js",
-            "Flowbite Pro",
-            "Majordomus"
           ]
         },
         {
@@ -9607,6 +9607,41 @@
       ],
       "repos": [
         {
+          "name": "kompendium-epistemicke-anihilace",
+          "title": "Kompendium",
+          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
+          "work": true,
+          "slug": "kompendium-epistemicke-anihilace",
+          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+          "category": "knowledge",
+          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
+          "summary": "A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore.",
+          "summary_cs": "Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat.",
+          "created": "2026-11-09",
+          "pushed": "2026-11-19",
+          "primary": false,
+          "share": null,
+          "via": [
+            "stack",
+            "topic"
+          ],
+          "supervised": true,
+          "uses": [
+            "Elixir",
+            "JavaScript",
+            "Python",
+            "HTML",
+            "Shell",
+            "Rust",
+            "Zola",
+            "Cytoscape.js",
+            "Apache ECharts",
+            "Alpine.js",
+            "Flowbite Pro",
+            "Majordomus"
+          ]
+        },
+        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "url": "https://github.com/korczis/korczis.github.io",
@@ -9668,41 +9703,6 @@
             "Claude API",
             "Mermaid"
           ]
-        },
-        {
-          "name": "kompendium-epistemicke-anihilace",
-          "title": "Kompendium",
-          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
-          "work": true,
-          "slug": "kompendium-epistemicke-anihilace",
-          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
-          "category": "knowledge",
-          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
-          "summary": "A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore.",
-          "summary_cs": "Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat.",
-          "created": "2026-11-09",
-          "pushed": "2026-11-18",
-          "primary": false,
-          "share": null,
-          "via": [
-            "stack",
-            "topic"
-          ],
-          "supervised": true,
-          "uses": [
-            "Elixir",
-            "JavaScript",
-            "Python",
-            "HTML",
-            "Shell",
-            "Rust",
-            "Zola",
-            "Cytoscape.js",
-            "Apache ECharts",
-            "Alpine.js",
-            "Flowbite Pro",
-            "Majordomus"
-          ]
         }
       ],
       "engagements": []
@@ -9739,6 +9739,40 @@
       ],
       "repos": [
         {
+          "name": "kompendium-epistemicke-anihilace",
+          "title": "Kompendium",
+          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
+          "work": true,
+          "slug": "kompendium-epistemicke-anihilace",
+          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+          "category": "knowledge",
+          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
+          "summary": "A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore.",
+          "summary_cs": "Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat.",
+          "created": "2026-11-09",
+          "pushed": "2026-11-19",
+          "primary": false,
+          "share": null,
+          "via": [
+            "topic"
+          ],
+          "supervised": true,
+          "uses": [
+            "Elixir",
+            "JavaScript",
+            "Python",
+            "HTML",
+            "Shell",
+            "Rust",
+            "Zola",
+            "Cytoscape.js",
+            "Apache ECharts",
+            "Alpine.js",
+            "Flowbite Pro",
+            "Majordomus"
+          ]
+        },
+        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "url": "https://github.com/korczis/korczis.github.io",
@@ -9772,40 +9806,6 @@
           ]
         },
         {
-          "name": "kompendium-epistemicke-anihilace",
-          "title": "Kompendium",
-          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
-          "work": true,
-          "slug": "kompendium-epistemicke-anihilace",
-          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
-          "category": "knowledge",
-          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
-          "summary": "A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore.",
-          "summary_cs": "Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat.",
-          "created": "2026-11-09",
-          "pushed": "2026-11-18",
-          "primary": false,
-          "share": null,
-          "via": [
-            "topic"
-          ],
-          "supervised": true,
-          "uses": [
-            "Elixir",
-            "JavaScript",
-            "Python",
-            "HTML",
-            "Shell",
-            "Rust",
-            "Zola",
-            "Cytoscape.js",
-            "Apache ECharts",
-            "Alpine.js",
-            "Flowbite Pro",
-            "Majordomus"
-          ]
-        },
-        {
           "name": "majordomus-reel",
           "title": "Majordomus reel",
           "url": "https://github.com/korczis/majordomus-reel",
@@ -9817,7 +9817,7 @@
           "summary": "Voice, frames, music and sound, all generated and versioned like software.",
           "summary_cs": "Hlas, snímky, hudba i zvuk, vše generované a verzované jako software.",
           "created": "2026-10-23",
-          "pushed": "2026-11-18",
+          "pushed": "2026-11-19",
           "primary": false,
           "share": null,
           "via": [

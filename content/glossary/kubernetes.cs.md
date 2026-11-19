@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Systém, který provozuje kontejnery v clusteru: plánování, škálování, síť a nasazování deklarované jako zdroje."
 aliases = ["k8s"]
 reference = { title = "Kubernetes documentation", url = "https://kubernetes.io/docs/concepts/overview/" }
-pages = ["services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "services/due-diligence.cs.md", "services/m-and-a.cs.md", "skills/ai-transformation.cs.md", "skills/data-room.cs.md", "skills/entity-resolution.cs.md", "skills/insolvency-monitoring.cs.md", "skills/knowledge-graph.cs.md", "skills/m-and-a-screening.cs.md", "skills/market-intelligence.cs.md", "skills/orchestration.cs.md", "skills/risk-scoring.cs.md", "_index.cs.md"]
-related = ["alpine-js", "claude-api", "dockerfile", "fastapi", "flowbite-pro", "github-actions", "html", "javascript"]
+pages = ["services/_index.cs.md", "services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "services/due-diligence.cs.md", "services/m-and-a.cs.md", "skills/_index.cs.md", "skills/ai-transformation.cs.md", "skills/data-room.cs.md", "skills/entity-resolution.cs.md", "skills/insolvency-monitoring.cs.md", "skills/knowledge-graph.cs.md", "skills/m-and-a-screening.cs.md", "skills/market-intelligence.cs.md", "skills/orchestration.cs.md", "skills/risk-scoring.cs.md", "_index.cs.md"]
+related = ["alpine-js", "dockerfile", "fastapi", "flowbite-pro", "html", "javascript", "claude-api", "github-actions"]
 og_title = "Kubernetes: slovník"
 og_image = "og/cs-glossary-kubernetes.png"
 keywords = ["Kubernetes", "Technologie", "Slovník", "Tomáš Korčák"]

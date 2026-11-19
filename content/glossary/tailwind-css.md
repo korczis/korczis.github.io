@@ -16,8 +16,8 @@ kind = "technology"
 definition = "A CSS framework of small utility classes composed in the markup, compiled to only what a page uses."
 aliases = ["tailwindcss"]
 reference = { title = "tailwindcss.com", url = "https://tailwindcss.com/docs" }
-pages = ["services/ai-engineering-governance.md", "skills/audit-trail.md", "stack.md", "_index.md"]
-related = ["alpine-js", "flowbite-pro", "majordomus", "audit-trail", "claude-api", "css", "html", "javascript"]
+pages = ["stack.md", "_index.md"]
+related = ["alpine-js", "apache-echarts", "chart-js", "cytoscape-js", "d3", "flowbite-pro", "github-pages", "i18n"]
 og_title = "Tailwind CSS: glossary"
 og_image = "og/glossary-tailwind-css.png"
 keywords = ["Tailwind CSS", "Technology", "Glossary", "Tomas Korcak"]

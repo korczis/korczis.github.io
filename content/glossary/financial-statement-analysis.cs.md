@@ -17,7 +17,7 @@ definition = "Čtení zdraví firmy z rozvahy, výsledovky a cash flow: ukazatel
 aliases = []
 reference = { title = "IFRS: financial statements", url = "https://www.ifrs.org/issued-standards/list-of-standards/ias-1-presentation-of-financial-statements/" }
 pages = ["services/_index.cs.md", "services/due-diligence.cs.md", "services/m-and-a.cs.md", "skills/_index.cs.md", "skills/financial-analysis.cs.md"]
-related = ["alpine-js", "beneficial-ownership", "claude-api", "decision-support-system", "dockerfile", "due-diligence", "fastapi", "flowbite-pro"]
+related = ["alpine-js", "beneficial-ownership", "decision-support-system", "dockerfile", "due-diligence", "fastapi", "flowbite-pro", "html"]
 og_title = "Analýza účetních výkazů: slovník"
 og_image = "og/cs-glossary-financial-statement-analysis.png"
 keywords = ["Analýza účetních výkazů", "Financial statement analysis", "Koncept", "Slovník", "Tomáš Korčák"]

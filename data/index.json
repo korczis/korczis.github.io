@@ -1,6 +1,6 @@
 {
  "schema": "korczis-hub-index/v1",
- "generated_at": "2026-11-19T02:47:02Z",
+ "generated_at": "2026-11-19T12:01:03Z",
  "rule": "original = the owner wrote at least half of the listed commits; forks and mirrors are counted, not listed",
  "counts": {
   "github": 448,
@@ -18,7 +18,7 @@
  "dropped": [],
  "supervision": {
   "marker": ".ai/manifest.yaml",
-  "measured_at": "2026-11-19T02:47:02Z",
+  "measured_at": "2026-11-19T12:01:03Z",
   "kept": 0
  },
  "all_repos": [
@@ -1631,7 +1631,7 @@
    ],
    "stars": 0,
    "created_at": "2026-11-09T22:04:50Z",
-   "pushed_at": "2026-11-18T10:05:17Z",
+   "pushed_at": "2026-11-19T11:06:13Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -1664,7 +1664,7 @@
    ],
    "stars": 0,
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-19T01:15:00Z",
+   "pushed_at": "2026-11-19T11:40:49Z",
    "archived": false,
    "share": 0.94,
    "hosts": {
@@ -1842,7 +1842,7 @@
    ],
    "stars": 0,
    "created_at": "2026-10-23T00:51:59Z",
-   "pushed_at": "2026-11-18T07:00:26Z",
+   "pushed_at": "2026-11-19T10:35:13Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -2189,7 +2189,7 @@
    ],
    "stars": 1,
    "created_at": "2026-10-01T21:05:33Z",
-   "pushed_at": "2026-11-19T02:39:34Z",
+   "pushed_at": "2026-11-19T11:35:47Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -2452,7 +2452,7 @@
    ],
    "stars": 1,
    "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-19T01:55:51Z",
+   "pushed_at": "2026-11-19T05:33:30Z",
    "archived": false,
    "share": 0.99,
    "hosts": {
@@ -4329,11 +4329,11 @@
   }
  ],
  "by_category": {
-  "science": 12,
-  "ai": 5,
   "web": 14,
-  "media": 8,
+  "science": 12,
   "knowledge": 5,
+  "media": 8,
+  "ai": 5,
   "data": 49,
   "tools": 63,
   "security": 5,
@@ -4342,23 +4342,23 @@
   "learning": 21
  },
  "categories": {
+  "web": {
+   "repos": 14,
+   "sites": 0,
+   "top_language": "JavaScript",
+   "since": "2014"
+  },
   "science": {
    "repos": 12,
    "sites": 3,
    "top_language": "Rust",
    "since": "2014"
   },
-  "ai": {
+  "knowledge": {
    "repos": 5,
    "sites": 1,
-   "top_language": "Elixir",
-   "since": "2025"
-  },
-  "web": {
-   "repos": 14,
-   "sites": 0,
-   "top_language": "JavaScript",
-   "since": "2014"
+   "top_language": "Swift",
+   "since": "2013"
   },
   "media": {
    "repos": 8,
@@ -4366,11 +4366,11 @@
    "top_language": "JavaScript",
    "since": "2015"
   },
-  "knowledge": {
+  "ai": {
    "repos": 5,
    "sites": 1,
-   "top_language": "Swift",
-   "since": "2013"
+   "top_language": "Elixir",
+   "since": "2025"
   },
   "data": {
    "repos": 49,
@@ -4607,9 +4607,9 @@
   },
   "2026": {
    "JavaScript": 3,
+   "Elixir": 3,
    "Rust": 1,
    "Python": 5,
-   "Elixir": 3,
    "TypeScript": 1,
    "HTML": 2
   }
@@ -4621,12 +4621,12 @@
     "repos": 42,
     "evidence": [
      {
-      "name": "oscilla",
-      "url": "https://github.com/korczis/oscilla"
-     },
-     {
       "name": "korczis.github.io",
       "url": "https://github.com/korczis/korczis.github.io"
+     },
+     {
+      "name": "oscilla",
+      "url": "https://github.com/korczis/oscilla"
      },
      {
       "name": "majordomus-reel",
@@ -5101,36 +5101,36 @@
  "recent": {
   "size": 100,
   "from": "2018-03-08T21:01:52Z",
-  "to": "2026-11-19T02:39:34Z",
+  "to": "2026-11-19T11:40:49Z",
   "mix": {
-   "science": {
-    "JavaScript": 1,
-    "TypeScript": 1,
-    "Elixir": 1,
-    "Rust": 2
-   },
-   "ai": {
-    "Rust": 1,
-    "Elixir": 2,
-    "Unspecified": 2
-   },
    "web": {
     "JavaScript": 2,
     "HTML": 2,
     "CSS": 3,
     "Elixir": 1
    },
-   "media": {
-    "Python": 2,
+   "science": {
     "JavaScript": 1,
-    "HTML": 1,
-    "Dockerfile": 1,
-    "Elixir": 1
+    "TypeScript": 1,
+    "Elixir": 1,
+    "Rust": 2
    },
    "knowledge": {
     "Elixir": 1,
     "Swift": 2,
     "Unspecified": 1
+   },
+   "media": {
+    "JavaScript": 1,
+    "Python": 2,
+    "HTML": 1,
+    "Dockerfile": 1,
+    "Elixir": 1
+   },
+   "ai": {
+    "Rust": 1,
+    "Elixir": 2,
+    "Unspecified": 2
    },
    "data": {
     "Python": 1,
@@ -5169,6 +5169,39 @@
  },
  "repos": [
   {
+   "name": "korczis.github.io",
+   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+   "language": "JavaScript",
+   "topics": [
+    "accessibility",
+    "ai-agents",
+    "alpinejs",
+    "chartjs",
+    "cytoscape",
+    "echarts",
+    "flowbite",
+    "github-pages",
+    "majordomus",
+    "p5js",
+    "personal-website",
+    "portfolio",
+    "tailwindcss",
+    "zola"
+   ],
+   "stars": 0,
+   "created_at": "2024-12-24T16:48:15Z",
+   "pushed_at": "2026-11-19T11:40:49Z",
+   "archived": false,
+   "share": 0.94,
+   "hosts": {
+    "github": "https://github.com/korczis/korczis.github.io"
+   },
+   "site": null,
+   "supervised": true,
+   "category": "web",
+   "curated": false
+  },
+  {
    "name": "oscilla",
    "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
    "language": "JavaScript",
@@ -5185,7 +5218,7 @@
    ],
    "stars": 1,
    "created_at": "2026-10-01T21:05:33Z",
-   "pushed_at": "2026-11-19T02:39:34Z",
+   "pushed_at": "2026-11-19T11:35:47Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -5194,6 +5227,59 @@
    "site": "https://korczis.github.io/oscilla/",
    "supervised": true,
    "category": "science",
+   "curated": true
+  },
+  {
+   "name": "kompendium-epistemicke-anihilace",
+   "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
+   "language": "Elixir",
+   "topics": [
+    "czech",
+    "epistemology",
+    "flowbite",
+    "kompendium",
+    "majordomus",
+    "manipulation",
+    "psychology",
+    "taxonomy",
+    "zola"
+   ],
+   "stars": 0,
+   "created_at": "2026-11-09T22:04:50Z",
+   "pushed_at": "2026-11-19T11:06:13Z",
+   "archived": false,
+   "share": 1,
+   "hosts": {
+    "github": "https://github.com/korczis/kompendium-epistemicke-anihilace"
+   },
+   "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+   "supervised": true,
+   "category": "knowledge",
+   "curated": true
+  },
+  {
+   "name": "majordomus-reel",
+   "description": "A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound",
+   "language": "JavaScript",
+   "topics": [
+    "ai-agents",
+    "ffmpeg",
+    "generative",
+    "majordomus",
+    "puppeteer",
+    "video"
+   ],
+   "stars": 0,
+   "created_at": "2026-10-23T00:51:59Z",
+   "pushed_at": "2026-11-19T10:35:13Z",
+   "archived": false,
+   "share": 1,
+   "hosts": {
+    "github": "https://github.com/korczis/majordomus-reel"
+   },
+   "site": "https://korczis.github.io/majordomus-reel/",
+   "supervised": true,
+   "category": "media",
    "curated": true
   },
   {
@@ -5223,7 +5309,7 @@
    ],
    "stars": 1,
    "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-19T01:55:51Z",
+   "pushed_at": "2026-11-19T05:33:30Z",
    "archived": false,
    "share": 0.99,
    "hosts": {
@@ -5233,39 +5319,6 @@
    "supervised": true,
    "category": "ai",
    "curated": true
-  },
-  {
-   "name": "korczis.github.io",
-   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-   "language": "JavaScript",
-   "topics": [
-    "accessibility",
-    "ai-agents",
-    "alpinejs",
-    "chartjs",
-    "cytoscape",
-    "echarts",
-    "flowbite",
-    "github-pages",
-    "majordomus",
-    "p5js",
-    "personal-website",
-    "portfolio",
-    "tailwindcss",
-    "zola"
-   ],
-   "stars": 0,
-   "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-19T01:15:00Z",
-   "archived": false,
-   "share": 0.94,
-   "hosts": {
-    "github": "https://github.com/korczis/korczis.github.io"
-   },
-   "site": null,
-   "supervised": true,
-   "category": "web",
-   "curated": false
   },
   {
    "name": "openttd-prismatic-bridge",
@@ -5284,59 +5337,6 @@
    "supervised": false,
    "category": "media",
    "curated": false
-  },
-  {
-   "name": "kompendium-epistemicke-anihilace",
-   "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
-   "language": "Elixir",
-   "topics": [
-    "czech",
-    "epistemology",
-    "flowbite",
-    "kompendium",
-    "majordomus",
-    "manipulation",
-    "psychology",
-    "taxonomy",
-    "zola"
-   ],
-   "stars": 0,
-   "created_at": "2026-11-09T22:04:50Z",
-   "pushed_at": "2026-11-18T10:05:17Z",
-   "archived": false,
-   "share": 1,
-   "hosts": {
-    "github": "https://github.com/korczis/kompendium-epistemicke-anihilace"
-   },
-   "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
-   "supervised": true,
-   "category": "knowledge",
-   "curated": true
-  },
-  {
-   "name": "majordomus-reel",
-   "description": "A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound",
-   "language": "JavaScript",
-   "topics": [
-    "ai-agents",
-    "ffmpeg",
-    "generative",
-    "majordomus",
-    "puppeteer",
-    "video"
-   ],
-   "stars": 0,
-   "created_at": "2026-10-23T00:51:59Z",
-   "pushed_at": "2026-11-18T07:00:26Z",
-   "archived": false,
-   "share": 1,
-   "hosts": {
-    "github": "https://github.com/korczis/majordomus-reel"
-   },
-   "site": "https://korczis.github.io/majordomus-reel/",
-   "supervised": true,
-   "category": "media",
-   "curated": true
   },
   {
    "name": "sonic-playground",

@@ -122,8 +122,8 @@
  ],
  "front_matter_schema": "https://korczis.github.io/schemas/front-matter.schema.json",
  "data_as_of": {
-  "snapshot": "2026-11-19T02:40:40Z",
-  "index": "2026-11-19T02:47:02Z"
+  "snapshot": "2026-11-19T11:54:45Z",
+  "index": "2026-11-19T12:01:03Z"
  },
  "pages": [
   {
@@ -3165,12 +3165,12 @@
    "keywords": [
     "Tomáš Korčák: projekty",
     "korczis",
-    "oscilla",
-    "openttd-prismatic-bridge",
     "korczis.github.io",
-    "prismatic-majordomus",
-    "majordomus-reel",
+    "oscilla",
     "kompendium-epistemicke-anihilace",
+    "prismatic-majordomus",
+    "openttd-prismatic-bridge",
+    "majordomus-reel",
     "sonic-playground",
     "algoglyph"
    ]
@@ -9989,12 +9989,12 @@
    "keywords": [
     "Tomas Korcak projects",
     "korczis",
-    "oscilla",
-    "openttd-prismatic-bridge",
     "korczis.github.io",
-    "prismatic-majordomus",
-    "majordomus-reel",
+    "oscilla",
     "kompendium-epistemicke-anihilace",
+    "prismatic-majordomus",
+    "openttd-prismatic-bridge",
+    "majordomus-reel",
     "sonic-playground",
     "algoglyph"
    ]
@@ -14256,6 +14256,27 @@
  ],
  "repositories": [
   {
+   "name": "korczis.github.io",
+   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+   "language": "JavaScript",
+   "category": "web",
+   "page": "https://korczis.github.io/work/korczis-github-io/",
+   "pages": {
+    "en": "https://korczis.github.io/work/korczis-github-io/",
+    "cs": "https://korczis.github.io/cs/work/korczis-github-io/"
+   },
+   "github": "https://github.com/korczis/korczis.github.io",
+   "gitlab": null,
+   "site": null,
+   "created": "2024-12-24T16:48:15Z",
+   "active": "2026-11-19T11:40:49Z",
+   "last_commit": "2026-11-19T11:37:42Z",
+   "period": 12,
+   "archive": false,
+   "stars": 0,
+   "supervised": true
+  },
+  {
    "name": "oscilla",
    "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
    "language": "JavaScript",
@@ -14269,11 +14290,53 @@
    "gitlab": null,
    "site": "https://korczis.github.io/oscilla/",
    "created": "2026-10-01T21:05:33Z",
-   "active": "2026-11-19T02:39:34Z",
-   "last_commit": "2026-11-19T02:11:26Z",
+   "active": "2026-11-19T11:35:47Z",
+   "last_commit": "2026-11-19T11:21:47Z",
    "period": 12,
    "archive": false,
    "stars": 1,
+   "supervised": true
+  },
+  {
+   "name": "kompendium-epistemicke-anihilace",
+   "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
+   "language": "Elixir",
+   "category": "knowledge",
+   "page": "https://korczis.github.io/work/kompendium-epistemicke-anihilace/",
+   "pages": {
+    "en": "https://korczis.github.io/work/kompendium-epistemicke-anihilace/",
+    "cs": "https://korczis.github.io/cs/work/kompendium-epistemicke-anihilace/"
+   },
+   "github": "https://github.com/korczis/kompendium-epistemicke-anihilace",
+   "gitlab": null,
+   "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+   "created": "2026-11-09T22:04:50Z",
+   "active": "2026-11-19T11:06:13Z",
+   "last_commit": "2026-11-19T04:33:24Z",
+   "period": 12,
+   "archive": false,
+   "stars": 0,
+   "supervised": true
+  },
+  {
+   "name": "majordomus-reel",
+   "description": "A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound",
+   "language": "JavaScript",
+   "category": "media",
+   "page": "https://korczis.github.io/work/majordomus-reel/",
+   "pages": {
+    "en": "https://korczis.github.io/work/majordomus-reel/",
+    "cs": "https://korczis.github.io/cs/work/majordomus-reel/"
+   },
+   "github": "https://github.com/korczis/majordomus-reel",
+   "gitlab": null,
+   "site": "https://korczis.github.io/majordomus-reel/",
+   "created": "2026-10-23T00:51:59Z",
+   "active": "2026-11-19T10:35:13Z",
+   "last_commit": "2026-11-18T06:51:33Z",
+   "period": 12,
+   "archive": false,
+   "stars": 0,
    "supervised": true
   },
   {
@@ -14290,32 +14353,11 @@
    "gitlab": null,
    "site": "https://korczis.github.io/prismatic-majordomus/",
    "created": "2026-09-03T20:24:57Z",
-   "active": "2026-11-19T01:55:51Z",
-   "last_commit": "2026-11-18T14:10:08Z",
+   "active": "2026-11-19T05:33:30Z",
+   "last_commit": "2026-11-19T02:54:59Z",
    "period": 12,
    "archive": false,
    "stars": 1,
-   "supervised": true
-  },
-  {
-   "name": "korczis.github.io",
-   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-   "language": "JavaScript",
-   "category": "web",
-   "page": "https://korczis.github.io/work/korczis-github-io/",
-   "pages": {
-    "en": "https://korczis.github.io/work/korczis-github-io/",
-    "cs": "https://korczis.github.io/cs/work/korczis-github-io/"
-   },
-   "github": "https://github.com/korczis/korczis.github.io",
-   "gitlab": null,
-   "site": null,
-   "created": "2024-12-24T16:48:15Z",
-   "active": "2026-11-19T01:15:00Z",
-   "last_commit": "2026-11-19T01:13:58Z",
-   "period": 12,
-   "archive": false,
-   "stars": 0,
    "supervised": true
   },
   {
@@ -14338,48 +14380,6 @@
    "archive": false,
    "stars": 0,
    "supervised": false
-  },
-  {
-   "name": "kompendium-epistemicke-anihilace",
-   "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
-   "language": "Elixir",
-   "category": "knowledge",
-   "page": "https://korczis.github.io/work/kompendium-epistemicke-anihilace/",
-   "pages": {
-    "en": "https://korczis.github.io/work/kompendium-epistemicke-anihilace/",
-    "cs": "https://korczis.github.io/cs/work/kompendium-epistemicke-anihilace/"
-   },
-   "github": "https://github.com/korczis/kompendium-epistemicke-anihilace",
-   "gitlab": null,
-   "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
-   "created": "2026-11-09T22:04:50Z",
-   "active": "2026-11-18T10:05:17Z",
-   "last_commit": "2026-11-18T06:34:59Z",
-   "period": 12,
-   "archive": false,
-   "stars": 0,
-   "supervised": true
-  },
-  {
-   "name": "majordomus-reel",
-   "description": "A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound",
-   "language": "JavaScript",
-   "category": "media",
-   "page": "https://korczis.github.io/work/majordomus-reel/",
-   "pages": {
-    "en": "https://korczis.github.io/work/majordomus-reel/",
-    "cs": "https://korczis.github.io/cs/work/majordomus-reel/"
-   },
-   "github": "https://github.com/korczis/majordomus-reel",
-   "gitlab": null,
-   "site": "https://korczis.github.io/majordomus-reel/",
-   "created": "2026-10-23T00:51:59Z",
-   "active": "2026-11-18T07:00:26Z",
-   "last_commit": "2026-11-18T06:51:33Z",
-   "period": 12,
-   "archive": false,
-   "stars": 0,
-   "supervised": true
   },
   {
    "name": "sonic-playground",

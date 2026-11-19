@@ -17,7 +17,7 @@ definition = "An open-source relational database known for correctness and exten
 aliases = ["postgres"]
 reference = { title = "postgresql.org", url = "https://www.postgresql.org/about/" }
 pages = ["hire.md", "projects/tools.md", "services/attack-surface.md", "services/compliance-screening.md", "services/continuous-monitoring.md", "services/digital-forensics.md", "services/digital-investigation.md", "services/due-diligence.md", "services/m-and-a.md", "work/csv2psql.md", "_index.md"]
-related = ["elixir", "html", "javascript", "alpine-js", "claude-api", "flowbite-pro", "service", "dockerfile"]
+related = ["elixir", "html", "javascript", "alpine-js", "claude-api", "dockerfile", "service", "fastapi"]
 og_title = "PostgreSQL: glossary"
 og_image = "og/glossary-postgresql.png"
 keywords = ["PostgreSQL", "Technology", "Glossary", "Tomas Korcak"]

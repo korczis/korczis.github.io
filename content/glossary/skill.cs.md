@@ -17,7 +17,7 @@ definition = "Schopnost, kterou vlastník praktikuje, doložená veřejnou prac�
 aliases = []
 reference = { title = "Schema.org: knowsAbout", url = "https://schema.org/knowsAbout" }
 pages = ["services/_index.cs.md", "skills/_index.cs.md", "skills/ai-transformation.cs.md", "skills/audit-trail.cs.md", "skills/chain-of-custody.cs.md", "skills/change-monitoring.cs.md", "skills/compliance-mapping.cs.md", "skills/contestable-decisions.cs.md", "skills/data-integration.cs.md", "skills/data-room.cs.md", "skills/decision-support.cs.md", "skills/document-extraction.cs.md", "skills/due-diligence.cs.md", "skills/entity-resolution.cs.md", "skills/financial-analysis.cs.md", "skills/geospatial-analysis.cs.md", "skills/infrastructure-osint.cs.md", "skills/insolvency-monitoring.cs.md", "skills/interactive-visualisation.cs.md", "skills/knowledge-graph.cs.md", "skills/llm-agents.cs.md", "skills/m-and-a-screening.cs.md", "skills/market-intelligence.cs.md", "skills/media-forensics.cs.md", "skills/narrative-analysis.cs.md", "skills/orchestration.cs.md", "skills/osint-investigation.cs.md", "skills/ownership-analysis.cs.md", "skills/policy-as-code.cs.md", "skills/registry-intelligence.cs.md", "skills/risk-scoring.cs.md", "skills/sanctions-screening.cs.md", "skills/source-reliability.cs.md", "skills/web-automation.cs.md"]
-related = ["javascript", "html", "claude-api", "alpine-js", "dockerfile", "flowbite-pro", "fastapi", "shell"]
+related = ["javascript", "html", "alpine-js", "claude-api", "dockerfile", "fastapi", "flowbite-pro", "shell"]
 og_title = "Dovednost: slovník"
 og_image = "og/cs-glossary-skill.png"
 keywords = ["Dovednost", "Skill", "Koncept", "Slovník", "Tomáš Korčák"]

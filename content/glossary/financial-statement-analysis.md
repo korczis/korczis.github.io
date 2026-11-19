@@ -17,7 +17,7 @@ definition = "Reading a company's health from its balance sheet, income statemen
 aliases = []
 reference = { title = "IFRS: financial statements", url = "https://www.ifrs.org/issued-standards/list-of-standards/ias-1-presentation-of-financial-statements/" }
 pages = ["services/_index.md", "services/due-diligence.md", "services/m-and-a.md", "skills/_index.md", "skills/financial-analysis.md"]
-related = ["alpine-js", "beneficial-ownership", "claude-api", "decision-support-system", "dockerfile", "due-diligence", "fastapi", "flowbite-pro"]
+related = ["alpine-js", "beneficial-ownership", "decision-support-system", "dockerfile", "due-diligence", "fastapi", "flowbite-pro", "html"]
 og_title = "Financial statement analysis: glossary"
 og_image = "og/glossary-financial-statement-analysis.png"
 keywords = ["Financial statement analysis", "Concept", "Glossary", "Tomas Korcak"]

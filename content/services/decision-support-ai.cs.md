@@ -14,7 +14,7 @@ icon = "puzzle"
 og_title = "Podpora rozhodování a AI agenti pro analytiky"
 og_image = "og/cs-service-decision-support-ai.png"
 schema = "service"
-terms = ["service", "elixir", "mcp", "claude-api", "ollama", "phoenix", "ai-agent", "decision-support-system", "contestability", "orchestration", "information-extraction", "audit-trail", "html", "javascript", "shell", "python", "alpine-js", "flowbite-pro", "majordomus", "dockerfile", "css", "fastapi"]
+terms = ["service", "elixir", "mcp", "claude-api", "ollama", "phoenix", "ai-agent", "decision-support-system", "contestability", "orchestration", "information-extraction", "audit-trail", "html", "javascript", "shell", "python", "alpine-js", "flowbite-pro", "majordomus", "dockerfile", "fastapi", "github-actions"]
 keywords = ["Podpora rozhodování a AI agenti pro analytiky", "Agenti s LLM", "Podpora rozhodování", "Napadnutelná rozhodnutí", "Transformace s AI", "Orchestrace", "Vytěžování dokumentů", "Auditní stopa", "Tomáš Korčák"]
 
 [[extra.viz]]

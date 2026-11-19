@@ -987,19 +987,6 @@
           "skill": "media-forensics"
         },
         {
-          "name": "korczis.github.io",
-          "title": "korczis.github.io",
-          "how": "words",
-          "score": 2.3,
-          "slug": "korczis-github-io",
-          "url": "https://github.com/korczis/korczis.github.io",
-          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-          "category": "web",
-          "site": null,
-          "pushed": "2026-11-19",
-          "skill": "audit-trail"
-        },
-        {
           "name": "osint-case-ratcliffe-moscow-2026",
           "title": "osint-case-ratcliffe-moscow-2026",
           "how": "words",
@@ -1067,18 +1054,18 @@
       ],
       "technologies": [
         {
+          "id": "claude-api",
+          "name": "Claude API",
+          "n": 4
+        },
+        {
           "id": "html",
           "name": "HTML",
-          "n": 5
+          "n": 4
         },
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 5
-        },
-        {
-          "id": "claude-api",
-          "name": "Claude API",
           "n": 4
         },
         {
@@ -1092,43 +1079,23 @@
           "n": 3
         },
         {
-          "id": "alpine-js",
-          "name": "Alpine.js",
-          "n": 2
-        },
-        {
-          "id": "css",
-          "name": "CSS",
-          "n": 2
-        },
-        {
-          "id": "flowbite-pro",
-          "name": "Flowbite Pro",
-          "n": 2
-        },
-        {
-          "id": "majordomus",
-          "name": "Majordomus",
-          "n": 2
-        },
-        {
           "id": "rust",
           "name": "Rust",
           "n": 2
         },
         {
-          "id": "tailwind-css",
-          "name": "Tailwind CSS",
-          "n": 2
-        },
-        {
-          "id": "apache-echarts",
-          "name": "Apache ECharts",
+          "id": "alpine-js",
+          "name": "Alpine.js",
           "n": 1
         },
         {
           "id": "c",
           "name": "C",
+          "n": 1
+        },
+        {
+          "id": "css",
+          "name": "CSS",
           "n": 1
         },
         {
@@ -1142,8 +1109,28 @@
           "n": 1
         },
         {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 1
+        },
+        {
           "id": "github-actions",
           "name": "GitHub Actions",
+          "n": 1
+        },
+        {
+          "id": "kubernetes",
+          "name": "Kubernetes",
+          "n": 1
+        },
+        {
+          "id": "majordomus",
+          "name": "Majordomus",
+          "n": 1
+        },
+        {
+          "id": "makefile",
+          "name": "Makefile",
           "n": 1
         }
       ]
@@ -2124,7 +2111,7 @@
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "how": "words",
-          "score": 4.3,
+          "score": 4.5,
           "slug": "korczis-github-io",
           "url": "https://github.com/korczis/korczis.github.io",
           "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
@@ -2313,12 +2300,12 @@
         {
           "id": "html",
           "name": "HTML",
-          "n": 18
+          "n": 17
         },
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 18
+          "n": 17
         },
         {
           "id": "shell",
@@ -2333,27 +2320,22 @@
         {
           "id": "alpine-js",
           "name": "Alpine.js",
-          "n": 8
+          "n": 7
         },
         {
           "id": "flowbite-pro",
           "name": "Flowbite Pro",
-          "n": 8
+          "n": 7
         },
         {
           "id": "majordomus",
           "name": "Majordomus",
-          "n": 8
+          "n": 7
         },
         {
           "id": "dockerfile",
           "name": "Dockerfile",
           "n": 6
-        },
-        {
-          "id": "css",
-          "name": "CSS",
-          "n": 5
         },
         {
           "id": "fastapi",
@@ -2368,27 +2350,32 @@
         {
           "id": "kubernetes",
           "name": "Kubernetes",
-          "n": 4
+          "n": 5
         },
         {
           "id": "openai-api",
           "name": "OpenAI API",
-          "n": 4
+          "n": 5
         },
         {
-          "id": "tailwind-css",
-          "name": "Tailwind CSS",
+          "id": "css",
+          "name": "CSS",
           "n": 4
         },
         {
           "id": "playwright",
           "name": "Playwright",
-          "n": 3
+          "n": 4
         },
         {
           "id": "typescript",
           "name": "TypeScript",
           "n": 3
+        },
+        {
+          "id": "postgresql",
+          "name": "PostgreSQL",
+          "n": 2
         }
       ]
     },
@@ -2397,7 +2384,7 @@
         {
           "id": "rust",
           "name": "Rust",
-          "n": 2,
+          "n": 3,
           "declared": true
         },
         {
@@ -2444,27 +2431,14 @@
           "description": "A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound",
           "category": "media",
           "site": "https://korczis.github.io/majordomus-reel/",
-          "pushed": "2026-11-18",
-          "skill": "policy-as-code"
-        },
-        {
-          "name": "korczis.github.io",
-          "title": "korczis.github.io",
-          "how": "words",
-          "score": 4.3,
-          "slug": "korczis-github-io",
-          "url": "https://github.com/korczis/korczis.github.io",
-          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-          "category": "web",
-          "site": null,
           "pushed": "2026-11-19",
-          "skill": "llm-agents"
+          "skill": "policy-as-code"
         },
         {
           "name": "prismatic-majordomus",
           "title": "Majordomus",
           "how": "words",
-          "score": 4,
+          "score": 4.6,
           "slug": "prismatic-majordomus",
           "url": "https://github.com/korczis/prismatic-majordomus",
           "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
@@ -2472,6 +2446,19 @@
           "site": "https://korczis.github.io/prismatic-majordomus/",
           "pushed": "2026-11-19",
           "skill": "policy-as-code"
+        },
+        {
+          "name": "korczis.github.io",
+          "title": "korczis.github.io",
+          "how": "words",
+          "score": 4.5,
+          "slug": "korczis-github-io",
+          "url": "https://github.com/korczis/korczis.github.io",
+          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+          "category": "web",
+          "site": null,
+          "pushed": "2026-11-19",
+          "skill": "llm-agents"
         },
         {
           "name": "sig",
@@ -2524,6 +2511,19 @@
           "site": null,
           "pushed": "2026-08-21",
           "skill": "llm-agents"
+        },
+        {
+          "name": "kompendium-epistemicke-anihilace",
+          "title": "Kompendium",
+          "how": "words",
+          "score": 2.6,
+          "slug": "kompendium-epistemicke-anihilace",
+          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
+          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
+          "category": "knowledge",
+          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+          "pushed": "2026-11-19",
+          "skill": "policy-as-code"
         },
         {
           "name": "catharsis-as-a-service",
@@ -2634,21 +2634,21 @@
         {
           "id": "shell",
           "name": "Shell",
-          "n": 15
+          "n": 16
         },
         {
           "id": "python",
           "name": "Python",
-          "n": 9
-        },
-        {
-          "id": "css",
-          "name": "CSS",
-          "n": 8
+          "n": 10
         },
         {
           "id": "alpine-js",
           "name": "Alpine.js",
+          "n": 7
+        },
+        {
+          "id": "css",
+          "name": "CSS",
           "n": 7
         },
         {
@@ -2657,23 +2657,18 @@
           "n": 7
         },
         {
-          "id": "dockerfile",
-          "name": "Dockerfile",
-          "n": 4
-        },
-        {
           "id": "elixir",
           "name": "Elixir",
-          "n": 4
-        },
-        {
-          "id": "tailwind-css",
-          "name": "Tailwind CSS",
-          "n": 4
+          "n": 5
         },
         {
           "id": "zola",
           "name": "Zola",
+          "n": 5
+        },
+        {
+          "id": "dockerfile",
+          "name": "Dockerfile",
           "n": 4
         },
         {
@@ -2687,19 +2682,24 @@
           "n": 3
         },
         {
-          "id": "typescript",
-          "name": "TypeScript",
+          "id": "kubernetes",
+          "name": "Kubernetes",
           "n": 3
         },
         {
-          "id": "github-pages",
-          "name": "GitHub Pages",
-          "n": 2
+          "id": "openai-api",
+          "name": "OpenAI API",
+          "n": 3
         },
         {
-          "id": "kubernetes",
-          "name": "Kubernetes",
-          "n": 2
+          "id": "playwright",
+          "name": "Playwright",
+          "n": 3
+        },
+        {
+          "id": "typescript",
+          "name": "TypeScript",
+          "n": 3
         }
       ]
     },
@@ -2767,13 +2767,13 @@
           "name": "kompendium-epistemicke-anihilace",
           "title": "Kompendium",
           "how": "words",
-          "score": 4,
+          "score": 4.2,
           "slug": "kompendium-epistemicke-anihilace",
           "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
           "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
           "category": "knowledge",
           "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
-          "pushed": "2026-11-18",
+          "pushed": "2026-11-19",
           "skill": "interactive-visualisation"
         },
         {
@@ -4773,18 +4773,6 @@
           "category": "ai",
           "site": null,
           "pushed": "2026-08-21"
-        },
-        {
-          "name": "korczis.github.io",
-          "title": "korczis.github.io",
-          "how": "words",
-          "score": 2.3,
-          "slug": "korczis-github-io",
-          "url": "https://github.com/korczis/korczis.github.io",
-          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-          "category": "web",
-          "site": null,
-          "pushed": "2026-11-19"
         }
       ],
       "engagements": [
@@ -4823,12 +4811,12 @@
         {
           "id": "html",
           "name": "HTML",
-          "n": 4
+          "n": 3
         },
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 4
+          "n": 3
         },
         {
           "id": "python",
@@ -4836,28 +4824,8 @@
           "n": 3
         },
         {
-          "id": "alpine-js",
-          "name": "Alpine.js",
-          "n": 2
-        },
-        {
           "id": "claude-api",
           "name": "Claude API",
-          "n": 2
-        },
-        {
-          "id": "css",
-          "name": "CSS",
-          "n": 2
-        },
-        {
-          "id": "flowbite-pro",
-          "name": "Flowbite Pro",
-          "n": 2
-        },
-        {
-          "id": "majordomus",
-          "name": "Majordomus",
           "n": 2
         },
         {
@@ -4866,13 +4834,13 @@
           "n": 2
         },
         {
-          "id": "tailwind-css",
-          "name": "Tailwind CSS",
-          "n": 2
+          "id": "alpine-js",
+          "name": "Alpine.js",
+          "n": 1
         },
         {
-          "id": "apache-echarts",
-          "name": "Apache ECharts",
+          "id": "css",
+          "name": "CSS",
           "n": 1
         },
         {
@@ -4891,13 +4859,33 @@
           "n": 1
         },
         {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 1
+        },
+        {
           "id": "github-actions",
           "name": "GitHub Actions",
           "n": 1
         },
         {
-          "id": "github-pages",
-          "name": "GitHub Pages",
+          "id": "kubernetes",
+          "name": "Kubernetes",
+          "n": 1
+        },
+        {
+          "id": "majordomus",
+          "name": "Majordomus",
+          "n": 1
+        },
+        {
+          "id": "openai-api",
+          "name": "OpenAI API",
+          "n": 1
+        },
+        {
+          "id": "playwright",
+          "name": "Playwright",
           "n": 1
         }
       ]
@@ -5036,7 +5024,7 @@
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "how": "words",
-          "score": 4.3,
+          "score": 4.5,
           "slug": "korczis-github-io",
           "url": "https://github.com/korczis/korczis.github.io",
           "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
@@ -5991,13 +5979,13 @@
           "description": "A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound",
           "category": "media",
           "site": "https://korczis.github.io/majordomus-reel/",
-          "pushed": "2026-11-18"
+          "pushed": "2026-11-19"
         },
         {
           "name": "prismatic-majordomus",
           "title": "Majordomus",
           "how": "words",
-          "score": 4,
+          "score": 4.6,
           "slug": "prismatic-majordomus",
           "url": "https://github.com/korczis/prismatic-majordomus",
           "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
@@ -6009,7 +5997,7 @@
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "how": "words",
-          "score": 3,
+          "score": 4.3,
           "slug": "korczis-github-io",
           "url": "https://github.com/korczis/korczis.github.io",
           "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
@@ -6028,6 +6016,18 @@
           "category": "data",
           "site": "https://korczis.github.io/data-atlas/",
           "pushed": "2026-11-16"
+        },
+        {
+          "name": "kompendium-epistemicke-anihilace",
+          "title": "Kompendium",
+          "how": "words",
+          "score": 2.6,
+          "slug": "kompendium-epistemicke-anihilace",
+          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
+          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
+          "category": "knowledge",
+          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+          "pushed": "2026-11-19"
         },
         {
           "name": "catharsis-as-a-service",
@@ -6071,12 +6071,17 @@
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 7
+          "n": 8
         },
         {
           "id": "html",
           "name": "HTML",
-          "n": 6
+          "n": 7
+        },
+        {
+          "id": "shell",
+          "name": "Shell",
+          "n": 5
         },
         {
           "id": "css",
@@ -6084,13 +6089,43 @@
           "n": 4
         },
         {
-          "id": "shell",
-          "name": "Shell",
-          "n": 4
-        },
-        {
           "id": "majordomus",
           "name": "Majordomus",
+          "n": 3
+        },
+        {
+          "id": "python",
+          "name": "Python",
+          "n": 3
+        },
+        {
+          "id": "rust",
+          "name": "Rust",
+          "n": 3
+        },
+        {
+          "id": "zola",
+          "name": "Zola",
+          "n": 3
+        },
+        {
+          "id": "alpine-js",
+          "name": "Alpine.js",
+          "n": 2
+        },
+        {
+          "id": "apache-echarts",
+          "name": "Apache ECharts",
+          "n": 2
+        },
+        {
+          "id": "elixir",
+          "name": "Elixir",
+          "n": 2
+        },
+        {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
           "n": 2
         },
         {
@@ -6104,48 +6139,13 @@
           "n": 2
         },
         {
-          "id": "python",
-          "name": "Python",
-          "n": 2
-        },
-        {
-          "id": "rust",
-          "name": "Rust",
-          "n": 2
-        },
-        {
-          "id": "zola",
-          "name": "Zola",
-          "n": 2
-        },
-        {
-          "id": "alpine-js",
-          "name": "Alpine.js",
-          "n": 1
-        },
-        {
-          "id": "apache-echarts",
-          "name": "Apache ECharts",
-          "n": 1
-        },
-        {
           "id": "claude-api",
           "name": "Claude API",
           "n": 1
         },
         {
-          "id": "elixir",
-          "name": "Elixir",
-          "n": 1
-        },
-        {
-          "id": "flowbite-pro",
-          "name": "Flowbite Pro",
-          "n": 1
-        },
-        {
-          "id": "github-pages",
-          "name": "GitHub Pages",
+          "id": "cytoscape-js",
+          "name": "Cytoscape.js",
           "n": 1
         }
       ]
@@ -6173,13 +6173,13 @@
           "name": "kompendium-epistemicke-anihilace",
           "title": "Kompendium",
           "how": "words",
-          "score": 4,
+          "score": 4.2,
           "slug": "kompendium-epistemicke-anihilace",
           "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
           "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
           "category": "knowledge",
           "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
-          "pushed": "2026-11-18"
+          "pushed": "2026-11-19"
         },
         {
           "name": "sonic-playground",

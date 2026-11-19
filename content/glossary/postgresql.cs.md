@@ -17,7 +17,7 @@ definition = "Open-source relační databáze známá svou korektností a rozš�
 aliases = ["postgres"]
 reference = { title = "postgresql.org", url = "https://www.postgresql.org/about/" }
 pages = ["hire.cs.md", "projects/tools.cs.md", "services/attack-surface.cs.md", "services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "services/digital-forensics.cs.md", "services/digital-investigation.cs.md", "services/due-diligence.cs.md", "services/m-and-a.cs.md", "work/csv2psql.cs.md", "_index.cs.md"]
-related = ["elixir", "html", "javascript", "alpine-js", "claude-api", "flowbite-pro", "service", "dockerfile"]
+related = ["elixir", "html", "javascript", "alpine-js", "claude-api", "dockerfile", "service", "fastapi"]
 og_title = "PostgreSQL: slovník"
 og_image = "og/cs-glossary-postgresql.png"
 keywords = ["PostgreSQL", "Technologie", "Slovník", "Tomáš Korčák"]

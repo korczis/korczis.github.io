@@ -17,7 +17,7 @@ definition = "Webový framework Elixiru; LiveView vykresluje interaktivní strá
 aliases = ["Phoenix LiveView", "LiveView", "phoenix_live_view"]
 reference = { title = "Phoenix Framework", url = "https://www.phoenixframework.org/" }
 pages = ["services/attack-surface.cs.md", "services/continuous-monitoring.cs.md", "services/decision-support-ai.cs.md", "services/due-diligence.cs.md", "services/m-and-a.cs.md", "services/reputation-intelligence.cs.md"]
-related = ["alpine-js", "claude-api", "dockerfile", "elixir", "fastapi", "flowbite-pro", "html", "javascript"]
+related = ["alpine-js", "claude-api", "dockerfile", "elixir", "fastapi", "flowbite-pro", "github-actions", "html"]
 og_title = "Phoenix: slovník"
 og_image = "og/cs-glossary-phoenix.png"
 keywords = ["Phoenix", "Technologie", "Slovník", "Tomáš Korčák"]

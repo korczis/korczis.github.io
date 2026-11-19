@@ -16,8 +16,8 @@ kind = "technology"
 definition = "The spatial extension of PostgreSQL: points, shapes and geographic queries in SQL."
 aliases = []
 reference = { title = "postgis.net", url = "https://postgis.net/" }
-pages = ["projects/data.md", "services/interactive-data-products.md", "skills/geospatial-analysis.md", "skills/osint-investigation.md", "skills/policy-as-code.md", "skills/registry-intelligence.md", "work/crisis-map.md"]
-related = ["javascript", "css", "elixir", "html", "mcp", "shell", "gis", "python"]
+pages = ["projects/data.md", "services/interactive-data-products.md", "skills/geospatial-analysis.md", "skills/osint-investigation.md", "skills/registry-intelligence.md", "work/crisis-map.md"]
+related = ["elixir", "javascript", "css", "html", "gis", "mcp", "shell", "python"]
 og_title = "PostGIS: glossary"
 og_image = "og/glossary-postgis.png"
 keywords = ["PostGIS", "Technology", "Glossary", "Tomas Korcak"]

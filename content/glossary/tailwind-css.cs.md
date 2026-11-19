@@ -16,8 +16,8 @@ kind = "technology"
 definition = "CSS framework malých utilitních tříd skládaných v markupu, kompilovaný jen na to, co stránka používá."
 aliases = ["tailwindcss"]
 reference = { title = "tailwindcss.com", url = "https://tailwindcss.com/docs" }
-pages = ["services/ai-engineering-governance.cs.md", "skills/audit-trail.cs.md", "stack.cs.md", "_index.cs.md"]
-related = ["alpine-js", "flowbite-pro", "majordomus", "audit-trail", "claude-api", "css", "html", "javascript"]
+pages = ["stack.cs.md", "_index.cs.md"]
+related = ["alpine-js", "apache-echarts", "chart-js", "cytoscape-js", "d3", "flowbite-pro", "github-pages", "i18n"]
 og_title = "Tailwind CSS: slovník"
 og_image = "og/cs-glossary-tailwind-css.png"
 keywords = ["Tailwind CSS", "Technologie", "Slovník", "Tomáš Korčák"]

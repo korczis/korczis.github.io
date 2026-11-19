@@ -16,8 +16,8 @@ kind = "technology"
 definition = "An Apache project for interactive charts: calendars, sunbursts, maps and large data sets."
 aliases = ["ECharts", "echarts"]
 reference = { title = "echarts.apache.org", url = "https://echarts.apache.org/en/index.html" }
-pages = ["_index.md", "projects/knowledge.md", "projects/science.md", "services/interactive-data-products.md", "skills/interactive-visualisation.md", "stack.md", "work/algoglyph.md", "work/kompendium-epistemicke-anihilace.md"]
-related = ["flowbite-pro", "alpine-js", "elixir", "data-visualisation", "javascript", "repository", "zola", "html"]
+pages = ["_index.md", "projects/knowledge.md", "projects/science.md", "services/interactive-data-products.md", "skills/interactive-visualisation.md", "skills/policy-as-code.md", "stack.md", "work/algoglyph.md", "work/kompendium-epistemicke-anihilace.md"]
+related = ["alpine-js", "flowbite-pro", "elixir", "javascript", "zola", "data-visualisation", "html", "python"]
 og_title = "Apache ECharts: glossary"
 og_image = "og/glossary-apache-echarts.png"
 keywords = ["Apache ECharts", "Technology", "Glossary", "Tomas Korcak"]
@@ -44,7 +44,7 @@ Apache ECharts is part of 3 of my public repositories, from 2024 to 2026.
 
 What it was for: [Knowledge](@/projects/knowledge.md) (1), [Science and visualisation](@/projects/science.md) (1) and [Web](@/projects/web.md) (1).
 
-Most recently: [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus; [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore; [algoglyph](@/work/algoglyph.md): Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core.
+Most recently: [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore; [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus; [algoglyph](@/work/algoglyph.md): Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core.
 
 2 of these projects run as live sites.
 
