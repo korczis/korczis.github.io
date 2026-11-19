@@ -209,5 +209,54 @@ cs = "listopad"
 en = "December"
 cs = "prosinec"
 
+# The same in the genitive, after "od", "do" or a day ("od srpna 2010"); English has one form.
+[month_gen_1]
+en = "January"
+cs = "ledna"
+
+[month_gen_2]
+en = "February"
+cs = "února"
+
+[month_gen_3]
+en = "March"
+cs = "března"
+
+[month_gen_4]
+en = "April"
+cs = "dubna"
+
+[month_gen_5]
+en = "May"
+cs = "května"
+
+[month_gen_6]
+en = "June"
+cs = "června"
+
+[month_gen_7]
+en = "July"
+cs = "července"
+
+[month_gen_8]
+en = "August"
+cs = "srpna"
+
+[month_gen_9]
+en = "September"
+cs = "září"
+
+[month_gen_10]
+en = "October"
+cs = "října"
+
+[month_gen_11]
+en = "November"
+cs = "listopadu"
+
+[month_gen_12]
+en = "December"
+cs = "prosince"
+
 
 
