@@ -530,6 +530,23 @@
       ]
     },
     {
+      "id": "numerals",
+      "name": "Every count agrees with its word (en, cs plural forms)",
+      "rule": "project.numerals-agree",
+      "rule_file": ".ai/repo/rules/project/numerals-agree.v1.md",
+      "ci": true,
+      "where": [
+        {
+          "kind": "ci",
+          "file": ".github/workflows/ci.yml"
+        },
+        {
+          "kind": "prepush",
+          "file": ".githooks/pre-push"
+        }
+      ]
+    },
+    {
       "id": "nda-site",
       "name": "No denylisted name in the built site (NDA)",
       "rule": null,
