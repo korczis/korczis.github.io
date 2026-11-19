@@ -17,7 +17,7 @@ definition = "Extracting data from web pages by program, from simple requests to
 aliases = []
 reference = { title = "Wikipedia: web scraping", url = "https://en.wikipedia.org/wiki/Web_scraping" }
 pages = ["services/_index.md", "services/attack-surface.md", "services/digital-investigation.md", "skills/_index.md", "skills/web-automation.md"]
-related = ["dockerfile", "html", "javascript", "nodejs", "attack-surface", "change-detection", "service", "alpine-js"]
+related = ["dockerfile", "html", "javascript", "attack-surface", "change-detection", "service", "alpine-js", "beneficial-ownership"]
 og_title = "Web scraping: glossary"
 og_image = "og/glossary-web-scraping.png"
 keywords = ["Web scraping", "Concept", "Glossary", "Tomas Korcak"]

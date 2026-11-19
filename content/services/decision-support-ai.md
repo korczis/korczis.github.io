@@ -14,7 +14,7 @@ icon = "puzzle"
 og_title = "Decision support and AI agents for analysts"
 og_image = "og/service-decision-support-ai.png"
 schema = "service"
-terms = ["service", "elixir", "mcp", "claude-api", "ollama", "phoenix", "ai-agent", "decision-support-system", "contestability", "orchestration", "information-extraction", "audit-trail", "html", "javascript", "shell", "flowbite-pro", "postgresql", "python", "tailwind-css", "alpine-js", "playwright", "dockerfile"]
+terms = ["service", "elixir", "mcp", "claude-api", "ollama", "phoenix", "ai-agent", "decision-support-system", "contestability", "orchestration", "information-extraction", "audit-trail", "html", "javascript", "shell", "flowbite-pro", "postgresql", "python", "tailwind-css", "alpine-js", "dockerfile", "playwright"]
 keywords = ["Decision support and AI agents for analysts", "LLM agents", "Decision support", "Contestable decisions", "AI transformation", "Orchestration", "Document extraction", "Audit trail", "Tomas Korcak"]
 
 [[extra.viz]]

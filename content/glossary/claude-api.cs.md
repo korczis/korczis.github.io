@@ -17,7 +17,7 @@ definition = "API společnosti Anthropic k modelům Claude: zprávy, používán
 aliases = ["claude-code", "Claude"]
 reference = { title = "Claude API documentation", url = "https://docs.anthropic.com/" }
 pages = ["services/ai-engineering-governance.cs.md", "services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "services/decision-support-ai.cs.md", "services/digital-forensics.cs.md", "services/digital-investigation.cs.md", "services/due-diligence.cs.md", "services/m-and-a.cs.md", "services/reputation-intelligence.cs.md", "skills/ai-transformation.cs.md", "skills/audit-trail.cs.md", "skills/data-integration.cs.md", "skills/data-room.cs.md", "skills/document-extraction.cs.md", "skills/due-diligence.cs.md", "skills/entity-resolution.cs.md", "skills/insolvency-monitoring.cs.md", "skills/knowledge-graph.cs.md", "skills/llm-agents.cs.md", "skills/m-and-a-screening.cs.md", "skills/market-intelligence.cs.md", "skills/media-forensics.cs.md", "skills/narrative-analysis.cs.md", "skills/orchestration.cs.md", "skills/osint-investigation.cs.md", "skills/risk-scoring.cs.md", "_index.cs.md"]
-related = ["html", "javascript", "dockerfile", "flowbite-pro", "alpine-js", "skill", "github-actions", "fastapi"]
+related = ["html", "javascript", "dockerfile", "flowbite-pro", "alpine-js", "github-actions", "skill", "fastapi"]
 og_title = "Claude API: slovník"
 og_image = "og/cs-glossary-claude-api.png"
 keywords = ["Claude API", "Technologie", "Slovník", "Tomáš Korčák"]

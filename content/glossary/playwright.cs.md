@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Knihovna pro automatizaci prohlížeče, která ovládá Chromium, Firefox a WebKit pro end-to-end testy a audity."
 aliases = []
 reference = { title = "Playwright documentation", url = "https://playwright.dev/docs/intro" }
-pages = ["services/_index.cs.md", "services/ai-engineering-governance.cs.md", "services/decision-support-ai.cs.md", "services/digital-forensics.cs.md", "services/digital-investigation.cs.md", "services/due-diligence.cs.md", "services/m-and-a.cs.md", "skills/_index.cs.md", "skills/audit-trail.cs.md", "skills/document-extraction.cs.md", "skills/due-diligence.cs.md", "skills/llm-agents.cs.md", "skills/policy-as-code.cs.md", "work/astronomists.cs.md", "work/catharsis-as-a-service.cs.md", "work/data-atlas.cs.md", "work/korczis-github-io.cs.md", "work/oscilla.cs.md", "work/vomaste-cz.cs.md", "_index.cs.md"]
-related = ["html", "javascript", "tailwind-css", "alpine-js", "flowbite-pro", "shell", "python", "github-pages"]
+pages = ["services/_index.cs.md", "services/ai-engineering-governance.cs.md", "services/decision-support-ai.cs.md", "services/digital-investigation.cs.md", "services/due-diligence.cs.md", "services/m-and-a.cs.md", "skills/_index.cs.md", "skills/audit-trail.cs.md", "skills/document-extraction.cs.md", "skills/due-diligence.cs.md", "skills/llm-agents.cs.md", "skills/policy-as-code.cs.md", "work/astronomists.cs.md", "work/catharsis-as-a-service.cs.md", "work/data-atlas.cs.md", "work/korczis-github-io.cs.md", "work/oscilla.cs.md", "work/vomaste-cz.cs.md", "_index.cs.md"]
+related = ["html", "javascript", "tailwind-css", "shell", "alpine-js", "flowbite-pro", "python", "claude-api"]
 og_title = "Playwright: slovník"
 og_image = "og/cs-glossary-playwright.png"
 keywords = ["Playwright", "Technologie", "Slovník", "Tomáš Korčák"]

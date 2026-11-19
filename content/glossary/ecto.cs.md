@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Databázová sada nástrojů Elixiru: schémata, changesety ověřující data, skládatelné dotazy a migrace, nejčastěji nad PostgreSQL."
 aliases = []
 reference = { title = "Ecto documentation", url = "https://hexdocs.pm/ecto/" }
-pages = ["skills/data-integration.cs.md", "skills/media-forensics.cs.md", "skills/osint-investigation.cs.md", "skills/registry-intelligence.cs.md", "work/crisis-map.cs.md", "work/kanec.cs.md", "work/llm.cs.md", "work/prismatic.cs.md", "work/sig.cs.md", "work/test-elixir.cs.md", "work/the-psycho.cs.md", "work/tosh.cs.md"]
-related = ["elixir", "postgresql", "javascript", "commit", "open-source", "phoenix", "repository", "css"]
+pages = ["services/digital-forensics.cs.md", "skills/data-integration.cs.md", "skills/media-forensics.cs.md", "skills/osint-investigation.cs.md", "skills/registry-intelligence.cs.md", "work/crisis-map.cs.md", "work/kanec.cs.md", "work/llm.cs.md", "work/prismatic.cs.md", "work/sig.cs.md", "work/test-elixir.cs.md", "work/the-psycho.cs.md", "work/tosh.cs.md"]
+related = ["elixir", "postgresql", "javascript", "commit", "html", "open-source", "phoenix", "repository"]
 og_title = "Ecto: slovník"
 og_image = "og/cs-glossary-ecto.png"
 keywords = ["Ecto", "Technologie", "Slovník", "Tomáš Korčák"]

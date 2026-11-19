@@ -17,7 +17,7 @@ definition = "Checking people and companies against sanctions lists and politica
 aliases = []
 reference = { title = "OpenSanctions documentation", url = "https://www.opensanctions.org/docs/" }
 pages = ["services/_index.md", "services/compliance-screening.md", "skills/_index.md", "skills/sanctions-screening.md"]
-related = ["alpine-js", "beneficial-ownership", "contestability", "dockerfile", "flowbite-pro", "html", "javascript", "python"]
+related = ["alpine-js", "beneficial-ownership", "contestability", "dockerfile", "fastapi", "flowbite-pro", "html", "javascript"]
 og_title = "Sanctions screening: glossary"
 og_image = "og/glossary-sanctions-screening.png"
 keywords = ["Sanctions screening", "Concept", "Glossary", "Tomas Korcak"]

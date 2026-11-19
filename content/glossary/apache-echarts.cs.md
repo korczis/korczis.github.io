@@ -44,7 +44,7 @@ Apache ECharts je součástí 4 mých veřejných repozitářů, od roku 2024 do
 
 K čemu to sloužilo: [Znalosti](@/projects/knowledge.cs.md) (1), [Média a umění](@/projects/media.cs.md) (1), [Věda a vizualizace](@/projects/science.cs.md) (1) a [Web](@/projects/web.cs.md) (1).
 
-Naposledy: [korczis.github.io](@/work/korczis-github-io.cs.md); [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat; [Majordomus reel](@/work/majordomus-reel.cs.md): Hlas, snímky, hudba i zvuk, vše generované a verzované jako software.
+Naposledy: [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat; [korczis.github.io](@/work/korczis-github-io.cs.md); [Majordomus reel](@/work/majordomus-reel.cs.md): Hlas, snímky, hudba i zvuk, vše generované a verzované jako software.
 
 3 z těchto projektů běží jako živé weby.
 

@@ -44,7 +44,7 @@ Zola je součástí 10 mých veřejných repozitářů, od roku 2024 do 2026.
 
 K čemu to sloužilo: [Média a umění](@/projects/media.cs.md) (3), [Nástroje](@/projects/tools.cs.md) (3), [Web](@/projects/web.cs.md) (2) a [Inženýrství AI](@/projects/ai.cs.md) (1).
 
-Naposledy: [korczis.github.io](@/work/korczis-github-io.cs.md); [Majordomus](@/work/prismatic-majordomus.cs.md): Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model; [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat.
+Naposledy: [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat; [korczis.github.io](@/work/korczis-github-io.cs.md); [Majordomus](@/work/prismatic-majordomus.cs.md): Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.
 
 8 z těchto projektů běží jako živé weby.
 

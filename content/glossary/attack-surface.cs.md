@@ -17,7 +17,7 @@ definition = "Vše z organizace, na co útočník dosáhne z internetu: domény,
 aliases = []
 reference = { title = "OWASP: attack surface analysis", url = "https://cheatsheetseries.owasp.org/cheatsheets/Attack_Surface_Analysis_Cheat_Sheet.html" }
 pages = ["services/_index.cs.md", "services/attack-surface.cs.md", "services/digital-forensics.cs.md", "services/digital-investigation.cs.md", "skills/_index.cs.md", "skills/infrastructure-osint.cs.md"]
-related = ["html", "javascript", "service", "alpine-js", "change-detection", "digital-forensics", "dockerfile", "flowbite-pro"]
+related = ["dockerfile", "html", "javascript", "service", "alpine-js", "change-detection", "digital-forensics", "flowbite-pro"]
 og_title = "Útočná plocha: slovník"
 og_image = "og/cs-glossary-attack-surface.png"
 keywords = ["Útočná plocha", "Attack surface", "Koncept", "Slovník", "Tomáš Korčák"]

@@ -3,7 +3,7 @@
 title = "Majordomus reel"
 description = "Hlas, snímky, hudba i zvuk, vše generované a verzované jako software."
 template = "work.html"
-weight = 5
+weight = 6
 updated = "2026-11-18T06:51:33Z"
 
 [taxonomies]

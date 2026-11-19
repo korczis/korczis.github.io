@@ -44,7 +44,7 @@ I have written Rust in 34 public repositories, from 2016 to 2026; in 12 of them 
 
 What it was for: [Tools](@/projects/tools.md) (12), [Data and GIS](@/projects/data.md) (4), [Science and visualisation](@/projects/science.md) (4) and [Learning and experiments](@/projects/learning.md) (3).
 
-Most recently: [Majordomus](@/work/prismatic-majordomus.md): One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model; [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore; [algoglyph](@/work/algoglyph.md): Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core.
+Most recently: [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore; [Majordomus](@/work/prismatic-majordomus.md): One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model; [algoglyph](@/work/algoglyph.md): Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core.
 
 5 of these projects run as live sites.
 

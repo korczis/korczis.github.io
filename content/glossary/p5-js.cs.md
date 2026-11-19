@@ -44,7 +44,7 @@ p5.js je součástí 5 mých veřejných repozitářů, od roku 2024 do 2026.
 
 K čemu to sloužilo: [Věda a vizualizace](@/projects/science.cs.md) (2), [Znalosti](@/projects/knowledge.cs.md) (1), [Média a umění](@/projects/media.cs.md) (1) a [Web](@/projects/web.cs.md) (1).
 
-Naposledy: [korczis.github.io](@/work/korczis-github-io.cs.md); [Oscilla](@/work/oscilla.cs.md): Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu; [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat.
+Naposledy: [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat; [korczis.github.io](@/work/korczis-github-io.cs.md); [Majordomus reel](@/work/majordomus-reel.cs.md): Hlas, snímky, hudba i zvuk, vše generované a verzované jako software.
 
 4 z těchto projektů běží jako živé weby.
 

@@ -17,7 +17,7 @@ definition = "Pravidla vedená jako kód vedle toho, co řídí, kontrolovaná a
 aliases = []
 reference = { title = "Open Policy Agent: policy as code", url = "https://www.openpolicyagent.org/docs/latest/" }
 pages = ["services/_index.cs.md", "services/ai-engineering-governance.cs.md", "skills/_index.cs.md", "skills/policy-as-code.cs.md"]
-related = ["flowbite-pro", "html", "javascript", "playwright", "shell", "tailwind-css", "ai-agent", "alpine-js"]
+related = ["flowbite-pro", "html", "javascript", "playwright", "python", "shell", "tailwind-css", "ai-agent"]
 og_title = "Pravidla jako kód: slovník"
 og_image = "og/cs-glossary-policy-as-code.png"
 keywords = ["Pravidla jako kód", "Policy as code", "Koncept", "Slovník", "Tomáš Korčák"]
