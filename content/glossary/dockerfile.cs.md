@@ -17,7 +17,7 @@ definition = "Recept, který staví obraz kontejneru: základní systém, soubor
 aliases = ["Docker", "docker"]
 reference = { title = "Dockerfile reference", url = "https://docs.docker.com/reference/dockerfile/" }
 pages = ["projects/media.cs.md", "projects/systems.cs.md", "services/_index.cs.md", "services/ai-engineering-governance.cs.md", "services/attack-surface.cs.md", "services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "services/decision-support-ai.cs.md", "services/digital-investigation.cs.md", "services/due-diligence.cs.md", "services/m-and-a.cs.md", "services/reputation-intelligence.cs.md", "skills/_index.cs.md", "skills/ai-transformation.cs.md", "skills/data-integration.cs.md", "skills/data-room.cs.md", "skills/decision-support.cs.md", "skills/document-extraction.cs.md", "skills/due-diligence.cs.md", "skills/entity-resolution.cs.md", "skills/geospatial-analysis.cs.md", "skills/insolvency-monitoring.cs.md", "skills/knowledge-graph.cs.md", "skills/m-and-a-screening.cs.md", "skills/market-intelligence.cs.md", "skills/orchestration.cs.md", "skills/risk-scoring.cs.md", "work/astudo.cs.md", "work/aws-lambda-docker.cs.md", "work/docks.cs.md", "work/el-magico-cache.cs.md", "work/gh-exec-3000.cs.md", "work/hydra.cs.md", "work/microcrawler-js.cs.md", "work/pdf-renderer.cs.md", "work/prismatic-blog.cs.md", "work/tosh.cs.md", "work/zdeny-docker.cs.md", "_index.cs.md"]
-related = ["javascript", "html", "alpine-js", "fastapi", "claude-api", "flowbite-pro", "shell", "elixir"]
+related = ["javascript", "html", "alpine-js", "claude-api", "fastapi", "flowbite-pro", "shell", "elixir"]
 og_title = "Dockerfile: slovník"
 og_image = "og/cs-glossary-dockerfile.png"
 keywords = ["Dockerfile", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

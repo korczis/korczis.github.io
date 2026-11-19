@@ -13,7 +13,7 @@ skill = "chain-of-custody"
 og_title = "Řetězec úschovy důkazů: dovednosti"
 og_image = "og/cs-skill-chain-of-custody.png"
 schema = "skill"
-terms = ["skill", "chain-of-custody", "javascript", "css", "html", "rust", "web-audio"]
+terms = ["skill", "chain-of-custody", "javascript", "rust"]
 keywords = ["Řetězec úschovy důkazů", "Digitální forenzní analýza a zajištění důkazů", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -31,8 +31,8 @@ Pojem, na kterém stojí: [Řetězec úschovy](@/glossary/chain-of-custody.cs.md
 
 Služby, které z ní čerpají: [Digitální forenzní analýza a zajištění důkazů](@/services/digital-forensics.cs.md).
 
-Praktikovaná s: [JavaScript](@/glossary/javascript.cs.md), [CSS](@/glossary/css.cs.md), [HTML](@/glossary/html.cs.md), [Rust](@/glossary/rust.cs.md) a [Web Audio](@/glossary/web-audio.cs.md).
+Praktikovaná s: [JavaScript](@/glossary/javascript.cs.md) a [Rust](@/glossary/rust.cs.md).
 
-Veřejná práce, jejíž vlastní slova ji dokládají: [oscilla](https://github.com/korczis/oscilla) a [bcnode-old](https://github.com/korczis/bcnode-old).
+Veřejná práce, jejíž vlastní slova ji dokládají: [bcnode-old](https://github.com/korczis/bcnode-old).
 
 Jak číst tuto stránku: definice pochází ze slovníku zkušeností; služby, technologie, veřejné [repozitáře](@/glossary/repository.cs.md) a případy užití jsou odvozené a každá položka vede na svou stránku.

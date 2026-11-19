@@ -3,21 +3,21 @@
 title = "openttd-prismatic-bridge"
 description = "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform"
 template = "work.html"
-weight = 6
-updated = "2026-11-18T02:16:44Z"
+weight = 2
+updated = "2026-11-19T00:49:27Z"
 
 [taxonomies]
-tags = ["Media and art", "Squirrel", "Python", "HTML"]
+tags = ["Media and art", "Python", "Squirrel", "HTML"]
 
 [extra]
 repo = "openttd-prismatic-bridge"
-seo_title = "openttd-prismatic-bridge: Media and art, 2026 · Tomas Korcak"
+seo_title = "openttd-prismatic-bridge: Media and art in Python, 2026 · Tomas Korcak"
 og_title = "openttd-prismatic-bridge: REST/Swagger bridge onto OpenTTD's Admin Network, for…"
-og_description = "openttd-prismatic-bridge: Media and art in Squirrel, Python and HTML, 2026, active in the last 12 months. Source on GitLab."
+og_description = "openttd-prismatic-bridge: Media and art in Python, Squirrel and HTML, 2026, active in the last 12 months. Source on GitLab."
 og_image = "og/work-openttd-prismatic-bridge.png"
 schema = "project"
-keywords = ["openttd-prismatic-bridge", "Media and art", "Squirrel", "Python", "HTML", "2026", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["squirrel", "python", "html", "shell", "css", "data-visualisation", "repository", "commit", "open-source"]
+keywords = ["openttd-prismatic-bridge", "Media and art", "Python", "Squirrel", "HTML", "2026", "GitLab", "Tomas Korcak", "korczis"]
+terms = ["python", "squirrel", "html", "javascript", "shell", "data-visualisation", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -29,9 +29,9 @@ height = "md"
 tone = "night"
 vars = { cadence = "every 6 hours" }
 +++
-**openttd-prismatic-bridge** is a project in [Media and art](@/projects/media.md). Its code is written mainly in [Squirrel](@/glossary/squirrel.md) (38.8 %), with [Python](@/glossary/python.md), [HTML](@/glossary/html.md) and [Shell](@/glossary/shell.md).
+**openttd-prismatic-bridge** is a project in [Media and art](@/projects/media.md). Its code is written mainly in [Python](@/glossary/python.md) (37.9 %), with [Squirrel](@/glossary/squirrel.md), [HTML](@/glossary/html.md) and [JavaScript](@/glossary/javascript.md).
 
-The [repository](@/glossary/repository.md) was created on 23 July 2026; its latest [commit](@/glossary/commit.md) is from 18 November 2026. It reads “Doc: the overview's Prismatic card says a decision's settings go onto the running AI and a refused one answers 502”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created on 23 July 2026; its latest [commit](@/glossary/commit.md) is from 19 November 2026. It reads “Fix: the brand menu keeps an open submenu through its status refresh, and pages revalidate their scripts”. That places it among the projects active in the last 12 months.
 
 Its source is on [GitLab](https://gitlab.com/korczis/openttd-prismatic-bridge).
 

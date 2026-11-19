@@ -16,8 +16,8 @@ kind = "technology"
 definition = "The browser API for generating, processing and analysing sound in real time."
 aliases = []
 reference = { title = "MDN Web Docs: Web Audio API", url = "https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API" }
-pages = ["projects/science.md", "services/interactive-data-products.md", "skills/chain-of-custody.md", "work/oscilla.md"]
-related = ["javascript", "css", "data-visualisation", "html", "alpine-js", "apache-echarts", "elixir", "flowbite-pro"]
+pages = ["projects/science.md", "services/interactive-data-products.md", "work/oscilla.md"]
+related = ["data-visualisation", "javascript", "alpine-js", "apache-echarts", "css", "elixir", "flowbite-pro", "html"]
 og_title = "Web Audio: glossary"
 og_image = "og/glossary-web-audio.png"
 keywords = ["Web Audio", "Technology", "Glossary", "Tomas Korcak"]

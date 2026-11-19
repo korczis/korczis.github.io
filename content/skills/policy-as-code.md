@@ -33,6 +33,6 @@ Services that draw on it: [Governed AI-assisted software delivery](@/services/ai
 
 Practised with: [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md), [CSS](@/glossary/css.md), [Shell](@/glossary/shell.md), [Majordomus](@/glossary/majordomus.md), [MCP](@/glossary/mcp.md), [PostGIS](@/glossary/postgis.md) and [Python](@/glossary/python.md).
 
-Public work whose own words show it: [majordomus-reel](https://github.com/korczis/majordomus-reel), [prismatic-majordomus](https://github.com/korczis/prismatic-majordomus), [data-atlas](https://github.com/korczis/data-atlas) and [korczis.github.io](https://github.com/korczis/korczis.github.io).
+Public work whose own words show it: [majordomus-reel](https://github.com/korczis/majordomus-reel), [prismatic-majordomus](https://github.com/korczis/prismatic-majordomus), [korczis.github.io](https://github.com/korczis/korczis.github.io) and [data-atlas](https://github.com/korczis/data-atlas).
 
 How to read this page: the definition is the experience vocabulary's; the services, technologies, public [repositories](@/glossary/repository.md) and use cases are derived and each links to its page.

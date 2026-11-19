@@ -17,7 +17,7 @@ definition = "The property of a decision that can be questioned: its evidence, a
 aliases = []
 reference = { title = "OECD AI principles: accountability", url = "https://oecd.ai/en/dashboards/ai-principles/P9" }
 pages = ["services/_index.md", "services/ai-engineering-governance.md", "services/compliance-screening.md", "services/decision-support-ai.md", "services/m-and-a.md", "skills/_index.md", "skills/contestable-decisions.md"]
-related = ["alpine-js", "dockerfile", "flowbite-pro", "html", "javascript", "python", "service", "fastapi"]
+related = ["alpine-js", "claude-api", "dockerfile", "flowbite-pro", "html", "javascript", "python", "service"]
 og_title = "Contestability: glossary"
 og_image = "og/glossary-contestability.png"
 keywords = ["Contestability", "Concept", "Glossary", "Tomas Korcak"]

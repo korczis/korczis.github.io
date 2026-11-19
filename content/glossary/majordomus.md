@@ -17,7 +17,7 @@ definition = "The owner's supervisory layer for AI-assisted work: one policy for
 aliases = []
 reference = { title = "majordomus.dev", url = "https://majordomus.dev" }
 pages = ["about.md", "hire.md", "interfaces.md", "services/_index.md", "services/ai-engineering-governance.md", "services/continuous-monitoring.md", "services/decision-support-ai.md", "services/digital-forensics.md", "services/interactive-data-products.md", "skills/_index.md", "skills/audit-trail.md", "skills/data-room.md", "skills/insolvency-monitoring.md", "skills/interactive-visualisation.md", "skills/knowledge-graph.md", "skills/policy-as-code.md", "skills/risk-scoring.md", "stack.md", "_index.md"]
-related = ["javascript", "alpine-js", "flowbite-pro", "html", "claude-api", "css", "dockerfile", "python"]
+related = ["javascript", "alpine-js", "flowbite-pro", "html", "claude-api", "dockerfile", "python", "shell"]
 og_title = "Majordomus: glossary"
 og_image = "og/glossary-majordomus.png"
 keywords = ["Majordomus", "Technology", "Glossary", "Tomas Korcak"]
@@ -44,7 +44,7 @@ Majordomus is part of 4 of my public repositories, from 2024 to 2026.
 
 What it was for: [Knowledge](@/projects/knowledge.md) (1), [Media and art](@/projects/media.md) (1), [Science and visualisation](@/projects/science.md) (1) and [Web](@/projects/web.md) (1).
 
-Most recently: [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore; [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus; [Majordomus reel](@/work/majordomus-reel.md): Voice, frames, music and sound, all generated and versioned like software.
+Most recently: [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus; [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore; [Majordomus reel](@/work/majordomus-reel.md): Voice, frames, music and sound, all generated and versioned like software.
 
 3 of these projects run as live sites.
 

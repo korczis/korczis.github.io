@@ -16,8 +16,8 @@ kind = "language"
 definition = "A small embeddable scripting language; OpenTTD runs its AI players and game scripts in it."
 aliases = []
 reference = { title = "Squirrel on GitHub", url = "https://github.com/albertodemichelis/squirrel" }
-pages = ["projects/media.md", "work/openttd-prismatic-bridge.md"]
-related = ["data-visualisation", "html", "python", "repository", "commit", "css", "dockerfile", "elixir"]
+pages = ["work/openttd-prismatic-bridge.md"]
+related = ["commit", "data-visualisation", "html", "javascript", "open-source", "python", "repository", "shell"]
 og_title = "Squirrel: glossary"
 og_image = "og/glossary-squirrel.png"
 keywords = ["Squirrel", "Programming language", "Glossary", "Tomas Korcak"]
@@ -40,7 +40,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-I have written Squirrel in 1 public repository, from 2026 to 2026; in 1 of them it is the main language.
+I have written Squirrel in 1 public repository, from 2026 to 2026.
 
 What it was for: [Media and art](@/projects/media.md) (1).
 

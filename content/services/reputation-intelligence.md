@@ -14,7 +14,7 @@ icon = "globe"
 og_title = "Reputation intelligence and adverse-media monitoring"
 og_image = "og/service-reputation-intelligence.png"
 schema = "service"
-terms = ["service", "elixir", "broadway", "ollama", "claude-api", "phoenix", "reputation-risk", "source-criticism", "change-detection", "osint", "decision-support-system", "html", "javascript", "python", "shell", "css", "alpine-js", "dockerfile", "fastapi", "flowbite-pro", "github-actions"]
+terms = ["service", "elixir", "broadway", "ollama", "claude-api", "phoenix", "reputation-risk", "source-criticism", "change-detection", "osint", "decision-support-system", "javascript", "html", "python", "shell", "css", "alpine-js", "dockerfile", "fastapi", "flowbite-pro", "github-actions"]
 keywords = ["Reputation intelligence and adverse-media monitoring", "Narrative and reputation analysis", "Source reliability", "Continuous monitoring", "OSINT investigation", "Decision support", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -34,7 +34,7 @@ It draws on these skills: [Narrative and reputation analysis](@/skills/narrative
 
 It is built with [Elixir](@/glossary/elixir.md), [Broadway](@/glossary/broadway.md), [Ollama](@/glossary/ollama.md), [Claude API](@/glossary/claude-api.md) and [Phoenix](@/glossary/phoenix.md).
 
-The technologies behind it, measured from the work that shows those skills: [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md), [Python](@/glossary/python.md), [Shell](@/glossary/shell.md), [CSS](@/glossary/css.md), [Alpine.js](@/glossary/alpine-js.md), [Dockerfile](@/glossary/dockerfile.md) and [FastAPI](@/glossary/fastapi.md).
+The technologies behind it, measured from the work that shows those skills: [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md), [Python](@/glossary/python.md), [Shell](@/glossary/shell.md), [CSS](@/glossary/css.md), [Alpine.js](@/glossary/alpine-js.md), [Dockerfile](@/glossary/dockerfile.md) and [FastAPI](@/glossary/fastapi.md).
 
 9 public repositories show its skills (9 by their own words).
 

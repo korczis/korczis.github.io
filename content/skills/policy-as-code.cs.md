@@ -33,6 +33,6 @@ Služby, které z ní čerpají: [Řízený vývoj softwaru s AI](@/services/ai-
 
 Praktikovaná s: [JavaScript](@/glossary/javascript.cs.md), [HTML](@/glossary/html.cs.md), [CSS](@/glossary/css.cs.md), [Shell](@/glossary/shell.cs.md), [Majordomus](@/glossary/majordomus.cs.md), [MCP](@/glossary/mcp.cs.md), [PostGIS](@/glossary/postgis.cs.md) a [Python](@/glossary/python.cs.md).
 
-Veřejná práce, jejíž vlastní slova ji dokládají: [majordomus-reel](https://github.com/korczis/majordomus-reel), [prismatic-majordomus](https://github.com/korczis/prismatic-majordomus), [data-atlas](https://github.com/korczis/data-atlas) a [korczis.github.io](https://github.com/korczis/korczis.github.io).
+Veřejná práce, jejíž vlastní slova ji dokládají: [majordomus-reel](https://github.com/korczis/majordomus-reel), [prismatic-majordomus](https://github.com/korczis/prismatic-majordomus), [korczis.github.io](https://github.com/korczis/korczis.github.io) a [data-atlas](https://github.com/korczis/data-atlas).
 
 Jak číst tuto stránku: definice pochází ze slovníku zkušeností; služby, technologie, veřejné [repozitáře](@/glossary/repository.cs.md) a případy užití jsou odvozené a každá položka vede na svou stránku.

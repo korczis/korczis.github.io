@@ -16,8 +16,8 @@ kind = "language"
 definition = "Malý vložitelný skriptovací jazyk; OpenTTD v něm spouští své AI hráče a herní skripty."
 aliases = []
 reference = { title = "Squirrel on GitHub", url = "https://github.com/albertodemichelis/squirrel" }
-pages = ["projects/media.cs.md", "work/openttd-prismatic-bridge.cs.md"]
-related = ["data-visualisation", "html", "python", "repository", "commit", "css", "dockerfile", "elixir"]
+pages = ["work/openttd-prismatic-bridge.cs.md"]
+related = ["commit", "data-visualisation", "html", "javascript", "open-source", "python", "repository", "shell"]
 og_title = "Squirrel: slovník"
 og_image = "og/cs-glossary-squirrel.png"
 keywords = ["Squirrel", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
@@ -40,7 +40,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-Squirrel jsem psal v 1 veřejném repozitáři, od roku 2026 do 2026; v 1 z nich je hlavním jazykem.
+Squirrel jsem psal v 1 veřejném repozitáři, od roku 2026 do 2026.
 
 K čemu to sloužilo: [Média a umění](@/projects/media.cs.md) (1).
 

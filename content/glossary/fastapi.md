@@ -17,7 +17,7 @@ definition = "A Python web framework for HTTP APIs, typed with Pydantic models t
 aliases = []
 reference = { title = "FastAPI documentation", url = "https://fastapi.tiangolo.com/" }
 pages = ["services/_index.md", "services/attack-surface.md", "services/compliance-screening.md", "services/continuous-monitoring.md", "services/decision-support-ai.md", "services/digital-investigation.md", "services/due-diligence.md", "services/m-and-a.md", "services/reputation-intelligence.md", "skills/_index.md", "skills/ai-transformation.md", "skills/data-integration.md", "skills/data-room.md", "skills/decision-support.md", "skills/document-extraction.md", "skills/due-diligence.md", "skills/entity-resolution.md", "skills/insolvency-monitoring.md", "skills/knowledge-graph.md", "skills/m-and-a-screening.md", "skills/market-intelligence.md", "skills/orchestration.md", "skills/risk-scoring.md", "_index.md"]
-related = ["alpine-js", "dockerfile", "html", "javascript", "claude-api", "flowbite-pro", "github-actions", "skill"]
+related = ["alpine-js", "claude-api", "dockerfile", "html", "javascript", "flowbite-pro", "github-actions", "skill"]
 og_title = "FastAPI: glossary"
 og_image = "og/glossary-fastapi.png"
 keywords = ["FastAPI", "Technology", "Glossary", "Tomas Korcak"]

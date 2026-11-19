@@ -17,7 +17,7 @@ definition = "Posouzení zdroje dřív, než se mu uvěří: kdo ho vytvořil, k
 aliases = []
 reference = { title = "Wikipedia: source criticism", url = "https://en.wikipedia.org/wiki/Source_criticism" }
 pages = ["services/_index.cs.md", "services/digital-forensics.cs.md", "services/due-diligence.cs.md", "services/reputation-intelligence.cs.md", "skills/_index.cs.md", "skills/source-reliability.cs.md"]
-related = ["alpine-js", "flowbite-pro", "html", "javascript", "python", "service", "css", "decision-support-system"]
+related = ["alpine-js", "claude-api", "flowbite-pro", "html", "javascript", "python", "service", "decision-support-system"]
 og_title = "Kritika zdrojů: slovník"
 og_image = "og/cs-glossary-source-criticism.png"
 keywords = ["Kritika zdrojů", "Source criticism", "Koncept", "Slovník", "Tomáš Korčák"]

@@ -76,7 +76,7 @@
           "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
           "category": "media",
           "site": null,
-          "pushed": "2026-11-18",
+          "pushed": "2026-11-19",
           "skill": "decision-support"
         },
         {
@@ -141,7 +141,7 @@
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 11
+          "n": 12
         },
         {
           "id": "html",
@@ -295,7 +295,7 @@
           "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
           "category": "media",
           "site": null,
-          "pushed": "2026-11-18",
+          "pushed": "2026-11-19",
           "skill": "decision-support"
         },
         {
@@ -380,7 +380,7 @@
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 12
+          "n": 13
         },
         {
           "id": "python",
@@ -788,7 +788,7 @@
           "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
           "category": "media",
           "site": null,
-          "pushed": "2026-11-18",
+          "pushed": "2026-11-19",
           "skill": "osint-investigation"
         }
       ],
@@ -825,7 +825,7 @@
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 19
+          "n": 20
         },
         {
           "id": "html",
@@ -961,19 +961,6 @@
           "skill": "media-forensics"
         },
         {
-          "name": "korczis.github.io",
-          "title": "korczis.github.io",
-          "how": "words",
-          "score": 2.6,
-          "slug": "korczis-github-io",
-          "url": "https://github.com/korczis/korczis.github.io",
-          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-          "category": "web",
-          "site": null,
-          "pushed": "2026-11-18",
-          "skill": "audit-trail"
-        },
-        {
           "name": "catharsis-as-a-service",
           "title": "Catharsis as a Service",
           "how": "words",
@@ -1000,17 +987,17 @@
           "skill": "media-forensics"
         },
         {
-          "name": "oscilla",
-          "title": "Oscilla",
+          "name": "korczis.github.io",
+          "title": "korczis.github.io",
           "how": "words",
-          "score": 2,
-          "slug": "oscilla",
-          "url": "https://github.com/korczis/oscilla",
-          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-          "category": "science",
-          "site": "https://korczis.github.io/oscilla/",
-          "pushed": "2026-11-18",
-          "skill": "chain-of-custody"
+          "score": 2.3,
+          "slug": "korczis-github-io",
+          "url": "https://github.com/korczis/korczis.github.io",
+          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+          "category": "web",
+          "site": null,
+          "pushed": "2026-11-19",
+          "skill": "audit-trail"
         },
         {
           "name": "osint-case-ratcliffe-moscow-2026",
@@ -1082,21 +1069,16 @@
         {
           "id": "html",
           "name": "HTML",
-          "n": 7
+          "n": 5
         },
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 7
+          "n": 5
         },
         {
           "id": "claude-api",
           "name": "Claude API",
-          "n": 4
-        },
-        {
-          "id": "css",
-          "name": "CSS",
           "n": 4
         },
         {
@@ -1112,6 +1094,11 @@
         {
           "id": "alpine-js",
           "name": "Alpine.js",
+          "n": 2
+        },
+        {
+          "id": "css",
+          "name": "CSS",
           "n": 2
         },
         {
@@ -1225,7 +1212,7 @@
           "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
           "category": "media",
           "site": null,
-          "pushed": "2026-11-18",
+          "pushed": "2026-11-19",
           "skill": "decision-support"
         },
         {
@@ -1350,13 +1337,13 @@
       ],
       "technologies": [
         {
-          "id": "html",
-          "name": "HTML",
-          "n": 10
-        },
-        {
           "id": "javascript",
           "name": "JavaScript",
+          "n": 12
+        },
+        {
+          "id": "html",
+          "name": "HTML",
           "n": 10
         },
         {
@@ -1625,7 +1612,7 @@
           "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
           "category": "ai",
           "site": "https://korczis.github.io/prismatic-majordomus/",
-          "pushed": "2026-11-18",
+          "pushed": "2026-11-19",
           "skill": "orchestration"
         },
         {
@@ -2143,7 +2130,7 @@
           "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
           "category": "web",
           "site": null,
-          "pushed": "2026-11-18",
+          "pushed": "2026-11-19",
           "skill": "llm-agents"
         },
         {
@@ -2169,7 +2156,7 @@
           "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
           "category": "ai",
           "site": "https://korczis.github.io/prismatic-majordomus/",
-          "pushed": "2026-11-18",
+          "pushed": "2026-11-19",
           "skill": "llm-agents"
         },
         {
@@ -2208,7 +2195,7 @@
           "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
           "category": "media",
           "site": null,
-          "pushed": "2026-11-18",
+          "pushed": "2026-11-19",
           "skill": "decision-support"
         },
         {
@@ -2262,19 +2249,6 @@
           "site": null,
           "pushed": "2019-04-04",
           "skill": "ai-transformation"
-        },
-        {
-          "name": "oscilla",
-          "title": "Oscilla",
-          "how": "words",
-          "score": 2,
-          "slug": "oscilla",
-          "url": "https://github.com/korczis/oscilla",
-          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-          "category": "science",
-          "site": "https://korczis.github.io/oscilla/",
-          "pushed": "2026-11-18",
-          "skill": "audit-trail"
         },
         {
           "name": "data-atlas",
@@ -2339,7 +2313,7 @@
         {
           "id": "html",
           "name": "HTML",
-          "n": 19
+          "n": 18
         },
         {
           "id": "javascript",
@@ -2372,14 +2346,14 @@
           "n": 8
         },
         {
-          "id": "css",
-          "name": "CSS",
-          "n": 6
-        },
-        {
           "id": "dockerfile",
           "name": "Dockerfile",
           "n": 6
+        },
+        {
+          "id": "css",
+          "name": "CSS",
+          "n": 5
         },
         {
           "id": "fastapi",
@@ -2483,7 +2457,7 @@
           "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
           "category": "web",
           "site": null,
-          "pushed": "2026-11-18",
+          "pushed": "2026-11-19",
           "skill": "llm-agents"
         },
         {
@@ -2496,7 +2470,7 @@
           "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
           "category": "ai",
           "site": "https://korczis.github.io/prismatic-majordomus/",
-          "pushed": "2026-11-18",
+          "pushed": "2026-11-19",
           "skill": "policy-as-code"
         },
         {
@@ -2591,19 +2565,6 @@
           "skill": "ai-transformation"
         },
         {
-          "name": "oscilla",
-          "title": "Oscilla",
-          "how": "words",
-          "score": 2,
-          "slug": "oscilla",
-          "url": "https://github.com/korczis/oscilla",
-          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-          "category": "science",
-          "site": "https://korczis.github.io/oscilla/",
-          "pushed": "2026-11-18",
-          "skill": "audit-trail"
-        },
-        {
           "name": "crisis-map",
           "title": "Crisis map",
           "how": "words",
@@ -2663,12 +2624,12 @@
         {
           "id": "html",
           "name": "HTML",
-          "n": 19
+          "n": 18
         },
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 19
+          "n": 18
         },
         {
           "id": "shell",
@@ -2676,14 +2637,14 @@
           "n": 15
         },
         {
-          "id": "css",
-          "name": "CSS",
-          "n": 9
-        },
-        {
           "id": "python",
           "name": "Python",
           "n": 9
+        },
+        {
+          "id": "css",
+          "name": "CSS",
+          "n": 8
         },
         {
           "id": "alpine-js",
@@ -2955,7 +2916,7 @@
           "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
           "category": "media",
           "site": null,
-          "pushed": "2026-11-18",
+          "pushed": "2026-11-19",
           "skill": "decision-support"
         },
         {
@@ -3134,7 +3095,7 @@
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 23
+          "n": 24
         },
         {
           "id": "html",
@@ -3847,7 +3808,7 @@
           "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
           "category": "media",
           "site": null,
-          "pushed": "2026-11-18"
+          "pushed": "2026-11-19"
         },
         {
           "name": "crisis-map",
@@ -3908,13 +3869,13 @@
       ],
       "technologies": [
         {
-          "id": "html",
-          "name": "HTML",
-          "n": 4
-        },
-        {
           "id": "javascript",
           "name": "JavaScript",
+          "n": 5
+        },
+        {
+          "id": "html",
+          "name": "HTML",
           "n": 4
         },
         {
@@ -4055,7 +4016,7 @@
           "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
           "category": "media",
           "site": null,
-          "pushed": "2026-11-18"
+          "pushed": "2026-11-19"
         }
       ],
       "engagements": [
@@ -4097,14 +4058,14 @@
           "n": 5
         },
         {
-          "id": "python",
-          "name": "Python",
+          "id": "javascript",
+          "name": "JavaScript",
           "n": 5
         },
         {
-          "id": "javascript",
-          "name": "JavaScript",
-          "n": 4
+          "id": "python",
+          "name": "Python",
+          "n": 5
         },
         {
           "id": "shell",
@@ -4790,18 +4751,6 @@
       ],
       "repos": [
         {
-          "name": "korczis.github.io",
-          "title": "korczis.github.io",
-          "how": "words",
-          "score": 2.6,
-          "slug": "korczis-github-io",
-          "url": "https://github.com/korczis/korczis.github.io",
-          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-          "category": "web",
-          "site": null,
-          "pushed": "2026-11-18"
-        },
-        {
           "name": "catharsis-as-a-service",
           "title": "Catharsis as a Service",
           "how": "words",
@@ -4826,16 +4775,16 @@
           "pushed": "2026-08-21"
         },
         {
-          "name": "oscilla",
-          "title": "Oscilla",
+          "name": "korczis.github.io",
+          "title": "korczis.github.io",
           "how": "words",
-          "score": 2,
-          "slug": "oscilla",
-          "url": "https://github.com/korczis/oscilla",
-          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-          "category": "science",
-          "site": "https://korczis.github.io/oscilla/",
-          "pushed": "2026-11-18"
+          "score": 2.3,
+          "slug": "korczis-github-io",
+          "url": "https://github.com/korczis/korczis.github.io",
+          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+          "category": "web",
+          "site": null,
+          "pushed": "2026-11-19"
         }
       ],
       "engagements": [
@@ -4874,17 +4823,12 @@
         {
           "id": "html",
           "name": "HTML",
-          "n": 5
+          "n": 4
         },
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 5
-        },
-        {
-          "id": "css",
-          "name": "CSS",
-          "n": 3
+          "n": 4
         },
         {
           "id": "python",
@@ -4899,6 +4843,11 @@
         {
           "id": "claude-api",
           "name": "Claude API",
+          "n": 2
+        },
+        {
+          "id": "css",
+          "name": "CSS",
           "n": 2
         },
         {
@@ -5093,7 +5042,7 @@
           "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
           "category": "web",
           "site": null,
-          "pushed": "2026-11-18"
+          "pushed": "2026-11-19"
         },
         {
           "name": "sig",
@@ -5117,7 +5066,7 @@
           "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
           "category": "ai",
           "site": "https://korczis.github.io/prismatic-majordomus/",
-          "pushed": "2026-11-18"
+          "pushed": "2026-11-19"
         },
         {
           "name": "osint-case-ratcliffe-moscow-2026",
@@ -5397,7 +5346,7 @@
           "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
           "category": "ai",
           "site": "https://korczis.github.io/prismatic-majordomus/",
-          "pushed": "2026-11-18"
+          "pushed": "2026-11-19"
         }
       ],
       "engagements": [
@@ -5699,18 +5648,6 @@
       ],
       "repos": [
         {
-          "name": "oscilla",
-          "title": "Oscilla",
-          "how": "words",
-          "score": 2,
-          "slug": "oscilla",
-          "url": "https://github.com/korczis/oscilla",
-          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-          "category": "science",
-          "site": "https://korczis.github.io/oscilla/",
-          "pushed": "2026-11-18"
-        },
-        {
           "name": "bcnode-old",
           "title": "bcnode-old",
           "how": "words",
@@ -5728,26 +5665,11 @@
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 2
-        },
-        {
-          "id": "css",
-          "name": "CSS",
-          "n": 1
-        },
-        {
-          "id": "html",
-          "name": "HTML",
           "n": 1
         },
         {
           "id": "rust",
           "name": "Rust",
-          "n": 1
-        },
-        {
-          "id": "web-audio",
-          "name": "Web Audio",
           "n": 1
         }
       ]
@@ -6081,7 +6003,19 @@
           "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
           "category": "ai",
           "site": "https://korczis.github.io/prismatic-majordomus/",
-          "pushed": "2026-11-18"
+          "pushed": "2026-11-19"
+        },
+        {
+          "name": "korczis.github.io",
+          "title": "korczis.github.io",
+          "how": "words",
+          "score": 3,
+          "slug": "korczis-github-io",
+          "url": "https://github.com/korczis/korczis.github.io",
+          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+          "category": "web",
+          "site": null,
+          "pushed": "2026-11-19"
         },
         {
           "name": "data-atlas",
@@ -6094,18 +6028,6 @@
           "category": "data",
           "site": "https://korczis.github.io/data-atlas/",
           "pushed": "2026-11-16"
-        },
-        {
-          "name": "korczis.github.io",
-          "title": "korczis.github.io",
-          "how": "words",
-          "score": 2,
-          "slug": "korczis-github-io",
-          "url": "https://github.com/korczis/korczis.github.io",
-          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-          "category": "web",
-          "site": null,
-          "pushed": "2026-11-18"
         },
         {
           "name": "catharsis-as-a-service",

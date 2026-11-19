@@ -11,10 +11,10 @@
       "name": "JavaScript",
       "kind": "language",
       "counts": {
-        "repos": 70,
+        "repos": 71,
         "primary": 42,
         "sites": 14,
-        "work": 70,
+        "work": 71,
         "engagements": 2
       },
       "first": 2013,
@@ -34,7 +34,7 @@
         },
         {
           "key": "media",
-          "n": 5
+          "n": 6
         },
         {
           "key": "learning",
@@ -66,6 +66,126 @@
         }
       ],
       "repos": [
+        {
+          "name": "korczis.github.io",
+          "title": "korczis.github.io",
+          "url": "https://github.com/korczis/korczis.github.io",
+          "work": true,
+          "slug": "korczis-github-io",
+          "site": null,
+          "category": "web",
+          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2024-12-24",
+          "pushed": "2026-11-19",
+          "primary": true,
+          "share": 61.6,
+          "via": [
+            "primary",
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Alpine.js",
+            "Apache ECharts",
+            "Flowbite Pro",
+            "GitHub Pages",
+            "Majordomus",
+            "p5.js",
+            "Tailwind CSS",
+            "Zola"
+          ]
+        },
+        {
+          "name": "openttd-prismatic-bridge",
+          "title": "openttd-prismatic-bridge",
+          "url": "https://gitlab.com/korczis/openttd-prismatic-bridge",
+          "work": true,
+          "slug": "openttd-prismatic-bridge",
+          "site": null,
+          "category": "media",
+          "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2026-07-23",
+          "pushed": "2026-11-19",
+          "primary": false,
+          "share": 7.1,
+          "via": [
+            "code"
+          ],
+          "supervised": false,
+          "uses": [
+            "Python",
+            "Squirrel",
+            "HTML",
+            "JavaScript",
+            "Shell"
+          ]
+        },
+        {
+          "name": "oscilla",
+          "title": "Oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "work": true,
+          "slug": "oscilla",
+          "site": "https://korczis.github.io/oscilla/",
+          "category": "science",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
+          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
+          "created": "2026-10-01",
+          "pushed": "2026-11-19",
+          "primary": true,
+          "share": 96.9,
+          "via": [
+            "primary",
+            "code",
+            "stack",
+            "topic"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Web Audio"
+          ]
+        },
+        {
+          "name": "prismatic-majordomus",
+          "title": "Majordomus",
+          "url": "https://github.com/korczis/prismatic-majordomus",
+          "work": true,
+          "slug": "prismatic-majordomus",
+          "site": "https://korczis.github.io/prismatic-majordomus/",
+          "category": "ai",
+          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+          "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
+          "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
+          "created": "2026-09-03",
+          "pushed": "2026-11-19",
+          "primary": false,
+          "share": 4.1,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "Rust",
+            "Shell",
+            "JavaScript",
+            "HTML",
+            "MCP",
+            "Zola",
+            "Claude API",
+            "Mermaid"
+          ]
+        },
         {
           "name": "kompendium-epistemicke-anihilace",
           "title": "Kompendium",
@@ -101,40 +221,6 @@
           ]
         },
         {
-          "name": "korczis.github.io",
-          "title": "korczis.github.io",
-          "url": "https://github.com/korczis/korczis.github.io",
-          "work": true,
-          "slug": "korczis-github-io",
-          "site": null,
-          "category": "web",
-          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-          "summary": null,
-          "summary_cs": null,
-          "created": "2024-12-24",
-          "pushed": "2026-11-18",
-          "primary": true,
-          "share": 61.7,
-          "via": [
-            "primary",
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Alpine.js",
-            "Apache ECharts",
-            "Flowbite Pro",
-            "GitHub Pages",
-            "Majordomus",
-            "p5.js",
-            "Tailwind CSS",
-            "Zola"
-          ]
-        },
-        {
           "name": "majordomus-reel",
           "title": "Majordomus reel",
           "url": "https://github.com/korczis/majordomus-reel",
@@ -159,65 +245,6 @@
             "HTML",
             "Shell",
             "Majordomus"
-          ]
-        },
-        {
-          "name": "oscilla",
-          "title": "Oscilla",
-          "url": "https://github.com/korczis/oscilla",
-          "work": true,
-          "slug": "oscilla",
-          "site": "https://korczis.github.io/oscilla/",
-          "category": "science",
-          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
-          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
-          "created": "2026-10-01",
-          "pushed": "2026-11-18",
-          "primary": true,
-          "share": 96.9,
-          "via": [
-            "primary",
-            "code",
-            "stack",
-            "topic"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Web Audio"
-          ]
-        },
-        {
-          "name": "prismatic-majordomus",
-          "title": "Majordomus",
-          "url": "https://github.com/korczis/prismatic-majordomus",
-          "work": true,
-          "slug": "prismatic-majordomus",
-          "site": "https://korczis.github.io/prismatic-majordomus/",
-          "category": "ai",
-          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
-          "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
-          "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
-          "created": "2026-09-03",
-          "pushed": "2026-11-18",
-          "primary": false,
-          "share": 4.1,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "Rust",
-            "Shell",
-            "JavaScript",
-            "HTML",
-            "MCP",
-            "Zola",
-            "Claude API",
-            "Mermaid"
           ]
         },
         {
@@ -3809,6 +3836,39 @@
       ],
       "repos": [
         {
+          "name": "prismatic-majordomus",
+          "title": "Majordomus",
+          "url": "https://github.com/korczis/prismatic-majordomus",
+          "work": true,
+          "slug": "prismatic-majordomus",
+          "site": "https://korczis.github.io/prismatic-majordomus/",
+          "category": "ai",
+          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+          "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
+          "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
+          "created": "2026-09-03",
+          "pushed": "2026-11-19",
+          "primary": true,
+          "share": 60.7,
+          "via": [
+            "primary",
+            "code",
+            "stack",
+            "topic"
+          ],
+          "supervised": true,
+          "uses": [
+            "Rust",
+            "Shell",
+            "JavaScript",
+            "HTML",
+            "MCP",
+            "Zola",
+            "Claude API",
+            "Mermaid"
+          ]
+        },
+        {
           "name": "kompendium-epistemicke-anihilace",
           "title": "Kompendium",
           "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
@@ -3840,39 +3900,6 @@
             "Alpine.js",
             "Flowbite Pro",
             "Majordomus"
-          ]
-        },
-        {
-          "name": "prismatic-majordomus",
-          "title": "Majordomus",
-          "url": "https://github.com/korczis/prismatic-majordomus",
-          "work": true,
-          "slug": "prismatic-majordomus",
-          "site": "https://korczis.github.io/prismatic-majordomus/",
-          "category": "ai",
-          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
-          "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
-          "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
-          "created": "2026-09-03",
-          "pushed": "2026-11-18",
-          "primary": true,
-          "share": 60.7,
-          "via": [
-            "primary",
-            "code",
-            "stack",
-            "topic"
-          ],
-          "supervised": true,
-          "uses": [
-            "Rust",
-            "Shell",
-            "JavaScript",
-            "HTML",
-            "MCP",
-            "Zola",
-            "Claude API",
-            "Mermaid"
           ]
         },
         {
@@ -4393,7 +4420,7 @@
       "kind": "language",
       "counts": {
         "repos": 12,
-        "primary": 6,
+        "primary": 7,
         "sites": 7,
         "work": 12,
         "engagements": 2
@@ -4428,6 +4455,34 @@
       ],
       "repos": [
         {
+          "name": "openttd-prismatic-bridge",
+          "title": "openttd-prismatic-bridge",
+          "url": "https://gitlab.com/korczis/openttd-prismatic-bridge",
+          "work": true,
+          "slug": "openttd-prismatic-bridge",
+          "site": null,
+          "category": "media",
+          "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2026-07-23",
+          "pushed": "2026-11-19",
+          "primary": true,
+          "share": 37.9,
+          "via": [
+            "primary",
+            "code"
+          ],
+          "supervised": false,
+          "uses": [
+            "Python",
+            "Squirrel",
+            "HTML",
+            "JavaScript",
+            "Shell"
+          ]
+        },
+        {
           "name": "kompendium-epistemicke-anihilace",
           "title": "Kompendium",
           "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
@@ -4459,32 +4514,6 @@
             "Alpine.js",
             "Flowbite Pro",
             "Majordomus"
-          ]
-        },
-        {
-          "name": "openttd-prismatic-bridge",
-          "title": "openttd-prismatic-bridge",
-          "url": "https://gitlab.com/korczis/openttd-prismatic-bridge",
-          "work": true,
-          "slug": "openttd-prismatic-bridge",
-          "site": null,
-          "category": "media",
-          "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
-          "summary": null,
-          "summary_cs": null,
-          "created": "2026-07-23",
-          "pushed": "2026-11-18",
-          "primary": false,
-          "share": 38.7,
-          "via": [
-            "code"
-          ],
-          "supervised": false,
-          "uses": [
-            "Squirrel",
-            "Python",
-            "HTML",
-            "Shell"
           ]
         },
         {
@@ -4849,6 +4878,63 @@
       ],
       "repos": [
         {
+          "name": "openttd-prismatic-bridge",
+          "title": "openttd-prismatic-bridge",
+          "url": "https://gitlab.com/korczis/openttd-prismatic-bridge",
+          "work": true,
+          "slug": "openttd-prismatic-bridge",
+          "site": null,
+          "category": "media",
+          "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2026-07-23",
+          "pushed": "2026-11-19",
+          "primary": false,
+          "share": 1.7,
+          "via": [
+            "code"
+          ],
+          "supervised": false,
+          "uses": [
+            "Python",
+            "Squirrel",
+            "HTML",
+            "JavaScript",
+            "Shell"
+          ]
+        },
+        {
+          "name": "prismatic-majordomus",
+          "title": "Majordomus",
+          "url": "https://github.com/korczis/prismatic-majordomus",
+          "work": true,
+          "slug": "prismatic-majordomus",
+          "site": "https://korczis.github.io/prismatic-majordomus/",
+          "category": "ai",
+          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+          "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
+          "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
+          "created": "2026-09-03",
+          "pushed": "2026-11-19",
+          "primary": false,
+          "share": 29.6,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "Rust",
+            "Shell",
+            "JavaScript",
+            "HTML",
+            "MCP",
+            "Zola",
+            "Claude API",
+            "Mermaid"
+          ]
+        },
+        {
           "name": "kompendium-epistemicke-anihilace",
           "title": "Kompendium",
           "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
@@ -4906,62 +4992,6 @@
             "HTML",
             "Shell",
             "Majordomus"
-          ]
-        },
-        {
-          "name": "openttd-prismatic-bridge",
-          "title": "openttd-prismatic-bridge",
-          "url": "https://gitlab.com/korczis/openttd-prismatic-bridge",
-          "work": true,
-          "slug": "openttd-prismatic-bridge",
-          "site": null,
-          "category": "media",
-          "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
-          "summary": null,
-          "summary_cs": null,
-          "created": "2026-07-23",
-          "pushed": "2026-11-18",
-          "primary": false,
-          "share": 1.9,
-          "via": [
-            "code"
-          ],
-          "supervised": false,
-          "uses": [
-            "Squirrel",
-            "Python",
-            "HTML",
-            "Shell"
-          ]
-        },
-        {
-          "name": "prismatic-majordomus",
-          "title": "Majordomus",
-          "url": "https://github.com/korczis/prismatic-majordomus",
-          "work": true,
-          "slug": "prismatic-majordomus",
-          "site": "https://korczis.github.io/prismatic-majordomus/",
-          "category": "ai",
-          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
-          "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
-          "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
-          "created": "2026-09-03",
-          "pushed": "2026-11-18",
-          "primary": false,
-          "share": 29.6,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "Rust",
-            "Shell",
-            "JavaScript",
-            "HTML",
-            "MCP",
-            "Zola",
-            "Claude API",
-            "Mermaid"
           ]
         },
         {
@@ -5965,6 +5995,122 @@
       ],
       "repos": [
         {
+          "name": "korczis.github.io",
+          "title": "korczis.github.io",
+          "url": "https://github.com/korczis/korczis.github.io",
+          "work": true,
+          "slug": "korczis-github-io",
+          "site": null,
+          "category": "web",
+          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2024-12-24",
+          "pushed": "2026-11-19",
+          "primary": false,
+          "share": 36.4,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Alpine.js",
+            "Apache ECharts",
+            "Flowbite Pro",
+            "GitHub Pages",
+            "Majordomus",
+            "p5.js",
+            "Tailwind CSS",
+            "Zola"
+          ]
+        },
+        {
+          "name": "openttd-prismatic-bridge",
+          "title": "openttd-prismatic-bridge",
+          "url": "https://gitlab.com/korczis/openttd-prismatic-bridge",
+          "work": true,
+          "slug": "openttd-prismatic-bridge",
+          "site": null,
+          "category": "media",
+          "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2026-07-23",
+          "pushed": "2026-11-19",
+          "primary": false,
+          "share": 18.3,
+          "via": [
+            "code"
+          ],
+          "supervised": false,
+          "uses": [
+            "Python",
+            "Squirrel",
+            "HTML",
+            "JavaScript",
+            "Shell"
+          ]
+        },
+        {
+          "name": "oscilla",
+          "title": "Oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "work": true,
+          "slug": "oscilla",
+          "site": "https://korczis.github.io/oscilla/",
+          "category": "science",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
+          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
+          "created": "2026-10-01",
+          "pushed": "2026-11-19",
+          "primary": false,
+          "share": 1.9,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Web Audio"
+          ]
+        },
+        {
+          "name": "prismatic-majordomus",
+          "title": "Majordomus",
+          "url": "https://github.com/korczis/prismatic-majordomus",
+          "work": true,
+          "slug": "prismatic-majordomus",
+          "site": "https://korczis.github.io/prismatic-majordomus/",
+          "category": "ai",
+          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+          "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
+          "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
+          "created": "2026-09-03",
+          "pushed": "2026-11-19",
+          "primary": false,
+          "share": 3.8,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "Rust",
+            "Shell",
+            "JavaScript",
+            "HTML",
+            "MCP",
+            "Zola",
+            "Claude API",
+            "Mermaid"
+          ]
+        },
+        {
           "name": "kompendium-epistemicke-anihilace",
           "title": "Kompendium",
           "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
@@ -5999,39 +6145,6 @@
           ]
         },
         {
-          "name": "korczis.github.io",
-          "title": "korczis.github.io",
-          "url": "https://github.com/korczis/korczis.github.io",
-          "work": true,
-          "slug": "korczis-github-io",
-          "site": null,
-          "category": "web",
-          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-          "summary": null,
-          "summary_cs": null,
-          "created": "2024-12-24",
-          "pushed": "2026-11-18",
-          "primary": false,
-          "share": 36.4,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Alpine.js",
-            "Apache ECharts",
-            "Flowbite Pro",
-            "GitHub Pages",
-            "Majordomus",
-            "p5.js",
-            "Tailwind CSS",
-            "Zola"
-          ]
-        },
-        {
           "name": "majordomus-reel",
           "title": "Majordomus reel",
           "url": "https://github.com/korczis/majordomus-reel",
@@ -6056,88 +6169,6 @@
             "HTML",
             "Shell",
             "Majordomus"
-          ]
-        },
-        {
-          "name": "openttd-prismatic-bridge",
-          "title": "openttd-prismatic-bridge",
-          "url": "https://gitlab.com/korczis/openttd-prismatic-bridge",
-          "work": true,
-          "slug": "openttd-prismatic-bridge",
-          "site": null,
-          "category": "media",
-          "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
-          "summary": null,
-          "summary_cs": null,
-          "created": "2026-07-23",
-          "pushed": "2026-11-18",
-          "primary": false,
-          "share": 20,
-          "via": [
-            "code"
-          ],
-          "supervised": false,
-          "uses": [
-            "Squirrel",
-            "Python",
-            "HTML",
-            "Shell"
-          ]
-        },
-        {
-          "name": "oscilla",
-          "title": "Oscilla",
-          "url": "https://github.com/korczis/oscilla",
-          "work": true,
-          "slug": "oscilla",
-          "site": "https://korczis.github.io/oscilla/",
-          "category": "science",
-          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
-          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
-          "created": "2026-10-01",
-          "pushed": "2026-11-18",
-          "primary": false,
-          "share": 1.9,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Web Audio"
-          ]
-        },
-        {
-          "name": "prismatic-majordomus",
-          "title": "Majordomus",
-          "url": "https://github.com/korczis/prismatic-majordomus",
-          "work": true,
-          "slug": "prismatic-majordomus",
-          "site": "https://korczis.github.io/prismatic-majordomus/",
-          "category": "ai",
-          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
-          "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
-          "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
-          "created": "2026-09-03",
-          "pushed": "2026-11-18",
-          "primary": false,
-          "share": 3.8,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "Rust",
-            "Shell",
-            "JavaScript",
-            "HTML",
-            "MCP",
-            "Zola",
-            "Claude API",
-            "Mermaid"
           ]
         },
         {
@@ -7057,7 +7088,7 @@
           "summary": null,
           "summary_cs": null,
           "created": "2024-12-24",
-          "pushed": "2026-11-18",
+          "pushed": "2026-11-19",
           "primary": false,
           "share": 1.1,
           "via": [
@@ -7090,7 +7121,7 @@
           "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
           "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
           "created": "2026-10-01",
-          "pushed": "2026-11-18",
+          "pushed": "2026-11-19",
           "primary": false,
           "share": 1.1,
           "via": [
@@ -8864,6 +8895,39 @@
       ],
       "repos": [
         {
+          "name": "korczis.github.io",
+          "title": "korczis.github.io",
+          "url": "https://github.com/korczis/korczis.github.io",
+          "work": true,
+          "slug": "korczis-github-io",
+          "site": null,
+          "category": "web",
+          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2024-12-24",
+          "pushed": "2026-11-19",
+          "primary": false,
+          "share": null,
+          "via": [
+            "topic"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Alpine.js",
+            "Apache ECharts",
+            "Flowbite Pro",
+            "GitHub Pages",
+            "Majordomus",
+            "p5.js",
+            "Tailwind CSS",
+            "Zola"
+          ]
+        },
+        {
           "name": "kompendium-epistemicke-anihilace",
           "title": "Kompendium",
           "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
@@ -8896,39 +8960,6 @@
             "Alpine.js",
             "Flowbite Pro",
             "Majordomus"
-          ]
-        },
-        {
-          "name": "korczis.github.io",
-          "title": "korczis.github.io",
-          "url": "https://github.com/korczis/korczis.github.io",
-          "work": true,
-          "slug": "korczis-github-io",
-          "site": null,
-          "category": "web",
-          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-          "summary": null,
-          "summary_cs": null,
-          "created": "2024-12-24",
-          "pushed": "2026-11-18",
-          "primary": false,
-          "share": null,
-          "via": [
-            "topic"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Alpine.js",
-            "Apache ECharts",
-            "Flowbite Pro",
-            "GitHub Pages",
-            "Majordomus",
-            "p5.js",
-            "Tailwind CSS",
-            "Zola"
           ]
         },
         {
@@ -9019,7 +9050,7 @@
           "summary": null,
           "summary_cs": null,
           "created": "2024-12-24",
-          "pushed": "2026-11-18",
+          "pushed": "2026-11-19",
           "primary": false,
           "share": null,
           "via": [
@@ -9120,6 +9151,39 @@
       ],
       "repos": [
         {
+          "name": "korczis.github.io",
+          "title": "korczis.github.io",
+          "url": "https://github.com/korczis/korczis.github.io",
+          "work": true,
+          "slug": "korczis-github-io",
+          "site": null,
+          "category": "web",
+          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2024-12-24",
+          "pushed": "2026-11-19",
+          "primary": false,
+          "share": null,
+          "via": [
+            "topic"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Alpine.js",
+            "Apache ECharts",
+            "Flowbite Pro",
+            "GitHub Pages",
+            "Majordomus",
+            "p5.js",
+            "Tailwind CSS",
+            "Zola"
+          ]
+        },
+        {
           "name": "kompendium-epistemicke-anihilace",
           "title": "Kompendium",
           "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
@@ -9151,39 +9215,6 @@
             "Alpine.js",
             "Flowbite Pro",
             "Majordomus"
-          ]
-        },
-        {
-          "name": "korczis.github.io",
-          "title": "korczis.github.io",
-          "url": "https://github.com/korczis/korczis.github.io",
-          "work": true,
-          "slug": "korczis-github-io",
-          "site": null,
-          "category": "web",
-          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-          "summary": null,
-          "summary_cs": null,
-          "created": "2024-12-24",
-          "pushed": "2026-11-18",
-          "primary": false,
-          "share": null,
-          "via": [
-            "topic"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Alpine.js",
-            "Apache ECharts",
-            "Flowbite Pro",
-            "GitHub Pages",
-            "Majordomus",
-            "p5.js",
-            "Tailwind CSS",
-            "Zola"
           ]
         },
         {
@@ -9323,6 +9354,39 @@
       ],
       "repos": [
         {
+          "name": "korczis.github.io",
+          "title": "korczis.github.io",
+          "url": "https://github.com/korczis/korczis.github.io",
+          "work": true,
+          "slug": "korczis-github-io",
+          "site": null,
+          "category": "web",
+          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2024-12-24",
+          "pushed": "2026-11-19",
+          "primary": false,
+          "share": null,
+          "via": [
+            "topic"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Alpine.js",
+            "Apache ECharts",
+            "Flowbite Pro",
+            "GitHub Pages",
+            "Majordomus",
+            "p5.js",
+            "Tailwind CSS",
+            "Zola"
+          ]
+        },
+        {
           "name": "kompendium-epistemicke-anihilace",
           "title": "Kompendium",
           "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
@@ -9354,39 +9418,6 @@
             "Alpine.js",
             "Flowbite Pro",
             "Majordomus"
-          ]
-        },
-        {
-          "name": "korczis.github.io",
-          "title": "korczis.github.io",
-          "url": "https://github.com/korczis/korczis.github.io",
-          "work": true,
-          "slug": "korczis-github-io",
-          "site": null,
-          "category": "web",
-          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-          "summary": null,
-          "summary_cs": null,
-          "created": "2024-12-24",
-          "pushed": "2026-11-18",
-          "primary": false,
-          "share": null,
-          "via": [
-            "topic"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Alpine.js",
-            "Apache ECharts",
-            "Flowbite Pro",
-            "GitHub Pages",
-            "Majordomus",
-            "p5.js",
-            "Tailwind CSS",
-            "Zola"
           ]
         },
         {
@@ -9491,7 +9522,7 @@
           "summary": null,
           "summary_cs": null,
           "created": "2024-12-24",
-          "pushed": "2026-11-18",
+          "pushed": "2026-11-19",
           "primary": false,
           "share": null,
           "via": [
@@ -9576,41 +9607,6 @@
       ],
       "repos": [
         {
-          "name": "kompendium-epistemicke-anihilace",
-          "title": "Kompendium",
-          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
-          "work": true,
-          "slug": "kompendium-epistemicke-anihilace",
-          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
-          "category": "knowledge",
-          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
-          "summary": "A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore.",
-          "summary_cs": "Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat.",
-          "created": "2026-11-09",
-          "pushed": "2026-11-18",
-          "primary": false,
-          "share": null,
-          "via": [
-            "stack",
-            "topic"
-          ],
-          "supervised": true,
-          "uses": [
-            "Elixir",
-            "JavaScript",
-            "Python",
-            "HTML",
-            "Shell",
-            "Rust",
-            "Zola",
-            "Cytoscape.js",
-            "Apache ECharts",
-            "Alpine.js",
-            "Flowbite Pro",
-            "Majordomus"
-          ]
-        },
-        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "url": "https://github.com/korczis/korczis.github.io",
@@ -9622,7 +9618,7 @@
           "summary": null,
           "summary_cs": null,
           "created": "2024-12-24",
-          "pushed": "2026-11-18",
+          "pushed": "2026-11-19",
           "primary": false,
           "share": null,
           "via": [
@@ -9655,7 +9651,7 @@
           "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
           "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
           "created": "2026-09-03",
-          "pushed": "2026-11-18",
+          "pushed": "2026-11-19",
           "primary": false,
           "share": null,
           "via": [
@@ -9671,6 +9667,41 @@
             "Zola",
             "Claude API",
             "Mermaid"
+          ]
+        },
+        {
+          "name": "kompendium-epistemicke-anihilace",
+          "title": "Kompendium",
+          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
+          "work": true,
+          "slug": "kompendium-epistemicke-anihilace",
+          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+          "category": "knowledge",
+          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
+          "summary": "A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore.",
+          "summary_cs": "Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat.",
+          "created": "2026-11-09",
+          "pushed": "2026-11-18",
+          "primary": false,
+          "share": null,
+          "via": [
+            "stack",
+            "topic"
+          ],
+          "supervised": true,
+          "uses": [
+            "Elixir",
+            "JavaScript",
+            "Python",
+            "HTML",
+            "Shell",
+            "Rust",
+            "Zola",
+            "Cytoscape.js",
+            "Apache ECharts",
+            "Alpine.js",
+            "Flowbite Pro",
+            "Majordomus"
           ]
         }
       ],
@@ -9708,6 +9739,39 @@
       ],
       "repos": [
         {
+          "name": "korczis.github.io",
+          "title": "korczis.github.io",
+          "url": "https://github.com/korczis/korczis.github.io",
+          "work": true,
+          "slug": "korczis-github-io",
+          "site": null,
+          "category": "web",
+          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2024-12-24",
+          "pushed": "2026-11-19",
+          "primary": false,
+          "share": null,
+          "via": [
+            "topic"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Alpine.js",
+            "Apache ECharts",
+            "Flowbite Pro",
+            "GitHub Pages",
+            "Majordomus",
+            "p5.js",
+            "Tailwind CSS",
+            "Zola"
+          ]
+        },
+        {
           "name": "kompendium-epistemicke-anihilace",
           "title": "Kompendium",
           "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
@@ -9739,39 +9803,6 @@
             "Alpine.js",
             "Flowbite Pro",
             "Majordomus"
-          ]
-        },
-        {
-          "name": "korczis.github.io",
-          "title": "korczis.github.io",
-          "url": "https://github.com/korczis/korczis.github.io",
-          "work": true,
-          "slug": "korczis-github-io",
-          "site": null,
-          "category": "web",
-          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-          "summary": null,
-          "summary_cs": null,
-          "created": "2024-12-24",
-          "pushed": "2026-11-18",
-          "primary": false,
-          "share": null,
-          "via": [
-            "topic"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Alpine.js",
-            "Apache ECharts",
-            "Flowbite Pro",
-            "GitHub Pages",
-            "Majordomus",
-            "p5.js",
-            "Tailwind CSS",
-            "Zola"
           ]
         },
         {
@@ -9903,7 +9934,7 @@
           "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
           "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
           "created": "2026-09-03",
-          "pushed": "2026-11-18",
+          "pushed": "2026-11-19",
           "primary": false,
           "share": null,
           "via": [
@@ -10124,7 +10155,7 @@
           "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
           "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
           "created": "2026-10-01",
-          "pushed": "2026-11-18",
+          "pushed": "2026-11-19",
           "primary": false,
           "share": null,
           "via": [
@@ -10173,7 +10204,7 @@
           "summary": null,
           "summary_cs": null,
           "created": "2024-12-24",
-          "pushed": "2026-11-18",
+          "pushed": "2026-11-19",
           "primary": false,
           "share": null,
           "via": [
@@ -10851,7 +10882,7 @@
       "kind": "language",
       "counts": {
         "repos": 1,
-        "primary": 1,
+        "primary": 0,
         "sites": 0,
         "work": 1,
         "engagements": 0
@@ -10877,18 +10908,18 @@
           "summary": null,
           "summary_cs": null,
           "created": "2026-07-23",
-          "pushed": "2026-11-18",
-          "primary": true,
-          "share": 38.8,
+          "pushed": "2026-11-19",
+          "primary": false,
+          "share": 34.5,
           "via": [
-            "primary",
             "code"
           ],
           "supervised": false,
           "uses": [
-            "Squirrel",
             "Python",
+            "Squirrel",
             "HTML",
+            "JavaScript",
             "Shell"
           ]
         }
@@ -11113,7 +11144,7 @@
           "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
           "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
           "created": "2026-09-03",
-          "pushed": "2026-11-18",
+          "pushed": "2026-11-19",
           "primary": false,
           "share": null,
           "via": [
@@ -11440,7 +11471,7 @@
           "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
           "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
           "created": "2026-09-03",
-          "pushed": "2026-11-18",
+          "pushed": "2026-11-19",
           "primary": false,
           "share": null,
           "via": [

@@ -3,7 +3,7 @@
 title = "Majordomus"
 description = "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen…"
 template = "work.html"
-weight = 2
+weight = 4
 updated = "2026-11-18T14:10:08Z"
 
 [taxonomies]

@@ -122,8 +122,8 @@
  ],
  "front_matter_schema": "https://korczis.github.io/schemas/front-matter.schema.json",
  "data_as_of": {
-  "snapshot": "2026-11-18T20:44:44Z",
-  "index": "2026-11-18T20:52:02Z"
+  "snapshot": "2026-11-19T02:40:40Z",
+  "index": "2026-11-19T02:47:02Z"
  },
  "pages": [
   {
@@ -3166,11 +3166,11 @@
     "Tomáš Korčák: projekty",
     "korczis",
     "oscilla",
-    "prismatic-majordomus",
+    "openttd-prismatic-bridge",
     "korczis.github.io",
+    "prismatic-majordomus",
     "majordomus-reel",
     "kompendium-epistemicke-anihilace",
-    "openttd-prismatic-bridge",
     "sonic-playground",
     "algoglyph"
    ]
@@ -4994,7 +4994,7 @@
    "url": "https://korczis.github.io/cs/work/korczis-github-io/",
    "lang": "cs",
    "title": "korczis.github.io: Web, JavaScript, 2024–2026 · Tomáš Korčák",
-   "description": "korczis.github.io: projekt z kategorie Web, hlavní jazyk JavaScript, poslední commit 18. listopadu 2026.",
+   "description": "korczis.github.io: projekt z kategorie Web, hlavní jazyk JavaScript, poslední commit 19. listopadu 2026.",
    "type": "project",
    "category": "web",
    "og_image": "https://korczis.github.io/og/cs-work-korczis-github-io.png",
@@ -5825,16 +5825,16 @@
   {
    "url": "https://korczis.github.io/cs/work/openttd-prismatic-bridge/",
    "lang": "cs",
-   "title": "openttd-prismatic-bridge: Média a umění, Squirrel, 2026 · Tomáš Korčák",
-   "description": "openttd-prismatic-bridge: projekt z kategorie Média a umění, hlavní jazyk Squirrel, poslední commit 18. listopadu 2026.",
+   "title": "openttd-prismatic-bridge: Média a umění, Python, 2026 · Tomáš Korčák",
+   "description": "openttd-prismatic-bridge: projekt z kategorie Média a umění, hlavní jazyk Python, poslední commit 19. listopadu 2026.",
    "type": "project",
    "category": "media",
    "og_image": "https://korczis.github.io/og/cs-work-openttd-prismatic-bridge.png",
    "keywords": [
     "openttd-prismatic-bridge",
     "Média a umění",
-    "Squirrel",
     "Python",
+    "Squirrel",
     "HTML",
     "2026",
     "GitLab",
@@ -9990,11 +9990,11 @@
     "Tomas Korcak projects",
     "korczis",
     "oscilla",
-    "prismatic-majordomus",
+    "openttd-prismatic-bridge",
     "korczis.github.io",
+    "prismatic-majordomus",
     "majordomus-reel",
     "kompendium-epistemicke-anihilace",
-    "openttd-prismatic-bridge",
     "sonic-playground",
     "algoglyph"
    ]
@@ -12649,7 +12649,7 @@
   {
    "url": "https://korczis.github.io/work/openttd-prismatic-bridge/",
    "lang": "en",
-   "title": "openttd-prismatic-bridge: Media and art, 2026 · Tomas Korcak",
+   "title": "openttd-prismatic-bridge: Media and art in Python, 2026 · Tomas Korcak",
    "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
    "type": "project",
    "category": "media",
@@ -12657,8 +12657,8 @@
    "keywords": [
     "openttd-prismatic-bridge",
     "Media and art",
-    "Squirrel",
     "Python",
+    "Squirrel",
     "HTML",
     "2026",
     "GitLab",
@@ -14269,8 +14269,8 @@
    "gitlab": null,
    "site": "https://korczis.github.io/oscilla/",
    "created": "2026-10-01T21:05:33Z",
-   "active": "2026-11-18T19:43:04Z",
-   "last_commit": "2026-11-18T20:50:08Z",
+   "active": "2026-11-19T02:39:34Z",
+   "last_commit": "2026-11-19T02:11:26Z",
    "period": 12,
    "archive": false,
    "stars": 1,
@@ -14290,7 +14290,7 @@
    "gitlab": null,
    "site": "https://korczis.github.io/prismatic-majordomus/",
    "created": "2026-09-03T20:24:57Z",
-   "active": "2026-11-18T17:27:41Z",
+   "active": "2026-11-19T01:55:51Z",
    "last_commit": "2026-11-18T14:10:08Z",
    "period": 12,
    "archive": false,
@@ -14311,12 +14311,33 @@
    "gitlab": null,
    "site": null,
    "created": "2024-12-24T16:48:15Z",
-   "active": "2026-11-18T12:06:10Z",
-   "last_commit": "2026-11-18T12:05:28Z",
+   "active": "2026-11-19T01:15:00Z",
+   "last_commit": "2026-11-19T01:13:58Z",
    "period": 12,
    "archive": false,
    "stars": 0,
    "supervised": true
+  },
+  {
+   "name": "openttd-prismatic-bridge",
+   "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
+   "language": "Python",
+   "category": "media",
+   "page": "https://korczis.github.io/work/openttd-prismatic-bridge/",
+   "pages": {
+    "en": "https://korczis.github.io/work/openttd-prismatic-bridge/",
+    "cs": "https://korczis.github.io/cs/work/openttd-prismatic-bridge/"
+   },
+   "github": null,
+   "gitlab": "https://gitlab.com/korczis/openttd-prismatic-bridge",
+   "site": null,
+   "created": "2026-07-23T22:00:54.776Z",
+   "active": "2026-11-19T00:49:32.567Z",
+   "last_commit": "2026-11-19T01:49:27.000+01:00",
+   "period": 12,
+   "archive": false,
+   "stars": 0,
+   "supervised": false
   },
   {
    "name": "kompendium-epistemicke-anihilace",
@@ -14359,27 +14380,6 @@
    "archive": false,
    "stars": 0,
    "supervised": true
-  },
-  {
-   "name": "openttd-prismatic-bridge",
-   "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
-   "language": "Squirrel",
-   "category": "media",
-   "page": "https://korczis.github.io/work/openttd-prismatic-bridge/",
-   "pages": {
-    "en": "https://korczis.github.io/work/openttd-prismatic-bridge/",
-    "cs": "https://korczis.github.io/cs/work/openttd-prismatic-bridge/"
-   },
-   "github": null,
-   "gitlab": "https://gitlab.com/korczis/openttd-prismatic-bridge",
-   "site": null,
-   "created": "2026-07-23T22:00:54.776Z",
-   "active": "2026-11-18T06:54:45.222Z",
-   "last_commit": "2026-11-18T03:16:44.000+01:00",
-   "period": 12,
-   "archive": false,
-   "stars": 0,
-   "supervised": false
   },
   {
    "name": "sonic-playground",

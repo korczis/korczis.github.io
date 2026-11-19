@@ -162,21 +162,21 @@
    ]
   },
   {
+   "name": "Python",
+   "url": "https://korczis.github.io/cs/glossary/python/",
+   "keywords": [
+    "openttd-prismatic-bridge",
+    "sonic-playground",
+    "data-atlas"
+   ]
+  },
+  {
    "name": "C++",
    "url": "https://korczis.github.io/cs/glossary/cpp/",
    "keywords": [
     "happ",
     "algorithms-ruby",
     "iCave"
-   ]
-  },
-  {
-   "name": "Python",
-   "url": "https://korczis.github.io/cs/glossary/python/",
-   "keywords": [
-    "sonic-playground",
-    "data-atlas",
-    "astronomists"
    ]
   },
   {
@@ -302,13 +302,6 @@
    "url": "https://korczis.github.io/cs/glossary/r/",
    "keywords": [
     "datascience"
-   ]
-  },
-  {
-   "name": "Squirrel",
-   "url": "https://korczis.github.io/cs/glossary/squirrel/",
-   "keywords": [
-    "openttd-prismatic-bridge"
    ]
   },
   {
@@ -546,6 +539,6 @@
  "meta": {
   "canonical": "https://korczis.github.io/cs/resume.json",
   "version": "v1.0.0",
-  "lastModified": "2026-11-18T20:52:02Z"
+  "lastModified": "2026-11-19T02:47:02Z"
  }
 }

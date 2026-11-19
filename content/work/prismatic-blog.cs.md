@@ -36,6 +36,6 @@ Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https
 
 Zdrojový kód: [GitHub](https://github.com/korczis/prismatic-blog).
 
-Související práce v kategorii [Média a umění](@/projects/media.cs.md): [Catharsis as a Service](@/work/catharsis-as-a-service.cs.md) (2026), [Sonic Playground](@/work/sonic-playground.cs.md) (2026), [openttd-prismatic-bridge](@/work/openttd-prismatic-bridge.cs.md) (2026) a [Majordomus reel](@/work/majordomus-reel.cs.md) (2026).
+Související práce v kategorii [Média a umění](@/projects/media.cs.md): [Catharsis as a Service](@/work/catharsis-as-a-service.cs.md) (2026), [Sonic Playground](@/work/sonic-playground.cs.md) (2026), [Majordomus reel](@/work/majordomus-reel.cs.md) (2026) a [openttd-prismatic-bridge](@/work/openttd-prismatic-bridge.cs.md) (2026).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje jeho jediný commit jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

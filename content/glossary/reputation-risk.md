@@ -17,7 +17,7 @@ definition = "The risk that what is said about an organisation or a person, true
 aliases = []
 reference = { title = "Wikipedia: reputational risk", url = "https://en.wikipedia.org/wiki/Reputational_risk" }
 pages = ["services/_index.md", "services/digital-forensics.md", "services/reputation-intelligence.md", "skills/_index.md", "skills/narrative-analysis.md"]
-related = ["html", "python", "shell", "alpine-js", "css", "flowbite-pro", "javascript", "service"]
+related = ["claude-api", "html", "python", "shell", "alpine-js", "flowbite-pro", "javascript", "service"]
 og_title = "Reputation risk: glossary"
 og_image = "og/glossary-reputation-risk.png"
 keywords = ["Reputation risk", "Concept", "Glossary", "Tomas Korcak"]

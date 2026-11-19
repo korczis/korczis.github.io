@@ -1,6 +1,6 @@
 {
  "schema": "korczis-hub-index/v1",
- "generated_at": "2026-11-18T20:52:02Z",
+ "generated_at": "2026-11-19T02:47:02Z",
  "rule": "original = the owner wrote at least half of the listed commits; forks and mirrors are counted, not listed",
  "counts": {
   "github": 448,
@@ -18,7 +18,7 @@
  "dropped": [],
  "supervision": {
   "marker": ".ai/manifest.yaml",
-  "measured_at": "2026-11-18T20:52:02Z",
+  "measured_at": "2026-11-19T02:47:02Z",
   "kept": 0
  },
  "all_repos": [
@@ -1664,7 +1664,7 @@
    ],
    "stars": 0,
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-18T12:06:10Z",
+   "pushed_at": "2026-11-19T01:15:00Z",
    "archived": false,
    "share": 0.94,
    "hosts": {
@@ -2189,7 +2189,7 @@
    ],
    "stars": 1,
    "created_at": "2026-10-01T21:05:33Z",
-   "pushed_at": "2026-11-18T19:43:04Z",
+   "pushed_at": "2026-11-19T02:39:34Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -2452,7 +2452,7 @@
    ],
    "stars": 1,
    "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-18T17:27:41Z",
+   "pushed_at": "2026-11-19T01:55:51Z",
    "archived": false,
    "share": 0.99,
    "hosts": {
@@ -3515,11 +3515,11 @@
   {
    "name": "openttd-prismatic-bridge",
    "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
-   "language": "Squirrel",
+   "language": "Python",
    "topics": [],
    "stars": 0,
    "created_at": "2026-07-23T22:00:54.776Z",
-   "pushed_at": "2026-11-18T06:54:45.222Z",
+   "pushed_at": "2026-11-19T00:49:32.567Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -4332,8 +4332,8 @@
   "science": 12,
   "ai": 5,
   "web": 14,
-  "knowledge": 5,
   "media": 8,
+  "knowledge": 5,
   "data": 49,
   "tools": 63,
   "security": 5,
@@ -4360,17 +4360,17 @@
    "top_language": "JavaScript",
    "since": "2014"
   },
-  "knowledge": {
-   "repos": 5,
-   "sites": 1,
-   "top_language": "Swift",
-   "since": "2013"
-  },
   "media": {
    "repos": 8,
    "sites": 4,
    "top_language": "JavaScript",
    "since": "2015"
+  },
+  "knowledge": {
+   "repos": 5,
+   "sites": 1,
+   "top_language": "Swift",
+   "since": "2013"
   },
   "data": {
    "repos": 49,
@@ -4431,11 +4431,11 @@
    "repos": 12
   },
   {
-   "name": "C++",
-   "repos": 6
+   "name": "Python",
+   "repos": 7
   },
   {
-   "name": "Python",
+   "name": "C++",
    "repos": 6
   },
   {
@@ -4500,10 +4500,6 @@
   },
   {
    "name": "R",
-   "repos": 1
-  },
-  {
-   "name": "Squirrel",
    "repos": 1
   },
   {
@@ -4612,9 +4608,8 @@
   "2026": {
    "JavaScript": 3,
    "Rust": 1,
+   "Python": 5,
    "Elixir": 3,
-   "Squirrel": 1,
-   "Python": 4,
    "TypeScript": 1,
    "HTML": 2
   }
@@ -4712,6 +4707,24 @@
     ]
    },
    {
+    "name": "Python",
+    "repos": 7,
+    "evidence": [
+     {
+      "name": "openttd-prismatic-bridge",
+      "url": "https://gitlab.com/korczis/openttd-prismatic-bridge"
+     },
+     {
+      "name": "sonic-playground",
+      "url": "https://github.com/korczis/sonic-playground"
+     },
+     {
+      "name": "data-atlas",
+      "url": "https://github.com/korczis/data-atlas"
+     }
+    ]
+   },
+   {
     "name": "C++",
     "repos": 6,
     "evidence": [
@@ -4726,24 +4739,6 @@
      {
       "name": "iCave",
       "url": "https://github.com/korczis/iCave"
-     }
-    ]
-   },
-   {
-    "name": "Python",
-    "repos": 6,
-    "evidence": [
-     {
-      "name": "sonic-playground",
-      "url": "https://github.com/korczis/sonic-playground"
-     },
-     {
-      "name": "data-atlas",
-      "url": "https://github.com/korczis/data-atlas"
-     },
-     {
-      "name": "astronomists",
-      "url": "https://github.com/korczis/astronomists"
      }
     ]
    },
@@ -4960,16 +4955,6 @@
     ]
    },
    {
-    "name": "Squirrel",
-    "repos": 1,
-    "evidence": [
-     {
-      "name": "openttd-prismatic-bridge",
-      "url": "https://gitlab.com/korczis/openttd-prismatic-bridge"
-     }
-    ]
-   },
-   {
     "name": "TeX",
     "repos": 1,
     "evidence": [
@@ -5116,7 +5101,7 @@
  "recent": {
   "size": 100,
   "from": "2018-03-08T21:01:52Z",
-  "to": "2026-11-18T19:43:04Z",
+  "to": "2026-11-19T02:39:34Z",
   "mix": {
    "science": {
     "JavaScript": 1,
@@ -5135,18 +5120,17 @@
     "CSS": 3,
     "Elixir": 1
    },
+   "media": {
+    "Python": 2,
+    "JavaScript": 1,
+    "HTML": 1,
+    "Dockerfile": 1,
+    "Elixir": 1
+   },
    "knowledge": {
     "Elixir": 1,
     "Swift": 2,
     "Unspecified": 1
-   },
-   "media": {
-    "JavaScript": 1,
-    "Squirrel": 1,
-    "Python": 1,
-    "HTML": 1,
-    "Dockerfile": 1,
-    "Elixir": 1
    },
    "data": {
     "Python": 1,
@@ -5201,7 +5185,7 @@
    ],
    "stars": 1,
    "created_at": "2026-10-01T21:05:33Z",
-   "pushed_at": "2026-11-18T19:43:04Z",
+   "pushed_at": "2026-11-19T02:39:34Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -5239,7 +5223,7 @@
    ],
    "stars": 1,
    "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-18T17:27:41Z",
+   "pushed_at": "2026-11-19T01:55:51Z",
    "archived": false,
    "share": 0.99,
    "hosts": {
@@ -5272,7 +5256,7 @@
    ],
    "stars": 0,
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-18T12:06:10Z",
+   "pushed_at": "2026-11-19T01:15:00Z",
    "archived": false,
    "share": 0.94,
    "hosts": {
@@ -5281,6 +5265,24 @@
    "site": null,
    "supervised": true,
    "category": "web",
+   "curated": false
+  },
+  {
+   "name": "openttd-prismatic-bridge",
+   "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
+   "language": "Python",
+   "topics": [],
+   "stars": 0,
+   "created_at": "2026-07-23T22:00:54.776Z",
+   "pushed_at": "2026-11-19T00:49:32.567Z",
+   "archived": false,
+   "share": 1,
+   "hosts": {
+    "gitlab": "https://gitlab.com/korczis/openttd-prismatic-bridge"
+   },
+   "site": null,
+   "supervised": false,
+   "category": "media",
    "curated": false
   },
   {
@@ -5335,24 +5337,6 @@
    "supervised": true,
    "category": "media",
    "curated": true
-  },
-  {
-   "name": "openttd-prismatic-bridge",
-   "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
-   "language": "Squirrel",
-   "topics": [],
-   "stars": 0,
-   "created_at": "2026-07-23T22:00:54.776Z",
-   "pushed_at": "2026-11-18T06:54:45.222Z",
-   "archived": false,
-   "share": 1,
-   "hosts": {
-    "gitlab": "https://gitlab.com/korczis/openttd-prismatic-bridge"
-   },
-   "site": null,
-   "supervised": false,
-   "category": "media",
-   "curated": false
   },
   {
    "name": "sonic-playground",

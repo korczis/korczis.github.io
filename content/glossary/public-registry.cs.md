@@ -17,7 +17,7 @@ definition = "Úřední rejstřík, který stát vede veřejně: firmy, insolven
 aliases = []
 reference = { title = "Open Ownership: registers", url = "https://www.openownership.org/en/topics/beneficial-ownership-registers/" }
 pages = ["services/_index.cs.md", "services/continuous-monitoring.cs.md", "services/digital-investigation.cs.md", "services/due-diligence.cs.md", "skills/_index.cs.md", "skills/registry-intelligence.cs.md"]
-related = ["javascript", "alpine-js", "dockerfile", "fastapi", "flowbite-pro", "html", "record-linkage", "service"]
+related = ["javascript", "alpine-js", "claude-api", "dockerfile", "fastapi", "flowbite-pro", "html", "record-linkage"]
 og_title = "Veřejný rejstřík: slovník"
 og_image = "og/cs-glossary-public-registry.png"
 keywords = ["Veřejný rejstřík", "Public registry", "Koncept", "Slovník", "Tomáš Korčák"]

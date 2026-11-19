@@ -1,6 +1,6 @@
 {
  "schema": "korczis-hub-recent/v2",
- "generated_at": "2026-11-18T20:52:03Z",
+ "generated_at": "2026-11-19T02:47:02Z",
  "window_days": 1461,
  "periods": [
   {
@@ -18,7 +18,7 @@
  ],
  "archive": 162,
  "rule": "every original repository of data/index.json; a repository is recent when its default branch has a commit in the window, archive otherwise; host activity dates are ignored",
- "asked": 3,
+ "asked": 4,
  "repos": [
   {
    "name": "oscilla",
@@ -27,14 +27,124 @@
    "category": "science",
    "language": "JavaScript",
    "created_at": "2026-10-01T21:05:33Z",
-   "pushed_at": "2026-11-18T19:43:04Z",
-   "last_commit": "2026-11-18T20:50:08Z",
-   "last_message": "chore(release): v3.41.7 (#616)",
+   "pushed_at": "2026-11-19T02:39:34Z",
+   "last_commit": "2026-11-19T02:11:26Z",
+   "last_message": "chore(release): záznam v3.41.8; U116 hotovo, U119 čeká na U118 (#623)",
    "commits": [
+    {
+     "at": "2026-11-19T02:11:26Z",
+     "message": "chore(release): záznam v3.41.8; U116 hotovo, U119 čeká na U118 (#623)",
+     "url": "https://github.com/korczis/oscilla/commit/f282bd7c4351848cc716ca68baed8bedfd104e07"
+    },
+    {
+     "at": "2026-11-19T02:06:12Z",
+     "message": "chore(release): record v3.41.8; U116 done, U119 blocked on U118",
+     "url": "https://github.com/korczis/oscilla/commit/e5622bc4f471b72ee286261964a53dc0328fca85"
+    },
+    {
+     "at": "2026-11-19T01:40:52Z",
+     "message": "chore(release): v3.41.8 (#622)",
+     "url": "https://github.com/korczis/oscilla/commit/a165fd9de536c059bedaa5f9a293be7569e059ef"
+    },
+    {
+     "at": "2026-11-19T00:50:36Z",
+     "message": "chore(release): v3.41.8",
+     "url": "https://github.com/korczis/oscilla/commit/66253eca416a656833ee6d57ffe8eb224b5e652e"
+    },
+    {
+     "at": "2026-11-19T00:43:20Z",
+     "message": "fix(ui): tlačítko příkladu ve Výuce a úchyt doku klávesnice česky (U119, fáze 8) (#618)",
+     "url": "https://github.com/korczis/oscilla/commit/7eef249914a4c3aa713980dc6616fc4a5f3c3efa"
+    },
+    {
+     "at": "2026-11-18T23:38:37Z",
+     "message": "Merge remote-tracking branch 'origin/main' into fix/czech-u119-learn-dock",
+     "url": "https://github.com/korczis/oscilla/commit/5f3d57e812900c8d527282eccc889bd6a77e4c27"
+    },
+    {
+     "at": "2026-11-18T23:37:45Z",
+     "message": "chore(release): záznam v3.41.7; U118 zůstává otevřené s mezerou (#621)",
+     "url": "https://github.com/korczis/oscilla/commit/50a06133d45e6211315624648889c5638c39def5"
+    },
+    {
+     "at": "2026-11-18T23:16:29Z",
+     "message": "Merge remote-tracking branch 'origin/main' into fix/czech-u119-learn-dock",
+     "url": "https://github.com/korczis/oscilla/commit/c83c219931c94b993c3f67996404381d716f763c"
+    },
+    {
+     "at": "2026-11-18T23:13:26Z",
+     "message": "Merge main into chore/release-record-v3.41.7",
+     "url": "https://github.com/korczis/oscilla/commit/d6e2db1920f49b4c1d75066bbdaea097d0bc4ef4"
+    },
+    {
+     "at": "2026-11-18T23:09:48Z",
+     "message": "fix(lab): grafy/ s vydáními neroste: šest grafů podle vydání ukazuje posledních 48 (#620)",
+     "url": "https://github.com/korczis/oscilla/commit/01dc3099c664f57e6b9e57ed0224c6cb09ea58a7"
+    },
+    {
+     "at": "2026-11-18T22:14:18Z",
+     "message": "Merge remote-tracking branch 'origin/main' into fix/lab-grafy-bounded",
+     "url": "https://github.com/korczis/oscilla/commit/f14ad4391ac5f140794478b89a890adb7791598d"
+    },
+    {
+     "at": "2026-11-18T22:14:02Z",
+     "message": "fix(release): publikace čeká na označenou živou stránku podle deadlinu, ne tři čtení (#617)",
+     "url": "https://github.com/korczis/oscilla/commit/43d8c349e05392c98b89663f888e1ef0063a56ba"
+    },
+    {
+     "at": "2026-11-18T21:30:23Z",
+     "message": "test(lab): a chart names its window exactly when its series was cut, so a tree without history passes",
+     "url": "https://github.com/korczis/oscilla/commit/efc368af1b4006f100fb9b7726d4478270d44b21"
+    },
+    {
+     "at": "2026-11-18T21:24:24Z",
+     "message": "test(lab): wrap a comment line of landing-lab to 100 columns",
+     "url": "https://github.com/korczis/oscilla/commit/f56a9c414e9d8713ee0e680ae950499612fbf098"
+    },
+    {
+     "at": "2026-11-18T21:22:48Z",
+     "message": "fix(lab): 've Změnách', and the cadence median names that it is of the shown intervals (C3 on #620)",
+     "url": "https://github.com/korczis/oscilla/commit/325deec424d53f745c1740cd16184db4975ad08e"
+    },
+    {
+     "at": "2026-11-18T21:17:22Z",
+     "message": "fix(lab): grafy/ stays flat in releases: the six per-release charts and their tables show the newest 48",
+     "url": "https://github.com/korczis/oscilla/commit/3f2df378d74deea5949e3fd9b33f616324824b89"
+    },
+    {
+     "at": "2026-11-18T21:07:58Z",
+     "message": "Merge main into fix/publish-tagged-wait",
+     "url": "https://github.com/korczis/oscilla/commit/fec1bd66b7aef02fa581cdf3a3c0fc32e32d384f"
+    },
+    {
+     "at": "2026-11-18T21:06:34Z",
+     "message": "chore(release): record v3.41.7; U118 left open with its gap",
+     "url": "https://github.com/korczis/oscilla/commit/bda6d69122000ccfc90a63c02528ae300768ca8d"
+    },
+    {
+     "at": "2026-11-18T20:59:00Z",
+     "message": "test(visual): the four linux-x64 SYN XY views re-accepted for U119's dock handle 'Klávesnice'",
+     "url": "https://github.com/korczis/oscilla/commit/2ffc5dbb18a02d3951fe2bf5340331b67ed48ede"
+    },
     {
      "at": "2026-11-18T20:50:08Z",
      "message": "chore(release): v3.41.7 (#616)",
      "url": "https://github.com/korczis/oscilla/commit/0cb38ae3d64259220e446530016923a1f0444e8a"
+    },
+    {
+     "at": "2026-11-18T19:25:06Z",
+     "message": "fix(ui): the Learn card's example button and the keyboard dock's handle in Czech (U119)",
+     "url": "https://github.com/korczis/oscilla/commit/5a5007d91aad9e3f30dbbb4a35f2c7acce60111b"
+    },
+    {
+     "at": "2026-11-18T19:14:40Z",
+     "message": "chore(review): the #617 verdict (publish waits for the tagged page by a deadline), merge under the legs condition",
+     "url": "https://github.com/korczis/oscilla/commit/9dcd89a0587d58054e7dc0473af0499bc0159fa4"
+    },
+    {
+     "at": "2026-11-18T19:10:35Z",
+     "message": "Merge main into fix/publish-tagged-wait",
+     "url": "https://github.com/korczis/oscilla/commit/87cf2b2caca90d582c9002412f954dad57f0d600"
     },
     {
      "at": "2026-11-18T19:08:53Z",
@@ -70,116 +180,6 @@
      "at": "2026-11-18T16:14:53Z",
      "message": "chore(release): v3.41.6",
      "url": "https://github.com/korczis/oscilla/commit/ca3945dff3888c8e082a81b3c0071c70befafc68"
-    },
-    {
-     "at": "2026-11-18T16:12:53Z",
-     "message": "Merge remote-tracking branch 'origin/main' into fix/czech-u118-studio-links",
-     "url": "https://github.com/korczis/oscilla/commit/97557d3889b1b97a9b716bdf9e6c65e71ad1e742"
-    },
-    {
-     "at": "2026-11-18T16:11:37Z",
-     "message": "fix(ui): the Studio template and workspace action links, and the Studio saved-row actions, in Czech (U118)",
-     "url": "https://github.com/korczis/oscilla/commit/113c4dc027aa11bfa871df696a1695ae76bd5cb4"
-    },
-    {
-     "at": "2026-11-18T16:10:45Z",
-     "message": "fix(ui): Výuka a Předvolby česky nad anglickými daty (U116, pass 8, zobrazovací vrstva) (#600)",
-     "url": "https://github.com/korczis/oscilla/commit/62873b29561eae94ecbacfd1e9286d28737b062c"
-    },
-    {
-     "at": "2026-11-18T14:55:41Z",
-     "message": "Merge main into fix/czech-pass-8 (#600)",
-     "url": "https://github.com/korczis/oscilla/commit/0307278083df2cf6c6612320e716bb5b7e3d4a30"
-    },
-    {
-     "at": "2026-11-18T14:54:24Z",
-     "message": "plan(E078): občasné selhání kontroly přechodů mezi pracovními plochami v link-integrity (#610)",
-     "url": "https://github.com/korczis/oscilla/commit/6558f985c5c533febaaaf2bd5e517aee0178021e"
-    },
-    {
-     "at": "2026-11-18T14:47:52Z",
-     "message": "Merge main into fix/czech-pass-8 (#600)",
-     "url": "https://github.com/korczis/oscilla/commit/f3d74ac132621bee72c126364852bc3da3815e4d"
-    },
-    {
-     "at": "2026-11-18T14:45:25Z",
-     "message": "Merge remote-tracking branch 'origin/main' into plan/e078-link-integrity-cross-workspace",
-     "url": "https://github.com/korczis/oscilla/commit/cca03de3025267db33449e65eeeb8e45de84001c"
-    },
-    {
-     "at": "2026-11-18T14:41:58Z",
-     "message": "chore(release): záznam v3.41.5; U115 hotovo (#612)",
-     "url": "https://github.com/korczis/oscilla/commit/dcdba1bcd429bb58b82962f31c091bb198ce5889"
-    },
-    {
-     "at": "2026-11-18T14:16:10Z",
-     "message": "chore(release): record v3.41.5; U115 done",
-     "url": "https://github.com/korczis/oscilla/commit/3cf4d8c8024a19b682e1660e7a0a7b279c36404f"
-    },
-    {
-     "at": "2026-11-18T13:54:37Z",
-     "message": "chore(release): v3.41.5 (#611)",
-     "url": "https://github.com/korczis/oscilla/commit/7222069c62245456a2cf35c7eba9b4b4f1212205"
-    },
-    {
-     "at": "2026-11-18T12:57:56Z",
-     "message": "chore(release): v3.41.5",
-     "url": "https://github.com/korczis/oscilla/commit/f3ef6d48542fd7245d5eed778e5da444308e876c"
-    },
-    {
-     "at": "2026-11-18T12:52:09Z",
-     "message": "fix(ui): krok posouzení, prázdný graf a konec IR česky (U115, pass 7c) (#607)",
-     "url": "https://github.com/korczis/oscilla/commit/5bccf0f8f2a8c9c0df65573fb90a24b708828d35"
-    },
-    {
-     "at": "2026-11-18T12:09:59Z",
-     "message": "plan(E078): the two reds are the press side and the landing side of one walk (oscilla-c3)",
-     "url": "https://github.com/korczis/oscilla/commit/7ba55d83fcdd316dedddf093b5e209d09c5efca7"
-    },
-    {
-     "at": "2026-11-18T12:07:32Z",
-     "message": "plan(E078): link-integrity's cross-workspace controls check fails intermittently on CI",
-     "url": "https://github.com/korczis/oscilla/commit/5f8f55707f8872e11d91f91b8c28898ce7b784a2"
-    },
-    {
-     "at": "2026-11-18T11:10:43Z",
-     "message": "Merge remote-tracking branch 'origin/main' into fix/czech-pass-7c",
-     "url": "https://github.com/korczis/oscilla/commit/48c1f6101fbfce3a427da5c0e005b27acf3d6296"
-    },
-    {
-     "at": "2026-11-18T11:08:36Z",
-     "message": "chore(release): záznam v3.41.4 (#609)",
-     "url": "https://github.com/korczis/oscilla/commit/89209735d4d5a5ba02835a4ddf7da3326f7284f2"
-    },
-    {
-     "at": "2026-11-18T11:02:38Z",
-     "message": "chore(release): record v3.41.4",
-     "url": "https://github.com/korczis/oscilla/commit/b0a3a334c308bbf5ca6cb019c3c124752bcce93c"
-    },
-    {
-     "at": "2026-11-18T10:46:44Z",
-     "message": "chore(release): v3.41.4 (#608)",
-     "url": "https://github.com/korczis/oscilla/commit/15ab37807b9f1e79c2889b44e72185a72e4ae764"
-    },
-    {
-     "at": "2026-11-18T09:52:19Z",
-     "message": "chore(review): the #607 verdict (Czech pass 7c, U115), merge under the legs condition",
-     "url": "https://github.com/korczis/oscilla/commit/1a31956426fdb9c165528ac3d73bec9588a18843"
-    },
-    {
-     "at": "2026-11-18T09:43:51Z",
-     "message": "chore(release): v3.41.4",
-     "url": "https://github.com/korczis/oscilla/commit/dc16b9bb6a7fd21ddb1b69466717f2256bf7d179"
-    },
-    {
-     "at": "2026-11-18T09:38:44Z",
-     "message": "fix(release): limit pro plan roadmap odpovídá změřenému běhu pod zátěží (#606)",
-     "url": "https://github.com/korczis/oscilla/commit/0688a0edce2713ebe7c49fda0ef9734c3b130eb2"
-    },
-    {
-     "at": "2026-11-18T07:59:28Z",
-     "message": "fix(ui): the IR panel names the noise tail one way, and the response notes say 'surová křivka' (U115, pass 7c, C3-607-1)",
-     "url": "https://github.com/korczis/oscilla/commit/73a761cf2139caaf998bc1c5c815619cd49f6f1a"
     }
    ],
    "languages": [
@@ -227,13 +227,416 @@
    "supervised": true
   },
   {
+   "name": "openttd-prismatic-bridge",
+   "period": 12,
+   "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
+   "category": "media",
+   "language": "Python",
+   "created_at": "2026-07-23T22:00:54.776Z",
+   "pushed_at": "2026-11-19T00:49:32.567Z",
+   "last_commit": "2026-11-19T01:49:27.000+01:00",
+   "last_message": "Fix: the brand menu keeps an open submenu through its status refresh, and pages revalidate their scripts",
+   "commits": [
+    {
+     "at": "2026-11-19T01:49:27.000+01:00",
+     "message": "Fix: the brand menu keeps an open submenu through its status refresh, and pages revalidate their scripts",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/dd9119b16f32236bdc5a64185adca664f7007104"
+    },
+    {
+     "at": "2026-11-18T07:54:42.000+01:00",
+     "message": "Add: the navbar's prism mark opens the bridge's control surface, with submenus",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/7a87bfb9b3f30182655619ab01b3e3dd336e1378"
+    },
+    {
+     "at": "2026-11-18T03:16:44.000+01:00",
+     "message": "Doc: the overview's Prismatic card says a decision's settings go onto the running AI and a refused one answers 502",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/b19ed53f78eea7bdec88e7b512642cfed9c03b23"
+    },
+    {
+     "at": "2026-11-17T23:18:50.000+01:00",
+     "message": "Fix: /decision/pull reports a decision setting the server did not apply instead of answering 200",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/d2c00f574c1cf23939047f9ad3ba08e1c80155f3"
+    },
+    {
+     "at": "2026-11-17T22:37:08.000+01:00",
+     "message": "Merge feature/flowbite-pro-ui: the bridge's pages on Flowbite Pro",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/5a896702bc8eef996c9bd08bb5a319e3e5680768"
+    },
+    {
+     "at": "2026-11-17T22:32:48.000+01:00",
+     "message": "Merge feat/live-behaviour: the bot's live behaviour, measured in duels",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/20a8aa146acc613eca2e0869bbca2a63deb2e290"
+    },
+    {
+     "at": "2026-11-17T21:48:46.000+01:00",
+     "message": "Add: a live check that /decision/pull leaves a decision's settings on the running AI",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/ffcc5386fc91be7c8192f4b477e8b72c11c4f90e"
+    },
+    {
+     "at": "2026-11-17T21:38:39.000+01:00",
+     "message": "Doc: README says how /decision/pull keeps a decision's settings on a running AI",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/ada69827cab271e5446f28d09a11c74446b7df18"
+    },
+    {
+     "at": "2026-11-17T21:38:19.000+01:00",
+     "message": "Fix: /decision/pull sets a company's decided settings on its running AI instead of dropping them",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/1580b4b7159386616d0c5e14b147e6a4f2ade920"
+    },
+    {
+     "at": "2026-11-17T12:33:39.000+01:00",
+     "message": "fix(ai): own_lines defaults to 0, so a bot started without a plan stays unplanned",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/19c2cbe608995df3b8862df1691b2b4f56240205"
+    },
+    {
+     "at": "2026-11-17T11:55:18.000+01:00",
+     "message": "feat(ai): the bot plans its own next freight lines once the planner's are built",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/31fdb68a958f0c5a8219f4bfc9c6bdda51ba6e36"
+    },
+    {
+     "at": "2026-11-17T06:20:37.000+01:00",
+     "message": "feat(ai): take up to sixteen of the planner's freight lines",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/2c01584226c8436d389e1886c603277f520fbc29"
+    },
+    {
+     "at": "2026-11-17T05:39:10.000+01:00",
+     "message": "fix(ai): a failed line's station is demolished whole, whichever way it faces",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/aea2cd5491b1b3e321f1be5ea77027cdbb7461c2"
+    },
+    {
+     "at": "2026-11-17T05:38:57.000+01:00",
+     "message": "Revert \"feat(ai): a station with two platforms side by side where two planned lines meet\"",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/08623e13605fd631ab6f33ff59564fab1df93596"
+    },
+    {
+     "at": "2026-11-17T05:38:57.000+01:00",
+     "message": "Revert \"fix(ai): keep a four-tile corridor for the second platform, and fall back to a station of its own\"",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/1ed17b9ae584fdf53b764b11cf78ed48a88a1d5a"
+    },
+    {
+     "at": "2026-11-17T04:59:49.000+01:00",
+     "message": "fix(ai): keep a four-tile corridor for the second platform, and fall back to a station of its own",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/6f7853214ec93c6b2ba21086a4ac36c980511e32"
+    },
+    {
+     "at": "2026-11-17T04:20:19.000+01:00",
+     "message": "feat(ai): a station with two platforms side by side where two planned lines meet",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/3840fc65ef5f04f174a56aa138c02d3c3eaf870e"
+    },
+    {
+     "at": "2026-11-17T03:36:25.000+01:00",
+     "message": "feat(ai): the passenger rail pair waits for the freight lines that score more (rail_after)",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/75d114e03a224d99a7c6d84e4ad01a32ed741a23"
+    },
+    {
+     "at": "2026-11-17T02:50:59.000+01:00",
+     "message": "fix(ai): a station exit leads on only by the pathfinder's own first-step rules",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/7984f1cf38ad162e3b6096f1b3629420903346d2"
+    },
+    {
+     "at": "2026-11-17T01:32:49.000+01:00",
+     "message": "feat(ai): re-plan around a refused rail piece instead of dropping the line",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/f5f29d5c17431aa41b59f27a8683ff17652de10b"
+    },
+    {
+     "at": "2026-11-17T01:29:26.000+01:00",
+     "message": "feat(ai): diagonal track costed by travel, side-by-side platforms when a line joins a station",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/b4e20b560e4347b9fa81fb5afd4e0118d7f4ba47"
+    },
+    {
+     "at": "2026-11-16T21:37:49.000+01:00",
+     "message": "feat(ai): up to eight of the planner's freight lines, built as money allows",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/4cf4a620b729c52e70384b6117dcb14c6db4c376"
+    },
+    {
+     "at": "2026-11-16T21:02:18.000+01:00",
+     "message": "feat(ai): every rail line keeps a train, and old vehicles are renewed",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/c9e692bbcee9637a557215a00e9a1858289f718f"
+    },
+    {
+     "at": "2026-11-16T15:26:23.000+01:00",
+     "message": "feat(ai): rail lines may tunnel through a hill ahead",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/34bd5207e7c0a3431e460ad6ebfc781c05696822"
+    },
+    {
+     "at": "2026-11-16T12:28:55.000+01:00",
+     "message": "fix(ai): a second rail line to the same site joins the company's station there",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/b3e77229c75b16ea0dc7edb6784dfba850b55b4a"
+    },
+    {
+     "at": "2026-11-16T12:28:18.000+01:00",
+     "message": "feat(ai): rail lines bridge rivers, roads and valleys",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/d3c39bad58e81ad32157a3f698a57c1173c93898"
+    },
+    {
+     "at": "2026-11-16T10:50:31.000+01:00",
+     "message": "feat(ai): the planner's next freight lines are built once the money allows",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/f598ede1ac17f84152d01c62e1af4e52acde5dd5"
+    },
+    {
+     "at": "2026-11-16T09:58:39.000+01:00",
+     "message": "feat(ai): rail lines cross roads at level crossings, and a station's exit must lead on",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/a0f2734176930f88038f5c25647aaf708e28a5a6"
+    },
+    {
+     "at": "2026-11-16T08:51:35.000+01:00",
+     "message": "fix(ai): a rail turn goes wherever the game fits that corner piece, and both exits are checked",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/2e3f1164fb90e614bd1fa64e99a4e32ccbea6da6"
+    },
+    {
+     "at": "2026-11-16T04:49:52.000+01:00",
+     "message": "fix(ai): add vehicles only for cargo bound for the route's next stop, and never above the link's planned need plus one",
+     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/4588bfb51e108a1ece44b8f9725ce73901c7d65d"
+    }
+   ],
+   "languages": [
+    {
+     "name": "Python",
+     "share": 37.9
+    },
+    {
+     "name": "Squirrel",
+     "share": 34.5
+    },
+    {
+     "name": "HTML",
+     "share": 18.3
+    },
+    {
+     "name": "JavaScript",
+     "share": 7.1
+    },
+    {
+     "name": "Shell",
+     "share": 1.7
+    }
+   ],
+   "readme": "REST/Swagger front door onto a running OpenTTD dedicated server, so prismatic-platform (or anything else) can read game state and drive company AIs without speaking OpenTTD's binary Admin Network protocol itself.",
+   "readme_shared": false,
+   "description_shared": false,
+   "topics": [],
+   "hosts": {
+    "gitlab": "https://gitlab.com/korczis/openttd-prismatic-bridge"
+   },
+   "site": null,
+   "curated": false,
+   "stars": 0,
+   "supervised": false
+  },
+  {
+   "name": "korczis.github.io",
+   "period": 12,
+   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+   "category": "web",
+   "language": "JavaScript",
+   "created_at": "2024-12-24T16:48:15Z",
+   "pushed_at": "2026-11-19T01:15:00Z",
+   "last_commit": "2026-11-19T01:13:58Z",
+   "last_message": "chore(merge): integrate #40, grandfathered commits unblock refresh-dispatched deploys",
+   "commits": [
+    {
+     "at": "2026-11-19T01:13:58Z",
+     "message": "chore(merge): integrate #40, grandfathered commits unblock refresh-dispatched deploys",
+     "url": "https://github.com/korczis/korczis.github.io/commit/88721f691438d704a197f196d9a78b9165ba91b3"
+    },
+    {
+     "at": "2026-11-19T00:50:51Z",
+     "message": "fix(ci): grandfathered commits keep refresh-dispatched deploys from failing the commit lint",
+     "url": "https://github.com/korczis/korczis.github.io/commit/ccf86f27b3cabad36b84b774012d5b355805af05"
+    },
+    {
+     "at": "2026-11-18T20:52:23Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/8a0e99e7d091cf03eb74a35726e382d8159c58cb"
+    },
+    {
+     "at": "2026-11-18T12:05:28Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/d2b0daf6c6d65e380a819f404b4627cb597af9af"
+    },
+    {
+     "at": "2026-11-18T10:36:42Z",
+     "message": "chore(merge): integrate #39, the case services card names the skill overlap",
+     "url": "https://github.com/korczis/korczis.github.io/commit/8a93b252470eb1ffcd4c1f40ed39ceb322d466ef"
+    },
+    {
+     "at": "2026-11-18T10:13:42Z",
+     "message": "fix(cases): the services card names the skill overlap, not a delivery",
+     "url": "https://github.com/korczis/korczis.github.io/commit/dfe28569d6e302a63a3565bd4a98e0ad428f0e5e"
+    },
+    {
+     "at": "2026-11-18T09:39:31Z",
+     "message": "chore(merge): integrate #38, services and case studies sections in llms.txt",
+     "url": "https://github.com/korczis/korczis.github.io/commit/4105c47568182eac71a914d417af087b7850e0fe"
+    },
+    {
+     "at": "2026-11-18T09:13:15Z",
+     "message": "chore(merge): bring master (#37) into llms-services",
+     "url": "https://github.com/korczis/korczis.github.io/commit/8b1bf9f56a31380959069c46e44533a09f9253a9"
+    },
+    {
+     "at": "2026-11-18T09:11:33Z",
+     "message": "chore(merge): integrate #37, a derived, anonymised case study per client engagement",
+     "url": "https://github.com/korczis/korczis.github.io/commit/d05a43c8fea852c69fc186334ea278b6eca34eb2"
+    },
+    {
+     "at": "2026-11-18T09:01:24Z",
+     "message": "feat(llms): services and case studies sections in llms.txt",
+     "url": "https://github.com/korczis/korczis.github.io/commit/a9ecc7412fe6df78e24a760449e841b6309216b4"
+    },
+    {
+     "at": "2026-11-18T08:57:48Z",
+     "message": "chore(merge): integrate #32, live READMEs, services, skills and evidence for every language and technology",
+     "url": "https://github.com/korczis/korczis.github.io/commit/0063c12fb42050d680a423517d83b1a6b1ddcf93"
+    },
+    {
+     "at": "2026-11-18T08:36:22Z",
+     "message": "chore(merge): bring readme-embed into case-studies; short month names from translations",
+     "url": "https://github.com/korczis/korczis.github.io/commit/df09b16b80f145f04d8f60f57097ba55e944c332"
+    },
+    {
+     "at": "2026-11-18T08:33:25Z",
+     "message": "fix(glossary): a technology chip leads to the evidence anchor only when the term page has one",
+     "url": "https://github.com/korczis/korczis.github.io/commit/f2f2813a4caa70891dc532319dd3627efcccc58c"
+    },
+    {
+     "at": "2026-11-18T08:13:57Z",
+     "message": "feat(landing): offers lead to their services, /about/ shows what I did for clients",
+     "url": "https://github.com/korczis/korczis.github.io/commit/2ef102682c62a2d48f8d102298dde3ad083a5256"
+    },
+    {
+     "at": "2026-11-18T08:09:27Z",
+     "message": "chore(merge): bring master (#36) into readme-embed; chips named by their visible text",
+     "url": "https://github.com/korczis/korczis.github.io/commit/55b7bfbce45f43a972f410e97809d682db2ca249"
+    },
+    {
+     "at": "2026-11-18T08:06:24Z",
+     "message": "chore(merge): integrate #36, Czech dates and honest skill labels on /hire/, repositories and catalogue",
+     "url": "https://github.com/korczis/korczis.github.io/commit/36fd5375b904749641e596b9387cb8f0103f9450"
+    },
+    {
+     "at": "2026-11-18T07:45:01Z",
+     "message": "fix(i18n): Czech month names from translations, Czech number format on /about/",
+     "url": "https://github.com/korczis/korczis.github.io/commit/538e294f186ebebe0beab47edee9c6f7e1110a61"
+    },
+    {
+     "at": "2026-11-18T07:41:48Z",
+     "message": "feat(shell): the sidebar skillset lists every language and the client work's technologies",
+     "url": "https://github.com/korczis/korczis.github.io/commit/f7c59c1ed9ce86ae73c85bdc44ab57a2f19f2b8c"
+    },
+    {
+     "at": "2026-11-18T07:38:48Z",
+     "message": "feat(cases): a derived, anonymised case study per client engagement",
+     "url": "https://github.com/korczis/korczis.github.io/commit/46bb57c77b2282083a00d6ef3fedb1dcaba8b9c3"
+    },
+    {
+     "at": "2026-11-18T07:24:19Z",
+     "message": "chore(merge): bring master (#33-#35) into readme-embed",
+     "url": "https://github.com/korczis/korczis.github.io/commit/eead0044e7ee3e516d74a3e8a1aa358d38605526"
+    },
+    {
+     "at": "2026-11-18T07:19:18Z",
+     "message": "feat(i18n): Czech dates on the recent-work list",
+     "url": "https://github.com/korczis/korczis.github.io/commit/6675493cad4e5c18c5d37e1d235107bdad6f1eb9"
+    },
+    {
+     "at": "2026-11-18T07:18:12Z",
+     "message": "chore(merge): bring master (#33) into cs-follow-up",
+     "url": "https://github.com/korczis/korczis.github.io/commit/1f70ea8e0f7385f7b57e179c7ccd3c7da2e96ff6"
+    },
+    {
+     "at": "2026-11-18T07:16:48Z",
+     "message": "chore(merge): integrate #33, a page for every original repository",
+     "url": "https://github.com/korczis/korczis.github.io/commit/94701a9f43b49ee0d656f053f9336ffec5d6544b"
+    },
+    {
+     "at": "2026-11-18T07:14:54Z",
+     "message": "feat(i18n): Czech dates and honest skill labels on /hire/, repositories and catalogue",
+     "url": "https://github.com/korczis/korczis.github.io/commit/c8eef294c1db0cf96e60cecd88901d3fb10de72e"
+    },
+    {
+     "at": "2026-11-18T06:15:32Z",
+     "message": "chore(merge): bring the offer-first landing into every-repo-pages",
+     "url": "https://github.com/korczis/korczis.github.io/commit/6b7d381c5406d8cc421403ebc20e979135685a52"
+    },
+    {
+     "at": "2026-11-18T06:13:57Z",
+     "message": "chore(merge): integrate #35, the offer-first landing with two primary paths",
+     "url": "https://github.com/korczis/korczis.github.io/commit/e9fe56bf1744b4a8a370c1b2eac8d7921058fa6c"
+    },
+    {
+     "at": "2026-11-18T05:45:50Z",
+     "message": "chore(merge): bring master into every-repo-pages",
+     "url": "https://github.com/korczis/korczis.github.io/commit/62c9adc7071382a40bf44d36ddb67b0d92070851"
+    },
+    {
+     "at": "2026-11-18T05:44:05Z",
+     "message": "chore(merge): bring master (#34) into landing-offer",
+     "url": "https://github.com/korczis/korczis.github.io/commit/33572ecc9d3a53c60ffe158f13505e2f44a68c2c"
+    },
+    {
+     "at": "2026-11-18T05:43:46Z",
+     "message": "chore(merge): integrate #34, the evidence landing on top of the hiring hero",
+     "url": "https://github.com/korczis/korczis.github.io/commit/9e4ea192cececd70d91b6cea7c443c39eb58ae00"
+    },
+    {
+     "at": "2026-11-18T05:42:16Z",
+     "message": "fix(audit): the first-viewport rate check reads a non-breaking space as a space",
+     "url": "https://github.com/korczis/korczis.github.io/commit/f9cf894a41fcfee6d6140d7a015ffe5a941dfed0"
+    }
+   ],
+   "languages": [
+    {
+     "name": "JavaScript",
+     "share": 61.6
+    },
+    {
+     "name": "HTML",
+     "share": 36.4
+    },
+    {
+     "name": "CSS",
+     "share": 1.1
+    },
+    {
+     "name": "Shell",
+     "share": 0.8
+    }
+   ],
+   "readme": "The personal hub of Tomas Korcak (korczis). It covers who I am, the projects I build with their live sites, the stack behind them, and Majordomus, which supervises the work.",
+   "readme_shared": false,
+   "description_shared": false,
+   "topics": [
+    "accessibility",
+    "ai-agents",
+    "alpinejs",
+    "chartjs",
+    "cytoscape",
+    "echarts",
+    "flowbite",
+    "github-pages",
+    "majordomus",
+    "p5js",
+    "personal-website",
+    "portfolio",
+    "tailwindcss",
+    "zola"
+   ],
+   "hosts": {
+    "github": "https://github.com/korczis/korczis.github.io"
+   },
+   "site": null,
+   "curated": false,
+   "stars": 0,
+   "supervised": true
+  },
+  {
    "name": "prismatic-majordomus",
    "period": 12,
    "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
    "category": "ai",
    "language": "Rust",
    "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-18T17:27:41Z",
+   "pushed_at": "2026-11-19T01:55:51Z",
    "last_commit": "2026-11-18T14:10:08Z",
    "last_message": "Merge pull request #3076 from korczis/integration/train-30c-20261117",
    "commits": [
@@ -444,213 +847,6 @@
    "site": "https://korczis.github.io/prismatic-majordomus/",
    "curated": true,
    "stars": 1,
-   "supervised": true
-  },
-  {
-   "name": "korczis.github.io",
-   "period": 12,
-   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-   "category": "web",
-   "language": "JavaScript",
-   "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-18T12:06:10Z",
-   "last_commit": "2026-11-18T12:05:28Z",
-   "last_message": "chore(data): refresh the snapshot and the index",
-   "commits": [
-    {
-     "at": "2026-11-18T12:05:28Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/d2b0daf6c6d65e380a819f404b4627cb597af9af"
-    },
-    {
-     "at": "2026-11-18T10:36:42Z",
-     "message": "chore(merge): integrate #39, the case services card names the skill overlap",
-     "url": "https://github.com/korczis/korczis.github.io/commit/8a93b252470eb1ffcd4c1f40ed39ceb322d466ef"
-    },
-    {
-     "at": "2026-11-18T10:13:42Z",
-     "message": "fix(cases): the services card names the skill overlap, not a delivery",
-     "url": "https://github.com/korczis/korczis.github.io/commit/dfe28569d6e302a63a3565bd4a98e0ad428f0e5e"
-    },
-    {
-     "at": "2026-11-18T09:39:31Z",
-     "message": "chore(merge): integrate #38, services and case studies sections in llms.txt",
-     "url": "https://github.com/korczis/korczis.github.io/commit/4105c47568182eac71a914d417af087b7850e0fe"
-    },
-    {
-     "at": "2026-11-18T09:13:15Z",
-     "message": "chore(merge): bring master (#37) into llms-services",
-     "url": "https://github.com/korczis/korczis.github.io/commit/8b1bf9f56a31380959069c46e44533a09f9253a9"
-    },
-    {
-     "at": "2026-11-18T09:11:33Z",
-     "message": "chore(merge): integrate #37, a derived, anonymised case study per client engagement",
-     "url": "https://github.com/korczis/korczis.github.io/commit/d05a43c8fea852c69fc186334ea278b6eca34eb2"
-    },
-    {
-     "at": "2026-11-18T09:01:24Z",
-     "message": "feat(llms): services and case studies sections in llms.txt",
-     "url": "https://github.com/korczis/korczis.github.io/commit/a9ecc7412fe6df78e24a760449e841b6309216b4"
-    },
-    {
-     "at": "2026-11-18T08:57:48Z",
-     "message": "chore(merge): integrate #32, live READMEs, services, skills and evidence for every language and technology",
-     "url": "https://github.com/korczis/korczis.github.io/commit/0063c12fb42050d680a423517d83b1a6b1ddcf93"
-    },
-    {
-     "at": "2026-11-18T08:36:22Z",
-     "message": "chore(merge): bring readme-embed into case-studies; short month names from translations",
-     "url": "https://github.com/korczis/korczis.github.io/commit/df09b16b80f145f04d8f60f57097ba55e944c332"
-    },
-    {
-     "at": "2026-11-18T08:33:25Z",
-     "message": "fix(glossary): a technology chip leads to the evidence anchor only when the term page has one",
-     "url": "https://github.com/korczis/korczis.github.io/commit/f2f2813a4caa70891dc532319dd3627efcccc58c"
-    },
-    {
-     "at": "2026-11-18T08:13:57Z",
-     "message": "feat(landing): offers lead to their services, /about/ shows what I did for clients",
-     "url": "https://github.com/korczis/korczis.github.io/commit/2ef102682c62a2d48f8d102298dde3ad083a5256"
-    },
-    {
-     "at": "2026-11-18T08:09:27Z",
-     "message": "chore(merge): bring master (#36) into readme-embed; chips named by their visible text",
-     "url": "https://github.com/korczis/korczis.github.io/commit/55b7bfbce45f43a972f410e97809d682db2ca249"
-    },
-    {
-     "at": "2026-11-18T08:06:24Z",
-     "message": "chore(merge): integrate #36, Czech dates and honest skill labels on /hire/, repositories and catalogue",
-     "url": "https://github.com/korczis/korczis.github.io/commit/36fd5375b904749641e596b9387cb8f0103f9450"
-    },
-    {
-     "at": "2026-11-18T07:45:01Z",
-     "message": "fix(i18n): Czech month names from translations, Czech number format on /about/",
-     "url": "https://github.com/korczis/korczis.github.io/commit/538e294f186ebebe0beab47edee9c6f7e1110a61"
-    },
-    {
-     "at": "2026-11-18T07:41:48Z",
-     "message": "feat(shell): the sidebar skillset lists every language and the client work's technologies",
-     "url": "https://github.com/korczis/korczis.github.io/commit/f7c59c1ed9ce86ae73c85bdc44ab57a2f19f2b8c"
-    },
-    {
-     "at": "2026-11-18T07:38:48Z",
-     "message": "feat(cases): a derived, anonymised case study per client engagement",
-     "url": "https://github.com/korczis/korczis.github.io/commit/46bb57c77b2282083a00d6ef3fedb1dcaba8b9c3"
-    },
-    {
-     "at": "2026-11-18T07:24:19Z",
-     "message": "chore(merge): bring master (#33-#35) into readme-embed",
-     "url": "https://github.com/korczis/korczis.github.io/commit/eead0044e7ee3e516d74a3e8a1aa358d38605526"
-    },
-    {
-     "at": "2026-11-18T07:19:18Z",
-     "message": "feat(i18n): Czech dates on the recent-work list",
-     "url": "https://github.com/korczis/korczis.github.io/commit/6675493cad4e5c18c5d37e1d235107bdad6f1eb9"
-    },
-    {
-     "at": "2026-11-18T07:18:12Z",
-     "message": "chore(merge): bring master (#33) into cs-follow-up",
-     "url": "https://github.com/korczis/korczis.github.io/commit/1f70ea8e0f7385f7b57e179c7ccd3c7da2e96ff6"
-    },
-    {
-     "at": "2026-11-18T07:16:48Z",
-     "message": "chore(merge): integrate #33, a page for every original repository",
-     "url": "https://github.com/korczis/korczis.github.io/commit/94701a9f43b49ee0d656f053f9336ffec5d6544b"
-    },
-    {
-     "at": "2026-11-18T07:14:54Z",
-     "message": "feat(i18n): Czech dates and honest skill labels on /hire/, repositories and catalogue",
-     "url": "https://github.com/korczis/korczis.github.io/commit/c8eef294c1db0cf96e60cecd88901d3fb10de72e"
-    },
-    {
-     "at": "2026-11-18T06:15:32Z",
-     "message": "chore(merge): bring the offer-first landing into every-repo-pages",
-     "url": "https://github.com/korczis/korczis.github.io/commit/6b7d381c5406d8cc421403ebc20e979135685a52"
-    },
-    {
-     "at": "2026-11-18T06:13:57Z",
-     "message": "chore(merge): integrate #35, the offer-first landing with two primary paths",
-     "url": "https://github.com/korczis/korczis.github.io/commit/e9fe56bf1744b4a8a370c1b2eac8d7921058fa6c"
-    },
-    {
-     "at": "2026-11-18T05:45:50Z",
-     "message": "chore(merge): bring master into every-repo-pages",
-     "url": "https://github.com/korczis/korczis.github.io/commit/62c9adc7071382a40bf44d36ddb67b0d92070851"
-    },
-    {
-     "at": "2026-11-18T05:44:05Z",
-     "message": "chore(merge): bring master (#34) into landing-offer",
-     "url": "https://github.com/korczis/korczis.github.io/commit/33572ecc9d3a53c60ffe158f13505e2f44a68c2c"
-    },
-    {
-     "at": "2026-11-18T05:43:46Z",
-     "message": "chore(merge): integrate #34, the evidence landing on top of the hiring hero",
-     "url": "https://github.com/korczis/korczis.github.io/commit/9e4ea192cececd70d91b6cea7c443c39eb58ae00"
-    },
-    {
-     "at": "2026-11-18T05:42:16Z",
-     "message": "fix(audit): the first-viewport rate check reads a non-breaking space as a space",
-     "url": "https://github.com/korczis/korczis.github.io/commit/f9cf894a41fcfee6d6140d7a015ffe5a941dfed0"
-    },
-    {
-     "at": "2026-11-18T05:33:39Z",
-     "message": "feat(landing): offer first, two primary paths, cases before the catalogue",
-     "url": "https://github.com/korczis/korczis.github.io/commit/da29a411c1c23f19173b28e5d3b37a52d8a58101"
-    },
-    {
-     "at": "2026-11-18T05:32:52Z",
-     "message": "feat(i18n): Czech typesetting and per-language date formats",
-     "url": "https://github.com/korczis/korczis.github.io/commit/ab3daa10de6bfd5685278c515ae27be8726b8cac"
-    },
-    {
-     "at": "2026-11-18T05:15:11Z",
-     "message": "chore(merge): bring master into landing-evidence",
-     "url": "https://github.com/korczis/korczis.github.io/commit/d0f6422ee79a6a60ed5d07315a4dc281add28413"
-    }
-   ],
-   "languages": [
-    {
-     "name": "JavaScript",
-     "share": 61.7
-    },
-    {
-     "name": "HTML",
-     "share": 36.4
-    },
-    {
-     "name": "CSS",
-     "share": 1.1
-    },
-    {
-     "name": "Shell",
-     "share": 0.8
-    }
-   ],
-   "readme": "The personal hub of Tomas Korcak (korczis). It covers who I am, the projects I build with their live sites, the stack behind them, and Majordomus, which supervises the work.",
-   "readme_shared": false,
-   "description_shared": false,
-   "topics": [
-    "accessibility",
-    "ai-agents",
-    "alpinejs",
-    "chartjs",
-    "cytoscape",
-    "echarts",
-    "flowbite",
-    "github-pages",
-    "majordomus",
-    "p5js",
-    "personal-website",
-    "portfolio",
-    "tailwindcss",
-    "zola"
-   ],
-   "hosts": {
-    "github": "https://github.com/korczis/korczis.github.io"
-   },
-   "site": null,
-   "curated": false,
-   "stars": 0,
    "supervised": true
   },
   {
@@ -1065,202 +1261,6 @@
    "curated": true,
    "stars": 0,
    "supervised": true
-  },
-  {
-   "name": "openttd-prismatic-bridge",
-   "period": 12,
-   "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
-   "category": "media",
-   "language": "Squirrel",
-   "created_at": "2026-07-23T22:00:54.776Z",
-   "pushed_at": "2026-11-18T06:54:45.222Z",
-   "last_commit": "2026-11-18T03:16:44.000+01:00",
-   "last_message": "Doc: the overview's Prismatic card says a decision's settings go onto the running AI and a refused one answers 502",
-   "commits": [
-    {
-     "at": "2026-11-18T03:16:44.000+01:00",
-     "message": "Doc: the overview's Prismatic card says a decision's settings go onto the running AI and a refused one answers 502",
-     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/b19ed53f78eea7bdec88e7b512642cfed9c03b23"
-    },
-    {
-     "at": "2026-11-17T23:18:50.000+01:00",
-     "message": "Fix: /decision/pull reports a decision setting the server did not apply instead of answering 200",
-     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/d2c00f574c1cf23939047f9ad3ba08e1c80155f3"
-    },
-    {
-     "at": "2026-11-17T22:37:08.000+01:00",
-     "message": "Merge feature/flowbite-pro-ui: the bridge's pages on Flowbite Pro",
-     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/5a896702bc8eef996c9bd08bb5a319e3e5680768"
-    },
-    {
-     "at": "2026-11-17T22:32:48.000+01:00",
-     "message": "Merge feat/live-behaviour: the bot's live behaviour, measured in duels",
-     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/20a8aa146acc613eca2e0869bbca2a63deb2e290"
-    },
-    {
-     "at": "2026-11-17T21:48:46.000+01:00",
-     "message": "Add: a live check that /decision/pull leaves a decision's settings on the running AI",
-     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/ffcc5386fc91be7c8192f4b477e8b72c11c4f90e"
-    },
-    {
-     "at": "2026-11-17T21:38:39.000+01:00",
-     "message": "Doc: README says how /decision/pull keeps a decision's settings on a running AI",
-     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/ada69827cab271e5446f28d09a11c74446b7df18"
-    },
-    {
-     "at": "2026-11-17T21:38:19.000+01:00",
-     "message": "Fix: /decision/pull sets a company's decided settings on its running AI instead of dropping them",
-     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/1580b4b7159386616d0c5e14b147e6a4f2ade920"
-    },
-    {
-     "at": "2026-11-17T12:33:39.000+01:00",
-     "message": "fix(ai): own_lines defaults to 0, so a bot started without a plan stays unplanned",
-     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/19c2cbe608995df3b8862df1691b2b4f56240205"
-    },
-    {
-     "at": "2026-11-17T11:55:18.000+01:00",
-     "message": "feat(ai): the bot plans its own next freight lines once the planner's are built",
-     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/31fdb68a958f0c5a8219f4bfc9c6bdda51ba6e36"
-    },
-    {
-     "at": "2026-11-17T06:20:37.000+01:00",
-     "message": "feat(ai): take up to sixteen of the planner's freight lines",
-     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/2c01584226c8436d389e1886c603277f520fbc29"
-    },
-    {
-     "at": "2026-11-17T05:39:10.000+01:00",
-     "message": "fix(ai): a failed line's station is demolished whole, whichever way it faces",
-     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/aea2cd5491b1b3e321f1be5ea77027cdbb7461c2"
-    },
-    {
-     "at": "2026-11-17T05:38:57.000+01:00",
-     "message": "Revert \"feat(ai): a station with two platforms side by side where two planned lines meet\"",
-     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/08623e13605fd631ab6f33ff59564fab1df93596"
-    },
-    {
-     "at": "2026-11-17T05:38:57.000+01:00",
-     "message": "Revert \"fix(ai): keep a four-tile corridor for the second platform, and fall back to a station of its own\"",
-     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/1ed17b9ae584fdf53b764b11cf78ed48a88a1d5a"
-    },
-    {
-     "at": "2026-11-17T04:59:49.000+01:00",
-     "message": "fix(ai): keep a four-tile corridor for the second platform, and fall back to a station of its own",
-     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/6f7853214ec93c6b2ba21086a4ac36c980511e32"
-    },
-    {
-     "at": "2026-11-17T04:20:19.000+01:00",
-     "message": "feat(ai): a station with two platforms side by side where two planned lines meet",
-     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/3840fc65ef5f04f174a56aa138c02d3c3eaf870e"
-    },
-    {
-     "at": "2026-11-17T03:36:25.000+01:00",
-     "message": "feat(ai): the passenger rail pair waits for the freight lines that score more (rail_after)",
-     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/75d114e03a224d99a7c6d84e4ad01a32ed741a23"
-    },
-    {
-     "at": "2026-11-17T02:50:59.000+01:00",
-     "message": "fix(ai): a station exit leads on only by the pathfinder's own first-step rules",
-     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/7984f1cf38ad162e3b6096f1b3629420903346d2"
-    },
-    {
-     "at": "2026-11-17T01:32:49.000+01:00",
-     "message": "feat(ai): re-plan around a refused rail piece instead of dropping the line",
-     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/f5f29d5c17431aa41b59f27a8683ff17652de10b"
-    },
-    {
-     "at": "2026-11-17T01:29:26.000+01:00",
-     "message": "feat(ai): diagonal track costed by travel, side-by-side platforms when a line joins a station",
-     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/b4e20b560e4347b9fa81fb5afd4e0118d7f4ba47"
-    },
-    {
-     "at": "2026-11-16T21:37:49.000+01:00",
-     "message": "feat(ai): up to eight of the planner's freight lines, built as money allows",
-     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/4cf4a620b729c52e70384b6117dcb14c6db4c376"
-    },
-    {
-     "at": "2026-11-16T21:02:18.000+01:00",
-     "message": "feat(ai): every rail line keeps a train, and old vehicles are renewed",
-     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/c9e692bbcee9637a557215a00e9a1858289f718f"
-    },
-    {
-     "at": "2026-11-16T15:26:23.000+01:00",
-     "message": "feat(ai): rail lines may tunnel through a hill ahead",
-     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/34bd5207e7c0a3431e460ad6ebfc781c05696822"
-    },
-    {
-     "at": "2026-11-16T12:28:55.000+01:00",
-     "message": "fix(ai): a second rail line to the same site joins the company's station there",
-     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/b3e77229c75b16ea0dc7edb6784dfba850b55b4a"
-    },
-    {
-     "at": "2026-11-16T12:28:18.000+01:00",
-     "message": "feat(ai): rail lines bridge rivers, roads and valleys",
-     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/d3c39bad58e81ad32157a3f698a57c1173c93898"
-    },
-    {
-     "at": "2026-11-16T10:50:31.000+01:00",
-     "message": "feat(ai): the planner's next freight lines are built once the money allows",
-     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/f598ede1ac17f84152d01c62e1af4e52acde5dd5"
-    },
-    {
-     "at": "2026-11-16T09:58:39.000+01:00",
-     "message": "feat(ai): rail lines cross roads at level crossings, and a station's exit must lead on",
-     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/a0f2734176930f88038f5c25647aaf708e28a5a6"
-    },
-    {
-     "at": "2026-11-16T08:51:35.000+01:00",
-     "message": "fix(ai): a rail turn goes wherever the game fits that corner piece, and both exits are checked",
-     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/2e3f1164fb90e614bd1fa64e99a4e32ccbea6da6"
-    },
-    {
-     "at": "2026-11-16T04:49:52.000+01:00",
-     "message": "fix(ai): add vehicles only for cargo bound for the route's next stop, and never above the link's planned need plus one",
-     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/4588bfb51e108a1ece44b8f9725ce73901c7d65d"
-    },
-    {
-     "at": "2026-11-16T04:15:13.000+01:00",
-     "message": "fix(ai): no Array.find in OpenTTD's Squirrel; collect the route's stops with a loop",
-     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/bb63cbf6ddf1a85eda6450596b4526a2f72b33d5"
-    },
-    {
-     "at": "2026-11-16T04:11:55.000+01:00",
-     "message": "feat(ai): size fleets by the game's link graph: needed = max(1, ceil(planned flow / monthly capacity))",
-     "url": "https://gitlab.com/korczis/openttd-prismatic-bridge/-/commit/887734f19192f84030ef324f49ceb8b0013c9524"
-    }
-   ],
-   "languages": [
-    {
-     "name": "Squirrel",
-     "share": 38.8
-    },
-    {
-     "name": "Python",
-     "share": 38.7
-    },
-    {
-     "name": "HTML",
-     "share": 20
-    },
-    {
-     "name": "Shell",
-     "share": 1.9
-    },
-    {
-     "name": "CSS",
-     "share": 0.6
-    }
-   ],
-   "readme": "REST/Swagger front door onto a running OpenTTD dedicated server, so prismatic-platform (or anything else) can read game state and drive company AIs without speaking OpenTTD's binary Admin Network protocol itself.",
-   "readme_shared": false,
-   "description_shared": false,
-   "topics": [],
-   "hosts": {
-    "gitlab": "https://gitlab.com/korczis/openttd-prismatic-bridge"
-   },
-   "site": null,
-   "curated": false,
-   "stars": 0,
-   "supervised": false
   },
   {
    "name": "sonic-playground",
