@@ -17,7 +17,7 @@ og_description = "meili_rsex: Data and GIS in Elixir and Rust, 2024, active in t
 og_image = "og/work-meili-rsex.png"
 schema = "project"
 keywords = ["meili_rsex", "Data and GIS", "Elixir", "Rust", "2024", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["elixir", "rust", "gis", "repository", "commit", "open-source"]
+terms = ["elixir", "rust", "rustler", "meilisearch", "gitlab-ci", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

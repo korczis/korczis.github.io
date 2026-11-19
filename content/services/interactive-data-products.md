@@ -14,7 +14,7 @@ icon = "graph"
 og_title = "Interactive data products and simulators"
 og_image = "og/service-interactive-data-products.png"
 schema = "service"
-terms = ["service", "apache-echarts", "d3", "p5-js", "web-audio", "postgis", "zola", "data-visualisation", "gis", "data-integration", "knowledge-graph", "decision-support-system", "javascript", "html", "shell", "elixir", "python", "alpine-js", "flowbite-pro", "majordomus", "claude-api", "css"]
+terms = ["service", "apache-echarts", "d3", "p5-js", "web-audio", "postgis", "zola", "data-visualisation", "gis", "data-integration", "knowledge-graph", "decision-support-system", "javascript", "html", "shell", "nodejs", "dockerfile", "elixir", "tailwind-css", "flowbite-pro", "postgresql", "python"]
 keywords = ["Interactive data products and simulators", "Interactive visualisation", "Geospatial analysis", "Data integration", "Knowledge graph", "Decision support", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -34,7 +34,7 @@ It draws on these skills: [Interactive visualisation](@/skills/interactive-visua
 
 It is built with [Apache ECharts](@/glossary/apache-echarts.md), [D3.js](@/glossary/d3.md), [p5.js](@/glossary/p5-js.md), [Web Audio](@/glossary/web-audio.md), [PostGIS](@/glossary/postgis.md) and [Zola](@/glossary/zola.md).
 
-The technologies behind it, measured from the work that shows those skills: [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md), [Shell](@/glossary/shell.md), [Elixir](@/glossary/elixir.md), [Python](@/glossary/python.md), [Alpine.js](@/glossary/alpine-js.md), [Flowbite Pro](@/glossary/flowbite-pro.md) and [Majordomus](@/glossary/majordomus.md).
+The technologies behind it, measured from the work that shows those skills: [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md), [Shell](@/glossary/shell.md), [Node.js](@/glossary/nodejs.md), [Dockerfile](@/glossary/dockerfile.md), [Elixir](@/glossary/elixir.md), [Tailwind CSS](@/glossary/tailwind-css.md) and [Flowbite Pro](@/glossary/flowbite-pro.md).
 
 24 public repositories show its skills (24 by their own words).
 

@@ -3,7 +3,7 @@
 title = "OSINT"
 description = "Zpravodajství z otevřených zdrojů: poznání vystavěné z veřejně dostupných zdrojů, kde každé tvrzení vede ke svému zdroji."
 template = "term.html"
-weight = 100
+weight = 135
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

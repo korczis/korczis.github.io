@@ -17,7 +17,7 @@ og_description = "Oscilla: Věda a vizualizace, JavaScript, HTML a CSS, 2026, ak
 og_image = "og/cs-work-oscilla.png"
 schema = "project"
 keywords = ["Oscilla", "Věda a vizualizace", "JavaScript", "HTML", "CSS", "acoustics", "audio", "dsp", "education", "signal-processing", "2026", "GitHub", "Tomáš Korčák", "korczis"]
-terms = ["javascript", "html", "css", "swift", "shell", "web-audio", "data-visualisation", "github-pages", "repository", "commit", "open-source"]
+terms = ["javascript", "html", "css", "swift", "shell", "web-audio", "alpine-js", "p5-js", "tailwind-css", "flowbite-pro", "playwright", "github-pages", "data-visualisation", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

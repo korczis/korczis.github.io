@@ -14,10 +14,10 @@ seo_title = "Rust (programovací jazyk)"
 term = "rust"
 kind = "language"
 definition = "Systémový jazyk, který zaručuje bezpečnost paměti bez garbage collectoru; je v něm napsaný Majordomus."
-aliases = []
+aliases = ["Cargo"]
 reference = { title = "The Rust Programming Language", url = "https://doc.rust-lang.org/book/" }
-pages = ["_index.cs.md", "about.cs.md", "hire.cs.md", "projects/ai.cs.md", "projects/data.cs.md", "projects/learning.cs.md", "projects/libraries.cs.md", "projects/science.cs.md", "projects/security.cs.md", "projects/tools.cs.md", "services/ai-engineering-governance.cs.md", "services/digital-forensics.cs.md", "skills/chain-of-custody.cs.md", "skills/change-monitoring.cs.md", "skills/media-forensics.cs.md", "skills/policy-as-code.cs.md", "work/algoglyph.cs.md", "work/astudo.cs.md", "work/bcnode-old.cs.md", "work/catharsis-as-a-service.cs.md", "work/charon.cs.md", "work/comtesse.cs.md", "work/ctu-cz.cs.md", "work/easy-plugin-plugins.cs.md", "work/gauc-ex.cs.md", "work/gooddata-fs.cs.md", "work/graph-flow.cs.md", "work/happ.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/magic.cs.md", "work/mapoffacts.cs.md", "work/maze-rs.cs.md", "work/meili-rsex.cs.md", "work/prismatic-majordomus.cs.md", "work/rustas.cs.md", "work/rustler-mix.cs.md", "work/rustler-test.cs.md", "work/skull-rust.cs.md", "work/sli2dli.cs.md", "work/streamflow.cs.md", "work/the-scratch.cs.md", "work/wims.cs.md", "work/zaas.cs.md"]
-related = ["repository", "open-source", "commit", "elixir", "javascript", "html", "shell", "makefile"]
+pages = ["_index.cs.md", "about.cs.md", "hire.cs.md", "projects/ai.cs.md", "projects/data.cs.md", "projects/learning.cs.md", "projects/libraries.cs.md", "projects/science.cs.md", "projects/security.cs.md", "projects/tools.cs.md", "services/ai-engineering-governance.cs.md", "skills/chain-of-custody.cs.md", "work/algoglyph.cs.md", "work/astudo.cs.md", "work/bcnode-old.cs.md", "work/catharsis-as-a-service.cs.md", "work/charon.cs.md", "work/comtesse.cs.md", "work/ctu-cz.cs.md", "work/dj-schnapps.cs.md", "work/easy-plugin-plugins.cs.md", "work/gauc-ex.cs.md", "work/gh-exec-3000.cs.md", "work/gooddata-fs.cs.md", "work/graph-flow.cs.md", "work/happ.cs.md", "work/in-rust-we-trust.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/korczis-gitlab-io.cs.md", "work/magic.cs.md", "work/mapoffacts.cs.md", "work/maze-rs.cs.md", "work/meili-rsex.cs.md", "work/mindscape.cs.md", "work/prismatic-majordomus.cs.md", "work/rocksdb-indexer.cs.md", "work/rustas.cs.md", "work/rustler-mix.cs.md", "work/rustler-test.cs.md", "work/skull-rust.cs.md", "work/sli2dli.cs.md", "work/streamflow.cs.md", "work/the-scratch.cs.md", "work/tosh.cs.md", "work/wims.cs.md", "work/zaas.cs.md"]
+related = ["repository", "open-source", "commit", "elixir", "javascript", "html", "shell", "phoenix"]
 og_title = "Rust: slovník"
 og_image = "og/cs-glossary-rust.png"
 keywords = ["Rust", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
@@ -40,9 +40,9 @@ span = 3
 height = "md"
 tone = "night"
 +++
-Rust jsem psal v 22 veřejných repozitářích, od roku 2016 do 2026; v 12 z nich je hlavním jazykem.
+Rust jsem psal v 34 veřejných repozitářích, od roku 2016 do 2026; v 12 z nich je hlavním jazykem.
 
-K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (8), [Věda a vizualizace](@/projects/science.cs.md) (4), [Data a GIS](@/projects/data.cs.md) (2) a [Učení a experimenty](@/projects/learning.cs.md) (2).
+K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (12), [Data a GIS](@/projects/data.cs.md) (4), [Věda a vizualizace](@/projects/science.cs.md) (4) a [Učení a experimenty](@/projects/learning.cs.md) (3).
 
 Naposledy: [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat; [Majordomus](@/work/prismatic-majordomus.cs.md): Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model; [algoglyph](@/work/algoglyph.cs.md): Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.
 

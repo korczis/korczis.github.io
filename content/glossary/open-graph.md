@@ -3,7 +3,7 @@
 title = "Open Graph"
 description = "Meta tags that tell social networks how to preview a link: title, description and image."
 template = "term.html"
-weight = 97
+weight = 132
 
 [taxonomies]
 tags = ["Glossary", "Concept"]

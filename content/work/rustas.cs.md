@@ -17,7 +17,7 @@ og_description = "rustas: Věda a vizualizace, Rust, 2018, archiv. Zdrojový kó
 og_image = "og/cs-work-rustas.png"
 schema = "project"
 keywords = ["rustas", "Věda a vizualizace", "Rust", "2018", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["rust", "data-visualisation", "repository", "commit", "open-source"]
+terms = ["rust", "travis-ci", "data-visualisation", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

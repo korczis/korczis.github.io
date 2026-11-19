@@ -3,7 +3,7 @@
 title = "FastAPI"
 description = "A Python web framework for HTTP APIs, typed with Pydantic models that validate requests and generate the OpenAPI description."
 template = "term.html"
-weight = 47
+weight = 62
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -16,11 +16,20 @@ kind = "technology"
 definition = "A Python web framework for HTTP APIs, typed with Pydantic models that validate requests and generate the OpenAPI description."
 aliases = []
 reference = { title = "FastAPI documentation", url = "https://fastapi.tiangolo.com/" }
-pages = ["services/_index.md", "services/attack-surface.md", "services/compliance-screening.md", "services/continuous-monitoring.md", "services/decision-support-ai.md", "services/digital-investigation.md", "services/due-diligence.md", "services/m-and-a.md", "services/reputation-intelligence.md", "skills/_index.md", "skills/ai-transformation.md", "skills/audit-trail.md", "skills/data-integration.md", "skills/data-room.md", "skills/decision-support.md", "skills/document-extraction.md", "skills/due-diligence.md", "skills/entity-resolution.md", "skills/insolvency-monitoring.md", "skills/knowledge-graph.md", "skills/m-and-a-screening.md", "skills/market-intelligence.md", "skills/orchestration.md", "skills/risk-scoring.md", "_index.md"]
-related = ["alpine-js", "dockerfile", "html", "javascript", "claude-api", "flowbite-pro", "github-actions", "skill"]
+pages = ["services/_index.md", "services/compliance-screening.md", "services/continuous-monitoring.md", "services/due-diligence.md", "services/m-and-a.md", "services/reputation-intelligence.md", "skills/_index.md", "skills/ai-transformation.md", "skills/data-room.md", "skills/decision-support.md", "skills/document-extraction.md", "skills/entity-resolution.md", "skills/insolvency-monitoring.md", "skills/knowledge-graph.md", "skills/m-and-a-screening.md", "skills/market-intelligence.md", "skills/orchestration.md", "skills/risk-scoring.md", "work/openttd-prismatic-bridge.md", "_index.md"]
+related = ["html", "javascript", "dockerfile", "flowbite-pro", "alpine-js", "claude-api", "github-actions", "skill"]
 og_title = "FastAPI: glossary"
 og_image = "og/glossary-fastapi.png"
 keywords = ["FastAPI", "Technology", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,6 +40,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
-No public repository of mine uses FastAPI as the data measures it; the evidence is the client work described below.
+FastAPI is part of 1 of my public repositories, from 2026 to 2026.
+
+What it was for: [Media and art](@/projects/media.md) (1).
+
+Most recently: [openttd-prismatic-bridge](@/work/openttd-prismatic-bridge.md): REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform.
 
 I also used it in client work under confidentiality agreements. Roles: Architect, Lead engineer, AI engineer and Data engineer. What was solved: LLM agents, Decision support, AI transformation and Audit trail. The use cases below give the principle and the intent of that work; no client, person, date or number is named.
+
+How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses FastAPI: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links FastAPI to the repositories and to the other languages and technologies they use together.

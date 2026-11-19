@@ -34,6 +34,7 @@ reference = { title = "TypeScript handbook", url = "https://www.typescriptlang.o
 id = "ruby"
 term = "Ruby"
 kind = "language"
+aliases = ["Bundler", "RubyGems"]
 definition = "A dynamic, expressive language designed for programmer happiness; many of the older tools here are Ruby."
 definition_cs = "Dynamický, expresivní jazyk navržený pro radost programátora; mnoho starších nástrojů tady je v Ruby."
 reference = { title = "ruby-lang.org", url = "https://www.ruby-lang.org/en/about/" }
@@ -50,6 +51,7 @@ reference = { title = "elixir-lang.org", url = "https://elixir-lang.org/" }
 id = "erlang"
 term = "Erlang"
 kind = "language"
+aliases = ["OTP"]
 definition = "A language and runtime from telecoms, designed for systems that must keep running while parts of them fail."
 definition_cs = "Jazyk a běhové prostředí z telekomunikací, navržené pro systémy, které musí běžet, i když jejich části selhávají."
 reference = { title = "erlang.org", url = "https://www.erlang.org/" }
@@ -58,6 +60,7 @@ reference = { title = "erlang.org", url = "https://www.erlang.org/" }
 id = "rust"
 term = "Rust"
 kind = "language"
+aliases = ["Cargo"]
 definition = "A systems language that guarantees memory safety without a garbage collector; Majordomus is written in it."
 definition_cs = "Systémový jazyk, který zaručuje bezpečnost paměti bez garbage collectoru; je v něm napsaný Majordomus."
 reference = { title = "The Rust Programming Language", url = "https://doc.rust-lang.org/book/" }
@@ -75,6 +78,7 @@ id = "shell"
 term = "Shell"
 term_cs = "Shell"
 kind = "language"
+aliases = ["Bash", "bash"]
 definition = "Scripts for the Unix command line (bash, zsh), the glue that installs, builds and deploys."
 definition_cs = "Skripty pro unixovou příkazovou řádku (bash, zsh), lepidlo, které instaluje, staví a nasazuje."
 reference = { title = "GNU Bash manual", url = "https://www.gnu.org/software/bash/manual/" }
@@ -151,7 +155,7 @@ reference = { title = "swift.org", url = "https://www.swift.org/documentation/" 
 id = "dockerfile"
 term = "Dockerfile"
 kind = "language"
-aliases = ["Docker", "docker"]
+aliases = ["Docker", "docker", "Docker Compose"]
 definition = "The recipe that builds a container image: a base system, files and commands, reproducible anywhere."
 definition_cs = "Recept, který staví obraz kontejneru: základní systém, soubory a příkazy, reprodukovatelné kdekoli."
 reference = { title = "Dockerfile reference", url = "https://docs.docker.com/reference/dockerfile/" }
@@ -1032,3 +1036,291 @@ kind = "concept"
 definition = "An account of one piece of work: the context, the role, what was delivered, its scale and the evidence, with the limits of what can be published."
 definition_cs = "Popis jedné zakázky: kontext, role, co bylo dodáno, v jakém rozsahu a s jakými doklady, včetně mezí toho, co lze zveřejnit."
 reference = { title = "Wikipedia: Case study", url = "https://en.wikipedia.org/wiki/Case_study" }
+
+[[terms]]
+id = "nodejs"
+term = "Node.js"
+kind = "technology"
+aliases = ["npm", "Node"]
+definition = "The JavaScript runtime outside the browser, with npm, its package registry and installer; servers, crawlers and command-line tools are written in it."
+definition_cs = "Běhové prostředí JavaScriptu mimo prohlížeč, s registrem a instalátorem balíčků npm; píšou se v něm servery, crawlery i nástroje pro příkazovou řádku."
+reference = { title = "Node.js documentation", url = "https://nodejs.org/en/docs" }
+
+[[terms]]
+id = "travis-ci"
+term = "Travis CI"
+kind = "technology"
+definition = "A hosted continuous-integration service that built and tested open-source repositories on every push, configured by a .travis.yml file."
+definition_cs = "Hostovaná služba průběžné integrace, která při každém pushi sestavovala a testovala open-source repozitáře; nastavuje se souborem .travis.yml."
+reference = { title = "Travis CI documentation", url = "https://docs.travis-ci.com/" }
+
+[[terms]]
+id = "gitlab-ci"
+term = "GitLab CI"
+kind = "technology"
+aliases = ["GitLab CI/CD"]
+definition = "GitLab's built-in pipelines: jobs declared in .gitlab-ci.yml run on every push and merge request."
+definition_cs = "Pipeline vestavěné v GitLabu: úlohy popsané v .gitlab-ci.yml běží při každém pushi a merge requestu."
+reference = { title = "GitLab CI/CD", url = "https://docs.gitlab.com/ee/ci/" }
+
+[[terms]]
+id = "webpack"
+term = "webpack"
+kind = "technology"
+definition = "A bundler that follows a JavaScript application's imports and packs its modules, styles and assets into files a browser loads."
+definition_cs = "Bundler, který prochází importy javascriptové aplikace a balí její moduly, styly a další soubory do souborů, které načte prohlížeč."
+reference = { title = "webpack documentation", url = "https://webpack.js.org/concepts/" }
+
+[[terms]]
+id = "babel"
+term = "Babel"
+kind = "technology"
+definition = "A JavaScript compiler that rewrites modern syntax into code older browsers and runtimes understand."
+definition_cs = "Kompilátor JavaScriptu, který přepisuje moderní syntaxi do kódu, kterému rozumějí starší prohlížeče a běhová prostředí."
+reference = { title = "Babel documentation", url = "https://babeljs.io/docs/" }
+
+[[terms]]
+id = "markdown"
+term = "Markdown"
+kind = "technology"
+definition = "A plain-text format whose light marks (headings, lists, links) render as HTML; READMEs and this site's pages are written in it."
+definition_cs = "Formát prostého textu, jehož jednoduché značky (nadpisy, seznamy, odkazy) se vykreslují jako HTML; píšou se v něm README i stránky tohoto webu."
+reference = { title = "CommonMark", url = "https://commonmark.org/" }
+
+[[terms]]
+id = "json"
+term = "JSON"
+kind = "technology"
+definition = "A text format for structured data (objects, arrays, strings, numbers) that nearly every language reads and writes."
+definition_cs = "Textový formát pro strukturovaná data (objekty, pole, řetězce, čísla), který čte a zapisuje téměř každý jazyk."
+reference = { title = "RFC 8259: The JSON Data Interchange Format", url = "https://www.rfc-editor.org/rfc/rfc8259" }
+
+[[terms]]
+id = "csv"
+term = "CSV"
+kind = "technology"
+aliases = ["csv"]
+definition = "Comma-separated values: a table as plain text, one record per line, the common format of data exports and open data."
+definition_cs = "Hodnoty oddělené čárkou: tabulka jako prostý text, jeden záznam na řádek, běžný formát datových exportů a otevřených dat."
+reference = { title = "RFC 4180: Common Format for CSV Files", url = "https://www.rfc-editor.org/rfc/rfc4180" }
+
+[[terms]]
+id = "rustler"
+term = "Rustler"
+kind = "technology"
+definition = "A library for writing Erlang native functions (NIFs) in Rust, so Elixir code can call fast, memory-safe Rust."
+definition_cs = "Knihovna pro psaní nativních funkcí Erlangu (NIF) v Rustu, díky které může kód v Elixiru volat rychlý a paměťově bezpečný Rust."
+reference = { title = "Rustler on GitHub", url = "https://github.com/rusterlium/rustler" }
+
+[[terms]]
+id = "ecto"
+term = "Ecto"
+kind = "technology"
+definition = "Elixir's database toolkit: schemas, changesets that validate data, composable queries and migrations, most often over PostgreSQL."
+definition_cs = "Databázová sada nástrojů Elixiru: schémata, changesety ověřující data, skládatelné dotazy a migrace, nejčastěji nad PostgreSQL."
+reference = { title = "Ecto documentation", url = "https://hexdocs.pm/ecto/" }
+
+[[terms]]
+id = "jason"
+term = "Jason"
+kind = "technology"
+definition = "The JSON parser and generator most Elixir projects use, Phoenix included."
+definition_cs = "Parser a generátor JSON, který používá většina projektů v Elixiru včetně Phoenixu."
+reference = { title = "Jason documentation", url = "https://hexdocs.pm/jason/" }
+
+[[terms]]
+id = "cowboy"
+term = "Cowboy"
+kind = "technology"
+definition = "An HTTP and WebSocket server for Erlang and Elixir; Phoenix serves its requests through it."
+definition_cs = "HTTP a WebSocket server pro Erlang a Elixir; Phoenix přes něj obsluhuje své požadavky."
+reference = { title = "Cowboy User Guide", url = "https://ninenines.eu/docs/en/cowboy/2.12/guide/" }
+
+[[terms]]
+id = "absinthe"
+term = "Absinthe"
+kind = "technology"
+definition = "The GraphQL toolkit for Elixir: a schema in Elixir code that resolves queries, mutations and subscriptions."
+definition_cs = "Sada nástrojů GraphQL pro Elixir: schéma v kódu Elixiru, které vyhodnocuje dotazy, mutace a odběry."
+reference = { title = "Absinthe documentation", url = "https://hexdocs.pm/absinthe/" }
+
+[[terms]]
+id = "graphql"
+term = "GraphQL"
+kind = "technology"
+definition = "A query language for APIs in which the client asks for exactly the fields it needs, against a typed schema."
+definition_cs = "Dotazovací jazyk pro API, ve kterém si klient řekne přesně o pole, která potřebuje, podle typovaného schématu."
+reference = { title = "GraphQL", url = "https://graphql.org/learn/" }
+
+[[terms]]
+id = "elasticsearch"
+term = "Elasticsearch"
+kind = "technology"
+definition = "A distributed search and analytics engine over JSON documents, with full-text search and aggregations."
+definition_cs = "Distribuovaný vyhledávací a analytický engine nad dokumenty v JSON, s fulltextovým vyhledáváním a agregacemi."
+reference = { title = "Elasticsearch Guide", url = "https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html" }
+
+[[terms]]
+id = "kibana"
+term = "Kibana"
+kind = "technology"
+definition = "The dashboard and exploration interface of the Elastic stack, over data stored in Elasticsearch."
+definition_cs = "Rozhraní pro dashboardy a průzkum dat v sadě Elastic, nad daty uloženými v Elasticsearch."
+reference = { title = "Kibana Guide", url = "https://www.elastic.co/guide/en/kibana/current/index.html" }
+
+[[terms]]
+id = "mongodb"
+term = "MongoDB"
+kind = "technology"
+definition = "A document database that stores records as JSON-like documents without a fixed schema."
+definition_cs = "Dokumentová databáze, která ukládá záznamy jako dokumenty podobné JSON bez pevného schématu."
+reference = { title = "MongoDB Manual", url = "https://www.mongodb.com/docs/manual/" }
+
+[[terms]]
+id = "couchbase"
+term = "Couchbase"
+kind = "technology"
+definition = "A distributed document database with a memory-first cache and a SQL-like query language, N1QL."
+definition_cs = "Distribuovaná dokumentová databáze s mezipamětí v operační paměti a dotazovacím jazykem N1QL podobným SQL."
+reference = { title = "Couchbase documentation", url = "https://docs.couchbase.com/home/index.html" }
+
+[[terms]]
+id = "rabbitmq"
+term = "RabbitMQ"
+kind = "technology"
+aliases = ["AMQP"]
+definition = "A message broker that routes messages between producers and consumers through exchanges and queues (AMQP)."
+definition_cs = "Message broker, který směruje zprávy mezi producenty a konzumenty přes exchange a fronty (AMQP)."
+reference = { title = "RabbitMQ documentation", url = "https://www.rabbitmq.com/docs" }
+
+[[terms]]
+id = "express"
+term = "Express"
+kind = "technology"
+aliases = ["Express.js"]
+definition = "A minimal web framework for Node.js: routes and middleware for HTTP servers and APIs."
+definition_cs = "Minimalistický webový framework pro Node.js: routy a middleware pro HTTP servery a API."
+reference = { title = "Express", url = "https://expressjs.com/" }
+
+[[terms]]
+id = "socket-io"
+term = "Socket.IO"
+kind = "technology"
+aliases = ["socket.io"]
+definition = "A library for real-time, two-way communication between browser and server, over WebSocket with fallbacks."
+definition_cs = "Knihovna pro obousměrnou komunikaci mezi prohlížečem a serverem v reálném čase, přes WebSocket se záložními cestami."
+reference = { title = "Socket.IO documentation", url = "https://socket.io/docs/v4/" }
+
+[[terms]]
+id = "cheerio"
+term = "Cheerio"
+kind = "technology"
+definition = "A fast HTML parser for Node.js with a jQuery-like API, used to extract data from fetched pages."
+definition_cs = "Rychlý parser HTML pro Node.js s API podobným jQuery, používaný k vytěžování dat ze stažených stránek."
+reference = { title = "Cheerio", url = "https://cheerio.js.org/" }
+
+[[terms]]
+id = "jquery"
+term = "jQuery"
+kind = "technology"
+definition = "A JavaScript library that made DOM manipulation, events and AJAX uniform across browsers."
+definition_cs = "Knihovna JavaScriptu, která sjednotila práci s DOM, událostmi a AJAXem napříč prohlížeči."
+reference = { title = "jQuery API Documentation", url = "https://api.jquery.com/" }
+
+[[terms]]
+id = "ember-js"
+term = "Ember.js"
+kind = "technology"
+aliases = ["Ember"]
+definition = "A JavaScript framework for ambitious single-page applications, with conventions for routing, data and templates."
+definition_cs = "Framework JavaScriptu pro rozsáhlé jednostránkové aplikace s konvencemi pro routování, data a šablony."
+reference = { title = "Ember.js Guides", url = "https://guides.emberjs.com/" }
+
+[[terms]]
+id = "handlebars"
+term = "Handlebars"
+kind = "technology"
+definition = "A logic-less templating language that fills HTML templates from data with {{expressions}}."
+definition_cs = "Šablonovací jazyk bez logiky, který plní HTML šablony daty pomocí výrazů {{…}}."
+reference = { title = "Handlebars", url = "https://handlebarsjs.com/" }
+
+[[terms]]
+id = "bootstrap"
+term = "Bootstrap"
+kind = "technology"
+definition = "A CSS framework of a responsive grid and ready-made components for building web pages quickly."
+definition_cs = "CSS framework s responzivní mřížkou a hotovými komponentami pro rychlou stavbu webových stránek."
+reference = { title = "Bootstrap documentation", url = "https://getbootstrap.com/docs/" }
+
+[[terms]]
+id = "bower"
+term = "Bower"
+kind = "technology"
+definition = "An early package manager for front-end libraries, since superseded by npm and bundlers."
+definition_cs = "Raný správce balíčků pro frontendové knihovny, dnes nahrazený npm a bundlery."
+reference = { title = "Bower", url = "https://bower.io/" }
+
+[[terms]]
+id = "mocha"
+term = "Mocha"
+kind = "technology"
+definition = "A JavaScript test framework for Node.js and the browser, with describe/it suites and asynchronous tests."
+definition_cs = "Testovací framework JavaScriptu pro Node.js i prohlížeč, se sadami describe/it a asynchronními testy."
+reference = { title = "Mocha", url = "https://mochajs.org/" }
+
+[[terms]]
+id = "rspec"
+term = "RSpec"
+kind = "technology"
+definition = "A behaviour-driven testing framework for Ruby, with specs that read close to plain English."
+definition_cs = "Testovací framework pro Ruby ve stylu BDD, se specifikacemi, které se čtou skoro jako běžná angličtina."
+reference = { title = "RSpec", url = "https://rspec.info/" }
+
+[[terms]]
+id = "gli"
+term = "GLI"
+kind = "technology"
+definition = "A Ruby library for building git-like command-line applications with commands, flags and help."
+definition_cs = "Knihovna Ruby pro stavbu aplikací příkazové řádky ve stylu gitu, s příkazy, přepínači a nápovědou."
+reference = { title = "GLI on GitHub", url = "https://github.com/davetron5000/gli" }
+
+[[terms]]
+id = "clap"
+term = "clap"
+kind = "technology"
+definition = "Rust's command-line argument parser: subcommands, flags, validation and generated help from a typed definition."
+definition_cs = "Parser argumentů příkazové řádky v Rustu: podpříkazy, přepínače, validace a generovaná nápověda z typované definice."
+reference = { title = "clap documentation", url = "https://docs.rs/clap/" }
+
+[[terms]]
+id = "serde"
+term = "serde"
+kind = "technology"
+definition = "Rust's framework for serialising and deserialising data structures to JSON, TOML, YAML and other formats."
+definition_cs = "Framework Rustu pro serializaci a deserializaci datových struktur do JSON, TOML, YAML a dalších formátů."
+reference = { title = "serde", url = "https://serde.rs/" }
+
+[[terms]]
+id = "ansible"
+term = "Ansible"
+kind = "technology"
+definition = "An agentless automation tool that configures servers over SSH from declarative YAML playbooks."
+definition_cs = "Nástroj pro automatizaci bez agentů, který konfiguruje servery přes SSH podle deklarativních playbooků v YAML."
+reference = { title = "Ansible documentation", url = "https://docs.ansible.com/" }
+
+[[terms]]
+id = "coreos"
+term = "CoreOS"
+kind = "technology"
+aliases = ["Container Linux"]
+definition = "A minimal Linux distribution built to run containers, with automatic updates and etcd for cluster configuration."
+definition_cs = "Minimalistická distribuce Linuxu stavěná pro běh kontejnerů, s automatickými aktualizacemi a etcd pro konfiguraci clusteru."
+reference = { title = "Fedora CoreOS documentation", url = "https://docs.fedoraproject.org/en-US/fedora-coreos/" }
+
+[[terms]]
+id = "nominatim"
+term = "Nominatim"
+kind = "technology"
+definition = "The geocoder of OpenStreetMap: it turns addresses into coordinates and coordinates back into addresses."
+definition_cs = "Geokodér OpenStreetMap: převádí adresy na souřadnice a souřadnice zpět na adresy."
+reference = { title = "Nominatim documentation", url = "https://nominatim.org/release-docs/latest/" }

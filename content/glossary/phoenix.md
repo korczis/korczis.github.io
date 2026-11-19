@@ -3,7 +3,7 @@
 title = "Phoenix"
 description = "Elixir's web framework; LiveView renders interactive pages on the server and pushes only the changes over a socket."
 template = "term.html"
-weight = 59
+weight = 87
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Elixir's web framework; LiveView renders interactive pages on the server and pushes only the changes over a socket."
 aliases = ["Phoenix LiveView", "LiveView", "phoenix_live_view"]
 reference = { title = "Phoenix Framework", url = "https://www.phoenixframework.org/" }
-pages = ["services/attack-surface.md", "services/continuous-monitoring.md", "services/decision-support-ai.md", "services/due-diligence.md", "services/m-and-a.md", "services/reputation-intelligence.md"]
-related = ["alpine-js", "claude-api", "dockerfile", "elixir", "fastapi", "flowbite-pro", "github-actions", "html"]
+pages = ["services/attack-surface.md", "services/continuous-monitoring.md", "services/decision-support-ai.md", "services/due-diligence.md", "services/m-and-a.md", "services/reputation-intelligence.md", "skills/decision-support.md", "skills/registry-intelligence.md", "work/astudo.md", "work/corvidae.md", "work/crisis-map.md", "work/czech-stats.md", "work/dj-schnapps.md", "work/edna.md", "work/gooddata-graphql.md", "work/happ.md", "work/hydra.md", "work/kanec.md", "work/korczis-gitlab-io.md", "work/magic.md", "work/mapoffacts.md", "work/maze.md", "work/mindscape.md", "work/prismatic.md", "work/rest-hello-world-benchmark.md", "work/sig.md", "work/test-elixir.md", "work/the-psycho.md", "work/the-scratch.md", "work/tosh.md", "work/web-spa.md", "work/zaas.md"]
+related = ["elixir", "javascript", "commit", "open-source", "repository", "html", "postgresql", "dockerfile"]
 og_title = "Phoenix: glossary"
 og_image = "og/glossary-phoenix.png"
 keywords = ["Phoenix", "Technology", "Glossary", "Tomas Korcak"]
@@ -40,10 +40,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
-Phoenix is part of 1 of my public repositories, from 2017 to 2018.
+Phoenix is part of 24 of my public repositories, from 2016 to 2026.
 
-What it was for: [Web](@/projects/web.md) (1).
+What it was for: [Tools](@/projects/tools.md) (9), [Web](@/projects/web.md) (4), [Data and GIS](@/projects/data.md) (3) and [AI engineering](@/projects/ai.md) (2).
 
-Most recently: [the-scratch](@/work/the-scratch.md): Single Page Application written in Elm with Elixir/Phoenix Backend.
+Most recently: [Crisis map](@/work/crisis-map.md): Reports geocoded through a local Nominatim, stored as PostGIS geography and served from one capability registry: LiveView, REST, OpenAPI, MCP and CLI; [the-psycho](@/work/the-psycho.md); [sig](@/work/sig.md): distributed cognitive framework in Elixir/OTP.
+
+1 of these projects runs as a live site.
 
 How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses Phoenix: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links Phoenix to the repositories and to the other languages and technologies they use together.

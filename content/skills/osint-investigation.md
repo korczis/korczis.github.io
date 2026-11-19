@@ -13,7 +13,7 @@ skill = "osint-investigation"
 og_title = "OSINT investigation: skills"
 og_image = "og/skill-osint-investigation.png"
 schema = "skill"
-terms = ["skill", "osint", "html", "javascript", "python", "shell", "claude-api", "elixir", "postgis", "typescript", "alpine-js", "css"]
+terms = ["skill", "osint", "html", "javascript", "python", "postgresql", "shell", "tailwind-css", "flowbite-pro", "claude-api", "dockerfile", "ecto"]
 keywords = ["OSINT investigation", "Digital investigation and OSINT dossiers", "Reputation intelligence and adverse-media monitoring", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -31,7 +31,7 @@ The concept behind it: [OSINT](@/glossary/osint.md).
 
 Services that draw on it: [Digital investigation and OSINT dossiers](@/services/digital-investigation.md) and [Reputation intelligence and adverse-media monitoring](@/services/reputation-intelligence.md).
 
-Practised with: [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md), [Python](@/glossary/python.md), [Shell](@/glossary/shell.md), [Claude API](@/glossary/claude-api.md), [Elixir](@/glossary/elixir.md), [PostGIS](@/glossary/postgis.md) and [TypeScript](@/glossary/typescript.md).
+Practised with: [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md), [Python](@/glossary/python.md), [PostgreSQL](@/glossary/postgresql.md), [Shell](@/glossary/shell.md), [Tailwind CSS](@/glossary/tailwind-css.md), [Flowbite Pro](@/glossary/flowbite-pro.md) and [Claude API](@/glossary/claude-api.md).
 
 Public work whose own words show it: [sig](https://gitlab.com/korczis/sig), [crisis-map](https://github.com/korczis/crisis-map), [osint-case-ratcliffe-moscow-2026](https://github.com/korczis/osint-case-ratcliffe-moscow-2026) and [data-atlas](https://github.com/korczis/data-atlas).
 

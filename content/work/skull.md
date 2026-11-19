@@ -17,7 +17,7 @@ og_description = "skull: Learning and experiments in Shell and Ruby, 2014, archi
 og_image = "og/work-skull.png"
 schema = "project"
 keywords = ["skull", "Learning and experiments", "Shell", "Ruby", "2014", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["shell", "ruby", "repository", "commit", "open-source"]
+terms = ["shell", "ruby", "travis-ci", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

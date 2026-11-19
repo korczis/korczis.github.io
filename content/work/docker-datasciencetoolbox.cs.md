@@ -17,7 +17,7 @@ og_description = "docker-datasciencetoolbox: Systémy a infrastruktura, 2015, ar
 og_image = "og/cs-work-docker-datasciencetoolbox.png"
 schema = "project"
 keywords = ["docker-datasciencetoolbox", "Systémy a infrastruktura", "2015", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["repository", "commit", "open-source"]
+terms = ["dockerfile", "python", "java", "nodejs", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

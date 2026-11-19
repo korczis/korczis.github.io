@@ -3,7 +3,7 @@
 title = "Financial statement analysis"
 description = "Reading a company's health from its balance sheet, income statement and cash flow: ratios, trends and what they do not say."
 template = "term.html"
-weight = 84
+weight = 119
 
 [taxonomies]
 tags = ["Glossary", "Concept"]

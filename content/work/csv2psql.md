@@ -17,7 +17,7 @@ og_description = "csv2psql: Tools in Ruby and HTML, 2014–2015, archive. Source
 og_image = "og/work-csv2psql.png"
 schema = "project"
 keywords = ["csv2psql", "Tools", "Ruby", "HTML", "2014–2015", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["ruby", "html", "postgresql", "open-source", "github-pages", "repository", "commit"]
+terms = ["ruby", "html", "postgresql", "gli", "rspec", "open-source", "github-pages", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

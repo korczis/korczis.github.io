@@ -16,8 +16,8 @@ kind = "language"
 definition = "A purely functional language with lazy evaluation and a strong type system; a place to learn to think in types."
 aliases = []
 reference = { title = "haskell.org", url = "https://www.haskell.org/" }
-pages = ["projects/learning.md", "projects/science.md", "work/haskell-world.md", "work/skull-haskell.md"]
-related = ["repository", "commit", "cpp", "data-visualisation", "elixir", "javascript", "open-source", "rust"]
+pages = ["projects/learning.md", "projects/science.md", "work/happ.md", "work/haskell-world.md", "work/skull-haskell.md"]
+related = ["repository", "commit", "cpp", "elixir", "open-source", "rust", "shell", "c"]
 og_title = "Haskell: glossary"
 og_image = "og/glossary-haskell.png"
 keywords = ["Haskell", "Programming language", "Glossary", "Tomas Korcak"]
@@ -40,10 +40,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
-I have written Haskell in 2 public repositories, from 2014 to 2016; in 2 of them it is the main language.
+I have written Haskell in 3 public repositories, from 2014 to 2021; in 2 of them it is the main language.
 
-What it was for: [Learning and experiments](@/projects/learning.md) (1) and [Science and visualisation](@/projects/science.md) (1).
+What it was for: [Learning and experiments](@/projects/learning.md) (2) and [Science and visualisation](@/projects/science.md) (1).
 
-Most recently: [haskell-world](@/work/haskell-world.md): Haskell Mathematics; [skull-haskell](@/work/skull-haskell.md).
+Most recently: [happ](@/work/happ.md): Playground App created during my Hospital Stay; [haskell-world](@/work/haskell-world.md): Haskell Mathematics; [skull-haskell](@/work/skull-haskell.md).
 
 How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses Haskell: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links Haskell to the repositories and to the other languages and technologies they use together.

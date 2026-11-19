@@ -17,7 +17,7 @@ og_description = "microcrawler-ng: Data and GIS in JavaScript, 2016, archive. So
 og_image = "og/work-microcrawler-ng.png"
 schema = "project"
 keywords = ["microcrawler-ng", "Data and GIS", "JavaScript", "2016", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["javascript", "gis", "repository", "commit", "open-source"]
+terms = ["javascript", "nodejs", "babel", "cheerio", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

@@ -13,7 +13,7 @@ skill = "web-automation"
 og_title = "Web automation and crawling: skills"
 og_image = "og/skill-web-automation.png"
 schema = "skill"
-terms = ["skill", "web-scraping", "javascript", "html", "shell"]
+terms = ["skill", "web-scraping", "javascript", "nodejs", "cheerio", "babel", "couchbase", "dockerfile", "elasticsearch", "html", "jquery", "kibana"]
 keywords = ["Web automation and crawling", "Digital investigation and OSINT dossiers", "External attack surface and cyber-exposure assessment", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -31,7 +31,7 @@ The concept behind it: [Web scraping](@/glossary/web-scraping.md).
 
 Services that draw on it: [Digital investigation and OSINT dossiers](@/services/digital-investigation.md) and [External attack surface and cyber-exposure assessment](@/services/attack-surface.md).
 
-Practised with: [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md) and [Shell](@/glossary/shell.md).
+Practised with: [JavaScript](@/glossary/javascript.md), [Node.js](@/glossary/nodejs.md), [Cheerio](@/glossary/cheerio.md), [Babel](@/glossary/babel.md), [Couchbase](@/glossary/couchbase.md), [Dockerfile](@/glossary/dockerfile.md), [Elasticsearch](@/glossary/elasticsearch.md) and [HTML](@/glossary/html.md).
 
 Public work whose own words show it: [microcrawler-crawler-all](https://gitlab.com/korczis/microcrawler-crawler-all), [microcrawler-crawler-sreality-cz](https://gitlab.com/korczis/microcrawler-crawler-sreality-cz), [microcrawler-js](https://gitlab.com/korczis/microcrawler-js) and [microcrawler-crawler-xkcd-com](https://gitlab.com/korczis/microcrawler-crawler-xkcd-com).
 

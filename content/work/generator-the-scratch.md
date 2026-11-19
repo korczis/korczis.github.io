@@ -17,7 +17,7 @@ og_description = "generator-the-scratch: Learning and experiments in JavaScript,
 og_image = "og/work-generator-the-scratch.png"
 schema = "project"
 keywords = ["generator-the-scratch", "Learning and experiments", "JavaScript", "2013", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["javascript", "repository", "commit", "open-source"]
+terms = ["javascript", "nodejs", "mocha", "travis-ci", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

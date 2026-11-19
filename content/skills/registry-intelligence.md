@@ -13,7 +13,7 @@ skill = "registry-intelligence"
 og_title = "Registry intelligence: skills"
 og_image = "og/skill-registry-intelligence.png"
 schema = "skill"
-terms = ["skill", "public-registry", "css", "elixir", "javascript", "mcp", "postgis"]
+terms = ["skill", "public-registry", "css", "ecto", "elixir", "flowbite-pro", "javascript", "mcp", "nominatim", "openapi", "phoenix", "postgis"]
 keywords = ["Registry intelligence", "Corporate and counterparty due diligence", "Digital investigation and OSINT dossiers", "Insolvency, litigation and register change monitoring", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -31,7 +31,7 @@ The concept behind it: [Public registry](@/glossary/public-registry.md).
 
 Services that draw on it: [Corporate and counterparty due diligence](@/services/due-diligence.md), [Digital investigation and OSINT dossiers](@/services/digital-investigation.md) and [Insolvency, litigation and register change monitoring](@/services/continuous-monitoring.md).
 
-Practised with: [CSS](@/glossary/css.md), [Elixir](@/glossary/elixir.md), [JavaScript](@/glossary/javascript.md), [MCP](@/glossary/mcp.md) and [PostGIS](@/glossary/postgis.md).
+Practised with: [CSS](@/glossary/css.md), [Ecto](@/glossary/ecto.md), [Elixir](@/glossary/elixir.md), [Flowbite Pro](@/glossary/flowbite-pro.md), [JavaScript](@/glossary/javascript.md), [MCP](@/glossary/mcp.md), [Nominatim](@/glossary/nominatim.md) and [OpenAPI](@/glossary/openapi.md).
 
 Public work whose own words show it: [crisis-map](https://github.com/korczis/crisis-map).
 

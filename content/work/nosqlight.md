@@ -17,7 +17,7 @@ og_description = "nosqlight: Data and GIS, 2014, archive. Source on GitHub and G
 og_image = "og/work-nosqlight.png"
 schema = "project"
 keywords = ["nosqlight", "Data and GIS", "2014", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["gis", "repository", "commit", "open-source"]
+terms = ["c", "cpp", "json", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

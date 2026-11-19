@@ -17,7 +17,7 @@ definition = "Jazyk C rozšířený o objekty a zprávy ve stylu Smalltalku; jaz
 aliases = []
 reference = { title = "Programming with Objective-C (Apple)", url = "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html" }
 pages = ["work/happ.cs.md"]
-related = ["cmake", "commit", "cpp", "open-source", "repository", "rust", "shell", "swift"]
+related = ["c", "cmake", "commit", "cpp", "dockerfile", "elasticsearch", "elixir", "gitlab-ci"]
 og_title = "Objective-C: slovník"
 og_image = "og/cs-glossary-objective-c.png"
 keywords = ["Objective-C", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

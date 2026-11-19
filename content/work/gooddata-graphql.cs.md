@@ -17,7 +17,7 @@ og_description = "gooddata-graphql: Data a GIS, Elixir, JavaScript a HTML, 2016,
 og_image = "og/cs-work-gooddata-graphql.png"
 schema = "project"
 keywords = ["gooddata-graphql", "Data a GIS", "Elixir", "JavaScript", "HTML", "2016", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["elixir", "javascript", "html", "css", "shell", "gis", "repository", "commit", "open-source"]
+terms = ["elixir", "javascript", "html", "css", "shell", "phoenix", "absinthe", "graphql", "react", "dockerfile", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

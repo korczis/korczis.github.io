@@ -3,7 +3,7 @@
 title = "Majordomus"
 description = "Vlastníkova dohledová vrstva pro práci s AI: jedna politika pro každého agenta, vymezené úkoly a dokončení, která musí být doložena."
 template = "term.html"
-weight = 52
+weight = 75
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Vlastníkova dohledová vrstva pro práci s AI: jedna politika pro každého agenta, vymezené úkoly a dokončení, která musí být doložena."
 aliases = []
 reference = { title = "majordomus.dev", url = "https://majordomus.dev" }
-pages = ["about.cs.md", "hire.cs.md", "interfaces.cs.md", "services/_index.cs.md", "services/ai-engineering-governance.cs.md", "services/continuous-monitoring.cs.md", "services/decision-support-ai.cs.md", "services/interactive-data-products.cs.md", "skills/_index.cs.md", "skills/data-room.cs.md", "skills/insolvency-monitoring.cs.md", "skills/interactive-visualisation.cs.md", "skills/knowledge-graph.cs.md", "skills/policy-as-code.cs.md", "skills/risk-scoring.cs.md", "stack.cs.md", "_index.cs.md"]
-related = ["alpine-js", "javascript", "flowbite-pro", "html", "dockerfile", "claude-api", "fastapi", "skill"]
+pages = ["about.cs.md", "hire.cs.md", "interfaces.cs.md", "services/ai-engineering-governance.cs.md", "services/continuous-monitoring.cs.md", "skills/data-room.cs.md", "skills/insolvency-monitoring.cs.md", "skills/knowledge-graph.cs.md", "skills/risk-scoring.cs.md", "stack.cs.md", "_index.cs.md"]
+related = ["alpine-js", "flowbite-pro", "javascript", "claude-api", "github-actions", "html", "dockerfile", "fastapi"]
 og_title = "Majordomus: slovník"
 og_image = "og/cs-glossary-majordomus.png"
 keywords = ["Majordomus", "Technologie", "Slovník", "Tomáš Korčák"]

@@ -3,7 +3,7 @@
 title = "Data integration"
 description = "Combining data from many sources (registers, APIs, files) into one consistent view, with each record keeping where it came from."
 template = "term.html"
-weight = 78
+weight = 113
 
 [taxonomies]
 tags = ["Glossary", "Concept"]

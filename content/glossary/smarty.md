@@ -17,7 +17,7 @@ definition = "A template engine for PHP that keeps presentation apart from appli
 aliases = []
 reference = { title = "smarty.net", url = "https://www.smarty.net/" }
 pages = ["work/cluster-kubernetes.md"]
-related = ["commit", "open-source", "repository", "shell"]
+related = ["commit", "couchbase", "elasticsearch", "kibana", "kubernetes", "nominatim", "open-source", "postgresql"]
 og_title = "Smarty: glossary"
 og_image = "og/glossary-smarty.png"
 keywords = ["Smarty", "Programming language", "Glossary", "Tomas Korcak"]

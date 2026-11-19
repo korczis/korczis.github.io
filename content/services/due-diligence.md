@@ -14,7 +14,7 @@ icon = "shield"
 og_title = "Corporate and counterparty due diligence"
 og_image = "og/service-due-diligence.png"
 schema = "service"
-terms = ["service", "elixir", "phoenix", "postgresql", "meilisearch", "playwright", "due-diligence", "public-registry", "record-linkage", "beneficial-ownership", "financial-statement-analysis", "risk-assessment", "source-criticism", "decision-support-system", "javascript", "html", "python", "alpine-js", "claude-api", "dockerfile", "fastapi", "flowbite-pro", "github-actions", "kubernetes"]
+terms = ["service", "elixir", "phoenix", "postgresql", "meilisearch", "playwright", "due-diligence", "public-registry", "record-linkage", "beneficial-ownership", "financial-statement-analysis", "risk-assessment", "source-criticism", "decision-support-system", "javascript", "html", "python", "flowbite-pro", "tailwind-css", "dockerfile", "fastapi", "alpine-js", "claude-api", "react"]
 keywords = ["Corporate and counterparty due diligence", "Due diligence", "Registry intelligence", "Entity resolution", "Ownership and link analysis", "Financial statement analysis", "Risk scoring", "Source reliability", "Decision support", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -34,7 +34,7 @@ It draws on these skills: [Due diligence](@/skills/due-diligence.md), [Registry 
 
 It is built with [Elixir](@/glossary/elixir.md), [Phoenix](@/glossary/phoenix.md), [PostgreSQL](@/glossary/postgresql.md), [Meilisearch](@/glossary/meilisearch.md) and [Playwright](@/glossary/playwright.md).
 
-The technologies behind it, measured from the work that shows those skills: [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md), [Python](@/glossary/python.md), [Alpine.js](@/glossary/alpine-js.md), [Claude API](@/glossary/claude-api.md), [Dockerfile](@/glossary/dockerfile.md), [FastAPI](@/glossary/fastapi.md) and [Flowbite Pro](@/glossary/flowbite-pro.md).
+The technologies behind it, measured from the work that shows those skills: [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md), [Python](@/glossary/python.md), [Flowbite Pro](@/glossary/flowbite-pro.md), [Tailwind CSS](@/glossary/tailwind-css.md), [Dockerfile](@/glossary/dockerfile.md), [FastAPI](@/glossary/fastapi.md) and [Alpine.js](@/glossary/alpine-js.md).
 
 4 public repositories show its skills (4 by their own words).
 

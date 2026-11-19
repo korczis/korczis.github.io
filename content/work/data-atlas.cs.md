@@ -17,7 +17,7 @@ og_description = "Data Atlas: Data a GIS, Python, HTML a JavaScript, 2026, aktiv
 og_image = "og/cs-work-data-atlas.png"
 schema = "project"
 keywords = ["Data Atlas", "data-atlas", "Data a GIS", "Python", "HTML", "JavaScript", "catalog", "czech-republic", "geodata", "geospatial", "gis", "open-data", "2026", "GitHub", "Tomáš Korčák", "korczis"]
-terms = ["python", "html", "javascript", "plpgsql", "just", "shell", "gis", "github-pages", "repository", "commit", "open-source"]
+terms = ["python", "html", "javascript", "plpgsql", "just", "shell", "postgresql", "tailwind-css", "playwright", "github-pages", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

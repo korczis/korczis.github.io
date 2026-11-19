@@ -3,7 +3,7 @@
 title = "Digital forensics"
 description = "Recovering and examining digital evidence so that what it shows, and how it was obtained, holds up when challenged."
 template = "term.html"
-weight = 81
+weight = 116
 
 [taxonomies]
 tags = ["Glossary", "Concept"]
@@ -17,7 +17,7 @@ definition = "Recovering and examining digital evidence so that what it shows, a
 aliases = []
 reference = { title = "NIST: digital forensics", url = "https://www.nist.gov/digital-evidence" }
 pages = ["services/_index.md", "services/digital-forensics.md", "services/digital-investigation.md", "skills/_index.md", "skills/media-forensics.md"]
-related = ["alpine-js", "attack-surface", "dockerfile", "html", "javascript", "python", "service", "shell"]
+related = ["dockerfile", "attack-surface", "flowbite-pro", "html", "javascript", "python", "service", "shell"]
 og_title = "Digital forensics: glossary"
 og_image = "og/glossary-digital-forensics.png"
 keywords = ["Digital forensics", "Concept", "Glossary", "Tomas Korcak"]

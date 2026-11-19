@@ -13,7 +13,7 @@ skill = "narrative-analysis"
 og_title = "Narrative and reputation analysis: skills"
 og_image = "og/skill-narrative-analysis.png"
 schema = "skill"
-terms = ["skill", "reputation-risk", "claude-api", "html", "python", "shell"]
+terms = ["skill", "reputation-risk", "claude-api", "github-actions", "github-pages", "html", "just", "python", "shell"]
 keywords = ["Narrative and reputation analysis", "Digital forensics and evidence preservation", "Reputation intelligence and adverse-media monitoring", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -31,7 +31,7 @@ The concept behind it: [Reputation risk](@/glossary/reputation-risk.md).
 
 Services that draw on it: [Digital forensics and evidence preservation](@/services/digital-forensics.md) and [Reputation intelligence and adverse-media monitoring](@/services/reputation-intelligence.md).
 
-Practised with: [Claude API](@/glossary/claude-api.md), [HTML](@/glossary/html.md), [Python](@/glossary/python.md) and [Shell](@/glossary/shell.md).
+Practised with: [Claude API](@/glossary/claude-api.md), [GitHub Actions](@/glossary/github-actions.md), [GitHub Pages](@/glossary/github-pages.md), [HTML](@/glossary/html.md), [Just](@/glossary/just.md), [Python](@/glossary/python.md) and [Shell](@/glossary/shell.md).
 
 Public work whose own words show it: [osint-case-ratcliffe-moscow-2026](https://github.com/korczis/osint-case-ratcliffe-moscow-2026).
 

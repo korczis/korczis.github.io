@@ -17,7 +17,7 @@ og_description = "skull-cpp: Learning and experiments in CMake, Makefile and C++
 og_image = "og/work-skull-cpp.png"
 schema = "project"
 keywords = ["skull-cpp", "Learning and experiments", "CMake", "Makefile", "C++", "2014–2015", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["cmake", "makefile", "cpp", "repository", "commit", "open-source"]
+terms = ["cmake", "makefile", "cpp", "travis-ci", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

@@ -3,7 +3,7 @@
 title = "Ollama"
 description = "A runtime that serves open language models on local hardware, so sensitive material never leaves the machine."
 template = "term.html"
-weight = 55
+weight = 83
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "A runtime that serves open language models on local hardware, so s
 aliases = []
 reference = { title = "Ollama", url = "https://ollama.com/" }
 pages = ["services/decision-support-ai.md", "services/reputation-intelligence.md"]
-related = ["alpine-js", "claude-api", "decision-support-system", "dockerfile", "elixir", "fastapi", "flowbite-pro", "github-actions"]
+related = ["claude-api", "decision-support-system", "dockerfile", "elixir", "flowbite-pro", "html", "javascript", "phoenix"]
 og_title = "Ollama: glossary"
 og_image = "og/glossary-ollama.png"
 keywords = ["Ollama", "Technology", "Glossary", "Tomas Korcak"]

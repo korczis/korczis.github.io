@@ -13,7 +13,7 @@ skill = "orchestration"
 og_title = "Orchestrace: dovednosti"
 og_image = "og/cs-skill-orchestration.png"
 schema = "skill"
-terms = ["skill", "orchestration", "claude-api", "html", "javascript", "shell", "alpine-js", "dockerfile", "fastapi", "flowbite-pro", "github-actions", "kubernetes"]
+terms = ["skill", "orchestration", "claude-api", "github-actions", "html", "javascript", "shell", "alpine-js", "dockerfile", "fastapi", "flowbite-pro", "kubernetes"]
 keywords = ["Orchestrace", "Monitoring insolvencí, sporů a změn v rejstřících", "Podpora rozhodování a AI agenti pro analytiky", "Řízený vývoj softwaru s AI", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -31,7 +31,7 @@ Pojem, na kterém stojí: [Orchestrace](@/glossary/orchestration.cs.md).
 
 Služby, které z ní čerpají: [Monitoring insolvencí, sporů a změn v rejstřících](@/services/continuous-monitoring.cs.md), [Podpora rozhodování a AI agenti pro analytiky](@/services/decision-support-ai.cs.md) a [Řízený vývoj softwaru s AI](@/services/ai-engineering-governance.cs.md).
 
-Praktikovaná s: [Claude API](@/glossary/claude-api.cs.md), [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Shell](@/glossary/shell.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md), [FastAPI](@/glossary/fastapi.cs.md) a [Flowbite Pro](@/glossary/flowbite-pro.cs.md).
+Praktikovaná s: [Claude API](@/glossary/claude-api.cs.md), [GitHub Actions](@/glossary/github-actions.cs.md), [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Shell](@/glossary/shell.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md) a [FastAPI](@/glossary/fastapi.cs.md).
 
 Veřejná práce, jejíž vlastní slova ji dokládají: [prismatic-majordomus](https://github.com/korczis/prismatic-majordomus).
 

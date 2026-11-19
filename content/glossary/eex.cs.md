@@ -16,8 +16,8 @@ kind = "language"
 definition = "Vložené šablony Elixiru: EEx vkládá Elixir do textu, HEEx do HTML, které Phoenix LiveView kontroluje a vykresluje."
 aliases = ["HTML+EEX", "EEx", "HEEx"]
 reference = { title = "Phoenix.Component and HEEx", url = "https://hexdocs.pm/phoenix_live_view/Phoenix.Component.html" }
-pages = ["skills/data-integration.cs.md", "skills/geospatial-analysis.cs.md", "work/korczis-gitlab-io.cs.md", "work/sig.cs.md", "work/simple-geocoder.cs.md", "work/the-psycho.cs.md"]
-related = ["elixir", "commit", "open-source", "repository", "shell", "css", "html", "javascript"]
+pages = ["work/korczis-gitlab-io.cs.md", "work/rustler-mix.cs.md", "work/sig.cs.md", "work/simple-geocoder.cs.md", "work/the-psycho.cs.md"]
+related = ["commit", "elixir", "open-source", "repository", "phoenix", "css", "dockerfile", "ecto"]
 og_title = "EEx and HEEx: slovník"
 og_image = "og/cs-glossary-eex.png"
 keywords = ["EEx and HEEx", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
@@ -40,9 +40,9 @@ span = 3
 height = "md"
 tone = "night"
 +++
-EEx and HEEx jsem psal ve 4 veřejných repozitářích, od roku 2024 do 2026.
+EEx and HEEx jsem psal v 5 veřejných repozitářích, od roku 2016 do 2026.
 
-K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (2), [Inženýrství AI](@/projects/ai.cs.md) (1) a [Web](@/projects/web.cs.md) (1).
+K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (3), [Inženýrství AI](@/projects/ai.cs.md) (1) a [Web](@/projects/web.cs.md) (1).
 
 Naposledy: [the-psycho](@/work/the-psycho.cs.md); [sig](@/work/sig.cs.md); [korczis.gitlab.io](@/work/korczis-gitlab-io.cs.md).
 

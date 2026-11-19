@@ -17,7 +17,7 @@ og_description = "babel-plugin-transform-graphql: Libraries in JavaScript, 2016,
 og_image = "og/work-babel-plugin-transform-graphql.png"
 schema = "project"
 keywords = ["babel-plugin-transform-graphql", "Libraries", "JavaScript", "2016", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["javascript", "open-source", "repository", "commit"]
+terms = ["javascript", "babel", "graphql", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

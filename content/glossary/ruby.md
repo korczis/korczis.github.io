@@ -14,10 +14,10 @@ seo_title = "Ruby (programming language)"
 term = "ruby"
 kind = "language"
 definition = "A dynamic, expressive language designed for programmer happiness; many of the older tools here are Ruby."
-aliases = []
+aliases = ["Bundler", "RubyGems"]
 reference = { title = "ruby-lang.org", url = "https://www.ruby-lang.org/en/about/" }
-pages = ["about.md", "projects/data.md", "projects/learning.md", "projects/security.md", "projects/systems.md", "projects/tools.md", "skills/media-forensics.md", "work/algorithms-ruby.md", "work/apollo-crawler.md", "work/apollon.md", "work/ares.md", "work/cluster.md", "work/codecademy.md", "work/csv2psql.md", "work/docker-gooddata-ruby.md", "work/esri.md", "work/gdc-dumpator.md", "work/gooddata-connectors-metadata.md", "work/gooddata-lcm-tool.md", "work/gooddata-rails-app.md", "work/gooddata-ruby-examples.md", "work/grache-test.md", "work/grache.md", "work/jetel.md", "work/json2csv.md", "work/sandbox.md", "work/skull-ruby.md", "work/skull.md", "work/zeman-ucet.md", "work/zlown.md"]
-related = ["repository", "open-source", "commit", "shell", "gis", "javascript", "rust", "elixir"]
+pages = ["about.md", "projects/data.md", "projects/learning.md", "projects/security.md", "projects/systems.md", "projects/tools.md", "work/algorithms-ruby.md", "work/apollo-crawler.md", "work/apollon.md", "work/ares.md", "work/cluster.md", "work/codecademy.md", "work/csv2psql.md", "work/docker-dstk.md", "work/docker-gooddata-ruby.md", "work/esri.md", "work/gdc-dumpator.md", "work/gooddata-connectors-metadata.md", "work/gooddata-lcm-tool.md", "work/gooddata-rails-app.md", "work/gooddata-ruby-examples.md", "work/grache-test.md", "work/grache.md", "work/jetel.md", "work/json2csv.md", "work/kpmap-ruby.md", "work/sandbox.md", "work/skull-ruby.md", "work/skull.md", "work/skype-adapter-client.md", "work/zeman-ucet.md", "work/zlown.md"]
+related = ["repository", "open-source", "commit", "shell", "gis", "postgresql", "javascript", "travis-ci"]
 og_title = "Ruby: glossary"
 og_image = "og/glossary-ruby.png"
 keywords = ["Ruby", "Programming language", "Glossary", "Tomas Korcak"]
@@ -40,9 +40,9 @@ span = 3
 height = "md"
 tone = "night"
 +++
-I have written Ruby in 23 public repositories, from 2012 to 2017; in 20 of them it is the main language.
+I have written Ruby in 26 public repositories, from 2012 to 2017; in 20 of them it is the main language.
 
-What it was for: [Data and GIS](@/projects/data.md) (8), [Tools](@/projects/tools.md) (7), [Learning and experiments](@/projects/learning.md) (4) and [Systems and infrastructure](@/projects/systems.md) (2).
+What it was for: [Data and GIS](@/projects/data.md) (9), [Tools](@/projects/tools.md) (7), [Learning and experiments](@/projects/learning.md) (4) and [Systems and infrastructure](@/projects/systems.md) (3).
 
 Most recently: [gdc-dumpator](@/work/gdc-dumpator.md); [zeman-ucet](@/work/zeman-ucet.md): Zpravy pro prijemce ze Zemanova transparentniho uctu na predvolebni kampan; [cluster](@/work/cluster.md): Run your own CoreOS/Kubernetes cluster.
 

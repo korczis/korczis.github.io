@@ -17,7 +17,7 @@ og_description = "talkie: Media and art, 2015, archive. Source on GitHub and Git
 og_image = "og/work-talkie.png"
 schema = "project"
 keywords = ["talkie", "Media and art", "2015", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["data-visualisation", "repository", "commit", "open-source"]
+terms = ["nodejs", "data-visualisation", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

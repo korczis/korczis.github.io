@@ -17,7 +17,7 @@ og_description = "sandbox: Learning and experiments in Ruby, 2012, archive. Sour
 og_image = "og/work-sandbox.png"
 schema = "project"
 keywords = ["sandbox", "Learning and experiments", "Ruby", "2012", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["ruby", "repository", "commit", "open-source"]
+terms = ["ruby", "postgresql", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

@@ -3,7 +3,7 @@
 title = "Policy as code"
 description = "Rules kept as code beside what they govern, checked automatically on every change instead of read and remembered."
 template = "term.html"
-weight = 101
+weight = 136
 
 [taxonomies]
 tags = ["Glossary", "Concept"]
@@ -17,7 +17,7 @@ definition = "Rules kept as code beside what they govern, checked automatically 
 aliases = []
 reference = { title = "Open Policy Agent: policy as code", url = "https://www.openpolicyagent.org/docs/latest/" }
 pages = ["services/_index.md", "services/ai-engineering-governance.md", "skills/_index.md", "skills/policy-as-code.md"]
-related = ["alpine-js", "html", "javascript", "majordomus", "python", "shell", "ai-agent", "audit-trail"]
+related = ["flowbite-pro", "html", "javascript", "playwright", "python", "shell", "tailwind-css", "ai-agent"]
 og_title = "Policy as code: glossary"
 og_image = "og/glossary-policy-as-code.png"
 keywords = ["Policy as code", "Concept", "Glossary", "Tomas Korcak"]

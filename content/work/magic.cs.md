@@ -17,7 +17,7 @@ og_description = "magic: Bezpečnost a OSINT, Rust, JavaScript a Elixir, 2017, a
 og_image = "og/cs-work-magic.png"
 schema = "project"
 keywords = ["magic", "Bezpečnost a OSINT", "Rust", "JavaScript", "Elixir", "elixir-phoenix", "hackrf", "rtl", "sdr", "2017", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["rust", "javascript", "elixir", "elm", "c", "java", "osint", "due-diligence", "mergers-and-acquisitions", "virtual-data-room", "risk-assessment", "market-intelligence", "decision-support-system", "insolvency", "record-linkage", "knowledge-graph", "data-integration", "audit-trail", "information-extraction", "orchestration", "repository", "commit", "open-source"]
+terms = ["rust", "javascript", "elixir", "elm", "c", "java", "rustler", "phoenix", "travis-ci", "osint", "due-diligence", "mergers-and-acquisitions", "virtual-data-room", "risk-assessment", "market-intelligence", "decision-support-system", "insolvency", "record-linkage", "knowledge-graph", "data-integration", "audit-trail", "information-extraction", "orchestration", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

@@ -17,7 +17,7 @@ og_description = "sli2dli: Tools in Rust and Makefile, 2017, archive. Source on 
 og_image = "og/work-sli2dli.png"
 schema = "project"
 keywords = ["sli2dli", "Tools", "Rust", "Makefile", "2017", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["rust", "makefile", "open-source", "repository", "commit"]
+terms = ["rust", "makefile", "serde", "csv", "clap", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

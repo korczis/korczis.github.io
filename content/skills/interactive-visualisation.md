@@ -13,7 +13,7 @@ skill = "interactive-visualisation"
 og_title = "Interactive visualisation: skills"
 og_image = "og/skill-interactive-visualisation.png"
 schema = "skill"
-terms = ["skill", "data-visualisation", "html", "javascript", "elixir", "python", "shell", "alpine-js", "apache-echarts", "css", "flowbite-pro", "majordomus"]
+terms = ["skill", "data-visualisation", "html", "javascript", "flowbite-pro", "github-pages", "tailwind-css", "alpine-js", "elixir", "python", "shell", "typescript"]
 keywords = ["Interactive visualisation", "Interactive data products and simulators", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -31,7 +31,7 @@ The concept behind it: [Data visualisation](@/glossary/data-visualisation.md).
 
 Services that draw on it: [Interactive data products and simulators](@/services/interactive-data-products.md).
 
-Practised with: [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md), [Elixir](@/glossary/elixir.md), [Python](@/glossary/python.md), [Shell](@/glossary/shell.md), [Alpine.js](@/glossary/alpine-js.md), [Apache ECharts](@/glossary/apache-echarts.md) and [CSS](@/glossary/css.md).
+Practised with: [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md), [Flowbite Pro](@/glossary/flowbite-pro.md), [GitHub Pages](@/glossary/github-pages.md), [Tailwind CSS](@/glossary/tailwind-css.md), [Alpine.js](@/glossary/alpine-js.md), [Elixir](@/glossary/elixir.md) and [Python](@/glossary/python.md).
 
 Public work whose own words show it: [algoglyph](https://github.com/korczis/algoglyph), [kompendium-epistemicke-anihilace](https://github.com/korczis/kompendium-epistemicke-anihilace), [sonic-playground](https://github.com/korczis/sonic-playground) and [gooddata-graphql](https://github.com/korczis/gooddata-graphql).
 

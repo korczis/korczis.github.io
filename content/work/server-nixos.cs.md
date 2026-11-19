@@ -17,7 +17,7 @@ og_description = "server-nixos: Systémy a infrastruktura, Shell, 2019, archiv. 
 og_image = "og/cs-work-server-nixos.png"
 schema = "project"
 keywords = ["server-nixos", "Systémy a infrastruktura", "Shell", "2019", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["shell", "repository", "commit", "open-source"]
+terms = ["shell", "nix", "ansible", "python", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

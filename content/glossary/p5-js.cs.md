@@ -3,7 +3,7 @@
 title = "p5.js"
 description = "Knihovna pro kreativní programování odvozená z Processingu, pro kreslení a simulace v prohlížeči."
 template = "term.html"
-weight = 58
+weight = 86
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Knihovna pro kreativní programování odvozená z Processingu, pro kreslení a simulace v prohlížeči."
 aliases = ["p5js"]
 reference = { title = "p5js.org", url = "https://p5js.org/" }
-pages = ["projects/science.cs.md", "services/interactive-data-products.cs.md", "stack.cs.md", "work/algoglyph.cs.md"]
-related = ["alpine-js", "apache-echarts", "flowbite-pro", "data-visualisation", "javascript", "d3", "elixir", "github-pages"]
+pages = ["projects/science.cs.md", "services/interactive-data-products.cs.md", "stack.cs.md", "work/algoglyph.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/korczis-github-io.cs.md", "work/majordomus-reel.cs.md", "work/oscilla.cs.md"]
+related = ["flowbite-pro", "apache-echarts", "javascript", "tailwind-css", "alpine-js", "github-pages", "html", "repository"]
 og_title = "p5.js: slovník"
 og_image = "og/cs-glossary-p5-js.png"
 keywords = ["p5.js", "Technologie", "Slovník", "Tomáš Korčák"]
@@ -40,12 +40,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
-p5.js je součástí 2 mých veřejných repozitářů, od roku 2024 do 2026.
+p5.js je součástí 5 mých veřejných repozitářů, od roku 2024 do 2026.
 
-K čemu to sloužilo: [Věda a vizualizace](@/projects/science.cs.md) (1) a [Web](@/projects/web.cs.md) (1).
+K čemu to sloužilo: [Věda a vizualizace](@/projects/science.cs.md) (2), [Znalosti](@/projects/knowledge.cs.md) (1), [Média a umění](@/projects/media.cs.md) (1) a [Web](@/projects/web.cs.md) (1).
 
-Naposledy: [korczis.github.io](@/work/korczis-github-io.cs.md); [algoglyph](@/work/algoglyph.cs.md): Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.
+Naposledy: [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat; [korczis.github.io](@/work/korczis-github-io.cs.md); [Majordomus reel](@/work/majordomus-reel.cs.md): Hlas, snímky, hudba i zvuk, vše generované a verzované jako software.
 
-1 z těchto projektů běží jako živý web.
+4 z těchto projektů běží jako živé weby.
 
 Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak p5.js používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje p5.js s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

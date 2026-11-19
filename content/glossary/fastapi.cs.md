@@ -3,7 +3,7 @@
 title = "FastAPI"
 description = "Webový framework v Pythonu pro HTTP API, typovaný modely Pydantic, které validují požadavky a generují popis OpenAPI."
 template = "term.html"
-weight = 47
+weight = 62
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -16,11 +16,20 @@ kind = "technology"
 definition = "Webový framework v Pythonu pro HTTP API, typovaný modely Pydantic, které validují požadavky a generují popis OpenAPI."
 aliases = []
 reference = { title = "FastAPI documentation", url = "https://fastapi.tiangolo.com/" }
-pages = ["services/_index.cs.md", "services/attack-surface.cs.md", "services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "services/decision-support-ai.cs.md", "services/digital-investigation.cs.md", "services/due-diligence.cs.md", "services/m-and-a.cs.md", "services/reputation-intelligence.cs.md", "skills/_index.cs.md", "skills/ai-transformation.cs.md", "skills/audit-trail.cs.md", "skills/data-integration.cs.md", "skills/data-room.cs.md", "skills/decision-support.cs.md", "skills/document-extraction.cs.md", "skills/due-diligence.cs.md", "skills/entity-resolution.cs.md", "skills/insolvency-monitoring.cs.md", "skills/knowledge-graph.cs.md", "skills/m-and-a-screening.cs.md", "skills/market-intelligence.cs.md", "skills/orchestration.cs.md", "skills/risk-scoring.cs.md", "_index.cs.md"]
-related = ["alpine-js", "dockerfile", "html", "javascript", "claude-api", "flowbite-pro", "github-actions", "skill"]
+pages = ["services/_index.cs.md", "services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "services/due-diligence.cs.md", "services/m-and-a.cs.md", "services/reputation-intelligence.cs.md", "skills/_index.cs.md", "skills/ai-transformation.cs.md", "skills/data-room.cs.md", "skills/decision-support.cs.md", "skills/document-extraction.cs.md", "skills/entity-resolution.cs.md", "skills/insolvency-monitoring.cs.md", "skills/knowledge-graph.cs.md", "skills/m-and-a-screening.cs.md", "skills/market-intelligence.cs.md", "skills/orchestration.cs.md", "skills/risk-scoring.cs.md", "work/openttd-prismatic-bridge.cs.md", "_index.cs.md"]
+related = ["html", "javascript", "dockerfile", "flowbite-pro", "alpine-js", "claude-api", "github-actions", "skill"]
 og_title = "FastAPI: slovník"
 og_image = "og/cs-glossary-fastapi.png"
 keywords = ["FastAPI", "Technologie", "Slovník", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,6 +40,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
-Žádný můj veřejný repozitář FastAPI podle měřených dat nepoužívá; dokladem je klientská práce popsaná níže.
+FastAPI je součástí 1 mého veřejného repozitáře, od roku 2026 do 2026.
+
+K čemu to sloužilo: [Média a umění](@/projects/media.cs.md) (1).
+
+Naposledy: [openttd-prismatic-bridge](@/work/openttd-prismatic-bridge.cs.md).
 
 Používal jsem ho také v klientské práci pod dohodami o mlčenlivosti. Role: Architekt, Vedoucí inženýr, Inženýr AI a Datový inženýr. Co se řešilo: Agenti s LLM, Podpora rozhodování, Transformace s AI a Auditní stopa. Případy užití níže popisují princip a záměr této práce; žádný klient, osoba, datum ani číslo nejsou uvedeny.
+
+Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak FastAPI používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje FastAPI s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

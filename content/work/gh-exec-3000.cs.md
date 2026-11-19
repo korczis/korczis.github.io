@@ -17,7 +17,7 @@ og_description = "gh-exec-3000: Systémy a infrastruktura, Dockerfile a Shell, 2
 og_image = "og/cs-work-gh-exec-3000.png"
 schema = "project"
 keywords = ["gh-exec-3000", "Systémy a infrastruktura", "Dockerfile", "Shell", "2022", "GitHub", "Tomáš Korčák", "korczis"]
-terms = ["dockerfile", "shell", "repository", "commit", "open-source"]
+terms = ["dockerfile", "shell", "github-actions", "elixir", "rust", "nodejs", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

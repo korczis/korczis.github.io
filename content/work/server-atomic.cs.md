@@ -17,7 +17,7 @@ og_description = "server-atomic: Systémy a infrastruktura, Shell, 2019, archiv.
 og_image = "og/cs-work-server-atomic.png"
 schema = "project"
 keywords = ["server-atomic", "Systémy a infrastruktura", "Shell", "2019", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["shell", "repository", "commit", "open-source"]
+terms = ["shell", "ansible", "dockerfile", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

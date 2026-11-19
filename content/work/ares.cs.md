@@ -17,7 +17,7 @@ og_description = "ares: Nástroje, Ruby, 2012, archiv. Zdrojový kód: GitHub a 
 og_image = "og/cs-work-ares.png"
 schema = "project"
 keywords = ["ares", "Nástroje", "Ruby", "2012", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["ruby", "open-source", "repository", "commit"]
+terms = ["ruby", "rabbitmq", "mongodb", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

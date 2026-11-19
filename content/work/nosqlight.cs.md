@@ -17,7 +17,7 @@ og_description = "nosqlight: Data a GIS, 2014, archiv. Zdrojový kód: GitHub a 
 og_image = "og/cs-work-nosqlight.png"
 schema = "project"
 keywords = ["nosqlight", "Data a GIS", "2014", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["gis", "repository", "commit", "open-source"]
+terms = ["c", "cpp", "json", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

@@ -3,7 +3,7 @@
 title = "Chart.js"
 description = "Lehká knihovna pro běžné grafy (sloupce, čáry, prstence) na plátně HTML."
 template = "term.html"
-weight = 43
+weight = 48
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

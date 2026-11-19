@@ -3,7 +3,7 @@
 title = "Insolvence"
 description = "Stav dlužníka, který nedokáže splácet své dluhy; insolvenční řízení a přihlášky věřitelů v nich se zapisují do veřejných rejstříků."
 template = "term.html"
-weight = 89
+weight = 124
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

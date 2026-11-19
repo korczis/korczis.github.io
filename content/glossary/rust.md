@@ -14,10 +14,10 @@ seo_title = "Rust (programming language)"
 term = "rust"
 kind = "language"
 definition = "A systems language that guarantees memory safety without a garbage collector; Majordomus is written in it."
-aliases = []
+aliases = ["Cargo"]
 reference = { title = "The Rust Programming Language", url = "https://doc.rust-lang.org/book/" }
-pages = ["_index.md", "about.md", "hire.md", "projects/ai.md", "projects/data.md", "projects/learning.md", "projects/libraries.md", "projects/science.md", "projects/security.md", "projects/tools.md", "services/ai-engineering-governance.md", "services/digital-forensics.md", "skills/chain-of-custody.md", "skills/change-monitoring.md", "skills/media-forensics.md", "skills/policy-as-code.md", "work/algoglyph.md", "work/astudo.md", "work/bcnode-old.md", "work/catharsis-as-a-service.md", "work/charon.md", "work/comtesse.md", "work/ctu-cz.md", "work/easy-plugin-plugins.md", "work/gauc-ex.md", "work/gooddata-fs.md", "work/graph-flow.md", "work/happ.md", "work/kompendium-epistemicke-anihilace.md", "work/magic.md", "work/mapoffacts.md", "work/maze-rs.md", "work/meili-rsex.md", "work/prismatic-majordomus.md", "work/rustas.md", "work/rustler-mix.md", "work/rustler-test.md", "work/skull-rust.md", "work/sli2dli.md", "work/streamflow.md", "work/the-scratch.md", "work/wims.md", "work/zaas.md"]
-related = ["repository", "open-source", "commit", "elixir", "javascript", "html", "shell", "makefile"]
+pages = ["_index.md", "about.md", "hire.md", "projects/ai.md", "projects/data.md", "projects/learning.md", "projects/libraries.md", "projects/science.md", "projects/security.md", "projects/tools.md", "services/ai-engineering-governance.md", "skills/chain-of-custody.md", "work/algoglyph.md", "work/astudo.md", "work/bcnode-old.md", "work/catharsis-as-a-service.md", "work/charon.md", "work/comtesse.md", "work/ctu-cz.md", "work/dj-schnapps.md", "work/easy-plugin-plugins.md", "work/gauc-ex.md", "work/gh-exec-3000.md", "work/gooddata-fs.md", "work/graph-flow.md", "work/happ.md", "work/in-rust-we-trust.md", "work/kompendium-epistemicke-anihilace.md", "work/korczis-gitlab-io.md", "work/magic.md", "work/mapoffacts.md", "work/maze-rs.md", "work/meili-rsex.md", "work/mindscape.md", "work/prismatic-majordomus.md", "work/rocksdb-indexer.md", "work/rustas.md", "work/rustler-mix.md", "work/rustler-test.md", "work/skull-rust.md", "work/sli2dli.md", "work/streamflow.md", "work/the-scratch.md", "work/tosh.md", "work/wims.md", "work/zaas.md"]
+related = ["repository", "open-source", "commit", "elixir", "javascript", "html", "shell", "phoenix"]
 og_title = "Rust: glossary"
 og_image = "og/glossary-rust.png"
 keywords = ["Rust", "Programming language", "Glossary", "Tomas Korcak"]
@@ -40,9 +40,9 @@ span = 3
 height = "md"
 tone = "night"
 +++
-I have written Rust in 22 public repositories, from 2016 to 2026; in 12 of them it is the main language.
+I have written Rust in 34 public repositories, from 2016 to 2026; in 12 of them it is the main language.
 
-What it was for: [Tools](@/projects/tools.md) (8), [Science and visualisation](@/projects/science.md) (4), [Data and GIS](@/projects/data.md) (2) and [Learning and experiments](@/projects/learning.md) (2).
+What it was for: [Tools](@/projects/tools.md) (12), [Data and GIS](@/projects/data.md) (4), [Science and visualisation](@/projects/science.md) (4) and [Learning and experiments](@/projects/learning.md) (3).
 
 Most recently: [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore; [Majordomus](@/work/prismatic-majordomus.md): One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model; [algoglyph](@/work/algoglyph.md): Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core.
 

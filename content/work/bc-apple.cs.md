@@ -17,7 +17,7 @@ og_description = "bc-apple: Nástroje, Swift, 2018, archiv. Zdrojový kód: GitH
 og_image = "og/cs-work-bc-apple.png"
 schema = "project"
 keywords = ["bc-apple", "Nástroje", "Swift", "2018", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["swift", "open-source", "repository", "commit"]
+terms = ["swift", "socket-io", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

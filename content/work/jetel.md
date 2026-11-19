@@ -17,7 +17,7 @@ og_description = "jetel: Data and GIS in Ruby, HTML and Shell, 2015–2016, arch
 og_image = "og/work-jetel.png"
 schema = "project"
 keywords = ["jetel", "Data and GIS", "Ruby", "HTML", "Shell", "2015–2016", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["ruby", "html", "shell", "gis", "repository", "commit", "open-source"]
+terms = ["ruby", "html", "shell", "postgresql", "elasticsearch", "couchbase", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

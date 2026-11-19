@@ -17,7 +17,7 @@ og_description = "wims: Nástroje, Rust, 2017, archiv. Zdrojový kód: GitHub a 
 og_image = "og/cs-work-wims.png"
 schema = "project"
 keywords = ["wims", "Nástroje", "Rust", "2017", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["rust", "open-source", "repository", "commit"]
+terms = ["rust", "clap", "serde", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

@@ -13,7 +13,7 @@ skill = "infrastructure-osint"
 og_title = "Infrastrukturní OSINT: dovednosti"
 og_image = "og/cs-skill-infrastructure-osint.png"
 schema = "skill"
-terms = ["skill", "attack-surface", "c"]
+terms = ["skill", "attack-surface", "c", "cmake", "travis-ci"]
 keywords = ["Infrastrukturní OSINT", "Digitální vyšetřování a OSINT dossier", "Digitální forenzní analýza a zajištění důkazů", "Hodnocení vnější útočné plochy a kybernetické expozice", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -31,7 +31,7 @@ Pojem, na kterém stojí: [Útočná plocha](@/glossary/attack-surface.cs.md).
 
 Služby, které z ní čerpají: [Digitální vyšetřování a OSINT dossier](@/services/digital-investigation.cs.md), [Digitální forenzní analýza a zajištění důkazů](@/services/digital-forensics.cs.md) a [Hodnocení vnější útočné plochy a kybernetické expozice](@/services/attack-surface.cs.md).
 
-Praktikovaná s: [C](@/glossary/c.cs.md).
+Praktikovaná s: [C](@/glossary/c.cs.md), [CMake](@/glossary/cmake.cs.md) a [Travis CI](@/glossary/travis-ci.cs.md).
 
 Veřejná práce, jejíž vlastní slova ji dokládají: [skull-c](https://github.com/korczis/skull-c).
 

@@ -13,7 +13,7 @@ skill = "decision-support"
 og_title = "Decision support: skills"
 og_image = "og/skill-decision-support.png"
 schema = "skill"
-terms = ["skill", "decision-support-system", "javascript", "html", "python", "elixir", "shell", "alpine-js", "claude-api", "css", "dockerfile", "fastapi"]
+terms = ["skill", "decision-support-system", "javascript", "html", "flowbite-pro", "python", "tailwind-css", "dockerfile", "elixir", "fastapi", "phoenix", "postgresql"]
 keywords = ["Decision support", "Corporate and counterparty due diligence", "M&A pre-deal screening and analysis", "Reputation intelligence and adverse-media monitoring", "Decision support and AI agents for analysts", "Interactive data products and simulators", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -31,7 +31,7 @@ The concept behind it: [Decision support system](@/glossary/decision-support-sys
 
 Services that draw on it: [Corporate and counterparty due diligence](@/services/due-diligence.md), [M&A pre-deal screening and analysis](@/services/m-and-a.md), [Reputation intelligence and adverse-media monitoring](@/services/reputation-intelligence.md), [Decision support and AI agents for analysts](@/services/decision-support-ai.md) and [Interactive data products and simulators](@/services/interactive-data-products.md).
 
-Practised with: [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md), [Python](@/glossary/python.md), [Elixir](@/glossary/elixir.md), [Shell](@/glossary/shell.md), [Alpine.js](@/glossary/alpine-js.md), [Claude API](@/glossary/claude-api.md) and [CSS](@/glossary/css.md).
+Practised with: [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md), [Flowbite Pro](@/glossary/flowbite-pro.md), [Python](@/glossary/python.md), [Tailwind CSS](@/glossary/tailwind-css.md), [Dockerfile](@/glossary/dockerfile.md), [Elixir](@/glossary/elixir.md) and [FastAPI](@/glossary/fastapi.md).
 
 Public work whose own words show it: [openttd-prismatic-bridge](https://gitlab.com/korczis/openttd-prismatic-bridge), [crisis-map](https://github.com/korczis/crisis-map) and [gooddata-graphql](https://github.com/korczis/gooddata-graphql).
 

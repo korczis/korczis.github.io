@@ -3,7 +3,7 @@
 title = "Web Audio"
 description = "The browser API for generating, processing and analysing sound in real time."
 template = "term.html"
-weight = 67
+weight = 101
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "The browser API for generating, processing and analysing sound in 
 aliases = []
 reference = { title = "MDN Web Docs: Web Audio API", url = "https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API" }
 pages = ["projects/science.md", "services/interactive-data-products.md", "work/oscilla.md"]
-related = ["data-visualisation", "javascript", "alpine-js", "apache-echarts", "css", "elixir", "flowbite-pro", "html"]
+related = ["data-visualisation", "flowbite-pro", "javascript", "p5-js", "alpine-js", "apache-echarts", "elixir", "html"]
 og_title = "Web Audio: glossary"
 og_image = "og/glossary-web-audio.png"
 keywords = ["Web Audio", "Technology", "Glossary", "Tomas Korcak"]

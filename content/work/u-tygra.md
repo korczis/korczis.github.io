@@ -17,7 +17,7 @@ og_description = "u-tygra: Tools in JavaScript, HTML and CSS, 2024–2025, activ
 og_image = "og/work-u-tygra.png"
 schema = "project"
 keywords = ["u-tygra", "Tools", "JavaScript", "HTML", "CSS", "2024–2025", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["javascript", "html", "css", "open-source", "github-pages", "repository", "commit"]
+terms = ["javascript", "html", "css", "zola", "tailwind-css", "flowbite-pro", "alpine-js", "github-pages", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

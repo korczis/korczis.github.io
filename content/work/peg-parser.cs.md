@@ -17,7 +17,7 @@ og_description = "peg-parser: Knihovny, JavaScript a HTML, 2016, archiv. Zdrojov
 og_image = "og/cs-work-peg-parser.png"
 schema = "project"
 keywords = ["peg-parser", "Knihovny", "JavaScript", "HTML", "2016", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["javascript", "html", "open-source", "repository", "commit"]
+terms = ["javascript", "html", "babel", "webpack", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

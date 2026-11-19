@@ -3,7 +3,7 @@
 title = "PostgreSQL"
 description = "Open-source relační databáze známá svou korektností a rozšířeními."
 template = "term.html"
-weight = 62
+weight = 90
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Open-source relační databáze známá svou korektností a rozšířeními."
 aliases = ["postgres"]
 reference = { title = "postgresql.org", url = "https://www.postgresql.org/about/" }
-pages = ["hire.cs.md", "projects/tools.cs.md", "services/attack-surface.cs.md", "services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "services/digital-forensics.cs.md", "services/digital-investigation.cs.md", "services/due-diligence.cs.md", "services/m-and-a.cs.md", "work/csv2psql.cs.md", "_index.cs.md"]
-related = ["elixir", "html", "javascript", "alpine-js", "claude-api", "dockerfile", "service", "fastapi"]
+pages = ["hire.cs.md", "projects/tools.cs.md", "services/attack-surface.cs.md", "services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "services/decision-support-ai.cs.md", "services/digital-forensics.cs.md", "services/digital-investigation.cs.md", "services/due-diligence.cs.md", "services/interactive-data-products.cs.md", "services/m-and-a.cs.md", "services/reputation-intelligence.cs.md", "skills/audit-trail.cs.md", "skills/data-integration.cs.md", "skills/decision-support.cs.md", "skills/document-extraction.cs.md", "skills/geospatial-analysis.cs.md", "skills/llm-agents.cs.md", "skills/media-forensics.cs.md", "skills/osint-investigation.cs.md", "work/cluster-kubernetes.cs.md", "work/crisis-map.cs.md", "work/csv2psql.cs.md", "work/data-atlas.cs.md", "work/docker-dstk.cs.md", "work/edna.cs.md", "work/esri.cs.md", "work/gooddata-lcm-tool.cs.md", "work/happ.cs.md", "work/jetel.cs.md", "work/kanec.cs.md", "work/llm.cs.md", "work/mapoffacts.cs.md", "work/pdf-renderer.cs.md", "work/prismatic.cs.md", "work/sandbox.cs.md", "work/server-ansible.cs.md", "work/sig.cs.md", "work/test-elixir.cs.md", "work/the-psycho.cs.md", "work/tosh.cs.md", "work/wangsta.cs.md", "work/zaas.cs.md", "_index.cs.md"]
+related = ["elixir", "javascript", "html", "open-source", "dockerfile", "repository", "commit", "shell"]
 og_title = "PostgreSQL: slovník"
 og_image = "og/cs-glossary-postgresql.png"
 keywords = ["PostgreSQL", "Technologie", "Slovník", "Tomáš Korčák"]
@@ -40,13 +40,13 @@ span = 3
 height = "md"
 tone = "night"
 +++
-PostgreSQL je součástí 1 mého veřejného repozitáře, od roku 2014 do 2015.
+PostgreSQL je součástí 23 mých veřejných repozitářů, od roku 2012 do 2026.
 
-K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (1).
+K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (8), [Data a GIS](@/projects/data.cs.md) (5), [Inženýrství AI](@/projects/ai.cs.md) (3) a [Učení a experimenty](@/projects/learning.cs.md) (3).
 
-Naposledy: [csv2psql](@/work/csv2psql.cs.md): Převádí CSV na příkazy insert nebo update pro PostgreSQL.
+Naposledy: [Crisis map](@/work/crisis-map.cs.md): Hlášení geokódovaná přes lokální Nominatim, uložená jako PostGIS geografie a servírovaná z jednoho registru schopností: LiveView, REST, OpenAPI, MCP a CLI; [Data Atlas](@/work/data-atlas.cs.md): Datové sady, katastr, doprava, dálkový průzkum a prostorová analytika na jedné prohledávatelné stránce; [the-psycho](@/work/the-psycho.cs.md).
 
-1 z těchto projektů běží jako živý web.
+3 z těchto projektů běží jako živé weby.
 
 Používal jsem ho také v klientské práci pod dohodami o mlčenlivosti. Role: Architekt, Vedoucí inženýr, Inženýr AI a Datový inženýr. Co se řešilo: Agenti s LLM, Podpora rozhodování, Transformace s AI a Auditní stopa. Případy užití níže popisují princip a záměr této práce; žádný klient, osoba, datum ani číslo nejsou uvedeny.
 

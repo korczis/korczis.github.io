@@ -13,7 +13,7 @@ skill = "due-diligence"
 og_title = "Due diligence: skills"
 og_image = "og/skill-due-diligence.png"
 schema = "skill"
-terms = ["skill", "due-diligence", "html", "javascript", "python", "shell", "alpine-js", "claude-api", "css", "dockerfile", "fastapi", "flowbite-pro"]
+terms = ["skill", "due-diligence", "html", "javascript", "playwright", "python", "shell", "tailwind-css", "alpine-js", "claude-api", "css", "dockerfile"]
 keywords = ["Due diligence", "Corporate and counterparty due diligence", "M&A pre-deal screening and analysis", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -31,7 +31,7 @@ The concept behind it: [Due diligence](@/glossary/due-diligence.md).
 
 Services that draw on it: [Corporate and counterparty due diligence](@/services/due-diligence.md) and [M&A pre-deal screening and analysis](@/services/m-and-a.md).
 
-Practised with: [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md), [Python](@/glossary/python.md), [Shell](@/glossary/shell.md), [Alpine.js](@/glossary/alpine-js.md), [Claude API](@/glossary/claude-api.md), [CSS](@/glossary/css.md) and [Dockerfile](@/glossary/dockerfile.md).
+Practised with: [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md), [Playwright](@/glossary/playwright.md), [Python](@/glossary/python.md), [Shell](@/glossary/shell.md), [Tailwind CSS](@/glossary/tailwind-css.md), [Alpine.js](@/glossary/alpine-js.md) and [Claude API](@/glossary/claude-api.md).
 
 Public work whose own words show it: [vomaste.cz](https://github.com/korczis/vomaste.cz).
 

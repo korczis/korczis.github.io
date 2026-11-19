@@ -16,8 +16,8 @@ kind = "language"
 definition = "A build-system generator for C and C++: one description of a project produces Makefiles, Ninja files or IDE projects on any platform."
 aliases = []
 reference = { title = "CMake documentation", url = "https://cmake.org/cmake/help/latest/" }
-pages = ["projects/learning.md", "work/happ.md", "work/skull-cpp.md"]
-related = ["cpp", "repository", "commit", "makefile", "open-source", "rust", "shell", "c"]
+pages = ["projects/learning.md", "skills/infrastructure-osint.md", "work/algorithms.md", "work/happ.md", "work/peacemaker.md", "work/skull-c.md", "work/skull-cpp.md"]
+related = ["c", "repository", "commit", "cpp", "open-source", "travis-ci", "elixir", "haskell"]
 og_title = "CMake: glossary"
 og_image = "og/glossary-cmake.png"
 keywords = ["CMake", "Programming language", "Glossary", "Tomas Korcak"]
@@ -40,10 +40,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
-I have written CMake in 1 public repository, from 2014 to 2015; in 1 of them it is the main language.
+I have written CMake in 5 public repositories, from 2014 to 2021; in 1 of them it is the main language.
 
-What it was for: [Learning and experiments](@/projects/learning.md) (1).
+What it was for: [Learning and experiments](@/projects/learning.md) (3), [Science and visualisation](@/projects/science.md) (1) and [Security and OSINT](@/projects/security.md) (1).
 
-Most recently: [skull-cpp](@/work/skull-cpp.md): C++ Skull.
+Most recently: [happ](@/work/happ.md): Playground App created during my Hospital Stay; [skull-cpp](@/work/skull-cpp.md): C++ Skull; [algorithms](@/work/algorithms.md): Algorithms implementation.
 
 How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses CMake: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links CMake to the repositories and to the other languages and technologies they use together.

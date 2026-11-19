@@ -17,7 +17,7 @@ og_description = "caregiver: Nástroje, 2022, archiv. Zdrojový kód: GitHub."
 og_image = "og/cs-work-caregiver.png"
 schema = "project"
 keywords = ["caregiver", "Nástroje", "2022", "GitHub", "Tomáš Korčák", "korczis"]
-terms = ["open-source", "repository", "commit"]
+terms = ["elixir", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

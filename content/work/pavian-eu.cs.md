@@ -17,7 +17,7 @@ og_description = "pavian.eu: Web, ApacheConf, HTML a CSS, 2015, archiv. Zdrojov�
 og_image = "og/cs-work-pavian-eu.png"
 schema = "project"
 keywords = ["pavian.eu", "Web", "ApacheConf", "HTML", "CSS", "2015", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["apacheconf", "html", "css", "javascript", "static-site-generator", "repository", "commit", "open-source"]
+terms = ["apacheconf", "html", "css", "javascript", "bootstrap", "jquery", "bower", "static-site-generator", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

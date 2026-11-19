@@ -17,7 +17,7 @@ og_description = "zeman-ucet: Tools in Ruby, R and Shell, 2017, archive. Source 
 og_image = "og/work-zeman-ucet.png"
 schema = "project"
 keywords = ["zeman-ucet", "Tools", "Ruby", "Shell", "czech-republic", "nokogiri", "prezident", "transparentni-ucet", "zeman", "2017", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["ruby", "r", "shell", "open-source", "repository", "commit"]
+terms = ["ruby", "r", "shell", "csv", "json", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

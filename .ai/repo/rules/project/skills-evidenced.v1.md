@@ -3,7 +3,7 @@ id: project.skills-evidenced
 version: 1
 kind: rule
 title: Every language and technology has its own page with derived evidence; every project page embeds its live README
-description: Each language and technology the measured data names (repositories' languages, curated stacks, the mined engagements' technologies) has a glossary term whose page shows the evidence derived from the data (repositories, how each uses it, what it solves, years, categories, live sites, a reference graph) and the client use cases without names, dates or numbers; each work page renders its repository's README live from the forge instead of copying it.
+description: Each language and technology the measured data names (repositories' languages, curated stacks, the technologies the repository dossiers find, the mined engagements' technologies) has a glossary term whose page shows the evidence derived from the data (repositories, how each uses it, what it solves, years, categories, live sites, a reference graph) and the client use cases without names, dates or numbers; each work page renders its repository's README live from the forge instead of copying it.
 statement: Give every language and technology the data names a term in data/glossary.toml; derive its evidence only through scripts/lib/skills.mjs into data/skills.json and the term page's article; show client work only as sector, role and capability; embed a project's README on its work page live from its forge, sanitised, never copied into this repository; and keep the glossary, derive and audit gates passing.
 status: active
 class: blocking
@@ -27,15 +27,19 @@ this repository is stale the day its project moves.
 
 - **Coverage.** Every name in `data/index.json` languages, in the languages of `data/recent.json`
   at or above `MIN_SHARE`, in a curated stack of `data/projects.toml` and in the technologies of
-  `data/experience.json` resolves to a term of `data/glossary.toml` (by id, name or alias). A new
+  `data/experience.json`, and every technology the repository dossiers (`data/dossiers/*.json`
+  `stack`, inferred from each repository's files) find in at least `MIN_DOSSIER_REPOS` repositories,
+  resolves to a term of `data/glossary.toml` (by id, name or alias). A new
   language in the data is a new term (its definition and reference are the only hand-written
   words), never an exemption.
 - **Evidence is derived.** `scripts/lib/skills.mjs` is the one place that decides which repository
-  uses a term and how (`primary`, a measured `code` share, `stack`, `topic`), the years, the
+  uses a term and how (`primary`, a measured `code` share, `stack`, `topic`, `files` from its
+  dossier), the years, the
   categories, the live sites and the engagements. `scripts/build-glossary.mjs` writes it to
   `data/skills.json` and derives each term page's article from it; `templates/term.html` and the
   reference graph (`term.evidence`, `static/js/viz/graph.js`) read only that file. No count, list or
-  link of evidence is typed by hand.
+  link of evidence is typed by hand. The skillset lists (the sidebar, /about/) read the claimed
+  technologies in the order of `data/skills.json` `technologies` (most repositories first).
 - **Client work as use cases.** An engagement appears on a term page as its sector, its roles and
   the principle and intent of its capabilities (`data/experience-rules.toml`), linked to the
   landing's experience section. Never a client, a person, a date, a period or a number

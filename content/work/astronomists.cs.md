@@ -17,7 +17,7 @@ og_description = "astronomists: Nástroje, Python, HTML a TypeScript, 2026, akti
 og_image = "og/cs-work-astronomists.png"
 schema = "project"
 keywords = ["astronomists", "Nástroje", "Python", "HTML", "TypeScript", "2026", "GitHub", "Tomáš Korčák", "korczis"]
-terms = ["python", "html", "typescript", "shell", "javascript", "css", "open-source", "github-pages", "repository", "commit"]
+terms = ["python", "html", "typescript", "shell", "javascript", "css", "zola", "tailwind-css", "flowbite-pro", "alpine-js", "playwright", "github-pages", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

@@ -123,6 +123,9 @@ cs = "stack"
 [skill_via_topic]
 en = "topic"
 cs = "téma"
+[skill_via_files]
+en = "in its files"
+cs = "v jeho souborech"
 
 [skill_used_for]
 en = "What it was used for"

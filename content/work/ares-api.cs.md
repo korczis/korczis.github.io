@@ -17,7 +17,7 @@ og_description = "ares-api: Nástroje, 2014, archiv. Zdrojový kód: GitHub a Gi
 og_image = "og/cs-work-ares-api.png"
 schema = "project"
 keywords = ["ares-api", "Nástroje", "2014", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["open-source", "repository", "commit"]
+terms = ["java", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

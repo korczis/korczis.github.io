@@ -17,7 +17,7 @@ og_description = "node-proxy-upload: Učení a experimenty, JavaScript, 2016, ar
 og_image = "og/cs-work-node-proxy-upload.png"
 schema = "project"
 keywords = ["node-proxy-upload", "Učení a experimenty", "JavaScript", "2016", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["javascript", "repository", "commit", "open-source"]
+terms = ["javascript", "nodejs", "express", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

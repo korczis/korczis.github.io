@@ -17,7 +17,7 @@ og_description = "ideas: Nástroje, 2016, archiv. Zdrojový kód: GitHub a GitLa
 og_image = "og/cs-work-ideas.png"
 schema = "project"
 keywords = ["ideas", "Nástroje", "2016", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["open-source", "repository", "commit"]
+terms = ["markdown", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

@@ -17,7 +17,7 @@ og_description = "skype-adapter-client: Libraries, 2013, archive. Source on GitH
 og_image = "og/work-skype-adapter-client.png"
 schema = "project"
 keywords = ["skype-adapter-client", "Libraries", "2013", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["open-source", "repository", "commit"]
+terms = ["ruby", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

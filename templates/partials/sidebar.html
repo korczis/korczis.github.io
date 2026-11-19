@@ -54,7 +54,7 @@
           </ul>
         </div>
         {#- Skillset (ADR 0007): languages from every original repository on GitHub and GitLab, the
-            technologies of the curated stacks, and the capabilities mined from the owner's work, each
+            technologies the repositories use, and the capabilities mined from the owner's work, each
             a link to its glossary term when it has one, else to the list that shows its evidence.
             Flowbite Pro sidebar dropdowns as native disclosures; the first stays open. #}
         {%- set sgl = load_data(path="data/glossary.toml") %}
@@ -80,22 +80,20 @@
               {%- elif g[0] == "skills_technologies" %}
               {#- A library the owner does not claim (data/glossary.toml claimed = false, the one list
                   Person.knowsAbout and the landing's #skills use) is never a skill here either. #}
-              {%- for s in six.skills.technologies %}
-              {%- set_global href = config.base_url ~ lp ~ "/projects/?project=" ~ s.evidence[0].repo %}{% set_global sclaimed = true %}
-              {%- for gt in sgl.terms %}{% if gt.term == s.name or s.name in gt.aliases | default(value=[]) %}{% set_global href = config.base_url ~ lp ~ "/glossary/" ~ gt.id ~ "/" %}{% if gt.claimed is defined and not gt.claimed %}{% set_global sclaimed = false %}{% endif %}{% endif %}{% endfor %}
+              {#- Every claimed technology public repositories use, most used first (data/skills.json:
+                  curated stacks, topics and what each repository's dossier finds in its files). #}
+              {%- set ssk = load_data(path="data/skills.json") %}
               {%- set_global sk_seen = "|" %}
-              {%- for s in six.skills.technologies %}{% set_global sk_seen = sk_seen ~ (s.name | lower) ~ "|" %}{% endfor %}
-              {%- if sclaimed %}
-              <li>{{ <chip label={s.name} href={href} count={s.projects ~ ""} size="xs" /> }}</li>
-              {%- endif %}
+              {%- for s in ssk.technologies %}{% set_global sk_seen = sk_seen ~ s.id ~ "|" %}
+              <li>{{ <chip label={s.name} href={config.base_url ~ lp ~ "/glossary/" ~ s.id ~ "/"} count={s.repos ~ ""} size="xs" /> }}</li>
               {%- endfor %}
               {#- The technologies the client work uses (data/experience.json, detected in its sources),
                   each to its glossary term, when the public catalogue does not already list it. #}
               {%- if sxp %}{% for e in sxp.engagements %}{% for tn in e.technologies | default(value=[]) %}
-              {%- if not ("|" ~ (tn | lower) ~ "|") in sk_seen %}{% set_global sk_seen = sk_seen ~ (tn | lower) ~ "|" %}
-              {%- set_global href = "" %}{% set_global sclaimed = true %}
-              {%- for gt in sgl.terms %}{% if gt.term | lower == tn | lower or tn in gt.aliases | default(value=[]) %}{% set_global href = config.base_url ~ lp ~ "/glossary/" ~ gt.id ~ "/" %}{% if gt.claimed is defined and not gt.claimed %}{% set_global sclaimed = false %}{% endif %}{% if gt.kind == "language" %}{% set_global sclaimed = false %}{% endif %}{% endif %}{% endfor %}
-              {%- if href and sclaimed %}<li>{{ <chip label={tn} href={href} size="xs" /> }}</li>{% endif %}
+              {%- set_global sid = "" %}{% set_global sclaimed = true %}
+              {%- for gt in sgl.terms %}{% if gt.term | lower == tn | lower or tn in gt.aliases | default(value=[]) %}{% set_global sid = gt.id %}{% if gt.claimed is defined and not gt.claimed %}{% set_global sclaimed = false %}{% endif %}{% if gt.kind == "language" %}{% set_global sclaimed = false %}{% endif %}{% endif %}{% endfor %}
+              {%- if sid and sclaimed and not ("|" ~ sid ~ "|") in sk_seen %}{% set_global sk_seen = sk_seen ~ sid ~ "|" %}
+              <li>{{ <chip label={tn} href={config.base_url ~ lp ~ "/glossary/" ~ sid ~ "/"} size="xs" /> }}</li>
               {%- endif %}{% endfor %}{% endfor %}{% endif %}
               {%- else %}
               {%- for k in caps %}{% if sxr.capabilities[k] is defined %}

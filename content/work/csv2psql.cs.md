@@ -17,7 +17,7 @@ og_description = "csv2psql: Nástroje, Ruby a HTML, 2014–2015, archiv. Zdrojov
 og_image = "og/cs-work-csv2psql.png"
 schema = "project"
 keywords = ["csv2psql", "Nástroje", "Ruby", "HTML", "2014–2015", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["ruby", "html", "postgresql", "open-source", "github-pages", "repository", "commit"]
+terms = ["ruby", "html", "postgresql", "gli", "rspec", "open-source", "github-pages", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

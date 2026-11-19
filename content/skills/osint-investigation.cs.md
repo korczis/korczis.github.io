@@ -13,7 +13,7 @@ skill = "osint-investigation"
 og_title = "OSINT šetření: dovednosti"
 og_image = "og/cs-skill-osint-investigation.png"
 schema = "skill"
-terms = ["skill", "osint", "html", "javascript", "python", "shell", "claude-api", "elixir", "postgis", "typescript", "alpine-js", "css"]
+terms = ["skill", "osint", "html", "javascript", "python", "postgresql", "shell", "tailwind-css", "flowbite-pro", "claude-api", "dockerfile", "ecto"]
 keywords = ["OSINT šetření", "Digitální vyšetřování a OSINT dossier", "Reputační zpravodajství a monitoring negativních zpráv", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -31,7 +31,7 @@ Pojem, na kterém stojí: [OSINT](@/glossary/osint.cs.md).
 
 Služby, které z ní čerpají: [Digitální vyšetřování a OSINT dossier](@/services/digital-investigation.cs.md) a [Reputační zpravodajství a monitoring negativních zpráv](@/services/reputation-intelligence.cs.md).
 
-Praktikovaná s: [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Python](@/glossary/python.cs.md), [Shell](@/glossary/shell.cs.md), [Claude API](@/glossary/claude-api.cs.md), [Elixir](@/glossary/elixir.cs.md), [PostGIS](@/glossary/postgis.cs.md) a [TypeScript](@/glossary/typescript.cs.md).
+Praktikovaná s: [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Python](@/glossary/python.cs.md), [PostgreSQL](@/glossary/postgresql.cs.md), [Shell](@/glossary/shell.cs.md), [Tailwind CSS](@/glossary/tailwind-css.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md) a [Claude API](@/glossary/claude-api.cs.md).
 
 Veřejná práce, jejíž vlastní slova ji dokládají: [sig](https://gitlab.com/korczis/sig), [crisis-map](https://github.com/korczis/crisis-map), [osint-case-ratcliffe-moscow-2026](https://github.com/korczis/osint-case-ratcliffe-moscow-2026) a [data-atlas](https://github.com/korczis/data-atlas).
 

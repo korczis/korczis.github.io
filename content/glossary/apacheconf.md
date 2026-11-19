@@ -17,7 +17,7 @@ definition = "The configuration language of the Apache HTTP Server: virtual host
 aliases = ["Apache"]
 reference = { title = "Apache HTTP Server documentation", url = "https://httpd.apache.org/docs/current/" }
 pages = ["projects/web.md", "work/pavian-eu.md"]
-related = ["css", "html", "javascript", "repository", "static-site-generator", "commit", "elixir", "open-source"]
+related = ["css", "html", "javascript", "repository", "static-site-generator", "bootstrap", "bower", "commit"]
 og_title = "ApacheConf: glossary"
 og_image = "og/glossary-apacheconf.png"
 keywords = ["ApacheConf", "Programming language", "Glossary", "Tomas Korcak"]

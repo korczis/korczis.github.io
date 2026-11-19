@@ -17,7 +17,7 @@ og_description = "job-processor: Nástroje, Elixir, 2024, aktivní za posledníc
 og_image = "og/cs-work-job-processor.png"
 schema = "project"
 keywords = ["job-processor", "Nástroje", "Elixir", "2024", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["elixir", "open-source", "repository", "commit"]
+terms = ["elixir", "cowboy", "jason", "gitlab-ci", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

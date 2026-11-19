@@ -13,7 +13,7 @@ skill = "document-extraction"
 og_title = "Document extraction: skills"
 og_image = "og/skill-document-extraction.png"
 schema = "skill"
-terms = ["skill", "information-extraction", "html", "javascript", "python", "alpine-js", "claude-api", "dockerfile", "fastapi", "flowbite-pro", "github-actions", "just"]
+terms = ["skill", "information-extraction", "html", "javascript", "playwright", "postgresql", "python", "tailwind-css", "alpine-js", "claude-api", "dockerfile", "fastapi"]
 keywords = ["Document extraction", "Decision support and AI agents for analysts", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -31,7 +31,7 @@ The concept behind it: [Information extraction](@/glossary/information-extractio
 
 Services that draw on it: [Decision support and AI agents for analysts](@/services/decision-support-ai.md).
 
-Practised with: [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md), [Python](@/glossary/python.md), [Alpine.js](@/glossary/alpine-js.md), [Claude API](@/glossary/claude-api.md), [Dockerfile](@/glossary/dockerfile.md), [FastAPI](@/glossary/fastapi.md) and [Flowbite Pro](@/glossary/flowbite-pro.md).
+Practised with: [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md), [Playwright](@/glossary/playwright.md), [PostgreSQL](@/glossary/postgresql.md), [Python](@/glossary/python.md), [Tailwind CSS](@/glossary/tailwind-css.md), [Alpine.js](@/glossary/alpine-js.md) and [Claude API](@/glossary/claude-api.md).
 
 Public work whose own words show it: [data-atlas](https://github.com/korczis/data-atlas).
 

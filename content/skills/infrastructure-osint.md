@@ -13,7 +13,7 @@ skill = "infrastructure-osint"
 og_title = "Infrastructure OSINT: skills"
 og_image = "og/skill-infrastructure-osint.png"
 schema = "skill"
-terms = ["skill", "attack-surface", "c"]
+terms = ["skill", "attack-surface", "c", "cmake", "travis-ci"]
 keywords = ["Infrastructure OSINT", "Digital investigation and OSINT dossiers", "Digital forensics and evidence preservation", "External attack surface and cyber-exposure assessment", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -31,7 +31,7 @@ The concept behind it: [Attack surface](@/glossary/attack-surface.md).
 
 Services that draw on it: [Digital investigation and OSINT dossiers](@/services/digital-investigation.md), [Digital forensics and evidence preservation](@/services/digital-forensics.md) and [External attack surface and cyber-exposure assessment](@/services/attack-surface.md).
 
-Practised with: [C](@/glossary/c.md).
+Practised with: [C](@/glossary/c.md), [CMake](@/glossary/cmake.md) and [Travis CI](@/glossary/travis-ci.md).
 
 Public work whose own words show it: [skull-c](https://github.com/korczis/skull-c).
 

@@ -155,9 +155,11 @@
       <div>
         <h3 class="mb-3 text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400">{{ trans(key="technologies", lang=lang) | safe }}</h3>
         <ul class="flex flex-wrap gap-2">
-          {%- for t in ix.skills.technologies %}
-          {%- set_global ev = "" %}{% for e in t.evidence %}{% set_global ev = ev ~ e.name %}{% if not loop.last %}{% set_global ev = ev ~ ", " %}{% endif %}{% endfor %}
-          <li>{{ <chip label={t.name} href={base ~ "projects/?project=" ~ t.evidence[0].repo} count={t.projects ~ ""} tip={trans(key="used_in", lang=lang) ~ " " ~ ev} tip_id={"tip-tech-" ~ loop.index} /> }}</li>
+          {#- Every claimed technology the public repositories use, most used first (data/skills.json:
+              curated stacks, topics and what each repository's dossier finds in its files). #}
+          {%- set ab_sk = load_data(path="data/skills.json") %}
+          {%- for t in ab_sk.technologies %}
+          <li>{{ <chip label={t.name} href={base ~ "glossary/" ~ t.id ~ "/"} count={t.repos ~ ""} /> }}</li>
           {%- endfor %}
           <li>{{ <button label={trans(key="the_whole_stack", lang=lang)} href={base ~ "stack/"} variant="ghost" icon_after="arrow-right" /> }}</li>
         </ul>

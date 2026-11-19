@@ -16,8 +16,8 @@ kind = "language"
 definition = "The build language of make: targets, the files they depend on and the commands that rebuild them when a dependency changes."
 aliases = ["Make", "make"]
 reference = { title = "GNU make manual", url = "https://www.gnu.org/software/make/manual/make.html" }
-pages = ["projects/learning.md", "skills/change-monitoring.md", "skills/media-forensics.md", "work/bcnode-old.md", "work/charon.md", "work/ctu-cz.md", "work/dj-schnapps.md", "work/el-magico-cache.md", "work/gooddata-fs.md", "work/microcrawler-elixir.md", "work/microcrawler-js.md", "work/pdf-renderer.md", "work/rest-hello-world-benchmark.md", "work/skull-cpp.md", "work/skull-nodejs.md", "work/sli2dli.md", "work/streamflow.md"]
-related = ["repository", "commit", "open-source", "rust", "javascript", "elixir", "shell", "gis"]
+pages = ["projects/learning.md", "skills/change-monitoring.md", "skills/media-forensics.md", "work/bcnode-old.md", "work/charon.md", "work/ctu-cz.md", "work/dj-schnapps.md", "work/el-magico-cache.md", "work/gooddata-fs.md", "work/microcrawler-elixir.md", "work/microcrawler-js.md", "work/pdf-renderer.md", "work/rest-hello-world-benchmark.md", "work/skull-cpp.md", "work/skull-emscripten.md", "work/skull-erlang.md", "work/skull-nodejs.md", "work/sli2dli.md", "work/streamflow.md"]
+related = ["repository", "commit", "open-source", "javascript", "rust", "shell", "dockerfile", "elixir"]
 og_title = "Makefile: glossary"
 og_image = "og/glossary-makefile.png"
 keywords = ["Makefile", "Programming language", "Glossary", "Tomas Korcak"]
@@ -40,10 +40,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
-I have written Makefile in 8 public repositories, from 2014 to 2025; in 1 of them it is the main language.
+I have written Makefile in 12 public repositories, from 2014 to 2025; in 1 of them it is the main language.
 
-What it was for: [Tools](@/projects/tools.md) (5), [Learning and experiments](@/projects/learning.md) (2) and [Data and GIS](@/projects/data.md) (1).
+What it was for: [Tools](@/projects/tools.md) (5), [Learning and experiments](@/projects/learning.md) (4), [Data and GIS](@/projects/data.md) (2) and [Media and art](@/projects/media.md) (1).
 
-Most recently: [pdf\_renderer](@/work/pdf-renderer.md); [el-magico-cache](@/work/el-magico-cache.md): Elixir Cache; [streamflow](@/work/streamflow.md): Stream Flow - Fast Stream Processing in Rust.
+Most recently: [pdf\_renderer](@/work/pdf-renderer.md); [el-magico-cache](@/work/el-magico-cache.md): Elixir Cache; [ctu-cz](@/work/ctu-cz.md): Otevrena data ceskeho telekomunikacniho uradu.
 
 How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses Makefile: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links Makefile to the repositories and to the other languages and technologies they use together.

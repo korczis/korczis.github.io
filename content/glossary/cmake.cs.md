@@ -16,8 +16,8 @@ kind = "language"
 definition = "Generátor buildovacích systémů pro C a C++: jeden popis projektu vytvoří Makefile, soubory Ninja nebo projekty IDE na libovolné platformě."
 aliases = []
 reference = { title = "CMake documentation", url = "https://cmake.org/cmake/help/latest/" }
-pages = ["projects/learning.cs.md", "work/happ.cs.md", "work/skull-cpp.cs.md"]
-related = ["cpp", "repository", "commit", "makefile", "open-source", "rust", "shell", "c"]
+pages = ["projects/learning.cs.md", "skills/infrastructure-osint.cs.md", "work/algorithms.cs.md", "work/happ.cs.md", "work/peacemaker.cs.md", "work/skull-c.cs.md", "work/skull-cpp.cs.md"]
+related = ["c", "repository", "commit", "cpp", "open-source", "travis-ci", "elixir", "haskell"]
 og_title = "CMake: slovník"
 og_image = "og/cs-glossary-cmake.png"
 keywords = ["CMake", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
@@ -40,10 +40,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
-CMake jsem psal v 1 veřejném repozitáři, od roku 2014 do 2015; v 1 z nich je hlavním jazykem.
+CMake jsem psal v 5 veřejných repozitářích, od roku 2014 do 2021; v 1 z nich je hlavním jazykem.
 
-K čemu to sloužilo: [Učení a experimenty](@/projects/learning.cs.md) (1).
+K čemu to sloužilo: [Učení a experimenty](@/projects/learning.cs.md) (3), [Věda a vizualizace](@/projects/science.cs.md) (1) a [Bezpečnost a OSINT](@/projects/security.cs.md) (1).
 
-Naposledy: [skull-cpp](@/work/skull-cpp.cs.md).
+Naposledy: [happ](@/work/happ.cs.md); [skull-cpp](@/work/skull-cpp.cs.md); [algorithms](@/work/algorithms.cs.md).
 
 Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak CMake používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje CMake s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

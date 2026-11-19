@@ -17,7 +17,7 @@ og_description = "rocksdb_indexer: Data a GIS, 2022, archiv. Zdrojový kód: Git
 og_image = "og/cs-work-rocksdb-indexer.png"
 schema = "project"
 keywords = ["rocksdb_indexer", "Data a GIS", "2022", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["gis", "repository", "commit", "open-source"]
+terms = ["rust", "serde", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

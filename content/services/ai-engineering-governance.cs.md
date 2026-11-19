@@ -14,7 +14,7 @@ icon = "code"
 og_title = "Řízený vývoj softwaru s AI"
 og_image = "og/cs-service-ai-engineering-governance.png"
 schema = "service"
-terms = ["service", "rust", "mcp", "claude-api", "majordomus", "github-actions", "policy-as-code", "ai-agent", "audit-trail", "orchestration", "contestability", "html", "javascript", "shell", "python", "alpine-js", "css", "flowbite-pro", "elixir", "zola", "dockerfile"]
+terms = ["service", "rust", "mcp", "claude-api", "majordomus", "github-actions", "policy-as-code", "ai-agent", "audit-trail", "orchestration", "contestability", "html", "javascript", "shell", "flowbite-pro", "tailwind-css", "playwright", "alpine-js", "python", "github-pages", "zola"]
 keywords = ["Řízený vývoj softwaru s AI", "Pravidla jako kód", "Agenti s LLM", "Auditní stopa", "Orchestrace", "Transformace s AI", "Napadnutelná rozhodnutí", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -34,7 +34,7 @@ Pravidla, rozhodnutí a předávky držet v repozitáři jako kód, vynucovat je
 
 Je postavená na: [Rust](@/glossary/rust.cs.md), [MCP](@/glossary/mcp.cs.md), [Claude API](@/glossary/claude-api.cs.md), [Majordomus](@/glossary/majordomus.cs.md) a [GitHub Actions](@/glossary/github-actions.cs.md).
 
-Technologie za ní, změřené z práce, která tyto dovednosti dokládá: [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Shell](@/glossary/shell.cs.md), [Python](@/glossary/python.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md), [CSS](@/glossary/css.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md) a [Elixir](@/glossary/elixir.cs.md).
+Technologie za ní, změřené z práce, která tyto dovednosti dokládá: [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Shell](@/glossary/shell.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md), [Tailwind CSS](@/glossary/tailwind-css.cs.md), [Playwright](@/glossary/playwright.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md) a [Python](@/glossary/python.cs.md).
 
 Její dovednosti dokládá 13 veřejných repozitářů (13 vlastními slovy).
 

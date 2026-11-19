@@ -13,7 +13,7 @@ skill = "policy-as-code"
 og_title = "Pravidla jako kód: dovednosti"
 og_image = "og/cs-skill-policy-as-code.png"
 schema = "skill"
-terms = ["skill", "policy-as-code", "javascript", "html", "shell", "css", "majordomus", "python", "rust", "zola", "alpine-js", "apache-echarts"]
+terms = ["skill", "policy-as-code", "javascript", "html", "tailwind-css", "flowbite-pro", "github-pages", "shell", "zola", "css", "playwright", "python"]
 keywords = ["Pravidla jako kód", "Řízený vývoj softwaru s AI", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -31,7 +31,7 @@ Pojem, na kterém stojí: [Pravidla jako kód](@/glossary/policy-as-code.cs.md).
 
 Služby, které z ní čerpají: [Řízený vývoj softwaru s AI](@/services/ai-engineering-governance.cs.md).
 
-Praktikovaná s: [JavaScript](@/glossary/javascript.cs.md), [HTML](@/glossary/html.cs.md), [Shell](@/glossary/shell.cs.md), [CSS](@/glossary/css.cs.md), [Majordomus](@/glossary/majordomus.cs.md), [Python](@/glossary/python.cs.md), [Rust](@/glossary/rust.cs.md) a [Zola](@/glossary/zola.cs.md).
+Praktikovaná s: [JavaScript](@/glossary/javascript.cs.md), [HTML](@/glossary/html.cs.md), [Tailwind CSS](@/glossary/tailwind-css.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md), [GitHub Pages](@/glossary/github-pages.cs.md), [Shell](@/glossary/shell.cs.md), [Zola](@/glossary/zola.cs.md) a [CSS](@/glossary/css.cs.md).
 
 Veřejná práce, jejíž vlastní slova ji dokládají: [majordomus-reel](https://github.com/korczis/majordomus-reel), [prismatic-majordomus](https://github.com/korczis/prismatic-majordomus), [korczis.github.io](https://github.com/korczis/korczis.github.io) a [data-atlas](https://github.com/korczis/data-atlas).
 

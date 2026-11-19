@@ -16,8 +16,8 @@ kind = "language"
 definition = "Jazyk nástroje make: cíle, soubory, na kterých závisí, a příkazy, které je přestaví, když se závislost změní."
 aliases = ["Make", "make"]
 reference = { title = "GNU make manual", url = "https://www.gnu.org/software/make/manual/make.html" }
-pages = ["projects/learning.cs.md", "skills/change-monitoring.cs.md", "skills/media-forensics.cs.md", "work/bcnode-old.cs.md", "work/charon.cs.md", "work/ctu-cz.cs.md", "work/dj-schnapps.cs.md", "work/el-magico-cache.cs.md", "work/gooddata-fs.cs.md", "work/microcrawler-elixir.cs.md", "work/microcrawler-js.cs.md", "work/pdf-renderer.cs.md", "work/rest-hello-world-benchmark.cs.md", "work/skull-cpp.cs.md", "work/skull-nodejs.cs.md", "work/sli2dli.cs.md", "work/streamflow.cs.md"]
-related = ["repository", "commit", "open-source", "rust", "javascript", "elixir", "shell", "gis"]
+pages = ["projects/learning.cs.md", "skills/change-monitoring.cs.md", "skills/media-forensics.cs.md", "work/bcnode-old.cs.md", "work/charon.cs.md", "work/ctu-cz.cs.md", "work/dj-schnapps.cs.md", "work/el-magico-cache.cs.md", "work/gooddata-fs.cs.md", "work/microcrawler-elixir.cs.md", "work/microcrawler-js.cs.md", "work/pdf-renderer.cs.md", "work/rest-hello-world-benchmark.cs.md", "work/skull-cpp.cs.md", "work/skull-emscripten.cs.md", "work/skull-erlang.cs.md", "work/skull-nodejs.cs.md", "work/sli2dli.cs.md", "work/streamflow.cs.md"]
+related = ["repository", "commit", "open-source", "javascript", "rust", "shell", "dockerfile", "elixir"]
 og_title = "Makefile: slovník"
 og_image = "og/cs-glossary-makefile.png"
 keywords = ["Makefile", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
@@ -40,10 +40,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
-Makefile jsem psal v 8 veřejných repozitářích, od roku 2014 do 2025; v 1 z nich je hlavním jazykem.
+Makefile jsem psal v 12 veřejných repozitářích, od roku 2014 do 2025; v 1 z nich je hlavním jazykem.
 
-K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (5), [Učení a experimenty](@/projects/learning.cs.md) (2) a [Data a GIS](@/projects/data.cs.md) (1).
+K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (5), [Učení a experimenty](@/projects/learning.cs.md) (4), [Data a GIS](@/projects/data.cs.md) (2) a [Média a umění](@/projects/media.cs.md) (1).
 
-Naposledy: [pdf\_renderer](@/work/pdf-renderer.cs.md); [el-magico-cache](@/work/el-magico-cache.cs.md); [streamflow](@/work/streamflow.cs.md).
+Naposledy: [pdf\_renderer](@/work/pdf-renderer.cs.md); [el-magico-cache](@/work/el-magico-cache.cs.md); [ctu-cz](@/work/ctu-cz.cs.md).
 
 Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak Makefile používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje Makefile s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

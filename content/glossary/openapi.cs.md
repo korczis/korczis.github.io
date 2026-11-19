@@ -3,7 +3,7 @@
 title = "OpenAPI"
 description = "Standardní, na jazyce nezávislý popis HTTP rozhraní: jeho cest, operací a dat, čitelný pro lidi i nástroje jako Swagger UI."
 template = "term.html"
-weight = 57
+weight = 85
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -16,11 +16,20 @@ kind = "technology"
 definition = "Standardní, na jazyce nezávislý popis HTTP rozhraní: jeho cest, operací a dat, čitelný pro lidi i nástroje jako Swagger UI."
 aliases = ["Swagger"]
 reference = { title = "OpenAPI Specification", url = "https://spec.openapis.org/oas/latest.html" }
-pages = ["interfaces.cs.md", "services/compliance-screening.cs.md"]
-related = ["ai-agent", "alpine-js", "beneficial-ownership", "claude-api", "contestability", "dockerfile", "elixir", "fastapi"]
+pages = ["interfaces.cs.md", "services/compliance-screening.cs.md", "skills/registry-intelligence.cs.md", "work/crisis-map.cs.md"]
+related = ["elixir", "flowbite-pro", "javascript", "mcp", "css", "ecto", "github-pages", "html"]
 og_title = "OpenAPI: slovník"
 og_image = "og/cs-glossary-openapi.png"
 keywords = ["OpenAPI", "Technologie", "Slovník", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,4 +40,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
-Žádný můj veřejný repozitář ani klientská zakázka OpenAPI podle měřených dat nepoužívá; tato stránka pojem vysvětluje tam, kde ho web používá.
+OpenAPI je součástí 1 mého veřejného repozitáře, od roku 2026 do 2026.
+
+K čemu to sloužilo: [Data a GIS](@/projects/data.cs.md) (1).
+
+Naposledy: [Crisis map](@/work/crisis-map.cs.md): Hlášení geokódovaná přes lokální Nominatim, uložená jako PostGIS geografie a servírovaná z jednoho registru schopností: LiveView, REST, OpenAPI, MCP a CLI.
+
+1 z těchto projektů běží jako živý web.
+
+Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak OpenAPI používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje OpenAPI s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

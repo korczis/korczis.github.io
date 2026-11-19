@@ -3,7 +3,7 @@
 title = "Kubernetes"
 description = "Systém, který provozuje kontejnery v clusteru: plánování, škálování, síť a nasazování deklarované jako zdroje."
 template = "term.html"
-weight = 51
+weight = 74
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Systém, který provozuje kontejnery v clusteru: plánování, škálování, síť a nasazování deklarované jako zdroje."
 aliases = ["k8s"]
 reference = { title = "Kubernetes documentation", url = "https://kubernetes.io/docs/concepts/overview/" }
-pages = ["services/_index.cs.md", "services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "services/due-diligence.cs.md", "services/m-and-a.cs.md", "skills/_index.cs.md", "skills/ai-transformation.cs.md", "skills/data-room.cs.md", "skills/entity-resolution.cs.md", "skills/insolvency-monitoring.cs.md", "skills/knowledge-graph.cs.md", "skills/m-and-a-screening.cs.md", "skills/market-intelligence.cs.md", "skills/orchestration.cs.md", "skills/risk-scoring.cs.md", "_index.cs.md"]
-related = ["alpine-js", "dockerfile", "fastapi", "flowbite-pro", "html", "javascript", "claude-api", "github-actions"]
+pages = ["services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "skills/data-room.cs.md", "skills/entity-resolution.cs.md", "skills/insolvency-monitoring.cs.md", "skills/knowledge-graph.cs.md", "skills/m-and-a-screening.cs.md", "skills/orchestration.cs.md", "skills/risk-scoring.cs.md", "work/apollon.cs.md", "work/cluster-kubernetes.cs.md", "work/cluster.cs.md", "work/k8s-orbis-pictus.cs.md", "_index.cs.md"]
+related = ["dockerfile", "alpine-js", "claude-api", "fastapi", "flowbite-pro", "github-actions", "html", "javascript"]
 og_title = "Kubernetes: slovník"
 og_image = "og/cs-glossary-kubernetes.png"
 keywords = ["Kubernetes", "Technologie", "Slovník", "Tomáš Korčák"]
@@ -40,11 +40,13 @@ span = 3
 height = "md"
 tone = "night"
 +++
-Kubernetes je součástí 1 mého veřejného repozitáře, od roku 2017 do 2018.
+Kubernetes je součástí 4 mých veřejných repozitářů, od roku 2014 do 2019.
 
-K čemu to sloužilo: [Systémy a infrastruktura](@/projects/systems.cs.md) (1).
+K čemu to sloužilo: [Systémy a infrastruktura](@/projects/systems.cs.md) (4).
 
-Naposledy: [cluster-kubernetes](@/work/cluster-kubernetes.cs.md).
+Naposledy: [k8s-orbis-pictus](@/work/k8s-orbis-pictus.cs.md); [cluster-kubernetes](@/work/cluster-kubernetes.cs.md); [cluster](@/work/cluster.cs.md).
+
+1 z těchto projektů běží jako živý web.
 
 Používal jsem ho také v klientské práci pod dohodami o mlčenlivosti. Role: Architekt, Vedoucí inženýr, Inženýr AI a Datový inženýr. Co se řešilo: Agenti s LLM, Podpora rozhodování, Transformace s AI a Auditní stopa. Případy užití níže popisují princip a záměr této práce; žádný klient, osoba, datum ani číslo nejsou uvedeny.
 

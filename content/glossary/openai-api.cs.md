@@ -3,7 +3,7 @@
 title = "OpenAI API"
 description = "API společnosti OpenAI k jejím jazykovým a embeddingovým modelům, používané pro generování textu, extrakci a vyhledávání."
 template = "term.html"
-weight = 56
+weight = 84
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

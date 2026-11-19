@@ -17,7 +17,7 @@ og_description = "past: Tools, 2025–2026, active in the last 12 months. Source
 og_image = "og/work-past.png"
 schema = "project"
 keywords = ["past", "Tools", "2025–2026", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["open-source", "repository", "commit"]
+terms = ["markdown", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

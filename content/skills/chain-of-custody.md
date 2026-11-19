@@ -13,7 +13,7 @@ skill = "chain-of-custody"
 og_title = "Chain of custody: skills"
 og_image = "og/skill-chain-of-custody.png"
 schema = "skill"
-terms = ["skill", "chain-of-custody", "javascript", "rust"]
+terms = ["skill", "chain-of-custody", "babel", "dockerfile", "javascript", "nodejs", "rust", "webpack"]
 keywords = ["Chain of custody", "Digital forensics and evidence preservation", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -31,7 +31,7 @@ The concept behind it: [Chain of custody](@/glossary/chain-of-custody.md).
 
 Services that draw on it: [Digital forensics and evidence preservation](@/services/digital-forensics.md).
 
-Practised with: [JavaScript](@/glossary/javascript.md) and [Rust](@/glossary/rust.md).
+Practised with: [Babel](@/glossary/babel.md), [Dockerfile](@/glossary/dockerfile.md), [JavaScript](@/glossary/javascript.md), [Node.js](@/glossary/nodejs.md), [Rust](@/glossary/rust.md) and [webpack](@/glossary/webpack.md).
 
 Public work whose own words show it: [bcnode-old](https://github.com/korczis/bcnode-old).
 

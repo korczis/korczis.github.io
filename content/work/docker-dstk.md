@@ -17,7 +17,7 @@ og_description = "docker-dstk: Systems and infrastructure in Shell, 2015, archiv
 og_image = "og/work-docker-dstk.png"
 schema = "project"
 keywords = ["docker-dstk", "Systems and infrastructure", "Shell", "2015", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["shell", "repository", "commit", "open-source"]
+terms = ["shell", "dockerfile", "ruby", "postgresql", "python", "java", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

@@ -17,7 +17,7 @@ og_description = "caregiver: Tools, 2022, archive. Source on GitHub."
 og_image = "og/work-caregiver.png"
 schema = "project"
 keywords = ["caregiver", "Tools", "2022", "GitHub", "Tomas Korcak", "korczis"]
-terms = ["open-source", "repository", "commit"]
+terms = ["elixir", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

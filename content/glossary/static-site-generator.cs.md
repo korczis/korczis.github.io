@@ -3,7 +3,7 @@
 title = "Generátor statických webů"
 description = "Program, který z obsahu a šablon vyrobí hotové soubory ještě před návštěvou, takže web nepotřebuje serverový kód."
 template = "term.html"
-weight = 111
+weight = 146
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]
@@ -17,7 +17,7 @@ definition = "Program, který z obsahu a šablon vyrobí hotové soubory ještě
 aliases = []
 reference = { title = "Static site generator (Wikipedia)", url = "https://en.wikipedia.org/wiki/Static_site_generator" }
 pages = ["_index.cs.md", "projects/web.cs.md", "work/annasabatova-cz.cs.md", "work/apollocrawler-github-io.cs.md", "work/craftsmen.cs.md", "work/korczis-com.cs.md", "work/korczis-github-com.cs.md", "work/korczis-github-io.cs.md", "work/korczis-gitlab-io.cs.md", "work/microscratch-react.cs.md", "work/microscratch.cs.md", "work/nestravenkam.cs.md", "work/pavian-eu.cs.md", "work/the-scratch.cs.md", "work/tosh.cs.md", "work/web-spa.cs.md"]
-related = ["repository", "commit", "open-source", "javascript", "css", "html", "elixir", "apacheconf"]
+related = ["repository", "commit", "open-source", "javascript", "css", "html", "elixir", "bootstrap"]
 og_title = "Generátor statických webů: slovník"
 og_image = "og/cs-glossary-static-site-generator.png"
 keywords = ["Generátor statických webů", "Static site generator", "Koncept", "Slovník", "Tomáš Korčák"]

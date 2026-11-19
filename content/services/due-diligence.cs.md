@@ -14,7 +14,7 @@ icon = "shield"
 og_title = "Due diligence firem a protistran"
 og_image = "og/cs-service-due-diligence.png"
 schema = "service"
-terms = ["service", "elixir", "phoenix", "postgresql", "meilisearch", "playwright", "due-diligence", "public-registry", "record-linkage", "beneficial-ownership", "financial-statement-analysis", "risk-assessment", "source-criticism", "decision-support-system", "javascript", "html", "python", "alpine-js", "claude-api", "dockerfile", "fastapi", "flowbite-pro", "github-actions", "kubernetes"]
+terms = ["service", "elixir", "phoenix", "postgresql", "meilisearch", "playwright", "due-diligence", "public-registry", "record-linkage", "beneficial-ownership", "financial-statement-analysis", "risk-assessment", "source-criticism", "decision-support-system", "javascript", "html", "python", "flowbite-pro", "tailwind-css", "dockerfile", "fastapi", "alpine-js", "claude-api", "react"]
 keywords = ["Due diligence firem a protistran", "Due diligence", "Rejstříkové zpravodajství", "Ztotožnění subjektů", "Analýza vlastnictví a vazeb", "Analýza účetních závěrek", "Hodnocení rizik", "Spolehlivost zdrojů", "Podpora rozhodování", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -34,7 +34,7 @@ Rozpoznat subjekt jako jednu entitu, ověřit nezávislé zdroje navzájem, rozp
 
 Je postavená na: [Elixir](@/glossary/elixir.cs.md), [Phoenix](@/glossary/phoenix.cs.md), [PostgreSQL](@/glossary/postgresql.cs.md), [Meilisearch](@/glossary/meilisearch.cs.md) a [Playwright](@/glossary/playwright.cs.md).
 
-Technologie za ní, změřené z práce, která tyto dovednosti dokládá: [JavaScript](@/glossary/javascript.cs.md), [HTML](@/glossary/html.cs.md), [Python](@/glossary/python.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md), [Claude API](@/glossary/claude-api.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md), [FastAPI](@/glossary/fastapi.cs.md) a [Flowbite Pro](@/glossary/flowbite-pro.cs.md).
+Technologie za ní, změřené z práce, která tyto dovednosti dokládá: [JavaScript](@/glossary/javascript.cs.md), [HTML](@/glossary/html.cs.md), [Python](@/glossary/python.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md), [Tailwind CSS](@/glossary/tailwind-css.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md), [FastAPI](@/glossary/fastapi.cs.md) a [Alpine.js](@/glossary/alpine-js.cs.md).
 
 Její dovednosti dokládají 4 veřejné repozitáře (4 vlastními slovy).
 

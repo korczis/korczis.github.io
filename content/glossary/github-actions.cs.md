@@ -3,7 +3,7 @@
 title = "GitHub Actions"
 description = "Průběžná integrace GitHubu: workflow s úlohami, které sestaví, otestují a nasadí repozitář při každém pushi nebo podle plánu."
 template = "term.html"
-weight = 49
+weight = 64
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -16,11 +16,20 @@ kind = "technology"
 definition = "Průběžná integrace GitHubu: workflow s úlohami, které sestaví, otestují a nasadí repozitář při každém pushi nebo podle plánu."
 aliases = []
 reference = { title = "GitHub Actions documentation", url = "https://docs.github.com/en/actions" }
-pages = ["services/ai-engineering-governance.cs.md", "services/attack-surface.cs.md", "services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "services/decision-support-ai.cs.md", "services/due-diligence.cs.md", "services/m-and-a.cs.md", "services/reputation-intelligence.cs.md", "skills/ai-transformation.cs.md", "skills/data-room.cs.md", "skills/document-extraction.cs.md", "skills/entity-resolution.cs.md", "skills/insolvency-monitoring.cs.md", "skills/knowledge-graph.cs.md", "skills/m-and-a-screening.cs.md", "skills/market-intelligence.cs.md", "skills/orchestration.cs.md", "skills/risk-scoring.cs.md", "_index.cs.md"]
-related = ["alpine-js", "claude-api", "dockerfile", "flowbite-pro", "html", "javascript", "fastapi", "kubernetes"]
+pages = ["services/ai-engineering-governance.cs.md", "services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "services/digital-forensics.cs.md", "services/m-and-a.cs.md", "services/reputation-intelligence.cs.md", "skills/ai-transformation.cs.md", "skills/data-room.cs.md", "skills/entity-resolution.cs.md", "skills/insolvency-monitoring.cs.md", "skills/knowledge-graph.cs.md", "skills/llm-agents.cs.md", "skills/m-and-a-screening.cs.md", "skills/market-intelligence.cs.md", "skills/narrative-analysis.cs.md", "skills/orchestration.cs.md", "skills/risk-scoring.cs.md", "work/el-magico-cache.cs.md", "work/gh-exec-3000.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/prismatic-blog.cs.md", "work/prismatic-majordomus.cs.md", "work/prismatic.cs.md", "_index.cs.md"]
+related = ["html", "javascript", "claude-api", "dockerfile", "flowbite-pro", "alpine-js", "fastapi", "shell"]
 og_title = "GitHub Actions: slovník"
 og_image = "og/cs-glossary-github-actions.png"
 keywords = ["GitHub Actions", "Technologie", "Slovník", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,6 +40,14 @@ span = 3
 height = "md"
 tone = "night"
 +++
-Žádný můj veřejný repozitář GitHub Actions podle měřených dat nepoužívá; dokladem je klientská práce popsaná níže.
+GitHub Actions je součástí 6 mých veřejných repozitářů, od roku 2022 do 2026.
+
+K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (2), [Inženýrství AI](@/projects/ai.cs.md) (1), [Média a umění](@/projects/media.cs.md) (1) a [Bezpečnost a OSINT](@/projects/security.cs.md) (1).
+
+Naposledy: [Majordomus](@/work/prismatic-majordomus.cs.md): Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model; [osint-case-ratcliffe-moscow-2026](@/work/osint-case-ratcliffe-moscow-2026.cs.md); [prismatic](@/work/prismatic.cs.md).
+
+3 z těchto projektů běží jako živé weby.
 
 Používal jsem ho také v klientské práci pod dohodami o mlčenlivosti. Role: Architekt, Vedoucí inženýr, Inženýr AI a Datový inženýr. Co se řešilo: Agenti s LLM, Podpora rozhodování, Transformace s AI a Auditní stopa. Případy užití níže popisují princip a záměr této práce; žádný klient, osoba, datum ani číslo nejsou uvedeny.
+
+Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak GitHub Actions používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje GitHub Actions s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

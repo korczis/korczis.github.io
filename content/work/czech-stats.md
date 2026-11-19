@@ -17,7 +17,7 @@ og_description = "czech-stats: Data and GIS in Elixir, CSS and JavaScript, 2020,
 og_image = "og/work-czech-stats.png"
 schema = "project"
 keywords = ["czech-stats", "Data and GIS", "Elixir", "CSS", "JavaScript", "2020", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["elixir", "css", "javascript", "html", "gis", "repository", "commit", "open-source"]
+terms = ["elixir", "css", "javascript", "html", "phoenix", "webpack", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

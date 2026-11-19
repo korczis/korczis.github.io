@@ -17,7 +17,7 @@ og_description = "nestravenkam: Web in CSS, HTML and JavaScript, 2019, archive. 
 og_image = "og/work-nestravenkam.png"
 schema = "project"
 keywords = ["nestravenkam", "Web", "CSS", "HTML", "JavaScript", "2019", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["css", "html", "javascript", "static-site-generator", "repository", "commit", "open-source"]
+terms = ["css", "html", "javascript", "jquery", "static-site-generator", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

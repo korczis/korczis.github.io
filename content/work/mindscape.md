@@ -17,7 +17,7 @@ og_description = "MindScape: Tools, 2023, active in the last 48 months. Source o
 og_image = "og/work-mindscape.png"
 schema = "project"
 keywords = ["MindScape", "Tools", "2023", "GitHub", "Tomas Korcak", "korczis"]
-terms = ["open-source", "repository", "commit"]
+terms = ["rust", "elixir", "phoenix", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

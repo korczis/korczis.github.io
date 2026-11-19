@@ -16,8 +16,8 @@ kind = "language"
 definition = "C s třídami, šablonami a abstrakcemi, které za běhu nic nestojí; tam, kde záleží na rychlosti."
 aliases = []
 reference = { title = "cppreference.com", url = "https://en.cppreference.com/" }
-pages = ["projects/learning.cs.md", "projects/science.cs.md", "projects/security.cs.md", "projects/tools.cs.md", "work/algorithms-ruby.cs.md", "work/algorithms.cs.md", "work/happ.cs.md", "work/icave.cs.md", "work/peacemaker.cs.md", "work/skull-cpp.cs.md", "work/skull-emscripten.cs.md"]
-related = ["repository", "open-source", "commit", "rust", "c", "ruby", "shell", "cmake"]
+pages = ["projects/learning.cs.md", "projects/science.cs.md", "projects/security.cs.md", "projects/tools.cs.md", "work/algorithms-ruby.cs.md", "work/algorithms.cs.md", "work/happ.cs.md", "work/icave.cs.md", "work/nosqlight.cs.md", "work/peacemaker.cs.md", "work/skull-cpp.cs.md", "work/skull-emscripten.cs.md"]
+related = ["repository", "open-source", "commit", "c", "cmake", "rust", "elixir", "javascript"]
 og_title = "C++: slovník"
 og_image = "og/cs-glossary-cpp.png"
 keywords = ["C++", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
@@ -40,9 +40,9 @@ span = 3
 height = "md"
 tone = "night"
 +++
-C++ jsem psal v 7 veřejných repozitářích, od roku 2014 do 2021; v 6 z nich je hlavním jazykem.
+C++ jsem psal v 8 veřejných repozitářích, od roku 2014 do 2021; v 6 z nich je hlavním jazykem.
 
-K čemu to sloužilo: [Učení a experimenty](@/projects/learning.cs.md) (3), [Věda a vizualizace](@/projects/science.cs.md) (2), [Bezpečnost a OSINT](@/projects/security.cs.md) (1) a [Nástroje](@/projects/tools.cs.md) (1).
+K čemu to sloužilo: [Učení a experimenty](@/projects/learning.cs.md) (3), [Věda a vizualizace](@/projects/science.cs.md) (2), [Data a GIS](@/projects/data.cs.md) (1) a [Bezpečnost a OSINT](@/projects/security.cs.md) (1).
 
 Naposledy: [happ](@/work/happ.cs.md); [skull-cpp](@/work/skull-cpp.cs.md); [algorithms-ruby](@/work/algorithms-ruby.cs.md).
 

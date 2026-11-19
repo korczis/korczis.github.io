@@ -17,7 +17,7 @@ og_description = "tinder-nomics: Nástroje, 2025–2026, aktivní za posledních
 og_image = "og/cs-work-tinder-nomics.png"
 schema = "project"
 keywords = ["tinder-nomics", "Nástroje", "2025–2026", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["open-source", "repository", "commit"]
+terms = ["markdown", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

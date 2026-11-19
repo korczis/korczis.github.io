@@ -16,8 +16,8 @@ kind = "language"
 definition = "CSS with variables, nesting and mixins, compiled by Sass into plain CSS."
 aliases = ["Sass"]
 reference = { title = "Sass documentation", url = "https://sass-lang.com/documentation/" }
-pages = ["work/korczis-gitlab-io.md"]
-related = ["commit", "css", "eex", "elixir", "html", "open-source", "repository", "static-site-generator"]
+pages = ["work/gooddata-rails-app.md", "work/korczis-gitlab-io.md", "work/microscratch.md"]
+related = ["commit", "css", "open-source", "repository", "javascript", "static-site-generator", "bootstrap", "bower"]
 og_title = "SCSS: glossary"
 og_image = "og/glossary-scss.png"
 keywords = ["SCSS", "Programming language", "Glossary", "Tomas Korcak"]
@@ -40,10 +40,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
-I have written SCSS in 1 public repository, from 2025 to 2025.
+I have written SCSS in 3 public repositories, from 2014 to 2025.
 
-What it was for: [Web](@/projects/web.md) (1).
+What it was for: [Web](@/projects/web.md) (2) and [Data and GIS](@/projects/data.md) (1).
 
-Most recently: [korczis.gitlab.io](@/work/korczis-gitlab-io.md).
+Most recently: [korczis.gitlab.io](@/work/korczis-gitlab-io.md); [microscratch](@/work/microscratch.md): Light Weight Web Framework using node.js, mongo, sockets, ember.js; [gooddata\_rails\_app](@/work/gooddata-rails-app.md): GoodData as Rails Application.
 
 How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses SCSS: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links SCSS to the repositories and to the other languages and technologies they use together.

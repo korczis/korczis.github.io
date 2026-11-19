@@ -13,7 +13,7 @@ skill = "data-integration"
 og_title = "Integrace dat: dovednosti"
 og_image = "og/cs-skill-data-integration.png"
 schema = "skill"
-terms = ["skill", "data-integration", "javascript", "shell", "claude-api", "elixir", "html", "typescript", "alpine-js", "dockerfile", "eex", "fastapi"]
+terms = ["skill", "data-integration", "javascript", "nodejs", "cheerio", "dockerfile", "postgresql", "shell", "claude-api", "ecto", "elixir", "html"]
 keywords = ["Integrace dat", "Interaktivní datové produkty a simulátory", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -31,7 +31,7 @@ Pojem, na kterém stojí: [Integrace dat](@/glossary/data-integration.cs.md).
 
 Služby, které z ní čerpají: [Interaktivní datové produkty a simulátory](@/services/interactive-data-products.cs.md).
 
-Praktikovaná s: [JavaScript](@/glossary/javascript.cs.md), [Shell](@/glossary/shell.cs.md), [Claude API](@/glossary/claude-api.cs.md), [Elixir](@/glossary/elixir.cs.md), [HTML](@/glossary/html.cs.md), [TypeScript](@/glossary/typescript.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md) a [Dockerfile](@/glossary/dockerfile.cs.md).
+Praktikovaná s: [JavaScript](@/glossary/javascript.cs.md), [Node.js](@/glossary/nodejs.cs.md), [Cheerio](@/glossary/cheerio.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md), [PostgreSQL](@/glossary/postgresql.cs.md), [Shell](@/glossary/shell.cs.md), [Claude API](@/glossary/claude-api.cs.md) a [Ecto](@/glossary/ecto.cs.md).
 
 Veřejná práce, jejíž vlastní slova ji dokládají: [microcrawler-crawler-all](https://gitlab.com/korczis/microcrawler-crawler-all), [microcrawler-crawler-sreality-cz](https://gitlab.com/korczis/microcrawler-crawler-sreality-cz), [microcrawler-crawler-xkcd-com](https://gitlab.com/korczis/microcrawler-crawler-xkcd-com) a [llm](https://gitlab.com/korczis/llm).
 

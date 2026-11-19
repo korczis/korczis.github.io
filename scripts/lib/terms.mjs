@@ -38,11 +38,13 @@ export const REPOSITORY_TERMS = ['repository', 'commit', 'open-source'];
 export const linkedTerms = (markdown) => [...new Set([...markdown.matchAll(/\(@\/glossary\/([a-z0-9-]+)(?:\.[a-z]{2})?\.md\)/g)].map((m) => m[1]))];
 
 // A repository (data/recent.json row) and, when curated, its catalogue entry.
-export function termsForRepo(g, r, curated) {
+// stack: the technologies its dossier infers from its files (data/dossiers/<repo>.json), if any.
+export function termsForRepo(g, r, curated, stack = []) {
   return unique([
     ...termsForNames(g, (r.languages ?? []).map((l) => l.name)),
     ...termsForNames(g, [r.language]),
     ...termsForNames(g, curated?.stack ?? []),
+    ...termsForNames(g, stack),
     ...(g.byCategory.get(r.category) ?? []),
     onGithubPages(r.site) ? 'github-pages' : null,
     ...REPOSITORY_TERMS,

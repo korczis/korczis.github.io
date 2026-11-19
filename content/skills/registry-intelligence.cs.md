@@ -13,7 +13,7 @@ skill = "registry-intelligence"
 og_title = "Rejstříkové zpravodajství: dovednosti"
 og_image = "og/cs-skill-registry-intelligence.png"
 schema = "skill"
-terms = ["skill", "public-registry", "css", "elixir", "javascript", "mcp", "postgis"]
+terms = ["skill", "public-registry", "css", "ecto", "elixir", "flowbite-pro", "javascript", "mcp", "nominatim", "openapi", "phoenix", "postgis"]
 keywords = ["Rejstříkové zpravodajství", "Due diligence firem a protistran", "Digitální vyšetřování a OSINT dossier", "Monitoring insolvencí, sporů a změn v rejstřících", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -31,7 +31,7 @@ Pojem, na kterém stojí: [Veřejný rejstřík](@/glossary/public-registry.cs.m
 
 Služby, které z ní čerpají: [Due diligence firem a protistran](@/services/due-diligence.cs.md), [Digitální vyšetřování a OSINT dossier](@/services/digital-investigation.cs.md) a [Monitoring insolvencí, sporů a změn v rejstřících](@/services/continuous-monitoring.cs.md).
 
-Praktikovaná s: [CSS](@/glossary/css.cs.md), [Elixir](@/glossary/elixir.cs.md), [JavaScript](@/glossary/javascript.cs.md), [MCP](@/glossary/mcp.cs.md) a [PostGIS](@/glossary/postgis.cs.md).
+Praktikovaná s: [CSS](@/glossary/css.cs.md), [Ecto](@/glossary/ecto.cs.md), [Elixir](@/glossary/elixir.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md), [JavaScript](@/glossary/javascript.cs.md), [MCP](@/glossary/mcp.cs.md), [Nominatim](@/glossary/nominatim.cs.md) a [OpenAPI](@/glossary/openapi.cs.md).
 
 Veřejná práce, jejíž vlastní slova ji dokládají: [crisis-map](https://github.com/korczis/crisis-map).
 

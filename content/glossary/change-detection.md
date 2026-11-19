@@ -3,7 +3,7 @@
 title = "Change detection"
 description = "Noticing when a source changes and judging whether the change matters, so an alert means something."
 template = "term.html"
-weight = 75
+weight = 110
 
 [taxonomies]
 tags = ["Glossary", "Concept"]
@@ -17,7 +17,7 @@ definition = "Noticing when a source changes and judging whether the change matt
 aliases = []
 reference = { title = "Wikipedia: change detection", url = "https://en.wikipedia.org/wiki/Change_detection" }
 pages = ["services/_index.md", "services/attack-surface.md", "services/continuous-monitoring.md", "services/digital-investigation.md", "services/reputation-intelligence.md", "skills/_index.md", "skills/change-monitoring.md"]
-related = ["javascript", "alpine-js", "dockerfile", "fastapi", "flowbite-pro", "html", "service", "attack-surface"]
+related = ["javascript", "dockerfile", "html", "service", "flowbite-pro", "alpine-js", "attack-surface", "elixir"]
 og_title = "Change detection: glossary"
 og_image = "og/glossary-change-detection.png"
 keywords = ["Change detection", "Concept", "Glossary", "Tomas Korcak"]

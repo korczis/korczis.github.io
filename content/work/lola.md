@@ -17,7 +17,7 @@ og_description = "lola: Tools in JavaScript, 2013–2014, archive. Source on Git
 og_image = "og/work-lola.png"
 schema = "project"
 keywords = ["lola", "Tools", "JavaScript", "2013–2014", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["javascript", "open-source", "repository", "commit"]
+terms = ["javascript", "nodejs", "travis-ci", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

@@ -17,7 +17,7 @@ og_description = "books: Znalosti, 2013, archiv. Zdrojový kód: GitHub a GitLab
 og_image = "og/cs-work-books.png"
 schema = "project"
 keywords = ["books", "Znalosti", "2013", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["repository", "commit", "open-source"]
+terms = ["markdown", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

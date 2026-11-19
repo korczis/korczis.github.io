@@ -17,7 +17,7 @@ og_description = "bcnode-extra-scripts: Nástroje, Shell, 2018, archiv. Zdrojov�
 og_image = "og/cs-work-bcnode-extra-scripts.png"
 schema = "project"
 keywords = ["bcnode-extra-scripts", "Nástroje", "Shell", "2018", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["shell", "open-source", "repository", "commit"]
+terms = ["shell", "dockerfile", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

@@ -13,7 +13,7 @@ skill = "ai-transformation"
 og_title = "AI transformation: skills"
 og_image = "og/skill-ai-transformation.png"
 schema = "skill"
-terms = ["skill", "ai-agent", "shell", "alpine-js", "claude-api", "dockerfile", "fastapi", "flowbite-pro", "github-actions", "html", "javascript", "kubernetes"]
+terms = ["skill", "ai-agent", "dockerfile", "shell", "alpine-js", "ansible", "claude-api", "fastapi", "flowbite-pro", "github-actions", "html", "javascript"]
 keywords = ["AI transformation", "Decision support and AI agents for analysts", "Governed AI-assisted software delivery", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -31,7 +31,7 @@ The concept behind it: [AI agent](@/glossary/ai-agent.md).
 
 Services that draw on it: [Decision support and AI agents for analysts](@/services/decision-support-ai.md) and [Governed AI-assisted software delivery](@/services/ai-engineering-governance.md).
 
-Practised with: [Shell](@/glossary/shell.md), [Alpine.js](@/glossary/alpine-js.md), [Claude API](@/glossary/claude-api.md), [Dockerfile](@/glossary/dockerfile.md), [FastAPI](@/glossary/fastapi.md), [Flowbite Pro](@/glossary/flowbite-pro.md), [GitHub Actions](@/glossary/github-actions.md) and [HTML](@/glossary/html.md).
+Practised with: [Dockerfile](@/glossary/dockerfile.md), [Shell](@/glossary/shell.md), [Alpine.js](@/glossary/alpine-js.md), [Ansible](@/glossary/ansible.md), [Claude API](@/glossary/claude-api.md), [FastAPI](@/glossary/fastapi.md), [Flowbite Pro](@/glossary/flowbite-pro.md) and [GitHub Actions](@/glossary/github-actions.md).
 
 Public work whose own words show it: [server-archlinux](https://github.com/korczis/server-archlinux).
 

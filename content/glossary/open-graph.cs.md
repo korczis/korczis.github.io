@@ -3,7 +3,7 @@
 title = "Open Graph"
 description = "Meta tagy, které sociálním sítím říkají, jak zobrazit náhled odkazu: titulek, popis a obrázek."
 template = "term.html"
-weight = 97
+weight = 132
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

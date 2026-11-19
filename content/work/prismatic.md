@@ -17,7 +17,7 @@ og_description = "prismatic: Tools in Elixir, JavaScript and Python, 2025, activ
 og_image = "og/work-prismatic.png"
 schema = "project"
 keywords = ["prismatic", "Tools", "Elixir", "JavaScript", "Python", "2025", "GitHub", "Tomas Korcak", "korczis"]
-terms = ["elixir", "javascript", "python", "shell", "css", "html", "open-source", "repository", "commit"]
+terms = ["elixir", "javascript", "python", "shell", "css", "html", "phoenix", "postgresql", "ecto", "broadway", "tailwind-css", "gitlab-ci", "github-actions", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

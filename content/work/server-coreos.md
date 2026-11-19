@@ -17,7 +17,7 @@ og_description = "server-coreos: Systems and infrastructure, 2019, archive. Sour
 og_image = "og/work-server-coreos.png"
 schema = "project"
 keywords = ["server-coreos", "Systems and infrastructure", "2019", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["repository", "commit", "open-source"]
+terms = ["coreos", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

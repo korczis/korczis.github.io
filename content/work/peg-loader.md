@@ -17,7 +17,7 @@ og_description = "peg-loader: Tools in JavaScript, 2016, archive. Source on GitH
 og_image = "og/work-peg-loader.png"
 schema = "project"
 keywords = ["peg-loader", "Tools", "JavaScript", "2016", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["javascript", "open-source", "repository", "commit"]
+terms = ["javascript", "nodejs", "webpack", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

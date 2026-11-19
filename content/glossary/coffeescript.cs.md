@@ -17,7 +17,7 @@ definition = "Malý jazyk se stručnější syntaxí, který se překládá př�
 aliases = []
 reference = { title = "coffeescript.org", url = "https://coffeescript.org/" }
 pages = ["work/gooddata-rails-app.cs.md"]
-related = ["commit", "css", "gis", "javascript", "open-source", "repository", "ruby"]
+related = ["commit", "css", "gis", "javascript", "jquery", "open-source", "repository", "ruby"]
 og_title = "CoffeeScript: slovník"
 og_image = "og/cs-glossary-coffeescript.png"
 keywords = ["CoffeeScript", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

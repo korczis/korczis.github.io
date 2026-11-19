@@ -17,7 +17,7 @@ og_description = "server-coreos: Systémy a infrastruktura, 2019, archiv. Zdrojo
 og_image = "og/cs-work-server-coreos.png"
 schema = "project"
 keywords = ["server-coreos", "Systémy a infrastruktura", "2019", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["repository", "commit", "open-source"]
+terms = ["coreos", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

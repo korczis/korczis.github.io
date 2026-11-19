@@ -17,7 +17,7 @@ definition = "Šablonovací systém pro PHP, který odděluje prezentaci od apli
 aliases = []
 reference = { title = "smarty.net", url = "https://www.smarty.net/" }
 pages = ["work/cluster-kubernetes.cs.md"]
-related = ["commit", "open-source", "repository", "shell"]
+related = ["commit", "couchbase", "elasticsearch", "kibana", "kubernetes", "nominatim", "open-source", "postgresql"]
 og_title = "Smarty: slovník"
 og_image = "og/cs-glossary-smarty.png"
 keywords = ["Smarty", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

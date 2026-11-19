@@ -17,7 +17,7 @@ og_description = "astudo: Nástroje, Elixir, CSS a Rust, 2022, archiv. Zdrojový
 og_image = "og/cs-work-astudo.png"
 schema = "project"
 keywords = ["astudo", "Nástroje", "Elixir", "CSS", "Rust", "2022", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["elixir", "css", "rust", "dockerfile", "javascript", "open-source", "repository", "commit"]
+terms = ["elixir", "css", "rust", "dockerfile", "javascript", "phoenix", "rustler", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

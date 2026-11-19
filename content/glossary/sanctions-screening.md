@@ -3,7 +3,7 @@
 title = "Sanctions screening"
 description = "Checking people and companies against sanctions lists and politically exposed persons before a business relationship, as anti-money-laundering rules require."
 template = "term.html"
-weight = 107
+weight = 142
 
 [taxonomies]
 tags = ["Glossary", "Concept"]

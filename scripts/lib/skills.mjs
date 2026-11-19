@@ -4,15 +4,22 @@
 // engagements (data/experience.json, mined; never a client's name). One function, read by
 // scripts/build-glossary.mjs (the term pages, their articles and data/skills.json) and by
 // scripts/check-glossary.mjs (every measured name has a term). Nothing here is typed by hand.
-import { readJson, readToml, slug } from './derive.mjs';
+import { readdirSync } from 'node:fs';
+import { join } from 'node:path';
+import { ROOT, readJson, readToml, slug } from './derive.mjs';
 
 // The smallest measured share (percent of a repository's code) that counts as using a language;
 // below it a language is a stray file (a build script, a vendored snippet), not evidence.
 export const MIN_SHARE = 1;
 
+// A technology a repository's dossier finds in its files (data/dossiers/<repo>.json stack, inferred
+// from manifests, imports and configuration) is a measured name, and so owes a glossary page, once
+// that many repositories use it; below it the dossier still counts as evidence on a term that exists.
+export const MIN_DOSSIER_REPOS = 4;
+
 // Every name the data uses for a language or technology, with where it comes from: the coverage
 // a glossary must give a page to (rule project.everything-interlinked).
-export function measuredNames({ index, recent, catalogue, experience, services }) {
+export function measuredNames({ index, recent, catalogue, experience, services, dossiers }) {
   const names = new Map();
   const add = (name, from) => { if (name) names.set(name, [...new Set([...(names.get(name) ?? []), from])]); };
   for (const l of index.languages) add(l.name, 'data/index.json languages');
@@ -20,6 +27,14 @@ export function measuredNames({ index, recent, catalogue, experience, services }
   for (const p of catalogue.projects) for (const s of p.stack ?? []) add(s, `data/projects.toml ${p.repo}`);
   for (const e of experience.engagements) for (const s of e.technologies) add(s, `data/experience.json ${e.id}`);
   for (const sv of services?.services ?? []) for (const s of sv.stack ?? []) add(s, `data/services.toml ${sv.id}`);
+  const inFiles = new Map();
+  for (const [repo, stack] of dossiers ?? new Map()) {
+    for (const s of new Set(stack.map((x) => x.toLowerCase()))) inFiles.set(s, [...(inFiles.get(s) ?? []), repo]);
+  }
+  const spelled = new Map([...(dossiers ?? new Map()).values()].flat().map((x) => [x.toLowerCase(), x]));
+  for (const [key, repos] of inFiles) {
+    if (repos.length >= MIN_DOSSIER_REPOS) add(spelled.get(key), `data/dossiers (${repos.length} repositories)`);
+  }
   return names;
 }
 
@@ -38,14 +53,26 @@ export function loadSources() {
     catalogue: readToml('data/projects.toml'),
     experience: readJson('data/experience.json'),
     services: readToml('data/services.toml'),
+    dossiers: loadDossierStacks(),
   };
+}
+
+// repo -> the technologies its dossier infers from its files (data/dossiers/*.json stack).
+export function loadDossierStacks() {
+  const dir = join(ROOT, 'data/dossiers');
+  const out = new Map();
+  for (const f of readdirSync(dir).filter((x) => x.endsWith('.json')).sort()) {
+    const d = readJson(`data/dossiers/${f}`);
+    if (Array.isArray(d.stack) && d.stack.length) out.set(d.repo, d.stack.map(String));
+  }
+  return out;
 }
 
 const year = (iso) => (iso ? Number(iso.slice(0, 4)) : null);
 
 // term id -> { repos, counts, years, categories, engagements }, for every language and technology
 // term (concepts have no code to measure).
-export function skillEvidence(g, { index, recent, catalogue, experience }) {
+export function skillEvidence(g, { index, recent, catalogue, experience, dossiers }) {
   const termOf = (name) => g.byName.get(String(name).toLowerCase()) ?? null;
   const recentOf = new Map(recent.repos.map((r) => [r.name, r]));
   const curatedOf = new Map(catalogue.projects.map((p) => [p.repo, p]));
@@ -68,6 +95,7 @@ export function skillEvidence(g, { index, recent, catalogue, experience }) {
     for (const l of rc?.languages ?? []) if (l.share >= MIN_SHARE) use(l.name, 'code', l.share);
     for (const s of curated?.stack ?? []) use(s, 'stack');
     for (const tp of r.topics ?? []) use(tp, 'topic');
+    for (const s of dossiers?.get(r.name) ?? []) use(s, 'files');
     if (!uses.size) continue;
     const all = [...uses.keys()];
     for (const [id, u] of uses) {

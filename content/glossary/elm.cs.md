@@ -17,7 +17,7 @@ definition = "Čistě funkcionální jazyk pro webové frontendy, který se pře
 aliases = []
 reference = { title = "elm-lang.org", url = "https://elm-lang.org/" }
 pages = ["work/magic.cs.md", "work/mapoffacts.cs.md", "work/the-scratch.cs.md", "work/web-spa.cs.md", "work/zaas.cs.md"]
-related = ["commit", "elixir", "javascript", "open-source", "repository", "html", "rust", "static-site-generator"]
+related = ["commit", "elixir", "javascript", "open-source", "phoenix", "repository", "html", "rust"]
 og_title = "Elm: slovník"
 og_image = "og/cs-glossary-elm.png"
 keywords = ["Elm", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

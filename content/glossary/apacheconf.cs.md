@@ -17,7 +17,7 @@ definition = "Konfigurační jazyk webového serveru Apache HTTP: virtuální ho
 aliases = ["Apache"]
 reference = { title = "Apache HTTP Server documentation", url = "https://httpd.apache.org/docs/current/" }
 pages = ["projects/web.cs.md", "work/pavian-eu.cs.md"]
-related = ["css", "html", "javascript", "repository", "static-site-generator", "commit", "elixir", "open-source"]
+related = ["css", "html", "javascript", "repository", "static-site-generator", "bootstrap", "bower", "commit"]
 og_title = "ApacheConf: slovník"
 og_image = "og/cs-glossary-apacheconf.png"
 keywords = ["ApacheConf", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

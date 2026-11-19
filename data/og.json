@@ -153,8 +153,13 @@
    "by": "pngquant 3.0.3"
   },
   "cs-glossary": {
-   "svg": "eb360de512d9c1ac",
-   "png": "bac9c8698c24e3b8",
+   "svg": "95a34f8d3484c3d6",
+   "png": "fe90975a4d1d432d",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-absinthe": {
+   "svg": "c740f5b815e23ac4",
+   "png": "4dfc56f4a8313e10",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-ai-agent": {
@@ -165,6 +170,11 @@
   "cs-glossary-alpine-js": {
    "svg": "05bf4d46b42d8fad",
    "png": "9420e6f67e0dd92a",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-ansible": {
+   "svg": "9c030014dbe696fd",
+   "png": "232354ba6ccf9037",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-apache-echarts": {
@@ -192,9 +202,24 @@
    "png": "7212291843a638e3",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-babel": {
+   "svg": "b9848c500bc51fe6",
+   "png": "9bafbfbeaceaedf7",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-beneficial-ownership": {
    "svg": "f806a25f88bf29c6",
    "png": "05c712f9528896f1",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-bootstrap": {
+   "svg": "d58a750824b3ea4a",
+   "png": "a54bdd7f9b51f486",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-bower": {
+   "svg": "cbcf5629ab61f72c",
+   "png": "646efa8f43eda83b",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-broadway": {
@@ -227,6 +252,16 @@
    "png": "4ded889fadf6605b",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-cheerio": {
+   "svg": "1ac5986f7c113b02",
+   "png": "2ff14241a6171f12",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-clap": {
+   "svg": "6757cbe89b9200cb",
+   "png": "683ba3d8828cfb0f",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-claude-api": {
    "svg": "51e309e7e7a45fdd",
    "png": "3e7064e28222b657",
@@ -252,6 +287,21 @@
    "png": "67dbb9f0767631d2",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-coreos": {
+   "svg": "cad33c0d6e3ce3a1",
+   "png": "d3534e343ae79d60",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-couchbase": {
+   "svg": "28e56dfca3de3c4b",
+   "png": "c979ca8b42edfd08",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-cowboy": {
+   "svg": "c8b841119addbfc1",
+   "png": "82ae655e79433283",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-cpp": {
    "svg": "b38deda6fab6da22",
    "png": "2568bd61144ec4c8",
@@ -265,6 +315,11 @@
   "cs-glossary-css": {
    "svg": "45c48d378e020bb2",
    "png": "dabe6b96612b84c6",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-csv": {
+   "svg": "b910c40ec6beef01",
+   "png": "6c3a352608969267",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-cytoscape-js": {
@@ -307,9 +362,19 @@
    "png": "82c4210265ec8003",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-ecto": {
+   "svg": "85b0751af12f17e8",
+   "png": "b80c8c5cffb61382",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-eex": {
    "svg": "8a38c6c1ffb6a976",
    "png": "81a356347e38baf8",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-elasticsearch": {
+   "svg": "40a0bbf74c07cf00",
+   "png": "7e6905d9e853021f",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-elixir": {
@@ -322,9 +387,19 @@
    "png": "49f40b32aff64694",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-ember-js": {
+   "svg": "cf42a3a891aa009a",
+   "png": "ebd2e9d62366b4b2",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-erlang": {
    "svg": "f3ffd962e8778ce8",
    "png": "2655729399459c2a",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-express": {
+   "svg": "46119cd034d5c5d4",
+   "png": "5cb1a56a83427f04",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-fastapi": {
@@ -367,6 +442,26 @@
    "png": "6fd5c510b0fa3d9b",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-gitlab-ci": {
+   "svg": "33eff147d6eea894",
+   "png": "8225033e74c73095",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-gli": {
+   "svg": "ffb9ad43c5611b40",
+   "png": "4333b45ce470f7f6",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-graphql": {
+   "svg": "f95391b19f4536ee",
+   "png": "d55a510a97163f08",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-handlebars": {
+   "svg": "ce1aa0173a1996fe",
+   "png": "ac60e6f36eeb01b6",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-haskell": {
    "svg": "309de9897e5fc7f6",
    "png": "67f970b4cdc8a6bf",
@@ -392,6 +487,11 @@
    "png": "0d3f779349d8b715",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-jason": {
+   "svg": "6c48b66c9fe38e44",
+   "png": "1924ebb7f4e80031",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-java": {
    "svg": "5d31a9cdb3954f44",
    "png": "c6c1a629a9502c7e",
@@ -402,6 +502,16 @@
    "png": "e11c648e7af996ad",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-jquery": {
+   "svg": "41d0f1c870508f12",
+   "png": "da8ed1ac36431741",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-json": {
+   "svg": "dbfb9b06d59a3b83",
+   "png": "84802b32c3153d82",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-json-ld": {
    "svg": "8a59755c8b654db2",
    "png": "74821abf61741be5",
@@ -410,6 +520,11 @@
   "cs-glossary-just": {
    "svg": "078b5aa6b97caea2",
    "png": "0bfbe455157be6aa",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-kibana": {
+   "svg": "9c09838b528214af",
+   "png": "2299a61b9816a279",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-knowledge-graph": {
@@ -442,6 +557,11 @@
    "png": "3da28db9c0825082",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-markdown": {
+   "svg": "dee0ba38dfe67e56",
+   "png": "f851ee0225fc96a4",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-market-intelligence": {
    "svg": "b5d3dde142997a0b",
    "png": "50cfd17ed6fc5966",
@@ -472,6 +592,16 @@
    "png": "533b48240df7a834",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-mocha": {
+   "svg": "31a75105b4bcb640",
+   "png": "360cde0271af1d57",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-mongodb": {
+   "svg": "dd3e29fb5ae32311",
+   "png": "76951afcafed5614",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-monte-carlo-simulation": {
    "svg": "f501cddf60bd5706",
    "png": "63866802b4c96c21",
@@ -480,6 +610,16 @@
   "cs-glossary-nix": {
    "svg": "0aa2eac1bf7749f3",
    "png": "0e28b2b3b7b3c0ae",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-nodejs": {
+   "svg": "3a75b8c9c1bdd978",
+   "png": "191aecd5d0ad1c05",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-nominatim": {
+   "svg": "12f195c9128f73fb",
+   "png": "8e04cc1d93f23cac",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-objective-c": {
@@ -587,6 +727,11 @@
    "png": "0deaca6c2569f862",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-rabbitmq": {
+   "svg": "d8786606a395e0d9",
+   "png": "90ce646ea2cdbf12",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-react": {
    "svg": "5b291067060578cd",
    "png": "d759f5c892f0552b",
@@ -617,6 +762,11 @@
    "png": "9a3820f93d258900",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-rspec": {
+   "svg": "e98a9e0c83cd2728",
+   "png": "787c41f0144e67ee",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-ruby": {
    "svg": "a6edb3de8f361f6d",
    "png": "08f79fee0cd557cc",
@@ -627,6 +777,11 @@
    "png": "11459bdfcabde4bb",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-rustler": {
+   "svg": "a42887bd17480b8a",
+   "png": "fc3ea4638754c5a2",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-sanctions-screening": {
    "svg": "de3b8c44061535cc",
    "png": "0fd47376f5016316",
@@ -635,6 +790,11 @@
   "cs-glossary-scss": {
    "svg": "f22d490bc144116d",
    "png": "9ce24d71c0e08d1c",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-serde": {
+   "svg": "75568b1571232487",
+   "png": "07985a4c48d382a6",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-service": {
@@ -655,6 +815,11 @@
   "cs-glossary-smarty": {
    "svg": "21656f1a03e1970a",
    "png": "efa900ccdf95c509",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-socket-io": {
+   "svg": "00ecc75780b97fe6",
+   "png": "6acfeb6bcbc4a391",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-source-criticism": {
@@ -692,6 +857,11 @@
    "png": "fe748de6a8fe6fd5",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-travis-ci": {
+   "svg": "787a554d857f8158",
+   "png": "4f3e953a0b283805",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-typescript": {
    "svg": "0336c8b918afb114",
    "png": "57b79f9ce691eff5",
@@ -715,6 +885,11 @@
   "cs-glossary-web-scraping": {
    "svg": "157a710c2f2eee75",
    "png": "b94803dad504fe22",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-webpack": {
+   "svg": "150171937c7d66ca",
+   "png": "c9dd8bf5efec7fa2",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-xslt": {
@@ -2013,8 +2188,13 @@
    "by": "pngquant 3.0.3"
   },
   "glossary": {
-   "svg": "8a041e36aecde630",
-   "png": "f3c39c5565450ee2",
+   "svg": "d9fa654e60e04060",
+   "png": "a9aa8302b456d77b",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-absinthe": {
+   "svg": "d1d18af08c65ce91",
+   "png": "2d1e84389261ae6a",
    "by": "pngquant 3.0.3"
   },
   "glossary-ai-agent": {
@@ -2025,6 +2205,11 @@
   "glossary-alpine-js": {
    "svg": "9db7434f370ee146",
    "png": "1b3d4d41dc0d57ec",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-ansible": {
+   "svg": "afbd7b50fc4fa205",
+   "png": "029f3484c4feb229",
    "by": "pngquant 3.0.3"
   },
   "glossary-apache-echarts": {
@@ -2052,9 +2237,24 @@
    "png": "f8dda2501fd6ffc3",
    "by": "pngquant 3.0.3"
   },
+  "glossary-babel": {
+   "svg": "208d1229af7d984d",
+   "png": "e448a2d087565be9",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-beneficial-ownership": {
    "svg": "c30eff8670983d70",
    "png": "b352b02b000d7133",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-bootstrap": {
+   "svg": "5431aa464006cc2b",
+   "png": "0499690c9b2148de",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-bower": {
+   "svg": "334db44e05f4efd3",
+   "png": "997ddd6e66f5b0c5",
    "by": "pngquant 3.0.3"
   },
   "glossary-broadway": {
@@ -2087,6 +2287,16 @@
    "png": "cc463057861cda16",
    "by": "pngquant 3.0.3"
   },
+  "glossary-cheerio": {
+   "svg": "7acf931e7948b55d",
+   "png": "8514ba124516ebbf",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-clap": {
+   "svg": "04d5f695d529d2bf",
+   "png": "bcb8e76b8470b235",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-claude-api": {
    "svg": "5726ddcc953f27a6",
    "png": "7f7e3ecf7d91757a",
@@ -2112,6 +2322,21 @@
    "png": "9ed5ec93f8c72cb5",
    "by": "pngquant 3.0.3"
   },
+  "glossary-coreos": {
+   "svg": "cdb10e92c670e968",
+   "png": "2121f1e742d6011f",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-couchbase": {
+   "svg": "939692e3b26b438a",
+   "png": "898f9c884a89c146",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-cowboy": {
+   "svg": "29289f9ed41a145e",
+   "png": "b163b470dc29edbd",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-cpp": {
    "svg": "10ecf78897b7fba2",
    "png": "5d2a2e9d1db215ce",
@@ -2125,6 +2350,11 @@
   "glossary-css": {
    "svg": "594b59a2ba7f31eb",
    "png": "582bea27e6319222",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-csv": {
+   "svg": "b0511f850db44c7c",
+   "png": "4c071387fa89553d",
    "by": "pngquant 3.0.3"
   },
   "glossary-cytoscape-js": {
@@ -2167,9 +2397,19 @@
    "png": "172d14ecdda9a497",
    "by": "pngquant 3.0.3"
   },
+  "glossary-ecto": {
+   "svg": "c596db617baedf66",
+   "png": "c5e5acd180d99ec2",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-eex": {
    "svg": "12be1cefa8913cd3",
    "png": "089fd16f54559f50",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-elasticsearch": {
+   "svg": "eef5d38ad0315f39",
+   "png": "7c72638b4e8f850e",
    "by": "pngquant 3.0.3"
   },
   "glossary-elixir": {
@@ -2182,9 +2422,19 @@
    "png": "326c7b752288ba77",
    "by": "pngquant 3.0.3"
   },
+  "glossary-ember-js": {
+   "svg": "c2b574bd22d4e193",
+   "png": "45834abacb56b91b",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-erlang": {
    "svg": "1a50c2d95506881e",
    "png": "56e50d6bb0578186",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-express": {
+   "svg": "d6c28076b5d9c7c4",
+   "png": "35adab060451ddb5",
    "by": "pngquant 3.0.3"
   },
   "glossary-fastapi": {
@@ -2227,6 +2477,26 @@
    "png": "3317b0e065f1f78c",
    "by": "pngquant 3.0.3"
   },
+  "glossary-gitlab-ci": {
+   "svg": "7b3d6bf063c8469f",
+   "png": "a36c2f9f38336841",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-gli": {
+   "svg": "3f388a5f0df98e48",
+   "png": "889021e6e3a53d93",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-graphql": {
+   "svg": "fcde7f28ea37feac",
+   "png": "7ac80743fa2026d3",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-handlebars": {
+   "svg": "6a738228dd22e15e",
+   "png": "a7916141d4688219",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-haskell": {
    "svg": "9ef33c2b15bb97a6",
    "png": "6942a420316c05ae",
@@ -2252,6 +2522,11 @@
    "png": "092fd9b0591561d8",
    "by": "pngquant 3.0.3"
   },
+  "glossary-jason": {
+   "svg": "6feb7b9594248da1",
+   "png": "79d30976cbf2c2cc",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-java": {
    "svg": "3197b37ff2fcede1",
    "png": "5cc793d12f99959d",
@@ -2262,6 +2537,16 @@
    "png": "52c4c106f08233b4",
    "by": "pngquant 3.0.3"
   },
+  "glossary-jquery": {
+   "svg": "cf004ab6297af027",
+   "png": "1fa356460dfda7be",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-json": {
+   "svg": "336303a8d9bb4b19",
+   "png": "e19276892164669f",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-json-ld": {
    "svg": "625835e703c79a83",
    "png": "4637992c7476af1f",
@@ -2270,6 +2555,11 @@
   "glossary-just": {
    "svg": "bd9622a9f57fc5d6",
    "png": "0c5981faab6525ac",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-kibana": {
+   "svg": "fd7c301d05d08496",
+   "png": "a304199a9a9f1f81",
    "by": "pngquant 3.0.3"
   },
   "glossary-knowledge-graph": {
@@ -2302,6 +2592,11 @@
    "png": "19977b7e008a2470",
    "by": "pngquant 3.0.3"
   },
+  "glossary-markdown": {
+   "svg": "e03a2f8249dee7fe",
+   "png": "0ba7b7c4653fd5bb",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-market-intelligence": {
    "svg": "b255f53e80db1b79",
    "png": "f34aea4a9427d18f",
@@ -2332,6 +2627,16 @@
    "png": "a7dba6ccfb8a82e3",
    "by": "pngquant 3.0.3"
   },
+  "glossary-mocha": {
+   "svg": "b739499a80184991",
+   "png": "ba454f72787fd74e",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-mongodb": {
+   "svg": "b03866aedfe1a797",
+   "png": "dc4d3139ae9d1297",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-monte-carlo-simulation": {
    "svg": "31d72b22b4f2b1cc",
    "png": "bdfdbc9cc6dfc909",
@@ -2340,6 +2645,16 @@
   "glossary-nix": {
    "svg": "0f3438a227f9f0af",
    "png": "4db300d7963cebde",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-nodejs": {
+   "svg": "98dea0878f39e7b0",
+   "png": "59d1cc11cb3d1d76",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-nominatim": {
+   "svg": "9f653adf0f71727c",
+   "png": "e9c6fe2800795361",
    "by": "pngquant 3.0.3"
   },
   "glossary-objective-c": {
@@ -2447,6 +2762,11 @@
    "png": "c52904706df2afbf",
    "by": "pngquant 3.0.3"
   },
+  "glossary-rabbitmq": {
+   "svg": "5dd1bb27a87826da",
+   "png": "840f05ab930ff9df",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-react": {
    "svg": "73a145a198c8da95",
    "png": "f7ca1534a44a9c07",
@@ -2477,6 +2797,11 @@
    "png": "dc741ead5c18b597",
    "by": "pngquant 3.0.3"
   },
+  "glossary-rspec": {
+   "svg": "1e0a38358cca6830",
+   "png": "6e5c0369ac92fb97",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-ruby": {
    "svg": "47cfe5e5e6a930b6",
    "png": "a2173ff2026c200a",
@@ -2487,6 +2812,11 @@
    "png": "4a6a01bf6f7750c1",
    "by": "pngquant 3.0.3"
   },
+  "glossary-rustler": {
+   "svg": "8184697169b2a2c5",
+   "png": "91c5c323cab894a0",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-sanctions-screening": {
    "svg": "7e67d0c92b312e9a",
    "png": "f797f9e0c44f14ce",
@@ -2495,6 +2825,11 @@
   "glossary-scss": {
    "svg": "0b35be2c6e096299",
    "png": "851d8e89787da20b",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-serde": {
+   "svg": "6c93e3c288700a60",
+   "png": "f0e800ac74c098ce",
    "by": "pngquant 3.0.3"
   },
   "glossary-service": {
@@ -2515,6 +2850,11 @@
   "glossary-smarty": {
    "svg": "be6cbd595ab6c3af",
    "png": "e3dc63588b433040",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-socket-io": {
+   "svg": "3161a74b0690ee23",
+   "png": "48e941b4e4c2e845",
    "by": "pngquant 3.0.3"
   },
   "glossary-source-criticism": {
@@ -2552,6 +2892,11 @@
    "png": "f898d0c34143a118",
    "by": "pngquant 3.0.3"
   },
+  "glossary-travis-ci": {
+   "svg": "f2206ea3ec2560c0",
+   "png": "0e3a02421584bf10",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-typescript": {
    "svg": "2990580caa048995",
    "png": "ce6c99e560af532c",
@@ -2575,6 +2920,11 @@
   "glossary-web-scraping": {
    "svg": "d8a6e0c60fd863e0",
    "png": "30497b76fe5f4a76",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-webpack": {
+   "svg": "2e55772557cfba9c",
+   "png": "c6b44673759ff2e7",
    "by": "pngquant 3.0.3"
   },
   "glossary-xslt": {

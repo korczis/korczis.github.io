@@ -17,7 +17,7 @@ og_description = "ideas: Tools, 2016, archive. Source on GitHub and GitLab."
 og_image = "og/work-ideas.png"
 schema = "project"
 keywords = ["ideas", "Tools", "2016", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["open-source", "repository", "commit"]
+terms = ["markdown", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

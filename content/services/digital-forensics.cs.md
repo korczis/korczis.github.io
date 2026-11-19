@@ -14,7 +14,7 @@ icon = "lock"
 og_title = "Digitální forenzní analýza a zajištění důkazů"
 og_image = "og/cs-service-digital-forensics.png"
 schema = "service"
-terms = ["service", "elixir", "postgresql", "lean", "digital-forensics", "chain-of-custody", "attack-surface", "audit-trail", "reputation-risk", "source-criticism", "claude-api", "html", "javascript", "python", "shell", "rust", "alpine-js", "c", "css", "dockerfile"]
+terms = ["service", "elixir", "postgresql", "lean", "digital-forensics", "chain-of-custody", "attack-surface", "audit-trail", "reputation-risk", "source-criticism", "claude-api", "html", "javascript", "python", "dockerfile", "shell", "alpine-js", "ecto", "flowbite-pro", "github-actions"]
 keywords = ["Digitální forenzní analýza a zajištění důkazů", "Forenzní analýza webu a médií", "Řetězec úschovy důkazů", "Infrastrukturní OSINT", "Auditní stopa", "Analýza narativů a reputace", "Spolehlivost zdrojů", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -34,7 +34,7 @@ Každý surový sběr zahashovat a zřetězit do úložiště jen pro zápis, ud
 
 Je postavená na: [Elixir](@/glossary/elixir.cs.md), [PostgreSQL](@/glossary/postgresql.cs.md) a [Lean](@/glossary/lean.cs.md).
 
-Technologie za ní, změřené z práce, která tyto dovednosti dokládá: [Claude API](@/glossary/claude-api.cs.md), [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Python](@/glossary/python.cs.md), [Shell](@/glossary/shell.cs.md), [Rust](@/glossary/rust.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md) a [C](@/glossary/c.cs.md).
+Technologie za ní, změřené z práce, která tyto dovednosti dokládá: [Claude API](@/glossary/claude-api.cs.md), [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Python](@/glossary/python.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md), [Shell](@/glossary/shell.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md) a [Ecto](@/glossary/ecto.cs.md).
 
 Její dovednosti dokládá 7 veřejných repozitářů (7 vlastními slovy).
 

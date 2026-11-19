@@ -17,7 +17,7 @@ og_description = "the-scratch: Web in JavaScript, Elixir and Elm, 2017–2018, a
 og_image = "og/work-the-scratch.png"
 schema = "project"
 keywords = ["the-scratch", "Web", "JavaScript", "Elixir", "Elm", "ecto", "phoenix", "phoenix-backend", "single-page-app", "2017–2018", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["javascript", "elixir", "elm", "rust", "html", "static-site-generator", "repository", "commit", "open-source"]
+terms = ["javascript", "elixir", "elm", "rust", "html", "phoenix", "absinthe", "graphql", "rustler", "couchbase", "webpack", "static-site-generator", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

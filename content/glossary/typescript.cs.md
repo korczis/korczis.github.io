@@ -16,8 +16,8 @@ kind = "language"
 definition = "JavaScript se statickými typy, kontrolovanými před spuštěním a kompilovanými do běžného JavaScriptu."
 aliases = []
 reference = { title = "TypeScript handbook", url = "https://www.typescriptlang.org/docs/" }
-pages = ["projects/science.cs.md", "projects/tools.cs.md", "skills/data-integration.cs.md", "skills/llm-agents.cs.md", "skills/osint-investigation.cs.md", "work/algoglyph.cs.md", "work/astronomists.cs.md", "work/dispatcher.cs.md", "work/sig.cs.md", "work/ts-logger.cs.md", "_index.cs.md"]
-related = ["javascript", "repository", "shell", "elixir", "open-source", "alpine-js", "commit", "html"]
+pages = ["projects/science.cs.md", "projects/tools.cs.md", "skills/interactive-visualisation.cs.md", "work/algoglyph.cs.md", "work/astronomists.cs.md", "work/dispatcher.cs.md", "work/sig.cs.md", "work/sonic-playground.cs.md", "work/ts-logger.cs.md", "_index.cs.md"]
+related = ["repository", "javascript", "open-source", "commit", "shell", "elixir", "flowbite-pro", "python"]
 og_title = "TypeScript: slovník"
 og_image = "og/cs-glossary-typescript.png"
 keywords = ["TypeScript", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
@@ -40,13 +40,13 @@ span = 3
 height = "md"
 tone = "night"
 +++
-TypeScript jsem psal v 5 veřejných repozitářích, od roku 2019 do 2026; ve 3 z nich je hlavním jazykem.
+TypeScript jsem psal v 6 veřejných repozitářích, od roku 2019 do 2026; ve 3 z nich je hlavním jazykem.
 
-K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (3), [Inženýrství AI](@/projects/ai.cs.md) (1) a [Věda a vizualizace](@/projects/science.cs.md) (1).
+K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (3), [Inženýrství AI](@/projects/ai.cs.md) (1), [Média a umění](@/projects/media.cs.md) (1) a [Věda a vizualizace](@/projects/science.cs.md) (1).
 
-Naposledy: [algoglyph](@/work/algoglyph.cs.md): Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem; [astronomists](@/work/astronomists.cs.md); [sig](@/work/sig.cs.md).
+Naposledy: [algoglyph](@/work/algoglyph.cs.md): Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem; [Sonic Playground](@/work/sonic-playground.cs.md): Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita; [astronomists](@/work/astronomists.cs.md).
 
-2 z těchto projektů běží jako živé weby.
+3 z těchto projektů běží jako živé weby.
 
 Používal jsem ho také v klientské práci pod dohodami o mlčenlivosti. Role: Architekt, Vedoucí inženýr, Inženýr AI a Datový inženýr. Co se řešilo: Agenti s LLM, Podpora rozhodování, Transformace s AI a Auditní stopa. Případy užití níže popisují princip a záměr této práce; žádný klient, osoba, datum ani číslo nejsou uvedeny.
 

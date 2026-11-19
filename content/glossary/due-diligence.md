@@ -3,7 +3,7 @@
 title = "Due diligence"
 description = "The investigation of a company, a person or an asset before a decision such as an acquisition or an investment: who owns it, what it holds, what it owes and what…"
 template = "term.html"
-weight = 82
+weight = 117
 
 [taxonomies]
 tags = ["Glossary", "Concept"]

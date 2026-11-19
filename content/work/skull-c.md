@@ -17,7 +17,7 @@ og_description = "skull-c: Learning and experiments in C, 2014, archive. Source 
 og_image = "og/work-skull-c.png"
 schema = "project"
 keywords = ["skull-c", "Learning and experiments", "2014", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["c", "repository", "commit", "open-source"]
+terms = ["c", "cmake", "travis-ci", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

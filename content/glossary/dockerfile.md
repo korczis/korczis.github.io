@@ -14,10 +14,10 @@ seo_title = "Dockerfile (programming language)"
 term = "dockerfile"
 kind = "language"
 definition = "The recipe that builds a container image: a base system, files and commands, reproducible anywhere."
-aliases = ["Docker", "docker"]
+aliases = ["Docker", "docker", "Docker Compose"]
 reference = { title = "Dockerfile reference", url = "https://docs.docker.com/reference/dockerfile/" }
-pages = ["projects/media.md", "projects/systems.md", "services/_index.md", "services/ai-engineering-governance.md", "services/attack-surface.md", "services/compliance-screening.md", "services/continuous-monitoring.md", "services/decision-support-ai.md", "services/digital-forensics.md", "services/digital-investigation.md", "services/due-diligence.md", "services/m-and-a.md", "services/reputation-intelligence.md", "skills/_index.md", "skills/ai-transformation.md", "skills/audit-trail.md", "skills/data-integration.md", "skills/data-room.md", "skills/decision-support.md", "skills/document-extraction.md", "skills/due-diligence.md", "skills/entity-resolution.md", "skills/geospatial-analysis.md", "skills/insolvency-monitoring.md", "skills/knowledge-graph.md", "skills/m-and-a-screening.md", "skills/market-intelligence.md", "skills/orchestration.md", "skills/risk-scoring.md", "work/astudo.md", "work/aws-lambda-docker.md", "work/docks.md", "work/el-magico-cache.md", "work/gh-exec-3000.md", "work/hydra.md", "work/microcrawler-js.md", "work/pdf-renderer.md", "work/prismatic-blog.md", "work/tosh.md", "work/zdeny-docker.md", "_index.md"]
-related = ["javascript", "html", "alpine-js", "claude-api", "fastapi", "flowbite-pro", "shell", "elixir"]
+pages = ["projects/media.md", "projects/systems.md", "services/_index.md", "services/attack-surface.md", "services/compliance-screening.md", "services/continuous-monitoring.md", "services/decision-support-ai.md", "services/digital-forensics.md", "services/digital-investigation.md", "services/due-diligence.md", "services/interactive-data-products.md", "services/m-and-a.md", "services/reputation-intelligence.md", "skills/_index.md", "skills/ai-transformation.md", "skills/chain-of-custody.md", "skills/data-integration.md", "skills/data-room.md", "skills/decision-support.md", "skills/document-extraction.md", "skills/due-diligence.md", "skills/entity-resolution.md", "skills/geospatial-analysis.md", "skills/insolvency-monitoring.md", "skills/knowledge-graph.md", "skills/m-and-a-screening.md", "skills/market-intelligence.md", "skills/media-forensics.md", "skills/orchestration.md", "skills/osint-investigation.md", "skills/risk-scoring.md", "skills/web-automation.md", "work/apollon.md", "work/astudo.md", "work/aws-lambda-docker.md", "work/bcnode-extra-scripts.md", "work/bcnode-old.md", "work/docker-conf2015.md", "work/docker-datasciencetoolbox.md", "work/docker-dstk.md", "work/docker-gooddata-ruby.md", "work/docks.md", "work/el-magico-cache.md", "work/gh-exec-3000.md", "work/gooddata-fs.md", "work/gooddata-graphql.md", "work/happ.md", "work/hydra.md", "work/k8s-orbis-pictus.md", "work/kuzu-ex.md", "work/microcrawler-js.md", "work/microcrawler.md", "work/pdf-renderer.md", "work/prismatic-blog.md", "work/server-ansible.md", "work/server-archlinux.md", "work/server-atomic.md", "work/sig.md", "work/simple-geocoder.md", "work/test-elixir.md", "work/tosh.md", "work/web-spa.md", "work/zaas.md", "work/zdeny-docker.md", "_index.md"]
+related = ["javascript", "html", "repository", "shell", "commit", "open-source", "elixir", "postgresql"]
 og_title = "Dockerfile: glossary"
 og_image = "og/glossary-dockerfile.png"
 keywords = ["Dockerfile", "Programming language", "Glossary", "Tomas Korcak"]
@@ -40,13 +40,13 @@ span = 3
 height = "md"
 tone = "night"
 +++
-I have written Dockerfile in 9 public repositories, from 2018 to 2025; in 4 of them it is the main language.
+I have written Dockerfile in 32 public repositories, from 2014 to 2026; in 4 of them it is the main language.
 
-What it was for: [Systems and infrastructure](@/projects/systems.md) (4), [Tools](@/projects/tools.md) (3), [Libraries](@/projects/libraries.md) (1) and [Media and art](@/projects/media.md) (1).
+What it was for: [Systems and infrastructure](@/projects/systems.md) (12), [Tools](@/projects/tools.md) (7), [Data and GIS](@/projects/data.md) (6) and [Learning and experiments](@/projects/learning.md) (2).
 
-Most recently: [astudo](@/work/astudo.md); [docks](@/work/docks.md): Repository containing useful Dockerfile(s); [hydra](@/work/hydra.md): Modular wrapper and interface for pool of orchestrated Google Chrome instances.
+Most recently: [sig](@/work/sig.md): distributed cognitive framework in Elixir/OTP; [astudo](@/work/astudo.md); [docks](@/work/docks.md): Repository containing useful Dockerfile(s).
 
-1 of these projects runs as a live site.
+2 of these projects run as live sites.
 
 I also used it in client work under confidentiality agreements. Roles: Architect, Lead engineer, AI engineer and Data engineer. What was solved: LLM agents, Decision support, AI transformation and Audit trail. The use cases below give the principle and the intent of that work; no client, person, date or number is named.
 

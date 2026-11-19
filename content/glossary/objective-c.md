@@ -17,7 +17,7 @@ definition = "C with Smalltalk-style messages and objects; the language of Apple
 aliases = []
 reference = { title = "Programming with Objective-C (Apple)", url = "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html" }
 pages = ["work/happ.md"]
-related = ["cmake", "commit", "cpp", "open-source", "repository", "rust", "shell", "swift"]
+related = ["c", "cmake", "commit", "cpp", "dockerfile", "elasticsearch", "elixir", "gitlab-ci"]
 og_title = "Objective-C: glossary"
 og_image = "og/glossary-objective-c.png"
 keywords = ["Objective-C", "Programming language", "Glossary", "Tomas Korcak"]

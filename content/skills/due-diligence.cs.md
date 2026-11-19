@@ -13,7 +13,7 @@ skill = "due-diligence"
 og_title = "Due diligence: dovednosti"
 og_image = "og/cs-skill-due-diligence.png"
 schema = "skill"
-terms = ["skill", "due-diligence", "html", "javascript", "python", "shell", "alpine-js", "claude-api", "css", "dockerfile", "fastapi", "flowbite-pro"]
+terms = ["skill", "due-diligence", "html", "javascript", "playwright", "python", "shell", "tailwind-css", "alpine-js", "claude-api", "css", "dockerfile"]
 keywords = ["Due diligence", "Due diligence firem a protistran", "Prověrka a analýza M&A transakcí", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -31,7 +31,7 @@ Pojem, na kterém stojí: [Due diligence](@/glossary/due-diligence.cs.md).
 
 Služby, které z ní čerpají: [Due diligence firem a protistran](@/services/due-diligence.cs.md) a [Prověrka a analýza M&A transakcí](@/services/m-and-a.cs.md).
 
-Praktikovaná s: [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Python](@/glossary/python.cs.md), [Shell](@/glossary/shell.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md), [Claude API](@/glossary/claude-api.cs.md), [CSS](@/glossary/css.cs.md) a [Dockerfile](@/glossary/dockerfile.cs.md).
+Praktikovaná s: [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Playwright](@/glossary/playwright.cs.md), [Python](@/glossary/python.cs.md), [Shell](@/glossary/shell.cs.md), [Tailwind CSS](@/glossary/tailwind-css.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md) a [Claude API](@/glossary/claude-api.cs.md).
 
 Veřejná práce, jejíž vlastní slova ji dokládají: [vomaste.cz](https://github.com/korczis/vomaste.cz).
 

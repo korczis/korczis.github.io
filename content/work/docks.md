@@ -17,7 +17,7 @@ og_description = "docks: Systems and infrastructure in Dockerfile, Shell and PHP
 og_image = "og/work-docks.png"
 schema = "project"
 keywords = ["docks", "Systems and infrastructure", "Dockerfile", "Shell", "PHP", "2015–2017", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["dockerfile", "shell", "php", "repository", "commit", "open-source"]
+terms = ["dockerfile", "shell", "php", "couchbase", "elasticsearch", "mongodb", "postgis", "rabbitmq", "nominatim", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

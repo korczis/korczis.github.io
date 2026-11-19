@@ -17,7 +17,7 @@ og_description = "microscratch-react: Web, 2015, archiv. Zdrojový kód: GitHub 
 og_image = "og/cs-work-microscratch-react.png"
 schema = "project"
 keywords = ["microscratch-react", "Web", "2015", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["static-site-generator", "repository", "commit", "open-source"]
+terms = ["react", "static-site-generator", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

@@ -17,7 +17,7 @@ definition = "A functional language and proof assistant: programs and the mathem
 aliases = ["Lean 4"]
 reference = { title = "Lean documentation", url = "https://lean-lang.org/documentation/" }
 pages = ["services/digital-forensics.md"]
-related = ["alpine-js", "attack-surface", "audit-trail", "c", "chain-of-custody", "claude-api", "css", "digital-forensics"]
+related = ["alpine-js", "attack-surface", "audit-trail", "chain-of-custody", "claude-api", "digital-forensics", "dockerfile", "ecto"]
 og_title = "Lean: glossary"
 og_image = "og/glossary-lean.png"
 keywords = ["Lean", "Programming language", "Glossary", "Tomas Korcak"]

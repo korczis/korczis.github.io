@@ -17,7 +17,7 @@ og_description = "skull-c: Učení a experimenty, C, 2014, archiv. Zdrojový kó
 og_image = "og/cs-work-skull-c.png"
 schema = "project"
 keywords = ["skull-c", "Učení a experimenty", "2014", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["c", "repository", "commit", "open-source"]
+terms = ["c", "cmake", "travis-ci", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

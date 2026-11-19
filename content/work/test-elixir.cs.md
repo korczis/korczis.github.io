@@ -17,7 +17,7 @@ og_description = "Test-Elixir: Učení a experimenty, Elixir, JavaScript a HTML,
 og_image = "og/cs-work-test-elixir.png"
 schema = "project"
 keywords = ["Test-Elixir", "Učení a experimenty", "Elixir", "JavaScript", "HTML", "2017", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["elixir", "javascript", "html", "css", "repository", "commit", "open-source"]
+terms = ["elixir", "javascript", "html", "css", "phoenix", "ecto", "postgresql", "elasticsearch", "kibana", "dockerfile", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

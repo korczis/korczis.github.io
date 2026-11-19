@@ -16,8 +16,8 @@ kind = "language"
 definition = "CSS s proměnnými, vnořováním a mixiny, kompilované nástrojem Sass do běžného CSS."
 aliases = ["Sass"]
 reference = { title = "Sass documentation", url = "https://sass-lang.com/documentation/" }
-pages = ["work/korczis-gitlab-io.cs.md"]
-related = ["commit", "css", "eex", "elixir", "html", "open-source", "repository", "static-site-generator"]
+pages = ["work/gooddata-rails-app.cs.md", "work/korczis-gitlab-io.cs.md", "work/microscratch.cs.md"]
+related = ["commit", "css", "open-source", "repository", "javascript", "static-site-generator", "bootstrap", "bower"]
 og_title = "SCSS: slovník"
 og_image = "og/cs-glossary-scss.png"
 keywords = ["SCSS", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
@@ -40,10 +40,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
-SCSS jsem psal v 1 veřejném repozitáři, od roku 2025 do 2025.
+SCSS jsem psal ve 3 veřejných repozitářích, od roku 2014 do 2025.
 
-K čemu to sloužilo: [Web](@/projects/web.cs.md) (1).
+K čemu to sloužilo: [Web](@/projects/web.cs.md) (2) a [Data a GIS](@/projects/data.cs.md) (1).
 
-Naposledy: [korczis.gitlab.io](@/work/korczis-gitlab-io.cs.md).
+Naposledy: [korczis.gitlab.io](@/work/korczis-gitlab-io.cs.md); [microscratch](@/work/microscratch.cs.md); [gooddata\_rails\_app](@/work/gooddata-rails-app.cs.md).
 
 Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak SCSS používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje SCSS s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

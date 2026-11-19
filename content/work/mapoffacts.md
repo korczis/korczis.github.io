@@ -17,7 +17,7 @@ og_description = "mapoffacts: Tools in JavaScript, Elixir and Elm, 2017, archive
 og_image = "og/work-mapoffacts.png"
 schema = "project"
 keywords = ["mapoffacts", "Tools", "JavaScript", "Elixir", "Elm", "2017", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["javascript", "elixir", "elm", "rust", "html", "open-source", "repository", "commit"]
+terms = ["javascript", "elixir", "elm", "rust", "html", "phoenix", "absinthe", "graphql", "postgresql", "webpack", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

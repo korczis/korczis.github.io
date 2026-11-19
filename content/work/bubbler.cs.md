@@ -17,7 +17,7 @@ og_description = "bubbler: Nástroje, JavaScript, HTML a CSS, 2024, aktivní za 
 og_image = "og/cs-work-bubbler.png"
 schema = "project"
 keywords = ["bubbler", "Nástroje", "JavaScript", "HTML", "CSS", "2024", "GitHub", "Tomáš Korčák", "korczis"]
-terms = ["javascript", "html", "css", "open-source", "github-pages", "repository", "commit"]
+terms = ["javascript", "html", "css", "json", "github-pages", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

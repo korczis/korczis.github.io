@@ -13,7 +13,7 @@ skill = "policy-as-code"
 og_title = "Policy as code: skills"
 og_image = "og/skill-policy-as-code.png"
 schema = "skill"
-terms = ["skill", "policy-as-code", "javascript", "html", "shell", "css", "majordomus", "python", "rust", "zola", "alpine-js", "apache-echarts"]
+terms = ["skill", "policy-as-code", "javascript", "html", "tailwind-css", "flowbite-pro", "github-pages", "shell", "zola", "css", "playwright", "python"]
 keywords = ["Policy as code", "Governed AI-assisted software delivery", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -31,7 +31,7 @@ The concept behind it: [Policy as code](@/glossary/policy-as-code.md).
 
 Services that draw on it: [Governed AI-assisted software delivery](@/services/ai-engineering-governance.md).
 
-Practised with: [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md), [Shell](@/glossary/shell.md), [CSS](@/glossary/css.md), [Majordomus](@/glossary/majordomus.md), [Python](@/glossary/python.md), [Rust](@/glossary/rust.md) and [Zola](@/glossary/zola.md).
+Practised with: [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md), [Tailwind CSS](@/glossary/tailwind-css.md), [Flowbite Pro](@/glossary/flowbite-pro.md), [GitHub Pages](@/glossary/github-pages.md), [Shell](@/glossary/shell.md), [Zola](@/glossary/zola.md) and [CSS](@/glossary/css.md).
 
 Public work whose own words show it: [majordomus-reel](https://github.com/korczis/majordomus-reel), [prismatic-majordomus](https://github.com/korczis/prismatic-majordomus), [korczis.github.io](https://github.com/korczis/korczis.github.io) and [data-atlas](https://github.com/korczis/data-atlas).
 
