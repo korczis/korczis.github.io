@@ -27,7 +27,7 @@ Moje role (uvádím já):
 - **Inženýr AI**: Postavil části s AI: modely, agenty, prompty a vyhodnocení, která je drží poctivé.
 - **Datový inženýr**: Postavil konektory, pipeline a úložiště, kterými podklady tečou.
 
-Období (změřeno): od dubna 2026 do listopadu 2026; měsíců s naměřenými commity: 8.
+Období (změřeno): od dubna 2026 do listopadu 2026; počet měsíců s naměřenými commity: 8.
 
 Co bylo dodáno, podle nejsilnějších odvozených schopností (odvození z commitů, cest a nadpisů, ne změřený výsledek):
 

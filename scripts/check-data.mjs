@@ -77,6 +77,11 @@ if (!(catalogue.projects ?? []).some((p) => p.featured)) fail('data/projects.tom
 // The derived index: well-formed, every category known, every curated project present in it.
 const index = JSON.parse(readFileSync(join(ROOT, 'data/index.json'), 'utf8'));
 if (index.schema !== 'korczis-hub-index/v1') fail('data/index.json', 'unknown schema; run npm run index');
+// The index's rule is shown translated (i18n index_rule); its English text is the index's own words.
+{
+  const rule = /\[index_rule\]\s*\nen = "([^"]*)"/.exec(readFileSync(join(ROOT, 'i18n/strings.toml'), 'utf8'))?.[1];
+  if (rule !== index.rule) fail('i18n/strings.toml', `index_rule.en differs from data/index.json rule; update both twins to: ${index.rule}`);
+}
 for (const r of index.repos ?? []) {
   if (!(r.category in categories)) fail('data/index.json', `${r.name} has unknown category ${r.category}; run npm run index -- --derive`);
   if (!r.hosts?.github && !r.hosts?.gitlab) fail('data/index.json', `${r.name} has no host link`);

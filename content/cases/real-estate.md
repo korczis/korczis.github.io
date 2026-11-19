@@ -27,7 +27,7 @@ My role (declared by me):
 - **AI engineer**: Built the AI parts: models, agents, prompts and the evaluations that keep them honest.
 - **Data engineer**: Built the connectors, pipelines and stores the evidence flows through.
 
-Period (measured): from April 2026 to November 2026; months with measured commits: 8.
+Period (measured): from April 2026 to November 2026; number of months with measured commits: 8.
 
 What was delivered, by the strongest inferred capabilities (an inference from commits, paths and headings, not a measured outcome):
 

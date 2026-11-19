@@ -59,7 +59,7 @@
     </div>
   </div>
   <p data-js class="tabular mb-3 text-sm text-gray-600 dark:text-gray-400" aria-live="polite">
-    {{ trans(key="showing", lang=lang) | safe }} <span class="font-semibold text-gray-900 dark:text-white" x-text="shown">{{ ix.counts.own }}</span> {{ trans(key="of", lang=lang) | safe }} {{ ix.counts.own }} {{ trans(key="repositories_2", lang=lang) | safe }}
+    {{ trans(key="repositories_shown", lang=lang) | safe }} <span class="font-semibold text-gray-900 dark:text-white" x-text="shown">{{ ix.counts.own }}</span> {{ trans(key="of", lang=lang) | safe }} {{ ix.counts.own }}
     <button type="button" x-show="shown !== total" x-cloak @click="reset()" class="ml-2 font-medium text-primary-700 hover:underline dark:text-primary-400">{{ trans(key="clear_filters", lang=lang) | safe }}</button>
   </p>
   {#- Flowbite Pro advanced table with sortable headers (advanced-tables/sortable-rows) and the
@@ -138,7 +138,7 @@
     <p class="text-sm text-gray-600 dark:text-gray-400">{{ trans(key="no_repository_matches", lang=lang) | safe }} <button type="button" @click="reset()" class="font-medium text-primary-700 hover:underline dark:text-primary-400">{{ trans(key="clear_them", lang=lang) | safe }}</button></p>
   </div>
   <p class="mt-4 text-xs text-gray-600 dark:text-gray-400">
-    {{ trans(key="derived_on", lang=lang) | safe }} {{ ix.generated_at | date(format=trans(key="fmt_date_long", lang=lang), locale=trans(key="date_locale", lang=lang)) }} {{ trans(key="from_the_github_and_gitlab_apis", lang=lang) | safe }}<code class="font-mono">gh</code>, <code class="font-mono">glab</code>{{ trans(key="rule", lang=lang) | safe }} {{ ix.rule }}; {{ ix.counts.empty }} {{ trans(key="repositories_without_history_are_left_out", lang=lang) | safe }}
+    {{ trans(key="derived_on", lang=lang) | safe }} {{ ix.generated_at | date(format=trans(key="fmt_date_long", lang=lang), locale=trans(key="date_locale", lang=lang)) }} {{ trans(key="from_the_github_and_gitlab_apis", lang=lang) | safe }}<code class="font-mono">gh</code>, <code class="font-mono">glab</code>{{ trans(key="rule", lang=lang) | safe }} {{ trans(key="index_rule", lang=lang) }}. {{ trans(key="repositories_without_history_are_left_out", lang=lang) | replace(from="{n}", to=ix.counts.empty ~ "") | safe }}
     <a class="font-medium text-primary-700 hover:underline dark:text-primary-400" href="{{ config.extra.repo_url }}/blob/master/data/projects.toml">data/projects.toml</a>.
   </p>
 </section>

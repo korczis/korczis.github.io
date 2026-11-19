@@ -272,9 +272,6 @@ cs = "Pomáhám investorům a transakčním týmům prověřit firmu a její dat
 en = "Explore"
 cs = "Prozkoumat"
 
-[projects]
-en = "projects"
-cs = "projektů"
 
 [about_and_cv]
 en = "About and CV"
@@ -376,9 +373,15 @@ cs = "Kategorie"
 en = "All"
 cs = "Vše"
 
-[live]
-en = "live"
-cs = "živých"
+[n_live__one]
+en = "{n} live"
+cs = "{n} živý"
+[n_live__few]
+en = "{n} live"
+cs = "{n} živé"
+[n_live__other]
+en = "{n} live"
+cs = "{n} živých"
 
 [timeline]
 en = "Timeline"
@@ -479,6 +482,15 @@ cs = "Název"
 [showing]
 en = "Showing"
 cs = "Zobrazeno"
+[projects_shown]
+en = "Projects shown:"
+cs = "Zobrazené projekty:"
+[repositories_shown]
+en = "Repositories shown:"
+cs = "Zobrazené repozitáře:"
+[index_rule]
+en = "original = the owner wrote at least half of the listed commits; forks and mirrors are counted, not listed"
+cs = "původní = autor napsal aspoň polovinu uvedených commitů; forky a zrcadla se počítají, ale nevypisují"
 
 [clear_filters]
 en = "Clear filters"
@@ -708,9 +720,6 @@ cs = "Všechny jazyky"
 en = "Newest"
 cs = "Nejnovější"
 
-[repositories_2]
-en = "repositories"
-cs = "repozitářů"
 
 [repository]
 en = "Repository"
@@ -741,8 +750,8 @@ en = "). Rule:"
 cs = "). Pravidlo:"
 
 [repositories_without_history_are_left_out]
-en = "repositories without history are left out. Categories are inferred from each repository's name, description, topics and language by the rules in"
-cs = "repozitářů bez historie je vynecháno. Kategorie se odvozují z názvu, popisu, témat a jazyka každého repozitáře podle pravidel v"
+en = "Repositories without history, left out: {n}. Categories are inferred from each repository's name, description, topics and language by the rules in"
+cs = "Vynechané repozitáře bez historie: {n}. Kategorie se odvozují z názvu, popisu, témat a jazyka každého repozitáře podle pravidel v"
 
 [sources_of_the_numbers_on_this]
 en = "Sources of the numbers on this site"
@@ -915,8 +924,8 @@ en = "Inferred from name, description, topics, language"
 cs = "Odvozeno z názvu, popisu, témat a jazyka"
 
 [kpi_featured_projects]
-en = "featured projects"
-cs = "vybraných projektů"
+en = "Featured projects"
+cs = "Vybrané projekty"
 
 [kpi_curated_note]
 en = "Curated, with details below"
@@ -1178,7 +1187,7 @@ en = "Where it is used"
 cs = "Kde se používá"
 
 [used_on_lead]
-en = "{n} pages of this site build on this term."
+en = "Pages of this site that build on this term: {n}."
 cs = "Stránek tohoto webu, které na pojmu stojí: {n}."
 
 [related_terms]
@@ -1198,7 +1207,7 @@ en = "All terms"
 cs = "Všechny pojmy"
 
 [n_pages]
-en = "{n} pages"
+en = "Pages: {n}"
 cs = "Stránek: {n}"
 
 [article_label]
