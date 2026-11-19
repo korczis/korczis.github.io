@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Conventional Commits gate, shared by the commit-msg hook and CI.
 # usage: lint-commits.sh <rev-range>     check every commit subject on the first-parent line of the range
+#        (a commit listed in .github/commit-lint-grandfathered, with its reason, is skipped)
 #        (histories merged in from other repositories keep their original messages)
 #        lint-commits.sh --branch        the commits of this branch: merge-base with origin/master
 #                                        (the root commit when there is none) up to HEAD
@@ -13,6 +14,12 @@ EXEMPT='^(Merge |Revert ")'
 
 valid() {
   [[ "$1" =~ $EXEMPT ]] || [[ "$1" =~ $PATTERN ]]
+}
+
+# Commits master already carries that may not pass (never rewritten): .github/commit-lint-grandfathered.
+GRANDFATHERED="$(dirname "$0")/../.github/commit-lint-grandfathered"
+grandfathered() {
+  [[ -f "$GRANDFATHERED" ]] && grep -q "^$1" <(grep -v '^#' "$GRANDFATHERED")
 }
 
 explain() {
@@ -43,7 +50,7 @@ count=0
 while IFS= read -r line; do
   [[ -z "$line" ]] && continue
   count=$((count + 1))
-  if ! valid "${line#* }"; then
+  if ! valid "${line#* }" && ! grandfathered "${line%% *}"; then
     echo "✗ $line" >&2
     bad=1
   fi
