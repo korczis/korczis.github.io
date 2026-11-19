@@ -3,7 +3,7 @@
 title = "Tailwind CSS"
 description = "A CSS framework of small utility classes composed in the markup, compiled to only what a page uses."
 template = "term.html"
-weight = 65
+weight = 98
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "A CSS framework of small utility classes composed in the markup, compiled to only what a page uses."
 aliases = ["tailwindcss"]
 reference = { title = "tailwindcss.com", url = "https://tailwindcss.com/docs" }
-pages = ["services/ai-engineering-governance.md", "skills/audit-trail.md", "stack.md", "_index.md"]
-related = ["alpine-js", "flowbite-pro", "majordomus", "audit-trail", "claude-api", "css", "html", "javascript"]
+pages = ["services/_index.md", "services/ai-engineering-governance.md", "services/decision-support-ai.md", "services/digital-forensics.md", "services/digital-investigation.md", "services/due-diligence.md", "services/interactive-data-products.md", "services/reputation-intelligence.md", "skills/_index.md", "skills/audit-trail.md", "skills/decision-support.md", "skills/document-extraction.md", "skills/due-diligence.md", "skills/geospatial-analysis.md", "skills/interactive-visualisation.md", "skills/osint-investigation.md", "skills/policy-as-code.md", "stack.md", "work/algoglyph.md", "work/astronomists.md", "work/catharsis-as-a-service.md", "work/crisis-map.md", "work/data-atlas.md", "work/kompendium-epistemicke-anihilace.md", "work/korczis-github-io.md", "work/korczis-gitlab-io.md", "work/majordomus-reel.md", "work/openttd-prismatic-bridge.md", "work/oscilla.md", "work/prismatic.md", "work/sonic-playground.md", "work/the-psycho.md", "work/u-tygra.md", "work/vomaste-cz.md", "_index.md"]
+related = ["javascript", "html", "flowbite-pro", "shell", "python", "alpine-js", "github-pages", "playwright"]
 og_title = "Tailwind CSS: glossary"
 og_image = "og/glossary-tailwind-css.png"
 keywords = ["Tailwind CSS", "Technology", "Glossary", "Tomas Korcak"]
@@ -40,13 +40,13 @@ span = 3
 height = "md"
 tone = "night"
 +++
-Tailwind CSS is part of 2 of my public repositories, from 2024 to 2026.
+Tailwind CSS is part of 16 of my public repositories, from 2024 to 2026.
 
-What it was for: [Science and visualisation](@/projects/science.md) (1) and [Web](@/projects/web.md) (1).
+What it was for: [Tools](@/projects/tools.md) (5), [Media and art](@/projects/media.md) (4), [Data and GIS](@/projects/data.md) (2) and [Science and visualisation](@/projects/science.md) (2).
 
-Most recently: [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus; [algoglyph](@/work/algoglyph.md): Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core.
+Most recently: [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus; [openttd-prismatic-bridge](@/work/openttd-prismatic-bridge.md): REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform; [Oscilla](@/work/oscilla.md): Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.
 
-1 of these projects runs as a live site.
+11 of these projects run as live sites.
 
 I also used it in client work under confidentiality agreements. Roles: Architect, Lead engineer, AI engineer and Data engineer. What was solved: LLM agents, Decision support, AI transformation and Audit trail. The use cases below give the principle and the intent of that work; no client, person, date or number is named.
 

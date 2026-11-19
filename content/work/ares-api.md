@@ -17,7 +17,7 @@ og_description = "ares-api: Tools, 2014, archive. Source on GitHub and GitLab."
 og_image = "og/work-ares-api.png"
 schema = "project"
 keywords = ["ares-api", "Tools", "2014", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["open-source", "repository", "commit"]
+terms = ["java", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

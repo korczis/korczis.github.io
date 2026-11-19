@@ -3,7 +3,7 @@
 title = "Claude API"
 description = "Anthropic's API to the Claude models: messages, tool use and agents that read, reason and act."
 template = "term.html"
-weight = 44
+weight = 51
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Anthropic's API to the Claude models: messages, tool use and agents that read, reason and act."
 aliases = ["claude-code", "Claude"]
 reference = { title = "Claude API documentation", url = "https://docs.anthropic.com/" }
-pages = ["services/_index.md", "services/ai-engineering-governance.md", "services/attack-surface.md", "services/compliance-screening.md", "services/continuous-monitoring.md", "services/decision-support-ai.md", "services/digital-forensics.md", "services/digital-investigation.md", "services/due-diligence.md", "services/interactive-data-products.md", "services/m-and-a.md", "services/reputation-intelligence.md", "skills/_index.md", "skills/ai-transformation.md", "skills/audit-trail.md", "skills/data-integration.md", "skills/data-room.md", "skills/decision-support.md", "skills/document-extraction.md", "skills/due-diligence.md", "skills/entity-resolution.md", "skills/insolvency-monitoring.md", "skills/knowledge-graph.md", "skills/llm-agents.md", "skills/m-and-a-screening.md", "skills/market-intelligence.md", "skills/media-forensics.md", "skills/narrative-analysis.md", "skills/orchestration.md", "skills/osint-investigation.md", "skills/risk-scoring.md", "_index.md"]
-related = ["html", "alpine-js", "javascript", "flowbite-pro", "dockerfile", "fastapi", "python", "skill"]
+pages = ["services/ai-engineering-governance.md", "services/compliance-screening.md", "services/continuous-monitoring.md", "services/decision-support-ai.md", "services/digital-forensics.md", "services/digital-investigation.md", "services/due-diligence.md", "services/m-and-a.md", "services/reputation-intelligence.md", "skills/ai-transformation.md", "skills/audit-trail.md", "skills/data-integration.md", "skills/data-room.md", "skills/document-extraction.md", "skills/due-diligence.md", "skills/entity-resolution.md", "skills/insolvency-monitoring.md", "skills/knowledge-graph.md", "skills/llm-agents.md", "skills/m-and-a-screening.md", "skills/market-intelligence.md", "skills/media-forensics.md", "skills/narrative-analysis.md", "skills/orchestration.md", "skills/osint-investigation.md", "skills/risk-scoring.md", "_index.md"]
+related = ["html", "javascript", "dockerfile", "flowbite-pro", "alpine-js", "skill", "github-actions", "fastapi"]
 og_title = "Claude API: glossary"
 og_image = "og/glossary-claude-api.png"
 keywords = ["Claude API", "Technology", "Glossary", "Tomas Korcak"]

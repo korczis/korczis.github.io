@@ -3,7 +3,7 @@
 title = "Chart.js"
 description = "A light library for common charts (bars, lines, doughnuts) on an HTML canvas."
 template = "term.html"
-weight = 43
+weight = 48
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

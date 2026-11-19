@@ -17,7 +17,7 @@ og_description = "prismatic-blog: Media and art in Dockerfile, 2025, active in t
 og_image = "og/work-prismatic-blog.png"
 schema = "project"
 keywords = ["prismatic-blog", "Media and art", "Dockerfile", "2025", "GitHub", "Tomas Korcak", "korczis"]
-terms = ["dockerfile", "data-visualisation", "github-pages", "repository", "commit", "open-source"]
+terms = ["dockerfile", "zola", "markdown", "github-actions", "github-pages", "data-visualisation", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

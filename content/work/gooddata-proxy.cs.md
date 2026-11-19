@@ -17,7 +17,7 @@ og_description = "gooddata-proxy: Data a GIS, JavaScript a HTML, 2016, archiv. Z
 og_image = "og/cs-work-gooddata-proxy.png"
 schema = "project"
 keywords = ["gooddata-proxy", "Data a GIS", "JavaScript", "HTML", "2016", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["javascript", "html", "gis", "repository", "commit", "open-source"]
+terms = ["javascript", "html", "nodejs", "express", "react", "webpack", "babel", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

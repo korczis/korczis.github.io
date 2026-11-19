@@ -3,7 +3,7 @@
 title = "Sanctions screening"
 description = "Checking people and companies against sanctions lists and politically exposed persons before a business relationship, as anti-money-laundering rules require."
 template = "term.html"
-weight = 107
+weight = 142
 
 [taxonomies]
 tags = ["Glossary", "Concept"]
@@ -17,7 +17,7 @@ definition = "Checking people and companies against sanctions lists and politica
 aliases = []
 reference = { title = "OpenSanctions documentation", url = "https://www.opensanctions.org/docs/" }
 pages = ["services/_index.md", "services/compliance-screening.md", "skills/_index.md", "skills/sanctions-screening.md"]
-related = ["alpine-js", "beneficial-ownership", "claude-api", "contestability", "dockerfile", "fastapi", "flowbite-pro", "html"]
+related = ["alpine-js", "beneficial-ownership", "contestability", "dockerfile", "flowbite-pro", "html", "javascript", "python"]
 og_title = "Sanctions screening: glossary"
 og_image = "og/glossary-sanctions-screening.png"
 keywords = ["Sanctions screening", "Concept", "Glossary", "Tomas Korcak"]

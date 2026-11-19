@@ -17,7 +17,7 @@ og_description = "brepta: Média a umění, JavaScript, 2017, archiv. Zdrojový 
 og_image = "og/cs-work-brepta.png"
 schema = "project"
 keywords = ["brepta", "Média a umění", "JavaScript", "2017", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["javascript", "data-visualisation", "repository", "commit", "open-source"]
+terms = ["javascript", "nodejs", "data-visualisation", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

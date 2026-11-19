@@ -17,7 +17,7 @@ definition = "PostgreSQL's procedural language: functions and triggers that run 
 aliases = ["PLpgSQL"]
 reference = { title = "PostgreSQL: PL/pgSQL", url = "https://www.postgresql.org/docs/current/plpgsql.html" }
 pages = ["work/data-atlas.md"]
-related = ["commit", "gis", "github-pages", "html", "javascript", "just", "open-source", "python"]
+related = ["commit", "gis", "github-pages", "html", "javascript", "just", "open-source", "playwright"]
 og_title = "PL/pgSQL: glossary"
 og_image = "og/glossary-plpgsql.png"
 keywords = ["PL/pgSQL", "Programming language", "Glossary", "Tomas Korcak"]

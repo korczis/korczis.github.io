@@ -17,7 +17,7 @@ og_description = "the-psycho: Tools in Elixir, HTML+EEX and JavaScript, 2025–2
 og_image = "og/work-the-psycho.png"
 schema = "project"
 keywords = ["the-psycho", "Tools", "Elixir", "HTML+EEX", "JavaScript", "2025–2026", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["elixir", "eex", "javascript", "css", "open-source", "repository", "commit"]
+terms = ["elixir", "eex", "javascript", "css", "phoenix", "ecto", "postgresql", "tailwind-css", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

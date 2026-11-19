@@ -17,7 +17,7 @@ definition = "A purely functional language that compiles to JavaScript for web f
 aliases = []
 reference = { title = "elm-lang.org", url = "https://elm-lang.org/" }
 pages = ["work/magic.md", "work/mapoffacts.md", "work/the-scratch.md", "work/web-spa.md", "work/zaas.md"]
-related = ["commit", "elixir", "javascript", "open-source", "repository", "html", "rust", "static-site-generator"]
+related = ["commit", "elixir", "javascript", "open-source", "phoenix", "repository", "html", "rust"]
 og_title = "Elm: glossary"
 og_image = "og/glossary-elm.png"
 keywords = ["Elm", "Programming language", "Glossary", "Tomas Korcak"]

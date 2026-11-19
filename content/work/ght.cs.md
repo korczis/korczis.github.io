@@ -17,7 +17,7 @@ og_description = "GHT: Nástroje, 2025, aktivní za posledních 24 měsíců. Zd
 og_image = "og/cs-work-ght.png"
 schema = "project"
 keywords = ["GHT", "Nástroje", "2025", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["open-source", "repository", "commit"]
+terms = ["markdown", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

@@ -17,7 +17,7 @@ og_description = "gdc-dumpator: Tools in Ruby, 2017, archive. Source on GitHub a
 og_image = "og/work-gdc-dumpator.png"
 schema = "project"
 keywords = ["gdc-dumpator", "Tools", "Ruby", "2017", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["ruby", "open-source", "repository", "commit"]
+terms = ["ruby", "json", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

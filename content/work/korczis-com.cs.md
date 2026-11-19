@@ -17,7 +17,7 @@ og_description = "korczis-com: Web, HTML, CSS a JavaScript, 2014–2015, archiv.
 og_image = "og/cs-work-korczis-com.png"
 schema = "project"
 keywords = ["korczis-com", "Web", "HTML", "CSS", "JavaScript", "2014–2015", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["html", "css", "javascript", "static-site-generator", "repository", "commit", "open-source"]
+terms = ["html", "css", "javascript", "bootstrap", "jquery", "bower", "static-site-generator", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

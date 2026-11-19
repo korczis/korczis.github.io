@@ -17,7 +17,7 @@ og_description = "zaas: Tools in JavaScript, Elixir and Elm, 2017, archive. Sour
 og_image = "og/work-zaas.png"
 schema = "project"
 keywords = ["zaas", "Tools", "JavaScript", "Elixir", "Elm", "2017", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["javascript", "elixir", "elm", "rust", "html", "open-source", "repository", "commit"]
+terms = ["javascript", "elixir", "elm", "rust", "html", "phoenix", "absinthe", "graphql", "postgresql", "rustler", "dockerfile", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

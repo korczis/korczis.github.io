@@ -17,7 +17,7 @@ og_description = "reading: Knowledge, 2019, archive. Source on GitHub and GitLab
 og_image = "og/work-reading.png"
 schema = "project"
 keywords = ["reading", "Knowledge", "2019", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["repository", "commit", "open-source"]
+terms = ["markdown", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

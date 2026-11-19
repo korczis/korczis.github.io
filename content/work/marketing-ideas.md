@@ -17,7 +17,7 @@ og_description = "marketing-ideas: Tools, 2024, active in the last 48 months. So
 og_image = "og/work-marketing-ideas.png"
 schema = "project"
 keywords = ["marketing-ideas", "Tools", "2024", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["open-source", "repository", "commit"]
+terms = ["markdown", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

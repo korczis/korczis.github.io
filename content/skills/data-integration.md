@@ -13,7 +13,7 @@ skill = "data-integration"
 og_title = "Data integration: skills"
 og_image = "og/skill-data-integration.png"
 schema = "skill"
-terms = ["skill", "data-integration", "javascript", "shell", "claude-api", "elixir", "html", "typescript", "alpine-js", "dockerfile", "eex", "fastapi"]
+terms = ["skill", "data-integration", "javascript", "nodejs", "cheerio", "dockerfile", "postgresql", "shell", "claude-api", "ecto", "elixir", "html"]
 keywords = ["Data integration", "Interactive data products and simulators", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -31,7 +31,7 @@ The concept behind it: [Data integration](@/glossary/data-integration.md).
 
 Services that draw on it: [Interactive data products and simulators](@/services/interactive-data-products.md).
 
-Practised with: [JavaScript](@/glossary/javascript.md), [Shell](@/glossary/shell.md), [Claude API](@/glossary/claude-api.md), [Elixir](@/glossary/elixir.md), [HTML](@/glossary/html.md), [TypeScript](@/glossary/typescript.md), [Alpine.js](@/glossary/alpine-js.md) and [Dockerfile](@/glossary/dockerfile.md).
+Practised with: [JavaScript](@/glossary/javascript.md), [Node.js](@/glossary/nodejs.md), [Cheerio](@/glossary/cheerio.md), [Dockerfile](@/glossary/dockerfile.md), [PostgreSQL](@/glossary/postgresql.md), [Shell](@/glossary/shell.md), [Claude API](@/glossary/claude-api.md) and [Ecto](@/glossary/ecto.md).
 
 Public work whose own words show it: [microcrawler-crawler-all](https://gitlab.com/korczis/microcrawler-crawler-all), [microcrawler-crawler-sreality-cz](https://gitlab.com/korczis/microcrawler-crawler-sreality-cz), [microcrawler-crawler-xkcd-com](https://gitlab.com/korczis/microcrawler-crawler-xkcd-com) and [llm](https://gitlab.com/korczis/llm).
 

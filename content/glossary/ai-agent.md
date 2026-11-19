@@ -3,7 +3,7 @@
 title = "AI agent"
 description = "A program that uses a language model to plan and act (edit code, run commands) toward a goal; Majordomus makes such agents prove their work."
 template = "term.html"
-weight = 69
+weight = 104
 
 [taxonomies]
 tags = ["Glossary", "Concept"]

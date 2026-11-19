@@ -17,7 +17,7 @@ og_description = "skull-erlang: Learning and experiments in Erlang, 2014, archiv
 og_image = "og/work-skull-erlang.png"
 schema = "project"
 keywords = ["skull-erlang", "Learning and experiments", "Erlang", "2014", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["erlang", "repository", "commit", "open-source"]
+terms = ["erlang", "makefile", "travis-ci", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

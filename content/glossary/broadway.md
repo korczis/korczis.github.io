@@ -3,7 +3,7 @@
 title = "Broadway"
 description = "An Elixir library for concurrent, multi-stage data pipelines with back-pressure, batching and graceful failure."
 template = "term.html"
-weight = 42
+weight = 47
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -16,11 +16,20 @@ kind = "technology"
 definition = "An Elixir library for concurrent, multi-stage data pipelines with back-pressure, batching and graceful failure."
 aliases = []
 reference = { title = "Broadway on HexDocs", url = "https://hexdocs.pm/broadway/" }
-pages = ["services/continuous-monitoring.md", "services/digital-investigation.md", "services/reputation-intelligence.md"]
-related = ["alpine-js", "change-detection", "claude-api", "dockerfile", "elixir", "fastapi", "flowbite-pro", "html"]
+pages = ["services/continuous-monitoring.md", "services/digital-investigation.md", "services/reputation-intelligence.md", "work/prismatic.md"]
+related = ["elixir", "html", "javascript", "postgresql", "change-detection", "claude-api", "dockerfile", "flowbite-pro"]
 og_title = "Broadway: glossary"
 og_image = "og/glossary-broadway.png"
 keywords = ["Broadway", "Technology", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,4 +40,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
-No public repository or client engagement of mine uses Broadway as the data measures it; this page explains the term where the site uses it.
+Broadway is part of 1 of my public repositories, from 2025 to 2025.
+
+What it was for: [Tools](@/projects/tools.md) (1).
+
+Most recently: [prismatic](@/work/prismatic.md).
+
+How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses Broadway: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links Broadway to the repositories and to the other languages and technologies they use together.

@@ -14,7 +14,7 @@ icon = "search"
 og_title = "Digital investigation and OSINT dossiers"
 og_image = "og/service-digital-investigation.png"
 schema = "service"
-terms = ["service", "elixir", "broadway", "playwright", "postgresql", "meilisearch", "cytoscape-js", "osint", "public-registry", "record-linkage", "beneficial-ownership", "attack-surface", "digital-forensics", "knowledge-graph", "web-scraping", "change-detection", "javascript", "html", "python", "claude-api", "shell", "alpine-js", "css", "dockerfile", "fastapi", "flowbite-pro"]
+terms = ["service", "elixir", "broadway", "playwright", "postgresql", "meilisearch", "cytoscape-js", "osint", "public-registry", "record-linkage", "beneficial-ownership", "attack-surface", "digital-forensics", "knowledge-graph", "web-scraping", "change-detection", "javascript", "nodejs", "html", "python", "dockerfile", "flowbite-pro", "claude-api", "shell", "tailwind-css", "cheerio"]
 keywords = ["Digital investigation and OSINT dossiers", "OSINT investigation", "Registry intelligence", "Entity resolution", "Ownership and link analysis", "Infrastructure OSINT", "Web and media forensics", "Knowledge graph", "Web automation and crawling", "Continuous monitoring", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -34,7 +34,7 @@ It draws on these skills: [OSINT investigation](@/skills/osint-investigation.md)
 
 It is built with [Elixir](@/glossary/elixir.md), [Broadway](@/glossary/broadway.md), [Playwright](@/glossary/playwright.md), [PostgreSQL](@/glossary/postgresql.md), [Meilisearch](@/glossary/meilisearch.md) and [Cytoscape.js](@/glossary/cytoscape-js.md).
 
-The technologies behind it, measured from the work that shows those skills: [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md), [Python](@/glossary/python.md), [Claude API](@/glossary/claude-api.md), [Shell](@/glossary/shell.md), [Alpine.js](@/glossary/alpine-js.md), [CSS](@/glossary/css.md) and [Dockerfile](@/glossary/dockerfile.md).
+The technologies behind it, measured from the work that shows those skills: [JavaScript](@/glossary/javascript.md), [Node.js](@/glossary/nodejs.md), [HTML](@/glossary/html.md), [Python](@/glossary/python.md), [Dockerfile](@/glossary/dockerfile.md), [Flowbite Pro](@/glossary/flowbite-pro.md), [Claude API](@/glossary/claude-api.md) and [Shell](@/glossary/shell.md).
 
 22 public repositories show its skills (22 by their own words).
 

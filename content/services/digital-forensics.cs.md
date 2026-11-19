@@ -14,7 +14,7 @@ icon = "lock"
 og_title = "Digitální forenzní analýza a zajištění důkazů"
 og_image = "og/cs-service-digital-forensics.png"
 schema = "service"
-terms = ["service", "elixir", "postgresql", "lean", "digital-forensics", "chain-of-custody", "attack-surface", "audit-trail", "reputation-risk", "source-criticism", "html", "javascript", "claude-api", "python", "shell", "alpine-js", "css", "flowbite-pro", "majordomus", "rust"]
+terms = ["service", "elixir", "postgresql", "lean", "digital-forensics", "chain-of-custody", "attack-surface", "audit-trail", "reputation-risk", "source-criticism", "html", "javascript", "claude-api", "python", "alpine-js", "flowbite-pro", "github-pages", "playwright", "shell", "tailwind-css"]
 keywords = ["Digitální forenzní analýza a zajištění důkazů", "Forenzní analýza webu a médií", "Řetězec úschovy důkazů", "Infrastrukturní OSINT", "Auditní stopa", "Analýza narativů a reputace", "Spolehlivost zdrojů", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -34,7 +34,7 @@ Každý surový sběr zahashovat a zřetězit do úložiště jen pro zápis, ud
 
 Je postavená na: [Elixir](@/glossary/elixir.cs.md), [PostgreSQL](@/glossary/postgresql.cs.md) a [Lean](@/glossary/lean.cs.md).
 
-Technologie za ní, změřené z práce, která tyto dovednosti dokládá: [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Claude API](@/glossary/claude-api.cs.md), [Python](@/glossary/python.cs.md), [Shell](@/glossary/shell.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md), [CSS](@/glossary/css.cs.md) a [Flowbite Pro](@/glossary/flowbite-pro.cs.md).
+Technologie za ní, změřené z práce, která tyto dovednosti dokládá: [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Claude API](@/glossary/claude-api.cs.md), [Python](@/glossary/python.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md), [GitHub Pages](@/glossary/github-pages.cs.md) a [Playwright](@/glossary/playwright.cs.md).
 
 Její dovednosti dokládá 8 veřejných repozitářů (8 vlastními slovy).
 

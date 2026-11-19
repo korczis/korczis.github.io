@@ -16,8 +16,8 @@ kind = "language"
 definition = "C with classes, templates and abstractions that cost nothing at run time; used where speed matters."
 aliases = []
 reference = { title = "cppreference.com", url = "https://en.cppreference.com/" }
-pages = ["projects/learning.md", "projects/science.md", "projects/security.md", "projects/tools.md", "work/algorithms-ruby.md", "work/algorithms.md", "work/happ.md", "work/icave.md", "work/peacemaker.md", "work/skull-cpp.md", "work/skull-emscripten.md"]
-related = ["repository", "open-source", "commit", "rust", "c", "ruby", "shell", "cmake"]
+pages = ["projects/learning.md", "projects/science.md", "projects/security.md", "projects/tools.md", "work/algorithms-ruby.md", "work/algorithms.md", "work/happ.md", "work/icave.md", "work/nosqlight.md", "work/peacemaker.md", "work/skull-cpp.md", "work/skull-emscripten.md"]
+related = ["repository", "open-source", "commit", "c", "cmake", "rust", "elixir", "javascript"]
 og_title = "C++: glossary"
 og_image = "og/glossary-cpp.png"
 keywords = ["C++", "Programming language", "Glossary", "Tomas Korcak"]
@@ -40,9 +40,9 @@ span = 3
 height = "md"
 tone = "night"
 +++
-I have written C++ in 7 public repositories, from 2014 to 2021; in 6 of them it is the main language.
+I have written C++ in 8 public repositories, from 2014 to 2021; in 6 of them it is the main language.
 
-What it was for: [Learning and experiments](@/projects/learning.md) (3), [Science and visualisation](@/projects/science.md) (2), [Security and OSINT](@/projects/security.md) (1) and [Tools](@/projects/tools.md) (1).
+What it was for: [Learning and experiments](@/projects/learning.md) (3), [Science and visualisation](@/projects/science.md) (2), [Data and GIS](@/projects/data.md) (1) and [Security and OSINT](@/projects/security.md) (1).
 
 Most recently: [happ](@/work/happ.md): Playground App created during my Hospital Stay; [skull-cpp](@/work/skull-cpp.md): C++ Skull; [algorithms-ruby](@/work/algorithms-ruby.md): Fundamental algorithms in ruby.
 

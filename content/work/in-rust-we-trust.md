@@ -17,7 +17,7 @@ og_description = "in-rust-we-trust: Tools, 2017, archive. Source on GitHub and G
 og_image = "og/work-in-rust-we-trust.png"
 schema = "project"
 keywords = ["in-rust-we-trust", "Tools", "2017", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["open-source", "repository", "commit"]
+terms = ["rust", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

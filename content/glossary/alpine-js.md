@@ -3,7 +3,7 @@
 title = "Alpine.js"
 description = "A small JavaScript framework that adds behaviour to HTML in its own attributes; here the filters, drawers and palette."
 template = "term.html"
-weight = 40
+weight = 41
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "A small JavaScript framework that adds behaviour to HTML in its own attributes; here the filters, drawers and palette."
 aliases = ["alpinejs"]
 reference = { title = "alpinejs.dev", url = "https://alpinejs.dev/" }
-pages = ["projects/knowledge.md", "projects/science.md", "services/_index.md", "services/ai-engineering-governance.md", "services/attack-surface.md", "services/compliance-screening.md", "services/continuous-monitoring.md", "services/decision-support-ai.md", "services/digital-forensics.md", "services/digital-investigation.md", "services/due-diligence.md", "services/interactive-data-products.md", "services/m-and-a.md", "services/reputation-intelligence.md", "skills/_index.md", "skills/ai-transformation.md", "skills/audit-trail.md", "skills/data-integration.md", "skills/data-room.md", "skills/decision-support.md", "skills/document-extraction.md", "skills/due-diligence.md", "skills/entity-resolution.md", "skills/insolvency-monitoring.md", "skills/interactive-visualisation.md", "skills/knowledge-graph.md", "skills/llm-agents.md", "skills/m-and-a-screening.md", "skills/market-intelligence.md", "skills/orchestration.md", "skills/osint-investigation.md", "skills/risk-scoring.md", "stack.md", "work/algoglyph.md", "work/kompendium-epistemicke-anihilace.md", "_index.md"]
-related = ["javascript", "flowbite-pro", "html", "claude-api", "dockerfile", "fastapi", "python", "elixir"]
+pages = ["projects/knowledge.md", "projects/science.md", "services/_index.md", "services/ai-engineering-governance.md", "services/attack-surface.md", "services/compliance-screening.md", "services/continuous-monitoring.md", "services/decision-support-ai.md", "services/digital-forensics.md", "services/due-diligence.md", "services/m-and-a.md", "skills/_index.md", "skills/ai-transformation.md", "skills/audit-trail.md", "skills/data-room.md", "skills/document-extraction.md", "skills/due-diligence.md", "skills/entity-resolution.md", "skills/insolvency-monitoring.md", "skills/interactive-visualisation.md", "skills/knowledge-graph.md", "skills/llm-agents.md", "skills/m-and-a-screening.md", "skills/market-intelligence.md", "skills/orchestration.md", "skills/risk-scoring.md", "stack.md", "work/algoglyph.md", "work/astronomists.md", "work/catharsis-as-a-service.md", "work/kompendium-epistemicke-anihilace.md", "work/korczis-github-io.md", "work/oscilla.md", "work/u-tygra.md", "_index.md"]
+related = ["javascript", "flowbite-pro", "html", "claude-api", "dockerfile", "python", "tailwind-css", "shell"]
 og_title = "Alpine.js: glossary"
 og_image = "og/glossary-alpine-js.png"
 keywords = ["Alpine.js", "Technology", "Glossary", "Tomas Korcak"]
@@ -40,13 +40,13 @@ span = 3
 height = "md"
 tone = "night"
 +++
-Alpine.js is part of 3 of my public repositories, from 2024 to 2026.
+Alpine.js is part of 7 of my public repositories, from 2024 to 2026.
 
-What it was for: [Knowledge](@/projects/knowledge.md) (1), [Science and visualisation](@/projects/science.md) (1) and [Web](@/projects/web.md) (1).
+What it was for: [Science and visualisation](@/projects/science.md) (2), [Tools](@/projects/tools.md) (2), [Knowledge](@/projects/knowledge.md) (1) and [Media and art](@/projects/media.md) (1).
 
-Most recently: [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus; [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore; [algoglyph](@/work/algoglyph.md): Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core.
+Most recently: [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus; [Oscilla](@/work/oscilla.md): Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty; [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore.
 
-2 of these projects run as live sites.
+6 of these projects run as live sites.
 
 I also used it in client work under confidentiality agreements. Roles: Architect, Lead engineer, AI engineer and Data engineer. What was solved: LLM agents, Decision support, AI transformation and Audit trail. The use cases below give the principle and the intent of that work; no client, person, date or number is named.
 

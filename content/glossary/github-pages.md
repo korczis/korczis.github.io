@@ -3,7 +3,7 @@
 title = "GitHub Pages"
 description = "GitHub's hosting for static websites, deployed from a repository; this site and most project sites live there."
 template = "term.html"
-weight = 50
+weight = 65
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "GitHub's hosting for static websites, deployed from a repository; this site and most project sites live there."
 aliases = ["github-pages"]
 reference = { title = "GitHub Pages documentation", url = "https://docs.github.com/en/pages" }
-pages = ["interfaces.md", "stack.md", "work/algoglyph.md", "work/apollon.md", "work/astronomists.md", "work/bubbler.md", "work/catharsis-as-a-service.md", "work/crisis-map.md", "work/csv2psql.md", "work/data-atlas.md", "work/gists-search.md", "work/kompendium-epistemicke-anihilace.md", "work/majordomus-reel.md", "work/maze-rs.md", "work/oscilla.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/prismatic-blog.md", "work/prismatic-majordomus.md", "work/sonic-playground.md", "work/u-tygra.md", "work/vomaste-cz.md"]
-related = ["commit", "open-source", "repository", "html", "javascript", "shell", "css", "python"]
+pages = ["interfaces.md", "services/ai-engineering-governance.md", "services/digital-forensics.md", "skills/audit-trail.md", "skills/interactive-visualisation.md", "skills/llm-agents.md", "skills/narrative-analysis.md", "skills/policy-as-code.md", "stack.md", "work/algoglyph.md", "work/apollon.md", "work/astronomists.md", "work/bubbler.md", "work/catharsis-as-a-service.md", "work/crisis-map.md", "work/csv2psql.md", "work/data-atlas.md", "work/gists-search.md", "work/kompendium-epistemicke-anihilace.md", "work/korczis-github-com.md", "work/korczis-github-io.md", "work/majordomus-reel.md", "work/maze-rs.md", "work/oscilla.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/prismatic-blog.md", "work/prismatic-majordomus.md", "work/sonic-playground.md", "work/u-tygra.md", "work/vomaste-cz.md"]
+related = ["html", "javascript", "commit", "open-source", "repository", "shell", "tailwind-css", "flowbite-pro"]
 og_title = "GitHub Pages: glossary"
 og_image = "og/glossary-github-pages.png"
 keywords = ["GitHub Pages", "Technology", "Glossary", "Tomas Korcak"]
@@ -40,10 +40,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
-GitHub Pages is part of 1 of my public repositories, from 2024 to 2026.
+GitHub Pages is part of 15 of my public repositories, from 2019 to 2026.
 
-What it was for: [Web](@/projects/web.md) (1).
+What it was for: [Tools](@/projects/tools.md) (5), [Media and art](@/projects/media.md) (3), [Science and visualisation](@/projects/science.md) (2) and [Web](@/projects/web.md) (2).
 
-Most recently: [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.
+Most recently: [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus; [Oscilla](@/work/oscilla.md): Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty; [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore.
+
+13 of these projects run as live sites.
 
 How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses GitHub Pages: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links GitHub Pages to the repositories and to the other languages and technologies they use together.

@@ -17,7 +17,7 @@ og_description = "jetel-modules: Data a GIS, 2015, archiv. Zdrojový kód: GitHu
 og_image = "og/cs-work-jetel-modules.png"
 schema = "project"
 keywords = ["jetel-modules", "Data a GIS", "2015", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["gis", "repository", "commit", "open-source"]
+terms = ["json", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

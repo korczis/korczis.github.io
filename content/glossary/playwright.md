@@ -3,7 +3,7 @@
 title = "Playwright"
 description = "A browser automation library that drives Chromium, Firefox and WebKit for end-to-end tests and audits."
 template = "term.html"
-weight = 60
+weight = 88
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -16,11 +16,20 @@ kind = "technology"
 definition = "A browser automation library that drives Chromium, Firefox and WebKit for end-to-end tests and audits."
 aliases = []
 reference = { title = "Playwright documentation", url = "https://playwright.dev/docs/intro" }
-pages = ["services/digital-investigation.md", "services/due-diligence.md", "_index.md"]
-related = ["alpine-js", "beneficial-ownership", "claude-api", "dockerfile", "elixir", "fastapi", "flowbite-pro", "html"]
+pages = ["services/_index.md", "services/ai-engineering-governance.md", "services/decision-support-ai.md", "services/digital-forensics.md", "services/digital-investigation.md", "services/due-diligence.md", "services/m-and-a.md", "skills/_index.md", "skills/audit-trail.md", "skills/document-extraction.md", "skills/due-diligence.md", "skills/llm-agents.md", "skills/policy-as-code.md", "work/astronomists.md", "work/catharsis-as-a-service.md", "work/data-atlas.md", "work/korczis-github-io.md", "work/oscilla.md", "work/vomaste-cz.md", "_index.md"]
+related = ["html", "javascript", "tailwind-css", "alpine-js", "flowbite-pro", "shell", "python", "github-pages"]
 og_title = "Playwright: glossary"
 og_image = "og/glossary-playwright.png"
 keywords = ["Playwright", "Technology", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,6 +40,14 @@ span = 3
 height = "md"
 tone = "night"
 +++
-No public repository of mine uses Playwright as the data measures it; the evidence is the client work described below.
+Playwright is part of 6 of my public repositories, from 2024 to 2026.
+
+What it was for: [Tools](@/projects/tools.md) (2), [Data and GIS](@/projects/data.md) (1), [Media and art](@/projects/media.md) (1) and [Science and visualisation](@/projects/science.md) (1).
+
+Most recently: [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus; [Oscilla](@/work/oscilla.md): Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty; [astronomists](@/work/astronomists.md).
+
+5 of these projects run as live sites.
 
 I also used it in client work under confidentiality agreements. Roles: Architect, Lead engineer, AI engineer and Data engineer. What was solved: LLM agents, Decision support, AI transformation and Audit trail. The use cases below give the principle and the intent of that work; no client, person, date or number is named.
+
+How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses Playwright: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links Playwright to the repositories and to the other languages and technologies they use together.

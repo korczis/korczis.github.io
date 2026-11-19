@@ -17,7 +17,7 @@ og_description = "graph-flow: Věda a vizualizace, Rust, 2017, archiv. Zdrojový
 og_image = "og/cs-work-graph-flow.png"
 schema = "project"
 keywords = ["graph-flow", "Věda a vizualizace", "Rust", "2017", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["rust", "data-visualisation", "repository", "commit", "open-source"]
+terms = ["rust", "clap", "data-visualisation", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

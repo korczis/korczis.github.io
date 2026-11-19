@@ -17,7 +17,7 @@ og_description = "maze-js: Science and visualisation, 2016, archive. Source on G
 og_image = "og/work-maze-js.png"
 schema = "project"
 keywords = ["maze-js", "Science and visualisation", "2016", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["data-visualisation", "repository", "commit", "open-source"]
+terms = ["javascript", "data-visualisation", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

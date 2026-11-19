@@ -17,7 +17,7 @@ definition = "A scripting language made for the web, run on the server to produc
 aliases = []
 reference = { title = "php.net", url = "https://www.php.net/" }
 pages = ["work/docks.md"]
-related = ["commit", "dockerfile", "open-source", "repository", "shell"]
+related = ["commit", "couchbase", "dockerfile", "elasticsearch", "mongodb", "nominatim", "open-source", "postgis"]
 og_title = "PHP: glossary"
 og_image = "og/glossary-php.png"
 keywords = ["PHP", "Programming language", "Glossary", "Tomas Korcak"]

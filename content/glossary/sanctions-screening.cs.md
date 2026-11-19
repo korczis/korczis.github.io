@@ -3,7 +3,7 @@
 title = "Sankční prověrka"
 description = "Kontrola osob a firem proti sankčním seznamům a politicky exponovaným osobám před obchodním vztahem, jak vyžadují pravidla proti praní peněz."
 template = "term.html"
-weight = 107
+weight = 142
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]
@@ -17,7 +17,7 @@ definition = "Kontrola osob a firem proti sankčním seznamům a politicky expon
 aliases = []
 reference = { title = "OpenSanctions documentation", url = "https://www.opensanctions.org/docs/" }
 pages = ["services/_index.cs.md", "services/compliance-screening.cs.md", "skills/_index.cs.md", "skills/sanctions-screening.cs.md"]
-related = ["alpine-js", "beneficial-ownership", "claude-api", "contestability", "dockerfile", "fastapi", "flowbite-pro", "html"]
+related = ["alpine-js", "beneficial-ownership", "contestability", "dockerfile", "flowbite-pro", "html", "javascript", "python"]
 og_title = "Sankční prověrka: slovník"
 og_image = "og/cs-glossary-sanctions-screening.png"
 keywords = ["Sankční prověrka", "Sanctions screening", "Koncept", "Slovník", "Tomáš Korčák"]

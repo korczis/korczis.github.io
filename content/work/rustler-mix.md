@@ -17,7 +17,7 @@ og_description = "rustler_mix: Tools in Elixir, Erlang and Rust, 2016, archive. 
 og_image = "og/work-rustler-mix.png"
 schema = "project"
 keywords = ["rustler_mix", "Tools", "Elixir", "Erlang", "Rust", "2016", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["elixir", "erlang", "rust", "open-source", "repository", "commit"]
+terms = ["elixir", "erlang", "rust", "rustler", "eex", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

@@ -16,8 +16,8 @@ kind = "language"
 definition = "Jazyk a správce balíčků pro reprodukovatelnou, deklarativní konfiguraci systému."
 aliases = []
 reference = { title = "nix.dev", url = "https://nix.dev/" }
-pages = ["work/el-magico-cache.cs.md"]
-related = ["commit", "dockerfile", "elixir", "html", "makefile", "open-source", "repository", "shell"]
+pages = ["work/el-magico-cache.cs.md", "work/server-nixos.cs.md"]
+related = ["commit", "open-source", "repository", "shell", "ansible", "cowboy", "dockerfile", "elixir"]
 og_title = "Nix: slovník"
 og_image = "og/cs-glossary-nix.png"
 keywords = ["Nix", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
@@ -40,10 +40,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
-Nix jsem psal v 1 veřejném repozitáři, od roku 2023 do 2023.
+Nix jsem psal ve 2 veřejných repozitářích, od roku 2019 do 2023.
 
-K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (1).
+K čemu to sloužilo: [Systémy a infrastruktura](@/projects/systems.cs.md) (1) a [Nástroje](@/projects/tools.cs.md) (1).
 
-Naposledy: [el-magico-cache](@/work/el-magico-cache.cs.md).
+Naposledy: [el-magico-cache](@/work/el-magico-cache.cs.md); [server-nixos](@/work/server-nixos.cs.md).
 
 Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak Nix používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje Nix s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

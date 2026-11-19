@@ -16,8 +16,8 @@ kind = "language"
 definition = "Jazyk a prostředí pro statistiku a analýzu dat, s grafy a rozsáhlou knihovnou statistických metod."
 aliases = []
 reference = { title = "The R Project", url = "https://www.r-project.org/about.html" }
-pages = ["projects/data.cs.md", "work/datascience.cs.md", "work/zeman-ucet.cs.md"]
-related = ["repository", "commit", "gis", "open-source", "ruby", "shell", "elixir", "html"]
+pages = ["projects/data.cs.md", "work/apollo-box.cs.md", "work/datascience.cs.md", "work/zeman-ucet.cs.md"]
+related = ["repository", "commit", "gis", "open-source", "shell", "python", "ruby", "csv"]
 og_title = "R: slovník"
 og_image = "og/cs-glossary-r.png"
 keywords = ["R (programovací jazyk)", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
@@ -40,10 +40,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
-R jsem psal ve 2 veřejných repozitářích, od roku 2016 do 2017; v 1 z nich je hlavním jazykem.
+R jsem psal ve 3 veřejných repozitářích, od roku 2014 do 2017; v 1 z nich je hlavním jazykem.
 
-K čemu to sloužilo: [Data a GIS](@/projects/data.cs.md) (1) a [Nástroje](@/projects/tools.cs.md) (1).
+K čemu to sloužilo: [Data a GIS](@/projects/data.cs.md) (2) a [Nástroje](@/projects/tools.cs.md) (1).
 
-Naposledy: [zeman-ucet](@/work/zeman-ucet.cs.md); [datascience](@/work/datascience.cs.md).
+Naposledy: [zeman-ucet](@/work/zeman-ucet.cs.md); [datascience](@/work/datascience.cs.md); [apollo-box](@/work/apollo-box.cs.md).
 
 Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak R používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje R s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

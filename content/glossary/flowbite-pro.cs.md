@@ -3,7 +3,7 @@
 title = "Flowbite Pro"
 description = "Licencovaná knihovna bloků rozhraní a aplikační shell nad Tailwind CSS; je z ní postavená každá stránka tohoto webu."
 template = "term.html"
-weight = 48
+weight = 63
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Licencovaná knihovna bloků rozhraní a aplikační shell nad Tailwind CSS; je z ní postavená každá stránka tohoto webu."
 aliases = ["Flowbite"]
 reference = { title = "Flowbite", url = "https://flowbite.com/" }
-pages = ["_index.cs.md", "projects/knowledge.cs.md", "projects/science.cs.md", "services/_index.cs.md", "services/ai-engineering-governance.cs.md", "services/attack-surface.cs.md", "services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "services/decision-support-ai.cs.md", "services/digital-forensics.cs.md", "services/digital-investigation.cs.md", "services/due-diligence.cs.md", "services/interactive-data-products.cs.md", "services/m-and-a.cs.md", "services/reputation-intelligence.cs.md", "skills/_index.cs.md", "skills/ai-transformation.cs.md", "skills/audit-trail.cs.md", "skills/data-room.cs.md", "skills/document-extraction.cs.md", "skills/due-diligence.cs.md", "skills/entity-resolution.cs.md", "skills/insolvency-monitoring.cs.md", "skills/interactive-visualisation.cs.md", "skills/knowledge-graph.cs.md", "skills/llm-agents.cs.md", "skills/m-and-a-screening.cs.md", "skills/market-intelligence.cs.md", "skills/orchestration.cs.md", "skills/risk-scoring.cs.md", "stack.cs.md", "work/algoglyph.cs.md", "work/kompendium-epistemicke-anihilace.cs.md"]
-related = ["alpine-js", "javascript", "html", "claude-api", "dockerfile", "fastapi", "python", "elixir"]
+pages = ["_index.cs.md", "projects/knowledge.cs.md", "projects/science.cs.md", "services/_index.cs.md", "services/ai-engineering-governance.cs.md", "services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "services/decision-support-ai.cs.md", "services/digital-forensics.cs.md", "services/digital-investigation.cs.md", "services/due-diligence.cs.md", "services/interactive-data-products.cs.md", "services/m-and-a.cs.md", "services/reputation-intelligence.cs.md", "skills/_index.cs.md", "skills/ai-transformation.cs.md", "skills/audit-trail.cs.md", "skills/data-room.cs.md", "skills/decision-support.cs.md", "skills/entity-resolution.cs.md", "skills/insolvency-monitoring.cs.md", "skills/interactive-visualisation.cs.md", "skills/knowledge-graph.cs.md", "skills/llm-agents.cs.md", "skills/m-and-a-screening.cs.md", "skills/market-intelligence.cs.md", "skills/orchestration.cs.md", "skills/osint-investigation.cs.md", "skills/policy-as-code.cs.md", "skills/registry-intelligence.cs.md", "skills/risk-scoring.cs.md", "stack.cs.md", "work/algoglyph.cs.md", "work/astronomists.cs.md", "work/catharsis-as-a-service.cs.md", "work/crisis-map.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/korczis-github-io.cs.md", "work/majordomus-reel.cs.md", "work/openttd-prismatic-bridge.cs.md", "work/oscilla.cs.md", "work/sonic-playground.cs.md", "work/u-tygra.cs.md"]
+related = ["javascript", "html", "alpine-js", "tailwind-css", "python", "shell", "claude-api", "dockerfile"]
 og_title = "Flowbite Pro: slovník"
 og_image = "og/cs-glossary-flowbite-pro.png"
 keywords = ["Flowbite Pro", "Technologie", "Slovník", "Tomáš Korčák"]
@@ -40,13 +40,13 @@ span = 3
 height = "md"
 tone = "night"
 +++
-Flowbite Pro je součástí 3 mých veřejných repozitářů, od roku 2024 do 2026.
+Flowbite Pro je součástí 11 mých veřejných repozitářů, od roku 2024 do 2026.
 
-K čemu to sloužilo: [Znalosti](@/projects/knowledge.cs.md) (1), [Věda a vizualizace](@/projects/science.cs.md) (1) a [Web](@/projects/web.cs.md) (1).
+K čemu to sloužilo: [Média a umění](@/projects/media.cs.md) (4), [Věda a vizualizace](@/projects/science.cs.md) (2), [Nástroje](@/projects/tools.cs.md) (2) a [Data a GIS](@/projects/data.cs.md) (1).
 
-Naposledy: [korczis.github.io](@/work/korczis-github-io.cs.md); [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat; [algoglyph](@/work/algoglyph.cs.md): Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.
+Naposledy: [korczis.github.io](@/work/korczis-github-io.cs.md); [openttd-prismatic-bridge](@/work/openttd-prismatic-bridge.cs.md); [Oscilla](@/work/oscilla.cs.md): Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.
 
-2 z těchto projektů běží jako živé weby.
+9 z těchto projektů běží jako živé weby.
 
 Používal jsem ho také v klientské práci pod dohodami o mlčenlivosti. Role: Architekt, Vedoucí inženýr, Inženýr AI a Datový inženýr. Co se řešilo: Agenti s LLM, Podpora rozhodování, Transformace s AI a Auditní stopa. Případy užití níže popisují princip a záměr této práce; žádný klient, osoba, datum ani číslo nejsou uvedeny.
 

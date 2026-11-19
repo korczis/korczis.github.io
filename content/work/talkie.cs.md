@@ -17,7 +17,7 @@ og_description = "talkie: Média a umění, 2015, archiv. Zdrojový kód: GitHub
 og_image = "og/cs-work-talkie.png"
 schema = "project"
 keywords = ["talkie", "Média a umění", "2015", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["data-visualisation", "repository", "commit", "open-source"]
+terms = ["nodejs", "data-visualisation", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

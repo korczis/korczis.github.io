@@ -17,7 +17,7 @@ og_description = "gooddata-fs: Data a GIS, Rust, Makefile a Shell, 2016, archiv.
 og_image = "og/cs-work-gooddata-fs.png"
 schema = "project"
 keywords = ["gooddata-fs", "Data a GIS", "Rust", "Makefile", "Shell", "2016", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["rust", "makefile", "shell", "gis", "repository", "commit", "open-source"]
+terms = ["rust", "makefile", "shell", "dockerfile", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

@@ -17,7 +17,7 @@ og_description = "openttd-prismatic-bridge: Media and art in Python, Squirrel an
 og_image = "og/work-openttd-prismatic-bridge.png"
 schema = "project"
 keywords = ["openttd-prismatic-bridge", "Media and art", "Python", "Squirrel", "HTML", "2026", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["python", "squirrel", "html", "javascript", "shell", "data-visualisation", "repository", "commit", "open-source"]
+terms = ["python", "squirrel", "html", "javascript", "shell", "fastapi", "tailwind-css", "flowbite-pro", "data-visualisation", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

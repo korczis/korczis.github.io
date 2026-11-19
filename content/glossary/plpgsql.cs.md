@@ -17,7 +17,7 @@ definition = "Procedurální jazyk PostgreSQL: funkce a triggery, které uvnitř
 aliases = ["PLpgSQL"]
 reference = { title = "PostgreSQL: PL/pgSQL", url = "https://www.postgresql.org/docs/current/plpgsql.html" }
 pages = ["work/data-atlas.cs.md"]
-related = ["commit", "gis", "github-pages", "html", "javascript", "just", "open-source", "python"]
+related = ["commit", "gis", "github-pages", "html", "javascript", "just", "open-source", "playwright"]
 og_title = "PL/pgSQL: slovník"
 og_image = "og/cs-glossary-plpgsql.png"
 keywords = ["PL/pgSQL", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

@@ -16,8 +16,8 @@ kind = "language"
 definition = "A general-purpose language valued for readability, common in data work and scripting."
 aliases = []
 reference = { title = "python.org", url = "https://www.python.org/about/" }
-pages = ["cases/financial-group.md", "projects/data.md", "projects/media.md", "projects/science.md", "projects/tools.md", "services/_index.md", "services/ai-engineering-governance.md", "services/compliance-screening.md", "services/decision-support-ai.md", "services/digital-forensics.md", "services/digital-investigation.md", "services/due-diligence.md", "services/interactive-data-products.md", "services/m-and-a.md", "services/reputation-intelligence.md", "skills/_index.md", "skills/audit-trail.md", "skills/decision-support.md", "skills/document-extraction.md", "skills/due-diligence.md", "skills/entity-resolution.md", "skills/interactive-visualisation.md", "skills/llm-agents.md", "skills/m-and-a-screening.md", "skills/narrative-analysis.md", "skills/osint-investigation.md", "skills/policy-as-code.md", "work/astronomists.md", "work/big-png.md", "work/catharsis-as-a-service.md", "work/data-atlas.md", "work/gists-search.md", "work/kompendium-epistemicke-anihilace.md", "work/kuzu-ex.md", "work/majordomus-reel.md", "work/openttd-prismatic-bridge.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/pdf-renderer.md", "work/prismatic-majordomus.md", "work/prismatic.md", "work/sonic-playground.md", "_index.md"]
-related = ["html", "javascript", "shell", "alpine-js", "elixir", "claude-api", "flowbite-pro", "css"]
+pages = ["cases/financial-group.md", "projects/data.md", "projects/media.md", "projects/science.md", "projects/tools.md", "services/_index.md", "services/ai-engineering-governance.md", "services/compliance-screening.md", "services/decision-support-ai.md", "services/digital-forensics.md", "services/digital-investigation.md", "services/due-diligence.md", "services/interactive-data-products.md", "services/m-and-a.md", "services/reputation-intelligence.md", "skills/_index.md", "skills/audit-trail.md", "skills/decision-support.md", "skills/document-extraction.md", "skills/due-diligence.md", "skills/entity-resolution.md", "skills/interactive-visualisation.md", "skills/m-and-a-screening.md", "skills/narrative-analysis.md", "skills/osint-investigation.md", "work/apollo-box.md", "work/astronomists.md", "work/aws-lambda-docker.md", "work/big-png.md", "work/catharsis-as-a-service.md", "work/data-atlas.md", "work/docker-datasciencetoolbox.md", "work/docker-dstk.md", "work/gists-search.md", "work/kompendium-epistemicke-anihilace.md", "work/kuzu-ex.md", "work/majordomus-reel.md", "work/openttd-prismatic-bridge.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/pdf-renderer.md", "work/prismatic-majordomus.md", "work/prismatic.md", "work/server-nixos.md", "work/sonic-playground.md", "work/zdeny-docker.md", "_index.md"]
+related = ["html", "javascript", "shell", "flowbite-pro", "repository", "tailwind-css", "dockerfile", "open-source"]
 og_title = "Python: glossary"
 og_image = "og/glossary-python.png"
 keywords = ["Python", "Programming language", "Glossary", "Tomas Korcak"]
@@ -40,13 +40,13 @@ span = 3
 height = "md"
 tone = "night"
 +++
-I have written Python in 12 public repositories, from 2015 to 2026; in 7 of them it is the main language.
+I have written Python in 19 public repositories, from 2014 to 2026; in 7 of them it is the main language.
 
-What it was for: [Tools](@/projects/tools.md) (4), [Media and art](@/projects/media.md) (3), [Data and GIS](@/projects/data.md) (2) and [Knowledge](@/projects/knowledge.md) (1).
+What it was for: [Systems and infrastructure](@/projects/systems.md) (5), [Media and art](@/projects/media.md) (4), [Tools](@/projects/tools.md) (4) and [Data and GIS](@/projects/data.md) (3).
 
-Most recently: [openttd-prismatic-bridge](@/work/openttd-prismatic-bridge.md): REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform; [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore; [Sonic Playground](@/work/sonic-playground.md): A hand-picked music blog built with Phoenix and Elixir on the Kita theme.
+Most recently: [openttd-prismatic-bridge](@/work/openttd-prismatic-bridge.md): REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform; [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore; [Majordomus reel](@/work/majordomus-reel.md): Voice, frames, music and sound, all generated and versioned like software.
 
-7 of these projects run as live sites.
+8 of these projects run as live sites.
 
 I also used it in client work under confidentiality agreements. Roles: Architect, Lead engineer, AI engineer, Data engineer, Investigator and Advisor. What was solved: LLM agents, Decision support, AI transformation, Audit trail and OSINT investigation. The use cases below give the principle and the intent of that work; no client, person, date or number is named.
 

@@ -17,7 +17,7 @@ og_description = "maze-js: Věda a vizualizace, 2016, archiv. Zdrojový kód: Gi
 og_image = "og/cs-work-maze-js.png"
 schema = "project"
 keywords = ["maze-js", "Věda a vizualizace", "2016", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["data-visualisation", "repository", "commit", "open-source"]
+terms = ["javascript", "data-visualisation", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

@@ -3,7 +3,7 @@
 title = "Kubernetes"
 description = "A system that runs containers across a cluster: scheduling, scaling, networking and rollouts declared as resources."
 template = "term.html"
-weight = 51
+weight = 74
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "A system that runs containers across a cluster: scheduling, scaling, networking and rollouts declared as resources."
 aliases = ["k8s"]
 reference = { title = "Kubernetes documentation", url = "https://kubernetes.io/docs/concepts/overview/" }
-pages = ["services/compliance-screening.md", "services/continuous-monitoring.md", "services/due-diligence.md", "services/m-and-a.md", "skills/ai-transformation.md", "skills/data-room.md", "skills/entity-resolution.md", "skills/insolvency-monitoring.md", "skills/knowledge-graph.md", "skills/m-and-a-screening.md", "skills/market-intelligence.md", "skills/orchestration.md", "skills/risk-scoring.md", "_index.md"]
-related = ["alpine-js", "claude-api", "dockerfile", "fastapi", "flowbite-pro", "github-actions", "html", "javascript"]
+pages = ["services/compliance-screening.md", "services/continuous-monitoring.md", "skills/data-room.md", "skills/entity-resolution.md", "skills/insolvency-monitoring.md", "skills/knowledge-graph.md", "skills/m-and-a-screening.md", "skills/orchestration.md", "skills/risk-scoring.md", "work/apollon.md", "work/cluster-kubernetes.md", "work/cluster.md", "work/k8s-orbis-pictus.md", "_index.md"]
+related = ["dockerfile", "alpine-js", "claude-api", "fastapi", "flowbite-pro", "github-actions", "html", "javascript"]
 og_title = "Kubernetes: glossary"
 og_image = "og/glossary-kubernetes.png"
 keywords = ["Kubernetes", "Technology", "Glossary", "Tomas Korcak"]
@@ -40,11 +40,13 @@ span = 3
 height = "md"
 tone = "night"
 +++
-Kubernetes is part of 1 of my public repositories, from 2017 to 2018.
+Kubernetes is part of 4 of my public repositories, from 2014 to 2019.
 
-What it was for: [Systems and infrastructure](@/projects/systems.md) (1).
+What it was for: [Systems and infrastructure](@/projects/systems.md) (4).
 
-Most recently: [cluster-kubernetes](@/work/cluster-kubernetes.md): Kubernetes Cluster.
+Most recently: [k8s-orbis-pictus](@/work/k8s-orbis-pictus.md): Playground for learning docker, kubernetes, ansible and friends; [cluster-kubernetes](@/work/cluster-kubernetes.md): Kubernetes Cluster; [cluster](@/work/cluster.md): Run your own CoreOS/Kubernetes cluster.
+
+1 of these projects runs as a live site.
 
 I also used it in client work under confidentiality agreements. Roles: Architect, Lead engineer, AI engineer and Data engineer. What was solved: LLM agents, Decision support, AI transformation and Audit trail. The use cases below give the principle and the intent of that work; no client, person, date or number is named.
 

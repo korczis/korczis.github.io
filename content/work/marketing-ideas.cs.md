@@ -17,7 +17,7 @@ og_description = "marketing-ideas: Nástroje, 2024, aktivní za posledních 48 m
 og_image = "og/cs-work-marketing-ideas.png"
 schema = "project"
 keywords = ["marketing-ideas", "Nástroje", "2024", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["open-source", "repository", "commit"]
+terms = ["markdown", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

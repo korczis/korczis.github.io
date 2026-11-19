@@ -17,7 +17,7 @@ og_description = "annasabatova.cz: Web in CSS and JavaScript, 2014, archive. Sou
 og_image = "og/work-annasabatova-cz.png"
 schema = "project"
 keywords = ["annasabatova.cz", "Web", "CSS", "JavaScript", "2014", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["css", "javascript", "static-site-generator", "repository", "commit", "open-source"]
+terms = ["css", "javascript", "nodejs", "express", "jquery", "static-site-generator", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

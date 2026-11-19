@@ -17,7 +17,7 @@ og_description = "microcrawler-crawler-google-com: Data a GIS, JavaScript, 2016,
 og_image = "og/cs-work-microcrawler-crawler-google-com.png"
 schema = "project"
 keywords = ["microcrawler-crawler-google-com", "Data a GIS", "JavaScript", "2016", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["javascript", "gis", "repository", "commit", "open-source"]
+terms = ["javascript", "nodejs", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

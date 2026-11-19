@@ -17,7 +17,7 @@ og_description = "llm: AI engineering in Elixir, 2026, active in the last 12 mon
 og_image = "og/work-llm.png"
 schema = "project"
 keywords = ["llm", "AI engineering", "Elixir", "AI", "chatgpt", "claude", "claude-code", "gemini", "2026", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["elixir", "ai-agent", "repository", "commit", "open-source"]
+terms = ["elixir", "ecto", "postgresql", "jason", "gitlab-ci", "ai-agent", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

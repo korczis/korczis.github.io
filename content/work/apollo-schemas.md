@@ -17,7 +17,7 @@ og_description = "apollo-schemas: Data and GIS, 2014, archive. Source on GitHub 
 og_image = "og/work-apollo-schemas.png"
 schema = "project"
 keywords = ["apollo-schemas", "Data and GIS", "2014", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["gis", "repository", "commit", "open-source"]
+terms = ["json", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

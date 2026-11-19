@@ -3,7 +3,7 @@
 title = "Meilisearch"
 description = "Rychlý open-source vyhledávač s tolerancí překlepů a filtry, použitý pro fulltext nad sebranými důkazy."
 template = "term.html"
-weight = 54
+weight = 78
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -16,11 +16,20 @@ kind = "technology"
 definition = "Rychlý open-source vyhledávač s tolerancí překlepů a filtry, použitý pro fulltext nad sebranými důkazy."
 aliases = []
 reference = { title = "Meilisearch documentation", url = "https://www.meilisearch.com/docs" }
-pages = ["services/digital-investigation.cs.md", "services/due-diligence.cs.md"]
-related = ["alpine-js", "beneficial-ownership", "claude-api", "dockerfile", "elixir", "fastapi", "flowbite-pro", "html"]
+pages = ["services/digital-investigation.cs.md", "services/due-diligence.cs.md", "work/comtesse.cs.md", "work/gists-search.cs.md", "work/meili-rsex.cs.md", "work/prism.cs.md", "work/sig.cs.md"]
+related = ["commit", "elixir", "open-source", "repository", "shell", "dockerfile", "html", "javascript"]
 og_title = "Meilisearch: slovník"
 og_image = "og/cs-glossary-meilisearch.png"
 keywords = ["Meilisearch", "Technologie", "Slovník", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,4 +40,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
-Žádný můj veřejný repozitář ani klientská zakázka Meilisearch podle měřených dat nepoužívá; tato stránka pojem vysvětluje tam, kde ho web používá.
+Meilisearch je součástí 5 mých veřejných repozitářů, od roku 2024 do 2026.
+
+K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (3), [Inženýrství AI](@/projects/ai.cs.md) (1) a [Data a GIS](@/projects/data.cs.md) (1).
+
+Naposledy: [Gists search](@/work/gists-search.cs.md): Prohledávatelný index nad zrcadlem mých GitHub gistů; [prism](@/work/prism.cs.md); [sig](@/work/sig.cs.md).
+
+1 z těchto projektů běží jako živý web.
+
+Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak Meilisearch používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje Meilisearch s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

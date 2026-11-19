@@ -3,7 +3,7 @@
 title = "Pydantic"
 description = "Validace dat v Pythonu z typových anotací: modely, které vstup parsují, kontrolují a serializují."
 template = "term.html"
-weight = 63
+weight = 91
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

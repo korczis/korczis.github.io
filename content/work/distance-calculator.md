@@ -17,7 +17,7 @@ og_description = "distance-calculator: Science and visualisation in Elixir, 2024
 og_image = "og/work-distance-calculator.png"
 schema = "project"
 keywords = ["distance-calculator", "Science and visualisation", "Elixir", "2024", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["elixir", "data-visualisation", "repository", "commit", "open-source"]
+terms = ["elixir", "jason", "csv", "gitlab-ci", "data-visualisation", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

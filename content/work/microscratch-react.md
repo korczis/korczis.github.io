@@ -17,7 +17,7 @@ og_description = "microscratch-react: Web, 2015, archive. Source on GitHub and G
 og_image = "og/work-microscratch-react.png"
 schema = "project"
 keywords = ["microscratch-react", "Web", "2015", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["static-site-generator", "repository", "commit", "open-source"]
+terms = ["react", "static-site-generator", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

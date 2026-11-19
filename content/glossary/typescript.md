@@ -16,8 +16,8 @@ kind = "language"
 definition = "JavaScript with static types, checked before the code runs and compiled to plain JavaScript."
 aliases = []
 reference = { title = "TypeScript handbook", url = "https://www.typescriptlang.org/docs/" }
-pages = ["projects/science.md", "projects/tools.md", "skills/data-integration.md", "skills/llm-agents.md", "skills/osint-investigation.md", "work/algoglyph.md", "work/astronomists.md", "work/dispatcher.md", "work/sig.md", "work/ts-logger.md", "_index.md"]
-related = ["javascript", "repository", "shell", "elixir", "open-source", "alpine-js", "commit", "html"]
+pages = ["projects/science.md", "projects/tools.md", "skills/interactive-visualisation.md", "work/algoglyph.md", "work/astronomists.md", "work/dispatcher.md", "work/sig.md", "work/sonic-playground.md", "work/ts-logger.md", "_index.md"]
+related = ["repository", "javascript", "open-source", "commit", "shell", "elixir", "flowbite-pro", "python"]
 og_title = "TypeScript: glossary"
 og_image = "og/glossary-typescript.png"
 keywords = ["TypeScript", "Programming language", "Glossary", "Tomas Korcak"]
@@ -40,13 +40,13 @@ span = 3
 height = "md"
 tone = "night"
 +++
-I have written TypeScript in 5 public repositories, from 2019 to 2026; in 3 of them it is the main language.
+I have written TypeScript in 6 public repositories, from 2019 to 2026; in 3 of them it is the main language.
 
-What it was for: [Tools](@/projects/tools.md) (3), [AI engineering](@/projects/ai.md) (1) and [Science and visualisation](@/projects/science.md) (1).
+What it was for: [Tools](@/projects/tools.md) (3), [AI engineering](@/projects/ai.md) (1), [Media and art](@/projects/media.md) (1) and [Science and visualisation](@/projects/science.md) (1).
 
-Most recently: [algoglyph](@/work/algoglyph.md): Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core; [astronomists](@/work/astronomists.md); [sig](@/work/sig.md): distributed cognitive framework in Elixir/OTP.
+Most recently: [algoglyph](@/work/algoglyph.md): Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core; [Sonic Playground](@/work/sonic-playground.md): A hand-picked music blog built with Phoenix and Elixir on the Kita theme; [astronomists](@/work/astronomists.md).
 
-2 of these projects run as live sites.
+3 of these projects run as live sites.
 
 I also used it in client work under confidentiality agreements. Roles: Architect, Lead engineer, AI engineer and Data engineer. What was solved: LLM agents, Decision support, AI transformation and Audit trail. The use cases below give the principle and the intent of that work; no client, person, date or number is named.
 

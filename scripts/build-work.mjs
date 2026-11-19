@@ -18,6 +18,7 @@ import {
 import { REPOSITORY_TERMS, linkedTerms, listing, loadGlossary, mdEscape, nameLink, onGithubPages, termsForRepo, tl } from './lib/terms.mjs';
 import { vizBlock } from './lib/viz.mjs';
 import { cliArgs } from './lib/cli.mjs';
+import { loadDossierStacks } from './lib/skills.mjs';
 
 cliArgs({ '--check': true }, { derived: true });
 
@@ -27,6 +28,7 @@ const catalogue = readToml('data/projects.toml');
 const recent = readJson('data/recent.json');
 const index = readJson('data/index.json');
 const glossary = loadGlossary(ROOT);
+const DOSSIER_STACKS = loadDossierStacks();
 const me = identity();
 const LIMITS = limits();
 const periods = recent.periods.map((p) => p.months);
@@ -313,7 +315,7 @@ og_description = ${q(ogDescription(r, lang))}
 og_image = ${q(`og/${ogPrefix(lang)}work-${slug(r.name)}.png`)}
 schema = "project"
 keywords = [${keywords(r, lang).map(q).join(', ')}]
-terms = [${termsForRepo(glossary, r, curated).map(q).join(', ')}]
+terms = [${termsForRepo(glossary, r, curated, DOSSIER_STACKS.get(r.name) ?? []).map(q).join(', ')}]
 ${r.commits.length ? vizBlock({
     kind: 'pulse', source: 'work.commits', title: 'viz_commits_title', lead: r.hosts.github ? 'viz_commits_lead_live' : 'viz_commits_lead_snapshot',
     vars: r.hosts.github ? null : { cadence: cadenceIn(lang) },

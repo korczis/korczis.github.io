@@ -14,7 +14,7 @@ icon = "server"
 og_title = "External attack surface and cyber-exposure assessment"
 og_image = "og/service-attack-surface.png"
 schema = "service"
-terms = ["service", "elixir", "postgresql", "phoenix", "attack-surface", "regulatory-compliance", "change-detection", "risk-assessment", "web-scraping", "javascript", "html", "alpine-js", "c", "claude-api", "css", "dockerfile", "fastapi", "flowbite-pro", "github-actions"]
+terms = ["service", "elixir", "postgresql", "phoenix", "attack-surface", "regulatory-compliance", "change-detection", "risk-assessment", "web-scraping", "javascript", "nodejs", "cheerio", "bootstrap", "bower", "dockerfile", "ember-js", "handlebars", "html", "alpine-js"]
 keywords = ["External attack surface and cyber-exposure assessment", "Infrastructure OSINT", "Regulatory compliance mapping", "Continuous monitoring", "Risk scoring", "Web automation and crawling", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -34,7 +34,7 @@ It draws on these skills: [Infrastructure OSINT](@/skills/infrastructure-osint.m
 
 It is built with [Elixir](@/glossary/elixir.md), [PostgreSQL](@/glossary/postgresql.md) and [Phoenix](@/glossary/phoenix.md).
 
-The technologies behind it, measured from the work that shows those skills: [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md), [Alpine.js](@/glossary/alpine-js.md), [C](@/glossary/c.md), [Claude API](@/glossary/claude-api.md), [CSS](@/glossary/css.md), [Dockerfile](@/glossary/dockerfile.md) and [FastAPI](@/glossary/fastapi.md).
+The technologies behind it, measured from the work that shows those skills: [JavaScript](@/glossary/javascript.md), [Node.js](@/glossary/nodejs.md), [Cheerio](@/glossary/cheerio.md), [Bootstrap](@/glossary/bootstrap.md), [Bower](@/glossary/bower.md), [Dockerfile](@/glossary/dockerfile.md), [Ember.js](@/glossary/ember-js.md) and [Handlebars](@/glossary/handlebars.md).
 
 14 public repositories show its skills (14 by their own words).
 

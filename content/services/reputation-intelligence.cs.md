@@ -14,7 +14,7 @@ icon = "globe"
 og_title = "Reputační zpravodajství a monitoring negativních zpráv"
 og_image = "og/cs-service-reputation-intelligence.png"
 schema = "service"
-terms = ["service", "elixir", "broadway", "ollama", "claude-api", "phoenix", "reputation-risk", "source-criticism", "change-detection", "osint", "decision-support-system", "javascript", "html", "python", "shell", "css", "alpine-js", "dockerfile", "fastapi", "flowbite-pro", "github-actions"]
+terms = ["service", "elixir", "broadway", "ollama", "claude-api", "phoenix", "reputation-risk", "source-criticism", "change-detection", "osint", "decision-support-system", "javascript", "html", "python", "shell", "tailwind-css", "flowbite-pro", "postgresql", "dockerfile", "fastapi", "github-actions"]
 keywords = ["Reputační zpravodajství a monitoring negativních zpráv", "Analýza narativů a reputace", "Spolehlivost zdrojů", "Průběžný monitoring", "OSINT šetření", "Podpora rozhodování", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -34,7 +34,7 @@ Sbírat signály negativních zpráv, hodnotit je podle síly, šumu, soudržnos
 
 Je postavená na: [Elixir](@/glossary/elixir.cs.md), [Broadway](@/glossary/broadway.cs.md), [Ollama](@/glossary/ollama.cs.md), [Claude API](@/glossary/claude-api.cs.md) a [Phoenix](@/glossary/phoenix.cs.md).
 
-Technologie za ní, změřené z práce, která tyto dovednosti dokládá: [JavaScript](@/glossary/javascript.cs.md), [HTML](@/glossary/html.cs.md), [Python](@/glossary/python.cs.md), [Shell](@/glossary/shell.cs.md), [CSS](@/glossary/css.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md) a [FastAPI](@/glossary/fastapi.cs.md).
+Technologie za ní, změřené z práce, která tyto dovednosti dokládá: [JavaScript](@/glossary/javascript.cs.md), [HTML](@/glossary/html.cs.md), [Python](@/glossary/python.cs.md), [Shell](@/glossary/shell.cs.md), [Tailwind CSS](@/glossary/tailwind-css.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md), [PostgreSQL](@/glossary/postgresql.cs.md) a [Dockerfile](@/glossary/dockerfile.cs.md).
 
 Její dovednosti dokládá 9 veřejných repozitářů (9 vlastními slovy).
 

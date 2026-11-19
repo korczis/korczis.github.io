@@ -14,7 +14,7 @@ icon = "lock"
 og_title = "Digital forensics and evidence preservation"
 og_image = "og/service-digital-forensics.png"
 schema = "service"
-terms = ["service", "elixir", "postgresql", "lean", "digital-forensics", "chain-of-custody", "attack-surface", "audit-trail", "reputation-risk", "source-criticism", "html", "javascript", "claude-api", "python", "shell", "alpine-js", "css", "flowbite-pro", "majordomus", "rust"]
+terms = ["service", "elixir", "postgresql", "lean", "digital-forensics", "chain-of-custody", "attack-surface", "audit-trail", "reputation-risk", "source-criticism", "html", "javascript", "claude-api", "python", "alpine-js", "flowbite-pro", "github-pages", "playwright", "shell", "tailwind-css"]
 keywords = ["Digital forensics and evidence preservation", "Web and media forensics", "Chain of custody", "Infrastructure OSINT", "Audit trail", "Narrative and reputation analysis", "Source reliability", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -34,7 +34,7 @@ It draws on these skills: [Web and media forensics](@/skills/media-forensics.md)
 
 It is built with [Elixir](@/glossary/elixir.md), [PostgreSQL](@/glossary/postgresql.md) and [Lean](@/glossary/lean.md).
 
-The technologies behind it, measured from the work that shows those skills: [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md), [Claude API](@/glossary/claude-api.md), [Python](@/glossary/python.md), [Shell](@/glossary/shell.md), [Alpine.js](@/glossary/alpine-js.md), [CSS](@/glossary/css.md) and [Flowbite Pro](@/glossary/flowbite-pro.md).
+The technologies behind it, measured from the work that shows those skills: [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md), [Claude API](@/glossary/claude-api.md), [Python](@/glossary/python.md), [Alpine.js](@/glossary/alpine-js.md), [Flowbite Pro](@/glossary/flowbite-pro.md), [GitHub Pages](@/glossary/github-pages.md) and [Playwright](@/glossary/playwright.md).
 
 8 public repositories show its skills (8 by their own words).
 

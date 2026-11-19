@@ -17,7 +17,7 @@ og_description = "grache: Tools in Ruby, 2015, archive. Source on GitHub and Git
 og_image = "og/work-grache.png"
 schema = "project"
 keywords = ["grache", "Tools", "Ruby", "2015", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["ruby", "open-source", "repository", "commit"]
+terms = ["ruby", "gli", "travis-ci", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

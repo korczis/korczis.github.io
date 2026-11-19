@@ -13,7 +13,7 @@ skill = "ai-transformation"
 og_title = "Transformace s AI: dovednosti"
 og_image = "og/cs-skill-ai-transformation.png"
 schema = "skill"
-terms = ["skill", "ai-agent", "shell", "alpine-js", "claude-api", "dockerfile", "fastapi", "flowbite-pro", "github-actions", "html", "javascript", "kubernetes"]
+terms = ["skill", "ai-agent", "dockerfile", "shell", "alpine-js", "ansible", "claude-api", "fastapi", "flowbite-pro", "github-actions", "html", "javascript"]
 keywords = ["Transformace s AI", "Podpora rozhodování a AI agenti pro analytiky", "Řízený vývoj softwaru s AI", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -31,7 +31,7 @@ Pojem, na kterém stojí: [AI agent](@/glossary/ai-agent.cs.md).
 
 Služby, které z ní čerpají: [Podpora rozhodování a AI agenti pro analytiky](@/services/decision-support-ai.cs.md) a [Řízený vývoj softwaru s AI](@/services/ai-engineering-governance.cs.md).
 
-Praktikovaná s: [Shell](@/glossary/shell.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md), [Claude API](@/glossary/claude-api.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md), [FastAPI](@/glossary/fastapi.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md), [GitHub Actions](@/glossary/github-actions.cs.md) a [HTML](@/glossary/html.cs.md).
+Praktikovaná s: [Dockerfile](@/glossary/dockerfile.cs.md), [Shell](@/glossary/shell.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md), [Ansible](@/glossary/ansible.cs.md), [Claude API](@/glossary/claude-api.cs.md), [FastAPI](@/glossary/fastapi.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md) a [GitHub Actions](@/glossary/github-actions.cs.md).
 
 Veřejná práce, jejíž vlastní slova ji dokládají: [server-archlinux](https://github.com/korczis/server-archlinux).
 

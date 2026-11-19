@@ -16,8 +16,8 @@ kind = "language"
 definition = "An object-oriented language on the Java Virtual Machine, long the default of enterprise software."
 aliases = []
 reference = { title = "dev.java", url = "https://dev.java/learn/" }
-pages = ["projects/learning.md", "work/magic.md", "work/skull-java.md"]
-related = ["repository", "c", "commit", "elixir", "javascript", "open-source", "rust", "audit-trail"]
+pages = ["projects/learning.md", "work/ares-api.md", "work/docker-datasciencetoolbox.md", "work/docker-dstk.md", "work/magic.md", "work/skull-java.md"]
+related = ["repository", "commit", "open-source", "c", "dockerfile", "elixir", "javascript", "python"]
 og_title = "Java: glossary"
 og_image = "og/glossary-java.png"
 keywords = ["Java", "Programming language", "Glossary", "Tomas Korcak"]
@@ -40,10 +40,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
-I have written Java in 2 public repositories, from 2014 to 2017; in 1 of them it is the main language.
+I have written Java in 5 public repositories, from 2014 to 2017; in 1 of them it is the main language.
 
-What it was for: [Learning and experiments](@/projects/learning.md) (1) and [Security and OSINT](@/projects/security.md) (1).
+What it was for: [Systems and infrastructure](@/projects/systems.md) (2), [Learning and experiments](@/projects/learning.md) (1), [Security and OSINT](@/projects/security.md) (1) and [Tools](@/projects/tools.md) (1).
 
-Most recently: [magic](@/work/magic.md): All the magic happens here!; [skull-java](@/work/skull-java.md).
+Most recently: [magic](@/work/magic.md): All the magic happens here!; [docker-dstk](@/work/docker-dstk.md): Dockerized http://www.datasciencetoolkit.org; [docker-datasciencetoolbox](@/work/docker-datasciencetoolbox.md): Dockerized http://datasciencetoolbox.org.
 
 How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses Java: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links Java to the repositories and to the other languages and technologies they use together.

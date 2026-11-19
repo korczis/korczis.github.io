@@ -17,7 +17,7 @@ og_description = "docker-gooddata-ruby: Data a GIS, Ruby a Shell, 2015, archiv. 
 og_image = "og/cs-work-docker-gooddata-ruby.png"
 schema = "project"
 keywords = ["docker-gooddata-ruby", "Data a GIS", "Ruby", "Shell", "2015", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["ruby", "shell", "gis", "repository", "commit", "open-source"]
+terms = ["ruby", "shell", "dockerfile", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

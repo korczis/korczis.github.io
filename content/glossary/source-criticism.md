@@ -3,7 +3,7 @@
 title = "Source criticism"
 description = "Judging a source before believing it: who made it, when, how and why, and whether independent sources agree."
 template = "term.html"
-weight = 110
+weight = 145
 
 [taxonomies]
 tags = ["Glossary", "Concept"]
@@ -17,7 +17,7 @@ definition = "Judging a source before believing it: who made it, when, how and w
 aliases = []
 reference = { title = "Wikipedia: source criticism", url = "https://en.wikipedia.org/wiki/Source_criticism" }
 pages = ["services/_index.md", "services/digital-forensics.md", "services/due-diligence.md", "services/reputation-intelligence.md", "skills/_index.md", "skills/source-reliability.md"]
-related = ["alpine-js", "claude-api", "flowbite-pro", "html", "javascript", "python", "service", "decision-support-system"]
+related = ["flowbite-pro", "html", "javascript", "python", "service", "tailwind-css", "alpine-js", "decision-support-system"]
 og_title = "Source criticism: glossary"
 og_image = "og/glossary-source-criticism.png"
 keywords = ["Source criticism", "Concept", "Glossary", "Tomas Korcak"]

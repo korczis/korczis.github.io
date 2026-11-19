@@ -3,7 +3,7 @@
 title = "OpenAPI"
 description = "A standard, language-neutral description of an HTTP interface: its paths, operations and data, readable by people and tools such as Swagger UI."
 template = "term.html"
-weight = 57
+weight = 85
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -16,11 +16,20 @@ kind = "technology"
 definition = "A standard, language-neutral description of an HTTP interface: its paths, operations and data, readable by people and tools such as Swagger UI."
 aliases = ["Swagger"]
 reference = { title = "OpenAPI Specification", url = "https://spec.openapis.org/oas/latest.html" }
-pages = ["interfaces.md", "services/compliance-screening.md"]
-related = ["ai-agent", "alpine-js", "beneficial-ownership", "claude-api", "contestability", "dockerfile", "elixir", "fastapi"]
+pages = ["interfaces.md", "services/compliance-screening.md", "skills/registry-intelligence.md", "work/crisis-map.md"]
+related = ["elixir", "flowbite-pro", "javascript", "mcp", "css", "ecto", "github-pages", "html"]
 og_title = "OpenAPI: glossary"
 og_image = "og/glossary-openapi.png"
 keywords = ["OpenAPI", "Technology", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,4 +40,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
-No public repository or client engagement of mine uses OpenAPI as the data measures it; this page explains the term where the site uses it.
+OpenAPI is part of 1 of my public repositories, from 2026 to 2026.
+
+What it was for: [Data and GIS](@/projects/data.md) (1).
+
+Most recently: [Crisis map](@/work/crisis-map.md): Reports geocoded through a local Nominatim, stored as PostGIS geography and served from one capability registry: LiveView, REST, OpenAPI, MCP and CLI.
+
+1 of these projects runs as a live site.
+
+How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses OpenAPI: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links OpenAPI to the repositories and to the other languages and technologies they use together.

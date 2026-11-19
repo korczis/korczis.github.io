@@ -3,7 +3,7 @@
 title = "PostgreSQL"
 description = "An open-source relational database known for correctness and extensions."
 template = "term.html"
-weight = 62
+weight = 90
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "An open-source relational database known for correctness and extensions."
 aliases = ["postgres"]
 reference = { title = "postgresql.org", url = "https://www.postgresql.org/about/" }
-pages = ["hire.md", "projects/tools.md", "services/attack-surface.md", "services/compliance-screening.md", "services/continuous-monitoring.md", "services/digital-forensics.md", "services/digital-investigation.md", "services/due-diligence.md", "services/m-and-a.md", "work/csv2psql.md", "_index.md"]
-related = ["elixir", "html", "javascript", "alpine-js", "claude-api", "flowbite-pro", "service", "dockerfile"]
+pages = ["hire.md", "projects/tools.md", "services/attack-surface.md", "services/compliance-screening.md", "services/continuous-monitoring.md", "services/decision-support-ai.md", "services/digital-forensics.md", "services/digital-investigation.md", "services/due-diligence.md", "services/interactive-data-products.md", "services/m-and-a.md", "services/reputation-intelligence.md", "skills/data-integration.md", "skills/decision-support.md", "skills/document-extraction.md", "skills/geospatial-analysis.md", "skills/llm-agents.md", "skills/media-forensics.md", "skills/osint-investigation.md", "work/cluster-kubernetes.md", "work/crisis-map.md", "work/csv2psql.md", "work/data-atlas.md", "work/docker-dstk.md", "work/edna.md", "work/esri.md", "work/gooddata-lcm-tool.md", "work/happ.md", "work/jetel.md", "work/kanec.md", "work/llm.md", "work/mapoffacts.md", "work/pdf-renderer.md", "work/prismatic.md", "work/sandbox.md", "work/server-ansible.md", "work/sig.md", "work/test-elixir.md", "work/the-psycho.md", "work/tosh.md", "work/wangsta.md", "work/zaas.md", "_index.md"]
+related = ["elixir", "javascript", "html", "open-source", "repository", "commit", "dockerfile", "phoenix"]
 og_title = "PostgreSQL: glossary"
 og_image = "og/glossary-postgresql.png"
 keywords = ["PostgreSQL", "Technology", "Glossary", "Tomas Korcak"]
@@ -40,13 +40,13 @@ span = 3
 height = "md"
 tone = "night"
 +++
-PostgreSQL is part of 1 of my public repositories, from 2014 to 2015.
+PostgreSQL is part of 23 of my public repositories, from 2012 to 2026.
 
-What it was for: [Tools](@/projects/tools.md) (1).
+What it was for: [Tools](@/projects/tools.md) (8), [Data and GIS](@/projects/data.md) (5), [AI engineering](@/projects/ai.md) (3) and [Learning and experiments](@/projects/learning.md) (3).
 
-Most recently: [csv2psql](@/work/csv2psql.md): Turns CSV into insert or update statements for PostgreSQL.
+Most recently: [Crisis map](@/work/crisis-map.md): Reports geocoded through a local Nominatim, stored as PostGIS geography and served from one capability registry: LiveView, REST, OpenAPI, MCP and CLI; [Data Atlas](@/work/data-atlas.md): Datasets, cadastre, transport, remote sensing and spatial analytics in one single-file, searchable page; [the-psycho](@/work/the-psycho.md).
 
-1 of these projects runs as a live site.
+3 of these projects run as live sites.
 
 I also used it in client work under confidentiality agreements. Roles: Architect, Lead engineer, AI engineer and Data engineer. What was solved: LLM agents, Decision support, AI transformation and Audit trail. The use cases below give the principle and the intent of that work; no client, person, date or number is named.
 

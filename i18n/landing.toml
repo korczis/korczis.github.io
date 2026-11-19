@@ -206,7 +206,7 @@ en = "Evidence for this role"
 cs = "Doklady k této roli"
 
 [home_chip_repos]
-en = "{n} repos · {from}–{to}"
+en = "repos: {n} · {from}–{to}"
 cs = "repozitáře: {n} · {from}–{to}"
 
 [home_chip_projects]

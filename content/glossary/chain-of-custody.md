@@ -3,7 +3,7 @@
 title = "Chain of custody"
 description = "The record of who acquired a piece of evidence, when and how, and every hand it passed through, so its integrity can be proven."
 template = "term.html"
-weight = 74
+weight = 109
 
 [taxonomies]
 tags = ["Glossary", "Concept"]
@@ -17,7 +17,7 @@ definition = "The record of who acquired a piece of evidence, when and how, and 
 aliases = []
 reference = { title = "NIST CSRC: chain of custody", url = "https://csrc.nist.gov/glossary/term/chain_of_custody" }
 pages = ["services/_index.md", "services/digital-forensics.md", "skills/_index.md", "skills/chain-of-custody.md"]
-related = ["javascript", "alpine-js", "attack-surface", "audit-trail", "claude-api", "digital-forensics", "flowbite-pro", "html"]
+related = ["javascript", "alpine-js", "attack-surface", "audit-trail", "digital-forensics", "dockerfile", "flowbite-pro", "html"]
 og_title = "Chain of custody: glossary"
 og_image = "og/glossary-chain-of-custody.png"
 keywords = ["Chain of custody", "Concept", "Glossary", "Tomas Korcak"]

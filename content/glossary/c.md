@@ -16,8 +16,8 @@ kind = "language"
 definition = "The small, fast systems language beneath operating systems and most other languages."
 aliases = []
 reference = { title = "C (Wikipedia)", url = "https://en.wikipedia.org/wiki/C_(programming_language)" }
-pages = ["projects/learning.md", "services/attack-surface.md", "skills/infrastructure-osint.md", "work/algorithms.md", "work/icave.md", "work/magic.md", "work/peacemaker.md", "work/skull-c.md"]
-related = ["repository", "commit", "open-source", "cpp", "elixir", "javascript", "risk-assessment", "attack-surface"]
+pages = ["projects/learning.md", "skills/infrastructure-osint.md", "work/algorithms.md", "work/happ.md", "work/icave.md", "work/magic.md", "work/nosqlight.md", "work/peacemaker.md", "work/skull-c.md"]
+related = ["repository", "commit", "open-source", "cmake", "cpp", "travis-ci", "elixir", "rust"]
 og_title = "C: glossary"
 og_image = "og/glossary-c.png"
 keywords = ["C (programming language)", "Programming language", "Glossary", "Tomas Korcak"]
@@ -40,10 +40,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
-I have written C in 5 public repositories, from 2014 to 2017; in 1 of them it is the main language.
+I have written C in 7 public repositories, from 2014 to 2021; in 1 of them it is the main language.
 
-What it was for: [Security and OSINT](@/projects/security.md) (2), [Learning and experiments](@/projects/learning.md) (1), [Science and visualisation](@/projects/science.md) (1) and [Tools](@/projects/tools.md) (1).
+What it was for: [Learning and experiments](@/projects/learning.md) (2), [Security and OSINT](@/projects/security.md) (2), [Data and GIS](@/projects/data.md) (1) and [Science and visualisation](@/projects/science.md) (1).
 
-Most recently: [magic](@/work/magic.md): All the magic happens here!; [iCave](@/work/icave.md): Open Home Automation Platform; [algorithms](@/work/algorithms.md): Algorithms implementation.
+Most recently: [happ](@/work/happ.md): Playground App created during my Hospital Stay; [magic](@/work/magic.md): All the magic happens here!; [iCave](@/work/icave.md): Open Home Automation Platform.
 
 How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses C: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links C to the repositories and to the other languages and technologies they use together.

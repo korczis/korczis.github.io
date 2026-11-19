@@ -17,7 +17,7 @@ og_description = "wangsta: Tools, 2015, archive. Source on GitHub and GitLab."
 og_image = "og/work-wangsta.png"
 schema = "project"
 keywords = ["wangsta", "Tools", "2015", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["open-source", "repository", "commit"]
+terms = ["postgresql", "couchbase", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

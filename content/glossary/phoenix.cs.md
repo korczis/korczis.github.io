@@ -3,7 +3,7 @@
 title = "Phoenix"
 description = "Webový framework Elixiru; LiveView vykresluje interaktivní stránky na serveru a přes socket posílá jen změny."
 template = "term.html"
-weight = 59
+weight = 87
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Webový framework Elixiru; LiveView vykresluje interaktivní stránky na serveru a přes socket posílá jen změny."
 aliases = ["Phoenix LiveView", "LiveView", "phoenix_live_view"]
 reference = { title = "Phoenix Framework", url = "https://www.phoenixframework.org/" }
-pages = ["services/attack-surface.cs.md", "services/continuous-monitoring.cs.md", "services/decision-support-ai.cs.md", "services/due-diligence.cs.md", "services/m-and-a.cs.md", "services/reputation-intelligence.cs.md"]
-related = ["alpine-js", "claude-api", "dockerfile", "elixir", "fastapi", "flowbite-pro", "html", "javascript"]
+pages = ["services/attack-surface.cs.md", "services/continuous-monitoring.cs.md", "services/decision-support-ai.cs.md", "services/due-diligence.cs.md", "services/m-and-a.cs.md", "services/reputation-intelligence.cs.md", "skills/decision-support.cs.md", "skills/registry-intelligence.cs.md", "work/astudo.cs.md", "work/corvidae.cs.md", "work/crisis-map.cs.md", "work/czech-stats.cs.md", "work/dj-schnapps.cs.md", "work/edna.cs.md", "work/gooddata-graphql.cs.md", "work/happ.cs.md", "work/hydra.cs.md", "work/kanec.cs.md", "work/korczis-gitlab-io.cs.md", "work/magic.cs.md", "work/mapoffacts.cs.md", "work/maze.cs.md", "work/mindscape.cs.md", "work/prismatic.cs.md", "work/rest-hello-world-benchmark.cs.md", "work/sig.cs.md", "work/test-elixir.cs.md", "work/the-psycho.cs.md", "work/the-scratch.cs.md", "work/tosh.cs.md", "work/web-spa.cs.md", "work/zaas.cs.md"]
+related = ["elixir", "javascript", "commit", "open-source", "repository", "html", "postgresql", "dockerfile"]
 og_title = "Phoenix: slovník"
 og_image = "og/cs-glossary-phoenix.png"
 keywords = ["Phoenix", "Technologie", "Slovník", "Tomáš Korčák"]
@@ -40,10 +40,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
-Phoenix je součástí 1 mého veřejného repozitáře, od roku 2017 do 2018.
+Phoenix je součástí 24 mých veřejných repozitářů, od roku 2016 do 2026.
 
-K čemu to sloužilo: [Web](@/projects/web.cs.md) (1).
+K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (9), [Web](@/projects/web.cs.md) (4), [Data a GIS](@/projects/data.cs.md) (3) a [Inženýrství AI](@/projects/ai.cs.md) (2).
 
-Naposledy: [the-scratch](@/work/the-scratch.cs.md).
+Naposledy: [Crisis map](@/work/crisis-map.cs.md): Hlášení geokódovaná přes lokální Nominatim, uložená jako PostGIS geografie a servírovaná z jednoho registru schopností: LiveView, REST, OpenAPI, MCP a CLI; [the-psycho](@/work/the-psycho.cs.md); [sig](@/work/sig.cs.md).
+
+1 z těchto projektů běží jako živý web.
 
 Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak Phoenix používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje Phoenix s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

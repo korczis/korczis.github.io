@@ -3,7 +3,7 @@
 title = "Integrace dat"
 description = "Spojení dat z mnoha zdrojů (rejstříků, API, souborů) do jednoho jednotného pohledu, kde si každý záznam pamatuje, odkud pochází."
 template = "term.html"
-weight = 78
+weight = 113
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

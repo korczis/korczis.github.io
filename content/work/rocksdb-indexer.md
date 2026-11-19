@@ -17,7 +17,7 @@ og_description = "rocksdb_indexer: Data and GIS, 2022, archive. Source on GitLab
 og_image = "og/work-rocksdb-indexer.png"
 schema = "project"
 keywords = ["rocksdb_indexer", "Data and GIS", "2022", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["gis", "repository", "commit", "open-source"]
+terms = ["rust", "serde", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

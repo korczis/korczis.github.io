@@ -17,7 +17,7 @@ og_description = "in-rust-we-trust: Nástroje, 2017, archiv. Zdrojový kód: Git
 og_image = "og/cs-work-in-rust-we-trust.png"
 schema = "project"
 keywords = ["in-rust-we-trust", "Nástroje", "2017", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["open-source", "repository", "commit"]
+terms = ["rust", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

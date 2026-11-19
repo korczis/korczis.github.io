@@ -17,7 +17,7 @@ og_description = "k8s-orbis-pictus: Systémy a infrastruktura, 2019, archiv. Zdr
 og_image = "og/cs-work-k8s-orbis-pictus.png"
 schema = "project"
 keywords = ["k8s-orbis-pictus", "Systémy a infrastruktura", "2019", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["repository", "commit", "open-source"]
+terms = ["dockerfile", "kubernetes", "ansible", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

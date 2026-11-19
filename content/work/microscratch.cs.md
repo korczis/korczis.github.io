@@ -17,7 +17,7 @@ og_description = "microscratch: Web, JavaScript a CSS, 2014–2015, archiv. Zdro
 og_image = "og/cs-work-microscratch.png"
 schema = "project"
 keywords = ["microscratch", "Web", "JavaScript", "CSS", "2014–2015", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["javascript", "css", "static-site-generator", "repository", "commit", "open-source"]
+terms = ["javascript", "css", "nodejs", "express", "ember-js", "socket-io", "handlebars", "scss", "bootstrap", "bower", "static-site-generator", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

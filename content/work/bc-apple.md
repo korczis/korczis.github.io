@@ -17,7 +17,7 @@ og_description = "bc-apple: Tools in Swift, 2018, archive. Source on GitHub and 
 og_image = "og/work-bc-apple.png"
 schema = "project"
 keywords = ["bc-apple", "Tools", "Swift", "2018", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["swift", "open-source", "repository", "commit"]
+terms = ["swift", "socket-io", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

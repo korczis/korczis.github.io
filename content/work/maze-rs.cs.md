@@ -17,7 +17,7 @@ og_description = "maze-rs: Věda a vizualizace, Rust a HTML, 2016, archiv. Zdroj
 og_image = "og/cs-work-maze-rs.png"
 schema = "project"
 keywords = ["maze-rs", "Věda a vizualizace", "Rust", "HTML", "2016", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["rust", "html", "data-visualisation", "github-pages", "repository", "commit", "open-source"]
+terms = ["rust", "html", "clap", "serde", "javascript", "travis-ci", "data-visualisation", "github-pages", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

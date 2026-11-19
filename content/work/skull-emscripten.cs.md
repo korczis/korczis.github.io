@@ -17,7 +17,7 @@ og_description = "skull-emscripten: Učení a experimenty, C++, 2014, archiv. Zd
 og_image = "og/cs-work-skull-emscripten.png"
 schema = "project"
 keywords = ["skull-emscripten", "Učení a experimenty", "C++", "2014", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["cpp", "repository", "commit", "open-source"]
+terms = ["cpp", "javascript", "makefile", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

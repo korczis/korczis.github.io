@@ -17,7 +17,7 @@ og_description = "cluster: Systems and infrastructure in Ruby, 2017, archive. So
 og_image = "og/work-cluster.png"
 schema = "project"
 keywords = ["cluster", "Systems and infrastructure", "Ruby", "2017", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["ruby", "repository", "commit", "open-source"]
+terms = ["ruby", "gli", "kubernetes", "coreos", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

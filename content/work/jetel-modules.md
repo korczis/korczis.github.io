@@ -17,7 +17,7 @@ og_description = "jetel-modules: Data and GIS, 2015, archive. Source on GitHub a
 og_image = "og/work-jetel-modules.png"
 schema = "project"
 keywords = ["jetel-modules", "Data and GIS", "2015", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["gis", "repository", "commit", "open-source"]
+terms = ["json", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

@@ -17,7 +17,7 @@ og_description = "skull-java: Učení a experimenty, Java, 2014, archiv. Zdrojov
 og_image = "og/cs-work-skull-java.png"
 schema = "project"
 keywords = ["skull-java", "Učení a experimenty", "Java", "2014", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["java", "repository", "commit", "open-source"]
+terms = ["java", "travis-ci", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

@@ -17,7 +17,7 @@ og_description = "reading: Znalosti, 2019, archiv. Zdrojový kód: GitHub a GitL
 og_image = "og/cs-work-reading.png"
 schema = "project"
 keywords = ["reading", "Znalosti", "2019", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["repository", "commit", "open-source"]
+terms = ["markdown", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

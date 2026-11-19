@@ -3,7 +3,7 @@
 title = "PostGIS"
 description = "The spatial extension of PostgreSQL: points, shapes and geographic queries in SQL."
 template = "term.html"
-weight = 61
+weight = 89
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "The spatial extension of PostgreSQL: points, shapes and geographic queries in SQL."
 aliases = []
 reference = { title = "postgis.net", url = "https://postgis.net/" }
-pages = ["projects/data.md", "services/interactive-data-products.md", "skills/geospatial-analysis.md", "skills/osint-investigation.md", "skills/policy-as-code.md", "skills/registry-intelligence.md", "work/crisis-map.md"]
-related = ["javascript", "css", "elixir", "html", "mcp", "shell", "gis", "python"]
+pages = ["projects/data.md", "services/interactive-data-products.md", "skills/geospatial-analysis.md", "skills/registry-intelligence.md", "work/crisis-map.md", "work/docks.md", "work/esri.md"]
+related = ["elixir", "gis", "javascript", "nominatim", "postgresql", "repository", "shell", "commit"]
 og_title = "PostGIS: glossary"
 og_image = "og/glossary-postgis.png"
 keywords = ["PostGIS", "Technology", "Glossary", "Tomas Korcak"]
@@ -40,11 +40,11 @@ span = 3
 height = "md"
 tone = "night"
 +++
-PostGIS is part of 2 of my public repositories, from 2026 to 2026.
+PostGIS is part of 4 of my public repositories, from 2014 to 2026.
 
-What it was for: [Data and GIS](@/projects/data.md) (2).
+What it was for: [Data and GIS](@/projects/data.md) (3) and [Systems and infrastructure](@/projects/systems.md) (1).
 
-Most recently: [Crisis map](@/work/crisis-map.md): Reports geocoded through a local Nominatim, stored as PostGIS geography and served from one capability registry: LiveView, REST, OpenAPI, MCP and CLI; [Data Atlas](@/work/data-atlas.md): Datasets, cadastre, transport, remote sensing and spatial analytics in one single-file, searchable page.
+Most recently: [Crisis map](@/work/crisis-map.md): Reports geocoded through a local Nominatim, stored as PostGIS geography and served from one capability registry: LiveView, REST, OpenAPI, MCP and CLI; [Data Atlas](@/work/data-atlas.md): Datasets, cadastre, transport, remote sensing and spatial analytics in one single-file, searchable page; [docks](@/work/docks.md): Repository containing useful Dockerfile(s).
 
 2 of these projects run as live sites.
 

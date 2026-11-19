@@ -3,7 +3,7 @@
 title = "Reputation risk"
 description = "The risk that what is said about an organisation or a person, true or not, costs it trust, customers or value; monitored through adverse media."
 template = "term.html"
-weight = 105
+weight = 140
 
 [taxonomies]
 tags = ["Glossary", "Concept"]
@@ -17,7 +17,7 @@ definition = "The risk that what is said about an organisation or a person, true
 aliases = []
 reference = { title = "Wikipedia: reputational risk", url = "https://en.wikipedia.org/wiki/Reputational_risk" }
 pages = ["services/_index.md", "services/digital-forensics.md", "services/reputation-intelligence.md", "skills/_index.md", "skills/narrative-analysis.md"]
-related = ["claude-api", "html", "python", "shell", "alpine-js", "flowbite-pro", "javascript", "service"]
+related = ["html", "python", "shell", "flowbite-pro", "javascript", "service", "source-criticism", "tailwind-css"]
 og_title = "Reputation risk: glossary"
 og_image = "og/glossary-reputation-risk.png"
 keywords = ["Reputation risk", "Concept", "Glossary", "Tomas Korcak"]

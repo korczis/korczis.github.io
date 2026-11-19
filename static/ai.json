@@ -3,7 +3,7 @@
  "description": "The Majordomus layer of korczis/korczis.github.io: every object of .ai/ with its MCP resource URI",
  "source": "majordomus run objects.list, capabilities.list",
  "majordomus": "1.0.2",
- "tree": "ce6545fa6664000e2f89a520da35708821317afb22b0928c770e9b6c981496c8",
+ "tree": "61cf7258b42a745ba8b789a33cb2ef7c46524a54d53d1a4ffaad27994b2dffd5",
  "counts": {
   "objects": 152,
   "kinds": {
@@ -1127,7 +1127,7 @@
    "kind": "rule",
    "identity": "project.skills-evidenced@1",
    "title": "Every language and technology has its own page with derived evidence; every project page embeds its live README",
-   "description": "Each language and technology the measured data names (repositories' languages, curated stacks, the mined engagements' technologies) has a glossary term whose page shows the evidence derived from the data (repositories, how each uses it, what it solves, years, categories, live sites, a reference graph) and the client use cases without names, dates or numbers; each work page renders its repository's README live from the forge instead of copying it.",
+   "description": "Each language and technology the measured data names (repositories' languages, curated stacks, the technologies the repository dossiers find, the mined engagements' technologies) has a glossary term whose page shows the evidence derived from the data (repositories, how each uses it, what it solves, years, categories, live sites, a reference graph) and the client use cases without names, dates or numbers; each work page renders its repository's README live from the forge instead of copying it.",
    "path": ".ai/repo/rules/project/skills-evidenced.v1.md"
   },
   {

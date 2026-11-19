@@ -17,7 +17,7 @@ og_description = "wangsta: Nástroje, 2015, archiv. Zdrojový kód: GitHub a Git
 og_image = "og/cs-work-wangsta.png"
 schema = "project"
 keywords = ["wangsta", "Nástroje", "2015", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["open-source", "repository", "commit"]
+terms = ["postgresql", "couchbase", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

@@ -17,7 +17,7 @@ og_description = "llm: Inženýrství AI, Elixir, 2026, aktivní za posledních 
 og_image = "og/cs-work-llm.png"
 schema = "project"
 keywords = ["llm", "Inženýrství AI", "Elixir", "AI", "chatgpt", "claude", "claude-code", "gemini", "2026", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["elixir", "ai-agent", "repository", "commit", "open-source"]
+terms = ["elixir", "ecto", "postgresql", "jason", "gitlab-ci", "ai-agent", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

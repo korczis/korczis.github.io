@@ -17,7 +17,7 @@ og_description = "kanec: Nástroje, Elixir, CSS a JavaScript, 2019, archiv. Zdro
 og_image = "og/cs-work-kanec.png"
 schema = "project"
 keywords = ["kanec", "Nástroje", "Elixir", "CSS", "JavaScript", "2019", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["elixir", "css", "javascript", "html", "open-source", "repository", "commit"]
+terms = ["elixir", "css", "javascript", "html", "phoenix", "ecto", "postgresql", "cowboy", "webpack", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

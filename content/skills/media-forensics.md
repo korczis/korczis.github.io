@@ -13,7 +13,7 @@ skill = "media-forensics"
 og_title = "Web and media forensics: skills"
 og_image = "og/skill-media-forensics.png"
 schema = "skill"
-terms = ["skill", "digital-forensics", "claude-api", "elixir", "makefile", "ruby", "rust"]
+terms = ["skill", "digital-forensics", "claude-api", "dockerfile", "ecto", "elixir", "gitlab-ci", "jason", "makefile", "mongodb", "postgresql", "rspec"]
 keywords = ["Web and media forensics", "Digital investigation and OSINT dossiers", "Digital forensics and evidence preservation", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -31,7 +31,7 @@ The concept behind it: [Digital forensics](@/glossary/digital-forensics.md).
 
 Services that draw on it: [Digital investigation and OSINT dossiers](@/services/digital-investigation.md) and [Digital forensics and evidence preservation](@/services/digital-forensics.md).
 
-Practised with: [Claude API](@/glossary/claude-api.md), [Elixir](@/glossary/elixir.md), [Makefile](@/glossary/makefile.md), [Ruby](@/glossary/ruby.md) and [Rust](@/glossary/rust.md).
+Practised with: [Claude API](@/glossary/claude-api.md), [Dockerfile](@/glossary/dockerfile.md), [Ecto](@/glossary/ecto.md), [Elixir](@/glossary/elixir.md), [GitLab CI](@/glossary/gitlab-ci.md), [Jason](@/glossary/jason.md), [Makefile](@/glossary/makefile.md) and [MongoDB](@/glossary/mongodb.md).
 
 Public work whose own words show it: [gooddata\_connectors\_metadata](https://github.com/korczis/gooddata_connectors_metadata), [gooddata-fs](https://github.com/korczis/gooddata-fs) and [llm](https://gitlab.com/korczis/llm).
 

@@ -17,7 +17,7 @@ og_description = "gauc.ex: Libraries in Elixir and Rust, 2017–2018, archive. S
 og_image = "og/work-gauc-ex.png"
 schema = "project"
 keywords = ["gauc.ex", "Libraries", "Elixir", "Rust", "2017–2018", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["elixir", "rust", "open-source", "repository", "commit"]
+terms = ["elixir", "rust", "rustler", "couchbase", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

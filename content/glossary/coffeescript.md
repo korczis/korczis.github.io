@@ -17,7 +17,7 @@ definition = "A small language with a terser syntax that compiles one to one int
 aliases = []
 reference = { title = "coffeescript.org", url = "https://coffeescript.org/" }
 pages = ["work/gooddata-rails-app.md"]
-related = ["commit", "css", "gis", "javascript", "open-source", "repository", "ruby"]
+related = ["commit", "css", "gis", "javascript", "jquery", "open-source", "repository", "ruby"]
 og_title = "CoffeeScript: glossary"
 og_image = "og/glossary-coffeescript.png"
 keywords = ["CoffeeScript", "Programming language", "Glossary", "Tomas Korcak"]

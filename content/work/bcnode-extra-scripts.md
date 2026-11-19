@@ -17,7 +17,7 @@ og_description = "bcnode-extra-scripts: Tools in Shell, 2018, archive. Source on
 og_image = "og/work-bcnode-extra-scripts.png"
 schema = "project"
 keywords = ["bcnode-extra-scripts", "Tools", "Shell", "2018", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["shell", "open-source", "repository", "commit"]
+terms = ["shell", "dockerfile", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

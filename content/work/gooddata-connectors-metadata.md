@@ -17,7 +17,7 @@ og_description = "gooddata_connectors_metadata: Data and GIS in Ruby, 2014–201
 og_image = "og/work-gooddata-connectors-metadata.png"
 schema = "project"
 keywords = ["gooddata_connectors_metadata", "Data and GIS", "Ruby", "2014–2015", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["ruby", "gis", "repository", "commit", "open-source"]
+terms = ["ruby", "mongodb", "rspec", "travis-ci", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

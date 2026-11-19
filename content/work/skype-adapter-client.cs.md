@@ -17,7 +17,7 @@ og_description = "skype-adapter-client: Knihovny, 2013, archiv. Zdrojový kód: 
 og_image = "og/cs-work-skype-adapter-client.png"
 schema = "project"
 keywords = ["skype-adapter-client", "Knihovny", "2013", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["open-source", "repository", "commit"]
+terms = ["ruby", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

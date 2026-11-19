@@ -17,7 +17,7 @@ og_description = "streamflow: Nástroje, Rust a Makefile, 2017, archiv. Zdrojov�
 og_image = "og/cs-work-streamflow.png"
 schema = "project"
 keywords = ["streamflow", "Nástroje", "Rust", "Makefile", "2017", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["rust", "makefile", "open-source", "repository", "commit"]
+terms = ["rust", "makefile", "clap", "csv", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

@@ -16,8 +16,8 @@ kind = "language"
 definition = "A language and package manager for reproducible, declarative system configuration."
 aliases = []
 reference = { title = "nix.dev", url = "https://nix.dev/" }
-pages = ["work/el-magico-cache.md"]
-related = ["commit", "dockerfile", "elixir", "html", "makefile", "open-source", "repository", "shell"]
+pages = ["work/el-magico-cache.md", "work/server-nixos.md"]
+related = ["commit", "open-source", "repository", "shell", "ansible", "cowboy", "dockerfile", "elixir"]
 og_title = "Nix: glossary"
 og_image = "og/glossary-nix.png"
 keywords = ["Nix", "Programming language", "Glossary", "Tomas Korcak"]
@@ -40,10 +40,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
-I have written Nix in 1 public repository, from 2023 to 2023.
+I have written Nix in 2 public repositories, from 2019 to 2023.
 
-What it was for: [Tools](@/projects/tools.md) (1).
+What it was for: [Systems and infrastructure](@/projects/systems.md) (1) and [Tools](@/projects/tools.md) (1).
 
-Most recently: [el-magico-cache](@/work/el-magico-cache.md): Elixir Cache.
+Most recently: [el-magico-cache](@/work/el-magico-cache.md): Elixir Cache; [server-nixos](@/work/server-nixos.md): NixOS Configuration.
 
 How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses Nix: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links Nix to the repositories and to the other languages and technologies they use together.

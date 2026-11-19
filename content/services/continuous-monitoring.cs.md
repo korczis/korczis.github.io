@@ -14,7 +14,7 @@ icon = "clock"
 og_title = "Monitoring insolvencí, sporů a změn v rejstřících"
 og_image = "og/cs-service-continuous-monitoring.png"
 schema = "service"
-terms = ["service", "elixir", "broadway", "phoenix", "postgresql", "insolvency", "change-detection", "public-registry", "record-linkage", "orchestration", "risk-assessment", "javascript", "html", "claude-api", "alpine-js", "dockerfile", "fastapi", "flowbite-pro", "github-actions", "kubernetes", "majordomus"]
+terms = ["service", "elixir", "broadway", "phoenix", "postgresql", "insolvency", "change-detection", "public-registry", "record-linkage", "orchestration", "risk-assessment", "javascript", "html", "claude-api", "flowbite-pro", "github-actions", "alpine-js", "dockerfile", "fastapi", "kubernetes", "majordomus"]
 keywords = ["Monitoring insolvencí, sporů a změn v rejstřících", "Sledování insolvencí", "Průběžný monitoring", "Rejstříkové zpravodajství", "Ztotožnění subjektů", "Orchestrace", "Hodnocení rizik", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -34,7 +34,7 @@ Zdroje pravidelně sbírat znovu, otiskovat obsah, každou změnu klasifikovat a
 
 Je postavená na: [Elixir](@/glossary/elixir.cs.md), [Broadway](@/glossary/broadway.cs.md), [Phoenix](@/glossary/phoenix.cs.md) a [PostgreSQL](@/glossary/postgresql.cs.md).
 
-Technologie za ní, změřené z práce, která tyto dovednosti dokládá: [JavaScript](@/glossary/javascript.cs.md), [HTML](@/glossary/html.cs.md), [Claude API](@/glossary/claude-api.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md), [FastAPI](@/glossary/fastapi.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md) a [GitHub Actions](@/glossary/github-actions.cs.md).
+Technologie za ní, změřené z práce, která tyto dovednosti dokládá: [JavaScript](@/glossary/javascript.cs.md), [HTML](@/glossary/html.cs.md), [Claude API](@/glossary/claude-api.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md), [GitHub Actions](@/glossary/github-actions.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md) a [FastAPI](@/glossary/fastapi.cs.md).
 
 Její dovednosti dokládá 5 veřejných repozitářů (5 vlastními slovy).
 

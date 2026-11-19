@@ -17,7 +17,7 @@ og_description = "tosh: Web, Elixir, JavaScript a CSS, 2019, archiv. Zdrojový k
 og_image = "og/cs-work-tosh.png"
 schema = "project"
 keywords = ["tosh", "Web", "Elixir", "JavaScript", "CSS", "2019", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["elixir", "javascript", "css", "html", "dockerfile", "static-site-generator", "repository", "commit", "open-source"]
+terms = ["elixir", "javascript", "css", "html", "dockerfile", "phoenix", "ecto", "postgresql", "webpack", "rust", "static-site-generator", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

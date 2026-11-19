@@ -3,7 +3,7 @@
 title = "Broadway"
 description = "Knihovna Elixiru pro souběžné vícestupňové datové pipeline s back-pressure, dávkováním a řízeným selháním."
 template = "term.html"
-weight = 42
+weight = 47
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -16,11 +16,20 @@ kind = "technology"
 definition = "Knihovna Elixiru pro souběžné vícestupňové datové pipeline s back-pressure, dávkováním a řízeným selháním."
 aliases = []
 reference = { title = "Broadway on HexDocs", url = "https://hexdocs.pm/broadway/" }
-pages = ["services/continuous-monitoring.cs.md", "services/digital-investigation.cs.md", "services/reputation-intelligence.cs.md"]
-related = ["alpine-js", "change-detection", "claude-api", "dockerfile", "elixir", "fastapi", "flowbite-pro", "html"]
+pages = ["services/continuous-monitoring.cs.md", "services/digital-investigation.cs.md", "services/reputation-intelligence.cs.md", "work/prismatic.cs.md"]
+related = ["elixir", "html", "javascript", "postgresql", "change-detection", "claude-api", "dockerfile", "flowbite-pro"]
 og_title = "Broadway: slovník"
 og_image = "og/cs-glossary-broadway.png"
 keywords = ["Broadway", "Technologie", "Slovník", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,4 +40,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
-Žádný můj veřejný repozitář ani klientská zakázka Broadway podle měřených dat nepoužívá; tato stránka pojem vysvětluje tam, kde ho web používá.
+Broadway je součástí 1 mého veřejného repozitáře, od roku 2025 do 2025.
+
+K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (1).
+
+Naposledy: [prismatic](@/work/prismatic.cs.md).
+
+Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak Broadway používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje Broadway s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

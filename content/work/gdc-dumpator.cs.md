@@ -17,7 +17,7 @@ og_description = "gdc-dumpator: Nástroje, Ruby, 2017, archiv. Zdrojový kód: G
 og_image = "og/cs-work-gdc-dumpator.png"
 schema = "project"
 keywords = ["gdc-dumpator", "Nástroje", "Ruby", "2017", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["ruby", "open-source", "repository", "commit"]
+terms = ["ruby", "json", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

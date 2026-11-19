@@ -17,7 +17,7 @@ og_description = "gooddata-lcm-tool: Data a GIS, Ruby, 2016, archiv. Zdrojový k
 og_image = "og/cs-work-gooddata-lcm-tool.png"
 schema = "project"
 keywords = ["gooddata-lcm-tool", "Data a GIS", "Ruby", "2016", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["ruby", "gis", "repository", "commit", "open-source"]
+terms = ["ruby", "csv", "postgresql", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

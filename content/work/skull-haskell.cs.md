@@ -17,7 +17,7 @@ og_description = "skull-haskell: Učení a experimenty, Haskell, 2014, archiv. Z
 og_image = "og/cs-work-skull-haskell.png"
 schema = "project"
 keywords = ["skull-haskell", "Učení a experimenty", "Haskell", "2014", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["haskell", "repository", "commit", "open-source"]
+terms = ["haskell", "travis-ci", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

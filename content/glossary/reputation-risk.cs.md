@@ -3,7 +3,7 @@
 title = "Reputační riziko"
 description = "Riziko, že to, co se o organizaci nebo osobě říká, pravdivé či ne, ji stojí důvěru, zákazníky nebo hodnotu; sleduje se přes negativní zprávy."
 template = "term.html"
-weight = 105
+weight = 140
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]
@@ -17,7 +17,7 @@ definition = "Riziko, že to, co se o organizaci nebo osobě říká, pravdivé 
 aliases = []
 reference = { title = "Wikipedia: reputational risk", url = "https://en.wikipedia.org/wiki/Reputational_risk" }
 pages = ["services/_index.cs.md", "services/digital-forensics.cs.md", "services/reputation-intelligence.cs.md", "skills/_index.cs.md", "skills/narrative-analysis.cs.md"]
-related = ["claude-api", "html", "python", "shell", "alpine-js", "flowbite-pro", "javascript", "service"]
+related = ["html", "python", "shell", "flowbite-pro", "javascript", "service", "source-criticism", "tailwind-css"]
 og_title = "Reputační riziko: slovník"
 og_image = "og/cs-glossary-reputation-risk.png"
 keywords = ["Reputační riziko", "Reputation risk", "Koncept", "Slovník", "Tomáš Korčák"]

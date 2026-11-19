@@ -17,7 +17,7 @@ og_description = "gooddata-ruby-examples: Data a GIS, HTML a Ruby, 2014–2015, 
 og_image = "og/cs-work-gooddata-ruby-examples.png"
 schema = "project"
 keywords = ["gooddata-ruby-examples", "Data a GIS", "HTML", "Ruby", "2014–2015", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["html", "ruby", "gis", "repository", "commit", "open-source"]
+terms = ["html", "ruby", "travis-ci", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

@@ -3,7 +3,7 @@
 title = "Playwright"
 description = "Knihovna pro automatizaci prohlížeče, která ovládá Chromium, Firefox a WebKit pro end-to-end testy a audity."
 template = "term.html"
-weight = 60
+weight = 88
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -16,11 +16,20 @@ kind = "technology"
 definition = "Knihovna pro automatizaci prohlížeče, která ovládá Chromium, Firefox a WebKit pro end-to-end testy a audity."
 aliases = []
 reference = { title = "Playwright documentation", url = "https://playwright.dev/docs/intro" }
-pages = ["services/digital-investigation.cs.md", "services/due-diligence.cs.md", "_index.cs.md"]
-related = ["alpine-js", "beneficial-ownership", "claude-api", "dockerfile", "elixir", "fastapi", "flowbite-pro", "html"]
+pages = ["services/_index.cs.md", "services/ai-engineering-governance.cs.md", "services/decision-support-ai.cs.md", "services/digital-forensics.cs.md", "services/digital-investigation.cs.md", "services/due-diligence.cs.md", "services/m-and-a.cs.md", "skills/_index.cs.md", "skills/audit-trail.cs.md", "skills/document-extraction.cs.md", "skills/due-diligence.cs.md", "skills/llm-agents.cs.md", "skills/policy-as-code.cs.md", "work/astronomists.cs.md", "work/catharsis-as-a-service.cs.md", "work/data-atlas.cs.md", "work/korczis-github-io.cs.md", "work/oscilla.cs.md", "work/vomaste-cz.cs.md", "_index.cs.md"]
+related = ["html", "javascript", "tailwind-css", "alpine-js", "flowbite-pro", "shell", "python", "github-pages"]
 og_title = "Playwright: slovník"
 og_image = "og/cs-glossary-playwright.png"
 keywords = ["Playwright", "Technologie", "Slovník", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,6 +40,14 @@ span = 3
 height = "md"
 tone = "night"
 +++
-Žádný můj veřejný repozitář Playwright podle měřených dat nepoužívá; dokladem je klientská práce popsaná níže.
+Playwright je součástí 6 mých veřejných repozitářů, od roku 2024 do 2026.
+
+K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (2), [Data a GIS](@/projects/data.cs.md) (1), [Média a umění](@/projects/media.cs.md) (1) a [Věda a vizualizace](@/projects/science.cs.md) (1).
+
+Naposledy: [korczis.github.io](@/work/korczis-github-io.cs.md); [Oscilla](@/work/oscilla.cs.md): Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu; [astronomists](@/work/astronomists.cs.md).
+
+5 z těchto projektů běží jako živé weby.
 
 Používal jsem ho také v klientské práci pod dohodami o mlčenlivosti. Role: Architekt, Vedoucí inženýr, Inženýr AI a Datový inženýr. Co se řešilo: Agenti s LLM, Podpora rozhodování, Transformace s AI a Auditní stopa. Případy užití níže popisují princip a záměr této práce; žádný klient, osoba, datum ani číslo nejsou uvedeny.
+
+Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak Playwright používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje Playwright s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

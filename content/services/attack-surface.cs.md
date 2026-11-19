@@ -14,7 +14,7 @@ icon = "server"
 og_title = "Hodnocení vnější útočné plochy a kybernetické expozice"
 og_image = "og/cs-service-attack-surface.png"
 schema = "service"
-terms = ["service", "elixir", "postgresql", "phoenix", "attack-surface", "regulatory-compliance", "change-detection", "risk-assessment", "web-scraping", "javascript", "html", "alpine-js", "c", "claude-api", "css", "dockerfile", "fastapi", "flowbite-pro", "github-actions"]
+terms = ["service", "elixir", "postgresql", "phoenix", "attack-surface", "regulatory-compliance", "change-detection", "risk-assessment", "web-scraping", "javascript", "nodejs", "cheerio", "bootstrap", "bower", "dockerfile", "ember-js", "handlebars", "html", "alpine-js"]
 keywords = ["Hodnocení vnější útočné plochy a kybernetické expozice", "Infrastrukturní OSINT", "Mapování regulatorní shody", "Průběžný monitoring", "Hodnocení rizik", "Webová automatizace a crawling", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -34,7 +34,7 @@ Objevit domény, adresy, certifikáty a služby, propojit je se zpravodajstvím 
 
 Je postavená na: [Elixir](@/glossary/elixir.cs.md), [PostgreSQL](@/glossary/postgresql.cs.md) a [Phoenix](@/glossary/phoenix.cs.md).
 
-Technologie za ní, změřené z práce, která tyto dovednosti dokládá: [JavaScript](@/glossary/javascript.cs.md), [HTML](@/glossary/html.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md), [C](@/glossary/c.cs.md), [Claude API](@/glossary/claude-api.cs.md), [CSS](@/glossary/css.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md) a [FastAPI](@/glossary/fastapi.cs.md).
+Technologie za ní, změřené z práce, která tyto dovednosti dokládá: [JavaScript](@/glossary/javascript.cs.md), [Node.js](@/glossary/nodejs.cs.md), [Cheerio](@/glossary/cheerio.cs.md), [Bootstrap](@/glossary/bootstrap.cs.md), [Bower](@/glossary/bower.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md), [Ember.js](@/glossary/ember-js.cs.md) a [Handlebars](@/glossary/handlebars.cs.md).
 
 Její dovednosti dokládá 14 veřejných repozitářů (14 vlastními slovy).
 

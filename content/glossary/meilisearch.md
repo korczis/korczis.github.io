@@ -3,7 +3,7 @@
 title = "Meilisearch"
 description = "A fast open-source search engine with typo tolerance and filters, used for full-text search over collected evidence."
 template = "term.html"
-weight = 54
+weight = 78
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -16,11 +16,20 @@ kind = "technology"
 definition = "A fast open-source search engine with typo tolerance and filters, used for full-text search over collected evidence."
 aliases = []
 reference = { title = "Meilisearch documentation", url = "https://www.meilisearch.com/docs" }
-pages = ["services/digital-investigation.md", "services/due-diligence.md"]
-related = ["alpine-js", "beneficial-ownership", "claude-api", "dockerfile", "elixir", "fastapi", "flowbite-pro", "html"]
+pages = ["services/digital-investigation.md", "services/due-diligence.md", "work/comtesse.md", "work/gists-search.md", "work/meili-rsex.md", "work/prism.md", "work/sig.md"]
+related = ["commit", "elixir", "open-source", "repository", "shell", "dockerfile", "html", "javascript"]
 og_title = "Meilisearch: glossary"
 og_image = "og/glossary-meilisearch.png"
 keywords = ["Meilisearch", "Technology", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,4 +40,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
-No public repository or client engagement of mine uses Meilisearch as the data measures it; this page explains the term where the site uses it.
+Meilisearch is part of 5 of my public repositories, from 2024 to 2026.
+
+What it was for: [Tools](@/projects/tools.md) (3), [AI engineering](@/projects/ai.md) (1) and [Data and GIS](@/projects/data.md) (1).
+
+Most recently: [Gists search](@/work/gists-search.md): A searchable index over a mirror of my GitHub gists; [prism](@/work/prism.md); [sig](@/work/sig.md): distributed cognitive framework in Elixir/OTP.
+
+1 of these projects runs as a live site.
+
+How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses Meilisearch: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links Meilisearch to the repositories and to the other languages and technologies they use together.

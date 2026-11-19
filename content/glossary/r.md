@@ -16,8 +16,8 @@ kind = "language"
 definition = "A language and environment for statistics and data analysis, with plotting and a large library of statistical methods."
 aliases = []
 reference = { title = "The R Project", url = "https://www.r-project.org/about.html" }
-pages = ["projects/data.md", "work/datascience.md", "work/zeman-ucet.md"]
-related = ["repository", "commit", "gis", "open-source", "ruby", "shell", "elixir", "html"]
+pages = ["projects/data.md", "work/apollo-box.md", "work/datascience.md", "work/zeman-ucet.md"]
+related = ["repository", "commit", "gis", "open-source", "shell", "python", "ruby", "csv"]
 og_title = "R: glossary"
 og_image = "og/glossary-r.png"
 keywords = ["R (programming language)", "Programming language", "Glossary", "Tomas Korcak"]
@@ -40,10 +40,10 @@ span = 3
 height = "md"
 tone = "night"
 +++
-I have written R in 2 public repositories, from 2016 to 2017; in 1 of them it is the main language.
+I have written R in 3 public repositories, from 2014 to 2017; in 1 of them it is the main language.
 
-What it was for: [Data and GIS](@/projects/data.md) (1) and [Tools](@/projects/tools.md) (1).
+What it was for: [Data and GIS](@/projects/data.md) (2) and [Tools](@/projects/tools.md) (1).
 
-Most recently: [zeman-ucet](@/work/zeman-ucet.md): Zpravy pro prijemce ze Zemanova transparentniho uctu na predvolebni kampan; [datascience](@/work/datascience.md).
+Most recently: [zeman-ucet](@/work/zeman-ucet.md): Zpravy pro prijemce ze Zemanova transparentniho uctu na predvolebni kampan; [datascience](@/work/datascience.md); [apollo-box](@/work/apollo-box.md): All needed data science stuff in one box.
 
 How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses R: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links R to the repositories and to the other languages and technologies they use together.

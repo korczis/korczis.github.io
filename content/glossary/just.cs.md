@@ -16,8 +16,8 @@ kind = "language"
 definition = "Spouštěč příkazů: pojmenované recepty v souboru justfile, jako make bez buildovací logiky; vstupní bod většiny těchto repozitářů."
 aliases = ["justfile"]
 reference = { title = "just manual", url = "https://just.systems/man/en/" }
-pages = ["projects/tools.cs.md", "skills/document-extraction.cs.md", "skills/geospatial-analysis.cs.md", "work/algoglyph.cs.md", "work/comtesse.cs.md", "work/data-atlas.cs.md", "work/gists-search.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/sig.cs.md", "work/vomaste-cz.cs.md"]
-related = ["shell", "open-source", "repository", "commit", "html", "javascript", "github-pages", "python"]
+pages = ["projects/tools.cs.md", "skills/narrative-analysis.cs.md", "work/algoglyph.cs.md", "work/comtesse.cs.md", "work/data-atlas.cs.md", "work/gists-search.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/sig.cs.md", "work/vomaste-cz.cs.md"]
+related = ["shell", "open-source", "repository", "commit", "github-pages", "html", "javascript", "python"]
 og_title = "Just: slovník"
 og_image = "og/cs-glossary-just.png"
 keywords = ["Just", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
@@ -40,12 +40,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
-Just jsem psal ve 3 veřejných repozitářích, od roku 2025 do 2026; v 1 z nich je hlavním jazykem.
+Just jsem psal v 5 veřejných repozitářích, od roku 2025 do 2026; v 1 z nich je hlavním jazykem.
 
-K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (2) a [Data a GIS](@/projects/data.cs.md) (1).
+K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (3), [Data a GIS](@/projects/data.cs.md) (1) a [Bezpečnost a OSINT](@/projects/security.cs.md) (1).
 
-Naposledy: [Data Atlas](@/work/data-atlas.cs.md): Datové sady, katastr, doprava, dálkový průzkum a prostorová analytika na jedné prohledávatelné stránce; [Gists search](@/work/gists-search.cs.md): Prohledávatelný index nad zrcadlem mých GitHub gistů; [comtesse](@/work/comtesse.cs.md).
+Naposledy: [Data Atlas](@/work/data-atlas.cs.md): Datové sady, katastr, doprava, dálkový průzkum a prostorová analytika na jedné prohledávatelné stránce; [vomaste.cz](@/work/vomaste-cz.cs.md); [Gists search](@/work/gists-search.cs.md): Prohledávatelný index nad zrcadlem mých GitHub gistů.
 
-2 z těchto projektů běží jako živé weby.
+4 z těchto projektů běží jako živé weby.
 
 Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak Just používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje Just s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

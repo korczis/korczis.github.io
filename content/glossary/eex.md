@@ -16,8 +16,8 @@ kind = "language"
 definition = "Elixir's embedded templates: EEx puts Elixir in text, HEEx in HTML that Phoenix LiveView checks and renders."
 aliases = ["HTML+EEX", "EEx", "HEEx"]
 reference = { title = "Phoenix.Component and HEEx", url = "https://hexdocs.pm/phoenix_live_view/Phoenix.Component.html" }
-pages = ["skills/data-integration.md", "skills/geospatial-analysis.md", "work/korczis-gitlab-io.md", "work/sig.md", "work/simple-geocoder.md", "work/the-psycho.md"]
-related = ["elixir", "commit", "open-source", "repository", "shell", "css", "html", "javascript"]
+pages = ["work/korczis-gitlab-io.md", "work/rustler-mix.md", "work/sig.md", "work/simple-geocoder.md", "work/the-psycho.md"]
+related = ["commit", "elixir", "open-source", "repository", "phoenix", "css", "dockerfile", "ecto"]
 og_title = "EEx and HEEx: glossary"
 og_image = "og/glossary-eex.png"
 keywords = ["EEx and HEEx", "Programming language", "Glossary", "Tomas Korcak"]
@@ -40,9 +40,9 @@ span = 3
 height = "md"
 tone = "night"
 +++
-I have written EEx and HEEx in 4 public repositories, from 2024 to 2026.
+I have written EEx and HEEx in 5 public repositories, from 2016 to 2026.
 
-What it was for: [Tools](@/projects/tools.md) (2), [AI engineering](@/projects/ai.md) (1) and [Web](@/projects/web.md) (1).
+What it was for: [Tools](@/projects/tools.md) (3), [AI engineering](@/projects/ai.md) (1) and [Web](@/projects/web.md) (1).
 
 Most recently: [the-psycho](@/work/the-psycho.md); [sig](@/work/sig.md): distributed cognitive framework in Elixir/OTP; [korczis.gitlab.io](@/work/korczis-gitlab-io.md).
 

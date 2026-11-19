@@ -89,7 +89,13 @@ function skillArticle(term, lang) {
 // Client work is reduced to use cases (sector, roles, capabilities): no name, date or number.
 const skillsJson = `${JSON.stringify({
   schema: 'korczis-hub-skills/v1',
-  generated_from: ['data/index.json', 'data/recent.json', 'data/projects.toml', 'data/experience.json'],
+  generated_from: ['data/index.json', 'data/recent.json', 'data/projects.toml', 'data/experience.json', 'data/dossiers'],
+  // The technologies the owner claims (glossary claimed is not false) that public repositories use,
+  // most used first: the skillset lists (templates/partials/sidebar.html) read this order.
+  technologies: Object.entries(evidence)
+    .filter(([id, e]) => e.kind === 'technology' && e.counts.repos > 0 && g.byId.get(id).claimed !== false)
+    .sort((a, b) => b[1].counts.repos - a[1].counts.repos || a[1].name.localeCompare(b[1].name))
+    .map(([id, e]) => ({ id, name: e.name, repos: e.counts.repos })),
   terms: evidence,
 }, null, 2)}\n`;
 

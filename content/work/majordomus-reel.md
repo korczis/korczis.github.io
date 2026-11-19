@@ -17,7 +17,7 @@ og_description = "Majordomus reel: Media and art in JavaScript, HTML and Shell, 
 og_image = "og/work-majordomus-reel.png"
 schema = "project"
 keywords = ["Majordomus reel", "majordomus-reel", "Media and art", "JavaScript", "HTML", "Shell", "ai-agents", "ffmpeg", "generative", "majordomus", "puppeteer", "video", "2026", "GitHub", "Tomas Korcak", "korczis"]
-terms = ["javascript", "html", "shell", "css", "python", "data-visualisation", "github-pages", "repository", "commit", "open-source"]
+terms = ["javascript", "html", "shell", "css", "python", "nodejs", "p5-js", "apache-echarts", "flowbite-pro", "tailwind-css", "data-visualisation", "github-pages", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

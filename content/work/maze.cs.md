@@ -17,7 +17,7 @@ og_description = "maze: Věda a vizualizace, JavaScript, Elixir a HTML, 2016, ar
 og_image = "og/cs-work-maze.png"
 schema = "project"
 keywords = ["maze", "Věda a vizualizace", "JavaScript", "Elixir", "HTML", "2016", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["javascript", "elixir", "html", "css", "shell", "data-visualisation", "repository", "commit", "open-source"]
+terms = ["javascript", "elixir", "html", "css", "shell", "phoenix", "react", "data-visualisation", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

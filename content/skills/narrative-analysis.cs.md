@@ -13,7 +13,7 @@ skill = "narrative-analysis"
 og_title = "Analýza narativů a reputace: dovednosti"
 og_image = "og/cs-skill-narrative-analysis.png"
 schema = "skill"
-terms = ["skill", "reputation-risk", "claude-api", "html", "python", "shell"]
+terms = ["skill", "reputation-risk", "claude-api", "github-actions", "github-pages", "html", "just", "python", "shell"]
 keywords = ["Analýza narativů a reputace", "Digitální forenzní analýza a zajištění důkazů", "Reputační zpravodajství a monitoring negativních zpráv", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -31,7 +31,7 @@ Pojem, na kterém stojí: [Reputační riziko](@/glossary/reputation-risk.cs.md)
 
 Služby, které z ní čerpají: [Digitální forenzní analýza a zajištění důkazů](@/services/digital-forensics.cs.md) a [Reputační zpravodajství a monitoring negativních zpráv](@/services/reputation-intelligence.cs.md).
 
-Praktikovaná s: [Claude API](@/glossary/claude-api.cs.md), [HTML](@/glossary/html.cs.md), [Python](@/glossary/python.cs.md) a [Shell](@/glossary/shell.cs.md).
+Praktikovaná s: [Claude API](@/glossary/claude-api.cs.md), [GitHub Actions](@/glossary/github-actions.cs.md), [GitHub Pages](@/glossary/github-pages.cs.md), [HTML](@/glossary/html.cs.md), [Just](@/glossary/just.cs.md), [Python](@/glossary/python.cs.md) a [Shell](@/glossary/shell.cs.md).
 
 Veřejná práce, jejíž vlastní slova ji dokládají: [osint-case-ratcliffe-moscow-2026](https://github.com/korczis/osint-case-ratcliffe-moscow-2026).
 

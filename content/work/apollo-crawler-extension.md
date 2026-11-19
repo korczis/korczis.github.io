@@ -17,7 +17,7 @@ og_description = "apollo-crawler-extension: Data and GIS in JavaScript and HTML,
 og_image = "og/work-apollo-crawler-extension.png"
 schema = "project"
 keywords = ["apollo-crawler-extension", "Data and GIS", "JavaScript", "HTML", "2013–2016", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["javascript", "html", "gis", "repository", "commit", "open-source"]
+terms = ["javascript", "html", "jquery", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

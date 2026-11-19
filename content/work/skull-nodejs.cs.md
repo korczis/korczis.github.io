@@ -17,7 +17,7 @@ og_description = "skull-nodejs: Učení a experimenty, Makefile, 2014, archiv. Z
 og_image = "og/cs-work-skull-nodejs.png"
 schema = "project"
 keywords = ["skull-nodejs", "Učení a experimenty", "Makefile", "2014", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["makefile", "repository", "commit", "open-source"]
+terms = ["makefile", "nodejs", "travis-ci", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

@@ -3,7 +3,7 @@
 title = "Alpine.js"
 description = "Malý JavaScriptový framework, který přidává chování do HTML přímo v atributech; tady filtry, drawery a paleta."
 template = "term.html"
-weight = 40
+weight = 41
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Malý JavaScriptový framework, který přidává chování do HTML přímo v atributech; tady filtry, drawery a paleta."
 aliases = ["alpinejs"]
 reference = { title = "alpinejs.dev", url = "https://alpinejs.dev/" }
-pages = ["projects/knowledge.cs.md", "projects/science.cs.md", "services/_index.cs.md", "services/ai-engineering-governance.cs.md", "services/attack-surface.cs.md", "services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "services/decision-support-ai.cs.md", "services/digital-forensics.cs.md", "services/digital-investigation.cs.md", "services/due-diligence.cs.md", "services/interactive-data-products.cs.md", "services/m-and-a.cs.md", "services/reputation-intelligence.cs.md", "skills/_index.cs.md", "skills/ai-transformation.cs.md", "skills/audit-trail.cs.md", "skills/data-integration.cs.md", "skills/data-room.cs.md", "skills/decision-support.cs.md", "skills/document-extraction.cs.md", "skills/due-diligence.cs.md", "skills/entity-resolution.cs.md", "skills/insolvency-monitoring.cs.md", "skills/interactive-visualisation.cs.md", "skills/knowledge-graph.cs.md", "skills/llm-agents.cs.md", "skills/m-and-a-screening.cs.md", "skills/market-intelligence.cs.md", "skills/orchestration.cs.md", "skills/osint-investigation.cs.md", "skills/risk-scoring.cs.md", "stack.cs.md", "work/algoglyph.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "_index.cs.md"]
-related = ["javascript", "flowbite-pro", "html", "claude-api", "dockerfile", "fastapi", "python", "elixir"]
+pages = ["projects/knowledge.cs.md", "projects/science.cs.md", "services/_index.cs.md", "services/ai-engineering-governance.cs.md", "services/attack-surface.cs.md", "services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "services/decision-support-ai.cs.md", "services/digital-forensics.cs.md", "services/due-diligence.cs.md", "services/m-and-a.cs.md", "skills/_index.cs.md", "skills/ai-transformation.cs.md", "skills/audit-trail.cs.md", "skills/data-room.cs.md", "skills/document-extraction.cs.md", "skills/due-diligence.cs.md", "skills/entity-resolution.cs.md", "skills/insolvency-monitoring.cs.md", "skills/interactive-visualisation.cs.md", "skills/knowledge-graph.cs.md", "skills/llm-agents.cs.md", "skills/m-and-a-screening.cs.md", "skills/market-intelligence.cs.md", "skills/orchestration.cs.md", "skills/risk-scoring.cs.md", "stack.cs.md", "work/algoglyph.cs.md", "work/astronomists.cs.md", "work/catharsis-as-a-service.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/korczis-github-io.cs.md", "work/oscilla.cs.md", "work/u-tygra.cs.md", "_index.cs.md"]
+related = ["javascript", "flowbite-pro", "html", "claude-api", "dockerfile", "python", "tailwind-css", "shell"]
 og_title = "Alpine.js: slovník"
 og_image = "og/cs-glossary-alpine-js.png"
 keywords = ["Alpine.js", "Technologie", "Slovník", "Tomáš Korčák"]
@@ -40,13 +40,13 @@ span = 3
 height = "md"
 tone = "night"
 +++
-Alpine.js je součástí 3 mých veřejných repozitářů, od roku 2024 do 2026.
+Alpine.js je součástí 7 mých veřejných repozitářů, od roku 2024 do 2026.
 
-K čemu to sloužilo: [Znalosti](@/projects/knowledge.cs.md) (1), [Věda a vizualizace](@/projects/science.cs.md) (1) a [Web](@/projects/web.cs.md) (1).
+K čemu to sloužilo: [Věda a vizualizace](@/projects/science.cs.md) (2), [Nástroje](@/projects/tools.cs.md) (2), [Znalosti](@/projects/knowledge.cs.md) (1) a [Média a umění](@/projects/media.cs.md) (1).
 
-Naposledy: [korczis.github.io](@/work/korczis-github-io.cs.md); [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat; [algoglyph](@/work/algoglyph.cs.md): Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.
+Naposledy: [korczis.github.io](@/work/korczis-github-io.cs.md); [Oscilla](@/work/oscilla.cs.md): Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu; [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat.
 
-2 z těchto projektů běží jako živé weby.
+6 z těchto projektů běží jako živé weby.
 
 Používal jsem ho také v klientské práci pod dohodami o mlčenlivosti. Role: Architekt, Vedoucí inženýr, Inženýr AI a Datový inženýr. Co se řešilo: Agenti s LLM, Podpora rozhodování, Transformace s AI a Auditní stopa. Případy užití níže popisují princip a záměr této práce; žádný klient, osoba, datum ani číslo nejsou uvedeny.
 

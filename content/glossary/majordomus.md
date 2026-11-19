@@ -3,7 +3,7 @@
 title = "Majordomus"
 description = "The owner's supervisory layer for AI-assisted work: one policy for every coding agent, scoped tasks, and finishes that must be proven."
 template = "term.html"
-weight = 52
+weight = 75
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "The owner's supervisory layer for AI-assisted work: one policy for every coding agent, scoped tasks, and finishes that must be proven."
 aliases = []
 reference = { title = "majordomus.dev", url = "https://majordomus.dev" }
-pages = ["about.md", "hire.md", "interfaces.md", "services/_index.md", "services/ai-engineering-governance.md", "services/continuous-monitoring.md", "services/decision-support-ai.md", "services/digital-forensics.md", "services/interactive-data-products.md", "skills/_index.md", "skills/audit-trail.md", "skills/data-room.md", "skills/insolvency-monitoring.md", "skills/interactive-visualisation.md", "skills/knowledge-graph.md", "skills/policy-as-code.md", "skills/risk-scoring.md", "stack.md", "_index.md"]
-related = ["javascript", "alpine-js", "flowbite-pro", "html", "claude-api", "dockerfile", "python", "shell"]
+pages = ["about.md", "hire.md", "interfaces.md", "services/ai-engineering-governance.md", "services/continuous-monitoring.md", "skills/data-room.md", "skills/insolvency-monitoring.md", "skills/knowledge-graph.md", "skills/risk-scoring.md", "stack.md", "_index.md"]
+related = ["alpine-js", "flowbite-pro", "javascript", "claude-api", "github-actions", "html", "dockerfile", "fastapi"]
 og_title = "Majordomus: glossary"
 og_image = "og/glossary-majordomus.png"
 keywords = ["Majordomus", "Technology", "Glossary", "Tomas Korcak"]

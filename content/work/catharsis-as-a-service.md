@@ -17,7 +17,7 @@ og_description = "Catharsis as a Service: Media and art in HTML, Python and Java
 og_image = "og/work-catharsis-as-a-service.png"
 schema = "project"
 keywords = ["Catharsis as a Service", "catharsis-as-a-service", "Media and art", "HTML", "Python", "JavaScript", "2026", "GitHub", "Tomas Korcak", "korczis"]
-terms = ["html", "python", "javascript", "css", "rust", "shell", "data-visualisation", "github-pages", "repository", "commit", "open-source"]
+terms = ["html", "python", "javascript", "css", "rust", "shell", "zola", "tailwind-css", "alpine-js", "flowbite-pro", "playwright", "github-pages", "data-visualisation", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

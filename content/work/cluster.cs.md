@@ -17,7 +17,7 @@ og_description = "cluster: Systémy a infrastruktura, Ruby, 2017, archiv. Zdrojo
 og_image = "og/cs-work-cluster.png"
 schema = "project"
 keywords = ["cluster", "Systémy a infrastruktura", "Ruby", "2017", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["ruby", "repository", "commit", "open-source"]
+terms = ["ruby", "gli", "kubernetes", "coreos", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

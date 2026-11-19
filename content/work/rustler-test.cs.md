@@ -17,7 +17,7 @@ og_description = "rustler-test: Učení a experimenty, Elixir a Rust, 2017, arch
 og_image = "og/cs-work-rustler-test.png"
 schema = "project"
 keywords = ["rustler-test", "Učení a experimenty", "Elixir", "Rust", "2017", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["elixir", "rust", "repository", "commit", "open-source"]
+terms = ["elixir", "rust", "rustler", "travis-ci", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

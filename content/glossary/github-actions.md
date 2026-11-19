@@ -3,7 +3,7 @@
 title = "GitHub Actions"
 description = "GitHub's continuous integration: workflows of jobs that build, test and deploy a repository on every push or on a schedule."
 template = "term.html"
-weight = 49
+weight = 64
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -16,11 +16,20 @@ kind = "technology"
 definition = "GitHub's continuous integration: workflows of jobs that build, test and deploy a repository on every push or on a schedule."
 aliases = []
 reference = { title = "GitHub Actions documentation", url = "https://docs.github.com/en/actions" }
-pages = ["services/ai-engineering-governance.md", "services/attack-surface.md", "services/compliance-screening.md", "services/continuous-monitoring.md", "services/due-diligence.md", "services/m-and-a.md", "services/reputation-intelligence.md", "skills/ai-transformation.md", "skills/data-room.md", "skills/document-extraction.md", "skills/entity-resolution.md", "skills/insolvency-monitoring.md", "skills/knowledge-graph.md", "skills/m-and-a-screening.md", "skills/market-intelligence.md", "skills/orchestration.md", "skills/risk-scoring.md", "_index.md"]
-related = ["alpine-js", "claude-api", "dockerfile", "flowbite-pro", "html", "javascript", "fastapi", "kubernetes"]
+pages = ["services/ai-engineering-governance.md", "services/compliance-screening.md", "services/continuous-monitoring.md", "services/m-and-a.md", "services/reputation-intelligence.md", "skills/ai-transformation.md", "skills/data-room.md", "skills/entity-resolution.md", "skills/insolvency-monitoring.md", "skills/knowledge-graph.md", "skills/llm-agents.md", "skills/m-and-a-screening.md", "skills/market-intelligence.md", "skills/narrative-analysis.md", "skills/orchestration.md", "skills/risk-scoring.md", "work/el-magico-cache.md", "work/gh-exec-3000.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/prismatic-blog.md", "work/prismatic-majordomus.md", "work/prismatic.md", "_index.md"]
+related = ["html", "javascript", "claude-api", "dockerfile", "flowbite-pro", "alpine-js", "fastapi", "shell"]
 og_title = "GitHub Actions: glossary"
 og_image = "og/glossary-github-actions.png"
 keywords = ["GitHub Actions", "Technology", "Glossary", "Tomas Korcak"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,6 +40,14 @@ span = 3
 height = "md"
 tone = "night"
 +++
-No public repository of mine uses GitHub Actions as the data measures it; the evidence is the client work described below.
+GitHub Actions is part of 6 of my public repositories, from 2022 to 2026.
+
+What it was for: [Tools](@/projects/tools.md) (2), [AI engineering](@/projects/ai.md) (1), [Media and art](@/projects/media.md) (1) and [Security and OSINT](@/projects/security.md) (1).
+
+Most recently: [Majordomus](@/work/prismatic-majordomus.md): One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model; [osint-case-ratcliffe-moscow-2026](@/work/osint-case-ratcliffe-moscow-2026.md): Open-source intelligence assessment of the CIA Director's unannounced Moscow visit (2026-08-25) — maintained with Claude Code skills; reusable OSINT case toolkit; [prismatic](@/work/prismatic.md).
+
+3 of these projects run as live sites.
 
 I also used it in client work under confidentiality agreements. Roles: Architect, Lead engineer, AI engineer and Data engineer. What was solved: LLM agents, Decision support, AI transformation and Audit trail. The use cases below give the principle and the intent of that work; no client, person, date or number is named.
+
+How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses GitHub Actions: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links GitHub Actions to the repositories and to the other languages and technologies they use together.

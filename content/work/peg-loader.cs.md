@@ -17,7 +17,7 @@ og_description = "peg-loader: Nástroje, JavaScript, 2016, archiv. Zdrojový kó
 og_image = "og/cs-work-peg-loader.png"
 schema = "project"
 keywords = ["peg-loader", "Nástroje", "JavaScript", "2016", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["javascript", "open-source", "repository", "commit"]
+terms = ["javascript", "nodejs", "webpack", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

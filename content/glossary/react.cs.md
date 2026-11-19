@@ -3,7 +3,7 @@
 title = "React"
 description = "JavaScriptová knihovna pro uživatelská rozhraní skládaná z komponent, které se překreslují podle stavu."
 template = "term.html"
-weight = 64
+weight = 93
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -16,11 +16,20 @@ kind = "technology"
 definition = "JavaScriptová knihovna pro uživatelská rozhraní skládaná z komponent, které se překreslují podle stavu."
 aliases = ["React.js"]
 reference = { title = "react.dev", url = "https://react.dev/learn" }
-pages = ["_index.cs.md"]
-related = []
+pages = ["services/due-diligence.cs.md", "work/gooddata-graphql.cs.md", "work/gooddata-proxy.cs.md", "work/maze.cs.md", "work/microscratch-react.cs.md", "_index.cs.md"]
+related = ["commit", "html", "javascript", "open-source", "repository", "elixir", "phoenix", "css"]
 og_title = "React: slovník"
 og_image = "og/cs-glossary-react.png"
 keywords = ["React", "Technologie", "Slovník", "Tomáš Korčák"]
+
+[[extra.viz]]
+kind = "graph"
+source = "term.evidence"
+title = "viz_skill_graph_title"
+lead = "viz_skill_graph_lead"
+span = 3
+height = "lg"
+tone = "night"
 
 [[extra.viz]]
 kind = "atlas"
@@ -31,6 +40,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
-Žádný můj veřejný repozitář React podle měřených dat nepoužívá; dokladem je klientská práce popsaná níže.
+React je součástí 4 mých veřejných repozitářů, od roku 2015 do 2016.
+
+K čemu to sloužilo: [Data a GIS](@/projects/data.cs.md) (2), [Věda a vizualizace](@/projects/science.cs.md) (1) a [Web](@/projects/web.cs.md) (1).
+
+Naposledy: [gooddata-graphql](@/work/gooddata-graphql.cs.md); [maze](@/work/maze.cs.md); [gooddata-proxy](@/work/gooddata-proxy.cs.md).
 
 Používal jsem ho také v klientské práci pod dohodami o mlčenlivosti. Role: Architekt, Vedoucí inženýr, Inženýr AI a Datový inženýr. Co se řešilo: Agenti s LLM, Podpora rozhodování, Transformace s AI a Auditní stopa. Případy užití níže popisují princip a záměr této práce; žádný klient, osoba, datum ani číslo nejsou uvedeny.
+
+Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak React používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje React s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

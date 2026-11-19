@@ -14,10 +14,10 @@ seo_title = "Dockerfile (programovací jazyk)"
 term = "dockerfile"
 kind = "language"
 definition = "Recept, který staví obraz kontejneru: základní systém, soubory a příkazy, reprodukovatelné kdekoli."
-aliases = ["Docker", "docker"]
+aliases = ["Docker", "docker", "Docker Compose"]
 reference = { title = "Dockerfile reference", url = "https://docs.docker.com/reference/dockerfile/" }
-pages = ["projects/media.cs.md", "projects/systems.cs.md", "services/_index.cs.md", "services/ai-engineering-governance.cs.md", "services/attack-surface.cs.md", "services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "services/decision-support-ai.cs.md", "services/digital-investigation.cs.md", "services/due-diligence.cs.md", "services/m-and-a.cs.md", "services/reputation-intelligence.cs.md", "skills/_index.cs.md", "skills/ai-transformation.cs.md", "skills/data-integration.cs.md", "skills/data-room.cs.md", "skills/decision-support.cs.md", "skills/document-extraction.cs.md", "skills/due-diligence.cs.md", "skills/entity-resolution.cs.md", "skills/geospatial-analysis.cs.md", "skills/insolvency-monitoring.cs.md", "skills/knowledge-graph.cs.md", "skills/m-and-a-screening.cs.md", "skills/market-intelligence.cs.md", "skills/orchestration.cs.md", "skills/risk-scoring.cs.md", "work/astudo.cs.md", "work/aws-lambda-docker.cs.md", "work/docks.cs.md", "work/el-magico-cache.cs.md", "work/gh-exec-3000.cs.md", "work/hydra.cs.md", "work/microcrawler-js.cs.md", "work/pdf-renderer.cs.md", "work/prismatic-blog.cs.md", "work/tosh.cs.md", "work/zdeny-docker.cs.md", "_index.cs.md"]
-related = ["javascript", "html", "alpine-js", "claude-api", "fastapi", "flowbite-pro", "shell", "elixir"]
+pages = ["projects/media.cs.md", "projects/systems.cs.md", "services/_index.cs.md", "services/attack-surface.cs.md", "services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "services/decision-support-ai.cs.md", "services/digital-investigation.cs.md", "services/due-diligence.cs.md", "services/interactive-data-products.cs.md", "services/m-and-a.cs.md", "services/reputation-intelligence.cs.md", "skills/_index.cs.md", "skills/ai-transformation.cs.md", "skills/chain-of-custody.cs.md", "skills/data-integration.cs.md", "skills/data-room.cs.md", "skills/decision-support.cs.md", "skills/document-extraction.cs.md", "skills/due-diligence.cs.md", "skills/entity-resolution.cs.md", "skills/geospatial-analysis.cs.md", "skills/insolvency-monitoring.cs.md", "skills/knowledge-graph.cs.md", "skills/m-and-a-screening.cs.md", "skills/market-intelligence.cs.md", "skills/media-forensics.cs.md", "skills/orchestration.cs.md", "skills/osint-investigation.cs.md", "skills/risk-scoring.cs.md", "skills/web-automation.cs.md", "work/apollon.cs.md", "work/astudo.cs.md", "work/aws-lambda-docker.cs.md", "work/bcnode-extra-scripts.cs.md", "work/bcnode-old.cs.md", "work/docker-conf2015.cs.md", "work/docker-datasciencetoolbox.cs.md", "work/docker-dstk.cs.md", "work/docker-gooddata-ruby.cs.md", "work/docks.cs.md", "work/el-magico-cache.cs.md", "work/gh-exec-3000.cs.md", "work/gooddata-fs.cs.md", "work/gooddata-graphql.cs.md", "work/happ.cs.md", "work/hydra.cs.md", "work/k8s-orbis-pictus.cs.md", "work/kuzu-ex.cs.md", "work/microcrawler-js.cs.md", "work/microcrawler.cs.md", "work/pdf-renderer.cs.md", "work/prismatic-blog.cs.md", "work/server-ansible.cs.md", "work/server-archlinux.cs.md", "work/server-atomic.cs.md", "work/sig.cs.md", "work/simple-geocoder.cs.md", "work/test-elixir.cs.md", "work/tosh.cs.md", "work/web-spa.cs.md", "work/zaas.cs.md", "work/zdeny-docker.cs.md", "_index.cs.md"]
+related = ["javascript", "repository", "html", "shell", "commit", "open-source", "elixir", "postgresql"]
 og_title = "Dockerfile: slovník"
 og_image = "og/cs-glossary-dockerfile.png"
 keywords = ["Dockerfile", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
@@ -40,13 +40,13 @@ span = 3
 height = "md"
 tone = "night"
 +++
-Dockerfile jsem psal v 9 veřejných repozitářích, od roku 2018 do 2025; ve 4 z nich je hlavním jazykem.
+Dockerfile jsem psal v 32 veřejných repozitářích, od roku 2014 do 2026; ve 4 z nich je hlavním jazykem.
 
-K čemu to sloužilo: [Systémy a infrastruktura](@/projects/systems.cs.md) (4), [Nástroje](@/projects/tools.cs.md) (3), [Knihovny](@/projects/libraries.cs.md) (1) a [Média a umění](@/projects/media.cs.md) (1).
+K čemu to sloužilo: [Systémy a infrastruktura](@/projects/systems.cs.md) (12), [Nástroje](@/projects/tools.cs.md) (7), [Data a GIS](@/projects/data.cs.md) (6) a [Učení a experimenty](@/projects/learning.cs.md) (2).
 
-Naposledy: [astudo](@/work/astudo.cs.md); [docks](@/work/docks.cs.md); [hydra](@/work/hydra.cs.md).
+Naposledy: [sig](@/work/sig.cs.md); [astudo](@/work/astudo.cs.md); [docks](@/work/docks.cs.md).
 
-1 z těchto projektů běží jako živý web.
+2 z těchto projektů běží jako živé weby.
 
 Používal jsem ho také v klientské práci pod dohodami o mlčenlivosti. Role: Architekt, Vedoucí inženýr, Inženýr AI a Datový inženýr. Co se řešilo: Agenti s LLM, Podpora rozhodování, Transformace s AI a Auditní stopa. Případy užití níže popisují princip a záměr této práce; žádný klient, osoba, datum ani číslo nejsou uvedeny.
 

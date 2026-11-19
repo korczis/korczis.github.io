@@ -14,7 +14,7 @@ icon = "briefcase"
 og_title = "Prověrka a analýza M&A transakcí"
 og_image = "og/cs-service-m-and-a.png"
 schema = "service"
-terms = ["service", "elixir", "phoenix", "postgresql", "monte-carlo-simulation", "mergers-and-acquisitions", "due-diligence", "financial-statement-analysis", "beneficial-ownership", "market-intelligence", "contestability", "risk-assessment", "virtual-data-room", "decision-support-system", "html", "javascript", "python", "alpine-js", "claude-api", "dockerfile", "fastapi", "flowbite-pro", "github-actions", "kubernetes"]
+terms = ["service", "elixir", "phoenix", "postgresql", "monte-carlo-simulation", "mergers-and-acquisitions", "due-diligence", "financial-statement-analysis", "beneficial-ownership", "market-intelligence", "contestability", "risk-assessment", "virtual-data-room", "decision-support-system", "javascript", "html", "python", "flowbite-pro", "dockerfile", "fastapi", "alpine-js", "claude-api", "playwright", "github-actions"]
 keywords = ["Prověrka a analýza M&A transakcí", "Prověrka M&A", "Due diligence", "Analýza účetních závěrek", "Analýza vlastnictví a vazeb", "Tržní zpravodajství", "Napadnutelná rozhodnutí", "Hodnocení rizik", "Datová místnost", "Podpora rozhodování", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -34,7 +34,7 @@ Transakční týmy prověřují mnoho cílů, ale plnou due diligence si mohou d
 
 Je postavená na: [Elixir](@/glossary/elixir.cs.md), [Phoenix](@/glossary/phoenix.cs.md), [PostgreSQL](@/glossary/postgresql.cs.md) a [Monte Carlo simulation](@/glossary/monte-carlo-simulation.cs.md).
 
-Technologie za ní, změřené z práce, která tyto dovednosti dokládá: [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Python](@/glossary/python.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md), [Claude API](@/glossary/claude-api.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md), [FastAPI](@/glossary/fastapi.cs.md) a [Flowbite Pro](@/glossary/flowbite-pro.cs.md).
+Technologie za ní, změřené z práce, která tyto dovednosti dokládá: [JavaScript](@/glossary/javascript.cs.md), [HTML](@/glossary/html.cs.md), [Python](@/glossary/python.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md), [FastAPI](@/glossary/fastapi.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md) a [Claude API](@/glossary/claude-api.cs.md).
 
 Její dovednosti dokládá 6 veřejných repozitářů (6 vlastními slovy).
 

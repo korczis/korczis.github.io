@@ -17,7 +17,7 @@ og_description = "kpmap-ruby: Data a GIS, 2017, archiv. Zdrojový kód: GitHub a
 og_image = "og/cs-work-kpmap-ruby.png"
 schema = "project"
 keywords = ["kpmap-ruby", "Data a GIS", "2017", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["gis", "repository", "commit", "open-source"]
+terms = ["ruby", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

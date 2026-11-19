@@ -17,7 +17,7 @@ og_description = "pdf_renderer: Nástroje, Python, Dockerfile a Makefile, 2024, 
 og_image = "og/cs-work-pdf-renderer.png"
 schema = "project"
 keywords = ["pdf_renderer", "Nástroje", "Python", "Dockerfile", "Makefile", "2024", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["python", "dockerfile", "makefile", "open-source", "repository", "commit"]
+terms = ["python", "dockerfile", "makefile", "rabbitmq", "postgresql", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

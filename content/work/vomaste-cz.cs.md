@@ -17,7 +17,7 @@ og_description = "vomaste.cz: Nástroje, JavaScript, HTML a Shell, 2026, aktivn�
 og_image = "og/cs-work-vomaste-cz.png"
 schema = "project"
 keywords = ["vomaste.cz", "Nástroje", "JavaScript", "HTML", "Shell", "2026", "GitHub", "Tomáš Korčák", "korczis"]
-terms = ["javascript", "html", "shell", "css", "just", "open-source", "github-pages", "repository", "commit"]
+terms = ["javascript", "html", "shell", "css", "just", "zola", "json-ld", "nodejs", "tailwind-css", "playwright", "github-pages", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

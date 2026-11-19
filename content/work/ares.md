@@ -17,7 +17,7 @@ og_description = "ares: Tools in Ruby, 2012, archive. Source on GitHub and GitLa
 og_image = "og/work-ares.png"
 schema = "project"
 keywords = ["ares", "Tools", "Ruby", "2012", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["ruby", "open-source", "repository", "commit"]
+terms = ["ruby", "rabbitmq", "mongodb", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

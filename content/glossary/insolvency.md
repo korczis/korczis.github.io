@@ -3,7 +3,7 @@
 title = "Insolvency"
 description = "The state of a debtor who cannot pay their debts; insolvency proceedings and the creditors' claims in them are recorded in public registers."
 template = "term.html"
-weight = 89
+weight = 124
 
 [taxonomies]
 tags = ["Glossary", "Concept"]

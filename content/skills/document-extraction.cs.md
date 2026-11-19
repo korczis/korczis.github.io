@@ -13,7 +13,7 @@ skill = "document-extraction"
 og_title = "Vytěžování dokumentů: dovednosti"
 og_image = "og/cs-skill-document-extraction.png"
 schema = "skill"
-terms = ["skill", "information-extraction", "html", "javascript", "python", "alpine-js", "claude-api", "dockerfile", "fastapi", "flowbite-pro", "github-actions", "just"]
+terms = ["skill", "information-extraction", "html", "javascript", "playwright", "postgresql", "python", "tailwind-css", "alpine-js", "claude-api", "dockerfile", "fastapi"]
 keywords = ["Vytěžování dokumentů", "Podpora rozhodování a AI agenti pro analytiky", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -31,7 +31,7 @@ Pojem, na kterém stojí: [Vytěžování informací](@/glossary/information-ext
 
 Služby, které z ní čerpají: [Podpora rozhodování a AI agenti pro analytiky](@/services/decision-support-ai.cs.md).
 
-Praktikovaná s: [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Python](@/glossary/python.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md), [Claude API](@/glossary/claude-api.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md), [FastAPI](@/glossary/fastapi.cs.md) a [Flowbite Pro](@/glossary/flowbite-pro.cs.md).
+Praktikovaná s: [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Playwright](@/glossary/playwright.cs.md), [PostgreSQL](@/glossary/postgresql.cs.md), [Python](@/glossary/python.cs.md), [Tailwind CSS](@/glossary/tailwind-css.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md) a [Claude API](@/glossary/claude-api.cs.md).
 
 Veřejná práce, jejíž vlastní slova ji dokládají: [data-atlas](https://github.com/korczis/data-atlas).
 

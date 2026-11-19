@@ -17,7 +17,7 @@ og_description = "apollo-schemas: Data a GIS, 2014, archiv. Zdrojový kód: GitH
 og_image = "og/cs-work-apollo-schemas.png"
 schema = "project"
 keywords = ["apollo-schemas", "Data a GIS", "2014", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["gis", "repository", "commit", "open-source"]
+terms = ["json", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

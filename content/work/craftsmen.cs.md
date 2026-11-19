@@ -17,7 +17,7 @@ og_description = "craftsmen: Web, JavaScript, CSS a Shell, 2014, archiv. Zdrojov
 og_image = "og/cs-work-craftsmen.png"
 schema = "project"
 keywords = ["craftsmen", "Web", "JavaScript", "CSS", "Shell", "2014", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["javascript", "css", "shell", "static-site-generator", "repository", "commit", "open-source"]
+terms = ["javascript", "css", "shell", "nodejs", "express", "mongodb", "socket-io", "ember-js", "handlebars", "bootstrap", "mocha", "static-site-generator", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

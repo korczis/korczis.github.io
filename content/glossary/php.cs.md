@@ -17,7 +17,7 @@ definition = "Skriptovací jazyk určený pro web, který na serveru generuje st
 aliases = []
 reference = { title = "php.net", url = "https://www.php.net/" }
 pages = ["work/docks.cs.md"]
-related = ["commit", "dockerfile", "open-source", "repository", "shell"]
+related = ["commit", "couchbase", "dockerfile", "elasticsearch", "mongodb", "nominatim", "open-source", "postgis"]
 og_title = "PHP: slovník"
 og_image = "og/cs-glossary-php.png"
 keywords = ["PHP", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

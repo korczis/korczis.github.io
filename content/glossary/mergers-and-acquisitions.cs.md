@@ -3,7 +3,7 @@
 title = "Fúze a akvizice"
 description = "Transakce, při kterých se firmy spojují nebo jedna kupuje druhou; každou připravuje prověrka cíle, jeho stran a financování."
 template = "term.html"
-weight = 94
+weight = 129
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

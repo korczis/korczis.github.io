@@ -17,7 +17,7 @@ og_description = "web-spa: Web, JavaScript, Elixir a Elm, 2017, archiv. Zdrojov�
 og_image = "og/cs-work-web-spa.png"
 schema = "project"
 keywords = ["web-spa", "Web", "JavaScript", "Elixir", "Elm", "2017", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["javascript", "elixir", "elm", "html", "static-site-generator", "repository", "commit", "open-source"]
+terms = ["javascript", "elixir", "elm", "html", "phoenix", "bootstrap", "webpack", "bower", "dockerfile", "travis-ci", "static-site-generator", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

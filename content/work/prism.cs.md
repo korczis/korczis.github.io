@@ -17,7 +17,7 @@ og_description = "prism: Nástroje, 2024–2026, aktivní za posledních 12 měs
 og_image = "og/cs-work-prism.png"
 schema = "project"
 keywords = ["prism", "Nástroje", "2024–2026", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["open-source", "repository", "commit"]
+terms = ["elixir", "meilisearch", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

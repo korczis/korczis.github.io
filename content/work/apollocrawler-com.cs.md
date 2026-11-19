@@ -17,7 +17,7 @@ og_description = "apollocrawler.com: Data a GIS, JavaScript, CSS a Shell, 2014, 
 og_image = "og/cs-work-apollocrawler-com.png"
 schema = "project"
 keywords = ["apollocrawler.com", "Data a GIS", "JavaScript", "CSS", "Shell", "2014", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["javascript", "css", "shell", "gis", "repository", "commit", "open-source"]
+terms = ["javascript", "css", "shell", "nodejs", "express", "mongodb", "socket-io", "ember-js", "handlebars", "mocha", "travis-ci", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

@@ -17,7 +17,7 @@ og_description = "ctu-cz: Data a GIS, JavaScript, HTML a Rust, 2020, archiv. Zdr
 og_image = "og/cs-work-ctu-cz.png"
 schema = "project"
 keywords = ["ctu-cz", "Data a GIS", "JavaScript", "HTML", "Rust", "2020", "GitHub", "Tomáš Korčák", "korczis"]
-terms = ["javascript", "html", "rust", "makefile", "gis", "repository", "commit", "open-source"]
+terms = ["javascript", "html", "rust", "makefile", "csv", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

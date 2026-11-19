@@ -17,7 +17,7 @@ og_description = "docker-conf2015: Systems and infrastructure in JavaScript, 201
 og_image = "og/work-docker-conf2015.png"
 schema = "project"
 keywords = ["docker-conf2015", "Systems and infrastructure", "JavaScript", "2015", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["javascript", "repository", "commit", "open-source"]
+terms = ["javascript", "dockerfile", "nodejs", "express", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

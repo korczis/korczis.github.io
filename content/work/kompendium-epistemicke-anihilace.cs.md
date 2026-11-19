@@ -17,7 +17,7 @@ og_description = "Kompendium: Znalosti, Elixir, JavaScript a Python, 2026, aktiv
 og_image = "og/cs-work-kompendium-epistemicke-anihilace.png"
 schema = "project"
 keywords = ["Kompendium", "kompendium-epistemicke-anihilace", "Znalosti", "Elixir", "JavaScript", "Python", "czech", "epistemology", "flowbite", "majordomus", "manipulation", "2026", "GitHub", "Tomáš Korčák", "korczis"]
-terms = ["elixir", "javascript", "python", "html", "shell", "rust", "zola", "cytoscape-js", "apache-echarts", "alpine-js", "flowbite-pro", "github-pages", "repository", "commit", "open-source"]
+terms = ["elixir", "javascript", "python", "html", "shell", "rust", "zola", "cytoscape-js", "apache-echarts", "alpine-js", "flowbite-pro", "tailwind-css", "p5-js", "github-pages", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

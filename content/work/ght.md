@@ -17,7 +17,7 @@ og_description = "GHT: Tools, 2025, active in the last 24 months. Source on GitL
 og_image = "og/work-ght.png"
 schema = "project"
 keywords = ["GHT", "Tools", "2025", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["open-source", "repository", "commit"]
+terms = ["markdown", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

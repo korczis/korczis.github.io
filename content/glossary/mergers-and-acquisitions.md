@@ -3,7 +3,7 @@
 title = "Mergers and acquisitions"
 description = "Transactions in which companies combine or one buys another; each is prepared by screening the target, its parties and its financing."
 template = "term.html"
-weight = 94
+weight = 129
 
 [taxonomies]
 tags = ["Glossary", "Concept"]

@@ -14,7 +14,7 @@ icon = "briefcase"
 og_title = "M&A pre-deal screening and analysis"
 og_image = "og/service-m-and-a.png"
 schema = "service"
-terms = ["service", "elixir", "phoenix", "postgresql", "monte-carlo-simulation", "mergers-and-acquisitions", "due-diligence", "financial-statement-analysis", "beneficial-ownership", "market-intelligence", "contestability", "risk-assessment", "virtual-data-room", "decision-support-system", "html", "javascript", "python", "alpine-js", "claude-api", "dockerfile", "fastapi", "flowbite-pro", "github-actions", "kubernetes"]
+terms = ["service", "elixir", "phoenix", "postgresql", "monte-carlo-simulation", "mergers-and-acquisitions", "due-diligence", "financial-statement-analysis", "beneficial-ownership", "market-intelligence", "contestability", "risk-assessment", "virtual-data-room", "decision-support-system", "javascript", "html", "python", "flowbite-pro", "dockerfile", "fastapi", "alpine-js", "claude-api", "playwright", "github-actions"]
 keywords = ["M&A pre-deal screening and analysis", "M&A screening", "Due diligence", "Financial statement analysis", "Ownership and link analysis", "Market intelligence", "Contestable decisions", "Risk scoring", "Data room", "Decision support", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -34,7 +34,7 @@ It draws on these skills: [M&A screening](@/skills/m-and-a-screening.md), [Due d
 
 It is built with [Elixir](@/glossary/elixir.md), [Phoenix](@/glossary/phoenix.md), [PostgreSQL](@/glossary/postgresql.md) and [Monte Carlo simulation](@/glossary/monte-carlo-simulation.md).
 
-The technologies behind it, measured from the work that shows those skills: [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md), [Python](@/glossary/python.md), [Alpine.js](@/glossary/alpine-js.md), [Claude API](@/glossary/claude-api.md), [Dockerfile](@/glossary/dockerfile.md), [FastAPI](@/glossary/fastapi.md) and [Flowbite Pro](@/glossary/flowbite-pro.md).
+The technologies behind it, measured from the work that shows those skills: [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md), [Python](@/glossary/python.md), [Flowbite Pro](@/glossary/flowbite-pro.md), [Dockerfile](@/glossary/dockerfile.md), [FastAPI](@/glossary/fastapi.md), [Alpine.js](@/glossary/alpine-js.md) and [Claude API](@/glossary/claude-api.md).
 
 6 public repositories show its skills (6 by their own words).
 

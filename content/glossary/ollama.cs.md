@@ -3,7 +3,7 @@
 title = "Ollama"
 description = "Běhové prostředí, které servíruje otevřené jazykové modely na vlastním hardwaru, takže citlivý materiál neopustí stroj."
 template = "term.html"
-weight = 55
+weight = 83
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -17,7 +17,7 @@ definition = "Běhové prostředí, které servíruje otevřené jazykové model
 aliases = []
 reference = { title = "Ollama", url = "https://ollama.com/" }
 pages = ["services/decision-support-ai.cs.md", "services/reputation-intelligence.cs.md"]
-related = ["alpine-js", "claude-api", "css", "decision-support-system", "dockerfile", "elixir", "fastapi", "flowbite-pro"]
+related = ["claude-api", "decision-support-system", "dockerfile", "elixir", "flowbite-pro", "html", "javascript", "phoenix"]
 og_title = "Ollama: slovník"
 og_image = "og/cs-glossary-ollama.png"
 keywords = ["Ollama", "Technologie", "Slovník", "Tomáš Korčák"]
