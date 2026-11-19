@@ -1,0 +1,5 @@
+# Commits on master's first-parent line that the commit lint (scripts/lint-commits.sh) skips.
+# Master's history is never rewritten, so a subject that slipped through stays; a deploy that the
+# refresh dispatches has no push range and lints from IMPORT_BASE, where such a commit would fail
+# every run. One full SHA per line, then the reason. Adding a line needs a reason; nothing else does.
+d3e494ba5c21f8b39d41fcd0aeccc5c6da8fcc14 merge subject 115 characters (description limit 100), pushed 2026-11-18
