@@ -664,7 +664,7 @@
             <a href="{{ base }}projects/{{ key }}/" class="group block rounded-lg focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700">
               <div class="mb-1.5 flex items-center justify-between gap-3">
                 <span class="flex min-w-0 items-center gap-2 text-sm font-medium text-gray-900 group-hover:text-primary-700 dark:text-white dark:group-hover:text-primary-400">{{ <category_icon key={key} class="h-4 w-4 shrink-0 text-gray-500 dark:text-gray-400" /> }}<span class="truncate">{{ c["name" ~ sfx] }}</span></span>
-                <span class="tabular shrink-0 text-xs text-gray-600 dark:text-gray-400">{{ n }} · {{ nl }} {{ trans(key="live", lang=lang) | safe }}</span>
+                <span class="tabular shrink-0 text-xs text-gray-600 dark:text-gray-400">{{ n }} · {{ <count n={nl} key="n_live" lang={lang} /> }}</span>
               </div>
               <div class="h-2 w-full rounded-sm bg-gray-200 dark:bg-gray-700"><div class="h-2 rounded-sm bg-primary-700 dark:bg-primary-500" style="width: {{ (n * 100 / (cat.projects | length)) | round }}%"></div></div>
             </a>

@@ -25,7 +25,7 @@ My role (declared by me):
 - **Investigator**: Ran the investigation from open sources and wrote up the findings with their evidence.
 - **Advisor**: Advised on approach, risks and the technology choices, and reviewed the outcome.
 
-Period (measured): from May 2026 to May 2026; months with measured commits: 1.
+Period (measured): from May 2026 to May 2026; number of months with measured commits: 1.
 
 What was delivered, by the strongest inferred capabilities (an inference from commits, paths and headings, not a measured outcome):
 
@@ -36,7 +36,7 @@ What was delivered, by the strongest inferred capabilities (an inference from co
 
 Further inferred capabilities: [M&A screening](@/skills/m-and-a-screening.md) and [Audit trail](@/skills/audit-trail.md).
 
-Scale (measured, each figure rounded down to a bucket): 2+ commits by me in 1 repositories, a team of 1+ people and 250+ files.
+Scale (measured, each figure rounded down to a bucket): 2+ commits by me in 1 repository, a team of 1+ people and 250+ files.
 
 Technologies detected in the sources (file types, dependency manifests, marker paths): [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md) and [Python](@/glossary/python.md).
 

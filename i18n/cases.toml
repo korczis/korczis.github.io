@@ -27,17 +27,17 @@ en = "All case studies"
 cs = "Všechny případové studie"
 
 [case_kpi_months]
-en = "months with measured commits"
-cs = "měsíců s naměřenými commity"
+en = "Months with measured commits"
+cs = "Měsíce s naměřenými commity"
 [case_kpi_commits]
-en = "commits by me, rounded down"
-cs = "mých commitů, zaokrouhleno dolů"
+en = "My commits, rounded down"
+cs = "Moje commity, zaokrouhleno dolů"
 [case_kpi_team]
-en = "people on the team, rounded down"
-cs = "lidí v týmu, zaokrouhleno dolů"
+en = "People on the team, rounded down"
+cs = "Lidé v týmu, zaokrouhleno dolů"
 [case_kpi_tests]
-en = "tests, rounded down"
-cs = "testů, zaokrouhleno dolů"
+en = "Tests, rounded down"
+cs = "Testy, zaokrouhleno dolů"
 [case_role]
 en = "My role"
 cs = "Moje role"
@@ -88,8 +88,8 @@ cs = "Kontext: klient v oboru {sector}, pod dohodou o mlčenlivosti. Klient, lid
 en = "My role (declared by me):"
 cs = "Moje role (uvádím já):"
 [derive_case_period]
-en = "Period (measured): from {from} to {to}; months with measured commits: {n}."
-cs = "Období (změřeno): od {from} do {to}; měsíců s naměřenými commity: {n}."
+en = "Period (measured): from {from} to {to}; number of months with measured commits: {n}."
+cs = "Období (změřeno): od {from} do {to}; počet měsíců s naměřenými commity: {n}."
 [derive_case_delivered]
 en = "What was delivered, by the strongest inferred capabilities (an inference from commits, paths and headings, not a measured outcome):"
 cs = "Co bylo dodáno, podle nejsilnějších odvozených schopností (odvození z commitů, cest a nadpisů, ne změřený výsledek):"
@@ -97,8 +97,17 @@ cs = "Co bylo dodáno, podle nejsilnějších odvozených schopností (odvození
 en = "Further inferred capabilities: {list}."
 cs = "Další odvozené schopnosti: {list}."
 [derive_case_scale]
-en = "Scale (measured, each figure rounded down to a bucket): {commits}+ commits by me in {repositories} repositories, a team of {team}+ people, {files}+ files and {tests}+ tests."
-cs = "Rozsah (změřeno, každé číslo zaokrouhleno dolů na stupeň): {commits}+ mých commitů v {repositories} repozitářích, tým {team}+ lidí, {files}+ souborů a {tests}+ testů."
+en = "Scale (measured, each figure rounded down to a bucket): {commits}+ commits by me {repositories}, a team of {team}+ people, {files}+ files and {tests}+ tests."
+cs = "Rozsah (změřeno, každé číslo zaokrouhleno dolů na stupeň): {commits}+ mých commitů {repositories}, tým {team}+ lidí, {files}+ souborů a {tests}+ testů."
+[derive_case_repos__one]
+en = "in {n} repository"
+cs = "v {n} repozitáři"
+[derive_case_repos__few]
+en = "in {n} repositories"
+cs = "ve {n} repozitářích"
+[derive_case_repos__other]
+en = "in {n} repositories"
+cs = "v {n} repozitářích"
 [derive_case_tech]
 en = "Technologies detected in the sources (file types, dependency manifests, marker paths): {list}."
 cs = "Technologie zjištěné ve zdrojích (typy souborů, manifesty závislostí, značkové cesty): {list}."
@@ -127,8 +136,8 @@ cs = "Jak tyto stránky číst: obor a role uvádím já; období a rozsah jsou 
 en = "{link} ({hit} of its {of} skills)"
 cs = "{link} ({hit} z jejích {of} dovedností)"
 [derive_case_scale_untested]
-en = "Scale (measured, each figure rounded down to a bucket): {commits}+ commits by me in {repositories} repositories, a team of {team}+ people and {files}+ files."
-cs = "Rozsah (změřeno, každé číslo zaokrouhleno dolů na stupeň): {commits}+ mých commitů v {repositories} repozitářích, tým {team}+ lidí a {files}+ souborů."
+en = "Scale (measured, each figure rounded down to a bucket): {commits}+ commits by me {repositories}, a team of {team}+ people and {files}+ files."
+cs = "Rozsah (změřeno, každé číslo zaokrouhleno dolů na stupeň): {commits}+ mých commitů {repositories}, tým {team}+ lidí a {files}+ souborů."
 [about_cases_title]
 en = "What I did for clients"
 cs = "Co jsem dělal pro klienty"

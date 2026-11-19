@@ -267,6 +267,10 @@
 {% endcomponent %}
 
 {#- Flowbite Pro KPI card (admin dashboard 1.1.1, section 7). -#}
+{#- A count with its word in the plural form the number takes (rule project.numerals-agree): key__one,
+    key__few (2-4, Czech) and key__other, each with {n}. English gives few the text of other. -#}
+{% component count(n, key: string, lang: string) %}{%- set f = "other" %}{% if n == 1 %}{% set f = "one" %}{% elif n >= 2 and n <= 4 %}{% set f = "few" %}{% endif %}{{ trans(key=key ~ "__" ~ f, lang=lang) | replace(from="{n}", to=n ~ "") }}{% endcomponent %}
+
 {% component kpi(value: string, label: string, note: string = "") %}
 <div class="rounded-lg bg-white p-4 shadow dark:bg-gray-800 sm:p-6">
   <p class="tabular text-2xl font-bold leading-none text-gray-900 dark:text-white sm:text-3xl">{{ value }}</p>

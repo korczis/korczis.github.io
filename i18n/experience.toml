@@ -72,8 +72,8 @@ en = "Category"
 cs = "Kategorie"
 
 [xp_evidence]
-en = "Inferred from matches in {commits} commits, {headings} headings and {paths} paths"
-cs = "Odvozeno ze shody v {commits} commitech, {headings} nadpisech a {paths} cestách"
+en = "Inferred from matches in commits ({commits}), headings ({headings}) and paths ({paths})"
+cs = "Odvozeno ze shody v commitech ({commits}), nadpisech ({headings}) a cestách ({paths})"
 
 [xp_declared]
 en = "declared by the owner"

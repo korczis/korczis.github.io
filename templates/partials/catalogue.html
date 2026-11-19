@@ -56,8 +56,8 @@
     </div>
 
     <p data-js class="tabular mb-4 text-sm text-gray-600 dark:text-gray-400" aria-live="polite">
-      {{ trans(key="showing", lang=lang) | safe }} <span class="font-semibold text-gray-900 dark:text-white" x-text="shown">{{ count }}</span>
-      {{ trans(key="of", lang=lang) | safe }} <span class="font-semibold text-gray-900 dark:text-white" x-text="total">{{ count }}</span> {{ trans(key="projects", lang=lang) | safe }}
+      {{ trans(key="projects_shown", lang=lang) | safe }} <span class="font-semibold text-gray-900 dark:text-white" x-text="shown">{{ count }}</span>
+      {{ trans(key="of", lang=lang) | safe }} <span class="font-semibold text-gray-900 dark:text-white" x-text="total">{{ count }}</span>
       <button type="button" x-show="shown !== total" x-cloak @click="reset()" class="ml-2 font-medium text-primary-700 hover:underline dark:text-primary-400">{{ trans(key="clear_filters", lang=lang) | safe }}</button>
     </p>
 

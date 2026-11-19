@@ -96,7 +96,7 @@ function article(e, lang) {
   p.push(capsOf(e).slice(0, SOLVED).map((k) => `- ${skillLink(k, lang)}: ${capDesc(k, lang)}`).join('\n'));
   if (capsOf(e).length > SOLVED) p.push(t('derive_case_more', lang, { list: listing(capsOf(e).slice(SOLVED).map((k) => skillLink(k, lang)), lang) }));
   const sc = e.scale ?? {};
-  if (sc.commits) p.push(t(sc.tests ? 'derive_case_scale' : 'derive_case_scale_untested', lang, { commits: num(sc.commits, lang), repositories: num(sc.repositories, lang), team: num(sc.team, lang), files: num(sc.files, lang), tests: num(sc.tests, lang) }));
+  if (sc.commits) p.push(t(sc.tests ? 'derive_case_scale' : 'derive_case_scale_untested', lang, { commits: num(sc.commits, lang), repositories: t('derive_case_repos', lang, { n: sc.repositories }), team: num(sc.team, lang), files: num(sc.files, lang), tests: num(sc.tests, lang) }));
   const tech = e.technologies.map((name) => nameLink(g, name, lang));
   if (tech.length) p.push(t('derive_case_tech', lang, { list: listing(tech, lang) }));
   const sv = servicesOf(e);

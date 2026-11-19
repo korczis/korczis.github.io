@@ -25,7 +25,7 @@ Moje role (uvádím já):
 - **Analytik šetření**: Vedl šetření z otevřených zdrojů a sepsal zjištění i s jejich důkazy.
 - **Poradce**: Radil s postupem, riziky a volbou technologií a posoudil výsledek.
 
-Období (změřeno): od května 2026 do května 2026; měsíců s naměřenými commity: 1.
+Období (změřeno): od května 2026 do května 2026; počet měsíců s naměřenými commity: 1.
 
 Co bylo dodáno, podle nejsilnějších odvozených schopností (odvození z commitů, cest a nadpisů, ne změřený výsledek):
 
@@ -36,7 +36,7 @@ Co bylo dodáno, podle nejsilnějších odvozených schopností (odvození z com
 
 Další odvozené schopnosti: [Prověrka M&A](@/skills/m-and-a-screening.cs.md) a [Auditní stopa](@/skills/audit-trail.cs.md).
 
-Rozsah (změřeno, každé číslo zaokrouhleno dolů na stupeň): 2+ mých commitů v 1 repozitářích, tým 1+ lidí a 250+ souborů.
+Rozsah (změřeno, každé číslo zaokrouhleno dolů na stupeň): 2+ mých commitů v 1 repozitáři, tým 1+ lidí a 250+ souborů.
 
 Technologie zjištěné ve zdrojích (typy souborů, manifesty závislostí, značkové cesty): [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md) a [Python](@/glossary/python.cs.md).
 

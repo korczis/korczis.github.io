@@ -24,9 +24,12 @@
           <span class="font-semibold text-gray-900 group-hover:text-primary-700 dark:text-white dark:group-hover:text-primary-300">{{ p.title }}</span>
           <span class="mt-1 text-sm text-gray-600 line-clamp-3 dark:text-gray-400">{{ p.description }}</span>
           <span class="tabular mt-auto flex flex-wrap gap-3 pt-3 text-xs text-gray-600 dark:text-gray-400">
-            <span>{{ trans(key="skill_services", lang=lang) }}: <b class="text-gray-900 dark:text-white">{{ se.services | length }}</b></span>
-            <span>{{ trans(key="service_public", lang=lang) }}: <b class="text-gray-900 dark:text-white">{{ se.repos | length }}</b></span>
-            <span>{{ trans(key="service_tech", lang=lang) }}: <b class="text-gray-900 dark:text-white">{{ se.technologies | length }}</b></span>
+            {%- if se.services | length > 0 %}
+            <span>{{ trans(key="skill_services", lang=lang) }}: <b class="text-gray-900 dark:text-white">{{ se.services | length }}</b></span>{% endif %}
+            {%- if se.repos | length > 0 %}
+            <span>{{ trans(key="service_public", lang=lang) }}: <b class="text-gray-900 dark:text-white">{{ se.repos | length }}</b></span>{% endif %}
+            {%- if se.technologies | length > 0 %}
+            <span>{{ trans(key="service_tech", lang=lang) }}: <b class="text-gray-900 dark:text-white">{{ se.technologies | length }}</b></span>{% endif %}
           </span>
         </a>
       </li>
