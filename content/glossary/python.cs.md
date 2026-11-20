@@ -44,7 +44,7 @@ Python jsem psal v 19 veřejných repozitářích, od roku 2014 do 2026; v 7 z n
 
 K čemu to sloužilo: [Systémy a infrastruktura](@/projects/systems.cs.md) (5), [Média a umění](@/projects/media.cs.md) (4), [Nástroje](@/projects/tools.cs.md) (4) a [Data a GIS](@/projects/data.cs.md) (3).
 
-Naposledy: [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat; [Majordomus reel](@/work/majordomus-reel.cs.md): Hlas, snímky, hudba i zvuk, vše generované a verzované jako software; [openttd-prismatic-bridge](@/work/openttd-prismatic-bridge.cs.md).
+Naposledy: [Sonic Playground](@/work/sonic-playground.cs.md): Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita; [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat; [Majordomus reel](@/work/majordomus-reel.cs.md): Hlas, snímky, hudba i zvuk, vše generované a verzované jako software.
 
 8 z těchto projektů běží jako živé weby.
 

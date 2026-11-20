@@ -44,7 +44,7 @@ Shell jsem psal v 42 veřejných repozitářích, od roku 2013 do 2026; v 13 z n
 
 K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (11), [Systémy a infrastruktura](@/projects/systems.cs.md) (10), [Data a GIS](@/projects/data.cs.md) (5) a [Média a umění](@/projects/media.cs.md) (5).
 
-Naposledy: [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat; [Majordomus reel](@/work/majordomus-reel.cs.md): Hlas, snímky, hudba i zvuk, vše generované a verzované jako software; [openttd-prismatic-bridge](@/work/openttd-prismatic-bridge.cs.md).
+Naposledy: [Sonic Playground](@/work/sonic-playground.cs.md): Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita; [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat; [Majordomus reel](@/work/majordomus-reel.cs.md): Hlas, snímky, hudba i zvuk, vše generované a verzované jako software.
 
 9 z těchto projektů běží jako živé weby.
 

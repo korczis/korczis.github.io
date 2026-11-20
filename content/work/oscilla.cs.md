@@ -3,7 +3,7 @@
 title = "Oscilla"
 description = "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu."
 template = "work.html"
-weight = 2
+weight = 3
 updated = "2026-11-19T17:46:32Z"
 
 [taxonomies]

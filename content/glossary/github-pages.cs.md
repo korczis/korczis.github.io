@@ -44,7 +44,7 @@ GitHub Pages je součástí 15 mých veřejných repozitářů, od roku 2019 do 
 
 K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (5), [Média a umění](@/projects/media.cs.md) (3), [Věda a vizualizace](@/projects/science.cs.md) (2) a [Web](@/projects/web.cs.md) (2).
 
-Naposledy: [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat; [korczis.github.io](@/work/korczis-github-io.cs.md); [Oscilla](@/work/oscilla.cs.md): Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.
+Naposledy: [korczis.github.io](@/work/korczis-github-io.cs.md); [Oscilla](@/work/oscilla.cs.md): Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu; [Sonic Playground](@/work/sonic-playground.cs.md): Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.
 
 13 z těchto projektů běží jako živé weby.
 

@@ -44,7 +44,7 @@ Flowbite Pro je součástí 11 mých veřejných repozitářů, od roku 2024 do 
 
 K čemu to sloužilo: [Média a umění](@/projects/media.cs.md) (4), [Věda a vizualizace](@/projects/science.cs.md) (2), [Nástroje](@/projects/tools.cs.md) (2) a [Data a GIS](@/projects/data.cs.md) (1).
 
-Naposledy: [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat; [korczis.github.io](@/work/korczis-github-io.cs.md); [Majordomus reel](@/work/majordomus-reel.cs.md): Hlas, snímky, hudba i zvuk, vše generované a verzované jako software.
+Naposledy: [korczis.github.io](@/work/korczis-github-io.cs.md); [Oscilla](@/work/oscilla.cs.md): Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu; [Sonic Playground](@/work/sonic-playground.cs.md): Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.
 
 9 z těchto projektů běží jako živé weby.
 

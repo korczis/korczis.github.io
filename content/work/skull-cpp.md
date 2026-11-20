@@ -34,6 +34,6 @@ The [repository](@/glossary/repository.md) was created on 22 July 2014; its late
 
 Its source is on [GitHub](https://github.com/korczis/skull-cpp) and [GitLab](https://gitlab.com/korczis/skull-cpp).
 
-Related work in [Learning and experiments](@/projects/learning.md): [happ](@/work/happ.md) (2021), [skull-emscripten](@/work/skull-emscripten.md) (2014), [grache-test](@/work/grache-test.md) (2015) and [node-proxy-upload](@/work/node-proxy-upload.md) (2016).
+Related work in [Learning and experiments](@/projects/learning.md): [happ](@/work/happ.md) (2021), [skull-emscripten](@/work/skull-emscripten.md) (2014), [skull-nodejs](@/work/skull-nodejs.md) (2014) and [grache-test](@/work/grache-test.md) (2015).
 
 *How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 30 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

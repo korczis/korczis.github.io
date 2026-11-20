@@ -44,7 +44,7 @@ I have written Elixir in 41 public repositories, from 2016 to 2026; in 26 of the
 
 What it was for: [Tools](@/projects/tools.md) (15), [Data and GIS](@/projects/data.md) (6), [Learning and experiments](@/projects/learning.md) (4) and [Web](@/projects/web.md) (4).
 
-Most recently: [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore; [Sonic Playground](@/work/sonic-playground.md): A hand-picked music blog built with Phoenix and Elixir on the Kita theme; [Crisis map](@/work/crisis-map.md): Reports geocoded through a local Nominatim, stored as PostGIS geography and served from one capability registry: LiveView, REST, OpenAPI, MCP and CLI.
+Most recently: [Sonic Playground](@/work/sonic-playground.md): A hand-picked music blog built with Phoenix and Elixir on the Kita theme; [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore; [Crisis map](@/work/crisis-map.md): Reports geocoded through a local Nominatim, stored as PostGIS geography and served from one capability registry: LiveView, REST, OpenAPI, MCP and CLI.
 
 3 of these projects run as live sites.
 

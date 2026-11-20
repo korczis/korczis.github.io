@@ -17,7 +17,7 @@ definition = "Jazyk a běhové prostředí z telekomunikací, navržené pro sys
 aliases = ["OTP", "ETS", "Erlang/OTP"]
 reference = { title = "erlang.org", url = "https://www.erlang.org/" }
 pages = ["projects/learning.cs.md", "work/distance-calculator.cs.md", "work/edna.cs.md", "work/el-magico-cache.cs.md", "work/hydra.cs.md", "work/job-processor.cs.md", "work/microcrawler-elixir.cs.md", "work/rustler-mix.cs.md", "work/simple-geocoder.cs.md", "work/skull-erlang.cs.md"]
-related = ["repository", "commit", "elixir", "open-source", "shell", "dockerfile", "gitlab-ci", "makefile"]
+related = ["repository", "commit", "elixir", "open-source", "shell", "makefile", "dockerfile", "gitlab-ci"]
 og_title = "Erlang: slovník"
 og_image = "og/cs-glossary-erlang.png"
 keywords = ["Erlang", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

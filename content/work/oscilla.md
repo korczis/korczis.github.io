@@ -3,7 +3,7 @@
 title = "Oscilla"
 description = "A zero-install acoustic laboratory in the browser."
 template = "work.html"
-weight = 2
+weight = 3
 updated = "2026-11-19T17:46:32Z"
 
 [taxonomies]

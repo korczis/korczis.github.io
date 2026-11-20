@@ -44,7 +44,7 @@ HTML jsem psal v 38 veřejných repozitářích, od roku 2014 do 2026; v 5 z nic
 
 K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (9), [Data a GIS](@/projects/data.cs.md) (8), [Web](@/projects/web.cs.md) (8) a [Média a umění](@/projects/media.cs.md) (5).
 
-Naposledy: [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat; [korczis.github.io](@/work/korczis-github-io.cs.md); [Majordomus reel](@/work/majordomus-reel.cs.md): Hlas, snímky, hudba i zvuk, vše generované a verzované jako software.
+Naposledy: [korczis.github.io](@/work/korczis-github-io.cs.md); [Oscilla](@/work/oscilla.cs.md): Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu; [Sonic Playground](@/work/sonic-playground.cs.md): Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.
 
 16 z těchto projektů běží jako živé weby.
 

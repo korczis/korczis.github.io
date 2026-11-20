@@ -120,8 +120,8 @@
    "name": "JavaScript",
    "url": "https://korczis.github.io/cs/glossary/javascript/",
    "keywords": [
-    "oscilla",
     "korczis.github.io",
+    "oscilla",
     "majordomus-reel"
    ]
   },
@@ -281,6 +281,13 @@
    "url": "https://korczis.github.io/cs/glossary/just/",
    "keywords": [
     "comtesse"
+   ]
+  },
+  {
+   "name": "Makefile",
+   "url": "https://korczis.github.io/cs/glossary/makefile/",
+   "keywords": [
+    "skull-nodejs"
    ]
   },
   {
@@ -532,6 +539,6 @@
  "meta": {
   "canonical": "https://korczis.github.io/cs/resume.json",
   "version": "v1.0.0",
-  "lastModified": "2026-11-19T20:51:02Z"
+  "lastModified": "2026-11-20T02:32:07Z"
  }
 }

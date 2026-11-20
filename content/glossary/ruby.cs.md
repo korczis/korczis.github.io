@@ -40,7 +40,7 @@ span = 3
 height = "md"
 tone = "night"
 +++
-Ruby jsem psal v 27 veřejných repozitářích, od roku 2012 do 2019; v 19 z nich je hlavním jazykem.
+Ruby jsem psal v 27 veřejných repozitářích, od roku 2012 do 2019; v 20 z nich je hlavním jazykem.
 
 K čemu to sloužilo: [Data a GIS](@/projects/data.cs.md) (9), [Nástroje](@/projects/tools.cs.md) (8), [Učení a experimenty](@/projects/learning.cs.md) (4) a [Systémy a infrastruktura](@/projects/systems.cs.md) (3).
 

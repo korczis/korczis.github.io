@@ -70,13 +70,13 @@
           "name": "sonic-playground",
           "title": "Sonic Playground",
           "how": "words",
-          "score": 2.8,
+          "score": 2.6,
           "slug": "sonic-playground",
           "url": "https://github.com/korczis/sonic-playground",
           "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
           "category": "media",
           "site": "https://korczis.github.io/sonic-playground/",
-          "pushed": "2026-11-19",
+          "pushed": "2026-11-20",
           "skill": "ownership-analysis"
         },
         {
@@ -302,13 +302,13 @@
           "name": "sonic-playground",
           "title": "Sonic Playground",
           "how": "words",
-          "score": 2.8,
+          "score": 2.6,
           "slug": "sonic-playground",
           "url": "https://github.com/korczis/sonic-playground",
           "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
           "category": "media",
           "site": "https://korczis.github.io/sonic-playground/",
-          "pushed": "2026-11-19",
+          "pushed": "2026-11-20",
           "skill": "ownership-analysis"
         },
         {
@@ -665,13 +665,13 @@
           "name": "sonic-playground",
           "title": "Sonic Playground",
           "how": "words",
-          "score": 2.8,
+          "score": 2.6,
           "slug": "sonic-playground",
           "url": "https://github.com/korczis/sonic-playground",
           "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
           "category": "media",
           "site": "https://korczis.github.io/sonic-playground/",
-          "pushed": "2026-11-19",
+          "pushed": "2026-11-20",
           "skill": "ownership-analysis"
         },
         {
@@ -1009,7 +1009,7 @@
           "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
           "category": "science",
           "site": "https://korczis.github.io/oscilla/",
-          "pushed": "2026-11-19",
+          "pushed": "2026-11-20",
           "skill": "audit-trail"
         },
         {
@@ -1491,13 +1491,13 @@
           "name": "sonic-playground",
           "title": "Sonic Playground",
           "how": "words",
-          "score": 2.8,
+          "score": 2.6,
           "slug": "sonic-playground",
           "url": "https://github.com/korczis/sonic-playground",
           "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
           "category": "media",
           "site": "https://korczis.github.io/sonic-playground/",
-          "pushed": "2026-11-19",
+          "pushed": "2026-11-20",
           "skill": "ownership-analysis"
         },
         {
@@ -1510,7 +1510,7 @@
           "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
           "category": "science",
           "site": "https://korczis.github.io/oscilla/",
-          "pushed": "2026-11-19",
+          "pushed": "2026-11-20",
           "skill": "compliance-mapping"
         }
       ],
@@ -2007,7 +2007,7 @@
           "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
           "category": "science",
           "site": "https://korczis.github.io/oscilla/",
-          "pushed": "2026-11-19",
+          "pushed": "2026-11-20",
           "skill": "compliance-mapping"
         },
         {
@@ -2208,13 +2208,13 @@
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "how": "words",
-          "score": 4.5,
+          "score": 4.2,
           "slug": "korczis-github-io",
           "url": "https://github.com/korczis/korczis.github.io",
           "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
           "category": "web",
           "site": null,
-          "pushed": "2026-11-19",
+          "pushed": "2026-11-20",
           "skill": "llm-agents"
         },
         {
@@ -2270,6 +2270,19 @@
           "skill": "llm-agents"
         },
         {
+          "name": "oscilla",
+          "title": "Oscilla",
+          "how": "words",
+          "score": 2.6,
+          "slug": "oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "category": "science",
+          "site": "https://korczis.github.io/oscilla/",
+          "pushed": "2026-11-20",
+          "skill": "audit-trail"
+        },
+        {
           "name": "openttd-prismatic-bridge",
           "title": "openttd-prismatic-bridge",
           "how": "words",
@@ -2281,19 +2294,6 @@
           "site": null,
           "pushed": "2026-11-19",
           "skill": "decision-support"
-        },
-        {
-          "name": "oscilla",
-          "title": "Oscilla",
-          "how": "words",
-          "score": 2.6,
-          "slug": "oscilla",
-          "url": "https://github.com/korczis/oscilla",
-          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-          "category": "science",
-          "site": "https://korczis.github.io/oscilla/",
-          "pushed": "2026-11-19",
-          "skill": "audit-trail"
         },
         {
           "name": "catharsis-as-a-service",
@@ -2561,14 +2561,14 @@
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "how": "words",
-          "score": 4.5,
+          "score": 4.3,
           "slug": "korczis-github-io",
           "url": "https://github.com/korczis/korczis.github.io",
           "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
           "category": "web",
           "site": null,
-          "pushed": "2026-11-19",
-          "skill": "llm-agents"
+          "pushed": "2026-11-20",
+          "skill": "policy-as-code"
         },
         {
           "name": "sig",
@@ -2645,7 +2645,7 @@
           "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
           "category": "science",
           "site": "https://korczis.github.io/oscilla/",
-          "pushed": "2026-11-19",
+          "pushed": "2026-11-20",
           "skill": "audit-trail"
         },
         {
@@ -3013,7 +3013,7 @@
           "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
           "category": "media",
           "site": "https://korczis.github.io/sonic-playground/",
-          "pushed": "2026-11-19",
+          "pushed": "2026-11-20",
           "skill": "interactive-visualisation"
         },
         {
@@ -4883,7 +4883,7 @@
           "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
           "category": "science",
           "site": "https://korczis.github.io/oscilla/",
-          "pushed": "2026-11-19"
+          "pushed": "2026-11-20"
         },
         {
           "name": "catharsis-as-a-service",
@@ -5159,13 +5159,13 @@
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "how": "words",
-          "score": 4.5,
+          "score": 4.2,
           "slug": "korczis-github-io",
           "url": "https://github.com/korczis/korczis.github.io",
           "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
           "category": "web",
           "site": null,
-          "pushed": "2026-11-19"
+          "pushed": "2026-11-20"
         },
         {
           "name": "sig",
@@ -5678,13 +5678,13 @@
           "name": "sonic-playground",
           "title": "Sonic Playground",
           "how": "words",
-          "score": 2.8,
+          "score": 2.6,
           "slug": "sonic-playground",
           "url": "https://github.com/korczis/sonic-playground",
           "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
           "category": "media",
           "site": "https://korczis.github.io/sonic-playground/",
-          "pushed": "2026-11-19"
+          "pushed": "2026-11-20"
         }
       ],
       "engagements": [],
@@ -6448,7 +6448,7 @@
           "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
           "category": "science",
           "site": "https://korczis.github.io/oscilla/",
-          "pushed": "2026-11-19"
+          "pushed": "2026-11-20"
         }
       ],
       "engagements": [],
@@ -6556,7 +6556,7 @@
           "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
           "category": "web",
           "site": null,
-          "pushed": "2026-11-19"
+          "pushed": "2026-11-20"
         },
         {
           "name": "kompendium-epistemicke-anihilace",
@@ -6744,7 +6744,7 @@
           "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
           "category": "media",
           "site": "https://korczis.github.io/sonic-playground/",
-          "pushed": "2026-11-19"
+          "pushed": "2026-11-20"
         },
         {
           "name": "gooddata-graphql",

@@ -44,7 +44,7 @@ Elixir jsem psal v 41 veřejných repozitářích, od roku 2016 do 2026; v 26 z 
 
 K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (15), [Data a GIS](@/projects/data.cs.md) (6), [Učení a experimenty](@/projects/learning.cs.md) (4) a [Web](@/projects/web.cs.md) (4).
 
-Naposledy: [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat; [Sonic Playground](@/work/sonic-playground.cs.md): Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita; [Crisis map](@/work/crisis-map.cs.md): Hlášení geokódovaná přes lokální Nominatim, uložená jako PostGIS geografie a servírovaná z jednoho registru schopností: LiveView, REST, OpenAPI, MCP a CLI.
+Naposledy: [Sonic Playground](@/work/sonic-playground.cs.md): Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita; [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat; [Crisis map](@/work/crisis-map.cs.md): Hlášení geokódovaná přes lokální Nominatim, uložená jako PostGIS geografie a servírovaná z jednoho registru schopností: LiveView, REST, OpenAPI, MCP a CLI.
 
 3 z těchto projektů běží jako živé weby.
 

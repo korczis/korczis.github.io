@@ -1,6 +1,6 @@
 {
  "schema": "korczis-hub-recent/v2",
- "generated_at": "2026-11-19T20:51:03Z",
+ "generated_at": "2026-11-20T02:32:07Z",
  "window_days": 1461,
  "periods": [
   {
@@ -18,7 +18,7 @@
  ],
  "archive": 162,
  "rule": "every original repository of data/index.json; a repository is recent when its default branch has a commit in the window, archive otherwise; host activity dates are ignored",
- "asked": 4,
+ "asked": 3,
  "repos": [
   {
    "name": "sonic-playground",
@@ -27,10 +27,30 @@
    "category": "media",
    "language": "Python",
    "created_at": "2026-11-12T00:48:36Z",
-   "pushed_at": "2026-11-19T19:16:08Z",
-   "last_commit": "2026-11-19T19:02:55Z",
-   "last_message": "Merge branch 'fix/ci-smoke-watchdog': the smoke test's watchdog fits the sweep of every page",
+   "pushed_at": "2026-11-20T01:46:17Z",
+   "last_commit": "2026-11-20T02:01:55Z",
+   "last_message": "Merge branch 'feature/wave-15': 37 more Spotify picks in English and Czech",
    "commits": [
+    {
+     "at": "2026-11-20T02:01:55Z",
+     "message": "Merge branch 'feature/wave-15': 37 more Spotify picks in English and Czech",
+     "url": "https://github.com/korczis/sonic-playground/commit/2274726a5d2a8caa6ceae333d27cfa1ce7ce8a70"
+    },
+    {
+     "at": "2026-11-20T01:23:58Z",
+     "message": "Merge branch 'fix/ci-smoke-shards': the sitemap sweep runs in four parallel shards",
+     "url": "https://github.com/korczis/sonic-playground/commit/456c4afe954616d5b455888d9bfeb9e2214ef456"
+    },
+    {
+     "at": "2026-11-20T01:13:15Z",
+     "message": "feat(content): wave 15, 37 more of the owner's Spotify picks, each in English and Czech",
+     "url": "https://github.com/korczis/sonic-playground/commit/4467bb00e4879d05fd351b035035984af15111b5"
+    },
+    {
+     "at": "2026-11-20T00:45:30Z",
+     "message": "fix(ci): the sitemap sweep runs in four parallel shards",
+     "url": "https://github.com/korczis/sonic-playground/commit/fc463016deac2fbf3d4feff43d216710665faaf3"
+    },
     {
      "at": "2026-11-19T19:02:55Z",
      "message": "Merge branch 'fix/ci-smoke-watchdog': the smoke test's watchdog fits the sweep of every page",
@@ -160,26 +180,6 @@
      "at": "2026-11-15T18:47:12Z",
      "message": "feat(visualizer): Winamp-style visualiser, full screen and in the hero, and a turning mosaic",
      "url": "https://github.com/korczis/sonic-playground/commit/308258e4c32d4541e0b1ec0f6d68654672e12f58"
-    },
-    {
-     "at": "2026-11-15T18:34:22Z",
-     "message": "build(attributes): the derive's outputs are declared merge=derived",
-     "url": "https://github.com/korczis/sonic-playground/commit/11032e7106b27fe883dcd045af270a397fd81896"
-    },
-    {
-     "at": "2026-11-15T18:24:52Z",
-     "message": "Merge branch 'fix/hanging-tree-notes': the sound-alike notes record the owner's choice of a page",
-     "url": "https://github.com/korczis/sonic-playground/commit/53845cdaec7a3f645f8d82417c405f8f1ca8ca85"
-    },
-    {
-     "at": "2026-11-15T18:11:15Z",
-     "message": "Merge branch 'fix/player-video-layout': the video stays uncovered in every language, repeat state, width and height",
-     "url": "https://github.com/korczis/sonic-playground/commit/dc3b5e849b606ac43968e3f2df6d54ed9787aae3"
-    },
-    {
-     "at": "2026-11-15T18:04:16Z",
-     "message": "fix(data): the Hanging Tree sound-alike notes record the owner's choice of a page",
-     "url": "https://github.com/korczis/sonic-playground/commit/2c3b20dd585d26002a1df9eb9bd4751c9cc91ef8"
     }
    ],
    "languages": [
@@ -217,13 +217,220 @@
    "supervised": true
   },
   {
+   "name": "korczis.github.io",
+   "period": 12,
+   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+   "category": "web",
+   "language": "JavaScript",
+   "created_at": "2024-12-24T16:48:15Z",
+   "pushed_at": "2026-11-20T02:15:52Z",
+   "last_commit": "2026-11-20T01:21:57Z",
+   "last_message": "chore(merge): integrate #44, technologies in two repositories get their page too",
+   "commits": [
+    {
+     "at": "2026-11-20T01:21:57Z",
+     "message": "chore(merge): integrate #44, technologies in two repositories get their page too",
+     "url": "https://github.com/korczis/korczis.github.io/commit/24e7d40a53dd9519b856b1eb783b006c3604c78d"
+    },
+    {
+     "at": "2026-11-20T00:57:23Z",
+     "message": "feat(glossary): technologies in two repositories get their page too",
+     "url": "https://github.com/korczis/korczis.github.io/commit/354eaf0434f9c029dce463ecabefab150dec4ce5"
+    },
+    {
+     "at": "2026-11-19T20:51:38Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/5603ebe2b81e0f632cdd5234eb1227e3f3440425"
+    },
+    {
+     "at": "2026-11-19T13:15:49Z",
+     "message": "chore(merge): integrate #43, technologies in three repositories get their page too",
+     "url": "https://github.com/korczis/korczis.github.io/commit/36271ce2fb11ce8aced6b6813182f402f0cfbf28"
+    },
+    {
+     "at": "2026-11-19T12:51:54Z",
+     "message": "feat(glossary): technologies in three repositories get their page too",
+     "url": "https://github.com/korczis/korczis.github.io/commit/0c07db8532426b07c27647fe36e0339135b54322"
+    },
+    {
+     "at": "2026-11-19T12:46:15Z",
+     "message": "chore(merge): integrate #42, technologies inferred from every repository, each with its page",
+     "url": "https://github.com/korczis/korczis.github.io/commit/870127947a667e7a08bc1c3c08af50e37f76314a"
+    },
+    {
+     "at": "2026-11-19T12:22:36Z",
+     "message": "chore(merge): bring the data refresh into the stack branch",
+     "url": "https://github.com/korczis/korczis.github.io/commit/7b7573b395c5a5add719967b0f60ce67bb86ee75"
+    },
+    {
+     "at": "2026-11-19T12:01:31Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/6689c0457e546a260f2b966c175f45d9cec2e432"
+    },
+    {
+     "at": "2026-11-19T11:55:13Z",
+     "message": "feat(skills): technologies inferred from every repository's files, each with its page",
+     "url": "https://github.com/korczis/korczis.github.io/commit/4c2e11a39a0114057bddf7bfb6dbc35de24cf4cd"
+    },
+    {
+     "at": "2026-11-19T11:37:42Z",
+     "message": "chore(merge): integrate #41, counts agree with their word, numerals gate",
+     "url": "https://github.com/korczis/korczis.github.io/commit/d7ab13ade688a165a88cb003d99b9691567694a3"
+    },
+    {
+     "at": "2026-11-19T11:14:44Z",
+     "message": "chore(interfaces): measure ai.json with rule project.numerals-agree",
+     "url": "https://github.com/korczis/korczis.github.io/commit/ba57088e14a7b068de00e7bee0d020d86e101e7e"
+    },
+    {
+     "at": "2026-11-19T11:11:45Z",
+     "message": "fix(about): genitive month after \"od\"; skills hide zero counts",
+     "url": "https://github.com/korczis/korczis.github.io/commit/3c3a83f45cc1a6895e1ec8ba09ea80a6411b807b"
+    },
+    {
+     "at": "2026-11-19T11:07:49Z",
+     "message": "feat(gates): numerals gate refuses a count that disagrees with its word",
+     "url": "https://github.com/korczis/korczis.github.io/commit/cd94bf50095473d2bc5e1066020730ff9e6906ae"
+    },
+    {
+     "at": "2026-11-19T11:06:35Z",
+     "message": "fix(i18n): counts agree with their word in en and cs at every number",
+     "url": "https://github.com/korczis/korczis.github.io/commit/1443d459738d0a9ae805afd5aed7f7fb617f2369"
+    },
+    {
+     "at": "2026-11-19T02:47:28Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/21601606e18fd2caf7c27f09eb81cb178cfa0ecd"
+    },
+    {
+     "at": "2026-11-19T01:13:58Z",
+     "message": "chore(merge): integrate #40, grandfathered commits unblock refresh-dispatched deploys",
+     "url": "https://github.com/korczis/korczis.github.io/commit/88721f691438d704a197f196d9a78b9165ba91b3"
+    },
+    {
+     "at": "2026-11-19T00:50:51Z",
+     "message": "fix(ci): grandfathered commits keep refresh-dispatched deploys from failing the commit lint",
+     "url": "https://github.com/korczis/korczis.github.io/commit/ccf86f27b3cabad36b84b774012d5b355805af05"
+    },
+    {
+     "at": "2026-11-18T20:52:23Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/8a0e99e7d091cf03eb74a35726e382d8159c58cb"
+    },
+    {
+     "at": "2026-11-18T12:05:28Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/d2b0daf6c6d65e380a819f404b4627cb597af9af"
+    },
+    {
+     "at": "2026-11-18T10:36:42Z",
+     "message": "chore(merge): integrate #39, the case services card names the skill overlap",
+     "url": "https://github.com/korczis/korczis.github.io/commit/8a93b252470eb1ffcd4c1f40ed39ceb322d466ef"
+    },
+    {
+     "at": "2026-11-18T10:13:42Z",
+     "message": "fix(cases): the services card names the skill overlap, not a delivery",
+     "url": "https://github.com/korczis/korczis.github.io/commit/dfe28569d6e302a63a3565bd4a98e0ad428f0e5e"
+    },
+    {
+     "at": "2026-11-18T09:39:31Z",
+     "message": "chore(merge): integrate #38, services and case studies sections in llms.txt",
+     "url": "https://github.com/korczis/korczis.github.io/commit/4105c47568182eac71a914d417af087b7850e0fe"
+    },
+    {
+     "at": "2026-11-18T09:13:15Z",
+     "message": "chore(merge): bring master (#37) into llms-services",
+     "url": "https://github.com/korczis/korczis.github.io/commit/8b1bf9f56a31380959069c46e44533a09f9253a9"
+    },
+    {
+     "at": "2026-11-18T09:11:33Z",
+     "message": "chore(merge): integrate #37, a derived, anonymised case study per client engagement",
+     "url": "https://github.com/korczis/korczis.github.io/commit/d05a43c8fea852c69fc186334ea278b6eca34eb2"
+    },
+    {
+     "at": "2026-11-18T09:01:24Z",
+     "message": "feat(llms): services and case studies sections in llms.txt",
+     "url": "https://github.com/korczis/korczis.github.io/commit/a9ecc7412fe6df78e24a760449e841b6309216b4"
+    },
+    {
+     "at": "2026-11-18T08:57:48Z",
+     "message": "chore(merge): integrate #32, live READMEs, services, skills and evidence for every language and technology",
+     "url": "https://github.com/korczis/korczis.github.io/commit/0063c12fb42050d680a423517d83b1a6b1ddcf93"
+    },
+    {
+     "at": "2026-11-18T08:36:22Z",
+     "message": "chore(merge): bring readme-embed into case-studies; short month names from translations",
+     "url": "https://github.com/korczis/korczis.github.io/commit/df09b16b80f145f04d8f60f57097ba55e944c332"
+    },
+    {
+     "at": "2026-11-18T08:33:25Z",
+     "message": "fix(glossary): a technology chip leads to the evidence anchor only when the term page has one",
+     "url": "https://github.com/korczis/korczis.github.io/commit/f2f2813a4caa70891dc532319dd3627efcccc58c"
+    },
+    {
+     "at": "2026-11-18T08:13:57Z",
+     "message": "feat(landing): offers lead to their services, /about/ shows what I did for clients",
+     "url": "https://github.com/korczis/korczis.github.io/commit/2ef102682c62a2d48f8d102298dde3ad083a5256"
+    },
+    {
+     "at": "2026-11-18T08:09:27Z",
+     "message": "chore(merge): bring master (#36) into readme-embed; chips named by their visible text",
+     "url": "https://github.com/korczis/korczis.github.io/commit/55b7bfbce45f43a972f410e97809d682db2ca249"
+    }
+   ],
+   "languages": [
+    {
+     "name": "JavaScript",
+     "share": 61.9
+    },
+    {
+     "name": "HTML",
+     "share": 36.1
+    },
+    {
+     "name": "CSS",
+     "share": 1.1
+    },
+    {
+     "name": "Shell",
+     "share": 0.8
+    }
+   ],
+   "readme": "The personal hub of Tomas Korcak (korczis). It covers who I am, the projects I build with their live sites, the stack behind them, and Majordomus, which supervises the work.",
+   "readme_shared": false,
+   "description_shared": false,
+   "topics": [
+    "accessibility",
+    "ai-agents",
+    "alpinejs",
+    "chartjs",
+    "cytoscape",
+    "echarts",
+    "flowbite",
+    "github-pages",
+    "majordomus",
+    "p5js",
+    "personal-website",
+    "portfolio",
+    "tailwindcss",
+    "zola"
+   ],
+   "hosts": {
+    "github": "https://github.com/korczis/korczis.github.io"
+   },
+   "site": null,
+   "curated": false,
+   "stars": 0,
+   "supervised": true
+  },
+  {
    "name": "oscilla",
    "period": 12,
    "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
    "category": "science",
    "language": "JavaScript",
    "created_at": "2026-10-01T21:05:33Z",
-   "pushed_at": "2026-11-19T17:46:35Z",
+   "pushed_at": "2026-11-20T02:09:48Z",
    "last_commit": "2026-11-19T17:46:32Z",
    "last_message": "chore(release): záznam v3.41.9; U118, U119, U120 a Q113 hotovo (#628)",
    "commits": [
@@ -420,213 +627,6 @@
    "site": "https://korczis.github.io/oscilla/",
    "curated": true,
    "stars": 1,
-   "supervised": true
-  },
-  {
-   "name": "korczis.github.io",
-   "period": 12,
-   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-   "category": "web",
-   "language": "JavaScript",
-   "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-19T15:03:31Z",
-   "last_commit": "2026-11-19T13:15:49Z",
-   "last_message": "chore(merge): integrate #43, technologies in three repositories get their page too",
-   "commits": [
-    {
-     "at": "2026-11-19T13:15:49Z",
-     "message": "chore(merge): integrate #43, technologies in three repositories get their page too",
-     "url": "https://github.com/korczis/korczis.github.io/commit/36271ce2fb11ce8aced6b6813182f402f0cfbf28"
-    },
-    {
-     "at": "2026-11-19T12:51:54Z",
-     "message": "feat(glossary): technologies in three repositories get their page too",
-     "url": "https://github.com/korczis/korczis.github.io/commit/0c07db8532426b07c27647fe36e0339135b54322"
-    },
-    {
-     "at": "2026-11-19T12:46:15Z",
-     "message": "chore(merge): integrate #42, technologies inferred from every repository, each with its page",
-     "url": "https://github.com/korczis/korczis.github.io/commit/870127947a667e7a08bc1c3c08af50e37f76314a"
-    },
-    {
-     "at": "2026-11-19T12:22:36Z",
-     "message": "chore(merge): bring the data refresh into the stack branch",
-     "url": "https://github.com/korczis/korczis.github.io/commit/7b7573b395c5a5add719967b0f60ce67bb86ee75"
-    },
-    {
-     "at": "2026-11-19T12:01:31Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/6689c0457e546a260f2b966c175f45d9cec2e432"
-    },
-    {
-     "at": "2026-11-19T11:55:13Z",
-     "message": "feat(skills): technologies inferred from every repository's files, each with its page",
-     "url": "https://github.com/korczis/korczis.github.io/commit/4c2e11a39a0114057bddf7bfb6dbc35de24cf4cd"
-    },
-    {
-     "at": "2026-11-19T11:37:42Z",
-     "message": "chore(merge): integrate #41, counts agree with their word, numerals gate",
-     "url": "https://github.com/korczis/korczis.github.io/commit/d7ab13ade688a165a88cb003d99b9691567694a3"
-    },
-    {
-     "at": "2026-11-19T11:14:44Z",
-     "message": "chore(interfaces): measure ai.json with rule project.numerals-agree",
-     "url": "https://github.com/korczis/korczis.github.io/commit/ba57088e14a7b068de00e7bee0d020d86e101e7e"
-    },
-    {
-     "at": "2026-11-19T11:11:45Z",
-     "message": "fix(about): genitive month after \"od\"; skills hide zero counts",
-     "url": "https://github.com/korczis/korczis.github.io/commit/3c3a83f45cc1a6895e1ec8ba09ea80a6411b807b"
-    },
-    {
-     "at": "2026-11-19T11:07:49Z",
-     "message": "feat(gates): numerals gate refuses a count that disagrees with its word",
-     "url": "https://github.com/korczis/korczis.github.io/commit/cd94bf50095473d2bc5e1066020730ff9e6906ae"
-    },
-    {
-     "at": "2026-11-19T11:06:35Z",
-     "message": "fix(i18n): counts agree with their word in en and cs at every number",
-     "url": "https://github.com/korczis/korczis.github.io/commit/1443d459738d0a9ae805afd5aed7f7fb617f2369"
-    },
-    {
-     "at": "2026-11-19T02:47:28Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/21601606e18fd2caf7c27f09eb81cb178cfa0ecd"
-    },
-    {
-     "at": "2026-11-19T01:13:58Z",
-     "message": "chore(merge): integrate #40, grandfathered commits unblock refresh-dispatched deploys",
-     "url": "https://github.com/korczis/korczis.github.io/commit/88721f691438d704a197f196d9a78b9165ba91b3"
-    },
-    {
-     "at": "2026-11-19T00:50:51Z",
-     "message": "fix(ci): grandfathered commits keep refresh-dispatched deploys from failing the commit lint",
-     "url": "https://github.com/korczis/korczis.github.io/commit/ccf86f27b3cabad36b84b774012d5b355805af05"
-    },
-    {
-     "at": "2026-11-18T20:52:23Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/8a0e99e7d091cf03eb74a35726e382d8159c58cb"
-    },
-    {
-     "at": "2026-11-18T12:05:28Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/d2b0daf6c6d65e380a819f404b4627cb597af9af"
-    },
-    {
-     "at": "2026-11-18T10:36:42Z",
-     "message": "chore(merge): integrate #39, the case services card names the skill overlap",
-     "url": "https://github.com/korczis/korczis.github.io/commit/8a93b252470eb1ffcd4c1f40ed39ceb322d466ef"
-    },
-    {
-     "at": "2026-11-18T10:13:42Z",
-     "message": "fix(cases): the services card names the skill overlap, not a delivery",
-     "url": "https://github.com/korczis/korczis.github.io/commit/dfe28569d6e302a63a3565bd4a98e0ad428f0e5e"
-    },
-    {
-     "at": "2026-11-18T09:39:31Z",
-     "message": "chore(merge): integrate #38, services and case studies sections in llms.txt",
-     "url": "https://github.com/korczis/korczis.github.io/commit/4105c47568182eac71a914d417af087b7850e0fe"
-    },
-    {
-     "at": "2026-11-18T09:13:15Z",
-     "message": "chore(merge): bring master (#37) into llms-services",
-     "url": "https://github.com/korczis/korczis.github.io/commit/8b1bf9f56a31380959069c46e44533a09f9253a9"
-    },
-    {
-     "at": "2026-11-18T09:11:33Z",
-     "message": "chore(merge): integrate #37, a derived, anonymised case study per client engagement",
-     "url": "https://github.com/korczis/korczis.github.io/commit/d05a43c8fea852c69fc186334ea278b6eca34eb2"
-    },
-    {
-     "at": "2026-11-18T09:01:24Z",
-     "message": "feat(llms): services and case studies sections in llms.txt",
-     "url": "https://github.com/korczis/korczis.github.io/commit/a9ecc7412fe6df78e24a760449e841b6309216b4"
-    },
-    {
-     "at": "2026-11-18T08:57:48Z",
-     "message": "chore(merge): integrate #32, live READMEs, services, skills and evidence for every language and technology",
-     "url": "https://github.com/korczis/korczis.github.io/commit/0063c12fb42050d680a423517d83b1a6b1ddcf93"
-    },
-    {
-     "at": "2026-11-18T08:36:22Z",
-     "message": "chore(merge): bring readme-embed into case-studies; short month names from translations",
-     "url": "https://github.com/korczis/korczis.github.io/commit/df09b16b80f145f04d8f60f57097ba55e944c332"
-    },
-    {
-     "at": "2026-11-18T08:33:25Z",
-     "message": "fix(glossary): a technology chip leads to the evidence anchor only when the term page has one",
-     "url": "https://github.com/korczis/korczis.github.io/commit/f2f2813a4caa70891dc532319dd3627efcccc58c"
-    },
-    {
-     "at": "2026-11-18T08:13:57Z",
-     "message": "feat(landing): offers lead to their services, /about/ shows what I did for clients",
-     "url": "https://github.com/korczis/korczis.github.io/commit/2ef102682c62a2d48f8d102298dde3ad083a5256"
-    },
-    {
-     "at": "2026-11-18T08:09:27Z",
-     "message": "chore(merge): bring master (#36) into readme-embed; chips named by their visible text",
-     "url": "https://github.com/korczis/korczis.github.io/commit/55b7bfbce45f43a972f410e97809d682db2ca249"
-    },
-    {
-     "at": "2026-11-18T08:06:24Z",
-     "message": "chore(merge): integrate #36, Czech dates and honest skill labels on /hire/, repositories and catalogue",
-     "url": "https://github.com/korczis/korczis.github.io/commit/36fd5375b904749641e596b9387cb8f0103f9450"
-    },
-    {
-     "at": "2026-11-18T07:45:01Z",
-     "message": "fix(i18n): Czech month names from translations, Czech number format on /about/",
-     "url": "https://github.com/korczis/korczis.github.io/commit/538e294f186ebebe0beab47edee9c6f7e1110a61"
-    },
-    {
-     "at": "2026-11-18T07:41:48Z",
-     "message": "feat(shell): the sidebar skillset lists every language and the client work's technologies",
-     "url": "https://github.com/korczis/korczis.github.io/commit/f7c59c1ed9ce86ae73c85bdc44ab57a2f19f2b8c"
-    }
-   ],
-   "languages": [
-    {
-     "name": "JavaScript",
-     "share": 61.9
-    },
-    {
-     "name": "HTML",
-     "share": 36.1
-    },
-    {
-     "name": "CSS",
-     "share": 1.1
-    },
-    {
-     "name": "Shell",
-     "share": 0.8
-    }
-   ],
-   "readme": "The personal hub of Tomas Korcak (korczis). It covers who I am, the projects I build with their live sites, the stack behind them, and Majordomus, which supervises the work.",
-   "readme_shared": false,
-   "description_shared": false,
-   "topics": [
-    "accessibility",
-    "ai-agents",
-    "alpinejs",
-    "chartjs",
-    "cytoscape",
-    "echarts",
-    "flowbite",
-    "github-pages",
-    "majordomus",
-    "p5js",
-    "personal-website",
-    "portfolio",
-    "tailwindcss",
-    "zola"
-   ],
-   "hosts": {
-    "github": "https://github.com/korczis/korczis.github.io"
-   },
-   "site": null,
-   "curated": false,
-   "stars": 0,
    "supervised": true
   },
   {
@@ -1066,7 +1066,7 @@
    "category": "media",
    "language": "Python",
    "created_at": "2026-07-23T22:00:54.776Z",
-   "pushed_at": "2026-11-19T00:49:32.567Z",
+   "pushed_at": "2026-11-19T19:32:27.585Z",
    "last_commit": "2026-11-19T01:49:27.000+01:00",
    "last_message": "Fix: the brand menu keeps an open submenu through its status refresh, and pages revalidate their scripts",
    "commits": [
@@ -18886,7 +18886,7 @@
    "period": null,
    "description": "Node.js Skull",
    "category": "learning",
-   "language": null,
+   "language": "Makefile",
    "created_at": "2014-07-22T04:14:32Z",
    "pushed_at": "2014-08-03T04:09:35Z",
    "last_commit": "2014-08-03T04:09:35Z",
@@ -20869,7 +20869,7 @@
    "period": null,
    "description": "Something just for fun. This is place where I play with new techs...",
    "category": "learning",
-   "language": null,
+   "language": "Ruby",
    "created_at": "2012-01-01T23:48:41Z",
    "pushed_at": "2012-01-02T01:11:36Z",
    "last_commit": "2012-01-02T01:13:21Z",

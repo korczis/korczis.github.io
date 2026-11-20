@@ -44,7 +44,7 @@ I have written Shell in 42 public repositories, from 2013 to 2026; in 13 of them
 
 What it was for: [Tools](@/projects/tools.md) (11), [Systems and infrastructure](@/projects/systems.md) (10), [Data and GIS](@/projects/data.md) (5) and [Media and art](@/projects/media.md) (5).
 
-Most recently: [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore; [Majordomus reel](@/work/majordomus-reel.md): Voice, frames, music and sound, all generated and versioned like software; [openttd-prismatic-bridge](@/work/openttd-prismatic-bridge.md): REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform.
+Most recently: [Sonic Playground](@/work/sonic-playground.md): A hand-picked music blog built with Phoenix and Elixir on the Kita theme; [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore; [Majordomus reel](@/work/majordomus-reel.md): Voice, frames, music and sound, all generated and versioned like software.
 
 9 of these projects run as live sites.
 

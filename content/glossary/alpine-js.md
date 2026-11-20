@@ -44,7 +44,7 @@ Alpine.js is part of 7 of my public repositories, from 2024 to 2026.
 
 What it was for: [Science and visualisation](@/projects/science.md) (2), [Tools](@/projects/tools.md) (2), [Knowledge](@/projects/knowledge.md) (1) and [Media and art](@/projects/media.md) (1).
 
-Most recently: [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore; [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus; [Oscilla](@/work/oscilla.md): Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.
+Most recently: [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus; [Oscilla](@/work/oscilla.md): Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty; [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore.
 
 6 of these projects run as live sites.
 

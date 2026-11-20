@@ -14,7 +14,7 @@ category = "learning"
 og_title = "Learning and experiments: 21 repositories."
 og_image = "og/category-learning.png"
 schema = "collection"
-terms = ["elixir", "csharp", "cpp", "javascript", "ruby", "shell", "c", "cmake", "erlang", "haskell", "java", "rust", "repository"]
+terms = ["elixir", "ruby", "csharp", "cpp", "javascript", "shell", "c", "cmake", "erlang", "haskell", "java", "makefile", "rust", "repository"]
 keywords = ["Learning and experiments", "happ", "rustler-test", "Test-Elixir", "skull-elixir", "skull-rust", "node-proxy-upload", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -28,6 +28,6 @@ tone = "night"
 +++
 Learning materials, katas and experiments across many languages: the sketches that came before the projects.
 
-The category holds 21 original repositories, written most often in [Elixir](@/glossary/elixir.md), [C#](@/glossary/csharp.md), [C++](@/glossary/cpp.md), [JavaScript](@/glossary/javascript.md) and [Ruby](@/glossary/ruby.md).
+The category holds 21 original repositories, written most often in [Elixir](@/glossary/elixir.md), [Ruby](@/glossary/ruby.md), [C#](@/glossary/csharp.md), [C++](@/glossary/cpp.md) and [JavaScript](@/glossary/javascript.md).
 
 *How categories are made:* nobody assigns them by hand. Every keyword of every category's rule is scored against a [repository](@/glossary/repository.md)'s name, topics and description, the name counting most, and the best score wins; when no keyword fits, its primary language decides. [Forks](@/glossary/fork.md) and [mirrors](@/glossary/mirror.md) never count as the owner's work.

@@ -3,8 +3,8 @@
 title = "korczis.github.io"
 description = "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus."
 template = "work.html"
-weight = 3
-updated = "2026-11-19T13:15:49Z"
+weight = 2
+updated = "2026-11-20T01:21:57Z"
 
 [taxonomies]
 tags = ["Web", "JavaScript", "HTML", "CSS"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **korczis.github.io** is a project in [Web](@/projects/web.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (61.9 %), with [HTML](@/glossary/html.md), [CSS](@/glossary/css.md) and [Shell](@/glossary/shell.md).
 
-The [repository](@/glossary/repository.md) was created on 24 December 2024; its latest [commit](@/glossary/commit.md) is from 19 November 2026. It reads “chore(merge): integrate \#43, technologies in three repositories get their page too”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created on 24 December 2024; its latest [commit](@/glossary/commit.md) is from 20 November 2026. It reads “chore(merge): integrate \#44, technologies in two repositories get their page too”. That places it among the projects active in the last 12 months.
 
 Its source is on [GitHub](https://github.com/korczis/korczis.github.io).
 

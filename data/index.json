@@ -1,24 +1,24 @@
 {
  "schema": "korczis-hub-index/v1",
- "generated_at": "2026-11-19T20:51:02Z",
+ "generated_at": "2026-11-20T02:32:07Z",
  "rule": "original = the owner wrote at least half of the listed commits; forks and mirrors are counted, not listed",
  "counts": {
   "github": 448,
-  "gitlab": 195,
-  "merged": 494,
+  "gitlab": 417,
+  "merged": 499,
   "own": 205,
   "forks": 250,
-  "mirrors": 31,
-  "empty": 2,
+  "mirrors": 35,
+  "empty": 3,
   "unmeasured": 0,
   "hidden": 6,
-  "mirrors_measured": 16,
+  "mirrors_measured": 20,
   "supervised": 8
  },
  "dropped": [],
  "supervision": {
   "marker": ".ai/manifest.yaml",
-  "measured_at": "2026-11-19T20:51:02Z",
+  "measured_at": "2026-11-20T02:32:07Z",
   "kept": 0
  },
  "all_repos": [
@@ -998,7 +998,7 @@
   {
    "name": "ev",
    "description": "Import of http://dist.schmorp.de/libev/",
-   "language": null,
+   "language": "Shell",
    "topics": [],
    "stars": 1,
    "created_at": "2012-06-17T18:42:31Z",
@@ -1664,9 +1664,9 @@
    ],
    "stars": 0,
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-19T15:03:31Z",
+   "pushed_at": "2026-11-20T02:15:52Z",
    "archived": false,
-   "share": 0.94,
+   "share": 0.93,
    "hosts": {
     "github": "https://github.com/korczis/korczis.github.io"
    },
@@ -1716,7 +1716,7 @@
   {
    "name": "libnet",
    "description": "Libnet is a high-level API (toolkit) allowing the application programmer to construct and inject network packets. It provides a portable and simplified interface for low-level network packet shaping, handling and injection. Libnet hides much of the tedium of packet creation from the application programmer such as multiplexing, buffer management, arcane packet header information, byte-ordering, OS-dependent issues, and much more. Libnet features portable packet creation interfaces at both the IP-layer and link-layer, as well as a host of supplementary and complementary functionality. Using libnet, quick and simple packet assembly applications can be whipped up with little effort. With a bit more time, more complex programs can be written (Traceroute and Ping were easily rewritten using libnet and libpcap).",
-   "language": null,
+   "language": "C",
    "topics": [],
    "stars": 15,
    "created_at": "2012-06-21T17:04:23Z",
@@ -1733,7 +1733,7 @@
   {
    "name": "libnids",
    "description": "Libnids is an implementation of an E-component of Network Intrusion Detection System. It emulates the IP stack of Linux 2.0.x. Libnids offers IP defragmentation, TCP stream assembly and TCP port scan detection.",
-   "language": null,
+   "language": "C",
    "topics": [],
    "stars": 53,
    "created_at": "2012-06-21T16:56:41Z",
@@ -2101,7 +2101,7 @@
   {
    "name": "mongo-cxx-driver",
    "description": null,
-   "language": null,
+   "language": "C++",
    "topics": [],
    "stars": 1,
    "created_at": "2012-06-20T13:30:52Z",
@@ -2189,7 +2189,7 @@
    ],
    "stars": 1,
    "created_at": "2026-10-01T21:05:33Z",
-   "pushed_at": "2026-11-19T17:46:35Z",
+   "pushed_at": "2026-11-20T02:09:48Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -2652,7 +2652,7 @@
   {
    "name": "sandbox",
    "description": "Something just for fun. This is place where I play with new techs...",
-   "language": null,
+   "language": "Ruby",
    "topics": [],
    "stars": 1,
    "created_at": "2012-01-01T23:48:41Z",
@@ -2918,7 +2918,7 @@
   {
    "name": "skull-nodejs",
    "description": "Node.js Skull",
-   "language": null,
+   "language": "Makefile",
    "topics": [],
    "stars": 0,
    "created_at": "2014-07-22T04:14:32Z",
@@ -3055,7 +3055,7 @@
    "topics": [],
    "stars": 0,
    "created_at": "2026-11-12T00:48:36Z",
-   "pushed_at": "2026-11-19T19:16:08Z",
+   "pushed_at": "2026-11-20T01:46:17Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -3171,7 +3171,7 @@
   {
    "name": "tinyxpath",
    "description": "TinyXpath - Just cloned from http://sourceforge.net/projects/tinyxpath/files/latest/download",
-   "language": null,
+   "language": "C++",
    "topics": [],
    "stars": 3,
    "created_at": "2012-06-11T00:05:43Z",
@@ -3519,7 +3519,7 @@
    "topics": [],
    "stars": 0,
    "created_at": "2026-07-23T22:00:54.776Z",
-   "pushed_at": "2026-11-19T00:49:32.567Z",
+   "pushed_at": "2026-11-19T19:32:27.585Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -4329,9 +4329,9 @@
   }
  ],
  "by_category": {
-  "media": 8,
-  "science": 12,
   "web": 14,
+  "science": 12,
+  "media": 8,
   "knowledge": 5,
   "ai": 5,
   "data": 49,
@@ -4342,11 +4342,11 @@
   "learning": 21
  },
  "categories": {
-  "media": {
-   "repos": 8,
-   "sites": 4,
+  "web": {
+   "repos": 14,
+   "sites": 0,
    "top_language": "JavaScript",
-   "since": "2015"
+   "since": "2014"
   },
   "science": {
    "repos": 12,
@@ -4354,11 +4354,11 @@
    "top_language": "Rust",
    "since": "2014"
   },
-  "web": {
-   "repos": 14,
-   "sites": 0,
+  "media": {
+   "repos": 8,
+   "sites": 4,
    "top_language": "JavaScript",
-   "since": "2014"
+   "since": "2015"
   },
   "knowledge": {
    "repos": 5,
@@ -4420,7 +4420,7 @@
   },
   {
    "name": "Ruby",
-   "repos": 19
+   "repos": 20
   },
   {
    "name": "Shell",
@@ -4491,6 +4491,10 @@
    "repos": 1
   },
   {
+   "name": "Makefile",
+   "repos": 1
+  },
+  {
    "name": "OpenSCAD",
    "repos": 1
   },
@@ -4509,7 +4513,7 @@
  ],
  "languages_by_year": {
   "2012": {
-   "Ruby": 1,
+   "Ruby": 2,
    "C#": 1
   },
   "2013": {
@@ -4527,6 +4531,7 @@
    "C": 1,
    "Shell": 2,
    "Java": 1,
+   "Makefile": 1,
    "Haskell": 1,
    "Erlang": 1,
    "XSLT": 1,
@@ -4601,8 +4606,8 @@
    "Dockerfile": 1
   },
   "2026": {
-   "Python": 5,
    "JavaScript": 3,
+   "Python": 5,
    "Elixir": 3,
    "Rust": 1,
    "TypeScript": 1,
@@ -4616,12 +4621,12 @@
     "repos": 42,
     "evidence": [
      {
-      "name": "oscilla",
-      "url": "https://github.com/korczis/oscilla"
-     },
-     {
       "name": "korczis.github.io",
       "url": "https://github.com/korczis/korczis.github.io"
+     },
+     {
+      "name": "oscilla",
+      "url": "https://github.com/korczis/oscilla"
      },
      {
       "name": "majordomus-reel",
@@ -4649,7 +4654,7 @@
    },
    {
     "name": "Ruby",
-    "repos": 19,
+    "repos": 20,
     "evidence": [
      {
       "name": "gdc-dumpator",
@@ -4920,6 +4925,16 @@
     ]
    },
    {
+    "name": "Makefile",
+    "repos": 1,
+    "evidence": [
+     {
+      "name": "skull-nodejs",
+      "url": "https://github.com/korczis/skull-nodejs"
+     }
+    ]
+   },
+   {
     "name": "OpenSCAD",
     "repos": 1,
     "evidence": [
@@ -5086,13 +5101,12 @@
  "recent": {
   "size": 100,
   "from": "2018-03-08T21:01:52Z",
-  "to": "2026-11-19T19:16:08Z",
+  "to": "2026-11-20T02:15:52Z",
   "mix": {
-   "media": {
-    "Python": 2,
-    "JavaScript": 1,
-    "HTML": 1,
-    "Dockerfile": 1,
+   "web": {
+    "JavaScript": 2,
+    "HTML": 2,
+    "CSS": 3,
     "Elixir": 1
    },
    "science": {
@@ -5101,10 +5115,11 @@
     "Elixir": 1,
     "Rust": 2
    },
-   "web": {
-    "JavaScript": 2,
-    "HTML": 2,
-    "CSS": 3,
+   "media": {
+    "Python": 2,
+    "JavaScript": 1,
+    "HTML": 1,
+    "Dockerfile": 1,
     "Elixir": 1
    },
    "knowledge": {
@@ -5154,52 +5169,6 @@
  },
  "repos": [
   {
-   "name": "sonic-playground",
-   "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-   "language": "Python",
-   "topics": [],
-   "stars": 0,
-   "created_at": "2026-11-12T00:48:36Z",
-   "pushed_at": "2026-11-19T19:16:08Z",
-   "archived": false,
-   "share": 1,
-   "hosts": {
-    "github": "https://github.com/korczis/sonic-playground"
-   },
-   "site": "https://korczis.github.io/sonic-playground/",
-   "supervised": true,
-   "category": "media",
-   "curated": true
-  },
-  {
-   "name": "oscilla",
-   "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-   "language": "JavaScript",
-   "topics": [
-    "acoustics",
-    "audio",
-    "dsp",
-    "education",
-    "javascript",
-    "signal-processing",
-    "spectrogram",
-    "synthesizer",
-    "web-audio"
-   ],
-   "stars": 1,
-   "created_at": "2026-10-01T21:05:33Z",
-   "pushed_at": "2026-11-19T17:46:35Z",
-   "archived": false,
-   "share": 1,
-   "hosts": {
-    "github": "https://github.com/korczis/oscilla"
-   },
-   "site": "https://korczis.github.io/oscilla/",
-   "supervised": true,
-   "category": "science",
-   "curated": true
-  },
-  {
    "name": "korczis.github.io",
    "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
    "language": "JavaScript",
@@ -5221,15 +5190,79 @@
    ],
    "stars": 0,
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-19T15:03:31Z",
+   "pushed_at": "2026-11-20T02:15:52Z",
    "archived": false,
-   "share": 0.94,
+   "share": 0.93,
    "hosts": {
     "github": "https://github.com/korczis/korczis.github.io"
    },
    "site": null,
    "supervised": true,
    "category": "web",
+   "curated": false
+  },
+  {
+   "name": "oscilla",
+   "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+   "language": "JavaScript",
+   "topics": [
+    "acoustics",
+    "audio",
+    "dsp",
+    "education",
+    "javascript",
+    "signal-processing",
+    "spectrogram",
+    "synthesizer",
+    "web-audio"
+   ],
+   "stars": 1,
+   "created_at": "2026-10-01T21:05:33Z",
+   "pushed_at": "2026-11-20T02:09:48Z",
+   "archived": false,
+   "share": 1,
+   "hosts": {
+    "github": "https://github.com/korczis/oscilla"
+   },
+   "site": "https://korczis.github.io/oscilla/",
+   "supervised": true,
+   "category": "science",
+   "curated": true
+  },
+  {
+   "name": "sonic-playground",
+   "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+   "language": "Python",
+   "topics": [],
+   "stars": 0,
+   "created_at": "2026-11-12T00:48:36Z",
+   "pushed_at": "2026-11-20T01:46:17Z",
+   "archived": false,
+   "share": 1,
+   "hosts": {
+    "github": "https://github.com/korczis/sonic-playground"
+   },
+   "site": "https://korczis.github.io/sonic-playground/",
+   "supervised": true,
+   "category": "media",
+   "curated": true
+  },
+  {
+   "name": "openttd-prismatic-bridge",
+   "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
+   "language": "Python",
+   "topics": [],
+   "stars": 0,
+   "created_at": "2026-07-23T22:00:54.776Z",
+   "pushed_at": "2026-11-19T19:32:27.585Z",
+   "archived": false,
+   "share": 1,
+   "hosts": {
+    "gitlab": "https://gitlab.com/korczis/openttd-prismatic-bridge"
+   },
+   "site": null,
+   "supervised": false,
+   "category": "media",
    "curated": false
   },
   {
@@ -5322,24 +5355,6 @@
    "supervised": true,
    "category": "ai",
    "curated": true
-  },
-  {
-   "name": "openttd-prismatic-bridge",
-   "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
-   "language": "Python",
-   "topics": [],
-   "stars": 0,
-   "created_at": "2026-07-23T22:00:54.776Z",
-   "pushed_at": "2026-11-19T00:49:32.567Z",
-   "archived": false,
-   "share": 1,
-   "hosts": {
-    "gitlab": "https://gitlab.com/korczis/openttd-prismatic-bridge"
-   },
-   "site": null,
-   "supervised": false,
-   "category": "media",
-   "curated": false
   },
   {
    "name": "algoglyph",
@@ -8594,7 +8609,7 @@
   {
    "name": "skull-nodejs",
    "description": "Node.js Skull",
-   "language": null,
+   "language": "Makefile",
    "topics": [],
    "stars": 0,
    "created_at": "2014-07-22T04:14:32Z",
@@ -9088,7 +9103,7 @@
   {
    "name": "sandbox",
    "description": "Something just for fun. This is place where I play with new techs...",
-   "language": null,
+   "language": "Ruby",
    "topics": [],
    "stars": 1,
    "created_at": "2012-01-01T23:48:41Z",
