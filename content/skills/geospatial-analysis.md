@@ -13,7 +13,7 @@ skill = "geospatial-analysis"
 og_title = "Geospatial analysis: skills"
 og_image = "og/skill-geospatial-analysis.png"
 schema = "skill"
-terms = ["skill", "gis", "dockerfile", "nominatim", "postgis", "shell", "elixir", "javascript", "postgresql", "tailwind-css", "cachex", "coreos"]
+terms = ["skill", "gis", "dockerfile", "nominatim", "postgis", "shell", "elixir", "javascript", "openstreetmap", "postgresql", "tailwind-css", "cachex"]
 keywords = ["Geospatial analysis", "Interactive data products and simulators", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -31,7 +31,7 @@ The concept behind it: [GIS](@/glossary/gis.md).
 
 Services that draw on it: [Interactive data products and simulators](@/services/interactive-data-products.md).
 
-Practised with: [Dockerfile](@/glossary/dockerfile.md), [Nominatim](@/glossary/nominatim.md), [PostGIS](@/glossary/postgis.md), [Shell](@/glossary/shell.md), [Elixir](@/glossary/elixir.md), [JavaScript](@/glossary/javascript.md), [PostgreSQL](@/glossary/postgresql.md) and [Tailwind CSS](@/glossary/tailwind-css.md).
+Practised with: [Dockerfile](@/glossary/dockerfile.md), [Nominatim](@/glossary/nominatim.md), [PostGIS](@/glossary/postgis.md), [Shell](@/glossary/shell.md), [Elixir](@/glossary/elixir.md), [JavaScript](@/glossary/javascript.md), [OpenStreetMap](@/glossary/openstreetmap.md) and [PostgreSQL](@/glossary/postgresql.md).
 
 Public work whose own words show it: [crisis-map](https://github.com/korczis/crisis-map), [data-atlas](https://github.com/korczis/data-atlas), [simple\_geocoder](https://gitlab.com/korczis/simple_geocoder) and [microcrawler](https://gitlab.com/korczis/microcrawler).
 

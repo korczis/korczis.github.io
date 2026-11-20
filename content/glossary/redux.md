@@ -3,7 +3,7 @@
 title = "Redux"
 description = "A predictable state container: the whole state in one store, changed only by actions through pure reducer functions."
 template = "term.html"
-weight = 148
+weight = 187
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

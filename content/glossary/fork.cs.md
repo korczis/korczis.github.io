@@ -3,7 +3,7 @@
 title = "Fork"
 description = "Kopie cizího repozitáře pod vlastním účtem; forky se tu počítají, ale nikdy se nevydávají za vlastníkovu práci."
 template = "term.html"
-weight = 195
+weight = 247
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

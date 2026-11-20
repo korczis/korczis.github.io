@@ -3,7 +3,7 @@
 title = ".NET"
 description = "Běhové prostředí a knihovny Microsoftu pro C# a další jazyky na Windows, Linuxu i macOS."
 template = "term.html"
-weight = 42
+weight = 43
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

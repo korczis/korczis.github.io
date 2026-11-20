@@ -3,7 +3,7 @@
 title = "Grunt"
 description = "Raný spouštěč úloh pro JavaScript nastavovaný souborem Gruntfile: spojování, minifikace, testy."
 template = "term.html"
-weight = 94
+weight = 118
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

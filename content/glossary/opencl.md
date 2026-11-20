@@ -3,7 +3,7 @@
 title = "OpenCL"
 description = "An open standard for parallel computing on GPUs, CPUs and other accelerators, with kernels written in a C dialect."
 template = "term.html"
-weight = 131
+weight = 163
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "An open standard for parallel computing on GPUs, CPUs and other ac
 aliases = []
 reference = { title = "Khronos: OpenCL", url = "https://www.khronos.org/opencl/" }
 pages = ["work/magic.md", "work/streamflow.md"]
-related = ["commit", "open-source", "repository", "rust", "audit-trail", "c", "clap", "csv"]
+related = ["commit", "open-source", "repository", "rust", "audit-trail", "c", "clap", "crossbeam"]
 og_title = "OpenCL: glossary"
 og_image = "og/glossary-opencl.png"
 keywords = ["OpenCL", "Technology", "Glossary", "Tomas Korcak"]

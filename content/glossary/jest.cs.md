@@ -3,7 +3,7 @@
 title = "Jest"
 description = "Testovací framework pro JavaScript, který v jednom balíku spojuje aserce, mocky a snapshotové testy."
 template = "term.html"
-weight = 102
+weight = 129
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -17,7 +17,7 @@ definition = "Testovací framework pro JavaScript, který v jednom balíku spoju
 aliases = []
 reference = { title = "Jest documentation", url = "https://jestjs.io/docs/getting-started" }
 pages = ["skills/chain-of-custody.cs.md", "work/bcnode-old.cs.md", "work/peg-parser.cs.md"]
-related = ["babel", "javascript", "commit", "dockerfile", "grpc", "libp2p", "nodejs", "open-source"]
+related = ["babel", "javascript", "commit", "dockerfile", "flow", "grpc", "libp2p", "nodejs"]
 og_title = "Jest: slovník"
 og_image = "og/cs-glossary-jest.png"
 keywords = ["Jest", "Technologie", "Slovník", "Tomáš Korčák"]

@@ -3,7 +3,7 @@
 title = "Vitest"
 description = "A fast test runner for JavaScript and TypeScript built on Vite, with a Jest-compatible API."
 template = "term.html"
-weight = 172
+weight = 220
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

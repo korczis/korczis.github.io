@@ -3,7 +3,7 @@
 title = "Cachex"
 description = "Knihovna pro cache v paměti pro Elixir nad ETS, s expirací, limity, hooky a transakcemi."
 template = "term.html"
-weight = 55
+weight = 59
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

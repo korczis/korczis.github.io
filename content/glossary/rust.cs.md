@@ -3,7 +3,7 @@
 title = "Rust"
 description = "Systémový jazyk, který zaručuje bezpečnost paměti bez garbage collectoru; je v něm napsaný Majordomus."
 template = "term.html"
-weight = 33
+weight = 34
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -14,9 +14,9 @@ seo_title = "Rust (programovací jazyk)"
 term = "rust"
 kind = "language"
 definition = "Systémový jazyk, který zaručuje bezpečnost paměti bez garbage collectoru; je v něm napsaný Majordomus."
-aliases = ["Cargo"]
+aliases = ["Cargo", "rustup"]
 reference = { title = "The Rust Programming Language", url = "https://doc.rust-lang.org/book/" }
-pages = ["_index.cs.md", "about.cs.md", "hire.cs.md", "projects/ai.cs.md", "projects/data.cs.md", "projects/learning.cs.md", "projects/libraries.cs.md", "projects/science.cs.md", "projects/security.cs.md", "projects/tools.cs.md", "services/ai-engineering-governance.cs.md", "skills/chain-of-custody.cs.md", "work/algoglyph.cs.md", "work/astudo.cs.md", "work/bcnode-old.cs.md", "work/catharsis-as-a-service.cs.md", "work/charon.cs.md", "work/comtesse.cs.md", "work/ctu-cz.cs.md", "work/dj-schnapps.cs.md", "work/easy-plugin-plugins.cs.md", "work/gauc-ex.cs.md", "work/gh-exec-3000.cs.md", "work/gooddata-fs.cs.md", "work/graph-flow.cs.md", "work/happ.cs.md", "work/in-rust-we-trust.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/korczis-gitlab-io.cs.md", "work/magic.cs.md", "work/mapoffacts.cs.md", "work/maze-rs.cs.md", "work/meili-rsex.cs.md", "work/mindscape.cs.md", "work/prismatic-majordomus.cs.md", "work/rocksdb-indexer.cs.md", "work/rustas.cs.md", "work/rustler-mix.cs.md", "work/rustler-test.cs.md", "work/skull-rust.cs.md", "work/sli2dli.cs.md", "work/streamflow.cs.md", "work/the-scratch.cs.md", "work/tosh.cs.md", "work/wims.cs.md", "work/zaas.cs.md"]
+pages = ["_index.cs.md", "about.cs.md", "hire.cs.md", "projects/ai.cs.md", "projects/data.cs.md", "projects/learning.cs.md", "projects/libraries.cs.md", "projects/science.cs.md", "projects/security.cs.md", "projects/tools.cs.md", "services/ai-engineering-governance.cs.md", "work/algoglyph.cs.md", "work/astudo.cs.md", "work/bcnode-old.cs.md", "work/catharsis-as-a-service.cs.md", "work/charon.cs.md", "work/comtesse.cs.md", "work/ctu-cz.cs.md", "work/dj-schnapps.cs.md", "work/easy-plugin-plugins.cs.md", "work/gauc-ex.cs.md", "work/gh-exec-3000.cs.md", "work/gooddata-fs.cs.md", "work/graph-flow.cs.md", "work/happ.cs.md", "work/in-rust-we-trust.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/korczis-gitlab-io.cs.md", "work/magic.cs.md", "work/mapoffacts.cs.md", "work/maze-rs.cs.md", "work/meili-rsex.cs.md", "work/mindscape.cs.md", "work/prismatic-majordomus.cs.md", "work/rocksdb-indexer.cs.md", "work/rustas.cs.md", "work/rustler-mix.cs.md", "work/rustler-test.cs.md", "work/skull-rust.cs.md", "work/sli2dli.cs.md", "work/streamflow.cs.md", "work/the-scratch.cs.md", "work/tosh.cs.md", "work/wims.cs.md", "work/zaas.cs.md"]
 related = ["repository", "open-source", "commit", "elixir", "javascript", "html", "shell", "phoenix"]
 og_title = "Rust: slovník"
 og_image = "og/cs-glossary-rust.png"

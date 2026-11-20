@@ -3,7 +3,7 @@
 title = "fail2ban"
 description = "An intrusion-prevention daemon: it reads server logs and bans addresses that keep failing to authenticate."
 template = "term.html"
-weight = 79
+weight = 96
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

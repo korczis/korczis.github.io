@@ -3,7 +3,7 @@
 title = "Homebrew"
 description = "The package manager for macOS (and Linux): formulae and casks that install command-line tools and applications."
 template = "term.html"
-weight = 98
+weight = 123
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

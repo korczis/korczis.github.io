@@ -3,7 +3,7 @@
 title = "Mnesia"
 description = "The distributed database built into Erlang/OTP: tables of Erlang terms, in memory or on disk, replicated across nodes with transactions."
 template = "term.html"
-weight = 119
+weight = 148
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

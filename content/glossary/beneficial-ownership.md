@@ -3,7 +3,7 @@
 title = "Beneficial ownership"
 description = "The natural person who ultimately owns or controls a company, often behind layers of other companies; registers and chains of shareholdings reveal them."
 template = "term.html"
-weight = 182
+weight = 234
 
 [taxonomies]
 tags = ["Glossary", "Concept"]

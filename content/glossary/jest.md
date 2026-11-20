@@ -3,7 +3,7 @@
 title = "Jest"
 description = "A JavaScript test framework with assertions, mocks and snapshot tests in one package."
 template = "term.html"
-weight = 102
+weight = 129
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "A JavaScript test framework with assertions, mocks and snapshot te
 aliases = []
 reference = { title = "Jest documentation", url = "https://jestjs.io/docs/getting-started" }
 pages = ["skills/chain-of-custody.md", "work/bcnode-old.md", "work/peg-parser.md"]
-related = ["babel", "javascript", "commit", "dockerfile", "grpc", "libp2p", "nodejs", "open-source"]
+related = ["babel", "javascript", "commit", "dockerfile", "flow", "grpc", "libp2p", "nodejs"]
 og_title = "Jest: glossary"
 og_image = "og/glossary-jest.png"
 keywords = ["Jest", "Technology", "Glossary", "Tomas Korcak"]

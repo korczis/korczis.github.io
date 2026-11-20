@@ -3,7 +3,7 @@
 title = "RSpec"
 description = "Testovací framework pro Ruby ve stylu BDD, se specifikacemi, které se čtou skoro jako běžná angličtina."
 template = "term.html"
-weight = 150
+weight = 191
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

@@ -3,7 +3,7 @@
 title = "jQuery"
 description = "Knihovna JavaScriptu, která sjednotila práci s DOM, událostmi a AJAXem napříč prohlížeči."
 template = "term.html"
-weight = 104
+weight = 131
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

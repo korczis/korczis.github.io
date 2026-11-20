@@ -3,7 +3,7 @@
 title = "Orchestrace"
 description = "Koordinace mnoha automatických kroků, služeb nebo agentů (fronty, workflow, plány), aby běžely ve správném pořadí a zotavily se, když jeden selže."
 template = "term.html"
-weight = 209
+weight = 261
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

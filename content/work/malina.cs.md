@@ -17,7 +17,7 @@ og_description = "malina: Učení a experimenty, Shell, 2013, archiv. Zdrojový 
 og_image = "og/cs-work-malina.png"
 schema = "project"
 keywords = ["malina", "Učení a experimenty", "Shell", "2013", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["shell", "repository", "commit", "open-source"]
+terms = ["shell", "raspberry-pi", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

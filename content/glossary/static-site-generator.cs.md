@@ -3,7 +3,7 @@
 title = "Generátor statických webů"
 description = "Program, který z obsahu a šablon vyrobí hotové soubory ještě před návštěvou, takže web nepotřebuje serverový kód."
 template = "term.html"
-weight = 221
+weight = 273
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

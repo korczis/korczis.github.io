@@ -3,7 +3,7 @@
 title = "Web Audio"
 description = "Rozhraní prohlížeče pro generování, zpracování a analýzu zvuku v reálném čase."
 template = "term.html"
-weight = 173
+weight = 221
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -14,7 +14,7 @@ seo_title = "Web Audio (technologie)"
 term = "web-audio"
 kind = "technology"
 definition = "Rozhraní prohlížeče pro generování, zpracování a analýzu zvuku v reálném čase."
-aliases = []
+aliases = ["Web Audio API"]
 reference = { title = "MDN Web Docs: Web Audio API", url = "https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API" }
 pages = ["projects/science.cs.md", "services/interactive-data-products.cs.md", "work/oscilla.cs.md"]
 related = ["data-visualisation", "flowbite-pro", "javascript", "p5-js", "alpine-js", "apache-echarts", "elixir", "html"]

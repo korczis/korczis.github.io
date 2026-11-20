@@ -3,7 +3,7 @@
 title = "Flowbite Pro"
 description = "A licensed library of interface blocks and an application shell on Tailwind CSS; every page of this site is built from it."
 template = "term.html"
-weight = 82
+weight = 102
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

@@ -3,7 +3,7 @@
 title = "pandas"
 description = "Knihovna Pythonu pro tabulková data: datové rámce k načtení, čištění, spojování, seskupování a sumarizaci datových sad."
 template = "term.html"
-weight = 134
+weight = 167
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

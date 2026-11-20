@@ -3,7 +3,7 @@
 title = "Ubuntu"
 description = "A Debian-based Linux distribution, common on servers, in containers and in CI runners."
 template = "term.html"
-weight = 166
+weight = 212
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

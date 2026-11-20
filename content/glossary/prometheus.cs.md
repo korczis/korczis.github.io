@@ -3,7 +3,7 @@
 title = "Prometheus"
 description = "Monitorovací systém a databáze časových řad: stahuje metriky přes HTTP, ukládá je a vyhodnocuje dotazy a alerty v PromQL."
 template = "term.html"
-weight = 142
+weight = 177
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

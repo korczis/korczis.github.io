@@ -3,7 +3,7 @@
 title = "Couchbase"
 description = "A distributed document database with a memory-first cache and a SQL-like query language, N1QL."
 template = "term.html"
-weight = 62
+weight = 69
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

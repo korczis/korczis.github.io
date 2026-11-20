@@ -3,7 +3,7 @@
 title = "Cockpit"
 description = "A web console for Linux servers: services, logs, storage, networking and containers administered from the browser."
 template = "term.html"
-weight = 60
+weight = 66
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "A web console for Linux servers: services, logs, storage, networki
 aliases = []
 reference = { title = "Cockpit project", url = "https://cockpit-project.org/" }
 pages = ["skills/ai-transformation.md", "work/server-archlinux.md", "work/server-atomic.md"]
-related = ["ansible", "dockerfile", "shell", "commit", "open-source", "repository", "ai-agent", "alpine-js"]
+related = ["ansible", "dockerfile", "shell", "arch-linux", "commit", "open-source", "repository", "ai-agent"]
 og_title = "Cockpit: glossary"
 og_image = "og/glossary-cockpit.png"
 keywords = ["Cockpit", "Technology", "Glossary", "Tomas Korcak"]

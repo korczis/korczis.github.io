@@ -3,7 +3,7 @@
 title = "fleet"
 description = "Distribuovaný init systém CoreOS: plánoval jednotky systemd napříč clusterem strojů, předchůdce plánování v Kubernetes."
 template = "term.html"
-weight = 81
+weight = 100
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -17,7 +17,7 @@ definition = "Distribuovaný init systém CoreOS: plánoval jednotky systemd nap
 aliases = []
 reference = { title = "fleet on GitHub (archived)", url = "https://github.com/coreos/fleet" }
 pages = ["work/apollon.cs.md", "work/microcrawler.cs.md"]
-related = ["commit", "coreos", "dockerfile", "etcd", "open-source", "repository", "aws", "gis"]
+related = ["commit", "coreos", "dockerfile", "etcd", "open-source", "repository", "aws", "digitalocean"]
 og_title = "fleet: slovník"
 og_image = "og/cs-glossary-fleet.png"
 keywords = ["fleet", "Technologie", "Slovník", "Tomáš Korčák"]

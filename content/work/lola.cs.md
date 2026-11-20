@@ -17,7 +17,7 @@ og_description = "lola: Nástroje, JavaScript, 2013–2014, archiv. Zdrojový k�
 og_image = "og/cs-work-lola.png"
 schema = "project"
 keywords = ["lola", "Nástroje", "JavaScript", "2013–2014", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["javascript", "nodejs", "travis-ci", "open-source", "repository", "commit"]
+terms = ["javascript", "nodejs", "jasmine", "travis-ci", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

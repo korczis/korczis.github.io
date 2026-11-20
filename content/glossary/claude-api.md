@@ -3,7 +3,7 @@
 title = "Claude API"
 description = "Anthropic's API to the Claude models: messages, tool use and agents that read, reason and act."
 template = "term.html"
-weight = 59
+weight = 63
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Anthropic's API to the Claude models: messages, tool use and agents that read, reason and act."
 aliases = ["claude-code", "Claude"]
 reference = { title = "Claude API documentation", url = "https://docs.anthropic.com/" }
-pages = ["services/ai-engineering-governance.md", "services/compliance-screening.md", "services/continuous-monitoring.md", "services/decision-support-ai.md", "services/digital-forensics.md", "services/digital-investigation.md", "services/m-and-a.md", "services/reputation-intelligence.md", "skills/ai-transformation.md", "skills/audit-trail.md", "skills/data-integration.md", "skills/data-room.md", "skills/document-extraction.md", "skills/due-diligence.md", "skills/entity-resolution.md", "skills/insolvency-monitoring.md", "skills/knowledge-graph.md", "skills/llm-agents.md", "skills/m-and-a-screening.md", "skills/market-intelligence.md", "skills/media-forensics.md", "skills/narrative-analysis.md", "skills/orchestration.md", "skills/osint-investigation.md", "skills/risk-scoring.md", "_index.md"]
-related = ["html", "javascript", "dockerfile", "flowbite-pro", "alpine-js", "skill", "fastapi", "python"]
+pages = ["services/ai-engineering-governance.md", "services/compliance-screening.md", "services/continuous-monitoring.md", "services/decision-support-ai.md", "services/digital-forensics.md", "services/m-and-a.md", "services/reputation-intelligence.md", "skills/ai-transformation.md", "skills/audit-trail.md", "skills/data-integration.md", "skills/data-room.md", "skills/document-extraction.md", "skills/due-diligence.md", "skills/entity-resolution.md", "skills/insolvency-monitoring.md", "skills/knowledge-graph.md", "skills/m-and-a-screening.md", "skills/market-intelligence.md", "skills/media-forensics.md", "skills/orchestration.md", "skills/risk-scoring.md", "_index.md"]
+related = ["dockerfile", "html", "javascript", "alpine-js", "flowbite-pro", "fastapi", "skill", "python"]
 og_title = "Claude API: glossary"
 og_image = "og/glossary-claude-api.png"
 keywords = ["Claude API", "Technology", "Glossary", "Tomas Korcak"]
@@ -40,13 +40,11 @@ span = 3
 height = "md"
 tone = "night"
 +++
-Claude API is part of 3 of my public repositories, from 2026 to 2026.
+Claude API is part of 1 of my public repositories, from 2026 to 2026.
 
-What it was for: [AI engineering](@/projects/ai.md) (2) and [Security and OSINT](@/projects/security.md) (1).
+What it was for: [AI engineering](@/projects/ai.md) (1).
 
-Most recently: [Majordomus](@/work/prismatic-majordomus.md): One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model; [osint-case-ratcliffe-moscow-2026](@/work/osint-case-ratcliffe-moscow-2026.md): Open-source intelligence assessment of the CIA Director's unannounced Moscow visit (2026-08-25) — maintained with Claude Code skills; reusable OSINT case toolkit; [llm](@/work/llm.md): Local-first, provider-agnostic archive of AI conversations (ChatGPT, Claude, Gemini, Codex) — immutable, content-addressed, searchable evidence layer built in Elixir/Ecto.
-
-2 of these projects run as live sites.
+Most recently: [llm](@/work/llm.md): Local-first, provider-agnostic archive of AI conversations (ChatGPT, Claude, Gemini, Codex) — immutable, content-addressed, searchable evidence layer built in Elixir/Ecto.
 
 I also used it in client work under confidentiality agreements. Roles: Architect, Lead engineer, AI engineer and Data engineer. What was solved: LLM agents, Decision support, AI transformation and Audit trail. The use cases below give the principle and the intent of that work; no client, person, date or number is named.
 

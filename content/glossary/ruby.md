@@ -3,7 +3,7 @@
 title = "Ruby"
 description = "A dynamic, expressive language designed for programmer happiness; many of the older tools here are Ruby."
 template = "term.html"
-weight = 32
+weight = 33
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]

@@ -17,7 +17,7 @@ og_description = "skull-elixir: Učení a experimenty, Elixir a Shell, 2016, arc
 og_image = "og/cs-work-skull-elixir.png"
 schema = "project"
 keywords = ["skull-elixir", "Učení a experimenty", "Elixir", "Shell", "2016", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["elixir", "shell", "travis-ci", "repository", "commit", "open-source"]
+terms = ["elixir", "shell", "exunit", "travis-ci", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

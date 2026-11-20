@@ -3,7 +3,7 @@
 title = "Three.js"
 description = "A JavaScript 3D library over WebGL: scenes, cameras, meshes, materials and lights in the browser."
 template = "term.html"
-weight = 163
+weight = 208
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

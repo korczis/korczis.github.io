@@ -3,7 +3,7 @@
 title = "Vision, framework Applu pro počítačové vidění"
 description = "Framework Applu pro počítačové vidění přímo v zařízení: rozpoznávání textu, detekce čárových kódů a obličejů, analýza obrazu bez serveru."
 template = "term.html"
-weight = 171
+weight = 218
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -17,7 +17,7 @@ definition = "Framework Applu pro počítačové vidění přímo v zařízení:
 aliases = []
 reference = { title = "Vision documentation", url = "https://developer.apple.com/documentation/vision" }
 pages = ["work/minervaeye.cs.md", "work/readingphonenumbersinrealtime.cs.md"]
-related = ["avfoundation", "commit", "open-source", "repository", "swift", "uikit", "xcode", "shell"]
+related = ["avfoundation", "commit", "open-source", "repository", "swift", "uikit", "xcode", "core-data"]
 og_title = "Vision: slovník"
 og_image = "og/cs-glossary-apple-vision.png"
 keywords = ["Vision, framework Applu pro počítačové vidění", "Vision", "Technologie", "Slovník", "Tomáš Korčák"]

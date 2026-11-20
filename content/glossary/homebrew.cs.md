@@ -3,7 +3,7 @@
 title = "Homebrew"
 description = "Správce balíčků pro macOS (a Linux): formule a casky, které instalují nástroje příkazové řádky a aplikace."
 template = "term.html"
-weight = 98
+weight = 123
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

@@ -3,7 +3,7 @@
 title = "Leaflet"
 description = "Malá JavaScriptová knihovna pro interaktivní mapy: dlaždicové vrstvy, značky, popupy a GeoJSON v prohlížeči."
 template = "term.html"
-weight = 110
+weight = 138
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

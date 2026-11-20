@@ -289,8 +289,8 @@
       "repos": 3
     },
     {
-      "id": "claude-api",
-      "name": "Claude API",
+      "id": "claude-code",
+      "name": "Claude Code",
       "repos": 3
     },
     {
@@ -549,6 +549,11 @@
       "repos": 2
     },
     {
+      "id": "openstreetmap",
+      "name": "OpenStreetMap",
+      "repos": 2
+    },
+    {
       "id": "pandas",
       "name": "pandas",
       "repos": 2
@@ -629,6 +634,11 @@
       "repos": 2
     },
     {
+      "id": "webgl",
+      "name": "WebGL",
+      "repos": 2
+    },
+    {
       "id": "xml",
       "name": "XML",
       "repos": 2
@@ -639,8 +649,43 @@
       "repos": 2
     },
     {
+      "id": "arch-linux",
+      "name": "Arch Linux",
+      "repos": 1
+    },
+    {
+      "id": "axon",
+      "name": "Axon",
+      "repos": 1
+    },
+    {
+      "id": "boost",
+      "name": "Boost",
+      "repos": 1
+    },
+    {
       "id": "broadway",
       "name": "Broadway",
+      "repos": 1
+    },
+    {
+      "id": "claude-api",
+      "name": "Claude API",
+      "repos": 1
+    },
+    {
+      "id": "clippy",
+      "name": "Clippy",
+      "repos": 1
+    },
+    {
+      "id": "core-data",
+      "name": "Core Data",
+      "repos": 1
+    },
+    {
+      "id": "crossbeam",
+      "name": "Crossbeam",
       "repos": 1
     },
     {
@@ -649,8 +694,128 @@
       "repos": 1
     },
     {
+      "id": "dev-containers",
+      "name": "Dev Containers",
+      "repos": 1
+    },
+    {
+      "id": "dialyzer",
+      "name": "Dialyzer",
+      "repos": 1
+    },
+    {
+      "id": "digitalocean",
+      "name": "DigitalOcean",
+      "repos": 1
+    },
+    {
+      "id": "django",
+      "name": "Django",
+      "repos": 1
+    },
+    {
+      "id": "django-rest-framework",
+      "name": "Django REST Framework",
+      "repos": 1
+    },
+    {
+      "id": "dramatiq",
+      "name": "Dramatiq",
+      "repos": 1
+    },
+    {
+      "id": "elixir-flow",
+      "name": "Elixir Flow",
+      "repos": 1
+    },
+    {
+      "id": "emscripten",
+      "name": "Emscripten",
+      "repos": 1
+    },
+    {
+      "id": "exunit",
+      "name": "ExUnit",
+      "repos": 1
+    },
+    {
       "id": "fastapi",
       "name": "FastAPI",
+      "repos": 1
+    },
+    {
+      "id": "ffmpeg",
+      "name": "FFmpeg",
+      "repos": 1
+    },
+    {
+      "id": "finch",
+      "name": "Finch",
+      "repos": 1
+    },
+    {
+      "id": "flow",
+      "name": "Flow",
+      "repos": 1
+    },
+    {
+      "id": "fluentd",
+      "name": "Fluentd",
+      "repos": 1
+    },
+    {
+      "id": "genstage",
+      "name": "GenStage",
+      "repos": 1
+    },
+    {
+      "id": "geojson",
+      "name": "GeoJSON",
+      "repos": 1
+    },
+    {
+      "id": "graphviz",
+      "name": "Graphviz",
+      "repos": 1
+    },
+    {
+      "id": "helm",
+      "name": "Helm",
+      "repos": 1
+    },
+    {
+      "id": "httpx",
+      "name": "HTTPX",
+      "repos": 1
+    },
+    {
+      "id": "jasmine",
+      "name": "Jasmine",
+      "repos": 1
+    },
+    {
+      "id": "koa",
+      "name": "Koa",
+      "repos": 1
+    },
+    {
+      "id": "memcached",
+      "name": "Memcached",
+      "repos": 1
+    },
+    {
+      "id": "nx",
+      "name": "Nx",
+      "repos": 1
+    },
+    {
+      "id": "oauth",
+      "name": "OAuth",
+      "repos": 1
+    },
+    {
+      "id": "oban",
+      "name": "Oban",
       "repos": 1
     },
     {
@@ -659,8 +824,98 @@
       "repos": 1
     },
     {
+      "id": "poetry",
+      "name": "Poetry",
+      "repos": 1
+    },
+    {
+      "id": "prettier",
+      "name": "Prettier",
+      "repos": 1
+    },
+    {
+      "id": "puppeteer",
+      "name": "Puppeteer",
+      "repos": 1
+    },
+    {
+      "id": "qt",
+      "name": "Qt",
+      "repos": 1
+    },
+    {
+      "id": "raspberry-pi",
+      "name": "Raspberry Pi",
+      "repos": 1
+    },
+    {
+      "id": "rayon",
+      "name": "Rayon",
+      "repos": 1
+    },
+    {
+      "id": "req",
+      "name": "Req",
+      "repos": 1
+    },
+    {
+      "id": "rollup",
+      "name": "Rollup",
+      "repos": 1
+    },
+    {
+      "id": "ruby-on-rails",
+      "name": "Ruby on Rails",
+      "repos": 1
+    },
+    {
+      "id": "scikit-learn",
+      "name": "scikit-learn",
+      "repos": 1
+    },
+    {
+      "id": "software-defined-radio",
+      "name": "Software-defined radio",
+      "repos": 1
+    },
+    {
+      "id": "streamdata",
+      "name": "StreamData",
+      "repos": 1
+    },
+    {
+      "id": "tor",
+      "name": "Tor",
+      "repos": 1
+    },
+    {
+      "id": "uvicorn",
+      "name": "Uvicorn",
+      "repos": 1
+    },
+    {
+      "id": "vite",
+      "name": "Vite",
+      "repos": 1
+    },
+    {
       "id": "web-audio",
       "name": "Web Audio",
+      "repos": 1
+    },
+    {
+      "id": "webassembly",
+      "name": "WebAssembly",
+      "repos": 1
+    },
+    {
+      "id": "websocket",
+      "name": "WebSocket",
+      "repos": 1
+    },
+    {
+      "id": "yaml",
+      "name": "YAML",
       "repos": 1
     }
   ],
@@ -749,6 +1004,7 @@
             "HTML",
             "CSS",
             "Alpine.js",
+            "Cytoscape.js",
             "Apache ECharts",
             "Flowbite Pro",
             "GitHub Pages",
@@ -869,6 +1125,7 @@
             "Majordomus",
             "Tailwind CSS",
             "p5.js",
+            "WebAssembly",
             "GitHub Pages"
           ]
         },
@@ -897,10 +1154,13 @@
             "JavaScript",
             "HTML",
             "Shell",
+            "FFmpeg",
             "Majordomus",
+            "Puppeteer",
             "Node.js",
             "p5.js",
             "Apache ECharts",
+            "Cytoscape.js",
             "Flowbite Pro",
             "Tailwind CSS",
             "Python"
@@ -932,6 +1192,9 @@
             "JavaScript",
             "Shell",
             "FastAPI",
+            "Uvicorn",
+            "HTTPX",
+            "WebSocket",
             "Tailwind CSS",
             "Flowbite Pro",
             "Leaflet",
@@ -964,10 +1227,11 @@
             "HTML",
             "MCP",
             "Zola",
-            "Claude API",
+            "Claude Code",
             "LLM",
             "Mermaid",
             "Git",
+            "YAML",
             "GitHub Actions"
           ]
         },
@@ -1001,6 +1265,8 @@
             "Flowbite Pro",
             "Majordomus",
             "Tailwind CSS",
+            "WebGL",
+            "Vite",
             "Vitest",
             "axe-core",
             "GitHub Pages"
@@ -1137,6 +1403,7 @@
             "JavaScript",
             "PL/pgSQL",
             "Just",
+            "OpenStreetMap",
             "PostGIS",
             "PostgreSQL",
             "Tailwind CSS",
@@ -1380,8 +1647,10 @@
           "uses": [
             "TypeScript",
             "JavaScript",
+            "Rollup",
             "Vitest",
             "ESLint",
+            "Prettier",
             "GitLab CI"
           ]
         },
@@ -1849,6 +2118,10 @@
             "PostgreSQL",
             "Ecto",
             "Broadway",
+            "GenStage",
+            "Elixir Flow",
+            "Req",
+            "Finch",
             "Tailwind CSS",
             "GitLab CI",
             "GitHub Actions"
@@ -2027,6 +2300,7 @@
             "JavaScript",
             "M4",
             "HTML",
+            "Graphviz",
             "Makefile",
             "Shell",
             "Rust",
@@ -2143,6 +2417,7 @@
             "JavaScript",
             "Rust",
             "Node.js",
+            "Flow",
             "Babel",
             "gRPC",
             "Protocol Buffers",
@@ -2348,6 +2623,7 @@
             "Elm",
             "C",
             "Java",
+            "Software-defined radio",
             "Rustler",
             "OpenCL",
             "Phoenix",
@@ -2405,7 +2681,8 @@
           "supervised": false,
           "uses": [
             "JavaScript",
-            "Node.js"
+            "Node.js",
+            "Koa"
           ]
         },
         {
@@ -2468,9 +2745,11 @@
             "HTML",
             "Phoenix",
             "Guardian",
+            "Erlang",
             "React",
             "Redux",
             "Three.js",
+            "WebGL",
             "Brunch"
           ]
         },
@@ -2789,6 +3068,7 @@
           "supervised": false,
           "uses": [
             "C++",
+            "Emscripten",
             "JavaScript",
             "Makefile"
           ]
@@ -2817,6 +3097,7 @@
             "CSS",
             "JavaScript",
             "CoffeeScript",
+            "Ruby on Rails",
             "SQLite",
             "SCSS",
             "jQuery"
@@ -3063,6 +3344,7 @@
           "uses": [
             "JavaScript",
             "Node.js",
+            "Jasmine",
             "Travis CI"
           ]
         },
@@ -3229,6 +3511,8 @@
             "Flowbite Pro",
             "Majordomus",
             "Tailwind CSS",
+            "WebGL",
+            "Vite",
             "Vitest",
             "axe-core",
             "GitHub Pages"
@@ -3297,6 +3581,7 @@
             "Phoenix",
             "Ecto",
             "PostgreSQL",
+            "Oban",
             "OpenApiSpex",
             "Mnesia",
             "Meilisearch",
@@ -3328,8 +3613,10 @@
           "uses": [
             "TypeScript",
             "JavaScript",
+            "Rollup",
             "Vitest",
             "ESLint",
+            "Prettier",
             "GitLab CI"
           ]
         },
@@ -3860,6 +4147,7 @@
             "Kubernetes",
             "Dockerfile",
             "AWS",
+            "DigitalOcean",
             "RSpec"
           ]
         },
@@ -3944,6 +4232,7 @@
             "CSS",
             "JavaScript",
             "CoffeeScript",
+            "Ruby on Rails",
             "SQLite",
             "SCSS",
             "jQuery"
@@ -3973,6 +4262,7 @@
             "Ruby",
             "RabbitMQ",
             "MongoDB",
+            "Memcached",
             "SQLite"
           ]
         },
@@ -4157,7 +4447,8 @@
           "supervised": false,
           "uses": [
             "Ruby",
-            "PostgreSQL"
+            "PostgreSQL",
+            "OAuth"
           ]
         }
       ],
@@ -4292,6 +4583,7 @@
             "Majordomus",
             "Tailwind CSS",
             "p5.js",
+            "WebAssembly",
             "GitHub Pages"
           ]
         },
@@ -4389,10 +4681,12 @@
           "uses": [
             "Elixir",
             "Claude API",
+            "Claude Code",
             "LLM",
             "Ecto",
             "PostgreSQL",
             "Jason",
+            "StreamData",
             "GitLab CI"
           ]
         },
@@ -4417,6 +4711,8 @@
           "supervised": false,
           "uses": [
             "Elixir",
+            "Nx",
+            "Axon",
             "KuzuDB",
             "Meilisearch"
           ]
@@ -4452,6 +4748,7 @@
             "Phoenix",
             "Ecto",
             "PostgreSQL",
+            "Oban",
             "OpenApiSpex",
             "Mnesia",
             "Meilisearch",
@@ -4518,6 +4815,7 @@
             "Elixir",
             "Shell",
             "Markdown",
+            "GeoJSON",
             "Phoenix"
           ]
         },
@@ -4672,6 +4970,7 @@
             "Jason",
             "ExDoc",
             "Credo",
+            "Dialyzer",
             "GitLab CI"
           ]
         },
@@ -4736,6 +5035,7 @@
             "Elixir",
             "Python",
             "KuzuDB",
+            "Cypher",
             "Tesla",
             "Jason",
             "Dockerfile",
@@ -4832,6 +5132,7 @@
             "Cachex",
             "Tesla",
             "CSV",
+            "OpenStreetMap",
             "Nominatim",
             "Dockerfile"
           ]
@@ -4866,6 +5167,10 @@
             "PostgreSQL",
             "Ecto",
             "Broadway",
+            "GenStage",
+            "Elixir Flow",
+            "Req",
+            "Finch",
             "Tailwind CSS",
             "GitLab CI",
             "GitHub Actions"
@@ -5081,6 +5386,7 @@
             "Node.js",
             "Prolog",
             "SwiftUI",
+            "Qt",
             "OpenGL",
             "Dockerfile",
             "PostgreSQL",
@@ -5116,6 +5422,7 @@
             "JavaScript",
             "M4",
             "HTML",
+            "Graphviz",
             "Makefile",
             "Shell",
             "Rust",
@@ -5248,6 +5555,7 @@
             "Elixir",
             "Rust",
             "Rustler",
+            "Erlang",
             "Travis CI"
           ]
         },
@@ -5413,6 +5721,7 @@
             "Elm",
             "C",
             "Java",
+            "Software-defined radio",
             "Rustler",
             "OpenCL",
             "Phoenix",
@@ -5479,6 +5788,7 @@
           "uses": [
             "Elixir",
             "Shell",
+            "ExUnit",
             "Travis CI"
           ]
         },
@@ -5508,9 +5818,11 @@
             "HTML",
             "Phoenix",
             "Guardian",
+            "Erlang",
             "React",
             "Redux",
             "Three.js",
+            "WebGL",
             "Brunch"
           ]
         },
@@ -5550,10 +5862,10 @@
       "name": "Erlang",
       "kind": "language",
       "counts": {
-        "repos": 10,
+        "repos": 12,
         "primary": 1,
         "sites": 0,
-        "work": 10,
+        "work": 12,
         "engagements": 0
       },
       "first": 2014,
@@ -5568,19 +5880,19 @@
           "n": 2
         },
         {
+          "key": "learning",
+          "n": 2
+        },
+        {
+          "key": "science",
+          "n": 2
+        },
+        {
           "key": "data",
           "n": 1
         },
         {
-          "key": "learning",
-          "n": 1
-        },
-        {
           "key": "libraries",
-          "n": 1
-        },
-        {
-          "key": "science",
           "n": 1
         }
       ],
@@ -5613,6 +5925,7 @@
             "Phoenix",
             "Ecto",
             "PostgreSQL",
+            "Oban",
             "OpenApiSpex",
             "Mnesia",
             "Meilisearch",
@@ -5735,6 +6048,7 @@
             "Jason",
             "ExDoc",
             "Credo",
+            "Dialyzer",
             "GitLab CI"
           ]
         },
@@ -5794,6 +6108,7 @@
             "Cachex",
             "Tesla",
             "CSV",
+            "OpenStreetMap",
             "Nominatim",
             "Dockerfile"
           ]
@@ -5830,6 +6145,66 @@
             "OpenApiSpex",
             "Fly.io",
             "GitHub Actions"
+          ]
+        },
+        {
+          "name": "rustler-test",
+          "title": "rustler-test",
+          "url": "https://github.com/korczis/rustler-test",
+          "work": true,
+          "slug": "rustler-test",
+          "site": null,
+          "category": "learning",
+          "description": "Working Example of Rustler - Safe Rust bridge for creating Erlang NIF functions",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2017-06-18",
+          "pushed": "2017-09-19",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Elixir",
+            "Rust",
+            "Rustler",
+            "Erlang",
+            "Travis CI"
+          ]
+        },
+        {
+          "name": "maze",
+          "title": "maze",
+          "url": "https://github.com/korczis/maze",
+          "work": true,
+          "slug": "maze",
+          "site": null,
+          "category": "science",
+          "description": "Maze Web Application",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2016-11-18",
+          "pushed": "2016-11-20",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "JavaScript",
+            "Elixir",
+            "HTML",
+            "Phoenix",
+            "Guardian",
+            "Erlang",
+            "React",
+            "Redux",
+            "Three.js",
+            "WebGL",
+            "Brunch"
           ]
         },
         {
@@ -5983,6 +6358,7 @@
             "Majordomus",
             "Tailwind CSS",
             "p5.js",
+            "WebAssembly",
             "GitHub Pages"
           ]
         },
@@ -6016,10 +6392,11 @@
             "HTML",
             "MCP",
             "Zola",
-            "Claude API",
+            "Claude Code",
             "LLM",
             "Mermaid",
             "Git",
+            "YAML",
             "GitHub Actions"
           ]
         },
@@ -6054,6 +6431,8 @@
             "Flowbite Pro",
             "Majordomus",
             "Tailwind CSS",
+            "WebGL",
+            "Vite",
             "Vitest",
             "axe-core",
             "GitHub Pages"
@@ -6364,6 +6743,7 @@
             "Node.js",
             "Prolog",
             "SwiftUI",
+            "Qt",
             "OpenGL",
             "Dockerfile",
             "PostgreSQL",
@@ -6425,6 +6805,7 @@
             "JavaScript",
             "M4",
             "HTML",
+            "Graphviz",
             "Makefile",
             "Shell",
             "Rust",
@@ -6488,6 +6869,7 @@
             "JavaScript",
             "Rust",
             "Node.js",
+            "Flow",
             "Babel",
             "gRPC",
             "Protocol Buffers",
@@ -6584,7 +6966,8 @@
           "supervised": false,
           "uses": [
             "Rust",
-            "Travis CI"
+            "Travis CI",
+            "Clippy"
           ]
         },
         {
@@ -6634,6 +7017,7 @@
             "Elixir",
             "Rust",
             "Rustler",
+            "Erlang",
             "Travis CI"
           ]
         },
@@ -6731,6 +7115,7 @@
             "Elm",
             "C",
             "Java",
+            "Software-defined radio",
             "Rustler",
             "OpenCL",
             "Phoenix",
@@ -6764,6 +7149,8 @@
             "clap",
             "CSV",
             "Tokio",
+            "Rayon",
+            "Crossbeam",
             "OpenCL"
           ]
         },
@@ -7102,6 +7489,7 @@
             "Majordomus",
             "Tailwind CSS",
             "p5.js",
+            "WebAssembly",
             "GitHub Pages"
           ]
         },
@@ -7128,10 +7516,13 @@
             "JavaScript",
             "HTML",
             "Shell",
+            "FFmpeg",
             "Majordomus",
+            "Puppeteer",
             "Node.js",
             "p5.js",
             "Apache ECharts",
+            "Cytoscape.js",
             "Flowbite Pro",
             "Tailwind CSS",
             "Python"
@@ -7165,6 +7556,9 @@
             "JavaScript",
             "Shell",
             "FastAPI",
+            "Uvicorn",
+            "HTTPX",
+            "WebSocket",
             "Tailwind CSS",
             "Flowbite Pro",
             "Leaflet",
@@ -7271,6 +7665,7 @@
             "JavaScript",
             "PL/pgSQL",
             "Just",
+            "OpenStreetMap",
             "PostGIS",
             "PostgreSQL",
             "Tailwind CSS",
@@ -7335,7 +7730,7 @@
             "HTML",
             "Python",
             "Shell",
-            "Claude API",
+            "Claude Code",
             "Just",
             "jq",
             "GitHub Actions",
@@ -7365,6 +7760,7 @@
             "Elixir",
             "Python",
             "KuzuDB",
+            "Cypher",
             "Tesla",
             "Jason",
             "Dockerfile",
@@ -7397,8 +7793,12 @@
             "Python",
             "Dockerfile",
             "Makefile",
+            "Django",
+            "Django REST Framework",
+            "Dramatiq",
             "RabbitMQ",
-            "PostgreSQL"
+            "PostgreSQL",
+            "Poetry"
           ]
         },
         {
@@ -7430,6 +7830,10 @@
             "PostgreSQL",
             "Ecto",
             "Broadway",
+            "GenStage",
+            "Elixir Flow",
+            "Req",
+            "Finch",
             "Tailwind CSS",
             "GitLab CI",
             "GitHub Actions"
@@ -7531,7 +7935,8 @@
           "via": [
             "primary",
             "code",
-            "stack"
+            "stack",
+            "files"
           ],
           "supervised": false,
           "uses": [
@@ -7593,6 +7998,7 @@
             "Python",
             "NumPy",
             "pandas",
+            "scikit-learn",
             "Java",
             "Go",
             "Node.js",
@@ -7788,6 +8194,7 @@
             "Majordomus",
             "Tailwind CSS",
             "p5.js",
+            "WebAssembly",
             "GitHub Pages"
           ]
         },
@@ -7814,10 +8221,13 @@
             "JavaScript",
             "HTML",
             "Shell",
+            "FFmpeg",
             "Majordomus",
+            "Puppeteer",
             "Node.js",
             "p5.js",
             "Apache ECharts",
+            "Cytoscape.js",
             "Flowbite Pro",
             "Tailwind CSS",
             "Python"
@@ -7849,6 +8259,9 @@
             "JavaScript",
             "Shell",
             "FastAPI",
+            "Uvicorn",
+            "HTTPX",
+            "WebSocket",
             "Tailwind CSS",
             "Flowbite Pro",
             "Leaflet",
@@ -7882,10 +8295,11 @@
             "HTML",
             "MCP",
             "Zola",
-            "Claude API",
+            "Claude Code",
             "LLM",
             "Mermaid",
             "Git",
+            "YAML",
             "GitHub Actions"
           ]
         },
@@ -8049,7 +8463,7 @@
             "HTML",
             "Python",
             "Shell",
-            "Claude API",
+            "Claude Code",
             "Just",
             "jq",
             "GitHub Actions",
@@ -8084,6 +8498,7 @@
             "Phoenix",
             "Ecto",
             "PostgreSQL",
+            "Oban",
             "OpenApiSpex",
             "Mnesia",
             "Meilisearch",
@@ -8145,6 +8560,7 @@
             "Elixir",
             "Shell",
             "Markdown",
+            "GeoJSON",
             "Phoenix"
           ]
         },
@@ -8330,6 +8746,7 @@
             "Cachex",
             "Tesla",
             "CSV",
+            "OpenStreetMap",
             "Nominatim",
             "Dockerfile"
           ]
@@ -8362,6 +8779,10 @@
             "PostgreSQL",
             "Ecto",
             "Broadway",
+            "GenStage",
+            "Elixir Flow",
+            "Req",
+            "Finch",
             "Tailwind CSS",
             "GitLab CI",
             "GitHub Actions"
@@ -8455,6 +8876,7 @@
             "JavaScript",
             "M4",
             "HTML",
+            "Graphviz",
             "Makefile",
             "Shell",
             "Rust",
@@ -8513,6 +8935,7 @@
           "uses": [
             "Shell",
             "Ansible",
+            "Arch Linux",
             "Vagrant",
             "VirtualBox",
             "Dockerfile",
@@ -8718,6 +9141,7 @@
             "Shell",
             "Smarty",
             "Kubernetes",
+            "Helm",
             "Couchbase",
             "Elasticsearch",
             "Kibana",
@@ -8725,6 +9149,7 @@
             "etcd",
             "Grafana",
             "Prometheus",
+            "Fluentd",
             "PostgreSQL",
             "Nominatim"
           ]
@@ -8780,6 +9205,7 @@
           "uses": [
             "Elixir",
             "Shell",
+            "ExUnit",
             "Travis CI"
           ]
         },
@@ -8998,7 +9424,8 @@
           ],
           "supervised": false,
           "uses": [
-            "Shell"
+            "Shell",
+            "Raspberry Pi"
           ]
         }
       ],
@@ -9096,6 +9523,7 @@
             "HTML",
             "CSS",
             "Alpine.js",
+            "Cytoscape.js",
             "Apache ECharts",
             "Flowbite Pro",
             "GitHub Pages",
@@ -9212,6 +9640,7 @@
             "Majordomus",
             "Tailwind CSS",
             "p5.js",
+            "WebAssembly",
             "GitHub Pages"
           ]
         },
@@ -9239,10 +9668,13 @@
             "JavaScript",
             "HTML",
             "Shell",
+            "FFmpeg",
             "Majordomus",
+            "Puppeteer",
             "Node.js",
             "p5.js",
             "Apache ECharts",
+            "Cytoscape.js",
             "Flowbite Pro",
             "Tailwind CSS",
             "Python"
@@ -9274,6 +9706,9 @@
             "JavaScript",
             "Shell",
             "FastAPI",
+            "Uvicorn",
+            "HTTPX",
+            "WebSocket",
             "Tailwind CSS",
             "Flowbite Pro",
             "Leaflet",
@@ -9306,10 +9741,11 @@
             "HTML",
             "MCP",
             "Zola",
-            "Claude API",
+            "Claude Code",
             "LLM",
             "Mermaid",
             "Git",
+            "YAML",
             "GitHub Actions"
           ]
         },
@@ -9343,6 +9779,8 @@
             "Flowbite Pro",
             "Majordomus",
             "Tailwind CSS",
+            "WebGL",
+            "Vite",
             "Vitest",
             "axe-core",
             "GitHub Pages"
@@ -9444,6 +9882,7 @@
             "JavaScript",
             "PL/pgSQL",
             "Just",
+            "OpenStreetMap",
             "PostGIS",
             "PostgreSQL",
             "Tailwind CSS",
@@ -9540,7 +9979,7 @@
             "HTML",
             "Python",
             "Shell",
-            "Claude API",
+            "Claude Code",
             "Just",
             "jq",
             "GitHub Actions",
@@ -9951,6 +10390,7 @@
             "JavaScript",
             "M4",
             "HTML",
+            "Graphviz",
             "Makefile",
             "Shell",
             "Rust",
@@ -10135,9 +10575,11 @@
             "HTML",
             "Phoenix",
             "Guardian",
+            "Erlang",
             "React",
             "Redux",
             "Three.js",
+            "WebGL",
             "Brunch"
           ]
         },
@@ -10351,6 +10793,7 @@
             "HTML",
             "CSS",
             "Alpine.js",
+            "Cytoscape.js",
             "Apache ECharts",
             "Flowbite Pro",
             "GitHub Pages",
@@ -10900,6 +11343,7 @@
             "JavaScript",
             "M4",
             "HTML",
+            "Graphviz",
             "Makefile",
             "Shell",
             "Rust",
@@ -11056,6 +11500,7 @@
             "CSS",
             "JavaScript",
             "CoffeeScript",
+            "Ruby on Rails",
             "SQLite",
             "SCSS",
             "jQuery"
@@ -11257,6 +11702,7 @@
             "Node.js",
             "Prolog",
             "SwiftUI",
+            "Qt",
             "OpenGL",
             "Dockerfile",
             "PostgreSQL",
@@ -11291,6 +11737,7 @@
             "Elm",
             "C",
             "Java",
+            "Software-defined radio",
             "Rustler",
             "OpenCL",
             "Phoenix",
@@ -11372,6 +11819,7 @@
             "C++",
             "C",
             "libpcap",
+            "Boost",
             "CMake",
             "Google Test",
             "Travis CI"
@@ -11501,6 +11949,7 @@
             "Node.js",
             "Prolog",
             "SwiftUI",
+            "Qt",
             "OpenGL",
             "Dockerfile",
             "PostgreSQL",
@@ -11613,6 +12062,7 @@
           "supervised": false,
           "uses": [
             "C++",
+            "Emscripten",
             "JavaScript",
             "Makefile"
           ]
@@ -11671,6 +12121,7 @@
             "C++",
             "C",
             "libpcap",
+            "Boost",
             "CMake",
             "Google Test",
             "Travis CI"
@@ -11864,6 +12315,7 @@
             "Node.js",
             "Prolog",
             "SwiftUI",
+            "Qt",
             "OpenGL",
             "Dockerfile",
             "PostgreSQL",
@@ -11984,6 +12436,7 @@
             "Elm",
             "C",
             "Java",
+            "Software-defined radio",
             "Rustler",
             "OpenCL",
             "Phoenix",
@@ -12044,6 +12497,7 @@
             "Python",
             "NumPy",
             "pandas",
+            "scikit-learn",
             "Java",
             "Go",
             "Node.js",
@@ -12191,6 +12645,7 @@
             "Node.js",
             "Prolog",
             "SwiftUI",
+            "Qt",
             "OpenGL",
             "Dockerfile",
             "PostgreSQL",
@@ -12226,6 +12681,7 @@
             "UIKit",
             "AVFoundation",
             "Vision",
+            "Core Data",
             "Xcode"
           ]
         },
@@ -12335,6 +12791,7 @@
             "Phoenix",
             "Ecto",
             "PostgreSQL",
+            "Oban",
             "OpenApiSpex",
             "Mnesia",
             "Meilisearch",
@@ -12463,6 +12920,7 @@
             "Elixir",
             "Python",
             "KuzuDB",
+            "Cypher",
             "Tesla",
             "Jason",
             "Dockerfile",
@@ -12555,8 +13013,12 @@
             "Python",
             "Dockerfile",
             "Makefile",
+            "Django",
+            "Django REST Framework",
+            "Dramatiq",
             "RabbitMQ",
-            "PostgreSQL"
+            "PostgreSQL",
+            "Poetry"
           ]
         },
         {
@@ -12586,6 +13048,7 @@
             "Cachex",
             "Tesla",
             "CSV",
+            "OpenStreetMap",
             "Nominatim",
             "Dockerfile"
           ]
@@ -12615,7 +13078,8 @@
             "Zola",
             "Markdown",
             "GitHub Actions",
-            "GitHub Pages"
+            "GitHub Pages",
+            "Dev Containers"
           ]
         },
         {
@@ -12715,6 +13179,7 @@
             "Node.js",
             "Prolog",
             "SwiftUI",
+            "Qt",
             "OpenGL",
             "Dockerfile",
             "PostgreSQL",
@@ -12745,6 +13210,7 @@
           "uses": [
             "Shell",
             "Ansible",
+            "Arch Linux",
             "Vagrant",
             "VirtualBox",
             "Dockerfile",
@@ -12974,6 +13440,7 @@
             "JavaScript",
             "Rust",
             "Node.js",
+            "Flow",
             "Babel",
             "gRPC",
             "Protocol Buffers",
@@ -13218,6 +13685,7 @@
             "Python",
             "NumPy",
             "pandas",
+            "scikit-learn",
             "Java",
             "Go",
             "Node.js",
@@ -13278,6 +13746,7 @@
             "Kubernetes",
             "Dockerfile",
             "AWS",
+            "DigitalOcean",
             "RSpec"
           ]
         }
@@ -13452,6 +13921,7 @@
             "HTML",
             "CSS",
             "Alpine.js",
+            "Cytoscape.js",
             "Apache ECharts",
             "Flowbite Pro",
             "GitHub Pages",
@@ -13570,6 +14040,7 @@
             "Majordomus",
             "Tailwind CSS",
             "p5.js",
+            "WebAssembly",
             "GitHub Pages"
           ]
         },
@@ -13596,10 +14067,13 @@
             "JavaScript",
             "HTML",
             "Shell",
+            "FFmpeg",
             "Majordomus",
+            "Puppeteer",
             "Node.js",
             "p5.js",
             "Apache ECharts",
+            "Cytoscape.js",
             "Flowbite Pro",
             "Tailwind CSS",
             "Python"
@@ -13631,6 +14105,9 @@
             "JavaScript",
             "Shell",
             "FastAPI",
+            "Uvicorn",
+            "HTTPX",
+            "WebSocket",
             "Tailwind CSS",
             "Flowbite Pro",
             "Leaflet",
@@ -13669,6 +14146,8 @@
             "Flowbite Pro",
             "Majordomus",
             "Tailwind CSS",
+            "WebGL",
+            "Vite",
             "Vitest",
             "axe-core",
             "GitHub Pages"
@@ -13892,6 +14371,7 @@
             "HTML",
             "CSS",
             "Alpine.js",
+            "Cytoscape.js",
             "Apache ECharts",
             "Flowbite Pro",
             "GitHub Pages",
@@ -14008,6 +14488,7 @@
             "Majordomus",
             "Tailwind CSS",
             "p5.js",
+            "WebAssembly",
             "GitHub Pages"
           ]
         },
@@ -14034,10 +14515,13 @@
             "JavaScript",
             "HTML",
             "Shell",
+            "FFmpeg",
             "Majordomus",
+            "Puppeteer",
             "Node.js",
             "p5.js",
             "Apache ECharts",
+            "Cytoscape.js",
             "Flowbite Pro",
             "Tailwind CSS",
             "Python"
@@ -14069,6 +14553,9 @@
             "JavaScript",
             "Shell",
             "FastAPI",
+            "Uvicorn",
+            "HTTPX",
+            "WebSocket",
             "Tailwind CSS",
             "Flowbite Pro",
             "Leaflet",
@@ -14106,6 +14593,8 @@
             "Flowbite Pro",
             "Majordomus",
             "Tailwind CSS",
+            "WebGL",
+            "Vite",
             "Vitest",
             "axe-core",
             "GitHub Pages"
@@ -14240,6 +14729,7 @@
             "JavaScript",
             "PL/pgSQL",
             "Just",
+            "OpenStreetMap",
             "PostGIS",
             "PostgreSQL",
             "Tailwind CSS",
@@ -14404,6 +14894,10 @@
             "PostgreSQL",
             "Ecto",
             "Broadway",
+            "GenStage",
+            "Elixir Flow",
+            "Req",
+            "Finch",
             "Tailwind CSS",
             "GitLab CI",
             "GitHub Actions"
@@ -14489,6 +14983,7 @@
             "HTML",
             "CSS",
             "Alpine.js",
+            "Cytoscape.js",
             "Apache ECharts",
             "Flowbite Pro",
             "GitHub Pages",
@@ -14571,6 +15066,7 @@
             "Majordomus",
             "Tailwind CSS",
             "p5.js",
+            "WebAssembly",
             "GitHub Pages"
           ]
         },
@@ -14606,6 +15102,8 @@
             "Flowbite Pro",
             "Majordomus",
             "Tailwind CSS",
+            "WebGL",
+            "Vite",
             "Vitest",
             "axe-core",
             "GitHub Pages"
@@ -14734,21 +15232,68 @@
       "name": "Cytoscape.js",
       "kind": "technology",
       "counts": {
-        "repos": 1,
+        "repos": 3,
         "primary": 0,
-        "sites": 1,
-        "work": 1,
+        "sites": 2,
+        "work": 3,
         "engagements": 0
       },
-      "first": 2026,
+      "first": 2024,
       "last": 2026,
       "categories": [
         {
           "key": "knowledge",
           "n": 1
+        },
+        {
+          "key": "media",
+          "n": 1
+        },
+        {
+          "key": "web",
+          "n": 1
         }
       ],
       "repos": [
+        {
+          "name": "korczis.github.io",
+          "title": "korczis.github.io",
+          "url": "https://github.com/korczis/korczis.github.io",
+          "work": true,
+          "slug": "korczis-github-io",
+          "site": null,
+          "category": "web",
+          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2024-12-24",
+          "pushed": "2026-11-20",
+          "primary": false,
+          "share": null,
+          "via": [
+            "topic"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Alpine.js",
+            "Cytoscape.js",
+            "Apache ECharts",
+            "Flowbite Pro",
+            "GitHub Pages",
+            "Majordomus",
+            "p5.js",
+            "Tailwind CSS",
+            "Zola",
+            "Tera",
+            "D3.js",
+            "Node.js",
+            "Playwright",
+            "axe-core"
+          ]
+        },
         {
           "name": "kompendium-epistemicke-anihilace",
           "title": "Kompendium",
@@ -14783,7 +15328,43 @@
             "Majordomus",
             "Tailwind CSS",
             "p5.js",
+            "WebAssembly",
             "GitHub Pages"
+          ]
+        },
+        {
+          "name": "majordomus-reel",
+          "title": "Majordomus reel",
+          "url": "https://github.com/korczis/majordomus-reel",
+          "work": true,
+          "slug": "majordomus-reel",
+          "site": "https://korczis.github.io/majordomus-reel/",
+          "category": "media",
+          "description": "A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound",
+          "summary": "Voice, frames, music and sound, all generated and versioned like software.",
+          "summary_cs": "Hlas, snímky, hudba i zvuk, vše generované a verzované jako software.",
+          "created": "2026-10-23",
+          "pushed": "2026-11-19",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "Shell",
+            "FFmpeg",
+            "Majordomus",
+            "Puppeteer",
+            "Node.js",
+            "p5.js",
+            "Apache ECharts",
+            "Cytoscape.js",
+            "Flowbite Pro",
+            "Tailwind CSS",
+            "Python"
           ]
         }
       ],
@@ -14845,6 +15426,7 @@
             "HTML",
             "CSS",
             "Alpine.js",
+            "Cytoscape.js",
             "Apache ECharts",
             "Flowbite Pro",
             "GitHub Pages",
@@ -14893,6 +15475,7 @@
             "Majordomus",
             "Tailwind CSS",
             "p5.js",
+            "WebAssembly",
             "GitHub Pages"
           ]
         },
@@ -14919,10 +15502,13 @@
             "JavaScript",
             "HTML",
             "Shell",
+            "FFmpeg",
             "Majordomus",
+            "Puppeteer",
             "Node.js",
             "p5.js",
             "Apache ECharts",
+            "Cytoscape.js",
             "Flowbite Pro",
             "Tailwind CSS",
             "Python"
@@ -14958,6 +15544,8 @@
             "Flowbite Pro",
             "Majordomus",
             "Tailwind CSS",
+            "WebGL",
+            "Vite",
             "Vitest",
             "axe-core",
             "GitHub Pages"
@@ -15025,6 +15613,7 @@
             "HTML",
             "CSS",
             "Alpine.js",
+            "Cytoscape.js",
             "Apache ECharts",
             "Flowbite Pro",
             "GitHub Pages",
@@ -15098,6 +15687,7 @@
             "HTML",
             "CSS",
             "Alpine.js",
+            "Cytoscape.js",
             "Apache ECharts",
             "Flowbite Pro",
             "GitHub Pages",
@@ -15180,6 +15770,7 @@
             "Majordomus",
             "Tailwind CSS",
             "p5.js",
+            "WebAssembly",
             "GitHub Pages"
           ]
         },
@@ -15206,10 +15797,13 @@
             "JavaScript",
             "HTML",
             "Shell",
+            "FFmpeg",
             "Majordomus",
+            "Puppeteer",
             "Node.js",
             "p5.js",
             "Apache ECharts",
+            "Cytoscape.js",
             "Flowbite Pro",
             "Tailwind CSS",
             "Python"
@@ -15247,6 +15841,8 @@
             "Flowbite Pro",
             "Majordomus",
             "Tailwind CSS",
+            "WebGL",
+            "Vite",
             "Vitest",
             "axe-core",
             "GitHub Pages"
@@ -15315,6 +15911,7 @@
             "HTML",
             "CSS",
             "Alpine.js",
+            "Cytoscape.js",
             "Apache ECharts",
             "Flowbite Pro",
             "GitHub Pages",
@@ -15399,6 +15996,7 @@
             "Majordomus",
             "Tailwind CSS",
             "p5.js",
+            "WebAssembly",
             "GitHub Pages"
           ]
         },
@@ -15428,10 +16026,11 @@
             "HTML",
             "MCP",
             "Zola",
-            "Claude API",
+            "Claude Code",
             "LLM",
             "Mermaid",
             "Git",
+            "YAML",
             "GitHub Actions"
           ]
         },
@@ -15628,7 +16227,8 @@
             "Zola",
             "Markdown",
             "GitHub Actions",
-            "GitHub Pages"
+            "GitHub Pages",
+            "Dev Containers"
           ]
         }
       ],
@@ -15689,6 +16289,7 @@
             "HTML",
             "CSS",
             "Alpine.js",
+            "Cytoscape.js",
             "Apache ECharts",
             "Flowbite Pro",
             "GitHub Pages",
@@ -15737,6 +16338,7 @@
             "Majordomus",
             "Tailwind CSS",
             "p5.js",
+            "WebAssembly",
             "GitHub Pages"
           ]
         },
@@ -15763,10 +16365,13 @@
             "JavaScript",
             "HTML",
             "Shell",
+            "FFmpeg",
             "Majordomus",
+            "Puppeteer",
             "Node.js",
             "p5.js",
             "Apache ECharts",
+            "Cytoscape.js",
             "Flowbite Pro",
             "Tailwind CSS",
             "Python"
@@ -15802,6 +16407,8 @@
             "Flowbite Pro",
             "Majordomus",
             "Tailwind CSS",
+            "WebGL",
+            "Vite",
             "Vitest",
             "axe-core",
             "GitHub Pages"
@@ -15935,10 +16542,11 @@
             "HTML",
             "MCP",
             "Zola",
-            "Claude API",
+            "Claude Code",
             "LLM",
             "Mermaid",
             "Git",
+            "YAML",
             "GitHub Actions"
           ]
         },
@@ -16080,6 +16688,7 @@
             "JavaScript",
             "PL/pgSQL",
             "Just",
+            "OpenStreetMap",
             "PostGIS",
             "PostgreSQL",
             "Tailwind CSS",
@@ -16138,10 +16747,12 @@
           "uses": [
             "Elixir",
             "Claude API",
+            "Claude Code",
             "LLM",
             "Ecto",
             "PostgreSQL",
             "Jason",
+            "StreamData",
             "GitLab CI"
           ]
         },
@@ -16173,6 +16784,7 @@
             "Phoenix",
             "Ecto",
             "PostgreSQL",
+            "Oban",
             "OpenApiSpex",
             "Mnesia",
             "Meilisearch",
@@ -16231,8 +16843,12 @@
             "Python",
             "Dockerfile",
             "Makefile",
+            "Django",
+            "Django REST Framework",
+            "Dramatiq",
             "RabbitMQ",
-            "PostgreSQL"
+            "PostgreSQL",
+            "Poetry"
           ]
         },
         {
@@ -16263,6 +16879,10 @@
             "PostgreSQL",
             "Ecto",
             "Broadway",
+            "GenStage",
+            "Elixir Flow",
+            "Req",
+            "Finch",
             "Tailwind CSS",
             "GitLab CI",
             "GitHub Actions"
@@ -16331,6 +16951,7 @@
             "Node.js",
             "Prolog",
             "SwiftUI",
+            "Qt",
             "OpenGL",
             "Dockerfile",
             "PostgreSQL",
@@ -16425,6 +17046,7 @@
             "Shell",
             "Smarty",
             "Kubernetes",
+            "Helm",
             "Couchbase",
             "Elasticsearch",
             "Kibana",
@@ -16432,6 +17054,7 @@
             "etcd",
             "Grafana",
             "Prometheus",
+            "Fluentd",
             "PostgreSQL",
             "Nominatim"
           ]
@@ -16716,7 +17339,8 @@
           "supervised": false,
           "uses": [
             "Ruby",
-            "PostgreSQL"
+            "PostgreSQL",
+            "OAuth"
           ]
         }
       ],
@@ -16823,6 +17447,7 @@
             "JavaScript",
             "PL/pgSQL",
             "Just",
+            "OpenStreetMap",
             "PostGIS",
             "PostgreSQL",
             "Tailwind CSS",
@@ -16929,7 +17554,8 @@
           "share": null,
           "via": [
             "stack",
-            "topic"
+            "topic",
+            "files"
           ],
           "supervised": true,
           "uses": [
@@ -17018,6 +17644,7 @@
             "HTML",
             "CSS",
             "Alpine.js",
+            "Cytoscape.js",
             "Apache ECharts",
             "Flowbite Pro",
             "GitHub Pages",
@@ -17134,6 +17761,7 @@
             "Majordomus",
             "Tailwind CSS",
             "p5.js",
+            "WebAssembly",
             "GitHub Pages"
           ]
         },
@@ -17167,6 +17795,8 @@
             "Flowbite Pro",
             "Majordomus",
             "Tailwind CSS",
+            "WebGL",
+            "Vite",
             "Vitest",
             "axe-core",
             "GitHub Pages"
@@ -17266,6 +17896,7 @@
             "JavaScript",
             "PL/pgSQL",
             "Just",
+            "OpenStreetMap",
             "PostGIS",
             "PostgreSQL",
             "Tailwind CSS",
@@ -17361,7 +17992,7 @@
             "HTML",
             "Python",
             "Shell",
-            "Claude API",
+            "Claude Code",
             "Just",
             "jq",
             "GitHub Actions",
@@ -17448,7 +18079,8 @@
             "Zola",
             "Markdown",
             "GitHub Actions",
-            "GitHub Pages"
+            "GitHub Pages",
+            "Dev Containers"
           ]
         },
         {
@@ -17535,8 +18167,12 @@
             "Python",
             "Dockerfile",
             "Makefile",
+            "Django",
+            "Django REST Framework",
+            "Dramatiq",
             "RabbitMQ",
-            "PostgreSQL"
+            "PostgreSQL",
+            "Poetry"
           ]
         },
         {
@@ -17626,6 +18262,7 @@
             "JavaScript",
             "M4",
             "HTML",
+            "Graphviz",
             "Makefile",
             "Shell",
             "Rust",
@@ -17658,6 +18295,8 @@
             "clap",
             "CSV",
             "Tokio",
+            "Rayon",
+            "Crossbeam",
             "OpenCL"
           ]
         },
@@ -17788,6 +18427,7 @@
           "supervised": false,
           "uses": [
             "C++",
+            "Emscripten",
             "JavaScript",
             "Makefile"
           ]
@@ -17905,6 +18545,7 @@
             "Node.js",
             "Prolog",
             "SwiftUI",
+            "Qt",
             "OpenGL",
             "Dockerfile",
             "PostgreSQL",
@@ -17991,6 +18632,7 @@
             "C++",
             "C",
             "libpcap",
+            "Boost",
             "CMake",
             "Google Test",
             "Travis CI"
@@ -18077,6 +18719,7 @@
             "JavaScript",
             "PL/pgSQL",
             "Just",
+            "OpenStreetMap",
             "PostGIS",
             "PostgreSQL",
             "Tailwind CSS",
@@ -18173,7 +18816,7 @@
             "HTML",
             "Python",
             "Shell",
-            "Claude API",
+            "Claude Code",
             "Just",
             "jq",
             "GitHub Actions",
@@ -18471,6 +19114,7 @@
             "Elixir",
             "Shell",
             "Markdown",
+            "GeoJSON",
             "Phoenix"
           ]
         }
@@ -18573,6 +19217,9 @@
             "JavaScript",
             "Shell",
             "FastAPI",
+            "Uvicorn",
+            "HTTPX",
+            "WebSocket",
             "Tailwind CSS",
             "Flowbite Pro",
             "Leaflet",
@@ -18627,6 +19274,7 @@
             "JavaScript",
             "PL/pgSQL",
             "Just",
+            "OpenStreetMap",
             "PostGIS",
             "PostgreSQL",
             "Tailwind CSS",
@@ -18721,6 +19369,7 @@
             "Phoenix",
             "Ecto",
             "PostgreSQL",
+            "Oban",
             "OpenApiSpex",
             "Mnesia",
             "Meilisearch",
@@ -18790,6 +19439,7 @@
             "Cachex",
             "Tesla",
             "CSV",
+            "OpenStreetMap",
             "Nominatim",
             "Dockerfile"
           ]
@@ -18873,10 +19523,11 @@
             "HTML",
             "MCP",
             "Zola",
-            "Claude API",
+            "Claude Code",
             "LLM",
             "Mermaid",
             "Git",
+            "YAML",
             "GitHub Actions"
           ]
         },
@@ -19030,6 +19681,7 @@
             "CSS",
             "JavaScript",
             "CoffeeScript",
+            "Ruby on Rails",
             "SQLite",
             "SCSS",
             "jQuery"
@@ -19083,6 +19735,9 @@
             "JavaScript",
             "Shell",
             "FastAPI",
+            "Uvicorn",
+            "HTTPX",
+            "WebSocket",
             "Tailwind CSS",
             "Flowbite Pro",
             "Leaflet",
@@ -19195,9 +19850,11 @@
             "HTML",
             "Phoenix",
             "Guardian",
+            "Erlang",
             "React",
             "Redux",
             "Three.js",
+            "WebGL",
             "Brunch"
           ]
         },
@@ -19332,6 +19989,7 @@
             "HTML",
             "CSS",
             "Alpine.js",
+            "Cytoscape.js",
             "Apache ECharts",
             "Flowbite Pro",
             "GitHub Pages",
@@ -19474,6 +20132,7 @@
             "JavaScript",
             "PL/pgSQL",
             "Just",
+            "OpenStreetMap",
             "PostGIS",
             "PostgreSQL",
             "Tailwind CSS",
@@ -19606,6 +20265,7 @@
             "Shell",
             "Smarty",
             "Kubernetes",
+            "Helm",
             "Couchbase",
             "Elasticsearch",
             "Kibana",
@@ -19613,6 +20273,7 @@
             "etcd",
             "Grafana",
             "Prometheus",
+            "Fluentd",
             "PostgreSQL",
             "Nominatim"
           ]
@@ -19672,6 +20333,7 @@
             "Kubernetes",
             "Dockerfile",
             "AWS",
+            "DigitalOcean",
             "RSpec"
           ]
         }
@@ -19756,10 +20418,11 @@
             "HTML",
             "MCP",
             "Zola",
-            "Claude API",
+            "Claude Code",
             "LLM",
             "Mermaid",
             "Git",
+            "YAML",
             "GitHub Actions"
           ]
         },
@@ -19786,7 +20449,7 @@
             "HTML",
             "Python",
             "Shell",
-            "Claude API",
+            "Claude Code",
             "Just",
             "jq",
             "GitHub Actions",
@@ -19821,6 +20484,10 @@
             "PostgreSQL",
             "Ecto",
             "Broadway",
+            "GenStage",
+            "Elixir Flow",
+            "Req",
+            "Finch",
             "Tailwind CSS",
             "GitLab CI",
             "GitHub Actions"
@@ -19850,7 +20517,8 @@
             "Zola",
             "Markdown",
             "GitHub Actions",
-            "GitHub Pages"
+            "GitHub Pages",
+            "Dev Containers"
           ]
         },
         {
@@ -19939,10 +20607,10 @@
       "name": "Claude API",
       "kind": "technology",
       "counts": {
-        "repos": 3,
+        "repos": 1,
         "primary": 0,
-        "sites": 2,
-        "work": 3,
+        "sites": 0,
+        "work": 1,
         "engagements": 1
       },
       "first": 2026,
@@ -19950,77 +20618,10 @@
       "categories": [
         {
           "key": "ai",
-          "n": 2
-        },
-        {
-          "key": "security",
           "n": 1
         }
       ],
       "repos": [
-        {
-          "name": "prismatic-majordomus",
-          "title": "Majordomus",
-          "url": "https://github.com/korczis/prismatic-majordomus",
-          "work": true,
-          "slug": "prismatic-majordomus",
-          "site": "https://korczis.github.io/prismatic-majordomus/",
-          "category": "ai",
-          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
-          "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
-          "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
-          "created": "2026-09-03",
-          "pushed": "2026-11-19",
-          "primary": false,
-          "share": null,
-          "via": [
-            "topic"
-          ],
-          "supervised": true,
-          "uses": [
-            "Rust",
-            "Shell",
-            "JavaScript",
-            "HTML",
-            "MCP",
-            "Zola",
-            "Claude API",
-            "LLM",
-            "Mermaid",
-            "Git",
-            "GitHub Actions"
-          ]
-        },
-        {
-          "name": "osint-case-ratcliffe-moscow-2026",
-          "title": "osint-case-ratcliffe-moscow-2026",
-          "url": "https://github.com/korczis/osint-case-ratcliffe-moscow-2026",
-          "work": true,
-          "slug": "osint-case-ratcliffe-moscow-2026",
-          "site": "https://korczis.github.io/osint-case-ratcliffe-moscow-2026/",
-          "category": "security",
-          "description": "Open-source intelligence assessment of the CIA Director's unannounced Moscow visit (2026-08-25) — maintained with Claude Code skills; reusable OSINT case toolkit",
-          "summary": null,
-          "summary_cs": null,
-          "created": "2026-08-26",
-          "pushed": "2026-08-26",
-          "primary": false,
-          "share": null,
-          "via": [
-            "topic"
-          ],
-          "supervised": false,
-          "uses": [
-            "HTML",
-            "Python",
-            "Shell",
-            "Claude API",
-            "Just",
-            "jq",
-            "GitHub Actions",
-            "GitHub Pages"
-          ]
-        },
         {
           "name": "llm",
           "title": "llm",
@@ -20043,10 +20644,12 @@
           "uses": [
             "Elixir",
             "Claude API",
+            "Claude Code",
             "LLM",
             "Ecto",
             "PostgreSQL",
             "Jason",
+            "StreamData",
             "GitLab CI"
           ]
         }
@@ -20312,6 +20915,7 @@
             "Phoenix",
             "Ecto",
             "PostgreSQL",
+            "Oban",
             "OpenApiSpex",
             "Mnesia",
             "Meilisearch",
@@ -20375,6 +20979,7 @@
             "Elixir",
             "Shell",
             "Markdown",
+            "GeoJSON",
             "Phoenix"
           ]
         },
@@ -20528,6 +21133,10 @@
             "PostgreSQL",
             "Ecto",
             "Broadway",
+            "GenStage",
+            "Elixir Flow",
+            "Req",
+            "Finch",
             "Tailwind CSS",
             "GitLab CI",
             "GitHub Actions"
@@ -20652,6 +21261,7 @@
             "Node.js",
             "Prolog",
             "SwiftUI",
+            "Qt",
             "OpenGL",
             "Dockerfile",
             "PostgreSQL",
@@ -20685,6 +21295,7 @@
             "JavaScript",
             "M4",
             "HTML",
+            "Graphviz",
             "Makefile",
             "Shell",
             "Rust",
@@ -20916,6 +21527,7 @@
             "Elm",
             "C",
             "Java",
+            "Software-defined radio",
             "Rustler",
             "OpenCL",
             "Phoenix",
@@ -20981,9 +21593,11 @@
             "HTML",
             "Phoenix",
             "Guardian",
+            "Erlang",
             "React",
             "Redux",
             "Three.js",
+            "WebGL",
             "Brunch"
           ]
         }
@@ -21037,6 +21651,10 @@
             "PostgreSQL",
             "Ecto",
             "Broadway",
+            "GenStage",
+            "Elixir Flow",
+            "Req",
+            "Finch",
             "Tailwind CSS",
             "GitLab CI",
             "GitHub Actions"
@@ -21123,6 +21741,8 @@
           "supervised": false,
           "uses": [
             "Elixir",
+            "Nx",
+            "Axon",
             "KuzuDB",
             "Meilisearch"
           ]
@@ -21155,6 +21775,7 @@
             "Phoenix",
             "Ecto",
             "PostgreSQL",
+            "Oban",
             "OpenApiSpex",
             "Mnesia",
             "Meilisearch",
@@ -21304,6 +21925,7 @@
             "Node.js",
             "Prolog",
             "SwiftUI",
+            "Qt",
             "OpenGL",
             "Dockerfile",
             "PostgreSQL",
@@ -21360,6 +21982,7 @@
             "JavaScript",
             "M4",
             "HTML",
+            "Graphviz",
             "Makefile",
             "Shell",
             "Rust",
@@ -21562,6 +22185,7 @@
             "Elm",
             "C",
             "Java",
+            "Software-defined radio",
             "Rustler",
             "OpenCL",
             "Phoenix",
@@ -21613,6 +22237,7 @@
             "Shell",
             "Smarty",
             "Kubernetes",
+            "Helm",
             "Couchbase",
             "Elasticsearch",
             "Kibana",
@@ -21620,6 +22245,7 @@
             "etcd",
             "Grafana",
             "Prometheus",
+            "Fluentd",
             "PostgreSQL",
             "Nominatim"
           ]
@@ -21772,6 +22398,7 @@
             "CSS",
             "JavaScript",
             "CoffeeScript",
+            "Ruby on Rails",
             "SQLite",
             "SCSS",
             "jQuery"
@@ -21843,6 +22470,7 @@
             "HTML",
             "CSS",
             "Alpine.js",
+            "Cytoscape.js",
             "Apache ECharts",
             "Flowbite Pro",
             "GitHub Pages",
@@ -21880,10 +22508,13 @@
             "JavaScript",
             "HTML",
             "Shell",
+            "FFmpeg",
             "Majordomus",
+            "Puppeteer",
             "Node.js",
             "p5.js",
             "Apache ECharts",
+            "Cytoscape.js",
             "Flowbite Pro",
             "Tailwind CSS",
             "Python"
@@ -22284,6 +22915,7 @@
             "Node.js",
             "Prolog",
             "SwiftUI",
+            "Qt",
             "OpenGL",
             "Dockerfile",
             "PostgreSQL",
@@ -22315,6 +22947,7 @@
             "JavaScript",
             "Rust",
             "Node.js",
+            "Flow",
             "Babel",
             "gRPC",
             "Protocol Buffers",
@@ -22372,7 +23005,8 @@
           "supervised": false,
           "uses": [
             "JavaScript",
-            "Node.js"
+            "Node.js",
+            "Koa"
           ]
         },
         {
@@ -22481,6 +23115,7 @@
             "Python",
             "NumPy",
             "pandas",
+            "scikit-learn",
             "Java",
             "Go",
             "Node.js",
@@ -22831,6 +23466,7 @@
           "uses": [
             "JavaScript",
             "Node.js",
+            "Jasmine",
             "Travis CI"
           ]
         },
@@ -22953,7 +23589,8 @@
           "supervised": false,
           "uses": [
             "Rust",
-            "Travis CI"
+            "Travis CI",
+            "Clippy"
           ]
         },
         {
@@ -22979,6 +23616,7 @@
             "Elixir",
             "Rust",
             "Rustler",
+            "Erlang",
             "Travis CI"
           ]
         },
@@ -23040,6 +23678,7 @@
             "Elm",
             "C",
             "Java",
+            "Software-defined radio",
             "Rustler",
             "OpenCL",
             "Phoenix",
@@ -23093,6 +23732,7 @@
           "uses": [
             "Elixir",
             "Shell",
+            "ExUnit",
             "Travis CI"
           ]
         },
@@ -23280,6 +23920,7 @@
             "C++",
             "C",
             "libpcap",
+            "Boost",
             "CMake",
             "Google Test",
             "Travis CI"
@@ -23543,6 +24184,7 @@
           "uses": [
             "JavaScript",
             "Node.js",
+            "Jasmine",
             "Travis CI"
           ]
         },
@@ -23646,10 +24288,12 @@
           "uses": [
             "Elixir",
             "Claude API",
+            "Claude Code",
             "LLM",
             "Ecto",
             "PostgreSQL",
             "Jason",
+            "StreamData",
             "GitLab CI"
           ]
         },
@@ -23675,8 +24319,10 @@
           "uses": [
             "TypeScript",
             "JavaScript",
+            "Rollup",
             "Vitest",
             "ESLint",
+            "Prettier",
             "GitLab CI"
           ]
         },
@@ -23767,6 +24413,7 @@
             "Jason",
             "ExDoc",
             "Credo",
+            "Dialyzer",
             "GitLab CI"
           ]
         },
@@ -23828,6 +24475,7 @@
             "Elixir",
             "Python",
             "KuzuDB",
+            "Cypher",
             "Tesla",
             "Jason",
             "Dockerfile",
@@ -23890,6 +24538,10 @@
             "PostgreSQL",
             "Ecto",
             "Broadway",
+            "GenStage",
+            "Elixir Flow",
+            "Req",
+            "Finch",
             "Tailwind CSS",
             "GitLab CI",
             "GitHub Actions"
@@ -23927,6 +24579,7 @@
             "Node.js",
             "Prolog",
             "SwiftUI",
+            "Qt",
             "OpenGL",
             "Dockerfile",
             "PostgreSQL",
@@ -23960,6 +24613,7 @@
             "JavaScript",
             "M4",
             "HTML",
+            "Graphviz",
             "Makefile",
             "Shell",
             "Rust",
@@ -24144,6 +24798,7 @@
             "JavaScript",
             "Rust",
             "Node.js",
+            "Flow",
             "Babel",
             "gRPC",
             "Protocol Buffers",
@@ -24453,6 +25108,7 @@
             "JavaScript",
             "Rust",
             "Node.js",
+            "Flow",
             "Babel",
             "gRPC",
             "Protocol Buffers",
@@ -24678,6 +25334,7 @@
             "Elixir",
             "Shell",
             "Markdown",
+            "GeoJSON",
             "Phoenix"
           ]
         },
@@ -24751,7 +25408,8 @@
             "Zola",
             "Markdown",
             "GitHub Actions",
-            "GitHub Pages"
+            "GitHub Pages",
+            "Dev Containers"
           ]
         },
         {
@@ -25109,6 +25767,7 @@
             "Cachex",
             "Tesla",
             "CSV",
+            "OpenStreetMap",
             "Nominatim",
             "Dockerfile"
           ]
@@ -25194,6 +25853,8 @@
             "clap",
             "CSV",
             "Tokio",
+            "Rayon",
+            "Crossbeam",
             "OpenCL"
           ]
         },
@@ -25470,6 +26131,7 @@
             "Elixir",
             "Rust",
             "Rustler",
+            "Erlang",
             "Travis CI"
           ]
         },
@@ -25531,6 +26193,7 @@
             "Elm",
             "C",
             "Java",
+            "Software-defined radio",
             "Rustler",
             "OpenCL",
             "Phoenix",
@@ -25688,10 +26351,12 @@
           "uses": [
             "Elixir",
             "Claude API",
+            "Claude Code",
             "LLM",
             "Ecto",
             "PostgreSQL",
             "Jason",
+            "StreamData",
             "GitLab CI"
           ]
         },
@@ -25723,6 +26388,7 @@
             "Phoenix",
             "Ecto",
             "PostgreSQL",
+            "Oban",
             "OpenApiSpex",
             "Mnesia",
             "Meilisearch",
@@ -25758,6 +26424,10 @@
             "PostgreSQL",
             "Ecto",
             "Broadway",
+            "GenStage",
+            "Elixir Flow",
+            "Req",
+            "Finch",
             "Tailwind CSS",
             "GitLab CI",
             "GitHub Actions"
@@ -25950,10 +26620,12 @@
           "uses": [
             "Elixir",
             "Claude API",
+            "Claude Code",
             "LLM",
             "Ecto",
             "PostgreSQL",
             "Jason",
+            "StreamData",
             "GitLab CI"
           ]
         },
@@ -26013,6 +26685,7 @@
             "Jason",
             "ExDoc",
             "Credo",
+            "Dialyzer",
             "GitLab CI"
           ]
         },
@@ -26039,6 +26712,7 @@
             "Elixir",
             "Python",
             "KuzuDB",
+            "Cypher",
             "Tesla",
             "Jason",
             "Dockerfile",
@@ -26095,6 +26769,7 @@
             "Jason",
             "ExDoc",
             "Credo",
+            "Dialyzer",
             "GitLab CI"
           ]
         },
@@ -26708,6 +27383,7 @@
             "Node.js",
             "Prolog",
             "SwiftUI",
+            "Qt",
             "OpenGL",
             "Dockerfile",
             "PostgreSQL",
@@ -26770,6 +27446,7 @@
             "Shell",
             "Smarty",
             "Kubernetes",
+            "Helm",
             "Couchbase",
             "Elasticsearch",
             "Kibana",
@@ -26777,6 +27454,7 @@
             "etcd",
             "Grafana",
             "Prometheus",
+            "Fluentd",
             "PostgreSQL",
             "Nominatim"
           ]
@@ -26935,6 +27613,7 @@
             "Node.js",
             "Prolog",
             "SwiftUI",
+            "Qt",
             "OpenGL",
             "Dockerfile",
             "PostgreSQL",
@@ -26997,6 +27676,7 @@
             "Shell",
             "Smarty",
             "Kubernetes",
+            "Helm",
             "Couchbase",
             "Elasticsearch",
             "Kibana",
@@ -27004,6 +27684,7 @@
             "etcd",
             "Grafana",
             "Prometheus",
+            "Fluentd",
             "PostgreSQL",
             "Nominatim"
           ]
@@ -27185,6 +27866,7 @@
             "Ruby",
             "RabbitMQ",
             "MongoDB",
+            "Memcached",
             "SQLite"
           ]
         },
@@ -27499,6 +28181,7 @@
             "Shell",
             "Smarty",
             "Kubernetes",
+            "Helm",
             "Couchbase",
             "Elasticsearch",
             "Kibana",
@@ -27506,6 +28189,7 @@
             "etcd",
             "Grafana",
             "Prometheus",
+            "Fluentd",
             "PostgreSQL",
             "Nominatim"
           ]
@@ -27707,8 +28391,12 @@
             "Python",
             "Dockerfile",
             "Makefile",
+            "Django",
+            "Django REST Framework",
+            "Dramatiq",
             "RabbitMQ",
-            "PostgreSQL"
+            "PostgreSQL",
+            "Poetry"
           ]
         },
         {
@@ -27734,6 +28422,7 @@
             "Shell",
             "Smarty",
             "Kubernetes",
+            "Helm",
             "Couchbase",
             "Elasticsearch",
             "Kibana",
@@ -27741,6 +28430,7 @@
             "etcd",
             "Grafana",
             "Prometheus",
+            "Fluentd",
             "PostgreSQL",
             "Nominatim"
           ]
@@ -27768,6 +28458,7 @@
             "Ruby",
             "RabbitMQ",
             "MongoDB",
+            "Memcached",
             "SQLite"
           ]
         },
@@ -28613,6 +29304,7 @@
             "CSS",
             "JavaScript",
             "CoffeeScript",
+            "Ruby on Rails",
             "SQLite",
             "SCSS",
             "jQuery"
@@ -29731,6 +30423,7 @@
             "Kubernetes",
             "Dockerfile",
             "AWS",
+            "DigitalOcean",
             "RSpec"
           ]
         },
@@ -29927,6 +30620,7 @@
             "Kubernetes",
             "Dockerfile",
             "AWS",
+            "DigitalOcean",
             "RSpec"
           ]
         },
@@ -30038,6 +30732,8 @@
             "clap",
             "CSV",
             "Tokio",
+            "Rayon",
+            "Crossbeam",
             "OpenCL"
           ]
         },
@@ -30327,6 +31023,7 @@
           "uses": [
             "Shell",
             "Ansible",
+            "Arch Linux",
             "Vagrant",
             "VirtualBox",
             "Dockerfile",
@@ -30576,6 +31273,7 @@
             "Kubernetes",
             "Dockerfile",
             "AWS",
+            "DigitalOcean",
             "RSpec"
           ]
         }
@@ -30702,6 +31400,7 @@
             "Cachex",
             "Tesla",
             "CSV",
+            "OpenStreetMap",
             "Nominatim",
             "Dockerfile"
           ]
@@ -30729,6 +31428,7 @@
             "Shell",
             "Smarty",
             "Kubernetes",
+            "Helm",
             "Couchbase",
             "Elasticsearch",
             "Kibana",
@@ -30736,6 +31436,7 @@
             "etcd",
             "Grafana",
             "Prometheus",
+            "Fluentd",
             "PostgreSQL",
             "Nominatim"
           ]
@@ -30825,6 +31526,7 @@
             "Python",
             "NumPy",
             "pandas",
+            "scikit-learn",
             "Java",
             "Go",
             "Node.js",
@@ -30948,6 +31650,7 @@
             "CSS",
             "JavaScript",
             "CoffeeScript",
+            "Ruby on Rails",
             "SQLite",
             "SCSS",
             "jQuery"
@@ -30976,6 +31679,7 @@
             "Ruby",
             "RabbitMQ",
             "MongoDB",
+            "Memcached",
             "SQLite"
           ]
         }
@@ -31039,10 +31743,11 @@
             "HTML",
             "MCP",
             "Zola",
-            "Claude API",
+            "Claude Code",
             "LLM",
             "Mermaid",
             "Git",
+            "YAML",
             "GitHub Actions"
           ]
         },
@@ -31230,6 +31935,7 @@
             "Python",
             "NumPy",
             "pandas",
+            "scikit-learn",
             "Java",
             "Go",
             "Node.js",
@@ -31316,6 +32022,7 @@
           "uses": [
             "Shell",
             "Ansible",
+            "Arch Linux",
             "Vagrant",
             "VirtualBox",
             "Dockerfile",
@@ -31458,6 +32165,7 @@
             "Shell",
             "Smarty",
             "Kubernetes",
+            "Helm",
             "Couchbase",
             "Elasticsearch",
             "Kibana",
@@ -31465,6 +32173,7 @@
             "etcd",
             "Grafana",
             "Prometheus",
+            "Fluentd",
             "PostgreSQL",
             "Nominatim"
           ]
@@ -31497,6 +32206,7 @@
             "Kubernetes",
             "Dockerfile",
             "AWS",
+            "DigitalOcean",
             "RSpec"
           ]
         }
@@ -31608,6 +32318,7 @@
             "Shell",
             "Smarty",
             "Kubernetes",
+            "Helm",
             "Couchbase",
             "Elasticsearch",
             "Kibana",
@@ -31615,6 +32326,7 @@
             "etcd",
             "Grafana",
             "Prometheus",
+            "Fluentd",
             "PostgreSQL",
             "Nominatim"
           ]
@@ -31700,6 +32412,7 @@
             "JavaScript",
             "Rust",
             "Node.js",
+            "Flow",
             "Babel",
             "gRPC",
             "Protocol Buffers",
@@ -31923,7 +32636,7 @@
             "HTML",
             "Python",
             "Shell",
-            "Claude API",
+            "Claude Code",
             "Just",
             "jq",
             "GitHub Actions",
@@ -31955,6 +32668,7 @@
             "Python",
             "NumPy",
             "pandas",
+            "scikit-learn",
             "Java",
             "Go",
             "Node.js",
@@ -32041,8 +32755,10 @@
           "uses": [
             "TypeScript",
             "JavaScript",
+            "Rollup",
             "Vitest",
             "ESLint",
+            "Prettier",
             "GitLab CI"
           ]
         },
@@ -32150,6 +32866,7 @@
             "HTML",
             "CSS",
             "Alpine.js",
+            "Cytoscape.js",
             "Apache ECharts",
             "Flowbite Pro",
             "GitHub Pages",
@@ -32228,6 +32945,8 @@
             "Flowbite Pro",
             "Majordomus",
             "Tailwind CSS",
+            "WebGL",
+            "Vite",
             "Vitest",
             "axe-core",
             "GitHub Pages"
@@ -32662,6 +33381,7 @@
             "Jason",
             "ExDoc",
             "Credo",
+            "Dialyzer",
             "GitLab CI"
           ]
         },
@@ -32811,6 +33531,7 @@
             "Elixir",
             "Python",
             "KuzuDB",
+            "Cypher",
             "Tesla",
             "Jason",
             "Dockerfile",
@@ -32845,6 +33566,7 @@
             "Cachex",
             "Tesla",
             "CSV",
+            "OpenStreetMap",
             "Nominatim",
             "Dockerfile"
           ]
@@ -33093,9 +33815,11 @@
             "HTML",
             "Phoenix",
             "Guardian",
+            "Erlang",
             "React",
             "Redux",
             "Three.js",
+            "WebGL",
             "Brunch"
           ]
         }
@@ -33323,6 +34047,7 @@
             "JavaScript",
             "Rust",
             "Node.js",
+            "Flow",
             "Babel",
             "gRPC",
             "Protocol Buffers",
@@ -33498,6 +34223,7 @@
             "Phoenix",
             "Ecto",
             "PostgreSQL",
+            "Oban",
             "OpenApiSpex",
             "Mnesia",
             "Meilisearch",
@@ -33751,6 +34477,7 @@
             "UIKit",
             "AVFoundation",
             "Vision",
+            "Core Data",
             "Xcode"
           ]
         },
@@ -33858,6 +34585,7 @@
             "UIKit",
             "AVFoundation",
             "Vision",
+            "Core Data",
             "Xcode"
           ]
         },
@@ -33971,6 +34699,7 @@
             "Node.js",
             "Prolog",
             "SwiftUI",
+            "Qt",
             "OpenGL",
             "Dockerfile",
             "PostgreSQL",
@@ -34037,6 +34766,7 @@
             "Node.js",
             "Prolog",
             "SwiftUI",
+            "Qt",
             "OpenGL",
             "Dockerfile",
             "PostgreSQL",
@@ -34070,6 +34800,7 @@
             "UIKit",
             "AVFoundation",
             "Vision",
+            "Core Data",
             "Xcode"
           ]
         }
@@ -34147,6 +34878,7 @@
             "UIKit",
             "AVFoundation",
             "Vision",
+            "Core Data",
             "Xcode"
           ]
         }
@@ -34224,6 +34956,7 @@
             "UIKit",
             "AVFoundation",
             "Vision",
+            "Core Data",
             "Xcode"
           ]
         }
@@ -34523,6 +35256,8 @@
             "Flowbite Pro",
             "Majordomus",
             "Tailwind CSS",
+            "WebGL",
+            "Vite",
             "Vitest",
             "axe-core",
             "GitHub Pages"
@@ -34550,8 +35285,10 @@
           "uses": [
             "TypeScript",
             "JavaScript",
+            "Rollup",
             "Vitest",
             "ESLint",
+            "Prettier",
             "GitLab CI"
           ]
         }
@@ -34604,6 +35341,7 @@
             "JavaScript",
             "Rust",
             "Node.js",
+            "Flow",
             "Babel",
             "gRPC",
             "Protocol Buffers",
@@ -34718,6 +35456,7 @@
             "C++",
             "C",
             "libpcap",
+            "Boost",
             "CMake",
             "Google Test",
             "Travis CI"
@@ -34771,6 +35510,9 @@
             "JavaScript",
             "Shell",
             "FastAPI",
+            "Uvicorn",
+            "HTTPX",
+            "WebSocket",
             "Tailwind CSS",
             "Flowbite Pro",
             "Leaflet",
@@ -34940,6 +35682,7 @@
             "Python",
             "NumPy",
             "pandas",
+            "scikit-learn",
             "Java",
             "Go",
             "Node.js",
@@ -35029,6 +35772,7 @@
             "Python",
             "NumPy",
             "pandas",
+            "scikit-learn",
             "Java",
             "Go",
             "Node.js",
@@ -35272,6 +36016,7 @@
             "Kubernetes",
             "Dockerfile",
             "AWS",
+            "DigitalOcean",
             "RSpec"
           ]
         }
@@ -35374,6 +36119,7 @@
           ],
           "supervised": false,
           "uses": [
+            "Tor",
             "AWS"
           ]
         },
@@ -35431,6 +36177,7 @@
             "Kubernetes",
             "Dockerfile",
             "AWS",
+            "DigitalOcean",
             "RSpec"
           ]
         }
@@ -35513,6 +36260,8 @@
             "clap",
             "CSV",
             "Tokio",
+            "Rayon",
+            "Crossbeam",
             "OpenCL"
           ]
         }
@@ -35593,6 +36342,7 @@
             "JavaScript",
             "Rust",
             "Node.js",
+            "Flow",
             "Babel",
             "gRPC",
             "Protocol Buffers",
@@ -35680,6 +36430,7 @@
             "Shell",
             "Smarty",
             "Kubernetes",
+            "Helm",
             "Couchbase",
             "Elasticsearch",
             "Kibana",
@@ -35687,6 +36438,7 @@
             "etcd",
             "Grafana",
             "Prometheus",
+            "Fluentd",
             "PostgreSQL",
             "Nominatim"
           ]
@@ -35841,6 +36593,7 @@
             "JavaScript",
             "Rust",
             "Node.js",
+            "Flow",
             "Babel",
             "gRPC",
             "Protocol Buffers",
@@ -35927,6 +36680,7 @@
             "C++",
             "C",
             "libpcap",
+            "Boost",
             "CMake",
             "Google Test",
             "Travis CI"
@@ -35984,10 +36738,11 @@
             "HTML",
             "MCP",
             "Zola",
-            "Claude API",
+            "Claude Code",
             "LLM",
             "Mermaid",
             "Git",
+            "YAML",
             "GitHub Actions"
           ]
         },
@@ -36013,10 +36768,12 @@
           "uses": [
             "Elixir",
             "Claude API",
+            "Claude Code",
             "LLM",
             "Ecto",
             "PostgreSQL",
             "Jason",
+            "StreamData",
             "GitLab CI"
           ]
         },
@@ -36153,6 +36910,9 @@
             "JavaScript",
             "Shell",
             "FastAPI",
+            "Uvicorn",
+            "HTTPX",
+            "WebSocket",
             "Tailwind CSS",
             "Flowbite Pro",
             "Leaflet",
@@ -36273,9 +37033,11 @@
             "HTML",
             "Phoenix",
             "Guardian",
+            "Erlang",
             "React",
             "Redux",
             "Three.js",
+            "WebGL",
             "Brunch"
           ]
         }
@@ -36337,6 +37099,7 @@
             "Node.js",
             "Prolog",
             "SwiftUI",
+            "Qt",
             "OpenGL",
             "Dockerfile",
             "PostgreSQL",
@@ -36421,6 +37184,7 @@
             "Elm",
             "C",
             "Java",
+            "Software-defined radio",
             "Rustler",
             "OpenCL",
             "Phoenix",
@@ -36452,6 +37216,8 @@
             "clap",
             "CSV",
             "Tokio",
+            "Rayon",
+            "Crossbeam",
             "OpenCL"
           ]
         }
@@ -36537,6 +37303,7 @@
             "Jason",
             "ExDoc",
             "Credo",
+            "Dialyzer",
             "GitLab CI"
           ]
         }
@@ -36593,6 +37360,7 @@
             "Jason",
             "ExDoc",
             "Credo",
+            "Dialyzer",
             "GitLab CI"
           ]
         },
@@ -36619,6 +37387,7 @@
             "Elixir",
             "Python",
             "KuzuDB",
+            "Cypher",
             "Tesla",
             "Jason",
             "Dockerfile",
@@ -36676,6 +37445,7 @@
             "Phoenix",
             "Ecto",
             "PostgreSQL",
+            "Oban",
             "OpenApiSpex",
             "Mnesia",
             "Meilisearch",
@@ -36764,6 +37534,7 @@
             "Cachex",
             "Tesla",
             "CSV",
+            "OpenStreetMap",
             "Nominatim",
             "Dockerfile"
           ]
@@ -36856,6 +37627,7 @@
             "Phoenix",
             "Ecto",
             "PostgreSQL",
+            "Oban",
             "OpenApiSpex",
             "Mnesia",
             "Meilisearch",
@@ -37229,9 +38001,11 @@
             "HTML",
             "Phoenix",
             "Guardian",
+            "Erlang",
             "React",
             "Redux",
             "Three.js",
+            "WebGL",
             "Brunch"
           ]
         }
@@ -37320,9 +38094,11 @@
             "HTML",
             "Phoenix",
             "Guardian",
+            "Erlang",
             "React",
             "Redux",
             "Three.js",
+            "WebGL",
             "Brunch"
           ]
         }
@@ -37465,6 +38241,7 @@
           "uses": [
             "Shell",
             "Ansible",
+            "Arch Linux",
             "Vagrant",
             "VirtualBox",
             "Dockerfile",
@@ -37548,6 +38325,7 @@
             "HTML",
             "CSS",
             "Alpine.js",
+            "Cytoscape.js",
             "Apache ECharts",
             "Flowbite Pro",
             "GitHub Pages",
@@ -37644,6 +38422,8 @@
           "supervised": false,
           "uses": [
             "Elixir",
+            "Nx",
+            "Axon",
             "KuzuDB",
             "Meilisearch"
           ]
@@ -37671,6 +38451,7 @@
             "Elixir",
             "Python",
             "KuzuDB",
+            "Cypher",
             "Tesla",
             "Jason",
             "Dockerfile",
@@ -38132,6 +38913,7 @@
           "uses": [
             "Shell",
             "Ansible",
+            "Arch Linux",
             "Vagrant",
             "VirtualBox",
             "Dockerfile",
@@ -38242,6 +39024,2927 @@
             "Ruby",
             "Shell",
             "curl"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "django": {
+      "name": "Django",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 0,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2024,
+      "last": 2025,
+      "categories": [
+        {
+          "key": "tools",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "pdf_renderer",
+          "title": "pdf_renderer",
+          "url": "https://gitlab.com/korczis/pdf_renderer",
+          "work": true,
+          "slug": "pdf-renderer",
+          "site": null,
+          "category": "tools",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2024-03-24",
+          "pushed": "2025-12-20",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Python",
+            "Dockerfile",
+            "Makefile",
+            "Django",
+            "Django REST Framework",
+            "Dramatiq",
+            "RabbitMQ",
+            "PostgreSQL",
+            "Poetry"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "django-rest-framework": {
+      "name": "Django REST Framework",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 0,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2024,
+      "last": 2025,
+      "categories": [
+        {
+          "key": "tools",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "pdf_renderer",
+          "title": "pdf_renderer",
+          "url": "https://gitlab.com/korczis/pdf_renderer",
+          "work": true,
+          "slug": "pdf-renderer",
+          "site": null,
+          "category": "tools",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2024-03-24",
+          "pushed": "2025-12-20",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Python",
+            "Dockerfile",
+            "Makefile",
+            "Django",
+            "Django REST Framework",
+            "Dramatiq",
+            "RabbitMQ",
+            "PostgreSQL",
+            "Poetry"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "ruby-on-rails": {
+      "name": "Ruby on Rails",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 0,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2014,
+      "last": 2014,
+      "categories": [
+        {
+          "key": "data",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "gooddata_rails_app",
+          "title": "gooddata_rails_app",
+          "url": "https://github.com/korczis/gooddata_rails_app",
+          "work": true,
+          "slug": "gooddata-rails-app",
+          "site": null,
+          "category": "data",
+          "description": "GoodData as Rails Application",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2014-10-31",
+          "pushed": "2014-10-31",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Ruby",
+            "CSS",
+            "JavaScript",
+            "CoffeeScript",
+            "Ruby on Rails",
+            "SQLite",
+            "SCSS",
+            "jQuery"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "oban": {
+      "name": "Oban",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 0,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2025,
+      "last": 2026,
+      "categories": [
+        {
+          "key": "ai",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "sig",
+          "title": "sig",
+          "url": "https://gitlab.com/korczis/sig",
+          "work": true,
+          "slug": "sig",
+          "site": null,
+          "category": "ai",
+          "description": "distributed cognitive framework in Elixir/OTP.",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2025-08-23",
+          "pushed": "2026-02-04",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Elixir",
+            "EEx and HEEx",
+            "Shell",
+            "TypeScript",
+            "Erlang",
+            "Phoenix",
+            "Ecto",
+            "PostgreSQL",
+            "Oban",
+            "OpenApiSpex",
+            "Mnesia",
+            "Meilisearch",
+            "Dockerfile",
+            "Fly.io"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "webassembly": {
+      "name": "WebAssembly",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 1,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2026,
+      "last": 2026,
+      "categories": [
+        {
+          "key": "knowledge",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "kompendium-epistemicke-anihilace",
+          "title": "Kompendium",
+          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
+          "work": true,
+          "slug": "kompendium-epistemicke-anihilace",
+          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+          "category": "knowledge",
+          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
+          "summary": "A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore.",
+          "summary_cs": "Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat.",
+          "created": "2026-11-09",
+          "pushed": "2026-11-19",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "Elixir",
+            "JavaScript",
+            "Python",
+            "HTML",
+            "Shell",
+            "Rust",
+            "Zola",
+            "Cytoscape.js",
+            "Apache ECharts",
+            "Alpine.js",
+            "Flowbite Pro",
+            "Majordomus",
+            "Tailwind CSS",
+            "p5.js",
+            "WebAssembly",
+            "GitHub Pages"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "emscripten": {
+      "name": "Emscripten",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 0,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2014,
+      "last": 2014,
+      "categories": [
+        {
+          "key": "learning",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "skull-emscripten",
+          "title": "skull-emscripten",
+          "url": "https://github.com/korczis/skull-emscripten",
+          "work": true,
+          "slug": "skull-emscripten",
+          "site": null,
+          "category": "learning",
+          "description": "Emscripten Skull",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2014-11-03",
+          "pushed": "2014-11-03",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "C++",
+            "Emscripten",
+            "JavaScript",
+            "Makefile"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "helm": {
+      "name": "Helm",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 0,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2017,
+      "last": 2018,
+      "categories": [
+        {
+          "key": "systems",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "cluster-kubernetes",
+          "title": "cluster-kubernetes",
+          "url": "https://github.com/korczis/cluster-kubernetes",
+          "work": true,
+          "slug": "cluster-kubernetes",
+          "site": null,
+          "category": "systems",
+          "description": "Kubernetes Cluster",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2017-03-14",
+          "pushed": "2018-01-30",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Shell",
+            "Smarty",
+            "Kubernetes",
+            "Helm",
+            "Couchbase",
+            "Elasticsearch",
+            "Kibana",
+            "RabbitMQ",
+            "etcd",
+            "Grafana",
+            "Prometheus",
+            "Fluentd",
+            "PostgreSQL",
+            "Nominatim"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "scikit-learn": {
+      "name": "scikit-learn",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 0,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2015,
+      "last": 2015,
+      "categories": [
+        {
+          "key": "systems",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "docker-datasciencetoolbox",
+          "title": "docker-datasciencetoolbox",
+          "url": "https://github.com/korczis/docker-datasciencetoolbox",
+          "work": true,
+          "slug": "docker-datasciencetoolbox",
+          "site": null,
+          "category": "systems",
+          "description": "Dockerized http://datasciencetoolbox.org",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2015-06-06",
+          "pushed": "2015-06-06",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Dockerfile",
+            "Ubuntu",
+            "Python",
+            "NumPy",
+            "pandas",
+            "scikit-learn",
+            "Java",
+            "Go",
+            "Node.js",
+            "jq"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "raspberry-pi": {
+      "name": "Raspberry Pi",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 0,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2013,
+      "last": 2013,
+      "categories": [
+        {
+          "key": "learning",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "malina",
+          "title": "malina",
+          "url": "https://github.com/korczis/malina",
+          "work": true,
+          "slug": "malina",
+          "site": null,
+          "category": "learning",
+          "description": "Raspberry Pi playground",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2013-01-06",
+          "pushed": "2013-01-08",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Shell",
+            "Raspberry Pi"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "nx": {
+      "name": "Nx",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 0,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2024,
+      "last": 2026,
+      "categories": [
+        {
+          "key": "tools",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "prism",
+          "title": "prism",
+          "url": "https://gitlab.com/korczis/prism",
+          "work": true,
+          "slug": "prism",
+          "site": null,
+          "category": "tools",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2024-12-01",
+          "pushed": "2026-02-04",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Elixir",
+            "Nx",
+            "Axon",
+            "KuzuDB",
+            "Meilisearch"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "axon": {
+      "name": "Axon",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 0,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2024,
+      "last": 2026,
+      "categories": [
+        {
+          "key": "tools",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "prism",
+          "title": "prism",
+          "url": "https://gitlab.com/korczis/prism",
+          "work": true,
+          "slug": "prism",
+          "site": null,
+          "category": "tools",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2024-12-01",
+          "pushed": "2026-02-04",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Elixir",
+            "Nx",
+            "Axon",
+            "KuzuDB",
+            "Meilisearch"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "genstage": {
+      "name": "GenStage",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 0,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2025,
+      "last": 2025,
+      "categories": [
+        {
+          "key": "tools",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "prismatic",
+          "title": "prismatic",
+          "url": "https://github.com/korczis/prismatic",
+          "work": true,
+          "slug": "prismatic",
+          "site": null,
+          "category": "tools",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2025-07-24",
+          "pushed": "2025-08-04",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Elixir",
+            "JavaScript",
+            "Python",
+            "Shell",
+            "Phoenix",
+            "PostgreSQL",
+            "Ecto",
+            "Broadway",
+            "GenStage",
+            "Elixir Flow",
+            "Req",
+            "Finch",
+            "Tailwind CSS",
+            "GitLab CI",
+            "GitHub Actions"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "elixir-flow": {
+      "name": "Elixir Flow",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 0,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2025,
+      "last": 2025,
+      "categories": [
+        {
+          "key": "tools",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "prismatic",
+          "title": "prismatic",
+          "url": "https://github.com/korczis/prismatic",
+          "work": true,
+          "slug": "prismatic",
+          "site": null,
+          "category": "tools",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2025-07-24",
+          "pushed": "2025-08-04",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Elixir",
+            "JavaScript",
+            "Python",
+            "Shell",
+            "Phoenix",
+            "PostgreSQL",
+            "Ecto",
+            "Broadway",
+            "GenStage",
+            "Elixir Flow",
+            "Req",
+            "Finch",
+            "Tailwind CSS",
+            "GitLab CI",
+            "GitHub Actions"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "flow": {
+      "name": "Flow",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 0,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2018,
+      "last": 2018,
+      "categories": [
+        {
+          "key": "tools",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "bcnode-old",
+          "title": "bcnode-old",
+          "url": "https://github.com/korczis/bcnode-old",
+          "work": true,
+          "slug": "bcnode-old",
+          "site": null,
+          "category": "tools",
+          "description": "Mining node with built-in block rover and DHT. ",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2018-01-07",
+          "pushed": "2018-04-12",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "JavaScript",
+            "Rust",
+            "Node.js",
+            "Flow",
+            "Babel",
+            "gRPC",
+            "Protocol Buffers",
+            "libp2p",
+            "RocksDB",
+            "Dockerfile",
+            "Jest",
+            "webpack"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "req": {
+      "name": "Req",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 0,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2025,
+      "last": 2025,
+      "categories": [
+        {
+          "key": "tools",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "prismatic",
+          "title": "prismatic",
+          "url": "https://github.com/korczis/prismatic",
+          "work": true,
+          "slug": "prismatic",
+          "site": null,
+          "category": "tools",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2025-07-24",
+          "pushed": "2025-08-04",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Elixir",
+            "JavaScript",
+            "Python",
+            "Shell",
+            "Phoenix",
+            "PostgreSQL",
+            "Ecto",
+            "Broadway",
+            "GenStage",
+            "Elixir Flow",
+            "Req",
+            "Finch",
+            "Tailwind CSS",
+            "GitLab CI",
+            "GitHub Actions"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "finch": {
+      "name": "Finch",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 0,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2025,
+      "last": 2025,
+      "categories": [
+        {
+          "key": "tools",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "prismatic",
+          "title": "prismatic",
+          "url": "https://github.com/korczis/prismatic",
+          "work": true,
+          "slug": "prismatic",
+          "site": null,
+          "category": "tools",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2025-07-24",
+          "pushed": "2025-08-04",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Elixir",
+            "JavaScript",
+            "Python",
+            "Shell",
+            "Phoenix",
+            "PostgreSQL",
+            "Ecto",
+            "Broadway",
+            "GenStage",
+            "Elixir Flow",
+            "Req",
+            "Finch",
+            "Tailwind CSS",
+            "GitLab CI",
+            "GitHub Actions"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "vite": {
+      "name": "Vite",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 1,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2026,
+      "last": 2026,
+      "categories": [
+        {
+          "key": "science",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "algoglyph",
+          "title": "algoglyph",
+          "url": "https://github.com/korczis/algoglyph",
+          "work": true,
+          "slug": "algoglyph",
+          "site": "https://korczis.github.io/algoglyph/",
+          "category": "science",
+          "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
+          "summary": "Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core.",
+          "summary_cs": "Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.",
+          "created": "2026-11-11",
+          "pushed": "2026-11-17",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "TypeScript",
+            "Rust",
+            "JavaScript",
+            "HTML",
+            "p5.js",
+            "Apache ECharts",
+            "Alpine.js",
+            "Flowbite Pro",
+            "Majordomus",
+            "Tailwind CSS",
+            "WebGL",
+            "Vite",
+            "Vitest",
+            "axe-core",
+            "GitHub Pages"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "rollup": {
+      "name": "Rollup",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 0,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2024,
+      "last": 2025,
+      "categories": [
+        {
+          "key": "tools",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "dispatcher",
+          "title": "dispatcher",
+          "url": "https://gitlab.com/korczis/dispatcher",
+          "work": true,
+          "slug": "dispatcher",
+          "site": null,
+          "category": "tools",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2024-10-18",
+          "pushed": "2025-12-20",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "TypeScript",
+            "JavaScript",
+            "Rollup",
+            "Vitest",
+            "ESLint",
+            "Prettier",
+            "GitLab CI"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "prettier": {
+      "name": "Prettier",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 0,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2024,
+      "last": 2025,
+      "categories": [
+        {
+          "key": "tools",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "dispatcher",
+          "title": "dispatcher",
+          "url": "https://gitlab.com/korczis/dispatcher",
+          "work": true,
+          "slug": "dispatcher",
+          "site": null,
+          "category": "tools",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2024-10-18",
+          "pushed": "2025-12-20",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "TypeScript",
+            "JavaScript",
+            "Rollup",
+            "Vitest",
+            "ESLint",
+            "Prettier",
+            "GitLab CI"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "puppeteer": {
+      "name": "Puppeteer",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 1,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2026,
+      "last": 2026,
+      "categories": [
+        {
+          "key": "media",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "majordomus-reel",
+          "title": "Majordomus reel",
+          "url": "https://github.com/korczis/majordomus-reel",
+          "work": true,
+          "slug": "majordomus-reel",
+          "site": "https://korczis.github.io/majordomus-reel/",
+          "category": "media",
+          "description": "A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound",
+          "summary": "Voice, frames, music and sound, all generated and versioned like software.",
+          "summary_cs": "Hlas, snímky, hudba i zvuk, vše generované a verzované jako software.",
+          "created": "2026-10-23",
+          "pushed": "2026-11-19",
+          "primary": false,
+          "share": null,
+          "via": [
+            "topic",
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "Shell",
+            "FFmpeg",
+            "Majordomus",
+            "Puppeteer",
+            "Node.js",
+            "p5.js",
+            "Apache ECharts",
+            "Cytoscape.js",
+            "Flowbite Pro",
+            "Tailwind CSS",
+            "Python"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "ffmpeg": {
+      "name": "FFmpeg",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 1,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2026,
+      "last": 2026,
+      "categories": [
+        {
+          "key": "media",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "majordomus-reel",
+          "title": "Majordomus reel",
+          "url": "https://github.com/korczis/majordomus-reel",
+          "work": true,
+          "slug": "majordomus-reel",
+          "site": "https://korczis.github.io/majordomus-reel/",
+          "category": "media",
+          "description": "A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound",
+          "summary": "Voice, frames, music and sound, all generated and versioned like software.",
+          "summary_cs": "Hlas, snímky, hudba i zvuk, vše generované a verzované jako software.",
+          "created": "2026-10-23",
+          "pushed": "2026-11-19",
+          "primary": false,
+          "share": null,
+          "via": [
+            "topic",
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "Shell",
+            "FFmpeg",
+            "Majordomus",
+            "Puppeteer",
+            "Node.js",
+            "p5.js",
+            "Apache ECharts",
+            "Cytoscape.js",
+            "Flowbite Pro",
+            "Tailwind CSS",
+            "Python"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "webgl": {
+      "name": "WebGL",
+      "kind": "technology",
+      "counts": {
+        "repos": 2,
+        "primary": 0,
+        "sites": 1,
+        "work": 2,
+        "engagements": 0
+      },
+      "first": 2016,
+      "last": 2026,
+      "categories": [
+        {
+          "key": "science",
+          "n": 2
+        }
+      ],
+      "repos": [
+        {
+          "name": "algoglyph",
+          "title": "algoglyph",
+          "url": "https://github.com/korczis/algoglyph",
+          "work": true,
+          "slug": "algoglyph",
+          "site": "https://korczis.github.io/algoglyph/",
+          "category": "science",
+          "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
+          "summary": "Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core.",
+          "summary_cs": "Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.",
+          "created": "2026-11-11",
+          "pushed": "2026-11-17",
+          "primary": false,
+          "share": null,
+          "via": [
+            "topic"
+          ],
+          "supervised": true,
+          "uses": [
+            "TypeScript",
+            "Rust",
+            "JavaScript",
+            "HTML",
+            "p5.js",
+            "Apache ECharts",
+            "Alpine.js",
+            "Flowbite Pro",
+            "Majordomus",
+            "Tailwind CSS",
+            "WebGL",
+            "Vite",
+            "Vitest",
+            "axe-core",
+            "GitHub Pages"
+          ]
+        },
+        {
+          "name": "maze",
+          "title": "maze",
+          "url": "https://github.com/korczis/maze",
+          "work": true,
+          "slug": "maze",
+          "site": null,
+          "category": "science",
+          "description": "Maze Web Application",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2016-11-18",
+          "pushed": "2016-11-20",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "JavaScript",
+            "Elixir",
+            "HTML",
+            "Phoenix",
+            "Guardian",
+            "Erlang",
+            "React",
+            "Redux",
+            "Three.js",
+            "WebGL",
+            "Brunch"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "websocket": {
+      "name": "WebSocket",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 0,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2026,
+      "last": 2026,
+      "categories": [
+        {
+          "key": "media",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "openttd-prismatic-bridge",
+          "title": "openttd-prismatic-bridge",
+          "url": "https://gitlab.com/korczis/openttd-prismatic-bridge",
+          "work": true,
+          "slug": "openttd-prismatic-bridge",
+          "site": null,
+          "category": "media",
+          "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2026-07-23",
+          "pushed": "2026-11-19",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Python",
+            "Squirrel",
+            "HTML",
+            "JavaScript",
+            "Shell",
+            "FastAPI",
+            "Uvicorn",
+            "HTTPX",
+            "WebSocket",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "Leaflet",
+            "pytest"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "tor": {
+      "name": "Tor",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 0,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2015,
+      "last": 2015,
+      "categories": [
+        {
+          "key": "tools",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "magicbiz",
+          "title": "magicbiz",
+          "url": "https://github.com/korczis/magicbiz",
+          "work": true,
+          "slug": "magicbiz",
+          "site": null,
+          "category": "tools",
+          "description": "A Decentralized Autonomous Organization Proof of Concept",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2015-06-17",
+          "pushed": "2015-06-17",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Tor",
+            "AWS"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "software-defined-radio": {
+      "name": "Software-defined radio",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 0,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2017,
+      "last": 2017,
+      "categories": [
+        {
+          "key": "security",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "magic",
+          "title": "magic",
+          "url": "https://github.com/korczis/magic",
+          "work": true,
+          "slug": "magic",
+          "site": null,
+          "category": "security",
+          "description": "All the magic happens here!",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2017-05-29",
+          "pushed": "2017-07-08",
+          "primary": false,
+          "share": null,
+          "via": [
+            "topic",
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Rust",
+            "JavaScript",
+            "Elixir",
+            "Elm",
+            "C",
+            "Java",
+            "Software-defined radio",
+            "Rustler",
+            "OpenCL",
+            "Phoenix",
+            "Travis CI"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "openstreetmap": {
+      "name": "OpenStreetMap",
+      "kind": "technology",
+      "counts": {
+        "repos": 2,
+        "primary": 0,
+        "sites": 1,
+        "work": 2,
+        "engagements": 0
+      },
+      "first": 2024,
+      "last": 2026,
+      "categories": [
+        {
+          "key": "data",
+          "n": 1
+        },
+        {
+          "key": "tools",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "data-atlas",
+          "title": "Data Atlas",
+          "url": "https://github.com/korczis/data-atlas",
+          "work": true,
+          "slug": "data-atlas",
+          "site": "https://korczis.github.io/data-atlas/",
+          "category": "data",
+          "description": "Katalog GIS a geodatových zdrojů — datasety, katastr, doprava, remote sensing, prostorová analytika. Jednosouborová prohledávatelná stránka.",
+          "summary": "Datasets, cadastre, transport, remote sensing and spatial analytics in one single-file, searchable page.",
+          "summary_cs": "Datové sady, katastr, doprava, dálkový průzkum a prostorová analytika na jedné prohledávatelné stránce.",
+          "created": "2026-08-27",
+          "pushed": "2026-11-16",
+          "primary": false,
+          "share": null,
+          "via": [
+            "topic"
+          ],
+          "supervised": false,
+          "uses": [
+            "Python",
+            "HTML",
+            "JavaScript",
+            "PL/pgSQL",
+            "Just",
+            "OpenStreetMap",
+            "PostGIS",
+            "PostgreSQL",
+            "Tailwind CSS",
+            "Playwright",
+            "GitHub Pages"
+          ]
+        },
+        {
+          "name": "simple_geocoder",
+          "title": "simple_geocoder",
+          "url": "https://gitlab.com/korczis/simple_geocoder",
+          "work": true,
+          "slug": "simple-geocoder",
+          "site": null,
+          "category": "tools",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2024-04-23",
+          "pushed": "2025-12-20",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Elixir",
+            "Shell",
+            "EEx and HEEx",
+            "Erlang",
+            "Cachex",
+            "Tesla",
+            "CSV",
+            "OpenStreetMap",
+            "Nominatim",
+            "Dockerfile"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "geojson": {
+      "name": "GeoJSON",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 0,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2025,
+      "last": 2025,
+      "categories": [
+        {
+          "key": "tools",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "corvidae",
+          "title": "corvidae",
+          "url": "https://gitlab.com/korczis/corvidae",
+          "work": true,
+          "slug": "corvidae",
+          "site": null,
+          "category": "tools",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2025-05-12",
+          "pushed": "2025-12-20",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "TeX",
+            "Elixir",
+            "Shell",
+            "Markdown",
+            "GeoJSON",
+            "Phoenix"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "fluentd": {
+      "name": "Fluentd",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 0,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2017,
+      "last": 2018,
+      "categories": [
+        {
+          "key": "systems",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "cluster-kubernetes",
+          "title": "cluster-kubernetes",
+          "url": "https://github.com/korczis/cluster-kubernetes",
+          "work": true,
+          "slug": "cluster-kubernetes",
+          "site": null,
+          "category": "systems",
+          "description": "Kubernetes Cluster",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2017-03-14",
+          "pushed": "2018-01-30",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Shell",
+            "Smarty",
+            "Kubernetes",
+            "Helm",
+            "Couchbase",
+            "Elasticsearch",
+            "Kibana",
+            "RabbitMQ",
+            "etcd",
+            "Grafana",
+            "Prometheus",
+            "Fluentd",
+            "PostgreSQL",
+            "Nominatim"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "memcached": {
+      "name": "Memcached",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 0,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2014,
+      "last": 2014,
+      "categories": [
+        {
+          "key": "data",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "apollo-crawler",
+          "title": "apollo-crawler",
+          "url": "https://github.com/korczis/apollo-crawler",
+          "work": true,
+          "slug": "apollo-crawler",
+          "site": null,
+          "category": "data",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2014-08-30",
+          "pushed": "2014-08-30",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Ruby",
+            "RabbitMQ",
+            "MongoDB",
+            "Memcached",
+            "SQLite"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "poetry": {
+      "name": "Poetry",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 0,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2024,
+      "last": 2025,
+      "categories": [
+        {
+          "key": "tools",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "pdf_renderer",
+          "title": "pdf_renderer",
+          "url": "https://gitlab.com/korczis/pdf_renderer",
+          "work": true,
+          "slug": "pdf-renderer",
+          "site": null,
+          "category": "tools",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2024-03-24",
+          "pushed": "2025-12-20",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Python",
+            "Dockerfile",
+            "Makefile",
+            "Django",
+            "Django REST Framework",
+            "Dramatiq",
+            "RabbitMQ",
+            "PostgreSQL",
+            "Poetry"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "dramatiq": {
+      "name": "Dramatiq",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 0,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2024,
+      "last": 2025,
+      "categories": [
+        {
+          "key": "tools",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "pdf_renderer",
+          "title": "pdf_renderer",
+          "url": "https://gitlab.com/korczis/pdf_renderer",
+          "work": true,
+          "slug": "pdf-renderer",
+          "site": null,
+          "category": "tools",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2024-03-24",
+          "pushed": "2025-12-20",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Python",
+            "Dockerfile",
+            "Makefile",
+            "Django",
+            "Django REST Framework",
+            "Dramatiq",
+            "RabbitMQ",
+            "PostgreSQL",
+            "Poetry"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "uvicorn": {
+      "name": "Uvicorn",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 0,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2026,
+      "last": 2026,
+      "categories": [
+        {
+          "key": "media",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "openttd-prismatic-bridge",
+          "title": "openttd-prismatic-bridge",
+          "url": "https://gitlab.com/korczis/openttd-prismatic-bridge",
+          "work": true,
+          "slug": "openttd-prismatic-bridge",
+          "site": null,
+          "category": "media",
+          "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2026-07-23",
+          "pushed": "2026-11-19",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Python",
+            "Squirrel",
+            "HTML",
+            "JavaScript",
+            "Shell",
+            "FastAPI",
+            "Uvicorn",
+            "HTTPX",
+            "WebSocket",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "Leaflet",
+            "pytest"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "httpx": {
+      "name": "HTTPX",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 0,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2026,
+      "last": 2026,
+      "categories": [
+        {
+          "key": "media",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "openttd-prismatic-bridge",
+          "title": "openttd-prismatic-bridge",
+          "url": "https://gitlab.com/korczis/openttd-prismatic-bridge",
+          "work": true,
+          "slug": "openttd-prismatic-bridge",
+          "site": null,
+          "category": "media",
+          "description": "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2026-07-23",
+          "pushed": "2026-11-19",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Python",
+            "Squirrel",
+            "HTML",
+            "JavaScript",
+            "Shell",
+            "FastAPI",
+            "Uvicorn",
+            "HTTPX",
+            "WebSocket",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "Leaflet",
+            "pytest"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "graphviz": {
+      "name": "Graphviz",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 0,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2019,
+      "last": 2019,
+      "categories": [
+        {
+          "key": "media",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "dj-schnapps",
+          "title": "dj-schnapps",
+          "url": "https://github.com/korczis/dj-schnapps",
+          "work": true,
+          "slug": "dj-schnapps",
+          "site": null,
+          "category": "media",
+          "description": "Dj Schnapps",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2019-10-26",
+          "pushed": "2019-11-26",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Elixir",
+            "CSS",
+            "JavaScript",
+            "M4",
+            "HTML",
+            "Graphviz",
+            "Makefile",
+            "Shell",
+            "Rust",
+            "Phoenix",
+            "GitLab CI"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "arch-linux": {
+      "name": "Arch Linux",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 0,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2019,
+      "last": 2019,
+      "categories": [
+        {
+          "key": "systems",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "server-archlinux",
+          "title": "server-archlinux",
+          "url": "https://github.com/korczis/server-archlinux",
+          "work": true,
+          "slug": "server-archlinux",
+          "site": null,
+          "category": "systems",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2019-02-17",
+          "pushed": "2019-04-04",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Shell",
+            "Ansible",
+            "Arch Linux",
+            "Vagrant",
+            "VirtualBox",
+            "Dockerfile",
+            "Cockpit"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "qt": {
+      "name": "Qt",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 0,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2021,
+      "last": 2021,
+      "categories": [
+        {
+          "key": "learning",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "happ",
+          "title": "happ",
+          "url": "https://github.com/korczis/happ",
+          "work": true,
+          "slug": "happ",
+          "site": null,
+          "category": "learning",
+          "description": "Playground App created during my Hospital Stay",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2021-04-23",
+          "pushed": "2021-06-03",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "C++",
+            "Objective-C",
+            "Swift",
+            "C",
+            "CMake",
+            "Elixir",
+            "Phoenix",
+            "Rust",
+            "Haskell",
+            "Node.js",
+            "Prolog",
+            "SwiftUI",
+            "Qt",
+            "OpenGL",
+            "Dockerfile",
+            "PostgreSQL",
+            "Elasticsearch",
+            "Kibana",
+            "GitLab CI"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "koa": {
+      "name": "Koa",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 0,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2017,
+      "last": 2017,
+      "categories": [
+        {
+          "key": "media",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "brepta",
+          "title": "brepta",
+          "url": "https://github.com/korczis/brepta",
+          "work": true,
+          "slug": "brepta",
+          "site": null,
+          "category": "media",
+          "description": "TTS via REST",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2017-01-20",
+          "pushed": "2017-01-20",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "JavaScript",
+            "Node.js",
+            "Koa"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "boost": {
+      "name": "Boost",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 0,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2014,
+      "last": 2014,
+      "categories": [
+        {
+          "key": "security",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "peacemaker",
+          "title": "peacemaker",
+          "url": "https://github.com/korczis/peacemaker",
+          "work": true,
+          "slug": "peacemaker",
+          "site": null,
+          "category": "security",
+          "description": "Packet sniffing and processing engine ",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2014-06-08",
+          "pushed": "2014-08-23",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "C++",
+            "C",
+            "libpcap",
+            "Boost",
+            "CMake",
+            "Google Test",
+            "Travis CI"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "rayon": {
+      "name": "Rayon",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 0,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2017,
+      "last": 2017,
+      "categories": [
+        {
+          "key": "tools",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "streamflow",
+          "title": "streamflow",
+          "url": "https://github.com/korczis/streamflow",
+          "work": true,
+          "slug": "streamflow",
+          "site": null,
+          "category": "tools",
+          "description": "Stream Flow - Fast Stream Processing in Rust",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2017-05-15",
+          "pushed": "2017-05-24",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Rust",
+            "Makefile",
+            "clap",
+            "CSV",
+            "Tokio",
+            "Rayon",
+            "Crossbeam",
+            "OpenCL"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "crossbeam": {
+      "name": "Crossbeam",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 0,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2017,
+      "last": 2017,
+      "categories": [
+        {
+          "key": "tools",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "streamflow",
+          "title": "streamflow",
+          "url": "https://github.com/korczis/streamflow",
+          "work": true,
+          "slug": "streamflow",
+          "site": null,
+          "category": "tools",
+          "description": "Stream Flow - Fast Stream Processing in Rust",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2017-05-15",
+          "pushed": "2017-05-24",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Rust",
+            "Makefile",
+            "clap",
+            "CSV",
+            "Tokio",
+            "Rayon",
+            "Crossbeam",
+            "OpenCL"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "clippy": {
+      "name": "Clippy",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 0,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2018,
+      "last": 2018,
+      "categories": [
+        {
+          "key": "science",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "rustas",
+          "title": "rustas",
+          "url": "https://github.com/korczis/rustas",
+          "work": true,
+          "slug": "rustas",
+          "site": null,
+          "category": "science",
+          "description": "Rust - Assembler, Mathematics, GPU and many others",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2018-03-08",
+          "pushed": "2018-03-08",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Rust",
+            "Travis CI",
+            "Clippy"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "dialyzer": {
+      "name": "Dialyzer",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 0,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2024,
+      "last": 2025,
+      "categories": [
+        {
+          "key": "tools",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "job-processor",
+          "title": "job-processor",
+          "url": "https://gitlab.com/korczis/job-processor",
+          "work": true,
+          "slug": "job-processor",
+          "site": null,
+          "category": "tools",
+          "description": "This is a simple web service built with Elixir, Plug, and Cowboy that processes job tasks with dependencies and generates execution order and bash scripts.",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2024-08-01",
+          "pushed": "2025-12-20",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Elixir",
+            "Erlang",
+            "Plug",
+            "Cowboy",
+            "Jason",
+            "ExDoc",
+            "Credo",
+            "Dialyzer",
+            "GitLab CI"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "exunit": {
+      "name": "ExUnit",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 0,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2016,
+      "last": 2016,
+      "categories": [
+        {
+          "key": "learning",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "skull-elixir",
+          "title": "skull-elixir",
+          "url": "https://github.com/korczis/skull-elixir",
+          "work": true,
+          "slug": "skull-elixir",
+          "site": null,
+          "category": "learning",
+          "description": "Programming learning materials, examples, sources ...",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2016-09-22",
+          "pushed": "2016-12-05",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Elixir",
+            "Shell",
+            "ExUnit",
+            "Travis CI"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "streamdata": {
+      "name": "StreamData",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 0,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2026,
+      "last": 2026,
+      "categories": [
+        {
+          "key": "ai",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "llm",
+          "title": "llm",
+          "url": "https://gitlab.com/korczis/llm",
+          "work": true,
+          "slug": "llm",
+          "site": null,
+          "category": "ai",
+          "description": "Local-first, provider-agnostic archive of AI conversations (ChatGPT, Claude, Gemini, Codex) — immutable, content-addressed, searchable evidence layer built in Elixir/Ecto.",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2026-08-20",
+          "pushed": "2026-08-21",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Elixir",
+            "Claude API",
+            "Claude Code",
+            "LLM",
+            "Ecto",
+            "PostgreSQL",
+            "Jason",
+            "StreamData",
+            "GitLab CI"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "jasmine": {
+      "name": "Jasmine",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 0,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2013,
+      "last": 2014,
+      "categories": [
+        {
+          "key": "tools",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "lola",
+          "title": "lola",
+          "url": "https://github.com/korczis/lola",
+          "work": true,
+          "slug": "lola",
+          "site": null,
+          "category": "tools",
+          "description": "Loader & Launcher of Modular NodeJS Apps",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2013-12-31",
+          "pushed": "2014-01-03",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "JavaScript",
+            "Node.js",
+            "Jasmine",
+            "Travis CI"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "oauth": {
+      "name": "OAuth",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 0,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2012,
+      "last": 2012,
+      "categories": [
+        {
+          "key": "learning",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "sandbox",
+          "title": "sandbox",
+          "url": "https://github.com/korczis/sandbox",
+          "work": true,
+          "slug": "sandbox",
+          "site": null,
+          "category": "learning",
+          "description": "Something just for fun. This is place where I play with new techs...",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2012-01-01",
+          "pushed": "2012-01-02",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Ruby",
+            "PostgreSQL",
+            "OAuth"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "digitalocean": {
+      "name": "DigitalOcean",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 1,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2014,
+      "last": 2015,
+      "categories": [
+        {
+          "key": "systems",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "apollon",
+          "title": "apollon",
+          "url": "https://github.com/korczis/apollon",
+          "work": true,
+          "slug": "apollon",
+          "site": "https://korczis.github.io/apollon/",
+          "category": "systems",
+          "description": "Your own personal cluster built on top of the cloud.",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2014-05-05",
+          "pushed": "2015-02-25",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Ruby",
+            "GLI",
+            "CoreOS",
+            "etcd",
+            "fleet",
+            "Kubernetes",
+            "Dockerfile",
+            "AWS",
+            "DigitalOcean",
+            "RSpec"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "claude-code": {
+      "name": "Claude Code",
+      "kind": "technology",
+      "counts": {
+        "repos": 3,
+        "primary": 0,
+        "sites": 2,
+        "work": 3,
+        "engagements": 0
+      },
+      "first": 2026,
+      "last": 2026,
+      "categories": [
+        {
+          "key": "ai",
+          "n": 2
+        },
+        {
+          "key": "security",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "prismatic-majordomus",
+          "title": "Majordomus",
+          "url": "https://github.com/korczis/prismatic-majordomus",
+          "work": true,
+          "slug": "prismatic-majordomus",
+          "site": "https://korczis.github.io/prismatic-majordomus/",
+          "category": "ai",
+          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+          "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
+          "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
+          "created": "2026-09-03",
+          "pushed": "2026-11-19",
+          "primary": false,
+          "share": null,
+          "via": [
+            "topic"
+          ],
+          "supervised": true,
+          "uses": [
+            "Rust",
+            "Shell",
+            "JavaScript",
+            "HTML",
+            "MCP",
+            "Zola",
+            "Claude Code",
+            "LLM",
+            "Mermaid",
+            "Git",
+            "YAML",
+            "GitHub Actions"
+          ]
+        },
+        {
+          "name": "osint-case-ratcliffe-moscow-2026",
+          "title": "osint-case-ratcliffe-moscow-2026",
+          "url": "https://github.com/korczis/osint-case-ratcliffe-moscow-2026",
+          "work": true,
+          "slug": "osint-case-ratcliffe-moscow-2026",
+          "site": "https://korczis.github.io/osint-case-ratcliffe-moscow-2026/",
+          "category": "security",
+          "description": "Open-source intelligence assessment of the CIA Director's unannounced Moscow visit (2026-08-25) — maintained with Claude Code skills; reusable OSINT case toolkit",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2026-08-26",
+          "pushed": "2026-08-26",
+          "primary": false,
+          "share": null,
+          "via": [
+            "topic",
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "HTML",
+            "Python",
+            "Shell",
+            "Claude Code",
+            "Just",
+            "jq",
+            "GitHub Actions",
+            "GitHub Pages"
+          ]
+        },
+        {
+          "name": "llm",
+          "title": "llm",
+          "url": "https://gitlab.com/korczis/llm",
+          "work": true,
+          "slug": "llm",
+          "site": null,
+          "category": "ai",
+          "description": "Local-first, provider-agnostic archive of AI conversations (ChatGPT, Claude, Gemini, Codex) — immutable, content-addressed, searchable evidence layer built in Elixir/Ecto.",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2026-08-20",
+          "pushed": "2026-08-21",
+          "primary": false,
+          "share": null,
+          "via": [
+            "topic"
+          ],
+          "supervised": false,
+          "uses": [
+            "Elixir",
+            "Claude API",
+            "Claude Code",
+            "LLM",
+            "Ecto",
+            "PostgreSQL",
+            "Jason",
+            "StreamData",
+            "GitLab CI"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "cypher": {
+      "name": "Cypher",
+      "kind": "language",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 0,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2024,
+      "last": 2025,
+      "categories": [
+        {
+          "key": "data",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "kuzu-ex",
+          "title": "kuzu-ex",
+          "url": "https://gitlab.com/korczis/kuzu-ex",
+          "work": true,
+          "slug": "kuzu-ex",
+          "site": null,
+          "category": "data",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2024-10-24",
+          "pushed": "2025-12-20",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Elixir",
+            "Python",
+            "KuzuDB",
+            "Cypher",
+            "Tesla",
+            "Jason",
+            "Dockerfile",
+            "Credo",
+            "GitLab CI"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "yaml": {
+      "name": "YAML",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 1,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2026,
+      "last": 2026,
+      "categories": [
+        {
+          "key": "ai",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "prismatic-majordomus",
+          "title": "Majordomus",
+          "url": "https://github.com/korczis/prismatic-majordomus",
+          "work": true,
+          "slug": "prismatic-majordomus",
+          "site": "https://korczis.github.io/prismatic-majordomus/",
+          "category": "ai",
+          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+          "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
+          "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
+          "created": "2026-09-03",
+          "pushed": "2026-11-19",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "Rust",
+            "Shell",
+            "JavaScript",
+            "HTML",
+            "MCP",
+            "Zola",
+            "Claude Code",
+            "LLM",
+            "Mermaid",
+            "Git",
+            "YAML",
+            "GitHub Actions"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "dev-containers": {
+      "name": "Dev Containers",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 1,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2025,
+      "last": 2025,
+      "categories": [
+        {
+          "key": "media",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "prismatic-blog",
+          "title": "prismatic-blog",
+          "url": "https://github.com/korczis/prismatic-blog",
+          "work": true,
+          "slug": "prismatic-blog",
+          "site": "https://korczis.github.io/prismatic-blog/",
+          "category": "media",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2025-03-14",
+          "pushed": "2025-03-14",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Dockerfile",
+            "Zola",
+            "Markdown",
+            "GitHub Actions",
+            "GitHub Pages",
+            "Dev Containers"
+          ]
+        }
+      ],
+      "engagements": []
+    },
+    "core-data": {
+      "name": "Core Data",
+      "kind": "technology",
+      "counts": {
+        "repos": 1,
+        "primary": 0,
+        "sites": 0,
+        "work": 1,
+        "engagements": 0
+      },
+      "first": 2020,
+      "last": 2021,
+      "categories": [
+        {
+          "key": "knowledge",
+          "n": 1
+        }
+      ],
+      "repos": [
+        {
+          "name": "MinervaEye",
+          "title": "MinervaEye",
+          "url": "https://github.com/korczis/MinervaEye",
+          "work": true,
+          "slug": "minervaeye",
+          "site": null,
+          "category": "knowledge",
+          "description": "iOS application for book management",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2020-04-26",
+          "pushed": "2021-05-08",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Swift",
+            "SwiftUI",
+            "UIKit",
+            "AVFoundation",
+            "Vision",
+            "Core Data",
+            "Xcode"
           ]
         }
       ],

@@ -3,7 +3,7 @@
 title = "Guardian"
 description = "A token-based authentication library for Elixir, most often issuing JSON Web Tokens."
 template = "term.html"
-weight = 95
+weight = 119
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

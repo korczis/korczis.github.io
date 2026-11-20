@@ -3,7 +3,7 @@
 title = "XML"
 description = "Rozšiřitelný značkovací jazyk: strom značkovaných elementů a atributů, výměnný formát feedů, kancelářských dokumentů a starších API."
 template = "term.html"
-weight = 176
+weight = 227
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

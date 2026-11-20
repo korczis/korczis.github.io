@@ -14,7 +14,7 @@ icon = "search"
 og_title = "Digitální vyšetřování a OSINT dossier"
 og_image = "og/cs-service-digital-investigation.png"
 schema = "service"
-terms = ["service", "elixir", "broadway", "playwright", "postgresql", "meilisearch", "cytoscape-js", "osint", "public-registry", "record-linkage", "beneficial-ownership", "attack-surface", "digital-forensics", "knowledge-graph", "web-scraping", "change-detection", "javascript", "html", "nodejs", "python", "flowbite-pro", "dockerfile", "shell", "tailwind-css", "claude-api", "cheerio"]
+terms = ["service", "elixir", "broadway", "playwright", "postgresql", "meilisearch", "cytoscape-js", "osint", "public-registry", "record-linkage", "beneficial-ownership", "attack-surface", "digital-forensics", "knowledge-graph", "web-scraping", "change-detection", "javascript", "html", "nodejs", "python", "flowbite-pro", "dockerfile", "shell", "tailwind-css", "cheerio", "ecto"]
 keywords = ["Digitální vyšetřování a OSINT dossier", "OSINT šetření", "Rejstříkové zpravodajství", "Ztotožnění subjektů", "Analýza vlastnictví a vazeb", "Infrastrukturní OSINT", "Forenzní analýza webu a médií", "Znalostní graf", "Webová automatizace a crawling", "Průběžný monitoring", "Tomáš Korčák"]
 
 [[extra.viz]]

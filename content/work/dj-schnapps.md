@@ -17,7 +17,7 @@ og_description = "dj-schnapps: Media and art in Elixir, CSS and JavaScript, 2019
 og_image = "og/work-dj-schnapps.png"
 schema = "project"
 keywords = ["dj-schnapps", "Media and art", "Elixir", "CSS", "JavaScript", "2019", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["elixir", "css", "javascript", "m4", "html", "makefile", "shell", "rust", "phoenix", "gitlab-ci", "data-visualisation", "repository", "commit", "open-source"]
+terms = ["elixir", "css", "javascript", "m4", "html", "makefile", "graphviz", "shell", "rust", "phoenix", "gitlab-ci", "data-visualisation", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

@@ -3,7 +3,7 @@
 title = "Vision, Apple's computer-vision framework"
 description = "Apple's on-device computer-vision framework: text recognition, barcode and face detection, image analysis without a server."
 template = "term.html"
-weight = 171
+weight = 218
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "Apple's on-device computer-vision framework: text recognition, bar
 aliases = []
 reference = { title = "Vision documentation", url = "https://developer.apple.com/documentation/vision" }
 pages = ["work/minervaeye.md", "work/readingphonenumbersinrealtime.md"]
-related = ["avfoundation", "commit", "open-source", "repository", "swift", "uikit", "xcode", "shell"]
+related = ["avfoundation", "commit", "open-source", "repository", "swift", "uikit", "xcode", "core-data"]
 og_title = "Vision: glossary"
 og_image = "og/glossary-apple-vision.png"
 keywords = ["Vision, Apple's computer-vision framework", "Vision", "Technology", "Glossary", "Tomas Korcak"]

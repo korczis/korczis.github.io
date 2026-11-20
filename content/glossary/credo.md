@@ -3,7 +3,7 @@
 title = "Credo"
 description = "A static analysis tool for Elixir focused on consistency and teaching: it flags readability, design and refactoring issues."
 template = "term.html"
-weight = 65
+weight = 72
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "A static analysis tool for Elixir focused on consistency and teach
 aliases = []
 reference = { title = "Credo on HexDocs", url = "https://hexdocs.pm/credo/overview.html" }
 pages = ["work/job-processor.md", "work/kuzu-ex.md"]
-related = ["commit", "elixir", "gitlab-ci", "jason", "open-source", "repository", "cowboy", "dockerfile"]
+related = ["commit", "elixir", "gitlab-ci", "jason", "open-source", "repository", "cowboy", "cypher"]
 og_title = "Credo: glossary"
 og_image = "og/glossary-credo.png"
 keywords = ["Credo", "Technology", "Glossary", "Tomas Korcak"]

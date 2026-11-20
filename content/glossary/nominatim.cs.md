@@ -3,7 +3,7 @@
 title = "Nominatim"
 description = "Geokodér OpenStreetMap: převádí adresy na souřadnice a souřadnice zpět na adresy."
 template = "term.html"
-weight = 125
+weight = 154
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

@@ -3,7 +3,7 @@
 title = "Kubernetes"
 description = "Systém, který provozuje kontejnery v clusteru: plánování, škálování, síť a nasazování deklarované jako zdroje."
 template = "term.html"
-weight = 108
+weight = 136
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -14,7 +14,7 @@ seo_title = "Kubernetes (technologie)"
 term = "kubernetes"
 kind = "technology"
 definition = "Systém, který provozuje kontejnery v clusteru: plánování, škálování, síť a nasazování deklarované jako zdroje."
-aliases = ["k8s"]
+aliases = ["k8s", "kubectl", "kube-aws"]
 reference = { title = "Kubernetes documentation", url = "https://kubernetes.io/docs/concepts/overview/" }
 pages = ["services/continuous-monitoring.cs.md", "skills/data-room.cs.md", "skills/entity-resolution.cs.md", "skills/insolvency-monitoring.cs.md", "skills/knowledge-graph.cs.md", "skills/m-and-a-screening.cs.md", "skills/risk-scoring.cs.md", "work/apollon.cs.md", "work/cluster-kubernetes.cs.md", "work/cluster.cs.md", "work/k8s-orbis-pictus.cs.md", "_index.cs.md"]
 related = ["dockerfile", "alpine-js", "claude-api", "fastapi", "flowbite-pro", "github-actions", "html", "javascript"]

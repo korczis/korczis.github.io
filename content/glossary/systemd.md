@@ -3,7 +3,7 @@
 title = "systemd"
 description = "The init system and service manager of most Linux distributions: units, dependencies, timers, logging (journald)."
 template = "term.html"
-weight = 158
+weight = 203
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

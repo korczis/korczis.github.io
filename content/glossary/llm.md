@@ -3,7 +3,7 @@
 title = "Large language models"
 description = "Large language models: neural networks trained on text that generate, summarise, classify and extract from natural language, used through prompts and tools."
 template = "term.html"
-weight = 113
+weight = 141
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "Large language models: neural networks trained on text that genera
 aliases = ["LLM prompting", "large language model"]
 reference = { title = "Anthropic: Claude documentation", url = "https://docs.anthropic.com/" }
 pages = ["skills/media-forensics.md", "work/comtesse.md", "work/edna.md", "work/past.md"]
-related = ["commit", "open-source", "repository", "elixir", "postgresql", "ai-agent", "claude-api", "digital-forensics"]
+related = ["commit", "open-source", "repository", "elixir", "ai-agent", "claude-api", "claude-code", "digital-forensics"]
 og_title = "LLM: glossary"
 og_image = "og/glossary-llm.png"
 keywords = ["Large language models", "LLM", "Technology", "Glossary", "Tomas Korcak"]

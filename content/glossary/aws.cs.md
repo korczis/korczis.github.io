@@ -3,7 +3,7 @@
 title = "AWS"
 description = "Cloudová platforma Amazonu: výpočetní kapacita (EC2, Lambda), úložiště (S3), DNS (Route 53) a stovky spravovaných služeb za jedním API."
 template = "term.html"
-weight = 48
+weight = 50
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

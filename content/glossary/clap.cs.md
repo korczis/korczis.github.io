@@ -3,7 +3,7 @@
 title = "clap"
 description = "Parser argumentů příkazové řádky v Rustu: podpříkazy, přepínače, validace a generovaná nápověda z typované definice."
 template = "term.html"
-weight = 58
+weight = 62
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

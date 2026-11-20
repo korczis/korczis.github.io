@@ -3,7 +3,7 @@
 title = "Vitest"
 description = "Rychlý spouštěč testů pro JavaScript a TypeScript postavený na Vite, s API kompatibilním s Jestem."
 template = "term.html"
-weight = 172
+weight = 220
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

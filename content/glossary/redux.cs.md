@@ -3,7 +3,7 @@
 title = "Redux"
 description = "Předvídatelný kontejner stavu: celý stav v jednom storu, měněný jen akcemi přes čisté funkce reducerů."
 template = "term.html"
-weight = 148
+weight = 187
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

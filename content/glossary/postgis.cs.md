@@ -3,7 +3,7 @@
 title = "PostGIS"
 description = "Prostorové rozšíření PostgreSQL: body, tvary a geografické dotazy v SQL."
 template = "term.html"
-weight = 140
+weight = 174
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

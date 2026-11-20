@@ -3,7 +3,7 @@
 title = "HTML5 Boilerplate"
 description = "Startovací šablona pro front-end: ověřený základ HTML, výchozích stylů a konfigurace serveru pro nový web."
 template = "term.html"
-weight = 99
+weight = 124
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

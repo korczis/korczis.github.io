@@ -3,7 +3,7 @@
 title = "SwiftUI"
 description = "Apple's declarative user-interface framework in Swift: the view is a function of state, and the framework redraws what changed."
 template = "term.html"
-weight = 157
+weight = 202
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

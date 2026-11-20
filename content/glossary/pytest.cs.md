@@ -3,7 +3,7 @@
 title = "pytest"
 description = "Testovací framework pro Python, kde test je obyčejná funkce s obyčejným assertem, rozšířená o fixtury a pluginy."
 template = "term.html"
-weight = 145
+weight = 181
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

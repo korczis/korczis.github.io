@@ -3,7 +3,7 @@
 title = "EEx and HEEx"
 description = "Elixir's embedded templates: EEx puts Elixir in text, HEEx in HTML that Phoenix LiveView checks and renders."
 template = "term.html"
-weight = 10
+weight = 11
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]

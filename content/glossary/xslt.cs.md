@@ -3,7 +3,7 @@
 title = "XSLT"
 description = "Jazyk, který převádí dokumenty XML na jiné XML, HTML nebo text pomocí šablon párovaných se vstupním stromem."
 template = "term.html"
-weight = 41
+weight = 42
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]

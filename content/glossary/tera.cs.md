@@ -3,7 +3,7 @@
 title = "Tera"
 description = "Šablonovací engine pro Rust inspirovaný Jinja2: dědičnost, makra, filtry; statický generátor Zola s ním vykresluje stránky."
 template = "term.html"
-weight = 160
+weight = 205
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

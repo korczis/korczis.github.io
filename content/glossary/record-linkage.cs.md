@@ -3,7 +3,7 @@
 title = "Ztotožnění subjektů"
 description = "Hledání záznamů napříč zdroji, které se týkají téže firmy nebo osoby, nejdřív podle společných identifikátorů, pak podle podobných jmen a adres."
 template = "term.html"
-weight = 193
+weight = 245
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

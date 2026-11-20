@@ -3,7 +3,7 @@
 title = "Just"
 description = "A command runner: named recipes in a justfile, like make without the build semantics; the entry point of most of these repositories."
 template = "term.html"
-weight = 19
+weight = 20
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]

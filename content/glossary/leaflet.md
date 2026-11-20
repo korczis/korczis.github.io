@@ -3,7 +3,7 @@
 title = "Leaflet"
 description = "A small JavaScript library for interactive maps: tile layers, markers, popups and GeoJSON in the browser."
 template = "term.html"
-weight = 110
+weight = 138
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

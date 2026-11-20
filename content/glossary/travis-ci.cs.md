@@ -3,7 +3,7 @@
 title = "Travis CI"
 description = "Hostovaná služba průběžné integrace, která při každém pushi sestavovala a testovala open-source repozitáře; nastavuje se souborem .travis.yml."
 template = "term.html"
-weight = 165
+weight = 211
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

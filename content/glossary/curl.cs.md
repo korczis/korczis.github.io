@@ -3,7 +3,7 @@
 title = "curl"
 description = "Nástroj příkazové řádky a knihovna (libcurl) pro přenos dat přes URL: HTTP, FTP a desítky dalších protokolů."
 template = "term.html"
-weight = 67
+weight = 75
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

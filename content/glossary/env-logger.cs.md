@@ -3,7 +3,7 @@
 title = "env_logger"
 description = "Logger pro Rust nastavovaný proměnnou prostředí RUST_LOG."
 template = "term.html"
-weight = 73
+weight = 89
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

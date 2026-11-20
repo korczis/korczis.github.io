@@ -3,7 +3,7 @@
 title = "Grafana"
 description = "Dashboard pro pozorovatelnost nad metrikami, logy a trasami z mnoha datových zdrojů."
 template = "term.html"
-weight = 91
+weight = 114
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

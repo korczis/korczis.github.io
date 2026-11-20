@@ -3,7 +3,7 @@
 title = "PNG"
 description = "Portable Network Graphics: bezztrátový rastrový formát obrázků složený z bloků, s kompresí DEFLATE a alfa kanálem."
 template = "term.html"
-weight = 139
+weight = 172
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

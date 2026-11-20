@@ -17,7 +17,7 @@ og_description = "simple_geocoder: Tools in Elixir, Shell and HTML+EEX, 2024, ac
 og_image = "og/work-simple-geocoder.png"
 schema = "project"
 keywords = ["simple_geocoder", "Tools", "Elixir", "Shell", "HTML+EEX", "2024", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["elixir", "shell", "eex", "erlang", "cachex", "tesla", "csv", "nominatim", "dockerfile", "open-source", "repository", "commit"]
+terms = ["elixir", "shell", "eex", "erlang", "cachex", "tesla", "csv", "openstreetmap", "nominatim", "dockerfile", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

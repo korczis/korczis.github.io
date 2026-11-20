@@ -3,7 +3,7 @@
 title = "libp2p"
 description = "Modulární síťová vrstva pro aplikace peer-to-peer: transporty, vyhledávání, směrování a pub-sub."
 template = "term.html"
-weight = 111
+weight = 139
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -17,7 +17,7 @@ definition = "Modulární síťová vrstva pro aplikace peer-to-peer: transporty
 aliases = []
 reference = { title = "libp2p documentation", url = "https://docs.libp2p.io/" }
 pages = ["skills/chain-of-custody.cs.md", "work/bcnode-extra-scripts.cs.md", "work/bcnode-old.cs.md", "work/js-libp2p-umbrella.cs.md"]
-related = ["commit", "dockerfile", "javascript", "open-source", "repository", "babel", "grpc", "jest"]
+related = ["commit", "dockerfile", "javascript", "open-source", "repository", "babel", "flow", "grpc"]
 og_title = "libp2p: slovník"
 og_image = "og/cs-glossary-libp2p.png"
 keywords = ["libp2p", "Technologie", "Slovník", "Tomáš Korčák"]

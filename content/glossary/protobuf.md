@@ -3,7 +3,7 @@
 title = "Protocol Buffers"
 description = "Google's language-neutral binary serialisation format, with schemas in .proto files compiled to code."
 template = "term.html"
-weight = 143
+weight = 178
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "Google's language-neutral binary serialisation format, with schema
 aliases = ["protobuf"]
 reference = { title = "Protocol Buffers documentation", url = "https://protobuf.dev/" }
 pages = ["skills/chain-of-custody.md", "work/astudo.md", "work/bcnode-old.md", "work/the-scratch.md"]
-related = ["javascript", "rust", "commit", "dockerfile", "grpc", "open-source", "repository", "babel"]
+related = ["javascript", "commit", "dockerfile", "grpc", "open-source", "repository", "rust", "babel"]
 og_title = "Protocol Buffers: glossary"
 og_image = "og/glossary-protobuf.png"
 keywords = ["Protocol Buffers", "Technology", "Glossary", "Tomas Korcak"]

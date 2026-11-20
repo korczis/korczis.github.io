@@ -13,7 +13,7 @@ skill = "chain-of-custody"
 og_title = "Chain of custody: skills"
 og_image = "og/skill-chain-of-custody.png"
 schema = "skill"
-terms = ["skill", "chain-of-custody", "babel", "dockerfile", "grpc", "javascript", "jest", "libp2p", "nodejs", "protobuf", "rocksdb", "rust"]
+terms = ["skill", "chain-of-custody", "babel", "dockerfile", "flow", "grpc", "javascript", "jest", "libp2p", "nodejs", "protobuf", "rocksdb"]
 keywords = ["Chain of custody", "Digital forensics and evidence preservation", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -31,7 +31,7 @@ The concept behind it: [Chain of custody](@/glossary/chain-of-custody.md).
 
 Services that draw on it: [Digital forensics and evidence preservation](@/services/digital-forensics.md).
 
-Practised with: [Babel](@/glossary/babel.md), [Dockerfile](@/glossary/dockerfile.md), [gRPC](@/glossary/grpc.md), [JavaScript](@/glossary/javascript.md), [Jest](@/glossary/jest.md), [libp2p](@/glossary/libp2p.md), [Node.js](@/glossary/nodejs.md) and [Protocol Buffers](@/glossary/protobuf.md).
+Practised with: [Babel](@/glossary/babel.md), [Dockerfile](@/glossary/dockerfile.md), [Flow](@/glossary/flow.md), [gRPC](@/glossary/grpc.md), [JavaScript](@/glossary/javascript.md), [Jest](@/glossary/jest.md), [libp2p](@/glossary/libp2p.md) and [Node.js](@/glossary/nodejs.md).
 
 Public work whose own words show it: [bcnode-old](https://github.com/korczis/bcnode-old).
 

@@ -3,7 +3,7 @@
 title = "fail2ban"
 description = "Démon pro prevenci průniků: čte logy serveru a blokuje adresy, které opakovaně selhávají při přihlášení."
 template = "term.html"
-weight = 79
+weight = 96
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

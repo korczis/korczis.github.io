@@ -3,7 +3,7 @@
 title = "webpack"
 description = "Bundler, který prochází importy javascriptové aplikace a balí její moduly, styly a další soubory do souborů, které načte prohlížeč."
 template = "term.html"
-weight = 174
+weight = 224
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

@@ -3,7 +3,7 @@
 title = "Repository"
 description = "A project's folder under version control: its files and their whole history of commits."
 template = "term.html"
-weight = 214
+weight = 266
 
 [taxonomies]
 tags = ["Glossary", "Concept"]

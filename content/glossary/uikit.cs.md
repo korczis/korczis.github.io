@@ -3,7 +3,7 @@
 title = "UIKit"
 description = "Framework Applu pro uživatelské rozhraní aplikací pro iOS: pohledy, kontrolery, události."
 template = "term.html"
-weight = 168
+weight = 214
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -17,7 +17,7 @@ definition = "Framework Applu pro uživatelské rozhraní aplikací pro iOS: poh
 aliases = []
 reference = { title = "UIKit documentation", url = "https://developer.apple.com/documentation/uikit" }
 pages = ["work/bc-apple.cs.md", "work/minervaeye.cs.md", "work/readingphonenumbersinrealtime.cs.md"]
-related = ["commit", "open-source", "repository", "swift", "xcode", "apple-vision", "avfoundation", "shell"]
+related = ["commit", "open-source", "repository", "swift", "xcode", "apple-vision", "avfoundation", "core-data"]
 og_title = "UIKit: slovník"
 og_image = "og/cs-glossary-uikit.png"
 keywords = ["UIKit", "Technologie", "Slovník", "Tomáš Korčák"]

@@ -3,7 +3,7 @@
 title = "serde"
 description = "Rust's framework for serialising and deserialising data structures to JSON, TOML, YAML and other formats."
 template = "term.html"
-weight = 152
+weight = 195
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -14,7 +14,7 @@ seo_title = "serde (technology)"
 term = "serde"
 kind = "technology"
 definition = "Rust's framework for serialising and deserialising data structures to JSON, TOML, YAML and other formats."
-aliases = []
+aliases = ["serde_json"]
 reference = { title = "serde", url = "https://serde.rs/" }
 pages = ["work/maze-rs.md", "work/rocksdb-indexer.md", "work/sli2dli.md", "work/wims.md"]
 related = ["commit", "open-source", "repository", "rust", "clap", "env-logger", "csv", "data-visualisation"]

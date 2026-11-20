@@ -3,7 +3,7 @@
 title = "superagent"
 description = "A small HTTP client for Node.js and browsers with a chainable API for requests, headers and responses."
 template = "term.html"
-weight = 156
+weight = 201
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

@@ -3,7 +3,7 @@
 title = "Cytoscape.js"
 description = "Knihovna pro kreslení a analýzu grafů (sítí uzlů a hran) v prohlížeči."
 template = "term.html"
-weight = 68
+weight = 76
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -14,10 +14,10 @@ seo_title = "Cytoscape.js (technologie)"
 term = "cytoscape-js"
 kind = "technology"
 definition = "Knihovna pro kreslení a analýzu grafů (sítí uzlů a hran) v prohlížeči."
-aliases = []
+aliases = ["Cytoscape"]
 reference = { title = "js.cytoscape.org", url = "https://js.cytoscape.org/" }
-pages = ["projects/knowledge.cs.md", "services/digital-investigation.cs.md", "stack.cs.md", "work/kompendium-epistemicke-anihilace.cs.md"]
-related = ["flowbite-pro", "alpine-js", "apache-echarts", "elixir", "tailwind-css", "zola", "github-pages", "html"]
+pages = ["projects/knowledge.cs.md", "services/digital-investigation.cs.md", "stack.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/majordomus-reel.cs.md"]
+related = ["flowbite-pro", "apache-echarts", "tailwind-css", "alpine-js", "elixir", "github-pages", "html", "javascript"]
 og_title = "Cytoscape.js: slovník"
 og_image = "og/cs-glossary-cytoscape-js.png"
 keywords = ["Cytoscape.js", "Technologie", "Slovník", "Tomáš Korčák"]
@@ -40,12 +40,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
-Cytoscape.js je součástí 1 mého veřejného repozitáře, od roku 2026 do 2026.
+Cytoscape.js je součástí 3 mých veřejných repozitářů, od roku 2024 do 2026.
 
-K čemu to sloužilo: [Znalosti](@/projects/knowledge.cs.md) (1).
+K čemu to sloužilo: [Znalosti](@/projects/knowledge.cs.md) (1), [Média a umění](@/projects/media.cs.md) (1) a [Web](@/projects/web.cs.md) (1).
 
-Naposledy: [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat.
+Naposledy: [korczis.github.io](@/work/korczis-github-io.cs.md); [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat; [Majordomus reel](@/work/majordomus-reel.cs.md): Hlas, snímky, hudba i zvuk, vše generované a verzované jako software.
 
-1 z těchto projektů běží jako živý web.
+2 z těchto projektů běží jako živé weby.
 
 Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak Cytoscape.js používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje Cytoscape.js s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

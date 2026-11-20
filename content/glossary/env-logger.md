@@ -3,7 +3,7 @@
 title = "env_logger"
 description = "A Rust logger configured by the RUST_LOG environment variable."
 template = "term.html"
-weight = 73
+weight = 89
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

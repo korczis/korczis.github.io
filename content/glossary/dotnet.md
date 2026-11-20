@@ -3,7 +3,7 @@
 title = ".NET"
 description = "Microsoft's runtime and libraries for C# and other languages, across Windows, Linux and macOS."
 template = "term.html"
-weight = 42
+weight = 43
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

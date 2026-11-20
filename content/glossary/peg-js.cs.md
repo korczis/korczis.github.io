@@ -3,7 +3,7 @@
 title = "PEG.js"
 description = "Generátor parserů pro JavaScript: z gramatiky ve tvaru parsing expression grammar vznikne rychlý parser s dobrými chybovými hláškami."
 template = "term.html"
-weight = 135
+weight = 168
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

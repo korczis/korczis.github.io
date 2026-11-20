@@ -3,7 +3,7 @@
 title = "Jason"
 description = "The JSON parser and generator most Elixir projects use, Phoenix included."
 template = "term.html"
-weight = 101
+weight = 128
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

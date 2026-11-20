@@ -3,7 +3,7 @@
 title = "Pydantic"
 description = "Data validation for Python from type hints: models that parse, check and serialise input."
 template = "term.html"
-weight = 144
+weight = 180
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

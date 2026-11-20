@@ -3,7 +3,7 @@
 title = "superagent"
 description = "Malý HTTP klient pro Node.js a prohlížeče se zřetězitelným API pro požadavky, hlavičky a odpovědi."
 template = "term.html"
-weight = 156
+weight = 201
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

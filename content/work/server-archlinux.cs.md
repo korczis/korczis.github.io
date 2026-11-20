@@ -17,7 +17,7 @@ og_description = "server-archlinux: Systémy a infrastruktura, Shell, 2019, arch
 og_image = "og/cs-work-server-archlinux.png"
 schema = "project"
 keywords = ["server-archlinux", "Systémy a infrastruktura", "Shell", "2019", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["shell", "ansible", "vagrant", "virtualbox", "dockerfile", "cockpit", "repository", "commit", "open-source"]
+terms = ["shell", "ansible", "arch-linux", "vagrant", "virtualbox", "dockerfile", "cockpit", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

@@ -3,7 +3,7 @@
 title = "Tokio"
 description = "The asynchronous runtime for Rust: an event loop, tasks, timers and non-blocking I/O for network services."
 template = "term.html"
-weight = 164
+weight = 209
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "The asynchronous runtime for Rust: an event loop, tasks, timers an
 aliases = ["tokio"]
 reference = { title = "Tokio tutorial", url = "https://tokio.rs/tokio/tutorial" }
 pages = ["work/astudo.md", "work/streamflow.md"]
-related = ["commit", "open-source", "repository", "rust", "clap", "css", "csv", "dockerfile"]
+related = ["commit", "open-source", "repository", "rust", "clap", "crossbeam", "css", "csv"]
 og_title = "Tokio: glossary"
 og_image = "og/glossary-tokio.png"
 keywords = ["Tokio", "Technology", "Glossary", "Tomas Korcak"]

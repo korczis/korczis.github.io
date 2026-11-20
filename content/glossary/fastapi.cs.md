@@ -3,7 +3,7 @@
 title = "FastAPI"
 description = "Webový framework v Pythonu pro HTTP API, typovaný modely Pydantic, které validují požadavky a generují popis OpenAPI."
 template = "term.html"
-weight = 80
+weight = 97
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -17,7 +17,7 @@ definition = "Webový framework v Pythonu pro HTTP API, typovaný modely Pydanti
 aliases = []
 reference = { title = "FastAPI documentation", url = "https://fastapi.tiangolo.com/" }
 pages = ["services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "services/due-diligence.cs.md", "services/m-and-a.cs.md", "services/reputation-intelligence.cs.md", "skills/ai-transformation.cs.md", "skills/data-room.cs.md", "skills/decision-support.cs.md", "skills/document-extraction.cs.md", "skills/entity-resolution.cs.md", "skills/insolvency-monitoring.cs.md", "skills/knowledge-graph.cs.md", "skills/m-and-a-screening.cs.md", "skills/market-intelligence.cs.md", "skills/orchestration.cs.md", "skills/risk-scoring.cs.md", "work/openttd-prismatic-bridge.cs.md", "_index.cs.md"]
-related = ["html", "dockerfile", "flowbite-pro", "javascript", "alpine-js", "claude-api", "skill", "github-actions"]
+related = ["dockerfile", "flowbite-pro", "html", "javascript", "alpine-js", "claude-api", "skill", "github-actions"]
 og_title = "FastAPI: slovník"
 og_image = "og/cs-glossary-fastapi.png"
 keywords = ["FastAPI", "Technologie", "Slovník", "Tomáš Korčák"]

@@ -3,7 +3,7 @@
 title = "GLI"
 description = "Knihovna Ruby pro stavbu aplikací příkazové řádky ve stylu gitu, s příkazy, přepínači a nápovědou."
 template = "term.html"
-weight = 89
+weight = 112
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

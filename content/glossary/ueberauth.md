@@ -3,7 +3,7 @@
 title = "Ueberauth"
 description = "An authentication framework for Elixir with strategies for OAuth providers."
 template = "term.html"
-weight = 167
+weight = 213
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

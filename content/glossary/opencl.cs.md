@@ -3,7 +3,7 @@
 title = "OpenCL"
 description = "Otevřený standard pro paralelní výpočty na GPU, CPU a dalších akcelerátorech, s jádry psanými v dialektu C."
 template = "term.html"
-weight = 131
+weight = 163
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -17,7 +17,7 @@ definition = "Otevřený standard pro paralelní výpočty na GPU, CPU a další
 aliases = []
 reference = { title = "Khronos: OpenCL", url = "https://www.khronos.org/opencl/" }
 pages = ["work/magic.cs.md", "work/streamflow.cs.md"]
-related = ["commit", "open-source", "repository", "rust", "audit-trail", "c", "clap", "csv"]
+related = ["commit", "open-source", "repository", "rust", "audit-trail", "c", "clap", "crossbeam"]
 og_title = "OpenCL: slovník"
 og_image = "og/cs-glossary-opencl.png"
 keywords = ["OpenCL", "Technologie", "Slovník", "Tomáš Korčák"]

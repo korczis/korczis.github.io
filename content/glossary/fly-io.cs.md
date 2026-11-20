@@ -3,7 +3,7 @@
 title = "Fly.io"
 description = "Platforma, která spouští aplikace jako mikro-VM blízko uživatelům, nasazované z Dockerfile."
 template = "term.html"
-weight = 83
+weight = 104
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

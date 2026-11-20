@@ -3,7 +3,7 @@
 title = "Plug"
 description = "Specifikace skládatelných modulů pro webové aplikace v Elixiru; pipeline požadavků Phoenixu je složená z plugů."
 template = "term.html"
-weight = 138
+weight = 171
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

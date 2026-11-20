@@ -3,7 +3,7 @@
 title = "Tailwind CSS"
 description = "CSS framework malých utilitních tříd skládaných v markupu, kompilovaný jen na to, co stránka používá."
 template = "term.html"
-weight = 159
+weight = 204
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

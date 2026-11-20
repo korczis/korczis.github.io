@@ -3,7 +3,7 @@
 title = "Socket.IO"
 description = "A library for real-time, two-way communication between browser and server, over WebSocket with fallbacks."
 template = "term.html"
-weight = 153
+weight = 196
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

@@ -3,7 +3,7 @@
 title = "Elm"
 description = "A purely functional language that compiles to JavaScript for web front ends, known for having no runtime exceptions in practice."
 template = "term.html"
-weight = 12
+weight = 13
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]

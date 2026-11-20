@@ -3,7 +3,7 @@
 title = "Couchbase"
 description = "Distribuovaná dokumentová databáze s mezipamětí v operační paměti a dotazovacím jazykem N1QL podobným SQL."
 template = "term.html"
-weight = 62
+weight = 69
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

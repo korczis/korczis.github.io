@@ -3,7 +3,7 @@
 title = "Ueberauth"
 description = "Autentizační framework pro Elixir se strategiemi pro poskytovatele OAuth."
 template = "term.html"
-weight = 167
+weight = 213
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

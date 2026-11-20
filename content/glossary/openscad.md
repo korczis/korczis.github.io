@@ -3,7 +3,7 @@
 title = "OpenSCAD"
 description = "A language for solid 3D models described as code: shapes combined by union, difference and transformation, ready for 3D printing."
 template = "term.html"
-weight = 26
+weight = 27
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]

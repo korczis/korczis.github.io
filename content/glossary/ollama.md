@@ -3,7 +3,7 @@
 title = "Ollama"
 description = "A runtime that serves open language models on local hardware, so sensitive material never leaves the machine."
 template = "term.html"
-weight = 127
+weight = 159
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

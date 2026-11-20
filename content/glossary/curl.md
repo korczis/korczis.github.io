@@ -3,7 +3,7 @@
 title = "curl"
 description = "The command-line tool and library (libcurl) for transferring data over URLs: HTTP, FTP and dozens of other protocols."
 template = "term.html"
-weight = 67
+weight = 75
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

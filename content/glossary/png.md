@@ -3,7 +3,7 @@
 title = "PNG"
 description = "Portable Network Graphics: a lossless raster image format made of chunks, with DEFLATE compression and an alpha channel."
 template = "term.html"
-weight = 139
+weight = 172
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

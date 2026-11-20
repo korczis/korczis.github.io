@@ -3,7 +3,7 @@
 title = "AVFoundation"
 description = "Framework Applu pro časová média: snímání z kamery, přehrávání, nahrávání a úpravy zvuku a videa."
 template = "term.html"
-weight = 47
+weight = 49
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -17,7 +17,7 @@ definition = "Framework Applu pro časová média: snímání z kamery, přehrá
 aliases = []
 reference = { title = "AVFoundation documentation", url = "https://developer.apple.com/documentation/avfoundation" }
 pages = ["work/minervaeye.cs.md", "work/readingphonenumbersinrealtime.cs.md"]
-related = ["apple-vision", "commit", "open-source", "repository", "swift", "uikit", "xcode", "shell"]
+related = ["apple-vision", "commit", "open-source", "repository", "swift", "uikit", "xcode", "core-data"]
 og_title = "AVFoundation: slovník"
 og_image = "og/cs-glossary-avfoundation.png"
 keywords = ["AVFoundation", "Technologie", "Slovník", "Tomáš Korčák"]

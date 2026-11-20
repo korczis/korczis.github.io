@@ -3,7 +3,7 @@
 title = "Yeoman"
 description = "Nástroj pro generování kostry webových projektů: generátory vytvářejí ze šablony soubory projektu, nastavení buildu a konvence."
 template = "term.html"
-weight = 177
+weight = 229
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

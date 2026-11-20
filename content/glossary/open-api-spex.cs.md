@@ -3,7 +3,7 @@
 title = "OpenApiSpex"
 description = "Knihovna pro Elixir, která popisuje API ve Phoenixu v OpenAPI 3, validuje proti tomu popisu požadavky a servíruje specifikaci a Swagger UI."
 template = "term.html"
-weight = 130
+weight = 162
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

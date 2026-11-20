@@ -17,7 +17,7 @@ og_description = "Majordomus: Inženýrství AI, Rust, Shell a JavaScript, 2026,
 og_image = "og/cs-work-prismatic-majordomus.png"
 schema = "project"
 keywords = ["Majordomus", "prismatic-majordomus", "Inženýrství AI", "Rust", "Shell", "JavaScript", "agentic-ai", "ai", "ai-agents", "ai-governance", "claude-code", "cli", "2026", "GitHub", "Tomáš Korčák", "korczis"]
-terms = ["rust", "shell", "javascript", "html", "css", "python", "mcp", "zola", "git", "github-actions", "ai-agent", "github-pages", "repository", "commit", "open-source"]
+terms = ["rust", "shell", "javascript", "html", "css", "python", "mcp", "zola", "git", "yaml", "github-actions", "ai-agent", "github-pages", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

@@ -3,7 +3,7 @@
 title = "Go"
 description = "A compiled language from Google with goroutines and channels for concurrency, used for network services and command-line tools."
 template = "term.html"
-weight = 14
+weight = 15
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]

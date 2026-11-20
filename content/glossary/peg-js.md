@@ -3,7 +3,7 @@
 title = "PEG.js"
 description = "A parser generator for JavaScript: a grammar in parsing-expression form becomes a fast parser with good error messages."
 template = "term.html"
-weight = 135
+weight = 168
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

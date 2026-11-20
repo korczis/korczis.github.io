@@ -3,7 +3,7 @@
 title = "Git"
 description = "Distribuovaný systém správy verzí: každý klon drží celou historii commitů, větví a tagů."
 template = "term.html"
-weight = 84
+weight = 107
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Distribuovaný systém správy verzí: každý klon drží celou historii commitů, větví a tagů."
 aliases = ["Git submodules"]
 reference = { title = "Git documentation", url = "https://git-scm.com/doc" }
-pages = ["skills/orchestration.cs.md", "work/datasciencecoursera.cs.md", "work/generator-the-scratch.cs.md", "work/prismatic-majordomus.cs.md", "work/skull.cs.md", "work/zdeny-docker.cs.md"]
-related = ["commit", "open-source", "repository", "shell", "javascript", "dockerfile", "github-actions", "html"]
+pages = ["work/datasciencecoursera.cs.md", "work/generator-the-scratch.cs.md", "work/prismatic-majordomus.cs.md", "work/skull.cs.md", "work/zdeny-docker.cs.md"]
+related = ["commit", "open-source", "repository", "shell", "javascript", "python", "travis-ci", "ai-agent"]
 og_title = "Git: slovník"
 og_image = "og/cs-glossary-git.png"
 keywords = ["Git", "Technologie", "Slovník", "Tomáš Korčák"]

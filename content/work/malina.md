@@ -17,7 +17,7 @@ og_description = "malina: Learning and experiments in Shell, 2013, archive. Sour
 og_image = "og/work-malina.png"
 schema = "project"
 keywords = ["malina", "Learning and experiments", "Shell", "2013", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["shell", "repository", "commit", "open-source"]
+terms = ["shell", "raspberry-pi", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

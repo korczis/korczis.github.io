@@ -153,8 +153,8 @@
    "by": "pngquant 3.0.3"
   },
   "cs-glossary": {
-   "svg": "87fa9dc28e1b36b4",
-   "png": "2006e42116056fd9",
+   "svg": "4a3867673562029e",
+   "png": "f35d3bc81d571276",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-absinthe": {
@@ -192,6 +192,11 @@
    "png": "0703e1fab97f3f5b",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-arch-linux": {
+   "svg": "c59efce209b04017",
+   "png": "95a851aa87a09ec3",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-arduino": {
    "svg": "59ad6a13771e5bb8",
    "png": "a58e2bf0abafe61c",
@@ -222,6 +227,11 @@
    "png": "b3f2ca6d684485bc",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-axon": {
+   "svg": "c70104a3d8bed5f8",
+   "png": "7f2fbda5564ee9c6",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-babel": {
    "svg": "b9848c500bc51fe6",
    "png": "9bafbfbeaceaedf7",
@@ -230,6 +240,11 @@
   "cs-glossary-beneficial-ownership": {
    "svg": "f806a25f88bf29c6",
    "png": "05c712f9528896f1",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-boost": {
+   "svg": "99c6eff4df416ef5",
+   "png": "3debd54d71ea7b5f",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-bootstrap": {
@@ -297,6 +312,16 @@
    "png": "3e7064e28222b657",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-claude-code": {
+   "svg": "b2446e671ade12a6",
+   "png": "01a995da6ba758e7",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-clippy": {
+   "svg": "ad2da6f9a239cc2e",
+   "png": "606a12a5f5864569",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-cmake": {
    "svg": "5452958fee0c4047",
    "png": "1c120b70c9bbbb06",
@@ -320,6 +345,11 @@
   "cs-glossary-contestability": {
    "svg": "01909465e23ddecc",
    "png": "67dbb9f0767631d2",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-core-data": {
+   "svg": "b133e1347bfdc9c6",
+   "png": "d13c8ca48c4d3179",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-coreos": {
@@ -352,6 +382,11 @@
    "png": "d27cd39f887a0689",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-crossbeam": {
+   "svg": "7d60c053e67447e2",
+   "png": "3091f226304ec424",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-csharp": {
    "svg": "f8299ecb9c800c99",
    "png": "b595c3e334c02887",
@@ -370,6 +405,11 @@
   "cs-glossary-curl": {
    "svg": "8e69fc12dc6ba8e4",
    "png": "6b1fa24b9b9a533a",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-cypher": {
+   "svg": "a4f38d199cce5d08",
+   "png": "ecf94f0e625f92ac",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-cytoscape-js": {
@@ -397,9 +437,34 @@
    "png": "8c01106672968ab0",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-dev-containers": {
+   "svg": "e6b475a3273343cb",
+   "png": "40416b681fecf9d5",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-dialyzer": {
+   "svg": "ceb260e40c3f69f5",
+   "png": "a2562b773acb9b0b",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-digital-forensics": {
    "svg": "c0fe209e5586ec23",
    "png": "489638ff188c0f5a",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-digitalocean": {
+   "svg": "03d6768d856bdc9c",
+   "png": "8134f8e4b6005d90",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-django": {
+   "svg": "df71d06dd08b5939",
+   "png": "d135718edd1e3fe8",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-django-rest-framework": {
+   "svg": "0a53ce075efa79d1",
+   "png": "3438dc4c5c3fa419",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-dockerfile": {
@@ -410,6 +475,11 @@
   "cs-glossary-dotnet": {
    "svg": "29ac9efb8026cceb",
    "png": "9a8ffb0d167b61bc",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-dramatiq": {
+   "svg": "fed5efa83e21994c",
+   "png": "447c69053e383540",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-due-diligence": {
@@ -437,6 +507,11 @@
    "png": "cf26b98aedcc8e6d",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-elixir-flow": {
+   "svg": "4d5b3fc788ee714f",
+   "png": "e58401def1d36f29",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-elm": {
    "svg": "7a6e27431482055a",
    "png": "49f40b32aff64694",
@@ -445,6 +520,11 @@
   "cs-glossary-ember-js": {
    "svg": "cf42a3a891aa009a",
    "png": "ebd2e9d62366b4b2",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-emscripten": {
+   "svg": "3c12db0bffe4ae9e",
+   "png": "30852222fb8f58d8",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-env-logger": {
@@ -482,6 +562,11 @@
    "png": "5cb1a56a83427f04",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-exunit": {
+   "svg": "db0ad47fbfdac0c9",
+   "png": "50b3d24c4bec3cbb",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-fail2ban": {
    "svg": "5fa29e75bdf90f17",
    "png": "d79df374043268d2",
@@ -492,9 +577,19 @@
    "png": "e74841bc32833118",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-ffmpeg": {
+   "svg": "ad904231646b4887",
+   "png": "d3385ffad61a8818",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-financial-statement-analysis": {
    "svg": "b1c9ec0df0accfc8",
    "png": "bb7c7ee635d8b652",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-finch": {
+   "svg": "10321042ca9e8f9c",
+   "png": "a4c4fae0a4f920ae",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-fleet": {
@@ -502,9 +597,19 @@
    "png": "95053884745b0b49",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-flow": {
+   "svg": "1b971f249b4fb451",
+   "png": "a2235d9775d0c017",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-flowbite-pro": {
    "svg": "1d48ff5ab89f4cd1",
    "png": "91ed0e1ad399471f",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-fluentd": {
+   "svg": "952709201e3708a9",
+   "png": "8558487837909239",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-fly-io": {
@@ -520,6 +625,16 @@
   "cs-glossary-front-matter": {
    "svg": "39424290a7fd2e25",
    "png": "e3aa6f3ab0e3e400",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-genstage": {
+   "svg": "4ff75b416dcdd0d8",
+   "png": "5e67a72defc5651f",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-geojson": {
+   "svg": "e044480d252f0534",
+   "png": "53e8046c8e5f6e05",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-gis": {
@@ -577,6 +692,11 @@
    "png": "d55a510a97163f08",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-graphviz": {
+   "svg": "3c2078e4f3273602",
+   "png": "9fba92291128f679",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-grpc": {
    "svg": "2170946056216dbf",
    "png": "f9cd4b09b99188a0",
@@ -607,6 +727,11 @@
    "png": "67f970b4cdc8a6bf",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-helm": {
+   "svg": "34177f79b7a3fb7e",
+   "png": "8546cddbc844179a",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-homebrew": {
    "svg": "e9e86456090779ac",
    "png": "07fb89b32c5be83c",
@@ -627,6 +752,11 @@
    "png": "681700d8cb272789",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-httpx": {
+   "svg": "fa5dcf7981ad714d",
+   "png": "61b3e19db5022b93",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-i18n": {
    "svg": "0cbbd9aa9c91fe13",
    "png": "cca0bf3a7de2d847",
@@ -640,6 +770,11 @@
   "cs-glossary-insolvency": {
    "svg": "628404c3b1eabd1d",
    "png": "0d3f779349d8b715",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-jasmine": {
+   "svg": "e057a7b678e6e2f4",
+   "png": "549d62a8ace6ba95",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-jason": {
@@ -700,6 +835,11 @@
   "cs-glossary-knowledge-graph": {
    "svg": "d0b4f23e4fa4a176",
    "png": "31626244594df303",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-koa": {
+   "svg": "2ab6fe37e7b22acc",
+   "png": "b176962f8afb8ee0",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-kubernetes": {
@@ -777,6 +917,11 @@
    "png": "5eb8064c46a4626b",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-memcached": {
+   "svg": "dc557353ffc7fe33",
+   "png": "6ffba73fcfed95a2",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-mergers-and-acquisitions": {
    "svg": "0da888c3c2a82e21",
    "png": "c6c32ae57ed53318",
@@ -842,6 +987,21 @@
    "png": "fad811bb7f7ce1f9",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-nx": {
+   "svg": "d0d2f13c2bdf61fc",
+   "png": "3e707c4c7e351d17",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-oauth": {
+   "svg": "e83a77bb1169040c",
+   "png": "d12392f197565476",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-oban": {
+   "svg": "c0a1f1fb8886bd61",
+   "png": "65a36642de97ff69",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-objective-c": {
    "svg": "34faa16fcd5c254d",
    "png": "b42c20d8a8eab37f",
@@ -890,6 +1050,11 @@
   "cs-glossary-openscad": {
    "svg": "68b30cb78fb4a0c3",
    "png": "4fb2f77d0300af6f",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-openstreetmap": {
+   "svg": "66b449ad7451d5dc",
+   "png": "bb89d012c9a89ce7",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-orchestration": {
@@ -947,6 +1112,11 @@
    "png": "f3c6349b07445b5b",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-poetry": {
+   "svg": "e41c0a3d1eb27ef4",
+   "png": "5536330d1493bf47",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-policy-as-code": {
    "svg": "bbc9bb64dd6857c4",
    "png": "f9d7fb65f76e7dc0",
@@ -960,6 +1130,11 @@
   "cs-glossary-postgresql": {
    "svg": "00c9121b5c455bc4",
    "png": "310a38692fe0f26b",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-prettier": {
+   "svg": "dbddd996a19470f1",
+   "png": "7cb30b0f2ca407c4",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-prolog": {
@@ -982,6 +1157,11 @@
    "png": "444d2b7828262ad9",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-puppeteer": {
+   "svg": "034f9c82bdedd0ab",
+   "png": "355c713af44f9640",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-pydantic": {
    "svg": "979d8e3c0ef803c4",
    "png": "4ca36ef2fd2ea841",
@@ -997,6 +1177,11 @@
    "png": "75c2682381bcab05",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-qt": {
+   "svg": "06926e191b864e4f",
+   "png": "05d07271d0075652",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-r": {
    "svg": "a81ef66f66bdffea",
    "png": "0deaca6c2569f862",
@@ -1005,6 +1190,16 @@
   "cs-glossary-rabbitmq": {
    "svg": "d8786606a395e0d9",
    "png": "90ce646ea2cdbf12",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-raspberry-pi": {
+   "svg": "0a326a018db4aed6",
+   "png": "cb7dd7f29b43cf2e",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-rayon": {
+   "svg": "9b17dde616ea90f3",
+   "png": "02a978be42857528",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-react": {
@@ -1037,6 +1232,11 @@
    "png": "7b31400afbf46018",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-req": {
+   "svg": "5f61d121e08a012f",
+   "png": "bc5f38e7d973a4aa",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-risk-assessment": {
    "svg": "54e5dd1ccd7bf076",
    "png": "9a3820f93d258900",
@@ -1047,6 +1247,11 @@
    "png": "9dd4f54fd5daa72a",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-rollup": {
+   "svg": "14d3cc0c6b10018a",
+   "png": "ca4df87bffe6095b",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-rspec": {
    "svg": "e98a9e0c83cd2728",
    "png": "787c41f0144e67ee",
@@ -1055,6 +1260,11 @@
   "cs-glossary-ruby": {
    "svg": "a6edb3de8f361f6d",
    "png": "08f79fee0cd557cc",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-ruby-on-rails": {
+   "svg": "84e6877d10889710",
+   "png": "90db252a20a6a1a8",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-rust": {
@@ -1070,6 +1280,11 @@
   "cs-glossary-sanctions-screening": {
    "svg": "de3b8c44061535cc",
    "png": "0fd47376f5016316",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-scikit-learn": {
+   "svg": "e639d407a6e2e93d",
+   "png": "8c71be7b727e4ef3",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-scss": {
@@ -1107,6 +1322,11 @@
    "png": "6acfeb6bcbc4a391",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-software-defined-radio": {
+   "svg": "8bc5b9b368245855",
+   "png": "537ceb7218ac8bb2",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-solr": {
    "svg": "2e1fdec2d30c0b77",
    "png": "74e2ee36fd7dc012",
@@ -1130,6 +1350,11 @@
   "cs-glossary-static-site-generator": {
    "svg": "acf565478a33f829",
    "png": "095da975ac50458b",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-streamdata": {
+   "svg": "d804507d0ad8754d",
+   "png": "743d519e4a071fdc",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-superagent": {
@@ -1187,6 +1412,11 @@
    "png": "bad4782bc213c186",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-tor": {
+   "svg": "60d97ff8b10bb22b",
+   "png": "20e868ee8d778648",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-travis-ci": {
    "svg": "787a554d857f8158",
    "png": "4f3e953a0b283805",
@@ -1212,6 +1442,11 @@
    "png": "aa6a5245e36f50cf",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-uvicorn": {
+   "svg": "0df19aaa73b36a1e",
+   "png": "d9f6baa19c6b36da",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-vagrant": {
    "svg": "e7af22520d6c7d4f",
    "png": "3b23b25fa9a6e95e",
@@ -1225,6 +1460,11 @@
   "cs-glossary-virtualbox": {
    "svg": "17f5684b609b42be",
    "png": "7597c40dfc2c4332",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-vite": {
+   "svg": "1b156161714c82a5",
+   "png": "a8475f9e1181bfb3",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-vitest": {
@@ -1247,9 +1487,24 @@
    "png": "b94803dad504fe22",
    "by": "pngquant 3.0.3"
   },
+  "cs-glossary-webassembly": {
+   "svg": "f9045b7c7af3bafc",
+   "png": "aa5cb6a459e43c1d",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-webgl": {
+   "svg": "6ca34d3b760a0d4f",
+   "png": "0c5e186618c39f6d",
+   "by": "pngquant 3.0.3"
+  },
   "cs-glossary-webpack": {
    "svg": "150171937c7d66ca",
    "png": "c9dd8bf5efec7fa2",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-websocket": {
+   "svg": "fd8b75a53ab02cf0",
+   "png": "200384526ec6863b",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-xcode": {
@@ -1265,6 +1520,11 @@
   "cs-glossary-xslt": {
    "svg": "480d87c8506b1f54",
    "png": "ce00584b3ec1decd",
+   "by": "pngquant 3.0.3"
+  },
+  "cs-glossary-yaml": {
+   "svg": "c2a8150fc4cf6d04",
+   "png": "942ac76056c2080d",
    "by": "pngquant 3.0.3"
   },
   "cs-glossary-yeoman": {
@@ -2563,8 +2823,8 @@
    "by": "pngquant 3.0.3"
   },
   "glossary": {
-   "svg": "6280f33732bc919c",
-   "png": "739914e4811c511c",
+   "svg": "84bd86c10a3013d6",
+   "png": "c875331e6b5c9347",
    "by": "pngquant 3.0.3"
   },
   "glossary-absinthe": {
@@ -2602,6 +2862,11 @@
    "png": "40a7ef9c1735ee4d",
    "by": "pngquant 3.0.3"
   },
+  "glossary-arch-linux": {
+   "svg": "5b85007e6fef00c7",
+   "png": "7142158d0848ba50",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-arduino": {
    "svg": "99c251180d2d1f11",
    "png": "a83edde6c0d7c26a",
@@ -2632,6 +2897,11 @@
    "png": "28c92a6e74f2dd4e",
    "by": "pngquant 3.0.3"
   },
+  "glossary-axon": {
+   "svg": "355c3d7248c77ad8",
+   "png": "d41136c311de37f0",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-babel": {
    "svg": "208d1229af7d984d",
    "png": "e448a2d087565be9",
@@ -2640,6 +2910,11 @@
   "glossary-beneficial-ownership": {
    "svg": "c30eff8670983d70",
    "png": "b352b02b000d7133",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-boost": {
+   "svg": "9e8ca26675e2e45b",
+   "png": "49782069fb5003d5",
    "by": "pngquant 3.0.3"
   },
   "glossary-bootstrap": {
@@ -2707,6 +2982,16 @@
    "png": "7f7e3ecf7d91757a",
    "by": "pngquant 3.0.3"
   },
+  "glossary-claude-code": {
+   "svg": "d7410893fc038bff",
+   "png": "36aef775592116b0",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-clippy": {
+   "svg": "d9ccc9a5fe8bf344",
+   "png": "b91daa2c31df07d6",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-cmake": {
    "svg": "8c2d1d86673e7a5b",
    "png": "52960bd377cf48ad",
@@ -2730,6 +3015,11 @@
   "glossary-contestability": {
    "svg": "ce17defda42d9f5b",
    "png": "9ed5ec93f8c72cb5",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-core-data": {
+   "svg": "f24fc54c0874dfb5",
+   "png": "d286503c318c2a8d",
    "by": "pngquant 3.0.3"
   },
   "glossary-coreos": {
@@ -2762,6 +3052,11 @@
    "png": "f47a6a5df67f190e",
    "by": "pngquant 3.0.3"
   },
+  "glossary-crossbeam": {
+   "svg": "089d97a5c1f32774",
+   "png": "36bafbe5370d4c4a",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-csharp": {
    "svg": "644b9dd7c6d6e5ae",
    "png": "5f0b534ff601df1a",
@@ -2780,6 +3075,11 @@
   "glossary-curl": {
    "svg": "22af75a6255aef1b",
    "png": "2f460948986d13b7",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-cypher": {
+   "svg": "c7bd0430b8c704c3",
+   "png": "17ee42f8debbca23",
    "by": "pngquant 3.0.3"
   },
   "glossary-cytoscape-js": {
@@ -2807,9 +3107,34 @@
    "png": "a27dc61af82cfeb7",
    "by": "pngquant 3.0.3"
   },
+  "glossary-dev-containers": {
+   "svg": "c25d2f8fca8caaeb",
+   "png": "f5881c9b69fb519b",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-dialyzer": {
+   "svg": "107bbab4f30de29a",
+   "png": "77df477d6943e02d",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-digital-forensics": {
    "svg": "d1fb779fcd0eaf39",
    "png": "4006cea1590d5744",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-digitalocean": {
+   "svg": "b41e4c3ae0bcfafc",
+   "png": "21bf086707f53677",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-django": {
+   "svg": "0c51bf6e85f9058c",
+   "png": "092cf528990ab953",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-django-rest-framework": {
+   "svg": "f1b817add1659169",
+   "png": "c33ce8b2ebc144fb",
    "by": "pngquant 3.0.3"
   },
   "glossary-dockerfile": {
@@ -2820,6 +3145,11 @@
   "glossary-dotnet": {
    "svg": "2250dfc81904b1ae",
    "png": "7130cccf80ff15bc",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-dramatiq": {
+   "svg": "c04ba0add30bcc6e",
+   "png": "0e1d8a7851f3c159",
    "by": "pngquant 3.0.3"
   },
   "glossary-due-diligence": {
@@ -2847,6 +3177,11 @@
    "png": "a0e8b90019eac1df",
    "by": "pngquant 3.0.3"
   },
+  "glossary-elixir-flow": {
+   "svg": "8d6ea3bd2d7c3cd2",
+   "png": "6939a811a233770b",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-elm": {
    "svg": "929f5d49075f90d8",
    "png": "326c7b752288ba77",
@@ -2855,6 +3190,11 @@
   "glossary-ember-js": {
    "svg": "c2b574bd22d4e193",
    "png": "45834abacb56b91b",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-emscripten": {
+   "svg": "d20332281dd6b86c",
+   "png": "c96e8866a314b18d",
    "by": "pngquant 3.0.3"
   },
   "glossary-env-logger": {
@@ -2892,6 +3232,11 @@
    "png": "35adab060451ddb5",
    "by": "pngquant 3.0.3"
   },
+  "glossary-exunit": {
+   "svg": "3a13aa1fd99386d9",
+   "png": "c05120466db9c367",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-fail2ban": {
    "svg": "da1cf2d652d910c5",
    "png": "90a0c860d835d706",
@@ -2902,9 +3247,19 @@
    "png": "586be039318e8ba5",
    "by": "pngquant 3.0.3"
   },
+  "glossary-ffmpeg": {
+   "svg": "897ad55a39c0149a",
+   "png": "088955049092c9f3",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-financial-statement-analysis": {
    "svg": "de5a33587a569bc7",
    "png": "d21f5ed9453378bf",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-finch": {
+   "svg": "1ae41dda7deee59b",
+   "png": "1aeeb599009974b2",
    "by": "pngquant 3.0.3"
   },
   "glossary-fleet": {
@@ -2912,9 +3267,19 @@
    "png": "0165eba0a884ca00",
    "by": "pngquant 3.0.3"
   },
+  "glossary-flow": {
+   "svg": "71248a45591dd95e",
+   "png": "640f184857335a12",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-flowbite-pro": {
    "svg": "5697bdf13ddccea1",
    "png": "09b132746924bb04",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-fluentd": {
+   "svg": "7ff7f350d70513e1",
+   "png": "7d136d405a2b1d2a",
    "by": "pngquant 3.0.3"
   },
   "glossary-fly-io": {
@@ -2930,6 +3295,16 @@
   "glossary-front-matter": {
    "svg": "bcabca9d47ca32ef",
    "png": "f344ef68092c9676",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-genstage": {
+   "svg": "a81d8d55ea479c0d",
+   "png": "4dad736665abfcc3",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-geojson": {
+   "svg": "f50de226ab424fb9",
+   "png": "ab46aed931cc83a5",
    "by": "pngquant 3.0.3"
   },
   "glossary-gis": {
@@ -2987,6 +3362,11 @@
    "png": "7ac80743fa2026d3",
    "by": "pngquant 3.0.3"
   },
+  "glossary-graphviz": {
+   "svg": "84ee15b2fded52e1",
+   "png": "1ad9971798049881",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-grpc": {
    "svg": "3f10a2dde135d2a8",
    "png": "89c7510614c2cd07",
@@ -3017,6 +3397,11 @@
    "png": "6942a420316c05ae",
    "by": "pngquant 3.0.3"
   },
+  "glossary-helm": {
+   "svg": "3fe5b3bac44c9176",
+   "png": "45969c2df2e05741",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-homebrew": {
    "svg": "9d210ffd00eb16b3",
    "png": "7a942b4ee64667af",
@@ -3037,6 +3422,11 @@
    "png": "a5ffcba0b423fbe7",
    "by": "pngquant 3.0.3"
   },
+  "glossary-httpx": {
+   "svg": "36212f429a09997b",
+   "png": "9b716b98b8d61ecf",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-i18n": {
    "svg": "0669f16ac3401c1c",
    "png": "8c66b695ca6e0bf6",
@@ -3050,6 +3440,11 @@
   "glossary-insolvency": {
    "svg": "db3f7b999ecbc1db",
    "png": "092fd9b0591561d8",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-jasmine": {
+   "svg": "907df8ca91dca859",
+   "png": "9a2440cd3c6fce09",
    "by": "pngquant 3.0.3"
   },
   "glossary-jason": {
@@ -3110,6 +3505,11 @@
   "glossary-knowledge-graph": {
    "svg": "0565abb92c394f82",
    "png": "61bf709072a426a6",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-koa": {
+   "svg": "41732d7fd685f28b",
+   "png": "471f6792c0eab765",
    "by": "pngquant 3.0.3"
   },
   "glossary-kubernetes": {
@@ -3187,6 +3587,11 @@
    "png": "fbdbf0bad1315b61",
    "by": "pngquant 3.0.3"
   },
+  "glossary-memcached": {
+   "svg": "2606a729be937e55",
+   "png": "5030987d2e367ad0",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-mergers-and-acquisitions": {
    "svg": "5fafd75859d60ffd",
    "png": "7d892aec122c0a6a",
@@ -3252,6 +3657,21 @@
    "png": "10686c5afa5c0169",
    "by": "pngquant 3.0.3"
   },
+  "glossary-nx": {
+   "svg": "65b6f418d90b2ab5",
+   "png": "0ffc7c80cb827b10",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-oauth": {
+   "svg": "5320b98740c6f710",
+   "png": "714ead48d25be98c",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-oban": {
+   "svg": "ef130d95b6711b4e",
+   "png": "cd79a1573a47e971",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-objective-c": {
    "svg": "9659da6188e51d86",
    "png": "982a9f35ebb3a761",
@@ -3300,6 +3720,11 @@
   "glossary-openscad": {
    "svg": "f6c2d21d821b8c6a",
    "png": "29ffbffcecc988d2",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-openstreetmap": {
+   "svg": "ae922e162b6a7092",
+   "png": "61110148ab13459c",
    "by": "pngquant 3.0.3"
   },
   "glossary-orchestration": {
@@ -3357,6 +3782,11 @@
    "png": "5f0f0096c5cff4ec",
    "by": "pngquant 3.0.3"
   },
+  "glossary-poetry": {
+   "svg": "b19703bd71bc2cc5",
+   "png": "6dbd82a15d7a79b4",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-policy-as-code": {
    "svg": "a77d1d555efc8b83",
    "png": "af9d7a3475be8b30",
@@ -3370,6 +3800,11 @@
   "glossary-postgresql": {
    "svg": "8a1bc6ae6d2d6278",
    "png": "5296f3fffb8930ac",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-prettier": {
+   "svg": "78500ead373df10a",
+   "png": "94c8cd01fac82a02",
    "by": "pngquant 3.0.3"
   },
   "glossary-prolog": {
@@ -3392,6 +3827,11 @@
    "png": "5eaaf97b5e72a423",
    "by": "pngquant 3.0.3"
   },
+  "glossary-puppeteer": {
+   "svg": "76165957f1eceb86",
+   "png": "d05c8847adf5f8f9",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-pydantic": {
    "svg": "e16254e5b2ae2777",
    "png": "58846913935ea318",
@@ -3407,6 +3847,11 @@
    "png": "54c5325756e7f0d2",
    "by": "pngquant 3.0.3"
   },
+  "glossary-qt": {
+   "svg": "7219771c1f9699d1",
+   "png": "4fb3580f65f33a18",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-r": {
    "svg": "6184941c9b3239cb",
    "png": "c52904706df2afbf",
@@ -3415,6 +3860,16 @@
   "glossary-rabbitmq": {
    "svg": "5dd1bb27a87826da",
    "png": "840f05ab930ff9df",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-raspberry-pi": {
+   "svg": "15b25adc9e277a3f",
+   "png": "4a05e58d500add32",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-rayon": {
+   "svg": "91ed2356c3b4a74c",
+   "png": "2f878a34cca9333d",
    "by": "pngquant 3.0.3"
   },
   "glossary-react": {
@@ -3447,6 +3902,11 @@
    "png": "47617ed9ac42b281",
    "by": "pngquant 3.0.3"
   },
+  "glossary-req": {
+   "svg": "705848413d7ca5bb",
+   "png": "0b82f58c100700cd",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-risk-assessment": {
    "svg": "d42fcf82555b67ea",
    "png": "dc741ead5c18b597",
@@ -3457,6 +3917,11 @@
    "png": "2195c4919d87bd61",
    "by": "pngquant 3.0.3"
   },
+  "glossary-rollup": {
+   "svg": "d976e101c6faae78",
+   "png": "c166808db224a7fd",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-rspec": {
    "svg": "1e0a38358cca6830",
    "png": "6e5c0369ac92fb97",
@@ -3465,6 +3930,11 @@
   "glossary-ruby": {
    "svg": "47cfe5e5e6a930b6",
    "png": "a2173ff2026c200a",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-ruby-on-rails": {
+   "svg": "beffb90131a36466",
+   "png": "9b4a68fc2c48d1a2",
    "by": "pngquant 3.0.3"
   },
   "glossary-rust": {
@@ -3480,6 +3950,11 @@
   "glossary-sanctions-screening": {
    "svg": "7e67d0c92b312e9a",
    "png": "f797f9e0c44f14ce",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-scikit-learn": {
+   "svg": "edf92602a5d796ad",
+   "png": "84c9633bfd825c9e",
    "by": "pngquant 3.0.3"
   },
   "glossary-scss": {
@@ -3517,6 +3992,11 @@
    "png": "48e941b4e4c2e845",
    "by": "pngquant 3.0.3"
   },
+  "glossary-software-defined-radio": {
+   "svg": "99347ab42c340460",
+   "png": "2ae0bd7412eeed91",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-solr": {
    "svg": "1163b2cb87096dd9",
    "png": "6e62c259d85e870f",
@@ -3540,6 +4020,11 @@
   "glossary-static-site-generator": {
    "svg": "35fce98f3be395b6",
    "png": "72aa305c9e98907e",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-streamdata": {
+   "svg": "fcc4e753ec5f336d",
+   "png": "f678f3167c426bb4",
    "by": "pngquant 3.0.3"
   },
   "glossary-superagent": {
@@ -3597,6 +4082,11 @@
    "png": "767c146545d4b2dc",
    "by": "pngquant 3.0.3"
   },
+  "glossary-tor": {
+   "svg": "de364d25fb456ffa",
+   "png": "c6d99fde9ed7bf03",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-travis-ci": {
    "svg": "f2206ea3ec2560c0",
    "png": "0e3a02421584bf10",
@@ -3622,6 +4112,11 @@
    "png": "74b5ae316d344055",
    "by": "pngquant 3.0.3"
   },
+  "glossary-uvicorn": {
+   "svg": "17bf869fabae8f9c",
+   "png": "21a31e99a36fc412",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-vagrant": {
    "svg": "776c76288da00db5",
    "png": "27c3638822792553",
@@ -3635,6 +4130,11 @@
   "glossary-virtualbox": {
    "svg": "87cce3188e796249",
    "png": "d26fb6bd694d0f6c",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-vite": {
+   "svg": "0bccdc639deab7d4",
+   "png": "249d6fd5ab395e4e",
    "by": "pngquant 3.0.3"
   },
   "glossary-vitest": {
@@ -3657,9 +4157,24 @@
    "png": "30497b76fe5f4a76",
    "by": "pngquant 3.0.3"
   },
+  "glossary-webassembly": {
+   "svg": "44fb1a779766c01c",
+   "png": "0e5dc1d73d09a5dc",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-webgl": {
+   "svg": "6eade2ca29b5b4a4",
+   "png": "f034634bedf49a53",
+   "by": "pngquant 3.0.3"
+  },
   "glossary-webpack": {
    "svg": "2e55772557cfba9c",
    "png": "c6b44673759ff2e7",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-websocket": {
+   "svg": "1a634847a3e3d223",
+   "png": "b320608877065d47",
    "by": "pngquant 3.0.3"
   },
   "glossary-xcode": {
@@ -3675,6 +4190,11 @@
   "glossary-xslt": {
    "svg": "9d632d62cbd33a1d",
    "png": "f9eb1e34480e155d",
+   "by": "pngquant 3.0.3"
+  },
+  "glossary-yaml": {
+   "svg": "831d0caa6fa45008",
+   "png": "47cc62240c2cde93",
    "by": "pngquant 3.0.3"
   },
   "glossary-yeoman": {

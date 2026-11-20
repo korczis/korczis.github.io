@@ -3,7 +3,7 @@
 title = "Prolog"
 description = "Jazyk logického programování: program je množina faktů a pravidel a spustit ho znamená položit dotaz, který systém dokáže prohledáváním a unifikací."
 template = "term.html"
-weight = 29
+weight = 30
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
