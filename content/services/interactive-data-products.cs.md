@@ -14,7 +14,7 @@ icon = "graph"
 og_title = "Interaktivní datové produkty a simulátory"
 og_image = "og/cs-service-interactive-data-products.png"
 schema = "service"
-terms = ["service", "apache-echarts", "d3", "p5-js", "web-audio", "postgis", "zola", "data-visualisation", "gis", "data-integration", "knowledge-graph", "decision-support-system", "javascript", "html", "shell", "nodejs", "dockerfile", "elixir", "tailwind-css", "flowbite-pro", "postgresql", "python"]
+terms = ["service", "apache-echarts", "d3", "p5-js", "web-audio", "postgis", "zola", "data-visualisation", "gis", "data-integration", "knowledge-graph", "decision-support-system", "javascript", "html", "nodejs", "shell", "dockerfile", "elixir", "postgresql", "tailwind-css", "flowbite-pro", "alpine-js"]
 keywords = ["Interaktivní datové produkty a simulátory", "Interaktivní vizualizace", "Geoprostorová analýza", "Integrace dat", "Znalostní graf", "Podpora rozhodování", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -34,9 +34,9 @@ Nejdřív postavit model a nechat čtenáře ho řídit: parametry, čas a filtr
 
 Je postavená na: [Apache ECharts](@/glossary/apache-echarts.cs.md), [D3.js](@/glossary/d3.cs.md), [p5.js](@/glossary/p5-js.cs.md), [Web Audio](@/glossary/web-audio.cs.md), [PostGIS](@/glossary/postgis.cs.md) a [Zola](@/glossary/zola.cs.md).
 
-Technologie za ní, změřené z práce, která tyto dovednosti dokládá: [JavaScript](@/glossary/javascript.cs.md), [HTML](@/glossary/html.cs.md), [Shell](@/glossary/shell.cs.md), [Node.js](@/glossary/nodejs.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md), [Elixir](@/glossary/elixir.cs.md), [Tailwind CSS](@/glossary/tailwind-css.cs.md) a [Flowbite Pro](@/glossary/flowbite-pro.cs.md).
+Technologie za ní, změřené z práce, která tyto dovednosti dokládá: [JavaScript](@/glossary/javascript.cs.md), [HTML](@/glossary/html.cs.md), [Node.js](@/glossary/nodejs.cs.md), [Shell](@/glossary/shell.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md), [Elixir](@/glossary/elixir.cs.md), [PostgreSQL](@/glossary/postgresql.cs.md) a [Tailwind CSS](@/glossary/tailwind-css.cs.md).
 
-Její dovednosti dokládá 24 veřejných repozitářů (24 vlastními slovy).
+Její dovednosti dokládá 23 veřejných repozitářů (23 vlastními slovy).
 
 Byla dodána v klientské práci pod dohodami o mlčenlivosti, v odvětví: Developer nemovitostí a Finanční a investiční skupina, v roli: Architekt, Vedoucí inženýr, Inženýr AI, Datový inženýr, Analytik šetření a Poradce; případy užití popisují princip a záměr, nikdy klienta, osobu, datum ani číslo.
 

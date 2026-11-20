@@ -17,7 +17,7 @@ definition = "Rozhraní prohlížeče pro generování, zpracování a analýzu 
 aliases = ["Web Audio API"]
 reference = { title = "MDN Web Docs: Web Audio API", url = "https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API" }
 pages = ["projects/science.cs.md", "services/interactive-data-products.cs.md", "work/oscilla.cs.md"]
-related = ["data-visualisation", "flowbite-pro", "javascript", "p5-js", "alpine-js", "apache-echarts", "elixir", "html"]
+related = ["alpine-js", "data-visualisation", "flowbite-pro", "javascript", "p5-js", "apache-echarts", "elixir", "html"]
 og_title = "Web Audio: slovník"
 og_image = "og/cs-glossary-web-audio.png"
 keywords = ["Web Audio", "Technologie", "Slovník", "Tomáš Korčák"]

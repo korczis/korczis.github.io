@@ -17,7 +17,7 @@ definition = "The browser API for generating, processing and analysing sound in 
 aliases = ["Web Audio API"]
 reference = { title = "MDN Web Docs: Web Audio API", url = "https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API" }
 pages = ["projects/science.md", "services/interactive-data-products.md", "work/oscilla.md"]
-related = ["data-visualisation", "flowbite-pro", "javascript", "p5-js", "alpine-js", "apache-echarts", "elixir", "html"]
+related = ["alpine-js", "data-visualisation", "flowbite-pro", "javascript", "p5-js", "apache-echarts", "elixir", "html"]
 og_title = "Web Audio: glossary"
 og_image = "og/glossary-web-audio.png"
 keywords = ["Web Audio", "Technology", "Glossary", "Tomas Korcak"]

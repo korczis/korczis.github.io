@@ -13,7 +13,7 @@ skill = "interactive-visualisation"
 og_title = "Interactive visualisation: skills"
 og_image = "og/skill-interactive-visualisation.png"
 schema = "skill"
-terms = ["skill", "data-visualisation", "html", "javascript", "flowbite-pro", "github-pages", "tailwind-css", "alpine-js", "elixir", "python", "shell", "typescript"]
+terms = ["skill", "data-visualisation", "html", "javascript", "alpine-js", "flowbite-pro", "github-pages", "tailwind-css", "apache-echarts", "elixir", "majordomus", "p5-js"]
 keywords = ["Interactive visualisation", "Interactive data products and simulators", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -31,8 +31,8 @@ The concept behind it: [Data visualisation](@/glossary/data-visualisation.md).
 
 Services that draw on it: [Interactive data products and simulators](@/services/interactive-data-products.md).
 
-Practised with: [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md), [Flowbite Pro](@/glossary/flowbite-pro.md), [GitHub Pages](@/glossary/github-pages.md), [Tailwind CSS](@/glossary/tailwind-css.md), [Alpine.js](@/glossary/alpine-js.md), [Elixir](@/glossary/elixir.md) and [Python](@/glossary/python.md).
+Practised with: [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md), [Alpine.js](@/glossary/alpine-js.md), [Flowbite Pro](@/glossary/flowbite-pro.md), [GitHub Pages](@/glossary/github-pages.md), [Tailwind CSS](@/glossary/tailwind-css.md), [Apache ECharts](@/glossary/apache-echarts.md) and [Elixir](@/glossary/elixir.md).
 
-Public work whose own words show it: [algoglyph](https://github.com/korczis/algoglyph), [kompendium-epistemicke-anihilace](https://github.com/korczis/kompendium-epistemicke-anihilace), [sonic-playground](https://github.com/korczis/sonic-playground) and [gooddata-graphql](https://github.com/korczis/gooddata-graphql).
+Public work whose own words show it: [algoglyph](https://github.com/korczis/algoglyph), [kompendium-epistemicke-anihilace](https://github.com/korczis/kompendium-epistemicke-anihilace), [gooddata-graphql](https://github.com/korczis/gooddata-graphql) and [astronomists](https://github.com/korczis/astronomists).
 
 How to read this page: the definition is the experience vocabulary's; the services, technologies, public [repositories](@/glossary/repository.md) and use cases are derived and each links to its page.

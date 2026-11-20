@@ -1,6 +1,6 @@
 {
  "schema": "korczis-hub-recent/v2",
- "generated_at": "2026-11-20T02:32:07Z",
+ "generated_at": "2026-11-20T12:02:06Z",
  "window_days": 1461,
  "periods": [
   {
@@ -18,7 +18,7 @@
  ],
  "archive": 162,
  "rule": "every original repository of data/index.json; a repository is recent when its default branch has a commit in the window, archive otherwise; host activity dates are ignored",
- "asked": 3,
+ "asked": 4,
  "repos": [
   {
    "name": "sonic-playground",
@@ -27,10 +27,60 @@
    "category": "media",
    "language": "Python",
    "created_at": "2026-11-12T00:48:36Z",
-   "pushed_at": "2026-11-20T01:46:17Z",
-   "last_commit": "2026-11-20T02:01:55Z",
-   "last_message": "Merge branch 'feature/wave-15': 37 more Spotify picks in English and Czech",
+   "pushed_at": "2026-11-20T10:33:59Z",
+   "last_commit": "2026-11-20T10:03:54Z",
+   "last_message": "Merge branch 'feature/wave-20': 23 more Spotify picks in English and Czech",
    "commits": [
+    {
+     "at": "2026-11-20T10:03:54Z",
+     "message": "Merge branch 'feature/wave-20': 23 more Spotify picks in English and Czech",
+     "url": "https://github.com/korczis/sonic-playground/commit/cd0dbfad176e2bd9ba7e5ed69c11a79b9e98288f"
+    },
+    {
+     "at": "2026-11-20T09:28:16Z",
+     "message": "feat(content): wave 20, 23 more of the owner's Spotify picks, each in English and Czech",
+     "url": "https://github.com/korczis/sonic-playground/commit/345db44b36bb8ff7b6538cc4172c928a6f334e46"
+    },
+    {
+     "at": "2026-11-20T08:55:50Z",
+     "message": "Merge branch 'feature/wave-19': 24 more Spotify picks in English and Czech",
+     "url": "https://github.com/korczis/sonic-playground/commit/fb99e8035ee3241141b7ae1724e0d3f4edac5596"
+    },
+    {
+     "at": "2026-11-20T08:23:56Z",
+     "message": "feat(content): wave 19, 24 more of the owner's Spotify picks, each in English and Czech",
+     "url": "https://github.com/korczis/sonic-playground/commit/dc12af87ab81c69fd74ace5ae3a5d5491466f941"
+    },
+    {
+     "at": "2026-11-20T07:46:32Z",
+     "message": "Merge branch 'feature/wave-18': 38 more Spotify picks in English and Czech",
+     "url": "https://github.com/korczis/sonic-playground/commit/a2b6e03f74ab37ebe2384eba0a4f6e702eed45f0"
+    },
+    {
+     "at": "2026-11-20T07:17:09Z",
+     "message": "feat(content): wave 18, 38 more of the owner's Spotify picks, each in English and Czech",
+     "url": "https://github.com/korczis/sonic-playground/commit/a5530de0c28e30173641b474a45a9698a07dccad"
+    },
+    {
+     "at": "2026-11-20T04:28:52Z",
+     "message": "Merge branch 'feature/wave-17': 37 more Spotify picks in English and Czech",
+     "url": "https://github.com/korczis/sonic-playground/commit/30b74cbfa4c0a6b4a65a2968f3a151f07188af0a"
+    },
+    {
+     "at": "2026-11-20T03:48:52Z",
+     "message": "feat(content): wave 17, 37 more of the owner's Spotify picks, each in English and Czech",
+     "url": "https://github.com/korczis/sonic-playground/commit/e0128ae1279ee99d218b7846ec711e267e26e48a"
+    },
+    {
+     "at": "2026-11-20T03:35:32Z",
+     "message": "Merge branch 'feature/wave-16': 38 more Spotify picks in English and Czech",
+     "url": "https://github.com/korczis/sonic-playground/commit/380125ca804b75dc2f98655efef357341da1a70e"
+    },
+    {
+     "at": "2026-11-20T03:00:43Z",
+     "message": "feat(content): wave 16, 38 more of the owner's Spotify picks, each in English and Czech",
+     "url": "https://github.com/korczis/sonic-playground/commit/d7445ba896270b81c9dc723e603c98b41ec20b22"
+    },
     {
      "at": "2026-11-20T02:01:55Z",
      "message": "Merge branch 'feature/wave-15': 37 more Spotify picks in English and Czech",
@@ -130,62 +180,12 @@
      "at": "2026-11-16T20:35:09Z",
      "message": "Merge branch 'fix/probe-links-transient': 406 is a refusal; a passing 5xx or silence is asked once more",
      "url": "https://github.com/korczis/sonic-playground/commit/0fdb765fbfc437cd609531f68ba95237c153701b"
-    },
-    {
-     "at": "2026-11-16T20:03:56Z",
-     "message": "fix(probe-links): 406 is a refusal; a passing 5xx or silence is asked once more",
-     "url": "https://github.com/korczis/sonic-playground/commit/7d9a264f947e82fa426f566d6a7d00086cdceb8d"
-    },
-    {
-     "at": "2026-11-16T04:27:33Z",
-     "message": "Merge branch 'feature/visualizer-background': a calm picture behind every page while the player plays",
-     "url": "https://github.com/korczis/sonic-playground/commit/94cf51d8f6f179341a51fe8626becf23b23dd948"
-    },
-    {
-     "at": "2026-11-16T03:58:12Z",
-     "message": "feat(visualizer): a calm picture behind every page while the player plays",
-     "url": "https://github.com/korczis/sonic-playground/commit/f148eb877b4e6d0da8df122e2139f750bda79f77"
-    },
-    {
-     "at": "2026-11-15T20:37:21Z",
-     "message": "Merge branch 'feature/visualizer': a Winamp-style visualiser, full screen and behind the hero, and a turning mosaic",
-     "url": "https://github.com/korczis/sonic-playground/commit/2d75536428bcb5b158e451db4756eeef518d53c8"
-    },
-    {
-     "at": "2026-11-15T20:03:39Z",
-     "message": "Merge remote-tracking branch 'origin/main' into feature/visualizer",
-     "url": "https://github.com/korczis/sonic-playground/commit/de9d16e9bc805fe7502b672711eae96685feb39a"
-    },
-    {
-     "at": "2026-11-15T20:01:58Z",
-     "message": "fix(visualizer): an independent review's findings: unobtrusive, keyboard-safe, calm hero",
-     "url": "https://github.com/korczis/sonic-playground/commit/c0f96327fe9dc2378df7305ae3ae0d4e3b7b7fa9"
-    },
-    {
-     "at": "2026-11-15T19:48:40Z",
-     "message": "Merge branch 'chore/derived-attributes': the derive's outputs are declared merge=derived",
-     "url": "https://github.com/korczis/sonic-playground/commit/987785cc123bba00be1f813ce460e0f186f5037d"
-    },
-    {
-     "at": "2026-11-15T19:19:46Z",
-     "message": "Merge branch 'fix/official-videos': JPattersson's Elevator embeds the label's own upload",
-     "url": "https://github.com/korczis/sonic-playground/commit/d634e9e4ad516d115f1e18b21745824ed343421c"
-    },
-    {
-     "at": "2026-11-15T18:47:21Z",
-     "message": "fix(content): JPattersson's Elevator embeds the label's own upload",
-     "url": "https://github.com/korczis/sonic-playground/commit/e61711e18e1075832b9f834ed8a41876653b2fdf"
-    },
-    {
-     "at": "2026-11-15T18:47:12Z",
-     "message": "feat(visualizer): Winamp-style visualiser, full screen and in the hero, and a turning mosaic",
-     "url": "https://github.com/korczis/sonic-playground/commit/308258e4c32d4541e0b1ec0f6d68654672e12f58"
     }
    ],
    "languages": [
     {
      "name": "Python",
-     "share": 41.3
+     "share": 41.4
     },
     {
      "name": "JavaScript",
@@ -193,7 +193,7 @@
     },
     {
      "name": "HTML",
-     "share": 19.8
+     "share": 19.7
     },
     {
      "name": "Shell",
@@ -223,10 +223,25 @@
    "category": "web",
    "language": "JavaScript",
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-20T02:15:52Z",
-   "last_commit": "2026-11-20T01:21:57Z",
-   "last_message": "chore(merge): integrate #44, technologies in two repositories get their page too",
+   "pushed_at": "2026-11-20T04:39:58Z",
+   "last_commit": "2026-11-20T03:49:02Z",
+   "last_message": "chore(merge): integrate #45, notable technologies of a single repository get their page",
    "commits": [
+    {
+     "at": "2026-11-20T03:49:02Z",
+     "message": "chore(merge): integrate #45, notable technologies of a single repository get their page",
+     "url": "https://github.com/korczis/korczis.github.io/commit/7d10edbdd672fcb6587799663f064dea30f94f8e"
+    },
+    {
+     "at": "2026-11-20T03:22:48Z",
+     "message": "feat(glossary): notable technologies of a single repository get their page",
+     "url": "https://github.com/korczis/korczis.github.io/commit/e18053832c7acc78764f0edec448869219d12ed0"
+    },
+    {
+     "at": "2026-11-20T02:32:34Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/af274ed0d4bdc1bedd5d967ba185d5a7044ee9f7"
+    },
     {
      "at": "2026-11-20T01:21:57Z",
      "message": "chore(merge): integrate #44, technologies in two repositories get their page too",
@@ -361,21 +376,6 @@
      "at": "2026-11-18T08:36:22Z",
      "message": "chore(merge): bring readme-embed into case-studies; short month names from translations",
      "url": "https://github.com/korczis/korczis.github.io/commit/df09b16b80f145f04d8f60f57097ba55e944c332"
-    },
-    {
-     "at": "2026-11-18T08:33:25Z",
-     "message": "fix(glossary): a technology chip leads to the evidence anchor only when the term page has one",
-     "url": "https://github.com/korczis/korczis.github.io/commit/f2f2813a4caa70891dc532319dd3627efcccc58c"
-    },
-    {
-     "at": "2026-11-18T08:13:57Z",
-     "message": "feat(landing): offers lead to their services, /about/ shows what I did for clients",
-     "url": "https://github.com/korczis/korczis.github.io/commit/2ef102682c62a2d48f8d102298dde3ad083a5256"
-    },
-    {
-     "at": "2026-11-18T08:09:27Z",
-     "message": "chore(merge): bring master (#36) into readme-embed; chips named by their visible text",
-     "url": "https://github.com/korczis/korczis.github.io/commit/55b7bfbce45f43a972f410e97809d682db2ca249"
     }
    ],
    "languages": [
@@ -430,7 +430,7 @@
    "category": "science",
    "language": "JavaScript",
    "created_at": "2026-10-01T21:05:33Z",
-   "pushed_at": "2026-11-20T02:09:48Z",
+   "pushed_at": "2026-11-20T03:43:19Z",
    "last_commit": "2026-11-19T17:46:32Z",
    "last_message": "chore(release): záznam v3.41.9; U118, U119, U120 a Q113 hotovo (#628)",
    "commits": [
@@ -846,7 +846,7 @@
    "category": "ai",
    "language": "Rust",
    "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-19T05:33:30Z",
+   "pushed_at": "2026-11-20T10:59:11Z",
    "last_commit": "2026-11-19T02:54:59Z",
    "last_message": "Merge pull request #3079 from korczis/plan/I4632-I4633-a-shed-requirement-and-a-whole-run-gate",
    "commits": [

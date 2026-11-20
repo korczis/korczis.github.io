@@ -17,7 +17,7 @@ definition = "CSS framework malých utilitních tříd skládaných v markupu, k
 aliases = ["tailwindcss"]
 reference = { title = "tailwindcss.com", url = "https://tailwindcss.com/docs" }
 pages = ["services/_index.cs.md", "services/ai-engineering-governance.cs.md", "services/decision-support-ai.cs.md", "services/digital-investigation.cs.md", "services/due-diligence.cs.md", "services/interactive-data-products.cs.md", "services/m-and-a.cs.md", "services/reputation-intelligence.cs.md", "skills/_index.cs.md", "skills/audit-trail.cs.md", "skills/decision-support.cs.md", "skills/document-extraction.cs.md", "skills/due-diligence.cs.md", "skills/geospatial-analysis.cs.md", "skills/interactive-visualisation.cs.md", "skills/osint-investigation.cs.md", "skills/ownership-analysis.cs.md", "skills/policy-as-code.cs.md", "stack.cs.md", "work/algoglyph.cs.md", "work/astronomists.cs.md", "work/catharsis-as-a-service.cs.md", "work/crisis-map.cs.md", "work/data-atlas.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/korczis-github-io.cs.md", "work/korczis-gitlab-io.cs.md", "work/majordomus-reel.cs.md", "work/openttd-prismatic-bridge.cs.md", "work/oscilla.cs.md", "work/prismatic.cs.md", "work/sonic-playground.cs.md", "work/the-psycho.cs.md", "work/u-tygra.cs.md", "work/vomaste-cz.cs.md", "_index.cs.md"]
-related = ["javascript", "html", "flowbite-pro", "shell", "python", "github-pages", "alpine-js", "css"]
+related = ["javascript", "html", "flowbite-pro", "shell", "python", "alpine-js", "github-pages", "css"]
 og_title = "Tailwind CSS: slovník"
 og_image = "og/cs-glossary-tailwind-css.png"
 keywords = ["Tailwind CSS", "Technologie", "Slovník", "Tomáš Korčák"]

@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Projekt Apache pro interaktivní grafy: kalendáře, sunbursty, mapy a velké datové sady."
 aliases = ["ECharts", "echarts"]
 reference = { title = "echarts.apache.org", url = "https://echarts.apache.org/en/index.html" }
-pages = ["_index.cs.md", "projects/knowledge.cs.md", "projects/science.cs.md", "services/interactive-data-products.cs.md", "stack.cs.md", "work/algoglyph.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/korczis-github-io.cs.md", "work/majordomus-reel.cs.md"]
-related = ["flowbite-pro", "p5-js", "repository", "alpine-js", "javascript", "tailwind-css", "zola", "commit"]
+pages = ["_index.cs.md", "projects/knowledge.cs.md", "projects/science.cs.md", "services/interactive-data-products.cs.md", "skills/interactive-visualisation.cs.md", "stack.cs.md", "work/algoglyph.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/korczis-github-io.cs.md", "work/majordomus-reel.cs.md"]
+related = ["flowbite-pro", "alpine-js", "p5-js", "javascript", "repository", "tailwind-css", "data-visualisation", "elixir"]
 og_title = "Apache ECharts: slovník"
 og_image = "og/cs-glossary-apache-echarts.png"
 keywords = ["Apache ECharts", "Technologie", "Slovník", "Tomáš Korčák"]

@@ -4,7 +4,7 @@ title = "korczis.github.io"
 description = "korczis.github.io: projekt z kategorie Web, hlavní jazyk JavaScript, poslední commit 20. listopadu 2026."
 template = "work.html"
 weight = 2
-updated = "2026-11-20T01:21:57Z"
+updated = "2026-11-20T03:49:02Z"
 
 [taxonomies]
 tags = ["Web", "JavaScript", "HTML", "CSS"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **korczis.github.io** je projekt z kategorie [Web](@/projects/web.cs.md). Jeho kód je napsaný hlavně v jazyce [JavaScript](@/glossary/javascript.cs.md) (61,9 %), dále [HTML](@/glossary/html.cs.md), [CSS](@/glossary/css.cs.md) a [Shell](@/glossary/shell.cs.md).
 
-[Repozitář](@/glossary/repository.cs.md) vznikl 24. prosince 2024; poslední [commit](@/glossary/commit.cs.md) je z 20. listopadu 2026. Zní „chore(merge): integrate \#44, technologies in two repositories get their page too“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+[Repozitář](@/glossary/repository.cs.md) vznikl 24. prosince 2024; poslední [commit](@/glossary/commit.cs.md) je z 20. listopadu 2026. Zní „chore(merge): integrate \#45, notable technologies of a single repository get their page“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 
 Zdrojový kód: [GitHub](https://github.com/korczis/korczis.github.io).
 

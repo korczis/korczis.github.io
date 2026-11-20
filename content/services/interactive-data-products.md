@@ -14,7 +14,7 @@ icon = "graph"
 og_title = "Interactive data products and simulators"
 og_image = "og/service-interactive-data-products.png"
 schema = "service"
-terms = ["service", "apache-echarts", "d3", "p5-js", "web-audio", "postgis", "zola", "data-visualisation", "gis", "data-integration", "knowledge-graph", "decision-support-system", "javascript", "html", "shell", "nodejs", "dockerfile", "elixir", "tailwind-css", "flowbite-pro", "postgresql", "python"]
+terms = ["service", "apache-echarts", "d3", "p5-js", "web-audio", "postgis", "zola", "data-visualisation", "gis", "data-integration", "knowledge-graph", "decision-support-system", "javascript", "html", "nodejs", "shell", "dockerfile", "elixir", "postgresql", "tailwind-css", "flowbite-pro", "alpine-js"]
 keywords = ["Interactive data products and simulators", "Interactive visualisation", "Geospatial analysis", "Data integration", "Knowledge graph", "Decision support", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -34,9 +34,9 @@ It draws on these skills: [Interactive visualisation](@/skills/interactive-visua
 
 It is built with [Apache ECharts](@/glossary/apache-echarts.md), [D3.js](@/glossary/d3.md), [p5.js](@/glossary/p5-js.md), [Web Audio](@/glossary/web-audio.md), [PostGIS](@/glossary/postgis.md) and [Zola](@/glossary/zola.md).
 
-The technologies behind it, measured from the work that shows those skills: [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md), [Shell](@/glossary/shell.md), [Node.js](@/glossary/nodejs.md), [Dockerfile](@/glossary/dockerfile.md), [Elixir](@/glossary/elixir.md), [Tailwind CSS](@/glossary/tailwind-css.md) and [Flowbite Pro](@/glossary/flowbite-pro.md).
+The technologies behind it, measured from the work that shows those skills: [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md), [Node.js](@/glossary/nodejs.md), [Shell](@/glossary/shell.md), [Dockerfile](@/glossary/dockerfile.md), [Elixir](@/glossary/elixir.md), [PostgreSQL](@/glossary/postgresql.md) and [Tailwind CSS](@/glossary/tailwind-css.md).
 
-24 public repositories show its skills (24 by their own words).
+23 public repositories show its skills (23 by their own words).
 
 It was delivered in client work under confidentiality agreements, in Real-estate developer and Financial and investment group, as Architect, Lead engineer, AI engineer, Data engineer, Investigator and Advisor; the use cases describe the principle and the intent, never a client, person, date or number.
 
