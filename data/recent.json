@@ -1,6 +1,6 @@
 {
  "schema": "korczis-hub-recent/v2",
- "generated_at": "2026-11-20T12:02:06Z",
+ "generated_at": "2026-11-20T20:43:13Z",
  "window_days": 1461,
  "periods": [
   {
@@ -18,7 +18,7 @@
  ],
  "archive": 162,
  "rule": "every original repository of data/index.json; a repository is recent when its default branch has a commit in the window, archive otherwise; host activity dates are ignored",
- "asked": 4,
+ "asked": 3,
  "repos": [
   {
    "name": "sonic-playground",
@@ -27,10 +27,70 @@
    "category": "media",
    "language": "Python",
    "created_at": "2026-11-12T00:48:36Z",
-   "pushed_at": "2026-11-20T10:33:59Z",
-   "last_commit": "2026-11-20T10:03:54Z",
-   "last_message": "Merge branch 'feature/wave-20': 23 more Spotify picks in English and Czech",
+   "pushed_at": "2026-11-20T16:21:31Z",
+   "last_commit": "2026-11-20T15:58:06Z",
+   "last_message": "Merge branch 'fix/phone-overflow-settle': phone-width overflow is measured after the page's charts settle",
    "commits": [
+    {
+     "at": "2026-11-20T15:58:06Z",
+     "message": "Merge branch 'fix/phone-overflow-settle': phone-width overflow is measured after the page's charts settle",
+     "url": "https://github.com/korczis/sonic-playground/commit/3277c11ef219af64ab230128d471f624b6c2af43"
+    },
+    {
+     "at": "2026-11-20T15:21:07Z",
+     "message": "Merge branch 'feature/wave-24': 23 more Spotify picks in English and Czech",
+     "url": "https://github.com/korczis/sonic-playground/commit/dad8c43de226901f918af8d4456399bc29af96fa"
+    },
+    {
+     "at": "2026-11-20T15:04:02Z",
+     "message": "fix(test): phone-width overflow is measured after the page's charts settle",
+     "url": "https://github.com/korczis/sonic-playground/commit/1461fa8384ab8540f30ae5906ae1f5958145e39f"
+    },
+    {
+     "at": "2026-11-20T14:45:57Z",
+     "message": "feat(content): wave 24, 23 more of the owner's Spotify picks, each in English and Czech",
+     "url": "https://github.com/korczis/sonic-playground/commit/1d2ca2384e8481f691b22d0d53774dcd53a1b587"
+    },
+    {
+     "at": "2026-11-20T14:11:43Z",
+     "message": "Merge branch 'feature/wave-23': 24 more Spotify picks in English and Czech",
+     "url": "https://github.com/korczis/sonic-playground/commit/90b0b4712b8476a56a253f5e7e0bbedff30b05d9"
+    },
+    {
+     "at": "2026-11-20T13:39:58Z",
+     "message": "feat(content): wave 23, 24 more of the owner's Spotify picks, each in English and Czech",
+     "url": "https://github.com/korczis/sonic-playground/commit/db0d889eb8e8660f68ae6f192d91e90a12798a44"
+    },
+    {
+     "at": "2026-11-20T13:07:56Z",
+     "message": "Merge branch 'fix/wcag-live-retry': the WCAG check loads again a page the live host has not served yet",
+     "url": "https://github.com/korczis/sonic-playground/commit/4d0da8827b245d7a6675887dcb25551c0ab02e55"
+    },
+    {
+     "at": "2026-11-20T12:52:11Z",
+     "message": "fix(test): the WCAG check loads again a page the live host has not served yet",
+     "url": "https://github.com/korczis/sonic-playground/commit/681cfabd1aeddfc5cc6020f2d8dc5fd699e4d880"
+    },
+    {
+     "at": "2026-11-20T12:48:20Z",
+     "message": "Merge branch 'feature/wave-22': 23 more Spotify picks, the catalogue reaches 1,000",
+     "url": "https://github.com/korczis/sonic-playground/commit/b64e2a4efafdf9311ddc0a5addc4010b31554be2"
+    },
+    {
+     "at": "2026-11-20T12:33:46Z",
+     "message": "feat(content): wave 22, 23 more of the owner's Spotify picks: the catalogue reaches 1,000",
+     "url": "https://github.com/korczis/sonic-playground/commit/b4ad0314ecda715c833dac1cebb9ae303855b379"
+    },
+    {
+     "at": "2026-11-20T12:02:41Z",
+     "message": "Merge branch 'feature/wave-21': 24 more Spotify picks in English and Czech",
+     "url": "https://github.com/korczis/sonic-playground/commit/bb783406746c6bcb8021b9edd4d13b86ac9a55f1"
+    },
+    {
+     "at": "2026-11-20T10:42:15Z",
+     "message": "feat(content): wave 21, 24 more of the owner's Spotify picks, each in English and Czech",
+     "url": "https://github.com/korczis/sonic-playground/commit/d1ae9653aa52e334e4d1f7550273eae2877130aa"
+    },
     {
      "at": "2026-11-20T10:03:54Z",
      "message": "Merge branch 'feature/wave-20': 23 more Spotify picks in English and Czech",
@@ -120,76 +180,16 @@
      "at": "2026-11-19T18:07:17Z",
      "message": "feat(content): wave 14, 39 more of the owner's Spotify picks, each in English and Czech",
      "url": "https://github.com/korczis/sonic-playground/commit/df6b5572352584cb5e41e7383364f3185159ff1a"
-    },
-    {
-     "at": "2026-11-19T17:43:43Z",
-     "message": "Merge branch 'fix/ci-sweep-timeout': the browser jobs' time limits grow with the site",
-     "url": "https://github.com/korczis/sonic-playground/commit/609333059dc86b3e774d4f1b3d96844cf74723fc"
-    },
-    {
-     "at": "2026-11-19T17:08:07Z",
-     "message": "fix(ci): the browser jobs' time limits grow with the site",
-     "url": "https://github.com/korczis/sonic-playground/commit/45c2a769d13a21164f3f793852d5312793296bec"
-    },
-    {
-     "at": "2026-11-19T16:28:51Z",
-     "message": "Merge branch 'feature/wave-13': 37 more Spotify picks in English and Czech; existing pages found by lead artist and other titles",
-     "url": "https://github.com/korczis/sonic-playground/commit/bcfd26751148b80f78d9ce049ef9250d18a68920"
-    },
-    {
-     "at": "2026-11-19T15:59:55Z",
-     "message": "feat(content): wave 13, 37 more of the owner's Spotify picks, each in English and Czech",
-     "url": "https://github.com/korczis/sonic-playground/commit/4b78a9560d19f68190d997df965b5168ec0079e8"
-    },
-    {
-     "at": "2026-11-19T14:40:39Z",
-     "message": "Merge branch 'feature/backlog-from-spotify': the Spotify history is the backlog; wave 12, 40 songs in English and Czech",
-     "url": "https://github.com/korczis/sonic-playground/commit/610c442faea60e8c0819b43e42970081f7a081c2"
-    },
-    {
-     "at": "2026-11-19T14:07:27Z",
-     "message": "feat(content): wave 12, the owner's current top tracks and own picks, each in English and Czech",
-     "url": "https://github.com/korczis/sonic-playground/commit/344131cb729c95b8354091cd0bd2bb3828797b68"
-    },
-    {
-     "at": "2026-11-19T13:03:35Z",
-     "message": "feat(backlog): the Spotify history is a backlog source, ranked by the owner's own choice",
-     "url": "https://github.com/korczis/sonic-playground/commit/2ab3c63d460ec6ae8697e4f28c3f2654b8cb8a77"
-    },
-    {
-     "at": "2026-11-17T20:47:37Z",
-     "message": "Merge branch 'fix/spotify-crawl-topup': the crawl's top-up reads every rendered row; progress visible from any tab",
-     "url": "https://github.com/korczis/sonic-playground/commit/aad7683aa9a7f8393db4dcfe693d891a594ab40c"
-    },
-    {
-     "at": "2026-11-17T20:37:46Z",
-     "message": "fix(spotify): the crawl's top-up reads every rendered row; progress visible from any tab",
-     "url": "https://github.com/korczis/sonic-playground/commit/922ecf9e2dbeff5d1fac0f53b7327c714dcfdaf3"
-    },
-    {
-     "at": "2026-11-16T21:02:24Z",
-     "message": "Merge branch 'fix/probe-links-second-look': the second look reads its answer like the first; pennyblack cited archived",
-     "url": "https://github.com/korczis/sonic-playground/commit/69025de9edff3a4a995de935a32952c32599ebee"
-    },
-    {
-     "at": "2026-11-16T20:45:55Z",
-     "message": "fix(probe-links): the second look reads its answer like the first; pennyblack cited archived",
-     "url": "https://github.com/korczis/sonic-playground/commit/b0bf26c7dab72e8d6fc37a9ad1e4e70ed2887301"
-    },
-    {
-     "at": "2026-11-16T20:35:09Z",
-     "message": "Merge branch 'fix/probe-links-transient': 406 is a refusal; a passing 5xx or silence is asked once more",
-     "url": "https://github.com/korczis/sonic-playground/commit/0fdb765fbfc437cd609531f68ba95237c153701b"
     }
    ],
    "languages": [
     {
      "name": "Python",
-     "share": 41.4
+     "share": 41.3
     },
     {
      "name": "JavaScript",
-     "share": 33.9
+     "share": 34
     },
     {
      "name": "HTML",
@@ -223,10 +223,15 @@
    "category": "web",
    "language": "JavaScript",
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-20T04:39:58Z",
-   "last_commit": "2026-11-20T03:49:02Z",
-   "last_message": "chore(merge): integrate #45, notable technologies of a single repository get their page",
+   "pushed_at": "2026-11-20T12:04:00Z",
+   "last_commit": "2026-11-20T12:02:53Z",
+   "last_message": "chore(data): refresh the snapshot and the index",
    "commits": [
+    {
+     "at": "2026-11-20T12:02:53Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/7c60f87097de0efb88cd500825792697b01b14cc"
+    },
     {
      "at": "2026-11-20T03:49:02Z",
      "message": "chore(merge): integrate #45, notable technologies of a single repository get their page",
@@ -371,11 +376,6 @@
      "at": "2026-11-18T08:57:48Z",
      "message": "chore(merge): integrate #32, live READMEs, services, skills and evidence for every language and technology",
      "url": "https://github.com/korczis/korczis.github.io/commit/0063c12fb42050d680a423517d83b1a6b1ddcf93"
-    },
-    {
-     "at": "2026-11-18T08:36:22Z",
-     "message": "chore(merge): bring readme-embed into case-studies; short month names from translations",
-     "url": "https://github.com/korczis/korczis.github.io/commit/df09b16b80f145f04d8f60f57097ba55e944c332"
     }
    ],
    "languages": [
@@ -846,7 +846,7 @@
    "category": "ai",
    "language": "Rust",
    "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-20T10:59:11Z",
+   "pushed_at": "2026-11-20T18:52:37Z",
    "last_commit": "2026-11-19T02:54:59Z",
    "last_message": "Merge pull request #3079 from korczis/plan/I4632-I4633-a-shed-requirement-and-a-whole-run-gate",
    "commits": [

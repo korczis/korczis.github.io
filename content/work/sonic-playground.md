@@ -4,7 +4,7 @@ title = "Sonic Playground"
 description = "Music that moves you, not algorithmic noise. Active in the last 12 months; media and art."
 template = "work.html"
 weight = 1
-updated = "2026-11-20T10:03:54Z"
+updated = "2026-11-20T15:58:06Z"
 
 [taxonomies]
 tags = ["Media and art", "Python", "JavaScript", "HTML"]
@@ -28,9 +28,9 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**Sonic Playground** is a project in [Media and art](@/projects/media.md). Its code is written mainly in [Python](@/glossary/python.md) (41.4 %), with [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md) and [Shell](@/glossary/shell.md).
+**Sonic Playground** is a project in [Media and art](@/projects/media.md). Its code is written mainly in [Python](@/glossary/python.md) (41.3 %), with [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md) and [Shell](@/glossary/shell.md).
 
-The [repository](@/glossary/repository.md) was created on 12 November 2026; its latest [commit](@/glossary/commit.md) is from 20 November 2026. It reads “Merge branch 'feature/wave-20': 23 more Spotify picks in English and Czech”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created on 12 November 2026; its latest [commit](@/glossary/commit.md) is from 20 November 2026. It reads “Merge branch 'fix/phone-overflow-settle': phone-width overflow is measured after the page's charts settle”. That places it among the projects active in the last 12 months.
 
 It is built with [Elixir](@/glossary/elixir.md).
 
