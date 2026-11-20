@@ -17,7 +17,7 @@ og_description = "server-ansible: Systems and infrastructure in Shell, 2019, arc
 og_image = "og/work-server-ansible.png"
 schema = "project"
 keywords = ["server-ansible", "Systems and infrastructure", "Shell", "2019", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["shell", "ansible", "dockerfile", "elasticsearch", "kibana", "grafana", "postgresql", "repository", "commit", "open-source"]
+terms = ["shell", "ansible", "dockerfile", "elasticsearch", "logstash", "kibana", "grafana", "postgresql", "fail2ban", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

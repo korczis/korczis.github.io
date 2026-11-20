@@ -3,7 +3,7 @@
 title = "Couchbase"
 description = "Distribuovaná dokumentová databáze s mezipamětí v operační paměti a dotazovacím jazykem N1QL podobným SQL."
 template = "term.html"
-weight = 56
+weight = 62
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Distribuovaná dokumentová databáze s mezipamětí v operační paměti a dotazovacím jazykem N1QL podobným SQL."
 aliases = []
 reference = { title = "Couchbase documentation", url = "https://docs.couchbase.com/home/index.html" }
-pages = ["skills/geospatial-analysis.cs.md", "skills/web-automation.cs.md", "work/cluster-kubernetes.cs.md", "work/docks.cs.md", "work/gauc-ex.cs.md", "work/jetel.cs.md", "work/microcrawler-elixir.cs.md", "work/microcrawler-js.cs.md", "work/the-scratch.cs.md", "work/wangsta.cs.md"]
-related = ["commit", "open-source", "repository", "elasticsearch", "shell", "dockerfile", "elixir", "gis"]
+pages = ["skills/web-automation.cs.md", "work/cluster-kubernetes.cs.md", "work/docks.cs.md", "work/gauc-ex.cs.md", "work/jetel.cs.md", "work/microcrawler-elixir.cs.md", "work/microcrawler-js.cs.md", "work/the-scratch.cs.md", "work/wangsta.cs.md"]
+related = ["commit", "open-source", "repository", "elasticsearch", "shell", "rabbitmq", "dockerfile", "elixir"]
 og_title = "Couchbase: slovník"
 og_image = "og/cs-glossary-couchbase.png"
 keywords = ["Couchbase", "Technologie", "Slovník", "Tomáš Korčák"]

@@ -3,7 +3,7 @@
 title = "SQLite"
 description = "Vestavěná SQL databáze v jediném souboru, bez serveru: nejrozšířenější databázový engine."
 template = "term.html"
-weight = 117
+weight = 155
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

@@ -3,7 +3,7 @@
 title = "Zola"
 description = "A static site generator in one Rust binary: Markdown and templates in, a whole multilingual website out."
 template = "term.html"
-weight = 129
+weight = 178
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

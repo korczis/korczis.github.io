@@ -17,7 +17,7 @@ og_description = "prism: Tools, 2024–2026, active in the last 12 months. Sourc
 og_image = "og/work-prism.png"
 schema = "project"
 keywords = ["prism", "Tools", "2024–2026", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["elixir", "meilisearch", "open-source", "repository", "commit"]
+terms = ["elixir", "kuzudb", "meilisearch", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

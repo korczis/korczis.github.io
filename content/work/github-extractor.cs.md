@@ -17,7 +17,7 @@ og_description = "github-extractor: Data a GIS, JavaScript, 2014, archiv. Zdrojo
 og_image = "og/cs-work-github-extractor.png"
 schema = "project"
 keywords = ["github-extractor", "Data a GIS", "JavaScript", "2014", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["javascript", "nodejs", "gis", "repository", "commit", "open-source"]
+terms = ["javascript", "nodejs", "github-api", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

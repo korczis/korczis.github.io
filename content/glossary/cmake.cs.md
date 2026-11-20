@@ -17,7 +17,7 @@ definition = "Generátor buildovacích systémů pro C a C++: jeden popis projek
 aliases = []
 reference = { title = "CMake documentation", url = "https://cmake.org/cmake/help/latest/" }
 pages = ["projects/learning.cs.md", "skills/infrastructure-osint.cs.md", "work/algorithms.cs.md", "work/happ.cs.md", "work/peacemaker.cs.md", "work/skull-c.cs.md", "work/skull-cpp.cs.md"]
-related = ["c", "repository", "commit", "cpp", "open-source", "travis-ci", "elixir", "haskell"]
+related = ["c", "repository", "commit", "cpp", "open-source", "travis-ci", "elixir", "google-test"]
 og_title = "CMake: slovník"
 og_image = "og/cs-glossary-cmake.png"
 keywords = ["CMake", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

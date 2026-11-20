@@ -17,7 +17,7 @@ og_description = "MindScape: Nástroje, 2023, aktivní za posledních 48 měsíc
 og_image = "og/cs-work-mindscape.png"
 schema = "project"
 keywords = ["MindScape", "Nástroje", "2023", "GitHub", "Tomáš Korčák", "korczis"]
-terms = ["rust", "elixir", "phoenix", "open-source", "repository", "commit"]
+terms = ["rust", "elixir", "phoenix", "prolog", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

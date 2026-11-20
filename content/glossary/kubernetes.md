@@ -3,7 +3,7 @@
 title = "Kubernetes"
 description = "A system that runs containers across a cluster: scheduling, scaling, networking and rollouts declared as resources."
 template = "term.html"
-weight = 89
+weight = 108
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

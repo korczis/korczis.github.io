@@ -3,7 +3,7 @@
 title = "Grunt"
 description = "An early JavaScript task runner configured by a Gruntfile: concatenation, minification, tests."
 template = "term.html"
-weight = 78
+weight = 94
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "An early JavaScript task runner configured by a Gruntfile: concatenation, minification, tests."
 aliases = []
 reference = { title = "Grunt", url = "https://gruntjs.com/" }
-pages = ["skills/change-monitoring.md", "work/apollocrawler-com.md", "work/craftsmen.md", "work/microcrawler-couchapp.md"]
-related = ["css", "ember-js", "handlebars", "javascript", "bootstrap", "commit", "express", "open-source"]
+pages = ["work/apollocrawler-com.md", "work/craftsmen.md", "work/microcrawler-couchapp.md"]
+related = ["commit", "css", "ember-js", "handlebars", "javascript", "open-source", "repository", "shell"]
 og_title = "Grunt: glossary"
 og_image = "og/glossary-grunt.png"
 keywords = ["Grunt", "Technology", "Glossary", "Tomas Korcak"]

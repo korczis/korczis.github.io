@@ -13,7 +13,7 @@ skill = "geospatial-analysis"
 og_title = "Geoprostorová analýza: dovednosti"
 og_image = "og/cs-skill-geospatial-analysis.png"
 schema = "skill"
-terms = ["skill", "gis", "dockerfile", "nominatim", "postgis", "shell", "elixir", "javascript", "postgresql", "tailwind-css", "coreos", "couchbase"]
+terms = ["skill", "gis", "dockerfile", "nominatim", "postgis", "shell", "elixir", "javascript", "postgresql", "tailwind-css", "cachex", "coreos"]
 keywords = ["Geoprostorová analýza", "Interaktivní datové produkty a simulátory", "Tomáš Korčák"]
 
 [[extra.viz]]

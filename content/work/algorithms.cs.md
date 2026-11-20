@@ -17,7 +17,7 @@ og_description = "algorithms: Věda a vizualizace, C++ a C, 2014, archiv. Zdrojo
 og_image = "og/cs-work-algorithms.png"
 schema = "project"
 keywords = ["algorithms", "Věda a vizualizace", "C++", "2014", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["cpp", "c", "cmake", "travis-ci", "data-visualisation", "repository", "commit", "open-source"]
+terms = ["cpp", "c", "cmake", "google-test", "travis-ci", "data-visualisation", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

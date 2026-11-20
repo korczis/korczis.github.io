@@ -3,7 +3,7 @@
 title = "Git"
 description = "Distribuovaný systém správy verzí: každý klon drží celou historii commitů, větví a tagů."
 template = "term.html"
-weight = 71
+weight = 84
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -14,10 +14,10 @@ seo_title = "Git (technologie)"
 term = "git"
 kind = "technology"
 definition = "Distribuovaný systém správy verzí: každý klon drží celou historii commitů, větví a tagů."
-aliases = []
+aliases = ["Git submodules"]
 reference = { title = "Git documentation", url = "https://git-scm.com/doc" }
-pages = ["skills/orchestration.cs.md", "work/datasciencecoursera.cs.md", "work/prismatic-majordomus.cs.md", "work/zdeny-docker.cs.md"]
-related = ["commit", "open-source", "repository", "shell", "dockerfile", "github-actions", "html", "javascript"]
+pages = ["skills/orchestration.cs.md", "work/datasciencecoursera.cs.md", "work/generator-the-scratch.cs.md", "work/prismatic-majordomus.cs.md", "work/skull.cs.md", "work/zdeny-docker.cs.md"]
+related = ["commit", "open-source", "repository", "shell", "javascript", "dockerfile", "github-actions", "html"]
 og_title = "Git: slovník"
 og_image = "og/cs-glossary-git.png"
 keywords = ["Git", "Technologie", "Slovník", "Tomáš Korčák"]
@@ -40,9 +40,9 @@ span = 3
 height = "md"
 tone = "night"
 +++
-Git je součástí 3 mých veřejných repozitářů, od roku 2015 do 2026.
+Git je součástí 5 mých veřejných repozitářů, od roku 2013 do 2026.
 
-K čemu to sloužilo: [Inženýrství AI](@/projects/ai.cs.md) (1), [Data a GIS](@/projects/data.cs.md) (1) a [Systémy a infrastruktura](@/projects/systems.cs.md) (1).
+K čemu to sloužilo: [Učení a experimenty](@/projects/learning.cs.md) (2), [Inženýrství AI](@/projects/ai.cs.md) (1), [Data a GIS](@/projects/data.cs.md) (1) a [Systémy a infrastruktura](@/projects/systems.cs.md) (1).
 
 Naposledy: [Majordomus](@/work/prismatic-majordomus.cs.md): Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model; [zdeny-docker](@/work/zdeny-docker.cs.md); [datasciencecoursera](@/work/datasciencecoursera.cs.md).
 

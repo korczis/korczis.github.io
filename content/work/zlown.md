@@ -17,7 +17,7 @@ og_description = "zlown: Security and OSINT in Ruby and Shell, 2016, archive. So
 og_image = "og/work-zlown.png"
 schema = "project"
 keywords = ["zlown", "Security and OSINT", "Ruby", "Shell", "2016", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["ruby", "shell", "osint", "due-diligence", "mergers-and-acquisitions", "virtual-data-room", "risk-assessment", "market-intelligence", "decision-support-system", "insolvency", "record-linkage", "knowledge-graph", "data-integration", "audit-trail", "information-extraction", "orchestration", "repository", "commit", "open-source"]
+terms = ["ruby", "shell", "systemd", "osint", "due-diligence", "mergers-and-acquisitions", "virtual-data-room", "risk-assessment", "market-intelligence", "decision-support-system", "insolvency", "record-linkage", "knowledge-graph", "data-integration", "audit-trail", "information-extraction", "orchestration", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

@@ -17,7 +17,7 @@ definition = "A compiled language from Google with goroutines and channels for c
 aliases = ["Golang"]
 reference = { title = "The Go Programming Language", url = "https://go.dev/doc/" }
 pages = ["work/apollo-box.md", "work/docker-datasciencetoolbox.md", "work/rest-hello-world-benchmark.md"]
-related = ["commit", "open-source", "repository", "jq", "nodejs", "python", "ubuntu", "cowboy"]
+related = ["commit", "open-source", "repository", "jq", "nodejs", "numpy", "pandas", "python"]
 og_title = "Go: glossary"
 og_image = "og/glossary-go.png"
 keywords = ["Go", "Programming language", "Glossary", "Tomas Korcak"]

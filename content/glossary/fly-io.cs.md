@@ -3,7 +3,7 @@
 title = "Fly.io"
 description = "Platforma, která spouští aplikace jako mikro-VM blízko uživatelům, nasazované z Dockerfile."
 template = "term.html"
-weight = 70
+weight = 83
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -17,7 +17,7 @@ definition = "Platforma, která spouští aplikace jako mikro-VM blízko uživat
 aliases = []
 reference = { title = "Fly.io documentation", url = "https://fly.io/docs/" }
 pages = ["work/el-magico-cache.cs.md", "work/korczis-gitlab-io.cs.md", "work/sig.cs.md"]
-related = ["commit", "elixir", "open-source", "repository", "dockerfile", "eex", "html", "phoenix"]
+related = ["commit", "elixir", "open-source", "repository", "dockerfile", "eex", "html", "open-api-spex"]
 og_title = "Fly.io: slovník"
 og_image = "og/cs-glossary-fly-io.png"
 keywords = ["Fly.io", "Technologie", "Slovník", "Tomáš Korčák"]

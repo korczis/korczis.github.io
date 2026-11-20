@@ -3,7 +3,7 @@
 title = "Reputation risk"
 description = "The risk that what is said about an organisation or a person, true or not, costs it trust, customers or value; monitored through adverse media."
 template = "term.html"
-weight = 166
+weight = 215
 
 [taxonomies]
 tags = ["Glossary", "Concept"]

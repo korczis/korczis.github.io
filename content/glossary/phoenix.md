@@ -3,7 +3,7 @@
 title = "Phoenix"
 description = "Elixir's web framework; LiveView renders interactive pages on the server and pushes only the changes over a socket."
 template = "term.html"
-weight = 104
+weight = 136
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

@@ -3,7 +3,7 @@
 title = ".NET"
 description = "Microsoft's runtime and libraries for C# and other languages, across Windows, Linux and macOS."
 template = "term.html"
-weight = 41
+weight = 42
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -14,7 +14,7 @@ seo_title = ".NET (technology)"
 term = "dotnet"
 kind = "technology"
 definition = "Microsoft's runtime and libraries for C# and other languages, across Windows, Linux and macOS."
-aliases = []
+aliases = ["System.Reflection"]
 reference = { title = ".NET documentation", url = "https://learn.microsoft.com/en-us/dotnet/" }
 pages = ["skills/market-intelligence.md", "work/cs-benchmark.md", "work/reflex.md", "work/rocnikac4.md"]
 related = ["csharp", "commit", "open-source", "repository", "alpine-js", "clap", "claude-api", "dockerfile"]

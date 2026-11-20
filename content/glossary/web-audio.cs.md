@@ -3,7 +3,7 @@
 title = "Web Audio"
 description = "Rozhraní prohlížeče pro generování, zpracování a analýzu zvuku v reálném čase."
 template = "term.html"
-weight = 126
+weight = 173
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

@@ -3,7 +3,7 @@
 title = "FastAPI"
 description = "A Python web framework for HTTP APIs, typed with Pydantic models that validate requests and generate the OpenAPI description."
 template = "term.html"
-weight = 68
+weight = 80
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "A Python web framework for HTTP APIs, typed with Pydantic models t
 aliases = []
 reference = { title = "FastAPI documentation", url = "https://fastapi.tiangolo.com/" }
 pages = ["services/compliance-screening.md", "services/continuous-monitoring.md", "services/due-diligence.md", "services/m-and-a.md", "services/reputation-intelligence.md", "skills/ai-transformation.md", "skills/data-room.md", "skills/decision-support.md", "skills/document-extraction.md", "skills/entity-resolution.md", "skills/insolvency-monitoring.md", "skills/knowledge-graph.md", "skills/m-and-a-screening.md", "skills/market-intelligence.md", "skills/orchestration.md", "skills/risk-scoring.md", "work/openttd-prismatic-bridge.md", "_index.md"]
-related = ["html", "javascript", "dockerfile", "flowbite-pro", "claude-api", "alpine-js", "skill", "github-actions"]
+related = ["html", "dockerfile", "flowbite-pro", "javascript", "alpine-js", "claude-api", "skill", "github-actions"]
 og_title = "FastAPI: glossary"
 og_image = "og/glossary-fastapi.png"
 keywords = ["FastAPI", "Technology", "Glossary", "Tomas Korcak"]

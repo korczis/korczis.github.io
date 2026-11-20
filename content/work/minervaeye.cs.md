@@ -17,7 +17,7 @@ og_description = "MinervaEye: Znalosti, Swift a Shell, 2020–2021, archiv. Zdro
 og_image = "og/cs-work-minervaeye.png"
 schema = "project"
 keywords = ["MinervaEye", "Znalosti", "Swift", "Shell", "2020–2021", "GitHub", "Tomáš Korčák", "korczis"]
-terms = ["swift", "shell", "uikit", "xcode", "repository", "commit", "open-source"]
+terms = ["swift", "shell", "swiftui", "uikit", "avfoundation", "apple-vision", "xcode", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

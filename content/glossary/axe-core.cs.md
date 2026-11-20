@@ -3,7 +3,7 @@
 title = "axe-core"
 description = "Engine pro testování přístupnosti, který kontroluje vykreslené stránky podle pravidel WCAG; spouští ho browser audit tohoto webu."
 template = "term.html"
-weight = 46
+weight = 49
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -17,7 +17,7 @@ definition = "Engine pro testování přístupnosti, který kontroluje vykreslen
 aliases = []
 reference = { title = "axe-core on GitHub", url = "https://github.com/dequelabs/axe-core" }
 pages = ["skills/compliance-mapping.cs.md", "work/algoglyph.cs.md", "work/korczis-github-io.cs.md", "work/oscilla.cs.md"]
-related = ["alpine-js", "flowbite-pro", "github-pages", "html", "javascript", "p5-js", "tailwind-css", "commit"]
+related = ["alpine-js", "flowbite-pro", "github-pages", "html", "javascript", "p5-js", "commit", "css"]
 og_title = "axe-core: slovník"
 og_image = "og/cs-glossary-axe-core.png"
 keywords = ["axe-core", "Technologie", "Slovník", "Tomáš Korčák"]

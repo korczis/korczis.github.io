@@ -14,7 +14,7 @@ seo_title = "Haskell (programming language)"
 term = "haskell"
 kind = "language"
 definition = "A purely functional language with lazy evaluation and a strong type system; a place to learn to think in types."
-aliases = []
+aliases = ["Cabal"]
 reference = { title = "haskell.org", url = "https://www.haskell.org/" }
 pages = ["projects/learning.md", "projects/science.md", "work/happ.md", "work/haskell-world.md", "work/skull-haskell.md"]
 related = ["repository", "commit", "cpp", "elixir", "open-source", "rust", "shell", "c"]

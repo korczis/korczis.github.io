@@ -3,7 +3,7 @@
 title = "Shell"
 description = "Skripty pro unixovou příkazovou řádku (bash, zsh), lepidlo, které instaluje, staví a nasazuje."
 template = "term.html"
-weight = 34
+weight = 35
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]

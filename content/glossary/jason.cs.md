@@ -3,7 +3,7 @@
 title = "Jason"
 description = "Parser a generátor JSON, který používá většina projektů v Elixiru včetně Phoenixu."
 template = "term.html"
-weight = 83
+weight = 101
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -17,7 +17,7 @@ definition = "Parser a generátor JSON, který používá většina projektů v 
 aliases = []
 reference = { title = "Jason documentation", url = "https://hexdocs.pm/jason/" }
 pages = ["skills/media-forensics.cs.md", "work/distance-calculator.cs.md", "work/job-processor.cs.md", "work/kuzu-ex.cs.md", "work/llm.cs.md"]
-related = ["elixir", "gitlab-ci", "commit", "open-source", "repository", "dockerfile", "ecto", "postgresql"]
+related = ["elixir", "gitlab-ci", "commit", "open-source", "repository", "credo", "dockerfile", "ecto"]
 og_title = "Jason: slovník"
 og_image = "og/cs-glossary-jason.png"
 keywords = ["Jason", "Technologie", "Slovník", "Tomáš Korčák"]

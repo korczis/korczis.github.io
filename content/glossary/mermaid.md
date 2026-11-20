@@ -17,7 +17,7 @@ definition = "A text language for diagrams (flowcharts, sequences, state machine
 aliases = []
 reference = { title = "Mermaid documentation", url = "https://mermaid.js.org/intro/" }
 pages = ["work/comtesse.md"]
-related = ["commit", "json-schema", "just", "meilisearch", "open-source", "repository", "rust", "shell"]
+related = ["commit", "json-schema", "just", "llm", "meilisearch", "open-source", "repository", "rust"]
 og_title = "Mermaid: glossary"
 og_image = "og/glossary-mermaid.png"
 keywords = ["Mermaid", "Programming language", "Glossary", "Tomas Korcak"]

@@ -3,7 +3,7 @@
 title = "Kubernetes"
 description = "Systém, který provozuje kontejnery v clusteru: plánování, škálování, síť a nasazování deklarované jako zdroje."
 template = "term.html"
-weight = 89
+weight = 108
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

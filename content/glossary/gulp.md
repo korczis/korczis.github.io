@@ -3,7 +3,7 @@
 title = "gulp"
 description = "A streaming JavaScript build system whose tasks are code: files flow through plugins."
 template = "term.html"
-weight = 80
+weight = 96
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

@@ -3,7 +3,7 @@
 title = "Squirrel"
 description = "A small embeddable scripting language; OpenTTD runs its AI players and game scripts in it."
 template = "term.html"
-weight = 36
+weight = 37
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -17,7 +17,7 @@ definition = "A small embeddable scripting language; OpenTTD runs its AI players
 aliases = []
 reference = { title = "Squirrel on GitHub", url = "https://github.com/albertodemichelis/squirrel" }
 pages = ["work/openttd-prismatic-bridge.md"]
-related = ["commit", "data-visualisation", "fastapi", "flowbite-pro", "html", "javascript", "open-source", "python"]
+related = ["commit", "data-visualisation", "fastapi", "flowbite-pro", "html", "javascript", "leaflet", "open-source"]
 og_title = "Squirrel: glossary"
 og_image = "og/glossary-squirrel.png"
 keywords = ["Squirrel", "Programming language", "Glossary", "Tomas Korcak"]

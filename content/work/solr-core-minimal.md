@@ -17,7 +17,7 @@ og_description = "solr-core-minimal: Data and GIS in XSLT, JavaScript and CSS, 2
 og_image = "og/work-solr-core-minimal.png"
 schema = "project"
 keywords = ["solr-core-minimal", "Data and GIS", "XSLT", "JavaScript", "CSS", "2014", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["xslt", "javascript", "css", "gis", "repository", "commit", "open-source"]
+terms = ["xslt", "javascript", "css", "solr", "xml", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

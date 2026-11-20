@@ -3,7 +3,7 @@
 title = "Ruby"
 description = "Dynamický, expresivní jazyk navržený pro radost programátora; mnoho starších nástrojů tady je v Ruby."
 template = "term.html"
-weight = 31
+weight = 32
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -14,9 +14,9 @@ seo_title = "Ruby (programovací jazyk)"
 term = "ruby"
 kind = "language"
 definition = "Dynamický, expresivní jazyk navržený pro radost programátora; mnoho starších nástrojů tady je v Ruby."
-aliases = ["Bundler", "RubyGems", "Rake"]
+aliases = ["Bundler", "RubyGems", "Rake", "RVM", "ERB"]
 reference = { title = "ruby-lang.org", url = "https://www.ruby-lang.org/en/about/" }
-pages = ["about.cs.md", "projects/data.cs.md", "projects/learning.cs.md", "projects/security.cs.md", "projects/systems.cs.md", "projects/tools.cs.md", "work/algorithms-ruby.cs.md", "work/apollo-crawler.cs.md", "work/apollon.cs.md", "work/ares.cs.md", "work/cluster.cs.md", "work/codecademy.cs.md", "work/csv2psql.cs.md", "work/docker-dstk.cs.md", "work/docker-gooddata-ruby.cs.md", "work/esri.cs.md", "work/gdc-dumpator.cs.md", "work/gooddata-connectors-metadata.cs.md", "work/gooddata-lcm-tool.cs.md", "work/gooddata-rails-app.cs.md", "work/gooddata-ruby-examples.cs.md", "work/grache-test.cs.md", "work/grache.cs.md", "work/jetel.cs.md", "work/json2csv.cs.md", "work/kpmap-ruby.cs.md", "work/sandbox.cs.md", "work/skull-ruby.cs.md", "work/skull.cs.md", "work/skype-adapter-client.cs.md", "work/zeman-ucet.cs.md", "work/zlown.cs.md"]
+pages = ["about.cs.md", "projects/data.cs.md", "projects/learning.cs.md", "projects/security.cs.md", "projects/systems.cs.md", "projects/tools.cs.md", "work/algorithms-ruby.cs.md", "work/apollo-crawler.cs.md", "work/apollon.cs.md", "work/ares.cs.md", "work/cluster.cs.md", "work/codecademy.cs.md", "work/csv2psql.cs.md", "work/docker-dstk.cs.md", "work/docker-gooddata-ruby.cs.md", "work/esri.cs.md", "work/gdc-dumpator.cs.md", "work/gooddata-connectors-metadata.cs.md", "work/gooddata-lcm-tool.cs.md", "work/gooddata-rails-app.cs.md", "work/gooddata-ruby-examples.cs.md", "work/grache-test.cs.md", "work/grache.cs.md", "work/home.cs.md", "work/jetel.cs.md", "work/json2csv.cs.md", "work/kpmap-ruby.cs.md", "work/sandbox.cs.md", "work/skull-ruby.cs.md", "work/skull.cs.md", "work/skype-adapter-client.cs.md", "work/zeman-ucet.cs.md", "work/zlown.cs.md"]
 related = ["repository", "open-source", "commit", "shell", "gis", "postgresql", "javascript", "travis-ci"]
 og_title = "Ruby: slovník"
 og_image = "og/cs-glossary-ruby.png"
@@ -40,11 +40,11 @@ span = 3
 height = "md"
 tone = "night"
 +++
-Ruby jsem psal v 26 veřejných repozitářích, od roku 2012 do 2017; v 19 z nich je hlavním jazykem.
+Ruby jsem psal v 27 veřejných repozitářích, od roku 2012 do 2019; v 19 z nich je hlavním jazykem.
 
-K čemu to sloužilo: [Data a GIS](@/projects/data.cs.md) (9), [Nástroje](@/projects/tools.cs.md) (7), [Učení a experimenty](@/projects/learning.cs.md) (4) a [Systémy a infrastruktura](@/projects/systems.cs.md) (3).
+K čemu to sloužilo: [Data a GIS](@/projects/data.cs.md) (9), [Nástroje](@/projects/tools.cs.md) (8), [Učení a experimenty](@/projects/learning.cs.md) (4) a [Systémy a infrastruktura](@/projects/systems.cs.md) (3).
 
-Naposledy: [gdc-dumpator](@/work/gdc-dumpator.cs.md); [zeman-ucet](@/work/zeman-ucet.cs.md); [cluster](@/work/cluster.cs.md).
+Naposledy: [home](@/work/home.cs.md); [gdc-dumpator](@/work/gdc-dumpator.cs.md); [zeman-ucet](@/work/zeman-ucet.cs.md).
 
 2 z těchto projektů běží jako živé weby.
 

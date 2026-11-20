@@ -3,7 +3,7 @@
 title = "Python"
 description = "Univerzální jazyk ceněný pro čitelnost, běžný v práci s daty a ve skriptování."
 template = "term.html"
-weight = 29
+weight = 30
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]

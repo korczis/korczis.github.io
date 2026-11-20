@@ -3,7 +3,7 @@
 title = "jq"
 description = "Procesor pro příkazovou řádku, který filtruje a transformuje JSON malým funkcionálním jazykem."
 template = "term.html"
-weight = 84
+weight = 103
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

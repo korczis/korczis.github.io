@@ -3,7 +3,7 @@
 title = "Broadway"
 description = "Knihovna Elixiru pro souběžné vícestupňové datové pipeline s back-pressure, dávkováním a řízeným selháním."
 template = "term.html"
-weight = 50
+weight = 53
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

@@ -3,7 +3,7 @@
 title = "webpack"
 description = "Bundler, který prochází importy javascriptové aplikace a balí její moduly, styly a další soubory do souborů, které načte prohlížeč."
 template = "term.html"
-weight = 127
+weight = 174
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Bundler, který prochází importy javascriptové aplikace a balí její moduly, styly a další soubory do souborů, které načte prohlížeč."
 aliases = []
 reference = { title = "webpack documentation", url = "https://webpack.js.org/concepts/" }
-pages = ["skills/chain-of-custody.cs.md", "work/bcnode-old.cs.md", "work/czech-stats.cs.md", "work/gooddata-proxy.cs.md", "work/kanec.cs.md", "work/mapoffacts.cs.md", "work/microcrawler-browser.cs.md", "work/peg-loader.cs.md", "work/peg-parser.cs.md", "work/the-scratch.cs.md", "work/tosh.cs.md", "work/web-spa.cs.md"]
-related = ["javascript", "commit", "open-source", "repository", "html", "elixir", "phoenix", "babel"]
+pages = ["work/bcnode-old.cs.md", "work/czech-stats.cs.md", "work/gooddata-proxy.cs.md", "work/kanec.cs.md", "work/mapoffacts.cs.md", "work/microcrawler-browser.cs.md", "work/peg-loader.cs.md", "work/peg-parser.cs.md", "work/the-scratch.cs.md", "work/tosh.cs.md", "work/web-spa.cs.md"]
+related = ["commit", "javascript", "open-source", "repository", "html", "elixir", "phoenix", "babel"]
 og_title = "webpack: slovník"
 og_image = "og/cs-glossary-webpack.png"
 keywords = ["webpack", "Technologie", "Slovník", "Tomáš Korčák"]

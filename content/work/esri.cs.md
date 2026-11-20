@@ -17,7 +17,7 @@ og_description = "esri: Data a GIS, Ruby, 2014, archiv. Zdrojový kód: GitHub a
 og_image = "og/cs-work-esri.png"
 schema = "project"
 keywords = ["esri", "Data a GIS", "Ruby", "2014", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["ruby", "gli", "postgresql", "postgis", "rspec", "travis-ci", "gis", "repository", "commit", "open-source"]
+terms = ["ruby", "gli", "postgresql", "postgis", "nokogiri", "rspec", "travis-ci", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

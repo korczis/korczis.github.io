@@ -3,7 +3,7 @@
 title = "Playwright"
 description = "A browser automation library that drives Chromium, Firefox and WebKit for end-to-end tests and audits."
 template = "term.html"
-weight = 105
+weight = 137
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "A browser automation library that drives Chromium, Firefox and Web
 aliases = []
 reference = { title = "Playwright documentation", url = "https://playwright.dev/docs/intro" }
 pages = ["services/_index.md", "services/ai-engineering-governance.md", "services/compliance-screening.md", "services/decision-support-ai.md", "services/digital-forensics.md", "services/digital-investigation.md", "services/due-diligence.md", "services/m-and-a.md", "skills/_index.md", "skills/audit-trail.md", "skills/compliance-mapping.md", "skills/document-extraction.md", "skills/due-diligence.md", "skills/llm-agents.md", "skills/policy-as-code.md", "work/astronomists.md", "work/catharsis-as-a-service.md", "work/data-atlas.md", "work/korczis-github-io.md", "work/oscilla.md", "work/vomaste-cz.md", "_index.md"]
-related = ["html", "javascript", "tailwind-css", "alpine-js", "flowbite-pro", "python", "shell", "github-pages"]
+related = ["html", "javascript", "alpine-js", "flowbite-pro", "tailwind-css", "python", "shell", "github-pages"]
 og_title = "Playwright: glossary"
 og_image = "og/glossary-playwright.png"
 keywords = ["Playwright", "Technology", "Glossary", "Tomas Korcak"]

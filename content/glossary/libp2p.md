@@ -3,7 +3,7 @@
 title = "libp2p"
 description = "A modular networking stack for peer-to-peer applications: transports, discovery, routing and pub-sub."
 template = "term.html"
-weight = 90
+weight = 111
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "A modular networking stack for peer-to-peer applications: transpor
 aliases = []
 reference = { title = "libp2p documentation", url = "https://docs.libp2p.io/" }
 pages = ["skills/chain-of-custody.md", "work/bcnode-extra-scripts.md", "work/bcnode-old.md", "work/js-libp2p-umbrella.md"]
-related = ["commit", "dockerfile", "javascript", "open-source", "repository", "babel", "nodejs", "protobuf"]
+related = ["commit", "dockerfile", "javascript", "open-source", "repository", "babel", "grpc", "jest"]
 og_title = "libp2p: glossary"
 og_image = "og/glossary-libp2p.png"
 keywords = ["libp2p", "Technology", "Glossary", "Tomas Korcak"]

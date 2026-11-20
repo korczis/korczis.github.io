@@ -3,7 +3,7 @@
 title = "Flowbite Pro"
 description = "A licensed library of interface blocks and an application shell on Tailwind CSS; every page of this site is built from it."
 template = "term.html"
-weight = 69
+weight = 82
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "A licensed library of interface blocks and an application shell on
 aliases = ["Flowbite"]
 reference = { title = "Flowbite", url = "https://flowbite.com/" }
 pages = ["_index.md", "projects/knowledge.md", "projects/science.md", "services/_index.md", "services/ai-engineering-governance.md", "services/compliance-screening.md", "services/continuous-monitoring.md", "services/decision-support-ai.md", "services/digital-forensics.md", "services/digital-investigation.md", "services/due-diligence.md", "services/interactive-data-products.md", "services/m-and-a.md", "services/reputation-intelligence.md", "skills/_index.md", "skills/ai-transformation.md", "skills/audit-trail.md", "skills/compliance-mapping.md", "skills/data-room.md", "skills/decision-support.md", "skills/entity-resolution.md", "skills/insolvency-monitoring.md", "skills/interactive-visualisation.md", "skills/knowledge-graph.md", "skills/llm-agents.md", "skills/m-and-a-screening.md", "skills/market-intelligence.md", "skills/orchestration.md", "skills/osint-investigation.md", "skills/ownership-analysis.md", "skills/policy-as-code.md", "skills/registry-intelligence.md", "skills/risk-scoring.md", "stack.md", "work/algoglyph.md", "work/astronomists.md", "work/catharsis-as-a-service.md", "work/crisis-map.md", "work/kompendium-epistemicke-anihilace.md", "work/korczis-github-io.md", "work/majordomus-reel.md", "work/openttd-prismatic-bridge.md", "work/oscilla.md", "work/sonic-playground.md", "work/u-tygra.md"]
-related = ["javascript", "html", "alpine-js", "tailwind-css", "python", "shell", "dockerfile", "claude-api"]
+related = ["javascript", "html", "alpine-js", "tailwind-css", "python", "shell", "dockerfile", "github-pages"]
 og_title = "Flowbite Pro: glossary"
 og_image = "og/glossary-flowbite-pro.png"
 keywords = ["Flowbite Pro", "Technology", "Glossary", "Tomas Korcak"]

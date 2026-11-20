@@ -3,7 +3,7 @@
 title = "SQLite"
 description = "An embedded SQL database in a single file, with no server: the most widely deployed database engine."
 template = "term.html"
-weight = 117
+weight = 155
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

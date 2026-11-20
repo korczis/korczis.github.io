@@ -3,7 +3,7 @@
 title = "Python"
 description = "A general-purpose language valued for readability, common in data work and scripting."
 template = "term.html"
-weight = 29
+weight = 30
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]

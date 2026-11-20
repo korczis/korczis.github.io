@@ -3,7 +3,7 @@
 title = "Markdown"
 description = "Formát prostého textu, jehož jednoduché značky (nadpisy, seznamy, odkazy) se vykreslují jako HTML; píšou se v něm README i stránky tohoto webu."
 template = "term.html"
-weight = 92
+weight = 116
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

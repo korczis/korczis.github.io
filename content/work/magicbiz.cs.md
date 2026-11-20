@@ -17,7 +17,7 @@ og_description = "magicbiz: Nástroje, 2015, archiv. Zdrojový kód: GitHub a Gi
 og_image = "og/cs-work-magicbiz.png"
 schema = "project"
 keywords = ["magicbiz", "Nástroje", "2015", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["open-source", "repository", "commit"]
+terms = ["aws", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

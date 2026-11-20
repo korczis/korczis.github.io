@@ -14,7 +14,7 @@ icon = "shield"
 og_title = "Due diligence firem a protistran"
 og_image = "og/cs-service-due-diligence.png"
 schema = "service"
-terms = ["service", "elixir", "phoenix", "postgresql", "meilisearch", "playwright", "due-diligence", "public-registry", "record-linkage", "beneficial-ownership", "financial-statement-analysis", "risk-assessment", "source-criticism", "decision-support-system", "javascript", "html", "python", "flowbite-pro", "tailwind-css", "dockerfile", "fastapi", "shell", "alpine-js", "claude-api"]
+terms = ["service", "elixir", "phoenix", "postgresql", "meilisearch", "playwright", "due-diligence", "public-registry", "record-linkage", "beneficial-ownership", "financial-statement-analysis", "risk-assessment", "source-criticism", "decision-support-system", "javascript", "html", "python", "flowbite-pro", "tailwind-css", "dockerfile", "fastapi", "shell", "alpine-js", "react"]
 keywords = ["Due diligence firem a protistran", "Due diligence", "Rejstříkové zpravodajství", "Ztotožnění subjektů", "Analýza vlastnictví a vazeb", "Analýza účetních závěrek", "Hodnocení rizik", "Spolehlivost zdrojů", "Podpora rozhodování", "Tomáš Korčák"]
 
 [[extra.viz]]

@@ -17,7 +17,7 @@ definition = "Textový jazyk pro diagramy (vývojové diagramy, sekvence, stavov
 aliases = []
 reference = { title = "Mermaid documentation", url = "https://mermaid.js.org/intro/" }
 pages = ["work/comtesse.cs.md"]
-related = ["commit", "json-schema", "just", "meilisearch", "open-source", "repository", "rust", "shell"]
+related = ["commit", "json-schema", "just", "llm", "meilisearch", "open-source", "repository", "rust"]
 og_title = "Mermaid: slovník"
 og_image = "og/cs-glossary-mermaid.png"
 keywords = ["Mermaid", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

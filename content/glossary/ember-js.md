@@ -3,7 +3,7 @@
 title = "Ember.js"
 description = "A JavaScript framework for ambitious single-page applications, with conventions for routing, data and templates."
 template = "term.html"
-weight = 63
+weight = 72
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "A JavaScript framework for ambitious single-page applications, with conventions for routing, data and templates."
 aliases = ["Ember"]
 reference = { title = "Ember.js Guides", url = "https://guides.emberjs.com/" }
-pages = ["services/attack-surface.md", "skills/change-monitoring.md", "work/apollocrawler-com.md", "work/craftsmen.md", "work/lethe-it.md", "work/microcrawler-couchapp.md", "work/microscratch.md"]
-related = ["css", "javascript", "bootstrap", "commit", "express", "handlebars", "nodejs", "open-source"]
+pages = ["skills/change-monitoring.md", "work/apollocrawler-com.md", "work/craftsmen.md", "work/lethe-it.md", "work/microcrawler-couchapp.md", "work/microscratch.md"]
+related = ["css", "javascript", "bootstrap", "commit", "express", "handlebars", "open-source", "repository"]
 og_title = "Ember.js: glossary"
 og_image = "og/glossary-ember-js.png"
 keywords = ["Ember.js", "Technology", "Glossary", "Tomas Korcak"]

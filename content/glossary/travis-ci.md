@@ -3,7 +3,7 @@
 title = "Travis CI"
 description = "A hosted continuous-integration service that built and tested open-source repositories on every push, configured by a .travis.yml file."
 template = "term.html"
-weight = 121
+weight = 165
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

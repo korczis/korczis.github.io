@@ -3,7 +3,7 @@
 title = "Plug"
 description = "Elixir's specification of composable modules for web applications; Phoenix's request pipeline is built from plugs."
 template = "term.html"
-weight = 106
+weight = 138
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "Elixir's specification of composable modules for web applications;
 aliases = []
 reference = { title = "Plug documentation", url = "https://hexdocs.pm/plug/" }
 pages = ["work/el-magico-cache.md", "work/job-processor.md", "work/rest-hello-world-benchmark.md"]
-related = ["commit", "cowboy", "elixir", "open-source", "repository", "html", "makefile", "css"]
+related = ["commit", "cowboy", "elixir", "open-source", "repository", "erlang", "html", "makefile"]
 og_title = "Plug: glossary"
 og_image = "og/glossary-plug.png"
 keywords = ["Plug", "Technology", "Glossary", "Tomas Korcak"]

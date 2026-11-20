@@ -14,7 +14,7 @@ seo_title = "Haskell (programovací jazyk)"
 term = "haskell"
 kind = "language"
 definition = "Čistě funkcionální jazyk s líným vyhodnocováním a silným typovým systémem; místo, kde se učí myslet v typech."
-aliases = []
+aliases = ["Cabal"]
 reference = { title = "haskell.org", url = "https://www.haskell.org/" }
 pages = ["projects/learning.cs.md", "projects/science.cs.md", "work/happ.cs.md", "work/haskell-world.cs.md", "work/skull-haskell.cs.md"]
 related = ["repository", "commit", "cpp", "elixir", "open-source", "rust", "shell", "c"]

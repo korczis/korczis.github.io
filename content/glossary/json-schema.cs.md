@@ -3,7 +3,7 @@
 title = "JSON Schema"
 description = "Slovník pro popis a validaci struktury dokumentů JSON."
 template = "term.html"
-weight = 87
+weight = 106
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

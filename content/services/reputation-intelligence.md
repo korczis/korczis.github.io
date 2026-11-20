@@ -14,7 +14,7 @@ icon = "globe"
 og_title = "Reputation intelligence and adverse-media monitoring"
 og_image = "og/service-reputation-intelligence.png"
 schema = "service"
-terms = ["service", "elixir", "broadway", "ollama", "claude-api", "phoenix", "reputation-risk", "source-criticism", "change-detection", "osint", "decision-support-system", "javascript", "html", "python", "shell", "tailwind-css", "flowbite-pro", "postgresql", "dockerfile", "fastapi", "github-actions"]
+terms = ["service", "elixir", "broadway", "ollama", "claude-api", "phoenix", "reputation-risk", "source-criticism", "change-detection", "osint", "decision-support-system", "javascript", "html", "python", "shell", "tailwind-css", "flowbite-pro", "postgresql", "dockerfile", "fastapi", "leaflet"]
 keywords = ["Reputation intelligence and adverse-media monitoring", "Narrative and reputation analysis", "Source reliability", "Continuous monitoring", "OSINT investigation", "Decision support", "Tomas Korcak"]
 
 [[extra.viz]]

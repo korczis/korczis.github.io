@@ -3,7 +3,7 @@
 title = "Vagrant"
 description = "Nástroj, který podle souboru Vagrantfile staví reprodukovatelné vývojové virtuální stroje."
 template = "term.html"
-weight = 125
+weight = 169
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -17,7 +17,7 @@ definition = "Nástroj, který podle souboru Vagrantfile staví reprodukovateln�
 aliases = []
 reference = { title = "Vagrant documentation", url = "https://developer.hashicorp.com/vagrant/docs" }
 pages = ["work/apollo-box.cs.md", "work/k8s-orbis-pictus.cs.md", "work/server-archlinux.cs.md"]
-related = ["commit", "open-source", "repository", "ansible", "dockerfile", "shell", "gis", "go"]
+related = ["commit", "open-source", "repository", "ansible", "dockerfile", "shell", "virtualbox", "cockpit"]
 og_title = "Vagrant: slovník"
 og_image = "og/cs-glossary-vagrant.png"
 keywords = ["Vagrant", "Technologie", "Slovník", "Tomáš Korčák"]

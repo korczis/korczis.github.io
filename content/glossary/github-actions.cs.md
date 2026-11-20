@@ -3,7 +3,7 @@
 title = "GitHub Actions"
 description = "Průběžná integrace GitHubu: workflow s úlohami, které sestaví, otestují a nasadí repozitář při každém pushi nebo podle plánu."
 template = "term.html"
-weight = 72
+weight = 85
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Průběžná integrace GitHubu: workflow s úlohami, které sestaví, otestují a nasadí repozitář při každém pushi nebo podle plánu."
 aliases = []
 reference = { title = "GitHub Actions documentation", url = "https://docs.github.com/en/actions" }
-pages = ["services/ai-engineering-governance.cs.md", "services/continuous-monitoring.cs.md", "services/reputation-intelligence.cs.md", "skills/ai-transformation.cs.md", "skills/data-room.cs.md", "skills/entity-resolution.cs.md", "skills/insolvency-monitoring.cs.md", "skills/knowledge-graph.cs.md", "skills/llm-agents.cs.md", "skills/m-and-a-screening.cs.md", "skills/narrative-analysis.cs.md", "skills/orchestration.cs.md", "skills/risk-scoring.cs.md", "work/el-magico-cache.cs.md", "work/gh-exec-3000.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/prismatic-blog.cs.md", "work/prismatic-majordomus.cs.md", "work/prismatic.cs.md", "_index.cs.md"]
-related = ["html", "javascript", "claude-api", "dockerfile", "flowbite-pro", "alpine-js", "shell", "fastapi"]
+pages = ["services/ai-engineering-governance.cs.md", "services/continuous-monitoring.cs.md", "skills/ai-transformation.cs.md", "skills/data-room.cs.md", "skills/entity-resolution.cs.md", "skills/insolvency-monitoring.cs.md", "skills/knowledge-graph.cs.md", "skills/llm-agents.cs.md", "skills/m-and-a-screening.cs.md", "skills/narrative-analysis.cs.md", "skills/orchestration.cs.md", "skills/risk-scoring.cs.md", "work/el-magico-cache.cs.md", "work/gh-exec-3000.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/prismatic-blog.cs.md", "work/prismatic-majordomus.cs.md", "work/prismatic.cs.md", "_index.cs.md"]
+related = ["html", "claude-api", "dockerfile", "javascript", "alpine-js", "flowbite-pro", "shell", "skill"]
 og_title = "GitHub Actions: slovník"
 og_image = "og/cs-glossary-github-actions.png"
 keywords = ["GitHub Actions", "Technologie", "Slovník", "Tomáš Korčák"]

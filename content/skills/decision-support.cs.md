@@ -13,7 +13,7 @@ skill = "decision-support"
 og_title = "Podpora rozhodování: dovednosti"
 og_image = "og/cs-skill-decision-support.png"
 schema = "skill"
-terms = ["skill", "decision-support-system", "javascript", "html", "flowbite-pro", "python", "tailwind-css", "dockerfile", "elixir", "fastapi", "phoenix", "postgresql"]
+terms = ["skill", "decision-support-system", "javascript", "html", "flowbite-pro", "python", "tailwind-css", "dockerfile", "elixir", "fastapi", "leaflet", "phoenix"]
 keywords = ["Podpora rozhodování", "Due diligence firem a protistran", "Prověrka a analýza M&A transakcí", "Reputační zpravodajství a monitoring negativních zpráv", "Podpora rozhodování a AI agenti pro analytiky", "Interaktivní datové produkty a simulátory", "Tomáš Korčák"]
 
 [[extra.viz]]

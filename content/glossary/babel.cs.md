@@ -3,7 +3,7 @@
 title = "Babel"
 description = "Kompilátor JavaScriptu, který přepisuje moderní syntaxi do kódu, kterému rozumějí starší prohlížeče a běhová prostředí."
 template = "term.html"
-weight = 47
+weight = 50
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -17,7 +17,7 @@ definition = "Kompilátor JavaScriptu, který přepisuje moderní syntaxi do kó
 aliases = []
 reference = { title = "Babel documentation", url = "https://babeljs.io/docs/" }
 pages = ["skills/chain-of-custody.cs.md", "skills/web-automation.cs.md", "work/babel-plugin-transform-graphql.cs.md", "work/bcnode-old.cs.md", "work/gooddata-proxy.cs.md", "work/microcrawler-browser.cs.md", "work/microcrawler-js.cs.md", "work/microcrawler-ng.cs.md", "work/peg-parser.cs.md"]
-related = ["javascript", "commit", "open-source", "repository", "nodejs", "webpack", "dockerfile", "gis"]
+related = ["javascript", "commit", "open-source", "repository", "nodejs", "dockerfile", "gis", "html"]
 og_title = "Babel: slovník"
 og_image = "og/cs-glossary-babel.png"
 keywords = ["Babel", "Technologie", "Slovník", "Tomáš Korčák"]

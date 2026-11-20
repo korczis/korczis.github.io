@@ -3,7 +3,7 @@
 title = "etcd"
 description = "Distribuované, konzistentní úložiště klíč–hodnota (Raft) pro konfiguraci a vyhledávání služeb; Kubernetes v něm drží svůj stav."
 template = "term.html"
-weight = 66
+weight = 76
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -17,7 +17,7 @@ definition = "Distribuované, konzistentní úložiště klíč–hodnota (Raft)
 aliases = []
 reference = { title = "etcd documentation", url = "https://etcd.io/docs/" }
 pages = ["work/apollon.cs.md", "work/cluster-kubernetes.cs.md", "work/microcrawler.cs.md"]
-related = ["commit", "open-source", "repository", "coreos", "dockerfile", "kubernetes", "shell", "couchbase"]
+related = ["commit", "open-source", "repository", "coreos", "dockerfile", "fleet", "kubernetes", "shell"]
 og_title = "etcd: slovník"
 og_image = "og/cs-glossary-etcd.png"
 keywords = ["etcd", "Technologie", "Slovník", "Tomáš Korčák"]

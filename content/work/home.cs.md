@@ -17,7 +17,7 @@ og_description = "home: Nástroje, Shell, 2019, archiv. Zdrojový kód: GitHub a
 og_image = "og/cs-work-home.png"
 schema = "project"
 keywords = ["home", "Nástroje", "Shell", "2019", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["shell", "open-source", "repository", "commit"]
+terms = ["shell", "homebrew", "ruby", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

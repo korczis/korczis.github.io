@@ -3,7 +3,7 @@
 title = "Případová studie"
 description = "Popis jedné zakázky: kontext, role, co bylo dodáno, v jakém rozsahu a s jakými doklady, včetně mezí toho, co lze zveřejnit."
 template = "term.html"
-weight = 134
+weight = 183
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

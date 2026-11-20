@@ -3,7 +3,7 @@
 title = "Plug"
 description = "Specifikace skládatelných modulů pro webové aplikace v Elixiru; pipeline požadavků Phoenixu je složená z plugů."
 template = "term.html"
-weight = 106
+weight = 138
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -17,7 +17,7 @@ definition = "Specifikace skládatelných modulů pro webové aplikace v Elixiru
 aliases = []
 reference = { title = "Plug documentation", url = "https://hexdocs.pm/plug/" }
 pages = ["work/el-magico-cache.cs.md", "work/job-processor.cs.md", "work/rest-hello-world-benchmark.cs.md"]
-related = ["commit", "cowboy", "elixir", "open-source", "repository", "html", "makefile", "css"]
+related = ["commit", "cowboy", "elixir", "open-source", "repository", "erlang", "html", "makefile"]
 og_title = "Plug: slovník"
 og_image = "og/cs-glossary-plug.png"
 keywords = ["Plug", "Technologie", "Slovník", "Tomáš Korčák"]

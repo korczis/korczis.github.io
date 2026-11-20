@@ -3,7 +3,7 @@
 title = "React"
 description = "A JavaScript library for user interfaces built from components that re-render from state."
 template = "term.html"
-weight = 112
+weight = 147
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "A JavaScript library for user interfaces built from components that re-render from state."
 aliases = ["React.js"]
 reference = { title = "react.dev", url = "https://react.dev/learn" }
-pages = ["work/gooddata-graphql.md", "work/gooddata-proxy.md", "work/maze.md", "work/microscratch-react.md", "_index.md"]
-related = ["commit", "open-source", "repository", "html", "javascript", "css", "elixir", "gis"]
+pages = ["services/due-diligence.md", "work/gooddata-graphql.md", "work/gooddata-proxy.md", "work/maze.md", "work/microscratch-react.md", "_index.md"]
+related = ["commit", "html", "javascript", "open-source", "repository", "elixir", "phoenix", "shell"]
 og_title = "React: glossary"
 og_image = "og/glossary-react.png"
 keywords = ["React", "Technology", "Glossary", "Tomas Korcak"]

@@ -13,7 +13,7 @@ skill = "compliance-mapping"
 og_title = "Mapování regulatorní shody: dovednosti"
 og_image = "og/cs-skill-compliance-mapping.png"
 schema = "skill"
-terms = ["skill", "regulatory-compliance", "alpine-js", "axe-core", "css", "flowbite-pro", "github-pages", "html", "javascript", "p5-js", "playwright", "tailwind-css"]
+terms = ["skill", "regulatory-compliance", "alpine-js", "axe-core", "css", "esbuild", "flowbite-pro", "github-pages", "html", "javascript", "p5-js", "playwright"]
 keywords = ["Mapování regulatorní shody", "Sankční a PEP prověrky a skuteční majitelé", "Hodnocení vnější útočné plochy a kybernetické expozice", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -31,7 +31,7 @@ Pojem, na kterém stojí: [Regulatorní shoda](@/glossary/regulatory-compliance.
 
 Služby, které z ní čerpají: [Sankční a PEP prověrky a skuteční majitelé](@/services/compliance-screening.cs.md) a [Hodnocení vnější útočné plochy a kybernetické expozice](@/services/attack-surface.cs.md).
 
-Praktikovaná s: [Alpine.js](@/glossary/alpine-js.cs.md), [axe-core](@/glossary/axe-core.cs.md), [CSS](@/glossary/css.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md), [GitHub Pages](@/glossary/github-pages.cs.md), [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md) a [p5.js](@/glossary/p5-js.cs.md).
+Praktikovaná s: [Alpine.js](@/glossary/alpine-js.cs.md), [axe-core](@/glossary/axe-core.cs.md), [CSS](@/glossary/css.cs.md), [esbuild](@/glossary/esbuild.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md), [GitHub Pages](@/glossary/github-pages.cs.md), [HTML](@/glossary/html.cs.md) a [JavaScript](@/glossary/javascript.cs.md).
 
 Veřejná práce, jejíž vlastní slova ji dokládají: [oscilla](https://github.com/korczis/oscilla).
 

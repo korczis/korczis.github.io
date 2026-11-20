@@ -3,7 +3,7 @@
 title = "serde"
 description = "Framework Rustu pro serializaci a deserializaci datových struktur do JSON, TOML, YAML a dalších formátů."
 template = "term.html"
-weight = 115
+weight = 152
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

@@ -17,7 +17,7 @@ og_description = "haskell-world: Science and visualisation in Haskell and Shell,
 og_image = "og/work-haskell-world.png"
 schema = "project"
 keywords = ["haskell-world", "Science and visualisation", "Haskell", "Shell", "2016", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["haskell", "shell", "data-visualisation", "repository", "commit", "open-source"]
+terms = ["haskell", "shell", "opengl", "data-visualisation", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

@@ -3,7 +3,7 @@
 title = "serde"
 description = "Rust's framework for serialising and deserialising data structures to JSON, TOML, YAML and other formats."
 template = "term.html"
-weight = 115
+weight = 152
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

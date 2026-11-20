@@ -3,7 +3,7 @@
 title = "OpenAPI"
 description = "Standardní, na jazyce nezávislý popis HTTP rozhraní: jeho cest, operací a dat, čitelný pro lidi i nástroje jako Swagger UI."
 template = "term.html"
-weight = 102
+weight = 129
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

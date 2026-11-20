@@ -17,7 +17,7 @@ og_description = "social-icons: Systémy a infrastruktura, 2013, archiv. Zdrojov
 og_image = "og/cs-work-social-icons.png"
 schema = "project"
 keywords = ["social-icons", "Systémy a infrastruktura", "2013", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["repository", "commit", "open-source"]
+terms = ["png", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

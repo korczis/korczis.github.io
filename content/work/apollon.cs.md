@@ -17,7 +17,7 @@ og_description = "apollon: Systémy a infrastruktura, Ruby, 2014–2015, archiv.
 og_image = "og/cs-work-apollon.png"
 schema = "project"
 keywords = ["apollon", "Systémy a infrastruktura", "Ruby", "2014–2015", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["ruby", "gli", "coreos", "etcd", "kubernetes", "dockerfile", "rspec", "github-pages", "repository", "commit", "open-source"]
+terms = ["ruby", "gli", "coreos", "etcd", "fleet", "kubernetes", "dockerfile", "aws", "rspec", "github-pages", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

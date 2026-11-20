@@ -3,7 +3,7 @@
 title = "Meilisearch"
 description = "A fast open-source search engine with typo tolerance and filters, used for full-text search over collected evidence."
 template = "term.html"
-weight = 94
+weight = 118
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

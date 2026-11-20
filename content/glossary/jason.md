@@ -3,7 +3,7 @@
 title = "Jason"
 description = "The JSON parser and generator most Elixir projects use, Phoenix included."
 template = "term.html"
-weight = 83
+weight = 101
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "The JSON parser and generator most Elixir projects use, Phoenix in
 aliases = []
 reference = { title = "Jason documentation", url = "https://hexdocs.pm/jason/" }
 pages = ["skills/media-forensics.md", "work/distance-calculator.md", "work/job-processor.md", "work/kuzu-ex.md", "work/llm.md"]
-related = ["elixir", "gitlab-ci", "commit", "open-source", "repository", "dockerfile", "ecto", "postgresql"]
+related = ["elixir", "gitlab-ci", "commit", "open-source", "repository", "credo", "dockerfile", "ecto"]
 og_title = "Jason: glossary"
 og_image = "og/glossary-jason.png"
 keywords = ["Jason", "Technology", "Glossary", "Tomas Korcak"]

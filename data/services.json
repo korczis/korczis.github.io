@@ -197,23 +197,28 @@
           "n": 4
         },
         {
-          "id": "claude-api",
-          "name": "Claude API",
-          "n": 4
-        },
-        {
-          "id": "css",
-          "name": "CSS",
-          "n": 4
-        },
-        {
           "id": "react",
           "name": "React",
           "n": 4
         },
         {
+          "id": "claude-api",
+          "name": "Claude API",
+          "n": 3
+        },
+        {
+          "id": "css",
+          "name": "CSS",
+          "n": 3
+        },
+        {
           "id": "github-actions",
           "name": "GitHub Actions",
+          "n": 3
+        },
+        {
+          "id": "leaflet",
+          "name": "Leaflet",
           "n": 3
         },
         {
@@ -224,11 +229,6 @@
         {
           "id": "json-schema",
           "name": "JSON Schema",
-          "n": 2
-        },
-        {
-          "id": "kubernetes",
-          "name": "Kubernetes",
           "n": 2
         }
       ]
@@ -434,11 +434,6 @@
           "n": 6
         },
         {
-          "id": "claude-api",
-          "name": "Claude API",
-          "n": 6
-        },
-        {
           "id": "playwright",
           "name": "Playwright",
           "n": 6
@@ -447,6 +442,11 @@
           "id": "tailwind-css",
           "name": "Tailwind CSS",
           "n": 6
+        },
+        {
+          "id": "claude-api",
+          "name": "Claude API",
+          "n": 5
         },
         {
           "id": "github-actions",
@@ -937,8 +937,8 @@
           "n": 3
         },
         {
-          "id": "phoenix",
-          "name": "Phoenix",
+          "id": "leaflet",
+          "name": "Leaflet",
           "n": 3
         }
       ]
@@ -1210,13 +1210,13 @@
         {
           "id": "claude-api",
           "name": "Claude API",
-          "n": 4,
+          "n": 3,
           "declared": true
         },
         {
           "id": "phoenix",
           "name": "Phoenix",
-          "n": 4,
+          "n": 2,
           "declared": true
         }
       ],
@@ -1421,6 +1421,11 @@
           "n": 4
         },
         {
+          "id": "leaflet",
+          "name": "Leaflet",
+          "n": 4
+        },
+        {
           "id": "github-actions",
           "name": "GitHub Actions",
           "n": 3
@@ -1446,13 +1451,8 @@
           "n": 2
         },
         {
-          "id": "css",
-          "name": "CSS",
-          "n": 2
-        },
-        {
-          "id": "ecto",
-          "name": "Ecto",
+          "id": "couchdb",
+          "name": "CouchDB",
           "n": 2
         }
       ]
@@ -1812,14 +1812,14 @@
           "n": 4
         },
         {
-          "id": "playwright",
-          "name": "Playwright",
-          "n": 4
-        },
-        {
           "id": "python",
           "name": "Python",
           "n": 4
+        },
+        {
+          "id": "playwright",
+          "name": "Playwright",
+          "n": 3
         },
         {
           "id": "pydantic",
@@ -2115,6 +2115,11 @@
           "n": 2
         },
         {
+          "id": "couchdb",
+          "name": "CouchDB",
+          "n": 2
+        },
+        {
           "id": "css",
           "name": "CSS",
           "n": 2
@@ -2153,11 +2158,6 @@
           "id": "babel",
           "name": "Babel",
           "n": 1
-        },
-        {
-          "id": "c",
-          "name": "C",
-          "n": 1
         }
       ]
     },
@@ -2178,7 +2178,7 @@
         {
           "id": "claude-api",
           "name": "Claude API",
-          "n": 11,
+          "n": 10,
           "declared": true
         },
         {
@@ -2443,11 +2443,6 @@
           "n": 10
         },
         {
-          "id": "playwright",
-          "name": "Playwright",
-          "n": 10
-        },
-        {
           "id": "postgresql",
           "name": "PostgreSQL",
           "n": 10
@@ -2455,6 +2450,11 @@
         {
           "id": "dockerfile",
           "name": "Dockerfile",
+          "n": 9
+        },
+        {
+          "id": "playwright",
+          "name": "Playwright",
           "n": 9
         },
         {
@@ -2468,14 +2468,14 @@
           "n": 6
         },
         {
-          "id": "css",
-          "name": "CSS",
-          "n": 5
-        },
-        {
           "id": "fastapi",
           "name": "FastAPI",
           "n": 5
+        },
+        {
+          "id": "css",
+          "name": "CSS",
+          "n": 4
         },
         {
           "id": "kubernetes",
@@ -2770,13 +2770,13 @@
           "n": 13
         },
         {
-          "id": "playwright",
-          "name": "Playwright",
-          "n": 12
-        },
-        {
           "id": "alpine-js",
           "name": "Alpine.js",
+          "n": 11
+        },
+        {
+          "id": "playwright",
+          "name": "Playwright",
           "n": 11
         },
         {
@@ -3281,19 +3281,19 @@
           "n": 4
         },
         {
+          "id": "github-pages",
+          "name": "GitHub Pages",
+          "n": 4
+        },
+        {
           "id": "claude-api",
           "name": "Claude API",
-          "n": 4
+          "n": 3
         },
         {
           "id": "css",
           "name": "CSS",
-          "n": 4
-        },
-        {
-          "id": "github-pages",
-          "name": "GitHub Pages",
-          "n": 4
+          "n": 3
         }
       ]
     }
@@ -3404,6 +3404,11 @@
           "n": 1
         },
         {
+          "id": "esbuild",
+          "name": "esbuild",
+          "n": 1
+        },
+        {
           "id": "fastapi",
           "name": "FastAPI",
           "n": 1
@@ -3426,11 +3431,6 @@
         {
           "id": "json-schema",
           "name": "JSON Schema",
-          "n": 1
-        },
-        {
-          "id": "just",
-          "name": "Just",
           "n": 1
         }
       ]
@@ -4032,6 +4032,11 @@
           "n": 2
         },
         {
+          "id": "leaflet",
+          "name": "Leaflet",
+          "n": 2
+        },
+        {
           "id": "phoenix",
           "name": "Phoenix",
           "n": 2
@@ -4062,13 +4067,8 @@
           "n": 1
         },
         {
-          "id": "claude-api",
-          "name": "Claude API",
-          "n": 1
-        },
-        {
-          "id": "css",
-          "name": "CSS",
+          "id": "brunch",
+          "name": "Brunch",
           "n": 1
         }
       ]
@@ -4251,8 +4251,8 @@
           "n": 2
         },
         {
-          "id": "phoenix",
-          "name": "Phoenix",
+          "id": "leaflet",
+          "name": "Leaflet",
           "n": 2
         }
       ]
@@ -5091,6 +5091,11 @@
           "n": 1
         },
         {
+          "id": "cockpit",
+          "name": "Cockpit",
+          "n": 1
+        },
+        {
           "id": "fastapi",
           "name": "FastAPI",
           "n": 1
@@ -5138,11 +5143,6 @@
         {
           "id": "postgresql",
           "name": "PostgreSQL",
-          "n": 1
-        },
-        {
-          "id": "pydantic",
-          "name": "Pydantic",
           "n": 1
         }
       ]
@@ -5547,6 +5547,11 @@
           "n": 1
         },
         {
+          "id": "llm",
+          "name": "LLM",
+          "n": 1
+        },
+        {
           "id": "majordomus",
           "name": "Majordomus",
           "n": 1
@@ -5564,11 +5569,6 @@
         {
           "id": "openai-api",
           "name": "OpenAI API",
-          "n": 1
-        },
-        {
-          "id": "playwright",
-          "name": "Playwright",
           "n": 1
         }
       ]
@@ -5620,6 +5620,11 @@
         {
           "id": "javascript",
           "name": "JavaScript",
+          "n": 1
+        },
+        {
+          "id": "leaflet",
+          "name": "Leaflet",
           "n": 1
         },
         {
@@ -5886,6 +5891,11 @@
           "n": 1
         },
         {
+          "id": "llm",
+          "name": "LLM",
+          "n": 1
+        },
+        {
           "id": "makefile",
           "name": "Makefile",
           "n": 1
@@ -5955,8 +5965,18 @@
           "n": 1
         },
         {
+          "id": "grpc",
+          "name": "gRPC",
+          "n": 1
+        },
+        {
           "id": "javascript",
           "name": "JavaScript",
+          "n": 1
+        },
+        {
+          "id": "jest",
+          "name": "Jest",
           "n": 1
         },
         {
@@ -5972,6 +5992,11 @@
         {
           "id": "protobuf",
           "name": "Protocol Buffers",
+          "n": 1
+        },
+        {
+          "id": "rocksdb",
+          "name": "RocksDB",
           "n": 1
         },
         {
@@ -6123,6 +6148,11 @@
           "n": 2
         },
         {
+          "id": "couchdb",
+          "name": "CouchDB",
+          "n": 2
+        },
+        {
           "id": "ember-js",
           "name": "Ember.js",
           "n": 2
@@ -6178,18 +6208,13 @@
           "n": 1
         },
         {
+          "id": "opencl",
+          "name": "OpenCL",
+          "n": 1
+        },
+        {
           "id": "rust",
           "name": "Rust",
-          "n": 1
-        },
-        {
-          "id": "scss",
-          "name": "SCSS",
-          "n": 1
-        },
-        {
-          "id": "socket-io",
-          "name": "Socket.IO",
           "n": 1
         }
       ]
@@ -6384,6 +6409,11 @@
           "id": "shell",
           "name": "Shell",
           "n": 1
+        },
+        {
+          "id": "superagent",
+          "name": "superagent",
+          "n": 1
         }
       ]
     },
@@ -6436,6 +6466,11 @@
         {
           "id": "css",
           "name": "CSS",
+          "n": 1
+        },
+        {
+          "id": "esbuild",
+          "name": "esbuild",
           "n": 1
         },
         {
@@ -6931,6 +6966,11 @@
           "n": 2
         },
         {
+          "id": "cachex",
+          "name": "Cachex",
+          "n": 1
+        },
+        {
           "id": "coreos",
           "name": "CoreOS",
           "n": 1
@@ -6963,11 +7003,6 @@
         {
           "id": "elasticsearch",
           "name": "Elasticsearch",
-          "n": 1
-        },
-        {
-          "id": "erlang",
-          "name": "Erlang",
           "n": 1
         }
       ]

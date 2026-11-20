@@ -3,7 +3,7 @@
 title = "CoreOS"
 description = "A minimal Linux distribution built to run containers, with automatic updates and etcd for cluster configuration."
 template = "term.html"
-weight = 55
+weight = 61
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "A minimal Linux distribution built to run containers, with automat
 aliases = ["Container Linux"]
 reference = { title = "Fedora CoreOS documentation", url = "https://docs.fedoraproject.org/en-US/fedora-coreos/" }
 pages = ["skills/geospatial-analysis.md", "work/apollon.md", "work/cluster.md", "work/microcrawler.md", "work/server-coreos.md"]
-related = ["commit", "open-source", "repository", "dockerfile", "etcd", "gis", "gli", "kubernetes"]
+related = ["commit", "open-source", "repository", "dockerfile", "aws", "etcd", "fleet", "gis"]
 og_title = "CoreOS: glossary"
 og_image = "og/glossary-coreos.png"
 keywords = ["CoreOS", "Technology", "Glossary", "Tomas Korcak"]

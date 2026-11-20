@@ -3,7 +3,7 @@
 title = "GitHub Pages"
 description = "Hosting statických webů od GitHubu nasazovaný z repozitáře; žije tam tento web i většina webů projektů."
 template = "term.html"
-weight = 73
+weight = 87
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

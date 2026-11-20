@@ -3,7 +3,7 @@
 title = "TeX"
 description = "A typesetting language for documents and mathematics; LaTeX is the macro package most documents are written in."
 template = "term.html"
-weight = 38
+weight = 39
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]

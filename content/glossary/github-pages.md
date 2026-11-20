@@ -3,7 +3,7 @@
 title = "GitHub Pages"
 description = "GitHub's hosting for static websites, deployed from a repository; this site and most project sites live there."
 template = "term.html"
-weight = 73
+weight = 87
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

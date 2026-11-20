@@ -3,7 +3,7 @@
 title = "Information extraction"
 description = "Turning documents (scans, PDFs, free text) into structured fields such as names, dates and amounts, with OCR and language or vision models."
 template = "term.html"
-weight = 149
+weight = 198
 
 [taxonomies]
 tags = ["Glossary", "Concept"]

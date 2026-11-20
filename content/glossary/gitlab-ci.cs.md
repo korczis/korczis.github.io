@@ -3,7 +3,7 @@
 title = "GitLab CI"
 description = "Pipeline vestavěné v GitLabu: úlohy popsané v .gitlab-ci.yml běží při každém pushi a merge requestu."
 template = "term.html"
-weight = 74
+weight = 88
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

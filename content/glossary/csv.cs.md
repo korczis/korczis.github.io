@@ -3,7 +3,7 @@
 title = "CSV"
 description = "Hodnoty oddělené čárkou: tabulka jako prostý text, jeden záznam na řádek, běžný formát datových exportů a otevřených dat."
 template = "term.html"
-weight = 58
+weight = 66
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

@@ -3,7 +3,7 @@
 title = "Systém pro podporu rozhodování"
 description = "Software, který shromáždí data a analýzy do zpráv a pohledů, jež lidem pomáhají rozhodnout, místo aby rozhodoval za ně."
 template = "term.html"
-weight = 141
+weight = 190
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

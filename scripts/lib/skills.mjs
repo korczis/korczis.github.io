@@ -15,7 +15,7 @@ export const MIN_SHARE = 1;
 // A technology a repository's dossier finds in its files (data/dossiers/<repo>.json stack, inferred
 // from manifests, imports and configuration) is a measured name, and so owes a glossary page, once
 // that many repositories use it; below it the dossier still counts as evidence on a term that exists.
-export const MIN_DOSSIER_REPOS = 3;
+export const MIN_DOSSIER_REPOS = 2;
 
 // Every name the data uses for a language or technology, with where it comes from: the coverage
 // a glossary must give a page to (rule project.everything-interlinked).

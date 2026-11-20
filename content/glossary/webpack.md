@@ -3,7 +3,7 @@
 title = "webpack"
 description = "A bundler that follows a JavaScript application's imports and packs its modules, styles and assets into files a browser loads."
 template = "term.html"
-weight = 127
+weight = 174
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "A bundler that follows a JavaScript application's imports and packs its modules, styles and assets into files a browser loads."
 aliases = []
 reference = { title = "webpack documentation", url = "https://webpack.js.org/concepts/" }
-pages = ["skills/chain-of-custody.md", "work/bcnode-old.md", "work/czech-stats.md", "work/gooddata-proxy.md", "work/kanec.md", "work/mapoffacts.md", "work/microcrawler-browser.md", "work/peg-loader.md", "work/peg-parser.md", "work/the-scratch.md", "work/tosh.md", "work/web-spa.md"]
-related = ["javascript", "commit", "open-source", "repository", "html", "elixir", "phoenix", "babel"]
+pages = ["work/bcnode-old.md", "work/czech-stats.md", "work/gooddata-proxy.md", "work/kanec.md", "work/mapoffacts.md", "work/microcrawler-browser.md", "work/peg-loader.md", "work/peg-parser.md", "work/the-scratch.md", "work/tosh.md", "work/web-spa.md"]
+related = ["commit", "javascript", "open-source", "repository", "html", "elixir", "phoenix", "babel"]
 og_title = "webpack: glossary"
 og_image = "og/glossary-webpack.png"
 keywords = ["webpack", "Technology", "Glossary", "Tomas Korcak"]

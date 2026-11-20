@@ -3,7 +3,7 @@
 title = "Řetězec úschovy"
 description = "Záznam o tom, kdo důkaz získal, kdy a jak, a čímkoli prošel, aby šlo doložit jeho neporušenost."
 template = "term.html"
-weight = 135
+weight = 184
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

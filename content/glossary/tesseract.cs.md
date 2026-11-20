@@ -3,7 +3,7 @@
 title = "Tesseract"
 description = "Open-source OCR engine, který čte text ze skenovaných dokumentů a obrázků v mnoha jazycích."
 template = "term.html"
-weight = 120
+weight = 162
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

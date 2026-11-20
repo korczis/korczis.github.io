@@ -17,7 +17,7 @@ og_description = "apollo-box: Data and GIS in Shell, 2014, archive. Source on Gi
 og_image = "og/work-apollo-box.png"
 schema = "project"
 keywords = ["apollo-box", "Data and GIS", "Shell", "2014", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["shell", "vagrant", "ubuntu", "python", "r", "go", "nodejs", "jq", "gis", "repository", "commit", "open-source"]
+terms = ["shell", "vagrant", "ubuntu", "python", "numpy", "pandas", "r", "go", "nodejs", "jq", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

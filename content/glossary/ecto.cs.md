@@ -3,7 +3,7 @@
 title = "Ecto"
 description = "Databázová sada nástrojů Elixiru: schémata, changesety ověřující data, skládatelné dotazy a migrace, nejčastěji nad PostgreSQL."
 template = "term.html"
-weight = 61
+weight = 70
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

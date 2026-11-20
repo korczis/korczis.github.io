@@ -3,7 +3,7 @@
 title = "Cytoscape.js"
 description = "Knihovna pro kreslení a analýzu grafů (sítí uzlů a hran) v prohlížeči."
 template = "term.html"
-weight = 59
+weight = 68
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

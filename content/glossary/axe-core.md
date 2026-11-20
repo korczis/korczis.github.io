@@ -3,7 +3,7 @@
 title = "axe-core"
 description = "An accessibility testing engine that checks rendered pages against WCAG rules; this site's browser audit runs it."
 template = "term.html"
-weight = 46
+weight = 49
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "An accessibility testing engine that checks rendered pages against
 aliases = []
 reference = { title = "axe-core on GitHub", url = "https://github.com/dequelabs/axe-core" }
 pages = ["skills/compliance-mapping.md", "work/algoglyph.md", "work/korczis-github-io.md", "work/oscilla.md"]
-related = ["alpine-js", "flowbite-pro", "github-pages", "html", "javascript", "p5-js", "tailwind-css", "commit"]
+related = ["alpine-js", "flowbite-pro", "github-pages", "html", "javascript", "p5-js", "commit", "css"]
 og_title = "axe-core: glossary"
 og_image = "og/glossary-axe-core.png"
 keywords = ["axe-core", "Technology", "Glossary", "Tomas Korcak"]
