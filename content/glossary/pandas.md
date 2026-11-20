@@ -3,7 +3,7 @@
 title = "pandas"
 description = "The Python library for tabular data: data frames to load, clean, join, group and summarise datasets."
 template = "term.html"
-weight = 134
+weight = 167
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

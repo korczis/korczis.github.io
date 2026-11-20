@@ -17,7 +17,7 @@ og_description = "corvidae: Tools in TeX, Elixir and Shell, 2025, active in the 
 og_image = "og/work-corvidae.png"
 schema = "project"
 keywords = ["corvidae", "Tools", "TeX", "Elixir", "Shell", "2025", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["tex", "elixir", "shell", "markdown", "phoenix", "open-source", "repository", "commit"]
+terms = ["tex", "elixir", "shell", "markdown", "geojson", "phoenix", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

@@ -3,7 +3,7 @@
 title = "CoreOS"
 description = "Minimalistická distribuce Linuxu stavěná pro běh kontejnerů, s automatickými aktualizacemi a etcd pro konfiguraci clusteru."
 template = "term.html"
-weight = 61
+weight = 68
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Minimalistická distribuce Linuxu stavěná pro běh kontejnerů, s automatickými aktualizacemi a etcd pro konfiguraci clusteru."
 aliases = ["Container Linux"]
 reference = { title = "Fedora CoreOS documentation", url = "https://docs.fedoraproject.org/en-US/fedora-coreos/" }
-pages = ["skills/geospatial-analysis.cs.md", "work/apollon.cs.md", "work/cluster.cs.md", "work/microcrawler.cs.md", "work/server-coreos.cs.md"]
-related = ["commit", "open-source", "repository", "dockerfile", "aws", "etcd", "fleet", "gis"]
+pages = ["work/apollon.cs.md", "work/cluster.cs.md", "work/microcrawler.cs.md", "work/server-coreos.cs.md"]
+related = ["commit", "open-source", "repository", "aws", "dockerfile", "etcd", "fleet", "gli"]
 og_title = "CoreOS: slovník"
 og_image = "og/cs-glossary-coreos.png"
 keywords = ["CoreOS", "Technologie", "Slovník", "Tomáš Korčák"]

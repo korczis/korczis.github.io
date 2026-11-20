@@ -3,7 +3,7 @@
 title = "Tera"
 description = "A template engine for Rust inspired by Jinja2: inheritance, macros, filters; the static-site generator Zola renders its pages with it."
 template = "term.html"
-weight = 160
+weight = 205
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

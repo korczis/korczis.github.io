@@ -3,7 +3,7 @@
 title = "Elm"
 description = "Čistě funkcionální jazyk pro webové frontendy, který se překládá do JavaScriptu a v praxi nemá běhové výjimky."
 template = "term.html"
-weight = 12
+weight = 13
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]

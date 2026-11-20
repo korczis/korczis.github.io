@@ -3,7 +3,7 @@
 title = "Claude API"
 description = "API společnosti Anthropic k modelům Claude: zprávy, používání nástrojů a agenti, kteří čtou, uvažují a jednají."
 template = "term.html"
-weight = 59
+weight = 63
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "API společnosti Anthropic k modelům Claude: zprávy, používání nástrojů a agenti, kteří čtou, uvažují a jednají."
 aliases = ["claude-code", "Claude"]
 reference = { title = "Claude API documentation", url = "https://docs.anthropic.com/" }
-pages = ["services/ai-engineering-governance.cs.md", "services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "services/decision-support-ai.cs.md", "services/digital-forensics.cs.md", "services/digital-investigation.cs.md", "services/m-and-a.cs.md", "services/reputation-intelligence.cs.md", "skills/ai-transformation.cs.md", "skills/audit-trail.cs.md", "skills/data-integration.cs.md", "skills/data-room.cs.md", "skills/document-extraction.cs.md", "skills/due-diligence.cs.md", "skills/entity-resolution.cs.md", "skills/insolvency-monitoring.cs.md", "skills/knowledge-graph.cs.md", "skills/llm-agents.cs.md", "skills/m-and-a-screening.cs.md", "skills/market-intelligence.cs.md", "skills/media-forensics.cs.md", "skills/narrative-analysis.cs.md", "skills/orchestration.cs.md", "skills/osint-investigation.cs.md", "skills/risk-scoring.cs.md", "_index.cs.md"]
-related = ["html", "javascript", "dockerfile", "flowbite-pro", "alpine-js", "skill", "fastapi", "python"]
+pages = ["services/ai-engineering-governance.cs.md", "services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "services/decision-support-ai.cs.md", "services/digital-forensics.cs.md", "services/m-and-a.cs.md", "services/reputation-intelligence.cs.md", "skills/ai-transformation.cs.md", "skills/audit-trail.cs.md", "skills/data-integration.cs.md", "skills/data-room.cs.md", "skills/document-extraction.cs.md", "skills/due-diligence.cs.md", "skills/entity-resolution.cs.md", "skills/insolvency-monitoring.cs.md", "skills/knowledge-graph.cs.md", "skills/m-and-a-screening.cs.md", "skills/market-intelligence.cs.md", "skills/media-forensics.cs.md", "skills/orchestration.cs.md", "skills/risk-scoring.cs.md", "_index.cs.md"]
+related = ["dockerfile", "html", "javascript", "alpine-js", "flowbite-pro", "fastapi", "skill", "python"]
 og_title = "Claude API: slovník"
 og_image = "og/cs-glossary-claude-api.png"
 keywords = ["Claude API", "Technologie", "Slovník", "Tomáš Korčák"]
@@ -40,13 +40,11 @@ span = 3
 height = "md"
 tone = "night"
 +++
-Claude API je součástí 3 mých veřejných repozitářů, od roku 2026 do 2026.
+Claude API je součástí 1 mého veřejného repozitáře, od roku 2026 do 2026.
 
-K čemu to sloužilo: [Inženýrství AI](@/projects/ai.cs.md) (2) a [Bezpečnost a OSINT](@/projects/security.cs.md) (1).
+K čemu to sloužilo: [Inženýrství AI](@/projects/ai.cs.md) (1).
 
-Naposledy: [Majordomus](@/work/prismatic-majordomus.cs.md): Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model; [osint-case-ratcliffe-moscow-2026](@/work/osint-case-ratcliffe-moscow-2026.cs.md); [llm](@/work/llm.cs.md).
-
-2 z těchto projektů běží jako živé weby.
+Naposledy: [llm](@/work/llm.cs.md).
 
 Používal jsem ho také v klientské práci pod dohodami o mlčenlivosti. Role: Architekt, Vedoucí inženýr, Inženýr AI a Datový inženýr. Co se řešilo: Agenti s LLM, Podpora rozhodování, Transformace s AI a Auditní stopa. Případy užití níže popisují princip a záměr této práce; žádný klient, osoba, datum ani číslo nejsou uvedeny.
 

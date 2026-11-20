@@ -3,7 +3,7 @@
 title = "Lean"
 description = "Funkcionální jazyk a asistent důkazů: programy i matematické důkazy jejich správnosti, ověřené strojem."
 template = "term.html"
-weight = 20
+weight = 21
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -17,7 +17,7 @@ definition = "Funkcionální jazyk a asistent důkazů: programy i matematické 
 aliases = ["Lean 4"]
 reference = { title = "Lean documentation", url = "https://lean-lang.org/documentation/" }
 pages = ["services/digital-forensics.cs.md"]
-related = ["alpine-js", "attack-surface", "audit-trail", "chain-of-custody", "claude-api", "digital-forensics", "dockerfile", "elixir"]
+related = ["alpine-js", "attack-surface", "audit-trail", "chain-of-custody", "claude-api", "claude-code", "digital-forensics", "dockerfile"]
 og_title = "Lean: slovník"
 og_image = "og/cs-glossary-lean.png"
 keywords = ["Lean", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

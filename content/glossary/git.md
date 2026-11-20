@@ -3,7 +3,7 @@
 title = "Git"
 description = "The distributed version-control system: every clone holds the full history of commits, branches and tags."
 template = "term.html"
-weight = 84
+weight = 107
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "The distributed version-control system: every clone holds the full history of commits, branches and tags."
 aliases = ["Git submodules"]
 reference = { title = "Git documentation", url = "https://git-scm.com/doc" }
-pages = ["skills/orchestration.md", "work/datasciencecoursera.md", "work/generator-the-scratch.md", "work/prismatic-majordomus.md", "work/skull.md", "work/zdeny-docker.md"]
-related = ["commit", "open-source", "repository", "shell", "javascript", "dockerfile", "github-actions", "html"]
+pages = ["work/datasciencecoursera.md", "work/generator-the-scratch.md", "work/prismatic-majordomus.md", "work/skull.md", "work/zdeny-docker.md"]
+related = ["commit", "open-source", "repository", "shell", "javascript", "python", "travis-ci", "ai-agent"]
 og_title = "Git: glossary"
 og_image = "og/glossary-git.png"
 keywords = ["Git", "Technology", "Glossary", "Tomas Korcak"]

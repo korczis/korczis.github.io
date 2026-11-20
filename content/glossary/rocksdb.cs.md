@@ -3,7 +3,7 @@
 title = "RocksDB"
 description = "Vestavěné úložiště klíč–hodnota nad LSM stromem, laděné pro rychlá úložiště a velkou zátěž zápisy."
 template = "term.html"
-weight = 149
+weight = 189
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -17,7 +17,7 @@ definition = "Vestavěné úložiště klíč–hodnota nad LSM stromem, laděn�
 aliases = []
 reference = { title = "RocksDB wiki", url = "https://github.com/facebook/rocksdb/wiki" }
 pages = ["skills/chain-of-custody.cs.md", "work/bcnode-old.cs.md", "work/rocksdb-indexer.cs.md"]
-related = ["rust", "babel", "commit", "dockerfile", "grpc", "javascript", "jest", "libp2p"]
+related = ["babel", "commit", "dockerfile", "flow", "grpc", "javascript", "jest", "libp2p"]
 og_title = "RocksDB: slovník"
 og_image = "og/cs-glossary-rocksdb.png"
 keywords = ["RocksDB", "Technologie", "Slovník", "Tomáš Korčák"]

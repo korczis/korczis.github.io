@@ -3,7 +3,7 @@
 title = "XML"
 description = "The Extensible Markup Language: a tree of tagged elements and attributes, the exchange format of feeds, office documents and older APIs."
 template = "term.html"
-weight = 176
+weight = 227
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

@@ -3,7 +3,7 @@
 title = "Ubuntu"
 description = "Distribuce Linuxu založená na Debianu, běžná na serverech, v kontejnerech a v CI runnerech."
 template = "term.html"
-weight = 166
+weight = 212
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

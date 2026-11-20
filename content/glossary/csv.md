@@ -3,7 +3,7 @@
 title = "CSV"
 description = "Comma-separated values: a table as plain text, one record per line, the common format of data exports and open data."
 template = "term.html"
-weight = 66
+weight = 74
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "Comma-separated values: a table as plain text, one record per line
 aliases = ["csv"]
 reference = { title = "RFC 4180: Common Format for CSV Files", url = "https://www.rfc-editor.org/rfc/rfc4180" }
 pages = ["skills/change-monitoring.md", "work/ctu-cz.md", "work/distance-calculator.md", "work/gooddata-lcm-tool.md", "work/simple-geocoder.md", "work/sli2dli.md", "work/streamflow.md", "work/zeman-ucet.md"]
-related = ["commit", "open-source", "repository", "clap", "makefile", "rust", "elixir", "erlang"]
+related = ["commit", "open-source", "repository", "clap", "makefile", "rust", "crossbeam", "elixir"]
 og_title = "CSV: glossary"
 og_image = "og/glossary-csv.png"
 keywords = ["CSV", "Technology", "Glossary", "Tomas Korcak"]

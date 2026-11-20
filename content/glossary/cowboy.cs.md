@@ -3,7 +3,7 @@
 title = "Cowboy"
 description = "HTTP a WebSocket server pro Erlang a Elixir; Phoenix přes něj obsluhuje své požadavky."
 template = "term.html"
-weight = 64
+weight = 71
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

@@ -3,7 +3,7 @@
 title = "Brunch"
 description = "Rychlý front-endový build nástroj řízený konvencemi; Phoenix ho používal pro assety před esbuildem."
 template = "term.html"
-weight = 54
+weight = 58
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

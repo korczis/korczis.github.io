@@ -3,7 +3,7 @@
 title = "VirtualBox"
 description = "Open-source hypervizor Oraclu pro desktopové stroje: virtuální stroje pro vývoj a testování, často řízené Vagrantem."
 template = "term.html"
-weight = 170
+weight = 217
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -17,7 +17,7 @@ definition = "Open-source hypervizor Oraclu pro desktopové stroje: virtuální 
 aliases = []
 reference = { title = "VirtualBox manual", url = "https://www.virtualbox.org/manual/" }
 pages = ["work/k8s-orbis-pictus.cs.md", "work/server-archlinux.cs.md"]
-related = ["ansible", "commit", "dockerfile", "open-source", "repository", "vagrant", "cockpit", "kubernetes"]
+related = ["ansible", "commit", "dockerfile", "open-source", "repository", "vagrant", "arch-linux", "cockpit"]
 og_title = "VirtualBox: slovník"
 og_image = "og/cs-glossary-virtualbox.png"
 keywords = ["VirtualBox", "Technologie", "Slovník", "Tomáš Korčák"]

@@ -3,7 +3,7 @@
 title = "jq"
 description = "A command-line processor that filters and transforms JSON with a small functional language."
 template = "term.html"
-weight = 103
+weight = 130
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "A command-line processor that filters and transforms JSON with a s
 aliases = []
 reference = { title = "jq manual", url = "https://jqlang.github.io/jq/manual/" }
 pages = ["skills/narrative-analysis.md", "work/apollo-box.md", "work/docker-datasciencetoolbox.md", "work/osint-case-ratcliffe-moscow-2026.md"]
-related = ["python", "commit", "open-source", "repository", "shell", "github-actions", "github-pages", "go"]
+related = ["python", "commit", "open-source", "repository", "shell", "claude-code", "github-actions", "github-pages"]
 og_title = "jq: glossary"
 og_image = "og/glossary-jq.png"
 keywords = ["jq", "Technology", "Glossary", "Tomas Korcak"]

@@ -3,7 +3,7 @@
 title = "axe-core"
 description = "An accessibility testing engine that checks rendered pages against WCAG rules; this site's browser audit runs it."
 template = "term.html"
-weight = 49
+weight = 51
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

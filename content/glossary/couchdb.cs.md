@@ -3,7 +3,7 @@
 title = "CouchDB"
 description = "Dokumentová databáze Apache: JSON dokumenty přes HTTP, pohledy MapReduce a replikace multi-master."
 template = "term.html"
-weight = 63
+weight = 70
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

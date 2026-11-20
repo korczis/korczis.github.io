@@ -3,7 +3,7 @@
 title = "RSpec"
 description = "A behaviour-driven testing framework for Ruby, with specs that read close to plain English."
 template = "term.html"
-weight = 150
+weight = 191
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

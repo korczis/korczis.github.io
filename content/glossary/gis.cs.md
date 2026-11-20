@@ -3,7 +3,7 @@
 title = "GIS"
 description = "Geografické informační systémy: data vázaná na místa, uložená, analyzovaná a kreslená jako mapy."
 template = "term.html"
-weight = 197
+weight = 249
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

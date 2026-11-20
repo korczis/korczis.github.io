@@ -3,7 +3,7 @@
 title = "libpcap"
 description = "The C library for packet capture behind tcpdump and Wireshark: it reads raw network traffic and filters it with BPF expressions."
 template = "term.html"
-weight = 112
+weight = 140
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "The C library for packet capture behind tcpdump and Wireshark: it 
 aliases = []
 reference = { title = "tcpdump and libpcap", url = "https://www.tcpdump.org/" }
 pages = ["work/charon.md", "work/peacemaker.md"]
-related = ["commit", "open-source", "repository", "travis-ci", "audit-trail", "c", "clap", "cmake"]
+related = ["commit", "open-source", "repository", "travis-ci", "audit-trail", "boost", "c", "clap"]
 og_title = "libpcap: glossary"
 og_image = "og/glossary-libpcap.png"
 keywords = ["libpcap", "Technology", "Glossary", "Tomas Korcak"]

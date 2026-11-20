@@ -3,7 +3,7 @@
 title = "Grunt"
 description = "An early JavaScript task runner configured by a Gruntfile: concatenation, minification, tests."
 template = "term.html"
-weight = 94
+weight = 118
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

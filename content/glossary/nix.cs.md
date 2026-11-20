@@ -3,7 +3,7 @@
 title = "Nix"
 description = "Jazyk a správce balíčků pro reprodukovatelnou, deklarativní konfiguraci systému."
 template = "term.html"
-weight = 24
+weight = 25
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -14,7 +14,7 @@ seo_title = "Nix (programovací jazyk)"
 term = "nix"
 kind = "language"
 definition = "Jazyk a správce balíčků pro reprodukovatelnou, deklarativní konfiguraci systému."
-aliases = []
+aliases = ["NixOS"]
 reference = { title = "nix.dev", url = "https://nix.dev/" }
 pages = ["work/el-magico-cache.cs.md", "work/server-nixos.cs.md"]
 related = ["commit", "open-source", "repository", "shell", "ansible", "cowboy", "dockerfile", "elixir"]

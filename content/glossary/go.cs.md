@@ -3,7 +3,7 @@
 title = "Go"
 description = "Kompilovaný jazyk od Googlu s gorutinami a kanály pro souběžnost, používaný pro síťové služby a nástroje příkazové řádky."
 template = "term.html"
-weight = 14
+weight = 15
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]

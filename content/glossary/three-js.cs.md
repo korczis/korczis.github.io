@@ -3,7 +3,7 @@
 title = "Three.js"
 description = "JavaScriptová 3D knihovna nad WebGL: scény, kamery, sítě, materiály a světla v prohlížeči."
 template = "term.html"
-weight = 163
+weight = 208
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

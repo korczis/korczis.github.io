@@ -3,7 +3,7 @@
 title = "Express"
 description = "A minimal web framework for Node.js: routes and middleware for HTTP servers and APIs."
 template = "term.html"
-weight = 78
+weight = 94
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "A minimal web framework for Node.js: routes and middleware for HTTP servers and APIs."
 aliases = ["Express.js"]
 reference = { title = "Express", url = "https://expressjs.com/" }
-pages = ["skills/change-monitoring.md", "work/annasabatova-cz.md", "work/apollocrawler-com.md", "work/craftsmen.md", "work/docker-conf2015.md", "work/gooddata-proxy.md", "work/lethe-it.md", "work/microscratch.md", "work/node-proxy-upload.md"]
-related = ["javascript", "commit", "nodejs", "open-source", "repository", "css", "ember-js", "bootstrap"]
+pages = ["work/annasabatova-cz.md", "work/apollocrawler-com.md", "work/craftsmen.md", "work/docker-conf2015.md", "work/gooddata-proxy.md", "work/lethe-it.md", "work/microscratch.md", "work/node-proxy-upload.md"]
+related = ["commit", "javascript", "nodejs", "open-source", "repository", "css", "ember-js", "socket-io"]
 og_title = "Express: glossary"
 og_image = "og/glossary-express.png"
 keywords = ["Express", "Technology", "Glossary", "Tomas Korcak"]

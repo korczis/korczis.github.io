@@ -3,7 +3,7 @@
 title = "etcd"
 description = "Distribuované, konzistentní úložiště klíč–hodnota (Raft) pro konfiguraci a vyhledávání služeb; Kubernetes v něm drží svůj stav."
 template = "term.html"
-weight = 76
+weight = 92
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

@@ -3,7 +3,7 @@
 title = "systemd"
 description = "Init systém a správce služeb většiny linuxových distribucí: jednotky, závislosti, časovače, logování (journald)."
 template = "term.html"
-weight = 158
+weight = 203
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

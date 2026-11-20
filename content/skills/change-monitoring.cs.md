@@ -13,7 +13,7 @@ skill = "change-monitoring"
 og_title = "Průběžný monitoring: dovednosti"
 og_image = "og/cs-skill-change-monitoring.png"
 schema = "skill"
-terms = ["skill", "change-detection", "bootstrap", "bower", "couchdb", "ember-js", "handlebars", "javascript", "clap", "css", "csv", "express"]
+terms = ["skill", "change-detection", "bootstrap", "bower", "couchdb", "ember-js", "handlebars", "javascript", "clap", "crossbeam", "css", "csv"]
 keywords = ["Průběžný monitoring", "Digitální vyšetřování a OSINT dossier", "Reputační zpravodajství a monitoring negativních zpráv", "Monitoring insolvencí, sporů a změn v rejstřících", "Hodnocení vnější útočné plochy a kybernetické expozice", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -31,7 +31,7 @@ Pojem, na kterém stojí: [Detekce změn](@/glossary/change-detection.cs.md).
 
 Služby, které z ní čerpají: [Digitální vyšetřování a OSINT dossier](@/services/digital-investigation.cs.md), [Reputační zpravodajství a monitoring negativních zpráv](@/services/reputation-intelligence.cs.md), [Monitoring insolvencí, sporů a změn v rejstřících](@/services/continuous-monitoring.cs.md) a [Hodnocení vnější útočné plochy a kybernetické expozice](@/services/attack-surface.cs.md).
 
-Praktikovaná s: [Bootstrap](@/glossary/bootstrap.cs.md), [Bower](@/glossary/bower.cs.md), [CouchDB](@/glossary/couchdb.cs.md), [Ember.js](@/glossary/ember-js.cs.md), [Handlebars](@/glossary/handlebars.cs.md), [JavaScript](@/glossary/javascript.cs.md), [clap](@/glossary/clap.cs.md) a [CSS](@/glossary/css.cs.md).
+Praktikovaná s: [Bootstrap](@/glossary/bootstrap.cs.md), [Bower](@/glossary/bower.cs.md), [CouchDB](@/glossary/couchdb.cs.md), [Ember.js](@/glossary/ember-js.cs.md), [Handlebars](@/glossary/handlebars.cs.md), [JavaScript](@/glossary/javascript.cs.md), [clap](@/glossary/clap.cs.md) a [Crossbeam](@/glossary/crossbeam.cs.md).
 
 Veřejná práce, jejíž vlastní slova ji dokládají: [streamflow](https://github.com/korczis/streamflow), [microscratch](https://github.com/korczis/microscratch) a [microcrawler-couchapp](https://github.com/korczis/microcrawler-couchapp).
 

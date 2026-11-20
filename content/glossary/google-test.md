@@ -3,7 +3,7 @@
 title = "Google Test"
 description = "Google's C++ testing framework: test cases, fixtures, assertions and mocks (with Google Mock)."
 template = "term.html"
-weight = 90
+weight = 113
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

@@ -3,7 +3,7 @@
 title = "pytest"
 description = "The Python test framework where a test is a plain function with a plain assert, extended by fixtures and plugins."
 template = "term.html"
-weight = 145
+weight = 181
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

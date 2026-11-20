@@ -3,7 +3,7 @@
 title = "Java"
 description = "An object-oriented language on the Java Virtual Machine, long the default of enterprise software."
 template = "term.html"
-weight = 17
+weight = 18
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]

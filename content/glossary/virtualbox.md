@@ -3,7 +3,7 @@
 title = "VirtualBox"
 description = "Oracle's open-source hypervisor for desktop machines: virtual machines for development and testing, often driven by Vagrant."
 template = "term.html"
-weight = 170
+weight = 217
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "Oracle's open-source hypervisor for desktop machines: virtual mach
 aliases = []
 reference = { title = "VirtualBox manual", url = "https://www.virtualbox.org/manual/" }
 pages = ["work/k8s-orbis-pictus.md", "work/server-archlinux.md"]
-related = ["ansible", "commit", "dockerfile", "open-source", "repository", "vagrant", "cockpit", "kubernetes"]
+related = ["ansible", "commit", "dockerfile", "open-source", "repository", "vagrant", "arch-linux", "cockpit"]
 og_title = "VirtualBox: glossary"
 og_image = "og/glossary-virtualbox.png"
 keywords = ["VirtualBox", "Technology", "Glossary", "Tomas Korcak"]

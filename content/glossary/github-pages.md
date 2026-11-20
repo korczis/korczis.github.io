@@ -3,7 +3,7 @@
 title = "GitHub Pages"
 description = "GitHub's hosting for static websites, deployed from a repository; this site and most project sites live there."
 template = "term.html"
-weight = 87
+weight = 110
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "GitHub's hosting for static websites, deployed from a repository; 
 aliases = ["github-pages"]
 reference = { title = "GitHub Pages documentation", url = "https://docs.github.com/en/pages" }
 pages = ["interfaces.md", "services/_index.md", "services/ai-engineering-governance.md", "services/digital-forensics.md", "skills/_index.md", "skills/audit-trail.md", "skills/compliance-mapping.md", "skills/interactive-visualisation.md", "skills/llm-agents.md", "skills/narrative-analysis.md", "skills/ownership-analysis.md", "skills/policy-as-code.md", "stack.md", "work/algoglyph.md", "work/apollon.md", "work/astronomists.md", "work/bubbler.md", "work/catharsis-as-a-service.md", "work/crisis-map.md", "work/csv2psql.md", "work/data-atlas.md", "work/gists-search.md", "work/kompendium-epistemicke-anihilace.md", "work/korczis-github-com.md", "work/korczis-github-io.md", "work/majordomus-reel.md", "work/maze-rs.md", "work/oscilla.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/prismatic-blog.md", "work/prismatic-majordomus.md", "work/sonic-playground.md", "work/u-tygra.md", "work/vomaste-cz.md"]
-related = ["html", "javascript", "shell", "commit", "flowbite-pro", "open-source", "repository", "tailwind-css"]
+related = ["html", "javascript", "commit", "flowbite-pro", "open-source", "repository", "shell", "tailwind-css"]
 og_title = "GitHub Pages: glossary"
 og_image = "og/glossary-github-pages.png"
 keywords = ["GitHub Pages", "Technology", "Glossary", "Tomas Korcak"]

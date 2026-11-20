@@ -3,7 +3,7 @@
 title = "Velké jazykové modely"
 description = "Velké jazykové modely: neuronové sítě trénované na textu, které generují, shrnují, klasifikují a vytěžují přirozený jazyk, používané přes prompty a nástroje."
 template = "term.html"
-weight = 113
+weight = 141
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -17,7 +17,7 @@ definition = "Velké jazykové modely: neuronové sítě trénované na textu, k
 aliases = ["LLM prompting", "large language model"]
 reference = { title = "Anthropic: Claude documentation", url = "https://docs.anthropic.com/" }
 pages = ["skills/media-forensics.cs.md", "work/comtesse.cs.md", "work/edna.cs.md", "work/past.cs.md"]
-related = ["commit", "open-source", "repository", "elixir", "postgresql", "ai-agent", "claude-api", "digital-forensics"]
+related = ["commit", "open-source", "repository", "elixir", "ai-agent", "claude-api", "claude-code", "digital-forensics"]
 og_title = "LLM: slovník"
 og_image = "og/cs-glossary-llm.png"
 keywords = ["Velké jazykové modely", "LLM", "Technologie", "Slovník", "Tomáš Korčák"]

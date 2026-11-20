@@ -3,7 +3,7 @@
 title = "Nokogiri"
 description = "Parser HTML a XML pro Ruby nad libxml2: dotazy CSS a XPath nad stromem dokumentu, základ většiny scraperů v Ruby."
 template = "term.html"
-weight = 124
+weight = 153
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

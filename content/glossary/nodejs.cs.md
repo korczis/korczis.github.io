@@ -3,7 +3,7 @@
 title = "Node.js"
 description = "Běhové prostředí JavaScriptu mimo prohlížeč, s registrem a instalátorem balíčků npm; píšou se v něm servery, crawlery i nástroje pro příkazovou řádku."
 template = "term.html"
-weight = 123
+weight = 152
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

@@ -3,7 +3,7 @@
 title = "KuzuDB"
 description = "An embedded graph database with Cypher queries and columnar storage, built for analytical queries over large graphs."
 template = "term.html"
-weight = 109
+weight = 137
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "An embedded graph database with Cypher queries and columnar storag
 aliases = []
 reference = { title = "Kuzu on GitHub", url = "https://github.com/kuzudb/kuzu" }
 pages = ["work/kuzu-ex.md", "work/prism.md"]
-related = ["commit", "elixir", "open-source", "repository", "credo", "dockerfile", "gis", "gitlab-ci"]
+related = ["commit", "elixir", "open-source", "repository", "axon", "credo", "cypher", "dockerfile"]
 og_title = "KuzuDB: glossary"
 og_image = "og/glossary-kuzudb.png"
 keywords = ["KuzuDB", "Technology", "Glossary", "Tomas Korcak"]

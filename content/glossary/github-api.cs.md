@@ -3,7 +3,7 @@
 title = "GitHub API"
 description = "REST a GraphQL API GitHubu pro repozitáře, issues, pull requesty, uživatele a události; tento web z nich čte svá data."
 template = "term.html"
-weight = 86
+weight = 109
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

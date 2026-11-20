@@ -902,11 +902,6 @@
           "n": 6
         },
         {
-          "id": "claude-api",
-          "name": "Claude API",
-          "n": 5
-        },
-        {
           "id": "cheerio",
           "name": "Cheerio",
           "n": 4
@@ -925,6 +920,11 @@
           "id": "github-actions",
           "name": "GitHub Actions",
           "n": 4
+        },
+        {
+          "id": "claude-api",
+          "name": "Claude API",
+          "n": 3
         },
         {
           "id": "css",
@@ -948,7 +948,7 @@
         {
           "id": "elixir",
           "name": "Elixir",
-          "n": 2,
+          "n": 1,
           "declared": true
         },
         {
@@ -1116,11 +1116,6 @@
           "n": 5
         },
         {
-          "id": "claude-api",
-          "name": "Claude API",
-          "n": 4
-        },
-        {
           "id": "python",
           "name": "Python",
           "n": 4
@@ -1128,6 +1123,16 @@
         {
           "id": "alpine-js",
           "name": "Alpine.js",
+          "n": 3
+        },
+        {
+          "id": "claude-api",
+          "name": "Claude API",
+          "n": 3
+        },
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
           "n": 3
         },
         {
@@ -1179,11 +1184,6 @@
           "id": "travis-ci",
           "name": "Travis CI",
           "n": 2
-        },
-        {
-          "id": "axe-core",
-          "name": "axe-core",
-          "n": 1
         }
       ]
     },
@@ -1210,13 +1210,13 @@
         {
           "id": "claude-api",
           "name": "Claude API",
-          "n": 3,
+          "n": 0,
           "declared": true
         },
         {
           "id": "phoenix",
           "name": "Phoenix",
-          "n": 2,
+          "n": 4,
           "declared": true
         }
       ],
@@ -1767,11 +1767,6 @@
           "n": 6
         },
         {
-          "id": "claude-api",
-          "name": "Claude API",
-          "n": 5
-        },
-        {
           "id": "flowbite-pro",
           "name": "Flowbite Pro",
           "n": 5
@@ -1784,6 +1779,11 @@
         {
           "id": "alpine-js",
           "name": "Alpine.js",
+          "n": 4
+        },
+        {
+          "id": "claude-api",
+          "name": "Claude API",
           "n": 4
         },
         {
@@ -1807,14 +1807,14 @@
           "n": 4
         },
         {
-          "id": "openai-api",
-          "name": "OpenAI API",
-          "n": 4
-        },
-        {
           "id": "python",
           "name": "Python",
           "n": 4
+        },
+        {
+          "id": "openai-api",
+          "name": "OpenAI API",
+          "n": 3
         },
         {
           "id": "playwright",
@@ -2166,7 +2166,7 @@
         {
           "id": "elixir",
           "name": "Elixir",
-          "n": 3,
+          "n": 2,
           "declared": true
         },
         {
@@ -2178,7 +2178,7 @@
         {
           "id": "claude-api",
           "name": "Claude API",
-          "n": 10,
+          "n": 7,
           "declared": true
         },
         {
@@ -2443,19 +2443,19 @@
           "n": 10
         },
         {
+          "id": "playwright",
+          "name": "Playwright",
+          "n": 9
+        },
+        {
           "id": "postgresql",
           "name": "PostgreSQL",
-          "n": 10
+          "n": 9
         },
         {
           "id": "dockerfile",
           "name": "Dockerfile",
-          "n": 9
-        },
-        {
-          "id": "playwright",
-          "name": "Playwright",
-          "n": 9
+          "n": 7
         },
         {
           "id": "github-actions",
@@ -2466,6 +2466,11 @@
           "id": "github-pages",
           "name": "GitHub Pages",
           "n": 6
+        },
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
+          "n": 5
         },
         {
           "id": "fastapi",
@@ -2481,11 +2486,6 @@
           "id": "kubernetes",
           "name": "Kubernetes",
           "n": 3
-        },
-        {
-          "id": "majordomus",
-          "name": "Majordomus",
-          "n": 3
         }
       ]
     },
@@ -2494,7 +2494,7 @@
         {
           "id": "rust",
           "name": "Rust",
-          "n": 3,
+          "n": 0,
           "declared": true
         },
         {
@@ -2506,7 +2506,7 @@
         {
           "id": "claude-api",
           "name": "Claude API",
-          "n": 9,
+          "n": 6,
           "declared": true
         },
         {
@@ -2800,14 +2800,19 @@
           "n": 8
         },
         {
-          "id": "dockerfile",
-          "name": "Dockerfile",
-          "n": 6
+          "id": "claude-code",
+          "name": "Claude Code",
+          "n": 5
         },
         {
           "id": "postgresql",
           "name": "PostgreSQL",
-          "n": 6
+          "n": 5
+        },
+        {
+          "id": "dockerfile",
+          "name": "Dockerfile",
+          "n": 4
         },
         {
           "id": "apache-echarts",
@@ -2815,13 +2820,8 @@
           "n": 3
         },
         {
-          "id": "nodejs",
-          "name": "Node.js",
-          "n": 3
-        },
-        {
-          "id": "p5-js",
-          "name": "p5.js",
+          "id": "cytoscape-js",
+          "name": "Cytoscape.js",
           "n": 3
         }
       ]
@@ -4211,11 +4211,6 @@
           "n": 3
         },
         {
-          "id": "claude-api",
-          "name": "Claude API",
-          "n": 2
-        },
-        {
           "id": "dockerfile",
           "name": "Dockerfile",
           "n": 2
@@ -4253,6 +4248,11 @@
         {
           "id": "leaflet",
           "name": "Leaflet",
+          "n": 2
+        },
+        {
+          "id": "phoenix",
+          "name": "Phoenix",
           "n": 2
         }
       ]
@@ -4853,13 +4853,13 @@
           "n": 1
         },
         {
-          "id": "couchbase",
-          "name": "Couchbase",
+          "id": "claude-code",
+          "name": "Claude Code",
           "n": 1
         },
         {
-          "id": "eex",
-          "name": "EEx and HEEx",
+          "id": "couchbase",
+          "name": "Couchbase",
           "n": 1
         }
       ]
@@ -5009,6 +5009,11 @@
           "n": 1
         },
         {
+          "id": "claude-code",
+          "name": "Claude Code",
+          "n": 1
+        },
+        {
           "id": "dockerfile",
           "name": "Dockerfile",
           "n": 1
@@ -5016,11 +5021,6 @@
         {
           "id": "ecto",
           "name": "Ecto",
-          "n": 1
-        },
-        {
-          "id": "elixir",
-          "name": "Elixir",
           "n": 1
         }
       ]
@@ -5086,6 +5086,11 @@
           "n": 1
         },
         {
+          "id": "arch-linux",
+          "name": "Arch Linux",
+          "n": 1
+        },
+        {
           "id": "claude-api",
           "name": "Claude API",
           "n": 1
@@ -5138,11 +5143,6 @@
         {
           "id": "playwright",
           "name": "Playwright",
-          "n": 1
-        },
-        {
-          "id": "postgresql",
-          "name": "PostgreSQL",
           "n": 1
         }
       ]
@@ -5258,11 +5258,6 @@
           "n": 5
         },
         {
-          "id": "claude-api",
-          "name": "Claude API",
-          "n": 4
-        },
-        {
           "id": "javascript",
           "name": "JavaScript",
           "n": 4
@@ -5270,6 +5265,11 @@
         {
           "id": "alpine-js",
           "name": "Alpine.js",
+          "n": 3
+        },
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
           "n": 3
         },
         {
@@ -5318,13 +5318,13 @@
           "n": 3
         },
         {
-          "id": "css",
-          "name": "CSS",
+          "id": "claude-api",
+          "name": "Claude API",
           "n": 2
         },
         {
-          "id": "dockerfile",
-          "name": "Dockerfile",
+          "id": "css",
+          "name": "CSS",
           "n": 2
         }
       ]
@@ -5492,11 +5492,6 @@
       ],
       "technologies": [
         {
-          "id": "claude-api",
-          "name": "Claude API",
-          "n": 2
-        },
-        {
           "id": "github-actions",
           "name": "GitHub Actions",
           "n": 2
@@ -5519,6 +5514,16 @@
         {
           "id": "alpine-js",
           "name": "Alpine.js",
+          "n": 1
+        },
+        {
+          "id": "claude-api",
+          "name": "Claude API",
+          "n": 1
+        },
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
           "n": 1
         },
         {
@@ -5564,11 +5569,6 @@
         {
           "id": "mermaid",
           "name": "Mermaid",
-          "n": 1
-        },
-        {
-          "id": "openai-api",
-          "name": "OpenAI API",
           "n": 1
         }
       ]
@@ -5866,6 +5866,11 @@
           "n": 1
         },
         {
+          "id": "claude-code",
+          "name": "Claude Code",
+          "n": 1
+        },
+        {
           "id": "dockerfile",
           "name": "Dockerfile",
           "n": 1
@@ -5926,6 +5931,11 @@
           "n": 1
         },
         {
+          "id": "streamdata",
+          "name": "StreamData",
+          "n": 1
+        },
+        {
           "id": "travis-ci",
           "name": "Travis CI",
           "n": 1
@@ -5962,6 +5972,11 @@
         {
           "id": "dockerfile",
           "name": "Dockerfile",
+          "n": 1
+        },
+        {
+          "id": "flow",
+          "name": "Flow",
           "n": 1
         },
         {
@@ -6047,8 +6062,8 @@
       "engagements": [],
       "technologies": [
         {
-          "id": "claude-api",
-          "name": "Claude API",
+          "id": "claude-code",
+          "name": "Claude Code",
           "n": 1
         },
         {
@@ -6173,6 +6188,11 @@
           "n": 1
         },
         {
+          "id": "crossbeam",
+          "name": "Crossbeam",
+          "n": 1
+        },
+        {
           "id": "css",
           "name": "CSS",
           "n": 1
@@ -6210,11 +6230,6 @@
         {
           "id": "opencl",
           "name": "OpenCL",
-          "n": 1
-        },
-        {
-          "id": "rust",
-          "name": "Rust",
           "n": 1
         }
       ]
@@ -6682,6 +6697,11 @@
           "n": 3
         },
         {
+          "id": "cytoscape-js",
+          "name": "Cytoscape.js",
+          "n": 3
+        },
+        {
           "id": "majordomus",
           "name": "Majordomus",
           "n": 3
@@ -6694,11 +6714,6 @@
         {
           "id": "p5-js",
           "name": "p5.js",
-          "n": 3
-        },
-        {
-          "id": "rust",
-          "name": "Rust",
           "n": 3
         }
       ]
@@ -6956,6 +6971,11 @@
           "n": 2
         },
         {
+          "id": "openstreetmap",
+          "name": "OpenStreetMap",
+          "n": 2
+        },
+        {
           "id": "postgresql",
           "name": "PostgreSQL",
           "n": 2
@@ -6998,11 +7018,6 @@
         {
           "id": "eex",
           "name": "EEx and HEEx",
-          "n": 1
-        },
-        {
-          "id": "elasticsearch",
-          "name": "Elasticsearch",
           "n": 1
         }
       ]

@@ -3,7 +3,7 @@
 title = "Express"
 description = "Minimalistický webový framework pro Node.js: routy a middleware pro HTTP servery a API."
 template = "term.html"
-weight = 78
+weight = 94
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Minimalistický webový framework pro Node.js: routy a middleware pro HTTP servery a API."
 aliases = ["Express.js"]
 reference = { title = "Express", url = "https://expressjs.com/" }
-pages = ["skills/change-monitoring.cs.md", "work/annasabatova-cz.cs.md", "work/apollocrawler-com.cs.md", "work/craftsmen.cs.md", "work/docker-conf2015.cs.md", "work/gooddata-proxy.cs.md", "work/lethe-it.cs.md", "work/microscratch.cs.md", "work/node-proxy-upload.cs.md"]
-related = ["javascript", "commit", "nodejs", "open-source", "repository", "css", "ember-js", "bootstrap"]
+pages = ["work/annasabatova-cz.cs.md", "work/apollocrawler-com.cs.md", "work/craftsmen.cs.md", "work/docker-conf2015.cs.md", "work/gooddata-proxy.cs.md", "work/lethe-it.cs.md", "work/microscratch.cs.md", "work/node-proxy-upload.cs.md"]
+related = ["commit", "javascript", "nodejs", "open-source", "repository", "css", "ember-js", "socket-io"]
 og_title = "Express: slovník"
 og_image = "og/cs-glossary-express.png"
 keywords = ["Express", "Technologie", "Slovník", "Tomáš Korčák"]

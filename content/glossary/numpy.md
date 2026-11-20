@@ -3,7 +3,7 @@
 title = "NumPy"
 description = "The array library under scientific Python: n-dimensional arrays and vectorised maths that run as compiled code."
 template = "term.html"
-weight = 126
+weight = 155
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

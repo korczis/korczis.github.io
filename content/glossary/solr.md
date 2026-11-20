@@ -3,7 +3,7 @@
 title = "Solr"
 description = "Apache's search server on top of Lucene: full-text search, faceting and indexing behind an HTTP API."
 template = "term.html"
-weight = 154
+weight = 198
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

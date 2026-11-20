@@ -3,7 +3,7 @@
 title = "Objective-C"
 description = "Jazyk C rozšířený o objekty a zprávy ve stylu Smalltalku; jazyk platforem Apple před příchodem Swiftu."
 template = "term.html"
-weight = 25
+weight = 26
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]

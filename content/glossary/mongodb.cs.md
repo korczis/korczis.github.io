@@ -3,7 +3,7 @@
 title = "MongoDB"
 description = "Dokumentová databáze, která ukládá záznamy jako dokumenty podobné JSON bez pevného schématu."
 template = "term.html"
-weight = 121
+weight = 150
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

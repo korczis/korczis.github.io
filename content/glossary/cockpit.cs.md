@@ -3,7 +3,7 @@
 title = "Cockpit"
 description = "Webová konzole pro linuxové servery: služby, logy, úložiště, síť a kontejnery spravované z prohlížeče."
 template = "term.html"
-weight = 60
+weight = 66
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -17,7 +17,7 @@ definition = "Webová konzole pro linuxové servery: služby, logy, úložiště
 aliases = []
 reference = { title = "Cockpit project", url = "https://cockpit-project.org/" }
 pages = ["skills/ai-transformation.cs.md", "work/server-archlinux.cs.md", "work/server-atomic.cs.md"]
-related = ["ansible", "dockerfile", "shell", "commit", "open-source", "repository", "ai-agent", "alpine-js"]
+related = ["ansible", "dockerfile", "shell", "arch-linux", "commit", "open-source", "repository", "ai-agent"]
 og_title = "Cockpit: slovník"
 og_image = "og/cs-glossary-cockpit.png"
 keywords = ["Cockpit", "Technologie", "Slovník", "Tomáš Korčák"]

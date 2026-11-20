@@ -3,7 +3,7 @@
 title = "HTML5 Boilerplate"
 description = "A front-end starter template: a tested baseline of HTML, CSS defaults and server configuration for a new site."
 template = "term.html"
-weight = 99
+weight = 124
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

@@ -3,7 +3,7 @@
 title = "PL/pgSQL"
 description = "Procedurální jazyk PostgreSQL: funkce a triggery, které uvnitř databáze spouštějí SQL s proměnnými, cykly a podmínkami."
 template = "term.html"
-weight = 28
+weight = 29
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]

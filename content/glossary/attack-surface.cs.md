@@ -3,7 +3,7 @@
 title = "Útočná plocha"
 description = "Vše z organizace, na co útočník dosáhne z internetu: domény, servery, služby, certifikáty a uniklé přihlašovací údaje."
 template = "term.html"
-weight = 180
+weight = 232
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

@@ -14,7 +14,7 @@ icon = "search"
 og_title = "Digital investigation and OSINT dossiers"
 og_image = "og/service-digital-investigation.png"
 schema = "service"
-terms = ["service", "elixir", "broadway", "playwright", "postgresql", "meilisearch", "cytoscape-js", "osint", "public-registry", "record-linkage", "beneficial-ownership", "attack-surface", "digital-forensics", "knowledge-graph", "web-scraping", "change-detection", "javascript", "html", "nodejs", "python", "flowbite-pro", "dockerfile", "shell", "tailwind-css", "claude-api", "cheerio"]
+terms = ["service", "elixir", "broadway", "playwright", "postgresql", "meilisearch", "cytoscape-js", "osint", "public-registry", "record-linkage", "beneficial-ownership", "attack-surface", "digital-forensics", "knowledge-graph", "web-scraping", "change-detection", "javascript", "html", "nodejs", "python", "flowbite-pro", "dockerfile", "shell", "tailwind-css", "cheerio", "ecto"]
 keywords = ["Digital investigation and OSINT dossiers", "OSINT investigation", "Registry intelligence", "Entity resolution", "Ownership and link analysis", "Infrastructure OSINT", "Web and media forensics", "Knowledge graph", "Web automation and crawling", "Continuous monitoring", "Tomas Korcak"]
 
 [[extra.viz]]

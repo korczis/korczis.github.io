@@ -3,7 +3,7 @@
 title = "Change detection"
 description = "Noticing when a source changes and judging whether the change matters, so an alert means something."
 template = "term.html"
-weight = 185
+weight = 237
 
 [taxonomies]
 tags = ["Glossary", "Concept"]

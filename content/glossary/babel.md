@@ -3,7 +3,7 @@
 title = "Babel"
 description = "A JavaScript compiler that rewrites modern syntax into code older browsers and runtimes understand."
 template = "term.html"
-weight = 50
+weight = 53
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

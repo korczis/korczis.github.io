@@ -3,7 +3,7 @@
 title = "Node.js"
 description = "The JavaScript runtime outside the browser, with npm, its package registry and installer; servers, crawlers and command-line tools are written in it."
 template = "term.html"
-weight = 123
+weight = 152
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

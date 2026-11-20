@@ -3,7 +3,7 @@
 title = "RocksDB"
 description = "An embedded key-value store on a log-structured merge tree, tuned for fast storage and heavy write loads."
 template = "term.html"
-weight = 149
+weight = 189
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "An embedded key-value store on a log-structured merge tree, tuned 
 aliases = []
 reference = { title = "RocksDB wiki", url = "https://github.com/facebook/rocksdb/wiki" }
 pages = ["skills/chain-of-custody.md", "work/bcnode-old.md", "work/rocksdb-indexer.md"]
-related = ["rust", "babel", "commit", "dockerfile", "grpc", "javascript", "jest", "libp2p"]
+related = ["babel", "commit", "dockerfile", "flow", "grpc", "javascript", "jest", "libp2p"]
 og_title = "RocksDB: glossary"
 og_image = "og/glossary-rocksdb.png"
 keywords = ["RocksDB", "Technology", "Glossary", "Tomas Korcak"]

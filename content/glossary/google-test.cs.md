@@ -3,7 +3,7 @@
 title = "Google Test"
 description = "Testovací framework Googlu pro C++: testovací případy, fixtury, aserce a mocky (s Google Mock)."
 template = "term.html"
-weight = 90
+weight = 113
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

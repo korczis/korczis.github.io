@@ -3,7 +3,7 @@
 title = "Cytoscape.js"
 description = "A library for drawing and analysing graphs (networks of nodes and edges) in the browser."
 template = "term.html"
-weight = 68
+weight = 76
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -14,10 +14,10 @@ seo_title = "Cytoscape.js (technology)"
 term = "cytoscape-js"
 kind = "technology"
 definition = "A library for drawing and analysing graphs (networks of nodes and edges) in the browser."
-aliases = []
+aliases = ["Cytoscape"]
 reference = { title = "js.cytoscape.org", url = "https://js.cytoscape.org/" }
-pages = ["projects/knowledge.md", "services/digital-investigation.md", "stack.md", "work/kompendium-epistemicke-anihilace.md"]
-related = ["flowbite-pro", "alpine-js", "apache-echarts", "elixir", "tailwind-css", "zola", "github-pages", "html"]
+pages = ["projects/knowledge.md", "services/digital-investigation.md", "stack.md", "work/kompendium-epistemicke-anihilace.md", "work/majordomus-reel.md"]
+related = ["flowbite-pro", "apache-echarts", "tailwind-css", "alpine-js", "elixir", "github-pages", "html", "javascript"]
 og_title = "Cytoscape.js: glossary"
 og_image = "og/glossary-cytoscape-js.png"
 keywords = ["Cytoscape.js", "Technology", "Glossary", "Tomas Korcak"]
@@ -40,12 +40,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
-Cytoscape.js is part of 1 of my public repositories, from 2026 to 2026.
+Cytoscape.js is part of 3 of my public repositories, from 2024 to 2026.
 
-What it was for: [Knowledge](@/projects/knowledge.md) (1).
+What it was for: [Knowledge](@/projects/knowledge.md) (1), [Media and art](@/projects/media.md) (1) and [Web](@/projects/web.md) (1).
 
-Most recently: [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore.
+Most recently: [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus; [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore; [Majordomus reel](@/work/majordomus-reel.md): Voice, frames, music and sound, all generated and versioned like software.
 
-1 of these projects runs as a live site.
+2 of these projects run as live sites.
 
 How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses Cytoscape.js: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links Cytoscape.js to the repositories and to the other languages and technologies they use together.

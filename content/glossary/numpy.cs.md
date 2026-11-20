@@ -3,7 +3,7 @@
 title = "NumPy"
 description = "Knihovna polí pod vědeckým Pythonem: n-rozměrná pole a vektorizovaná matematika, která běží jako kompilovaný kód."
 template = "term.html"
-weight = 126
+weight = 155
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

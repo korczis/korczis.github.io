@@ -3,7 +3,7 @@
 title = "OpenGL"
 description = "Multiplatformní grafické API pro 2D a 3D vykreslování na GPU, se shadery psanými v GLSL."
 template = "term.html"
-weight = 132
+weight = 164
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

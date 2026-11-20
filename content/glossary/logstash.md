@@ -3,7 +3,7 @@
 title = "Logstash"
 description = "The ingestion pipeline of the Elastic stack: it reads logs and events, parses and enriches them, and ships them to Elasticsearch or elsewhere."
 template = "term.html"
-weight = 114
+weight = 142
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

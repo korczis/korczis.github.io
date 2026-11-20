@@ -3,7 +3,7 @@
 title = "R (programming language)"
 description = "A language and environment for statistics and data analysis, with plotting and a large library of statistical methods."
 template = "term.html"
-weight = 31
+weight = 32
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]

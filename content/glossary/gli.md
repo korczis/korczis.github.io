@@ -3,7 +3,7 @@
 title = "GLI"
 description = "A Ruby library for building git-like command-line applications with commands, flags and help."
 template = "term.html"
-weight = 89
+weight = 112
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

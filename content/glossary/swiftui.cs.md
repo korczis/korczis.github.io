@@ -3,7 +3,7 @@
 title = "SwiftUI"
 description = "Deklarativní framework Applu pro uživatelské rozhraní ve Swiftu: pohled je funkcí stavu a framework překreslí, co se změnilo."
 template = "term.html"
-weight = 157
+weight = 202
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

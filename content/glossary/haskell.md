@@ -3,7 +3,7 @@
 title = "Haskell"
 description = "A purely functional language with lazy evaluation and a strong type system; a place to learn to think in types."
 template = "term.html"
-weight = 15
+weight = 16
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]

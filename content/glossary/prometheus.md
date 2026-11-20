@@ -3,7 +3,7 @@
 title = "Prometheus"
 description = "A monitoring system and time-series database: it scrapes metrics over HTTP, stores them and evaluates queries and alerts in PromQL."
 template = "term.html"
-weight = 142
+weight = 177
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

@@ -3,7 +3,7 @@
 title = "Xcode"
 description = "Apple's development environment for building, testing and shipping apps for its platforms."
 template = "term.html"
-weight = 175
+weight = 226
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "Apple's development environment for building, testing and shipping
 aliases = []
 reference = { title = "Xcode documentation", url = "https://developer.apple.com/documentation/xcode" }
 pages = ["work/bc-apple.md", "work/minervaeye.md", "work/readingphonenumbersinrealtime.md"]
-related = ["commit", "open-source", "repository", "swift", "uikit", "apple-vision", "avfoundation", "shell"]
+related = ["commit", "open-source", "repository", "swift", "uikit", "apple-vision", "avfoundation", "core-data"]
 og_title = "Xcode: glossary"
 og_image = "og/glossary-xcode.png"
 keywords = ["Xcode", "Technology", "Glossary", "Tomas Korcak"]

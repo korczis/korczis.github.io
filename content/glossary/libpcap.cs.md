@@ -3,7 +3,7 @@
 title = "libpcap"
 description = "Knihovna v C pro zachytávání paketů, na které stojí tcpdump a Wireshark: čte surový síťový provoz a filtruje ho výrazy BPF."
 template = "term.html"
-weight = 112
+weight = 140
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -17,7 +17,7 @@ definition = "Knihovna v C pro zachytávání paketů, na které stojí tcpdump 
 aliases = []
 reference = { title = "tcpdump and libpcap", url = "https://www.tcpdump.org/" }
 pages = ["work/charon.cs.md", "work/peacemaker.cs.md"]
-related = ["commit", "open-source", "repository", "travis-ci", "audit-trail", "c", "clap", "cmake"]
+related = ["commit", "open-source", "repository", "travis-ci", "audit-trail", "boost", "c", "clap"]
 og_title = "libpcap: slovník"
 og_image = "og/cs-glossary-libpcap.png"
 keywords = ["libpcap", "Technologie", "Slovník", "Tomáš Korčák"]

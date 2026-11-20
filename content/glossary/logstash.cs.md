@@ -3,7 +3,7 @@
 title = "Logstash"
 description = "Ingestní pipeline stacku Elastic: čte logy a události, parsuje je a obohacuje a posílá je do Elasticsearch nebo jinam."
 template = "term.html"
-weight = 114
+weight = 142
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

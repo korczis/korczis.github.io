@@ -3,7 +3,7 @@
 title = "Prolog"
 description = "A logic programming language: a program is a set of facts and rules, and running it means asking a question the system proves by search and unification."
 template = "term.html"
-weight = 29
+weight = 30
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]

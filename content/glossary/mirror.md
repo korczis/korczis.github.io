@@ -3,7 +3,7 @@
 title = "Mirror"
 description = "A repository that copies another project's code; here a repository counts as original only when the owner wrote at least half of its commits."
 template = "term.html"
-weight = 205
+weight = 257
 
 [taxonomies]
 tags = ["Glossary", "Concept"]

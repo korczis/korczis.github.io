@@ -13,7 +13,7 @@ skill = "orchestration"
 og_title = "Orchestration: skills"
 og_image = "og/skill-orchestration.png"
 schema = "skill"
-terms = ["skill", "orchestration", "claude-api", "github-actions", "html", "javascript", "shell", "alpine-js", "dockerfile", "fastapi", "flowbite-pro", "git"]
+terms = ["skill", "orchestration", "github-actions", "html", "javascript", "shell", "alpine-js", "claude-api", "claude-code", "dockerfile", "fastapi", "flowbite-pro"]
 keywords = ["Orchestration", "Insolvency, litigation and register change monitoring", "Decision support and AI agents for analysts", "Governed AI-assisted software delivery", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -31,7 +31,7 @@ The concept behind it: [Orchestration](@/glossary/orchestration.md).
 
 Services that draw on it: [Insolvency, litigation and register change monitoring](@/services/continuous-monitoring.md), [Decision support and AI agents for analysts](@/services/decision-support-ai.md) and [Governed AI-assisted software delivery](@/services/ai-engineering-governance.md).
 
-Practised with: [Claude API](@/glossary/claude-api.md), [GitHub Actions](@/glossary/github-actions.md), [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md), [Shell](@/glossary/shell.md), [Alpine.js](@/glossary/alpine-js.md), [Dockerfile](@/glossary/dockerfile.md) and [FastAPI](@/glossary/fastapi.md).
+Practised with: [GitHub Actions](@/glossary/github-actions.md), [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md), [Shell](@/glossary/shell.md), [Alpine.js](@/glossary/alpine-js.md), [Claude API](@/glossary/claude-api.md), [Claude Code](@/glossary/claude-code.md) and [Dockerfile](@/glossary/dockerfile.md).
 
 Public work whose own words show it: [prismatic-majordomus](https://github.com/korczis/prismatic-majordomus).
 

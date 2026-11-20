@@ -3,7 +3,7 @@
 title = "Grafana"
 description = "An observability dashboard over metrics, logs and traces from many data sources."
 template = "term.html"
-weight = 91
+weight = 114
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

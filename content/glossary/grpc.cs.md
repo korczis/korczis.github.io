@@ -3,7 +3,7 @@
 title = "gRPC"
 description = "Framework pro vzdálené volání procedur přes HTTP/2 s kontrakty v Protocol Buffers, streamováním a generovanými klienty v mnoha jazycích."
 template = "term.html"
-weight = 93
+weight = 117
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -17,7 +17,7 @@ definition = "Framework pro vzdálené volání procedur přes HTTP/2 s kontrakt
 aliases = []
 reference = { title = "gRPC documentation", url = "https://grpc.io/docs/" }
 pages = ["skills/chain-of-custody.cs.md", "work/astudo.cs.md", "work/bcnode-old.cs.md"]
-related = ["dockerfile", "javascript", "protobuf", "rust", "babel", "commit", "jest", "libp2p"]
+related = ["dockerfile", "javascript", "protobuf", "babel", "commit", "flow", "jest", "libp2p"]
 og_title = "gRPC: slovník"
 og_image = "og/cs-glossary-grpc.png"
 keywords = ["gRPC", "Technologie", "Slovník", "Tomáš Korčák"]

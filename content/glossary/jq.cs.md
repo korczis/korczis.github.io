@@ -3,7 +3,7 @@
 title = "jq"
 description = "Procesor pro příkazovou řádku, který filtruje a transformuje JSON malým funkcionálním jazykem."
 template = "term.html"
-weight = 103
+weight = 130
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -17,7 +17,7 @@ definition = "Procesor pro příkazovou řádku, který filtruje a transformuje 
 aliases = []
 reference = { title = "jq manual", url = "https://jqlang.github.io/jq/manual/" }
 pages = ["skills/narrative-analysis.cs.md", "work/apollo-box.cs.md", "work/docker-datasciencetoolbox.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md"]
-related = ["python", "commit", "open-source", "repository", "shell", "github-actions", "github-pages", "go"]
+related = ["python", "commit", "open-source", "repository", "shell", "claude-code", "github-actions", "github-pages"]
 og_title = "jq: slovník"
 og_image = "og/cs-glossary-jq.png"
 keywords = ["jq", "Technologie", "Slovník", "Tomáš Korčák"]

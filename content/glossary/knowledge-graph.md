@@ -3,7 +3,7 @@
 title = "Knowledge graph"
 description = "Knowledge stored as entities and the relations between them, so a question can follow links (who owns what, who sits where) instead of joining tables."
 template = "term.html"
-weight = 202
+weight = 254
 
 [taxonomies]
 tags = ["Glossary", "Concept"]

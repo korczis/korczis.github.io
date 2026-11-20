@@ -3,7 +3,7 @@
 title = "Nix"
 description = "A language and package manager for reproducible, declarative system configuration."
 template = "term.html"
-weight = 24
+weight = 25
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -14,7 +14,7 @@ seo_title = "Nix (programming language)"
 term = "nix"
 kind = "language"
 definition = "A language and package manager for reproducible, declarative system configuration."
-aliases = []
+aliases = ["NixOS"]
 reference = { title = "nix.dev", url = "https://nix.dev/" }
 pages = ["work/el-magico-cache.md", "work/server-nixos.md"]
 related = ["commit", "open-source", "repository", "shell", "ansible", "cowboy", "dockerfile", "elixir"]

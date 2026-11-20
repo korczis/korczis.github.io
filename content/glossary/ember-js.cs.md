@@ -3,7 +3,7 @@
 title = "Ember.js"
 description = "Framework JavaScriptu pro rozsáhlé jednostránkové aplikace s konvencemi pro routování, data a šablony."
 template = "term.html"
-weight = 72
+weight = 87
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -14,10 +14,10 @@ seo_title = "Ember.js (technologie)"
 term = "ember-js"
 kind = "technology"
 definition = "Framework JavaScriptu pro rozsáhlé jednostránkové aplikace s konvencemi pro routování, data a šablony."
-aliases = ["Ember"]
+aliases = ["Ember", "Ember Data"]
 reference = { title = "Ember.js Guides", url = "https://guides.emberjs.com/" }
 pages = ["skills/change-monitoring.cs.md", "work/apollocrawler-com.cs.md", "work/craftsmen.cs.md", "work/lethe-it.cs.md", "work/microcrawler-couchapp.cs.md", "work/microscratch.cs.md"]
-related = ["css", "javascript", "bootstrap", "commit", "express", "handlebars", "open-source", "repository"]
+related = ["css", "javascript", "bootstrap", "commit", "handlebars", "open-source", "repository", "express"]
 og_title = "Ember.js: slovník"
 og_image = "og/cs-glossary-ember-js.png"
 keywords = ["Ember.js", "Technologie", "Slovník", "Tomáš Korčák"]

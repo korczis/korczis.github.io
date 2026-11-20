@@ -3,7 +3,7 @@
 title = "Vagrant"
 description = "A tool that builds reproducible development virtual machines from a Vagrantfile."
 template = "term.html"
-weight = 169
+weight = 216
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "A tool that builds reproducible development virtual machines from 
 aliases = []
 reference = { title = "Vagrant documentation", url = "https://developer.hashicorp.com/vagrant/docs" }
 pages = ["work/apollo-box.md", "work/k8s-orbis-pictus.md", "work/server-archlinux.md"]
-related = ["commit", "open-source", "repository", "ansible", "dockerfile", "shell", "virtualbox", "cockpit"]
+related = ["commit", "open-source", "repository", "ansible", "dockerfile", "shell", "virtualbox", "arch-linux"]
 og_title = "Vagrant: glossary"
 og_image = "og/glossary-vagrant.png"
 keywords = ["Vagrant", "Technology", "Glossary", "Tomas Korcak"]

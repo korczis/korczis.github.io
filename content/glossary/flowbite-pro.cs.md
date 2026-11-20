@@ -3,7 +3,7 @@
 title = "Flowbite Pro"
 description = "Licencovaná knihovna bloků rozhraní a aplikační shell nad Tailwind CSS; je z ní postavená každá stránka tohoto webu."
 template = "term.html"
-weight = 82
+weight = 102
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

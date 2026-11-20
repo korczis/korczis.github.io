@@ -3,7 +3,7 @@
 title = "ESLint"
 description = "A configurable linter that finds problems and enforces style in JavaScript and TypeScript code."
 template = "term.html"
-weight = 75
+weight = 91
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

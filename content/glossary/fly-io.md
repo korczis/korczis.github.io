@@ -3,7 +3,7 @@
 title = "Fly.io"
 description = "A platform that runs applications as micro-VMs close to their users, deployed from a Dockerfile."
 template = "term.html"
-weight = 83
+weight = 104
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

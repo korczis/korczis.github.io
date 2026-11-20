@@ -3,7 +3,7 @@
 title = "Broadway"
 description = "Knihovna Elixiru pro souběžné vícestupňové datové pipeline s back-pressure, dávkováním a řízeným selháním."
 template = "term.html"
-weight = 53
+weight = 57
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -17,7 +17,7 @@ definition = "Knihovna Elixiru pro souběžné vícestupňové datové pipeline 
 aliases = []
 reference = { title = "Broadway on HexDocs", url = "https://hexdocs.pm/broadway/" }
 pages = ["services/continuous-monitoring.cs.md", "services/digital-investigation.cs.md", "services/reputation-intelligence.cs.md", "work/prismatic.cs.md"]
-related = ["elixir", "html", "javascript", "postgresql", "change-detection", "claude-api", "dockerfile", "flowbite-pro"]
+related = ["elixir", "html", "javascript", "postgresql", "change-detection", "dockerfile", "flowbite-pro", "phoenix"]
 og_title = "Broadway: slovník"
 og_image = "og/cs-glossary-broadway.png"
 keywords = ["Broadway", "Technologie", "Slovník", "Tomáš Korčák"]

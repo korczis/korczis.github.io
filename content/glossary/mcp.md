@@ -3,7 +3,7 @@
 title = "MCP"
 description = "The Model Context Protocol: an open protocol through which AI applications reach tools and data."
 template = "term.html"
-weight = 117
+weight = 145
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

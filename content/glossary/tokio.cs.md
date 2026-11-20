@@ -3,7 +3,7 @@
 title = "Tokio"
 description = "Asynchronní runtime pro Rust: smyčka událostí, úlohy, časovače a neblokující I/O pro síťové služby."
 template = "term.html"
-weight = 164
+weight = 209
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -17,7 +17,7 @@ definition = "Asynchronní runtime pro Rust: smyčka událostí, úlohy, časova
 aliases = ["tokio"]
 reference = { title = "Tokio tutorial", url = "https://tokio.rs/tokio/tutorial" }
 pages = ["work/astudo.cs.md", "work/streamflow.cs.md"]
-related = ["commit", "open-source", "repository", "rust", "clap", "css", "csv", "dockerfile"]
+related = ["commit", "open-source", "repository", "rust", "clap", "crossbeam", "css", "csv"]
 og_title = "Tokio: slovník"
 og_image = "og/cs-glossary-tokio.png"
 keywords = ["Tokio", "Technologie", "Slovník", "Tomáš Korčák"]

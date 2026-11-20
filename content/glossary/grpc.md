@@ -3,7 +3,7 @@
 title = "gRPC"
 description = "A remote procedure call framework over HTTP/2 with Protocol Buffers contracts, streaming and generated clients in many languages."
 template = "term.html"
-weight = 93
+weight = 117
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "A remote procedure call framework over HTTP/2 with Protocol Buffer
 aliases = []
 reference = { title = "gRPC documentation", url = "https://grpc.io/docs/" }
 pages = ["skills/chain-of-custody.md", "work/astudo.md", "work/bcnode-old.md"]
-related = ["dockerfile", "javascript", "protobuf", "rust", "babel", "commit", "jest", "libp2p"]
+related = ["dockerfile", "javascript", "protobuf", "babel", "commit", "flow", "jest", "libp2p"]
 og_title = "gRPC: glossary"
 og_image = "og/glossary-grpc.png"
 keywords = ["gRPC", "Technology", "Glossary", "Tomas Korcak"]

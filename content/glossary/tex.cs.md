@@ -3,7 +3,7 @@
 title = "TeX"
 description = "Sázecí jazyk pro dokumenty a matematiku; LaTeX je balík maker, ve kterém je napsaná většina dokumentů."
 template = "term.html"
-weight = 39
+weight = 40
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -17,7 +17,7 @@ definition = "Sázecí jazyk pro dokumenty a matematiku; LaTeX je balík maker, 
 aliases = ["LaTeX"]
 reference = { title = "LaTeX project", url = "https://www.latex-project.org/about/" }
 pages = ["projects/tools.cs.md", "work/corvidae.cs.md"]
-related = ["elixir", "open-source", "repository", "shell", "commit", "cpp", "csharp", "javascript"]
+related = ["elixir", "open-source", "repository", "shell", "commit", "cpp", "csharp", "geojson"]
 og_title = "TeX: slovník"
 og_image = "og/cs-glossary-tex.png"
 keywords = ["TeX", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

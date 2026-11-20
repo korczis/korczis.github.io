@@ -3,7 +3,7 @@
 title = "KuzuDB"
 description = "Vestavěná grafová databáze s dotazy v Cypheru a sloupcovým úložištěm, stavěná pro analytické dotazy nad velkými grafy."
 template = "term.html"
-weight = 109
+weight = 137
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -17,7 +17,7 @@ definition = "Vestavěná grafová databáze s dotazy v Cypheru a sloupcovým ú
 aliases = []
 reference = { title = "Kuzu on GitHub", url = "https://github.com/kuzudb/kuzu" }
 pages = ["work/kuzu-ex.cs.md", "work/prism.cs.md"]
-related = ["commit", "elixir", "open-source", "repository", "credo", "dockerfile", "gis", "gitlab-ci"]
+related = ["commit", "elixir", "open-source", "repository", "axon", "credo", "cypher", "dockerfile"]
 og_title = "KuzuDB: slovník"
 og_image = "og/cs-glossary-kuzudb.png"
 keywords = ["KuzuDB", "Technologie", "Slovník", "Tomáš Korčák"]

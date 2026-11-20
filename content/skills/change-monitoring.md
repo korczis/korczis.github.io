@@ -13,7 +13,7 @@ skill = "change-monitoring"
 og_title = "Continuous monitoring: skills"
 og_image = "og/skill-change-monitoring.png"
 schema = "skill"
-terms = ["skill", "change-detection", "bootstrap", "bower", "couchdb", "ember-js", "handlebars", "javascript", "clap", "css", "csv", "express"]
+terms = ["skill", "change-detection", "bootstrap", "bower", "couchdb", "ember-js", "handlebars", "javascript", "clap", "crossbeam", "css", "csv"]
 keywords = ["Continuous monitoring", "Digital investigation and OSINT dossiers", "Reputation intelligence and adverse-media monitoring", "Insolvency, litigation and register change monitoring", "External attack surface and cyber-exposure assessment", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -31,7 +31,7 @@ The concept behind it: [Change detection](@/glossary/change-detection.md).
 
 Services that draw on it: [Digital investigation and OSINT dossiers](@/services/digital-investigation.md), [Reputation intelligence and adverse-media monitoring](@/services/reputation-intelligence.md), [Insolvency, litigation and register change monitoring](@/services/continuous-monitoring.md) and [External attack surface and cyber-exposure assessment](@/services/attack-surface.md).
 
-Practised with: [Bootstrap](@/glossary/bootstrap.md), [Bower](@/glossary/bower.md), [CouchDB](@/glossary/couchdb.md), [Ember.js](@/glossary/ember-js.md), [Handlebars](@/glossary/handlebars.md), [JavaScript](@/glossary/javascript.md), [clap](@/glossary/clap.md) and [CSS](@/glossary/css.md).
+Practised with: [Bootstrap](@/glossary/bootstrap.md), [Bower](@/glossary/bower.md), [CouchDB](@/glossary/couchdb.md), [Ember.js](@/glossary/ember-js.md), [Handlebars](@/glossary/handlebars.md), [JavaScript](@/glossary/javascript.md), [clap](@/glossary/clap.md) and [Crossbeam](@/glossary/crossbeam.md).
 
 Public work whose own words show it: [streamflow](https://github.com/korczis/streamflow), [microscratch](https://github.com/korczis/microscratch) and [microcrawler-couchapp](https://github.com/korczis/microcrawler-couchapp).
 

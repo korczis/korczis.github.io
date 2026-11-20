@@ -3,7 +3,7 @@
 title = "Yeoman"
 description = "A scaffolding tool for web projects: generators that create a project's files, build setup and conventions from a template."
 template = "term.html"
-weight = 177
+weight = 229
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

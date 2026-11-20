@@ -3,7 +3,7 @@
 title = "OpenGL"
 description = "The cross-platform graphics API for 2D and 3D rendering on the GPU, with shaders written in GLSL."
 template = "term.html"
-weight = 132
+weight = 164
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

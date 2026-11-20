@@ -3,7 +3,7 @@
 title = "Markdown"
 description = "Formát prostého textu, jehož jednoduché značky (nadpisy, seznamy, odkazy) se vykreslují jako HTML; píšou se v něm README i stránky tohoto webu."
 template = "term.html"
-weight = 116
+weight = 144
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -17,7 +17,7 @@ definition = "Formát prostého textu, jehož jednoduché značky (nadpisy, sezn
 aliases = []
 reference = { title = "CommonMark", url = "https://commonmark.org/" }
 pages = ["work/books.cs.md", "work/corvidae.cs.md", "work/datasciencecoursera.cs.md", "work/ght.cs.md", "work/ideas.cs.md", "work/marketing-ideas.cs.md", "work/past.cs.md", "work/prismatic-blog.cs.md", "work/reading.cs.md", "work/tinder-nomics.cs.md"]
-related = ["commit", "open-source", "repository", "data-visualisation", "dockerfile", "elixir", "gis", "git"]
+related = ["commit", "open-source", "repository", "data-visualisation", "dev-containers", "dockerfile", "elixir", "geojson"]
 og_title = "Markdown: slovník"
 og_image = "og/cs-glossary-markdown.png"
 keywords = ["Markdown", "Technologie", "Slovník", "Tomáš Korčák"]

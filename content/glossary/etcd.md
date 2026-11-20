@@ -3,7 +3,7 @@
 title = "etcd"
 description = "A distributed, consistent key-value store (Raft) for configuration and service discovery; Kubernetes keeps its state in it."
 template = "term.html"
-weight = 76
+weight = 92
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

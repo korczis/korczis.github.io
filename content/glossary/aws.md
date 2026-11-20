@@ -3,7 +3,7 @@
 title = "Amazon Web Services"
 description = "Amazon's cloud platform: compute (EC2, Lambda), storage (S3), DNS (Route 53) and hundreds of managed services behind one API."
 template = "term.html"
-weight = 48
+weight = 50
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

@@ -3,7 +3,7 @@
 title = "Monte Carlo simulation"
 description = "Odhad nejistého výsledku opakovaným vzorkováním vstupů a čtením rozdělení výsledků."
 template = "term.html"
-weight = 206
+weight = 258
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

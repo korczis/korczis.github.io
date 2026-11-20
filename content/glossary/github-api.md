@@ -3,7 +3,7 @@
 title = "GitHub API"
 description = "GitHub's REST and GraphQL APIs for repositories, issues, pull requests, users and events; this site reads its data from them."
 template = "term.html"
-weight = 86
+weight = 109
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

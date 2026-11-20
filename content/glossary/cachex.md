@@ -3,7 +3,7 @@
 title = "Cachex"
 description = "An in-memory caching library for Elixir on ETS, with expiration, limits, hooks and transactions."
 template = "term.html"
-weight = 55
+weight = 59
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

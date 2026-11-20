@@ -3,7 +3,7 @@
 title = "Mnesia"
 description = "Distribuovaná databáze vestavěná v Erlang/OTP: tabulky erlangových termů v paměti nebo na disku, replikované mezi uzly s transakcemi."
 template = "term.html"
-weight = 119
+weight = 148
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

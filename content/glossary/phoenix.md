@@ -3,7 +3,7 @@
 title = "Phoenix"
 description = "Elixir's web framework; LiveView renders interactive pages on the server and pushes only the changes over a socket."
 template = "term.html"
-weight = 136
+weight = 169
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -14,7 +14,7 @@ seo_title = "Phoenix (technology)"
 term = "phoenix"
 kind = "technology"
 definition = "Elixir's web framework; LiveView renders interactive pages on the server and pushes only the changes over a socket."
-aliases = ["Phoenix LiveView", "LiveView", "phoenix_live_view"]
+aliases = ["Phoenix LiveView", "LiveView", "phoenix_live_view", "Phoenix LiveDashboard"]
 reference = { title = "Phoenix Framework", url = "https://www.phoenixframework.org/" }
 pages = ["services/attack-surface.md", "services/continuous-monitoring.md", "services/decision-support-ai.md", "services/due-diligence.md", "services/m-and-a.md", "services/reputation-intelligence.md", "skills/decision-support.md", "skills/registry-intelligence.md", "work/astudo.md", "work/corvidae.md", "work/crisis-map.md", "work/czech-stats.md", "work/dj-schnapps.md", "work/edna.md", "work/gooddata-graphql.md", "work/happ.md", "work/hydra.md", "work/kanec.md", "work/korczis-gitlab-io.md", "work/magic.md", "work/mapoffacts.md", "work/maze.md", "work/mindscape.md", "work/prismatic.md", "work/rest-hello-world-benchmark.md", "work/sig.md", "work/test-elixir.md", "work/the-psycho.md", "work/the-scratch.md", "work/tosh.md", "work/web-spa.md", "work/zaas.md"]
 related = ["elixir", "javascript", "commit", "open-source", "repository", "html", "postgresql", "css"]

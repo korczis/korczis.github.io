@@ -3,7 +3,7 @@
 title = "JSON"
 description = "Textový formát pro strukturovaná data (objekty, pole, řetězce, čísla), který čte a zapisuje téměř každý jazyk."
 template = "term.html"
-weight = 105
+weight = 132
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

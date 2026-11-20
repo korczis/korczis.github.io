@@ -3,7 +3,7 @@
 title = "AVFoundation"
 description = "Apple's framework for time-based media: camera capture, audio and video playback, recording and editing."
 template = "term.html"
-weight = 47
+weight = 49
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "Apple's framework for time-based media: camera capture, audio and 
 aliases = []
 reference = { title = "AVFoundation documentation", url = "https://developer.apple.com/documentation/avfoundation" }
 pages = ["work/minervaeye.md", "work/readingphonenumbersinrealtime.md"]
-related = ["apple-vision", "commit", "open-source", "repository", "swift", "uikit", "xcode", "shell"]
+related = ["apple-vision", "commit", "open-source", "repository", "swift", "uikit", "xcode", "core-data"]
 og_title = "AVFoundation: glossary"
 og_image = "og/glossary-avfoundation.png"
 keywords = ["AVFoundation", "Technology", "Glossary", "Tomas Korcak"]

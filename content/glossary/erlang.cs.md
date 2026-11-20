@@ -3,7 +3,7 @@
 title = "Erlang"
 description = "Jazyk a běhové prostředí z telekomunikací, navržené pro systémy, které musí běžet, i když jejich části selhávají."
 template = "term.html"
-weight = 13
+weight = 14
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -14,9 +14,9 @@ seo_title = "Erlang (programovací jazyk)"
 term = "erlang"
 kind = "language"
 definition = "Jazyk a běhové prostředí z telekomunikací, navržené pro systémy, které musí běžet, i když jejich části selhávají."
-aliases = ["OTP", "ETS", "Erlang/OTP"]
+aliases = ["OTP", "ETS", "Erlang/OTP", "Erlang NIF", "DETS"]
 reference = { title = "erlang.org", url = "https://www.erlang.org/" }
-pages = ["projects/learning.cs.md", "work/distance-calculator.cs.md", "work/edna.cs.md", "work/el-magico-cache.cs.md", "work/hydra.cs.md", "work/job-processor.cs.md", "work/microcrawler-elixir.cs.md", "work/rustler-mix.cs.md", "work/simple-geocoder.cs.md", "work/skull-erlang.cs.md"]
+pages = ["projects/learning.cs.md", "work/distance-calculator.cs.md", "work/edna.cs.md", "work/el-magico-cache.cs.md", "work/hydra.cs.md", "work/job-processor.cs.md", "work/maze.cs.md", "work/microcrawler-elixir.cs.md", "work/rustler-mix.cs.md", "work/rustler-test.cs.md", "work/simple-geocoder.cs.md", "work/skull-erlang.cs.md"]
 related = ["repository", "commit", "elixir", "open-source", "shell", "makefile", "dockerfile", "gitlab-ci"]
 og_title = "Erlang: slovník"
 og_image = "og/cs-glossary-erlang.png"
@@ -40,9 +40,9 @@ span = 3
 height = "md"
 tone = "night"
 +++
-Erlang jsem psal v 10 veřejných repozitářích, od roku 2014 do 2026; v 1 z nich je hlavním jazykem.
+Erlang jsem psal v 12 veřejných repozitářích, od roku 2014 do 2026; v 1 z nich je hlavním jazykem.
 
-K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (4), [Inženýrství AI](@/projects/ai.cs.md) (2), [Data a GIS](@/projects/data.cs.md) (1) a [Učení a experimenty](@/projects/learning.cs.md) (1).
+K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (4), [Inženýrství AI](@/projects/ai.cs.md) (2), [Učení a experimenty](@/projects/learning.cs.md) (2) a [Věda a vizualizace](@/projects/science.cs.md) (2).
 
 Naposledy: [sig](@/work/sig.cs.md); [distance-calculator](@/work/distance-calculator.cs.md); [edna](@/work/edna.cs.md).
 

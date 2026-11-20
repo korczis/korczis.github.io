@@ -3,7 +3,7 @@
 title = "ExDoc"
 description = "Generátor dokumentace pro Elixir: z dokumentace modulů a průvodců dělá HTML a EPUB dokumentaci na HexDocs."
 template = "term.html"
-weight = 77
+weight = 93
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

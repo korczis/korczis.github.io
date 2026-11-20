@@ -17,7 +17,7 @@ og_description = "bcnode-old: Nástroje, JavaScript, Rust a Yacc, 2018, archiv. 
 og_image = "og/cs-work-bcnode-old.png"
 schema = "project"
 keywords = ["bcnode-old", "Nástroje", "JavaScript", "Rust", "Yacc", "2018", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["javascript", "rust", "shell", "makefile", "nodejs", "babel", "grpc", "protobuf", "libp2p", "rocksdb", "dockerfile", "jest", "webpack", "open-source", "repository", "commit"]
+terms = ["javascript", "rust", "shell", "makefile", "nodejs", "flow", "babel", "grpc", "protobuf", "libp2p", "rocksdb", "dockerfile", "jest", "webpack", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

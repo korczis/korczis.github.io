@@ -3,7 +3,7 @@
 title = "EEx and HEEx"
 description = "Vložené šablony Elixiru: EEx vkládá Elixir do textu, HEEx do HTML, které Phoenix LiveView kontroluje a vykresluje."
 template = "term.html"
-weight = 10
+weight = 11
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]

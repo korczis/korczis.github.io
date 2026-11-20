@@ -3,7 +3,7 @@
 title = "RabbitMQ"
 description = "A message broker that routes messages between producers and consumers through exchanges and queues (AMQP)."
 template = "term.html"
-weight = 146
+weight = 183
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

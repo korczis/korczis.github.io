@@ -3,7 +3,7 @@
 title = "Swift"
 description = "Jazyk Applu pro aplikace na iOS a macOS. Pojem ze slovníku."
 template = "term.html"
-weight = 38
+weight = 39
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]

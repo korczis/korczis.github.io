@@ -3,7 +3,7 @@
 title = "Tesla"
 description = "HTTP klient pro Elixir složený z middleware, s vyměnitelnými adaptéry."
 template = "term.html"
-weight = 161
+weight = 206
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

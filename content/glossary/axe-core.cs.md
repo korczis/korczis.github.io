@@ -3,7 +3,7 @@
 title = "axe-core"
 description = "Engine pro testování přístupnosti, který kontroluje vykreslené stránky podle pravidel WCAG; spouští ho browser audit tohoto webu."
 template = "term.html"
-weight = 49
+weight = 51
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

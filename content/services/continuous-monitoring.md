@@ -14,7 +14,7 @@ icon = "clock"
 og_title = "Insolvency, litigation and register change monitoring"
 og_image = "og/service-continuous-monitoring.png"
 schema = "service"
-terms = ["service", "elixir", "broadway", "phoenix", "postgresql", "insolvency", "change-detection", "public-registry", "record-linkage", "orchestration", "risk-assessment", "javascript", "html", "claude-api", "flowbite-pro", "github-actions", "alpine-js", "dockerfile", "fastapi", "kubernetes", "majordomus"]
+terms = ["service", "elixir", "broadway", "phoenix", "postgresql", "insolvency", "change-detection", "public-registry", "record-linkage", "orchestration", "risk-assessment", "javascript", "html", "flowbite-pro", "github-actions", "alpine-js", "claude-api", "dockerfile", "fastapi", "kubernetes", "majordomus"]
 keywords = ["Insolvency, litigation and register change monitoring", "Insolvency monitoring", "Continuous monitoring", "Registry intelligence", "Entity resolution", "Orchestration", "Risk scoring", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -34,7 +34,7 @@ It draws on these skills: [Insolvency monitoring](@/skills/insolvency-monitoring
 
 It is built with [Elixir](@/glossary/elixir.md), [Broadway](@/glossary/broadway.md), [Phoenix](@/glossary/phoenix.md) and [PostgreSQL](@/glossary/postgresql.md).
 
-The technologies behind it, measured from the work that shows those skills: [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md), [Claude API](@/glossary/claude-api.md), [Flowbite Pro](@/glossary/flowbite-pro.md), [GitHub Actions](@/glossary/github-actions.md), [Alpine.js](@/glossary/alpine-js.md), [Dockerfile](@/glossary/dockerfile.md) and [FastAPI](@/glossary/fastapi.md).
+The technologies behind it, measured from the work that shows those skills: [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md), [Flowbite Pro](@/glossary/flowbite-pro.md), [GitHub Actions](@/glossary/github-actions.md), [Alpine.js](@/glossary/alpine-js.md), [Claude API](@/glossary/claude-api.md), [Dockerfile](@/glossary/dockerfile.md) and [FastAPI](@/glossary/fastapi.md).
 
 5 public repositories show its skills (5 by their own words).
 

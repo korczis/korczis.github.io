@@ -3,7 +3,7 @@
 title = "Plug"
 description = "Elixir's specification of composable modules for web applications; Phoenix's request pipeline is built from plugs."
 template = "term.html"
-weight = 138
+weight = 171
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

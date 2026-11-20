@@ -3,7 +3,7 @@
 title = "Squirrel"
 description = "Malý vložitelný skriptovací jazyk; OpenTTD v něm spouští své AI hráče a herní skripty."
 template = "term.html"
-weight = 37
+weight = 38
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]
@@ -17,7 +17,7 @@ definition = "Malý vložitelný skriptovací jazyk; OpenTTD v něm spouští sv
 aliases = []
 reference = { title = "Squirrel on GitHub", url = "https://github.com/albertodemichelis/squirrel" }
 pages = ["work/openttd-prismatic-bridge.cs.md"]
-related = ["commit", "data-visualisation", "fastapi", "flowbite-pro", "html", "javascript", "leaflet", "open-source"]
+related = ["commit", "data-visualisation", "fastapi", "flowbite-pro", "html", "httpx", "javascript", "leaflet"]
 og_title = "Squirrel: slovník"
 og_image = "og/cs-glossary-squirrel.png"
 keywords = ["Squirrel", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

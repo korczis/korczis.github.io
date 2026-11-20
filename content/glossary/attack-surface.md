@@ -3,7 +3,7 @@
 title = "Attack surface"
 description = "Everything of an organisation an attacker can reach from the internet: domains, servers, services, certificates and leaked credentials."
 template = "term.html"
-weight = 180
+weight = 232
 
 [taxonomies]
 tags = ["Glossary", "Concept"]

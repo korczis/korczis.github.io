@@ -3,7 +3,7 @@
 title = "p5.js"
 description = "A creative-coding library descended from Processing, for drawing and simulation in the browser."
 template = "term.html"
-weight = 133
+weight = 166
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

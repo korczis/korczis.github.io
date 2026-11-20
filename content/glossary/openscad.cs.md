@@ -3,7 +3,7 @@
 title = "OpenSCAD"
 description = "Jazyk pro pevné 3D modely popsané kódem: tvary skládané sjednocením, rozdílem a transformacemi, připravené pro 3D tisk."
 template = "term.html"
-weight = 26
+weight = 27
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]

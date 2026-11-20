@@ -3,7 +3,7 @@
 title = "esbuild"
 description = "An extremely fast JavaScript and CSS bundler and minifier written in Go; Phoenix builds its assets with it."
 template = "term.html"
-weight = 74
+weight = 90
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

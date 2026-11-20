@@ -3,7 +3,7 @@
 title = "Credo"
 description = "Nástroj statické analýzy pro Elixir zaměřený na konzistenci a výuku: upozorňuje na problémy čitelnosti, návrhu a refaktoringu."
 template = "term.html"
-weight = 65
+weight = 72
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -17,7 +17,7 @@ definition = "Nástroj statické analýzy pro Elixir zaměřený na konzistenci 
 aliases = []
 reference = { title = "Credo on HexDocs", url = "https://hexdocs.pm/credo/overview.html" }
 pages = ["work/job-processor.cs.md", "work/kuzu-ex.cs.md"]
-related = ["commit", "elixir", "gitlab-ci", "jason", "open-source", "repository", "cowboy", "dockerfile"]
+related = ["commit", "elixir", "gitlab-ci", "jason", "open-source", "repository", "cowboy", "cypher"]
 og_title = "Credo: slovník"
 og_image = "og/cs-glossary-credo.png"
 keywords = ["Credo", "Technologie", "Slovník", "Tomáš Korčák"]

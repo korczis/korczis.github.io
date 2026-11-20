@@ -3,7 +3,7 @@
 title = "fleet"
 description = "CoreOS's distributed init system: it scheduled systemd units across a cluster of machines, a predecessor of Kubernetes scheduling."
 template = "term.html"
-weight = 81
+weight = 100
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "CoreOS's distributed init system: it scheduled systemd units acros
 aliases = []
 reference = { title = "fleet on GitHub (archived)", url = "https://github.com/coreos/fleet" }
 pages = ["work/apollon.md", "work/microcrawler.md"]
-related = ["commit", "coreos", "dockerfile", "etcd", "open-source", "repository", "aws", "gis"]
+related = ["commit", "coreos", "dockerfile", "etcd", "open-source", "repository", "aws", "digitalocean"]
 og_title = "fleet: glossary"
 og_image = "og/glossary-fleet.png"
 keywords = ["fleet", "Technology", "Glossary", "Tomas Korcak"]

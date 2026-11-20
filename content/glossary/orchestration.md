@@ -3,7 +3,7 @@
 title = "Orchestration"
 description = "Coordinating many automated steps, services or agents (queues, workflows, schedules) so they run in the right order and recover when one fails."
 template = "term.html"
-weight = 209
+weight = 261
 
 [taxonomies]
 tags = ["Glossary", "Concept"]

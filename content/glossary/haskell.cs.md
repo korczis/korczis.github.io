@@ -3,7 +3,7 @@
 title = "Haskell"
 description = "Čistě funkcionální jazyk s líným vyhodnocováním a silným typovým systémem; místo, kde se učí myslet v typech."
 template = "term.html"
-weight = 15
+weight = 16
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]

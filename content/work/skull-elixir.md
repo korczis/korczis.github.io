@@ -17,7 +17,7 @@ og_description = "skull-elixir: Learning and experiments in Elixir and Shell, 20
 og_image = "og/work-skull-elixir.png"
 schema = "project"
 keywords = ["skull-elixir", "Learning and experiments", "Elixir", "Shell", "2016", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["elixir", "shell", "travis-ci", "repository", "commit", "open-source"]
+terms = ["elixir", "shell", "exunit", "travis-ci", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

@@ -3,7 +3,7 @@
 title = "Just"
 description = "Spouštěč příkazů: pojmenované recepty v souboru justfile, jako make bez buildovací logiky; vstupní bod většiny těchto repozitářů."
 template = "term.html"
-weight = 19
+weight = 20
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]

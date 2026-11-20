@@ -17,7 +17,7 @@ og_description = "sandbox: Učení a experimenty, Ruby, 2012, archiv. Zdrojový 
 og_image = "og/cs-work-sandbox.png"
 schema = "project"
 keywords = ["sandbox", "Učení a experimenty", "Ruby", "2012", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["ruby", "postgresql", "repository", "commit", "open-source"]
+terms = ["ruby", "postgresql", "oauth", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
