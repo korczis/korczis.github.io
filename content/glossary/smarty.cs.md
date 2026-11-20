@@ -3,7 +3,7 @@
 title = "Smarty"
 description = "Šablonovací systém pro PHP, který odděluje prezentaci od aplikační logiky."
 template = "term.html"
-weight = 35
+weight = 36
 
 [taxonomies]
 tags = ["Slovník", "Programovací jazyk"]

@@ -3,7 +3,7 @@
 title = "HTTPoison"
 description = "HTTP klient pro Elixir postavený na knihovně hackney."
 template = "term.html"
-weight = 82
+weight = 100
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

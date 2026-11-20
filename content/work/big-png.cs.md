@@ -17,7 +17,7 @@ og_description = "big-png: Věda a vizualizace, Python, 2015, archiv. Zdrojový 
 og_image = "og/cs-work-big-png.png"
 schema = "project"
 keywords = ["big-png", "Věda a vizualizace", "Python", "2015", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["python", "data-visualisation", "repository", "commit", "open-source"]
+terms = ["python", "png", "data-visualisation", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

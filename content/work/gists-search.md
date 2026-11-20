@@ -17,7 +17,7 @@ og_description = "Gists search: Tools in Python, JavaScript and HTML, 2026, acti
 og_image = "og/work-gists-search.png"
 schema = "project"
 keywords = ["Gists search", "gists-search", "Tools", "Python", "JavaScript", "HTML", "2026", "GitHub", "Tomas Korcak", "korczis"]
-terms = ["python", "javascript", "html", "just", "shell", "meilisearch", "github-pages", "open-source", "repository", "commit"]
+terms = ["python", "javascript", "html", "just", "shell", "meilisearch", "github-api", "github-pages", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

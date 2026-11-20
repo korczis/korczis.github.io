@@ -17,7 +17,7 @@ og_description = "generator-microscratch: Nástroje, JavaScript, 2014, archiv. Z
 og_image = "og/cs-work-generator-microscratch.png"
 schema = "project"
 keywords = ["generator-microscratch", "Nástroje", "JavaScript", "2014", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["javascript", "nodejs", "bower", "mocha", "travis-ci", "open-source", "repository", "commit"]
+terms = ["javascript", "nodejs", "yeoman", "bower", "mocha", "travis-ci", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

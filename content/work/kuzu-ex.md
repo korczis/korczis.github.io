@@ -17,7 +17,7 @@ og_description = "kuzu-ex: Data and GIS in Elixir and Python, 2024, active in th
 og_image = "og/work-kuzu-ex.png"
 schema = "project"
 keywords = ["kuzu-ex", "Data and GIS", "Elixir", "Python", "2024", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["elixir", "python", "tesla", "jason", "dockerfile", "gitlab-ci", "gis", "repository", "commit", "open-source"]
+terms = ["elixir", "python", "kuzudb", "tesla", "jason", "dockerfile", "credo", "gitlab-ci", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

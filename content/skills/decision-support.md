@@ -13,7 +13,7 @@ skill = "decision-support"
 og_title = "Decision support: skills"
 og_image = "og/skill-decision-support.png"
 schema = "skill"
-terms = ["skill", "decision-support-system", "javascript", "html", "flowbite-pro", "python", "tailwind-css", "dockerfile", "elixir", "fastapi", "phoenix", "postgresql"]
+terms = ["skill", "decision-support-system", "javascript", "html", "flowbite-pro", "python", "tailwind-css", "dockerfile", "elixir", "fastapi", "leaflet", "phoenix"]
 keywords = ["Decision support", "Corporate and counterparty due diligence", "M&A pre-deal screening and analysis", "Reputation intelligence and adverse-media monitoring", "Decision support and AI agents for analysts", "Interactive data products and simulators", "Tomas Korcak"]
 
 [[extra.viz]]

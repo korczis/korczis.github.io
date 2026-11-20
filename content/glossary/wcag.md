@@ -3,7 +3,7 @@
 title = "WCAG"
 description = "The Web Content Accessibility Guidelines; every page here is checked against WCAG 2.2 level AA before it ships."
 template = "term.html"
-weight = 174
+weight = 223
 
 [taxonomies]
 tags = ["Glossary", "Concept"]

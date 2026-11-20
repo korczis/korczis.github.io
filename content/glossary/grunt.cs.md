@@ -3,7 +3,7 @@
 title = "Grunt"
 description = "Raný spouštěč úloh pro JavaScript nastavovaný souborem Gruntfile: spojování, minifikace, testy."
 template = "term.html"
-weight = 78
+weight = 94
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Raný spouštěč úloh pro JavaScript nastavovaný souborem Gruntfile: spojování, minifikace, testy."
 aliases = []
 reference = { title = "Grunt", url = "https://gruntjs.com/" }
-pages = ["skills/change-monitoring.cs.md", "work/apollocrawler-com.cs.md", "work/craftsmen.cs.md", "work/microcrawler-couchapp.cs.md"]
-related = ["css", "ember-js", "handlebars", "javascript", "bootstrap", "commit", "express", "open-source"]
+pages = ["work/apollocrawler-com.cs.md", "work/craftsmen.cs.md", "work/microcrawler-couchapp.cs.md"]
+related = ["commit", "css", "ember-js", "handlebars", "javascript", "open-source", "repository", "shell"]
 og_title = "Grunt: slovník"
 og_image = "og/cs-glossary-grunt.png"
 keywords = ["Grunt", "Technologie", "Slovník", "Tomáš Korčák"]

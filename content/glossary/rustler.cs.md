@@ -3,7 +3,7 @@
 title = "Rustler"
 description = "Knihovna pro psaní nativních funkcí Erlangu (NIF) v Rustu, díky které může kód v Elixiru volat rychlý a paměťově bezpečný Rust."
 template = "term.html"
-weight = 114
+weight = 151
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

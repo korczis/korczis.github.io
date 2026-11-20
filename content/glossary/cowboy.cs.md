@@ -3,7 +3,7 @@
 title = "Cowboy"
 description = "HTTP a WebSocket server pro Erlang a Elixir; Phoenix přes něj obsluhuje své požadavky."
 template = "term.html"
-weight = 57
+weight = 64
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -17,7 +17,7 @@ definition = "HTTP a WebSocket server pro Erlang a Elixir; Phoenix přes něj ob
 aliases = []
 reference = { title = "Cowboy User Guide", url = "https://ninenines.eu/docs/en/cowboy/2.12/guide/" }
 pages = ["work/el-magico-cache.cs.md", "work/job-processor.cs.md", "work/kanec.cs.md", "work/rest-hello-world-benchmark.cs.md"]
-related = ["commit", "elixir", "open-source", "repository", "html", "plug", "css", "javascript"]
+related = ["commit", "elixir", "open-source", "repository", "html", "plug", "css", "erlang"]
 og_title = "Cowboy: slovník"
 og_image = "og/cs-glossary-cowboy.png"
 keywords = ["Cowboy", "Technologie", "Slovník", "Tomáš Korčák"]

@@ -14,7 +14,7 @@ icon = "code"
 og_title = "Governed AI-assisted software delivery"
 og_image = "og/service-ai-engineering-governance.png"
 schema = "service"
-terms = ["service", "rust", "mcp", "claude-api", "majordomus", "github-actions", "policy-as-code", "ai-agent", "audit-trail", "orchestration", "contestability", "html", "javascript", "shell", "flowbite-pro", "tailwind-css", "playwright", "alpine-js", "github-pages", "python", "css"]
+terms = ["service", "rust", "mcp", "claude-api", "majordomus", "github-actions", "policy-as-code", "ai-agent", "audit-trail", "orchestration", "contestability", "html", "javascript", "shell", "flowbite-pro", "tailwind-css", "alpine-js", "playwright", "github-pages", "python", "css"]
 keywords = ["Governed AI-assisted software delivery", "Policy as code", "LLM agents", "Audit trail", "Orchestration", "AI transformation", "Contestable decisions", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -34,7 +34,7 @@ It draws on these skills: [Policy as code](@/skills/policy-as-code.md), [LLM age
 
 It is built with [Rust](@/glossary/rust.md), [MCP](@/glossary/mcp.md), [Claude API](@/glossary/claude-api.md), [Majordomus](@/glossary/majordomus.md) and [GitHub Actions](@/glossary/github-actions.md).
 
-The technologies behind it, measured from the work that shows those skills: [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md), [Shell](@/glossary/shell.md), [Flowbite Pro](@/glossary/flowbite-pro.md), [Tailwind CSS](@/glossary/tailwind-css.md), [Playwright](@/glossary/playwright.md), [Alpine.js](@/glossary/alpine-js.md) and [GitHub Pages](@/glossary/github-pages.md).
+The technologies behind it, measured from the work that shows those skills: [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md), [Shell](@/glossary/shell.md), [Flowbite Pro](@/glossary/flowbite-pro.md), [Tailwind CSS](@/glossary/tailwind-css.md), [Alpine.js](@/glossary/alpine-js.md), [Playwright](@/glossary/playwright.md) and [GitHub Pages](@/glossary/github-pages.md).
 
 14 public repositories show its skills (14 by their own words).
 

@@ -3,7 +3,7 @@
 title = "Elasticsearch"
 description = "Distribuovaný vyhledávací a analytický engine nad dokumenty v JSON, s fulltextovým vyhledáváním a agregacemi."
 template = "term.html"
-weight = 62
+weight = 71
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

@@ -17,7 +17,7 @@ og_description = "Oscilla: Science and visualisation in JavaScript, HTML and CSS
 og_image = "og/work-oscilla.png"
 schema = "project"
 keywords = ["Oscilla", "Science and visualisation", "JavaScript", "HTML", "CSS", "acoustics", "audio", "dsp", "education", "signal-processing", "2026", "GitHub", "Tomas Korcak", "korczis"]
-terms = ["javascript", "html", "css", "swift", "shell", "web-audio", "alpine-js", "p5-js", "tailwind-css", "flowbite-pro", "playwright", "axe-core", "github-pages", "data-visualisation", "repository", "commit", "open-source"]
+terms = ["javascript", "html", "css", "swift", "shell", "web-audio", "alpine-js", "p5-js", "tailwind-css", "flowbite-pro", "esbuild", "playwright", "axe-core", "github-pages", "data-visualisation", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

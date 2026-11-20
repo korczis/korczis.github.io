@@ -3,7 +3,7 @@
 title = "Nominatim"
 description = "The geocoder of OpenStreetMap: it turns addresses into coordinates and coordinates back into addresses."
 template = "term.html"
-weight = 99
+weight = 125
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "The geocoder of OpenStreetMap: it turns addresses into coordinates
 aliases = []
 reference = { title = "Nominatim documentation", url = "https://nominatim.org/release-docs/latest/" }
 pages = ["skills/geospatial-analysis.md", "skills/registry-intelligence.md", "work/cluster-kubernetes.md", "work/crisis-map.md", "work/docks.md", "work/simple-geocoder.md"]
-related = ["commit", "elixir", "open-source", "postgis", "repository", "shell", "couchbase", "dockerfile"]
+related = ["commit", "elixir", "open-source", "repository", "shell", "dockerfile", "javascript", "postgis"]
 og_title = "Nominatim: glossary"
 og_image = "og/glossary-nominatim.png"
 keywords = ["Nominatim", "Technology", "Glossary", "Tomas Korcak"]

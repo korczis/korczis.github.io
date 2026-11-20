@@ -3,7 +3,7 @@
 title = "Source criticism"
 description = "Judging a source before believing it: who made it, when, how and why, and whether independent sources agree."
 template = "term.html"
-weight = 171
+weight = 220
 
 [taxonomies]
 tags = ["Glossary", "Concept"]

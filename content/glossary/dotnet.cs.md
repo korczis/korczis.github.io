@@ -3,7 +3,7 @@
 title = ".NET"
 description = "Běhové prostředí a knihovny Microsoftu pro C# a další jazyky na Windows, Linuxu i macOS."
 template = "term.html"
-weight = 41
+weight = 42
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -14,7 +14,7 @@ seo_title = ".NET (technologie)"
 term = "dotnet"
 kind = "technology"
 definition = "Běhové prostředí a knihovny Microsoftu pro C# a další jazyky na Windows, Linuxu i macOS."
-aliases = []
+aliases = ["System.Reflection"]
 reference = { title = ".NET documentation", url = "https://learn.microsoft.com/en-us/dotnet/" }
 pages = ["skills/market-intelligence.cs.md", "work/cs-benchmark.cs.md", "work/reflex.cs.md", "work/rocnikac4.cs.md"]
 related = ["csharp", "commit", "open-source", "repository", "alpine-js", "clap", "claude-api", "dockerfile"]

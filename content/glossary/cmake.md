@@ -17,7 +17,7 @@ definition = "A build-system generator for C and C++: one description of a proje
 aliases = []
 reference = { title = "CMake documentation", url = "https://cmake.org/cmake/help/latest/" }
 pages = ["projects/learning.md", "skills/infrastructure-osint.md", "work/algorithms.md", "work/happ.md", "work/peacemaker.md", "work/skull-c.md", "work/skull-cpp.md"]
-related = ["c", "repository", "commit", "cpp", "open-source", "travis-ci", "elixir", "haskell"]
+related = ["c", "repository", "commit", "cpp", "open-source", "travis-ci", "elixir", "google-test"]
 og_title = "CMake: glossary"
 og_image = "og/glossary-cmake.png"
 keywords = ["CMake", "Programming language", "Glossary", "Tomas Korcak"]

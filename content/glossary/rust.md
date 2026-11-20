@@ -3,7 +3,7 @@
 title = "Rust"
 description = "A systems language that guarantees memory safety without a garbage collector; Majordomus is written in it."
 template = "term.html"
-weight = 32
+weight = 33
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]

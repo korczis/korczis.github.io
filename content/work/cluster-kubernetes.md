@@ -17,7 +17,7 @@ og_description = "cluster-kubernetes: Systems and infrastructure in Shell and Sm
 og_image = "og/work-cluster-kubernetes.png"
 schema = "project"
 keywords = ["cluster-kubernetes", "Systems and infrastructure", "Shell", "Smarty", "kubernetes", "2017–2018", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["shell", "smarty", "kubernetes", "couchbase", "elasticsearch", "kibana", "rabbitmq", "etcd", "grafana", "postgresql", "nominatim", "repository", "commit", "open-source"]
+terms = ["shell", "smarty", "kubernetes", "couchbase", "elasticsearch", "kibana", "rabbitmq", "etcd", "grafana", "prometheus", "postgresql", "nominatim", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

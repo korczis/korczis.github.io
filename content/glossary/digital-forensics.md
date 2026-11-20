@@ -3,7 +3,7 @@
 title = "Digital forensics"
 description = "Recovering and examining digital evidence so that what it shows, and how it was obtained, holds up when challenged."
 template = "term.html"
-weight = 142
+weight = 191
 
 [taxonomies]
 tags = ["Glossary", "Concept"]

@@ -17,7 +17,7 @@ og_description = "big-png: Science and visualisation in Python, 2015, archive. S
 og_image = "og/work-big-png.png"
 schema = "project"
 keywords = ["big-png", "Science and visualisation", "Python", "2015", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["python", "data-visualisation", "repository", "commit", "open-source"]
+terms = ["python", "png", "data-visualisation", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

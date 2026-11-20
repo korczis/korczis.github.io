@@ -14,7 +14,7 @@ seo_title = "C++ (programming language)"
 term = "cpp"
 kind = "language"
 definition = "C with classes, templates and abstractions that cost nothing at run time; used where speed matters."
-aliases = []
+aliases = ["C++11"]
 reference = { title = "cppreference.com", url = "https://en.cppreference.com/" }
 pages = ["projects/learning.md", "projects/science.md", "projects/security.md", "projects/tools.md", "work/algorithms-ruby.md", "work/algorithms.md", "work/happ.md", "work/icave.md", "work/nosqlight.md", "work/peacemaker.md", "work/skull-cpp.md", "work/skull-emscripten.md"]
 related = ["repository", "open-source", "commit", "c", "cmake", "rust", "elixir", "javascript"]

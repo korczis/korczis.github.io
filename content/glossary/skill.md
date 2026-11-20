@@ -3,7 +3,7 @@
 title = "Skill"
 description = "A capability the owner practises, shown by public work and client use cases, and drawn on by the services."
 template = "term.html"
-weight = 170
+weight = 219
 
 [taxonomies]
 tags = ["Glossary", "Concept"]

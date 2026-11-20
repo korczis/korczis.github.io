@@ -3,7 +3,7 @@
 title = "Ruby"
 description = "A dynamic, expressive language designed for programmer happiness; many of the older tools here are Ruby."
 template = "term.html"
-weight = 31
+weight = 32
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]
@@ -14,9 +14,9 @@ seo_title = "Ruby (programming language)"
 term = "ruby"
 kind = "language"
 definition = "A dynamic, expressive language designed for programmer happiness; many of the older tools here are Ruby."
-aliases = ["Bundler", "RubyGems", "Rake"]
+aliases = ["Bundler", "RubyGems", "Rake", "RVM", "ERB"]
 reference = { title = "ruby-lang.org", url = "https://www.ruby-lang.org/en/about/" }
-pages = ["about.md", "projects/data.md", "projects/learning.md", "projects/security.md", "projects/systems.md", "projects/tools.md", "work/algorithms-ruby.md", "work/apollo-crawler.md", "work/apollon.md", "work/ares.md", "work/cluster.md", "work/codecademy.md", "work/csv2psql.md", "work/docker-dstk.md", "work/docker-gooddata-ruby.md", "work/esri.md", "work/gdc-dumpator.md", "work/gooddata-connectors-metadata.md", "work/gooddata-lcm-tool.md", "work/gooddata-rails-app.md", "work/gooddata-ruby-examples.md", "work/grache-test.md", "work/grache.md", "work/jetel.md", "work/json2csv.md", "work/kpmap-ruby.md", "work/sandbox.md", "work/skull-ruby.md", "work/skull.md", "work/skype-adapter-client.md", "work/zeman-ucet.md", "work/zlown.md"]
+pages = ["about.md", "projects/data.md", "projects/learning.md", "projects/security.md", "projects/systems.md", "projects/tools.md", "work/algorithms-ruby.md", "work/apollo-crawler.md", "work/apollon.md", "work/ares.md", "work/cluster.md", "work/codecademy.md", "work/csv2psql.md", "work/docker-dstk.md", "work/docker-gooddata-ruby.md", "work/esri.md", "work/gdc-dumpator.md", "work/gooddata-connectors-metadata.md", "work/gooddata-lcm-tool.md", "work/gooddata-rails-app.md", "work/gooddata-ruby-examples.md", "work/grache-test.md", "work/grache.md", "work/home.md", "work/jetel.md", "work/json2csv.md", "work/kpmap-ruby.md", "work/sandbox.md", "work/skull-ruby.md", "work/skull.md", "work/skype-adapter-client.md", "work/zeman-ucet.md", "work/zlown.md"]
 related = ["repository", "open-source", "commit", "shell", "gis", "postgresql", "javascript", "travis-ci"]
 og_title = "Ruby: glossary"
 og_image = "og/glossary-ruby.png"
@@ -40,11 +40,11 @@ span = 3
 height = "md"
 tone = "night"
 +++
-I have written Ruby in 26 public repositories, from 2012 to 2017; in 19 of them it is the main language.
+I have written Ruby in 27 public repositories, from 2012 to 2019; in 19 of them it is the main language.
 
-What it was for: [Data and GIS](@/projects/data.md) (9), [Tools](@/projects/tools.md) (7), [Learning and experiments](@/projects/learning.md) (4) and [Systems and infrastructure](@/projects/systems.md) (3).
+What it was for: [Data and GIS](@/projects/data.md) (9), [Tools](@/projects/tools.md) (8), [Learning and experiments](@/projects/learning.md) (4) and [Systems and infrastructure](@/projects/systems.md) (3).
 
-Most recently: [gdc-dumpator](@/work/gdc-dumpator.md); [zeman-ucet](@/work/zeman-ucet.md): Zpravy pro prijemce ze Zemanova transparentniho uctu na predvolebni kampan; [cluster](@/work/cluster.md): Run your own CoreOS/Kubernetes cluster.
+Most recently: [home](@/work/home.md): home directory; [gdc-dumpator](@/work/gdc-dumpator.md); [zeman-ucet](@/work/zeman-ucet.md): Zpravy pro prijemce ze Zemanova transparentniho uctu na predvolebni kampan.
 
 2 of these projects run as live sites.
 

@@ -14,7 +14,7 @@ seo_title = "C++ (programovací jazyk)"
 term = "cpp"
 kind = "language"
 definition = "C s třídami, šablonami a abstrakcemi, které za běhu nic nestojí; tam, kde záleží na rychlosti."
-aliases = []
+aliases = ["C++11"]
 reference = { title = "cppreference.com", url = "https://en.cppreference.com/" }
 pages = ["projects/learning.cs.md", "projects/science.cs.md", "projects/security.cs.md", "projects/tools.cs.md", "work/algorithms-ruby.cs.md", "work/algorithms.cs.md", "work/happ.cs.md", "work/icave.cs.md", "work/nosqlight.cs.md", "work/peacemaker.cs.md", "work/skull-cpp.cs.md", "work/skull-emscripten.cs.md"]
 related = ["repository", "open-source", "commit", "c", "cmake", "rust", "elixir", "javascript"]

@@ -3,7 +3,7 @@
 title = "Cheerio"
 description = "Rychlý parser HTML pro Node.js s API podobným jQuery, používaný k vytěžování dat ze stažených stránek."
 template = "term.html"
-weight = 52
+weight = 57
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

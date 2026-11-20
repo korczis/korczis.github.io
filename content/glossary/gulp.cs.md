@@ -3,7 +3,7 @@
 title = "gulp"
 description = "Streamovací build systém pro JavaScript, jehož úlohy jsou kód: soubory proudí přes pluginy."
 template = "term.html"
-weight = 80
+weight = 96
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

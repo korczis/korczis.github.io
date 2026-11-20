@@ -13,7 +13,7 @@ skill = "media-forensics"
 og_title = "Forenzní analýza webu a médií: dovednosti"
 og_image = "og/cs-skill-media-forensics.png"
 schema = "skill"
-terms = ["skill", "digital-forensics", "claude-api", "dockerfile", "ecto", "elixir", "gitlab-ci", "jason", "makefile", "mongodb", "postgresql", "rspec"]
+terms = ["skill", "digital-forensics", "claude-api", "dockerfile", "ecto", "elixir", "gitlab-ci", "jason", "llm", "makefile", "mongodb", "postgresql"]
 keywords = ["Forenzní analýza webu a médií", "Digitální vyšetřování a OSINT dossier", "Digitální forenzní analýza a zajištění důkazů", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -31,7 +31,7 @@ Pojem, na kterém stojí: [Digitální forenzní analýza](@/glossary/digital-fo
 
 Služby, které z ní čerpají: [Digitální vyšetřování a OSINT dossier](@/services/digital-investigation.cs.md) a [Digitální forenzní analýza a zajištění důkazů](@/services/digital-forensics.cs.md).
 
-Praktikovaná s: [Claude API](@/glossary/claude-api.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md), [Ecto](@/glossary/ecto.cs.md), [Elixir](@/glossary/elixir.cs.md), [GitLab CI](@/glossary/gitlab-ci.cs.md), [Jason](@/glossary/jason.cs.md), [Makefile](@/glossary/makefile.cs.md) a [MongoDB](@/glossary/mongodb.cs.md).
+Praktikovaná s: [Claude API](@/glossary/claude-api.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md), [Ecto](@/glossary/ecto.cs.md), [Elixir](@/glossary/elixir.cs.md), [GitLab CI](@/glossary/gitlab-ci.cs.md), [Jason](@/glossary/jason.cs.md), [LLM](@/glossary/llm.cs.md) a [Makefile](@/glossary/makefile.cs.md).
 
 Veřejná práce, jejíž vlastní slova ji dokládají: [gooddata\_connectors\_metadata](https://github.com/korczis/gooddata_connectors_metadata), [gooddata-fs](https://github.com/korczis/gooddata-fs) a [llm](https://gitlab.com/korczis/llm).
 

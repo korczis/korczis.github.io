@@ -13,7 +13,7 @@ skill = "chain-of-custody"
 og_title = "Řetězec úschovy důkazů: dovednosti"
 og_image = "og/cs-skill-chain-of-custody.png"
 schema = "skill"
-terms = ["skill", "chain-of-custody", "babel", "dockerfile", "javascript", "libp2p", "nodejs", "protobuf", "rust", "webpack"]
+terms = ["skill", "chain-of-custody", "babel", "dockerfile", "grpc", "javascript", "jest", "libp2p", "nodejs", "protobuf", "rocksdb", "rust"]
 keywords = ["Řetězec úschovy důkazů", "Digitální forenzní analýza a zajištění důkazů", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -31,7 +31,7 @@ Pojem, na kterém stojí: [Řetězec úschovy](@/glossary/chain-of-custody.cs.md
 
 Služby, které z ní čerpají: [Digitální forenzní analýza a zajištění důkazů](@/services/digital-forensics.cs.md).
 
-Praktikovaná s: [Babel](@/glossary/babel.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md), [JavaScript](@/glossary/javascript.cs.md), [libp2p](@/glossary/libp2p.cs.md), [Node.js](@/glossary/nodejs.cs.md), [Protocol Buffers](@/glossary/protobuf.cs.md), [Rust](@/glossary/rust.cs.md) a [webpack](@/glossary/webpack.cs.md).
+Praktikovaná s: [Babel](@/glossary/babel.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md), [gRPC](@/glossary/grpc.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Jest](@/glossary/jest.cs.md), [libp2p](@/glossary/libp2p.cs.md), [Node.js](@/glossary/nodejs.cs.md) a [Protocol Buffers](@/glossary/protobuf.cs.md).
 
 Veřejná práce, jejíž vlastní slova ji dokládají: [bcnode-old](https://github.com/korczis/bcnode-old).
 

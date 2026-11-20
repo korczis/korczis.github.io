@@ -17,7 +17,7 @@ og_description = "grache-test: Učení a experimenty, Ruby a Shell, 2015, archiv
 og_image = "og/cs-work-grache-test.png"
 schema = "project"
 keywords = ["grache-test", "Učení a experimenty", "Ruby", "Shell", "2015", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["ruby", "shell", "repository", "commit", "open-source"]
+terms = ["ruby", "shell", "curl", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

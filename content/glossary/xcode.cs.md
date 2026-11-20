@@ -3,7 +3,7 @@
 title = "Xcode"
 description = "Vývojové prostředí Applu pro stavbu, testování a vydávání aplikací pro jeho platformy."
 template = "term.html"
-weight = 128
+weight = 175
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -17,7 +17,7 @@ definition = "Vývojové prostředí Applu pro stavbu, testování a vydávání
 aliases = []
 reference = { title = "Xcode documentation", url = "https://developer.apple.com/documentation/xcode" }
 pages = ["work/bc-apple.cs.md", "work/minervaeye.cs.md", "work/readingphonenumbersinrealtime.cs.md"]
-related = ["commit", "open-source", "repository", "swift", "uikit", "shell", "socket-io"]
+related = ["commit", "open-source", "repository", "swift", "uikit", "apple-vision", "avfoundation", "shell"]
 og_title = "Xcode: slovník"
 og_image = "og/cs-glossary-xcode.png"
 keywords = ["Xcode", "Technologie", "Slovník", "Tomáš Korčák"]

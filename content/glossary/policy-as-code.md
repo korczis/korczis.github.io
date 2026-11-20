@@ -3,7 +3,7 @@
 title = "Policy as code"
 description = "Rules kept as code beside what they govern, checked automatically on every change instead of read and remembered."
 template = "term.html"
-weight = 162
+weight = 211
 
 [taxonomies]
 tags = ["Glossary", "Concept"]

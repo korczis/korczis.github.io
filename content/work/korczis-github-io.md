@@ -17,7 +17,7 @@ og_description = "korczis.github.io: Web in JavaScript, HTML and CSS, 2024–202
 og_image = "og/work-korczis-github-io.png"
 schema = "project"
 keywords = ["korczis.github.io", "Web", "JavaScript", "HTML", "CSS", "accessibility", "ai-agents", "alpinejs", "chartjs", "cytoscape", "echarts", "2024–2026", "GitHub", "Tomas Korcak", "korczis"]
-terms = ["javascript", "html", "css", "shell", "zola", "tailwind-css", "flowbite-pro", "alpine-js", "apache-echarts", "d3", "p5-js", "nodejs", "playwright", "axe-core", "github-pages", "static-site-generator", "repository", "commit", "open-source"]
+terms = ["javascript", "html", "css", "shell", "zola", "tera", "tailwind-css", "flowbite-pro", "alpine-js", "apache-echarts", "d3", "p5-js", "nodejs", "playwright", "axe-core", "github-pages", "static-site-generator", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

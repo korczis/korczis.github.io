@@ -17,7 +17,7 @@ og_description = "Rocnikac4: Učení a experimenty, C#, 2013, archiv. Zdrojový 
 og_image = "og/cs-work-rocnikac4.png"
 schema = "project"
 keywords = ["Rocnikac4", "Učení a experimenty", "C#", "2013", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["csharp", "dotnet", "repository", "commit", "open-source"]
+terms = ["csharp", "dotnet", "xml", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

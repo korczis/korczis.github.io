@@ -17,7 +17,7 @@ og_description = "happ: Učení a experimenty, C++, Objective-C a Swift, 2021, a
 og_image = "og/cs-work-happ.png"
 schema = "project"
 keywords = ["happ", "Učení a experimenty", "C++", "Objective-C", "Swift", "2021", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["cpp", "objective-c", "swift", "rust", "shell", "cmake", "c", "elixir", "phoenix", "haskell", "nodejs", "dockerfile", "postgresql", "elasticsearch", "kibana", "gitlab-ci", "repository", "commit", "open-source"]
+terms = ["cpp", "objective-c", "swift", "rust", "shell", "cmake", "c", "elixir", "phoenix", "haskell", "nodejs", "prolog", "swiftui", "opengl", "dockerfile", "postgresql", "elasticsearch", "kibana", "gitlab-ci", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

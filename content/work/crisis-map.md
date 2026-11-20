@@ -17,7 +17,7 @@ og_description = "Crisis map: Data and GIS in Elixir, JavaScript and CSS, 2026, 
 og_image = "og/work-crisis-map.png"
 schema = "project"
 keywords = ["Crisis map", "crisis-map", "Data and GIS", "Elixir", "JavaScript", "CSS", "2026", "GitHub", "Tomas Korcak", "korczis"]
-terms = ["elixir", "javascript", "css", "html", "postgis", "mcp", "phoenix", "ecto", "postgresql", "nominatim", "tailwind-css", "flowbite-pro", "openapi", "gis", "github-pages", "repository", "commit", "open-source"]
+terms = ["elixir", "javascript", "css", "html", "postgis", "mcp", "phoenix", "ecto", "postgresql", "nominatim", "leaflet", "tailwind-css", "flowbite-pro", "openapi", "gis", "github-pages", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

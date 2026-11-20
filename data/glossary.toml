@@ -34,7 +34,7 @@ reference = { title = "TypeScript handbook", url = "https://www.typescriptlang.o
 id = "ruby"
 term = "Ruby"
 kind = "language"
-aliases = ["Bundler", "RubyGems", "Rake"]
+aliases = ["Bundler", "RubyGems", "Rake", "RVM", "ERB"]
 definition = "A dynamic, expressive language designed for programmer happiness; many of the older tools here are Ruby."
 definition_cs = "Dynamický, expresivní jazyk navržený pro radost programátora; mnoho starších nástrojů tady je v Ruby."
 reference = { title = "ruby-lang.org", url = "https://www.ruby-lang.org/en/about/" }
@@ -52,7 +52,7 @@ reference = { title = "elixir-lang.org", url = "https://elixir-lang.org/" }
 id = "erlang"
 term = "Erlang"
 kind = "language"
-aliases = ["OTP", "ETS"]
+aliases = ["OTP", "ETS", "Erlang/OTP"]
 definition = "A language and runtime from telecoms, designed for systems that must keep running while parts of them fail."
 definition_cs = "Jazyk a běhové prostředí z telekomunikací, navržené pro systémy, které musí běžet, i když jejich části selhávají."
 reference = { title = "erlang.org", url = "https://www.erlang.org/" }
@@ -88,6 +88,7 @@ reference = { title = "GNU Bash manual", url = "https://www.gnu.org/software/bas
 id = "html"
 term = "HTML"
 kind = "language"
+aliases = ["HTML5"]
 definition = "The markup language of web pages: the structure that styles and scripts work on."
 definition_cs = "Značkovací jazyk webových stránek: struktura, se kterou pracují styly a skripty."
 reference = { title = "MDN Web Docs: HTML", url = "https://developer.mozilla.org/en-US/docs/Web/HTML" }
@@ -114,7 +115,7 @@ reference = { title = "C (Wikipedia)", url = "https://en.wikipedia.org/wiki/C_(p
 id = "cpp"
 term = "C++"
 kind = "language"
-aliases = ["C++"]
+aliases = ["C++", "C++11"]
 definition = "C with classes, templates and abstractions that cost nothing at run time; used where speed matters."
 definition_cs = "C s třídami, šablonami a abstrakcemi, které za běhu nic nestojí; tam, kde záleží na rychlosti."
 reference = { title = "cppreference.com", url = "https://en.cppreference.com/" }
@@ -132,6 +133,7 @@ reference = { title = "C# documentation", url = "https://learn.microsoft.com/en-
 id = "haskell"
 term = "Haskell"
 kind = "language"
+aliases = ["Cabal"]
 definition = "A purely functional language with lazy evaluation and a strong type system; a place to learn to think in types."
 definition_cs = "Čistě funkcionální jazyk s líným vyhodnocováním a silným typovým systémem; místo, kde se učí myslet v typech."
 reference = { title = "haskell.org", url = "https://www.haskell.org/" }
@@ -1347,6 +1349,7 @@ reference = { title = "SQLite documentation", url = "https://www.sqlite.org/docs
 id = "git"
 term = "Git"
 kind = "technology"
+aliases = ["Git submodules"]
 definition = "The distributed version-control system: every clone holds the full history of commits, branches and tags."
 definition_cs = "Distribuovaný systém správy verzí: každý klon drží celou historii commitů, větví a tagů."
 reference = { title = "Git documentation", url = "https://git-scm.com/doc" }
@@ -1516,6 +1519,7 @@ reference = { title = "Fly.io documentation", url = "https://fly.io/docs/" }
 id = "dotnet"
 term = ".NET"
 kind = "technology"
+aliases = ["System.Reflection"]
 definition = "Microsoft's runtime and libraries for C# and other languages, across Windows, Linux and macOS."
 definition_cs = "Běhové prostředí a knihovny Microsoftu pro C# a další jazyky na Windows, Linuxu i macOS."
 reference = { title = ".NET documentation", url = "https://learn.microsoft.com/en-us/dotnet/" }
@@ -1535,3 +1539,407 @@ kind = "technology"
 definition = "Apple's framework for the user interface of iOS apps: views, controllers, events."
 definition_cs = "Framework Applu pro uživatelské rozhraní aplikací pro iOS: pohledy, kontrolery, události."
 reference = { title = "UIKit documentation", url = "https://developer.apple.com/documentation/uikit" }
+
+[[terms]]
+id = "prolog"
+term = "Prolog"
+kind = "language"
+definition = "A logic programming language: a program is a set of facts and rules, and running it means asking a question the system proves by search and unification."
+definition_cs = "Jazyk logického programování: program je množina faktů a pravidel a spustit ho znamená položit dotaz, který systém dokáže prohledáváním a unifikací."
+reference = { title = "SWI-Prolog manual", url = "https://www.swi-prolog.org/pldoc/doc_for?object=manual" }
+
+[[terms]]
+id = "swiftui"
+term = "SwiftUI"
+kind = "technology"
+definition = "Apple's declarative user-interface framework in Swift: the view is a function of state, and the framework redraws what changed."
+definition_cs = "Deklarativní framework Applu pro uživatelské rozhraní ve Swiftu: pohled je funkcí stavu a framework překreslí, co se změnilo."
+reference = { title = "SwiftUI documentation", url = "https://developer.apple.com/documentation/swiftui" }
+
+[[terms]]
+id = "avfoundation"
+term = "AVFoundation"
+kind = "technology"
+definition = "Apple's framework for time-based media: camera capture, audio and video playback, recording and editing."
+definition_cs = "Framework Applu pro časová média: snímání z kamery, přehrávání, nahrávání a úpravy zvuku a videa."
+reference = { title = "AVFoundation documentation", url = "https://developer.apple.com/documentation/avfoundation" }
+
+[[terms]]
+id = "apple-vision"
+term = "Vision"
+title = "Vision, Apple's computer-vision framework"
+title_cs = "Vision, framework Applu pro počítačové vidění"
+kind = "technology"
+definition = "Apple's on-device computer-vision framework: text recognition, barcode and face detection, image analysis without a server."
+definition_cs = "Framework Applu pro počítačové vidění přímo v zařízení: rozpoznávání textu, detekce čárových kódů a obličejů, analýza obrazu bez serveru."
+reference = { title = "Vision documentation", url = "https://developer.apple.com/documentation/vision" }
+
+[[terms]]
+id = "xml"
+term = "XML"
+kind = "technology"
+definition = "The Extensible Markup Language: a tree of tagged elements and attributes, the exchange format of feeds, office documents and older APIs."
+definition_cs = "Rozšiřitelný značkovací jazyk: strom značkovaných elementů a atributů, výměnný formát feedů, kancelářských dokumentů a starších API."
+reference = { title = "W3C: Extensible Markup Language (XML)", url = "https://www.w3.org/XML/" }
+
+[[terms]]
+id = "png"
+term = "PNG"
+kind = "technology"
+definition = "Portable Network Graphics: a lossless raster image format made of chunks, with DEFLATE compression and an alpha channel."
+definition_cs = "Portable Network Graphics: bezztrátový rastrový formát obrázků složený z bloků, s kompresí DEFLATE a alfa kanálem."
+reference = { title = "W3C: PNG specification", url = "https://www.w3.org/TR/png/" }
+
+[[terms]]
+id = "logstash"
+term = "Logstash"
+kind = "technology"
+definition = "The ingestion pipeline of the Elastic stack: it reads logs and events, parses and enriches them, and ships them to Elasticsearch or elsewhere."
+definition_cs = "Ingestní pipeline stacku Elastic: čte logy a události, parsuje je a obohacuje a posílá je do Elasticsearch nebo jinam."
+reference = { title = "Logstash reference", url = "https://www.elastic.co/guide/en/logstash/current/index.html" }
+
+[[terms]]
+id = "vitest"
+term = "Vitest"
+kind = "technology"
+definition = "A fast test runner for JavaScript and TypeScript built on Vite, with a Jest-compatible API."
+definition_cs = "Rychlý spouštěč testů pro JavaScript a TypeScript postavený na Vite, s API kompatibilním s Jestem."
+reference = { title = "Vitest guide", url = "https://vitest.dev/guide/" }
+
+[[terms]]
+id = "jest"
+term = "Jest"
+kind = "technology"
+definition = "A JavaScript test framework with assertions, mocks and snapshot tests in one package."
+definition_cs = "Testovací framework pro JavaScript, který v jednom balíku spojuje aserce, mocky a snapshotové testy."
+reference = { title = "Jest documentation", url = "https://jestjs.io/docs/getting-started" }
+
+[[terms]]
+id = "google-test"
+term = "Google Test"
+kind = "technology"
+definition = "Google's C++ testing framework: test cases, fixtures, assertions and mocks (with Google Mock)."
+definition_cs = "Testovací framework Googlu pro C++: testovací případy, fixtury, aserce a mocky (s Google Mock)."
+reference = { title = "GoogleTest user's guide", url = "https://google.github.io/googletest/" }
+
+[[terms]]
+id = "pytest"
+term = "pytest"
+kind = "technology"
+definition = "The Python test framework where a test is a plain function with a plain assert, extended by fixtures and plugins."
+definition_cs = "Testovací framework pro Python, kde test je obyčejná funkce s obyčejným assertem, rozšířená o fixtury a pluginy."
+reference = { title = "pytest documentation", url = "https://docs.pytest.org/" }
+
+[[terms]]
+id = "html5-boilerplate"
+term = "HTML5 Boilerplate"
+kind = "technology"
+definition = "A front-end starter template: a tested baseline of HTML, CSS defaults and server configuration for a new site."
+definition_cs = "Startovací šablona pro front-end: ověřený základ HTML, výchozích stylů a konfigurace serveru pro nový web."
+reference = { title = "HTML5 Boilerplate", url = "https://html5boilerplate.com/" }
+
+[[terms]]
+id = "numpy"
+term = "NumPy"
+kind = "technology"
+definition = "The array library under scientific Python: n-dimensional arrays and vectorised maths that run as compiled code."
+definition_cs = "Knihovna polí pod vědeckým Pythonem: n-rozměrná pole a vektorizovaná matematika, která běží jako kompilovaný kód."
+reference = { title = "NumPy documentation", url = "https://numpy.org/doc/stable/" }
+
+[[terms]]
+id = "pandas"
+term = "pandas"
+kind = "technology"
+definition = "The Python library for tabular data: data frames to load, clean, join, group and summarise datasets."
+definition_cs = "Knihovna Pythonu pro tabulková data: datové rámce k načtení, čištění, spojování, seskupování a sumarizaci datových sad."
+reference = { title = "pandas documentation", url = "https://pandas.pydata.org/docs/" }
+
+[[terms]]
+id = "solr"
+term = "Solr"
+kind = "technology"
+aliases = ["Apache Solr"]
+definition = "Apache's search server on top of Lucene: full-text search, faceting and indexing behind an HTTP API."
+definition_cs = "Vyhledávací server Apache nad knihovnou Lucene: fulltextové vyhledávání, fasety a indexování za HTTP API."
+reference = { title = "Apache Solr reference guide", url = "https://solr.apache.org/guide/" }
+
+[[terms]]
+id = "fleet"
+term = "fleet"
+kind = "technology"
+definition = "CoreOS's distributed init system: it scheduled systemd units across a cluster of machines, a predecessor of Kubernetes scheduling."
+definition_cs = "Distribuovaný init systém CoreOS: plánoval jednotky systemd napříč clusterem strojů, předchůdce plánování v Kubernetes."
+reference = { title = "fleet on GitHub (archived)", url = "https://github.com/coreos/fleet" }
+
+[[terms]]
+id = "aws"
+term = "AWS"
+title = "Amazon Web Services"
+kind = "technology"
+aliases = ["Amazon Web Services", "AWS EC2", "AWS Route 53", "AWS Lambda", "AWS CLI", "Amazon S3"]
+definition = "Amazon's cloud platform: compute (EC2, Lambda), storage (S3), DNS (Route 53) and hundreds of managed services behind one API."
+definition_cs = "Cloudová platforma Amazonu: výpočetní kapacita (EC2, Lambda), úložiště (S3), DNS (Route 53) a stovky spravovaných služeb za jedním API."
+reference = { title = "AWS documentation", url = "https://docs.aws.amazon.com/" }
+
+[[terms]]
+id = "tokio"
+term = "Tokio"
+kind = "technology"
+aliases = ["tokio"]
+definition = "The asynchronous runtime for Rust: an event loop, tasks, timers and non-blocking I/O for network services."
+definition_cs = "Asynchronní runtime pro Rust: smyčka událostí, úlohy, časovače a neblokující I/O pro síťové služby."
+reference = { title = "Tokio tutorial", url = "https://tokio.rs/tokio/tutorial" }
+
+[[terms]]
+id = "grpc"
+term = "gRPC"
+kind = "technology"
+definition = "A remote procedure call framework over HTTP/2 with Protocol Buffers contracts, streaming and generated clients in many languages."
+definition_cs = "Framework pro vzdálené volání procedur přes HTTP/2 s kontrakty v Protocol Buffers, streamováním a generovanými klienty v mnoha jazycích."
+reference = { title = "gRPC documentation", url = "https://grpc.io/docs/" }
+
+[[terms]]
+id = "prometheus"
+term = "Prometheus"
+kind = "technology"
+definition = "A monitoring system and time-series database: it scrapes metrics over HTTP, stores them and evaluates queries and alerts in PromQL."
+definition_cs = "Monitorovací systém a databáze časových řad: stahuje metriky přes HTTP, ukládá je a vyhodnocuje dotazy a alerty v PromQL."
+reference = { title = "Prometheus documentation", url = "https://prometheus.io/docs/introduction/overview/" }
+
+[[terms]]
+id = "homebrew"
+term = "Homebrew"
+kind = "technology"
+definition = "The package manager for macOS (and Linux): formulae and casks that install command-line tools and applications."
+definition_cs = "Správce balíčků pro macOS (a Linux): formule a casky, které instalují nástroje příkazové řádky a aplikace."
+reference = { title = "Homebrew documentation", url = "https://docs.brew.sh/" }
+
+[[terms]]
+id = "rocksdb"
+term = "RocksDB"
+kind = "technology"
+definition = "An embedded key-value store on a log-structured merge tree, tuned for fast storage and heavy write loads."
+definition_cs = "Vestavěné úložiště klíč–hodnota nad LSM stromem, laděné pro rychlá úložiště a velkou zátěž zápisy."
+reference = { title = "RocksDB wiki", url = "https://github.com/facebook/rocksdb/wiki" }
+
+[[terms]]
+id = "libpcap"
+term = "libpcap"
+kind = "technology"
+definition = "The C library for packet capture behind tcpdump and Wireshark: it reads raw network traffic and filters it with BPF expressions."
+definition_cs = "Knihovna v C pro zachytávání paketů, na které stojí tcpdump a Wireshark: čte surový síťový provoz a filtruje ho výrazy BPF."
+reference = { title = "tcpdump and libpcap", url = "https://www.tcpdump.org/" }
+
+[[terms]]
+id = "llm"
+term = "LLM"
+title = "Large language models"
+title_cs = "Velké jazykové modely"
+kind = "technology"
+aliases = ["LLM prompting", "large language model"]
+definition = "Large language models: neural networks trained on text that generate, summarise, classify and extract from natural language, used through prompts and tools."
+definition_cs = "Velké jazykové modely: neuronové sítě trénované na textu, které generují, shrnují, klasifikují a vytěžují přirozený jazyk, používané přes prompty a nástroje."
+reference = { title = "Anthropic: Claude documentation", url = "https://docs.anthropic.com/" }
+
+[[terms]]
+id = "leaflet"
+term = "Leaflet"
+kind = "technology"
+definition = "A small JavaScript library for interactive maps: tile layers, markers, popups and GeoJSON in the browser."
+definition_cs = "Malá JavaScriptová knihovna pro interaktivní mapy: dlaždicové vrstvy, značky, popupy a GeoJSON v prohlížeči."
+reference = { title = "Leaflet documentation", url = "https://leafletjs.com/reference.html" }
+
+[[terms]]
+id = "three-js"
+term = "Three.js"
+kind = "technology"
+aliases = ["three.js"]
+definition = "A JavaScript 3D library over WebGL: scenes, cameras, meshes, materials and lights in the browser."
+definition_cs = "JavaScriptová 3D knihovna nad WebGL: scény, kamery, sítě, materiály a světla v prohlížeči."
+reference = { title = "three.js manual", url = "https://threejs.org/manual/" }
+
+[[terms]]
+id = "opengl"
+term = "OpenGL"
+kind = "technology"
+definition = "The cross-platform graphics API for 2D and 3D rendering on the GPU, with shaders written in GLSL."
+definition_cs = "Multiplatformní grafické API pro 2D a 3D vykreslování na GPU, se shadery psanými v GLSL."
+reference = { title = "Khronos: OpenGL", url = "https://www.khronos.org/opengl/" }
+
+[[terms]]
+id = "opencl"
+term = "OpenCL"
+kind = "technology"
+definition = "An open standard for parallel computing on GPUs, CPUs and other accelerators, with kernels written in a C dialect."
+definition_cs = "Otevřený standard pro paralelní výpočty na GPU, CPU a dalších akcelerátorech, s jádry psanými v dialektu C."
+reference = { title = "Khronos: OpenCL", url = "https://www.khronos.org/opencl/" }
+
+[[terms]]
+id = "exdoc"
+term = "ExDoc"
+kind = "technology"
+definition = "Elixir's documentation generator: it turns module docs and guides into the HTML and EPUB documentation on HexDocs."
+definition_cs = "Generátor dokumentace pro Elixir: z dokumentace modulů a průvodců dělá HTML a EPUB dokumentaci na HexDocs."
+reference = { title = "ExDoc on HexDocs", url = "https://hexdocs.pm/ex_doc/readme.html" }
+
+[[terms]]
+id = "credo"
+term = "Credo"
+kind = "technology"
+definition = "A static analysis tool for Elixir focused on consistency and teaching: it flags readability, design and refactoring issues."
+definition_cs = "Nástroj statické analýzy pro Elixir zaměřený na konzistenci a výuku: upozorňuje na problémy čitelnosti, návrhu a refaktoringu."
+reference = { title = "Credo on HexDocs", url = "https://hexdocs.pm/credo/overview.html" }
+
+[[terms]]
+id = "mnesia"
+term = "Mnesia"
+kind = "technology"
+definition = "The distributed database built into Erlang/OTP: tables of Erlang terms, in memory or on disk, replicated across nodes with transactions."
+definition_cs = "Distribuovaná databáze vestavěná v Erlang/OTP: tabulky erlangových termů v paměti nebo na disku, replikované mezi uzly s transakcemi."
+reference = { title = "Erlang/OTP: Mnesia user's guide", url = "https://www.erlang.org/doc/apps/mnesia/mnesia_overview.html" }
+
+[[terms]]
+id = "cachex"
+term = "Cachex"
+kind = "technology"
+definition = "An in-memory caching library for Elixir on ETS, with expiration, limits, hooks and transactions."
+definition_cs = "Knihovna pro cache v paměti pro Elixir nad ETS, s expirací, limity, hooky a transakcemi."
+reference = { title = "Cachex on HexDocs", url = "https://hexdocs.pm/cachex/" }
+
+[[terms]]
+id = "open-api-spex"
+term = "OpenApiSpex"
+kind = "technology"
+definition = "An Elixir library that describes a Phoenix API in OpenAPI 3, validates requests against it and serves the spec and Swagger UI."
+definition_cs = "Knihovna pro Elixir, která popisuje API ve Phoenixu v OpenAPI 3, validuje proti tomu popisu požadavky a servíruje specifikaci a Swagger UI."
+reference = { title = "OpenApiSpex on HexDocs", url = "https://hexdocs.pm/open_api_spex/readme.html" }
+
+[[terms]]
+id = "nokogiri"
+term = "Nokogiri"
+kind = "technology"
+definition = "Ruby's HTML and XML parser on libxml2: CSS and XPath queries over a document tree, the base of most Ruby scrapers."
+definition_cs = "Parser HTML a XML pro Ruby nad libxml2: dotazy CSS a XPath nad stromem dokumentu, základ většiny scraperů v Ruby."
+reference = { title = "Nokogiri", url = "https://nokogiri.org/" }
+
+[[terms]]
+id = "yeoman"
+term = "Yeoman"
+kind = "technology"
+definition = "A scaffolding tool for web projects: generators that create a project's files, build setup and conventions from a template."
+definition_cs = "Nástroj pro generování kostry webových projektů: generátory vytvářejí ze šablony soubory projektu, nastavení buildu a konvence."
+reference = { title = "Yeoman", url = "https://yeoman.io/" }
+
+[[terms]]
+id = "github-api"
+term = "GitHub API"
+kind = "technology"
+definition = "GitHub's REST and GraphQL APIs for repositories, issues, pull requests, users and events; this site reads its data from them."
+definition_cs = "REST a GraphQL API GitHubu pro repozitáře, issues, pull requesty, uživatele a události; tento web z nich čte svá data."
+reference = { title = "GitHub REST API documentation", url = "https://docs.github.com/en/rest" }
+
+[[terms]]
+id = "redux"
+term = "Redux"
+kind = "technology"
+definition = "A predictable state container: the whole state in one store, changed only by actions through pure reducer functions."
+definition_cs = "Předvídatelný kontejner stavu: celý stav v jednom storu, měněný jen akcemi přes čisté funkce reducerů."
+reference = { title = "Redux documentation", url = "https://redux.js.org/" }
+
+[[terms]]
+id = "brunch"
+term = "Brunch"
+kind = "technology"
+definition = "A fast front-end build tool driven by conventions; Phoenix used it for assets before esbuild."
+definition_cs = "Rychlý front-endový build nástroj řízený konvencemi; Phoenix ho používal pro assety před esbuildem."
+reference = { title = "Brunch", url = "https://brunch.io/" }
+
+[[terms]]
+id = "esbuild"
+term = "esbuild"
+kind = "technology"
+definition = "An extremely fast JavaScript and CSS bundler and minifier written in Go; Phoenix builds its assets with it."
+definition_cs = "Extrémně rychlý bundler a minifikátor JavaScriptu a CSS napsaný v Go; Phoenix s ním sestavuje své assety."
+reference = { title = "esbuild documentation", url = "https://esbuild.github.io/" }
+
+[[terms]]
+id = "virtualbox"
+term = "VirtualBox"
+kind = "technology"
+definition = "Oracle's open-source hypervisor for desktop machines: virtual machines for development and testing, often driven by Vagrant."
+definition_cs = "Open-source hypervizor Oraclu pro desktopové stroje: virtuální stroje pro vývoj a testování, často řízené Vagrantem."
+reference = { title = "VirtualBox manual", url = "https://www.virtualbox.org/manual/" }
+
+[[terms]]
+id = "tera"
+term = "Tera"
+kind = "technology"
+definition = "A template engine for Rust inspired by Jinja2: inheritance, macros, filters; the static-site generator Zola renders its pages with it."
+definition_cs = "Šablonovací engine pro Rust inspirovaný Jinja2: dědičnost, makra, filtry; statický generátor Zola s ním vykresluje stránky."
+reference = { title = "Tera documentation", url = "https://keats.github.io/tera/docs/" }
+
+[[terms]]
+id = "kuzudb"
+term = "KuzuDB"
+kind = "technology"
+definition = "An embedded graph database with Cypher queries and columnar storage, built for analytical queries over large graphs."
+definition_cs = "Vestavěná grafová databáze s dotazy v Cypheru a sloupcovým úložištěm, stavěná pro analytické dotazy nad velkými grafy."
+reference = { title = "Kuzu on GitHub", url = "https://github.com/kuzudb/kuzu" }
+
+[[terms]]
+id = "couchdb"
+term = "CouchDB"
+kind = "technology"
+definition = "Apache's document database: JSON documents over HTTP, MapReduce views and multi-master replication."
+definition_cs = "Dokumentová databáze Apache: JSON dokumenty přes HTTP, pohledy MapReduce a replikace multi-master."
+reference = { title = "Apache CouchDB documentation", url = "https://docs.couchdb.org/" }
+
+[[terms]]
+id = "superagent"
+term = "superagent"
+kind = "technology"
+definition = "A small HTTP client for Node.js and browsers with a chainable API for requests, headers and responses."
+definition_cs = "Malý HTTP klient pro Node.js a prohlížeče se zřetězitelným API pro požadavky, hlavičky a odpovědi."
+reference = { title = "superagent documentation", url = "https://ladjs.github.io/superagent/" }
+
+[[terms]]
+id = "systemd"
+term = "systemd"
+kind = "technology"
+definition = "The init system and service manager of most Linux distributions: units, dependencies, timers, logging (journald)."
+definition_cs = "Init systém a správce služeb většiny linuxových distribucí: jednotky, závislosti, časovače, logování (journald)."
+reference = { title = "systemd", url = "https://systemd.io/" }
+
+[[terms]]
+id = "peg-js"
+term = "PEG.js"
+kind = "technology"
+aliases = ["Peggy"]
+definition = "A parser generator for JavaScript: a grammar in parsing-expression form becomes a fast parser with good error messages."
+definition_cs = "Generátor parserů pro JavaScript: z gramatiky ve tvaru parsing expression grammar vznikne rychlý parser s dobrými chybovými hláškami."
+reference = { title = "Peggy (the maintained PEG.js)", url = "https://peggyjs.org/" }
+
+[[terms]]
+id = "fail2ban"
+term = "fail2ban"
+kind = "technology"
+definition = "An intrusion-prevention daemon: it reads server logs and bans addresses that keep failing to authenticate."
+definition_cs = "Démon pro prevenci průniků: čte logy serveru a blokuje adresy, které opakovaně selhávají při přihlášení."
+reference = { title = "fail2ban on GitHub", url = "https://github.com/fail2ban/fail2ban" }
+
+[[terms]]
+id = "cockpit"
+term = "Cockpit"
+kind = "technology"
+definition = "A web console for Linux servers: services, logs, storage, networking and containers administered from the browser."
+definition_cs = "Webová konzole pro linuxové servery: služby, logy, úložiště, síť a kontejnery spravované z prohlížeče."
+reference = { title = "Cockpit project", url = "https://cockpit-project.org/" }
+
+[[terms]]
+id = "curl"
+term = "curl"
+kind = "technology"
+aliases = ["libcurl"]
+definition = "The command-line tool and library (libcurl) for transferring data over URLs: HTTP, FTP and dozens of other protocols."
+definition_cs = "Nástroj příkazové řádky a knihovna (libcurl) pro přenos dat přes URL: HTTP, FTP a desítky dalších protokolů."
+reference = { title = "curl documentation", url = "https://curl.se/docs/" }

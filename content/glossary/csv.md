@@ -3,7 +3,7 @@
 title = "CSV"
 description = "Comma-separated values: a table as plain text, one record per line, the common format of data exports and open data."
 template = "term.html"
-weight = 58
+weight = 66
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

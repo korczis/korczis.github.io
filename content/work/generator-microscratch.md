@@ -17,7 +17,7 @@ og_description = "generator-microscratch: Tools in JavaScript, 2014, archive. So
 og_image = "og/work-generator-microscratch.png"
 schema = "project"
 keywords = ["generator-microscratch", "Tools", "JavaScript", "2014", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["javascript", "nodejs", "bower", "mocha", "travis-ci", "open-source", "repository", "commit"]
+terms = ["javascript", "nodejs", "yeoman", "bower", "mocha", "travis-ci", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

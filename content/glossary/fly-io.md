@@ -3,7 +3,7 @@
 title = "Fly.io"
 description = "A platform that runs applications as micro-VMs close to their users, deployed from a Dockerfile."
 template = "term.html"
-weight = 70
+weight = 83
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "A platform that runs applications as micro-VMs close to their user
 aliases = []
 reference = { title = "Fly.io documentation", url = "https://fly.io/docs/" }
 pages = ["work/el-magico-cache.md", "work/korczis-gitlab-io.md", "work/sig.md"]
-related = ["commit", "elixir", "open-source", "repository", "dockerfile", "eex", "html", "phoenix"]
+related = ["commit", "elixir", "open-source", "repository", "dockerfile", "eex", "html", "open-api-spex"]
 og_title = "Fly.io: glossary"
 og_image = "og/glossary-fly-io.png"
 keywords = ["Fly.io", "Technology", "Glossary", "Tomas Korcak"]

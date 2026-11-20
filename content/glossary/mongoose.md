@@ -3,7 +3,7 @@
 title = "Mongoose"
 description = "An object-document mapper for MongoDB in Node.js, with schemas, validation and queries."
 template = "term.html"
-weight = 97
+weight = 122
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

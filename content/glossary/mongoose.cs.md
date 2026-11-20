@@ -3,7 +3,7 @@
 title = "Mongoose"
 description = "Objektově-dokumentový mapper pro MongoDB v Node.js se schématy, validací a dotazy."
 template = "term.html"
-weight = 97
+weight = 122
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

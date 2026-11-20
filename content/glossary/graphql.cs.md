@@ -3,7 +3,7 @@
 title = "GraphQL"
 description = "Dotazovací jazyk pro API, ve kterém si klient řekne přesně o pole, která potřebuje, podle typovaného schématu."
 template = "term.html"
-weight = 77
+weight = 92
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

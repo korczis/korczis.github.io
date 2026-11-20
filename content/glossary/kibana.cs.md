@@ -3,7 +3,7 @@
 title = "Kibana"
 description = "Rozhraní pro dashboardy a průzkum dat v sadě Elastic, nad daty uloženými v Elasticsearch."
 template = "term.html"
-weight = 88
+weight = 107
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

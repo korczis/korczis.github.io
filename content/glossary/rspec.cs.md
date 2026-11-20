@@ -3,7 +3,7 @@
 title = "RSpec"
 description = "Testovací framework pro Ruby ve stylu BDD, se specifikacemi, které se čtou skoro jako běžná angličtina."
 template = "term.html"
-weight = 113
+weight = 150
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Testovací framework pro Ruby ve stylu BDD, se specifikacemi, které se čtou skoro jako běžná angličtina."
 aliases = []
 reference = { title = "RSpec", url = "https://rspec.info/" }
-pages = ["skills/media-forensics.cs.md", "work/apollon.cs.md", "work/csv2psql.cs.md", "work/esri.cs.md", "work/gooddata-connectors-metadata.cs.md"]
-related = ["commit", "open-source", "repository", "ruby", "gli", "postgresql", "dockerfile", "gis"]
+pages = ["work/apollon.cs.md", "work/csv2psql.cs.md", "work/esri.cs.md", "work/gooddata-connectors-metadata.cs.md"]
+related = ["commit", "open-source", "repository", "ruby", "gli", "gis", "github-pages", "postgresql"]
 og_title = "RSpec: slovník"
 og_image = "og/cs-glossary-rspec.png"
 keywords = ["RSpec", "Technologie", "Slovník", "Tomáš Korčák"]

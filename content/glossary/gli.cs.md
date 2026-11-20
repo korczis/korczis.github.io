@@ -3,7 +3,7 @@
 title = "GLI"
 description = "Knihovna Ruby pro stavbu aplikací příkazové řádky ve stylu gitu, s příkazy, přepínači a nápovědou."
 template = "term.html"
-weight = 75
+weight = 89
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -17,7 +17,7 @@ definition = "Knihovna Ruby pro stavbu aplikací příkazové řádky ve stylu g
 aliases = []
 reference = { title = "GLI on GitHub", url = "https://github.com/davetron5000/gli" }
 pages = ["work/apollon.cs.md", "work/cluster.cs.md", "work/csv2psql.cs.md", "work/esri.cs.md", "work/grache.cs.md"]
-related = ["commit", "open-source", "repository", "ruby", "rspec", "coreos", "github-pages", "kubernetes"]
+related = ["commit", "open-source", "repository", "ruby", "aws", "rspec", "coreos", "github-pages"]
 og_title = "GLI: slovník"
 og_image = "og/cs-glossary-gli.png"
 keywords = ["GLI", "Technologie", "Slovník", "Tomáš Korčák"]

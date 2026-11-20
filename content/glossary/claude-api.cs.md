@@ -3,7 +3,7 @@
 title = "Claude API"
 description = "API společnosti Anthropic k modelům Claude: zprávy, používání nástrojů a agenti, kteří čtou, uvažují a jednají."
 template = "term.html"
-weight = 54
+weight = 59
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -16,7 +16,7 @@ kind = "technology"
 definition = "API společnosti Anthropic k modelům Claude: zprávy, používání nástrojů a agenti, kteří čtou, uvažují a jednají."
 aliases = ["claude-code", "Claude"]
 reference = { title = "Claude API documentation", url = "https://docs.anthropic.com/" }
-pages = ["services/ai-engineering-governance.cs.md", "services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "services/decision-support-ai.cs.md", "services/digital-forensics.cs.md", "services/digital-investigation.cs.md", "services/due-diligence.cs.md", "services/m-and-a.cs.md", "services/reputation-intelligence.cs.md", "skills/ai-transformation.cs.md", "skills/audit-trail.cs.md", "skills/data-integration.cs.md", "skills/data-room.cs.md", "skills/document-extraction.cs.md", "skills/due-diligence.cs.md", "skills/entity-resolution.cs.md", "skills/insolvency-monitoring.cs.md", "skills/knowledge-graph.cs.md", "skills/llm-agents.cs.md", "skills/m-and-a-screening.cs.md", "skills/market-intelligence.cs.md", "skills/media-forensics.cs.md", "skills/narrative-analysis.cs.md", "skills/orchestration.cs.md", "skills/osint-investigation.cs.md", "skills/risk-scoring.cs.md", "_index.cs.md"]
+pages = ["services/ai-engineering-governance.cs.md", "services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "services/decision-support-ai.cs.md", "services/digital-forensics.cs.md", "services/digital-investigation.cs.md", "services/m-and-a.cs.md", "services/reputation-intelligence.cs.md", "skills/ai-transformation.cs.md", "skills/audit-trail.cs.md", "skills/data-integration.cs.md", "skills/data-room.cs.md", "skills/document-extraction.cs.md", "skills/due-diligence.cs.md", "skills/entity-resolution.cs.md", "skills/insolvency-monitoring.cs.md", "skills/knowledge-graph.cs.md", "skills/llm-agents.cs.md", "skills/m-and-a-screening.cs.md", "skills/market-intelligence.cs.md", "skills/media-forensics.cs.md", "skills/narrative-analysis.cs.md", "skills/orchestration.cs.md", "skills/osint-investigation.cs.md", "skills/risk-scoring.cs.md", "_index.cs.md"]
 related = ["html", "javascript", "dockerfile", "flowbite-pro", "alpine-js", "skill", "fastapi", "python"]
 og_title = "Claude API: slovník"
 og_image = "og/cs-glossary-claude-api.png"

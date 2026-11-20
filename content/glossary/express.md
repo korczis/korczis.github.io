@@ -3,7 +3,7 @@
 title = "Express"
 description = "A minimal web framework for Node.js: routes and middleware for HTTP servers and APIs."
 template = "term.html"
-weight = 67
+weight = 78
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

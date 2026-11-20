@@ -3,7 +3,7 @@
 title = "Swift"
 description = "Apple's language for iOS and macOS applications. A term of the glossary."
 template = "term.html"
-weight = 37
+weight = 38
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]

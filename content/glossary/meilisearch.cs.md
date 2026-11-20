@@ -3,7 +3,7 @@
 title = "Meilisearch"
 description = "Rychlý open-source vyhledávač s tolerancí překlepů a filtry, použitý pro fulltext nad sebranými důkazy."
 template = "term.html"
-weight = 94
+weight = 118
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

@@ -17,7 +17,7 @@ og_description = "algoglyph: Věda a vizualizace, TypeScript, Rust a JavaScript,
 og_image = "og/cs-work-algoglyph.png"
 schema = "project"
 keywords = ["algoglyph", "Věda a vizualizace", "TypeScript", "Rust", "JavaScript", "algorithms", "alpinejs", "creative-coding", "data-visualization", "flowbite", "generative-art", "2026", "GitHub", "Tomáš Korčák", "korczis"]
-terms = ["typescript", "rust", "javascript", "html", "shell", "just", "p5-js", "apache-echarts", "alpine-js", "flowbite-pro", "tailwind-css", "axe-core", "github-pages", "data-visualisation", "repository", "commit", "open-source"]
+terms = ["typescript", "rust", "javascript", "html", "shell", "just", "p5-js", "apache-echarts", "alpine-js", "flowbite-pro", "tailwind-css", "vitest", "axe-core", "github-pages", "data-visualisation", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

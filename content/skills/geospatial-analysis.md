@@ -13,7 +13,7 @@ skill = "geospatial-analysis"
 og_title = "Geospatial analysis: skills"
 og_image = "og/skill-geospatial-analysis.png"
 schema = "skill"
-terms = ["skill", "gis", "dockerfile", "nominatim", "postgis", "shell", "elixir", "javascript", "postgresql", "tailwind-css", "coreos", "couchbase"]
+terms = ["skill", "gis", "dockerfile", "nominatim", "postgis", "shell", "elixir", "javascript", "postgresql", "tailwind-css", "cachex", "coreos"]
 keywords = ["Geospatial analysis", "Interactive data products and simulators", "Tomas Korcak"]
 
 [[extra.viz]]

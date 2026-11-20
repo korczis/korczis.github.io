@@ -3,7 +3,7 @@
 title = "Service"
 description = "Something the owner offers a client: a problem it solves, the principle it rests on, the method and what is delivered."
 template = "term.html"
-weight = 169
+weight = 218
 
 [taxonomies]
 tags = ["Glossary", "Concept"]

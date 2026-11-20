@@ -3,7 +3,7 @@
 title = "Couchbase"
 description = "A distributed document database with a memory-first cache and a SQL-like query language, N1QL."
 template = "term.html"
-weight = 56
+weight = 62
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "A distributed document database with a memory-first cache and a SQL-like query language, N1QL."
 aliases = []
 reference = { title = "Couchbase documentation", url = "https://docs.couchbase.com/home/index.html" }
-pages = ["skills/geospatial-analysis.md", "skills/web-automation.md", "work/cluster-kubernetes.md", "work/docks.md", "work/gauc-ex.md", "work/jetel.md", "work/microcrawler-elixir.md", "work/microcrawler-js.md", "work/the-scratch.md", "work/wangsta.md"]
-related = ["commit", "open-source", "repository", "elasticsearch", "shell", "dockerfile", "elixir", "gis"]
+pages = ["skills/web-automation.md", "work/cluster-kubernetes.md", "work/docks.md", "work/gauc-ex.md", "work/jetel.md", "work/microcrawler-elixir.md", "work/microcrawler-js.md", "work/the-scratch.md", "work/wangsta.md"]
+related = ["commit", "open-source", "repository", "elasticsearch", "shell", "rabbitmq", "dockerfile", "elixir"]
 og_title = "Couchbase: glossary"
 og_image = "og/glossary-couchbase.png"
 keywords = ["Couchbase", "Technology", "Glossary", "Tomas Korcak"]

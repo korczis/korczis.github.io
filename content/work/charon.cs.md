@@ -17,7 +17,7 @@ og_description = "charon: Nástroje, Rust a Makefile, 2016, archiv. Zdrojový k�
 og_image = "og/cs-work-charon.png"
 schema = "project"
 keywords = ["charon", "Nástroje", "Rust", "Makefile", "2016", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["rust", "makefile", "clap", "travis-ci", "open-source", "repository", "commit"]
+terms = ["rust", "makefile", "libpcap", "clap", "travis-ci", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

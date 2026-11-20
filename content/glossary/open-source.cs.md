@@ -3,7 +3,7 @@
 title = "Open source"
 description = "Software, jehož zdrojový kód může kdokoli číst, používat, měnit a sdílet podle jeho licence."
 template = "term.html"
-weight = 159
+weight = 208
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

@@ -3,7 +3,7 @@
 title = "Guardian"
 description = "Knihovna pro autentizaci tokeny v Elixiru, nejčastěji vydávající JSON Web Tokeny."
 template = "term.html"
-weight = 79
+weight = 95
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

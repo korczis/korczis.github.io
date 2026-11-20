@@ -3,7 +3,7 @@
 title = "Kritika zdrojů"
 description = "Posouzení zdroje dřív, než se mu uvěří: kdo ho vytvořil, kdy, jak a proč a zda se shodují nezávislé zdroje."
 template = "term.html"
-weight = 171
+weight = 220
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

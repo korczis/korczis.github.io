@@ -3,7 +3,7 @@
 title = "Absinthe"
 description = "Sada nástrojů GraphQL pro Elixir: schéma v kódu Elixiru, které vyhodnocuje dotazy, mutace a odběry."
 template = "term.html"
-weight = 42
+weight = 43
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

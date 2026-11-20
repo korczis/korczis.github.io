@@ -3,7 +3,7 @@
 title = "Majordomus"
 description = "Vlastníkova dohledová vrstva pro práci s AI: jedna politika pro každého agenta, vymezené úkoly a dokončení, která musí být doložena."
 template = "term.html"
-weight = 91
+weight = 115
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]

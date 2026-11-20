@@ -3,7 +3,7 @@
 title = "jQuery"
 description = "A JavaScript library that made DOM manipulation, events and AJAX uniform across browsers."
 template = "term.html"
-weight = 85
+weight = 104
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

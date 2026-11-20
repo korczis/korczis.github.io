@@ -3,7 +3,7 @@
 title = "RSpec"
 description = "A behaviour-driven testing framework for Ruby, with specs that read close to plain English."
 template = "term.html"
-weight = 113
+weight = 150
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -16,8 +16,8 @@ kind = "technology"
 definition = "A behaviour-driven testing framework for Ruby, with specs that read close to plain English."
 aliases = []
 reference = { title = "RSpec", url = "https://rspec.info/" }
-pages = ["skills/media-forensics.md", "work/apollon.md", "work/csv2psql.md", "work/esri.md", "work/gooddata-connectors-metadata.md"]
-related = ["commit", "open-source", "repository", "ruby", "gli", "postgresql", "dockerfile", "gis"]
+pages = ["work/apollon.md", "work/csv2psql.md", "work/esri.md", "work/gooddata-connectors-metadata.md"]
+related = ["commit", "open-source", "repository", "ruby", "gli", "gis", "github-pages", "postgresql"]
 og_title = "RSpec: glossary"
 og_image = "og/glossary-rspec.png"
 keywords = ["RSpec", "Technology", "Glossary", "Tomas Korcak"]

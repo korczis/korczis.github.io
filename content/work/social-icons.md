@@ -17,7 +17,7 @@ og_description = "social-icons: Systems and infrastructure, 2013, archive. Sourc
 og_image = "og/work-social-icons.png"
 schema = "project"
 keywords = ["social-icons", "Systems and infrastructure", "2013", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["repository", "commit", "open-source"]
+terms = ["png", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

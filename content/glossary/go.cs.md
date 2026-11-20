@@ -17,7 +17,7 @@ definition = "Kompilovaný jazyk od Googlu s gorutinami a kanály pro souběžno
 aliases = ["Golang"]
 reference = { title = "The Go Programming Language", url = "https://go.dev/doc/" }
 pages = ["work/apollo-box.cs.md", "work/docker-datasciencetoolbox.cs.md", "work/rest-hello-world-benchmark.cs.md"]
-related = ["commit", "open-source", "repository", "jq", "nodejs", "python", "ubuntu", "cowboy"]
+related = ["commit", "open-source", "repository", "jq", "nodejs", "numpy", "pandas", "python"]
 og_title = "Go: slovník"
 og_image = "og/cs-glossary-go.png"
 keywords = ["Go", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

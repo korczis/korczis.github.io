@@ -3,7 +3,7 @@
 title = "etcd"
 description = "A distributed, consistent key-value store (Raft) for configuration and service discovery; Kubernetes keeps its state in it."
 template = "term.html"
-weight = 66
+weight = 76
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "A distributed, consistent key-value store (Raft) for configuration
 aliases = []
 reference = { title = "etcd documentation", url = "https://etcd.io/docs/" }
 pages = ["work/apollon.md", "work/cluster-kubernetes.md", "work/microcrawler.md"]
-related = ["commit", "open-source", "repository", "coreos", "dockerfile", "kubernetes", "shell", "couchbase"]
+related = ["commit", "open-source", "repository", "coreos", "dockerfile", "fleet", "kubernetes", "shell"]
 og_title = "etcd: glossary"
 og_image = "og/glossary-etcd.png"
 keywords = ["etcd", "Technology", "Glossary", "Tomas Korcak"]

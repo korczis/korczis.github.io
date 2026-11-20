@@ -328,7 +328,7 @@
    "url": "https://korczis.github.io/cs/glossary/",
    "lang": "cs",
    "title": "Slovník · Tomas Korcak",
-   "description": "175 pojmů, kterými se web vysvětluje: jazyky, technologie a koncepty, každý definovaný, se zdrojem a s odkazem na stránky, které ho používají.",
+   "description": "224 pojmů, kterými se web vysvětluje: jazyky, technologie a koncepty, každý definovaný, se zdrojem a s odkazem na stránky, které ho používají.",
    "type": "glossary",
    "category": null,
    "og_image": "https://korczis.github.io/og/cs-glossary.png",
@@ -438,6 +438,22 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/apple-vision/",
+   "lang": "cs",
+   "title": "Vision, framework Applu pro počítačové vidění",
+   "description": "Framework Applu pro počítačové vidění přímo v zařízení: rozpoznávání textu, detekce čárových kódů a obličejů, analýza obrazu bez serveru.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-apple-vision.png",
+   "keywords": [
+    "Vision, framework Applu pro počítačové vidění",
+    "Vision",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/arduino/",
    "lang": "cs",
    "title": "Arduino (programovací jazyk)",
@@ -480,6 +496,36 @@
     "Auditní stopa",
     "Audit trail",
     "Koncept",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/avfoundation/",
+   "lang": "cs",
+   "title": "AVFoundation (technologie)",
+   "description": "Framework Applu pro časová média: snímání z kamery, přehrávání, nahrávání a úpravy zvuku a videa.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-avfoundation.png",
+   "keywords": [
+    "AVFoundation",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/aws/",
+   "lang": "cs",
+   "title": "AWS",
+   "description": "Cloudová platforma Amazonu: výpočetní kapacita (EC2, Lambda), úložiště (S3), DNS (Route 53) a stovky spravovaných služeb za jedním API.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-aws.png",
+   "keywords": [
+    "AWS",
+    "Technologie",
     "Slovník",
     "Tomáš Korčák"
    ]
@@ -576,6 +622,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/brunch/",
+   "lang": "cs",
+   "title": "Brunch (technologie)",
+   "description": "Rychlý front-endový build nástroj řízený konvencemi; Phoenix ho používal pro assety před esbuildem.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-brunch.png",
+   "keywords": [
+    "Brunch",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/c/",
    "lang": "cs",
    "title": "C (programovací jazyk)",
@@ -586,6 +647,21 @@
    "keywords": [
     "C (programovací jazyk)",
     "Programovací jazyk",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/cachex/",
+   "lang": "cs",
+   "title": "Cachex (technologie)",
+   "description": "Knihovna pro cache v paměti pro Elixir nad ETS, s expirací, limity, hooky a transakcemi.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-cachex.png",
+   "keywords": [
+    "Cachex",
+    "Technologie",
     "Slovník",
     "Tomáš Korčák"
    ]
@@ -714,6 +790,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/cockpit/",
+   "lang": "cs",
+   "title": "Cockpit (technologie)",
+   "description": "Webová konzole pro linuxové servery: služby, logy, úložiště, síť a kontejnery spravované z prohlížeče.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-cockpit.png",
+   "keywords": [
+    "Cockpit",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/coffeescript/",
    "lang": "cs",
    "title": "CoffeeScript (programovací jazyk)",
@@ -790,6 +881,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/couchdb/",
+   "lang": "cs",
+   "title": "CouchDB (technologie)",
+   "description": "Dokumentová databáze Apache: JSON dokumenty přes HTTP, pohledy MapReduce a replikace multi-master.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-couchdb.png",
+   "keywords": [
+    "CouchDB",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/cowboy/",
    "lang": "cs",
    "title": "Cowboy (technologie)",
@@ -815,6 +921,21 @@
    "keywords": [
     "C++",
     "Programovací jazyk",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/credo/",
+   "lang": "cs",
+   "title": "Credo (technologie)",
+   "description": "Nástroj statické analýzy pro Elixir zaměřený na konzistenci a výuku: upozorňuje na problémy čitelnosti, návrhu a refaktoringu.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-credo.png",
+   "keywords": [
+    "Credo",
+    "Technologie",
     "Slovník",
     "Tomáš Korčák"
    ]
@@ -859,6 +980,21 @@
    "og_image": "https://korczis.github.io/og/cs-glossary-csv.png",
    "keywords": [
     "CSV",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/curl/",
+   "lang": "cs",
+   "title": "curl (technologie)",
+   "description": "Nástroj příkazové řádky a knihovna (libcurl) pro přenos dat přes URL: HTTP, FTP a desítky dalších protokolů.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-curl.png",
+   "keywords": [
+    "curl",
     "Technologie",
     "Slovník",
     "Tomáš Korčák"
@@ -1124,6 +1260,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/esbuild/",
+   "lang": "cs",
+   "title": "esbuild (technologie)",
+   "description": "Extrémně rychlý bundler a minifikátor JavaScriptu a CSS napsaný v Go; Phoenix s ním sestavuje své assety.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-esbuild.png",
+   "keywords": [
+    "esbuild",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/eslint/",
    "lang": "cs",
    "title": "ESLint (technologie)",
@@ -1154,6 +1305,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/exdoc/",
+   "lang": "cs",
+   "title": "ExDoc (technologie)",
+   "description": "Generátor dokumentace pro Elixir: z dokumentace modulů a průvodců dělá HTML a EPUB dokumentaci na HexDocs.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-exdoc.png",
+   "keywords": [
+    "ExDoc",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/express/",
    "lang": "cs",
    "title": "Express (technologie)",
@@ -1163,6 +1329,21 @@
    "og_image": "https://korczis.github.io/og/cs-glossary-express.png",
    "keywords": [
     "Express",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/fail2ban/",
+   "lang": "cs",
+   "title": "fail2ban (technologie)",
+   "description": "Démon pro prevenci průniků: čte logy serveru a blokuje adresy, které opakovaně selhávají při přihlášení.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-fail2ban.png",
+   "keywords": [
+    "fail2ban",
     "Technologie",
     "Slovník",
     "Tomáš Korčák"
@@ -1195,6 +1376,21 @@
     "Analýza účetních výkazů",
     "Financial statement analysis",
     "Koncept",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/fleet/",
+   "lang": "cs",
+   "title": "fleet (technologie)",
+   "description": "Distribuovaný init systém CoreOS: plánoval jednotky systemd napříč clusterem strojů, předchůdce plánování v Kubernetes.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-fleet.png",
+   "keywords": [
+    "fleet",
+    "Technologie",
     "Slovník",
     "Tomáš Korčák"
    ]
@@ -1305,6 +1501,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/github-api/",
+   "lang": "cs",
+   "title": "GitHub API (technologie)",
+   "description": "REST a GraphQL API GitHubu pro repozitáře, issues, pull requesty, uživatele a události; tento web z nich čte svá data.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-github-api.png",
+   "keywords": [
+    "GitHub API",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/github-pages/",
    "lang": "cs",
    "title": "GitHub Pages (technologie)",
@@ -1365,6 +1576,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/google-test/",
+   "lang": "cs",
+   "title": "Google Test (technologie)",
+   "description": "Testovací framework Googlu pro C++: testovací případy, fixtury, aserce a mocky (s Google Mock).",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-google-test.png",
+   "keywords": [
+    "Google Test",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/grafana/",
    "lang": "cs",
    "title": "Grafana (technologie)",
@@ -1389,6 +1615,21 @@
    "og_image": "https://korczis.github.io/og/cs-glossary-graphql.png",
    "keywords": [
     "GraphQL",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/grpc/",
+   "lang": "cs",
+   "title": "gRPC (technologie)",
+   "description": "Framework pro vzdálené volání procedur přes HTTP/2 s kontrakty v Protocol Buffers, streamováním a generovanými klienty v mnoha jazycích.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-grpc.png",
+   "keywords": [
+    "gRPC",
     "Technologie",
     "Slovník",
     "Tomáš Korčák"
@@ -1470,6 +1711,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/homebrew/",
+   "lang": "cs",
+   "title": "Homebrew (technologie)",
+   "description": "Správce balíčků pro macOS (a Linux): formule a casky, které instalují nástroje příkazové řádky a aplikace.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-homebrew.png",
+   "keywords": [
+    "Homebrew",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/html/",
    "lang": "cs",
    "title": "HTML (programovací jazyk)",
@@ -1480,6 +1736,21 @@
    "keywords": [
     "HTML",
     "Programovací jazyk",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/html5-boilerplate/",
+   "lang": "cs",
+   "title": "HTML5 Boilerplate (technologie)",
+   "description": "Startovací šablona pro front-end: ověřený základ HTML, výchozích stylů a konfigurace serveru pro nový web.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-html5-boilerplate.png",
+   "keywords": [
+    "HTML5 Boilerplate",
+    "Technologie",
     "Slovník",
     "Tomáš Korčák"
    ]
@@ -1588,6 +1859,21 @@
    "keywords": [
     "JavaScript",
     "Programovací jazyk",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/jest/",
+   "lang": "cs",
+   "title": "Jest (technologie)",
+   "description": "Testovací framework pro JavaScript, který v jednom balíku spojuje aserce, mocky a snapshotové testy.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-jest.png",
+   "keywords": [
+    "Jest",
+    "Technologie",
     "Slovník",
     "Tomáš Korčák"
    ]
@@ -1729,6 +2015,36 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/kuzudb/",
+   "lang": "cs",
+   "title": "KuzuDB (technologie)",
+   "description": "Vestavěná grafová databáze s dotazy v Cypheru a sloupcovým úložištěm, stavěná pro analytické dotazy nad velkými grafy.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-kuzudb.png",
+   "keywords": [
+    "KuzuDB",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/leaflet/",
+   "lang": "cs",
+   "title": "Leaflet (technologie)",
+   "description": "Malá JavaScriptová knihovna pro interaktivní mapy: dlaždicové vrstvy, značky, popupy a GeoJSON v prohlížeči.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-leaflet.png",
+   "keywords": [
+    "Leaflet",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/lean/",
    "lang": "cs",
    "title": "Lean (programovací jazyk)",
@@ -1753,6 +2069,52 @@
    "og_image": "https://korczis.github.io/og/cs-glossary-libp2p.png",
    "keywords": [
     "libp2p",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/libpcap/",
+   "lang": "cs",
+   "title": "libpcap (technologie)",
+   "description": "Knihovna v C pro zachytávání paketů, na které stojí tcpdump a Wireshark: čte surový síťový provoz a filtruje ho výrazy BPF.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-libpcap.png",
+   "keywords": [
+    "libpcap",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/llm/",
+   "lang": "cs",
+   "title": "Velké jazykové modely",
+   "description": "Velké jazykové modely: neuronové sítě trénované na textu, které generují, shrnují, klasifikují a vytěžují přirozený jazyk, používané přes prompty a nástroje.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-llm.png",
+   "keywords": [
+    "Velké jazykové modely",
+    "LLM",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/logstash/",
+   "lang": "cs",
+   "title": "Logstash (technologie)",
+   "description": "Ingestní pipeline stacku Elastic: čte logy a události, parsuje je a obohacuje a posílá je do Elasticsearch nebo jinam.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-logstash.png",
+   "keywords": [
+    "Logstash",
     "Technologie",
     "Slovník",
     "Tomáš Korčák"
@@ -1911,6 +2273,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/mnesia/",
+   "lang": "cs",
+   "title": "Mnesia (technologie)",
+   "description": "Distribuovaná databáze vestavěná v Erlang/OTP: tabulky erlangových termů v paměti nebo na disku, replikované mezi uzly s transakcemi.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-mnesia.png",
+   "keywords": [
+    "Mnesia",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/mocha/",
    "lang": "cs",
    "title": "Mocha (technologie)",
@@ -2001,6 +2378,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/nokogiri/",
+   "lang": "cs",
+   "title": "Nokogiri (technologie)",
+   "description": "Parser HTML a XML pro Ruby nad libxml2: dotazy CSS a XPath nad stromem dokumentu, základ většiny scraperů v Ruby.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-nokogiri.png",
+   "keywords": [
+    "Nokogiri",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/nominatim/",
    "lang": "cs",
    "title": "Nominatim (technologie)",
@@ -2010,6 +2402,21 @@
    "og_image": "https://korczis.github.io/og/cs-glossary-nominatim.png",
    "keywords": [
     "Nominatim",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/numpy/",
+   "lang": "cs",
+   "title": "NumPy (technologie)",
+   "description": "Knihovna polí pod vědeckým Pythonem: n-rozměrná pole a vektorizovaná matematika, která běží jako kompilovaný kód.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-numpy.png",
+   "keywords": [
+    "NumPy",
     "Technologie",
     "Slovník",
     "Tomáš Korčák"
@@ -2040,6 +2447,21 @@
    "og_image": "https://korczis.github.io/og/cs-glossary-ollama.png",
    "keywords": [
     "Ollama",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/open-api-spex/",
+   "lang": "cs",
+   "title": "OpenApiSpex (technologie)",
+   "description": "Knihovna pro Elixir, která popisuje API ve Phoenixu v OpenAPI 3, validuje proti tomu popisu požadavky a servíruje specifikaci a Swagger UI.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-open-api-spex.png",
+   "keywords": [
+    "OpenApiSpex",
     "Technologie",
     "Slovník",
     "Tomáš Korčák"
@@ -2106,6 +2528,36 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/opencl/",
+   "lang": "cs",
+   "title": "OpenCL (technologie)",
+   "description": "Otevřený standard pro paralelní výpočty na GPU, CPU a dalších akcelerátorech, s jádry psanými v dialektu C.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-opencl.png",
+   "keywords": [
+    "OpenCL",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/opengl/",
+   "lang": "cs",
+   "title": "OpenGL (technologie)",
+   "description": "Multiplatformní grafické API pro 2D a 3D vykreslování na GPU, se shadery psanými v GLSL.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-opengl.png",
+   "keywords": [
+    "OpenGL",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/openscad/",
    "lang": "cs",
    "title": "OpenSCAD (programovací jazyk)",
@@ -2161,6 +2613,36 @@
    "og_image": "https://korczis.github.io/og/cs-glossary-p5-js.png",
    "keywords": [
     "p5.js",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/pandas/",
+   "lang": "cs",
+   "title": "pandas (technologie)",
+   "description": "Knihovna Pythonu pro tabulková data: datové rámce k načtení, čištění, spojování, seskupování a sumarizaci datových sad.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-pandas.png",
+   "keywords": [
+    "pandas",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/peg-js/",
+   "lang": "cs",
+   "title": "PEG.js (technologie)",
+   "description": "Generátor parserů pro JavaScript: z gramatiky ve tvaru parsing expression grammar vznikne rychlý parser s dobrými chybovými hláškami.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-peg-js.png",
+   "keywords": [
+    "PEG.js",
     "Technologie",
     "Slovník",
     "Tomáš Korčák"
@@ -2242,6 +2724,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/png/",
+   "lang": "cs",
+   "title": "PNG (technologie)",
+   "description": "Portable Network Graphics: bezztrátový rastrový formát obrázků složený z bloků, s kompresí DEFLATE a alfa kanálem.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-png.png",
+   "keywords": [
+    "PNG",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/policy-as-code/",
    "lang": "cs",
    "title": "Pravidla jako kód (koncept)",
@@ -2288,6 +2785,36 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/prolog/",
+   "lang": "cs",
+   "title": "Prolog (programovací jazyk)",
+   "description": "Jazyk logického programování: program je množina faktů a pravidel a spustit ho znamená položit dotaz, který systém dokáže prohledáváním a unifikací.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-prolog.png",
+   "keywords": [
+    "Prolog",
+    "Programovací jazyk",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/prometheus/",
+   "lang": "cs",
+   "title": "Prometheus (technologie)",
+   "description": "Monitorovací systém a databáze časových řad: stahuje metriky přes HTTP, ukládá je a vyhodnocuje dotazy a alerty v PromQL.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-prometheus.png",
+   "keywords": [
+    "Prometheus",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/protobuf/",
    "lang": "cs",
    "title": "Protocol Buffers (technologie)",
@@ -2328,6 +2855,21 @@
    "og_image": "https://korczis.github.io/og/cs-glossary-pydantic.png",
    "keywords": [
     "Pydantic",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/pytest/",
+   "lang": "cs",
+   "title": "pytest (technologie)",
+   "description": "Testovací framework pro Python, kde test je obyčejná funkce s obyčejným assertem, rozšířená o fixtury a pluginy.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-pytest.png",
+   "keywords": [
+    "pytest",
     "Technologie",
     "Slovník",
     "Tomáš Korčák"
@@ -2410,6 +2952,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/redux/",
+   "lang": "cs",
+   "title": "Redux (technologie)",
+   "description": "Předvídatelný kontejner stavu: celý stav v jednom storu, měněný jen akcemi přes čisté funkce reducerů.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-redux.png",
+   "keywords": [
+    "Redux",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/regulatory-compliance/",
    "lang": "cs",
    "title": "Regulatorní shoda (koncept)",
@@ -2469,6 +3026,21 @@
     "Hodnocení rizik",
     "Risk assessment",
     "Koncept",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/rocksdb/",
+   "lang": "cs",
+   "title": "RocksDB (technologie)",
+   "description": "Vestavěné úložiště klíč–hodnota nad LSM stromem, laděné pro rychlá úložiště a velkou zátěž zápisy.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-rocksdb.png",
+   "keywords": [
+    "RocksDB",
+    "Technologie",
     "Slovník",
     "Tomáš Korčák"
    ]
@@ -2657,6 +3229,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/solr/",
+   "lang": "cs",
+   "title": "Solr (technologie)",
+   "description": "Vyhledávací server Apache nad knihovnou Lucene: fulltextové vyhledávání, fasety a indexování za HTTP API.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-solr.png",
+   "keywords": [
+    "Solr",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/source-criticism/",
    "lang": "cs",
    "title": "Kritika zdrojů (koncept)",
@@ -2719,6 +3306,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/superagent/",
+   "lang": "cs",
+   "title": "superagent (technologie)",
+   "description": "Malý HTTP klient pro Node.js a prohlížeče se zřetězitelným API pro požadavky, hlavičky a odpovědi.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-superagent.png",
+   "keywords": [
+    "superagent",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/swift/",
    "lang": "cs",
    "title": "Swift (programovací jazyk)",
@@ -2734,6 +3336,36 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/swiftui/",
+   "lang": "cs",
+   "title": "SwiftUI (technologie)",
+   "description": "Deklarativní framework Applu pro uživatelské rozhraní ve Swiftu: pohled je funkcí stavu a framework překreslí, co se změnilo.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-swiftui.png",
+   "keywords": [
+    "SwiftUI",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/systemd/",
+   "lang": "cs",
+   "title": "systemd (technologie)",
+   "description": "Init systém a správce služeb většiny linuxových distribucí: jednotky, závislosti, časovače, logování (journald).",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-systemd.png",
+   "keywords": [
+    "systemd",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/tailwind-css/",
    "lang": "cs",
    "title": "Tailwind CSS (technologie)",
@@ -2743,6 +3375,21 @@
    "og_image": "https://korczis.github.io/og/cs-glossary-tailwind-css.png",
    "keywords": [
     "Tailwind CSS",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/tera/",
+   "lang": "cs",
+   "title": "Tera (technologie)",
+   "description": "Šablonovací engine pro Rust inspirovaný Jinja2: dědičnost, makra, filtry; statický generátor Zola s ním vykresluje stránky.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-tera.png",
+   "keywords": [
+    "Tera",
     "Technologie",
     "Slovník",
     "Tomáš Korčák"
@@ -2789,6 +3436,36 @@
    "keywords": [
     "TeX",
     "Programovací jazyk",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/three-js/",
+   "lang": "cs",
+   "title": "Three.js (technologie)",
+   "description": "JavaScriptová 3D knihovna nad WebGL: scény, kamery, sítě, materiály a světla v prohlížeči.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-three-js.png",
+   "keywords": [
+    "Three.js",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/tokio/",
+   "lang": "cs",
+   "title": "Tokio (technologie)",
+   "description": "Asynchronní runtime pro Rust: smyčka událostí, úlohy, časovače a neblokující I/O pro síťové služby.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-tokio.png",
+   "keywords": [
+    "Tokio",
+    "Technologie",
     "Slovník",
     "Tomáš Korčák"
    ]
@@ -2900,6 +3577,36 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/virtualbox/",
+   "lang": "cs",
+   "title": "VirtualBox (technologie)",
+   "description": "Open-source hypervizor Oraclu pro desktopové stroje: virtuální stroje pro vývoj a testování, často řízené Vagrantem.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-virtualbox.png",
+   "keywords": [
+    "VirtualBox",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/vitest/",
+   "lang": "cs",
+   "title": "Vitest (technologie)",
+   "description": "Rychlý spouštěč testů pro JavaScript a TypeScript postavený na Vite, s API kompatibilním s Jestem.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-vitest.png",
+   "keywords": [
+    "Vitest",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/wcag/",
    "lang": "cs",
    "title": "WCAG (koncept)",
@@ -2975,6 +3682,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/cs/glossary/xml/",
+   "lang": "cs",
+   "title": "XML (technologie)",
+   "description": "Rozšiřitelný značkovací jazyk: strom značkovaných elementů a atributů, výměnný formát feedů, kancelářských dokumentů a starších API.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-xml.png",
+   "keywords": [
+    "XML",
+    "Technologie",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/cs/glossary/xslt/",
    "lang": "cs",
    "title": "XSLT (programovací jazyk)",
@@ -2985,6 +3707,21 @@
    "keywords": [
     "XSLT",
     "Programovací jazyk",
+    "Slovník",
+    "Tomáš Korčák"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/cs/glossary/yeoman/",
+   "lang": "cs",
+   "title": "Yeoman (technologie)",
+   "description": "Nástroj pro generování kostry webových projektů: generátory vytvářejí ze šablony soubory projektu, nastavení buildu a konvence.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/cs-glossary-yeoman.png",
+   "keywords": [
+    "Yeoman",
+    "Technologie",
     "Slovník",
     "Tomáš Korčák"
    ]
@@ -8097,7 +8834,7 @@
    "url": "https://korczis.github.io/glossary/",
    "lang": "en",
    "title": "Glossary · Tomas Korcak",
-   "description": "The 175 terms this site explains itself with: languages, technologies and concepts, each defined, sourced and linked to every page that uses it.",
+   "description": "The 224 terms this site explains itself with: languages, technologies and concepts, each defined, sourced and linked to every page that uses it.",
    "type": "glossary",
    "category": null,
    "og_image": "https://korczis.github.io/og/glossary.png",
@@ -8207,6 +8944,22 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/apple-vision/",
+   "lang": "en",
+   "title": "Vision, Apple's computer-vision framework",
+   "description": "Apple's on-device computer-vision framework: text recognition, barcode and face detection, image analysis without a server.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-apple-vision.png",
+   "keywords": [
+    "Vision, Apple's computer-vision framework",
+    "Vision",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/arduino/",
    "lang": "en",
    "title": "Arduino (programming language)",
@@ -8247,6 +9000,37 @@
    "keywords": [
     "Audit trail",
     "Concept",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/avfoundation/",
+   "lang": "en",
+   "title": "AVFoundation (technology)",
+   "description": "Apple's framework for time-based media: camera capture, audio and video playback, recording and editing.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-avfoundation.png",
+   "keywords": [
+    "AVFoundation",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/aws/",
+   "lang": "en",
+   "title": "Amazon Web Services",
+   "description": "Amazon's cloud platform: compute (EC2, Lambda), storage (S3), DNS (Route 53) and hundreds of managed services behind one API.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-aws.png",
+   "keywords": [
+    "Amazon Web Services",
+    "AWS",
+    "Technology",
     "Glossary",
     "Tomas Korcak"
    ]
@@ -8342,6 +9126,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/brunch/",
+   "lang": "en",
+   "title": "Brunch (technology)",
+   "description": "A fast front-end build tool driven by conventions; Phoenix used it for assets before esbuild.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-brunch.png",
+   "keywords": [
+    "Brunch",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/c/",
    "lang": "en",
    "title": "C (programming language)",
@@ -8352,6 +9151,21 @@
    "keywords": [
     "C (programming language)",
     "Programming language",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/cachex/",
+   "lang": "en",
+   "title": "Cachex (technology)",
+   "description": "An in-memory caching library for Elixir on ETS, with expiration, limits, hooks and transactions.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-cachex.png",
+   "keywords": [
+    "Cachex",
+    "Technology",
     "Glossary",
     "Tomas Korcak"
    ]
@@ -8477,6 +9291,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/cockpit/",
+   "lang": "en",
+   "title": "Cockpit (technology)",
+   "description": "A web console for Linux servers: services, logs, storage, networking and containers administered from the browser.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-cockpit.png",
+   "keywords": [
+    "Cockpit",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/coffeescript/",
    "lang": "en",
    "title": "CoffeeScript (programming language)",
@@ -8552,6 +9381,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/couchdb/",
+   "lang": "en",
+   "title": "CouchDB (technology)",
+   "description": "Apache's document database: JSON documents over HTTP, MapReduce views and multi-master replication.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-couchdb.png",
+   "keywords": [
+    "CouchDB",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/cowboy/",
    "lang": "en",
    "title": "Cowboy (technology)",
@@ -8577,6 +9421,21 @@
    "keywords": [
     "C++",
     "Programming language",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/credo/",
+   "lang": "en",
+   "title": "Credo (technology)",
+   "description": "A static analysis tool for Elixir focused on consistency and teaching: it flags readability, design and refactoring issues.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-credo.png",
+   "keywords": [
+    "Credo",
+    "Technology",
     "Glossary",
     "Tomas Korcak"
    ]
@@ -8621,6 +9480,21 @@
    "og_image": "https://korczis.github.io/og/glossary-csv.png",
    "keywords": [
     "CSV",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/curl/",
+   "lang": "en",
+   "title": "curl (technology)",
+   "description": "The command-line tool and library (libcurl) for transferring data over URLs: HTTP, FTP and dozens of other protocols.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-curl.png",
+   "keywords": [
+    "curl",
     "Technology",
     "Glossary",
     "Tomas Korcak"
@@ -8882,6 +9756,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/esbuild/",
+   "lang": "en",
+   "title": "esbuild (technology)",
+   "description": "An extremely fast JavaScript and CSS bundler and minifier written in Go; Phoenix builds its assets with it.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-esbuild.png",
+   "keywords": [
+    "esbuild",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/eslint/",
    "lang": "en",
    "title": "ESLint (technology)",
@@ -8912,6 +9801,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/exdoc/",
+   "lang": "en",
+   "title": "ExDoc (technology)",
+   "description": "Elixir's documentation generator: it turns module docs and guides into the HTML and EPUB documentation on HexDocs.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-exdoc.png",
+   "keywords": [
+    "ExDoc",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/express/",
    "lang": "en",
    "title": "Express (technology)",
@@ -8921,6 +9825,21 @@
    "og_image": "https://korczis.github.io/og/glossary-express.png",
    "keywords": [
     "Express",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/fail2ban/",
+   "lang": "en",
+   "title": "fail2ban (technology)",
+   "description": "An intrusion-prevention daemon: it reads server logs and bans addresses that keep failing to authenticate.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-fail2ban.png",
+   "keywords": [
+    "fail2ban",
     "Technology",
     "Glossary",
     "Tomas Korcak"
@@ -8952,6 +9871,21 @@
    "keywords": [
     "Financial statement analysis",
     "Concept",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/fleet/",
+   "lang": "en",
+   "title": "fleet (technology)",
+   "description": "CoreOS's distributed init system: it scheduled systemd units across a cluster of machines, a predecessor of Kubernetes scheduling.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-fleet.png",
+   "keywords": [
+    "fleet",
+    "Technology",
     "Glossary",
     "Tomas Korcak"
    ]
@@ -9062,6 +9996,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/github-api/",
+   "lang": "en",
+   "title": "GitHub API (technology)",
+   "description": "GitHub's REST and GraphQL APIs for repositories, issues, pull requests, users and events; this site reads its data from them.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-github-api.png",
+   "keywords": [
+    "GitHub API",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/github-pages/",
    "lang": "en",
    "title": "GitHub Pages (technology)",
@@ -9122,6 +10071,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/google-test/",
+   "lang": "en",
+   "title": "Google Test (technology)",
+   "description": "Google's C++ testing framework: test cases, fixtures, assertions and mocks (with Google Mock).",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-google-test.png",
+   "keywords": [
+    "Google Test",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/grafana/",
    "lang": "en",
    "title": "Grafana (technology)",
@@ -9146,6 +10110,21 @@
    "og_image": "https://korczis.github.io/og/glossary-graphql.png",
    "keywords": [
     "GraphQL",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/grpc/",
+   "lang": "en",
+   "title": "gRPC (technology)",
+   "description": "A remote procedure call framework over HTTP/2 with Protocol Buffers contracts, streaming and generated clients in many languages.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-grpc.png",
+   "keywords": [
+    "gRPC",
     "Technology",
     "Glossary",
     "Tomas Korcak"
@@ -9227,6 +10206,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/homebrew/",
+   "lang": "en",
+   "title": "Homebrew (technology)",
+   "description": "The package manager for macOS (and Linux): formulae and casks that install command-line tools and applications.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-homebrew.png",
+   "keywords": [
+    "Homebrew",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/html/",
    "lang": "en",
    "title": "HTML (programming language)",
@@ -9237,6 +10231,21 @@
    "keywords": [
     "HTML",
     "Programming language",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/html5-boilerplate/",
+   "lang": "en",
+   "title": "HTML5 Boilerplate (technology)",
+   "description": "A front-end starter template: a tested baseline of HTML, CSS defaults and server configuration for a new site.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-html5-boilerplate.png",
+   "keywords": [
+    "HTML5 Boilerplate",
+    "Technology",
     "Glossary",
     "Tomas Korcak"
    ]
@@ -9342,6 +10351,21 @@
    "keywords": [
     "JavaScript",
     "Programming language",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/jest/",
+   "lang": "en",
+   "title": "Jest (technology)",
+   "description": "A JavaScript test framework with assertions, mocks and snapshot tests in one package.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-jest.png",
+   "keywords": [
+    "Jest",
+    "Technology",
     "Glossary",
     "Tomas Korcak"
    ]
@@ -9482,6 +10506,36 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/kuzudb/",
+   "lang": "en",
+   "title": "KuzuDB (technology)",
+   "description": "An embedded graph database with Cypher queries and columnar storage, built for analytical queries over large graphs.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-kuzudb.png",
+   "keywords": [
+    "KuzuDB",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/leaflet/",
+   "lang": "en",
+   "title": "Leaflet (technology)",
+   "description": "A small JavaScript library for interactive maps: tile layers, markers, popups and GeoJSON in the browser.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-leaflet.png",
+   "keywords": [
+    "Leaflet",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/lean/",
    "lang": "en",
    "title": "Lean (programming language)",
@@ -9506,6 +10560,52 @@
    "og_image": "https://korczis.github.io/og/glossary-libp2p.png",
    "keywords": [
     "libp2p",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/libpcap/",
+   "lang": "en",
+   "title": "libpcap (technology)",
+   "description": "The C library for packet capture behind tcpdump and Wireshark: it reads raw network traffic and filters it with BPF expressions.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-libpcap.png",
+   "keywords": [
+    "libpcap",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/llm/",
+   "lang": "en",
+   "title": "Large language models",
+   "description": "Large language models: neural networks trained on text that generate, summarise, classify and extract from natural language, used through prompts and tools.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-llm.png",
+   "keywords": [
+    "Large language models",
+    "LLM",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/logstash/",
+   "lang": "en",
+   "title": "Logstash (technology)",
+   "description": "The ingestion pipeline of the Elastic stack: it reads logs and events, parses and enriches them, and ships them to Elasticsearch or elsewhere.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-logstash.png",
+   "keywords": [
+    "Logstash",
     "Technology",
     "Glossary",
     "Tomas Korcak"
@@ -9662,6 +10762,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/mnesia/",
+   "lang": "en",
+   "title": "Mnesia (technology)",
+   "description": "The distributed database built into Erlang/OTP: tables of Erlang terms, in memory or on disk, replicated across nodes with transactions.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-mnesia.png",
+   "keywords": [
+    "Mnesia",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/mocha/",
    "lang": "en",
    "title": "Mocha (technology)",
@@ -9752,6 +10867,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/nokogiri/",
+   "lang": "en",
+   "title": "Nokogiri (technology)",
+   "description": "Ruby's HTML and XML parser on libxml2: CSS and XPath queries over a document tree, the base of most Ruby scrapers.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-nokogiri.png",
+   "keywords": [
+    "Nokogiri",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/nominatim/",
    "lang": "en",
    "title": "Nominatim (technology)",
@@ -9761,6 +10891,21 @@
    "og_image": "https://korczis.github.io/og/glossary-nominatim.png",
    "keywords": [
     "Nominatim",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/numpy/",
+   "lang": "en",
+   "title": "NumPy (technology)",
+   "description": "The array library under scientific Python: n-dimensional arrays and vectorised maths that run as compiled code.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-numpy.png",
+   "keywords": [
+    "NumPy",
     "Technology",
     "Glossary",
     "Tomas Korcak"
@@ -9791,6 +10936,21 @@
    "og_image": "https://korczis.github.io/og/glossary-ollama.png",
    "keywords": [
     "Ollama",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/open-api-spex/",
+   "lang": "en",
+   "title": "OpenApiSpex (technology)",
+   "description": "An Elixir library that describes a Phoenix API in OpenAPI 3, validates requests against it and serves the spec and Swagger UI.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-open-api-spex.png",
+   "keywords": [
+    "OpenApiSpex",
     "Technology",
     "Glossary",
     "Tomas Korcak"
@@ -9857,6 +11017,36 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/opencl/",
+   "lang": "en",
+   "title": "OpenCL (technology)",
+   "description": "An open standard for parallel computing on GPUs, CPUs and other accelerators, with kernels written in a C dialect.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-opencl.png",
+   "keywords": [
+    "OpenCL",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/opengl/",
+   "lang": "en",
+   "title": "OpenGL (technology)",
+   "description": "The cross-platform graphics API for 2D and 3D rendering on the GPU, with shaders written in GLSL.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-opengl.png",
+   "keywords": [
+    "OpenGL",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/openscad/",
    "lang": "en",
    "title": "OpenSCAD (programming language)",
@@ -9911,6 +11101,36 @@
    "og_image": "https://korczis.github.io/og/glossary-p5-js.png",
    "keywords": [
     "p5.js",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/pandas/",
+   "lang": "en",
+   "title": "pandas (technology)",
+   "description": "The Python library for tabular data: data frames to load, clean, join, group and summarise datasets.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-pandas.png",
+   "keywords": [
+    "pandas",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/peg-js/",
+   "lang": "en",
+   "title": "PEG.js (technology)",
+   "description": "A parser generator for JavaScript: a grammar in parsing-expression form becomes a fast parser with good error messages.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-peg-js.png",
+   "keywords": [
+    "PEG.js",
     "Technology",
     "Glossary",
     "Tomas Korcak"
@@ -9992,6 +11212,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/png/",
+   "lang": "en",
+   "title": "PNG (technology)",
+   "description": "Portable Network Graphics: a lossless raster image format made of chunks, with DEFLATE compression and an alpha channel.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-png.png",
+   "keywords": [
+    "PNG",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/policy-as-code/",
    "lang": "en",
    "title": "Policy as code (concept)",
@@ -10037,6 +11272,36 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/prolog/",
+   "lang": "en",
+   "title": "Prolog (programming language)",
+   "description": "A logic programming language: a program is a set of facts and rules, and running it means asking a question the system proves by search and unification.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-prolog.png",
+   "keywords": [
+    "Prolog",
+    "Programming language",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/prometheus/",
+   "lang": "en",
+   "title": "Prometheus (technology)",
+   "description": "A monitoring system and time-series database: it scrapes metrics over HTTP, stores them and evaluates queries and alerts in PromQL.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-prometheus.png",
+   "keywords": [
+    "Prometheus",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/protobuf/",
    "lang": "en",
    "title": "Protocol Buffers (technology)",
@@ -10076,6 +11341,21 @@
    "og_image": "https://korczis.github.io/og/glossary-pydantic.png",
    "keywords": [
     "Pydantic",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/pytest/",
+   "lang": "en",
+   "title": "pytest (technology)",
+   "description": "The Python test framework where a test is a plain function with a plain assert, extended by fixtures and plugins.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-pytest.png",
+   "keywords": [
+    "pytest",
     "Technology",
     "Glossary",
     "Tomas Korcak"
@@ -10157,6 +11437,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/redux/",
+   "lang": "en",
+   "title": "Redux (technology)",
+   "description": "A predictable state container: the whole state in one store, changed only by actions through pure reducer functions.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-redux.png",
+   "keywords": [
+    "Redux",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/regulatory-compliance/",
    "lang": "en",
    "title": "Regulatory compliance (concept)",
@@ -10212,6 +11507,21 @@
    "keywords": [
     "Risk assessment",
     "Concept",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/rocksdb/",
+   "lang": "en",
+   "title": "RocksDB (technology)",
+   "description": "An embedded key-value store on a log-structured merge tree, tuned for fast storage and heavy write loads.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-rocksdb.png",
+   "keywords": [
+    "RocksDB",
+    "Technology",
     "Glossary",
     "Tomas Korcak"
    ]
@@ -10397,6 +11707,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/solr/",
+   "lang": "en",
+   "title": "Solr (technology)",
+   "description": "Apache's search server on top of Lucene: full-text search, faceting and indexing behind an HTTP API.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-solr.png",
+   "keywords": [
+    "Solr",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/source-criticism/",
    "lang": "en",
    "title": "Source criticism (concept)",
@@ -10457,6 +11782,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/superagent/",
+   "lang": "en",
+   "title": "superagent (technology)",
+   "description": "A small HTTP client for Node.js and browsers with a chainable API for requests, headers and responses.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-superagent.png",
+   "keywords": [
+    "superagent",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/swift/",
    "lang": "en",
    "title": "Swift (programming language)",
@@ -10472,6 +11812,36 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/swiftui/",
+   "lang": "en",
+   "title": "SwiftUI (technology)",
+   "description": "Apple's declarative user-interface framework in Swift: the view is a function of state, and the framework redraws what changed.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-swiftui.png",
+   "keywords": [
+    "SwiftUI",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/systemd/",
+   "lang": "en",
+   "title": "systemd (technology)",
+   "description": "The init system and service manager of most Linux distributions: units, dependencies, timers, logging (journald).",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-systemd.png",
+   "keywords": [
+    "systemd",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/tailwind-css/",
    "lang": "en",
    "title": "Tailwind CSS (technology)",
@@ -10481,6 +11851,21 @@
    "og_image": "https://korczis.github.io/og/glossary-tailwind-css.png",
    "keywords": [
     "Tailwind CSS",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/tera/",
+   "lang": "en",
+   "title": "Tera (technology)",
+   "description": "A template engine for Rust inspired by Jinja2: inheritance, macros, filters; the static-site generator Zola renders its pages with it.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-tera.png",
+   "keywords": [
+    "Tera",
     "Technology",
     "Glossary",
     "Tomas Korcak"
@@ -10527,6 +11912,36 @@
    "keywords": [
     "TeX",
     "Programming language",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/three-js/",
+   "lang": "en",
+   "title": "Three.js (technology)",
+   "description": "A JavaScript 3D library over WebGL: scenes, cameras, meshes, materials and lights in the browser.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-three-js.png",
+   "keywords": [
+    "Three.js",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/tokio/",
+   "lang": "en",
+   "title": "Tokio (technology)",
+   "description": "The asynchronous runtime for Rust: an event loop, tasks, timers and non-blocking I/O for network services.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-tokio.png",
+   "keywords": [
+    "Tokio",
+    "Technology",
     "Glossary",
     "Tomas Korcak"
    ]
@@ -10637,6 +12052,36 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/virtualbox/",
+   "lang": "en",
+   "title": "VirtualBox (technology)",
+   "description": "Oracle's open-source hypervisor for desktop machines: virtual machines for development and testing, often driven by Vagrant.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-virtualbox.png",
+   "keywords": [
+    "VirtualBox",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/vitest/",
+   "lang": "en",
+   "title": "Vitest (technology)",
+   "description": "A fast test runner for JavaScript and TypeScript built on Vite, with a Jest-compatible API.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-vitest.png",
+   "keywords": [
+    "Vitest",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/wcag/",
    "lang": "en",
    "title": "WCAG (concept)",
@@ -10712,6 +12157,21 @@
    ]
   },
   {
+   "url": "https://korczis.github.io/glossary/xml/",
+   "lang": "en",
+   "title": "XML (technology)",
+   "description": "The Extensible Markup Language: a tree of tagged elements and attributes, the exchange format of feeds, office documents and older APIs.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-xml.png",
+   "keywords": [
+    "XML",
+    "Technology",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
    "url": "https://korczis.github.io/glossary/xslt/",
    "lang": "en",
    "title": "XSLT (programming language)",
@@ -10722,6 +12182,21 @@
    "keywords": [
     "XSLT",
     "Programming language",
+    "Glossary",
+    "Tomas Korcak"
+   ]
+  },
+  {
+   "url": "https://korczis.github.io/glossary/yeoman/",
+   "lang": "en",
+   "title": "Yeoman (technology)",
+   "description": "A scaffolding tool for web projects: generators that create a project's files, build setup and conventions from a template.",
+   "type": "term",
+   "category": null,
+   "og_image": "https://korczis.github.io/og/glossary-yeoman.png",
+   "keywords": [
+    "Yeoman",
+    "Technology",
     "Glossary",
     "Tomas Korcak"
    ]

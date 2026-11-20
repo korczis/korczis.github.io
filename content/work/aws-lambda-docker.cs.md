@@ -17,7 +17,7 @@ og_description = "aws-lambda-docker: Systémy a infrastruktura, Shell a Dockerfi
 og_image = "og/cs-work-aws-lambda-docker.png"
 schema = "project"
 keywords = ["aws-lambda-docker", "Systémy a infrastruktura", "Shell", "Dockerfile", "2018", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["shell", "dockerfile", "python", "repository", "commit", "open-source"]
+terms = ["shell", "dockerfile", "aws", "python", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

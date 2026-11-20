@@ -3,7 +3,7 @@
 title = "GIS"
 description = "Geographic information systems: data tied to places, stored, analysed and drawn as maps."
 template = "term.html"
-weight = 148
+weight = 197
 
 [taxonomies]
 tags = ["Glossary", "Concept"]

@@ -17,7 +17,7 @@ og_description = "magicbiz: Tools, 2015, archive. Source on GitHub and GitLab."
 og_image = "og/work-magicbiz.png"
 schema = "project"
 keywords = ["magicbiz", "Tools", "2015", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["open-source", "repository", "commit"]
+terms = ["aws", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

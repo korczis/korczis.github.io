@@ -3,7 +3,7 @@
 title = "Znalostní graf"
 description = "Znalosti uložené jako subjekty a vztahy mezi nimi, takže dotaz může sledovat vazby (kdo co vlastní, kdo kde sedí) místo spojování tabulek."
 template = "term.html"
-weight = 153
+weight = 202
 
 [taxonomies]
 tags = ["Slovník", "Koncept"]

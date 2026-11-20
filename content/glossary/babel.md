@@ -3,7 +3,7 @@
 title = "Babel"
 description = "A JavaScript compiler that rewrites modern syntax into code older browsers and runtimes understand."
 template = "term.html"
-weight = 47
+weight = 50
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "A JavaScript compiler that rewrites modern syntax into code older 
 aliases = []
 reference = { title = "Babel documentation", url = "https://babeljs.io/docs/" }
 pages = ["skills/chain-of-custody.md", "skills/web-automation.md", "work/babel-plugin-transform-graphql.md", "work/bcnode-old.md", "work/gooddata-proxy.md", "work/microcrawler-browser.md", "work/microcrawler-js.md", "work/microcrawler-ng.md", "work/peg-parser.md"]
-related = ["javascript", "commit", "open-source", "repository", "nodejs", "webpack", "dockerfile", "gis"]
+related = ["javascript", "commit", "open-source", "repository", "nodejs", "dockerfile", "gis", "html"]
 og_title = "Babel: glossary"
 og_image = "og/glossary-babel.png"
 keywords = ["Babel", "Technology", "Glossary", "Tomas Korcak"]

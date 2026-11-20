@@ -3,7 +3,7 @@
 title = "clap"
 description = "Rust's command-line argument parser: subcommands, flags, validation and generated help from a typed definition."
 template = "term.html"
-weight = 53
+weight = 58
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

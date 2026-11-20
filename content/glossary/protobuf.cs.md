@@ -3,7 +3,7 @@
 title = "Protocol Buffers"
 description = "Binární serializační formát Googlu nezávislý na jazyce, se schématy v souborech .proto kompilovanými do kódu."
 template = "term.html"
-weight = 109
+weight = 143
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -17,7 +17,7 @@ definition = "Binární serializační formát Googlu nezávislý na jazyce, se 
 aliases = ["protobuf"]
 reference = { title = "Protocol Buffers documentation", url = "https://protobuf.dev/" }
 pages = ["skills/chain-of-custody.cs.md", "work/astudo.cs.md", "work/bcnode-old.cs.md", "work/the-scratch.cs.md"]
-related = ["javascript", "rust", "commit", "dockerfile", "open-source", "repository", "webpack", "babel"]
+related = ["javascript", "rust", "commit", "dockerfile", "grpc", "open-source", "repository", "babel"]
 og_title = "Protocol Buffers: slovník"
 og_image = "og/cs-glossary-protobuf.png"
 keywords = ["Protocol Buffers", "Technologie", "Slovník", "Tomáš Korčák"]

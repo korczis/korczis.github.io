@@ -3,7 +3,7 @@
 title = "XSLT"
 description = "A language that transforms XML documents into other XML, HTML or text by templates matched against the input tree."
 template = "term.html"
-weight = 40
+weight = 41
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]

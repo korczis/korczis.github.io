@@ -3,7 +3,7 @@
 title = "Git"
 description = "The distributed version-control system: every clone holds the full history of commits, branches and tags."
 template = "term.html"
-weight = 71
+weight = 84
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -14,10 +14,10 @@ seo_title = "Git (technology)"
 term = "git"
 kind = "technology"
 definition = "The distributed version-control system: every clone holds the full history of commits, branches and tags."
-aliases = []
+aliases = ["Git submodules"]
 reference = { title = "Git documentation", url = "https://git-scm.com/doc" }
-pages = ["skills/orchestration.md", "work/datasciencecoursera.md", "work/prismatic-majordomus.md", "work/zdeny-docker.md"]
-related = ["commit", "open-source", "repository", "shell", "dockerfile", "github-actions", "html", "javascript"]
+pages = ["skills/orchestration.md", "work/datasciencecoursera.md", "work/generator-the-scratch.md", "work/prismatic-majordomus.md", "work/skull.md", "work/zdeny-docker.md"]
+related = ["commit", "open-source", "repository", "shell", "javascript", "dockerfile", "github-actions", "html"]
 og_title = "Git: glossary"
 og_image = "og/glossary-git.png"
 keywords = ["Git", "Technology", "Glossary", "Tomas Korcak"]
@@ -40,9 +40,9 @@ span = 3
 height = "md"
 tone = "night"
 +++
-Git is part of 3 of my public repositories, from 2015 to 2026.
+Git is part of 5 of my public repositories, from 2013 to 2026.
 
-What it was for: [AI engineering](@/projects/ai.md) (1), [Data and GIS](@/projects/data.md) (1) and [Systems and infrastructure](@/projects/systems.md) (1).
+What it was for: [Learning and experiments](@/projects/learning.md) (2), [AI engineering](@/projects/ai.md) (1), [Data and GIS](@/projects/data.md) (1) and [Systems and infrastructure](@/projects/systems.md) (1).
 
 Most recently: [Majordomus](@/work/prismatic-majordomus.md): One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model; [zdeny-docker](@/work/zdeny-docker.md); [datasciencecoursera](@/work/datasciencecoursera.md): Data Science Coursera Coursera.
 

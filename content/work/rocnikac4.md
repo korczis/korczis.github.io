@@ -17,7 +17,7 @@ og_description = "Rocnikac4: Learning and experiments in C#, 2013, archive. Sour
 og_image = "og/work-rocnikac4.png"
 schema = "project"
 keywords = ["Rocnikac4", "Learning and experiments", "C#", "2013", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["csharp", "dotnet", "repository", "commit", "open-source"]
+terms = ["csharp", "dotnet", "xml", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

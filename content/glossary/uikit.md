@@ -3,7 +3,7 @@
 title = "UIKit"
 description = "Apple's framework for the user interface of iOS apps: views, controllers, events."
 template = "term.html"
-weight = 124
+weight = 168
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "Apple's framework for the user interface of iOS apps: views, contr
 aliases = []
 reference = { title = "UIKit documentation", url = "https://developer.apple.com/documentation/uikit" }
 pages = ["work/bc-apple.md", "work/minervaeye.md", "work/readingphonenumbersinrealtime.md"]
-related = ["commit", "open-source", "repository", "swift", "xcode", "shell", "socket-io"]
+related = ["commit", "open-source", "repository", "swift", "xcode", "apple-vision", "avfoundation", "shell"]
 og_title = "UIKit: glossary"
 og_image = "og/glossary-uikit.png"
 keywords = ["UIKit", "Technology", "Glossary", "Tomas Korcak"]

@@ -3,7 +3,7 @@
 title = "Nominatim"
 description = "Geokodér OpenStreetMap: převádí adresy na souřadnice a souřadnice zpět na adresy."
 template = "term.html"
-weight = 99
+weight = 125
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -17,7 +17,7 @@ definition = "Geokodér OpenStreetMap: převádí adresy na souřadnice a souřa
 aliases = []
 reference = { title = "Nominatim documentation", url = "https://nominatim.org/release-docs/latest/" }
 pages = ["skills/geospatial-analysis.cs.md", "skills/registry-intelligence.cs.md", "work/cluster-kubernetes.cs.md", "work/crisis-map.cs.md", "work/docks.cs.md", "work/simple-geocoder.cs.md"]
-related = ["commit", "elixir", "open-source", "postgis", "repository", "shell", "couchbase", "dockerfile"]
+related = ["commit", "elixir", "open-source", "repository", "shell", "dockerfile", "javascript", "postgis"]
 og_title = "Nominatim: slovník"
 og_image = "og/cs-glossary-nominatim.png"
 keywords = ["Nominatim", "Technologie", "Slovník", "Tomáš Korčák"]

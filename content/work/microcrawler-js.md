@@ -17,7 +17,7 @@ og_description = "microcrawler-js: Data and GIS in JavaScript, Shell and Dockerf
 og_image = "og/work-microcrawler-js.png"
 schema = "project"
 keywords = ["microcrawler-js", "Data and GIS", "JavaScript", "Shell", "Dockerfile", "2016", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["javascript", "shell", "dockerfile", "makefile", "nodejs", "babel", "rabbitmq", "couchbase", "elasticsearch", "kibana", "cheerio", "gis", "repository", "commit", "open-source"]
+terms = ["javascript", "shell", "dockerfile", "makefile", "nodejs", "babel", "rabbitmq", "couchbase", "elasticsearch", "kibana", "cheerio", "superagent", "gis", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

@@ -14,7 +14,7 @@ icon = "globe"
 og_title = "Reputační zpravodajství a monitoring negativních zpráv"
 og_image = "og/cs-service-reputation-intelligence.png"
 schema = "service"
-terms = ["service", "elixir", "broadway", "ollama", "claude-api", "phoenix", "reputation-risk", "source-criticism", "change-detection", "osint", "decision-support-system", "javascript", "html", "python", "shell", "tailwind-css", "flowbite-pro", "postgresql", "dockerfile", "fastapi", "github-actions"]
+terms = ["service", "elixir", "broadway", "ollama", "claude-api", "phoenix", "reputation-risk", "source-criticism", "change-detection", "osint", "decision-support-system", "javascript", "html", "python", "shell", "tailwind-css", "flowbite-pro", "postgresql", "dockerfile", "fastapi", "leaflet"]
 keywords = ["Reputační zpravodajství a monitoring negativních zpráv", "Analýza narativů a reputace", "Spolehlivost zdrojů", "Průběžný monitoring", "OSINT šetření", "Podpora rozhodování", "Tomáš Korčák"]
 
 [[extra.viz]]

@@ -17,7 +17,7 @@ og_description = "home: Tools in Shell, 2019, archive. Source on GitHub and GitL
 og_image = "og/work-home.png"
 schema = "project"
 keywords = ["home", "Tools", "Shell", "2019", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["shell", "open-source", "repository", "commit"]
+terms = ["shell", "homebrew", "ruby", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

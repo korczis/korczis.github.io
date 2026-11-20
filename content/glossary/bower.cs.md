@@ -3,7 +3,7 @@
 title = "Bower"
 description = "Raný správce balíčků pro frontendové knihovny, dnes nahrazený npm a bundlery."
 template = "term.html"
-weight = 49
+weight = 52
 
 [taxonomies]
 tags = ["Slovník", "Technologie"]
@@ -17,7 +17,7 @@ definition = "Raný správce balíčků pro frontendové knihovny, dnes nahrazen
 aliases = []
 reference = { title = "Bower", url = "https://bower.io/" }
 pages = ["services/attack-surface.cs.md", "skills/change-monitoring.cs.md", "work/generator-microscratch.cs.md", "work/korczis-com.cs.md", "work/microcrawler-couchapp.cs.md", "work/microscratch.cs.md", "work/pavian-eu.cs.md", "work/web-spa.cs.md"]
-related = ["javascript", "bootstrap", "commit", "css", "open-source", "repository", "ember-js", "html"]
+related = ["javascript", "bootstrap", "commit", "css", "open-source", "repository", "couchdb", "html"]
 og_title = "Bower: slovník"
 og_image = "og/cs-glossary-bower.png"
 keywords = ["Bower", "Technologie", "Slovník", "Tomáš Korčák"]

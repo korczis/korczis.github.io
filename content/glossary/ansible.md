@@ -3,7 +3,7 @@
 title = "Ansible"
 description = "An agentless automation tool that configures servers over SSH from declarative YAML playbooks."
 template = "term.html"
-weight = 44
+weight = 45
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "An agentless automation tool that configures servers over SSH from
 aliases = []
 reference = { title = "Ansible documentation", url = "https://docs.ansible.com/" }
 pages = ["skills/ai-transformation.md", "work/k8s-orbis-pictus.md", "work/server-ansible.md", "work/server-archlinux.md", "work/server-atomic.md", "work/server-nixos.md"]
-related = ["commit", "dockerfile", "open-source", "repository", "shell", "vagrant", "ai-agent", "alpine-js"]
+related = ["commit", "dockerfile", "open-source", "repository", "shell", "cockpit", "fail2ban", "vagrant"]
 og_title = "Ansible: glossary"
 og_image = "og/glossary-ansible.png"
 keywords = ["Ansible", "Technology", "Glossary", "Tomas Korcak"]

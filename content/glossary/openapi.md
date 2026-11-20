@@ -3,7 +3,7 @@
 title = "OpenAPI"
 description = "A standard, language-neutral description of an HTTP interface: its paths, operations and data, readable by people and tools such as Swagger UI."
 template = "term.html"
-weight = 102
+weight = 129
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

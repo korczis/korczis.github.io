@@ -3,7 +3,7 @@
 title = "jq"
 description = "A command-line processor that filters and transforms JSON with a small functional language."
 template = "term.html"
-weight = 84
+weight = 103
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

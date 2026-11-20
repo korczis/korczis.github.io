@@ -3,7 +3,7 @@
 title = "Majordomus"
 description = "The owner's supervisory layer for AI-assisted work: one policy for every coding agent, scoped tasks, and finishes that must be proven."
 template = "term.html"
-weight = 91
+weight = 115
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

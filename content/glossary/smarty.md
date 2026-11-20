@@ -3,7 +3,7 @@
 title = "Smarty"
 description = "A template engine for PHP that keeps presentation apart from application logic."
 template = "term.html"
-weight = 35
+weight = 36
 
 [taxonomies]
 tags = ["Glossary", "Programming language"]

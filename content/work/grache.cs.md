@@ -17,7 +17,7 @@ og_description = "grache: Nástroje, Ruby, 2015, archiv. Zdrojový kód: GitHub 
 og_image = "og/cs-work-grache.png"
 schema = "project"
 keywords = ["grache", "Nástroje", "Ruby", "2015", "GitHub", "GitLab", "Tomáš Korčák", "korczis"]
-terms = ["ruby", "gli", "travis-ci", "open-source", "repository", "commit"]
+terms = ["ruby", "gli", "aws", "travis-ci", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"

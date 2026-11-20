@@ -3,7 +3,7 @@
 title = "GLI"
 description = "A Ruby library for building git-like command-line applications with commands, flags and help."
 template = "term.html"
-weight = 75
+weight = 89
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "A Ruby library for building git-like command-line applications wit
 aliases = []
 reference = { title = "GLI on GitHub", url = "https://github.com/davetron5000/gli" }
 pages = ["work/apollon.md", "work/cluster.md", "work/csv2psql.md", "work/esri.md", "work/grache.md"]
-related = ["commit", "open-source", "repository", "ruby", "rspec", "coreos", "github-pages", "kubernetes"]
+related = ["commit", "open-source", "repository", "ruby", "aws", "rspec", "coreos", "github-pages"]
 og_title = "GLI: glossary"
 og_image = "og/glossary-gli.png"
 keywords = ["GLI", "Technology", "Glossary", "Tomas Korcak"]

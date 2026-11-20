@@ -17,7 +17,7 @@ og_description = "peacemaker: Security and OSINT in C++ and C, 2014, archive. So
 og_image = "og/work-peacemaker.png"
 schema = "project"
 keywords = ["peacemaker", "Security and OSINT", "C++", "2014", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["cpp", "c", "cmake", "travis-ci", "osint", "due-diligence", "mergers-and-acquisitions", "virtual-data-room", "risk-assessment", "market-intelligence", "decision-support-system", "insolvency", "record-linkage", "knowledge-graph", "data-integration", "audit-trail", "information-extraction", "orchestration", "repository", "commit", "open-source"]
+terms = ["cpp", "c", "libpcap", "cmake", "google-test", "travis-ci", "osint", "due-diligence", "mergers-and-acquisitions", "virtual-data-room", "risk-assessment", "market-intelligence", "decision-support-system", "insolvency", "record-linkage", "knowledge-graph", "data-integration", "audit-trail", "information-extraction", "orchestration", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

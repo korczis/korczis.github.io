@@ -3,7 +3,7 @@
 title = "Markdown"
 description = "A plain-text format whose light marks (headings, lists, links) render as HTML; READMEs and this site's pages are written in it."
 template = "term.html"
-weight = 92
+weight = 116
 
 [taxonomies]
 tags = ["Glossary", "Technology"]

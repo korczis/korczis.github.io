@@ -17,7 +17,7 @@ og_description = "algorithms: Science and visualisation in C++ and C, 2014, arch
 og_image = "og/work-algorithms.png"
 schema = "project"
 keywords = ["algorithms", "Science and visualisation", "C++", "2014", "GitHub", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["cpp", "c", "cmake", "travis-ci", "data-visualisation", "repository", "commit", "open-source"]
+terms = ["cpp", "c", "cmake", "google-test", "travis-ci", "data-visualisation", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"

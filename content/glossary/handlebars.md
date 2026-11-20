@@ -3,7 +3,7 @@
 title = "Handlebars"
 description = "A logic-less templating language that fills HTML templates from data with {{expressions}}."
 template = "term.html"
-weight = 81
+weight = 97
 
 [taxonomies]
 tags = ["Glossary", "Technology"]
@@ -17,7 +17,7 @@ definition = "A logic-less templating language that fills HTML templates from da
 aliases = []
 reference = { title = "Handlebars", url = "https://handlebarsjs.com/" }
 pages = ["skills/change-monitoring.md", "work/apollocrawler-com.md", "work/craftsmen.md", "work/microcrawler-couchapp.md", "work/microscratch.md"]
-related = ["css", "ember-js", "javascript", "bootstrap", "commit", "express", "grunt", "open-source"]
+related = ["css", "ember-js", "javascript", "bootstrap", "commit", "express", "open-source", "repository"]
 og_title = "Handlebars: glossary"
 og_image = "og/glossary-handlebars.png"
 keywords = ["Handlebars", "Technology", "Glossary", "Tomas Korcak"]

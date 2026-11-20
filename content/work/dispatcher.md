@@ -17,7 +17,7 @@ og_description = "dispatcher: Tools in TypeScript and JavaScript, 2024, active i
 og_image = "og/work-dispatcher.png"
 schema = "project"
 keywords = ["dispatcher", "Tools", "TypeScript", "JavaScript", "2024", "GitLab", "Tomas Korcak", "korczis"]
-terms = ["typescript", "javascript", "eslint", "gitlab-ci", "open-source", "repository", "commit"]
+terms = ["typescript", "javascript", "vitest", "eslint", "gitlab-ci", "open-source", "repository", "commit"]
 
 [[extra.viz]]
 kind = "pulse"
