@@ -2205,19 +2205,6 @@
       ],
       "repos": [
         {
-          "name": "korczis.github.io",
-          "title": "korczis.github.io",
-          "how": "words",
-          "score": 4,
-          "slug": "korczis-github-io",
-          "url": "https://github.com/korczis/korczis.github.io",
-          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-          "category": "web",
-          "site": null,
-          "pushed": "2026-11-20",
-          "skill": "llm-agents"
-        },
-        {
           "name": "sig",
           "title": "sig",
           "how": "words",
@@ -2228,6 +2215,19 @@
           "category": "ai",
           "site": null,
           "pushed": "2026-02-04",
+          "skill": "llm-agents"
+        },
+        {
+          "name": "korczis.github.io",
+          "title": "korczis.github.io",
+          "how": "words",
+          "score": 3.8,
+          "slug": "korczis-github-io",
+          "url": "https://github.com/korczis/korczis.github.io",
+          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+          "category": "web",
+          "site": null,
+          "pushed": "2026-11-21",
           "skill": "llm-agents"
         },
         {
@@ -2567,7 +2567,7 @@
           "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
           "category": "web",
           "site": null,
-          "pushed": "2026-11-20",
+          "pushed": "2026-11-21",
           "skill": "policy-as-code"
         },
         {
@@ -5143,18 +5143,6 @@
       ],
       "repos": [
         {
-          "name": "korczis.github.io",
-          "title": "korczis.github.io",
-          "how": "words",
-          "score": 4,
-          "slug": "korczis-github-io",
-          "url": "https://github.com/korczis/korczis.github.io",
-          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-          "category": "web",
-          "site": null,
-          "pushed": "2026-11-20"
-        },
-        {
           "name": "sig",
           "title": "sig",
           "how": "words",
@@ -5165,6 +5153,18 @@
           "category": "ai",
           "site": null,
           "pushed": "2026-02-04"
+        },
+        {
+          "name": "korczis.github.io",
+          "title": "korczis.github.io",
+          "how": "words",
+          "score": 3.8,
+          "slug": "korczis-github-io",
+          "url": "https://github.com/korczis/korczis.github.io",
+          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+          "category": "web",
+          "site": null,
+          "pushed": "2026-11-21"
         },
         {
           "name": "prismatic-majordomus",
@@ -6558,7 +6558,7 @@
           "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
           "category": "web",
           "site": null,
-          "pushed": "2026-11-20"
+          "pushed": "2026-11-21"
         },
         {
           "name": "kompendium-epistemicke-anihilace",

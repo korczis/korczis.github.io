@@ -1,6 +1,6 @@
 {
  "schema": "korczis-hub-recent/v2",
- "generated_at": "2026-11-21T02:41:07Z",
+ "generated_at": "2026-11-21T11:36:05Z",
  "window_days": 1461,
  "periods": [
   {
@@ -18,7 +18,7 @@
  ],
  "archive": 162,
  "rule": "every original repository of data/index.json; a repository is recent when its default branch has a commit in the window, archive otherwise; host activity dates are ignored",
- "asked": 2,
+ "asked": 1,
  "repos": [
   {
    "name": "korczis.github.io",
@@ -27,10 +27,15 @@
    "category": "web",
    "language": "JavaScript",
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-20T20:44:36Z",
-   "last_commit": "2026-11-20T20:43:47Z",
+   "pushed_at": "2026-11-21T02:42:57Z",
+   "last_commit": "2026-11-21T02:41:51Z",
    "last_message": "chore(data): refresh the snapshot and the index",
    "commits": [
+    {
+     "at": "2026-11-21T02:41:51Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/292b9c146c2b7684378e371442bb77dbff7c15aa"
+    },
     {
      "at": "2026-11-20T20:43:47Z",
      "message": "chore(data): refresh the snapshot and the index",
@@ -175,11 +180,6 @@
      "at": "2026-11-18T09:11:33Z",
      "message": "chore(merge): integrate #37, a derived, anonymised case study per client engagement",
      "url": "https://github.com/korczis/korczis.github.io/commit/d05a43c8fea852c69fc186334ea278b6eca34eb2"
-    },
-    {
-     "at": "2026-11-18T09:01:24Z",
-     "message": "feat(llms): services and case studies sections in llms.txt",
-     "url": "https://github.com/korczis/korczis.github.io/commit/a9ecc7412fe6df78e24a760449e841b6309216b4"
     }
    ],
    "languages": [
