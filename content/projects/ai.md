@@ -4,7 +4,7 @@ title = "AI engineering"
 description = "Supervision for AI coding agents: one policy for every tool, scoped tasks, and work that lands only when it is proven."
 template = "category.html"
 weight = 1
-updated = "2026-11-20T18:52:37Z"
+updated = "2026-11-20T21:10:48Z"
 
 [taxonomies]
 tags = ["AI engineering", "Majordomus", "llm", "sig", "edna"]

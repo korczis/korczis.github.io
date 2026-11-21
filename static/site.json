@@ -122,8 +122,8 @@
  ],
  "front_matter_schema": "https://korczis.github.io/schemas/front-matter.schema.json",
  "data_as_of": {
-  "snapshot": "2026-11-20T20:34:38Z",
-  "index": "2026-11-20T20:43:13Z"
+  "snapshot": "2026-11-21T02:33:53Z",
+  "index": "2026-11-21T02:41:06Z"
  },
  "pages": [
   {
@@ -5597,8 +5597,8 @@
    "keywords": [
     "Tomáš Korčák: projekty",
     "korczis",
-    "sonic-playground",
     "korczis.github.io",
+    "sonic-playground",
     "oscilla",
     "kompendium-epistemicke-anihilace",
     "prismatic-majordomus",
@@ -14854,8 +14854,8 @@
    "keywords": [
     "Tomas Korcak projects",
     "korczis",
-    "sonic-playground",
     "korczis.github.io",
+    "sonic-playground",
     "oscilla",
     "kompendium-epistemicke-anihilace",
     "prismatic-majordomus",
@@ -19134,11 +19134,32 @@
    "gitlab": null,
    "site": "https://korczis.github.io/prismatic-majordomus/",
    "created": "2026-09-03T20:24:57Z",
-   "active": "2026-11-20T18:52:37Z",
+   "active": "2026-11-20T21:10:48Z",
    "last_commit": "2026-11-19T02:54:59Z",
    "period": 12,
    "archive": false,
    "stars": 1,
+   "supervised": true
+  },
+  {
+   "name": "korczis.github.io",
+   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+   "language": "JavaScript",
+   "category": "web",
+   "page": "https://korczis.github.io/work/korczis-github-io/",
+   "pages": {
+    "en": "https://korczis.github.io/work/korczis-github-io/",
+    "cs": "https://korczis.github.io/cs/work/korczis-github-io/"
+   },
+   "github": "https://github.com/korczis/korczis.github.io",
+   "gitlab": null,
+   "site": null,
+   "created": "2024-12-24T16:48:15Z",
+   "active": "2026-11-20T20:44:36Z",
+   "last_commit": "2026-11-20T20:43:47Z",
+   "period": 12,
+   "archive": false,
+   "stars": 0,
    "supervised": true
   },
   {
@@ -19157,27 +19178,6 @@
    "created": "2026-11-12T00:48:36Z",
    "active": "2026-11-20T16:21:31Z",
    "last_commit": "2026-11-20T15:58:06Z",
-   "period": 12,
-   "archive": false,
-   "stars": 0,
-   "supervised": true
-  },
-  {
-   "name": "korczis.github.io",
-   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-   "language": "JavaScript",
-   "category": "web",
-   "page": "https://korczis.github.io/work/korczis-github-io/",
-   "pages": {
-    "en": "https://korczis.github.io/work/korczis-github-io/",
-    "cs": "https://korczis.github.io/cs/work/korczis-github-io/"
-   },
-   "github": "https://github.com/korczis/korczis.github.io",
-   "gitlab": null,
-   "site": null,
-   "created": "2024-12-24T16:48:15Z",
-   "active": "2026-11-20T12:04:00Z",
-   "last_commit": "2026-11-20T12:02:53Z",
    "period": 12,
    "archive": false,
    "stars": 0,

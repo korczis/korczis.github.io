@@ -3,7 +3,7 @@
 title = "Sonic Playground"
 description = "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita."
 template = "work.html"
-weight = 1
+weight = 2
 updated = "2026-11-20T15:58:06Z"
 
 [taxonomies]
