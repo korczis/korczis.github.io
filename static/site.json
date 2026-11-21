@@ -122,8 +122,8 @@
  ],
  "front_matter_schema": "https://korczis.github.io/schemas/front-matter.schema.json",
  "data_as_of": {
-  "snapshot": "2026-11-21T11:27:41Z",
-  "index": "2026-11-21T11:36:05Z"
+  "snapshot": "2026-11-21T19:31:09Z",
+  "index": "2026-11-21T19:40:05Z"
  },
  "pages": [
   {
@@ -19134,8 +19134,8 @@
    "gitlab": null,
    "site": null,
    "created": "2024-12-24T16:48:15Z",
-   "active": "2026-11-21T02:42:57Z",
-   "last_commit": "2026-11-21T02:41:51Z",
+   "active": "2026-11-21T11:37:28Z",
+   "last_commit": "2026-11-21T11:36:39Z",
    "period": 12,
    "archive": false,
    "stars": 0,
