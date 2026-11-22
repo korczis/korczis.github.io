@@ -1,6 +1,6 @@
 {
   "schema": "korczis-hub-github/v1",
-  "generated_at": "2026-11-21T19:31:09Z",
+  "generated_at": "2026-11-22T16:29:23Z",
   "profile": {
     "login": "korczis",
     "name": "Tomas Korcak",
@@ -12,38 +12,10 @@
     "public_repos": 198
   },
   "contributions": {
-    "total": 22189,
-    "from": "2025-11-16",
-    "to": "2026-11-21",
+    "total": 22450,
+    "from": "2025-11-23",
+    "to": "2026-11-22",
     "days": [
-      [
-        "2025-11-16",
-        87
-      ],
-      [
-        "2025-11-17",
-        124
-      ],
-      [
-        "2025-11-18",
-        30
-      ],
-      [
-        "2025-11-19",
-        39
-      ],
-      [
-        "2025-11-20",
-        2
-      ],
-      [
-        "2025-11-21",
-        3
-      ],
-      [
-        "2025-11-22",
-        14
-      ],
       [
         "2025-11-23",
         23
@@ -1482,23 +1454,27 @@
       ],
       [
         "2026-11-17",
-        200
+        201
       ],
       [
         "2026-11-18",
-        319
+        336
       ],
       [
         "2026-11-19",
-        90
+        101
       ],
       [
         "2026-11-20",
-        37
+        51
       ],
       [
         "2026-11-21",
         0
+      ],
+      [
+        "2026-11-22",
+        218
       ]
     ]
   },
@@ -1566,7 +1542,7 @@
       "language": "Rust",
       "license": "MIT",
       "created_at": "2026-09-03T20:24:57Z",
-      "pushed_at": "2026-11-20T21:10:48Z",
+      "pushed_at": "2026-11-22T15:22:16Z",
       "activity": "active",
       "archived": false,
       "fork": false,
@@ -1581,7 +1557,7 @@
       "language": "JavaScript",
       "license": "MIT",
       "created_at": "2026-10-01T21:05:33Z",
-      "pushed_at": "2026-11-20T03:43:19Z",
+      "pushed_at": "2026-11-22T15:12:21Z",
       "activity": "active",
       "archived": false,
       "fork": false,
@@ -1596,7 +1572,7 @@
       "language": "TypeScript",
       "license": "MIT",
       "created_at": "2026-11-11T18:09:38Z",
-      "pushed_at": "2026-11-17T19:23:49Z",
+      "pushed_at": "2026-11-22T07:04:46Z",
       "activity": "active",
       "archived": false,
       "fork": false,
@@ -1611,7 +1587,7 @@
       "language": "Elixir",
       "license": "NOASSERTION",
       "created_at": "2026-11-09T22:04:50Z",
-      "pushed_at": "2026-11-19T13:16:44Z",
+      "pushed_at": "2026-11-22T15:26:38Z",
       "activity": "active",
       "archived": false,
       "fork": false,
@@ -1686,7 +1662,7 @@
       "language": "Python",
       "license": "MIT",
       "created_at": "2026-11-12T00:48:36Z",
-      "pushed_at": "2026-11-20T16:21:31Z",
+      "pushed_at": "2026-11-22T14:25:52Z",
       "activity": "active",
       "archived": false,
       "fork": false,
@@ -1789,11 +1765,11 @@
   ],
   "majordomus": {
     "source": "https://majordomus.dev/build.json",
-    "version": "1.1.0",
-    "tag": "v1.1.0",
-    "published_at": "2026-11-18T06:53:32Z",
-    "notes_url": "https://github.com/korczis/prismatic-majordomus/releases/tag/v1.1.0",
-    "commit": "8df53bc26e9589492cb1bfe2b7aff7fa0d26a79e",
-    "commit_time": "2026-11-19T03:54:59+01:00"
+    "version": "1.2.0",
+    "tag": "v1.2.0",
+    "published_at": "2026-11-22T09:45:30Z",
+    "notes_url": "https://github.com/korczis/prismatic-majordomus/releases/tag/v1.2.0",
+    "commit": "636acc8c8456036be915db1391bc3526d727557b",
+    "commit_time": "2026-11-22T11:59:42+01:00"
   }
 }

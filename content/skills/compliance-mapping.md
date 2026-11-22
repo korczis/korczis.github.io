@@ -13,7 +13,7 @@ skill = "compliance-mapping"
 og_title = "Regulatory compliance mapping: skills"
 og_image = "og/skill-compliance-mapping.png"
 schema = "skill"
-terms = ["skill", "regulatory-compliance", "alpine-js", "axe-core", "css", "esbuild", "flowbite-pro", "github-pages", "html", "javascript", "p5-js", "playwright"]
+terms = ["skill", "regulatory-compliance"]
 keywords = ["Regulatory compliance mapping", "Sanctions, PEP and beneficial-ownership screening", "External attack surface and cyber-exposure assessment", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -30,9 +30,5 @@ Findings turned into regulatory evidence: exposures and vetting results mapped t
 The concept behind it: [Regulatory compliance](@/glossary/regulatory-compliance.md).
 
 Services that draw on it: [Sanctions, PEP and beneficial-ownership screening](@/services/compliance-screening.md) and [External attack surface and cyber-exposure assessment](@/services/attack-surface.md).
-
-Practised with: [Alpine.js](@/glossary/alpine-js.md), [axe-core](@/glossary/axe-core.md), [CSS](@/glossary/css.md), [esbuild](@/glossary/esbuild.md), [Flowbite Pro](@/glossary/flowbite-pro.md), [GitHub Pages](@/glossary/github-pages.md), [HTML](@/glossary/html.md) and [JavaScript](@/glossary/javascript.md).
-
-Public work whose own words show it: [oscilla](https://github.com/korczis/oscilla).
 
 How to read this page: the definition is the experience vocabulary's; the services, technologies, public [repositories](@/glossary/repository.md) and use cases are derived and each links to its page.

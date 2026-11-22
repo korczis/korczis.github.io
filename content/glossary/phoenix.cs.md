@@ -17,7 +17,7 @@ definition = "Webový framework Elixiru; LiveView vykresluje interaktivní strá
 aliases = ["Phoenix LiveView", "LiveView", "phoenix_live_view", "Phoenix LiveDashboard"]
 reference = { title = "Phoenix Framework", url = "https://www.phoenixframework.org/" }
 pages = ["services/attack-surface.cs.md", "services/continuous-monitoring.cs.md", "services/decision-support-ai.cs.md", "services/due-diligence.cs.md", "services/m-and-a.cs.md", "services/reputation-intelligence.cs.md", "skills/decision-support.cs.md", "skills/registry-intelligence.cs.md", "work/astudo.cs.md", "work/corvidae.cs.md", "work/crisis-map.cs.md", "work/czech-stats.cs.md", "work/dj-schnapps.cs.md", "work/edna.cs.md", "work/gooddata-graphql.cs.md", "work/happ.cs.md", "work/hydra.cs.md", "work/kanec.cs.md", "work/korczis-gitlab-io.cs.md", "work/magic.cs.md", "work/mapoffacts.cs.md", "work/maze.cs.md", "work/mindscape.cs.md", "work/prismatic.cs.md", "work/rest-hello-world-benchmark.cs.md", "work/sig.cs.md", "work/test-elixir.cs.md", "work/the-psycho.cs.md", "work/the-scratch.cs.md", "work/tosh.cs.md", "work/web-spa.cs.md", "work/zaas.cs.md"]
-related = ["elixir", "javascript", "commit", "open-source", "repository", "html", "postgresql", "css"]
+related = ["elixir", "javascript", "commit", "open-source", "repository", "html", "postgresql", "dockerfile"]
 og_title = "Phoenix: slovník"
 og_image = "og/cs-glossary-phoenix.png"
 keywords = ["Phoenix", "Technologie", "Slovník", "Tomáš Korčák"]

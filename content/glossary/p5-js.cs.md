@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Knihovna pro kreativní programování odvozená z Processingu, pro kreslení a simulace v prohlížeči."
 aliases = ["p5js"]
 reference = { title = "p5js.org", url = "https://p5js.org/" }
-pages = ["projects/science.cs.md", "services/interactive-data-products.cs.md", "skills/compliance-mapping.cs.md", "skills/interactive-visualisation.cs.md", "stack.cs.md", "work/algoglyph.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/korczis-github-io.cs.md", "work/majordomus-reel.cs.md", "work/oscilla.cs.md"]
-related = ["flowbite-pro", "alpine-js", "javascript", "apache-echarts", "github-pages", "html", "tailwind-css", "data-visualisation"]
+pages = ["projects/science.cs.md", "services/interactive-data-products.cs.md", "skills/interactive-visualisation.cs.md", "stack.cs.md", "work/algoglyph.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/korczis-github-io.cs.md", "work/majordomus-reel.cs.md", "work/oscilla.cs.md"]
+related = ["flowbite-pro", "alpine-js", "apache-echarts", "javascript", "tailwind-css", "github-pages", "html", "data-visualisation"]
 og_title = "p5.js: slovník"
 og_image = "og/cs-glossary-p5-js.png"
 keywords = ["p5.js", "Technologie", "Slovník", "Tomáš Korčák"]
@@ -44,7 +44,7 @@ p5.js je součástí 5 mých veřejných repozitářů, od roku 2024 do 2026.
 
 K čemu to sloužilo: [Věda a vizualizace](@/projects/science.cs.md) (2), [Znalosti](@/projects/knowledge.cs.md) (1), [Média a umění](@/projects/media.cs.md) (1) a [Web](@/projects/web.cs.md) (1).
 
-Naposledy: [korczis.github.io](@/work/korczis-github-io.cs.md); [Oscilla](@/work/oscilla.cs.md): Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu; [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat.
+Naposledy: [algoglyph](@/work/algoglyph.cs.md): Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem; [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat; [korczis.github.io](@/work/korczis-github-io.cs.md).
 
 4 z těchto projektů běží jako živé weby.
 

@@ -16,8 +16,8 @@ kind = "technology"
 definition = "A vocabulary for describing and validating the structure of JSON documents."
 aliases = []
 reference = { title = "JSON Schema", url = "https://json-schema.org/" }
-pages = ["skills/ownership-analysis.md", "work/comtesse.md", "work/sonic-playground.md", "work/vomaste-cz.md"]
-related = ["shell", "commit", "css", "github-pages", "html", "javascript", "open-source", "repository"]
+pages = ["work/comtesse.md", "work/sonic-playground.md", "work/vomaste-cz.md"]
+related = ["commit", "open-source", "repository", "shell", "css", "github-pages", "html", "javascript"]
 og_title = "JSON Schema: glossary"
 og_image = "og/glossary-json-schema.png"
 keywords = ["JSON Schema", "Technology", "Glossary", "Tomas Korcak"]

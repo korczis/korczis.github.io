@@ -14,7 +14,7 @@ icon = "server"
 og_title = "Hodnocení vnější útočné plochy a kybernetické expozice"
 og_image = "og/cs-service-attack-surface.png"
 schema = "service"
-terms = ["service", "elixir", "postgresql", "phoenix", "attack-surface", "regulatory-compliance", "change-detection", "risk-assessment", "web-scraping", "javascript", "nodejs", "cheerio", "html", "alpine-js", "bootstrap", "bower", "couchdb", "css", "dockerfile"]
+terms = ["service", "elixir", "postgresql", "phoenix", "attack-surface", "regulatory-compliance", "change-detection", "risk-assessment", "web-scraping", "javascript", "nodejs", "cheerio", "bootstrap", "bower", "couchdb", "dockerfile", "ember-js", "handlebars", "html"]
 keywords = ["Hodnocení vnější útočné plochy a kybernetické expozice", "Infrastrukturní OSINT", "Mapování regulatorní shody", "Průběžný monitoring", "Hodnocení rizik", "Webová automatizace a crawling", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -34,9 +34,9 @@ Objevit domény, adresy, certifikáty a služby, propojit je se zpravodajstvím 
 
 Je postavená na: [Elixir](@/glossary/elixir.cs.md), [PostgreSQL](@/glossary/postgresql.cs.md) a [Phoenix](@/glossary/phoenix.cs.md).
 
-Technologie za ní, změřené z práce, která tyto dovednosti dokládá: [JavaScript](@/glossary/javascript.cs.md), [Node.js](@/glossary/nodejs.cs.md), [Cheerio](@/glossary/cheerio.cs.md), [HTML](@/glossary/html.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md), [Bootstrap](@/glossary/bootstrap.cs.md), [Bower](@/glossary/bower.cs.md) a [CouchDB](@/glossary/couchdb.cs.md).
+Technologie za ní, změřené z práce, která tyto dovednosti dokládá: [JavaScript](@/glossary/javascript.cs.md), [Node.js](@/glossary/nodejs.cs.md), [Cheerio](@/glossary/cheerio.cs.md), [Bootstrap](@/glossary/bootstrap.cs.md), [Bower](@/glossary/bower.cs.md), [CouchDB](@/glossary/couchdb.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md) a [Ember.js](@/glossary/ember-js.cs.md).
 
-Její dovednosti dokládá 15 veřejných repozitářů (15 vlastními slovy).
+Její dovednosti dokládá 14 veřejných repozitářů (14 vlastními slovy).
 
 Byla dodána v klientské práci pod dohodami o mlčenlivosti, v odvětví: Developer nemovitostí, v roli: Architekt, Vedoucí inženýr, Inženýr AI a Datový inženýr; případy užití popisují princip a záměr, nikdy klienta, osobu, datum ani číslo.
 

@@ -14,7 +14,7 @@ icon = "briefcase"
 og_title = "Prověrka a analýza M&A transakcí"
 og_image = "og/cs-service-m-and-a.png"
 schema = "service"
-terms = ["service", "elixir", "phoenix", "postgresql", "monte-carlo-simulation", "mergers-and-acquisitions", "due-diligence", "financial-statement-analysis", "beneficial-ownership", "market-intelligence", "contestability", "risk-assessment", "virtual-data-room", "decision-support-system", "javascript", "html", "python", "flowbite-pro", "dockerfile", "fastapi", "alpine-js", "playwright", "tailwind-css", "claude-api"]
+terms = ["service", "elixir", "phoenix", "postgresql", "monte-carlo-simulation", "mergers-and-acquisitions", "due-diligence", "financial-statement-analysis", "beneficial-ownership", "market-intelligence", "contestability", "risk-assessment", "virtual-data-room", "decision-support-system", "javascript", "html", "python", "flowbite-pro", "alpine-js", "dockerfile", "fastapi", "tailwind-css", "playwright", "shell"]
 keywords = ["Prověrka a analýza M&A transakcí", "Prověrka M&A", "Due diligence", "Analýza účetních závěrek", "Analýza vlastnictví a vazeb", "Tržní zpravodajství", "Napadnutelná rozhodnutí", "Hodnocení rizik", "Datová místnost", "Podpora rozhodování", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -34,9 +34,9 @@ Transakční týmy prověřují mnoho cílů, ale plnou due diligence si mohou d
 
 Je postavená na: [Elixir](@/glossary/elixir.cs.md), [Phoenix](@/glossary/phoenix.cs.md), [PostgreSQL](@/glossary/postgresql.cs.md) a [Monte Carlo simulation](@/glossary/monte-carlo-simulation.cs.md).
 
-Technologie za ní, změřené z práce, která tyto dovednosti dokládá: [JavaScript](@/glossary/javascript.cs.md), [HTML](@/glossary/html.cs.md), [Python](@/glossary/python.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md), [FastAPI](@/glossary/fastapi.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md) a [Playwright](@/glossary/playwright.cs.md).
+Technologie za ní, změřené z práce, která tyto dovednosti dokládá: [JavaScript](@/glossary/javascript.cs.md), [HTML](@/glossary/html.cs.md), [Python](@/glossary/python.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md), [FastAPI](@/glossary/fastapi.cs.md) a [Tailwind CSS](@/glossary/tailwind-css.cs.md).
 
-Její dovednosti dokládá 7 veřejných repozitářů (7 vlastními slovy).
+Její dovednosti dokládá 8 veřejných repozitářů (8 vlastními slovy).
 
 Byla dodána v klientské práci pod dohodami o mlčenlivosti, v odvětví: Developer nemovitostí a Finanční a investiční skupina, v roli: Architekt, Vedoucí inženýr, Inženýr AI, Datový inženýr, Analytik šetření a Poradce; případy užití popisují princip a záměr, nikdy klienta, osobu, datum ani číslo.
 

@@ -3,7 +3,7 @@
 title = "openttd-prismatic-bridge"
 description = "REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform"
 template = "work.html"
-weight = 6
+weight = 7
 updated = "2026-11-19T00:49:27Z"
 
 [taxonomies]
@@ -35,6 +35,6 @@ The [repository](@/glossary/repository.md) was created on 23 July 2026; its late
 
 Its source is on [GitLab](https://gitlab.com/korczis/openttd-prismatic-bridge).
 
-Related work in [Media and art](@/projects/media.md): [Majordomus reel](@/work/majordomus-reel.md) (2026), [Sonic Playground](@/work/sonic-playground.md) (2026), [Catharsis as a Service](@/work/catharsis-as-a-service.md) (2026) and [dj-schnapps](@/work/dj-schnapps.md) (2019).
+Related work in [Media and art](@/projects/media.md): [Majordomus reel](@/work/majordomus-reel.md) (2026), [Catharsis as a Service](@/work/catharsis-as-a-service.md) (2026), [Sonic Playground](@/work/sonic-playground.md) (2026) and [dj-schnapps](@/work/dj-schnapps.md) (2019).
 
 *How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 30 commits as a heartbeat, one lane per commit type (feat, fix, docs…), from a snapshot refreshed every 6 hours. The concepts below are explained in the [glossary](@/glossary/_index.md).

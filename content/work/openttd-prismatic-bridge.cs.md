@@ -3,7 +3,7 @@
 title = "openttd-prismatic-bridge"
 description = "openttd-prismatic-bridge: projekt z kategorie Média a umění, hlavní jazyk Python, poslední commit 19. listopadu 2026."
 template = "work.html"
-weight = 6
+weight = 7
 updated = "2026-11-19T00:49:27Z"
 
 [taxonomies]
@@ -35,6 +35,6 @@ vars = { cadence = "každých 6 hodin" }
 
 Zdrojový kód: [GitLab](https://gitlab.com/korczis/openttd-prismatic-bridge).
 
-Související práce v kategorii [Média a umění](@/projects/media.cs.md): [Majordomus reel](@/work/majordomus-reel.cs.md) (2026), [Sonic Playground](@/work/sonic-playground.cs.md) (2026), [Catharsis as a Service](@/work/catharsis-as-a-service.cs.md) (2026) a [dj-schnapps](@/work/dj-schnapps.cs.md) (2019).
+Související práce v kategorii [Média a umění](@/projects/media.cs.md): [Majordomus reel](@/work/majordomus-reel.cs.md) (2026), [Catharsis as a Service](@/work/catharsis-as-a-service.cs.md) (2026), [Sonic Playground](@/work/sonic-playground.cs.md) (2026) a [dj-schnapps](@/work/dj-schnapps.cs.md) (2019).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 30 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…), ze snímku obnovovaného každých 6 hodin. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

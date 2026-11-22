@@ -17,7 +17,7 @@ definition = "Dokumentová databáze Apache: JSON dokumenty přes HTTP, pohledy 
 aliases = []
 reference = { title = "Apache CouchDB documentation", url = "https://docs.couchdb.org/" }
 pages = ["services/attack-surface.cs.md", "skills/change-monitoring.cs.md", "work/microcrawler-couchapp.cs.md", "work/microscratch.cs.md"]
-related = ["bootstrap", "bower", "css", "javascript", "ember-js", "handlebars", "change-detection", "commit"]
+related = ["bootstrap", "bower", "ember-js", "handlebars", "javascript", "css", "change-detection", "commit"]
 og_title = "CouchDB: slovník"
 og_image = "og/cs-glossary-couchdb.png"
 keywords = ["CouchDB", "Technologie", "Slovník", "Tomáš Korčák"]

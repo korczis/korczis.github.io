@@ -14,7 +14,7 @@ icon = "puzzle"
 og_title = "Decision support and AI agents for analysts"
 og_image = "og/service-decision-support-ai.png"
 schema = "service"
-terms = ["service", "elixir", "mcp", "claude-api", "ollama", "phoenix", "ai-agent", "decision-support-system", "contestability", "orchestration", "information-extraction", "audit-trail", "html", "javascript", "shell", "flowbite-pro", "python", "tailwind-css", "alpine-js", "playwright", "postgresql", "dockerfile"]
+terms = ["service", "elixir", "mcp", "claude-api", "ollama", "phoenix", "ai-agent", "decision-support-system", "contestability", "orchestration", "information-extraction", "audit-trail", "html", "javascript", "shell", "python", "flowbite-pro", "dockerfile", "postgresql", "alpine-js", "github-actions", "tailwind-css"]
 keywords = ["Decision support and AI agents for analysts", "LLM agents", "Decision support", "Contestable decisions", "AI transformation", "Orchestration", "Document extraction", "Audit trail", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -34,9 +34,9 @@ It draws on these skills: [LLM agents](@/skills/llm-agents.md), [Decision suppor
 
 It is built with [Elixir](@/glossary/elixir.md), [MCP](@/glossary/mcp.md), [Claude API](@/glossary/claude-api.md), [Ollama](@/glossary/ollama.md) and [Phoenix](@/glossary/phoenix.md).
 
-The technologies behind it, measured from the work that shows those skills: [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md), [Shell](@/glossary/shell.md), [Flowbite Pro](@/glossary/flowbite-pro.md), [Python](@/glossary/python.md), [Tailwind CSS](@/glossary/tailwind-css.md), [Alpine.js](@/glossary/alpine-js.md) and [Playwright](@/glossary/playwright.md).
+The technologies behind it, measured from the work that shows those skills: [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md), [Shell](@/glossary/shell.md), [Python](@/glossary/python.md), [Flowbite Pro](@/glossary/flowbite-pro.md), [Dockerfile](@/glossary/dockerfile.md), [PostgreSQL](@/glossary/postgresql.md) and [Alpine.js](@/glossary/alpine-js.md).
 
-13 public repositories show its skills (13 by their own words).
+11 public repositories show its skills (11 by their own words).
 
 It was delivered in client work under confidentiality agreements, in Real-estate developer and Financial and investment group, as Architect, Lead engineer, AI engineer, Data engineer, Investigator and Advisor; the use cases describe the principle and the intent, never a client, person, date or number.
 

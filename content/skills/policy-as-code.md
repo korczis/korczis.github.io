@@ -13,7 +13,7 @@ skill = "policy-as-code"
 og_title = "Policy as code: skills"
 og_image = "og/skill-policy-as-code.png"
 schema = "skill"
-terms = ["skill", "policy-as-code", "javascript", "html", "tailwind-css", "flowbite-pro", "github-pages", "shell", "zola", "css", "playwright", "python"]
+terms = ["skill", "policy-as-code", "javascript", "html", "tailwind-css", "flowbite-pro", "github-pages", "shell", "zola", "css", "python", "playwright"]
 keywords = ["Policy as code", "Governed AI-assisted software delivery", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -33,6 +33,6 @@ Services that draw on it: [Governed AI-assisted software delivery](@/services/ai
 
 Practised with: [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md), [Tailwind CSS](@/glossary/tailwind-css.md), [Flowbite Pro](@/glossary/flowbite-pro.md), [GitHub Pages](@/glossary/github-pages.md), [Shell](@/glossary/shell.md), [Zola](@/glossary/zola.md) and [CSS](@/glossary/css.md).
 
-Public work whose own words show it: [majordomus-reel](https://github.com/korczis/majordomus-reel), [prismatic-majordomus](https://github.com/korczis/prismatic-majordomus), [korczis.github.io](https://github.com/korczis/korczis.github.io) and [kompendium-epistemicke-anihilace](https://github.com/korczis/kompendium-epistemicke-anihilace).
+Public work whose own words show it: [majordomus-reel](https://github.com/korczis/majordomus-reel), [korczis.github.io](https://github.com/korczis/korczis.github.io), [prismatic-majordomus](https://github.com/korczis/prismatic-majordomus) and [kompendium-epistemicke-anihilace](https://github.com/korczis/kompendium-epistemicke-anihilace).
 
 How to read this page: the definition is the experience vocabulary's; the services, technologies, public [repositories](@/glossary/repository.md) and use cases are derived and each links to its page.

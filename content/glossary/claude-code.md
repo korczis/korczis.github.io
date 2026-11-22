@@ -17,7 +17,7 @@ definition = "Anthropic's agentic coding tool: it reads a repository, edits file
 aliases = []
 reference = { title = "Claude Code documentation", url = "https://docs.anthropic.com/en/docs/claude-code/overview" }
 pages = ["services/digital-forensics.md", "skills/llm-agents.md", "skills/media-forensics.md", "skills/narrative-analysis.md", "skills/orchestration.md", "work/osint-case-ratcliffe-moscow-2026.md"]
-related = ["html", "github-actions", "github-pages", "shell", "skill", "alpine-js", "claude-api", "dockerfile"]
+related = ["html", "shell", "claude-api", "github-actions", "python", "skill", "alpine-js", "dockerfile"]
 og_title = "Claude Code: glossary"
 og_image = "og/glossary-claude-code.png"
 keywords = ["Claude Code", "Technology", "Glossary", "Tomas Korcak"]

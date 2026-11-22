@@ -14,7 +14,7 @@ icon = "search"
 og_title = "Digital investigation and OSINT dossiers"
 og_image = "og/service-digital-investigation.png"
 schema = "service"
-terms = ["service", "elixir", "broadway", "playwright", "postgresql", "meilisearch", "cytoscape-js", "osint", "public-registry", "record-linkage", "beneficial-ownership", "attack-surface", "digital-forensics", "knowledge-graph", "web-scraping", "change-detection", "javascript", "html", "nodejs", "python", "flowbite-pro", "dockerfile", "shell", "tailwind-css", "cheerio", "ecto"]
+terms = ["service", "elixir", "broadway", "playwright", "postgresql", "meilisearch", "cytoscape-js", "osint", "public-registry", "record-linkage", "beneficial-ownership", "attack-surface", "digital-forensics", "knowledge-graph", "web-scraping", "change-detection", "javascript", "html", "nodejs", "python", "flowbite-pro", "shell", "tailwind-css", "dockerfile", "cheerio", "ecto"]
 keywords = ["Digital investigation and OSINT dossiers", "OSINT investigation", "Registry intelligence", "Entity resolution", "Ownership and link analysis", "Infrastructure OSINT", "Web and media forensics", "Knowledge graph", "Web automation and crawling", "Continuous monitoring", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -34,9 +34,9 @@ It draws on these skills: [OSINT investigation](@/skills/osint-investigation.md)
 
 It is built with [Elixir](@/glossary/elixir.md), [Broadway](@/glossary/broadway.md), [Playwright](@/glossary/playwright.md), [PostgreSQL](@/glossary/postgresql.md), [Meilisearch](@/glossary/meilisearch.md) and [Cytoscape.js](@/glossary/cytoscape-js.md).
 
-The technologies behind it, measured from the work that shows those skills: [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md), [Node.js](@/glossary/nodejs.md), [Python](@/glossary/python.md), [Flowbite Pro](@/glossary/flowbite-pro.md), [Dockerfile](@/glossary/dockerfile.md), [Shell](@/glossary/shell.md) and [Tailwind CSS](@/glossary/tailwind-css.md).
+The technologies behind it, measured from the work that shows those skills: [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md), [Node.js](@/glossary/nodejs.md), [Python](@/glossary/python.md), [Flowbite Pro](@/glossary/flowbite-pro.md), [Shell](@/glossary/shell.md), [Tailwind CSS](@/glossary/tailwind-css.md) and [Dockerfile](@/glossary/dockerfile.md).
 
-23 public repositories show its skills (23 by their own words).
+24 public repositories show its skills (24 by their own words).
 
 It was delivered in client work under confidentiality agreements, in Real-estate developer and Financial and investment group, as Architect, Lead engineer, AI engineer, Data engineer, Investigator and Advisor; the use cases describe the principle and the intent, never a client, person, date or number.
 

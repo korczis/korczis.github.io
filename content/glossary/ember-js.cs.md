@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Framework JavaScriptu pro rozsáhlé jednostránkové aplikace s konvencemi pro routování, data a šablony."
 aliases = ["Ember", "Ember Data"]
 reference = { title = "Ember.js Guides", url = "https://guides.emberjs.com/" }
-pages = ["skills/change-monitoring.cs.md", "work/apollocrawler-com.cs.md", "work/craftsmen.cs.md", "work/lethe-it.cs.md", "work/microcrawler-couchapp.cs.md", "work/microscratch.cs.md"]
-related = ["css", "javascript", "bootstrap", "commit", "handlebars", "open-source", "repository", "express"]
+pages = ["services/attack-surface.cs.md", "skills/change-monitoring.cs.md", "work/apollocrawler-com.cs.md", "work/craftsmen.cs.md", "work/lethe-it.cs.md", "work/microcrawler-couchapp.cs.md", "work/microscratch.cs.md"]
+related = ["javascript", "bootstrap", "css", "handlebars", "commit", "nodejs", "open-source", "repository"]
 og_title = "Ember.js: slovník"
 og_image = "og/cs-glossary-ember-js.png"
 keywords = ["Ember.js", "Technologie", "Slovník", "Tomáš Korčák"]

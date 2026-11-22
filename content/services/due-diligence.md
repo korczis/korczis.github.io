@@ -14,7 +14,7 @@ icon = "shield"
 og_title = "Corporate and counterparty due diligence"
 og_image = "og/service-due-diligence.png"
 schema = "service"
-terms = ["service", "elixir", "phoenix", "postgresql", "meilisearch", "playwright", "due-diligence", "public-registry", "record-linkage", "beneficial-ownership", "financial-statement-analysis", "risk-assessment", "source-criticism", "decision-support-system", "javascript", "html", "python", "flowbite-pro", "tailwind-css", "dockerfile", "fastapi", "shell", "alpine-js", "react"]
+terms = ["service", "elixir", "phoenix", "postgresql", "meilisearch", "playwright", "due-diligence", "public-registry", "record-linkage", "beneficial-ownership", "financial-statement-analysis", "risk-assessment", "source-criticism", "decision-support-system", "javascript", "html", "python", "flowbite-pro", "tailwind-css", "shell", "alpine-js", "dockerfile", "fastapi", "react"]
 keywords = ["Corporate and counterparty due diligence", "Due diligence", "Registry intelligence", "Entity resolution", "Ownership and link analysis", "Financial statement analysis", "Risk scoring", "Source reliability", "Decision support", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -34,9 +34,9 @@ It draws on these skills: [Due diligence](@/skills/due-diligence.md), [Registry 
 
 It is built with [Elixir](@/glossary/elixir.md), [Phoenix](@/glossary/phoenix.md), [PostgreSQL](@/glossary/postgresql.md), [Meilisearch](@/glossary/meilisearch.md) and [Playwright](@/glossary/playwright.md).
 
-The technologies behind it, measured from the work that shows those skills: [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md), [Python](@/glossary/python.md), [Flowbite Pro](@/glossary/flowbite-pro.md), [Tailwind CSS](@/glossary/tailwind-css.md), [Dockerfile](@/glossary/dockerfile.md), [FastAPI](@/glossary/fastapi.md) and [Shell](@/glossary/shell.md).
+The technologies behind it, measured from the work that shows those skills: [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md), [Python](@/glossary/python.md), [Flowbite Pro](@/glossary/flowbite-pro.md), [Tailwind CSS](@/glossary/tailwind-css.md), [Shell](@/glossary/shell.md), [Alpine.js](@/glossary/alpine-js.md) and [Dockerfile](@/glossary/dockerfile.md).
 
-5 public repositories show its skills (5 by their own words).
+6 public repositories show its skills (6 by their own words).
 
 It was delivered in client work under confidentiality agreements, in Real-estate developer and Financial and investment group, as Architect, Lead engineer, AI engineer, Data engineer, Investigator and Advisor; the use cases describe the principle and the intent, never a client, person, date or number.
 

@@ -16,8 +16,8 @@ kind = "technology"
 definition = "An accessibility testing engine that checks rendered pages against WCAG rules; this site's browser audit runs it."
 aliases = []
 reference = { title = "axe-core on GitHub", url = "https://github.com/dequelabs/axe-core" }
-pages = ["skills/compliance-mapping.md", "work/algoglyph.md", "work/korczis-github-io.md", "work/oscilla.md"]
-related = ["alpine-js", "flowbite-pro", "github-pages", "html", "javascript", "p5-js", "commit", "css"]
+pages = ["work/algoglyph.md", "work/korczis-github-io.md", "work/oscilla.md"]
+related = ["alpine-js", "commit", "flowbite-pro", "github-pages", "html", "javascript", "open-source", "p5-js"]
 og_title = "axe-core: glossary"
 og_image = "og/glossary-axe-core.png"
 keywords = ["axe-core", "Technology", "Glossary", "Tomas Korcak"]
@@ -44,7 +44,7 @@ axe-core is part of 3 of my public repositories, from 2024 to 2026.
 
 What it was for: [Science and visualisation](@/projects/science.md) (2) and [Web](@/projects/web.md) (1).
 
-Most recently: [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus; [Oscilla](@/work/oscilla.md): Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty; [algoglyph](@/work/algoglyph.md): Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core.
+Most recently: [algoglyph](@/work/algoglyph.md): Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core; [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus; [Oscilla](@/work/oscilla.md): Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.
 
 2 of these projects run as live sites.
 

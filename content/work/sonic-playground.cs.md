@@ -3,8 +3,8 @@
 title = "Sonic Playground"
 description = "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita."
 template = "work.html"
-weight = 2
-updated = "2026-11-20T15:58:06Z"
+weight = 3
+updated = "2026-11-22T12:58:04Z"
 
 [taxonomies]
 tags = ["Média a umění", "Python", "JavaScript", "HTML"]
@@ -28,9 +28,9 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**Sonic Playground** je projekt z kategorie [Média a umění](@/projects/media.cs.md). Jeho kód je napsaný hlavně v jazyce [Python](@/glossary/python.cs.md) (41,3 %), dále [JavaScript](@/glossary/javascript.cs.md), [HTML](@/glossary/html.cs.md) a [Shell](@/glossary/shell.cs.md).
+**Sonic Playground** je projekt z kategorie [Média a umění](@/projects/media.cs.md). Jeho kód je napsaný hlavně v jazyce [Python](@/glossary/python.cs.md) (46,3 %), dále [JavaScript](@/glossary/javascript.cs.md), [HTML](@/glossary/html.cs.md) a [Shell](@/glossary/shell.cs.md).
 
-[Repozitář](@/glossary/repository.cs.md) vznikl 12. listopadu 2026; poslední [commit](@/glossary/commit.cs.md) je z 20. listopadu 2026. Zní „Merge branch 'fix/phone-overflow-settle': phone-width overflow is measured after the page's charts settle“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+[Repozitář](@/glossary/repository.cs.md) vznikl 12. listopadu 2026; poslední [commit](@/glossary/commit.cs.md) je z 22. listopadu 2026. Zní „Merge branch 'feature/wave-29': 12 screened Spotify picks in English and Czech“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 
 Je postavený na [Elixir](@/glossary/elixir.cs.md).
 

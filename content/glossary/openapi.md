@@ -17,7 +17,7 @@ definition = "A standard, language-neutral description of an HTTP interface: its
 aliases = ["Swagger"]
 reference = { title = "OpenAPI Specification", url = "https://spec.openapis.org/oas/latest.html" }
 pages = ["interfaces.md", "services/compliance-screening.md", "skills/registry-intelligence.md", "work/crisis-map.md"]
-related = ["css", "elixir", "flowbite-pro", "javascript", "mcp", "ecto", "github-pages", "html"]
+related = ["elixir", "flowbite-pro", "javascript", "mcp", "css", "ecto", "github-pages", "html"]
 og_title = "OpenAPI: glossary"
 og_image = "og/glossary-openapi.png"
 keywords = ["OpenAPI", "Technology", "Glossary", "Tomas Korcak"]

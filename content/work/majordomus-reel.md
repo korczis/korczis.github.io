@@ -3,7 +3,7 @@
 title = "Majordomus reel"
 description = "A promo reel rendered entirely from code. Active in the last 12 months; media and art."
 template = "work.html"
-weight = 7
+weight = 8
 updated = "2026-11-18T06:51:33Z"
 
 [taxonomies]

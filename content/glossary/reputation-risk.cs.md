@@ -17,7 +17,7 @@ definition = "Riziko, že to, co se o organizaci nebo osobě říká, pravdivé 
 aliases = []
 reference = { title = "Wikipedia: reputational risk", url = "https://en.wikipedia.org/wiki/Reputational_risk" }
 pages = ["services/_index.cs.md", "services/digital-forensics.cs.md", "services/reputation-intelligence.cs.md", "skills/_index.cs.md", "skills/narrative-analysis.cs.md"]
-related = ["html", "python", "dockerfile", "flowbite-pro", "javascript", "service", "shell", "source-criticism"]
+related = ["html", "python", "shell", "dockerfile", "flowbite-pro", "javascript", "service", "source-criticism"]
 og_title = "Reputační riziko: slovník"
 og_image = "og/cs-glossary-reputation-risk.png"
 keywords = ["Reputační riziko", "Reputation risk", "Koncept", "Slovník", "Tomáš Korčák"]

@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Slovník pro popis a validaci struktury dokumentů JSON."
 aliases = []
 reference = { title = "JSON Schema", url = "https://json-schema.org/" }
-pages = ["skills/ownership-analysis.cs.md", "work/comtesse.cs.md", "work/sonic-playground.cs.md", "work/vomaste-cz.cs.md"]
-related = ["shell", "commit", "css", "github-pages", "html", "javascript", "open-source", "repository"]
+pages = ["work/comtesse.cs.md", "work/sonic-playground.cs.md", "work/vomaste-cz.cs.md"]
+related = ["commit", "open-source", "repository", "shell", "css", "github-pages", "html", "javascript"]
 og_title = "JSON Schema: slovník"
 og_image = "og/cs-glossary-json-schema.png"
 keywords = ["JSON Schema", "Technologie", "Slovník", "Tomáš Korčák"]

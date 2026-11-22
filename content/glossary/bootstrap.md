@@ -17,7 +17,7 @@ definition = "A CSS framework of a responsive grid and ready-made components for
 aliases = []
 reference = { title = "Bootstrap documentation", url = "https://getbootstrap.com/docs/" }
 pages = ["services/attack-surface.md", "skills/change-monitoring.md", "work/craftsmen.md", "work/korczis-com.md", "work/lethe-it.md", "work/microcrawler-couchapp.md", "work/microscratch.md", "work/pavian-eu.md", "work/web-spa.md"]
-related = ["javascript", "css", "bower", "commit", "open-source", "repository", "ember-js", "static-site-generator"]
+related = ["javascript", "bower", "commit", "css", "open-source", "repository", "ember-js", "handlebars"]
 og_title = "Bootstrap: glossary"
 og_image = "og/glossary-bootstrap.png"
 keywords = ["Bootstrap", "Technology", "Glossary", "Tomas Korcak"]

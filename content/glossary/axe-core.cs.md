@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Engine pro testování přístupnosti, který kontroluje vykreslené stránky podle pravidel WCAG; spouští ho browser audit tohoto webu."
 aliases = []
 reference = { title = "axe-core on GitHub", url = "https://github.com/dequelabs/axe-core" }
-pages = ["skills/compliance-mapping.cs.md", "work/algoglyph.cs.md", "work/korczis-github-io.cs.md", "work/oscilla.cs.md"]
-related = ["alpine-js", "flowbite-pro", "github-pages", "html", "javascript", "p5-js", "commit", "css"]
+pages = ["work/algoglyph.cs.md", "work/korczis-github-io.cs.md", "work/oscilla.cs.md"]
+related = ["alpine-js", "commit", "flowbite-pro", "github-pages", "html", "javascript", "open-source", "p5-js"]
 og_title = "axe-core: slovník"
 og_image = "og/cs-glossary-axe-core.png"
 keywords = ["axe-core", "Technologie", "Slovník", "Tomáš Korčák"]
@@ -44,7 +44,7 @@ axe-core je součástí 3 mých veřejných repozitářů, od roku 2024 do 2026.
 
 K čemu to sloužilo: [Věda a vizualizace](@/projects/science.cs.md) (2) a [Web](@/projects/web.cs.md) (1).
 
-Naposledy: [korczis.github.io](@/work/korczis-github-io.cs.md); [Oscilla](@/work/oscilla.cs.md): Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu; [algoglyph](@/work/algoglyph.cs.md): Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.
+Naposledy: [algoglyph](@/work/algoglyph.cs.md): Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem; [korczis.github.io](@/work/korczis-github-io.cs.md); [Oscilla](@/work/oscilla.cs.md): Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.
 
 2 z těchto projektů běží jako živé weby.
 

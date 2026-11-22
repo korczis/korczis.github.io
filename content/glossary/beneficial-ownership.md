@@ -17,7 +17,7 @@ definition = "The natural person who ultimately owns or controls a company, ofte
 aliases = []
 reference = { title = "FATF: beneficial ownership", url = "https://www.fatf-gafi.org/en/topics/beneficial-ownership.html" }
 pages = ["services/_index.md", "services/compliance-screening.md", "services/digital-investigation.md", "services/due-diligence.md", "services/m-and-a.md", "skills/_index.md", "skills/ownership-analysis.md"]
-related = ["flowbite-pro", "html", "javascript", "python", "dockerfile", "playwright", "service", "tailwind-css"]
+related = ["flowbite-pro", "html", "javascript", "python", "alpine-js", "dockerfile", "service", "shell"]
 og_title = "Beneficial ownership: glossary"
 og_image = "og/glossary-beneficial-ownership.png"
 keywords = ["Beneficial ownership", "Concept", "Glossary", "Tomas Korcak"]

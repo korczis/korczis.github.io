@@ -14,7 +14,7 @@ icon = "check"
 og_title = "Sankční a PEP prověrky a skuteční majitelé"
 og_image = "og/cs-service-compliance-screening.png"
 schema = "service"
-terms = ["service", "elixir", "postgresql", "openapi", "sanctions-screening", "beneficial-ownership", "record-linkage", "risk-assessment", "contestability", "regulatory-compliance", "html", "javascript", "flowbite-pro", "python", "alpine-js", "playwright", "claude-api", "css", "dockerfile", "fastapi"]
+terms = ["service", "elixir", "postgresql", "openapi", "sanctions-screening", "beneficial-ownership", "record-linkage", "risk-assessment", "contestability", "regulatory-compliance", "html", "javascript", "python", "flowbite-pro", "alpine-js", "majordomus", "claude-api", "dockerfile", "fastapi", "github-actions"]
 keywords = ["Sankční a PEP prověrky a skuteční majitelé", "Sankční a PEP prověrky", "Analýza vlastnictví a vazeb", "Ztotožnění subjektů", "Hodnocení rizik", "Napadnutelná rozhodnutí", "Mapování regulatorní shody", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -34,7 +34,7 @@ Párovat jména ve třech pásmech: jistá shoda se hlásí, téměř shoda jde 
 
 Je postavená na: [Elixir](@/glossary/elixir.cs.md), [PostgreSQL](@/glossary/postgresql.cs.md) a [OpenAPI](@/glossary/openapi.cs.md).
 
-Technologie za ní, změřené z práce, která tyto dovednosti dokládá: [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md), [Python](@/glossary/python.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md), [Playwright](@/glossary/playwright.cs.md), [Claude API](@/glossary/claude-api.cs.md) a [CSS](@/glossary/css.cs.md).
+Technologie za ní, změřené z práce, která tyto dovednosti dokládá: [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Python](@/glossary/python.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md), [Majordomus](@/glossary/majordomus.cs.md), [Claude API](@/glossary/claude-api.cs.md) a [Dockerfile](@/glossary/dockerfile.cs.md).
 
 Její dovednosti dokládají 2 veřejné repozitáře (2 vlastními slovy).
 

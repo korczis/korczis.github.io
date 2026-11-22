@@ -17,7 +17,7 @@ definition = "Estimating an uncertain outcome by sampling its inputs many times 
 aliases = ["Monte Carlo"]
 reference = { title = "Wikipedia: Monte Carlo method", url = "https://en.wikipedia.org/wiki/Monte_Carlo_method" }
 pages = ["services/m-and-a.md"]
-related = ["alpine-js", "beneficial-ownership", "claude-api", "contestability", "decision-support-system", "dockerfile", "due-diligence", "elixir"]
+related = ["alpine-js", "beneficial-ownership", "contestability", "decision-support-system", "dockerfile", "due-diligence", "elixir", "fastapi"]
 og_title = "Monte Carlo simulation: glossary"
 og_image = "og/glossary-monte-carlo-simulation.png"
 keywords = ["Monte Carlo simulation", "Concept", "Glossary", "Tomas Korcak"]

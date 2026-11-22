@@ -3,8 +3,8 @@
 title = "algoglyph"
 description = "Algorithms and physics drawn as glyphs. Active in the last 12 months; science and visualisation."
 template = "work.html"
-weight = 8
-updated = "2026-11-17T15:34:34Z"
+weight = 6
+updated = "2026-11-22T07:04:24Z"
 
 [taxonomies]
 tags = ["Science and visualisation", "TypeScript", "Rust", "JavaScript"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **algoglyph** is a project in [Science and visualisation](@/projects/science.md). Its code is written mainly in [TypeScript](@/glossary/typescript.md) (83.8 %), with [Rust](@/glossary/rust.md), [JavaScript](@/glossary/javascript.md) and [HTML](@/glossary/html.md).
 
-The [repository](@/glossary/repository.md) was created on 11 November 2026; its latest [commit](@/glossary/commit.md) is from 17 November 2026. It reads “Merge remote-tracking branch 'origin/feature/semiconductors' into fix/charts-by-title”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created on 11 November 2026; its latest [commit](@/glossary/commit.md) is from 22 November 2026. It reads “chore(merge): integrate \#5, the fleet mesh”. That places it among the projects active in the last 12 months.
 
 It is built with [p5.js](@/glossary/p5-js.md), [Apache ECharts](@/glossary/apache-echarts.md), [Alpine.js](@/glossary/alpine-js.md) and [Flowbite Pro](@/glossary/flowbite-pro.md).
 

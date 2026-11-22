@@ -16,8 +16,8 @@ kind = "technology"
 definition = "GitHub's hosting for static websites, deployed from a repository; this site and most project sites live there."
 aliases = ["github-pages"]
 reference = { title = "GitHub Pages documentation", url = "https://docs.github.com/en/pages" }
-pages = ["interfaces.md", "services/ai-engineering-governance.md", "services/digital-forensics.md", "skills/audit-trail.md", "skills/compliance-mapping.md", "skills/interactive-visualisation.md", "skills/llm-agents.md", "skills/narrative-analysis.md", "skills/ownership-analysis.md", "skills/policy-as-code.md", "stack.md", "work/algoglyph.md", "work/apollon.md", "work/astronomists.md", "work/bubbler.md", "work/catharsis-as-a-service.md", "work/crisis-map.md", "work/csv2psql.md", "work/data-atlas.md", "work/gists-search.md", "work/kompendium-epistemicke-anihilace.md", "work/korczis-github-com.md", "work/korczis-github-io.md", "work/majordomus-reel.md", "work/maze-rs.md", "work/oscilla.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/prismatic-blog.md", "work/prismatic-majordomus.md", "work/sonic-playground.md", "work/u-tygra.md", "work/vomaste-cz.md"]
-related = ["html", "javascript", "commit", "open-source", "repository", "flowbite-pro", "shell", "tailwind-css"]
+pages = ["interfaces.md", "services/ai-engineering-governance.md", "skills/interactive-visualisation.md", "skills/narrative-analysis.md", "skills/ownership-analysis.md", "skills/policy-as-code.md", "stack.md", "work/algoglyph.md", "work/apollon.md", "work/astronomists.md", "work/bubbler.md", "work/catharsis-as-a-service.md", "work/crisis-map.md", "work/csv2psql.md", "work/data-atlas.md", "work/gists-search.md", "work/kompendium-epistemicke-anihilace.md", "work/korczis-github-com.md", "work/korczis-github-io.md", "work/majordomus-reel.md", "work/maze-rs.md", "work/oscilla.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/prismatic-blog.md", "work/prismatic-majordomus.md", "work/sonic-playground.md", "work/u-tygra.md", "work/vomaste-cz.md"]
+related = ["html", "commit", "javascript", "open-source", "repository", "shell", "tailwind-css", "flowbite-pro"]
 og_title = "GitHub Pages: glossary"
 og_image = "og/glossary-github-pages.png"
 keywords = ["GitHub Pages", "Technology", "Glossary", "Tomas Korcak"]
@@ -44,7 +44,7 @@ GitHub Pages is part of 15 of my public repositories, from 2019 to 2026.
 
 What it was for: [Tools](@/projects/tools.md) (5), [Media and art](@/projects/media.md) (3), [Science and visualisation](@/projects/science.md) (2) and [Web](@/projects/web.md) (2).
 
-Most recently: [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus; [Oscilla](@/work/oscilla.md): Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty; [Sonic Playground](@/work/sonic-playground.md): A hand-picked music blog built with Phoenix and Elixir on the Kita theme.
+Most recently: [algoglyph](@/work/algoglyph.md): Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core; [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore; [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.
 
 13 of these projects run as live sites.
 

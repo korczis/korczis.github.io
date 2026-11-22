@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Extrémně rychlý bundler a minifikátor JavaScriptu a CSS napsaný v Go; Phoenix s ním sestavuje své assety."
 aliases = []
 reference = { title = "esbuild documentation", url = "https://esbuild.github.io/" }
-pages = ["skills/compliance-mapping.cs.md", "work/oscilla.cs.md", "work/vomaste-cz.cs.md"]
-related = ["css", "github-pages", "html", "javascript", "playwright", "alpine-js", "axe-core", "commit"]
+pages = ["work/oscilla.cs.md", "work/vomaste-cz.cs.md"]
+related = ["commit", "css", "github-pages", "html", "javascript", "open-source", "playwright", "repository"]
 og_title = "esbuild: slovník"
 og_image = "og/cs-glossary-esbuild.png"
 keywords = ["esbuild", "Technologie", "Slovník", "Tomáš Korčák"]

@@ -17,7 +17,7 @@ definition = "Odhad nejistého výsledku opakovaným vzorkováním vstupů a čt
 aliases = ["Monte Carlo"]
 reference = { title = "Wikipedia: Monte Carlo method", url = "https://en.wikipedia.org/wiki/Monte_Carlo_method" }
 pages = ["services/m-and-a.cs.md"]
-related = ["alpine-js", "beneficial-ownership", "claude-api", "contestability", "decision-support-system", "dockerfile", "due-diligence", "elixir"]
+related = ["alpine-js", "beneficial-ownership", "contestability", "decision-support-system", "dockerfile", "due-diligence", "elixir", "fastapi"]
 og_title = "Monte Carlo simulation: slovník"
 og_image = "og/cs-glossary-monte-carlo-simulation.png"
 keywords = ["Monte Carlo simulation", "Koncept", "Slovník", "Tomáš Korčák"]

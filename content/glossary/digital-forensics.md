@@ -17,7 +17,7 @@ definition = "Recovering and examining digital evidence so that what it shows, a
 aliases = []
 reference = { title = "NIST: digital forensics", url = "https://www.nist.gov/digital-evidence" }
 pages = ["services/_index.md", "services/digital-forensics.md", "services/digital-investigation.md", "skills/_index.md", "skills/media-forensics.md"]
-related = ["dockerfile", "attack-surface", "flowbite-pro", "html", "javascript", "playwright", "python", "service"]
+related = ["dockerfile", "attack-surface", "flowbite-pro", "html", "javascript", "python", "service", "shell"]
 og_title = "Digital forensics: glossary"
 og_image = "og/glossary-digital-forensics.png"
 keywords = ["Digital forensics", "Concept", "Glossary", "Tomas Korcak"]

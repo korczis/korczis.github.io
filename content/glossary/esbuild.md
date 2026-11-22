@@ -16,8 +16,8 @@ kind = "technology"
 definition = "An extremely fast JavaScript and CSS bundler and minifier written in Go; Phoenix builds its assets with it."
 aliases = []
 reference = { title = "esbuild documentation", url = "https://esbuild.github.io/" }
-pages = ["skills/compliance-mapping.md", "work/oscilla.md", "work/vomaste-cz.md"]
-related = ["css", "github-pages", "html", "javascript", "playwright", "alpine-js", "axe-core", "commit"]
+pages = ["work/oscilla.md", "work/vomaste-cz.md"]
+related = ["commit", "css", "github-pages", "html", "javascript", "open-source", "playwright", "repository"]
 og_title = "esbuild: glossary"
 og_image = "og/glossary-esbuild.png"
 keywords = ["esbuild", "Technology", "Glossary", "Tomas Korcak"]

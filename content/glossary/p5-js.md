@@ -16,8 +16,8 @@ kind = "technology"
 definition = "A creative-coding library descended from Processing, for drawing and simulation in the browser."
 aliases = ["p5js"]
 reference = { title = "p5js.org", url = "https://p5js.org/" }
-pages = ["projects/science.md", "services/interactive-data-products.md", "skills/compliance-mapping.md", "skills/interactive-visualisation.md", "stack.md", "work/algoglyph.md", "work/kompendium-epistemicke-anihilace.md", "work/korczis-github-io.md", "work/majordomus-reel.md", "work/oscilla.md"]
-related = ["flowbite-pro", "alpine-js", "javascript", "apache-echarts", "github-pages", "html", "tailwind-css", "data-visualisation"]
+pages = ["projects/science.md", "services/interactive-data-products.md", "skills/interactive-visualisation.md", "stack.md", "work/algoglyph.md", "work/kompendium-epistemicke-anihilace.md", "work/korczis-github-io.md", "work/majordomus-reel.md", "work/oscilla.md"]
+related = ["flowbite-pro", "alpine-js", "apache-echarts", "javascript", "tailwind-css", "github-pages", "html", "data-visualisation"]
 og_title = "p5.js: glossary"
 og_image = "og/glossary-p5-js.png"
 keywords = ["p5.js", "Technology", "Glossary", "Tomas Korcak"]
@@ -44,7 +44,7 @@ p5.js is part of 5 of my public repositories, from 2024 to 2026.
 
 What it was for: [Science and visualisation](@/projects/science.md) (2), [Knowledge](@/projects/knowledge.md) (1), [Media and art](@/projects/media.md) (1) and [Web](@/projects/web.md) (1).
 
-Most recently: [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus; [Oscilla](@/work/oscilla.md): Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty; [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore.
+Most recently: [algoglyph](@/work/algoglyph.md): Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core; [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore; [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.
 
 4 of these projects run as live sites.
 

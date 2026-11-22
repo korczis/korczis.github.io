@@ -17,7 +17,7 @@ definition = "CSS framework malých utilitních tříd skládaných v markupu, k
 aliases = ["tailwindcss"]
 reference = { title = "tailwindcss.com", url = "https://tailwindcss.com/docs" }
 pages = ["services/_index.cs.md", "services/ai-engineering-governance.cs.md", "services/decision-support-ai.cs.md", "services/digital-investigation.cs.md", "services/due-diligence.cs.md", "services/interactive-data-products.cs.md", "services/m-and-a.cs.md", "services/reputation-intelligence.cs.md", "skills/_index.cs.md", "skills/audit-trail.cs.md", "skills/decision-support.cs.md", "skills/document-extraction.cs.md", "skills/due-diligence.cs.md", "skills/geospatial-analysis.cs.md", "skills/interactive-visualisation.cs.md", "skills/osint-investigation.cs.md", "skills/ownership-analysis.cs.md", "skills/policy-as-code.cs.md", "stack.cs.md", "work/algoglyph.cs.md", "work/astronomists.cs.md", "work/catharsis-as-a-service.cs.md", "work/crisis-map.cs.md", "work/data-atlas.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/korczis-github-io.cs.md", "work/korczis-gitlab-io.cs.md", "work/majordomus-reel.cs.md", "work/openttd-prismatic-bridge.cs.md", "work/oscilla.cs.md", "work/prismatic.cs.md", "work/sonic-playground.cs.md", "work/the-psycho.cs.md", "work/u-tygra.cs.md", "work/vomaste-cz.cs.md", "_index.cs.md"]
-related = ["javascript", "html", "flowbite-pro", "shell", "python", "alpine-js", "github-pages", "css"]
+related = ["javascript", "html", "flowbite-pro", "shell", "python", "alpine-js", "elixir", "github-pages"]
 og_title = "Tailwind CSS: slovník"
 og_image = "og/cs-glossary-tailwind-css.png"
 keywords = ["Tailwind CSS", "Technologie", "Slovník", "Tomáš Korčák"]
@@ -44,7 +44,7 @@ Tailwind CSS je součástí 16 mých veřejných repozitářů, od roku 2024 do 
 
 K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (5), [Média a umění](@/projects/media.cs.md) (4), [Data a GIS](@/projects/data.cs.md) (2) a [Věda a vizualizace](@/projects/science.cs.md) (2).
 
-Naposledy: [korczis.github.io](@/work/korczis-github-io.cs.md); [Oscilla](@/work/oscilla.cs.md): Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu; [Sonic Playground](@/work/sonic-playground.cs.md): Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.
+Naposledy: [algoglyph](@/work/algoglyph.cs.md): Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem; [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat; [korczis.github.io](@/work/korczis-github-io.cs.md).
 
 11 z těchto projektů běží jako živé weby.
 

@@ -122,8 +122,8 @@
  ],
  "front_matter_schema": "https://korczis.github.io/schemas/front-matter.schema.json",
  "data_as_of": {
-  "snapshot": "2026-11-21T19:31:09Z",
-  "index": "2026-11-21T19:40:05Z"
+  "snapshot": "2026-11-22T16:29:23Z",
+  "index": "2026-11-22T16:37:07Z"
  },
  "pages": [
   {
@@ -5597,14 +5597,14 @@
    "keywords": [
     "Tomáš Korčák: projekty",
     "korczis",
-    "korczis.github.io",
-    "sonic-playground",
     "oscilla",
     "kompendium-epistemicke-anihilace",
+    "sonic-playground",
     "prismatic-majordomus",
+    "korczis.github.io",
+    "algoglyph",
     "openttd-prismatic-bridge",
-    "majordomus-reel",
-    "algoglyph"
+    "majordomus-reel"
    ]
   },
   {
@@ -7426,7 +7426,7 @@
    "url": "https://korczis.github.io/cs/work/korczis-github-io/",
    "lang": "cs",
    "title": "korczis.github.io: Web, JavaScript, 2024–2026 · Tomáš Korčák",
-   "description": "korczis.github.io: projekt z kategorie Web, hlavní jazyk JavaScript, poslední commit 21. listopadu 2026.",
+   "description": "korczis.github.io: projekt z kategorie Web, hlavní jazyk JavaScript, poslední commit 22. listopadu 2026.",
    "type": "project",
    "category": "web",
    "og_image": "https://korczis.github.io/og/cs-work-korczis-github-io.png",
@@ -14854,14 +14854,14 @@
    "keywords": [
     "Tomas Korcak projects",
     "korczis",
-    "korczis.github.io",
-    "sonic-playground",
     "oscilla",
     "kompendium-epistemicke-anihilace",
+    "sonic-playground",
     "prismatic-majordomus",
+    "korczis.github.io",
+    "algoglyph",
     "openttd-prismatic-bridge",
-    "majordomus-reel",
-    "algoglyph"
+    "majordomus-reel"
    ]
   },
   {
@@ -19121,21 +19121,21 @@
  ],
  "repositories": [
   {
-   "name": "korczis.github.io",
-   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-   "language": "JavaScript",
-   "category": "web",
-   "page": "https://korczis.github.io/work/korczis-github-io/",
+   "name": "kompendium-epistemicke-anihilace",
+   "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
+   "language": "Elixir",
+   "category": "knowledge",
+   "page": "https://korczis.github.io/work/kompendium-epistemicke-anihilace/",
    "pages": {
-    "en": "https://korczis.github.io/work/korczis-github-io/",
-    "cs": "https://korczis.github.io/cs/work/korczis-github-io/"
+    "en": "https://korczis.github.io/work/kompendium-epistemicke-anihilace/",
+    "cs": "https://korczis.github.io/cs/work/kompendium-epistemicke-anihilace/"
    },
-   "github": "https://github.com/korczis/korczis.github.io",
+   "github": "https://github.com/korczis/kompendium-epistemicke-anihilace",
    "gitlab": null,
-   "site": null,
-   "created": "2024-12-24T16:48:15Z",
-   "active": "2026-11-21T11:37:28Z",
-   "last_commit": "2026-11-21T11:36:39Z",
+   "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+   "created": "2026-11-09T22:04:50Z",
+   "active": "2026-11-22T15:26:38Z",
+   "last_commit": "2026-11-22T14:03:07Z",
    "period": 12,
    "archive": false,
    "stars": 0,
@@ -19155,8 +19155,29 @@
    "gitlab": null,
    "site": "https://korczis.github.io/prismatic-majordomus/",
    "created": "2026-09-03T20:24:57Z",
-   "active": "2026-11-20T21:10:48Z",
-   "last_commit": "2026-11-19T02:54:59Z",
+   "active": "2026-11-22T15:22:16Z",
+   "last_commit": "2026-11-22T10:59:42Z",
+   "period": 12,
+   "archive": false,
+   "stars": 1,
+   "supervised": true
+  },
+  {
+   "name": "oscilla",
+   "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+   "language": "JavaScript",
+   "category": "science",
+   "page": "https://korczis.github.io/work/oscilla/",
+   "pages": {
+    "en": "https://korczis.github.io/work/oscilla/",
+    "cs": "https://korczis.github.io/cs/work/oscilla/"
+   },
+   "github": "https://github.com/korczis/oscilla",
+   "gitlab": null,
+   "site": "https://korczis.github.io/oscilla/",
+   "created": "2026-10-01T21:05:33Z",
+   "active": "2026-11-22T15:12:21Z",
+   "last_commit": "2026-11-22T15:10:02Z",
    "period": 12,
    "archive": false,
    "stars": 1,
@@ -19176,32 +19197,53 @@
    "gitlab": null,
    "site": "https://korczis.github.io/sonic-playground/",
    "created": "2026-11-12T00:48:36Z",
-   "active": "2026-11-20T16:21:31Z",
-   "last_commit": "2026-11-20T15:58:06Z",
+   "active": "2026-11-22T14:25:52Z",
+   "last_commit": "2026-11-22T12:58:04Z",
    "period": 12,
    "archive": false,
    "stars": 0,
    "supervised": true
   },
   {
-   "name": "oscilla",
-   "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+   "name": "korczis.github.io",
+   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
    "language": "JavaScript",
-   "category": "science",
-   "page": "https://korczis.github.io/work/oscilla/",
+   "category": "web",
+   "page": "https://korczis.github.io/work/korczis-github-io/",
    "pages": {
-    "en": "https://korczis.github.io/work/oscilla/",
-    "cs": "https://korczis.github.io/cs/work/oscilla/"
+    "en": "https://korczis.github.io/work/korczis-github-io/",
+    "cs": "https://korczis.github.io/cs/work/korczis-github-io/"
    },
-   "github": "https://github.com/korczis/oscilla",
+   "github": "https://github.com/korczis/korczis.github.io",
    "gitlab": null,
-   "site": "https://korczis.github.io/oscilla/",
-   "created": "2026-10-01T21:05:33Z",
-   "active": "2026-11-20T03:43:19Z",
-   "last_commit": "2026-11-19T17:46:32Z",
+   "site": null,
+   "created": "2024-12-24T16:48:15Z",
+   "active": "2026-11-22T08:24:57Z",
+   "last_commit": "2026-11-22T08:22:12Z",
    "period": 12,
    "archive": false,
-   "stars": 1,
+   "stars": 0,
+   "supervised": true
+  },
+  {
+   "name": "algoglyph",
+   "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
+   "language": "TypeScript",
+   "category": "science",
+   "page": "https://korczis.github.io/work/algoglyph/",
+   "pages": {
+    "en": "https://korczis.github.io/work/algoglyph/",
+    "cs": "https://korczis.github.io/cs/work/algoglyph/"
+   },
+   "github": "https://github.com/korczis/algoglyph",
+   "gitlab": null,
+   "site": "https://korczis.github.io/algoglyph/",
+   "created": "2026-11-11T18:09:38Z",
+   "active": "2026-11-22T07:04:46Z",
+   "last_commit": "2026-11-22T07:04:24Z",
+   "period": 12,
+   "archive": false,
+   "stars": 0,
    "supervised": true
   },
   {
@@ -19226,27 +19268,6 @@
    "supervised": false
   },
   {
-   "name": "kompendium-epistemicke-anihilace",
-   "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
-   "language": "Elixir",
-   "category": "knowledge",
-   "page": "https://korczis.github.io/work/kompendium-epistemicke-anihilace/",
-   "pages": {
-    "en": "https://korczis.github.io/work/kompendium-epistemicke-anihilace/",
-    "cs": "https://korczis.github.io/cs/work/kompendium-epistemicke-anihilace/"
-   },
-   "github": "https://github.com/korczis/kompendium-epistemicke-anihilace",
-   "gitlab": null,
-   "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
-   "created": "2026-11-09T22:04:50Z",
-   "active": "2026-11-19T13:16:44Z",
-   "last_commit": "2026-11-19T11:05:50Z",
-   "period": 12,
-   "archive": false,
-   "stars": 0,
-   "supervised": true
-  },
-  {
    "name": "majordomus-reel",
    "description": "A promo reel for Majordomus rendered entirely from code: voice, frames, music and sound",
    "language": "JavaScript",
@@ -19262,27 +19283,6 @@
    "created": "2026-10-23T00:51:59Z",
    "active": "2026-11-19T10:35:13Z",
    "last_commit": "2026-11-18T06:51:33Z",
-   "period": 12,
-   "archive": false,
-   "stars": 0,
-   "supervised": true
-  },
-  {
-   "name": "algoglyph",
-   "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
-   "language": "TypeScript",
-   "category": "science",
-   "page": "https://korczis.github.io/work/algoglyph/",
-   "pages": {
-    "en": "https://korczis.github.io/work/algoglyph/",
-    "cs": "https://korczis.github.io/cs/work/algoglyph/"
-   },
-   "github": "https://github.com/korczis/algoglyph",
-   "gitlab": null,
-   "site": "https://korczis.github.io/algoglyph/",
-   "created": "2026-11-11T18:09:38Z",
-   "active": "2026-11-17T19:23:49Z",
-   "last_commit": "2026-11-17T15:34:34Z",
    "period": 12,
    "archive": false,
    "stars": 0,

@@ -16,7 +16,7 @@ kind = "technology"
 definition = "Vlastníkova dohledová vrstva pro práci s AI: jedna politika pro každého agenta, vymezené úkoly a dokončení, která musí být doložena."
 aliases = []
 reference = { title = "majordomus.dev", url = "https://majordomus.dev" }
-pages = ["about.cs.md", "hire.cs.md", "interfaces.cs.md", "services/ai-engineering-governance.cs.md", "services/continuous-monitoring.cs.md", "skills/data-room.cs.md", "skills/insolvency-monitoring.cs.md", "skills/interactive-visualisation.cs.md", "skills/knowledge-graph.cs.md", "skills/risk-scoring.cs.md", "stack.cs.md", "_index.cs.md"]
+pages = ["about.cs.md", "hire.cs.md", "interfaces.cs.md", "services/ai-engineering-governance.cs.md", "services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "skills/data-room.cs.md", "skills/insolvency-monitoring.cs.md", "skills/interactive-visualisation.cs.md", "skills/knowledge-graph.cs.md", "skills/risk-scoring.cs.md", "stack.cs.md", "_index.cs.md"]
 related = ["alpine-js", "flowbite-pro", "javascript", "html", "claude-api", "github-actions", "dockerfile", "fastapi"]
 og_title = "Majordomus: slovník"
 og_image = "og/cs-glossary-majordomus.png"
@@ -44,7 +44,7 @@ Majordomus je součástí 4 mých veřejných repozitářů, od roku 2024 do 202
 
 K čemu to sloužilo: [Znalosti](@/projects/knowledge.cs.md) (1), [Média a umění](@/projects/media.cs.md) (1), [Věda a vizualizace](@/projects/science.cs.md) (1) a [Web](@/projects/web.cs.md) (1).
 
-Naposledy: [korczis.github.io](@/work/korczis-github-io.cs.md); [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat; [Majordomus reel](@/work/majordomus-reel.cs.md): Hlas, snímky, hudba i zvuk, vše generované a verzované jako software.
+Naposledy: [algoglyph](@/work/algoglyph.cs.md): Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem; [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat; [korczis.github.io](@/work/korczis-github-io.cs.md).
 
 3 z těchto projektů běží jako živé weby.
 

@@ -16,7 +16,7 @@ kind = "technology"
 definition = "The owner's supervisory layer for AI-assisted work: one policy for every coding agent, scoped tasks, and finishes that must be proven."
 aliases = []
 reference = { title = "majordomus.dev", url = "https://majordomus.dev" }
-pages = ["about.md", "hire.md", "interfaces.md", "services/ai-engineering-governance.md", "services/continuous-monitoring.md", "skills/data-room.md", "skills/insolvency-monitoring.md", "skills/interactive-visualisation.md", "skills/knowledge-graph.md", "skills/risk-scoring.md", "stack.md", "_index.md"]
+pages = ["about.md", "hire.md", "interfaces.md", "services/ai-engineering-governance.md", "services/compliance-screening.md", "services/continuous-monitoring.md", "skills/data-room.md", "skills/insolvency-monitoring.md", "skills/interactive-visualisation.md", "skills/knowledge-graph.md", "skills/risk-scoring.md", "stack.md", "_index.md"]
 related = ["alpine-js", "flowbite-pro", "javascript", "html", "claude-api", "github-actions", "dockerfile", "fastapi"]
 og_title = "Majordomus: glossary"
 og_image = "og/glossary-majordomus.png"
@@ -44,7 +44,7 @@ Majordomus is part of 4 of my public repositories, from 2024 to 2026.
 
 What it was for: [Knowledge](@/projects/knowledge.md) (1), [Media and art](@/projects/media.md) (1), [Science and visualisation](@/projects/science.md) (1) and [Web](@/projects/web.md) (1).
 
-Most recently: [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus; [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore; [Majordomus reel](@/work/majordomus-reel.md): Voice, frames, music and sound, all generated and versioned like software.
+Most recently: [algoglyph](@/work/algoglyph.md): Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core; [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore; [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.
 
 3 of these projects run as live sites.
 

@@ -14,7 +14,7 @@ icon = "shield"
 og_title = "Due diligence firem a protistran"
 og_image = "og/cs-service-due-diligence.png"
 schema = "service"
-terms = ["service", "elixir", "phoenix", "postgresql", "meilisearch", "playwright", "due-diligence", "public-registry", "record-linkage", "beneficial-ownership", "financial-statement-analysis", "risk-assessment", "source-criticism", "decision-support-system", "javascript", "html", "python", "flowbite-pro", "tailwind-css", "dockerfile", "fastapi", "shell", "alpine-js", "react"]
+terms = ["service", "elixir", "phoenix", "postgresql", "meilisearch", "playwright", "due-diligence", "public-registry", "record-linkage", "beneficial-ownership", "financial-statement-analysis", "risk-assessment", "source-criticism", "decision-support-system", "javascript", "html", "python", "flowbite-pro", "tailwind-css", "shell", "alpine-js", "dockerfile", "fastapi", "react"]
 keywords = ["Due diligence firem a protistran", "Due diligence", "Rejstříkové zpravodajství", "Ztotožnění subjektů", "Analýza vlastnictví a vazeb", "Analýza účetních závěrek", "Hodnocení rizik", "Spolehlivost zdrojů", "Podpora rozhodování", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -34,9 +34,9 @@ Rozpoznat subjekt jako jednu entitu, ověřit nezávislé zdroje navzájem, rozp
 
 Je postavená na: [Elixir](@/glossary/elixir.cs.md), [Phoenix](@/glossary/phoenix.cs.md), [PostgreSQL](@/glossary/postgresql.cs.md), [Meilisearch](@/glossary/meilisearch.cs.md) a [Playwright](@/glossary/playwright.cs.md).
 
-Technologie za ní, změřené z práce, která tyto dovednosti dokládá: [JavaScript](@/glossary/javascript.cs.md), [HTML](@/glossary/html.cs.md), [Python](@/glossary/python.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md), [Tailwind CSS](@/glossary/tailwind-css.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md), [FastAPI](@/glossary/fastapi.cs.md) a [Shell](@/glossary/shell.cs.md).
+Technologie za ní, změřené z práce, která tyto dovednosti dokládá: [JavaScript](@/glossary/javascript.cs.md), [HTML](@/glossary/html.cs.md), [Python](@/glossary/python.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md), [Tailwind CSS](@/glossary/tailwind-css.cs.md), [Shell](@/glossary/shell.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md) a [Dockerfile](@/glossary/dockerfile.cs.md).
 
-Její dovednosti dokládá 5 veřejných repozitářů (5 vlastními slovy).
+Její dovednosti dokládá 6 veřejných repozitářů (6 vlastními slovy).
 
 Byla dodána v klientské práci pod dohodami o mlčenlivosti, v odvětví: Developer nemovitostí a Finanční a investiční skupina, v roli: Architekt, Vedoucí inženýr, Inženýr AI, Datový inženýr, Analytik šetření a Poradce; případy užití popisují princip a záměr, nikdy klienta, osobu, datum ani číslo.
 

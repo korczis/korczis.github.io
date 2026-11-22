@@ -14,7 +14,7 @@ icon = "server"
 og_title = "External attack surface and cyber-exposure assessment"
 og_image = "og/service-attack-surface.png"
 schema = "service"
-terms = ["service", "elixir", "postgresql", "phoenix", "attack-surface", "regulatory-compliance", "change-detection", "risk-assessment", "web-scraping", "javascript", "nodejs", "cheerio", "html", "alpine-js", "bootstrap", "bower", "couchdb", "css", "dockerfile"]
+terms = ["service", "elixir", "postgresql", "phoenix", "attack-surface", "regulatory-compliance", "change-detection", "risk-assessment", "web-scraping", "javascript", "nodejs", "cheerio", "bootstrap", "bower", "couchdb", "dockerfile", "ember-js", "handlebars", "html"]
 keywords = ["External attack surface and cyber-exposure assessment", "Infrastructure OSINT", "Regulatory compliance mapping", "Continuous monitoring", "Risk scoring", "Web automation and crawling", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -34,9 +34,9 @@ It draws on these skills: [Infrastructure OSINT](@/skills/infrastructure-osint.m
 
 It is built with [Elixir](@/glossary/elixir.md), [PostgreSQL](@/glossary/postgresql.md) and [Phoenix](@/glossary/phoenix.md).
 
-The technologies behind it, measured from the work that shows those skills: [JavaScript](@/glossary/javascript.md), [Node.js](@/glossary/nodejs.md), [Cheerio](@/glossary/cheerio.md), [HTML](@/glossary/html.md), [Alpine.js](@/glossary/alpine-js.md), [Bootstrap](@/glossary/bootstrap.md), [Bower](@/glossary/bower.md) and [CouchDB](@/glossary/couchdb.md).
+The technologies behind it, measured from the work that shows those skills: [JavaScript](@/glossary/javascript.md), [Node.js](@/glossary/nodejs.md), [Cheerio](@/glossary/cheerio.md), [Bootstrap](@/glossary/bootstrap.md), [Bower](@/glossary/bower.md), [CouchDB](@/glossary/couchdb.md), [Dockerfile](@/glossary/dockerfile.md) and [Ember.js](@/glossary/ember-js.md).
 
-15 public repositories show its skills (15 by their own words).
+14 public repositories show its skills (14 by their own words).
 
 It was delivered in client work under confidentiality agreements, in Real-estate developer, as Architect, Lead engineer, AI engineer and Data engineer; the use cases describe the principle and the intent, never a client, person, date or number.
 

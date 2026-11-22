@@ -17,7 +17,7 @@ definition = "Noticing when a source changes and judging whether the change matt
 aliases = []
 reference = { title = "Wikipedia: change detection", url = "https://en.wikipedia.org/wiki/Change_detection" }
 pages = ["services/_index.md", "services/attack-surface.md", "services/continuous-monitoring.md", "services/digital-investigation.md", "services/reputation-intelligence.md", "skills/_index.md", "skills/change-monitoring.md"]
-related = ["javascript", "dockerfile", "html", "service", "flowbite-pro", "alpine-js", "attack-surface", "elixir"]
+related = ["javascript", "dockerfile", "html", "service", "flowbite-pro", "attack-surface", "elixir", "fastapi"]
 og_title = "Change detection: glossary"
 og_image = "og/glossary-change-detection.png"
 keywords = ["Change detection", "Concept", "Glossary", "Tomas Korcak"]

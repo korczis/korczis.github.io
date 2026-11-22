@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Šablonovací jazyk bez logiky, který plní HTML šablony daty pomocí výrazů {{…}}."
 aliases = []
 reference = { title = "Handlebars", url = "https://handlebarsjs.com/" }
-pages = ["skills/change-monitoring.cs.md", "work/apollocrawler-com.cs.md", "work/craftsmen.cs.md", "work/microcrawler-couchapp.cs.md", "work/microscratch.cs.md"]
-related = ["css", "ember-js", "javascript", "bootstrap", "commit", "open-source", "repository", "bower"]
+pages = ["services/attack-surface.cs.md", "skills/change-monitoring.cs.md", "work/apollocrawler-com.cs.md", "work/craftsmen.cs.md", "work/microcrawler-couchapp.cs.md", "work/microscratch.cs.md"]
+related = ["ember-js", "javascript", "bootstrap", "css", "bower", "commit", "couchdb", "nodejs"]
 og_title = "Handlebars: slovník"
 og_image = "og/cs-glossary-handlebars.png"
 keywords = ["Handlebars", "Technologie", "Slovník", "Tomáš Korčák"]

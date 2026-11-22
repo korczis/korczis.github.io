@@ -17,7 +17,7 @@ definition = "Programové získávání dat z webových stránek, od jednoduchý
 aliases = []
 reference = { title = "Wikipedia: web scraping", url = "https://en.wikipedia.org/wiki/Web_scraping" }
 pages = ["services/_index.cs.md", "services/attack-surface.cs.md", "services/digital-investigation.cs.md", "skills/_index.cs.md", "skills/web-automation.cs.md"]
-related = ["dockerfile", "html", "javascript", "attack-surface", "change-detection", "service", "alpine-js", "beneficial-ownership"]
+related = ["dockerfile", "html", "javascript", "nodejs", "attack-surface", "change-detection", "service", "beneficial-ownership"]
 og_title = "Web scraping: slovník"
 og_image = "og/cs-glossary-web-scraping.png"
 keywords = ["Web scraping", "Koncept", "Slovník", "Tomáš Korčák"]

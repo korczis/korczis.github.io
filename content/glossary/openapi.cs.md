@@ -17,7 +17,7 @@ definition = "Standardní, na jazyce nezávislý popis HTTP rozhraní: jeho cest
 aliases = ["Swagger"]
 reference = { title = "OpenAPI Specification", url = "https://spec.openapis.org/oas/latest.html" }
 pages = ["interfaces.cs.md", "services/compliance-screening.cs.md", "skills/registry-intelligence.cs.md", "work/crisis-map.cs.md"]
-related = ["css", "elixir", "flowbite-pro", "javascript", "mcp", "ecto", "github-pages", "html"]
+related = ["elixir", "flowbite-pro", "javascript", "mcp", "css", "ecto", "github-pages", "html"]
 og_title = "OpenAPI: slovník"
 og_image = "og/cs-glossary-openapi.png"
 keywords = ["OpenAPI", "Technologie", "Slovník", "Tomáš Korčák"]

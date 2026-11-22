@@ -17,7 +17,7 @@ definition = "Apache's document database: JSON documents over HTTP, MapReduce vi
 aliases = []
 reference = { title = "Apache CouchDB documentation", url = "https://docs.couchdb.org/" }
 pages = ["services/attack-surface.md", "skills/change-monitoring.md", "work/microcrawler-couchapp.md", "work/microscratch.md"]
-related = ["bootstrap", "bower", "css", "javascript", "ember-js", "handlebars", "change-detection", "commit"]
+related = ["bootstrap", "bower", "ember-js", "handlebars", "javascript", "css", "change-detection", "commit"]
 og_title = "CouchDB: glossary"
 og_image = "og/glossary-couchdb.png"
 keywords = ["CouchDB", "Technology", "Glossary", "Tomas Korcak"]

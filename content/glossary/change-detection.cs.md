@@ -17,7 +17,7 @@ definition = "Zachycení, že se zdroj změnil, a posouzení, zda na změně zá
 aliases = []
 reference = { title = "Wikipedia: change detection", url = "https://en.wikipedia.org/wiki/Change_detection" }
 pages = ["services/_index.cs.md", "services/attack-surface.cs.md", "services/continuous-monitoring.cs.md", "services/digital-investigation.cs.md", "services/reputation-intelligence.cs.md", "skills/_index.cs.md", "skills/change-monitoring.cs.md"]
-related = ["javascript", "dockerfile", "html", "service", "flowbite-pro", "alpine-js", "attack-surface", "elixir"]
+related = ["javascript", "dockerfile", "html", "service", "flowbite-pro", "attack-surface", "elixir", "fastapi"]
 og_title = "Detekce změn: slovník"
 og_image = "og/cs-glossary-change-detection.png"
 keywords = ["Detekce změn", "Change detection", "Koncept", "Slovník", "Tomáš Korčák"]
