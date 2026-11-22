@@ -196,6 +196,7 @@ from it:
 | SEO derived from front matter (titles, descriptions, OG, JSON-LD, sitemap) | `node scripts/check-seo.mjs` | check, verify, CI | `project.seo-derived` |
 | Every original repository has its own complete page (en, cs: SEO, OG, hreflang, JSON-LD on every forge) | `node scripts/check-work-pages.mjs` | check, verify, CI | `project.every-repository-page` |
 | One positioning from the hire headline; every page links /hire/ | `node scripts/check-profile.mjs` | check, verify, CI | `project.hire-surfaces` |
+| The mesh declaration trusts the fleet, names its hubs and loads | `node scripts/check-mesh.mjs` | check, verify, CI | `project.mesh-fleet` |
 | Every count agrees with its word (en, cs plural forms) | `node scripts/check-numerals.mjs` | check, verify, CI | `project.numerals-agree` |
 | No denylisted name in the built site (NDA) | `node scripts/check-nda.mjs --site public` | check, verify, CI |  |
 | data/gates.json is this gate list | `node scripts/gates.mjs json --check` | check, verify, CI | `project.landing-contract` |

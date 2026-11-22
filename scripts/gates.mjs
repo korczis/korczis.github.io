@@ -71,6 +71,7 @@ export const GATES = [
   { id: 'seo', name: 'SEO derived from front matter (titles, descriptions, OG, JSON-LD, sitemap)', run: ['node', 'scripts/check-seo.mjs'], ci: true, needs: 'build', rule: 'project.seo-derived' },
   { id: 'work-pages', name: 'Every original repository has its own complete page (en, cs: SEO, OG, hreflang, JSON-LD on every forge)', run: ['node', 'scripts/check-work-pages.mjs'], ci: true, needs: 'build', rule: 'project.every-repository-page' },
   { id: 'profile', name: 'One positioning from the hire headline; every page links /hire/', run: ['node', 'scripts/check-profile.mjs'], ci: true, needs: 'build', lands: 'W1A', rule: 'project.hire-surfaces' },
+  { id: 'mesh', name: 'The mesh declaration trusts the fleet, names its hubs and loads', run: ['node', 'scripts/check-mesh.mjs'], ci: true, rule: 'project.mesh-fleet' },
   { id: 'numerals', name: 'Every count agrees with its word (en, cs plural forms)', run: ['node', 'scripts/check-numerals.mjs'], ci: true, needs: 'build', rule: 'project.numerals-agree' },
   { id: 'nda-site', name: 'No denylisted name in the built site (NDA)', run: ['node', 'scripts/check-nda.mjs', '--site', 'public'], ci: true, needs: 'build' },
   { id: 'gates-json', name: 'data/gates.json is this gate list', run: ['node', 'scripts/gates.mjs', 'json', '--check'], ci: true, rule: 'project.landing-contract' },

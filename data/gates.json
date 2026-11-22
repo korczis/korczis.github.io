@@ -530,6 +530,23 @@
       ]
     },
     {
+      "id": "mesh",
+      "name": "The mesh declaration trusts the fleet, names its hubs and loads",
+      "rule": "project.mesh-fleet",
+      "rule_file": ".ai/repo/rules/project/mesh-fleet.v1.md",
+      "ci": true,
+      "where": [
+        {
+          "kind": "ci",
+          "file": ".github/workflows/ci.yml"
+        },
+        {
+          "kind": "prepush",
+          "file": ".githooks/pre-push"
+        }
+      ]
+    },
+    {
       "id": "numerals",
       "name": "Every count agrees with its word (en, cs plural forms)",
       "rule": "project.numerals-agree",

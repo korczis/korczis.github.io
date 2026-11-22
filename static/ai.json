@@ -3,25 +3,26 @@
  "description": "The Majordomus layer of korczis/korczis.github.io: every object of .ai/ with its MCP resource URI",
  "source": "majordomus run objects.list, capabilities.list",
  "majordomus": "1.1.0",
- "tree": "08661f2d4fdc94d3c2f38c7f9bc4bd923973145d26965d302811e42b86e07b52",
+ "tree": "b8411e1f420a5f7c316f08d4b0cec2824eab2fdfbbf1b305438fb5bc9bb637ff",
  "counts": {
-  "objects": 152,
+  "objects": 154,
   "kinds": {
    "adr": 10,
    "context": 21,
    "document": 9,
    "knowledge": 11,
+   "mesh-declaration": 1,
    "policy": 1,
    "profile": 4,
    "prompt": 4,
-   "rule": 82,
+   "rule": 83,
    "scope": 1,
    "skill": 1,
    "taxonomy": 8
   },
-  "capabilities": 383,
+  "capabilities": 385,
   "mcp_tools": 215,
-  "mcp_resources": 209,
+  "mcp_resources": 211,
   "http_routes": 219
  },
  "objects": [
@@ -432,6 +433,14 @@
    "title": "Chart and graph mount points take their size from width and height; grid items need min-w-0",
    "description": "When a visual (Cytoscape, ECharts, Chart.js, p5) is added or its card layout changes.",
    "path": ".ai/repo/knowledge/curated/viz-mount-sizing.md"
+  },
+  {
+   "uri": "majordomus://mesh-declaration/mesh",
+   "kind": "mesh-declaration",
+   "identity": "mesh",
+   "title": null,
+   "description": null,
+   "path": ".ai/repo/mesh/mesh.yaml"
   },
   {
    "uri": "majordomus://policy/.ai/repo/policy.yaml",
@@ -1072,6 +1081,14 @@
    "title": "The landing's chapters, their ids and order are a contract; every element links, every figure is measured, nothing is hidden",
    "description": "The home page answers a hiring team in ten seconds and an engineer in ten minutes in fixed chapters with stable ids; every element in its main region leads to its page, every figure comes from data/ or Zola, owner facts only from data/cv.toml, ?role= only reorders and labels, at most four mail links, nothing hidden, and no inflated label.",
    "path": ".ai/repo/rules/project/landing-contract.v1.md"
+  },
+  {
+   "uri": "majordomus://rule/project.mesh-fleet@1",
+   "kind": "rule",
+   "identity": "project.mesh-fleet@1",
+   "title": "The mesh declaration trusts the owner's fleet, names its hubs and loads in Majordomus",
+   "description": ".ai/repo/mesh/mesh.yaml is enabled under deny_unknown, trusts the owner's machine keys (a key belongs to a machine, shared by every repository and worktree on it), names the fleet's rendezvous hubs, keeps the Tailscale provider on, and writes every key bare so Majordomus loads it; scripts/check-mesh.mjs refuses a declaration that would silently leave the mesh off.",
+   "path": ".ai/repo/rules/project/mesh-fleet.v1.md"
   },
   {
    "uri": "majordomus://rule/project.nda-never-named@1",
