@@ -3,14 +3,14 @@
  "description": "The Majordomus layer of korczis/korczis.github.io: every object of .ai/ with its MCP resource URI",
  "source": "majordomus run objects.list, capabilities.list",
  "majordomus": "1.0.2",
- "tree": "61cf7258b42a745ba8b789a33cb2ef7c46524a54d53d1a4ffaad27994b2dffd5",
+ "tree": "bfb5bcb45335dd2dad8183184e7f8a3c5440796123a9f96987a090711b22d36b",
  "counts": {
-  "objects": 152,
+  "objects": 153,
   "kinds": {
    "adr": 10,
    "context": 21,
    "document": 9,
-   "knowledge": 10,
+   "knowledge": 11,
    "mesh-declaration": 1,
    "policy": 1,
    "profile": 4,
@@ -20,9 +20,9 @@
    "skill": 1,
    "taxonomy": 8
   },
-  "capabilities": 383,
+  "capabilities": 384,
   "mcp_tools": 215,
-  "mcp_resources": 209,
+  "mcp_resources": 210,
   "http_routes": 219
  },
  "objects": [
@@ -393,6 +393,14 @@
    "title": "The owner's answers of 2026-11-15: the experience map, the derived categories, unable.cz never runs, and the scope of a full refresh",
    "description": "Before changing data/projects.toml category rules or its hidden list, the private engagement map, anything that would publish unable.cz, or the scope of what the hub reflects.",
    "path": ".ai/repo/knowledge/curated/owner-decisions-2026-11-15.md"
+  },
+  {
+   "uri": "majordomus://knowledge/owner-decisions-2026-11-22",
+   "kind": "knowledge",
+   "identity": "owner-decisions-2026-11-22",
+   "title": "The owner's answer of 2026-11-22: the fleet mesh is copied into every supervised repository now, and one fleet trust list is filed as a Majordomus issue",
+   "description": "Before changing .ai/repo/mesh/mesh.yaml (trust.allow, rendezvous endpoints, the Tailscale provider) here or in another supervised repository of the owner's workspace.",
+   "path": ".ai/repo/knowledge/curated/owner-decisions-2026-11-22.md"
   },
   {
    "uri": "majordomus://knowledge/p5-async-setup",
