@@ -64,3 +64,20 @@ updatuji, okmunikuji spolu, at to funguje from now on rocksolid, automagicky".
   app keeps its CLI inside the bundle (a symlink to it aborts on its bundle-identifier check); a
   wrapper at `/opt/homebrew/bin/tailscale` now answers `tailscale status --json`, and the hub picks
   it up at its next start.
+
+## Merging the fleet-mesh pull requests in the other repositories
+
+The other repositories' sessions declined to land a trust grant on a peer's citation of this
+record, so the owner was asked directly, later in the same session.
+
+- Question: "The fleet-mesh PRs (5 owner machine keys + 6 hubs + Tailscale, one file
+  .ai/repo/mesh/*.yaml) are green in algoglyph #5 and sonic-playground #1; oscilla #632 and
+  kompendium #1 are still running CI. Their own sessions won't merge a trust grant on my say-so.
+  May I merge them myself, each in its repo's usual style (merge commit; kompendium via its train
+  owner dev-31)?"
+- Answer: "Yes, merge all green (Recommended)" — "I merge each green mesh PR in its repo's style
+  now and the rest as their CI passes; for kompendium I tell dev-31 that you approved it."
+- Done: algoglyph #5 and sonic-playground #1 merged; kompendium #1 rides dev-31's train, which
+  also asked the owner directly. A review there found the keys unquoted: a 64-digit hex digest of
+  digits only would load as a number, so every key is now written quoted, and the comment above
+  the endpoints says why the tailnet hub addresses stay (a Mac whose Tailscale CLI is not on PATH).
