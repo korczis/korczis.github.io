@@ -2,16 +2,15 @@
  "schema": "korczis-hub-ai/v1",
  "description": "The Majordomus layer of korczis/korczis.github.io: every object of .ai/ with its MCP resource URI",
  "source": "majordomus run objects.list, capabilities.list",
- "majordomus": "1.0.2",
- "tree": "bfb5bcb45335dd2dad8183184e7f8a3c5440796123a9f96987a090711b22d36b",
+ "majordomus": "1.1.0",
+ "tree": "08661f2d4fdc94d3c2f38c7f9bc4bd923973145d26965d302811e42b86e07b52",
  "counts": {
-  "objects": 153,
+  "objects": 152,
   "kinds": {
    "adr": 10,
    "context": 21,
    "document": 9,
    "knowledge": 11,
-   "mesh-declaration": 1,
    "policy": 1,
    "profile": 4,
    "prompt": 4,
@@ -20,9 +19,9 @@
    "skill": 1,
    "taxonomy": 8
   },
-  "capabilities": 384,
+  "capabilities": 383,
   "mcp_tools": 215,
-  "mcp_resources": 210,
+  "mcp_resources": 209,
   "http_routes": 219
  },
  "objects": [
@@ -433,14 +432,6 @@
    "title": "Chart and graph mount points take their size from width and height; grid items need min-w-0",
    "description": "When a visual (Cytoscape, ECharts, Chart.js, p5) is added or its card layout changes.",
    "path": ".ai/repo/knowledge/curated/viz-mount-sizing.md"
-  },
-  {
-   "uri": "majordomus://mesh-declaration/mesh",
-   "kind": "mesh-declaration",
-   "identity": "mesh",
-   "title": null,
-   "description": null,
-   "path": ".ai/repo/mesh/mesh.yaml"
   },
   {
    "uri": "majordomus://policy/.ai/repo/policy.yaml",
