@@ -1,6 +1,6 @@
 {
  "schema": "korczis-hub-recent/v2",
- "generated_at": "2026-11-22T16:37:07Z",
+ "generated_at": "2026-11-22T22:49:03Z",
  "window_days": 1461,
  "periods": [
   {
@@ -18,7 +18,7 @@
  ],
  "archive": 162,
  "rule": "every original repository of data/index.json; a repository is recent when its default branch has a commit in the window, archive otherwise; host activity dates are ignored",
- "asked": 6,
+ "asked": 5,
  "repos": [
   {
    "name": "oscilla",
@@ -27,14 +27,54 @@
    "category": "science",
    "language": "JavaScript",
    "created_at": "2026-10-01T21:05:33Z",
-   "pushed_at": "2026-11-22T15:12:21Z",
-   "last_commit": "2026-11-22T15:10:02Z",
-   "last_message": "chore(plan): U122 hotovo; sloučeno v #637, živě ve v3.42.1 (#642)",
+   "pushed_at": "2026-11-22T20:40:54Z",
+   "last_commit": "2026-11-22T20:40:52Z",
+   "last_message": "chore(merge): integrate #632, the fleet mesh",
    "commits": [
+    {
+     "at": "2026-11-22T20:40:52Z",
+     "message": "chore(merge): integrate #632, the fleet mesh",
+     "url": "https://github.com/korczis/oscilla/commit/c3b15610c28cda1e6ae1844fab2f610ff1cc20ea"
+    },
+    {
+     "at": "2026-11-22T18:52:57Z",
+     "message": "Merge branch 'main' into chore/mesh-fleet-trust",
+     "url": "https://github.com/korczis/oscilla/commit/b504481e8fe27155b4a4be87da3b270c1bb19009"
+    },
+    {
+     "at": "2026-11-22T18:33:25Z",
+     "message": "refactor(release): jeden zdroj pro mez spuštění plan roadmap (#640)",
+     "url": "https://github.com/korczis/oscilla/commit/018936b07437c211816f982c42f90f7fd3661106"
+    },
+    {
+     "at": "2026-11-22T17:18:52Z",
+     "message": "Merge branch 'main' into fix/roadmap-bound-one-source",
+     "url": "https://github.com/korczis/oscilla/commit/91a64ed6c726d515e1b65be8ae9b0c4696f25caf"
+    },
+    {
+     "at": "2026-11-22T17:17:44Z",
+     "message": "fix(ui): obsah Synthu končí nad zadokovanými klávesami, parita s K247 (U121) (#638)",
+     "url": "https://github.com/korczis/oscilla/commit/9f9aff47f5c37df533603e7a1d27e4fa4099aa80"
+    },
+    {
+     "at": "2026-11-22T16:39:15Z",
+     "message": "Merge branch 'main' into chore/mesh-fleet-trust",
+     "url": "https://github.com/korczis/oscilla/commit/8db4f05717291835f774b8d6bfe504c0932f7dd5"
+    },
+    {
+     "at": "2026-11-22T15:11:19Z",
+     "message": "Merge remote-tracking branch 'origin/main' into fix/u121-synth-k247-parity",
+     "url": "https://github.com/korczis/oscilla/commit/8cb100fa83dd689e49d4189524e11fb0a51c0936"
+    },
     {
      "at": "2026-11-22T15:10:02Z",
      "message": "chore(plan): U122 hotovo; sloučeno v #637, živě ve v3.42.1 (#642)",
      "url": "https://github.com/korczis/oscilla/commit/936eca7358ca5d3734acc0f8a527db2cb9c6e875"
+    },
+    {
+     "at": "2026-11-22T14:54:29Z",
+     "message": "Merge branch 'main' into chore/mesh-fleet-trust",
+     "url": "https://github.com/korczis/oscilla/commit/199526cb19e79467c9d919397759294523d4d25a"
     },
     {
      "at": "2026-11-22T14:16:23Z",
@@ -42,9 +82,39 @@
      "url": "https://github.com/korczis/oscilla/commit/c60e0483c95ab5cbd5d9183f238c684bfb2d0cb9"
     },
     {
+     "at": "2026-11-22T14:04:37Z",
+     "message": "Merge remote-tracking branch 'origin/main' into fix/u121-synth-k247-parity",
+     "url": "https://github.com/korczis/oscilla/commit/b04564568a20b280164cd171815e135e8b20624d"
+    },
+    {
+     "at": "2026-11-22T13:54:42Z",
+     "message": "Merge branch 'main' into fix/roadmap-bound-one-source",
+     "url": "https://github.com/korczis/oscilla/commit/925e719c2754717a9f937a9c6785ce562016348f"
+    },
+    {
      "at": "2026-11-22T13:53:24Z",
      "message": "chore(release): záznam v3.42.1 (#641)",
      "url": "https://github.com/korczis/oscilla/commit/e38bb808bf894767a1304379bed6f3ca627b17a1"
+    },
+    {
+     "at": "2026-11-22T13:26:13Z",
+     "message": "Merge remote-tracking branch 'origin/main' into fix/u121-synth-k247-parity",
+     "url": "https://github.com/korczis/oscilla/commit/166e1c0f4bf6d860d6d96a38bbf794feba244a05"
+    },
+    {
+     "at": "2026-11-22T13:24:15Z",
+     "message": "test(release): A15 asserts facts.mjs spawns with the imported bound",
+     "url": "https://github.com/korczis/oscilla/commit/42a49eb6f0495d97c9ae377f2639126c78b35820"
+    },
+    {
+     "at": "2026-11-22T13:23:16Z",
+     "message": "Merge branch 'main' into chore/mesh-fleet-trust",
+     "url": "https://github.com/korczis/oscilla/commit/8da123358290c28ffe62f7383599b42eabba16be"
+    },
+    {
+     "at": "2026-11-22T13:18:06Z",
+     "message": "test(visual): re-accept SYN desktop-panel-light and desktop-bay-light for U121 (d9's R1)",
+     "url": "https://github.com/korczis/oscilla/commit/b2b5ea3b973daf471401536d969cd68aabbdcdad"
     },
     {
      "at": "2026-11-22T13:14:11Z",
@@ -57,6 +127,31 @@
      "url": "https://github.com/korczis/oscilla/commit/e0bd6190811be28c4de39bc0659bc9b8ab529f62"
     },
     {
+     "at": "2026-11-22T12:23:42Z",
+     "message": "Merge remote-tracking branch 'origin/main' into fix/roadmap-bound-one-source",
+     "url": "https://github.com/korczis/oscilla/commit/d3cebc95a81285a623bf5a847298fdba6408a381"
+    },
+    {
+     "at": "2026-11-22T12:06:43Z",
+     "message": "Merge branch 'main' into chore/mesh-fleet-trust",
+     "url": "https://github.com/korczis/oscilla/commit/0757c04223f7fdbe9067a918916e73b38751b652"
+    },
+    {
+     "at": "2026-11-22T11:46:50Z",
+     "message": "chore(review): the #638 verdict (U121 Synth K247 parity), merge under the visual condition",
+     "url": "https://github.com/korczis/oscilla/commit/b98418ad57b22f381b6c4df35c3f3580e368ad33"
+    },
+    {
+     "at": "2026-11-22T11:32:41Z",
+     "message": "Merge remote-tracking branch 'origin/main' into fix/u121-synth-k247-parity",
+     "url": "https://github.com/korczis/oscilla/commit/d1beed254826fa7f6652d8fbc7ebf18fea46feb7"
+    },
+    {
+     "at": "2026-11-22T11:28:50Z",
+     "message": "test(visual): re-accept the six SYN phone views for U121, with their noise and seeds",
+     "url": "https://github.com/korczis/oscilla/commit/2f6ab6e6ddda66be6adb33dcfe7cd6cd742fbbed"
+    },
+    {
      "at": "2026-11-22T11:01:24Z",
      "message": "chore(release): v3.42.1",
      "url": "https://github.com/korczis/oscilla/commit/ce78f8399035d7097c580389d782fedaf738051d"
@@ -67,119 +162,24 @@
      "url": "https://github.com/korczis/oscilla/commit/d392cf48f9ca3a08cc562769d7dd582c0eadeaff"
     },
     {
+     "at": "2026-11-22T09:53:58Z",
+     "message": "fix(ui): the Synth's frame carries the bottom gutter; U121 records the build",
+     "url": "https://github.com/korczis/oscilla/commit/c5bc5b862f75afb75419a297347d78a28bb35179"
+    },
+    {
+     "at": "2026-11-22T09:44:59Z",
+     "message": "Merge branch 'main' into chore/mesh-fleet-trust",
+     "url": "https://github.com/korczis/oscilla/commit/90934e90578bc7d601d5f3fce79c46fca418e3be"
+    },
+    {
      "at": "2026-11-22T09:44:36Z",
      "message": "Merge remote-tracking branch 'origin/main' into fix/u122-presets-czech",
      "url": "https://github.com/korczis/oscilla/commit/b0876ffb9f43c40db2f5afc5597bb0576d56283b"
     },
     {
-     "at": "2026-11-22T09:29:18Z",
-     "message": "plan(E079): SYN desktop-bay-light na CI občas selže mimo svůj šum (#636)",
-     "url": "https://github.com/korczis/oscilla/commit/f7b3019dbd98760922f921663a4aa03ef6fae3c6"
-    },
-    {
-     "at": "2026-11-22T09:15:18Z",
-     "message": "plan(E079): SYN desktop-bay-light flakes on CI far beyond its measured noise",
-     "url": "https://github.com/korczis/oscilla/commit/13a49b2600dca648563f5ff8480575b2212194c8"
-    },
-    {
-     "at": "2026-11-22T09:14:53Z",
-     "message": "Merge remote-tracking branch 'origin/main' into fix/u122-presets-czech",
-     "url": "https://github.com/korczis/oscilla/commit/59d51705fe0cd834e9933996c1c3f818bca59de0"
-    },
-    {
-     "at": "2026-11-22T09:11:46Z",
-     "message": "fix(ui): Předvolby speaks Czech: its buttons, names, empty row and notices (U122)",
-     "url": "https://github.com/korczis/oscilla/commit/7c922dc0f6196ac3e7f282443583fa16cc9d29fd"
-    },
-    {
-     "at": "2026-11-22T08:52:57Z",
-     "message": "chore(release): záznam v3.42.0; U112 hotovo (#635)",
-     "url": "https://github.com/korczis/oscilla/commit/72384d0589c2e57c56ead903c63b445ec46c6cf5"
-    },
-    {
-     "at": "2026-11-22T08:41:23Z",
-     "message": "Merge main into chore/release-record-v3.42.0",
-     "url": "https://github.com/korczis/oscilla/commit/8d5f9a911c59958cfda12c2bc07555af3c283e4e"
-    },
-    {
-     "at": "2026-11-22T08:25:13Z",
-     "message": "refactor(ui): Měření exportuje své texty, testy je importují (navazuje na #624) (#633)",
-     "url": "https://github.com/korczis/oscilla/commit/c282e6b3a264d10f57fd9a37fa2f695f7f2a89f8"
-    },
-    {
-     "at": "2026-11-22T08:09:03Z",
-     "message": "Merge main into chore/release-record-v3.42.0",
-     "url": "https://github.com/korczis/oscilla/commit/1982ba0e0487599f01729114b0bfd493b0fcd6ad"
-    },
-    {
-     "at": "2026-11-22T07:22:49Z",
-     "message": "Merge remote-tracking branch 'origin/main' into refactor/measure-text-constants",
-     "url": "https://github.com/korczis/oscilla/commit/18ff032c1eebe7ee1c97d9061aadf5ddb56996bb"
-    },
-    {
-     "at": "2026-11-22T07:19:48Z",
-     "message": "chore(plan): U121 přeformulován na paritu s K247 pro Synth (obsah končí nad dokem) (#634)",
-     "url": "https://github.com/korczis/oscilla/commit/effa8c856a159697421478d16ce633bf63cfa7e9"
-    },
-    {
-     "at": "2026-11-22T07:17:55Z",
-     "message": "chore(release): record v3.42.0; U112 done",
-     "url": "https://github.com/korczis/oscilla/commit/e6826baf900745e1354b44a670a4ec778d5c1b8a"
-    },
-    {
-     "at": "2026-11-22T07:17:47Z",
-     "message": "chore(review): the #633 verdict (Measure texts exported, byte-identical), merge with two P3 notes",
-     "url": "https://github.com/korczis/oscilla/commit/e98cb96f07e9a7a89267188c4614dade44c69d75"
-    },
-    {
-     "at": "2026-11-22T07:08:48Z",
-     "message": "chore(plan): U121 records oscilla-d9's Q090 design settlement",
-     "url": "https://github.com/korczis/oscilla/commit/44ef17347ffbed5b1e0b15fbd711f65021da7e59"
-    },
-    {
-     "at": "2026-11-22T07:03:09Z",
-     "message": "chore(plan): re-scope U121 to K247 parity for the Synth (content ends above the docked keys)",
-     "url": "https://github.com/korczis/oscilla/commit/57b2073c2334d6ea577ed4c06552b16ee0f44c24"
-    },
-    {
-     "at": "2026-11-22T06:42:40Z",
-     "message": "Merge remote-tracking branch 'origin/main' into refactor/measure-text-constants",
-     "url": "https://github.com/korczis/oscilla/commit/5a49e6e55cd640e665c1f5860bc576777ae56cc3"
-    },
-    {
-     "at": "2026-11-22T06:39:36Z",
-     "message": "refactor(ui): the Measure live and run parts export their texts; the tests import them",
-     "url": "https://github.com/korczis/oscilla/commit/8fab947725db0816ce29f04dd82b7a390653a547"
-    },
-    {
-     "at": "2026-11-22T06:37:59Z",
-     "message": "chore(release): v3.42.0 (#631)",
-     "url": "https://github.com/korczis/oscilla/commit/6f5e934694d4b6c776203843a3ac2b0eb063609f"
-    },
-    {
-     "at": "2026-11-22T05:13:04Z",
-     "message": "chore(release): v3.42.0",
-     "url": "https://github.com/korczis/oscilla/commit/317255b1f8b0b9ad606952de5a13d0d5c4a48666"
-    },
-    {
-     "at": "2026-11-22T05:03:52Z",
-     "message": "docs(about): the 3.42 station, one page frame on every workspace and Czech from the first screen to the Studio",
-     "url": "https://github.com/korczis/oscilla/commit/e7f492491204d7f3b93e5ad9cbf3044d39a15323"
-    },
-    {
-     "at": "2026-11-22T04:52:20Z",
-     "message": "feat(ui): jeden Pro rám stránky pro každou plochu (F002 shell:main, Q110) (#601)",
-     "url": "https://github.com/korczis/oscilla/commit/d0c5d87158201d3a155ab1aa3019fde47789956d"
-    },
-    {
-     "at": "2026-11-20T03:38:39Z",
-     "message": "test(ui): the covered measure reads elementFromPoint's null as off screen",
-     "url": "https://github.com/korczis/oscilla/commit/fe375fd9e908beb73d269ef615a578fb17df3d3c"
-    },
-    {
-     "at": "2026-11-20T02:59:28Z",
-     "message": "test(visual): re-accept the gate's sentence region after #619's Czech text",
-     "url": "https://github.com/korczis/oscilla/commit/ee258f9bc8783556348f6f41beca9b9a5fb760b8"
+     "at": "2026-11-22T09:41:19Z",
+     "message": "Merge remote-tracking branch 'origin/main' into fix/u121-synth-k247-parity",
+     "url": "https://github.com/korczis/oscilla/commit/1581660d7b89a897589621aba530ef804e407795"
     }
    ],
    "languages": [
@@ -227,16 +227,424 @@
    "supervised": true
   },
   {
+   "name": "sonic-playground",
+   "period": 12,
+   "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+   "category": "media",
+   "language": "Python",
+   "created_at": "2026-11-12T00:48:36Z",
+   "pushed_at": "2026-11-22T18:29:35Z",
+   "last_commit": "2026-11-22T17:44:56Z",
+   "last_message": "Merge branch 'feature/yb-wave-4': the last 29 songs of Your Top Songs 2025; every yearbook complete",
+   "commits": [
+    {
+     "at": "2026-11-22T17:44:56Z",
+     "message": "Merge branch 'feature/yb-wave-4': the last 29 songs of Your Top Songs 2025; every yearbook complete",
+     "url": "https://github.com/korczis/sonic-playground/commit/2b85c74f86d77242d8023c375b06c0f45fd90548"
+    },
+    {
+     "at": "2026-11-22T17:05:30Z",
+     "message": "feat(content): yearbook wave 4, the last 29 songs of Your Top Songs 2025 in English and Czech",
+     "url": "https://github.com/korczis/sonic-playground/commit/d51f4d4d3a1263146bbbd380a9cd62e2acc426f6"
+    },
+    {
+     "at": "2026-11-22T16:42:44Z",
+     "message": "Merge branch 'feature/yb-wave-3': yearbooks 2023-2025, genre families, a UX step, 77 yearbook songs",
+     "url": "https://github.com/korczis/sonic-playground/commit/d3620b1fd453b5b2c2f0b2e8876ad0e385c235b9"
+    },
+    {
+     "at": "2026-11-22T16:13:41Z",
+     "message": "feat(content): yearbook wave 3, 32 songs of Your Top Songs 2024-2025 in English and Czech",
+     "url": "https://github.com/korczis/sonic-playground/commit/27681afbbe239b20fcf81b8b9ee8cedb9082049d"
+    },
+    {
+     "at": "2026-11-22T15:04:02Z",
+     "message": "feat(content): yearbook wave 2, 22 songs of Your Top Songs 2023-2024 in English and Czech",
+     "url": "https://github.com/korczis/sonic-playground/commit/b792158b9962583f298a8d70ae93cdaaf28b6ff7"
+    },
+    {
+     "at": "2026-11-22T14:56:28Z",
+     "message": "feat(content): yearbook wave 1, 23 songs of Your Top Songs 2023 in English and Czech",
+     "url": "https://github.com/korczis/sonic-playground/commit/80ceffaf745a6180cbe8e7fd590e328455c7f975"
+    },
+    {
+     "at": "2026-11-22T14:47:22Z",
+     "message": "Merge branch 'feature/yearbooks-2023-2025': yearbooks 2023-2025 from the owner's unsaved Top Songs",
+     "url": "https://github.com/korczis/sonic-playground/commit/5cb293941ecb330a28fc8aa1ebf9faa64da314b9"
+    },
+    {
+     "at": "2026-11-22T14:35:05Z",
+     "message": "feat(data): yearbooks 2023, 2024 and 2025 from the owner's unsaved Top Songs playlists",
+     "url": "https://github.com/korczis/sonic-playground/commit/aac41590b81b92b77b4aa7aec4d3808441366829"
+    },
+    {
+     "at": "2026-11-22T13:37:27Z",
+     "message": "feat(ux): review contents, yearbook row anchors, taste chart, discovery before the explorer",
+     "url": "https://github.com/korczis/sonic-playground/commit/7dec3870a760a5dc32887b8f333d2f00c2b39940"
+    },
+    {
+     "at": "2026-11-22T13:20:52Z",
+     "message": "feat(genres): genre families make every scene visible; every yearbook on the home page",
+     "url": "https://github.com/korczis/sonic-playground/commit/af32513becc7f5bdf82ba7807202c3767648b98a"
+    },
+    {
+     "at": "2026-11-22T12:58:04Z",
+     "message": "Merge branch 'feature/wave-29': 12 screened Spotify picks in English and Czech",
+     "url": "https://github.com/korczis/sonic-playground/commit/f731afbfc92c23bb2196974e6399685acc92c092"
+    },
+    {
+     "at": "2026-11-22T12:09:53Z",
+     "message": "feat(content): wave 29, 12 screened Spotify picks, each in English and Czech",
+     "url": "https://github.com/korczis/sonic-playground/commit/41ed10abe08eeca671f63f416309c2540d3c95d0"
+    },
+    {
+     "at": "2026-11-22T12:03:05Z",
+     "message": "Merge branch 'feature/wave-28': 12 Spotify picks in English and Czech",
+     "url": "https://github.com/korczis/sonic-playground/commit/931f13a07cda1e2294d855acdc0df79c5d09ecf9"
+    },
+    {
+     "at": "2026-11-22T11:27:29Z",
+     "message": "feat(content): wave 28, 12 Spotify picks, each in English and Czech",
+     "url": "https://github.com/korczis/sonic-playground/commit/c4676fe06aa505c0f254f13ff61785a3ece0dd5e"
+    },
+    {
+     "at": "2026-11-22T10:53:25Z",
+     "message": "Merge branch 'feature/wave-27': 12 of the best-sourced Spotify picks in English and Czech",
+     "url": "https://github.com/korczis/sonic-playground/commit/8d5910b711261d7be57d83bb5d5a70c151d7b2bd"
+    },
+    {
+     "at": "2026-11-22T10:15:34Z",
+     "message": "feat(content): wave 27, 12 of the best-sourced Spotify picks, each in English and Czech",
+     "url": "https://github.com/korczis/sonic-playground/commit/d45ac2ca8662092a9a498db938c522f7e88a3316"
+    },
+    {
+     "at": "2026-11-22T07:22:49Z",
+     "message": "Merge origin/main: the fleet mesh",
+     "url": "https://github.com/korczis/sonic-playground/commit/bfd7df9b126230786bb7d700a36aeda22c1e3d54"
+    },
+    {
+     "at": "2026-11-22T07:04:28Z",
+     "message": "chore(merge): integrate #1, the fleet mesh",
+     "url": "https://github.com/korczis/sonic-playground/commit/42c7ba9c958c3c700c91d96755676ef5aac33c53"
+    },
+    {
+     "at": "2026-11-22T07:03:16Z",
+     "message": "Merge branch 'fix/accept-adr-0006-0007': the owner accepts ADRs 0006 and 0007",
+     "url": "https://github.com/korczis/sonic-playground/commit/072f2c6af3842d2c6d83f2a4cec4fbcbf818af1a"
+    },
+    {
+     "at": "2026-11-22T07:00:42Z",
+     "message": "Merge branch 'feature/researchability': a model-free researchability screen orders the Spotify backlog",
+     "url": "https://github.com/korczis/sonic-playground/commit/51369a23fdcd62a1d8543076149ad1764e7e8077"
+    },
+    {
+     "at": "2026-11-22T06:29:17Z",
+     "message": "Merge main into feature/researchability: enrich's MusicBrainz rules and the incremental verify",
+     "url": "https://github.com/korczis/sonic-playground/commit/f65fda1a81d054d970e0ddf2fe10f329e606ac04"
+    },
+    {
+     "at": "2026-11-22T06:27:10Z",
+     "message": "docs(adr): the owner accepts ADRs 0006 and 0007",
+     "url": "https://github.com/korczis/sonic-playground/commit/c8aaba9d3c9a1994da3c0e3758e4971d87ba7528"
+    },
+    {
+     "at": "2026-11-22T06:18:24Z",
+     "message": "Merge branch 'fix/mb-identity': enrich picks the MusicBrainz recording and release by rule, and audit-mb checks them",
+     "url": "https://github.com/korczis/sonic-playground/commit/19dc94cfbd087087b9f9163566e18e9e97e44801"
+    },
+    {
+     "at": "2026-11-22T06:15:33Z",
+     "message": "Merge branch 'feature/wave-26': 10 screened Spotify picks in English and Czech",
+     "url": "https://github.com/korczis/sonic-playground/commit/d05ba5b21631d81ced2782c5d130a6d00e00bea0"
+    },
+    {
+     "at": "2026-11-22T05:47:29Z",
+     "message": "Merge branch 'fix/owner-listening-prose': reviews say nothing about the owner's listening, and the contract refuses it",
+     "url": "https://github.com/korczis/sonic-playground/commit/cc5fc3600d1bc0f8edc5a18386ac15f7944be877"
+    },
+    {
+     "at": "2026-11-22T05:40:19Z",
+     "message": "feat(backlog): a model-free researchability screen orders the Spotify backlog",
+     "url": "https://github.com/korczis/sonic-playground/commit/04cd234c3bd7902f864f1106b147f1d797bd51fd"
+    },
+    {
+     "at": "2026-11-22T05:20:52Z",
+     "message": "Merge main into fix/mb-identity: the incremental local verify",
+     "url": "https://github.com/korczis/sonic-playground/commit/b4c9e183946a5540b198d51a0f58d2498f5595e6"
+    },
+    {
+     "at": "2026-11-22T05:18:38Z",
+     "message": "Merge main into feature/wave-26: the incremental local verify",
+     "url": "https://github.com/korczis/sonic-playground/commit/71fd35a9018fe31d09d00ba992507a50ff46747b"
+    },
+    {
+     "at": "2026-11-22T05:16:41Z",
+     "message": "Merge main into fix/owner-listening-prose: the incremental local verify",
+     "url": "https://github.com/korczis/sonic-playground/commit/bdb78da1e999fbb0d98c289b9ce795f09325100b"
+    },
+    {
+     "at": "2026-11-22T05:14:26Z",
+     "message": "Merge branch 'feature/verify-changed': the local gate browser-sweeps only the pages a change can affect",
+     "url": "https://github.com/korczis/sonic-playground/commit/5068f0d83e64f137fce1ea05fc5ae35e69d303d8"
+    }
+   ],
+   "languages": [
+    {
+     "name": "Python",
+     "share": 45.9
+    },
+    {
+     "name": "JavaScript",
+     "share": 30.8
+    },
+    {
+     "name": "HTML",
+     "share": 17.8
+    },
+    {
+     "name": "Shell",
+     "share": 4.4
+    },
+    {
+     "name": "CSS",
+     "share": 1.1
+    }
+   ],
+   "readme": "A hand-picked music journal: one review per track, explored by genre, feeling and mood, played in a bottom-bar player that keeps going while you browse. Live at https://korczis.github.io/sonic-playground/.",
+   "readme_shared": false,
+   "description_shared": false,
+   "topics": [],
+   "hosts": {
+    "github": "https://github.com/korczis/sonic-playground"
+   },
+   "site": "https://korczis.github.io/sonic-playground/",
+   "curated": true,
+   "stars": 0,
+   "supervised": true
+  },
+  {
+   "name": "korczis.github.io",
+   "period": 12,
+   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+   "category": "web",
+   "language": "JavaScript",
+   "created_at": "2024-12-24T16:48:15Z",
+   "pushed_at": "2026-11-22T16:38:32Z",
+   "last_commit": "2026-11-22T16:37:42Z",
+   "last_message": "chore(data): refresh the snapshot and the index",
+   "commits": [
+    {
+     "at": "2026-11-22T16:37:42Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/c804178bddf152d76407768c500f03017ffba9aa"
+    },
+    {
+     "at": "2026-11-22T08:22:12Z",
+     "message": "chore(merge): integrate #49, the mesh declaration loads again",
+     "url": "https://github.com/korczis/korczis.github.io/commit/ca38b66e703a932af13176e409bd83d1dc571c32"
+    },
+    {
+     "at": "2026-11-22T07:42:58Z",
+     "message": "fix(mesh): the mesh gate takes the shared CLI",
+     "url": "https://github.com/korczis/korczis.github.io/commit/595b84c740b22adcede255f95971df786935dd24"
+    },
+    {
+     "at": "2026-11-22T07:41:51Z",
+     "message": "fix(mesh): write the trusted keys bare, so Majordomus loads the declaration",
+     "url": "https://github.com/korczis/korczis.github.io/commit/049cacb971a257ccae599859297fc4ecd3824177"
+    },
+    {
+     "at": "2026-11-22T07:37:18Z",
+     "message": "chore(merge): integrate #48, quoted mesh keys",
+     "url": "https://github.com/korczis/korczis.github.io/commit/96449d3ea60defc7fa09bf6c3e67f5c69a18431e"
+    },
+    {
+     "at": "2026-11-22T07:08:24Z",
+     "message": "chore(interfaces): measure the .ai layer after the mesh quoting",
+     "url": "https://github.com/korczis/korczis.github.io/commit/d4d1ca72bb84333cf5bd1c30a53b2cf24e83ef68"
+    },
+    {
+     "at": "2026-11-22T07:07:06Z",
+     "message": "chore(mesh): quote the trusted keys and say why the tailnet hubs stay",
+     "url": "https://github.com/korczis/korczis.github.io/commit/b6701e6f99b5a8e2cf3a742b7d1380f4498c8016"
+    },
+    {
+     "at": "2026-11-22T06:23:33Z",
+     "message": "chore(merge): integrate #47, the fleet mesh",
+     "url": "https://github.com/korczis/korczis.github.io/commit/43921f195ce5eeab25f9b321ae70f1a7c542c678"
+    },
+    {
+     "at": "2026-11-22T05:33:29Z",
+     "message": "chore(interfaces): measure the .ai layer with the new knowledge record",
+     "url": "https://github.com/korczis/korczis.github.io/commit/9f941ac9bb276f38c71ff6b8edad6ae8ed8a8d96"
+    },
+    {
+     "at": "2026-11-22T05:32:35Z",
+     "message": "docs(knowledge): record the owner's answers on the fleet mesh, auto-update and the upgrade",
+     "url": "https://github.com/korczis/korczis.github.io/commit/ac693faa1b336081a810f798aded6d48cc4cf6a2"
+    },
+    {
+     "at": "2026-11-22T05:32:24Z",
+     "message": "docs(mesh): name the machine behind each trusted key",
+     "url": "https://github.com/korczis/korczis.github.io/commit/c77de9c3661ec2a42ad25988c3dae8651327a16e"
+    },
+    {
+     "at": "2026-11-22T05:32:20Z",
+     "message": "fix(mesh): trust the owner's fleet and register with its hubs",
+     "url": "https://github.com/korczis/korczis.github.io/commit/12607a7f7b2d133ecd9d87eee73e2dc92178911b"
+    },
+    {
+     "at": "2026-11-21T19:40:51Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/b68bf7560a2c6ee8b2d79177fc53207d4595d970"
+    },
+    {
+     "at": "2026-11-21T11:36:39Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/76eb074704989ea56ef7ecc1e83e31c03166d984"
+    },
+    {
+     "at": "2026-11-21T02:41:51Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/292b9c146c2b7684378e371442bb77dbff7c15aa"
+    },
+    {
+     "at": "2026-11-20T20:43:47Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/4ddc753c9e6b2e915de7eb18bee6382b7cf7849b"
+    },
+    {
+     "at": "2026-11-20T12:02:53Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/7c60f87097de0efb88cd500825792697b01b14cc"
+    },
+    {
+     "at": "2026-11-20T03:49:02Z",
+     "message": "chore(merge): integrate #45, notable technologies of a single repository get their page",
+     "url": "https://github.com/korczis/korczis.github.io/commit/7d10edbdd672fcb6587799663f064dea30f94f8e"
+    },
+    {
+     "at": "2026-11-20T03:22:48Z",
+     "message": "feat(glossary): notable technologies of a single repository get their page",
+     "url": "https://github.com/korczis/korczis.github.io/commit/e18053832c7acc78764f0edec448869219d12ed0"
+    },
+    {
+     "at": "2026-11-20T02:32:34Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/af274ed0d4bdc1bedd5d967ba185d5a7044ee9f7"
+    },
+    {
+     "at": "2026-11-20T01:21:57Z",
+     "message": "chore(merge): integrate #44, technologies in two repositories get their page too",
+     "url": "https://github.com/korczis/korczis.github.io/commit/24e7d40a53dd9519b856b1eb783b006c3604c78d"
+    },
+    {
+     "at": "2026-11-20T00:57:23Z",
+     "message": "feat(glossary): technologies in two repositories get their page too",
+     "url": "https://github.com/korczis/korczis.github.io/commit/354eaf0434f9c029dce463ecabefab150dec4ce5"
+    },
+    {
+     "at": "2026-11-19T20:51:38Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/5603ebe2b81e0f632cdd5234eb1227e3f3440425"
+    },
+    {
+     "at": "2026-11-19T13:15:49Z",
+     "message": "chore(merge): integrate #43, technologies in three repositories get their page too",
+     "url": "https://github.com/korczis/korczis.github.io/commit/36271ce2fb11ce8aced6b6813182f402f0cfbf28"
+    },
+    {
+     "at": "2026-11-19T12:51:54Z",
+     "message": "feat(glossary): technologies in three repositories get their page too",
+     "url": "https://github.com/korczis/korczis.github.io/commit/0c07db8532426b07c27647fe36e0339135b54322"
+    },
+    {
+     "at": "2026-11-19T12:46:15Z",
+     "message": "chore(merge): integrate #42, technologies inferred from every repository, each with its page",
+     "url": "https://github.com/korczis/korczis.github.io/commit/870127947a667e7a08bc1c3c08af50e37f76314a"
+    },
+    {
+     "at": "2026-11-19T12:22:36Z",
+     "message": "chore(merge): bring the data refresh into the stack branch",
+     "url": "https://github.com/korczis/korczis.github.io/commit/7b7573b395c5a5add719967b0f60ce67bb86ee75"
+    },
+    {
+     "at": "2026-11-19T12:01:31Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/6689c0457e546a260f2b966c175f45d9cec2e432"
+    },
+    {
+     "at": "2026-11-19T11:55:13Z",
+     "message": "feat(skills): technologies inferred from every repository's files, each with its page",
+     "url": "https://github.com/korczis/korczis.github.io/commit/4c2e11a39a0114057bddf7bfb6dbc35de24cf4cd"
+    },
+    {
+     "at": "2026-11-19T11:37:42Z",
+     "message": "chore(merge): integrate #41, counts agree with their word, numerals gate",
+     "url": "https://github.com/korczis/korczis.github.io/commit/d7ab13ade688a165a88cb003d99b9691567694a3"
+    }
+   ],
+   "languages": [
+    {
+     "name": "JavaScript",
+     "share": 61.9
+    },
+    {
+     "name": "HTML",
+     "share": 36.1
+    },
+    {
+     "name": "CSS",
+     "share": 1.1
+    },
+    {
+     "name": "Shell",
+     "share": 0.8
+    }
+   ],
+   "readme": "The personal hub of Tomas Korcak (korczis). It covers who I am, the projects I build with their live sites, the stack behind them, and Majordomus, which supervises the work.",
+   "readme_shared": false,
+   "description_shared": false,
+   "topics": [
+    "accessibility",
+    "ai-agents",
+    "alpinejs",
+    "chartjs",
+    "cytoscape",
+    "echarts",
+    "flowbite",
+    "github-pages",
+    "majordomus",
+    "p5js",
+    "personal-website",
+    "portfolio",
+    "tailwindcss",
+    "zola"
+   ],
+   "hosts": {
+    "github": "https://github.com/korczis/korczis.github.io"
+   },
+   "site": null,
+   "curated": false,
+   "stars": 0,
+   "supervised": true
+  },
+  {
    "name": "kompendium-epistemicke-anihilace",
    "period": 12,
    "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
    "category": "knowledge",
    "language": "Elixir",
    "created_at": "2026-11-09T22:04:50Z",
-   "pushed_at": "2026-11-22T15:26:38Z",
-   "last_commit": "2026-11-22T14:03:07Z",
-   "last_message": "Merge the IA schema-table regen (94d1a97f) into the 5.1 branch",
+   "pushed_at": "2026-11-22T16:57:08Z",
+   "last_commit": "2026-11-22T14:19:49Z",
+   "last_message": "feat(gate): check-derived-currency gates the generated schema table",
    "commits": [
+    {
+     "at": "2026-11-22T14:19:49Z",
+     "message": "feat(gate): check-derived-currency gates the generated schema table",
+     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/f3d8cb3e3be42148441a35f191cebd2de3de78aa"
+    },
     {
      "at": "2026-11-22T14:03:07Z",
      "message": "Merge the IA schema-table regen (94d1a97f) into the 5.1 branch",
@@ -381,11 +789,6 @@
      "at": "2026-11-19T03:16:19Z",
      "message": "Merge feature/viz-rules-echarts (42fa9b80) into train-4",
      "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/1fb2cb11189eadb2454146dc94cddaf40f7d4e3e"
-    },
-    {
-     "at": "2026-11-19T03:16:18Z",
-     "message": "Merge fix/stav-axis-coverage (155e3434) into train-4",
-     "url": "https://github.com/korczis/kompendium-epistemicke-anihilace/commit/5adfa634ecca8b45c90725c2177c68423f67ca10"
     }
    ],
    "languages": [
@@ -407,7 +810,7 @@
     },
     {
      "name": "Shell",
-     "share": 9.7
+     "share": 9.8
     },
     {
      "name": "Rust",
@@ -437,209 +840,13 @@
    "supervised": true
   },
   {
-   "name": "sonic-playground",
-   "period": 12,
-   "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-   "category": "media",
-   "language": "Python",
-   "created_at": "2026-11-12T00:48:36Z",
-   "pushed_at": "2026-11-22T14:25:52Z",
-   "last_commit": "2026-11-22T12:58:04Z",
-   "last_message": "Merge branch 'feature/wave-29': 12 screened Spotify picks in English and Czech",
-   "commits": [
-    {
-     "at": "2026-11-22T12:58:04Z",
-     "message": "Merge branch 'feature/wave-29': 12 screened Spotify picks in English and Czech",
-     "url": "https://github.com/korczis/sonic-playground/commit/f731afbfc92c23bb2196974e6399685acc92c092"
-    },
-    {
-     "at": "2026-11-22T12:09:53Z",
-     "message": "feat(content): wave 29, 12 screened Spotify picks, each in English and Czech",
-     "url": "https://github.com/korczis/sonic-playground/commit/41ed10abe08eeca671f63f416309c2540d3c95d0"
-    },
-    {
-     "at": "2026-11-22T12:03:05Z",
-     "message": "Merge branch 'feature/wave-28': 12 Spotify picks in English and Czech",
-     "url": "https://github.com/korczis/sonic-playground/commit/931f13a07cda1e2294d855acdc0df79c5d09ecf9"
-    },
-    {
-     "at": "2026-11-22T11:27:29Z",
-     "message": "feat(content): wave 28, 12 Spotify picks, each in English and Czech",
-     "url": "https://github.com/korczis/sonic-playground/commit/c4676fe06aa505c0f254f13ff61785a3ece0dd5e"
-    },
-    {
-     "at": "2026-11-22T10:53:25Z",
-     "message": "Merge branch 'feature/wave-27': 12 of the best-sourced Spotify picks in English and Czech",
-     "url": "https://github.com/korczis/sonic-playground/commit/8d5910b711261d7be57d83bb5d5a70c151d7b2bd"
-    },
-    {
-     "at": "2026-11-22T10:15:34Z",
-     "message": "feat(content): wave 27, 12 of the best-sourced Spotify picks, each in English and Czech",
-     "url": "https://github.com/korczis/sonic-playground/commit/d45ac2ca8662092a9a498db938c522f7e88a3316"
-    },
-    {
-     "at": "2026-11-22T07:22:49Z",
-     "message": "Merge origin/main: the fleet mesh",
-     "url": "https://github.com/korczis/sonic-playground/commit/bfd7df9b126230786bb7d700a36aeda22c1e3d54"
-    },
-    {
-     "at": "2026-11-22T07:04:28Z",
-     "message": "chore(merge): integrate #1, the fleet mesh",
-     "url": "https://github.com/korczis/sonic-playground/commit/42c7ba9c958c3c700c91d96755676ef5aac33c53"
-    },
-    {
-     "at": "2026-11-22T07:03:16Z",
-     "message": "Merge branch 'fix/accept-adr-0006-0007': the owner accepts ADRs 0006 and 0007",
-     "url": "https://github.com/korczis/sonic-playground/commit/072f2c6af3842d2c6d83f2a4cec4fbcbf818af1a"
-    },
-    {
-     "at": "2026-11-22T07:00:42Z",
-     "message": "Merge branch 'feature/researchability': a model-free researchability screen orders the Spotify backlog",
-     "url": "https://github.com/korczis/sonic-playground/commit/51369a23fdcd62a1d8543076149ad1764e7e8077"
-    },
-    {
-     "at": "2026-11-22T06:29:17Z",
-     "message": "Merge main into feature/researchability: enrich's MusicBrainz rules and the incremental verify",
-     "url": "https://github.com/korczis/sonic-playground/commit/f65fda1a81d054d970e0ddf2fe10f329e606ac04"
-    },
-    {
-     "at": "2026-11-22T06:27:10Z",
-     "message": "docs(adr): the owner accepts ADRs 0006 and 0007",
-     "url": "https://github.com/korczis/sonic-playground/commit/c8aaba9d3c9a1994da3c0e3758e4971d87ba7528"
-    },
-    {
-     "at": "2026-11-22T06:18:24Z",
-     "message": "Merge branch 'fix/mb-identity': enrich picks the MusicBrainz recording and release by rule, and audit-mb checks them",
-     "url": "https://github.com/korczis/sonic-playground/commit/19dc94cfbd087087b9f9163566e18e9e97e44801"
-    },
-    {
-     "at": "2026-11-22T06:15:33Z",
-     "message": "Merge branch 'feature/wave-26': 10 screened Spotify picks in English and Czech",
-     "url": "https://github.com/korczis/sonic-playground/commit/d05ba5b21631d81ced2782c5d130a6d00e00bea0"
-    },
-    {
-     "at": "2026-11-22T05:47:29Z",
-     "message": "Merge branch 'fix/owner-listening-prose': reviews say nothing about the owner's listening, and the contract refuses it",
-     "url": "https://github.com/korczis/sonic-playground/commit/cc5fc3600d1bc0f8edc5a18386ac15f7944be877"
-    },
-    {
-     "at": "2026-11-22T05:40:19Z",
-     "message": "feat(backlog): a model-free researchability screen orders the Spotify backlog",
-     "url": "https://github.com/korczis/sonic-playground/commit/04cd234c3bd7902f864f1106b147f1d797bd51fd"
-    },
-    {
-     "at": "2026-11-22T05:20:52Z",
-     "message": "Merge main into fix/mb-identity: the incremental local verify",
-     "url": "https://github.com/korczis/sonic-playground/commit/b4c9e183946a5540b198d51a0f58d2498f5595e6"
-    },
-    {
-     "at": "2026-11-22T05:18:38Z",
-     "message": "Merge main into feature/wave-26: the incremental local verify",
-     "url": "https://github.com/korczis/sonic-playground/commit/71fd35a9018fe31d09d00ba992507a50ff46747b"
-    },
-    {
-     "at": "2026-11-22T05:16:41Z",
-     "message": "Merge main into fix/owner-listening-prose: the incremental local verify",
-     "url": "https://github.com/korczis/sonic-playground/commit/bdb78da1e999fbb0d98c289b9ce795f09325100b"
-    },
-    {
-     "at": "2026-11-22T05:14:26Z",
-     "message": "Merge branch 'feature/verify-changed': the local gate browser-sweeps only the pages a change can affect",
-     "url": "https://github.com/korczis/sonic-playground/commit/5068f0d83e64f137fce1ea05fc5ae35e69d303d8"
-    },
-    {
-     "at": "2026-11-22T05:06:27Z",
-     "message": "fix(backlog): thin-source songs are written, not deferred (owner, 2026-11-22)",
-     "url": "https://github.com/korczis/sonic-playground/commit/30d64aadab5837efe38ff4a6644d49a4f8f1a143"
-    },
-    {
-     "at": "2026-11-22T05:03:42Z",
-     "message": "feat(track): enrich picks the MusicBrainz recording and release by rule, and audit-mb checks them",
-     "url": "https://github.com/korczis/sonic-playground/commit/852d43cebf0adf7aece7c9494752800d8a10395f"
-    },
-    {
-     "at": "2026-11-22T05:01:29Z",
-     "message": "fix(mesh): trust the owner's fleet and register with its hubs",
-     "url": "https://github.com/korczis/sonic-playground/commit/204fd6eea65014d15c799c937817f297d98b8824"
-    },
-    {
-     "at": "2026-11-22T05:01:03Z",
-     "message": "docs(knowledge): the owner's answers of 2026-11-22 on thin-source songs and translation",
-     "url": "https://github.com/korczis/sonic-playground/commit/69c3abe5517bd9b8cb09ce4fe6cb233bfed31978"
-    },
-    {
-     "at": "2026-11-22T04:56:05Z",
-     "message": "Merge branch 'feature/wave-25': 23 more Spotify picks in English and Czech",
-     "url": "https://github.com/korczis/sonic-playground/commit/c1d099cf3611ab1c9260b18b9da3d5464d39857c"
-    },
-    {
-     "at": "2026-11-22T04:53:21Z",
-     "message": "fix(content): reviews say nothing about the owner's listening, and the contract refuses it",
-     "url": "https://github.com/korczis/sonic-playground/commit/7e749e9ba9d2568b4bc315c3cd3ee1cc02352727"
-    },
-    {
-     "at": "2026-11-22T04:51:03Z",
-     "message": "feat(content): wave 26, 10 screened Spotify picks, each in English and Czech",
-     "url": "https://github.com/korczis/sonic-playground/commit/f9011917cebf85fbf31c52a5a32c2a7ea62850cf"
-    },
-    {
-     "at": "2026-11-22T04:41:07Z",
-     "message": "feat(verify): the local gate browser-sweeps only the pages a change can affect",
-     "url": "https://github.com/korczis/sonic-playground/commit/6cd22b95dbde41fe3f52fcf03725b0470f625a3f"
-    },
-    {
-     "at": "2026-11-20T16:11:30Z",
-     "message": "feat(content): wave 25, 23 more of the owner's Spotify picks, each in English and Czech",
-     "url": "https://github.com/korczis/sonic-playground/commit/ff644d94f250035607a1bbb60f25d0f9ccffb015"
-    },
-    {
-     "at": "2026-11-20T15:58:06Z",
-     "message": "Merge branch 'fix/phone-overflow-settle': phone-width overflow is measured after the page's charts settle",
-     "url": "https://github.com/korczis/sonic-playground/commit/3277c11ef219af64ab230128d471f624b6c2af43"
-    }
-   ],
-   "languages": [
-    {
-     "name": "Python",
-     "share": 46.3
-    },
-    {
-     "name": "JavaScript",
-     "share": 30.4
-    },
-    {
-     "name": "HTML",
-     "share": 17.5
-    },
-    {
-     "name": "Shell",
-     "share": 4.6
-    },
-    {
-     "name": "CSS",
-     "share": 1.2
-    }
-   ],
-   "readme": "A hand-picked music journal: one review per track, explored by genre, feeling and mood, played in a bottom-bar player that keeps going while you browse. Live at https://korczis.github.io/sonic-playground/.",
-   "readme_shared": false,
-   "description_shared": false,
-   "topics": [],
-   "hosts": {
-    "github": "https://github.com/korczis/sonic-playground"
-   },
-   "site": "https://korczis.github.io/sonic-playground/",
-   "curated": true,
-   "stars": 0,
-   "supervised": true
-  },
-  {
    "name": "prismatic-majordomus",
    "period": 12,
    "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
    "category": "ai",
    "language": "Rust",
    "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-22T15:22:16Z",
+   "pushed_at": "2026-11-22T22:04:35Z",
    "last_commit": "2026-11-22T10:59:42Z",
    "last_message": "Merge pull request #3106 from korczis/release/record-v1.2.0",
    "commits": [
@@ -850,213 +1057,6 @@
    "site": "https://korczis.github.io/prismatic-majordomus/",
    "curated": true,
    "stars": 1,
-   "supervised": true
-  },
-  {
-   "name": "korczis.github.io",
-   "period": 12,
-   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-   "category": "web",
-   "language": "JavaScript",
-   "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-22T08:24:57Z",
-   "last_commit": "2026-11-22T08:22:12Z",
-   "last_message": "chore(merge): integrate #49, the mesh declaration loads again",
-   "commits": [
-    {
-     "at": "2026-11-22T08:22:12Z",
-     "message": "chore(merge): integrate #49, the mesh declaration loads again",
-     "url": "https://github.com/korczis/korczis.github.io/commit/ca38b66e703a932af13176e409bd83d1dc571c32"
-    },
-    {
-     "at": "2026-11-22T07:42:58Z",
-     "message": "fix(mesh): the mesh gate takes the shared CLI",
-     "url": "https://github.com/korczis/korczis.github.io/commit/595b84c740b22adcede255f95971df786935dd24"
-    },
-    {
-     "at": "2026-11-22T07:41:51Z",
-     "message": "fix(mesh): write the trusted keys bare, so Majordomus loads the declaration",
-     "url": "https://github.com/korczis/korczis.github.io/commit/049cacb971a257ccae599859297fc4ecd3824177"
-    },
-    {
-     "at": "2026-11-22T07:37:18Z",
-     "message": "chore(merge): integrate #48, quoted mesh keys",
-     "url": "https://github.com/korczis/korczis.github.io/commit/96449d3ea60defc7fa09bf6c3e67f5c69a18431e"
-    },
-    {
-     "at": "2026-11-22T07:08:24Z",
-     "message": "chore(interfaces): measure the .ai layer after the mesh quoting",
-     "url": "https://github.com/korczis/korczis.github.io/commit/d4d1ca72bb84333cf5bd1c30a53b2cf24e83ef68"
-    },
-    {
-     "at": "2026-11-22T07:07:06Z",
-     "message": "chore(mesh): quote the trusted keys and say why the tailnet hubs stay",
-     "url": "https://github.com/korczis/korczis.github.io/commit/b6701e6f99b5a8e2cf3a742b7d1380f4498c8016"
-    },
-    {
-     "at": "2026-11-22T06:23:33Z",
-     "message": "chore(merge): integrate #47, the fleet mesh",
-     "url": "https://github.com/korczis/korczis.github.io/commit/43921f195ce5eeab25f9b321ae70f1a7c542c678"
-    },
-    {
-     "at": "2026-11-22T05:33:29Z",
-     "message": "chore(interfaces): measure the .ai layer with the new knowledge record",
-     "url": "https://github.com/korczis/korczis.github.io/commit/9f941ac9bb276f38c71ff6b8edad6ae8ed8a8d96"
-    },
-    {
-     "at": "2026-11-22T05:32:35Z",
-     "message": "docs(knowledge): record the owner's answers on the fleet mesh, auto-update and the upgrade",
-     "url": "https://github.com/korczis/korczis.github.io/commit/ac693faa1b336081a810f798aded6d48cc4cf6a2"
-    },
-    {
-     "at": "2026-11-22T05:32:24Z",
-     "message": "docs(mesh): name the machine behind each trusted key",
-     "url": "https://github.com/korczis/korczis.github.io/commit/c77de9c3661ec2a42ad25988c3dae8651327a16e"
-    },
-    {
-     "at": "2026-11-22T05:32:20Z",
-     "message": "fix(mesh): trust the owner's fleet and register with its hubs",
-     "url": "https://github.com/korczis/korczis.github.io/commit/12607a7f7b2d133ecd9d87eee73e2dc92178911b"
-    },
-    {
-     "at": "2026-11-21T19:40:51Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/b68bf7560a2c6ee8b2d79177fc53207d4595d970"
-    },
-    {
-     "at": "2026-11-21T11:36:39Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/76eb074704989ea56ef7ecc1e83e31c03166d984"
-    },
-    {
-     "at": "2026-11-21T02:41:51Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/292b9c146c2b7684378e371442bb77dbff7c15aa"
-    },
-    {
-     "at": "2026-11-20T20:43:47Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/4ddc753c9e6b2e915de7eb18bee6382b7cf7849b"
-    },
-    {
-     "at": "2026-11-20T12:02:53Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/7c60f87097de0efb88cd500825792697b01b14cc"
-    },
-    {
-     "at": "2026-11-20T03:49:02Z",
-     "message": "chore(merge): integrate #45, notable technologies of a single repository get their page",
-     "url": "https://github.com/korczis/korczis.github.io/commit/7d10edbdd672fcb6587799663f064dea30f94f8e"
-    },
-    {
-     "at": "2026-11-20T03:22:48Z",
-     "message": "feat(glossary): notable technologies of a single repository get their page",
-     "url": "https://github.com/korczis/korczis.github.io/commit/e18053832c7acc78764f0edec448869219d12ed0"
-    },
-    {
-     "at": "2026-11-20T02:32:34Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/af274ed0d4bdc1bedd5d967ba185d5a7044ee9f7"
-    },
-    {
-     "at": "2026-11-20T01:21:57Z",
-     "message": "chore(merge): integrate #44, technologies in two repositories get their page too",
-     "url": "https://github.com/korczis/korczis.github.io/commit/24e7d40a53dd9519b856b1eb783b006c3604c78d"
-    },
-    {
-     "at": "2026-11-20T00:57:23Z",
-     "message": "feat(glossary): technologies in two repositories get their page too",
-     "url": "https://github.com/korczis/korczis.github.io/commit/354eaf0434f9c029dce463ecabefab150dec4ce5"
-    },
-    {
-     "at": "2026-11-19T20:51:38Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/5603ebe2b81e0f632cdd5234eb1227e3f3440425"
-    },
-    {
-     "at": "2026-11-19T13:15:49Z",
-     "message": "chore(merge): integrate #43, technologies in three repositories get their page too",
-     "url": "https://github.com/korczis/korczis.github.io/commit/36271ce2fb11ce8aced6b6813182f402f0cfbf28"
-    },
-    {
-     "at": "2026-11-19T12:51:54Z",
-     "message": "feat(glossary): technologies in three repositories get their page too",
-     "url": "https://github.com/korczis/korczis.github.io/commit/0c07db8532426b07c27647fe36e0339135b54322"
-    },
-    {
-     "at": "2026-11-19T12:46:15Z",
-     "message": "chore(merge): integrate #42, technologies inferred from every repository, each with its page",
-     "url": "https://github.com/korczis/korczis.github.io/commit/870127947a667e7a08bc1c3c08af50e37f76314a"
-    },
-    {
-     "at": "2026-11-19T12:22:36Z",
-     "message": "chore(merge): bring the data refresh into the stack branch",
-     "url": "https://github.com/korczis/korczis.github.io/commit/7b7573b395c5a5add719967b0f60ce67bb86ee75"
-    },
-    {
-     "at": "2026-11-19T12:01:31Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/6689c0457e546a260f2b966c175f45d9cec2e432"
-    },
-    {
-     "at": "2026-11-19T11:55:13Z",
-     "message": "feat(skills): technologies inferred from every repository's files, each with its page",
-     "url": "https://github.com/korczis/korczis.github.io/commit/4c2e11a39a0114057bddf7bfb6dbc35de24cf4cd"
-    },
-    {
-     "at": "2026-11-19T11:37:42Z",
-     "message": "chore(merge): integrate #41, counts agree with their word, numerals gate",
-     "url": "https://github.com/korczis/korczis.github.io/commit/d7ab13ade688a165a88cb003d99b9691567694a3"
-    },
-    {
-     "at": "2026-11-19T11:14:44Z",
-     "message": "chore(interfaces): measure ai.json with rule project.numerals-agree",
-     "url": "https://github.com/korczis/korczis.github.io/commit/ba57088e14a7b068de00e7bee0d020d86e101e7e"
-    }
-   ],
-   "languages": [
-    {
-     "name": "JavaScript",
-     "share": 61.9
-    },
-    {
-     "name": "HTML",
-     "share": 36.1
-    },
-    {
-     "name": "CSS",
-     "share": 1.1
-    },
-    {
-     "name": "Shell",
-     "share": 0.8
-    }
-   ],
-   "readme": "The personal hub of Tomas Korcak (korczis). It covers who I am, the projects I build with their live sites, the stack behind them, and Majordomus, which supervises the work.",
-   "readme_shared": false,
-   "description_shared": false,
-   "topics": [
-    "accessibility",
-    "ai-agents",
-    "alpinejs",
-    "chartjs",
-    "cytoscape",
-    "echarts",
-    "flowbite",
-    "github-pages",
-    "majordomus",
-    "p5js",
-    "personal-website",
-    "portfolio",
-    "tailwindcss",
-    "zola"
-   ],
-   "hosts": {
-    "github": "https://github.com/korczis/korczis.github.io"
-   },
-   "site": null,
-   "curated": false,
-   "stars": 0,
    "supervised": true
   },
   {

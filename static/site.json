@@ -122,8 +122,8 @@
  ],
  "front_matter_schema": "https://korczis.github.io/schemas/front-matter.schema.json",
  "data_as_of": {
-  "snapshot": "2026-11-22T16:29:23Z",
-  "index": "2026-11-22T16:37:07Z"
+  "snapshot": "2026-11-22T22:39:46Z",
+  "index": "2026-11-22T22:49:03Z"
  },
  "pages": [
   {
@@ -5598,10 +5598,10 @@
     "Tomáš Korčák: projekty",
     "korczis",
     "oscilla",
-    "kompendium-epistemicke-anihilace",
     "sonic-playground",
-    "prismatic-majordomus",
     "korczis.github.io",
+    "kompendium-epistemicke-anihilace",
+    "prismatic-majordomus",
     "algoglyph",
     "openttd-prismatic-bridge",
     "majordomus-reel"
@@ -14855,10 +14855,10 @@
     "Tomas Korcak projects",
     "korczis",
     "oscilla",
-    "kompendium-epistemicke-anihilace",
     "sonic-playground",
-    "prismatic-majordomus",
     "korczis.github.io",
+    "kompendium-epistemicke-anihilace",
+    "prismatic-majordomus",
     "algoglyph",
     "openttd-prismatic-bridge",
     "majordomus-reel"
@@ -19121,27 +19121,6 @@
  ],
  "repositories": [
   {
-   "name": "kompendium-epistemicke-anihilace",
-   "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
-   "language": "Elixir",
-   "category": "knowledge",
-   "page": "https://korczis.github.io/work/kompendium-epistemicke-anihilace/",
-   "pages": {
-    "en": "https://korczis.github.io/work/kompendium-epistemicke-anihilace/",
-    "cs": "https://korczis.github.io/cs/work/kompendium-epistemicke-anihilace/"
-   },
-   "github": "https://github.com/korczis/kompendium-epistemicke-anihilace",
-   "gitlab": null,
-   "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
-   "created": "2026-11-09T22:04:50Z",
-   "active": "2026-11-22T15:26:38Z",
-   "last_commit": "2026-11-22T14:03:07Z",
-   "period": 12,
-   "archive": false,
-   "stars": 0,
-   "supervised": true
-  },
-  {
    "name": "prismatic-majordomus",
    "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
    "language": "Rust",
@@ -19155,7 +19134,7 @@
    "gitlab": null,
    "site": "https://korczis.github.io/prismatic-majordomus/",
    "created": "2026-09-03T20:24:57Z",
-   "active": "2026-11-22T15:22:16Z",
+   "active": "2026-11-22T22:04:35Z",
    "last_commit": "2026-11-22T10:59:42Z",
    "period": 12,
    "archive": false,
@@ -19176,8 +19155,8 @@
    "gitlab": null,
    "site": "https://korczis.github.io/oscilla/",
    "created": "2026-10-01T21:05:33Z",
-   "active": "2026-11-22T15:12:21Z",
-   "last_commit": "2026-11-22T15:10:02Z",
+   "active": "2026-11-22T20:40:54Z",
+   "last_commit": "2026-11-22T20:40:52Z",
    "period": 12,
    "archive": false,
    "stars": 1,
@@ -19197,8 +19176,29 @@
    "gitlab": null,
    "site": "https://korczis.github.io/sonic-playground/",
    "created": "2026-11-12T00:48:36Z",
-   "active": "2026-11-22T14:25:52Z",
-   "last_commit": "2026-11-22T12:58:04Z",
+   "active": "2026-11-22T18:29:35Z",
+   "last_commit": "2026-11-22T17:44:56Z",
+   "period": 12,
+   "archive": false,
+   "stars": 0,
+   "supervised": true
+  },
+  {
+   "name": "kompendium-epistemicke-anihilace",
+   "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
+   "language": "Elixir",
+   "category": "knowledge",
+   "page": "https://korczis.github.io/work/kompendium-epistemicke-anihilace/",
+   "pages": {
+    "en": "https://korczis.github.io/work/kompendium-epistemicke-anihilace/",
+    "cs": "https://korczis.github.io/cs/work/kompendium-epistemicke-anihilace/"
+   },
+   "github": "https://github.com/korczis/kompendium-epistemicke-anihilace",
+   "gitlab": null,
+   "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+   "created": "2026-11-09T22:04:50Z",
+   "active": "2026-11-22T16:57:08Z",
+   "last_commit": "2026-11-22T14:19:49Z",
    "period": 12,
    "archive": false,
    "stars": 0,
@@ -19218,8 +19218,8 @@
    "gitlab": null,
    "site": null,
    "created": "2024-12-24T16:48:15Z",
-   "active": "2026-11-22T08:24:57Z",
-   "last_commit": "2026-11-22T08:22:12Z",
+   "active": "2026-11-22T16:38:32Z",
+   "last_commit": "2026-11-22T16:37:42Z",
    "period": 12,
    "archive": false,
    "stars": 0,

@@ -4,7 +4,7 @@ title = "Věda a vizualizace"
 description = "Poctivé přístroje a kreslené algoritmy v prohlížeči: akustika, fyzika, řazení, bludiště, každý údaj změřený."
 template = "category.html"
 weight = 2
-updated = "2026-11-22T15:12:21Z"
+updated = "2026-11-22T20:40:54Z"
 
 [taxonomies]
 tags = ["Věda a vizualizace", "Oscilla", "algoglyph", "maze-rs", "big-png"]

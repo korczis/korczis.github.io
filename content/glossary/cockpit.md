@@ -16,8 +16,8 @@ kind = "technology"
 definition = "A web console for Linux servers: services, logs, storage, networking and containers administered from the browser."
 aliases = []
 reference = { title = "Cockpit project", url = "https://cockpit-project.org/" }
-pages = ["skills/ai-transformation.md", "work/server-archlinux.md", "work/server-atomic.md"]
-related = ["ansible", "dockerfile", "shell", "arch-linux", "commit", "open-source", "repository", "ai-agent"]
+pages = ["work/server-archlinux.md", "work/server-atomic.md"]
+related = ["ansible", "commit", "dockerfile", "open-source", "repository", "shell", "arch-linux", "fail2ban"]
 og_title = "Cockpit: glossary"
 og_image = "og/glossary-cockpit.png"
 keywords = ["Cockpit", "Technology", "Glossary", "Tomas Korcak"]

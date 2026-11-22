@@ -3,8 +3,8 @@
 title = "Kompendium"
 description = "Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat."
 template = "work.html"
-weight = 2
-updated = "2026-11-22T14:03:07Z"
+weight = 4
+updated = "2026-11-22T14:19:49Z"
 
 [taxonomies]
 tags = ["Znalosti", "Elixir", "JavaScript", "Python"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **Kompendium** je projekt z kategorie [Znalosti](@/projects/knowledge.cs.md). Jeho kód je napsaný hlavně v jazyce [Elixir](@/glossary/elixir.cs.md) (31,6 %), dále [JavaScript](@/glossary/javascript.cs.md), [Python](@/glossary/python.cs.md) a [HTML](@/glossary/html.cs.md).
 
-[Repozitář](@/glossary/repository.cs.md) vznikl 9. listopadu 2026; poslední [commit](@/glossary/commit.cs.md) je z 22. listopadu 2026. Zní „Merge the IA schema-table regen (94d1a97f) into the 5.1 branch“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+[Repozitář](@/glossary/repository.cs.md) vznikl 9. listopadu 2026; poslední [commit](@/glossary/commit.cs.md) je z 22. listopadu 2026. Zní „feat(gate): check-derived-currency gates the generated schema table“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 
 Je postavený na [Zola](@/glossary/zola.cs.md), [Cytoscape.js](@/glossary/cytoscape-js.cs.md), [Apache ECharts](@/glossary/apache-echarts.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md) a [Flowbite Pro](@/glossary/flowbite-pro.cs.md).
 

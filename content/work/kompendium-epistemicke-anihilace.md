@@ -3,8 +3,8 @@
 title = "Kompendium"
 description = "A defensive taxonomy of epistemic and cognitive manipulation (Czech)."
 template = "work.html"
-weight = 2
-updated = "2026-11-22T14:03:07Z"
+weight = 4
+updated = "2026-11-22T14:19:49Z"
 
 [taxonomies]
 tags = ["Knowledge", "Elixir", "JavaScript", "Python"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **Kompendium** is a project in [Knowledge](@/projects/knowledge.md). Its code is written mainly in [Elixir](@/glossary/elixir.md) (31.6 %), with [JavaScript](@/glossary/javascript.md), [Python](@/glossary/python.md) and [HTML](@/glossary/html.md).
 
-The [repository](@/glossary/repository.md) was created on 9 November 2026; its latest [commit](@/glossary/commit.md) is from 22 November 2026. It reads “Merge the IA schema-table regen (94d1a97f) into the 5.1 branch”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created on 9 November 2026; its latest [commit](@/glossary/commit.md) is from 22 November 2026. It reads “feat(gate): check-derived-currency gates the generated schema table”. That places it among the projects active in the last 12 months.
 
 It is built with [Zola](@/glossary/zola.md), [Cytoscape.js](@/glossary/cytoscape-js.md), [Apache ECharts](@/glossary/apache-echarts.md), [Alpine.js](@/glossary/alpine-js.md) and [Flowbite Pro](@/glossary/flowbite-pro.md).
 

@@ -4,7 +4,7 @@ title = "Knowledge"
 description = "Knowledge bases you can check: cross-linked taxonomies with their sources, built as books, sites and graphs."
 template = "category.html"
 weight = 3
-updated = "2026-11-22T15:26:38Z"
+updated = "2026-11-22T16:57:08Z"
 
 [taxonomies]
 tags = ["Knowledge", "Kompendium", "ReadingPhoneNumbersInRealTime", "MinervaEye", "reading"]

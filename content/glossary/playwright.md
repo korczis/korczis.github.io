@@ -16,8 +16,8 @@ kind = "technology"
 definition = "A browser automation library that drives Chromium, Firefox and WebKit for end-to-end tests and audits."
 aliases = []
 reference = { title = "Playwright documentation", url = "https://playwright.dev/docs/intro" }
-pages = ["services/ai-engineering-governance.md", "services/digital-investigation.md", "services/due-diligence.md", "services/m-and-a.md", "skills/audit-trail.md", "skills/document-extraction.md", "skills/due-diligence.md", "skills/policy-as-code.md", "work/astronomists.md", "work/catharsis-as-a-service.md", "work/data-atlas.md", "work/korczis-github-io.md", "work/oscilla.md", "work/vomaste-cz.md", "_index.md"]
-related = ["html", "javascript", "tailwind-css", "shell", "python", "alpine-js", "flowbite-pro", "css"]
+pages = ["services/ai-engineering-governance.md", "services/digital-investigation.md", "services/due-diligence.md", "services/m-and-a.md", "skills/ai-transformation.md", "skills/audit-trail.md", "skills/document-extraction.md", "skills/due-diligence.md", "skills/policy-as-code.md", "work/astronomists.md", "work/catharsis-as-a-service.md", "work/data-atlas.md", "work/korczis-github-io.md", "work/oscilla.md", "work/vomaste-cz.md", "_index.md"]
+related = ["html", "javascript", "tailwind-css", "shell", "alpine-js", "flowbite-pro", "python", "css"]
 og_title = "Playwright: glossary"
 og_image = "og/glossary-playwright.png"
 keywords = ["Playwright", "Technology", "Glossary", "Tomas Korcak"]

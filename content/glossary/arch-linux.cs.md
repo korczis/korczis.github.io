@@ -17,7 +17,7 @@ definition = "Minimalistická linuxová distribuce s průběžnými vydáními, 
 aliases = []
 reference = { title = "ArchWiki", url = "https://wiki.archlinux.org/" }
 pages = ["skills/ai-transformation.cs.md", "work/server-archlinux.cs.md"]
-related = ["ansible", "cockpit", "dockerfile", "shell", "ai-agent", "alpine-js", "claude-api", "commit"]
+related = ["ansible", "dockerfile", "shell", "ai-agent", "alpine-js", "cockpit", "commit", "flowbite-pro"]
 og_title = "Arch Linux: slovník"
 og_image = "og/cs-glossary-arch-linux.png"
 keywords = ["Arch Linux", "Technologie", "Slovník", "Tomáš Korčák"]
