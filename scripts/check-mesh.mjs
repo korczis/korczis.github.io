@@ -5,6 +5,9 @@
 // read with its quotes (2026-11-22). So every trusted key is written bare, one per line.
 // Rule project.mesh-fleet.
 import { readFileSync } from 'node:fs';
+import { cliArgs } from './lib/cli.mjs';
+
+cliArgs();
 
 const PATH = '.ai/repo/mesh/mesh.yaml';
 const MIN_KEYS = 2;
