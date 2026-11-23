@@ -44,7 +44,7 @@ CSS jsem psal v 27 veřejných repozitářích, od roku 2014 do 2026; ve 4 z nic
 
 K čemu to sloužilo: [Web](@/projects/web.cs.md) (10), [Nástroje](@/projects/tools.cs.md) (7), [Data a GIS](@/projects/data.cs.md) (5) a [Média a umění](@/projects/media.cs.md) (3).
 
-Naposledy: [Sonic Playground](@/work/sonic-playground.cs.md): Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita; [korczis.github.io](@/work/korczis-github-io.cs.md); [Oscilla](@/work/oscilla.cs.md): Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.
+Naposledy: [korczis.github.io](@/work/korczis-github-io.cs.md); [Sonic Playground](@/work/sonic-playground.cs.md): Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita; [Oscilla](@/work/oscilla.cs.md): Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.
 
 8 z těchto projektů běží jako živé weby.
 

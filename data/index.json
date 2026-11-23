@@ -1,6 +1,6 @@
 {
  "schema": "korczis-hub-index/v1",
- "generated_at": "2026-11-23T03:57:07Z",
+ "generated_at": "2026-11-23T15:08:08Z",
  "rule": "original = the owner wrote at least half of the listed commits; forks and mirrors are counted, not listed",
  "counts": {
   "github": 448,
@@ -18,7 +18,7 @@
  "dropped": [],
  "supervision": {
   "marker": ".ai/manifest.yaml",
-  "measured_at": "2026-11-23T03:57:07Z",
+  "measured_at": "2026-11-23T15:08:08Z",
   "kept": 0
  },
  "all_repos": [
@@ -1664,7 +1664,7 @@
    ],
    "stars": 0,
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-22T22:51:03Z",
+   "pushed_at": "2026-11-23T06:52:42Z",
    "archived": false,
    "share": 0.91,
    "hosts": {
@@ -2452,7 +2452,7 @@
    ],
    "stars": 1,
    "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-23T02:03:03Z",
+   "pushed_at": "2026-11-23T04:21:54Z",
    "archived": false,
    "share": 0.99,
    "hosts": {
@@ -4329,9 +4329,9 @@
   }
  ],
  "by_category": {
+  "web": 14,
   "ai": 5,
   "media": 8,
-  "web": 14,
   "science": 12,
   "knowledge": 5,
   "data": 49,
@@ -4342,6 +4342,12 @@
   "learning": 21
  },
  "categories": {
+  "web": {
+   "repos": 14,
+   "sites": 0,
+   "top_language": "JavaScript",
+   "since": "2014"
+  },
   "ai": {
    "repos": 5,
    "sites": 1,
@@ -4353,12 +4359,6 @@
    "sites": 4,
    "top_language": "JavaScript",
    "since": "2015"
-  },
-  "web": {
-   "repos": 14,
-   "sites": 0,
-   "top_language": "JavaScript",
-   "since": "2014"
   },
   "science": {
    "repos": 12,
@@ -5101,8 +5101,14 @@
  "recent": {
   "size": 100,
   "from": "2018-03-08T21:01:52Z",
-  "to": "2026-11-23T02:03:03Z",
+  "to": "2026-11-23T06:52:42Z",
   "mix": {
+   "web": {
+    "JavaScript": 2,
+    "HTML": 2,
+    "CSS": 3,
+    "Elixir": 1
+   },
    "ai": {
     "Rust": 1,
     "Elixir": 2,
@@ -5113,12 +5119,6 @@
     "JavaScript": 1,
     "HTML": 1,
     "Dockerfile": 1,
-    "Elixir": 1
-   },
-   "web": {
-    "JavaScript": 2,
-    "HTML": 2,
-    "CSS": 3,
     "Elixir": 1
    },
    "science": {
@@ -5169,6 +5169,39 @@
  },
  "repos": [
   {
+   "name": "korczis.github.io",
+   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+   "language": "JavaScript",
+   "topics": [
+    "accessibility",
+    "ai-agents",
+    "alpinejs",
+    "chartjs",
+    "cytoscape",
+    "echarts",
+    "flowbite",
+    "github-pages",
+    "majordomus",
+    "p5js",
+    "personal-website",
+    "portfolio",
+    "tailwindcss",
+    "zola"
+   ],
+   "stars": 0,
+   "created_at": "2024-12-24T16:48:15Z",
+   "pushed_at": "2026-11-23T06:52:42Z",
+   "archived": false,
+   "share": 0.91,
+   "hosts": {
+    "github": "https://github.com/korczis/korczis.github.io"
+   },
+   "site": null,
+   "supervised": true,
+   "category": "web",
+   "curated": false
+  },
+  {
    "name": "prismatic-majordomus",
    "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
    "language": "Rust",
@@ -5195,7 +5228,7 @@
    ],
    "stars": 1,
    "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-23T02:03:03Z",
+   "pushed_at": "2026-11-23T04:21:54Z",
    "archived": false,
    "share": 0.99,
    "hosts": {
@@ -5223,39 +5256,6 @@
    "supervised": true,
    "category": "media",
    "curated": true
-  },
-  {
-   "name": "korczis.github.io",
-   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-   "language": "JavaScript",
-   "topics": [
-    "accessibility",
-    "ai-agents",
-    "alpinejs",
-    "chartjs",
-    "cytoscape",
-    "echarts",
-    "flowbite",
-    "github-pages",
-    "majordomus",
-    "p5js",
-    "personal-website",
-    "portfolio",
-    "tailwindcss",
-    "zola"
-   ],
-   "stars": 0,
-   "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-22T22:51:03Z",
-   "archived": false,
-   "share": 0.91,
-   "hosts": {
-    "github": "https://github.com/korczis/korczis.github.io"
-   },
-   "site": null,
-   "supervised": true,
-   "category": "web",
-   "curated": false
   },
   {
    "name": "oscilla",
