@@ -16,8 +16,8 @@ kind = "technology"
 definition = "A library for drawing and analysing graphs (networks of nodes and edges) in the browser."
 aliases = ["Cytoscape"]
 reference = { title = "js.cytoscape.org", url = "https://js.cytoscape.org/" }
-pages = ["projects/knowledge.md", "services/digital-investigation.md", "stack.md", "work/kompendium-epistemicke-anihilace.md", "work/majordomus-reel.md"]
-related = ["flowbite-pro", "apache-echarts", "tailwind-css", "alpine-js", "elixir", "github-pages", "html", "javascript"]
+pages = ["projects/knowledge.md", "services/digital-investigation.md", "skills/ownership-analysis.md", "stack.md", "work/kompendium-epistemicke-anihilace.md", "work/majordomus-reel.md"]
+related = ["flowbite-pro", "apache-echarts", "alpine-js", "elixir", "github-pages", "html", "javascript", "p5-js"]
 og_title = "Cytoscape.js: glossary"
 og_image = "og/glossary-cytoscape-js.png"
 keywords = ["Cytoscape.js", "Technology", "Glossary", "Tomas Korcak"]

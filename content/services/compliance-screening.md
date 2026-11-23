@@ -14,7 +14,7 @@ icon = "check"
 og_title = "Sanctions, PEP and beneficial-ownership screening"
 og_image = "og/service-compliance-screening.png"
 schema = "service"
-terms = ["service", "elixir", "postgresql", "openapi", "sanctions-screening", "beneficial-ownership", "record-linkage", "risk-assessment", "contestability", "regulatory-compliance", "html", "javascript", "python", "flowbite-pro", "alpine-js", "majordomus", "claude-api", "dockerfile", "fastapi", "github-actions"]
+terms = ["service", "elixir", "postgresql", "openapi", "sanctions-screening", "beneficial-ownership", "record-linkage", "risk-assessment", "contestability", "regulatory-compliance", "html", "javascript", "python", "alpine-js", "flowbite-pro", "majordomus", "claude-api", "dockerfile", "fastapi", "github-actions"]
 keywords = ["Sanctions, PEP and beneficial-ownership screening", "Sanctions and PEP screening", "Ownership and link analysis", "Entity resolution", "Risk scoring", "Contestable decisions", "Regulatory compliance mapping", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -34,9 +34,9 @@ It draws on these skills: [Sanctions and PEP screening](@/skills/sanctions-scree
 
 It is built with [Elixir](@/glossary/elixir.md), [PostgreSQL](@/glossary/postgresql.md) and [OpenAPI](@/glossary/openapi.md).
 
-The technologies behind it, measured from the work that shows those skills: [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md), [Python](@/glossary/python.md), [Flowbite Pro](@/glossary/flowbite-pro.md), [Alpine.js](@/glossary/alpine-js.md), [Majordomus](@/glossary/majordomus.md), [Claude API](@/glossary/claude-api.md) and [Dockerfile](@/glossary/dockerfile.md).
+The technologies behind it, measured from the work that shows those skills: [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md), [Python](@/glossary/python.md), [Alpine.js](@/glossary/alpine-js.md), [Flowbite Pro](@/glossary/flowbite-pro.md), [Majordomus](@/glossary/majordomus.md), [Claude API](@/glossary/claude-api.md) and [Dockerfile](@/glossary/dockerfile.md).
 
-2 public repositories show its skills (2 by their own words).
+1 public repository shows its skills (1 by its own words).
 
 It was delivered in client work under confidentiality agreements, in Real-estate developer and Financial and investment group, as Architect, Lead engineer, AI engineer, Data engineer, Investigator and Advisor; the use cases describe the principle and the intent, never a client, person, date or number.
 

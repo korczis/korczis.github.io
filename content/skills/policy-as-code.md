@@ -13,7 +13,7 @@ skill = "policy-as-code"
 og_title = "Policy as code: skills"
 og_image = "og/skill-policy-as-code.png"
 schema = "skill"
-terms = ["skill", "policy-as-code", "javascript", "html", "tailwind-css", "flowbite-pro", "github-pages", "shell", "zola", "css", "python", "playwright"]
+terms = ["skill", "policy-as-code", "javascript", "html", "tailwind-css", "flowbite-pro", "github-pages", "shell", "zola", "css", "playwright", "python"]
 keywords = ["Policy as code", "Governed AI-assisted software delivery", "Tomas Korcak"]
 
 [[extra.viz]]

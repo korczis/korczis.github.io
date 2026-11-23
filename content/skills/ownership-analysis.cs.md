@@ -13,7 +13,7 @@ skill = "ownership-analysis"
 og_title = "Analýza vlastnictví a vazeb: dovednosti"
 og_image = "og/cs-skill-ownership-analysis.png"
 schema = "skill"
-terms = ["skill", "beneficial-ownership", "elixir", "flowbite-pro", "github-pages", "html", "javascript", "python", "shell", "tailwind-css", "zola", "alpine-js"]
+terms = ["skill", "beneficial-ownership", "alpine-js", "apache-echarts", "cytoscape-js", "elixir", "flowbite-pro", "github-pages", "html", "javascript", "majordomus", "p5-js"]
 keywords = ["Analýza vlastnictví a vazeb", "Due diligence firem a protistran", "Prověrka a analýza M&A transakcí", "Digitální vyšetřování a OSINT dossier", "Sankční a PEP prověrky a skuteční majitelé", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -31,8 +31,8 @@ Pojem, na kterém stojí: [Skutečné vlastnictví](@/glossary/beneficial-owners
 
 Služby, které z ní čerpají: [Due diligence firem a protistran](@/services/due-diligence.cs.md), [Prověrka a analýza M&A transakcí](@/services/m-and-a.cs.md), [Digitální vyšetřování a OSINT dossier](@/services/digital-investigation.cs.md) a [Sankční a PEP prověrky a skuteční majitelé](@/services/compliance-screening.cs.md).
 
-Praktikovaná s: [Elixir](@/glossary/elixir.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md), [GitHub Pages](@/glossary/github-pages.cs.md), [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Python](@/glossary/python.cs.md), [Shell](@/glossary/shell.cs.md) a [Tailwind CSS](@/glossary/tailwind-css.cs.md).
+Praktikovaná s: [Alpine.js](@/glossary/alpine-js.cs.md), [Apache ECharts](@/glossary/apache-echarts.cs.md), [Cytoscape.js](@/glossary/cytoscape-js.cs.md), [Elixir](@/glossary/elixir.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md), [GitHub Pages](@/glossary/github-pages.cs.md), [HTML](@/glossary/html.cs.md) a [JavaScript](@/glossary/javascript.cs.md).
 
-Veřejná práce, jejíž vlastní slova ji dokládají: [sonic-playground](https://github.com/korczis/sonic-playground) a [kompendium-epistemicke-anihilace](https://github.com/korczis/kompendium-epistemicke-anihilace).
+Veřejná práce, jejíž vlastní slova ji dokládají: [kompendium-epistemicke-anihilace](https://github.com/korczis/kompendium-epistemicke-anihilace).
 
 Jak číst tuto stránku: definice pochází ze slovníku zkušeností; služby, technologie, veřejné [repozitáře](@/glossary/repository.cs.md) a případy užití jsou odvozené a každá položka vede na svou stránku.

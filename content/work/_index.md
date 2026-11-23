@@ -11,7 +11,7 @@ og_title = "205 projects since 2012, 43 active the last 4 years."
 og_image = "og/work.png"
 schema = "collection"
 terms = ["commit", "fork", "mirror", "repository", "open-source"]
-keywords = ["Tomas Korcak projects", "korczis", "oscilla", "sonic-playground", "korczis.github.io", "kompendium-epistemicke-anihilace", "prismatic-majordomus", "algoglyph", "openttd-prismatic-bridge", "majordomus-reel"]
+keywords = ["Tomas Korcak projects", "korczis", "sonic-playground", "prismatic-majordomus", "korczis.github.io", "oscilla", "kompendium-epistemicke-anihilace", "algoglyph", "openttd-prismatic-bridge", "majordomus-reel"]
 
 [[extra.viz]]
 kind = "pulse"

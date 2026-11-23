@@ -14,7 +14,7 @@
         {
           "id": "elixir",
           "name": "Elixir",
-          "n": 5,
+          "n": 4,
           "declared": true
         },
         {
@@ -65,19 +65,6 @@
           "site": "https://korczis.github.io/vomaste.cz/",
           "pushed": "2026-11-08",
           "skill": "due-diligence"
-        },
-        {
-          "name": "sonic-playground",
-          "title": "Sonic Playground",
-          "how": "words",
-          "score": 2.8,
-          "slug": "sonic-playground",
-          "url": "https://github.com/korczis/sonic-playground",
-          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-          "category": "media",
-          "site": "https://korczis.github.io/sonic-playground/",
-          "pushed": "2026-11-22",
-          "skill": "ownership-analysis"
         },
         {
           "name": "openttd-prismatic-bridge",
@@ -167,32 +154,27 @@
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 14
+          "n": 13
         },
         {
           "id": "html",
           "name": "HTML",
-          "n": 12
+          "n": 11
         },
         {
           "id": "python",
           "name": "Python",
-          "n": 10
+          "n": 9
         },
         {
           "id": "flowbite-pro",
           "name": "Flowbite Pro",
-          "n": 9
+          "n": 8
         },
         {
           "id": "tailwind-css",
           "name": "Tailwind CSS",
-          "n": 8
-        },
-        {
-          "id": "shell",
-          "name": "Shell",
-          "n": 6
+          "n": 7
         },
         {
           "id": "alpine-js",
@@ -210,6 +192,11 @@
           "n": 5
         },
         {
+          "id": "shell",
+          "name": "Shell",
+          "n": 5
+        },
+        {
           "id": "react",
           "name": "React",
           "n": 4
@@ -220,18 +207,8 @@
           "n": 3
         },
         {
-          "id": "css",
-          "name": "CSS",
-          "n": 3
-        },
-        {
           "id": "github-actions",
           "name": "GitHub Actions",
-          "n": 3
-        },
-        {
-          "id": "github-pages",
-          "name": "GitHub Pages",
           "n": 3
         },
         {
@@ -243,6 +220,16 @@
           "id": "majordomus",
           "name": "Majordomus",
           "n": 3
+        },
+        {
+          "id": "css",
+          "name": "CSS",
+          "n": 2
+        },
+        {
+          "id": "github-pages",
+          "name": "GitHub Pages",
+          "n": 2
         }
       ]
     },
@@ -251,7 +238,7 @@
         {
           "id": "elixir",
           "name": "Elixir",
-          "n": 4,
+          "n": 3,
           "declared": true
         },
         {
@@ -310,19 +297,6 @@
           "site": null,
           "pushed": "2014-01-07",
           "skill": "market-intelligence"
-        },
-        {
-          "name": "sonic-playground",
-          "title": "Sonic Playground",
-          "how": "words",
-          "score": 2.8,
-          "slug": "sonic-playground",
-          "url": "https://github.com/korczis/sonic-playground",
-          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-          "category": "media",
-          "site": "https://korczis.github.io/sonic-playground/",
-          "pushed": "2026-11-22",
-          "skill": "ownership-analysis"
         },
         {
           "name": "openttd-prismatic-bridge",
@@ -427,22 +401,22 @@
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 16
+          "n": 15
         },
         {
           "id": "html",
           "name": "HTML",
-          "n": 15
+          "n": 14
         },
         {
           "id": "python",
           "name": "Python",
-          "n": 11
+          "n": 10
         },
         {
           "id": "flowbite-pro",
           "name": "Flowbite Pro",
-          "n": 10
+          "n": 9
         },
         {
           "id": "alpine-js",
@@ -460,18 +434,13 @@
           "n": 7
         },
         {
-          "id": "tailwind-css",
-          "name": "Tailwind CSS",
-          "n": 7
-        },
-        {
           "id": "playwright",
           "name": "Playwright",
           "n": 6
         },
         {
-          "id": "shell",
-          "name": "Shell",
+          "id": "tailwind-css",
+          "name": "Tailwind CSS",
           "n": 6
         },
         {
@@ -495,6 +464,11 @@
           "n": 5
         },
         {
+          "id": "shell",
+          "name": "Shell",
+          "n": 5
+        },
+        {
           "id": "kubernetes",
           "name": "Kubernetes",
           "n": 4
@@ -511,7 +485,7 @@
         {
           "id": "elixir",
           "name": "Elixir",
-          "n": 6,
+          "n": 5,
           "declared": true
         },
         {
@@ -686,19 +660,6 @@
           "site": null,
           "pushed": "2016-07-15",
           "skill": "media-forensics"
-        },
-        {
-          "name": "sonic-playground",
-          "title": "Sonic Playground",
-          "how": "words",
-          "score": 2.8,
-          "slug": "sonic-playground",
-          "url": "https://github.com/korczis/sonic-playground",
-          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-          "category": "media",
-          "site": "https://korczis.github.io/sonic-playground/",
-          "pushed": "2026-11-22",
-          "skill": "ownership-analysis"
         },
         {
           "name": "crisis-map",
@@ -903,12 +864,12 @@
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 23
+          "n": 22
         },
         {
           "id": "html",
           "name": "HTML",
-          "n": 11
+          "n": 10
         },
         {
           "id": "nodejs",
@@ -918,26 +879,26 @@
         {
           "id": "python",
           "name": "Python",
-          "n": 10
+          "n": 9
         },
         {
           "id": "flowbite-pro",
           "name": "Flowbite Pro",
-          "n": 8
-        },
-        {
-          "id": "shell",
-          "name": "Shell",
-          "n": 7
-        },
-        {
-          "id": "tailwind-css",
-          "name": "Tailwind CSS",
           "n": 7
         },
         {
           "id": "dockerfile",
           "name": "Dockerfile",
+          "n": 6
+        },
+        {
+          "id": "shell",
+          "name": "Shell",
+          "n": 6
+        },
+        {
+          "id": "tailwind-css",
+          "name": "Tailwind CSS",
           "n": 6
         },
         {
@@ -961,11 +922,6 @@
           "n": 4
         },
         {
-          "id": "github-pages",
-          "name": "GitHub Pages",
-          "n": 4
-        },
-        {
           "id": "alpine-js",
           "name": "Alpine.js",
           "n": 3
@@ -976,8 +932,13 @@
           "n": 3
         },
         {
-          "id": "css",
-          "name": "CSS",
+          "id": "github-pages",
+          "name": "GitHub Pages",
+          "n": 3
+        },
+        {
+          "id": "leaflet",
+          "name": "Leaflet",
           "n": 3
         }
       ]
@@ -1488,7 +1449,7 @@
         {
           "id": "elixir",
           "name": "Elixir",
-          "n": 2,
+          "n": 1,
           "declared": true
         },
         {
@@ -1513,19 +1474,6 @@
         "compliance-mapping"
       ],
       "repos": [
-        {
-          "name": "sonic-playground",
-          "title": "Sonic Playground",
-          "how": "words",
-          "score": 2.8,
-          "slug": "sonic-playground",
-          "url": "https://github.com/korczis/sonic-playground",
-          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-          "category": "media",
-          "site": "https://korczis.github.io/sonic-playground/",
-          "pushed": "2026-11-22",
-          "skill": "ownership-analysis"
-        },
         {
           "name": "kompendium-epistemicke-anihilace",
           "title": "Kompendium",
@@ -1571,26 +1519,26 @@
         {
           "id": "html",
           "name": "HTML",
-          "n": 5
+          "n": 4
         },
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 5
+          "n": 4
         },
         {
           "id": "python",
           "name": "Python",
-          "n": 5
-        },
-        {
-          "id": "flowbite-pro",
-          "name": "Flowbite Pro",
           "n": 4
         },
         {
           "id": "alpine-js",
           "name": "Alpine.js",
+          "n": 3
+        },
+        {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
           "n": 3
         },
         {
@@ -1619,11 +1567,6 @@
           "n": 2
         },
         {
-          "id": "github-pages",
-          "name": "GitHub Pages",
-          "n": 2
-        },
-        {
           "id": "kubernetes",
           "name": "Kubernetes",
           "n": 2
@@ -1647,6 +1590,11 @@
           "id": "react",
           "name": "React",
           "n": 2
+        },
+        {
+          "id": "apache-echarts",
+          "name": "Apache ECharts",
+          "n": 1
         }
       ]
     },
@@ -1709,7 +1657,7 @@
           "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
           "category": "ai",
           "site": "https://korczis.github.io/prismatic-majordomus/",
-          "pushed": "2026-11-22",
+          "pushed": "2026-11-23",
           "skill": "orchestration"
         },
         {
@@ -2227,7 +2175,7 @@
           "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
           "category": "ai",
           "site": "https://korczis.github.io/prismatic-majordomus/",
-          "pushed": "2026-11-22",
+          "pushed": "2026-11-23",
           "skill": "llm-agents"
         },
         {
@@ -2554,21 +2502,8 @@
           "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
           "category": "ai",
           "site": "https://korczis.github.io/prismatic-majordomus/",
-          "pushed": "2026-11-22",
+          "pushed": "2026-11-23",
           "skill": "llm-agents"
-        },
-        {
-          "name": "korczis.github.io",
-          "title": "korczis.github.io",
-          "how": "words",
-          "score": 4,
-          "slug": "korczis-github-io",
-          "url": "https://github.com/korczis/korczis.github.io",
-          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-          "category": "web",
-          "site": null,
-          "pushed": "2026-11-22",
-          "skill": "policy-as-code"
         },
         {
           "name": "sig",
@@ -2582,6 +2517,19 @@
           "site": null,
           "pushed": "2026-02-04",
           "skill": "llm-agents"
+        },
+        {
+          "name": "korczis.github.io",
+          "title": "korczis.github.io",
+          "how": "words",
+          "score": 3.6,
+          "slug": "korczis-github-io",
+          "url": "https://github.com/korczis/korczis.github.io",
+          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+          "category": "web",
+          "site": null,
+          "pushed": "2026-11-22",
+          "skill": "policy-as-code"
         },
         {
           "name": "kompendium-epistemicke-anihilace",
@@ -2688,19 +2636,6 @@
           "skill": "ai-transformation"
         },
         {
-          "name": "sonic-playground",
-          "title": "Sonic Playground",
-          "how": "words",
-          "score": 2,
-          "slug": "sonic-playground",
-          "url": "https://github.com/korczis/sonic-playground",
-          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-          "category": "media",
-          "site": "https://korczis.github.io/sonic-playground/",
-          "pushed": "2026-11-22",
-          "skill": "policy-as-code"
-        },
-        {
           "name": "crisis-map",
           "title": "Crisis map",
           "how": "words",
@@ -2760,31 +2695,26 @@
         {
           "id": "html",
           "name": "HTML",
-          "n": 19
+          "n": 18
         },
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 19
+          "n": 18
         },
         {
           "id": "shell",
           "name": "Shell",
-          "n": 17
+          "n": 16
         },
         {
           "id": "flowbite-pro",
           "name": "Flowbite Pro",
-          "n": 13
+          "n": 12
         },
         {
           "id": "tailwind-css",
           "name": "Tailwind CSS",
-          "n": 12
-        },
-        {
-          "id": "python",
-          "name": "Python",
           "n": 11
         },
         {
@@ -2793,9 +2723,9 @@
           "n": 10
         },
         {
-          "id": "github-pages",
-          "name": "GitHub Pages",
-          "n": 8
+          "id": "python",
+          "name": "Python",
+          "n": 10
         },
         {
           "id": "playwright",
@@ -2803,23 +2733,18 @@
           "n": 8
         },
         {
+          "id": "github-pages",
+          "name": "GitHub Pages",
+          "n": 7
+        },
+        {
           "id": "css",
           "name": "CSS",
-          "n": 7
+          "n": 6
         },
         {
           "id": "dockerfile",
           "name": "Dockerfile",
-          "n": 6
-        },
-        {
-          "id": "elixir",
-          "name": "Elixir",
-          "n": 6
-        },
-        {
-          "id": "zola",
-          "name": "Zola",
           "n": 6
         },
         {
@@ -2833,8 +2758,18 @@
           "n": 5
         },
         {
+          "id": "zola",
+          "name": "Zola",
+          "n": 5
+        },
+        {
           "id": "apache-echarts",
           "name": "Apache ECharts",
+          "n": 3
+        },
+        {
+          "id": "cytoscape-js",
+          "name": "Cytoscape.js",
           "n": 3
         }
       ]
@@ -5165,7 +5100,7 @@
           "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
           "category": "ai",
           "site": "https://korczis.github.io/prismatic-majordomus/",
-          "pushed": "2026-11-22"
+          "pushed": "2026-11-23"
         },
         {
           "name": "sig",
@@ -5457,7 +5392,7 @@
           "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
           "category": "ai",
           "site": "https://korczis.github.io/prismatic-majordomus/",
-          "pushed": "2026-11-22"
+          "pushed": "2026-11-23"
         }
       ],
       "engagements": [
@@ -5663,18 +5598,6 @@
       ],
       "repos": [
         {
-          "name": "sonic-playground",
-          "title": "Sonic Playground",
-          "how": "words",
-          "score": 2.8,
-          "slug": "sonic-playground",
-          "url": "https://github.com/korczis/sonic-playground",
-          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-          "category": "media",
-          "site": "https://korczis.github.io/sonic-playground/",
-          "pushed": "2026-11-22"
-        },
-        {
           "name": "kompendium-epistemicke-anihilace",
           "title": "Kompendium",
           "how": "words",
@@ -5690,51 +5613,6 @@
       "engagements": [],
       "technologies": [
         {
-          "id": "elixir",
-          "name": "Elixir",
-          "n": 2
-        },
-        {
-          "id": "flowbite-pro",
-          "name": "Flowbite Pro",
-          "n": 2
-        },
-        {
-          "id": "github-pages",
-          "name": "GitHub Pages",
-          "n": 2
-        },
-        {
-          "id": "html",
-          "name": "HTML",
-          "n": 2
-        },
-        {
-          "id": "javascript",
-          "name": "JavaScript",
-          "n": 2
-        },
-        {
-          "id": "python",
-          "name": "Python",
-          "n": 2
-        },
-        {
-          "id": "shell",
-          "name": "Shell",
-          "n": 2
-        },
-        {
-          "id": "tailwind-css",
-          "name": "Tailwind CSS",
-          "n": 2
-        },
-        {
-          "id": "zola",
-          "name": "Zola",
-          "n": 2
-        },
-        {
           "id": "alpine-js",
           "name": "Alpine.js",
           "n": 1
@@ -5745,18 +5623,33 @@
           "n": 1
         },
         {
-          "id": "css",
-          "name": "CSS",
-          "n": 1
-        },
-        {
           "id": "cytoscape-js",
           "name": "Cytoscape.js",
           "n": 1
         },
         {
-          "id": "json-schema",
-          "name": "JSON Schema",
+          "id": "elixir",
+          "name": "Elixir",
+          "n": 1
+        },
+        {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 1
+        },
+        {
+          "id": "github-pages",
+          "name": "GitHub Pages",
+          "n": 1
+        },
+        {
+          "id": "html",
+          "name": "HTML",
+          "n": 1
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
           "n": 1
         },
         {
@@ -5767,6 +5660,36 @@
         {
           "id": "p5-js",
           "name": "p5.js",
+          "n": 1
+        },
+        {
+          "id": "python",
+          "name": "Python",
+          "n": 1
+        },
+        {
+          "id": "rust",
+          "name": "Rust",
+          "n": 1
+        },
+        {
+          "id": "shell",
+          "name": "Shell",
+          "n": 1
+        },
+        {
+          "id": "tailwind-css",
+          "name": "Tailwind CSS",
+          "n": 1
+        },
+        {
+          "id": "webassembly",
+          "name": "WebAssembly",
+          "n": 1
+        },
+        {
+          "id": "zola",
+          "name": "Zola",
           "n": 1
         }
       ]
@@ -6505,13 +6428,13 @@
           "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
           "category": "ai",
           "site": "https://korczis.github.io/prismatic-majordomus/",
-          "pushed": "2026-11-22"
+          "pushed": "2026-11-23"
         },
         {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "how": "words",
-          "score": 4,
+          "score": 3.6,
           "slug": "korczis-github-io",
           "url": "https://github.com/korczis/korczis.github.io",
           "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
@@ -6542,18 +6465,6 @@
           "category": "data",
           "site": "https://korczis.github.io/data-atlas/",
           "pushed": "2026-11-16"
-        },
-        {
-          "name": "sonic-playground",
-          "title": "Sonic Playground",
-          "how": "words",
-          "score": 2,
-          "slug": "sonic-playground",
-          "url": "https://github.com/korczis/sonic-playground",
-          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-          "category": "media",
-          "site": "https://korczis.github.io/sonic-playground/",
-          "pushed": "2026-11-22"
         },
         {
           "name": "catharsis-as-a-service",
@@ -6597,51 +6508,51 @@
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 9
+          "n": 8
         },
         {
           "id": "html",
           "name": "HTML",
-          "n": 8
+          "n": 7
         },
         {
           "id": "tailwind-css",
           "name": "Tailwind CSS",
-          "n": 8
+          "n": 7
         },
         {
           "id": "flowbite-pro",
           "name": "Flowbite Pro",
-          "n": 6
+          "n": 5
         },
         {
           "id": "github-pages",
           "name": "GitHub Pages",
-          "n": 6
+          "n": 5
         },
         {
           "id": "shell",
           "name": "Shell",
-          "n": 6
+          "n": 5
         },
         {
           "id": "zola",
           "name": "Zola",
-          "n": 6
+          "n": 5
         },
         {
           "id": "css",
           "name": "CSS",
-          "n": 5
-        },
-        {
-          "id": "python",
-          "name": "Python",
-          "n": 5
+          "n": 4
         },
         {
           "id": "playwright",
           "name": "Playwright",
+          "n": 4
+        },
+        {
+          "id": "python",
+          "name": "Python",
           "n": 4
         },
         {
@@ -6660,11 +6571,6 @@
           "n": 3
         },
         {
-          "id": "elixir",
-          "name": "Elixir",
-          "n": 3
-        },
-        {
           "id": "majordomus",
           "name": "Majordomus",
           "n": 3
@@ -6672,6 +6578,11 @@
         {
           "id": "nodejs",
           "name": "Node.js",
+          "n": 3
+        },
+        {
+          "id": "p5-js",
+          "name": "p5.js",
           "n": 3
         }
       ]

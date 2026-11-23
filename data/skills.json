@@ -980,6 +980,74 @@
       ],
       "repos": [
         {
+          "name": "prismatic-majordomus",
+          "title": "Majordomus",
+          "url": "https://github.com/korczis/prismatic-majordomus",
+          "work": true,
+          "slug": "prismatic-majordomus",
+          "site": "https://korczis.github.io/prismatic-majordomus/",
+          "category": "ai",
+          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+          "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
+          "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
+          "created": "2026-09-03",
+          "pushed": "2026-11-23",
+          "primary": false,
+          "share": 4.1,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "Rust",
+            "Shell",
+            "JavaScript",
+            "HTML",
+            "MCP",
+            "Zola",
+            "Claude Code",
+            "LLM",
+            "Mermaid",
+            "Git",
+            "YAML",
+            "GitHub Actions"
+          ]
+        },
+        {
+          "name": "sonic-playground",
+          "title": "Sonic Playground",
+          "url": "https://github.com/korczis/sonic-playground",
+          "work": true,
+          "slug": "sonic-playground",
+          "site": "https://korczis.github.io/sonic-playground/",
+          "category": "media",
+          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
+          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
+          "created": "2026-11-12",
+          "pushed": "2026-11-23",
+          "primary": false,
+          "share": 39.5,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "Python",
+            "JavaScript",
+            "HTML",
+            "Shell",
+            "CSS",
+            "Elixir",
+            "Zola",
+            "TypeScript",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "JSON Schema",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "algoglyph",
           "title": "algoglyph",
           "url": "https://github.com/korczis/algoglyph",
@@ -1129,74 +1197,6 @@
             "esbuild",
             "Playwright",
             "axe-core",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "prismatic-majordomus",
-          "title": "Majordomus",
-          "url": "https://github.com/korczis/prismatic-majordomus",
-          "work": true,
-          "slug": "prismatic-majordomus",
-          "site": "https://korczis.github.io/prismatic-majordomus/",
-          "category": "ai",
-          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
-          "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
-          "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
-          "created": "2026-09-03",
-          "pushed": "2026-11-22",
-          "primary": false,
-          "share": 4.1,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "Rust",
-            "Shell",
-            "JavaScript",
-            "HTML",
-            "MCP",
-            "Zola",
-            "Claude Code",
-            "LLM",
-            "Mermaid",
-            "Git",
-            "YAML",
-            "GitHub Actions"
-          ]
-        },
-        {
-          "name": "sonic-playground",
-          "title": "Sonic Playground",
-          "url": "https://github.com/korczis/sonic-playground",
-          "work": true,
-          "slug": "sonic-playground",
-          "site": "https://korczis.github.io/sonic-playground/",
-          "category": "media",
-          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
-          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
-          "created": "2026-11-12",
-          "pushed": "2026-11-22",
-          "primary": false,
-          "share": 30.8,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "Python",
-            "JavaScript",
-            "HTML",
-            "Shell",
-            "CSS",
-            "Elixir",
-            "Zola",
-            "TypeScript",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "JSON Schema",
             "GitHub Pages"
           ]
         },
@@ -3444,6 +3444,40 @@
       ],
       "repos": [
         {
+          "name": "sonic-playground",
+          "title": "Sonic Playground",
+          "url": "https://github.com/korczis/sonic-playground",
+          "work": true,
+          "slug": "sonic-playground",
+          "site": "https://korczis.github.io/sonic-playground/",
+          "category": "media",
+          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
+          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
+          "created": "2026-11-12",
+          "pushed": "2026-11-23",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "Python",
+            "JavaScript",
+            "HTML",
+            "Shell",
+            "CSS",
+            "Elixir",
+            "Zola",
+            "TypeScript",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "JSON Schema",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "algoglyph",
           "title": "algoglyph",
           "url": "https://github.com/korczis/algoglyph",
@@ -3481,40 +3515,6 @@
             "Vite",
             "Vitest",
             "axe-core",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "sonic-playground",
-          "title": "Sonic Playground",
-          "url": "https://github.com/korczis/sonic-playground",
-          "work": true,
-          "slug": "sonic-playground",
-          "site": "https://korczis.github.io/sonic-playground/",
-          "category": "media",
-          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
-          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
-          "created": "2026-11-12",
-          "pushed": "2026-11-22",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "Python",
-            "JavaScript",
-            "HTML",
-            "Shell",
-            "CSS",
-            "Elixir",
-            "Zola",
-            "TypeScript",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "JSON Schema",
             "GitHub Pages"
           ]
         },
@@ -4514,6 +4514,40 @@
       ],
       "repos": [
         {
+          "name": "sonic-playground",
+          "title": "Sonic Playground",
+          "url": "https://github.com/korczis/sonic-playground",
+          "work": true,
+          "slug": "sonic-playground",
+          "site": "https://korczis.github.io/sonic-playground/",
+          "category": "media",
+          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
+          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
+          "created": "2026-11-12",
+          "pushed": "2026-11-23",
+          "primary": false,
+          "share": null,
+          "via": [
+            "stack"
+          ],
+          "supervised": true,
+          "uses": [
+            "Python",
+            "JavaScript",
+            "HTML",
+            "Shell",
+            "CSS",
+            "Elixir",
+            "Zola",
+            "TypeScript",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "JSON Schema",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "kompendium-epistemicke-anihilace",
           "title": "Kompendium",
           "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
@@ -4550,40 +4584,6 @@
             "Tailwind CSS",
             "p5.js",
             "WebAssembly",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "sonic-playground",
-          "title": "Sonic Playground",
-          "url": "https://github.com/korczis/sonic-playground",
-          "work": true,
-          "slug": "sonic-playground",
-          "site": "https://korczis.github.io/sonic-playground/",
-          "category": "media",
-          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
-          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
-          "created": "2026-11-12",
-          "pushed": "2026-11-22",
-          "primary": false,
-          "share": null,
-          "via": [
-            "stack"
-          ],
-          "supervised": true,
-          "uses": [
-            "Python",
-            "JavaScript",
-            "HTML",
-            "Shell",
-            "CSS",
-            "Elixir",
-            "Zola",
-            "TypeScript",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "JSON Schema",
             "GitHub Pages"
           ]
         },
@@ -6324,6 +6324,44 @@
       ],
       "repos": [
         {
+          "name": "prismatic-majordomus",
+          "title": "Majordomus",
+          "url": "https://github.com/korczis/prismatic-majordomus",
+          "work": true,
+          "slug": "prismatic-majordomus",
+          "site": "https://korczis.github.io/prismatic-majordomus/",
+          "category": "ai",
+          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+          "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
+          "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
+          "created": "2026-09-03",
+          "pushed": "2026-11-23",
+          "primary": true,
+          "share": 60.8,
+          "via": [
+            "primary",
+            "code",
+            "stack",
+            "topic",
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "Rust",
+            "Shell",
+            "JavaScript",
+            "HTML",
+            "MCP",
+            "Zola",
+            "Claude Code",
+            "LLM",
+            "Mermaid",
+            "Git",
+            "YAML",
+            "GitHub Actions"
+          ]
+        },
+        {
           "name": "algoglyph",
           "title": "algoglyph",
           "url": "https://github.com/korczis/algoglyph",
@@ -6398,44 +6436,6 @@
             "p5.js",
             "WebAssembly",
             "GitHub Pages"
-          ]
-        },
-        {
-          "name": "prismatic-majordomus",
-          "title": "Majordomus",
-          "url": "https://github.com/korczis/prismatic-majordomus",
-          "work": true,
-          "slug": "prismatic-majordomus",
-          "site": "https://korczis.github.io/prismatic-majordomus/",
-          "category": "ai",
-          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
-          "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
-          "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
-          "created": "2026-09-03",
-          "pushed": "2026-11-22",
-          "primary": true,
-          "share": 60.8,
-          "via": [
-            "primary",
-            "code",
-            "stack",
-            "topic",
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "Rust",
-            "Shell",
-            "JavaScript",
-            "HTML",
-            "MCP",
-            "Zola",
-            "Claude Code",
-            "LLM",
-            "Mermaid",
-            "Git",
-            "YAML",
-            "GitHub Actions"
           ]
         },
         {
@@ -7419,6 +7419,42 @@
       ],
       "repos": [
         {
+          "name": "sonic-playground",
+          "title": "Sonic Playground",
+          "url": "https://github.com/korczis/sonic-playground",
+          "work": true,
+          "slug": "sonic-playground",
+          "site": "https://korczis.github.io/sonic-playground/",
+          "category": "media",
+          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
+          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
+          "created": "2026-11-12",
+          "pushed": "2026-11-23",
+          "primary": true,
+          "share": 39.6,
+          "via": [
+            "primary",
+            "code",
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "Python",
+            "JavaScript",
+            "HTML",
+            "Shell",
+            "CSS",
+            "Elixir",
+            "Zola",
+            "TypeScript",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "JSON Schema",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "kompendium-epistemicke-anihilace",
           "title": "Kompendium",
           "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
@@ -7454,42 +7490,6 @@
             "Tailwind CSS",
             "p5.js",
             "WebAssembly",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "sonic-playground",
-          "title": "Sonic Playground",
-          "url": "https://github.com/korczis/sonic-playground",
-          "work": true,
-          "slug": "sonic-playground",
-          "site": "https://korczis.github.io/sonic-playground/",
-          "category": "media",
-          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
-          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
-          "created": "2026-11-12",
-          "pushed": "2026-11-22",
-          "primary": true,
-          "share": 45.9,
-          "via": [
-            "primary",
-            "code",
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "Python",
-            "JavaScript",
-            "HTML",
-            "Shell",
-            "CSS",
-            "Elixir",
-            "Zola",
-            "TypeScript",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "JSON Schema",
             "GitHub Pages"
           ]
         },
@@ -8127,44 +8127,6 @@
       ],
       "repos": [
         {
-          "name": "kompendium-epistemicke-anihilace",
-          "title": "Kompendium",
-          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
-          "work": true,
-          "slug": "kompendium-epistemicke-anihilace",
-          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
-          "category": "knowledge",
-          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
-          "summary": "A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore.",
-          "summary_cs": "Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat.",
-          "created": "2026-11-09",
-          "pushed": "2026-11-22",
-          "primary": false,
-          "share": 9.8,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "Elixir",
-            "JavaScript",
-            "Python",
-            "HTML",
-            "Shell",
-            "Rust",
-            "Zola",
-            "Cytoscape.js",
-            "Apache ECharts",
-            "Alpine.js",
-            "Flowbite Pro",
-            "Majordomus",
-            "Tailwind CSS",
-            "p5.js",
-            "WebAssembly",
-            "GitHub Pages"
-          ]
-        },
-        {
           "name": "prismatic-majordomus",
           "title": "Majordomus",
           "url": "https://github.com/korczis/prismatic-majordomus",
@@ -8176,7 +8138,7 @@
           "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
           "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
           "created": "2026-09-03",
-          "pushed": "2026-11-22",
+          "pushed": "2026-11-23",
           "primary": false,
           "share": 29.5,
           "via": [
@@ -8211,9 +8173,9 @@
           "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
           "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
           "created": "2026-11-12",
-          "pushed": "2026-11-22",
+          "pushed": "2026-11-23",
           "primary": false,
-          "share": 4.4,
+          "share": 4.6,
           "via": [
             "code"
           ],
@@ -8230,6 +8192,44 @@
             "Tailwind CSS",
             "Flowbite Pro",
             "JSON Schema",
+            "GitHub Pages"
+          ]
+        },
+        {
+          "name": "kompendium-epistemicke-anihilace",
+          "title": "Kompendium",
+          "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
+          "work": true,
+          "slug": "kompendium-epistemicke-anihilace",
+          "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
+          "category": "knowledge",
+          "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
+          "summary": "A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore.",
+          "summary_cs": "Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat.",
+          "created": "2026-11-09",
+          "pushed": "2026-11-22",
+          "primary": false,
+          "share": 9.8,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "Elixir",
+            "JavaScript",
+            "Python",
+            "HTML",
+            "Shell",
+            "Rust",
+            "Zola",
+            "Cytoscape.js",
+            "Apache ECharts",
+            "Alpine.js",
+            "Flowbite Pro",
+            "Majordomus",
+            "Tailwind CSS",
+            "p5.js",
+            "WebAssembly",
             "GitHub Pages"
           ]
         },
@@ -9500,6 +9500,74 @@
       ],
       "repos": [
         {
+          "name": "prismatic-majordomus",
+          "title": "Majordomus",
+          "url": "https://github.com/korczis/prismatic-majordomus",
+          "work": true,
+          "slug": "prismatic-majordomus",
+          "site": "https://korczis.github.io/prismatic-majordomus/",
+          "category": "ai",
+          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+          "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
+          "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
+          "created": "2026-09-03",
+          "pushed": "2026-11-23",
+          "primary": false,
+          "share": 3.8,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "Rust",
+            "Shell",
+            "JavaScript",
+            "HTML",
+            "MCP",
+            "Zola",
+            "Claude Code",
+            "LLM",
+            "Mermaid",
+            "Git",
+            "YAML",
+            "GitHub Actions"
+          ]
+        },
+        {
+          "name": "sonic-playground",
+          "title": "Sonic Playground",
+          "url": "https://github.com/korczis/sonic-playground",
+          "work": true,
+          "slug": "sonic-playground",
+          "site": "https://korczis.github.io/sonic-playground/",
+          "category": "media",
+          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
+          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
+          "created": "2026-11-12",
+          "pushed": "2026-11-23",
+          "primary": false,
+          "share": 15.1,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "Python",
+            "JavaScript",
+            "HTML",
+            "Shell",
+            "CSS",
+            "Elixir",
+            "Zola",
+            "TypeScript",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "JSON Schema",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "algoglyph",
           "title": "algoglyph",
           "url": "https://github.com/korczis/algoglyph",
@@ -9644,74 +9712,6 @@
             "esbuild",
             "Playwright",
             "axe-core",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "prismatic-majordomus",
-          "title": "Majordomus",
-          "url": "https://github.com/korczis/prismatic-majordomus",
-          "work": true,
-          "slug": "prismatic-majordomus",
-          "site": "https://korczis.github.io/prismatic-majordomus/",
-          "category": "ai",
-          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
-          "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
-          "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
-          "created": "2026-09-03",
-          "pushed": "2026-11-22",
-          "primary": false,
-          "share": 3.8,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "Rust",
-            "Shell",
-            "JavaScript",
-            "HTML",
-            "MCP",
-            "Zola",
-            "Claude Code",
-            "LLM",
-            "Mermaid",
-            "Git",
-            "YAML",
-            "GitHub Actions"
-          ]
-        },
-        {
-          "name": "sonic-playground",
-          "title": "Sonic Playground",
-          "url": "https://github.com/korczis/sonic-playground",
-          "work": true,
-          "slug": "sonic-playground",
-          "site": "https://korczis.github.io/sonic-playground/",
-          "category": "media",
-          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
-          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
-          "created": "2026-11-12",
-          "pushed": "2026-11-22",
-          "primary": false,
-          "share": 17.8,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "Python",
-            "JavaScript",
-            "HTML",
-            "Shell",
-            "CSS",
-            "Elixir",
-            "Zola",
-            "TypeScript",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "JSON Schema",
             "GitHub Pages"
           ]
         },
@@ -10770,6 +10770,40 @@
       ],
       "repos": [
         {
+          "name": "sonic-playground",
+          "title": "Sonic Playground",
+          "url": "https://github.com/korczis/sonic-playground",
+          "work": true,
+          "slug": "sonic-playground",
+          "site": "https://korczis.github.io/sonic-playground/",
+          "category": "media",
+          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
+          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
+          "created": "2026-11-12",
+          "pushed": "2026-11-23",
+          "primary": false,
+          "share": 1.2,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "Python",
+            "JavaScript",
+            "HTML",
+            "Shell",
+            "CSS",
+            "Elixir",
+            "Zola",
+            "TypeScript",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "JSON Schema",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "url": "https://github.com/korczis/korczis.github.io",
@@ -10839,40 +10873,6 @@
             "esbuild",
             "Playwright",
             "axe-core",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "sonic-playground",
-          "title": "Sonic Playground",
-          "url": "https://github.com/korczis/sonic-playground",
-          "work": true,
-          "slug": "sonic-playground",
-          "site": "https://korczis.github.io/sonic-playground/",
-          "category": "media",
-          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
-          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
-          "created": "2026-11-12",
-          "pushed": "2026-11-22",
-          "primary": false,
-          "share": 1.1,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "Python",
-            "JavaScript",
-            "HTML",
-            "Shell",
-            "CSS",
-            "Elixir",
-            "Zola",
-            "TypeScript",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "JSON Schema",
             "GitHub Pages"
           ]
         },
@@ -13897,6 +13897,40 @@
       ],
       "repos": [
         {
+          "name": "sonic-playground",
+          "title": "Sonic Playground",
+          "url": "https://github.com/korczis/sonic-playground",
+          "work": true,
+          "slug": "sonic-playground",
+          "site": "https://korczis.github.io/sonic-playground/",
+          "category": "media",
+          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
+          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
+          "created": "2026-11-12",
+          "pushed": "2026-11-23",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "Python",
+            "JavaScript",
+            "HTML",
+            "Shell",
+            "CSS",
+            "Elixir",
+            "Zola",
+            "TypeScript",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "JSON Schema",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "algoglyph",
           "title": "algoglyph",
           "url": "https://github.com/korczis/algoglyph",
@@ -14046,40 +14080,6 @@
             "esbuild",
             "Playwright",
             "axe-core",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "sonic-playground",
-          "title": "Sonic Playground",
-          "url": "https://github.com/korczis/sonic-playground",
-          "work": true,
-          "slug": "sonic-playground",
-          "site": "https://korczis.github.io/sonic-playground/",
-          "category": "media",
-          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
-          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
-          "created": "2026-11-12",
-          "pushed": "2026-11-22",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "Python",
-            "JavaScript",
-            "HTML",
-            "Shell",
-            "CSS",
-            "Elixir",
-            "Zola",
-            "TypeScript",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "JSON Schema",
             "GitHub Pages"
           ]
         },
@@ -14347,6 +14347,40 @@
       ],
       "repos": [
         {
+          "name": "sonic-playground",
+          "title": "Sonic Playground",
+          "url": "https://github.com/korczis/sonic-playground",
+          "work": true,
+          "slug": "sonic-playground",
+          "site": "https://korczis.github.io/sonic-playground/",
+          "category": "media",
+          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
+          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
+          "created": "2026-11-12",
+          "pushed": "2026-11-23",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "Python",
+            "JavaScript",
+            "HTML",
+            "Shell",
+            "CSS",
+            "Elixir",
+            "Zola",
+            "TypeScript",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "JSON Schema",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "algoglyph",
           "title": "algoglyph",
           "url": "https://github.com/korczis/algoglyph",
@@ -14493,40 +14527,6 @@
             "esbuild",
             "Playwright",
             "axe-core",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "sonic-playground",
-          "title": "Sonic Playground",
-          "url": "https://github.com/korczis/sonic-playground",
-          "work": true,
-          "slug": "sonic-playground",
-          "site": "https://korczis.github.io/sonic-playground/",
-          "category": "media",
-          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
-          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
-          "created": "2026-11-12",
-          "pushed": "2026-11-22",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "Python",
-            "JavaScript",
-            "HTML",
-            "Shell",
-            "CSS",
-            "Elixir",
-            "Zola",
-            "TypeScript",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "JSON Schema",
             "GitHub Pages"
           ]
         },
@@ -15887,6 +15887,74 @@
       ],
       "repos": [
         {
+          "name": "prismatic-majordomus",
+          "title": "Majordomus",
+          "url": "https://github.com/korczis/prismatic-majordomus",
+          "work": true,
+          "slug": "prismatic-majordomus",
+          "site": "https://korczis.github.io/prismatic-majordomus/",
+          "category": "ai",
+          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+          "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
+          "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
+          "created": "2026-09-03",
+          "pushed": "2026-11-23",
+          "primary": false,
+          "share": null,
+          "via": [
+            "stack"
+          ],
+          "supervised": true,
+          "uses": [
+            "Rust",
+            "Shell",
+            "JavaScript",
+            "HTML",
+            "MCP",
+            "Zola",
+            "Claude Code",
+            "LLM",
+            "Mermaid",
+            "Git",
+            "YAML",
+            "GitHub Actions"
+          ]
+        },
+        {
+          "name": "sonic-playground",
+          "title": "Sonic Playground",
+          "url": "https://github.com/korczis/sonic-playground",
+          "work": true,
+          "slug": "sonic-playground",
+          "site": "https://korczis.github.io/sonic-playground/",
+          "category": "media",
+          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
+          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
+          "created": "2026-11-12",
+          "pushed": "2026-11-23",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "Python",
+            "JavaScript",
+            "HTML",
+            "Shell",
+            "CSS",
+            "Elixir",
+            "Zola",
+            "TypeScript",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "JSON Schema",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "kompendium-epistemicke-anihilace",
           "title": "Kompendium",
           "url": "https://github.com/korczis/kompendium-epistemicke-anihilace",
@@ -15964,74 +16032,6 @@
             "Node.js",
             "Playwright",
             "axe-core"
-          ]
-        },
-        {
-          "name": "prismatic-majordomus",
-          "title": "Majordomus",
-          "url": "https://github.com/korczis/prismatic-majordomus",
-          "work": true,
-          "slug": "prismatic-majordomus",
-          "site": "https://korczis.github.io/prismatic-majordomus/",
-          "category": "ai",
-          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
-          "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
-          "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
-          "created": "2026-09-03",
-          "pushed": "2026-11-22",
-          "primary": false,
-          "share": null,
-          "via": [
-            "stack"
-          ],
-          "supervised": true,
-          "uses": [
-            "Rust",
-            "Shell",
-            "JavaScript",
-            "HTML",
-            "MCP",
-            "Zola",
-            "Claude Code",
-            "LLM",
-            "Mermaid",
-            "Git",
-            "YAML",
-            "GitHub Actions"
-          ]
-        },
-        {
-          "name": "sonic-playground",
-          "title": "Sonic Playground",
-          "url": "https://github.com/korczis/sonic-playground",
-          "work": true,
-          "slug": "sonic-playground",
-          "site": "https://korczis.github.io/sonic-playground/",
-          "category": "media",
-          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
-          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
-          "created": "2026-11-12",
-          "pushed": "2026-11-22",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "Python",
-            "JavaScript",
-            "HTML",
-            "Shell",
-            "CSS",
-            "Elixir",
-            "Zola",
-            "TypeScript",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "JSON Schema",
-            "GitHub Pages"
           ]
         },
         {
@@ -16526,7 +16526,7 @@
           "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
           "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
           "created": "2026-09-03",
-          "pushed": "2026-11-22",
+          "pushed": "2026-11-23",
           "primary": false,
           "share": null,
           "via": [
@@ -17620,6 +17620,40 @@
       ],
       "repos": [
         {
+          "name": "sonic-playground",
+          "title": "Sonic Playground",
+          "url": "https://github.com/korczis/sonic-playground",
+          "work": true,
+          "slug": "sonic-playground",
+          "site": "https://korczis.github.io/sonic-playground/",
+          "category": "media",
+          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
+          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
+          "created": "2026-11-12",
+          "pushed": "2026-11-23",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "Python",
+            "JavaScript",
+            "HTML",
+            "Shell",
+            "CSS",
+            "Elixir",
+            "Zola",
+            "TypeScript",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "JSON Schema",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "algoglyph",
           "title": "algoglyph",
           "url": "https://github.com/korczis/algoglyph",
@@ -17765,40 +17799,6 @@
             "esbuild",
             "Playwright",
             "axe-core",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "sonic-playground",
-          "title": "Sonic Playground",
-          "url": "https://github.com/korczis/sonic-playground",
-          "work": true,
-          "slug": "sonic-playground",
-          "site": "https://korczis.github.io/sonic-playground/",
-          "category": "media",
-          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
-          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
-          "created": "2026-11-12",
-          "pushed": "2026-11-22",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "Python",
-            "JavaScript",
-            "HTML",
-            "Shell",
-            "CSS",
-            "Elixir",
-            "Zola",
-            "TypeScript",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "JSON Schema",
             "GitHub Pages"
           ]
         },
@@ -19509,7 +19509,7 @@
           "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
           "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
           "created": "2026-09-03",
-          "pushed": "2026-11-22",
+          "pushed": "2026-11-23",
           "primary": false,
           "share": null,
           "via": [
@@ -20404,7 +20404,7 @@
           "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
           "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
           "created": "2026-09-03",
-          "pushed": "2026-11-22",
+          "pushed": "2026-11-23",
           "primary": false,
           "share": null,
           "via": [
@@ -31729,7 +31729,7 @@
           "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
           "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
           "created": "2026-09-03",
-          "pushed": "2026-11-22",
+          "pushed": "2026-11-23",
           "primary": false,
           "share": null,
           "via": [
@@ -32497,7 +32497,7 @@
           "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
           "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
           "created": "2026-11-12",
-          "pushed": "2026-11-22",
+          "pushed": "2026-11-23",
           "primary": false,
           "share": null,
           "via": [
@@ -36724,7 +36724,7 @@
           "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
           "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
           "created": "2026-09-03",
-          "pushed": "2026-11-22",
+          "pushed": "2026-11-23",
           "primary": false,
           "share": null,
           "via": [
@@ -41653,7 +41653,7 @@
           "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
           "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
           "created": "2026-09-03",
-          "pushed": "2026-11-22",
+          "pushed": "2026-11-23",
           "primary": false,
           "share": null,
           "via": [
@@ -41824,7 +41824,7 @@
           "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
           "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
           "created": "2026-09-03",
-          "pushed": "2026-11-22",
+          "pushed": "2026-11-23",
           "primary": false,
           "share": null,
           "via": [

@@ -44,7 +44,7 @@ JavaScript jsem psal v 78 veřejných repozitářích, od roku 2013 do 2026; v 4
 
 K čemu to sloužilo: [Data a GIS](@/projects/data.cs.md) (26), [Nástroje](@/projects/tools.cs.md) (19), [Web](@/projects/web.cs.md) (11) a [Média a umění](@/projects/media.cs.md) (6).
 
-Naposledy: [algoglyph](@/work/algoglyph.cs.md): Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem; [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat; [korczis.github.io](@/work/korczis-github-io.cs.md).
+Naposledy: [Majordomus](@/work/prismatic-majordomus.cs.md): Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model; [Sonic Playground](@/work/sonic-playground.cs.md): Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita; [algoglyph](@/work/algoglyph.cs.md): Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.
 
 15 z těchto projektů běží jako živé weby.
 

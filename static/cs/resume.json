@@ -120,8 +120,8 @@
    "name": "JavaScript",
    "url": "https://korczis.github.io/cs/glossary/javascript/",
    "keywords": [
-    "oscilla",
     "korczis.github.io",
+    "oscilla",
     "majordomus-reel"
    ]
   },
@@ -539,6 +539,6 @@
  "meta": {
   "canonical": "https://korczis.github.io/cs/resume.json",
   "version": "v1.0.0",
-  "lastModified": "2026-11-22T22:49:03Z"
+  "lastModified": "2026-11-23T03:57:07Z"
  }
 }

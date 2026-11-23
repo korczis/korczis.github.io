@@ -3,8 +3,8 @@
 title = "Sonic Playground"
 description = "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita."
 template = "work.html"
-weight = 2
-updated = "2026-11-22T17:44:56Z"
+weight = 1
+updated = "2026-11-23T01:23:15Z"
 
 [taxonomies]
 tags = ["Média a umění", "Python", "JavaScript", "HTML"]
@@ -28,9 +28,9 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**Sonic Playground** je projekt z kategorie [Média a umění](@/projects/media.cs.md). Jeho kód je napsaný hlavně v jazyce [Python](@/glossary/python.cs.md) (45,9 %), dále [JavaScript](@/glossary/javascript.cs.md), [HTML](@/glossary/html.cs.md) a [Shell](@/glossary/shell.cs.md).
+**Sonic Playground** je projekt z kategorie [Média a umění](@/projects/media.cs.md). Jeho kód je napsaný hlavně v jazyce [Python](@/glossary/python.cs.md) (39,6 %), dále [JavaScript](@/glossary/javascript.cs.md), [HTML](@/glossary/html.cs.md) a [Shell](@/glossary/shell.cs.md).
 
-[Repozitář](@/glossary/repository.cs.md) vznikl 12. listopadu 2026; poslední [commit](@/glossary/commit.cs.md) je z 22. listopadu 2026. Zní „Merge branch 'feature/yb-wave-4': the last 29 songs of Your Top Songs 2025; every yearbook complete“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+[Repozitář](@/glossary/repository.cs.md) vznikl 12. listopadu 2026; poslední [commit](@/glossary/commit.cs.md) je z 23. listopadu 2026. Zní „fix(smoke): the same-page probe keeps the page's own query“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 
 Je postavený na [Elixir](@/glossary/elixir.cs.md).
 

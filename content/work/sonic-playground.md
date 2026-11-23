@@ -3,8 +3,8 @@
 title = "Sonic Playground"
 description = "Music that moves you, not algorithmic noise. Active in the last 12 months; media and art."
 template = "work.html"
-weight = 2
-updated = "2026-11-22T17:44:56Z"
+weight = 1
+updated = "2026-11-23T01:23:15Z"
 
 [taxonomies]
 tags = ["Media and art", "Python", "JavaScript", "HTML"]
@@ -28,9 +28,9 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**Sonic Playground** is a project in [Media and art](@/projects/media.md). Its code is written mainly in [Python](@/glossary/python.md) (45.9 %), with [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md) and [Shell](@/glossary/shell.md).
+**Sonic Playground** is a project in [Media and art](@/projects/media.md). Its code is written mainly in [Python](@/glossary/python.md) (39.6 %), with [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md) and [Shell](@/glossary/shell.md).
 
-The [repository](@/glossary/repository.md) was created on 12 November 2026; its latest [commit](@/glossary/commit.md) is from 22 November 2026. It reads “Merge branch 'feature/yb-wave-4': the last 29 songs of Your Top Songs 2025; every yearbook complete”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created on 12 November 2026; its latest [commit](@/glossary/commit.md) is from 23 November 2026. It reads “fix(smoke): the same-page probe keeps the page's own query”. That places it among the projects active in the last 12 months.
 
 It is built with [Elixir](@/glossary/elixir.md).
 

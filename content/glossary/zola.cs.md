@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Generátor statických webů v jedné binárce v Rustu: dovnitř Markdown a šablony, ven celý vícejazyčný web."
 aliases = []
 reference = { title = "getzola.org", url = "https://www.getzola.org/documentation/getting-started/overview/" }
-pages = ["_index.cs.md", "projects/ai.cs.md", "projects/knowledge.cs.md", "services/interactive-data-products.cs.md", "skills/ownership-analysis.cs.md", "skills/policy-as-code.cs.md", "stack.cs.md", "work/astronomists.cs.md", "work/catharsis-as-a-service.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/korczis-github-io.cs.md", "work/korczis-gitlab-io.cs.md", "work/prismatic-blog.cs.md", "work/prismatic-majordomus.cs.md", "work/sonic-playground.cs.md", "work/u-tygra.cs.md", "work/vomaste-cz.cs.md"]
-related = ["repository", "flowbite-pro", "github-pages", "html", "tailwind-css", "commit", "javascript", "open-source"]
+pages = ["_index.cs.md", "projects/ai.cs.md", "projects/knowledge.cs.md", "services/interactive-data-products.cs.md", "skills/policy-as-code.cs.md", "stack.cs.md", "work/astronomists.cs.md", "work/catharsis-as-a-service.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/korczis-github-io.cs.md", "work/korczis-gitlab-io.cs.md", "work/prismatic-blog.cs.md", "work/prismatic-majordomus.cs.md", "work/sonic-playground.cs.md", "work/u-tygra.cs.md", "work/vomaste-cz.cs.md"]
+related = ["repository", "commit", "flowbite-pro", "github-pages", "html", "tailwind-css", "javascript", "open-source"]
 og_title = "Zola: slovník"
 og_image = "og/cs-glossary-zola.png"
 keywords = ["Zola", "Technologie", "Slovník", "Tomáš Korčák"]
@@ -44,7 +44,7 @@ Zola je součástí 10 mých veřejných repozitářů, od roku 2024 do 2026.
 
 K čemu to sloužilo: [Média a umění](@/projects/media.cs.md) (3), [Nástroje](@/projects/tools.cs.md) (3), [Web](@/projects/web.cs.md) (2) a [Inženýrství AI](@/projects/ai.cs.md) (1).
 
-Naposledy: [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat; [korczis.github.io](@/work/korczis-github-io.cs.md); [Majordomus](@/work/prismatic-majordomus.cs.md): Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.
+Naposledy: [Majordomus](@/work/prismatic-majordomus.cs.md): Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model; [Sonic Playground](@/work/sonic-playground.cs.md): Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita; [Kompendium](@/work/kompendium-epistemicke-anihilace.cs.md): Kniha, web a wiki: mechanismy, detekční signatury, obrana a zotavení, propojené do grafu, který můžete prozkoumat.
 
 8 z těchto projektů běží jako živé weby.
 

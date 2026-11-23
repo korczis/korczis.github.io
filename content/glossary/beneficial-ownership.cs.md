@@ -17,7 +17,7 @@ definition = "Fyzická osoba, která firmu v konečném důsledku vlastní nebo 
 aliases = []
 reference = { title = "FATF: beneficial ownership", url = "https://www.fatf-gafi.org/en/topics/beneficial-ownership.html" }
 pages = ["services/_index.cs.md", "services/compliance-screening.cs.md", "services/digital-investigation.cs.md", "services/due-diligence.cs.md", "services/m-and-a.cs.md", "skills/_index.cs.md", "skills/ownership-analysis.cs.md"]
-related = ["flowbite-pro", "html", "javascript", "python", "alpine-js", "dockerfile", "service", "shell"]
+related = ["flowbite-pro", "html", "javascript", "alpine-js", "dockerfile", "python", "service", "elixir"]
 og_title = "Skutečné vlastnictví: slovník"
 og_image = "og/cs-glossary-beneficial-ownership.png"
 keywords = ["Skutečné vlastnictví", "Beneficial ownership", "Koncept", "Slovník", "Tomáš Korčák"]

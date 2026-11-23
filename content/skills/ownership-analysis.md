@@ -13,7 +13,7 @@ skill = "ownership-analysis"
 og_title = "Ownership and link analysis: skills"
 og_image = "og/skill-ownership-analysis.png"
 schema = "skill"
-terms = ["skill", "beneficial-ownership", "elixir", "flowbite-pro", "github-pages", "html", "javascript", "python", "shell", "tailwind-css", "zola", "alpine-js"]
+terms = ["skill", "beneficial-ownership", "alpine-js", "apache-echarts", "cytoscape-js", "elixir", "flowbite-pro", "github-pages", "html", "javascript", "majordomus", "p5-js"]
 keywords = ["Ownership and link analysis", "Corporate and counterparty due diligence", "M&A pre-deal screening and analysis", "Digital investigation and OSINT dossiers", "Sanctions, PEP and beneficial-ownership screening", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -31,8 +31,8 @@ The concept behind it: [Beneficial ownership](@/glossary/beneficial-ownership.md
 
 Services that draw on it: [Corporate and counterparty due diligence](@/services/due-diligence.md), [M&A pre-deal screening and analysis](@/services/m-and-a.md), [Digital investigation and OSINT dossiers](@/services/digital-investigation.md) and [Sanctions, PEP and beneficial-ownership screening](@/services/compliance-screening.md).
 
-Practised with: [Elixir](@/glossary/elixir.md), [Flowbite Pro](@/glossary/flowbite-pro.md), [GitHub Pages](@/glossary/github-pages.md), [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md), [Python](@/glossary/python.md), [Shell](@/glossary/shell.md) and [Tailwind CSS](@/glossary/tailwind-css.md).
+Practised with: [Alpine.js](@/glossary/alpine-js.md), [Apache ECharts](@/glossary/apache-echarts.md), [Cytoscape.js](@/glossary/cytoscape-js.md), [Elixir](@/glossary/elixir.md), [Flowbite Pro](@/glossary/flowbite-pro.md), [GitHub Pages](@/glossary/github-pages.md), [HTML](@/glossary/html.md) and [JavaScript](@/glossary/javascript.md).
 
-Public work whose own words show it: [sonic-playground](https://github.com/korczis/sonic-playground) and [kompendium-epistemicke-anihilace](https://github.com/korczis/kompendium-epistemicke-anihilace).
+Public work whose own words show it: [kompendium-epistemicke-anihilace](https://github.com/korczis/kompendium-epistemicke-anihilace).
 
 How to read this page: the definition is the experience vocabulary's; the services, technologies, public [repositories](@/glossary/repository.md) and use cases are derived and each links to its page.

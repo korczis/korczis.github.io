@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Anthropic's API to the Claude models: messages, tool use and agents that read, reason and act."
 aliases = ["claude-code", "Claude"]
 reference = { title = "Claude API documentation", url = "https://docs.anthropic.com/" }
-pages = ["services/ai-engineering-governance.md", "services/compliance-screening.md", "services/continuous-monitoring.md", "services/decision-support-ai.md", "services/digital-forensics.md", "services/reputation-intelligence.md", "skills/audit-trail.md", "skills/data-integration.md", "skills/data-room.md", "skills/document-extraction.md", "skills/due-diligence.md", "skills/entity-resolution.md", "skills/insolvency-monitoring.md", "skills/knowledge-graph.md", "skills/llm-agents.md", "skills/m-and-a-screening.md", "skills/market-intelligence.md", "skills/media-forensics.md", "skills/orchestration.md", "skills/risk-scoring.md", "_index.md"]
-related = ["html", "javascript", "alpine-js", "dockerfile", "flowbite-pro", "skill", "fastapi", "github-actions"]
+pages = ["services/ai-engineering-governance.md", "services/compliance-screening.md", "services/continuous-monitoring.md", "services/decision-support-ai.md", "services/digital-forensics.md", "services/m-and-a.md", "services/reputation-intelligence.md", "skills/audit-trail.md", "skills/data-integration.md", "skills/data-room.md", "skills/document-extraction.md", "skills/due-diligence.md", "skills/entity-resolution.md", "skills/insolvency-monitoring.md", "skills/knowledge-graph.md", "skills/llm-agents.md", "skills/m-and-a-screening.md", "skills/market-intelligence.md", "skills/media-forensics.md", "skills/orchestration.md", "skills/risk-scoring.md", "_index.md"]
+related = ["html", "javascript", "alpine-js", "dockerfile", "flowbite-pro", "fastapi", "skill", "python"]
 og_title = "Claude API: glossary"
 og_image = "og/glossary-claude-api.png"
 keywords = ["Claude API", "Technology", "Glossary", "Tomas Korcak"]

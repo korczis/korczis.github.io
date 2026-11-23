@@ -14,7 +14,7 @@ icon = "briefcase"
 og_title = "M&A pre-deal screening and analysis"
 og_image = "og/service-m-and-a.png"
 schema = "service"
-terms = ["service", "elixir", "phoenix", "postgresql", "monte-carlo-simulation", "mergers-and-acquisitions", "due-diligence", "financial-statement-analysis", "beneficial-ownership", "market-intelligence", "contestability", "risk-assessment", "virtual-data-room", "decision-support-system", "javascript", "html", "python", "flowbite-pro", "alpine-js", "dockerfile", "fastapi", "tailwind-css", "playwright", "shell"]
+terms = ["service", "elixir", "phoenix", "postgresql", "monte-carlo-simulation", "mergers-and-acquisitions", "due-diligence", "financial-statement-analysis", "beneficial-ownership", "market-intelligence", "contestability", "risk-assessment", "virtual-data-room", "decision-support-system", "javascript", "html", "python", "flowbite-pro", "alpine-js", "dockerfile", "fastapi", "playwright", "tailwind-css", "claude-api"]
 keywords = ["M&A pre-deal screening and analysis", "M&A screening", "Due diligence", "Financial statement analysis", "Ownership and link analysis", "Market intelligence", "Contestable decisions", "Risk scoring", "Data room", "Decision support", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -34,9 +34,9 @@ It draws on these skills: [M&A screening](@/skills/m-and-a-screening.md), [Due d
 
 It is built with [Elixir](@/glossary/elixir.md), [Phoenix](@/glossary/phoenix.md), [PostgreSQL](@/glossary/postgresql.md) and [Monte Carlo simulation](@/glossary/monte-carlo-simulation.md).
 
-The technologies behind it, measured from the work that shows those skills: [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md), [Python](@/glossary/python.md), [Flowbite Pro](@/glossary/flowbite-pro.md), [Alpine.js](@/glossary/alpine-js.md), [Dockerfile](@/glossary/dockerfile.md), [FastAPI](@/glossary/fastapi.md) and [Tailwind CSS](@/glossary/tailwind-css.md).
+The technologies behind it, measured from the work that shows those skills: [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md), [Python](@/glossary/python.md), [Flowbite Pro](@/glossary/flowbite-pro.md), [Alpine.js](@/glossary/alpine-js.md), [Dockerfile](@/glossary/dockerfile.md), [FastAPI](@/glossary/fastapi.md) and [Playwright](@/glossary/playwright.md).
 
-8 public repositories show its skills (8 by their own words).
+7 public repositories show its skills (7 by their own words).
 
 It was delivered in client work under confidentiality agreements, in Real-estate developer and Financial and investment group, as Architect, Lead engineer, AI engineer, Data engineer, Investigator and Advisor; the use cases describe the principle and the intent, never a client, person, date or number.
 

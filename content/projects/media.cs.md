@@ -4,7 +4,7 @@ title = "Média a umění"
 description = "Díla z kódu: promo video renderované od začátku do konce, hudební blog a pár digitálních artefaktů."
 template = "category.html"
 weight = 5
-updated = "2026-11-22T18:29:35Z"
+updated = "2026-11-23T01:38:54Z"
 
 [taxonomies]
 tags = ["Média a umění", "Majordomus reel", "Catharsis as a Service", "Sonic Playground", "openttd-prismatic-bridge"]
