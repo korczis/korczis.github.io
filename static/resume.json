@@ -165,9 +165,9 @@
    "name": "Python",
    "url": "https://korczis.github.io/glossary/python/",
    "keywords": [
+    "astronomists",
     "sonic-playground",
-    "openttd-prismatic-bridge",
-    "data-atlas"
+    "openttd-prismatic-bridge"
    ]
   },
   {
@@ -539,6 +539,6 @@
  "meta": {
   "canonical": "https://korczis.github.io/resume.json",
   "version": "v1.0.0",
-  "lastModified": "2026-11-23T15:08:08Z"
+  "lastModified": "2026-11-24T02:32:02Z"
  }
 }

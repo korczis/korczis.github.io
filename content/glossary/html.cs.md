@@ -44,7 +44,7 @@ HTML jsem psal v 38 veřejných repozitářích, od roku 2014 do 2026; v 5 z nic
 
 K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (9), [Data a GIS](@/projects/data.cs.md) (8), [Web](@/projects/web.cs.md) (8) a [Média a umění](@/projects/media.cs.md) (5).
 
-Naposledy: [korczis.github.io](@/work/korczis-github-io.cs.md); [Majordomus](@/work/prismatic-majordomus.cs.md): Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model; [Sonic Playground](@/work/sonic-playground.cs.md): Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.
+Naposledy: [astronomists](@/work/astronomists.cs.md); [Catharsis as a Service](@/work/catharsis-as-a-service.cs.md): Digitální artefakt Sig Nihl / Prismatic; [korczis.github.io](@/work/korczis-github-io.cs.md).
 
 16 z těchto projektů běží jako živé weby.
 

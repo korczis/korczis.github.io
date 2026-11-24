@@ -1,6 +1,6 @@
 {
  "schema": "korczis-hub-recent/v2",
- "generated_at": "2026-11-23T15:08:08Z",
+ "generated_at": "2026-11-24T02:32:03Z",
  "window_days": 1461,
  "periods": [
   {
@@ -18,7 +18,7 @@
  ],
  "archive": 162,
  "rule": "every original repository of data/index.json; a repository is recent when its default branch has a commit in the window, archive otherwise; host activity dates are ignored",
- "asked": 2,
+ "asked": 3,
  "repos": [
   {
    "name": "korczis.github.io",
@@ -27,10 +27,15 @@
    "category": "web",
    "language": "JavaScript",
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-23T06:52:42Z",
-   "last_commit": "2026-11-23T03:57:37Z",
+   "pushed_at": "2026-11-23T15:09:44Z",
+   "last_commit": "2026-11-23T15:08:46Z",
    "last_message": "chore(data): refresh the snapshot and the index",
    "commits": [
+    {
+     "at": "2026-11-23T15:08:46Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/2e61e8e9b8e032b7dd06c30a361f4df6a1039631"
+    },
     {
      "at": "2026-11-23T03:57:37Z",
      "message": "chore(data): refresh the snapshot and the index",
@@ -175,11 +180,6 @@
      "at": "2026-11-19T12:22:36Z",
      "message": "chore(merge): bring the data refresh into the stack branch",
      "url": "https://github.com/korczis/korczis.github.io/commit/7b7573b395c5a5add719967b0f60ce67bb86ee75"
-    },
-    {
-     "at": "2026-11-19T12:01:31Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/6689c0457e546a260f2b966c175f45d9cec2e432"
     }
    ],
    "languages": [
@@ -1969,7 +1969,7 @@
    "category": "media",
    "language": "HTML",
    "created_at": "2026-09-14T09:54:06Z",
-   "pushed_at": "2026-11-16T20:03:20Z",
+   "pushed_at": "2026-11-23T19:36:26Z",
    "last_commit": "2026-11-16T19:15:38Z",
    "last_message": "Merge pull request #3 from korczis/dependabot/npm_and_yarn/frontend-aae4353420",
    "commits": [
@@ -2621,7 +2621,7 @@
    "category": "tools",
    "language": "Python",
    "created_at": "2026-06-15T09:04:31Z",
-   "pushed_at": "2026-11-16T15:54:22Z",
+   "pushed_at": "2026-11-23T18:17:39Z",
    "last_commit": "2026-07-20T17:36:39Z",
    "last_message": "docs: correct and expand CLAUDE.md for current build pipeline",
    "commits": [

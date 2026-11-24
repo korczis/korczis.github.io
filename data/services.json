@@ -1009,7 +1009,7 @@
           "description": "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact.",
           "category": "media",
           "site": "https://korczis.github.io/catharsis-as-a-service/",
-          "pushed": "2026-11-16",
+          "pushed": "2026-11-23",
           "skill": "audit-trail"
         },
         {
@@ -2218,6 +2218,19 @@
           "skill": "llm-agents"
         },
         {
+          "name": "catharsis-as-a-service",
+          "title": "Catharsis as a Service",
+          "how": "words",
+          "score": 2.6,
+          "slug": "catharsis-as-a-service",
+          "url": "https://github.com/korczis/catharsis-as-a-service",
+          "description": "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact.",
+          "category": "media",
+          "site": "https://korczis.github.io/catharsis-as-a-service/",
+          "pushed": "2026-11-23",
+          "skill": "audit-trail"
+        },
+        {
           "name": "openttd-prismatic-bridge",
           "title": "openttd-prismatic-bridge",
           "how": "words",
@@ -2231,17 +2244,17 @@
           "skill": "decision-support"
         },
         {
-          "name": "catharsis-as-a-service",
-          "title": "Catharsis as a Service",
+          "name": "astronomists",
+          "title": "astronomists",
           "how": "words",
-          "score": 2.6,
-          "slug": "catharsis-as-a-service",
-          "url": "https://github.com/korczis/catharsis-as-a-service",
-          "description": "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact.",
-          "category": "media",
-          "site": "https://korczis.github.io/catharsis-as-a-service/",
-          "pushed": "2026-11-16",
-          "skill": "audit-trail"
+          "score": 2.3,
+          "slug": "astronomists",
+          "url": "https://github.com/korczis/astronomists",
+          "description": null,
+          "category": "tools",
+          "site": "https://korczis.github.io/astronomists/",
+          "pushed": "2026-11-23",
+          "skill": "llm-agents"
         },
         {
           "name": "oscilla",
@@ -2255,19 +2268,6 @@
           "site": "https://korczis.github.io/oscilla/",
           "pushed": "2026-11-22",
           "skill": "ai-transformation"
-        },
-        {
-          "name": "astronomists",
-          "title": "astronomists",
-          "how": "words",
-          "score": 2.3,
-          "slug": "astronomists",
-          "url": "https://github.com/korczis/astronomists",
-          "description": null,
-          "category": "tools",
-          "site": "https://korczis.github.io/astronomists/",
-          "pushed": "2026-11-16",
-          "skill": "llm-agents"
         },
         {
           "name": "crisis-map",
@@ -2593,8 +2593,21 @@
           "description": "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact.",
           "category": "media",
           "site": "https://korczis.github.io/catharsis-as-a-service/",
-          "pushed": "2026-11-16",
+          "pushed": "2026-11-23",
           "skill": "audit-trail"
+        },
+        {
+          "name": "astronomists",
+          "title": "astronomists",
+          "how": "words",
+          "score": 2.3,
+          "slug": "astronomists",
+          "url": "https://github.com/korczis/astronomists",
+          "description": null,
+          "category": "tools",
+          "site": "https://korczis.github.io/astronomists/",
+          "pushed": "2026-11-23",
+          "skill": "llm-agents"
         },
         {
           "name": "oscilla",
@@ -2608,19 +2621,6 @@
           "site": "https://korczis.github.io/oscilla/",
           "pushed": "2026-11-22",
           "skill": "ai-transformation"
-        },
-        {
-          "name": "astronomists",
-          "title": "astronomists",
-          "how": "words",
-          "score": 2.3,
-          "slug": "astronomists",
-          "url": "https://github.com/korczis/astronomists",
-          "description": null,
-          "category": "tools",
-          "site": "https://korczis.github.io/astronomists/",
-          "pushed": "2026-11-16",
-          "skill": "llm-agents"
         },
         {
           "name": "server-archlinux",
@@ -3065,7 +3065,7 @@
           "description": null,
           "category": "tools",
           "site": "https://korczis.github.io/astronomists/",
-          "pushed": "2026-11-16",
+          "pushed": "2026-11-23",
           "skill": "interactive-visualisation"
         },
         {
@@ -4818,7 +4818,7 @@
           "description": "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact.",
           "category": "media",
           "site": "https://korczis.github.io/catharsis-as-a-service/",
-          "pushed": "2026-11-16"
+          "pushed": "2026-11-23"
         },
         {
           "name": "llm",
@@ -5148,7 +5148,7 @@
           "description": null,
           "category": "tools",
           "site": "https://korczis.github.io/astronomists/",
-          "pushed": "2026-11-16"
+          "pushed": "2026-11-23"
         }
       ],
       "engagements": [
@@ -6476,7 +6476,7 @@
           "description": "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact.",
           "category": "media",
           "site": "https://korczis.github.io/catharsis-as-a-service/",
-          "pushed": "2026-11-16"
+          "pushed": "2026-11-23"
         },
         {
           "name": "crisis-map",
@@ -6640,7 +6640,7 @@
           "description": null,
           "category": "tools",
           "site": "https://korczis.github.io/astronomists/",
-          "pushed": "2026-11-16"
+          "pushed": "2026-11-23"
         }
       ],
       "engagements": [],

@@ -44,7 +44,7 @@ I have written Python in 19 public repositories, from 2014 to 2026; in 7 of them
 
 What it was for: [Systems and infrastructure](@/projects/systems.md) (5), [Media and art](@/projects/media.md) (4), [Tools](@/projects/tools.md) (4) and [Data and GIS](@/projects/data.md) (3).
 
-Most recently: [Sonic Playground](@/work/sonic-playground.md): A hand-picked music blog built with Phoenix and Elixir on the Kita theme; [Kompendium](@/work/kompendium-epistemicke-anihilace.md): A book, a website and a wiki: mechanisms, detection signatures, defence and recovery, cross-linked into a graph you can explore; [Majordomus reel](@/work/majordomus-reel.md): Voice, frames, music and sound, all generated and versioned like software.
+Most recently: [astronomists](@/work/astronomists.md); [Catharsis as a Service](@/work/catharsis-as-a-service.md): A Sig Nihl / Prismatic digital artifact; [Sonic Playground](@/work/sonic-playground.md): A hand-picked music blog built with Phoenix and Elixir on the Kita theme.
 
 8 of these projects run as live sites.
 

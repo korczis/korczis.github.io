@@ -44,7 +44,7 @@ GitHub Pages je součástí 15 mých veřejných repozitářů, od roku 2019 do 
 
 K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (5), [Média a umění](@/projects/media.cs.md) (3), [Věda a vizualizace](@/projects/science.cs.md) (2) a [Web](@/projects/web.cs.md) (2).
 
-Naposledy: [korczis.github.io](@/work/korczis-github-io.cs.md); [Sonic Playground](@/work/sonic-playground.cs.md): Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita; [algoglyph](@/work/algoglyph.cs.md): Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.
+Naposledy: [astronomists](@/work/astronomists.cs.md); [Catharsis as a Service](@/work/catharsis-as-a-service.cs.md): Digitální artefakt Sig Nihl / Prismatic; [korczis.github.io](@/work/korczis-github-io.cs.md).
 
 13 z těchto projektů běží jako živé weby.
 

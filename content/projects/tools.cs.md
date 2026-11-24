@@ -4,7 +4,7 @@ title = "Nástroje"
 description = "Malé, ostré nástroje pro příkazovou řádku a indexy: převody dat, CSV do SQL, hledání v gistech."
 template = "category.html"
 weight = 11
-updated = "2026-11-16T15:54:22Z"
+updated = "2026-11-23T18:17:39Z"
 
 [taxonomies]
 tags = ["Nástroje", "Gists search", "json2csv", "csv2psql", "astronomists"]

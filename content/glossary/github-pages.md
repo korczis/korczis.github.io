@@ -44,7 +44,7 @@ GitHub Pages is part of 15 of my public repositories, from 2019 to 2026.
 
 What it was for: [Tools](@/projects/tools.md) (5), [Media and art](@/projects/media.md) (3), [Science and visualisation](@/projects/science.md) (2) and [Web](@/projects/web.md) (2).
 
-Most recently: [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus; [Sonic Playground](@/work/sonic-playground.md): A hand-picked music blog built with Phoenix and Elixir on the Kita theme; [algoglyph](@/work/algoglyph.md): Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core.
+Most recently: [astronomists](@/work/astronomists.md); [Catharsis as a Service](@/work/catharsis-as-a-service.md): A Sig Nihl / Prismatic digital artifact; [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.
 
 13 of these projects run as live sites.
 

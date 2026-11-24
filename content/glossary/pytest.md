@@ -44,7 +44,7 @@ pytest is part of 2 of my public repositories, from 2026 to 2026.
 
 What it was for: [Media and art](@/projects/media.md) (2).
 
-Most recently: [openttd-prismatic-bridge](@/work/openttd-prismatic-bridge.md): REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform; [Catharsis as a Service](@/work/catharsis-as-a-service.md): A Sig Nihl / Prismatic digital artifact.
+Most recently: [Catharsis as a Service](@/work/catharsis-as-a-service.md): A Sig Nihl / Prismatic digital artifact; [openttd-prismatic-bridge](@/work/openttd-prismatic-bridge.md): REST/Swagger bridge onto OpenTTD's Admin Network, for prismatic-platform.
 
 1 of these projects runs as a live site.
 

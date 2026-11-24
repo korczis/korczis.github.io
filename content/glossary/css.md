@@ -44,7 +44,7 @@ I have written CSS in 27 public repositories, from 2014 to 2026; in 4 of them it
 
 What it was for: [Web](@/projects/web.md) (10), [Tools](@/projects/tools.md) (7), [Data and GIS](@/projects/data.md) (5) and [Media and art](@/projects/media.md) (3).
 
-Most recently: [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus; [Sonic Playground](@/work/sonic-playground.md): A hand-picked music blog built with Phoenix and Elixir on the Kita theme; [Oscilla](@/work/oscilla.md): Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.
+Most recently: [astronomists](@/work/astronomists.md); [Catharsis as a Service](@/work/catharsis-as-a-service.md): A Sig Nihl / Prismatic digital artifact; [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.
 
 8 of these projects run as live sites.
 

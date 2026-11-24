@@ -980,6 +980,76 @@
       ],
       "repos": [
         {
+          "name": "astronomists",
+          "title": "astronomists",
+          "url": "https://github.com/korczis/astronomists",
+          "work": true,
+          "slug": "astronomists",
+          "site": "https://korczis.github.io/astronomists/",
+          "category": "tools",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2026-06-15",
+          "pushed": "2026-11-23",
+          "primary": false,
+          "share": 2.4,
+          "via": [
+            "code"
+          ],
+          "supervised": false,
+          "uses": [
+            "Python",
+            "HTML",
+            "TypeScript",
+            "Shell",
+            "JavaScript",
+            "CSS",
+            "Zola",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "Alpine.js",
+            "Playwright",
+            "GitHub Pages"
+          ]
+        },
+        {
+          "name": "catharsis-as-a-service",
+          "title": "Catharsis as a Service",
+          "url": "https://github.com/korczis/catharsis-as-a-service",
+          "work": true,
+          "slug": "catharsis-as-a-service",
+          "site": "https://korczis.github.io/catharsis-as-a-service/",
+          "category": "media",
+          "description": "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact.",
+          "summary": "A Sig Nihl / Prismatic digital artifact.",
+          "summary_cs": "Digitální artefakt Sig Nihl / Prismatic.",
+          "created": "2026-09-14",
+          "pushed": "2026-11-23",
+          "primary": false,
+          "share": 19.3,
+          "via": [
+            "code",
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "HTML",
+            "Python",
+            "JavaScript",
+            "CSS",
+            "Rust",
+            "Shell",
+            "Zola",
+            "Tailwind CSS",
+            "Alpine.js",
+            "Flowbite Pro",
+            "pytest",
+            "Playwright",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "url": "https://github.com/korczis/korczis.github.io",
@@ -1270,76 +1340,6 @@
             "Flowbite Pro",
             "Leaflet",
             "pytest"
-          ]
-        },
-        {
-          "name": "astronomists",
-          "title": "astronomists",
-          "url": "https://github.com/korczis/astronomists",
-          "work": true,
-          "slug": "astronomists",
-          "site": "https://korczis.github.io/astronomists/",
-          "category": "tools",
-          "description": null,
-          "summary": null,
-          "summary_cs": null,
-          "created": "2026-06-15",
-          "pushed": "2026-11-16",
-          "primary": false,
-          "share": 2.4,
-          "via": [
-            "code"
-          ],
-          "supervised": false,
-          "uses": [
-            "Python",
-            "HTML",
-            "TypeScript",
-            "Shell",
-            "JavaScript",
-            "CSS",
-            "Zola",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "Alpine.js",
-            "Playwright",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "catharsis-as-a-service",
-          "title": "Catharsis as a Service",
-          "url": "https://github.com/korczis/catharsis-as-a-service",
-          "work": true,
-          "slug": "catharsis-as-a-service",
-          "site": "https://korczis.github.io/catharsis-as-a-service/",
-          "category": "media",
-          "description": "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact.",
-          "summary": "A Sig Nihl / Prismatic digital artifact.",
-          "summary_cs": "Digitální artefakt Sig Nihl / Prismatic.",
-          "created": "2026-09-14",
-          "pushed": "2026-11-16",
-          "primary": false,
-          "share": 19.3,
-          "via": [
-            "code",
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "HTML",
-            "Python",
-            "JavaScript",
-            "CSS",
-            "Rust",
-            "Shell",
-            "Zola",
-            "Tailwind CSS",
-            "Alpine.js",
-            "Flowbite Pro",
-            "pytest",
-            "Playwright",
-            "GitHub Pages"
           ]
         },
         {
@@ -3444,6 +3444,41 @@
       ],
       "repos": [
         {
+          "name": "astronomists",
+          "title": "astronomists",
+          "url": "https://github.com/korczis/astronomists",
+          "work": true,
+          "slug": "astronomists",
+          "site": "https://korczis.github.io/astronomists/",
+          "category": "tools",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2026-06-15",
+          "pushed": "2026-11-23",
+          "primary": false,
+          "share": 14.8,
+          "via": [
+            "code",
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Python",
+            "HTML",
+            "TypeScript",
+            "Shell",
+            "JavaScript",
+            "CSS",
+            "Zola",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "Alpine.js",
+            "Playwright",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "sonic-playground",
           "title": "Sonic Playground",
           "url": "https://github.com/korczis/sonic-playground",
@@ -3515,41 +3550,6 @@
             "Vite",
             "Vitest",
             "axe-core",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "astronomists",
-          "title": "astronomists",
-          "url": "https://github.com/korczis/astronomists",
-          "work": true,
-          "slug": "astronomists",
-          "site": "https://korczis.github.io/astronomists/",
-          "category": "tools",
-          "description": null,
-          "summary": null,
-          "summary_cs": null,
-          "created": "2026-06-15",
-          "pushed": "2026-11-16",
-          "primary": false,
-          "share": 14.8,
-          "via": [
-            "code",
-            "files"
-          ],
-          "supervised": false,
-          "uses": [
-            "Python",
-            "HTML",
-            "TypeScript",
-            "Shell",
-            "JavaScript",
-            "CSS",
-            "Zola",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "Alpine.js",
-            "Playwright",
             "GitHub Pages"
           ]
         },
@@ -6324,6 +6324,42 @@
       ],
       "repos": [
         {
+          "name": "catharsis-as-a-service",
+          "title": "Catharsis as a Service",
+          "url": "https://github.com/korczis/catharsis-as-a-service",
+          "work": true,
+          "slug": "catharsis-as-a-service",
+          "site": "https://korczis.github.io/catharsis-as-a-service/",
+          "category": "media",
+          "description": "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact.",
+          "summary": "A Sig Nihl / Prismatic digital artifact.",
+          "summary_cs": "Digitální artefakt Sig Nihl / Prismatic.",
+          "created": "2026-09-14",
+          "pushed": "2026-11-23",
+          "primary": false,
+          "share": 5.2,
+          "via": [
+            "code",
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "HTML",
+            "Python",
+            "JavaScript",
+            "CSS",
+            "Rust",
+            "Shell",
+            "Zola",
+            "Tailwind CSS",
+            "Alpine.js",
+            "Flowbite Pro",
+            "pytest",
+            "Playwright",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "prismatic-majordomus",
           "title": "Majordomus",
           "url": "https://github.com/korczis/prismatic-majordomus",
@@ -6435,42 +6471,6 @@
             "Tailwind CSS",
             "p5.js",
             "WebAssembly",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "catharsis-as-a-service",
-          "title": "Catharsis as a Service",
-          "url": "https://github.com/korczis/catharsis-as-a-service",
-          "work": true,
-          "slug": "catharsis-as-a-service",
-          "site": "https://korczis.github.io/catharsis-as-a-service/",
-          "category": "media",
-          "description": "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact.",
-          "summary": "A Sig Nihl / Prismatic digital artifact.",
-          "summary_cs": "Digitální artefakt Sig Nihl / Prismatic.",
-          "created": "2026-09-14",
-          "pushed": "2026-11-16",
-          "primary": false,
-          "share": 5.2,
-          "via": [
-            "code",
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "HTML",
-            "Python",
-            "JavaScript",
-            "CSS",
-            "Rust",
-            "Shell",
-            "Zola",
-            "Tailwind CSS",
-            "Alpine.js",
-            "Flowbite Pro",
-            "pytest",
-            "Playwright",
             "GitHub Pages"
           ]
         },
@@ -7419,6 +7419,78 @@
       ],
       "repos": [
         {
+          "name": "astronomists",
+          "title": "astronomists",
+          "url": "https://github.com/korczis/astronomists",
+          "work": true,
+          "slug": "astronomists",
+          "site": "https://korczis.github.io/astronomists/",
+          "category": "tools",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2026-06-15",
+          "pushed": "2026-11-23",
+          "primary": true,
+          "share": 41.1,
+          "via": [
+            "primary",
+            "code",
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Python",
+            "HTML",
+            "TypeScript",
+            "Shell",
+            "JavaScript",
+            "CSS",
+            "Zola",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "Alpine.js",
+            "Playwright",
+            "GitHub Pages"
+          ]
+        },
+        {
+          "name": "catharsis-as-a-service",
+          "title": "Catharsis as a Service",
+          "url": "https://github.com/korczis/catharsis-as-a-service",
+          "work": true,
+          "slug": "catharsis-as-a-service",
+          "site": "https://korczis.github.io/catharsis-as-a-service/",
+          "category": "media",
+          "description": "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact.",
+          "summary": "A Sig Nihl / Prismatic digital artifact.",
+          "summary_cs": "Digitální artefakt Sig Nihl / Prismatic.",
+          "created": "2026-09-14",
+          "pushed": "2026-11-23",
+          "primary": false,
+          "share": 27.7,
+          "via": [
+            "code",
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "HTML",
+            "Python",
+            "JavaScript",
+            "CSS",
+            "Rust",
+            "Shell",
+            "Zola",
+            "Tailwind CSS",
+            "Alpine.js",
+            "Flowbite Pro",
+            "pytest",
+            "Playwright",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "sonic-playground",
           "title": "Sonic Playground",
           "url": "https://github.com/korczis/sonic-playground",
@@ -7563,78 +7635,6 @@
             "Flowbite Pro",
             "Leaflet",
             "pytest"
-          ]
-        },
-        {
-          "name": "astronomists",
-          "title": "astronomists",
-          "url": "https://github.com/korczis/astronomists",
-          "work": true,
-          "slug": "astronomists",
-          "site": "https://korczis.github.io/astronomists/",
-          "category": "tools",
-          "description": null,
-          "summary": null,
-          "summary_cs": null,
-          "created": "2026-06-15",
-          "pushed": "2026-11-16",
-          "primary": true,
-          "share": 41.1,
-          "via": [
-            "primary",
-            "code",
-            "files"
-          ],
-          "supervised": false,
-          "uses": [
-            "Python",
-            "HTML",
-            "TypeScript",
-            "Shell",
-            "JavaScript",
-            "CSS",
-            "Zola",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "Alpine.js",
-            "Playwright",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "catharsis-as-a-service",
-          "title": "Catharsis as a Service",
-          "url": "https://github.com/korczis/catharsis-as-a-service",
-          "work": true,
-          "slug": "catharsis-as-a-service",
-          "site": "https://korczis.github.io/catharsis-as-a-service/",
-          "category": "media",
-          "description": "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact.",
-          "summary": "A Sig Nihl / Prismatic digital artifact.",
-          "summary_cs": "Digitální artefakt Sig Nihl / Prismatic.",
-          "created": "2026-09-14",
-          "pushed": "2026-11-16",
-          "primary": false,
-          "share": 27.7,
-          "via": [
-            "code",
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "HTML",
-            "Python",
-            "JavaScript",
-            "CSS",
-            "Rust",
-            "Shell",
-            "Zola",
-            "Tailwind CSS",
-            "Alpine.js",
-            "Flowbite Pro",
-            "pytest",
-            "Playwright",
-            "GitHub Pages"
           ]
         },
         {
@@ -8127,6 +8127,76 @@
       ],
       "repos": [
         {
+          "name": "astronomists",
+          "title": "astronomists",
+          "url": "https://github.com/korczis/astronomists",
+          "work": true,
+          "slug": "astronomists",
+          "site": "https://korczis.github.io/astronomists/",
+          "category": "tools",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2026-06-15",
+          "pushed": "2026-11-23",
+          "primary": false,
+          "share": 8.5,
+          "via": [
+            "code",
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Python",
+            "HTML",
+            "TypeScript",
+            "Shell",
+            "JavaScript",
+            "CSS",
+            "Zola",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "Alpine.js",
+            "Playwright",
+            "GitHub Pages"
+          ]
+        },
+        {
+          "name": "catharsis-as-a-service",
+          "title": "Catharsis as a Service",
+          "url": "https://github.com/korczis/catharsis-as-a-service",
+          "work": true,
+          "slug": "catharsis-as-a-service",
+          "site": "https://korczis.github.io/catharsis-as-a-service/",
+          "category": "media",
+          "description": "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact.",
+          "summary": "A Sig Nihl / Prismatic digital artifact.",
+          "summary_cs": "Digitální artefakt Sig Nihl / Prismatic.",
+          "created": "2026-09-14",
+          "pushed": "2026-11-23",
+          "primary": false,
+          "share": 2.1,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "HTML",
+            "Python",
+            "JavaScript",
+            "CSS",
+            "Rust",
+            "Shell",
+            "Zola",
+            "Tailwind CSS",
+            "Alpine.js",
+            "Flowbite Pro",
+            "pytest",
+            "Playwright",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "prismatic-majordomus",
           "title": "Majordomus",
           "url": "https://github.com/korczis/prismatic-majordomus",
@@ -8301,76 +8371,6 @@
             "Flowbite Pro",
             "Leaflet",
             "pytest"
-          ]
-        },
-        {
-          "name": "astronomists",
-          "title": "astronomists",
-          "url": "https://github.com/korczis/astronomists",
-          "work": true,
-          "slug": "astronomists",
-          "site": "https://korczis.github.io/astronomists/",
-          "category": "tools",
-          "description": null,
-          "summary": null,
-          "summary_cs": null,
-          "created": "2026-06-15",
-          "pushed": "2026-11-16",
-          "primary": false,
-          "share": 8.5,
-          "via": [
-            "code",
-            "files"
-          ],
-          "supervised": false,
-          "uses": [
-            "Python",
-            "HTML",
-            "TypeScript",
-            "Shell",
-            "JavaScript",
-            "CSS",
-            "Zola",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "Alpine.js",
-            "Playwright",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "catharsis-as-a-service",
-          "title": "Catharsis as a Service",
-          "url": "https://github.com/korczis/catharsis-as-a-service",
-          "work": true,
-          "slug": "catharsis-as-a-service",
-          "site": "https://korczis.github.io/catharsis-as-a-service/",
-          "category": "media",
-          "description": "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact.",
-          "summary": "A Sig Nihl / Prismatic digital artifact.",
-          "summary_cs": "Digitální artefakt Sig Nihl / Prismatic.",
-          "created": "2026-09-14",
-          "pushed": "2026-11-16",
-          "primary": false,
-          "share": 2.1,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "HTML",
-            "Python",
-            "JavaScript",
-            "CSS",
-            "Rust",
-            "Shell",
-            "Zola",
-            "Tailwind CSS",
-            "Alpine.js",
-            "Flowbite Pro",
-            "pytest",
-            "Playwright",
-            "GitHub Pages"
           ]
         },
         {
@@ -9500,6 +9500,77 @@
       ],
       "repos": [
         {
+          "name": "astronomists",
+          "title": "astronomists",
+          "url": "https://github.com/korczis/astronomists",
+          "work": true,
+          "slug": "astronomists",
+          "site": "https://korczis.github.io/astronomists/",
+          "category": "tools",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2026-06-15",
+          "pushed": "2026-11-23",
+          "primary": false,
+          "share": 32.2,
+          "via": [
+            "code"
+          ],
+          "supervised": false,
+          "uses": [
+            "Python",
+            "HTML",
+            "TypeScript",
+            "Shell",
+            "JavaScript",
+            "CSS",
+            "Zola",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "Alpine.js",
+            "Playwright",
+            "GitHub Pages"
+          ]
+        },
+        {
+          "name": "catharsis-as-a-service",
+          "title": "Catharsis as a Service",
+          "url": "https://github.com/korczis/catharsis-as-a-service",
+          "work": true,
+          "slug": "catharsis-as-a-service",
+          "site": "https://korczis.github.io/catharsis-as-a-service/",
+          "category": "media",
+          "description": "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact.",
+          "summary": "A Sig Nihl / Prismatic digital artifact.",
+          "summary_cs": "Digitální artefakt Sig Nihl / Prismatic.",
+          "created": "2026-09-14",
+          "pushed": "2026-11-23",
+          "primary": true,
+          "share": 34.3,
+          "via": [
+            "primary",
+            "code",
+            "stack"
+          ],
+          "supervised": true,
+          "uses": [
+            "HTML",
+            "Python",
+            "JavaScript",
+            "CSS",
+            "Rust",
+            "Shell",
+            "Zola",
+            "Tailwind CSS",
+            "Alpine.js",
+            "Flowbite Pro",
+            "pytest",
+            "Playwright",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "url": "https://github.com/korczis/korczis.github.io",
@@ -9784,77 +9855,6 @@
             "Flowbite Pro",
             "Leaflet",
             "pytest"
-          ]
-        },
-        {
-          "name": "astronomists",
-          "title": "astronomists",
-          "url": "https://github.com/korczis/astronomists",
-          "work": true,
-          "slug": "astronomists",
-          "site": "https://korczis.github.io/astronomists/",
-          "category": "tools",
-          "description": null,
-          "summary": null,
-          "summary_cs": null,
-          "created": "2026-06-15",
-          "pushed": "2026-11-16",
-          "primary": false,
-          "share": 32.2,
-          "via": [
-            "code"
-          ],
-          "supervised": false,
-          "uses": [
-            "Python",
-            "HTML",
-            "TypeScript",
-            "Shell",
-            "JavaScript",
-            "CSS",
-            "Zola",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "Alpine.js",
-            "Playwright",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "catharsis-as-a-service",
-          "title": "Catharsis as a Service",
-          "url": "https://github.com/korczis/catharsis-as-a-service",
-          "work": true,
-          "slug": "catharsis-as-a-service",
-          "site": "https://korczis.github.io/catharsis-as-a-service/",
-          "category": "media",
-          "description": "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact.",
-          "summary": "A Sig Nihl / Prismatic digital artifact.",
-          "summary_cs": "Digitální artefakt Sig Nihl / Prismatic.",
-          "created": "2026-09-14",
-          "pushed": "2026-11-16",
-          "primary": true,
-          "share": 34.3,
-          "via": [
-            "primary",
-            "code",
-            "stack"
-          ],
-          "supervised": true,
-          "uses": [
-            "HTML",
-            "Python",
-            "JavaScript",
-            "CSS",
-            "Rust",
-            "Shell",
-            "Zola",
-            "Tailwind CSS",
-            "Alpine.js",
-            "Flowbite Pro",
-            "pytest",
-            "Playwright",
-            "GitHub Pages"
           ]
         },
         {
@@ -10770,6 +10770,75 @@
       ],
       "repos": [
         {
+          "name": "astronomists",
+          "title": "astronomists",
+          "url": "https://github.com/korczis/astronomists",
+          "work": true,
+          "slug": "astronomists",
+          "site": "https://korczis.github.io/astronomists/",
+          "category": "tools",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2026-06-15",
+          "pushed": "2026-11-23",
+          "primary": false,
+          "share": 1,
+          "via": [
+            "code"
+          ],
+          "supervised": false,
+          "uses": [
+            "Python",
+            "HTML",
+            "TypeScript",
+            "Shell",
+            "JavaScript",
+            "CSS",
+            "Zola",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "Alpine.js",
+            "Playwright",
+            "GitHub Pages"
+          ]
+        },
+        {
+          "name": "catharsis-as-a-service",
+          "title": "Catharsis as a Service",
+          "url": "https://github.com/korczis/catharsis-as-a-service",
+          "work": true,
+          "slug": "catharsis-as-a-service",
+          "site": "https://korczis.github.io/catharsis-as-a-service/",
+          "category": "media",
+          "description": "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact.",
+          "summary": "A Sig Nihl / Prismatic digital artifact.",
+          "summary_cs": "Digitální artefakt Sig Nihl / Prismatic.",
+          "created": "2026-09-14",
+          "pushed": "2026-11-23",
+          "primary": false,
+          "share": 11.4,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "HTML",
+            "Python",
+            "JavaScript",
+            "CSS",
+            "Rust",
+            "Shell",
+            "Zola",
+            "Tailwind CSS",
+            "Alpine.js",
+            "Flowbite Pro",
+            "pytest",
+            "Playwright",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "url": "https://github.com/korczis/korczis.github.io",
@@ -10873,75 +10942,6 @@
             "esbuild",
             "Playwright",
             "axe-core",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "astronomists",
-          "title": "astronomists",
-          "url": "https://github.com/korczis/astronomists",
-          "work": true,
-          "slug": "astronomists",
-          "site": "https://korczis.github.io/astronomists/",
-          "category": "tools",
-          "description": null,
-          "summary": null,
-          "summary_cs": null,
-          "created": "2026-06-15",
-          "pushed": "2026-11-16",
-          "primary": false,
-          "share": 1,
-          "via": [
-            "code"
-          ],
-          "supervised": false,
-          "uses": [
-            "Python",
-            "HTML",
-            "TypeScript",
-            "Shell",
-            "JavaScript",
-            "CSS",
-            "Zola",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "Alpine.js",
-            "Playwright",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "catharsis-as-a-service",
-          "title": "Catharsis as a Service",
-          "url": "https://github.com/korczis/catharsis-as-a-service",
-          "work": true,
-          "slug": "catharsis-as-a-service",
-          "site": "https://korczis.github.io/catharsis-as-a-service/",
-          "category": "media",
-          "description": "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact.",
-          "summary": "A Sig Nihl / Prismatic digital artifact.",
-          "summary_cs": "Digitální artefakt Sig Nihl / Prismatic.",
-          "created": "2026-09-14",
-          "pushed": "2026-11-16",
-          "primary": false,
-          "share": 11.4,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "HTML",
-            "Python",
-            "JavaScript",
-            "CSS",
-            "Rust",
-            "Shell",
-            "Zola",
-            "Tailwind CSS",
-            "Alpine.js",
-            "Flowbite Pro",
-            "pytest",
-            "Playwright",
             "GitHub Pages"
           ]
         },
@@ -13897,6 +13897,75 @@
       ],
       "repos": [
         {
+          "name": "astronomists",
+          "title": "astronomists",
+          "url": "https://github.com/korczis/astronomists",
+          "work": true,
+          "slug": "astronomists",
+          "site": "https://korczis.github.io/astronomists/",
+          "category": "tools",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2026-06-15",
+          "pushed": "2026-11-23",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Python",
+            "HTML",
+            "TypeScript",
+            "Shell",
+            "JavaScript",
+            "CSS",
+            "Zola",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "Alpine.js",
+            "Playwright",
+            "GitHub Pages"
+          ]
+        },
+        {
+          "name": "catharsis-as-a-service",
+          "title": "Catharsis as a Service",
+          "url": "https://github.com/korczis/catharsis-as-a-service",
+          "work": true,
+          "slug": "catharsis-as-a-service",
+          "site": "https://korczis.github.io/catharsis-as-a-service/",
+          "category": "media",
+          "description": "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact.",
+          "summary": "A Sig Nihl / Prismatic digital artifact.",
+          "summary_cs": "Digitální artefakt Sig Nihl / Prismatic.",
+          "created": "2026-09-14",
+          "pushed": "2026-11-23",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "HTML",
+            "Python",
+            "JavaScript",
+            "CSS",
+            "Rust",
+            "Shell",
+            "Zola",
+            "Tailwind CSS",
+            "Alpine.js",
+            "Flowbite Pro",
+            "pytest",
+            "Playwright",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "url": "https://github.com/korczis/korczis.github.io",
@@ -14151,75 +14220,6 @@
             "Flowbite Pro",
             "Leaflet",
             "pytest"
-          ]
-        },
-        {
-          "name": "astronomists",
-          "title": "astronomists",
-          "url": "https://github.com/korczis/astronomists",
-          "work": true,
-          "slug": "astronomists",
-          "site": "https://korczis.github.io/astronomists/",
-          "category": "tools",
-          "description": null,
-          "summary": null,
-          "summary_cs": null,
-          "created": "2026-06-15",
-          "pushed": "2026-11-16",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": false,
-          "uses": [
-            "Python",
-            "HTML",
-            "TypeScript",
-            "Shell",
-            "JavaScript",
-            "CSS",
-            "Zola",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "Alpine.js",
-            "Playwright",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "catharsis-as-a-service",
-          "title": "Catharsis as a Service",
-          "url": "https://github.com/korczis/catharsis-as-a-service",
-          "work": true,
-          "slug": "catharsis-as-a-service",
-          "site": "https://korczis.github.io/catharsis-as-a-service/",
-          "category": "media",
-          "description": "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact.",
-          "summary": "A Sig Nihl / Prismatic digital artifact.",
-          "summary_cs": "Digitální artefakt Sig Nihl / Prismatic.",
-          "created": "2026-09-14",
-          "pushed": "2026-11-16",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "HTML",
-            "Python",
-            "JavaScript",
-            "CSS",
-            "Rust",
-            "Shell",
-            "Zola",
-            "Tailwind CSS",
-            "Alpine.js",
-            "Flowbite Pro",
-            "pytest",
-            "Playwright",
-            "GitHub Pages"
           ]
         },
         {
@@ -14347,6 +14347,75 @@
       ],
       "repos": [
         {
+          "name": "astronomists",
+          "title": "astronomists",
+          "url": "https://github.com/korczis/astronomists",
+          "work": true,
+          "slug": "astronomists",
+          "site": "https://korczis.github.io/astronomists/",
+          "category": "tools",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2026-06-15",
+          "pushed": "2026-11-23",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Python",
+            "HTML",
+            "TypeScript",
+            "Shell",
+            "JavaScript",
+            "CSS",
+            "Zola",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "Alpine.js",
+            "Playwright",
+            "GitHub Pages"
+          ]
+        },
+        {
+          "name": "catharsis-as-a-service",
+          "title": "Catharsis as a Service",
+          "url": "https://github.com/korczis/catharsis-as-a-service",
+          "work": true,
+          "slug": "catharsis-as-a-service",
+          "site": "https://korczis.github.io/catharsis-as-a-service/",
+          "category": "media",
+          "description": "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact.",
+          "summary": "A Sig Nihl / Prismatic digital artifact.",
+          "summary_cs": "Digitální artefakt Sig Nihl / Prismatic.",
+          "created": "2026-09-14",
+          "pushed": "2026-11-23",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "HTML",
+            "Python",
+            "JavaScript",
+            "CSS",
+            "Rust",
+            "Shell",
+            "Zola",
+            "Tailwind CSS",
+            "Alpine.js",
+            "Flowbite Pro",
+            "pytest",
+            "Playwright",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "url": "https://github.com/korczis/korczis.github.io",
@@ -14598,75 +14667,6 @@
             "Flowbite Pro",
             "Leaflet",
             "pytest"
-          ]
-        },
-        {
-          "name": "astronomists",
-          "title": "astronomists",
-          "url": "https://github.com/korczis/astronomists",
-          "work": true,
-          "slug": "astronomists",
-          "site": "https://korczis.github.io/astronomists/",
-          "category": "tools",
-          "description": null,
-          "summary": null,
-          "summary_cs": null,
-          "created": "2026-06-15",
-          "pushed": "2026-11-16",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": false,
-          "uses": [
-            "Python",
-            "HTML",
-            "TypeScript",
-            "Shell",
-            "JavaScript",
-            "CSS",
-            "Zola",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "Alpine.js",
-            "Playwright",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "catharsis-as-a-service",
-          "title": "Catharsis as a Service",
-          "url": "https://github.com/korczis/catharsis-as-a-service",
-          "work": true,
-          "slug": "catharsis-as-a-service",
-          "site": "https://korczis.github.io/catharsis-as-a-service/",
-          "category": "media",
-          "description": "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact.",
-          "summary": "A Sig Nihl / Prismatic digital artifact.",
-          "summary_cs": "Digitální artefakt Sig Nihl / Prismatic.",
-          "created": "2026-09-14",
-          "pushed": "2026-11-16",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "HTML",
-            "Python",
-            "JavaScript",
-            "CSS",
-            "Rust",
-            "Shell",
-            "Zola",
-            "Tailwind CSS",
-            "Alpine.js",
-            "Flowbite Pro",
-            "pytest",
-            "Playwright",
-            "GitHub Pages"
           ]
         },
         {
@@ -14959,6 +14959,75 @@
       ],
       "repos": [
         {
+          "name": "astronomists",
+          "title": "astronomists",
+          "url": "https://github.com/korczis/astronomists",
+          "work": true,
+          "slug": "astronomists",
+          "site": "https://korczis.github.io/astronomists/",
+          "category": "tools",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2026-06-15",
+          "pushed": "2026-11-23",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Python",
+            "HTML",
+            "TypeScript",
+            "Shell",
+            "JavaScript",
+            "CSS",
+            "Zola",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "Alpine.js",
+            "Playwright",
+            "GitHub Pages"
+          ]
+        },
+        {
+          "name": "catharsis-as-a-service",
+          "title": "Catharsis as a Service",
+          "url": "https://github.com/korczis/catharsis-as-a-service",
+          "work": true,
+          "slug": "catharsis-as-a-service",
+          "site": "https://korczis.github.io/catharsis-as-a-service/",
+          "category": "media",
+          "description": "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact.",
+          "summary": "A Sig Nihl / Prismatic digital artifact.",
+          "summary_cs": "Digitální artefakt Sig Nihl / Prismatic.",
+          "created": "2026-09-14",
+          "pushed": "2026-11-23",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "HTML",
+            "Python",
+            "JavaScript",
+            "CSS",
+            "Rust",
+            "Shell",
+            "Zola",
+            "Tailwind CSS",
+            "Alpine.js",
+            "Flowbite Pro",
+            "pytest",
+            "Playwright",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "url": "https://github.com/korczis/korczis.github.io",
@@ -15106,75 +15175,6 @@
             "esbuild",
             "Playwright",
             "axe-core",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "astronomists",
-          "title": "astronomists",
-          "url": "https://github.com/korczis/astronomists",
-          "work": true,
-          "slug": "astronomists",
-          "site": "https://korczis.github.io/astronomists/",
-          "category": "tools",
-          "description": null,
-          "summary": null,
-          "summary_cs": null,
-          "created": "2026-06-15",
-          "pushed": "2026-11-16",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": false,
-          "uses": [
-            "Python",
-            "HTML",
-            "TypeScript",
-            "Shell",
-            "JavaScript",
-            "CSS",
-            "Zola",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "Alpine.js",
-            "Playwright",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "catharsis-as-a-service",
-          "title": "Catharsis as a Service",
-          "url": "https://github.com/korczis/catharsis-as-a-service",
-          "work": true,
-          "slug": "catharsis-as-a-service",
-          "site": "https://korczis.github.io/catharsis-as-a-service/",
-          "category": "media",
-          "description": "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact.",
-          "summary": "A Sig Nihl / Prismatic digital artifact.",
-          "summary_cs": "Digitální artefakt Sig Nihl / Prismatic.",
-          "created": "2026-09-14",
-          "pushed": "2026-11-16",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "HTML",
-            "Python",
-            "JavaScript",
-            "CSS",
-            "Rust",
-            "Shell",
-            "Zola",
-            "Tailwind CSS",
-            "Alpine.js",
-            "Flowbite Pro",
-            "pytest",
-            "Playwright",
             "GitHub Pages"
           ]
         },
@@ -15887,6 +15887,75 @@
       ],
       "repos": [
         {
+          "name": "astronomists",
+          "title": "astronomists",
+          "url": "https://github.com/korczis/astronomists",
+          "work": true,
+          "slug": "astronomists",
+          "site": "https://korczis.github.io/astronomists/",
+          "category": "tools",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2026-06-15",
+          "pushed": "2026-11-23",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Python",
+            "HTML",
+            "TypeScript",
+            "Shell",
+            "JavaScript",
+            "CSS",
+            "Zola",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "Alpine.js",
+            "Playwright",
+            "GitHub Pages"
+          ]
+        },
+        {
+          "name": "catharsis-as-a-service",
+          "title": "Catharsis as a Service",
+          "url": "https://github.com/korczis/catharsis-as-a-service",
+          "work": true,
+          "slug": "catharsis-as-a-service",
+          "site": "https://korczis.github.io/catharsis-as-a-service/",
+          "category": "media",
+          "description": "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact.",
+          "summary": "A Sig Nihl / Prismatic digital artifact.",
+          "summary_cs": "Digitální artefakt Sig Nihl / Prismatic.",
+          "created": "2026-09-14",
+          "pushed": "2026-11-23",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "HTML",
+            "Python",
+            "JavaScript",
+            "CSS",
+            "Rust",
+            "Shell",
+            "Zola",
+            "Tailwind CSS",
+            "Alpine.js",
+            "Flowbite Pro",
+            "pytest",
+            "Playwright",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "url": "https://github.com/korczis/korczis.github.io",
@@ -16031,75 +16100,6 @@
             "Tailwind CSS",
             "p5.js",
             "WebAssembly",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "astronomists",
-          "title": "astronomists",
-          "url": "https://github.com/korczis/astronomists",
-          "work": true,
-          "slug": "astronomists",
-          "site": "https://korczis.github.io/astronomists/",
-          "category": "tools",
-          "description": null,
-          "summary": null,
-          "summary_cs": null,
-          "created": "2026-06-15",
-          "pushed": "2026-11-16",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": false,
-          "uses": [
-            "Python",
-            "HTML",
-            "TypeScript",
-            "Shell",
-            "JavaScript",
-            "CSS",
-            "Zola",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "Alpine.js",
-            "Playwright",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "catharsis-as-a-service",
-          "title": "Catharsis as a Service",
-          "url": "https://github.com/korczis/catharsis-as-a-service",
-          "work": true,
-          "slug": "catharsis-as-a-service",
-          "site": "https://korczis.github.io/catharsis-as-a-service/",
-          "category": "media",
-          "description": "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact.",
-          "summary": "A Sig Nihl / Prismatic digital artifact.",
-          "summary_cs": "Digitální artefakt Sig Nihl / Prismatic.",
-          "created": "2026-09-14",
-          "pushed": "2026-11-16",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "HTML",
-            "Python",
-            "JavaScript",
-            "CSS",
-            "Rust",
-            "Shell",
-            "Zola",
-            "Tailwind CSS",
-            "Alpine.js",
-            "Flowbite Pro",
-            "pytest",
-            "Playwright",
             "GitHub Pages"
           ]
         },
@@ -17620,6 +17620,75 @@
       ],
       "repos": [
         {
+          "name": "astronomists",
+          "title": "astronomists",
+          "url": "https://github.com/korczis/astronomists",
+          "work": true,
+          "slug": "astronomists",
+          "site": "https://korczis.github.io/astronomists/",
+          "category": "tools",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2026-06-15",
+          "pushed": "2026-11-23",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Python",
+            "HTML",
+            "TypeScript",
+            "Shell",
+            "JavaScript",
+            "CSS",
+            "Zola",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "Alpine.js",
+            "Playwright",
+            "GitHub Pages"
+          ]
+        },
+        {
+          "name": "catharsis-as-a-service",
+          "title": "Catharsis as a Service",
+          "url": "https://github.com/korczis/catharsis-as-a-service",
+          "work": true,
+          "slug": "catharsis-as-a-service",
+          "site": "https://korczis.github.io/catharsis-as-a-service/",
+          "category": "media",
+          "description": "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact.",
+          "summary": "A Sig Nihl / Prismatic digital artifact.",
+          "summary_cs": "Digitální artefakt Sig Nihl / Prismatic.",
+          "created": "2026-09-14",
+          "pushed": "2026-11-23",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "HTML",
+            "Python",
+            "JavaScript",
+            "CSS",
+            "Rust",
+            "Shell",
+            "Zola",
+            "Tailwind CSS",
+            "Alpine.js",
+            "Flowbite Pro",
+            "pytest",
+            "Playwright",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "url": "https://github.com/korczis/korczis.github.io",
@@ -17799,75 +17868,6 @@
             "esbuild",
             "Playwright",
             "axe-core",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "astronomists",
-          "title": "astronomists",
-          "url": "https://github.com/korczis/astronomists",
-          "work": true,
-          "slug": "astronomists",
-          "site": "https://korczis.github.io/astronomists/",
-          "category": "tools",
-          "description": null,
-          "summary": null,
-          "summary_cs": null,
-          "created": "2026-06-15",
-          "pushed": "2026-11-16",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": false,
-          "uses": [
-            "Python",
-            "HTML",
-            "TypeScript",
-            "Shell",
-            "JavaScript",
-            "CSS",
-            "Zola",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "Alpine.js",
-            "Playwright",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "catharsis-as-a-service",
-          "title": "Catharsis as a Service",
-          "url": "https://github.com/korczis/catharsis-as-a-service",
-          "work": true,
-          "slug": "catharsis-as-a-service",
-          "site": "https://korczis.github.io/catharsis-as-a-service/",
-          "category": "media",
-          "description": "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact.",
-          "summary": "A Sig Nihl / Prismatic digital artifact.",
-          "summary_cs": "Digitální artefakt Sig Nihl / Prismatic.",
-          "created": "2026-09-14",
-          "pushed": "2026-11-16",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "HTML",
-            "Python",
-            "JavaScript",
-            "CSS",
-            "Rust",
-            "Shell",
-            "Zola",
-            "Tailwind CSS",
-            "Alpine.js",
-            "Flowbite Pro",
-            "pytest",
-            "Playwright",
             "GitHub Pages"
           ]
         },
@@ -19966,6 +19966,75 @@
       ],
       "repos": [
         {
+          "name": "astronomists",
+          "title": "astronomists",
+          "url": "https://github.com/korczis/astronomists",
+          "work": true,
+          "slug": "astronomists",
+          "site": "https://korczis.github.io/astronomists/",
+          "category": "tools",
+          "description": null,
+          "summary": null,
+          "summary_cs": null,
+          "created": "2026-06-15",
+          "pushed": "2026-11-23",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": false,
+          "uses": [
+            "Python",
+            "HTML",
+            "TypeScript",
+            "Shell",
+            "JavaScript",
+            "CSS",
+            "Zola",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "Alpine.js",
+            "Playwright",
+            "GitHub Pages"
+          ]
+        },
+        {
+          "name": "catharsis-as-a-service",
+          "title": "Catharsis as a Service",
+          "url": "https://github.com/korczis/catharsis-as-a-service",
+          "work": true,
+          "slug": "catharsis-as-a-service",
+          "site": "https://korczis.github.io/catharsis-as-a-service/",
+          "category": "media",
+          "description": "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact.",
+          "summary": "A Sig Nihl / Prismatic digital artifact.",
+          "summary_cs": "Digitální artefakt Sig Nihl / Prismatic.",
+          "created": "2026-09-14",
+          "pushed": "2026-11-23",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "HTML",
+            "Python",
+            "JavaScript",
+            "CSS",
+            "Rust",
+            "Shell",
+            "Zola",
+            "Tailwind CSS",
+            "Alpine.js",
+            "Flowbite Pro",
+            "pytest",
+            "Playwright",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "url": "https://github.com/korczis/korczis.github.io",
@@ -20035,75 +20104,6 @@
             "esbuild",
             "Playwright",
             "axe-core",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "astronomists",
-          "title": "astronomists",
-          "url": "https://github.com/korczis/astronomists",
-          "work": true,
-          "slug": "astronomists",
-          "site": "https://korczis.github.io/astronomists/",
-          "category": "tools",
-          "description": null,
-          "summary": null,
-          "summary_cs": null,
-          "created": "2026-06-15",
-          "pushed": "2026-11-16",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": false,
-          "uses": [
-            "Python",
-            "HTML",
-            "TypeScript",
-            "Shell",
-            "JavaScript",
-            "CSS",
-            "Zola",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "Alpine.js",
-            "Playwright",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "catharsis-as-a-service",
-          "title": "Catharsis as a Service",
-          "url": "https://github.com/korczis/catharsis-as-a-service",
-          "work": true,
-          "slug": "catharsis-as-a-service",
-          "site": "https://korczis.github.io/catharsis-as-a-service/",
-          "category": "media",
-          "description": "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact.",
-          "summary": "A Sig Nihl / Prismatic digital artifact.",
-          "summary_cs": "Digitální artefakt Sig Nihl / Prismatic.",
-          "created": "2026-09-14",
-          "pushed": "2026-11-16",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "HTML",
-            "Python",
-            "JavaScript",
-            "CSS",
-            "Rust",
-            "Shell",
-            "Zola",
-            "Tailwind CSS",
-            "Alpine.js",
-            "Flowbite Pro",
-            "pytest",
-            "Playwright",
             "GitHub Pages"
           ]
         },
@@ -35485,6 +35485,41 @@
       ],
       "repos": [
         {
+          "name": "catharsis-as-a-service",
+          "title": "Catharsis as a Service",
+          "url": "https://github.com/korczis/catharsis-as-a-service",
+          "work": true,
+          "slug": "catharsis-as-a-service",
+          "site": "https://korczis.github.io/catharsis-as-a-service/",
+          "category": "media",
+          "description": "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact.",
+          "summary": "A Sig Nihl / Prismatic digital artifact.",
+          "summary_cs": "Digitální artefakt Sig Nihl / Prismatic.",
+          "created": "2026-09-14",
+          "pushed": "2026-11-23",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "HTML",
+            "Python",
+            "JavaScript",
+            "CSS",
+            "Rust",
+            "Shell",
+            "Zola",
+            "Tailwind CSS",
+            "Alpine.js",
+            "Flowbite Pro",
+            "pytest",
+            "Playwright",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "openttd-prismatic-bridge",
           "title": "openttd-prismatic-bridge",
           "url": "https://gitlab.com/korczis/openttd-prismatic-bridge",
@@ -35517,41 +35552,6 @@
             "Flowbite Pro",
             "Leaflet",
             "pytest"
-          ]
-        },
-        {
-          "name": "catharsis-as-a-service",
-          "title": "Catharsis as a Service",
-          "url": "https://github.com/korczis/catharsis-as-a-service",
-          "work": true,
-          "slug": "catharsis-as-a-service",
-          "site": "https://korczis.github.io/catharsis-as-a-service/",
-          "category": "media",
-          "description": "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact.",
-          "summary": "A Sig Nihl / Prismatic digital artifact.",
-          "summary_cs": "Digitální artefakt Sig Nihl / Prismatic.",
-          "created": "2026-09-14",
-          "pushed": "2026-11-16",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "HTML",
-            "Python",
-            "JavaScript",
-            "CSS",
-            "Rust",
-            "Shell",
-            "Zola",
-            "Tailwind CSS",
-            "Alpine.js",
-            "Flowbite Pro",
-            "pytest",
-            "Playwright",
-            "GitHub Pages"
           ]
         }
       ],

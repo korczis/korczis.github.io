@@ -44,7 +44,7 @@ Playwright je součástí 6 mých veřejných repozitářů, od roku 2024 do 202
 
 K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (2), [Data a GIS](@/projects/data.cs.md) (1), [Média a umění](@/projects/media.cs.md) (1) a [Věda a vizualizace](@/projects/science.cs.md) (1).
 
-Naposledy: [korczis.github.io](@/work/korczis-github-io.cs.md); [Oscilla](@/work/oscilla.cs.md): Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu; [astronomists](@/work/astronomists.cs.md).
+Naposledy: [astronomists](@/work/astronomists.cs.md); [Catharsis as a Service](@/work/catharsis-as-a-service.cs.md): Digitální artefakt Sig Nihl / Prismatic; [korczis.github.io](@/work/korczis-github-io.cs.md).
 
 5 z těchto projektů běží jako živé weby.
 

@@ -44,7 +44,7 @@ pytest je součástí 2 mých veřejných repozitářů, od roku 2026 do 2026.
 
 K čemu to sloužilo: [Média a umění](@/projects/media.cs.md) (2).
 
-Naposledy: [openttd-prismatic-bridge](@/work/openttd-prismatic-bridge.cs.md); [Catharsis as a Service](@/work/catharsis-as-a-service.cs.md): Digitální artefakt Sig Nihl / Prismatic.
+Naposledy: [Catharsis as a Service](@/work/catharsis-as-a-service.cs.md): Digitální artefakt Sig Nihl / Prismatic; [openttd-prismatic-bridge](@/work/openttd-prismatic-bridge.cs.md).
 
 1 z těchto projektů běží jako živý web.
 
