@@ -1,6 +1,6 @@
 {
  "schema": "korczis-hub-recent/v2",
- "generated_at": "2026-11-24T02:32:03Z",
+ "generated_at": "2026-11-24T14:06:04Z",
  "window_days": 1461,
  "periods": [
   {
@@ -18,7 +18,7 @@
  ],
  "archive": 162,
  "rule": "every original repository of data/index.json; a repository is recent when its default branch has a commit in the window, archive otherwise; host activity dates are ignored",
- "asked": 3,
+ "asked": 2,
  "repos": [
   {
    "name": "korczis.github.io",
@@ -27,10 +27,15 @@
    "category": "web",
    "language": "JavaScript",
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-23T15:09:44Z",
-   "last_commit": "2026-11-23T15:08:46Z",
+   "pushed_at": "2026-11-24T02:33:39Z",
+   "last_commit": "2026-11-24T02:32:41Z",
    "last_message": "chore(data): refresh the snapshot and the index",
    "commits": [
+    {
+     "at": "2026-11-24T02:32:41Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/e2527f12dd56f3d882114246e8dbd7af49f83885"
+    },
     {
      "at": "2026-11-23T15:08:46Z",
      "message": "chore(data): refresh the snapshot and the index",
@@ -175,11 +180,6 @@
      "at": "2026-11-19T12:46:15Z",
      "message": "chore(merge): integrate #42, technologies inferred from every repository, each with its page",
      "url": "https://github.com/korczis/korczis.github.io/commit/870127947a667e7a08bc1c3c08af50e37f76314a"
-    },
-    {
-     "at": "2026-11-19T12:22:36Z",
-     "message": "chore(merge): bring the data refresh into the stack branch",
-     "url": "https://github.com/korczis/korczis.github.io/commit/7b7573b395c5a5add719967b0f60ce67bb86ee75"
     }
    ],
    "languages": [
@@ -430,7 +430,7 @@
    "category": "ai",
    "language": "Rust",
    "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-23T04:21:54Z",
+   "pushed_at": "2026-11-24T13:20:47Z",
    "last_commit": "2026-11-23T00:13:52Z",
    "last_message": "Merge pull request #3107 from korczis/fix/I4685-pages-check-resolves-an-ambiguous-short-sha",
    "commits": [

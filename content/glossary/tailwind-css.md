@@ -44,7 +44,7 @@ Tailwind CSS is part of 16 of my public repositories, from 2024 to 2026.
 
 What it was for: [Tools](@/projects/tools.md) (5), [Media and art](@/projects/media.md) (4), [Data and GIS](@/projects/data.md) (2) and [Science and visualisation](@/projects/science.md) (2).
 
-Most recently: [astronomists](@/work/astronomists.md); [Catharsis as a Service](@/work/catharsis-as-a-service.md): A Sig Nihl / Prismatic digital artifact; [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.
+Most recently: [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus; [astronomists](@/work/astronomists.md); [Catharsis as a Service](@/work/catharsis-as-a-service.md): A Sig Nihl / Prismatic digital artifact.
 
 11 of these projects run as live sites.
 

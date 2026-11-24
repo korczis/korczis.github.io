@@ -44,7 +44,7 @@ CSS jsem psal v 27 veřejných repozitářích, od roku 2014 do 2026; ve 4 z nic
 
 K čemu to sloužilo: [Web](@/projects/web.cs.md) (10), [Nástroje](@/projects/tools.cs.md) (7), [Data a GIS](@/projects/data.cs.md) (5) a [Média a umění](@/projects/media.cs.md) (3).
 
-Naposledy: [astronomists](@/work/astronomists.cs.md); [Catharsis as a Service](@/work/catharsis-as-a-service.cs.md): Digitální artefakt Sig Nihl / Prismatic; [korczis.github.io](@/work/korczis-github-io.cs.md).
+Naposledy: [korczis.github.io](@/work/korczis-github-io.cs.md); [astronomists](@/work/astronomists.cs.md); [Catharsis as a Service](@/work/catharsis-as-a-service.cs.md): Digitální artefakt Sig Nihl / Prismatic.
 
 8 z těchto projektů běží jako živé weby.
 

@@ -44,7 +44,7 @@ Alpine.js je součástí 7 mých veřejných repozitářů, od roku 2024 do 2026
 
 K čemu to sloužilo: [Věda a vizualizace](@/projects/science.cs.md) (2), [Nástroje](@/projects/tools.cs.md) (2), [Znalosti](@/projects/knowledge.cs.md) (1) a [Média a umění](@/projects/media.cs.md) (1).
 
-Naposledy: [astronomists](@/work/astronomists.cs.md); [Catharsis as a Service](@/work/catharsis-as-a-service.cs.md): Digitální artefakt Sig Nihl / Prismatic; [korczis.github.io](@/work/korczis-github-io.cs.md).
+Naposledy: [korczis.github.io](@/work/korczis-github-io.cs.md); [astronomists](@/work/astronomists.cs.md); [Catharsis as a Service](@/work/catharsis-as-a-service.cs.md): Digitální artefakt Sig Nihl / Prismatic.
 
 6 z těchto projektů běží jako živé weby.
 

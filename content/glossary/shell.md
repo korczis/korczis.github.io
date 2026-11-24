@@ -44,7 +44,7 @@ I have written Shell in 42 public repositories, from 2013 to 2026; in 13 of them
 
 What it was for: [Tools](@/projects/tools.md) (11), [Systems and infrastructure](@/projects/systems.md) (10), [Data and GIS](@/projects/data.md) (5) and [Media and art](@/projects/media.md) (5).
 
-Most recently: [astronomists](@/work/astronomists.md); [Catharsis as a Service](@/work/catharsis-as-a-service.md): A Sig Nihl / Prismatic digital artifact; [Majordomus](@/work/prismatic-majordomus.md): One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.
+Most recently: [Majordomus](@/work/prismatic-majordomus.md): One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model; [astronomists](@/work/astronomists.md); [Catharsis as a Service](@/work/catharsis-as-a-service.md): A Sig Nihl / Prismatic digital artifact.
 
 9 of these projects run as live sites.
 

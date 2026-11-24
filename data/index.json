@@ -1,6 +1,6 @@
 {
  "schema": "korczis-hub-index/v1",
- "generated_at": "2026-11-24T02:32:02Z",
+ "generated_at": "2026-11-24T14:06:04Z",
  "rule": "original = the owner wrote at least half of the listed commits; forks and mirrors are counted, not listed",
  "counts": {
   "github": 448,
@@ -18,7 +18,7 @@
  "dropped": [],
  "supervision": {
   "marker": ".ai/manifest.yaml",
-  "measured_at": "2026-11-24T02:32:02Z",
+  "measured_at": "2026-11-24T14:06:04Z",
   "kept": 0
  },
  "all_repos": [
@@ -1664,7 +1664,7 @@
    ],
    "stars": 0,
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-23T15:09:44Z",
+   "pushed_at": "2026-11-24T02:33:39Z",
    "archived": false,
    "share": 0.91,
    "hosts": {
@@ -2452,7 +2452,7 @@
    ],
    "stars": 1,
    "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-23T04:21:54Z",
+   "pushed_at": "2026-11-24T13:20:47Z",
    "archived": false,
    "share": 0.99,
    "hosts": {
@@ -4329,10 +4329,10 @@
   }
  ],
  "by_category": {
+  "ai": 5,
+  "web": 14,
   "media": 8,
   "tools": 63,
-  "web": 14,
-  "ai": 5,
   "science": 12,
   "knowledge": 5,
   "data": 49,
@@ -4342,6 +4342,18 @@
   "learning": 21
  },
  "categories": {
+  "ai": {
+   "repos": 5,
+   "sites": 1,
+   "top_language": "Elixir",
+   "since": "2025"
+  },
+  "web": {
+   "repos": 14,
+   "sites": 0,
+   "top_language": "JavaScript",
+   "since": "2014"
+  },
   "media": {
    "repos": 8,
    "sites": 4,
@@ -4353,18 +4365,6 @@
    "sites": 6,
    "top_language": "JavaScript",
    "since": "2012"
-  },
-  "web": {
-   "repos": 14,
-   "sites": 0,
-   "top_language": "JavaScript",
-   "since": "2014"
-  },
-  "ai": {
-   "repos": 5,
-   "sites": 1,
-   "top_language": "Elixir",
-   "since": "2025"
   },
   "science": {
    "repos": 12,
@@ -4606,9 +4606,9 @@
    "Dockerfile": 1
   },
   "2026": {
+   "Rust": 1,
    "HTML": 2,
    "Python": 5,
-   "Rust": 1,
    "JavaScript": 3,
    "Elixir": 3,
    "TypeScript": 1
@@ -5101,8 +5101,19 @@
  "recent": {
   "size": 100,
   "from": "2018-03-08T21:01:52Z",
-  "to": "2026-11-23T19:36:26Z",
+  "to": "2026-11-24T13:20:47Z",
   "mix": {
+   "ai": {
+    "Rust": 1,
+    "Elixir": 2,
+    "Unspecified": 2
+   },
+   "web": {
+    "JavaScript": 2,
+    "HTML": 2,
+    "CSS": 3,
+    "Elixir": 1
+   },
    "media": {
     "HTML": 1,
     "Python": 2,
@@ -5121,17 +5132,6 @@
     "OpenSCAD": 1,
     "Shell": 2,
     "Swift": 1
-   },
-   "web": {
-    "JavaScript": 2,
-    "HTML": 2,
-    "CSS": 3,
-    "Elixir": 1
-   },
-   "ai": {
-    "Rust": 1,
-    "Elixir": 2,
-    "Unspecified": 2
    },
    "science": {
     "JavaScript": 1,
@@ -5169,6 +5169,77 @@
  },
  "repos": [
   {
+   "name": "prismatic-majordomus",
+   "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+   "language": "Rust",
+   "topics": [
+    "agentic-ai",
+    "ai",
+    "ai-agents",
+    "ai-governance",
+    "claude-code",
+    "cli",
+    "codex",
+    "continuous-integration",
+    "developer-tools",
+    "devops",
+    "gemini",
+    "llm",
+    "llmops",
+    "mcp",
+    "mermaid",
+    "model-context-protocol",
+    "multi-agent",
+    "policy-as-code",
+    "rust"
+   ],
+   "stars": 1,
+   "created_at": "2026-09-03T20:24:57Z",
+   "pushed_at": "2026-11-24T13:20:47Z",
+   "archived": false,
+   "share": 0.99,
+   "hosts": {
+    "github": "https://github.com/korczis/prismatic-majordomus"
+   },
+   "site": "https://korczis.github.io/prismatic-majordomus/",
+   "supervised": true,
+   "category": "ai",
+   "curated": true
+  },
+  {
+   "name": "korczis.github.io",
+   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+   "language": "JavaScript",
+   "topics": [
+    "accessibility",
+    "ai-agents",
+    "alpinejs",
+    "chartjs",
+    "cytoscape",
+    "echarts",
+    "flowbite",
+    "github-pages",
+    "majordomus",
+    "p5js",
+    "personal-website",
+    "portfolio",
+    "tailwindcss",
+    "zola"
+   ],
+   "stars": 0,
+   "created_at": "2024-12-24T16:48:15Z",
+   "pushed_at": "2026-11-24T02:33:39Z",
+   "archived": false,
+   "share": 0.91,
+   "hosts": {
+    "github": "https://github.com/korczis/korczis.github.io"
+   },
+   "site": null,
+   "supervised": true,
+   "category": "web",
+   "curated": false
+  },
+  {
    "name": "catharsis-as-a-service",
    "description": "Catharsis as a Service™ — emotional state transition endpoint. A Sig Nihl / Prismatic digital artifact.",
    "language": "HTML",
@@ -5203,77 +5274,6 @@
    "supervised": false,
    "category": "tools",
    "curated": false
-  },
-  {
-   "name": "korczis.github.io",
-   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-   "language": "JavaScript",
-   "topics": [
-    "accessibility",
-    "ai-agents",
-    "alpinejs",
-    "chartjs",
-    "cytoscape",
-    "echarts",
-    "flowbite",
-    "github-pages",
-    "majordomus",
-    "p5js",
-    "personal-website",
-    "portfolio",
-    "tailwindcss",
-    "zola"
-   ],
-   "stars": 0,
-   "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-23T15:09:44Z",
-   "archived": false,
-   "share": 0.91,
-   "hosts": {
-    "github": "https://github.com/korczis/korczis.github.io"
-   },
-   "site": null,
-   "supervised": true,
-   "category": "web",
-   "curated": false
-  },
-  {
-   "name": "prismatic-majordomus",
-   "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
-   "language": "Rust",
-   "topics": [
-    "agentic-ai",
-    "ai",
-    "ai-agents",
-    "ai-governance",
-    "claude-code",
-    "cli",
-    "codex",
-    "continuous-integration",
-    "developer-tools",
-    "devops",
-    "gemini",
-    "llm",
-    "llmops",
-    "mcp",
-    "mermaid",
-    "model-context-protocol",
-    "multi-agent",
-    "policy-as-code",
-    "rust"
-   ],
-   "stars": 1,
-   "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-23T04:21:54Z",
-   "archived": false,
-   "share": 0.99,
-   "hosts": {
-    "github": "https://github.com/korczis/prismatic-majordomus"
-   },
-   "site": "https://korczis.github.io/prismatic-majordomus/",
-   "supervised": true,
-   "category": "ai",
-   "curated": true
   },
   {
    "name": "sonic-playground",

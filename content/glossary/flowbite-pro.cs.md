@@ -44,7 +44,7 @@ Flowbite Pro je součástí 11 mých veřejných repozitářů, od roku 2024 do 
 
 K čemu to sloužilo: [Média a umění](@/projects/media.cs.md) (4), [Věda a vizualizace](@/projects/science.cs.md) (2), [Nástroje](@/projects/tools.cs.md) (2) a [Data a GIS](@/projects/data.cs.md) (1).
 
-Naposledy: [astronomists](@/work/astronomists.cs.md); [Catharsis as a Service](@/work/catharsis-as-a-service.cs.md): Digitální artefakt Sig Nihl / Prismatic; [korczis.github.io](@/work/korczis-github-io.cs.md).
+Naposledy: [korczis.github.io](@/work/korczis-github-io.cs.md); [astronomists](@/work/astronomists.cs.md); [Catharsis as a Service](@/work/catharsis-as-a-service.cs.md): Digitální artefakt Sig Nihl / Prismatic.
 
 9 z těchto projektů běží jako živé weby.
 

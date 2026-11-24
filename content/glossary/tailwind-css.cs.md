@@ -44,7 +44,7 @@ Tailwind CSS je součástí 16 mých veřejných repozitářů, od roku 2024 do 
 
 K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (5), [Média a umění](@/projects/media.cs.md) (4), [Data a GIS](@/projects/data.cs.md) (2) a [Věda a vizualizace](@/projects/science.cs.md) (2).
 
-Naposledy: [astronomists](@/work/astronomists.cs.md); [Catharsis as a Service](@/work/catharsis-as-a-service.cs.md): Digitální artefakt Sig Nihl / Prismatic; [korczis.github.io](@/work/korczis-github-io.cs.md).
+Naposledy: [korczis.github.io](@/work/korczis-github-io.cs.md); [astronomists](@/work/astronomists.cs.md); [Catharsis as a Service](@/work/catharsis-as-a-service.cs.md): Digitální artefakt Sig Nihl / Prismatic.
 
 11 z těchto projektů běží jako živé weby.
 
