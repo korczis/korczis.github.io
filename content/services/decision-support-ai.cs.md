@@ -14,7 +14,7 @@ icon = "puzzle"
 og_title = "Podpora rozhodování a AI agenti pro analytiky"
 og_image = "og/cs-service-decision-support-ai.png"
 schema = "service"
-terms = ["service", "elixir", "mcp", "claude-api", "ollama", "phoenix", "ai-agent", "decision-support-system", "contestability", "orchestration", "information-extraction", "audit-trail", "html", "javascript", "shell", "flowbite-pro", "python", "alpine-js", "dockerfile", "postgresql", "tailwind-css", "fastapi"]
+terms = ["service", "elixir", "mcp", "claude-api", "ollama", "phoenix", "ai-agent", "decision-support-system", "contestability", "orchestration", "information-extraction", "audit-trail", "html", "javascript", "shell", "flowbite-pro", "python", "alpine-js", "tailwind-css", "dockerfile", "postgresql", "playwright"]
 keywords = ["Podpora rozhodování a AI agenti pro analytiky", "Agenti s LLM", "Podpora rozhodování", "Napadnutelná rozhodnutí", "Transformace s AI", "Orchestrace", "Vytěžování dokumentů", "Auditní stopa", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -34,7 +34,7 @@ Agenti pracují přes řízená rozhraní nástrojů; každý výstup AI čeká 
 
 Je postavená na: [Elixir](@/glossary/elixir.cs.md), [MCP](@/glossary/mcp.cs.md), [Claude API](@/glossary/claude-api.cs.md), [Ollama](@/glossary/ollama.cs.md) a [Phoenix](@/glossary/phoenix.cs.md).
 
-Technologie za ní, změřené z práce, která tyto dovednosti dokládá: [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Shell](@/glossary/shell.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md), [Python](@/glossary/python.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md) a [PostgreSQL](@/glossary/postgresql.cs.md).
+Technologie za ní, změřené z práce, která tyto dovednosti dokládá: [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Shell](@/glossary/shell.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md), [Python](@/glossary/python.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md), [Tailwind CSS](@/glossary/tailwind-css.cs.md) a [Dockerfile](@/glossary/dockerfile.cs.md).
 
 Její dovednosti dokládá 12 veřejných repozitářů (12 vlastními slovy).
 

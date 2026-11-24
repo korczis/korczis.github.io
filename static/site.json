@@ -122,8 +122,8 @@
  ],
  "front_matter_schema": "https://korczis.github.io/schemas/front-matter.schema.json",
  "data_as_of": {
-  "snapshot": "2026-11-24T13:58:58Z",
-  "index": "2026-11-24T14:06:04Z"
+  "snapshot": "2026-11-24T23:33:09Z",
+  "index": "2026-11-24T23:40:06Z"
  },
  "pages": [
   {
@@ -5597,10 +5597,10 @@
    "keywords": [
     "Tomáš Korčák: projekty",
     "korczis",
-    "korczis.github.io",
-    "sonic-playground",
-    "prismatic-majordomus",
     "oscilla",
+    "sonic-playground",
+    "korczis.github.io",
+    "prismatic-majordomus",
     "kompendium-epistemicke-anihilace",
     "algoglyph",
     "openttd-prismatic-bridge",
@@ -14854,10 +14854,10 @@
    "keywords": [
     "Tomas Korcak projects",
     "korczis",
-    "korczis.github.io",
-    "sonic-playground",
-    "prismatic-majordomus",
     "oscilla",
+    "sonic-playground",
+    "korczis.github.io",
+    "prismatic-majordomus",
     "kompendium-epistemicke-anihilace",
     "algoglyph",
     "openttd-prismatic-bridge",
@@ -19121,6 +19121,48 @@
  ],
  "repositories": [
   {
+   "name": "sonic-playground",
+   "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+   "language": "Python",
+   "category": "media",
+   "page": "https://korczis.github.io/work/sonic-playground/",
+   "pages": {
+    "en": "https://korczis.github.io/work/sonic-playground/",
+    "cs": "https://korczis.github.io/cs/work/sonic-playground/"
+   },
+   "github": "https://github.com/korczis/sonic-playground",
+   "gitlab": null,
+   "site": "https://korczis.github.io/sonic-playground/",
+   "created": "2026-11-12T00:48:36Z",
+   "active": "2026-11-24T23:27:28Z",
+   "last_commit": "2026-11-24T23:18:41Z",
+   "period": 12,
+   "archive": false,
+   "stars": 0,
+   "supervised": true
+  },
+  {
+   "name": "oscilla",
+   "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+   "language": "JavaScript",
+   "category": "science",
+   "page": "https://korczis.github.io/work/oscilla/",
+   "pages": {
+    "en": "https://korczis.github.io/work/oscilla/",
+    "cs": "https://korczis.github.io/cs/work/oscilla/"
+   },
+   "github": "https://github.com/korczis/oscilla",
+   "gitlab": null,
+   "site": "https://korczis.github.io/oscilla/",
+   "created": "2026-10-01T21:05:33Z",
+   "active": "2026-11-24T23:24:51Z",
+   "last_commit": "2026-11-24T23:22:56Z",
+   "period": 12,
+   "archive": false,
+   "stars": 1,
+   "supervised": true
+  },
+  {
    "name": "prismatic-majordomus",
    "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
    "language": "Rust",
@@ -19134,7 +19176,7 @@
    "gitlab": null,
    "site": "https://korczis.github.io/prismatic-majordomus/",
    "created": "2026-09-03T20:24:57Z",
-   "active": "2026-11-24T13:20:47Z",
+   "active": "2026-11-24T20:11:13Z",
    "last_commit": "2026-11-23T00:13:52Z",
    "period": 12,
    "archive": false,
@@ -19155,8 +19197,8 @@
    "gitlab": null,
    "site": null,
    "created": "2024-12-24T16:48:15Z",
-   "active": "2026-11-24T02:33:39Z",
-   "last_commit": "2026-11-24T02:32:41Z",
+   "active": "2026-11-24T14:07:58Z",
+   "last_commit": "2026-11-24T14:06:50Z",
    "period": 12,
    "archive": false,
    "stars": 0,
@@ -19203,48 +19245,6 @@
    "archive": false,
    "stars": 0,
    "supervised": false
-  },
-  {
-   "name": "sonic-playground",
-   "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-   "language": "Python",
-   "category": "media",
-   "page": "https://korczis.github.io/work/sonic-playground/",
-   "pages": {
-    "en": "https://korczis.github.io/work/sonic-playground/",
-    "cs": "https://korczis.github.io/cs/work/sonic-playground/"
-   },
-   "github": "https://github.com/korczis/sonic-playground",
-   "gitlab": null,
-   "site": "https://korczis.github.io/sonic-playground/",
-   "created": "2026-11-12T00:48:36Z",
-   "active": "2026-11-23T01:38:54Z",
-   "last_commit": "2026-11-23T01:23:15Z",
-   "period": 12,
-   "archive": false,
-   "stars": 0,
-   "supervised": true
-  },
-  {
-   "name": "oscilla",
-   "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-   "language": "JavaScript",
-   "category": "science",
-   "page": "https://korczis.github.io/work/oscilla/",
-   "pages": {
-    "en": "https://korczis.github.io/work/oscilla/",
-    "cs": "https://korczis.github.io/cs/work/oscilla/"
-   },
-   "github": "https://github.com/korczis/oscilla",
-   "gitlab": null,
-   "site": "https://korczis.github.io/oscilla/",
-   "created": "2026-10-01T21:05:33Z",
-   "active": "2026-11-22T20:40:54Z",
-   "last_commit": "2026-11-22T20:40:52Z",
-   "period": 12,
-   "archive": false,
-   "stars": 1,
-   "supervised": true
   },
   {
    "name": "kompendium-epistemicke-anihilace",

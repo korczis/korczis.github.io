@@ -4,7 +4,7 @@ title = "Sonic Playground"
 description = "Music that moves you, not algorithmic noise. Active in the last 12 months; media and art."
 template = "work.html"
 weight = 2
-updated = "2026-11-23T01:23:15Z"
+updated = "2026-11-24T23:18:41Z"
 
 [taxonomies]
 tags = ["Media and art", "Python", "JavaScript", "HTML"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **Sonic Playground** is a project in [Media and art](@/projects/media.md). Its code is written mainly in [Python](@/glossary/python.md) (39.6 %), with [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md) and [Shell](@/glossary/shell.md).
 
-The [repository](@/glossary/repository.md) was created on 12 November 2026; its latest [commit](@/glossary/commit.md) is from 23 November 2026. It reads “fix(smoke): the same-page probe keeps the page's own query”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created on 12 November 2026; its latest [commit](@/glossary/commit.md) is from 24 November 2026. It reads “Merge branch 'fix/visualizer-rest': three analysis passes on real recordings, algoglyph's methods”. That places it among the projects active in the last 12 months.
 
 It is built with [Elixir](@/glossary/elixir.md).
 

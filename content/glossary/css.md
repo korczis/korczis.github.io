@@ -16,8 +16,8 @@ kind = "language"
 definition = "The style language of the web: layout, colour and typography of HTML."
 aliases = []
 reference = { title = "MDN Web Docs: CSS", url = "https://developer.mozilla.org/en-US/docs/Web/CSS" }
-pages = ["projects/web.md", "services/ai-engineering-governance.md", "skills/change-monitoring.md", "skills/due-diligence.md", "skills/policy-as-code.md", "skills/registry-intelligence.md", "work/annasabatova-cz.md", "work/apollocrawler-com.md", "work/astronomists.md", "work/astudo.md", "work/bubbler.md", "work/catharsis-as-a-service.md", "work/craftsmen.md", "work/crisis-map.md", "work/czech-stats.md", "work/dj-schnapps.md", "work/gooddata-graphql.md", "work/gooddata-rails-app.md", "work/hydra.md", "work/kanec.md", "work/korczis-com.md", "work/korczis-github-com.md", "work/korczis-github-io.md", "work/korczis-gitlab-io.md", "work/lethe-it.md", "work/majordomus-reel.md", "work/maze.md", "work/microcrawler-couchapp.md", "work/microscratch.md", "work/nestravenkam.md", "work/oscilla.md", "work/pavian-eu.md", "work/prismatic-majordomus.md", "work/prismatic.md", "work/rest-hello-world-benchmark.md", "work/solr-core-minimal.md", "work/sonic-playground.md", "work/test-elixir.md", "work/the-psycho.md", "work/tosh.md", "work/u-tygra.md", "work/vomaste-cz.md"]
-related = ["javascript", "repository", "commit", "open-source", "html", "shell", "elixir", "phoenix"]
+pages = ["projects/web.md", "services/ai-engineering-governance.md", "skills/audit-trail.md", "skills/change-monitoring.md", "skills/due-diligence.md", "skills/policy-as-code.md", "skills/registry-intelligence.md", "work/annasabatova-cz.md", "work/apollocrawler-com.md", "work/astronomists.md", "work/astudo.md", "work/bubbler.md", "work/catharsis-as-a-service.md", "work/craftsmen.md", "work/crisis-map.md", "work/czech-stats.md", "work/dj-schnapps.md", "work/gooddata-graphql.md", "work/gooddata-rails-app.md", "work/hydra.md", "work/kanec.md", "work/korczis-com.md", "work/korczis-github-com.md", "work/korczis-github-io.md", "work/korczis-gitlab-io.md", "work/lethe-it.md", "work/majordomus-reel.md", "work/maze.md", "work/microcrawler-couchapp.md", "work/microscratch.md", "work/nestravenkam.md", "work/oscilla.md", "work/pavian-eu.md", "work/prismatic-majordomus.md", "work/prismatic.md", "work/rest-hello-world-benchmark.md", "work/solr-core-minimal.md", "work/sonic-playground.md", "work/test-elixir.md", "work/the-psycho.md", "work/tosh.md", "work/u-tygra.md", "work/vomaste-cz.md"]
+related = ["javascript", "repository", "commit", "open-source", "html", "shell", "elixir", "tailwind-css"]
 og_title = "CSS: glossary"
 og_image = "og/glossary-css.png"
 keywords = ["CSS", "Programming language", "Glossary", "Tomas Korcak"]
@@ -44,7 +44,7 @@ I have written CSS in 27 public repositories, from 2014 to 2026; in 4 of them it
 
 What it was for: [Web](@/projects/web.md) (10), [Tools](@/projects/tools.md) (7), [Data and GIS](@/projects/data.md) (5) and [Media and art](@/projects/media.md) (3).
 
-Most recently: [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus; [astronomists](@/work/astronomists.md); [Catharsis as a Service](@/work/catharsis-as-a-service.md): A Sig Nihl / Prismatic digital artifact.
+Most recently: [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus; [Oscilla](@/work/oscilla.md): Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty; [Sonic Playground](@/work/sonic-playground.md): A hand-picked music blog built with Phoenix and Elixir on the Kita theme.
 
 8 of these projects run as live sites.
 

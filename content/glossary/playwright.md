@@ -16,8 +16,8 @@ kind = "technology"
 definition = "A browser automation library that drives Chromium, Firefox and WebKit for end-to-end tests and audits."
 aliases = []
 reference = { title = "Playwright documentation", url = "https://playwright.dev/docs/intro" }
-pages = ["services/ai-engineering-governance.md", "services/digital-investigation.md", "services/due-diligence.md", "services/m-and-a.md", "skills/ai-transformation.md", "skills/audit-trail.md", "skills/document-extraction.md", "skills/due-diligence.md", "skills/policy-as-code.md", "work/astronomists.md", "work/catharsis-as-a-service.md", "work/data-atlas.md", "work/korczis-github-io.md", "work/oscilla.md", "work/vomaste-cz.md", "_index.md"]
-related = ["html", "javascript", "tailwind-css", "shell", "alpine-js", "flowbite-pro", "python", "css"]
+pages = ["services/ai-engineering-governance.md", "services/decision-support-ai.md", "services/digital-forensics.md", "services/digital-investigation.md", "services/due-diligence.md", "services/m-and-a.md", "skills/ai-transformation.md", "skills/audit-trail.md", "skills/document-extraction.md", "skills/due-diligence.md", "skills/policy-as-code.md", "work/astronomists.md", "work/catharsis-as-a-service.md", "work/data-atlas.md", "work/korczis-github-io.md", "work/oscilla.md", "work/vomaste-cz.md", "_index.md"]
+related = ["html", "javascript", "tailwind-css", "alpine-js", "flowbite-pro", "python", "shell", "github-pages"]
 og_title = "Playwright: glossary"
 og_image = "og/glossary-playwright.png"
 keywords = ["Playwright", "Technology", "Glossary", "Tomas Korcak"]
@@ -44,7 +44,7 @@ Playwright is part of 6 of my public repositories, from 2024 to 2026.
 
 What it was for: [Tools](@/projects/tools.md) (2), [Data and GIS](@/projects/data.md) (1), [Media and art](@/projects/media.md) (1) and [Science and visualisation](@/projects/science.md) (1).
 
-Most recently: [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus; [astronomists](@/work/astronomists.md); [Catharsis as a Service](@/work/catharsis-as-a-service.md): A Sig Nihl / Prismatic digital artifact.
+Most recently: [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus; [Oscilla](@/work/oscilla.md): Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty; [astronomists](@/work/astronomists.md).
 
 5 of these projects run as live sites.
 

@@ -17,7 +17,7 @@ definition = "A licensed library of interface blocks and an application shell on
 aliases = ["Flowbite"]
 reference = { title = "Flowbite", url = "https://flowbite.com/" }
 pages = ["_index.md", "projects/knowledge.md", "projects/science.md", "services/_index.md", "services/ai-engineering-governance.md", "services/compliance-screening.md", "services/continuous-monitoring.md", "services/decision-support-ai.md", "services/digital-forensics.md", "services/digital-investigation.md", "services/due-diligence.md", "services/interactive-data-products.md", "services/m-and-a.md", "services/reputation-intelligence.md", "skills/_index.md", "skills/ai-transformation.md", "skills/audit-trail.md", "skills/data-room.md", "skills/decision-support.md", "skills/entity-resolution.md", "skills/insolvency-monitoring.md", "skills/interactive-visualisation.md", "skills/knowledge-graph.md", "skills/m-and-a-screening.md", "skills/market-intelligence.md", "skills/orchestration.md", "skills/osint-investigation.md", "skills/ownership-analysis.md", "skills/policy-as-code.md", "skills/registry-intelligence.md", "skills/risk-scoring.md", "stack.md", "work/algoglyph.md", "work/astronomists.md", "work/catharsis-as-a-service.md", "work/crisis-map.md", "work/kompendium-epistemicke-anihilace.md", "work/korczis-github-io.md", "work/majordomus-reel.md", "work/openttd-prismatic-bridge.md", "work/oscilla.md", "work/sonic-playground.md", "work/u-tygra.md"]
-related = ["javascript", "html", "alpine-js", "tailwind-css", "python", "shell", "dockerfile", "elixir"]
+related = ["javascript", "html", "alpine-js", "tailwind-css", "python", "dockerfile", "shell", "elixir"]
 og_title = "Flowbite Pro: glossary"
 og_image = "og/glossary-flowbite-pro.png"
 keywords = ["Flowbite Pro", "Technology", "Glossary", "Tomas Korcak"]
@@ -44,7 +44,7 @@ Flowbite Pro is part of 11 of my public repositories, from 2024 to 2026.
 
 What it was for: [Media and art](@/projects/media.md) (4), [Science and visualisation](@/projects/science.md) (2), [Tools](@/projects/tools.md) (2) and [Data and GIS](@/projects/data.md) (1).
 
-Most recently: [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus; [astronomists](@/work/astronomists.md); [Catharsis as a Service](@/work/catharsis-as-a-service.md): A Sig Nihl / Prismatic digital artifact.
+Most recently: [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus; [Oscilla](@/work/oscilla.md): Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty; [Sonic Playground](@/work/sonic-playground.md): A hand-picked music blog built with Phoenix and Elixir on the Kita theme.
 
 9 of these projects run as live sites.
 

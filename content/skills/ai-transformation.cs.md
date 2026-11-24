@@ -33,7 +33,7 @@ Služby, které z ní čerpají: [Podpora rozhodování a AI agenti pro analytik
 
 Praktikovaná s: [Alpine.js](@/glossary/alpine-js.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md), [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Playwright](@/glossary/playwright.cs.md), [Shell](@/glossary/shell.cs.md) a [Tailwind CSS](@/glossary/tailwind-css.cs.md).
 
-Veřejná práce, jejíž vlastní slova ji dokládají: [oscilla](https://github.com/korczis/oscilla) a [server-archlinux](https://github.com/korczis/server-archlinux).
+Veřejná práce, jejíž vlastní slova ji dokládají: [server-archlinux](https://github.com/korczis/server-archlinux) a [oscilla](https://github.com/korczis/oscilla).
 
 Byla použita v klientské práci v odvětví: Developer nemovitostí; případy užití níže uvádějí princip a záměr, bez jmen a čísel.
 

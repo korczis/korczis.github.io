@@ -1,6 +1,6 @@
 {
  "schema": "korczis-hub-index/v1",
- "generated_at": "2026-11-24T14:06:04Z",
+ "generated_at": "2026-11-24T23:40:06Z",
  "rule": "original = the owner wrote at least half of the listed commits; forks and mirrors are counted, not listed",
  "counts": {
   "github": 448,
@@ -18,7 +18,7 @@
  "dropped": [],
  "supervision": {
   "marker": ".ai/manifest.yaml",
-  "measured_at": "2026-11-24T14:06:04Z",
+  "measured_at": "2026-11-24T23:40:06Z",
   "kept": 0
  },
  "all_repos": [
@@ -1664,9 +1664,9 @@
    ],
    "stars": 0,
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-24T02:33:39Z",
+   "pushed_at": "2026-11-24T14:07:58Z",
    "archived": false,
-   "share": 0.91,
+   "share": 0.9,
    "hosts": {
     "github": "https://github.com/korczis/korczis.github.io"
    },
@@ -2189,7 +2189,7 @@
    ],
    "stars": 1,
    "created_at": "2026-10-01T21:05:33Z",
-   "pushed_at": "2026-11-22T20:40:54Z",
+   "pushed_at": "2026-11-24T23:24:51Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -2452,7 +2452,7 @@
    ],
    "stars": 1,
    "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-24T13:20:47Z",
+   "pushed_at": "2026-11-24T20:11:13Z",
    "archived": false,
    "share": 0.99,
    "hosts": {
@@ -3055,7 +3055,7 @@
    "topics": [],
    "stars": 0,
    "created_at": "2026-11-12T00:48:36Z",
-   "pushed_at": "2026-11-23T01:38:54Z",
+   "pushed_at": "2026-11-24T23:27:28Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -4329,11 +4329,11 @@
   }
  ],
  "by_category": {
+  "media": 8,
+  "science": 12,
   "ai": 5,
   "web": 14,
-  "media": 8,
   "tools": 63,
-  "science": 12,
   "knowledge": 5,
   "data": 49,
   "security": 5,
@@ -4342,6 +4342,18 @@
   "learning": 21
  },
  "categories": {
+  "media": {
+   "repos": 8,
+   "sites": 4,
+   "top_language": "JavaScript",
+   "since": "2015"
+  },
+  "science": {
+   "repos": 12,
+   "sites": 3,
+   "top_language": "Rust",
+   "since": "2014"
+  },
   "ai": {
    "repos": 5,
    "sites": 1,
@@ -4354,23 +4366,11 @@
    "top_language": "JavaScript",
    "since": "2014"
   },
-  "media": {
-   "repos": 8,
-   "sites": 4,
-   "top_language": "JavaScript",
-   "since": "2015"
-  },
   "tools": {
    "repos": 63,
    "sites": 6,
    "top_language": "JavaScript",
    "since": "2012"
-  },
-  "science": {
-   "repos": 12,
-   "sites": 3,
-   "top_language": "Rust",
-   "since": "2014"
   },
   "knowledge": {
    "repos": 5,
@@ -4606,10 +4606,10 @@
    "Dockerfile": 1
   },
   "2026": {
-   "Rust": 1,
-   "HTML": 2,
    "Python": 5,
    "JavaScript": 3,
+   "Rust": 1,
+   "HTML": 2,
    "Elixir": 3,
    "TypeScript": 1
   }
@@ -4621,12 +4621,12 @@
     "repos": 42,
     "evidence": [
      {
-      "name": "korczis.github.io",
-      "url": "https://github.com/korczis/korczis.github.io"
-     },
-     {
       "name": "oscilla",
       "url": "https://github.com/korczis/oscilla"
+     },
+     {
+      "name": "korczis.github.io",
+      "url": "https://github.com/korczis/korczis.github.io"
      },
      {
       "name": "majordomus-reel",
@@ -4711,12 +4711,12 @@
     "repos": 7,
     "evidence": [
      {
-      "name": "astronomists",
-      "url": "https://github.com/korczis/astronomists"
-     },
-     {
       "name": "sonic-playground",
       "url": "https://github.com/korczis/sonic-playground"
+     },
+     {
+      "name": "astronomists",
+      "url": "https://github.com/korczis/astronomists"
      },
      {
       "name": "openttd-prismatic-bridge",
@@ -5101,8 +5101,21 @@
  "recent": {
   "size": 100,
   "from": "2018-03-08T21:01:52Z",
-  "to": "2026-11-24T13:20:47Z",
+  "to": "2026-11-24T23:27:28Z",
   "mix": {
+   "media": {
+    "Python": 2,
+    "HTML": 1,
+    "JavaScript": 1,
+    "Dockerfile": 1,
+    "Elixir": 1
+   },
+   "science": {
+    "JavaScript": 1,
+    "TypeScript": 1,
+    "Elixir": 1,
+    "Rust": 2
+   },
    "ai": {
     "Rust": 1,
     "Elixir": 2,
@@ -5112,13 +5125,6 @@
     "JavaScript": 2,
     "HTML": 2,
     "CSS": 3,
-    "Elixir": 1
-   },
-   "media": {
-    "HTML": 1,
-    "Python": 2,
-    "JavaScript": 1,
-    "Dockerfile": 1,
     "Elixir": 1
    },
    "tools": {
@@ -5132,12 +5138,6 @@
     "OpenSCAD": 1,
     "Shell": 2,
     "Swift": 1
-   },
-   "science": {
-    "JavaScript": 1,
-    "TypeScript": 1,
-    "Elixir": 1,
-    "Rust": 2
    },
    "knowledge": {
     "Elixir": 1,
@@ -5169,6 +5169,52 @@
  },
  "repos": [
   {
+   "name": "sonic-playground",
+   "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+   "language": "Python",
+   "topics": [],
+   "stars": 0,
+   "created_at": "2026-11-12T00:48:36Z",
+   "pushed_at": "2026-11-24T23:27:28Z",
+   "archived": false,
+   "share": 1,
+   "hosts": {
+    "github": "https://github.com/korczis/sonic-playground"
+   },
+   "site": "https://korczis.github.io/sonic-playground/",
+   "supervised": true,
+   "category": "media",
+   "curated": true
+  },
+  {
+   "name": "oscilla",
+   "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+   "language": "JavaScript",
+   "topics": [
+    "acoustics",
+    "audio",
+    "dsp",
+    "education",
+    "javascript",
+    "signal-processing",
+    "spectrogram",
+    "synthesizer",
+    "web-audio"
+   ],
+   "stars": 1,
+   "created_at": "2026-10-01T21:05:33Z",
+   "pushed_at": "2026-11-24T23:24:51Z",
+   "archived": false,
+   "share": 1,
+   "hosts": {
+    "github": "https://github.com/korczis/oscilla"
+   },
+   "site": "https://korczis.github.io/oscilla/",
+   "supervised": true,
+   "category": "science",
+   "curated": true
+  },
+  {
    "name": "prismatic-majordomus",
    "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
    "language": "Rust",
@@ -5195,7 +5241,7 @@
    ],
    "stars": 1,
    "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-24T13:20:47Z",
+   "pushed_at": "2026-11-24T20:11:13Z",
    "archived": false,
    "share": 0.99,
    "hosts": {
@@ -5228,9 +5274,9 @@
    ],
    "stars": 0,
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-24T02:33:39Z",
+   "pushed_at": "2026-11-24T14:07:58Z",
    "archived": false,
-   "share": 0.91,
+   "share": 0.9,
    "hosts": {
     "github": "https://github.com/korczis/korczis.github.io"
    },
@@ -5274,52 +5320,6 @@
    "supervised": false,
    "category": "tools",
    "curated": false
-  },
-  {
-   "name": "sonic-playground",
-   "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-   "language": "Python",
-   "topics": [],
-   "stars": 0,
-   "created_at": "2026-11-12T00:48:36Z",
-   "pushed_at": "2026-11-23T01:38:54Z",
-   "archived": false,
-   "share": 1,
-   "hosts": {
-    "github": "https://github.com/korczis/sonic-playground"
-   },
-   "site": "https://korczis.github.io/sonic-playground/",
-   "supervised": true,
-   "category": "media",
-   "curated": true
-  },
-  {
-   "name": "oscilla",
-   "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-   "language": "JavaScript",
-   "topics": [
-    "acoustics",
-    "audio",
-    "dsp",
-    "education",
-    "javascript",
-    "signal-processing",
-    "spectrogram",
-    "synthesizer",
-    "web-audio"
-   ],
-   "stars": 1,
-   "created_at": "2026-10-01T21:05:33Z",
-   "pushed_at": "2026-11-22T20:40:54Z",
-   "archived": false,
-   "share": 1,
-   "hosts": {
-    "github": "https://github.com/korczis/oscilla"
-   },
-   "site": "https://korczis.github.io/oscilla/",
-   "supervised": true,
-   "category": "science",
-   "curated": true
   },
   {
    "name": "kompendium-epistemicke-anihilace",

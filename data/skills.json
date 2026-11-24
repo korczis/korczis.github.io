@@ -1020,6 +1020,44 @@
           ]
         },
         {
+          "name": "oscilla",
+          "title": "Oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "work": true,
+          "slug": "oscilla",
+          "site": "https://korczis.github.io/oscilla/",
+          "category": "science",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
+          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
+          "created": "2026-10-01",
+          "pushed": "2026-11-24",
+          "primary": true,
+          "share": 96.9,
+          "via": [
+            "primary",
+            "code",
+            "stack",
+            "topic",
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Web Audio",
+            "Alpine.js",
+            "p5.js",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "esbuild",
+            "Playwright",
+            "axe-core",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "prismatic-majordomus",
           "title": "Majordomus",
           "url": "https://github.com/korczis/prismatic-majordomus",
@@ -1051,6 +1089,40 @@
             "Git",
             "YAML",
             "GitHub Actions"
+          ]
+        },
+        {
+          "name": "sonic-playground",
+          "title": "Sonic Playground",
+          "url": "https://github.com/korczis/sonic-playground",
+          "work": true,
+          "slug": "sonic-playground",
+          "site": "https://korczis.github.io/sonic-playground/",
+          "category": "media",
+          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
+          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
+          "created": "2026-11-12",
+          "pushed": "2026-11-24",
+          "primary": false,
+          "share": 39.5,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "Python",
+            "JavaScript",
+            "HTML",
+            "Shell",
+            "CSS",
+            "Elixir",
+            "Zola",
+            "TypeScript",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "JSON Schema",
+            "GitHub Pages"
           ]
         },
         {
@@ -1120,40 +1192,6 @@
             "Flowbite Pro",
             "pytest",
             "Playwright",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "sonic-playground",
-          "title": "Sonic Playground",
-          "url": "https://github.com/korczis/sonic-playground",
-          "work": true,
-          "slug": "sonic-playground",
-          "site": "https://korczis.github.io/sonic-playground/",
-          "category": "media",
-          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
-          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
-          "created": "2026-11-12",
-          "pushed": "2026-11-23",
-          "primary": false,
-          "share": 39.5,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "Python",
-            "JavaScript",
-            "HTML",
-            "Shell",
-            "CSS",
-            "Elixir",
-            "Zola",
-            "TypeScript",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "JSON Schema",
             "GitHub Pages"
           ]
         },
@@ -1229,44 +1267,6 @@
             "Tailwind CSS",
             "p5.js",
             "WebAssembly",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "oscilla",
-          "title": "Oscilla",
-          "url": "https://github.com/korczis/oscilla",
-          "work": true,
-          "slug": "oscilla",
-          "site": "https://korczis.github.io/oscilla/",
-          "category": "science",
-          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
-          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
-          "created": "2026-10-01",
-          "pushed": "2026-11-22",
-          "primary": true,
-          "share": 96.9,
-          "via": [
-            "primary",
-            "code",
-            "stack",
-            "topic",
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Web Audio",
-            "Alpine.js",
-            "p5.js",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "esbuild",
-            "Playwright",
-            "axe-core",
             "GitHub Pages"
           ]
         },
@@ -3444,6 +3444,40 @@
       ],
       "repos": [
         {
+          "name": "sonic-playground",
+          "title": "Sonic Playground",
+          "url": "https://github.com/korczis/sonic-playground",
+          "work": true,
+          "slug": "sonic-playground",
+          "site": "https://korczis.github.io/sonic-playground/",
+          "category": "media",
+          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
+          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
+          "created": "2026-11-12",
+          "pushed": "2026-11-24",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "Python",
+            "JavaScript",
+            "HTML",
+            "Shell",
+            "CSS",
+            "Elixir",
+            "Zola",
+            "TypeScript",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "JSON Schema",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "astronomists",
           "title": "astronomists",
           "url": "https://github.com/korczis/astronomists",
@@ -3475,40 +3509,6 @@
             "Flowbite Pro",
             "Alpine.js",
             "Playwright",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "sonic-playground",
-          "title": "Sonic Playground",
-          "url": "https://github.com/korczis/sonic-playground",
-          "work": true,
-          "slug": "sonic-playground",
-          "site": "https://korczis.github.io/sonic-playground/",
-          "category": "media",
-          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
-          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
-          "created": "2026-11-12",
-          "pushed": "2026-11-23",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "Python",
-            "JavaScript",
-            "HTML",
-            "Shell",
-            "CSS",
-            "Elixir",
-            "Zola",
-            "TypeScript",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "JSON Schema",
             "GitHub Pages"
           ]
         },
@@ -4525,7 +4525,7 @@
           "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
           "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
           "created": "2026-11-12",
-          "pushed": "2026-11-23",
+          "pushed": "2026-11-24",
           "primary": false,
           "share": null,
           "via": [
@@ -7419,6 +7419,42 @@
       ],
       "repos": [
         {
+          "name": "sonic-playground",
+          "title": "Sonic Playground",
+          "url": "https://github.com/korczis/sonic-playground",
+          "work": true,
+          "slug": "sonic-playground",
+          "site": "https://korczis.github.io/sonic-playground/",
+          "category": "media",
+          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
+          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
+          "created": "2026-11-12",
+          "pushed": "2026-11-24",
+          "primary": true,
+          "share": 39.6,
+          "via": [
+            "primary",
+            "code",
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "Python",
+            "JavaScript",
+            "HTML",
+            "Shell",
+            "CSS",
+            "Elixir",
+            "Zola",
+            "TypeScript",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "JSON Schema",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "astronomists",
           "title": "astronomists",
           "url": "https://github.com/korczis/astronomists",
@@ -7487,42 +7523,6 @@
             "Flowbite Pro",
             "pytest",
             "Playwright",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "sonic-playground",
-          "title": "Sonic Playground",
-          "url": "https://github.com/korczis/sonic-playground",
-          "work": true,
-          "slug": "sonic-playground",
-          "site": "https://korczis.github.io/sonic-playground/",
-          "category": "media",
-          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
-          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
-          "created": "2026-11-12",
-          "pushed": "2026-11-23",
-          "primary": true,
-          "share": 39.6,
-          "via": [
-            "primary",
-            "code",
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "Python",
-            "JavaScript",
-            "HTML",
-            "Shell",
-            "CSS",
-            "Elixir",
-            "Zola",
-            "TypeScript",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "JSON Schema",
             "GitHub Pages"
           ]
         },
@@ -8162,6 +8162,40 @@
           ]
         },
         {
+          "name": "sonic-playground",
+          "title": "Sonic Playground",
+          "url": "https://github.com/korczis/sonic-playground",
+          "work": true,
+          "slug": "sonic-playground",
+          "site": "https://korczis.github.io/sonic-playground/",
+          "category": "media",
+          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
+          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
+          "created": "2026-11-12",
+          "pushed": "2026-11-24",
+          "primary": false,
+          "share": 4.6,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "Python",
+            "JavaScript",
+            "HTML",
+            "Shell",
+            "CSS",
+            "Elixir",
+            "Zola",
+            "TypeScript",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "JSON Schema",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "astronomists",
           "title": "astronomists",
           "url": "https://github.com/korczis/astronomists",
@@ -8228,40 +8262,6 @@
             "Flowbite Pro",
             "pytest",
             "Playwright",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "sonic-playground",
-          "title": "Sonic Playground",
-          "url": "https://github.com/korczis/sonic-playground",
-          "work": true,
-          "slug": "sonic-playground",
-          "site": "https://korczis.github.io/sonic-playground/",
-          "category": "media",
-          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
-          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
-          "created": "2026-11-12",
-          "pushed": "2026-11-23",
-          "primary": false,
-          "share": 4.6,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "Python",
-            "JavaScript",
-            "HTML",
-            "Shell",
-            "CSS",
-            "Elixir",
-            "Zola",
-            "TypeScript",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "JSON Schema",
             "GitHub Pages"
           ]
         },
@@ -9539,6 +9539,40 @@
           ]
         },
         {
+          "name": "oscilla",
+          "title": "Oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "work": true,
+          "slug": "oscilla",
+          "site": "https://korczis.github.io/oscilla/",
+          "category": "science",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
+          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
+          "created": "2026-10-01",
+          "pushed": "2026-11-24",
+          "primary": false,
+          "share": 1.9,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Web Audio",
+            "Alpine.js",
+            "p5.js",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "esbuild",
+            "Playwright",
+            "axe-core",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "prismatic-majordomus",
           "title": "Majordomus",
           "url": "https://github.com/korczis/prismatic-majordomus",
@@ -9570,6 +9604,40 @@
             "Git",
             "YAML",
             "GitHub Actions"
+          ]
+        },
+        {
+          "name": "sonic-playground",
+          "title": "Sonic Playground",
+          "url": "https://github.com/korczis/sonic-playground",
+          "work": true,
+          "slug": "sonic-playground",
+          "site": "https://korczis.github.io/sonic-playground/",
+          "category": "media",
+          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
+          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
+          "created": "2026-11-12",
+          "pushed": "2026-11-24",
+          "primary": false,
+          "share": 15.1,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "Python",
+            "JavaScript",
+            "HTML",
+            "Shell",
+            "CSS",
+            "Elixir",
+            "Zola",
+            "TypeScript",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "JSON Schema",
+            "GitHub Pages"
           ]
         },
         {
@@ -9640,40 +9708,6 @@
             "Flowbite Pro",
             "pytest",
             "Playwright",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "sonic-playground",
-          "title": "Sonic Playground",
-          "url": "https://github.com/korczis/sonic-playground",
-          "work": true,
-          "slug": "sonic-playground",
-          "site": "https://korczis.github.io/sonic-playground/",
-          "category": "media",
-          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
-          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
-          "created": "2026-11-12",
-          "pushed": "2026-11-23",
-          "primary": false,
-          "share": 15.1,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "Python",
-            "JavaScript",
-            "HTML",
-            "Shell",
-            "CSS",
-            "Elixir",
-            "Zola",
-            "TypeScript",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "JSON Schema",
             "GitHub Pages"
           ]
         },
@@ -9749,40 +9783,6 @@
             "Tailwind CSS",
             "p5.js",
             "WebAssembly",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "oscilla",
-          "title": "Oscilla",
-          "url": "https://github.com/korczis/oscilla",
-          "work": true,
-          "slug": "oscilla",
-          "site": "https://korczis.github.io/oscilla/",
-          "category": "science",
-          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
-          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
-          "created": "2026-10-01",
-          "pushed": "2026-11-22",
-          "primary": false,
-          "share": 1.9,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Web Audio",
-            "Alpine.js",
-            "p5.js",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "esbuild",
-            "Playwright",
-            "axe-core",
             "GitHub Pages"
           ]
         },
@@ -10809,6 +10809,74 @@
           ]
         },
         {
+          "name": "oscilla",
+          "title": "Oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "work": true,
+          "slug": "oscilla",
+          "site": "https://korczis.github.io/oscilla/",
+          "category": "science",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
+          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
+          "created": "2026-10-01",
+          "pushed": "2026-11-24",
+          "primary": false,
+          "share": 1.1,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Web Audio",
+            "Alpine.js",
+            "p5.js",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "esbuild",
+            "Playwright",
+            "axe-core",
+            "GitHub Pages"
+          ]
+        },
+        {
+          "name": "sonic-playground",
+          "title": "Sonic Playground",
+          "url": "https://github.com/korczis/sonic-playground",
+          "work": true,
+          "slug": "sonic-playground",
+          "site": "https://korczis.github.io/sonic-playground/",
+          "category": "media",
+          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
+          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
+          "created": "2026-11-12",
+          "pushed": "2026-11-24",
+          "primary": false,
+          "share": 1.2,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "Python",
+            "JavaScript",
+            "HTML",
+            "Shell",
+            "CSS",
+            "Elixir",
+            "Zola",
+            "TypeScript",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "JSON Schema",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "astronomists",
           "title": "astronomists",
           "url": "https://github.com/korczis/astronomists",
@@ -10874,74 +10942,6 @@
             "Flowbite Pro",
             "pytest",
             "Playwright",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "sonic-playground",
-          "title": "Sonic Playground",
-          "url": "https://github.com/korczis/sonic-playground",
-          "work": true,
-          "slug": "sonic-playground",
-          "site": "https://korczis.github.io/sonic-playground/",
-          "category": "media",
-          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
-          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
-          "created": "2026-11-12",
-          "pushed": "2026-11-23",
-          "primary": false,
-          "share": 1.2,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "Python",
-            "JavaScript",
-            "HTML",
-            "Shell",
-            "CSS",
-            "Elixir",
-            "Zola",
-            "TypeScript",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "JSON Schema",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "oscilla",
-          "title": "Oscilla",
-          "url": "https://github.com/korczis/oscilla",
-          "work": true,
-          "slug": "oscilla",
-          "site": "https://korczis.github.io/oscilla/",
-          "category": "science",
-          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
-          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
-          "created": "2026-10-01",
-          "pushed": "2026-11-22",
-          "primary": false,
-          "share": 1.1,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Web Audio",
-            "Alpine.js",
-            "p5.js",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "esbuild",
-            "Playwright",
-            "axe-core",
             "GitHub Pages"
           ]
         },
@@ -13937,6 +13937,74 @@
           ]
         },
         {
+          "name": "oscilla",
+          "title": "Oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "work": true,
+          "slug": "oscilla",
+          "site": "https://korczis.github.io/oscilla/",
+          "category": "science",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
+          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
+          "created": "2026-10-01",
+          "pushed": "2026-11-24",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Web Audio",
+            "Alpine.js",
+            "p5.js",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "esbuild",
+            "Playwright",
+            "axe-core",
+            "GitHub Pages"
+          ]
+        },
+        {
+          "name": "sonic-playground",
+          "title": "Sonic Playground",
+          "url": "https://github.com/korczis/sonic-playground",
+          "work": true,
+          "slug": "sonic-playground",
+          "site": "https://korczis.github.io/sonic-playground/",
+          "category": "media",
+          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
+          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
+          "created": "2026-11-12",
+          "pushed": "2026-11-24",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "Python",
+            "JavaScript",
+            "HTML",
+            "Shell",
+            "CSS",
+            "Elixir",
+            "Zola",
+            "TypeScript",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "JSON Schema",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "astronomists",
           "title": "astronomists",
           "url": "https://github.com/korczis/astronomists",
@@ -14002,40 +14070,6 @@
             "Flowbite Pro",
             "pytest",
             "Playwright",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "sonic-playground",
-          "title": "Sonic Playground",
-          "url": "https://github.com/korczis/sonic-playground",
-          "work": true,
-          "slug": "sonic-playground",
-          "site": "https://korczis.github.io/sonic-playground/",
-          "category": "media",
-          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
-          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
-          "created": "2026-11-12",
-          "pushed": "2026-11-23",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "Python",
-            "JavaScript",
-            "HTML",
-            "Shell",
-            "CSS",
-            "Elixir",
-            "Zola",
-            "TypeScript",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "JSON Schema",
             "GitHub Pages"
           ]
         },
@@ -14115,40 +14149,6 @@
             "Tailwind CSS",
             "p5.js",
             "WebAssembly",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "oscilla",
-          "title": "Oscilla",
-          "url": "https://github.com/korczis/oscilla",
-          "work": true,
-          "slug": "oscilla",
-          "site": "https://korczis.github.io/oscilla/",
-          "category": "science",
-          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
-          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
-          "created": "2026-10-01",
-          "pushed": "2026-11-22",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Web Audio",
-            "Alpine.js",
-            "p5.js",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "esbuild",
-            "Playwright",
-            "axe-core",
             "GitHub Pages"
           ]
         },
@@ -14387,6 +14387,74 @@
           ]
         },
         {
+          "name": "oscilla",
+          "title": "Oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "work": true,
+          "slug": "oscilla",
+          "site": "https://korczis.github.io/oscilla/",
+          "category": "science",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
+          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
+          "created": "2026-10-01",
+          "pushed": "2026-11-24",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Web Audio",
+            "Alpine.js",
+            "p5.js",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "esbuild",
+            "Playwright",
+            "axe-core",
+            "GitHub Pages"
+          ]
+        },
+        {
+          "name": "sonic-playground",
+          "title": "Sonic Playground",
+          "url": "https://github.com/korczis/sonic-playground",
+          "work": true,
+          "slug": "sonic-playground",
+          "site": "https://korczis.github.io/sonic-playground/",
+          "category": "media",
+          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
+          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
+          "created": "2026-11-12",
+          "pushed": "2026-11-24",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "Python",
+            "JavaScript",
+            "HTML",
+            "Shell",
+            "CSS",
+            "Elixir",
+            "Zola",
+            "TypeScript",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "JSON Schema",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "astronomists",
           "title": "astronomists",
           "url": "https://github.com/korczis/astronomists",
@@ -14452,40 +14520,6 @@
             "Flowbite Pro",
             "pytest",
             "Playwright",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "sonic-playground",
-          "title": "Sonic Playground",
-          "url": "https://github.com/korczis/sonic-playground",
-          "work": true,
-          "slug": "sonic-playground",
-          "site": "https://korczis.github.io/sonic-playground/",
-          "category": "media",
-          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
-          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
-          "created": "2026-11-12",
-          "pushed": "2026-11-23",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "Python",
-            "JavaScript",
-            "HTML",
-            "Shell",
-            "CSS",
-            "Elixir",
-            "Zola",
-            "TypeScript",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "JSON Schema",
             "GitHub Pages"
           ]
         },
@@ -14562,40 +14596,6 @@
             "Tailwind CSS",
             "p5.js",
             "WebAssembly",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "oscilla",
-          "title": "Oscilla",
-          "url": "https://github.com/korczis/oscilla",
-          "work": true,
-          "slug": "oscilla",
-          "site": "https://korczis.github.io/oscilla/",
-          "category": "science",
-          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
-          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
-          "created": "2026-10-01",
-          "pushed": "2026-11-22",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Web Audio",
-            "Alpine.js",
-            "p5.js",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "esbuild",
-            "Playwright",
-            "axe-core",
             "GitHub Pages"
           ]
         },
@@ -14999,6 +14999,40 @@
           ]
         },
         {
+          "name": "oscilla",
+          "title": "Oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "work": true,
+          "slug": "oscilla",
+          "site": "https://korczis.github.io/oscilla/",
+          "category": "science",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
+          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
+          "created": "2026-10-01",
+          "pushed": "2026-11-24",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Web Audio",
+            "Alpine.js",
+            "p5.js",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "esbuild",
+            "Playwright",
+            "axe-core",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "astronomists",
           "title": "astronomists",
           "url": "https://github.com/korczis/astronomists",
@@ -15141,40 +15175,6 @@
             "Tailwind CSS",
             "p5.js",
             "WebAssembly",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "oscilla",
-          "title": "Oscilla",
-          "url": "https://github.com/korczis/oscilla",
-          "work": true,
-          "slug": "oscilla",
-          "site": "https://korczis.github.io/oscilla/",
-          "category": "science",
-          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
-          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
-          "created": "2026-10-01",
-          "pushed": "2026-11-22",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Web Audio",
-            "Alpine.js",
-            "p5.js",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "esbuild",
-            "Playwright",
-            "axe-core",
             "GitHub Pages"
           ]
         },
@@ -15703,6 +15703,40 @@
           ]
         },
         {
+          "name": "oscilla",
+          "title": "Oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "work": true,
+          "slug": "oscilla",
+          "site": "https://korczis.github.io/oscilla/",
+          "category": "science",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
+          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
+          "created": "2026-10-01",
+          "pushed": "2026-11-24",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Web Audio",
+            "Alpine.js",
+            "p5.js",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "esbuild",
+            "Playwright",
+            "axe-core",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "algoglyph",
           "title": "algoglyph",
           "url": "https://github.com/korczis/algoglyph",
@@ -15776,40 +15810,6 @@
             "Tailwind CSS",
             "p5.js",
             "WebAssembly",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "oscilla",
-          "title": "Oscilla",
-          "url": "https://github.com/korczis/oscilla",
-          "work": true,
-          "slug": "oscilla",
-          "site": "https://korczis.github.io/oscilla/",
-          "category": "science",
-          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
-          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
-          "created": "2026-10-01",
-          "pushed": "2026-11-22",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Web Audio",
-            "Alpine.js",
-            "p5.js",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "esbuild",
-            "Playwright",
-            "axe-core",
             "GitHub Pages"
           ]
         },
@@ -15961,6 +15961,40 @@
           ]
         },
         {
+          "name": "sonic-playground",
+          "title": "Sonic Playground",
+          "url": "https://github.com/korczis/sonic-playground",
+          "work": true,
+          "slug": "sonic-playground",
+          "site": "https://korczis.github.io/sonic-playground/",
+          "category": "media",
+          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
+          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
+          "created": "2026-11-12",
+          "pushed": "2026-11-24",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "Python",
+            "JavaScript",
+            "HTML",
+            "Shell",
+            "CSS",
+            "Elixir",
+            "Zola",
+            "TypeScript",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "JSON Schema",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "astronomists",
           "title": "astronomists",
           "url": "https://github.com/korczis/astronomists",
@@ -16026,40 +16060,6 @@
             "Flowbite Pro",
             "pytest",
             "Playwright",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "sonic-playground",
-          "title": "Sonic Playground",
-          "url": "https://github.com/korczis/sonic-playground",
-          "work": true,
-          "slug": "sonic-playground",
-          "site": "https://korczis.github.io/sonic-playground/",
-          "category": "media",
-          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
-          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
-          "created": "2026-11-12",
-          "pushed": "2026-11-23",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "Python",
-            "JavaScript",
-            "HTML",
-            "Shell",
-            "CSS",
-            "Elixir",
-            "Zola",
-            "TypeScript",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "JSON Schema",
             "GitHub Pages"
           ]
         },
@@ -17549,7 +17549,7 @@
           "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
           "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
           "created": "2026-10-01",
-          "pushed": "2026-11-22",
+          "pushed": "2026-11-24",
           "primary": false,
           "share": null,
           "via": [
@@ -17660,6 +17660,74 @@
           ]
         },
         {
+          "name": "oscilla",
+          "title": "Oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "work": true,
+          "slug": "oscilla",
+          "site": "https://korczis.github.io/oscilla/",
+          "category": "science",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
+          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
+          "created": "2026-10-01",
+          "pushed": "2026-11-24",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Web Audio",
+            "Alpine.js",
+            "p5.js",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "esbuild",
+            "Playwright",
+            "axe-core",
+            "GitHub Pages"
+          ]
+        },
+        {
+          "name": "sonic-playground",
+          "title": "Sonic Playground",
+          "url": "https://github.com/korczis/sonic-playground",
+          "work": true,
+          "slug": "sonic-playground",
+          "site": "https://korczis.github.io/sonic-playground/",
+          "category": "media",
+          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
+          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
+          "created": "2026-11-12",
+          "pushed": "2026-11-24",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "Python",
+            "JavaScript",
+            "HTML",
+            "Shell",
+            "CSS",
+            "Elixir",
+            "Zola",
+            "TypeScript",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "JSON Schema",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "astronomists",
           "title": "astronomists",
           "url": "https://github.com/korczis/astronomists",
@@ -17725,40 +17793,6 @@
             "Flowbite Pro",
             "pytest",
             "Playwright",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "sonic-playground",
-          "title": "Sonic Playground",
-          "url": "https://github.com/korczis/sonic-playground",
-          "work": true,
-          "slug": "sonic-playground",
-          "site": "https://korczis.github.io/sonic-playground/",
-          "category": "media",
-          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
-          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
-          "created": "2026-11-12",
-          "pushed": "2026-11-23",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "Python",
-            "JavaScript",
-            "HTML",
-            "Shell",
-            "CSS",
-            "Elixir",
-            "Zola",
-            "TypeScript",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "JSON Schema",
             "GitHub Pages"
           ]
         },
@@ -17834,40 +17868,6 @@
             "Tailwind CSS",
             "p5.js",
             "WebAssembly",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "oscilla",
-          "title": "Oscilla",
-          "url": "https://github.com/korczis/oscilla",
-          "work": true,
-          "slug": "oscilla",
-          "site": "https://korczis.github.io/oscilla/",
-          "category": "science",
-          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
-          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
-          "created": "2026-10-01",
-          "pushed": "2026-11-22",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Web Audio",
-            "Alpine.js",
-            "p5.js",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "esbuild",
-            "Playwright",
-            "axe-core",
             "GitHub Pages"
           ]
         },
@@ -20005,6 +20005,40 @@
           ]
         },
         {
+          "name": "oscilla",
+          "title": "Oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "work": true,
+          "slug": "oscilla",
+          "site": "https://korczis.github.io/oscilla/",
+          "category": "science",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
+          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
+          "created": "2026-10-01",
+          "pushed": "2026-11-24",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Web Audio",
+            "Alpine.js",
+            "p5.js",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "esbuild",
+            "Playwright",
+            "axe-core",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "astronomists",
           "title": "astronomists",
           "url": "https://github.com/korczis/astronomists",
@@ -20070,40 +20104,6 @@
             "Flowbite Pro",
             "pytest",
             "Playwright",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "oscilla",
-          "title": "Oscilla",
-          "url": "https://github.com/korczis/oscilla",
-          "work": true,
-          "slug": "oscilla",
-          "site": "https://korczis.github.io/oscilla/",
-          "category": "science",
-          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
-          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
-          "created": "2026-10-01",
-          "pushed": "2026-11-22",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Web Audio",
-            "Alpine.js",
-            "p5.js",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "esbuild",
-            "Playwright",
-            "axe-core",
             "GitHub Pages"
           ]
         },
@@ -32497,7 +32497,7 @@
           "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
           "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
           "created": "2026-11-12",
-          "pushed": "2026-11-23",
+          "pushed": "2026-11-24",
           "primary": false,
           "share": null,
           "via": [
@@ -32882,6 +32882,40 @@
           ]
         },
         {
+          "name": "oscilla",
+          "title": "Oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "work": true,
+          "slug": "oscilla",
+          "site": "https://korczis.github.io/oscilla/",
+          "category": "science",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
+          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
+          "created": "2026-10-01",
+          "pushed": "2026-11-24",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Web Audio",
+            "Alpine.js",
+            "p5.js",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "esbuild",
+            "Playwright",
+            "axe-core",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "algoglyph",
           "title": "algoglyph",
           "url": "https://github.com/korczis/algoglyph",
@@ -32914,40 +32948,6 @@
             "WebGL",
             "Vite",
             "Vitest",
-            "axe-core",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "oscilla",
-          "title": "Oscilla",
-          "url": "https://github.com/korczis/oscilla",
-          "work": true,
-          "slug": "oscilla",
-          "site": "https://korczis.github.io/oscilla/",
-          "category": "science",
-          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
-          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
-          "created": "2026-10-01",
-          "pushed": "2026-11-22",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Web Audio",
-            "Alpine.js",
-            "p5.js",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "esbuild",
-            "Playwright",
             "axe-core",
             "GitHub Pages"
           ]
@@ -38140,7 +38140,7 @@
           "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
           "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
           "created": "2026-10-01",
-          "pushed": "2026-11-22",
+          "pushed": "2026-11-24",
           "primary": false,
           "share": null,
           "via": [

@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Hosting statických webů od GitHubu nasazovaný z repozitáře; žije tam tento web i většina webů projektů."
 aliases = ["github-pages"]
 reference = { title = "GitHub Pages documentation", url = "https://docs.github.com/en/pages" }
-pages = ["interfaces.cs.md", "services/ai-engineering-governance.cs.md", "skills/interactive-visualisation.cs.md", "skills/narrative-analysis.cs.md", "skills/ownership-analysis.cs.md", "skills/policy-as-code.cs.md", "stack.cs.md", "work/algoglyph.cs.md", "work/apollon.cs.md", "work/astronomists.cs.md", "work/bubbler.cs.md", "work/catharsis-as-a-service.cs.md", "work/crisis-map.cs.md", "work/csv2psql.cs.md", "work/data-atlas.cs.md", "work/gists-search.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/korczis-github-com.cs.md", "work/korczis-github-io.cs.md", "work/majordomus-reel.cs.md", "work/maze-rs.cs.md", "work/oscilla.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/prismatic-blog.cs.md", "work/prismatic-majordomus.cs.md", "work/sonic-playground.cs.md", "work/u-tygra.cs.md", "work/vomaste-cz.cs.md"]
-related = ["html", "commit", "javascript", "open-source", "repository", "shell", "tailwind-css", "flowbite-pro"]
+pages = ["interfaces.cs.md", "services/ai-engineering-governance.cs.md", "services/digital-forensics.cs.md", "skills/audit-trail.cs.md", "skills/interactive-visualisation.cs.md", "skills/narrative-analysis.cs.md", "skills/ownership-analysis.cs.md", "skills/policy-as-code.cs.md", "stack.cs.md", "work/algoglyph.cs.md", "work/apollon.cs.md", "work/astronomists.cs.md", "work/bubbler.cs.md", "work/catharsis-as-a-service.cs.md", "work/crisis-map.cs.md", "work/csv2psql.cs.md", "work/data-atlas.cs.md", "work/gists-search.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/korczis-github-com.cs.md", "work/korczis-github-io.cs.md", "work/majordomus-reel.cs.md", "work/maze-rs.cs.md", "work/oscilla.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/prismatic-blog.cs.md", "work/prismatic-majordomus.cs.md", "work/sonic-playground.cs.md", "work/u-tygra.cs.md", "work/vomaste-cz.cs.md"]
+related = ["html", "javascript", "commit", "open-source", "repository", "flowbite-pro", "shell", "tailwind-css"]
 og_title = "GitHub Pages: slovník"
 og_image = "og/cs-glossary-github-pages.png"
 keywords = ["GitHub Pages", "Technologie", "Slovník", "Tomáš Korčák"]
@@ -44,7 +44,7 @@ GitHub Pages je součástí 15 mých veřejných repozitářů, od roku 2019 do 
 
 K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (5), [Média a umění](@/projects/media.cs.md) (3), [Věda a vizualizace](@/projects/science.cs.md) (2) a [Web](@/projects/web.cs.md) (2).
 
-Naposledy: [korczis.github.io](@/work/korczis-github-io.cs.md); [astronomists](@/work/astronomists.cs.md); [Catharsis as a Service](@/work/catharsis-as-a-service.cs.md): Digitální artefakt Sig Nihl / Prismatic.
+Naposledy: [korczis.github.io](@/work/korczis-github-io.cs.md); [Oscilla](@/work/oscilla.cs.md): Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu; [Sonic Playground](@/work/sonic-playground.cs.md): Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.
 
 13 z těchto projektů běží jako živé weby.
 

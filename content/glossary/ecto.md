@@ -16,8 +16,8 @@ kind = "technology"
 definition = "Elixir's database toolkit: schemas, changesets that validate data, composable queries and migrations, most often over PostgreSQL."
 aliases = []
 reference = { title = "Ecto documentation", url = "https://hexdocs.pm/ecto/" }
-pages = ["services/digital-forensics.md", "services/digital-investigation.md", "skills/data-integration.md", "skills/media-forensics.md", "skills/osint-investigation.md", "skills/registry-intelligence.md", "work/crisis-map.md", "work/kanec.md", "work/llm.md", "work/prismatic.md", "work/sig.md", "work/test-elixir.md", "work/the-psycho.md", "work/tosh.md"]
-related = ["elixir", "postgresql", "javascript", "html", "commit", "dockerfile", "open-source", "phoenix"]
+pages = ["services/digital-investigation.md", "skills/data-integration.md", "skills/media-forensics.md", "skills/osint-investigation.md", "skills/registry-intelligence.md", "work/crisis-map.md", "work/kanec.md", "work/llm.md", "work/prismatic.md", "work/sig.md", "work/test-elixir.md", "work/the-psycho.md", "work/tosh.md"]
+related = ["elixir", "postgresql", "javascript", "commit", "html", "open-source", "phoenix", "repository"]
 og_title = "Ecto: glossary"
 og_image = "og/glossary-ecto.png"
 keywords = ["Ecto", "Technology", "Glossary", "Tomas Korcak"]

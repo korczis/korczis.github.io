@@ -17,7 +17,7 @@ definition = "Agentní nástroj Anthropicu pro programování: čte repozitář,
 aliases = []
 reference = { title = "Claude Code documentation", url = "https://docs.anthropic.com/en/docs/claude-code/overview" }
 pages = ["services/digital-forensics.cs.md", "skills/llm-agents.cs.md", "skills/media-forensics.cs.md", "skills/narrative-analysis.cs.md", "skills/orchestration.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md"]
-related = ["html", "shell", "claude-api", "github-actions", "python", "skill", "alpine-js", "dockerfile"]
+related = ["html", "claude-api", "github-actions", "python", "shell", "skill", "alpine-js", "dockerfile"]
 og_title = "Claude Code: slovník"
 og_image = "og/cs-glossary-claude-code.png"
 keywords = ["Claude Code", "Technologie", "Slovník", "Tomáš Korčák"]

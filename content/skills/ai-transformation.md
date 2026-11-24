@@ -33,7 +33,7 @@ Services that draw on it: [Decision support and AI agents for analysts](@/servic
 
 Practised with: [Alpine.js](@/glossary/alpine-js.md), [Dockerfile](@/glossary/dockerfile.md), [Flowbite Pro](@/glossary/flowbite-pro.md), [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md), [Playwright](@/glossary/playwright.md), [Shell](@/glossary/shell.md) and [Tailwind CSS](@/glossary/tailwind-css.md).
 
-Public work whose own words show it: [oscilla](https://github.com/korczis/oscilla) and [server-archlinux](https://github.com/korczis/server-archlinux).
+Public work whose own words show it: [server-archlinux](https://github.com/korczis/server-archlinux) and [oscilla](https://github.com/korczis/oscilla).
 
 It was applied in client work in Real-estate developer; the use cases below give the principle and the intent, without names or numbers.
 
