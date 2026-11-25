@@ -34,6 +34,6 @@ The [repository](@/glossary/repository.md) was created on 18 November 2016; its 
 
 Its source is on [GitHub](https://github.com/korczis/maze) and [GitLab](https://gitlab.com/korczis/maze).
 
-Related work in [Science and visualisation](@/projects/science.md): [Oscilla](@/work/oscilla.md) (2026), [algoglyph](@/work/algoglyph.md) (2026), [prismatic-flipperzero](@/work/prismatic-flipperzero.md) (2026) and [maze-rs](@/work/maze-rs.md) (2016).
+Related work in [Science and visualisation](@/projects/science.md): [Oscilla](@/work/oscilla.md) (2026), [prismatic-flipperzero](@/work/prismatic-flipperzero.md) (2026), [algoglyph](@/work/algoglyph.md) (2026) and [maze-rs](@/work/maze-rs.md) (2016).
 
 *How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 3 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

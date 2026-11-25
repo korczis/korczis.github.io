@@ -44,7 +44,7 @@ I have written JavaScript in 79 public repositories, from 2013 to 2026; in 43 of
 
 What it was for: [Data and GIS](@/projects/data.md) (26), [Tools](@/projects/tools.md) (19), [Web](@/projects/web.md) (11) and [Media and art](@/projects/media.md) (6).
 
-Most recently: [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus; [Oscilla](@/work/oscilla.md): Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty; [prismatic-flipperzero](@/work/prismatic-flipperzero.md): Prismatic Pocket for Flipper Zero: an offline, data-driven knowledge engine with live assessments, scorecards, crisis simulations and a Bayes calculator; a deterministic pack compiler and a portable C core.
+Most recently: [algoglyph](@/work/algoglyph.md): Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core; [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus; [Oscilla](@/work/oscilla.md): Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.
 
 16 of these projects run as live sites.
 

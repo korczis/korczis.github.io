@@ -36,7 +36,7 @@ It is built with [Elixir](@/glossary/elixir.md), [MCP](@/glossary/mcp.md), [Clau
 
 The technologies behind it, measured from the work that shows those skills: [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md), [Shell](@/glossary/shell.md), [Python](@/glossary/python.md), [Flowbite Pro](@/glossary/flowbite-pro.md), [Dockerfile](@/glossary/dockerfile.md), [PostgreSQL](@/glossary/postgresql.md) and [Alpine.js](@/glossary/alpine-js.md).
 
-11 public repositories show its skills (11 by their own words).
+12 public repositories show its skills (12 by their own words).
 
 It was delivered in client work under confidentiality agreements, in Real-estate developer and Financial and investment group, as Architect, Lead engineer, AI engineer, Data engineer, Investigator and Advisor; the use cases describe the principle and the intent, never a client, person, date or number.
 

@@ -40,12 +40,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
-I have written CSS in 27 public repositories, from 2014 to 2026; in 4 of them it is the main language.
+I have written CSS in 26 public repositories, from 2014 to 2026; in 4 of them it is the main language.
 
-What it was for: [Web](@/projects/web.md) (10), [Tools](@/projects/tools.md) (7), [Data and GIS](@/projects/data.md) (5) and [Media and art](@/projects/media.md) (3).
+What it was for: [Web](@/projects/web.md) (10), [Tools](@/projects/tools.md) (7), [Data and GIS](@/projects/data.md) (5) and [Media and art](@/projects/media.md) (2).
 
-Most recently: [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus; [Oscilla](@/work/oscilla.md): Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty; [Sonic Playground](@/work/sonic-playground.md): A hand-picked music blog built with Phoenix and Elixir on the Kita theme.
+Most recently: [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus; [Oscilla](@/work/oscilla.md): Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty; [astronomists](@/work/astronomists.md).
 
-8 of these projects run as live sites.
+7 of these projects run as live sites.
 
 How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses CSS: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links CSS to the repositories and to the other languages and technologies they use together.

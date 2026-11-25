@@ -44,7 +44,7 @@ I have written TypeScript in 6 public repositories, from 2019 to 2026; in 3 of t
 
 What it was for: [Tools](@/projects/tools.md) (3), [AI engineering](@/projects/ai.md) (1), [Media and art](@/projects/media.md) (1) and [Science and visualisation](@/projects/science.md) (1).
 
-Most recently: [Sonic Playground](@/work/sonic-playground.md): A hand-picked music blog built with Phoenix and Elixir on the Kita theme; [astronomists](@/work/astronomists.md); [algoglyph](@/work/algoglyph.md): Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core.
+Most recently: [algoglyph](@/work/algoglyph.md): Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core; [Sonic Playground](@/work/sonic-playground.md): A hand-picked music blog built with Phoenix and Elixir on the Kita theme; [astronomists](@/work/astronomists.md).
 
 3 of these projects run as live sites.
 

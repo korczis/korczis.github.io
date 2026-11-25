@@ -1,6 +1,6 @@
 {
  "schema": "korczis-hub-index/v1",
- "generated_at": "2026-11-25T13:59:09Z",
+ "generated_at": "2026-11-25T19:36:06Z",
  "rule": "original = the owner wrote at least half of the listed commits; forks and mirrors are counted, not listed",
  "counts": {
   "github": 449,
@@ -18,7 +18,7 @@
  "dropped": [],
  "supervision": {
   "marker": ".ai/manifest.yaml",
-  "measured_at": "2026-11-25T13:59:09Z",
+  "measured_at": "2026-11-25T19:36:06Z",
   "kept": 0
  },
  "all_repos": [
@@ -60,7 +60,7 @@
    ],
    "stars": 0,
    "created_at": "2026-11-11T18:09:38Z",
-   "pushed_at": "2026-11-22T07:04:46Z",
+   "pushed_at": "2026-11-25T17:12:47Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -1664,9 +1664,9 @@
    ],
    "stars": 0,
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-25T13:44:00Z",
+   "pushed_at": "2026-11-25T14:01:04Z",
    "archived": false,
-   "share": 0.9,
+   "share": 0.89,
    "hosts": {
     "github": "https://github.com/korczis/korczis.github.io"
    },
@@ -2189,7 +2189,7 @@
    ],
    "stars": 1,
    "created_at": "2026-10-01T21:05:33Z",
-   "pushed_at": "2026-11-25T13:07:24Z",
+   "pushed_at": "2026-11-25T16:22:21Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -2432,7 +2432,7 @@
    "topics": [],
    "stars": 0,
    "created_at": "2026-11-25T03:06:03Z",
-   "pushed_at": "2026-11-25T13:49:18Z",
+   "pushed_at": "2026-11-25T13:59:17Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -3073,7 +3073,7 @@
    "topics": [],
    "stars": 0,
    "created_at": "2026-11-12T00:48:36Z",
-   "pushed_at": "2026-11-25T03:12:46Z",
+   "pushed_at": "2026-11-25T15:06:29Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -4348,9 +4348,9 @@
  ],
  "by_category": {
   "science": 13,
+  "media": 8,
   "web": 14,
   "ai": 5,
-  "media": 8,
   "tools": 63,
   "knowledge": 5,
   "data": 49,
@@ -4366,6 +4366,12 @@
    "top_language": "Rust",
    "since": "2014"
   },
+  "media": {
+   "repos": 8,
+   "sites": 4,
+   "top_language": "JavaScript",
+   "since": "2015"
+  },
   "web": {
    "repos": 14,
    "sites": 0,
@@ -4377,12 +4383,6 @@
    "sites": 1,
    "top_language": "Elixir",
    "since": "2025"
-  },
-  "media": {
-   "repos": 8,
-   "sites": 4,
-   "top_language": "JavaScript",
-   "since": "2015"
   },
   "tools": {
    "repos": 63,
@@ -4624,13 +4624,13 @@
    "Dockerfile": 1
   },
   "2026": {
-   "C": 1,
+   "TypeScript": 1,
    "JavaScript": 4,
+   "C": 1,
    "Rust": 1,
    "HTML": 2,
    "Python": 4,
-   "Elixir": 3,
-   "TypeScript": 1
+   "Elixir": 3
   }
  },
  "skills": {
@@ -4640,16 +4640,16 @@
     "repos": 43,
     "evidence": [
      {
-      "name": "korczis.github.io",
-      "url": "https://github.com/korczis/korczis.github.io"
-     },
-     {
       "name": "oscilla",
       "url": "https://github.com/korczis/oscilla"
      },
      {
       "name": "sonic-playground",
       "url": "https://github.com/korczis/sonic-playground"
+     },
+     {
+      "name": "korczis.github.io",
+      "url": "https://github.com/korczis/korczis.github.io"
      }
     ]
    },
@@ -5124,14 +5124,21 @@
  "recent": {
   "size": 100,
   "from": "2018-03-10T17:02:00Z",
-  "to": "2026-11-25T13:49:18Z",
+  "to": "2026-11-25T17:12:47Z",
   "mix": {
    "science": {
-    "C": 1,
-    "JavaScript": 1,
     "TypeScript": 1,
+    "JavaScript": 1,
+    "C": 1,
     "Elixir": 1,
     "Rust": 1
+   },
+   "media": {
+    "JavaScript": 2,
+    "HTML": 1,
+    "Python": 1,
+    "Dockerfile": 1,
+    "Elixir": 1
    },
    "web": {
     "JavaScript": 2,
@@ -5143,13 +5150,6 @@
     "Rust": 1,
     "Elixir": 2,
     "Unspecified": 2
-   },
-   "media": {
-    "JavaScript": 2,
-    "HTML": 1,
-    "Python": 1,
-    "Dockerfile": 1,
-    "Elixir": 1
    },
    "tools": {
     "Python": 3,
@@ -5193,22 +5193,81 @@
  },
  "repos": [
   {
-   "name": "prismatic-flipperzero",
-   "description": "Prismatic Pocket for Flipper Zero: an offline, data-driven knowledge engine with live assessments, scorecards, crisis simulations and a Bayes calculator; a deterministic pack compiler and a portable C core",
-   "language": "C",
-   "topics": [],
+   "name": "algoglyph",
+   "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
+   "language": "TypeScript",
+   "topics": [
+    "algorithms",
+    "alpinejs",
+    "creative-coding",
+    "data-visualization",
+    "flowbite",
+    "generative-art",
+    "majordomus",
+    "p5js",
+    "physics-simulation",
+    "tailwindcss",
+    "typescript",
+    "webgl"
+   ],
    "stars": 0,
-   "created_at": "2026-11-25T03:06:03Z",
-   "pushed_at": "2026-11-25T13:49:18Z",
+   "created_at": "2026-11-11T18:09:38Z",
+   "pushed_at": "2026-11-25T17:12:47Z",
    "archived": false,
    "share": 1,
    "hosts": {
-    "github": "https://github.com/korczis/prismatic-flipperzero"
+    "github": "https://github.com/korczis/algoglyph"
    },
-   "site": "https://korczis.github.io/prismatic-flipperzero/",
+   "site": "https://korczis.github.io/algoglyph/",
    "supervised": true,
    "category": "science",
-   "curated": false
+   "curated": true
+  },
+  {
+   "name": "oscilla",
+   "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+   "language": "JavaScript",
+   "topics": [
+    "acoustics",
+    "audio",
+    "dsp",
+    "education",
+    "javascript",
+    "signal-processing",
+    "spectrogram",
+    "synthesizer",
+    "web-audio"
+   ],
+   "stars": 1,
+   "created_at": "2026-10-01T21:05:33Z",
+   "pushed_at": "2026-11-25T16:22:21Z",
+   "archived": false,
+   "share": 1,
+   "hosts": {
+    "github": "https://github.com/korczis/oscilla"
+   },
+   "site": "https://korczis.github.io/oscilla/",
+   "supervised": true,
+   "category": "science",
+   "curated": true
+  },
+  {
+   "name": "sonic-playground",
+   "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+   "language": "JavaScript",
+   "topics": [],
+   "stars": 0,
+   "created_at": "2026-11-12T00:48:36Z",
+   "pushed_at": "2026-11-25T15:06:29Z",
+   "archived": false,
+   "share": 1,
+   "hosts": {
+    "github": "https://github.com/korczis/sonic-playground"
+   },
+   "site": "https://korczis.github.io/sonic-playground/",
+   "supervised": true,
+   "category": "media",
+   "curated": true
   },
   {
    "name": "korczis.github.io",
@@ -5232,9 +5291,9 @@
    ],
    "stars": 0,
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-25T13:44:00Z",
+   "pushed_at": "2026-11-25T14:01:04Z",
    "archived": false,
-   "share": 0.9,
+   "share": 0.89,
    "hosts": {
     "github": "https://github.com/korczis/korczis.github.io"
    },
@@ -5244,32 +5303,22 @@
    "curated": false
   },
   {
-   "name": "oscilla",
-   "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-   "language": "JavaScript",
-   "topics": [
-    "acoustics",
-    "audio",
-    "dsp",
-    "education",
-    "javascript",
-    "signal-processing",
-    "spectrogram",
-    "synthesizer",
-    "web-audio"
-   ],
-   "stars": 1,
-   "created_at": "2026-10-01T21:05:33Z",
-   "pushed_at": "2026-11-25T13:07:24Z",
+   "name": "prismatic-flipperzero",
+   "description": "Prismatic Pocket for Flipper Zero: an offline, data-driven knowledge engine with live assessments, scorecards, crisis simulations and a Bayes calculator; a deterministic pack compiler and a portable C core",
+   "language": "C",
+   "topics": [],
+   "stars": 0,
+   "created_at": "2026-11-25T03:06:03Z",
+   "pushed_at": "2026-11-25T13:59:17Z",
    "archived": false,
    "share": 1,
    "hosts": {
-    "github": "https://github.com/korczis/oscilla"
+    "github": "https://github.com/korczis/prismatic-flipperzero"
    },
-   "site": "https://korczis.github.io/oscilla/",
+   "site": "https://korczis.github.io/prismatic-flipperzero/",
    "supervised": true,
    "category": "science",
-   "curated": true
+   "curated": false
   },
   {
    "name": "prismatic-majordomus",
@@ -5307,24 +5356,6 @@
    "site": "https://korczis.github.io/prismatic-majordomus/",
    "supervised": true,
    "category": "ai",
-   "curated": true
-  },
-  {
-   "name": "sonic-playground",
-   "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-   "language": "JavaScript",
-   "topics": [],
-   "stars": 0,
-   "created_at": "2026-11-12T00:48:36Z",
-   "pushed_at": "2026-11-25T03:12:46Z",
-   "archived": false,
-   "share": 1,
-   "hosts": {
-    "github": "https://github.com/korczis/sonic-playground"
-   },
-   "site": "https://korczis.github.io/sonic-playground/",
-   "supervised": true,
-   "category": "media",
    "curated": true
   },
   {
@@ -5389,37 +5420,6 @@
    "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
    "supervised": true,
    "category": "knowledge",
-   "curated": true
-  },
-  {
-   "name": "algoglyph",
-   "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
-   "language": "TypeScript",
-   "topics": [
-    "algorithms",
-    "alpinejs",
-    "creative-coding",
-    "data-visualization",
-    "flowbite",
-    "generative-art",
-    "majordomus",
-    "p5js",
-    "physics-simulation",
-    "tailwindcss",
-    "typescript",
-    "webgl"
-   ],
-   "stars": 0,
-   "created_at": "2026-11-11T18:09:38Z",
-   "pushed_at": "2026-11-22T07:04:46Z",
-   "archived": false,
-   "share": 1,
-   "hosts": {
-    "github": "https://github.com/korczis/algoglyph"
-   },
-   "site": "https://korczis.github.io/algoglyph/",
-   "supervised": true,
-   "category": "science",
    "curated": true
   },
   {

@@ -17,7 +17,7 @@ definition = "Everything of an organisation an attacker can reach from the inter
 aliases = []
 reference = { title = "OWASP: attack surface analysis", url = "https://cheatsheetseries.owasp.org/cheatsheets/Attack_Surface_Analysis_Cheat_Sheet.html" }
 pages = ["services/_index.md", "services/attack-surface.md", "services/digital-forensics.md", "services/digital-investigation.md", "skills/_index.md", "skills/infrastructure-osint.md"]
-related = ["dockerfile", "html", "javascript", "service", "change-detection", "digital-forensics", "flowbite-pro", "nodejs"]
+related = ["dockerfile", "html", "javascript", "service", "change-detection", "digital-forensics", "nodejs", "python"]
 og_title = "Attack surface: glossary"
 og_image = "og/glossary-attack-surface.png"
 keywords = ["Attack surface", "Concept", "Glossary", "Tomas Korcak"]

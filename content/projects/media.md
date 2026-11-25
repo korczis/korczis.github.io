@@ -4,7 +4,7 @@ title = "Media and art"
 description = "Work made from code: a promo reel rendered end to end, a music blog, and a digital artifact or two."
 template = "category.html"
 weight = 5
-updated = "2026-11-25T03:12:46Z"
+updated = "2026-11-25T15:06:29Z"
 
 [taxonomies]
 tags = ["Media and art", "Majordomus reel", "Catharsis as a Service", "Sonic Playground", "openttd-prismatic-bridge"]

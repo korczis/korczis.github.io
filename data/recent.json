@@ -1,6 +1,6 @@
 {
  "schema": "korczis-hub-recent/v2",
- "generated_at": "2026-11-25T13:59:09Z",
+ "generated_at": "2026-11-25T19:36:07Z",
  "window_days": 1461,
  "periods": [
   {
@@ -18,205 +18,620 @@
  ],
  "archive": 162,
  "rule": "every original repository of data/index.json; a repository is recent when its default branch has a commit in the window, archive otherwise; host activity dates are ignored",
- "asked": 2,
+ "asked": 5,
  "repos": [
   {
-   "name": "prismatic-flipperzero",
+   "name": "algoglyph",
    "period": 12,
-   "description": "Prismatic Pocket for Flipper Zero: an offline, data-driven knowledge engine with live assessments, scorecards, crisis simulations and a Bayes calculator; a deterministic pack compiler and a portable C core",
+   "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
    "category": "science",
-   "language": "C",
-   "created_at": "2026-11-25T03:06:03Z",
-   "pushed_at": "2026-11-25T13:49:18Z",
-   "last_commit": "2026-11-25T13:47:26Z",
-   "last_message": "feat(calculate): one stepper adds a source; the calculator fits one screen",
+   "language": "TypeScript",
+   "created_at": "2026-11-11T18:09:38Z",
+   "pushed_at": "2026-11-25T17:12:47Z",
+   "last_commit": "2026-11-25T17:12:47Z",
+   "last_message": "chore(merge): integrate #6, music analysis measured in sonic-playground",
    "commits": [
     {
-     "at": "2026-11-25T13:47:26Z",
-     "message": "feat(calculate): one stepper adds a source; the calculator fits one screen",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/169ba7557e61e9688db47a648939db9323c68786"
+     "at": "2026-11-25T17:12:47Z",
+     "message": "chore(merge): integrate #6, music analysis measured in sonic-playground",
+     "url": "https://github.com/korczis/algoglyph/commit/2e2457be208fe9f27a5a36d8c97efea77d01e44e"
     },
     {
-     "at": "2026-11-25T13:42:52Z",
-     "message": "feat(ui): live tools on the device: steppers change values in real time",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/7fc85365f96f4e5275f06bc06319bce0c18b2ee7"
+     "at": "2026-11-24T21:36:17Z",
+     "message": "docs(knowledge): music analysis measured in sonic-playground, offered back",
+     "url": "https://github.com/korczis/algoglyph/commit/1d71b5b329d2450b1fd44d4817678caa8aeab8a1"
     },
     {
-     "at": "2026-11-25T13:30:48Z",
-     "message": "feat(site): simulations, scorecards and calculators are interactive in the browser",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/b528ea48fce053505c13e95bbc8e55342a694ff5"
+     "at": "2026-11-22T07:04:24Z",
+     "message": "chore(merge): integrate #5, the fleet mesh",
+     "url": "https://github.com/korczis/algoglyph/commit/30a56efeff34657c4169d9b99db7f453e9341c5c"
     },
     {
-     "at": "2026-11-25T12:46:22Z",
-     "message": "fix(calculate): single precision for the Flipper's FPU",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/e694aa4bb857f18b24b3344b14dafc94cede1ded"
+     "at": "2026-11-22T04:53:37Z",
+     "message": "fix(mesh): trust the owner's fleet and register with its hubs",
+     "url": "https://github.com/korczis/algoglyph/commit/25ee985d7087acf3b17ab05de2753af811d7eb31"
     },
     {
-     "at": "2026-11-25T12:44:21Z",
-     "message": "feat(calculate): the Prismatic Platform's Bayesian fusion as an interactive calculator",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/30d303aa304e395f59dcea7b5e813c67ad5e9987"
+     "at": "2026-11-17T15:34:34Z",
+     "message": "Merge remote-tracking branch 'origin/feature/semiconductors' into fix/charts-by-title",
+     "url": "https://github.com/korczis/algoglyph/commit/916cdc7240fb02d2b8265790f1ef45421039af49"
     },
     {
-     "at": "2026-11-25T12:35:39Z",
-     "message": "feat(score): the Prismatic Platform's scorecards as data: executive frame, nominee risk",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/56fadfccd044a19bcef28f37ed9103038d967049"
+     "at": "2026-11-17T14:49:42Z",
+     "message": "Merge remote-tracking branch 'origin/feature/amplitude-arrows' into fix/charts-by-title",
+     "url": "https://github.com/korczis/algoglyph/commit/2b9d6dc2997e020acbe801311b20bdfcb3887a1a"
     },
     {
-     "at": "2026-11-25T12:25:10Z",
-     "message": "feat(simulate): the Prismatic Platform's crisis simulations, as data, offline",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/3761edefa21a93063b1add990a4a71b0dc0733f9"
+     "at": "2026-11-17T13:05:13Z",
+     "message": "Merge remote-tracking branch 'origin/main' into feature/semiconductors",
+     "url": "https://github.com/korczis/algoglyph/commit/8325f396df83114675d4d74668d048d4ab2542a9"
     },
     {
-     "at": "2026-11-25T12:11:04Z",
-     "message": "fix(sessions): drop an unreachable empty-list note; restore covers an empty page",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/5e934ffd033c23684a1daa7e50ac799b7bf3c780"
+     "at": "2026-11-17T13:04:08Z",
+     "message": "Merge remote-tracking branch 'origin/main' into feature/amplitude-arrows",
+     "url": "https://github.com/korczis/algoglyph/commit/1e76802737b1f6772482de38d6d2d26de2c58fe8"
     },
     {
-     "at": "2026-11-25T12:09:13Z",
-     "message": "feat(sessions): save a detector's marks as JSON Lines, only when asked",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/aa9bd09386ad6810af7ab4264df1e61207c7a3d5"
+     "at": "2026-11-17T12:35:33Z",
+     "message": "Merge remote-tracking branch 'origin/feature/second-pass-fourier-epicycles' into fix/charts-by-title",
+     "url": "https://github.com/korczis/algoglyph/commit/df4877a3c70a74b6683f494d86c17921c3f8c003"
     },
     {
-     "at": "2026-11-25T11:30:23Z",
-     "message": "feat(site): assessments are interactive on the explorer too",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/619187fc2a9b197d52e2bfa21806682d23bd0e7f"
+     "at": "2026-11-17T12:35:33Z",
+     "message": "Merge remote-tracking branch 'origin/fix/hot-loop-imports' into fix/charts-by-title",
+     "url": "https://github.com/korczis/algoglyph/commit/a13c08d3a9b62df5f1cd1d8dd22295643e3bf004"
     },
     {
-     "at": "2026-11-25T11:25:46Z",
-     "message": "docs(readme): FAEL-style landing: title, tagline, generated explainer and modules",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/f87e677fab4d57461d248ca838072864c8f892c5"
+     "at": "2026-11-17T11:28:35Z",
+     "message": "Merge branch 'fix/ripple-double-slit-headroom' into fix/hot-loop-imports",
+     "url": "https://github.com/korczis/algoglyph/commit/cb6ffd304f4d8bf0f336cfe000a5a17775c850a7"
     },
     {
-     "at": "2026-11-25T11:18:46Z",
-     "message": "test(tools): validate the repository's applications only where the file exists",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/e0830aac1d0f02fe5d85ecd8357b5e1b79032e1d"
+     "at": "2026-11-17T11:28:01Z",
+     "message": "perf(plates): imported helpers out of per-cell and per-particle loops, every output bit-equal",
+     "url": "https://github.com/korczis/algoglyph/commit/985395c8522068472a07807f51237ff7d351eecf"
     },
     {
-     "at": "2026-11-25T11:17:46Z",
-     "message": "feat(apply): assessments as applications: Admiralty code, DD evidence levels, OSINT confidence",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/81a28e17297b050018889e585ae3ddc93a0c967d"
+     "at": "2026-11-17T11:27:37Z",
+     "message": "feat(physics): semiconductors, a p-n junction by Poisson-Boltzmann against neutrality and the first integral",
+     "url": "https://github.com/korczis/algoglyph/commit/4de3aead621f9e2620cac8594dad1d47e6e1409d"
     },
     {
-     "at": "2026-11-25T11:00:36Z",
-     "message": "feat(detect): side-by-side detection of an object and a look-alike",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/d40840a22f6fc8893aa9961c33322beefb12a594"
+     "at": "2026-11-17T11:20:07Z",
+     "message": "feat(physics): amplitude arrows, a glass plate's reflection by summed arrows against the Airy formula",
+     "url": "https://github.com/korczis/algoglyph/commit/d394d399e0fdaff9c893c8ac820e3548b1f5783a"
     },
     {
-     "at": "2026-11-25T10:49:12Z",
-     "message": "feat(train): spaced repetition with Leitner boxes, kept safely on the SD card",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/748007604aa5d814f77f28e9e629e5f620c7395c"
+     "at": "2026-11-17T11:11:03Z",
+     "message": "Merge remote-tracking branch 'origin/feature/ripple-tank-b' into fix/ripple-double-slit-headroom",
+     "url": "https://github.com/korczis/algoglyph/commit/7d63d8ac0595458663e41c9d598f229a5f6882bd"
     },
     {
-     "at": "2026-11-25T09:49:44Z",
-     "message": "docs(evidence): parity 24 of 24 on the marquee and quiz-score FAP",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/b40edb4b3de4bb60608bf63a0cdc348bd42cfe9c"
+     "at": "2026-11-17T11:07:44Z",
+     "message": "Merge remote-tracking branch 'origin/feature/elastic-lattice' into fix/charts-by-title",
+     "url": "https://github.com/korczis/algoglyph/commit/daa4d9956a86487ee34a38db1f880e17aabfbd07"
     },
     {
-     "at": "2026-11-25T09:47:31Z",
-     "message": "fix(ui): paging position fits two 32-bit counts; build the sim with GCC too",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/c9fa1c66d7628a4af7646e820a4e5636d8b5e04b"
+     "at": "2026-11-17T11:07:15Z",
+     "message": "Merge remote-tracking branch 'origin/feature/second-pass-n-body' into fix/charts-by-title",
+     "url": "https://github.com/korczis/algoglyph/commit/430409cc59db0b47fc497b429e83d499498eef9b"
     },
     {
-     "at": "2026-11-25T09:43:36Z",
-     "message": "feat(ui): a cut name scrolls after a pause; the quiz keeps score",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/1340051d1e80ca4a58cd42ae258237cb38461a61"
+     "at": "2026-11-17T11:07:14Z",
+     "message": "Merge remote-tracking branch 'origin/fix/budget-vs-bundle' into fix/charts-by-title",
+     "url": "https://github.com/korczis/algoglyph/commit/df86f76cec8f401deff15c15f636bdf2ad63b351"
     },
     {
-     "at": "2026-11-25T09:26:40Z",
-     "message": "fix(atlas): compare frames by decoded pixels, not PNG bytes",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/aec317cf89cadc3b8c084fac69dbd5b8d9212f62"
+     "at": "2026-11-17T11:07:14Z",
+     "message": "Merge remote-tracking branch 'origin/fix/boids-3d-headroom' into fix/charts-by-title",
+     "url": "https://github.com/korczis/algoglyph/commit/5400a0e2cea3bf521f74dc02766700502a6e0641"
     },
     {
-     "at": "2026-11-25T09:25:22Z",
-     "message": "test(acceptance): a new object, only the pack recompiled, the same FAP, on the device",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/69840eb19a2f14c05c98a48328419666ab07ed01"
+     "at": "2026-11-17T11:06:01Z",
+     "message": "Merge remote-tracking branch 'origin/feature/ripple-tank-b' into fix/charts-by-title",
+     "url": "https://github.com/korczis/algoglyph/commit/119689489ebbe2349e43c6a79c6ec8cf1a8ff958"
     },
     {
-     "at": "2026-11-25T09:14:03Z",
-     "message": "feat(site): the device page, every screen of the app from the atlas",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/a3e221183577ef9753ea1cbcaee1673c5c980ec8"
+     "at": "2026-11-17T10:55:19Z",
+     "message": "feat(fourier-epicycles): second pass, known series as oracles, presets and typed relations",
+     "url": "https://github.com/korczis/algoglyph/commit/83df9d2d737922b26fb132771780b42d5b873334"
     },
     {
-     "at": "2026-11-25T09:08:11Z",
-     "message": "feat(ui): screen atlas of every screen, reviewed; cache measured; docs",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/641a0a54ae4d7616f24ce95c7928818e846a3a82"
+     "at": "2026-11-17T10:45:32Z",
+     "message": "docs(budget): measure the gate against the built bundle, the margin errs safe by up to 3-4x",
+     "url": "https://github.com/korczis/algoglyph/commit/2d57be172ee78ed53e709cda53ff2fd50bf906f1"
     },
     {
-     "at": "2026-11-25T08:45:50Z",
-     "message": "feat(ui): information architecture of four hubs on a tile grid",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/3908db4e43c76f9f2613aca7cc10b268c392951a"
+     "at": "2026-11-17T10:41:25Z",
+     "message": "perf(boids-3d): exact nearest by shells, colours in place, the step's sums in locals; all bit-equal",
+     "url": "https://github.com/korczis/algoglyph/commit/c46ca5d965ab1073151ecdff109d86ebf20f97d2"
     },
     {
-     "at": "2026-11-25T08:31:41Z",
-     "message": "feat(core): an LRU block cache in front of every pack read",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/50100879ac281b3a272dc1913dc8b341d545dc0d"
+     "at": "2026-11-17T09:57:16Z",
+     "message": "perf(ripple-tank): the double slit's frame 3.5× cheaper, every float and pixel unchanged",
+     "url": "https://github.com/korczis/algoglyph/commit/baff1b9d2ab846e71761ba87240985fc0182504e"
     },
     {
-     "at": "2026-11-25T08:23:25Z",
-     "message": "docs(readme): interface gallery from the simulator, device gallery recaptured",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/ffdc599140e3b6b7cb6ce066c786f05232d7cb0f"
+     "at": "2026-11-17T09:33:33Z",
+     "message": "fix(ripple-tank): the Mach claim's closed form from the control, so a wrong source speed fails it",
+     "url": "https://github.com/korczis/algoglyph/commit/33a678a5a86744c081b4e8dcd65e5a69624699e3"
     },
     {
-     "at": "2026-11-25T08:15:51Z",
-     "message": "feat(ui): one type family, kind pill, action chips, section icons, row bars",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/2b265f8fc13a41d4deed2083a222b25d8f77a5d9"
+     "at": "2026-11-17T09:28:07Z",
+     "message": "Merge remote-tracking branch 'origin/main' into feature/ripple-tank-b",
+     "url": "https://github.com/korczis/algoglyph/commit/d433a9d98292ed4517038af892da51affd7f2a80"
     },
     {
-     "at": "2026-11-25T07:35:18Z",
-     "message": "fix(sim): declare POSIX for strdup under -std=c11 on glibc",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/152440e2f8b119ad7d532b8a25e9c80506179e21"
+     "at": "2026-11-17T09:27:24Z",
+     "message": "Merge remote-tracking branch 'origin/main' into feature/elastic-lattice",
+     "url": "https://github.com/korczis/algoglyph/commit/8e7a4aabe7ae751350451cc8efbd2b296998f83a"
     },
     {
-     "at": "2026-11-25T07:31:59Z",
-     "message": "feat(ui): context menu, contents outline, map of links, calmer paragraphs",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/f015e925eb4bb5d369172b0e86bc265a45276399"
+     "at": "2026-11-17T09:27:17Z",
+     "message": "feat(ripple-tank): second pass, a steered phased array, a Mach cone and a drum, measured against closed forms",
+     "url": "https://github.com/korczis/algoglyph/commit/230962d0cedaa3faa3a10d78ee1eb49a7193a16a"
     },
     {
-     "at": "2026-11-25T07:13:49Z",
-     "message": "feat(ui): portable interface, host simulator with firmware fonts, device parity",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/3e6c165a38c89c33cd711171069bb3a2ff91a6d5"
+     "at": "2026-11-17T09:23:07Z",
+     "message": "Merge remote-tracking branch 'origin/feature/second-pass-foucault-pendulum' into fix/charts-by-title",
+     "url": "https://github.com/korczis/algoglyph/commit/ac22f5cb0af808c3b0c2ef32f2e74d32e538f8b9"
     },
     {
-     "at": "2026-11-25T06:10:58Z",
-     "message": "fix(tests): docs and wiki tests no longer read the real README",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/d9d7a2055a90bdc1fcd4179e79dc4f1cff6a969f"
+     "at": "2026-11-17T09:22:40Z",
+     "message": "Merge remote-tracking branch 'origin/feature/beam' into fix/charts-by-title",
+     "url": "https://github.com/korczis/algoglyph/commit/f1c5774db166a5a4ae738f4ce224db98f22b287e"
     }
    ],
    "languages": [
     {
-     "name": "C",
-     "share": 46.8
+     "name": "TypeScript",
+     "share": 83.8
     },
     {
-     "name": "Python",
-     "share": 33.5
+     "name": "Rust",
+     "share": 12.8
     },
     {
      "name": "JavaScript",
-     "share": 11.1
-    },
-    {
-     "name": "Shell",
-     "share": 6.5
+     "share": 2
     },
     {
      "name": "HTML",
-     "share": 1.4
+     "share": 1.3
+    },
+    {
+     "name": "Shell",
+     "share": 0.1
     },
     {
      "name": "Just",
-     "share": 0.7
+     "share": 0.1
     }
    ],
-   "readme": "What it does · Interface · Every screen · On a real device · Small memory · How it works · Install · Guarantees · Case study · Explorer · Wiki",
+   "readme": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js simulations whose every number is measured from the running state.",
+   "readme_shared": false,
+   "description_shared": false,
+   "topics": [
+    "algorithms",
+    "alpinejs",
+    "creative-coding",
+    "data-visualization",
+    "flowbite",
+    "generative-art",
+    "majordomus",
+    "p5js",
+    "physics-simulation",
+    "tailwindcss",
+    "typescript",
+    "webgl"
+   ],
+   "hosts": {
+    "github": "https://github.com/korczis/algoglyph"
+   },
+   "site": "https://korczis.github.io/algoglyph/",
+   "curated": true,
+   "stars": 0,
+   "supervised": true
+  },
+  {
+   "name": "oscilla",
+   "period": 12,
+   "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+   "category": "science",
+   "language": "JavaScript",
+   "created_at": "2026-10-01T21:05:33Z",
+   "pushed_at": "2026-11-25T16:22:21Z",
+   "last_commit": "2026-11-25T14:59:09Z",
+   "last_message": "fix(output): klávesy a MIDI hrají přes běžící sekvenci (U139) (#660)",
+   "commits": [
+    {
+     "at": "2026-11-25T14:59:09Z",
+     "message": "fix(output): klávesy a MIDI hrají přes běžící sekvenci (U139) (#660)",
+     "url": "https://github.com/korczis/oscilla/commit/5858f42c64dc0f9e465b9e856c560625059b19a0"
+    },
+    {
+     "at": "2026-11-25T13:01:03Z",
+     "message": "Merge remote-tracking branch 'origin/main' into fix/keys-over-running-sequence",
+     "url": "https://github.com/korczis/oscilla/commit/2db421628ebc3aa0a6edd896aa5fe62cc89151a1"
+    },
+    {
+     "at": "2026-11-25T13:00:09Z",
+     "message": "fix(ui): katalog UI mluví česky, jeden termín pro bránu, zesílení a úhoz (U145) (#658)",
+     "url": "https://github.com/korczis/oscilla/commit/c2e089b51b466eb89c6479c72c84887c33e9af2f"
+    },
+    {
+     "at": "2026-11-25T11:28:04Z",
+     "message": "Merge branch 'main' into fix/keys-over-running-sequence",
+     "url": "https://github.com/korczis/oscilla/commit/c6e28e97c013d1c14a8cbd77c587831c2b53efc5"
+    },
+    {
+     "at": "2026-11-25T11:28:01Z",
+     "message": "Merge branch 'main' into feat/catalog-czech-labels",
+     "url": "https://github.com/korczis/oscilla/commit/59e23689167a5fd6225f3023ed0e3b2be0c8e6dd"
+    },
+    {
+     "at": "2026-11-25T11:26:25Z",
+     "message": "test(browser): leave-policy bere referenční špičku Synthu z ustáleného tónu; Podržet a hrát čte jméno až po změně stavu (#666)",
+     "url": "https://github.com/korczis/oscilla/commit/8fac97c1a39dacc2fba74eba6b26cb3215c002f0"
+    },
+    {
+     "at": "2026-11-25T09:46:05Z",
+     "message": "Merge branch 'main' into fix/webkit-leave-policy-ci",
+     "url": "https://github.com/korczis/oscilla/commit/45b2b6d14d411dbaca15c6c076549a048040f53d"
+    },
+    {
+     "at": "2026-11-25T07:47:52Z",
+     "message": "test(browser): leave-policy takes the Synth's reference peak at the steady note",
+     "url": "https://github.com/korczis/oscilla/commit/19cec4f0d25fa404b1470e2647e2b94fe491f7b0"
+    },
+    {
+     "at": "2026-11-25T07:22:42Z",
+     "message": "Merge remote-tracking branch 'origin/main' into fix/keys-over-running-sequence",
+     "url": "https://github.com/korczis/oscilla/commit/6415614fd00f1696408e14ad1b848bd65416a312"
+    },
+    {
+     "at": "2026-11-25T07:09:25Z",
+     "message": "Merge remote-tracking branch 'origin/main' into feat/catalog-czech-labels",
+     "url": "https://github.com/korczis/oscilla/commit/86cca2a88b2dabeefbbc94201ef523fff4d12df0"
+    },
+    {
+     "at": "2026-11-25T06:58:09Z",
+     "message": "feat(ui): opětovné načtení vrátí nástroj, laboratoře, patch Synthu a sekvenci (U138) (#657)",
+     "url": "https://github.com/korczis/oscilla/commit/54534eb91ccda50f02229224c42a6751bbb49f3d"
+    },
+    {
+     "at": "2026-11-25T06:38:32Z",
+     "message": "test(browser): same-hold-touch-keyboard reads the name once the page reports the sound",
+     "url": "https://github.com/korczis/oscilla/commit/cf85a103b70ec4e8833f9d5cc6ff9aa98d483952"
+    },
+    {
+     "at": "2026-11-25T06:30:42Z",
+     "message": "test(browser): leave-policy names what it waited for when it times out",
+     "url": "https://github.com/korczis/oscilla/commit/3fa8a3d7415d032688e114fa52a45827eb93107e"
+    },
+    {
+     "at": "2026-11-25T05:42:29Z",
+     "message": "test(ui): Sonda's catalogue labels are plain Czech words (sonda, sondy, pohled)",
+     "url": "https://github.com/korczis/oscilla/commit/0175bef9a8047c60a50c26f497614bdf2f164251"
+    },
+    {
+     "at": "2026-11-25T05:37:39Z",
+     "message": "Merge remote-tracking branch 'origin/main' into feat/catalog-czech-labels",
+     "url": "https://github.com/korczis/oscilla/commit/e645128fc32de3dd0fe17b24cbaaf414feabe686"
+    },
+    {
+     "at": "2026-11-25T05:32:39Z",
+     "message": "Merge remote-tracking branch 'origin/main' into feat/reload-restores-work",
+     "url": "https://github.com/korczis/oscilla/commit/aa27ae3911dfa8340ccf089b7d6b92054b43f5cc"
+    },
+    {
+     "at": "2026-11-25T04:39:16Z",
+     "message": "feat(ui): Sonda – pozorovaný výstup z každé pracovní plochy (U126) (#647)",
+     "url": "https://github.com/korczis/oscilla/commit/1bec41463a273ccdba711716a1c78f8ef260793d"
+    },
+    {
+     "at": "2026-11-25T02:59:23Z",
+     "message": "fix(output): the keys and MIDI play over a running sequence (U139)",
+     "url": "https://github.com/korczis/oscilla/commit/493ad5450a861f2ebfa7ab302bc7287b6ff3a0b3"
+    },
+    {
+     "at": "2026-11-25T02:57:27Z",
+     "message": "fix(ui): speak Czech in the UI catalogue labels and docs",
+     "url": "https://github.com/korczis/oscilla/commit/afe3e0f4f355c7ffe649b6cf28bdd96898d0e09a"
+    },
+    {
+     "at": "2026-11-25T02:23:39Z",
+     "message": "Merge remote-tracking branch 'origin/main' into feat/observed-lens-sheet",
+     "url": "https://github.com/korczis/oscilla/commit/2262b4c4a611534d00c97d2bdf04acce0c9651ed"
+    },
+    {
+     "at": "2026-11-25T02:16:36Z",
+     "message": "test(browser): sčítání geometrie DOM panelů a odkazů podle místa, viewportu a enginu (U128) (#650)",
+     "url": "https://github.com/korczis/oscilla/commit/67ba325322d5748719cf4cc09f59b95cf02234e6"
+    },
+    {
+     "at": "2026-11-25T01:17:07Z",
+     "message": "Merge remote-tracking branch 'origin/main' into test/geometry-census",
+     "url": "https://github.com/korczis/oscilla/commit/47ca88683e2ae184a594fd673af3cbc7d463550b"
+    },
+    {
+     "at": "2026-11-25T01:13:30Z",
+     "message": "feat(bus): zvuk přežije změnu místa; běžící měření se dál zastaví (U133) (#651)",
+     "url": "https://github.com/korczis/oscilla/commit/a2db2e57d73d43d0774f9ee63db3bfc669e8e8d2"
+    },
+    {
+     "at": "2026-11-25T00:21:20Z",
+     "message": "Merge remote-tracking branch 'origin/main' into feat/sound-survives-place-change",
+     "url": "https://github.com/korczis/oscilla/commit/ccaad13ff68d041a4a2e262c0a6d33e726a1b911"
+    },
+    {
+     "at": "2026-11-25T00:17:46Z",
+     "message": "fix(ui): karty Synthu jsou jeden roving seznam karet s platnou ARIA (U125) (#648)",
+     "url": "https://github.com/korczis/oscilla/commit/d7ae25d8dcf45181196d6196e7852d0456d8bf69"
+    },
+    {
+     "at": "2026-11-25T00:08:24Z",
+     "message": "chore(review): verdict for #657 (U138)",
+     "url": "https://github.com/korczis/oscilla/commit/2824e780b44e36cf5c8f2ffef45cc95fd22b2310"
+    },
+    {
+     "at": "2026-11-24T23:45:37Z",
+     "message": "Merge remote-tracking branch 'origin/main' into feat/reload-restores-work",
+     "url": "https://github.com/korczis/oscilla/commit/1caf2eb81c9372d7720f50299ca7bfd6f0f6ac29"
+    },
+    {
+     "at": "2026-11-24T23:28:27Z",
+     "message": "fix(ui): a restored sequence keeps its saved state; the audit sees the recovery notice (U138)",
+     "url": "https://github.com/korczis/oscilla/commit/3e335d5c1a8ea63fc49d11ea25dc95243ed09d16"
+    },
+    {
+     "at": "2026-11-24T23:23:38Z",
+     "message": "Merge remote-tracking branch 'origin/main' into fix/synth-tablist-a11y",
+     "url": "https://github.com/korczis/oscilla/commit/670a96d73e7a483e498ad6d7f3589ba940dd9c39"
+    },
+    {
+     "at": "2026-11-24T23:22:56Z",
+     "message": "fix(ui): Escape zavírající nabídku už nezastaví zvuk (#645)",
+     "url": "https://github.com/korczis/oscilla/commit/68759f50fb3236f4a9edc3b8a3519eab4459b480"
+    }
+   ],
+   "languages": [
+    {
+     "name": "JavaScript",
+     "share": 96.9
+    },
+    {
+     "name": "HTML",
+     "share": 1.9
+    },
+    {
+     "name": "CSS",
+     "share": 1.1
+    },
+    {
+     "name": "Swift",
+     "share": 0
+    },
+    {
+     "name": "Shell",
+     "share": 0
+    }
+   ],
+   "readme": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+   "readme_shared": false,
+   "description_shared": false,
+   "topics": [
+    "acoustics",
+    "audio",
+    "dsp",
+    "education",
+    "javascript",
+    "signal-processing",
+    "spectrogram",
+    "synthesizer",
+    "web-audio"
+   ],
+   "hosts": {
+    "github": "https://github.com/korczis/oscilla"
+   },
+   "site": "https://korczis.github.io/oscilla/",
+   "curated": true,
+   "stars": 1,
+   "supervised": true
+  },
+  {
+   "name": "sonic-playground",
+   "period": 12,
+   "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+   "category": "media",
+   "language": "JavaScript",
+   "created_at": "2026-11-12T00:48:36Z",
+   "pushed_at": "2026-11-25T15:06:29Z",
+   "last_commit": "2026-11-25T14:57:33Z",
+   "last_message": "Merge branch 'fix/visualizer-r2': visualiser round 2 (metrical tempo, kicks not snares, metered snares and hats) and waves 33-35, 71 songs",
+   "commits": [
+    {
+     "at": "2026-11-25T14:57:33Z",
+     "message": "Merge branch 'fix/visualizer-r2': visualiser round 2 (metrical tempo, kicks not snares, metered snares and hats) and waves 33-35, 71 songs",
+     "url": "https://github.com/korczis/sonic-playground/commit/c185ee71e149fad409282dbc5c06cb6ccbdc4178"
+    },
+    {
+     "at": "2026-11-25T13:53:10Z",
+     "message": "Merge branch 'feature/wave-35' into fix/visualizer-r2: waves 33-35, 71 songs, and the smoke's shared-link route",
+     "url": "https://github.com/korczis/sonic-playground/commit/5f06cc9b255c1d87e196f3136b0646e6308c8362"
+    },
+    {
+     "at": "2026-11-25T13:52:19Z",
+     "message": "docs(knowledge): the owner's answer on the verifies stopped for memory: restart them one at a time",
+     "url": "https://github.com/korczis/sonic-playground/commit/14f9d0bb130575f61fdde53f954b9388f8c0267a"
+    },
+    {
+     "at": "2026-11-25T12:51:42Z",
+     "message": "fix(smoke): the delayed play.json of the shared-link check comes from the tested build",
+     "url": "https://github.com/korczis/sonic-playground/commit/b37f6c674e40c3b9aead90fc6da34a215fe25813"
+    },
+    {
+     "at": "2026-11-25T07:56:27Z",
+     "message": "fix(visualizer): what the review of round 2 found: every comb lag computed, every snare light metered",
+     "url": "https://github.com/korczis/sonic-playground/commit/3075ac284d713511ed1745ecaa3113ca2ac7ad51"
+    },
+    {
+     "at": "2026-11-25T07:05:22Z",
+     "message": "feat(content): wave 35, 24 Spotify picks in English and Czech",
+     "url": "https://github.com/korczis/sonic-playground/commit/be8e2a876e553adbb0fc7f20f0a80c529455d41d"
+    },
+    {
+     "at": "2026-11-25T06:43:12Z",
+     "message": "Merge branch 'fix/visualizer-ci2' into fix/visualizer-r2: the toolbar after a mouse click, rave at rest",
+     "url": "https://github.com/korczis/sonic-playground/commit/ccda8b28ae9a4dc2345bb925451a1f410fbdc0e7"
+    },
+    {
+     "at": "2026-11-25T06:35:39Z",
+     "message": "fix(visualizer): round 2 pass 1: metrical tempo, kicks not snares, snares and hats drawn",
+     "url": "https://github.com/korczis/sonic-playground/commit/43d4278ccdb11690b7fa0af0ee62d4064e807b60"
+    },
+    {
+     "at": "2026-11-25T06:13:58Z",
+     "message": "fix(visualizer): the toolbar fades after a mouse click; rave's rings rest in silence",
+     "url": "https://github.com/korczis/sonic-playground/commit/38ff4bc1ef344e34f052fc423323d4456fca3c5e"
+    },
+    {
+     "at": "2026-11-25T05:45:04Z",
+     "message": "feat(content): wave 34, 23 Spotify picks in English and Czech",
+     "url": "https://github.com/korczis/sonic-playground/commit/e2189594e277af449374324992775c78fff3365b"
+    },
+    {
+     "at": "2026-11-25T04:40:19Z",
+     "message": "feat(content): wave 33, 24 Spotify picks in English and Czech",
+     "url": "https://github.com/korczis/sonic-playground/commit/aa5cec054dbe83f2f707da123741d4f804d76157"
+    },
+    {
+     "at": "2026-11-25T02:51:49Z",
+     "message": "fix(visualizer): controls stay under the pointer, tests click as a reader, the tempo lock holds a dip",
+     "url": "https://github.com/korczis/sonic-playground/commit/95d6f38cf0e1993f7f47b8d32255f75b7da03cc9"
+    },
+    {
+     "at": "2026-11-25T01:50:09Z",
+     "message": "Merge branch 'fix/visualizer-ci': light independent of the frame rate, look checks where the picture is fluent",
+     "url": "https://github.com/korczis/sonic-playground/commit/cdedbc8eb9c0e7794961e173ea8c36a1230856d0"
+    },
+    {
+     "at": "2026-11-25T00:29:10Z",
+     "message": "fix(visualizer): light independent of the frame rate; look checks judged where the picture is fluent",
+     "url": "https://github.com/korczis/sonic-playground/commit/ceb3230335e9653a5885d9d753654da65b90b75d"
+    },
+    {
+     "at": "2026-11-24T23:18:41Z",
+     "message": "Merge branch 'fix/visualizer-rest': three analysis passes on real recordings, algoglyph's methods",
+     "url": "https://github.com/korczis/sonic-playground/commit/d48a69d4cbe873b9e2a1c67132cc89282c9b78fd"
+    },
+    {
+     "at": "2026-11-24T22:06:26Z",
+     "message": "fix(visualizer): the modes pass 3 measured: with the music, lit, smooth chrome, distinct palettes",
+     "url": "https://github.com/korczis/sonic-playground/commit/6487bee3f21729d589904a2a44d7d2e0b2710f90"
+    },
+    {
+     "at": "2026-11-24T21:36:51Z",
+     "message": "docs(knowledge): the visualiser as three passes on real recordings measured it; algoglyph both ways",
+     "url": "https://github.com/korczis/sonic-playground/commit/047c3c4ec9494002c64bf4a7833b756308e7c994"
+    },
+    {
+     "at": "2026-11-24T21:35:11Z",
+     "message": "fix(visualizer): what pass 3 measured: sections by algoglyph's Page-Hinkley, phase on the beat",
+     "url": "https://github.com/korczis/sonic-playground/commit/934a309346fc25d212817b214ce2e3fdb93faa79"
+    },
+    {
+     "at": "2026-11-24T20:26:45Z",
+     "message": "test(visualizer): the modes' harmony checks wait for a key, not a chord",
+     "url": "https://github.com/korczis/sonic-playground/commit/2d196497729668e7d23514f54982bc68ff249721"
+    },
+    {
+     "at": "2026-11-24T20:17:58Z",
+     "message": "fix(visualizer): the modes pass 2 measured: loud passages move, sparse modes lit, the beat shows",
+     "url": "https://github.com/korczis/sonic-playground/commit/4d4e66ad0feef321d1ff5e0ee9deeff36b554a9a"
+    },
+    {
+     "at": "2026-11-24T19:57:08Z",
+     "message": "fix(visualizer): what pass 2 measured on real music: warm-up, peak exposure, key, tempo by range",
+     "url": "https://github.com/korczis/sonic-playground/commit/92a19cac14d6436f74028df78dfe2cb6f25868ae"
+    },
+    {
+     "at": "2026-11-24T18:54:05Z",
+     "message": "feat(visualizer): the beat's phase phase-locked (algoglyph's Kuramoto), SuperFlux novelty",
+     "url": "https://github.com/korczis/sonic-playground/commit/bac19dc5ee2960ed2b1a3ad8bc4c2c363e215fd3"
+    },
+    {
+     "at": "2026-11-24T18:34:39Z",
+     "message": "docs(knowledge): the owner's orders of 2026-11-24: three passes, algoglyph, knowledge both ways",
+     "url": "https://github.com/korczis/sonic-playground/commit/10885041ec0258a9db1d87ae6173e1f96dd911cf"
+    },
+    {
+     "at": "2026-11-24T18:27:29Z",
+     "message": "fix(visualizer): the tempo from the novelty's autocorrelation, measured on real recordings",
+     "url": "https://github.com/korczis/sonic-playground/commit/510178f7d4e88d019eb3e5503f9c3510349de22f"
+    },
+    {
+     "at": "2026-11-23T04:23:32Z",
+     "message": "fix(visualizer): a tempo only from three agreeing estimates in a row",
+     "url": "https://github.com/korczis/sonic-playground/commit/b3e12d22081c2b442cb41c3e161c65840ed80624"
+    },
+    {
+     "at": "2026-11-23T03:36:39Z",
+     "message": "fix(visualizer): the toast keeps off the open sheet, fold reads rich, reduced motion keeps calm",
+     "url": "https://github.com/korczis/sonic-playground/commit/599be34972a712cbce35b98c5048e43187c8b96e"
+    },
+    {
+     "at": "2026-11-23T03:24:03Z",
+     "message": "Merge branch 'fix/visualizer-audio': the visualiser follows the real sound in every dimension, without the microphone",
+     "url": "https://github.com/korczis/sonic-playground/commit/b9f7cd5e0aa09a3d3428dcf02886312357035ecb"
+    },
+    {
+     "at": "2026-11-23T02:13:39Z",
+     "message": "fix(test): the serve-port case reads a header with grep -m1, no head under pipefail",
+     "url": "https://github.com/korczis/sonic-playground/commit/1d013c3668b360113b9d26b397c6b37513a4e5e5"
+    },
+    {
+     "at": "2026-11-23T02:07:28Z",
+     "message": "fix(visualizer): what two reviews found: flash limit, GPU leak, source races, phone radios",
+     "url": "https://github.com/korczis/sonic-playground/commit/b2ecb5ef581c49250f4d443dfd78a3f0336fc072"
+    },
+    {
+     "at": "2026-11-23T01:47:43Z",
+     "message": "Merge branch 'feature/viz-modes-gl' into fix/visualizer-audio",
+     "url": "https://github.com/korczis/sonic-playground/commit/f8ca501e773173bc58421b0fc4b7a150f1b4879d"
+    }
+   ],
+   "languages": [
+    {
+     "name": "JavaScript",
+     "share": 50
+    },
+    {
+     "name": "Python",
+     "share": 32.1
+    },
+    {
+     "name": "HTML",
+     "share": 12.3
+    },
+    {
+     "name": "Shell",
+     "share": 4.7
+    },
+    {
+     "name": "CSS",
+     "share": 0.9
+    }
+   ],
+   "readme": "A hand-picked music journal: one review per track, explored by genre, feeling and mood, played in a bottom-bar player that keeps going while you browse. Live at https://korczis.github.io/sonic-playground/.",
    "readme_shared": false,
    "description_shared": false,
    "topics": [],
    "hosts": {
-    "github": "https://github.com/korczis/prismatic-flipperzero"
+    "github": "https://github.com/korczis/sonic-playground"
    },
-   "site": "https://korczis.github.io/prismatic-flipperzero/",
-   "curated": false,
+   "site": "https://korczis.github.io/sonic-playground/",
+   "curated": true,
    "stars": 0,
    "supervised": true
   },
@@ -227,10 +642,15 @@
    "category": "web",
    "language": "JavaScript",
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-25T13:44:00Z",
-   "last_commit": "2026-11-25T13:42:52Z",
+   "pushed_at": "2026-11-25T14:01:04Z",
+   "last_commit": "2026-11-25T13:59:56Z",
    "last_message": "chore(data): refresh the snapshot and the index",
    "commits": [
+    {
+     "at": "2026-11-25T13:59:56Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/930d64fcbf69776d124a097ef7e8ab87e2abefb3"
+    },
     {
      "at": "2026-11-25T13:42:52Z",
      "message": "chore(data): refresh the snapshot and the index",
@@ -375,11 +795,6 @@
      "at": "2026-11-20T01:21:57Z",
      "message": "chore(merge): integrate #44, technologies in two repositories get their page too",
      "url": "https://github.com/korczis/korczis.github.io/commit/24e7d40a53dd9519b856b1eb783b006c3604c78d"
-    },
-    {
-     "at": "2026-11-20T00:57:23Z",
-     "message": "feat(glossary): technologies in two repositories get their page too",
-     "url": "https://github.com/korczis/korczis.github.io/commit/354eaf0434f9c029dce463ecabefab150dec4ce5"
     }
    ],
    "languages": [
@@ -428,209 +843,203 @@
    "supervised": true
   },
   {
-   "name": "oscilla",
+   "name": "prismatic-flipperzero",
    "period": 12,
-   "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+   "description": "Prismatic Pocket for Flipper Zero: an offline, data-driven knowledge engine with live assessments, scorecards, crisis simulations and a Bayes calculator; a deterministic pack compiler and a portable C core",
    "category": "science",
-   "language": "JavaScript",
-   "created_at": "2026-10-01T21:05:33Z",
-   "pushed_at": "2026-11-25T13:07:24Z",
-   "last_commit": "2026-11-25T13:00:09Z",
-   "last_message": "fix(ui): katalog UI mluví česky, jeden termín pro bránu, zesílení a úhoz (U145) (#658)",
+   "language": "C",
+   "created_at": "2026-11-25T03:06:03Z",
+   "pushed_at": "2026-11-25T13:59:17Z",
+   "last_commit": "2026-11-25T13:57:36Z",
+   "last_message": "docs(evidence): device parity recorded with the live tools build",
    "commits": [
     {
-     "at": "2026-11-25T13:00:09Z",
-     "message": "fix(ui): katalog UI mluví česky, jeden termín pro bránu, zesílení a úhoz (U145) (#658)",
-     "url": "https://github.com/korczis/oscilla/commit/c2e089b51b466eb89c6479c72c84887c33e9af2f"
+     "at": "2026-11-25T13:57:36Z",
+     "message": "docs(evidence): device parity recorded with the live tools build",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/0ff22361139bc96c6332fe2d50fad0452a136606"
     },
     {
-     "at": "2026-11-25T11:28:01Z",
-     "message": "Merge branch 'main' into feat/catalog-czech-labels",
-     "url": "https://github.com/korczis/oscilla/commit/59e23689167a5fd6225f3023ed0e3b2be0c8e6dd"
+     "at": "2026-11-25T13:47:26Z",
+     "message": "feat(calculate): one stepper adds a source; the calculator fits one screen",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/169ba7557e61e9688db47a648939db9323c68786"
     },
     {
-     "at": "2026-11-25T11:26:25Z",
-     "message": "test(browser): leave-policy bere referenční špičku Synthu z ustáleného tónu; Podržet a hrát čte jméno až po změně stavu (#666)",
-     "url": "https://github.com/korczis/oscilla/commit/8fac97c1a39dacc2fba74eba6b26cb3215c002f0"
+     "at": "2026-11-25T13:42:52Z",
+     "message": "feat(ui): live tools on the device: steppers change values in real time",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/7fc85365f96f4e5275f06bc06319bce0c18b2ee7"
     },
     {
-     "at": "2026-11-25T09:46:05Z",
-     "message": "Merge branch 'main' into fix/webkit-leave-policy-ci",
-     "url": "https://github.com/korczis/oscilla/commit/45b2b6d14d411dbaca15c6c076549a048040f53d"
+     "at": "2026-11-25T13:30:48Z",
+     "message": "feat(site): simulations, scorecards and calculators are interactive in the browser",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/b528ea48fce053505c13e95bbc8e55342a694ff5"
     },
     {
-     "at": "2026-11-25T07:47:52Z",
-     "message": "test(browser): leave-policy takes the Synth's reference peak at the steady note",
-     "url": "https://github.com/korczis/oscilla/commit/19cec4f0d25fa404b1470e2647e2b94fe491f7b0"
+     "at": "2026-11-25T12:46:22Z",
+     "message": "fix(calculate): single precision for the Flipper's FPU",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/e694aa4bb857f18b24b3344b14dafc94cede1ded"
     },
     {
-     "at": "2026-11-25T07:09:25Z",
-     "message": "Merge remote-tracking branch 'origin/main' into feat/catalog-czech-labels",
-     "url": "https://github.com/korczis/oscilla/commit/86cca2a88b2dabeefbbc94201ef523fff4d12df0"
+     "at": "2026-11-25T12:44:21Z",
+     "message": "feat(calculate): the Prismatic Platform's Bayesian fusion as an interactive calculator",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/30d303aa304e395f59dcea7b5e813c67ad5e9987"
     },
     {
-     "at": "2026-11-25T06:58:09Z",
-     "message": "feat(ui): opětovné načtení vrátí nástroj, laboratoře, patch Synthu a sekvenci (U138) (#657)",
-     "url": "https://github.com/korczis/oscilla/commit/54534eb91ccda50f02229224c42a6751bbb49f3d"
+     "at": "2026-11-25T12:35:39Z",
+     "message": "feat(score): the Prismatic Platform's scorecards as data: executive frame, nominee risk",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/56fadfccd044a19bcef28f37ed9103038d967049"
     },
     {
-     "at": "2026-11-25T06:38:32Z",
-     "message": "test(browser): same-hold-touch-keyboard reads the name once the page reports the sound",
-     "url": "https://github.com/korczis/oscilla/commit/cf85a103b70ec4e8833f9d5cc6ff9aa98d483952"
+     "at": "2026-11-25T12:25:10Z",
+     "message": "feat(simulate): the Prismatic Platform's crisis simulations, as data, offline",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/3761edefa21a93063b1add990a4a71b0dc0733f9"
     },
     {
-     "at": "2026-11-25T06:30:42Z",
-     "message": "test(browser): leave-policy names what it waited for when it times out",
-     "url": "https://github.com/korczis/oscilla/commit/3fa8a3d7415d032688e114fa52a45827eb93107e"
+     "at": "2026-11-25T12:11:04Z",
+     "message": "fix(sessions): drop an unreachable empty-list note; restore covers an empty page",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/5e934ffd033c23684a1daa7e50ac799b7bf3c780"
     },
     {
-     "at": "2026-11-25T05:42:29Z",
-     "message": "test(ui): Sonda's catalogue labels are plain Czech words (sonda, sondy, pohled)",
-     "url": "https://github.com/korczis/oscilla/commit/0175bef9a8047c60a50c26f497614bdf2f164251"
+     "at": "2026-11-25T12:09:13Z",
+     "message": "feat(sessions): save a detector's marks as JSON Lines, only when asked",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/aa9bd09386ad6810af7ab4264df1e61207c7a3d5"
     },
     {
-     "at": "2026-11-25T05:37:39Z",
-     "message": "Merge remote-tracking branch 'origin/main' into feat/catalog-czech-labels",
-     "url": "https://github.com/korczis/oscilla/commit/e645128fc32de3dd0fe17b24cbaaf414feabe686"
+     "at": "2026-11-25T11:30:23Z",
+     "message": "feat(site): assessments are interactive on the explorer too",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/619187fc2a9b197d52e2bfa21806682d23bd0e7f"
     },
     {
-     "at": "2026-11-25T05:32:39Z",
-     "message": "Merge remote-tracking branch 'origin/main' into feat/reload-restores-work",
-     "url": "https://github.com/korczis/oscilla/commit/aa27ae3911dfa8340ccf089b7d6b92054b43f5cc"
+     "at": "2026-11-25T11:25:46Z",
+     "message": "docs(readme): FAEL-style landing: title, tagline, generated explainer and modules",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/f87e677fab4d57461d248ca838072864c8f892c5"
     },
     {
-     "at": "2026-11-25T04:39:16Z",
-     "message": "feat(ui): Sonda – pozorovaný výstup z každé pracovní plochy (U126) (#647)",
-     "url": "https://github.com/korczis/oscilla/commit/1bec41463a273ccdba711716a1c78f8ef260793d"
+     "at": "2026-11-25T11:18:46Z",
+     "message": "test(tools): validate the repository's applications only where the file exists",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/e0830aac1d0f02fe5d85ecd8357b5e1b79032e1d"
     },
     {
-     "at": "2026-11-25T02:57:27Z",
-     "message": "fix(ui): speak Czech in the UI catalogue labels and docs",
-     "url": "https://github.com/korczis/oscilla/commit/afe3e0f4f355c7ffe649b6cf28bdd96898d0e09a"
+     "at": "2026-11-25T11:17:46Z",
+     "message": "feat(apply): assessments as applications: Admiralty code, DD evidence levels, OSINT confidence",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/81a28e17297b050018889e585ae3ddc93a0c967d"
     },
     {
-     "at": "2026-11-25T02:23:39Z",
-     "message": "Merge remote-tracking branch 'origin/main' into feat/observed-lens-sheet",
-     "url": "https://github.com/korczis/oscilla/commit/2262b4c4a611534d00c97d2bdf04acce0c9651ed"
+     "at": "2026-11-25T11:00:36Z",
+     "message": "feat(detect): side-by-side detection of an object and a look-alike",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/d40840a22f6fc8893aa9961c33322beefb12a594"
     },
     {
-     "at": "2026-11-25T02:16:36Z",
-     "message": "test(browser): sčítání geometrie DOM panelů a odkazů podle místa, viewportu a enginu (U128) (#650)",
-     "url": "https://github.com/korczis/oscilla/commit/67ba325322d5748719cf4cc09f59b95cf02234e6"
+     "at": "2026-11-25T10:49:12Z",
+     "message": "feat(train): spaced repetition with Leitner boxes, kept safely on the SD card",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/748007604aa5d814f77f28e9e629e5f620c7395c"
     },
     {
-     "at": "2026-11-25T01:17:07Z",
-     "message": "Merge remote-tracking branch 'origin/main' into test/geometry-census",
-     "url": "https://github.com/korczis/oscilla/commit/47ca88683e2ae184a594fd673af3cbc7d463550b"
+     "at": "2026-11-25T09:49:44Z",
+     "message": "docs(evidence): parity 24 of 24 on the marquee and quiz-score FAP",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/b40edb4b3de4bb60608bf63a0cdc348bd42cfe9c"
     },
     {
-     "at": "2026-11-25T01:13:30Z",
-     "message": "feat(bus): zvuk přežije změnu místa; běžící měření se dál zastaví (U133) (#651)",
-     "url": "https://github.com/korczis/oscilla/commit/a2db2e57d73d43d0774f9ee63db3bfc669e8e8d2"
+     "at": "2026-11-25T09:47:31Z",
+     "message": "fix(ui): paging position fits two 32-bit counts; build the sim with GCC too",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/c9fa1c66d7628a4af7646e820a4e5636d8b5e04b"
     },
     {
-     "at": "2026-11-25T00:21:20Z",
-     "message": "Merge remote-tracking branch 'origin/main' into feat/sound-survives-place-change",
-     "url": "https://github.com/korczis/oscilla/commit/ccaad13ff68d041a4a2e262c0a6d33e726a1b911"
+     "at": "2026-11-25T09:43:36Z",
+     "message": "feat(ui): a cut name scrolls after a pause; the quiz keeps score",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/1340051d1e80ca4a58cd42ae258237cb38461a61"
     },
     {
-     "at": "2026-11-25T00:17:46Z",
-     "message": "fix(ui): karty Synthu jsou jeden roving seznam karet s platnou ARIA (U125) (#648)",
-     "url": "https://github.com/korczis/oscilla/commit/d7ae25d8dcf45181196d6196e7852d0456d8bf69"
+     "at": "2026-11-25T09:26:40Z",
+     "message": "fix(atlas): compare frames by decoded pixels, not PNG bytes",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/aec317cf89cadc3b8c084fac69dbd5b8d9212f62"
     },
     {
-     "at": "2026-11-25T00:08:24Z",
-     "message": "chore(review): verdict for #657 (U138)",
-     "url": "https://github.com/korczis/oscilla/commit/2824e780b44e36cf5c8f2ffef45cc95fd22b2310"
+     "at": "2026-11-25T09:25:22Z",
+     "message": "test(acceptance): a new object, only the pack recompiled, the same FAP, on the device",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/69840eb19a2f14c05c98a48328419666ab07ed01"
     },
     {
-     "at": "2026-11-24T23:45:37Z",
-     "message": "Merge remote-tracking branch 'origin/main' into feat/reload-restores-work",
-     "url": "https://github.com/korczis/oscilla/commit/1caf2eb81c9372d7720f50299ca7bfd6f0f6ac29"
+     "at": "2026-11-25T09:14:03Z",
+     "message": "feat(site): the device page, every screen of the app from the atlas",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/a3e221183577ef9753ea1cbcaee1673c5c980ec8"
     },
     {
-     "at": "2026-11-24T23:28:27Z",
-     "message": "fix(ui): a restored sequence keeps its saved state; the audit sees the recovery notice (U138)",
-     "url": "https://github.com/korczis/oscilla/commit/3e335d5c1a8ea63fc49d11ea25dc95243ed09d16"
+     "at": "2026-11-25T09:08:11Z",
+     "message": "feat(ui): screen atlas of every screen, reviewed; cache measured; docs",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/641a0a54ae4d7616f24ce95c7928818e846a3a82"
     },
     {
-     "at": "2026-11-24T23:23:38Z",
-     "message": "Merge remote-tracking branch 'origin/main' into fix/synth-tablist-a11y",
-     "url": "https://github.com/korczis/oscilla/commit/670a96d73e7a483e498ad6d7f3589ba940dd9c39"
+     "at": "2026-11-25T08:45:50Z",
+     "message": "feat(ui): information architecture of four hubs on a tile grid",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/3908db4e43c76f9f2613aca7cc10b268c392951a"
     },
     {
-     "at": "2026-11-24T23:22:56Z",
-     "message": "fix(ui): Escape zavírající nabídku už nezastaví zvuk (#645)",
-     "url": "https://github.com/korczis/oscilla/commit/68759f50fb3236f4a9edc3b8a3519eab4459b480"
+     "at": "2026-11-25T08:31:41Z",
+     "message": "feat(core): an LRU block cache in front of every pack read",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/50100879ac281b3a272dc1913dc8b341d545dc0d"
     },
     {
-     "at": "2026-11-24T22:53:48Z",
-     "message": "feat(ui): a reload restores the instrument, labs, Synth patch and sequence (U138)",
-     "url": "https://github.com/korczis/oscilla/commit/0f46eb3e4fea251935ab570e08b79b2b9d009677"
+     "at": "2026-11-25T08:23:25Z",
+     "message": "docs(readme): interface gallery from the simulator, device gallery recaptured",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/ffdc599140e3b6b7cb6ce066c786f05232d7cb0f"
     },
     {
-     "at": "2026-11-24T22:15:33Z",
-     "message": "test(visual): re-accept the linux-x64 desktop SYN references for the navbar Sonda icon (U126)",
-     "url": "https://github.com/korczis/oscilla/commit/5a33bdba06cfc9d64b83f0ba7d0c6ea6d4634ad2"
+     "at": "2026-11-25T08:15:51Z",
+     "message": "feat(ui): one type family, kind pill, action chips, section icons, row bars",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/2b265f8fc13a41d4deed2083a222b25d8f77a5d9"
     },
     {
-     "at": "2026-11-24T21:16:25Z",
-     "message": "fix(ui): the navbar's Sonda button stands before the theme button, so no gated control moves",
-     "url": "https://github.com/korczis/oscilla/commit/a9141af35ead13adbc2c52035db84a05fbe420be"
+     "at": "2026-11-25T07:35:18Z",
+     "message": "fix(sim): declare POSIX for strdup under -std=c11 on glibc",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/152440e2f8b119ad7d532b8a25e9c80506179e21"
     },
     {
-     "at": "2026-11-24T20:44:44Z",
-     "message": "test(browser): x-release-leave follows Q114: the pad's note ends, the Synth stays armed (U133)",
-     "url": "https://github.com/korczis/oscilla/commit/8dbfcbf96e33bbf119a8f845f1a6afb7df575630"
+     "at": "2026-11-25T07:31:59Z",
+     "message": "feat(ui): context menu, contents outline, map of links, calmer paragraphs",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/f015e925eb4bb5d369172b0e86bc265a45276399"
     },
     {
-     "at": "2026-11-24T20:28:41Z",
-     "message": "Merge branch 'main' into fix/escape-menu-keeps-audio",
-     "url": "https://github.com/korczis/oscilla/commit/94c516506d2ac8ea9e97e681624087435f476703"
+     "at": "2026-11-25T07:13:49Z",
+     "message": "feat(ui): portable interface, host simulator with firmware fonts, device parity",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/3e6c165a38c89c33cd711171069bb3a2ff91a6d5"
     }
    ],
    "languages": [
     {
+     "name": "C",
+     "share": 45.9
+    },
+    {
+     "name": "Python",
+     "share": 32.3
+    },
+    {
      "name": "JavaScript",
-     "share": 96.9
-    },
-    {
-     "name": "HTML",
-     "share": 1.9
-    },
-    {
-     "name": "CSS",
-     "share": 1.1
-    },
-    {
-     "name": "Swift",
-     "share": 0
+     "share": 13.3
     },
     {
      "name": "Shell",
-     "share": 0
+     "share": 6.3
+    },
+    {
+     "name": "HTML",
+     "share": 1.4
+    },
+    {
+     "name": "Just",
+     "share": 0.7
     }
    ],
-   "readme": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+   "readme": "What it does · Interface · Every screen · On a real device · Small memory · How it works · Install · Guarantees · Case study · Explorer · Wiki",
    "readme_shared": false,
    "description_shared": false,
-   "topics": [
-    "acoustics",
-    "audio",
-    "dsp",
-    "education",
-    "javascript",
-    "signal-processing",
-    "spectrogram",
-    "synthesizer",
-    "web-audio"
-   ],
+   "topics": [],
    "hosts": {
-    "github": "https://github.com/korczis/oscilla"
+    "github": "https://github.com/korczis/prismatic-flipperzero"
    },
-   "site": "https://korczis.github.io/oscilla/",
-   "curated": true,
-   "stars": 1,
+   "site": "https://korczis.github.io/prismatic-flipperzero/",
+   "curated": false,
+   "stars": 0,
    "supervised": true
   },
   {
@@ -854,202 +1263,6 @@
    "supervised": true
   },
   {
-   "name": "sonic-playground",
-   "period": 12,
-   "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-   "category": "media",
-   "language": "JavaScript",
-   "created_at": "2026-11-12T00:48:36Z",
-   "pushed_at": "2026-11-25T03:12:46Z",
-   "last_commit": "2026-11-25T01:50:09Z",
-   "last_message": "Merge branch 'fix/visualizer-ci': light independent of the frame rate, look checks where the picture is fluent",
-   "commits": [
-    {
-     "at": "2026-11-25T01:50:09Z",
-     "message": "Merge branch 'fix/visualizer-ci': light independent of the frame rate, look checks where the picture is fluent",
-     "url": "https://github.com/korczis/sonic-playground/commit/cdedbc8eb9c0e7794961e173ea8c36a1230856d0"
-    },
-    {
-     "at": "2026-11-25T00:29:10Z",
-     "message": "fix(visualizer): light independent of the frame rate; look checks judged where the picture is fluent",
-     "url": "https://github.com/korczis/sonic-playground/commit/ceb3230335e9653a5885d9d753654da65b90b75d"
-    },
-    {
-     "at": "2026-11-24T23:18:41Z",
-     "message": "Merge branch 'fix/visualizer-rest': three analysis passes on real recordings, algoglyph's methods",
-     "url": "https://github.com/korczis/sonic-playground/commit/d48a69d4cbe873b9e2a1c67132cc89282c9b78fd"
-    },
-    {
-     "at": "2026-11-24T22:06:26Z",
-     "message": "fix(visualizer): the modes pass 3 measured: with the music, lit, smooth chrome, distinct palettes",
-     "url": "https://github.com/korczis/sonic-playground/commit/6487bee3f21729d589904a2a44d7d2e0b2710f90"
-    },
-    {
-     "at": "2026-11-24T21:36:51Z",
-     "message": "docs(knowledge): the visualiser as three passes on real recordings measured it; algoglyph both ways",
-     "url": "https://github.com/korczis/sonic-playground/commit/047c3c4ec9494002c64bf4a7833b756308e7c994"
-    },
-    {
-     "at": "2026-11-24T21:35:11Z",
-     "message": "fix(visualizer): what pass 3 measured: sections by algoglyph's Page-Hinkley, phase on the beat",
-     "url": "https://github.com/korczis/sonic-playground/commit/934a309346fc25d212817b214ce2e3fdb93faa79"
-    },
-    {
-     "at": "2026-11-24T20:26:45Z",
-     "message": "test(visualizer): the modes' harmony checks wait for a key, not a chord",
-     "url": "https://github.com/korczis/sonic-playground/commit/2d196497729668e7d23514f54982bc68ff249721"
-    },
-    {
-     "at": "2026-11-24T20:17:58Z",
-     "message": "fix(visualizer): the modes pass 2 measured: loud passages move, sparse modes lit, the beat shows",
-     "url": "https://github.com/korczis/sonic-playground/commit/4d4e66ad0feef321d1ff5e0ee9deeff36b554a9a"
-    },
-    {
-     "at": "2026-11-24T19:57:08Z",
-     "message": "fix(visualizer): what pass 2 measured on real music: warm-up, peak exposure, key, tempo by range",
-     "url": "https://github.com/korczis/sonic-playground/commit/92a19cac14d6436f74028df78dfe2cb6f25868ae"
-    },
-    {
-     "at": "2026-11-24T18:54:05Z",
-     "message": "feat(visualizer): the beat's phase phase-locked (algoglyph's Kuramoto), SuperFlux novelty",
-     "url": "https://github.com/korczis/sonic-playground/commit/bac19dc5ee2960ed2b1a3ad8bc4c2c363e215fd3"
-    },
-    {
-     "at": "2026-11-24T18:34:39Z",
-     "message": "docs(knowledge): the owner's orders of 2026-11-24: three passes, algoglyph, knowledge both ways",
-     "url": "https://github.com/korczis/sonic-playground/commit/10885041ec0258a9db1d87ae6173e1f96dd911cf"
-    },
-    {
-     "at": "2026-11-24T18:27:29Z",
-     "message": "fix(visualizer): the tempo from the novelty's autocorrelation, measured on real recordings",
-     "url": "https://github.com/korczis/sonic-playground/commit/510178f7d4e88d019eb3e5503f9c3510349de22f"
-    },
-    {
-     "at": "2026-11-23T04:23:32Z",
-     "message": "fix(visualizer): a tempo only from three agreeing estimates in a row",
-     "url": "https://github.com/korczis/sonic-playground/commit/b3e12d22081c2b442cb41c3e161c65840ed80624"
-    },
-    {
-     "at": "2026-11-23T03:36:39Z",
-     "message": "fix(visualizer): the toast keeps off the open sheet, fold reads rich, reduced motion keeps calm",
-     "url": "https://github.com/korczis/sonic-playground/commit/599be34972a712cbce35b98c5048e43187c8b96e"
-    },
-    {
-     "at": "2026-11-23T03:24:03Z",
-     "message": "Merge branch 'fix/visualizer-audio': the visualiser follows the real sound in every dimension, without the microphone",
-     "url": "https://github.com/korczis/sonic-playground/commit/b9f7cd5e0aa09a3d3428dcf02886312357035ecb"
-    },
-    {
-     "at": "2026-11-23T02:13:39Z",
-     "message": "fix(test): the serve-port case reads a header with grep -m1, no head under pipefail",
-     "url": "https://github.com/korczis/sonic-playground/commit/1d013c3668b360113b9d26b397c6b37513a4e5e5"
-    },
-    {
-     "at": "2026-11-23T02:07:28Z",
-     "message": "fix(visualizer): what two reviews found: flash limit, GPU leak, source races, phone radios",
-     "url": "https://github.com/korczis/sonic-playground/commit/b2ecb5ef581c49250f4d443dfd78a3f0336fc072"
-    },
-    {
-     "at": "2026-11-23T01:47:43Z",
-     "message": "Merge branch 'feature/viz-modes-gl' into fix/visualizer-audio",
-     "url": "https://github.com/korczis/sonic-playground/commit/f8ca501e773173bc58421b0fc4b7a150f1b4879d"
-    },
-    {
-     "at": "2026-11-23T01:44:57Z",
-     "message": "feat(visualizer): each WebGL mode its own harmony around the key",
-     "url": "https://github.com/korczis/sonic-playground/commit/ff45b4b28080db4a44a690f5920e5ecbcc465eda"
-    },
-    {
-     "at": "2026-11-23T01:27:40Z",
-     "message": "feat(visualizer): the 15 WebGL modes follow the music through the shared grammar",
-     "url": "https://github.com/korczis/sonic-playground/commit/4c346e2393d7cf6bef6b9fcce49720d7d25e3db3"
-    },
-    {
-     "at": "2026-11-23T01:23:15Z",
-     "message": "fix(smoke): the same-page probe keeps the page's own query",
-     "url": "https://github.com/korczis/sonic-playground/commit/292c3c6a9f6af21148544cc3a27517894c261d24"
-    },
-    {
-     "at": "2026-11-23T01:22:09Z",
-     "message": "Merge branch 'feature/viz-modes-2d' into fix/visualizer-audio",
-     "url": "https://github.com/korczis/sonic-playground/commit/6effa30455acbf3bd549482aaa8ec6548c4b6c30"
-    },
-    {
-     "at": "2026-11-23T01:11:05Z",
-     "message": "feat(visualizer): ripple rests in a pool of light, its rings glow",
-     "url": "https://github.com/korczis/sonic-playground/commit/9053570f9222adfc62d19a9514763a180f7d898a"
-    },
-    {
-     "at": "2026-11-23T00:59:52Z",
-     "message": "feat(visualizer): the ten p5 modes speak the shared grammar",
-     "url": "https://github.com/korczis/sonic-playground/commit/82e7222f57365de4009b342502ec23ae7e715ce5"
-    },
-    {
-     "at": "2026-11-23T00:29:22Z",
-     "message": "docs(knowledge): the owner's visualiser orders and the music-to-picture grammar",
-     "url": "https://github.com/korczis/sonic-playground/commit/086842f1749d67db0e3cb9bd9c5aacb251c0c9de"
-    },
-    {
-     "at": "2026-11-23T00:25:59Z",
-     "message": "test(visualizer): shared helpers for the checks that pictures follow the music",
-     "url": "https://github.com/korczis/sonic-playground/commit/b844aa29d6ea14cff6dafc5d1f15f8295de51273"
-    },
-    {
-     "at": "2026-11-23T00:23:39Z",
-     "message": "feat(visualizer): one music-to-picture grammar for every mode, static/js/viz-map.js",
-     "url": "https://github.com/korczis/sonic-playground/commit/2af9e1985dad8311d66d8118c31e40145a4e5696"
-    },
-    {
-     "at": "2026-11-23T00:19:18Z",
-     "message": "Merge branch 'feature/viz-features' into fix/visualizer-audio",
-     "url": "https://github.com/korczis/sonic-playground/commit/c70f52d6a31d634586fbc5a56476e326a80b3554"
-    },
-    {
-     "at": "2026-11-23T00:14:54Z",
-     "message": "feat(visualizer): stereo, chroma and key, timbre, loudness, bar and sections in the analysis",
-     "url": "https://github.com/korczis/sonic-playground/commit/5f219bfdaafe3b2ffa54ac8ca061f3650d5bb512"
-    },
-    {
-     "at": "2026-11-23T00:07:37Z",
-     "message": "chore(merge): bring the integrated main into the visualizer work",
-     "url": "https://github.com/korczis/sonic-playground/commit/3081c8517be0164f2a03e8f80feb70f8082a8f50"
-    }
-   ],
-   "languages": [
-    {
-     "name": "JavaScript",
-     "share": 48.5
-    },
-    {
-     "name": "Python",
-     "share": 33
-    },
-    {
-     "name": "HTML",
-     "share": 12.6
-    },
-    {
-     "name": "Shell",
-     "share": 4.8
-    },
-    {
-     "name": "CSS",
-     "share": 1
-    }
-   ],
-   "readme": "A hand-picked music journal: one review per track, explored by genre, feeling and mood, played in a bottom-bar player that keeps going while you browse. Live at https://korczis.github.io/sonic-playground/.",
-   "readme_shared": false,
-   "description_shared": false,
-   "topics": [],
-   "hosts": {
-    "github": "https://github.com/korczis/sonic-playground"
-   },
-   "site": "https://korczis.github.io/sonic-playground/",
-   "curated": true,
-   "stars": 0,
-   "supervised": true
-  },
-  {
    "name": "kompendium-epistemicke-anihilace",
    "period": 12,
    "description": "Kompendium epistemické a kognitivní anihilace: defenzivní taxonomie epistemické a kognitivní manipulace (CZ). Kniha, web na GitHub Pages, wiki.",
@@ -1255,219 +1468,6 @@
     "github": "https://github.com/korczis/kompendium-epistemicke-anihilace"
    },
    "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
-   "curated": true,
-   "stars": 0,
-   "supervised": true
-  },
-  {
-   "name": "algoglyph",
-   "period": 12,
-   "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
-   "category": "science",
-   "language": "TypeScript",
-   "created_at": "2026-11-11T18:09:38Z",
-   "pushed_at": "2026-11-22T07:04:46Z",
-   "last_commit": "2026-11-22T07:04:24Z",
-   "last_message": "chore(merge): integrate #5, the fleet mesh",
-   "commits": [
-    {
-     "at": "2026-11-22T07:04:24Z",
-     "message": "chore(merge): integrate #5, the fleet mesh",
-     "url": "https://github.com/korczis/algoglyph/commit/30a56efeff34657c4169d9b99db7f453e9341c5c"
-    },
-    {
-     "at": "2026-11-22T04:53:37Z",
-     "message": "fix(mesh): trust the owner's fleet and register with its hubs",
-     "url": "https://github.com/korczis/algoglyph/commit/25ee985d7087acf3b17ab05de2753af811d7eb31"
-    },
-    {
-     "at": "2026-11-17T15:34:34Z",
-     "message": "Merge remote-tracking branch 'origin/feature/semiconductors' into fix/charts-by-title",
-     "url": "https://github.com/korczis/algoglyph/commit/916cdc7240fb02d2b8265790f1ef45421039af49"
-    },
-    {
-     "at": "2026-11-17T14:49:42Z",
-     "message": "Merge remote-tracking branch 'origin/feature/amplitude-arrows' into fix/charts-by-title",
-     "url": "https://github.com/korczis/algoglyph/commit/2b9d6dc2997e020acbe801311b20bdfcb3887a1a"
-    },
-    {
-     "at": "2026-11-17T13:05:13Z",
-     "message": "Merge remote-tracking branch 'origin/main' into feature/semiconductors",
-     "url": "https://github.com/korczis/algoglyph/commit/8325f396df83114675d4d74668d048d4ab2542a9"
-    },
-    {
-     "at": "2026-11-17T13:04:08Z",
-     "message": "Merge remote-tracking branch 'origin/main' into feature/amplitude-arrows",
-     "url": "https://github.com/korczis/algoglyph/commit/1e76802737b1f6772482de38d6d2d26de2c58fe8"
-    },
-    {
-     "at": "2026-11-17T12:35:33Z",
-     "message": "Merge remote-tracking branch 'origin/feature/second-pass-fourier-epicycles' into fix/charts-by-title",
-     "url": "https://github.com/korczis/algoglyph/commit/df4877a3c70a74b6683f494d86c17921c3f8c003"
-    },
-    {
-     "at": "2026-11-17T12:35:33Z",
-     "message": "Merge remote-tracking branch 'origin/fix/hot-loop-imports' into fix/charts-by-title",
-     "url": "https://github.com/korczis/algoglyph/commit/a13c08d3a9b62df5f1cd1d8dd22295643e3bf004"
-    },
-    {
-     "at": "2026-11-17T11:28:35Z",
-     "message": "Merge branch 'fix/ripple-double-slit-headroom' into fix/hot-loop-imports",
-     "url": "https://github.com/korczis/algoglyph/commit/cb6ffd304f4d8bf0f336cfe000a5a17775c850a7"
-    },
-    {
-     "at": "2026-11-17T11:28:01Z",
-     "message": "perf(plates): imported helpers out of per-cell and per-particle loops, every output bit-equal",
-     "url": "https://github.com/korczis/algoglyph/commit/985395c8522068472a07807f51237ff7d351eecf"
-    },
-    {
-     "at": "2026-11-17T11:27:37Z",
-     "message": "feat(physics): semiconductors, a p-n junction by Poisson-Boltzmann against neutrality and the first integral",
-     "url": "https://github.com/korczis/algoglyph/commit/4de3aead621f9e2620cac8594dad1d47e6e1409d"
-    },
-    {
-     "at": "2026-11-17T11:20:07Z",
-     "message": "feat(physics): amplitude arrows, a glass plate's reflection by summed arrows against the Airy formula",
-     "url": "https://github.com/korczis/algoglyph/commit/d394d399e0fdaff9c893c8ac820e3548b1f5783a"
-    },
-    {
-     "at": "2026-11-17T11:11:03Z",
-     "message": "Merge remote-tracking branch 'origin/feature/ripple-tank-b' into fix/ripple-double-slit-headroom",
-     "url": "https://github.com/korczis/algoglyph/commit/7d63d8ac0595458663e41c9d598f229a5f6882bd"
-    },
-    {
-     "at": "2026-11-17T11:07:44Z",
-     "message": "Merge remote-tracking branch 'origin/feature/elastic-lattice' into fix/charts-by-title",
-     "url": "https://github.com/korczis/algoglyph/commit/daa4d9956a86487ee34a38db1f880e17aabfbd07"
-    },
-    {
-     "at": "2026-11-17T11:07:15Z",
-     "message": "Merge remote-tracking branch 'origin/feature/second-pass-n-body' into fix/charts-by-title",
-     "url": "https://github.com/korczis/algoglyph/commit/430409cc59db0b47fc497b429e83d499498eef9b"
-    },
-    {
-     "at": "2026-11-17T11:07:14Z",
-     "message": "Merge remote-tracking branch 'origin/fix/budget-vs-bundle' into fix/charts-by-title",
-     "url": "https://github.com/korczis/algoglyph/commit/df86f76cec8f401deff15c15f636bdf2ad63b351"
-    },
-    {
-     "at": "2026-11-17T11:07:14Z",
-     "message": "Merge remote-tracking branch 'origin/fix/boids-3d-headroom' into fix/charts-by-title",
-     "url": "https://github.com/korczis/algoglyph/commit/5400a0e2cea3bf521f74dc02766700502a6e0641"
-    },
-    {
-     "at": "2026-11-17T11:06:01Z",
-     "message": "Merge remote-tracking branch 'origin/feature/ripple-tank-b' into fix/charts-by-title",
-     "url": "https://github.com/korczis/algoglyph/commit/119689489ebbe2349e43c6a79c6ec8cf1a8ff958"
-    },
-    {
-     "at": "2026-11-17T10:55:19Z",
-     "message": "feat(fourier-epicycles): second pass, known series as oracles, presets and typed relations",
-     "url": "https://github.com/korczis/algoglyph/commit/83df9d2d737922b26fb132771780b42d5b873334"
-    },
-    {
-     "at": "2026-11-17T10:45:32Z",
-     "message": "docs(budget): measure the gate against the built bundle, the margin errs safe by up to 3-4x",
-     "url": "https://github.com/korczis/algoglyph/commit/2d57be172ee78ed53e709cda53ff2fd50bf906f1"
-    },
-    {
-     "at": "2026-11-17T10:41:25Z",
-     "message": "perf(boids-3d): exact nearest by shells, colours in place, the step's sums in locals; all bit-equal",
-     "url": "https://github.com/korczis/algoglyph/commit/c46ca5d965ab1073151ecdff109d86ebf20f97d2"
-    },
-    {
-     "at": "2026-11-17T09:57:16Z",
-     "message": "perf(ripple-tank): the double slit's frame 3.5× cheaper, every float and pixel unchanged",
-     "url": "https://github.com/korczis/algoglyph/commit/baff1b9d2ab846e71761ba87240985fc0182504e"
-    },
-    {
-     "at": "2026-11-17T09:33:33Z",
-     "message": "fix(ripple-tank): the Mach claim's closed form from the control, so a wrong source speed fails it",
-     "url": "https://github.com/korczis/algoglyph/commit/33a678a5a86744c081b4e8dcd65e5a69624699e3"
-    },
-    {
-     "at": "2026-11-17T09:28:07Z",
-     "message": "Merge remote-tracking branch 'origin/main' into feature/ripple-tank-b",
-     "url": "https://github.com/korczis/algoglyph/commit/d433a9d98292ed4517038af892da51affd7f2a80"
-    },
-    {
-     "at": "2026-11-17T09:27:24Z",
-     "message": "Merge remote-tracking branch 'origin/main' into feature/elastic-lattice",
-     "url": "https://github.com/korczis/algoglyph/commit/8e7a4aabe7ae751350451cc8efbd2b296998f83a"
-    },
-    {
-     "at": "2026-11-17T09:27:17Z",
-     "message": "feat(ripple-tank): second pass, a steered phased array, a Mach cone and a drum, measured against closed forms",
-     "url": "https://github.com/korczis/algoglyph/commit/230962d0cedaa3faa3a10d78ee1eb49a7193a16a"
-    },
-    {
-     "at": "2026-11-17T09:23:07Z",
-     "message": "Merge remote-tracking branch 'origin/feature/second-pass-foucault-pendulum' into fix/charts-by-title",
-     "url": "https://github.com/korczis/algoglyph/commit/ac22f5cb0af808c3b0c2ef32f2e74d32e538f8b9"
-    },
-    {
-     "at": "2026-11-17T09:22:40Z",
-     "message": "Merge remote-tracking branch 'origin/feature/beam' into fix/charts-by-title",
-     "url": "https://github.com/korczis/algoglyph/commit/f1c5774db166a5a4ae738f4ce224db98f22b287e"
-    },
-    {
-     "at": "2026-11-17T09:21:55Z",
-     "message": "Merge remote-tracking branch 'origin/feature/elastic-lattice' into fix/charts-by-title",
-     "url": "https://github.com/korczis/algoglyph/commit/7a742f58eb6530d6d672ac03c84ba621ea21669e"
-    },
-    {
-     "at": "2026-11-17T08:43:18Z",
-     "message": "Merge remote-tracking branch 'origin/main' into feature/second-pass-n-body",
-     "url": "https://github.com/korczis/algoglyph/commit/7c18df60795f09d9600a86fd999e3f589efb1146"
-    }
-   ],
-   "languages": [
-    {
-     "name": "TypeScript",
-     "share": 83.8
-    },
-    {
-     "name": "Rust",
-     "share": 12.8
-    },
-    {
-     "name": "JavaScript",
-     "share": 2
-    },
-    {
-     "name": "HTML",
-     "share": 1.3
-    },
-    {
-     "name": "Shell",
-     "share": 0.1
-    },
-    {
-     "name": "Just",
-     "share": 0.1
-    }
-   ],
-   "readme": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js simulations whose every number is measured from the running state.",
-   "readme_shared": false,
-   "description_shared": false,
-   "topics": [
-    "algorithms",
-    "alpinejs",
-    "creative-coding",
-    "data-visualization",
-    "flowbite",
-    "generative-art",
-    "majordomus",
-    "p5js",
-    "physics-simulation",
-    "tailwindcss",
-    "typescript",
-    "webgl"
-   ],
-   "hosts": {
-    "github": "https://github.com/korczis/algoglyph"
-   },
-   "site": "https://korczis.github.io/algoglyph/",
    "curated": true,
    "stars": 0,
    "supervised": true

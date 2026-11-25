@@ -44,7 +44,7 @@ TypeScript jsem psal v 6 veřejných repozitářích, od roku 2019 do 2026; ve 3
 
 K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (3), [Inženýrství AI](@/projects/ai.cs.md) (1), [Média a umění](@/projects/media.cs.md) (1) a [Věda a vizualizace](@/projects/science.cs.md) (1).
 
-Naposledy: [Sonic Playground](@/work/sonic-playground.cs.md): Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita; [astronomists](@/work/astronomists.cs.md); [algoglyph](@/work/algoglyph.cs.md): Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.
+Naposledy: [algoglyph](@/work/algoglyph.cs.md): Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem; [Sonic Playground](@/work/sonic-playground.cs.md): Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita; [astronomists](@/work/astronomists.cs.md).
 
 3 z těchto projektů běží jako živé weby.
 

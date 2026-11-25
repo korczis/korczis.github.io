@@ -40,12 +40,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
-CSS jsem psal v 27 veřejných repozitářích, od roku 2014 do 2026; ve 4 z nich je hlavním jazykem.
+CSS jsem psal v 26 veřejných repozitářích, od roku 2014 do 2026; ve 4 z nich je hlavním jazykem.
 
-K čemu to sloužilo: [Web](@/projects/web.cs.md) (10), [Nástroje](@/projects/tools.cs.md) (7), [Data a GIS](@/projects/data.cs.md) (5) a [Média a umění](@/projects/media.cs.md) (3).
+K čemu to sloužilo: [Web](@/projects/web.cs.md) (10), [Nástroje](@/projects/tools.cs.md) (7), [Data a GIS](@/projects/data.cs.md) (5) a [Média a umění](@/projects/media.cs.md) (2).
 
-Naposledy: [korczis.github.io](@/work/korczis-github-io.cs.md); [Oscilla](@/work/oscilla.cs.md): Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu; [Sonic Playground](@/work/sonic-playground.cs.md): Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.
+Naposledy: [korczis.github.io](@/work/korczis-github-io.cs.md); [Oscilla](@/work/oscilla.cs.md): Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu; [astronomists](@/work/astronomists.cs.md).
 
-8 z těchto projektů běží jako živé weby.
+7 z těchto projektů běží jako živé weby.
 
 Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak CSS používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje CSS s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

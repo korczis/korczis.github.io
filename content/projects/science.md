@@ -4,7 +4,7 @@ title = "Science and visualisation"
 description = "Honest instruments and drawn algorithms in the browser: acoustics, physics, sorting, mazes, each readout measured."
 template = "category.html"
 weight = 2
-updated = "2026-11-25T13:49:18Z"
+updated = "2026-11-25T17:12:47Z"
 
 [taxonomies]
 tags = ["Science and visualisation", "Oscilla", "algoglyph", "maze-rs", "big-png"]

@@ -34,6 +34,6 @@ tone = "night"
 
 Zdrojový kód: [GitHub](https://github.com/korczis/algorithms-ruby) a [GitLab](https://gitlab.com/korczis/algorithms-ruby).
 
-Související práce v kategorii [Věda a vizualizace](@/projects/science.cs.md): [algorithms](@/work/algorithms.cs.md) (2014), [haskell-world](@/work/haskell-world.cs.md) (2016), [maze](@/work/maze.cs.md) (2016) a [algoglyph](@/work/algoglyph.cs.md) (2026).
+Související práce v kategorii [Věda a vizualizace](@/projects/science.cs.md): [algorithms](@/work/algorithms.cs.md) (2014), [haskell-world](@/work/haskell-world.cs.md) (2016), [maze](@/work/maze.cs.md) (2016) a [prismatic-flipperzero](@/work/prismatic-flipperzero.cs.md) (2026).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 12 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

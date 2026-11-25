@@ -14,7 +14,7 @@ icon = "code"
 og_title = "Řízený vývoj softwaru s AI"
 og_image = "og/cs-service-ai-engineering-governance.png"
 schema = "service"
-terms = ["service", "rust", "mcp", "claude-api", "majordomus", "github-actions", "policy-as-code", "ai-agent", "audit-trail", "orchestration", "contestability", "html", "javascript", "shell", "flowbite-pro", "alpine-js", "python", "tailwind-css", "github-pages", "playwright", "css"]
+terms = ["service", "rust", "mcp", "claude-api", "majordomus", "github-actions", "policy-as-code", "ai-agent", "audit-trail", "orchestration", "contestability", "html", "javascript", "shell", "flowbite-pro", "python", "alpine-js", "tailwind-css", "github-pages", "playwright", "css"]
 keywords = ["Řízený vývoj softwaru s AI", "Pravidla jako kód", "Agenti s LLM", "Auditní stopa", "Orchestrace", "Transformace s AI", "Napadnutelná rozhodnutí", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -34,9 +34,9 @@ Pravidla, rozhodnutí a předávky držet v repozitáři jako kód, vynucovat je
 
 Je postavená na: [Rust](@/glossary/rust.cs.md), [MCP](@/glossary/mcp.cs.md), [Claude API](@/glossary/claude-api.cs.md), [Majordomus](@/glossary/majordomus.cs.md) a [GitHub Actions](@/glossary/github-actions.cs.md).
 
-Technologie za ní, změřené z práce, která tyto dovednosti dokládá: [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Shell](@/glossary/shell.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md), [Python](@/glossary/python.cs.md), [Tailwind CSS](@/glossary/tailwind-css.cs.md) a [GitHub Pages](@/glossary/github-pages.cs.md).
+Technologie za ní, změřené z práce, která tyto dovednosti dokládá: [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Shell](@/glossary/shell.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md), [Python](@/glossary/python.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md), [Tailwind CSS](@/glossary/tailwind-css.cs.md) a [GitHub Pages](@/glossary/github-pages.cs.md).
 
-Její dovednosti dokládá 14 veřejných repozitářů (14 vlastními slovy).
+Její dovednosti dokládá 15 veřejných repozitářů (15 vlastními slovy).
 
 Byla dodána v klientské práci pod dohodami o mlčenlivosti, v odvětví: Developer nemovitostí a Finanční a investiční skupina, v roli: Architekt, Vedoucí inženýr, Inženýr AI, Datový inženýr, Analytik šetření a Poradce; případy užití popisují princip a záměr, nikdy klienta, osobu, datum ani číslo.
 

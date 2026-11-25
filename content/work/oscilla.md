@@ -3,8 +3,8 @@
 title = "Oscilla"
 description = "A zero-install acoustic laboratory in the browser."
 template = "work.html"
-weight = 3
-updated = "2026-11-25T13:00:09Z"
+weight = 2
+updated = "2026-11-25T14:59:09Z"
 
 [taxonomies]
 tags = ["Science and visualisation", "JavaScript", "HTML", "CSS"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **Oscilla** is a project in [Science and visualisation](@/projects/science.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (96.9 %), with [HTML](@/glossary/html.md), [CSS](@/glossary/css.md) and [Swift](@/glossary/swift.md).
 
-The [repository](@/glossary/repository.md) was created on 1 October 2026; its latest [commit](@/glossary/commit.md) is from 25 November 2026. It reads “fix(ui): katalog UI mluví česky, jeden termín pro bránu, zesílení a úhoz (U145) (\#658)”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created on 1 October 2026; its latest [commit](@/glossary/commit.md) is from 25 November 2026. It reads “fix(output): klávesy a MIDI hrají přes běžící sekvenci (U139) (\#660)”. That places it among the projects active in the last 12 months.
 
 It is built with [Web Audio](@/glossary/web-audio.md).
 

@@ -17,7 +17,7 @@ definition = "Judging a source before believing it: who made it, when, how and w
 aliases = []
 reference = { title = "Wikipedia: source criticism", url = "https://en.wikipedia.org/wiki/Source_criticism" }
 pages = ["services/_index.md", "services/digital-forensics.md", "services/due-diligence.md", "services/reputation-intelligence.md", "skills/_index.md", "skills/source-reliability.md"]
-related = ["dockerfile", "flowbite-pro", "html", "javascript", "python", "service", "shell", "alpine-js"]
+related = ["dockerfile", "html", "javascript", "python", "service", "shell", "alpine-js", "decision-support-system"]
 og_title = "Source criticism: glossary"
 og_image = "og/glossary-source-criticism.png"
 keywords = ["Source criticism", "Concept", "Glossary", "Tomas Korcak"]

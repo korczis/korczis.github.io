@@ -980,6 +980,43 @@
       ],
       "repos": [
         {
+          "name": "algoglyph",
+          "title": "algoglyph",
+          "url": "https://github.com/korczis/algoglyph",
+          "work": true,
+          "slug": "algoglyph",
+          "site": "https://korczis.github.io/algoglyph/",
+          "category": "science",
+          "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
+          "summary": "Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core.",
+          "summary_cs": "Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.",
+          "created": "2026-11-11",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": 2,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "TypeScript",
+            "Rust",
+            "JavaScript",
+            "HTML",
+            "p5.js",
+            "Apache ECharts",
+            "Alpine.js",
+            "Flowbite Pro",
+            "Majordomus",
+            "Tailwind CSS",
+            "WebGL",
+            "Vite",
+            "Vitest",
+            "axe-core",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "url": "https://github.com/korczis/korczis.github.io",
@@ -1071,7 +1108,7 @@
           "created": "2026-11-25",
           "pushed": "2026-11-25",
           "primary": false,
-          "share": 11.1,
+          "share": 13.3,
           "via": [
             "code"
           ],
@@ -1132,7 +1169,7 @@
           "created": "2026-11-12",
           "pushed": "2026-11-25",
           "primary": true,
-          "share": 48.5,
+          "share": 50,
           "via": [
             "primary",
             "code"
@@ -1143,7 +1180,6 @@
             "Python",
             "HTML",
             "Shell",
-            "CSS",
             "Elixir",
             "Zola",
             "TypeScript",
@@ -1220,43 +1256,6 @@
             "Flowbite Pro",
             "pytest",
             "Playwright",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "algoglyph",
-          "title": "algoglyph",
-          "url": "https://github.com/korczis/algoglyph",
-          "work": true,
-          "slug": "algoglyph",
-          "site": "https://korczis.github.io/algoglyph/",
-          "category": "science",
-          "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
-          "summary": "Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core.",
-          "summary_cs": "Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.",
-          "created": "2026-11-11",
-          "pushed": "2026-11-22",
-          "primary": false,
-          "share": 2,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "TypeScript",
-            "Rust",
-            "JavaScript",
-            "HTML",
-            "p5.js",
-            "Apache ECharts",
-            "Alpine.js",
-            "Flowbite Pro",
-            "Majordomus",
-            "Tailwind CSS",
-            "WebGL",
-            "Vite",
-            "Vitest",
-            "axe-core",
             "GitHub Pages"
           ]
         },
@@ -3472,6 +3471,47 @@
       ],
       "repos": [
         {
+          "name": "algoglyph",
+          "title": "algoglyph",
+          "url": "https://github.com/korczis/algoglyph",
+          "work": true,
+          "slug": "algoglyph",
+          "site": "https://korczis.github.io/algoglyph/",
+          "category": "science",
+          "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
+          "summary": "Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core.",
+          "summary_cs": "Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.",
+          "created": "2026-11-11",
+          "pushed": "2026-11-25",
+          "primary": true,
+          "share": 83.8,
+          "via": [
+            "primary",
+            "code",
+            "stack",
+            "topic",
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "TypeScript",
+            "Rust",
+            "JavaScript",
+            "HTML",
+            "p5.js",
+            "Apache ECharts",
+            "Alpine.js",
+            "Flowbite Pro",
+            "Majordomus",
+            "Tailwind CSS",
+            "WebGL",
+            "Vite",
+            "Vitest",
+            "axe-core",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "sonic-playground",
           "title": "Sonic Playground",
           "url": "https://github.com/korczis/sonic-playground",
@@ -3495,7 +3535,6 @@
             "Python",
             "HTML",
             "Shell",
-            "CSS",
             "Elixir",
             "Zola",
             "TypeScript",
@@ -3537,47 +3576,6 @@
             "Flowbite Pro",
             "Alpine.js",
             "Playwright",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "algoglyph",
-          "title": "algoglyph",
-          "url": "https://github.com/korczis/algoglyph",
-          "work": true,
-          "slug": "algoglyph",
-          "site": "https://korczis.github.io/algoglyph/",
-          "category": "science",
-          "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
-          "summary": "Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core.",
-          "summary_cs": "Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.",
-          "created": "2026-11-11",
-          "pushed": "2026-11-22",
-          "primary": true,
-          "share": 83.8,
-          "via": [
-            "primary",
-            "code",
-            "stack",
-            "topic",
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "TypeScript",
-            "Rust",
-            "JavaScript",
-            "HTML",
-            "p5.js",
-            "Apache ECharts",
-            "Alpine.js",
-            "Flowbite Pro",
-            "Majordomus",
-            "Tailwind CSS",
-            "WebGL",
-            "Vite",
-            "Vitest",
-            "axe-core",
             "GitHub Pages"
           ]
         },
@@ -4565,7 +4563,6 @@
             "Python",
             "HTML",
             "Shell",
-            "CSS",
             "Elixir",
             "Zola",
             "TypeScript",
@@ -6352,6 +6349,44 @@
       ],
       "repos": [
         {
+          "name": "algoglyph",
+          "title": "algoglyph",
+          "url": "https://github.com/korczis/algoglyph",
+          "work": true,
+          "slug": "algoglyph",
+          "site": "https://korczis.github.io/algoglyph/",
+          "category": "science",
+          "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
+          "summary": "Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core.",
+          "summary_cs": "Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.",
+          "created": "2026-11-11",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": 12.8,
+          "via": [
+            "code",
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "TypeScript",
+            "Rust",
+            "JavaScript",
+            "HTML",
+            "p5.js",
+            "Apache ECharts",
+            "Alpine.js",
+            "Flowbite Pro",
+            "Majordomus",
+            "Tailwind CSS",
+            "WebGL",
+            "Vite",
+            "Vitest",
+            "axe-core",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "prismatic-majordomus",
           "title": "Majordomus",
           "url": "https://github.com/korczis/prismatic-majordomus",
@@ -6422,44 +6457,6 @@
             "Flowbite Pro",
             "pytest",
             "Playwright",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "algoglyph",
-          "title": "algoglyph",
-          "url": "https://github.com/korczis/algoglyph",
-          "work": true,
-          "slug": "algoglyph",
-          "site": "https://korczis.github.io/algoglyph/",
-          "category": "science",
-          "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
-          "summary": "Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core.",
-          "summary_cs": "Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.",
-          "created": "2026-11-11",
-          "pushed": "2026-11-22",
-          "primary": false,
-          "share": 12.8,
-          "via": [
-            "code",
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "TypeScript",
-            "Rust",
-            "JavaScript",
-            "HTML",
-            "p5.js",
-            "Apache ECharts",
-            "Alpine.js",
-            "Flowbite Pro",
-            "Majordomus",
-            "Tailwind CSS",
-            "WebGL",
-            "Vite",
-            "Vitest",
-            "axe-core",
             "GitHub Pages"
           ]
         },
@@ -7460,7 +7457,7 @@
           "created": "2026-11-25",
           "pushed": "2026-11-25",
           "primary": false,
-          "share": 33.5,
+          "share": 32.3,
           "via": [
             "code"
           ],
@@ -7487,7 +7484,7 @@
           "created": "2026-11-12",
           "pushed": "2026-11-25",
           "primary": false,
-          "share": 33,
+          "share": 32.1,
           "via": [
             "code",
             "files"
@@ -7498,7 +7495,6 @@
             "Python",
             "HTML",
             "Shell",
-            "CSS",
             "Elixir",
             "Zola",
             "TypeScript",
@@ -8194,7 +8190,7 @@
           "created": "2026-11-25",
           "pushed": "2026-11-25",
           "primary": false,
-          "share": 6.5,
+          "share": 6.3,
           "via": [
             "code"
           ],
@@ -8256,7 +8252,7 @@
           "created": "2026-11-12",
           "pushed": "2026-11-25",
           "primary": false,
-          "share": 4.8,
+          "share": 4.7,
           "via": [
             "code"
           ],
@@ -8266,7 +8262,6 @@
             "Python",
             "HTML",
             "Shell",
-            "CSS",
             "Elixir",
             "Zola",
             "TypeScript",
@@ -9581,6 +9576,43 @@
       ],
       "repos": [
         {
+          "name": "algoglyph",
+          "title": "algoglyph",
+          "url": "https://github.com/korczis/algoglyph",
+          "work": true,
+          "slug": "algoglyph",
+          "site": "https://korczis.github.io/algoglyph/",
+          "category": "science",
+          "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
+          "summary": "Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core.",
+          "summary_cs": "Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.",
+          "created": "2026-11-11",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": 1.3,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "TypeScript",
+            "Rust",
+            "JavaScript",
+            "HTML",
+            "p5.js",
+            "Apache ECharts",
+            "Alpine.js",
+            "Flowbite Pro",
+            "Majordomus",
+            "Tailwind CSS",
+            "WebGL",
+            "Vite",
+            "Vitest",
+            "axe-core",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "url": "https://github.com/korczis/korczis.github.io",
@@ -9728,7 +9760,7 @@
           "created": "2026-11-12",
           "pushed": "2026-11-25",
           "primary": false,
-          "share": 12.6,
+          "share": 12.3,
           "via": [
             "code"
           ],
@@ -9738,7 +9770,6 @@
             "Python",
             "HTML",
             "Shell",
-            "CSS",
             "Elixir",
             "Zola",
             "TypeScript",
@@ -9816,43 +9847,6 @@
             "Flowbite Pro",
             "pytest",
             "Playwright",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "algoglyph",
-          "title": "algoglyph",
-          "url": "https://github.com/korczis/algoglyph",
-          "work": true,
-          "slug": "algoglyph",
-          "site": "https://korczis.github.io/algoglyph/",
-          "category": "science",
-          "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
-          "summary": "Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core.",
-          "summary_cs": "Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.",
-          "created": "2026-11-11",
-          "pushed": "2026-11-22",
-          "primary": false,
-          "share": 1.3,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "TypeScript",
-            "Rust",
-            "JavaScript",
-            "HTML",
-            "p5.js",
-            "Apache ECharts",
-            "Alpine.js",
-            "Flowbite Pro",
-            "Majordomus",
-            "Tailwind CSS",
-            "WebGL",
-            "Vite",
-            "Vitest",
-            "axe-core",
             "GitHub Pages"
           ]
         },
@@ -10842,10 +10836,10 @@
       "name": "CSS",
       "kind": "language",
       "counts": {
-        "repos": 27,
+        "repos": 26,
         "primary": 4,
-        "sites": 8,
-        "work": 27,
+        "sites": 7,
+        "work": 26,
         "engagements": 0
       },
       "first": 2014,
@@ -10865,7 +10859,7 @@
         },
         {
           "key": "media",
-          "n": 3
+          "n": 2
         },
         {
           "key": "libraries",
@@ -10947,40 +10941,6 @@
             "esbuild",
             "Playwright",
             "axe-core",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "sonic-playground",
-          "title": "Sonic Playground",
-          "url": "https://github.com/korczis/sonic-playground",
-          "work": true,
-          "slug": "sonic-playground",
-          "site": "https://korczis.github.io/sonic-playground/",
-          "category": "media",
-          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
-          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
-          "created": "2026-11-12",
-          "pushed": "2026-11-25",
-          "primary": false,
-          "share": 1,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "Python",
-            "HTML",
-            "Shell",
-            "CSS",
-            "Elixir",
-            "Zola",
-            "TypeScript",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "JSON Schema",
             "GitHub Pages"
           ]
         },
@@ -11792,7 +11752,7 @@
           "created": "2026-11-25",
           "pushed": "2026-11-25",
           "primary": true,
-          "share": 46.8,
+          "share": 45.9,
           "via": [
             "primary",
             "code"
@@ -14033,6 +13993,45 @@
       ],
       "repos": [
         {
+          "name": "algoglyph",
+          "title": "algoglyph",
+          "url": "https://github.com/korczis/algoglyph",
+          "work": true,
+          "slug": "algoglyph",
+          "site": "https://korczis.github.io/algoglyph/",
+          "category": "science",
+          "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
+          "summary": "Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core.",
+          "summary_cs": "Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.",
+          "created": "2026-11-11",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": null,
+          "via": [
+            "stack",
+            "topic",
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "TypeScript",
+            "Rust",
+            "JavaScript",
+            "HTML",
+            "p5.js",
+            "Apache ECharts",
+            "Alpine.js",
+            "Flowbite Pro",
+            "Majordomus",
+            "Tailwind CSS",
+            "WebGL",
+            "Vite",
+            "Vitest",
+            "axe-core",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "url": "https://github.com/korczis/korczis.github.io",
@@ -14130,7 +14129,6 @@
             "Python",
             "HTML",
             "Shell",
-            "CSS",
             "Elixir",
             "Zola",
             "TypeScript",
@@ -14206,45 +14204,6 @@
             "Flowbite Pro",
             "pytest",
             "Playwright",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "algoglyph",
-          "title": "algoglyph",
-          "url": "https://github.com/korczis/algoglyph",
-          "work": true,
-          "slug": "algoglyph",
-          "site": "https://korczis.github.io/algoglyph/",
-          "category": "science",
-          "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
-          "summary": "Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core.",
-          "summary_cs": "Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.",
-          "created": "2026-11-11",
-          "pushed": "2026-11-22",
-          "primary": false,
-          "share": null,
-          "via": [
-            "stack",
-            "topic",
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "TypeScript",
-            "Rust",
-            "JavaScript",
-            "HTML",
-            "p5.js",
-            "Apache ECharts",
-            "Alpine.js",
-            "Flowbite Pro",
-            "Majordomus",
-            "Tailwind CSS",
-            "WebGL",
-            "Vite",
-            "Vitest",
-            "axe-core",
             "GitHub Pages"
           ]
         },
@@ -14483,6 +14442,44 @@
       ],
       "repos": [
         {
+          "name": "algoglyph",
+          "title": "algoglyph",
+          "url": "https://github.com/korczis/algoglyph",
+          "work": true,
+          "slug": "algoglyph",
+          "site": "https://korczis.github.io/algoglyph/",
+          "category": "science",
+          "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
+          "summary": "Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core.",
+          "summary_cs": "Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.",
+          "created": "2026-11-11",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": null,
+          "via": [
+            "topic",
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "TypeScript",
+            "Rust",
+            "JavaScript",
+            "HTML",
+            "p5.js",
+            "Apache ECharts",
+            "Alpine.js",
+            "Flowbite Pro",
+            "Majordomus",
+            "Tailwind CSS",
+            "WebGL",
+            "Vite",
+            "Vitest",
+            "axe-core",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "url": "https://github.com/korczis/korczis.github.io",
@@ -14580,7 +14577,6 @@
             "Python",
             "HTML",
             "Shell",
-            "CSS",
             "Elixir",
             "Zola",
             "TypeScript",
@@ -14656,44 +14652,6 @@
             "Flowbite Pro",
             "pytest",
             "Playwright",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "algoglyph",
-          "title": "algoglyph",
-          "url": "https://github.com/korczis/algoglyph",
-          "work": true,
-          "slug": "algoglyph",
-          "site": "https://korczis.github.io/algoglyph/",
-          "category": "science",
-          "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
-          "summary": "Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core.",
-          "summary_cs": "Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.",
-          "created": "2026-11-11",
-          "pushed": "2026-11-22",
-          "primary": false,
-          "share": null,
-          "via": [
-            "topic",
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "TypeScript",
-            "Rust",
-            "JavaScript",
-            "HTML",
-            "p5.js",
-            "Apache ECharts",
-            "Alpine.js",
-            "Flowbite Pro",
-            "Majordomus",
-            "Tailwind CSS",
-            "WebGL",
-            "Vite",
-            "Vitest",
-            "axe-core",
             "GitHub Pages"
           ]
         },
@@ -15095,6 +15053,45 @@
       ],
       "repos": [
         {
+          "name": "algoglyph",
+          "title": "algoglyph",
+          "url": "https://github.com/korczis/algoglyph",
+          "work": true,
+          "slug": "algoglyph",
+          "site": "https://korczis.github.io/algoglyph/",
+          "category": "science",
+          "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
+          "summary": "Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core.",
+          "summary_cs": "Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.",
+          "created": "2026-11-11",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": null,
+          "via": [
+            "stack",
+            "topic",
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "TypeScript",
+            "Rust",
+            "JavaScript",
+            "HTML",
+            "p5.js",
+            "Apache ECharts",
+            "Alpine.js",
+            "Flowbite Pro",
+            "Majordomus",
+            "Tailwind CSS",
+            "WebGL",
+            "Vite",
+            "Vitest",
+            "axe-core",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "url": "https://github.com/korczis/korczis.github.io",
@@ -15234,45 +15231,6 @@
             "Flowbite Pro",
             "pytest",
             "Playwright",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "algoglyph",
-          "title": "algoglyph",
-          "url": "https://github.com/korczis/algoglyph",
-          "work": true,
-          "slug": "algoglyph",
-          "site": "https://korczis.github.io/algoglyph/",
-          "category": "science",
-          "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
-          "summary": "Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core.",
-          "summary_cs": "Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.",
-          "created": "2026-11-11",
-          "pushed": "2026-11-22",
-          "primary": false,
-          "share": null,
-          "via": [
-            "stack",
-            "topic",
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "TypeScript",
-            "Rust",
-            "JavaScript",
-            "HTML",
-            "p5.js",
-            "Apache ECharts",
-            "Alpine.js",
-            "Flowbite Pro",
-            "Majordomus",
-            "Tailwind CSS",
-            "WebGL",
-            "Vite",
-            "Vitest",
-            "axe-core",
             "GitHub Pages"
           ]
         },
@@ -15538,6 +15496,43 @@
       ],
       "repos": [
         {
+          "name": "algoglyph",
+          "title": "algoglyph",
+          "url": "https://github.com/korczis/algoglyph",
+          "work": true,
+          "slug": "algoglyph",
+          "site": "https://korczis.github.io/algoglyph/",
+          "category": "science",
+          "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
+          "summary": "Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core.",
+          "summary_cs": "Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.",
+          "created": "2026-11-11",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": null,
+          "via": [
+            "stack"
+          ],
+          "supervised": true,
+          "uses": [
+            "TypeScript",
+            "Rust",
+            "JavaScript",
+            "HTML",
+            "p5.js",
+            "Apache ECharts",
+            "Alpine.js",
+            "Flowbite Pro",
+            "Majordomus",
+            "Tailwind CSS",
+            "WebGL",
+            "Vite",
+            "Vitest",
+            "axe-core",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "url": "https://github.com/korczis/korczis.github.io",
@@ -15575,43 +15570,6 @@
             "Node.js",
             "Playwright",
             "axe-core"
-          ]
-        },
-        {
-          "name": "algoglyph",
-          "title": "algoglyph",
-          "url": "https://github.com/korczis/algoglyph",
-          "work": true,
-          "slug": "algoglyph",
-          "site": "https://korczis.github.io/algoglyph/",
-          "category": "science",
-          "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
-          "summary": "Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core.",
-          "summary_cs": "Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.",
-          "created": "2026-11-11",
-          "pushed": "2026-11-22",
-          "primary": false,
-          "share": null,
-          "via": [
-            "stack"
-          ],
-          "supervised": true,
-          "uses": [
-            "TypeScript",
-            "Rust",
-            "JavaScript",
-            "HTML",
-            "p5.js",
-            "Apache ECharts",
-            "Alpine.js",
-            "Flowbite Pro",
-            "Majordomus",
-            "Tailwind CSS",
-            "WebGL",
-            "Vite",
-            "Vitest",
-            "axe-core",
-            "GitHub Pages"
           ]
         },
         {
@@ -15799,6 +15757,45 @@
       ],
       "repos": [
         {
+          "name": "algoglyph",
+          "title": "algoglyph",
+          "url": "https://github.com/korczis/algoglyph",
+          "work": true,
+          "slug": "algoglyph",
+          "site": "https://korczis.github.io/algoglyph/",
+          "category": "science",
+          "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
+          "summary": "Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core.",
+          "summary_cs": "Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.",
+          "created": "2026-11-11",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": null,
+          "via": [
+            "stack",
+            "topic",
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "TypeScript",
+            "Rust",
+            "JavaScript",
+            "HTML",
+            "p5.js",
+            "Apache ECharts",
+            "Alpine.js",
+            "Flowbite Pro",
+            "Majordomus",
+            "Tailwind CSS",
+            "WebGL",
+            "Vite",
+            "Vitest",
+            "axe-core",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "url": "https://github.com/korczis/korczis.github.io",
@@ -15868,45 +15865,6 @@
             "Flowbite Pro",
             "esbuild",
             "Playwright",
-            "axe-core",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "algoglyph",
-          "title": "algoglyph",
-          "url": "https://github.com/korczis/algoglyph",
-          "work": true,
-          "slug": "algoglyph",
-          "site": "https://korczis.github.io/algoglyph/",
-          "category": "science",
-          "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
-          "summary": "Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core.",
-          "summary_cs": "Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.",
-          "created": "2026-11-11",
-          "pushed": "2026-11-22",
-          "primary": false,
-          "share": null,
-          "via": [
-            "stack",
-            "topic",
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "TypeScript",
-            "Rust",
-            "JavaScript",
-            "HTML",
-            "p5.js",
-            "Apache ECharts",
-            "Alpine.js",
-            "Flowbite Pro",
-            "Majordomus",
-            "Tailwind CSS",
-            "WebGL",
-            "Vite",
-            "Vitest",
             "axe-core",
             "GitHub Pages"
           ]
@@ -16120,7 +16078,6 @@
             "Python",
             "HTML",
             "Shell",
-            "CSS",
             "Elixir",
             "Zola",
             "TypeScript",
@@ -16402,6 +16359,43 @@
       ],
       "repos": [
         {
+          "name": "algoglyph",
+          "title": "algoglyph",
+          "url": "https://github.com/korczis/algoglyph",
+          "work": true,
+          "slug": "algoglyph",
+          "site": "https://korczis.github.io/algoglyph/",
+          "category": "science",
+          "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
+          "summary": "Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core.",
+          "summary_cs": "Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.",
+          "created": "2026-11-11",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": null,
+          "via": [
+            "topic"
+          ],
+          "supervised": true,
+          "uses": [
+            "TypeScript",
+            "Rust",
+            "JavaScript",
+            "HTML",
+            "p5.js",
+            "Apache ECharts",
+            "Alpine.js",
+            "Flowbite Pro",
+            "Majordomus",
+            "Tailwind CSS",
+            "WebGL",
+            "Vite",
+            "Vitest",
+            "axe-core",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "url": "https://github.com/korczis/korczis.github.io",
@@ -16438,43 +16432,6 @@
             "Node.js",
             "Playwright",
             "axe-core"
-          ]
-        },
-        {
-          "name": "algoglyph",
-          "title": "algoglyph",
-          "url": "https://github.com/korczis/algoglyph",
-          "work": true,
-          "slug": "algoglyph",
-          "site": "https://korczis.github.io/algoglyph/",
-          "category": "science",
-          "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
-          "summary": "Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core.",
-          "summary_cs": "Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.",
-          "created": "2026-11-11",
-          "pushed": "2026-11-22",
-          "primary": false,
-          "share": null,
-          "via": [
-            "topic"
-          ],
-          "supervised": true,
-          "uses": [
-            "TypeScript",
-            "Rust",
-            "JavaScript",
-            "HTML",
-            "p5.js",
-            "Apache ECharts",
-            "Alpine.js",
-            "Flowbite Pro",
-            "Majordomus",
-            "Tailwind CSS",
-            "WebGL",
-            "Vite",
-            "Vitest",
-            "axe-core",
-            "GitHub Pages"
           ]
         },
         {
@@ -17756,6 +17713,43 @@
       ],
       "repos": [
         {
+          "name": "algoglyph",
+          "title": "algoglyph",
+          "url": "https://github.com/korczis/algoglyph",
+          "work": true,
+          "slug": "algoglyph",
+          "site": "https://korczis.github.io/algoglyph/",
+          "category": "science",
+          "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
+          "summary": "Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core.",
+          "summary_cs": "Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.",
+          "created": "2026-11-11",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "TypeScript",
+            "Rust",
+            "JavaScript",
+            "HTML",
+            "p5.js",
+            "Apache ECharts",
+            "Alpine.js",
+            "Flowbite Pro",
+            "Majordomus",
+            "Tailwind CSS",
+            "WebGL",
+            "Vite",
+            "Vitest",
+            "axe-core",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "url": "https://github.com/korczis/korczis.github.io",
@@ -17853,7 +17847,6 @@
             "Python",
             "HTML",
             "Shell",
-            "CSS",
             "Elixir",
             "Zola",
             "TypeScript",
@@ -17929,43 +17922,6 @@
             "Flowbite Pro",
             "pytest",
             "Playwright",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "algoglyph",
-          "title": "algoglyph",
-          "url": "https://github.com/korczis/algoglyph",
-          "work": true,
-          "slug": "algoglyph",
-          "site": "https://korczis.github.io/algoglyph/",
-          "category": "science",
-          "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
-          "summary": "Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core.",
-          "summary_cs": "Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.",
-          "created": "2026-11-11",
-          "pushed": "2026-11-22",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "TypeScript",
-            "Rust",
-            "JavaScript",
-            "HTML",
-            "p5.js",
-            "Apache ECharts",
-            "Alpine.js",
-            "Flowbite Pro",
-            "Majordomus",
-            "Tailwind CSS",
-            "WebGL",
-            "Vite",
-            "Vitest",
-            "axe-core",
             "GitHub Pages"
           ]
         },
@@ -32645,7 +32601,6 @@
             "Python",
             "HTML",
             "Shell",
-            "CSS",
             "Elixir",
             "Zola",
             "TypeScript",
@@ -32979,6 +32934,43 @@
       ],
       "repos": [
         {
+          "name": "algoglyph",
+          "title": "algoglyph",
+          "url": "https://github.com/korczis/algoglyph",
+          "work": true,
+          "slug": "algoglyph",
+          "site": "https://korczis.github.io/algoglyph/",
+          "category": "science",
+          "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
+          "summary": "Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core.",
+          "summary_cs": "Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.",
+          "created": "2026-11-11",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "TypeScript",
+            "Rust",
+            "JavaScript",
+            "HTML",
+            "p5.js",
+            "Apache ECharts",
+            "Alpine.js",
+            "Flowbite Pro",
+            "Majordomus",
+            "Tailwind CSS",
+            "WebGL",
+            "Vite",
+            "Vitest",
+            "axe-core",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "url": "https://github.com/korczis/korczis.github.io",
@@ -33047,43 +33039,6 @@
             "Flowbite Pro",
             "esbuild",
             "Playwright",
-            "axe-core",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "algoglyph",
-          "title": "algoglyph",
-          "url": "https://github.com/korczis/algoglyph",
-          "work": true,
-          "slug": "algoglyph",
-          "site": "https://korczis.github.io/algoglyph/",
-          "category": "science",
-          "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
-          "summary": "Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core.",
-          "summary_cs": "Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.",
-          "created": "2026-11-11",
-          "pushed": "2026-11-22",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "TypeScript",
-            "Rust",
-            "JavaScript",
-            "HTML",
-            "p5.js",
-            "Apache ECharts",
-            "Alpine.js",
-            "Flowbite Pro",
-            "Majordomus",
-            "Tailwind CSS",
-            "WebGL",
-            "Vite",
-            "Vitest",
             "axe-core",
             "GitHub Pages"
           ]
@@ -35374,7 +35329,7 @@
           "summary": "Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core.",
           "summary_cs": "Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.",
           "created": "2026-11-11",
-          "pushed": "2026-11-22",
+          "pushed": "2026-11-25",
           "primary": false,
           "share": null,
           "via": [
@@ -40068,7 +40023,7 @@
           "summary": "Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core.",
           "summary_cs": "Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.",
           "created": "2026-11-11",
-          "pushed": "2026-11-22",
+          "pushed": "2026-11-25",
           "primary": false,
           "share": null,
           "via": [
@@ -40345,7 +40300,7 @@
           "summary": "Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core.",
           "summary_cs": "Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.",
           "created": "2026-11-11",
-          "pushed": "2026-11-22",
+          "pushed": "2026-11-25",
           "primary": false,
           "share": null,
           "via": [

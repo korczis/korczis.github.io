@@ -3,8 +3,8 @@
 title = "Sonic Playground"
 description = "Music that moves you, not algorithmic noise. Active in the last 12 months; media and art."
 template = "work.html"
-weight = 5
-updated = "2026-11-25T01:50:09Z"
+weight = 3
+updated = "2026-11-25T14:57:33Z"
 
 [taxonomies]
 tags = ["Media and art", "JavaScript", "Python", "HTML"]
@@ -28,9 +28,9 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**Sonic Playground** is a project in [Media and art](@/projects/media.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (48.5 %), with [Python](@/glossary/python.md), [HTML](@/glossary/html.md) and [Shell](@/glossary/shell.md).
+**Sonic Playground** is a project in [Media and art](@/projects/media.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (50 %), with [Python](@/glossary/python.md), [HTML](@/glossary/html.md) and [Shell](@/glossary/shell.md).
 
-The [repository](@/glossary/repository.md) was created on 12 November 2026; its latest [commit](@/glossary/commit.md) is from 25 November 2026. It reads “Merge branch 'fix/visualizer-ci': light independent of the frame rate, look checks where the picture is fluent”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created on 12 November 2026; its latest [commit](@/glossary/commit.md) is from 25 November 2026. It reads “Merge branch 'fix/visualizer-r2': visualiser round 2 (metrical tempo, kicks not snares, metered snares and hats) and waves 33-35, 71 songs”. That places it among the projects active in the last 12 months.
 
 It is built with [Elixir](@/glossary/elixir.md).
 

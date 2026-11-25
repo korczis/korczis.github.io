@@ -3,8 +3,8 @@
 title = "Oscilla"
 description = "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu."
 template = "work.html"
-weight = 3
-updated = "2026-11-25T13:00:09Z"
+weight = 2
+updated = "2026-11-25T14:59:09Z"
 
 [taxonomies]
 tags = ["Věda a vizualizace", "JavaScript", "HTML", "CSS"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **Oscilla** je projekt z kategorie [Věda a vizualizace](@/projects/science.cs.md). Jeho kód je napsaný hlavně v jazyce [JavaScript](@/glossary/javascript.cs.md) (96,9 %), dále [HTML](@/glossary/html.cs.md), [CSS](@/glossary/css.cs.md) a [Swift](@/glossary/swift.cs.md).
 
-[Repozitář](@/glossary/repository.cs.md) vznikl 1. října 2026; poslední [commit](@/glossary/commit.cs.md) je z 25. listopadu 2026. Zní „fix(ui): katalog UI mluví česky, jeden termín pro bránu, zesílení a úhoz (U145) (\#658)“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+[Repozitář](@/glossary/repository.cs.md) vznikl 1. října 2026; poslední [commit](@/glossary/commit.cs.md) je z 25. listopadu 2026. Zní „fix(output): klávesy a MIDI hrají přes běžící sekvenci (U139) (\#660)“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 
 Je postavený na [Web Audio](@/glossary/web-audio.cs.md).
 
