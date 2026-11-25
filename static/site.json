@@ -122,8 +122,8 @@
  ],
  "front_matter_schema": "https://korczis.github.io/schemas/front-matter.schema.json",
  "data_as_of": {
-  "snapshot": "2026-11-25T13:35:04Z",
-  "index": "2026-11-25T13:42:07Z"
+  "snapshot": "2026-11-25T13:50:53Z",
+  "index": "2026-11-25T13:59:09Z"
  },
  "pages": [
   {
@@ -4711,12 +4711,12 @@
     "algoglyph",
     "maze-rs",
     "big-png",
+    "prismatic-flipperzero",
     "distance-calculator",
     "rustas",
     "graph-flow",
     "maze",
     "maze-js",
-    "haskell-world",
     "Tomáš Korčák"
    ]
   },
@@ -4770,12 +4770,12 @@
     "Gists search",
     "json2csv",
     "csv2psql",
-    "prismatic-flipperzero",
     "astronomists",
     "vomaste.cz",
     "the-psycho",
     "u-tygra",
     "tinder-nomics",
+    "prism",
     "Tomáš Korčák"
    ]
   },
@@ -5598,8 +5598,8 @@
     "Tomáš Korčák: projekty",
     "korczis",
     "prismatic-flipperzero",
-    "oscilla",
     "korczis.github.io",
+    "oscilla",
     "prismatic-majordomus",
     "sonic-playground",
     "kompendium-epistemicke-anihilace",
@@ -8530,14 +8530,14 @@
   {
    "url": "https://korczis.github.io/cs/work/prismatic-flipperzero/",
    "lang": "cs",
-   "title": "prismatic-flipperzero: Nástroje, C, 2026 · Tomáš Korčák",
-   "description": "prismatic-flipperzero: projekt z kategorie Nástroje, hlavní jazyk C, poslední commit 25. listopadu 2026.",
+   "title": "prismatic-flipperzero: Věda a vizualizace, C, 2026 · Tomáš Korčák",
+   "description": "prismatic-flipperzero: projekt z kategorie Věda a vizualizace, hlavní jazyk C, poslední commit 25. listopadu 2026.",
    "type": "project",
-   "category": "tools",
+   "category": "science",
    "og_image": "https://korczis.github.io/og/cs-work-prismatic-flipperzero.png",
    "keywords": [
     "prismatic-flipperzero",
-    "Nástroje",
+    "Věda a vizualizace",
     "Python",
     "JavaScript",
     "2026",
@@ -13987,12 +13987,12 @@
     "algoglyph",
     "maze-rs",
     "big-png",
+    "prismatic-flipperzero",
     "distance-calculator",
     "rustas",
     "graph-flow",
     "maze",
     "maze-js",
-    "haskell-world",
     "Tomas Korcak"
    ]
   },
@@ -14046,12 +14046,12 @@
     "Gists search",
     "json2csv",
     "csv2psql",
-    "prismatic-flipperzero",
     "astronomists",
     "vomaste.cz",
     "the-psycho",
     "u-tygra",
     "tinder-nomics",
+    "prism",
     "Tomas Korcak"
    ]
   },
@@ -14874,8 +14874,8 @@
     "Tomas Korcak projects",
     "korczis",
     "prismatic-flipperzero",
-    "oscilla",
     "korczis.github.io",
+    "oscilla",
     "prismatic-majordomus",
     "sonic-playground",
     "kompendium-epistemicke-anihilace",
@@ -17806,14 +17806,14 @@
   {
    "url": "https://korczis.github.io/work/prismatic-flipperzero/",
    "lang": "en",
-   "title": "prismatic-flipperzero: Tools in C, 2026 · Tomas Korcak",
-   "description": "Prismatic for Flipper Zero: native FAP on its way to Prismatic Pocket, an offline evidence-first epistemic toolkit",
+   "title": "prismatic-flipperzero: Science and visualisation, 2026 · Tomas Korcak",
+   "description": "Prismatic Pocket for Flipper Zero: an offline, data-driven knowledge engine with live assessments, scorecards, crisis simulations and a Bayes calculator; a…",
    "type": "project",
-   "category": "tools",
+   "category": "science",
    "og_image": "https://korczis.github.io/og/work-prismatic-flipperzero.png",
    "keywords": [
     "prismatic-flipperzero",
-    "Tools",
+    "Science and visualisation",
     "Python",
     "JavaScript",
     "2026",
@@ -18921,7 +18921,7 @@
    "name": "Science and visualisation",
    "description": "Honest instruments and drawn algorithms in the browser: acoustics, physics, sorting, mazes, each readout measured.",
    "url": "https://korczis.github.io/projects/science/",
-   "repositories": 12
+   "repositories": 13
   },
   {
    "key": "knowledge",
@@ -18984,7 +18984,7 @@
    "name": "Tools",
    "description": "Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist search.",
    "url": "https://korczis.github.io/projects/tools/",
-   "repositories": 64
+   "repositories": 63
   }
  ],
  "projects": [
@@ -19160,9 +19160,9 @@
  "repositories": [
   {
    "name": "prismatic-flipperzero",
-   "description": "Prismatic for Flipper Zero: native FAP on its way to Prismatic Pocket, an offline evidence-first epistemic toolkit",
+   "description": "Prismatic Pocket for Flipper Zero: an offline, data-driven knowledge engine with live assessments, scorecards, crisis simulations and a Bayes calculator; a deterministic pack compiler and a portable C core",
    "language": "C",
-   "category": "tools",
+   "category": "science",
    "page": "https://korczis.github.io/work/prismatic-flipperzero/",
    "pages": {
     "en": "https://korczis.github.io/work/prismatic-flipperzero/",
@@ -19172,8 +19172,29 @@
    "gitlab": null,
    "site": "https://korczis.github.io/prismatic-flipperzero/",
    "created": "2026-11-25T03:06:03Z",
-   "active": "2026-11-25T13:32:25Z",
-   "last_commit": "2026-11-25T13:30:48Z",
+   "active": "2026-11-25T13:49:18Z",
+   "last_commit": "2026-11-25T13:47:26Z",
+   "period": 12,
+   "archive": false,
+   "stars": 0,
+   "supervised": true
+  },
+  {
+   "name": "korczis.github.io",
+   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+   "language": "JavaScript",
+   "category": "web",
+   "page": "https://korczis.github.io/work/korczis-github-io/",
+   "pages": {
+    "en": "https://korczis.github.io/work/korczis-github-io/",
+    "cs": "https://korczis.github.io/cs/work/korczis-github-io/"
+   },
+   "github": "https://github.com/korczis/korczis.github.io",
+   "gitlab": null,
+   "site": null,
+   "created": "2024-12-24T16:48:15Z",
+   "active": "2026-11-25T13:44:00Z",
+   "last_commit": "2026-11-25T13:42:52Z",
    "period": 12,
    "archive": false,
    "stars": 0,
@@ -19219,27 +19240,6 @@
    "period": 12,
    "archive": false,
    "stars": 1,
-   "supervised": true
-  },
-  {
-   "name": "korczis.github.io",
-   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-   "language": "JavaScript",
-   "category": "web",
-   "page": "https://korczis.github.io/work/korczis-github-io/",
-   "pages": {
-    "en": "https://korczis.github.io/work/korczis-github-io/",
-    "cs": "https://korczis.github.io/cs/work/korczis-github-io/"
-   },
-   "github": "https://github.com/korczis/korczis.github.io",
-   "gitlab": null,
-   "site": null,
-   "created": "2024-12-24T16:48:15Z",
-   "active": "2026-11-25T09:06:29Z",
-   "last_commit": "2026-11-25T09:05:39Z",
-   "period": 12,
-   "archive": false,
-   "stars": 0,
    "supervised": true
   },
   {

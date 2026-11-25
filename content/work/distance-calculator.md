@@ -35,6 +35,6 @@ The [repository](@/glossary/repository.md) was created on 20 March 2024; its lat
 
 Its source is on [GitLab](https://gitlab.com/korczis/distance-calculator).
 
-Related work in [Science and visualisation](@/projects/science.md): [maze](@/work/maze.md) (2016), [algoglyph](@/work/algoglyph.md) (2026), [Oscilla](@/work/oscilla.md) (2026) and [rustas](@/work/rustas.md) (2018).
+Related work in [Science and visualisation](@/projects/science.md): [maze](@/work/maze.md) (2016), [algoglyph](@/work/algoglyph.md) (2026), [Oscilla](@/work/oscilla.md) (2026) and [prismatic-flipperzero](@/work/prismatic-flipperzero.md) (2026).
 
 *How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 11 commits as a heartbeat, one lane per commit type (feat, fix, docs…), from a snapshot refreshed every 6 hours. The concepts below are explained in the [glossary](@/glossary/_index.md).

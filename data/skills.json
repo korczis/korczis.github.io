@@ -939,7 +939,7 @@
         },
         {
           "key": "tools",
-          "n": 20
+          "n": 19
         },
         {
           "key": "web",
@@ -951,7 +951,7 @@
         },
         {
           "key": "science",
-          "n": 5
+          "n": 6
         },
         {
           "key": "learning",
@@ -1064,8 +1064,8 @@
           "work": true,
           "slug": "prismatic-flipperzero",
           "site": "https://korczis.github.io/prismatic-flipperzero/",
-          "category": "tools",
-          "description": "Prismatic for Flipper Zero: native FAP on its way to Prismatic Pocket, an offline evidence-first epistemic toolkit",
+          "category": "science",
+          "description": "Prismatic Pocket for Flipper Zero: an offline, data-driven knowledge engine with live assessments, scorecards, crisis simulations and a Bayes calculator; a deterministic pack compiler and a portable C core",
           "summary": null,
           "summary_cs": null,
           "created": "2026-11-25",
@@ -7421,11 +7421,11 @@
           "n": 5
         },
         {
-          "key": "tools",
-          "n": 5
+          "key": "media",
+          "n": 4
         },
         {
-          "key": "media",
+          "key": "tools",
           "n": 4
         },
         {
@@ -7433,11 +7433,11 @@
           "n": 3
         },
         {
-          "key": "knowledge",
-          "n": 1
+          "key": "science",
+          "n": 2
         },
         {
-          "key": "science",
+          "key": "knowledge",
           "n": 1
         },
         {
@@ -7453,8 +7453,8 @@
           "work": true,
           "slug": "prismatic-flipperzero",
           "site": "https://korczis.github.io/prismatic-flipperzero/",
-          "category": "tools",
-          "description": "Prismatic for Flipper Zero: native FAP on its way to Prismatic Pocket, an offline evidence-first epistemic toolkit",
+          "category": "science",
+          "description": "Prismatic Pocket for Flipper Zero: an offline, data-driven knowledge engine with live assessments, scorecards, crisis simulations and a Bayes calculator; a deterministic pack compiler and a portable C core",
           "summary": null,
           "summary_cs": null,
           "created": "2026-11-25",
@@ -8140,7 +8140,7 @@
       "categories": [
         {
           "key": "tools",
-          "n": 12
+          "n": 11
         },
         {
           "key": "systems",
@@ -8163,6 +8163,10 @@
           "n": 2
         },
         {
+          "key": "science",
+          "n": 2
+        },
+        {
           "key": "security",
           "n": 2
         },
@@ -8172,10 +8176,6 @@
         },
         {
           "key": "libraries",
-          "n": 1
-        },
-        {
-          "key": "science",
           "n": 1
         }
       ],
@@ -8187,8 +8187,8 @@
           "work": true,
           "slug": "prismatic-flipperzero",
           "site": "https://korczis.github.io/prismatic-flipperzero/",
-          "category": "tools",
-          "description": "Prismatic for Flipper Zero: native FAP on its way to Prismatic Pocket, an offline evidence-first epistemic toolkit",
+          "category": "science",
+          "description": "Prismatic Pocket for Flipper Zero: an offline, data-driven knowledge engine with live assessments, scorecards, crisis simulations and a Bayes calculator; a deterministic pack compiler and a portable C core",
           "summary": null,
           "summary_cs": null,
           "created": "2026-11-25",
@@ -9544,7 +9544,7 @@
       "categories": [
         {
           "key": "tools",
-          "n": 10
+          "n": 9
         },
         {
           "key": "data",
@@ -9560,7 +9560,7 @@
         },
         {
           "key": "science",
-          "n": 4
+          "n": 5
         },
         {
           "key": "ai",
@@ -9660,8 +9660,8 @@
           "work": true,
           "slug": "prismatic-flipperzero",
           "site": "https://korczis.github.io/prismatic-flipperzero/",
-          "category": "tools",
-          "description": "Prismatic for Flipper Zero: native FAP on its way to Prismatic Pocket, an offline evidence-first epistemic toolkit",
+          "category": "science",
+          "description": "Prismatic Pocket for Flipper Zero: an offline, data-driven knowledge engine with live assessments, scorecards, crisis simulations and a Bayes calculator; a deterministic pack compiler and a portable C core",
           "summary": null,
           "summary_cs": null,
           "created": "2026-11-25",
@@ -11761,11 +11761,11 @@
           "n": 2
         },
         {
-          "key": "security",
+          "key": "science",
           "n": 2
         },
         {
-          "key": "tools",
+          "key": "security",
           "n": 2
         },
         {
@@ -11773,7 +11773,7 @@
           "n": 1
         },
         {
-          "key": "science",
+          "key": "tools",
           "n": 1
         }
       ],
@@ -11785,8 +11785,8 @@
           "work": true,
           "slug": "prismatic-flipperzero",
           "site": "https://korczis.github.io/prismatic-flipperzero/",
-          "category": "tools",
-          "description": "Prismatic for Flipper Zero: native FAP on its way to Prismatic Pocket, an offline evidence-first epistemic toolkit",
+          "category": "science",
+          "description": "Prismatic Pocket for Flipper Zero: an offline, data-driven knowledge engine with live assessments, scorecards, crisis simulations and a Bayes calculator; a deterministic pack compiler and a portable C core",
           "summary": null,
           "summary_cs": null,
           "created": "2026-11-25",

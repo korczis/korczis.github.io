@@ -17,7 +17,7 @@ definition = "Čistě funkcionální jazyk s líným vyhodnocováním a silným 
 aliases = ["Cabal"]
 reference = { title = "haskell.org", url = "https://www.haskell.org/" }
 pages = ["projects/learning.cs.md", "projects/science.cs.md", "work/happ.cs.md", "work/haskell-world.cs.md", "work/skull-haskell.cs.md"]
-related = ["repository", "commit", "cpp", "elixir", "open-source", "rust", "shell", "c"]
+related = ["repository", "c", "commit", "cpp", "elixir", "open-source", "rust", "shell"]
 og_title = "Haskell: slovník"
 og_image = "og/cs-glossary-haskell.png"
 keywords = ["Haskell", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

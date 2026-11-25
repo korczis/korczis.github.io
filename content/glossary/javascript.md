@@ -42,9 +42,9 @@ tone = "night"
 +++
 I have written JavaScript in 79 public repositories, from 2013 to 2026; in 43 of them it is the main language.
 
-What it was for: [Data and GIS](@/projects/data.md) (26), [Tools](@/projects/tools.md) (20), [Web](@/projects/web.md) (11) and [Media and art](@/projects/media.md) (6).
+What it was for: [Data and GIS](@/projects/data.md) (26), [Tools](@/projects/tools.md) (19), [Web](@/projects/web.md) (11) and [Media and art](@/projects/media.md) (6).
 
-Most recently: [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus; [Oscilla](@/work/oscilla.md): Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty; [prismatic-flipperzero](@/work/prismatic-flipperzero.md): Prismatic for Flipper Zero: native FAP on its way to Prismatic Pocket, an offline evidence-first epistemic toolkit.
+Most recently: [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus; [Oscilla](@/work/oscilla.md): Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty; [prismatic-flipperzero](@/work/prismatic-flipperzero.md): Prismatic Pocket for Flipper Zero: an offline, data-driven knowledge engine with live assessments, scorecards, crisis simulations and a Bayes calculator; a deterministic pack compiler and a portable C core.
 
 16 of these projects run as live sites.
 

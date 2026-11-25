@@ -35,6 +35,6 @@ vars = { cadence = "každých 6 hodin" }
 
 Zdrojový kód: [GitLab](https://gitlab.com/korczis/distance-calculator).
 
-Související práce v kategorii [Věda a vizualizace](@/projects/science.cs.md): [maze](@/work/maze.cs.md) (2016), [algoglyph](@/work/algoglyph.cs.md) (2026), [Oscilla](@/work/oscilla.cs.md) (2026) a [rustas](@/work/rustas.cs.md) (2018).
+Související práce v kategorii [Věda a vizualizace](@/projects/science.cs.md): [maze](@/work/maze.cs.md) (2016), [algoglyph](@/work/algoglyph.cs.md) (2026), [Oscilla](@/work/oscilla.cs.md) (2026) a [prismatic-flipperzero](@/work/prismatic-flipperzero.cs.md) (2026).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 11 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…), ze snímku obnovovaného každých 6 hodin. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

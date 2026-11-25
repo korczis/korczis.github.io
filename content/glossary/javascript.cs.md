@@ -42,7 +42,7 @@ tone = "night"
 +++
 JavaScript jsem psal v 79 veřejných repozitářích, od roku 2013 do 2026; v 43 z nich je hlavním jazykem.
 
-K čemu to sloužilo: [Data a GIS](@/projects/data.cs.md) (26), [Nástroje](@/projects/tools.cs.md) (20), [Web](@/projects/web.cs.md) (11) a [Média a umění](@/projects/media.cs.md) (6).
+K čemu to sloužilo: [Data a GIS](@/projects/data.cs.md) (26), [Nástroje](@/projects/tools.cs.md) (19), [Web](@/projects/web.cs.md) (11) a [Média a umění](@/projects/media.cs.md) (6).
 
 Naposledy: [korczis.github.io](@/work/korczis-github-io.cs.md); [Oscilla](@/work/oscilla.cs.md): Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu; [prismatic-flipperzero](@/work/prismatic-flipperzero.cs.md).
 

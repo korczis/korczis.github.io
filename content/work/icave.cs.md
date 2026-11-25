@@ -34,6 +34,6 @@ tone = "night"
 
 Zdrojový kód: [GitHub](https://github.com/korczis/iCave) a [GitLab](https://gitlab.com/korczis/iCave).
 
-Související práce v kategorii [Nástroje](@/projects/tools.cs.md): [prismatic-flipperzero](@/work/prismatic-flipperzero.cs.md) (2026), [grache](@/work/grache.cs.md) (2015), [lethe.it](@/work/lethe-it.cs.md) (2014–2015) a [wangsta](@/work/wangsta.cs.md) (2015).
+Související práce v kategorii [Nástroje](@/projects/tools.cs.md): [grache](@/work/grache.cs.md) (2015), [lethe.it](@/work/lethe-it.cs.md) (2014–2015), [wangsta](@/work/wangsta.cs.md) (2015) a [magicbiz](@/work/magicbiz.cs.md) (2015).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 30 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

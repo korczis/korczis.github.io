@@ -17,7 +17,7 @@ definition = "Univerzální jazyk ceněný pro čitelnost, běžný v práci s d
 aliases = ["Python 2"]
 reference = { title = "python.org", url = "https://www.python.org/about/" }
 pages = ["cases/financial-group.cs.md", "projects/data.cs.md", "projects/media.cs.md", "projects/science.cs.md", "projects/tools.cs.md", "services/_index.cs.md", "services/ai-engineering-governance.cs.md", "services/compliance-screening.cs.md", "services/decision-support-ai.cs.md", "services/digital-forensics.cs.md", "services/digital-investigation.cs.md", "services/due-diligence.cs.md", "services/interactive-data-products.cs.md", "services/m-and-a.cs.md", "services/reputation-intelligence.cs.md", "skills/_index.cs.md", "skills/audit-trail.cs.md", "skills/decision-support.cs.md", "skills/document-extraction.cs.md", "skills/due-diligence.cs.md", "skills/entity-resolution.cs.md", "skills/interactive-visualisation.cs.md", "skills/llm-agents.cs.md", "skills/m-and-a-screening.cs.md", "skills/narrative-analysis.cs.md", "skills/osint-investigation.cs.md", "work/apollo-box.cs.md", "work/astronomists.cs.md", "work/aws-lambda-docker.cs.md", "work/big-png.cs.md", "work/catharsis-as-a-service.cs.md", "work/data-atlas.cs.md", "work/docker-datasciencetoolbox.cs.md", "work/docker-dstk.cs.md", "work/gists-search.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/kuzu-ex.cs.md", "work/majordomus-reel.cs.md", "work/openttd-prismatic-bridge.cs.md", "work/osint-case-ratcliffe-moscow-2026.cs.md", "work/pdf-renderer.cs.md", "work/prismatic-flipperzero.cs.md", "work/prismatic-majordomus.cs.md", "work/prismatic.cs.md", "work/server-nixos.cs.md", "work/sonic-playground.cs.md", "work/zdeny-docker.cs.md", "_index.cs.md"]
-related = ["html", "javascript", "shell", "repository", "dockerfile", "flowbite-pro", "tailwind-css", "open-source"]
+related = ["html", "javascript", "shell", "repository", "flowbite-pro", "dockerfile", "tailwind-css", "open-source"]
 og_title = "Python: slovník"
 og_image = "og/cs-glossary-python.png"
 keywords = ["Python", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
@@ -42,7 +42,7 @@ tone = "night"
 +++
 Python jsem psal v 20 veřejných repozitářích, od roku 2014 do 2026; v 6 z nich je hlavním jazykem.
 
-K čemu to sloužilo: [Systémy a infrastruktura](@/projects/systems.cs.md) (5), [Nástroje](@/projects/tools.cs.md) (5), [Média a umění](@/projects/media.cs.md) (4) a [Data a GIS](@/projects/data.cs.md) (3).
+K čemu to sloužilo: [Systémy a infrastruktura](@/projects/systems.cs.md) (5), [Média a umění](@/projects/media.cs.md) (4), [Nástroje](@/projects/tools.cs.md) (4) a [Data a GIS](@/projects/data.cs.md) (3).
 
 Naposledy: [prismatic-flipperzero](@/work/prismatic-flipperzero.cs.md); [Sonic Playground](@/work/sonic-playground.cs.md): Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita; [astronomists](@/work/astronomists.cs.md).
 

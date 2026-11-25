@@ -38,6 +38,6 @@ Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https
 
 Zdrojový kód: [GitHub](https://github.com/korczis/algoglyph).
 
-Související práce v kategorii [Věda a vizualizace](@/projects/science.cs.md): [Oscilla](@/work/oscilla.cs.md) (2026), [maze](@/work/maze.cs.md) (2016), [maze-rs](@/work/maze-rs.cs.md) (2016) a [rustas](@/work/rustas.cs.md) (2018).
+Související práce v kategorii [Věda a vizualizace](@/projects/science.cs.md): [prismatic-flipperzero](@/work/prismatic-flipperzero.cs.md) (2026), [Oscilla](@/work/oscilla.cs.md) (2026), [maze](@/work/maze.cs.md) (2016) a [maze-rs](@/work/maze-rs.cs.md) (2016).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 30 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

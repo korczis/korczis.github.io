@@ -20,9 +20,9 @@ Tomas Korcak is available for hire: Staff engineer for AI agent infrastructure, 
 
 ## Skills
 
-Measured from every original public repository on GitHub and GitLab, derived 2026-11-25T13:42:07Z.
+Measured from every original public repository on GitHub and GitLab, derived 2026-11-25T13:59:09Z.
 
-- [JavaScript](https://korczis.github.io/glossary/javascript/): primary language of 43 original repositories; evidence: [oscilla](https://github.com/korczis/oscilla), [korczis.github.io](https://github.com/korczis/korczis.github.io), [sonic-playground](https://github.com/korczis/sonic-playground)
+- [JavaScript](https://korczis.github.io/glossary/javascript/): primary language of 43 original repositories; evidence: [korczis.github.io](https://github.com/korczis/korczis.github.io), [oscilla](https://github.com/korczis/oscilla), [sonic-playground](https://github.com/korczis/sonic-playground)
 - [Elixir](https://korczis.github.io/glossary/elixir/): primary language of 26 original repositories; evidence: [kompendium-epistemicke-anihilace](https://github.com/korczis/kompendium-epistemicke-anihilace), [crisis-map](https://github.com/korczis/crisis-map), [the-psycho](https://gitlab.com/korczis/the-psycho)
 - [Ruby](https://korczis.github.io/glossary/ruby/): primary language of 20 original repositories; evidence: [gdc-dumpator](https://github.com/korczis/gdc-dumpator), [zeman-ucet](https://github.com/korczis/zeman-ucet), [cluster](https://github.com/korczis/cluster)
 - [Shell](https://korczis.github.io/glossary/shell/): primary language of 13 original repositories; evidence: [microcrawler](https://gitlab.com/korczis/microcrawler), [home](https://github.com/korczis/home), [server-archlinux](https://github.com/korczis/server-archlinux)
@@ -168,7 +168,7 @@ Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist s
 ## Every original repository
 
 > 206 repositories on GitHub and GitLab where the owner wrote at least half of the commits,
-> derived 2026-11-25T13:42:07Z. Forks and mirrors (285) are not listed.
+> derived 2026-11-25T13:59:09Z. Forks and mirrors (285) are not listed.
 
 ### AI engineering (5)
 
@@ -178,8 +178,9 @@ Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist s
 - edna: Edna je digitální kartářka, astroložka a analytička poháněná AI. Projekt spojuje mystiku, astrologii a psychologii s moderními LLM modely, aby uživatelům přinášel denní horoskopy, výklady karet, životní vhledy a psychologické reflexe. (2025, active within 24 months). page https://korczis.github.io/work/edna/; cs page https://korczis.github.io/cs/work/edna/; GitLab https://gitlab.com/korczis/edna
 - cognitive-reasoning (2025, active within 24 months). page https://korczis.github.io/work/cognitive-reasoning/; cs page https://korczis.github.io/cs/work/cognitive-reasoning/; GitHub https://github.com/korczis/cognitive-reasoning
 
-### Science and visualisation (12)
+### Science and visualisation (13)
 
+- prismatic-flipperzero: Prismatic Pocket for Flipper Zero: an offline, data-driven knowledge engine with live assessments, scorecards, crisis simulations and a Bayes calculator; a deterministic pack compiler and a portable C core (C, 2026, active within 12 months, supervised by Majordomus). page https://korczis.github.io/work/prismatic-flipperzero/; cs page https://korczis.github.io/cs/work/prismatic-flipperzero/; GitHub https://github.com/korczis/prismatic-flipperzero; site https://korczis.github.io/prismatic-flipperzero/
 - oscilla: A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted. (JavaScript, 2026, active within 12 months, 1 stars, supervised by Majordomus). page https://korczis.github.io/work/oscilla/; cs page https://korczis.github.io/cs/work/oscilla/; GitHub https://github.com/korczis/oscilla; site https://korczis.github.io/oscilla/
 - algoglyph: Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores. (TypeScript, 2026, active within 12 months, supervised by Majordomus). page https://korczis.github.io/work/algoglyph/; cs page https://korczis.github.io/cs/work/algoglyph/; GitHub https://github.com/korczis/algoglyph; site https://korczis.github.io/algoglyph/
 - distance-calculator (Elixir, 2024, active within 48 months). page https://korczis.github.io/work/distance-calculator/; cs page https://korczis.github.io/cs/work/distance-calculator/; GitLab https://gitlab.com/korczis/distance-calculator
@@ -342,9 +343,8 @@ Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist s
 - malina: Raspberry Pi playground (Shell, 2013, archive). page https://korczis.github.io/work/malina/; cs page https://korczis.github.io/cs/work/malina/; GitHub https://github.com/korczis/malina; GitLab https://gitlab.com/korczis/malina
 - sandbox: Something just for fun. This is place where I play with new techs... (Ruby, 2012, archive, 1 stars). page https://korczis.github.io/work/sandbox/; cs page https://korczis.github.io/cs/work/sandbox/; GitHub https://github.com/korczis/sandbox; GitLab https://gitlab.com/korczis/sandbox
 
-### Tools (64)
+### Tools (63)
 
-- prismatic-flipperzero: Prismatic for Flipper Zero: native FAP on its way to Prismatic Pocket, an offline evidence-first epistemic toolkit (C, 2026, active within 12 months, supervised by Majordomus). page https://korczis.github.io/work/prismatic-flipperzero/; cs page https://korczis.github.io/cs/work/prismatic-flipperzero/; GitHub https://github.com/korczis/prismatic-flipperzero; site https://korczis.github.io/prismatic-flipperzero/
 - astronomists (Python, 2026, active within 12 months). page https://korczis.github.io/work/astronomists/; cs page https://korczis.github.io/cs/work/astronomists/; GitHub https://github.com/korczis/astronomists; site https://korczis.github.io/astronomists/
 - vomaste.cz (JavaScript, 2026, active within 12 months). page https://korczis.github.io/work/vomaste-cz/; cs page https://korczis.github.io/cs/work/vomaste-cz/; GitHub https://github.com/korczis/vomaste.cz; site https://korczis.github.io/vomaste.cz/
 - the-psycho (Elixir, 2025–2026, active within 12 months). page https://korczis.github.io/work/the-psycho/; cs page https://korczis.github.io/cs/work/the-psycho/; GitLab https://gitlab.com/korczis/the-psycho

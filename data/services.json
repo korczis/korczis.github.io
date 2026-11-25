@@ -1000,19 +1000,6 @@
           "skill": "media-forensics"
         },
         {
-          "name": "prismatic-flipperzero",
-          "title": "prismatic-flipperzero",
-          "how": "words",
-          "score": 2.6,
-          "slug": "prismatic-flipperzero",
-          "url": "https://github.com/korczis/prismatic-flipperzero",
-          "description": "Prismatic for Flipper Zero: native FAP on its way to Prismatic Pocket, an offline evidence-first epistemic toolkit",
-          "category": "tools",
-          "site": "https://korczis.github.io/prismatic-flipperzero/",
-          "pushed": "2026-11-25",
-          "skill": "audit-trail"
-        },
-        {
           "name": "catharsis-as-a-service",
           "title": "Catharsis as a Service",
           "how": "words",
@@ -1108,21 +1095,16 @@
         {
           "id": "html",
           "name": "HTML",
-          "n": 5
+          "n": 4
         },
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 5
+          "n": 4
         },
         {
           "id": "python",
           "name": "Python",
-          "n": 5
-        },
-        {
-          "id": "shell",
-          "name": "Shell",
           "n": 4
         },
         {
@@ -1141,13 +1123,13 @@
           "n": 3
         },
         {
-          "id": "alpine-js",
-          "name": "Alpine.js",
-          "n": 2
+          "id": "shell",
+          "name": "Shell",
+          "n": 3
         },
         {
-          "id": "c",
-          "name": "C",
+          "id": "alpine-js",
+          "name": "Alpine.js",
           "n": 2
         },
         {
@@ -1183,6 +1165,11 @@
         {
           "id": "babel",
           "name": "Babel",
+          "n": 1
+        },
+        {
+          "id": "c",
+          "name": "C",
           "n": 1
         }
       ]
@@ -2231,19 +2218,6 @@
           "skill": "llm-agents"
         },
         {
-          "name": "prismatic-flipperzero",
-          "title": "prismatic-flipperzero",
-          "how": "words",
-          "score": 2.6,
-          "slug": "prismatic-flipperzero",
-          "url": "https://github.com/korczis/prismatic-flipperzero",
-          "description": "Prismatic for Flipper Zero: native FAP on its way to Prismatic Pocket, an offline evidence-first epistemic toolkit",
-          "category": "tools",
-          "site": "https://korczis.github.io/prismatic-flipperzero/",
-          "pushed": "2026-11-25",
-          "skill": "audit-trail"
-        },
-        {
           "name": "catharsis-as-a-service",
           "title": "Catharsis as a Service",
           "how": "words",
@@ -2371,22 +2345,22 @@
         {
           "id": "html",
           "name": "HTML",
-          "n": 17
+          "n": 16
         },
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 17
+          "n": 16
         },
         {
           "id": "shell",
           "name": "Shell",
-          "n": 14
+          "n": 13
         },
         {
           "id": "python",
           "name": "Python",
-          "n": 12
+          "n": 11
         },
         {
           "id": "flowbite-pro",
@@ -2419,13 +2393,13 @@
           "n": 7
         },
         {
-          "id": "claude-code",
-          "name": "Claude Code",
-          "n": 5
-        },
-        {
           "id": "fastapi",
           "name": "FastAPI",
+          "n": 6
+        },
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
           "n": 5
         },
         {
@@ -2610,19 +2584,6 @@
           "skill": "policy-as-code"
         },
         {
-          "name": "prismatic-flipperzero",
-          "title": "prismatic-flipperzero",
-          "how": "words",
-          "score": 2.6,
-          "slug": "prismatic-flipperzero",
-          "url": "https://github.com/korczis/prismatic-flipperzero",
-          "description": "Prismatic for Flipper Zero: native FAP on its way to Prismatic Pocket, an offline evidence-first epistemic toolkit",
-          "category": "tools",
-          "site": "https://korczis.github.io/prismatic-flipperzero/",
-          "pushed": "2026-11-25",
-          "skill": "audit-trail"
-        },
-        {
           "name": "catharsis-as-a-service",
           "title": "Catharsis as a Service",
           "how": "words",
@@ -2721,17 +2682,17 @@
         {
           "id": "html",
           "name": "HTML",
-          "n": 19
+          "n": 18
         },
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 19
+          "n": 18
         },
         {
           "id": "shell",
           "name": "Shell",
-          "n": 17
+          "n": 16
         },
         {
           "id": "flowbite-pro",
@@ -2739,13 +2700,13 @@
           "n": 12
         },
         {
-          "id": "python",
-          "name": "Python",
-          "n": 11
-        },
-        {
           "id": "alpine-js",
           "name": "Alpine.js",
+          "n": 10
+        },
+        {
+          "id": "python",
+          "name": "Python",
           "n": 10
         },
         {
@@ -2874,6 +2835,19 @@
           "skill": "interactive-visualisation"
         },
         {
+          "name": "prismatic-flipperzero",
+          "title": "prismatic-flipperzero",
+          "how": "words",
+          "score": 3.8,
+          "slug": "prismatic-flipperzero",
+          "url": "https://github.com/korczis/prismatic-flipperzero",
+          "description": "Prismatic Pocket for Flipper Zero: an offline, data-driven knowledge engine with live assessments, scorecards, crisis simulations and a Bayes calculator; a deterministic pack compiler and a portable C core",
+          "category": "science",
+          "site": "https://korczis.github.io/prismatic-flipperzero/",
+          "pushed": "2026-11-25",
+          "skill": "interactive-visualisation"
+        },
+        {
           "name": "microcrawler-crawler-all",
           "title": "microcrawler-crawler-all",
           "how": "words",
@@ -2976,19 +2950,6 @@
           "site": null,
           "pushed": "2025-12-20",
           "skill": "data-integration"
-        },
-        {
-          "name": "prismatic-flipperzero",
-          "title": "prismatic-flipperzero",
-          "how": "words",
-          "score": 2.8,
-          "slug": "prismatic-flipperzero",
-          "url": "https://github.com/korczis/prismatic-flipperzero",
-          "description": "Prismatic for Flipper Zero: native FAP on its way to Prismatic Pocket, an offline evidence-first epistemic toolkit",
-          "category": "tools",
-          "site": "https://korczis.github.io/prismatic-flipperzero/",
-          "pushed": "2026-11-25",
-          "skill": "interactive-visualisation"
         },
         {
           "name": "data-atlas",
@@ -4861,18 +4822,6 @@
       ],
       "repos": [
         {
-          "name": "prismatic-flipperzero",
-          "title": "prismatic-flipperzero",
-          "how": "words",
-          "score": 2.6,
-          "slug": "prismatic-flipperzero",
-          "url": "https://github.com/korczis/prismatic-flipperzero",
-          "description": "Prismatic for Flipper Zero: native FAP on its way to Prismatic Pocket, an offline evidence-first epistemic toolkit",
-          "category": "tools",
-          "site": "https://korczis.github.io/prismatic-flipperzero/",
-          "pushed": "2026-11-25"
-        },
-        {
           "name": "catharsis-as-a-service",
           "title": "Catharsis as a Service",
           "how": "words",
@@ -4933,21 +4882,16 @@
         {
           "id": "html",
           "name": "HTML",
-          "n": 4
+          "n": 3
         },
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 4
+          "n": 3
         },
         {
           "id": "python",
           "name": "Python",
-          "n": 4
-        },
-        {
-          "id": "shell",
-          "name": "Shell",
           "n": 3
         },
         {
@@ -4976,14 +4920,14 @@
           "n": 2
         },
         {
-          "id": "tailwind-css",
-          "name": "Tailwind CSS",
+          "id": "shell",
+          "name": "Shell",
           "n": 2
         },
         {
-          "id": "c",
-          "name": "C",
-          "n": 1
+          "id": "tailwind-css",
+          "name": "Tailwind CSS",
+          "n": 2
         },
         {
           "id": "claude-code",
@@ -5008,6 +4952,11 @@
         {
           "id": "elixir",
           "name": "Elixir",
+          "n": 1
+        },
+        {
+          "id": "fastapi",
+          "name": "FastAPI",
           "n": 1
         }
       ]
@@ -6686,11 +6635,11 @@
           "name": "prismatic-flipperzero",
           "title": "prismatic-flipperzero",
           "how": "words",
-          "score": 2.8,
+          "score": 3.8,
           "slug": "prismatic-flipperzero",
           "url": "https://github.com/korczis/prismatic-flipperzero",
-          "description": "Prismatic for Flipper Zero: native FAP on its way to Prismatic Pocket, an offline evidence-first epistemic toolkit",
-          "category": "tools",
+          "description": "Prismatic Pocket for Flipper Zero: an offline, data-driven knowledge engine with live assessments, scorecards, crisis simulations and a Bayes calculator; a deterministic pack compiler and a portable C core",
+          "category": "science",
           "site": "https://korczis.github.io/prismatic-flipperzero/",
           "pushed": "2026-11-25"
         },

@@ -35,6 +35,6 @@ vars = { cadence = "každých 6 hodin" }
 
 Zdrojový kód: [GitLab](https://gitlab.com/korczis/comtesse).
 
-Související práce v kategorii [Nástroje](@/projects/tools.cs.md): [Gists search](@/work/gists-search.cs.md) (2026), [vomaste.cz](@/work/vomaste-cz.cs.md) (2026), [prismatic-flipperzero](@/work/prismatic-flipperzero.cs.md) (2026) a [bcnode-old](@/work/bcnode-old.cs.md) (2018).
+Související práce v kategorii [Nástroje](@/projects/tools.cs.md): [Gists search](@/work/gists-search.cs.md) (2026), [vomaste.cz](@/work/vomaste-cz.cs.md) (2026), [bcnode-old](@/work/bcnode-old.cs.md) (2018) a [prismatic](@/work/prismatic.cs.md) (2025).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 24 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…), ze snímku obnovovaného každých 6 hodin. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

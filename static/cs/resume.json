@@ -120,8 +120,8 @@
    "name": "JavaScript",
    "url": "https://korczis.github.io/cs/glossary/javascript/",
    "keywords": [
-    "oscilla",
     "korczis.github.io",
+    "oscilla",
     "sonic-playground"
    ]
   },
@@ -540,6 +540,6 @@
  "meta": {
   "canonical": "https://korczis.github.io/cs/resume.json",
   "version": "v1.0.0",
-  "lastModified": "2026-11-25T13:42:07Z"
+  "lastModified": "2026-11-25T13:59:09Z"
  }
 }

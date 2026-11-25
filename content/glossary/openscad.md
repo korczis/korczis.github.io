@@ -17,7 +17,7 @@ definition = "A language for solid 3D models described as code: shapes combined 
 aliases = []
 reference = { title = "OpenSCAD documentation", url = "https://openscad.org/documentation.html" }
 pages = ["projects/tools.md", "work/3d-print.md"]
-related = ["open-source", "repository", "c", "commit", "cpp", "csharp", "elixir", "javascript"]
+related = ["open-source", "repository", "commit", "cpp", "csharp", "elixir", "javascript", "just"]
 og_title = "OpenSCAD: glossary"
 og_image = "og/glossary-openscad.png"
 keywords = ["OpenSCAD", "Programming language", "Glossary", "Tomas Korcak"]

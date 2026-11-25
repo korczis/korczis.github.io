@@ -1,6 +1,6 @@
 {
  "schema": "korczis-hub-index/v1",
- "generated_at": "2026-11-25T13:42:07Z",
+ "generated_at": "2026-11-25T13:59:09Z",
  "rule": "original = the owner wrote at least half of the listed commits; forks and mirrors are counted, not listed",
  "counts": {
   "github": 449,
@@ -18,7 +18,7 @@
  "dropped": [],
  "supervision": {
   "marker": ".ai/manifest.yaml",
-  "measured_at": "2026-11-25T13:42:07Z",
+  "measured_at": "2026-11-25T13:59:09Z",
   "kept": 0
  },
  "all_repos": [
@@ -1664,7 +1664,7 @@
    ],
    "stars": 0,
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-25T09:06:29Z",
+   "pushed_at": "2026-11-25T13:44:00Z",
    "archived": false,
    "share": 0.9,
    "hosts": {
@@ -2427,12 +2427,12 @@
   },
   {
    "name": "prismatic-flipperzero",
-   "description": "Prismatic for Flipper Zero: native FAP on its way to Prismatic Pocket, an offline evidence-first epistemic toolkit",
+   "description": "Prismatic Pocket for Flipper Zero: an offline, data-driven knowledge engine with live assessments, scorecards, crisis simulations and a Bayes calculator; a deterministic pack compiler and a portable C core",
    "language": "C",
    "topics": [],
    "stars": 0,
    "created_at": "2026-11-25T03:06:03Z",
-   "pushed_at": "2026-11-25T13:32:25Z",
+   "pushed_at": "2026-11-25T13:49:18Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -2440,7 +2440,7 @@
    },
    "site": "https://korczis.github.io/prismatic-flipperzero/",
    "supervised": true,
-   "category": "tools",
+   "category": "science",
    "curated": false
   },
   {
@@ -4347,11 +4347,11 @@
   }
  ],
  "by_category": {
-  "tools": 64,
-  "science": 12,
-  "ai": 5,
+  "science": 13,
   "web": 14,
+  "ai": 5,
   "media": 8,
+  "tools": 63,
   "knowledge": 5,
   "data": 49,
   "security": 5,
@@ -4360,16 +4360,16 @@
   "learning": 21
  },
  "categories": {
-  "tools": {
-   "repos": 64,
-   "sites": 7,
-   "top_language": "JavaScript",
-   "since": "2012"
-  },
   "science": {
-   "repos": 12,
-   "sites": 3,
+   "repos": 13,
+   "sites": 4,
    "top_language": "Rust",
+   "since": "2014"
+  },
+  "web": {
+   "repos": 14,
+   "sites": 0,
+   "top_language": "JavaScript",
    "since": "2014"
   },
   "ai": {
@@ -4378,17 +4378,17 @@
    "top_language": "Elixir",
    "since": "2025"
   },
-  "web": {
-   "repos": 14,
-   "sites": 0,
-   "top_language": "JavaScript",
-   "since": "2014"
-  },
   "media": {
    "repos": 8,
    "sites": 4,
    "top_language": "JavaScript",
    "since": "2015"
+  },
+  "tools": {
+   "repos": 63,
+   "sites": 6,
+   "top_language": "JavaScript",
+   "since": "2012"
   },
   "knowledge": {
    "repos": 5,
@@ -4640,12 +4640,12 @@
     "repos": 43,
     "evidence": [
      {
-      "name": "oscilla",
-      "url": "https://github.com/korczis/oscilla"
-     },
-     {
       "name": "korczis.github.io",
       "url": "https://github.com/korczis/korczis.github.io"
+     },
+     {
+      "name": "oscilla",
+      "url": "https://github.com/korczis/oscilla"
      },
      {
       "name": "sonic-playground",
@@ -5124,10 +5124,34 @@
  "recent": {
   "size": 100,
   "from": "2018-03-10T17:02:00Z",
-  "to": "2026-11-25T13:32:25Z",
+  "to": "2026-11-25T13:49:18Z",
   "mix": {
-   "tools": {
+   "science": {
     "C": 1,
+    "JavaScript": 1,
+    "TypeScript": 1,
+    "Elixir": 1,
+    "Rust": 1
+   },
+   "web": {
+    "JavaScript": 2,
+    "HTML": 2,
+    "CSS": 3,
+    "Elixir": 1
+   },
+   "ai": {
+    "Rust": 1,
+    "Elixir": 2,
+    "Unspecified": 2
+   },
+   "media": {
+    "JavaScript": 2,
+    "HTML": 1,
+    "Python": 1,
+    "Dockerfile": 1,
+    "Elixir": 1
+   },
+   "tools": {
     "Python": 3,
     "JavaScript": 4,
     "Elixir": 8,
@@ -5138,30 +5162,6 @@
     "OpenSCAD": 1,
     "Shell": 2,
     "Swift": 1
-   },
-   "science": {
-    "JavaScript": 1,
-    "TypeScript": 1,
-    "Elixir": 1,
-    "Rust": 1
-   },
-   "ai": {
-    "Rust": 1,
-    "Elixir": 2,
-    "Unspecified": 2
-   },
-   "web": {
-    "JavaScript": 2,
-    "HTML": 2,
-    "CSS": 3,
-    "Elixir": 1
-   },
-   "media": {
-    "JavaScript": 2,
-    "HTML": 1,
-    "Python": 1,
-    "Dockerfile": 1,
-    "Elixir": 1
    },
    "knowledge": {
     "Elixir": 1,
@@ -5194,12 +5194,12 @@
  "repos": [
   {
    "name": "prismatic-flipperzero",
-   "description": "Prismatic for Flipper Zero: native FAP on its way to Prismatic Pocket, an offline evidence-first epistemic toolkit",
+   "description": "Prismatic Pocket for Flipper Zero: an offline, data-driven knowledge engine with live assessments, scorecards, crisis simulations and a Bayes calculator; a deterministic pack compiler and a portable C core",
    "language": "C",
    "topics": [],
    "stars": 0,
    "created_at": "2026-11-25T03:06:03Z",
-   "pushed_at": "2026-11-25T13:32:25Z",
+   "pushed_at": "2026-11-25T13:49:18Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -5207,7 +5207,40 @@
    },
    "site": "https://korczis.github.io/prismatic-flipperzero/",
    "supervised": true,
-   "category": "tools",
+   "category": "science",
+   "curated": false
+  },
+  {
+   "name": "korczis.github.io",
+   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+   "language": "JavaScript",
+   "topics": [
+    "accessibility",
+    "ai-agents",
+    "alpinejs",
+    "chartjs",
+    "cytoscape",
+    "echarts",
+    "flowbite",
+    "github-pages",
+    "majordomus",
+    "p5js",
+    "personal-website",
+    "portfolio",
+    "tailwindcss",
+    "zola"
+   ],
+   "stars": 0,
+   "created_at": "2024-12-24T16:48:15Z",
+   "pushed_at": "2026-11-25T13:44:00Z",
+   "archived": false,
+   "share": 0.9,
+   "hosts": {
+    "github": "https://github.com/korczis/korczis.github.io"
+   },
+   "site": null,
+   "supervised": true,
+   "category": "web",
    "curated": false
   },
   {
@@ -5275,39 +5308,6 @@
    "supervised": true,
    "category": "ai",
    "curated": true
-  },
-  {
-   "name": "korczis.github.io",
-   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-   "language": "JavaScript",
-   "topics": [
-    "accessibility",
-    "ai-agents",
-    "alpinejs",
-    "chartjs",
-    "cytoscape",
-    "echarts",
-    "flowbite",
-    "github-pages",
-    "majordomus",
-    "p5js",
-    "personal-website",
-    "portfolio",
-    "tailwindcss",
-    "zola"
-   ],
-   "stars": 0,
-   "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-25T09:06:29Z",
-   "archived": false,
-   "share": 0.9,
-   "hosts": {
-    "github": "https://github.com/korczis/korczis.github.io"
-   },
-   "site": null,
-   "supervised": true,
-   "category": "web",
-   "curated": false
   },
   {
    "name": "sonic-playground",

@@ -34,6 +34,6 @@ tone = "night"
 
 Zdrojový kód: [GitHub](https://github.com/korczis/big-png) a [GitLab](https://gitlab.com/korczis/big-png).
 
-Související práce v kategorii [Věda a vizualizace](@/projects/science.cs.md): [algorithms-ruby](@/work/algorithms-ruby.cs.md) (2015), [haskell-world](@/work/haskell-world.cs.md) (2016), [algorithms](@/work/algorithms.cs.md) (2014) a [maze-rs](@/work/maze-rs.cs.md) (2016).
+Související práce v kategorii [Věda a vizualizace](@/projects/science.cs.md): [prismatic-flipperzero](@/work/prismatic-flipperzero.cs.md) (2026), [algorithms-ruby](@/work/algorithms-ruby.cs.md) (2015), [haskell-world](@/work/haskell-world.cs.md) (2016) a [algorithms](@/work/algorithms.cs.md) (2014).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 10 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

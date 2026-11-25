@@ -16,8 +16,8 @@ kind = "language"
 definition = "The small, fast systems language beneath operating systems and most other languages."
 aliases = []
 reference = { title = "C (Wikipedia)", url = "https://en.wikipedia.org/wiki/C_(programming_language)" }
-pages = ["projects/learning.md", "projects/tools.md", "services/digital-forensics.md", "skills/infrastructure-osint.md", "work/algorithms.md", "work/happ.md", "work/icave.md", "work/magic.md", "work/nosqlight.md", "work/peacemaker.md", "work/prismatic-flipperzero.md", "work/skull-c.md"]
-related = ["repository", "open-source", "commit", "cpp", "cmake", "elixir", "javascript", "shell"]
+pages = ["projects/learning.md", "projects/science.md", "skills/infrastructure-osint.md", "work/algorithms.md", "work/happ.md", "work/icave.md", "work/magic.md", "work/nosqlight.md", "work/peacemaker.md", "work/prismatic-flipperzero.md", "work/skull-c.md"]
+related = ["repository", "commit", "open-source", "cpp", "cmake", "travis-ci", "elixir", "javascript"]
 og_title = "C: glossary"
 og_image = "og/glossary-c.png"
 keywords = ["C (programming language)", "Programming language", "Glossary", "Tomas Korcak"]
@@ -42,9 +42,9 @@ tone = "night"
 +++
 I have written C in 8 public repositories, from 2014 to 2026; in 2 of them it is the main language.
 
-What it was for: [Learning and experiments](@/projects/learning.md) (2), [Security and OSINT](@/projects/security.md) (2), [Tools](@/projects/tools.md) (2) and [Data and GIS](@/projects/data.md) (1).
+What it was for: [Learning and experiments](@/projects/learning.md) (2), [Science and visualisation](@/projects/science.md) (2), [Security and OSINT](@/projects/security.md) (2) and [Data and GIS](@/projects/data.md) (1).
 
-Most recently: [prismatic-flipperzero](@/work/prismatic-flipperzero.md): Prismatic for Flipper Zero: native FAP on its way to Prismatic Pocket, an offline evidence-first epistemic toolkit; [happ](@/work/happ.md): Playground App created during my Hospital Stay; [magic](@/work/magic.md): All the magic happens here!.
+Most recently: [prismatic-flipperzero](@/work/prismatic-flipperzero.md): Prismatic Pocket for Flipper Zero: an offline, data-driven knowledge engine with live assessments, scorecards, crisis simulations and a Bayes calculator; a deterministic pack compiler and a portable C core; [happ](@/work/happ.md): Playground App created during my Hospital Stay; [magic](@/work/magic.md): All the magic happens here!.
 
 1 of these projects runs as a live site.
 

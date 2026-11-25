@@ -17,7 +17,7 @@ definition = "A general-purpose language valued for readability, common in data 
 aliases = ["Python 2"]
 reference = { title = "python.org", url = "https://www.python.org/about/" }
 pages = ["cases/financial-group.md", "projects/data.md", "projects/media.md", "projects/science.md", "projects/tools.md", "services/_index.md", "services/ai-engineering-governance.md", "services/compliance-screening.md", "services/decision-support-ai.md", "services/digital-forensics.md", "services/digital-investigation.md", "services/due-diligence.md", "services/interactive-data-products.md", "services/m-and-a.md", "services/reputation-intelligence.md", "skills/_index.md", "skills/audit-trail.md", "skills/decision-support.md", "skills/document-extraction.md", "skills/due-diligence.md", "skills/entity-resolution.md", "skills/interactive-visualisation.md", "skills/llm-agents.md", "skills/m-and-a-screening.md", "skills/narrative-analysis.md", "skills/osint-investigation.md", "work/apollo-box.md", "work/astronomists.md", "work/aws-lambda-docker.md", "work/big-png.md", "work/catharsis-as-a-service.md", "work/data-atlas.md", "work/docker-datasciencetoolbox.md", "work/docker-dstk.md", "work/gists-search.md", "work/kompendium-epistemicke-anihilace.md", "work/kuzu-ex.md", "work/majordomus-reel.md", "work/openttd-prismatic-bridge.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/pdf-renderer.md", "work/prismatic-flipperzero.md", "work/prismatic-majordomus.md", "work/prismatic.md", "work/server-nixos.md", "work/sonic-playground.md", "work/zdeny-docker.md", "_index.md"]
-related = ["html", "javascript", "shell", "repository", "dockerfile", "flowbite-pro", "tailwind-css", "open-source"]
+related = ["html", "javascript", "shell", "repository", "flowbite-pro", "dockerfile", "tailwind-css", "open-source"]
 og_title = "Python: glossary"
 og_image = "og/glossary-python.png"
 keywords = ["Python", "Programming language", "Glossary", "Tomas Korcak"]
@@ -42,9 +42,9 @@ tone = "night"
 +++
 I have written Python in 20 public repositories, from 2014 to 2026; in 6 of them it is the main language.
 
-What it was for: [Systems and infrastructure](@/projects/systems.md) (5), [Tools](@/projects/tools.md) (5), [Media and art](@/projects/media.md) (4) and [Data and GIS](@/projects/data.md) (3).
+What it was for: [Systems and infrastructure](@/projects/systems.md) (5), [Media and art](@/projects/media.md) (4), [Tools](@/projects/tools.md) (4) and [Data and GIS](@/projects/data.md) (3).
 
-Most recently: [prismatic-flipperzero](@/work/prismatic-flipperzero.md): Prismatic for Flipper Zero: native FAP on its way to Prismatic Pocket, an offline evidence-first epistemic toolkit; [Sonic Playground](@/work/sonic-playground.md): A hand-picked music blog built with Phoenix and Elixir on the Kita theme; [astronomists](@/work/astronomists.md).
+Most recently: [prismatic-flipperzero](@/work/prismatic-flipperzero.md): Prismatic Pocket for Flipper Zero: an offline, data-driven knowledge engine with live assessments, scorecards, crisis simulations and a Bayes calculator; a deterministic pack compiler and a portable C core; [Sonic Playground](@/work/sonic-playground.md): A hand-picked music blog built with Phoenix and Elixir on the Kita theme; [astronomists](@/work/astronomists.md).
 
 9 of these projects run as live sites.
 

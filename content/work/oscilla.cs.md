@@ -3,7 +3,7 @@
 title = "Oscilla"
 description = "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu."
 template = "work.html"
-weight = 2
+weight = 3
 updated = "2026-11-25T13:00:09Z"
 
 [taxonomies]
@@ -38,6 +38,6 @@ Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https
 
 Zdrojový kód: [GitHub](https://github.com/korczis/oscilla).
 
-Související práce v kategorii [Věda a vizualizace](@/projects/science.cs.md): [maze](@/work/maze.cs.md) (2016), [algoglyph](@/work/algoglyph.cs.md) (2026), [maze-rs](@/work/maze-rs.cs.md) (2016) a [haskell-world](@/work/haskell-world.cs.md) (2016).
+Související práce v kategorii [Věda a vizualizace](@/projects/science.cs.md): [maze](@/work/maze.cs.md) (2016), [prismatic-flipperzero](@/work/prismatic-flipperzero.cs.md) (2026), [algoglyph](@/work/algoglyph.cs.md) (2026) a [maze-rs](@/work/maze-rs.cs.md) (2016).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 30 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

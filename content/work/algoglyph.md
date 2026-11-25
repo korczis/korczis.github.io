@@ -38,6 +38,6 @@ It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://k
 
 Its source is on [GitHub](https://github.com/korczis/algoglyph).
 
-Related work in [Science and visualisation](@/projects/science.md): [Oscilla](@/work/oscilla.md) (2026), [maze](@/work/maze.md) (2016), [maze-rs](@/work/maze-rs.md) (2016) and [rustas](@/work/rustas.md) (2018).
+Related work in [Science and visualisation](@/projects/science.md): [prismatic-flipperzero](@/work/prismatic-flipperzero.md) (2026), [Oscilla](@/work/oscilla.md) (2026), [maze](@/work/maze.md) (2016) and [maze-rs](@/work/maze-rs.md) (2016).
 
 *How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 30 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

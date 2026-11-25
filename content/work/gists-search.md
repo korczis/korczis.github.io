@@ -36,6 +36,6 @@ It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://k
 
 Its source is on [GitHub](https://github.com/korczis/gists-search).
 
-Related work in [Tools](@/projects/tools.md): [prismatic-flipperzero](@/work/prismatic-flipperzero.md) (2026), [astronomists](@/work/astronomists.md) (2026), [vomaste.cz](@/work/vomaste-cz.md) (2026) and [prismatic](@/work/prismatic.md) (2025).
+Related work in [Tools](@/projects/tools.md): [astronomists](@/work/astronomists.md) (2026), [vomaste.cz](@/work/vomaste-cz.md) (2026), [prismatic](@/work/prismatic.md) (2025) and [comtesse](@/work/comtesse.md) (2025).
 
 *How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 2 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

@@ -34,6 +34,6 @@ The [repository](@/glossary/repository.md) was created on 1 March 2014; its late
 
 Its source is on [GitHub](https://github.com/korczis/iCave) and [GitLab](https://gitlab.com/korczis/iCave).
 
-Related work in [Tools](@/projects/tools.md): [prismatic-flipperzero](@/work/prismatic-flipperzero.md) (2026), [grache](@/work/grache.md) (2015), [lethe.it](@/work/lethe-it.md) (2014–2015) and [wangsta](@/work/wangsta.md) (2015).
+Related work in [Tools](@/projects/tools.md): [grache](@/work/grache.md) (2015), [lethe.it](@/work/lethe-it.md) (2014–2015), [wangsta](@/work/wangsta.md) (2015) and [magicbiz](@/work/magicbiz.md) (2015).
 
 *How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 30 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

@@ -42,9 +42,9 @@ tone = "night"
 +++
 I have written Shell in 43 public repositories, from 2013 to 2026; in 13 of them it is the main language.
 
-What it was for: [Tools](@/projects/tools.md) (12), [Systems and infrastructure](@/projects/systems.md) (10), [Data and GIS](@/projects/data.md) (5) and [Media and art](@/projects/media.md) (5).
+What it was for: [Tools](@/projects/tools.md) (11), [Systems and infrastructure](@/projects/systems.md) (10), [Data and GIS](@/projects/data.md) (5) and [Media and art](@/projects/media.md) (5).
 
-Most recently: [prismatic-flipperzero](@/work/prismatic-flipperzero.md): Prismatic for Flipper Zero: native FAP on its way to Prismatic Pocket, an offline evidence-first epistemic toolkit; [Majordomus](@/work/prismatic-majordomus.md): One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model; [Sonic Playground](@/work/sonic-playground.md): A hand-picked music blog built with Phoenix and Elixir on the Kita theme.
+Most recently: [prismatic-flipperzero](@/work/prismatic-flipperzero.md): Prismatic Pocket for Flipper Zero: an offline, data-driven knowledge engine with live assessments, scorecards, crisis simulations and a Bayes calculator; a deterministic pack compiler and a portable C core; [Majordomus](@/work/prismatic-majordomus.md): One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model; [Sonic Playground](@/work/sonic-playground.md): A hand-picked music blog built with Phoenix and Elixir on the Kita theme.
 
 10 of these projects run as live sites.
 

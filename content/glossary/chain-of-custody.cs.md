@@ -17,7 +17,7 @@ definition = "Záznam o tom, kdo důkaz získal, kdy a jak, a čímkoli prošel,
 aliases = []
 reference = { title = "NIST CSRC: chain of custody", url = "https://csrc.nist.gov/glossary/term/chain_of_custody" }
 pages = ["services/_index.cs.md", "services/digital-forensics.cs.md", "skills/_index.cs.md", "skills/chain-of-custody.cs.md"]
-related = ["dockerfile", "javascript", "alpine-js", "attack-surface", "audit-trail", "digital-forensics", "html", "nodejs"]
+related = ["dockerfile", "javascript", "alpine-js", "attack-surface", "audit-trail", "digital-forensics", "flowbite-pro", "html"]
 og_title = "Řetězec úschovy: slovník"
 og_image = "og/cs-glossary-chain-of-custody.png"
 keywords = ["Řetězec úschovy", "Chain of custody", "Koncept", "Slovník", "Tomáš Korčák"]

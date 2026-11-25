@@ -4,18 +4,18 @@ title = "Věda a vizualizace"
 description = "Poctivé přístroje a kreslené algoritmy v prohlížeči: akustika, fyzika, řazení, bludiště, každý údaj změřený."
 template = "category.html"
 weight = 2
-updated = "2026-11-25T13:07:24Z"
+updated = "2026-11-25T13:49:18Z"
 
 [taxonomies]
 tags = ["Věda a vizualizace", "Oscilla", "algoglyph", "maze-rs", "big-png"]
 
 [extra]
 category = "science"
-og_title = "Věda a vizualizace: 12 repozitářů."
+og_title = "Věda a vizualizace: 13 repozitářů."
 og_image = "og/cs-category-science.png"
 schema = "collection"
-terms = ["data-visualisation", "rust", "cpp", "javascript", "elixir", "haskell", "python", "typescript", "web-audio", "p5-js", "apache-echarts", "alpine-js", "flowbite-pro", "repository"]
-keywords = ["Věda a vizualizace", "Oscilla", "algoglyph", "maze-rs", "big-png", "distance-calculator", "rustas", "graph-flow", "maze", "maze-js", "haskell-world", "Tomáš Korčák"]
+terms = ["data-visualisation", "rust", "cpp", "javascript", "c", "elixir", "haskell", "python", "typescript", "web-audio", "p5-js", "apache-echarts", "alpine-js", "flowbite-pro", "repository"]
+keywords = ["Věda a vizualizace", "Oscilla", "algoglyph", "maze-rs", "big-png", "prismatic-flipperzero", "distance-calculator", "rustas", "graph-flow", "maze", "maze-js", "Tomáš Korčák"]
 
 [[extra.viz]]
 kind = "constellation"
@@ -28,7 +28,7 @@ tone = "night"
 +++
 Poctivé přístroje a kreslené algoritmy v prohlížeči: akustika, fyzika, řazení, bludiště, každý údaj změřený.
 
-Kategorie má 12 repozitářů; nejčastějšími jazyky jsou [Rust](@/glossary/rust.cs.md), [C++](@/glossary/cpp.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Elixir](@/glossary/elixir.cs.md) a [Haskell](@/glossary/haskell.cs.md). Vybrané projekty: **Oscilla**, **algoglyph**, **maze-rs** a **big-png**.
+Kategorie má 13 repozitářů; nejčastějšími jazyky jsou [Rust](@/glossary/rust.cs.md), [C++](@/glossary/cpp.cs.md), [JavaScript](@/glossary/javascript.cs.md), [C](@/glossary/c.cs.md) a [Elixir](@/glossary/elixir.cs.md). Vybrané projekty: **Oscilla**, **algoglyph**, **maze-rs** a **big-png**.
 
 Klíčový pojem: [Vizualizace dat](@/glossary/data-visualisation.cs.md).
 

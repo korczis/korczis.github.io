@@ -36,6 +36,6 @@ Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https
 
 Zdrojový kód: [GitHub](https://github.com/korczis/astronomists).
 
-Související práce v kategorii [Nástroje](@/projects/tools.cs.md): [prismatic](@/work/prismatic.cs.md) (2025), [Gists search](@/work/gists-search.cs.md) (2026), [vomaste.cz](@/work/vomaste-cz.cs.md) (2026) a [prismatic-flipperzero](@/work/prismatic-flipperzero.cs.md) (2026).
+Související práce v kategorii [Nástroje](@/projects/tools.cs.md): [prismatic](@/work/prismatic.cs.md) (2025), [Gists search](@/work/gists-search.cs.md) (2026), [vomaste.cz](@/work/vomaste-cz.cs.md) (2026) a [u-tygra](@/work/u-tygra.cs.md) (2024–2025).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 28 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

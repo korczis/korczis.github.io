@@ -34,6 +34,6 @@ The [repository](@/glossary/repository.md) was created on 18 July 2014; its late
 
 Its source is on [GitHub](https://github.com/korczis/algorithms) and [GitLab](https://gitlab.com/korczis/algorithms).
 
-Related work in [Science and visualisation](@/projects/science.md): [algorithms-ruby](@/work/algorithms-ruby.md) (2015), [big-png](@/work/big-png.md) (2015), [haskell-world](@/work/haskell-world.md) (2016) and [maze-rs](@/work/maze-rs.md) (2016).
+Related work in [Science and visualisation](@/projects/science.md): [algorithms-ruby](@/work/algorithms-ruby.md) (2015), [prismatic-flipperzero](@/work/prismatic-flipperzero.md) (2026), [big-png](@/work/big-png.md) (2015) and [haskell-world](@/work/haskell-world.md) (2016).
 
 *How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 20 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).
