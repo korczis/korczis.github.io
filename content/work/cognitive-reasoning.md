@@ -3,7 +3,7 @@
 title = "cognitive-reasoning"
 description = "cognitive-reasoning: a project in AI engineering, last commit on 25 April 2025."
 template = "work.html"
-weight = 29
+weight = 30
 updated = "2025-04-25T11:08:12Z"
 
 [taxonomies]

@@ -3,7 +3,7 @@
 title = "zaas"
 description = "ZaaS - Zeman As A Service. Archive, 2017; tools. An archived project by Tomas Korcak, 2017."
 template = "work.html"
-weight = 87
+weight = 88
 updated = "2017-09-07T20:14:05Z"
 
 [taxonomies]

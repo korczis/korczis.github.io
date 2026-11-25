@@ -3,7 +3,7 @@
 title = "skull-haskell"
 description = "skull-haskell: archivní projekt z kategorie Učení a experimenty, hlavní jazyk Haskell, 2014; poslední commit 3. srpna 2014."
 template = "work.html"
-weight = 180
+weight = 181
 updated = "2014-08-03T04:08:31Z"
 
 [taxonomies]

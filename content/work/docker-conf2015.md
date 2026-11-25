@@ -3,7 +3,7 @@
 title = "docker-conf2015"
 description = "Dockerfile for GD ConferenceDay 2015. Archive, 2015; systems and infrastructure."
 template = "work.html"
-weight = 158
+weight = 159
 updated = "2015-02-27T10:00:49Z"
 
 [taxonomies]

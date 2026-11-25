@@ -3,7 +3,7 @@
 title = "server-atomic"
 description = "server-atomic: archivní projekt z kategorie Systémy a infrastruktura, hlavní jazyk Shell, 2019; poslední commit 12. února 2019."
 template = "work.html"
-weight = 68
+weight = 69
 updated = "2019-02-12T05:51:00Z"
 
 [taxonomies]

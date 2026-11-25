@@ -3,7 +3,7 @@
 title = "js-libp2p-umbrella"
 description = "Umbrella repository for j2-libp2p and relavant modules"
 template = "work.html"
-weight = 75
+weight = 76
 updated = "2018-05-03T14:08:25Z"
 
 [taxonomies]

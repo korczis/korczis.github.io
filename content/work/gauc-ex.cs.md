@@ -3,7 +3,7 @@
 title = "gauc.ex"
 description = "gauc.ex: archivní projekt z kategorie Knihovny, hlavní jazyk Elixir, 2017–2018; poslední commit 31. března 2018."
 template = "work.html"
-weight = 77
+weight = 78
 updated = "2018-03-31T23:07:30Z"
 
 [taxonomies]

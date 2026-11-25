@@ -3,7 +3,7 @@
 title = "microcrawler-crawler-craiglist-com"
 description = "microcrawler-crawler-craiglist-com: archivní projekt z kategorie Data a GIS, hlavní jazyk JavaScript, 2016; poslední commit 30. srpna 2016."
 template = "work.html"
-weight = 125
+weight = 126
 updated = "2016-08-30T17:56:46Z"
 
 [taxonomies]

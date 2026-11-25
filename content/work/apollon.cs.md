@@ -3,7 +3,7 @@
 title = "apollon"
 description = "apollon: archivní projekt z kategorie Systémy a infrastruktura, hlavní jazyk Ruby, 2014–2015; poslední commit 25. února 2015."
 template = "work.html"
-weight = 159
+weight = 160
 updated = "2015-02-25T17:37:45Z"
 
 [taxonomies]

@@ -3,7 +3,7 @@
 title = "wangsta"
 description = "Wanna be Gangsta. Archive, 2015; tools. An archived project by Tomas Korcak, 2015."
 template = "work.html"
-weight = 155
+weight = 156
 updated = "2015-04-03T00:50:55Z"
 
 [taxonomies]

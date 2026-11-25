@@ -3,7 +3,7 @@
 title = "korczis-github-com"
 description = "Github Pages. Archive, 2014–2015; web. An archived project by Tomas Korcak, 2014–2015."
 template = "work.html"
-weight = 142
+weight = 143
 updated = "2015-09-18T22:31:40Z"
 
 [taxonomies]

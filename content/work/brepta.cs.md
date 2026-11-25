@@ -3,7 +3,7 @@
 title = "brepta"
 description = "brepta: archivní projekt z kategorie Média a umění, hlavní jazyk JavaScript, 2017; poslední commit 20. ledna 2017."
 template = "work.html"
-weight = 104
+weight = 105
 updated = "2017-01-20T13:48:44Z"
 
 [taxonomies]

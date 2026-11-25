@@ -3,7 +3,7 @@
 title = "in-rust-we-trust"
 description = "in-rust-we-trust: archivní projekt z kategorie Nástroje, 2017; poslední commit 11. října 2017."
 template = "work.html"
-weight = 83
+weight = 84
 updated = "2017-10-11T15:15:41Z"
 
 [taxonomies]

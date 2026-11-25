@@ -3,7 +3,7 @@
 title = "server-nixos"
 description = "server-nixos: archivní projekt z kategorie Systémy a infrastruktura, hlavní jazyk Shell, 2019; poslední commit 6. února 2019."
 template = "work.html"
-weight = 69
+weight = 70
 updated = "2019-02-06T06:42:06Z"
 
 [taxonomies]

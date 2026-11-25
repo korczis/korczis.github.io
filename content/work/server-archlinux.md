@@ -3,7 +3,7 @@
 title = "server-archlinux"
 description = "server-archlinux: an archived project in Systems and infrastructure, main language Shell, 2019; last commit on 4 April 2019."
 template = "work.html"
-weight = 64
+weight = 65
 updated = "2019-04-04T03:45:26Z"
 
 [taxonomies]

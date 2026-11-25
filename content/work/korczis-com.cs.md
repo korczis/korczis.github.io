@@ -3,7 +3,7 @@
 title = "korczis-com"
 description = "korczis-com: archivní projekt z kategorie Web, hlavní jazyk HTML, 2014–2015; poslední commit 3. září 2015."
 template = "work.html"
-weight = 144
+weight = 145
 updated = "2015-09-03T21:24:38Z"
 
 [taxonomies]

@@ -3,7 +3,7 @@
 title = "reading"
 description = "reading: archivní projekt z kategorie Znalosti, 2019; poslední commit 16. října 2019."
 template = "work.html"
-weight = 58
+weight = 59
 updated = "2019-10-16T20:25:14Z"
 
 [taxonomies]

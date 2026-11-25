@@ -3,7 +3,7 @@
 title = "Rocnikac4"
 description = "Rocnikac4: archivní projekt z kategorie Učení a experimenty, hlavní jazyk C#, 2013; poslední commit 28. srpna 2013."
 template = "work.html"
-weight = 198
+weight = 199
 updated = "2013-08-28T23:34:50Z"
 
 [taxonomies]

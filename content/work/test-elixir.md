@@ -3,7 +3,7 @@
 title = "Test-Elixir"
 description = "Test-Elixir: an archived project in Learning and experiments, main language Elixir, 2017; last commit on 16 September 2017."
 template = "work.html"
-weight = 86
+weight = 87
 updated = "2017-09-16T09:55:43Z"
 
 [taxonomies]

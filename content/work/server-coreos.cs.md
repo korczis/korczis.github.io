@@ -3,7 +3,7 @@
 title = "server-coreos"
 description = "server-coreos: archivní projekt z kategorie Systémy a infrastruktura, 2019; poslední commit 17. února 2019."
 template = "work.html"
-weight = 67
+weight = 68
 updated = "2019-02-17T00:18:18Z"
 
 [taxonomies]

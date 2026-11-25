@@ -3,7 +3,7 @@
 title = "edna"
 description = "edna: a project in AI engineering, last commit on 2 September 2025."
 template = "work.html"
-weight = 22
+weight = 23
 updated = "2025-09-02T10:22:20Z"
 
 [taxonomies]

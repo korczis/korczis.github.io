@@ -3,7 +3,7 @@
 title = "3d-print"
 description = "3D Print stuff. Archive, 2021; tools. An archived project by Tomas Korcak, 2021."
 template = "work.html"
-weight = 52
+weight = 53
 updated = "2021-03-04T02:46:59Z"
 
 [taxonomies]

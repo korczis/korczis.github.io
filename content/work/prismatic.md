@@ -3,7 +3,7 @@
 title = "prismatic"
 description = "Advanced AI Agent Framework with Enterprise-Grade BEAM VM Introspection and Consolidation Tools"
 template = "work.html"
-weight = 26
+weight = 27
 updated = "2025-08-04T17:45:57Z"
 
 [taxonomies]
@@ -34,6 +34,6 @@ The [repository](@/glossary/repository.md) was created on 24 July 2025; its late
 
 Its source is on [GitHub](https://github.com/korczis/prismatic).
 
-Related work in [Tools](@/projects/tools.md): [astronomists](@/work/astronomists.md) (2026), [Gists search](@/work/gists-search.md) (2026), [vomaste.cz](@/work/vomaste-cz.md) (2026) and [rest-hello-world-benchmark](@/work/rest-hello-world-benchmark.md) (2022).
+Related work in [Tools](@/projects/tools.md): [astronomists](@/work/astronomists.md) (2026), [Gists search](@/work/gists-search.md) (2026), [vomaste.cz](@/work/vomaste-cz.md) (2026) and [prismatic-flipperzero](@/work/prismatic-flipperzero.md) (2026).
 
 *How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 30 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

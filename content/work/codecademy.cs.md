@@ -3,7 +3,7 @@
 title = "codecademy"
 description = "codecademy: archivní projekt z kategorie Nástroje, hlavní jazyk Ruby, 2014; poslední commit 20. května 2014."
 template = "work.html"
-weight = 186
+weight = 187
 updated = "2014-05-20T05:53:58Z"
 
 [taxonomies]

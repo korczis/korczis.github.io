@@ -3,7 +3,7 @@
 title = "zaas"
 description = "zaas: archivní projekt z kategorie Nástroje, hlavní jazyk JavaScript, 2017; poslední commit 7. září 2017."
 template = "work.html"
-weight = 87
+weight = 88
 updated = "2017-09-07T20:14:05Z"
 
 [taxonomies]

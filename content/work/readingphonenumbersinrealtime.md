@@ -3,7 +3,7 @@
 title = "ReadingPhoneNumbersInRealTime"
 description = "Analyze and filter phone numbers from text recognized in live capture, building evidence over time."
 template = "work.html"
-weight = 49
+weight = 50
 updated = "2021-08-12T04:53:59Z"
 
 [taxonomies]

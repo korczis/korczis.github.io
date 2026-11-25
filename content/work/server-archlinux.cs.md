@@ -3,7 +3,7 @@
 title = "server-archlinux"
 description = "server-archlinux: archivní projekt z kategorie Systémy a infrastruktura, hlavní jazyk Shell, 2019; poslední commit 4. dubna 2019."
 template = "work.html"
-weight = 64
+weight = 65
 updated = "2019-04-04T03:45:26Z"
 
 [taxonomies]

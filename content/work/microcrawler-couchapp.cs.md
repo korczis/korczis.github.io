@@ -3,7 +3,7 @@
 title = "microcrawler-couchapp"
 description = "microcrawler-couchapp: archivní projekt z kategorie Data a GIS, hlavní jazyk JavaScript, 2014; poslední commit 22. června 2014."
 template = "work.html"
-weight = 185
+weight = 186
 updated = "2014-06-22T01:04:23Z"
 
 [taxonomies]

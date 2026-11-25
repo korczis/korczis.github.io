@@ -3,7 +3,7 @@
 title = "aws-lambda-docker"
 description = "Example how to run Docker image using AWS Lambda. Archive, 2018; systems and infrastructure."
 template = "work.html"
-weight = 72
+weight = 73
 updated = "2018-12-04T11:45:37Z"
 
 [taxonomies]

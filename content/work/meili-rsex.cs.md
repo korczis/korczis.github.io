@@ -3,7 +3,7 @@
 title = "meili_rsex"
 description = "meili_rsex: projekt z kategorie Data a GIS, hlavní jazyk Elixir, poslední commit 3. června 2024."
 template = "work.html"
-weight = 36
+weight = 37
 updated = "2024-06-03T20:20:06Z"
 
 [taxonomies]

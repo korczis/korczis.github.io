@@ -3,7 +3,7 @@
 title = "astudo"
 description = "astudo: an archived project in Tools, main language Elixir, 2022; last commit on 1 May 2022."
 template = "work.html"
-weight = 47
+weight = 48
 updated = "2022-05-01T16:05:33Z"
 
 [taxonomies]

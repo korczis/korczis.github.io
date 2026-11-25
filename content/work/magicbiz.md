@@ -3,7 +3,7 @@
 title = "magicbiz"
 description = "A Decentralized Autonomous Organization Proof of Concept"
 template = "work.html"
-weight = 151
+weight = 152
 updated = "2015-06-17T20:09:22Z"
 
 [taxonomies]

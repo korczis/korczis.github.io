@@ -3,7 +3,7 @@
 title = "peg-loader"
 description = "peg-loader: archivní projekt z kategorie Nástroje, hlavní jazyk JavaScript, 2016; poslední commit 26. dubna 2016."
 template = "work.html"
-weight = 132
+weight = 133
 updated = "2016-04-26T19:04:37Z"
 
 [taxonomies]

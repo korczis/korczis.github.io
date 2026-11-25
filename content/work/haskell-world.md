@@ -3,7 +3,7 @@
 title = "haskell-world"
 description = "Haskell Mathematics. Archive, 2016; science and visualisation."
 template = "work.html"
-weight = 135
+weight = 136
 updated = "2016-04-09T00:01:56Z"
 
 [taxonomies]

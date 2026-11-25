@@ -3,7 +3,7 @@
 title = "cluster"
 description = "cluster: archivní projekt z kategorie Systémy a infrastruktura, hlavní jazyk Ruby, 2017; poslední commit 7. března 2017."
 template = "work.html"
-weight = 99
+weight = 100
 updated = "2017-03-07T13:25:41Z"
 
 [taxonomies]

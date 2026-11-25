@@ -3,7 +3,7 @@
 title = "maze"
 description = "Maze Web Application. Archive, 2016; science and visualisation."
 template = "work.html"
-weight = 108
+weight = 109
 updated = "2016-11-20T16:22:24Z"
 
 [taxonomies]

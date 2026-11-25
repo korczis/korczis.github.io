@@ -3,7 +3,7 @@
 title = "bcnode-extra-scripts"
 description = "BC Extra Scripts (DX). Archive, 2018; tools. An archived project by Tomas Korcak, 2018."
 template = "work.html"
-weight = 73
+weight = 74
 updated = "2018-06-24T03:57:31Z"
 
 [taxonomies]

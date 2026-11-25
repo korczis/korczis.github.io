@@ -3,7 +3,7 @@
 title = "server-atomic"
 description = "Server powered by Project Atomic. Archive, 2019; systems and infrastructure."
 template = "work.html"
-weight = 68
+weight = 69
 updated = "2019-02-12T05:51:00Z"
 
 [taxonomies]

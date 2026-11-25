@@ -17,7 +17,7 @@ definition = "A minimal, rolling-release Linux distribution configured by hand, 
 aliases = []
 reference = { title = "ArchWiki", url = "https://wiki.archlinux.org/" }
 pages = ["skills/ai-transformation.md", "work/server-archlinux.md"]
-related = ["ansible", "dockerfile", "shell", "ai-agent", "alpine-js", "cockpit", "commit", "flowbite-pro"]
+related = ["ansible", "cockpit", "dockerfile", "shell", "ai-agent", "alpine-js", "claude-api", "commit"]
 og_title = "Arch Linux: glossary"
 og_image = "og/glossary-arch-linux.png"
 keywords = ["Arch Linux", "Technology", "Glossary", "Tomas Korcak"]

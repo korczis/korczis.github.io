@@ -3,7 +3,7 @@
 title = "skull-cpp"
 description = "skull-cpp: archivní projekt z kategorie Učení a experimenty, hlavní jazyk CMake, 2014–2015; poslední commit 24. července 2015."
 template = "work.html"
-weight = 148
+weight = 149
 updated = "2015-07-24T13:54:50Z"
 
 [taxonomies]

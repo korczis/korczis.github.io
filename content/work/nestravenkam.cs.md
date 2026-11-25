@@ -3,7 +3,7 @@
 title = "nestravenkam"
 description = "nestravenkam: archivní projekt z kategorie Web, hlavní jazyk CSS, 2019; poslední commit 9. srpna 2019."
 template = "work.html"
-weight = 60
+weight = 61
 updated = "2019-08-09T02:56:27Z"
 
 [taxonomies]

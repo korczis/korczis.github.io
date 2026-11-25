@@ -3,7 +3,7 @@
 title = "the-scratch"
 description = "the-scratch: Single Page Application written in Elm with Elixir/Phoenix Backend. Archive, 2017–2018; web."
 template = "work.html"
-weight = 78
+weight = 79
 updated = "2018-03-10T17:01:46Z"
 
 [taxonomies]

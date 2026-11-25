@@ -3,7 +3,7 @@
 title = "gooddata-graphql"
 description = "gooddata-graphql: archivní projekt z kategorie Data a GIS, hlavní jazyk Elixir, 2016; poslední commit 19. prosince 2016."
 template = "work.html"
-weight = 106
+weight = 107
 updated = "2016-12-19T16:02:02Z"
 
 [taxonomies]

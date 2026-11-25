@@ -3,7 +3,7 @@
 title = "skull-ruby"
 description = "Ruby Skull. Archive, 2014; learning and experiments."
 template = "work.html"
-weight = 178
+weight = 179
 updated = "2014-08-03T04:10:03Z"
 
 [taxonomies]

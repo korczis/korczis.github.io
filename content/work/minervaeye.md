@@ -3,7 +3,7 @@
 title = "MinervaEye"
 description = "iOS application for book management. Archive, 2020–2021; knowledge."
 template = "work.html"
-weight = 51
+weight = 52
 updated = "2021-05-08T22:40:45Z"
 
 [taxonomies]

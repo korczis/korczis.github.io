@@ -3,7 +3,7 @@
 title = "rustler_mix"
 description = "rustler_mix: archivní projekt z kategorie Nástroje, hlavní jazyk Elixir, 2016; poslední commit 18. října 2016."
 template = "work.html"
-weight = 113
+weight = 114
 updated = "2016-10-18T14:12:22Z"
 
 [taxonomies]

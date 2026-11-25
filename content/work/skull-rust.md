@@ -3,7 +3,7 @@
 title = "skull-rust"
 description = "Rust experiments. Archive, 2016; learning and experiments."
 template = "work.html"
-weight = 128
+weight = 129
 updated = "2016-05-24T18:29:31Z"
 
 [taxonomies]

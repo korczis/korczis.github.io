@@ -3,7 +3,7 @@
 title = "docker-datasciencetoolbox"
 description = "Dockerized http://datasciencetoolbox.org. Archive, 2015; systems and infrastructure."
 template = "work.html"
-weight = 153
+weight = 154
 updated = "2015-06-06T15:11:52Z"
 
 [taxonomies]

@@ -948,7 +948,7 @@
         {
           "id": "elixir",
           "name": "Elixir",
-          "n": 1,
+          "n": 2,
           "declared": true
         },
         {
@@ -1026,19 +1026,6 @@
           "skill": "media-forensics"
         },
         {
-          "name": "oscilla",
-          "title": "Oscilla",
-          "how": "words",
-          "score": 2,
-          "slug": "oscilla",
-          "url": "https://github.com/korczis/oscilla",
-          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-          "category": "science",
-          "site": "https://korczis.github.io/oscilla/",
-          "pushed": "2026-11-24",
-          "skill": "audit-trail"
-        },
-        {
           "name": "osint-case-ratcliffe-moscow-2026",
           "title": "osint-case-ratcliffe-moscow-2026",
           "how": "words",
@@ -1108,22 +1095,17 @@
         {
           "id": "html",
           "name": "HTML",
-          "n": 5
+          "n": 4
         },
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 5
+          "n": 4
         },
         {
           "id": "python",
           "name": "Python",
           "n": 4
-        },
-        {
-          "id": "alpine-js",
-          "name": "Alpine.js",
-          "n": 3
         },
         {
           "id": "claude-api",
@@ -1141,33 +1123,13 @@
           "n": 3
         },
         {
-          "id": "flowbite-pro",
-          "name": "Flowbite Pro",
-          "n": 3
-        },
-        {
-          "id": "github-pages",
-          "name": "GitHub Pages",
-          "n": 3
-        },
-        {
-          "id": "playwright",
-          "name": "Playwright",
-          "n": 3
-        },
-        {
           "id": "shell",
           "name": "Shell",
           "n": 3
         },
         {
-          "id": "tailwind-css",
-          "name": "Tailwind CSS",
-          "n": 3
-        },
-        {
-          "id": "css",
-          "name": "CSS",
+          "id": "alpine-js",
+          "name": "Alpine.js",
           "n": 2
         },
         {
@@ -1176,14 +1138,39 @@
           "n": 2
         },
         {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 2
+        },
+        {
+          "id": "playwright",
+          "name": "Playwright",
+          "n": 2
+        },
+        {
           "id": "rust",
           "name": "Rust",
+          "n": 2
+        },
+        {
+          "id": "tailwind-css",
+          "name": "Tailwind CSS",
           "n": 2
         },
         {
           "id": "travis-ci",
           "name": "Travis CI",
           "n": 2
+        },
+        {
+          "id": "babel",
+          "name": "Babel",
+          "n": 1
+        },
+        {
+          "id": "c",
+          "name": "C",
+          "n": 1
         }
       ]
     },
@@ -1670,7 +1657,7 @@
           "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
           "category": "ai",
           "site": "https://korczis.github.io/prismatic-majordomus/",
-          "pushed": "2026-11-24",
+          "pushed": "2026-11-25",
           "skill": "orchestration"
         },
         {
@@ -2140,7 +2127,7 @@
         {
           "id": "elixir",
           "name": "Elixir",
-          "n": 4,
+          "n": 5,
           "declared": true
         },
         {
@@ -2188,7 +2175,7 @@
           "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
           "category": "ai",
           "site": "https://korczis.github.io/prismatic-majordomus/",
-          "pushed": "2026-11-24",
+          "pushed": "2026-11-25",
           "skill": "llm-agents"
         },
         {
@@ -2296,19 +2283,6 @@
           "skill": "ai-transformation"
         },
         {
-          "name": "oscilla",
-          "title": "Oscilla",
-          "how": "words",
-          "score": 2,
-          "slug": "oscilla",
-          "url": "https://github.com/korczis/oscilla",
-          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-          "category": "science",
-          "site": "https://korczis.github.io/oscilla/",
-          "pushed": "2026-11-24",
-          "skill": "ai-transformation"
-        },
-        {
           "name": "data-atlas",
           "title": "Data Atlas",
           "how": "words",
@@ -2371,12 +2345,12 @@
         {
           "id": "html",
           "name": "HTML",
-          "n": 18
+          "n": 16
         },
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 18
+          "n": 16
         },
         {
           "id": "shell",
@@ -2384,23 +2358,13 @@
           "n": 13
         },
         {
-          "id": "flowbite-pro",
-          "name": "Flowbite Pro",
-          "n": 12
-        },
-        {
           "id": "python",
           "name": "Python",
           "n": 11
         },
         {
-          "id": "alpine-js",
-          "name": "Alpine.js",
-          "n": 10
-        },
-        {
-          "id": "tailwind-css",
-          "name": "Tailwind CSS",
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
           "n": 10
         },
         {
@@ -2414,13 +2378,23 @@
           "n": 9
         },
         {
-          "id": "playwright",
-          "name": "Playwright",
-          "n": 7
+          "id": "alpine-js",
+          "name": "Alpine.js",
+          "n": 8
         },
         {
           "id": "github-actions",
           "name": "GitHub Actions",
+          "n": 7
+        },
+        {
+          "id": "tailwind-css",
+          "name": "Tailwind CSS",
+          "n": 7
+        },
+        {
+          "id": "fastapi",
+          "name": "FastAPI",
           "n": 6
         },
         {
@@ -2429,23 +2403,23 @@
           "n": 5
         },
         {
-          "id": "fastapi",
-          "name": "FastAPI",
+          "id": "playwright",
+          "name": "Playwright",
           "n": 5
-        },
-        {
-          "id": "github-pages",
-          "name": "GitHub Pages",
-          "n": 5
-        },
-        {
-          "id": "css",
-          "name": "CSS",
-          "n": 3
         },
         {
           "id": "ecto",
           "name": "Ecto",
+          "n": 3
+        },
+        {
+          "id": "github-pages",
+          "name": "GitHub Pages",
+          "n": 3
+        },
+        {
+          "id": "kubernetes",
+          "name": "Kubernetes",
           "n": 3
         }
       ]
@@ -2473,13 +2447,13 @@
         {
           "id": "majordomus",
           "name": "Majordomus",
-          "n": 4,
+          "n": 5,
           "declared": true
         },
         {
           "id": "github-actions",
           "name": "GitHub Actions",
-          "n": 5,
+          "n": 6,
           "declared": true
         }
       ],
@@ -2515,7 +2489,7 @@
           "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
           "category": "ai",
           "site": "https://korczis.github.io/prismatic-majordomus/",
-          "pushed": "2026-11-24",
+          "pushed": "2026-11-25",
           "skill": "llm-agents"
         },
         {
@@ -2636,19 +2610,6 @@
           "skill": "ai-transformation"
         },
         {
-          "name": "oscilla",
-          "title": "Oscilla",
-          "how": "words",
-          "score": 2,
-          "slug": "oscilla",
-          "url": "https://github.com/korczis/oscilla",
-          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-          "category": "science",
-          "site": "https://korczis.github.io/oscilla/",
-          "pushed": "2026-11-24",
-          "skill": "audit-trail"
-        },
-        {
           "name": "crisis-map",
           "title": "Crisis map",
           "how": "words",
@@ -2708,12 +2669,12 @@
         {
           "id": "html",
           "name": "HTML",
-          "n": 19
+          "n": 17
         },
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 19
+          "n": 17
         },
         {
           "id": "shell",
@@ -2723,16 +2684,6 @@
         {
           "id": "flowbite-pro",
           "name": "Flowbite Pro",
-          "n": 13
-        },
-        {
-          "id": "tailwind-css",
-          "name": "Tailwind CSS",
-          "n": 12
-        },
-        {
-          "id": "alpine-js",
-          "name": "Alpine.js",
           "n": 11
         },
         {
@@ -2741,18 +2692,23 @@
           "n": 10
         },
         {
+          "id": "alpine-js",
+          "name": "Alpine.js",
+          "n": 9
+        },
+        {
+          "id": "tailwind-css",
+          "name": "Tailwind CSS",
+          "n": 9
+        },
+        {
           "id": "github-pages",
           "name": "GitHub Pages",
-          "n": 9
+          "n": 7
         },
         {
           "id": "playwright",
           "name": "Playwright",
-          "n": 9
-        },
-        {
-          "id": "css",
-          "name": "CSS",
           "n": 7
         },
         {
@@ -2763,6 +2719,11 @@
         {
           "id": "claude-code",
           "name": "Claude Code",
+          "n": 5
+        },
+        {
+          "id": "css",
+          "name": "CSS",
           "n": 5
         },
         {
@@ -2857,7 +2818,7 @@
           "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
           "category": "media",
           "site": "https://korczis.github.io/sonic-playground/",
-          "pushed": "2026-11-24",
+          "pushed": "2026-11-25",
           "skill": "interactive-visualisation"
         },
         {
@@ -4857,18 +4818,6 @@
           "category": "ai",
           "site": null,
           "pushed": "2026-08-21"
-        },
-        {
-          "name": "oscilla",
-          "title": "Oscilla",
-          "how": "words",
-          "score": 2,
-          "slug": "oscilla",
-          "url": "https://github.com/korczis/oscilla",
-          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-          "category": "science",
-          "site": "https://korczis.github.io/oscilla/",
-          "pushed": "2026-11-24"
         }
       ],
       "engagements": [
@@ -4907,26 +4856,11 @@
         {
           "id": "html",
           "name": "HTML",
-          "n": 4
+          "n": 3
         },
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 4
-        },
-        {
-          "id": "alpine-js",
-          "name": "Alpine.js",
-          "n": 3
-        },
-        {
-          "id": "flowbite-pro",
-          "name": "Flowbite Pro",
-          "n": 3
-        },
-        {
-          "id": "playwright",
-          "name": "Playwright",
           "n": 3
         },
         {
@@ -4935,9 +4869,9 @@
           "n": 3
         },
         {
-          "id": "tailwind-css",
-          "name": "Tailwind CSS",
-          "n": 3
+          "id": "alpine-js",
+          "name": "Alpine.js",
+          "n": 2
         },
         {
           "id": "claude-api",
@@ -4945,13 +4879,13 @@
           "n": 2
         },
         {
-          "id": "css",
-          "name": "CSS",
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
           "n": 2
         },
         {
-          "id": "github-pages",
-          "name": "GitHub Pages",
+          "id": "playwright",
+          "name": "Playwright",
           "n": 2
         },
         {
@@ -4965,13 +4899,18 @@
           "n": 2
         },
         {
-          "id": "axe-core",
-          "name": "axe-core",
-          "n": 1
+          "id": "tailwind-css",
+          "name": "Tailwind CSS",
+          "n": 2
         },
         {
           "id": "claude-code",
           "name": "Claude Code",
+          "n": 1
+        },
+        {
+          "id": "css",
+          "name": "CSS",
           "n": 1
         },
         {
@@ -4982,6 +4921,16 @@
         {
           "id": "ecto",
           "name": "Ecto",
+          "n": 1
+        },
+        {
+          "id": "elixir",
+          "name": "Elixir",
+          "n": 1
+        },
+        {
+          "id": "fastapi",
+          "name": "FastAPI",
           "n": 1
         }
       ]
@@ -5005,18 +4954,6 @@
           "category": "systems",
           "site": null,
           "pushed": "2019-04-04"
-        },
-        {
-          "name": "oscilla",
-          "title": "Oscilla",
-          "how": "words",
-          "score": 2,
-          "slug": "oscilla",
-          "url": "https://github.com/korczis/oscilla",
-          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-          "category": "science",
-          "site": "https://korczis.github.io/oscilla/",
-          "pushed": "2026-11-24"
         }
       ],
       "engagements": [
@@ -5039,33 +4976,8 @@
       ],
       "technologies": [
         {
-          "id": "alpine-js",
-          "name": "Alpine.js",
-          "n": 2
-        },
-        {
           "id": "dockerfile",
           "name": "Dockerfile",
-          "n": 2
-        },
-        {
-          "id": "flowbite-pro",
-          "name": "Flowbite Pro",
-          "n": 2
-        },
-        {
-          "id": "html",
-          "name": "HTML",
-          "n": 2
-        },
-        {
-          "id": "javascript",
-          "name": "JavaScript",
-          "n": 2
-        },
-        {
-          "id": "playwright",
-          "name": "Playwright",
           "n": 2
         },
         {
@@ -5074,9 +4986,9 @@
           "n": 2
         },
         {
-          "id": "tailwind-css",
-          "name": "Tailwind CSS",
-          "n": 2
+          "id": "alpine-js",
+          "name": "Alpine.js",
+          "n": 1
         },
         {
           "id": "ansible",
@@ -5086,11 +4998,6 @@
         {
           "id": "arch-linux",
           "name": "Arch Linux",
-          "n": 1
-        },
-        {
-          "id": "axe-core",
-          "name": "axe-core",
           "n": 1
         },
         {
@@ -5104,18 +5011,48 @@
           "n": 1
         },
         {
-          "id": "css",
-          "name": "CSS",
-          "n": 1
-        },
-        {
-          "id": "esbuild",
-          "name": "esbuild",
-          "n": 1
-        },
-        {
           "id": "fastapi",
           "name": "FastAPI",
+          "n": 1
+        },
+        {
+          "id": "flowbite-pro",
+          "name": "Flowbite Pro",
+          "n": 1
+        },
+        {
+          "id": "github-actions",
+          "name": "GitHub Actions",
+          "n": 1
+        },
+        {
+          "id": "html",
+          "name": "HTML",
+          "n": 1
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "n": 1
+        },
+        {
+          "id": "kubernetes",
+          "name": "Kubernetes",
+          "n": 1
+        },
+        {
+          "id": "majordomus",
+          "name": "Majordomus",
+          "n": 1
+        },
+        {
+          "id": "openai-api",
+          "name": "OpenAI API",
+          "n": 1
+        },
+        {
+          "id": "playwright",
+          "name": "Playwright",
           "n": 1
         }
       ]
@@ -5138,7 +5075,7 @@
           "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
           "category": "ai",
           "site": "https://korczis.github.io/prismatic-majordomus/",
-          "pushed": "2026-11-24"
+          "pushed": "2026-11-25"
         },
         {
           "name": "sig",
@@ -5430,7 +5367,7 @@
           "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
           "category": "ai",
           "site": "https://korczis.github.io/prismatic-majordomus/",
-          "pushed": "2026-11-24"
+          "pushed": "2026-11-25"
         }
       ],
       "engagements": [
@@ -6457,18 +6394,6 @@
           "pushed": "2026-11-19"
         },
         {
-          "name": "prismatic-majordomus",
-          "title": "Majordomus",
-          "how": "words",
-          "score": 4,
-          "slug": "prismatic-majordomus",
-          "url": "https://github.com/korczis/prismatic-majordomus",
-          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
-          "category": "ai",
-          "site": "https://korczis.github.io/prismatic-majordomus/",
-          "pushed": "2026-11-24"
-        },
-        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "how": "words",
@@ -6491,6 +6416,18 @@
           "category": "knowledge",
           "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
           "pushed": "2026-11-22"
+        },
+        {
+          "name": "prismatic-majordomus",
+          "title": "Majordomus",
+          "how": "words",
+          "score": 3,
+          "slug": "prismatic-majordomus",
+          "url": "https://github.com/korczis/prismatic-majordomus",
+          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+          "category": "ai",
+          "site": "https://korczis.github.io/prismatic-majordomus/",
+          "pushed": "2026-11-25"
         },
         {
           "name": "data-atlas",
@@ -6654,7 +6591,7 @@
           "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
           "category": "media",
           "site": "https://korczis.github.io/sonic-playground/",
-          "pushed": "2026-11-24"
+          "pushed": "2026-11-25"
         },
         {
           "name": "kompendium-epistemicke-anihilace",

@@ -3,7 +3,7 @@
 title = "datascience"
 description = "Various datascience toy projects. Nothing serious. Mostly."
 template = "work.html"
-weight = 131
+weight = 132
 updated = "2016-04-30T16:01:50Z"
 
 [taxonomies]

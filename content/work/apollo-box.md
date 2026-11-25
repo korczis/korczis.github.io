@@ -3,7 +3,7 @@
 title = "apollo-box"
 description = "All needed data science stuff in one box. Archive, 2014; data and gis."
 template = "work.html"
-weight = 188
+weight = 189
 updated = "2014-05-05T04:07:07Z"
 
 [taxonomies]

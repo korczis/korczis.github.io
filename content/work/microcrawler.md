@@ -3,7 +3,7 @@
 title = "microcrawler"
 description = "microcrawler: an archived project in Data and GIS, main language Shell, 2016–2017; last commit on 12 March 2017."
 template = "work.html"
-weight = 97
+weight = 98
 updated = "2017-03-12T19:28:15Z"
 
 [taxonomies]

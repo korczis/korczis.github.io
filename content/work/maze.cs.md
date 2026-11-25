@@ -3,7 +3,7 @@
 title = "maze"
 description = "maze: archivní projekt z kategorie Věda a vizualizace, hlavní jazyk JavaScript, 2016; poslední commit 20. listopadu 2016."
 template = "work.html"
-weight = 108
+weight = 109
 updated = "2016-11-20T16:22:24Z"
 
 [taxonomies]

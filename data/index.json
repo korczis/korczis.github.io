@@ -1,24 +1,24 @@
 {
  "schema": "korczis-hub-index/v1",
- "generated_at": "2026-11-24T23:40:06Z",
+ "generated_at": "2026-11-25T09:05:03Z",
  "rule": "original = the owner wrote at least half of the listed commits; forks and mirrors are counted, not listed",
  "counts": {
-  "github": 448,
+  "github": 449,
   "gitlab": 417,
-  "merged": 499,
-  "own": 205,
+  "merged": 500,
+  "own": 206,
   "forks": 250,
   "mirrors": 35,
   "empty": 3,
   "unmeasured": 0,
   "hidden": 6,
   "mirrors_measured": 20,
-  "supervised": 8
+  "supervised": 9
  },
  "dropped": [],
  "supervision": {
   "marker": ".ai/manifest.yaml",
-  "measured_at": "2026-11-24T23:40:06Z",
+  "measured_at": "2026-11-25T09:05:03Z",
   "kept": 0
  },
  "all_repos": [
@@ -1664,7 +1664,7 @@
    ],
    "stars": 0,
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-24T14:07:58Z",
+   "pushed_at": "2026-11-24T23:41:30Z",
    "archived": false,
    "share": 0.9,
    "hosts": {
@@ -2189,7 +2189,7 @@
    ],
    "stars": 1,
    "created_at": "2026-10-01T21:05:33Z",
-   "pushed_at": "2026-11-24T23:24:51Z",
+   "pushed_at": "2026-11-25T07:54:11Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -2426,6 +2426,24 @@
    "curated": false
   },
   {
+   "name": "prismatic-flipperzero",
+   "description": "Prismatic for Flipper Zero: native FAP on its way to Prismatic Pocket, an offline evidence-first epistemic toolkit",
+   "language": "C",
+   "topics": [],
+   "stars": 0,
+   "created_at": "2026-11-25T03:06:03Z",
+   "pushed_at": "2026-11-25T08:46:24Z",
+   "archived": false,
+   "share": 1,
+   "hosts": {
+    "github": "https://github.com/korczis/prismatic-flipperzero"
+   },
+   "site": "https://korczis.github.io/prismatic-flipperzero/",
+   "supervised": true,
+   "category": "tools",
+   "curated": false
+  },
+  {
    "name": "prismatic-majordomus",
    "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
    "language": "Rust",
@@ -2452,7 +2470,7 @@
    ],
    "stars": 1,
    "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-24T20:11:13Z",
+   "pushed_at": "2026-11-25T08:54:59Z",
    "archived": false,
    "share": 0.99,
    "hosts": {
@@ -3051,11 +3069,11 @@
   {
    "name": "sonic-playground",
    "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-   "language": "Python",
+   "language": "JavaScript",
    "topics": [],
    "stars": 0,
    "created_at": "2026-11-12T00:48:36Z",
-   "pushed_at": "2026-11-24T23:27:28Z",
+   "pushed_at": "2026-11-25T03:12:46Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -4329,11 +4347,11 @@
   }
  ],
  "by_category": {
-  "media": 8,
-  "science": 12,
   "ai": 5,
+  "tools": 64,
+  "science": 12,
+  "media": 8,
   "web": 14,
-  "tools": 63,
   "knowledge": 5,
   "data": 49,
   "security": 5,
@@ -4342,11 +4360,17 @@
   "learning": 21
  },
  "categories": {
-  "media": {
-   "repos": 8,
-   "sites": 4,
+  "ai": {
+   "repos": 5,
+   "sites": 1,
+   "top_language": "Elixir",
+   "since": "2025"
+  },
+  "tools": {
+   "repos": 64,
+   "sites": 7,
    "top_language": "JavaScript",
-   "since": "2015"
+   "since": "2012"
   },
   "science": {
    "repos": 12,
@@ -4354,23 +4378,17 @@
    "top_language": "Rust",
    "since": "2014"
   },
-  "ai": {
-   "repos": 5,
-   "sites": 1,
-   "top_language": "Elixir",
-   "since": "2025"
+  "media": {
+   "repos": 8,
+   "sites": 4,
+   "top_language": "JavaScript",
+   "since": "2015"
   },
   "web": {
    "repos": 14,
    "sites": 0,
    "top_language": "JavaScript",
    "since": "2014"
-  },
-  "tools": {
-   "repos": 63,
-   "sites": 6,
-   "top_language": "JavaScript",
-   "since": "2012"
   },
   "knowledge": {
    "repos": 5,
@@ -4412,7 +4430,7 @@
  "languages": [
   {
    "name": "JavaScript",
-   "repos": 42
+   "repos": 43
   },
   {
    "name": "Elixir",
@@ -4431,11 +4449,11 @@
    "repos": 12
   },
   {
-   "name": "Python",
-   "repos": 7
+   "name": "C++",
+   "repos": 6
   },
   {
-   "name": "C++",
+   "name": "Python",
    "repos": 6
   },
   {
@@ -4463,15 +4481,15 @@
    "repos": 3
   },
   {
+   "name": "C",
+   "repos": 2
+  },
+  {
    "name": "Haskell",
    "repos": 2
   },
   {
    "name": "ApacheConf",
-   "repos": 1
-  },
-  {
-   "name": "C",
    "repos": 1
   },
   {
@@ -4606,10 +4624,11 @@
    "Dockerfile": 1
   },
   "2026": {
-   "Python": 5,
-   "JavaScript": 3,
    "Rust": 1,
+   "C": 1,
+   "JavaScript": 4,
    "HTML": 2,
+   "Python": 4,
    "Elixir": 3,
    "TypeScript": 1
   }
@@ -4618,19 +4637,19 @@
   "languages": [
    {
     "name": "JavaScript",
-    "repos": 42,
+    "repos": 43,
     "evidence": [
      {
       "name": "oscilla",
       "url": "https://github.com/korczis/oscilla"
      },
      {
-      "name": "korczis.github.io",
-      "url": "https://github.com/korczis/korczis.github.io"
+      "name": "sonic-playground",
+      "url": "https://github.com/korczis/sonic-playground"
      },
      {
-      "name": "majordomus-reel",
-      "url": "https://github.com/korczis/majordomus-reel"
+      "name": "korczis.github.io",
+      "url": "https://github.com/korczis/korczis.github.io"
      }
     ]
    },
@@ -4707,24 +4726,6 @@
     ]
    },
    {
-    "name": "Python",
-    "repos": 7,
-    "evidence": [
-     {
-      "name": "sonic-playground",
-      "url": "https://github.com/korczis/sonic-playground"
-     },
-     {
-      "name": "astronomists",
-      "url": "https://github.com/korczis/astronomists"
-     },
-     {
-      "name": "openttd-prismatic-bridge",
-      "url": "https://gitlab.com/korczis/openttd-prismatic-bridge"
-     }
-    ]
-   },
-   {
     "name": "C++",
     "repos": 6,
     "evidence": [
@@ -4739,6 +4740,24 @@
      {
       "name": "iCave",
       "url": "https://github.com/korczis/iCave"
+     }
+    ]
+   },
+   {
+    "name": "Python",
+    "repos": 6,
+    "evidence": [
+     {
+      "name": "astronomists",
+      "url": "https://github.com/korczis/astronomists"
+     },
+     {
+      "name": "openttd-prismatic-bridge",
+      "url": "https://gitlab.com/korczis/openttd-prismatic-bridge"
+     },
+     {
+      "name": "data-atlas",
+      "url": "https://github.com/korczis/data-atlas"
      }
     ]
    },
@@ -4851,6 +4870,20 @@
     ]
    },
    {
+    "name": "C",
+    "repos": 2,
+    "evidence": [
+     {
+      "name": "prismatic-flipperzero",
+      "url": "https://github.com/korczis/prismatic-flipperzero"
+     },
+     {
+      "name": "skull-c",
+      "url": "https://github.com/korczis/skull-c"
+     }
+    ]
+   },
+   {
     "name": "Haskell",
     "repos": 2,
     "evidence": [
@@ -4871,16 +4904,6 @@
      {
       "name": "pavian.eu",
       "url": "https://github.com/korczis/pavian.eu"
-     }
-    ]
-   },
-   {
-    "name": "C",
-    "repos": 1,
-    "evidence": [
-     {
-      "name": "skull-c",
-      "url": "https://github.com/korczis/skull-c"
      }
     ]
    },
@@ -5100,34 +5123,16 @@
  },
  "recent": {
   "size": 100,
-  "from": "2018-03-08T21:01:52Z",
-  "to": "2026-11-24T23:27:28Z",
+  "from": "2018-03-10T17:02:00Z",
+  "to": "2026-11-25T08:54:59Z",
   "mix": {
-   "media": {
-    "Python": 2,
-    "HTML": 1,
-    "JavaScript": 1,
-    "Dockerfile": 1,
-    "Elixir": 1
-   },
-   "science": {
-    "JavaScript": 1,
-    "TypeScript": 1,
-    "Elixir": 1,
-    "Rust": 2
-   },
    "ai": {
     "Rust": 1,
     "Elixir": 2,
     "Unspecified": 2
    },
-   "web": {
-    "JavaScript": 2,
-    "HTML": 2,
-    "CSS": 3,
-    "Elixir": 1
-   },
    "tools": {
+    "C": 1,
     "Python": 3,
     "JavaScript": 4,
     "Elixir": 8,
@@ -5138,6 +5143,25 @@
     "OpenSCAD": 1,
     "Shell": 2,
     "Swift": 1
+   },
+   "science": {
+    "JavaScript": 1,
+    "TypeScript": 1,
+    "Elixir": 1,
+    "Rust": 1
+   },
+   "media": {
+    "JavaScript": 2,
+    "HTML": 1,
+    "Python": 1,
+    "Dockerfile": 1,
+    "Elixir": 1
+   },
+   "web": {
+    "JavaScript": 2,
+    "HTML": 2,
+    "CSS": 3,
+    "Elixir": 1
    },
    "knowledge": {
     "Elixir": 1,
@@ -5169,52 +5193,6 @@
  },
  "repos": [
   {
-   "name": "sonic-playground",
-   "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-   "language": "Python",
-   "topics": [],
-   "stars": 0,
-   "created_at": "2026-11-12T00:48:36Z",
-   "pushed_at": "2026-11-24T23:27:28Z",
-   "archived": false,
-   "share": 1,
-   "hosts": {
-    "github": "https://github.com/korczis/sonic-playground"
-   },
-   "site": "https://korczis.github.io/sonic-playground/",
-   "supervised": true,
-   "category": "media",
-   "curated": true
-  },
-  {
-   "name": "oscilla",
-   "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-   "language": "JavaScript",
-   "topics": [
-    "acoustics",
-    "audio",
-    "dsp",
-    "education",
-    "javascript",
-    "signal-processing",
-    "spectrogram",
-    "synthesizer",
-    "web-audio"
-   ],
-   "stars": 1,
-   "created_at": "2026-10-01T21:05:33Z",
-   "pushed_at": "2026-11-24T23:24:51Z",
-   "archived": false,
-   "share": 1,
-   "hosts": {
-    "github": "https://github.com/korczis/oscilla"
-   },
-   "site": "https://korczis.github.io/oscilla/",
-   "supervised": true,
-   "category": "science",
-   "curated": true
-  },
-  {
    "name": "prismatic-majordomus",
    "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
    "language": "Rust",
@@ -5241,7 +5219,7 @@
    ],
    "stars": 1,
    "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-24T20:11:13Z",
+   "pushed_at": "2026-11-25T08:54:59Z",
    "archived": false,
    "share": 0.99,
    "hosts": {
@@ -5250,6 +5228,70 @@
    "site": "https://korczis.github.io/prismatic-majordomus/",
    "supervised": true,
    "category": "ai",
+   "curated": true
+  },
+  {
+   "name": "prismatic-flipperzero",
+   "description": "Prismatic for Flipper Zero: native FAP on its way to Prismatic Pocket, an offline evidence-first epistemic toolkit",
+   "language": "C",
+   "topics": [],
+   "stars": 0,
+   "created_at": "2026-11-25T03:06:03Z",
+   "pushed_at": "2026-11-25T08:46:24Z",
+   "archived": false,
+   "share": 1,
+   "hosts": {
+    "github": "https://github.com/korczis/prismatic-flipperzero"
+   },
+   "site": "https://korczis.github.io/prismatic-flipperzero/",
+   "supervised": true,
+   "category": "tools",
+   "curated": false
+  },
+  {
+   "name": "oscilla",
+   "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+   "language": "JavaScript",
+   "topics": [
+    "acoustics",
+    "audio",
+    "dsp",
+    "education",
+    "javascript",
+    "signal-processing",
+    "spectrogram",
+    "synthesizer",
+    "web-audio"
+   ],
+   "stars": 1,
+   "created_at": "2026-10-01T21:05:33Z",
+   "pushed_at": "2026-11-25T07:54:11Z",
+   "archived": false,
+   "share": 1,
+   "hosts": {
+    "github": "https://github.com/korczis/oscilla"
+   },
+   "site": "https://korczis.github.io/oscilla/",
+   "supervised": true,
+   "category": "science",
+   "curated": true
+  },
+  {
+   "name": "sonic-playground",
+   "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+   "language": "JavaScript",
+   "topics": [],
+   "stars": 0,
+   "created_at": "2026-11-12T00:48:36Z",
+   "pushed_at": "2026-11-25T03:12:46Z",
+   "archived": false,
+   "share": 1,
+   "hosts": {
+    "github": "https://github.com/korczis/sonic-playground"
+   },
+   "site": "https://korczis.github.io/sonic-playground/",
+   "supervised": true,
+   "category": "media",
    "curated": true
   },
   {
@@ -5274,7 +5316,7 @@
    ],
    "stars": 0,
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-24T14:07:58Z",
+   "pushed_at": "2026-11-24T23:41:30Z",
    "archived": false,
    "share": 0.9,
    "hosts": {

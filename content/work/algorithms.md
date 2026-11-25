@@ -3,7 +3,7 @@
 title = "algorithms"
 description = "Algorithms implementation. Archive, 2014; science and visualisation."
 template = "work.html"
-weight = 172
+weight = 173
 updated = "2014-08-23T08:22:39Z"
 
 [taxonomies]

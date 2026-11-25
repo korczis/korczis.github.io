@@ -14,7 +14,7 @@ icon = "lock"
 og_title = "Digital forensics and evidence preservation"
 og_image = "og/service-digital-forensics.png"
 schema = "service"
-terms = ["service", "elixir", "postgresql", "lean", "digital-forensics", "chain-of-custody", "attack-surface", "audit-trail", "reputation-risk", "source-criticism", "html", "javascript", "python", "alpine-js", "claude-api", "claude-code", "dockerfile", "flowbite-pro", "github-pages", "playwright"]
+terms = ["service", "elixir", "postgresql", "lean", "digital-forensics", "chain-of-custody", "attack-surface", "audit-trail", "reputation-risk", "source-criticism", "html", "javascript", "python", "claude-api", "claude-code", "dockerfile", "shell", "alpine-js", "ecto", "flowbite-pro"]
 keywords = ["Digital forensics and evidence preservation", "Web and media forensics", "Chain of custody", "Infrastructure OSINT", "Audit trail", "Narrative and reputation analysis", "Source reliability", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -34,9 +34,9 @@ It draws on these skills: [Web and media forensics](@/skills/media-forensics.md)
 
 It is built with [Elixir](@/glossary/elixir.md), [PostgreSQL](@/glossary/postgresql.md) and [Lean](@/glossary/lean.md).
 
-The technologies behind it, measured from the work that shows those skills: [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md), [Python](@/glossary/python.md), [Alpine.js](@/glossary/alpine-js.md), [Claude API](@/glossary/claude-api.md), [Claude Code](@/glossary/claude-code.md), [Dockerfile](@/glossary/dockerfile.md) and [Flowbite Pro](@/glossary/flowbite-pro.md).
+The technologies behind it, measured from the work that shows those skills: [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md), [Python](@/glossary/python.md), [Claude API](@/glossary/claude-api.md), [Claude Code](@/glossary/claude-code.md), [Dockerfile](@/glossary/dockerfile.md), [Shell](@/glossary/shell.md) and [Alpine.js](@/glossary/alpine-js.md).
 
-8 public repositories show its skills (8 by their own words).
+7 public repositories show its skills (7 by their own words).
 
 It was delivered in client work under confidentiality agreements, in Real-estate developer and Financial and investment group, as Architect, Lead engineer, AI engineer, Data engineer, Investigator and Advisor; the use cases describe the principle and the intent, never a client, person, date or number.
 

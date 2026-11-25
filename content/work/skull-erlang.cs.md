@@ -3,7 +3,7 @@
 title = "skull-erlang"
 description = "skull-erlang: archivní projekt z kategorie Učení a experimenty, hlavní jazyk Erlang, 2014; poslední commit 3. srpna 2014."
 template = "work.html"
-weight = 181
+weight = 182
 updated = "2014-08-03T04:07:59Z"
 
 [taxonomies]

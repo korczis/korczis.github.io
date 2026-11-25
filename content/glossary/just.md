@@ -16,7 +16,7 @@ kind = "language"
 definition = "A command runner: named recipes in a justfile, like make without the build semantics; the entry point of most of these repositories."
 aliases = ["justfile"]
 reference = { title = "just manual", url = "https://just.systems/man/en/" }
-pages = ["projects/tools.md", "skills/narrative-analysis.md", "work/algoglyph.md", "work/comtesse.md", "work/data-atlas.md", "work/gists-search.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/sig.md", "work/vomaste-cz.md"]
+pages = ["projects/tools.md", "skills/narrative-analysis.md", "work/algoglyph.md", "work/comtesse.md", "work/data-atlas.md", "work/gists-search.md", "work/osint-case-ratcliffe-moscow-2026.md", "work/prismatic-flipperzero.md", "work/sig.md", "work/vomaste-cz.md"]
 related = ["shell", "open-source", "repository", "commit", "github-pages", "html", "javascript", "python"]
 og_title = "Just: glossary"
 og_image = "og/glossary-just.png"
@@ -40,12 +40,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
-I have written Just in 5 public repositories, from 2025 to 2026; in 1 of them it is the main language.
+I have written Just in 6 public repositories, from 2025 to 2026; in 1 of them it is the main language.
 
-What it was for: [Tools](@/projects/tools.md) (3), [Data and GIS](@/projects/data.md) (1) and [Security and OSINT](@/projects/security.md) (1).
+What it was for: [Tools](@/projects/tools.md) (4), [Data and GIS](@/projects/data.md) (1) and [Security and OSINT](@/projects/security.md) (1).
 
-Most recently: [Data Atlas](@/work/data-atlas.md): Datasets, cadastre, transport, remote sensing and spatial analytics in one single-file, searchable page; [vomaste.cz](@/work/vomaste-cz.md); [Gists search](@/work/gists-search.md): A searchable index over a mirror of my GitHub gists.
+Most recently: [prismatic-flipperzero](@/work/prismatic-flipperzero.md): Prismatic for Flipper Zero: native FAP on its way to Prismatic Pocket, an offline evidence-first epistemic toolkit; [Data Atlas](@/work/data-atlas.md): Datasets, cadastre, transport, remote sensing and spatial analytics in one single-file, searchable page; [vomaste.cz](@/work/vomaste-cz.md).
 
-4 of these projects run as live sites.
+5 of these projects run as live sites.
 
 How to read the evidence: every [repository](@/glossary/repository.md) below is measured from GitHub and GitLab (every 6 hours) and says how it uses Just: as the main language, as a measured share of its code, in its declared stack or as a topic. The reference graph links Just to the repositories and to the other languages and technologies they use together.

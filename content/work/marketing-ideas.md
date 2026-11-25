@@ -3,7 +3,7 @@
 title = "marketing-ideas"
 description = "marketing-ideas: a project in Tools, last commit on 17 April 2024."
 template = "work.html"
-weight = 40
+weight = 41
 updated = "2024-04-17T15:33:10Z"
 
 [taxonomies]

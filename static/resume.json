@@ -121,8 +121,8 @@
    "url": "https://korczis.github.io/glossary/javascript/",
    "keywords": [
     "oscilla",
-    "korczis.github.io",
-    "majordomus-reel"
+    "sonic-playground",
+    "korczis.github.io"
    ]
   },
   {
@@ -162,21 +162,21 @@
    ]
   },
   {
-   "name": "Python",
-   "url": "https://korczis.github.io/glossary/python/",
-   "keywords": [
-    "sonic-playground",
-    "astronomists",
-    "openttd-prismatic-bridge"
-   ]
-  },
-  {
    "name": "C++",
    "url": "https://korczis.github.io/glossary/cpp/",
    "keywords": [
     "happ",
     "algorithms-ruby",
     "iCave"
+   ]
+  },
+  {
+   "name": "Python",
+   "url": "https://korczis.github.io/glossary/python/",
+   "keywords": [
+    "astronomists",
+    "openttd-prismatic-bridge",
+    "data-atlas"
    ]
   },
   {
@@ -234,6 +234,14 @@
    ]
   },
   {
+   "name": "C",
+   "url": "https://korczis.github.io/glossary/c/",
+   "keywords": [
+    "prismatic-flipperzero",
+    "skull-c"
+   ]
+  },
+  {
    "name": "Haskell",
    "url": "https://korczis.github.io/glossary/haskell/",
    "keywords": [
@@ -246,13 +254,6 @@
    "url": "https://korczis.github.io/glossary/apacheconf/",
    "keywords": [
     "pavian.eu"
-   ]
-  },
-  {
-   "name": "C",
-   "url": "https://korczis.github.io/glossary/c/",
-   "keywords": [
-    "skull-c"
    ]
   },
   {
@@ -539,6 +540,6 @@
  "meta": {
   "canonical": "https://korczis.github.io/resume.json",
   "version": "v1.0.0",
-  "lastModified": "2026-11-24T23:40:06Z"
+  "lastModified": "2026-11-25T09:05:03Z"
  }
 }

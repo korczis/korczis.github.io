@@ -3,7 +3,7 @@
 title = "apollocrawler.com"
 description = "apollocrawler.com: archivní projekt z kategorie Data a GIS, hlavní jazyk JavaScript, 2014; poslední commit 24. února 2014."
 template = "work.html"
-weight = 190
+weight = 191
 updated = "2014-02-24T01:42:46Z"
 
 [taxonomies]

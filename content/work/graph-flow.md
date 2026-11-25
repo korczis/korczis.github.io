@@ -3,7 +3,7 @@
 title = "graph-flow"
 description = "graph-flow: an archived project in Science and visualisation, main language Rust, 2017; last commit on 16 April 2017."
 template = "work.html"
-weight = 94
+weight = 95
 updated = "2017-04-16T23:02:47Z"
 
 [taxonomies]

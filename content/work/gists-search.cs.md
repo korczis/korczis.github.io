@@ -3,7 +3,7 @@
 title = "Gists search"
 description = "Prohledávatelný index nad zrcadlem mých GitHub gistů."
 template = "work.html"
-weight = 13
+weight = 14
 updated = "2026-08-27T20:26:10Z"
 
 [taxonomies]
@@ -36,6 +36,6 @@ Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https
 
 Zdrojový kód: [GitHub](https://github.com/korczis/gists-search).
 
-Související práce v kategorii [Nástroje](@/projects/tools.cs.md): [astronomists](@/work/astronomists.cs.md) (2026), [vomaste.cz](@/work/vomaste-cz.cs.md) (2026), [prismatic](@/work/prismatic.cs.md) (2025) a [comtesse](@/work/comtesse.cs.md) (2025).
+Související práce v kategorii [Nástroje](@/projects/tools.cs.md): [prismatic-flipperzero](@/work/prismatic-flipperzero.cs.md) (2026), [astronomists](@/work/astronomists.cs.md) (2026), [vomaste.cz](@/work/vomaste-cz.cs.md) (2026) a [prismatic](@/work/prismatic.cs.md) (2025).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje poslední 2 commity jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

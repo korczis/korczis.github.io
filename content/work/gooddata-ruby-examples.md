@@ -3,7 +3,7 @@
 title = "gooddata-ruby-examples"
 description = "gooddata-ruby-examples. Archive, 2014–2015; data and gis."
 template = "work.html"
-weight = 147
+weight = 148
 updated = "2015-07-30T11:35:40Z"
 
 [taxonomies]

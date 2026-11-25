@@ -3,7 +3,7 @@
 title = "microcrawler-crawler-yelp-com"
 description = "microcrawler-crawler-yelp-com: archivní projekt z kategorie Data a GIS, hlavní jazyk JavaScript, 2016; poslední commit 3. září 2016."
 template = "work.html"
-weight = 120
+weight = 121
 updated = "2016-09-03T22:54:43Z"
 
 [taxonomies]

@@ -3,7 +3,7 @@
 title = "jetel"
 description = "jetel: archivní projekt z kategorie Data a GIS, hlavní jazyk Ruby, 2015–2016; poslední commit 28. září 2016."
 template = "work.html"
-weight = 116
+weight = 117
 updated = "2016-09-28T12:41:43Z"
 
 [taxonomies]

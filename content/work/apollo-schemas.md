@@ -3,7 +3,7 @@
 title = "apollo-schemas"
 description = "NoSql Schemas for Apollo. Archive, 2014; data and gis."
 template = "work.html"
-weight = 182
+weight = 183
 updated = "2014-07-10T04:33:45Z"
 
 [taxonomies]

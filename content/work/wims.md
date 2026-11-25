@@ -3,7 +3,7 @@
 title = "wims"
 description = "Where is my space?. Archive, 2017; tools. An archived project by Tomas Korcak, 2017."
 template = "work.html"
-weight = 93
+weight = 94
 updated = "2017-05-06T12:07:24Z"
 
 [taxonomies]

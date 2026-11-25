@@ -3,7 +3,7 @@
 title = "generator-the-scratch"
 description = "Yeoman Generator for The Scratch. Archive, 2013; learning and experiments."
 template = "work.html"
-weight = 197
+weight = 198
 updated = "2013-09-07T17:04:22Z"
 
 [taxonomies]

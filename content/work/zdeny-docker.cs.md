@@ -3,7 +3,7 @@
 title = "zdeny-docker"
 description = "zdeny-docker: archivní projekt z kategorie Systémy a infrastruktura, hlavní jazyk Dockerfile, 2019; poslední commit 26. března 2019."
 template = "work.html"
-weight = 65
+weight = 66
 updated = "2019-03-26T20:48:19Z"
 
 [taxonomies]

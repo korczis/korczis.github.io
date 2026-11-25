@@ -3,7 +3,7 @@
 title = "u-tygra"
 description = "u-tygra: a project in Tools, main language JavaScript, last commit on 3 June 2025."
 template = "work.html"
-weight = 27
+weight = 28
 updated = "2025-06-03T05:15:05Z"
 
 [taxonomies]

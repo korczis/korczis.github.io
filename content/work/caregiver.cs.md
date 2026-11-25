@@ -3,7 +3,7 @@
 title = "caregiver"
 description = "caregiver: archivní projekt z kategorie Nástroje, 2022; poslední commit 15. července 2022."
 template = "work.html"
-weight = 46
+weight = 47
 updated = "2022-07-15T14:59:33Z"
 
 [taxonomies]

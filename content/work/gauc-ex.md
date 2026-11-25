@@ -3,7 +3,7 @@
 title = "gauc.ex"
 description = "Elxir Wrapper for Gauc - Rust Wrapper for Couchbase"
 template = "work.html"
-weight = 77
+weight = 78
 updated = "2018-03-31T23:07:30Z"
 
 [taxonomies]

@@ -3,7 +3,7 @@
 title = "microcrawler-crawler-firmy-cz"
 description = "microcrawler-crawler-firmy-cz: archivní projekt z kategorie Data a GIS, hlavní jazyk JavaScript, 2016–2017; poslední commit 2. března 2017."
 template = "work.html"
-weight = 101
+weight = 102
 updated = "2017-03-02T20:19:19Z"
 
 [taxonomies]

@@ -3,7 +3,7 @@
 title = "wims"
 description = "wims: archivní projekt z kategorie Nástroje, hlavní jazyk Rust, 2017; poslední commit 6. května 2017."
 template = "work.html"
-weight = 93
+weight = 94
 updated = "2017-05-06T12:07:24Z"
 
 [taxonomies]

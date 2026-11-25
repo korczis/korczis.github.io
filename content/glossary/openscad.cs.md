@@ -17,7 +17,7 @@ definition = "Jazyk pro pevné 3D modely popsané kódem: tvary skládané sjedn
 aliases = []
 reference = { title = "OpenSCAD documentation", url = "https://openscad.org/documentation.html" }
 pages = ["projects/tools.cs.md", "work/3d-print.cs.md"]
-related = ["open-source", "repository", "commit", "cpp", "csharp", "elixir", "javascript", "just"]
+related = ["open-source", "repository", "c", "commit", "cpp", "csharp", "elixir", "javascript"]
 og_title = "OpenSCAD: slovník"
 og_image = "og/cs-glossary-openscad.png"
 keywords = ["OpenSCAD", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

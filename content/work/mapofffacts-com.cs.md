@@ -3,7 +3,7 @@
 title = "mapofffacts.com"
 description = "mapofffacts.com: archivní projekt z kategorie Data a GIS, 2015; poslední commit 14. listopadu 2015."
 template = "work.html"
-weight = 138
+weight = 139
 updated = "2015-11-14T22:01:23Z"
 
 [taxonomies]

@@ -17,7 +17,7 @@ definition = "A small JavaScript framework that adds behaviour to HTML in its ow
 aliases = ["alpinejs"]
 reference = { title = "alpinejs.dev", url = "https://alpinejs.dev/" }
 pages = ["projects/knowledge.md", "projects/science.md", "services/_index.md", "services/ai-engineering-governance.md", "services/compliance-screening.md", "services/continuous-monitoring.md", "services/decision-support-ai.md", "services/digital-forensics.md", "services/due-diligence.md", "services/m-and-a.md", "skills/_index.md", "skills/ai-transformation.md", "skills/audit-trail.md", "skills/data-room.md", "skills/document-extraction.md", "skills/due-diligence.md", "skills/entity-resolution.md", "skills/insolvency-monitoring.md", "skills/interactive-visualisation.md", "skills/knowledge-graph.md", "skills/llm-agents.md", "skills/m-and-a-screening.md", "skills/market-intelligence.md", "skills/orchestration.md", "skills/ownership-analysis.md", "skills/risk-scoring.md", "stack.md", "work/algoglyph.md", "work/astronomists.md", "work/catharsis-as-a-service.md", "work/kompendium-epistemicke-anihilace.md", "work/korczis-github-io.md", "work/oscilla.md", "work/u-tygra.md", "_index.md"]
-related = ["javascript", "flowbite-pro", "html", "dockerfile", "python", "tailwind-css", "claude-api", "skill"]
+related = ["flowbite-pro", "javascript", "html", "dockerfile", "claude-api", "python", "shell", "tailwind-css"]
 og_title = "Alpine.js: glossary"
 og_image = "og/glossary-alpine-js.png"
 keywords = ["Alpine.js", "Technology", "Glossary", "Tomas Korcak"]
@@ -44,7 +44,7 @@ Alpine.js is part of 7 of my public repositories, from 2024 to 2026.
 
 What it was for: [Science and visualisation](@/projects/science.md) (2), [Tools](@/projects/tools.md) (2), [Knowledge](@/projects/knowledge.md) (1) and [Media and art](@/projects/media.md) (1).
 
-Most recently: [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus; [Oscilla](@/work/oscilla.md): Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty; [astronomists](@/work/astronomists.md).
+Most recently: [Oscilla](@/work/oscilla.md): Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty; [korczis.github.io](@/work/korczis-github-io.md): Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus; [astronomists](@/work/astronomists.md).
 
 6 of these projects run as live sites.
 

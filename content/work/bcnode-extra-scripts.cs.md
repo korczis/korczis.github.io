@@ -3,7 +3,7 @@
 title = "bcnode-extra-scripts"
 description = "bcnode-extra-scripts: archivní projekt z kategorie Nástroje, hlavní jazyk Shell, 2018; poslední commit 24. června 2018."
 template = "work.html"
-weight = 73
+weight = 74
 updated = "2018-06-24T03:57:31Z"
 
 [taxonomies]

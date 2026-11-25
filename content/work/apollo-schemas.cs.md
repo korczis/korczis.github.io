@@ -3,7 +3,7 @@
 title = "apollo-schemas"
 description = "apollo-schemas: archivní projekt z kategorie Data a GIS, 2014; poslední commit 10. července 2014."
 template = "work.html"
-weight = 182
+weight = 183
 updated = "2014-07-10T04:33:45Z"
 
 [taxonomies]

@@ -3,21 +3,21 @@
 title = "Sonic Playground"
 description = "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita."
 template = "work.html"
-weight = 2
-updated = "2026-11-24T23:18:41Z"
+weight = 4
+updated = "2026-11-25T01:50:09Z"
 
 [taxonomies]
-tags = ["Média a umění", "Python", "JavaScript", "HTML"]
+tags = ["Média a umění", "JavaScript", "Python", "HTML"]
 
 [extra]
 repo = "sonic-playground"
-seo_title = "Sonic Playground: Média a umění, Python, 2026 · Tomáš Korčák"
+seo_title = "Sonic Playground: Média a umění, JavaScript, 2026 · Tomáš Korčák"
 og_title = "Sonic Playground: Hudba, která hýbe, ne algoritmický šum"
-og_description = "Sonic Playground: Média a umění, Python, JavaScript a HTML, 2026, aktivní za posledních 12 měsíců. Zdrojový kód: GitHub. Živý web. Pod dohledem Majordomu."
+og_description = "Sonic Playground: Média a umění, JavaScript, Python a HTML, 2026, aktivní za posledních 12 měsíců. Zdrojový kód: GitHub. Živý web. Pod dohledem Majordomu."
 og_image = "og/cs-work-sonic-playground.png"
 schema = "project"
-keywords = ["Sonic Playground", "sonic-playground", "Média a umění", "Python", "JavaScript", "HTML", "2026", "GitHub", "Tomáš Korčák", "korczis"]
-terms = ["python", "javascript", "html", "shell", "css", "elixir", "zola", "typescript", "tailwind-css", "flowbite-pro", "json-schema", "json-ld", "github-pages", "data-visualisation", "repository", "commit", "open-source"]
+keywords = ["Sonic Playground", "sonic-playground", "Média a umění", "JavaScript", "Python", "HTML", "2026", "GitHub", "Tomáš Korčák", "korczis"]
+terms = ["javascript", "python", "html", "shell", "css", "elixir", "zola", "typescript", "tailwind-css", "flowbite-pro", "json-schema", "json-ld", "github-pages", "data-visualisation", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,9 +28,9 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**Sonic Playground** je projekt z kategorie [Média a umění](@/projects/media.cs.md). Jeho kód je napsaný hlavně v jazyce [Python](@/glossary/python.cs.md) (39,6 %), dále [JavaScript](@/glossary/javascript.cs.md), [HTML](@/glossary/html.cs.md) a [Shell](@/glossary/shell.cs.md).
+**Sonic Playground** je projekt z kategorie [Média a umění](@/projects/media.cs.md). Jeho kód je napsaný hlavně v jazyce [JavaScript](@/glossary/javascript.cs.md) (48,5 %), dále [Python](@/glossary/python.cs.md), [HTML](@/glossary/html.cs.md) a [Shell](@/glossary/shell.cs.md).
 
-[Repozitář](@/glossary/repository.cs.md) vznikl 12. listopadu 2026; poslední [commit](@/glossary/commit.cs.md) je z 24. listopadu 2026. Zní „Merge branch 'fix/visualizer-rest': three analysis passes on real recordings, algoglyph's methods“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+[Repozitář](@/glossary/repository.cs.md) vznikl 12. listopadu 2026; poslední [commit](@/glossary/commit.cs.md) je z 25. listopadu 2026. Zní „Merge branch 'fix/visualizer-ci': light independent of the frame rate, look checks where the picture is fluent“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 
 Je postavený na [Elixir](@/glossary/elixir.cs.md).
 

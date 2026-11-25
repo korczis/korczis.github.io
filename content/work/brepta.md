@@ -3,7 +3,7 @@
 title = "brepta"
 description = "TTS via REST. Archive, 2017; media and art. An archived project by Tomas Korcak, 2017."
 template = "work.html"
-weight = 104
+weight = 105
 updated = "2017-01-20T13:48:44Z"
 
 [taxonomies]

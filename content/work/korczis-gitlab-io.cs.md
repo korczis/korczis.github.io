@@ -3,7 +3,7 @@
 title = "korczis.gitlab.io"
 description = "korczis.gitlab.io: projekt z kategorie Web, hlavní jazyk CSS, poslední commit 22. srpna 2025."
 template = "work.html"
-weight = 25
+weight = 26
 updated = "2025-08-22T20:21:57Z"
 
 [taxonomies]

@@ -3,7 +3,7 @@
 title = "el-magico-cache"
 description = "Elixir Cache. Active in the last 48 months; tools."
 template = "work.html"
-weight = 43
+weight = 44
 updated = "2023-01-27T17:10:03Z"
 
 [taxonomies]

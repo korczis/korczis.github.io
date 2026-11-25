@@ -3,7 +3,7 @@
 title = "datasciencecoursera"
 description = "datasciencecoursera: archivní projekt z kategorie Data a GIS, 2015; poslední commit 8. května 2015."
 template = "work.html"
-weight = 154
+weight = 155
 updated = "2015-05-08T16:30:19Z"
 
 [taxonomies]

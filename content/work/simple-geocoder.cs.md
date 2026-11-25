@@ -3,7 +3,7 @@
 title = "simple_geocoder"
 description = "simple_geocoder: projekt z kategorie Nástroje, hlavní jazyk Elixir, poslední commit 24. dubna 2024."
 template = "work.html"
-weight = 38
+weight = 39
 updated = "2024-04-24T20:43:37Z"
 
 [taxonomies]

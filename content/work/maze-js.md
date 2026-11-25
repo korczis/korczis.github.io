@@ -3,7 +3,7 @@
 title = "maze-js"
 description = "Maze. Archive, 2016; science and visualisation. An archived project by Tomas Korcak, 2016."
 template = "work.html"
-weight = 109
+weight = 110
 updated = "2016-11-18T15:50:18Z"
 
 [taxonomies]

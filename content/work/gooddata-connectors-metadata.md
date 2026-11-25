@@ -3,7 +3,7 @@
 title = "gooddata_connectors_metadata"
 description = "The gem for accessing metadata for gooddata connector infrastructure"
 template = "work.html"
-weight = 163
+weight = 164
 updated = "2015-01-21T09:43:32Z"
 
 [taxonomies]

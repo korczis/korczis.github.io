@@ -3,7 +3,7 @@
 title = "gooddata-lcm-tool"
 description = "gooddata-lcm-tool: an archived project in Data and GIS, main language Ruby, 2016; last commit on 21 October 2016."
 template = "work.html"
-weight = 112
+weight = 113
 updated = "2016-10-21T15:49:15Z"
 
 [taxonomies]

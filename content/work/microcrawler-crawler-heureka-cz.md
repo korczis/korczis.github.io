@@ -3,7 +3,7 @@
 title = "microcrawler-crawler-heureka-cz"
 description = "Heureka Crawler. Archive, 2017; data and gis. An archived project by Tomas Korcak, 2017."
 template = "work.html"
-weight = 102
+weight = 103
 updated = "2017-02-21T17:50:35Z"
 
 [taxonomies]

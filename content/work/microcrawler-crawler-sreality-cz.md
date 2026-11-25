@@ -3,7 +3,7 @@
 title = "microcrawler-crawler-sreality-cz"
 description = "microcrawler-crawler-sreality-cz: an archived project in Data and GIS, main language JavaScript, 2016–2017; last commit on 22 March 2017."
 template = "work.html"
-weight = 96
+weight = 97
 updated = "2017-03-22T21:27:08Z"
 
 [taxonomies]

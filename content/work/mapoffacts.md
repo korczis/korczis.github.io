@@ -3,7 +3,7 @@
 title = "mapoffacts"
 description = "mapoffacts: an archived project in Tools, main language JavaScript, 2017; last commit on 22 August 2017."
 template = "work.html"
-weight = 88
+weight = 89
 updated = "2017-08-22T22:23:19Z"
 
 [taxonomies]

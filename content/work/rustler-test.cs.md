@@ -3,7 +3,7 @@
 title = "rustler-test"
 description = "rustler-test: archivní projekt z kategorie Učení a experimenty, hlavní jazyk Elixir, 2017; poslední commit 19. září 2017."
 template = "work.html"
-weight = 85
+weight = 86
 updated = "2017-09-19T19:26:41Z"
 
 [taxonomies]

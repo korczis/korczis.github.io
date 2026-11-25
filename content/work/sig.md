@@ -3,7 +3,7 @@
 title = "sig"
 description = "distributed cognitive framework in Elixir/OTP. Active in the last 12 months; ai engineering."
 template = "work.html"
-weight = 21
+weight = 22
 updated = "2026-02-04T23:36:59Z"
 
 [taxonomies]

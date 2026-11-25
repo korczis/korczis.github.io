@@ -3,7 +3,7 @@
 title = "codecademy"
 description = "exmples. Archive, 2014; tools. An archived project by Tomas Korcak, 2014."
 template = "work.html"
-weight = 186
+weight = 187
 updated = "2014-05-20T05:53:58Z"
 
 [taxonomies]

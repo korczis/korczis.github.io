@@ -3,7 +3,7 @@
 title = "tosh"
 description = "tosh: archivní projekt z kategorie Web, hlavní jazyk Elixir, 2019; poslední commit 20. ledna 2019."
 template = "work.html"
-weight = 71
+weight = 72
 updated = "2019-01-20T22:31:07Z"
 
 [taxonomies]

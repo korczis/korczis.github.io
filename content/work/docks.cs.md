@@ -3,7 +3,7 @@
 title = "docks"
 description = "docks: archivní projekt z kategorie Systémy a infrastruktura, hlavní jazyk Dockerfile, 2015–2017; poslední commit 5. března 2017."
 template = "work.html"
-weight = 100
+weight = 101
 updated = "2017-03-05T12:49:03Z"
 
 [taxonomies]

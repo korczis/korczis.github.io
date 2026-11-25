@@ -3,7 +3,7 @@
 title = "gooddata-fs"
 description = "gooddata-fs: archivní projekt z kategorie Data a GIS, hlavní jazyk Rust, 2016; poslední commit 15. července 2016."
 template = "work.html"
-weight = 126
+weight = 127
 updated = "2016-07-15T15:52:20Z"
 
 [taxonomies]

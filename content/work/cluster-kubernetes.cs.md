@@ -3,7 +3,7 @@
 title = "cluster-kubernetes"
 description = "cluster-kubernetes: archivní projekt z kategorie Systémy a infrastruktura, hlavní jazyk Shell, 2017–2018; poslední commit 30. ledna 2018."
 template = "work.html"
-weight = 80
+weight = 81
 updated = "2018-01-30T12:21:00Z"
 
 [taxonomies]

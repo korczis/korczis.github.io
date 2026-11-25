@@ -3,7 +3,7 @@
 title = "docker-gooddata-ruby"
 description = "Dockerized GoodData Ruby. Archive, 2015; data and gis."
 template = "work.html"
-weight = 149
+weight = 150
 updated = "2015-07-21T15:51:46Z"
 
 [taxonomies]

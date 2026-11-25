@@ -3,7 +3,7 @@
 title = "craftsmen"
 description = "Web UI for listing of czech companies. Archive, 2014; web."
 template = "work.html"
-weight = 191
+weight = 192
 updated = "2014-02-24T01:38:24Z"
 
 [taxonomies]

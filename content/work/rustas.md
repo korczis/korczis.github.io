@@ -3,7 +3,7 @@
 title = "rustas"
 description = "Rust - Assembler, Mathematics, GPU and many others"
 template = "work.html"
-weight = 79
+weight = 80
 updated = "2018-03-08T21:01:44Z"
 
 [taxonomies]

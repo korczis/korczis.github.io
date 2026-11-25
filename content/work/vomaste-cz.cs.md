@@ -3,7 +3,7 @@
 title = "vomaste.cz"
 description = "Otevřený, Git-native systém pro tvorbu a publikaci dohledatelných dossierů ve veřejném zájmu. Tvrzení, zdroje, entity, kauzy a vztahy jsou strukturovaná,…"
 template = "work.html"
-weight = 12
+weight = 13
 updated = "2026-11-08T20:48:37Z"
 
 [taxonomies]
@@ -36,6 +36,6 @@ Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https
 
 Zdrojový kód: [GitHub](https://github.com/korczis/vomaste.cz).
 
-Související práce v kategorii [Nástroje](@/projects/tools.cs.md): [Gists search](@/work/gists-search.cs.md) (2026), [astronomists](@/work/astronomists.cs.md) (2026), [prismatic](@/work/prismatic.cs.md) (2025) a [u-tygra](@/work/u-tygra.cs.md) (2024–2025).
+Související práce v kategorii [Nástroje](@/projects/tools.cs.md): [prismatic-flipperzero](@/work/prismatic-flipperzero.cs.md) (2026), [Gists search](@/work/gists-search.cs.md) (2026), [astronomists](@/work/astronomists.cs.md) (2026) a [prismatic](@/work/prismatic.cs.md) (2025).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 30 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

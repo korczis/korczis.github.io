@@ -16,8 +16,8 @@ kind = "language"
 definition = "Malý, rychlý systémový jazyk pod operačními systémy i většinou ostatních jazyků."
 aliases = []
 reference = { title = "C (Wikipedia)", url = "https://en.wikipedia.org/wiki/C_(programming_language)" }
-pages = ["projects/learning.cs.md", "skills/infrastructure-osint.cs.md", "work/algorithms.cs.md", "work/happ.cs.md", "work/icave.cs.md", "work/magic.cs.md", "work/nosqlight.cs.md", "work/peacemaker.cs.md", "work/skull-c.cs.md"]
-related = ["repository", "commit", "open-source", "cmake", "cpp", "travis-ci", "elixir", "rust"]
+pages = ["projects/learning.cs.md", "projects/tools.cs.md", "skills/infrastructure-osint.cs.md", "work/algorithms.cs.md", "work/happ.cs.md", "work/icave.cs.md", "work/magic.cs.md", "work/nosqlight.cs.md", "work/peacemaker.cs.md", "work/prismatic-flipperzero.cs.md", "work/skull-c.cs.md"]
+related = ["repository", "open-source", "commit", "cpp", "cmake", "travis-ci", "elixir", "javascript"]
 og_title = "C: slovník"
 og_image = "og/cs-glossary-c.png"
 keywords = ["C (programovací jazyk)", "Programovací jazyk", "Slovník", "Tomáš Korčák"]
@@ -40,10 +40,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
-C jsem psal v 7 veřejných repozitářích, od roku 2014 do 2021; v 1 z nich je hlavním jazykem.
+C jsem psal v 8 veřejných repozitářích, od roku 2014 do 2026; ve 2 z nich je hlavním jazykem.
 
-K čemu to sloužilo: [Učení a experimenty](@/projects/learning.cs.md) (2), [Bezpečnost a OSINT](@/projects/security.cs.md) (2), [Data a GIS](@/projects/data.cs.md) (1) a [Věda a vizualizace](@/projects/science.cs.md) (1).
+K čemu to sloužilo: [Učení a experimenty](@/projects/learning.cs.md) (2), [Bezpečnost a OSINT](@/projects/security.cs.md) (2), [Nástroje](@/projects/tools.cs.md) (2) a [Data a GIS](@/projects/data.cs.md) (1).
 
-Naposledy: [happ](@/work/happ.cs.md); [magic](@/work/magic.cs.md); [iCave](@/work/icave.cs.md).
+Naposledy: [prismatic-flipperzero](@/work/prismatic-flipperzero.cs.md); [happ](@/work/happ.cs.md); [magic](@/work/magic.cs.md).
+
+1 z těchto projektů běží jako živý web.
 
 Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak C používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje C s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

@@ -3,7 +3,7 @@
 title = "astronomists"
 description = "astronomists: a project in Tools, main language Python, last commit on 20 July 2026."
 template = "work.html"
-weight = 16
+weight = 17
 updated = "2026-07-20T17:36:39Z"
 
 [taxonomies]
@@ -36,6 +36,6 @@ It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://k
 
 Its source is on [GitHub](https://github.com/korczis/astronomists).
 
-Related work in [Tools](@/projects/tools.md): [prismatic](@/work/prismatic.md) (2025), [Gists search](@/work/gists-search.md) (2026), [vomaste.cz](@/work/vomaste-cz.md) (2026) and [u-tygra](@/work/u-tygra.md) (2024–2025).
+Related work in [Tools](@/projects/tools.md): [prismatic](@/work/prismatic.md) (2025), [Gists search](@/work/gists-search.md) (2026), [vomaste.cz](@/work/vomaste-cz.md) (2026) and [prismatic-flipperzero](@/work/prismatic-flipperzero.md) (2026).
 
 *How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 28 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

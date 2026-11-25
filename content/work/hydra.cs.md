@@ -3,7 +3,7 @@
 title = "hydra"
 description = "hydra: archivní projekt z kategorie Knihovny, hlavní jazyk Elixir, 2019; poslední commit 20. prosince 2019."
 template = "work.html"
-weight = 56
+weight = 57
 updated = "2019-12-20T21:40:11Z"
 
 [taxonomies]

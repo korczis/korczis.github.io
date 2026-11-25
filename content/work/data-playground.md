@@ -3,7 +3,7 @@
 title = "data-playground"
 description = "Playground for toying with data. Archive, 2020; data and gis."
 template = "work.html"
-weight = 54
+weight = 55
 updated = "2020-04-25T01:53:19Z"
 
 [taxonomies]

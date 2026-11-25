@@ -3,21 +3,21 @@
 title = "Sonic Playground"
 description = "Music that moves you, not algorithmic noise. Active in the last 12 months; media and art."
 template = "work.html"
-weight = 2
-updated = "2026-11-24T23:18:41Z"
+weight = 4
+updated = "2026-11-25T01:50:09Z"
 
 [taxonomies]
-tags = ["Media and art", "Python", "JavaScript", "HTML"]
+tags = ["Media and art", "JavaScript", "Python", "HTML"]
 
 [extra]
 repo = "sonic-playground"
-seo_title = "Sonic Playground: Media and art in Python, 2026 · Tomas Korcak"
+seo_title = "Sonic Playground: Media and art in JavaScript, 2026 · Tomas Korcak"
 og_title = "Sonic Playground: Music that moves you, not algorithmic noise"
-og_description = "Sonic Playground: Media and art in Python, JavaScript and HTML, 2026, active in the last 12 months. Source on GitHub. Live site. Supervised by Majordomus."
+og_description = "Sonic Playground: Media and art in JavaScript, Python and HTML, 2026, active in the last 12 months. Source on GitHub. Live site. Supervised by Majordomus."
 og_image = "og/work-sonic-playground.png"
 schema = "project"
-keywords = ["Sonic Playground", "sonic-playground", "Media and art", "Python", "JavaScript", "HTML", "2026", "GitHub", "Tomas Korcak", "korczis"]
-terms = ["python", "javascript", "html", "shell", "css", "elixir", "zola", "typescript", "tailwind-css", "flowbite-pro", "json-schema", "json-ld", "github-pages", "data-visualisation", "repository", "commit", "open-source"]
+keywords = ["Sonic Playground", "sonic-playground", "Media and art", "JavaScript", "Python", "HTML", "2026", "GitHub", "Tomas Korcak", "korczis"]
+terms = ["javascript", "python", "html", "shell", "css", "elixir", "zola", "typescript", "tailwind-css", "flowbite-pro", "json-schema", "json-ld", "github-pages", "data-visualisation", "repository", "commit", "open-source"]
 
 [[extra.viz]]
 kind = "pulse"
@@ -28,9 +28,9 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**Sonic Playground** is a project in [Media and art](@/projects/media.md). Its code is written mainly in [Python](@/glossary/python.md) (39.6 %), with [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md) and [Shell](@/glossary/shell.md).
+**Sonic Playground** is a project in [Media and art](@/projects/media.md). Its code is written mainly in [JavaScript](@/glossary/javascript.md) (48.5 %), with [Python](@/glossary/python.md), [HTML](@/glossary/html.md) and [Shell](@/glossary/shell.md).
 
-The [repository](@/glossary/repository.md) was created on 12 November 2026; its latest [commit](@/glossary/commit.md) is from 24 November 2026. It reads “Merge branch 'fix/visualizer-rest': three analysis passes on real recordings, algoglyph's methods”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created on 12 November 2026; its latest [commit](@/glossary/commit.md) is from 25 November 2026. It reads “Merge branch 'fix/visualizer-ci': light independent of the frame rate, look checks where the picture is fluent”. That places it among the projects active in the last 12 months.
 
 It is built with [Elixir](@/glossary/elixir.md).
 

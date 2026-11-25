@@ -3,7 +3,7 @@
 title = "skull"
 description = "skull: Programming learning materials, examples, sources . Archive, 2014; learning and experiments."
 template = "work.html"
-weight = 176
+weight = 177
 updated = "2014-08-03T22:00:13Z"
 
 [taxonomies]

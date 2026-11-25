@@ -3,7 +3,7 @@
 title = "skull-nodejs"
 description = "skull-nodejs: archivní projekt z kategorie Učení a experimenty, hlavní jazyk Makefile, 2014; poslední commit 3. srpna 2014."
 template = "work.html"
-weight = 179
+weight = 180
 updated = "2014-08-03T04:09:35Z"
 
 [taxonomies]

@@ -3,7 +3,7 @@
 title = "gooddata_rails_app"
 description = "gooddata_rails_app: archivní projekt z kategorie Data a GIS, hlavní jazyk Ruby, 2014; poslední commit 31. října 2014."
 template = "work.html"
-weight = 167
+weight = 168
 updated = "2014-10-31T14:45:35Z"
 
 [taxonomies]

@@ -3,7 +3,7 @@
 title = "easy-plugin-plugins"
 description = "easy-plugin-plugins: an archived project in Libraries, main language Rust, 2016; last commit on 15 October 2016."
 template = "work.html"
-weight = 114
+weight = 115
 updated = "2016-10-15T21:00:00Z"
 
 [taxonomies]

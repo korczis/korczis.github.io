@@ -3,7 +3,7 @@
 title = "algorithms"
 description = "algorithms: archivní projekt z kategorie Věda a vizualizace, hlavní jazyk C++, 2014; poslední commit 23. srpna 2014."
 template = "work.html"
-weight = 172
+weight = 173
 updated = "2014-08-23T08:22:39Z"
 
 [taxonomies]

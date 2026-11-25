@@ -3,7 +3,7 @@
 title = "tosh"
 description = "Yet Another Web Application Template/Framework. Archive, 2019; web."
 template = "work.html"
-weight = 71
+weight = 72
 updated = "2019-01-20T22:31:07Z"
 
 [taxonomies]

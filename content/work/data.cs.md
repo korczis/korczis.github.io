@@ -3,7 +3,7 @@
 title = "data"
 description = "data: archivní projekt z kategorie Data a GIS, 2014–2015; poslední commit 2. listopadu 2015."
 template = "work.html"
-weight = 141
+weight = 142
 updated = "2015-11-02T18:26:50Z"
 
 [taxonomies]

@@ -3,7 +3,7 @@
 title = "bcnode-old"
 description = "Mining node with built-in block rover and DHT. Archive, 2018; tools."
 template = "work.html"
-weight = 76
+weight = 77
 updated = "2018-04-12T17:34:21Z"
 
 [taxonomies]

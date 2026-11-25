@@ -3,7 +3,7 @@
 title = "zeman-ucet"
 description = "Zpravy pro prijemce ze Zemanova transparentniho uctu na predvolebni kampan"
 template = "work.html"
-weight = 84
+weight = 85
 updated = "2017-10-07T19:59:48Z"
 
 [taxonomies]

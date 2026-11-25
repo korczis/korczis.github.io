@@ -3,7 +3,7 @@
 title = "csv2psql"
 description = "Převádí CSV na příkazy insert nebo update pro PostgreSQL."
 template = "work.html"
-weight = 140
+weight = 141
 updated = "2015-11-06T23:39:29Z"
 
 [taxonomies]

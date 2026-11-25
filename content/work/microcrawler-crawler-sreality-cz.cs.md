@@ -3,7 +3,7 @@
 title = "microcrawler-crawler-sreality-cz"
 description = "microcrawler-crawler-sreality-cz: archivní projekt z kategorie Data a GIS, hlavní jazyk JavaScript, 2016–2017; poslední commit 22. března 2017."
 template = "work.html"
-weight = 96
+weight = 97
 updated = "2017-03-22T21:27:08Z"
 
 [taxonomies]

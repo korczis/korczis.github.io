@@ -3,7 +3,7 @@
 title = "pavian.eu"
 description = "pavian.eu website. Archive, 2015; web. An archived project by Tomas Korcak, 2015."
 template = "work.html"
-weight = 146
+weight = 147
 updated = "2015-08-31T13:48:54Z"
 
 [taxonomies]

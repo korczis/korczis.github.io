@@ -3,7 +3,7 @@
 title = "zdeny-docker"
 description = "zdeny-docker: an archived project in Systems and infrastructure, main language Dockerfile, 2019; last commit on 26 March 2019."
 template = "work.html"
-weight = 65
+weight = 66
 updated = "2019-03-26T20:48:19Z"
 
 [taxonomies]

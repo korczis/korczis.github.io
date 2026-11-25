@@ -3,7 +3,7 @@
 title = "principal"
 description = "principal: archivní projekt z kategorie Nástroje, 2014; poslední commit 24. června 2014."
 template = "work.html"
-weight = 184
+weight = 185
 updated = "2014-06-24T09:13:27Z"
 
 [taxonomies]

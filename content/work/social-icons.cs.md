@@ -3,7 +3,7 @@
 title = "social-icons"
 description = "social-icons: archivní projekt z kategorie Systémy a infrastruktura, 2013; poslední commit 14. dubna 2013."
 template = "work.html"
-weight = 200
+weight = 201
 updated = "2013-04-14T19:59:26Z"
 
 [taxonomies]

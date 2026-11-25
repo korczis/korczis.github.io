@@ -3,7 +3,7 @@
 title = "babel-plugin-transform-graphql"
 description = "Babel Plugin for Transforming GraphQL. Archive, 2016; libraries."
 template = "work.html"
-weight = 133
+weight = 134
 updated = "2016-04-15T11:56:20Z"
 
 [taxonomies]

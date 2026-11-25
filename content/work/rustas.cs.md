@@ -3,7 +3,7 @@
 title = "rustas"
 description = "rustas: archivní projekt z kategorie Věda a vizualizace, hlavní jazyk Rust, 2018; poslední commit 8. března 2018."
 template = "work.html"
-weight = 79
+weight = 80
 updated = "2018-03-08T21:01:44Z"
 
 [taxonomies]

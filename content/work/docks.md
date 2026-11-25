@@ -3,7 +3,7 @@
 title = "docks"
 description = "Repository containing useful Dockerfile(s). Archive, 2015–2017; systems and infrastructure."
 template = "work.html"
-weight = 100
+weight = 101
 updated = "2017-03-05T12:49:03Z"
 
 [taxonomies]

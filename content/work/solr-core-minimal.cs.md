@@ -3,7 +3,7 @@
 title = "solr-core-minimal"
 description = "solr-core-minimal: archivní projekt z kategorie Data a GIS, hlavní jazyk XSLT, 2014; poslední commit 5. února 2014."
 template = "work.html"
-weight = 192
+weight = 193
 updated = "2014-02-05T18:40:20Z"
 
 [taxonomies]

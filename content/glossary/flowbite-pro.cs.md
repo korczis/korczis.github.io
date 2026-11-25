@@ -17,7 +17,7 @@ definition = "Licencovaná knihovna bloků rozhraní a aplikační shell nad Tai
 aliases = ["Flowbite"]
 reference = { title = "Flowbite", url = "https://flowbite.com/" }
 pages = ["_index.cs.md", "projects/knowledge.cs.md", "projects/science.cs.md", "services/_index.cs.md", "services/ai-engineering-governance.cs.md", "services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "services/decision-support-ai.cs.md", "services/digital-forensics.cs.md", "services/digital-investigation.cs.md", "services/due-diligence.cs.md", "services/interactive-data-products.cs.md", "services/m-and-a.cs.md", "services/reputation-intelligence.cs.md", "skills/_index.cs.md", "skills/ai-transformation.cs.md", "skills/audit-trail.cs.md", "skills/data-room.cs.md", "skills/decision-support.cs.md", "skills/entity-resolution.cs.md", "skills/insolvency-monitoring.cs.md", "skills/interactive-visualisation.cs.md", "skills/knowledge-graph.cs.md", "skills/m-and-a-screening.cs.md", "skills/market-intelligence.cs.md", "skills/orchestration.cs.md", "skills/osint-investigation.cs.md", "skills/ownership-analysis.cs.md", "skills/policy-as-code.cs.md", "skills/registry-intelligence.cs.md", "skills/risk-scoring.cs.md", "stack.cs.md", "work/algoglyph.cs.md", "work/astronomists.cs.md", "work/catharsis-as-a-service.cs.md", "work/crisis-map.cs.md", "work/kompendium-epistemicke-anihilace.cs.md", "work/korczis-github-io.cs.md", "work/majordomus-reel.cs.md", "work/openttd-prismatic-bridge.cs.md", "work/oscilla.cs.md", "work/sonic-playground.cs.md", "work/u-tygra.cs.md"]
-related = ["javascript", "html", "alpine-js", "tailwind-css", "python", "dockerfile", "shell", "elixir"]
+related = ["javascript", "html", "alpine-js", "tailwind-css", "python", "shell", "dockerfile", "elixir"]
 og_title = "Flowbite Pro: slovník"
 og_image = "og/cs-glossary-flowbite-pro.png"
 keywords = ["Flowbite Pro", "Technologie", "Slovník", "Tomáš Korčák"]
@@ -44,7 +44,7 @@ Flowbite Pro je součástí 11 mých veřejných repozitářů, od roku 2024 do 
 
 K čemu to sloužilo: [Média a umění](@/projects/media.cs.md) (4), [Věda a vizualizace](@/projects/science.cs.md) (2), [Nástroje](@/projects/tools.cs.md) (2) a [Data a GIS](@/projects/data.cs.md) (1).
 
-Naposledy: [korczis.github.io](@/work/korczis-github-io.cs.md); [Oscilla](@/work/oscilla.cs.md): Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu; [Sonic Playground](@/work/sonic-playground.cs.md): Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.
+Naposledy: [Oscilla](@/work/oscilla.cs.md): Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu; [Sonic Playground](@/work/sonic-playground.cs.md): Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita; [korczis.github.io](@/work/korczis-github-io.cs.md).
 
 9 z těchto projektů běží jako živé weby.
 

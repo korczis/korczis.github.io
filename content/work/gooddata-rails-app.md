@@ -3,7 +3,7 @@
 title = "gooddata_rails_app"
 description = "GoodData as Rails Application. Archive, 2014; data and gis."
 template = "work.html"
-weight = 167
+weight = 168
 updated = "2014-10-31T14:45:35Z"
 
 [taxonomies]

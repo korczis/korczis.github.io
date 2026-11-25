@@ -3,7 +3,7 @@
 title = "easy-plugin-plugins"
 description = "easy-plugin-plugins: archivní projekt z kategorie Knihovny, hlavní jazyk Rust, 2016; poslední commit 15. října 2016."
 template = "work.html"
-weight = 114
+weight = 115
 updated = "2016-10-15T21:00:00Z"
 
 [taxonomies]

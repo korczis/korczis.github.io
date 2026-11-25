@@ -3,7 +3,7 @@
 title = "comtesse"
 description = "Mission: Improve accuracy and consistency of per-commit assessments while keeping context minimal and traceability maximal."
 template = "work.html"
-weight = 24
+weight = 25
 updated = "2025-08-28T18:57:49Z"
 
 [taxonomies]
@@ -35,6 +35,6 @@ The [repository](@/glossary/repository.md) was created on 27 August 2025; its la
 
 Its source is on [GitLab](https://gitlab.com/korczis/comtesse).
 
-Related work in [Tools](@/projects/tools.md): [Gists search](@/work/gists-search.md) (2026), [vomaste.cz](@/work/vomaste-cz.md) (2026), [bcnode-old](@/work/bcnode-old.md) (2018) and [prismatic](@/work/prismatic.md) (2025).
+Related work in [Tools](@/projects/tools.md): [Gists search](@/work/gists-search.md) (2026), [vomaste.cz](@/work/vomaste-cz.md) (2026), [prismatic-flipperzero](@/work/prismatic-flipperzero.md) (2026) and [bcnode-old](@/work/bcnode-old.md) (2018).
 
 *How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 24 commits as a heartbeat, one lane per commit type (feat, fix, docs…), from a snapshot refreshed every 6 hours. The concepts below are explained in the [glossary](@/glossary/_index.md).

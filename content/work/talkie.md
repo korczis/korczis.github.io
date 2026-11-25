@@ -3,7 +3,7 @@
 title = "talkie"
 description = "node.js TTS application. Archive, 2015; media and art."
 template = "work.html"
-weight = 156
+weight = 157
 updated = "2015-03-12T15:11:41Z"
 
 [taxonomies]

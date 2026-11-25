@@ -3,7 +3,7 @@
 title = "jetel"
 description = "Just simple ETeL. Archive, 2015–2016; data and gis."
 template = "work.html"
-weight = 116
+weight = 117
 updated = "2016-09-28T12:41:43Z"
 
 [taxonomies]

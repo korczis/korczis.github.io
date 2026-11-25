@@ -3,7 +3,7 @@
 title = "in-rust-we-trust"
 description = "In Rust We Trust. Archive, 2017; tools. An archived project by Tomas Korcak, 2017."
 template = "work.html"
-weight = 83
+weight = 84
 updated = "2017-10-11T15:15:41Z"
 
 [taxonomies]

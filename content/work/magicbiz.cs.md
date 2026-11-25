@@ -3,7 +3,7 @@
 title = "magicbiz"
 description = "magicbiz: archivní projekt z kategorie Nástroje, 2015; poslední commit 17. června 2015."
 template = "work.html"
-weight = 151
+weight = 152
 updated = "2015-06-17T20:09:22Z"
 
 [taxonomies]

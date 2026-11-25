@@ -3,7 +3,7 @@
 title = "ares"
 description = "Simple (AMQP Based) Monitoring framework. Archive, 2012; tools."
 template = "work.html"
-weight = 203
+weight = 204
 updated = "2012-10-07T21:50:08Z"
 
 [taxonomies]

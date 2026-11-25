@@ -3,7 +3,7 @@
 title = "inspectors"
 description = "Tools used for various kind of inspections . Archive, 2012; tools."
 template = "work.html"
-weight = 202
+weight = 203
 updated = "2012-11-20T18:33:49Z"
 
 [taxonomies]

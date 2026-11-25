@@ -3,7 +3,7 @@
 title = "dj-schnapps"
 description = "Dj Schnapps. Archive, 2019; media and art. An archived project by Tomas Korcak, 2019."
 template = "work.html"
-weight = 57
+weight = 58
 updated = "2019-11-26T22:13:03Z"
 
 [taxonomies]

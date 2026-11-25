@@ -3,7 +3,7 @@
 title = "algorithms-ruby"
 description = "algorithms-ruby: archivní projekt z kategorie Věda a vizualizace, hlavní jazyk C++, 2015; poslední commit 2. března 2015."
 template = "work.html"
-weight = 157
+weight = 158
 updated = "2015-03-02T02:08:04Z"
 
 [taxonomies]

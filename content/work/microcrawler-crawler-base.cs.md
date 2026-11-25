@@ -3,7 +3,7 @@
 title = "microcrawler-crawler-base"
 description = "microcrawler-crawler-base: archivní projekt z kategorie Data a GIS, 2016; poslední commit 3. září 2016."
 template = "work.html"
-weight = 123
+weight = 124
 updated = "2016-09-03T22:35:51Z"
 
 [taxonomies]

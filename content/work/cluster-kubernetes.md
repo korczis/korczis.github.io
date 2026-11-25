@@ -3,7 +3,7 @@
 title = "cluster-kubernetes"
 description = "Kubernetes Cluster. Archive, 2017–2018; systems and infrastructure."
 template = "work.html"
-weight = 80
+weight = 81
 updated = "2018-01-30T12:21:00Z"
 
 [taxonomies]

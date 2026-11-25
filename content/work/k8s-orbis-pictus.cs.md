@@ -3,7 +3,7 @@
 title = "k8s-orbis-pictus"
 description = "k8s-orbis-pictus: archivní projekt z kategorie Systémy a infrastruktura, 2019; poslední commit 14. března 2019."
 template = "work.html"
-weight = 66
+weight = 67
 updated = "2019-03-14T14:08:30Z"
 
 [taxonomies]

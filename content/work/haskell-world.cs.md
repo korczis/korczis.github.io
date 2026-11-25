@@ -3,7 +3,7 @@
 title = "haskell-world"
 description = "haskell-world: archivní projekt z kategorie Věda a vizualizace, hlavní jazyk Haskell, 2016; poslední commit 9. dubna 2016."
 template = "work.html"
-weight = 135
+weight = 136
 updated = "2016-04-09T00:01:56Z"
 
 [taxonomies]

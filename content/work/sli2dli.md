@@ -3,7 +3,7 @@
 title = "sli2dli"
 description = "SLI to DLI implementation written in rust. Nothing more, nothing less."
 template = "work.html"
-weight = 92
+weight = 93
 updated = "2017-05-14T16:59:44Z"
 
 [taxonomies]

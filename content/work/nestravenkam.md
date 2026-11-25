@@ -3,7 +3,7 @@
 title = "nestravenkam"
 description = "Stravenky. Archive, 2019; web. An archived project by Tomas Korcak, 2019."
 template = "work.html"
-weight = 60
+weight = 61
 updated = "2019-08-09T02:56:27Z"
 
 [taxonomies]

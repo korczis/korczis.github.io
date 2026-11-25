@@ -3,7 +3,7 @@
 title = "annasabatova.cz"
 description = "annasabatova.cz: archivní projekt z kategorie Web, hlavní jazyk CSS, 2014; poslední commit 6. října 2014."
 template = "work.html"
-weight = 168
+weight = 169
 updated = "2014-10-06T23:15:13Z"
 
 [taxonomies]

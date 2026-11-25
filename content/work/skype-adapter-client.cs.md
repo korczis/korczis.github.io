@@ -3,7 +3,7 @@
 title = "skype-adapter-client"
 description = "skype-adapter-client: archivní projekt z kategorie Knihovny, 2013; poslední commit 1. května 2013."
 template = "work.html"
-weight = 199
+weight = 200
 updated = "2013-05-01T20:29:51Z"
 
 [taxonomies]

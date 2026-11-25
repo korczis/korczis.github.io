@@ -3,7 +3,7 @@
 title = "llm"
 description = "llm: projekt z kategorie Inženýrství AI, hlavní jazyk Elixir, poslední commit 21. srpna 2026."
 template = "work.html"
-weight = 15
+weight = 16
 updated = "2026-08-21T13:01:31Z"
 
 [taxonomies]

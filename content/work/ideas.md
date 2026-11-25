@@ -3,7 +3,7 @@
 title = "ideas"
 description = "Just Ideas. Archive, 2016; tools. An archived project by Tomas Korcak, 2016."
 template = "work.html"
-weight = 111
+weight = 112
 updated = "2016-11-14T19:03:37Z"
 
 [taxonomies]

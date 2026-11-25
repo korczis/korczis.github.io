@@ -3,7 +3,7 @@
 title = "home"
 description = "home directory. Archive, 2019; tools. An archived project by Tomas Korcak, 2019."
 template = "work.html"
-weight = 61
+weight = 62
 updated = "2019-06-27T01:07:02Z"
 
 [taxonomies]

@@ -17,7 +17,7 @@ definition = "Vlastníkova dohledová vrstva pro práci s AI: jedna politika pro
 aliases = []
 reference = { title = "majordomus.dev", url = "https://majordomus.dev" }
 pages = ["about.cs.md", "hire.cs.md", "interfaces.cs.md", "services/ai-engineering-governance.cs.md", "services/compliance-screening.cs.md", "services/continuous-monitoring.cs.md", "skills/data-room.cs.md", "skills/insolvency-monitoring.cs.md", "skills/knowledge-graph.cs.md", "skills/ownership-analysis.cs.md", "skills/risk-scoring.cs.md", "stack.cs.md", "_index.cs.md"]
-related = ["alpine-js", "flowbite-pro", "javascript", "html", "claude-api", "github-actions", "dockerfile", "fastapi"]
+related = ["alpine-js", "flowbite-pro", "javascript", "html", "claude-api", "dockerfile", "github-actions", "fastapi"]
 og_title = "Majordomus: slovník"
 og_image = "og/cs-glossary-majordomus.png"
 keywords = ["Majordomus", "Technologie", "Slovník", "Tomáš Korčák"]

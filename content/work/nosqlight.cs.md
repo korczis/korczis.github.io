@@ -3,7 +3,7 @@
 title = "nosqlight"
 description = "nosqlight: archivní projekt z kategorie Data a GIS, 2014; poslední commit 24. dubna 2014."
 template = "work.html"
-weight = 189
+weight = 190
 updated = "2014-04-24T19:56:58Z"
 
 [taxonomies]

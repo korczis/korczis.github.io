@@ -3,7 +3,7 @@
 title = "home"
 description = "home: archivní projekt z kategorie Nástroje, hlavní jazyk Shell, 2019; poslední commit 27. června 2019."
 template = "work.html"
-weight = 61
+weight = 62
 updated = "2019-06-27T01:07:02Z"
 
 [taxonomies]

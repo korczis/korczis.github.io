@@ -3,7 +3,7 @@
 title = "docker-gooddata-ruby"
 description = "docker-gooddata-ruby: archivní projekt z kategorie Data a GIS, hlavní jazyk Ruby, 2015; poslední commit 21. července 2015."
 template = "work.html"
-weight = 149
+weight = 150
 updated = "2015-07-21T15:51:46Z"
 
 [taxonomies]

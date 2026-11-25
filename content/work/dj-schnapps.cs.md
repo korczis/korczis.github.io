@@ -3,7 +3,7 @@
 title = "dj-schnapps"
 description = "dj-schnapps: archivní projekt z kategorie Média a umění, hlavní jazyk Elixir, 2019; poslední commit 26. listopadu 2019."
 template = "work.html"
-weight = 57
+weight = 58
 updated = "2019-11-26T22:13:03Z"
 
 [taxonomies]

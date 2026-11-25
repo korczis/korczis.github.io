@@ -3,7 +3,7 @@
 title = "esri"
 description = "Framework for working with ESRI datasets. Archive, 2014; data and gis."
 template = "work.html"
-weight = 171
+weight = 172
 updated = "2014-08-23T08:27:14Z"
 
 [taxonomies]

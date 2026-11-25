@@ -3,7 +3,7 @@
 title = "skull-ruby"
 description = "skull-ruby: archivní projekt z kategorie Učení a experimenty, hlavní jazyk Ruby, 2014; poslední commit 3. srpna 2014."
 template = "work.html"
-weight = 178
+weight = 179
 updated = "2014-08-03T04:10:03Z"
 
 [taxonomies]

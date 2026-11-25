@@ -3,7 +3,7 @@
 title = "prismatic"
 description = "prismatic: projekt z kategorie Nástroje, hlavní jazyk Elixir, poslední commit 4. srpna 2025."
 template = "work.html"
-weight = 26
+weight = 27
 updated = "2025-08-04T17:45:57Z"
 
 [taxonomies]
@@ -34,6 +34,6 @@ tone = "night"
 
 Zdrojový kód: [GitHub](https://github.com/korczis/prismatic).
 
-Související práce v kategorii [Nástroje](@/projects/tools.cs.md): [astronomists](@/work/astronomists.cs.md) (2026), [Gists search](@/work/gists-search.cs.md) (2026), [vomaste.cz](@/work/vomaste-cz.cs.md) (2026) a [rest-hello-world-benchmark](@/work/rest-hello-world-benchmark.cs.md) (2022).
+Související práce v kategorii [Nástroje](@/projects/tools.cs.md): [astronomists](@/work/astronomists.cs.md) (2026), [Gists search](@/work/gists-search.cs.md) (2026), [vomaste.cz](@/work/vomaste-cz.cs.md) (2026) a [prismatic-flipperzero](@/work/prismatic-flipperzero.cs.md) (2026).
 
 *Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 30 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).

@@ -3,7 +3,7 @@
 title = "microcrawler-crawler-bam-brno-cz"
 description = "microcrawler-crawler-bam-brno-cz: archivní projekt z kategorie Data a GIS, hlavní jazyk JavaScript, 2017; poslední commit 12. března 2017."
 template = "work.html"
-weight = 98
+weight = 99
 updated = "2017-03-12T19:04:40Z"
 
 [taxonomies]

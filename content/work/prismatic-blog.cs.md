@@ -3,7 +3,7 @@
 title = "prismatic-blog"
 description = "prismatic-blog: projekt z kategorie Média a umění, hlavní jazyk Dockerfile, poslední commit 14. března 2025."
 template = "work.html"
-weight = 30
+weight = 31
 updated = "2025-03-14T02:08:36Z"
 
 [taxonomies]

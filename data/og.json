@@ -68,9 +68,9 @@
    "by": "pngquant 3.0.3"
   },
   "category-tools": {
-   "svg": "394ae70e486e37d0",
-   "png": "d9b6c485227851b6",
-   "by": "pngquant 3.0.3"
+   "svg": "98371122df24f851",
+   "png": "1f586863f972c4e5",
+   "by": "pngquant 4.0.3"
   },
   "category-web": {
    "svg": "315ec790edd66f4e",
@@ -143,9 +143,9 @@
    "by": "pngquant 3.0.3"
   },
   "cs-category-tools": {
-   "svg": "350f4c55a319b767",
-   "png": "764dd9dd4e05c37d",
-   "by": "pngquant 3.0.3"
+   "svg": "213f56cdeeb269dd",
+   "png": "11ac0648ed11035b",
+   "by": "pngquant 4.0.3"
   },
   "cs-category-web": {
    "svg": "bcc751c4e5993b38",
@@ -1793,9 +1793,9 @@
    "by": "pngquant 3.0.3"
   },
   "cs-work": {
-   "svg": "0427611215940490",
-   "png": "73794e9a1a331a7b",
-   "by": "pngquant 3.0.3"
+   "svg": "9cd05f1cb14f5622",
+   "png": "988f16da4b9433b6",
+   "by": "pngquant 4.0.3"
   },
   "cs-work-3d-print": {
    "svg": "15063489d59d1cb9",
@@ -2552,6 +2552,11 @@
    "png": "f03b78eab9617b5e",
    "by": "pngquant 3.0.3"
   },
+  "cs-work-prismatic-flipperzero": {
+   "svg": "6cf44b6e2b533cef",
+   "png": "dd8f6551df2aae03",
+   "by": "pngquant 4.0.3"
+  },
   "cs-work-prismatic-majordomus": {
    "svg": "fd09de11684221da",
    "png": "5b6ecbca51459dbc",
@@ -2723,9 +2728,9 @@
    "by": "pngquant 3.0.3"
   },
   "cs-work-sonic-playground": {
-   "svg": "56cc05ec3c04ed42",
-   "png": "e2c819304b58d653",
-   "by": "pngquant 3.0.3"
+   "svg": "5d93950c655d6245",
+   "png": "7f118de07104cb81",
+   "by": "pngquant 4.0.3"
   },
   "cs-work-streamflow": {
    "svg": "780c687b819cf31d",
@@ -4463,9 +4468,9 @@
    "by": "pngquant 3.0.3"
   },
   "work": {
-   "svg": "ddc6f16830b066f5",
-   "png": "275a01a6195a1bed",
-   "by": "pngquant 3.0.3"
+   "svg": "c2951fc8449e2e07",
+   "png": "14828f29a349a755",
+   "by": "pngquant 4.0.3"
   },
   "work-3d-print": {
    "svg": "eb55b01ff07f6f6c",
@@ -5222,6 +5227,11 @@
    "png": "0ac1e93f5c433088",
    "by": "pngquant 3.0.3"
   },
+  "work-prismatic-flipperzero": {
+   "svg": "02c8875edd0c6de6",
+   "png": "9806420ece9ebad3",
+   "by": "pngquant 4.0.3"
+  },
   "work-prismatic-majordomus": {
    "svg": "bd2e6c5a18c416c9",
    "png": "9fad8d5c0e20b0f1",
@@ -5393,9 +5403,9 @@
    "by": "pngquant 3.0.3"
   },
   "work-sonic-playground": {
-   "svg": "6f4f60a48691687c",
-   "png": "7e19c65c0cc4002d",
-   "by": "pngquant 3.0.3"
+   "svg": "d2aca02cadffc254",
+   "png": "e53be3a767c50fee",
+   "by": "pngquant 4.0.3"
   },
   "work-streamflow": {
    "svg": "bf87c32295b01a98",

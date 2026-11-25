@@ -3,7 +3,7 @@
 title = "korczis-com"
 description = "korczis.com website. Archive, 2014–2015; web. An archived project by Tomas Korcak, 2014–2015."
 template = "work.html"
-weight = 144
+weight = 145
 updated = "2015-09-03T21:24:38Z"
 
 [taxonomies]

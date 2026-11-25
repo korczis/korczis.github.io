@@ -3,7 +3,7 @@
 title = "ctu-cz"
 description = "ctu-cz: archivní projekt z kategorie Data a GIS, hlavní jazyk JavaScript, 2020; poslední commit 15. května 2020."
 template = "work.html"
-weight = 53
+weight = 54
 updated = "2020-05-15T09:52:45Z"
 
 [taxonomies]

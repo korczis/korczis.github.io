@@ -3,7 +3,7 @@
 title = "data-playground"
 description = "data-playground: archivní projekt z kategorie Data a GIS, 2020; poslední commit 25. dubna 2020."
 template = "work.html"
-weight = 54
+weight = 55
 updated = "2020-04-25T01:53:19Z"
 
 [taxonomies]

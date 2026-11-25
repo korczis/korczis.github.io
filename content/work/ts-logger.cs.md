@@ -3,7 +3,7 @@
 title = "ts-logger"
 description = "ts-logger: archivní projekt z kategorie Nástroje, hlavní jazyk TypeScript, 2019; poslední commit 18. září 2019."
 template = "work.html"
-weight = 59
+weight = 60
 updated = "2019-09-18T14:19:04Z"
 
 [taxonomies]

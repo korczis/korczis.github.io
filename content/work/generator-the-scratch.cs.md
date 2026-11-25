@@ -3,7 +3,7 @@
 title = "generator-the-scratch"
 description = "generator-the-scratch: archivní projekt z kategorie Učení a experimenty, hlavní jazyk JavaScript, 2013; poslední commit 7. září 2013."
 template = "work.html"
-weight = 197
+weight = 198
 updated = "2013-09-07T17:04:22Z"
 
 [taxonomies]

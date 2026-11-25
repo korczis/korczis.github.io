@@ -3,7 +3,7 @@
 title = "rest-hello-world-benchmark"
 description = "rest-hello-world-benchmark: archivní projekt z kategorie Nástroje, hlavní jazyk Elixir, 2022; poslední commit 31. července 2022."
 template = "work.html"
-weight = 45
+weight = 46
 updated = "2022-07-31T19:00:56Z"
 
 [taxonomies]

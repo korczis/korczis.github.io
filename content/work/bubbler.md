@@ -3,7 +3,7 @@
 title = "bubbler"
 description = "Bubbler is a simple JavaScript application that generates a speech bubble with dynamic text over an image of a boy. The text is passed through a URL query…"
 template = "work.html"
-weight = 34
+weight = 35
 updated = "2024-09-16T14:30:54Z"
 
 [taxonomies]

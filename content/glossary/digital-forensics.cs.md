@@ -17,7 +17,7 @@ definition = "Získávání a zkoumání digitálních důkazů tak, aby to, co 
 aliases = []
 reference = { title = "NIST: digital forensics", url = "https://www.nist.gov/digital-evidence" }
 pages = ["services/_index.cs.md", "services/digital-forensics.cs.md", "services/digital-investigation.cs.md", "skills/_index.cs.md", "skills/media-forensics.cs.md"]
-related = ["dockerfile", "attack-surface", "flowbite-pro", "html", "javascript", "python", "service", "alpine-js"]
+related = ["dockerfile", "attack-surface", "flowbite-pro", "html", "javascript", "python", "service", "shell"]
 og_title = "Digitální forenzní analýza: slovník"
 og_image = "og/cs-glossary-digital-forensics.png"
 keywords = ["Digitální forenzní analýza", "Digital forensics", "Koncept", "Slovník", "Tomáš Korčák"]

@@ -3,7 +3,7 @@
 title = "esri"
 description = "esri: archivní projekt z kategorie Data a GIS, hlavní jazyk Ruby, 2014; poslední commit 23. srpna 2014."
 template = "work.html"
-weight = 171
+weight = 172
 updated = "2014-08-23T08:27:14Z"
 
 [taxonomies]

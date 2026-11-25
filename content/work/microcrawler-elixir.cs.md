@@ -3,7 +3,7 @@
 title = "microcrawler-elixir"
 description = "microcrawler-elixir: archivní projekt z kategorie Data a GIS, hlavní jazyk Elixir, 2016; poslední commit 25. září 2016."
 template = "work.html"
-weight = 117
+weight = 118
 updated = "2016-09-25T00:03:39Z"
 
 [taxonomies]

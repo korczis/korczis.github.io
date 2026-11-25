@@ -3,7 +3,7 @@
 title = "generator-microscratch"
 description = "generator-microscratch: archivní projekt z kategorie Nástroje, hlavní jazyk JavaScript, 2014; poslední commit 2. února 2014."
 template = "work.html"
-weight = 193
+weight = 194
 updated = "2014-02-02T22:16:59Z"
 
 [taxonomies]

@@ -3,7 +3,7 @@
 title = "czech-stats"
 description = "czech-stats: archivní projekt z kategorie Data a GIS, hlavní jazyk Elixir, 2020; poslední commit 1. ledna 2020."
 template = "work.html"
-weight = 55
+weight = 56
 updated = "2020-01-01T09:35:31Z"
 
 [taxonomies]

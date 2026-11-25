@@ -3,7 +3,7 @@
 title = "happ"
 description = "Playground App created during my Hospital Stay. Archive, 2021; learning and experiments."
 template = "work.html"
-weight = 50
+weight = 51
 updated = "2021-06-03T20:11:52Z"
 
 [taxonomies]

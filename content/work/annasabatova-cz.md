@@ -3,7 +3,7 @@
 title = "annasabatova.cz"
 description = "Petice za odvolani annysabatove.cz. Archive, 2014; web."
 template = "work.html"
-weight = 168
+weight = 169
 updated = "2014-10-06T23:15:13Z"
 
 [taxonomies]

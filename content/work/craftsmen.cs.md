@@ -3,7 +3,7 @@
 title = "craftsmen"
 description = "craftsmen: archivní projekt z kategorie Web, hlavní jazyk JavaScript, 2014; poslední commit 24. února 2014."
 template = "work.html"
-weight = 191
+weight = 192
 updated = "2014-02-24T01:38:24Z"
 
 [taxonomies]

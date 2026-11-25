@@ -3,7 +3,7 @@
 title = "rest-hello-world-benchmark"
 description = "Benchmark of Hello World REST Endpoint in various languages / frameworks"
 template = "work.html"
-weight = 45
+weight = 46
 updated = "2022-07-31T19:00:56Z"
 
 [taxonomies]

@@ -3,7 +3,7 @@
 title = "streamflow"
 description = "Stream Flow - Fast Stream Processing in Rust. Archive, 2017; tools."
 template = "work.html"
-weight = 91
+weight = 92
 updated = "2017-05-22T20:09:57Z"
 
 [taxonomies]

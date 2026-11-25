@@ -3,7 +3,7 @@
 title = "sli2dli"
 description = "sli2dli: archivní projekt z kategorie Nástroje, hlavní jazyk Rust, 2017; poslední commit 14. května 2017."
 template = "work.html"
-weight = 92
+weight = 93
 updated = "2017-05-14T16:59:44Z"
 
 [taxonomies]

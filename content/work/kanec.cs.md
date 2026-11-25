@@ -3,7 +3,7 @@
 title = "kanec"
 description = "kanec: archivní projekt z kategorie Nástroje, hlavní jazyk Elixir, 2019; poslední commit 30. května 2019."
 template = "work.html"
-weight = 62
+weight = 63
 updated = "2019-05-30T01:03:52Z"
 
 [taxonomies]

@@ -3,7 +3,7 @@
 title = "el-magico-cache"
 description = "el-magico-cache: projekt z kategorie Nástroje, hlavní jazyk Elixir, poslední commit 27. ledna 2023."
 template = "work.html"
-weight = 43
+weight = 44
 updated = "2023-01-27T17:10:03Z"
 
 [taxonomies]

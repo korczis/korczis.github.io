@@ -3,7 +3,7 @@
 title = "algorithms-ruby"
 description = "Fundamental algorithms in ruby. Archive, 2015; science and visualisation."
 template = "work.html"
-weight = 157
+weight = 158
 updated = "2015-03-02T02:08:04Z"
 
 [taxonomies]

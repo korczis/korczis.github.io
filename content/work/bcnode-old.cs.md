@@ -3,7 +3,7 @@
 title = "bcnode-old"
 description = "bcnode-old: archivní projekt z kategorie Nástroje, hlavní jazyk JavaScript, 2018; poslední commit 12. dubna 2018."
 template = "work.html"
-weight = 76
+weight = 77
 updated = "2018-04-12T17:34:21Z"
 
 [taxonomies]

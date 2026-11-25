@@ -3,7 +3,7 @@
 title = "gooddata-fs"
 description = "GoodData as Filesystem (using FUSE). Archive, 2016; data and gis."
 template = "work.html"
-weight = 126
+weight = 127
 updated = "2016-07-15T15:52:20Z"
 
 [taxonomies]

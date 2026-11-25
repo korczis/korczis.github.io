@@ -3,7 +3,7 @@
 title = "generator-microscratch"
 description = "Yeoman generator of microscratch based projects. Archive, 2014; tools."
 template = "work.html"
-weight = 193
+weight = 194
 updated = "2014-02-02T22:16:59Z"
 
 [taxonomies]

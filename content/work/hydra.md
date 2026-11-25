@@ -3,7 +3,7 @@
 title = "hydra"
 description = "Modular wrapper and interface for pool of orchestrated Google Chrome instances"
 template = "work.html"
-weight = 56
+weight = 57
 updated = "2019-12-20T21:40:11Z"
 
 [taxonomies]

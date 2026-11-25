@@ -1,6 +1,6 @@
 {
   "schema": "korczis-hub-github/v1",
-  "generated_at": "2026-11-24T23:33:09Z",
+  "generated_at": "2026-11-25T08:55:51Z",
   "profile": {
     "login": "korczis",
     "name": "Tomas Korcak",
@@ -9,12 +9,12 @@
     "email": "korczis@gmail.com",
     "hireable": true,
     "followers": 148,
-    "public_repos": 198
+    "public_repos": 199
   },
   "contributions": {
-    "total": 22518,
+    "total": 22666,
     "from": "2025-11-23",
-    "to": "2026-11-24",
+    "to": "2026-11-25",
     "days": [
       [
         "2025-11-23",
@@ -1458,11 +1458,11 @@
       ],
       [
         "2026-11-18",
-        337
+        341
       ],
       [
         "2026-11-19",
-        101
+        103
       ],
       [
         "2026-11-20",
@@ -1474,15 +1474,19 @@
       ],
       [
         "2026-11-22",
-        438
+        446
       ],
       [
         "2026-11-23",
-        64
+        68
       ],
       [
         "2026-11-24",
-        82
+        102
+      ],
+      [
+        "2026-11-25",
+        110
       ]
     ]
   },
@@ -1490,7 +1494,7 @@
     {
       "name": "JavaScript",
       "color": "#f1e05a",
-      "repos": 36
+      "repos": 37
     },
     {
       "name": "Ruby",
@@ -1513,19 +1517,19 @@
       "repos": 13
     },
     {
+      "name": "C",
+      "color": "#555555",
+      "repos": 7
+    },
+    {
       "name": "C++",
       "color": "#f34b7d",
       "repos": 7
     },
     {
-      "name": "C",
-      "color": "#555555",
-      "repos": 6
-    },
-    {
       "name": "Python",
       "color": "#3572A5",
-      "repos": 5
+      "repos": 4
     },
     {
       "name": "C#",
@@ -1550,7 +1554,7 @@
       "language": "Rust",
       "license": "MIT",
       "created_at": "2026-09-03T20:24:57Z",
-      "pushed_at": "2026-11-24T20:11:13Z",
+      "pushed_at": "2026-11-25T08:54:59Z",
       "activity": "active",
       "archived": false,
       "fork": false,
@@ -1565,7 +1569,7 @@
       "language": "JavaScript",
       "license": "MIT",
       "created_at": "2026-10-01T21:05:33Z",
-      "pushed_at": "2026-11-24T23:24:51Z",
+      "pushed_at": "2026-11-25T07:54:11Z",
       "activity": "active",
       "archived": false,
       "fork": false,
@@ -1667,10 +1671,10 @@
     "sonic-playground": {
       "stars": 0,
       "forks": 0,
-      "language": "Python",
+      "language": "JavaScript",
       "license": "MIT",
       "created_at": "2026-11-12T00:48:36Z",
-      "pushed_at": "2026-11-24T23:27:28Z",
+      "pushed_at": "2026-11-25T03:12:46Z",
       "activity": "active",
       "archived": false,
       "fork": false,

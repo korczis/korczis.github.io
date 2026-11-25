@@ -3,7 +3,7 @@
 title = "lola"
 description = "Loader & Launcher of Modular NodeJS Apps. Archive, 2013–2014; tools."
 template = "work.html"
-weight = 195
+weight = 196
 updated = "2014-01-03T14:43:03Z"
 
 [taxonomies]

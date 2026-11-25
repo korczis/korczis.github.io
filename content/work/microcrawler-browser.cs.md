@@ -3,7 +3,7 @@
 title = "microcrawler-browser"
 description = "microcrawler-browser: archivní projekt z kategorie Data a GIS, hlavní jazyk JavaScript, 2016; poslední commit 1. října 2016."
 template = "work.html"
-weight = 115
+weight = 116
 updated = "2016-10-01T23:23:52Z"
 
 [taxonomies]

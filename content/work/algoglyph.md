@@ -3,7 +3,7 @@
 title = "algoglyph"
 description = "Algorithms and physics drawn as glyphs. Active in the last 12 months; science and visualisation."
 template = "work.html"
-weight = 6
+weight = 7
 updated = "2026-11-22T07:04:24Z"
 
 [taxonomies]

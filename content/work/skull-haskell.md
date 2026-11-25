@@ -3,7 +3,7 @@
 title = "skull-haskell"
 description = "skull-haskell: an archived project in Learning and experiments, main language Haskell, 2014; last commit on 3 August 2014."
 template = "work.html"
-weight = 180
+weight = 181
 updated = "2014-08-03T04:08:31Z"
 
 [taxonomies]

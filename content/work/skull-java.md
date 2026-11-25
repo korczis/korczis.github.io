@@ -3,7 +3,7 @@
 title = "skull-java"
 description = "skull-java: an archived project in Learning and experiments, main language Java, 2014; last commit on 3 August 2014."
 template = "work.html"
-weight = 177
+weight = 178
 updated = "2014-08-03T05:35:58Z"
 
 [taxonomies]

@@ -3,7 +3,7 @@
 title = "apollo-crawler-extension"
 description = "apollo-crawler-extension: archivní projekt z kategorie Data a GIS, hlavní jazyk JavaScript, 2013–2016; poslední commit 20. září 2016."
 template = "work.html"
-weight = 118
+weight = 119
 updated = "2016-09-20T14:56:16Z"
 
 [taxonomies]

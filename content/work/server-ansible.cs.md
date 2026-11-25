@@ -3,7 +3,7 @@
 title = "server-ansible"
 description = "server-ansible: archivní projekt z kategorie Systémy a infrastruktura, hlavní jazyk Shell, 2019; poslední commit 29. ledna 2019."
 template = "work.html"
-weight = 70
+weight = 71
 updated = "2019-01-29T06:47:10Z"
 
 [taxonomies]

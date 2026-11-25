@@ -3,7 +3,7 @@
 title = "meili_rsex"
 description = "Minimal \"steps-to-reproduce\" project to demonstrate fucked-up integration of meilisearch (rust) with elixir using rustler"
 template = "work.html"
-weight = 36
+weight = 37
 updated = "2024-06-03T20:20:06Z"
 
 [taxonomies]

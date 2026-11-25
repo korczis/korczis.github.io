@@ -3,7 +3,7 @@
 title = "kpmap-ruby"
 description = "kpmap-ruby: archivní projekt z kategorie Data a GIS, 2017; poslední commit 2. února 2017."
 template = "work.html"
-weight = 103
+weight = 104
 updated = "2017-02-02T23:21:05Z"
 
 [taxonomies]

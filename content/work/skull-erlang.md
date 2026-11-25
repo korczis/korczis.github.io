@@ -3,7 +3,7 @@
 title = "skull-erlang"
 description = "skull-erlang: Programming learning materials, examples, sources . Archive, 2014; learning and experiments."
 template = "work.html"
-weight = 181
+weight = 182
 updated = "2014-08-03T04:07:59Z"
 
 [taxonomies]

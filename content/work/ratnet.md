@@ -3,7 +3,7 @@
 title = "ratnet"
 description = "Educational Purposes Botnet. Archive, 2014; security and osint."
 template = "work.html"
-weight = 174
+weight = 175
 updated = "2014-08-23T06:04:10Z"
 
 [taxonomies]

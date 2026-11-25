@@ -3,7 +3,7 @@
 title = "microcrawler-js"
 description = "microcrawler-js: archivní projekt z kategorie Data a GIS, hlavní jazyk JavaScript, 2016; poslední commit 3. září 2016."
 template = "work.html"
-weight = 119
+weight = 120
 updated = "2016-09-03T23:05:17Z"
 
 [taxonomies]

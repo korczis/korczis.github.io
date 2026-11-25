@@ -3,7 +3,7 @@
 title = "mapofffacts.com"
 description = "Map Of Facts. Archive, 2015; data and gis. An archived project by Tomas Korcak, 2015."
 template = "work.html"
-weight = 138
+weight = 139
 updated = "2015-11-14T22:01:23Z"
 
 [taxonomies]

@@ -3,7 +3,7 @@
 title = "happ"
 description = "happ: archivní projekt z kategorie Učení a experimenty, hlavní jazyk C++, 2021; poslední commit 3. června 2021."
 template = "work.html"
-weight = 50
+weight = 51
 updated = "2021-06-03T20:11:52Z"
 
 [taxonomies]

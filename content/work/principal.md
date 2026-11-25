@@ -3,7 +3,7 @@
 title = "principal"
 description = "The one who orchestrates all the folks in the circus ..."
 template = "work.html"
-weight = 184
+weight = 185
 updated = "2014-06-24T09:13:27Z"
 
 [taxonomies]

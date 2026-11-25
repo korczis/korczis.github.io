@@ -3,7 +3,7 @@
 title = "docker-dstk"
 description = "Dockerized http://www.datasciencetoolkit.org. Archive, 2015; systems and infrastructure."
 template = "work.html"
-weight = 152
+weight = 153
 updated = "2015-06-07T10:39:46Z"
 
 [taxonomies]

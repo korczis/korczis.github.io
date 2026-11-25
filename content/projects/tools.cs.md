@@ -4,18 +4,18 @@ title = "Nástroje"
 description = "Malé, ostré nástroje pro příkazovou řádku a indexy: převody dat, CSV do SQL, hledání v gistech."
 template = "category.html"
 weight = 11
-updated = "2026-11-23T18:17:39Z"
+updated = "2026-11-25T08:46:24Z"
 
 [taxonomies]
-tags = ["Nástroje", "Gists search", "json2csv", "csv2psql", "astronomists"]
+tags = ["Nástroje", "Gists search", "json2csv", "csv2psql", "prismatic-flipperzero"]
 
 [extra]
 category = "tools"
-og_title = "Nástroje: 63 repozitářů."
+og_title = "Nástroje: 64 repozitářů."
 og_image = "og/cs-category-tools.png"
 schema = "collection"
-terms = ["open-source", "javascript", "elixir", "ruby", "rust", "python", "shell", "typescript", "csharp", "cpp", "just", "openscad", "swift", "tex", "postgresql", "repository"]
-keywords = ["Nástroje", "Gists search", "json2csv", "csv2psql", "astronomists", "vomaste.cz", "the-psycho", "u-tygra", "tinder-nomics", "prism", "Tomáš Korčák"]
+terms = ["open-source", "javascript", "elixir", "ruby", "rust", "python", "shell", "typescript", "c", "csharp", "cpp", "just", "openscad", "swift", "tex", "postgresql", "repository"]
+keywords = ["Nástroje", "Gists search", "json2csv", "csv2psql", "prismatic-flipperzero", "astronomists", "vomaste.cz", "the-psycho", "u-tygra", "tinder-nomics", "Tomáš Korčák"]
 
 [[extra.viz]]
 kind = "constellation"
@@ -28,7 +28,7 @@ tone = "night"
 +++
 Malé, ostré nástroje pro příkazovou řádku a indexy: převody dat, CSV do SQL, hledání v gistech.
 
-Kategorie má 63 repozitářů; nejčastějšími jazyky jsou [JavaScript](@/glossary/javascript.cs.md), [Elixir](@/glossary/elixir.cs.md), [Ruby](@/glossary/ruby.cs.md), [Rust](@/glossary/rust.cs.md) a [Python](@/glossary/python.cs.md). Vybrané projekty: **Gists search**, **json2csv** a **csv2psql**.
+Kategorie má 64 repozitářů; nejčastějšími jazyky jsou [JavaScript](@/glossary/javascript.cs.md), [Elixir](@/glossary/elixir.cs.md), [Ruby](@/glossary/ruby.cs.md), [Rust](@/glossary/rust.cs.md) a [Python](@/glossary/python.cs.md). Vybrané projekty: **Gists search**, **json2csv** a **csv2psql**.
 
 Klíčový pojem: [Open source](@/glossary/open-source.cs.md).
 

@@ -3,7 +3,7 @@
 title = "babel-plugin-transform-graphql"
 description = "babel-plugin-transform-graphql: archivní projekt z kategorie Knihovny, hlavní jazyk JavaScript, 2016; poslední commit 15. dubna 2016."
 template = "work.html"
-weight = 133
+weight = 134
 updated = "2016-04-15T11:56:20Z"
 
 [taxonomies]

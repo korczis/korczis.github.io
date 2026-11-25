@@ -3,7 +3,7 @@
 title = "gooddata-proxy"
 description = "gooddata-proxy: archivní projekt z kategorie Data a GIS, hlavní jazyk JavaScript, 2016; poslední commit 17. května 2016."
 template = "work.html"
-weight = 129
+weight = 130
 updated = "2016-05-17T11:29:42Z"
 
 [taxonomies]

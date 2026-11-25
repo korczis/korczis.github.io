@@ -3,7 +3,7 @@
 title = "gooddata_connectors_metadata"
 description = "gooddata_connectors_metadata: archivní projekt z kategorie Data a GIS, hlavní jazyk Ruby, 2014–2015; poslední commit 21. ledna 2015."
 template = "work.html"
-weight = 163
+weight = 164
 updated = "2015-01-21T09:43:32Z"
 
 [taxonomies]

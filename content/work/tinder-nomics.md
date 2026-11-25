@@ -3,7 +3,7 @@
 title = "tinder-nomics"
 description = "tinder-nomics: a project in Tools, last commit on 4 February 2026."
 template = "work.html"
-weight = 17
+weight = 18
 updated = "2026-02-04T23:37:13Z"
 
 [taxonomies]

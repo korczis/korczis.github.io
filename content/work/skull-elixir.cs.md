@@ -3,7 +3,7 @@
 title = "skull-elixir"
 description = "skull-elixir: archivní projekt z kategorie Učení a experimenty, hlavní jazyk Elixir, 2016; poslední commit 5. prosince 2016."
 template = "work.html"
-weight = 107
+weight = 108
 updated = "2016-12-05T20:30:08Z"
 
 [taxonomies]

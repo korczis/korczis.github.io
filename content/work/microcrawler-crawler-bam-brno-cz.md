@@ -3,7 +3,7 @@
 title = "microcrawler-crawler-bam-brno-cz"
 description = "microcrawler-crawler-bam-brno-cz: an archived project in Data and GIS, main language JavaScript, 2017; last commit on 12 March 2017."
 template = "work.html"
-weight = 98
+weight = 99
 updated = "2017-03-12T19:04:40Z"
 
 [taxonomies]

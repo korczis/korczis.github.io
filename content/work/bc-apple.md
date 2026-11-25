@@ -3,7 +3,7 @@
 title = "bc-apple"
 description = "BlockCollider Apple Apps. Archive, 2018; tools. An archived project by Tomas Korcak, 2018."
 template = "work.html"
-weight = 74
+weight = 75
 updated = "2018-06-03T22:30:26Z"
 
 [taxonomies]

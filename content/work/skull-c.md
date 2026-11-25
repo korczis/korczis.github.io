@@ -3,7 +3,7 @@
 title = "skull-c"
 description = "skull-c: an archived project in Learning and experiments, main language C, 2014; last commit on 5 August 2014."
 template = "work.html"
-weight = 175
+weight = 176
 updated = "2014-08-05T02:31:03Z"
 
 [taxonomies]

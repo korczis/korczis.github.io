@@ -3,7 +3,7 @@
 title = "k8s-orbis-pictus"
 description = "Playground for learning docker, kubernetes, ansible and friends"
 template = "work.html"
-weight = 66
+weight = 67
 updated = "2019-03-14T14:08:30Z"
 
 [taxonomies]

@@ -3,7 +3,7 @@
 title = "gdc-dumpator"
 description = "gdc-dumpator: archivní projekt z kategorie Nástroje, hlavní jazyk Ruby, 2017; poslední commit 10. listopadu 2017."
 template = "work.html"
-weight = 82
+weight = 83
 updated = "2017-11-10T14:53:00Z"
 
 [taxonomies]

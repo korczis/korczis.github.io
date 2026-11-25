@@ -3,7 +3,7 @@
 title = "apollo-crawler-extension"
 description = "Apollo Platform Chrome Extension. Archive, 2013–2016; data and gis."
 template = "work.html"
-weight = 118
+weight = 119
 updated = "2016-09-20T14:56:16Z"
 
 [taxonomies]

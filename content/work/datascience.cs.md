@@ -3,7 +3,7 @@
 title = "datascience"
 description = "datascience: archivní projekt z kategorie Data a GIS, hlavní jazyk R, 2016; poslední commit 30. dubna 2016."
 template = "work.html"
-weight = 131
+weight = 132
 updated = "2016-04-30T16:01:50Z"
 
 [taxonomies]

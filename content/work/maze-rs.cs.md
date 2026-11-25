@@ -3,7 +3,7 @@
 title = "maze-rs"
 description = "Bludiště pro programátory, v Rustu. Archiv, 2016; věda a vizualizace."
 template = "work.html"
-weight = 110
+weight = 111
 updated = "2016-11-18T00:21:50Z"
 
 [taxonomies]

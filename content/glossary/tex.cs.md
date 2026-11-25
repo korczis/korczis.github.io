@@ -17,7 +17,7 @@ definition = "Sázecí jazyk pro dokumenty a matematiku; LaTeX je balík maker, 
 aliases = ["LaTeX"]
 reference = { title = "LaTeX project", url = "https://www.latex-project.org/about/" }
 pages = ["projects/tools.cs.md", "work/corvidae.cs.md"]
-related = ["elixir", "open-source", "repository", "shell", "commit", "cpp", "csharp", "geojson"]
+related = ["elixir", "open-source", "repository", "shell", "c", "commit", "cpp", "csharp"]
 og_title = "TeX: slovník"
 og_image = "og/cs-glossary-tex.png"
 keywords = ["TeX", "Programovací jazyk", "Slovník", "Tomáš Korčák"]

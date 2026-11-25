@@ -3,7 +3,7 @@
 title = "skull-emscripten"
 description = "skull-emscripten: archivní projekt z kategorie Učení a experimenty, hlavní jazyk C++, 2014; poslední commit 3. listopadu 2014."
 template = "work.html"
-weight = 166
+weight = 167
 updated = "2014-11-03T17:47:56Z"
 
 [taxonomies]

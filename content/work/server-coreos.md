@@ -3,7 +3,7 @@
 title = "server-coreos"
 description = "CoreOS based immutable server. Archive, 2019; systems and infrastructure."
 template = "work.html"
-weight = 67
+weight = 68
 updated = "2019-02-17T00:18:18Z"
 
 [taxonomies]

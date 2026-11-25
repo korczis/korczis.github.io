@@ -3,7 +3,7 @@
 title = "mapoffacts"
 description = "mapoffacts: archivní projekt z kategorie Nástroje, hlavní jazyk JavaScript, 2017; poslední commit 22. srpna 2017."
 template = "work.html"
-weight = 88
+weight = 89
 updated = "2017-08-22T22:23:19Z"
 
 [taxonomies]

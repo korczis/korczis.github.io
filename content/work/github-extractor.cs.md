@@ -3,7 +3,7 @@
 title = "github-extractor"
 description = "github-extractor: archivní projekt z kategorie Data a GIS, hlavní jazyk JavaScript, 2014; poslední commit 14. května 2014."
 template = "work.html"
-weight = 187
+weight = 188
 updated = "2014-05-14T06:48:18Z"
 
 [taxonomies]

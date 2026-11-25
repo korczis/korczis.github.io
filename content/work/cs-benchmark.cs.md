@@ -3,7 +3,7 @@
 title = "cs-benchmark"
 description = "cs-benchmark: archivní projekt z kategorie Učení a experimenty, hlavní jazyk C#, 2014; poslední commit 7. ledna 2014."
 template = "work.html"
-weight = 194
+weight = 195
 updated = "2014-01-07T10:43:26Z"
 
 [taxonomies]

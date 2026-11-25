@@ -3,7 +3,7 @@
 title = "microcrawler-crawler-news-ycombinator-com"
 description = "microcrawler-crawler-news-ycombinator-com: an archived project in Data and GIS, main language JavaScript, 2016; last commit on 3 September 2016."
 template = "work.html"
-weight = 121
+weight = 122
 updated = "2016-09-03T22:50:23Z"
 
 [taxonomies]

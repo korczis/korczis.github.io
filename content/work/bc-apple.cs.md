@@ -3,7 +3,7 @@
 title = "bc-apple"
 description = "bc-apple: archivní projekt z kategorie Nástroje, hlavní jazyk Swift, 2018; poslední commit 3. června 2018."
 template = "work.html"
-weight = 74
+weight = 75
 updated = "2018-06-03T22:30:26Z"
 
 [taxonomies]

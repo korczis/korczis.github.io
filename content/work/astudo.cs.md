@@ -3,7 +3,7 @@
 title = "astudo"
 description = "astudo: archivní projekt z kategorie Nástroje, hlavní jazyk Elixir, 2022; poslední commit 1. května 2022."
 template = "work.html"
-weight = 47
+weight = 48
 updated = "2022-05-01T16:05:33Z"
 
 [taxonomies]

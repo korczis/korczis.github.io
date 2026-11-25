@@ -3,7 +3,7 @@
 title = "reading"
 description = "Reading list. Archive, 2019; knowledge. An archived project by Tomas Korcak, 2019."
 template = "work.html"
-weight = 58
+weight = 59
 updated = "2019-10-16T20:25:14Z"
 
 [taxonomies]

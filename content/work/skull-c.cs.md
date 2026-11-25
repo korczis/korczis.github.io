@@ -3,7 +3,7 @@
 title = "skull-c"
 description = "skull-c: archivní projekt z kategorie Učení a experimenty, hlavní jazyk C, 2014; poslední commit 5. srpna 2014."
 template = "work.html"
-weight = 175
+weight = 176
 updated = "2014-08-05T02:31:03Z"
 
 [taxonomies]

@@ -3,7 +3,7 @@
 title = "nosqlight"
 description = "Document Oriented SQLite like Database. Archive, 2014; data and gis."
 template = "work.html"
-weight = 189
+weight = 190
 updated = "2014-04-24T19:56:58Z"
 
 [taxonomies]

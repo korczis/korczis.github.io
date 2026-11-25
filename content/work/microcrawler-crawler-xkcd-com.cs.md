@@ -3,7 +3,7 @@
 title = "microcrawler-crawler-xkcd-com"
 description = "microcrawler-crawler-xkcd-com: archivní projekt z kategorie Data a GIS, hlavní jazyk JavaScript, 2016–2017; poslední commit 15. ledna 2017."
 template = "work.html"
-weight = 105
+weight = 106
 updated = "2017-01-15T15:24:29Z"
 
 [taxonomies]

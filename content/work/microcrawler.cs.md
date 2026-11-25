@@ -3,7 +3,7 @@
 title = "microcrawler"
 description = "microcrawler: archivní projekt z kategorie Data a GIS, hlavní jazyk Shell, 2016–2017; poslední commit 12. března 2017."
 template = "work.html"
-weight = 97
+weight = 98
 updated = "2017-03-12T19:28:15Z"
 
 [taxonomies]

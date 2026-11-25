@@ -3,7 +3,7 @@
 title = "datasciencecoursera"
 description = "Data Science Coursera Coursera. Archive, 2015; data and gis."
 template = "work.html"
-weight = 154
+weight = 155
 updated = "2015-05-08T16:30:19Z"
 
 [taxonomies]

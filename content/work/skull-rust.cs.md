@@ -3,7 +3,7 @@
 title = "skull-rust"
 description = "skull-rust: archivní projekt z kategorie Učení a experimenty, hlavní jazyk Rust, 2016; poslední commit 24. května 2016."
 template = "work.html"
-weight = 128
+weight = 129
 updated = "2016-05-24T18:29:31Z"
 
 [taxonomies]

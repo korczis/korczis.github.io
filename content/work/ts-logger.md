@@ -3,7 +3,7 @@
 title = "ts-logger"
 description = "ts-logger: an archived project in Tools, main language TypeScript, 2019; last commit on 18 September 2019."
 template = "work.html"
-weight = 59
+weight = 60
 updated = "2019-09-18T14:19:04Z"
 
 [taxonomies]

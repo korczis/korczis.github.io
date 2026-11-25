@@ -3,7 +3,7 @@
 title = "aws-lambda-docker"
 description = "aws-lambda-docker: archivní projekt z kategorie Systémy a infrastruktura, hlavní jazyk Shell, 2018; poslední commit 4. prosince 2018."
 template = "work.html"
-weight = 72
+weight = 73
 updated = "2018-12-04T11:45:37Z"
 
 [taxonomies]

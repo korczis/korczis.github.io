@@ -3,7 +3,7 @@
 title = "malina"
 description = "malina: archivní projekt z kategorie Učení a experimenty, hlavní jazyk Shell, 2013; poslední commit 8. ledna 2013."
 template = "work.html"
-weight = 201
+weight = 202
 updated = "2013-01-08T20:06:33Z"
 
 [taxonomies]

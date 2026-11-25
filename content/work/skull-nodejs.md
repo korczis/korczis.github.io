@@ -3,7 +3,7 @@
 title = "skull-nodejs"
 description = "Node.js Skull. Archive, 2014; learning and experiments."
 template = "work.html"
-weight = 179
+weight = 180
 updated = "2014-08-03T04:09:35Z"
 
 [taxonomies]

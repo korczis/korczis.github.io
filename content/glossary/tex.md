@@ -17,7 +17,7 @@ definition = "A typesetting language for documents and mathematics; LaTeX is the
 aliases = ["LaTeX"]
 reference = { title = "LaTeX project", url = "https://www.latex-project.org/about/" }
 pages = ["projects/tools.md", "work/corvidae.md"]
-related = ["elixir", "open-source", "repository", "shell", "commit", "cpp", "csharp", "geojson"]
+related = ["elixir", "open-source", "repository", "shell", "c", "commit", "cpp", "csharp"]
 og_title = "TeX: glossary"
 og_image = "og/glossary-tex.png"
 keywords = ["TeX", "Programming language", "Glossary", "Tomas Korcak"]

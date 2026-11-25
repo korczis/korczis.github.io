@@ -3,7 +3,7 @@
 title = "the-scratch"
 description = "the-scratch: archivní projekt z kategorie Web, hlavní jazyk JavaScript, 2017–2018; poslední commit 10. března 2018."
 template = "work.html"
-weight = 78
+weight = 79
 updated = "2018-03-10T17:01:46Z"
 
 [taxonomies]

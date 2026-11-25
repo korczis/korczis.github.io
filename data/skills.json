@@ -924,10 +924,10 @@
       "name": "JavaScript",
       "kind": "language",
       "counts": {
-        "repos": 78,
-        "primary": 42,
-        "sites": 15,
-        "work": 78,
+        "repos": 79,
+        "primary": 43,
+        "sites": 16,
+        "work": 79,
         "engagements": 2
       },
       "first": 2013,
@@ -939,7 +939,7 @@
         },
         {
           "key": "tools",
-          "n": 19
+          "n": 20
         },
         {
           "key": "web",
@@ -980,6 +980,141 @@
       ],
       "repos": [
         {
+          "name": "oscilla",
+          "title": "Oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "work": true,
+          "slug": "oscilla",
+          "site": "https://korczis.github.io/oscilla/",
+          "category": "science",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
+          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
+          "created": "2026-10-01",
+          "pushed": "2026-11-25",
+          "primary": true,
+          "share": 96.9,
+          "via": [
+            "primary",
+            "code",
+            "stack",
+            "topic",
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Web Audio",
+            "Alpine.js",
+            "p5.js",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "esbuild",
+            "Playwright",
+            "axe-core",
+            "GitHub Pages"
+          ]
+        },
+        {
+          "name": "prismatic-flipperzero",
+          "title": "prismatic-flipperzero",
+          "url": "https://github.com/korczis/prismatic-flipperzero",
+          "work": true,
+          "slug": "prismatic-flipperzero",
+          "site": "https://korczis.github.io/prismatic-flipperzero/",
+          "category": "tools",
+          "description": "Prismatic for Flipper Zero: native FAP on its way to Prismatic Pocket, an offline evidence-first epistemic toolkit",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2026-11-25",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": 14,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "C",
+            "Python",
+            "JavaScript",
+            "Shell",
+            "HTML",
+            "Just"
+          ]
+        },
+        {
+          "name": "prismatic-majordomus",
+          "title": "Majordomus",
+          "url": "https://github.com/korczis/prismatic-majordomus",
+          "work": true,
+          "slug": "prismatic-majordomus",
+          "site": "https://korczis.github.io/prismatic-majordomus/",
+          "category": "ai",
+          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+          "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
+          "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
+          "created": "2026-09-03",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": 4.1,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "Rust",
+            "Shell",
+            "JavaScript",
+            "HTML",
+            "MCP",
+            "Zola",
+            "Claude Code",
+            "LLM",
+            "Mermaid",
+            "Git",
+            "YAML",
+            "GitHub Actions"
+          ]
+        },
+        {
+          "name": "sonic-playground",
+          "title": "Sonic Playground",
+          "url": "https://github.com/korczis/sonic-playground",
+          "work": true,
+          "slug": "sonic-playground",
+          "site": "https://korczis.github.io/sonic-playground/",
+          "category": "media",
+          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
+          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
+          "created": "2026-11-12",
+          "pushed": "2026-11-25",
+          "primary": true,
+          "share": 48.5,
+          "via": [
+            "primary",
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "Python",
+            "HTML",
+            "Shell",
+            "CSS",
+            "Elixir",
+            "Zola",
+            "TypeScript",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "JSON Schema",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "url": "https://github.com/korczis/korczis.github.io",
@@ -1017,112 +1152,6 @@
             "Node.js",
             "Playwright",
             "axe-core"
-          ]
-        },
-        {
-          "name": "oscilla",
-          "title": "Oscilla",
-          "url": "https://github.com/korczis/oscilla",
-          "work": true,
-          "slug": "oscilla",
-          "site": "https://korczis.github.io/oscilla/",
-          "category": "science",
-          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
-          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
-          "created": "2026-10-01",
-          "pushed": "2026-11-24",
-          "primary": true,
-          "share": 96.9,
-          "via": [
-            "primary",
-            "code",
-            "stack",
-            "topic",
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Web Audio",
-            "Alpine.js",
-            "p5.js",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "esbuild",
-            "Playwright",
-            "axe-core",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "prismatic-majordomus",
-          "title": "Majordomus",
-          "url": "https://github.com/korczis/prismatic-majordomus",
-          "work": true,
-          "slug": "prismatic-majordomus",
-          "site": "https://korczis.github.io/prismatic-majordomus/",
-          "category": "ai",
-          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
-          "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
-          "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
-          "created": "2026-09-03",
-          "pushed": "2026-11-24",
-          "primary": false,
-          "share": 4.1,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "Rust",
-            "Shell",
-            "JavaScript",
-            "HTML",
-            "MCP",
-            "Zola",
-            "Claude Code",
-            "LLM",
-            "Mermaid",
-            "Git",
-            "YAML",
-            "GitHub Actions"
-          ]
-        },
-        {
-          "name": "sonic-playground",
-          "title": "Sonic Playground",
-          "url": "https://github.com/korczis/sonic-playground",
-          "work": true,
-          "slug": "sonic-playground",
-          "site": "https://korczis.github.io/sonic-playground/",
-          "category": "media",
-          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
-          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
-          "created": "2026-11-12",
-          "pushed": "2026-11-24",
-          "primary": false,
-          "share": 39.5,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "Python",
-            "JavaScript",
-            "HTML",
-            "Shell",
-            "CSS",
-            "Elixir",
-            "Zola",
-            "TypeScript",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "JSON Schema",
-            "GitHub Pages"
           ]
         },
         {
@@ -3455,7 +3484,7 @@
           "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
           "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
           "created": "2026-11-12",
-          "pushed": "2026-11-24",
+          "pushed": "2026-11-25",
           "primary": false,
           "share": null,
           "via": [
@@ -3463,8 +3492,8 @@
           ],
           "supervised": true,
           "uses": [
-            "Python",
             "JavaScript",
+            "Python",
             "HTML",
             "Shell",
             "CSS",
@@ -4525,7 +4554,7 @@
           "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
           "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
           "created": "2026-11-12",
-          "pushed": "2026-11-24",
+          "pushed": "2026-11-25",
           "primary": false,
           "share": null,
           "via": [
@@ -4533,8 +4562,8 @@
           ],
           "supervised": true,
           "uses": [
-            "Python",
             "JavaScript",
+            "Python",
             "HTML",
             "Shell",
             "CSS",
@@ -6335,7 +6364,7 @@
           "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
           "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
           "created": "2026-09-03",
-          "pushed": "2026-11-24",
+          "pushed": "2026-11-25",
           "primary": true,
           "share": 60.8,
           "via": [
@@ -7379,10 +7408,10 @@
       "name": "Python",
       "kind": "language",
       "counts": {
-        "repos": 19,
-        "primary": 7,
-        "sites": 8,
-        "work": 19,
+        "repos": 20,
+        "primary": 6,
+        "sites": 9,
+        "work": 20,
         "engagements": 2
       },
       "first": 2014,
@@ -7393,11 +7422,11 @@
           "n": 5
         },
         {
-          "key": "media",
-          "n": 4
+          "key": "tools",
+          "n": 5
         },
         {
-          "key": "tools",
+          "key": "media",
           "n": 4
         },
         {
@@ -7419,6 +7448,34 @@
       ],
       "repos": [
         {
+          "name": "prismatic-flipperzero",
+          "title": "prismatic-flipperzero",
+          "url": "https://github.com/korczis/prismatic-flipperzero",
+          "work": true,
+          "slug": "prismatic-flipperzero",
+          "site": "https://korczis.github.io/prismatic-flipperzero/",
+          "category": "tools",
+          "description": "Prismatic for Flipper Zero: native FAP on its way to Prismatic Pocket, an offline evidence-first epistemic toolkit",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2026-11-25",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": 35.2,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "C",
+            "Python",
+            "JavaScript",
+            "Shell",
+            "HTML",
+            "Just"
+          ]
+        },
+        {
           "name": "sonic-playground",
           "title": "Sonic Playground",
           "url": "https://github.com/korczis/sonic-playground",
@@ -7430,18 +7487,17 @@
           "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
           "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
           "created": "2026-11-12",
-          "pushed": "2026-11-24",
-          "primary": true,
-          "share": 39.6,
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": 33,
           "via": [
-            "primary",
             "code",
             "files"
           ],
           "supervised": true,
           "uses": [
-            "Python",
             "JavaScript",
+            "Python",
             "HTML",
             "Shell",
             "CSS",
@@ -8075,10 +8131,10 @@
       "name": "Shell",
       "kind": "language",
       "counts": {
-        "repos": 42,
+        "repos": 43,
         "primary": 13,
-        "sites": 9,
-        "work": 42,
+        "sites": 10,
+        "work": 43,
         "engagements": 1
       },
       "first": 2013,
@@ -8086,7 +8142,7 @@
       "categories": [
         {
           "key": "tools",
-          "n": 11
+          "n": 12
         },
         {
           "key": "systems",
@@ -8127,6 +8183,34 @@
       ],
       "repos": [
         {
+          "name": "prismatic-flipperzero",
+          "title": "prismatic-flipperzero",
+          "url": "https://github.com/korczis/prismatic-flipperzero",
+          "work": true,
+          "slug": "prismatic-flipperzero",
+          "site": "https://korczis.github.io/prismatic-flipperzero/",
+          "category": "tools",
+          "description": "Prismatic for Flipper Zero: native FAP on its way to Prismatic Pocket, an offline evidence-first epistemic toolkit",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2026-11-25",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": 7.3,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "C",
+            "Python",
+            "JavaScript",
+            "Shell",
+            "HTML",
+            "Just"
+          ]
+        },
+        {
           "name": "prismatic-majordomus",
           "title": "Majordomus",
           "url": "https://github.com/korczis/prismatic-majordomus",
@@ -8138,7 +8222,7 @@
           "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
           "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
           "created": "2026-09-03",
-          "pushed": "2026-11-24",
+          "pushed": "2026-11-25",
           "primary": false,
           "share": 29.5,
           "via": [
@@ -8173,16 +8257,16 @@
           "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
           "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
           "created": "2026-11-12",
-          "pushed": "2026-11-24",
+          "pushed": "2026-11-25",
           "primary": false,
-          "share": 4.6,
+          "share": 4.8,
           "via": [
             "code"
           ],
           "supervised": true,
           "uses": [
-            "Python",
             "JavaScript",
+            "Python",
             "HTML",
             "Shell",
             "CSS",
@@ -9452,10 +9536,10 @@
       "name": "HTML",
       "kind": "language",
       "counts": {
-        "repos": 38,
+        "repos": 39,
         "primary": 5,
-        "sites": 16,
-        "work": 38,
+        "sites": 17,
+        "work": 39,
         "engagements": 2
       },
       "first": 2014,
@@ -9463,7 +9547,7 @@
       "categories": [
         {
           "key": "tools",
-          "n": 9
+          "n": 10
         },
         {
           "key": "data",
@@ -9499,6 +9583,136 @@
         }
       ],
       "repos": [
+        {
+          "name": "oscilla",
+          "title": "Oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "work": true,
+          "slug": "oscilla",
+          "site": "https://korczis.github.io/oscilla/",
+          "category": "science",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
+          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
+          "created": "2026-10-01",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": 1.9,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Web Audio",
+            "Alpine.js",
+            "p5.js",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "esbuild",
+            "Playwright",
+            "axe-core",
+            "GitHub Pages"
+          ]
+        },
+        {
+          "name": "prismatic-flipperzero",
+          "title": "prismatic-flipperzero",
+          "url": "https://github.com/korczis/prismatic-flipperzero",
+          "work": true,
+          "slug": "prismatic-flipperzero",
+          "site": "https://korczis.github.io/prismatic-flipperzero/",
+          "category": "tools",
+          "description": "Prismatic for Flipper Zero: native FAP on its way to Prismatic Pocket, an offline evidence-first epistemic toolkit",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2026-11-25",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": 2.1,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "C",
+            "Python",
+            "JavaScript",
+            "Shell",
+            "HTML",
+            "Just"
+          ]
+        },
+        {
+          "name": "prismatic-majordomus",
+          "title": "Majordomus",
+          "url": "https://github.com/korczis/prismatic-majordomus",
+          "work": true,
+          "slug": "prismatic-majordomus",
+          "site": "https://korczis.github.io/prismatic-majordomus/",
+          "category": "ai",
+          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+          "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
+          "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
+          "created": "2026-09-03",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": 3.8,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "Rust",
+            "Shell",
+            "JavaScript",
+            "HTML",
+            "MCP",
+            "Zola",
+            "Claude Code",
+            "LLM",
+            "Mermaid",
+            "Git",
+            "YAML",
+            "GitHub Actions"
+          ]
+        },
+        {
+          "name": "sonic-playground",
+          "title": "Sonic Playground",
+          "url": "https://github.com/korczis/sonic-playground",
+          "work": true,
+          "slug": "sonic-playground",
+          "site": "https://korczis.github.io/sonic-playground/",
+          "category": "media",
+          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
+          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
+          "created": "2026-11-12",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": 12.6,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "Python",
+            "HTML",
+            "Shell",
+            "CSS",
+            "Elixir",
+            "Zola",
+            "TypeScript",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "JSON Schema",
+            "GitHub Pages"
+          ]
+        },
         {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
@@ -9536,108 +9750,6 @@
             "Node.js",
             "Playwright",
             "axe-core"
-          ]
-        },
-        {
-          "name": "oscilla",
-          "title": "Oscilla",
-          "url": "https://github.com/korczis/oscilla",
-          "work": true,
-          "slug": "oscilla",
-          "site": "https://korczis.github.io/oscilla/",
-          "category": "science",
-          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
-          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
-          "created": "2026-10-01",
-          "pushed": "2026-11-24",
-          "primary": false,
-          "share": 1.9,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Web Audio",
-            "Alpine.js",
-            "p5.js",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "esbuild",
-            "Playwright",
-            "axe-core",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "prismatic-majordomus",
-          "title": "Majordomus",
-          "url": "https://github.com/korczis/prismatic-majordomus",
-          "work": true,
-          "slug": "prismatic-majordomus",
-          "site": "https://korczis.github.io/prismatic-majordomus/",
-          "category": "ai",
-          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
-          "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
-          "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
-          "created": "2026-09-03",
-          "pushed": "2026-11-24",
-          "primary": false,
-          "share": 3.8,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "Rust",
-            "Shell",
-            "JavaScript",
-            "HTML",
-            "MCP",
-            "Zola",
-            "Claude Code",
-            "LLM",
-            "Mermaid",
-            "Git",
-            "YAML",
-            "GitHub Actions"
-          ]
-        },
-        {
-          "name": "sonic-playground",
-          "title": "Sonic Playground",
-          "url": "https://github.com/korczis/sonic-playground",
-          "work": true,
-          "slug": "sonic-playground",
-          "site": "https://korczis.github.io/sonic-playground/",
-          "category": "media",
-          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
-          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
-          "created": "2026-11-12",
-          "pushed": "2026-11-24",
-          "primary": false,
-          "share": 15.1,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "Python",
-            "JavaScript",
-            "HTML",
-            "Shell",
-            "CSS",
-            "Elixir",
-            "Zola",
-            "TypeScript",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "JSON Schema",
-            "GitHub Pages"
           ]
         },
         {
@@ -10770,6 +10882,74 @@
       ],
       "repos": [
         {
+          "name": "oscilla",
+          "title": "Oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "work": true,
+          "slug": "oscilla",
+          "site": "https://korczis.github.io/oscilla/",
+          "category": "science",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
+          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
+          "created": "2026-10-01",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": 1.1,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Web Audio",
+            "Alpine.js",
+            "p5.js",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "esbuild",
+            "Playwright",
+            "axe-core",
+            "GitHub Pages"
+          ]
+        },
+        {
+          "name": "sonic-playground",
+          "title": "Sonic Playground",
+          "url": "https://github.com/korczis/sonic-playground",
+          "work": true,
+          "slug": "sonic-playground",
+          "site": "https://korczis.github.io/sonic-playground/",
+          "category": "media",
+          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
+          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
+          "created": "2026-11-12",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": 1,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "Python",
+            "HTML",
+            "Shell",
+            "CSS",
+            "Elixir",
+            "Zola",
+            "TypeScript",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "JSON Schema",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "url": "https://github.com/korczis/korczis.github.io",
@@ -10806,74 +10986,6 @@
             "Node.js",
             "Playwright",
             "axe-core"
-          ]
-        },
-        {
-          "name": "oscilla",
-          "title": "Oscilla",
-          "url": "https://github.com/korczis/oscilla",
-          "work": true,
-          "slug": "oscilla",
-          "site": "https://korczis.github.io/oscilla/",
-          "category": "science",
-          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
-          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
-          "created": "2026-10-01",
-          "pushed": "2026-11-24",
-          "primary": false,
-          "share": 1.1,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Web Audio",
-            "Alpine.js",
-            "p5.js",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "esbuild",
-            "Playwright",
-            "axe-core",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "sonic-playground",
-          "title": "Sonic Playground",
-          "url": "https://github.com/korczis/sonic-playground",
-          "work": true,
-          "slug": "sonic-playground",
-          "site": "https://korczis.github.io/sonic-playground/",
-          "category": "media",
-          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
-          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
-          "created": "2026-11-12",
-          "pushed": "2026-11-24",
-          "primary": false,
-          "share": 1.2,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "Python",
-            "JavaScript",
-            "HTML",
-            "Shell",
-            "CSS",
-            "Elixir",
-            "Zola",
-            "TypeScript",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "JSON Schema",
-            "GitHub Pages"
           ]
         },
         {
@@ -11639,14 +11751,14 @@
       "name": "C",
       "kind": "language",
       "counts": {
-        "repos": 7,
-        "primary": 1,
-        "sites": 0,
-        "work": 7,
+        "repos": 8,
+        "primary": 2,
+        "sites": 1,
+        "work": 8,
         "engagements": 0
       },
       "first": 2014,
-      "last": 2021,
+      "last": 2026,
       "categories": [
         {
           "key": "learning",
@@ -11657,19 +11769,48 @@
           "n": 2
         },
         {
+          "key": "tools",
+          "n": 2
+        },
+        {
           "key": "data",
           "n": 1
         },
         {
           "key": "science",
           "n": 1
-        },
-        {
-          "key": "tools",
-          "n": 1
         }
       ],
       "repos": [
+        {
+          "name": "prismatic-flipperzero",
+          "title": "prismatic-flipperzero",
+          "url": "https://github.com/korczis/prismatic-flipperzero",
+          "work": true,
+          "slug": "prismatic-flipperzero",
+          "site": "https://korczis.github.io/prismatic-flipperzero/",
+          "category": "tools",
+          "description": "Prismatic for Flipper Zero: native FAP on its way to Prismatic Pocket, an offline evidence-first epistemic toolkit",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2026-11-25",
+          "pushed": "2026-11-25",
+          "primary": true,
+          "share": 40.3,
+          "via": [
+            "primary",
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "C",
+            "Python",
+            "JavaScript",
+            "Shell",
+            "HTML",
+            "Just"
+          ]
+        },
         {
           "name": "happ",
           "title": "happ",
@@ -13897,6 +14038,74 @@
       ],
       "repos": [
         {
+          "name": "oscilla",
+          "title": "Oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "work": true,
+          "slug": "oscilla",
+          "site": "https://korczis.github.io/oscilla/",
+          "category": "science",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
+          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
+          "created": "2026-10-01",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Web Audio",
+            "Alpine.js",
+            "p5.js",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "esbuild",
+            "Playwright",
+            "axe-core",
+            "GitHub Pages"
+          ]
+        },
+        {
+          "name": "sonic-playground",
+          "title": "Sonic Playground",
+          "url": "https://github.com/korczis/sonic-playground",
+          "work": true,
+          "slug": "sonic-playground",
+          "site": "https://korczis.github.io/sonic-playground/",
+          "category": "media",
+          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
+          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
+          "created": "2026-11-12",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "Python",
+            "HTML",
+            "Shell",
+            "CSS",
+            "Elixir",
+            "Zola",
+            "TypeScript",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "JSON Schema",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "url": "https://github.com/korczis/korczis.github.io",
@@ -13934,74 +14143,6 @@
             "Node.js",
             "Playwright",
             "axe-core"
-          ]
-        },
-        {
-          "name": "oscilla",
-          "title": "Oscilla",
-          "url": "https://github.com/korczis/oscilla",
-          "work": true,
-          "slug": "oscilla",
-          "site": "https://korczis.github.io/oscilla/",
-          "category": "science",
-          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
-          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
-          "created": "2026-10-01",
-          "pushed": "2026-11-24",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Web Audio",
-            "Alpine.js",
-            "p5.js",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "esbuild",
-            "Playwright",
-            "axe-core",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "sonic-playground",
-          "title": "Sonic Playground",
-          "url": "https://github.com/korczis/sonic-playground",
-          "work": true,
-          "slug": "sonic-playground",
-          "site": "https://korczis.github.io/sonic-playground/",
-          "category": "media",
-          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
-          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
-          "created": "2026-11-12",
-          "pushed": "2026-11-24",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "Python",
-            "JavaScript",
-            "HTML",
-            "Shell",
-            "CSS",
-            "Elixir",
-            "Zola",
-            "TypeScript",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "JSON Schema",
-            "GitHub Pages"
           ]
         },
         {
@@ -14347,6 +14488,74 @@
       ],
       "repos": [
         {
+          "name": "oscilla",
+          "title": "Oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "work": true,
+          "slug": "oscilla",
+          "site": "https://korczis.github.io/oscilla/",
+          "category": "science",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
+          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
+          "created": "2026-10-01",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Web Audio",
+            "Alpine.js",
+            "p5.js",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "esbuild",
+            "Playwright",
+            "axe-core",
+            "GitHub Pages"
+          ]
+        },
+        {
+          "name": "sonic-playground",
+          "title": "Sonic Playground",
+          "url": "https://github.com/korczis/sonic-playground",
+          "work": true,
+          "slug": "sonic-playground",
+          "site": "https://korczis.github.io/sonic-playground/",
+          "category": "media",
+          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
+          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
+          "created": "2026-11-12",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "Python",
+            "HTML",
+            "Shell",
+            "CSS",
+            "Elixir",
+            "Zola",
+            "TypeScript",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "JSON Schema",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "url": "https://github.com/korczis/korczis.github.io",
@@ -14384,74 +14593,6 @@
             "Node.js",
             "Playwright",
             "axe-core"
-          ]
-        },
-        {
-          "name": "oscilla",
-          "title": "Oscilla",
-          "url": "https://github.com/korczis/oscilla",
-          "work": true,
-          "slug": "oscilla",
-          "site": "https://korczis.github.io/oscilla/",
-          "category": "science",
-          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
-          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
-          "created": "2026-10-01",
-          "pushed": "2026-11-24",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Web Audio",
-            "Alpine.js",
-            "p5.js",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "esbuild",
-            "Playwright",
-            "axe-core",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "sonic-playground",
-          "title": "Sonic Playground",
-          "url": "https://github.com/korczis/sonic-playground",
-          "work": true,
-          "slug": "sonic-playground",
-          "site": "https://korczis.github.io/sonic-playground/",
-          "category": "media",
-          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
-          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
-          "created": "2026-11-12",
-          "pushed": "2026-11-24",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "Python",
-            "JavaScript",
-            "HTML",
-            "Shell",
-            "CSS",
-            "Elixir",
-            "Zola",
-            "TypeScript",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "JSON Schema",
-            "GitHub Pages"
           ]
         },
         {
@@ -14959,6 +15100,40 @@
       ],
       "repos": [
         {
+          "name": "oscilla",
+          "title": "Oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "work": true,
+          "slug": "oscilla",
+          "site": "https://korczis.github.io/oscilla/",
+          "category": "science",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
+          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
+          "created": "2026-10-01",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Web Audio",
+            "Alpine.js",
+            "p5.js",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "esbuild",
+            "Playwright",
+            "axe-core",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "url": "https://github.com/korczis/korczis.github.io",
@@ -14996,40 +15171,6 @@
             "Node.js",
             "Playwright",
             "axe-core"
-          ]
-        },
-        {
-          "name": "oscilla",
-          "title": "Oscilla",
-          "url": "https://github.com/korczis/oscilla",
-          "work": true,
-          "slug": "oscilla",
-          "site": "https://korczis.github.io/oscilla/",
-          "category": "science",
-          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
-          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
-          "created": "2026-10-01",
-          "pushed": "2026-11-24",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Web Audio",
-            "Alpine.js",
-            "p5.js",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "esbuild",
-            "Playwright",
-            "axe-core",
-            "GitHub Pages"
           ]
         },
         {
@@ -15663,6 +15804,40 @@
       ],
       "repos": [
         {
+          "name": "oscilla",
+          "title": "Oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "work": true,
+          "slug": "oscilla",
+          "site": "https://korczis.github.io/oscilla/",
+          "category": "science",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
+          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
+          "created": "2026-10-01",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Web Audio",
+            "Alpine.js",
+            "p5.js",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "esbuild",
+            "Playwright",
+            "axe-core",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "url": "https://github.com/korczis/korczis.github.io",
@@ -15700,40 +15875,6 @@
             "Node.js",
             "Playwright",
             "axe-core"
-          ]
-        },
-        {
-          "name": "oscilla",
-          "title": "Oscilla",
-          "url": "https://github.com/korczis/oscilla",
-          "work": true,
-          "slug": "oscilla",
-          "site": "https://korczis.github.io/oscilla/",
-          "category": "science",
-          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
-          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
-          "created": "2026-10-01",
-          "pushed": "2026-11-24",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Web Audio",
-            "Alpine.js",
-            "p5.js",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "esbuild",
-            "Playwright",
-            "axe-core",
-            "GitHub Pages"
           ]
         },
         {
@@ -15887,6 +16028,74 @@
       ],
       "repos": [
         {
+          "name": "prismatic-majordomus",
+          "title": "Majordomus",
+          "url": "https://github.com/korczis/prismatic-majordomus",
+          "work": true,
+          "slug": "prismatic-majordomus",
+          "site": "https://korczis.github.io/prismatic-majordomus/",
+          "category": "ai",
+          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+          "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
+          "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
+          "created": "2026-09-03",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": null,
+          "via": [
+            "stack"
+          ],
+          "supervised": true,
+          "uses": [
+            "Rust",
+            "Shell",
+            "JavaScript",
+            "HTML",
+            "MCP",
+            "Zola",
+            "Claude Code",
+            "LLM",
+            "Mermaid",
+            "Git",
+            "YAML",
+            "GitHub Actions"
+          ]
+        },
+        {
+          "name": "sonic-playground",
+          "title": "Sonic Playground",
+          "url": "https://github.com/korczis/sonic-playground",
+          "work": true,
+          "slug": "sonic-playground",
+          "site": "https://korczis.github.io/sonic-playground/",
+          "category": "media",
+          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
+          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
+          "created": "2026-11-12",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "Python",
+            "HTML",
+            "Shell",
+            "CSS",
+            "Elixir",
+            "Zola",
+            "TypeScript",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "JSON Schema",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "url": "https://github.com/korczis/korczis.github.io",
@@ -15924,74 +16133,6 @@
             "Node.js",
             "Playwright",
             "axe-core"
-          ]
-        },
-        {
-          "name": "prismatic-majordomus",
-          "title": "Majordomus",
-          "url": "https://github.com/korczis/prismatic-majordomus",
-          "work": true,
-          "slug": "prismatic-majordomus",
-          "site": "https://korczis.github.io/prismatic-majordomus/",
-          "category": "ai",
-          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
-          "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
-          "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
-          "created": "2026-09-03",
-          "pushed": "2026-11-24",
-          "primary": false,
-          "share": null,
-          "via": [
-            "stack"
-          ],
-          "supervised": true,
-          "uses": [
-            "Rust",
-            "Shell",
-            "JavaScript",
-            "HTML",
-            "MCP",
-            "Zola",
-            "Claude Code",
-            "LLM",
-            "Mermaid",
-            "Git",
-            "YAML",
-            "GitHub Actions"
-          ]
-        },
-        {
-          "name": "sonic-playground",
-          "title": "Sonic Playground",
-          "url": "https://github.com/korczis/sonic-playground",
-          "work": true,
-          "slug": "sonic-playground",
-          "site": "https://korczis.github.io/sonic-playground/",
-          "category": "media",
-          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
-          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
-          "created": "2026-11-12",
-          "pushed": "2026-11-24",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "Python",
-            "JavaScript",
-            "HTML",
-            "Shell",
-            "CSS",
-            "Elixir",
-            "Zola",
-            "TypeScript",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "JSON Schema",
-            "GitHub Pages"
           ]
         },
         {
@@ -16526,7 +16667,7 @@
           "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
           "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
           "created": "2026-09-03",
-          "pushed": "2026-11-24",
+          "pushed": "2026-11-25",
           "primary": false,
           "share": null,
           "via": [
@@ -17549,7 +17690,7 @@
           "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
           "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
           "created": "2026-10-01",
-          "pushed": "2026-11-24",
+          "pushed": "2026-11-25",
           "primary": false,
           "share": null,
           "via": [
@@ -17620,6 +17761,74 @@
       ],
       "repos": [
         {
+          "name": "oscilla",
+          "title": "Oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "work": true,
+          "slug": "oscilla",
+          "site": "https://korczis.github.io/oscilla/",
+          "category": "science",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
+          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
+          "created": "2026-10-01",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Web Audio",
+            "Alpine.js",
+            "p5.js",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "esbuild",
+            "Playwright",
+            "axe-core",
+            "GitHub Pages"
+          ]
+        },
+        {
+          "name": "sonic-playground",
+          "title": "Sonic Playground",
+          "url": "https://github.com/korczis/sonic-playground",
+          "work": true,
+          "slug": "sonic-playground",
+          "site": "https://korczis.github.io/sonic-playground/",
+          "category": "media",
+          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
+          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
+          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
+          "created": "2026-11-12",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "Python",
+            "HTML",
+            "Shell",
+            "CSS",
+            "Elixir",
+            "Zola",
+            "TypeScript",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "JSON Schema",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "url": "https://github.com/korczis/korczis.github.io",
@@ -17657,74 +17866,6 @@
             "Node.js",
             "Playwright",
             "axe-core"
-          ]
-        },
-        {
-          "name": "oscilla",
-          "title": "Oscilla",
-          "url": "https://github.com/korczis/oscilla",
-          "work": true,
-          "slug": "oscilla",
-          "site": "https://korczis.github.io/oscilla/",
-          "category": "science",
-          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
-          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
-          "created": "2026-10-01",
-          "pushed": "2026-11-24",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Web Audio",
-            "Alpine.js",
-            "p5.js",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "esbuild",
-            "Playwright",
-            "axe-core",
-            "GitHub Pages"
-          ]
-        },
-        {
-          "name": "sonic-playground",
-          "title": "Sonic Playground",
-          "url": "https://github.com/korczis/sonic-playground",
-          "work": true,
-          "slug": "sonic-playground",
-          "site": "https://korczis.github.io/sonic-playground/",
-          "category": "media",
-          "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
-          "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
-          "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
-          "created": "2026-11-12",
-          "pushed": "2026-11-24",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "Python",
-            "JavaScript",
-            "HTML",
-            "Shell",
-            "CSS",
-            "Elixir",
-            "Zola",
-            "TypeScript",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "JSON Schema",
-            "GitHub Pages"
           ]
         },
         {
@@ -18670,10 +18811,10 @@
       "name": "Just",
       "kind": "language",
       "counts": {
-        "repos": 5,
+        "repos": 6,
         "primary": 1,
-        "sites": 4,
-        "work": 5,
+        "sites": 5,
+        "work": 6,
         "engagements": 0
       },
       "first": 2025,
@@ -18681,7 +18822,7 @@
       "categories": [
         {
           "key": "tools",
-          "n": 3
+          "n": 4
         },
         {
           "key": "data",
@@ -18693,6 +18834,34 @@
         }
       ],
       "repos": [
+        {
+          "name": "prismatic-flipperzero",
+          "title": "prismatic-flipperzero",
+          "url": "https://github.com/korczis/prismatic-flipperzero",
+          "work": true,
+          "slug": "prismatic-flipperzero",
+          "site": "https://korczis.github.io/prismatic-flipperzero/",
+          "category": "tools",
+          "description": "Prismatic for Flipper Zero: native FAP on its way to Prismatic Pocket, an offline evidence-first epistemic toolkit",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2026-11-25",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": 1,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "C",
+            "Python",
+            "JavaScript",
+            "Shell",
+            "HTML",
+            "Just"
+          ]
+        },
         {
           "name": "data-atlas",
           "title": "Data Atlas",
@@ -19509,7 +19678,7 @@
           "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
           "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
           "created": "2026-09-03",
-          "pushed": "2026-11-24",
+          "pushed": "2026-11-25",
           "primary": false,
           "share": null,
           "via": [
@@ -19966,6 +20135,40 @@
       ],
       "repos": [
         {
+          "name": "oscilla",
+          "title": "Oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "work": true,
+          "slug": "oscilla",
+          "site": "https://korczis.github.io/oscilla/",
+          "category": "science",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
+          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
+          "created": "2026-10-01",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Web Audio",
+            "Alpine.js",
+            "p5.js",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "esbuild",
+            "Playwright",
+            "axe-core",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "url": "https://github.com/korczis/korczis.github.io",
@@ -20002,40 +20205,6 @@
             "Node.js",
             "Playwright",
             "axe-core"
-          ]
-        },
-        {
-          "name": "oscilla",
-          "title": "Oscilla",
-          "url": "https://github.com/korczis/oscilla",
-          "work": true,
-          "slug": "oscilla",
-          "site": "https://korczis.github.io/oscilla/",
-          "category": "science",
-          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
-          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
-          "created": "2026-10-01",
-          "pushed": "2026-11-24",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Web Audio",
-            "Alpine.js",
-            "p5.js",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "esbuild",
-            "Playwright",
-            "axe-core",
-            "GitHub Pages"
           ]
         },
         {
@@ -20404,7 +20573,7 @@
           "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
           "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
           "created": "2026-09-03",
-          "pushed": "2026-11-24",
+          "pushed": "2026-11-25",
           "primary": false,
           "share": null,
           "via": [
@@ -31729,7 +31898,7 @@
           "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
           "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
           "created": "2026-09-03",
-          "pushed": "2026-11-24",
+          "pushed": "2026-11-25",
           "primary": false,
           "share": null,
           "via": [
@@ -32497,7 +32666,7 @@
           "summary": "A hand-picked music blog built with Phoenix and Elixir on the Kita theme.",
           "summary_cs": "Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.",
           "created": "2026-11-12",
-          "pushed": "2026-11-24",
+          "pushed": "2026-11-25",
           "primary": false,
           "share": null,
           "via": [
@@ -32505,8 +32674,8 @@
           ],
           "supervised": true,
           "uses": [
-            "Python",
             "JavaScript",
+            "Python",
             "HTML",
             "Shell",
             "CSS",
@@ -32843,6 +33012,40 @@
       ],
       "repos": [
         {
+          "name": "oscilla",
+          "title": "Oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "work": true,
+          "slug": "oscilla",
+          "site": "https://korczis.github.io/oscilla/",
+          "category": "science",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
+          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
+          "created": "2026-10-01",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Web Audio",
+            "Alpine.js",
+            "p5.js",
+            "Tailwind CSS",
+            "Flowbite Pro",
+            "esbuild",
+            "Playwright",
+            "axe-core",
+            "GitHub Pages"
+          ]
+        },
+        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "url": "https://github.com/korczis/korczis.github.io",
@@ -32879,40 +33082,6 @@
             "Node.js",
             "Playwright",
             "axe-core"
-          ]
-        },
-        {
-          "name": "oscilla",
-          "title": "Oscilla",
-          "url": "https://github.com/korczis/oscilla",
-          "work": true,
-          "slug": "oscilla",
-          "site": "https://korczis.github.io/oscilla/",
-          "category": "science",
-          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
-          "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
-          "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
-          "created": "2026-10-01",
-          "pushed": "2026-11-24",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Web Audio",
-            "Alpine.js",
-            "p5.js",
-            "Tailwind CSS",
-            "Flowbite Pro",
-            "esbuild",
-            "Playwright",
-            "axe-core",
-            "GitHub Pages"
           ]
         },
         {
@@ -36724,7 +36893,7 @@
           "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
           "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
           "created": "2026-09-03",
-          "pushed": "2026-11-24",
+          "pushed": "2026-11-25",
           "primary": false,
           "share": null,
           "via": [
@@ -38140,7 +38309,7 @@
           "summary": "Generate, measure and reproduce sound experiments, and know how far each result can be trusted. Every readout carries its uncertainty.",
           "summary_cs": "Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.",
           "created": "2026-10-01",
-          "pushed": "2026-11-24",
+          "pushed": "2026-11-25",
           "primary": false,
           "share": null,
           "via": [
@@ -41653,7 +41822,7 @@
           "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
           "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
           "created": "2026-09-03",
-          "pushed": "2026-11-24",
+          "pushed": "2026-11-25",
           "primary": false,
           "share": null,
           "via": [
@@ -41824,7 +41993,7 @@
           "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
           "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
           "created": "2026-09-03",
-          "pushed": "2026-11-24",
+          "pushed": "2026-11-25",
           "primary": false,
           "share": null,
           "via": [

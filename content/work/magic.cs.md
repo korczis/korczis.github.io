@@ -3,7 +3,7 @@
 title = "magic"
 description = "magic: archivní projekt z kategorie Bezpečnost a OSINT, hlavní jazyk Rust, 2017; poslední commit 8. července 2017."
 template = "work.html"
-weight = 90
+weight = 91
 updated = "2017-07-08T19:01:38Z"
 
 [taxonomies]

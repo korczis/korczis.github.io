@@ -3,7 +3,7 @@
 title = "skull-emscripten"
 description = "Emscripten Skull. Archive, 2014; learning and experiments."
 template = "work.html"
-weight = 166
+weight = 167
 updated = "2014-11-03T17:47:56Z"
 
 [taxonomies]

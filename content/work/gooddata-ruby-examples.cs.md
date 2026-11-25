@@ -3,7 +3,7 @@
 title = "gooddata-ruby-examples"
 description = "gooddata-ruby-examples: archivní projekt z kategorie Data a GIS, hlavní jazyk HTML, 2014–2015; poslední commit 30. července 2015."
 template = "work.html"
-weight = 147
+weight = 148
 updated = "2015-07-30T11:35:40Z"
 
 [taxonomies]

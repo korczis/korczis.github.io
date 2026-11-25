@@ -3,7 +3,7 @@
 title = "ctu-cz"
 description = "Otevrena data ceskeho telekomunikacniho uradu. Archive, 2020; data and gis."
 template = "work.html"
-weight = 53
+weight = 54
 updated = "2020-05-15T09:52:45Z"
 
 [taxonomies]

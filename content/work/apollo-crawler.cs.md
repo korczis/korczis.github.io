@@ -3,7 +3,7 @@
 title = "apollo-crawler"
 description = "apollo-crawler: archivní projekt z kategorie Data a GIS, hlavní jazyk Ruby, 2014; poslední commit 30. srpna 2014."
 template = "work.html"
-weight = 169
+weight = 170
 updated = "2014-08-30T22:29:45Z"
 
 [taxonomies]

@@ -3,7 +3,7 @@
 title = "server-ansible"
 description = "Server Ansible. Archive, 2019; systems and infrastructure."
 template = "work.html"
-weight = 70
+weight = 71
 updated = "2019-01-29T06:47:10Z"
 
 [taxonomies]

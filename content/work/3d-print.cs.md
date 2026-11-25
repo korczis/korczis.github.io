@@ -3,7 +3,7 @@
 title = "3d-print"
 description = "3d-print: archivní projekt z kategorie Nástroje, hlavní jazyk OpenSCAD, 2021; poslední commit 4. března 2021."
 template = "work.html"
-weight = 52
+weight = 53
 updated = "2021-03-04T02:46:59Z"
 
 [taxonomies]

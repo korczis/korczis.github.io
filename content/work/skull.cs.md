@@ -3,7 +3,7 @@
 title = "skull"
 description = "skull: archivní projekt z kategorie Učení a experimenty, hlavní jazyk Shell, 2014; poslední commit 3. srpna 2014."
 template = "work.html"
-weight = 176
+weight = 177
 updated = "2014-08-03T22:00:13Z"
 
 [taxonomies]

@@ -3,7 +3,7 @@
 title = "MinervaEye"
 description = "MinervaEye: archivní projekt z kategorie Znalosti, hlavní jazyk Swift, 2020–2021; poslední commit 8. května 2021."
 template = "work.html"
-weight = 51
+weight = 52
 updated = "2021-05-08T22:40:45Z"
 
 [taxonomies]

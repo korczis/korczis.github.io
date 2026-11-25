@@ -3,7 +3,7 @@
 title = "zeman-ucet"
 description = "zeman-ucet: archivní projekt z kategorie Nástroje, hlavní jazyk Ruby, 2017; poslední commit 7. října 2017."
 template = "work.html"
-weight = 84
+weight = 85
 updated = "2017-10-07T19:59:48Z"
 
 [taxonomies]

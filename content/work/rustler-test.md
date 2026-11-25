@@ -3,7 +3,7 @@
 title = "rustler-test"
 description = "Working Example of Rustler - Safe Rust bridge for creating Erlang NIF functions"
 template = "work.html"
-weight = 85
+weight = 86
 updated = "2017-09-19T19:26:41Z"
 
 [taxonomies]

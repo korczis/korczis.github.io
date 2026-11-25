@@ -3,7 +3,7 @@
 title = "talkie"
 description = "talkie: archivní projekt z kategorie Média a umění, 2015; poslední commit 12. března 2015."
 template = "work.html"
-weight = 156
+weight = 157
 updated = "2015-03-12T15:11:41Z"
 
 [taxonomies]

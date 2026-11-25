@@ -4,18 +4,18 @@ title = "Tools"
 description = "Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist search."
 template = "category.html"
 weight = 11
-updated = "2026-11-23T18:17:39Z"
+updated = "2026-11-25T08:46:24Z"
 
 [taxonomies]
-tags = ["Tools", "Gists search", "json2csv", "csv2psql", "astronomists"]
+tags = ["Tools", "Gists search", "json2csv", "csv2psql", "prismatic-flipperzero"]
 
 [extra]
 category = "tools"
-og_title = "Tools: 63 repositories."
+og_title = "Tools: 64 repositories."
 og_image = "og/category-tools.png"
 schema = "collection"
-terms = ["open-source", "javascript", "elixir", "ruby", "rust", "python", "shell", "typescript", "csharp", "cpp", "just", "openscad", "swift", "tex", "postgresql", "repository"]
-keywords = ["Tools", "Gists search", "json2csv", "csv2psql", "astronomists", "vomaste.cz", "the-psycho", "u-tygra", "tinder-nomics", "prism", "Tomas Korcak"]
+terms = ["open-source", "javascript", "elixir", "ruby", "rust", "python", "shell", "typescript", "c", "csharp", "cpp", "just", "openscad", "swift", "tex", "postgresql", "repository"]
+keywords = ["Tools", "Gists search", "json2csv", "csv2psql", "prismatic-flipperzero", "astronomists", "vomaste.cz", "the-psycho", "u-tygra", "tinder-nomics", "Tomas Korcak"]
 
 [[extra.viz]]
 kind = "constellation"
@@ -28,7 +28,7 @@ tone = "night"
 +++
 Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist search.
 
-The category holds 63 original repositories, written most often in [JavaScript](@/glossary/javascript.md), [Elixir](@/glossary/elixir.md), [Ruby](@/glossary/ruby.md), [Rust](@/glossary/rust.md) and [Python](@/glossary/python.md). Featured: **Gists search**, **json2csv** and **csv2psql**.
+The category holds 64 original repositories, written most often in [JavaScript](@/glossary/javascript.md), [Elixir](@/glossary/elixir.md), [Ruby](@/glossary/ruby.md), [Rust](@/glossary/rust.md) and [Python](@/glossary/python.md). Featured: **Gists search**, **json2csv** and **csv2psql**.
 
 Key concept: [Open source](@/glossary/open-source.md).
 

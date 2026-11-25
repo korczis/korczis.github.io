@@ -3,7 +3,7 @@
 title = "gooddata-proxy"
 description = "GoodData Proxy. Archive, 2016; data and gis. An archived project by Tomas Korcak, 2016."
 template = "work.html"
-weight = 129
+weight = 130
 updated = "2016-05-17T11:29:42Z"
 
 [taxonomies]

@@ -3,7 +3,7 @@
 title = "data"
 description = "Various data. Archive, 2014–2015; data and gis. An archived project by Tomas Korcak, 2014–2015."
 template = "work.html"
-weight = 141
+weight = 142
 updated = "2015-11-02T18:26:50Z"
 
 [taxonomies]

@@ -3,7 +3,7 @@
 title = "microcrawler-browser"
 description = "Proof-of-Concept: Microcrawler in your Browser. Archive, 2016; data and gis."
 template = "work.html"
-weight = 115
+weight = 116
 updated = "2016-10-01T23:23:52Z"
 
 [taxonomies]

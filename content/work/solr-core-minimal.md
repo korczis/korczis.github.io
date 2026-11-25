@@ -3,7 +3,7 @@
 title = "solr-core-minimal"
 description = "Minimal config core for solr. Archive, 2014; data and gis."
 template = "work.html"
-weight = 192
+weight = 193
 updated = "2014-02-05T18:40:20Z"
 
 [taxonomies]

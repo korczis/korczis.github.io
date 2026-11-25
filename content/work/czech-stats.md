@@ -3,7 +3,7 @@
 title = "czech-stats"
 description = "czech-stats: an archived project in Data and GIS, main language Elixir, 2020; last commit on 1 January 2020."
 template = "work.html"
-weight = 55
+weight = 56
 updated = "2020-01-01T09:35:31Z"
 
 [taxonomies]

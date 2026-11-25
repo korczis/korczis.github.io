@@ -3,7 +3,7 @@
 title = "microcrawler-crawler-heureka-cz"
 description = "microcrawler-crawler-heureka-cz: archivní projekt z kategorie Data a GIS, hlavní jazyk JavaScript, 2017; poslední commit 21. února 2017."
 template = "work.html"
-weight = 102
+weight = 103
 updated = "2017-02-21T17:50:35Z"
 
 [taxonomies]

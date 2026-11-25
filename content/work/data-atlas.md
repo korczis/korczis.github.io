@@ -3,7 +3,7 @@
 title = "Data Atlas"
 description = "A searchable catalogue of GIS and geodata sources (Czech)."
 template = "work.html"
-weight = 9
+weight = 10
 updated = "2026-11-16T19:15:49Z"
 
 [taxonomies]

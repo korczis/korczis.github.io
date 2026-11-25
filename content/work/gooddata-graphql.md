@@ -3,7 +3,7 @@
 title = "gooddata-graphql"
 description = "GoodData Web Application Written in Elixir. Archive, 2016; data and gis."
 template = "work.html"
-weight = 106
+weight = 107
 updated = "2016-12-19T16:02:02Z"
 
 [taxonomies]

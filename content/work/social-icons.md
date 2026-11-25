@@ -3,7 +3,7 @@
 title = "social-icons"
 description = "Social Networks icons from Devise Example. Archive, 2013; systems and infrastructure."
 template = "work.html"
-weight = 200
+weight = 201
 updated = "2013-04-14T19:59:26Z"
 
 [taxonomies]

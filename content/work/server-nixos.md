@@ -3,7 +3,7 @@
 title = "server-nixos"
 description = "NixOS Configuration. Archive, 2019; systems and infrastructure."
 template = "work.html"
-weight = 69
+weight = 70
 updated = "2019-02-06T06:42:06Z"
 
 [taxonomies]

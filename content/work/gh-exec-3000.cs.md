@@ -3,7 +3,7 @@
 title = "gh-exec-3000"
 description = "gh-exec-3000: archivní projekt z kategorie Systémy a infrastruktura, hlavní jazyk Dockerfile, 2022; poslední commit 8. října 2022."
 template = "work.html"
-weight = 44
+weight = 45
 updated = "2022-10-08T11:22:54Z"
 
 [taxonomies]

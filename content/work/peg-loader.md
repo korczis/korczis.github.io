@@ -3,7 +3,7 @@
 title = "peg-loader"
 description = "Peg.js grammar loader. Archive, 2016; tools. An archived project by Tomas Korcak, 2016."
 template = "work.html"
-weight = 132
+weight = 133
 updated = "2016-04-26T19:04:37Z"
 
 [taxonomies]

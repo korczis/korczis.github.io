@@ -3,7 +3,7 @@
 title = "twitter-analysis"
 description = "Twitter Analysis. Archive, 2019; tools. An archived project by Tomas Korcak, 2019."
 template = "work.html"
-weight = 63
+weight = 64
 updated = "2019-05-03T14:18:45Z"
 
 [taxonomies]

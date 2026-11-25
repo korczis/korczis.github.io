@@ -3,7 +3,7 @@
 title = "kanec"
 description = "kanec: an archived project in Tools, main language Elixir, 2019; last commit on 30 May 2019."
 template = "work.html"
-weight = 62
+weight = 63
 updated = "2019-05-30T01:03:52Z"
 
 [taxonomies]

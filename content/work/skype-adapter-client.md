@@ -3,7 +3,7 @@
 title = "skype-adapter-client"
 description = "Ruby client application for korczis/skype-adapter. Archive, 2013; libraries."
 template = "work.html"
-weight = 199
+weight = 200
 updated = "2013-05-01T20:29:51Z"
 
 [taxonomies]

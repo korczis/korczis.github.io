@@ -3,7 +3,7 @@
 title = "docker-datasciencetoolbox"
 description = "docker-datasciencetoolbox: archivní projekt z kategorie Systémy a infrastruktura, 2015; poslední commit 6. června 2015."
 template = "work.html"
-weight = 153
+weight = 154
 updated = "2015-06-06T15:11:52Z"
 
 [taxonomies]

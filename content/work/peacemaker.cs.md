@@ -3,7 +3,7 @@
 title = "peacemaker"
 description = "peacemaker: archivní projekt z kategorie Bezpečnost a OSINT, hlavní jazyk C++, 2014; poslední commit 23. srpna 2014."
 template = "work.html"
-weight = 170
+weight = 171
 updated = "2014-08-23T09:40:31Z"
 
 [taxonomies]

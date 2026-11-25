@@ -3,7 +3,7 @@
 title = "magic"
 description = "All the magic happens here. Archive, 2017; security and osint."
 template = "work.html"
-weight = 90
+weight = 91
 updated = "2017-07-08T19:01:38Z"
 
 [taxonomies]

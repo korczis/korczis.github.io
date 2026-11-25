@@ -3,7 +3,7 @@
 title = "csv2psql"
 description = "CSV into SQL statements for PostgreSQL. Archive, 2014–2015; tools."
 template = "work.html"
-weight = 140
+weight = 141
 updated = "2015-11-06T23:39:29Z"
 
 [taxonomies]

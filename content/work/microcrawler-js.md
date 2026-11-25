@@ -3,7 +3,7 @@
 title = "microcrawler-js"
 description = "Scrapping made easy. Archive, 2016; data and gis. An archived project by Tomas Korcak, 2016."
 template = "work.html"
-weight = 119
+weight = 120
 updated = "2016-09-03T23:05:17Z"
 
 [taxonomies]

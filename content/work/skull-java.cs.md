@@ -3,7 +3,7 @@
 title = "skull-java"
 description = "skull-java: archivní projekt z kategorie Učení a experimenty, hlavní jazyk Java, 2014; poslední commit 3. srpna 2014."
 template = "work.html"
-weight = 177
+weight = 178
 updated = "2014-08-03T05:35:58Z"
 
 [taxonomies]

@@ -3,7 +3,7 @@
 title = "docker-dstk"
 description = "docker-dstk: archivní projekt z kategorie Systémy a infrastruktura, hlavní jazyk Shell, 2015; poslední commit 7. června 2015."
 template = "work.html"
-weight = 152
+weight = 153
 updated = "2015-06-07T10:39:46Z"
 
 [taxonomies]

@@ -3,7 +3,7 @@
 title = "korczis-github-com"
 description = "korczis-github-com: archivní projekt z kategorie Web, hlavní jazyk CSS, 2014–2015; poslední commit 18. září 2015."
 template = "work.html"
-weight = 142
+weight = 143
 updated = "2015-09-18T22:31:40Z"
 
 [taxonomies]

@@ -3,7 +3,7 @@
 title = "Catharsis as a Service"
 description = "Endpoint pro přechod emočního stavu. Aktivní za posledních 12 měsíců; média a umění."
 template = "work.html"
-weight = 11
+weight = 12
 updated = "2026-11-16T19:15:38Z"
 
 [taxonomies]
