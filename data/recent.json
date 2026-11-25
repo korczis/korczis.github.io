@@ -1,6 +1,6 @@
 {
  "schema": "korczis-hub-recent/v2",
- "generated_at": "2026-11-25T09:05:03Z",
+ "generated_at": "2026-11-25T13:42:07Z",
  "window_days": 1461,
  "periods": [
   {
@@ -18,7 +18,7 @@
  ],
  "archive": 162,
  "rule": "every original repository of data/index.json; a repository is recent when its default branch has a commit in the window, archive otherwise; host activity dates are ignored",
- "asked": 5,
+ "asked": 4,
  "repos": [
   {
    "name": "prismatic-flipperzero",
@@ -27,10 +27,110 @@
    "category": "tools",
    "language": "C",
    "created_at": "2026-11-25T03:06:03Z",
-   "pushed_at": "2026-11-25T08:46:24Z",
-   "last_commit": "2026-11-25T08:45:50Z",
-   "last_message": "feat(ui): information architecture of four hubs on a tile grid",
+   "pushed_at": "2026-11-25T13:32:25Z",
+   "last_commit": "2026-11-25T13:30:48Z",
+   "last_message": "feat(site): simulations, scorecards and calculators are interactive in the browser",
    "commits": [
+    {
+     "at": "2026-11-25T13:30:48Z",
+     "message": "feat(site): simulations, scorecards and calculators are interactive in the browser",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/b528ea48fce053505c13e95bbc8e55342a694ff5"
+    },
+    {
+     "at": "2026-11-25T12:46:22Z",
+     "message": "fix(calculate): single precision for the Flipper's FPU",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/e694aa4bb857f18b24b3344b14dafc94cede1ded"
+    },
+    {
+     "at": "2026-11-25T12:44:21Z",
+     "message": "feat(calculate): the Prismatic Platform's Bayesian fusion as an interactive calculator",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/30d303aa304e395f59dcea7b5e813c67ad5e9987"
+    },
+    {
+     "at": "2026-11-25T12:35:39Z",
+     "message": "feat(score): the Prismatic Platform's scorecards as data: executive frame, nominee risk",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/56fadfccd044a19bcef28f37ed9103038d967049"
+    },
+    {
+     "at": "2026-11-25T12:25:10Z",
+     "message": "feat(simulate): the Prismatic Platform's crisis simulations, as data, offline",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/3761edefa21a93063b1add990a4a71b0dc0733f9"
+    },
+    {
+     "at": "2026-11-25T12:11:04Z",
+     "message": "fix(sessions): drop an unreachable empty-list note; restore covers an empty page",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/5e934ffd033c23684a1daa7e50ac799b7bf3c780"
+    },
+    {
+     "at": "2026-11-25T12:09:13Z",
+     "message": "feat(sessions): save a detector's marks as JSON Lines, only when asked",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/aa9bd09386ad6810af7ab4264df1e61207c7a3d5"
+    },
+    {
+     "at": "2026-11-25T11:30:23Z",
+     "message": "feat(site): assessments are interactive on the explorer too",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/619187fc2a9b197d52e2bfa21806682d23bd0e7f"
+    },
+    {
+     "at": "2026-11-25T11:25:46Z",
+     "message": "docs(readme): FAEL-style landing: title, tagline, generated explainer and modules",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/f87e677fab4d57461d248ca838072864c8f892c5"
+    },
+    {
+     "at": "2026-11-25T11:18:46Z",
+     "message": "test(tools): validate the repository's applications only where the file exists",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/e0830aac1d0f02fe5d85ecd8357b5e1b79032e1d"
+    },
+    {
+     "at": "2026-11-25T11:17:46Z",
+     "message": "feat(apply): assessments as applications: Admiralty code, DD evidence levels, OSINT confidence",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/81a28e17297b050018889e585ae3ddc93a0c967d"
+    },
+    {
+     "at": "2026-11-25T11:00:36Z",
+     "message": "feat(detect): side-by-side detection of an object and a look-alike",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/d40840a22f6fc8893aa9961c33322beefb12a594"
+    },
+    {
+     "at": "2026-11-25T10:49:12Z",
+     "message": "feat(train): spaced repetition with Leitner boxes, kept safely on the SD card",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/748007604aa5d814f77f28e9e629e5f620c7395c"
+    },
+    {
+     "at": "2026-11-25T09:49:44Z",
+     "message": "docs(evidence): parity 24 of 24 on the marquee and quiz-score FAP",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/b40edb4b3de4bb60608bf63a0cdc348bd42cfe9c"
+    },
+    {
+     "at": "2026-11-25T09:47:31Z",
+     "message": "fix(ui): paging position fits two 32-bit counts; build the sim with GCC too",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/c9fa1c66d7628a4af7646e820a4e5636d8b5e04b"
+    },
+    {
+     "at": "2026-11-25T09:43:36Z",
+     "message": "feat(ui): a cut name scrolls after a pause; the quiz keeps score",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/1340051d1e80ca4a58cd42ae258237cb38461a61"
+    },
+    {
+     "at": "2026-11-25T09:26:40Z",
+     "message": "fix(atlas): compare frames by decoded pixels, not PNG bytes",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/aec317cf89cadc3b8c084fac69dbd5b8d9212f62"
+    },
+    {
+     "at": "2026-11-25T09:25:22Z",
+     "message": "test(acceptance): a new object, only the pack recompiled, the same FAP, on the device",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/69840eb19a2f14c05c98a48328419666ab07ed01"
+    },
+    {
+     "at": "2026-11-25T09:14:03Z",
+     "message": "feat(site): the device page, every screen of the app from the atlas",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/a3e221183577ef9753ea1cbcaee1673c5c980ec8"
+    },
+    {
+     "at": "2026-11-25T09:08:11Z",
+     "message": "feat(ui): screen atlas of every screen, reviewed; cache measured; docs",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/641a0a54ae4d7616f24ce95c7928818e846a3a82"
+    },
     {
      "at": "2026-11-25T08:45:50Z",
      "message": "feat(ui): information architecture of four hubs on a tile grid",
@@ -80,80 +180,35 @@
      "at": "2026-11-25T05:36:50Z",
      "message": "docs(readme): link the online explorer and the wiki",
      "url": "https://github.com/korczis/prismatic-flipperzero/commit/a1cc740ffa091c42d90fd5040c6e07e6f051ead9"
-    },
-    {
-     "at": "2026-11-25T05:34:18Z",
-     "message": "feat(docs): render the GitHub wiki from README and docs",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/d25ff1110650c620c9906f7826b2e33aa391488a"
-    },
-    {
-     "at": "2026-11-25T05:31:42Z",
-     "message": "feat(site): Pages explorer over the full pack, tested end to end",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/55fc96dfe2065798178e3c9df6dd5fba653ed760"
-    },
-    {
-     "at": "2026-11-25T05:10:30Z",
-     "message": "style(app): apply the SDK clang-format to app sources",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/fbc955c261d4ec02fc71ad92bbd4aeded5f4cce9"
-    },
-    {
-     "at": "2026-11-25T05:04:34Z",
-     "message": "docs(pocket): prose README, case study, architecture, real device gallery",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/92e5bf092f6958c12d537facb0e481d15808767c"
-    },
-    {
-     "at": "2026-11-25T04:40:33Z",
-     "message": "feat(pocket): structured reader, article navigation and CI for the core and pack",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/914e20f32405c3a4de5ad294a53dfb0d181ec6b9"
-    },
-    {
-     "at": "2026-11-25T04:08:35Z",
-     "message": "feat(pocket): full Kompendium as a knowledge pack and a generic runtime",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/f85d96e593fabec1a9d9c507ae461c95649838b9"
-    },
-    {
-     "at": "2026-11-25T03:05:06Z",
-     "message": "docs(repo): README with real device frames, CI matrix and preview release flow",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/67c2cecc03b82460ec6f76c6e4e6734cb6307a3e"
-    },
-    {
-     "at": "2026-11-25T03:01:35Z",
-     "message": "feat(app): first light, a native Prismatic dialog verified on hardware",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/e64127a27b87e35a6d863a47860d33e5d464b4b1"
-    },
-    {
-     "at": "2026-11-25T02:41:57Z",
-     "message": "chore(repo): bootstrap governed repository with Majordomus layer",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/28da2ca0757533ed154ddfccc6c5e3142f01de9e"
     }
    ],
    "languages": [
     {
      "name": "C",
-     "share": 40.3
+     "share": 46.8
     },
     {
      "name": "Python",
-     "share": 35.2
+     "share": 33.5
     },
     {
      "name": "JavaScript",
-     "share": 14
+     "share": 11.1
     },
     {
      "name": "Shell",
-     "share": 7.3
+     "share": 6.5
     },
     {
      "name": "HTML",
-     "share": 2.1
+     "share": 1.4
     },
     {
      "name": "Just",
-     "share": 1
+     "share": 0.7
     }
    ],
-   "readme": "Prismatic Pocket puts a whole book on epistemic self-defence into a Flipper Zero. Read it, recognise what is happening to you, decide what to do, and train until it is reflex, with no network, no phone and no account.",
+   "readme": "What it does · Interface · Every screen · On a real device · Small memory · How it works · Install · Guarantees · Case study · Explorer · Wiki",
    "readme_shared": false,
    "description_shared": false,
    "topics": [],
@@ -172,14 +227,64 @@
    "category": "science",
    "language": "JavaScript",
    "created_at": "2026-10-01T21:05:33Z",
-   "pushed_at": "2026-11-25T07:54:11Z",
-   "last_commit": "2026-11-25T06:58:09Z",
-   "last_message": "feat(ui): opětovné načtení vrátí nástroj, laboratoře, patch Synthu a sekvenci (U138) (#657)",
+   "pushed_at": "2026-11-25T13:07:24Z",
+   "last_commit": "2026-11-25T13:00:09Z",
+   "last_message": "fix(ui): katalog UI mluví česky, jeden termín pro bránu, zesílení a úhoz (U145) (#658)",
    "commits": [
+    {
+     "at": "2026-11-25T13:00:09Z",
+     "message": "fix(ui): katalog UI mluví česky, jeden termín pro bránu, zesílení a úhoz (U145) (#658)",
+     "url": "https://github.com/korczis/oscilla/commit/c2e089b51b466eb89c6479c72c84887c33e9af2f"
+    },
+    {
+     "at": "2026-11-25T11:28:01Z",
+     "message": "Merge branch 'main' into feat/catalog-czech-labels",
+     "url": "https://github.com/korczis/oscilla/commit/59e23689167a5fd6225f3023ed0e3b2be0c8e6dd"
+    },
+    {
+     "at": "2026-11-25T11:26:25Z",
+     "message": "test(browser): leave-policy bere referenční špičku Synthu z ustáleného tónu; Podržet a hrát čte jméno až po změně stavu (#666)",
+     "url": "https://github.com/korczis/oscilla/commit/8fac97c1a39dacc2fba74eba6b26cb3215c002f0"
+    },
+    {
+     "at": "2026-11-25T09:46:05Z",
+     "message": "Merge branch 'main' into fix/webkit-leave-policy-ci",
+     "url": "https://github.com/korczis/oscilla/commit/45b2b6d14d411dbaca15c6c076549a048040f53d"
+    },
+    {
+     "at": "2026-11-25T07:47:52Z",
+     "message": "test(browser): leave-policy takes the Synth's reference peak at the steady note",
+     "url": "https://github.com/korczis/oscilla/commit/19cec4f0d25fa404b1470e2647e2b94fe491f7b0"
+    },
+    {
+     "at": "2026-11-25T07:09:25Z",
+     "message": "Merge remote-tracking branch 'origin/main' into feat/catalog-czech-labels",
+     "url": "https://github.com/korczis/oscilla/commit/86cca2a88b2dabeefbbc94201ef523fff4d12df0"
+    },
     {
      "at": "2026-11-25T06:58:09Z",
      "message": "feat(ui): opětovné načtení vrátí nástroj, laboratoře, patch Synthu a sekvenci (U138) (#657)",
      "url": "https://github.com/korczis/oscilla/commit/54534eb91ccda50f02229224c42a6751bbb49f3d"
+    },
+    {
+     "at": "2026-11-25T06:38:32Z",
+     "message": "test(browser): same-hold-touch-keyboard reads the name once the page reports the sound",
+     "url": "https://github.com/korczis/oscilla/commit/cf85a103b70ec4e8833f9d5cc6ff9aa98d483952"
+    },
+    {
+     "at": "2026-11-25T06:30:42Z",
+     "message": "test(browser): leave-policy names what it waited for when it times out",
+     "url": "https://github.com/korczis/oscilla/commit/3fa8a3d7415d032688e114fa52a45827eb93107e"
+    },
+    {
+     "at": "2026-11-25T05:42:29Z",
+     "message": "test(ui): Sonda's catalogue labels are plain Czech words (sonda, sondy, pohled)",
+     "url": "https://github.com/korczis/oscilla/commit/0175bef9a8047c60a50c26f497614bdf2f164251"
+    },
+    {
+     "at": "2026-11-25T05:37:39Z",
+     "message": "Merge remote-tracking branch 'origin/main' into feat/catalog-czech-labels",
+     "url": "https://github.com/korczis/oscilla/commit/e645128fc32de3dd0fe17b24cbaaf414feabe686"
     },
     {
      "at": "2026-11-25T05:32:39Z",
@@ -190,6 +295,11 @@
      "at": "2026-11-25T04:39:16Z",
      "message": "feat(ui): Sonda – pozorovaný výstup z každé pracovní plochy (U126) (#647)",
      "url": "https://github.com/korczis/oscilla/commit/1bec41463a273ccdba711716a1c78f8ef260793d"
+    },
+    {
+     "at": "2026-11-25T02:57:27Z",
+     "message": "fix(ui): speak Czech in the UI catalogue labels and docs",
+     "url": "https://github.com/korczis/oscilla/commit/afe3e0f4f355c7ffe649b6cf28bdd96898d0e09a"
     },
     {
      "at": "2026-11-25T02:23:39Z",
@@ -270,61 +380,6 @@
      "at": "2026-11-24T20:28:41Z",
      "message": "Merge branch 'main' into fix/escape-menu-keeps-audio",
      "url": "https://github.com/korczis/oscilla/commit/94c516506d2ac8ea9e97e681624087435f476703"
-    },
-    {
-     "at": "2026-11-24T20:22:37Z",
-     "message": "fix(ui): keep src/index.html within its cap after the navbar Sonda button",
-     "url": "https://github.com/korczis/oscilla/commit/be1b37e7d55328978e3560d898acfa019aa7db5d"
-    },
-    {
-     "at": "2026-11-24T20:20:23Z",
-     "message": "fix(ui): Sonda moves to the navbar from a tablet up, so the status readout keeps its width",
-     "url": "https://github.com/korczis/oscilla/commit/8a94e140147b1ad71c9eb3359a60ee0ba20b9333"
-    },
-    {
-     "at": "2026-11-24T18:50:56Z",
-     "message": "test(browser): the covered self-test names the Synth chips by their tabpanel (U125)",
-     "url": "https://github.com/korczis/oscilla/commit/3b124265a65441824dc8e70b3f4bd312e535542d"
-    },
-    {
-     "at": "2026-11-24T18:34:07Z",
-     "message": "feat(bus): the sound survives a place change; a running measurement still stops",
-     "url": "https://github.com/korczis/oscilla/commit/a6d66725290950a24529120263bdbd4e194f0dae"
-    },
-    {
-     "at": "2026-11-24T18:17:13Z",
-     "message": "test(browser): Sonda's Spectrum check waits for the chart's own trace to show the note",
-     "url": "https://github.com/korczis/oscilla/commit/0ce4f0b3d8a7216126a4a47640bf50020da868b0"
-    },
-    {
-     "at": "2026-11-24T18:14:32Z",
-     "message": "fix(ui): on a phone Sonda waits in the status bar's Akce menu",
-     "url": "https://github.com/korczis/oscilla/commit/61fd028bc20d7d68f202985e814c3beeed7a3dc7"
-    },
-    {
-     "at": "2026-11-24T18:11:46Z",
-     "message": "test(browser): name the geometry census a reference, not a ratchet baseline",
-     "url": "https://github.com/korczis/oscilla/commit/c1993081e48a964dad0bc4c993b67a435bc2400b"
-    },
-    {
-     "at": "2026-11-24T18:07:22Z",
-     "message": "chore(plan): Q114 hotovo – doslovné odpovědi vlastníka jako důkaz (#649)",
-     "url": "https://github.com/korczis/oscilla/commit/35f002cd06fc64e6faea782dc1dece417a713d51"
-    },
-    {
-     "at": "2026-11-24T17:56:31Z",
-     "message": "chore(plan): Q114 done with the owner's verbatim answers as evidence",
-     "url": "https://github.com/korczis/oscilla/commit/200245a2d1d728bf7aaf889a0eaa4498bb2a920c"
-    },
-    {
-     "at": "2026-11-24T17:54:46Z",
-     "message": "test(browser): a DOM geometry census of panels and links per place, viewport and engine (U128)",
-     "url": "https://github.com/korczis/oscilla/commit/2f57dd00ebf21c4bc278433e993a9cf869be0b63"
-    },
-    {
-     "at": "2026-11-24T17:48:20Z",
-     "message": "Merge remote-tracking branch 'origin/main' into fix/escape-menu-keeps-audio",
-     "url": "https://github.com/korczis/oscilla/commit/bb9713f5dff22464901ed14b243760e27c9fa43c"
     }
    ],
    "languages": [
@@ -372,13 +427,220 @@
    "supervised": true
   },
   {
+   "name": "korczis.github.io",
+   "period": 12,
+   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+   "category": "web",
+   "language": "JavaScript",
+   "created_at": "2024-12-24T16:48:15Z",
+   "pushed_at": "2026-11-25T09:06:29Z",
+   "last_commit": "2026-11-25T09:05:39Z",
+   "last_message": "chore(data): refresh the snapshot and the index",
+   "commits": [
+    {
+     "at": "2026-11-25T09:05:39Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/0f4c5c2e16573fc0b262df069555c33c88768ed4"
+    },
+    {
+     "at": "2026-11-24T23:40:41Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/1966f002ed48cfce1d5b849c1cd6cbe5fda823bf"
+    },
+    {
+     "at": "2026-11-24T14:06:50Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/a23dc88f1d8a274a24c6a8c4eee3c4ee7319455f"
+    },
+    {
+     "at": "2026-11-24T02:32:41Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/e2527f12dd56f3d882114246e8dbd7af49f83885"
+    },
+    {
+     "at": "2026-11-23T15:08:46Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/2e61e8e9b8e032b7dd06c30a361f4df6a1039631"
+    },
+    {
+     "at": "2026-11-23T03:57:37Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/f1a7277138d2c3d8c2045232f6344d8313b33cf2"
+    },
+    {
+     "at": "2026-11-22T22:49:54Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/faad2042607f996a49df57046ccb58d56922bb5e"
+    },
+    {
+     "at": "2026-11-22T16:37:42Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/c804178bddf152d76407768c500f03017ffba9aa"
+    },
+    {
+     "at": "2026-11-22T08:22:12Z",
+     "message": "chore(merge): integrate #49, the mesh declaration loads again",
+     "url": "https://github.com/korczis/korczis.github.io/commit/ca38b66e703a932af13176e409bd83d1dc571c32"
+    },
+    {
+     "at": "2026-11-22T07:42:58Z",
+     "message": "fix(mesh): the mesh gate takes the shared CLI",
+     "url": "https://github.com/korczis/korczis.github.io/commit/595b84c740b22adcede255f95971df786935dd24"
+    },
+    {
+     "at": "2026-11-22T07:41:51Z",
+     "message": "fix(mesh): write the trusted keys bare, so Majordomus loads the declaration",
+     "url": "https://github.com/korczis/korczis.github.io/commit/049cacb971a257ccae599859297fc4ecd3824177"
+    },
+    {
+     "at": "2026-11-22T07:37:18Z",
+     "message": "chore(merge): integrate #48, quoted mesh keys",
+     "url": "https://github.com/korczis/korczis.github.io/commit/96449d3ea60defc7fa09bf6c3e67f5c69a18431e"
+    },
+    {
+     "at": "2026-11-22T07:08:24Z",
+     "message": "chore(interfaces): measure the .ai layer after the mesh quoting",
+     "url": "https://github.com/korczis/korczis.github.io/commit/d4d1ca72bb84333cf5bd1c30a53b2cf24e83ef68"
+    },
+    {
+     "at": "2026-11-22T07:07:06Z",
+     "message": "chore(mesh): quote the trusted keys and say why the tailnet hubs stay",
+     "url": "https://github.com/korczis/korczis.github.io/commit/b6701e6f99b5a8e2cf3a742b7d1380f4498c8016"
+    },
+    {
+     "at": "2026-11-22T06:23:33Z",
+     "message": "chore(merge): integrate #47, the fleet mesh",
+     "url": "https://github.com/korczis/korczis.github.io/commit/43921f195ce5eeab25f9b321ae70f1a7c542c678"
+    },
+    {
+     "at": "2026-11-22T05:33:29Z",
+     "message": "chore(interfaces): measure the .ai layer with the new knowledge record",
+     "url": "https://github.com/korczis/korczis.github.io/commit/9f941ac9bb276f38c71ff6b8edad6ae8ed8a8d96"
+    },
+    {
+     "at": "2026-11-22T05:32:35Z",
+     "message": "docs(knowledge): record the owner's answers on the fleet mesh, auto-update and the upgrade",
+     "url": "https://github.com/korczis/korczis.github.io/commit/ac693faa1b336081a810f798aded6d48cc4cf6a2"
+    },
+    {
+     "at": "2026-11-22T05:32:24Z",
+     "message": "docs(mesh): name the machine behind each trusted key",
+     "url": "https://github.com/korczis/korczis.github.io/commit/c77de9c3661ec2a42ad25988c3dae8651327a16e"
+    },
+    {
+     "at": "2026-11-22T05:32:20Z",
+     "message": "fix(mesh): trust the owner's fleet and register with its hubs",
+     "url": "https://github.com/korczis/korczis.github.io/commit/12607a7f7b2d133ecd9d87eee73e2dc92178911b"
+    },
+    {
+     "at": "2026-11-21T19:40:51Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/b68bf7560a2c6ee8b2d79177fc53207d4595d970"
+    },
+    {
+     "at": "2026-11-21T11:36:39Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/76eb074704989ea56ef7ecc1e83e31c03166d984"
+    },
+    {
+     "at": "2026-11-21T02:41:51Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/292b9c146c2b7684378e371442bb77dbff7c15aa"
+    },
+    {
+     "at": "2026-11-20T20:43:47Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/4ddc753c9e6b2e915de7eb18bee6382b7cf7849b"
+    },
+    {
+     "at": "2026-11-20T12:02:53Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/7c60f87097de0efb88cd500825792697b01b14cc"
+    },
+    {
+     "at": "2026-11-20T03:49:02Z",
+     "message": "chore(merge): integrate #45, notable technologies of a single repository get their page",
+     "url": "https://github.com/korczis/korczis.github.io/commit/7d10edbdd672fcb6587799663f064dea30f94f8e"
+    },
+    {
+     "at": "2026-11-20T03:22:48Z",
+     "message": "feat(glossary): notable technologies of a single repository get their page",
+     "url": "https://github.com/korczis/korczis.github.io/commit/e18053832c7acc78764f0edec448869219d12ed0"
+    },
+    {
+     "at": "2026-11-20T02:32:34Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/af274ed0d4bdc1bedd5d967ba185d5a7044ee9f7"
+    },
+    {
+     "at": "2026-11-20T01:21:57Z",
+     "message": "chore(merge): integrate #44, technologies in two repositories get their page too",
+     "url": "https://github.com/korczis/korczis.github.io/commit/24e7d40a53dd9519b856b1eb783b006c3604c78d"
+    },
+    {
+     "at": "2026-11-20T00:57:23Z",
+     "message": "feat(glossary): technologies in two repositories get their page too",
+     "url": "https://github.com/korczis/korczis.github.io/commit/354eaf0434f9c029dce463ecabefab150dec4ce5"
+    },
+    {
+     "at": "2026-11-19T20:51:38Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/5603ebe2b81e0f632cdd5234eb1227e3f3440425"
+    }
+   ],
+   "languages": [
+    {
+     "name": "JavaScript",
+     "share": 61.9
+    },
+    {
+     "name": "HTML",
+     "share": 36.1
+    },
+    {
+     "name": "CSS",
+     "share": 1.1
+    },
+    {
+     "name": "Shell",
+     "share": 0.8
+    }
+   ],
+   "readme": "The personal hub of Tomas Korcak (korczis). It covers who I am, the projects I build with their live sites, the stack behind them, and Majordomus, which supervises the work.",
+   "readme_shared": false,
+   "description_shared": false,
+   "topics": [
+    "accessibility",
+    "ai-agents",
+    "alpinejs",
+    "chartjs",
+    "cytoscape",
+    "echarts",
+    "flowbite",
+    "github-pages",
+    "majordomus",
+    "p5js",
+    "personal-website",
+    "portfolio",
+    "tailwindcss",
+    "zola"
+   ],
+   "hosts": {
+    "github": "https://github.com/korczis/korczis.github.io"
+   },
+   "site": null,
+   "curated": false,
+   "stars": 0,
+   "supervised": true
+  },
+  {
    "name": "prismatic-majordomus",
    "period": 12,
    "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
    "category": "ai",
    "language": "Rust",
    "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-25T08:54:59Z",
+   "pushed_at": "2026-11-25T12:28:18Z",
    "last_commit": "2026-11-25T03:17:05Z",
    "last_message": "Merge pull request #3112 from korczis/integration/train-20261122a",
    "commits": [
@@ -784,213 +1046,6 @@
    },
    "site": "https://korczis.github.io/sonic-playground/",
    "curated": true,
-   "stars": 0,
-   "supervised": true
-  },
-  {
-   "name": "korczis.github.io",
-   "period": 12,
-   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-   "category": "web",
-   "language": "JavaScript",
-   "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-24T23:41:30Z",
-   "last_commit": "2026-11-24T23:40:41Z",
-   "last_message": "chore(data): refresh the snapshot and the index",
-   "commits": [
-    {
-     "at": "2026-11-24T23:40:41Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/1966f002ed48cfce1d5b849c1cd6cbe5fda823bf"
-    },
-    {
-     "at": "2026-11-24T14:06:50Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/a23dc88f1d8a274a24c6a8c4eee3c4ee7319455f"
-    },
-    {
-     "at": "2026-11-24T02:32:41Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/e2527f12dd56f3d882114246e8dbd7af49f83885"
-    },
-    {
-     "at": "2026-11-23T15:08:46Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/2e61e8e9b8e032b7dd06c30a361f4df6a1039631"
-    },
-    {
-     "at": "2026-11-23T03:57:37Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/f1a7277138d2c3d8c2045232f6344d8313b33cf2"
-    },
-    {
-     "at": "2026-11-22T22:49:54Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/faad2042607f996a49df57046ccb58d56922bb5e"
-    },
-    {
-     "at": "2026-11-22T16:37:42Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/c804178bddf152d76407768c500f03017ffba9aa"
-    },
-    {
-     "at": "2026-11-22T08:22:12Z",
-     "message": "chore(merge): integrate #49, the mesh declaration loads again",
-     "url": "https://github.com/korczis/korczis.github.io/commit/ca38b66e703a932af13176e409bd83d1dc571c32"
-    },
-    {
-     "at": "2026-11-22T07:42:58Z",
-     "message": "fix(mesh): the mesh gate takes the shared CLI",
-     "url": "https://github.com/korczis/korczis.github.io/commit/595b84c740b22adcede255f95971df786935dd24"
-    },
-    {
-     "at": "2026-11-22T07:41:51Z",
-     "message": "fix(mesh): write the trusted keys bare, so Majordomus loads the declaration",
-     "url": "https://github.com/korczis/korczis.github.io/commit/049cacb971a257ccae599859297fc4ecd3824177"
-    },
-    {
-     "at": "2026-11-22T07:37:18Z",
-     "message": "chore(merge): integrate #48, quoted mesh keys",
-     "url": "https://github.com/korczis/korczis.github.io/commit/96449d3ea60defc7fa09bf6c3e67f5c69a18431e"
-    },
-    {
-     "at": "2026-11-22T07:08:24Z",
-     "message": "chore(interfaces): measure the .ai layer after the mesh quoting",
-     "url": "https://github.com/korczis/korczis.github.io/commit/d4d1ca72bb84333cf5bd1c30a53b2cf24e83ef68"
-    },
-    {
-     "at": "2026-11-22T07:07:06Z",
-     "message": "chore(mesh): quote the trusted keys and say why the tailnet hubs stay",
-     "url": "https://github.com/korczis/korczis.github.io/commit/b6701e6f99b5a8e2cf3a742b7d1380f4498c8016"
-    },
-    {
-     "at": "2026-11-22T06:23:33Z",
-     "message": "chore(merge): integrate #47, the fleet mesh",
-     "url": "https://github.com/korczis/korczis.github.io/commit/43921f195ce5eeab25f9b321ae70f1a7c542c678"
-    },
-    {
-     "at": "2026-11-22T05:33:29Z",
-     "message": "chore(interfaces): measure the .ai layer with the new knowledge record",
-     "url": "https://github.com/korczis/korczis.github.io/commit/9f941ac9bb276f38c71ff6b8edad6ae8ed8a8d96"
-    },
-    {
-     "at": "2026-11-22T05:32:35Z",
-     "message": "docs(knowledge): record the owner's answers on the fleet mesh, auto-update and the upgrade",
-     "url": "https://github.com/korczis/korczis.github.io/commit/ac693faa1b336081a810f798aded6d48cc4cf6a2"
-    },
-    {
-     "at": "2026-11-22T05:32:24Z",
-     "message": "docs(mesh): name the machine behind each trusted key",
-     "url": "https://github.com/korczis/korczis.github.io/commit/c77de9c3661ec2a42ad25988c3dae8651327a16e"
-    },
-    {
-     "at": "2026-11-22T05:32:20Z",
-     "message": "fix(mesh): trust the owner's fleet and register with its hubs",
-     "url": "https://github.com/korczis/korczis.github.io/commit/12607a7f7b2d133ecd9d87eee73e2dc92178911b"
-    },
-    {
-     "at": "2026-11-21T19:40:51Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/b68bf7560a2c6ee8b2d79177fc53207d4595d970"
-    },
-    {
-     "at": "2026-11-21T11:36:39Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/76eb074704989ea56ef7ecc1e83e31c03166d984"
-    },
-    {
-     "at": "2026-11-21T02:41:51Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/292b9c146c2b7684378e371442bb77dbff7c15aa"
-    },
-    {
-     "at": "2026-11-20T20:43:47Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/4ddc753c9e6b2e915de7eb18bee6382b7cf7849b"
-    },
-    {
-     "at": "2026-11-20T12:02:53Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/7c60f87097de0efb88cd500825792697b01b14cc"
-    },
-    {
-     "at": "2026-11-20T03:49:02Z",
-     "message": "chore(merge): integrate #45, notable technologies of a single repository get their page",
-     "url": "https://github.com/korczis/korczis.github.io/commit/7d10edbdd672fcb6587799663f064dea30f94f8e"
-    },
-    {
-     "at": "2026-11-20T03:22:48Z",
-     "message": "feat(glossary): notable technologies of a single repository get their page",
-     "url": "https://github.com/korczis/korczis.github.io/commit/e18053832c7acc78764f0edec448869219d12ed0"
-    },
-    {
-     "at": "2026-11-20T02:32:34Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/af274ed0d4bdc1bedd5d967ba185d5a7044ee9f7"
-    },
-    {
-     "at": "2026-11-20T01:21:57Z",
-     "message": "chore(merge): integrate #44, technologies in two repositories get their page too",
-     "url": "https://github.com/korczis/korczis.github.io/commit/24e7d40a53dd9519b856b1eb783b006c3604c78d"
-    },
-    {
-     "at": "2026-11-20T00:57:23Z",
-     "message": "feat(glossary): technologies in two repositories get their page too",
-     "url": "https://github.com/korczis/korczis.github.io/commit/354eaf0434f9c029dce463ecabefab150dec4ce5"
-    },
-    {
-     "at": "2026-11-19T20:51:38Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/5603ebe2b81e0f632cdd5234eb1227e3f3440425"
-    },
-    {
-     "at": "2026-11-19T13:15:49Z",
-     "message": "chore(merge): integrate #43, technologies in three repositories get their page too",
-     "url": "https://github.com/korczis/korczis.github.io/commit/36271ce2fb11ce8aced6b6813182f402f0cfbf28"
-    }
-   ],
-   "languages": [
-    {
-     "name": "JavaScript",
-     "share": 61.9
-    },
-    {
-     "name": "HTML",
-     "share": 36.1
-    },
-    {
-     "name": "CSS",
-     "share": 1.1
-    },
-    {
-     "name": "Shell",
-     "share": 0.8
-    }
-   ],
-   "readme": "The personal hub of Tomas Korcak (korczis). It covers who I am, the projects I build with their live sites, the stack behind them, and Majordomus, which supervises the work.",
-   "readme_shared": false,
-   "description_shared": false,
-   "topics": [
-    "accessibility",
-    "ai-agents",
-    "alpinejs",
-    "chartjs",
-    "cytoscape",
-    "echarts",
-    "flowbite",
-    "github-pages",
-    "majordomus",
-    "p5js",
-    "personal-website",
-    "portfolio",
-    "tailwindcss",
-    "zola"
-   ],
-   "hosts": {
-    "github": "https://github.com/korczis/korczis.github.io"
-   },
-   "site": null,
-   "curated": false,
    "stars": 0,
    "supervised": true
   },

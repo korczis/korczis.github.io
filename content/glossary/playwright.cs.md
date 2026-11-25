@@ -17,7 +17,7 @@ definition = "Knihovna pro automatizaci prohlížeče, která ovládá Chromium,
 aliases = []
 reference = { title = "Playwright documentation", url = "https://playwright.dev/docs/intro" }
 pages = ["services/ai-engineering-governance.cs.md", "services/digital-investigation.cs.md", "services/due-diligence.cs.md", "services/m-and-a.cs.md", "skills/audit-trail.cs.md", "skills/document-extraction.cs.md", "skills/due-diligence.cs.md", "skills/policy-as-code.cs.md", "work/astronomists.cs.md", "work/catharsis-as-a-service.cs.md", "work/data-atlas.cs.md", "work/korczis-github-io.cs.md", "work/oscilla.cs.md", "work/vomaste-cz.cs.md", "_index.cs.md"]
-related = ["html", "javascript", "tailwind-css", "shell", "python", "alpine-js", "flowbite-pro", "github-pages"]
+related = ["html", "javascript", "tailwind-css", "shell", "alpine-js", "flowbite-pro", "python", "css"]
 og_title = "Playwright: slovník"
 og_image = "og/cs-glossary-playwright.png"
 keywords = ["Playwright", "Technologie", "Slovník", "Tomáš Korčák"]
@@ -44,7 +44,7 @@ Playwright je součástí 6 mých veřejných repozitářů, od roku 2024 do 202
 
 K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (2), [Data a GIS](@/projects/data.cs.md) (1), [Média a umění](@/projects/media.cs.md) (1) a [Věda a vizualizace](@/projects/science.cs.md) (1).
 
-Naposledy: [Oscilla](@/work/oscilla.cs.md): Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu; [korczis.github.io](@/work/korczis-github-io.cs.md); [astronomists](@/work/astronomists.cs.md).
+Naposledy: [korczis.github.io](@/work/korczis-github-io.cs.md); [Oscilla](@/work/oscilla.cs.md): Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu; [astronomists](@/work/astronomists.cs.md).
 
 5 z těchto projektů běží jako živé weby.
 

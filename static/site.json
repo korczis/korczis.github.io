@@ -122,8 +122,8 @@
  ],
  "front_matter_schema": "https://korczis.github.io/schemas/front-matter.schema.json",
  "data_as_of": {
-  "snapshot": "2026-11-25T08:55:51Z",
-  "index": "2026-11-25T09:05:03Z"
+  "snapshot": "2026-11-25T13:35:04Z",
+  "index": "2026-11-25T13:42:07Z"
  },
  "pages": [
   {
@@ -5599,9 +5599,9 @@
     "korczis",
     "prismatic-flipperzero",
     "oscilla",
+    "korczis.github.io",
     "prismatic-majordomus",
     "sonic-playground",
-    "korczis.github.io",
     "kompendium-epistemicke-anihilace",
     "algoglyph",
     "openttd-prismatic-bridge"
@@ -7426,7 +7426,7 @@
    "url": "https://korczis.github.io/cs/work/korczis-github-io/",
    "lang": "cs",
    "title": "korczis.github.io: Web, JavaScript, 2024–2026 · Tomáš Korčák",
-   "description": "korczis.github.io: projekt z kategorie Web, hlavní jazyk JavaScript, poslední commit 24. listopadu 2026.",
+   "description": "korczis.github.io: projekt z kategorie Web, hlavní jazyk JavaScript, poslední commit 25. listopadu 2026.",
    "type": "project",
    "category": "web",
    "og_image": "https://korczis.github.io/og/cs-work-korczis-github-io.png",
@@ -14875,9 +14875,9 @@
     "korczis",
     "prismatic-flipperzero",
     "oscilla",
+    "korczis.github.io",
     "prismatic-majordomus",
     "sonic-playground",
-    "korczis.github.io",
     "kompendium-epistemicke-anihilace",
     "algoglyph",
     "openttd-prismatic-bridge"
@@ -19159,27 +19159,6 @@
  ],
  "repositories": [
   {
-   "name": "prismatic-majordomus",
-   "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
-   "language": "Rust",
-   "category": "ai",
-   "page": "https://korczis.github.io/work/prismatic-majordomus/",
-   "pages": {
-    "en": "https://korczis.github.io/work/prismatic-majordomus/",
-    "cs": "https://korczis.github.io/cs/work/prismatic-majordomus/"
-   },
-   "github": "https://github.com/korczis/prismatic-majordomus",
-   "gitlab": null,
-   "site": "https://korczis.github.io/prismatic-majordomus/",
-   "created": "2026-09-03T20:24:57Z",
-   "active": "2026-11-25T08:54:59Z",
-   "last_commit": "2026-11-25T03:17:05Z",
-   "period": 12,
-   "archive": false,
-   "stars": 1,
-   "supervised": true
-  },
-  {
    "name": "prismatic-flipperzero",
    "description": "Prismatic for Flipper Zero: native FAP on its way to Prismatic Pocket, an offline evidence-first epistemic toolkit",
    "language": "C",
@@ -19193,8 +19172,8 @@
    "gitlab": null,
    "site": "https://korczis.github.io/prismatic-flipperzero/",
    "created": "2026-11-25T03:06:03Z",
-   "active": "2026-11-25T08:46:24Z",
-   "last_commit": "2026-11-25T08:45:50Z",
+   "active": "2026-11-25T13:32:25Z",
+   "last_commit": "2026-11-25T13:30:48Z",
    "period": 12,
    "archive": false,
    "stars": 0,
@@ -19214,11 +19193,53 @@
    "gitlab": null,
    "site": "https://korczis.github.io/oscilla/",
    "created": "2026-10-01T21:05:33Z",
-   "active": "2026-11-25T07:54:11Z",
-   "last_commit": "2026-11-25T06:58:09Z",
+   "active": "2026-11-25T13:07:24Z",
+   "last_commit": "2026-11-25T13:00:09Z",
    "period": 12,
    "archive": false,
    "stars": 1,
+   "supervised": true
+  },
+  {
+   "name": "prismatic-majordomus",
+   "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+   "language": "Rust",
+   "category": "ai",
+   "page": "https://korczis.github.io/work/prismatic-majordomus/",
+   "pages": {
+    "en": "https://korczis.github.io/work/prismatic-majordomus/",
+    "cs": "https://korczis.github.io/cs/work/prismatic-majordomus/"
+   },
+   "github": "https://github.com/korczis/prismatic-majordomus",
+   "gitlab": null,
+   "site": "https://korczis.github.io/prismatic-majordomus/",
+   "created": "2026-09-03T20:24:57Z",
+   "active": "2026-11-25T12:28:18Z",
+   "last_commit": "2026-11-25T03:17:05Z",
+   "period": 12,
+   "archive": false,
+   "stars": 1,
+   "supervised": true
+  },
+  {
+   "name": "korczis.github.io",
+   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+   "language": "JavaScript",
+   "category": "web",
+   "page": "https://korczis.github.io/work/korczis-github-io/",
+   "pages": {
+    "en": "https://korczis.github.io/work/korczis-github-io/",
+    "cs": "https://korczis.github.io/cs/work/korczis-github-io/"
+   },
+   "github": "https://github.com/korczis/korczis.github.io",
+   "gitlab": null,
+   "site": null,
+   "created": "2024-12-24T16:48:15Z",
+   "active": "2026-11-25T09:06:29Z",
+   "last_commit": "2026-11-25T09:05:39Z",
+   "period": 12,
+   "archive": false,
+   "stars": 0,
    "supervised": true
   },
   {
@@ -19237,27 +19258,6 @@
    "created": "2026-11-12T00:48:36Z",
    "active": "2026-11-25T03:12:46Z",
    "last_commit": "2026-11-25T01:50:09Z",
-   "period": 12,
-   "archive": false,
-   "stars": 0,
-   "supervised": true
-  },
-  {
-   "name": "korczis.github.io",
-   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-   "language": "JavaScript",
-   "category": "web",
-   "page": "https://korczis.github.io/work/korczis-github-io/",
-   "pages": {
-    "en": "https://korczis.github.io/work/korczis-github-io/",
-    "cs": "https://korczis.github.io/cs/work/korczis-github-io/"
-   },
-   "github": "https://github.com/korczis/korczis.github.io",
-   "gitlab": null,
-   "site": null,
-   "created": "2024-12-24T16:48:15Z",
-   "active": "2026-11-24T23:41:30Z",
-   "last_commit": "2026-11-24T23:40:41Z",
    "period": 12,
    "archive": false,
    "stars": 0,

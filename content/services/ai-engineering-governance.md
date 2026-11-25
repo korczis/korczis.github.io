@@ -14,7 +14,7 @@ icon = "code"
 og_title = "Governed AI-assisted software delivery"
 og_image = "og/service-ai-engineering-governance.png"
 schema = "service"
-terms = ["service", "rust", "mcp", "claude-api", "majordomus", "github-actions", "policy-as-code", "ai-agent", "audit-trail", "orchestration", "contestability", "html", "javascript", "shell", "flowbite-pro", "python", "alpine-js", "tailwind-css", "github-pages", "playwright", "dockerfile"]
+terms = ["service", "rust", "mcp", "claude-api", "majordomus", "github-actions", "policy-as-code", "ai-agent", "audit-trail", "orchestration", "contestability", "html", "javascript", "shell", "flowbite-pro", "python", "alpine-js", "tailwind-css", "github-pages", "playwright", "css"]
 keywords = ["Governed AI-assisted software delivery", "Policy as code", "LLM agents", "Audit trail", "Orchestration", "AI transformation", "Contestable decisions", "Tomas Korcak"]
 
 [[extra.viz]]
@@ -36,7 +36,7 @@ It is built with [Rust](@/glossary/rust.md), [MCP](@/glossary/mcp.md), [Claude A
 
 The technologies behind it, measured from the work that shows those skills: [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md), [Shell](@/glossary/shell.md), [Flowbite Pro](@/glossary/flowbite-pro.md), [Python](@/glossary/python.md), [Alpine.js](@/glossary/alpine-js.md), [Tailwind CSS](@/glossary/tailwind-css.md) and [GitHub Pages](@/glossary/github-pages.md).
 
-13 public repositories show its skills (13 by their own words).
+15 public repositories show its skills (15 by their own words).
 
 It was delivered in client work under confidentiality agreements, in Real-estate developer and Financial and investment group, as Architect, Lead engineer, AI engineer, Data engineer, Investigator and Advisor; the use cases describe the principle and the intent, never a client, person, date or number.
 

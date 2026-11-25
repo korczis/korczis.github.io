@@ -17,7 +17,7 @@ definition = "The record of who acquired a piece of evidence, when and how, and 
 aliases = []
 reference = { title = "NIST CSRC: chain of custody", url = "https://csrc.nist.gov/glossary/term/chain_of_custody" }
 pages = ["services/_index.md", "services/digital-forensics.md", "skills/_index.md", "skills/chain-of-custody.md"]
-related = ["dockerfile", "javascript", "alpine-js", "attack-surface", "audit-trail", "digital-forensics", "flowbite-pro", "html"]
+related = ["dockerfile", "javascript", "alpine-js", "attack-surface", "audit-trail", "digital-forensics", "html", "nodejs"]
 og_title = "Chain of custody: glossary"
 og_image = "og/glossary-chain-of-custody.png"
 keywords = ["Chain of custody", "Concept", "Glossary", "Tomas Korcak"]

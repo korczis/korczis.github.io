@@ -36,7 +36,7 @@ Je postavená na: [Apache ECharts](@/glossary/apache-echarts.cs.md), [D3.js](@/g
 
 Technologie za ní, změřené z práce, která tyto dovednosti dokládá: [JavaScript](@/glossary/javascript.cs.md), [HTML](@/glossary/html.cs.md), [Shell](@/glossary/shell.cs.md), [Node.js](@/glossary/nodejs.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md), [Elixir](@/glossary/elixir.cs.md), [Tailwind CSS](@/glossary/tailwind-css.cs.md) a [Flowbite Pro](@/glossary/flowbite-pro.cs.md).
 
-Její dovednosti dokládá 24 veřejných repozitářů (24 vlastními slovy).
+Její dovednosti dokládá 25 veřejných repozitářů (25 vlastními slovy).
 
 Byla dodána v klientské práci pod dohodami o mlčenlivosti, v odvětví: Developer nemovitostí a Finanční a investiční skupina, v roli: Architekt, Vedoucí inženýr, Inženýr AI, Datový inženýr, Analytik šetření a Poradce; případy užití popisují princip a záměr, nikdy klienta, osobu, datum ani číslo.
 

@@ -4,7 +4,7 @@ title = "prismatic-flipperzero"
 description = "Prismatic for Flipper Zero: native FAP on its way to Prismatic Pocket, an offline evidence-first epistemic toolkit"
 template = "work.html"
 weight = 1
-updated = "2026-11-25T08:45:50Z"
+updated = "2026-11-25T13:30:48Z"
 
 [taxonomies]
 tags = ["Tools", "Python", "JavaScript"]
@@ -28,9 +28,9 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**prismatic-flipperzero** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [C](@/glossary/c.md) (40.3 %), with [Python](@/glossary/python.md), [JavaScript](@/glossary/javascript.md) and [Shell](@/glossary/shell.md).
+**prismatic-flipperzero** is a project in [Tools](@/projects/tools.md). Its code is written mainly in [C](@/glossary/c.md) (46.8 %), with [Python](@/glossary/python.md), [JavaScript](@/glossary/javascript.md) and [Shell](@/glossary/shell.md).
 
-The [repository](@/glossary/repository.md) was created on 25 November 2026; its latest [commit](@/glossary/commit.md) is from 25 November 2026. It reads “feat(ui): information architecture of four hubs on a tile grid”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created on 25 November 2026; its latest [commit](@/glossary/commit.md) is from 25 November 2026. It reads “feat(site): simulations, scorecards and calculators are interactive in the browser”. That places it among the projects active in the last 12 months.
 
 It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/prismatic-flipperzero/>.
 
@@ -38,4 +38,4 @@ Its source is on [GitHub](https://github.com/korczis/prismatic-flipperzero).
 
 Related work in [Tools](@/projects/tools.md): [Gists search](@/work/gists-search.md) (2026), [vomaste.cz](@/work/vomaste-cz.md) (2026), [astronomists](@/work/astronomists.md) (2026) and [prismatic](@/work/prismatic.md) (2025).
 
-*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 19 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).
+*How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 30 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

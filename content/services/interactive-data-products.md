@@ -36,7 +36,7 @@ It is built with [Apache ECharts](@/glossary/apache-echarts.md), [D3.js](@/gloss
 
 The technologies behind it, measured from the work that shows those skills: [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md), [Shell](@/glossary/shell.md), [Node.js](@/glossary/nodejs.md), [Dockerfile](@/glossary/dockerfile.md), [Elixir](@/glossary/elixir.md), [Tailwind CSS](@/glossary/tailwind-css.md) and [Flowbite Pro](@/glossary/flowbite-pro.md).
 
-24 public repositories show its skills (24 by their own words).
+25 public repositories show its skills (25 by their own words).
 
 It was delivered in client work under confidentiality agreements, in Real-estate developer and Financial and investment group, as Architect, Lead engineer, AI engineer, Data engineer, Investigator and Advisor; the use cases describe the principle and the intent, never a client, person, date or number.
 

@@ -14,7 +14,7 @@ icon = "code"
 og_title = "Řízený vývoj softwaru s AI"
 og_image = "og/cs-service-ai-engineering-governance.png"
 schema = "service"
-terms = ["service", "rust", "mcp", "claude-api", "majordomus", "github-actions", "policy-as-code", "ai-agent", "audit-trail", "orchestration", "contestability", "html", "javascript", "shell", "flowbite-pro", "python", "alpine-js", "tailwind-css", "github-pages", "playwright", "dockerfile"]
+terms = ["service", "rust", "mcp", "claude-api", "majordomus", "github-actions", "policy-as-code", "ai-agent", "audit-trail", "orchestration", "contestability", "html", "javascript", "shell", "flowbite-pro", "python", "alpine-js", "tailwind-css", "github-pages", "playwright", "css"]
 keywords = ["Řízený vývoj softwaru s AI", "Pravidla jako kód", "Agenti s LLM", "Auditní stopa", "Orchestrace", "Transformace s AI", "Napadnutelná rozhodnutí", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -36,7 +36,7 @@ Je postavená na: [Rust](@/glossary/rust.cs.md), [MCP](@/glossary/mcp.cs.md), [C
 
 Technologie za ní, změřené z práce, která tyto dovednosti dokládá: [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Shell](@/glossary/shell.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md), [Python](@/glossary/python.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md), [Tailwind CSS](@/glossary/tailwind-css.cs.md) a [GitHub Pages](@/glossary/github-pages.cs.md).
 
-Její dovednosti dokládá 13 veřejných repozitářů (13 vlastními slovy).
+Její dovednosti dokládá 15 veřejných repozitářů (15 vlastními slovy).
 
 Byla dodána v klientské práci pod dohodami o mlčenlivosti, v odvětví: Developer nemovitostí a Finanční a investiční skupina, v roli: Architekt, Vedoucí inženýr, Inženýr AI, Datový inženýr, Analytik šetření a Poradce; případy užití popisují princip a záměr, nikdy klienta, osobu, datum ani číslo.
 

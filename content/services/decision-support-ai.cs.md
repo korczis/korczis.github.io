@@ -36,7 +36,7 @@ Je postavená na: [Elixir](@/glossary/elixir.cs.md), [MCP](@/glossary/mcp.cs.md)
 
 Technologie za ní, změřené z práce, která tyto dovednosti dokládá: [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Shell](@/glossary/shell.cs.md), [Python](@/glossary/python.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md), [Dockerfile](@/glossary/dockerfile.cs.md), [PostgreSQL](@/glossary/postgresql.cs.md) a [Alpine.js](@/glossary/alpine-js.cs.md).
 
-Její dovednosti dokládá 11 veřejných repozitářů (11 vlastními slovy).
+Její dovednosti dokládá 12 veřejných repozitářů (12 vlastními slovy).
 
 Byla dodána v klientské práci pod dohodami o mlčenlivosti, v odvětví: Developer nemovitostí a Finanční a investiční skupina, v roli: Architekt, Vedoucí inženýr, Inženýr AI, Datový inženýr, Analytik šetření a Poradce; případy užití popisují princip a záměr, nikdy klienta, osobu, datum ani číslo.
 

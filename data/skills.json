@@ -980,6 +980,46 @@
       ],
       "repos": [
         {
+          "name": "korczis.github.io",
+          "title": "korczis.github.io",
+          "url": "https://github.com/korczis/korczis.github.io",
+          "work": true,
+          "slug": "korczis-github-io",
+          "site": null,
+          "category": "web",
+          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2024-12-24",
+          "pushed": "2026-11-25",
+          "primary": true,
+          "share": 61.9,
+          "via": [
+            "primary",
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Alpine.js",
+            "Cytoscape.js",
+            "Apache ECharts",
+            "Flowbite Pro",
+            "GitHub Pages",
+            "Majordomus",
+            "p5.js",
+            "Tailwind CSS",
+            "Zola",
+            "Tera",
+            "D3.js",
+            "Node.js",
+            "Playwright",
+            "axe-core"
+          ]
+        },
+        {
           "name": "oscilla",
           "title": "Oscilla",
           "url": "https://github.com/korczis/oscilla",
@@ -1031,7 +1071,7 @@
           "created": "2026-11-25",
           "pushed": "2026-11-25",
           "primary": false,
-          "share": 14,
+          "share": 11.1,
           "via": [
             "code"
           ],
@@ -1041,8 +1081,7 @@
             "Python",
             "JavaScript",
             "Shell",
-            "HTML",
-            "Just"
+            "HTML"
           ]
         },
         {
@@ -1112,46 +1151,6 @@
             "Flowbite Pro",
             "JSON Schema",
             "GitHub Pages"
-          ]
-        },
-        {
-          "name": "korczis.github.io",
-          "title": "korczis.github.io",
-          "url": "https://github.com/korczis/korczis.github.io",
-          "work": true,
-          "slug": "korczis-github-io",
-          "site": null,
-          "category": "web",
-          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-          "summary": null,
-          "summary_cs": null,
-          "created": "2024-12-24",
-          "pushed": "2026-11-24",
-          "primary": true,
-          "share": 61.9,
-          "via": [
-            "primary",
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Alpine.js",
-            "Cytoscape.js",
-            "Apache ECharts",
-            "Flowbite Pro",
-            "GitHub Pages",
-            "Majordomus",
-            "p5.js",
-            "Tailwind CSS",
-            "Zola",
-            "Tera",
-            "D3.js",
-            "Node.js",
-            "Playwright",
-            "axe-core"
           ]
         },
         {
@@ -7461,7 +7460,7 @@
           "created": "2026-11-25",
           "pushed": "2026-11-25",
           "primary": false,
-          "share": 35.2,
+          "share": 33.5,
           "via": [
             "code"
           ],
@@ -7471,8 +7470,7 @@
             "Python",
             "JavaScript",
             "Shell",
-            "HTML",
-            "Just"
+            "HTML"
           ]
         },
         {
@@ -8196,7 +8194,7 @@
           "created": "2026-11-25",
           "pushed": "2026-11-25",
           "primary": false,
-          "share": 7.3,
+          "share": 6.5,
           "via": [
             "code"
           ],
@@ -8206,8 +8204,7 @@
             "Python",
             "JavaScript",
             "Shell",
-            "HTML",
-            "Just"
+            "HTML"
           ]
         },
         {
@@ -9584,6 +9581,45 @@
       ],
       "repos": [
         {
+          "name": "korczis.github.io",
+          "title": "korczis.github.io",
+          "url": "https://github.com/korczis/korczis.github.io",
+          "work": true,
+          "slug": "korczis-github-io",
+          "site": null,
+          "category": "web",
+          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2024-12-24",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": 36.1,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Alpine.js",
+            "Cytoscape.js",
+            "Apache ECharts",
+            "Flowbite Pro",
+            "GitHub Pages",
+            "Majordomus",
+            "p5.js",
+            "Tailwind CSS",
+            "Zola",
+            "Tera",
+            "D3.js",
+            "Node.js",
+            "Playwright",
+            "axe-core"
+          ]
+        },
+        {
           "name": "oscilla",
           "title": "Oscilla",
           "url": "https://github.com/korczis/oscilla",
@@ -9631,7 +9667,7 @@
           "created": "2026-11-25",
           "pushed": "2026-11-25",
           "primary": false,
-          "share": 2.1,
+          "share": 1.4,
           "via": [
             "code"
           ],
@@ -9641,8 +9677,7 @@
             "Python",
             "JavaScript",
             "Shell",
-            "HTML",
-            "Just"
+            "HTML"
           ]
         },
         {
@@ -9711,45 +9746,6 @@
             "Flowbite Pro",
             "JSON Schema",
             "GitHub Pages"
-          ]
-        },
-        {
-          "name": "korczis.github.io",
-          "title": "korczis.github.io",
-          "url": "https://github.com/korczis/korczis.github.io",
-          "work": true,
-          "slug": "korczis-github-io",
-          "site": null,
-          "category": "web",
-          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-          "summary": null,
-          "summary_cs": null,
-          "created": "2024-12-24",
-          "pushed": "2026-11-24",
-          "primary": false,
-          "share": 36.1,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Alpine.js",
-            "Cytoscape.js",
-            "Apache ECharts",
-            "Flowbite Pro",
-            "GitHub Pages",
-            "Majordomus",
-            "p5.js",
-            "Tailwind CSS",
-            "Zola",
-            "Tera",
-            "D3.js",
-            "Node.js",
-            "Playwright",
-            "axe-core"
           ]
         },
         {
@@ -10882,6 +10878,45 @@
       ],
       "repos": [
         {
+          "name": "korczis.github.io",
+          "title": "korczis.github.io",
+          "url": "https://github.com/korczis/korczis.github.io",
+          "work": true,
+          "slug": "korczis-github-io",
+          "site": null,
+          "category": "web",
+          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2024-12-24",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": 1.1,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Alpine.js",
+            "Cytoscape.js",
+            "Apache ECharts",
+            "Flowbite Pro",
+            "GitHub Pages",
+            "Majordomus",
+            "p5.js",
+            "Tailwind CSS",
+            "Zola",
+            "Tera",
+            "D3.js",
+            "Node.js",
+            "Playwright",
+            "axe-core"
+          ]
+        },
+        {
           "name": "oscilla",
           "title": "Oscilla",
           "url": "https://github.com/korczis/oscilla",
@@ -10947,45 +10982,6 @@
             "Flowbite Pro",
             "JSON Schema",
             "GitHub Pages"
-          ]
-        },
-        {
-          "name": "korczis.github.io",
-          "title": "korczis.github.io",
-          "url": "https://github.com/korczis/korczis.github.io",
-          "work": true,
-          "slug": "korczis-github-io",
-          "site": null,
-          "category": "web",
-          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-          "summary": null,
-          "summary_cs": null,
-          "created": "2024-12-24",
-          "pushed": "2026-11-24",
-          "primary": false,
-          "share": 1.1,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Alpine.js",
-            "Cytoscape.js",
-            "Apache ECharts",
-            "Flowbite Pro",
-            "GitHub Pages",
-            "Majordomus",
-            "p5.js",
-            "Tailwind CSS",
-            "Zola",
-            "Tera",
-            "D3.js",
-            "Node.js",
-            "Playwright",
-            "axe-core"
           ]
         },
         {
@@ -11796,7 +11792,7 @@
           "created": "2026-11-25",
           "pushed": "2026-11-25",
           "primary": true,
-          "share": 40.3,
+          "share": 46.8,
           "via": [
             "primary",
             "code"
@@ -11807,8 +11803,7 @@
             "Python",
             "JavaScript",
             "Shell",
-            "HTML",
-            "Just"
+            "HTML"
           ]
         },
         {
@@ -14038,6 +14033,46 @@
       ],
       "repos": [
         {
+          "name": "korczis.github.io",
+          "title": "korczis.github.io",
+          "url": "https://github.com/korczis/korczis.github.io",
+          "work": true,
+          "slug": "korczis-github-io",
+          "site": null,
+          "category": "web",
+          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2024-12-24",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": null,
+          "via": [
+            "topic",
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Alpine.js",
+            "Cytoscape.js",
+            "Apache ECharts",
+            "Flowbite Pro",
+            "GitHub Pages",
+            "Majordomus",
+            "p5.js",
+            "Tailwind CSS",
+            "Zola",
+            "Tera",
+            "D3.js",
+            "Node.js",
+            "Playwright",
+            "axe-core"
+          ]
+        },
+        {
           "name": "oscilla",
           "title": "Oscilla",
           "url": "https://github.com/korczis/oscilla",
@@ -14103,46 +14138,6 @@
             "Flowbite Pro",
             "JSON Schema",
             "GitHub Pages"
-          ]
-        },
-        {
-          "name": "korczis.github.io",
-          "title": "korczis.github.io",
-          "url": "https://github.com/korczis/korczis.github.io",
-          "work": true,
-          "slug": "korczis-github-io",
-          "site": null,
-          "category": "web",
-          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-          "summary": null,
-          "summary_cs": null,
-          "created": "2024-12-24",
-          "pushed": "2026-11-24",
-          "primary": false,
-          "share": null,
-          "via": [
-            "topic",
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Alpine.js",
-            "Cytoscape.js",
-            "Apache ECharts",
-            "Flowbite Pro",
-            "GitHub Pages",
-            "Majordomus",
-            "p5.js",
-            "Tailwind CSS",
-            "Zola",
-            "Tera",
-            "D3.js",
-            "Node.js",
-            "Playwright",
-            "axe-core"
           ]
         },
         {
@@ -14488,6 +14483,46 @@
       ],
       "repos": [
         {
+          "name": "korczis.github.io",
+          "title": "korczis.github.io",
+          "url": "https://github.com/korczis/korczis.github.io",
+          "work": true,
+          "slug": "korczis-github-io",
+          "site": null,
+          "category": "web",
+          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2024-12-24",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": null,
+          "via": [
+            "topic",
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Alpine.js",
+            "Cytoscape.js",
+            "Apache ECharts",
+            "Flowbite Pro",
+            "GitHub Pages",
+            "Majordomus",
+            "p5.js",
+            "Tailwind CSS",
+            "Zola",
+            "Tera",
+            "D3.js",
+            "Node.js",
+            "Playwright",
+            "axe-core"
+          ]
+        },
+        {
           "name": "oscilla",
           "title": "Oscilla",
           "url": "https://github.com/korczis/oscilla",
@@ -14553,46 +14588,6 @@
             "Flowbite Pro",
             "JSON Schema",
             "GitHub Pages"
-          ]
-        },
-        {
-          "name": "korczis.github.io",
-          "title": "korczis.github.io",
-          "url": "https://github.com/korczis/korczis.github.io",
-          "work": true,
-          "slug": "korczis-github-io",
-          "site": null,
-          "category": "web",
-          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-          "summary": null,
-          "summary_cs": null,
-          "created": "2024-12-24",
-          "pushed": "2026-11-24",
-          "primary": false,
-          "share": null,
-          "via": [
-            "topic",
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Alpine.js",
-            "Cytoscape.js",
-            "Apache ECharts",
-            "Flowbite Pro",
-            "GitHub Pages",
-            "Majordomus",
-            "p5.js",
-            "Tailwind CSS",
-            "Zola",
-            "Tera",
-            "D3.js",
-            "Node.js",
-            "Playwright",
-            "axe-core"
           ]
         },
         {
@@ -15100,6 +15095,46 @@
       ],
       "repos": [
         {
+          "name": "korczis.github.io",
+          "title": "korczis.github.io",
+          "url": "https://github.com/korczis/korczis.github.io",
+          "work": true,
+          "slug": "korczis-github-io",
+          "site": null,
+          "category": "web",
+          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2024-12-24",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": null,
+          "via": [
+            "topic",
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Alpine.js",
+            "Cytoscape.js",
+            "Apache ECharts",
+            "Flowbite Pro",
+            "GitHub Pages",
+            "Majordomus",
+            "p5.js",
+            "Tailwind CSS",
+            "Zola",
+            "Tera",
+            "D3.js",
+            "Node.js",
+            "Playwright",
+            "axe-core"
+          ]
+        },
+        {
           "name": "oscilla",
           "title": "Oscilla",
           "url": "https://github.com/korczis/oscilla",
@@ -15131,46 +15166,6 @@
             "Playwright",
             "axe-core",
             "GitHub Pages"
-          ]
-        },
-        {
-          "name": "korczis.github.io",
-          "title": "korczis.github.io",
-          "url": "https://github.com/korczis/korczis.github.io",
-          "work": true,
-          "slug": "korczis-github-io",
-          "site": null,
-          "category": "web",
-          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-          "summary": null,
-          "summary_cs": null,
-          "created": "2024-12-24",
-          "pushed": "2026-11-24",
-          "primary": false,
-          "share": null,
-          "via": [
-            "topic",
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Alpine.js",
-            "Cytoscape.js",
-            "Apache ECharts",
-            "Flowbite Pro",
-            "GitHub Pages",
-            "Majordomus",
-            "p5.js",
-            "Tailwind CSS",
-            "Zola",
-            "Tera",
-            "D3.js",
-            "Node.js",
-            "Playwright",
-            "axe-core"
           ]
         },
         {
@@ -15408,7 +15403,7 @@
           "summary": null,
           "summary_cs": null,
           "created": "2024-12-24",
-          "pushed": "2026-11-24",
+          "pushed": "2026-11-25",
           "primary": false,
           "share": null,
           "via": [
@@ -15554,7 +15549,7 @@
           "summary": null,
           "summary_cs": null,
           "created": "2024-12-24",
-          "pushed": "2026-11-24",
+          "pushed": "2026-11-25",
           "primary": false,
           "share": null,
           "via": [
@@ -15742,7 +15737,7 @@
           "summary": null,
           "summary_cs": null,
           "created": "2024-12-24",
-          "pushed": "2026-11-24",
+          "pushed": "2026-11-25",
           "primary": false,
           "share": null,
           "via": [
@@ -15804,6 +15799,46 @@
       ],
       "repos": [
         {
+          "name": "korczis.github.io",
+          "title": "korczis.github.io",
+          "url": "https://github.com/korczis/korczis.github.io",
+          "work": true,
+          "slug": "korczis-github-io",
+          "site": null,
+          "category": "web",
+          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2024-12-24",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": null,
+          "via": [
+            "topic",
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Alpine.js",
+            "Cytoscape.js",
+            "Apache ECharts",
+            "Flowbite Pro",
+            "GitHub Pages",
+            "Majordomus",
+            "p5.js",
+            "Tailwind CSS",
+            "Zola",
+            "Tera",
+            "D3.js",
+            "Node.js",
+            "Playwright",
+            "axe-core"
+          ]
+        },
+        {
           "name": "oscilla",
           "title": "Oscilla",
           "url": "https://github.com/korczis/oscilla",
@@ -15835,46 +15870,6 @@
             "Playwright",
             "axe-core",
             "GitHub Pages"
-          ]
-        },
-        {
-          "name": "korczis.github.io",
-          "title": "korczis.github.io",
-          "url": "https://github.com/korczis/korczis.github.io",
-          "work": true,
-          "slug": "korczis-github-io",
-          "site": null,
-          "category": "web",
-          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-          "summary": null,
-          "summary_cs": null,
-          "created": "2024-12-24",
-          "pushed": "2026-11-24",
-          "primary": false,
-          "share": null,
-          "via": [
-            "topic",
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Alpine.js",
-            "Cytoscape.js",
-            "Apache ECharts",
-            "Flowbite Pro",
-            "GitHub Pages",
-            "Majordomus",
-            "p5.js",
-            "Tailwind CSS",
-            "Zola",
-            "Tera",
-            "D3.js",
-            "Node.js",
-            "Playwright",
-            "axe-core"
           ]
         },
         {
@@ -16028,6 +16023,46 @@
       ],
       "repos": [
         {
+          "name": "korczis.github.io",
+          "title": "korczis.github.io",
+          "url": "https://github.com/korczis/korczis.github.io",
+          "work": true,
+          "slug": "korczis-github-io",
+          "site": null,
+          "category": "web",
+          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2024-12-24",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": null,
+          "via": [
+            "topic",
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Alpine.js",
+            "Cytoscape.js",
+            "Apache ECharts",
+            "Flowbite Pro",
+            "GitHub Pages",
+            "Majordomus",
+            "p5.js",
+            "Tailwind CSS",
+            "Zola",
+            "Tera",
+            "D3.js",
+            "Node.js",
+            "Playwright",
+            "axe-core"
+          ]
+        },
+        {
           "name": "prismatic-majordomus",
           "title": "Majordomus",
           "url": "https://github.com/korczis/prismatic-majordomus",
@@ -16093,46 +16128,6 @@
             "Flowbite Pro",
             "JSON Schema",
             "GitHub Pages"
-          ]
-        },
-        {
-          "name": "korczis.github.io",
-          "title": "korczis.github.io",
-          "url": "https://github.com/korczis/korczis.github.io",
-          "work": true,
-          "slug": "korczis-github-io",
-          "site": null,
-          "category": "web",
-          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-          "summary": null,
-          "summary_cs": null,
-          "created": "2024-12-24",
-          "pushed": "2026-11-24",
-          "primary": false,
-          "share": null,
-          "via": [
-            "topic",
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Alpine.js",
-            "Cytoscape.js",
-            "Apache ECharts",
-            "Flowbite Pro",
-            "GitHub Pages",
-            "Majordomus",
-            "p5.js",
-            "Tailwind CSS",
-            "Zola",
-            "Tera",
-            "D3.js",
-            "Node.js",
-            "Playwright",
-            "axe-core"
           ]
         },
         {
@@ -16418,7 +16413,7 @@
           "summary": null,
           "summary_cs": null,
           "created": "2024-12-24",
-          "pushed": "2026-11-24",
+          "pushed": "2026-11-25",
           "primary": false,
           "share": null,
           "via": [
@@ -17761,6 +17756,46 @@
       ],
       "repos": [
         {
+          "name": "korczis.github.io",
+          "title": "korczis.github.io",
+          "url": "https://github.com/korczis/korczis.github.io",
+          "work": true,
+          "slug": "korczis-github-io",
+          "site": null,
+          "category": "web",
+          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2024-12-24",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": null,
+          "via": [
+            "topic",
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Alpine.js",
+            "Cytoscape.js",
+            "Apache ECharts",
+            "Flowbite Pro",
+            "GitHub Pages",
+            "Majordomus",
+            "p5.js",
+            "Tailwind CSS",
+            "Zola",
+            "Tera",
+            "D3.js",
+            "Node.js",
+            "Playwright",
+            "axe-core"
+          ]
+        },
+        {
           "name": "oscilla",
           "title": "Oscilla",
           "url": "https://github.com/korczis/oscilla",
@@ -17826,46 +17861,6 @@
             "Flowbite Pro",
             "JSON Schema",
             "GitHub Pages"
-          ]
-        },
-        {
-          "name": "korczis.github.io",
-          "title": "korczis.github.io",
-          "url": "https://github.com/korczis/korczis.github.io",
-          "work": true,
-          "slug": "korczis-github-io",
-          "site": null,
-          "category": "web",
-          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-          "summary": null,
-          "summary_cs": null,
-          "created": "2024-12-24",
-          "pushed": "2026-11-24",
-          "primary": false,
-          "share": null,
-          "via": [
-            "topic",
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Alpine.js",
-            "Cytoscape.js",
-            "Apache ECharts",
-            "Flowbite Pro",
-            "GitHub Pages",
-            "Majordomus",
-            "p5.js",
-            "Tailwind CSS",
-            "Zola",
-            "Tera",
-            "D3.js",
-            "Node.js",
-            "Playwright",
-            "axe-core"
           ]
         },
         {
@@ -18811,10 +18806,10 @@
       "name": "Just",
       "kind": "language",
       "counts": {
-        "repos": 6,
+        "repos": 5,
         "primary": 1,
-        "sites": 5,
-        "work": 6,
+        "sites": 4,
+        "work": 5,
         "engagements": 0
       },
       "first": 2025,
@@ -18822,7 +18817,7 @@
       "categories": [
         {
           "key": "tools",
-          "n": 4
+          "n": 3
         },
         {
           "key": "data",
@@ -18834,34 +18829,6 @@
         }
       ],
       "repos": [
-        {
-          "name": "prismatic-flipperzero",
-          "title": "prismatic-flipperzero",
-          "url": "https://github.com/korczis/prismatic-flipperzero",
-          "work": true,
-          "slug": "prismatic-flipperzero",
-          "site": "https://korczis.github.io/prismatic-flipperzero/",
-          "category": "tools",
-          "description": "Prismatic for Flipper Zero: native FAP on its way to Prismatic Pocket, an offline evidence-first epistemic toolkit",
-          "summary": null,
-          "summary_cs": null,
-          "created": "2026-11-25",
-          "pushed": "2026-11-25",
-          "primary": false,
-          "share": 1,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "C",
-            "Python",
-            "JavaScript",
-            "Shell",
-            "HTML",
-            "Just"
-          ]
-        },
         {
           "name": "data-atlas",
           "title": "Data Atlas",
@@ -20135,6 +20102,45 @@
       ],
       "repos": [
         {
+          "name": "korczis.github.io",
+          "title": "korczis.github.io",
+          "url": "https://github.com/korczis/korczis.github.io",
+          "work": true,
+          "slug": "korczis-github-io",
+          "site": null,
+          "category": "web",
+          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2024-12-24",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Alpine.js",
+            "Cytoscape.js",
+            "Apache ECharts",
+            "Flowbite Pro",
+            "GitHub Pages",
+            "Majordomus",
+            "p5.js",
+            "Tailwind CSS",
+            "Zola",
+            "Tera",
+            "D3.js",
+            "Node.js",
+            "Playwright",
+            "axe-core"
+          ]
+        },
+        {
           "name": "oscilla",
           "title": "Oscilla",
           "url": "https://github.com/korczis/oscilla",
@@ -20166,45 +20172,6 @@
             "Playwright",
             "axe-core",
             "GitHub Pages"
-          ]
-        },
-        {
-          "name": "korczis.github.io",
-          "title": "korczis.github.io",
-          "url": "https://github.com/korczis/korczis.github.io",
-          "work": true,
-          "slug": "korczis-github-io",
-          "site": null,
-          "category": "web",
-          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-          "summary": null,
-          "summary_cs": null,
-          "created": "2024-12-24",
-          "pushed": "2026-11-24",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Alpine.js",
-            "Cytoscape.js",
-            "Apache ECharts",
-            "Flowbite Pro",
-            "GitHub Pages",
-            "Majordomus",
-            "p5.js",
-            "Tailwind CSS",
-            "Zola",
-            "Tera",
-            "D3.js",
-            "Node.js",
-            "Playwright",
-            "axe-core"
           ]
         },
         {
@@ -22627,7 +22594,7 @@
           "summary": null,
           "summary_cs": null,
           "created": "2024-12-24",
-          "pushed": "2026-11-24",
+          "pushed": "2026-11-25",
           "primary": false,
           "share": null,
           "via": [
@@ -33012,6 +32979,45 @@
       ],
       "repos": [
         {
+          "name": "korczis.github.io",
+          "title": "korczis.github.io",
+          "url": "https://github.com/korczis/korczis.github.io",
+          "work": true,
+          "slug": "korczis-github-io",
+          "site": null,
+          "category": "web",
+          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2024-12-24",
+          "pushed": "2026-11-25",
+          "primary": false,
+          "share": null,
+          "via": [
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Alpine.js",
+            "Cytoscape.js",
+            "Apache ECharts",
+            "Flowbite Pro",
+            "GitHub Pages",
+            "Majordomus",
+            "p5.js",
+            "Tailwind CSS",
+            "Zola",
+            "Tera",
+            "D3.js",
+            "Node.js",
+            "Playwright",
+            "axe-core"
+          ]
+        },
+        {
           "name": "oscilla",
           "title": "Oscilla",
           "url": "https://github.com/korczis/oscilla",
@@ -33043,45 +33049,6 @@
             "Playwright",
             "axe-core",
             "GitHub Pages"
-          ]
-        },
-        {
-          "name": "korczis.github.io",
-          "title": "korczis.github.io",
-          "url": "https://github.com/korczis/korczis.github.io",
-          "work": true,
-          "slug": "korczis-github-io",
-          "site": null,
-          "category": "web",
-          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-          "summary": null,
-          "summary_cs": null,
-          "created": "2024-12-24",
-          "pushed": "2026-11-24",
-          "primary": false,
-          "share": null,
-          "via": [
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Alpine.js",
-            "Cytoscape.js",
-            "Apache ECharts",
-            "Flowbite Pro",
-            "GitHub Pages",
-            "Majordomus",
-            "p5.js",
-            "Tailwind CSS",
-            "Zola",
-            "Tera",
-            "D3.js",
-            "Node.js",
-            "Playwright",
-            "axe-core"
           ]
         },
         {
@@ -38482,7 +38449,7 @@
           "summary": null,
           "summary_cs": null,
           "created": "2024-12-24",
-          "pushed": "2026-11-24",
+          "pushed": "2026-11-25",
           "primary": false,
           "share": null,
           "via": [

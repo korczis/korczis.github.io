@@ -4,7 +4,7 @@ title = "Tools"
 description = "Small, sharp command-line tools and indexes: data conversion, CSV to SQL, gist search."
 template = "category.html"
 weight = 11
-updated = "2026-11-25T08:46:24Z"
+updated = "2026-11-25T13:32:25Z"
 
 [taxonomies]
 tags = ["Tools", "Gists search", "json2csv", "csv2psql", "prismatic-flipperzero"]

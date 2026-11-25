@@ -40,12 +40,12 @@ span = 3
 height = "md"
 tone = "night"
 +++
-Just jsem psal v 6 veřejných repozitářích, od roku 2025 do 2026; v 1 z nich je hlavním jazykem.
+Just jsem psal v 5 veřejných repozitářích, od roku 2025 do 2026; v 1 z nich je hlavním jazykem.
 
-K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (4), [Data a GIS](@/projects/data.cs.md) (1) a [Bezpečnost a OSINT](@/projects/security.cs.md) (1).
+K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (3), [Data a GIS](@/projects/data.cs.md) (1) a [Bezpečnost a OSINT](@/projects/security.cs.md) (1).
 
-Naposledy: [prismatic-flipperzero](@/work/prismatic-flipperzero.cs.md); [Data Atlas](@/work/data-atlas.cs.md): Datové sady, katastr, doprava, dálkový průzkum a prostorová analytika na jedné prohledávatelné stránce; [vomaste.cz](@/work/vomaste-cz.cs.md).
+Naposledy: [Data Atlas](@/work/data-atlas.cs.md): Datové sady, katastr, doprava, dálkový průzkum a prostorová analytika na jedné prohledávatelné stránce; [vomaste.cz](@/work/vomaste-cz.cs.md); [Gists search](@/work/gists-search.cs.md): Prohledávatelný index nad zrcadlem mých GitHub gistů.
 
-5 z těchto projektů běží jako živé weby.
+4 z těchto projektů běží jako živé weby.
 
 Jak číst doklady: každý [repozitář](@/glossary/repository.cs.md) níže je změřený z GitHubu a GitLabu (každých 6 hodin) a říká, jak Just používá: jako hlavní jazyk, měřeným podílem kódu, v deklarovaném stacku nebo jako téma. Graf referencí spojuje Just s repozitáři a s dalšími jazyky a technologiemi, které spolu používají.

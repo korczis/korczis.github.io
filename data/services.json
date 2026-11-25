@@ -1000,6 +1000,19 @@
           "skill": "media-forensics"
         },
         {
+          "name": "prismatic-flipperzero",
+          "title": "prismatic-flipperzero",
+          "how": "words",
+          "score": 2.6,
+          "slug": "prismatic-flipperzero",
+          "url": "https://github.com/korczis/prismatic-flipperzero",
+          "description": "Prismatic for Flipper Zero: native FAP on its way to Prismatic Pocket, an offline evidence-first epistemic toolkit",
+          "category": "tools",
+          "site": "https://korczis.github.io/prismatic-flipperzero/",
+          "pushed": "2026-11-25",
+          "skill": "audit-trail"
+        },
+        {
           "name": "catharsis-as-a-service",
           "title": "Catharsis as a Service",
           "how": "words",
@@ -1095,16 +1108,21 @@
         {
           "id": "html",
           "name": "HTML",
-          "n": 4
+          "n": 5
         },
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 4
+          "n": 5
         },
         {
           "id": "python",
           "name": "Python",
+          "n": 5
+        },
+        {
+          "id": "shell",
+          "name": "Shell",
           "n": 4
         },
         {
@@ -1123,13 +1141,13 @@
           "n": 3
         },
         {
-          "id": "shell",
-          "name": "Shell",
-          "n": 3
-        },
-        {
           "id": "alpine-js",
           "name": "Alpine.js",
+          "n": 2
+        },
+        {
+          "id": "c",
+          "name": "C",
           "n": 2
         },
         {
@@ -1165,11 +1183,6 @@
         {
           "id": "babel",
           "name": "Babel",
-          "n": 1
-        },
-        {
-          "id": "c",
-          "name": "C",
           "n": 1
         }
       ]
@@ -2218,6 +2231,19 @@
           "skill": "llm-agents"
         },
         {
+          "name": "prismatic-flipperzero",
+          "title": "prismatic-flipperzero",
+          "how": "words",
+          "score": 2.6,
+          "slug": "prismatic-flipperzero",
+          "url": "https://github.com/korczis/prismatic-flipperzero",
+          "description": "Prismatic for Flipper Zero: native FAP on its way to Prismatic Pocket, an offline evidence-first epistemic toolkit",
+          "category": "tools",
+          "site": "https://korczis.github.io/prismatic-flipperzero/",
+          "pushed": "2026-11-25",
+          "skill": "audit-trail"
+        },
+        {
           "name": "catharsis-as-a-service",
           "title": "Catharsis as a Service",
           "how": "words",
@@ -2345,22 +2371,22 @@
         {
           "id": "html",
           "name": "HTML",
-          "n": 16
+          "n": 17
         },
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 16
+          "n": 17
         },
         {
           "id": "shell",
           "name": "Shell",
-          "n": 13
+          "n": 14
         },
         {
           "id": "python",
           "name": "Python",
-          "n": 11
+          "n": 12
         },
         {
           "id": "flowbite-pro",
@@ -2393,13 +2419,13 @@
           "n": 7
         },
         {
-          "id": "fastapi",
-          "name": "FastAPI",
-          "n": 6
-        },
-        {
           "id": "claude-code",
           "name": "Claude Code",
+          "n": 5
+        },
+        {
+          "id": "fastapi",
+          "name": "FastAPI",
           "n": 5
         },
         {
@@ -2515,7 +2541,7 @@
           "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
           "category": "web",
           "site": null,
-          "pushed": "2026-11-24",
+          "pushed": "2026-11-25",
           "skill": "policy-as-code"
         },
         {
@@ -2569,6 +2595,32 @@
           "site": null,
           "pushed": "2026-08-21",
           "skill": "llm-agents"
+        },
+        {
+          "name": "oscilla",
+          "title": "Oscilla",
+          "how": "words",
+          "score": 2.6,
+          "slug": "oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "category": "science",
+          "site": "https://korczis.github.io/oscilla/",
+          "pushed": "2026-11-25",
+          "skill": "policy-as-code"
+        },
+        {
+          "name": "prismatic-flipperzero",
+          "title": "prismatic-flipperzero",
+          "how": "words",
+          "score": 2.6,
+          "slug": "prismatic-flipperzero",
+          "url": "https://github.com/korczis/prismatic-flipperzero",
+          "description": "Prismatic for Flipper Zero: native FAP on its way to Prismatic Pocket, an offline evidence-first epistemic toolkit",
+          "category": "tools",
+          "site": "https://korczis.github.io/prismatic-flipperzero/",
+          "pushed": "2026-11-25",
+          "skill": "audit-trail"
         },
         {
           "name": "catharsis-as-a-service",
@@ -2669,47 +2721,52 @@
         {
           "id": "html",
           "name": "HTML",
-          "n": 17
+          "n": 19
         },
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 17
+          "n": 19
         },
         {
           "id": "shell",
           "name": "Shell",
-          "n": 16
+          "n": 17
         },
         {
           "id": "flowbite-pro",
           "name": "Flowbite Pro",
-          "n": 11
+          "n": 12
         },
         {
           "id": "python",
           "name": "Python",
-          "n": 10
+          "n": 11
         },
         {
           "id": "alpine-js",
           "name": "Alpine.js",
-          "n": 9
+          "n": 10
         },
         {
           "id": "tailwind-css",
           "name": "Tailwind CSS",
-          "n": 9
+          "n": 10
         },
         {
           "id": "github-pages",
           "name": "GitHub Pages",
-          "n": 7
+          "n": 8
         },
         {
           "id": "playwright",
           "name": "Playwright",
-          "n": 7
+          "n": 8
+        },
+        {
+          "id": "css",
+          "name": "CSS",
+          "n": 6
         },
         {
           "id": "dockerfile",
@@ -2719,11 +2776,6 @@
         {
           "id": "claude-code",
           "name": "Claude Code",
-          "n": 5
-        },
-        {
-          "id": "css",
-          "name": "CSS",
           "n": 5
         },
         {
@@ -2737,13 +2789,13 @@
           "n": 5
         },
         {
-          "id": "apache-echarts",
-          "name": "Apache ECharts",
-          "n": 3
+          "id": "p5-js",
+          "name": "p5.js",
+          "n": 4
         },
         {
-          "id": "cytoscape-js",
-          "name": "Cytoscape.js",
+          "id": "apache-echarts",
+          "name": "Apache ECharts",
           "n": 3
         }
       ]
@@ -2924,6 +2976,19 @@
           "site": null,
           "pushed": "2025-12-20",
           "skill": "data-integration"
+        },
+        {
+          "name": "prismatic-flipperzero",
+          "title": "prismatic-flipperzero",
+          "how": "words",
+          "score": 2.8,
+          "slug": "prismatic-flipperzero",
+          "url": "https://github.com/korczis/prismatic-flipperzero",
+          "description": "Prismatic for Flipper Zero: native FAP on its way to Prismatic Pocket, an offline evidence-first epistemic toolkit",
+          "category": "tools",
+          "site": "https://korczis.github.io/prismatic-flipperzero/",
+          "pushed": "2026-11-25",
+          "skill": "interactive-visualisation"
         },
         {
           "name": "data-atlas",
@@ -3140,17 +3205,17 @@
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 25
+          "n": 26
         },
         {
           "id": "html",
           "name": "HTML",
-          "n": 12
+          "n": 13
         },
         {
           "id": "shell",
           "name": "Shell",
-          "n": 11
+          "n": 12
         },
         {
           "id": "nodejs",
@@ -3185,7 +3250,7 @@
         {
           "id": "python",
           "name": "Python",
-          "n": 7
+          "n": 8
         },
         {
           "id": "alpine-js",
@@ -4796,6 +4861,18 @@
       ],
       "repos": [
         {
+          "name": "prismatic-flipperzero",
+          "title": "prismatic-flipperzero",
+          "how": "words",
+          "score": 2.6,
+          "slug": "prismatic-flipperzero",
+          "url": "https://github.com/korczis/prismatic-flipperzero",
+          "description": "Prismatic for Flipper Zero: native FAP on its way to Prismatic Pocket, an offline evidence-first epistemic toolkit",
+          "category": "tools",
+          "site": "https://korczis.github.io/prismatic-flipperzero/",
+          "pushed": "2026-11-25"
+        },
+        {
           "name": "catharsis-as-a-service",
           "title": "Catharsis as a Service",
           "how": "words",
@@ -4856,16 +4933,21 @@
         {
           "id": "html",
           "name": "HTML",
-          "n": 3
+          "n": 4
         },
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 3
+          "n": 4
         },
         {
           "id": "python",
           "name": "Python",
+          "n": 4
+        },
+        {
+          "id": "shell",
+          "name": "Shell",
           "n": 3
         },
         {
@@ -4894,14 +4976,14 @@
           "n": 2
         },
         {
-          "id": "shell",
-          "name": "Shell",
-          "n": 2
-        },
-        {
           "id": "tailwind-css",
           "name": "Tailwind CSS",
           "n": 2
+        },
+        {
+          "id": "c",
+          "name": "C",
+          "n": 1
         },
         {
           "id": "claude-code",
@@ -4926,11 +5008,6 @@
         {
           "id": "elixir",
           "name": "Elixir",
-          "n": 1
-        },
-        {
-          "id": "fastapi",
-          "name": "FastAPI",
           "n": 1
         }
       ]
@@ -6403,7 +6480,7 @@
           "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
           "category": "web",
           "site": null,
-          "pushed": "2026-11-24"
+          "pushed": "2026-11-25"
         },
         {
           "name": "kompendium-epistemicke-anihilace",
@@ -6440,6 +6517,18 @@
           "category": "data",
           "site": "https://korczis.github.io/data-atlas/",
           "pushed": "2026-11-16"
+        },
+        {
+          "name": "oscilla",
+          "title": "Oscilla",
+          "how": "words",
+          "score": 2.6,
+          "slug": "oscilla",
+          "url": "https://github.com/korczis/oscilla",
+          "description": "A zero-install, scientifically honest acoustic laboratory in your browser: generate, measure and reproduce sound experiments, and know how far each result can be trusted.",
+          "category": "science",
+          "site": "https://korczis.github.io/oscilla/",
+          "pushed": "2026-11-25"
         },
         {
           "name": "catharsis-as-a-service",
@@ -6483,26 +6572,36 @@
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 8
+          "n": 9
         },
         {
           "id": "html",
           "name": "HTML",
-          "n": 7
+          "n": 8
         },
         {
           "id": "tailwind-css",
           "name": "Tailwind CSS",
-          "n": 7
+          "n": 8
         },
         {
           "id": "flowbite-pro",
           "name": "Flowbite Pro",
-          "n": 5
+          "n": 6
         },
         {
           "id": "github-pages",
           "name": "GitHub Pages",
+          "n": 6
+        },
+        {
+          "id": "css",
+          "name": "CSS",
+          "n": 5
+        },
+        {
+          "id": "playwright",
+          "name": "Playwright",
           "n": 5
         },
         {
@@ -6516,24 +6615,19 @@
           "n": 5
         },
         {
-          "id": "css",
-          "name": "CSS",
+          "id": "alpine-js",
+          "name": "Alpine.js",
           "n": 4
         },
         {
-          "id": "playwright",
-          "name": "Playwright",
+          "id": "p5-js",
+          "name": "p5.js",
           "n": 4
         },
         {
           "id": "python",
           "name": "Python",
           "n": 4
-        },
-        {
-          "id": "alpine-js",
-          "name": "Alpine.js",
-          "n": 3
         },
         {
           "id": "apache-echarts",
@@ -6553,11 +6647,6 @@
         {
           "id": "nodejs",
           "name": "Node.js",
-          "n": 3
-        },
-        {
-          "id": "p5-js",
-          "name": "p5.js",
           "n": 3
         }
       ]
@@ -6591,6 +6680,18 @@
           "description": "Sonic Playground - Phoenix/Elixir music blog built on the Kita theme",
           "category": "media",
           "site": "https://korczis.github.io/sonic-playground/",
+          "pushed": "2026-11-25"
+        },
+        {
+          "name": "prismatic-flipperzero",
+          "title": "prismatic-flipperzero",
+          "how": "words",
+          "score": 2.8,
+          "slug": "prismatic-flipperzero",
+          "url": "https://github.com/korczis/prismatic-flipperzero",
+          "description": "Prismatic for Flipper Zero: native FAP on its way to Prismatic Pocket, an offline evidence-first epistemic toolkit",
+          "category": "tools",
+          "site": "https://korczis.github.io/prismatic-flipperzero/",
           "pushed": "2026-11-25"
         },
         {
@@ -6635,12 +6736,12 @@
         {
           "id": "html",
           "name": "HTML",
-          "n": 5
+          "n": 6
         },
         {
           "id": "javascript",
           "name": "JavaScript",
-          "n": 5
+          "n": 6
         },
         {
           "id": "flowbite-pro",
@@ -6650,6 +6751,16 @@
         {
           "id": "github-pages",
           "name": "GitHub Pages",
+          "n": 4
+        },
+        {
+          "id": "python",
+          "name": "Python",
+          "n": 4
+        },
+        {
+          "id": "shell",
+          "name": "Shell",
           "n": 4
         },
         {
@@ -6665,16 +6776,6 @@
         {
           "id": "elixir",
           "name": "Elixir",
-          "n": 3
-        },
-        {
-          "id": "python",
-          "name": "Python",
-          "n": 3
-        },
-        {
-          "id": "shell",
-          "name": "Shell",
           "n": 3
         },
         {

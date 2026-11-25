@@ -4,7 +4,7 @@ title = "prismatic-flipperzero"
 description = "prismatic-flipperzero: projekt z kategorie Nástroje, hlavní jazyk C, poslední commit 25. listopadu 2026."
 template = "work.html"
 weight = 1
-updated = "2026-11-25T08:45:50Z"
+updated = "2026-11-25T13:30:48Z"
 
 [taxonomies]
 tags = ["Nástroje", "Python", "JavaScript"]
@@ -28,9 +28,9 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**prismatic-flipperzero** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [C](@/glossary/c.cs.md) (40,3 %), dále [Python](@/glossary/python.cs.md), [JavaScript](@/glossary/javascript.cs.md) a [Shell](@/glossary/shell.cs.md).
+**prismatic-flipperzero** je projekt z kategorie [Nástroje](@/projects/tools.cs.md). Jeho kód je napsaný hlavně v jazyce [C](@/glossary/c.cs.md) (46,8 %), dále [Python](@/glossary/python.cs.md), [JavaScript](@/glossary/javascript.cs.md) a [Shell](@/glossary/shell.cs.md).
 
-[Repozitář](@/glossary/repository.cs.md) vznikl 25. listopadu 2026; poslední [commit](@/glossary/commit.cs.md) je z 25. listopadu 2026. Zní „feat(ui): information architecture of four hubs on a tile grid“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+[Repozitář](@/glossary/repository.cs.md) vznikl 25. listopadu 2026; poslední [commit](@/glossary/commit.cs.md) je z 25. listopadu 2026. Zní „feat(site): simulations, scorecards and calculators are interactive in the browser“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 
 Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/prismatic-flipperzero/>.
 
@@ -38,4 +38,4 @@ Zdrojový kód: [GitHub](https://github.com/korczis/prismatic-flipperzero).
 
 Související práce v kategorii [Nástroje](@/projects/tools.cs.md): [Gists search](@/work/gists-search.cs.md) (2026), [vomaste.cz](@/work/vomaste-cz.cs.md) (2026), [astronomists](@/work/astronomists.cs.md) (2026) a [prismatic](@/work/prismatic.cs.md) (2025).
 
-*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 19 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
+*Jak číst tuto stránku:* fakta vedle článku jsou změřená z GitHubu a GitLabu, podíly jazyků podle objemu kódu. Puls ukazuje posledních 30 commitů jako tep, jeden pruh na typ commitu (feat, fix, docs…); na GitHubu se obnovuje živě z vašeho prohlížeče. Pojmy níže vysvětluje [slovník](@/glossary/_index.cs.md).
