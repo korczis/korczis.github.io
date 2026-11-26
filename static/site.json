@@ -122,8 +122,8 @@
  ],
  "front_matter_schema": "https://korczis.github.io/schemas/front-matter.schema.json",
  "data_as_of": {
-  "snapshot": "2026-11-26T12:54:15Z",
-  "index": "2026-11-26T13:01:08Z"
+  "snapshot": "2026-11-26T23:16:51Z",
+  "index": "2026-11-26T23:26:03Z"
  },
  "pages": [
   {
@@ -19159,6 +19159,27 @@
  ],
  "repositories": [
   {
+   "name": "prismatic-majordomus",
+   "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+   "language": "Rust",
+   "category": "ai",
+   "page": "https://korczis.github.io/work/prismatic-majordomus/",
+   "pages": {
+    "en": "https://korczis.github.io/work/prismatic-majordomus/",
+    "cs": "https://korczis.github.io/cs/work/prismatic-majordomus/"
+   },
+   "github": "https://github.com/korczis/prismatic-majordomus",
+   "gitlab": null,
+   "site": "https://korczis.github.io/prismatic-majordomus/",
+   "created": "2026-09-03T20:24:57Z",
+   "active": "2026-11-26T19:07:49Z",
+   "last_commit": "2026-11-25T03:17:05Z",
+   "period": 12,
+   "archive": false,
+   "stars": 1,
+   "supervised": true
+  },
+  {
    "name": "prismatic-flipperzero",
    "description": "Prismatic Pocket for Flipper Zero: an offline, data-driven knowledge engine with live assessments, scorecards, crisis simulations and a Bayes calculator; a deterministic pack compiler and a portable C core",
    "language": "C",
@@ -19172,8 +19193,8 @@
    "gitlab": null,
    "site": "https://korczis.github.io/prismatic-flipperzero/",
    "created": "2026-11-25T03:06:03Z",
-   "active": "2026-11-26T12:21:00Z",
-   "last_commit": "2026-11-26T12:56:47Z",
+   "active": "2026-11-26T16:54:50Z",
+   "last_commit": "2026-11-26T16:50:56Z",
    "period": 12,
    "archive": false,
    "stars": 0,
@@ -19193,8 +19214,8 @@
    "gitlab": null,
    "site": null,
    "created": "2024-12-24T16:48:15Z",
-   "active": "2026-11-26T03:06:58Z",
-   "last_commit": "2026-11-26T03:05:52Z",
+   "active": "2026-11-26T13:02:43Z",
+   "last_commit": "2026-11-26T13:01:46Z",
    "period": 12,
    "archive": false,
    "stars": 0,
@@ -19261,27 +19282,6 @@
    "period": 12,
    "archive": false,
    "stars": 0,
-   "supervised": true
-  },
-  {
-   "name": "prismatic-majordomus",
-   "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
-   "language": "Rust",
-   "category": "ai",
-   "page": "https://korczis.github.io/work/prismatic-majordomus/",
-   "pages": {
-    "en": "https://korczis.github.io/work/prismatic-majordomus/",
-    "cs": "https://korczis.github.io/cs/work/prismatic-majordomus/"
-   },
-   "github": "https://github.com/korczis/prismatic-majordomus",
-   "gitlab": null,
-   "site": "https://korczis.github.io/prismatic-majordomus/",
-   "created": "2026-09-03T20:24:57Z",
-   "active": "2026-11-25T12:28:18Z",
-   "last_commit": "2026-11-25T03:17:05Z",
-   "period": 12,
-   "archive": false,
-   "stars": 1,
    "supervised": true
   },
   {

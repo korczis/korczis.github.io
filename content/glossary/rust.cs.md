@@ -44,7 +44,7 @@ Rust jsem psal v 34 veřejných repozitářích, od roku 2016 do 2026; v 12 z ni
 
 K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (12), [Data a GIS](@/projects/data.cs.md) (4), [Věda a vizualizace](@/projects/science.cs.md) (4) a [Učení a experimenty](@/projects/learning.cs.md) (3).
 
-Naposledy: [algoglyph](@/work/algoglyph.cs.md): Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem; [Majordomus](@/work/prismatic-majordomus.cs.md): Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model; [Catharsis as a Service](@/work/catharsis-as-a-service.cs.md): Digitální artefakt Sig Nihl / Prismatic.
+Naposledy: [Majordomus](@/work/prismatic-majordomus.cs.md): Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model; [algoglyph](@/work/algoglyph.cs.md): Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem; [Catharsis as a Service](@/work/catharsis-as-a-service.cs.md): Digitální artefakt Sig Nihl / Prismatic.
 
 5 z těchto projektů běží jako živé weby.
 

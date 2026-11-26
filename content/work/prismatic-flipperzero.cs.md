@@ -4,7 +4,7 @@ title = "prismatic-flipperzero"
 description = "prismatic-flipperzero: projekt z kategorie Věda a vizualizace, hlavní jazyk C, poslední commit 26. listopadu 2026."
 template = "work.html"
 weight = 1
-updated = "2026-11-26T12:56:47Z"
+updated = "2026-11-26T16:50:56Z"
 
 [taxonomies]
 tags = ["Věda a vizualizace", "Python", "JavaScript"]
@@ -28,9 +28,9 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**prismatic-flipperzero** je projekt z kategorie [Věda a vizualizace](@/projects/science.cs.md). Jeho kód je napsaný hlavně v jazyce [C](@/glossary/c.cs.md) (43,3 %), dále [Python](@/glossary/python.cs.md), [JavaScript](@/glossary/javascript.cs.md) a [Shell](@/glossary/shell.cs.md).
+**prismatic-flipperzero** je projekt z kategorie [Věda a vizualizace](@/projects/science.cs.md). Jeho kód je napsaný hlavně v jazyce [C](@/glossary/c.cs.md) (44,1 %), dále [Python](@/glossary/python.cs.md), [JavaScript](@/glossary/javascript.cs.md) a [Shell](@/glossary/shell.cs.md).
 
-[Repozitář](@/glossary/repository.cs.md) vznikl 25. listopadu 2026; poslední [commit](@/glossary/commit.cs.md) je z 26. listopadu 2026. Zní „docs(evidence): bridge device run: status and small installs proven“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
+[Repozitář](@/glossary/repository.cs.md) vznikl 25. listopadu 2026; poslední [commit](@/glossary/commit.cs.md) je z 26. listopadu 2026. Zní „docs(evidence): Find by name on the device, 14 of 14 frames identical“. Patří tak mezi projekty aktivní za posledních 12 měsíců.
 
 Běží jako živý web na [GitHub Pages](@/glossary/github-pages.cs.md): <https://korczis.github.io/prismatic-flipperzero/>.
 

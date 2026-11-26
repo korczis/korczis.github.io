@@ -44,7 +44,7 @@ I have written Rust in 34 public repositories, from 2016 to 2026; in 12 of them 
 
 What it was for: [Tools](@/projects/tools.md) (12), [Data and GIS](@/projects/data.md) (4), [Science and visualisation](@/projects/science.md) (4) and [Learning and experiments](@/projects/learning.md) (3).
 
-Most recently: [algoglyph](@/work/algoglyph.md): Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core; [Majordomus](@/work/prismatic-majordomus.md): One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model; [Catharsis as a Service](@/work/catharsis-as-a-service.md): A Sig Nihl / Prismatic digital artifact.
+Most recently: [Majordomus](@/work/prismatic-majordomus.md): One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model; [algoglyph](@/work/algoglyph.md): Seeded, interactive p5.js plates: sorting, graphs, fractals, chaos, waves and gravity in 2D and 3D, each with measured readouts and a tested core; [Catharsis as a Service](@/work/catharsis-as-a-service.md): A Sig Nihl / Prismatic digital artifact.
 
 5 of these projects run as live sites.
 

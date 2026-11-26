@@ -1,6 +1,6 @@
 {
  "schema": "korczis-hub-index/v1",
- "generated_at": "2026-11-26T13:01:08Z",
+ "generated_at": "2026-11-26T23:26:03Z",
  "rule": "original = the owner wrote at least half of the listed commits; forks and mirrors are counted, not listed",
  "counts": {
   "github": 449,
@@ -18,7 +18,7 @@
  "dropped": [],
  "supervision": {
   "marker": ".ai/manifest.yaml",
-  "measured_at": "2026-11-26T13:01:08Z",
+  "measured_at": "2026-11-26T23:26:03Z",
   "kept": 0
  },
  "all_repos": [
@@ -1664,9 +1664,9 @@
    ],
    "stars": 0,
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-26T03:06:58Z",
+   "pushed_at": "2026-11-26T13:02:43Z",
    "archived": false,
-   "share": 0.89,
+   "share": 0.88,
    "hosts": {
     "github": "https://github.com/korczis/korczis.github.io"
    },
@@ -2432,7 +2432,7 @@
    "topics": [],
    "stars": 0,
    "created_at": "2026-11-25T03:06:03Z",
-   "pushed_at": "2026-11-26T12:21:00Z",
+   "pushed_at": "2026-11-26T16:54:50Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -2470,7 +2470,7 @@
    ],
    "stars": 1,
    "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-25T12:28:18Z",
+   "pushed_at": "2026-11-26T19:07:49Z",
    "archived": false,
    "share": 0.99,
    "hosts": {
@@ -4347,10 +4347,10 @@
   }
  ],
  "by_category": {
+  "ai": 5,
   "science": 13,
   "web": 14,
   "media": 8,
-  "ai": 5,
   "tools": 63,
   "knowledge": 5,
   "data": 49,
@@ -4360,6 +4360,12 @@
   "learning": 21
  },
  "categories": {
+  "ai": {
+   "repos": 5,
+   "sites": 1,
+   "top_language": "Elixir",
+   "since": "2025"
+  },
   "science": {
    "repos": 13,
    "sites": 4,
@@ -4377,12 +4383,6 @@
    "sites": 4,
    "top_language": "JavaScript",
    "since": "2015"
-  },
-  "ai": {
-   "repos": 5,
-   "sites": 1,
-   "top_language": "Elixir",
-   "since": "2025"
   },
   "tools": {
    "repos": 63,
@@ -4624,10 +4624,10 @@
    "Dockerfile": 1
   },
   "2026": {
+   "Rust": 1,
    "C": 1,
    "TypeScript": 1,
    "JavaScript": 4,
-   "Rust": 1,
    "HTML": 2,
    "Python": 4,
    "Elixir": 3
@@ -5124,8 +5124,13 @@
  "recent": {
   "size": 100,
   "from": "2018-03-10T17:02:00Z",
-  "to": "2026-11-26T12:21:00Z",
+  "to": "2026-11-26T19:07:49Z",
   "mix": {
+   "ai": {
+    "Rust": 1,
+    "Elixir": 2,
+    "Unspecified": 2
+   },
    "science": {
     "C": 1,
     "TypeScript": 1,
@@ -5145,11 +5150,6 @@
     "Python": 1,
     "Dockerfile": 1,
     "Elixir": 1
-   },
-   "ai": {
-    "Rust": 1,
-    "Elixir": 2,
-    "Unspecified": 2
    },
    "tools": {
     "Python": 3,
@@ -5193,13 +5193,51 @@
  },
  "repos": [
   {
+   "name": "prismatic-majordomus",
+   "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+   "language": "Rust",
+   "topics": [
+    "agentic-ai",
+    "ai",
+    "ai-agents",
+    "ai-governance",
+    "claude-code",
+    "cli",
+    "codex",
+    "continuous-integration",
+    "developer-tools",
+    "devops",
+    "gemini",
+    "llm",
+    "llmops",
+    "mcp",
+    "mermaid",
+    "model-context-protocol",
+    "multi-agent",
+    "policy-as-code",
+    "rust"
+   ],
+   "stars": 1,
+   "created_at": "2026-09-03T20:24:57Z",
+   "pushed_at": "2026-11-26T19:07:49Z",
+   "archived": false,
+   "share": 0.99,
+   "hosts": {
+    "github": "https://github.com/korczis/prismatic-majordomus"
+   },
+   "site": "https://korczis.github.io/prismatic-majordomus/",
+   "supervised": true,
+   "category": "ai",
+   "curated": true
+  },
+  {
    "name": "prismatic-flipperzero",
    "description": "Prismatic Pocket for Flipper Zero: an offline, data-driven knowledge engine with live assessments, scorecards, crisis simulations and a Bayes calculator; a deterministic pack compiler and a portable C core",
    "language": "C",
    "topics": [],
    "stars": 0,
    "created_at": "2026-11-25T03:06:03Z",
-   "pushed_at": "2026-11-26T12:21:00Z",
+   "pushed_at": "2026-11-26T16:54:50Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -5232,9 +5270,9 @@
    ],
    "stars": 0,
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-26T03:06:58Z",
+   "pushed_at": "2026-11-26T13:02:43Z",
    "archived": false,
-   "share": 0.89,
+   "share": 0.88,
    "hosts": {
     "github": "https://github.com/korczis/korczis.github.io"
    },
@@ -5318,44 +5356,6 @@
    "site": "https://korczis.github.io/sonic-playground/",
    "supervised": true,
    "category": "media",
-   "curated": true
-  },
-  {
-   "name": "prismatic-majordomus",
-   "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
-   "language": "Rust",
-   "topics": [
-    "agentic-ai",
-    "ai",
-    "ai-agents",
-    "ai-governance",
-    "claude-code",
-    "cli",
-    "codex",
-    "continuous-integration",
-    "developer-tools",
-    "devops",
-    "gemini",
-    "llm",
-    "llmops",
-    "mcp",
-    "mermaid",
-    "model-context-protocol",
-    "multi-agent",
-    "policy-as-code",
-    "rust"
-   ],
-   "stars": 1,
-   "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-25T12:28:18Z",
-   "archived": false,
-   "share": 0.99,
-   "hosts": {
-    "github": "https://github.com/korczis/prismatic-majordomus"
-   },
-   "site": "https://korczis.github.io/prismatic-majordomus/",
-   "supervised": true,
-   "category": "ai",
    "curated": true
   },
   {

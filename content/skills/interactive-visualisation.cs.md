@@ -13,7 +13,7 @@ skill = "interactive-visualisation"
 og_title = "Interaktivní vizualizace: dovednosti"
 og_image = "og/cs-skill-interactive-visualisation.png"
 schema = "skill"
-terms = ["skill", "data-visualisation", "html", "javascript", "flowbite-pro", "github-pages", "python", "shell", "tailwind-css", "alpine-js", "elixir", "typescript"]
+terms = ["skill", "data-visualisation", "html", "javascript", "flowbite-pro", "github-pages", "tailwind-css", "alpine-js", "elixir", "python", "shell", "typescript"]
 keywords = ["Interaktivní vizualizace", "Interaktivní datové produkty a simulátory", "Tomáš Korčák"]
 
 [[extra.viz]]
@@ -31,8 +31,8 @@ Pojem, na kterém stojí: [Vizualizace dat](@/glossary/data-visualisation.cs.md)
 
 Služby, které z ní čerpají: [Interaktivní datové produkty a simulátory](@/services/interactive-data-products.cs.md).
 
-Praktikovaná s: [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md), [GitHub Pages](@/glossary/github-pages.cs.md), [Python](@/glossary/python.cs.md), [Shell](@/glossary/shell.cs.md), [Tailwind CSS](@/glossary/tailwind-css.cs.md) a [Alpine.js](@/glossary/alpine-js.cs.md).
+Praktikovaná s: [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md), [GitHub Pages](@/glossary/github-pages.cs.md), [Tailwind CSS](@/glossary/tailwind-css.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md), [Elixir](@/glossary/elixir.cs.md) a [Python](@/glossary/python.cs.md).
 
-Veřejná práce, jejíž vlastní slova ji dokládají: [algoglyph](https://github.com/korczis/algoglyph), [sonic-playground](https://github.com/korczis/sonic-playground), [prismatic-flipperzero](https://github.com/korczis/prismatic-flipperzero) a [kompendium-epistemicke-anihilace](https://github.com/korczis/kompendium-epistemicke-anihilace).
+Veřejná práce, jejíž vlastní slova ji dokládají: [algoglyph](https://github.com/korczis/algoglyph), [sonic-playground](https://github.com/korczis/sonic-playground), [kompendium-epistemicke-anihilace](https://github.com/korczis/kompendium-epistemicke-anihilace) a [gooddata-graphql](https://github.com/korczis/gooddata-graphql).
 
 Jak číst tuto stránku: definice pochází ze slovníku zkušeností; služby, technologie, veřejné [repozitáře](@/glossary/repository.cs.md) a případy užití jsou odvozené a každá položka vede na svou stránku.
