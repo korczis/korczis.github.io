@@ -3,7 +3,7 @@
 title = "Sonic Playground"
 description = "Music that moves you, not algorithmic noise. Active in the last 12 months; media and art."
 template = "work.html"
-weight = 4
+weight = 5
 updated = "2026-11-25T14:57:33Z"
 
 [taxonomies]

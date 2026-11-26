@@ -44,7 +44,7 @@ HTML jsem psal v 39 veřejných repozitářích, od roku 2014 do 2026; v 5 z nic
 
 K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (9), [Data a GIS](@/projects/data.cs.md) (8), [Web](@/projects/web.cs.md) (8) a [Média a umění](@/projects/media.cs.md) (5).
 
-Naposledy: [algoglyph](@/work/algoglyph.cs.md): Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem; [korczis.github.io](@/work/korczis-github-io.cs.md); [Oscilla](@/work/oscilla.cs.md): Generujte, měřte a opakujte zvukové experimenty a vězte, jak moc lze kterému výsledku věřit. Každý údaj nese svou nejistotu.
+Naposledy: [korczis.github.io](@/work/korczis-github-io.cs.md); [prismatic-flipperzero](@/work/prismatic-flipperzero.cs.md); [algoglyph](@/work/algoglyph.cs.md): Seedované interaktivní plakáty v p5.js: řazení, grafy, fraktály, chaos, vlny a gravitace ve 2D i 3D, každý se změřenými údaji a otestovaným jádrem.
 
 17 z těchto projektů běží jako živé weby.
 

@@ -122,8 +122,8 @@
  ],
  "front_matter_schema": "https://korczis.github.io/schemas/front-matter.schema.json",
  "data_as_of": {
-  "snapshot": "2026-11-26T02:55:33Z",
-  "index": "2026-11-26T03:05:07Z"
+  "snapshot": "2026-11-26T12:54:15Z",
+  "index": "2026-11-26T13:01:08Z"
  },
  "pages": [
   {
@@ -5597,11 +5597,11 @@
    "keywords": [
     "Tomáš Korčák: projekty",
     "korczis",
+    "prismatic-flipperzero",
     "korczis.github.io",
     "algoglyph",
     "oscilla",
     "sonic-playground",
-    "prismatic-flipperzero",
     "prismatic-majordomus",
     "kompendium-epistemicke-anihilace",
     "openttd-prismatic-bridge"
@@ -7426,7 +7426,7 @@
    "url": "https://korczis.github.io/cs/work/korczis-github-io/",
    "lang": "cs",
    "title": "korczis.github.io: Web, JavaScript, 2024–2026 · Tomáš Korčák",
-   "description": "korczis.github.io: projekt z kategorie Web, hlavní jazyk JavaScript, poslední commit 25. listopadu 2026.",
+   "description": "korczis.github.io: projekt z kategorie Web, hlavní jazyk JavaScript, poslední commit 26. listopadu 2026.",
    "type": "project",
    "category": "web",
    "og_image": "https://korczis.github.io/og/cs-work-korczis-github-io.png",
@@ -8531,7 +8531,7 @@
    "url": "https://korczis.github.io/cs/work/prismatic-flipperzero/",
    "lang": "cs",
    "title": "prismatic-flipperzero: Věda a vizualizace, C, 2026 · Tomáš Korčák",
-   "description": "prismatic-flipperzero: projekt z kategorie Věda a vizualizace, hlavní jazyk C, poslední commit 25. listopadu 2026.",
+   "description": "prismatic-flipperzero: projekt z kategorie Věda a vizualizace, hlavní jazyk C, poslední commit 26. listopadu 2026.",
    "type": "project",
    "category": "science",
    "og_image": "https://korczis.github.io/og/cs-work-prismatic-flipperzero.png",
@@ -14873,11 +14873,11 @@
    "keywords": [
     "Tomas Korcak projects",
     "korczis",
+    "prismatic-flipperzero",
     "korczis.github.io",
     "algoglyph",
     "oscilla",
     "sonic-playground",
-    "prismatic-flipperzero",
     "prismatic-majordomus",
     "kompendium-epistemicke-anihilace",
     "openttd-prismatic-bridge"
@@ -19159,6 +19159,27 @@
  ],
  "repositories": [
   {
+   "name": "prismatic-flipperzero",
+   "description": "Prismatic Pocket for Flipper Zero: an offline, data-driven knowledge engine with live assessments, scorecards, crisis simulations and a Bayes calculator; a deterministic pack compiler and a portable C core",
+   "language": "C",
+   "category": "science",
+   "page": "https://korczis.github.io/work/prismatic-flipperzero/",
+   "pages": {
+    "en": "https://korczis.github.io/work/prismatic-flipperzero/",
+    "cs": "https://korczis.github.io/cs/work/prismatic-flipperzero/"
+   },
+   "github": "https://github.com/korczis/prismatic-flipperzero",
+   "gitlab": null,
+   "site": "https://korczis.github.io/prismatic-flipperzero/",
+   "created": "2026-11-25T03:06:03Z",
+   "active": "2026-11-26T12:21:00Z",
+   "last_commit": "2026-11-26T12:56:47Z",
+   "period": 12,
+   "archive": false,
+   "stars": 0,
+   "supervised": true
+  },
+  {
    "name": "korczis.github.io",
    "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
    "language": "JavaScript",
@@ -19172,8 +19193,8 @@
    "gitlab": null,
    "site": null,
    "created": "2024-12-24T16:48:15Z",
-   "active": "2026-11-25T19:38:05Z",
-   "last_commit": "2026-11-25T19:36:54Z",
+   "active": "2026-11-26T03:06:58Z",
+   "last_commit": "2026-11-26T03:05:52Z",
    "period": 12,
    "archive": false,
    "stars": 0,
@@ -19237,27 +19258,6 @@
    "created": "2026-11-12T00:48:36Z",
    "active": "2026-11-25T15:06:29Z",
    "last_commit": "2026-11-25T14:57:33Z",
-   "period": 12,
-   "archive": false,
-   "stars": 0,
-   "supervised": true
-  },
-  {
-   "name": "prismatic-flipperzero",
-   "description": "Prismatic Pocket for Flipper Zero: an offline, data-driven knowledge engine with live assessments, scorecards, crisis simulations and a Bayes calculator; a deterministic pack compiler and a portable C core",
-   "language": "C",
-   "category": "science",
-   "page": "https://korczis.github.io/work/prismatic-flipperzero/",
-   "pages": {
-    "en": "https://korczis.github.io/work/prismatic-flipperzero/",
-    "cs": "https://korczis.github.io/cs/work/prismatic-flipperzero/"
-   },
-   "github": "https://github.com/korczis/prismatic-flipperzero",
-   "gitlab": null,
-   "site": "https://korczis.github.io/prismatic-flipperzero/",
-   "created": "2026-11-25T03:06:03Z",
-   "active": "2026-11-25T13:59:17Z",
-   "last_commit": "2026-11-25T13:57:36Z",
    "period": 12,
    "archive": false,
    "stars": 0,

@@ -33,7 +33,7 @@ Služby, které z ní čerpají: [Digitální forenzní analýza a zajištění 
 
 Praktikovaná s: [HTML](@/glossary/html.cs.md), [JavaScript](@/glossary/javascript.cs.md), [Python](@/glossary/python.cs.md), [Shell](@/glossary/shell.cs.md), [Alpine.js](@/glossary/alpine-js.cs.md), [Claude API](@/glossary/claude-api.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md) a [Playwright](@/glossary/playwright.cs.md).
 
-Veřejná práce, jejíž vlastní slova ji dokládají: [catharsis-as-a-service](https://github.com/korczis/catharsis-as-a-service), [llm](https://gitlab.com/korczis/llm) a [prismatic-flipperzero](https://github.com/korczis/prismatic-flipperzero).
+Veřejná práce, jejíž vlastní slova ji dokládají: [prismatic-flipperzero](https://github.com/korczis/prismatic-flipperzero), [catharsis-as-a-service](https://github.com/korczis/catharsis-as-a-service) a [llm](https://gitlab.com/korczis/llm).
 
 Byla použita v klientské práci v odvětví: Developer nemovitostí a Finanční a investiční skupina; případy užití níže uvádějí princip a záměr, bez jmen a čísel.
 

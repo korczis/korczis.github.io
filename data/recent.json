@@ -1,6 +1,6 @@
 {
  "schema": "korczis-hub-recent/v2",
- "generated_at": "2026-11-26T03:05:07Z",
+ "generated_at": "2026-11-26T13:01:09Z",
  "window_days": 1461,
  "periods": [
   {
@@ -18,8 +18,208 @@
  ],
  "archive": 162,
  "rule": "every original repository of data/index.json; a repository is recent when its default branch has a commit in the window, archive otherwise; host activity dates are ignored",
- "asked": 1,
+ "asked": 2,
  "repos": [
+  {
+   "name": "prismatic-flipperzero",
+   "period": 12,
+   "description": "Prismatic Pocket for Flipper Zero: an offline, data-driven knowledge engine with live assessments, scorecards, crisis simulations and a Bayes calculator; a deterministic pack compiler and a portable C core",
+   "category": "science",
+   "language": "C",
+   "created_at": "2026-11-25T03:06:03Z",
+   "pushed_at": "2026-11-26T12:21:00Z",
+   "last_commit": "2026-11-26T12:56:47Z",
+   "last_message": "docs(evidence): bridge device run: status and small installs proven",
+   "commits": [
+    {
+     "at": "2026-11-26T12:56:47Z",
+     "message": "docs(evidence): bridge device run: status and small installs proven",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/c8d58d76ff9dd6e9ace0dc2d9353a3314d5438c1"
+    },
+    {
+     "at": "2026-11-26T12:47:36Z",
+     "message": "fix(bridge): install a pack in one CLI session, never mixing RPC and CLI",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/85f461a01013a5fed7cfa3a1d8d1737e2d78691a"
+    },
+    {
+     "at": "2026-11-26T12:39:01Z",
+     "message": "fix(bridge): push-pack over acknowledged CLI chunks; never end a busy session",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/b33816e927c7cedfe55b29d0f5ab3f47d0f4c69b"
+    },
+    {
+     "at": "2026-11-26T12:20:40Z",
+     "message": "fix(bridge): ping until the RPC session answers; record the device run",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/29db801a97a97d125f36a68a0ed1b7bd66f3ea41"
+    },
+    {
+     "at": "2026-11-26T11:39:12Z",
+     "message": "feat(bridge): host bridge over the Flipper's own RPC",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/005e71450470b9eb1a8bf8802e952804aa2b2d67"
+    },
+    {
+     "at": "2026-11-26T11:19:26Z",
+     "message": "docs(evidence): parity 24 of 24 and device gallery recaptured on 0.1.0",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/7f2bc73ba4772a76312e333daae30a07d846bf66"
+    },
+    {
+     "at": "2026-11-26T11:16:47Z",
+     "message": "chore(release): 0.1.0 Pocket: version, changelog, release notes, security scope",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/dfcbdc80505345be97db3ceb43cb42b48a9d4556"
+    },
+    {
+     "at": "2026-11-25T13:57:36Z",
+     "message": "docs(evidence): device parity recorded with the live tools build",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/0ff22361139bc96c6332fe2d50fad0452a136606"
+    },
+    {
+     "at": "2026-11-25T13:47:26Z",
+     "message": "feat(calculate): one stepper adds a source; the calculator fits one screen",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/169ba7557e61e9688db47a648939db9323c68786"
+    },
+    {
+     "at": "2026-11-25T13:42:52Z",
+     "message": "feat(ui): live tools on the device: steppers change values in real time",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/7fc85365f96f4e5275f06bc06319bce0c18b2ee7"
+    },
+    {
+     "at": "2026-11-25T13:30:48Z",
+     "message": "feat(site): simulations, scorecards and calculators are interactive in the browser",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/b528ea48fce053505c13e95bbc8e55342a694ff5"
+    },
+    {
+     "at": "2026-11-25T12:46:22Z",
+     "message": "fix(calculate): single precision for the Flipper's FPU",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/e694aa4bb857f18b24b3344b14dafc94cede1ded"
+    },
+    {
+     "at": "2026-11-25T12:44:21Z",
+     "message": "feat(calculate): the Prismatic Platform's Bayesian fusion as an interactive calculator",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/30d303aa304e395f59dcea7b5e813c67ad5e9987"
+    },
+    {
+     "at": "2026-11-25T12:35:39Z",
+     "message": "feat(score): the Prismatic Platform's scorecards as data: executive frame, nominee risk",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/56fadfccd044a19bcef28f37ed9103038d967049"
+    },
+    {
+     "at": "2026-11-25T12:25:10Z",
+     "message": "feat(simulate): the Prismatic Platform's crisis simulations, as data, offline",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/3761edefa21a93063b1add990a4a71b0dc0733f9"
+    },
+    {
+     "at": "2026-11-25T12:11:04Z",
+     "message": "fix(sessions): drop an unreachable empty-list note; restore covers an empty page",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/5e934ffd033c23684a1daa7e50ac799b7bf3c780"
+    },
+    {
+     "at": "2026-11-25T12:09:13Z",
+     "message": "feat(sessions): save a detector's marks as JSON Lines, only when asked",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/aa9bd09386ad6810af7ab4264df1e61207c7a3d5"
+    },
+    {
+     "at": "2026-11-25T11:30:23Z",
+     "message": "feat(site): assessments are interactive on the explorer too",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/619187fc2a9b197d52e2bfa21806682d23bd0e7f"
+    },
+    {
+     "at": "2026-11-25T11:25:46Z",
+     "message": "docs(readme): FAEL-style landing: title, tagline, generated explainer and modules",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/f87e677fab4d57461d248ca838072864c8f892c5"
+    },
+    {
+     "at": "2026-11-25T11:18:46Z",
+     "message": "test(tools): validate the repository's applications only where the file exists",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/e0830aac1d0f02fe5d85ecd8357b5e1b79032e1d"
+    },
+    {
+     "at": "2026-11-25T11:17:46Z",
+     "message": "feat(apply): assessments as applications: Admiralty code, DD evidence levels, OSINT confidence",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/81a28e17297b050018889e585ae3ddc93a0c967d"
+    },
+    {
+     "at": "2026-11-25T11:00:36Z",
+     "message": "feat(detect): side-by-side detection of an object and a look-alike",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/d40840a22f6fc8893aa9961c33322beefb12a594"
+    },
+    {
+     "at": "2026-11-25T10:49:12Z",
+     "message": "feat(train): spaced repetition with Leitner boxes, kept safely on the SD card",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/748007604aa5d814f77f28e9e629e5f620c7395c"
+    },
+    {
+     "at": "2026-11-25T09:49:44Z",
+     "message": "docs(evidence): parity 24 of 24 on the marquee and quiz-score FAP",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/b40edb4b3de4bb60608bf63a0cdc348bd42cfe9c"
+    },
+    {
+     "at": "2026-11-25T09:47:31Z",
+     "message": "fix(ui): paging position fits two 32-bit counts; build the sim with GCC too",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/c9fa1c66d7628a4af7646e820a4e5636d8b5e04b"
+    },
+    {
+     "at": "2026-11-25T09:43:36Z",
+     "message": "feat(ui): a cut name scrolls after a pause; the quiz keeps score",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/1340051d1e80ca4a58cd42ae258237cb38461a61"
+    },
+    {
+     "at": "2026-11-25T09:26:40Z",
+     "message": "fix(atlas): compare frames by decoded pixels, not PNG bytes",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/aec317cf89cadc3b8c084fac69dbd5b8d9212f62"
+    },
+    {
+     "at": "2026-11-25T09:25:22Z",
+     "message": "test(acceptance): a new object, only the pack recompiled, the same FAP, on the device",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/69840eb19a2f14c05c98a48328419666ab07ed01"
+    },
+    {
+     "at": "2026-11-25T09:14:03Z",
+     "message": "feat(site): the device page, every screen of the app from the atlas",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/a3e221183577ef9753ea1cbcaee1673c5c980ec8"
+    },
+    {
+     "at": "2026-11-25T09:08:11Z",
+     "message": "feat(ui): screen atlas of every screen, reviewed; cache measured; docs",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/641a0a54ae4d7616f24ce95c7928818e846a3a82"
+    }
+   ],
+   "languages": [
+    {
+     "name": "C",
+     "share": 43.3
+    },
+    {
+     "name": "Python",
+     "share": 36.1
+    },
+    {
+     "name": "JavaScript",
+     "share": 12.6
+    },
+    {
+     "name": "Shell",
+     "share": 5.9
+    },
+    {
+     "name": "HTML",
+     "share": 1.4
+    },
+    {
+     "name": "Just",
+     "share": 0.7
+    }
+   ],
+   "readme": "What it does · Interface · Every screen · On a real device · Small memory · How it works · Install · Guarantees · Case study · Explorer · Wiki",
+   "readme_shared": false,
+   "description_shared": false,
+   "topics": [],
+   "hosts": {
+    "github": "https://github.com/korczis/prismatic-flipperzero"
+   },
+   "site": "https://korczis.github.io/prismatic-flipperzero/",
+   "curated": false,
+   "stars": 0,
+   "supervised": true
+  },
   {
    "name": "korczis.github.io",
    "period": 12,
@@ -27,10 +227,15 @@
    "category": "web",
    "language": "JavaScript",
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-25T19:38:05Z",
-   "last_commit": "2026-11-25T19:36:54Z",
+   "pushed_at": "2026-11-26T03:06:58Z",
+   "last_commit": "2026-11-26T03:05:52Z",
    "last_message": "chore(data): refresh the snapshot and the index",
    "commits": [
+    {
+     "at": "2026-11-26T03:05:52Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/465f718349b08b8b7937c0f38be401f6c5e970ab"
+    },
     {
      "at": "2026-11-25T19:36:54Z",
      "message": "chore(data): refresh the snapshot and the index",
@@ -175,11 +380,6 @@
      "at": "2026-11-20T03:22:48Z",
      "message": "feat(glossary): notable technologies of a single repository get their page",
      "url": "https://github.com/korczis/korczis.github.io/commit/e18053832c7acc78764f0edec448869219d12ed0"
-    },
-    {
-     "at": "2026-11-20T02:32:34Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/af274ed0d4bdc1bedd5d967ba185d5a7044ee9f7"
     }
    ],
    "languages": [
@@ -839,206 +1039,6 @@
    },
    "site": "https://korczis.github.io/sonic-playground/",
    "curated": true,
-   "stars": 0,
-   "supervised": true
-  },
-  {
-   "name": "prismatic-flipperzero",
-   "period": 12,
-   "description": "Prismatic Pocket for Flipper Zero: an offline, data-driven knowledge engine with live assessments, scorecards, crisis simulations and a Bayes calculator; a deterministic pack compiler and a portable C core",
-   "category": "science",
-   "language": "C",
-   "created_at": "2026-11-25T03:06:03Z",
-   "pushed_at": "2026-11-25T13:59:17Z",
-   "last_commit": "2026-11-25T13:57:36Z",
-   "last_message": "docs(evidence): device parity recorded with the live tools build",
-   "commits": [
-    {
-     "at": "2026-11-25T13:57:36Z",
-     "message": "docs(evidence): device parity recorded with the live tools build",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/0ff22361139bc96c6332fe2d50fad0452a136606"
-    },
-    {
-     "at": "2026-11-25T13:47:26Z",
-     "message": "feat(calculate): one stepper adds a source; the calculator fits one screen",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/169ba7557e61e9688db47a648939db9323c68786"
-    },
-    {
-     "at": "2026-11-25T13:42:52Z",
-     "message": "feat(ui): live tools on the device: steppers change values in real time",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/7fc85365f96f4e5275f06bc06319bce0c18b2ee7"
-    },
-    {
-     "at": "2026-11-25T13:30:48Z",
-     "message": "feat(site): simulations, scorecards and calculators are interactive in the browser",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/b528ea48fce053505c13e95bbc8e55342a694ff5"
-    },
-    {
-     "at": "2026-11-25T12:46:22Z",
-     "message": "fix(calculate): single precision for the Flipper's FPU",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/e694aa4bb857f18b24b3344b14dafc94cede1ded"
-    },
-    {
-     "at": "2026-11-25T12:44:21Z",
-     "message": "feat(calculate): the Prismatic Platform's Bayesian fusion as an interactive calculator",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/30d303aa304e395f59dcea7b5e813c67ad5e9987"
-    },
-    {
-     "at": "2026-11-25T12:35:39Z",
-     "message": "feat(score): the Prismatic Platform's scorecards as data: executive frame, nominee risk",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/56fadfccd044a19bcef28f37ed9103038d967049"
-    },
-    {
-     "at": "2026-11-25T12:25:10Z",
-     "message": "feat(simulate): the Prismatic Platform's crisis simulations, as data, offline",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/3761edefa21a93063b1add990a4a71b0dc0733f9"
-    },
-    {
-     "at": "2026-11-25T12:11:04Z",
-     "message": "fix(sessions): drop an unreachable empty-list note; restore covers an empty page",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/5e934ffd033c23684a1daa7e50ac799b7bf3c780"
-    },
-    {
-     "at": "2026-11-25T12:09:13Z",
-     "message": "feat(sessions): save a detector's marks as JSON Lines, only when asked",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/aa9bd09386ad6810af7ab4264df1e61207c7a3d5"
-    },
-    {
-     "at": "2026-11-25T11:30:23Z",
-     "message": "feat(site): assessments are interactive on the explorer too",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/619187fc2a9b197d52e2bfa21806682d23bd0e7f"
-    },
-    {
-     "at": "2026-11-25T11:25:46Z",
-     "message": "docs(readme): FAEL-style landing: title, tagline, generated explainer and modules",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/f87e677fab4d57461d248ca838072864c8f892c5"
-    },
-    {
-     "at": "2026-11-25T11:18:46Z",
-     "message": "test(tools): validate the repository's applications only where the file exists",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/e0830aac1d0f02fe5d85ecd8357b5e1b79032e1d"
-    },
-    {
-     "at": "2026-11-25T11:17:46Z",
-     "message": "feat(apply): assessments as applications: Admiralty code, DD evidence levels, OSINT confidence",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/81a28e17297b050018889e585ae3ddc93a0c967d"
-    },
-    {
-     "at": "2026-11-25T11:00:36Z",
-     "message": "feat(detect): side-by-side detection of an object and a look-alike",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/d40840a22f6fc8893aa9961c33322beefb12a594"
-    },
-    {
-     "at": "2026-11-25T10:49:12Z",
-     "message": "feat(train): spaced repetition with Leitner boxes, kept safely on the SD card",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/748007604aa5d814f77f28e9e629e5f620c7395c"
-    },
-    {
-     "at": "2026-11-25T09:49:44Z",
-     "message": "docs(evidence): parity 24 of 24 on the marquee and quiz-score FAP",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/b40edb4b3de4bb60608bf63a0cdc348bd42cfe9c"
-    },
-    {
-     "at": "2026-11-25T09:47:31Z",
-     "message": "fix(ui): paging position fits two 32-bit counts; build the sim with GCC too",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/c9fa1c66d7628a4af7646e820a4e5636d8b5e04b"
-    },
-    {
-     "at": "2026-11-25T09:43:36Z",
-     "message": "feat(ui): a cut name scrolls after a pause; the quiz keeps score",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/1340051d1e80ca4a58cd42ae258237cb38461a61"
-    },
-    {
-     "at": "2026-11-25T09:26:40Z",
-     "message": "fix(atlas): compare frames by decoded pixels, not PNG bytes",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/aec317cf89cadc3b8c084fac69dbd5b8d9212f62"
-    },
-    {
-     "at": "2026-11-25T09:25:22Z",
-     "message": "test(acceptance): a new object, only the pack recompiled, the same FAP, on the device",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/69840eb19a2f14c05c98a48328419666ab07ed01"
-    },
-    {
-     "at": "2026-11-25T09:14:03Z",
-     "message": "feat(site): the device page, every screen of the app from the atlas",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/a3e221183577ef9753ea1cbcaee1673c5c980ec8"
-    },
-    {
-     "at": "2026-11-25T09:08:11Z",
-     "message": "feat(ui): screen atlas of every screen, reviewed; cache measured; docs",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/641a0a54ae4d7616f24ce95c7928818e846a3a82"
-    },
-    {
-     "at": "2026-11-25T08:45:50Z",
-     "message": "feat(ui): information architecture of four hubs on a tile grid",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/3908db4e43c76f9f2613aca7cc10b268c392951a"
-    },
-    {
-     "at": "2026-11-25T08:31:41Z",
-     "message": "feat(core): an LRU block cache in front of every pack read",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/50100879ac281b3a272dc1913dc8b341d545dc0d"
-    },
-    {
-     "at": "2026-11-25T08:23:25Z",
-     "message": "docs(readme): interface gallery from the simulator, device gallery recaptured",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/ffdc599140e3b6b7cb6ce066c786f05232d7cb0f"
-    },
-    {
-     "at": "2026-11-25T08:15:51Z",
-     "message": "feat(ui): one type family, kind pill, action chips, section icons, row bars",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/2b265f8fc13a41d4deed2083a222b25d8f77a5d9"
-    },
-    {
-     "at": "2026-11-25T07:35:18Z",
-     "message": "fix(sim): declare POSIX for strdup under -std=c11 on glibc",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/152440e2f8b119ad7d532b8a25e9c80506179e21"
-    },
-    {
-     "at": "2026-11-25T07:31:59Z",
-     "message": "feat(ui): context menu, contents outline, map of links, calmer paragraphs",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/f015e925eb4bb5d369172b0e86bc265a45276399"
-    },
-    {
-     "at": "2026-11-25T07:13:49Z",
-     "message": "feat(ui): portable interface, host simulator with firmware fonts, device parity",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/3e6c165a38c89c33cd711171069bb3a2ff91a6d5"
-    }
-   ],
-   "languages": [
-    {
-     "name": "C",
-     "share": 45.9
-    },
-    {
-     "name": "Python",
-     "share": 32.3
-    },
-    {
-     "name": "JavaScript",
-     "share": 13.3
-    },
-    {
-     "name": "Shell",
-     "share": 6.3
-    },
-    {
-     "name": "HTML",
-     "share": 1.4
-    },
-    {
-     "name": "Just",
-     "share": 0.7
-    }
-   ],
-   "readme": "What it does · Interface · Every screen · On a real device · Small memory · How it works · Install · Guarantees · Case study · Explorer · Wiki",
-   "readme_shared": false,
-   "description_shared": false,
-   "topics": [],
-   "hosts": {
-    "github": "https://github.com/korczis/prismatic-flipperzero"
-   },
-   "site": "https://korczis.github.io/prismatic-flipperzero/",
-   "curated": false,
    "stars": 0,
    "supervised": true
   },

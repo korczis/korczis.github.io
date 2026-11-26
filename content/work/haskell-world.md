@@ -34,6 +34,6 @@ The [repository](@/glossary/repository.md) was created on 6 April 2016; its late
 
 Its source is on [GitHub](https://github.com/korczis/haskell-world) and [GitLab](https://gitlab.com/korczis/haskell-world).
 
-Related work in [Science and visualisation](@/projects/science.md): [maze](@/work/maze.md) (2016), [algorithms-ruby](@/work/algorithms-ruby.md) (2015), [prismatic-flipperzero](@/work/prismatic-flipperzero.md) (2026) and [Oscilla](@/work/oscilla.md) (2026).
+Related work in [Science and visualisation](@/projects/science.md): [maze](@/work/maze.md) (2016), [algorithms-ruby](@/work/algorithms-ruby.md) (2015), [Oscilla](@/work/oscilla.md) (2026) and [algoglyph](@/work/algoglyph.md) (2026).
 
 *How to read this page:* the facts beside this article are measured from GitHub and GitLab, the language shares by bytes of code. The pulse draws the latest 2 commits as a heartbeat, one lane per commit type (feat, fix, docs…), refreshed live from your browser on GitHub. The concepts below are explained in the [glossary](@/glossary/_index.md).

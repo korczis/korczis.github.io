@@ -33,7 +33,7 @@ Services that draw on it: [Digital forensics and evidence preservation](@/servic
 
 Practised with: [HTML](@/glossary/html.md), [JavaScript](@/glossary/javascript.md), [Python](@/glossary/python.md), [Shell](@/glossary/shell.md), [Alpine.js](@/glossary/alpine-js.md), [Claude API](@/glossary/claude-api.md), [Flowbite Pro](@/glossary/flowbite-pro.md) and [Playwright](@/glossary/playwright.md).
 
-Public work whose own words show it: [catharsis-as-a-service](https://github.com/korczis/catharsis-as-a-service), [llm](https://gitlab.com/korczis/llm) and [prismatic-flipperzero](https://github.com/korczis/prismatic-flipperzero).
+Public work whose own words show it: [prismatic-flipperzero](https://github.com/korczis/prismatic-flipperzero), [catharsis-as-a-service](https://github.com/korczis/catharsis-as-a-service) and [llm](https://gitlab.com/korczis/llm).
 
 It was applied in client work in Real-estate developer and Financial and investment group; the use cases below give the principle and the intent, without names or numbers.
 
