@@ -1,6 +1,6 @@
 {
  "schema": "korczis-hub-index/v1",
- "generated_at": "2026-11-25T19:36:06Z",
+ "generated_at": "2026-11-26T03:05:07Z",
  "rule": "original = the owner wrote at least half of the listed commits; forks and mirrors are counted, not listed",
  "counts": {
   "github": 449,
@@ -18,7 +18,7 @@
  "dropped": [],
  "supervision": {
   "marker": ".ai/manifest.yaml",
-  "measured_at": "2026-11-25T19:36:06Z",
+  "measured_at": "2026-11-26T03:05:07Z",
   "kept": 0
  },
  "all_repos": [
@@ -1664,7 +1664,7 @@
    ],
    "stars": 0,
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-25T14:01:04Z",
+   "pushed_at": "2026-11-25T19:38:05Z",
    "archived": false,
    "share": 0.89,
    "hosts": {
@@ -4347,9 +4347,9 @@
   }
  ],
  "by_category": {
+  "web": 14,
   "science": 13,
   "media": 8,
-  "web": 14,
   "ai": 5,
   "tools": 63,
   "knowledge": 5,
@@ -4360,6 +4360,12 @@
   "learning": 21
  },
  "categories": {
+  "web": {
+   "repos": 14,
+   "sites": 0,
+   "top_language": "JavaScript",
+   "since": "2014"
+  },
   "science": {
    "repos": 13,
    "sites": 4,
@@ -4371,12 +4377,6 @@
    "sites": 4,
    "top_language": "JavaScript",
    "since": "2015"
-  },
-  "web": {
-   "repos": 14,
-   "sites": 0,
-   "top_language": "JavaScript",
-   "since": "2014"
   },
   "ai": {
    "repos": 5,
@@ -4640,16 +4640,16 @@
     "repos": 43,
     "evidence": [
      {
+      "name": "korczis.github.io",
+      "url": "https://github.com/korczis/korczis.github.io"
+     },
+     {
       "name": "oscilla",
       "url": "https://github.com/korczis/oscilla"
      },
      {
       "name": "sonic-playground",
       "url": "https://github.com/korczis/sonic-playground"
-     },
-     {
-      "name": "korczis.github.io",
-      "url": "https://github.com/korczis/korczis.github.io"
      }
     ]
    },
@@ -5124,8 +5124,14 @@
  "recent": {
   "size": 100,
   "from": "2018-03-10T17:02:00Z",
-  "to": "2026-11-25T17:12:47Z",
+  "to": "2026-11-25T19:38:05Z",
   "mix": {
+   "web": {
+    "JavaScript": 2,
+    "HTML": 2,
+    "CSS": 3,
+    "Elixir": 1
+   },
    "science": {
     "TypeScript": 1,
     "JavaScript": 1,
@@ -5138,12 +5144,6 @@
     "HTML": 1,
     "Python": 1,
     "Dockerfile": 1,
-    "Elixir": 1
-   },
-   "web": {
-    "JavaScript": 2,
-    "HTML": 2,
-    "CSS": 3,
     "Elixir": 1
    },
    "ai": {
@@ -5192,6 +5192,39 @@
   }
  },
  "repos": [
+  {
+   "name": "korczis.github.io",
+   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+   "language": "JavaScript",
+   "topics": [
+    "accessibility",
+    "ai-agents",
+    "alpinejs",
+    "chartjs",
+    "cytoscape",
+    "echarts",
+    "flowbite",
+    "github-pages",
+    "majordomus",
+    "p5js",
+    "personal-website",
+    "portfolio",
+    "tailwindcss",
+    "zola"
+   ],
+   "stars": 0,
+   "created_at": "2024-12-24T16:48:15Z",
+   "pushed_at": "2026-11-25T19:38:05Z",
+   "archived": false,
+   "share": 0.89,
+   "hosts": {
+    "github": "https://github.com/korczis/korczis.github.io"
+   },
+   "site": null,
+   "supervised": true,
+   "category": "web",
+   "curated": false
+  },
   {
    "name": "algoglyph",
    "description": "Algorithms and physics drawn as glyphs: seeded, interactive p5.js visualisations (sorting, graphs, fractals, chaos, waves, gravity, 2D and 3D) with measured readouts and tested cores.",
@@ -5268,39 +5301,6 @@
    "supervised": true,
    "category": "media",
    "curated": true
-  },
-  {
-   "name": "korczis.github.io",
-   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-   "language": "JavaScript",
-   "topics": [
-    "accessibility",
-    "ai-agents",
-    "alpinejs",
-    "chartjs",
-    "cytoscape",
-    "echarts",
-    "flowbite",
-    "github-pages",
-    "majordomus",
-    "p5js",
-    "personal-website",
-    "portfolio",
-    "tailwindcss",
-    "zola"
-   ],
-   "stars": 0,
-   "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-25T14:01:04Z",
-   "archived": false,
-   "share": 0.89,
-   "hosts": {
-    "github": "https://github.com/korczis/korczis.github.io"
-   },
-   "site": null,
-   "supervised": true,
-   "category": "web",
-   "curated": false
   },
   {
    "name": "prismatic-flipperzero",
