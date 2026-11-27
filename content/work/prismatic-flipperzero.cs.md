@@ -3,7 +3,7 @@
 title = "prismatic-flipperzero"
 description = "prismatic-flipperzero: projekt z kategorie Věda a vizualizace, hlavní jazyk C, poslední commit 27. listopadu 2026."
 template = "work.html"
-weight = 2
+weight = 3
 updated = "2026-11-27T09:20:27Z"
 
 [taxonomies]

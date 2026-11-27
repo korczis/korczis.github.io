@@ -3,7 +3,7 @@
 title = "prismatic-flipperzero"
 description = "Prismatic Pocket for Flipper Zero: an offline, data-driven knowledge engine with live assessments, scorecards, crisis simulations and a Bayes calculator; a…"
 template = "work.html"
-weight = 2
+weight = 3
 updated = "2026-11-27T09:20:27Z"
 
 [taxonomies]
