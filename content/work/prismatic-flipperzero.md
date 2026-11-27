@@ -3,8 +3,8 @@
 title = "prismatic-flipperzero"
 description = "Prismatic Pocket for Flipper Zero: an offline, data-driven knowledge engine with live assessments, scorecards, crisis simulations and a Bayes calculator; a…"
 template = "work.html"
-weight = 3
-updated = "2026-11-26T16:50:56Z"
+weight = 2
+updated = "2026-11-27T09:20:27Z"
 
 [taxonomies]
 tags = ["Science and visualisation", "Python", "JavaScript"]
@@ -28,9 +28,9 @@ span = 3
 height = "md"
 tone = "night"
 +++
-**prismatic-flipperzero** is a project in [Science and visualisation](@/projects/science.md). Its code is written mainly in [C](@/glossary/c.md) (44.1 %), with [Python](@/glossary/python.md), [JavaScript](@/glossary/javascript.md) and [Shell](@/glossary/shell.md).
+**prismatic-flipperzero** is a project in [Science and visualisation](@/projects/science.md). Its code is written mainly in [C](@/glossary/c.md) (43.4 %), with [Python](@/glossary/python.md), [JavaScript](@/glossary/javascript.md) and [Shell](@/glossary/shell.md).
 
-The [repository](@/glossary/repository.md) was created on 25 November 2026; its latest [commit](@/glossary/commit.md) is from 26 November 2026. It reads “docs(evidence): Find by name on the device, 14 of 14 frames identical”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created on 25 November 2026; its latest [commit](@/glossary/commit.md) is from 27 November 2026. It reads “docs(evidence): parity 24 of 24 and gallery on the f3d8cb3e pack”. That places it among the projects active in the last 12 months.
 
 It runs as a live site on [GitHub Pages](@/glossary/github-pages.md): <https://korczis.github.io/prismatic-flipperzero/>.
 

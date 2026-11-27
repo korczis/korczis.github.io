@@ -990,13 +990,13 @@
           "name": "prismatic-flipperzero",
           "title": "prismatic-flipperzero",
           "how": "words",
-          "score": 3,
+          "score": 3.3,
           "slug": "prismatic-flipperzero",
           "url": "https://github.com/korczis/prismatic-flipperzero",
           "description": "Prismatic Pocket for Flipper Zero: an offline, data-driven knowledge engine with live assessments, scorecards, crisis simulations and a Bayes calculator; a deterministic pack compiler and a portable C core",
           "category": "science",
           "site": "https://korczis.github.io/prismatic-flipperzero/",
-          "pushed": "2026-11-26",
+          "pushed": "2026-11-27",
           "skill": "audit-trail"
         },
         {
@@ -2179,6 +2179,19 @@
       ],
       "repos": [
         {
+          "name": "prismatic-majordomus",
+          "title": "Majordomus",
+          "how": "words",
+          "score": 5.8,
+          "slug": "prismatic-majordomus",
+          "url": "https://github.com/korczis/prismatic-majordomus",
+          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+          "category": "ai",
+          "site": "https://korczis.github.io/prismatic-majordomus/",
+          "pushed": "2026-11-27",
+          "skill": "llm-agents"
+        },
+        {
           "name": "sig",
           "title": "sig",
           "how": "words",
@@ -2192,29 +2205,16 @@
           "skill": "llm-agents"
         },
         {
-          "name": "prismatic-majordomus",
-          "title": "Majordomus",
-          "how": "words",
-          "score": 3.5,
-          "slug": "prismatic-majordomus",
-          "url": "https://github.com/korczis/prismatic-majordomus",
-          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
-          "category": "ai",
-          "site": "https://korczis.github.io/prismatic-majordomus/",
-          "pushed": "2026-11-27",
-          "skill": "llm-agents"
-        },
-        {
           "name": "prismatic-flipperzero",
           "title": "prismatic-flipperzero",
           "how": "words",
-          "score": 3,
+          "score": 3.3,
           "slug": "prismatic-flipperzero",
           "url": "https://github.com/korczis/prismatic-flipperzero",
           "description": "Prismatic Pocket for Flipper Zero: an offline, data-driven knowledge engine with live assessments, scorecards, crisis simulations and a Bayes calculator; a deterministic pack compiler and a portable C core",
           "category": "science",
           "site": "https://korczis.github.io/prismatic-flipperzero/",
-          "pushed": "2026-11-26",
+          "pushed": "2026-11-27",
           "skill": "audit-trail"
         },
         {
@@ -2509,14 +2509,14 @@
           "name": "prismatic-majordomus",
           "title": "Majordomus",
           "how": "words",
-          "score": 4.6,
+          "score": 5.8,
           "slug": "prismatic-majordomus",
           "url": "https://github.com/korczis/prismatic-majordomus",
           "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
           "category": "ai",
           "site": "https://korczis.github.io/prismatic-majordomus/",
           "pushed": "2026-11-27",
-          "skill": "policy-as-code"
+          "skill": "llm-agents"
         },
         {
           "name": "sig",
@@ -2541,7 +2541,7 @@
           "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
           "category": "web",
           "site": null,
-          "pushed": "2026-11-26",
+          "pushed": "2026-11-27",
           "skill": "policy-as-code"
         },
         {
@@ -2561,13 +2561,13 @@
           "name": "prismatic-flipperzero",
           "title": "prismatic-flipperzero",
           "how": "words",
-          "score": 3,
+          "score": 3.3,
           "slug": "prismatic-flipperzero",
           "url": "https://github.com/korczis/prismatic-flipperzero",
           "description": "Prismatic Pocket for Flipper Zero: an offline, data-driven knowledge engine with live assessments, scorecards, crisis simulations and a Bayes calculator; a deterministic pack compiler and a portable C core",
           "category": "science",
           "site": "https://korczis.github.io/prismatic-flipperzero/",
-          "pushed": "2026-11-26",
+          "pushed": "2026-11-27",
           "skill": "audit-trail"
         },
         {
@@ -4851,13 +4851,13 @@
           "name": "prismatic-flipperzero",
           "title": "prismatic-flipperzero",
           "how": "words",
-          "score": 3,
+          "score": 3.3,
           "slug": "prismatic-flipperzero",
           "url": "https://github.com/korczis/prismatic-flipperzero",
           "description": "Prismatic Pocket for Flipper Zero: an offline, data-driven knowledge engine with live assessments, scorecards, crisis simulations and a Bayes calculator; a deterministic pack compiler and a portable C core",
           "category": "science",
           "site": "https://korczis.github.io/prismatic-flipperzero/",
-          "pushed": "2026-11-26"
+          "pushed": "2026-11-27"
         },
         {
           "name": "catharsis-as-a-service",
@@ -5130,6 +5130,18 @@
       ],
       "repos": [
         {
+          "name": "prismatic-majordomus",
+          "title": "Majordomus",
+          "how": "words",
+          "score": 5.8,
+          "slug": "prismatic-majordomus",
+          "url": "https://github.com/korczis/prismatic-majordomus",
+          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+          "category": "ai",
+          "site": "https://korczis.github.io/prismatic-majordomus/",
+          "pushed": "2026-11-27"
+        },
+        {
           "name": "sig",
           "title": "sig",
           "how": "words",
@@ -5140,18 +5152,6 @@
           "category": "ai",
           "site": null,
           "pushed": "2026-02-04"
-        },
-        {
-          "name": "prismatic-majordomus",
-          "title": "Majordomus",
-          "how": "words",
-          "score": 3.5,
-          "slug": "prismatic-majordomus",
-          "url": "https://github.com/korczis/prismatic-majordomus",
-          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
-          "category": "ai",
-          "site": "https://korczis.github.io/prismatic-majordomus/",
-          "pushed": "2026-11-27"
         },
         {
           "name": "osint-case-ratcliffe-moscow-2026",
@@ -6461,7 +6461,7 @@
           "name": "prismatic-majordomus",
           "title": "Majordomus",
           "how": "words",
-          "score": 4.6,
+          "score": 5.6,
           "slug": "prismatic-majordomus",
           "url": "https://github.com/korczis/prismatic-majordomus",
           "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
@@ -6479,7 +6479,7 @@
           "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
           "category": "web",
           "site": null,
-          "pushed": "2026-11-26"
+          "pushed": "2026-11-27"
         },
         {
           "name": "kompendium-epistemicke-anihilace",

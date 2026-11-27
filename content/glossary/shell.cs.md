@@ -44,7 +44,7 @@ Shell jsem psal v 43 veřejných repozitářích, od roku 2013 do 2026; v 13 z n
 
 K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (11), [Systémy a infrastruktura](@/projects/systems.cs.md) (10), [Data a GIS](@/projects/data.cs.md) (5) a [Média a umění](@/projects/media.cs.md) (5).
 
-Naposledy: [Majordomus](@/work/prismatic-majordomus.cs.md): Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model; [prismatic-flipperzero](@/work/prismatic-flipperzero.cs.md); [Sonic Playground](@/work/sonic-playground.cs.md): Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.
+Naposledy: [prismatic-flipperzero](@/work/prismatic-flipperzero.cs.md); [Majordomus](@/work/prismatic-majordomus.cs.md): Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model; [Sonic Playground](@/work/sonic-playground.cs.md): Ručně vybíraný hudební blog postavený na Phoenixu a Elixiru s tématem Kita.
 
 10 z těchto projektů běží jako živé weby.
 

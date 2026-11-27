@@ -4,7 +4,7 @@ title = "Majordomus"
 description = "AI agents say the work is done; Majordomus makes them prove it."
 template = "work.html"
 weight = 1
-updated = "2026-11-27T01:16:47Z"
+updated = "2026-11-27T11:04:51Z"
 
 [taxonomies]
 tags = ["AI engineering", "Rust", "Shell", "JavaScript"]
@@ -30,7 +30,7 @@ tone = "night"
 +++
 **Majordomus** is a project in [AI engineering](@/projects/ai.md). Its code is written mainly in [Rust](@/glossary/rust.md) (60.8 %), with [Shell](@/glossary/shell.md), [JavaScript](@/glossary/javascript.md) and [HTML](@/glossary/html.md).
 
-The [repository](@/glossary/repository.md) was created on 3 September 2026; its latest [commit](@/glossary/commit.md) is from 27 November 2026. It reads “Merge pull request \#3139 from korczis/integration/train-20261125a”. That places it among the projects active in the last 12 months.
+The [repository](@/glossary/repository.md) was created on 3 September 2026; its latest [commit](@/glossary/commit.md) is from 27 November 2026. It reads “Merge pull request \#3186 from korczis/integration/train-20261127b”. That places it among the projects active in the last 12 months.
 
 It is built with [MCP](@/glossary/mcp.md) and [Zola](@/glossary/zola.md).
 

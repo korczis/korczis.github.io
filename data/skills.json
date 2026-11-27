@@ -980,40 +980,6 @@
       ],
       "repos": [
         {
-          "name": "prismatic-majordomus",
-          "title": "Majordomus",
-          "url": "https://github.com/korczis/prismatic-majordomus",
-          "work": true,
-          "slug": "prismatic-majordomus",
-          "site": "https://korczis.github.io/prismatic-majordomus/",
-          "category": "ai",
-          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
-          "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
-          "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
-          "created": "2026-09-03",
-          "pushed": "2026-11-27",
-          "primary": false,
-          "share": 4.1,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "Rust",
-            "Shell",
-            "JavaScript",
-            "HTML",
-            "MCP",
-            "Zola",
-            "Claude Code",
-            "LLM",
-            "Mermaid",
-            "Git",
-            "YAML",
-            "GitHub Actions"
-          ]
-        },
-        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "url": "https://github.com/korczis/korczis.github.io",
@@ -1025,7 +991,7 @@
           "summary": null,
           "summary_cs": null,
           "created": "2024-12-24",
-          "pushed": "2026-11-26",
+          "pushed": "2026-11-27",
           "primary": true,
           "share": 61.9,
           "via": [
@@ -1065,9 +1031,9 @@
           "summary": null,
           "summary_cs": null,
           "created": "2026-11-25",
-          "pushed": "2026-11-26",
+          "pushed": "2026-11-27",
           "primary": false,
-          "share": 11,
+          "share": 10.8,
           "via": [
             "code"
           ],
@@ -1078,6 +1044,40 @@
             "JavaScript",
             "Shell",
             "HTML"
+          ]
+        },
+        {
+          "name": "prismatic-majordomus",
+          "title": "Majordomus",
+          "url": "https://github.com/korczis/prismatic-majordomus",
+          "work": true,
+          "slug": "prismatic-majordomus",
+          "site": "https://korczis.github.io/prismatic-majordomus/",
+          "category": "ai",
+          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+          "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
+          "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
+          "created": "2026-09-03",
+          "pushed": "2026-11-27",
+          "primary": false,
+          "share": 4.1,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "Rust",
+            "Shell",
+            "JavaScript",
+            "HTML",
+            "MCP",
+            "Zola",
+            "Claude Code",
+            "LLM",
+            "Mermaid",
+            "Git",
+            "YAML",
+            "GitHub Actions"
           ]
         },
         {
@@ -7455,9 +7455,9 @@
           "summary": null,
           "summary_cs": null,
           "created": "2026-11-25",
-          "pushed": "2026-11-26",
+          "pushed": "2026-11-27",
           "primary": false,
-          "share": 37.3,
+          "share": 38.4,
           "via": [
             "code"
           ],
@@ -8177,6 +8177,33 @@
       ],
       "repos": [
         {
+          "name": "prismatic-flipperzero",
+          "title": "prismatic-flipperzero",
+          "url": "https://github.com/korczis/prismatic-flipperzero",
+          "work": true,
+          "slug": "prismatic-flipperzero",
+          "site": "https://korczis.github.io/prismatic-flipperzero/",
+          "category": "science",
+          "description": "Prismatic Pocket for Flipper Zero: an offline, data-driven knowledge engine with live assessments, scorecards, crisis simulations and a Bayes calculator; a deterministic pack compiler and a portable C core",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2026-11-25",
+          "pushed": "2026-11-27",
+          "primary": false,
+          "share": 5.7,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "C",
+            "Python",
+            "JavaScript",
+            "Shell",
+            "HTML"
+          ]
+        },
+        {
           "name": "prismatic-majordomus",
           "title": "Majordomus",
           "url": "https://github.com/korczis/prismatic-majordomus",
@@ -8209,33 +8236,6 @@
             "Git",
             "YAML",
             "GitHub Actions"
-          ]
-        },
-        {
-          "name": "prismatic-flipperzero",
-          "title": "prismatic-flipperzero",
-          "url": "https://github.com/korczis/prismatic-flipperzero",
-          "work": true,
-          "slug": "prismatic-flipperzero",
-          "site": "https://korczis.github.io/prismatic-flipperzero/",
-          "category": "science",
-          "description": "Prismatic Pocket for Flipper Zero: an offline, data-driven knowledge engine with live assessments, scorecards, crisis simulations and a Bayes calculator; a deterministic pack compiler and a portable C core",
-          "summary": null,
-          "summary_cs": null,
-          "created": "2026-11-25",
-          "pushed": "2026-11-26",
-          "primary": false,
-          "share": 5.8,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "C",
-            "Python",
-            "JavaScript",
-            "Shell",
-            "HTML"
           ]
         },
         {
@@ -9576,40 +9576,6 @@
       ],
       "repos": [
         {
-          "name": "prismatic-majordomus",
-          "title": "Majordomus",
-          "url": "https://github.com/korczis/prismatic-majordomus",
-          "work": true,
-          "slug": "prismatic-majordomus",
-          "site": "https://korczis.github.io/prismatic-majordomus/",
-          "category": "ai",
-          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
-          "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
-          "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
-          "created": "2026-09-03",
-          "pushed": "2026-11-27",
-          "primary": false,
-          "share": 3.8,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "Rust",
-            "Shell",
-            "JavaScript",
-            "HTML",
-            "MCP",
-            "Zola",
-            "Claude Code",
-            "LLM",
-            "Mermaid",
-            "Git",
-            "YAML",
-            "GitHub Actions"
-          ]
-        },
-        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "url": "https://github.com/korczis/korczis.github.io",
@@ -9621,7 +9587,7 @@
           "summary": null,
           "summary_cs": null,
           "created": "2024-12-24",
-          "pushed": "2026-11-26",
+          "pushed": "2026-11-27",
           "primary": false,
           "share": 36.1,
           "via": [
@@ -9660,7 +9626,7 @@
           "summary": null,
           "summary_cs": null,
           "created": "2026-11-25",
-          "pushed": "2026-11-26",
+          "pushed": "2026-11-27",
           "primary": false,
           "share": 1.2,
           "via": [
@@ -9673,6 +9639,40 @@
             "JavaScript",
             "Shell",
             "HTML"
+          ]
+        },
+        {
+          "name": "prismatic-majordomus",
+          "title": "Majordomus",
+          "url": "https://github.com/korczis/prismatic-majordomus",
+          "work": true,
+          "slug": "prismatic-majordomus",
+          "site": "https://korczis.github.io/prismatic-majordomus/",
+          "category": "ai",
+          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+          "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
+          "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
+          "created": "2026-09-03",
+          "pushed": "2026-11-27",
+          "primary": false,
+          "share": 3.8,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "Rust",
+            "Shell",
+            "JavaScript",
+            "HTML",
+            "MCP",
+            "Zola",
+            "Claude Code",
+            "LLM",
+            "Mermaid",
+            "Git",
+            "YAML",
+            "GitHub Actions"
           ]
         },
         {
@@ -10883,7 +10883,7 @@
           "summary": null,
           "summary_cs": null,
           "created": "2024-12-24",
-          "pushed": "2026-11-26",
+          "pushed": "2026-11-27",
           "primary": false,
           "share": 1.1,
           "via": [
@@ -11750,9 +11750,9 @@
           "summary": null,
           "summary_cs": null,
           "created": "2026-11-25",
-          "pushed": "2026-11-26",
+          "pushed": "2026-11-27",
           "primary": true,
-          "share": 44.1,
+          "share": 43.4,
           "via": [
             "primary",
             "code"
@@ -14004,7 +14004,7 @@
           "summary": null,
           "summary_cs": null,
           "created": "2024-12-24",
-          "pushed": "2026-11-26",
+          "pushed": "2026-11-27",
           "primary": false,
           "share": null,
           "via": [
@@ -14453,7 +14453,7 @@
           "summary": null,
           "summary_cs": null,
           "created": "2024-12-24",
-          "pushed": "2026-11-26",
+          "pushed": "2026-11-27",
           "primary": false,
           "share": null,
           "via": [
@@ -15064,7 +15064,7 @@
           "summary": null,
           "summary_cs": null,
           "created": "2024-12-24",
-          "pushed": "2026-11-26",
+          "pushed": "2026-11-27",
           "primary": false,
           "share": null,
           "via": [
@@ -15361,7 +15361,7 @@
           "summary": null,
           "summary_cs": null,
           "created": "2024-12-24",
-          "pushed": "2026-11-26",
+          "pushed": "2026-11-27",
           "primary": false,
           "share": null,
           "via": [
@@ -15507,7 +15507,7 @@
           "summary": null,
           "summary_cs": null,
           "created": "2024-12-24",
-          "pushed": "2026-11-26",
+          "pushed": "2026-11-27",
           "primary": false,
           "share": null,
           "via": [
@@ -15695,7 +15695,7 @@
           "summary": null,
           "summary_cs": null,
           "created": "2024-12-24",
-          "pushed": "2026-11-26",
+          "pushed": "2026-11-27",
           "primary": false,
           "share": null,
           "via": [
@@ -15768,7 +15768,7 @@
           "summary": null,
           "summary_cs": null,
           "created": "2024-12-24",
-          "pushed": "2026-11-26",
+          "pushed": "2026-11-27",
           "primary": false,
           "share": null,
           "via": [
@@ -15981,6 +15981,46 @@
       ],
       "repos": [
         {
+          "name": "korczis.github.io",
+          "title": "korczis.github.io",
+          "url": "https://github.com/korczis/korczis.github.io",
+          "work": true,
+          "slug": "korczis-github-io",
+          "site": null,
+          "category": "web",
+          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+          "summary": null,
+          "summary_cs": null,
+          "created": "2024-12-24",
+          "pushed": "2026-11-27",
+          "primary": false,
+          "share": null,
+          "via": [
+            "topic",
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Alpine.js",
+            "Cytoscape.js",
+            "Apache ECharts",
+            "Flowbite Pro",
+            "GitHub Pages",
+            "Majordomus",
+            "p5.js",
+            "Tailwind CSS",
+            "Zola",
+            "Tera",
+            "D3.js",
+            "Node.js",
+            "Playwright",
+            "axe-core"
+          ]
+        },
+        {
           "name": "prismatic-majordomus",
           "title": "Majordomus",
           "url": "https://github.com/korczis/prismatic-majordomus",
@@ -16012,46 +16052,6 @@
             "Git",
             "YAML",
             "GitHub Actions"
-          ]
-        },
-        {
-          "name": "korczis.github.io",
-          "title": "korczis.github.io",
-          "url": "https://github.com/korczis/korczis.github.io",
-          "work": true,
-          "slug": "korczis-github-io",
-          "site": null,
-          "category": "web",
-          "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-          "summary": null,
-          "summary_cs": null,
-          "created": "2024-12-24",
-          "pushed": "2026-11-26",
-          "primary": false,
-          "share": null,
-          "via": [
-            "topic",
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Alpine.js",
-            "Cytoscape.js",
-            "Apache ECharts",
-            "Flowbite Pro",
-            "GitHub Pages",
-            "Majordomus",
-            "p5.js",
-            "Tailwind CSS",
-            "Zola",
-            "Tera",
-            "D3.js",
-            "Node.js",
-            "Playwright",
-            "axe-core"
           ]
         },
         {
@@ -16370,7 +16370,7 @@
           "summary": null,
           "summary_cs": null,
           "created": "2024-12-24",
-          "pushed": "2026-11-26",
+          "pushed": "2026-11-27",
           "primary": false,
           "share": null,
           "via": [
@@ -17724,7 +17724,7 @@
           "summary": null,
           "summary_cs": null,
           "created": "2024-12-24",
-          "pushed": "2026-11-26",
+          "pushed": "2026-11-27",
           "primary": false,
           "share": null,
           "via": [
@@ -20069,7 +20069,7 @@
           "summary": null,
           "summary_cs": null,
           "created": "2024-12-24",
-          "pushed": "2026-11-26",
+          "pushed": "2026-11-27",
           "primary": false,
           "share": null,
           "via": [
@@ -22550,7 +22550,7 @@
           "summary": null,
           "summary_cs": null,
           "created": "2024-12-24",
-          "pushed": "2026-11-26",
+          "pushed": "2026-11-27",
           "primary": false,
           "share": null,
           "via": [
@@ -32945,7 +32945,7 @@
           "summary": null,
           "summary_cs": null,
           "created": "2024-12-24",
-          "pushed": "2026-11-26",
+          "pushed": "2026-11-27",
           "primary": false,
           "share": null,
           "via": [
@@ -38404,7 +38404,7 @@
           "summary": null,
           "summary_cs": null,
           "created": "2024-12-24",
-          "pushed": "2026-11-26",
+          "pushed": "2026-11-27",
           "primary": false,
           "share": null,
           "via": [
