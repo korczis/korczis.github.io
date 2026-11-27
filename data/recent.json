@@ -1,6 +1,6 @@
 {
  "schema": "korczis-hub-recent/v2",
- "generated_at": "2026-11-26T23:26:03Z",
+ "generated_at": "2026-11-27T05:18:07Z",
  "window_days": 1461,
  "periods": [
   {
@@ -18,8 +18,435 @@
  ],
  "archive": 162,
  "rule": "every original repository of data/index.json; a repository is recent when its default branch has a commit in the window, archive otherwise; host activity dates are ignored",
- "asked": 3,
+ "asked": 2,
  "repos": [
+  {
+   "name": "prismatic-majordomus",
+   "period": 12,
+   "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+   "category": "ai",
+   "language": "Rust",
+   "created_at": "2026-09-03T20:24:57Z",
+   "pushed_at": "2026-11-27T03:31:42Z",
+   "last_commit": "2026-11-27T01:16:47Z",
+   "last_message": "Merge pull request #3139 from korczis/integration/train-20261125a",
+   "commits": [
+    {
+     "at": "2026-11-27T01:16:47Z",
+     "message": "Merge pull request #3139 from korczis/integration/train-20261125a",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/b12715aee72f6dcb8be1079bdee2e5b339489d07"
+    },
+    {
+     "at": "2026-11-26T14:47:58Z",
+     "message": "fix(board): the milestones #3140 and #3130 open have a lane in share/board.yaml",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/5cd2b9b29e15a7b1bd849adb06ffa52201675b4d"
+    },
+    {
+     "at": "2026-11-26T13:52:26Z",
+     "message": "chore(derive): the combined top derives to itself after #3092's fix and five plan pull requests",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/706ba20a6be9e21dc735967fcd01689b845712b9"
+    },
+    {
+     "at": "2026-11-26T13:49:43Z",
+     "message": "Merge #3141 (feature/fleet-adoption-records) 34349bf8dd6 into the combined top on 46775282570",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/a7f579f8193c41e2b3d418b23a60fcfa4af1c650"
+    },
+    {
+     "at": "2026-11-26T13:49:41Z",
+     "message": "Merge #3129 (plan/offloaded-delivery-observes-a-throwaway-commit) 5f179cdf377 into the combined top on 46775282570",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/bfe83131cb8df0e06362937aa727b442d056a1cc"
+    },
+    {
+     "at": "2026-11-26T13:49:26Z",
+     "message": "Merge #3130 (plan/fabric-gates-and-phases) 72679d9df9e into the combined top on 46775282570",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/05749de5cffe87cb2cf6cbba34f98f4d3142b7d3"
+    },
+    {
+     "at": "2026-11-26T13:49:23Z",
+     "message": "Merge #3135 (plan/openttd-lessons-liveness) d948df025b4 into the combined top on 46775282570",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/ffa15f87e1921f151af968b7541474846270c8a0"
+    },
+    {
+     "at": "2026-11-26T13:49:20Z",
+     "message": "Merge #3140 (plan/lessons-from-a-downstream-adopter-20261125) bb7d7e492cc into the combined top on 46775282570",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/65de843601b72871495fc047d1708a6e8830f76e"
+    },
+    {
+     "at": "2026-11-26T13:42:02Z",
+     "message": "Merge #3092 (fix/I4634-a-merge-does-not-move-the-committed-delivery) ed34ffd0765 into the combined top: plan-record-cases runs case 4634",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/1b6b691db2e57443c68c03b624d946d55b47f203"
+    },
+    {
+     "at": "2026-11-26T13:40:20Z",
+     "message": "fix(ci): plan-record-cases runs 4634_a_merge_does_not_move_the_committed_delivery (I4634)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/ed34ffd0765e8131f71efe4ed9e1da6d2079a962"
+    },
+    {
+     "at": "2026-11-25T11:11:22Z",
+     "message": "docs(plan): workspace adoption findings I4803 I4804 I4805 I4806 I4807 I4808",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/34349bf8dd6a2a8ba5bbd5beec26af2b90dfdf6a"
+    },
+    {
+     "at": "2026-11-25T11:05:23Z",
+     "message": "docs(plan): I4712 and I4713 serve their milestone's criterion",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/b6ac92742e586ee53f896fccc4ffb5940f63370a"
+    },
+    {
+     "at": "2026-11-25T10:24:23Z",
+     "message": "docs(plan): I4740, I4741 and I4742 name the criteria of their intent they serve",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/d948df025b4fbeb34fbb611b6bd4e3f74f05686b"
+    },
+    {
+     "at": "2026-11-25T10:14:35Z",
+     "message": "chore(plan): a downstream adopter's 1.2.0 findings are planned (I4778-I4793)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/bb7d7e492ccff491e76ec2a3f95c1fe83b8fdb9e"
+    },
+    {
+     "at": "2026-11-25T09:37:34Z",
+     "message": "Merge #3113 (fix/bounded-runs-drain-their-pipes, with #3111) into the combined top on 46775282570",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/880220a0f0fc772a79c50973eca89cd26a35b5ac"
+    },
+    {
+     "at": "2026-11-25T08:55:44Z",
+     "message": "Merge #3092 (fix/I4634-a-merge-does-not-move-the-committed-delivery) into the combined top on 46775282570",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/063cc3f882215ca8f869568d520441a5ca2a4226"
+    },
+    {
+     "at": "2026-11-25T08:34:09Z",
+     "message": "docs(plan): I4740, I4741 and I4742 record three liveness lessons from the OpenTTD adopter",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/98f34005b8a9f7e34931d0a163488102caea62af"
+    },
+    {
+     "at": "2026-11-25T08:30:51Z",
+     "message": "test(process): a bounded run's drain has no branch it never takes (I4713)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/ad18cb72d31c18ced3d038601e7173e3ff25ead8"
+    },
+    {
+     "at": "2026-11-25T08:30:09Z",
+     "message": "chore(release): declare 1.3.0, the minor release #3092's contract requires (I4634)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/cac4b61828c5ce1b3560fe471ef8e7401699bb50"
+    },
+    {
+     "at": "2026-11-25T08:12:22Z",
+     "message": "Merge I4712 (9b8c4bd0c63) into I4713",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/073c29e6ec173f914652d3d6f7051e22ac3a4fbc"
+    },
+    {
+     "at": "2026-11-25T05:45:14Z",
+     "message": "docs(plan): Fabric gates G0-G5 as milestones and I4721-I4728; the host milestone stops waiting",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/72679d9df9e9339694567e397a417068bc2eb9f7"
+    },
+    {
+     "at": "2026-11-25T04:02:44Z",
+     "message": "docs(plan): I4718 a delivery observing a throwaway commit is refused locally",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/5f179cdf377e7c4bfaf2290a7a46b4a0d3f412ed"
+    },
+    {
+     "at": "2026-11-25T03:21:52Z",
+     "message": "test(process): every changed line of I4712 is run by a test (I4712)",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/9b8c4bd0c63f02d57997120cb0b8b6acdf96fd4e"
+    },
+    {
+     "at": "2026-11-25T03:17:05Z",
+     "message": "Merge pull request #3112 from korczis/integration/train-20261122a",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/46775282570cd1f5c217fb354d1852709c9e1f95"
+    },
+    {
+     "at": "2026-11-23T01:42:14Z",
+     "message": "Merge I4712 (1f0e8a805f3, master 93739746f8d) into I4713 and derive",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/c29b3b96881693c8a74e0c28d1ffe82c62a19c3f"
+    },
+    {
+     "at": "2026-11-23T01:09:47Z",
+     "message": "Merge master (93739746f8d, #3107) into I4712 and derive",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/1f0e8a805f3cb98df2d91603dfd52834d399e744"
+    },
+    {
+     "at": "2026-11-23T00:55:53Z",
+     "message": "docs(plan): derive delivery observed at the combined top 4354b754239",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/e13b7568b6578e6540b8532504fb428b7411efbd"
+    },
+    {
+     "at": "2026-11-23T00:53:19Z",
+     "message": "Merge master 93739746f8d (#3107) into the combined top",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/4354b75423996ee5b010d9d9ababdef9e1165f07"
+    },
+    {
+     "at": "2026-11-23T00:16:30Z",
+     "message": "docs(plan): derive delivery observed at the combined top e21b7cdf4fe",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/06298de3e8047883adf9995210a11ad1dbc5d4cd"
+    },
+    {
+     "at": "2026-11-23T00:13:52Z",
+     "message": "Merge pull request #3107 from korczis/fix/I4685-pages-check-resolves-an-ambiguous-short-sha",
+     "url": "https://github.com/korczis/prismatic-majordomus/commit/93739746f8d9f488bbd3e999fc9ed27818ac81a9"
+    }
+   ],
+   "languages": [
+    {
+     "name": "Rust",
+     "share": 60.8
+    },
+    {
+     "name": "Shell",
+     "share": 29.5
+    },
+    {
+     "name": "JavaScript",
+     "share": 4.1
+    },
+    {
+     "name": "HTML",
+     "share": 3.8
+    },
+    {
+     "name": "CSS",
+     "share": 0.6
+    },
+    {
+     "name": "Python",
+     "share": 0.4
+    }
+   ],
+   "readme": "Your AI agents say the work is done. Majordomus makes them prove it.",
+   "readme_shared": false,
+   "description_shared": false,
+   "topics": [
+    "agentic-ai",
+    "ai",
+    "ai-agents",
+    "ai-governance",
+    "claude-code",
+    "cli",
+    "codex",
+    "continuous-integration",
+    "developer-tools",
+    "devops",
+    "gemini",
+    "llm",
+    "llmops",
+    "mcp",
+    "mermaid",
+    "model-context-protocol",
+    "multi-agent",
+    "policy-as-code",
+    "rust"
+   ],
+   "hosts": {
+    "github": "https://github.com/korczis/prismatic-majordomus"
+   },
+   "site": "https://korczis.github.io/prismatic-majordomus/",
+   "curated": true,
+   "stars": 1,
+   "supervised": true
+  },
+  {
+   "name": "korczis.github.io",
+   "period": 12,
+   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+   "category": "web",
+   "language": "JavaScript",
+   "created_at": "2024-12-24T16:48:15Z",
+   "pushed_at": "2026-11-26T23:27:55Z",
+   "last_commit": "2026-11-26T23:26:48Z",
+   "last_message": "chore(data): refresh the snapshot and the index",
+   "commits": [
+    {
+     "at": "2026-11-26T23:26:48Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/033aca9083ccab2b89bec5a85d3919698547d125"
+    },
+    {
+     "at": "2026-11-26T13:01:46Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/9a0c74e232139882b04669d44c4936cb16db2d35"
+    },
+    {
+     "at": "2026-11-26T03:05:52Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/465f718349b08b8b7937c0f38be401f6c5e970ab"
+    },
+    {
+     "at": "2026-11-25T19:36:54Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/a950a1ff393ad82cf00b3ed25ce05764aac5676f"
+    },
+    {
+     "at": "2026-11-25T13:59:56Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/930d64fcbf69776d124a097ef7e8ab87e2abefb3"
+    },
+    {
+     "at": "2026-11-25T13:42:52Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/cb988d69032a4cf4b7cf01f02a27fa35ced6399a"
+    },
+    {
+     "at": "2026-11-25T09:05:39Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/0f4c5c2e16573fc0b262df069555c33c88768ed4"
+    },
+    {
+     "at": "2026-11-24T23:40:41Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/1966f002ed48cfce1d5b849c1cd6cbe5fda823bf"
+    },
+    {
+     "at": "2026-11-24T14:06:50Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/a23dc88f1d8a274a24c6a8c4eee3c4ee7319455f"
+    },
+    {
+     "at": "2026-11-24T02:32:41Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/e2527f12dd56f3d882114246e8dbd7af49f83885"
+    },
+    {
+     "at": "2026-11-23T15:08:46Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/2e61e8e9b8e032b7dd06c30a361f4df6a1039631"
+    },
+    {
+     "at": "2026-11-23T03:57:37Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/f1a7277138d2c3d8c2045232f6344d8313b33cf2"
+    },
+    {
+     "at": "2026-11-22T22:49:54Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/faad2042607f996a49df57046ccb58d56922bb5e"
+    },
+    {
+     "at": "2026-11-22T16:37:42Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/c804178bddf152d76407768c500f03017ffba9aa"
+    },
+    {
+     "at": "2026-11-22T08:22:12Z",
+     "message": "chore(merge): integrate #49, the mesh declaration loads again",
+     "url": "https://github.com/korczis/korczis.github.io/commit/ca38b66e703a932af13176e409bd83d1dc571c32"
+    },
+    {
+     "at": "2026-11-22T07:42:58Z",
+     "message": "fix(mesh): the mesh gate takes the shared CLI",
+     "url": "https://github.com/korczis/korczis.github.io/commit/595b84c740b22adcede255f95971df786935dd24"
+    },
+    {
+     "at": "2026-11-22T07:41:51Z",
+     "message": "fix(mesh): write the trusted keys bare, so Majordomus loads the declaration",
+     "url": "https://github.com/korczis/korczis.github.io/commit/049cacb971a257ccae599859297fc4ecd3824177"
+    },
+    {
+     "at": "2026-11-22T07:37:18Z",
+     "message": "chore(merge): integrate #48, quoted mesh keys",
+     "url": "https://github.com/korczis/korczis.github.io/commit/96449d3ea60defc7fa09bf6c3e67f5c69a18431e"
+    },
+    {
+     "at": "2026-11-22T07:08:24Z",
+     "message": "chore(interfaces): measure the .ai layer after the mesh quoting",
+     "url": "https://github.com/korczis/korczis.github.io/commit/d4d1ca72bb84333cf5bd1c30a53b2cf24e83ef68"
+    },
+    {
+     "at": "2026-11-22T07:07:06Z",
+     "message": "chore(mesh): quote the trusted keys and say why the tailnet hubs stay",
+     "url": "https://github.com/korczis/korczis.github.io/commit/b6701e6f99b5a8e2cf3a742b7d1380f4498c8016"
+    },
+    {
+     "at": "2026-11-22T06:23:33Z",
+     "message": "chore(merge): integrate #47, the fleet mesh",
+     "url": "https://github.com/korczis/korczis.github.io/commit/43921f195ce5eeab25f9b321ae70f1a7c542c678"
+    },
+    {
+     "at": "2026-11-22T05:33:29Z",
+     "message": "chore(interfaces): measure the .ai layer with the new knowledge record",
+     "url": "https://github.com/korczis/korczis.github.io/commit/9f941ac9bb276f38c71ff6b8edad6ae8ed8a8d96"
+    },
+    {
+     "at": "2026-11-22T05:32:35Z",
+     "message": "docs(knowledge): record the owner's answers on the fleet mesh, auto-update and the upgrade",
+     "url": "https://github.com/korczis/korczis.github.io/commit/ac693faa1b336081a810f798aded6d48cc4cf6a2"
+    },
+    {
+     "at": "2026-11-22T05:32:24Z",
+     "message": "docs(mesh): name the machine behind each trusted key",
+     "url": "https://github.com/korczis/korczis.github.io/commit/c77de9c3661ec2a42ad25988c3dae8651327a16e"
+    },
+    {
+     "at": "2026-11-22T05:32:20Z",
+     "message": "fix(mesh): trust the owner's fleet and register with its hubs",
+     "url": "https://github.com/korczis/korczis.github.io/commit/12607a7f7b2d133ecd9d87eee73e2dc92178911b"
+    },
+    {
+     "at": "2026-11-21T19:40:51Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/b68bf7560a2c6ee8b2d79177fc53207d4595d970"
+    },
+    {
+     "at": "2026-11-21T11:36:39Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/76eb074704989ea56ef7ecc1e83e31c03166d984"
+    },
+    {
+     "at": "2026-11-21T02:41:51Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/292b9c146c2b7684378e371442bb77dbff7c15aa"
+    },
+    {
+     "at": "2026-11-20T20:43:47Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/4ddc753c9e6b2e915de7eb18bee6382b7cf7849b"
+    },
+    {
+     "at": "2026-11-20T12:02:53Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/7c60f87097de0efb88cd500825792697b01b14cc"
+    }
+   ],
+   "languages": [
+    {
+     "name": "JavaScript",
+     "share": 61.9
+    },
+    {
+     "name": "HTML",
+     "share": 36.1
+    },
+    {
+     "name": "CSS",
+     "share": 1.1
+    },
+    {
+     "name": "Shell",
+     "share": 0.8
+    }
+   ],
+   "readme": "The personal hub of Tomas Korcak (korczis). It covers who I am, the projects I build with their live sites, the stack behind them, and Majordomus, which supervises the work.",
+   "readme_shared": false,
+   "description_shared": false,
+   "topics": [
+    "accessibility",
+    "ai-agents",
+    "alpinejs",
+    "chartjs",
+    "cytoscape",
+    "echarts",
+    "flowbite",
+    "github-pages",
+    "majordomus",
+    "p5js",
+    "personal-website",
+    "portfolio",
+    "tailwindcss",
+    "zola"
+   ],
+   "hosts": {
+    "github": "https://github.com/korczis/korczis.github.io"
+   },
+   "site": null,
+   "curated": false,
+   "stars": 0,
+   "supervised": true
+  },
   {
    "name": "prismatic-flipperzero",
    "period": 12,
@@ -216,213 +643,6 @@
     "github": "https://github.com/korczis/prismatic-flipperzero"
    },
    "site": "https://korczis.github.io/prismatic-flipperzero/",
-   "curated": false,
-   "stars": 0,
-   "supervised": true
-  },
-  {
-   "name": "korczis.github.io",
-   "period": 12,
-   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-   "category": "web",
-   "language": "JavaScript",
-   "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-26T13:02:43Z",
-   "last_commit": "2026-11-26T13:01:46Z",
-   "last_message": "chore(data): refresh the snapshot and the index",
-   "commits": [
-    {
-     "at": "2026-11-26T13:01:46Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/9a0c74e232139882b04669d44c4936cb16db2d35"
-    },
-    {
-     "at": "2026-11-26T03:05:52Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/465f718349b08b8b7937c0f38be401f6c5e970ab"
-    },
-    {
-     "at": "2026-11-25T19:36:54Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/a950a1ff393ad82cf00b3ed25ce05764aac5676f"
-    },
-    {
-     "at": "2026-11-25T13:59:56Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/930d64fcbf69776d124a097ef7e8ab87e2abefb3"
-    },
-    {
-     "at": "2026-11-25T13:42:52Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/cb988d69032a4cf4b7cf01f02a27fa35ced6399a"
-    },
-    {
-     "at": "2026-11-25T09:05:39Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/0f4c5c2e16573fc0b262df069555c33c88768ed4"
-    },
-    {
-     "at": "2026-11-24T23:40:41Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/1966f002ed48cfce1d5b849c1cd6cbe5fda823bf"
-    },
-    {
-     "at": "2026-11-24T14:06:50Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/a23dc88f1d8a274a24c6a8c4eee3c4ee7319455f"
-    },
-    {
-     "at": "2026-11-24T02:32:41Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/e2527f12dd56f3d882114246e8dbd7af49f83885"
-    },
-    {
-     "at": "2026-11-23T15:08:46Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/2e61e8e9b8e032b7dd06c30a361f4df6a1039631"
-    },
-    {
-     "at": "2026-11-23T03:57:37Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/f1a7277138d2c3d8c2045232f6344d8313b33cf2"
-    },
-    {
-     "at": "2026-11-22T22:49:54Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/faad2042607f996a49df57046ccb58d56922bb5e"
-    },
-    {
-     "at": "2026-11-22T16:37:42Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/c804178bddf152d76407768c500f03017ffba9aa"
-    },
-    {
-     "at": "2026-11-22T08:22:12Z",
-     "message": "chore(merge): integrate #49, the mesh declaration loads again",
-     "url": "https://github.com/korczis/korczis.github.io/commit/ca38b66e703a932af13176e409bd83d1dc571c32"
-    },
-    {
-     "at": "2026-11-22T07:42:58Z",
-     "message": "fix(mesh): the mesh gate takes the shared CLI",
-     "url": "https://github.com/korczis/korczis.github.io/commit/595b84c740b22adcede255f95971df786935dd24"
-    },
-    {
-     "at": "2026-11-22T07:41:51Z",
-     "message": "fix(mesh): write the trusted keys bare, so Majordomus loads the declaration",
-     "url": "https://github.com/korczis/korczis.github.io/commit/049cacb971a257ccae599859297fc4ecd3824177"
-    },
-    {
-     "at": "2026-11-22T07:37:18Z",
-     "message": "chore(merge): integrate #48, quoted mesh keys",
-     "url": "https://github.com/korczis/korczis.github.io/commit/96449d3ea60defc7fa09bf6c3e67f5c69a18431e"
-    },
-    {
-     "at": "2026-11-22T07:08:24Z",
-     "message": "chore(interfaces): measure the .ai layer after the mesh quoting",
-     "url": "https://github.com/korczis/korczis.github.io/commit/d4d1ca72bb84333cf5bd1c30a53b2cf24e83ef68"
-    },
-    {
-     "at": "2026-11-22T07:07:06Z",
-     "message": "chore(mesh): quote the trusted keys and say why the tailnet hubs stay",
-     "url": "https://github.com/korczis/korczis.github.io/commit/b6701e6f99b5a8e2cf3a742b7d1380f4498c8016"
-    },
-    {
-     "at": "2026-11-22T06:23:33Z",
-     "message": "chore(merge): integrate #47, the fleet mesh",
-     "url": "https://github.com/korczis/korczis.github.io/commit/43921f195ce5eeab25f9b321ae70f1a7c542c678"
-    },
-    {
-     "at": "2026-11-22T05:33:29Z",
-     "message": "chore(interfaces): measure the .ai layer with the new knowledge record",
-     "url": "https://github.com/korczis/korczis.github.io/commit/9f941ac9bb276f38c71ff6b8edad6ae8ed8a8d96"
-    },
-    {
-     "at": "2026-11-22T05:32:35Z",
-     "message": "docs(knowledge): record the owner's answers on the fleet mesh, auto-update and the upgrade",
-     "url": "https://github.com/korczis/korczis.github.io/commit/ac693faa1b336081a810f798aded6d48cc4cf6a2"
-    },
-    {
-     "at": "2026-11-22T05:32:24Z",
-     "message": "docs(mesh): name the machine behind each trusted key",
-     "url": "https://github.com/korczis/korczis.github.io/commit/c77de9c3661ec2a42ad25988c3dae8651327a16e"
-    },
-    {
-     "at": "2026-11-22T05:32:20Z",
-     "message": "fix(mesh): trust the owner's fleet and register with its hubs",
-     "url": "https://github.com/korczis/korczis.github.io/commit/12607a7f7b2d133ecd9d87eee73e2dc92178911b"
-    },
-    {
-     "at": "2026-11-21T19:40:51Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/b68bf7560a2c6ee8b2d79177fc53207d4595d970"
-    },
-    {
-     "at": "2026-11-21T11:36:39Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/76eb074704989ea56ef7ecc1e83e31c03166d984"
-    },
-    {
-     "at": "2026-11-21T02:41:51Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/292b9c146c2b7684378e371442bb77dbff7c15aa"
-    },
-    {
-     "at": "2026-11-20T20:43:47Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/4ddc753c9e6b2e915de7eb18bee6382b7cf7849b"
-    },
-    {
-     "at": "2026-11-20T12:02:53Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/7c60f87097de0efb88cd500825792697b01b14cc"
-    },
-    {
-     "at": "2026-11-20T03:49:02Z",
-     "message": "chore(merge): integrate #45, notable technologies of a single repository get their page",
-     "url": "https://github.com/korczis/korczis.github.io/commit/7d10edbdd672fcb6587799663f064dea30f94f8e"
-    }
-   ],
-   "languages": [
-    {
-     "name": "JavaScript",
-     "share": 61.9
-    },
-    {
-     "name": "HTML",
-     "share": 36.1
-    },
-    {
-     "name": "CSS",
-     "share": 1.1
-    },
-    {
-     "name": "Shell",
-     "share": 0.8
-    }
-   ],
-   "readme": "The personal hub of Tomas Korcak (korczis). It covers who I am, the projects I build with their live sites, the stack behind them, and Majordomus, which supervises the work.",
-   "readme_shared": false,
-   "description_shared": false,
-   "topics": [
-    "accessibility",
-    "ai-agents",
-    "alpinejs",
-    "chartjs",
-    "cytoscape",
-    "echarts",
-    "flowbite",
-    "github-pages",
-    "majordomus",
-    "p5js",
-    "personal-website",
-    "portfolio",
-    "tailwindcss",
-    "zola"
-   ],
-   "hosts": {
-    "github": "https://github.com/korczis/korczis.github.io"
-   },
-   "site": null,
    "curated": false,
    "stars": 0,
    "supervised": true
@@ -1040,226 +1260,6 @@
    "site": "https://korczis.github.io/sonic-playground/",
    "curated": true,
    "stars": 0,
-   "supervised": true
-  },
-  {
-   "name": "prismatic-majordomus",
-   "period": 12,
-   "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
-   "category": "ai",
-   "language": "Rust",
-   "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-26T19:07:49Z",
-   "last_commit": "2026-11-25T03:17:05Z",
-   "last_message": "Merge pull request #3112 from korczis/integration/train-20261122a",
-   "commits": [
-    {
-     "at": "2026-11-25T03:17:05Z",
-     "message": "Merge pull request #3112 from korczis/integration/train-20261122a",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/46775282570cd1f5c217fb354d1852709c9e1f95"
-    },
-    {
-     "at": "2026-11-23T00:55:53Z",
-     "message": "docs(plan): derive delivery observed at the combined top 4354b754239",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/e13b7568b6578e6540b8532504fb428b7411efbd"
-    },
-    {
-     "at": "2026-11-23T00:53:19Z",
-     "message": "Merge master 93739746f8d (#3107) into the combined top",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/4354b75423996ee5b010d9d9ababdef9e1165f07"
-    },
-    {
-     "at": "2026-11-23T00:16:30Z",
-     "message": "docs(plan): derive delivery observed at the combined top e21b7cdf4fe",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/06298de3e8047883adf9995210a11ad1dbc5d4cd"
-    },
-    {
-     "at": "2026-11-23T00:13:52Z",
-     "message": "Merge pull request #3107 from korczis/fix/I4685-pages-check-resolves-an-ambiguous-short-sha",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/93739746f8d9f488bbd3e999fc9ed27818ac81a9"
-    },
-    {
-     "at": "2026-11-23T00:13:49Z",
-     "message": "docs(plan): I4668, I4670 and I4671 serve their milestones' criteria",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/e21b7cdf4fe3fa420d5efa3aa3147d735a9d1486"
-    },
-    {
-     "at": "2026-11-22T21:37:51Z",
-     "message": "docs(plan): derive delivery observed at the combined top 1111d440753",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/41d22780319071a1ce6eb8443e169127b0a04f3c"
-    },
-    {
-     "at": "2026-11-22T21:31:39Z",
-     "message": "fix(doctor): the printed npm remedy declares why it is not a build (I4595)",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/1111d440753efc02bae93c88b6eb8b08ff0a706f"
-    },
-    {
-     "at": "2026-11-22T21:28:20Z",
-     "message": "docs(plan): derive delivery observed at 242d354f985, a commit on origin",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/e8c8db3e062a389277260663cf1322dde80df707"
-    },
-    {
-     "at": "2026-11-22T21:00:00Z",
-     "message": "fix(test): case 104 asks whether python3 runs, not whether it is on PATH (I4685)",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/242d354f98564307cfd6618256f455b35fd6c09a"
-    },
-    {
-     "at": "2026-11-22T20:49:37Z",
-     "message": "Merge #3104 (plan/generic-findings-20261122) into the combined top on 636acc8c84",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/fe48c6437d1b6e196b6e98614212961e52adc7f0"
-    },
-    {
-     "at": "2026-11-22T19:16:43Z",
-     "message": "Merge #3100 (decision/push-floor-35-gib-20261119) into the combined top on 636acc8c84",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/b72ce993a2705d0c85118e7225a366a81ded8746"
-    },
-    {
-     "at": "2026-11-22T18:37:51Z",
-     "message": "chore(derive): delivery.json carries I4685, observed at a commit on origin",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/43f9ddbf860f5944602a11a24e0b43d40955bef3"
-    },
-    {
-     "at": "2026-11-22T15:25:55Z",
-     "message": "chore(derive): delivery.json observes master, not the offload's stash commit",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/f6d7e5364c460705b503fba98ce17fc15dd66263"
-    },
-    {
-     "at": "2026-11-22T14:45:36Z",
-     "message": "fix(pages-check): resolve the deploy subject's abbreviated commit once (I4685)",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/f861ebebaeac940ed2bb2633c851061c7ae1686e"
-    },
-    {
-     "at": "2026-11-22T13:25:31Z",
-     "message": "Merge #3090 (fix/I4595-doctor-install-behind-lockfile) into the combined top on 636acc8c84",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/a536df93d6f83df6c14e5d3a218bf070040cf4e2"
-    },
-    {
-     "at": "2026-11-22T10:59:42Z",
-     "message": "Merge pull request #3106 from korczis/release/record-v1.2.0",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/636acc8c8456036be915db1391bc3526d727557b"
-    },
-    {
-     "at": "2026-11-22T09:53:24Z",
-     "message": "chore(release): record v1.2.0 and the metadata it publishes",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/d410a2405d7058435ee15512b30511eb41b90535"
-    },
-    {
-     "at": "2026-11-22T08:28:38Z",
-     "message": "docs(plan): derive delivery observed at the merge of master d02c59d447c",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/44b68f08ff578b8acd37a4436cd27d7202742f3f"
-    },
-    {
-     "at": "2026-11-22T08:12:26Z",
-     "message": "docs(plan): four generic findings of a long multi-session run (I4668-I4671)",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/213bdf6840bfd5a2c87df083492625486afe2646"
-    },
-    {
-     "at": "2026-11-22T08:00:36Z",
-     "message": "Merge origin/master d02c59d447c into fix/I4595-doctor-install-behind-lockfile",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/64ade4a87ac1fad4dde44e4e6bb79c2de38d1537"
-    },
-    {
-     "at": "2026-11-22T04:23:11Z",
-     "message": "Merge pull request #3101 from korczis/feature/mesh-blackboard-records",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/d02c59d447c2cc147eb5357ad4b2396ac54ffff8"
-    },
-    {
-     "at": "2026-11-20T20:05:30Z",
-     "message": "refactor(mesh): the record paths hold no branch a test cannot reach (I4665)",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/51f453054f1fe3b018a9372e7d86a31f87564fd0"
-    },
-    {
-     "at": "2026-11-20T18:22:23Z",
-     "message": "test(blackboard): the record test reaches the journal through the mesh fixture (I4665)",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/76021063713b80363e98ce2cc1d0427e106cfc36"
-    },
-    {
-     "at": "2026-11-20T17:26:23Z",
-     "message": "test(mesh): every changed line of the typed records is covered (I4665)",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/295e01632ba8f4823350ed40ba1ad468f8616ab7"
-    },
-    {
-     "at": "2026-11-20T13:02:30Z",
-     "message": "fix(mesh): mesh.records answers where the mesh is off, as mesh.state does (I4665)",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/450b81d5870d7edb4d156db19bcec75b5e63040a"
-    },
-    {
-     "at": "2026-11-20T09:56:22Z",
-     "message": "chore(release): declare 1.2.0, the minor release #3101's capabilities require",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/36573caaccd9ef0e811dd5391c18bef3b51f5cd2"
-    },
-    {
-     "at": "2026-11-20T07:51:35Z",
-     "message": "fix(mesh): a record's free text is redacted, invoked over MCP and exemplified (I4665)",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/b127de10b3421792a18e554c11814da6e7a7cee5"
-    },
-    {
-     "at": "2026-11-20T03:39:45Z",
-     "message": "feat(mesh): typed coordination records live in the mesh journal (I4665)",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/92b817cabd60b6f5ccd2134f00fdd7e3963f7c96"
-    },
-    {
-     "at": "2026-11-19T05:53:37Z",
-     "message": "chore(derive): the delivery dataset observes a commit on origin, not the offload's throwaway one",
-     "url": "https://github.com/korczis/prismatic-majordomus/commit/e0542ae585cbbf380bad076ee69d5fe470317db9"
-    }
-   ],
-   "languages": [
-    {
-     "name": "Rust",
-     "share": 60.8
-    },
-    {
-     "name": "Shell",
-     "share": 29.5
-    },
-    {
-     "name": "JavaScript",
-     "share": 4.1
-    },
-    {
-     "name": "HTML",
-     "share": 3.8
-    },
-    {
-     "name": "CSS",
-     "share": 0.6
-    },
-    {
-     "name": "Python",
-     "share": 0.4
-    }
-   ],
-   "readme": "Your AI agents say the work is done. Majordomus makes them prove it.",
-   "readme_shared": false,
-   "description_shared": false,
-   "topics": [
-    "agentic-ai",
-    "ai",
-    "ai-agents",
-    "ai-governance",
-    "claude-code",
-    "cli",
-    "codex",
-    "continuous-integration",
-    "developer-tools",
-    "devops",
-    "gemini",
-    "llm",
-    "llmops",
-    "mcp",
-    "mermaid",
-    "model-context-protocol",
-    "multi-agent",
-    "policy-as-code",
-    "rust"
-   ],
-   "hosts": {
-    "github": "https://github.com/korczis/prismatic-majordomus"
-   },
-   "site": "https://korczis.github.io/prismatic-majordomus/",
-   "curated": true,
-   "stars": 1,
    "supervised": true
   },
   {

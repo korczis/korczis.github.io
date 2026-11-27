@@ -4,7 +4,7 @@ title = "korczis.github.io"
 description = "korczis.github.io: projekt z kategorie Web, hlavní jazyk JavaScript, poslední commit 26. listopadu 2026."
 template = "work.html"
 weight = 2
-updated = "2026-11-26T13:01:46Z"
+updated = "2026-11-26T23:26:48Z"
 
 [taxonomies]
 tags = ["Web", "JavaScript", "HTML", "CSS"]

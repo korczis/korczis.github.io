@@ -1670,7 +1670,7 @@
           "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
           "category": "ai",
           "site": "https://korczis.github.io/prismatic-majordomus/",
-          "pushed": "2026-11-26",
+          "pushed": "2026-11-27",
           "skill": "orchestration"
         },
         {
@@ -2179,19 +2179,6 @@
       ],
       "repos": [
         {
-          "name": "prismatic-majordomus",
-          "title": "Majordomus",
-          "how": "words",
-          "score": 4.5,
-          "slug": "prismatic-majordomus",
-          "url": "https://github.com/korczis/prismatic-majordomus",
-          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
-          "category": "ai",
-          "site": "https://korczis.github.io/prismatic-majordomus/",
-          "pushed": "2026-11-26",
-          "skill": "llm-agents"
-        },
-        {
           "name": "sig",
           "title": "sig",
           "how": "words",
@@ -2202,6 +2189,19 @@
           "category": "ai",
           "site": null,
           "pushed": "2026-02-04",
+          "skill": "llm-agents"
+        },
+        {
+          "name": "prismatic-majordomus",
+          "title": "Majordomus",
+          "how": "words",
+          "score": 3.5,
+          "slug": "prismatic-majordomus",
+          "url": "https://github.com/korczis/prismatic-majordomus",
+          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+          "category": "ai",
+          "site": "https://korczis.github.io/prismatic-majordomus/",
+          "pushed": "2026-11-27",
           "skill": "llm-agents"
         },
         {
@@ -2509,14 +2509,14 @@
           "name": "prismatic-majordomus",
           "title": "Majordomus",
           "how": "words",
-          "score": 4.5,
+          "score": 4.6,
           "slug": "prismatic-majordomus",
           "url": "https://github.com/korczis/prismatic-majordomus",
           "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
           "category": "ai",
           "site": "https://korczis.github.io/prismatic-majordomus/",
-          "pushed": "2026-11-26",
-          "skill": "llm-agents"
+          "pushed": "2026-11-27",
+          "skill": "policy-as-code"
         },
         {
           "name": "sig",
@@ -5130,18 +5130,6 @@
       ],
       "repos": [
         {
-          "name": "prismatic-majordomus",
-          "title": "Majordomus",
-          "how": "words",
-          "score": 4.5,
-          "slug": "prismatic-majordomus",
-          "url": "https://github.com/korczis/prismatic-majordomus",
-          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
-          "category": "ai",
-          "site": "https://korczis.github.io/prismatic-majordomus/",
-          "pushed": "2026-11-26"
-        },
-        {
           "name": "sig",
           "title": "sig",
           "how": "words",
@@ -5152,6 +5140,18 @@
           "category": "ai",
           "site": null,
           "pushed": "2026-02-04"
+        },
+        {
+          "name": "prismatic-majordomus",
+          "title": "Majordomus",
+          "how": "words",
+          "score": 3.5,
+          "slug": "prismatic-majordomus",
+          "url": "https://github.com/korczis/prismatic-majordomus",
+          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+          "category": "ai",
+          "site": "https://korczis.github.io/prismatic-majordomus/",
+          "pushed": "2026-11-27"
         },
         {
           "name": "osint-case-ratcliffe-moscow-2026",
@@ -5431,7 +5431,7 @@
           "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
           "category": "ai",
           "site": "https://korczis.github.io/prismatic-majordomus/",
-          "pushed": "2026-11-26"
+          "pushed": "2026-11-27"
         }
       ],
       "engagements": [
@@ -6458,6 +6458,18 @@
           "pushed": "2026-11-19"
         },
         {
+          "name": "prismatic-majordomus",
+          "title": "Majordomus",
+          "how": "words",
+          "score": 4.6,
+          "slug": "prismatic-majordomus",
+          "url": "https://github.com/korczis/prismatic-majordomus",
+          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+          "category": "ai",
+          "site": "https://korczis.github.io/prismatic-majordomus/",
+          "pushed": "2026-11-27"
+        },
+        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "how": "words",
@@ -6480,18 +6492,6 @@
           "category": "knowledge",
           "site": "https://korczis.github.io/kompendium-epistemicke-anihilace/",
           "pushed": "2026-11-22"
-        },
-        {
-          "name": "prismatic-majordomus",
-          "title": "Majordomus",
-          "how": "words",
-          "score": 3,
-          "slug": "prismatic-majordomus",
-          "url": "https://github.com/korczis/prismatic-majordomus",
-          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
-          "category": "ai",
-          "site": "https://korczis.github.io/prismatic-majordomus/",
-          "pushed": "2026-11-26"
         },
         {
           "name": "data-atlas",

@@ -33,6 +33,6 @@ Služby, které z ní čerpají: [Řízený vývoj softwaru s AI](@/services/ai-
 
 Praktikovaná s: [JavaScript](@/glossary/javascript.cs.md), [HTML](@/glossary/html.cs.md), [Tailwind CSS](@/glossary/tailwind-css.cs.md), [Flowbite Pro](@/glossary/flowbite-pro.cs.md), [GitHub Pages](@/glossary/github-pages.cs.md), [CSS](@/glossary/css.cs.md), [Playwright](@/glossary/playwright.cs.md) a [Shell](@/glossary/shell.cs.md).
 
-Veřejná práce, jejíž vlastní slova ji dokládají: [majordomus-reel](https://github.com/korczis/majordomus-reel), [korczis.github.io](https://github.com/korczis/korczis.github.io), [kompendium-epistemicke-anihilace](https://github.com/korczis/kompendium-epistemicke-anihilace) a [prismatic-majordomus](https://github.com/korczis/prismatic-majordomus).
+Veřejná práce, jejíž vlastní slova ji dokládají: [majordomus-reel](https://github.com/korczis/majordomus-reel), [prismatic-majordomus](https://github.com/korczis/prismatic-majordomus), [korczis.github.io](https://github.com/korczis/korczis.github.io) a [kompendium-epistemicke-anihilace](https://github.com/korczis/kompendium-epistemicke-anihilace).
 
 Jak číst tuto stránku: definice pochází ze slovníku zkušeností; služby, technologie, veřejné [repozitáře](@/glossary/repository.cs.md) a případy užití jsou odvozené a každá položka vede na svou stránku.

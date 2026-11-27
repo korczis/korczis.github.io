@@ -33,6 +33,6 @@ Services that draw on it: [Governed AI-assisted software delivery](@/services/ai
 
 Practised with: [JavaScript](@/glossary/javascript.md), [HTML](@/glossary/html.md), [Tailwind CSS](@/glossary/tailwind-css.md), [Flowbite Pro](@/glossary/flowbite-pro.md), [GitHub Pages](@/glossary/github-pages.md), [CSS](@/glossary/css.md), [Playwright](@/glossary/playwright.md) and [Shell](@/glossary/shell.md).
 
-Public work whose own words show it: [majordomus-reel](https://github.com/korczis/majordomus-reel), [korczis.github.io](https://github.com/korczis/korczis.github.io), [kompendium-epistemicke-anihilace](https://github.com/korczis/kompendium-epistemicke-anihilace) and [prismatic-majordomus](https://github.com/korczis/prismatic-majordomus).
+Public work whose own words show it: [majordomus-reel](https://github.com/korczis/majordomus-reel), [prismatic-majordomus](https://github.com/korczis/prismatic-majordomus), [korczis.github.io](https://github.com/korczis/korczis.github.io) and [kompendium-epistemicke-anihilace](https://github.com/korczis/kompendium-epistemicke-anihilace).
 
 How to read this page: the definition is the experience vocabulary's; the services, technologies, public [repositories](@/glossary/repository.md) and use cases are derived and each links to its page.

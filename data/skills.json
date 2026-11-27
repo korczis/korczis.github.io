@@ -980,6 +980,40 @@
       ],
       "repos": [
         {
+          "name": "prismatic-majordomus",
+          "title": "Majordomus",
+          "url": "https://github.com/korczis/prismatic-majordomus",
+          "work": true,
+          "slug": "prismatic-majordomus",
+          "site": "https://korczis.github.io/prismatic-majordomus/",
+          "category": "ai",
+          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+          "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
+          "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
+          "created": "2026-09-03",
+          "pushed": "2026-11-27",
+          "primary": false,
+          "share": 4.1,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "Rust",
+            "Shell",
+            "JavaScript",
+            "HTML",
+            "MCP",
+            "Zola",
+            "Claude Code",
+            "LLM",
+            "Mermaid",
+            "Git",
+            "YAML",
+            "GitHub Actions"
+          ]
+        },
+        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "url": "https://github.com/korczis/korczis.github.io",
@@ -1044,40 +1078,6 @@
             "JavaScript",
             "Shell",
             "HTML"
-          ]
-        },
-        {
-          "name": "prismatic-majordomus",
-          "title": "Majordomus",
-          "url": "https://github.com/korczis/prismatic-majordomus",
-          "work": true,
-          "slug": "prismatic-majordomus",
-          "site": "https://korczis.github.io/prismatic-majordomus/",
-          "category": "ai",
-          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
-          "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
-          "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
-          "created": "2026-09-03",
-          "pushed": "2026-11-26",
-          "primary": false,
-          "share": 4.1,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "Rust",
-            "Shell",
-            "JavaScript",
-            "HTML",
-            "MCP",
-            "Zola",
-            "Claude Code",
-            "LLM",
-            "Mermaid",
-            "Git",
-            "YAML",
-            "GitHub Actions"
           ]
         },
         {
@@ -6360,7 +6360,7 @@
           "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
           "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
           "created": "2026-09-03",
-          "pushed": "2026-11-26",
+          "pushed": "2026-11-27",
           "primary": true,
           "share": 60.8,
           "via": [
@@ -8177,6 +8177,41 @@
       ],
       "repos": [
         {
+          "name": "prismatic-majordomus",
+          "title": "Majordomus",
+          "url": "https://github.com/korczis/prismatic-majordomus",
+          "work": true,
+          "slug": "prismatic-majordomus",
+          "site": "https://korczis.github.io/prismatic-majordomus/",
+          "category": "ai",
+          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+          "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
+          "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
+          "created": "2026-09-03",
+          "pushed": "2026-11-27",
+          "primary": false,
+          "share": 29.5,
+          "via": [
+            "code",
+            "files"
+          ],
+          "supervised": true,
+          "uses": [
+            "Rust",
+            "Shell",
+            "JavaScript",
+            "HTML",
+            "MCP",
+            "Zola",
+            "Claude Code",
+            "LLM",
+            "Mermaid",
+            "Git",
+            "YAML",
+            "GitHub Actions"
+          ]
+        },
+        {
           "name": "prismatic-flipperzero",
           "title": "prismatic-flipperzero",
           "url": "https://github.com/korczis/prismatic-flipperzero",
@@ -8201,41 +8236,6 @@
             "JavaScript",
             "Shell",
             "HTML"
-          ]
-        },
-        {
-          "name": "prismatic-majordomus",
-          "title": "Majordomus",
-          "url": "https://github.com/korczis/prismatic-majordomus",
-          "work": true,
-          "slug": "prismatic-majordomus",
-          "site": "https://korczis.github.io/prismatic-majordomus/",
-          "category": "ai",
-          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
-          "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
-          "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
-          "created": "2026-09-03",
-          "pushed": "2026-11-26",
-          "primary": false,
-          "share": 29.5,
-          "via": [
-            "code",
-            "files"
-          ],
-          "supervised": true,
-          "uses": [
-            "Rust",
-            "Shell",
-            "JavaScript",
-            "HTML",
-            "MCP",
-            "Zola",
-            "Claude Code",
-            "LLM",
-            "Mermaid",
-            "Git",
-            "YAML",
-            "GitHub Actions"
           ]
         },
         {
@@ -9576,6 +9576,40 @@
       ],
       "repos": [
         {
+          "name": "prismatic-majordomus",
+          "title": "Majordomus",
+          "url": "https://github.com/korczis/prismatic-majordomus",
+          "work": true,
+          "slug": "prismatic-majordomus",
+          "site": "https://korczis.github.io/prismatic-majordomus/",
+          "category": "ai",
+          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+          "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
+          "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
+          "created": "2026-09-03",
+          "pushed": "2026-11-27",
+          "primary": false,
+          "share": 3.8,
+          "via": [
+            "code"
+          ],
+          "supervised": true,
+          "uses": [
+            "Rust",
+            "Shell",
+            "JavaScript",
+            "HTML",
+            "MCP",
+            "Zola",
+            "Claude Code",
+            "LLM",
+            "Mermaid",
+            "Git",
+            "YAML",
+            "GitHub Actions"
+          ]
+        },
+        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "url": "https://github.com/korczis/korczis.github.io",
@@ -9639,40 +9673,6 @@
             "JavaScript",
             "Shell",
             "HTML"
-          ]
-        },
-        {
-          "name": "prismatic-majordomus",
-          "title": "Majordomus",
-          "url": "https://github.com/korczis/prismatic-majordomus",
-          "work": true,
-          "slug": "prismatic-majordomus",
-          "site": "https://korczis.github.io/prismatic-majordomus/",
-          "category": "ai",
-          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
-          "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
-          "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
-          "created": "2026-09-03",
-          "pushed": "2026-11-26",
-          "primary": false,
-          "share": 3.8,
-          "via": [
-            "code"
-          ],
-          "supervised": true,
-          "uses": [
-            "Rust",
-            "Shell",
-            "JavaScript",
-            "HTML",
-            "MCP",
-            "Zola",
-            "Claude Code",
-            "LLM",
-            "Mermaid",
-            "Git",
-            "YAML",
-            "GitHub Actions"
           ]
         },
         {
@@ -15981,6 +15981,40 @@
       ],
       "repos": [
         {
+          "name": "prismatic-majordomus",
+          "title": "Majordomus",
+          "url": "https://github.com/korczis/prismatic-majordomus",
+          "work": true,
+          "slug": "prismatic-majordomus",
+          "site": "https://korczis.github.io/prismatic-majordomus/",
+          "category": "ai",
+          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
+          "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
+          "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
+          "created": "2026-09-03",
+          "pushed": "2026-11-27",
+          "primary": false,
+          "share": null,
+          "via": [
+            "stack"
+          ],
+          "supervised": true,
+          "uses": [
+            "Rust",
+            "Shell",
+            "JavaScript",
+            "HTML",
+            "MCP",
+            "Zola",
+            "Claude Code",
+            "LLM",
+            "Mermaid",
+            "Git",
+            "YAML",
+            "GitHub Actions"
+          ]
+        },
+        {
           "name": "korczis.github.io",
           "title": "korczis.github.io",
           "url": "https://github.com/korczis/korczis.github.io",
@@ -16018,40 +16052,6 @@
             "Node.js",
             "Playwright",
             "axe-core"
-          ]
-        },
-        {
-          "name": "prismatic-majordomus",
-          "title": "Majordomus",
-          "url": "https://github.com/korczis/prismatic-majordomus",
-          "work": true,
-          "slug": "prismatic-majordomus",
-          "site": "https://korczis.github.io/prismatic-majordomus/",
-          "category": "ai",
-          "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
-          "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
-          "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
-          "created": "2026-09-03",
-          "pushed": "2026-11-26",
-          "primary": false,
-          "share": null,
-          "via": [
-            "stack"
-          ],
-          "supervised": true,
-          "uses": [
-            "Rust",
-            "Shell",
-            "JavaScript",
-            "HTML",
-            "MCP",
-            "Zola",
-            "Claude Code",
-            "LLM",
-            "Mermaid",
-            "Git",
-            "YAML",
-            "GitHub Actions"
           ]
         },
         {
@@ -16619,7 +16619,7 @@
           "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
           "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
           "created": "2026-09-03",
-          "pushed": "2026-11-26",
+          "pushed": "2026-11-27",
           "primary": false,
           "share": null,
           "via": [
@@ -19601,7 +19601,7 @@
           "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
           "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
           "created": "2026-09-03",
-          "pushed": "2026-11-26",
+          "pushed": "2026-11-27",
           "primary": false,
           "share": null,
           "via": [
@@ -20496,7 +20496,7 @@
           "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
           "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
           "created": "2026-09-03",
-          "pushed": "2026-11-26",
+          "pushed": "2026-11-27",
           "primary": false,
           "share": null,
           "via": [
@@ -31821,7 +31821,7 @@
           "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
           "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
           "created": "2026-09-03",
-          "pushed": "2026-11-26",
+          "pushed": "2026-11-27",
           "primary": false,
           "share": null,
           "via": [
@@ -36815,7 +36815,7 @@
           "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
           "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
           "created": "2026-09-03",
-          "pushed": "2026-11-26",
+          "pushed": "2026-11-27",
           "primary": false,
           "share": null,
           "via": [
@@ -41744,7 +41744,7 @@
           "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
           "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
           "created": "2026-09-03",
-          "pushed": "2026-11-26",
+          "pushed": "2026-11-27",
           "primary": false,
           "share": null,
           "via": [
@@ -41915,7 +41915,7 @@
           "summary": "One policy for every AI coding tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; it never invokes a model.",
           "summary_cs": "Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.",
           "created": "2026-09-03",
-          "pushed": "2026-11-26",
+          "pushed": "2026-11-27",
           "primary": false,
           "share": null,
           "via": [
