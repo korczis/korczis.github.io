@@ -990,13 +990,13 @@
           "name": "prismatic-flipperzero",
           "title": "prismatic-flipperzero",
           "how": "words",
-          "score": 3.3,
+          "score": 3,
           "slug": "prismatic-flipperzero",
           "url": "https://github.com/korczis/prismatic-flipperzero",
           "description": "Prismatic Pocket for Flipper Zero: an offline, data-driven knowledge engine with live assessments, scorecards, crisis simulations and a Bayes calculator; a deterministic pack compiler and a portable C core",
           "category": "science",
           "site": "https://korczis.github.io/prismatic-flipperzero/",
-          "pushed": "2026-11-27",
+          "pushed": "2026-11-28",
           "skill": "audit-trail"
         },
         {
@@ -1670,7 +1670,7 @@
           "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
           "category": "ai",
           "site": "https://korczis.github.io/prismatic-majordomus/",
-          "pushed": "2026-11-27",
+          "pushed": "2026-11-28",
           "skill": "orchestration"
         },
         {
@@ -2188,7 +2188,7 @@
           "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
           "category": "ai",
           "site": "https://korczis.github.io/prismatic-majordomus/",
-          "pushed": "2026-11-27",
+          "pushed": "2026-11-28",
           "skill": "llm-agents"
         },
         {
@@ -2208,13 +2208,13 @@
           "name": "prismatic-flipperzero",
           "title": "prismatic-flipperzero",
           "how": "words",
-          "score": 3.3,
+          "score": 3,
           "slug": "prismatic-flipperzero",
           "url": "https://github.com/korczis/prismatic-flipperzero",
           "description": "Prismatic Pocket for Flipper Zero: an offline, data-driven knowledge engine with live assessments, scorecards, crisis simulations and a Bayes calculator; a deterministic pack compiler and a portable C core",
           "category": "science",
           "site": "https://korczis.github.io/prismatic-flipperzero/",
-          "pushed": "2026-11-27",
+          "pushed": "2026-11-28",
           "skill": "audit-trail"
         },
         {
@@ -2515,7 +2515,7 @@
           "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
           "category": "ai",
           "site": "https://korczis.github.io/prismatic-majordomus/",
-          "pushed": "2026-11-27",
+          "pushed": "2026-11-28",
           "skill": "llm-agents"
         },
         {
@@ -2561,13 +2561,13 @@
           "name": "prismatic-flipperzero",
           "title": "prismatic-flipperzero",
           "how": "words",
-          "score": 3.3,
+          "score": 3,
           "slug": "prismatic-flipperzero",
           "url": "https://github.com/korczis/prismatic-flipperzero",
           "description": "Prismatic Pocket for Flipper Zero: an offline, data-driven knowledge engine with live assessments, scorecards, crisis simulations and a Bayes calculator; a deterministic pack compiler and a portable C core",
           "category": "science",
           "site": "https://korczis.github.io/prismatic-flipperzero/",
-          "pushed": "2026-11-27",
+          "pushed": "2026-11-28",
           "skill": "audit-trail"
         },
         {
@@ -4851,13 +4851,13 @@
           "name": "prismatic-flipperzero",
           "title": "prismatic-flipperzero",
           "how": "words",
-          "score": 3.3,
+          "score": 3,
           "slug": "prismatic-flipperzero",
           "url": "https://github.com/korczis/prismatic-flipperzero",
           "description": "Prismatic Pocket for Flipper Zero: an offline, data-driven knowledge engine with live assessments, scorecards, crisis simulations and a Bayes calculator; a deterministic pack compiler and a portable C core",
           "category": "science",
           "site": "https://korczis.github.io/prismatic-flipperzero/",
-          "pushed": "2026-11-27"
+          "pushed": "2026-11-28"
         },
         {
           "name": "catharsis-as-a-service",
@@ -5139,7 +5139,7 @@
           "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
           "category": "ai",
           "site": "https://korczis.github.io/prismatic-majordomus/",
-          "pushed": "2026-11-27"
+          "pushed": "2026-11-28"
         },
         {
           "name": "sig",
@@ -5431,7 +5431,7 @@
           "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
           "category": "ai",
           "site": "https://korczis.github.io/prismatic-majordomus/",
-          "pushed": "2026-11-27"
+          "pushed": "2026-11-28"
         }
       ],
       "engagements": [
@@ -6467,7 +6467,7 @@
           "description": "AI agents say the work is done; Majordomus makes them prove it. One policy for every AI tool, scoped tasks with a finish contract, a mesh for many sessions and machines, and an integration queue that lands only verified work. Local; never invokes a model.",
           "category": "ai",
           "site": "https://korczis.github.io/prismatic-majordomus/",
-          "pushed": "2026-11-27"
+          "pushed": "2026-11-28"
         },
         {
           "name": "korczis.github.io",

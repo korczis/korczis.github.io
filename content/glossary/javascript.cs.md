@@ -44,7 +44,7 @@ JavaScript jsem psal v 79 veřejných repozitářích, od roku 2013 do 2026; v 4
 
 K čemu to sloužilo: [Data a GIS](@/projects/data.cs.md) (26), [Nástroje](@/projects/tools.cs.md) (19), [Web](@/projects/web.cs.md) (11) a [Média a umění](@/projects/media.cs.md) (6).
 
-Naposledy: [korczis.github.io](@/work/korczis-github-io.cs.md); [prismatic-flipperzero](@/work/prismatic-flipperzero.cs.md); [Majordomus](@/work/prismatic-majordomus.cs.md): Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.
+Naposledy: [prismatic-flipperzero](@/work/prismatic-flipperzero.cs.md); [Majordomus](@/work/prismatic-majordomus.cs.md): Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model; [korczis.github.io](@/work/korczis-github-io.cs.md).
 
 16 z těchto projektů běží jako živé weby.
 

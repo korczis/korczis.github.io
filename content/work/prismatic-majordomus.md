@@ -3,7 +3,7 @@
 title = "Majordomus"
 description = "AI agents say the work is done; Majordomus makes them prove it."
 template = "work.html"
-weight = 1
+weight = 3
 updated = "2026-11-27T15:40:35Z"
 
 [taxonomies]

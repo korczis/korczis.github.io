@@ -1,6 +1,6 @@
 {
  "schema": "korczis-hub-recent/v2",
- "generated_at": "2026-11-27T23:44:06Z",
+ "generated_at": "2026-11-28T08:24:02Z",
  "window_days": 1461,
  "periods": [
   {
@@ -18,8 +18,415 @@
  ],
  "archive": 162,
  "rule": "every original repository of data/index.json; a repository is recent when its default branch has a commit in the window, archive otherwise; host activity dates are ignored",
- "asked": 2,
+ "asked": 3,
  "repos": [
+  {
+   "name": "prismatic-flipperzero",
+   "period": 12,
+   "description": "Prismatic Pocket for Flipper Zero: an offline, data-driven knowledge engine with live assessments, scorecards, crisis simulations and a Bayes calculator; a deterministic pack compiler and a portable C core",
+   "category": "science",
+   "language": "C",
+   "created_at": "2026-11-25T03:06:03Z",
+   "pushed_at": "2026-11-28T08:07:52Z",
+   "last_commit": "2026-11-28T08:04:50Z",
+   "last_message": "chore(release): 0.3.2 Find, steady captures: version, changelog, release notes",
+   "commits": [
+    {
+     "at": "2026-11-28T08:04:50Z",
+     "message": "chore(release): 0.3.2 Find, steady captures: version, changelog, release notes",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/0fbe0333ef2e7bc7f4f5be5969b3bee9e5f0db0c"
+    },
+    {
+     "at": "2026-11-28T07:36:45Z",
+     "message": "chore(ai): discover the release records: releases section and source",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/fecf25d79411c16b8863daae2f7bee58b2405206"
+    },
+    {
+     "at": "2026-11-28T07:26:25Z",
+     "message": "chore(release): record v0.0.1 to v0.3.1 and the tool that reads them back",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/12c627df9bac93d36fbb970540a0ef2620118234"
+    },
+    {
+     "at": "2026-11-28T05:39:41Z",
+     "message": "fix(tools): wait for the start_rpc_session echo, not for any newline",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/ea87232733bf3821d2c94686cc8510f43717d9c0"
+    },
+    {
+     "at": "2026-11-28T05:28:32Z",
+     "message": "chore(release): 0.3.1 Find, rendered pages: version, changelog, release notes",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/f6a1db3b3348a565adeb4aec07912f649a7d3ab2"
+    },
+    {
+     "at": "2026-11-27T09:20:27Z",
+     "message": "docs(evidence): parity 24 of 24 and gallery on the f3d8cb3e pack",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/3cea570d85d6d9073d1e9727b1333fa29bf36ecd"
+    },
+    {
+     "at": "2026-11-27T09:00:29Z",
+     "message": "fix(pocket): render the Kompendium's page templates; pin it at f3d8cb3e",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/d327e2fb6cf7d9539cb45ff401f37f314d9e9642"
+    },
+    {
+     "at": "2026-11-27T08:26:59Z",
+     "message": "docs(evidence): parity 24 of 24 and device gallery recaptured on 0.3.0",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/bed371153c15493c1a6db0160eaa467dd893d25e"
+    },
+    {
+     "at": "2026-11-27T08:26:39Z",
+     "message": "chore(release): 0.3.0 Find: version, changelog, release notes, roadmap",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/a4ccc51a9b1a1b0b412643601f4444d65c74a68c"
+    },
+    {
+     "at": "2026-11-26T16:50:56Z",
+     "message": "docs(evidence): Find by name on the device, 14 of 14 frames identical",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/ccf65e024ae8593e3f8be3d5fa28f91e2decd968"
+    },
+    {
+     "at": "2026-11-26T16:19:12Z",
+     "message": "fix(ui): Find by name after the independent atlas review",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/da030236d8ebaa9aed1b3b27a0c965444eb5dff4"
+    },
+    {
+     "at": "2026-11-26T16:03:23Z",
+     "message": "docs: the search index in the pack format, the runtime and the changelog",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/c4e3e28527a47f01735592947528272d4f9bae43"
+    },
+    {
+     "at": "2026-11-26T16:02:37Z",
+     "message": "feat(ui): Find by name, a letter wheel over the search index",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/f92fa09830eb8176b96006c80e0d21ebdd6eade9"
+    },
+    {
+     "at": "2026-11-26T15:51:03Z",
+     "message": "fix(core): search only a verified index, within one object bound",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/8fd5982f920c1fab90a5f3151aa628e21aa64fb8"
+    },
+    {
+     "at": "2026-11-26T15:42:34Z",
+     "message": "feat(core): Find by name search engine",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/c523d64f1327176954c13ab9c8801edeb19edc6e"
+    },
+    {
+     "at": "2026-11-26T15:38:17Z",
+     "message": "feat(core): read the optional search index",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/8f8c61a378e8a3c17fe467ea6fa66d6046a0e587"
+    },
+    {
+     "at": "2026-11-26T15:34:39Z",
+     "message": "feat(pocket): search index sections for Find by name",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/90417358eefbf7577d412a41c605e785092565df"
+    },
+    {
+     "at": "2026-11-26T15:21:03Z",
+     "message": "fix(pocket): a lead-in sentence ending in ':' is not a marker or an item",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/230796004467b0a62138c6d66d79a28eb4799561"
+    },
+    {
+     "at": "2026-11-26T14:31:53Z",
+     "message": "docs(evidence): device gallery recaptured on the 0.2.0 build",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/7ee93101e8d1301d66a73c9f7fc9751a93e79be0"
+    },
+    {
+     "at": "2026-11-26T13:55:10Z",
+     "message": "fix(screen): end an RPC session only after the device confirms it",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/64de98df6fac8faafd840293789cf96e17503a6d"
+    },
+    {
+     "at": "2026-11-26T13:50:58Z",
+     "message": "docs(release): v0.2.0 notes say which build the device gallery shows",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/0fc3fd4aaf1ca73a2328c3155137b614c9f5064d"
+    },
+    {
+     "at": "2026-11-26T13:46:22Z",
+     "message": "docs(evidence): parity 24 of 24 on the 0.2.0 build",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/1a6f1d5d26428dd37c62125b747df0f0177a4811"
+    },
+    {
+     "at": "2026-11-26T13:42:19Z",
+     "message": "chore(release): 0.2.0 Bridge: version, changelog, release notes, security",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/3c8502ad8aa57e8bc07b347cb2e315470c89dfa8"
+    },
+    {
+     "at": "2026-11-26T13:38:56Z",
+     "message": "docs(adr): ADR 0001-0005 accepted by the owner; UI workflow invokes the Flowbite skill",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/24ee70d1279e7eb0307e8b2bbaff856f9dfe418c"
+    },
+    {
+     "at": "2026-11-26T13:18:25Z",
+     "message": "chore(just): run the bridge recipe without echoing its shell line",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/8755d42b2447f3d1029e22b50bfcbc2691cf1168"
+    },
+    {
+     "at": "2026-11-26T13:16:53Z",
+     "message": "docs(evidence): the bridge proven on the device, end to end",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/8413a03285a0536f8ecb14b4e4260340e91ab774"
+    },
+    {
+     "at": "2026-11-26T13:16:47Z",
+     "message": "fix(bridge): never release the port while the device is still working",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/8f539065cbadda985a1aa6df6bcbcaa05c549710"
+    },
+    {
+     "at": "2026-11-26T12:56:47Z",
+     "message": "docs(evidence): bridge device run: status and small installs proven",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/c8d58d76ff9dd6e9ace0dc2d9353a3314d5438c1"
+    },
+    {
+     "at": "2026-11-26T12:47:36Z",
+     "message": "fix(bridge): install a pack in one CLI session, never mixing RPC and CLI",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/85f461a01013a5fed7cfa3a1d8d1737e2d78691a"
+    },
+    {
+     "at": "2026-11-26T12:39:01Z",
+     "message": "fix(bridge): push-pack over acknowledged CLI chunks; never end a busy session",
+     "url": "https://github.com/korczis/prismatic-flipperzero/commit/b33816e927c7cedfe55b29d0f5ab3f47d0f4c69b"
+    }
+   ],
+   "languages": [
+    {
+     "name": "C",
+     "share": 43.3
+    },
+    {
+     "name": "Python",
+     "share": 38.5
+    },
+    {
+     "name": "JavaScript",
+     "share": 10.7
+    },
+    {
+     "name": "Shell",
+     "share": 5.7
+    },
+    {
+     "name": "HTML",
+     "share": 1.2
+    },
+    {
+     "name": "Just",
+     "share": 0.6
+    }
+   ],
+   "readme": "What it does · Interface · Every screen · On a real device · Small memory · How it works · Install · Guarantees · Case study · Explorer · Wiki",
+   "readme_shared": false,
+   "description_shared": false,
+   "topics": [],
+   "hosts": {
+    "github": "https://github.com/korczis/prismatic-flipperzero"
+   },
+   "site": "https://korczis.github.io/prismatic-flipperzero/",
+   "curated": false,
+   "stars": 0,
+   "supervised": true
+  },
+  {
+   "name": "korczis.github.io",
+   "period": 12,
+   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
+   "category": "web",
+   "language": "JavaScript",
+   "created_at": "2024-12-24T16:48:15Z",
+   "pushed_at": "2026-11-27T23:45:16Z",
+   "last_commit": "2026-11-27T23:44:32Z",
+   "last_message": "chore(data): refresh the snapshot and the index",
+   "commits": [
+    {
+     "at": "2026-11-27T23:44:32Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/1935e0685796ffed8b706e5d843fb3486b7806a5"
+    },
+    {
+     "at": "2026-11-27T15:30:43Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/22ddfea1cc80e801bf50b79f6b1e207dfe0e2ea7"
+    },
+    {
+     "at": "2026-11-27T05:18:33Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/1266568562cc7f1906f46d7279f895e5a65c4176"
+    },
+    {
+     "at": "2026-11-26T23:26:48Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/033aca9083ccab2b89bec5a85d3919698547d125"
+    },
+    {
+     "at": "2026-11-26T13:01:46Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/9a0c74e232139882b04669d44c4936cb16db2d35"
+    },
+    {
+     "at": "2026-11-26T03:05:52Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/465f718349b08b8b7937c0f38be401f6c5e970ab"
+    },
+    {
+     "at": "2026-11-25T19:36:54Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/a950a1ff393ad82cf00b3ed25ce05764aac5676f"
+    },
+    {
+     "at": "2026-11-25T13:59:56Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/930d64fcbf69776d124a097ef7e8ab87e2abefb3"
+    },
+    {
+     "at": "2026-11-25T13:42:52Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/cb988d69032a4cf4b7cf01f02a27fa35ced6399a"
+    },
+    {
+     "at": "2026-11-25T09:05:39Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/0f4c5c2e16573fc0b262df069555c33c88768ed4"
+    },
+    {
+     "at": "2026-11-24T23:40:41Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/1966f002ed48cfce1d5b849c1cd6cbe5fda823bf"
+    },
+    {
+     "at": "2026-11-24T14:06:50Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/a23dc88f1d8a274a24c6a8c4eee3c4ee7319455f"
+    },
+    {
+     "at": "2026-11-24T02:32:41Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/e2527f12dd56f3d882114246e8dbd7af49f83885"
+    },
+    {
+     "at": "2026-11-23T15:08:46Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/2e61e8e9b8e032b7dd06c30a361f4df6a1039631"
+    },
+    {
+     "at": "2026-11-23T03:57:37Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/f1a7277138d2c3d8c2045232f6344d8313b33cf2"
+    },
+    {
+     "at": "2026-11-22T22:49:54Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/faad2042607f996a49df57046ccb58d56922bb5e"
+    },
+    {
+     "at": "2026-11-22T16:37:42Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/c804178bddf152d76407768c500f03017ffba9aa"
+    },
+    {
+     "at": "2026-11-22T08:22:12Z",
+     "message": "chore(merge): integrate #49, the mesh declaration loads again",
+     "url": "https://github.com/korczis/korczis.github.io/commit/ca38b66e703a932af13176e409bd83d1dc571c32"
+    },
+    {
+     "at": "2026-11-22T07:42:58Z",
+     "message": "fix(mesh): the mesh gate takes the shared CLI",
+     "url": "https://github.com/korczis/korczis.github.io/commit/595b84c740b22adcede255f95971df786935dd24"
+    },
+    {
+     "at": "2026-11-22T07:41:51Z",
+     "message": "fix(mesh): write the trusted keys bare, so Majordomus loads the declaration",
+     "url": "https://github.com/korczis/korczis.github.io/commit/049cacb971a257ccae599859297fc4ecd3824177"
+    },
+    {
+     "at": "2026-11-22T07:37:18Z",
+     "message": "chore(merge): integrate #48, quoted mesh keys",
+     "url": "https://github.com/korczis/korczis.github.io/commit/96449d3ea60defc7fa09bf6c3e67f5c69a18431e"
+    },
+    {
+     "at": "2026-11-22T07:08:24Z",
+     "message": "chore(interfaces): measure the .ai layer after the mesh quoting",
+     "url": "https://github.com/korczis/korczis.github.io/commit/d4d1ca72bb84333cf5bd1c30a53b2cf24e83ef68"
+    },
+    {
+     "at": "2026-11-22T07:07:06Z",
+     "message": "chore(mesh): quote the trusted keys and say why the tailnet hubs stay",
+     "url": "https://github.com/korczis/korczis.github.io/commit/b6701e6f99b5a8e2cf3a742b7d1380f4498c8016"
+    },
+    {
+     "at": "2026-11-22T06:23:33Z",
+     "message": "chore(merge): integrate #47, the fleet mesh",
+     "url": "https://github.com/korczis/korczis.github.io/commit/43921f195ce5eeab25f9b321ae70f1a7c542c678"
+    },
+    {
+     "at": "2026-11-22T05:33:29Z",
+     "message": "chore(interfaces): measure the .ai layer with the new knowledge record",
+     "url": "https://github.com/korczis/korczis.github.io/commit/9f941ac9bb276f38c71ff6b8edad6ae8ed8a8d96"
+    },
+    {
+     "at": "2026-11-22T05:32:35Z",
+     "message": "docs(knowledge): record the owner's answers on the fleet mesh, auto-update and the upgrade",
+     "url": "https://github.com/korczis/korczis.github.io/commit/ac693faa1b336081a810f798aded6d48cc4cf6a2"
+    },
+    {
+     "at": "2026-11-22T05:32:24Z",
+     "message": "docs(mesh): name the machine behind each trusted key",
+     "url": "https://github.com/korczis/korczis.github.io/commit/c77de9c3661ec2a42ad25988c3dae8651327a16e"
+    },
+    {
+     "at": "2026-11-22T05:32:20Z",
+     "message": "fix(mesh): trust the owner's fleet and register with its hubs",
+     "url": "https://github.com/korczis/korczis.github.io/commit/12607a7f7b2d133ecd9d87eee73e2dc92178911b"
+    },
+    {
+     "at": "2026-11-21T19:40:51Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/b68bf7560a2c6ee8b2d79177fc53207d4595d970"
+    },
+    {
+     "at": "2026-11-21T11:36:39Z",
+     "message": "chore(data): refresh the snapshot and the index",
+     "url": "https://github.com/korczis/korczis.github.io/commit/76eb074704989ea56ef7ecc1e83e31c03166d984"
+    }
+   ],
+   "languages": [
+    {
+     "name": "JavaScript",
+     "share": 61.9
+    },
+    {
+     "name": "HTML",
+     "share": 36.1
+    },
+    {
+     "name": "CSS",
+     "share": 1.1
+    },
+    {
+     "name": "Shell",
+     "share": 0.8
+    }
+   ],
+   "readme": "The personal hub of Tomas Korcak (korczis). It covers who I am, the projects I build with their live sites, the stack behind them, and Majordomus, which supervises the work.",
+   "readme_shared": false,
+   "description_shared": false,
+   "topics": [
+    "accessibility",
+    "ai-agents",
+    "alpinejs",
+    "chartjs",
+    "cytoscape",
+    "echarts",
+    "flowbite",
+    "github-pages",
+    "majordomus",
+    "p5js",
+    "personal-website",
+    "portfolio",
+    "tailwindcss",
+    "zola"
+   ],
+   "hosts": {
+    "github": "https://github.com/korczis/korczis.github.io"
+   },
+   "site": null,
+   "curated": false,
+   "stars": 0,
+   "supervised": true
+  },
   {
    "name": "prismatic-majordomus",
    "period": 12,
@@ -27,7 +434,7 @@
    "category": "ai",
    "language": "Rust",
    "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-27T19:07:35Z",
+   "pushed_at": "2026-11-28T08:13:37Z",
    "last_commit": "2026-11-27T15:40:35Z",
    "last_message": "Merge pull request #3202 from korczis/release/record-v1.3.0",
    "commits": [
@@ -238,413 +645,6 @@
    "site": "https://korczis.github.io/prismatic-majordomus/",
    "curated": true,
    "stars": 1,
-   "supervised": true
-  },
-  {
-   "name": "korczis.github.io",
-   "period": 12,
-   "description": "Tomas Korcak (korczis): software that proves its work. Projects, live sites and the stack behind them. Zola + Flowbite Pro on GitHub Pages, supervised by Majordomus.",
-   "category": "web",
-   "language": "JavaScript",
-   "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-27T15:31:38Z",
-   "last_commit": "2026-11-27T15:30:43Z",
-   "last_message": "chore(data): refresh the snapshot and the index",
-   "commits": [
-    {
-     "at": "2026-11-27T15:30:43Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/22ddfea1cc80e801bf50b79f6b1e207dfe0e2ea7"
-    },
-    {
-     "at": "2026-11-27T05:18:33Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/1266568562cc7f1906f46d7279f895e5a65c4176"
-    },
-    {
-     "at": "2026-11-26T23:26:48Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/033aca9083ccab2b89bec5a85d3919698547d125"
-    },
-    {
-     "at": "2026-11-26T13:01:46Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/9a0c74e232139882b04669d44c4936cb16db2d35"
-    },
-    {
-     "at": "2026-11-26T03:05:52Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/465f718349b08b8b7937c0f38be401f6c5e970ab"
-    },
-    {
-     "at": "2026-11-25T19:36:54Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/a950a1ff393ad82cf00b3ed25ce05764aac5676f"
-    },
-    {
-     "at": "2026-11-25T13:59:56Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/930d64fcbf69776d124a097ef7e8ab87e2abefb3"
-    },
-    {
-     "at": "2026-11-25T13:42:52Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/cb988d69032a4cf4b7cf01f02a27fa35ced6399a"
-    },
-    {
-     "at": "2026-11-25T09:05:39Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/0f4c5c2e16573fc0b262df069555c33c88768ed4"
-    },
-    {
-     "at": "2026-11-24T23:40:41Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/1966f002ed48cfce1d5b849c1cd6cbe5fda823bf"
-    },
-    {
-     "at": "2026-11-24T14:06:50Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/a23dc88f1d8a274a24c6a8c4eee3c4ee7319455f"
-    },
-    {
-     "at": "2026-11-24T02:32:41Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/e2527f12dd56f3d882114246e8dbd7af49f83885"
-    },
-    {
-     "at": "2026-11-23T15:08:46Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/2e61e8e9b8e032b7dd06c30a361f4df6a1039631"
-    },
-    {
-     "at": "2026-11-23T03:57:37Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/f1a7277138d2c3d8c2045232f6344d8313b33cf2"
-    },
-    {
-     "at": "2026-11-22T22:49:54Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/faad2042607f996a49df57046ccb58d56922bb5e"
-    },
-    {
-     "at": "2026-11-22T16:37:42Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/c804178bddf152d76407768c500f03017ffba9aa"
-    },
-    {
-     "at": "2026-11-22T08:22:12Z",
-     "message": "chore(merge): integrate #49, the mesh declaration loads again",
-     "url": "https://github.com/korczis/korczis.github.io/commit/ca38b66e703a932af13176e409bd83d1dc571c32"
-    },
-    {
-     "at": "2026-11-22T07:42:58Z",
-     "message": "fix(mesh): the mesh gate takes the shared CLI",
-     "url": "https://github.com/korczis/korczis.github.io/commit/595b84c740b22adcede255f95971df786935dd24"
-    },
-    {
-     "at": "2026-11-22T07:41:51Z",
-     "message": "fix(mesh): write the trusted keys bare, so Majordomus loads the declaration",
-     "url": "https://github.com/korczis/korczis.github.io/commit/049cacb971a257ccae599859297fc4ecd3824177"
-    },
-    {
-     "at": "2026-11-22T07:37:18Z",
-     "message": "chore(merge): integrate #48, quoted mesh keys",
-     "url": "https://github.com/korczis/korczis.github.io/commit/96449d3ea60defc7fa09bf6c3e67f5c69a18431e"
-    },
-    {
-     "at": "2026-11-22T07:08:24Z",
-     "message": "chore(interfaces): measure the .ai layer after the mesh quoting",
-     "url": "https://github.com/korczis/korczis.github.io/commit/d4d1ca72bb84333cf5bd1c30a53b2cf24e83ef68"
-    },
-    {
-     "at": "2026-11-22T07:07:06Z",
-     "message": "chore(mesh): quote the trusted keys and say why the tailnet hubs stay",
-     "url": "https://github.com/korczis/korczis.github.io/commit/b6701e6f99b5a8e2cf3a742b7d1380f4498c8016"
-    },
-    {
-     "at": "2026-11-22T06:23:33Z",
-     "message": "chore(merge): integrate #47, the fleet mesh",
-     "url": "https://github.com/korczis/korczis.github.io/commit/43921f195ce5eeab25f9b321ae70f1a7c542c678"
-    },
-    {
-     "at": "2026-11-22T05:33:29Z",
-     "message": "chore(interfaces): measure the .ai layer with the new knowledge record",
-     "url": "https://github.com/korczis/korczis.github.io/commit/9f941ac9bb276f38c71ff6b8edad6ae8ed8a8d96"
-    },
-    {
-     "at": "2026-11-22T05:32:35Z",
-     "message": "docs(knowledge): record the owner's answers on the fleet mesh, auto-update and the upgrade",
-     "url": "https://github.com/korczis/korczis.github.io/commit/ac693faa1b336081a810f798aded6d48cc4cf6a2"
-    },
-    {
-     "at": "2026-11-22T05:32:24Z",
-     "message": "docs(mesh): name the machine behind each trusted key",
-     "url": "https://github.com/korczis/korczis.github.io/commit/c77de9c3661ec2a42ad25988c3dae8651327a16e"
-    },
-    {
-     "at": "2026-11-22T05:32:20Z",
-     "message": "fix(mesh): trust the owner's fleet and register with its hubs",
-     "url": "https://github.com/korczis/korczis.github.io/commit/12607a7f7b2d133ecd9d87eee73e2dc92178911b"
-    },
-    {
-     "at": "2026-11-21T19:40:51Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/b68bf7560a2c6ee8b2d79177fc53207d4595d970"
-    },
-    {
-     "at": "2026-11-21T11:36:39Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/76eb074704989ea56ef7ecc1e83e31c03166d984"
-    },
-    {
-     "at": "2026-11-21T02:41:51Z",
-     "message": "chore(data): refresh the snapshot and the index",
-     "url": "https://github.com/korczis/korczis.github.io/commit/292b9c146c2b7684378e371442bb77dbff7c15aa"
-    }
-   ],
-   "languages": [
-    {
-     "name": "JavaScript",
-     "share": 61.9
-    },
-    {
-     "name": "HTML",
-     "share": 36.1
-    },
-    {
-     "name": "CSS",
-     "share": 1.1
-    },
-    {
-     "name": "Shell",
-     "share": 0.8
-    }
-   ],
-   "readme": "The personal hub of Tomas Korcak (korczis). It covers who I am, the projects I build with their live sites, the stack behind them, and Majordomus, which supervises the work.",
-   "readme_shared": false,
-   "description_shared": false,
-   "topics": [
-    "accessibility",
-    "ai-agents",
-    "alpinejs",
-    "chartjs",
-    "cytoscape",
-    "echarts",
-    "flowbite",
-    "github-pages",
-    "majordomus",
-    "p5js",
-    "personal-website",
-    "portfolio",
-    "tailwindcss",
-    "zola"
-   ],
-   "hosts": {
-    "github": "https://github.com/korczis/korczis.github.io"
-   },
-   "site": null,
-   "curated": false,
-   "stars": 0,
-   "supervised": true
-  },
-  {
-   "name": "prismatic-flipperzero",
-   "period": 12,
-   "description": "Prismatic Pocket for Flipper Zero: an offline, data-driven knowledge engine with live assessments, scorecards, crisis simulations and a Bayes calculator; a deterministic pack compiler and a portable C core",
-   "category": "science",
-   "language": "C",
-   "created_at": "2026-11-25T03:06:03Z",
-   "pushed_at": "2026-11-27T09:20:44Z",
-   "last_commit": "2026-11-27T09:20:27Z",
-   "last_message": "docs(evidence): parity 24 of 24 and gallery on the f3d8cb3e pack",
-   "commits": [
-    {
-     "at": "2026-11-27T09:20:27Z",
-     "message": "docs(evidence): parity 24 of 24 and gallery on the f3d8cb3e pack",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/3cea570d85d6d9073d1e9727b1333fa29bf36ecd"
-    },
-    {
-     "at": "2026-11-27T09:00:29Z",
-     "message": "fix(pocket): render the Kompendium's page templates; pin it at f3d8cb3e",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/d327e2fb6cf7d9539cb45ff401f37f314d9e9642"
-    },
-    {
-     "at": "2026-11-27T08:26:59Z",
-     "message": "docs(evidence): parity 24 of 24 and device gallery recaptured on 0.3.0",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/bed371153c15493c1a6db0160eaa467dd893d25e"
-    },
-    {
-     "at": "2026-11-27T08:26:39Z",
-     "message": "chore(release): 0.3.0 Find: version, changelog, release notes, roadmap",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/a4ccc51a9b1a1b0b412643601f4444d65c74a68c"
-    },
-    {
-     "at": "2026-11-26T16:50:56Z",
-     "message": "docs(evidence): Find by name on the device, 14 of 14 frames identical",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/ccf65e024ae8593e3f8be3d5fa28f91e2decd968"
-    },
-    {
-     "at": "2026-11-26T16:19:12Z",
-     "message": "fix(ui): Find by name after the independent atlas review",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/da030236d8ebaa9aed1b3b27a0c965444eb5dff4"
-    },
-    {
-     "at": "2026-11-26T16:03:23Z",
-     "message": "docs: the search index in the pack format, the runtime and the changelog",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/c4e3e28527a47f01735592947528272d4f9bae43"
-    },
-    {
-     "at": "2026-11-26T16:02:37Z",
-     "message": "feat(ui): Find by name, a letter wheel over the search index",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/f92fa09830eb8176b96006c80e0d21ebdd6eade9"
-    },
-    {
-     "at": "2026-11-26T15:51:03Z",
-     "message": "fix(core): search only a verified index, within one object bound",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/8fd5982f920c1fab90a5f3151aa628e21aa64fb8"
-    },
-    {
-     "at": "2026-11-26T15:42:34Z",
-     "message": "feat(core): Find by name search engine",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/c523d64f1327176954c13ab9c8801edeb19edc6e"
-    },
-    {
-     "at": "2026-11-26T15:38:17Z",
-     "message": "feat(core): read the optional search index",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/8f8c61a378e8a3c17fe467ea6fa66d6046a0e587"
-    },
-    {
-     "at": "2026-11-26T15:34:39Z",
-     "message": "feat(pocket): search index sections for Find by name",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/90417358eefbf7577d412a41c605e785092565df"
-    },
-    {
-     "at": "2026-11-26T15:21:03Z",
-     "message": "fix(pocket): a lead-in sentence ending in ':' is not a marker or an item",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/230796004467b0a62138c6d66d79a28eb4799561"
-    },
-    {
-     "at": "2026-11-26T14:31:53Z",
-     "message": "docs(evidence): device gallery recaptured on the 0.2.0 build",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/7ee93101e8d1301d66a73c9f7fc9751a93e79be0"
-    },
-    {
-     "at": "2026-11-26T13:55:10Z",
-     "message": "fix(screen): end an RPC session only after the device confirms it",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/64de98df6fac8faafd840293789cf96e17503a6d"
-    },
-    {
-     "at": "2026-11-26T13:50:58Z",
-     "message": "docs(release): v0.2.0 notes say which build the device gallery shows",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/0fc3fd4aaf1ca73a2328c3155137b614c9f5064d"
-    },
-    {
-     "at": "2026-11-26T13:46:22Z",
-     "message": "docs(evidence): parity 24 of 24 on the 0.2.0 build",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/1a6f1d5d26428dd37c62125b747df0f0177a4811"
-    },
-    {
-     "at": "2026-11-26T13:42:19Z",
-     "message": "chore(release): 0.2.0 Bridge: version, changelog, release notes, security",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/3c8502ad8aa57e8bc07b347cb2e315470c89dfa8"
-    },
-    {
-     "at": "2026-11-26T13:38:56Z",
-     "message": "docs(adr): ADR 0001-0005 accepted by the owner; UI workflow invokes the Flowbite skill",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/24ee70d1279e7eb0307e8b2bbaff856f9dfe418c"
-    },
-    {
-     "at": "2026-11-26T13:18:25Z",
-     "message": "chore(just): run the bridge recipe without echoing its shell line",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/8755d42b2447f3d1029e22b50bfcbc2691cf1168"
-    },
-    {
-     "at": "2026-11-26T13:16:53Z",
-     "message": "docs(evidence): the bridge proven on the device, end to end",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/8413a03285a0536f8ecb14b4e4260340e91ab774"
-    },
-    {
-     "at": "2026-11-26T13:16:47Z",
-     "message": "fix(bridge): never release the port while the device is still working",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/8f539065cbadda985a1aa6df6bcbcaa05c549710"
-    },
-    {
-     "at": "2026-11-26T12:56:47Z",
-     "message": "docs(evidence): bridge device run: status and small installs proven",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/c8d58d76ff9dd6e9ace0dc2d9353a3314d5438c1"
-    },
-    {
-     "at": "2026-11-26T12:47:36Z",
-     "message": "fix(bridge): install a pack in one CLI session, never mixing RPC and CLI",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/85f461a01013a5fed7cfa3a1d8d1737e2d78691a"
-    },
-    {
-     "at": "2026-11-26T12:39:01Z",
-     "message": "fix(bridge): push-pack over acknowledged CLI chunks; never end a busy session",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/b33816e927c7cedfe55b29d0f5ab3f47d0f4c69b"
-    },
-    {
-     "at": "2026-11-26T12:20:40Z",
-     "message": "fix(bridge): ping until the RPC session answers; record the device run",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/29db801a97a97d125f36a68a0ed1b7bd66f3ea41"
-    },
-    {
-     "at": "2026-11-26T11:39:12Z",
-     "message": "feat(bridge): host bridge over the Flipper's own RPC",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/005e71450470b9eb1a8bf8802e952804aa2b2d67"
-    },
-    {
-     "at": "2026-11-26T11:19:26Z",
-     "message": "docs(evidence): parity 24 of 24 and device gallery recaptured on 0.1.0",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/7f2bc73ba4772a76312e333daae30a07d846bf66"
-    },
-    {
-     "at": "2026-11-26T11:16:47Z",
-     "message": "chore(release): 0.1.0 Pocket: version, changelog, release notes, security scope",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/dfcbdc80505345be97db3ceb43cb42b48a9d4556"
-    },
-    {
-     "at": "2026-11-25T13:57:36Z",
-     "message": "docs(evidence): device parity recorded with the live tools build",
-     "url": "https://github.com/korczis/prismatic-flipperzero/commit/0ff22361139bc96c6332fe2d50fad0452a136606"
-    }
-   ],
-   "languages": [
-    {
-     "name": "C",
-     "share": 43.4
-    },
-    {
-     "name": "Python",
-     "share": 38.4
-    },
-    {
-     "name": "JavaScript",
-     "share": 10.8
-    },
-    {
-     "name": "Shell",
-     "share": 5.7
-    },
-    {
-     "name": "HTML",
-     "share": 1.2
-    },
-    {
-     "name": "Just",
-     "share": 0.6
-    }
-   ],
-   "readme": "What it does · Interface · Every screen · On a real device · Small memory · How it works · Install · Guarantees · Case study · Explorer · Wiki",
-   "readme_shared": false,
-   "description_shared": false,
-   "topics": [],
-   "hosts": {
-    "github": "https://github.com/korczis/prismatic-flipperzero"
-   },
-   "site": "https://korczis.github.io/prismatic-flipperzero/",
-   "curated": false,
-   "stars": 0,
    "supervised": true
   },
   {

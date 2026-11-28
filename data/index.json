@@ -1,6 +1,6 @@
 {
  "schema": "korczis-hub-index/v1",
- "generated_at": "2026-11-27T23:44:06Z",
+ "generated_at": "2026-11-28T08:24:02Z",
  "rule": "original = the owner wrote at least half of the listed commits; forks and mirrors are counted, not listed",
  "counts": {
   "github": 449,
@@ -18,7 +18,7 @@
  "dropped": [],
  "supervision": {
   "marker": ".ai/manifest.yaml",
-  "measured_at": "2026-11-27T23:44:06Z",
+  "measured_at": "2026-11-28T08:24:02Z",
   "kept": 0
  },
  "all_repos": [
@@ -1664,9 +1664,9 @@
    ],
    "stars": 0,
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-27T15:31:38Z",
+   "pushed_at": "2026-11-27T23:45:16Z",
    "archived": false,
-   "share": 0.88,
+   "share": 0.87,
    "hosts": {
     "github": "https://github.com/korczis/korczis.github.io"
    },
@@ -2432,7 +2432,7 @@
    "topics": [],
    "stars": 0,
    "created_at": "2026-11-25T03:06:03Z",
-   "pushed_at": "2026-11-27T09:20:44Z",
+   "pushed_at": "2026-11-28T08:07:52Z",
    "archived": false,
    "share": 1,
    "hosts": {
@@ -2470,7 +2470,7 @@
    ],
    "stars": 1,
    "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-27T19:07:35Z",
+   "pushed_at": "2026-11-28T08:13:37Z",
    "archived": false,
    "share": 0.99,
    "hosts": {
@@ -4348,8 +4348,8 @@
  ],
  "by_category": {
   "ai": 5,
-  "web": 14,
   "science": 13,
+  "web": 14,
   "media": 8,
   "tools": 63,
   "knowledge": 5,
@@ -4366,16 +4366,16 @@
    "top_language": "Elixir",
    "since": "2025"
   },
-  "web": {
-   "repos": 14,
-   "sites": 0,
-   "top_language": "JavaScript",
-   "since": "2014"
-  },
   "science": {
    "repos": 13,
    "sites": 4,
    "top_language": "Rust",
+   "since": "2014"
+  },
+  "web": {
+   "repos": 14,
+   "sites": 0,
+   "top_language": "JavaScript",
    "since": "2014"
   },
   "media": {
@@ -5124,18 +5124,12 @@
  "recent": {
   "size": 100,
   "from": "2018-03-10T17:02:00Z",
-  "to": "2026-11-27T19:07:35Z",
+  "to": "2026-11-28T08:13:37Z",
   "mix": {
    "ai": {
     "Rust": 1,
     "Elixir": 2,
     "Unspecified": 2
-   },
-   "web": {
-    "JavaScript": 2,
-    "HTML": 2,
-    "CSS": 3,
-    "Elixir": 1
    },
    "science": {
     "C": 1,
@@ -5143,6 +5137,12 @@
     "JavaScript": 1,
     "Elixir": 1,
     "Rust": 1
+   },
+   "web": {
+    "JavaScript": 2,
+    "HTML": 2,
+    "CSS": 3,
+    "Elixir": 1
    },
    "media": {
     "JavaScript": 2,
@@ -5219,7 +5219,7 @@
    ],
    "stars": 1,
    "created_at": "2026-09-03T20:24:57Z",
-   "pushed_at": "2026-11-27T19:07:35Z",
+   "pushed_at": "2026-11-28T08:13:37Z",
    "archived": false,
    "share": 0.99,
    "hosts": {
@@ -5229,6 +5229,24 @@
    "supervised": true,
    "category": "ai",
    "curated": true
+  },
+  {
+   "name": "prismatic-flipperzero",
+   "description": "Prismatic Pocket for Flipper Zero: an offline, data-driven knowledge engine with live assessments, scorecards, crisis simulations and a Bayes calculator; a deterministic pack compiler and a portable C core",
+   "language": "C",
+   "topics": [],
+   "stars": 0,
+   "created_at": "2026-11-25T03:06:03Z",
+   "pushed_at": "2026-11-28T08:07:52Z",
+   "archived": false,
+   "share": 1,
+   "hosts": {
+    "github": "https://github.com/korczis/prismatic-flipperzero"
+   },
+   "site": "https://korczis.github.io/prismatic-flipperzero/",
+   "supervised": true,
+   "category": "science",
+   "curated": false
   },
   {
    "name": "korczis.github.io",
@@ -5252,33 +5270,15 @@
    ],
    "stars": 0,
    "created_at": "2024-12-24T16:48:15Z",
-   "pushed_at": "2026-11-27T15:31:38Z",
+   "pushed_at": "2026-11-27T23:45:16Z",
    "archived": false,
-   "share": 0.88,
+   "share": 0.87,
    "hosts": {
     "github": "https://github.com/korczis/korczis.github.io"
    },
    "site": null,
    "supervised": true,
    "category": "web",
-   "curated": false
-  },
-  {
-   "name": "prismatic-flipperzero",
-   "description": "Prismatic Pocket for Flipper Zero: an offline, data-driven knowledge engine with live assessments, scorecards, crisis simulations and a Bayes calculator; a deterministic pack compiler and a portable C core",
-   "language": "C",
-   "topics": [],
-   "stars": 0,
-   "created_at": "2026-11-25T03:06:03Z",
-   "pushed_at": "2026-11-27T09:20:44Z",
-   "archived": false,
-   "share": 1,
-   "hosts": {
-    "github": "https://github.com/korczis/prismatic-flipperzero"
-   },
-   "site": "https://korczis.github.io/prismatic-flipperzero/",
-   "supervised": true,
-   "category": "science",
    "curated": false
   },
   {

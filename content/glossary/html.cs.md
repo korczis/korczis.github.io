@@ -44,7 +44,7 @@ HTML jsem psal v 39 veřejných repozitářích, od roku 2014 do 2026; v 5 z nic
 
 K čemu to sloužilo: [Nástroje](@/projects/tools.cs.md) (9), [Data a GIS](@/projects/data.cs.md) (8), [Web](@/projects/web.cs.md) (8) a [Média a umění](@/projects/media.cs.md) (5).
 
-Naposledy: [korczis.github.io](@/work/korczis-github-io.cs.md); [prismatic-flipperzero](@/work/prismatic-flipperzero.cs.md); [Majordomus](@/work/prismatic-majordomus.cs.md): Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model.
+Naposledy: [prismatic-flipperzero](@/work/prismatic-flipperzero.cs.md); [Majordomus](@/work/prismatic-majordomus.cs.md): Jedna politika pro každý AI nástroj pro programování, vymezené úkoly se smlouvou o dokončení, síť pro mnoho sezení a strojů a integrační fronta, která pustí jen ověřenou práci. Lokální; nikdy nevolá model; [korczis.github.io](@/work/korczis-github-io.cs.md).
 
 17 z těchto projektů běží jako živé weby.
 
